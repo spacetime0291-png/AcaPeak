@@ -6,7 +6,7 @@ interface UtbkSubtestGridProps {
 
 // 1. Penalaran Umum (PU): Ungu-Indigo dengan grafik otak/logika & roda gigi ungu-oranye
 const PuIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M17 12C14.79 12 13 13.79 13 16C11.34 16 10 17.34 10 19C10 20.35 10.9 21.5 12.14 21.87C12.05 22.23 12 22.61 12 23C12 24.32 12.57 25.51 13.48 26.33C13.18 27.13 13 27.99 13 28.9C13 31.72 15.28 34 18.1 34C18.74 34 19.35 33.88 19.92 33.66C20.89 35.09 22.48 36 24.3 36C26.12 36 27.71 35.09 28.68 33.66C29.25 33.88 29.86 34 30.5 34C33.32 34 35.6 31.72 35.6 28.9C35.6 27.99 35.42 27.13 35.12 26.33C36.03 25.51 36.6 24.32 36.6 23C36.6 22.61 36.55 22.23 36.46 21.87C37.7 21.5 38.6 20.35 38.6 19C38.6 17.34 37.26 16 35.6 16C35.6 13.79 33.81 12 31.6 12C30.66 12 29.79 12.33 29.1 12.88C28.17 11.72 26.75 11 25.15 11H23.45C21.85 11 20.43 11.72 19.5 12.88C18.81 12.33 17.94 12 17 12Z"
       fill="#6366F1"
@@ -36,7 +36,7 @@ const PuIcon = () => (
 
 // 2. Pengetahuan & Pemahaman Umum (PPU): Biru Cerah dengan bola dunia/buku & kaca pembesar
 const PpuIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="21" cy="21" r="13" fill="#0284C7" />
     <path
       d="M13 17C14.5 15.5 17 15 18 16.5C19 18 17.5 20.5 16 21C14.5 21.5 12 20 13 17Z"
@@ -68,7 +68,7 @@ const PpuIcon = () => (
 
 // 3. Pemahaman Bacaan & Menulis (PBM): Merah-Rose dengan buku merah & pena emas
 const PbmIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g transform="translate(5, 7)">
       <rect x="2" y="2" width="26" height="32" rx="3" fill="#BE123C" />
       <path d="M2 2H6.5V34H2C0.9 34 0 33.1 0 32V4C0 2.9 0.9 2 2 2Z" fill="#9F1239" />
@@ -90,7 +90,7 @@ const PbmIcon = () => (
 
 // 4. Pengetahuan Kuantitatif (PK): Biru-Cyan dengan kalkulator/simbol operasi + - × ÷
 const PkIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="9" y="6" width="30" height="36" rx="5" fill="#2563EB" />
     <rect x="13" y="10" width="22" height="8.5" rx="2" fill="#0F172A" />
     <text x="32" y="16.5" fill="#38BDF8" fontSize="5.5" fontFamily="monospace" fontWeight="bold" textAnchor="end">
@@ -113,7 +113,7 @@ const PkIcon = () => (
 
 // 5. Literasi Bahasa Indonesia (LBI): Merah-Putih/Coral dengan buku bendera Indonesia & teks
 const LbiIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="8" y="9" width="32" height="30" rx="3.5" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1.5" />
     {/* Flag Top Half Red */}
     <path d="M9 10H39V22H9V10Z" fill="#DC2626" />
@@ -134,7 +134,7 @@ const LbiIcon = () => (
 
 // 6. Literasi Bahasa Inggris (LBE): Ungu-Biru dengan buku aksen Union Jack
 const LbeIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g transform="translate(7, 7)">
       <rect x="0" y="0" width="34" height="34" rx="5" fill="#1E3A8A" />
       <line x1="0" y1="0" x2="34" y2="34" stroke="#FFFFFF" strokeWidth="4" />
@@ -158,7 +158,7 @@ const LbeIcon = () => (
 
 // 7. Penalaran Matematika (PM): Hijau-Emerald dengan penggaris geometri, grafik & simbol √x
 const PmIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M8 38L8 11L35 38H8Z"
       fill="#F59E0B"
@@ -197,7 +197,6 @@ interface SubtestVisualItem {
   code: string;
   name: string;
   category: 'TPS' | 'Literasi';
-  moduleCount: number;
   bgColor: string;
   icon: React.ReactNode;
 }
@@ -210,7 +209,6 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       code: 'PU',
       name: 'Penalaran Umum',
       category: 'TPS',
-      moduleCount: 5,
       bgColor: 'bg-indigo-100',
       icon: <PuIcon />,
     },
@@ -218,7 +216,6 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       code: 'PPU',
       name: 'Pengetahuan & Pemahaman Umum',
       category: 'TPS',
-      moduleCount: 4,
       bgColor: 'bg-sky-100',
       icon: <PpuIcon />,
     },
@@ -226,7 +223,6 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       code: 'PBM',
       name: 'Pemahaman Bacaan & Menulis',
       category: 'TPS',
-      moduleCount: 4,
       bgColor: 'bg-rose-100',
       icon: <PbmIcon />,
     },
@@ -234,7 +230,6 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       code: 'PK',
       name: 'Pengetahuan Kuantitatif',
       category: 'TPS',
-      moduleCount: 6,
       bgColor: 'bg-blue-100',
       icon: <PkIcon />,
     },
@@ -242,7 +237,6 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       code: 'LBI',
       name: 'Literasi Bahasa Indonesia',
       category: 'Literasi',
-      moduleCount: 4,
       bgColor: 'bg-red-100',
       icon: <LbiIcon />,
     },
@@ -250,7 +244,6 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       code: 'LBE',
       name: 'Literasi Bahasa Inggris',
       category: 'Literasi',
-      moduleCount: 4,
       bgColor: 'bg-purple-100',
       icon: <LbeIcon />,
     },
@@ -258,7 +251,6 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       code: 'PM',
       name: 'Penalaran Matematika',
       category: 'Literasi',
-      moduleCount: 4,
       bgColor: 'bg-emerald-100',
       icon: <PmIcon />,
     },
@@ -270,7 +262,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
   });
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 space-y-4">
+    <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm border border-slate-100/90 px-2.5 py-4 sm:p-5 space-y-4">
       {/* Category Filter Tabs: Semua | TPS | Literasi */}
       <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-3">
         <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
@@ -316,27 +308,29 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
         </span>
       </div>
 
-      {/* Grid 4 Kolom Padat & Ilustratif */}
-      <div className="grid grid-cols-4 gap-y-6 gap-x-3 sm:gap-x-6">
+      {/* Grid 4 Kolom dengan Skala Lebih Besar, Gap Lebih Luas, & Tanpa Text Truncate */}
+      <div className="grid grid-cols-4 gap-y-7 sm:gap-y-9 gap-x-2 sm:gap-x-4 md:gap-x-6 items-start">
         {filteredSubtests.map((sub) => (
           <button
             key={sub.code}
             type="button"
             onClick={() => onSelectSubtest(sub.code.toLowerCase())}
-            className="flex flex-col items-center group cursor-pointer text-center focus:outline-none"
+            className="w-full min-w-0 flex flex-col items-center group cursor-pointer text-center focus:outline-none"
             aria-label={`Buka Subtes ${sub.name}`}
           >
-            {/* 1. Ikon Squircle Berwarna Cerah dengan Ilustrasi SVG Multi-Warna */}
+            {/* 1. Ikon Squircle Berwarna Cerah Skala Diperbesar */}
             <div
-              className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center shadow-sm mx-auto ${sub.bgColor} transition-transform duration-200 group-hover:scale-105 group-active:scale-95`}
+              className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto ${sub.bgColor} transition-transform duration-200 group-hover:scale-105 group-active:scale-95 shrink-0`}
             >
               {sub.icon}
             </div>
 
-            {/* 2. Label Nama Subtes di Bawah Ikon */}
-            <span className="text-xs sm:text-sm font-semibold text-slate-700 text-center leading-tight mt-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
-              {sub.name}
-            </span>
+            {/* 2. Label Nama Subtes Lengkap Tanpa Terpotong */}
+            <div className="w-full flex-1 flex flex-col items-center justify-start mt-2 sm:mt-2.5">
+              <span className="text-[11px] sm:text-xs md:text-sm font-bold sm:font-semibold text-slate-800 text-center leading-[1.25] sm:leading-snug w-full break-words group-hover:text-blue-600 transition-colors">
+                {sub.name}
+              </span>
+            </div>
           </button>
         ))}
       </div>

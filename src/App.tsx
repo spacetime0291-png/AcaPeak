@@ -289,7 +289,7 @@ export default function App() {
       )}
 
       {/* Main Content Area */}
-      <main className={route.view === 'subtest' ? 'flex-1 w-full' : 'flex-1 w-full max-w-5xl mx-auto px-4 py-4 sm:py-6'}>
+      <main className={route.view === 'subtest' ? 'flex-1 w-full' : 'flex-1 w-full max-w-5xl mx-auto px-2 sm:px-4 py-2.5 sm:py-6'}>
         {/* VIEW 1: HOME DASHBOARD */}
         {route.view === 'home' && (
           <div className="space-y-4">
