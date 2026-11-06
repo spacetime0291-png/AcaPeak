@@ -19,7 +19,6 @@ import {
   ChevronUp,
 } from 'lucide-react';
 import type { WorkedExample } from '../../types/material';
-import { AdBanner } from '../content/AdBanner';
 
 interface ActiveDrillingViewProps {
   questions: WorkedExample[];
@@ -227,9 +226,6 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           </div>
         </div>
 
-        {/* Ad slot for Results page */}
-        <AdBanner slotId="drilling-results" routeKey="drilling-results" />
-
         {/* Detailed Question Review List */}
         <div className="space-y-4">
           <h3 className="text-base font-bold text-slate-900 px-1 flex items-center gap-2">
@@ -397,7 +393,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   // VIEW: ACTIVE DRILLING QUESTION (During Test)
   // -------------------------------------------------------------
   return (
-    <div className="w-full max-w-3xl mx-auto pb-28">
+    <div className="w-full max-w-3xl mx-auto pb-28 animate-page-enter">
       {/* 1. STICKY TOP STATUS BAR: Question progress, timer, exit button, palette toggle */}
       <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md rounded-2xl border border-slate-200/90 shadow-sm p-3.5 sm:p-4 mb-4">
         <div className="flex items-center justify-between gap-2">
@@ -509,13 +505,6 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           </div>
         </div>
       )}
-
-      {/* Ad slot for each question (Monetization Requirement 4) */}
-      <AdBanner
-        slotId={`drilling-q-${currentQuestionIndex + 1}`}
-        routeKey={`drilling-active-no-${currentQuestionIndex + 1}`}
-        className="mb-4"
-      />
 
       {/* 2. QUESTION CARD */}
       <div className="bg-white rounded-2xl border border-slate-200/90 shadow-2xs p-5 sm:p-7 space-y-5">

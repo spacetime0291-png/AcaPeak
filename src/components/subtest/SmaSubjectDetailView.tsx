@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import {
   ChevronLeft,
   ChevronDown,
-  ChevronUp,
   Sparkles,
 } from 'lucide-react';
 import type { SmaSubject } from '../../lib/smaSyllabusData';
-import { AdBanner } from '../content/AdBanner';
 
 interface SmaSubjectDetailViewProps {
   subject: SmaSubject;
@@ -67,12 +65,6 @@ export const SmaSubjectDetailView: React.FC<SmaSubjectDetailViewProps> = ({
         </div>
       </div>
 
-      <AdBanner
-        slotId={`sma-${subject.id}`}
-        routeKey={`sma-${subject.id}`}
-        className="mb-4"
-      />
-
       {/* Chapters Accordion */}
       <div className="space-y-3">
         {subject.chapters.map((chapter) => {
@@ -102,42 +94,53 @@ export const SmaSubjectDetailView: React.FC<SmaSubjectDetailViewProps> = ({
                 </div>
 
                 <div className="p-1 rounded-lg text-slate-400">
-                  {isOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-300 ease-out ${
+                      isOpen ? 'rotate-180 text-indigo-600' : 'rotate-0 text-slate-400'
+                    }`}
+                  />
                 </div>
               </div>
 
-              {isOpen && (
-                <div className="p-2 sm:p-3 border-t border-slate-100 space-y-1.5 animate-in fade-in duration-150">
-                  {chapter.topics.map((topic) => (
-                    <button
-                      key={topic.id}
-                      type="button"
-                      onClick={() => onSelectTopic(topic.id)}
-                      className="w-full text-left p-3 rounded-xl hover:bg-indigo-50/70 border border-transparent hover:border-indigo-100 flex items-center justify-between group transition cursor-pointer"
-                    >
-                      <div className="flex items-start gap-3 min-w-0 pr-2">
-                        <span className="w-6 h-6 rounded-md bg-slate-100 text-slate-700 text-xs font-mono font-bold flex items-center justify-center shrink-0 group-hover:bg-indigo-600 group-hover:text-white transition">
-                          {topic.topic_num}
-                        </span>
-                        <div className="min-w-0">
-                          <h3 className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-indigo-950 leading-snug">
-                            {topic.title}
-                          </h3>
-                          <span className="text-[11px] text-emerald-600 font-medium flex items-center gap-1 mt-0.5">
-                            <Sparkles className="w-3 h-3" />
-                            {topic.status === 'ready' ? 'Siap Baca' : 'Segera Hadir'}
+              <div
+                className={`grid transition-all duration-300 ease-out ${
+                  isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <div className="p-2 sm:p-3 border-t border-slate-100 space-y-1.5 animate-subtopic-slide">
+                    {chapter.topics.map((topic, tIdx) => (
+                      <button
+                        key={topic.id}
+                        type="button"
+                        onClick={() => onSelectTopic(topic.id)}
+                        style={{ animationDelay: `${tIdx * 30}ms` }}
+                        className="w-full text-left p-3 rounded-xl hover:bg-indigo-50/70 border border-transparent hover:border-indigo-100 flex items-center justify-between group transition-all duration-200 active:scale-[0.985] cursor-pointer"
+                      >
+                        <div className="flex items-start gap-3 min-w-0 pr-2">
+                          <span className="w-6 h-6 rounded-md bg-slate-100 text-slate-700 text-xs font-mono font-bold flex items-center justify-center shrink-0 group-hover:bg-indigo-600 group-hover:text-white transition">
+                            {topic.topic_num}
                           </span>
+                          <div className="min-w-0">
+                            <h3 className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-indigo-950 leading-snug">
+                              {topic.title}
+                            </h3>
+                            <span className="text-[11px] text-emerald-600 font-medium flex items-center gap-1 mt-0.5">
+                              <Sparkles className="w-3 h-3" />
+                              {topic.status === 'ready' ? 'Siap Baca' : 'Segera Hadir'}
+                            </span>
+                          </div>
                         </div>
-                      </div>
 
-                      <span className="text-xs font-semibold text-indigo-600 group-hover:translate-x-1 transition-transform shrink-0 flex items-center gap-1">
-                        <span>Buka Materi</span>
-                        <span>→</span>
-                      </span>
-                    </button>
-                  ))}
+                        <span className="text-xs font-semibold text-indigo-600 group-hover:translate-x-1 transition-transform shrink-0 flex items-center gap-1">
+                          <span>Buka Materi</span>
+                          <span>→</span>
+                        </span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           );
         })}

@@ -15,7 +15,6 @@ import {
   ChevronUp,
 } from 'lucide-react';
 import type { Material, SvgVisualization } from '../../types/material';
-import { AdBanner } from '../content/AdBanner';
 
 interface PdfMaterialReaderProps {
   material: Material;
@@ -190,7 +189,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   };
 
   return (
-    <div className={`min-h-screen bg-slate-100 ${isFocusMode ? 'py-2 px-2' : 'py-4 sm:py-8 px-2 sm:px-4'}`}>
+    <div className={`min-h-screen bg-slate-100 animate-page-enter ${isFocusMode ? 'py-2 px-2' : 'py-4 sm:py-8 px-2 sm:px-4'}`}>
       {/* 1. TOP STICKY BAR: Tipis, tombol kembali ke daftar bab, judul sub-bab, tombol Cetak / Mode Fokus */}
       <div className="sticky top-0 z-30 max-w-3xl mx-auto mb-4 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-xl px-3 sm:px-4 py-2.5 shadow-xs flex items-center justify-between gap-3">
         <button
@@ -588,14 +587,6 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           </button>
         </footer>
       </article>
-
-      {/* Ad slot at the bottom of the academic paper */}
-      <div className="max-w-3xl mx-auto mt-6">
-        <AdBanner
-          slotId={`reader-bottom-${metadata.id}`}
-          routeKey={`reader-bottom-${metadata.id}`}
-        />
-      </div>
     </div>
   );
 };

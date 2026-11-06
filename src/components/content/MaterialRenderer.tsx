@@ -20,7 +20,6 @@ import {
   ShieldAlert,
 } from 'lucide-react';
 import type { Material, SvgVisualization, WorkedExample } from '../../types/material';
-import { AdBanner } from './AdBanner';
 
 interface MaterialRendererProps {
   material: Material;
@@ -370,9 +369,6 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
           </div>
         </div>
       </section>
-
-      {/* In-feed Ad Banner (Between Blueprint and Worked Examples) */}
-      <AdBanner slotId="material-middle" contextKey={metadata.id} />
 
       {/* -------------------------------------------------------------
           BAGIAN 2 (80%): KATALOG BEDAH VARIASI SOAL ASLI UTBK

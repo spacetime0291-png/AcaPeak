@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {
   ArrowLeft,
   ChevronDown,
-  ChevronUp,
   ChevronRight,
   Play,
   BookOpen,
@@ -12,7 +11,6 @@ import {
   Clock,
 } from 'lucide-react';
 import type { SubtestItem } from '../../types/material';
-import { AdBanner } from '../content/AdBanner';
 import { ModuleIcon } from './ModuleIcon';
 
 interface SubtestDetailViewProps {
@@ -200,13 +198,6 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
       {/* Main Content Area */}
       <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-3 sm:py-5">
-        {/* Ad slot */}
-        <AdBanner
-          slotId={`subtest-${subtest.code.toLowerCase()}-${activeTab}`}
-          routeKey={`subtest-${subtest.code.toLowerCase()}-${activeTab}`}
-          className="mb-3"
-        />
-
         {/* ========================================================
             TAB 1: MATERI (Tanpa Centang, Pakai Icon, Desain Bersih)
             ======================================================== */}
@@ -241,49 +232,56 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       </div>
                     </div>
 
-                    {/* Right: Chevron */}
+                    {/* Right: Smooth Rotating Chevron */}
                     <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
                       <div className="text-slate-400 group-hover:text-blue-600 transition-colors">
-                        {isOpen ? (
-                          <ChevronUp className="w-5 h-5 text-slate-400" />
-                        ) : (
-                          <ChevronDown className="w-5 h-5 text-slate-400" />
-                        )}
+                        <ChevronDown
+                          className={`w-5 h-5 transition-transform duration-300 ease-out ${
+                            isOpen ? 'rotate-180 text-blue-600' : 'rotate-0 text-slate-400'
+                          }`}
+                        />
                       </div>
                     </div>
                   </div>
 
-                  {/* Expanded Sub-bab List: Tanpa Centang, Menggunakan Icon, Judul Tidak Terpotong */}
-                  {isOpen && (
-                    <div className="bg-slate-50/70 px-3 sm:px-6 py-2 border-t border-slate-100 space-y-1.5 animate-in fade-in duration-150">
-                      {mod.subtopics.map((sub) => {
-                        return (
-                          <div
-                            key={sub.id}
-                            onClick={() => onSelectMaterial(sub.id)}
-                            className="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white hover:bg-blue-50/60 border border-slate-100 hover:border-blue-200 transition cursor-pointer group/sub shadow-2xs"
-                          >
-                            {/* Left: Icon Buku (Menggantikan 1.1) + Judul Penuh */}
-                            <div className="flex items-start sm:items-center gap-2.5 min-w-0 flex-1 py-0.5">
-                              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-blue-50 text-blue-600 border border-blue-100/80 flex items-center justify-center shrink-0 group-hover/sub:bg-blue-600 group-hover/sub:text-white transition-colors shadow-2xs mt-0.5 sm:mt-0">
-                                <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  {/* Expanded Sub-bab List: Smooth Animated Accordion */}
+                  <div
+                    className={`grid transition-all duration-300 ease-out ${
+                      isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="bg-slate-50/70 px-3 sm:px-6 py-2 border-t border-slate-100 space-y-1.5 animate-subtopic-slide">
+                        {mod.subtopics.map((sub, sIdx) => {
+                          return (
+                            <div
+                              key={sub.id}
+                              onClick={() => onSelectMaterial(sub.id)}
+                              style={{ animationDelay: `${sIdx * 30}ms` }}
+                              className="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white hover:bg-blue-50/60 border border-slate-100 hover:border-blue-200 transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs hover:shadow-xs"
+                            >
+                              {/* Left: Icon Buku (Menggantikan 1.1) + Judul Penuh */}
+                              <div className="flex items-start sm:items-center gap-2.5 min-w-0 flex-1 py-0.5">
+                                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-blue-50 text-blue-600 border border-blue-100/80 flex items-center justify-center shrink-0 group-hover/sub:bg-blue-600 group-hover/sub:text-white transition-colors shadow-2xs mt-0.5 sm:mt-0">
+                                  <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                                </div>
+
+                                <span className="text-xs sm:text-sm font-medium leading-snug break-words whitespace-normal flex-1 text-slate-800 group-hover/sub:text-blue-700">
+                                  {sub.title}
+                                </span>
                               </div>
 
-                              <span className="text-xs sm:text-sm font-medium leading-snug break-words whitespace-normal flex-1 text-slate-800 group-hover/sub:text-blue-700">
-                                {sub.title}
-                              </span>
+                              {/* Right: Clean Read Action */}
+                              <div className="flex items-center gap-1 text-[11px] font-semibold text-blue-600 shrink-0 ml-2 group-hover/sub:translate-x-0.5 transition-transform">
+                                <span className="hidden sm:inline">Baca</span>
+                                <ChevronRight className="w-4 h-4 text-blue-500" />
+                              </div>
                             </div>
-
-                            {/* Right: Clean Read Action */}
-                            <div className="flex items-center gap-1 text-[11px] font-semibold text-blue-600 shrink-0 ml-2 group-hover/sub:translate-x-0.5 transition-transform">
-                              <span className="hidden sm:inline">Baca</span>
-                              <ChevronRight className="w-4 h-4 text-blue-500" />
-                            </div>
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                      </div>
                     </div>
-                  )}
+                  </div>
                 </div>
               );
             })}
@@ -385,60 +383,67 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                         </button>
 
                         <div className="text-slate-400 group-hover:text-blue-600 transition-colors">
-                          {isOpen ? (
-                            <ChevronUp className="w-5 h-5 text-slate-400" />
-                          ) : (
-                            <ChevronDown className="w-5 h-5 text-slate-400" />
-                          )}
+                          <ChevronDown
+                            className={`w-5 h-5 transition-transform duration-300 ease-out ${
+                              isOpen ? 'rotate-180 text-blue-600' : 'rotate-0 text-slate-400'
+                            }`}
+                          />
                         </div>
                       </div>
                     </div>
 
-                    {/* Expanded Sub-bab List: Tanpa Centang Kiri, Tanpa Teks Pilih/Terpilih Kanan, Visual Warna Tetap */}
-                    {isOpen && (
-                      <div className="bg-slate-50/70 px-3 sm:px-6 py-2 border-t border-slate-100 space-y-1.5 animate-in fade-in duration-150">
-                        {mod.subtopics.map((sub) => {
-                          const isSelected = selectedSubchapters.has(sub.id);
+                    {/* Expanded Sub-bab List: Smooth Animated Accordion */}
+                    <div
+                      className={`grid transition-all duration-300 ease-out ${
+                        isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <div className="bg-slate-50/70 px-3 sm:px-6 py-2 border-t border-slate-100 space-y-1.5 animate-subtopic-slide">
+                          {mod.subtopics.map((sub, sIdx) => {
+                            const isSelected = selectedSubchapters.has(sub.id);
 
-                          return (
-                            <div
-                              key={sub.id}
-                              onClick={() => toggleSubchapterSelect(sub.id)}
-                              className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl transition cursor-pointer group/sub shadow-2xs border ${
-                                isSelected
-                                  ? 'bg-blue-50/80 border-blue-300'
-                                  : 'bg-white hover:bg-blue-50/50 border-slate-100 hover:border-blue-200'
-                              }`}
-                            >
-                              {/* Left: Icon Zap + Judul Lengkap */}
-                              <div className="flex items-start sm:items-center gap-2.5 min-w-0 flex-1 py-0.5">
-                                {/* Icon Sub-bab (Visual warna menyesuaikan status terpilih) */}
-                                <div
-                                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border mt-0.5 sm:mt-0 ${
-                                    isSelected
-                                      ? 'bg-blue-600 text-white border-blue-600'
-                                      : 'bg-blue-50 text-blue-600 border-blue-100/80 group-hover/sub:bg-blue-600 group-hover/sub:text-white'
-                                  }`}
-                                >
-                                  <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                            return (
+                              <div
+                                key={sub.id}
+                                onClick={() => toggleSubchapterSelect(sub.id)}
+                                style={{ animationDelay: `${sIdx * 30}ms` }}
+                                className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
+                                  isSelected
+                                    ? 'bg-blue-50/80 border-blue-300 shadow-xs'
+                                    : 'bg-white hover:bg-blue-50/50 border-slate-100 hover:border-blue-200'
+                                }`}
+                              >
+                                {/* Left: Icon Zap + Judul Lengkap */}
+                                <div className="flex items-start sm:items-center gap-2.5 min-w-0 flex-1 py-0.5">
+                                  {/* Icon Sub-bab (Visual warna menyesuaikan status terpilih) */}
+                                  <div
+                                    className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border mt-0.5 sm:mt-0 ${
+                                      isSelected
+                                        ? 'bg-blue-600 text-white border-blue-600'
+                                        : 'bg-blue-50 text-blue-600 border-blue-100/80 group-hover/sub:bg-blue-600 group-hover/sub:text-white'
+                                    }`}
+                                  >
+                                    <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                                  </div>
+
+                                  {/* Judul Sub-bab Tanpa Truncate */}
+                                  <span
+                                    className={`text-xs sm:text-sm font-medium leading-snug break-words whitespace-normal flex-1 ${
+                                      isSelected
+                                        ? 'text-blue-900 font-semibold'
+                                        : 'text-slate-800 group-hover/sub:text-blue-700'
+                                    }`}
+                                  >
+                                    {sub.title}
+                                  </span>
                                 </div>
-
-                                {/* Judul Sub-bab Tanpa Truncate */}
-                                <span
-                                  className={`text-xs sm:text-sm font-medium leading-snug break-words whitespace-normal flex-1 ${
-                                    isSelected
-                                      ? 'text-blue-900 font-semibold'
-                                      : 'text-slate-800 group-hover/sub:text-blue-700'
-                                  }`}
-                                >
-                                  {sub.title}
-                                </span>
                               </div>
-                            </div>
-                          );
-                        })}
+                            );
+                          })}
+                        </div>
                       </div>
-                    )}
+                    </div>
                   </div>
                 );
               })}

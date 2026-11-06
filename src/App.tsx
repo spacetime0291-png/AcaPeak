@@ -14,7 +14,6 @@ import { SubtestDetailView } from './components/subtest/SubtestDetailView';
 import { SmaSubjectDetailView } from './components/subtest/SmaSubjectDetailView';
 import { PdfMaterialReader } from './components/reader/PdfMaterialReader';
 import { ActiveDrillingView } from './components/drilling/ActiveDrillingView';
-import { AdBanner } from './components/content/AdBanner';
 
 interface AppRouteState {
   view: 'home' | 'subtest' | 'materi' | 'drilling' | 'sma-subject';
@@ -251,16 +250,6 @@ export default function App() {
     handleStartDrilling([subchapterId], 10, 15);
   };
 
-  // Generate dynamic unique key for ad-refresh requirement
-  const currentAdRouteKey = (() => {
-    if (route.view === 'home') return `home-${route.mode}`;
-    if (route.view === 'subtest') return `subtest-${route.subtestCode}-${route.tab || 'materi'}`;
-    if (route.view === 'materi') return `materi-${route.materiId}`;
-    if (route.view === 'drilling') return `drilling-q-${(route.drillingQuestionIndex || 0) + 1}`;
-    if (route.view === 'sma-subject') return `sma-${route.smaSubjectId}`;
-    return 'default-route';
-  })();
-
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col selection:bg-indigo-100 selection:text-indigo-900 font-sans">
       {/* 1. TOP HEADER & MODE SWITCHER (HANYA MUNCUL DI BERANDA '/') */}
@@ -293,13 +282,6 @@ export default function App() {
         {/* VIEW 1: HOME DASHBOARD */}
         {route.view === 'home' && (
           <div className="space-y-4">
-            {/* Slot Iklan Home: Di antara Search Bar dan Grid Subtes */}
-            <AdBanner
-              slotId="home-banner-top"
-              routeKey={currentAdRouteKey}
-              className="my-1"
-            />
-
             {/* Mode UTBK-SNBT: Grid 7 Subtes UTBK */}
             {route.mode === 'utbk' && (
               <UtbkSubtestGrid
