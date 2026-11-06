@@ -104,7 +104,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
                     </div>
 
                     <div className="space-y-0.5">
-                      {mod.subtopics.map((sub, sIdx) => {
+                      {mod.subtopics.map((sub) => {
                         const isActive = sub.id === currentMaterialId;
 
                         return (
@@ -121,9 +121,12 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
                                 : 'text-slate-700 hover:bg-slate-100'
                             }`}
                           >
-                            <span className="pr-2 break-words whitespace-normal leading-snug flex-1">
-                              {modIdx + 1}.{sIdx + 1} {sub.title}
-                            </span>
+                            <div className="flex items-start gap-2 pr-2 min-w-0 flex-1">
+                              <BookOpen className={`w-3.5 h-3.5 mt-0.5 shrink-0 ${isActive ? 'text-white' : 'text-slate-400 group-hover:text-indigo-600'}`} />
+                              <span className="break-words whitespace-normal leading-snug flex-1">
+                                {sub.title}
+                              </span>
+                            </div>
                             <span
                               className={`w-2 h-2 rounded-full shrink-0 ${
                                 isActive

@@ -144,7 +144,7 @@ export default function App() {
       fetchMaterialById(route.materiId)
         .then((data) => {
           setActiveMaterial(data);
-          document.title = `${data.metadata.subtest} ${data.metadata.subchapter_num} - ${data.metadata.title} | Portal Edukasi`;
+          document.title = `${data.metadata.subtest} - ${data.metadata.title} | Portal Edukasi`;
         })
         .catch((err) => {
           console.error('Failed to load material', err);

@@ -206,7 +206,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
         {/* Clean Sub-bab title */}
         <div className="min-w-0 flex-1 text-center px-2">
           <p className="text-xs font-bold text-slate-800 break-words line-clamp-2 leading-tight">
-            {metadata.subchapter_num} {metadata.title}
+            {metadata.title}
           </p>
         </div>
 
@@ -257,7 +257,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           </div>
 
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 leading-tight break-words">
-            {metadata.subchapter_num} {metadata.title}
+            {metadata.title}
           </h1>
 
           <div className="mt-2 text-xs text-slate-500 flex items-center gap-2">
