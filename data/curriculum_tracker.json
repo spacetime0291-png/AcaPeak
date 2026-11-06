@@ -103,7 +103,7 @@
         "Archetype Soal: Pemilihan anggota tim berdasarkan kriteria saling menolak"
       ],
       "requires_svg": false,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pu/pu-2.3.json"
     },
     {
@@ -121,7 +121,7 @@
         "Archetype Soal: Estimasi operasi hitung cepat pecahan & desimal"
       ],
       "requires_svg": true,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pu/pu-3.1.json"
     },
     {
@@ -138,7 +138,7 @@
         "Archetype Soal: Kecepatan berpapasan dan menyusul"
       ],
       "requires_svg": false,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pu/pu-3.2.json"
     },
     {

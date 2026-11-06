@@ -57,7 +57,7 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
             "subchapter_num": "2.3",
             "title": "Penalaran Analitis (Urutan Posisi, Penjadwalan, & Kombinasi Syarat)",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           }
         ]
       },
@@ -70,14 +70,14 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
             "subchapter_num": "3.1",
             "title": "Pola Barisan Bilangan, Huruf, & Operasi Aritmetika Cepat",
             "variations_count": 4,
-            "isCompleted": false
+            "isCompleted": true
           },
           {
             "id": "pu-3.2",
             "subchapter_num": "3.2",
             "title": "Perbandingan Senilai, Berbalik Nilai, Kecepatan, & Proporsi",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           },
           {
             "id": "pu-3.3",
