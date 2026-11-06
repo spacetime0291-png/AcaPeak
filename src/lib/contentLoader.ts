@@ -31,26 +31,42 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
 };
 
 // Flatten all UTBK subchapters for metadata lookup
-export const ALL_UTBK_SUBCHAPTERS = UTBK_SYLLABUS.flatMap((subtest) =>
-  subtest.chapters.flatMap((chapter) =>
+export const ALL_UTBK_SUBCHAPTERS = UTBK_SYLLABUS.flatMap((subtest) => {
+  if (subtest.modules) {
+    return subtest.modules.flatMap((mod, modIdx) =>
+      mod.subtopics.map((sub, subIdx) => ({
+        id: sub.id,
+        subchapter_num: `${modIdx + 1}.${subIdx + 1}`,
+        title: sub.title,
+        subtestCode: subtest.code,
+        subtestName: subtest.title || subtest.name || subtest.code,
+        chapterNum: modIdx + 1,
+        chapterTitle: mod.title,
+      }))
+    );
+  }
+  return (subtest.chapters || []).flatMap((chapter) =>
     chapter.subchapters.map((sub) => ({
       ...sub,
       subtestCode: subtest.code,
-      subtestName: subtest.name,
+      subtestName: subtest.title || subtest.name || subtest.code,
       chapterNum: chapter.chapter_num,
       chapterTitle: chapter.chapter_title,
     }))
-  )
-);
+  );
+});
 
 export async function fetchMaterialById(id: string): Promise<Material> {
-  const matched = ALL_UTBK_SUBCHAPTERS.find((s) => s.id === id);
+  const normalizedId = id.replace('.', '-');
+  const matched = ALL_UTBK_SUBCHAPTERS.find(
+    (s) => s.id === id || s.id === normalizedId || s.id.replace('-', '.') === id
+  );
 
   if (PRELOADED_MATERIALS[id] && matched && PRELOADED_MATERIALS[id].metadata?.title === matched.title) {
     return PRELOADED_MATERIALS[id];
   }
 
-  const subtestPrefix = id.split('-')[0].toLowerCase();
+  const subtestPrefix = (matched ? matched.subtestCode : id.split('-')[0]).toLowerCase();
   const rawBase = import.meta.env.BASE_URL || '/';
   const baseUrl = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
   const targetUrl = `${baseUrl}content/utbk/${subtestPrefix}/${id}.json`;

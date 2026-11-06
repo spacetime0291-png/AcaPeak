@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface UtbkSubtestGridProps {
   onSelectSubtest: (code: string) => void;
@@ -193,63 +193,132 @@ const PmIcon = () => (
   </svg>
 );
 
-interface SubtestItem {
+interface SubtestVisualItem {
   code: string;
   name: string;
+  category: 'TPS' | 'Literasi';
+  moduleCount: number;
   bgColor: string;
   icon: React.ReactNode;
 }
 
 export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtest }) => {
-  const subtests: SubtestItem[] = [
+  const [categoryFilter, setCategoryFilter] = useState<'ALL' | 'TPS' | 'Literasi'>('ALL');
+
+  const subtests: SubtestVisualItem[] = [
     {
       code: 'PU',
       name: 'Penalaran Umum',
+      category: 'TPS',
+      moduleCount: 5,
       bgColor: 'bg-indigo-100',
       icon: <PuIcon />,
     },
     {
       code: 'PPU',
       name: 'Pengetahuan & Pemahaman Umum',
+      category: 'TPS',
+      moduleCount: 4,
       bgColor: 'bg-sky-100',
       icon: <PpuIcon />,
     },
     {
       code: 'PBM',
       name: 'Pemahaman Bacaan & Menulis',
+      category: 'TPS',
+      moduleCount: 4,
       bgColor: 'bg-rose-100',
       icon: <PbmIcon />,
     },
     {
       code: 'PK',
       name: 'Pengetahuan Kuantitatif',
+      category: 'TPS',
+      moduleCount: 6,
       bgColor: 'bg-blue-100',
       icon: <PkIcon />,
     },
     {
       code: 'LBI',
       name: 'Literasi Bahasa Indonesia',
+      category: 'Literasi',
+      moduleCount: 4,
       bgColor: 'bg-red-100',
       icon: <LbiIcon />,
     },
     {
       code: 'LBE',
       name: 'Literasi Bahasa Inggris',
+      category: 'Literasi',
+      moduleCount: 4,
       bgColor: 'bg-purple-100',
       icon: <LbeIcon />,
     },
     {
       code: 'PM',
       name: 'Penalaran Matematika',
+      category: 'Literasi',
+      moduleCount: 4,
       bgColor: 'bg-emerald-100',
       icon: <PmIcon />,
     },
   ];
 
+  const filteredSubtests = subtests.filter((sub) => {
+    if (categoryFilter === 'ALL') return true;
+    return sub.category === categoryFilter;
+  });
+
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+    <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 space-y-4">
+      {/* Category Filter Tabs: Semua | TPS | Literasi */}
+      <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-3">
+        <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
+          <button
+            type="button"
+            onClick={() => setCategoryFilter('ALL')}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+              categoryFilter === 'ALL'
+                ? 'bg-white text-blue-700 shadow-2xs'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            Semua (7)
+          </button>
+          <button
+            type="button"
+            onClick={() => setCategoryFilter('TPS')}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer flex items-center gap-1 ${
+              categoryFilter === 'TPS'
+                ? 'bg-white text-blue-700 shadow-2xs'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            <span>🎯 TPS</span>
+            <span className="text-[11px] font-normal opacity-75">(4)</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setCategoryFilter('Literasi')}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer flex items-center gap-1 ${
+              categoryFilter === 'Literasi'
+                ? 'bg-white text-blue-700 shadow-2xs'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            <span>📚 Literasi</span>
+            <span className="text-[11px] font-normal opacity-75">(3)</span>
+          </button>
+        </div>
+
+        <span className="text-[11px] font-semibold text-slate-400 hidden sm:inline">
+          32 Modul Terstandar
+        </span>
+      </div>
+
+      {/* Grid 4 Kolom Padat & Ilustratif */}
       <div className="grid grid-cols-4 gap-y-6 gap-x-3 sm:gap-x-6">
-        {subtests.map((sub) => (
+        {filteredSubtests.map((sub) => (
           <button
             key={sub.code}
             type="button"

@@ -71,6 +71,35 @@ export interface Material {
   worked_examples: WorkedExample[];
 }
 
+export type SubtestCategory = 'TPS' | 'Literasi';
+export type ModulePriority = 'High-Yield' | 'Core' | 'Standard';
+
+export interface SubtopicItem {
+  id: string;
+  title: string;
+  isCompleted?: boolean;
+}
+
+export interface ModuleItem {
+  id: string;
+  title: string;
+  priority: ModulePriority;
+  estimatedMinutes: number;
+  subtopics: SubtopicItem[];
+}
+
+export interface SubtestItem {
+  id: string;
+  code: SubtestType;
+  title: string;
+  category: SubtestCategory;
+  modules: ModuleItem[];
+  // Backwards compatibility properties
+  name?: string;
+  description?: string;
+  chapters?: SyllabusChapterItem[];
+}
+
 export interface SyllabusSubchapterItem {
   id: string;
   subchapter_num: string;
@@ -85,9 +114,4 @@ export interface SyllabusChapterItem {
   subchapters: SyllabusSubchapterItem[];
 }
 
-export interface SyllabusSubtestItem {
-  code: SubtestType;
-  name: string;
-  description: string;
-  chapters: SyllabusChapterItem[];
-}
+export type SyllabusSubtestItem = SubtestItem;

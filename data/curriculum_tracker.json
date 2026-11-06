@@ -1,2095 +1,1537 @@
 {
   "items": [
     {
-      "id": "pu-1.1",
+      "id": "pu-1-1",
       "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-1",
+      "module_title": "Penalaran Induktif & Evaluasi Argumen",
+      "priority": "High-Yield",
       "chapter_num": 1,
-      "chapter_title": "Kesesuaian Pernyataan Wacana",
+      "chapter_title": "Penalaran Induktif & Evaluasi Argumen",
       "subchapter_num": "1.1",
-      "subchapter_title": "Fakta Eksplisit Pasti Benar/Salah",
-      "title": "Fakta Eksplisit Pasti Benar/Salah",
+      "subchapter_title": "Kesesuaian Pernyataan & Fakta Eksplisit/Implisit",
+      "title": "Kesesuaian Pernyataan & Fakta Eksplisit/Implisit",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Fakta Eksplisit Pasti Benar/Salah",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Kesesuaian Pernyataan & Fakta Eksplisit/Implisit",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-1.1.json"
+      "output_path": "/content/utbk/pu/pu-1-1.json"
     },
     {
-      "id": "pu-1.2",
+      "id": "pu-1-2",
       "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-1",
+      "module_title": "Penalaran Induktif & Evaluasi Argumen",
+      "priority": "High-Yield",
       "chapter_num": 1,
-      "chapter_title": "Kesesuaian Pernyataan Wacana",
+      "chapter_title": "Penalaran Induktif & Evaluasi Argumen",
       "subchapter_num": "1.2",
-      "subchapter_title": "Simpulan Mungkin Benar & Inferensi",
-      "title": "Simpulan Mungkin Benar & Inferensi",
+      "subchapter_title": "Hubungan Sebab-Akibat (Kausalitas) & Kualitas Simpulan",
+      "title": "Hubungan Sebab-Akibat (Kausalitas) & Kualitas Simpulan",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Simpulan Mungkin Benar & Inferensi",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Hubungan Sebab-Akibat (Kausalitas) & Kualitas Simpulan",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-1.2.json"
+      "output_path": "/content/utbk/pu/pu-1-2.json"
     },
     {
-      "id": "pu-2.1",
+      "id": "pu-1-3",
       "subtest": "PU",
-      "chapter_num": 2,
-      "chapter_title": "Sebab-Akibat & Kualitas Simpulan",
-      "subchapter_num": "2.1",
-      "subchapter_title": "Hubungan Kausalitas Teks",
-      "title": "Hubungan Kausalitas Teks",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Hubungan Kausalitas Teks",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-2.1.json"
-    },
-    {
-      "id": "pu-2.2",
-      "subtest": "PU",
-      "chapter_num": 2,
-      "chapter_title": "Sebab-Akibat & Kualitas Simpulan",
-      "subchapter_num": "2.2",
-      "subchapter_title": "Evaluasi Kualitas Simpulan",
-      "title": "Evaluasi Kualitas Simpulan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Evaluasi Kualitas Simpulan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-2.2.json"
-    },
-    {
-      "id": "pu-3.1",
-      "subtest": "PU",
-      "chapter_num": 3,
-      "chapter_title": "Memperkuat & Memperlemah Argumen",
-      "subchapter_num": "3.1",
-      "subchapter_title": "Pernyataan Memperkuat/Memperlemah Hipotesis",
-      "title": "Pernyataan Memperkuat/Memperlemah Hipotesis",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pernyataan Memperkuat/Memperlemah Hipotesis",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-3.1.json"
-    },
-    {
-      "id": "pu-3.2",
-      "subtest": "PU",
-      "chapter_num": 3,
-      "chapter_title": "Memperkuat & Memperlemah Argumen",
-      "subchapter_num": "3.2",
-      "subchapter_title": "Tabel Kompleks Memperkuat vs Tidak Memperkuat",
-      "title": "Tabel Kompleks Memperkuat vs Tidak Memperkuat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Tabel Kompleks Memperkuat vs Tidak Memperkuat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-3.2.json"
-    },
-    {
-      "id": "pu-4.1",
-      "subtest": "PU",
-      "chapter_num": 4,
-      "chapter_title": "Logika Proposisi & Silogisme",
-      "subchapter_num": "4.1",
-      "subchapter_title": "Implikasi, Kontraposisi & Ekuivalensi",
-      "title": "Implikasi, Kontraposisi & Ekuivalensi",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Implikasi, Kontraposisi & Ekuivalensi",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-4.1.json"
-    },
-    {
-      "id": "pu-4.2",
-      "subtest": "PU",
-      "chapter_num": 4,
-      "chapter_title": "Logika Proposisi & Silogisme",
-      "subchapter_num": "4.2",
-      "subchapter_title": "Penarikan Kesimpulan modus Ponens, Tollens & Silogisme",
-      "title": "Penarikan Kesimpulan modus Ponens, Tollens & Silogisme",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Penarikan Kesimpulan modus Ponens, Tollens & Silogisme",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-4.2.json"
-    },
-    {
-      "id": "pu-5.1",
-      "subtest": "PU",
-      "chapter_num": 5,
-      "chapter_title": "Logika Kuantor & Diagram Himpunan",
-      "subchapter_num": "5.1",
-      "subchapter_title": "Kuantor Semua-Sebagian & Ingkarannya",
-      "title": "Kuantor Semua-Sebagian & Ingkarannya",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kuantor Semua-Sebagian & Ingkarannya",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-5.1.json"
-    },
-    {
-      "id": "pu-5.2",
-      "subtest": "PU",
-      "chapter_num": 5,
-      "chapter_title": "Logika Kuantor & Diagram Himpunan",
-      "subchapter_num": "5.2",
-      "subchapter_title": "Silogisme Kategoris",
-      "title": "Silogisme Kategoris",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Silogisme Kategoris",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-5.2.json"
-    },
-    {
-      "id": "pu-6.1",
-      "subtest": "PU",
-      "chapter_num": 6,
-      "chapter_title": "Penalaran Analitis",
-      "subchapter_num": "6.1",
-      "subchapter_title": "Analisis Urutan & Posisi",
-      "title": "Analisis Urutan & Posisi",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Analisis Urutan & Posisi",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-6.1.json"
-    },
-    {
-      "id": "pu-6.2",
-      "subtest": "PU",
-      "chapter_num": 6,
-      "chapter_title": "Penalaran Analitis",
-      "subchapter_num": "6.2",
-      "subchapter_title": "Analisis Penjadwalan & Pengelompokan Syarat",
-      "title": "Analisis Penjadwalan & Pengelompokan Syarat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Analisis Penjadwalan & Pengelompokan Syarat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-6.2.json"
-    },
-    {
-      "id": "pu-7.1",
-      "subtest": "PU",
-      "chapter_num": 7,
-      "chapter_title": "Pola Bilangan, Huruf & Gambar",
-      "subchapter_num": "7.1",
-      "subchapter_title": "Barisan Bilangan & Larik",
-      "title": "Barisan Bilangan & Larik",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Barisan Bilangan & Larik",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-7.1.json"
-    },
-    {
-      "id": "pu-7.2",
-      "subtest": "PU",
-      "chapter_num": 7,
-      "chapter_title": "Pola Bilangan, Huruf & Gambar",
-      "subchapter_num": "7.2",
-      "subchapter_title": "Pola Operasi Aritmetika dalam Kotak/Segitiga",
-      "title": "Pola Operasi Aritmetika dalam Kotak/Segitiga",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pola Operasi Aritmetika dalam Kotak/Segitiga",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-7.2.json"
-    },
-    {
-      "id": "pu-8.1",
-      "subtest": "PU",
-      "chapter_num": 8,
-      "chapter_title": "Aritmetika Sosial & Perbandingan",
-      "subchapter_num": "8.1",
-      "subchapter_title": "Perbandingan Senilai & Berbalik Nilai",
-      "title": "Perbandingan Senilai & Berbalik Nilai",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Perbandingan Senilai & Berbalik Nilai",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-8.1.json"
-    },
-    {
-      "id": "pu-8.2",
-      "subtest": "PU",
-      "chapter_num": 8,
-      "chapter_title": "Aritmetika Sosial & Perbandingan",
-      "subchapter_num": "8.2",
-      "subchapter_title": "Kecepatan, Debit & Kapasitas Kerja",
-      "title": "Kecepatan, Debit & Kapasitas Kerja",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kecepatan, Debit & Kapasitas Kerja",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-8.2.json"
-    },
-    {
-      "id": "pu-9.1",
-      "subtest": "PU",
-      "chapter_num": 9,
-      "chapter_title": "Interpretasi Data Tabel & Grafik",
-      "subchapter_num": "9.1",
-      "subchapter_title": "Tren Grafik Garis & Batang Ganda",
-      "title": "Tren Grafik Garis & Batang Ganda",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Tren Grafik Garis & Batang Ganda",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-9.1.json"
-    },
-    {
-      "id": "pu-9.2",
-      "subtest": "PU",
-      "chapter_num": 9,
-      "chapter_title": "Interpretasi Data Tabel & Grafik",
-      "subchapter_num": "9.2",
-      "subchapter_title": "Proporsi, Persentase Pertumbuhan & Rasio Data",
-      "title": "Proporsi, Persentase Pertumbuhan & Rasio Data",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Proporsi, Persentase Pertumbuhan & Rasio Data",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pu/pu-9.2.json"
-    },
-    {
-      "id": "ppu-1.1",
-      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "pu-mod-1",
+      "module_title": "Penalaran Induktif & Evaluasi Argumen",
+      "priority": "High-Yield",
       "chapter_num": 1,
-      "chapter_title": "Makna Kata & Hubungan Leksikal",
-      "subchapter_num": "1.1",
-      "subchapter_title": "Sinonim, Antonim & Homonim Kontekstual",
-      "title": "Sinonim, Antonim & Homonim Kontekstual",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Sinonim, Antonim & Homonim Kontekstual",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-1.1.json"
-    },
-    {
-      "id": "ppu-1.2",
-      "subtest": "PPU",
-      "chapter_num": 1,
-      "chapter_title": "Makna Kata & Hubungan Leksikal",
-      "subchapter_num": "1.2",
-      "subchapter_title": "Hipernim-Hiponim & Perubahan Makna",
-      "title": "Hipernim-Hiponim & Perubahan Makna",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Hipernim-Hiponim & Perubahan Makna",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-1.2.json"
-    },
-    {
-      "id": "ppu-2.1",
-      "subtest": "PPU",
-      "chapter_num": 2,
-      "chapter_title": "Afiksasi & Pembentukan Kata",
-      "subchapter_num": "2.1",
-      "subchapter_title": "Makna Imbuhan pe-an, ke-an, per-an",
-      "title": "Makna Imbuhan pe-an, ke-an, per-an",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Makna Imbuhan pe-an, ke-an, per-an",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-2.1.json"
-    },
-    {
-      "id": "ppu-2.2",
-      "subtest": "PPU",
-      "chapter_num": 2,
-      "chapter_title": "Afiksasi & Pembentukan Kata",
-      "subchapter_num": "2.2",
-      "subchapter_title": "Makna Imbuhan me-kan, ber-, ter-",
-      "title": "Makna Imbuhan me-kan, ber-, ter-",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Makna Imbuhan me-kan, ber-, ter-",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-2.2.json"
-    },
-    {
-      "id": "ppu-3.1",
-      "subtest": "PPU",
-      "chapter_num": 3,
-      "chapter_title": "Frasa & Pola Makna Frasa",
-      "subchapter_num": "3.1",
-      "subchapter_title": "Frasa Endosentris & Eksosentris",
-      "title": "Frasa Endosentris & Eksosentris",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Frasa Endosentris & Eksosentris",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-3.1.json"
-    },
-    {
-      "id": "ppu-3.2",
-      "subtest": "PPU",
-      "chapter_num": 3,
-      "chapter_title": "Frasa & Pola Makna Frasa",
-      "subchapter_num": "3.2",
-      "subchapter_title": "Kesamaan Pola Makna Frasa dalam Kalimat",
-      "title": "Kesamaan Pola Makna Frasa dalam Kalimat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kesamaan Pola Makna Frasa dalam Kalimat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-3.2.json"
-    },
-    {
-      "id": "ppu-4.1",
-      "subtest": "PPU",
-      "chapter_num": 4,
-      "chapter_title": "Struktur Klausa & Pola Kalimat (S-P-O-K-Pel)",
-      "subchapter_num": "4.1",
-      "subchapter_title": "Identifikasi Subjek, Predikat, Objek & Pelengkap",
-      "title": "Identifikasi Subjek, Predikat, Objek & Pelengkap",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Identifikasi Subjek, Predikat, Objek & Pelengkap",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-4.1.json"
-    },
-    {
-      "id": "ppu-4.2",
-      "subtest": "PPU",
-      "chapter_num": 4,
-      "chapter_title": "Struktur Klausa & Pola Kalimat (S-P-O-K-Pel)",
-      "subchapter_num": "4.2",
-      "subchapter_title": "Persamaan Pola Dasar Kalimat",
-      "title": "Persamaan Pola Dasar Kalimat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Persamaan Pola Dasar Kalimat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-4.2.json"
-    },
-    {
-      "id": "ppu-5.1",
-      "subtest": "PPU",
-      "chapter_num": 5,
-      "chapter_title": "Kalimat Majemuk & Transformasi Kalimat",
-      "subchapter_num": "5.1",
-      "subchapter_title": "Kalimat Majemuk Setara & Bertingkat",
-      "title": "Kalimat Majemuk Setara & Bertingkat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kalimat Majemuk Setara & Bertingkat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-5.1.json"
-    },
-    {
-      "id": "ppu-5.2",
-      "subtest": "PPU",
-      "chapter_num": 5,
-      "chapter_title": "Kalimat Majemuk & Transformasi Kalimat",
-      "subchapter_num": "5.2",
-      "subchapter_title": "Kalimat Aktif-Pasif & Perluasan Inti Kalimat",
-      "title": "Kalimat Aktif-Pasif & Perluasan Inti Kalimat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kalimat Aktif-Pasif & Perluasan Inti Kalimat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-5.2.json"
-    },
-    {
-      "id": "ppu-6.1",
-      "subtest": "PPU",
-      "chapter_num": 6,
-      "chapter_title": "Gagasan Pokok & Kepaduan Paragraf",
-      "subchapter_num": "6.1",
-      "subchapter_title": "Ide Pokok & Kalimat Utama",
-      "title": "Ide Pokok & Kalimat Utama",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Ide Pokok & Kalimat Utama",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-6.1.json"
-    },
-    {
-      "id": "ppu-6.2",
-      "subtest": "PPU",
-      "chapter_num": 6,
-      "chapter_title": "Gagasan Pokok & Kepaduan Paragraf",
-      "subchapter_num": "6.2",
-      "subchapter_title": "Koherensi, Kalimat Sumbang & Hubungan Antarparagraf",
-      "title": "Koherensi, Kalimat Sumbang & Hubungan Antarparagraf",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Koherensi, Kalimat Sumbang & Hubungan Antarparagraf",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-6.2.json"
-    },
-    {
-      "id": "ppu-7.1",
-      "subtest": "PPU",
-      "chapter_num": 7,
-      "chapter_title": "Gaya Bahasa, Sikap Penulis & Pragmatik",
-      "subchapter_num": "7.1",
-      "subchapter_title": "Majas, Makna Asosiatif & Idiom",
-      "title": "Majas, Makna Asosiatif & Idiom",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Majas, Makna Asosiatif & Idiom",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-7.1.json"
-    },
-    {
-      "id": "ppu-7.2",
-      "subtest": "PPU",
-      "chapter_num": 7,
-      "chapter_title": "Gaya Bahasa, Sikap Penulis & Pragmatik",
-      "subchapter_num": "7.2",
-      "subchapter_title": "Keberpihakan, Tone & Tujuan Penulis",
-      "title": "Keberpihakan, Tone & Tujuan Penulis",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Keberpihakan, Tone & Tujuan Penulis",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-7.2.json"
-    },
-    {
-      "id": "ppu-8.1",
-      "subtest": "PPU",
-      "chapter_num": 8,
-      "chapter_title": "Kriptografi & Bahasa Buatan (Bahasa Panda)",
-      "subchapter_num": "8.1",
-      "subchapter_title": "Dekode Pola Morfologi Bahasa Buatan",
-      "title": "Dekode Pola Morfologi Bahasa Buatan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Dekode Pola Morfologi Bahasa Buatan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-8.1.json"
-    },
-    {
-      "id": "ppu-8.2",
-      "subtest": "PPU",
-      "chapter_num": 8,
-      "chapter_title": "Kriptografi & Bahasa Buatan (Bahasa Panda)",
-      "subchapter_num": "8.2",
-      "subchapter_title": "Dekode Struktur Kalimat Bahasa Panda",
-      "title": "Dekode Struktur Kalimat Bahasa Panda",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Dekode Struktur Kalimat Bahasa Panda",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/ppu/ppu-8.2.json"
-    },
-    {
-      "id": "pbm-1.1",
-      "subtest": "PBM",
-      "chapter_num": 1,
-      "chapter_title": "Pemakaian Huruf (EYD V)",
-      "subchapter_num": "1.1",
-      "subchapter_title": "Aturan Huruf Kapital",
-      "title": "Aturan Huruf Kapital",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Aturan Huruf Kapital",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-1.1.json"
-    },
-    {
-      "id": "pbm-1.2",
-      "subtest": "PBM",
-      "chapter_num": 1,
-      "chapter_title": "Pemakaian Huruf (EYD V)",
-      "subchapter_num": "1.2",
-      "subchapter_title": "Aturan Huruf Miring & Huruf Tebal",
-      "title": "Aturan Huruf Miring & Huruf Tebal",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Aturan Huruf Miring & Huruf Tebal",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-1.2.json"
-    },
-    {
-      "id": "pbm-2.1",
-      "subtest": "PBM",
-      "chapter_num": 2,
-      "chapter_title": "Penulisan Kata & Gabungan Kata",
-      "subchapter_num": "2.1",
-      "subchapter_title": "Kata Depan di/ke/dari vs Imbuhan",
-      "title": "Kata Depan di/ke/dari vs Imbuhan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kata Depan di/ke/dari vs Imbuhan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-2.1.json"
-    },
-    {
-      "id": "pbm-2.2",
-      "subtest": "PBM",
-      "chapter_num": 2,
-      "chapter_title": "Penulisan Kata & Gabungan Kata",
-      "subchapter_num": "2.2",
-      "subchapter_title": "Gabungan Kata Serangkai vs Terpisah, Partikel pun/per & Angka",
-      "title": "Gabungan Kata Serangkai vs Terpisah, Partikel pun/per & Angka",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Gabungan Kata Serangkai vs Terpisah, Partikel pun/per & Angka",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-2.2.json"
-    },
-    {
-      "id": "pbm-3.1",
-      "subtest": "PBM",
-      "chapter_num": 3,
-      "chapter_title": "Kaidah Tanda Baca",
-      "subchapter_num": "3.1",
-      "subchapter_title": "Penggunaan Tanda Koma Wajib & Terlarang",
-      "title": "Penggunaan Tanda Koma Wajib & Terlarang",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Penggunaan Tanda Koma Wajib & Terlarang",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-3.1.json"
-    },
-    {
-      "id": "pbm-3.2",
-      "subtest": "PBM",
-      "chapter_num": 3,
-      "chapter_title": "Kaidah Tanda Baca",
-      "subchapter_num": "3.2",
-      "subchapter_title": "Tanda Titik Koma, Titik Dua, Hubung, Pisah & Petik",
-      "title": "Tanda Titik Koma, Titik Dua, Hubung, Pisah & Petik",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Tanda Titik Koma, Titik Dua, Hubung, Pisah & Petik",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-3.2.json"
-    },
-    {
-      "id": "pbm-4.1",
-      "subtest": "PBM",
-      "chapter_num": 4,
-      "chapter_title": "Kata Baku & Diksi (KBBI VI)",
-      "subchapter_num": "4.1",
-      "subchapter_title": "Identifikasi Kata Baku vs Tidak Baku",
-      "title": "Identifikasi Kata Baku vs Tidak Baku",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Identifikasi Kata Baku vs Tidak Baku",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-4.1.json"
-    },
-    {
-      "id": "pbm-4.2",
-      "subtest": "PBM",
-      "chapter_num": 4,
-      "chapter_title": "Kata Baku & Diksi (KBBI VI)",
-      "subchapter_num": "4.2",
-      "subchapter_title": "Ketepatan Pilihan Kata/Diksi dalam Kalimat",
-      "title": "Ketepatan Pilihan Kata/Diksi dalam Kalimat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Ketepatan Pilihan Kata/Diksi dalam Kalimat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-4.2.json"
-    },
-    {
-      "id": "pbm-5.1",
-      "subtest": "PBM",
-      "chapter_num": 5,
-      "chapter_title": "Konjungsi (Kata Hubung)",
-      "subchapter_num": "5.1",
-      "subchapter_title": "Konjungsi Intrakalimat & Korelatif",
-      "title": "Konjungsi Intrakalimat & Korelatif",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Konjungsi Intrakalimat & Korelatif",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-5.1.json"
-    },
-    {
-      "id": "pbm-5.2",
-      "subtest": "PBM",
-      "chapter_num": 5,
-      "chapter_title": "Konjungsi (Kata Hubung)",
-      "subchapter_num": "5.2",
-      "subchapter_title": "Konjungsi Antarkalimat",
-      "title": "Konjungsi Antarkalimat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Konjungsi Antarkalimat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-5.2.json"
-    },
-    {
-      "id": "pbm-6.1",
-      "subtest": "PBM",
-      "chapter_num": 6,
-      "chapter_title": "Kalimat Efektif & Kelogisan",
-      "subchapter_num": "6.1",
-      "subchapter_title": "Kelengkapan S-P & Kehematan Kata",
-      "title": "Kelengkapan S-P & Kehematan Kata",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kelengkapan S-P & Kehematan Kata",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-6.1.json"
-    },
-    {
-      "id": "pbm-6.2",
-      "subtest": "PBM",
-      "chapter_num": 6,
-      "chapter_title": "Kalimat Efektif & Kelogisan",
-      "subchapter_num": "6.2",
-      "subchapter_title": "Kesejajaran Bentuk/Paralelisme & Kelogisan Makna",
-      "title": "Kesejajaran Bentuk/Paralelisme & Kelogisan Makna",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kesejajaran Bentuk/Paralelisme & Kelogisan Makna",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-6.2.json"
-    },
-    {
-      "id": "pbm-7.1",
-      "subtest": "PBM",
-      "chapter_num": 7,
-      "chapter_title": "Perbaikan, Penggabungan & Pemecahan Kalimat",
-      "subchapter_num": "7.1",
-      "subchapter_title": "Menyunting Kalimat Tidak Efektif",
-      "title": "Menyunting Kalimat Tidak Efektif",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Menyunting Kalimat Tidak Efektif",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-7.1.json"
-    },
-    {
-      "id": "pbm-7.2",
-      "subtest": "PBM",
-      "chapter_num": 7,
-      "chapter_title": "Perbaikan, Penggabungan & Pemecahan Kalimat",
-      "subchapter_num": "7.2",
-      "subchapter_title": "Menggabungkan & Memecah Kalimat",
-      "title": "Menggabungkan & Memecah Kalimat",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Menggabungkan & Memecah Kalimat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-7.2.json"
-    },
-    {
-      "id": "pbm-8.1",
-      "subtest": "PBM",
-      "chapter_num": 8,
-      "chapter_title": "Kelengkapan & Urutan Paragraf",
-      "subchapter_num": "8.1",
-      "subchapter_title": "Melengkapi Kalimat Rumpang dalam Paragraf",
-      "title": "Melengkapi Kalimat Rumpang dalam Paragraf",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Melengkapi Kalimat Rumpang dalam Paragraf",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-8.1.json"
-    },
-    {
-      "id": "pbm-8.2",
-      "subtest": "PBM",
-      "chapter_num": 8,
-      "chapter_title": "Kelengkapan & Urutan Paragraf",
-      "subchapter_num": "8.2",
-      "subchapter_title": "Mengurutkan Kalimat Acak & Simpulan Bacaan",
-      "title": "Mengurutkan Kalimat Acak & Simpulan Bacaan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Mengurutkan Kalimat Acak & Simpulan Bacaan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pbm/pbm-8.2.json"
-    },
-    {
-      "id": "pk-1.1",
-      "subtest": "PK",
-      "chapter_num": 1,
-      "chapter_title": "Operasi Bilangan & Sifat Keterbagian",
-      "subchapter_num": "1.1",
-      "subchapter_title": "Bilangan Bulat, Prima & Keterbagian",
-      "title": "Bilangan Bulat, Prima & Keterbagian",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Bilangan Bulat, Prima & Keterbagian",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-1.1.json"
-    },
-    {
-      "id": "pk-1.2",
-      "subtest": "PK",
-      "chapter_num": 1,
-      "chapter_title": "Operasi Bilangan & Sifat Keterbagian",
-      "subchapter_num": "1.2",
-      "subchapter_title": "Pecahan, Desimal & Bentuk Akar",
-      "title": "Pecahan, Desimal & Bentuk Akar",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pecahan, Desimal & Bentuk Akar",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-1.2.json"
-    },
-    {
-      "id": "pk-1.3",
-      "subtest": "PK",
-      "chapter_num": 1,
-      "chapter_title": "Operasi Bilangan & Sifat Keterbagian",
+      "chapter_title": "Penalaran Induktif & Evaluasi Argumen",
       "subchapter_num": "1.3",
-      "subchapter_title": "Pola & Operasi Simbol Khusus",
-      "title": "Pola & Operasi Simbol Khusus",
+      "subchapter_title": "Memperkuat & Memperlemah Argumen/Hipotesis",
+      "title": "Memperkuat & Memperlemah Argumen/Hipotesis",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pola & Operasi Simbol Khusus",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Memperkuat & Memperlemah Argumen/Hipotesis",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-1.3.json"
+      "output_path": "/content/utbk/pu/pu-1-3.json"
     },
     {
-      "id": "pk-2.1",
-      "subtest": "PK",
+      "id": "pu-2-1",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-2",
+      "module_title": "Penalaran Deduktif (Logika Formal)",
+      "priority": "High-Yield",
       "chapter_num": 2,
-      "chapter_title": "Eksponen & Logaritma Dasar",
+      "chapter_title": "Penalaran Deduktif (Logika Formal)",
       "subchapter_num": "2.1",
-      "subchapter_title": "Sifat Pangkat & Eksponen",
-      "title": "Sifat Pangkat & Eksponen",
+      "subchapter_title": "Logika Proposisi: Implikasi, Kontraposisi & Ekuivalensi",
+      "title": "Logika Proposisi: Implikasi, Kontraposisi & Ekuivalensi",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Sifat Pangkat & Eksponen",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Logika Proposisi: Implikasi, Kontraposisi & Ekuivalensi",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-2.1.json"
+      "output_path": "/content/utbk/pu/pu-2-1.json"
     },
     {
-      "id": "pk-2.2",
-      "subtest": "PK",
+      "id": "pu-2-2",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-2",
+      "module_title": "Penalaran Deduktif (Logika Formal)",
+      "priority": "High-Yield",
       "chapter_num": 2,
-      "chapter_title": "Eksponen & Logaritma Dasar",
+      "chapter_title": "Penalaran Deduktif (Logika Formal)",
       "subchapter_num": "2.2",
-      "subchapter_title": "Persamaan Eksponen",
-      "title": "Persamaan Eksponen",
+      "subchapter_title": "Penarikan Kesimpulan: Modus Ponens, Tollens & Silogisme",
+      "title": "Penarikan Kesimpulan: Modus Ponens, Tollens & Silogisme",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Persamaan Eksponen",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Penarikan Kesimpulan: Modus Ponens, Tollens & Silogisme",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-2.2.json"
+      "output_path": "/content/utbk/pu/pu-2-2.json"
     },
     {
-      "id": "pk-2.3",
-      "subtest": "PK",
+      "id": "pu-2-3",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-2",
+      "module_title": "Penalaran Deduktif (Logika Formal)",
+      "priority": "High-Yield",
       "chapter_num": 2,
-      "chapter_title": "Eksponen & Logaritma Dasar",
+      "chapter_title": "Penalaran Deduktif (Logika Formal)",
       "subchapter_num": "2.3",
-      "subchapter_title": "Konsep Dasar Logaritma",
-      "title": "Konsep Dasar Logaritma",
+      "subchapter_title": "Logika Kuantor (Semua/Sebagian), Ingkaran & Diagram Himpunan",
+      "title": "Logika Kuantor (Semua/Sebagian), Ingkaran & Diagram Himpunan",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Konsep Dasar Logaritma",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Logika Kuantor (Semua/Sebagian), Ingkaran & Diagram Himpunan",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-2.3.json"
+      "output_path": "/content/utbk/pu/pu-2-3.json"
     },
     {
-      "id": "pk-3.1",
-      "subtest": "PK",
+      "id": "pu-3-1",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-3",
+      "module_title": "Penalaran Analitis (Logika Posisi & Syarat)",
+      "priority": "Core",
       "chapter_num": 3,
-      "chapter_title": "Himpunan & Diagram Venn",
+      "chapter_title": "Penalaran Analitis (Logika Posisi & Syarat)",
       "subchapter_num": "3.1",
-      "subchapter_title": "Operasi Irisan, Gabungan & Komplemen",
-      "title": "Operasi Irisan, Gabungan & Komplemen",
+      "subchapter_title": "Analisis Urutan, Peringkat & Posisi (Linear/Melingkar)",
+      "title": "Analisis Urutan, Peringkat & Posisi (Linear/Melingkar)",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Operasi Irisan, Gabungan & Komplemen",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Analisis Urutan, Peringkat & Posisi (Linear/Melingkar)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-3.1.json"
+      "output_path": "/content/utbk/pu/pu-3-1.json"
     },
     {
-      "id": "pk-3.2",
-      "subtest": "PK",
+      "id": "pu-3-2",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-3",
+      "module_title": "Penalaran Analitis (Logika Posisi & Syarat)",
+      "priority": "Core",
       "chapter_num": 3,
-      "chapter_title": "Himpunan & Diagram Venn",
+      "chapter_title": "Penalaran Analitis (Logika Posisi & Syarat)",
       "subchapter_num": "3.2",
-      "subchapter_title": "Kardinalitas & Soal Cerita Himpunan",
-      "title": "Kardinalitas & Soal Cerita Himpunan",
+      "subchapter_title": "Analisis Penjadwalan & Pengelompokan Bersyarat",
+      "title": "Analisis Penjadwalan & Pengelompokan Bersyarat",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kardinalitas & Soal Cerita Himpunan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Analisis Penjadwalan & Pengelompokan Bersyarat",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-3.2.json"
+      "output_path": "/content/utbk/pu/pu-3-2.json"
     },
     {
-      "id": "pk-4.1",
-      "subtest": "PK",
+      "id": "pu-4-1",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-4",
+      "module_title": "Penalaran Kuantitatif: Pola & Bilangan",
+      "priority": "Core",
       "chapter_num": 4,
-      "chapter_title": "Persamaan & Pertidaksamaan Linear",
+      "chapter_title": "Penalaran Kuantitatif: Pola & Bilangan",
       "subchapter_num": "4.1",
-      "subchapter_title": "SPLDV & SPLTV",
-      "title": "SPLDV & SPLTV",
+      "subchapter_title": "Barisan Bilangan, Huruf & Larik",
+      "title": "Barisan Bilangan, Huruf & Larik",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama SPLDV & SPLTV",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Barisan Bilangan, Huruf & Larik",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-4.1.json"
+      "output_path": "/content/utbk/pu/pu-4-1.json"
     },
     {
-      "id": "pk-4.2",
-      "subtest": "PK",
+      "id": "pu-4-2",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-4",
+      "module_title": "Penalaran Kuantitatif: Pola & Bilangan",
+      "priority": "Core",
       "chapter_num": 4,
-      "chapter_title": "Persamaan & Pertidaksamaan Linear",
+      "chapter_title": "Penalaran Kuantitatif: Pola & Bilangan",
       "subchapter_num": "4.2",
-      "subchapter_title": "Pertidaksamaan Linear & Nilai Mutlak Dasar",
-      "title": "Pertidaksamaan Linear & Nilai Mutlak Dasar",
+      "subchapter_title": "Pola Operasi Aritmetika dalam Bidang/Gambar",
+      "title": "Pola Operasi Aritmetika dalam Bidang/Gambar",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pertidaksamaan Linear & Nilai Mutlak Dasar",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Pola Operasi Aritmetika dalam Bidang/Gambar",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-4.2.json"
+      "output_path": "/content/utbk/pu/pu-4-2.json"
     },
     {
-      "id": "pk-5.1",
-      "subtest": "PK",
+      "id": "pu-5-1",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-5",
+      "module_title": "Penalaran Kuantitatif: Data & Proporsi",
+      "priority": "High-Yield",
       "chapter_num": 5,
-      "chapter_title": "Persamaan & Fungsi Kuadrat",
+      "chapter_title": "Penalaran Kuantitatif: Data & Proporsi",
       "subchapter_num": "5.1",
-      "subchapter_title": "Akar-akar & Diskriminan",
-      "title": "Akar-akar & Diskriminan",
+      "subchapter_title": "Perbandingan Senilai, Berbalik Nilai & Aritmetika Dasar",
+      "title": "Perbandingan Senilai, Berbalik Nilai & Aritmetika Dasar",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Akar-akar & Diskriminan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Perbandingan Senilai, Berbalik Nilai & Aritmetika Dasar",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-5.1.json"
+      "output_path": "/content/utbk/pu/pu-5-1.json"
     },
     {
-      "id": "pk-5.2",
-      "subtest": "PK",
+      "id": "pu-5-2",
+      "subtest": "PU",
+      "category": "TPS",
+      "module_id": "pu-mod-5",
+      "module_title": "Penalaran Kuantitatif: Data & Proporsi",
+      "priority": "High-Yield",
       "chapter_num": 5,
-      "chapter_title": "Persamaan & Fungsi Kuadrat",
+      "chapter_title": "Penalaran Kuantitatif: Data & Proporsi",
       "subchapter_num": "5.2",
-      "subchapter_title": "Sifat Grafik Parabola & Titik Ekstrem",
-      "title": "Sifat Grafik Parabola & Titik Ekstrem",
+      "subchapter_title": "Interpretasi Tabel, Grafik Tren, Rasio & Persentase Pertumbuhan",
+      "title": "Interpretasi Tabel, Grafik Tren, Rasio & Persentase Pertumbuhan",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Sifat Grafik Parabola & Titik Ekstrem",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Interpretasi Tabel, Grafik Tren, Rasio & Persentase Pertumbuhan",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-5.2.json"
+      "output_path": "/content/utbk/pu/pu-5-2.json"
     },
     {
-      "id": "pk-6.1",
-      "subtest": "PK",
-      "chapter_num": 6,
-      "chapter_title": "Fungsi, Relasi & Invers",
-      "subchapter_num": "6.1",
-      "subchapter_title": "Domain & Sifat Fungsi",
-      "title": "Domain & Sifat Fungsi",
+      "id": "ppu-1-1",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-1",
+      "module_title": "Semantik & Morfologi (Makna & Bentuk Kata)",
+      "priority": "Core",
+      "chapter_num": 1,
+      "chapter_title": "Semantik & Morfologi (Makna & Bentuk Kata)",
+      "subchapter_num": "1.1",
+      "subchapter_title": "Relasi Makna: Sinonim, Antonim, Homonim & Hipernim-Hiponim",
+      "title": "Relasi Makna: Sinonim, Antonim, Homonim & Hipernim-Hiponim",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Domain & Sifat Fungsi",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Relasi Makna: Sinonim, Antonim, Homonim & Hipernim-Hiponim",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-6.1.json"
+      "output_path": "/content/utbk/ppu/ppu-1-1.json"
     },
     {
-      "id": "pk-6.2",
-      "subtest": "PK",
-      "chapter_num": 6,
-      "chapter_title": "Fungsi, Relasi & Invers",
-      "subchapter_num": "6.2",
-      "subchapter_title": "Fungsi Komposisi",
-      "title": "Fungsi Komposisi",
+      "id": "ppu-1-2",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-1",
+      "module_title": "Semantik & Morfologi (Makna & Bentuk Kata)",
+      "priority": "Core",
+      "chapter_num": 1,
+      "chapter_title": "Semantik & Morfologi (Makna & Bentuk Kata)",
+      "subchapter_num": "1.2",
+      "subchapter_title": "Afiksasi: Makna Imbuhan (pe-an, ke-an, per-an, me-kan, ter-)",
+      "title": "Afiksasi: Makna Imbuhan (pe-an, ke-an, per-an, me-kan, ter-)",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Fungsi Komposisi",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Afiksasi: Makna Imbuhan (pe-an, ke-an, per-an, me-kan, ter-)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-6.2.json"
+      "output_path": "/content/utbk/ppu/ppu-1-2.json"
     },
     {
-      "id": "pk-6.3",
-      "subtest": "PK",
-      "chapter_num": 6,
-      "chapter_title": "Fungsi, Relasi & Invers",
-      "subchapter_num": "6.3",
-      "subchapter_title": "Fungsi Invers",
-      "title": "Fungsi Invers",
+      "id": "ppu-1-3",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-1",
+      "module_title": "Semantik & Morfologi (Makna & Bentuk Kata)",
+      "priority": "Core",
+      "chapter_num": 1,
+      "chapter_title": "Semantik & Morfologi (Makna & Bentuk Kata)",
+      "subchapter_num": "1.3",
+      "subchapter_title": "Gaya Bahasa, Majas, Idiom & Makna Asosiatif",
+      "title": "Gaya Bahasa, Majas, Idiom & Makna Asosiatif",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Fungsi Invers",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Gaya Bahasa, Majas, Idiom & Makna Asosiatif",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-6.3.json"
+      "output_path": "/content/utbk/ppu/ppu-1-3.json"
     },
     {
-      "id": "pk-7.1",
-      "subtest": "PK",
-      "chapter_num": 7,
-      "chapter_title": "Barisan & Deret",
-      "subchapter_num": "7.1",
-      "subchapter_title": "Barisan & Deret Aritmetika",
-      "title": "Barisan & Deret Aritmetika",
+      "id": "ppu-2-1",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-2",
+      "module_title": "Sintaksis: Frasa, Klausa & Pola Kalimat",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Sintaksis: Frasa, Klausa & Pola Kalimat",
+      "subchapter_num": "2.1",
+      "subchapter_title": "Frasa Endosentris/Eksosentris & Kesamaan Pola Frasa",
+      "title": "Frasa Endosentris/Eksosentris & Kesamaan Pola Frasa",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Barisan & Deret Aritmetika",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Frasa Endosentris/Eksosentris & Kesamaan Pola Frasa",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-7.1.json"
+      "output_path": "/content/utbk/ppu/ppu-2-1.json"
     },
     {
-      "id": "pk-7.2",
-      "subtest": "PK",
-      "chapter_num": 7,
-      "chapter_title": "Barisan & Deret",
-      "subchapter_num": "7.2",
-      "subchapter_title": "Barisan & Deret Geometri",
-      "title": "Barisan & Deret Geometri",
+      "id": "ppu-2-2",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-2",
+      "module_title": "Sintaksis: Frasa, Klausa & Pola Kalimat",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Sintaksis: Frasa, Klausa & Pola Kalimat",
+      "subchapter_num": "2.2",
+      "subchapter_title": "Analisis Fungsi Kalimat (S-P-O-K-Pel) & Persamaan Pola Dasar",
+      "title": "Analisis Fungsi Kalimat (S-P-O-K-Pel) & Persamaan Pola Dasar",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Barisan & Deret Geometri",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Analisis Fungsi Kalimat (S-P-O-K-Pel) & Persamaan Pola Dasar",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-7.2.json"
+      "output_path": "/content/utbk/ppu/ppu-2-2.json"
     },
     {
-      "id": "pk-8.1",
-      "subtest": "PK",
-      "chapter_num": 8,
-      "chapter_title": "Matriks",
-      "subchapter_num": "8.1",
-      "subchapter_title": "Operasi & Perkalian Matriks",
-      "title": "Operasi & Perkalian Matriks",
+      "id": "ppu-2-3",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-2",
+      "module_title": "Sintaksis: Frasa, Klausa & Pola Kalimat",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Sintaksis: Frasa, Klausa & Pola Kalimat",
+      "subchapter_num": "2.3",
+      "subchapter_title": "Kalimat Majemuk, Transformasi Aktif-Pasif & Inti Kalimat",
+      "title": "Kalimat Majemuk, Transformasi Aktif-Pasif & Inti Kalimat",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Operasi & Perkalian Matriks",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Kalimat Majemuk, Transformasi Aktif-Pasif & Inti Kalimat",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-8.1.json"
+      "output_path": "/content/utbk/ppu/ppu-2-3.json"
     },
     {
-      "id": "pk-8.2",
-      "subtest": "PK",
-      "chapter_num": 8,
-      "chapter_title": "Matriks",
-      "subchapter_num": "8.2",
-      "subchapter_title": "Determinan & Invers Matriks Ordo 2x2",
-      "title": "Determinan & Invers Matriks Ordo 2x2",
+      "id": "ppu-3-1",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-3",
+      "module_title": "Analisis Wacana & Pragmatik",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Analisis Wacana & Pragmatik",
+      "subchapter_num": "3.1",
+      "subchapter_title": "Gagasan Pokok, Kalimat Utama & Kepaduan Paragraf (Koherensi)",
+      "title": "Gagasan Pokok, Kalimat Utama & Kepaduan Paragraf (Koherensi)",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Determinan & Invers Matriks Ordo 2x2",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Gagasan Pokok, Kalimat Utama & Kepaduan Paragraf (Koherensi)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-8.2.json"
+      "output_path": "/content/utbk/ppu/ppu-3-1.json"
     },
     {
-      "id": "pk-9.1",
-      "subtest": "PK",
-      "chapter_num": 9,
-      "chapter_title": "Garis, Sudut & Bangun Datar",
-      "subchapter_num": "9.1",
-      "subchapter_title": "Sudut & Garis Sejajar",
-      "title": "Sudut & Garis Sejajar",
+      "id": "ppu-3-2",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-3",
+      "module_title": "Analisis Wacana & Pragmatik",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Analisis Wacana & Pragmatik",
+      "subchapter_num": "3.2",
+      "subchapter_title": "Sikap, Keberpihakan, Tone & Tujuan Penulis",
+      "title": "Sikap, Keberpihakan, Tone & Tujuan Penulis",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Sudut & Garis Sejajar",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Sikap, Keberpihakan, Tone & Tujuan Penulis",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-9.1.json"
+      "output_path": "/content/utbk/ppu/ppu-3-2.json"
     },
     {
-      "id": "pk-9.2",
-      "subtest": "PK",
-      "chapter_num": 9,
-      "chapter_title": "Garis, Sudut & Bangun Datar",
-      "subchapter_num": "9.2",
-      "subchapter_title": "Segitiga & Pythagoras",
-      "title": "Segitiga & Pythagoras",
+      "id": "ppu-4-1",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-4",
+      "module_title": "Kriptografi & Bahasa Buatan (Bahasa Panda)",
+      "priority": "Standard",
+      "chapter_num": 4,
+      "chapter_title": "Kriptografi & Bahasa Buatan (Bahasa Panda)",
+      "subchapter_num": "4.1",
+      "subchapter_title": "Dekode Pola Morfologi & Kosakata Bahasa Buatan",
+      "title": "Dekode Pola Morfologi & Kosakata Bahasa Buatan",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Segitiga & Pythagoras",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Dekode Pola Morfologi & Kosakata Bahasa Buatan",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-9.2.json"
+      "output_path": "/content/utbk/ppu/ppu-4-1.json"
     },
     {
-      "id": "pk-9.3",
+      "id": "ppu-4-2",
+      "subtest": "PPU",
+      "category": "TPS",
+      "module_id": "ppu-mod-4",
+      "module_title": "Kriptografi & Bahasa Buatan (Bahasa Panda)",
+      "priority": "Standard",
+      "chapter_num": 4,
+      "chapter_title": "Kriptografi & Bahasa Buatan (Bahasa Panda)",
+      "subchapter_num": "4.2",
+      "subchapter_title": "Dekode Struktur Sintaksis & Kalimat Bahasa Panda",
+      "title": "Dekode Struktur Sintaksis & Kalimat Bahasa Panda",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Dekode Struktur Sintaksis & Kalimat Bahasa Panda",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/ppu/ppu-4-2.json"
+    },
+    {
+      "id": "pbm-1-1",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-1",
+      "module_title": "Kaidah Ejaan & Tata Tulis (EYD V)",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Kaidah Ejaan & Tata Tulis (EYD V)",
+      "subchapter_num": "1.1",
+      "subchapter_title": "Pemakaian Huruf Kapital, Miring & Tebal",
+      "title": "Pemakaian Huruf Kapital, Miring & Tebal",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Pemakaian Huruf Kapital, Miring & Tebal",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-1-1.json"
+    },
+    {
+      "id": "pbm-1-2",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-1",
+      "module_title": "Kaidah Ejaan & Tata Tulis (EYD V)",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Kaidah Ejaan & Tata Tulis (EYD V)",
+      "subchapter_num": "1.2",
+      "subchapter_title": "Penulisan Kata Depan, Imbuhan, Gabungan Kata & Partikel (pun/per)",
+      "title": "Penulisan Kata Depan, Imbuhan, Gabungan Kata & Partikel (pun/per)",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Penulisan Kata Depan, Imbuhan, Gabungan Kata & Partikel (pun/per)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-1-2.json"
+    },
+    {
+      "id": "pbm-1-3",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-1",
+      "module_title": "Kaidah Ejaan & Tata Tulis (EYD V)",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Kaidah Ejaan & Tata Tulis (EYD V)",
+      "subchapter_num": "1.3",
+      "subchapter_title": "Penggunaan Tanda Baca (Koma, Titik Koma, Titik Dua, Pisah, Petik)",
+      "title": "Penggunaan Tanda Baca (Koma, Titik Koma, Titik Dua, Pisah, Petik)",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Penggunaan Tanda Baca (Koma, Titik Koma, Titik Dua, Pisah, Petik)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-1-3.json"
+    },
+    {
+      "id": "pbm-2-1",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-2",
+      "module_title": "Diksi, Kata Baku & Konjungsi",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Diksi, Kata Baku & Konjungsi",
+      "subchapter_num": "2.1",
+      "subchapter_title": "Kata Baku vs Tidak Baku (KBBI VI) & Ketepatan Diksi",
+      "title": "Kata Baku vs Tidak Baku (KBBI VI) & Ketepatan Diksi",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Kata Baku vs Tidak Baku (KBBI VI) & Ketepatan Diksi",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-2-1.json"
+    },
+    {
+      "id": "pbm-2-2",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-2",
+      "module_title": "Diksi, Kata Baku & Konjungsi",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Diksi, Kata Baku & Konjungsi",
+      "subchapter_num": "2.2",
+      "subchapter_title": "Konjungsi Intrakalimat, Korelatif & Antarkalimat",
+      "title": "Konjungsi Intrakalimat, Korelatif & Antarkalimat",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Konjungsi Intrakalimat, Korelatif & Antarkalimat",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-2-2.json"
+    },
+    {
+      "id": "pbm-3-1",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-3",
+      "module_title": "Kalimat Efektif & Penyuntingan",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Kalimat Efektif & Penyuntingan",
+      "subchapter_num": "3.1",
+      "subchapter_title": "Syarat Kalimat Efektif: Kelengkapan S-P, Kehematan & Kelogisan",
+      "title": "Syarat Kalimat Efektif: Kelengkapan S-P, Kehematan & Kelogisan",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Syarat Kalimat Efektif: Kelengkapan S-P, Kehematan & Kelogisan",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-3-1.json"
+    },
+    {
+      "id": "pbm-3-2",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-3",
+      "module_title": "Kalimat Efektif & Penyuntingan",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Kalimat Efektif & Penyuntingan",
+      "subchapter_num": "3.2",
+      "subchapter_title": "Keparalelan Bentuk (Paralelisme)",
+      "title": "Keparalelan Bentuk (Paralelisme)",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Keparalelan Bentuk (Paralelisme)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-3-2.json"
+    },
+    {
+      "id": "pbm-3-3",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-3",
+      "module_title": "Kalimat Efektif & Penyuntingan",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Kalimat Efektif & Penyuntingan",
+      "subchapter_num": "3.3",
+      "subchapter_title": "Perbaikan, Penggabungan & Pemecahan Kalimat",
+      "title": "Perbaikan, Penggabungan & Pemecahan Kalimat",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Perbaikan, Penggabungan & Pemecahan Kalimat",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-3-3.json"
+    },
+    {
+      "id": "pbm-4-1",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-4",
+      "module_title": "Konstruksi & Kepaduan Paragraf",
+      "priority": "Core",
+      "chapter_num": 4,
+      "chapter_title": "Konstruksi & Kepaduan Paragraf",
+      "subchapter_num": "4.1",
+      "subchapter_title": "Melengkapi Kalimat Rumpang dalam Wacana",
+      "title": "Melengkapi Kalimat Rumpang dalam Wacana",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Melengkapi Kalimat Rumpang dalam Wacana",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-4-1.json"
+    },
+    {
+      "id": "pbm-4-2",
+      "subtest": "PBM",
+      "category": "TPS",
+      "module_id": "pbm-mod-4",
+      "module_title": "Konstruksi & Kepaduan Paragraf",
+      "priority": "Core",
+      "chapter_num": 4,
+      "chapter_title": "Konstruksi & Kepaduan Paragraf",
+      "subchapter_num": "4.2",
+      "subchapter_title": "Mengurutkan Kalimat Acak & Menyusun Simpulan Paragraf",
+      "title": "Mengurutkan Kalimat Acak & Menyusun Simpulan Paragraf",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Mengurutkan Kalimat Acak & Menyusun Simpulan Paragraf",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pbm/pbm-4-2.json"
+    },
+    {
+      "id": "pk-1-1",
       "subtest": "PK",
-      "chapter_num": 9,
-      "chapter_title": "Garis, Sudut & Bangun Datar",
-      "subchapter_num": "9.3",
+      "category": "TPS",
+      "module_id": "pk-mod-1",
+      "module_title": "Bilangan, Eksponen & Himpunan",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Bilangan, Eksponen & Himpunan",
+      "subchapter_num": "1.1",
+      "subchapter_title": "Sifat Bilangan Bulat, Prima, Keterbagian & Operasi Simbol Khusus",
+      "title": "Sifat Bilangan Bulat, Prima, Keterbagian & Operasi Simbol Khusus",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Sifat Bilangan Bulat, Prima, Keterbagian & Operasi Simbol Khusus",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-1-1.json"
+    },
+    {
+      "id": "pk-1-2",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-1",
+      "module_title": "Bilangan, Eksponen & Himpunan",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Bilangan, Eksponen & Himpunan",
+      "subchapter_num": "1.2",
+      "subchapter_title": "Sifat Pangkat, Bentuk Akar, Eksponen & Logaritma Dasar",
+      "title": "Sifat Pangkat, Bentuk Akar, Eksponen & Logaritma Dasar",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Sifat Pangkat, Bentuk Akar, Eksponen & Logaritma Dasar",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-1-2.json"
+    },
+    {
+      "id": "pk-1-3",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-1",
+      "module_title": "Bilangan, Eksponen & Himpunan",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Bilangan, Eksponen & Himpunan",
+      "subchapter_num": "1.3",
+      "subchapter_title": "Operasi Himpunan, Diagram Venn & Kardinalitas",
+      "title": "Operasi Himpunan, Diagram Venn & Kardinalitas",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Operasi Himpunan, Diagram Venn & Kardinalitas",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-1-3.json"
+    },
+    {
+      "id": "pk-2-1",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-2",
+      "module_title": "Aljabar, Persamaan & Pertidaksamaan",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Aljabar, Persamaan & Pertidaksamaan",
+      "subchapter_num": "2.1",
+      "subchapter_title": "Sistem Persamaan Linear (SPLDV & SPLTV)",
+      "title": "Sistem Persamaan Linear (SPLDV & SPLTV)",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Sistem Persamaan Linear (SPLDV & SPLTV)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-2-1.json"
+    },
+    {
+      "id": "pk-2-2",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-2",
+      "module_title": "Aljabar, Persamaan & Pertidaksamaan",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Aljabar, Persamaan & Pertidaksamaan",
+      "subchapter_num": "2.2",
+      "subchapter_title": "Pertidaksamaan Linear, Kuadrat & Nilai Mutlak Dasar",
+      "title": "Pertidaksamaan Linear, Kuadrat & Nilai Mutlak Dasar",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Pertidaksamaan Linear, Kuadrat & Nilai Mutlak Dasar",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-2-2.json"
+    },
+    {
+      "id": "pk-2-3",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-2",
+      "module_title": "Aljabar, Persamaan & Pertidaksamaan",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Aljabar, Persamaan & Pertidaksamaan",
+      "subchapter_num": "2.3",
+      "subchapter_title": "Persamaan & Fungsi Kuadrat (Akar, Diskriminan & Grafik Parabola)",
+      "title": "Persamaan & Fungsi Kuadrat (Akar, Diskriminan & Grafik Parabola)",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Persamaan & Fungsi Kuadrat (Akar, Diskriminan & Grafik Parabola)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-2-3.json"
+    },
+    {
+      "id": "pk-3-1",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-3",
+      "module_title": "Fungsi, Barisan & Matriks",
+      "priority": "Core",
+      "chapter_num": 3,
+      "chapter_title": "Fungsi, Barisan & Matriks",
+      "subchapter_num": "3.1",
+      "subchapter_title": "Domain, Fungsi Komposisi & Fungsi Invers",
+      "title": "Domain, Fungsi Komposisi & Fungsi Invers",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Domain, Fungsi Komposisi & Fungsi Invers",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-3-1.json"
+    },
+    {
+      "id": "pk-3-2",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-3",
+      "module_title": "Fungsi, Barisan & Matriks",
+      "priority": "Core",
+      "chapter_num": 3,
+      "chapter_title": "Fungsi, Barisan & Matriks",
+      "subchapter_num": "3.2",
+      "subchapter_title": "Barisan & Deret Aritmetika serta Geometri",
+      "title": "Barisan & Deret Aritmetika serta Geometri",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Barisan & Deret Aritmetika serta Geometri",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-3-2.json"
+    },
+    {
+      "id": "pk-3-3",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-3",
+      "module_title": "Fungsi, Barisan & Matriks",
+      "priority": "Core",
+      "chapter_num": 3,
+      "chapter_title": "Fungsi, Barisan & Matriks",
+      "subchapter_num": "3.3",
+      "subchapter_title": "Operasi Matriks, Determinan & Invers Matriks Ordo 2x2",
+      "title": "Operasi Matriks, Determinan & Invers Matriks Ordo 2x2",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Operasi Matriks, Determinan & Invers Matriks Ordo 2x2",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-3-3.json"
+    },
+    {
+      "id": "pk-4-1",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-4",
+      "module_title": "Geometri Datar",
+      "priority": "High-Yield",
+      "chapter_num": 4,
+      "chapter_title": "Geometri Datar",
+      "subchapter_num": "4.1",
+      "subchapter_title": "Hubungan Garis, Sudut & Segitiga (Pythagoras & Kesebangunan)",
+      "title": "Hubungan Garis, Sudut & Segitiga (Pythagoras & Kesebangunan)",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Hubungan Garis, Sudut & Segitiga (Pythagoras & Kesebangunan)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pk/pk-4-1.json"
+    },
+    {
+      "id": "pk-4-2",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-4",
+      "module_title": "Geometri Datar",
+      "priority": "High-Yield",
+      "chapter_num": 4,
+      "chapter_title": "Geometri Datar",
+      "subchapter_num": "4.2",
       "subchapter_title": "Segiempat, Lingkaran & Luas Daerah Arsir",
       "title": "Segiempat, Lingkaran & Luas Daerah Arsir",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Segiempat, Lingkaran & Luas Daerah Arsir",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Segiempat, Lingkaran & Luas Daerah Arsir",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-9.3.json"
+      "output_path": "/content/utbk/pk/pk-4-2.json"
     },
     {
-      "id": "pk-10.1",
+      "id": "pk-5-1",
       "subtest": "PK",
-      "chapter_num": 10,
-      "chapter_title": "Bangun Ruang & Koordinat Kartesius",
-      "subchapter_num": "10.1",
-      "subchapter_title": "Volume & Luas Permukaan Bangun Ruang",
-      "title": "Volume & Luas Permukaan Bangun Ruang",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Volume & Luas Permukaan Bangun Ruang",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-10.1.json"
-    },
-    {
-      "id": "pk-10.2",
-      "subtest": "PK",
-      "chapter_num": 10,
-      "chapter_title": "Bangun Ruang & Koordinat Kartesius",
-      "subchapter_num": "10.2",
-      "subchapter_title": "Jarak Titik, Garis & Persamaan Garis Lurus",
-      "title": "Jarak Titik, Garis & Persamaan Garis Lurus",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Jarak Titik, Garis & Persamaan Garis Lurus",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-10.2.json"
-    },
-    {
-      "id": "pk-11.1",
-      "subtest": "PK",
-      "chapter_num": 11,
-      "chapter_title": "Statistika Deskriptif",
-      "subchapter_num": "11.1",
-      "subchapter_title": "Ukuran Pemusatan: Mean, Median, Modus",
-      "title": "Ukuran Pemusatan: Mean, Median, Modus",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Ukuran Pemusatan: Mean, Median, Modus",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-11.1.json"
-    },
-    {
-      "id": "pk-11.2",
-      "subtest": "PK",
-      "chapter_num": 11,
-      "chapter_title": "Statistika Deskriptif",
-      "subchapter_num": "11.2",
-      "subchapter_title": "Ukuran Penyebaran: Jangkauan & Kuartil",
-      "title": "Ukuran Penyebaran: Jangkauan & Kuartil",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Ukuran Penyebaran: Jangkauan & Kuartil",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-11.2.json"
-    },
-    {
-      "id": "pk-11.3",
-      "subtest": "PK",
-      "chapter_num": 11,
-      "chapter_title": "Statistika Deskriptif",
-      "subchapter_num": "11.3",
-      "subchapter_title": "Rata-rata Gabungan",
-      "title": "Rata-rata Gabungan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Rata-rata Gabungan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-11.3.json"
-    },
-    {
-      "id": "pk-12.1",
-      "subtest": "PK",
-      "chapter_num": 12,
-      "chapter_title": "Aturan Pencacahan & Peluang",
-      "subchapter_num": "12.1",
-      "subchapter_title": "Kaidah Pencacahan, Permutasi & Kombinasi",
-      "title": "Kaidah Pencacahan, Permutasi & Kombinasi",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kaidah Pencacahan, Permutasi & Kombinasi",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-12.1.json"
-    },
-    {
-      "id": "pk-12.2",
-      "subtest": "PK",
-      "chapter_num": 12,
-      "chapter_title": "Aturan Pencacahan & Peluang",
-      "subchapter_num": "12.2",
-      "subchapter_title": "Peluang Kejadian & Frekuensi Harapan",
-      "title": "Peluang Kejadian & Frekuensi Harapan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Peluang Kejadian & Frekuensi Harapan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pk/pk-12.2.json"
-    },
-    {
-      "id": "lbi-1.1",
-      "subtest": "LBI",
-      "chapter_num": 1,
-      "chapter_title": "Pencarian & Verifikasi Informasi Eksplisit",
-      "subchapter_num": "1.1",
-      "subchapter_title": "Akurasi Fakta Langsung dari Bacaan",
-      "title": "Akurasi Fakta Langsung dari Bacaan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Akurasi Fakta Langsung dari Bacaan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-1.1.json"
-    },
-    {
-      "id": "lbi-1.2",
-      "subtest": "LBI",
-      "chapter_num": 1,
-      "chapter_title": "Pencarian & Verifikasi Informasi Eksplisit",
-      "subchapter_num": "1.2",
-      "subchapter_title": "Tabel Kompleks Benar/Salah Berdasarkan Teks",
-      "title": "Tabel Kompleks Benar/Salah Berdasarkan Teks",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Tabel Kompleks Benar/Salah Berdasarkan Teks",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-1.2.json"
-    },
-    {
-      "id": "lbi-2.1",
-      "subtest": "LBI",
-      "chapter_num": 2,
-      "chapter_title": "Ide Pokok, Ringkasan & Struktur Wacana",
-      "subchapter_num": "2.1",
-      "subchapter_title": "Gagasan Utama Wacana Panjang",
-      "title": "Gagasan Utama Wacana Panjang",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Gagasan Utama Wacana Panjang",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-2.1.json"
-    },
-    {
-      "id": "lbi-2.2",
-      "subtest": "LBI",
-      "chapter_num": 2,
-      "chapter_title": "Ide Pokok, Ringkasan & Struktur Wacana",
-      "subchapter_num": "2.2",
-      "subchapter_title": "Kerangka, Ringkasan & Hubungan Antarbagian Teks",
-      "title": "Kerangka, Ringkasan & Hubungan Antarbagian Teks",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kerangka, Ringkasan & Hubungan Antarbagian Teks",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-2.2.json"
-    },
-    {
-      "id": "lbi-3.1",
-      "subtest": "LBI",
-      "chapter_num": 3,
-      "chapter_title": "Inferensi, Simpulan & Makna Tersirat",
-      "subchapter_num": "3.1",
-      "subchapter_title": "Penarikan Simpulan Logis",
-      "title": "Penarikan Simpulan Logis",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Penarikan Simpulan Logis",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-3.1.json"
-    },
-    {
-      "id": "lbi-3.2",
-      "subtest": "LBI",
-      "chapter_num": 3,
-      "chapter_title": "Inferensi, Simpulan & Makna Tersirat",
-      "subchapter_num": "3.2",
-      "subchapter_title": "Prediksi Sebab-Akibat & Implikasi Wacana",
-      "title": "Prediksi Sebab-Akibat & Implikasi Wacana",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Prediksi Sebab-Akibat & Implikasi Wacana",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-3.2.json"
-    },
-    {
-      "id": "lbi-4.1",
-      "subtest": "LBI",
-      "chapter_num": 4,
-      "chapter_title": "Evaluasi Fakta, Opini & Kredibilitas Informasi",
-      "subchapter_num": "4.1",
-      "subchapter_title": "Membedakan Fakta Empiris vs Opini",
-      "title": "Membedakan Fakta Empiris vs Opini",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Membedakan Fakta Empiris vs Opini",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-4.1.json"
-    },
-    {
-      "id": "lbi-4.2",
-      "subtest": "LBI",
-      "chapter_num": 4,
-      "chapter_title": "Evaluasi Fakta, Opini & Kredibilitas Informasi",
-      "subchapter_num": "4.2",
-      "subchapter_title": "Menilai Keakuratan & Kecukupan Bukti",
-      "title": "Menilai Keakuratan & Kecukupan Bukti",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Menilai Keakuratan & Kecukupan Bukti",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-4.2.json"
-    },
-    {
-      "id": "lbi-5.1",
-      "subtest": "LBI",
+      "category": "TPS",
+      "module_id": "pk-mod-5",
+      "module_title": "Geometri Ruang & Koordinat Kartesius",
+      "priority": "Core",
       "chapter_num": 5,
-      "chapter_title": "Analisis Teks Sains, Kesehatan & Teknologi",
+      "chapter_title": "Geometri Ruang & Koordinat Kartesius",
       "subchapter_num": "5.1",
-      "subchapter_title": "Bedah Artikel Eksplanasi Ilmiah",
-      "title": "Bedah Artikel Eksplanasi Ilmiah",
+      "subchapter_title": "Volume, Luas Permukaan & Jarak pada Bangun Ruang",
+      "title": "Volume, Luas Permukaan & Jarak pada Bangun Ruang",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Bedah Artikel Eksplanasi Ilmiah",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Volume, Luas Permukaan & Jarak pada Bangun Ruang",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-5.1.json"
+      "output_path": "/content/utbk/pk/pk-5-1.json"
     },
     {
-      "id": "lbi-5.2",
-      "subtest": "LBI",
+      "id": "pk-5-2",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-5",
+      "module_title": "Geometri Ruang & Koordinat Kartesius",
+      "priority": "Core",
       "chapter_num": 5,
-      "chapter_title": "Analisis Teks Sains, Kesehatan & Teknologi",
+      "chapter_title": "Geometri Ruang & Koordinat Kartesius",
       "subchapter_num": "5.2",
-      "subchapter_title": "Interpretasi Istilah Teknis & Mekanisme Proses",
-      "title": "Interpretasi Istilah Teknis & Mekanisme Proses",
+      "subchapter_title": "Sistem Koordinat, Jarak Titik-Garis & Persamaan Garis Lurus",
+      "title": "Sistem Koordinat, Jarak Titik-Garis & Persamaan Garis Lurus",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Interpretasi Istilah Teknis & Mekanisme Proses",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Sistem Koordinat, Jarak Titik-Garis & Persamaan Garis Lurus",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-5.2.json"
+      "output_path": "/content/utbk/pk/pk-5-2.json"
     },
     {
-      "id": "lbi-6.1",
-      "subtest": "LBI",
+      "id": "pk-6-1",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-6",
+      "module_title": "Statistika & Peluang Dasar",
+      "priority": "Core",
       "chapter_num": 6,
-      "chapter_title": "Analisis Teks Sosial, Ekonomi & Humaniora",
+      "chapter_title": "Statistika & Peluang Dasar",
       "subchapter_num": "6.1",
-      "subchapter_title": "Bedah Esai Opini & Kebijakan Publik",
-      "title": "Bedah Esai Opini & Kebijakan Publik",
+      "subchapter_title": "Ukuran Pemusatan (Mean, Median, Modus, Rata-rata Gabungan) & Penyebaran",
+      "title": "Ukuran Pemusatan (Mean, Median, Modus, Rata-rata Gabungan) & Penyebaran",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Bedah Esai Opini & Kebijakan Publik",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Ukuran Pemusatan (Mean, Median, Modus, Rata-rata Gabungan) & Penyebaran",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-6.1.json"
+      "output_path": "/content/utbk/pk/pk-6-1.json"
     },
     {
-      "id": "lbi-6.2",
-      "subtest": "LBI",
+      "id": "pk-6-2",
+      "subtest": "PK",
+      "category": "TPS",
+      "module_id": "pk-mod-6",
+      "module_title": "Statistika & Peluang Dasar",
+      "priority": "Core",
       "chapter_num": 6,
-      "chapter_title": "Analisis Teks Sosial, Ekonomi & Humaniora",
+      "chapter_title": "Statistika & Peluang Dasar",
       "subchapter_num": "6.2",
-      "subchapter_title": "Konflik Sudut Pandang Tokoh/Pakar",
-      "title": "Konflik Sudut Pandang Tokoh/Pakar",
+      "subchapter_title": "Kaidah Pencacahan, Permutasi, Kombinasi & Peluang Kejadian",
+      "title": "Kaidah Pencacahan, Permutasi, Kombinasi & Peluang Kejadian",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Konflik Sudut Pandang Tokoh/Pakar",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Kaidah Pencacahan, Permutasi, Kombinasi & Peluang Kejadian",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-6.2.json"
+      "output_path": "/content/utbk/pk/pk-6-2.json"
     },
     {
-      "id": "lbi-7.1",
+      "id": "lbi-1-1",
       "subtest": "LBI",
-      "chapter_num": 7,
-      "chapter_title": "Apresiasi Teks Sastra & Fiksi Naratif",
-      "subchapter_num": "7.1",
-      "subchapter_title": "Karakterisasi Tokoh, Latar & Alur",
-      "title": "Karakterisasi Tokoh, Latar & Alur",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Karakterisasi Tokoh, Latar & Alur",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-7.1.json"
-    },
-    {
-      "id": "lbi-7.2",
-      "subtest": "LBI",
-      "chapter_num": 7,
-      "chapter_title": "Apresiasi Teks Sastra & Fiksi Naratif",
-      "subchapter_num": "7.2",
-      "subchapter_title": "Nilai Moral, Konflik Batin & Amanat Cerita",
-      "title": "Nilai Moral, Konflik Batin & Amanat Cerita",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Nilai Moral, Konflik Batin & Amanat Cerita",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbi/lbi-7.2.json"
-    },
-    {
-      "id": "lbe-1.1",
-      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbi-mod-1",
+      "module_title": "Pemahaman Tekstual & Informasi Eksplisit",
+      "priority": "High-Yield",
       "chapter_num": 1,
-      "chapter_title": "Main Idea, Topic & Primary Purpose",
+      "chapter_title": "Pemahaman Tekstual & Informasi Eksplisit",
       "subchapter_num": "1.1",
-      "subchapter_title": "Topic & Main Idea of Passage",
-      "title": "Topic & Main Idea of Passage",
+      "subchapter_title": "Pencarian & Verifikasi Fakta Langsung (Tabel Benar/Salah)",
+      "title": "Pencarian & Verifikasi Fakta Langsung (Tabel Benar/Salah)",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Topic & Main Idea of Passage",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Pencarian & Verifikasi Fakta Langsung (Tabel Benar/Salah)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-1.1.json"
+      "output_path": "/content/utbk/lbi/lbi-1-1.json"
     },
     {
-      "id": "lbe-1.2",
-      "subtest": "LBE",
+      "id": "lbi-1-2",
+      "subtest": "LBI",
+      "category": "Literasi",
+      "module_id": "lbi-mod-1",
+      "module_title": "Pemahaman Tekstual & Informasi Eksplisit",
+      "priority": "High-Yield",
       "chapter_num": 1,
-      "chapter_title": "Main Idea, Topic & Primary Purpose",
+      "chapter_title": "Pemahaman Tekstual & Informasi Eksplisit",
       "subchapter_num": "1.2",
-      "subchapter_title": "Author's Primary Purpose & Overview",
-      "title": "Author's Primary Purpose & Overview",
+      "subchapter_title": "Gagasan Utama, Kerangka, Ringkasan & Hubungan Antarbagian Wacana",
+      "title": "Gagasan Utama, Kerangka, Ringkasan & Hubungan Antarbagian Wacana",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Author's Primary Purpose & Overview",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Gagasan Utama, Kerangka, Ringkasan & Hubungan Antarbagian Wacana",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-1.2.json"
+      "output_path": "/content/utbk/lbi/lbi-1-2.json"
     },
     {
-      "id": "lbe-2.1",
-      "subtest": "LBE",
+      "id": "lbi-2-1",
+      "subtest": "LBI",
+      "category": "Literasi",
+      "module_id": "lbi-mod-2",
+      "module_title": "Penalaran Inferensial & Makna Tersirat",
+      "priority": "High-Yield",
       "chapter_num": 2,
-      "chapter_title": "Detailed Information & Restatement (Paraphrasing)",
+      "chapter_title": "Penalaran Inferensial & Makna Tersirat",
       "subchapter_num": "2.1",
-      "subchapter_title": "Stated Detail & True/False Verification",
-      "title": "Stated Detail & True/False Verification",
+      "subchapter_title": "Penarikan Simpulan Logis & Makna Implisit",
+      "title": "Penarikan Simpulan Logis & Makna Implisit",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Stated Detail & True/False Verification",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Penarikan Simpulan Logis & Makna Implisit",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-2.1.json"
+      "output_path": "/content/utbk/lbi/lbi-2-1.json"
     },
     {
-      "id": "lbe-2.2",
-      "subtest": "LBE",
+      "id": "lbi-2-2",
+      "subtest": "LBI",
+      "category": "Literasi",
+      "module_id": "lbi-mod-2",
+      "module_title": "Penalaran Inferensial & Makna Tersirat",
+      "priority": "High-Yield",
       "chapter_num": 2,
-      "chapter_title": "Detailed Information & Restatement (Paraphrasing)",
+      "chapter_title": "Penalaran Inferensial & Makna Tersirat",
       "subchapter_num": "2.2",
-      "subchapter_title": "Paraphrasing & Equivalent Sentences",
-      "title": "Paraphrasing & Equivalent Sentences",
+      "subchapter_title": "Prediksi Sebab-Akibat, Asumsi & Implikasi Wacana",
+      "title": "Prediksi Sebab-Akibat, Asumsi & Implikasi Wacana",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Paraphrasing & Equivalent Sentences",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Prediksi Sebab-Akibat, Asumsi & Implikasi Wacana",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-2.2.json"
+      "output_path": "/content/utbk/lbi/lbi-2-2.json"
     },
     {
-      "id": "lbe-3.1",
-      "subtest": "LBE",
+      "id": "lbi-3-1",
+      "subtest": "LBI",
+      "category": "Literasi",
+      "module_id": "lbi-mod-3",
+      "module_title": "Evaluasi Kritis & Sintesis Informasi",
+      "priority": "Core",
       "chapter_num": 3,
-      "chapter_title": "Vocabulary in Context & Reference",
+      "chapter_title": "Evaluasi Kritis & Sintesis Informasi",
       "subchapter_num": "3.1",
-      "subchapter_title": "Contextual Synonym & Word Meaning",
-      "title": "Contextual Synonym & Word Meaning",
+      "subchapter_title": "Membedakan Fakta Empiris, Opini & Kredibilitas Bukti",
+      "title": "Membedakan Fakta Empiris, Opini & Kredibilitas Bukti",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Contextual Synonym & Word Meaning",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Membedakan Fakta Empiris, Opini & Kredibilitas Bukti",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-3.1.json"
+      "output_path": "/content/utbk/lbi/lbi-3-1.json"
     },
     {
-      "id": "lbe-3.2",
-      "subtest": "LBE",
+      "id": "lbi-3-2",
+      "subtest": "LBI",
+      "category": "Literasi",
+      "module_id": "lbi-mod-3",
+      "module_title": "Evaluasi Kritis & Sintesis Informasi",
+      "priority": "Core",
       "chapter_num": 3,
-      "chapter_title": "Vocabulary in Context & Reference",
+      "chapter_title": "Evaluasi Kritis & Sintesis Informasi",
       "subchapter_num": "3.2",
-      "subchapter_title": "Pronoun Reference",
-      "title": "Pronoun Reference",
+      "subchapter_title": "Analisis Konflik Sudut Pandang Pakar & Sintesis Multi-teks",
+      "title": "Analisis Konflik Sudut Pandang Pakar & Sintesis Multi-teks",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pronoun Reference",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Analisis Konflik Sudut Pandang Pakar & Sintesis Multi-teks",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-3.2.json"
+      "output_path": "/content/utbk/lbi/lbi-3-2.json"
     },
     {
-      "id": "lbe-4.1",
-      "subtest": "LBE",
+      "id": "lbi-4-1",
+      "subtest": "LBI",
+      "category": "Literasi",
+      "module_id": "lbi-mod-4",
+      "module_title": "Literasi Kontekstual: Teks Ilmiah, Publik & Sastra",
+      "priority": "Core",
       "chapter_num": 4,
-      "chapter_title": "Inference, Assumption & Prediction",
+      "chapter_title": "Literasi Kontekstual: Teks Ilmiah, Publik & Sastra",
       "subchapter_num": "4.1",
-      "subchapter_title": "Implied Detail & Logical Inference",
-      "title": "Implied Detail & Logical Inference",
+      "subchapter_title": "Bedah Artikel Eksplanasi Sains-Teknologi & Esai Kebijakan Publik",
+      "title": "Bedah Artikel Eksplanasi Sains-Teknologi & Esai Kebijakan Publik",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Implied Detail & Logical Inference",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Bedah Artikel Eksplanasi Sains-Teknologi & Esai Kebijakan Publik",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-4.1.json"
+      "output_path": "/content/utbk/lbi/lbi-4-1.json"
     },
     {
-      "id": "lbe-4.2",
-      "subtest": "LBE",
+      "id": "lbi-4-2",
+      "subtest": "LBI",
+      "category": "Literasi",
+      "module_id": "lbi-mod-4",
+      "module_title": "Literasi Kontekstual: Teks Ilmiah, Publik & Sastra",
+      "priority": "Core",
       "chapter_num": 4,
-      "chapter_title": "Inference, Assumption & Prediction",
+      "chapter_title": "Literasi Kontekstual: Teks Ilmiah, Publik & Sastra",
       "subchapter_num": "4.2",
+      "subchapter_title": "Apresiasi Sastra/Fiksi: Karakterisasi, Konflik Batin, Alur & Nilai Moral",
+      "title": "Apresiasi Sastra/Fiksi: Karakterisasi, Konflik Batin, Alur & Nilai Moral",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Apresiasi Sastra/Fiksi: Karakterisasi, Konflik Batin, Alur & Nilai Moral",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/lbi/lbi-4-2.json"
+    },
+    {
+      "id": "lbe-1-1",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-1",
+      "module_title": "Global Comprehension & Text Structure",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Global Comprehension & Text Structure",
+      "subchapter_num": "1.1",
+      "subchapter_title": "Main Idea, Topic & Author's Primary Purpose",
+      "title": "Main Idea, Topic & Author's Primary Purpose",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Main Idea, Topic & Author's Primary Purpose",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/lbe/lbe-1-1.json"
+    },
+    {
+      "id": "lbe-1-2",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-1",
+      "module_title": "Global Comprehension & Text Structure",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Global Comprehension & Text Structure",
+      "subchapter_num": "1.2",
+      "subchapter_title": "Text Organization, Coherence & Sentence Insertion",
+      "title": "Text Organization, Coherence & Sentence Insertion",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Text Organization, Coherence & Sentence Insertion",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/lbe/lbe-1-2.json"
+    },
+    {
+      "id": "lbe-2-1",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-2",
+      "module_title": "Detailed Information, Vocabulary & Reference",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Detailed Information, Vocabulary & Reference",
+      "subchapter_num": "2.1",
+      "subchapter_title": "Stated Detail, True/False Verification & Paraphrasing (Restatement)",
+      "title": "Stated Detail, True/False Verification & Paraphrasing (Restatement)",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Stated Detail, True/False Verification & Paraphrasing (Restatement)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/lbe/lbe-2-1.json"
+    },
+    {
+      "id": "lbe-2-2",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-2",
+      "module_title": "Detailed Information, Vocabulary & Reference",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Detailed Information, Vocabulary & Reference",
+      "subchapter_num": "2.2",
+      "subchapter_title": "Vocabulary in Context & Pronoun Reference",
+      "title": "Vocabulary in Context & Pronoun Reference",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Vocabulary in Context & Pronoun Reference",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/lbe/lbe-2-2.json"
+    },
+    {
+      "id": "lbe-3-1",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-3",
+      "module_title": "Critical Reading: Inference & Attitude",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Critical Reading: Inference & Attitude",
+      "subchapter_num": "3.1",
+      "subchapter_title": "Implied Detail, Logical Inference & Assumption",
+      "title": "Implied Detail, Logical Inference & Assumption",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Implied Detail, Logical Inference & Assumption",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/lbe/lbe-3-1.json"
+    },
+    {
+      "id": "lbe-3-2",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-3",
+      "module_title": "Critical Reading: Inference & Attitude",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Critical Reading: Inference & Attitude",
+      "subchapter_num": "3.2",
       "subchapter_title": "Preceding/Following Paragraph Prediction",
       "title": "Preceding/Following Paragraph Prediction",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Preceding/Following Paragraph Prediction",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Preceding/Following Paragraph Prediction",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-4.2.json"
+      "output_path": "/content/utbk/lbe/lbe-3-2.json"
     },
     {
-      "id": "lbe-5.1",
+      "id": "lbe-3-3",
       "subtest": "LBE",
-      "chapter_num": 5,
-      "chapter_title": "Author's Tone, Attitude & Text Organization",
-      "subchapter_num": "5.1",
-      "subchapter_title": "Tone, Attitude & Target Audience",
-      "title": "Tone, Attitude & Target Audience",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Tone, Attitude & Target Audience",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-5.1.json"
-    },
-    {
-      "id": "lbe-5.2",
-      "subtest": "LBE",
-      "chapter_num": 5,
-      "chapter_title": "Author's Tone, Attitude & Text Organization",
-      "subchapter_num": "5.2",
-      "subchapter_title": "Coherence & Sentence Insertion",
-      "title": "Coherence & Sentence Insertion",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Coherence & Sentence Insertion",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-5.2.json"
-    },
-    {
-      "id": "lbe-6.1",
-      "subtest": "LBE",
-      "chapter_num": 6,
-      "chapter_title": "Multi-Post Discussion Threads (Online Forum)",
-      "subchapter_num": "6.1",
-      "subchapter_title": "Identifying Agreement/Disagreement Among Posters",
-      "title": "Identifying Agreement/Disagreement Among Posters",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Identifying Agreement/Disagreement Among Posters",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-6.1.json"
-    },
-    {
-      "id": "lbe-6.2",
-      "subtest": "LBE",
-      "chapter_num": 6,
-      "chapter_title": "Multi-Post Discussion Threads (Online Forum)",
-      "subchapter_num": "6.2",
-      "subchapter_title": "Synthesizing Opinions in Thread",
-      "title": "Synthesizing Opinions in Thread",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Synthesizing Opinions in Thread",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-6.2.json"
-    },
-    {
-      "id": "lbe-7.1",
-      "subtest": "LBE",
-      "chapter_num": 7,
-      "chapter_title": "Paired Texts & Infographic Reading",
-      "subchapter_num": "7.1",
-      "subchapter_title": "Comparing Two Related Texts",
-      "title": "Comparing Two Related Texts",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Comparing Two Related Texts",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-7.1.json"
-    },
-    {
-      "id": "lbe-7.2",
-      "subtest": "LBE",
-      "chapter_num": 7,
-      "chapter_title": "Paired Texts & Infographic Reading",
-      "subchapter_num": "7.2",
-      "subchapter_title": "Integrating Text with Charts/Tables",
-      "title": "Integrating Text with Charts/Tables",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Integrating Text with Charts/Tables",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/lbe/lbe-7.2.json"
-    },
-    {
-      "id": "pm-1.1",
-      "subtest": "PM",
-      "chapter_num": 1,
-      "chapter_title": "Aritmetika Sosial, Keuangan & Perdagangan",
-      "subchapter_num": "1.1",
-      "subchapter_title": "Diskon Bertingkat, Pajak, Bunga & Cicilan",
-      "title": "Diskon Bertingkat, Pajak, Bunga & Cicilan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Diskon Bertingkat, Pajak, Bunga & Cicilan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-1.1.json"
-    },
-    {
-      "id": "pm-1.2",
-      "subtest": "PM",
-      "chapter_num": 1,
-      "chapter_title": "Aritmetika Sosial, Keuangan & Perdagangan",
-      "subchapter_num": "1.2",
-      "subchapter_title": "Optimasi Biaya, Untung-Rugi & Tarif Layanan",
-      "title": "Optimasi Biaya, Untung-Rugi & Tarif Layanan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Optimasi Biaya, Untung-Rugi & Tarif Layanan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-1.2.json"
-    },
-    {
-      "id": "pm-2.1",
-      "subtest": "PM",
-      "chapter_num": 2,
-      "chapter_title": "Rasio, Proporsi, Laju & Debit Kontekstual",
-      "subchapter_num": "2.1",
-      "subchapter_title": "Skala, Campuran & Komposisi Bahan",
-      "title": "Skala, Campuran & Komposisi Bahan",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Skala, Campuran & Komposisi Bahan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-2.1.json"
-    },
-    {
-      "id": "pm-2.2",
-      "subtest": "PM",
-      "chapter_num": 2,
-      "chapter_title": "Rasio, Proporsi, Laju & Debit Kontekstual",
-      "subchapter_num": "2.2",
-      "subchapter_title": "Kecepatan, Waktu Tempuh, Debit & Kapasitas",
-      "title": "Kecepatan, Waktu Tempuh, Debit & Kapasitas",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Kecepatan, Waktu Tempuh, Debit & Kapasitas",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-2.2.json"
-    },
-    {
-      "id": "pm-3.1",
-      "subtest": "PM",
+      "category": "Literasi",
+      "module_id": "lbe-mod-3",
+      "module_title": "Critical Reading: Inference & Attitude",
+      "priority": "High-Yield",
       "chapter_num": 3,
-      "chapter_title": "Pola Bilangan & Barisan Terapan",
-      "subchapter_num": "3.1",
-      "subchapter_title": "Pertumbuhan & Peluruhan Aritmetika di Dunia Nyata",
-      "title": "Pertumbuhan & Peluruhan Aritmetika di Dunia Nyata",
+      "chapter_title": "Critical Reading: Inference & Attitude",
+      "subchapter_num": "3.3",
+      "subchapter_title": "Author's Tone, Attitude & Target Audience",
+      "title": "Author's Tone, Attitude & Target Audience",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pertumbuhan & Peluruhan Aritmetika di Dunia Nyata",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Author's Tone, Attitude & Target Audience",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-3.1.json"
+      "output_path": "/content/utbk/lbe/lbe-3-3.json"
     },
     {
-      "id": "pm-3.2",
-      "subtest": "PM",
-      "chapter_num": 3,
-      "chapter_title": "Pola Bilangan & Barisan Terapan",
-      "subchapter_num": "3.2",
-      "subchapter_title": "Pemodelan Barisan Geometri Kontekstual",
-      "title": "Pemodelan Barisan Geometri Kontekstual",
-      "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pemodelan Barisan Geometri Kontekstual",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
-        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
-      ],
-      "requires_svg": false,
-      "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-3.2.json"
-    },
-    {
-      "id": "pm-4.1",
-      "subtest": "PM",
+      "id": "lbe-4-1",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-4",
+      "module_title": "Multi-Text Synthesis & Discussion Threads",
+      "priority": "Core",
       "chapter_num": 4,
-      "chapter_title": "Pemodelan Persamaan & Pertidaksamaan Linear",
+      "chapter_title": "Multi-Text Synthesis & Discussion Threads",
       "subchapter_num": "4.1",
-      "subchapter_title": "Sistem Persamaan Linear dalam Kasus Nyata",
-      "title": "Sistem Persamaan Linear dalam Kasus Nyata",
+      "subchapter_title": "Multi-Post Online Forum Threads (Agreement, Disagreement & Stance)",
+      "title": "Multi-Post Online Forum Threads (Agreement, Disagreement & Stance)",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Sistem Persamaan Linear dalam Kasus Nyata",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Multi-Post Online Forum Threads (Agreement, Disagreement & Stance)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-4.1.json"
+      "output_path": "/content/utbk/lbe/lbe-4-1.json"
     },
     {
-      "id": "pm-4.2",
-      "subtest": "PM",
+      "id": "lbe-4-2",
+      "subtest": "LBE",
+      "category": "Literasi",
+      "module_id": "lbe-mod-4",
+      "module_title": "Multi-Text Synthesis & Discussion Threads",
+      "priority": "Core",
       "chapter_num": 4,
-      "chapter_title": "Pemodelan Persamaan & Pertidaksamaan Linear",
+      "chapter_title": "Multi-Text Synthesis & Discussion Threads",
       "subchapter_num": "4.2",
-      "subchapter_title": "Optimasi Syarat & Pertidaksamaan",
-      "title": "Optimasi Syarat & Pertidaksamaan",
+      "subchapter_title": "Paired Texts Comparison & Infographic/Chart Integration",
+      "title": "Paired Texts Comparison & Infographic/Chart Integration",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Optimasi Syarat & Pertidaksamaan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Paired Texts Comparison & Infographic/Chart Integration",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-4.2.json"
+      "output_path": "/content/utbk/lbe/lbe-4-2.json"
     },
     {
-      "id": "pm-5.1",
+      "id": "pm-1-1",
       "subtest": "PM",
-      "chapter_num": 5,
-      "chapter_title": "Fungsi & Grafik Kontekstual",
-      "subchapter_num": "5.1",
-      "subchapter_title": "Pemodelan Lintasan & Nilai Optimum Fungsi Kuadrat",
-      "title": "Pemodelan Lintasan & Nilai Optimum Fungsi Kuadrat",
+      "category": "Literasi",
+      "module_id": "pm-mod-1",
+      "module_title": "Numerasi Terapan: Aritmetika Sosial & Proporsi",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Numerasi Terapan: Aritmetika Sosial & Proporsi",
+      "subchapter_num": "1.1",
+      "subchapter_title": "Aritmetika Keuangan: Diskon Bertingkat, Pajak, Bunga & Optimasi Biaya",
+      "title": "Aritmetika Keuangan: Diskon Bertingkat, Pajak, Bunga & Optimasi Biaya",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Pemodelan Lintasan & Nilai Optimum Fungsi Kuadrat",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Aritmetika Keuangan: Diskon Bertingkat, Pajak, Bunga & Optimasi Biaya",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-5.1.json"
+      "output_path": "/content/utbk/pm/pm-1-1.json"
     },
     {
-      "id": "pm-5.2",
+      "id": "pm-1-2",
       "subtest": "PM",
-      "chapter_num": 5,
-      "chapter_title": "Fungsi & Grafik Kontekstual",
-      "subchapter_num": "5.2",
-      "subchapter_title": "Interpretasi Grafik Fungsi Kontekstual",
-      "title": "Interpretasi Grafik Fungsi Kontekstual",
+      "category": "Literasi",
+      "module_id": "pm-mod-1",
+      "module_title": "Numerasi Terapan: Aritmetika Sosial & Proporsi",
+      "priority": "High-Yield",
+      "chapter_num": 1,
+      "chapter_title": "Numerasi Terapan: Aritmetika Sosial & Proporsi",
+      "subchapter_num": "1.2",
+      "subchapter_title": "Rasio, Skala, Campuran, Kecepatan, Debit & Kapasitas Kerja",
+      "title": "Rasio, Skala, Campuran, Kecepatan, Debit & Kapasitas Kerja",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Interpretasi Grafik Fungsi Kontekstual",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Rasio, Skala, Campuran, Kecepatan, Debit & Kapasitas Kerja",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-5.2.json"
+      "output_path": "/content/utbk/pm/pm-1-2.json"
     },
     {
-      "id": "pm-6.1",
+      "id": "pm-2-1",
       "subtest": "PM",
-      "chapter_num": 6,
-      "chapter_title": "Geometri Bidang & Pengukuran Terapan",
-      "subchapter_num": "6.1",
-      "subchapter_title": "Luas, Keliling & Desain Lahan/Arsitektur",
-      "title": "Luas, Keliling & Desain Lahan/Arsitektur",
+      "category": "Literasi",
+      "module_id": "pm-mod-2",
+      "module_title": "Pemodelan Aljabar & Barisan Kontekstual",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Pemodelan Aljabar & Barisan Kontekstual",
+      "subchapter_num": "2.1",
+      "subchapter_title": "Pertumbuhan, Peluruhan & Pemodelan Barisan Aritmetika/Geometri",
+      "title": "Pertumbuhan, Peluruhan & Pemodelan Barisan Aritmetika/Geometri",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Luas, Keliling & Desain Lahan/Arsitektur",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Pertumbuhan, Peluruhan & Pemodelan Barisan Aritmetika/Geometri",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-6.1.json"
+      "output_path": "/content/utbk/pm/pm-2-1.json"
     },
     {
-      "id": "pm-6.2",
+      "id": "pm-2-2",
       "subtest": "PM",
-      "chapter_num": 6,
-      "chapter_title": "Geometri Bidang & Pengukuran Terapan",
-      "subchapter_num": "6.2",
-      "subchapter_title": "Teorema Pythagoras & Kesebangunan Terapan",
-      "title": "Teorema Pythagoras & Kesebangunan Terapan",
+      "category": "Literasi",
+      "module_id": "pm-mod-2",
+      "module_title": "Pemodelan Aljabar & Barisan Kontekstual",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Pemodelan Aljabar & Barisan Kontekstual",
+      "subchapter_num": "2.2",
+      "subchapter_title": "Pemodelan Sistem Persamaan & Optimasi Pertidaksamaan Linear",
+      "title": "Pemodelan Sistem Persamaan & Optimasi Pertidaksamaan Linear",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Teorema Pythagoras & Kesebangunan Terapan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Pemodelan Sistem Persamaan & Optimasi Pertidaksamaan Linear",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-6.2.json"
+      "output_path": "/content/utbk/pm/pm-2-2.json"
     },
     {
-      "id": "pm-7.1",
+      "id": "pm-2-3",
       "subtest": "PM",
-      "chapter_num": 7,
-      "chapter_title": "Geometri Ruang & Trigonometri Terapan",
-      "subchapter_num": "7.1",
-      "subchapter_title": "Volume, Kapasitas Wadah & Bangun Ruang Gabungan",
-      "title": "Volume, Kapasitas Wadah & Bangun Ruang Gabungan",
+      "category": "Literasi",
+      "module_id": "pm-mod-2",
+      "module_title": "Pemodelan Aljabar & Barisan Kontekstual",
+      "priority": "High-Yield",
+      "chapter_num": 2,
+      "chapter_title": "Pemodelan Aljabar & Barisan Kontekstual",
+      "subchapter_num": "2.3",
+      "subchapter_title": "Pemodelan Lintasan & Nilai Optimum Fungsi Kuadrat Kontekstual",
+      "title": "Pemodelan Lintasan & Nilai Optimum Fungsi Kuadrat Kontekstual",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Volume, Kapasitas Wadah & Bangun Ruang Gabungan",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Pemodelan Lintasan & Nilai Optimum Fungsi Kuadrat Kontekstual",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-7.1.json"
+      "output_path": "/content/utbk/pm/pm-2-3.json"
     },
     {
-      "id": "pm-7.2",
+      "id": "pm-3-1",
       "subtest": "PM",
-      "chapter_num": 7,
-      "chapter_title": "Geometri Ruang & Trigonometri Terapan",
-      "subchapter_num": "7.2",
-      "subchapter_title": "Sudut Elevasi/Depresi & Jarak Pandang",
-      "title": "Sudut Elevasi/Depresi & Jarak Pandang",
+      "category": "Literasi",
+      "module_id": "pm-mod-3",
+      "module_title": "Geometri & Pengukuran Terapan",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Geometri & Pengukuran Terapan",
+      "subchapter_num": "3.1",
+      "subchapter_title": "Desain Lahan, Luas, Keliling & Kesebangunan Kontekstual",
+      "title": "Desain Lahan, Luas, Keliling & Kesebangunan Kontekstual",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Sudut Elevasi/Depresi & Jarak Pandang",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Desain Lahan, Luas, Keliling & Kesebangunan Kontekstual",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-7.2.json"
+      "output_path": "/content/utbk/pm/pm-3-1.json"
     },
     {
-      "id": "pm-8.1",
+      "id": "pm-3-2",
       "subtest": "PM",
-      "chapter_num": 8,
-      "chapter_title": "Statistika, Kaidah Pencacahan & Peluang Kontekstual",
-      "subchapter_num": "8.1",
-      "subchapter_title": "Analisis Data Infografis, Mean & Penyebaran",
-      "title": "Analisis Data Infografis, Mean & Penyebaran",
+      "category": "Literasi",
+      "module_id": "pm-mod-3",
+      "module_title": "Geometri & Pengukuran Terapan",
+      "priority": "High-Yield",
+      "chapter_num": 3,
+      "chapter_title": "Geometri & Pengukuran Terapan",
+      "subchapter_num": "3.2",
+      "subchapter_title": "Kapasitas Wadah (Bangun Ruang Gabungan) & Trigonometri (Sudut Elevasi/Depresi)",
+      "title": "Kapasitas Wadah (Bangun Ruang Gabungan) & Trigonometri (Sudut Elevasi/Depresi)",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Analisis Data Infografis, Mean & Penyebaran",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Kapasitas Wadah (Bangun Ruang Gabungan) & Trigonometri (Sudut Elevasi/Depresi)",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-8.1.json"
+      "output_path": "/content/utbk/pm/pm-3-2.json"
     },
     {
-      "id": "pm-8.2",
+      "id": "pm-4-1",
       "subtest": "PM",
-      "chapter_num": 8,
-      "chapter_title": "Statistika, Kaidah Pencacahan & Peluang Kontekstual",
-      "subchapter_num": "8.2",
-      "subchapter_title": "Peluang Kejadian & Pengambilan Keputusan Berbasis Data",
-      "title": "Peluang Kejadian & Pengambilan Keputusan Berbasis Data",
+      "category": "Literasi",
+      "module_id": "pm-mod-4",
+      "module_title": "Analisis Data, Ketidakpastian & Peluang Terapan",
+      "priority": "Core",
+      "chapter_num": 4,
+      "chapter_title": "Analisis Data, Ketidakpastian & Peluang Terapan",
+      "subchapter_num": "4.1",
+      "subchapter_title": "Interpretasi Infografis, Ukuran Pemusatan & Penyebaran Kontekstual",
+      "title": "Interpretasi Infografis, Ukuran Pemusatan & Penyebaran Kontekstual",
       "required_question_variations": [
-        "Archetype Soal: Konsep dasar dan variasi utama Peluang Kejadian & Pengambilan Keputusan Berbasis Data",
-        "Archetype Soal: Deteksi jebakan opsi pengecoh UTBK-SNBT",
+        "Archetype Soal: Konsep dasar & variasi Interpretasi Infografis, Ukuran Pemusatan & Penyebaran Kontekstual",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
         "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
       ],
       "requires_svg": false,
       "material_status": "done",
-      "output_path": "/content/utbk/pm/pm-8.2.json"
+      "output_path": "/content/utbk/pm/pm-4-1.json"
+    },
+    {
+      "id": "pm-4-2",
+      "subtest": "PM",
+      "category": "Literasi",
+      "module_id": "pm-mod-4",
+      "module_title": "Analisis Data, Ketidakpastian & Peluang Terapan",
+      "priority": "Core",
+      "chapter_num": 4,
+      "chapter_title": "Analisis Data, Ketidakpastian & Peluang Terapan",
+      "subchapter_num": "4.2",
+      "subchapter_title": "Peluang Kejadian Majemuk & Pengambilan Keputusan Berbasis Data",
+      "title": "Peluang Kejadian Majemuk & Pengambilan Keputusan Berbasis Data",
+      "required_question_variations": [
+        "Archetype Soal: Konsep dasar & variasi Peluang Kejadian Majemuk & Pengambilan Keputusan Berbasis Data",
+        "Archetype Soal: Deteksi jebakan distractor UTBK-SNBT",
+        "Archetype Soal: Algoritma eliminasi cepat 30-45 detik"
+      ],
+      "requires_svg": false,
+      "material_status": "done",
+      "output_path": "/content/utbk/pm/pm-4-2.json"
     }
   ]
 }

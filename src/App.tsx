@@ -173,7 +173,9 @@ export default function App() {
       const sub = UTBK_SYLLABUS.find(
         (s) => s.code.toLowerCase() === targetSubtest.toLowerCase()
       ) || UTBK_SYLLABUS[0];
-      const initialSubIds = sub.chapters.flatMap((c) => c.subchapters.map((s) => s.id));
+      const initialSubIds = sub.modules
+        ? sub.modules.flatMap((m) => m.subtopics.map((s) => s.id))
+        : (sub.chapters || []).flatMap((c) => c.subchapters.map((s) => s.id));
       collectDrillingQuestions(initialSubIds, 10).then((qs) => {
         setDrillingQuestions(qs);
       });
@@ -182,7 +184,7 @@ export default function App() {
 
   // Derived current subtest item
   const currentSubtest = UTBK_SYLLABUS.find(
-    (s) => s.code.toLowerCase() === route.subtestCode?.toLowerCase()
+    (s) => s.code.toLowerCase() === route.subtestCode?.toLowerCase() || s.id.toLowerCase() === route.subtestCode?.toLowerCase()
   ) || UTBK_SYLLABUS[0];
 
   // Derived current SMA subject item
@@ -191,9 +193,15 @@ export default function App() {
   ) || SMA_SUBJECTS[0];
 
   // Flattened subchapters for the active subtest to support prev / next in reader
-  const currentSubtestSubchapters = currentSubtest.chapters.flatMap(
-    (c) => c.subchapters
-  );
+  const currentSubtestSubchapters = currentSubtest.modules
+    ? currentSubtest.modules.flatMap((m) =>
+        m.subtopics.map((s) => ({
+          id: s.id,
+          title: s.title,
+          subchapter_num: s.id,
+        }))
+      )
+    : (currentSubtest.chapters || []).flatMap((c) => c.subchapters);
   const currentMateriIndex = currentSubtestSubchapters.findIndex(
     (s) => s.id === route.materiId
   );
@@ -337,6 +345,14 @@ export default function App() {
             }}
             onBackToHome={() => {
               navigateTo({ view: 'home', mode: 'utbk' });
+            }}
+            onSelectSubtest={(newCode) => {
+              navigateTo({
+                view: 'subtest',
+                mode: 'utbk',
+                subtestCode: newCode.toLowerCase(),
+                tab: route.tab || 'materi',
+              });
             }}
             onSelectMaterial={(materialId) => {
               navigateTo({

@@ -95,16 +95,16 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
                 </div>
               </div>
 
-              {/* Chapters & Subchapters */}
+              {/* Modules & Subtopics */}
               <div className="pl-2 space-y-2 mt-1">
-                {subtest.chapters.map((chapter) => (
-                  <div key={chapter.chapter_num} className="space-y-1">
+                {(subtest.modules || []).map((mod, modIdx) => (
+                  <div key={mod.id} className="space-y-1">
                     <div className="text-[11px] font-semibold text-slate-500 px-2.5 py-1">
-                      Bab {chapter.chapter_num}: {chapter.chapter_title}
+                      Modul {modIdx + 1}: {mod.title}
                     </div>
 
                     <div className="space-y-0.5">
-                      {chapter.subchapters.map((sub) => {
+                      {mod.subtopics.map((sub, sIdx) => {
                         const isActive = sub.id === currentMaterialId;
 
                         return (
@@ -122,7 +122,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
                             }`}
                           >
                             <span className="truncate pr-2">
-                              {sub.subchapter_num} {sub.title}
+                              {modIdx + 1}.{sIdx + 1} {sub.title}
                             </span>
                             <span
                               className={`w-2 h-2 rounded-full shrink-0 ${
