@@ -255,8 +255,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col selection:bg-indigo-100 selection:text-indigo-900 font-sans">
-      {/* 1. TOP HEADER & MODE SWITCHER (Always present on Home & Subtest views) */}
-      {route.view !== 'drilling' && route.view !== 'materi' && (
+      {/* 1. TOP HEADER & MODE SWITCHER (HANYA MUNCUL DI BERANDA '/') */}
+      {route.view === 'home' && (
         <TopHeader
           mode={route.mode}
           onModeChange={(newMode) => {
@@ -281,7 +281,7 @@ export default function App() {
       )}
 
       {/* Main Content Area */}
-      <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-4 sm:py-6">
+      <main className={route.view === 'subtest' ? 'flex-1 w-full' : 'flex-1 w-full max-w-5xl mx-auto px-4 py-4 sm:py-6'}>
         {/* VIEW 1: HOME DASHBOARD */}
         {route.view === 'home' && (
           <div className="space-y-4">

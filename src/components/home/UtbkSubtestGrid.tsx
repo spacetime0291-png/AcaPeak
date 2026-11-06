@@ -1,185 +1,276 @@
 import React from 'react';
-import {
-  Brain,
-  BookOpen,
-  PenTool,
-  Calculator,
-  Languages,
-  Globe,
-  Binary,
-  ArrowRight,
-} from 'lucide-react';
-import { UTBK_SYLLABUS } from '../../lib/syllabusData';
 
 interface UtbkSubtestGridProps {
   onSelectSubtest: (code: string) => void;
 }
 
-interface SubtestVisualConfig {
+// 1. Penalaran Umum (PU): Ungu-Indigo dengan grafik otak/logika & roda gigi ungu-oranye
+const PuIcon = () => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M17 12C14.79 12 13 13.79 13 16C11.34 16 10 17.34 10 19C10 20.35 10.9 21.5 12.14 21.87C12.05 22.23 12 22.61 12 23C12 24.32 12.57 25.51 13.48 26.33C13.18 27.13 13 27.99 13 28.9C13 31.72 15.28 34 18.1 34C18.74 34 19.35 33.88 19.92 33.66C20.89 35.09 22.48 36 24.3 36C26.12 36 27.71 35.09 28.68 33.66C29.25 33.88 29.86 34 30.5 34C33.32 34 35.6 31.72 35.6 28.9C35.6 27.99 35.42 27.13 35.12 26.33C36.03 25.51 36.6 24.32 36.6 23C36.6 22.61 36.55 22.23 36.46 21.87C37.7 21.5 38.6 20.35 38.6 19C38.6 17.34 37.26 16 35.6 16C35.6 13.79 33.81 12 31.6 12C30.66 12 29.79 12.33 29.1 12.88C28.17 11.72 26.75 11 25.15 11H23.45C21.85 11 20.43 11.72 19.5 12.88C18.81 12.33 17.94 12 17 12Z"
+      fill="#6366F1"
+    />
+    <path
+      d="M24.3 12V35"
+      stroke="#4338CA"
+      strokeWidth="1.6"
+      strokeDasharray="2 2"
+      strokeLinecap="round"
+    />
+    <g transform="translate(18, 17)">
+      <circle cx="9" cy="9" r="7.5" fill="#F97316" />
+      <circle cx="9" cy="9" r="3.5" fill="#FEF3C7" />
+      <path
+        d="M9 1.5V3M9 15V16.5M1.5 9H3M15 9H16.5M3.7 3.7L4.8 4.8M13.2 13.2L14.3 14.3M3.7 14.3L4.8 13.2M13.2 4.8L14.3 3.7"
+        stroke="#EA580C"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+    </g>
+    <circle cx="16.5" cy="18" r="1.3" fill="#C7D2FE" />
+    <circle cx="16" cy="27" r="1.3" fill="#C7D2FE" />
+    <circle cx="31.5" cy="19" r="1.3" fill="#FED7AA" />
+  </svg>
+);
+
+// 2. Pengetahuan & Pemahaman Umum (PPU): Biru Cerah dengan bola dunia/buku & kaca pembesar
+const PpuIcon = () => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="21" cy="21" r="13" fill="#0284C7" />
+    <path
+      d="M13 17C14.5 15.5 17 15 18 16.5C19 18 17.5 20.5 16 21C14.5 21.5 12 20 13 17Z"
+      fill="#10B981"
+    />
+    <path
+      d="M22 11C24 10.5 27 12 28 14C29 16 28 18 26 19C24 20 22 18.5 21 16.5C20 14.5 20 11.5 22 11Z"
+      fill="#10B981"
+    />
+    <path
+      d="M17 26C18.5 25 21 26 22 28C23 30 20.5 32.5 18.5 32.5C16.5 32.5 15.5 27 17 26Z"
+      fill="#10B981"
+    />
+    <path
+      d="M26 24C28 23 31 24.5 32 27C33 29.5 30.5 31.5 28.5 31C26.5 30.5 24 25 26 24Z"
+      fill="#10B981"
+    />
+    <circle cx="21" cy="21" r="13" stroke="#38BDF8" strokeWidth="1.2" />
+    <ellipse cx="21" cy="21" rx="5.5" ry="13" stroke="#38BDF8" strokeWidth="1" strokeDasharray="2.5 2" />
+    <line x1="8" y1="21" x2="34" y2="21" stroke="#38BDF8" strokeWidth="1" />
+    <g>
+      <circle cx="31" cy="29" r="7.5" fill="#E0F2FE" fillOpacity="0.85" stroke="#F59E0B" strokeWidth="2.8" />
+      <path d="M28 26.5C29 25 31 24.5 32.5 25" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="36.5" y1="34.5" x2="43.5" y2="41.5" stroke="#D97706" strokeWidth="4" strokeLinecap="round" />
+      <line x1="36.5" y1="34.5" x2="43.5" y2="41.5" stroke="#FBBF24" strokeWidth="2" strokeLinecap="round" />
+    </g>
+  </svg>
+);
+
+// 3. Pemahaman Bacaan & Menulis (PBM): Merah-Rose dengan buku merah & pena emas
+const PbmIcon = () => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(5, 7)">
+      <rect x="2" y="2" width="26" height="32" rx="3" fill="#BE123C" />
+      <path d="M2 2H6.5V34H2C0.9 34 0 33.1 0 32V4C0 2.9 0.9 2 2 2Z" fill="#9F1239" />
+      <rect x="6.5" y="5" width="19.5" height="26" rx="1.5" fill="#FFF1F2" />
+      <line x1="9.5" y1="10" x2="23" y2="10" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
+      <line x1="9.5" y1="15" x2="21" y2="15" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
+      <line x1="9.5" y1="20" x2="23" y2="20" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
+      <line x1="9.5" y1="25" x2="18" y2="25" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
+    </g>
+    <g transform="translate(19, 10) rotate(25)">
+      <rect x="4" y="0" width="5.5" height="19" rx="1.8" fill="#D97706" />
+      <rect x="4" y="13" width="5.5" height="3.5" fill="#FBBF24" />
+      <path d="M4 19L6.75 27L9.5 19H4Z" fill="#F59E0B" />
+      <line x1="6.75" y1="19" x2="6.75" y2="24" stroke="#78350F" strokeWidth="0.8" />
+    </g>
+    <circle cx="36" cy="38" r="2.2" fill="#F59E0B" />
+  </svg>
+);
+
+// 4. Pengetahuan Kuantitatif (PK): Biru-Cyan dengan kalkulator/simbol operasi + - × ÷
+const PkIcon = () => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="9" y="6" width="30" height="36" rx="5" fill="#2563EB" />
+    <rect x="13" y="10" width="22" height="8.5" rx="2" fill="#0F172A" />
+    <text x="32" y="16.5" fill="#38BDF8" fontSize="5.5" fontFamily="monospace" fontWeight="bold" textAnchor="end">
+      84×2
+    </text>
+    {/* Plus Key - Cyan */}
+    <rect x="13" y="21.5" width="9.5" height="7.5" rx="2" fill="#06B6D4" />
+    <path d="M17.75 23.5V27M16 25.25H19.5" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
+    {/* Minus Key - Orange */}
+    <rect x="25.5" y="21.5" width="9.5" height="7.5" rx="2" fill="#F97316" />
+    <path d="M28.5 25.25H32" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
+    {/* Multiply Key - Emerald */}
+    <rect x="13" y="31.5" width="9.5" height="7.5" rx="2" fill="#10B981" />
+    <path d="M16 33.5L19.5 37M19.5 33.5L16 37" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
+    {/* Divide Key - Amber */}
+    <rect x="25.5" y="31.5" width="9.5" height="7.5" rx="2" fill="#F59E0B" />
+    <path d="M28.5 35.25H32M30.25 33.25V33.35M30.25 37.15V37.25" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
+  </svg>
+);
+
+// 5. Literasi Bahasa Indonesia (LBI): Merah-Putih/Coral dengan buku bendera Indonesia & teks
+const LbiIcon = () => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="8" y="9" width="32" height="30" rx="3.5" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1.5" />
+    {/* Flag Top Half Red */}
+    <path d="M9 10H39V22H9V10Z" fill="#DC2626" />
+    {/* Flag Bottom Half White */}
+    <path d="M9 22H39V34H9V22Z" fill="#FFFFFF" />
+    {/* Book Pages */}
+    <rect x="11" y="6" width="26" height="4" rx="1.5" fill="#CBD5E1" />
+    {/* Spine */}
+    <path d="M9 10C7.5 10 6.5 11 6.5 12.5V32.5C6.5 34 7.5 35 9 35V10Z" fill="#B91C1C" />
+    {/* Merah Putih Ribbon */}
+    <path d="M23 10V27L26 24.5L29 27V10H23Z" fill="#DC2626" />
+    <path d="M23 10V18L26 16.5L29 18V10H23Z" fill="#FFFFFF" />
+    {/* Text Lines */}
+    <line x1="12" y1="26" x2="20" y2="26" stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" />
+    <line x1="12" y1="30" x2="20" y2="30" stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" />
+  </svg>
+);
+
+// 6. Literasi Bahasa Inggris (LBE): Ungu-Biru dengan buku aksen Union Jack
+const LbeIcon = () => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(7, 7)">
+      <rect x="0" y="0" width="34" height="34" rx="5" fill="#1E3A8A" />
+      <line x1="0" y1="0" x2="34" y2="34" stroke="#FFFFFF" strokeWidth="4" />
+      <line x1="34" y1="0" x2="0" y2="34" stroke="#FFFFFF" strokeWidth="4" />
+      <line x1="0" y1="0" x2="34" y2="34" stroke="#DC2626" strokeWidth="2" />
+      <line x1="34" y1="0" x2="0" y2="34" stroke="#DC2626" strokeWidth="2" />
+      <rect x="13" y="0" width="8" height="34" fill="#FFFFFF" />
+      <rect x="0" y="13" width="34" height="8" fill="#FFFFFF" />
+      <rect x="14.5" y="0" width="5" height="34" fill="#DC2626" />
+      <rect x="0" y="14.5" width="34" height="5" fill="#DC2626" />
+      <rect x="0" y="0" width="34" height="34" rx="5" stroke="#312E81" strokeWidth="1.5" />
+    </g>
+    <g transform="translate(25, 26)">
+      <rect width="18" height="15" rx="3.5" fill="#7C3AED" stroke="#FFFFFF" strokeWidth="1.5" />
+      <text x="9" y="10.5" fill="#FFFFFF" fontSize="8" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">
+        EN
+      </text>
+    </g>
+  </svg>
+);
+
+// 7. Penalaran Matematika (PM): Hijau-Emerald dengan penggaris geometri, grafik & simbol √x
+const PmIcon = () => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8 sm:w-9 sm:h-9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M8 38L8 11L35 38H8Z"
+      fill="#F59E0B"
+      stroke="#D97706"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M13 34L13 21L26 34H13Z"
+      fill="#A7F3D0"
+      stroke="#D97706"
+      strokeWidth="1"
+    />
+    <line x1="8" y1="17" x2="10.5" y2="17" stroke="#92400E" strokeWidth="1.2" />
+    <line x1="8" y1="23" x2="10.5" y2="23" stroke="#92400E" strokeWidth="1.2" />
+    <line x1="8" y1="29" x2="10.5" y2="29" stroke="#92400E" strokeWidth="1.2" />
+    <line x1="17" y1="38" x2="17" y2="35.5" stroke="#92400E" strokeWidth="1.2" />
+    <line x1="23" y1="38" x2="23" y2="35.5" stroke="#92400E" strokeWidth="1.2" />
+    <path
+      d="M17 26C21 25 27 17 37 12"
+      stroke="#047857"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+    <circle cx="23" cy="22" r="2.2" fill="#10B981" stroke="#FFFFFF" strokeWidth="1" />
+    <circle cx="37" cy="12" r="2.8" fill="#047857" stroke="#FFFFFF" strokeWidth="1" />
+    <g transform="translate(24, 4)">
+      <rect width="18" height="15" rx="3.5" fill="#065F46" />
+      <text x="9" y="11" fill="#34D399" fontSize="9" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">
+        √x
+      </text>
+    </g>
+  </svg>
+);
+
+interface SubtestItem {
   code: string;
   name: string;
-  shortLabel: string;
+  bgColor: string;
   icon: React.ReactNode;
-  bgPastel: string;
-  hoverBorder: string;
-  iconBg: string;
-  textColor: string;
-  badgeBg: string;
 }
 
 export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtest }) => {
-  // Map syllabus stats to subtests
-  const subtestStats = React.useMemo(() => {
-    const stats: Record<string, { chapters: number; topics: number }> = {};
-    for (const item of UTBK_SYLLABUS) {
-      const chapters = item.chapters.length;
-      const topics = item.chapters.reduce((acc, c) => acc + c.subchapters.length, 0);
-      stats[item.code] = { chapters, topics };
-    }
-    return stats;
-  }, []);
-
-  const subtests: SubtestVisualConfig[] = [
+  const subtests: SubtestItem[] = [
     {
       code: 'PU',
       name: 'Penalaran Umum',
-      shortLabel: 'Penalaran Umum',
-      icon: <Brain className="w-6 h-6 sm:w-7 sm:h-7" />,
-      bgPastel: 'bg-indigo-50/70 hover:bg-indigo-50',
-      hoverBorder: 'hover:border-indigo-300 hover:shadow-indigo-100/50',
-      iconBg: 'bg-indigo-100 text-indigo-700',
-      textColor: 'text-indigo-950',
-      badgeBg: 'bg-indigo-100/80 text-indigo-700',
+      bgColor: 'bg-indigo-100',
+      icon: <PuIcon />,
     },
     {
       code: 'PPU',
       name: 'Pengetahuan & Pemahaman Umum',
-      shortLabel: 'Pengetahuan Umum',
-      icon: <BookOpen className="w-6 h-6 sm:w-7 sm:h-7" />,
-      bgPastel: 'bg-sky-50/70 hover:bg-sky-50',
-      hoverBorder: 'hover:border-sky-300 hover:shadow-sky-100/50',
-      iconBg: 'bg-sky-100 text-sky-700',
-      textColor: 'text-sky-950',
-      badgeBg: 'bg-sky-100/80 text-sky-700',
+      bgColor: 'bg-sky-100',
+      icon: <PpuIcon />,
     },
     {
       code: 'PBM',
       name: 'Pemahaman Bacaan & Menulis',
-      shortLabel: 'Bacaan & Menulis',
-      icon: <PenTool className="w-6 h-6 sm:w-7 sm:h-7" />,
-      bgPastel: 'bg-emerald-50/70 hover:bg-emerald-50',
-      hoverBorder: 'hover:border-emerald-300 hover:shadow-emerald-100/50',
-      iconBg: 'bg-emerald-100 text-emerald-700',
-      textColor: 'text-emerald-950',
-      badgeBg: 'bg-emerald-100/80 text-emerald-700',
+      bgColor: 'bg-rose-100',
+      icon: <PbmIcon />,
     },
     {
       code: 'PK',
       name: 'Pengetahuan Kuantitatif',
-      shortLabel: 'Kuantitatif',
-      icon: <Calculator className="w-6 h-6 sm:w-7 sm:h-7" />,
-      bgPastel: 'bg-amber-50/70 hover:bg-amber-50',
-      hoverBorder: 'hover:border-amber-300 hover:shadow-amber-100/50',
-      iconBg: 'bg-amber-100 text-amber-700',
-      textColor: 'text-amber-950',
-      badgeBg: 'bg-amber-100/80 text-amber-800',
+      bgColor: 'bg-blue-100',
+      icon: <PkIcon />,
     },
     {
       code: 'LBI',
       name: 'Literasi Bahasa Indonesia',
-      shortLabel: 'Literasi Indo',
-      icon: <Languages className="w-6 h-6 sm:w-7 sm:h-7" />,
-      bgPastel: 'bg-rose-50/70 hover:bg-rose-50',
-      hoverBorder: 'hover:border-rose-300 hover:shadow-rose-100/50',
-      iconBg: 'bg-rose-100 text-rose-700',
-      textColor: 'text-rose-950',
-      badgeBg: 'bg-rose-100/80 text-rose-700',
+      bgColor: 'bg-red-100',
+      icon: <LbiIcon />,
     },
     {
       code: 'LBE',
       name: 'Literasi Bahasa Inggris',
-      shortLabel: 'English Literacy',
-      icon: <Globe className="w-6 h-6 sm:w-7 sm:h-7" />,
-      bgPastel: 'bg-blue-50/70 hover:bg-blue-50',
-      hoverBorder: 'hover:border-blue-300 hover:shadow-blue-100/50',
-      iconBg: 'bg-blue-100 text-blue-700',
-      textColor: 'text-blue-950',
-      badgeBg: 'bg-blue-100/80 text-blue-700',
+      bgColor: 'bg-purple-100',
+      icon: <LbeIcon />,
     },
     {
       code: 'PM',
       name: 'Penalaran Matematika',
-      shortLabel: 'Penalaran MTK',
-      icon: <Binary className="w-6 h-6 sm:w-7 sm:h-7" />,
-      bgPastel: 'bg-purple-50/70 hover:bg-purple-50',
-      hoverBorder: 'hover:border-purple-300 hover:shadow-purple-100/50',
-      iconBg: 'bg-purple-100 text-purple-700',
-      textColor: 'text-purple-950',
-      badgeBg: 'bg-purple-100/80 text-purple-700',
+      bgColor: 'bg-emerald-100',
+      icon: <PmIcon />,
     },
   ];
 
   return (
-    <section className="w-full">
-      <div className="flex items-center justify-between mb-3 px-1">
-        <div>
-          <h2 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
-            7 Subtes Standar UTBK-SNBT
-          </h2>
-          <p className="text-xs text-slate-500">
-            Pilih subtes untuk membaca materi atau latihan drilling soal multi-bab.
-          </p>
-        </div>
-        <span className="hidden sm:inline-flex text-[11px] font-semibold text-indigo-700 bg-indigo-50 border border-indigo-100 px-2.5 py-1 rounded-full">
-          Total 96 Topik Terstandar
-        </span>
-      </div>
-
-      {/* Modern App-Style Grid: 4 columns desktop/tablet, 2 or 3-4 on mobile with rounded-2xl square icons */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-        {subtests.map((sub) => {
-          const stats = subtestStats[sub.code] || { chapters: 3, topics: 9 };
-
-          return (
-            <button
-              key={sub.code}
-              type="button"
-              onClick={() => onSelectSubtest(sub.code.toLowerCase())}
-              className={`group flex flex-col p-4 sm:p-5 rounded-2xl border border-slate-200/80 ${sub.bgPastel} ${sub.hoverBorder} transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md cursor-pointer text-left relative overflow-hidden`}
-              aria-label={`Buka Subtes ${sub.name}`}
+    <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+      <div className="grid grid-cols-4 gap-y-6 gap-x-3 sm:gap-x-6">
+        {subtests.map((sub) => (
+          <button
+            key={sub.code}
+            type="button"
+            onClick={() => onSelectSubtest(sub.code.toLowerCase())}
+            className="flex flex-col items-center group cursor-pointer text-center focus:outline-none"
+            aria-label={`Buka Subtes ${sub.name}`}
+          >
+            {/* 1. Ikon Squircle Berwarna Cerah dengan Ilustrasi SVG Multi-Warna */}
+            <div
+              className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center shadow-sm mx-auto ${sub.bgColor} transition-transform duration-200 group-hover:scale-105 group-active:scale-95`}
             >
-              {/* Top Row: Square rounded-2xl Icon + Code Badge */}
-              <div className="flex items-start justify-between mb-3">
-                <div
-                  className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl ${sub.iconBg} flex items-center justify-center shadow-2xs group-hover:scale-105 transition-transform duration-200 shrink-0`}
-                >
-                  {sub.icon}
-                </div>
-                <span className="font-mono text-xs font-black tracking-wider text-slate-400 group-hover:text-slate-700 transition-colors">
-                  {sub.code}
-                </span>
-              </div>
+              {sub.icon}
+            </div>
 
-              {/* Subtest Name without fluff */}
-              <div className="flex-1 min-h-[38px] flex flex-col justify-center">
-                <h3 className={`text-sm sm:text-base font-bold ${sub.textColor} leading-tight line-clamp-2`}>
-                  {sub.name}
-                </h3>
-              </div>
-
-              {/* Bottom Row: Minimal Badge (Chapter count) + Action arrow */}
-              <div className="mt-3 pt-2.5 border-t border-slate-200/50 flex items-center justify-between text-xs">
-                <span className={`px-2 py-0.5 rounded-md font-semibold text-[11px] ${sub.badgeBg}`}>
-                  {stats.chapters} Bab • {stats.topics} Topik
-                </span>
-                <span className="text-slate-400 group-hover:text-indigo-600 transition-transform group-hover:translate-x-1 duration-150">
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </button>
-          );
-        })}
+            {/* 2. Label Nama Subtes di Bawah Ikon */}
+            <span className="text-xs sm:text-sm font-semibold text-slate-700 text-center leading-tight mt-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+              {sub.name}
+            </span>
+          </button>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };

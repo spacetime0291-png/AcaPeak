@@ -44,7 +44,9 @@ export const ALL_UTBK_SUBCHAPTERS = UTBK_SYLLABUS.flatMap((subtest) =>
 );
 
 export async function fetchMaterialById(id: string): Promise<Material> {
-  if (PRELOADED_MATERIALS[id]) {
+  const matched = ALL_UTBK_SUBCHAPTERS.find((s) => s.id === id);
+
+  if (PRELOADED_MATERIALS[id] && matched && PRELOADED_MATERIALS[id].metadata?.title === matched.title) {
     return PRELOADED_MATERIALS[id];
   }
 
@@ -57,14 +59,15 @@ export async function fetchMaterialById(id: string): Promise<Material> {
     const res = await fetch(targetUrl);
     if (res.ok) {
       const data = await res.json();
-      return data as Material;
+      if (!matched || data.metadata?.title === matched.title) {
+        return data as Material;
+      }
     }
   } catch (err) {
     console.warn(`Could not fetch dynamic material for ${id}:`, err);
   }
 
   // Graceful fallback for modules in queue
-  const matched = ALL_UTBK_SUBCHAPTERS.find((s) => s.id === id);
   const title = matched ? matched.title : `Sub-bab ${id.toUpperCase()}`;
   const subtestCode = matched ? matched.subtestCode : (id.split('-')[0].toUpperCase() as any);
   const chapterNum = matched ? matched.chapterNum : 1;
