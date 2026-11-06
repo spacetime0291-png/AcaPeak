@@ -4,13 +4,12 @@ import {
   ChevronDown,
   ChevronUp,
   ChevronRight,
-  CheckCircle2,
-  Circle,
   Play,
   BookOpen,
   Zap,
   Minus,
   Plus,
+  Clock,
 } from 'lucide-react';
 import type { SubtestItem } from '../../types/material';
 import { AdBanner } from '../content/AdBanner';
@@ -230,7 +229,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       <ModuleIcon moduleId={mod.id} className="w-7 h-7 sm:w-8 sm:h-8" />
                     </div>
 
-                    {/* Middle: Title & Meta Info (High-Yield removed) */}
+                    {/* Middle: Title & Meta Info */}
                     <div className="min-w-0 flex-1">
                       <h2 className="text-sm sm:text-base font-semibold text-slate-800 leading-snug group-hover:text-blue-600 transition-colors">
                         Bab {modIdx + 1}: {mod.title}
@@ -292,7 +291,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         )}
 
         {/* ========================================================
-            TAB 2: DRILLING SOAL (Desain Sama Persis dengan Materi + Centang & Icon)
+            TAB 2: DRILLING SOAL (Desain Bersih, Tanpa Centang Kiri, Tanpa Teks Terpilih, Visual Warna)
             ======================================================== */}
         {activeTab === 'drilling' && (
           <div className="space-y-4">
@@ -303,7 +302,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   Pilih Materi Latihan
                 </h3>
                 <p className="text-xs text-slate-500">
-                  Centang sub-bab yang ingin diujikan dalam sesi latihan ini.
+                  Ketuk sub-bab yang ingin diujikan dalam sesi latihan ini.
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -347,7 +346,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                         <ModuleIcon moduleId={mod.id} className="w-7 h-7 sm:w-8 sm:h-8" />
                       </div>
 
-                      {/* Middle: Title & Meta Info */}
+                      {/* Middle: Title & Meta Info (Badge 2 terpilih dihilangkan agar tidak penuh) */}
                       <div className="min-w-0 flex-1">
                         <h2 className="text-sm sm:text-base font-semibold text-slate-800 leading-snug group-hover:text-blue-600 transition-colors">
                           Bab {modIdx + 1}: {mod.title}
@@ -356,11 +355,6 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                           <span>{mod.subtopics.length} Sub-bab</span>
                           <span>•</span>
                           <span>~{mod.estimatedMinutes} mnt</span>
-                          {selectedInMod > 0 && (
-                            <span className="bg-blue-50 text-blue-700 border border-blue-200 font-bold px-1.5 py-0.2 rounded text-[10px]">
-                              {selectedInMod} Terpilih
-                            </span>
-                          )}
                         </div>
                       </div>
 
@@ -387,7 +381,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               : 'text-blue-600 hover:bg-blue-50 border-blue-200'
                           }`}
                         >
-                          {allSelectedInMod ? 'Terpilih Semua' : 'Pilih Bab Ini'}
+                          {allSelectedInMod ? 'Batal' : 'Pilih'}
                         </button>
 
                         <div className="text-slate-400 group-hover:text-blue-600 transition-colors">
@@ -400,7 +394,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       </div>
                     </div>
 
-                    {/* Expanded Sub-bab List: Desain Sama Persis dengan Materi, Memiliki Centang & Icon */}
+                    {/* Expanded Sub-bab List: Tanpa Centang Kiri, Tanpa Teks Pilih/Terpilih Kanan, Visual Warna Tetap */}
                     {isOpen && (
                       <div className="bg-slate-50/70 px-3 sm:px-6 py-2 border-t border-slate-100 space-y-1.5 animate-in fade-in duration-150">
                         {mod.subtopics.map((sub) => {
@@ -416,18 +410,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                   : 'bg-white hover:bg-blue-50/50 border-slate-100 hover:border-blue-200'
                               }`}
                             >
-                              {/* Left: Centang (Checkbox) + Icon Zap + Judul Lengkap */}
+                              {/* Left: Icon Zap + Judul Lengkap */}
                               <div className="flex items-start sm:items-center gap-2.5 min-w-0 flex-1 py-0.5">
-                                {/* Centang Khusus Drilling */}
-                                <div className="p-0.5 shrink-0 mt-0.5 sm:mt-0 text-blue-600">
-                                  {isSelected ? (
-                                    <CheckCircle2 className="w-5 h-5 text-blue-600 fill-blue-100" />
-                                  ) : (
-                                    <Circle className="w-5 h-5 text-slate-300 hover:text-slate-500" />
-                                  )}
-                                </div>
-
-                                {/* Icon Sub-bab (Menggantikan nomor 1.1) */}
+                                {/* Icon Sub-bab (Visual warna menyesuaikan status terpilih) */}
                                 <div
                                   className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border mt-0.5 sm:mt-0 ${
                                     isSelected
@@ -447,19 +432,6 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                   }`}
                                 >
                                   {sub.title}
-                                </span>
-                              </div>
-
-                              {/* Right: Status Badge */}
-                              <div className="shrink-0 ml-2">
-                                <span
-                                  className={`text-[11px] font-semibold px-2.5 py-1 rounded-lg transition ${
-                                    isSelected
-                                      ? 'bg-blue-600 text-white font-bold shadow-2xs'
-                                      : 'bg-slate-100 text-slate-500 group-hover/sub:bg-blue-100 group-hover/sub:text-blue-700'
-                                  }`}
-                                >
-                                  {isSelected ? 'Terpilih' : 'Pilih'}
                                 </span>
                               </div>
                             </div>
@@ -511,7 +483,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
               )}
             </div>
 
-            {/* Right: Minimalist Steppers (+1/-1 Fleksibel) & Start Button */}
+            {/* Right: Minimalist Steppers (+1/-1 Fleksibel) with Minimalist Nonaktifkan Timer & Start Button */}
             <div className="flex items-center gap-2.5 w-full sm:w-auto justify-between sm:justify-end">
               {/* Jumlah Soal Stepper (+1 / -1) */}
               <div
@@ -527,7 +499,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 >
                   <Minus className="w-3.5 h-3.5" />
                 </button>
-                <div className="px-2 min-w-[50px] text-center select-none">
+                <div className="px-2 min-w-[46px] text-center select-none">
                   <div className="text-xs font-bold text-slate-900 leading-tight">
                     {questionCount}
                   </div>
@@ -545,47 +517,58 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 </button>
               </div>
 
-              {/* Batas Waktu Stepper (+1 / -1 Menit) */}
-              <div
-                className="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200/80 shadow-2xs"
-                title="Batas Waktu Pengerjaan (+1 / -1 Menit)"
-              >
-                <button
-                  type="button"
-                  onClick={() =>
-                    setTimerMinutes((prev) => {
-                      if (prev === null) return 1;
-                      if (prev <= 1) return null;
-                      return prev - 1;
-                    })
-                  }
-                  className="w-7 h-7 rounded-lg bg-white hover:bg-slate-200 active:scale-95 text-slate-700 flex items-center justify-center transition cursor-pointer font-bold shadow-2xs"
-                  aria-label="Kurangi 1 Menit"
+              {/* Batas Waktu Stepper dengan Opsi Nonaktifkan Timer yang Minimalis & Hemat Ruang */}
+              {timerMinutes !== null ? (
+                <div
+                  className="flex items-center bg-slate-100 rounded-xl p-1 border border-slate-200/80 shadow-2xs"
+                  title="Batas Waktu Pengerjaan (+1 / -1 Menit)"
                 >
-                  <Minus className="w-3.5 h-3.5" />
-                </button>
-                <div className="px-2 min-w-[50px] text-center select-none">
-                  <div className="text-xs font-bold text-slate-900 leading-tight">
-                    {timerMinutes !== null ? timerMinutes : '∞'}
+                  <button
+                    type="button"
+                    onClick={() => setTimerMinutes((prev) => Math.max(1, (prev ?? 15) - 1))}
+                    disabled={(timerMinutes ?? 15) <= 1}
+                    className="w-7 h-7 rounded-lg bg-white hover:bg-slate-200 active:scale-95 text-slate-700 flex items-center justify-center transition cursor-pointer font-bold disabled:opacity-40 shadow-2xs"
+                    aria-label="Kurangi 1 Menit"
+                  >
+                    <Minus className="w-3.5 h-3.5" />
+                  </button>
+                  <div className="px-1.5 min-w-[42px] text-center select-none">
+                    <div className="text-xs font-bold text-slate-900 leading-tight">
+                      {timerMinutes}
+                    </div>
+                    <div className="text-[10px] text-slate-400 leading-none">
+                      Menit
+                    </div>
                   </div>
-                  <div className="text-[10px] text-slate-400 leading-none">
-                    {timerMinutes !== null ? 'Menit' : 'Santai'}
-                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setTimerMinutes((prev) => Math.min(180, (prev ?? 15) + 1))}
+                    className="w-7 h-7 rounded-lg bg-white hover:bg-slate-200 active:scale-95 text-slate-700 flex items-center justify-center transition cursor-pointer font-bold shadow-2xs"
+                    aria-label="Tambah 1 Menit"
+                  >
+                    <Plus className="w-3.5 h-3.5" />
+                  </button>
+                  {/* Tombol Minimalis Nonaktifkan Timer */}
+                  <button
+                    type="button"
+                    onClick={() => setTimerMinutes(null)}
+                    className="ml-0.5 px-1.5 py-1 text-[10px] font-bold text-slate-400 hover:text-rose-600 hover:bg-rose-50 active:scale-95 rounded-md transition cursor-pointer"
+                    title="Nonaktifkan Timer"
+                  >
+                    Off
+                  </button>
                 </div>
+              ) : (
                 <button
                   type="button"
-                  onClick={() =>
-                    setTimerMinutes((prev) => {
-                      if (prev === null) return 5;
-                      return Math.min(180, prev + 1);
-                    })
-                  }
-                  className="w-7 h-7 rounded-lg bg-white hover:bg-slate-200 active:scale-95 text-slate-700 flex items-center justify-center transition cursor-pointer font-bold shadow-2xs"
-                  aria-label="Tambah 1 Menit"
+                  onClick={() => setTimerMinutes(15)}
+                  className="h-9 px-3 flex items-center gap-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200/80 hover:border-blue-200 rounded-xl text-slate-600 hover:text-blue-700 transition cursor-pointer shadow-2xs select-none"
+                  title="Klik untuk mengaktifkan timer"
                 >
-                  <Plus className="w-3.5 h-3.5" />
+                  <Clock className="w-3.5 h-3.5 text-slate-400" />
+                  <span className="text-xs font-bold">Tanpa Timer</span>
                 </button>
-              </div>
+              )}
 
               {/* Mulai Drilling Button */}
               <button
