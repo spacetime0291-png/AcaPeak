@@ -2732,7 +2732,7 @@
         "Sudut garis patah di antara dua garis sejajar (metode garis bantu sejajar)."
       ],
       "requires_svg": true,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pk/pk-3.1.1.json"
     },
     {

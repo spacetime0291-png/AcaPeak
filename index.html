@@ -2,14 +2,30 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="theme-color" content="#4f46e5" />
     <meta name="description" content="Platform Web Edukasi UTBK-SNBT & SMA berskala besar, bebas biaya (Rp0), latency rendah, adaptif Desktop & Mobile." />
     <title>UTBK-SNBT Edu Platform | Belajar Mandiri & Gratis</title>
+    <!-- Pre-compiled stylesheet fallback for direct branch deployment -->
+    <link rel="stylesheet" href="./assets/index.css">
   </head>
-  <body>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100 selection:text-indigo-900">
     <div id="root"></div>
+    <!-- Vite entry point -->
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Fallback loader if /src/main.tsx cannot be loaded directly (e.g. unbuilt static hosting) -->
+    <script>
+      window.addEventListener('error', function (e) {
+        if (e.target && e.target.src && e.target.src.includes('main.tsx')) {
+          console.warn('Switching to production bundle fallback...');
+          const script = document.createElement('script');
+          script.type = 'module';
+          script.crossOrigin = 'anonymous';
+          script.src = './assets/index.js';
+          document.body.appendChild(script);
+        }
+      }, true);
+    </script>
   </body>
 </html>
