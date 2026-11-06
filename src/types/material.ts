@@ -8,7 +8,7 @@ export interface MaterialMetadata {
   subchapter_num: string;
   subchapter_title: string;
   title: string;
-  micro_syllabus_covered: string[];
+  required_question_variations: string[];
   requires_svg: boolean;
   updated_at: string;
 }
@@ -21,10 +21,11 @@ export interface SvgVisualization {
 }
 
 export interface MaterialContent {
-  concept_markdown: string;
+  tactical_overview?: string;
+  exam_blueprint_markdown: string;
   visualizations_svg: SvgVisualization[];
-  formulas_and_quick_tricks: string[];
-  common_pitfalls: string[];
+  distractor_traps: string[];
+  quick_execution_algorithm?: string[];
 }
 
 export interface QuestionOption {
@@ -39,8 +40,9 @@ export interface SvgIllustration {
 
 export interface WorkedExample {
   example_id: string;
+  variation_name: string;
   difficulty: 'easy' | 'medium' | 'hard';
-  question_type: 'standard_mc' | 'statements_1234' | 'data_sufficiency' | 'reading_comprehension' | string;
+  question_type: 'standard_mc' | 'statements_1234' | 'data_sufficiency' | 'reading_comprehension' | 'table_evaluation' | string;
   context_markdown?: string | null;
   svg_illustration?: SvgIllustration | null;
   question_markdown: string;
@@ -50,6 +52,7 @@ export interface WorkedExample {
   correct_answer: 'A' | 'B' | 'C' | 'D' | 'E' | string;
   conceptual_solution_markdown: string;
   quick_trick_markdown: string;
+  why_others_are_wrong_markdown: string;
 }
 
 export interface Material {
@@ -62,6 +65,7 @@ export interface SyllabusSubchapterItem {
   id: string;
   subchapter_num: string;
   title: string;
+  variations_count?: number;
   isCompleted?: boolean;
 }
 

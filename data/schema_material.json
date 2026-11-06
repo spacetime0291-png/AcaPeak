@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "UTBKEduMaterial",
-  "description": "JSON schema for UTBK-SNBT learning materials and worked examples",
+  "title": "UTBKTacticalPlaybookMaterial",
+  "description": "JSON schema for exam-pattern and question-driven UTBK learning materials",
   "type": "object",
   "required": ["metadata", "content", "worked_examples"],
   "properties": {
@@ -15,19 +15,18 @@
         "subchapter_num",
         "subchapter_title",
         "title",
-        "micro_syllabus_covered",
+        "required_question_variations",
         "requires_svg",
         "updated_at"
       ],
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier for this material, e.g. pk-3.1.1"
+          "description": "Unique identifier, e.g. pu-1.1, pk-3.1"
         },
         "subtest": {
           "type": "string",
-          "enum": ["PU", "PPU", "PBM", "PK", "LBI", "LBE", "PM"],
-          "description": "Subtest abbreviation"
+          "enum": ["PU", "PPU", "PBM", "PK", "LBI", "LBE", "PM"]
         },
         "chapter_num": {
           "type": "integer",
@@ -45,7 +44,7 @@
         "title": {
           "type": "string"
         },
-        "micro_syllabus_covered": {
+        "required_question_variations": {
           "type": "array",
           "items": { "type": "string" },
           "minItems": 1
@@ -62,14 +61,17 @@
     "content": {
       "type": "object",
       "required": [
-        "concept_markdown",
+        "exam_blueprint_markdown",
         "visualizations_svg",
-        "formulas_and_quick_tricks",
-        "common_pitfalls"
+        "distractor_traps"
       ],
       "properties": {
-        "concept_markdown": {
+        "tactical_overview": {
           "type": "string"
+        },
+        "exam_blueprint_markdown": {
+          "type": "string",
+          "description": "Tactical table mapping UTBK question patterns to testing points and quick 30s execution algorithms"
         },
         "visualizations_svg": {
           "type": "array",
@@ -84,11 +86,12 @@
             }
           }
         },
-        "formulas_and_quick_tricks": {
+        "distractor_traps": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": { "type": "string" },
+          "description": "Pola jebakan opsi pengecoh khas UTBK di topik ini"
         },
-        "common_pitfalls": {
+        "quick_execution_algorithm": {
           "type": "array",
           "items": { "type": "string" }
         }
@@ -96,28 +99,33 @@
     },
     "worked_examples": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 3,
       "items": {
         "type": "object",
         "required": [
           "example_id",
+          "variation_name",
           "difficulty",
           "question_type",
           "question_markdown",
           "options",
           "correct_answer",
           "conceptual_solution_markdown",
-          "quick_trick_markdown"
+          "quick_trick_markdown",
+          "why_others_are_wrong_markdown"
         ],
         "properties": {
           "example_id": { "type": "string" },
+          "variation_name": {
+            "type": "string",
+            "description": "Label variasi soal, misal 'Variasi 1: Menentukan Pernyataan yang Memperlemah Hipotesis'"
+          },
           "difficulty": {
             "type": "string",
             "enum": ["easy", "medium", "hard"]
           },
           "question_type": {
-            "type": "string",
-            "enum": ["standard_mc", "statements_1234", "data_sufficiency", "reading_comprehension"]
+            "type": "string"
           },
           "context_markdown": {
             "type": ["string", "null"]
@@ -147,19 +155,21 @@
               "required": ["key", "text_markdown"],
               "properties": {
                 "key": {
-                  "type": "string",
-                  "enum": ["A", "B", "C", "D", "E"]
+                  "type": "string"
                 },
                 "text_markdown": { "type": "string" }
               }
             }
           },
           "correct_answer": {
-            "type": "string",
-            "enum": ["A", "B", "C", "D", "E"]
+            "type": "string"
           },
           "conceptual_solution_markdown": { "type": "string" },
-          "quick_trick_markdown": { "type": "string" }
+          "quick_trick_markdown": { "type": "string" },
+          "why_others_are_wrong_markdown": {
+            "type": "string",
+            "description": "Bedah opsi salah A, B, C, D, E dan jebakan apa yang dipakai"
+          }
         }
       }
     }

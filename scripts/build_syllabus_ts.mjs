@@ -43,6 +43,7 @@ for (const item of tracker.items) {
     id: item.id,
     subchapter_num: item.subchapter_num,
     title: item.title,
+    variations_count: (item.required_question_variations || []).length,
     isCompleted: item.material_status === 'done'
   });
 }
@@ -61,11 +62,11 @@ const finalSyllabus = subtestOrder.map(code => {
   };
 });
 
-const tsContent = `// Auto-generated from data/curriculum_tracker.json
+const tsContent = `// Auto-generated from data/curriculum_tracker.json (Consolidated 96 Topics)
 import type { SyllabusSubtestItem } from '../types/material';
 
 export const UTBK_SYLLABUS: SyllabusSubtestItem[] = ${JSON.stringify(finalSyllabus, null, 2)};
 `;
 
 fs.writeFileSync('src/lib/syllabusData.ts', tsContent, 'utf8');
-console.log('src/lib/syllabusData.ts generated successfully with 7 subtests and 277 sub-materi!');
+console.log('src/lib/syllabusData.ts generated with 96 consolidated topics across 7 subtests!');

@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const contentDir = path.join(rootDir, 'public', 'content');
 
-console.log('🔍 Menjalankan UTBK Content Validator...\n');
+console.log('🔍 Menjalankan UTBK Exam-Pattern Content Validator...\n');
 
 function getAllJsonFiles(dir, fileList = []) {
   if (!fs.existsSync(dir)) return fileList;
@@ -26,7 +26,7 @@ function getAllJsonFiles(dir, fileList = []) {
 const jsonFiles = getAllJsonFiles(contentDir);
 
 if (jsonFiles.length === 0) {
-  console.log('ℹ️  Belum ada file materi .json di public/content/. Validasi dilewati dengan sukses.');
+  console.log('ℹ️  Belum ada file materi .json di public/content/.');
   process.exit(0);
 }
 
@@ -43,7 +43,7 @@ function validateSvgString(svgCode, label, errors) {
     errors.push(`${label}: Format tag <svg>...</svg> tidak valid.`);
   }
   if (!trimmed.includes('viewBox=')) {
-    errors.push(`${label}: Tag <svg> disarankan memiliki atribut viewBox.`);
+    errors.push(`${label}: Tag <svg> wajib memiliki atribut viewBox.`);
   }
 }
 
@@ -75,7 +75,7 @@ for (const filePath of jsonFiles) {
       'subchapter_num',
       'subchapter_title',
       'title',
-      'micro_syllabus_covered',
+      'required_question_variations',
       'requires_svg',
       'updated_at',
     ];
@@ -86,27 +86,30 @@ for (const filePath of jsonFiles) {
     }
 
     if (
-      Array.isArray(data.metadata.micro_syllabus_covered) &&
-      data.metadata.micro_syllabus_covered.length === 0
+      Array.isArray(data.metadata.required_question_variations) &&
+      data.metadata.required_question_variations.length === 0
     ) {
-      errors.push("Metadata: 'micro_syllabus_covered' tidak boleh array kosong.");
+      errors.push("Metadata: 'required_question_variations' tidak boleh array kosong.");
     }
   }
 
-  // 3. Content Check
+  // 3. Content Check (Tactical UTBK Playbook Standard)
   if (!data.content || typeof data.content !== 'object') {
     errors.push('Field `content` wajib ada dan berupa object.');
   } else {
     const requiredContent = [
-      'concept_markdown',
+      'exam_blueprint_markdown',
       'visualizations_svg',
-      'formulas_and_quick_tricks',
-      'common_pitfalls',
+      'distractor_traps',
     ];
     for (const field of requiredContent) {
-      if (data.content[field] === undefined || data.content[field] === null) {
+      if (!data.content[field]) {
         errors.push(`Content: field '${field}' wajib diisi.`);
       }
+    }
+
+    if (Array.isArray(data.content.distractor_traps) && data.content.distractor_traps.length === 0) {
+      errors.push("Content: 'distractor_traps' minimal harus memiliki 1 poin jebakan pengecoh.");
     }
 
     // SVG validation in content
@@ -118,20 +121,6 @@ for (const filePath of jsonFiles) {
         }
         validateSvgString(svgItem.svg_code, itemLabel, errors);
       });
-
-      // Check placeholder [[SVG:id]] in concept_markdown
-      if (typeof data.content.concept_markdown === 'string') {
-        const matches = [...data.content.concept_markdown.matchAll(/\[\[SVG:([a-zA-Z0-9_-]+)\]\]/g)];
-        const existingSvgIds = new Set(data.content.visualizations_svg.map((v) => v.id));
-        for (const match of matches) {
-          const referencedId = match[1];
-          if (!existingSvgIds.has(referencedId)) {
-            errors.push(
-              `Placeholder [[SVG:${referencedId}]] digunakan di concept_markdown tetapi tidak ditemukan di visualizations_svg.`
-            );
-          }
-        }
-      }
     }
 
     if (data.metadata?.requires_svg) {
@@ -144,20 +133,21 @@ for (const filePath of jsonFiles) {
     }
   }
 
-  // 4. Worked Examples Check (Minimal 3 contoh soal)
+  // 4. Worked Examples Check (UTBK Question Variations)
   if (!Array.isArray(data.worked_examples)) {
     errors.push("Field 'worked_examples' wajib berupa array.");
   } else {
     if (data.worked_examples.length < 3) {
       errors.push(
-        `Field 'worked_examples' wajib memiliki minimal 3 contoh soal (saat ini hanya ada ${data.worked_examples.length}).`
+        `Field 'worked_examples' wajib memiliki minimal 3 variasi soal (saat ini hanya ada ${data.worked_examples.length}).`
       );
     }
 
     data.worked_examples.forEach((example, idx) => {
-      const exLabel = `worked_examples[${idx}] (id: ${example.example_id || idx})`;
+      const exLabel = `worked_examples[${idx}] (${example.example_id || idx})`;
       const requiredExampleFields = [
         'example_id',
+        'variation_name',
         'difficulty',
         'question_type',
         'question_markdown',
@@ -165,6 +155,7 @@ for (const filePath of jsonFiles) {
         'correct_answer',
         'conceptual_solution_markdown',
         'quick_trick_markdown',
+        'why_others_are_wrong_markdown',
       ];
 
       for (const field of requiredExampleFields) {
@@ -205,7 +196,7 @@ for (const filePath of jsonFiles) {
     errors.forEach((err) => console.error(`   - ${err}`));
     totalErrors += errors.length;
   } else {
-    console.log(`✅ [${relativePath}] Valid! (${data.worked_examples.length} contoh soal terverifikasi)`);
+    console.log(`✅ [${relativePath}] Valid! (${data.worked_examples.length} variasi soal terverifikasi)`);
   }
 }
 
@@ -214,6 +205,6 @@ if (totalErrors > 0) {
   console.error(`💥 Validasi gagal dengan total ${totalErrors} error pada ${totalFilesChecked} file.`);
   process.exit(1);
 } else {
-  console.log(`✨ Seluruh materi (${totalFilesChecked} file) tervalidasi 100% tanpa error!`);
+  console.log(`✨ Seluruh materi (${totalFilesChecked} file) tervalidasi 100% dengan standar Playbook UTBK!`);
   process.exit(0);
 }

@@ -1,4 +1,4 @@
-// Auto-generated from data/curriculum_tracker.json
+// Auto-generated from data/curriculum_tracker.json (Consolidated 96 Topics)
 import type { SyllabusSubtestItem } from '../types/material';
 
 export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
@@ -12,81 +12,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Penalaran Induktif",
         "subchapters": [
           {
-            "id": "pu-1.1.1",
+            "id": "pu-1.1",
             "subchapter_num": "1.1",
-            "title": "Konsep Dasar dan Mekanisme Generalisasi",
-            "isCompleted": true
-          },
-          {
-            "id": "pu-1.1.2",
-            "subchapter_num": "1.1",
-            "title": "Jenis-Jenis Generalisasi",
-            "isCompleted": true
-          },
-          {
-            "id": "pu-1.1.3",
-            "subchapter_num": "1.1",
-            "title": "Syarat Validitas dan Pengujian Generalisasi",
-            "isCompleted": true
-          },
-          {
-            "id": "pu-1.1.4",
-            "subchapter_num": "1.1",
-            "title": "Kekeliruan Berpikir (Fallacy) dalam Generalisasi",
+            "title": "Generalisasi (Generalization)",
+            "variations_count": 14,
             "isCompleted": false
           },
           {
-            "id": "pu-1.1.5",
-            "subchapter_num": "1.1",
-            "title": "Tipe Soal UTBK Generalisasi",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-1.2.1",
+            "id": "pu-1.2",
             "subchapter_num": "1.2",
-            "title": "Konsep Dasar dan Struktur Analogi",
+            "title": "Analogi (Analogical Reasoning)",
+            "variations_count": 12,
             "isCompleted": false
           },
           {
-            "id": "pu-1.2.2",
-            "subchapter_num": "1.2",
-            "title": "Klasifikasi Analogi",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-1.2.3",
-            "subchapter_num": "1.2",
-            "title": "Pola Relasi Kata dan Konsep (Analogi Verbal & Kontekstual)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-1.2.4",
-            "subchapter_num": "1.2",
-            "title": "Evaluasi dan Kelemahan Analogi",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-1.3.1",
+            "id": "pu-1.3",
             "subchapter_num": "1.3",
-            "title": "Konsep Dasar Kausalitas dalam Wacana",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-1.3.2",
-            "subchapter_num": "1.3",
-            "title": "Pola Struktur Hubungan Kausal",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-1.3.3",
-            "subchapter_num": "1.3",
-            "title": "Kondisi Kausalitas (Syarat Cukup vs Syarat Perlu)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-1.3.4",
-            "subchapter_num": "1.3",
-            "title": "Korelasi vs Kausalitas & Kekeliruan Kausal (Causal Fallacies)",
+            "title": "Hubungan Kausalitas (Sebab-Akibat)",
+            "variations_count": 13,
             "isCompleted": false
           }
         ]
@@ -96,111 +39,38 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Penalaran Deduktif",
         "subchapters": [
           {
-            "id": "pu-2.1.1",
+            "id": "pu-2.1",
             "subchapter_num": "2.1",
-            "title": "Konsep Pernyataan (Proposisi) dan Nilai Kebenaran",
+            "title": "Logika Proposisi (Propositional Logic)",
+            "variations_count": 15,
             "isCompleted": false
           },
           {
-            "id": "pu-2.1.2",
-            "subchapter_num": "2.1",
-            "title": "Operator Logika Dasar dan Tabel Kebenaran",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.1.3",
-            "subchapter_num": "2.1",
-            "title": "Ekuivalensi Logis dan Hukum-Hukum Logika (Manipulasi Kalimat Setara)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.1.4",
-            "subchapter_num": "2.1",
-            "title": "Transformasi Implikasi",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.2.1",
+            "id": "pu-2.2",
             "subchapter_num": "2.2",
-            "title": "Silogisme Hipotesik (Kondisional)",
+            "title": "Silogisme dan Aturan Penarikan Kesimpulan (Rules of Inference)",
+            "variations_count": 14,
             "isCompleted": false
           },
           {
-            "id": "pu-2.2.2",
-            "subchapter_num": "2.2",
-            "title": "Silogisme Disjungtif dan Dilema",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.2.3",
-            "subchapter_num": "2.2",
-            "title": "Silogisme Kategorik",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.3.1",
+            "id": "pu-2.3",
             "subchapter_num": "2.3",
-            "title": "Jenis Kuantor dan Makna Semantiknya",
+            "title": "Logika Kuantor (Quantifier Logic)",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "pu-2.3.2",
-            "subchapter_num": "2.3",
-            "title": "Negasi / Ingkaran Pernyataan Berkuantor",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.3.3",
-            "subchapter_num": "2.3",
-            "title": "Kombinasi Kuantor dengan Proposisi Majemuk",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.4.1",
+            "id": "pu-2.4",
             "subchapter_num": "2.4",
-            "title": "Pengurutan / Ranking (Ordering & Sequencing)",
+            "title": "Penalaran Analitik (Analytical Reasoning / Logic Games)",
+            "variations_count": 10,
             "isCompleted": false
           },
           {
-            "id": "pu-2.4.2",
-            "subchapter_num": "2.4",
-            "title": "Penempatan Posisi (Spatial & Positional Arrangement)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.4.3",
-            "subchapter_num": "2.4",
-            "title": "Pengelompokan dan Seleksi Bersyarat (Grouping & Selection)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.4.4",
-            "subchapter_num": "2.4",
-            "title": "Penjadwalan dan Rute Jaringan (Scheduling & Network Path)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.5.1",
+            "id": "pu-2.5",
             "subchapter_num": "2.5",
-            "title": "Anatomi Argumen dalam Paragraf",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.5.2",
-            "subchapter_num": "2.5",
-            "title": "Memperkuat dan Memperlemah Argumen (Strengthening & Weakening)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.5.3",
-            "subchapter_num": "2.5",
-            "title": "Evaluasi Kebenaran Pernyataan Berdasarkan Teks",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-2.5.4",
-            "subchapter_num": "2.5",
-            "title": "Resolusi Paradoks / Kontradiksi (Resolve the Paradox)",
+            "title": "Evaluasi Argumen dan Kritis Wacana (Critical Reasoning)",
+            "variations_count": 7,
             "isCompleted": false
           }
         ]
@@ -210,63 +80,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Penalaran Kuantitatif (dalam Subtes PU)",
         "subchapters": [
           {
-            "id": "pu-3.1.1",
+            "id": "pu-3.1",
             "subchapter_num": "3.1",
-            "title": "Pola Barisan Angka (Number Sequences)",
+            "title": "Pola Bilangan, Barisan, dan Gambar Numerik",
+            "variations_count": 8,
             "isCompleted": false
           },
           {
-            "id": "pu-3.1.2",
-            "subchapter_num": "3.1",
-            "title": "Pola Barisan Huruf (Alphabetical Sequences)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-3.1.3",
-            "subchapter_num": "3.1",
-            "title": "Pola Angka dalam Gambar / Matriks (Number Puzzles)",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-3.2.1",
+            "id": "pu-3.2",
             "subchapter_num": "3.2",
-            "title": "Operasi Bilangan dan Estimasi Nilai",
+            "title": "Aritmetika Dasar dan Komputasi Cepat",
+            "variations_count": 11,
             "isCompleted": false
           },
           {
-            "id": "pu-3.2.2",
-            "subchapter_num": "3.2",
-            "title": "Persentase dan Perubahan Nilai",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-3.2.3",
-            "subchapter_num": "3.2",
-            "title": "Rasio, Proporsi, dan Perbandingan",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-3.2.4",
-            "subchapter_num": "3.2",
-            "title": "Aritmetika Kontekstual Sederhana",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-3.3.1",
+            "id": "pu-3.3",
             "subchapter_num": "3.3",
-            "title": "Pembacaan dan Ekstraksi Data Visual",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-3.3.2",
-            "subchapter_num": "3.3",
-            "title": "Analisis Statistik Deskriptif pada Data Grafik",
-            "isCompleted": false
-          },
-          {
-            "id": "pu-3.3.3",
-            "subchapter_num": "3.3",
-            "title": "Prediksi dan Simpulan Berbasis Data (Forecasting & Trend Analysis)",
+            "title": "Interpretasi Data (Tabel, Grafik, dan Infografis)",
+            "variations_count": 8,
             "isCompleted": false
           }
         ]
@@ -283,111 +114,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Semantik dan Leksikal (Makna Kata)",
         "subchapters": [
           {
-            "id": "ppu-1.1.1",
+            "id": "ppu-1.1",
             "subchapter_num": "1.1",
-            "title": "Makna Leksikal vs Makna Gramatikal",
+            "title": "Jenis Makna Berdasarkan Asosiasi dan Konteks",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "ppu-1.1.2",
-            "subchapter_num": "1.1",
-            "title": "Makna Denotatif (Lugas) vs Makna Konotatif (Kias)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.1.3",
-            "subchapter_num": "1.1",
-            "title": "Makna Referensial vs Nonreferensial",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.2.1",
+            "id": "ppu-1.2",
             "subchapter_num": "1.2",
-            "title": "Sinonimi (Kemiripan Makna)",
+            "title": "Relasi Makna Antarkata (Semantic Relations)",
+            "variations_count": 15,
             "isCompleted": false
           },
           {
-            "id": "ppu-1.2.2",
-            "subchapter_num": "1.2",
-            "title": "Antonimi / Oposisi (Pertentangan Makna)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.2.3",
-            "subchapter_num": "1.2",
-            "title": "Homonimi, Homofoni, dan Homografi",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.2.4",
-            "subchapter_num": "1.2",
-            "title": "Polisemi (Kebermaknaan Ganda dalam Satu Akar)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.2.5",
-            "subchapter_num": "1.2",
-            "title": "Hipernimi dan Hiponimi (Relasi Atas-Bawah / Taksonomi)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.2.6",
-            "subchapter_num": "1.2",
-            "title": "Meronimi dan Holonimi (Relasi Bagian-Keseluruhan)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.3.1",
+            "id": "ppu-1.3",
             "subchapter_num": "1.3",
-            "title": "Perluasan Makna (Generalisasi / Meluas)",
+            "title": "Perubahan dan Pergeseran Makna Kata",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "ppu-1.3.2",
-            "subchapter_num": "1.3",
-            "title": "Penyempitan Makna (Spesialisasi / Menyempit)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.3.3",
-            "subchapter_num": "1.3",
-            "title": "Peninggian Nilai Rasa (Ameliorasi)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.3.4",
-            "subchapter_num": "1.3",
-            "title": "Penurunan Nilai Rasa (Peyorasi)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.3.5",
-            "subchapter_num": "1.3",
-            "title": "Pertukaran Tanggapan Indra (Sinestesia)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.3.6",
-            "subchapter_num": "1.3",
-            "title": "Persamaan Sifat (Asosiasi)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.4.1",
+            "id": "ppu-1.4",
             "subchapter_num": "1.4",
-            "title": "Idiom (Ungkapan)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.4.2",
-            "subchapter_num": "1.4",
-            "title": "Peribahasa, Pepatah, dan Perumpamaan",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-1.4.3",
-            "subchapter_num": "1.4",
-            "title": "Majas (Gaya Bahasa Kontekstual)",
+            "title": "Ungkapan, Idiom, Peribahasa, dan Gaya Bahasa",
+            "variations_count": 6,
             "isCompleted": false
           }
         ]
@@ -397,57 +148,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Morfologi (Pembentukan Kata & Kelas Kata)",
         "subchapters": [
           {
-            "id": "ppu-2.1.1",
+            "id": "ppu-2.1",
             "subchapter_num": "2.1",
-            "title": "Konsep Morfem",
+            "title": "Morfem dan Proses Afiksasi (Pengimbuhan)",
+            "variations_count": 14,
             "isCompleted": false
           },
           {
-            "id": "ppu-2.1.2",
-            "subchapter_num": "2.1",
-            "title": "Jenis dan Hukum Peluluhan Afiks (Morfofonemik)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-2.1.3",
-            "subchapter_num": "2.1",
-            "title": "Analisis Kesamaan Makna dan Fungsi Imbuhan (Tipe Soal Favorit PPU)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-2.2.1",
+            "id": "ppu-2.2",
             "subchapter_num": "2.2",
-            "title": "Bentuk Reduplikasi",
+            "title": "Reduplikasi (Kata Ulang)",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "ppu-2.2.2",
-            "subchapter_num": "2.2",
-            "title": "Kesetaraan Makna Reduplikasi dalam Kalimat",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-2.3.1",
+            "id": "ppu-2.3",
             "subchapter_num": "2.3",
-            "title": "Karakteristik Kata Majemuk",
+            "title": "Komposisi (Kata Majemuk / Gabungan Kata)",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "ppu-2.3.2",
-            "subchapter_num": "2.3",
-            "title": "Struktur Hubungan Kata Majemuk",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-2.4.1",
+            "id": "ppu-2.4",
             "subchapter_num": "2.4",
-            "title": "Kelas Kata Utama (Terbuka)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-2.4.2",
-            "subchapter_num": "2.4",
-            "title": "Kelas Kata Tugas (Tertutup)",
+            "title": "Klasifikasi Kelas Kata (Word Classes / Parts of Speech)",
+            "variations_count": 10,
             "isCompleted": false
           }
         ]
@@ -457,93 +182,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Sintaksis (Frasa, Klausa, dan Kalimat)",
         "subchapters": [
           {
-            "id": "ppu-3.1.1",
+            "id": "ppu-3.1",
             "subchapter_num": "3.1",
-            "title": "Konsep dan Batasan Frasa",
+            "title": "Frasa (Kelompok Kata Nonpredikatif)",
+            "variations_count": 9,
             "isCompleted": false
           },
           {
-            "id": "ppu-3.1.2",
-            "subchapter_num": "3.1",
-            "title": "Struktur Internal Frasa (Hukum D-M dan M-D)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.1.3",
-            "subchapter_num": "3.1",
-            "title": "Kategori Frasa Berdasarkan Kelas Kata Inti",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.1.4",
-            "subchapter_num": "3.1",
-            "title": "Tipe Soal PPU Terkait Frasa",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.2.1",
+            "id": "ppu-3.2",
             "subchapter_num": "3.2",
-            "title": "Identifikasi Fungsi Sintaksis Utama",
+            "title": "Klausa dan Fungsi Sintaksis (S-P-O-Pel-K)",
+            "variations_count": 8,
             "isCompleted": false
           },
           {
-            "id": "ppu-3.2.2",
-            "subchapter_num": "3.2",
-            "title": "Perbedaan Kritis Objek vs Pelengkap vs Keterangan",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.2.3",
-            "subchapter_num": "3.2",
-            "title": "Jenis Klausa",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.3.1",
+            "id": "ppu-3.3",
             "subchapter_num": "3.3",
-            "title": "Kalimat Inti / Kerangka Kalimat (Kernel Sentence)",
+            "title": "Kalimat Inti, Kalimat Dasar, dan Transformasi Kalimat",
+            "variations_count": 11,
             "isCompleted": false
           },
           {
-            "id": "ppu-3.3.2",
-            "subchapter_num": "3.3",
-            "title": "Pola Kalimat Dasar Bahasa Indonesia",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.3.3",
-            "subchapter_num": "3.3",
-            "title": "Transformasi Kalimat Aktif dan Pasif",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.3.4",
-            "subchapter_num": "3.3",
-            "title": "Kalimat Inversi (Susun Balik)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.4.1",
+            "id": "ppu-3.4",
             "subchapter_num": "3.4",
-            "title": "Kalimat Majemuk Setara (Koordinatif)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.4.2",
-            "subchapter_num": "3.4",
-            "title": "Kalimat Majemuk Bertingkat (Subordinatif)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.4.3",
-            "subchapter_num": "3.4",
-            "title": "Kalimat Majemuk Perluasan (Klausa Relatif dengan \"yang\")",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-3.4.4",
-            "subchapter_num": "3.4",
-            "title": "Kalimat Majemuk Campuran (Kompleks)",
+            "title": "Kalimat Majemuk dan Penggabungan Kalimat",
+            "variations_count": 5,
             "isCompleted": false
           }
         ]
@@ -553,51 +216,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Kepaduan Wacana dan Pragmatik Teks",
         "subchapters": [
           {
-            "id": "ppu-4.1.1",
+            "id": "ppu-4.1",
             "subchapter_num": "4.1",
-            "title": "Piranti Kohesi Gramatikal",
+            "title": "Kohesi (Kepaduan Bentuk/Gramatikal & Leksikal)",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "ppu-4.1.2",
-            "subchapter_num": "4.1",
-            "title": "Piranti Kohesi Leksikal",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-4.2.1",
+            "id": "ppu-4.2",
             "subchapter_num": "4.2",
-            "title": "Pola Pengembangan Paragraf",
+            "title": "Koherensi (Kepaduan Makna dan Alur Gagasan)",
+            "variations_count": 8,
             "isCompleted": false
           },
           {
-            "id": "ppu-4.2.2",
-            "subchapter_num": "4.2",
-            "title": "Evaluasi Kepaduan Paragraf (Tipe Soal PPU)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-4.3.1",
+            "id": "ppu-4.3",
             "subchapter_num": "4.3",
-            "title": "Gagasan Utama, Topik, dan Simpulan",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-4.3.2",
-            "subchapter_num": "4.3",
-            "title": "Sikap, Keberpihakan, dan Tujuan Penulis",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-4.3.3",
-            "subchapter_num": "4.3",
-            "title": "Hubungan Antarparagraf",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-4.3.4",
-            "subchapter_num": "4.3",
-            "title": "Kalimat Logis dan Kalimat Sama Makna (Restatement/Parafrasa)",
+            "title": "Pemahaman Wacana Kritis dan Pragmatik",
+            "variations_count": 6,
             "isCompleted": false
           }
         ]
@@ -607,45 +243,17 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Bahasa Panda (Kriptografi Sederhana & Bahasa Buatan)",
         "subchapters": [
           {
-            "id": "ppu-5.1.1",
+            "id": "ppu-5.1",
             "subchapter_num": "5.1",
-            "title": "Metode Irisan Kata (Word Intersection)",
+            "title": "Bahasa Buatan / Terjemahan Bahasa Asing Fiktif (Artificial Language Translation)",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "ppu-5.1.2",
-            "subchapter_num": "5.1",
-            "title": "Analisis Urutan Sintaksis Bahasa Buatan",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-5.1.3",
-            "subchapter_num": "5.1",
-            "title": "Analisis Afiksasi dan Penanda Gramatikal pada Bahasa Buatan",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-5.2.1",
+            "id": "ppu-5.2",
             "subchapter_num": "5.2",
-            "title": "Sandi Geser Konstan (Caesar Cipher)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-5.2.2",
-            "subchapter_num": "5.2",
-            "title": "Sandi Geser Bertingkat / Berpola (Progressive Cipher)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-5.2.3",
-            "subchapter_num": "5.2",
-            "title": "Sandi Cermin / Balik (Atbash & Reversal Cipher)",
-            "isCompleted": false
-          },
-          {
-            "id": "ppu-5.2.4",
-            "subchapter_num": "5.2",
-            "title": "Sandi Substitusi Vokal-Konsonan dan Numerik",
+            "title": "Kriptografi Alfabet dan Sandi Geser (Ciphers)",
+            "variations_count": 5,
             "isCompleted": false
           }
         ]
@@ -662,105 +270,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Kaidah Ejaan Bahasa Indonesia (EYD Edisi V)",
         "subchapters": [
           {
-            "id": "pbm-1.1.1",
+            "id": "pbm-1.1",
             "subchapter_num": "1.1",
-            "title": "Huruf Kapital",
+            "title": "Penggunaan Huruf",
+            "variations_count": 14,
             "isCompleted": false
           },
           {
-            "id": "pbm-1.1.2",
-            "subchapter_num": "1.1",
-            "title": "Huruf Miring (Italics)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.1.3",
-            "subchapter_num": "1.1",
-            "title": "Huruf Tebal (Bold)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.2.1",
+            "id": "pbm-1.2",
             "subchapter_num": "1.2",
-            "title": "Kata Dasar dan Kata Berimbuhan",
+            "title": "Penulisan Kata",
+            "variations_count": 24,
             "isCompleted": false
           },
           {
-            "id": "pbm-1.2.2",
-            "subchapter_num": "1.2",
-            "title": "Gabungan Kata (Kata Majemuk)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.2.3",
-            "subchapter_num": "1.2",
-            "title": "Pemenggalan Kata (Suku Kata)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.2.4",
-            "subchapter_num": "1.2",
-            "title": "Kata Depan (Preposisi: di, ke, dari)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.2.5",
-            "subchapter_num": "1.2",
-            "title": "Partikel (-lah, -kah, -tah, pun, per)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.2.6",
-            "subchapter_num": "1.2",
-            "title": "Singkatan dan Akronim",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.2.7",
-            "subchapter_num": "1.2",
-            "title": "Angka dan Bilangan",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.3.1",
+            "id": "pbm-1.3",
             "subchapter_num": "1.3",
-            "title": "Tanda Titik (.)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.3.2",
-            "subchapter_num": "1.3",
-            "title": "Tanda Koma (,)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.3.3",
-            "subchapter_num": "1.3",
-            "title": "Tanda Titik Koma (;)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.3.4",
-            "subchapter_num": "1.3",
-            "title": "Tanda Titik Dua (:)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.3.5",
-            "subchapter_num": "1.3",
-            "title": "Tanda Hubung (-) vs Tanda Pisah (—)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.3.6",
-            "subchapter_num": "1.3",
-            "title": "Tanda Petik (\"...\") vs Tanda Petik Tunggal ('...')",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-1.3.7",
-            "subchapter_num": "1.3",
-            "title": "Tanda Kurung ((...)), Kurung Siku ([...]), dan Garis Miring (/)",
+            "title": "Penggunaan Tanda Baca (Pungtuasi)",
+            "variations_count": 17,
             "isCompleted": false
           }
         ]
@@ -770,33 +297,17 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Kekayaan Leksikon (Kata Baku & Serapan KBBI)",
         "subchapters": [
           {
-            "id": "pbm-2.1.1",
+            "id": "pbm-2.1",
             "subchapter_num": "2.1",
-            "title": "Pola Kesalahan Ejaan Vokal dan Konsonan yang Sering Muncul di UTBK",
+            "title": "Kata Baku dan Tidak Baku (Standard vs Non-Standard Vocabulary)",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "pbm-2.1.2",
-            "subchapter_num": "2.1",
-            "title": "Pasangan Kata Mirip dan Pengecoh Semantik",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-2.2.1",
+            "id": "pbm-2.2",
             "subchapter_num": "2.2",
-            "title": "Penyerapan melalui Adaptasi (Penyesuaian Ejaan dan Lafal)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-2.2.2",
-            "subchapter_num": "2.2",
-            "title": "Penyerapan melalui Penerjemahan Konsep",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-2.2.3",
-            "subchapter_num": "2.2",
-            "title": "Penyerapan Utuh (Adopsi)",
+            "title": "Kaidah Penyerapan Unsur Asing (Pedoman Umum Pembentukan Istilah)",
+            "variations_count": 8,
             "isCompleted": false
           }
         ]
@@ -806,57 +317,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Kalimat Efektif dan Penyuntingan Sintaksis",
         "subchapters": [
           {
-            "id": "pbm-3.1.1",
+            "id": "pbm-3.1",
             "subchapter_num": "3.1",
-            "title": "Jebakan Preposisi di Depan Subjek",
+            "title": "Kesepadanan Struktur (Kelengkapan Subjek dan Predikat)",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "pbm-3.1.2",
-            "subchapter_num": "3.1",
-            "title": "Jebakan Konjungsi Perluasan \"Yang\" di Depan Predikat",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-3.1.3",
-            "subchapter_num": "3.1",
-            "title": "Jebakan Anak Kalimat Tunggal Tanpa Induk Kalimat",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-3.2.1",
+            "id": "pbm-3.2",
             "subchapter_num": "3.2",
-            "title": "Kesejajaran Kategori Kelas Kata dan Imbuhan dalam Pemerincian",
+            "title": "Keparalelan Bentuk (Kesejajaran / Parallelism)",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
-            "id": "pbm-3.3.1",
+            "id": "pbm-3.3",
             "subchapter_num": "3.3",
-            "title": "Penghilangan Pengulangan Subjek yang Sama",
+            "title": "Kehematan Kata (Menghindari Pleonasme dan Redundansi)",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "pbm-3.3.2",
-            "subchapter_num": "3.3",
-            "title": "Penghilangan Bentuk Jamak Ganda",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-3.3.3",
-            "subchapter_num": "3.3",
-            "title": "Penghilangan Sinonim Ganda dan Hipernim-Hiponim Bersamaan",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-3.4.1",
+            "id": "pbm-3.4",
             "subchapter_num": "3.4",
-            "title": "Kelogisan Makna (Penalaran Kalimat)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-3.4.2",
-            "subchapter_num": "3.4",
-            "title": "Kecermatan (Menghindari Ambiguitas / Tafsir Ganda)",
+            "title": "Kelogisan, Kecermatan, dan Ketegasan Makna",
+            "variations_count": 6,
             "isCompleted": false
           }
         ]
@@ -866,33 +351,17 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Konjungsi dan Penggabungan Kalimat",
         "subchapters": [
           {
-            "id": "pbm-4.1.1",
+            "id": "pbm-4.1",
             "subchapter_num": "4.1",
-            "title": "Konjungsi Koordinatif (Setara)",
+            "title": "Konjungsi Intrakalimat",
+            "variations_count": 17,
             "isCompleted": false
           },
           {
-            "id": "pbm-4.1.2",
-            "subchapter_num": "4.1",
-            "title": "Konjungsi Korelatif (Berpasangan Tetap)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-4.1.3",
-            "subchapter_num": "4.1",
-            "title": "Konjungsi Subordinatif (Bertingkat)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-4.2.1",
+            "id": "pbm-4.2",
             "subchapter_num": "4.2",
-            "title": "Klasifikasi Fungsi Logis Konjungsi Antarkalimat",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-4.2.2",
-            "subchapter_num": "4.2",
-            "title": "Larangan Konjungsi Intrakalimat di Awal Kalimat",
+            "title": "Konjungsi Antarkalimat (Transisi Wacana)",
+            "variations_count": 7,
             "isCompleted": false
           }
         ]
@@ -902,33 +371,17 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Retorika dan Pengembangan Paragraf (Menulis)",
         "subchapters": [
           {
-            "id": "pbm-5.1.1",
+            "id": "pbm-5.1",
             "subchapter_num": "5.1",
-            "title": "Syarat Judul Teks yang Baik dan Benar",
+            "title": "Penentuan Judul, Topik, dan Gagasan Pokok Tulisan",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "pbm-5.1.2",
-            "subchapter_num": "5.1",
-            "title": "Menyusun Kerangka dan Ilustrasi Penjelas",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-5.2.1",
+            "id": "pbm-5.2",
             "subchapter_num": "5.2",
-            "title": "Melengkapi Teks Rumpang (Kata, Frasa, Klausa, dan Kalimat)",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-5.2.2",
-            "subchapter_num": "5.2",
-            "title": "Penggabungan Dua Kalimat Tunggal Menjadi Kalimat Majemuk",
-            "isCompleted": false
-          },
-          {
-            "id": "pbm-5.2.3",
-            "subchapter_num": "5.2",
-            "title": "Penghilangan Kalimat yang Mengganggu Koherensi",
+            "title": "Penyuntingan Tingkat Wacana (Cloze Test & Rekonstruksi Teks)",
+            "variations_count": 4,
             "isCompleted": false
           }
         ]
@@ -945,69 +398,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Teori Bilangan dan Himpunan",
         "subchapters": [
           {
-            "id": "pk-1.1.1",
+            "id": "pk-1.1",
             "subchapter_num": "1.1",
-            "title": "Klasifikasi Bilangan",
+            "title": "Sistem dan Sifat Bilangan Bulat",
+            "variations_count": 9,
             "isCompleted": false
           },
           {
-            "id": "pk-1.1.2",
-            "subchapter_num": "1.1",
-            "title": "Keterbagian (Divisibility Rules)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-1.1.3",
-            "subchapter_num": "1.1",
-            "title": "FPB, KPK, dan Aritmetika Modulo Dasar",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-1.2.1",
+            "id": "pk-1.2",
             "subchapter_num": "1.2",
-            "title": "Operasi Pecahan dan Desimal",
+            "title": "Pecahan, Desimal, dan Bentuk Baku",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
-            "id": "pk-1.2.2",
-            "subchapter_num": "1.2",
-            "title": "Perbandingan dan Pengurutan Nilai Pecahan",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-1.3.1",
+            "id": "pk-1.3",
             "subchapter_num": "1.3",
-            "title": "Sifat-Sifat Eksponen",
+            "title": "Eksponen (Bilangan Berpangkat), Bentuk Akar, dan Logaritma Dasar",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "pk-1.3.2",
-            "subchapter_num": "1.3",
-            "title": "Bentuk Akar (Radikal)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-1.3.3",
-            "subchapter_num": "1.3",
-            "title": "Sifat Logaritma Dasar (Pengayaan PK)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-1.4.1",
+            "id": "pk-1.4",
             "subchapter_num": "1.4",
-            "title": "Konsep Dasar dan Representasi Himpunan",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-1.4.2",
-            "subchapter_num": "1.4",
-            "title": "Operasi Himpunan",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-1.4.3",
-            "subchapter_num": "1.4",
-            "title": "Prinsip Inklusi-Eksklusi (Kardinalitas Himpunan)",
+            "title": "Himpunan dan Diagram Venn",
+            "variations_count": 5,
             "isCompleted": false
           }
         ]
@@ -1017,87 +432,45 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Aljabar, Fungsi, dan Matriks",
         "subchapters": [
           {
-            "id": "pk-2.1.1",
+            "id": "pk-2.1",
             "subchapter_num": "2.1",
-            "title": "Manipulasi dan Pemfaktoran Aljabar",
+            "title": "Bentuk Aljabar dan Operasi Simbolik Khusus",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "pk-2.1.2",
-            "subchapter_num": "2.1",
-            "title": "Operasi Biner / Simbolik Buatan (Custom Operators)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.2.1",
+            "id": "pk-2.2",
             "subchapter_num": "2.2",
-            "title": "Persamaan dan Pertidaksamaan Linear",
+            "title": "Persamaan dan Pertidaksamaan (Linear, Mutlak, Pecahan, Irasional)",
+            "variations_count": 7,
             "isCompleted": false
           },
           {
-            "id": "pk-2.2.2",
-            "subchapter_num": "2.2",
-            "title": "Persamaan dan Pertidaksamaan Nilai Mutlak",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.2.3",
-            "subchapter_num": "2.2",
-            "title": "Pertidaksamaan Kuadrat, Rasional (Pecahan), dan Irasional (Bentuk Akar)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.3.1",
+            "id": "pk-2.3",
             "subchapter_num": "2.3",
-            "title": "Akar-Akar Persamaan Kuadrat (ax² + bx + c = 0)",
+            "title": "Persamaan dan Fungsi Kuadrat",
+            "variations_count": 8,
             "isCompleted": false
           },
           {
-            "id": "pk-2.3.2",
-            "subchapter_num": "2.3",
-            "title": "Karakteristik Grafik Fungsi Kuadrat (f(x) = ax² + bx + c)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.4.1",
+            "id": "pk-2.4",
             "subchapter_num": "2.4",
-            "title": "Konsep Fungsi, Domain, dan Range",
+            "title": "Relasi, Fungsi, Komposisi, dan Invers",
+            "variations_count": 7,
             "isCompleted": false
           },
           {
-            "id": "pk-2.4.2",
-            "subchapter_num": "2.4",
-            "title": "Fungsi Komposisi",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.4.3",
-            "subchapter_num": "2.4",
-            "title": "Fungsi Invers",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.5.1",
+            "id": "pk-2.5",
             "subchapter_num": "2.5",
-            "title": "Barisan dan Deret Aritmetika",
+            "title": "Barisan dan Deret (Aritmetika, Geometri, & Teleskopik)",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "pk-2.5.2",
-            "subchapter_num": "2.5",
-            "title": "Barisan dan Deret Geometri",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.6.1",
+            "id": "pk-2.6",
             "subchapter_num": "2.6",
-            "title": "Konsep dan Operasi Aljabar Matriks",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-2.6.2",
-            "subchapter_num": "2.6",
-            "title": "Determinan, Invers, dan Persamaan Matriks Ordo 2×2",
+            "title": "Matriks dan Transformasi Geometri Dasar",
+            "variations_count": 5,
             "isCompleted": false
           }
         ]
@@ -1107,75 +480,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Geometri (Datar, Ruang, Analitik, & Trigonometri Dasar)",
         "subchapters": [
           {
-            "id": "pk-3.1.1",
+            "id": "pk-3.1",
             "subchapter_num": "3.1",
-            "title": "Hubungan Garis dan Sudut",
-            "isCompleted": true
-          },
-          {
-            "id": "pk-3.1.2",
-            "subchapter_num": "3.1",
-            "title": "Segitiga dan Teorema Pythagoras",
+            "title": "Sudut, Garis, dan Bangun Datar (Geometri Euklides)",
+            "variations_count": 17,
             "isCompleted": false
           },
           {
-            "id": "pk-3.1.3",
-            "subchapter_num": "3.1",
-            "title": "Kesebangunan dan Kekongruenan",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-3.1.4",
-            "subchapter_num": "3.1",
-            "title": "Segiempat, Poligon, dan Luas Daerah Diarsir",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-3.1.5",
-            "subchapter_num": "3.1",
-            "title": "Lingkaran",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-3.2.1",
+            "id": "pk-3.2",
             "subchapter_num": "3.2",
-            "title": "Volume dan Luas Permukaan Bangun Ruang",
+            "title": "Geometri Ruang (Dimensi Tiga)",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "pk-3.2.2",
-            "subchapter_num": "3.2",
-            "title": "Kedudukan dan Jarak pada Kubus & Balok",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-3.3.1",
+            "id": "pk-3.3",
             "subchapter_num": "3.3",
-            "title": "Titik dan Jarak pada Bidang Kartesius",
+            "title": "Geometri Koordinat Kartesius dan Persamaan Garis Lurus",
+            "variations_count": 7,
             "isCompleted": false
           },
           {
-            "id": "pk-3.3.2",
-            "subchapter_num": "3.3",
-            "title": "Gradien (Kemiringan) dan Persamaan Garis Lurus",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-3.3.3",
-            "subchapter_num": "3.3",
-            "title": "Transformasi Geometri pada Titik dan Garis",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-3.4.1",
+            "id": "pk-3.4",
             "subchapter_num": "3.4",
-            "title": "Perbandingan Trigonometri Segitiga Siku-Siku dan Sudut Istimewa",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-3.4.2",
-            "subchapter_num": "3.4",
-            "title": "Aturan Sinus, Aturan Kosinus, dan Luas Segitiga Trigonometri",
+            "title": "Trigonometri Dasar",
+            "variations_count": 6,
             "isCompleted": false
           }
         ]
@@ -1185,51 +514,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Statistika, Kombinatorika, dan Peluang",
         "subchapters": [
           {
-            "id": "pk-4.1.1",
+            "id": "pk-4.1",
             "subchapter_num": "4.1",
-            "title": "Ukuran Pemusatan Data (Data Tunggal dan Tabel Frekuensi)",
+            "title": "Statistika Deskriptif",
+            "variations_count": 7,
             "isCompleted": false
           },
           {
-            "id": "pk-4.1.2",
-            "subchapter_num": "4.1",
-            "title": "Ukuran Letak dan Penyebaran Data",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-4.1.3",
-            "subchapter_num": "4.1",
-            "title": "Analisis Perubahan Parameter Statistik",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-4.2.1",
+            "id": "pk-4.2",
             "subchapter_num": "4.2",
-            "title": "Aturan Penjumlahan dan Aturan Perkalian (Filling Slots)",
+            "title": "Kaidah Pencacahan (Combinatorics)",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "pk-4.2.2",
-            "subchapter_num": "4.2",
-            "title": "Permutasi (Memperhatikan Urutan: AB ≠ BA)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-4.2.3",
-            "subchapter_num": "4.2",
-            "title": "Kombinasi (Tidak Memperhatikan Urutan: AB = BA)",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-4.3.1",
+            "id": "pk-4.3",
             "subchapter_num": "4.3",
-            "title": "Peluang Kejadian Tunggal dan Komplemen",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-4.3.2",
-            "subchapter_num": "4.3",
-            "title": "Peluang Kejadian Majemuk",
+            "title": "Teori Peluang (Probability)",
+            "variations_count": 7,
             "isCompleted": false
           }
         ]
@@ -1239,33 +541,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Format Khusus Penalaran Soal PK UTBK",
         "subchapters": [
           {
-            "id": "pk-5.1.1",
+            "id": "pk-5.1",
             "subchapter_num": "5.1",
-            "title": "Mekanisme dan Logika Pilihan Jawaban (A, B, C, D, E)",
+            "title": "Analisis Kecukupan Data (Data Sufficiency)",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "pk-5.1.2",
-            "subchapter_num": "5.1",
-            "title": "Jebakan Klasik Kecukupan Data",
-            "isCompleted": false
-          },
-          {
-            "id": "pk-5.2.1",
+            "id": "pk-5.2",
             "subchapter_num": "5.2",
-            "title": "Strategi Evaluasi P dan Q",
+            "title": "Analisis Perbandingan Dua Kuantitas (Hubungan P dan Q)",
+            "variations_count": 2,
             "isCompleted": false
           },
           {
-            "id": "pk-5.3.1",
+            "id": "pk-5.3",
             "subchapter_num": "5.3",
-            "title": "Teknik Eliminasi Cepat Berpasangan",
+            "title": "Evaluasi Kebenaran Empat Pernyataan (1), (2), (3), dan (4)",
+            "variations_count": 2,
             "isCompleted": false
           },
           {
-            "id": "pk-5.4.1",
+            "id": "pk-5.4",
             "subchapter_num": "5.4",
-            "title": "Presisi Komputasi Tanpa Opsi Pilihan Ganda",
+            "title": "Soal Isian Singkat Numerik",
+            "variations_count": 1,
             "isCompleted": false
           }
         ]
@@ -1282,51 +582,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Kompetensi Kognitif Literasi Membaca (Taksonomi AKM & PISA)",
         "subchapters": [
           {
-            "id": "lbi-1.1.1",
+            "id": "lbi-1.1",
             "subchapter_num": "1.1",
-            "title": "Ekstraksi Informasi Eksplisit (Tersurat)",
+            "title": "Menemukan dan Mengakses Informasi (Retrieve and Access)",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "lbi-1.1.2",
-            "subchapter_num": "1.1",
-            "title": "Verifikasi Pernyataan Tunggal dan Majemuk (Benar/Salah & Sesuai/Tidak Sesuai)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-1.2.1",
+            "id": "lbi-1.2",
             "subchapter_num": "1.2",
-            "title": "Penarikan Inferensi (Simpulan Tersirat)",
+            "title": "Menginterpretasi dan Mengintegrasikan Informasi (Interpret and Integrate)",
+            "variations_count": 8,
             "isCompleted": false
           },
           {
-            "id": "lbi-1.2.2",
-            "subchapter_num": "1.2",
-            "title": "Hierarki Gagasan dan Struktur Makro Wacana",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-1.2.3",
-            "subchapter_num": "1.2",
-            "title": "Hubungan Logis Antarbagian Teks",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-1.3.1",
+            "id": "lbi-1.3",
             "subchapter_num": "1.3",
-            "title": "Analisis Fakta, Opini, dan Asumsi dalam Wacana",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-1.3.2",
-            "subchapter_num": "1.3",
-            "title": "Evaluasi Kualitas dan Kredibilitas Argumen",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-1.3.3",
-            "subchapter_num": "1.3",
-            "title": "Refleksi dan Aplikasi Kontekstual (Problem Solving)",
+            "title": "Mengevaluasi dan Merefleksikan Informasi (Evaluate and Reflect)",
+            "variations_count": 8,
             "isCompleted": false
           }
         ]
@@ -1336,51 +609,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Literasi Teks Informasi dan Saintifik (Nonfiksi)",
         "subchapters": [
           {
-            "id": "lbi-2.1.1",
+            "id": "lbi-2.1",
             "subchapter_num": "2.1",
-            "title": "Teks Eksposisi dan Artikel Ilmiah Populer",
+            "title": "Karakteristik Genre Teks Nonfiksi dalam LBI",
+            "variations_count": 6,
             "isCompleted": false
           },
           {
-            "id": "lbi-2.1.2",
-            "subchapter_num": "2.1",
-            "title": "Teks Eksplanasi (Fenomena Alam dan Sosial)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-2.1.3",
-            "subchapter_num": "2.1",
-            "title": "Teks Argumentasi dan Editorial / Opini Tajuk Rencana",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-2.1.4",
-            "subchapter_num": "2.1",
-            "title": "Teks Biografi dan Sejarah",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-2.2.1",
+            "id": "lbi-2.2",
             "subchapter_num": "2.2",
-            "title": "Komparasi Sudut Pandang dan Fokus Pembahasan",
+            "title": "Sintesis Multi-Teks (Wacana Ganda: Teks 1 & Teks 2)",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "lbi-2.2.2",
-            "subchapter_num": "2.2",
-            "title": "Hubungan Komplemen Antar-Teks",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-2.3.1",
+            "id": "lbi-2.3",
             "subchapter_num": "2.3",
-            "title": "Integrasi Teks Verbal dan Visualisasi Data",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-2.3.2",
-            "subchapter_num": "2.3",
-            "title": "Pembacaan Bagan Alir (Flowchart), Siklus, dan Denah",
+            "title": "Literasi Teks Multimodal (Infografis, Tabel, dan Bagan Alir)",
+            "variations_count": 3,
             "isCompleted": false
           }
         ]
@@ -1390,57 +636,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Literasi Teks Sastra dan Narasi Fiksi",
         "subchapters": [
           {
-            "id": "lbi-3.1.1",
+            "id": "lbi-3.1",
             "subchapter_num": "3.1",
-            "title": "Tema dan Amanat (Pesan Moral)",
+            "title": "Analisis Unsur Intrinsik Prosa (Cerpen dan Kutipan Novel)",
+            "variations_count": 16,
             "isCompleted": false
           },
           {
-            "id": "lbi-3.1.2",
-            "subchapter_num": "3.1",
-            "title": "Tokoh dan Penokohan (Karakterisasi)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-3.1.3",
-            "subchapter_num": "3.1",
-            "title": "Alur (Plot) dan Konflik",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-3.1.4",
-            "subchapter_num": "3.1",
-            "title": "Latar (Setting) dan Suasana",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-3.1.5",
-            "subchapter_num": "3.1",
-            "title": "Sudut Pandang (Point of View / POV)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-3.2.1",
+            "id": "lbi-3.2",
             "subchapter_num": "3.2",
-            "title": "Makna Simbolik dan Ungkapan Kontekstual dalam Narasi",
+            "title": "Bahasa Kias, Simbolisme, dan Citraan dalam Sastra",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
-            "id": "lbi-3.2.2",
-            "subchapter_num": "3.2",
-            "title": "Citraan / Imaji (Imagery)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-3.3.1",
+            "id": "lbi-3.3",
             "subchapter_num": "3.3",
-            "title": "Identifikasi Nilai-Nilai dalam Kutipan Novel/Cerpen",
-            "isCompleted": false
-          },
-          {
-            "id": "lbi-3.3.2",
-            "subchapter_num": "3.3",
-            "title": "Relevansi Karya Sastra dengan Kehidupan Sehari-hari",
+            "title": "Unsur Ekstrinsik dan Nilai-Nilai Kehidupan Karya Sastra",
+            "variations_count": 6,
             "isCompleted": false
           }
         ]
@@ -1457,57 +670,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Macro-Skills & Global Comprehension (Pemahaman Makro Wacana)",
         "subchapters": [
           {
-            "id": "lbe-1.1.1",
+            "id": "lbe-1.1",
             "subchapter_num": "1.1",
-            "title": "Identifying the Topic / Subject Matter of the Passage",
+            "title": "Topic, Main Idea, and Best Title",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "lbe-1.1.2",
-            "subchapter_num": "1.1",
-            "title": "Main Idea of the Passage vs Main Idea of a Specific Paragraph",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-1.1.3",
-            "subchapter_num": "1.1",
-            "title": "Determining the Best Title",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-1.2.1",
+            "id": "lbe-1.2",
             "subchapter_num": "1.2",
-            "title": "Overall Purpose of the Text",
+            "title": "Author's Purpose and Primary Objective",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
-            "id": "lbe-1.2.2",
-            "subchapter_num": "1.2",
-            "title": "Rhetorical Function of Specific Sentences or Paragraphs",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-1.3.1",
+            "id": "lbe-1.3",
             "subchapter_num": "1.3",
-            "title": "Preceding and Following Paragraphs",
+            "title": "Text Organization, Coherence, and Paragraph Transition",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "lbe-1.3.2",
-            "subchapter_num": "1.3",
-            "title": "Organizational Patterns of Paragraphs",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-1.3.3",
-            "subchapter_num": "1.3",
-            "title": "Sentence Insertion and Coherence",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-1.4.1",
+            "id": "lbe-1.4",
             "subchapter_num": "1.4",
-            "title": "Selecting the Best Summary",
+            "title": "Summary and Synthesis of the Passage",
+            "variations_count": 2,
             "isCompleted": false
           }
         ]
@@ -1517,57 +704,31 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Micro-Skills, Details, & Lexical Precision (Pemahaman Detail & Bahasa)",
         "subchapters": [
           {
-            "id": "lbe-2.1.1",
+            "id": "lbe-2.1",
             "subchapter_num": "2.1",
-            "title": "Stated Detail Questions (Positive Factual Information)",
+            "title": "Stated and Unstated Details (Informasi Tersurat)",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "lbe-2.1.2",
-            "subchapter_num": "2.1",
-            "title": "Unstated Detail / Negative Factual Questions (NOT / EXCEPT / FALSE)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-2.1.3",
-            "subchapter_num": "2.1",
-            "title": "Who, Where, and When Identification",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-2.2.1",
+            "id": "lbe-2.2",
             "subchapter_num": "2.2",
-            "title": "Deconstructing Complex Academic Sentences",
+            "title": "Restatement and Paraphrasing (Kalimat Sama Makna)",
+            "variations_count": 2,
             "isCompleted": false
           },
           {
-            "id": "lbe-2.2.2",
-            "subchapter_num": "2.2",
-            "title": "Identifying Equivalent Logical Relations in Restatement",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-2.3.1",
+            "id": "lbe-2.3",
             "subchapter_num": "2.3",
-            "title": "Structural and Contextual Clues",
+            "title": "Vocabulary in Context and Idiomatic Expressions",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "lbe-2.3.2",
-            "subchapter_num": "2.3",
-            "title": "Polysemy (Multiple-Meaning Words in Academic Context)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-2.3.3",
-            "subchapter_num": "2.3",
-            "title": "Word Formation (Affixation & Roots)",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-2.4.1",
+            "id": "lbe-2.4",
             "subchapter_num": "2.4",
-            "title": "Tracking Backward and Forward References",
+            "title": "Referents (Pronoun and Demonstrative Reference)",
+            "variations_count": 2,
             "isCompleted": false
           }
         ]
@@ -1577,45 +738,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Critical Reading, Inference, & Pragmatics (Penalaran Kritis)",
         "subchapters": [
           {
-            "id": "lbe-3.1.1",
+            "id": "lbe-3.1",
             "subchapter_num": "3.1",
-            "title": "Drawing Logical Inferences (It can be inferred / implied / concluded that...)",
+            "title": "Inference, Implication, and Prediction",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
-            "id": "lbe-3.1.2",
-            "subchapter_num": "3.1",
-            "title": "Hypothetical and Predictive Questions",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-3.2.1",
+            "id": "lbe-3.2",
             "subchapter_num": "3.2",
-            "title": "Classification of Author's Tone and Attitude",
+            "title": "Author's Tone, Attitude, and Stance",
+            "variations_count": 4,
             "isCompleted": false
           },
           {
-            "id": "lbe-3.2.2",
-            "subchapter_num": "3.2",
-            "title": "Identifying Lexical Indicators of Attitude",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-3.3.1",
+            "id": "lbe-3.3",
             "subchapter_num": "3.3",
-            "title": "Distinguishing Fact from Opinion in English Texts",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-3.3.2",
-            "subchapter_num": "3.3",
-            "title": "Identifying Unstated Assumptions",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-3.3.3",
-            "subchapter_num": "3.3",
-            "title": "Determining Source of the Text, Field of Study, and Target Audience",
+            "title": "Fact vs Opinion, Assumptions, and Target Audience",
+            "variations_count": 3,
             "isCompleted": false
           }
         ]
@@ -1625,45 +765,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Multi-Text Synthesis, Forum Threads, & Infographics (Format Khusus SNBT)",
         "subchapters": [
           {
-            "id": "lbe-4.1.1",
+            "id": "lbe-4.1",
             "subchapter_num": "4.1",
-            "title": "Mapping Commenters' Stances (Pro, Contra, Neutral, Conditional)",
+            "title": "Online Discussion Threads / Opinion Forums (Format Khas LBE SNBT)",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "lbe-4.1.2",
-            "subchapter_num": "4.1",
-            "title": "Analyzing Interactions Between Commenters",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-4.1.3",
-            "subchapter_num": "4.1",
-            "title": "Evaluating Relevance and Tone of Posts",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-4.1.4",
-            "subchapter_num": "4.1",
-            "title": "Synthesizing the Thread Discussion",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-4.2.1",
+            "id": "lbe-4.2",
             "subchapter_num": "4.2",
-            "title": "Identifying the Relationship Between Two Texts",
+            "title": "Paired Passages (Text 1 and Text 2 Comparison)",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
-            "id": "lbe-4.2.2",
-            "subchapter_num": "4.2",
-            "title": "Cross-Text Synthesis and Shared Ideas",
-            "isCompleted": false
-          },
-          {
-            "id": "lbe-4.3.1",
+            "id": "lbe-4.3",
             "subchapter_num": "4.3",
-            "title": "Integrating Visual Data with Reading Passages",
+            "title": "Multimodal Texts (Tables, Charts, Diagrams, and Infographics in English)",
+            "variations_count": 2,
             "isCompleted": false
           }
         ]
@@ -1680,69 +799,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Bilangan dan Aritmetika Terapan (Quantity & Number in Context)",
         "subchapters": [
           {
-            "id": "pm-1.1.1",
+            "id": "pm-1.1",
             "subchapter_num": "1.1",
-            "title": "Harga Jual, Harga Beli, Untung, dan Rugi",
+            "title": "Aritmetika Sosial, Finansial, dan Perdagangan",
+            "variations_count": 11,
             "isCompleted": false
           },
           {
-            "id": "pm-1.1.2",
-            "subchapter_num": "1.1",
-            "title": "Diskon (Rabat), Pajak, dan Skema Promosi Bertingkat",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.1.3",
-            "subchapter_num": "1.1",
-            "title": "Bruto, Neto, dan Tara dalam Pengemasan Logistik",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.1.4",
-            "subchapter_num": "1.1",
-            "title": "Bunga Tunggal, Bunga Majemuk, dan Angsuran Pinjaman/Tabungan",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.2.1",
+            "id": "pm-1.2",
             "subchapter_num": "1.2",
-            "title": "Perbandingan Senilai dan Berbalik Nilai dalam Proyek",
+            "title": "Rasio, Proporsi, Laju, dan Perbandingan Kontekstual",
+            "variations_count": 9,
             "isCompleted": false
           },
           {
-            "id": "pm-1.2.2",
-            "subchapter_num": "1.2",
-            "title": "Laju Kerja Gabungan (Combined Work Rate) dan Debit Aliran",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.2.3",
-            "subchapter_num": "1.2",
-            "title": "Kecepatan, Jarak, dan Waktu (Kinematika Kontekstual)",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.2.4",
-            "subchapter_num": "1.2",
-            "title": "Skala Peta, Denah Arsitektur, dan Maket",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.3.1",
+            "id": "pm-1.3",
             "subchapter_num": "1.3",
-            "title": "Aplikasi Barisan dan Deret Aritmetika di Dunia Nyata",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.3.2",
-            "subchapter_num": "1.3",
-            "title": "Aplikasi Barisan dan Deret Geometri di Dunia Nyata",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-1.3.3",
-            "subchapter_num": "1.3",
-            "title": "Siklus Kalender, Jadwal Berkala, dan KPK Kontekstual",
+            "title": "Pola Bilangan dan Barisan Kontekstual",
+            "variations_count": 5,
             "isCompleted": false
           }
         ]
@@ -1752,39 +826,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Aljabar dan Fungsi dalam Pemodelan Nyata (Change & Relationships)",
         "subchapters": [
           {
-            "id": "pm-2.1.1",
+            "id": "pm-2.1",
             "subchapter_num": "2.1",
-            "title": "Alokasi Sumber Daya, Tarif, dan Paket Pembelian",
+            "title": "Pemodelan Sistem Persamaan Linear (SPLDV & SPLTV)",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
-            "id": "pm-2.1.2",
-            "subchapter_num": "2.1",
-            "title": "Masalah Usia, Bilangan, dan Pertukaran Kuantitas",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-2.2.1",
+            "id": "pm-2.2",
             "subchapter_num": "2.2",
-            "title": "Pemodelan Kendala Kapasitas dan Anggaran (Constraints)",
+            "title": "Pertidaksamaan Linear dan Optimasi Program Linear Dasar",
+            "variations_count": 2,
             "isCompleted": false
           },
           {
-            "id": "pm-2.2.2",
-            "subchapter_num": "2.2",
-            "title": "Optimasi Laba Maksimum dan Biaya Minimum",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-2.3.1",
+            "id": "pm-2.3",
             "subchapter_num": "2.3",
-            "title": "Fungsi Biaya, Penerimaan, dan Keuntungan",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-2.3.2",
-            "subchapter_num": "2.3",
-            "title": "Aplikasi Nilai Ekstrem (Maksimum/Minimum) Fungsi Kuadrat",
+            "title": "Pemodelan Fungsi Linear dan Fungsi Kuadrat Terapan",
+            "variations_count": 4,
             "isCompleted": false
           }
         ]
@@ -1794,51 +853,24 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Geometri dan Pengukuran Kontekstual (Space & Shape)",
         "subchapters": [
           {
-            "id": "pm-3.1.1",
+            "id": "pm-3.1",
             "subchapter_num": "3.1",
-            "title": "Estimasi Material Bangunan dan Lahan",
+            "title": "Geometri Datar dalam Konstruksi dan Tata Ruang",
+            "variations_count": 7,
             "isCompleted": false
           },
           {
-            "id": "pm-3.1.2",
-            "subchapter_num": "3.1",
-            "title": "Aplikasi Teorema Pythagoras dan Kesebangunan",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-3.1.3",
-            "subchapter_num": "3.1",
-            "title": "Aplikasi Lingkaran, Roda, dan Sabuk Lilitan (Pulley/Gear)",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-3.2.1",
+            "id": "pm-3.2",
             "subchapter_num": "3.2",
-            "title": "Kapasitas Wadah, Tangki, dan Benda Celup (Hukum Archimedes Geometri)",
+            "title": "Geometri Ruang dalam Pengemasan dan Kapasitas Wadah",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "pm-3.2.2",
-            "subchapter_num": "3.2",
-            "title": "Optimasi Pengemasan Barang (3D Packing Problem)",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-3.2.3",
-            "subchapter_num": "3.2",
-            "title": "Luas Permukaan Konstruksi Atap dan Kemasan",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-3.3.1",
+            "id": "pm-3.3",
             "subchapter_num": "3.3",
-            "title": "Sudut Elevasi dan Sudut Depresi",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-3.3.2",
-            "subchapter_num": "3.3",
-            "title": "Navigasi Arah Mata Angin dan Jurusan Tiga Angka",
+            "title": "Trigonometri Kontekstual (Sudut Elevasi, Depresi, & Navigasi)",
+            "variations_count": 3,
             "isCompleted": false
           }
         ]
@@ -1848,39 +880,17 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
         "chapter_title": "Data dan Ketidakpastian dalam Skenario Nyata (Uncertainty & Data)",
         "subchapters": [
           {
-            "id": "pm-4.1.1",
+            "id": "pm-4.1",
             "subchapter_num": "4.1",
-            "title": "Interpretasi Grafik Multi-Variabel dan Tabel Silang",
+            "title": "Analisis Data Infografis dan Statistik Terapan",
+            "variations_count": 5,
             "isCompleted": false
           },
           {
-            "id": "pm-4.1.2",
-            "subchapter_num": "4.1",
-            "title": "Rata-Rata Berbobot (Weighted Average) dan Sistem Penilaian",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-4.1.3",
-            "subchapter_num": "4.1",
-            "title": "Ukuran Letak dan Sebaran dalam Konteks Populasi",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-4.2.1",
+            "id": "pm-4.2",
             "subchapter_num": "4.2",
-            "title": "Pencacahan Rute, Kode Keamanan, dan Kombinasi Menu/Jadwal",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-4.2.2",
-            "subchapter_num": "4.2",
-            "title": "Peluang dalam Kontrol Kualitas, Medis, dan Permainan/Undian",
-            "isCompleted": false
-          },
-          {
-            "id": "pm-4.2.3",
-            "subchapter_num": "4.2",
-            "title": "Nilai Harapan (Expected Value) dan Evaluasi Risiko",
+            "title": "Kombinatorika dan Peluang dalam Pengambilan Keputusan",
+            "variations_count": 6,
             "isCompleted": false
           }
         ]
