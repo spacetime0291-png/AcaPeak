@@ -52,7 +52,7 @@
         "Archetype Soal: Proyeksi nilai periode berikutnya berdasarkan tren grafik"
       ],
       "requires_svg": true,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pu/pu-1.3.json"
     },
     {
@@ -69,7 +69,7 @@
         "Archetype Soal: Ingkaran/negasi dari pernyataan majemuk bersyarat"
       ],
       "requires_svg": false,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pu/pu-2.1.json"
     },
     {
@@ -86,7 +86,7 @@
         "Archetype Soal: Relasi diagram Venn tiga himpunan kategori"
       ],
       "requires_svg": true,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pu/pu-2.2.json"
     },
     {

@@ -30,7 +30,7 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
             "subchapter_num": "1.3",
             "title": "Interpretasi Data Visual (Tabel, Grafik Batang/Garis Ganda, & Infografis)",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           }
         ]
       },
@@ -43,14 +43,14 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
             "subchapter_num": "2.1",
             "title": "Logika Proposisi (Implikasi, Ekuivalensi, Negasi, & Silogisme)",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           },
           {
             "id": "pu-2.2",
             "subchapter_num": "2.2",
             "title": "Logika Kuantor & Diagram Himpunan (Semua, Sebagian, & Ingkarannya)",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           },
           {
             "id": "pu-2.3",

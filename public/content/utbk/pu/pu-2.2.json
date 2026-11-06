@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "id": "pu-2.2",
+    "subtest": "PU",
+    "chapter_num": 2,
+    "chapter_title": "Penalaran Deduktif",
+    "subchapter_num": "2.2",
+    "subchapter_title": "Logika Kuantor & Diagram Himpunan",
+    "title": "Logika Kuantor & Diagram Himpunan (Semua, Sebagian, & Ingkarannya)",
+    "required_question_variations": [
+      "Archetype Soal: Silogisme kategorik kuantor universal (Semua) dan partikular (Sebagian)",
+      "Archetype Soal: Ingkaran dari pernyataan berkuantor",
+      "Archetype Soal: Relasi diagram Venn tiga himpunan kategori"
+    ],
+    "requires_svg": true,
+    "updated_at": "2026-11-06"
+  },
+  "content": {
+    "tactical_overview": "Di UTBK-SNBT, silogisme kategorik menguji ketepatan menarik kesimpulan dari premis berkuantor ('Semua', 'Sebagian', 'Beberapa', 'Tidak Ada'). Kunci menjawab tanpa salah: (1) Jika salah satu premis partikular ('Sebagian'), kesimpulan WAJIB partikular ('Sebagian'), (2) Dua premis partikular TIDAK DAPAT disimpulkan, dan (3) Hubungan tiga kategori paling cepat diuji dengan irisan Diagram Venn.",
+    "exam_blueprint_markdown": "### Peta Medan UTBK: 4 Hukum Silogisme Kuantor & Venn\n\n| Pola Premis di UTBK | Hasil Kesimpulan yang Sah | Rumus Eksekusi Cepat ($\\le 20$ Detik) |\n| :--- | :--- | :--- |\n| **Semua + Sebagian** | Kesimpulan WAJIB **Sebagian** | Langsung coret semua opsi yang diawali kata *'Semua'* atau *'Setiap'*. |\n| **Positif + Negatif** | Kesimpulan WAJIB **Negatif** (memuat kata *'tidak'* / *'bukan'*) | Jika salah satu premis ada negasi, kesimpulan harus bernada menyangkal. |\n| **Sebagian + Sebagian** | **TIDAK DAPAT DISIMPULKAN** | Jika kedua premis diawali 'Sebagian/Beberapa', jangan dipaksakan! Pilih opsi *'Tidak dapat ditarik kesimpulan'*. |\n| **Ingkaran Kuantor Universal** | $\\sim(\\forall x, P(x)) \\equiv \\exists x, \\sim P(x)$ | Ingkaran dari *'Semua A adalah B'* adalah *'Ada / Sebagian A yang BUKAN B'*. (Bukan 'Semua A bukan B'!). |",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-2-2",
+        "title": "Diagram Tiga Lingkaran Kategori Logika (Venn Diagram)",
+        "caption": "Irisan himpunan A, B, dan C menunjukkan daerah eksklusif dan irisan bersama untuk menguji keabsahan kesimpulan kategorik.",
+        "svg_code": "<svg viewBox=\"0 0 600 360\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <rect width=\"600\" height=\"360\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"2\"/>\n  <text x=\"300\" y=\"34\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">Diagram Venn Tiga Himpunan Kategori Logika</text>\n  \n  <!-- Set A (Top-Left, Indigo) -->\n  <circle cx=\"240\" cy=\"155\" r=\"85\" fill=\"#6366f1\" fill-opacity=\"0.18\" stroke=\"#4f46e5\" stroke-width=\"2.5\"/>\n  <text x=\"190\" y=\"110\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#4f46e5\">Himpunan A</text>\n  \n  <!-- Set B (Top-Right, Emerald) -->\n  <circle cx=\"360\" cy=\"155\" r=\"85\" fill=\"#10b981\" fill-opacity=\"0.18\" stroke=\"#059669\" stroke-width=\"2.5\"/>\n  <text x=\"410\" y=\"110\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#059669\">Himpunan B</text>\n  \n  <!-- Set C (Bottom, Amber) -->\n  <circle cx=\"300\" cy=\"225\" r=\"85\" fill=\"#f59e0b\" fill-opacity=\"0.18\" stroke=\"#d97706\" stroke-width=\"2.5\"/>\n  <text x=\"300\" y=\"325\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\">Himpunan C</text>\n  \n  <!-- Overlap Region Labels -->\n  <text x=\"300\" y=\"145\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">A ∩ B</text>\n  <text x=\"250\" y=\"215\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">A ∩ C</text>\n  <text x=\"350\" y=\"215\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\">B ∩ C</text>\n  <text x=\"300\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">A ∩ B ∩ C</text>\n  \n  <!-- Bottom Warning Box -->\n  <rect x=\"70\" y=\"328\" width=\"460\" height=\"22\" rx=\"4\" fill=\"#1e293b\"/>\n  <text x=\"300\" y=\"343\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#f8fafc\">Kaidah Emas: Irisan 'Sebagian' tidak pernah menjamin kepastian untuk seluruh anggota himpunan luar.</text>\n</svg>"
+      }
+    ],
+    "distractor_traps": [
+      "Jebakan 1: Overclaim 'Semua' dari Premis Campuran — Soal memberi premis 'Semua A adalah B' dan 'Sebagian B adalah C'. Siswa sering terkecoh memilih 'Semua A adalah C'. (Jawaban yang benar: belum tentu ada hubungan antara A dan C).",
+      "Jebakan 2: Menyamakan 'Sebagian Bukan' dengan 'Sebagian Iya' — Jika diketahui 'Sebagian atlet tidak merokok', jangan pernah otomatis mengasumsikan premis menjamin 'Sebagian atlet merokok' kecuali ditegaskan di teks.",
+      "Jebakan 3: Negasi Salah Kuantor — Menganggap ingkaran dari 'Semua siswa hadir' adalah 'Semua siswa tidak hadir'. (Ingkaran logis yang sah: 'Ada setidaknya satu siswa yang tidak hadir')."
+    ],
+    "quick_execution_algorithm": [
+      "Langkah 1: Cek kuantor pembuka pada premis (Universal: Semua/Setiap; Partikular: Sebagian/Beberapa/Ada).",
+      "Langkah 2: Terapkan eliminasi kuantor: Jika salah satu premis berkuantor 'Sebagian', langsung eliminasi seluruh opsi yang diawali kata 'Semua'.",
+      "Langkah 3: Periksa apakah term penengah (term yang muncul dua kali) berdistribusi penuh minimal satu kali; jika tidak, pilih opsi 'Tidak dapat ditarik simpulan'."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-2.2-var1",
+      "variation_name": "Archetype Soal 1: Silogisme Kategorik Premis Universal (Semua) dan Partikular (Sebagian)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua premis berikut:\n1. Semua peneliti di laboratorium bioteknologi menguasai teknik analisis sekuens DNA.\n2. Sebagian mahasiswa magang di laboratorium bioteknologi adalah peneliti.",
+      "svg_illustration": null,
+      "question_markdown": "Berdasarkan kedua premis di atas, simpulan yang **PASTI BENAR** adalah...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Semua mahasiswa magang di laboratorium bioteknologi menguasai teknik analisis sekuens DNA."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Sebagian mahasiswa magang di laboratorium bioteknologi menguasai teknik analisis sekuens DNA."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Semua orang yang menguasai teknik analisis sekuens DNA adalah mahasiswa magang."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Mahasiswa magang yang tidak menguasai teknik sekuens DNA bukan merupakan anggota laboratorium."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tidak ada mahasiswa magang di laboratorium bioteknologi yang menguasai teknik analisis sekuens DNA."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Analisis Relasi Himpunan:**\n1. Premis 1: Himpunan Peneliti ($P$) merupakan himpunan bagian dari Penguasa Sekuens DNA ($S$), ditulis $P \\subseteq S$.\n2. Premis 2: Himpunan Mahasiswa Magang ($M$) memiliki irisan dengan Himpunan Peneliti ($P$), yaitu $M \\cap P \\neq \\emptyset$.\n3. Karena anggota irisan $M \\cap P$ tersebut berada di dalam $P$, dan seluruh anggota $P$ berada di dalam $S$, maka anggota irisan tersebut otomatis berada di dalam $S$.\n4. Kesimpulan: Setidaknya ada sebagian anggota $M$ yang berada di dalam $S$, yaitu *'Sebagian mahasiswa magang menguasai teknik analisis sekuens DNA'*.",
+      "quick_trick_markdown": "**Trik 5 Detik Kuantor:**\nAturan mutlak silogisme kategorik: **Semua + Sebagian $\\implies$ SEBAGIAN**.\nCoret Opsi A dan C (diawali kata 'Semua').\nCoret Opsi E (diawali kata 'Tidak ada').\nPilihan tersisa yang valid hanyalah **B**.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Overgeneralisasi):** Premis hanya menyebut sebagian magang yang jadi peneliti, bukan semua.\n- **Opsi C Salah (Konversi Universal Ilegal):** Membalik predikat menjadi subjek universal tanpa dasar.\n- **Opsi D Salah (Menyimpulkan Status Keanggotaan):** Teks tidak membahas pemecatan anggota lab.\n- **Opsi E Salah (Kontradiksi Langsung):** Bertentangan langsung dengan irisan premis."
+    },
+    {
+      "example_id": "pu-2.2-var2",
+      "variation_name": "Archetype Soal 2: Menentukan Ingkaran / Negasi dari Kalimat Berkuantor Universal",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam sebuah rapat evaluasi kurikulum, seorang pengawas menyatakan:\n*\"Semua guru sekolah menengah di kabupaten ini telah bersertifikasi pendidik profesional.\"*",
+      "svg_illustration": null,
+      "question_markdown": "Manakah pernyataan berikut yang merupakan **INGKARAN (NEGASI)** yang sah dari pernyataan pengawas tersebut?",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Semua guru sekolah menengah di kabupaten ini belum bersertifikasi pendidik profesional."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Sebagian guru sekolah menengah di kabupaten ini belum bersertifikasi pendidik profesional."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sebagian guru sekolah menengah di kabupaten ini telah bersertifikasi pendidik profesional."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Tidak ada seorang pun guru di kabupaten ini yang mengajar di sekolah menengah."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Hanya kepala sekolah yang berhak memiliki sertifikasi pendidik profesional."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Hukum Negasi Kuantor Logika:**\n1. Pernyataan bernilai Kuantor Universal: $\\forall x, P(x)$ (*Untuk semua guru $x$, $x$ telah bersertifikasi*).\n2. Untuk membuktikan bahwa pernyataan 'Semua $P$' salah, kita tidak perlu membuktikan bahwa *seluruhnya* salah; cukup temukan **minimal satu contoh penyangkal (counter-example)**.\n3. Rumus negasi kuantor universal:\n   $$\\sim(\\forall x, P(x)) \\equiv \\exists x, \\sim P(x)$$\n4. Makna: *'Ada / Sebagian guru sekolah menengah di kabupaten ini yang belum bersertifikasi pendidik profesional'*.",
+      "quick_trick_markdown": "**Trik 5 Detik Negasi Kuantor:**\nIngat rumus pasangan ingkaran:\n- Ingkaran **SEMUA** adalah **ADA / SEBAGIAN ... TIDAK**.\n- Coret Opsi A (kata 'Semua' tidak boleh dinegasikan jadi 'Semua' lagi).\n- Opsi yang berbunyi *'Sebagian ... belum'* hanyalah **B**.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Jebakan Kebalikan Total / Polar Fallacy):** Mengubah 'Semua Iya' menjadi 'Semua Tidak' adalah lawan ekstrem, bukan ingkaran matematis.\n- **Opsi C Salah:** Ini adalah implikasi bawahan (subaltern), bukan ingkaran.\n- **Opsi D & E Salah:** Pernyataan di luar lingkup subjek guru bersertifikasi."
+    },
+    {
+      "example_id": "pu-2.2-var3",
+      "variation_name": "Archetype Soal 3: Relasi Irisan Diagram Tiga Himpunan Kategori",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Diketahui informasi mengenai sekelompok atlet di pusat pelatihan daerah:\n1. Semua atlet renang wajib mengikuti tes kebugaran kardiovaskular.\n2. Sebagian atlet yang mengikuti tes kebugaran kardiovaskular mengonsumsi suplemen elektrolit tinggi.\n3. Tidak ada atlet renang yang mengonsumsi suplemen elektrolit tinggi.\n[[SVG:svg-pu-2-2]]",
+      "svg_illustration": null,
+      "question_markdown": "Berdasarkan ketiga premis di atas, manakah simpulan yang **PASTI BENAR**?",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Sebagian atlet yang mengikuti tes kebugaran kardiovaskular bukan merupakan atlet renang."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Semua atlet yang mengonsumsi suplemen elektrolit tinggi adalah atlet renang."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Semua atlet yang mengikuti tes kebugaran kardiovaskular adalah atlet renang."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Tidak ada atlet di pusat pelatihan daerah yang mengikuti tes kebugaran kardiovaskular."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Semua atlet renang mengonsumsi suplemen elektrolit tinggi secara teratur."
+        }
+      ],
+      "correct_answer": "A",
+      "conceptual_solution_markdown": "**Analisis Irisan Tiga Kategori:**\n1. Kategori: $R$ (Atlet Renang), $K$ (Peserta Tes Kebugaran), $S$ (Pengonsumsi Suplemen Elektrolit).\n2. Premis 1: $R \\subseteq K$ (Seluruh $R$ berada di dalam $K$).\n3. Premis 2: Sebagian $K$ berada di dalam $S$ ($K \\cap S \\neq \\emptyset$). Artinya, ada anggota himpunan $K$ yang mengonsumsi suplemen.\n4. Premis 3: $R \\cap S = \\emptyset$ (Himpunan $R$ dan $S$ saling lepas / tidak beririsan sama sekali).\n5. Evaluasi Deduksi: Anggota $K$ yang mengonsumsi suplemen ($K \\cap S$) terbukti ADA (Premis 2). Karena $R$ sama sekali tidak boleh ada di $S$ (Premis 3), maka anggota $K \\cap S$ ini dipastikan **BUKAN atlet renang**.\n6. Kesimpulan: Terbukti ada anggota $K$ yang bukan $R$, yaitu *'Sebagian atlet yang mengikuti tes kebugaran kardiovaskular bukan merupakan atlet renang'*.",
+      "quick_trick_markdown": "**Trik Irisan Lepas (Disjoint Sets):**\nKelompok suplemen ($S$) beririsan dengan kebugaran ($K$), tetapi haram menyentuh renang ($R$).\nMaka irisan $K \\cap S$ pasti berada di luar lingkaran $R$.\nArtinya, pasti ada atlet peserta tes kardio yang bukan perenang $\\implies$ **A**.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi B Salah (Kontradiksi):** Premis 3 menyatakan perenang tidak ada yang minum suplemen.\n- **Opsi C Salah (Konversi Universal Ilegal):** Premis 1 hanya menyatakan $R \\subseteq K$, bukan $K \\subseteq R$.\n- **Opsi D Salah (Kontradiksi):** Tes kebugaran jelas ada dan wajib bagi perenang.\n- **Opsi E Salah (Kontradiksi Mutlak):** Bertentangan $180^\\circ$ dengan Premis 3."
+    }
+  ]
+}

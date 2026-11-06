@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "id": "pu-2.1",
+    "subtest": "PU",
+    "chapter_num": 2,
+    "chapter_title": "Penalaran Deduktif",
+    "subchapter_num": "2.1",
+    "subchapter_title": "Logika Proposisi & Silogisme",
+    "title": "Logika Proposisi (Implikasi, Ekuivalensi, Negasi, & Silogisme)",
+    "required_question_variations": [
+      "Archetype Soal: Penarikan kesimpulan silogisme 2-3 premis bersyarat",
+      "Archetype Soal: Menentukan ekuivalensi bentuk implikasi (~q -> ~p)",
+      "Archetype Soal: Ingkaran/negasi dari pernyataan majemuk bersyarat"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-06"
+  },
+  "content": {
+    "tactical_overview": "Di UTBK-SNBT, logika proposisi dan silogisme menguji kepastian mutlak penarikan kesimpulan (100% deduktif). Jangan menggunakan perasaan atau asumsi dunia nyata! Cukup terjemahkan kalimat wacana ke dalam simbol logika ($p, q, r$), lalu eksekusi menggunakan 4 rumus emas: Kontraposisi, Modus Ponens, Modus Tollens, dan Silogisme.",
+    "exam_blueprint_markdown": "### Peta Medan UTBK: 4 Rumus Logika Pasti Keluar di SNBT\n\n| Hukum Logika | Rumus Matematis | Cara Cepat di Soal UTBK ($\\le 20$ Detik) |\n| :--- | :--- | :--- |\n| **Ekuivalensi Implikasi** | $p \\implies q \\equiv \\sim q \\implies \\sim p \\equiv \\sim p \\lor q$ | Jika opsi tidak memuat $p \\implies q$, cari bentuk **kontraposisinya** (balik posisi dan negasikan keduanya). |\n| **Ingkaran / Negasi Implikasi** | $\\sim(p \\implies q) \\equiv p \\land \\sim q$ | Ingat kata kunci: **'P terjadi DAN Q tidak terjadi'**. Ingkaran implikasi BUKAN implikasi baru! |\n| **Modus Ponens & Tollens** | Ponens: $p \\implies q$ dan $p \\vdash q$<br>Tollens: $p \\implies q$ dan $\\sim q \\vdash \\sim p$ | Jika premis kedua menegaskan akibat ($q$) $\\implies$ **TIDAK SAH (Jebakan)**. Hanya sebab ($p$) atau negasi akibat ($\\sim q$) yang sah. |\n| **Silogisme 3 Premis** | $p \\implies q$, $q \\implies r$, $r \\implies s \\vdash p \\implies s$ | Sambungkan rantai panah searah: $p \\rightarrow q \\rightarrow r \\rightarrow s$. Jika ada panah putus, ubah premis dengan kontraposisi! |",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Jebakan 1: Kekeliruan Menegaskan Akibat (Affirming the Consequent) — Premis: 'Jika hujan, jalan licin'. Diberikan: 'Jalan licin'. Siswa menyimpulkan 'Hari hujan'. Ini SALAH (bisa licin karena tumpahan minyak/oli).",
+      "Jebakan 2: Kekeliruan Menyangkal Sebab (Denying the Antecedent) — Diberikan: 'Tidak hujan', siswa menyimpulkan 'Jalan tidak licin'. Ini TIDAK SAH secara kaidah logika.",
+      "Jebakan 3: Negasi Salah Bentuk — Menganggap ingkaran dari 'Jika belajar, maka lulus' adalah 'Jika tidak belajar, maka tidak lulus'. (Padahal ingkaran yang benar: 'Belajar dan tidak lulus')."
+    ],
+    "quick_execution_algorithm": [
+      "Langkah 1: Beri kode variabel pada setiap klausa kalimat ($p, q, r$).",
+      "Langkah 2: Tuliskan rantai implikasi ($p \\rightarrow q$, $q \\rightarrow r$). Jika premis berbentuk disjungsi ($a \\lor b$), ubah ke bentuk implikasi: $\\sim a \\rightarrow b$.",
+      "Langkah 3: Ambil ujung awal ($p$) dan ujung akhir ($r$), lalu cocokkan kesimpulan $p \\implies r$ atau kontraposisinya $\\sim r \\implies \\sim p$ pada opsi jawaban."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-2.1-var1",
+      "variation_name": "Archetype Soal 1: Penarikan Kesimpulan Silogisme Rantai 3 Premis Bersyarat",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Diketahui tiga premis logis berikut dari sebuah sistem seleksi beasiswa luar negeri:\n1. Jika calon penerima beasiswa memiliki skor TOEFL di atas 550, maka ia lolos tahap seleksi berkas administrasi.\n2. Jika ia lolos tahap seleksi berkas administrasi, maka ia diwajibkan mengikuti wawancara panel bersama dewan juri.\n3. Calon penerima beasiswa tidak diwajibkan mengikuti wawancara panel bersama dewan juri.",
+      "svg_illustration": null,
+      "question_markdown": "Berdasarkan ketiga premis di atas, simpulan yang **PASTI BENAR** adalah...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Calon penerima beasiswa lolos tahap seleksi berkas administrasi tetapi gagal di wawancara."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Calon penerima beasiswa tidak memiliki skor TOEFL di atas 550."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Calon penerima beasiswa memiliki skor TOEFL tepat 550."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Dewan juri membatalkan sesi wawancara panel untuk semua calon peserta beasiswa."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Calon penerima beasiswa tetap berhak mendapatkan beasiswa luar negeri tanpa tes lanjutan."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Langkah Pembuktian Deduktif Simbolis:**\n1. Simbolisasi Premis:\n   - $p$: Skor TOEFL di atas 550\n   - $q$: Lolos seleksi berkas administrasi\n   - $r$: Diwajibkan wawancara panel\n2. Susunan Premis:\n   - Premis 1: $p \\implies q$\n   - Premis 2: $q \\implies r$\n   - Premis 3: $\\sim r$ (fakta)\n3. Terapkan Silogisme Hipotetis pada Premis 1 & 2:\n   $$p \\implies q \\text{ dan } q \\implies r \\vdash p \\implies r$$\n4. Terapkan Modus Tollens dengan Premis 3:\n   - Premis Gabungan: $p \\implies r$\n   - Premis 3: $\\sim r$\n   - Simpulan: $\\sim p$ (*Calon tidak memiliki skor TOEFL di atas 550*).",
+      "quick_trick_markdown": "**Trik 10 Detik Rantai Logika:**\n$p \\rightarrow q \\rightarrow r$.\nFakta di lapangan: $\\sim r$ (akibat gugur).\nMenurut aturan **Modus Tollens**, jika ujung rantai gugur ($\\sim r$), maka pangkal rantai pasti gugur ($\\sim p$).\nLangsung cari opsi: *Tidak memiliki skor TOEFL di atas 550* $\\implies$ **B**.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Bertentangan):** Premis 2 menyatakan jika lolos berkas wajib wawancara. Karena wawancara tidak ada, maka ia otomatis tidak lolos berkas.\n- **Opsi C Salah (Spekulatif):** Teks hanya menyatakan $\\le 550$, bukan tepat 550.\n- **Opsi D & E Salah:** Informasi di luar batas logika premis yang diberikan."
+    },
+    {
+      "example_id": "pu-2.1-var2",
+      "variation_name": "Archetype Soal 2: Menentukan Bentuk Ekuivalensi Pernyataan Majemuk Implikasi",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah aturan keselamatan kerja di pabrik kimia menyatakan:\n*\"Jika sensor mendeteksi kebocoran gas beracun, maka sirene darurat berbunyi dan pintu evakuasi otomatis terbuka.\"*",
+      "svg_illustration": null,
+      "question_markdown": "Pernyataan berikut yang secara logis **EKUIVALEN** (setara maknanya) dengan aturan keselamatan kerja di atas adalah...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Jika sirene darurat berbunyi dan pintu evakuasi terbuka, maka sensor mendeteksi kebocoran gas beracun."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Jika sensor tidak mendeteksi kebocoran gas beracun, maka sirene darurat tidak berbunyi dan pintu evakuasi tidak terbuka."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Jika sirene darurat tidak berbunyi atau pintu evakuasi tidak terbuka, maka sensor tidak mendeteksi kebocoran gas beracun."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Sensor mendeteksi kebocoran gas beracun atau sirene darurat berbunyi secara serentak."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Sirene darurat hanya berbunyi jika pintu evakuasi pabrik dalam keadaan tertutup rapat."
+        }
+      ],
+      "correct_answer": "C",
+      "conceptual_solution_markdown": "**Pembuktian Hukum Kontraposisi & De Morgan:**\n1. Simbolisasi:\n   - $p$: Sensor mendeteksi kebocoran gas beracun\n   - $q$: Sirene darurat berbunyi\n   - $r$: Pintu evakuasi otomatis terbuka\n2. Bentuk aturan mula-mula:\n   $$p \\implies (q \\land r)$$\n3. Hukum Kontraposisi: Suatu implikasi ekuivalen dengan kontraposisinya:\n   $$p \\implies (q \\land r) \\equiv \\sim(q \\land r) \\implies \\sim p$$\n4. Terapkan Hukum De Morgan pada negasi konjungsi $\\sim(q \\land r)$:\n   $$\\sim(q \\land r) \\equiv \\sim q \\lor \\sim r$$\n5. Gabungkan:\n   $$(\\sim q \\lor \\sim r) \\implies \\sim p$$\n   Makna: *Jika sirene tidak berbunyi ATAU pintu evakuasi tidak terbuka, maka sensor tidak mendeteksi kebocoran gas beracun*.",
+      "quick_trick_markdown": "**Trik 15 Detik UTBK:**\nKontraposisi dari $p \\implies (q \\land r)$ adalah:\n1. Tukar posisi kiri dan kanan.\n2. Negasikan: kata *DAN* ($\\land$) berubah menjadi *ATAU* ($\\lor$).\n3. Maka negasi dari 'sirene berbunyi DAN pintu buka' adalah 'sirene tidak bunyi ATAU pintu tidak buka'. Opsi yang memuat struktur ini hanyalah **C**.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Konvers Ilegal):** Membalik tanpa negasi ($q \\implies p$) adalah sesat pikir *Affirming the Consequent*.\n- **Opsi B Salah (Invers Ilegal):** Menegasikan tanpa membalik posisi ($\\sim p \\implies \\sim q$) adalah sesat pikir *Denying the Antecedent*.\n- **Opsi D & E Salah:** Bentuk disjungsi dan kondisi baru yang tidak sesuai hukum ekuivalensi."
+    },
+    {
+      "example_id": "pu-2.1-var3",
+      "variation_name": "Archetype Soal 3: Ingkaran / Negasi Pernyataan Majemuk Bersyarat",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Seorang manajer proyek perangkat lunak membuat komitmen kerja kepada klien:\n*\"Jika seluruh modul fitur selesai diuji sebelum tanggal 15 November, maka aplikasi dapat dirilis ke publik tepat waktu.\"*",
+      "svg_illustration": null,
+      "question_markdown": "Manakah pernyataan berikut yang merupakan **INGKARAN (NEGASI)** yang sah dari komitmen manajer tersebut?",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Jika seluruh modul fitur tidak selesai diuji sebelum tanggal 15 November, maka aplikasi tidak dapat dirilis ke publik tepat waktu."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Seluruh modul fitur selesai diuji sebelum tanggal 15 November, tetapi aplikasi tidak dapat dirilis ke publik tepat waktu."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Seluruh modul fitur tidak selesai diuji sebelum tanggal 15 November dan aplikasi tidak dapat dirilis ke publik tepat waktu."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Aplikasi dapat dirilis ke publik tepat waktu meskipun modul fitur belum selesai diuji sebelum tanggal 15 November."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Jika aplikasi tidak dapat dirilis tepat waktu, maka modul fitur belum selesai diuji sebelum tanggal 15 November."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Hukum Negasi Implikasi:**\n1. Bentuk pernyataan: $p \\implies q$\n   - $p$: Seluruh modul fitur selesai diuji sebelum tanggal 15 November\n   - $q$: Aplikasi dapat dirilis ke publik tepat waktu\n2. Menurut tabel kebenaran logika formal, suatu janji/implikasi bernilai SALAH (ternegasi) HANYA jika janji ditepati di awal ($p$ benar) tetapi hasil yang dijanjikan diingkari ($q$ salah):\n   $$\\sim(p \\implies q) \\equiv p \\land \\sim q$$\n3. Terjemahan bahasa: *'Seluruh modul fitur selesai diuji sebelum tanggal 15 November DAN (tetapi) aplikasi tidak dapat dirilis ke publik tepat waktu'*.",
+      "quick_trick_markdown": "**Trik Anti-Gagal Negasi Implikasi:**\nIngat satu aturan mutlak: **Ingkaran dari 'JIKA P MAKA Q' TIDAK BOLEH MEMILIKI KATA 'JIKA' LAGI!**\nCoret langsung Opsi A dan Opsi E yang masih memakai kata 'Jika'. Cari opsi dengan pola: **P benar, TETAPI Q tidak terjadi** $\\implies$ Langsung pilih **B**.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Jebakan Invers):** Ini bentuk invers $(\\sim p \\implies \\sim q)$, bukan negasi.\n- **Opsi C Salah (Negasi Ganda Ilegal):** $\\sim p \\land \\sim q$ bukan ingkaran dari implikasi.\n- **Opsi D Salah:** Menegaskan $q$ terjadi saat $\\sim p$.\n- **Opsi E Salah (Jebakan Kontraposisi):** Ini adalah kontraposisi $(\\sim q \\implies \\sim p)$ yang bernilai ekuivalen (sama), bukan ingkaran."
+    }
+  ]
+}
