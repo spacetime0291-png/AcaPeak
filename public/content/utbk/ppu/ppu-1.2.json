@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "id": "ppu-1.2",
+    "subtest": "PPU",
+    "chapter_num": 1,
+    "chapter_title": "Kosakata & Semantik Teks",
+    "subchapter_num": "1.2",
+    "subchapter_title": "Makna Bentukan Kata & Afiksasi",
+    "title": "Makna Bentukan Kata & Afiksasi Khas UTBK",
+    "required_question_variations": [
+      "Archetype Soal: Menentukan kata yang memiliki makna imbuhan yang sama",
+      "Archetype Soal: Makna reduplikasi (kata ulang) sejenis",
+      "Archetype Soal: Perluasan dan pergeseran makna kata (ameliorasi, peyorasi, meluas, menyempit)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-06"
+  },
+  "content": {
+    "tactical_overview": "Di UTBK-SNBT, soal makna bentukan kata menguji pemahaman gramatikal terhadap afiksasi (imbuhan), reduplikasi (kata ulang), dan pergeseran semantik historis. Jangan hanya menghafal bentuk imbuhannya, melainkan bedah **makna gramatikalnya** (apakah menyatakan proses, hasil, kausatif, benefaktif, atau resiprokal).",
+    "exam_blueprint_markdown": "### Kamus Kaidah Afiksasi & Pergeseran Makna PPU UTBK\n\n| Jenis Bentukan Kata | Macam Imbuhan / Pola | Makna Gramatikal Inti | Contoh Khas di UTBK |\n| :--- | :--- | :--- | :--- |\n| **Afiksasi `peN-an` vs `per-an`** | `peN-an` (akar verba aktif: *meN-*)\\\\`per-an` (akar verba berimbuhan *ber-* / nominal) | `peN-an` = **Proses melakukan sesuatu**\\\\`per-an` = **Hal / Masalah / Daerah / Hasil** | *Pembangunan* gedung (proses membangun) vs *Perumahan* elite (tempat/kompleks). |\n| **Sufiks `-kan` (Kausatif vs Benefaktif)** | `meN- + dasar + -kan` | **Kausatif:** Menyebabkan jadi\\\\**Benefaktif:** Melakukan untuk orang lain | Kausatif: *melebarkan* jalan (membuat jadi lebar).\\\\Benefaktif: *membelikan* adik baju (membeli untuk adik). |\n| **Prefiks `ber-an`** | `ber- + dasar + -an` | 1. **Resiprokal:** Saling melakukan\\\\2. **Frekuentatif:** Banyak yang bertebaran | Saling: *bersalaman, berpelukan*.\\\\Bertebaran: *beterbangan, berceceran*. |\n| **Reduplikasi (Kata Ulang)** | Dwilingga, Dwipurwa, Salin Suara | 1. Jamak\\\\2. Menyerupai\\\\3. Resiprokal\\\\4. Melemahkan | Jamak: *gedung-gedung*.\\\\Menyerupai: *anak-anakan*.\\\\Resiprokal: *pukul-memukul*.\\\\Melemahkan: *kemerah-merahan*. |\n| **Pergeseran Makna (Semantik)** | 1. Meluas (Generalisasi)\\\\2. Menyempit (Spesialisasi)\\\\3. Ameliorasi vs Peyorasi | Meluas: makna melingkupi hal baru\\\\Menyempit: makna jadi khusus ke 1 bidang\\\\Ameliorasi: nilai rasa membaik | Meluas: *ibu/bapak* (dari orang tua kandung ke sapaan umum).\\\\Menyempit: *sarjana* (dari orang pandai ke lulusan S1).\\\\Ameliorasi: *tunanetra* (lebih halus dari buta). |",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Jebakan 1: Terkecoh Bentuk Fisik Imbuhan yang Sama tapi Makna Beda — Kata *pemukiman* (salah ejaan) vs *permukiman* (daerah tempat bermukim) vs *penataan* (proses menata). Imbuhan `peN-an` menyatakan proses, sedangkan `per-an` menyatakan hal/tempat.",
+      "Jebakan 2: Kata Ulang Semu — Kata seperti *kupu-kupu, kura-kura, laba-laba, ubur-ubur* BUKAN menyatakan makna jamak, melainkan kata dasar yang memang berbentuk ulang (kata ulang semu).",
+      "Jebakan 3: Terbalik Kausatif vs Benefaktif — Menyamakan 'menidurkan anak' (kausatif = membuat jadi tidur) dengan 'mengambilkan ayah minum' (benefaktif = mengambil untuk ayah)."
+    ],
+    "quick_execution_algorithm": [
+      "Langkah 1: Tentukan kata dasar dari kata bentukan yang ditanyakan (misal: *pelestarian* $\\rightarrow$ *lestari*).",
+      "Langkah 2: Uji makna gramatikal dengan menyusun parafrasa: apakah 'proses me-...-kan' atau 'hal/hasil ber-...'.",
+      "Langkah 3: Cocokkan parafrasa makna gramatikal tersebut ke kelima opsi jawaban."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "ppu-1.2-var1",
+      "variation_name": "Archetype Soal 1: Menentukan Kata yang Memiliki Makna Imbuhan yang Sama",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "^(1) Upaya **pelestarian** terumbu karang di kawasan perairan Raja Ampat terus digencarkan oleh komunitas nelayan lokal dan para aktivis lingkungan. ^(2) Program rehabilitasi ini difokuskan pada penanaman fragmen karang buatan guna memulihkan biota laut yang sempat rusak.",
+      "svg_illustration": null,
+      "question_markdown": "Makna imbuhan *peN-an* pada kata **pelestarian** dalam kalimat ^(1) SEMAKNA dengan imbuhan pada kata...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "**Penginapan** turis asing di tepi pantai telah dipesan penuh menjelang libur akhir tahun."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pemerintah kota mengumumkan **pelebaran** trotoar jalan protokol akan rampung bulan depan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sebagian besar **penduduk** desa pesisir menggantungkan hidupnya pada hasil tangkapan ikan."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Buku petunjuk keselamatan kapal motor wajib diletakkan pada tempat yang mudah dijangkau."
+        },
+        {
+          "key": "E",
+          "text_markdown": "**Penglihatan** nelayan tua itu mulai kabur saat melaut pada malam hari."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Analisis Makna Gramatikal Afiksasi `peN-an`:**\n1. Kata *pelestarian* dibentuk dari kata dasar *lestari* dengan konfiks *peN-an*.\n2. Makna gramatikalnya dalam kalimat ^(1): *'proses melestarikan terumbu karang'* (menyatakan **proses perbuatan**).\n3. Uji makna kata pada masing-masing opsi:\n   - **Opsi A (*penginapan*):** Menyatakan **tempat** untuk menginap (bukan proses).\n   - **Opsi B (*pelebaran*):** Dibentuk dari kata *lebar*, bermakna *'proses melebarkan trotoar'* (menyatakan **proses perbuatan**). $\\implies$ **SEMAKNA (BENAR)**.\n   - **Opsi C (*penduduk*):** Menyatakan **orang yang** menduduki/menghuni (nomina pelaku).\n   - **Opsi E (*penglihatan*):** Menyatakan **alat / daya** untuk melihat.",
+      "quick_trick_markdown": "**Trik Parafrasa 5 Detik:**\n*Pelestarian* = proses melestarikan.\nCari opsi yang bermakna 'proses me-...-kan':\n- *Penginapan* = tempat menginap (salah).\n- *Pelebaran* = proses melebarkan trotoar (COCOK 100%). Langsung pilih **B**.",
+      "why_others_are_wrong_markdown": "**Bedah Kategori Makna Opsi Pengecoh:**\n- **Opsi A Salah:** *Penginapan* menyatakan tempat (lokus).\n- **Opsi C Salah:** *Penduduk* menyatakan pelaku/orang (agen).\n- **Opsi D Salah:** *Petunjuk* menyatakan alat/sarana informasi.\n- **Opsi E Salah:** *Penglihatan* menyatakan kemampuan sensori/indera."
+    },
+    {
+      "example_id": "ppu-1.2-var2",
+      "variation_name": "Archetype Soal 2: Makna Reduplikasi (Kata Ulang) Sejenis",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "^(1) Saat terjadi sengketa batas lahan perkebunan sawit, kedua kubu warga yang bersitegang terlibat aksi **lempar-melempar** batu sebelum aparat kepolisian tiba di lokasi kejadian.",
+      "svg_illustration": null,
+      "question_markdown": "Makna perulangan kata pada **lempar-melempar** dalam kalimat ^(1) SEJENIS dengan makna kata ulang pada kalimat...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Anak-anak sekolah dasar berlarian dengan gembira di lapangan rumput saat jam istirahat."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Kedua diplomat negara sahabat itu saling **tatap-menatap** secara intens sebelum menandatangani perjanjian damai."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Ibu membeli berbagai macam buah-buahan segar di pasar induk tradisional kemarin pagi."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Kakek berjalan tertatih-tatih sambil memegang tongkat kayu tua kesayangannya."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Wajah adik tampak kemerah-merahan setelah berolahraga di bawah terik sinar matahari."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Analisis Makna Gramatikal Reduplikasi:**\n1. Bentuk kata ulang: *lempar-melempar* merupakan bentuk kata ulang sebagian berimbuhan (reduplikasi semantis).\n2. Makna gramatikalnya: Menyatakan perbuatan yang dilakukan secara **timbal balik / saling melakukan (resiprokal)** antara kedua kubu warga.\n3. Uji makna kata ulang pada opsi:\n   - **Opsi A (*anak-anak*):** Menyatakan **banyak / jamak**.\n   - **Opsi B (*tatap-menatap*):** Menyatakan perbuatan **saling menatap** antara kedua diplomat $\\implies$ **SEJENIS (RESIPROKAL)**.\n   - **Opsi C (*buah-buahan*):** Menyatakan **berbagai macam (keanekaragaman)**.\n   - **Opsi D (*tertatih-tatih*):** Menyatakan intensitas atau keadaan gaya berjalan.\n   - **Opsi E (*kemerah-merahan*):** Menyatakan derajat **menyerupai atau agak merah**.",
+      "quick_trick_markdown": "**Trik Kata Kunci 'Saling':**\n*Lempar-melempar* = saling melempar.\nCari opsi yang bermakna 'saling':\n*Tatap-menatap* = saling menatap.\nLangsung pilih **B** tanpa ragu!",
+      "why_others_are_wrong_markdown": "**Bedah Makna Kata Ulang Lainnya:**\n- **Opsi A:** Makna jamak (pluralitas).\n- **Opsi C:** Makna keanekaragaman (varietas).\n- **Opsi D:** Makna cara/intensitas perbuatan.\n- **Opsi E:** Makna mendekati sifat ('agak/menyerupai')."
+    },
+    {
+      "example_id": "ppu-1.2-var3",
+      "variation_name": "Archetype Soal 3: Perluasan & Pergeseran Makna Kata (Generalisasi / Spesialisasi)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "^(1) Pada masa Jawa Kuno, kata **sarjana** digunakan untuk menyebut setiap cendekiawan atau orang pintar yang berpengetahuan luas. ^(2) Namun, pada era modern saat ini, kata tersebut hanya disematkan kepada individu yang telah resmi menyelesaikan studi pendidikan tinggi jenjang strata satu (S1).",
+      "svg_illustration": null,
+      "question_markdown": "Berdasarkan penjelasan di atas, kata **sarjana** mengalami pergeseran makna yang disebut...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Generalisasi (perluasan makna)"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Spesialisasi (penyempitan makna)"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Ameliorasi (peningkatan nilai rasa kata)"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Peyorasi (penurunan nilai rasa kata)"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Sinestesia (pertukaran tanggapan indera)"
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Analisis Pergeseran Semantik Historis:**\n1. Makna Lama (Kuno): Orang pintar / berilmu secara umum (luas cakupannya).\n2. Makna Baru (Sekarang): Hanya orang yang lulus kuliah gelar S1 di perguruan tinggi (spesifik/sempit).\n3. Karena cakupan makna kata menjadi lebih khusus dan terbatas pada satu kualifikasi akademis tertentu saja, fenomena pergeseran makna ini secara linguistik disebut **Spesialisasi (Penyempitan Makna)**.\n4. Contoh lain spesialisasi: Kata *madrasah* (dulu berarti sekolah apa saja, kini khusus sekolah berbasis Islam); kata *kitab* (dulu berarti semua buku/tulisan, kini khusus kitab suci).",
+      "quick_trick_markdown": "**Trik 5 Detik Terminologi Semantik:**\n- Dari luas ke sempit $\\implies$ **Spesialisasi**.\n- Dari sempit ke luas $\\implies$ **Generalisasi**.\n- Dari kasar ke halus $\\implies$ **Ameliorasi**.\n- Dari halus ke kasar $\\implies$ **Peyorasi**.\n*Sarjana* dari orang pintar umum $\\rightarrow$ lulusan S1 $\\implies$ **Spesialisasi (B)**.",
+      "why_others_are_wrong_markdown": "**Bedah Definisi Opsi Pengecoh:**\n- **Opsi A (Generalisasi) Salah:** Generalisasi adalah perluasan, contoh: kata *berlayar* (dulu pakai perahu layar, sekarang naik kapal mesin pun disebut berlayar).\n- **Opsi C (Ameliorasi) Salah:** Terkait nilai rasa sopan (contoh: *istri* lebih sopan dari *bini*).\n- **Opsi D (Peyorasi) Salah:** Nilai rasa menjadi lebih kasar/buruk (contoh: *bunting*, *gerombolan*).\n- **Opsi E (Sinestesia) Salah:** Pertukaran indera (contoh: *senyumnya manis*, *suaranya pedas*)."
+    }
+  ]
+}

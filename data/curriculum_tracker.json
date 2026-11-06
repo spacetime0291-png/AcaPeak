@@ -155,7 +155,7 @@
         "Archetype Soal: Perhitungan rata-rata gabungan dari beberapa kelompok"
       ],
       "requires_svg": true,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/pu/pu-3.3.json"
     },
     {
@@ -172,7 +172,7 @@
         "Archetype Soal: Sinonim dan antonim kontekstual"
       ],
       "requires_svg": false,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/ppu/ppu-1.1.json"
     },
     {
@@ -189,7 +189,7 @@
         "Archetype Soal: Perluasan dan pergeseran makna kata (ameliorasi, peyorasi, meluas, menyempit)"
       ],
       "requires_svg": false,
-      "material_status": "pending",
+      "material_status": "done",
       "output_path": "/content/utbk/ppu/ppu-1.2.json"
     },
     {

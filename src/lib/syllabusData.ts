@@ -84,7 +84,7 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
             "subchapter_num": "3.3",
             "title": "Analisis Kuantitatif Tabel & Grafik (Persentase Pertumbuhan, Rasio, & Rata-rata)",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           }
         ]
       }
@@ -104,14 +104,14 @@ export const UTBK_SYLLABUS: SyllabusSubtestItem[] = [
             "subchapter_num": "1.1",
             "title": "Makna Kata Kontekstual, Istilah Teknis, & Hierarki Makna (Hipernim-Hiponim)",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           },
           {
             "id": "ppu-1.2",
             "subchapter_num": "1.2",
             "title": "Makna Bentukan Kata & Afiksasi Khas UTBK",
             "variations_count": 3,
-            "isCompleted": false
+            "isCompleted": true
           },
           {
             "id": "ppu-1.3",
