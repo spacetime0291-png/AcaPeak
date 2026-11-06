@@ -1,245 +1,431 @@
-import { useState, useEffect } from 'react';
-import { AppLayout } from './components/layout/AppLayout';
-import { MaterialRenderer } from './components/content/MaterialRenderer';
+import { useState, useEffect, useCallback } from 'react';
 import { UTBK_SYLLABUS } from './lib/syllabusData';
-import type { Material } from './types/material';
-import { Sparkles, CheckCircle2, Clock } from 'lucide-react';
+import { SMA_SUBJECTS } from './lib/smaSyllabusData';
+import {
+  fetchMaterialById,
+  collectDrillingQuestions,
+} from './lib/contentLoader';
+import type { Material, WorkedExample } from './types/material';
+import { TopHeader } from './components/navigation/TopHeader';
+import type { AppMode } from './components/navigation/TopHeader';
+import { UtbkSubtestGrid } from './components/home/UtbkSubtestGrid';
+import { SmaSubjectGrid } from './components/home/SmaSubjectGrid';
+import { SubtestDetailView } from './components/subtest/SubtestDetailView';
+import { SmaSubjectDetailView } from './components/subtest/SmaSubjectDetailView';
+import { PdfMaterialReader } from './components/reader/PdfMaterialReader';
+import { ActiveDrillingView } from './components/drilling/ActiveDrillingView';
+import { AdBanner } from './components/content/AdBanner';
 
-// Pre-bundled ready tactical playbooks for 0-latency instant rendering
-import pu11Data from '../public/content/utbk/pu/pu-1.1.json';
-import pu12Data from '../public/content/utbk/pu/pu-1.2.json';
-import pk31Data from '../public/content/utbk/pk/pk-3.1.json';
-
-const PRELOADED_MATERIALS: Record<string, Material> = {
-  'pu-1.1': pu11Data as unknown as Material,
-  'pu-1.2': pu12Data as unknown as Material,
-  'pk-3.1': pk31Data as unknown as Material,
-};
+interface AppRouteState {
+  view: 'home' | 'subtest' | 'materi' | 'drilling' | 'sma-subject';
+  mode: AppMode;
+  subtestCode?: string;
+  tab?: 'materi' | 'drilling';
+  materiId?: string;
+  drillingQuestionIndex?: number;
+  smaSubjectId?: string;
+}
 
 export default function App() {
-  const [currentMaterialId, setCurrentMaterialId] = useState<string>('pu-1.1');
-  const [material, setMaterial] = useState<Material>(PRELOADED_MATERIALS['pu-1.1']);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [loadError, setLoadError] = useState<string | null>(null);
+  // Parse initial route from URL search params
+  const parseRouteFromUrl = (): AppRouteState => {
+    if (typeof window === 'undefined') return { view: 'home', mode: 'utbk' };
+    const params = new URLSearchParams(window.location.search);
+    const mode = params.get('mode') === 'sma' ? 'sma' : 'utbk';
+    const materi = params.get('materi');
+    const subtest = params.get('subtest');
+    const tab = params.get('tab') === 'drilling' ? 'drilling' : 'materi';
+    const drilling = params.get('drilling');
+    const questionNo = parseInt(params.get('no') || '1', 10);
+    const subject = params.get('subject') || params.get('mapel');
 
-  // Flatten all subchapters for easy prev/next navigation
-  const allSubchapters = UTBK_SYLLABUS.flatMap((subtest) =>
-    subtest.chapters.flatMap((chapter) =>
-      chapter.subchapters.map((sub) => ({
-        ...sub,
-        subtestCode: subtest.code,
-        chapterNum: chapter.chapter_num,
-        chapterTitle: chapter.chapter_title,
-      }))
-    )
-  );
-
-  const currentIndex = allSubchapters.findIndex((s) => s.id === currentMaterialId);
-  const hasPrev = currentIndex > 0;
-  const hasNext = currentIndex < allSubchapters.length - 1;
-
-  const handlePrev = () => {
-    if (hasPrev) {
-      handleSelectMaterial(allSubchapters[currentIndex - 1].id);
+    if (drilling === 'active') {
+      return {
+        view: 'drilling',
+        mode,
+        subtestCode: subtest || 'pu',
+        drillingQuestionIndex: Math.max(0, questionNo - 1),
+      };
     }
+
+    if (materi) {
+      const code = subtest || materi.split('-')[0].toLowerCase();
+      return {
+        view: 'materi',
+        mode: 'utbk',
+        subtestCode: code,
+        materiId: materi,
+      };
+    }
+
+    if (subject) {
+      return {
+        view: 'sma-subject',
+        mode: 'sma',
+        smaSubjectId: subject,
+      };
+    }
+
+    if (subtest) {
+      return {
+        view: 'subtest',
+        mode: 'utbk',
+        subtestCode: subtest.toLowerCase(),
+        tab,
+      };
+    }
+
+    return {
+      view: 'home',
+      mode,
+    };
   };
 
-  const handleNext = () => {
-    if (hasNext) {
-      handleSelectMaterial(allSubchapters[currentIndex + 1].id);
+  const [route, setRoute] = useState<AppRouteState>(parseRouteFromUrl);
+
+  // Active Material data for PDF Reader
+  const [activeMaterial, setActiveMaterial] = useState<Material | null>(null);
+  const [isMaterialLoading, setIsMaterialLoading] = useState<boolean>(false);
+
+  // Active Drilling session states
+  const [drillingQuestions, setDrillingQuestions] = useState<WorkedExample[]>([]);
+  const [drillingTimerMinutes, setDrillingTimerMinutes] = useState<number | null>(15);
+
+  // Sync route changes to Browser URL (History API) and auto-scroll instant to top
+  const navigateTo = useCallback((newRoute: AppRouteState, replace = false) => {
+    const params = new URLSearchParams();
+
+    if (newRoute.mode === 'sma') {
+      params.set('mode', 'sma');
     }
-  };
 
-  const handleSelectMaterial = async (id: string) => {
-    setCurrentMaterialId(id);
-    setIsLoading(true);
-    setLoadError(null);
-
-    // 1. Instant check in preloaded dictionary
-    if (PRELOADED_MATERIALS[id]) {
-      setMaterial(PRELOADED_MATERIALS[id]);
-      setIsLoading(false);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
+    if (newRoute.view === 'subtest' && newRoute.subtestCode) {
+      params.set('subtest', newRoute.subtestCode.toLowerCase());
+      if (newRoute.tab) params.set('tab', newRoute.tab);
+    } else if (newRoute.view === 'materi' && newRoute.materiId) {
+      if (newRoute.subtestCode) params.set('subtest', newRoute.subtestCode.toLowerCase());
+      params.set('materi', newRoute.materiId);
+    } else if (newRoute.view === 'drilling') {
+      params.set('drilling', 'active');
+      params.set('no', String((newRoute.drillingQuestionIndex || 0) + 1));
+      if (newRoute.subtestCode) params.set('subtest', newRoute.subtestCode.toLowerCase());
+    } else if (newRoute.view === 'sma-subject' && newRoute.smaSubjectId) {
+      params.set('mode', 'sma');
+      params.set('subject', newRoute.smaSubjectId);
     }
 
-    // 2. Fetch from public/content/ with adaptive BASE_URL
-    const subtestPrefix = id.split('-')[0].toLowerCase();
-    const rawBase = import.meta.env.BASE_URL || '/';
-    const baseUrl = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
-    const targetUrl = `${baseUrl}content/utbk/${subtestPrefix}/${id}.json`;
-
-    try {
-      const response = await fetch(targetUrl);
-      if (!response.ok) {
-        throw new Error(`Modul [${id}] dalam status antrean pembuatan playbook.`);
-      }
-      const data = await response.json();
-      setMaterial(data);
-    } catch (err: any) {
-      setLoadError(err.message || 'Materi sedang disiapkan.');
-      const matched = allSubchapters.find((s) => s.id === id);
-      if (matched) {
-        setMaterial({
-          metadata: {
-            id: matched.id,
-            subtest: matched.subtestCode as any,
-            chapter_num: matched.chapterNum,
-            chapter_title: matched.chapterTitle,
-            subchapter_num: matched.subchapter_num,
-            subchapter_title: matched.title,
-            title: matched.title,
-            required_question_variations: [
-              `Penguasaan variasi soal tipe utama ${matched.title}`,
-              'Deteksi jebakan opsi pengecoh khas UTBK-SNBT',
-              'Algoritma penyelesaian cepat 30-45 detik per soal',
-            ],
-            requires_svg: false,
-            updated_at: new Date().toISOString().split('T')[0],
-          },
-          content: {
-            tactical_overview: `Topik ${matched.title} (${matched.subtestCode}) sedang dalam pipeline penulisan Playbook Variasi Soal.`,
-            exam_blueprint_markdown: `### 📌 Modul Dalam Antrean Pembuatan Playbook\n\nModul **${matched.title}** (${matched.subtestCode} - Bab ${matched.chapterNum}) saat ini berstatus antrean (*pending*) pada kurikulum 96 topik UTBK.\n\nSilakan pilih salah satu dari **Modul Siap Uji Coba** di atas untuk melihat format Playbook taktis dengan KaTeX, visualisasi SVG, dan bedah opsi pengecoh lengkap:`,
-            visualizations_svg: [],
-            distractor_traps: [
-              'Jebakan 1: Overgeneralisasi atau klaim mutlak dari data parsial.',
-              'Jebakan 2: Terkecoh pada opsi jawaban yang tampak benar tetapi tidak menjawab pertanyaan inti.',
-            ],
-            quick_execution_algorithm: [
-              'Langkah 1: Identifikasi kata kunci pertanyaan.',
-              'Langkah 2: Eliminasi opsi pengecoh yang mengandung klaim ekstrem.',
-              'Langkah 3: Terapkan rumus kilat atau aturan logika utama.',
-            ],
-          },
-          worked_examples: [],
-        });
-      }
-    } finally {
-      setIsLoading(false);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    const query = params.toString() ? `?${params.toString()}` : window.location.pathname;
+    if (replace) {
+      window.history.replaceState({}, '', query);
+    } else {
+      window.history.pushState({}, '', query);
     }
-  };
 
+    setRoute(newRoute);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, []);
+
+  // Listen to browser Back/Forward (popstate)
   useEffect(() => {
-    if (material?.metadata?.title) {
-      document.title = `${material.metadata.subtest} ${material.metadata.subchapter_num} - ${material.metadata.title} | UTBK Playbook`;
+    const handlePopState = () => {
+      const parsed = parseRouteFromUrl();
+      setRoute(parsed);
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  // Fetch material when route.view is 'materi'
+  useEffect(() => {
+    if (route.view === 'materi' && route.materiId) {
+      setIsMaterialLoading(true);
+      fetchMaterialById(route.materiId)
+        .then((data) => {
+          setActiveMaterial(data);
+          document.title = `${data.metadata.subtest} ${data.metadata.subchapter_num} - ${data.metadata.title} | Portal Edukasi`;
+        })
+        .catch((err) => {
+          console.error('Failed to load material', err);
+        })
+        .finally(() => {
+          setIsMaterialLoading(false);
+        });
+    } else if (route.view === 'subtest') {
+      const sub = UTBK_SYLLABUS.find(
+        (s) => s.code.toLowerCase() === route.subtestCode?.toLowerCase()
+      );
+      if (sub) {
+        document.title = `${sub.name} (${sub.code}) | Portal Edukasi UTBK`;
+      }
+    } else if (route.view === 'drilling') {
+      document.title = `Sesi Drilling Soal #${(route.drillingQuestionIndex || 0) + 1} | Portal Edukasi`;
+    } else {
+      document.title = 'Portal Belajar UTBK-SNBT & Materi SMA | Bebas Biaya (Rp0)';
     }
-  }, [material]);
+  }, [route.view, route.materiId, route.subtestCode, route.drillingQuestionIndex]);
+
+  // Fallback initialize drilling questions if user refreshed while on /?drilling=active
+  useEffect(() => {
+    if (route.view === 'drilling' && drillingQuestions.length === 0) {
+      const targetSubtest = route.subtestCode || 'pu';
+      const sub = UTBK_SYLLABUS.find(
+        (s) => s.code.toLowerCase() === targetSubtest.toLowerCase()
+      ) || UTBK_SYLLABUS[0];
+      const initialSubIds = sub.chapters.flatMap((c) => c.subchapters.map((s) => s.id));
+      collectDrillingQuestions(initialSubIds, 10).then((qs) => {
+        setDrillingQuestions(qs);
+      });
+    }
+  }, [route.view, route.subtestCode, drillingQuestions.length]);
+
+  // Derived current subtest item
+  const currentSubtest = UTBK_SYLLABUS.find(
+    (s) => s.code.toLowerCase() === route.subtestCode?.toLowerCase()
+  ) || UTBK_SYLLABUS[0];
+
+  // Derived current SMA subject item
+  const currentSmaSubject = SMA_SUBJECTS.find(
+    (s) => s.id === route.smaSubjectId
+  ) || SMA_SUBJECTS[0];
+
+  // Flattened subchapters for the active subtest to support prev / next in reader
+  const currentSubtestSubchapters = currentSubtest.chapters.flatMap(
+    (c) => c.subchapters
+  );
+  const currentMateriIndex = currentSubtestSubchapters.findIndex(
+    (s) => s.id === route.materiId
+  );
+  const hasPrevMateri = currentMateriIndex > 0;
+  const hasNextMateri = currentMateriIndex !== -1 && currentMateriIndex < currentSubtestSubchapters.length - 1;
+
+  // Handlers
+  const handlePrevMateri = () => {
+    if (hasPrevMateri) {
+      const prevId = currentSubtestSubchapters[currentMateriIndex - 1].id;
+      navigateTo({
+        ...route,
+        view: 'materi',
+        materiId: prevId,
+      });
+    }
+  };
+
+  const handleNextMateri = () => {
+    if (hasNextMateri) {
+      const nextId = currentSubtestSubchapters[currentMateriIndex + 1].id;
+      navigateTo({
+        ...route,
+        view: 'materi',
+        materiId: nextId,
+      });
+    }
+  };
+
+  const handleStartDrilling = async (
+    subchapterIds: string[],
+    questionCount: number,
+    timerMins: number | null
+  ) => {
+    setDrillingTimerMinutes(timerMins);
+    const qs = await collectDrillingQuestions(subchapterIds, questionCount);
+    setDrillingQuestions(qs);
+    navigateTo({
+      view: 'drilling',
+      mode: route.mode,
+      subtestCode: route.subtestCode || 'pu',
+      drillingQuestionIndex: 0,
+    });
+  };
+
+  const handleStartDrillingSingleTopic = (subchapterId: string) => {
+    handleStartDrilling([subchapterId], 10, 15);
+  };
+
+  // Generate dynamic unique key for ad-refresh requirement
+  const currentAdRouteKey = (() => {
+    if (route.view === 'home') return `home-${route.mode}`;
+    if (route.view === 'subtest') return `subtest-${route.subtestCode}-${route.tab || 'materi'}`;
+    if (route.view === 'materi') return `materi-${route.materiId}`;
+    if (route.view === 'drilling') return `drilling-q-${(route.drillingQuestionIndex || 0) + 1}`;
+    if (route.view === 'sma-subject') return `sma-${route.smaSubjectId}`;
+    return 'default-route';
+  })();
 
   return (
-    <AppLayout
-      activeSubtest={material.metadata.subtest}
-      activeTitle={material.metadata.title}
-      syllabus={UTBK_SYLLABUS}
-      currentMaterialId={currentMaterialId}
-      onSelectMaterial={handleSelectMaterial}
-      onPrevMaterial={handlePrev}
-      onNextMaterial={handleNext}
-      hasPrev={hasPrev}
-      hasNext={hasNext}
-      workedExamplesCount={material.worked_examples.length}
-    >
-      {/* Quick Access Live Demos Banner */}
-      <div className="mb-6 bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-950 rounded-2xl p-4 sm:p-5 text-white shadow-md border border-indigo-700/50">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
-          <div className="flex items-center gap-2">
-            <span className="flex h-2.5 w-2.5 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-            </span>
-            <span className="text-xs font-bold tracking-wide uppercase text-emerald-400 flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5" /> Modul Siap Uji Coba (Standar Playbook Baru)
-            </span>
+    <div className="min-h-screen bg-slate-50 flex flex-col selection:bg-indigo-100 selection:text-indigo-900 font-sans">
+      {/* 1. TOP HEADER & MODE SWITCHER (Always present on Home & Subtest views) */}
+      {route.view !== 'drilling' && route.view !== 'materi' && (
+        <TopHeader
+          mode={route.mode}
+          onModeChange={(newMode) => {
+            navigateTo({ view: 'home', mode: newMode });
+          }}
+          onSelectUtbkMaterial={(subtestCode, materialId) => {
+            navigateTo({
+              view: 'materi',
+              mode: 'utbk',
+              subtestCode,
+              materiId: materialId,
+            });
+          }}
+          onSelectSmaSubject={(subjectId) => {
+            navigateTo({
+              view: 'sma-subject',
+              mode: 'sma',
+              smaSubjectId: subjectId,
+            });
+          }}
+        />
+      )}
+
+      {/* Main Content Area */}
+      <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-4 sm:py-6">
+        {/* VIEW 1: HOME DASHBOARD */}
+        {route.view === 'home' && (
+          <div className="space-y-4">
+            {/* Slot Iklan Home: Di antara Search Bar dan Grid Subtes */}
+            <AdBanner
+              slotId="home-banner-top"
+              routeKey={currentAdRouteKey}
+              className="my-1"
+            />
+
+            {/* Mode UTBK-SNBT: Grid 7 Subtes UTBK */}
+            {route.mode === 'utbk' && (
+              <UtbkSubtestGrid
+                onSelectSubtest={(subtestCode) => {
+                  navigateTo({
+                    view: 'subtest',
+                    mode: 'utbk',
+                    subtestCode,
+                    tab: 'materi',
+                  });
+                }}
+              />
+            )}
+
+            {/* Mode Materi SMA: Grid Mapel SMA */}
+            {route.mode === 'sma' && (
+              <SmaSubjectGrid
+                onSelectSubject={(subjectId) => {
+                  navigateTo({
+                    view: 'sma-subject',
+                    mode: 'sma',
+                    smaSubjectId: subjectId,
+                  });
+                }}
+              />
+            )}
           </div>
-          <span className="text-[11px] text-slate-300 font-medium">
-            20% Cheatsheet Taktis • 80% Bedah Variasi Soal
-          </span>
-        </div>
+        )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-          <button
-            type="button"
-            onClick={() => handleSelectMaterial('pu-1.1')}
-            className={`p-3 rounded-xl text-left transition flex items-start gap-2.5 cursor-pointer ${
-              currentMaterialId === 'pu-1.1'
-                ? 'bg-white text-indigo-950 font-bold shadow-sm ring-2 ring-emerald-400'
-                : 'bg-indigo-900/60 hover:bg-indigo-800/80 text-white border border-indigo-700/40'
-            }`}
-          >
-            <CheckCircle2 className={`w-5 h-5 shrink-0 mt-0.5 ${currentMaterialId === 'pu-1.1' ? 'text-indigo-600' : 'text-emerald-400'}`} />
-            <div className="min-w-0">
-              <div className="text-[10px] uppercase font-bold tracking-wider opacity-80 text-indigo-300">
-                Penalaran Umum (PU 1.1)
-              </div>
-              <div className="text-xs sm:text-sm font-semibold truncate">
-                Kesesuaian Teks (5 Variasi + Kualitas Simpulan)
-              </div>
-            </div>
-          </button>
+        {/* VIEW 2: SUBTEST DETAIL (2 TABS: "MATERI" & "DRILLING") */}
+        {route.view === 'subtest' && currentSubtest && (
+          <SubtestDetailView
+            subtest={currentSubtest}
+            activeTab={route.tab || 'materi'}
+            onTabChange={(newTab) => {
+              navigateTo(
+                {
+                  ...route,
+                  tab: newTab,
+                },
+                true
+              );
+            }}
+            onBackToHome={() => {
+              navigateTo({ view: 'home', mode: 'utbk' });
+            }}
+            onSelectMaterial={(materialId) => {
+              navigateTo({
+                view: 'materi',
+                mode: 'utbk',
+                subtestCode: currentSubtest.code.toLowerCase(),
+                materiId: materialId,
+              });
+            }}
+            onStartDrilling={handleStartDrilling}
+          />
+        )}
 
-          <button
-            type="button"
-            onClick={() => handleSelectMaterial('pu-1.2')}
-            className={`p-3 rounded-xl text-left transition flex items-start gap-2.5 cursor-pointer ${
-              currentMaterialId === 'pu-1.2'
-                ? 'bg-white text-indigo-950 font-bold shadow-sm ring-2 ring-emerald-400'
-                : 'bg-indigo-900/60 hover:bg-indigo-800/80 text-white border border-indigo-700/40'
-            }`}
-          >
-            <CheckCircle2 className={`w-5 h-5 shrink-0 mt-0.5 ${currentMaterialId === 'pu-1.2' ? 'text-indigo-600' : 'text-emerald-400'}`} />
-            <div className="min-w-0">
-              <div className="text-[10px] uppercase font-bold tracking-wider opacity-80 text-indigo-300">
-                Penalaran Umum (PU 1.2)
-              </div>
-              <div className="text-xs sm:text-sm font-semibold truncate">
-                Evaluasi Argumen (5 Variasi + Asumsi Implisit)
-              </div>
-            </div>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleSelectMaterial('pk-3.1')}
-            className={`p-3 rounded-xl text-left transition flex items-start gap-2.5 cursor-pointer ${
-              currentMaterialId === 'pk-3.1'
-                ? 'bg-white text-indigo-950 font-bold shadow-sm ring-2 ring-emerald-400'
-                : 'bg-indigo-900/60 hover:bg-indigo-800/80 text-white border border-indigo-700/40'
-            }`}
-          >
-            <CheckCircle2 className={`w-5 h-5 shrink-0 mt-0.5 ${currentMaterialId === 'pk-3.1' ? 'text-indigo-600' : 'text-emerald-400'}`} />
-            <div className="min-w-0">
-              <div className="text-[10px] uppercase font-bold tracking-wider opacity-80 text-indigo-300">
-                Pengetahuan Kuantitatif (PK 3.1)
-              </div>
-              <div className="text-xs sm:text-sm font-semibold truncate">
-                Hubungan Garis & Sudut (4 Variasi + Kecukupan Data)
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      {isLoading ? (
-        <div className="py-24 text-center bg-white rounded-2xl border border-slate-200">
-          <div className="inline-block w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-3"></div>
-          <p className="text-sm text-slate-600 font-medium">Memuat playbook soal...</p>
-        </div>
-      ) : (
-        <>
-          {loadError && (
-            <div className="mb-4 p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-center gap-2">
-              <Clock className="w-4 h-4 text-amber-600 shrink-0" />
-              <span>{loadError} Anda dapat menguji modul siap pakai melalui tombol cepat di atas.</span>
-            </div>
-          )}
-          <MaterialRenderer
-            material={material}
-            onAnswerSubmit={(exampleId, answer, isCorrect) => {
-              console.log(`[UTBK Playbook Log] ID: ${exampleId}, Jawaban: ${answer}, Benar: ${isCorrect}`);
+        {/* VIEW 3: SMA SUBJECT DETAIL */}
+        {route.view === 'sma-subject' && currentSmaSubject && (
+          <SmaSubjectDetailView
+            subject={currentSmaSubject}
+            onBackToHome={() => {
+              navigateTo({ view: 'home', mode: 'sma' });
+            }}
+            onSelectTopic={(topicId) => {
+              // Open reading for topic
+              navigateTo({
+                view: 'materi',
+                mode: 'sma',
+                subtestCode: currentSmaSubject.id,
+                materiId: topicId,
+              });
             }}
           />
-        </>
-      )}
-    </AppLayout>
+        )}
+
+        {/* VIEW 4: PDF-STYLE ACADEMIC MATERIAL READER */}
+        {route.view === 'materi' && (
+          <div>
+            {isMaterialLoading || !activeMaterial ? (
+              <div className="py-24 text-center bg-white rounded-2xl border border-slate-200 shadow-2xs max-w-3xl mx-auto">
+                <div className="inline-block w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-3"></div>
+                <p className="text-xs sm:text-sm text-slate-600 font-semibold">
+                  Menyiapkan naskah materi & rumus...
+                </p>
+              </div>
+            ) : (
+              <PdfMaterialReader
+                material={activeMaterial}
+                onBackToSubtest={() => {
+                  navigateTo({
+                    view: 'subtest',
+                    mode: 'utbk',
+                    subtestCode: activeMaterial.metadata.subtest.toLowerCase(),
+                    tab: 'materi',
+                  });
+                }}
+                onPrevSubchapter={handlePrevMateri}
+                onNextSubchapter={handleNextMateri}
+                hasPrev={hasPrevMateri}
+                hasNext={hasNextMateri}
+                onStartDrillingThisTopic={handleStartDrillingSingleTopic}
+              />
+            )}
+          </div>
+        )}
+
+        {/* VIEW 5: ACTIVE DRILLING SESSION */}
+        {route.view === 'drilling' && (
+          <ActiveDrillingView
+            questions={drillingQuestions}
+            currentQuestionIndex={route.drillingQuestionIndex || 0}
+            timerMinutes={drillingTimerMinutes}
+            onNavigateQuestion={(newIndex) => {
+              navigateTo(
+                {
+                  ...route,
+                  drillingQuestionIndex: newIndex,
+                },
+                false
+              );
+            }}
+            onExitDrilling={() => {
+              navigateTo({
+                view: 'subtest',
+                mode: 'utbk',
+                subtestCode: route.subtestCode || 'pu',
+                tab: 'drilling',
+              });
+            }}
+          />
+        )}
+      </main>
+    </div>
   );
 }

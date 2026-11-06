@@ -1,57 +1,70 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-interface AdBannerProps {
+export interface AdBannerProps {
   slotId?: string;
   className?: string;
-  /**
-   * contextKey can be material ID or example ID. Changing this triggers an attempted ad refresh.
-   */
+  routeKey?: string;
   contextKey?: string;
 }
 
 export const AdBanner: React.FC<AdBannerProps> = ({
   slotId = 'banner-top-responsive',
   className = '',
-  contextKey = 'default',
+  routeKey,
+  contextKey,
 }) => {
-  const [adInstanceId, setAdInstanceId] = useState<number>(Date.now());
-  const lastRefreshTimeRef = useRef<number>(Date.now());
-  const COOLDOWN_MS = 30000; // 30 detik cooldown anti layout-thrashing
+  const effectiveKey = routeKey || contextKey || 'default';
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const now = Date.now();
-    const timeSinceLastRefresh = now - lastRefreshTimeRef.current;
+    // Fired on each mount / remount when effectiveKey changes
+    const timestamp = Date.now();
 
-    // Cooldown check: hanya perbarui jika sudah lebih dari 30 detik sejak refresh terakhir
-    if (timeSinceLastRefresh >= COOLDOWN_MS) {
-      lastRefreshTimeRef.current = now;
-      setAdInstanceId(now);
+    // If Google AdSense or another ad script is loaded, trigger push
+    try {
+      if (typeof window !== 'undefined' && (window as any).adsbygoogle) {
+        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+      }
+    } catch {
+      // Ignore ad-blocker or script errors gracefully
     }
-  }, [contextKey]);
+
+    // Custom impression event logger for ad analytics
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(
+        new CustomEvent('ad_impression_logged', {
+          detail: { slotId, routeKey: effectiveKey, timestamp },
+        })
+      );
+    }
+  }, [effectiveKey, slotId]);
 
   return (
     <div
-      aria-label="Informasi Iklan & Dukungan"
+      aria-label="Sponsor Pendidikan"
       data-ad-slot={slotId}
-      className={`min-h-[100px] sm:min-h-[120px] w-full overflow-hidden rounded-xl border border-dashed border-slate-200 bg-slate-50/80 p-3 flex flex-col justify-center items-center relative transition-all ${className}`}
+      data-route-key={effectiveKey}
+      className={`min-h-[100px] sm:min-h-[110px] w-full overflow-hidden rounded-xl border border-dashed border-slate-200/90 bg-slate-50/70 p-3 sm:p-4 flex flex-col justify-center items-center relative transition-all duration-200 shadow-2xs ${className}`}
     >
-      <div className="absolute top-1.5 right-2 text-[10px] uppercase font-mono tracking-wider text-slate-400">
-        Sponsor Pendidikan • Bebas Biaya (Rp0)
+      <div className="absolute top-1.5 right-2 text-[10px] uppercase font-mono tracking-wider text-slate-400 select-none">
+        Sponsor Pendidikan • Akses Rp0
       </div>
 
-      <div className="text-center text-xs sm:text-sm text-slate-500 max-w-md">
-        <p className="font-semibold text-slate-700 mb-0.5">
-          🎯 Persiapan UTBK-SNBT Mandiri & Gratis
+      <div className="text-center text-xs sm:text-sm text-slate-500 max-w-lg">
+        <p className="font-semibold text-slate-700 mb-0.5 flex items-center justify-center gap-1.5">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Belajar Mandiri UTBK-SNBT & Materi SMA Gratis
         </p>
-        <p className="text-[11px] sm:text-xs text-slate-500">
-          Platform edukasi bebas akses untuk seluruh pelajar Indonesia. Didukung serverless & arsitektur hemat sumber daya.
+        <p className="text-[11px] sm:text-xs text-slate-400 line-clamp-1">
+          Platform edukasi bebas biaya tanpa paywall. Didukung infrastruktur edge berkecepatan tinggi.
         </p>
       </div>
 
-      {/* Placeholder identifier for AdSense / Carbon / Custom Ad Network script injection */}
+      {/* Target container for script injection (AdSense / MediaNet / Custom) */}
       <div
-        id={`ad-container-${slotId}-${adInstanceId}`}
-        className="w-full flex justify-center items-center empty:hidden"
+        ref={containerRef}
+        id={`ad-target-${slotId}`}
+        className="w-full flex justify-center items-center empty:hidden mt-1"
       />
     </div>
   );
