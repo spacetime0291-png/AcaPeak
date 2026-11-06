@@ -42,23 +42,23 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
     <section className="w-full">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 px-1">
         <div>
-          <h2 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
+          <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight">
             Kurikulum Mata Pelajaran SMA
           </h2>
-          <p className="text-xs text-slate-500">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
             Pilih mata pelajaran untuk memperdalam materi kurikulum merdeka & nasional.
           </p>
         </div>
 
         {/* Filters: Category & Grade */}
-        <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto text-xs">
+        <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto text-xs sm:text-sm">
           {/* Category Filter */}
-          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200">
+          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-2xs">
             <button
               type="button"
               onClick={() => setCategoryFilter('all')}
-              className={`px-2 py-0.5 rounded-lg font-semibold transition ${
-                categoryFilter === 'all' ? 'bg-white text-slate-900 shadow-2xs' : 'text-slate-500 hover:text-slate-800'
+              className={`px-2.5 py-1 rounded-lg font-bold transition ${
+                categoryFilter === 'all' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-2xs' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               Semua
@@ -66,8 +66,8 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
             <button
               type="button"
               onClick={() => setCategoryFilter('saintek')}
-              className={`px-2 py-0.5 rounded-lg font-semibold transition ${
-                categoryFilter === 'saintek' ? 'bg-white text-slate-900 shadow-2xs' : 'text-slate-500 hover:text-slate-800'
+              className={`px-2.5 py-1 rounded-lg font-bold transition ${
+                categoryFilter === 'saintek' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-2xs' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               MIPA
@@ -75,8 +75,8 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
             <button
               type="button"
               onClick={() => setCategoryFilter('soshum')}
-              className={`px-2 py-0.5 rounded-lg font-semibold transition ${
-                categoryFilter === 'soshum' ? 'bg-white text-slate-900 shadow-2xs' : 'text-slate-500 hover:text-slate-800'
+              className={`px-2.5 py-1 rounded-lg font-bold transition ${
+                categoryFilter === 'soshum' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-2xs' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               IPS
@@ -84,12 +84,12 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
           </div>
 
           {/* Grade Pills Filter */}
-          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200">
+          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-2xs">
             <button
               type="button"
               onClick={() => setGradeFilter('all')}
-              className={`px-2 py-0.5 rounded-lg font-semibold transition ${
-                gradeFilter === 'all' ? 'bg-white text-slate-900 shadow-2xs' : 'text-slate-500 hover:text-slate-800'
+              className={`px-2.5 py-1 rounded-lg font-bold transition ${
+                gradeFilter === 'all' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-2xs' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               Semua Kelas
@@ -97,8 +97,8 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
             <button
               type="button"
               onClick={() => setGradeFilter('10')}
-              className={`px-2 py-0.5 rounded-lg font-semibold transition ${
-                gradeFilter === '10' ? 'bg-white text-slate-900 shadow-2xs' : 'text-slate-500 hover:text-slate-800'
+              className={`px-2.5 py-1 rounded-lg font-bold transition ${
+                gradeFilter === '10' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-2xs' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               Kelas 10
@@ -106,8 +106,8 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
             <button
               type="button"
               onClick={() => setGradeFilter('11')}
-              className={`px-2 py-0.5 rounded-lg font-semibold transition ${
-                gradeFilter === '11' ? 'bg-white text-slate-900 shadow-2xs' : 'text-slate-500 hover:text-slate-800'
+              className={`px-2.5 py-1 rounded-lg font-bold transition ${
+                gradeFilter === '11' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-2xs' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               Kelas 11
@@ -115,8 +115,8 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
             <button
               type="button"
               onClick={() => setGradeFilter('12')}
-              className={`px-2 py-0.5 rounded-lg font-semibold transition ${
-                gradeFilter === '12' ? 'bg-white text-slate-900 shadow-2xs' : 'text-slate-500 hover:text-slate-800'
+              className={`px-2.5 py-1 rounded-lg font-bold transition ${
+                gradeFilter === '12' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-2xs' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               Kelas 12
@@ -126,7 +126,7 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
       </div>
 
       {/* Grid of SMA Subjects */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5">
         {filteredSubjects.map((subj) => {
           const totalTopics = subj.chapters.reduce((acc, c) => acc + c.topics.length, 0);
 
@@ -135,30 +135,30 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
               key={subj.id}
               type="button"
               onClick={() => onSelectSubject(subj.id)}
-              className={`group flex flex-col p-4 sm:p-5 rounded-2xl border ${subj.color.border} ${subj.color.bg} transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md cursor-pointer text-left relative overflow-hidden`}
+              className={`group flex flex-col p-4 sm:p-5 rounded-3xl border ${subj.color.border} dark:border-slate-800 ${subj.color.bg} dark:bg-slate-900/90 transition-all duration-200 hover:-translate-y-1 hover:shadow-md cursor-pointer text-left relative overflow-hidden`}
             >
               <div className="flex items-start justify-between mb-3">
                 <div
-                  className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white flex items-center justify-center shadow-2xs ${subj.color.text} group-hover:scale-105 transition-transform duration-200 shrink-0`}
+                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white dark:bg-slate-800 flex items-center justify-center shadow-2xs ${subj.color.text} dark:text-white group-hover:scale-105 transition-transform duration-200 shrink-0`}
                 >
-                  {ICON_MAP[subj.icon] || <BookOpen className="w-6 h-6" />}
+                  {ICON_MAP[subj.icon] || <BookOpen className="w-7 h-7" />}
                 </div>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-white/80 text-slate-600 border border-slate-200/60">
+                <span className="text-[11px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full bg-white/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700">
                   {subj.category}
                 </span>
               </div>
 
-              <div className="flex-1 min-h-[38px] flex flex-col justify-center">
-                <h3 className={`text-sm sm:text-base font-bold ${subj.color.text} leading-tight line-clamp-2`}>
+              <div className="flex-1 min-h-[42px] flex flex-col justify-center">
+                <h3 className={`text-sm sm:text-base font-bold ${subj.color.text} dark:text-white leading-snug line-clamp-2`}>
                   {subj.name}
                 </h3>
               </div>
 
-              <div className="mt-3 pt-2.5 border-t border-slate-200/50 flex items-center justify-between text-xs">
-                <span className={`px-2 py-0.5 rounded-md font-semibold text-[11px] ${subj.color.badge}`}>
+              <div className="mt-3.5 pt-2.5 border-t border-slate-200/50 dark:border-slate-800 flex items-center justify-between text-xs sm:text-sm">
+                <span className={`px-2.5 py-0.5 rounded-md font-semibold text-[11px] ${subj.color.badge}`}>
                   {subj.chapters.length} Bab • {totalTopics} Materi
                 </span>
-                <span className="text-slate-400 group-hover:text-slate-700 transition-transform group-hover:translate-x-1 duration-150">
+                <span className="text-slate-400 group-hover:text-slate-700 dark:group-hover:text-white transition-transform group-hover:translate-x-1 duration-150">
                   <ArrowRight className="w-4 h-4" />
                 </span>
               </div>

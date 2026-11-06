@@ -262,17 +262,17 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
   });
 
   return (
-    <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm border border-slate-100/90 px-2.5 py-4 sm:p-5 space-y-4">
+    <div className="bg-white/95 dark:bg-slate-900/95 rounded-3xl shadow-sm border border-slate-200/90 dark:border-slate-800 p-4 sm:p-6 space-y-5 transition-colors">
       {/* Category Filter Tabs: Semua | TPS | Literasi */}
-      <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-3">
-        <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800/80 pb-3.5">
+        <div className="flex items-center bg-slate-100 dark:bg-slate-800/90 p-1 rounded-xl border border-slate-200 dark:border-slate-700/80 shadow-2xs">
           <button
             type="button"
             onClick={() => setCategoryFilter('ALL')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition cursor-pointer ${
               categoryFilter === 'ALL'
-                ? 'bg-white text-blue-700 shadow-2xs'
-                : 'text-slate-600 hover:text-slate-900'
+                ? 'bg-white dark:bg-slate-700 text-blue-700 dark:text-white shadow-2xs'
+                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             Semua (7)
@@ -280,44 +280,49 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
           <button
             type="button"
             onClick={() => setCategoryFilter('TPS')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer flex items-center gap-1 ${
+            className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition cursor-pointer flex items-center gap-1.5 ${
               categoryFilter === 'TPS'
-                ? 'bg-white text-blue-700 shadow-2xs'
-                : 'text-slate-600 hover:text-slate-900'
+                ? 'bg-white dark:bg-slate-700 text-blue-700 dark:text-white shadow-2xs'
+                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             <span>🎯 TPS</span>
-            <span className="text-[11px] font-normal opacity-75">(4)</span>
+            <span className="text-xs font-normal opacity-75">(4)</span>
           </button>
           <button
             type="button"
             onClick={() => setCategoryFilter('Literasi')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer flex items-center gap-1 ${
+            className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition cursor-pointer flex items-center gap-1.5 ${
               categoryFilter === 'Literasi'
-                ? 'bg-white text-blue-700 shadow-2xs'
-                : 'text-slate-600 hover:text-slate-900'
+                ? 'bg-white dark:bg-slate-700 text-blue-700 dark:text-white shadow-2xs'
+                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             <span>📚 Literasi</span>
-            <span className="text-[11px] font-normal opacity-75">(3)</span>
+            <span className="text-xs font-normal opacity-75">(3)</span>
           </button>
         </div>
 
-        <span className="text-[11px] font-semibold text-slate-400 hidden sm:inline">
-          27 Modul Terstandar
+        <span className="text-xs sm:text-sm font-semibold text-slate-400 dark:text-slate-500">
+          27 Modul Terstandar SNBT
         </span>
       </div>
 
-      {/* Grid 4 Kolom dengan Skala Lebih Besar, Gap Lebih Luas, & Tanpa Text Truncate */}
-      <div className="grid grid-cols-4 gap-y-7 sm:gap-y-9 gap-x-2 sm:gap-x-4 md:gap-x-6 items-start">
+      {/* Grid Responsif (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) Skala Nyaman & Berhias */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5">
         {filteredSubtests.map((sub) => (
           <button
             key={sub.code}
             type="button"
             onClick={() => onSelectSubtest(sub.code.toLowerCase())}
-            className="w-full min-w-0 flex flex-col items-center group cursor-pointer text-center focus:outline-none"
+            className="w-full flex flex-col items-center justify-between p-4 sm:p-5 rounded-3xl bg-slate-50/70 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/70 hover:border-blue-300 dark:hover:border-blue-500/60 shadow-2xs hover:shadow-md hover:shadow-blue-500/5 transition-all duration-200 hover:-translate-y-1 group cursor-pointer text-center focus:outline-none"
             aria-label={`Buka Subtes ${sub.name}`}
           >
+            {/* Category / Code Pill */}
+            <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white dark:bg-slate-700/80 text-blue-700 dark:text-blue-300 shadow-2xs border border-slate-200/60 dark:border-slate-600 mb-3">
+              {sub.code} • {sub.category}
+            </span>
+
             {/* 1. Ikon Squircle Berwarna Cerah Skala Diperbesar */}
             <div
               className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto ${sub.bgColor} transition-transform duration-200 group-hover:scale-105 group-active:scale-95 shrink-0`}
@@ -326,8 +331,8 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
             </div>
 
             {/* 2. Label Nama Subtes Lengkap Tanpa Terpotong */}
-            <div className="w-full flex-1 flex flex-col items-center justify-start mt-2 sm:mt-2.5">
-              <span className="text-[11px] sm:text-xs md:text-sm font-bold sm:font-semibold text-slate-800 text-center leading-[1.25] sm:leading-snug w-full break-words group-hover:text-blue-600 transition-colors">
+            <div className="w-full flex-1 flex flex-col items-center justify-start mt-3">
+              <span className="text-xs sm:text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 text-center leading-snug w-full break-words group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {sub.name}
               </span>
             </div>
