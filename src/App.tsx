@@ -7,10 +7,12 @@ import { Sparkles, CheckCircle2, Clock } from 'lucide-react';
 
 // Pre-bundled ready tactical playbooks for 0-latency instant rendering
 import pu11Data from '../public/content/utbk/pu/pu-1.1.json';
+import pu12Data from '../public/content/utbk/pu/pu-1.2.json';
 import pk31Data from '../public/content/utbk/pk/pk-3.1.json';
 
 const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-1.1': pu11Data as unknown as Material,
+  'pu-1.2': pu12Data as unknown as Material,
   'pk-3.1': pk31Data as unknown as Material,
 };
 
@@ -154,7 +156,7 @@ export default function App() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
           <button
             type="button"
             onClick={() => handleSelectMaterial('pu-1.1')}
@@ -170,7 +172,27 @@ export default function App() {
                 Penalaran Umum (PU 1.1)
               </div>
               <div className="text-xs sm:text-sm font-semibold truncate">
-                Generalisasi: Peta Soal & Taktik UTBK (6 Variasi)
+                Kesesuaian Teks (5 Variasi + Kualitas Simpulan)
+              </div>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => handleSelectMaterial('pu-1.2')}
+            className={`p-3 rounded-xl text-left transition flex items-start gap-2.5 cursor-pointer ${
+              currentMaterialId === 'pu-1.2'
+                ? 'bg-white text-indigo-950 font-bold shadow-sm ring-2 ring-emerald-400'
+                : 'bg-indigo-900/60 hover:bg-indigo-800/80 text-white border border-indigo-700/40'
+            }`}
+          >
+            <CheckCircle2 className={`w-5 h-5 shrink-0 mt-0.5 ${currentMaterialId === 'pu-1.2' ? 'text-indigo-600' : 'text-emerald-400'}`} />
+            <div className="min-w-0">
+              <div className="text-[10px] uppercase font-bold tracking-wider opacity-80 text-indigo-300">
+                Penalaran Umum (PU 1.2)
+              </div>
+              <div className="text-xs sm:text-sm font-semibold truncate">
+                Evaluasi Argumen (5 Variasi + Asumsi Implisit)
               </div>
             </div>
           </button>

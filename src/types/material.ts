@@ -38,6 +38,16 @@ export interface SvgIllustration {
   svg_code: string;
 }
 
+export interface ComplexTableRow {
+  statement: string;
+  correct_choice: string;
+}
+
+export interface ComplexTable {
+  headers: string[];
+  rows: ComplexTableRow[];
+}
+
 export interface WorkedExample {
   example_id: string;
   variation_name: string;
@@ -47,7 +57,7 @@ export interface WorkedExample {
   svg_illustration?: SvgIllustration | null;
   question_markdown: string;
   statements?: string[] | null;
-  complex_table?: Record<string, unknown> | null;
+  complex_table?: ComplexTable | null;
   options: QuestionOption[];
   correct_answer: 'A' | 'B' | 'C' | 'D' | 'E' | string;
   conceptual_solution_markdown: string;

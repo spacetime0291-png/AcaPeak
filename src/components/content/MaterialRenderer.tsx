@@ -523,6 +523,79 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                     </ReactMarkdown>
                   </div>
 
+                  {/* Statements list (e.g. (1) (2) (3) (4) or Data Sufficiency (1) & (2)) */}
+                  {example.statements && example.statements.length > 0 && (
+                    <div className="space-y-1.5 p-3 rounded-lg bg-slate-50 border border-slate-200 text-xs sm:text-sm font-medium text-slate-800 my-2">
+                      {example.statements.map((stmt, sIdx) => (
+                        <div key={sIdx} className="leading-relaxed">
+                          <ReactMarkdown
+                            remarkPlugins={[remarkMath, remarkGfm]}
+                            rehypePlugins={[rehypeKatex]}
+                            components={markdownComponents}
+                          >
+                            {stmt}
+                          </ReactMarkdown>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Complex Table (UTBK Pusmendik Matrix Archetype) */}
+                  {example.complex_table && (
+                    <div className="overflow-x-auto my-3 border border-slate-200 rounded-xl shadow-xs">
+                      <table className="w-full text-left text-xs sm:text-sm border-collapse">
+                        <thead className="bg-slate-100 text-slate-700 font-bold uppercase text-[11px] tracking-wider border-b border-slate-200">
+                          <tr>
+                            {example.complex_table.headers.map((h, hIdx) => (
+                              <th
+                                key={hIdx}
+                                className={`p-3 ${
+                                  hIdx === 0
+                                    ? 'w-auto'
+                                    : 'w-24 sm:w-32 text-center border-l border-slate-200'
+                                }`}
+                              >
+                                {h}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-200 bg-white">
+                          {example.complex_table.rows.map((row, rIdx) => (
+                            <tr key={rIdx} className="hover:bg-slate-50/70 transition-colors">
+                              <td className="p-3 text-slate-800 leading-relaxed font-normal">
+                                {row.statement}
+                              </td>
+                              {example.complex_table!.headers.slice(1).map((colName, cIdx) => {
+                                const isCellCorrect = row.correct_choice === colName;
+                                return (
+                                  <td
+                                    key={cIdx}
+                                    className="p-3 text-center border-l border-slate-200"
+                                  >
+                                    {hasAnswered ? (
+                                      <span
+                                        className={`inline-flex items-center justify-center px-2 py-1 rounded text-xs font-bold ${
+                                          isCellCorrect
+                                            ? 'bg-emerald-100 text-emerald-800 ring-1 ring-emerald-300'
+                                            : 'bg-slate-100 text-slate-400'
+                                        }`}
+                                      >
+                                        {isCellCorrect ? '✓ ' + colName : '—'}
+                                      </span>
+                                    ) : (
+                                      <span className="inline-block w-4 h-4 rounded-full border-2 border-slate-300"></span>
+                                    )}
+                                  </td>
+                                );
+                              })}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+
                   {/* Interactive Options A-E */}
                   <div className="space-y-2.5 pt-1">
                     {example.options.map((option) => {

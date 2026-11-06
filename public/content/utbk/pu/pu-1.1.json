@@ -5,267 +5,242 @@
     "chapter_num": 1,
     "chapter_title": "Penalaran Induktif",
     "subchapter_num": "1.1",
-    "subchapter_title": "Generalisasi (Generalization)",
-    "title": "Generalisasi: Peta Soal & Taktik Eksekusi UTBK",
+    "subchapter_title": "Kesesuaian Pernyataan & Simpulan Teks",
+    "title": "Kesesuaian Pernyataan & Simpulan Teks (Pasti Benar, Mungkin Benar, & Kualitas Simpulan)",
     "required_question_variations": [
-      "Definisi premis observasional/partikular dan kesimpulan umum.",
-      "Perbedaan kesimpulan mutlak (deduktif) vs kesimpulan probabilistik (induktif).",
-      "Generalisasi Sempurna (Lengkap): Pengamatan dilakukan pada seluruh anggota populasi tanpa terkecuali.",
-      "Generalisasi Sempurna (Lengkap): Tingkat kepastian kesimpulan setara dengan kepastian deduktif.",
-      "Generalisasi Tidak Sempurna (Parsial/Sampel): Pengamatan dilakukan pada sebagian anggota populasi (sampel) untuk mewakili keseluruhan.",
-      "Generalisasi Tidak Sempurna (Parsial/Sampel): Penggunaan kata penanda probabilitas pada kesimpulan (sebagian besar, cenderung, umumnya, berpotensi).",
-      "Kuantitas Sampel: kecukupan jumlah kasus khusus untuk mewakili populasi.",
-      "Representativitas (Keterwakilan) Sampel: variasi sampel terhadap heterogenitas populasi.",
-      "Penanganan Pengecualian (Outlier/Anomali): bagaimana data ekstrem memengaruhi kekuatan kesimpulan."
+      "Archetype Soal: Pernyataan yang PASTI BENAR berdasarkan wacana",
+      "Archetype Soal: Pernyataan yang PASTI SALAH berdasarkan wacana",
+      "Archetype Soal: Simpulan yang PALING MUNGKIN BENAR dari data empiris",
+      "Archetype Soal: Penilaian KUALITAS SIMPULAN (Pasti Benar / Mungkin Benar / Pasti Salah / Tidak Dapat Dinilai)",
+      "Archetype Soal: Tabel Kompleks 5 Pernyataan (Benar / Salah)"
     ],
     "requires_svg": false,
     "updated_at": "2026-11-06"
   },
   "content": {
-    "tactical_overview": "Di UTBK-SNBT, soal Generalisasi TIDAK PERNAH menanyakan definisi hafalan teori. Soal selalu disajikan dalam bentuk wacana riset, survei sosial, atau uji klinis di mana Anda diuji untuk: (1) Mendeteksi apakah kesimpulan melompat terlalu jauh (overclaim), (2) Memilih opsi yang memperlemah/memperkuat hipotesis, dan (3) Mengevaluasi keterwakilan sampel serta anomali data.",
-    "exam_blueprint_markdown": "### Peta Medan UTBK: Tipe Soal & Algoritma Eksekusi 30 Detik\n\n| Tipe Soal di UTBK | Pola Pertanyaan Khas | Fokus yang Sebenarnya Diuji | Algoritma Menjawab Cepat ($\\le 30$ Detik) |\n| :--- | :--- | :--- | :--- |\n| **Simpulan yang Paling Didukung** | *\"Simpulan yang paling mungkin benar berdasarkan teks di atas adalah...\"* | Membedakan kesimpulan berbasis sampel (probabilistik) dari klaim mutlak | **Coret opsi mutlak** ('pasti seluruhnya', 'selalu'). Pilih opsi dengan modalitas aman: *'cenderung'*, *'sebagian besar'*, *'berpeluang'*. |\n| **Pelemahan Argumen (Weaken)** | *\"Pernyataan yang PALING MEMPERLEMAH simpulan peneliti adalah...\"* | Menemukan variabel perancu (*confounding factor*) atau bukti tandingan (*counter-evidence*) | Cari opsi yang menyajikan **faktor penyebab alternatif** di luar variabel yang diteliti, atau membuktikan sampel memiliki bias seleksi. |\n| **Evaluasi Keterwakilan Sampel** | *\"Kelemahan penalaran dari kesimpulan di atas adalah...\"* | Mendeteksi *Hasty Generalization* atau *Sampling Bias* | Periksa asal sampel vs populasi sasaran. Jika survei publik hanya diambil dari 1 lokasi/metode sukarela $\\implies$ **Bias Seleksi**. |\n| **Sempurna vs Tidak Sempurna** | *\"Sifat kepastian dari simpulan kedua laporan adalah...\"* | Menilai rasio observasi ($n = N$ mutlak vs $n < N$ probabilistik) | Jika memeriksa $100\\%$ anggota himpunan tertutup $\\implies$ **Mutlak ($P=1$)**. Jika survei sampel $\\implies$ **Probabilistik ($P<1$)**. |\n| **Penanganan Anomali (Outlier)** | *\"Langkah ilmiah yang paling tepat menghadapi data pasien yang tidak sembuh...\"* | Menguji prosedur *Scope Restriction* vs *Cherry-Picking* | Jangan buang data anomali! Pilih opsi yang **membatasi ruang lingkup kesimpulan** dengan menjelaskan kontraindikasi. |",
-    "visualizations_svg": [
-      {
-        "id": "svg-pu-1-1",
-        "title": "Peta Logika: Generalisasi Sempurna vs Tidak Sempurna",
-        "caption": "Induksi lengkap pada himpunan tertutup menghasilkan kepastian 100%, sedangkan induksi berbasis sampel mengandung lompatan induktif yang wajib menggunakan modalitas probabilitas.",
-        "svg_code": "<svg viewBox=\"0 0 600 360\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <rect width=\"600\" height=\"360\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"2\"/>\n  <text x=\"300\" y=\"38\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#0f172a\">Peta Pola Soal Generalisasi UTBK</text>\n  \n  <!-- Left Side: Sempurna -->\n  <rect x=\"50\" y=\"65\" width=\"235\" height=\"265\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"2\"/>\n  <text x=\"167\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#15803d\">1. INDUKSI LENGKAP</text>\n  <text x=\"167\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#16a34a\">(Generalisasi Sempurna)</text>\n  \n  <rect x=\"70\" y=\"130\" width=\"195\" height=\"48\" rx=\"6\" fill=\"#ffffff\" stroke=\"#bbf7d0\"/>\n  <text x=\"167\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Kondisi Observasi</text>\n  <text x=\"167\" y=\"167\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#15803d\">100% Anggota Diperiksa (n = N)</text>\n\n  <rect x=\"70\" y=\"190\" width=\"195\" height=\"48\" rx=\"6\" fill=\"#ffffff\" stroke=\"#bbf7d0\"/>\n  <text x=\"167\" y=\"210\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Status Kesimpulan</text>\n  <text x=\"167\" y=\"227\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">PASTI / MUTLAK (P = 1)</text>\n\n  <rect x=\"70\" y=\"250\" width=\"195\" height=\"65\" rx=\"6\" fill=\"#dcfce7\"/>\n  <text x=\"167\" y=\"270\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#166534\">Ciri Khas di Soal UTBK:</text>\n  <text x=\"167\" y=\"287\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#14532d\">Objek tertutup (siswa 1 kelas,</text>\n  <text x=\"167\" y=\"303\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#14532d\">hari dalam seminggu, mesin pabrik)</text>\n\n  <!-- Right Side: Tidak Sempurna -->\n  <rect x=\"315\" y=\"65\" width=\"235\" height=\"265\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"2\"/>\n  <text x=\"432\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4ed8\">2. INDUKSI SAMPEL</text>\n  <text x=\"432\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">(Generalisasi Parsial)</text>\n\n  <rect x=\"335\" y=\"130\" width=\"195\" height=\"48\" rx=\"6\" fill=\"#ffffff\" stroke=\"#bfdbfe\"/>\n  <text x=\"432\" y=\"150\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Kondisi Observasi</text>\n  <text x=\"432\" y=\"167\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#2563eb\">Hanya Sebagian Sampel (n &lt; N)</text>\n\n  <rect x=\"335\" y=\"190\" width=\"195\" height=\"48\" rx=\"6\" fill=\"#ffffff\" stroke=\"#bfdbfe\"/>\n  <text x=\"432\" y=\"210\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Status Kesimpulan</text>\n  <text x=\"432\" y=\"227\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">PROBABILISTIK (P &lt; 1)</text>\n\n  <rect x=\"335\" y=\"250\" width=\"195\" height=\"65\" rx=\"6\" fill=\"#dbeafe\"/>\n  <text x=\"432\" y=\"270\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e40af\">Kunci Lolos Jebakan UTBK:</text>\n  <text x=\"432\" y=\"287\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#1e3a8a\">Wajib gunakan kata modalitas:</text>\n  <text x=\"432\" y=\"303\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#2563eb\">\"Cenderung\", \"Sebagian besar\"</text>\n</svg>"
-      }
-    ],
+    "tactical_overview": "Di UTBK-SNBT, tipe soal Kesesuaian Pernyataan dan Kualitas Simpulan menguji ketepatan verifikasi data tanpa asumsi pribadi. Anda tidak boleh menafsirkan teks secara liar. Kunci mutlak menjawab: (1) Pasti Benar wajib identik dengan data eksplisit wacana, (2) Mungkin Benar adalah perluasan logis tanpa klaim mutlak, (3) Pasti Salah bertolak belakang secara langsung, dan (4) Kualitas Simpulan menggunakan 5 opsi standar Pusmendik.",
+    "exam_blueprint_markdown": "### Peta Medan UTBK: 4 Kategori Status Kebenaran Kalimat\n\n| Status Kebenaran di UTBK | Syarat Logis di Teks | Pola Kata Kunci Opsi | Cara Eksekusi Cepat ($\\le 25$ Detik) |\n| :--- | :--- | :--- | :--- |\n| **Pasti Benar** | Tertulis eksplisit atau parafrasa makna 100% identik tanpa menambah asumsi | Sesuai subjek, angka, dan arah klaim | Cari kalimat sumber di teks; jika sama persis maknanya $\\implies$ **Pilih**. |\n| **Pasti Salah** | Kontradiksi langsung atau bertentangan 180° dengan data teks | Kebalikan arah tren, memutarbalikkan subjek/objek | Cari opsi yang menegasikan fakta di teks (misal teks: *naik*, opsi: *turun*). |\n| **Mungkin Benar** | Logis, sejalan dengan tren, tetapi tidak ada bukti mutlak di teks | Menggunakan kata pembatas (*berpotensi, cenderung*) | Hindari kata mutlak (*pasti, selalu*). Pilih yang bernada kemungkinan terukur. |\n| **Tidak Cukup Info** | Informasi di teks tidak menyinggung variabel atau hubungan yang dimaksud | Melompat ke topik lain di luar teks | Jangan tebak pakai logika umum! Jika teks tidak membahas $\\implies$ **Tidak Cukup**. |",
+    "visualizations_svg": [],
     "distractor_traps": [
-      "Jebakan 1: Overgeneralisasi Mutlak (Universal Overclaim) — Opsi yang mengubah data sampel survei menjadi kepastian mutlak ('seluruhnya pasti', 'selalu membuktikan', 'tidak pernah'). Opsi ini 99% SALAH di UTBK.",
-      "Jebakan 2: Bias Korelasi Dianggap Kausalitas — Dua peristiwa yang terjadi bersamaan di sampel disimpulkan sebagai hubungan sebab-akibat mutlak.",
-      "Jebakan 3: Homogeneity Fallacy (Mengabaikan Variasi Populasi) — Menarik kesimpulan tentang seluruh masyarakat Indonesia hanya dari responden di satu kota besar atau satu kelompok usia.",
-      "Jebakan 4: Menolak Seluruh Data Akibat Anomali Tunggal (All-or-Nothing Trap) — Menganggap seluruh hasil penelitian tidak berguna hanya karena ada 1–2 kasus yang menyimpang dari tren mayoritas."
+      "Jebakan 1: Overstatement Mutlak — Teks menyatakan 'sebagian besar penderita', opsi mengecoh dengan 'seluruh penderita tanpa terkecuali'. (Otomatis SALAH di tipe Pasti Benar).",
+      "Jebakan 2: Distorsi Kausalitas — Teks menyebutkan dua fenomena terjadi bersamaan, opsi menyatakan salah satu fenomena menjadi penyebab mutlak fenomena lain.",
+      "Jebakan 3: Kebenaran Umum Dunia Nyata yang Absen di Teks — Opsi berisi fakta ilmiah yang memang benar di dunia nyata, tetapi SAMA SEKALI TIDAK TERTULIS pada wacana stimulus."
     ],
     "quick_execution_algorithm": [
-      "Langkah 1: Identifikasi subjek dan sumber data pada stimulus (Apakah sampel terbatas atau populasi 100%?).",
-      "Langkah 2: Pindai opsi jawaban dan coret langsung opsi yang memuat kata mutlak ('selalu', 'pasti', 'seluruhnya') jika stimulus berbasis sampel.",
-      "Langkah 3: Untuk tipe soal 'Memperlemah', cari opsi yang membawa variabel luar penyebab alternatif yang belum diukur oleh peneliti."
+      "Langkah 1: Baca stem pertanyaan terlebih dahulu (apakah menanyakan Pasti Benar, Pasti Salah, Paling Mungkin Benar, atau Kualitas Simpulan).",
+      "Langkah 2: Tandai angka/kata kunci pada opsi dan cocokkan langsung ke kalimat rujukan di wacana (teknik scanning kata kunci).",
+      "Langkah 3: Coret opsi yang mengandung generalisasi ekstrem ('seluruhnya', 'selalu', 'tidak pernah', 'hanya satu-satunya') jika teks memakai bahasa proporsional."
     ]
   },
   "worked_examples": [
     {
       "example_id": "pu-1.1-var1",
-      "variation_name": "Variasi 1: Mendeteksi Simpulan Sah vs Generalisasi Tergesa-gesa (Hasty Generalization)",
+      "variation_name": "Archetype Soal 1: Menentukan Pernyataan yang PASTI BENAR Berdasarkan Teks",
       "difficulty": "easy",
       "question_type": "standard_mc",
-      "context_markdown": "Sebuah lembaga bimbingan belajar melakukan evaluasi hasil simulasi UTBK terhadap 40 siswa kelas intensif. Data menunjukkan bahwa 36 siswa yang rutin hadir sesi bedah soal malam hari mengalami kenaikan skor try out rata-rata sebesar 85 poin. Berdasarkan data tersebut, konsultan bimbel membuat beberapa draf kesimpulan untuk materi publikasi.",
+      "context_markdown": "Kementerian Kesehatan merilis laporan mengenai tren konsumsi minuman berpemanis dalam kemasan (MBDK) pada remaja usia 15–19 tahun di lima kota besar. Data survei menunjukkan bahwa $68\\%$ remaja mengonsumsi MBDK lebih dari tiga kali seminggu karena mudah diakses di sekitar lingkungan sekolah. Sebanyak $42\\%$ dari responden yang rutin mengonsumsi MBDK tersebut tercatat memiliki kadar gula darah puasa di atas batas normal. Meskipun demikian, hanya $15\\%$ remaja yang menyadari risiko penyakit diabetes melitus tipe 2 dari kebiasaan tersebut, sementara sisanya mengaku belum pernah mendapatkan edukasi nutrisi formal mengenai batasan asupan gula harian.",
       "svg_illustration": null,
-      "question_markdown": "Berdasarkan data 40 siswa tersebut, rumusan kesimpulan yang PALING TEPAT dan SAH secara kaidah logika generalisasi ilmiah adalah...",
+      "question_markdown": "Berdasarkan paragraf di atas, manakah pernyataan berikut yang **PASTI BENAR**?",
       "statements": null,
       "complex_table": null,
       "options": [
         {
           "key": "A",
-          "text_markdown": "Seluruh siswa yang mengikuti sesi bedah soal malam hari dipastikan akan lolos ke perguruan tinggi negeri impiannya."
+          "text_markdown": "Sebagian remaja usia 15–19 tahun di lima kota besar mengonsumsi MBDK tidak lebih dari tiga kali dalam seminggu."
         },
         {
           "key": "B",
-          "text_markdown": "Sesi bedah soal malam hari cenderung efektif membantu sebagian besar siswa dalam meningkatkan perolehan skor try out."
+          "text_markdown": "Seluruh remaja yang memiliki kadar gula darah di atas normal dipastikan akan mengidap diabetes melitus tipe 2 dalam lima tahun ke depan."
         },
         {
           "key": "C",
-          "text_markdown": "Siswa yang tidak mengikuti sesi malam hari dipastikan akan mengalami penurunan skor try out secara signifikan."
+          "text_markdown": "Akses MBDK di sekitar sekolah merupakan satu-satunya faktor pemicu tingginya konsumsi gula pada remaja."
         },
         {
           "key": "D",
-          "text_markdown": "Peningkatan skor try out semata-mata hanya ditentukan oleh kehadiran pada sesi bedah soal malam hari."
+          "text_markdown": "Mayoritas remaja telah mendapatkan edukasi nutrisi formal mengenai batasan asupan gula harian dari pihak sekolah."
         },
         {
           "key": "E",
-          "text_markdown": "Data 40 siswa membuktikan secara mutlak bahwa metode bimbingan belajar konvensional sudah tidak relevan."
+          "text_markdown": "Kurangnya edukasi nutrisi formal menyebabkan seluruh remaja berusia 15–19 tahun rutin mengonsumsi minuman berpemanis."
         }
       ],
-      "correct_answer": "B",
-      "conceptual_solution_markdown": "**Algoritma Eksekusi:**\n1. Periksa batas data: Data berasal dari 40 siswa di satu bimbel ($n$ terbatas), dengan 36 siswa ($90\\%$) mengalami kenaikan skor.\n2. Tentukan sifat generalisasi: Karena berbasis sampel ($n < N$), kesimpulan hanya boleh berderajat probabilitas, bukan kepastian mutlak.\n3. Evaluasi diksi modalitas: Opsi B menggunakan pembatas yang presisi (*'cenderung efektif membantu sebagian besar siswa'*), sesuai dengan fakta $90\\%$ dan menghindari overgeneralisasi.",
-      "quick_trick_markdown": "**Trik 15 Detik UTBK:**\nCoret opsi ekstrem: A ('dipastikan lolos'), C ('dipastikan turun'), D ('semata-mata hanya'), E ('membuktikan secara mutlak'). Opsi yang tersisa dan bernada proporsional terukur hanyalah **B**.",
-      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Jebakan Universal Overclaim):** Mengklaim kepastian lolos PTN padahal data hanya kenaikan skor try out internal.\n- **Opsi C Salah (Jebakan Negasi Palsu / Inversi Ilegal):** Teks tidak membahas performa siswa yang tidak hadir sesi malam.\n- **Opsi D Salah (Jebakan Kausalitas Tunggal Ekstrem):** Kata 'semata-mata hanya' mengabaikan faktor belajar mandiri, bakat, dan istirahat.\n- **Opsi E Salah (Jebakan Lompatan Topik Ekstrem):** Menyimpulkan nasib bimbel konvensional yang sama sekali tidak diteliti."
+      "correct_answer": "A",
+      "conceptual_solution_markdown": "**Langkah Logika Verifikasi:**\n1. Di teks tertulis: $68\\%$ remaja mengonsumsi MBDK lebih dari tiga kali seminggu.\n2. Komplemen logisnya: Sisanya sebesar $100\\% - 68\\% = 32\\%$ remaja mengonsumsi MBDK $\\le 3$ kali seminggu (kategori 'tidak lebih dari tiga kali seminggu').\n3. Karena $32\\%$ merepresentasikan 'sebagian', maka pernyataan pada opsi A secara matematis dan faktual **PASTI BENAR**.",
+      "quick_trick_markdown": "**Trik 10 Detik UTBK:**\nCoret kata ekstrem: B (*'seluruh... dipastikan'*), C (*'satu-satunya'*), D (bertentangan: teks bilang mayoritas $85\\%$ *belum* diedukasi), E (*'seluruh'*). Hanya opsi **A** yang menyajikan deduksi proporsi secara valid dan moderat.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi B Salah (Jebakan Overclaim Fatalistik):** Teks hanya menyatakan gula darah di atas normal, bukan vonis pasti terkena diabetes dalam 5 tahun.\n- **Opsi C Salah (Jebakan Kausalitas Tunggal):** Kata 'satu-satunya' salah; teks hanya menyebut 'karena mudah diakses', tanpa menegasikan faktor lain.\n- **Opsi D Salah (Jebakan Kontradiksi Fakta):** Teks menyebut hanya $15\\%$ yang sadar risiko dan sisanya ($85\\%$) belum pernah diedukasi $\\implies$ mayoritas justru BELUM teredukasi.\n- **Opsi E Salah (Jebakan Generalisasi Mutlak):** Kata 'seluruh remaja' bertentangan dengan fakta bahwa hanya $68\\%$ yang rutin."
     },
     {
       "example_id": "pu-1.1-var2",
-      "variation_name": "Variasi 2: Menguji Keterwakilan Sampel & Bias Seleksi (Selection Bias)",
-      "difficulty": "medium",
+      "variation_name": "Archetype Soal 2: Menentukan Pernyataan yang PASTI SALAH Berdasarkan Wacana",
+      "difficulty": "easy",
       "question_type": "standard_mc",
-      "context_markdown": "Dinas Perhubungan sebuah kota metropolitan berencana menyesuaikan tarif bus raya terpadu (BRT). Untuk mengukur reaksi masyarakat, tim survei menyebarkan kuesioner daring melalui media sosial resmi instansi pada pukul 09.00–11.00 di hari kerja. Dari 2.500 responden yang mengisi, sebanyak 78% menyatakan sangat setuju dengan kenaikan tarif jika fasilitas armada ditambah. Berdasarkan hasil ini, kepala dinas menyimpulkan: *'Warga kota metropolitan pada dasarnya mendukung penyesuaian tarif BRT demi perbaikan fasilitas.'*",
+      "context_markdown": "Sebuah riset efisiensi energi menguji 100 unit pendingin ruangan (AC) berbasis inverter generasi terbaru. Hasil pengujian laboratorium menunjukkan bahwa konsumsi listrik AC inverter menurun hingga $35\\%$ dibandingkan AC non-inverter ketika ruangan sudah mencapai suhu target $24^\\circ\\text{C}$. Selain itu, seluruh unit uji inverter yang dipasang pada ruangan berinsulasi kedap udara mampu mempertahankan temperatur konstan dengan fluktuasi kurang dari $0{,}5^\\circ\\text{C}$ sepanjang $8$ jam pengujian non-stop.",
       "svg_illustration": null,
-      "question_markdown": "Pernyataan evaluatif berikut yang PALING TEPAT menunjukkan kelemahan metodologis dari kesimpulan kepala dinas di atas adalah...",
+      "question_markdown": "Berdasarkan informasi tersebut, manakah pernyataan berikut yang **PASTI SALAH**?",
       "statements": null,
       "complex_table": null,
       "options": [
         {
           "key": "A",
-          "text_markdown": "Jumlah 2.500 responden terlalu banyak sehingga menghabiskan anggaran survei publik."
+          "text_markdown": "AC non-inverter mengonsumsi daya listrik yang lebih besar daripada AC inverter ketika suhu ruangan telah mencapai $24^\\circ\\text{C}$."
         },
         {
           "key": "B",
-          "text_markdown": "Pengambilan sampel di jam kerja via media sosial instansi berpotensi bias seleksi, sehingga mengecualikan kelompok pekerja lapangan, buruh komuter pagi, dan masyarakat tanpa akses internet aktif."
+          "text_markdown": "Terdapat unit AC inverter uji pada ruangan berinsulasi kedap udara yang mengalami fluktuasi temperatur sebesar $1{,}8^\\circ\\text{C}$ selama 8 jam pengujian."
         },
         {
           "key": "C",
-          "text_markdown": "Persentase 78% tidak dapat dipercaya karena tidak mencapai batas mayoritas mutlak 100%."
+          "text_markdown": "AC inverter generasi terbaru dirancang untuk dapat menghemat konsumsi energi listrik pada suhu tertentu."
         },
         {
           "key": "D",
-          "text_markdown": "Kuesioner seharusnya hanya diisi oleh pengemudi bus dan petugas halte, bukan penumpang."
+          "text_markdown": "Sebagian AC inverter yang tidak dipasang pada ruangan kedap udara mungkin memiliki performa fluktuasi suhu yang berbeda."
         },
         {
           "key": "E",
-          "text_markdown": "Kepala dinas seharusnya menggunakan penalaran deduktif silogisme murni tanpa perlu mengadakan survei empiris."
+          "text_markdown": "Fluktuasi temperatur pada AC inverter pada ruangan kedap udara berada pada rentang yang sangat stabil."
         }
       ],
       "correct_answer": "B",
-      "conceptual_solution_markdown": "**Algoritma Eksekusi:**\n1. Identifikasi sasaran klaim: *'Warga kota metropolitan'* (populasi sangat heterogen dari berbagai kelas sosial).\n2. Identifikasi metode survei: Kuesioner daring di medsos instansi pukul 09.00–11.00 WIB hari kerja.\n3. Analisis representativitas: Kelompok komuter sesungguhnya yang berangkat pukul 05.30–08.00 WIB dan bekerja di lapangan tidak sedang memantau medsos pada jam tersebut. Terjadi **bias seleksi (*Sampling Bias*)** yang fatal sehingga kesimpulan tidak mewakili populasi riil pengguna BRT.",
-      "quick_trick_markdown": "**Trik 20 Detik UTBK:**\nSoal kelemahan survei di UTBK hampir selalu menguji: *Apakah sampel mewakili heterogenitas populasi?* Survei di medsos pada jam kerja instansi jelas memiliki bias demografi. Opsi **B** langsung membongkar kelemahan ini.",
-      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah:** 2.500 responden secara kuantitatif sudah cukup besar; kelemahannya bukan di jumlah, melainkan di keterwakilan.\n- **Opsi C Salah:** Dalam ilmu sosial dan statistika, 78% adalah mayoritas kuat; tidak ada aturan riset yang mewajibkan 100%.\n- **Opsi D Salah:** Kebijakan tarif berdampak pada penumpang, bukan hanya pengemudi.\n- **Opsi E Salah:** Kebijakan publik wajib berbasis data empiris, bukan sekadar deduksi di atas kertas."
+      "conceptual_solution_markdown": "**Langkah Logika Verifikasi:**\n1. Fakta di teks: *'seluruh unit uji inverter yang dipasang pada ruangan berinsulasi kedap udara mampu mempertahankan temperatur konstan dengan fluktuasi kurang dari $0{,}5^\\circ\\text{C}$ sepanjang 8 jam'*.\n2. Opsi B menyatakan: *'Terdapat unit AC inverter uji pada ruangan berinsulasi kedap udara yang mengalami fluktuasi sebesar $1{,}8^\\circ\\text{C}$'*.\n3. Karena $1{,}8^\\circ\\text{C} > 0{,}5^\\circ\\text{C}$, pernyataan ini secara langsung mengontradiksi klaim kuantitatif universal ('seluruh unit') di teks $\\implies$ **PASTI SALAH**.",
+      "quick_trick_markdown": "**Trik 15 Detik UTBK:**\nSoal meminta 'Pasti Salah'. Cari kontradiksi langsung terhadap pernyataan berkata kunci mutlak di teks. Teks: *seluruh unit fluktuasi $< 0{,}5^\\circ\\text{C}$*. Opsi B: *ada unit yang fluktuasinya $1{,}8^\\circ\\text{C}$*. Ini kontradiksi 100%. Langsung pilih **B**.",
+      "why_others_are_wrong_markdown": "**Bedah Status Opsi Lain:**\n- **Opsi A Pasti Benar:** Konsumsi inverter turun $35\\%$, artinya non-inverter memang lebih boros.\n- **Opsi C Pasti Benar:** Sejalan dengan narasi penghematan energi pada suhu $24^\\circ\\text{C}$.\n- **Opsi D Mungkin Benar:** Teks tidak menguji ruangan non-kedap, sehingga performa berbeda adalah kemungkinan yang sah.\n- **Opsi E Pasti Benar:** Fluktuasi $< 0{,}5^\\circ\\text{C}$ adalah definisi operasional stabil."
     },
     {
       "example_id": "pu-1.1-var3",
-      "variation_name": "Variasi 3: Penanganan Data Anomali & Kontradiktif (Black Swan Problem)",
-      "difficulty": "hard",
-      "question_type": "reading_comprehension",
-      "context_markdown": "Sebuah perusahaan teknologi menguji daya tahan baterai generasi terbaru pada 1.000 unit ponsel pintar dalam kondisi suhu ekstrem ($-10^\\circ\\text{C}$ hingga $45^\\circ\\text{C}$). Hasil pengujian selama 72 jam menunjukkan bahwa 965 unit (96,5%) mampu mempertahankan kapasitas daya di atas 80%. Namun, pada 35 unit (3,5%), baterai mengalami pemuaian (kembung) drastis dan mati total sebelum 24 jam.\n\nDalam draf rilis media awal, manajer pemasaran menulis: *'Baterai generasi terbaru terbukti 100% tangguh dan aman di segala cuaca tanpa ada risiko kendala apa pun.'*",
+      "variation_name": "Archetype Soal 3: Simpulan yang PALING MUNGKIN BENAR dari Data Empiris",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data dari asosiasi pengusaha logistik menunjukkan bahwa selama tiga tahun berturut-turut, perusahaan ekspedisi yang beralih ke armada van listrik mencatatkan penurunan biaya operasional perawatan mesin hingga $40\\%$ per kilometer perjalanan. Pada periode yang sama, pengemudi armada van listrik melaporkan kelelahan berkendara yang lebih rendah akibat getaran mesin yang minim. Di sisi lain, harga beli awal kendaraan listrik masih $30\\%$ lebih tinggi dibandingkan armada konvensional berbahan bakar fosil.",
       "svg_illustration": null,
-      "question_markdown": "Berdasarkan prinsip penanganan anomali dalam generalisasi ilmiah, tindakan korektif yang PALING TEPAT dan bertanggung jawab adalah...",
+      "question_markdown": "Berdasarkan teks di atas, manakah simpulan yang **PALING MUNGKIN BENAR**?",
       "statements": null,
       "complex_table": null,
       "options": [
         {
           "key": "A",
-          "text_markdown": "Menghapus data 35 unit yang rusak dari laporan pengujian agar tidak merusak reputasi produk di pasar."
+          "text_markdown": "Seluruh perusahaan ekspedisi di Indonesia akan segera bangkrut apabila tidak segera mengganti seluruh armadanya dengan van listrik."
         },
         {
           "key": "B",
-          "text_markdown": "Menyatakan bahwa baterai tersebut gagal total dan membatalkan seluruh peluncuran ponsel pintar secara permanen."
+          "text_markdown": "Penggunaan van listrik berpotensi memberikan efisiensi biaya jangka panjang bagi operasional ekspedisi meskipun membutuhkan investasi awal lebih tinggi."
         },
         {
           "key": "C",
-          "text_markdown": "Merevisi klaim universal ('100% aman tanpa risiko') menjadi klaim terukur, serta menginvestigasi faktor penyebab pemuaian pada 3,5% unit anomali tersebut sebagai batas operasional produk."
+          "text_markdown": "Kelelahan pengemudi merupakan satu-satunya faktor yang memengaruhi kelancaran pengiriman barang pada industri logistik."
         },
         {
           "key": "D",
-          "text_markdown": "Menyalahkan konsumen pengguna karena dianggap menguji ponsel di tempat yang tidak wajar."
+          "text_markdown": "Biaya perawatan mesin van listrik dipastikan akan terus turun hingga mencapai nol rupiah pada tahun-tahun berikutnya."
         },
         {
           "key": "E",
-          "text_markdown": "Mengubah metode pengujian menjadi penalaran deduktif agar anomali fisik baterai tidak diperhitungkan."
+          "text_markdown": "Kendaraan berbahan bakar fosil sudah tidak lagi diproduksi oleh industri otomotif saat ini."
         }
       ],
-      "correct_answer": "C",
-      "conceptual_solution_markdown": "**Algoritma Eksekusi:**\n1. Identifikasi anomali: 35 unit baterai (3,5%) kembung dan mati total.\n2. Identifikasi cacat klaim manajer: Menyatakan *'terbukti 100% tangguh tanpa risiko'* (mengabaikan anomali nyata).\n3. Kaidah integritas ilmiah: Menghadapi data penyangkal (*counter-example*) tidak boleh dengan *cherry-picking* (menghapus data) atau penolakan reaktif (membatalkan seluruh produk), melainkan dengan **Revisi Lingkup Klaim (*Scope Restriction*)** dan analisis akar masalah anomali.",
-      "quick_trick_markdown": "**Trik 20 Detik UTBK:**\nAturan Emas Etika Sains di UTBK:\n- Coret A (Kecurangan ilmiah / cherry-picking).\n- Coret B (Reaksi ekstrem berlebihan).\n- Coret D (Menyalahkan subjek).\nPilihan ilmiah dewasa dan objektif selalu berupa **pembatasan klaim & investigasi anomali** $\\implies$ **C**.",
-      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Jebakan Cherry-Picking):** Menghilangkan data demi estetika laporan melanggar etika penalaran logis.\n- **Opsi B Salah (Jebakan False Dilemma):** 96,5% berhasil adalah capaian tinggi; kegagalan 3,5% adalah bahan evaluasi batas ambang, bukan alasan membuang seluruh riset.\n- **Opsi D Salah:** Pengujian dilakukan oleh laboratorium internal, belum di tangan konsumen.\n- **Opsi E Salah:** Fenomena fisik tidak bisa diselesaikan dengan abstraksi deduktif tanpa verifikasi materiil."
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Langkah Logika Simpulan Probabilistik:**\n1. Sintesis data teks: Ada efisiensi biaya perawatan $40\\%$ (keuntungan jangka panjang) dan kenyamanan supir, tetapi ada kendala modal awal $30\\%$ lebih mahal (investasi awal).\n2. Simpulan yang valid harus mencerminkan perimbangan kedua fakta tersebut secara realistis tanpa klaim mutlak.\n3. Opsi B menggunakan frasa modalitas terukur (*'berpotensi memberikan efisiensi biaya jangka panjang... meskipun membutuhkan investasi awal lebih tinggi'*), merangkum fakta teks dengan sempurna.",
+      "quick_trick_markdown": "**Trik Modalitas Bahasa:**\nPerhatikan modalitas: Opsi A (*'akan segera bangkrut'*), C (*'satu-satunya faktor'*), D (*'dipastikan turun sampai nol'*), E (*'sudah tidak lagi diproduksi'*). Semuanya overclaim tidak berdasar. Opsi **B** menggunakan kata kunci aman: *'berpotensi'* dan mencakup dua premis teks.",
+      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Jebakan Ekstrem / Slippery Slope):** Biaya awal tinggi tidak berarti perusahaan langsung bangkrut.\n- **Opsi C Salah (Jebakan Kausalitas Tunggal):** Kelelahan pengemudi hanya salah satu faktor kenyamanan, bukan satu-satunya penentu kelancaran.\n- **Opsi D Salah (Jebakan Ekstrapolasi Tidak Masuk Akal):** Biaya perawatan tidak mungkin turun menjadi 0 rupiah.\n- **Opsi E Salah (Jebakan Mengarang Informasi Luar):** Teks tidak membahas penghentian produksi mobil fosil."
     },
     {
       "example_id": "pu-1.1-var4",
-      "variation_name": "Variasi 4: Memilih Pasangan Modalitas Logika (Sempurna vs Parsial)",
+      "variation_name": "Archetype Soal 4: Penilaian KUALITAS SIMPULAN Standar Pusmendik (5 Opsi Resmi)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Perhatikan dua proses evaluasi berikut:\n\n* **Kasus 1:** Seorang auditor keuangan memeriksa laporan transaksi kas kecil di seluruh 12 kantor cabang PT X selama bulan Oktober. Setiap kantor cabang diperiksa buku kas dan bukti fisiknya secara lengkap tanpa ada satu pun yang terlewat. Hasilnya, seluruh 12 kantor cabang memiliki neraca kas yang seimbang.\n* **Kasus 2:** Sebuah lembaga gizi menguji kadar iodium pada 200 merek garam dapur kemasan yang beredar di pasar tradisional Pulau Jawa. Hasil pengujian menunjukkan 176 merek garam memenuhi standar nasional (SNI).",
+      "context_markdown": "Penelitian terhadap 200 pasien pascaoperasi ortopedi menunjukkan bahwa pasien yang rutin menjalani sesi fisioterapi mandiri terpandu aplikasi digital mengalami percepatan pemulihan mobilitas sendi sebesar $25\\%$ lebih cepat dibandingkan kelompok yang hanya mengandalkan kontrol berkala di rumah sakit. Namun, fisioterapi aplikasi digital ini hanya optimal jika pasien tidak memiliki riwayat komorbiditas artritis degeneratif berat.\n\n*Simpulan yang diuji:*\n**Seorang pasien pascaoperasi ortopedi tanpa riwayat artritis degeneratif berat yang menggunakan fisioterapi mandiri terpandu aplikasi digital akan mengalami pemulihan mobilitas sendi yang lebih cepat.**",
       "svg_illustration": null,
-      "question_markdown": "Berdasarkan prinsip generalisasi sempurna dan tidak sempurna, pasangan rumusan kesimpulan yang PALING TEPAT untuk Kasus 1 dan Kasus 2 berturut-turut adalah...",
+      "question_markdown": "Berdasarkan informasi pada wacana di atas, bagaimanakah kualitas simpulan tersebut?",
       "statements": null,
       "complex_table": null,
       "options": [
         {
           "key": "A",
-          "text_markdown": "Kasus 1: 'Cenderung seluruh kantor cabang seimbang'; Kasus 2: 'Seluruh garam di Indonesia pasti memenuhi SNI'."
+          "text_markdown": "Simpulan tersebut PASTI BENAR."
         },
         {
           "key": "B",
-          "text_markdown": "Kasus 1: 'Seluruh 12 kantor cabang PT X memiliki neraca seimbang pada bulan Oktober'; Kasus 2: 'Sebagian besar garam dapur di pasar tradisional Pulau Jawa cenderung memenuhi SNI'."
+          "text_markdown": "Simpulan tersebut MUNGKIN BENAR."
         },
         {
           "key": "C",
-          "text_markdown": "Kasus 1: 'Beberapa kantor cabang mungkin seimbang'; Kasus 2: 'Semua garam dapur di Pulau Jawa pasti higienis'."
+          "text_markdown": "Simpulan tersebut PASTI SALAH."
         },
         {
           "key": "D",
-          "text_markdown": "Kasus 1: 'PT X tidak akan pernah mengalami defisit kas'; Kasus 2: 'Garam dapur yang tidak ber-SNI berasal dari luar Pulau Jawa'."
+          "text_markdown": "Simpulan tidak relevan dengan informasi yang diberikan."
         },
         {
           "key": "E",
-          "text_markdown": "Kedua kasus menghasilkan kesimpulan yang setara kepastiannya dan wajib menggunakan kata 'pasti'."
+          "text_markdown": "Informasi tidak cukup untuk menilai simpulan."
         }
       ],
-      "correct_answer": "B",
-      "conceptual_solution_markdown": "**Algoritma Eksekusi:**\n1. Analisis Kasus 1: Populasi tertutup (12 kantor cabang pada bulan Oktober) diperiksa 100% tuntas ($n = N$). Ini adalah **Generalisasi Sempurna**, sah menggunakan kata mutlak universal (*'seluruh 12 kantor cabang...'*).\n2. Analisis Kasus 2: Merek garam di Pulau Jawa sangat banyak dan dinamis, hanya diambil sampel 200 merek ($n < N$). Ini adalah **Generalisasi Parsial**, wajib menggunakan modalitas probabilitas (*'sebagian besar... cenderung memenuhi'*).\n3. Pasangan yang merefleksikan kedua prinsip ini secara presisi adalah Opsi B.",
-      "quick_trick_markdown": "**Trik 15 Detik UTBK:**\nKasus 1 ($100\\%$ terperiksa) $\\rightarrow$ Boleh 'Seluruh/Semua'.\nKasus 2 (Hanya 200 sampel) $\\rightarrow$ Wajib 'Sebagian besar / Cenderung'.\nSatu-satunya opsi yang memenuhi pola ini adalah **B**.",
-      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah:** Terbalik! Kasus 1 yang 100% malah diberi kata 'cenderung', sedangkan Kasus 2 yang berbasis sampel malah diberi kata 'pasti'.\n- **Opsi C Salah:** Kasus 1 meremehkan fakta audit 100% ('beberapa'), Kasus 2 melompat ke klaim higienis tanpa data.\n- **Opsi D Salah:** Melakukan klaim masa depan ('tidak akan pernah defisit') yang melampaui data bulan Oktober.\n- **Opsi E Salah:** Menganggap kepastian sampel sama dengan kepastian sensus 100%."
+      "correct_answer": "A",
+      "conceptual_solution_markdown": "**Algoritma Evaluasi Kualitas Simpulan Pusmendik:**\n1. Periksa premis di teks:\n   - Premis 1: Fisioterapi aplikasi digital mempercepat pemulihan $25\\%$.\n   - Premis 2: Optimal jika pasien *tidak memiliki* riwayat komorbiditas artritis degeneratif berat.\n2. Periksa subjek pada simpulan yang diuji:\n   - Subjek: Pasien pascaoperasi *tanpa riwayat artritis degeneratif berat* yang menggunakan fisioterapi aplikasi.\n3. Uji kesesuaian: Seluruh syarat pada Premis 1 dan batasan pada Premis 2 terpenuhi secara deduktif.\n4. Maka simpulan tersebut dijamin secara logis oleh teks $\\implies$ **PASTI BENAR**.",
+      "quick_trick_markdown": "**Pola 5 Opsi Standar Pusmendik:**\n- Jika simpulan merupakan konsekuensi logis langsung dari syarat yang terpenuhi $\\implies$ **A (Pasti Benar)**.\n- Jika simpulan mungkin terjadi tapi ada faktor yang belum dipastikan $\\implies$ **B (Mungkin Benar)**.\n- Jika bertolak belakang dengan teks $\\implies$ **C (Pasti Salah)**.\n- Pada kasus ini, semua syarat terpenuhi 100%, jadi langsung pilih **A**.",
+      "why_others_are_wrong_markdown": "**Bedah Kategori Opsi Pusmendik:**\n- **Opsi B (Mungkin Benar) Salah:** Pasien sudah secara spesifik dinyatakan 'tanpa riwayat komorbiditas berat', sehingga hasil percepatan pemulihan bukan lagi sekadar spekulasi probabilitas, melainkan kepastian klaim teks.\n- **Opsi C (Pasti Salah) Salah:** Simpulan sejalan dan didukung penuh oleh teks.\n- **Opsi D (Tidak Relevan) Salah:** Simpulan membahas variabel yang persis sama dengan stimulus.\n- **Opsi E (Info Tidak Cukup) Salah:** Informasi yang disediakan sangat spesifik dan cukup untuk menilai."
     },
     {
       "example_id": "pu-1.1-var5",
-      "variation_name": "Variasi 5: Menentukan Pernyataan yang Memperlemah Hipotesis Peneliti (Tipe Soal Favorit)",
+      "variation_name": "Archetype Soal 5: Tabel Kompleks 5 Pernyataan Evaluasi Kebenaran (Format Asli Pusmendik)",
       "difficulty": "hard",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah studi epidemiologi di Kota K mengamati 500 orang dewasa yang mengonsumsi sedikitnya dua cangkir teh hijau fermentasi setiap hari selama 6 bulan. Pada akhir periode studi, peneliti menemukan bahwa 84% partisipan memiliki tekanan darah normal dan kadar kolesterol LDL yang lebih rendah dibandingkan rata-rata warga kota. Dari temuan ini, peneliti merumuskan hipotesis: *'Senyawa katekin dalam teh hijau fermentasi merupakan faktor utama yang menyebabkan penurunan tekanan darah dan kolesterol pada masyarakat perkotaan.'*",
+      "question_type": "complex_table",
+      "context_markdown": "Hasil sensus pertanian digital di suatu provinsi mencatat: (1) Sebanyak $60\\%$ kelompok tani telah mengadopsi sensor kelembapan tanah berbasis IoT. (2) Kelompok tani pengguna sensor IoT mencatatkan penghematan air irigasi sebesar $30\\%$ dan peningkatan hasil panen gabah sebesar $12\\%$. (3) Biaya pengadaan sensor IoT disubsidi penuh oleh pemerintah daerah untuk kelompok tani dengan luas lahan di bawah 2 hektare. (4) Kelompok tani dengan luas lahan di atas 2 hektare wajib menanggung $50\\%$ biaya instalasi mandiri.",
       "svg_illustration": null,
-      "question_markdown": "Manakah di antara temuan berikut yang jika benar akan PALING MELEMAHKAN hipotesis peneliti tersebut?",
+      "question_markdown": "Berdasarkan informasi tersebut, tentukan urutan nilai kebenaran (**BENAR** atau **SALAH**) yang tepat untuk kelima pernyataan pada tabel di bawah ini!",
       "statements": null,
-      "complex_table": null,
+      "complex_table": {
+        "headers": ["Pernyataan", "Benar", "Salah"],
+        "rows": [
+          {
+            "statement": "Sebagian kelompok tani di provinsi tersebut belum mengadopsi sensor kelembapan tanah berbasis IoT.",
+            "correct_choice": "Benar"
+          },
+          {
+            "statement": "Kelompok tani dengan luas lahan 1,5 hektare wajib membayar separuh dari biaya instalasi sensor IoT.",
+            "correct_choice": "Salah"
+          },
+          {
+            "statement": "Penggunaan sensor IoT terbukti membantu menekan penggunaan volume air irigasi pertanian.",
+            "correct_choice": "Benar"
+          },
+          {
+            "statement": "Pemerintah daerah memberikan subsidi penuh biaya instalasi kepada seluruh kelompok tani tanpa memandang luas lahan.",
+            "correct_choice": "Salah"
+          },
+          {
+            "statement": "Peningkatan hasil panen gabah hanya dialami oleh kelompok tani yang memiliki luas lahan di bawah 2 hektare.",
+            "correct_choice": "Salah"
+          }
+        ]
+      },
       "options": [
         {
           "key": "A",
-          "text_markdown": "Sebagian partisipan dalam studi tersebut juga rutin mengonsumsi buah-buahan lokal saat sarapan pagi."
+          "text_markdown": "Benar – Salah – Benar – Salah – Salah"
         },
         {
           "key": "B",
-          "text_markdown": "Hampir seluruh partisipan dalam studi tersebut adalah anggota komunitas pegiat lari pagi yang menjalani pola diet rendah lemak dan bebas rokok sejak bertahun-tahun sebelum studi dimulai."
+          "text_markdown": "Benar – Benar – Salah – Salah – Benar"
         },
         {
           "key": "C",
-          "text_markdown": "Harga teh hijau fermentasi di Kota K relatif lebih mahal daripada teh hitam konvensional."
+          "text_markdown": "Salah – Salah – Benar – Salah – Benar"
         },
         {
           "key": "D",
-          "text_markdown": "Sebanyak 16% partisipan yang tekanan darahnya tidak turun memiliki riwayat hipertensi genetik keluarga."
+          "text_markdown": "Benar – Salah – Salah – Benar – Salah"
         },
         {
           "key": "E",
-          "text_markdown": "Penelitian serupa di negara subtropis juga mencatat manfaat kesehatan dari konsumsi teh hijau."
+          "text_markdown": "Salah – Benar – Salah – Benar – Salah"
         }
       ],
-      "correct_answer": "B",
-      "conceptual_solution_markdown": "**Algoritma Eksekusi:**\n1. Identifikasi klaim kausalitas peneliti: *Teh hijau fermentasi adalah faktor utama penyebab tekanan darah normal dan kolesterol rendah*.\n2. Cara meruntuhkan klaim kausalitas generalisasi: Cari **Variabel Perancu (*Confounding Variable*)** yang menjadi penyebab alternatif lebih kuat daripada teh hijau itu sendiri.\n3. Uji Opsi B: Jika partisipan ternyata adalah komunitas pegiat lari pagi, diet rendah lemak, dan non-perokok sejak lama, maka kesehatan jantung mereka disebabkan oleh gaya hidup aktif tersebut, BUKAN oleh teh hijau fermentasi. Temuan ini langsung meruntuhkan klaim bahwa teh hijau adalah 'faktor utama'.",
-      "quick_trick_markdown": "**Trik 30 Detik UTBK (Pelemah Kausalitas):**\nKlaim: *X menyebabkan Y*.\nPelemah terkuat = *Ternyata ada Z (faktor lain yang jauh lebih berpengaruh) yang sudah ada pada subjek sebelum X diberikan*. Opsi **B** menghadirkan faktor Z (kebiasaan lari pagi & diet ketat).",
-      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah (Terlalu Lemah):** Kata 'sebagian' buah lokal tidak cukup kuat untuk menjelaskan efek drastis pada 84% partisipan.\n- **Opsi C Salah (Informasi Tak Relevan):** Harga teh tidak ada hubungannya dengan efikasi biologis senyawa katekin.\n- **Opsi D Salah (Malah Memperjelas Anomali):** Justru mendukung peneliti dengan menjelaskan mengapa 16% tidak turun (karena faktor genetik).\n- **Opsi E Salah (Malah Memperkuat):** Menemukan hal serupa di negara subtropis justru memperkuat hipotesis, bukan memperlemah."
-    },
-    {
-      "example_id": "pu-1.1-var6",
-      "variation_name": "Variasi 6: Analisis Lompatan Induktif vs Deduktif Silogistik",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Perhatikan percakapan dua orang analis cuaca berikut:\n\n* **Analis 1:** *'Semua badai tropis di belahan bumi utara berputar berlawanan arah jarum jam akibat Efek Coriolis. Badai Mawar terbentuk di Samudra Pasifik belahan utara. Oleh karena itu, Badai Mawar pasti berputar berlawanan arah jarum jam.'*\n* **Analis 2:** *'Selama sepuluh tahun terakhir, setiap kali suhu permukaan laut di wilayah X naik lebih dari $1,5^\\circ\\text{C}$ pada bulan November, wilayah pesisir Y selalu dilanda curah hujan ekstrem pada bulan Desember. Saat ini suhu di wilayah X telah naik $1,8^\\circ\\text{C}$. Oleh karena itu, pesisir Y sangat berpeluang mengalami curah hujan ekstrem pada Desember mendatang.'*",
-      "svg_illustration": null,
-      "question_markdown": "Berdasarkan prinsip metodologi logika, kesimpulan yang paling tepat mengenai corak penalaran kedua analis tersebut adalah...",
-      "statements": null,
-      "complex_table": null,
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Analis 1 menggunakan penalaran induktif yang bersifat probabilistik, sedangkan Analis 2 menggunakan deduktif mutlak."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Analis 1 menggunakan penalaran deduktif dengan kesimpulan mutlak niscaya, sedangkan Analis 2 menggunakan penalaran induktif generalisasi dengan kesimpulan probabilistik."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Kedua analis sama-sama menggunakan silogisme deduktif karena keduanya mengacu pada fenomena fisika atmosfer."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Kesimpulan Analis 2 tidak memiliki nilai ilmiah karena tidak menguji seluruh samudra di dunia."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Analis 1 melakukan kesalahan generalisasi tergesa-gesa karena belum mengamati Badai Mawar secara langsung."
-        }
-      ],
-      "correct_answer": "B",
-      "conceptual_solution_markdown": "**Algoritma Eksekusi:**\n1. Analis 1: Memiliki hukum umum (Efek Coriolis pada semua badai utara) $\\rightarrow$ diterapkan pada Badai Mawar. Hubungan premis-konklusi bersifat niscaya/mutlak 100%. Ini adalah **Penalaran Deduktif**.\n2. Analis 2: Bertolak dari data deret waktu 10 tahun terakhir (kasus partikular berulang) $\\rightarrow$ memproyeksikan kejadian masa depan dengan modalitas *'sangat berpeluang'*. Ini adalah **Penalaran Induktif Generalisasi (Probabilistik)**.\n3. Opsi B mendefinisikan kontras ini secara tepat.",
-      "quick_trick_markdown": "**Trik 15 Detik UTBK:**\nAnalis 1: Hukum umum $\\rightarrow$ Kasus khusus = **Deduktif Mutlak**.\nAnalis 2: Data 10 tahun $\\rightarrow$ Prediksi peluang = **Induktif Probabilistik**.\nLangsung pilih **B**.",
-      "why_others_are_wrong_markdown": "**Bedah Jebakan Opsi Pengecoh:**\n- **Opsi A Salah:** Terbalik total antara posisi deduktif dan induktif.\n- **Opsi C Salah:** Analis 2 tidak menggunakan silogisme deduktif, melainkan ekstrapolasi data historis (induksi).\n- **Opsi D Salah:** Prediksi berbasis data 10 tahun adalah prosedur baku klimatologi empiris (sah secara induktif).\n- **Opsi E Salah:** Analis 1 mendeduksi dari hukum sains yang sudah terbukti secara mekanika fluida, bukan induksi tergesa-gesa."
+      "correct_answer": "A",
+      "conceptual_solution_markdown": "**Verifikasi Setiap Baris:**\n1. **Baris 1 (BENAR):** Karena $60\\%$ sudah adopsi, maka $40\\%$ belum adopsi ($40\\% = $ sebagian).\n2. **Baris 2 (SALAH):** Lahan 1,5 hektare masuk kategori 'di bawah 2 hektare', sehingga berhak subsidi PENUH (gratis), bukan membayar 50%.\n3. **Baris 3 (BENAR):** Teks mencatat penghematan air sebesar $30\\%$, membuktikan penekanan volume air irigasi.\n4. **Baris 4 (SALAH):** Subsidi penuh hanya untuk lahan $< 2$ hektare, bukan tanpa memandang luas lahan.\n5. **Baris 5 (SALAH):** Teks menyebut peningkatan panen dialami oleh 'kelompok tani pengguna sensor IoT', bukan dibatasi oleh ukuran lahan.",
+      "quick_trick_markdown": "**Kunci Cepat Tabel Kompleks Pusmendik:**\nPindai angka batas limit: Lahan $< 2$ ha = subsidi $100\\%$; Lahan $> 2$ ha = bayar $50\\%$. Cocokkan nilai limit ini pada baris 2, 4, dan 5 langsung untuk verifikasi kilat dalam 20 detik.",
+      "why_others_are_wrong_markdown": "**Rangkuman Evaluasi Baris Pengecoh:**\n- Baris 2 salah karena $1{,}5 < 2$ sehingga gratis.\n- Baris 4 salah karena memanipulasi syarat kuantitatif subsidi menjadi tanpa syarat.\n- Baris 5 salah karena menambahkan kata pembatas 'hanya' yang tidak ada pada wacana."
     }
   ]
 }
