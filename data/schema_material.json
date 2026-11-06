@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UTBKEduMaterial",
+  "description": "JSON schema for UTBK-SNBT learning materials and worked examples",
+  "type": "object",
+  "required": ["metadata", "content", "worked_examples"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "id",
+        "subtest",
+        "chapter_num",
+        "chapter_title",
+        "subchapter_num",
+        "subchapter_title",
+        "title",
+        "micro_syllabus_covered",
+        "requires_svg",
+        "updated_at"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for this material, e.g. pk-3.1.1"
+        },
+        "subtest": {
+          "type": "string",
+          "enum": ["PU", "PPU", "PBM", "PK", "LBI", "LBE", "PM"],
+          "description": "Subtest abbreviation"
+        },
+        "chapter_num": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chapter_title": {
+          "type": "string"
+        },
+        "subchapter_num": {
+          "type": "string"
+        },
+        "subchapter_title": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "micro_syllabus_covered": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "requires_svg": {
+          "type": "boolean"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": [
+        "concept_markdown",
+        "visualizations_svg",
+        "formulas_and_quick_tricks",
+        "common_pitfalls"
+      ],
+      "properties": {
+        "concept_markdown": {
+          "type": "string"
+        },
+        "visualizations_svg": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "title", "caption", "svg_code"],
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "caption": { "type": "string" },
+              "svg_code": { "type": "string" }
+            }
+          }
+        },
+        "formulas_and_quick_tricks": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "common_pitfalls": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "worked_examples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "example_id",
+          "difficulty",
+          "question_type",
+          "question_markdown",
+          "options",
+          "correct_answer",
+          "conceptual_solution_markdown",
+          "quick_trick_markdown"
+        ],
+        "properties": {
+          "example_id": { "type": "string" },
+          "difficulty": {
+            "type": "string",
+            "enum": ["easy", "medium", "hard"]
+          },
+          "question_type": {
+            "type": "string",
+            "enum": ["standard_mc", "statements_1234", "data_sufficiency", "reading_comprehension"]
+          },
+          "context_markdown": {
+            "type": ["string", "null"]
+          },
+          "svg_illustration": {
+            "type": ["object", "null"],
+            "properties": {
+              "id": { "type": "string" },
+              "svg_code": { "type": "string" }
+            },
+            "required": ["id", "svg_code"]
+          },
+          "question_markdown": { "type": "string" },
+          "statements": {
+            "type": ["array", "null"],
+            "items": { "type": "string" }
+          },
+          "complex_table": {
+            "type": ["object", "null"]
+          },
+          "options": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "required": ["key", "text_markdown"],
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "enum": ["A", "B", "C", "D", "E"]
+                },
+                "text_markdown": { "type": "string" }
+              }
+            }
+          },
+          "correct_answer": {
+            "type": "string",
+            "enum": ["A", "B", "C", "D", "E"]
+          },
+          "conceptual_solution_markdown": { "type": "string" },
+          "quick_trick_markdown": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "id": "pu-1.1.3",
+    "subtest": "PU",
+    "chapter_num": 1,
+    "chapter_title": "Penalaran Induktif",
+    "subchapter_num": "1.1",
+    "subchapter_title": "Generalisasi (Generalization)",
+    "title": "Syarat Validitas dan Pengujian Generalisasi",
+    "micro_syllabus_covered": [
+      "Kuantitas Sampel: kecukupan jumlah kasus khusus untuk mewakili populasi.",
+      "Representativitas (Keterwakilan) Sampel: variasi sampel terhadap heterogenitas populasi.",
+      "Penanganan Pengecualian (Outlier/Anomali): bagaimana data ekstrem memengaruhi kekuatan kesimpulan."
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-06"
+  },
+  "content": {
+    "concept_markdown": "Tidak semua penalaran induktif memiliki bobot yang sama. Sebuah generalisasi dapat berstatus **kuat (*strong*)** dan meyakinkan (*cogent*), atau justru **lemah (*weak*)** dan cacat nalar (*fallacious*). Dalam soal Penalaran Umum UTBK-SNBT, pengujian validitas generalisasi diukur melalui tiga pilar fundamental: **Kuantitas Sampel**, **Representativitas Sampel**, dan **Penanganan Pengecualian (Outlier/Anomali)**.\n\n### 1. Kuantitas Sampel (Kecukupan Jumlah Kasus Khusus)\n\nKuantitas sampel mengacu pada kecukupan rasio ukuran sampel ($n$) terhadap total populasi ($N$) serta variabilitas data yang diteliti.\n\n* **Hukum Bilangan Besar (*Law of Large Numbers*):** Semakin besar jumlah observasi acak yang diambil dari populasi, rata-rata karakteristik sampel akan semakin mendekati parameter populasi yang sebenarnya.\n* **Kekeliruan Generalisasi Tergesa-gesa (*Hasty Generalization*):**\n  * Terjadi ketika kesimpulan universal ditarik hanya dari satu, dua, atau segelintir kasus khusus yang tidak memadai secara kuantitas.\n  * Contoh Cacat Nalar: *\"Saya makan di warung makan X dua kali dan sambalnya terlalu pedas. Jadi, semua makanan di warung makan X rasanya terlalu pedas.\"* (Menyimpulkan seluruh menu hanya dari 2 sampel).\n\n### 2. Representativitas (Keterwakilan) Sampel terhadap Heterogenitas Populasi\n\nJumlah sampel yang besar **tidak ada artinya** jika sampel tersebut bias atau tidak mewakili keberagaman (*heterogeneity*) populasi.\n\n* **Heterogenitas vs Homogenitas Populasi:**\n  * Jika populasi bersifat **homogen sempurna** (misal: komposisi zat kimia dalam larutan murni, golongan darah pada satu kantong darah), maka 1 tetes sampel sudah cukup untuk mewakili seluruh galon cairan.\n  * Jika populasi bersifat **heterogen** (misal: preferensi politik, gaya belajar siswa, daya beli masyarakat), sampel wajib diambil dari seluruh strata/variasi populasi secara proporsional.\n* **Bias Seleksi (*Sampling Bias*):**\n  * Terjadi ketika teknik pengambilan sampel secara sistematis mengecualikan segmen populasi tertentu.\n  * Contoh Klasik (*Literary Digest 1936*): Survei terhadap 2,4 juta orang salah memprediksi hasil pemilu AS karena kuesioner hanya disebarkan via buku telepon dan registrasi kepemilikan mobil mewah, mengabaikan jutaan warga kelas pekerja yang terdampak Depresi Besar.\n\n### 3. Penanganan Pengecualian (Outlier/Anomali)\n\nData pencilan (*outlier*) atau bukti penyangkal (*counter-example*) merupakan batu uji utama bagi kekuatan generalisasi induktif.\n\n* **Prinsip Angsa Hitam (*Black Swan Problem*):**\n  * Pengamatan jutaan angsa putih selama berabad-abad tidak pernah membuktikan kesimpulan mutlak *\"Semua angsa berwarna putih\"*. Namun, penemuan satu ekor angsa hitam di Australia langsung membuktikan bahwa kesimpulan universal tersebut salah.\n* **Dua Pendekatan Metodologis Menangani Anomali:**\n  1. **Revisi dan Pembatasan Klaim (*Scope Restriction*):** Mengubah cakupan kesimpulan dari mutlak universal menjadi kondisional/terbatas (misal: *\"Sebagian besar X adalah Y, kecuali jika kondisi Z terpenuhi\"*).\n  2. **Investigasi Variabel Perancu (*Confounding Variable*):** Meneliti apakah kasus outlier tersebut disebabkan oleh faktor eksternal atau kesalahan pengukuran instrumen.\n  * **Pantangan Ilmiah:** Menghapus atau menyembunyikan data anomali secara sengaja (*cherry-picking*) demi memaksakan kesimpulan awal. Tindakan ini merusak integritas penalaran.\n\nBerikut visualisasi diagram tiga pilar pengujian validitas generalisasi:\n\n[[SVG:svg-pu-1-3]]\n\n### 4. Matriks Evaluasi Kekuatan Argumen Generalisasi\n\n| Kondisi Sampel | Representativitas | Anomali / Pengecualian | Status Kesimpulan |\n| :--- | :--- | :--- | :--- |\n| **Besar ($n$ memadai)** | **Tinggi (Proporsional heterogen)** | **Dianalisis & dimitigasi** | **Sangat Kuat (*Strong & Cogent*)** |\n| Kecil ($n$ sangat sedikit) | Rendah (Hanya 1 lokasi) | Diabaikan | **Cacat Nalar (*Hasty Generalization*)** |\n| Sangat Besar ($n$ jutaan) | Rendah (Bias kelompok tertentu) | Ditutupi (*cherry-picking*) | **Cacat Metodologi (*Selection Bias*)** |\n| Kecil | Tinggi (Homogenitas terbukti) | Tidak ditemukan | **Cukup Kuat (*Conditionally Strong*)** |",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-1-3",
+        "title": "Tiga Pilar Validitas Pengujian Generalisasi",
+        "caption": "Validitas kesimpulan generalisasi ditopang secara seimbang oleh kuantitas sampel yang memadai, keterwakilan (representativitas) terhadap heterogenitas populasi, dan ketelitian menangani anomali.",
+        "svg_code": "<svg viewBox=\"0 0 600 360\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <rect width=\"600\" height=\"360\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"2\"/>\n  <text x=\"300\" y=\"38\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#0f172a\">Tiga Pilar Validitas Generalisasi</text>\n\n  <!-- Pillar 1: Kuantitas -->\n  <rect x=\"50\" y=\"70\" width=\"155\" height=\"210\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#7dd3fc\" stroke-width=\"2\"/>\n  <circle cx=\"127\" cy=\"115\" r=\"28\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n  <text x=\"127\" y=\"122\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#0284c7\">N</text>\n  <text x=\"127\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0369a1\">Kuantitas</text>\n  <text x=\"127\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0284c7\">Kecukupan Sampel</text>\n  <line x1=\"65\" y1=\"200\" x2=\"190\" y2=\"200\" stroke=\"#bae6fd\" stroke-width=\"1.5\"/>\n  <text x=\"127\" y=\"222\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\">Law of Large Numbers</text>\n  <text x=\"127\" y=\"240\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\">Rasio n/N Memadai</text>\n  <text x=\"127\" y=\"262\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\">Cegah Hasty Generaliz.</text>\n\n  <!-- Pillar 2: Representativitas -->\n  <rect x=\"222\" y=\"70\" width=\"155\" height=\"210\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f0abfc\" stroke-width=\"2\"/>\n  <circle cx=\"300\" cy=\"115\" r=\"28\" fill=\"#fae8ff\" stroke=\"#c026d3\" stroke-width=\"2\"/>\n  <text x=\"300\" y=\"122\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#c026d3\">R</text>\n  <text x=\"300\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#a21caf\">Keterwakilan</text>\n  <text x=\"300\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#c026d3\">Heterogenitas</text>\n  <line x1=\"237\" y1=\"200\" x2=\"362\" y2=\"200\" stroke=\"#f5d0fe\" stroke-width=\"1.5\"/>\n  <text x=\"300\" y=\"222\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\">Proporsi Karakteristik</text>\n  <text x=\"300\" y=\"240\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\">Random Stratified</text>\n  <text x=\"300\" y=\"262\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\">Bebas Selection Bias</text>\n\n  <!-- Pillar 3: Outlier / Anomali -->\n  <rect x=\"395\" y=\"70\" width=\"155\" height=\"210\" rx=\"10\" fill=\"#ecfdf5\" stroke=\"#6ee7b7\" stroke-width=\"2\"/>\n  <circle cx=\"472\" cy=\"115\" r=\"28\" fill=\"#d1fae5\" stroke=\"#059669\" stroke-width=\"2\"/>\n  <text x=\"472\" y=\"122\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#059669\">A</text>\n  <text x=\"472\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#047857\">Anomali</text>\n  <text x=\"472\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#059669\">Data Outlier</text>\n  <line x1=\"410\" y1=\"200\" x2=\"535\" y2=\"200\" stroke=\"#a7f3d0\" stroke-width=\"1.5\"/>\n  <text x=\"472\" y=\"222\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\">Black Swan Problem</text>\n  <text x=\"472\" y=\"240\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" fill=\"#475569\">Revisi Batasan Klaim</text>\n  <text x=\"472\" y=\"262\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\">Anti Cherry-Picking</text>\n\n  <!-- Bottom Evaluation Result Bar -->\n  <rect x=\"50\" y=\"295\" width=\"500\" height=\"45\" rx=\"8\" fill=\"#1e293b\"/>\n  <text x=\"300\" y=\"323\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f8fafc\">Ketiga Pilar Terpenuhi = Argumen Kuat &amp; Meyakinkan (Strong &amp; Cogent)</text>\n</svg>"
+      }
+    ],
+    "formulas_and_quick_tricks": [
+      "Kekuatan Generalisasi $\\propto \\frac{\\text{Kuantitas Sampel} \\times \\text{Representativitas}}{\\text{Jumlah Anomali yang Diabaikan}}$.",
+      "Deteksi Bias Lokasi Soal PU: Jika survei mengenai minat baca hanya dilakukan di perpustakaan atau toko buku, sampel tersebut mengalami *selection bias* $\\implies$ kesimpulan TIDAK representatif terhadap masyarakat umum.",
+      "Aturan Angsa Hitam (*Single Counter-Instance*): Pernyataan universal 'Semua A adalah B' langsung gugur cukup dengan ditemukannya 1 bukti valid 'A yang bukan B'."
+    ],
+    "common_pitfalls": [
+      "Mengira bahwa ukuran sampel jutaan responden pasti menjamin kebenaran kesimpulan, padahal jika sampelnya bias (*selection bias*), hasilnya tetap cacat.",
+      "Melakukan *cherry-picking*, yaitu membuang data sampel yang tidak sesuai dengan hipotesis awal agar hasil tampak seragam.",
+      "Mengasumsikan populasi heterogen sebagai homogen, sehingga merasa cukup hanya meneliti satu kelompok kecil."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-1.1.3-ex1",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Seorang wisatawan berkunjung ke Kota Z selama dua hari. Saat sarapan di hotel, pelayan hotel bersikap kurang ramah kepadanya. Pada siang harinya, seorang sopir taksi di kota tersebut tidak memberikan uang kembalian. Wisatawan tersebut kemudian menulis di blog perjalanannya: *'Penduduk Kota Z memiliki kepribadian yang kasar dan tidak menghargai wisatawan.'*",
+      "svg_illustration": null,
+      "question_markdown": "Kelemahan paling mendasar dari kesimpulan wisatawan tersebut menurut prinsip penalaran induktif adalah...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Wisatawan tersebut menggunakan bahasa yang terlalu santun dalam menulis blog."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Kesimpulan ditarik dari jumlah kasus yang sangat sedikit (hanya dua orang) untuk menggeneralisasi seluruh populasi penduduk kota (*hasty generalization*)."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Wisatawan tidak menyertakan foto dan rekaman video sebagai bukti empiris pendukung."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Wisatawan menggunakan penalaran deduktif yang premis mayornya telah terbukti salah."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Sopir taksi dan pelayan hotel bukan merupakan warga negara Indonesia yang sah."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Langkah Konseptual:**\n1. Identifikasi data sampel: Wisatawan hanya berinteraksi dengan 2 orang (1 pelayan hotel + 1 sopir taksi).\n2. Identifikasi populasi sasaran kesimpulan: Seluruh penduduk Kota Z (ratusan ribu hingga jutaan orang).\n3. Evaluasi kuantitas sampel: Dua kasus jelas sangat tidak mencukupi untuk menggambarkan karakter seluruh warga kota yang sangat heterogen.\n4. Klasifikasi cacat logika: Menarik kesimpulan umum dari ukuran sampel yang terlalu kecil adalah bentuk klasik dari **generalisasi tergesa-gesa (*hasty generalization*)**.",
+      "quick_trick_markdown": "**Strategi Cepat UTBK:**\nCek rasio sampel terhadap kesimpulan:\nSampel: 2 orang $\\rightarrow$ Kesimpulan: 'Semua penduduk kota Z'.\nSampel teramat sedikit untuk kesimpulan raksasa = **Hasty Generalization** (Generalisasi Tergesa-gesa). Opsi tepat adalah **B**."
+    },
+    {
+      "example_id": "pu-1.1.3-ex2",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah platform media sosial ingin mengetahui tingkat kepuasan fitur terbarunya. Mereka mengadakan survei daring secara sukarela melalui pop-up notifikasi aplikasi pada pukul 13.00-14.00 di hari kerja. Dari 50.000 pengguna yang mengisi survei, 92% menyatakan sangat menyukai fitur tersebut. Berdasarkan hasil ini, manajemen menyimpulkan bahwa fitur baru tersebut sangat disukai oleh seluruh demografi pengguna di Indonesia.",
+      "svg_illustration": null,
+      "question_markdown": "Meskipun jumlah responden mencapai 50.000 pengguna, faktor utama yang paling berpotensi MELEMAHKAN keabsahan generalisasi kesimpulan manajemen adalah...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Waktu survei satu jam di siang hari kerja dan metode sukarela menimbulkan bias seleksi, sehingga sampel tidak merepresentasikan pengguna dari kelompok pekerja sibuk, pelajar, dan wilayah zona waktu lain."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Angka 50.000 pengguna masih jauh lebih kecil daripada jumlah penduduk Indonesia yang mencapai 278 juta jiwa."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Persentase kepuasan 92% belum mencapai batas konsensus mutlak 100%."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Survei daring secara hukum tidak dapat dijadikan acuan pengambilan keputusan perusahaan teknologi."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pengguna yang mengisi survei daring cenderung memiliki koneksi internet yang lebih cepat daripada yang tidak mengisi."
+        }
+      ],
+      "correct_answer": "A",
+      "conceptual_solution_markdown": "**Langkah Konseptual:**\n1. Evaluasi kuantitas vs representativitas: Meskipun kuantitas sampel besar (50.000 responden), metode pengambilan sampel (*voluntary response* dan jam 13.00-14.00 hari kerja) sangat selektif.\n2. Identifikasi bias representativitas (*Sampling Bias / Selection Bias*):\n   - Mereka yang aktif mengisi survei sukarela di jam kerja umumnya hanya segmen tertentu (misal: orang yang sedang luang atau memiliki ketertarikan ekstrem).\n   - Menyingkirkan kelompok pekerja aktif, pelajar yang sedang di sekolah, serta perbedaan waktu (WITA/WIT).\n3. Dampak terhadap kesimpulan: Manajemen mengklaim kesimpulan untuk *'seluruh demografi pengguna di Indonesia'*. Karena sampel tidak representatif terhadap heterogenitas demografi, generalisasi tersebut lemah secara metodologis.",
+      "quick_trick_markdown": "**Strategi Cepat UTBK:**\nKunci: *Kuantitas besar TIDAK menjamin keterwakilan jika metode pengambilan sampel bias.* Survei pop-up sukarela di jam kerja = **Bias Seleksi (Representativitas Rendah)**. Opsi yang secara ilmiah menjelaskan bias ini adalah **A**."
+    },
+    {
+      "example_id": "pu-1.1.3-ex3",
+      "difficulty": "hard",
+      "question_type": "reading_comprehension",
+      "context_markdown": "Perhatikan cuplikan laporan pengujian obat herbal berikut:\n\n*'Sebuah uji klinis formula herbal antihipertensi dilakukan terhadap 800 pasien dengan rentang usia 35-65 tahun selama 12 minggu. Pada 782 pasien (97,75%), tekanan darah sistolik berhasil turun ke rentang normal ($< 120\\text{ mmHg}$). Namun, pada 18 pasien (2,25%), tekanan darah justru meningkat di atas $150\\text{ mmHg}$ disertai reaksi alergi kulit.'*\n\nDalam draf laporan awal, tim peneliti merekomendasikan: *'Formula herbal ini aman dan efektif menyembuhkan hipertensi pada semua penderita tanpa efek samping.'*",
+      "svg_illustration": null,
+      "question_markdown": "Berdasarkan prinsip penanganan pengecualian (outlier/anomali) dalam penalaran induktif, langkah korektif yang paling tepat dan bertanggung jawab secara ilmiah yang harus diambil oleh tim peneliti adalah...",
+      "statements": null,
+      "complex_table": null,
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Menghapus data 18 pasien tersebut dari laporan akhir karena persentasenya sangat kecil ($< 3\\%$) dan dianggap sebagai kesalahan acak instrumen."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Mengubah klaim kesimpulan universal ('semua penderita tanpa efek samping') menjadi klaim kondisional dengan menjelaskan kontraindikasi pada kelompok pasien anomali tersebut."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Menyimpulkan bahwa formula herbal tersebut gagal total dan tidak memiliki khasiat apa pun bagi penderita hipertensi."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Mengulangi pengujian dengan hanya memilih pasien yang telah dipastikan akan merespons positif terhadap herbal tersebut."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Menyatakan bahwa 18 pasien tersebut memiliki gaya hidup yang buruk tanpa perlu meneliti riwayat medis mereka."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Langkah Konseptual:**\n1. Identifikasi masalah klaim: Draf laporan mengklaim kesimpulan universal mutlak: *'menyembuhkan hipertensi pada semua penderita tanpa efek samping'*.\n2. Identifikasi bukti empiris: Terdapat 18 pasien (2,25%) yang mengalami anomali serius (tekanan darah melonjak dan alergi).\n3. Evaluasi integritas ilmiah & penalaran induktif:\n   - Mengabaikan atau menghapus data anomali (opsi A dan D) adalah tindakan tercela (*cherry-picking / data fabrication*).\n   - Menolak seluruh hasil yang 97,75% berhasil (opsi C) adalah reaksi ekstrem yang mengabaikan efikasi mayoritas.\n4. Solusi tepat: Menghadapi anomali dalam generalisasi dilakukan dengan **Revisi dan Pembatasan Klaim (*Scope Restriction*)**: mengakui keberhasilan pada sebagian besar responden dan secara eksplisit merumuskan batasan/kontraindikasi bagi kelompok yang berisiko mengalami efek samping.",
+      "quick_trick_markdown": "**Strategi Cepat UTBK:**\nPrinsip menghadapi anomali/pengecualian:\n1. Jangan hapus data (anti cherry-picking) $\\rightarrow$ coret A dan D.\n2. Jangan reaktif ekstrem $\\rightarrow$ coret C.\n3. Jangan menyalahkan subjek tanpa bukti $\\rightarrow$ coret E.\n4. Langkah ilmiah yang benar = **Batasi klaim secara proporsional & jelaskan anomali/kontraindikasi** $\\implies$ **B**."
+    }
+  ]
+}

@@ -1,21 +1,38 @@
 {
-  "name": "web-tka-platform",
-  "version": "3.2.0",
-  "description": "Platform Drilling TKA Fisika & Matematika Lanjut (2-Pillar & Bab Fundamental)",
-  "main": "server.js",
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "build:data": "node scripts/build_full_modular_system.js",
-    "test": "node scripts/test_bank_soal_suite.js && node scripts/test_interactive_features.js"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "validate": "node scripts/validate_content.mjs"
   },
-  "keywords": [
-    "tka",
-    "fisika",
-    "matematika",
-    "utbk",
-    "simak-ui",
-    "drilling"
-  ],
-  "author": "TKA Platform Team",
-  "license": "ISC"
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "katex": "^0.19.1",
+    "lucide-react": "^1.69.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "@types/katex": "^0.16.8",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.6.2",
+    "oxlint": "^1.90.0",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.4",
+    "typescript": "~7.0.2",
+    "vite": "^6.2.0"
+  }
 }
