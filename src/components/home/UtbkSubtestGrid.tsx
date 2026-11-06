@@ -304,7 +304,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
         </div>
 
         <span className="text-[11px] font-semibold text-slate-400 hidden sm:inline">
-          32 Modul Terstandar
+          27 Modul Terstandar
         </span>
       </div>
 

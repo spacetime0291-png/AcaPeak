@@ -288,7 +288,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     {/* Middle: Title & Meta Info */}
                     <div className="min-w-0 flex-1">
                       <h2 className="text-sm sm:text-base font-semibold text-slate-800 leading-snug group-hover:text-blue-600 transition-colors">
-                        {mod.title}
+                        Bab {modIdx + 1}: {mod.title}
                       </h2>
                       <div className="flex items-center gap-2 mt-0.5 text-[11px] text-slate-400 font-medium">
                         <span>{mod.subtopics.length} Sub-bab</span>
@@ -346,11 +346,11 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                             className="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white hover:bg-blue-50/60 border border-slate-100 hover:border-blue-200 transition cursor-pointer group/sub shadow-2xs"
                           >
                             {/* Left: Completion Toggle Checkbox + Title */}
-                            <div className="flex items-center gap-2.5 min-w-0 flex-1">
+                            <div className="flex items-start sm:items-center gap-2.5 min-w-0 flex-1 py-0.5">
                               <button
                                 type="button"
                                 onClick={(e) => toggleSubtopicCompletion(sub.id, e)}
-                                className="p-0.5 text-slate-400 hover:text-emerald-600 transition cursor-pointer shrink-0 rounded-lg"
+                                className="p-0.5 text-slate-400 hover:text-emerald-600 transition cursor-pointer shrink-0 rounded-lg mt-0.5 sm:mt-0"
                                 title={isDone ? 'Tandai belum selesai' : 'Tandai selesai'}
                                 aria-label="Tandai Selesai"
                               >
@@ -361,12 +361,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 )}
                               </button>
 
-                              <span className="text-xs font-mono font-bold text-slate-400 shrink-0">
+                              <span className="text-xs font-mono font-bold text-slate-400 shrink-0 mt-0.5 sm:mt-0">
                                 {modIdx + 1}.{sIdx + 1}
                               </span>
 
                               <span
-                                className={`text-xs sm:text-sm font-medium leading-snug truncate ${
+                                className={`text-xs sm:text-sm font-medium leading-snug break-words whitespace-normal flex-1 ${
                                   isDone
                                     ? 'text-slate-500 line-through decoration-slate-300'
                                     : 'text-slate-800 group-hover/sub:text-blue-700'
@@ -445,18 +445,18 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                             key={sub.id}
                             type="button"
                             onClick={(e) => toggleSubchapterSelect(sub.id, e)}
-                            className={`flex items-center gap-2 p-2 rounded-lg text-left text-xs transition cursor-pointer border ${
+                            className={`flex items-start gap-2 p-2 rounded-lg text-left text-xs transition cursor-pointer border ${
                               isSelected
                                 ? 'bg-blue-50 border-blue-300 text-blue-900 font-semibold'
                                 : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-100'
                             }`}
                           >
                             {isSelected ? (
-                              <CheckSquare className="w-4 h-4 text-blue-600 shrink-0" />
+                              <CheckSquare className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                             ) : (
-                              <Square className="w-4 h-4 text-slate-300 shrink-0" />
+                              <Square className="w-4 h-4 text-slate-300 shrink-0 mt-0.5" />
                             )}
-                            <span className="truncate">{sub.title}</span>
+                            <span className="break-words whitespace-normal flex-1 leading-snug">{sub.title}</span>
                           </button>
                         );
                       })}

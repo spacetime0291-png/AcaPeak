@@ -203,9 +203,9 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           <span className="sm:hidden">Bab</span>
         </button>
 
-        {/* Truncated clean Sub-bab title */}
+        {/* Clean Sub-bab title */}
         <div className="min-w-0 flex-1 text-center px-2">
-          <p className="text-xs font-bold text-slate-800 truncate">
+          <p className="text-xs font-bold text-slate-800 break-words line-clamp-2 leading-tight">
             {metadata.subchapter_num} {metadata.title}
           </p>
         </div>
@@ -256,20 +256,45 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
             </span>
           </div>
 
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 leading-tight">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 leading-tight break-words">
             {metadata.subchapter_num} {metadata.title}
           </h1>
 
           <div className="mt-2 text-xs text-slate-500 flex items-center gap-2">
             <span>Bab {metadata.chapter_num}: {metadata.chapter_title}</span>
-            <span>•</span>
-            <span className="text-emerald-700 font-semibold">
-              {worked_examples.length} Variasi Soal
-            </span>
+            {worked_examples && worked_examples.length > 0 && (
+              <>
+                <span>•</span>
+                <span className="text-emerald-700 font-semibold">
+                  {worked_examples.length} Variasi Soal
+                </span>
+              </>
+            )}
           </div>
         </header>
 
-        {/* Tactical Overview / Intisari Materi */}
+        {/* If material content is empty / cleared */}
+        {!content.exam_blueprint_markdown && !content.tactical_overview && (!worked_examples || worked_examples.length === 0) ? (
+          <div className="py-16 px-4 text-center">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
+              <BookOpen className="w-8 h-8" />
+            </div>
+            <h2 className="text-lg font-bold text-slate-800">Materi Belum Tersedia</h2>
+            <p className="text-sm text-slate-500 max-w-md mx-auto mt-1">
+              Isi materi untuk sub-bab <span className="font-semibold text-slate-700">{metadata.title}</span> sedang dalam proses penyusunan.
+            </p>
+            <button
+              type="button"
+              onClick={onBackToSubtest}
+              className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-xl shadow-xs transition cursor-pointer"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              <span>Kembali ke Daftar Subtes</span>
+            </button>
+          </div>
+        ) : (
+          <>
+            {/* Tactical Overview / Intisari Materi */}
         {content.tactical_overview && (
           <div className="border-l-4 border-slate-800 bg-slate-50 px-5 py-4 my-5 font-serif text-[15px] md:text-[16px] leading-relaxed text-slate-800 rounded-r-md">
             <span className="font-sans font-bold text-xs uppercase tracking-wider text-slate-700 block mb-1">
@@ -526,6 +551,8 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
               })}
             </div>
           </section>
+        )}
+          </>
         )}
 
         {/* 4. NAVIGASI BAWAH DOKUMEN: <- Sub-bab Sebelumnya, Latihan Drilling Topik Ini, Sub-bab Selanjutnya -> */}

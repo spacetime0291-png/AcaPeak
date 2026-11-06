@@ -168,11 +168,11 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                           className="w-full text-left px-3 py-2 rounded-lg hover:bg-indigo-50 flex items-center justify-between group transition cursor-pointer"
                         >
                           <div className="min-w-0 pr-2">
-                            <div className="flex items-center gap-1.5">
-                              <span className="px-1.5 py-0.2 rounded text-[10px] font-bold bg-indigo-100 text-indigo-800">
+                            <div className="flex items-start gap-1.5">
+                              <span className="px-1.5 py-0.2 rounded text-[10px] font-bold bg-indigo-100 text-indigo-800 shrink-0 mt-0.5">
                                 {item.subtestCode} {item.subchapter_num}
                               </span>
-                              <span className="text-xs font-semibold text-slate-800 group-hover:text-indigo-900 truncate">
+                              <span className="text-xs font-semibold text-slate-800 group-hover:text-indigo-900 break-words flex-1">
                                 {item.title}
                               </span>
                             </div>

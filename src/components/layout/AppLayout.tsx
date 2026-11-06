@@ -121,7 +121,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
                                 : 'text-slate-700 hover:bg-slate-100'
                             }`}
                           >
-                            <span className="truncate pr-2">
+                            <span className="pr-2 break-words whitespace-normal leading-snug flex-1">
                               {modIdx + 1}.{sIdx + 1} {sub.title}
                             </span>
                             <span

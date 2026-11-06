@@ -54,6 +54,28 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   const [secondsRemaining, setSecondsRemaining] = useState<number>(initialSeconds);
   const [secondsElapsed, setSecondsElapsed] = useState<number>(0);
 
+  if (!questions || questions.length === 0) {
+    return (
+      <div className="max-w-xl mx-auto py-20 px-4 text-center">
+        <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600">
+          <BookOpen className="w-8 h-8" />
+        </div>
+        <h2 className="text-lg font-bold text-slate-800">Soal Latihan Belum Tersedia</h2>
+        <p className="text-sm text-slate-500 mt-1 mb-6">
+          Belum ada bank soal untuk topik yang dipilih karena materi baru saja dirombak. Silakan kembali untuk membaca materi.
+        </p>
+        <button
+          type="button"
+          onClick={onExitDrilling}
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl shadow-xs transition cursor-pointer"
+        >
+          <ChevronLeft className="w-4 h-4" />
+          <span>Kembali ke Halaman Subtes</span>
+        </button>
+      </div>
+    );
+  }
+
   // Timer effect
   useEffect(() => {
     if (isFinished) return;

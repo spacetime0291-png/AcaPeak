@@ -134,47 +134,17 @@ export const ModuleIcon: React.FC<ModuleIconProps> = ({ moduleId, className = 'w
   }
 
   if (moduleId === 'pu-mod-3') {
-    // Penalaran Analitis (Logika Posisi & Syarat): Ranking / seating order
+    // Penalaran Kuantitatif: Pola Bilangan, Spasial & Grafik Data
     return (
       <svg viewBox="0 0 48 48" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="12" width="10" height="24" rx="2" fill="#E0E7FF" stroke="#4F46E5" strokeWidth="1.5" />
-        <rect x="21" y="8" width="10" height="28" rx="2" fill="#C7D2FE" stroke="#4338CA" strokeWidth="1.5" />
-        <rect x="34" y="16" width="10" height="20" rx="2" fill="#E0E7FF" stroke="#4F46E5" strokeWidth="1.5" />
-        <circle cx="13" cy="18" r="2" fill="#4F46E5" />
-        <circle cx="26" cy="14" r="2.5" fill="#F59E0B" />
-        <circle cx="39" cy="22" r="2" fill="#4F46E5" />
-      </svg>
-    );
-  }
-
-  if (moduleId === 'pu-mod-4') {
-    // Penalaran Kuantitatif: Pola & Bilangan: 2, 4, 8...
-    return (
-      <svg viewBox="0 0 48 48" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="24" r="6" fill="#DBEAFE" stroke="#2563EB" strokeWidth="1.8" />
-        <text x="12" y="27" fill="#1D4ED8" fontSize="8" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">2</text>
-        <circle cx="24" cy="24" r="7" fill="#BFDBFE" stroke="#2563EB" strokeWidth="1.8" />
-        <text x="24" y="27.5" fill="#1D4ED8" fontSize="9" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">4</text>
-        <circle cx="37" cy="24" r="8" fill="#93C5FD" stroke="#1D4ED8" strokeWidth="2" />
-        <text x="37" y="28" fill="#1E3A8A" fontSize="10" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">?</text>
-        <path d="M16 18C19 14 21 14 24 18M28 17C31 12 34 12 37 17" stroke="#F97316" strokeWidth="1.6" strokeDasharray="1.5 1.5" strokeLinecap="round" />
-      </svg>
-    );
-  }
-
-  if (moduleId === 'pu-mod-5') {
-    // Penalaran Kuantitatif: Data & Proporsi: Chart & Percentage
-    return (
-      <svg viewBox="0 0 48 48" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 34L20 22L28 28L38 14" stroke="#10B981" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="10" cy="34" r="2.5" fill="#10B981" />
-        <circle cx="20" cy="22" r="2.5" fill="#10B981" />
-        <circle cx="28" cy="28" r="2.5" fill="#10B981" />
-        <circle cx="38" cy="14" r="3" fill="#059669" stroke="#A7F3D0" strokeWidth="1.5" />
-        <g transform="translate(8, 8)">
-          <rect width="14" height="11" rx="2.5" fill="#F59E0B" />
-          <text x="7" y="8.5" fill="#FFFFFF" fontSize="7.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">%</text>
-        </g>
+        <circle cx="12" cy="28" r="5" fill="#DBEAFE" stroke="#2563EB" strokeWidth="1.5" />
+        <text x="12" y="31" fill="#1D4ED8" fontSize="7" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">2</text>
+        <circle cx="22" cy="28" r="6" fill="#BFDBFE" stroke="#2563EB" strokeWidth="1.5" />
+        <text x="22" y="31.5" fill="#1D4ED8" fontSize="8" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">4</text>
+        <circle cx="34" cy="28" r="7" fill="#93C5FD" stroke="#1D4ED8" strokeWidth="1.8" />
+        <text x="34" y="32" fill="#1E3A8A" fontSize="9" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">?</text>
+        <path d="M10 18L18 12L26 15L36 8" stroke="#10B981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="36" cy="8" r="2.5" fill="#059669" />
       </svg>
     );
   }
