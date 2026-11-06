@@ -1,7 +1,15 @@
 import type { Material, WorkedExample } from '../types/material';
 import { UTBK_SYLLABUS } from './syllabusData';
+import { MATERIAL_PU_01_01, MATERIAL_PU_01_02 } from '../data/materials/puMaterials';
 
-export const PRELOADED_MATERIALS: Record<string, Material> = {};
+export const PRELOADED_MATERIALS: Record<string, Material> = {
+  'pu-1-1': MATERIAL_PU_01_01,
+  'pu-01-01': MATERIAL_PU_01_01,
+  'pu-1.1': MATERIAL_PU_01_01,
+  'pu-1-2': MATERIAL_PU_01_02,
+  'pu-01-02': MATERIAL_PU_01_02,
+  'pu-1.2': MATERIAL_PU_01_02,
+};
 
 // Flatten all UTBK subchapters for metadata lookup
 export const ALL_UTBK_SUBCHAPTERS = UTBK_SYLLABUS.flatMap((subtest) => {
@@ -35,8 +43,15 @@ export async function fetchMaterialById(id: string): Promise<Material> {
     (s) => s.id === id || s.id === normalizedId || s.id.replace('-', '.') === id
   );
 
-  if (PRELOADED_MATERIALS[id] && matched && PRELOADED_MATERIALS[id].metadata?.title === matched.title) {
+  // Check preloaded bundle first (0ms latency, works offline & GitHub Pages)
+  if (PRELOADED_MATERIALS[id]) {
     return PRELOADED_MATERIALS[id];
+  }
+  if (PRELOADED_MATERIALS[normalizedId]) {
+    return PRELOADED_MATERIALS[normalizedId];
+  }
+  if (matched && PRELOADED_MATERIALS[matched.id]) {
+    return PRELOADED_MATERIALS[matched.id];
   }
 
   const subtestPrefix = (matched ? matched.subtestCode : id.split('-')[0]).toLowerCase();

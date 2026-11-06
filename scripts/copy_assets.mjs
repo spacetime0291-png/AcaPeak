@@ -22,4 +22,11 @@ if (fs.existsSync('dist')) {
   fs.writeFileSync('dist/.nojekyll', '', 'utf8');
 }
 
-console.log(`Copied ${files.length} production assets to ./assets/ and created .nojekyll`);
+// Copy public/content to root content if exists
+const publicContent = path.resolve('public/content');
+const rootContent = path.resolve('content');
+if (fs.existsSync(publicContent)) {
+  fs.cpSync(publicContent, rootContent, { recursive: true });
+}
+
+console.log(`Copied ${files.length} production assets to ./assets/, mirrored content, and created .nojekyll`);

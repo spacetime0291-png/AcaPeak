@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "id": "pu-1-1",
+    "subtest": "PU",
+    "chapter_num": 1,
+    "chapter_title": "Penalaran Induktif",
+    "subchapter_num": "1.1",
+    "subchapter_title": "Generalisasi",
+    "title": "Generalisasi",
+    "required_question_variations": [
+      "Simpulan Proporsi Sampel",
+      "Simpulan Tren Induktif Berkala",
+      "Evaluasi Kualitas Generalisasi (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-06"
+  },
+  "content": {
+    "tactical_overview": "Simpulan induktif generalisasi tidak pernah 100% pasti mutlak, melainkan bersifat probabilistik. Kunci utama UTBK: waspadai lompatan cakupan sampel (scope) dan selalu eliminasi opsi jawaban dengan kuantor ekstrem mutlak (pasti, selalu, seluruh) jika data teks memiliki batasan atau pengecualian.",
+    "exam_blueprint_markdown": "### 1. Konsep & Pola Logika Inti\n\n**Generalisasi** adalah proses penarikan simpulan umum berdasarkan sejumlah data, fakta, atau peristiwa khusus (sampel) yang memiliki kemiripan sifat.\n\n$$P(x_1) \\land P(x_2) \\land \\dots \\land P(x_n) \\xrightarrow{\\text{Induksi}} \\text{Kemungkinan besar } \\forall x, P(x)$$\n\n- **Prinsip Utama UTBK:** Simpulan induktif **tidak pernah 100% pasti mutlak**, melainkan bersifat **probabilistik** (*kemungkinan besar, cenderung, sebagian besar, umumnya*).\n- **Syarat Generalisasi Kuat:**\n  1. **Kuantitas Sampel Memadai:** Semakin banyak contoh khusus ($n$) yang diamati, semakin kuat simpulannya.\n  2. **Representatif:** Sampel mewakili keseluruhan populasi, bukan kasus ekstrem atau anomali.\n  3. **Kesesuaian Cakupan (*Scope*):** Simpulan tidak melompat keluar dari kategori kelompok yang dibahas pada premis.\n\n---\n\n### 2. Tabel Terjemahan Premis ke Simpulan Valid\n\n| Pola Data pada Teks (Premis Khusus) | Kata Kunci Simpulan Valid | Kata Kunci Pengecoh (Opsi Salah) |\n| :--- | :--- | :--- |\n| Seluruh sampel yang diamati memiliki sifat $A$ tanpa terkecuali. | *Umumnya*, *cenderung*, *kemungkinan besar*, *pada umumnya*. | *Pasti*, *selalu*, *tidak mungkin tidak*, *mutlak* (Terlalu ekstrem). |\n| Mayoritas sampel memiliki sifat $A$, tetapi ada 1–2 pengecualian. | *Sebagian besar*, *mayoritas*, *hampir semua*. | *Semua*, *setiap*, *seluruh* (Mengabaikan pengecualian). |\n| Tren data meningkat/menurun secara konsisten dari periode $t_1$ ke $t_n$. | *Cenderung meningkat/menurun*, *diprediksi akan terus...* | *Akan naik selamanya*, *tidak akan pernah turun lagi*. |\n\n---\n\n### 3. Jebakan Konsep (*Common Pitfalls*)\n\n- **Hasty Generalization (Generalisasi Terburu-buru):** Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.\n- **Overgeneralization (Lompatan Cakupan):** Teks hanya membahas *\"siswa SMA di kota X\"*, tetapi opsi jawaban menyimpulkan *\"seluruh pelajar di Indonesia\"*.\n- **Jebakan Kuantor Universal (*\"Semua/Selalu\"*):** Jika di dalam teks terdapat kata *\"beberapa\"*, *\"sebagian\"*, atau ada kasus pengecualian, langsung **eliminasi** opsi yang menggunakan kata *\"semua\"* atau *\"pasti\"*.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Hasty Generalization (Generalisasi Terburu-buru): Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.",
+      "Overgeneralization (Lompatan Cakupan/Scope): Teks hanya membahas siswa SMA di kota X, tetapi opsi jawaban melompat menyimpulkan seluruh pelajar di Indonesia.",
+      "Jebakan Kuantor Universal (\"Semua/Selalu\"): Jika di dalam teks terdapat kata beberapa, sebagian, atau ada kasus pengecualian, langsung eliminasi opsi yang menggunakan kata semua atau pasti."
+    ],
+    "quick_execution_algorithm": [
+      "Identifikasi populasi dan ukuran sampel (n) yang diobservasi dalam teks wacana.",
+      "Periksa apakah terdapat data pengecualian atau hanya mencakup wilayah/sub-populasi tertentu.",
+      "Eliminasi opsi berkuantor ekstrem (pasti, selalu, mutlak) atau opsi yang melompat keluar cakupan (out of scope).",
+      "Pilih simpulan probabilistik (cenderung, sebagian besar, kemungkinan besar) yang setia pada data premis."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-01-01-ex1",
+      "variation_name": "Variasi 1: Simpulan Proporsi Sampel (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.",
+      "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik."
+        }
+      ],
+      "correct_answer": "C",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Populasi sampel:** Pengguna motor listrik di Jakarta ($n = 500$).\n- **Proporsi sifat utama:** $\\frac{460}{500} = 92\\%$ mengalami penghematan biaya operasional signifikan, sedangkan $8\\%$ tidak.\n- Karena proporsi mencapai $92\\%$ (mayoritas, namun bukan $100\\%$ mutlak), kuantor yang valid adalah *\"sebagian besar\"* pada populasi target *\"pengguna motor listrik di Jakarta\"*.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Kata Ekstrem & Scope):**\n\n- Eliminasi **A** (kata *\"Semua\"* salah karena ada 40 responden yang tidak menghemat).\n- Eliminasi **B** & **D** (kata *\"selalu\"* dan *\"pasti\"* terlalu mutlak).\n- Eliminasi **E** (*Out of scope*: teks hanya meneliti Jakarta, bukan luar Jakarta).\n\nTersisa **C**.",
+      "why_others_are_wrong_markdown": "- **A Salah:** Mengabaikan 40 responden yang tidak hemat (terlalu absolut).\n- **B Salah:** Menyimpulkan hal mutlak ('selalu') bagi seluruh masyarakat yang tidak diteliti.\n- **D Salah:** Menyimpulkan vonis mutlak ('pasti tidak cocok') yang tidak dinyatakan dalam data.\n- **E Salah:** Out of scope (menggeneralisasi ke masyarakat luar Jakarta tanpa data)."
+    },
+    {
+      "example_id": "pu-01-01-ex2",
+      "variation_name": "Variasi 2: Simpulan Tren Induktif Berkala (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.",
+      "question_markdown": "Manakah pernyataan yang **paling mungkin benar** mengenai penerapan teknik fermentasi tertutup tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar."
+        }
+      ],
+      "correct_answer": "B",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Data khusus:** Kuartal 1 ($+12\\%$), Kuartal 2 ($+15\\%$), Kuartal 3 ($+18\\%$) pada komoditas kopi arabika setelah penerapan teknik fermentasi tertutup.\n- **Induksi tren:** Kenaikan konsisten di beberapa wilayah dan waktu menunjukkan kecenderungan dampak positif teknik tersebut terhadap penjualan kopi arabika di wilayah penelitian.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Kata Ekstrem & Scope):**\n\n- **A** salah: Kata *\"satu-satunya\"* tidak didukung teks wacana.\n- **C** salah: Lompatan objek ke *\"kopi robusta\"* (cakupan berbeda).\n- **D** salah: Prediksi angka spesifik *\"pasti 21%\"* terlalu mutlak dan mendahului data empiris.\n- **E** salah: Teks tidak membahas nasib petani yang tidak memakai teknik tersebut (*negasi premis yang tidak sah*).\n\nJawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **A Salah:** Klaim absolut tanpa dasar bukti ('satu-satunya cara').\n- **C Salah:** Lompatan jenis komoditas di luar konteks (arabika $\\to$ robusta).\n- **D Salah:** Ekstrapolasi angka mutlak ('pasti 21%').\n- **E Salah:** Menarik kesimpulan negatif sepihak tentang kondisi yang tidak diuji."
+    },
+    {
+      "example_id": "pu-01-01-ex3",
+      "variation_name": "Variasi 3: Evaluasi Kualitas Generalisasi / HOTS (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Seorang peneliti menyimpulkan bahwa *\"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa.\"* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.",
+      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kelemahan** dari generalisasi peneliti tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam."
+        }
+      ],
+      "correct_answer": "C",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Klaim simpulan peneliti:** Berlaku untuk *\"seluruh kelompok usia dewasa\"* (rentang usia 18 hingga 65+ tahun dengan beragam kondisi fisik dan latar belakang pekerjaan).\n- **Bukti sampel:** Hanya $n = 25$ mahasiswa tingkat akhir (usia $\\approx 21-23$ tahun) di satu fakultas universitas teknik yang sangat homogen.\n- **Cacat logika:** *Unrepresentative sample / Hasty generalization* (sampel terlalu sempit dan homogen untuk menggeneralisasi seluruh populasi usia dewasa).\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Cek Kesenjangan Sampel vs Klaim):**\n\n- Sampel = *25 mahasiswa teknik (homogen)*.\n- Klaim simpulan = *seluruh usia dewasa (sangat heterogen)*.\n- Letak kelemahan fatal adalah ketidaksesuaian cakupan sampel dengan klaim populasi target.\n\nJawaban: **C**.",
+      "why_others_are_wrong_markdown": "- **A Salah:** Perbandingan dengan cokelat susu bukan fokus uji hipotesis cokelat hitam.\n- **B Salah:** Durasi 2 minggu wajar dalam uji klinis memori.\n- **D Salah:** Kenaikan rerata 20% adalah angka yang sangat besar dan secara deskriptif signifikan.\n- **E Salah:** Peningkatan diukur dari baseline skor mahasiswa itu sendiri (sebelum vs sesudah intervensi)."
+    }
+  ]
+}
