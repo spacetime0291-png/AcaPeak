@@ -120,17 +120,17 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
       </div>
     ),
     thead: ({ children, ...props }: React.ComponentPropsWithoutRef<'thead'>) => (
-      <thead className="bg-stone-100/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-100 font-semibold" {...props}>
+      <thead className="bg-stone-100/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-100 font-bold" {...props}>
         {children}
       </thead>
     ),
     th: ({ children, ...props }: React.ComponentPropsWithoutRef<'th'>) => (
-      <th className="px-3.5 py-2.5 text-left text-xs uppercase tracking-wider font-semibold border-b border-stone-200 dark:border-slate-700" {...props}>
+      <th className="px-4 py-3 text-left text-xs sm:text-sm uppercase tracking-wider font-bold border-b border-stone-200 dark:border-slate-700" {...props}>
         {children}
       </th>
     ),
     td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
-      <td className="px-3.5 py-2.5 border-t border-stone-100 dark:border-slate-800 text-slate-700 dark:text-slate-300 whitespace-normal text-xs sm:text-sm leading-relaxed" {...props}>
+      <td className="px-4 py-3 border-t border-stone-100 dark:border-slate-800 text-slate-700 dark:text-slate-300 whitespace-normal text-[15px] sm:text-[16px] leading-relaxed" {...props}>
         {children}
       </td>
     ),
@@ -340,11 +340,11 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-2">
             {/* Distractor Traps Box */}
             <div className="p-4 rounded-xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-200/80 dark:border-rose-900/60">
-              <div className="flex items-center gap-2 mb-2 text-rose-900 dark:text-rose-300 font-bold text-xs sm:text-sm uppercase tracking-wide">
+              <div className="flex items-center gap-2 mb-2 text-rose-900 dark:text-rose-300 font-bold text-sm sm:text-base uppercase tracking-wide">
                 <ShieldAlert className="w-4 h-4 text-rose-600 dark:text-rose-400" />
                 <span>Pola Jebakan Opsi Pengecoh Khas UTBK</span>
               </div>
-              <ul className="space-y-2 text-xs sm:text-[13px] text-rose-950 dark:text-rose-100">
+              <ul className="space-y-2 text-[15px] sm:text-[16px] text-rose-950 dark:text-rose-100">
                 {content.distractor_traps.map((trap, idx) => (
                   <li key={idx} className="flex items-start gap-2 leading-relaxed">
                     <span className="text-rose-500 font-black shrink-0">✕</span>
@@ -357,11 +357,11 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
             {/* Quick Execution Algorithm */}
             {content.quick_execution_algorithm && content.quick_execution_algorithm.length > 0 && (
               <div className="p-4 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-200/80 dark:border-emerald-900/60">
-                <div className="flex items-center gap-2 mb-2 text-emerald-900 dark:text-emerald-300 font-bold text-xs sm:text-sm uppercase tracking-wide">
+                <div className="flex items-center gap-2 mb-2 text-emerald-900 dark:text-emerald-300 font-bold text-sm sm:text-base uppercase tracking-wide">
                   <Flame className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                   <span>Algoritma Eksekusi di Meja Ujian</span>
                 </div>
-                <ol className="space-y-2 text-xs sm:text-[13px] text-emerald-950 dark:text-emerald-100">
+                <ol className="space-y-2 text-[15px] sm:text-[16px] text-emerald-950 dark:text-emerald-100">
                   {content.quick_execution_algorithm.map((step, idx) => (
                     <li key={idx} className="flex items-start gap-2 leading-relaxed">
                       <span className="w-4 h-4 rounded-full bg-emerald-600 text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
@@ -619,8 +619,8 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                       {/* Solution Tabs / Blocks */}
                       <div className="space-y-3">
                         {/* 1. Algoritma Eksekusi Konseptual */}
-                        <div className="p-4 rounded-xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
-                          <div className="flex items-center gap-2 mb-2 font-bold text-indigo-900 dark:text-cyan-300 text-xs sm:text-sm uppercase tracking-wide">
+                        <div className="p-4 rounded-xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 text-[15px] sm:text-[16px] text-slate-800 dark:text-slate-200 leading-relaxed">
+                          <div className="flex items-center gap-2 mb-2 font-bold text-indigo-900 dark:text-cyan-300 text-sm sm:text-base uppercase tracking-wide">
                             <Lightbulb className="w-4 h-4 text-indigo-600 dark:text-cyan-400" />
                             <span>Algoritma Eksekusi Konseptual:</span>
                           </div>
@@ -634,8 +634,8 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                         </div>
 
                         {/* 2. Trik Kilat 30 Detik UTBK */}
-                        <div className="p-4 rounded-xl bg-amber-50/70 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 text-xs sm:text-sm text-amber-950 dark:text-amber-200 leading-relaxed">
-                          <div className="flex items-center gap-2 mb-2 font-bold text-amber-900 dark:text-amber-300 text-xs sm:text-sm uppercase tracking-wide">
+                        <div className="p-4 rounded-xl bg-amber-50/70 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 text-[15px] sm:text-[16px] text-amber-950 dark:text-amber-200 leading-relaxed">
+                          <div className="flex items-center gap-2 mb-2 font-bold text-amber-900 dark:text-amber-300 text-sm sm:text-base uppercase tracking-wide">
                             <Zap className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                             <span>Trik Kilat 30 Detik UTBK:</span>
                           </div>
@@ -649,8 +649,8 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                         </div>
 
                         {/* 3. Bedah Opsi Pengecoh */}
-                        <div className="p-4 rounded-xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 text-xs sm:text-sm text-rose-950 dark:text-rose-200 leading-relaxed">
-                          <div className="flex items-center gap-2 mb-2 font-bold text-rose-900 dark:text-rose-300 text-xs sm:text-sm uppercase tracking-wide">
+                        <div className="p-4 rounded-xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 text-[15px] sm:text-[16px] text-rose-950 dark:text-rose-200 leading-relaxed">
+                          <div className="flex items-center gap-2 mb-2 font-bold text-rose-900 dark:text-rose-300 text-sm sm:text-base uppercase tracking-wide">
                             <ShieldAlert className="w-4 h-4 text-rose-600 dark:text-rose-400" />
                             <span>Bedah Opsi Pengecoh (Mengapa Opsi Lain Salah?):</span>
                           </div>

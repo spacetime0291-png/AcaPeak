@@ -166,7 +166,7 @@ export default function App() {
       fetchMaterialById(route.materiId)
         .then((data) => {
           setActiveMaterial(data);
-          document.title = `${data.metadata.subtest} - ${data.metadata.title} | Portal Edukasi`;
+          document.title = `${data.metadata.subtest} - ${data.metadata.title} | SkolAce`;
         })
         .catch((err) => {
           console.error('Failed to load material', err);
@@ -179,12 +179,12 @@ export default function App() {
         (s) => s.code.toLowerCase() === route.subtestCode?.toLowerCase()
       );
       if (sub) {
-        document.title = `${sub.name} (${sub.code}) | Portal Edukasi UTBK`;
+        document.title = `${sub.name} (${sub.code}) | SkolAce`;
       }
     } else if (route.view === 'drilling') {
-      document.title = `Sesi Drilling Soal #${(route.drillingQuestionIndex || 0) + 1} | Portal Edukasi`;
+      document.title = `Sesi Drilling Soal #${(route.drillingQuestionIndex || 0) + 1} | SkolAce`;
     } else {
-      document.title = 'Portal Belajar UTBK-SNBT & Materi SMA | Bebas Biaya (Rp0)';
+      document.title = 'SkolAce | UTBK-SNBT & Materi SMA Bebas Biaya (Rp0)';
     }
   }, [route.view, route.materiId, route.subtestCode, route.drillingQuestionIndex]);
 
@@ -277,7 +277,7 @@ export default function App() {
   const isDark = theme === 'dark';
 
   return (
-    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-hidden theme-transition">
+    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-clip theme-transition">
       {/* 
         Theme Visual Ambient Backgrounds:
         1. Home, Subtest, & SMA Views: Rich immersive visuals (Cosmic Nebula & Constellations for Dark, Soft Pastels for Light)

@@ -79,14 +79,14 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
           <div className="flex items-center justify-between w-full sm:w-auto">
             <div className="flex items-center gap-3">
-              {/* Logo Edu Squircle */}
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-purple-700 via-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-base shadow-md shadow-indigo-500/25 border border-purple-400/30">
-                Edu
+              {/* Logo SkolAce Squircle */}
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-purple-700 via-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-sm shadow-md shadow-indigo-500/25 border border-purple-400/30 tracking-tight">
+                SA
               </div>
               <div>
                 <div className="flex items-center gap-2">
                   <h1 className="font-bold text-slate-900 dark:text-slate-50 text-base sm:text-lg tracking-tight leading-none">
-                    Portal Belajar
+                    SkolAce
                   </h1>
                   <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 dark:border dark:border-emerald-600/40 flex items-center gap-1 shadow-2xs">
                     <Sparkles className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />

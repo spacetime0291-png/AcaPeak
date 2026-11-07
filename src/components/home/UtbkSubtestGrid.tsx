@@ -475,20 +475,25 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       {/* 2. Standalone Cards Grid (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4.5 z-10 relative">
         {filteredSubtests.map((sub) => {
+          // Dark mode: hilangkan gradasi neon & warna terang yang terlalu ramai, gunakan kartu gelap tenang & elegan
           const cardBgClass = isDark
-            ? `bg-[#0e1634]/92 backdrop-blur-md ${sub.darkBorderClass}`
+            ? 'bg-[#0d1424] hover:bg-[#111c33] border border-slate-800 hover:border-slate-700 shadow-xs'
             : `${sub.lightBgClass} border border-stone-200/80 shadow-xs`;
 
-          const squircleClass = isDark ? sub.darkSquircleClass : sub.lightSquircleClass;
-          const badgeClass = isDark ? sub.darkBadgeClass : sub.lightBadgeClass;
-          const textClass = isDark ? 'text-white' : 'text-slate-900';
+          const squircleClass = isDark
+            ? 'bg-slate-800/80 border border-slate-700/60 shadow-none'
+            : sub.lightSquircleClass;
+          const badgeClass = isDark
+            ? 'bg-slate-800/80 text-slate-300 border border-slate-700/60'
+            : sub.lightBadgeClass;
+          const textClass = isDark ? 'text-slate-100' : 'text-slate-900';
 
           return (
             <button
               key={sub.code}
               type="button"
               onClick={() => onSelectSubtest(sub.code.toLowerCase())}
-              className={`w-full flex flex-col items-center justify-between p-4.5 sm:p-5 rounded-[24px] transition-all duration-300 hover:-translate-y-1.5 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${cardBgClass}`}
+              className={`w-full flex flex-col items-center justify-between p-4 sm:p-5 rounded-[24px] transition-all duration-300 hover:-translate-y-1 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${cardBgClass}`}
               aria-label={`Buka Subtes ${sub.name}`}
             >
               {/* Light Mode Decorative Corner SVGs */}
@@ -501,16 +506,8 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
                 {sub.code} • {sub.category}
               </span>
 
-              {/* Icon Squircle dengan Radiant Glowing Halo di Dark Mode */}
+              {/* Icon Squircle Container (Halo gradasi terang dihilangkan pada tema gelap) */}
               <div className="relative my-2 z-10 flex items-center justify-center">
-                {/* Intense Cosmic Glowing Halo behind the icon in Dark Mode */}
-                {isDark && (
-                  <div
-                    className={`absolute w-32 h-32 rounded-full ${sub.darkHaloClass} pointer-events-none group-hover:scale-125 transition-transform duration-300 -z-10`}
-                  />
-                )}
-
-                {/* Icon Squircle Container */}
                 <div
                   className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shrink-0 ${squircleClass}`}
                 >
@@ -518,9 +515,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
                 </div>
               </div>
 
-              {/* Label Nama Subtes Lengkap */}
+              {/* Label Nama Subtes Lengkap (Ukuran tulisan judul diperbesar) */}
               <div className="w-full flex-1 flex flex-col items-center justify-start mt-2.5 z-10">
-                <span className={`text-xs sm:text-sm md:text-base font-bold ${textClass} text-center leading-snug w-full break-words group-hover:text-cyan-300 transition-colors`}>
+                <span className={`text-sm sm:text-base md:text-lg font-bold ${textClass} text-center leading-snug w-full break-words group-hover:text-indigo-600 dark:group-hover:text-cyan-300 transition-colors`}>
                   {sub.name}
                 </span>
               </div>

@@ -128,7 +128,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
     ),
     table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
       <div className="overflow-x-auto my-6 mx-auto w-full border border-stone-200 dark:border-slate-800 rounded-2xl shadow-xs bg-white dark:bg-slate-900">
-        <table className="min-w-full divide-y divide-stone-200 dark:divide-slate-800 text-xs sm:text-sm" {...props}>
+        <table className="min-w-full divide-y divide-stone-200 dark:divide-slate-800 text-[15px] sm:text-[16px]" {...props}>
           {children}
         </table>
       </div>
@@ -139,12 +139,12 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
       </thead>
     ),
     th: ({ children, ...props }: React.ComponentPropsWithoutRef<'th'>) => (
-      <th className="px-4 py-3 text-left text-xs uppercase tracking-wider font-bold border-b border-stone-200 dark:border-slate-700 text-slate-900 dark:text-slate-100" {...props}>
+      <th className="px-4 py-3.5 text-left text-xs sm:text-sm uppercase tracking-wider font-bold border-b border-stone-200 dark:border-slate-700 text-slate-900 dark:text-slate-100" {...props}>
         {children}
       </th>
     ),
     td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
-      <td className="px-4 py-3 border-t border-stone-100 dark:border-slate-800 text-slate-800 dark:text-slate-200 whitespace-normal text-xs sm:text-sm leading-relaxed" {...props}>
+      <td className="px-4 py-3.5 border-t border-stone-100 dark:border-slate-800 text-slate-800 dark:text-slate-200 whitespace-normal text-[15px] sm:text-[16px] leading-relaxed" {...props}>
         {children}
       </td>
     ),
@@ -194,55 +194,59 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   };
 
   return (
-    <div className={`min-h-screen text-slate-800 dark:text-[#f8fafc] animate-page-enter transition-all duration-300 ${isFocusMode ? 'py-1 px-1 sm:py-2 sm:px-2' : 'py-2 sm:py-4 px-1 sm:px-3'}`}>
-      {/* 1. TOP STICKY BAR: Back button, topic title, Focus & ThemeToggle */}
-      <div className="relative overflow-hidden sticky top-0 z-30 max-w-4xl mx-auto mb-2.5 sm:mb-4 bg-white/95 dark:bg-[#0c1224]/95 backdrop-blur-md border border-stone-200/90 dark:border-indigo-500/25 rounded-xl sm:rounded-2xl px-2.5 sm:px-4 py-2 shadow-xs flex items-center justify-between gap-2 transition-all duration-300">
+    <div className="min-h-screen text-slate-800 dark:text-[#f8fafc] animate-page-enter transition-all duration-300 pb-12">
+      {/* 1. TOP STATIS/STICKY BAR: Tombol kembali ke bab dan judul sub bab materi dibuat statis di atas */}
+      <div className="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#0c1224]/95 backdrop-blur-md border-b border-stone-200/90 dark:border-indigo-500/25 shadow-xs transition-all duration-300">
         {!isDark && <NatureFocusHeaderAccent />}
 
-        <button
-          type="button"
-          onClick={onBackToSubtest}
-          className="relative z-10 flex items-center gap-1 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-2 py-1.5 rounded-xl hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
-        >
-          <ChevronLeft className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-blue-600 dark:text-cyan-400" />
-          <span className="hidden sm:inline">Daftar Bab {metadata.subtest}</span>
-          <span className="sm:hidden">Bab</span>
-        </button>
-
-        {/* Clean Sub-bab title */}
-        <div className="relative z-10 min-w-0 flex-1 text-center px-1">
-          <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 break-words line-clamp-1 sm:line-clamp-2 leading-tight">
-            {metadata.title}
-          </p>
-        </div>
-
-        {/* Actions: Mode Fokus & Theme Toggle (Tombol Cetak dihilangkan sesuai instruksi) */}
-        <div className="relative z-10 flex items-center gap-1.5 shrink-0">
+        <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between gap-2">
+          {/* Tombol kembali ke bab */}
           <button
             type="button"
-            onClick={() => setIsFocusMode(!isFocusMode)}
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/70 hover:bg-indigo-100 dark:hover:bg-cyan-900/60 transition cursor-pointer border border-indigo-100 dark:border-cyan-800/40"
-            title="Beralih Mode Fokus"
+            onClick={onBackToSubtest}
+            className="relative z-10 flex items-center gap-1 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-2.5 py-1.5 rounded-xl hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
           >
-            {isFocusMode ? (
-              <>
-                <Minimize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span className="hidden md:inline">Biasa</span>
-              </>
-            ) : (
-              <>
-                <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span className="hidden md:inline">Fokus</span>
-              </>
-            )}
+            <ChevronLeft className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-blue-600 dark:text-cyan-400" />
+            <span className="hidden sm:inline">Daftar Bab {metadata.subtest}</span>
+            <span className="sm:hidden">Bab</span>
           </button>
 
-          <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
+          {/* Judul sub bab materi di atas */}
+          <div className="relative z-10 min-w-0 flex-1 text-center px-1">
+            <p className="text-xs sm:text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 truncate sm:line-clamp-2 leading-tight">
+              {metadata.title}
+            </p>
+          </div>
+
+          {/* Actions: Mode Fokus & Theme Toggle */}
+          <div className="relative z-10 flex items-center gap-1.5 shrink-0">
+            <button
+              type="button"
+              onClick={() => setIsFocusMode(!isFocusMode)}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/70 hover:bg-indigo-100 dark:hover:bg-cyan-900/60 transition cursor-pointer border border-indigo-100 dark:border-cyan-800/40"
+              title="Beralih Mode Fokus"
+            >
+              {isFocusMode ? (
+                <>
+                  <Minimize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  <span className="hidden md:inline">Biasa</span>
+                </>
+              ) : (
+                <>
+                  <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  <span className="hidden md:inline">Fokus</span>
+                </>
+              )}
+            </button>
+
+            <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
+          </div>
         </div>
       </div>
 
       {/* 2. PAPER CONTAINER: Compact padding/margin, Maximum Reading Space */}
-      <article className="max-w-4xl mx-auto px-3.5 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 shadow-sm rounded-xl sm:rounded-2xl transition-all duration-300 bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800/90 text-slate-800 dark:text-[#f8fafc]">
+      <div className={isFocusMode ? 'py-1 px-1 sm:py-2 sm:px-2' : 'py-3 sm:py-5 px-1 sm:px-3'}>
+        <article className="max-w-4xl mx-auto px-3.5 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 shadow-sm rounded-xl sm:rounded-2xl transition-all duration-300 bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800/90 text-slate-800 dark:text-[#f8fafc]">
         {/* Academic Header / Metadata */}
         <header className="border-b-2 border-slate-900 dark:border-slate-700 pb-3 sm:pb-4 mb-4 sm:mb-6">
           <div className="flex flex-wrap items-center justify-between gap-1.5 text-[11px] sm:text-xs uppercase font-mono tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
@@ -300,9 +304,9 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                   backgroundColor: isDark ? 'rgba(30, 41, 59, 0.7)' : '#eef2ff',
                   boxShadow: isDark ? '-2px 0 10px rgba(99,102,241,0.25)' : 'none',
                 }}
-                className="px-3.5 py-3 my-3.5 sm:px-4 sm:py-3.5 sm:my-5 font-serif text-[15px] sm:text-[16px] leading-relaxed text-slate-800 dark:text-slate-100 rounded-r-xl transition-all"
+                className="px-4 py-3.5 my-4 sm:px-5 sm:py-4 sm:my-6 font-serif text-[15.5px] sm:text-[16.5px] leading-relaxed text-slate-800 dark:text-slate-100 rounded-r-xl transition-all"
               >
-                <span className="font-sans font-bold text-xs uppercase tracking-wider text-indigo-900 dark:text-indigo-300 block mb-1.5">
+                <span className="font-sans font-bold text-sm sm:text-base uppercase tracking-wider text-indigo-900 dark:text-indigo-300 block mb-2">
                   📌 Kaidah & Prinsip Mutlak:
                 </span>
                 {content.tactical_overview}
@@ -327,16 +331,16 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
             {((content.distractor_traps && content.distractor_traps.length > 0) ||
               (content.quick_execution_algorithm && content.quick_execution_algorithm.length > 0)) && (
               <section className="my-8 pt-6 border-t border-stone-200 dark:border-slate-800">
-                <h2 className="text-lg md:text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+                <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 tracking-tight">
                   Peringatan Jebakan Distractor & Algoritma Eksekusi
                 </h2>
 
                 {content.distractor_traps && content.distractor_traps.length > 0 && (
                   <div className="mb-5 bg-rose-50/80 dark:bg-rose-950/40 border border-rose-200/80 dark:border-rose-900/60 rounded-2xl p-4 sm:p-5 shadow-2xs">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-rose-800 dark:text-rose-300 mb-2.5">
+                    <h3 className="text-sm sm:text-base font-bold uppercase tracking-wider text-rose-800 dark:text-rose-300 mb-2.5">
                       ⚠️ 3 Jebakan Paling Sering Mengecoh Siswa:
                     </h3>
-                    <ul className="list-disc list-outside pl-5 space-y-2 text-xs sm:text-sm text-rose-950 dark:text-rose-100 leading-relaxed">
+                    <ul className="list-disc list-outside pl-5 space-y-2.5 text-[15.5px] sm:text-[16.5px] text-rose-950 dark:text-rose-100 leading-relaxed">
                       {content.distractor_traps.map((trap, idx) => (
                         <li key={idx}>{trap}</li>
                       ))}
@@ -346,10 +350,10 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
 
                 {content.quick_execution_algorithm && content.quick_execution_algorithm.length > 0 && (
                   <div className="bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-200/80 dark:border-indigo-900/60 rounded-2xl p-4 sm:p-5 shadow-2xs">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-indigo-800 dark:text-indigo-300 mb-2.5">
+                    <h3 className="text-sm sm:text-base font-bold uppercase tracking-wider text-indigo-800 dark:text-indigo-300 mb-2.5">
                       ⚡ Algoritma Penyelesaian Kilat:
                     </h3>
-                    <ol className="list-decimal list-outside pl-5 space-y-2 text-xs sm:text-sm text-indigo-950 dark:text-indigo-100 leading-relaxed">
+                    <ol className="list-decimal list-outside pl-5 space-y-2.5 text-[15.5px] sm:text-[16.5px] text-indigo-950 dark:text-indigo-100 leading-relaxed">
                       {content.quick_execution_algorithm.map((step, idx) => (
                         <li key={idx}>{step}</li>
                       ))}
@@ -399,7 +403,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
 
                         {/* Stimulus Context if available */}
                         {example.context_markdown && (
-                          <div className="p-4 sm:p-5 bg-white dark:bg-[#070c18] rounded-2xl border border-stone-200 dark:border-slate-800 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed italic shadow-2xs">
+                          <div className="p-4 sm:p-5 bg-white dark:bg-[#070c18] rounded-2xl border border-stone-200 dark:border-slate-800 text-[15.5px] sm:text-[16.5px] text-slate-700 dark:text-slate-300 leading-relaxed italic shadow-2xs">
                             <ReactMarkdown
                               remarkPlugins={[remarkMath, remarkGfm]}
                               rehypePlugins={[rehypeKatex]}
@@ -411,7 +415,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                         )}
 
                         {/* Question Markdown */}
-                        <div className="text-sm sm:text-base font-semibold text-slate-900 dark:text-slate-100 leading-relaxed">
+                        <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-relaxed">
                           <ReactMarkdown
                             remarkPlugins={[remarkMath, remarkGfm]}
                             rehypePlugins={[rehypeKatex]}
@@ -442,7 +446,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                                 }`}
                               >
                                 <span
-                                  className={`w-6 h-6 sm:w-7 sm:h-7 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs ${
+                                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl text-sm sm:text-base font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs ${
                                     isChosen
                                       ? isDark
                                         ? 'bg-cyan-500 text-slate-950 font-bold'
@@ -452,7 +456,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                                 >
                                   {opt.key}
                                 </span>
-                                <div className="flex-1 text-xs sm:text-sm leading-relaxed">
+                                <div className="flex-1 text-[15px] sm:text-[16px] leading-relaxed">
                                   <ReactMarkdown
                                     remarkPlugins={[remarkMath, remarkGfm]}
                                     rehypePlugins={[rehypeKatex]}
@@ -471,7 +475,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                           <button
                             type="button"
                             onClick={() => toggleSolution(example.example_id)}
-                            className="w-full py-3 px-5 rounded-2xl border border-stone-300 dark:border-slate-700 bg-white dark:bg-[#0a1020] hover:bg-stone-50 dark:hover:bg-slate-800 text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-200 flex items-center justify-between transition cursor-pointer shadow-2xs active:scale-[0.99]"
+                            className="w-full py-3 px-5 rounded-2xl border border-stone-300 dark:border-slate-700 bg-white dark:bg-[#0a1020] hover:bg-stone-50 dark:hover:bg-slate-800 text-sm sm:text-base font-bold text-slate-700 dark:text-slate-200 flex items-center justify-between transition cursor-pointer shadow-2xs active:scale-[0.99]"
                           >
                             <span className="flex items-center gap-2">
                               <BookOpen className="w-4.5 h-4.5 text-indigo-600 dark:text-cyan-400" />
@@ -486,16 +490,16 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
 
                           {/* Collapsible Solution Content */}
                           {isOpen && (
-                            <div className="mt-3.5 p-5 bg-white dark:bg-[#070c18] rounded-2xl border border-stone-200 dark:border-slate-800 space-y-4 text-xs sm:text-sm shadow-xs animate-in fade-in duration-150">
+                            <div className="mt-3.5 p-5 bg-white dark:bg-[#070c18] rounded-2xl border border-stone-200 dark:border-slate-800 space-y-4 text-[15px] sm:text-[16px] shadow-xs animate-in fade-in duration-150">
                               {/* Correct Answer Badge */}
                               <div className="flex flex-wrap items-center gap-2 pb-3 border-b border-stone-100 dark:border-slate-800">
                                 <span className="font-bold text-slate-700 dark:text-slate-300">Kunci Jawaban:</span>
-                                <span className="px-3 py-1 rounded-lg font-black text-xs bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-700/60">
+                                <span className="px-3 py-1 rounded-lg font-black text-xs sm:text-sm bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-700/60">
                                   Opsi {example.correct_answer}
                                 </span>
                                 {userSelected && (
                                   <span
-                                    className={`text-xs font-semibold ${
+                                    className={`text-xs sm:text-sm font-semibold ${
                                       userSelected === example.correct_answer
                                         ? 'text-emerald-600 dark:text-emerald-400'
                                         : 'text-rose-600 dark:text-rose-400'
@@ -508,7 +512,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
 
                               {/* Conceptual Solution */}
                               <div>
-                                <span className="font-bold text-slate-900 dark:text-slate-100 block mb-1.5 text-sm">
+                                <span className="font-bold text-slate-900 dark:text-slate-100 block mb-1.5 text-base">
                                   Solusi Konseptual:
                                 </span>
                                 <div className="text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -525,7 +529,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                               {/* Quick Trick */}
                               {example.quick_trick_markdown && (
                                 <div className="p-4 bg-amber-50/80 dark:bg-amber-950/40 rounded-xl border border-amber-200/80 dark:border-amber-900/60 text-amber-950 dark:text-amber-200">
-                                  <span className="font-bold text-xs uppercase tracking-wider text-amber-800 dark:text-amber-300 flex items-center gap-1.5 mb-1.5">
+                                  <span className="font-bold text-sm uppercase tracking-wider text-amber-800 dark:text-amber-300 flex items-center gap-1.5 mb-1.5">
                                     <Zap className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                                     <span>Trik Cepat / Eliminasi Kilat:</span>
                                   </span>
@@ -542,7 +546,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                               {/* Why others are wrong */}
                               {example.why_others_are_wrong_markdown && (
                                 <div className="pt-1 text-slate-600 dark:text-slate-300">
-                                  <span className="font-bold text-slate-800 dark:text-slate-200 block mb-1.5 text-sm">
+                                  <span className="font-bold text-slate-800 dark:text-slate-200 block mb-1.5 text-base">
                                     Mengapa Pilihan Lain Salah?
                                   </span>
                                   <ReactMarkdown
@@ -599,6 +603,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           </button>
         </footer>
       </article>
+      </div>
     </div>
   );
 };

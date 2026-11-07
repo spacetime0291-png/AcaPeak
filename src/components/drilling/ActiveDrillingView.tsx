@@ -159,8 +159,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
   // Custom markdown component styling for KaTeX & high contrast
   const markdownComponents = {
-    p: ({ children }: any) => <p className="my-2 leading-relaxed text-slate-800 dark:text-slate-200">{children}</p>,
-    strong: ({ children }: any) => <strong className="font-bold text-slate-900 dark:text-slate-100">{children}</strong>,
+    p: ({ children }: any) => <p className="my-1.5 leading-relaxed text-inherit">{children}</p>,
+    strong: ({ children }: any) => <strong className="font-bold text-inherit">{children}</strong>,
   };
 
   // -------------------------------------------------------------
@@ -304,10 +304,10 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
                 {/* Review Body & Solution */}
                 {isReviewOpen && (
-                  <div className="p-4 sm:p-5 border-t border-stone-100 dark:border-slate-800 space-y-4 text-xs sm:text-sm">
+                  <div className="p-4 sm:p-5 border-t border-stone-100 dark:border-slate-800 space-y-4 text-sm sm:text-base">
                     {/* Stimulus / Context */}
                     {q.context_markdown && (
-                      <div className="p-3 bg-stone-50 dark:bg-slate-900 rounded-xl border border-stone-200/80 dark:border-slate-800 text-slate-700 dark:text-slate-300 italic">
+                      <div className="p-3.5 sm:p-4 bg-stone-50 dark:bg-slate-900 rounded-xl border border-stone-200/80 dark:border-slate-800 text-[15px] sm:text-base text-slate-800 dark:text-slate-200 leading-relaxed italic">
                         <ReactMarkdown
                           remarkPlugins={[remarkMath, remarkGfm]}
                           rehypePlugins={[rehypeKatex]}
@@ -319,7 +319,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                     )}
 
                     {/* Question text */}
-                    <div className="font-semibold text-slate-900 dark:text-slate-100">
+                    <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-relaxed">
                       <ReactMarkdown
                         remarkPlugins={[remarkMath, remarkGfm]}
                         rehypePlugins={[rehypeKatex]}
@@ -330,11 +330,11 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                     </div>
 
                     {/* Options list */}
-                    <div className="space-y-1.5 pl-1">
+                    <div className="space-y-2 pl-1">
                       {q.options.map((opt) => (
                         <div
                           key={opt.key}
-                          className={`p-2.5 rounded-xl border flex items-start gap-2.5 ${
+                          className={`p-3 rounded-xl border flex items-start gap-3 ${
                             opt.key === q.correct_answer
                               ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 font-semibold text-emerald-950 dark:text-emerald-100'
                               : opt.key === userAnswer
@@ -342,8 +342,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                               : 'bg-white dark:bg-slate-900 border-stone-100 dark:border-slate-800 text-slate-700 dark:text-slate-300'
                           }`}
                         >
-                          <span className="font-bold text-xs w-5">{opt.key}.</span>
-                          <div className="flex-1">
+                          <span className="font-bold text-sm w-6">{opt.key}.</span>
+                          <div className="flex-1 text-[15px] sm:text-base leading-relaxed">
                             <ReactMarkdown
                               remarkPlugins={[remarkMath, remarkGfm]}
                               rehypePlugins={[rehypeKatex]}
@@ -538,9 +538,9 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           </button>
         </div>
 
-        {/* Reading Context / Stimulus Text if available */}
+        {/* Reading Context / Stimulus Text if available (Diperbesar agar jelas dibaca) */}
         {currentQuestion.context_markdown && (
-          <div className="p-4 sm:p-5 bg-stone-50/80 dark:bg-slate-900 rounded-2xl border border-stone-200/80 dark:border-slate-800 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed italic">
+          <div className="p-4 sm:p-6 bg-stone-50/90 dark:bg-slate-900 rounded-2xl border border-stone-200/90 dark:border-slate-800 text-base sm:text-[17px] text-slate-800 dark:text-slate-200 leading-[1.8] italic">
             <ReactMarkdown
               remarkPlugins={[remarkMath, remarkGfm]}
               rehypePlugins={[rehypeKatex]}
@@ -551,8 +551,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           </div>
         )}
 
-        {/* Question Text */}
-        <div className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 leading-relaxed">
+        {/* Question Text (Ukuran soal di Drilling diperbesar) */}
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-50 leading-relaxed tracking-tight">
           <ReactMarkdown
             remarkPlugins={[remarkMath, remarkGfm]}
             rehypePlugins={[rehypeKatex]}
@@ -584,7 +584,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               >
                 {/* Option Letter Circle */}
                 <div
-                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 transition ${
+                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl text-sm sm:text-base font-bold flex items-center justify-center shrink-0 mt-0.5 transition ${
                     isSelected
                       ? isDark
                         ? 'bg-cyan-500 text-slate-950 font-bold'
@@ -595,7 +595,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                   {option.key}
                 </div>
 
-                <div className="flex-1 text-sm sm:text-base leading-relaxed">
+                <div className="flex-1 text-base sm:text-[17px] leading-relaxed">
                   <ReactMarkdown
                     remarkPlugins={[remarkMath, remarkGfm]}
                     rehypePlugins={[rehypeKatex]}
