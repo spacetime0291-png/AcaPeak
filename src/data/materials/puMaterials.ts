@@ -2986,3 +2986,713 @@ export const MATERIAL_PU_02_06: Material = {
     }
   ]
 };
+
+export const MATERIAL_PU_03_01: Material = {
+  "metadata": {
+    "id": "pu-3-1",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.1",
+    "subchapter_title": "Pola Bilangan dan Deret",
+    "title": "Pola Bilangan dan Deret",
+    "required_question_variations": [
+      "Deret Aritmetika dan Geometri Bertingkat",
+      "Deret Larik Melompat / Pola Berseling (Multi-Baris)",
+      "Pola Operasi Kombinasi dan Aturan Khusus (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Pola bilangan dan deret menguji ketajaman Anda dalam membaca keteraturan matematis di balik barisan angka. Soal tipe ini selalu hadir di UTBK SNBT dengan tujuan menguji kecepatan observasi numerik Anda di bawah tekanan waktu. Kunci keberhasilan bukan menebak-nebak rumus rumit, melainkan mengenali tanda-tanda visual barisan: jika angka naik secara bertahap dan teratur maka curigai pola selisih penjumlahan bertingkat, jika angka melompat sangat cepat maka curigai perkalian atau kuadrat, dan jika angka naik-turun secara bergantian maka segera pisahkan barisan menjadi dua larik berseling independen.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPola bilangan dan deret di UTBK SNBT dirancang untuk menguji kelincahan logika numerik Anda dalam mengidentifikasi pola hubungan antarangka.\n\nTiga pola utama yang paling dominan di UTBK adalah:\n\n1. **Deret Selisih Bertingkat (*Multi-level Differences*)**  \n   Pola di mana selisih antarbilangan yang berdekatan tidak konstan pada tingkat pertama, melainkan baru membentuk pola teratur pada tingkat kedua atau ketiga.  \n   - *Tingkat 1:* $+3, +6, +9, +12, \\dots$ (selisih membentuk barisan kelipatan 3).  \n   - *Tingkat 2:* Selisih dari selisihnya bernilai tetap ($+3$).\n\n2. **Deret Larik Melompat / Berseling (*Interleaved / Alternating Sequences*)**  \n   Barisan tunggal yang sebenarnya merupakan gabungan dari dua atau tiga barisan independen yang ditulis secara berselang-seling.  \n   - Ciri khas visual: Angka di dalam deret mengalami fluktuasi naik-turun (misal: naik, turun, naik, turun).  \n   - Cara penanganan: Jangan mencari hubungan antara suku ke-1 dan suku ke-2. Langsung hubungkan suku posisi ganjil ($U_1 \\to U_3 \\to U_5 \\to U_7$) dan suku posisi genap ($U_2 \\to U_4 \\to U_6 \\to U_8$).\n\n3. **Pola Operasi Kombinasi Berulang (*Combined Arithmetic Operations*)**  \n   Setiap suku berikutnya dihasilkan dari suku sebelumnya melalui kombinasi dua operasi hitung berbeda secara berulang, misalnya perkalian kemudian penjumlahan: $(\\times 2 - 1)$, $(\\times 2 - 2)$, $(\\times 2 - 3)$, atau operasi terhadap dua suku sebelumnya (pola berbasis Fibonacci).\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Memaksakan Pola Tunggal pada Deret Berseling**  \n   Banyak siswa terjebak mencoba mencari selisih langsung antara suku ke-1 dan ke-2, lalu suku ke-2 dan ke-3 pada barisan yang naik-turun. Akibatnya diperoleh selisih yang acak dan membingungkan (+12, -7, +15, -6). Begitu Anda melihat angka naik-turun secara bergantian, segera alihkan fokus ke pola lompat selang satu suku.\n2. **Jebakan Operasi Berubah Tanda Tanpa Dicermati**  \n   Pada pola operasi kombinasi, pengali atau penambah sering kali tidak bernilai tetap melainkan bertambah secara berurutan, misalnya $\\times 2 - 1, \\times 2 - 2, \\times 2 - 3$. Siswa yang hanya menguji dua suku pertama sering salah menyimpulkan bahwa pengurangnya selalu konstan $-1$.\n3. **Jebakan Kuadrat dan Kubik Tersembunyi**  \n   Selisih antarangka yang berbentuk bilangan kuadrat ($1, 4, 9, 16, 25$) atau bilangan pangkat tiga ($1, 8, 27, 64$) sering tidak disadari siswa karena mereka hanya fokus mencari operasi perkalian langsung.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nGunakan protokol observasi 15 detik berikut untuk menemukan pola deret secara kilat:\n\n1. **Cek Dinamika Arah Angka**  \n   - Apakah angka **naik terus secara konsisten**? $\\to$ Fokus pada pola selisih bertingkat atau perkalian.  \n   - Apakah angka **naik dan turun bergantian**? $\\to$ Langsung pisahkan menjadi deret lompat (larik ganjil dan larik genap).\n2. **Hitung Cepat Selisih 3 Pasang Suku Pertama**  \n   Tuliskan selisih di antara suku 1-2, 2-3, dan 3-4 di atas kertas. Jika selisihnya adalah $+3, +6, +9$, pola sudah langsung terkunci tanpa perlu menebak rumus formal.\n3. **Uji Hipotesis pada Suku Terakhir yang Diketahui**  \n   Sebelum memilih jawaban, terapkan pola yang Anda temukan pada suku sebelum tanda tanya untuk memastikan angka tersebut menghasilkan angka berikutnya yang tercantum di soal.\n4. **Eliminasi Opsi Jawaban Berdasarkan Taksiran Besar**  \n   Jika pola menunjukkan pertambahan di atas $+20$, segera coret opsi pilihan ganda yang nilainya terlalu kecil atau bahkan lebih kecil dari suku sebelumnya.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Pola bilangan menguji kemampuan visualisasi keteraturan relasi matematis antarbilangan.\n- **Dua Tipe Terbesar:** Deret bertingkat (analisis selisih berulang) dan deret melompat berseling (analisis suku posisi ganjil vs genap secara terpisah).\n- **Strategi Eksekusi:** Selalu hitung selisih antarbilangan terlebih dahulu; jika acak atau berfluktuasi naik-turun, lompatkan satu suku untuk memisahkan dua relasi independen.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Pola Bilangan dan Deret yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks barisan, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Deret Aritmetika dan Geometri Bertingkat\n\n> **Konteks Barisan Soal:**  \n> Diberikan sebuah barisan bilangan sebagai berikut:  \n> $$2, \\; 5, \\; 11, \\; 20, \\; 32, \\; X, \\; Y$$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ dan $Y$ berturut-turut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 46 dan 62  \n> - **B.** 47 dan 65  \n> - **C.** 47 dan 64  \n> - **D.** 48 dan 66  \n> - **E.** 46 dan 63\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Selisih Antarsuku:**\n  - $U_1 \\to U_2: 5 - 2 = +3$\n  - $U_2 \\to U_3: 11 - 5 = +6$\n  - $U_3 \\to U_4: 20 - 11 = +9$\n  - $U_4 \\to U_5: 32 - 20 = +12$\n- **Analisis Selisih Tingkat Kedua:**\n  - Barisan selisih tingkat pertama adalah: $3, \\; 6, \\; 9, \\; 12, \\dots$\n  - Perhatikan bahwa selisihnya bertambah secara konstan sebesar $+3$ (kelipatan 3 bertingkat).\n- **Menghitung Nilai $X$ dan $Y$:**\n  - Selisih berikutnya untuk menghasilkan $X$ adalah $12 + 3 = +15$.  \n    Maka nilai $X = 32 + 15 = 47$.\n  - Selisih berikutnya untuk menghasilkan $Y$ adalah $15 + 3 = +18$.  \n    Maka nilai $Y = 47 + 18 = 65$.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & E Salah:** Menghitung $X = 46$ (keliru menjumlahkan $32 + 14$, bukan $+15$).\n  - **Pilihan C Salah:** Nilai $X = 47$ benar, tetapi $Y = 64$ keliru karena menjumlahkan dengan $+17$ bukan $+18$.\n  - **Pilihan D Salah:** Menghitung $X = 48$ (mengasumsikan selisih $+16$).\n- **Penerapan Trik Cepat (15 Detik):** Cermati selisih: $+3, +6, +9, +12$. Ini jelas kelipatan 3! Angka berikutnya wajib $+15$, sehingga $32 + 15 = 47$. Sisa opsi hanya B dan C. Langkah berikutnya $+18$, maka $47 + 18 = 65$. Jawaban langsung terkunci pada pilihan **B**.\n\n---\n\n### Variasi 2: Deret Larik Melompat / Pola Berseling (Multi-Baris)\n\n> **Konteks Barisan Soal:**  \n> Diberikan barisan bilangan campuran sebagai berikut:  \n> $$4, \\; 25, \\; 8, \\; 22, \\; 16, \\; 19, \\; X, \\; Y$$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ dan $Y$ berturut-turut yang paling tepat melengkapi barisan tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 32 dan 16  \n> - **B.** 32 dan 15  \n> - **C.** 24 dan 16  \n> - **D.** 30 dan 17  \n> - **E.** 36 dan 14\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Deteksi Karakteristik Deret:**\n  - Perhatikan pola pergerakan angka: $4 \\to 25$ (naik tajam), $25 \\to 8$ (turun tajam), $8 \\to 22$ (naik), $22 \\to 16$ (turun).\n  - Fluktuasi naik-turun yang berulang secara konsisten adalah ciri mutlak dari **deret berseling 2 larik**.\n- **Pemisahan Menjadi Dua Larik Independen:**\n  - **Larik 1 (Suku Posisi Ganjil: $U_1, U_3, U_5, U_7 = X$):**  \n    $$4, \\; 8, \\; 16, \\; X$$  \n    Pola: Setiap suku dikalikan 2 (rasio $\\times 2$).  \n    Maka nilai $X = 16 \\times 2 = 32$.\n  - **Larik 2 (Suku Posisi Genap: $U_2, U_4, U_6, U_8 = Y$):**  \n    $$25, \\; 22, \\; 19, \\; Y$$  \n    Pola: Setiap suku berkurang 3 (beda konstan $-3$).  \n    Maka nilai $Y = 19 - 3 = 16$.\n- **Kesimpulan Pasangan $(X, Y)$:** Nilai yang tepat berturut-turut adalah **32 dan 16**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan B Salah:** Nilai $Y = 15$ keliru menghitung pengurangan $19 - 4$.\n  - **Pilihan C Salah:** Nilai $X = 24$ keliru mengasumsikan pola penambahan $+8$ bukan perkalian $\\times 2$.\n  - **Pilihan D & E Salah:** Pola perkalian dan pengurangan tidak diterapkan dengan konsisten.\n- **Penerapan Trik Cepat (15 Detik):** Langsung pisahkan: $4 \\to 8 \\to 16 \\to X$ (pasti berlipat ganda, jadi $X = 32$). Lalu $25 \\to 22 \\to 19 \\to Y$ (selalu berkurang 3, jadi $19 - 3 = 16$). Dalam waktu 10 detik, jawaban **A** langsung ditemukan.\n\n---\n\n### Variasi 3: Pola Operasi Kombinasi dan Aturan Khusus / HOTS\n\n> **Konteks Barisan Soal:**  \n> Diberikan barisan angka yang dibentuk melalui suatu aturan operasi kombinasi aritmetika teratur:  \n> $$4, \\; 7, \\; 12, \\; 21, \\; 38, \\; 71, \\; X$$  \n>  \n> **Pertanyaan UTBK:** *Bilangan yang paling tepat menggantikan $X$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 132  \n> - **B.** 134  \n> - **C.** 136  \n> - **D.** 138  \n> - **E.** 142\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Relasi Antarsuku:**\n  - $U_1 = 4$  \n  - $U_2 = 4 \\times 2 - 1 = 8 - 1 = 7$  \n  - $U_3 = 7 \\times 2 - 2 = 14 - 2 = 12$  \n  - $U_4 = 12 \\times 2 - 3 = 24 - 3 = 21$  \n  - $U_5 = 21 \\times 2 - 4 = 42 - 4 = 38$  \n  - $U_6 = 38 \\times 2 - 5 = 76 - 5 = 71$  \n- **Identifikasi Pola Induktif:**\n  - Pola pembentukan suku ke-$n$ dari suku sebelumnya adalah: dikalikan 2, kemudian dikurangi bilangan bulat yang berurutan naik mulai dari 1 ($n - 1$).\n  - Operasi berturut-turut: $\\times 2 - 1, \\; \\times 2 - 2, \\; \\times 2 - 3, \\; \\times 2 - 4, \\; \\times 2 - 5, \\dots$\n- **Menghitung Nilai $X$:**\n  - Untuk memperoleh suku ke-7 ($X$), polanya adalah dikalikan 2 lalu dikurangi 6:  \n    $$X = 71 \\times 2 - 6 = 142 - 6 = 136$$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & B Salah:** Menghitung $142 - 10$ atau $142 - 8$ karena keliru menyangka pengurangnya adalah bilangan genap kelipatan 2.\n  - **Pilihan D Salah:** Menghitung $142 - 4$ karena lupa menaikkan angka pengurang.\n  - **Pilihan E Salah:** Nilai $142$ hanya hasil kali $71 \\times 2$ tanpa melakukan operasi pengurangan.\n- **Penerapan Trik Cepat (15 Detik):** Perhatikan angka perkalian 2: $4 \\to 8$ (kurang 1), $7 \\to 14$ (kurang 2), $12 \\to 24$ (kurang 3), $21 \\to 42$ (kurang 4), $38 \\to 76$ (kurang 5). Maka untuk 71 pasti dikalikan 2 lalu dikurang 6: $71 \\times 2 = 142 \\implies 142 - 6 = 136$. Jawaban tepat adalah pilihan **C**.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Memaksakan pola selisih tunggal pada deret berseling naik-turun: Segera pisahkan menjadi dua larik ganjil dan genap.",
+      "Lupa menaikkan nilai pengurang pada pola kombinasi: Menganggap pengurang selalu konstan padahal bertambah urut (-1, -2, -3, ...).",
+      "Keliru menghitung selisih bertingkat pada suku terakhir: Tidak teliti menambahkan selisih tingkat 2 ke selisih tingkat 1."
+    ],
+    "quick_execution_algorithm": [
+      "Amati tren visual barisan: naik konsisten atau berfluktuasi naik-turun.",
+      "Jika naik teratur, tuliskan selisih 3 pasangan suku pertama untuk mendeteksi selisih bertingkat.",
+      "Jika berfluktuasi, lompat satu suku dan pisahkan menjadi dua barisan independen.",
+      "Terapkan pola secara ketat pada suku terakhir untuk memverifikasi kecocokan sebelum memilih opsi."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-01-ex1",
+      "variation_name": "Variasi 1: Deret Aritmetika dan Geometri Bertingkat (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Diberikan sebuah barisan bilangan sebagai berikut:\n2, 5, 11, 20, 32, X, Y",
+      "question_markdown": "Nilai dari **X** dan **Y** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "46 dan 62"
+        },
+        {
+          "key": "B",
+          "text_markdown": "47 dan 65"
+        },
+        {
+          "key": "C",
+          "text_markdown": "47 dan 64"
+        },
+        {
+          "key": "D",
+          "text_markdown": "48 dan 66"
+        },
+        {
+          "key": "E",
+          "text_markdown": "46 dan 63"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung selisih antarsuku yang berdekatan: dari 2 ke 5 (+3), 5 ke 11 (+6), 11 ke 20 (+9). Perhatikan bahwa selisihnya selalu bertambah 3!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Selisih Tingkat 1:**\n  - $U_2 - U_1 = 5 - 2 = 3$\n  - $U_3 - U_2 = 11 - 5 = 6$\n  - $U_4 - U_3 = 20 - 11 = 9$\n  - $U_5 - U_4 = 32 - 20 = 12$\n- **Selisih Tingkat 2:** Selisihnya konstan bertambah $+3$.\n- **Perhitungan X dan Y:**\n  - Selisih berikutnya $= 12 + 3 = 15 \\implies X = 32 + 15 = 47$.\n  - Selisih berikutnya lagi $= 15 + 3 = 18 \\implies Y = 47 + 18 = 65$.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Kelipatan 3):**\n\n1. Selisih: $+3, +6, +9, +12$.\n2. Selisih berikutnya pasti $+15 \\implies 32 + 15 = 47$.\n3. Selisih berikutnya $+18 \\implies 47 + 18 = 65$.\n4. Jawaban langsung **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A & E Salah:** Menghitung X = 46 karena keliru menjumlahkan 32 + 14.\n- **Pilihan C Salah:** Nilai X benar (47), namun Y keliru dihitung 64 bukan 65.\n- **Pilihan D Salah:** Menghitung X = 48 yang mengabaikan pola kelipatan 3."
+    },
+    {
+      "example_id": "pu-03-01-ex2",
+      "variation_name": "Variasi 2: Deret Larik Melompat / Pola Berseling (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Diberikan barisan bilangan campuran sebagai berikut:\n4, 25, 8, 22, 16, 19, X, Y",
+      "question_markdown": "Nilai dari **X** dan **Y** berturut-turut yang paling tepat melengkapi barisan tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "32 dan 16"
+        },
+        {
+          "key": "B",
+          "text_markdown": "32 dan 15"
+        },
+        {
+          "key": "C",
+          "text_markdown": "24 dan 16"
+        },
+        {
+          "key": "D",
+          "text_markdown": "30 dan 17"
+        },
+        {
+          "key": "E",
+          "text_markdown": "36 dan 14"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Barisan berfluktuasi naik dan turun. Jangan cari relasi langsung antarsuku! Pisahkan suku ganjil (4, 8, 16, X) dan suku genap (25, 22, 19, Y).",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Larik Posisi Ganjil ($U_1, U_3, U_5, U_7$):**\n  - $4, \\; 8, \\; 16, \\; X$\n  - Pola geometri dengan rasio $r = 2$ ($4 \\times 2 = 8, 8 \\times 2 = 16$).\n  - Maka $X = 16 \\times 2 = 32$.\n- **Larik Posisi Genap ($U_2, U_4, U_6, U_8$):**\n  - $25, \\; 22, \\; 19, \\; Y$\n  - Pola aritmetika dengan beda $b = -3$ ($25 - 3 = 22, 22 - 3 = 19$).\n  - Maka $Y = 19 - 3 = 16$.\n- **Kesimpulan:** Nilai $(X, Y) = (32, 16)$.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Dua Jalur Terpisah):**\n\n1. Jalur Ganjil: $4 \\to 8 \\to 16 \\to X \\implies X = 32$.\n2. Jalur Genap: $25 \\to 22 \\to 19 \\to Y \\implies Y = 16$.\n3. Jawaban terkonfirmasi **A** dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Nilai Y = 15 akibat pengurangan 4 bukan 3.\n- **Pilihan C Salah:** Nilai X = 24 karena salah menganggap pola penambahan +8 bukan perkalian 2.\n- **Pilihan D & E Salah:** Pola kedua larik tidak konsisten."
+    },
+    {
+      "example_id": "pu-03-01-ex3",
+      "variation_name": "Variasi 3: Pola Operasi Kombinasi Berulang (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Diberikan barisan angka yang dibentuk melalui suatu aturan operasi kombinasi aritmetika teratur:\n4, 7, 12, 21, 38, 71, X",
+      "question_markdown": "Bilangan yang **paling tepat** menggantikan **X** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "132"
+        },
+        {
+          "key": "B",
+          "text_markdown": "134"
+        },
+        {
+          "key": "C",
+          "text_markdown": "136"
+        },
+        {
+          "key": "D",
+          "text_markdown": "138"
+        },
+        {
+          "key": "E",
+          "text_markdown": "142"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Coba kalikan setiap angka dengan 2: 4 x 2 = 8 (kurang 1 jadi 7). 7 x 2 = 14 (kurang 2 jadi 12). 12 x 2 = 24 (kurang 3 jadi 21). Perhatikan polanya!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Operasi Suku:**\n  - $U_2 = 4 \\times 2 - 1 = 7$\n  - $U_3 = 7 \\times 2 - 2 = 12$\n  - $U_4 = 12 \\times 2 - 3 = 21$\n  - $U_5 = 21 \\times 2 - 4 = 38$\n  - $U_6 = 38 \\times 2 - 5 = 71$\n- **Rumusan Pola:** Setiap suku dikalikan 2 lalu dikurangi bilangan bulat yang terus bertambah 1.\n- **Perhitungan X:**\n  - $X = 71 \\times 2 - 6 = 142 - 6 = 136$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Perkalian 2 minus n):**\n\n1. Pola: $\\times 2 - 1, \\times 2 - 2, \\times 2 - 3, \\times 2 - 4, \\times 2 - 5$.\n2. Suku berikutnya: $71 \\times 2 - 6 = 142 - 6 = 136$.\n3. Jawaban langsung **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A & B Salah:** Menghitung 142 - 10 atau 142 - 8 karena salah mengasumsikan pengurang genap.\n- **Pilihan D Salah:** Menghitung 142 - 4 karena lupa menaikkan pengurang menjadi 6.\n- **Pilihan E Salah:** 142 hanya hasil kali tanpa pengurangan."
+    }
+  ]
+};
+
+export const MATERIAL_PU_03_02: Material = {
+  "metadata": {
+    "id": "pu-3-2",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.2",
+    "subchapter_title": "Pola Gambar dan Spasial Numerik",
+    "title": "Pola Gambar dan Spasial Numerik",
+    "required_question_variations": [
+      "Spasial Angka dalam Pola Bangun Geometri (Angka Sudut vs Pusat)",
+      "Matriks Angka Berpola Hubungan Baris dan Kolom",
+      "Analogi dan Serial Spasial Transformasi Objek Geometri (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Spasial numerik dan pola gambar menguji kejelian Anda dalam menghubungkan konfigurasi visual geometris dengan relasi operasi aritmetika. Di UTBK SNBT, soal jenis ini paling sering muncul dalam bentuk bangun datar (segitiga atau lingkaran) yang memuat beberapa angka di sudut dan satu angka misterius di pusat, atau tabel matriks angka 3x3. Kunci taktisnya adalah memperlakukan angka di sudut sebagai \"input\" dan angka di pusat sebagai \"output\". Uji operasi paling umum: perkalian sisi bawah dikurangi sisi atas, atau jumlah dua sisi dibagi sisi ketiga. Begitu sebuah formula berhasil menghasilkan angka pusat pada gambar pertama, formula yang identik wajib diterapkan pada gambar kedua.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nSpasial numerik mengintegrasikan penalaran visual dan aritmetika dasar:\n\n1. **Bangun Geometri Berangka (Pola Sudut vs Pusat)**  \n   Sebuah bangun geometri (misal: segitiga, lingkaran bertingkat, atau bujur sangkar) memuat angka-angka pada setiap titik sudut dan satu angka di tengah.  \n   - Angka sudut berperan sebagai **variabel input** ($A, B, C$).  \n   - Angka tengah berperan sebagai **target output** ($Z$).  \n   - Pola baku yang sering muncul:  \n     - $(A \\times B) - C = Z$  \n     - $\\frac{A + B}{C} = Z$  \n     - $(A + B) \\times C = Z$\n\n2. **Matriks Angka Berpola Baris dan Kolom**  \n   Tabel angka $3 \\times 3$ di mana salah satu sel berisi tanda tanya ($?$).  \n   - Tentukan apakah pola beroperasi secara **horizontal (per baris)** atau **vertikal (per kolom)**.  \n   - Cara membedakan: Bandingkan angka-angka di ujung baris vs ujung kolom. Jika angka di kolom ke-3 selalu bernilai jauh lebih besar daripada kolom 1 dan 2, maka polanya hampir pasti bekerja secara horizontal (operasi kolom 1 dan 2 menghasilkan kolom 3).\n\n3. **Serial Spasial dan Transformasi Gambar**  \n   Rangkaian gambar berurutan yang mengalami transformasi bentuk, orientasi arah putaran (rotasi $45^\\circ$ atau $90^\\circ$), pencerminan, atau penambahan/pengurangan elemen titik dan arsiran secara berpola teratur.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Pola Kebetulan pada Gambar Pertama**  \n   Terkadang sebuah formula sederhana bekerja secara kebetulan pada Gambar I, namun menghasilkan angka yang tidak tersedia di opsi pilihan ganda pada Gambar II. Jika hal ini terjadi, jangan panik; cari alternatif kombinasi operasi lain (misalnya menguji pembagian atau perkalian pasangan sudut yang berbeda).\n2. **Jebakan Membalik Peran Baris dan Kolom pada Matriks**  \n   Siswa sering kali memaksakan hubungan antarbaris padahal matriks tersebut dirancang bekerja antarkolom. Selalu uji konsistensi formula pada Baris 1 DAN Baris 2 sebelum menerapkannya pada Baris 3.\n3. **Jebakan Mengabaikan Arah Sudut Pandang Rotasi**  \n   Pada soal serial gambar, pembuat soal sering menyamarkan rotasi $90^\\circ$ berlawanan jarum jam dengan pencerminan horizontal. Teliti orientasi elemen penanda (seperti letak titik hitam atau bendera panah) untuk memastikan jenis transformasi yang terjadi.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nTerapkan teknik tembak sistematis ini untuk soal pola gambar dan matriks:\n\n1. **Bandingkan Besaran Angka Pusat terhadap Angka Sudut**  \n   - Jika angka pusat **jauh lebih besar** dari angka-angka sudut $\\to$ prioritaskan operasi **perkalian ($A \\times B$)**.  \n   - Jika angka pusat **lebih kecil** dari angka sudut $\\to$ prioritaskan operasi **pengurangan atau pembagian ($\\{A + B\\} / C$)**.\n2. **Uji Rumus Standar UTBK Pertama Kali**  \n   Coba pola klasik: *(Kiri Bawah $\\times$ Kanan Bawah) $-$ Atas*. Ini adalah formula yang paling sering digunakan pembuat soal UTBK.\n3. **Pada Matriks: Cari Kolom Bernilai Terbesar**  \n   Jika Kolom 3 adalah yang paling besar di setiap baris, jadikan Kolom 3 sebagai hasil dari operasi Kolom 1 dan Kolom 2: $K_3 = f(K_1, K_2)$.\n4. **Verifikasi Dua Kali**  \n   Pastikan rumus Anda menghasilkan angka yang persis sama pada Gambar I dan Gambar II sebelum melangkah ke gambar target.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Menemukan fungsi matematis tersembunyi yang menghubungkan elemen spasial input (sudut/baris) menjadi output (pusat/kolom akhir).\n- **Aturan Baku:** Satu formula yang valid harus berlaku tanpa modifikasi untuk seluruh gambar contoh yang disajikan.\n- **Strategi Eksekusi:** Mulai dari perkalian dua sisi bawah, bandingkan skala besaran angka pusat, dan kunci baris/kolom penentu pada matriks.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Pola Gambar dan Spasial Numerik yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks bangun, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Spasial Angka dalam Pola Bangun Geometri (Angka Sudut vs Pusat)\n\n> **Konteks Bangun Soal:**  \n> Diberikan dua buah bangun segitiga berangka dengan aturan operasi aritmetika yang identik:  \n> - **Segitiga I:** Sudut atas bernilai $12$, sudut kiri bawah bernilai $7$, sudut kanan bawah bernilai $5$, dan angka di pusat segitiga bernilai $23$.  \n> - **Segitiga II:** Sudut atas bernilai $15$, sudut kiri bawah bernilai $8$, sudut kanan bawah bernilai $6$, dan angka di pusat segitiga bernilai $X$.  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ pada Segitiga II adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 28  \n> - **B.** 31  \n> - **C.** 33  \n> - **D.** 35  \n> - **E.** 38\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Pola pada Segitiga I:**\n  - Komponen input: Atas $= 12$, Kiri Bawah $= 7$, Kanan Bawah $= 5$.\n  - Target output: Pusat $= 23$.\n  - Uji operasi:\n    - Apakah $(7 + 5) + 12 = 24$ (mendekati, tapi bukan 23).\n    - Apakah perkalian sisi bawah dikurangi sisi atas:  \n      $$(Kiri \\; Bawah \\times Kanan \\; Bawah) - Atas = (7 \\times 5) - 12 = 35 - 12 = 23$$  \n      Formula ini menghasilkan angka pusat $23$ secara tepat dan sempurna!\n- **Penerapan Pola pada Segitiga II:**\n  - Komponen input: Atas $= 15$, Kiri Bawah $= 8$, Kanan Bawah $= 6$.\n  - Terapkan formula yang sama:  \n    $$X = (8 \\times 6) - 15 = 48 - 15 = 33$$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menghitung $(8 \\times 6) / 2 + ...$ tanpa pola yang konsisten.\n  - **Pilihan B Salah:** Menghitung $48 - 17$ (keliru mengurangkan angka yang salah).\n  - **Pilihan D & E Salah:** Menghitung dengan penjumlahan atau pengali yang tidak sesuai dengan pola Segitiga I.\n- **Penerapan Trik Cepat (15 Detik):** Langsung coba trik perkalian bawah minus atas: $7 \\times 5 = 35$, lalu $35 - 12 = 23$ (cocok!). Terapkan langsung ke segitiga kedua: $8 \\times 6 = 48$, lalu $48 - 15 = 33$. Jawaban **C** didapat dalam waktu kurang dari 12 detik.\n\n---\n\n### Variasi 2: Matriks Angka Berpola Hubungan Baris dan Kolom\n\n> **Konteks Matriks Soal:**  \n> Perhatikan susunan angka pada matriks $3 \\times 3$ berikut:  \n> | Kolom 1 | Kolom 2 | Kolom 3 |  \n> | :---: | :---: | :---: |  \n> | 12 | 5 | 29 |  \n> | 15 | 4 | 34 |  \n> | 18 | 7 | **X** |  \n>  \n> **Pertanyaan UTBK:** *Nilai dari bilangan $X$ yang paling tepat adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 39  \n> - **B.** 41  \n> - **C.** 43  \n> - **D.** 45  \n> - **E.** 47\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Arah Operasi:**\n  - Angka pada Kolom 3 ($29, 34, X$) bernilai jauh lebih besar dibandingkan Kolom 1 dan Kolom 2. Ini adalah indikator kuat bahwa Kolom 3 adalah hasil operasi horizontal dari Kolom 1 dan 2 ($K_3 = f(K_1, K_2)$).\n- **Mencari Formula pada Baris 1:**\n  - Hubungkan 12 dan 5 untuk menghasilkan 29:  \n    $$12 \\times 2 + 5 = 24 + 5 = 29$$\n- **Verifikasi Formula pada Baris 2:**\n  - Terapkan pola yang sama $(K_1 \\times 2 + K_2)$ pada Baris 2:  \n    $$15 \\times 2 + 4 = 30 + 4 = 34$$  \n    Formula terbukti $100\\%$ konsisten pada kedua baris!\n- **Menghitung Nilai $X$ pada Baris 3:**  \n  $$X = 18 \\times 2 + 7 = 36 + 7 = 43$$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menghitung $18 + 7 \\times 3 = 18 + 21 = 39$ (tidak konsisten dengan Baris 1).\n  - **Pilihan B Salah:** Keliru menghitung $36 + 5$.\n  - **Pilihan D & E Salah:** Menerapkan pengali 3 pada kolom pertama yang menghasilkan nilai terlalu besar.\n- **Penerapan Trik Cepat (15 Detik):** Kolom 3 adalah target. $12 \\times 2 = 24$, tambah $5 = 29$. Baris 2: $15 \\times 2 = 30$, tambah $4 = 34$. Cocok! Maka Baris 3: $18 \\times 2 = 36$, tambah $7 = 43$. Pilihan **C** langsung terpilih.\n\n---\n\n### Variasi 3: Analogi dan Serial Spasial Transformasi Objek Geometri / HOTS\n\n> **Konteks Gambar Soal:**  \n> Sebuah serial gambar tersusun atas tiga elemen geometris:  \n> 1. Sebuah panah penunjuk yang berputar $90^\\circ$ searah jarum jam pada setiap langkah (Langkah 1: Menghadap Atas, Langkah 2: Menghadap Kanan, Langkah 3: Menghadap Bawah, Langkah 4: Menghadap Kiri).  \n> 2. Sebuah lingkaran kecil di sudut dengan jumlah titik hitam di dalamnya yang bertambah mengikuti pola bilangan prima: 2 titik, 3 titik, 5 titik, 7 titik.  \n> 3. Warna bingkai luar yang berubah secara berselang-seling: Putih, Hitam, Putih, Hitam.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan pola serial tersebut, karakteristik lengkap dari gambar pada Langkah ke-5 adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Panah menghadap Kanan, 9 titik hitam, bingkai Hitam  \n> - **B.** Panah menghadap Atas, 11 titik hitam, bingkai Putih  \n> - **C.** Panah menghadap Atas, 9 titik hitam, bingkai Putih  \n> - **D.** Panah menghadap Bawah, 11 titik hitam, bingkai Hitam  \n> - **E.** Panah menghadap Kiri, 11 titik hitam, bingkai Putih\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Transformasi Elemen per Elemen:**\n  - **Elemen 1 (Arah Panah):** Rotasi $90^\\circ$ searah jarum jam:  \n    Langkah 1 (Atas) $\\to$ 2 (Kanan) $\\to$ 3 (Bawah) $\\to$ 4 (Kiri) $\\to$ **Langkah 5 kembali Menghadap Atas**.\n  - **Elemen 2 (Jumlah Titik Hitam):**  \n    Barisan: $2, \\; 3, \\; 5, \\; 7, \\dots$  \n    Ini adalah barisan **bilangan prima**, BUKAN bilangan ganjil (karena dimulai dari 2). Bilangan prima berikutnya setelah 7 adalah **11 titik** (angka 9 bukan prima karena habis dibagi 3).\n  - **Elemen 3 (Warna Bingkai):**  \n    Pola berselang-seling: Langkah 1 (Putih), 2 (Hitam), 3 (Putih), 4 (Hitam) $\\to$ **Langkah 5 berwarna Putih**.\n- **Kombinasi Akhir Karakteristik Gambar 5:**  \n  Panah menghadap **Atas**, memuat **11 titik hitam**, dan bingkai berwarna **Putih**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & E Salah:** Arah panah keliru karena tidak menyelesaikan putaran penuh ke atas.\n  - **Pilihan C Salah:** Jebakan bilangan ganjil (9 titik), padahal deret adalah bilangan prima (wajib 11 titik).\n  - **Pilihan D Salah:** Arah panah dan warna bingkai keliru.\n- **Penerapan Trik Cepat (15 Detik):** Panah putaran ke-5 pasti kembali ke Atas (singkirkan A, D, E). Jumlah titik: $2, 3, 5, 7$ adalah bilangan prima, setelah 7 pasti 11 (bukan 9! Singkirkan C). Jawaban langsung jatuh pada pilihan **B**.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Jebakan Bilangan Prima vs Bilangan Ganjil pada elemen gambar: Terkecoh memilih 9 titik karena mengira barisan ganjil, padahal barisan diawali angka 2 (pasti bilangan prima).",
+      "Mengabaikan konsistensi baris kedua pada matriks angka: Langsung melompat ke baris ketiga tanpa memvalidasi rumus pada baris kedua.",
+      "Terkecoh orientasi rotasi searah vs berlawanan jarum jam pada serial spasial."
+    ],
+    "quick_execution_algorithm": [
+      "Identifikasi angka pusat sebagai target luaran dan angka sudut sebagai masukan.",
+      "Uji formula standar UTBK: (Kiri Bawah x Kanan Bawah) - Atas.",
+      "Pada matriks angka, periksa apakah nilai kolom 3 adalah hasil kombinasi linear kolom 1 dan 2.",
+      "Pada gambar serial, pecah analisa menjadi 3 elemen terpisah: rotasi panah, deret jumlah titik, dan warna arsiran."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-02-ex1",
+      "variation_name": "Variasi 1: Spasial Angka dalam Pola Segitiga (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Diberikan dua buah bangun segitiga berangka dengan aturan operasi aritmetika yang identik:\n- Segitiga I: Sudut atas = 12, sudut kiri bawah = 7, sudut kanan bawah = 5, dan angka pusat = 23.\n- Segitiga II: Sudut atas = 15, sudut kiri bawah = 8, sudut kanan bawah = 6, dan angka pusat = X.",
+      "question_markdown": "Nilai dari **X** pada Segitiga II adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "28"
+        },
+        {
+          "key": "B",
+          "text_markdown": "31"
+        },
+        {
+          "key": "C",
+          "text_markdown": "33"
+        },
+        {
+          "key": "D",
+          "text_markdown": "35"
+        },
+        {
+          "key": "E",
+          "text_markdown": "38"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cari hubungan antara angka 7, 5, dan 12 untuk menghasilkan 23. Coba kalikan dua angka di bagian bawah, lalu kurangkan dengan angka di puncak atas!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Segitiga I:**\n  - Formula: $(Kiri \\times Kanan) - Atas = Pusat$\n  - $(7 \\times 5) - 12 = 35 - 12 = 23$ (Terbukti valid).\n- **Perhitungan Segitiga II:**\n  - $X = (8 \\times 6) - 15 = 48 - 15 = 33$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Perkalian Bawah - Atas):**\n\n1. Segitiga I: $7 \\times 5 = 35 \\implies 35 - 12 = 23$.\n2. Segitiga II: $8 \\times 6 = 48 \\implies 48 - 15 = 33$.\n3. Jawaban langsung **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, B, D, E Salah:** Merupakan hasil tebakan acak atau keliru dalam mengoperasikan pengurangan dasar."
+    },
+    {
+      "example_id": "pu-03-02-ex2",
+      "variation_name": "Variasi 2: Matriks Angka Berpola Baris dan Kolom (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan susunan angka pada matriks 3x3 berikut:\nBaris 1: 12, 5, 29\nBaris 2: 15, 4, 34\nBaris 3: 18, 7, X",
+      "question_markdown": "Nilai dari bilangan **X** yang paling tepat adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "39"
+        },
+        {
+          "key": "B",
+          "text_markdown": "41"
+        },
+        {
+          "key": "C",
+          "text_markdown": "43"
+        },
+        {
+          "key": "D",
+          "text_markdown": "45"
+        },
+        {
+          "key": "E",
+          "text_markdown": "47"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Angka di kolom ketiga adalah hasil operasi horizontal dari kolom 1 dan 2. Coba kalikan angka di kolom 1 dengan 2, lalu jumlahkan dengan kolom 2!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Uji Baris 1:** $12 \\times 2 + 5 = 24 + 5 = 29$.\n- **Uji Baris 2:** $15 \\times 2 + 4 = 30 + 4 = 34$.\n- **Hitung Baris 3:** $X = 18 \\times 2 + 7 = 36 + 7 = 43$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (2 x K1 + K2):**\n\n1. $12 \\times 2 + 5 = 29$\n2. $15 \\times 2 + 4 = 34$\n3. $18 \\times 2 + 7 = 43$.\n4. Jawaban pasti **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggunakan rumus 18 + (7 x 3) yang tidak berlaku di Baris 1.\n- **Pilihan B, D, E Salah:** Kesalahan hitung pada perkalian dasar."
+    },
+    {
+      "example_id": "pu-03-02-ex3",
+      "variation_name": "Variasi 3: Analogi dan Serial Spasial Geometri (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah serial gambar tersusun atas tiga elemen geometris:\n1. Panah penunjuk berputar 90 derajat searah jarum jam setiap langkah (Atas -> Kanan -> Bawah -> Kiri).\n2. Lingkaran kecil dengan jumlah titik hitam mengikuti deret bilangan prima: 2, 3, 5, 7 titik.\n3. Warna bingkai luar berselang-seling: Putih, Hitam, Putih, Hitam.",
+      "question_markdown": "Berdasarkan pola serial tersebut, karakteristik lengkap dari gambar pada **Langkah ke-5** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Panah menghadap Kanan, 9 titik hitam, bingkai Hitam"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Panah menghadap Atas, 11 titik hitam, bingkai Putih"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Panah menghadap Atas, 9 titik hitam, bingkai Putih"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Panah menghadap Bawah, 11 titik hitam, bingkai Hitam"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Panah menghadap Kiri, 11 titik hitam, bingkai Putih"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati deret titik: 2, 3, 5, 7 bukan deret bilangan ganjil (karena ada angka 2), melainkan deret bilangan prima! Berapakah bilangan prima setelah 7? Lalu periksa arah panah setelah 4 kali berputar.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Arah Panah:** Siklus 4 posisi: Atas (1) $\\to$ Kanan (2) $\\to$ Bawah (3) $\\to$ Kiri (4) $\\to$ **Atas (5)**.\n- **Jumlah Titik:** Barisan bilangan prima: $2, 3, 5, 7 \\implies$ bilangan prima berikutnya adalah **11** (bukan 9).\n- **Bingkai:** Putih (1) $\\to$ Hitam (2) $\\to$ Putih (3) $\\to$ Hitam (4) $\\to$ **Putih (5)**.\n- **Konklusi:** Panah Atas, 11 titik hitam, bingkai Putih.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Cepat):**\n\n1. Putaran ke-5 = kembali ke Atas $\\implies$ coret A, D, E.\n2. Deret prima: $2, 3, 5, 7 \\to 11$ (bukan 9) $\\implies$ coret C.\n3. Tersisa pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, D, E Salah:** Arah panah tidak berada di posisi atas.\n- **Pilihan C Salah:** Jebakan angka 9 (angka 9 bukan bilangan prima karena dapat dibagi 3)."
+    }
+  ]
+};
+
+export const MATERIAL_PU_03_03: Material = {
+  "metadata": {
+    "id": "pu-3-3",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.3",
+    "subchapter_title": "Operasi Hitung dan Aritmetika Dasar",
+    "title": "Operasi Hitung dan Aritmetika Dasar",
+    "required_question_variations": [
+      "Operasi Pecahan, Desimal, dan Persentase Cepat",
+      "Operasi Lambang Khusus / Definisi Operator Baru",
+      "Estimasi Nilai Ekstrem dan Pendekatan Perhitungan (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Operasi hitung dan aritmetika dasar pada Penalaran Umum UTBK bukan menguji kemampuan Anda menghitung angka panjang seperti kalkulator, melainkan menguji kecerdasan aljabar dan strategi penyederhanaan cepat. Tipe soal yang paling mendominasi adalah operasi lambang baru buatan pembuat soal (seperti simbol bintang atau lingkaran dengan aturan rumus khusus) serta manipulasi pecahan-desimal-persentase. Kunci utamanya adalah jangan pernah mengalikan angka besar secara mentah: selalu sederhanakan pecahan sebelum dikali, manfaatkan sifat distributif untuk memfaktorkan angka yang sama, dan gunakan estimasi batas nilai untuk menyingkirkan opsi yang tidak masuk akal.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nAritmetika taktis di UTBK SNBT berfokus pada efisiensi penyelesaian:\n\n1. **Konversi Cepat Pecahan, Desimal, dan Persentase Baku**  \n   Wajib menghafal pasangan konversi emas berikut di luar kepala:  \n   - $\\frac{1}{8} = 0{,}125 = 12{,}5\\%$  \n   - $\\frac{3}{8} = 0{,}375 = 37{,}5\\%$  \n   - $\\frac{5}{8} = 0{,}625 = 62{,}5\\%$  \n   - $\\frac{1}{6} = 0{,}1667 = 16{,}67\\%$  \n   - $\\frac{1}{7} \\approx 0{,}1428$  \n   Menghafal konversi ini membuat perhitungan rumit seperti $\\frac{3}{7} \\times 42\\%$ dapat diselesaikan dalam 5 detik melalui pencoretan langsung ($42 / 7 = 6 \\implies 3 \\times 6\\% = 18\\%$).\n\n2. **Operasi Lambang Khusus / Operator Baru (*Custom Operators*)**  \n   Soal mendefinisikan simbol operasi non-standar (misalnya $a \\odot b$ atau $x \\star y$) dengan aturan fungsi tertentu.  \n   - Kaidah wajib: Ikuti urutan tanda kurung terlebih dahulu.  \n   - Masukkan nilai angka secara presisi ke dalam variabel yang didefinisikan tanpa mengubah urutan posisinya.\n\n3. **Prinsip Estimasi dan Selisih Komplemen Pecahan (Soal HOTS)**  \n   Membandingkan dua pecahan bernilai besar tanpa menghitung pembagian bersusun:  \n   - Jika dua pecahan bernilai mendekati 1, gunakan selisih terhadap angka 1:  \n     $$\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$$  \n   - Pecahan dengan pengurang $\\frac{1}{n+1}$ yang lebih kecil akan menghasilkan nilai total yang lebih besar.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Mengalikan Angka Besar Secara Manual**  \n   Siswa yang menghitung $(2024 \\times 2026)$ secara manual akan membuang waktu 2 hingga 3 menit. Soal UTBK selalu memiliki jalan pintas aljabar, misalnya bentuk selisih kuadrat: $(x - 1)(x + 1) = x^2 - 1$.\n2. **Jebakan Urutan Operasi pada Lambang Baru**  \n   Pada operasi bersarang seperti $(a \\odot b) \\star c$, siswa kerap salah memasukkan hasil dari $(a \\odot b)$ sebagai variabel kedua, padahal posisinya berada di sebelah kiri operator bintang (variabel pertama).\n3. **Jebakan Pembagian Pecahan Bersusun**  \n   Membalik pembilang dan penyebut secara keliru pada operasi pembagian pecahan: $\\frac{a/b}{c} = \\frac{a}{b \\cdot c}$, sedangkan $\\frac{a}{b/c} = \\frac{a \\cdot c}{b}$.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Coret Faktor Persekutuan Terlebih Dahulu**  \n   Sebelum mengalikan pembilang, selalu lakukan pencoretan silang dengan penyebut.\n2. **Substitusi Langsung pada Operator Lambang Baru**  \n   Tuliskan rumus definisi di kertas, lalu ganti huruf $a$ dan $b$ dengan angka soal tepat di bawah huruf tersebut untuk mencegah kekeliruan posisi.\n3. **Gunakan Metode Digit Terakhir (*Last Digit Trick*)**  \n   Jika opsi pilihan ganda memiliki digit satuan yang berbeda-beda, hitung saja perkalian angka satuannya tanpa menghitung seluruh angka puluhan dan ratusan.\n4. **Metode Taksiran Batas (Rounding)**  \n   Bulatkan angka rumit ke angka terdekat yang mudah dihitung (misal: $49{,}8\\%$ dibulatkan ke $50\\%$ atau $\\frac{1}{2}$) untuk mengetahui kisaran angka jawaban yang benar.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Uji efisiensi aljabar dan pemahaman aturan operasi matematika tanpa ketergantungan pada hitungan mekanik panjang.\n- **Kunci Operator Baru:** Patuhi hierarki tanda kurung dan substitusikan nilai sesuai posisi variabel definisi.\n- **Strategi Eksekusi:** Hafal pecahan emas, coret sebelum kali, dan manfaatkan selisih kuadrat $(x-1)(x+1) = x^2 - 1$.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Operasi Hitung dan Aritmetika Dasar yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Operasi Pecahan, Desimal, dan Persentase Cepat\n\n> **Konteks Perhitungan Soal:**  \n> Hitunglah nilai dari operasi aritmetika berikut:  \n> $$\\left( \\frac{3}{7} \\times 42\\% \\right) + \\left( \\frac{5}{8} \\times 0{,}64 \\right)$$  \n>  \n> **Pertanyaan UTBK:** *Nilai desimal akhir dari operasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 0,48  \n> - **B.** 0,52  \n> - **C.** 0,58  \n> - **D.** 0,62  \n> - **E.** 0,68\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Penyelesaian Suku Pertama:**  \n  $$\\frac{3}{7} \\times 42\\% = 3 \\times \\left(\\frac{42\\%}{7}\\right) = 3 \\times 6\\% = 18\\% = 0{,}18$$\n- **Penyelesaian Suku Kedua:**  \n  $$\\frac{5}{8} \\times 0{,}64 = 5 \\times \\left(\\frac{0{,}64}{8}\\right) = 5 \\times 0{,}08 = 0{,}40$$\n- **Penjumlahan Total:**  \n  $$0{,}18 + 0{,}40 = 0{,}58$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A, B, D, dan E terjadi akibat kekeliruan pembagian desimal ($0{,}64 / 8$ dihitung $0{,}8$) atau lupa mengalikan dengan 3.\n- **Penerapan Trik Cepat (15 Detik):** Coret 42 dengan 7 dapat $6 \\implies 3 \\times 6\\% = 0{,}18$. Coret 0,64 dengan 8 dapat $0{,}08 \\implies 5 \\times 0{,}08 = 0{,}40$. Jumlahkan: $0{,}18 + 0{,}40 = 0{,}58$. Pilihan **C** ditemukan dalam 8 detik.\n\n---\n\n### Variasi 2: Operasi Lambang Khusus / Definisi Operator Baru\n\n> **Konteks Operasi Soal:**  \n> Didefinisikan dua buah operasi hitung baru untuk sembarang bilangan bulat $x$ dan $y$ sebagai berikut:  \n> $$x \\odot y = \\frac{x \\cdot y - 2}{x + 1}$$  \n> $$x \\star y = 2x - 3y$$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $(5 \\odot 4) \\star 2$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** -2  \n> - **B.** 0  \n> - **C.** 2  \n> - **D.** 4  \n> - **E.** 6\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Langkah 1: Selesaikan Operasi di Dalam Kurung $(5 \\odot 4)$**  \n  Substitusikan $x = 5$ dan $y = 4$ ke dalam definisi operator $\\odot$:  \n  $$5 \\odot 4 = \\frac{5 \\cdot 4 - 2}{5 + 1} = \\frac{20 - 2}{6} = \\frac{18}{6} = 3$$\n- **Langkah 2: Selesaikan Operasi Luar dengan Operator $\\star$**  \n  Hasil langkah 1 adalah 3, sehingga bentuk soal menjadi $3 \\star 2$.  \n  Substitusikan $x = 3$ dan $y = 2$ ke dalam definisi operator $\\star$:  \n  $$3 \\star 2 = 2(3) - 3(2) = 6 - 6 = 0$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A keliru menghitung $2(2) - 3(3) = 4 - 9 = -5$ (terbalik menukar posisi variabel).  \n  - Pilihan C keliru menghitung $18 / 6 = 2$.  \n  - Pilihan D dan E adalah akibat kekeliruan substitusi tanda minus.\n- **Penerapan Trik Cepat (15 Detik):** Dalam kurung: $(20 - 2)/6 = 18/6 = 3$. Lalu hitung bintang: $2(3) - 3(2) = 6 - 6 = 0$. Jawaban langsung **B**.\n\n---\n\n### Variasi 3: Estimasi Nilai Ekstrem dan Pendekatan Perhitungan / HOTS\n\n> **Konteks Perhitungan Soal:**  \n> Diberikan dua nilai pecahan besar $P$ dan $Q$ sebagai berikut:  \n> $$P = \\frac{2025}{2026} + \\frac{2026}{2027}$$  \n> $$Q = \\frac{2024}{2025} + \\frac{2027}{2028}$$  \n>  \n> **Pertanyaan UTBK:** *Hubungan kuantitatif yang paling tepat antara $P$ dan $Q$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $P > Q$  \n> - **B.** $P < Q$  \n> - **C.** $P = Q$  \n> - **D.** $P = Q + 1$  \n> - **E.** Hubungan antara $P$ dan $Q$ tidak dapat ditentukan\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Bentuk Pecahan Mendekati 1:**  \n  Setiap suku pecahan berbentuk $\\frac{n}{n+1}$, yang dapat dituliskan sebagai selisih komplemen terhadap angka 1:  \n  $$\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$$\n- **Mengubah Bentuk $P$ dan $Q$:**  \n  $$P = \\left(1 - \\frac{1}{2026}\\right) + \\left(1 - \\frac{1}{2027}\\right) = 2 - \\left(\\frac{1}{2026} + \\frac{1}{2027}\\right)$$  \n  $$Q = \\left(1 - \\frac{1}{2025}\\right) + \\left(1 - \\frac{1}{2028}\\right) = 2 - \\left(\\frac{1}{2025} + \\frac{1}{2028}\\right)$$\n- **Membandingkan Nilai Pengurang:**  \n  Misalkan $S_P = \\frac{1}{2026} + \\frac{1}{2027}$ dan $S_Q = \\frac{1}{2025} + \\frac{1}{2028}$.  \n  Fungsi $f(x) = \\frac{1}{x}$ adalah fungsi konveks (cekung ke atas). Pada fungsi konveks, jumlahan dua titik yang lebih menyebar ($2025$ dan $2028$) selalu bernilai lebih besar daripada jumlahan dua titik yang lebih rapat di tengah ($2026$ dan $2027$):  \n  $$\\frac{1}{2025} + \\frac{1}{2028} > \\frac{1}{2026} + \\frac{1}{2027} \\implies S_Q > S_P$$\n- **Konklusi Hubungan $P$ dan $Q$:**  \n  Karena pengurang pada $Q$ ($S_Q$) lebih besar daripada pengurang pada $P$ ($S_P$), maka hasil pengurangan pada $P$ bernilai lebih besar:  \n  $$2 - S_P > 2 - S_Q \\implies P > Q$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan B keliru karena terbalik membandingkan dampak nilai pengurang.  \n  - Pilihan C, D, dan E secara matematis salah karena nilainya terbukti berbeda secara pasti.\n- **Penerapan Trik Cepat (15 Detik):** Ubah ke bentuk $1 - \\text{selisih}$. Nilai $\\frac{1}{2025}$ sangat besar dibanding $\\frac{1}{2026}$. Karena pengurang $Q$ lebih besar, maka sisa nilai $Q$ menjadi lebih kecil dari $P$. Kesimpulan kilat: $P > Q$. Jawaban pasti **A**.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Menghitung pecahan bernilai ribuan secara manual: Jangan menyamakan penyebut angka ribuan, gunakan metode selisih komplemen terhadap 1.",
+      "Tertukar memasukkan variabel pada operator baru bersarang (a o b) * c.",
+      "Keliru membagi desimal berkoma nol (misal 0,64 / 8 disangka 0,8 bukan 0,08)."
+    ],
+    "quick_execution_algorithm": [
+      "Sederhanakan pembilang dan penyebut dengan pencoretan silang sebelum mengalikan.",
+      "Pada operator lambang baru, tuntaskan operasi dalam kurung terlebih dahulu.",
+      "Pada perbandingan pecahan bernilai ribuan, ubah ke bentuk 1 - (1/(n+1)).",
+      "Manfaatkan taksiran batas untuk mengeliminasi opsi yang tidak logis."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-03-ex1",
+      "variation_name": "Variasi 1: Operasi Pecahan, Desimal, dan Persentase (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Hitunglah nilai dari operasi aritmetika berikut:\n(3/7 x 42%) + (5/8 x 0,64)",
+      "question_markdown": "Nilai desimal akhir dari operasi tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "0,48"
+        },
+        {
+          "key": "B",
+          "text_markdown": "0,52"
+        },
+        {
+          "key": "C",
+          "text_markdown": "0,58"
+        },
+        {
+          "key": "D",
+          "text_markdown": "0,62"
+        },
+        {
+          "key": "E",
+          "text_markdown": "0,68"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Coret 42% dengan 7 (hasilnya 6%), lalu coret 0,64 dengan 8 (hasilnya 0,08). Setelah itu kalikan dengan pembilang masing-masing!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Suku 1:** $\\frac{3}{7} \\times 42\\% = 3 \\times 6\\% = 18\\% = 0{,}18$.\n- **Suku 2:** $\\frac{5}{8} \\times 0{,}64 = 5 \\times 0{,}08 = 0{,}40$.\n- **Total:** $0{,}18 + 0{,}40 = 0{,}58$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Coret Silang):**\n\n1. $42\\% / 7 = 6\\% \\implies 3 \\times 6\\% = 0{,}18$.\n2. $0{,}64 / 8 = 0{,}08 \\implies 5 \\times 0{,}08 = 0{,}40$.\n3. $0{,}18 + 0{,}40 = 0{,}58$.\n4. Jawaban langsung **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, B, D, E Salah:** Terjadi karena salah membagi 0,64 / 8 atau keliru menjumlahkan desimal."
+    },
+    {
+      "example_id": "pu-03-03-ex2",
+      "variation_name": "Variasi 2: Operasi Lambang Khusus (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Didefinisikan dua operasi khusus untuk sembarang bilangan bulat x dan y:\nx @ y = (x . y - 2) / (x + 1)\nx * y = 2x - 3y",
+      "question_markdown": "Nilai dari **(5 @ 4) * 2** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "-2"
+        },
+        {
+          "key": "B",
+          "text_markdown": "0"
+        },
+        {
+          "key": "C",
+          "text_markdown": "2"
+        },
+        {
+          "key": "D",
+          "text_markdown": "4"
+        },
+        {
+          "key": "E",
+          "text_markdown": "6"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung terlebih dahulu yang di dalam kurung (5 @ 4) menggunakan rumus pertama. Hasilnya kemudian operasikan dengan angka 2 menggunakan rumus kedua!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Operasi Dalam Kurung:**\n  - $5 @ 4 = \\frac{5 \\cdot 4 - 2}{5 + 1} = \\frac{20 - 2}{6} = \\frac{18}{6} = 3$.\n- **Operasi Bintang:**\n  - $3 * 2 = 2(3) - 3(2) = 6 - 6 = 0$.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Dua Langkah Tuntas):**\n\n1. $(20 - 2) / 6 = 18 / 6 = 3$.\n2. $2(3) - 3(2) = 6 - 6 = 0$.\n3. Jawaban **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terbalik memasukkan posisi x dan y pada rumus kedua.\n- **Pilihan C, D, E Salah:** Kesalahan hitung pada pembagian atau perkalian."
+    },
+    {
+      "example_id": "pu-03-03-ex3",
+      "variation_name": "Variasi 3: Estimasi Perbandingan Pecahan Ekstrem (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Diberikan dua nilai pecahan besar P dan Q sebagai berikut:\nP = (2025/2026) + (2026/2027)\nQ = (2024/2025) + (2027/2028)",
+      "question_markdown": "Hubungan kuantitatif yang **paling tepat** antara **P** dan **Q** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "P > Q"
+        },
+        {
+          "key": "B",
+          "text_markdown": "P < Q"
+        },
+        {
+          "key": "C",
+          "text_markdown": "P = Q"
+        },
+        {
+          "key": "D",
+          "text_markdown": "P = Q + 1"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Hubungan antara P dan Q tidak dapat ditentukan"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan hitung manual! Ubah setiap pecahan n/(n+1) menjadi 1 - 1/(n+1). Perhatikan nilai pengurangnya: pengurang yang lebih besar akan menghasilkan sisa yang lebih kecil.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Ubah Bentuk:**\n  - $P = (1 - \\frac{1}{2026}) + (1 - \\frac{1}{2027}) = 2 - (\\frac{1}{2026} + \\frac{1}{2027})$.\n  - $Q = (1 - \\frac{1}{2025}) + (1 - \\frac{1}{2028}) = 2 - (\\frac{1}{2025} + \\frac{1}{2028})$.\n- **Evaluasi Pengurang:**\n  - Karena $f(x) = 1/x$ konveks, maka $\\frac{1}{2025} + \\frac{1}{2028} > \\frac{1}{2026} + \\frac{1}{2027}$.\n  - Pengurang $Q$ lebih besar daripada pengurang $P$.\n- **Konklusi:** $2 - \\text{pengurang kecil} > 2 - \\text{pengurang besar} \\implies P > Q$.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Logika Komplemen 1):**\n\n1. Pecahan mendekati 1: yang memiliki suku pembagi paling kecil (2025) memiliki \"cacat/pengurang\" paling besar.\n2. Karena Q dikurangi oleh 1/2025 (cacat terbesar), maka nilai Q lebih kecil daripada P.\n3. Kesimpulan: $P > Q$. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Terbalik membandingkan peran pengurang.\n- **Pilihan C, D, E Salah:** Nilai P dan Q terbukti berbeda secara matematis pasti."
+    }
+  ]
+};
+
+export const MATERIAL_PU_03_04: Material = {
+  "metadata": {
+    "id": "pu-3-4",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.4",
+    "subchapter_title": "Perbandingan Senilai dan Berbalik Nilai",
+    "title": "Perbandingan Senilai dan Berbalik Nilai",
+    "required_question_variations": [
+      "Perbandingan Senilai dan Rasio Bertingkat (A:B:C)",
+      "Perbandingan Berbalik Nilai pada Waktu dan Kecepatan",
+      "Beban Kerja Bersama dan Pekerja Tambahan Terhenti (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Perbandingan adalah instrumen penalaran kuantitatif fundamental di UTBK SNBT yang menguji pemahaman Anda terhadap hubungan proporsional antarvariabel. Fondasi terpenting adalah membedakan jenis hubungan secara akurat: jika variabel pertama naik dan variabel kedua ikut naik dengan rasio tetap, itu adalah perbandingan senilai; jika variabel pertama naik tetapi variabel kedua justru menurun (seperti menambah pekerja yang membuat waktu selesai berkurang), itu adalah perbandingan berbalik nilai. Pada variasi HOTS proyek terhenti, jangan pernah mengulang hitungan dari awal: selalu fokuslah pada \"sisa beban kerja\" (sisa hari dikali jumlah pekerja) yang harus dibagi dengan sisa hari yang masih tersedia.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPerbandingan di UTBK SNBT terbagi menjadi dua pilar utama:\n\n1. **Perbandingan Senilai (*Direct Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding lurus, di mana rasio keduanya bernilai konstan:  \n   $$\\frac{X_1}{Y_1} = \\frac{X_2}{Y_2} \\iff X_1 \\cdot Y_2 = X_2 \\cdot Y_1$$  \n   - *Konteks Nyata:* Jumlah konsumsi bahan bakar vs jarak tempuh, jumlah barang dibeli vs total harga, atau perbandingan skala peta.  \n   - **Rasio Bertingkat ($A : B$ dan $B : C$):**  \n     Jika $A : B = p : q$ dan $B : C = m : n$, samakan nilai $B$ dengan mencari KPK dari $q$ dan $m$:  \n     $$A : B : C = (p \\cdot m) : (q \\cdot m) : (n \\cdot q)$$\n\n2. **Perbandingan Berbalik Nilai (*Inverse Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding terbalik, di mana hasil kali keduanya bernilai konstan:  \n   $$X_1 \\cdot Y_1 = X_2 \\cdot Y_2 \\iff \\frac{X_1}{X_2} = \\frac{Y_2}{Y_1}$$  \n   - *Konteks Nyata:* Kecepatan vs waktu tempuh pada jarak yang sama, atau jumlah pekerja vs durasi waktu penyelesaian proyek.\n\n3. **Manajemen Beban Kerja Proyek Terhenti (HOTS)**  \n   Total pekerjaan diukur dalam satuan *\"Beban Orang-Hari\"* ($Pek = Orang \\times Hari$).  \n   - Ketika proyek terhenti di tengah jalan:  \n     $$\\text{Sisa Beban Kerja} = (\\text{Sisa Hari Normal}) \\times (\\text{Pekerja Semula})$$  \n     $$\\text{Pekerja Baru yang Dibutuhkan} = \\frac{\\text{Sisa Beban Kerja}}{\\text{Sisa Hari Nyata}}$$  \n     $$\\text{Pekerja Tambahan} = \\text{Pekerja Baru} - \\text{Pekerja Semula}$$\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Salah Menentukan Arah Perbandingan**  \n   Menggunakan perkalian silang (senilai) untuk kasus pekerja dan waktu, sehingga diperoleh hasil yang tidak logis (misalnya menambah pekerja malah membuat waktu pengerjaan menjadi lebih lama).\n2. **Jebakan Menghitung Beban dari Hari Ke-0 pada Proyek Terhenti**  \n   Siswa sering menghitung ulang total beban proyek dari awal, padahal sebagian pekerjaan sudah selesai dikerjakan pada hari-hari awal. Selalu langsung fokus pada **hari yang tersisa**.\n3. **Jebakan Pertanyaan Pekerja Tambahan vs Total Pekerja**  \n   Jika soal menanyakan *\"berapa pekerja tambahan yang diperlukan\"*, siswa yang terburu-buru sering memilih angka total pekerja baru, lupa mengurangkannya dengan jumlah pekerja semula.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Uji Arah Hubungan Sebelum Menghitung**  \n   Tanyakan dalam hati: *\"Jika X ditambah, apakah Y makin banyak atau makin sedikit?\"*  \n   - Makin banyak $\\to$ **Senilai** (perkalian silang: $X_1 Y_2 = X_2 Y_1$).  \n   - Makin sedikit $\\to$ **Berbalik Nilai** (perkalian lurus: $X_1 Y_1 = X_2 Y_2$).\n2. **Rumus Sakti Proyek Terhenti (10 Detik)**  \n   $$\\text{Pekerja Tambahan} = \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Semula}$$  \n   Rumus kilat ini langsung menghasilkan jumlah pekerja tambahan tanpa perlu menghitung total beban kerja!\n3. **Penyamaan Rasio N-Bentuk (Rasio Bertingkat)**  \n   Susun:  \n   $$A : B = p : q$$  \n   $$B : C = m : n$$  \n   Kalikan menyilang: $A = p \\times m$, $B = q \\times m$, $C = q \\times n$.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Menentukan konstanta relasi matematis (rasio tetap vs hasil kali tetap) antarvariabel yang saling memengaruhi.\n- **Kaidah Identifikasi:** Senilai jika bergerak searah ($X \\uparrow, Y \\uparrow$), Berbalik Nilai jika berlawanan arah ($X \\uparrow, Y \\downarrow$).\n- **Strategi Proyek Terhenti:** Gunakan rumus sakti $\\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Awal}$.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Perbandingan Senilai dan Berbalik Nilai yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Perbandingan Senilai dan Rasio Bertingkat (A:B:C)\n\n> **Konteks Masalah Soal:**  \n> Perbandingan uang tabungan Alif dan Budi adalah $3 : 4$, sedangkan perbandingan uang tabungan Budi dan Cici adalah $5 : 6$. Jika selisih uang tabungan Alif dan Cici adalah Rp450.000,00, berapakah jumlah uang tabungan Budi?  \n>  \n> **Pertanyaan UTBK:** *Jumlah uang tabungan Budi berdasarkan informasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Rp800.000,00  \n> - **B.** Rp900.000,00  \n> - **C.** Rp1.000.000,00  \n> - **D.** Rp1.100.000,00  \n> - **E.** Rp1.200.000,00\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Menyatukan Perbandingan Bertingkat ($A : B : C$):**  \n  - $A : B = 3 : 4$  \n  - $B : C = 5 : 6$  \n  - KPK dari nilai pembanding $B$ (yaitu 4 dan 5) adalah 20.  \n  - Kalikan rasio pertama dengan 5: $A : B = 15 : 20$.  \n  - Kalikan rasio kedua dengan 4: $B : C = 20 : 24$.  \n  - Perbandingan gabungan:  \n    $$A : B : C = 15 : 20 : 24$$\n- **Menentukan Nilai Satuan Porsi Tabungan:**  \n  - Selisih porsi $C$ dan $A$ adalah:  \n    $$24 - 15 = 9 \\text{ bagian}$$  \n  - Nilai 9 bagian tersebut setara dengan Rp450.000,00.  \n  - Maka nilai 1 bagian rasio adalah:  \n    $$\\text{Nilai } 1 \\text{ bagian} = \\frac{\\text{Rp450.000,00}}{9} = \\text{Rp50.000,00}$$\n- **Menghitung Tabungan Budi:**  \n  - Tabungan Budi memiliki porsi 20 bagian:  \n    $$\\text{Tabungan Budi} = 20 \\times \\text{Rp50.000,00} = \\text{Rp1.000.000,00}$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A (Rp800.000) dan B (Rp900.000) terjadi jika siswa keliru menghitung porsi Alif atau salah menentukan selisih bagian ($24 - 15$ disangka 10 bagian).  \n  - Pilihan D dan E keliru dalam mengalikan nilai porsi Budi.\n- **Penerapan Trik Cepat (15 Detik):** $A:B:C = 15:20:24$. Selisih $C - A = 9$ bagian $= 450$ ribu $\\implies 1$ bagian $= 50$ ribu. Budi $= 20$ bagian $\\implies 20 \\times 50$ ribu $= 1.000$ ribu (Rp1.000.000,00). Pilihan **C** langsung terkunci.\n\n---\n\n### Variasi 2: Perbandingan Berbalik Nilai pada Waktu dan Kecepatan\n\n> **Konteks Masalah Soal:**  \n> Sebuah mobil menempuh perjalanan dari Kota P ke Kota Q dengan kecepatan rata-rata $60\\text{ km/jam}$ dalam waktu $3\\text{ jam } 30\\text{ menit}$. Jika dalam perjalanan pulang pengemudi ingin menyingkat waktu tempuh menjadi hanya $2\\text{ jam } 20\\text{ menit}$, berapakah kecepatan rata-rata yang harus dipertahankan?  \n>  \n> **Pertanyaan UTBK:** *Kecepatan rata-rata mobil pada perjalanan pulang tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $75\\text{ km/jam}$  \n> - **B.** $80\\text{ km/jam}$  \n> - **C.** $85\\text{ km/jam}$  \n> - **D.** $90\\text{ km/jam}$  \n> - **E.** $95\\text{ km/jam}$\n\n**Kunci Jawaban: D**\n\n**Bedah Logika & Pembahasan:**\n- **Identifikasi Jenis Perbandingan:**  \n  Jarak antara Kota P dan Kota Q adalah tetap. Semakin cepat mobil melaju, waktu yang dibutuhkan semakin singkat. Ini adalah kasus **perbandingan berbalik nilai**:  \n  $$v_1 \\cdot t_1 = v_2 \\cdot t_2$$\n- **Konversi Waktu ke Satuan Jam / Menit:**  \n  - $t_1 = 3\\text{ jam } 30\\text{ menit} = 210\\text{ menit}$ (atau $3{,}5\\text{ jam}$).  \n  - $t_2 = 2\\text{ jam } 20\\text{ menit} = 140\\text{ menit}$ (atau $2\\frac{1}{3}\\text{ jam}$).  \n  - $v_1 = 60\\text{ km/jam}$.\n- **Perhitungan Kecepatan $v_2$:**  \n  $$v_2 = \\frac{v_1 \\cdot t_1}{t_2} = \\frac{60 \\times 210}{140}$$  \n  Sederhanakan pecahan $\\frac{210}{140} = \\frac{3}{2}$:  \n  $$v_2 = 60 \\times \\frac{3}{2} = 90\\text{ km/jam}$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A ($75$) dan B ($80$) dihitung jika menggunakan perbandingan senilai secara keliru.  \n  - Pilihan C dan E terjadi akibat kesalahan pembagian menit.\n- **Penerapan Trik Cepat (15 Detik):** Gunakan rasio menit: $t_1 : t_2 = 210 : 140 = 3 : 2$. Karena berbalik nilai, rasio kecepatan dibalik: $v_1 : v_2 = 2 : 3$. Jika $2$ bagian $= 60\\text{ km/jam}$, maka $3$ bagian $= 90\\text{ km/jam}$. Jawaban tepat adalah pilihan **D**.\n\n---\n\n### Variasi 3: Beban Kerja Bersama dan Pekerja Tambahan Terhenti / HOTS\n\n> **Konteks Masalah Soal:**  \n> Sebuah proyek renovasi jembatan ditargetkan selesai dalam waktu $40\\text{ hari}$ dengan mempekerjakan $24\\text{ orang}$ pekerja. Setelah pekerjaan berjalan selama $15\\text{ hari}$, proyek terpaksa dihentikan selama $5\\text{ hari}$ akibat kendala banjir luapan sungai. Agar proyek tersebut tetap selesai tepat waktu sesuai jadwal semula, berapa orang pekerja tambahan yang wajib didatangkan?  \n>  \n> **Pertanyaan UTBK:** *Jumlah pekerja tambahan yang diperlukan adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 4 orang  \n> - **B.** 6 orang  \n> - **C.** 8 orang  \n> - **D.** 10 orang  \n> - **E.** 30 orang\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Sisa Waktu Proyek:**  \n  - Waktu total rencana: $40\\text{ hari}$.  \n  - Waktu yang sudah berjalan: $15\\text{ hari}$.  \n  - Sisa hari rencana normal: $40 - 15 = 25\\text{ hari}$.  \n  - Pekerjaan terhenti selama: $5\\text{ hari}$.  \n  - Sisa hari nyata yang tersedia: $25 - 5 = 20\\text{ hari}$.\n- **Metode 1 (Konsep Formal Beban Kerja):**  \n  - Sisa beban kerja yang belum selesai:  \n    $$\\text{Beban} = 25\\text{ hari} \\times 24\\text{ pekerja} = 600\\text{ orang-hari}$$  \n  - Jumlah pekerja baru ($P_{baru}$) yang dibutuhkan agar 600 beban ini tuntas dalam 20 hari:  \n    $$P_{baru} = \\frac{600}{20} = 30\\text{ orang}$$  \n  - Jumlah pekerja **tambahan** yang diperlukan:  \n    $$\\text{Tambahan} = P_{baru} - P_{lama} = 30 - 24 = 6\\text{ orang}$$\n- **Metode 2 (Rumus Sakti Kilat 10 Detik):**  \n  $$\\text{Tambahan} = \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Semula} = \\frac{5}{20} \\times 24 = \\frac{1}{4} \\times 24 = 6\\text{ orang}$$  \n  Hasilnya identik secara instan!\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan E Salah (Jebakan Terbesar):** Angka $30$ adalah total pekerja yang dibutuhkan, bukan pekerja tambahan! Siswa yang terburu-buru sering terjebak memilih E.  \n  - **Pilihan A, C, D Salah:** Terjadi karena salah membagi dengan total hari 40 atau lupa menghitung 5 hari terhenti.\n- **Penerapan Trik Cepat (15 Detik):** Rumus kilat: $\\frac{\\text{Hari Libur}}{\\text{Sisa Hari}} \\times \\text{Pekerja} = \\frac{5}{20} \\times 24 = 6$ orang. Dalam 5 detik, jawaban **B** langsung keluar.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Jebakan Total Pekerja vs Pekerja Tambahan: Memilih angka 30 padahal yang ditanyakan adalah pekerja tambahannya (30 - 24 = 6).",
+      "Mengalikan silang pada perbandingan waktu dan pekerja (keliru menganggap senilai).",
+      "Menghitung beban proyek dari hari ke-0 bukan dari hari yang tersisa."
+    ],
+    "quick_execution_algorithm": [
+      "Tentukan jenis perbandingan: berbanding lurus (senilai) atau berbanding terbalik.",
+      "Pada rasio bertingkat A:B dan B:C, samakan nilai B dengan KPK untuk membuat rasio A:B:C.",
+      "Pada proyek terhenti, gunakan rumus sakti: (Hari Terhenti / Sisa Hari Nyata) x Pekerja Semula.",
+      "Periksa dengan teliti apakah pertanyaan meminta nilai total atau nilai selisih/tambahan."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-04-ex1",
+      "variation_name": "Variasi 1: Rasio Bertingkat Tabungan (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Perbandingan uang tabungan Alif dan Budi adalah 3 : 4, sedangkan perbandingan uang tabungan Budi dan Cici adalah 5 : 6. Jika selisih uang tabungan Alif dan Cici adalah Rp450.000,00, berapakah jumlah uang tabungan Budi?",
+      "question_markdown": "Jumlah uang tabungan Budi berdasarkan informasi tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Rp800.000,00"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Rp900.000,00"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Rp1.000.000,00"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Rp1.100.000,00"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Rp1.200.000,00"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Samakan nilai Budi pada kedua perbandingan! Budi bernilai 4 pada rasio pertama dan bernilai 5 pada rasio kedua. Jadikan 20!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rasio Gabungan:**\n  - $A : B = 3 : 4 = 15 : 20$.\n  - $B : C = 5 : 6 = 20 : 24$.\n  - Maka $A : B : C = 15 : 20 : 24$.\n- **Nilai Per Bagian:**\n  - Selisih $C - A = 24 - 15 = 9$ bagian.\n  - $9$ bagian $= 450.000 \\implies 1$ bagian $= 50.000$.\n- **Tabungan Budi:**\n  - Budi $= 20$ bagian $= 20 \\times 50.000 = \\text{Rp1.000.000,00}$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Skala Porsi):**\n\n1. $A:B:C = 15:20:24$.\n2. Selisih $C - A = 9$ bagian $= 450.000 \\implies 1$ bagian $= 50.000$.\n3. Budi $= 20$ bagian $\\implies 20 \\times 50.000 = 1.000.000$.\n4. Jawaban **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, B, D, E Salah:** Terjadi karena salah membagi selisih 9 bagian atau salah mengalikan bagian Budi."
+    },
+    {
+      "example_id": "pu-03-04-ex2",
+      "variation_name": "Variasi 2: Kecepatan dan Waktu Berbalik Nilai (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah mobil menempuh perjalanan dari Kota P ke Kota Q dengan kecepatan rata-rata 60 km/jam dalam waktu 3 jam 30 menit (210 menit). Jika pengemudi ingin menyingkat waktu tempuh pulang menjadi 2 jam 20 menit (140 menit), berapakah kecepatan rata-rata yang harus dipertahankan?",
+      "question_markdown": "Kecepatan rata-rata mobil pada perjalanan pulang tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "75 km/jam"
+        },
+        {
+          "key": "B",
+          "text_markdown": "80 km/jam"
+        },
+        {
+          "key": "C",
+          "text_markdown": "85 km/jam"
+        },
+        {
+          "key": "D",
+          "text_markdown": "90 km/jam"
+        },
+        {
+          "key": "E",
+          "text_markdown": "95 km/jam"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Ini perbandingan berbalik nilai (kecepatan x waktu = jarak tetap). v1 x t1 = v2 x t2. Masukkan waktu dalam satuan menit: 210 menit dan 140 menit.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rumus:** $v_1 \\cdot t_1 = v_2 \\cdot t_2$.\n- $60 \\times 210 = v_2 \\times 140$.\n- $v_2 = \\frac{60 \\times 210}{140} = 60 \\times \\frac{3}{2} = 90\\text{ km/jam}$.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Rasio Terbalik):**\n\n1. Rasio waktu: $210 : 140 = 3 : 2$.\n2. Rasio kecepatan dibalik: $2 : 3$.\n3. Jika $2$ bagian $= 60\\text{ km/jam}$, maka $3$ bagian $= 90\\text{ km/jam}$.\n4. Jawaban **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, B Salah:** Hasil jika menghitung dengan perbandingan senilai.\n- **Pilihan C, E Salah:** Kesalahan hitung pada pembagian rasio waktu."
+    },
+    {
+      "example_id": "pu-03-04-ex3",
+      "variation_name": "Variasi 3: Proyek Terhenti dan Pekerja Tambahan (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah proyek renovasi jembatan ditargetkan selesai dalam waktu 40 hari dengan mempekerjakan 24 orang pekerja. Setelah pekerjaan berjalan selama 15 hari, proyek terpaksa dihentikan selama 5 hari akibat kendala banjir luapan sungai. Agar proyek tersebut tetap selesai tepat waktu sesuai jadwal semula, berapa orang pekerja tambahan yang wajib didatangkan?",
+      "question_markdown": "Jumlah **pekerja tambahan** yang diperlukan adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "4 orang"
+        },
+        {
+          "key": "B",
+          "text_markdown": "6 orang"
+        },
+        {
+          "key": "C",
+          "text_markdown": "8 orang"
+        },
+        {
+          "key": "D",
+          "text_markdown": "10 orang"
+        },
+        {
+          "key": "E",
+          "text_markdown": "30 orang"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Gunakan rumus kilat proyek terhenti: Pekerja Tambahan = (Hari Terhenti / Sisa Hari Nyata) x Pekerja Semula. Hari terhenti = 5, sisa hari nyata = (40 - 15) - 5 = 20 hari.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Sisa Beban Kerja:**\n  - Sisa hari normal $= 40 - 15 = 25$ hari.\n  - Beban $= 25 \\times 24 = 600$ orang-hari.\n- **Sisa Waktu Nyata:** $25 - 5 = 20$ hari.\n- **Kebutuhan Pekerja Baru:** $\\frac{600}{20} = 30$ orang.\n- **Pekerja Tambahan:** $30 - 24 = 6$ orang.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Rumus Sakti 10 Detik):**\n\n1. Tambahan $= \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Awal}$.\n2. Tambahan $= \\frac{5}{20} \\times 24 = \\frac{1}{4} \\times 24 = 6$ orang.\n3. Jawaban langsung **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan E Salah (Jebakan Utama):** 30 adalah total seluruh pekerja, bukan pekerja tambahan!\n- **Pilihan A, C, D Salah:** Kesalahan hitung pada pembagian sisa hari."
+    }
+  ]
+};
+
+export const MATERIAL_PU_03_05: Material = {
+  "metadata": {
+    "id": "pu-3-5",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.5",
+    "subchapter_title": "Interpretasi Data (Tabel, Grafik, Diagram)",
+    "title": "Interpretasi Data (Tabel, Grafik, Diagram)",
+    "required_question_variations": [
+      "Analisis Persentase Perubahan dan Rasio pada Tabel Statistik",
+      "Membaca Tren dan Titik Ekstrem pada Grafik Garis dan Batang",
+      "Evaluasi Simpulan Pernyataan Berdasarkan Data Majemuk (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Interpretasi data adalah materi penalaran kuantitatif yang paling sering menguras waktu ujian jika tidak dihadapi dengan teknik eliminasi dan estimasi yang cerdas. Pembuat soal UTBK sengaja menyajikan tabel atau grafik yang padat angka untuk memancing siswa menghitung rata-rata atau persentase secara detail. Kunci suksesnya adalah jangan pernah menghitung seluruh tabel: baca pertanyaan terlebih dahulu, temukan baris atau kolom yang relevan saja, dan kuasai perbedaan mendasar antara kenaikan nominal (selisih pengurangan biasa) dengan kenaikan persentase (selisih dibagi nilai awal).",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nMembaca data statistik di UTBK SNBT menuntut kecepatan dan ketepatan penalaran numerik:\n\n1. **Perbedaan Kenaikan Nominal vs Kenaikan Persentase**  \n   Ini adalah konsep paling sering diuji dan paling banyak memakan korban jebakan di UTBK:  \n   - **Kenaikan Nominal (Selisih Mutlak):**  \n     $$\\Delta = \\text{Nilai Akhir} - \\text{Nilai Awal}$$  \n   - **Kenaikan Relatif / Persentase (Pertumbuhan):**  \n     $$\\%\\Delta = \\frac{\\text{Nilai Akhir} - \\text{Nilai Awal}}{\\text{Nilai Awal}} \\times 100\\%$$  \n   *Contoh:* Angka naik dari $10$ ke $20$ memiliki $\\Delta = 10$, namun persentase kenaikannya mencapai $100\\%$. Sebaliknya, angka naik dari $100$ ke $120$ memiliki $\\Delta = 20$ (nominal lebih besar), tetapi persentase kenaikannya hanya $20\\%$.\n\n2. **Membaca Grafik Batang dan Grafik Garis**  \n   - Perhatikan **satuan pada sumbu vertikal** (dalam jutaan, ribuan ton, atau persen).  \n   - Perhatikan apakah grafik memiliki **sumbu ganda (dual axis)** di mana sumbu kiri dan kanan menggunakan skala yang berbeda.  \n   - Kemiringan garis (*slope*) menggambarkan laju perubahan: semakin curam garis naik, semakin tinggi laju pertumbuhannya.\n\n3. **Evaluasi Kebenaran Pernyataan Majemuk (Soal HOTS)**  \n   Soal menyajikan 5 pernyataan pilihan ganda dan meminta Anda menentukan pernyataan yang *pasti benar* atau *pasti salah*.  \n   - Teknik pengerjaan: Gunakan metode eliminasi cepat dengan membantah opsi yang memuat angka ekstrim atau opsi yang klaimnya bertolak belakang dengan grafik.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Menyamakan Kenaikan Tertinggi dengan Persentase Tertinggi**  \n   Soal menanyakan *\"komoditas dengan persentase pertumbuhan tertinggi\"*, namun siswa justru memilih komoditas dengan kenaikan nominal terbesar.\n2. **Jebakan Mengabaikan Nilai Basis Awal (*Base Effect Trap*)**  \n   Kenaikan nominal kecil pada nilai awal yang sangat kerdil dapat menghasilkan persentase lonjakan yang masif (misal: naik dari 2 ke 6 adalah kenaikan 200%). Jangan tertipu hanya melihat besaran angka akhir.\n3. **Jebakan Salah Membaca Label Tahun atau Kategori**  \n   Siswa membaca data tahun 2023 padahal yang ditanyakan adalah perubahan antara tahun 2021 dan 2022.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Baca Pertanyaan Sebelum Melirik Tabel**  \n   Ketahui apa yang dicari (nama komoditas, tahun tertentu, atau persentase) sebelum mata Anda tenggelam dalam belantara angka tabel.\n2. **Gunakan Perbandingan Pecahan Silang untuk Persentase Terbesar**  \n   Untuk membandingkan apakah $\\frac{15}{40}$ lebih besar dari $\\frac{18}{50}$:  \n   Kalikan silang: $15 \\times 50 = 750$ vs $40 \\times 18 = 720$.  \n   Karena $750 > 720$, maka $\\frac{15}{40}$ pasti lebih besar tanpa perlu menghitung desimalnya!\n3. **Uji Opsi dari yang Paling Mudah Diverifikasi**  \n   Pada soal evaluasi pernyataan, uji terlebih dahulu opsi yang hanya memerlukan pembacaan satu titik grafik sebelum menguji opsi yang memerlukan perhitungan rata-rata.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Kemampuan mengekstraksi kesimpulan numerik yang akurat dari tabel dan visualisasi data.\n- **Kaidah Emas:** Persentase perubahan selalu dibagi dengan nilai awal ($\\%\\Delta = \\frac{\\Delta}{\\text{Awal}}$).\n- **Strategi Eksekusi:** Baca pertanyaan dulu, gunakan perkalian silang untuk membandingkan laju pertumbuhan, dan eliminasi opsi yang salah membaca skala sumbu.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Interpretasi Data yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks tabel, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Analisis Persentase Perubahan pada Tabel Statistik\n\n> **Konteks Tabel Data Soal:**  \n> Tabel berikut menunjukkan volume penjualan mobil (dalam unit) dari empat dealer mobil selama tahun 2024 dan 2025:  \n> | Dealer | Penjualan 2024 | Penjualan 2025 |  \n> | :--- | :---: | :---: |  \n> | Dealer Alpha | 200 | 260 |  \n> | Dealer Beta | 120 | 180 |  \n> | Dealer Gamma | 400 | 480 |  \n> | Dealer Delta | 500 | 575 |  \n>  \n> **Pertanyaan UTBK:** *Dealer yang mencatatkan persentase kenaikan penjualan TERTINGGI dari tahun 2024 ke 2025 adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Dealer Alpha  \n> - **B.** Dealer Beta  \n> - **C.** Dealer Gamma  \n> - **D.** Dealer Delta  \n> - **E.** Dealer Gamma dan Delta sama tinggi\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kenaikan Nominal vs Kenaikan Persentase Tiap Dealer:**  \n  - **Dealer Alpha:**  \n    Kenaikan nominal $= 260 - 200 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{200} \\times 100\\% = 30\\%$.\n  - **Dealer Beta:**  \n    Kenaikan nominal $= 180 - 120 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{120} \\times 100\\% = 50\\%$.\n  - **Dealer Gamma:**  \n    Kenaikan nominal $= 480 - 400 = 80\\text{ unit}$ (secara nominal adalah yang tertinggi!).  \n    Persentase kenaikan $= \\frac{80}{400} \\times 100\\% = 20\\%$.\n  - **Dealer Delta:**  \n    Kenaikan nominal $= 575 - 500 = 75\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{75}{500} \\times 100\\% = 15\\%$.\n- **Perbandingan Hasil:**  \n  Meskipun Dealer Gamma memiliki kenaikan nominal terbesar ($80\\text{ unit}$), persentase kenaikan tertinggi dipegang oleh **Dealer Beta** dengan kenaikan mencapai **$50\\%$** karena nilai basis awalnya yang lebih kecil.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan C Salah (Jebakan Utama):** Terkecoh memilih Dealer Gamma karena nominalnya naik 80 unit.  \n  - **Pilihan A, D, E Salah:** Persentase kenaikan Alpha (30%) dan Delta (15%) lebih rendah daripada Beta (50%).\n- **Penerapan Trik Cepat (15 Detik):** Alpha naik $\\frac{60}{200} = \\frac{3}{10}$. Beta naik $\\frac{60}{120} = \\frac{1}{2} = 50\\%$. Gamma naik $\\frac{80}{400} = \\frac{1}{5} = 20\\%$. Jelas $\\frac{1}{2}$ ($50\\%$) adalah yang paling dominan. Jawaban pasti **B**.\n\n---\n\n### Variasi 2: Membaca Tren dan Titik Ekstrem pada Grafik / Data Deret\n\n> **Konteks Data Soal:**  \n> Catatan laba bersih (dalam miliar rupiah) sebuah perusahaan rintisan selama lima caturwulan berturut-turut adalah sebagai berikut:  \n> - Caturwulan I: Rp15 Miliar  \n> - Caturwulan II: Rp18 Miliar  \n> - Caturwulan III: Rp12 Miliar  \n> - Caturwulan IV: Rp24 Miliar  \n> - Caturwulan V: Rp30 Miliar  \n>  \n> **Pertanyaan UTBK:** *Laju kenaikan laba bersih tertinggi dalam satu periode caturwulan berturut-turut terjadi pada perpindahan dari...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Caturwulan I ke Caturwulan II  \n> - **B.** Caturwulan II ke Caturwulan III  \n> - **C.** Caturwulan III ke Caturwulan IV  \n> - **D.** Caturwulan IV ke Caturwulan V  \n> - **E.** Caturwulan I ke Caturwulan V\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Laju Perubahan Tiap Periode:**  \n  - **Periode I ke II:** Naik dari $15$ ke $18$ $\\implies \\frac{18 - 15}{15} = \\frac{3}{15} = 20\\%$.  \n  - **Periode II ke III:** Terjadi **penurunan** (dari 18 ke 12), sehingga gugur.  \n  - **Periode III ke IV:** Naik dari $12$ ke $24$ $\\implies \\frac{24 - 12}{12} = \\frac{12}{12} = 100\\%$ (laba berlipat ganda dua kali lipat!).  \n  - **Periode IV ke V:** Naik dari $24$ ke $30$ $\\implies \\frac{30 - 24}{24} = \\frac{6}{24} = 25\\%$.\n- **Kesimpulan:** Laju kenaikan tertinggi terjadi pada perpindahan dari **Caturwulan III ke Caturwulan IV** dengan lonjakan fantastis sebesar **$100\\%$**.\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A dan D laju pertumbuhannya hanya $20\\%$ dan $25\\%$.  \n  - Pilihan B mengalami penurunan laba.  \n  - Pilihan E mencakup empat periode, bukan satu periode berturut-turut.\n- **Penerapan Trik Cepat (15 Detik):** Dari 12 ke 24 adalah kenaikan $100\\%$ (angka berlipat dua). Tidak ada periode lain yang melipatgandakan angka. Jawaban seketika **C**.\n\n---\n\n### Variasi 3: Evaluasi Simpulan Pernyataan Berdasarkan Data Majemuk / HOTS\n\n> **Konteks Tabel Data Soal:**  \n> Tabel statistik kelulusan ujian kompetensi dari tiga sekolah kejuruan tahun 2025:  \n> | Sekolah | Jumlah Siswa Terdaftar | Persentase Kelulusan |  \n> | :--- | :---: | :---: |  \n> | SMK Mandiri | 200 siswa | 90% |  \n> | SMK Prestasi | 300 siswa | 80% |  \n> | SMK Cendekia | 150 siswa | 80% |  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan data tabel tersebut, pernyataan berikut yang **PASTI BENAR** adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jumlah siswa yang lulus dari SMK Mandiri lebih banyak daripada siswa yang lulus dari SMK Prestasi  \n> - **B.** Jumlah siswa yang TIDAK lulus dari SMK Prestasi sama dengan jumlah siswa yang TIDAK lulus dari SMK Mandiri  \n> - **C.** Jumlah siswa yang lulus dari SMK Prestasi adalah yang terbanyak di antara ketiga sekolah tersebut  \n> - **D.** Total persentase kelulusan gabungan ketiga sekolah tersebut adalah 85%  \n> - **E.** Siswa yang tidak lulus dari SMK Cendekia berjumlah 40 orang\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Kalkulasi Rinci Jumlah Siswa Lulus dan Tidak Lulus:**  \n  - **SMK Mandiri (200 siswa):**  \n    - Lulus $= 90\\% \\times 200 = 180\\text{ siswa}$.  \n    - Tidak Lulus $= 10\\% \\times 200 = 20\\text{ siswa}$.  \n  - **SMK Prestasi (300 siswa):**  \n    - Lulus $= 80\\% \\times 300 = 240\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 300 = 60\\text{ siswa}$.  \n  - **SMK Cendekia (150 siswa):**  \n    - Lulus $= 80\\% \\times 150 = 120\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 150 = 30\\text{ siswa}$.\n- **Evaluasi Opsi Pilihan Ganda:**  \n  - **Pilihan A Salah:** Lulus Mandiri ($180$) lebih sedikit dari Lulus Prestasi ($240$).  \n  - **Pilihan B Salah:** Tidak lulus Prestasi ($60$) berbeda dengan Mandiri ($20$).  \n  - **Pilihan C BENAR:** Lulus terbanyak adalah SMK Prestasi dengan $240\\text{ siswa}$ (mengungguli Mandiri $180$ dan Cendekia $120$).  \n  - **Pilihan D Salah:** Total lulus $= 180 + 240 + 120 = 540$ dari total $650$ siswa $\\implies \\frac{540}{650} \\approx 83{,}08\\%$ (bukan 85%). Rata-rata persentase tidak boleh dirata-ratakan langsung karena bobot populasinya berbeda.  \n  - **Pilihan E Salah:** Siswa tidak lulus SMK Cendekia adalah $30\\text{ orang}$, bukan $40\\text{ orang}$.\n- **Penerapan Trik Cepat (15 Detik):** Cek jumlah lulus Prestasi: $80\\% \\times 300 = 240$. Ini jauh melampaui total seluruh siswa Mandiri (200) apalagi yang lulus. Maka pernyataan C bahwa Prestasi memiliki jumlah lulus terbanyak sudah pasti benar tanpa perlu menghitung rata-rata gabungan. Pilihan **C** terbukti sah.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Menyamakan rata-rata persentase dengan persentase gabungan: Rata-rata dari 90%, 80%, dan 80% bukan (90+80+80)/3 jika ukuran populasi tiap sekolah berbeda.",
+      "Terkecoh persentase tinggi dengan jumlah mutlak: 90% dari 200 (180) lebih sedikit daripada 80% dari 300 (240).",
+      "Salah membaca selisih penurunan vs kenaikan."
+    ],
+    "quick_execution_algorithm": [
+      "Identifikasi apa yang ditanyakan: jumlah mutlak atau persentase relatif.",
+      "Kalikan persentase dengan total populasi baris untuk memperoleh angka riil.",
+      "Waspadai jebakan merata-ratakan persentase secara langsung tanpa bobot populasi.",
+      "Uji opsi yang menyatakan perbandingan jumlah mutlak terlebih dahulu."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-05-ex1",
+      "variation_name": "Variasi 1: Persentase Kenaikan Tertinggi (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Tabel berikut menunjukkan volume penjualan mobil (dalam unit) dari empat dealer:\n- Dealer Alpha: 200 unit (2024) -> 260 unit (2025)\n- Dealer Beta: 120 unit (2024) -> 180 unit (2025)\n- Dealer Gamma: 400 unit (2024) -> 480 unit (2025)\n- Dealer Delta: 500 unit (2024) -> 575 unit (2025)",
+      "question_markdown": "Dealer yang mencatatkan **persentase kenaikan penjualan TERTINGGI** dari tahun 2024 ke 2025 adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Dealer Alpha"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Dealer Beta"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Dealer Gamma"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Dealer Delta"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Dealer Gamma dan Delta sama tinggi"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Persentase kenaikan dihitung dari (Kenaikan / Penjualan Awal) x 100%. Jangan terkecoh dengan Dealer Gamma yang kenaikan nominalnya paling banyak!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Alpha:** $\\frac{60}{200} = 30\\%$.\n- **Beta:** $\\frac{60}{120} = 50\\%$.\n- **Gamma:** $\\frac{80}{400} = 20\\%$.\n- **Delta:** $\\frac{75}{500} = 15\\%$.\n- **Konklusi:** Persentase kenaikan tertinggi adalah Dealer Beta ($50\\%$).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Bagi Nilai Awal):**\n\n1. Beta naik $60$ dari $120 \\implies$ naik tepat setengahnya ($50\\%$).\n2. Dealer lain kenaikannya jauh di bawah $50\\%$ dari nilai awalnya.\n3. Jawaban langsung **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan C Salah (Jebakan Nominal):** Gamma naik 80 unit namun basis awalnya 400 unit sehingga hanya naik 20%.\n- **Pilihan A, D, E Salah:** Persentasenya di bawah 50%."
+    },
+    {
+      "example_id": "pu-03-05-ex2",
+      "variation_name": "Variasi 2: Laju Kenaikan Tertinggi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Catatan laba bersih (dalam miliar rupiah) sebuah perusahaan rintisan selama lima caturwulan berturut-turut:\n- Caturwulan I: Rp15 Miliar\n- Caturwulan II: Rp18 Miliar\n- Caturwulan III: Rp12 Miliar\n- Caturwulan IV: Rp24 Miliar\n- Caturwulan V: Rp30 Miliar",
+      "question_markdown": "Laju kenaikan laba bersih **tertinggi** dalam satu periode caturwulan berturut-turut terjadi pada perpindahan dari...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Caturwulan I ke Caturwulan II"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Caturwulan II ke Caturwulan III"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Caturwulan III ke Caturwulan IV"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Caturwulan IV ke Caturwulan V"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Caturwulan I ke Caturwulan V"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cari periode di mana labanya mengalami lonjakan persentase berlipat ganda paling tajam. Coba periksa caturwulan III ke IV (dari 12 ke 24)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **I -> II:** $(18 - 15) / 15 = 3 / 15 = 20\\%$.\n- **II -> III:** Turun.\n- **III -> IV:** $(24 - 12) / 12 = 12 / 12 = 100\\%$.\n- **IV -> V:** $(30 - 24) / 24 = 6 / 24 = 25\\%$.\n- **Konklusi:** Kenaikan tertinggi $100\\%$ terjadi pada III ke IV.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Kenaikan 2 Kali Lipat):**\n\n1. Dari 12 ke 24 naik tepat $100\\%$ (berlipat dua).\n2. Tidak ada periode lain yang mencapai kenaikan $100\\%$.\n3. Jawaban **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, D Salah:** Kenaikan hanya 20% dan 25%.\n- **Pilihan B Salah:** Mengalami penurunan laba.\n- **Pilihan E Salah:** Meliputi 4 periode, bukan satu periode berturut-turut."
+    },
+    {
+      "example_id": "pu-03-05-ex3",
+      "variation_name": "Variasi 3: Evaluasi Simpulan Data Statistik (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Tabel statistik kelulusan ujian kompetensi dari tiga sekolah kejuruan tahun 2025:\n- SMK Mandiri: 200 siswa terdaftar, kelulusan 90%\n- SMK Prestasi: 300 siswa terdaftar, kelulusan 80%\n- SMK Cendekia: 150 siswa terdaftar, kelulusan 80%",
+      "question_markdown": "Berdasarkan data tabel tersebut, pernyataan berikut yang **PASTI BENAR** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Jumlah siswa yang lulus dari SMK Mandiri lebih banyak daripada siswa yang lulus dari SMK Prestasi"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Jumlah siswa yang TIDAK lulus dari SMK Prestasi sama dengan jumlah siswa yang TIDAK lulus dari SMK Mandiri"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Jumlah siswa yang lulus dari SMK Prestasi adalah yang terbanyak di antara ketiga sekolah tersebut"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Total persentase kelulusan gabungan ketiga sekolah tersebut adalah 85%"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Siswa yang tidak lulus dari SMK Cendekia berjumlah 40 orang"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung jumlah siswa lulus riil untuk setiap sekolah: Mandiri = 90% x 200 = 180 siswa. Prestasi = 80% x 300 = 240 siswa. Cendekia = 80% x 150 = 120 siswa. Bandingkan dengan opsi pernyataan!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kalkulasi Siswa Lulus:**\n  - SMK Mandiri: $90\\% \\times 200 = 180$ siswa.\n  - SMK Prestasi: $80\\% \\times 300 = 240$ siswa.\n  - SMK Cendekia: $80\\% \\times 150 = 120$ siswa.\n- **Kalkulasi Siswa Tidak Lulus:**\n  - SMK Mandiri: $20$ siswa.\n  - SMK Prestasi: $60$ siswa.\n  - SMK Cendekia: $30$ siswa.\n- **Evaluasi Pernyataan:**\n  - Siswa lulus terbanyak adalah SMK Prestasi ($240$ siswa). Pernyataan C pasti benar.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Verifikasi Nilai Terbanyak):**\n\n1. Lulus Prestasi $= 80\\% \\times 300 = 240$ orang.\n2. Total siswa Mandiri saja hanya 200 orang. Jadi Prestasi pasti menghasilkan lulusan terbanyak.\n3. Pilihan **C** seketika terbukti benar.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mandiri (180) lebih sedikit dari Prestasi (240).\n- **Pilihan B Salah:** Tidak lulus Prestasi (60) tidak sama dengan Mandiri (20).\n- **Pilihan D Salah:** Rata-rata tertimbang kelulusan adalah 540/650 = 83,08% bukan 85%.\n- **Pilihan E Salah:** Siswa tidak lulus Cendekia adalah 30 orang bukan 40 orang."
+    }
+  ]
+};

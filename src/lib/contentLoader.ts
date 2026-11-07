@@ -10,6 +10,11 @@ import {
   MATERIAL_PU_02_04,
   MATERIAL_PU_02_05,
   MATERIAL_PU_02_06,
+  MATERIAL_PU_03_01,
+  MATERIAL_PU_03_02,
+  MATERIAL_PU_03_03,
+  MATERIAL_PU_03_04,
+  MATERIAL_PU_03_05,
 } from '../data/materials/puMaterials';
 
 export const PRELOADED_MATERIALS: Record<string, Material> = {
@@ -40,6 +45,21 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-2-6': MATERIAL_PU_02_06,
   'pu-02-06': MATERIAL_PU_02_06,
   'pu-2.6': MATERIAL_PU_02_06,
+  'pu-3-1': MATERIAL_PU_03_01,
+  'pu-03-01': MATERIAL_PU_03_01,
+  'pu-3.1': MATERIAL_PU_03_01,
+  'pu-3-2': MATERIAL_PU_03_02,
+  'pu-03-02': MATERIAL_PU_03_02,
+  'pu-3.2': MATERIAL_PU_03_02,
+  'pu-3-3': MATERIAL_PU_03_03,
+  'pu-03-03': MATERIAL_PU_03_03,
+  'pu-3.3': MATERIAL_PU_03_03,
+  'pu-3-4': MATERIAL_PU_03_04,
+  'pu-03-04': MATERIAL_PU_03_04,
+  'pu-3.4': MATERIAL_PU_03_04,
+  'pu-3-5': MATERIAL_PU_03_05,
+  'pu-03-05': MATERIAL_PU_03_05,
+  'pu-3.5': MATERIAL_PU_03_05,
 };
 
 // Flatten all UTBK subchapters for metadata lookup
