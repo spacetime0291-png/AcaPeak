@@ -1,6 +1,14 @@
 import type { Material, WorkedExample } from '../types/material';
 import { UTBK_SYLLABUS } from './syllabusData';
-import { MATERIAL_PU_01_01, MATERIAL_PU_01_02 } from '../data/materials/puMaterials';
+import {
+  MATERIAL_PU_01_01,
+  MATERIAL_PU_01_02,
+  MATERIAL_PU_01_03,
+  MATERIAL_PU_02_01,
+  MATERIAL_PU_02_02,
+  MATERIAL_PU_02_03,
+  MATERIAL_PU_02_04,
+} from '../data/materials/puMaterials';
 
 export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-1-1': MATERIAL_PU_01_01,
@@ -9,6 +17,21 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-1-2': MATERIAL_PU_01_02,
   'pu-01-02': MATERIAL_PU_01_02,
   'pu-1.2': MATERIAL_PU_01_02,
+  'pu-1-3': MATERIAL_PU_01_03,
+  'pu-01-03': MATERIAL_PU_01_03,
+  'pu-1.3': MATERIAL_PU_01_03,
+  'pu-2-1': MATERIAL_PU_02_01,
+  'pu-02-01': MATERIAL_PU_02_01,
+  'pu-2.1': MATERIAL_PU_02_01,
+  'pu-2-2': MATERIAL_PU_02_02,
+  'pu-02-02': MATERIAL_PU_02_02,
+  'pu-2.2': MATERIAL_PU_02_02,
+  'pu-2-3': MATERIAL_PU_02_03,
+  'pu-02-03': MATERIAL_PU_02_03,
+  'pu-2.3': MATERIAL_PU_02_03,
+  'pu-2-4': MATERIAL_PU_02_04,
+  'pu-02-04': MATERIAL_PU_02_04,
+  'pu-2.4': MATERIAL_PU_02_04,
 };
 
 // Flatten all UTBK subchapters for metadata lookup
