@@ -342,118 +342,100 @@ export const MATERIAL_PU_01_02: Material = {
   },
   content: {
     tactical_overview:
-      'Penalaran analogi menyimpulkan sifat suatu hal berdasarkan kemiripannya dengan hal lain yang sudah terbukti. Kunci penting UTBK: kenali apakah soal meminta prediksi sifat (mentransfer kesimpulan karena kemiripan kondisi), mencari pola penalaran kembar (parallel reasoning), atau mencari perbedaan kritis (critical disanalogy) yang meruntuhkan argumen.',
-    exam_blueprint_markdown: `# 1. Kaidah dan Prinsip Dasar
+      'Penalaran analogi menyimpulkan kesamaan akibat berdasarkan kemiripan fungsi mendasar. Kunci UTBK: pastikan kesamaan bersifat fungsional, gunakan kata kemungkinan (kemungkinan besar/berpotensi), cocokkan rumus logika pada parallel reasoning, dan cari perbedaan kritis yang membatalkan analogi.',
+    exam_blueprint_markdown: `# 1. Prinsip Dasar
 
-Penalaran Analogi adalah proses penarikan simpulan dengan cara membandingkan dua entitas, sistem, atau fenomena berbeda yang memiliki kesamaan karakteristik mendasar.
+Penalaran analogi menyimpulkan bahwa jika dua hal memiliki kesamaan mekanisme mendasar (esensial), maka dampak yang terbukti pada hal pertama kemungkinan besar juga berlaku pada hal kedua.
 
-Jika entitas pertama terbukti memiliki serangkaian sifat penting dan menghasilkan dampak tertentu, maka entitas kedua yang memiliki kemiripan sifat mendasar disimpulkan kemungkinan besar juga akan menghasilkan dampak yang serupa.
-
-Kaidah-kaidah penting penalaran analogi di UTBK:
-
-1. **Kemiripan Harus Bersifat Esensial (Fungsional)**  
-   Perbandingan hanya sah jika titik kesamaan antara kedua hal berhubungan langsung dengan simpulan yang ditarik. Membandingkan dua hal hanya karena kemiripan tampilan luar, nama, atau kemiripan kata semata merupakan cacat logika (*False Analogy*).
-
-2. **Simpulan Analogi Bersifat Kemungkinan (Probabilistik)**  
-   Analogi tidak menghasilkan kepastian mutlak. Jawaban yang tepat di UTBK selalu menggunakan bahasa kemungkinan yang wajar, seperti *"kemungkinan besar"*, *"berpotensi"*, atau *"cenderung"*.
-
-3. **Prinsip Perbedaan Kritis (Critical Disanalogy)**  
-   Sebagus apa pun kemiripan antara dua sistem, jika terdapat satu perbedaan mendasar yang memutus hubungan kausal, maka simpulan analogi langsung gugur atau diperlemah secara signifikan.
+Kaidah utama di UTBK:
+1. **Kesamaan Fungsional, Bukan Tampilan Luar**  
+   Perbandingan hanya sah jika titik kesamaan berhubungan langsung dengan sebab-akibat. Kemiripan nama, rupa, atau istilah tanpa kesamaan mekanisme adalah analogi palsu (*false analogy*).
+2. **Bersifat Probabilistik (Tingkat Kemungkinan)**  
+   Analogi tidak pernah bernilai mutlak 100%. Pilihan jawaban yang tepat selalu menggunakan kata pembatas: *"kemungkinan besar"*, *"berpotensi"*, atau *"cenderung"*.
+3. **Gugur oleh Perbedaan Kritis (*Critical Disanalogy*)**  
+   Meski memiliki banyak kesamaan, satu perbedaan mendasar pada mekanisme kerja langsung menggugurkan atau memperlemah simpulan analogi.
 
 ---
 
-# 2. Bedah Variasi Soal dan Penjelasan
+# 2. Jebakan Pengecoh Khas UTBK
 
-Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTBK:
+1. **Kemiripan Permukaan (*False Analogy*)**  
+   Menyimpulkan dua hal pasti sama hanya karena atribut luar atau istilahnya mirip, padahal mekanisme kerjanya berlawanan.
+2. **Kesamaan Topik Semu (*Parallel Reasoning*)**  
+   Terkecoh memilih opsi karena sama-sama bertema sains, medis, atau teknologi. Yang harus dicocokkan adalah rumus struktur kalimat logikanya, bukan topiknya.
+3. **Klaim Kepastian Mutlak**  
+   Memilih opsi dengan kata *"pasti"*, *"selalu"*, atau *"mutlak sama"*. Ingat, analogi hanya menghasilkan simpulan bernada kemungkinan.
 
-### Variasi 1: Prediksi Berbasis Analogi Fenomena (Transfer Sifat)
+---
 
-> **Konteks Wacana Soal:**  
-> Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni (*habitable zone*) bintang induknya, memiliki komposisi batuan silikat yang padat, serta menerima intensitas radiasi bintang yang memungkinkan air tetap berada dalam fase cair di permukaan. Di Bumi, kombinasi ketiga kondisi tersebut memungkinkan terbentuknya siklus hidrologi yang stabil.  
+# 3. Trik Cepat (15 Detik)
+
+1. **Soal Prediksi Sifat:**  
+   Ambil akibat terbukti pada objek pertama -> cari opsi yang memindahkan akibat itu ke objek kedua dengan kata *"berpotensi"* atau *"kemungkinan besar"*. Coret langsung opsi dengan kata mutlak (*pasti*).
+2. **Soal Penalaran Kembar (*Parallel Reasoning*):**  
+   Ringkas wacana jadi rumus logika singkat di kepala, misal: [Bertahap -> Berhasil; Berlebihan -> Gagal]. Cari opsi dengan rumus kontras dua sisi yang sama persis, abaikan temanya.
+3. **Soal Memperlemah Analogi:**  
+   Cari satu perbedaan mekanisme internal yang membuat sistem di objek A tidak dapat diterapkan di objek B.
+
+---
+
+# 4. Kesimpulan
+
+- **Fokus Inti:** Analogi bersandar pada kesamaan fungsi mendasar, bukan kemiripan fisik/luar.
+- **Sifat Simpulan:** Selalu probabilistik (*kemungkinan besar, berpotensi*), hindari kata mutlak (*pasti*).
+- **Parallel Reasoning:** Cocokkan pola hubungan logikanya, bukan bidang pembahasannya.
+- **Pelemahan:** Gugur jika ditemukan perbedaan cara kerja mendasar (*critical disanalogy*).
+
+---
+
+# 5. Bedah Soal
+
+### Variasi 1: Prediksi Berbasis Analogi Fenomena
+
+> **Konteks Wacana:**  
+> Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni bintang induknya, berkomposisi batuan silikat padat, dan menerima radiasi yang menjaga air tetap berfase cair. Di Bumi, kombinasi ketiga faktor ini memungkinkan terbentuknya siklus hidrologi yang stabil.  
 >  
 > **Pertanyaan UTBK:** *Berdasarkan penalaran analogi, simpulan yang paling mungkin benar adalah...*
 
-**Bedah Logika & Penjelasan:**
-- **Titik Kesamaan:** Bumi dan Planet Kepler-186f sama-sama memiliki tiga kondisi esensial: zona laik huni, batuan padat, dan suhu yang mendukung keberadaan air fase cair.
-- **Sifat yang Ditransfer:** Di Bumi, kombinasi ketiga faktor tersebut menghasilkan dampak terbukti, yaitu terbentuknya siklus hidrologi yang stabil.
-- **Mengapa Opsi Lain Salah?**
-  - Opsi yang menyatakan *"Kepler-186f pasti dihuni oleh makhluk hidup cerdas seperti di Bumi"* adalah **salah**, karena wacana hanya membahas batuan dan air, bukan peradaban cerdas. Analogi tidak boleh menambah klaim liar di luar premis.
-  - Opsi yang menyatakan *"Ukuran satelit alami kedua planet persis sama"* adalah **salah**, karena zona laik huni tidak menyiratkan jumlah atau ukuran satelit.
-- **Simpulan yang Benar:** *"Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil."*  
-  Simpulan ini memindahkan dampak yang terbukti secara logis dengan kata probabilitas yang tepat (*kemungkinan besar*).
+**Penjelasan Singkat:**
+- **Titik Kesamaan:** Zona laik huni + batuan silikat padat + air fase cair.
+- **Dampak yang Ditransfer:** Di Bumi terbukti menghasilkan siklus hidrologi stabil -> Kepler-186f berpotensi mengalami hal yang sama.
+- **Analisis Pilihan:**
+  - *Salah:* "Kepler-186f pasti dihuni makhluk cerdas" (klaim berlebihan di luar data teks).
+  - *Salah:* "Ukuran dan jumlah satelit kedua planet persis sama" (tidak berkaitan dengan zona laik huni).
+  - **Benar:** *"Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil."*
 
 ---
 
 ### Variasi 2: Parallel Reasoning (Pola Penalaran Kembar)
 
-Pada variasi ini, soal meminta kamu mencari opsi jawaban yang memiliki **kerangka struktur logika kembar identik** dengan wacana soal, meskipun bidang pembahasannya berbeda sama sekali.
-
-> **Konteks Wacana Soal:**  
-> Melatih otot tubuh dengan beban yang ditingkatkan secara bertahap akan membuat serat otot beradaptasi dan menjadi lebih kuat. Sebaliknya, jika beban terlalu ekstrem sejak hari pertama, otot justru akan mengalami cedera. Demikian pula dalam mempelajari pemrograman komputer; memberikan latihan logika secara bertahap akan membangun pemahaman yang kokoh, sedangkan langsung memaksakan proyek berskala besar kepada pemula justru akan memicu kejenuhan dan kegagalan.  
+> **Konteks Wacana:**  
+> Melatih otot secara bertahap membuat serat otot beradaptasi dan makin kuat, tetapi jika beban langsung ekstrem sejak hari pertama, otot justru cedera. Demikian pula belajar pemrograman; latihan logika bertahap membangun pemahaman kokoh, sedangkan langsung memaksakan proyek besar kepada pemula memicu kegagalan.  
 >  
-> **Pertanyaan UTBK:** *Manakah situasi di bawah ini yang menggunakan pola penalaran analogi paling serupa dengan teks di atas?*
+> **Pertanyaan UTBK:** *Manakah situasi yang menggunakan pola penalaran paling serupa dengan teks tersebut?*
 
-**Bedah Logika & Penjelasan:**
-- **Rumus Struktur Logika Soal:**  
-  Teks menyusun perbandingan dua ranah berbeda (Latihan Otot Fisik vs Belajar Pemrograman Kognitif) dengan rumus kontras simetris:  
-  [Perlakuan bertahap -&gt; Hasil positif dan adaptasi]  
-  [Perlakuan berlebih atau ekstrem -&gt; Kegagalan dan kerusakan]
-- **Mencari Pasangan Kembar:**  
-  Abaikan temanya. Cari opsi pilihan ganda yang menyajikan dua sisi perbandingan serupa (bertahap membawa hasil baik, berlebihan memicu kegagalan).
-- **Pilihan yang Tepat:** *"Memberikan pupuk secara bertahap sesuai usia tanaman akan menyuburkan pertumbuhannya, sedangkan pemberian dosis berlebih sekaligus akan membuat tanaman mati; hal ini serupa dengan pemberian materi ajar kepada siswa yang harus disesuaikan tingkat kesulitannya secara bertahap agar tidak membuat siswa kewalahan."*  
-  Opsi ini mereplikasi rumus perbandingan kontras yang kembar identik: Pertanian Tanaman vs Pendidikan Siswa.
+**Penjelasan Singkat:**
+- **Rumus Logika Wacana:**  
+  [Perlakuan bertahap -> Hasil positif dan adaptasi] VS [Perlakuan berlebih -> Kegagalan dan kerusakan].
+- **Analisis Pilihan:**
+  - Abaikan topik (jangan cari opsi yang membahas otot atau koding). Cari yang memiliki rumus kontras simetris serupa.
+  - **Benar:** *"Pemberian pupuk bertahap menyuburkan tanaman, sedangkan dosis berlebih mematikan tanaman; hal ini serupa dengan materi ajar siswa yang harus diberikan bertahap agar tidak kewalahan."*
 
 ---
 
 ### Variasi 3: Memperlemah Analogi / Critical Disanalogy (HOTS)
 
-Tipe soal ini menguji kemampuan analitis untuk menemukan satu perbedaan kritis yang membatalkan analogi kebijakan atau argumen.
-
-> **Konteks Wacana Soal:**  
-> Manajemen Perusahaan Ritel X berencana menerapkan sistem kerja 4 hari seminggu tanpa pemotongan gaji untuk meningkatkan produktivitas karyawan. Keputusan ini didasarkan pada keberhasilan Perusahaan Software Y yang mengalami kenaikan produktivitas sebesar 25% setelah menerapkan sistem kerja 4 hari seminggu karena kedua perusahaan memiliki jumlah karyawan yang sama (300 orang) dan berlokasi di kota metropolitan yang sama.  
+> **Konteks Wacana:**  
+> Manajemen Perusahaan Ritel X ingin menerapkan sistem kerja 4 hari seminggu demi meningkatkan produktivitas, meniru Perusahaan Software Y yang sukses naik produktivitas 25%. Alasan manajemen: kedua perusahaan sama-sama memiliki 300 karyawan dan berlokasi di kota metropolitan yang sama.  
 >  
-> **Pertanyaan UTBK:** *Manakah fakta di bawah ini yang paling memperlemah argumen analogi Manajemen Perusahaan Ritel X?*
+> **Pertanyaan UTBK:** *Manakah fakta yang paling memperlemah argumen analogi Manajemen Ritel X?*
 
-**Bedah Logika & Penjelasan:**
-- **Analogi Manajemen:** Perusahaan Software Y sukses kerja 4 hari -> Perusahaan Ritel X diprediksi ikut sukses karena sama-sama punya 300 karyawan di kota yang sama.
-- **Mencari Perbedaan Kritis yang Mematikan:**  
-  Kesamaan jumlah karyawan dan lokasi kota hanyalah kemiripan luar. Keberhasilan sistem kerja di Perusahaan Software Y didorong oleh model kerja berbasis output proyek yang fleksibel (tidak terikat jam layanan fisik). Sebaliknya, pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik melayani pembeli setiap hari. Jika toko ritel memangkas hari kerja, jam operasional toko berkurang dan omzet penjualan langsung turun.
-- **Fakta yang Memperlemah Analogi:** *"Produktivitas Perusahaan Software Y bergantung pada penyelesaian proyek berbasis output mingguan yang fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jumlah jam operasional toko fisik yang melayani pelanggan setiap hari."*
-
----
-
-# 3. Jebakan Pengecoh Khas UTBK
-
-Waspadai jebakan-jebakan berikut saat mengerjakan soal analogi:
-
-1. **Jebakan Kemiripan Permukaan (False Analogy)**  
-   Membandingkan dua objek hanya karena nama atau temanya mirip, padahal mekanisme internalnya bertolak belakang.
-
-2. **Jebakan Kesamaan Topik Semu**  
-   Pada soal *Parallel Reasoning*, jangan memilih opsi hanya karena sama-sama membahas sains, kedokteran, atau teknologi. Fokuslah pada kesepadanan rumus struktur kalimatnya.
-
-3. **Jebakan Klaim Kepastian Mutlak**  
-   Memilih opsi yang menyatakan bahwa objek kedua *"pasti persis sama"* atau *"sudah tentu menghasilkan dampak yang tidak mungkin berbeda"*.
-
----
-
-# 4. Cara Cepat & Trik Eliminasi Kilat (15 Detik)
-
-1. **Untuk Soal Prediksi Analogi:**  
-   Identifikasi dampak yang terbukti pada entitas pembanding. Cari pilihan jawaban yang memindahkan dampak tersebut ke entitas kedua dengan kuantor kemungkinan (*kemungkinan besar, berpotensi*).
-2. **Untuk Soal Penalaran Kembar (Parallel Reasoning):**  
-   Sederhanakan kalimat wacana menjadi rumus kontras singkat di kepala: "[Bertahap = Baik, Berlebihan = Rusak]". Cari pilihan jawaban yang memiliki rumus kontras dua sisi yang persis sama.
-3. **Untuk Soal Memperlemah Analogi:**  
-   Tanyakan: *"Perbedaan apa yang membuat sistem di perusahaan/objek A tidak dapat diterapkan di objek B?"* Pilih jawaban yang membeberkan perbedaan cara kerja sistemik tersebut.
-
----
-
-# 5. Kesimpulan Intisari
-
-- Penalaran analogi mendasarkan kesimpulan pada **kesamaan fungsi dan karakteristik esensial**, bukan kemiripan luar.
-- Simpulan analogi selalu bersifat **probabilistik** dan tidak pernah mutlak pasti.
-- Pada soal *Parallel Reasoning*, kesamaan dinilai dari **kerangka hubungan logika**, bukan kesamaan topik kalimat.
-- Sebuah analogi dapat dipatahkan dengan menunjukkan **perbedaan kritis (*critical disanalogy*)** pada mekanisme kerja kedua objek.`,
+**Penjelasan Singkat:**
+- **Analogi Manajemen:** Software Y sukses kerja 4 hari -> Ritel X diprediksi ikut sukses karena sama-sama 300 staf di kota yang sama.
+- **Cacat Logika:** Jumlah staf dan lokasi hanyalah kemiripan luar, bukan cara kerja operasional.
+- **Fakta Pelemahan (Critical Disanalogy):**  
+  **Benar:** *"Produktivitas Perusahaan Software Y berbasis penyelesaian proyek fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik melayani pembeli setiap hari."*  
+  (Perbedaan cara kerja ini membuktikan bahwa memangkas hari kerja ritel justru menurunkan jam buka toko dan omzet penjualan).`,
     visualizations_svg: [],
     distractor_traps: [
       'False Analogy (Analogi Palsu/Dangkal): Membandingkan dua objek hanya karena kemiripan permukaan atau kemiripan nama, padahal mekanisme dasarnya bertolak belakang.',
