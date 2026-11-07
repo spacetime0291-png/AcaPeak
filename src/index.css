@@ -5,25 +5,41 @@
 @layer base {
   :root {
     color-scheme: light dark;
+    --bg-page-light: #fdfbf7;
+    --bg-page-light-grad: #f4f9f5;
+    --text-primary-light: #1e293b;
+    --text-secondary-light: #64748b;
+    --card-bg-light: #ffffff;
+    --card-border-light: #e2e8f0;
+
+    --bg-page-dark: #070913;
+    --bg-page-dark-grad: #0d1326;
+    --text-primary-dark: #f8fafc;
+    --text-secondary-dark: #94a3b8;
+    --card-bg-dark: rgba(18, 25, 48, 0.75);
+    --card-border-dark: rgba(255, 255, 255, 0.1);
   }
 
   html {
     font-size: 16px;
+    scroll-behavior: smooth;
   }
 
   body {
     overflow-x: hidden;
     font-size: 1.0625rem;
     line-height: 1.65;
-    background-color: #f8fafc;
-    color: #0f172a;
+    background: linear-gradient(180deg, #fdfbf7 0%, #f4f9f5 100%);
+    background-attachment: fixed;
+    color: #1e293b;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    transition: background-color 0.25s ease, color 0.25s ease;
+    transition: background 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   }
 
   .dark body,
   html.dark body {
-    background-color: #020617;
+    background: linear-gradient(180deg, #070913 0%, #0d1326 100%);
+    background-attachment: fixed;
     color: #f8fafc;
   }
 
@@ -37,11 +53,155 @@
   }
 }
 
+/* ==========================================================================
+   COSMIC & CYBER DARK MODE UTILITIES
+   ========================================================================== */
+
+/* Dark Glassmorphism */
+.dark-glass-card {
+  background: rgba(18, 25, 48, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark-glass-header {
+  background: rgba(10, 15, 30, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 242, 254, 0.12);
+}
+
+/* Cyber Grid Texture (for Search Bar & Cyber Accents) */
+.cyber-grid-input {
+  background-color: rgba(15, 23, 42, 0.85);
+  background-image: 
+    linear-gradient(to right, rgba(0, 242, 254, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 242, 254, 0.07) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Cosmic Neon Card Glows & Borders */
+.neon-border-purple {
+  border-color: rgba(168, 85, 247, 0.5) !important;
+  box-shadow: 0 0 15px -3px rgba(168, 85, 247, 0.25), inset 0 0 10px -3px rgba(168, 85, 247, 0.1);
+}
+.neon-border-cyan {
+  border-color: rgba(0, 242, 254, 0.5) !important;
+  box-shadow: 0 0 15px -3px rgba(0, 242, 254, 0.25), inset 0 0 10px -3px rgba(0, 242, 254, 0.1);
+}
+.neon-border-amber {
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.25), inset 0 0 10px -3px rgba(245, 158, 11, 0.1);
+}
+.neon-border-coral {
+  border-color: rgba(244, 63, 94, 0.5) !important;
+  box-shadow: 0 0 15px -3px rgba(244, 63, 94, 0.25), inset 0 0 10px -3px rgba(244, 63, 94, 0.1);
+}
+.neon-border-blue {
+  border-color: rgba(59, 130, 246, 0.5) !important;
+  box-shadow: 0 0 15px -3px rgba(59, 130, 246, 0.25), inset 0 0 10px -3px rgba(59, 130, 246, 0.1);
+}
+.neon-border-emerald {
+  border-color: rgba(16, 185, 129, 0.5) !important;
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.25), inset 0 0 10px -3px rgba(16, 185, 129, 0.1);
+}
+
+/* Icon Halo Glows */
+.icon-halo-purple {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.35) 0%, rgba(168, 85, 247, 0.05) 60%, transparent 80%);
+}
+.icon-halo-cyan {
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.35) 0%, rgba(0, 242, 254, 0.05) 60%, transparent 80%);
+}
+.icon-halo-amber {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.35) 0%, rgba(245, 158, 11, 0.05) 60%, transparent 80%);
+}
+.icon-halo-coral {
+  background: radial-gradient(circle, rgba(244, 63, 94, 0.35) 0%, rgba(244, 63, 94, 0.05) 60%, transparent 80%);
+}
+.icon-halo-blue {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.35) 0%, rgba(59, 130, 246, 0.05) 60%, transparent 80%);
+}
+.icon-halo-emerald {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.35) 0%, rgba(16, 185, 129, 0.05) 60%, transparent 80%);
+}
+
+/* Active Tab Cyber Glow */
+.tab-glow-utbk {
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.45);
+}
+.tab-glow-sma {
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.45);
+}
+
+/* ==========================================================================
+   NATURE & EDU CERIA LIGHT MODE UTILITIES
+   ========================================================================== */
+
+/* Soft Pastel Cards */
+.pastel-card-pink {
+  background-color: #ffe4e6;
+  border-color: #fecdd3;
+  box-shadow: 0 8px 20px -4px rgba(244, 63, 94, 0.08);
+}
+.pastel-card-peach {
+  background-color: #ffedd5;
+  border-color: #fed7aa;
+  box-shadow: 0 8px 20px -4px rgba(249, 115, 22, 0.08);
+}
+.pastel-card-mint {
+  background-color: #d1fae5;
+  border-color: #a7f3d0;
+  box-shadow: 0 8px 20px -4px rgba(16, 185, 129, 0.08);
+}
+.pastel-card-sky {
+  background-color: #e0f2fe;
+  border-color: #bae6fd;
+  box-shadow: 0 8px 20px -4px rgba(14, 165, 233, 0.08);
+}
+.pastel-card-lavender {
+  background-color: #ede9fe;
+  border-color: #ddd6fe;
+  box-shadow: 0 8px 20px -4px rgba(139, 92, 246, 0.08);
+}
+.pastel-card-cream {
+  background-color: #fef3c7;
+  border-color: #fde68a;
+  box-shadow: 0 8px 20px -4px rgba(245, 158, 11, 0.08);
+}
+
+/* Light Mode Soft Card Shadow */
+.pastel-shadow {
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   KATEX & MATHEMATICAL FORMULAS HIGH CONTRAST
+   ========================================================================== */
+
+.katex {
+  font-size: 1.1em;
+  text-rendering: auto;
+}
+
+/* Dark Mode KaTeX: high-contrast pure white/slate */
+.dark .katex,
+.dark .katex * {
+  color: #f8fafc !important;
+}
+
+/* Light Mode KaTeX: high-contrast charcoal */
+html:not(.dark) .katex,
+html:not(.dark) .katex * {
+  color: #0f172a !important;
+}
+
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.6rem 0;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -66,7 +226,10 @@
   background-color: #334155;
 }
 
-/* Smooth Sub-bab & Page Animations */
+/* ==========================================================================
+   SMOOTH TRANSITIONS & ANIMATIONS
+   ========================================================================== */
+
 @keyframes subtopicSlideIn {
   0% {
     opacity: 0;
@@ -95,4 +258,29 @@
 
 .animate-page-enter {
   animation: fadeInPage 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Cosmic Twinkle Animation */
+@keyframes cosmicTwinkle {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+}
+
+.animate-cosmic-twinkle {
+  animation: cosmicTwinkle 4s ease-in-out infinite;
+}
+
+.animate-cosmic-twinkle-delay {
+  animation: cosmicTwinkle 5s ease-in-out 2s infinite;
+}
+
+/* Smooth theme transition */
+.theme-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

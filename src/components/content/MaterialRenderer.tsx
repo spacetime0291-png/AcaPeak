@@ -78,20 +78,20 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
     <div
       key={svgItem.id}
       id={svgItem.id}
-      className="w-full max-w-xl mx-auto my-6 p-2 sm:p-4 bg-slate-50/90 border border-slate-200 rounded-xl shadow-xs flex flex-col items-center group relative transition-all hover:border-indigo-300"
+      className="w-full max-w-xl mx-auto my-6 p-2 sm:p-4 bg-stone-50/90 dark:bg-slate-900/90 border border-stone-200 dark:border-slate-800 rounded-xl shadow-xs flex flex-col items-center group relative transition-all"
     >
-      <div className="w-full flex items-center justify-between mb-2 px-1 text-xs text-slate-500 font-medium">
-        <span className="flex items-center gap-1.5 text-indigo-700 font-semibold">
-          <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
+      <div className="w-full flex items-center justify-between mb-2 px-1 text-xs text-slate-500 dark:text-slate-400 font-medium">
+        <span className="flex items-center gap-1.5 text-indigo-700 dark:text-cyan-400 font-semibold">
+          <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-cyan-400"></span>
           {svgItem.title}
         </span>
         <button
           type="button"
           onClick={() => setZoomSvg(svgItem)}
-          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-slate-600 bg-white border border-slate-200 rounded-md shadow-xs hover:bg-slate-100 hover:text-slate-900 transition active:scale-95 cursor-pointer"
+          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800 border border-stone-200 dark:border-slate-700 rounded-md shadow-xs hover:bg-stone-100 dark:hover:bg-slate-700 transition active:scale-95 cursor-pointer"
           title="Perbesar Gambar (Tap to Zoom)"
         >
-          <ZoomIn className="w-3.5 h-3.5 text-indigo-600" />
+          <ZoomIn className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
           <span>Perbesar</span>
         </button>
       </div>
@@ -103,7 +103,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
       />
 
       {svgItem.caption && (
-        <p className="mt-2 text-center text-xs sm:text-[13px] text-slate-600 italic px-2">
+        <p className="mt-2 text-center text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 italic px-2">
           {svgItem.caption}
         </p>
       )}
@@ -113,66 +113,66 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
   // Markdown component replacements for mobile-friendly tables and styled typography
   const markdownComponents = {
     table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
-      <div className="overflow-x-auto my-4 border border-slate-200 rounded-xl shadow-2xs">
-        <table className="min-w-full divide-y divide-slate-200 text-sm" {...props}>
+      <div className="overflow-x-auto my-4 border border-stone-200 dark:border-slate-800 rounded-xl shadow-2xs">
+        <table className="min-w-full divide-y divide-stone-200 dark:divide-slate-800 text-sm" {...props}>
           {children}
         </table>
       </div>
     ),
     thead: ({ children, ...props }: React.ComponentPropsWithoutRef<'thead'>) => (
-      <thead className="bg-slate-100/90 text-slate-800 font-semibold" {...props}>
+      <thead className="bg-stone-100/90 dark:bg-slate-800/90 text-slate-800 dark:text-slate-100 font-semibold" {...props}>
         {children}
       </thead>
     ),
     th: ({ children, ...props }: React.ComponentPropsWithoutRef<'th'>) => (
-      <th className="px-3.5 py-2.5 text-left text-xs uppercase tracking-wider font-semibold border-b border-slate-200" {...props}>
+      <th className="px-3.5 py-2.5 text-left text-xs uppercase tracking-wider font-semibold border-b border-stone-200 dark:border-slate-700" {...props}>
         {children}
       </th>
     ),
     td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
-      <td className="px-3.5 py-2.5 border-t border-slate-100 text-slate-700 whitespace-normal text-xs sm:text-sm leading-relaxed" {...props}>
+      <td className="px-3.5 py-2.5 border-t border-stone-100 dark:border-slate-800 text-slate-700 dark:text-slate-300 whitespace-normal text-xs sm:text-sm leading-relaxed" {...props}>
         {children}
       </td>
     ),
     p: ({ children, ...props }: React.ComponentPropsWithoutRef<'p'>) => (
-      <p className="my-2.5 leading-relaxed text-slate-800" {...props}>
+      <p className="my-2.5 leading-relaxed text-slate-800 dark:text-slate-200" {...props}>
         {children}
       </p>
     ),
     h1: ({ children, ...props }: React.ComponentPropsWithoutRef<'h1'>) => (
-      <h1 className="text-xl sm:text-2xl font-bold text-slate-900 mt-5 mb-2.5" {...props}>
+      <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-100 mt-5 mb-2.5" {...props}>
         {children}
       </h1>
     ),
     h2: ({ children, ...props }: React.ComponentPropsWithoutRef<'h2'>) => (
-      <h2 className="text-lg sm:text-xl font-bold text-slate-900 mt-4 mb-2" {...props}>
+      <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-slate-100 mt-4 mb-2" {...props}>
         {children}
       </h2>
     ),
     h3: ({ children, ...props }: React.ComponentPropsWithoutRef<'h3'>) => (
-      <h3 className="text-base sm:text-lg font-semibold text-slate-900 mt-3 mb-1.5" {...props}>
+      <h3 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100 mt-3 mb-1.5" {...props}>
         {children}
       </h3>
     ),
     ul: ({ children, ...props }: React.ComponentPropsWithoutRef<'ul'>) => (
-      <ul className="list-disc list-outside pl-5 my-2.5 space-y-1.5 text-slate-800 text-sm" {...props}>
+      <ul className="list-disc list-outside pl-5 my-2.5 space-y-1.5 text-slate-800 dark:text-slate-200 text-sm" {...props}>
         {children}
       </ul>
     ),
     ol: ({ children, ...props }: React.ComponentPropsWithoutRef<'ol'>) => (
-      <ol className="list-decimal list-outside pl-5 my-2.5 space-y-1.5 text-slate-800 text-sm" {...props}>
+      <ol className="list-decimal list-outside pl-5 my-2.5 space-y-1.5 text-slate-800 dark:text-slate-200 text-sm" {...props}>
         {children}
       </ol>
     ),
     blockquote: ({ children, ...props }: React.ComponentPropsWithoutRef<'blockquote'>) => (
-      <blockquote className="border-l-4 border-indigo-500 pl-4 py-1.5 my-3 italic text-slate-700 bg-indigo-50/50 rounded-r-lg" {...props}>
+      <blockquote className="border-l-4 border-indigo-500 dark:border-indigo-400 pl-4 py-1.5 my-3 italic text-slate-700 dark:text-slate-300 bg-indigo-50/50 dark:bg-slate-800/50 rounded-r-lg" {...props}>
         {children}
       </blockquote>
     ),
     code: ({ inline, className, children, ...props }: any) => {
       if (inline) {
         return (
-          <code className="bg-slate-100 text-indigo-700 px-1.5 py-0.5 rounded text-[0.9em] font-mono" {...props}>
+          <code className="bg-stone-100 dark:bg-slate-800 text-indigo-700 dark:text-cyan-300 px-1.5 py-0.5 rounded text-[0.9em] font-mono" {...props}>
             {children}
           </code>
         );
@@ -201,7 +201,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
         return (
           <div
             key={index}
-            className="my-3 p-3 bg-amber-50 text-amber-800 text-xs rounded border border-amber-200"
+            className="my-3 p-3 bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-200 text-xs rounded border border-amber-200 dark:border-amber-800"
           >
             ⚠️ Visualisasi <code>{svgId}</code> sedang dipersiapkan.
           </div>
@@ -226,45 +226,45 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
       {/* -------------------------------------------------------------
           MODULE HEADER
           ------------------------------------------------------------- */}
-      <header className="border-b border-slate-200 pb-5">
+      <header className="border-b border-stone-200 dark:border-slate-800 pb-5">
         <div className="flex flex-wrap items-center gap-2 mb-2">
-          <span className="px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-indigo-100 text-indigo-800">
+          <span className="px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-cyan-300 border border-indigo-200 dark:border-indigo-800/60">
             {metadata.subtest}
           </span>
-          <span className="text-xs text-slate-500 font-medium">
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
             Bab {metadata.chapter_num}: {metadata.chapter_title}
           </span>
-          <span className="text-slate-300">•</span>
-          <span className="text-xs text-slate-500 font-medium">
+          <span className="text-slate-300 dark:text-slate-600">•</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
             Sub-bab {metadata.subchapter_num}
           </span>
         </div>
 
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-snug">
           {metadata.title}
         </h1>
 
         <div className="mt-3 flex flex-wrap items-center gap-2 sm:gap-3 text-xs">
-          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80 font-semibold">
-            <Target className="w-3.5 h-3.5 text-emerald-600" />
+          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-200/80 dark:border-emerald-800/60 font-semibold">
+            <Target className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
             {worked_examples.length} Variasi Soal Terverifikasi
           </span>
-          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-200/80 font-semibold">
-            <Zap className="w-3.5 h-3.5 text-indigo-600" />
+          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/70 text-indigo-800 dark:text-cyan-300 border border-indigo-200/80 dark:border-indigo-800/60 font-semibold">
+            <Zap className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
             20% Taktis • 80% Bedah Soal
           </span>
-          <span className="text-slate-400 text-[11px]">
+          <span className="text-slate-400 dark:text-slate-500 text-[11px]">
             Diperbarui: {metadata.updated_at}
           </span>
         </div>
 
         {/* Quick Jump: Katalog Variasi Soal */}
-        <div className="mt-5 pt-4 border-t border-slate-200/60">
+        <div className="mt-5 pt-4 border-t border-stone-200/60 dark:border-slate-800/60">
           <div className="flex items-center justify-between gap-2 mb-2.5">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-              <Compass className="w-3.5 h-3.5 text-indigo-600" /> Katalog Loncat Cepat Variasi Soal:
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+              <Compass className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" /> Katalog Loncat Cepat Variasi Soal:
             </span>
-            <span className="text-[11px] text-slate-400">Klik untuk langsung ke soal</span>
+            <span className="text-[11px] text-slate-400 dark:text-slate-500">Klik untuk langsung ke soal</span>
           </div>
 
           <div className="flex flex-wrap gap-1.5">
@@ -273,7 +273,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                 key={ex.example_id}
                 type="button"
                 onClick={() => scrollToVariation(ex.example_id)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-indigo-50 hover:text-indigo-900 hover:border-indigo-300 transition shadow-2xs active:scale-95 cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-800 border border-stone-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-indigo-50 dark:hover:bg-slate-700 hover:text-indigo-900 dark:hover:text-cyan-300 transition shadow-2xs active:scale-95 cursor-pointer"
               >
                 <span className="w-4 h-4 rounded-full bg-indigo-600 text-white flex items-center justify-center text-[10px] font-bold shrink-0">
                   {idx + 1}
@@ -290,7 +290,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
       {/* -------------------------------------------------------------
           BAGIAN 1 (20%): TACTICAL CHEATSHEET & ALGORITMA EKSEKUSI
           ------------------------------------------------------------- */}
-      <section className="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden">
+      <section className="bg-white dark:bg-[#0d1428] rounded-2xl border border-stone-200/90 dark:border-slate-800 shadow-xs overflow-hidden">
         <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 px-4 sm:px-6 py-4 text-white flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white shadow-xs">
@@ -311,8 +311,15 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
         </div>
 
         <div className="p-4 sm:p-6 space-y-6">
+          {/* Callout: Karakteristik Medan Ujian */}
           {content.tactical_overview && (
-            <div className="p-3.5 rounded-xl bg-indigo-50/70 border border-indigo-200/70 text-xs sm:text-sm text-indigo-950 leading-relaxed font-medium">
+            <div
+              style={{
+                borderLeft: '4px solid #6366f1',
+                backgroundColor: 'rgba(30, 41, 59, 0.7)',
+              }}
+              className="p-3.5 rounded-xl text-xs sm:text-sm text-slate-850 dark:text-slate-200 leading-relaxed font-medium"
+            >
               💡 <strong>Karakteristik Medan Ujian:</strong> {content.tactical_overview}
             </div>
           )}
@@ -332,12 +339,12 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
           {/* Distractor Traps & Quick Algorithm Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-2">
             {/* Distractor Traps Box */}
-            <div className="p-4 rounded-xl bg-rose-50/70 border border-rose-200/80">
-              <div className="flex items-center gap-2 mb-2 text-rose-900 font-bold text-xs sm:text-sm uppercase tracking-wide">
-                <ShieldAlert className="w-4 h-4 text-rose-600" />
+            <div className="p-4 rounded-xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-200/80 dark:border-rose-900/60">
+              <div className="flex items-center gap-2 mb-2 text-rose-900 dark:text-rose-300 font-bold text-xs sm:text-sm uppercase tracking-wide">
+                <ShieldAlert className="w-4 h-4 text-rose-600 dark:text-rose-400" />
                 <span>Pola Jebakan Opsi Pengecoh Khas UTBK</span>
               </div>
-              <ul className="space-y-2 text-xs sm:text-[13px] text-rose-950">
+              <ul className="space-y-2 text-xs sm:text-[13px] text-rose-950 dark:text-rose-100">
                 {content.distractor_traps.map((trap, idx) => (
                   <li key={idx} className="flex items-start gap-2 leading-relaxed">
                     <span className="text-rose-500 font-black shrink-0">✕</span>
@@ -349,12 +356,12 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
 
             {/* Quick Execution Algorithm */}
             {content.quick_execution_algorithm && content.quick_execution_algorithm.length > 0 && (
-              <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/80">
-                <div className="flex items-center gap-2 mb-2 text-emerald-900 font-bold text-xs sm:text-sm uppercase tracking-wide">
-                  <Flame className="w-4 h-4 text-emerald-600" />
+              <div className="p-4 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-200/80 dark:border-emerald-900/60">
+                <div className="flex items-center gap-2 mb-2 text-emerald-900 dark:text-emerald-300 font-bold text-xs sm:text-sm uppercase tracking-wide">
+                  <Flame className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                   <span>Algoritma Eksekusi di Meja Ujian</span>
                 </div>
-                <ol className="space-y-2 text-xs sm:text-[13px] text-emerald-950">
+                <ol className="space-y-2 text-xs sm:text-[13px] text-emerald-950 dark:text-emerald-100">
                   {content.quick_execution_algorithm.map((step, idx) => (
                     <li key={idx} className="flex items-start gap-2 leading-relaxed">
                       <span className="w-4 h-4 rounded-full bg-emerald-600 text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
@@ -374,21 +381,21 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
           BAGIAN 2 (80%): KATALOG BEDAH VARIASI SOAL ASLI UTBK
           ------------------------------------------------------------- */}
       <section className="space-y-6">
-        <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div className="flex items-center justify-between border-b border-stone-200 dark:border-slate-800 pb-3">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold">
               <Target className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h2 className="text-lg sm:text-xl font-bold text-slate-900">
+              <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-slate-100">
                 Katalog Bedah Variasi Soal Asli UTBK (80%)
               </h2>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 Selesaikan variasi soal untuk menguasai seluruh kemungkinan tipe soal yang diujikan
               </p>
             </div>
           </div>
-          <span className="text-xs font-semibold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-md border border-indigo-200/60">
+          <span className="text-xs font-semibold text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-slate-800 px-2.5 py-1 rounded-md border border-indigo-200/60 dark:border-slate-700">
             {worked_examples.length} Variasi Soal
           </span>
         </div>
@@ -405,15 +412,15 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
               <div
                 key={example.example_id}
                 id={example.example_id}
-                className="bg-white border border-slate-200 rounded-2xl shadow-xs overflow-hidden transition hover:border-slate-300 scroll-mt-20"
+                className="bg-white dark:bg-[#0d1428] border border-stone-200 dark:border-slate-800 rounded-2xl shadow-xs overflow-hidden transition hover:border-indigo-300 dark:hover:border-cyan-500/40 scroll-mt-20"
               >
                 {/* Example Card Header */}
-                <div className="px-4 sm:px-6 py-3.5 bg-slate-50 border-b border-slate-200/80 flex flex-wrap items-center justify-between gap-2">
+                <div className="px-4 sm:px-6 py-3.5 bg-stone-50 dark:bg-slate-800/60 border-b border-stone-200/80 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
                     <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-600 text-white">
                       Variasi {index + 1}
                     </span>
-                    <span className="text-xs font-bold text-slate-800">
+                    <span className="text-xs font-bold text-slate-800 dark:text-slate-200">
                       {example.variation_name}
                     </span>
                   </div>
@@ -422,15 +429,15 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                     <span
                       className={`px-2 py-0.5 rounded font-semibold capitalize ${
                         example.difficulty === 'easy'
-                          ? 'bg-emerald-100 text-emerald-800'
+                          ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300'
                           : example.difficulty === 'medium'
-                          ? 'bg-amber-100 text-amber-800'
-                          : 'bg-rose-100 text-rose-800'
+                          ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
+                          : 'bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300'
                       }`}
                     >
                       {example.difficulty}
                     </span>
-                    <span className="px-2 py-0.5 rounded font-medium bg-slate-200 text-slate-700">
+                    <span className="px-2 py-0.5 rounded font-medium bg-stone-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
                       {example.question_type}
                     </span>
                   </div>
@@ -448,10 +455,10 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                             <button
                               type="button"
                               onClick={() => toggleContext(example.example_id)}
-                              className="w-full flex items-center justify-between px-3 py-2 text-xs font-medium text-slate-700 bg-slate-100 rounded-lg hover:bg-slate-200 transition cursor-pointer"
+                              className="w-full flex items-center justify-between px-3 py-2 text-xs font-medium text-slate-700 dark:text-slate-300 bg-stone-100 dark:bg-slate-800 rounded-lg hover:bg-stone-200 dark:hover:bg-slate-750 transition cursor-pointer"
                             >
                               <span className="flex items-center gap-1.5 font-semibold">
-                                <BookOpen className="w-3.5 h-3.5 text-indigo-600" />
+                                <BookOpen className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
                                 {isContextExpanded
                                   ? 'Sembunyikan Teks Bacaan'
                                   : 'Buka Teks Bacaan / Wacana Lengkap'}
@@ -468,10 +475,10 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                           <div
                             className={`${
                               isContextExpanded ? 'block' : 'hidden lg:block'
-                            } p-4 rounded-xl bg-slate-50 border border-slate-200 text-sm leading-relaxed text-slate-800 max-h-80 overflow-y-auto mb-4`}
+                            } p-4 rounded-xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 text-sm leading-relaxed text-slate-800 dark:text-slate-200 max-h-80 overflow-y-auto mb-4`}
                           >
-                            <div className="text-xs uppercase font-bold text-slate-500 tracking-wider mb-2 flex items-center gap-1">
-                              <BookOpen className="w-3.5 h-3.5 text-indigo-600" />
+                            <div className="text-xs uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider mb-2 flex items-center gap-1">
+                              <BookOpen className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
                               <span>Stimulus / Teks Wacana Soal:</span>
                             </div>
                             <ReactMarkdown
@@ -484,7 +491,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                           </div>
                         </div>
                       ) : (
-                        <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-sm leading-relaxed text-slate-800 mb-4">
+                        <div className="p-3.5 rounded-xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 text-sm leading-relaxed text-slate-800 dark:text-slate-200 mb-4">
                           <ReactMarkdown
                             remarkPlugins={[remarkMath, remarkGfm]}
                             rehypePlugins={[rehypeKatex]}
@@ -499,7 +506,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
 
                   {/* SVG Illustration if present */}
                   {example.svg_illustration && (
-                    <div className="w-full max-w-md mx-auto my-3 p-2 bg-slate-50 border border-slate-200 rounded-lg flex justify-center overflow-x-auto">
+                    <div className="w-full max-w-md mx-auto my-3 p-2 bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 rounded-lg flex justify-center overflow-x-auto">
                       <div
                         dangerouslySetInnerHTML={{
                           __html: example.svg_illustration.svg_code,
@@ -509,7 +516,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                   )}
 
                   {/* Question Stem */}
-                  <div className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
+                  <div className="text-sm sm:text-base font-semibold text-slate-900 dark:text-slate-100 leading-snug">
                     <ReactMarkdown
                       remarkPlugins={[remarkMath, remarkGfm]}
                       rehypePlugins={[rehypeKatex]}
@@ -519,79 +526,6 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                     </ReactMarkdown>
                   </div>
 
-                  {/* Statements list (e.g. (1) (2) (3) (4) or Data Sufficiency (1) & (2)) */}
-                  {example.statements && example.statements.length > 0 && (
-                    <div className="space-y-1.5 p-3 rounded-lg bg-slate-50 border border-slate-200 text-xs sm:text-sm font-medium text-slate-800 my-2">
-                      {example.statements.map((stmt, sIdx) => (
-                        <div key={sIdx} className="leading-relaxed">
-                          <ReactMarkdown
-                            remarkPlugins={[remarkMath, remarkGfm]}
-                            rehypePlugins={[rehypeKatex]}
-                            components={markdownComponents}
-                          >
-                            {stmt}
-                          </ReactMarkdown>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* Complex Table (UTBK Pusmendik Matrix Archetype) */}
-                  {example.complex_table && (
-                    <div className="overflow-x-auto my-3 border border-slate-200 rounded-xl shadow-xs">
-                      <table className="w-full text-left text-xs sm:text-sm border-collapse">
-                        <thead className="bg-slate-100 text-slate-700 font-bold uppercase text-[11px] tracking-wider border-b border-slate-200">
-                          <tr>
-                            {example.complex_table.headers.map((h, hIdx) => (
-                              <th
-                                key={hIdx}
-                                className={`p-3 ${
-                                  hIdx === 0
-                                    ? 'w-auto'
-                                    : 'w-24 sm:w-32 text-center border-l border-slate-200'
-                                }`}
-                              >
-                                {h}
-                              </th>
-                            ))}
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-slate-200 bg-white">
-                          {example.complex_table.rows.map((row, rIdx) => (
-                            <tr key={rIdx} className="hover:bg-slate-50/70 transition-colors">
-                              <td className="p-3 text-slate-800 leading-relaxed font-normal">
-                                {row.statement}
-                              </td>
-                              {example.complex_table!.headers.slice(1).map((colName, cIdx) => {
-                                const isCellCorrect = row.correct_choice === colName;
-                                return (
-                                  <td
-                                    key={cIdx}
-                                    className="p-3 text-center border-l border-slate-200"
-                                  >
-                                    {hasAnswered ? (
-                                      <span
-                                        className={`inline-flex items-center justify-center px-2 py-1 rounded text-xs font-bold ${
-                                          isCellCorrect
-                                            ? 'bg-emerald-100 text-emerald-800 ring-1 ring-emerald-300'
-                                            : 'bg-slate-100 text-slate-400'
-                                        }`}
-                                      >
-                                        {isCellCorrect ? '✓ ' + colName : '—'}
-                                      </span>
-                                    ) : (
-                                      <span className="inline-block w-4 h-4 rounded-full border-2 border-slate-300"></span>
-                                    )}
-                                  </td>
-                                );
-                              })}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
-
                   {/* Interactive Options A-E */}
                   <div className="space-y-2.5 pt-1">
                     {example.options.map((option) => {
@@ -599,17 +533,17 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                       const isCorrect = option.key === example.correct_answer;
 
                       let btnStyle =
-                        'border-slate-200 hover:border-indigo-300 hover:bg-slate-50 text-slate-800';
+                        'border-stone-200 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-cyan-500/50 hover:bg-stone-50 dark:hover:bg-slate-800/80 text-slate-800 dark:text-slate-200';
 
                       if (hasAnswered) {
                         if (isCorrect) {
                           btnStyle =
-                            'border-emerald-500 bg-emerald-50 text-emerald-950 font-semibold ring-1 ring-emerald-500';
+                            'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/70 text-emerald-950 dark:text-emerald-100 font-semibold ring-1 ring-emerald-500';
                         } else if (isSelected && !isCorrect) {
                           btnStyle =
-                            'border-rose-400 bg-rose-50 text-rose-950 font-semibold ring-1 ring-rose-400';
+                            'border-rose-400 bg-rose-50 dark:bg-rose-950/70 text-rose-950 dark:text-rose-100 font-semibold ring-1 ring-rose-400';
                         } else {
-                          btnStyle = 'border-slate-200 bg-slate-50/50 text-slate-400 opacity-60';
+                          btnStyle = 'border-stone-200 dark:border-slate-800 bg-stone-50/50 dark:bg-slate-900/50 text-slate-400 dark:text-slate-500 opacity-60';
                         }
                       }
 
@@ -626,7 +560,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                                 ? 'bg-emerald-600 text-white'
                                 : hasAnswered && isSelected
                                 ? 'bg-rose-600 text-white'
-                                : 'bg-slate-100 text-slate-700'
+                                : 'bg-stone-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
                             }`}
                           >
                             {option.key}
@@ -647,13 +581,13 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
 
                   {/* Instant Feedback & Solution Panel */}
                   {hasAnswered && (
-                    <div className="mt-5 space-y-4 pt-4 border-t border-slate-200">
+                    <div className="mt-5 space-y-4 pt-4 border-t border-stone-200 dark:border-slate-800">
                       {/* Answer Feedback Banner */}
                       <div
                         className={`p-3.5 rounded-xl flex items-center justify-between ${
                           selectedKey === example.correct_answer
-                            ? 'bg-emerald-50 border border-emerald-200 text-emerald-900'
-                            : 'bg-rose-50 border border-rose-200 text-rose-900'
+                            ? 'bg-emerald-50 dark:bg-emerald-950/70 border border-emerald-200 dark:border-emerald-800 text-emerald-900 dark:text-emerald-100'
+                            : 'bg-rose-50 dark:bg-rose-950/70 border border-rose-200 dark:border-rose-800 text-rose-900 dark:text-rose-100'
                         }`}
                       >
                         <div className="flex items-center gap-2 font-bold text-xs sm:text-sm">
@@ -675,7 +609,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                         <button
                           type="button"
                           onClick={() => handleResetExample(example.example_id)}
-                          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-md bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition active:scale-95 cursor-pointer"
+                          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-md bg-white dark:bg-slate-800 border border-stone-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-stone-100 dark:hover:bg-slate-700 transition active:scale-95 cursor-pointer"
                         >
                           <RotateCcw className="w-3.5 h-3.5" />
                           <span>Coba Lagi</span>
@@ -685,9 +619,9 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                       {/* Solution Tabs / Blocks */}
                       <div className="space-y-3">
                         {/* 1. Algoritma Eksekusi Konseptual */}
-                        <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 leading-relaxed">
-                          <div className="flex items-center gap-2 mb-2 font-bold text-indigo-900 text-xs sm:text-sm uppercase tracking-wide">
-                            <Lightbulb className="w-4 h-4 text-indigo-600" />
+                        <div className="p-4 rounded-xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
+                          <div className="flex items-center gap-2 mb-2 font-bold text-indigo-900 dark:text-cyan-300 text-xs sm:text-sm uppercase tracking-wide">
+                            <Lightbulb className="w-4 h-4 text-indigo-600 dark:text-cyan-400" />
                             <span>Algoritma Eksekusi Konseptual:</span>
                           </div>
                           <ReactMarkdown
@@ -700,9 +634,9 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                         </div>
 
                         {/* 2. Trik Kilat 30 Detik UTBK */}
-                        <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200 text-xs sm:text-sm text-amber-950 leading-relaxed">
-                          <div className="flex items-center gap-2 mb-2 font-bold text-amber-900 text-xs sm:text-sm uppercase tracking-wide">
-                            <Zap className="w-4 h-4 text-amber-600" />
+                        <div className="p-4 rounded-xl bg-amber-50/70 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 text-xs sm:text-sm text-amber-950 dark:text-amber-200 leading-relaxed">
+                          <div className="flex items-center gap-2 mb-2 font-bold text-amber-900 dark:text-amber-300 text-xs sm:text-sm uppercase tracking-wide">
+                            <Zap className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                             <span>Trik Kilat 30 Detik UTBK:</span>
                           </div>
                           <ReactMarkdown
@@ -714,10 +648,10 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                           </ReactMarkdown>
                         </div>
 
-                        {/* 3. Bedah Opsi Pengecoh (Why Others Are Wrong) */}
-                        <div className="p-4 rounded-xl bg-rose-50/70 border border-rose-200 text-xs sm:text-sm text-rose-950 leading-relaxed">
-                          <div className="flex items-center gap-2 mb-2 font-bold text-rose-900 text-xs sm:text-sm uppercase tracking-wide">
-                            <ShieldAlert className="w-4 h-4 text-rose-600" />
+                        {/* 3. Bedah Opsi Pengecoh */}
+                        <div className="p-4 rounded-xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 text-xs sm:text-sm text-rose-950 dark:text-rose-200 leading-relaxed">
+                          <div className="flex items-center gap-2 mb-2 font-bold text-rose-900 dark:text-rose-300 text-xs sm:text-sm uppercase tracking-wide">
+                            <ShieldAlert className="w-4 h-4 text-rose-600 dark:text-rose-400" />
                             <span>Bedah Opsi Pengecoh (Mengapa Opsi Lain Salah?):</span>
                           </div>
                           <ReactMarkdown
@@ -745,17 +679,17 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
           onClick={() => setZoomSvg(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-3xl w-full p-4 sm:p-6 relative shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+            className="bg-white dark:bg-slate-900 rounded-2xl max-w-3xl w-full p-4 sm:p-6 relative shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border border-stone-200 dark:border-slate-800"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between pb-3 mb-2 border-b border-slate-200">
-              <h3 className="font-bold text-slate-900 text-sm sm:text-base">
+            <div className="flex items-center justify-between pb-3 mb-2 border-b border-stone-200 dark:border-slate-800">
+              <h3 className="font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base">
                 {zoomSvg.title}
               </h3>
               <button
                 type="button"
                 onClick={() => setZoomSvg(null)}
-                className="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 transition cursor-pointer"
+                className="p-1.5 rounded-lg text-slate-500 hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -767,7 +701,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
             />
 
             {zoomSvg.caption && (
-              <p className="pt-3 text-center text-xs sm:text-sm text-slate-600 border-t border-slate-200">
+              <p className="pt-3 text-center text-xs sm:text-sm text-slate-600 dark:text-slate-400 border-t border-stone-200 dark:border-slate-800">
                 {zoomSvg.caption}
               </p>
             )}

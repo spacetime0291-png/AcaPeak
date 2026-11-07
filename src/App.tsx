@@ -14,6 +14,7 @@ import { SubtestDetailView } from './components/subtest/SubtestDetailView';
 import { SmaSubjectDetailView } from './components/subtest/SmaSubjectDetailView';
 import { PdfMaterialReader } from './components/reader/PdfMaterialReader';
 import { ActiveDrillingView } from './components/drilling/ActiveDrillingView';
+import { CosmicNebulaGlow, CosmicStarsBg } from './components/decorations/CosmicDecorations';
 
 interface AppRouteState {
   view: 'home' | 'subtest' | 'materi' | 'drilling' | 'sma-subject';
@@ -271,14 +272,37 @@ export default function App() {
     handleStartDrilling([subchapterId], 10, 15);
   };
 
+  const isHomeView = route.view === 'home';
+  const isDark = theme === 'dark';
+
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white font-sans relative overflow-x-hidden transition-colors duration-250">
-      {/* Decorative Ambient Background Gradients */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute -top-40 -left-40 w-96 sm:w-[540px] h-96 sm:h-[540px] rounded-full bg-gradient-to-br from-blue-400/25 via-indigo-500/15 to-transparent dark:from-blue-600/15 dark:via-indigo-800/10 dark:to-transparent blur-3xl" />
-        <div className="absolute top-1/3 -right-40 w-96 sm:w-[500px] h-96 sm:h-[500px] rounded-full bg-gradient-to-bl from-violet-400/25 via-purple-500/15 to-transparent dark:from-purple-600/15 dark:via-violet-800/10 dark:to-transparent blur-3xl" />
-        <div className="absolute -bottom-40 left-1/4 w-96 sm:w-[520px] h-96 sm:h-[520px] rounded-full bg-gradient-to-tr from-cyan-400/20 via-emerald-400/15 to-transparent dark:from-cyan-600/10 dark:via-emerald-700/10 dark:to-transparent blur-3xl" />
-      </div>
+    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-hidden theme-transition">
+      {/* 
+        Adaptive Visual Density Ambient Backgrounds:
+        1. Home Dashboard: Rich immersive visuals (Cosmic Nebula & Constellations for Dark, Soft Pastels for Light)
+        2. Focus Views: Distraction-free, clean background without particles crossing reading text
+      */}
+      {isHomeView ? (
+        isDark ? (
+          <>
+            <CosmicNebulaGlow />
+            <CosmicStarsBg />
+          </>
+        ) : (
+          <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+            <div className="absolute -top-40 -left-40 w-[540px] h-[540px] rounded-full bg-gradient-to-br from-rose-200/20 via-pink-100/15 to-transparent blur-3xl" />
+            <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-gradient-to-bl from-teal-200/20 via-emerald-100/15 to-transparent blur-3xl" />
+            <div className="absolute -bottom-40 left-1/4 w-[520px] h-[520px] rounded-full bg-gradient-to-tr from-sky-200/20 via-indigo-100/15 to-transparent blur-3xl" />
+          </div>
+        )
+      ) : (
+        // Distraction-free focus background (clean subtle gradient without particles)
+        isDark ? (
+          <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#070913] via-[#090e1f] to-[#0d1326]" />
+        ) : (
+          <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#fdfbf7] via-[#f9fbf9] to-[#f4f9f5]" />
+        )
+      )}
 
       <div className="relative z-10 flex flex-col min-h-screen">
         {/* 1. TOP HEADER & MODE SWITCHER (HANYA MUNCUL DI BERANDA '/') */}
@@ -405,8 +429,8 @@ export default function App() {
           {route.view === 'materi' && (
             <div>
               {isMaterialLoading || !activeMaterial ? (
-                <div className="py-24 text-center bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto">
-                  <div className="inline-block w-9 h-9 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mb-3"></div>
+                <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto">
+                  <div className="inline-block w-9 h-9 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3"></div>
                   <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold">
                     Menyiapkan naskah materi & rumus...
                   </p>
