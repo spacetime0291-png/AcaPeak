@@ -27,6 +27,13 @@ if (fs.existsSync('dist')) {
   }
 }
 
+// Copy sw.js to root if exists in public
+const publicSw = path.resolve('public/sw.js');
+const rootSw = path.resolve('sw.js');
+if (fs.existsSync(publicSw)) {
+  fs.copyFileSync(publicSw, rootSw);
+}
+
 // Copy public/content to root content if exists
 const publicContent = path.resolve('public/content');
 const rootContent = path.resolve('content');
