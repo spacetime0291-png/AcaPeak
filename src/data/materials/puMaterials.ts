@@ -19,57 +19,59 @@ export const MATERIAL_PU_01_01: Material = {
   },
   content: {
     tactical_overview:
-      'Generalisasi adalah menarik kesimpulan umum dari sebagian contoh atau data. Kunci UTBK: kesimpulan tidak pernah bernilai pasti 100% (hindari kata "semua" atau "pasti"). Selalu pilih kalimat yang terukur (sebagian besar, cenderung) dan jangan pernah melompat ke luar kelompok atau wilayah yang dibahas di teks.',
+      'Generalisasi adalah metode penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data, contoh, atau fakta khusus yang telah diamati. Kunci utama dalam menyelesaikan soal generalisasi UTBK adalah mengingat bahwa kesimpulan induktif tidak pernah bernilai pasti seratus persen. Oleh karena itu, hindari pilihan jawaban yang memuat kata mutlak seperti "semua" atau "pasti", dan selalu utamakan kalimat simpulan yang terukur serta patuh pada batasan subjek atau wilayah yang dibahas di dalam wacana.',
     exam_blueprint_markdown: `# 1. Prinsip Dasar
 
-Generalisasi adalah cara mengambil kesimpulan umum yang berlaku luas berdasarkan sebagian contoh, fakta, atau data yang diamati.
+Generalisasi merupakan cara berpikir induktif untuk mengambil kesimpulan yang berlaku secara umum berdasarkan pengamatan terhadap sebagian contoh, fakta, atau data khusus. Di dalam ujian UTBK SNBT, soal tipe ini biasanya menyajikan teks wacana yang memuat laporan penelitian, hasil survei masyarakat, atau tren angka statistik dari suatu pengamatan berkala.
 
-Tiga aturan main penting di UTBK:
-1. **Tidak Pernah Pasti 100% (Jangan Pukul Rata)**  
-   Karena hanya meneliti sebagian data, hasilnya tidak bisa dipukul rata. Kunci jawaban yang benar di UTBK hampir selalu memakai kata terukur seperti: *"sebagian besar"*, *"cenderung"*, *"kemungkinan besar"*, atau *"pada umumnya"*.
-2. **Jangan Melompat Keluar dari Batasan Data**  
-   Kalau teks hanya meneliti *pengguna motor di Jakarta*, kesimpulannya hanya berlaku untuk warga Jakarta. Pilihan yang melompat ke *seluruh Indonesia* otomatis salah.
-3. **Ada Pengecualian? Kata "Semua" Otomatis Gugur**  
-   Kalau ada satu saja data yang berbeda (misalnya dari 500 orang ada 40 orang yang tidak hemat), maka opsi yang menggunakan kata mutlak seperti *"semua"*, *"pasti"*, atau *"selalu"* langsung gugur.
+Agar Anda dapat menjawab soal generalisasi dengan tepat, terdapat tiga kaidah pokok yang wajib Anda pahami:
+1. **Kesimpulan Tidak Pernah Bersifat Pasti 100% (Hindari Sikap Pukul Rata)**  
+   Karena penelitian induktif hanya mengamati sebagian sampel dan bukan seluruh populasi yang ada di dunia, kesimpulan yang ditarik tidak boleh bernilai mutlak. Kunci jawaban yang benar di UTBK hampir selalu menggunakan kata-kata yang menyatakan tingkat kemungkinan atau frekuensi yang terukur, seperti *"sebagian besar"*, *"cenderung"*, *"kemungkinan besar"*, atau *"pada umumnya"*. Hindarilah pilihan jawaban yang memukul rata seluruh keadaan.
+2. **Kesimpulan Wajib Terikat pada Batasan Ruang Lingkup Data**  
+   Ruang lingkup kesimpulan harus sepenuhnya setia pada kelompok subjek atau wilayah yang benar-benar diteliti di dalam wacana. Apabila teks wacana hanya mengamati *pengguna sepeda motor di wilayah Jakarta*, maka simpulan hanya berlaku untuk kelompok tersebut di Jakarta. Pilihan jawaban yang memperluas simpulan hingga ke tingkat *seluruh masyarakat Indonesia* merupakan kesalahan logika karena melompat keluar dari batasan data yang ada.
+3. **Adanya Pengecualian Menggugurkan Kata Bernada Mutlak**  
+   Apabila data di dalam wacana memperlihatkan adanya sebagian objek yang tidak mengalami hasil serupa, maka kesimpulan bernada mutlak otomatis salah. Sebagai contoh, jika dari 500 orang responden terdapat 40 orang yang tidak merasakan penghematan biaya, maka pilihan jawaban yang memuat kata mutlak seperti *"semua"*, *"pasti"*, atau *"selalu"* sudah pasti keliru secara logika.
 
 ---
 
 # 2. Jebakan Pengecoh Khas UTBK
 
-1. **Jebakan Kata Mutlak (Pukul Rata)**  
-   Pilihan jawaban memakai kata *semua, seluruh, selalu, pasti,* atau *satu-satunya*. Jika teks memuat persentase kurang dari 100% atau ada pengecualian, langsung coret opsi ini.
-2. **Jebakan Melompat Keluar Topik (Melebar)**  
-   Data wacana hanya meneliti satu kota atau satu kelompok kecil, tetapi pilihan jawaban menyimpulkan untuk seluruh masyarakat luas.
-3. **Jebakan Mengarang Nasib Lawan**  
-   Menyimpulkan nasib kebalikan yang tidak diteliti. Contoh: teks menyebut *pengguna motor listrik hemat*, opsi jawaban malah mengarang *pengguna motor bensin pasti rugi besar*. Jangan pilih hal yang tidak dibahas.
+Pembuat soal UTBK sengaja merancang pilihan jawaban yang sekilas tampak meyakinkan, padahal mengandung cacat logika induktif. Tiga jebakan yang paling sering dijumpai meliputi:
+1. **Jebakan Kata Mutlak yang Berlebihan (*Overgeneralization*)**  
+   Pilihan jawaban menggunakan kata-kata bernilai ekstrem seperti *semua, seluruh, selalu, pasti,* atau *satu-satunya*. Jebakan ini bertujuan menguji apakah siswa teliti membaca data. Apabila teks wacana masih menyisakan persentase pengecualian atau datanya belum mencapai 100%, opsi yang memuat kata mutlak seperti ini harus langsung Anda eliminasi.
+2. **Jebakan Melompat Keluar dari Batasan Data (*Out of Scope*)**  
+   Pilihan jawaban memperluas ruang lingkup wilayah, subjek, atau objek penelitian secara sepihak. Sebagai contoh, teks wacana hanya meneliti satu kelompok di satu kota tertentu, tetapi pilihan jawaban menyimpulkan bahwa hal tersebut berlaku untuk seluruh masyarakat di berbagai wilayah lain.
+3. **Jebakan Menyimpulkan Kondisi Lawan yang Tidak Diteliti**  
+   Pilihan jawaban membuat kesimpulan spekulatif mengenai kondisi kebalikan yang sama sekali tidak dibahas di dalam wacana. Sebagai contoh, saat teks memaparkan bahwa pengguna motor listrik menikmati penghematan biaya, pilihan pengecoh justru menyatakan bahwa pengguna motor bensin pasti mengalami kerugian besar. Anda tidak boleh memilih kesimpulan yang faktanya tidak tertulis di dalam wacana.
 
 ---
 
 # 3. Trik Cepat (15 Detik)
 
-1. **Kunci Siapa & Di Mana:**  
-   Lihat subjek dan lokasi penelitian di wacana. Singkirkan pilihan yang menyebut tempat atau kelompok lain.
-2. **Coret Kata Mutlak:**  
-   Langsung eliminasi opsi dengan kata: *pasti, selalu, semua, seluruh, mutlak, satu-satunya*.
-3. **Pilih Kata Terukur:**  
-   Utamakan opsi yang memakai kata ramah kemungkinan: *sebagian besar, cenderung, berpotensi, kemungkinan besar*.
-4. **Cek Fakta Data:**  
-   Pastikan kesimpulan sejalan dengan angka atau arah tren di teks (tidak melebih-lebihkan).
+Saat Anda menghadapi soal generalisasi di UTBK dengan waktu pengerjaan yang terbatas, gunakan urutan langkah taktis berikut untuk menemukan jawaban yang benar:
+1. **Kunci Subjek dan Batasan Wilayah Penelitian**  
+   Langkah pertama adalah mencermati siapa kelompok subjek yang diteliti dan di mana pengamatan tersebut dilakukan. Singkirkan segera semua pilihan jawaban yang memperluas cakupan ke wilayah atau kelompok lain di luar konteks wacana.
+2. **Eliminasi Pilihan yang Mengandung Kata Mutlak**  
+   Periksa pilihan ganda yang tersedia dan langsung coret opsi yang memuat kata-kata bernilai ekstrem, seperti *pasti, selalu, semua, seluruh, mutlak,* atau *satu-satunya cara*.
+3. **Pilih Jawaban yang Menggunakan Kata Terukur**  
+   Prioritaskan pilihan jawaban yang menggunakan kata-kata probabilitas yang ramah dan bijak, seperti *sebagian besar, cenderung, berpotensi,* atau *kemungkinan besar*. Kalimat yang terukur mencerminkan penalaran induktif yang sehat.
+4. **Cocokkan dengan Arah dan Proporsi Fakta Teks**  
+   Pastikan pernyataan pada pilihan yang tersisa benar-benar sejalan dengan data angka atau arah tren kenaikan di dalam wacana tanpa melebih-lebihkan fakta yang ada.
 
 ---
 
 # 4. Kesimpulan
 
-- **Inti Materi:** Generalisasi menyimpulkan hal umum dari sebagian data yang diamati.
-- **Sifat Jawaban:** Tidak pernah pasti 100%; selalu pilih kalimat yang terukur (*sebagian besar, cenderung*).
-- **Batasan Ketat:** Kesimpulan wajib setia pada wilayah dan kelompok yang ada di teks wacana.
-- **Waspada Pengecualian:** Jika ada pengecualian data, kata *"semua"* atau *"pasti"* otomatis salah.
+- **Hakikat Materi:** Generalisasi adalah proses penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data atau contoh khusus yang terbatas.
+- **Taraf Kepastian:** Kesimpulan hasil generalisasi tidak pernah bersifat pasti seratus persen, melainkan selalu berada pada taraf kemungkinan yang terukur.
+- **Kepatuhan pada Data:** Ruang lingkup simpulan wajib terikat secara ketat pada batasan subjek, populasi, dan wilayah yang benar-benar tercantum di dalam teks wacana.
+- **Strategi Menjawab:** Segera eliminasi pilihan yang menggunakan kata-kata mutlak atau melompat keluar batasan konteks, lalu pilih kalimat simpulan yang terukur dan sejalan dengan fakta data.
 
 ---
 
 # 5. Bedah Soal dan Variasi UTBK
 
-Berikut adalah bedah tiga variasi soal Generalisasi yang sering keluar di UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda, dan pembahasan analisisnya:
+Berikut adalah bedah tiga variasi soal Generalisasi yang paling sering keluar di UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:
 
 ### Variasi 1: Simpulan Proporsi Sampel (Tipe Mayoritas)
 
@@ -88,13 +90,13 @@ Berikut adalah bedah tiga variasi soal Generalisasi yang sering keluar di UTBK, 
 **Kunci Jawaban: C**
 
 **Bedah Logika & Pembahasan:**
-- **Analisis Data:** Dari 500 orang, sebanyak 460 orang (92%) merasa hemat, sedangkan 40 orang (8%) merasa biayanya sama saja. Karena 92% adalah mayoritas (namun bukan 100%), sebutan yang paling tepat adalah *"sebagian besar"*.
+- **Analisis Fakta Data:** Dari total 500 orang responden yang disurvei, sebanyak 460 orang atau 92% merasakan penghematan biaya bulanan secara nyata, sedangkan 40 orang lainnya atau 8% merasa biaya operasional mereka sama saja. Karena persentase 92% merupakan proporsi mayoritas yang sangat dominan namun belum mencapai 100%, maka penyebutan kuantor yang tepat secara kaidah logika induktif adalah *"sebagian besar"*.
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Kata *"Semua"* salah karena ada 40 responden yang tidak merasakan hemat (tidak boleh pukul rata).
-  - **B Salah:** Kata *"selalu"* dan *"seluruh masyarakat"* membuat klaim berlebihan terhadap masyarakat umum yang tidak diteliti.
-  - **D Salah:** Memberi vonis mutlak (*pasti tidak cocok*) yang tidak dinyatakan di wacana.
-  - **E Salah:** Melompat keluar wilayah (*masyarakat luar Jakarta*), padahal penelitian hanya di Jakarta.
-- **Trik Cepat (15 Detik):** Karena ada 40 orang yang tidak hemat, coret opsi berkata mutlak (*semua, selalu, pasti* di A, B, D). Coret E karena keluar wilayah Jakarta. Tersisa **C**.
+  - **Pilihan A Salah:** Penggunaan kata *"Semua"* keliru karena terdapat 40 orang responden yang menyatakan tidak merasakan penghematan biaya, sehingga kesimpulan tidak boleh dipukul rata.
+  - **Pilihan B Salah:** Penggunaan kata *"selalu"* dan perluasan cakupan ke *"seluruh masyarakat"* membuat pernyataan ini berlebihan terhadap populasi umum yang tidak diteliti.
+  - **Pilihan D Salah:** Memberikan vonis kepastian yang mutlak dengan kata *"pasti tidak cocok"*, padahal wacana hanya mencatat alasan jarak tempuh harian mereka yang pendek tanpa menyatakan ketidakcocokan penggunaan motor listrik.
+  - **Pilihan E Salah:** Melompat keluar dari batasan wilayah penelitian dengan menyebutkan *"masyarakat luar Jakarta"*, padahal survei tersebut hanya dilakukan terhadap responden di wilayah Jakarta.
+- **Penerapan Trik Cepat (15 Detik):** Karena wacana secara tegas menyebutkan adanya 40 responden yang tidak merasakan penghematan, Anda dapat langsung mencoret opsi yang memuat kata mutlak seperti *semua, selalu,* dan *pasti* pada pilihan A, B, dan D. Selanjutnya, coret pilihan E karena memperluas simpulan ke luar wilayah Jakarta. Dengan metode eliminasi ini, pilihan yang tersisa dan paling tepat adalah pilihan **C**.
 
 ---
 
@@ -115,13 +117,13 @@ Berikut adalah bedah tiga variasi soal Generalisasi yang sering keluar di UTBK, 
 **Kunci Jawaban: B**
 
 **Bedah Logika & Pembahasan:**
-- **Analisis Data:** Penjualan kopi arabika naik konsisten setiap kuartal (12%, 15%, 18%) setelah memakai teknik fermentasi tertutup. Kenaikan berturut-turut ini menunjukkan arah yang baik (*cenderung berdampak positif*).
+- **Analisis Fakta Data:** Angka penjualan komoditas kopi arabika memperlihatkan peningkatan yang konsisten pada setiap kuartal pengamatan, yaitu berturut-turut sebesar 12%, 15%, dan 18% setelah para petani mengadopsi teknik fermentasi tertutup. Rangkaian peningkatan yang berulang pada beberapa periode dan wilayah ini menunjukkan adanya arah kecenderungan yang positif, sehingga simpulan yang paling tepat dan aman adalah bahwa teknik tersebut *"cenderung berdampak positif"*.
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Kata *"satu-satunya cara"* berlebihan; teks tidak pernah menyebut tidak ada cara lain.
-  - **C Salah:** Mengganti jenis komoditas menjadi *"kopi robusta"*, padahal wacana hanya menguji kopi arabika.
-  - **D Salah:** Meramal angka masa depan secara mutlak (*pasti 21%*) padahal datanya belum ada.
-  - **E Salah:** Menuduh petani lain rugi besar padahal hal itu tidak dibahas sama sekali.
-- **Trik Cepat (15 Detik):** Cari kata terukur yang bijak (*cenderung berdampak positif*). Coret kata mutlak di A (*satu-satunya*) dan D (*pasti*). Coret C karena ganti jenis kopi. Jawaban langsung **B**.
+  - **Pilihan A Salah:** Frasa *"satu-satunya cara"* merupakan klaim mutlak yang berlebihan, sebab teks tidak pernah menyatakan bahwa tidak ada cara atau teknik lain untuk meningkatkan penjualan.
+  - **Pilihan C Salah:** Mengubah jenis objek komoditas menjadi *"kopi robusta"*, padahal seluruh pengamatan di dalam teks wacana hanya menguji komoditas kopi arabika.
+  - **Pilihan D Salah:** Meramalkan angka masa depan secara mutlak dengan kata *"pasti 21%"*, padahal data penjualan pada kuartal keempat belum terjadi dan tidak boleh dipastikan secara sepihak.
+  - **Pilihan E Salah:** Menyimpulkan nasib negatif bagi petani yang tidak menggunakan teknik tersebut secara spekulatif, padahal kondisi petani lain tidak pernah diteliti di dalam wacana.
+- **Penerapan Trik Cepat (15 Detik):** Carilah pilihan jawaban yang menggunakan kata terukur yang bijak seperti *"cenderung berdampak positif"*. Anda dapat langsung mengeliminasi opsi yang memuat kata mutlak pada pilihan A (*satu-satunya cara*) dan pilihan D (*pasti*). Selanjutnya, coret pilihan C karena mengganti jenis kopi. Dengan eliminasi cepat ini, jawaban yang benar adalah pilihan **B**.
 
 ---
 
@@ -142,13 +144,13 @@ Berikut adalah bedah tiga variasi soal Generalisasi yang sering keluar di UTBK, 
 **Kunci Jawaban: C**
 
 **Bedah Logika & Pembahasan:**
-- **Analisis Masalah:** Peneliti mengklaim hasilnya berlaku untuk *"seluruh usia dewasa"* (dari usia 18 sampai lanjut usia). Padahal yang diuji hanya 25 anak kuliahan satu fakultas yang umurnya sebaya (21-23 tahun). Jelas contoh ini terlalu sedikit dan terlalu seragam untuk mewakili semua orang dewasa.
+- **Analisis Kelemahan Logika:** Peneliti menarik simpulan yang sangat luas untuk *"seluruh kelompok usia dewasa"* yang mencakup rentang umur 18 tahun hingga usia lanjut. Namun kenyataannya, sampel yang diuji hanyalah 25 orang mahasiswa dari satu jurusan di kampus teknik dengan rentang usia yang sangat seragam yaitu sekitar 21 hingga 23 tahun. Sampel dengan jumlah yang sangat kecil dan homogen ini jelas tidak memiliki keterwakilan (*representativeness*) yang memadai untuk menggeneralisasi kondisi seluruh populasi usia dewasa.
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Membandingkan dengan cokelat susu tidak wajib karena fokus penelitian adalah cokelat hitam.
-  - **B Salah:** Waktu 2 minggu adalah waktu yang wajar dalam tes daya ingat.
-  - **D Salah:** Kenaikan skor 20% adalah peningkatan yang sudah cukup besar.
-  - **E Salah:** Peningkatan diukur dari perbandingan sebelum vs sesudah makan cokelat pada orang yang sama.
-- **Trik Cepat (15 Detik):** Bandingkan peserta uji (*hanya 25 mahasiswa*) dengan klaim kesimpulan (*seluruh usia dewasa*). Jurang perbedaannya sangat lebar. Kelemahan fatalnya adalah sampel tidak mewakili populasi. Jawaban: **C**.`,
+  - **Pilihan A Salah:** Membandingkan efek cokelat hitam dengan cokelat jenis lain bukan merupakan kelemahan metodologis yang mendasar, karena fokus penelitian tersebut memang hanya meneliti khasiat cokelat hitam.
+  - **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam pengujian fungsi daya ingat jangka pendek.
+  - **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% sudah merupakan kenaikan hasil tes yang cukup besar dan terukur secara nyata.
+  - **Pilihan E Salah:** Tingkat daya ingat awal tidak menggugurkan hasil penelitian, karena pengujian dilakukan dengan membandingkan skor sebelum dan sesudah intervensi pada individu yang sama.
+- **Penerapan Trik Cepat (15 Detik):** Bandingkan karakteristik sampel yang diuji (*hanya 25 orang mahasiswa sebaya*) dengan kesimpulan yang ditarik (*seluruh kelompok usia dewasa*). Kesenjangan yang sangat besar antara sampel yang sempit dengan kesimpulan yang terlalu luas menunjukkan cacat generalisasi terburu-buru (*hasty generalization*). Oleh karena itu, kelemahan utamanya adalah sampel tidak mewakili populasi, yang tepat dinyatakan pada pilihan **C**.`,
     visualizations_svg: [],
     distractor_traps: [
       'Hasty Generalization (Generalisasi Terburu-buru): Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.',
@@ -204,22 +206,20 @@ Berikut adalah bedah tiga variasi soal Generalisasi yang sering keluar di UTBK, 
         '💡 **Petunjuk Soal:** Cermati data teks: dari 500 orang, 460 orang hemat (mayoritas) dan 40 orang tidak hemat. Karena ada 40 orang yang tidak hemat, pilihan dengan kata mutlak seperti *"semua"* atau *"selalu"* otomatis salah. Perhatikan juga batasan wilayah penelitian!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
-- **Populasi sampel:** Pengguna motor listrik di Jakarta ($n = 500$).
-- **Proporsi sifat utama:** $\\frac{460}{500} = 92\\%$ mengalami penghematan biaya operasional signifikan, sedangkan $8\\%$ tidak.
-- Karena proporsi mencapai $92\\%$ (mayoritas, namun bukan $100\\%$ mutlak), kuantor yang valid adalah *"sebagian besar"* pada populasi target *"pengguna motor listrik di Jakarta"*.
+- **Populasi Sampel:** Pengamatan dilakukan terhadap pengguna sepeda motor listrik di Jakarta ($n = 500$).
+- **Proporsi Sifat Utama:** Sebanyak $\\frac{460}{500} = 92\\%$ responden mengalami penghematan biaya operasional secara signifikan, sedangkan $8\\%$ lainnya tidak merasakan penghematan.
+- **Penarikan Simpulan:** Karena proporsi mencapai $92\\%$ (mayoritas besar, namun bukan $100\\%$ mutlak), kuantor yang valid secara logika induktif adalah *"sebagian besar"* pada kelompok sasaran *"pengguna motor listrik di Jakarta"*.
 
 **Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Eliminasi Kata Ekstrem & Scope):**
+      quick_trick_markdown: `**Cara Cepat (Eliminasi Kata Mutlak dan Lompatan Wilayah):**
 
-- Eliminasi **A** (kata *"Semua"* salah karena ada 40 responden yang tidak menghemat).
-- Eliminasi **B** & **D** (kata *"selalu"* dan *"pasti"* terlalu mutlak).
-- Eliminasi **E** (*Out of scope*: teks hanya meneliti Jakarta, bukan luar Jakarta).
-
-Tersisa **C**.`,
-      why_others_are_wrong_markdown: `- **A Salah:** Mengabaikan 40 responden yang tidak hemat (terlalu absolut).
-- **B Salah:** Menyimpulkan hal mutlak ('selalu') bagi seluruh masyarakat yang tidak diteliti.
-- **D Salah:** Menyimpulkan vonis mutlak ('pasti tidak cocok') yang tidak dinyatakan dalam data.
-- **E Salah:** Out of scope (menggeneralisasi ke masyarakat luar Jakarta tanpa data).`,
+1. Cermati bahwa terdapat 40 orang responden yang tidak merasakan penghematan biaya. Oleh sebab itu, segera coret pilihan **A**, **B**, dan **D** karena menggunakan kata-kata bernada mutlak (*semua, selalu, pasti*).
+2. Coret pilihan **E** karena memperluas kesimpulan ke luar wilayah Jakarta (*out of scope*).
+3. Pilihan yang tersisa dan paling tepat adalah pilihan **C**.`,
+      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Pilihan ini mengabaikan fakta bahwa ada 40 orang responden yang tidak merasakan penghematan biaya, sehingga menyimpulkan kata "semua" adalah kesalahan generalisasi yang memukul rata.
+- **Pilihan B Salah:** Pilihan ini menyimpulkan kondisi yang mutlak ("selalu") bagi seluruh masyarakat Jakarta yang tidak pernah diteliti di dalam wacana.
+- **Pilihan D Salah:** Pilihan ini memberikan vonis kepastian yang mutlak ("pasti tidak cocok"), padahal data wacana tidak pernah menyatakan ketidakcocokan penggunaan motor listrik.
+- **Pilihan E Salah:** Pilihan ini melompat keluar dari batasan data penelitian dengan menggeneralisasi kondisi masyarakat di luar wilayah Jakarta.`,
     },
     {
       example_id: 'pu-01-01-ex2',
@@ -262,22 +262,20 @@ Tersisa **C**.`,
         '💡 **Petunjuk Soal:** Penjualan kopi arabika meningkat konsisten pada kuartal 1 (12%), kuartal 2 (15%), dan kuartal 3 (18%). Cari opsi yang menyatakan kecenderungan dampak positif. Hati-hati dengan opsi yang mengganti jenis komoditas (misal kopi robusta) atau menebak angka masa depan secara mutlak!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
-- **Data khusus:** Kuartal 1 ($+12\\%$), Kuartal 2 ($+15\\%$), Kuartal 3 ($+18\\%$) pada komoditas kopi arabika setelah penerapan teknik fermentasi tertutup.
-- **Induksi tren:** Kenaikan konsisten di beberapa wilayah dan waktu menunjukkan kecenderungan dampak positif teknik tersebut terhadap penjualan kopi arabika di wilayah penelitian.
+- **Data Khusus Pengamatan:** Penjualan komoditas kopi arabika tercatat meningkat berturut-turut pada Kuartal 1 ($+12\\%$), Kuartal 2 ($+15\\%$), dan Kuartal 3 ($+18\\%$) setelah penerapan teknik fermentasi tertutup.
+- **Induksi Tren Berkala:** Kenaikan yang terjadi secara konsisten di beberapa wilayah dan periode waktu menunjukkan adanya kecenderungan dampak positif dari teknik tersebut terhadap penjualan kopi arabika di wilayah pengamatan.
 
 **Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Eliminasi Kata Ekstrem & Scope):**
+      quick_trick_markdown: `**Cara Cepat (Cari Kata Terukur dan Eliminasi Kata Mutlak):**
 
-- **A** salah: Kata *"satu-satunya"* tidak didukung teks wacana.
-- **C** salah: Lompatan objek ke *"kopi robusta"* (cakupan berbeda).
-- **D** salah: Prediksi angka spesifik *"pasti 21%"* terlalu mutlak dan mendahului data empiris.
-- **E** salah: Teks tidak membahas nasib petani yang tidak memakai teknik tersebut (*negasi premis yang tidak sah*).
-
-Jawaban: **B**.`,
-      why_others_are_wrong_markdown: `- **A Salah:** Klaim absolut tanpa dasar bukti ('satu-satunya cara').
-- **C Salah:** Lompatan jenis komoditas di luar konteks (arabika $\\to$ robusta).
-- **D Salah:** Ekstrapolasi angka mutlak ('pasti 21%').
-- **E Salah:** Menarik kesimpulan negatif sepihak tentang kondisi yang tidak diuji.`,
+1. Pilihlah opsi yang memuat kata pembatas probabilitas yang bijak, yaitu *"cenderung berdampak positif"*.
+2. Segera coret pilihan **A** dan **D** karena memuat kata mutlak (*satu-satunya* dan *pasti*).
+3. Coret pilihan **C** karena melompat ke jenis komoditas lain (kopi robusta).
+4. Pilihan yang tepat dan terbukti adalah pilihan **B**.`,
+      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Menyatakan bahwa teknik ini adalah satu-satunya cara merupakan klaim mutlak yang tidak didukung oleh bukti di dalam wacana.
+- **Pilihan C Salah:** Mengubah jenis komoditas menjadi kopi robusta, padahal pengamatan hanya meneliti kopi arabika.
+- **Pilihan D Salah:** Memprediksi angka kuartal keempat secara mutlak ("pasti 21%") mendahului fakta empiris yang belum terjadi.
+- **Pilihan E Salah:** Menarik kesimpulan negatif sepihak tentang kerugian petani yang tidak memakai teknik tersebut tanpa ada data penelitian.`,
     },
     {
       example_id: 'pu-01-01-ex3',
@@ -320,22 +318,21 @@ Jawaban: **B**.`,
         '💡 **Petunjuk Soal:** Perhatikan perbedaan antara subjek yang diuji (hanya 25 mahasiswa teknik) dengan simpulan peneliti yang mengklaim berlaku untuk *"seluruh kelompok usia dewasa"*. Apakah sampel 25 mahasiswa teknik cukup mewakili seluruh orang dewasa dari berbagai usia dan profesi?',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
-- **Klaim simpulan peneliti:** Berlaku untuk *"seluruh kelompok usia dewasa"* (rentang usia 18 hingga 65+ tahun dengan beragam kondisi fisik dan latar belakang pekerjaan).
-- **Bukti sampel:** Hanya $n = 25$ mahasiswa tingkat akhir (usia $\\approx 21-23$ tahun) di satu fakultas universitas teknik yang sangat homogen.
-- **Cacat logika:** *Unrepresentative sample / Hasty generalization* (sampel terlalu sempit dan homogen untuk menggeneralisasi seluruh populasi usia dewasa).
+- **Klaim Simpulan Peneliti:** Peneliti mengklaim hasil riset berlaku untuk *"seluruh kelompok usia dewasa"* yang mencakup rentang umur 18 hingga usia lanjut dengan latar belakang yang sangat majemuk.
+- **Fakta Sampel Uji:** Pengujian sebenarnya hanya melibatkan $n = 25$ mahasiswa tingkat akhir (usia $\\approx 21-23$ tahun) pada satu program studi di universitas teknik yang sangat seragam.
+- **Kelemahan Metodologis:** Terjadi cacat generalisasi terburu-buru (*hasty generalization*), di mana ukuran sampel terlalu sempit dan homogen sehingga tidak dapat mewakili populasi target secara sahih.
 
 **Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Cek Kesenjangan Sampel vs Klaim):**
+      quick_trick_markdown: `**Cara Cepat (Cek Kesenjangan Cakupan Sampel terhadap Simpulan):**
 
-- Sampel = *25 mahasiswa teknik (homogen)*.
-- Klaim simpulan = *seluruh usia dewasa (sangat heterogen)*.
-- Letak kelemahan fatal adalah ketidaksesuaian cakupan sampel dengan klaim populasi target.
-
-Jawaban: **C**.`,
-      why_others_are_wrong_markdown: `- **A Salah:** Perbandingan dengan cokelat susu bukan fokus uji hipotesis cokelat hitam.
-- **B Salah:** Durasi 2 minggu wajar dalam uji klinis memori.
-- **D Salah:** Kenaikan rerata 20% adalah angka yang sangat besar dan secara deskriptif signifikan.
-- **E Salah:** Peningkatan diukur dari baseline skor mahasiswa itu sendiri (sebelum vs sesudah intervensi).`,
+1. Perhatikan bahwa sampel yang diuji hanyalah 25 orang mahasiswa dari fakultas teknik yang memiliki usia sebaya dan latar belakang homogen.
+2. Bandingkan dengan klaim kesimpulan peneliti yang menyatakan berlaku bagi seluruh kelompok usia dewasa.
+3. Kesenjangan yang sangat besar antara sampel sempit dengan kesimpulan luas menunjukkan kelemahan fatal keterwakilan sampel.
+4. Jawaban yang tepat adalah pilihan **C**.`,
+      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Perbandingan dengan varian cokelat susu bukan merupakan fokus pengujian hipotesis manfaat cokelat hitam.
+- **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam uji klinis memori jangka pendek.
+- **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% merupakan hasil kenaikan yang cukup besar dan signifikan secara deskriptif.
+- **Pilihan E Salah:** Pengujian diukur berdasarkan selisih skor sebelum dan sesudah intervensi pada mahasiswa yang sama, sehingga tingkat memori awal tidak menggugurkan hasil.`,
     },
   ],
 };
@@ -359,55 +356,57 @@ export const MATERIAL_PU_01_02: Material = {
   },
   content: {
     tactical_overview:
-      'Penalaran analogi menyimpulkan kesamaan akibat berdasarkan kemiripan fungsi mendasar. Kunci UTBK: pastikan kesamaan bersifat fungsional, gunakan kata kemungkinan (kemungkinan besar/berpotensi), cocokkan rumus logika pada parallel reasoning, dan cari perbedaan kritis yang membatalkan analogi.',
+      'Penalaran analogi menyimpulkan kesamaan akibat berdasarkan kemiripan mekanisme mendasar pada dua hal yang berbeda. Kunci utama dalam menyelesaikan soal analogi UTBK adalah memastikan bahwa kesamaan tersebut bersifat fungsional, menggunakan kata bernada kemungkinan seperti "kemungkinan besar" atau "berpotensi", mencocokkan rumus struktur logika pada tipe parallel reasoning, serta mengidentifikasi perbedaan kritis yang dapat membatalkan simpulan analogi.',
     exam_blueprint_markdown: `# 1. Prinsip Dasar
 
-Penalaran analogi menyimpulkan bahwa jika dua hal memiliki kesamaan mekanisme mendasar (esensial), maka dampak yang terbukti pada hal pertama kemungkinan besar juga berlaku pada hal kedua.
+Penalaran analogi adalah metode berpikir induktif yang menyimpulkan bahwa jika dua objek, fenomena, atau situasi memiliki kesamaan mekanisme kerja yang mendasar, maka dampak atau akibat yang telah terbukti terjadi pada hal pertama kemungkinan besar juga akan terjadi pada hal kedua. Di dalam ujian UTBK SNBT, soal analogi dirancang untuk menguji kejelian Anda dalam membedakan perbandingan yang logis dari perbandingan semu.
 
-Kaidah utama di UTBK:
-1. **Kesamaan Fungsional, Bukan Tampilan Luar**  
-   Perbandingan hanya sah jika titik kesamaan berhubungan langsung dengan sebab-akibat. Kemiripan nama, rupa, atau istilah tanpa kesamaan mekanisme adalah analogi palsu (*false analogy*).
-2. **Bersifat Probabilistik (Tingkat Kemungkinan)**  
-   Analogi tidak pernah bernilai mutlak 100%. Pilihan jawaban yang tepat selalu menggunakan kata pembatas: *"kemungkinan besar"*, *"berpotensi"*, atau *"cenderung"*.
-3. **Gugur oleh Perbedaan Kritis (*Critical Disanalogy*)**  
-   Meski memiliki banyak kesamaan, satu perbedaan mendasar pada mekanisme kerja langsung menggugurkan atau memperlemah simpulan analogi.
+Tiga prinsip penting penalaran analogi yang wajib Anda kuasai adalah sebagai berikut:
+1. **Kesamaan Harus Bersifat Fungsional, Bukan Sekadar Tampilan Luar**  
+   Perbandingan analogi baru dianggap sah jika titik kesamaan tersebut berhubungan langsung dengan mekanisme sebab-akibat. Apabila dua hal hanya memiliki kemiripan nama, kemasan luar, atau rupa fisik tanpa kesamaan cara kerja yang mendasar, perbandingan tersebut merupakan analogi palsu (*false analogy*) yang tidak dapat dijadikan dasar kesimpulan.
+2. **Kesimpulan Selalu Bersifat Probabilistik (Taraf Kemungkinan)**  
+   Karena dua objek yang berbeda tidak akan pernah benar-benar identik dalam seluruh aspeknya, kesimpulan dari penalaran analogi tidak pernah bernilai mutlak seratus persen. Pilihan jawaban yang benar di UTBK selalu menggunakan kata-kata pembatas tingkat kemungkinan, seperti *"kemungkinan besar"*, *"berpotensi"*, atau *"cenderung"*.
+3. **Simpulan Dapat Digugurkan oleh Perbedaan Kritis (*Critical Disanalogy*)**  
+   Meskipun dua objek memiliki banyak kemiripan luar, keberadaan satu perbedaan mendasar pada sistem kerja internalnya dapat secara langsung membatalkan atau memperlemah kesimpulan analogi tersebut.
 
 ---
 
 # 2. Jebakan Pengecoh Khas UTBK
 
-1. **Kemiripan Permukaan (*False Analogy*)**  
-   Menyimpulkan dua hal pasti sama hanya karena atribut luar atau istilahnya mirip, padahal mekanisme kerjanya berlawanan.
-2. **Kesamaan Topik Semu (*Parallel Reasoning*)**  
-   Terkecoh memilih opsi karena sama-sama bertema sains, medis, atau teknologi. Yang harus dicocokkan adalah rumus struktur kalimat logikanya, bukan topiknya.
-3. **Klaim Kepastian Mutlak**  
-   Memilih opsi dengan kata *"pasti"*, *"selalu"*, atau *"mutlak sama"*. Ingat, analogi hanya menghasilkan simpulan bernada kemungkinan.
+Pembuat soal UTBK kerap menyiapkan pilihan pengecoh yang tampak logis dari luar, namun sebenarnya rapuh secara penalaran induktif. Tiga jebakan yang paling sering dijumpai meliputi:
+1. **Jebakan Kemiripan Permukaan (*False Analogy*)**  
+   Pilihan jawaban menyamakan dua hal hanya karena nama, istilah, atau atribut luarnya terdengar mirip, padahal mekanisme fungsi internal dari kedua hal tersebut saling bertolak belakang.
+2. **Jebakan Kesamaan Topik Semu (*Parallel Reasoning*)**  
+   Pada variasi soal yang mencari pola penalaran kembar atau setara, siswa sering terkecoh memilih opsi hanya karena topik ceritanya sama (misalnya sama-sama bertema sains, kedokteran, atau teknologi). Padahal yang harus dicocokkan bukanlah tema ceritanya, melainkan kerangka rumus logikanya.
+3. **Jebakan Pernyataan Kepastian Mutlak**  
+   Pilihan jawaban menggunakan kata-kata bernada mutlak seperti *pasti, sudah tentu,* atau *selalu sama*. Anda perlu berhati-hati terhadap opsi seperti ini karena penalaran analogi tidak pernah menghasilkan jaminan kepastian yang mutlak.
 
 ---
 
 # 3. Trik Cepat (15 Detik)
 
-1. **Soal Prediksi Sifat:**  
-   Ambil akibat terbukti pada objek pertama -> cari opsi yang memindahkan akibat itu ke objek kedua dengan kata *"berpotensi"* atau *"kemungkinan besar"*. Coret langsung opsi dengan kata mutlak (*pasti*).
-2. **Soal Penalaran Kembar (*Parallel Reasoning*):**  
-   Ringkas wacana jadi rumus logika singkat di kepala, misal: [Bertahap -> Berhasil; Berlebihan -> Gagal]. Cari opsi dengan rumus kontras dua sisi yang sama persis, abaikan temanya.
-3. **Soal Memperlemah Analogi:**  
-   Cari satu perbedaan mekanisme internal yang membuat sistem di objek A tidak dapat diterapkan di objek B.
+Saat Anda menghadapi soal analogi di lembar ujian UTBK dengan waktu yang terbatas, gunakan langkah taktis berikut berdasarkan jenis variasinya:
+1. **Untuk Soal Prediksi Berbasis Analogi Fenomena**  
+   Identifikasi akibat atau dampak yang telah terbukti pada objek pertama di dalam teks wacana. Setelah itu, carilah pilihan jawaban yang memindahkan akibat tersebut ke objek kedua dengan menyertakan kata yang menunjukkan kemungkinan, seperti *"kemungkinan besar"* atau *"berpotensi"*. Segera eliminasi pilihan yang menggunakan kata mutlak seperti *"pasti"*.
+2. **Untuk Soal Pola Penalaran Kembar (*Parallel Reasoning*)**  
+   Sederhanakan alur wacana menjadi kerangka logika sebab-akibat di dalam pikiran Anda, misalnya: [Perlakuan bertahap menghasilkan adaptasi yang baik, sedangkan perlakuan ekstrem memicu kegagalan]. Setelah mendapatkan kerangka tersebut, carilah pilihan jawaban yang memiliki susunan logika dua sisi yang sama persis tanpa memedulikan tema pembahasannya.
+3. **Untuk Soal Memperlemah Analogi (*Critical Disanalogy*)**  
+   Arahkan fokus Anda untuk mencari satu fakta baru yang menunjukkan perbedaan cara kerja mendasar yang membuat sistem pada objek pertama mustahil dapat diterapkan pada objek kedua.
 
 ---
 
 # 4. Kesimpulan
 
-- **Fokus Inti:** Analogi bersandar pada kesamaan fungsi mendasar, bukan kemiripan fisik/luar.
-- **Sifat Simpulan:** Selalu probabilistik (*kemungkinan besar, berpotensi*), hindari kata mutlak (*pasti*).
-- **Parallel Reasoning:** Cocokkan pola hubungan logikanya, bukan bidang pembahasannya.
-- **Pelemahan:** Gugur jika ditemukan perbedaan cara kerja mendasar (*critical disanalogy*).
+- **Hakikat Materi:** Penalaran analogi mendasarkan kesimpulannya pada kemiripan fungsi atau mekanisme kerja esensial, bukan pada kemiripan tampilan fisik.
+- **Taraf Kepastian:** Kesimpulan analogi selalu berada pada taraf kemungkinan yang terukur (*probabilistik*), sehingga opsi yang mengandung kata mutlak wajib dihindari.
+- **Pola Setara (*Parallel Reasoning*):** Kunci keberhasilan terletak pada pencocokan struktur pola hubungan logika kalimatnya, bukan pada kesamaan topik atau bidang pembahasannya.
+- **Kelemahan Kritis:** Hubungan analogi akan runtuh apabila ditemukan perbedaan mendasar yang merusak kaitan sebab-akibat antara kedua hal yang sedang diperbandingkan.
 
 ---
 
 # 5. Bedah Soal dan Variasi UTBK
 
-Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda, dan pembahasan analisisnya:
+Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:
 
 ### Variasi 1: Prediksi Berbasis Analogi Fenomena
 
@@ -426,13 +425,13 @@ Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTB
 **Kunci Jawaban: C**
 
 **Bedah Logika & Pembahasan:**
-- **Analisis Konsep:** Bumi dan Kepler-186f sama-sama memiliki 3 sifat esensial: zona laik huni, batuan silikat padat, dan suhu pendukung air cair. Di Bumi, sifat ini terbukti menghasilkan siklus hidrologi stabil. Simpulan analogi yang sah mentransfer akibat ini ke Kepler-186f dengan kuantor probabilistik (*kemungkinan besar*).
+- **Analisis Hubungan Analogi:** Planet Bumi dan Kepler-186f memiliki tiga titik kesamaan fungsional yang krusial, yaitu berada pada zona laik huni, memiliki struktur batuan silikat padat, dan menerima intensitas radiasi yang menjaga air tetap cair. Pada Bumi, kombinasi faktor ini terbukti membentuk siklus hidrologi yang stabil. Secara penalaran analogi yang sah, akibat yang telah terbukti pada Bumi dapat ditransfer ke Kepler-186f dengan menggunakan derajat kemungkinan (*kemungkinan besar memiliki potensi yang serupa*).
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Lompatan simpulan berlebihan; teks hanya meneliti batuan dan air, bukan keberadaan makhluk hidup cerdas.
-  - **B Salah:** Kesamaan zona laik huni tidak menyiratkan kesamaan ukuran atau jumlah satelit alami.
-  - **D Salah:** Generalisasi berlebihan pada seluruh planet di alam semesta tanpa dasar data.
-  - **E Salah:** Teks wacana tidak memuat data kronologi waktu pembentukan planet.
-- **Trik Cepat (15 Detik):** Cari sifat terbukti milik Bumi di akhir teks (*siklus hidrologi stabil*), lalu pasangkan dengan kata kemungkinan (*kemungkinan besar*). Coret langsung opsi mutlak (*pasti, semua*).
+  - **Pilihan A Salah:** Menyimpulkan hal yang melompat terlalu jauh, karena teks wacana hanya menguji kondisi batuan dan air, bukan keberadaan organisme makhluk hidup cerdas.
+  - **Pilihan B Salah:** Kesamaan posisi zona laik huni tidak serta-merta membuktikan adanya kesamaan ukuran fisik maupun jumlah satelit alami planet.
+  - **Pilihan D Salah:** Merupakan generalisasi yang berlebihan pada seluruh planet di alam semesta tanpa didasari oleh data pengamatan yang valid.
+  - **Pilihan E Salah:** Teks wacana tidak memuat data kronologi mengenai waktu pembentukan kedua planet tersebut.
+- **Penerapan Trik Cepat (15 Detik):** Perhatikan sifat yang sudah terbukti pada Bumi di bagian akhir wacana (*terbentuknya siklus hidrologi yang stabil*). Selanjutnya, carilah pilihan jawaban yang memindahkan sifat tersebut ke Kepler-186f dengan bahasa kemungkinan (*kemungkinan besar*). Anda dapat langsung mencoret opsi yang menggunakan kata mutlak seperti *pasti* atau *semua* pada pilihan A dan D. Dengan demikian, jawaban yang tepat adalah pilihan **C**.
 
 ---
 
@@ -453,13 +452,13 @@ Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTB
 **Kunci Jawaban: B**
 
 **Bedah Logika & Pembahasan:**
-- **Analisis Konsep:** Teks menyusun perbandingan dua ranah berbeda (Latihan Otot Fisik vs Belajar Pemrograman Kognitif) dengan rumus kontras simetris: [Perlakuan bertahap -> Adaptasi positif] VS [Beban ekstrem -> Cedera/kegagalan]. Opsi B mereplikasi rumus yang kembar identik: Pertanian Tanaman vs Pendidikan Siswa dengan rumus [pupuk bertahap -> subur, dosis berlebih -> mati] serupa [materi bertahap -> paham, materi drastis -> kewalahan].
+- **Analisis Pola Hubungan Logika:** Wacana menyandingkan dua ranah yang berbeda (pelatihan fisik otot dan pembelajaran kognitif pemrograman) menggunakan pola kontras dua sisi yang simetris: [Perlakuan bertahap menghasilkan adaptasi positif] berbanding terbalik dengan [Beban yang berlebihan memicu kerusakan atau kegagalan]. Pilihan B mereplikasi struktur rumus yang identik pada ranah pertanian dan pendidikan: [Pemberian pupuk bertahap menyuburkan tanaman, dosis berlebih mematikan] setara dengan [Pemberian materi ajar bertahap mempermudah pemahaman, materi drastis memicu kewalahan].
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Hanya membandingkan dua media wawasan tanpa ada sisi kontras kegagalan.
-  - **C Salah:** Merupakan kalimat pembeda (*kontras*), bukan penalaran analogi sistematis.
-  - **D Salah:** Hanya membahas satu ranah tunggal (atlet) tanpa objek analogi pembanding.
-  - **E Salah:** Simpulan induktif satu bidang musik tanpa struktur analogi kembar.
-- **Trik Cepat (15 Detik):** Ringkas pola kontras di kepala: "[Bertahap = Berhasil, Berlebihan = Rusak]". Cari opsi yang menyajikan perbandingan dua sisi yang memiliki rumus kontras identik.
+  - **Pilihan A Salah:** Hanya membandingkan dua media penambah wawasan tanpa memiliki komponen kontras kegagalan akibat perlakuan berlebihan.
+  - **Pilihan C Salah:** Merupakan kalimat perbandingan kontras perbedaan cara kerja kendaraan, bukan penalaran analogi dua sistem yang setara.
+  - **Pilihan D Salah:** Hanya memaparkan penjelasan pada satu bidang tunggal mengenai tips kebugaran atlet tanpa menghadirkan objek analogi pembanding.
+  - **Pilihan E Salah:** Menyajikan simpulan induktif pada bidang musik tanpa membangun kerangka analogi perbandingan kembar.
+- **Penerapan Trik Cepat (15 Detik):** Rumuskan pola hubungan wacana secara ringkas di pikiran Anda: *Perlakuan bertahap berhasil, perlakuan berlebihan rusak*. Carilah pilihan jawaban yang menghadirkan perbandingan dua bidang berbeda dengan pola dua sisi yang sama persis. Anda akan langsung menemukan bahwa pilihan **B** memiliki struktur logika kembar yang sempurna.
 
 ---
 
@@ -480,13 +479,13 @@ Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTB
 **Kunci Jawaban: C**
 
 **Bedah Logika & Pembahasan:**
-- **Analisis Konsep (*Critical Disanalogy*):** Kesamaan jumlah karyawan (300 orang) dan lokasi kota metropolitan hanyalah kemiripan luar. Keberhasilan sistem kerja 4 hari di Perusahaan Software Y didorong oleh model kerja fleksibel berbasis penyelesaian output proyek mingguan. Sebaliknya, omzet pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik melayani pembeli setiap hari. Jika toko ritel memangkas hari kerja, jam buka toko berkurang dan omzet penjualan langsung anjlok. Fakta C membeberkan perbedaan cara kerja sistemik yang langsung membatalkan analogi kebijakan manajemen.
+- **Analisis Titik Lemah Analogi (*Critical Disanalogy*):** Manajemen Perusahaan Ritel X menyamakan perusahaannya dengan Perusahaan Software Y hanya berdasarkan kemiripan luar, yaitu kesamaan jumlah karyawan dan lokasi kota. Padahal, faktor kunci keberhasilan sistem kerja 4 hari pada Perusahaan Software Y adalah model kerjanya yang berbasis penyelesaian output proyek mingguan yang fleksibel. Sebaliknya, pendapatan Perusahaan Ritel X bergantung secara mutlak pada kehadiran toko fisik yang buka melayani pelanggan setiap hari. Apabila toko ritel memangkas hari kerja, jam operasional layanan toko akan berkurang dan omzet penjualan akan langsung anjlok. Fakta pada pilihan C membongkar perbedaan cara kerja fundamental yang secara telak menggugurkan analogi kebijakan tersebut.
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Usia berdiri perusahaan tidak memengaruhi efektivitas skema hari kerja mingguan.
-  - **B Salah:** Moda transportasi karyawan tidak berhubungan dengan cara perusahaan menghasilkan produktivitas.
-  - **D Salah:** Format fasilitas makan siang (uang tunai vs katering) adalah detail sepele yang tidak merusak analogi.
-  - **E Salah:** Kenaikan biaya sewa dialami kedua perusahaan dan tidak membedakan cara kerja operasional bisnis.
-- **Trik Cepat (15 Detik):** Tanyakan: *"Perbedaan apa yang membuat sistem di perusahaan software mustahil diterapkan di toko fisik ritel?"* Pilih fakta yang menunjukkan perbedaan cara operasional menghasilkan pendapatan bisnis.`,
+  - **Pilihan A Salah:** Perbedaan usia berdirinya perusahaan tidak memengaruhi kesesuaian penerapan skema hari kerja mingguan.
+  - **Pilihan B Salah:** Moda transportasi yang digunakan karyawan tidak berkaitan dengan model perusahaan dalam menghasilkan pendapatan.
+  - **Pilihan D Salah:** Bentuk tunjangan makan siang (makanan siap saji versus uang tunai) merupakan perbedaan fasilitas sepele yang tidak merusak analogi sistem kerja.
+  - **Pilihan E Salah:** Kenaikan biaya sewa gedung kantor dihadapi oleh kedua perusahaan di kota tersebut, sehingga tidak membedakan cara kerja operasional bisnis keduanya.
+- **Penerapan Trik Cepat (15 Detik):** Ajukan pertanyaan kritis: *"Perbedaan mendasar apakah yang membuat sistem kerja di perusahaan teknologi mustahil diterapkan di toko ritel fisik?"* Pilihlah opsi yang secara langsung mengungkap perbedaan model operasional dalam menghasilkan pendapatan. Fakta tersebut terdapat secara gamblang pada pilihan **C**.`,
     visualizations_svg: [],
     distractor_traps: [
       'False Analogy (Analogi Palsu/Dangkal): Membandingkan dua objek hanya karena kemiripan permukaan atau kemiripan nama, padahal mekanisme dasarnya bertolak belakang.',
@@ -542,21 +541,21 @@ Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTB
         '💡 **Petunjuk Soal:** Cari kesamaan antara Bumi dan Kepler-186f (zona laik huni, batuan padat, air cair). Di Bumi, kondisi ini menghasilkan siklus hidrologi stabil. Kesimpulan analogi yang sah harus memprediksi sifat yang sama untuk Kepler-186f secara probabilistik (*"kemungkinan besar"*), bukan kepastian mutlak!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
-- **Entitas A (Bumi):** Zona laik huni + batuan silikat + air fase cair $\\implies$ siklus hidrologi stabil.
-- **Entitas B (Kepler-186f):** Memiliki sifat yang serupa.
-- **Simpulan analogi:** Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil.
+- **Objek Pertama (Bumi):** Memiliki kombinasi faktor zona laik huni, batuan silikat padat, dan radiasi pendukung air cair yang terbukti menghasilkan siklus hidrologi yang stabil.
+- **Objek Kedua (Kepler-186f):** Memiliki ketiga faktor esensial yang serupa dengan Bumi.
+- **Simpulan Analogi:** Berdasarkan kesamaan fungsional tersebut, Kepler-186f kemungkinan besar juga memiliki potensi untuk membentuk siklus hidrologi yang stabil.
 
 **Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Cek Pasangan Sifat Terkait):**
+      quick_trick_markdown: `**Cara Cepat (Pasangkan Sifat Terbukti dengan Kata Probabilitas):**
 
-- Cari sifat milik Bumi di akhir kalimat teks yang belum disebutkan untuk Kepler-186f: *"siklus hidrologi yang stabil"*.
-- Pasangkan dengan kata bernada probabilistik (*"kemungkinan besar"*).
-
-Jawaban langsung terlihat: **C**.`,
-      why_others_are_wrong_markdown: `- **A Salah:** Lompatan kesimpulan liar ('makhluk hidup cerdas') yang tidak dibahas dalam premis wacana.
-- **B Salah:** Kesamaan zona laik huni tidak menyiratkan ukuran satelit sama persis.
-- **D Salah:** Generalisasi berlebihan pada seluruh planet di alam semesta.
-- **E Salah:** Tidak ada data waktu pembentukan kedua planet.`,
+1. Temukan sifat penting yang telah terbukti pada Bumi di bagian akhir wacana, yaitu terbentuknya siklus hidrologi yang stabil.
+2. Cari pilihan jawaban yang memindahkan sifat tersebut ke Kepler-186f dengan menggunakan kata probabilitas (*kemungkinan besar*).
+3. Coret pilihan yang menggunakan kata mutlak seperti *pasti* atau *semua*.
+4. Jawaban yang tepat langsung terlihat pada pilihan **C**.`,
+      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Kesimpulan ini melompat terlalu jauh dengan mengklaim keberadaan makhluk hidup cerdas yang sama sekali tidak dibahas di dalam wacana.
+- **Pilihan B Salah:** Kesamaan zona laik huni tidak menyiratkan adanya kesamaan ukuran planet maupun jumlah satelit alami.
+- **Pilihan D Salah:** Merupakan generalisasi berlebihan yang memukul rata seluruh planet berbatu padat di alam semesta.
+- **Pilihan E Salah:** Wacana tidak memuat informasi kronologis mengenai waktu pembentukan kedua planet tersebut.`,
     },
     {
       example_id: 'pu-01-02-ex2',
@@ -600,22 +599,22 @@ Jawaban langsung terlihat: **C**.`,
         '💡 **Petunjuk Soal:** Teks membandingkan dua perlakuan: perlakuan bertahap menghasilkan adaptasi/kekuatan positif, sedangkan beban berlebih sekaligus memicu cedera/kegagalan. Cari opsi pilihan ganda yang juga menyajikan dua perbandingan serupa (bertahap membawa kebaikan, berlebihan memicu kerusakan)!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
-- **Struktur argumen asli:** Membandingkan 2 domain berbeda (Fisik/Otot vs Kognitif/Pemrograman) dengan struktur kontras simetris:
-  - [Perlakuan bertahap $\\implies$ adaptasi/hasil positif]
-  - [Perlakuan berlebih sekaligus $\\implies$ cedera/kegagalan]
-- **Evaluasi opsi:** Hanya **B** yang mereplikasi struktur simetris tersebut: Pertanian/Tanaman vs Edukasi/Siswa dengan kontras [pupuk bertahap $\\implies$ subur, berlebih $\\implies$ mati] $\\approx$ [materi bertahap $\\implies$ paham, drastis $\\implies$ kewalahan].
+- **Struktur Argumen Asli:** Membandingkan dua bidang yang berbeda (latihan fisik otot vs pembelajaran kognitif pemrograman) dengan pola kontras dua sisi yang simetris:
+  - Perlakuan bertahap menghasilkan adaptasi dan dampak positif.
+  - Perlakuan berlebihan memicu cedera atau kegagalan.
+- **Evaluasi Opsi Pilihan Ganda:** Hanya pilihan **B** yang mereplikasi rumus struktur simetris tersebut pada bidang pertanian dan pendidikan: perlakuan pupuk bertahap menyuburkan tanaman dan dosis berlebih mematikan tanaman, setara dengan materi bertahap membangun pemahaman dan materi drastis memicu siswa kewalahan.
 
 **Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Pencocokan Pola Kontras Kembar):**
+      quick_trick_markdown: `**Cara Cepat (Pencocokan Rumus Kontras Dua Sisi):**
 
-- Teks asli punya 2 komponen kontras: **"bertahap = berhasil"** vs **"langsung berlebih = rusak"** pada dua domain berbeda.
-- Cek opsi: **A** tidak ada sisi kegagalan/negatif; **C** adalah kalimat pembeda (*kontras*), bukan analogi paralel; **D** & **E** hanya membahas 1 domain tunggal.
-
-Jawaban: **B**.`,
-      why_others_are_wrong_markdown: `- **A Salah:** Hanya membandingkan dua media belajar tanpa ada komponen kontras kegagalan.
-- **C Salah:** Merupakan kalimat pembeda (kontrastif), bukan penalaran analogi sistematis.
-- **D Salah:** Hanya satu ranah (atlet) tanpa objek analogi pembanding.
-- **E Salah:** Kesimpulan induktif satu bidang (musik) tanpa padanan bidang lain.`,
+1. Identifikasi rumus kontras pada wacana: [Perlakuan bertahap menghasilkan keberhasilan] berbanding terbalik dengan [Perlakuan berlebihan memicu kegagalan].
+2. Periksa pilihan ganda: pilihan **B** memiliki struktur kontras dua sisi yang persis sama pada bidang pertanian dan pendidikan.
+3. Pilihan **A**, **C**, **D**, dan **E** tidak memiliki struktur perbandingan dua sisi yang setara.
+4. Jawaban yang tepat adalah pilihan **B**.`,
+      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Hanya membandingkan dua media pembelajaran tanpa memiliki komponen kontras kegagalan akibat perlakuan berlebihan.
+- **Pilihan C Salah:** Merupakan kalimat perbedaan kontras antara dua jenis kendaraan, bukan penalaran analogi dua sistem yang setara.
+- **Pilihan D Salah:** Hanya membahas satu bidang tunggal mengenai tips kebugaran atlet tanpa menghadirkan objek analogi pembanding.
+- **Pilihan E Salah:** Menyajikan kesimpulan induktif pada bidang musik tanpa membangun kerangka perbandingan dua bidang yang setara.`,
     },
     {
       example_id: 'pu-01-02-ex3',
@@ -658,20 +657,19 @@ Jawaban: **B**.`,
         '💡 **Petunjuk Soal:** Untuk mematahkan argumen analogi antara Perusahaan Ritel (toko fisik) dan Software, temukan perbedaan mendasar pada sistem kerja keduanya. Perusahaan software bisa bekerja dengan target proyek yang fleksibel, sedangkan toko ritel sangat bergantung pada jam operasional toko fisik melayani pembeli setiap hari!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
-- Untuk memperlemah penalaran analogi, cari **perbedaan kritis (*critical disanalogy*)** yang merusak hubungan kausal antara kesamaan pembanding dengan keberhasilan kebijakan.
-- Keberhasilan sistem kerja di Perusahaan Software Y didorong oleh model kerja berbasis output proyek yang fleksibel (tidak terikat jam layanan langsung). Sebaliknya, pendapatan Perusahaan Ritel X bergantung langsung pada jumlah jam operasional toko fisik yang melayani pelanggan secara fisik setiap hari. Memangkas hari kerja di toko ritel akan memangkas jam operasional toko dan pendapatan bisnis. Perbedaan kausal ini mematahkan analogi transfer kebijakan.
+- **Tujuan Soal:** Untuk memperlemah penalaran analogi, kita perlu menemukan **perbedaan kritis (*critical disanalogy*)** yang merusak hubungan kausal antara titik kesamaan dengan keberhasilan kebijakan.
+- **Analisis Kausal:** Keberhasilan sistem kerja di Perusahaan Software Y didorong oleh model kerja berbasis output proyek yang fleksibel tanpa keterikatan jam layanan langsung. Sebaliknya, pendapatan Perusahaan Ritel X bergantung secara mutlak pada jam operasional toko fisik yang melayani pembeli secara langsung setiap hari. Apabila toko ritel memangkas hari kerja, jam operasional layanan toko akan berkurang dan pendapatan bisnis langsung turun. Perbedaan esensial ini mematahkan analogi kebijakan manajemen.
 
 **Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Cari Perbedaan yang Menghancurkan Mekanisme Inti):**
+      quick_trick_markdown: `**Cara Cepat (Cari Perbedaan Kritis Mekanisme Pendapatan):**
 
-- Pertanyaan kunci: Perbedaan mana yang membuat sistem kerja 4 hari di software *TIDAK BISA* ditiru di toko ritel?
-- Hanya opsi **C** yang menembak langsung perbedaan esensial mekanisme pendapatan bisnis: *software berbasis proyek fleksibel* vs *ritel fisik berbasis jam layanan*.
-
-Jawaban: **C**.`,
-      why_others_are_wrong_markdown: `- **A Salah:** Usia berdiri perusahaan tidak memengaruhi efektivitas jam kerja mingguan.
-- **B Salah:** Moda transportasi karyawan tidak relevan dengan esensi produktivitas jam kerja.
-- **D Salah:** Format tunjangan makan (katering vs tunjangan uang) adalah detail sepele yang tidak mengganggu analogi.
-- **E Salah:** Kenaikan biaya sewa gedung dialami kedua pihak dan tidak berhubungan dengan skema 4 hari kerja.`,
+1. Tanyakan pada diri Anda: perbedaan apa yang menyebabkan sistem kerja empat hari di perusahaan perangkat lunak mustahil ditiru oleh toko ritel fisik?
+2. Hanya pilihan **C** yang secara langsung mengungkap perbedaan cara kerja operasional: perusahaan perangkat lunak berbasis proyek mingguan yang fleksibel, sedangkan toko ritel fisik bergantung pada jam buka toko setiap hari.
+3. Jawaban yang tepat adalah pilihan **C**.`,
+      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Perbedaan usia berdirinya perusahaan tidak memengaruhi efektivitas penerapan sistem empat hari kerja mingguan.
+- **Pilihan B Salah:** Moda transportasi yang digunakan karyawan tidak berkaitan dengan cara perusahaan menghasilkan produktivitas.
+- **Pilihan D Salah:** Bentuk penyediaan fasilitas makan siang merupakan detail sepele yang tidak membatalkan analogi sistem kerja.
+- **Pilihan E Salah:** Kenaikan biaya sewa gedung kantor dihadapi oleh kedua perusahaan sehingga tidak membedakan cara kerja operasional keduanya.`,
     },
   ],
 };
