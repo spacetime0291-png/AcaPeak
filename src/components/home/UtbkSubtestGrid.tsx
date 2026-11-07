@@ -8,6 +8,7 @@ import {
 import { CosmicSubtitleSparkle } from '../decorations/CosmicDecorations';
 
 interface UtbkSubtestGridProps {
+  theme?: 'light' | 'dark';
   onSelectSubtest: (code: string) => void;
 }
 
@@ -29,15 +30,15 @@ const PuIcon = () => (
       </filter>
     </defs>
     {/* Elliptical Orbital Ring 1 (Tilted 35 deg) */}
-    <ellipse cx="26" cy="26" rx="21" ry="8" stroke="#C084FC" strokeWidth="2" transform="rotate(35 26 26)" opacity="0.9" />
+    <ellipse cx="26" cy="26" rx="21" ry="8" stroke="#C084FC" strokeWidth="2.2" transform="rotate(35 26 26)" opacity="0.9" />
     <circle cx="11" cy="15" r="2.2" fill="#FDE047" filter="url(#puGlow)" />
 
     {/* Elliptical Orbital Ring 2 (Tilted -35 deg) */}
-    <ellipse cx="26" cy="26" rx="21" ry="8" stroke="#00F2FE" strokeWidth="2" transform="rotate(-35 26 26)" opacity="0.9" />
+    <ellipse cx="26" cy="26" rx="21" ry="8" stroke="#00F2FE" strokeWidth="2.2" transform="rotate(-35 26 26)" opacity="0.9" />
     <circle cx="41" cy="15" r="2.2" fill="#FFFFFF" filter="url(#puGlow)" />
 
     {/* Horizontal Orbital Ring 3 */}
-    <ellipse cx="26" cy="26" rx="19" ry="7" stroke="#A855F7" strokeWidth="1.6" opacity="0.75" />
+    <ellipse cx="26" cy="26" rx="19" ry="7" stroke="#A855F7" strokeWidth="1.8" opacity="0.8" />
     <circle cx="36" cy="31" r="1.8" fill="#38BDF8" />
 
     {/* Central Glowing Core / Cosmic Star */}
@@ -269,7 +270,8 @@ interface SubtestThemeConfig {
   cornerElement: React.ReactNode;
 }
 
-export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtest }) => {
+export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light', onSelectSubtest }) => {
+  const isDark = theme === 'dark';
   const [categoryFilter, setCategoryFilter] = useState<'ALL' | 'TPS' | 'Literasi'>('ALL');
 
   const subtests: SubtestThemeConfig[] = [
@@ -278,12 +280,12 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Penalaran Umum',
       category: 'TPS',
       icon: <PuIcon />,
-      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_26px_rgba(168,85,247,0.5)]',
+      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_28px_rgba(168,85,247,0.6)]',
       darkHaloClass: 'icon-halo-purple',
-      darkBadgeClass: 'bg-purple-950/90 text-purple-200 border-purple-500/60',
-      darkSquircleClass: 'bg-[#181136] border border-purple-500/50 shadow-[0_0_15px_rgba(168,85,247,0.35)]',
+      darkBadgeClass: 'bg-slate-900/90 text-purple-300 border border-purple-500/60',
+      darkSquircleClass: 'bg-[#181136] border border-purple-500/60 shadow-[0_0_15px_rgba(168,85,247,0.4)]',
       lightBgClass: 'pastel-card-pink',
-      lightBadgeClass: 'bg-white/95 text-rose-800 border-rose-200',
+      lightBadgeClass: 'bg-white/95 text-rose-800 border border-rose-200',
       lightSquircleClass: 'bg-rose-100/90 border border-rose-200/80',
       cornerElement: (
         <>
@@ -297,12 +299,12 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Pengetahuan & Pemahaman Umum',
       category: 'TPS',
       icon: <PpuIcon />,
-      darkBorderClass: 'neon-border-cyan hover:shadow-[0_0_26px_rgba(0,242,254,0.5)]',
+      darkBorderClass: 'neon-border-cyan hover:shadow-[0_0_28px_rgba(0,242,254,0.6)]',
       darkHaloClass: 'icon-halo-cyan',
-      darkBadgeClass: 'bg-cyan-950/90 text-cyan-200 border-cyan-500/60',
-      darkSquircleClass: 'bg-[#0a2336] border border-cyan-500/50 shadow-[0_0_15px_rgba(0,242,254,0.35)]',
+      darkBadgeClass: 'bg-slate-900/90 text-cyan-300 border border-cyan-500/60',
+      darkSquircleClass: 'bg-[#0a2336] border border-cyan-500/60 shadow-[0_0_15px_rgba(0,242,254,0.4)]',
       lightBgClass: 'pastel-card-peach',
-      lightBadgeClass: 'bg-white/95 text-amber-800 border-amber-200',
+      lightBadgeClass: 'bg-white/95 text-amber-800 border border-amber-200',
       lightSquircleClass: 'bg-amber-100/90 border border-amber-200/80',
       cornerElement: (
         <>
@@ -316,12 +318,12 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Pemahaman Bacaan & Menulis',
       category: 'TPS',
       icon: <PbmIcon />,
-      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_26px_rgba(244,63,94,0.5)]',
+      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_28px_rgba(244,63,94,0.6)]',
       darkHaloClass: 'icon-halo-coral',
-      darkBadgeClass: 'bg-rose-950/90 text-rose-200 border-rose-500/60',
-      darkSquircleClass: 'bg-[#33111f] border border-rose-500/50 shadow-[0_0_15px_rgba(244,63,94,0.35)]',
+      darkBadgeClass: 'bg-slate-900/90 text-rose-300 border border-rose-500/60',
+      darkSquircleClass: 'bg-[#33111f] border border-rose-500/60 shadow-[0_0_15px_rgba(244,63,94,0.4)]',
       lightBgClass: 'pastel-card-mint',
-      lightBadgeClass: 'bg-white/95 text-emerald-800 border-emerald-200',
+      lightBadgeClass: 'bg-white/95 text-emerald-800 border border-emerald-200',
       lightSquircleClass: 'bg-emerald-100/90 border border-emerald-200/80',
       cornerElement: (
         <>
@@ -335,12 +337,12 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Pengetahuan Kuantitatif',
       category: 'TPS',
       icon: <PkIcon />,
-      darkBorderClass: 'neon-border-blue hover:shadow-[0_0_26px_rgba(59,130,246,0.5)]',
+      darkBorderClass: 'neon-border-blue hover:shadow-[0_0_28px_rgba(59,130,246,0.6)]',
       darkHaloClass: 'icon-halo-blue',
-      darkBadgeClass: 'bg-blue-950/90 text-blue-200 border-blue-500/60',
-      darkSquircleClass: 'bg-[#0d1d3d] border border-blue-500/50 shadow-[0_0_15px_rgba(59,130,246,0.35)]',
+      darkBadgeClass: 'bg-slate-900/90 text-blue-300 border border-blue-500/60',
+      darkSquircleClass: 'bg-[#0d1d3d] border border-blue-500/60 shadow-[0_0_15px_rgba(59,130,246,0.4)]',
       lightBgClass: 'pastel-card-sky',
-      lightBadgeClass: 'bg-white/95 text-sky-800 border-sky-200',
+      lightBadgeClass: 'bg-white/95 text-sky-800 border border-sky-200',
       lightSquircleClass: 'bg-sky-100/90 border border-sky-200/80',
       cornerElement: (
         <>
@@ -354,12 +356,12 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Literasi Bahasa Indonesia',
       category: 'Literasi',
       icon: <LbiIcon />,
-      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_26px_rgba(244,63,94,0.5)]',
+      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_28px_rgba(244,63,94,0.6)]',
       darkHaloClass: 'icon-halo-coral',
-      darkBadgeClass: 'bg-rose-950/90 text-rose-200 border-rose-500/60',
-      darkSquircleClass: 'bg-[#2a1322] border border-rose-500/50 shadow-[0_0_15px_rgba(244,63,94,0.35)]',
+      darkBadgeClass: 'bg-slate-900/90 text-rose-300 border border-rose-500/60',
+      darkSquircleClass: 'bg-[#2a1322] border border-rose-500/60 shadow-[0_0_15px_rgba(244,63,94,0.4)]',
       lightBgClass: 'pastel-card-pink',
-      lightBadgeClass: 'bg-white/95 text-rose-800 border-rose-200',
+      lightBadgeClass: 'bg-white/95 text-rose-800 border border-rose-200',
       lightSquircleClass: 'bg-rose-100/90 border border-rose-200/80',
       cornerElement: (
         <>
@@ -373,12 +375,12 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Literasi Bahasa Inggris',
       category: 'Literasi',
       icon: <LbeIcon />,
-      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_26px_rgba(168,85,247,0.5)]',
+      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_28px_rgba(168,85,247,0.6)]',
       darkHaloClass: 'icon-halo-purple',
-      darkBadgeClass: 'bg-purple-950/90 text-purple-200 border-purple-500/60',
-      darkSquircleClass: 'bg-[#171638] border border-purple-500/50 shadow-[0_0_15px_rgba(168,85,247,0.35)]',
+      darkBadgeClass: 'bg-slate-900/90 text-purple-300 border border-purple-500/60',
+      darkSquircleClass: 'bg-[#171638] border border-purple-500/60 shadow-[0_0_15px_rgba(168,85,247,0.4)]',
       lightBgClass: 'pastel-card-lavender',
-      lightBadgeClass: 'bg-white/95 text-purple-800 border-purple-200',
+      lightBadgeClass: 'bg-white/95 text-purple-800 border border-purple-200',
       lightSquircleClass: 'bg-purple-100/90 border border-purple-200/80',
       cornerElement: (
         <>
@@ -391,12 +393,12 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Penalaran Matematika',
       category: 'Literasi',
       icon: <PmIcon />,
-      darkBorderClass: 'neon-border-emerald hover:shadow-[0_0_26px_rgba(16,185,129,0.5)]',
+      darkBorderClass: 'neon-border-emerald hover:shadow-[0_0_28px_rgba(16,185,129,0.6)]',
       darkHaloClass: 'icon-halo-emerald',
-      darkBadgeClass: 'bg-emerald-950/90 text-emerald-200 border-emerald-500/60',
-      darkSquircleClass: 'bg-[#0a2920] border border-emerald-500/50 shadow-[0_0_15px_rgba(16,185,129,0.35)]',
+      darkBadgeClass: 'bg-slate-900/90 text-emerald-300 border border-emerald-500/60',
+      darkSquircleClass: 'bg-[#0a2920] border border-emerald-500/60 shadow-[0_0_15px_rgba(16,185,129,0.4)]',
       lightBgClass: 'pastel-card-mint',
-      lightBadgeClass: 'bg-white/95 text-emerald-800 border-emerald-200',
+      lightBadgeClass: 'bg-white/95 text-emerald-800 border border-emerald-200',
       lightSquircleClass: 'bg-emerald-100/90 border border-emerald-200/80',
       cornerElement: (
         <>
@@ -413,9 +415,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
   });
 
   return (
-    <div className="relative rounded-3xl p-4 sm:p-6 space-y-5 transition-all duration-300 bg-white/70 dark:bg-[#0c1228]/80 border border-stone-200/80 dark:border-indigo-500/30 backdrop-blur-md shadow-sm dark:shadow-[0_12px_36px_rgba(0,0,0,0.5)] overflow-hidden">
-      {/* Category Filter Tabs: Semua | TPS | Literasi */}
-      <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-stone-200/80 dark:border-slate-800/80 pb-3.5 z-10">
+    <div className="w-full space-y-4">
+      {/* 1. Category Filter Tabs: Semua | TPS | Literasi & Subtitle (Standalone Row directly on background) */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1 z-10 relative">
         <div className="flex items-center bg-stone-100/90 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 shadow-2xs">
           <button
             type="button"
@@ -470,56 +472,61 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
         </div>
       </div>
 
-      {/* Grid Responsif (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) dengan border-radius: 22px */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 z-10 relative">
-        {filteredSubtests.map((sub) => (
-          <button
-            key={sub.code}
-            type="button"
-            onClick={() => onSelectSubtest(sub.code.toLowerCase())}
-            className={`w-full flex flex-col items-center justify-between p-4 sm:p-5 rounded-[22px] transition-all duration-300 hover:-translate-y-1.5 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${
-              // Light mode pastel styles
-              `${sub.lightBgClass} dark:bg-[rgba(14,22,48,0.85)] dark:backdrop-blur-md ` +
-              // Dark mode neon borders & glows
-              `dark:${sub.darkBorderClass}`
-            }`}
-            aria-label={`Buka Subtes ${sub.name}`}
-          >
-            {/* Light Mode Decorative Corner SVGs */}
-            <div className="dark:hidden">
-              {sub.cornerElement}
-            </div>
+      {/* 2. Standalone Cards Grid (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) */}
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4.5 z-10 relative">
+        {filteredSubtests.map((sub) => {
+          const cardBgClass = isDark
+            ? `bg-[#0e1634]/92 backdrop-blur-md ${sub.darkBorderClass}`
+            : `${sub.lightBgClass} border border-stone-200/80 shadow-xs`;
 
-            {/* Category / Code Pill */}
-            <span
-              className={`px-3 py-0.5 rounded-full text-[11px] font-bold shadow-2xs border mb-3 transition-colors z-10 ${sub.lightBadgeClass} dark:${sub.darkBadgeClass}`}
+          const squircleClass = isDark ? sub.darkSquircleClass : sub.lightSquircleClass;
+          const badgeClass = isDark ? sub.darkBadgeClass : sub.lightBadgeClass;
+          const textClass = isDark ? 'text-white' : 'text-slate-900';
+
+          return (
+            <button
+              key={sub.code}
+              type="button"
+              onClick={() => onSelectSubtest(sub.code.toLowerCase())}
+              className={`w-full flex flex-col items-center justify-between p-4.5 sm:p-5 rounded-[24px] transition-all duration-300 hover:-translate-y-1.5 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${cardBgClass}`}
+              aria-label={`Buka Subtes ${sub.name}`}
             >
-              {sub.code} • {sub.category}
-            </span>
+              {/* Light Mode Decorative Corner SVGs */}
+              {!isDark && sub.cornerElement}
 
-            {/* 1. Ikon Squircle dengan Radiant Glowing Halo di Dark Mode & Soft Squircle di Light Mode */}
-            <div className="relative my-2 z-10 flex items-center justify-center">
-              {/* Intense Cosmic Glowing Halo behind the icon in Dark Mode */}
-              <div
-                className={`hidden dark:block absolute w-28 h-28 rounded-full ${sub.darkHaloClass} pointer-events-none group-hover:scale-125 transition-transform duration-300 -z-10`}
-              />
-
-              {/* Icon Squircle Container */}
-              <div
-                className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shrink-0 ${sub.lightSquircleClass} dark:${sub.darkSquircleClass}`}
+              {/* Category / Code Pill */}
+              <span
+                className={`px-3 py-0.5 rounded-full text-[11px] font-bold shadow-2xs mb-2 transition-colors z-10 ${badgeClass}`}
               >
-                {sub.icon}
-              </div>
-            </div>
-
-            {/* 2. Label Nama Subtes Lengkap */}
-            <div className="w-full flex-1 flex flex-col items-center justify-start mt-2.5 z-10">
-              <span className="text-xs sm:text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 text-center leading-snug w-full break-words group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
-                {sub.name}
+                {sub.code} • {sub.category}
               </span>
-            </div>
-          </button>
-        ))}
+
+              {/* Icon Squircle dengan Radiant Glowing Halo di Dark Mode */}
+              <div className="relative my-2 z-10 flex items-center justify-center">
+                {/* Intense Cosmic Glowing Halo behind the icon in Dark Mode */}
+                {isDark && (
+                  <div
+                    className={`absolute w-32 h-32 rounded-full ${sub.darkHaloClass} pointer-events-none group-hover:scale-125 transition-transform duration-300 -z-10`}
+                  />
+                )}
+
+                {/* Icon Squircle Container */}
+                <div
+                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shrink-0 ${squircleClass}`}
+                >
+                  {sub.icon}
+                </div>
+              </div>
+
+              {/* Label Nama Subtes Lengkap */}
+              <div className="w-full flex-1 flex flex-col items-center justify-start mt-2.5 z-10">
+                <span className={`text-xs sm:text-sm md:text-base font-bold ${textClass} text-center leading-snug w-full break-words group-hover:text-cyan-300 transition-colors`}>
+                  {sub.name}
+                </span>
+              </div>
+            </button>
+          );
+        })}
       </div>
     </div>
   );

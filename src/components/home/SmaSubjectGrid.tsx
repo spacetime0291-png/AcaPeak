@@ -15,6 +15,7 @@ import { SMA_SUBJECTS } from '../../lib/smaSyllabusData';
 import { PottedPlantDecor, LeafCornerDecor } from '../decorations/NatureDecorations';
 
 interface SmaSubjectGridProps {
+  theme?: 'light' | 'dark';
   onSelectSubject: (subjectId: string) => void;
 }
 
@@ -41,7 +42,8 @@ const SMA_DARK_THEME_MAP: Record<string, { border: string; halo: string; text: s
   informatika: { border: 'neon-border-cyan', halo: 'icon-halo-cyan', text: 'text-cyan-300' },
 };
 
-export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject }) => {
+export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ theme = 'light', onSelectSubject }) => {
+  const isDark = theme === 'dark';
   const [gradeFilter, setGradeFilter] = useState<'all' | '10' | '11' | '12'>('all');
   const [categoryFilter, setCategoryFilter] = useState<'all' | 'saintek' | 'soshum'>('all');
 
@@ -162,48 +164,80 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ onSelectSubject 
             text: 'text-blue-300',
           };
 
+          const cardStyle = isDark
+            ? `bg-[#0e1634]/90 backdrop-blur-md ${darkStyle.border} shadow-[0_4px_24px_rgba(0,0,0,0.45)]`
+            : `${subj.color.border} ${subj.color.bg} shadow-xs`;
+
           return (
             <button
               key={subj.id}
               type="button"
               onClick={() => onSelectSubject(subj.id)}
-              className={`group flex flex-col p-4 sm:p-5 rounded-[20px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md cursor-pointer text-left relative overflow-hidden border ${subj.color.border} ${subj.color.bg} dark:bg-[rgba(18,25,48,0.75)] dark:backdrop-blur-md dark:${darkStyle.border}`}
+              className={`group flex flex-col p-4 sm:p-5 rounded-[22px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md cursor-pointer text-left relative overflow-hidden border ${cardStyle}`}
             >
               {/* Light Mode Decorative corner */}
-              <div className="dark:hidden">
-                {sIdx % 2 === 0 ? (
-                  <LeafCornerDecor position="top-left" />
-                ) : (
-                  <PottedPlantDecor position="bottom-right" />
-                )}
-              </div>
+              {!isDark && (
+                <div>
+                  {sIdx % 2 === 0 ? (
+                    <LeafCornerDecor position="top-left" />
+                  ) : (
+                    <PottedPlantDecor position="bottom-right" />
+                  )}
+                </div>
+              )}
 
               <div className="flex items-start justify-between mb-3 relative z-10">
                 <div className="relative">
                   {/* Glowing halo in Dark Mode */}
+                  {isDark && (
+                    <div
+                      className={`absolute -inset-2 rounded-full ${darkStyle.halo} blur-sm pointer-events-none group-hover:scale-125 transition-transform`}
+                    />
+                  )}
                   <div
-                    className={`hidden dark:block absolute -inset-2 rounded-full ${darkStyle.halo} blur-sm pointer-events-none group-hover:scale-125 transition-transform`}
-                  />
-                  <div
-                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white/90 dark:bg-slate-900/90 flex items-center justify-center shadow-2xs ${subj.color.text} dark:${darkStyle.text} group-hover:scale-105 transition-transform duration-200 shrink-0 border border-black/5 dark:border-white/10`}
+                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center shadow-2xs group-hover:scale-105 transition-transform duration-200 shrink-0 border ${
+                      isDark
+                        ? 'bg-slate-900/90 text-cyan-200 border-white/10'
+                        : `bg-white/90 ${subj.color.text} border-black/5`
+                    }`}
                   >
                     {ICON_MAP[subj.icon] || <BookOpen className="w-7 h-7" />}
                   </div>
                 </div>
 
-                <span className="text-[11px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full bg-white/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700 shadow-2xs">
+                <span
+                  className={`text-[11px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full shadow-2xs ${
+                    isDark
+                      ? 'bg-slate-800 text-slate-300 border border-slate-700'
+                      : 'bg-white/80 text-slate-600 border border-slate-200/60'
+                  }`}
+                >
                   {subj.category}
                 </span>
               </div>
 
               <div className="flex-1 min-h-[42px] flex flex-col justify-center relative z-10">
-                <h3 className={`text-sm sm:text-base font-bold text-slate-800 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:${darkStyle.text} transition-colors leading-snug line-clamp-2`}>
+                <h3
+                  className={`text-sm sm:text-base font-bold transition-colors leading-snug line-clamp-2 ${
+                    isDark
+                      ? 'text-white group-hover:text-cyan-300'
+                      : 'text-slate-800 group-hover:text-blue-600'
+                  }`}
+                >
                   {subj.name}
                 </h3>
               </div>
 
-              <div className="mt-3.5 pt-2.5 border-t border-slate-200/50 dark:border-slate-800 flex items-center justify-between text-xs sm:text-sm relative z-10">
-                <span className={`px-2.5 py-0.5 rounded-md font-semibold text-[11px] ${subj.color.badge} dark:bg-slate-800 dark:text-slate-300`}>
+              <div
+                className={`mt-3.5 pt-2.5 border-t flex items-center justify-between text-xs sm:text-sm relative z-10 ${
+                  isDark ? 'border-slate-800 text-slate-400' : 'border-slate-200/50 text-slate-500'
+                }`}
+              >
+                <span
+                  className={`px-2.5 py-0.5 rounded-md font-semibold text-[11px] ${
+                    isDark ? 'bg-slate-800 text-slate-300' : subj.color.badge
+                  }`}
+                >
                   {subj.chapters.length} Bab • {totalTopics} Materi
                 </span>
                 <span className="text-slate-400 group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-transform group-hover:translate-x-1 duration-150">

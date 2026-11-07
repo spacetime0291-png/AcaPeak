@@ -4,11 +4,11 @@ import {
   ChevronDown,
   ChevronRight,
   Play,
-  BookOpen,
   Zap,
   Minus,
   Plus,
   Clock,
+  Sparkles,
 } from 'lucide-react';
 import type { SubtestItem } from '../../types/material';
 import { ModuleIcon } from './ModuleIcon';
@@ -99,56 +99,144 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   // Total subtopics count
   const totalSubtopics = (subtest.modules || []).reduce((acc, m) => acc + m.subtopics.length, 0);
 
-  // Squircle styling per subtest
-  const moduleSquircleStyle = (() => {
+  // Harmonized Subtest Theme Accents (Senada dengan Tampilan Beranda)
+  const subtestTheme = (() => {
     const code = subtest.code.toUpperCase();
     if (isDark) {
       switch (code) {
         case 'PU':
-          return 'bg-[#181136] border border-purple-500/50 text-purple-300 shadow-[0_0_12px_rgba(168,85,247,0.25)]';
+          return {
+            border: 'border-purple-500/40 hover:border-purple-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(168,85,247,0.18)]',
+            squircle: 'bg-[#181136] border border-purple-500/60 text-purple-300 shadow-[0_0_16px_rgba(168,85,247,0.4)]',
+            babBadge: 'bg-purple-950/80 text-purple-300 border border-purple-500/60 shadow-[0_0_8px_rgba(168,85,247,0.3)]',
+            numChip: 'bg-gradient-to-tr from-purple-600 to-indigo-500 text-white shadow-[0_0_10px_rgba(168,85,247,0.4)] border border-purple-400/40',
+            actionPill: 'bg-purple-500/10 text-purple-300 border border-purple-400/50 group-hover/sub:bg-purple-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(168,85,247,0.5)]',
+            highlightText: 'text-purple-300',
+          };
         case 'PPU':
-          return 'bg-[#0a2336] border border-cyan-500/50 text-cyan-300 shadow-[0_0_12px_rgba(0,242,254,0.25)]';
+          return {
+            border: 'border-cyan-500/40 hover:border-cyan-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(0,242,254,0.18)]',
+            squircle: 'bg-[#0a2336] border border-cyan-500/60 text-cyan-300 shadow-[0_0_16px_rgba(0,242,254,0.4)]',
+            babBadge: 'bg-cyan-950/80 text-cyan-300 border border-cyan-500/60 shadow-[0_0_8px_rgba(0,242,254,0.3)]',
+            numChip: 'bg-gradient-to-tr from-cyan-600 to-blue-500 text-white shadow-[0_0_10px_rgba(0,242,254,0.4)] border border-cyan-400/40',
+            actionPill: 'bg-cyan-500/10 text-cyan-300 border border-cyan-400/50 group-hover/sub:bg-cyan-500 group-hover/sub:text-slate-950 group-hover/sub:shadow-[0_0_14px_rgba(0,242,254,0.5)]',
+            highlightText: 'text-cyan-300',
+          };
         case 'PBM':
-          return 'bg-[#33111f] border border-rose-500/50 text-rose-300 shadow-[0_0_12px_rgba(244,63,94,0.25)]';
+          return {
+            border: 'border-rose-500/40 hover:border-rose-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(244,63,94,0.18)]',
+            squircle: 'bg-[#33111f] border border-rose-500/60 text-rose-300 shadow-[0_0_16px_rgba(244,63,94,0.4)]',
+            babBadge: 'bg-rose-950/80 text-rose-300 border border-rose-500/60 shadow-[0_0_8px_rgba(244,63,94,0.3)]',
+            numChip: 'bg-gradient-to-tr from-rose-600 to-amber-500 text-white shadow-[0_0_10px_rgba(244,63,94,0.4)] border border-rose-400/40',
+            actionPill: 'bg-rose-500/10 text-rose-300 border border-rose-400/50 group-hover/sub:bg-rose-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(244,63,94,0.5)]',
+            highlightText: 'text-rose-300',
+          };
         case 'PK':
-          return 'bg-[#0d1d3d] border border-blue-500/50 text-blue-300 shadow-[0_0_12px_rgba(59,130,246,0.25)]';
+          return {
+            border: 'border-blue-500/40 hover:border-blue-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(59,130,246,0.18)]',
+            squircle: 'bg-[#0d1d3d] border border-blue-500/60 text-blue-300 shadow-[0_0_16px_rgba(59,130,246,0.4)]',
+            babBadge: 'bg-blue-950/80 text-blue-300 border border-blue-500/60 shadow-[0_0_8px_rgba(59,130,246,0.3)]',
+            numChip: 'bg-gradient-to-tr from-blue-600 to-cyan-500 text-white shadow-[0_0_10px_rgba(59,130,246,0.4)] border border-blue-400/40',
+            actionPill: 'bg-blue-500/10 text-blue-300 border border-blue-400/50 group-hover/sub:bg-blue-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(59,130,246,0.5)]',
+            highlightText: 'text-blue-300',
+          };
         case 'LBI':
-          return 'bg-[#2a1322] border border-rose-500/50 text-rose-300 shadow-[0_0_12px_rgba(244,63,94,0.25)]';
+          return {
+            border: 'border-rose-500/40 hover:border-rose-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(244,63,94,0.18)]',
+            squircle: 'bg-[#2a1322] border border-rose-500/60 text-rose-300 shadow-[0_0_16px_rgba(244,63,94,0.4)]',
+            babBadge: 'bg-rose-950/80 text-rose-300 border border-rose-500/60 shadow-[0_0_8px_rgba(244,63,94,0.3)]',
+            numChip: 'bg-gradient-to-tr from-rose-600 to-red-500 text-white shadow-[0_0_10px_rgba(244,63,94,0.4)] border border-rose-400/40',
+            actionPill: 'bg-rose-500/10 text-rose-300 border border-rose-400/50 group-hover/sub:bg-rose-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(244,63,94,0.5)]',
+            highlightText: 'text-rose-300',
+          };
         case 'LBE':
-          return 'bg-[#171638] border border-purple-500/50 text-purple-300 shadow-[0_0_12px_rgba(168,85,247,0.25)]';
+          return {
+            border: 'border-purple-500/40 hover:border-purple-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(168,85,247,0.18)]',
+            squircle: 'bg-[#171638] border border-purple-500/60 text-purple-300 shadow-[0_0_16px_rgba(168,85,247,0.4)]',
+            babBadge: 'bg-purple-950/80 text-purple-300 border border-purple-500/60 shadow-[0_0_8px_rgba(168,85,247,0.3)]',
+            numChip: 'bg-gradient-to-tr from-purple-600 to-indigo-500 text-white shadow-[0_0_10px_rgba(168,85,247,0.4)] border border-purple-400/40',
+            actionPill: 'bg-purple-500/10 text-purple-300 border border-purple-400/50 group-hover/sub:bg-purple-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(168,85,247,0.5)]',
+            highlightText: 'text-purple-300',
+          };
         case 'PM':
-          return 'bg-[#0a2920] border border-emerald-500/50 text-emerald-300 shadow-[0_0_12px_rgba(16,185,129,0.25)]';
+          return {
+            border: 'border-emerald-500/40 hover:border-emerald-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(16,185,129,0.18)]',
+            squircle: 'bg-[#0a2920] border border-emerald-500/60 text-emerald-300 shadow-[0_0_16px_rgba(16,185,129,0.4)]',
+            babBadge: 'bg-emerald-950/80 text-emerald-300 border border-emerald-500/60 shadow-[0_0_8px_rgba(16,185,129,0.3)]',
+            numChip: 'bg-gradient-to-tr from-emerald-600 to-teal-500 text-white shadow-[0_0_10px_rgba(16,185,129,0.4)] border border-emerald-400/40',
+            actionPill: 'bg-emerald-500/10 text-emerald-300 border border-emerald-400/50 group-hover/sub:bg-emerald-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(16,185,129,0.5)]',
+            highlightText: 'text-emerald-300',
+          };
         default:
-          return 'bg-[#0d1d3d] border border-blue-500/50 text-blue-300';
+          return {
+            border: 'border-indigo-500/40 hover:border-cyan-400/80',
+            glow: 'shadow-[0_4px_24px_rgba(0,242,254,0.18)]',
+            squircle: 'bg-[#0d1d3d] border border-blue-500/60 text-blue-300',
+            babBadge: 'bg-indigo-950/80 text-cyan-300 border border-cyan-500/60',
+            numChip: 'bg-gradient-to-tr from-blue-600 to-cyan-500 text-white shadow-[0_0_10px_rgba(0,242,254,0.4)] border border-cyan-400/40',
+            actionPill: 'bg-cyan-500/10 text-cyan-300 border border-cyan-400/50 group-hover/sub:bg-cyan-500 group-hover/sub:text-slate-950',
+            highlightText: 'text-cyan-300',
+          };
       }
     } else {
       switch (code) {
         case 'PU':
-          return 'bg-purple-100 text-purple-900 border border-purple-200/90';
+          return {
+            border: 'border-rose-200/90 hover:border-rose-300',
+            glow: 'shadow-xs hover:shadow-md',
+            squircle: 'bg-rose-100 text-rose-900 border border-rose-200/90',
+            babBadge: 'bg-rose-50 text-rose-800 border border-rose-200',
+            numChip: 'bg-rose-100 text-rose-800 border border-rose-200',
+            actionPill: 'bg-rose-50 text-rose-700 border border-rose-200 group-hover/sub:bg-rose-600 group-hover/sub:text-white',
+            highlightText: 'text-rose-700',
+          };
         case 'PPU':
-          return 'bg-amber-100 text-amber-900 border border-amber-200/90';
+          return {
+            border: 'border-amber-200/90 hover:border-amber-300',
+            glow: 'shadow-xs hover:shadow-md',
+            squircle: 'bg-amber-100 text-amber-900 border border-amber-200/90',
+            babBadge: 'bg-amber-50 text-amber-800 border border-amber-200',
+            numChip: 'bg-amber-100 text-amber-800 border border-amber-200',
+            actionPill: 'bg-amber-50 text-amber-700 border border-amber-200 group-hover/sub:bg-amber-600 group-hover/sub:text-white',
+            highlightText: 'text-amber-700',
+          };
         case 'PBM':
-          return 'bg-rose-100 text-rose-900 border border-rose-200/90';
-        case 'PK':
-          return 'bg-sky-100 text-sky-900 border border-sky-200/90';
-        case 'LBI':
-          return 'bg-rose-100 text-rose-900 border border-rose-200/90';
-        case 'LBE':
-          return 'bg-purple-100 text-purple-900 border border-purple-200/90';
-        case 'PM':
-          return 'bg-emerald-100 text-emerald-900 border border-emerald-200/90';
+          return {
+            border: 'border-emerald-200/90 hover:border-emerald-300',
+            glow: 'shadow-xs hover:shadow-md',
+            squircle: 'bg-emerald-100 text-emerald-900 border border-emerald-200/90',
+            babBadge: 'bg-emerald-50 text-emerald-800 border border-emerald-200',
+            numChip: 'bg-emerald-100 text-emerald-800 border border-emerald-200',
+            actionPill: 'bg-emerald-50 text-emerald-700 border border-emerald-200 group-hover/sub:bg-emerald-600 group-hover/sub:text-white',
+            highlightText: 'text-emerald-700',
+          };
         default:
-          return 'bg-sky-100 text-sky-900 border border-sky-200/90';
+          return {
+            border: 'border-sky-200/90 hover:border-sky-300',
+            glow: 'shadow-xs hover:shadow-md',
+            squircle: 'bg-sky-100 text-sky-900 border border-sky-200/90',
+            babBadge: 'bg-sky-50 text-sky-800 border border-sky-200',
+            numChip: 'bg-sky-100 text-sky-800 border border-sky-200',
+            actionPill: 'bg-sky-50 text-sky-700 border border-sky-200 group-hover/sub:bg-blue-600 group-hover/sub:text-white',
+            highlightText: 'text-blue-700',
+          };
       }
     }
   })();
 
   return (
     <div className="w-full pb-28">
-      {/* 1. STICKY TOP APP BAR (Native App Feel, Distraction-Free Header) */}
+      {/* 1. STICKY TOP APP BAR (Native App Feel, Unified Cosmic/Nature Header) */}
       <div className="sticky top-0 z-40 w-full shadow-xs">
         {/* Baris 1: Top Navigation Bar */}
-        <div className="relative overflow-hidden bg-white/95 dark:bg-[#070913]/95 border-b border-stone-200/90 dark:border-indigo-500/30 w-full shadow-sm transition-all duration-300 backdrop-blur-md">
+        <div className="relative overflow-hidden bg-white/95 dark:bg-[#070913]/90 border-b border-stone-200/90 dark:border-indigo-500/35 w-full shadow-sm transition-all duration-300 backdrop-blur-md">
           {/* Light Mode Subtle Watermark Foliage Accent (opacity 0.18 - 0.25) */}
           {!isDark && <NatureFocusHeaderAccent />}
 
@@ -160,9 +248,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className="p-2 -ml-1 rounded-2xl text-slate-700 dark:text-slate-200 hover:bg-stone-100 dark:hover:bg-slate-800/80 active:scale-95 transition cursor-pointer flex items-center justify-center shrink-0"
                 aria-label="Kembali ke Beranda"
               >
-                <ArrowLeft className="w-6 h-6" />
+                <ArrowLeft className="w-6 h-6 text-indigo-600 dark:text-cyan-400" />
               </button>
-              <h1 className="font-bold text-base sm:text-xl text-slate-900 dark:text-slate-50 truncate tracking-tight">
+              <h1 className="font-bold text-base sm:text-xl text-slate-900 dark:text-white truncate tracking-tight">
                 {subtest.title || subtest.name}
               </h1>
             </div>
@@ -170,8 +258,8 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             <div className="flex items-center gap-2 sm:gap-3 shrink-0">
               {/* Subtest Information Badge */}
               {totalSubtopics > 0 && (
-                <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-[#121930] border border-stone-200 dark:border-indigo-500/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs">
-                  <span className="text-slate-900 dark:text-slate-100 font-bold">{subtest.modules?.length || 0} Bab</span>
+                <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-gradient-to-r dark:from-blue-950/80 dark:to-indigo-950/80 border border-stone-200 dark:border-cyan-500/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]">
+                  <span className="text-slate-900 dark:text-cyan-200 font-bold">{subtest.modules?.length || 0} Bab</span>
                   <span className="text-slate-400 dark:text-slate-400 text-xs">• {totalSubtopics} Sub-bab</span>
                 </div>
               )}
@@ -185,16 +273,16 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         </div>
 
         {/* Baris 2: Sticky Segmented Tab (Materi vs Drilling Soal) */}
-        <div className="bg-[#fcfbf9]/95 dark:bg-[#090d1d]/95 backdrop-blur-md border-b border-stone-200/90 dark:border-slate-800/80 w-full px-3.5 sm:px-5 py-2.5 transition-colors">
+        <div className="bg-[#fcfbf9]/95 dark:bg-[#080d21]/90 backdrop-blur-md border-b border-stone-200/90 dark:border-slate-800/80 w-full px-3.5 sm:px-5 py-2.5 transition-colors">
           <div className="max-w-4xl mx-auto flex items-center justify-between">
-            <div className="flex items-center bg-stone-100 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 w-full sm:w-auto shadow-2xs">
+            <div className="flex items-center bg-stone-100 dark:bg-[#0a1024] p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 w-full sm:w-auto shadow-2xs">
               <button
                 type="button"
                 onClick={() => onTabChange('materi')}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'materi'
                     ? isDark
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_16px_rgba(0,242,254,0.4)] border border-cyan-400/40'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_18px_rgba(0,242,254,0.5)] border border-cyan-400/50'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
@@ -207,7 +295,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'drilling'
                     ? isDark
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_16px_rgba(0,242,254,0.4)] border border-cyan-400/40'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_18px_rgba(0,242,254,0.5)] border border-cyan-400/50'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
@@ -221,7 +309,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <button
                   type="button"
                   onClick={selectAllSubtest}
-                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/50 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_10px_rgba(0,242,254,0.2)]"
+                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]"
                 >
                   Pilih Semua
                 </button>
@@ -240,40 +328,50 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         </div>
       </div>
 
-      {/* Main Content Area: Distraction-free (clean content area) */}
-      <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-3 sm:py-5">
+      {/* Main Content Area: Separated Standalone Bab Cards (Senada dengan Beranda) */}
+      <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-4 sm:py-6">
         {/* ========================================================
-            TAB 1: MATERI (Accordion Bab & Sub-bab Minim Hiasan)
+            TAB 1: MATERI (Standalone Cosmic/Nature Bab Cards)
             ======================================================== */}
         {activeTab === 'materi' && (
-          <div className="bg-white dark:bg-[#111827] rounded-3xl shadow-sm border border-stone-200/90 dark:border-[rgba(99,102,241,0.25)] divide-y divide-stone-100 dark:divide-slate-800/80 overflow-hidden transition-all duration-300">
+          <div className="space-y-4">
             {(subtest.modules || []).map((mod, modIdx) => {
               const isOpen = openModules.has(mod.id);
 
               return (
-                <div key={mod.id} className="transition-colors">
+                <div
+                  key={mod.id}
+                  className={`rounded-2xl sm:rounded-3xl transition-all duration-300 overflow-hidden ${
+                    isDark
+                      ? `bg-[#0e1736]/90 backdrop-blur-md border ${subtestTheme.border} ${subtestTheme.glow}`
+                      : `bg-white border ${subtestTheme.border} ${subtestTheme.glow}`
+                  }`}
+                >
                   {/* Module Header Row */}
                   <div
                     onClick={() => toggleModule(mod.id)}
-                    className="px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3.5 hover:bg-stone-50/80 dark:hover:bg-slate-800/60 transition cursor-pointer select-none group"
+                    className="px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3.5 transition cursor-pointer select-none group"
                   >
                     {/* Left: Module Squircle Icon */}
                     <div
-                      className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${moduleSquircleStyle} transition-transform duration-200 group-hover:scale-105`}
+                      className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
                     >
                       <ModuleIcon moduleId={mod.id} className="w-8 h-8 sm:w-9 sm:h-9" />
                     </div>
 
                     {/* Middle: Title & Meta Info */}
                     <div className="min-w-0 flex-1">
-                      <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
-                        Bab {modIdx + 1}: {mod.title}
-                      </h2>
-                      <div className="flex items-center gap-2 mt-1 text-xs sm:text-sm text-slate-400 dark:text-slate-400 font-medium">
-                        <span>{mod.subtopics.length} Sub-bab</span>
-                        <span>•</span>
-                        <span>~{mod.estimatedMinutes} mnt</span>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
+                          BAB {modIdx + 1 < 10 ? `0${modIdx + 1}` : modIdx + 1}
+                        </span>
+                        <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                          • {mod.subtopics.length} Sub-bab • ~{mod.estimatedMinutes} mnt
+                        </span>
                       </div>
+                      <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-white leading-snug group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
+                        {mod.title}
+                      </h2>
                     </div>
 
                     {/* Right: Smooth Rotating Chevron */}
@@ -288,37 +386,56 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     </div>
                   </div>
 
-                  {/* Expanded Sub-bab List: Minim Hiasan Accordion */}
+                  {/* Expanded Sub-bab List: Rich Cosmic Cyber Cards */}
                   <div
                     className={`grid transition-all duration-300 ease-out ${
                       isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <div className="bg-[#fffdf9] dark:bg-[#0a0f22] px-3.5 sm:px-6 py-3 border-t border-stone-100 dark:border-slate-800/80 space-y-2 animate-subtopic-slide">
+                      <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3.5 sm:px-6 py-4 border-t border-stone-100 dark:border-indigo-500/25 space-y-2.5 animate-subtopic-slide">
                         {mod.subtopics.map((sub, sIdx) => {
+                          const indexNum = sIdx + 1 < 10 ? `0${sIdx + 1}` : `${sIdx + 1}`;
+
                           return (
                             <div
                               key={sub.id}
                               onClick={() => onSelectMaterial(sub.id)}
                               style={{ animationDelay: `${sIdx * 30}ms` }}
-                              className="flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#0f172a] hover:bg-[#fff9eb] dark:hover:bg-[#131d36] border border-stone-200/90 dark:border-slate-800 hover:border-amber-300/80 dark:hover:border-cyan-400 hover:shadow-xs dark:hover:shadow-[0_0_14px_rgba(0,242,254,0.25)] transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs"
+                              className={`flex items-center justify-between p-3.5 sm:p-4 rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
+                                isDark
+                                  ? 'bg-[#0f1b3b]/90 hover:bg-[#152754] border-slate-700/80 hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(0,242,254,0.35)]'
+                                  : 'bg-white hover:bg-[#fff9eb] border-stone-200/90 hover:border-amber-300/80 hover:shadow-xs'
+                              }`}
                             >
-                              {/* Left: Book Icon + Full Sub-bab Title */}
-                              <div className="flex items-start sm:items-center gap-3 min-w-0 flex-1 py-0.5">
-                                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-50 dark:bg-cyan-950/80 text-amber-700 dark:text-cyan-300 border border-amber-200 dark:border-cyan-800/60 flex items-center justify-center shrink-0 group-hover/sub:bg-amber-500 dark:group-hover/sub:bg-cyan-500 group-hover/sub:text-white dark:group-hover/sub:text-slate-950 transition-colors shadow-2xs mt-0.5 sm:mt-0">
-                                  <BookOpen className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
+                              {/* Left: Index badge + Title */}
+                              <div className="flex items-center gap-3.5 min-w-0 flex-1 py-0.5">
+                                {/* Numbered Cyber Badge */}
+                                <div
+                                  className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl font-mono font-black text-xs sm:text-sm flex items-center justify-center shrink-0 transition-colors shadow-2xs ${subtestTheme.numChip}`}
+                                >
+                                  {indexNum}
                                 </div>
 
-                                <span className="text-sm sm:text-base font-semibold leading-relaxed break-words whitespace-normal flex-1 text-slate-800 dark:text-slate-100 group-hover/sub:text-amber-900 dark:group-hover/sub:text-cyan-200 transition-colors">
-                                  {sub.title}
-                                </span>
+                                <div className="min-w-0 flex-1">
+                                  <span className="text-sm sm:text-base font-bold leading-relaxed break-words whitespace-normal block text-slate-800 dark:text-white group-hover/sub:text-blue-700 dark:group-hover/sub:text-cyan-200 transition-colors">
+                                    {sub.title}
+                                  </span>
+                                  <div className="flex items-center gap-1.5 mt-0.5 text-[11px] font-semibold text-slate-400 dark:text-cyan-400/80">
+                                    <Sparkles className="w-3 h-3 text-amber-500 dark:text-cyan-400" />
+                                    <span>Materi Inti UTBK</span>
+                                  </div>
+                                </div>
                               </div>
 
-                              {/* Right: Clean Read Action */}
-                              <div className="flex items-center gap-1 text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-400 shrink-0 ml-2 group-hover/sub:translate-x-1 transition-transform">
-                                <span className="hidden sm:inline">Baca</span>
-                                <ChevronRight className="w-5 h-5 text-blue-500 dark:text-cyan-400" />
+                              {/* Right: Clean Read Action Pill */}
+                              <div className="shrink-0 ml-2">
+                                <span
+                                  className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-2xs group-hover/sub:translate-x-1 ${subtestTheme.actionPill}`}
+                                >
+                                  <span>Baca Materi</span>
+                                  <ChevronRight className="w-4 h-4" />
+                                </span>
                               </div>
                             </div>
                           );
@@ -333,14 +450,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         )}
 
         {/* ========================================================
-            TAB 2: DRILLING SOAL (Setup Latihan Minim Hiasan)
+            TAB 2: DRILLING SOAL (Setup Latihan Standalone Cards)
             ======================================================== */}
         {activeTab === 'drilling' && (
           <div className="space-y-4">
             {/* Quick Header Bar */}
             <div className="flex items-center justify-between px-1">
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-slate-100 text-base sm:text-lg">
+                <h3 className="font-bold text-slate-800 dark:text-white text-base sm:text-lg">
                   Pilih Materi Latihan
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
@@ -351,7 +468,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <button
                   type="button"
                   onClick={selectAllSubtest}
-                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_10px_rgba(0,242,254,0.2)]"
+                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]"
                 >
                   Pilih Semua
                 </button>
@@ -367,37 +484,47 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
               </div>
             </div>
 
-            {/* Accordion identical to Materi view */}
-            <div className="bg-white dark:bg-[#111827] rounded-3xl shadow-sm border border-stone-200/90 dark:border-[rgba(99,102,241,0.25)] divide-y divide-stone-100 dark:divide-slate-800/80 overflow-hidden transition-all duration-300">
+            {/* Standalone Cards for Drilling */}
+            <div className="space-y-4">
               {(subtest.modules || []).map((mod, modIdx) => {
                 const isOpen = openModules.has(mod.id);
                 const selectedInMod = mod.subtopics.filter((s) => selectedSubchapters.has(s.id)).length;
                 const allSelectedInMod = mod.subtopics.length > 0 && selectedInMod === mod.subtopics.length;
 
                 return (
-                  <div key={mod.id} className="transition-colors">
+                  <div
+                    key={mod.id}
+                    className={`rounded-2xl sm:rounded-3xl transition-all duration-300 overflow-hidden ${
+                      isDark
+                        ? `bg-[#0e1736]/90 backdrop-blur-md border ${subtestTheme.border} ${subtestTheme.glow}`
+                        : `bg-white border ${subtestTheme.border} ${subtestTheme.glow}`
+                    }`}
+                  >
                     {/* Module Header Row */}
                     <div
                       onClick={() => toggleModule(mod.id)}
-                      className="px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3.5 hover:bg-stone-50/80 dark:hover:bg-slate-800/60 transition cursor-pointer select-none group"
+                      className="px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3.5 transition cursor-pointer select-none group"
                     >
                       {/* Left: Module Squircle Icon */}
                       <div
-                        className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${moduleSquircleStyle} transition-transform duration-200 group-hover:scale-105`}
+                        className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
                       >
                         <ModuleIcon moduleId={mod.id} className="w-8 h-8 sm:w-9 sm:h-9" />
                       </div>
 
                       {/* Middle: Title & Meta Info */}
                       <div className="min-w-0 flex-1">
-                        <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-snug group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
-                          Bab {modIdx + 1}: {mod.title}
-                        </h2>
-                        <div className="flex items-center gap-2 mt-1 text-xs sm:text-sm text-slate-400 dark:text-slate-400 font-medium">
-                          <span>{mod.subtopics.length} Sub-bab</span>
-                          <span>•</span>
-                          <span>~{mod.estimatedMinutes} mnt</span>
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
+                            BAB {modIdx + 1 < 10 ? `0${modIdx + 1}` : modIdx + 1}
+                          </span>
+                          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                            • {mod.subtopics.length} Sub-bab • ~{mod.estimatedMinutes} mnt
+                          </span>
                         </div>
+                        <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-white leading-snug group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
+                          {mod.title}
+                        </h2>
                       </div>
 
                       {/* Right: Quick Select / Deselect Module & Chevron */}
@@ -417,10 +544,10 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               return next;
                             });
                           }}
-                          className={`text-xs sm:text-sm font-bold px-3 py-1.5 rounded-xl border transition cursor-pointer shadow-2xs ${
+                          className={`text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-xl border transition cursor-pointer shadow-2xs ${
                             allSelectedInMod
                               ? isDark
-                                ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.5)] font-black'
+                                ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_0_14px_rgba(0,242,254,0.6)] font-black'
                                 : 'bg-blue-600 text-white border-blue-600'
                               : isDark
                               ? 'text-cyan-300 hover:bg-cyan-950/60 border-cyan-400/50'
@@ -447,7 +574,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="bg-[#fffdf9] dark:bg-[#0a0f22] px-3.5 sm:px-6 py-3 border-t border-stone-100 dark:border-slate-800/80 space-y-2 animate-subtopic-slide">
+                        <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3.5 sm:px-6 py-4 border-t border-stone-100 dark:border-indigo-500/25 space-y-2.5 animate-subtopic-slide">
                           {mod.subtopics.map((sub, sIdx) => {
                             const isSelected = selectedSubchapters.has(sub.id);
 
@@ -459,21 +586,21 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 className={`flex items-center justify-between p-3.5 sm:p-4 rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
                                   isSelected
                                     ? isDark
-                                      ? 'bg-[#0e244d] border-cyan-400 text-cyan-100 shadow-[0_0_14px_rgba(0,242,254,0.3)]'
+                                      ? 'bg-[#0c2448] border-cyan-400 text-cyan-100 shadow-[0_0_16px_rgba(0,242,254,0.35)]'
                                       : 'bg-sky-50/90 border-sky-300 shadow-xs'
                                     : isDark
-                                    ? 'bg-[#0f172a] hover:bg-[#131d36] border-slate-800 hover:border-cyan-400/60 text-slate-200'
+                                    ? 'bg-[#0f1b3b]/90 hover:bg-[#152754] border-slate-700/80 hover:border-cyan-400/60 text-slate-200'
                                     : 'bg-white hover:bg-[#fff9eb] border-stone-200/90 hover:border-amber-200 text-slate-800'
                                 }`}
                               >
                                 {/* Left: Icon Zap + Judul Lengkap */}
-                                <div className="flex items-start sm:items-center gap-3 min-w-0 flex-1 py-0.5">
+                                <div className="flex items-start sm:items-center gap-3.5 min-w-0 flex-1 py-0.5">
                                   {/* Icon Sub-bab */}
                                   <div
                                     className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border mt-0.5 sm:mt-0 ${
                                       isSelected
                                         ? isDark
-                                          ? 'bg-cyan-400 text-slate-950 border-cyan-300 shadow-[0_0_10px_rgba(0,242,254,0.6)] font-bold'
+                                          ? 'bg-cyan-400 text-slate-950 border-cyan-300 shadow-[0_0_12px_rgba(0,242,254,0.6)] font-bold'
                                           : 'bg-blue-600 text-white border-blue-600'
                                         : isDark
                                         ? 'bg-slate-800 text-cyan-300 border-slate-700 group-hover/sub:bg-cyan-600 group-hover/sub:text-white'
@@ -485,7 +612,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
                                   {/* Judul Sub-bab */}
                                   <span
-                                    className={`text-sm sm:text-base font-semibold leading-relaxed break-words whitespace-normal flex-1 ${
+                                    className={`text-sm sm:text-base font-bold leading-relaxed break-words whitespace-normal flex-1 ${
                                       isSelected
                                         ? isDark
                                           ? 'text-cyan-100 font-bold'
@@ -522,14 +649,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             {/* Left: Selected count info */}
             <div className="flex items-center justify-between w-full sm:w-auto gap-3">
               <div className="flex items-center gap-3">
-                <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-500 text-white font-black flex items-center justify-center text-sm sm:text-base shadow-sm shrink-0 border border-cyan-400/30">
+                <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-500 text-white font-black flex items-center justify-center text-sm sm:text-base shadow-sm shrink-0 border border-cyan-400/40 shadow-[0_0_12px_rgba(0,242,254,0.4)]">
                   {selectedSubchapters.size}
                 </span>
                 <div>
-                  <div className="text-sm sm:text-base font-bold text-slate-900 dark:text-slate-100">
+                  <div className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
                     {selectedSubchapters.size} Sub-bab Terpilih
                   </div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">
+                  <div className="text-xs text-slate-500 dark:text-cyan-400/80">
                     {selectedSubchapters.size === 0
                       ? 'Pilih minimal 1 sub-bab di atas'
                       : 'Siap untuk drilling latihan'}
@@ -651,7 +778,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className={`px-5 sm:px-8 py-3 sm:py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none ${
                   selectedSubchapters.size > 0
                     ? isDark
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white cursor-pointer shadow-[0_0_24px_rgba(0,242,254,0.55)] border border-cyan-400/40'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white cursor-pointer shadow-[0_0_26px_rgba(0,242,254,0.6)] border border-cyan-400/50'
                       : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 active:scale-95 text-white cursor-pointer shadow-blue-500/25'
                     : 'bg-stone-200 dark:bg-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed'
                 }`}

@@ -272,17 +272,17 @@ export default function App() {
     handleStartDrilling([subchapterId], 10, 15);
   };
 
-  const isHomeView = route.view === 'home';
+  const isAmbientThemeView = route.view === 'home' || route.view === 'subtest' || route.view === 'sma-subject';
   const isDark = theme === 'dark';
 
   return (
     <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-hidden theme-transition">
       {/* 
-        Adaptive Visual Density Ambient Backgrounds:
-        1. Home Dashboard: Rich immersive visuals (Cosmic Nebula & Constellations for Dark, Soft Pastels for Light)
-        2. Focus Views: Distraction-free, clean background without particles crossing reading text
+        Theme Visual Ambient Backgrounds:
+        1. Home, Subtest, & SMA Views: Rich immersive visuals (Cosmic Nebula & Constellations for Dark, Soft Pastels for Light)
+        2. Reading/Drilling Active Views: Distraction-free clean focus background
       */}
-      {isHomeView ? (
+      {isAmbientThemeView ? (
         isDark ? (
           <>
             <CosmicNebulaGlow />
@@ -296,7 +296,7 @@ export default function App() {
           </div>
         )
       ) : (
-        // Distraction-free focus background (clean subtle gradient without particles)
+        // Distraction-free focus background for active reading & exam drilling
         isDark ? (
           <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#070913] via-[#090e1f] to-[#0d1326]" />
         ) : (
@@ -340,6 +340,7 @@ export default function App() {
               {/* Mode UTBK-SNBT: Grid 7 Subtes UTBK */}
               {route.mode === 'utbk' && (
                 <UtbkSubtestGrid
+                  theme={theme}
                   onSelectSubtest={(subtestCode) => {
                     navigateTo({
                       view: 'subtest',
@@ -354,6 +355,7 @@ export default function App() {
               {/* Mode Materi SMA: Grid Mapel SMA */}
               {route.mode === 'sma' && (
                 <SmaSubjectGrid
+                  theme={theme}
                   onSelectSubject={(subjectId) => {
                     navigateTo({
                       view: 'sma-subject',
