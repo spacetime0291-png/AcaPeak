@@ -388,7 +388,9 @@ Kaidah utama di UTBK:
 
 ---
 
-# 5. Bedah Soal
+# 5. Bedah Soal dan Variasi UTBK
+
+Berikut adalah bedah tiga tipe variasi soal Analogi yang paling sering diujikan di UTBK, lengkap dengan wacana soal asli dan penjelasan alur logikanya:
 
 ### Variasi 1: Prediksi Berbasis Analogi Fenomena
 

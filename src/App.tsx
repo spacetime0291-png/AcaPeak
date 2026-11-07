@@ -171,6 +171,7 @@ export default function App() {
         .then((data) => {
           setActiveMaterial(data);
           document.title = `${data.metadata.subtest} - ${data.metadata.title} | SkolAce`;
+          window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
         })
         .catch((err) => {
           console.error('Failed to load material', err);
@@ -290,7 +291,7 @@ export default function App() {
   const isDark = theme === 'dark';
 
   return (
-    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-clip theme-transition">
+    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-hidden bg-[#fdfbf7] dark:bg-[#070913]">
       {/* 
         Theme Visual Ambient Backgrounds:
         1. Home, Subtest, & SMA Views: Rich immersive visuals (Cosmic Nebula & Constellations for Dark, Soft Pastels for Light)
@@ -308,9 +309,9 @@ export default function App() {
       ) : (
         // Distraction-free focus background for active reading & exam drilling
         isDark ? (
-          <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#070913] via-[#090e1f] to-[#0d1326]" />
+          <div className="fixed inset-0 pointer-events-none z-0 bg-[#070913]" />
         ) : (
-          <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#fdfbf7] via-[#f9fbf9] to-[#f4f9f5]" />
+          <div className="fixed inset-0 pointer-events-none z-0 bg-[#fdfbf7]" />
         )
       )}
 

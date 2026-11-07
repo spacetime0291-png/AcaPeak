@@ -44,6 +44,11 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   // Focus Mode toggle
   const [isFocusMode, setIsFocusMode] = useState<boolean>(false);
 
+  // Always ensure reading begins at the top of the document
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [metadata.id]);
+
   // Render centered SVG container with academic caption
   const renderSvgContainer = (svgItem: SvgVisualization, index: number) => (
     <figure
@@ -151,9 +156,9 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   };
 
   return (
-    <div className="min-h-screen text-slate-800 dark:text-[#f8fafc] animate-page-enter transition-all duration-300 pb-12">
+    <div className="min-h-screen text-slate-800 dark:text-[#f8fafc] pb-12">
       {/* 1. TOP STATIS/STICKY BAR: Tombol kembali ke bab dan judul sub bab materi */}
-      <div className="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#0c1224]/95 backdrop-blur-md border-b border-stone-200/90 dark:border-indigo-500/25 shadow-xs transition-all duration-300">
+      <div className="sticky top-0 z-40 w-full bg-white/95 dark:bg-[#0c1224]/95 backdrop-blur-md border-b border-stone-200/90 dark:border-indigo-500/25 shadow-xs">
         {!isDark && <NatureFocusHeaderAccent />}
 
         <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between gap-2">
