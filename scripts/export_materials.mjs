@@ -29,32 +29,57 @@ const MATERIAL_PU_01_01 = {
   },
   content: {
     tactical_overview:
-      'Generalisasi menarik simpulan umum dari sampel data atau peristiwa khusus. Kunci penting UTBK: simpulan generalisasi tidak pernah bernilai 100% mutlak pasti (hindari kata "semua" atau "pasti"). Pilih simpulan terukur (sebagian besar, cenderung) dan jangan pernah melompat ke luar kelompok/wilayah yang dibahas dalam wacana.',
-    exam_blueprint_markdown: `# 1. Kaidah dan Prinsip Dasar
+      'Generalisasi adalah menarik kesimpulan umum dari sebagian contoh atau data. Kunci UTBK: kesimpulan tidak pernah bernilai pasti 100% (hindari kata "semua" atau "pasti"). Selalu pilih kalimat yang terukur (sebagian besar, cenderung) dan jangan pernah melompat ke luar kelompok atau wilayah yang dibahas di teks.',
+    exam_blueprint_markdown: `# 1. Prinsip Dasar
 
-Generalisasi adalah proses menarik simpulan umum yang berlaku luas berdasarkan sejumlah fakta, data, atau peristiwa khusus (sampel) yang diamati.
+Generalisasi adalah cara mengambil kesimpulan umum yang berlaku luas berdasarkan sebagian contoh, fakta, atau data yang diamati.
 
-Dalam tes UTBK-SNBT, penalaran generalisasi bertumpu pada tiga kaidah berpikir logis yang mutlak:
-
-1. **Hasil Generalisasi Tidak Pernah Bernilai 100% Mutlak Pasti**  
-   Generalisasi merupakan penalaran induktif yang bersifat probabilistik (tingkat kemungkinan), bukan deduksi matematika yang pasti mutlak. Oleh karena itu, kunci jawaban yang benar di UTBK hampir selalu menggunakan kata-kata terukur seperti:
-   - **"Sebagian besar"** atau **"Mayoritas"**
-   - **"Cenderung"**
-   - **"Kemungkinan besar"**
-   - **"Pada umumnya"**
-   - **"Berpotensi"**
-
-2. **Kepatuhan pada Batas Wilayah dan Kelompok (Scope)**  
-   Simpulan tidak boleh melompat keluar dari batasan populasi yang diteliti. Jika wacana teks hanya membahas *"pengguna motor listrik di Jakarta"*, maka simpulan yang sah hanya berlaku untuk wilayah Jakarta, bukan untuk *"seluruh masyarakat Indonesia"*.
-
-3. **Prinsip Pengecualian Data**  
-   Jika di dalam data teks terdapat satu saja kasus pengecualian (misalnya ada responden yang tidak mengalami perubahan), maka semua pilihan jawaban yang menggunakan kata mutlak seperti *"semua"*, *"seluruh"*, *"setiap"*, *"pasti"*, atau *"selalu"* otomatis salah.
+Tiga aturan main penting di UTBK:
+1. **Tidak Pernah Pasti 100% (Jangan Pukul Rata)**  
+   Karena hanya meneliti sebagian data, hasilnya tidak bisa dipukul rata. Kunci jawaban yang benar di UTBK hampir selalu memakai kata terukur seperti: *"sebagian besar"*, *"cenderung"*, *"kemungkinan besar"*, atau *"pada umumnya"*.
+2. **Jangan Melompat Keluar dari Batasan Data**  
+   Kalau teks hanya meneliti *pengguna motor di Jakarta*, kesimpulannya hanya berlaku untuk warga Jakarta. Pilihan yang melompat ke *seluruh Indonesia* otomatis salah.
+3. **Ada Pengecualian? Kata "Semua" Otomatis Gugur**  
+   Kalau ada satu saja data yang berbeda (misalnya dari 500 orang ada 40 orang yang tidak hemat), maka opsi yang menggunakan kata mutlak seperti *"semua"*, *"pasti"*, atau *"selalu"* langsung gugur.
 
 ---
 
-# 2. Bedah Variasi Soal dan Penjelasan
+# 2. Jebakan Pengecoh Khas UTBK
 
-Berikut adalah bedah tipe variasi soal Generalisasi yang paling sering diujikan di UTBK, lengkap dengan wacana soal asli dan penjelasan alur logikanya:
+1. **Jebakan Kata Mutlak (Pukul Rata)**  
+   Pilihan jawaban memakai kata *semua, seluruh, selalu, pasti,* atau *satu-satunya*. Jika teks memuat persentase kurang dari 100% atau ada pengecualian, langsung coret opsi ini.
+2. **Jebakan Melompat Keluar Topik (Melebar)**  
+   Data wacana hanya meneliti satu kota atau satu kelompok kecil, tetapi pilihan jawaban menyimpulkan untuk seluruh masyarakat luas.
+3. **Jebakan Mengarang Nasib Lawan**  
+   Menyimpulkan nasib kebalikan yang tidak diteliti. Contoh: teks menyebut *pengguna motor listrik hemat*, opsi jawaban malah mengarang *pengguna motor bensin pasti rugi besar*. Jangan pilih hal yang tidak dibahas.
+
+---
+
+# 3. Trik Cepat (15 Detik)
+
+1. **Kunci Siapa & Di Mana:**  
+   Lihat subjek dan lokasi penelitian di wacana. Singkirkan pilihan yang menyebut tempat atau kelompok lain.
+2. **Coret Kata Mutlak:**  
+   Langsung eliminasi opsi dengan kata: *pasti, selalu, semua, seluruh, mutlak, satu-satunya*.
+3. **Pilih Kata Terukur:**  
+   Utamakan opsi yang memakai kata ramah kemungkinan: *sebagian besar, cenderung, berpotensi, kemungkinan besar*.
+4. **Cek Fakta Data:**  
+   Pastikan kesimpulan sejalan dengan angka atau arah tren di teks (tidak melebih-lebihkan).
+
+---
+
+# 4. Kesimpulan
+
+- **Inti Materi:** Generalisasi menyimpulkan hal umum dari sebagian data yang diamati.
+- **Sifat Jawaban:** Tidak pernah pasti 100%; selalu pilih kalimat yang terukur (*sebagian besar, cenderung*).
+- **Batasan Ketat:** Kesimpulan wajib setia pada wilayah dan kelompok yang ada di teks wacana.
+- **Waspada Pengecualian:** Jika ada pengecualian data, kata *"semua"* atau *"pasti"* otomatis salah.
+
+---
+
+# 5. Bedah Soal dan Variasi UTBK
+
+Berikut adalah bedah tiga variasi soal Generalisasi yang sering keluar di UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda, dan pembahasan analisisnya:
 
 ### Variasi 1: Simpulan Proporsi Sampel (Tipe Mayoritas)
 
@@ -72,15 +97,14 @@ Berikut adalah bedah tipe variasi soal Generalisasi yang paling sering diujikan 
 
 **Kunci Jawaban: C**
 
-**Bedah Logika & Penjelasan:**
-- **Identifikasi Data:** Dari total 500 responden, sebanyak 460 orang (92%) mengalami penghematan biaya operasional, sedangkan 40 orang (8%) tidak merasakan penghematan.
+**Bedah Logika & Pembahasan:**
+- **Analisis Data:** Dari 500 orang, sebanyak 460 orang (92%) merasa hemat, sedangkan 40 orang (8%) merasa biayanya sama saja. Karena 92% adalah mayoritas (namun bukan 100%), sebutan yang paling tepat adalah *"sebagian besar"*.
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Mengabaikan 40 responden yang tidak hemat. Kata *"semua"* terlalu mutlak.
-  - **B Salah:** Membuat klaim mutlak terhadap seluruh masyarakat umum yang tidak diteliti.
-  - **D Salah:** Menyimpulkan vonis mutlak (*pasti tidak cocok*) yang tidak ada di teks wacana.
-  - **E Salah:** Melompat keluar wilayah penelitian (*out of scope* Jakarta $\to$ luar Jakarta).
-- **Simpulan yang Benar:** *"Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan."*  
-  Simpulan ini tepat karena setia pada data proporsi (92% merupakan sebagian besar) dan wilayah target penelitian (Jakarta).
+  - **A Salah:** Kata *"Semua"* salah karena ada 40 responden yang tidak merasakan hemat (tidak boleh pukul rata).
+  - **B Salah:** Kata *"selalu"* dan *"seluruh masyarakat"* membuat klaim berlebihan terhadap masyarakat umum yang tidak diteliti.
+  - **D Salah:** Memberi vonis mutlak (*pasti tidak cocok*) yang tidak dinyatakan di wacana.
+  - **E Salah:** Melompat keluar wilayah (*masyarakat luar Jakarta*), padahal penelitian hanya di Jakarta.
+- **Trik Cepat (15 Detik):** Karena ada 40 orang yang tidak hemat, coret opsi berkata mutlak (*semua, selalu, pasti* di A, B, D). Coret E karena keluar wilayah Jakarta. Tersisa **C**.
 
 ---
 
@@ -100,15 +124,14 @@ Berikut adalah bedah tipe variasi soal Generalisasi yang paling sering diujikan 
 
 **Kunci Jawaban: B**
 
-**Bedah Logika & Penjelasan:**
-- **Identifikasi Data:** Terjadi kenaikan konsisten penjualan kopi arabika di beberapa kuartal berturut-turut (12%, 15%, 18%) setelah petani menerapkan teknik fermentasi tertutup.
+**Bedah Logika & Pembahasan:**
+- **Analisis Data:** Penjualan kopi arabika naik konsisten setiap kuartal (12%, 15%, 18%) setelah memakai teknik fermentasi tertutup. Kenaikan berturut-turut ini menunjukkan arah yang baik (*cenderung berdampak positif*).
 - **Mengapa Opsi Lain Salah?**
-  - **A Salah:** Kata *"satu-satunya cara"* tidak didukung teks wacana.
-  - **C Salah:** Melompat ke objek lain (*kopi robusta*), padahal wacana hanya menguji kopi arabika.
-  - **D Salah:** Meramal angka spesifik (*pasti 21%*) secara mutlak tanpa data empiris.
-  - **E Salah:** Menarik kesimpulan negatif sepihak tentang kondisi petani yang tidak diuji.
-- **Simpulan yang Benar:** *"Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut."*  
-  Simpulan ini menyatakan arah tren data secara wajar (*cenderung berdampak positif*) dan tetap berada dalam batasan komoditas wacana (kopi arabika).
+  - **A Salah:** Kata *"satu-satunya cara"* berlebihan; teks tidak pernah menyebut tidak ada cara lain.
+  - **C Salah:** Mengganti jenis komoditas menjadi *"kopi robusta"*, padahal wacana hanya menguji kopi arabika.
+  - **D Salah:** Meramal angka masa depan secara mutlak (*pasti 21%*) padahal datanya belum ada.
+  - **E Salah:** Menuduh petani lain rugi besar padahal hal itu tidak dibahas sama sekali.
+- **Trik Cepat (15 Detik):** Cari kata terukur yang bijak (*cenderung berdampak positif*). Coret kata mutlak di A (*satu-satunya*) dan D (*pasti*). Coret C karena ganti jenis kopi. Jawaban langsung **B**.
 
 ---
 
@@ -128,49 +151,14 @@ Berikut adalah bedah tipe variasi soal Generalisasi yang paling sering diujikan 
 
 **Kunci Jawaban: C**
 
-**Bedah Logika & Penjelasan:**
-- **Identifikasi Cacat Logika:** Peneliti mengklaim bahwa simpulannya berlaku untuk *"seluruh kelompok usia dewasa"* (rentang usia 18 hingga 65 tahun ke atas dengan berbagai latar belakang kesehatan dan profesi). Padahal, subjek yang diuji hanya 25 mahasiswa tingkat akhir dari satu fakultas teknik yang usianya sebaya (21-23 tahun) dan sangat homogen.
-- **Kekeliruan Ilmiah:** Jumlah sampel terlalu sedikit dan tidak representatif untuk mewakili heterogenitas orang dewasa. Kesalahan penarikan simpulan ini dikenal sebagai *Hasty Generalization* (generalisasi tergesa-gesa).
-- **Simpulan Evaluasi yang Benar:** *"Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa."*
-
----
-
-# 3. Jebakan Pengecoh Khas UTBK
-
-Perhatikan tiga jenis jebakan opsi jawaban yang sengaja dirancang untuk mengecoh peserta ujian:
-
-1. **Jebakan Kuantor Universal Ekstrem**  
-   Penggunaan kata mutlak seperti *semua*, *selalu*, *pasti*, *seluruh*, atau *tidak pernah*. Jika wacana memuat data persentase kurang dari 100% atau memiliki pengecualian, coret opsi ini seketika.
-
-2. **Jebakan Lompatan Cakupan Wilayah (Overgeneralization)**  
-   Data wacana hanya menguji siswa di kota A atau pekerja di perusahaan B, namun opsi jawaban menarik simpulan untuk seluruh masyarakat Indonesia.
-
-3. **Jebakan Negasi Tak Berdasar**  
-   Menyimpulkan nasib kebalikan dari kelompok yang tidak diteliti. Contoh: jika teks menyebut *"pengguna motor listrik lebih hemat biaya operasional"*, jangan memilih opsi yang menyebut *"pengguna motor bensin pasti akan bangkrut"*.
-
----
-
-# 4. Cara Cepat & Trik Eliminasi Kilat (15 Detik)
-
-Lakukan 4 langkah praktis ini saat membaca soal generalisasi di ruang ujian:
-
-1. **Langkah 1 - Kunci Batas Sampel:**  
-   Garis bawahi siapa subjek penelitian dan di mana lokasinya. Singkirkan langsung pilihan yang menyebut subjek atau wilayah lain di luar wacana.
-2. **Langkah 2 - Coret Kata Mutlak:**  
-   Eliminasi opsi yang mengandung kata: **pasti, selalu, seluruh, semua, mutlak, satu-satunya**.
-3. **Langkah 3 - Pilih Kata Probabilistik Terukur:**  
-   Prioritaskan pilihan yang memuat kata kunci simpulan sah: **sebagian besar, cenderung, umumnya, berpotensi, kemungkinan besar**.
-4. **Langkah 4 - Periksa Kesetiaan Data:**  
-   Pastikan klaim simpulan tidak melampaui fakta angka atau fakta tren yang tertulis di teks wacana.
-
----
-
-# 5. Kesimpulan Intisari
-
-- Generalisasi adalah penarikan simpulan umum dari **data sampel khusus**.
-- Simpulan generalisasi **tidak pernah bernilai pasti mutlak**, melainkan bersifat kemungkinan logis (*probabilistik*).
-- Simpulan yang sah wajib **setia pada batas cakupan sampel** (lokasi, jumlah, dan jenis objek penelitian).
-- Kunci jawaban yang tepat di UTBK selalu menggunakan **bahasa yang terukur dan terbebas dari kuantor ekstrem**.`,
+**Bedah Logika & Pembahasan:**
+- **Analisis Masalah:** Peneliti mengklaim hasilnya berlaku untuk *"seluruh usia dewasa"* (dari usia 18 sampai lanjut usia). Padahal yang diuji hanya 25 anak kuliahan satu fakultas yang umurnya sebaya (21-23 tahun). Jelas contoh ini terlalu sedikit dan terlalu seragam untuk mewakili semua orang dewasa.
+- **Mengapa Opsi Lain Salah?**
+  - **A Salah:** Membandingkan dengan cokelat susu tidak wajib karena fokus penelitian adalah cokelat hitam.
+  - **B Salah:** Waktu 2 minggu adalah waktu yang wajar dalam tes daya ingat.
+  - **D Salah:** Kenaikan skor 20% adalah peningkatan yang sudah cukup besar.
+  - **E Salah:** Peningkatan diukur dari perbandingan sebelum vs sesudah makan cokelat pada orang yang sama.
+- **Trik Cepat (15 Detik):** Bandingkan peserta uji (*hanya 25 mahasiswa*) dengan klaim kesimpulan (*seluruh usia dewasa*). Jurang perbedaannya sangat lebar. Kelemahan fatalnya adalah sampel tidak mewakili populasi. Jawaban: **C**.`,
     visualizations_svg: [],
     distractor_traps: [
       'Hasty Generalization (Generalisasi Terburu-buru): Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.',
