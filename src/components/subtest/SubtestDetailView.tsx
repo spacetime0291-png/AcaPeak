@@ -18,6 +18,7 @@ import { NatureFocusHeaderAccent } from '../decorations/NatureDecorations';
 interface SubtestDetailViewProps {
   subtest: SubtestItem;
   activeTab: 'materi' | 'drilling';
+  initialSelectedTopicId?: string;
   theme?: 'light' | 'dark';
   onToggleTheme?: () => void;
   onTabChange: (tab: 'materi' | 'drilling') => void;
@@ -34,6 +35,7 @@ interface SubtestDetailViewProps {
 export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   subtest,
   activeTab,
+  initialSelectedTopicId,
   theme = 'light',
   onToggleTheme = () => {},
   onTabChange,
@@ -43,20 +45,40 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 }) => {
   const isDark = theme === 'dark';
 
-  // Accordion state: Set of open module IDs (first module open by default)
+  // Multi-select state strictly for the dedicated Drilling tab
+  const [selectedSubchapters, setSelectedSubchapters] = useState<Set<string>>(() => {
+    return initialSelectedTopicId ? new Set([initialSelectedTopicId]) : new Set();
+  });
+
+  // Accordion state: Set of open module IDs
   const [openModules, setOpenModules] = useState<Set<string>>(() => {
+    if (initialSelectedTopicId && subtest.modules) {
+      const parentMod = subtest.modules.find((m) =>
+        m.subtopics.some((s) => s.id === initialSelectedTopicId)
+      );
+      if (parentMod) {
+        return new Set([parentMod.id]);
+      }
+    }
     const firstMod = subtest.modules?.[0]?.id;
     return new Set(firstMod ? [firstMod] : []);
   });
 
-  // Reset or keep first module open when subtest changes
+  // Reset or keep first module open when subtest changes or topic is selected
   useEffect(() => {
-    const firstMod = subtest.modules?.[0]?.id;
-    setOpenModules(new Set(firstMod ? [firstMod] : []));
-  }, [subtest.code]);
-
-  // Multi-select state strictly for the dedicated Drilling tab
-  const [selectedSubchapters, setSelectedSubchapters] = useState<Set<string>>(new Set());
+    if (initialSelectedTopicId) {
+      setSelectedSubchapters(new Set([initialSelectedTopicId]));
+      const parentMod = subtest.modules?.find((m) =>
+        m.subtopics.some((s) => s.id === initialSelectedTopicId)
+      );
+      if (parentMod) {
+        setOpenModules((prev) => new Set([...prev, parentMod.id]));
+      }
+    } else {
+      const firstMod = subtest.modules?.[0]?.id;
+      setOpenModules(new Set(firstMod ? [firstMod] : []));
+    }
+  }, [subtest.code, initialSelectedTopicId]);
   const [questionCount, setQuestionCount] = useState<number>(10);
   const [timerMinutes, setTimerMinutes] = useState<number | null>(15);
 

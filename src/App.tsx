@@ -25,6 +25,7 @@ interface AppRouteState {
   materiId?: string;
   drillingQuestionIndex?: number;
   smaSubjectId?: string;
+  selectedTopicId?: string;
 }
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
     const drilling = params.get('drilling');
     const questionNo = parseInt(params.get('no') || '1', 10);
     const subject = params.get('subject') || params.get('mapel');
+    const selectedTopic = params.get('topic') || params.get('selected');
 
     if (drilling === 'active') {
       return {
@@ -73,6 +75,7 @@ export default function App() {
         mode: 'utbk',
         subtestCode: subtest.toLowerCase(),
         tab,
+        selectedTopicId: selectedTopic || undefined,
       };
     }
 
@@ -124,6 +127,7 @@ export default function App() {
     if (newRoute.view === 'subtest' && newRoute.subtestCode) {
       params.set('subtest', newRoute.subtestCode.toLowerCase());
       if (newRoute.tab) params.set('tab', newRoute.tab);
+      if (newRoute.selectedTopicId) params.set('selected', newRoute.selectedTopicId);
     } else if (newRoute.view === 'materi' && newRoute.materiId) {
       if (newRoute.subtestCode) params.set('subtest', newRoute.subtestCode.toLowerCase());
       params.set('materi', newRoute.materiId);
@@ -270,7 +274,16 @@ export default function App() {
   };
 
   const handleStartDrillingSingleTopic = (subchapterId: string) => {
-    handleStartDrilling([subchapterId], 10, 15);
+    const code = activeMaterial
+      ? activeMaterial.metadata.subtest.toLowerCase()
+      : (route.subtestCode || 'pu');
+    navigateTo({
+      view: 'subtest',
+      mode: 'utbk',
+      subtestCode: code,
+      tab: 'drilling',
+      selectedTopicId: subchapterId,
+    });
   };
 
   const isAmbientThemeView = route.view === 'home' || route.view === 'subtest' || route.view === 'sma-subject';
@@ -378,6 +391,7 @@ export default function App() {
             <SubtestDetailView
               subtest={currentSubtest}
               activeTab={route.tab || 'materi'}
+              initialSelectedTopicId={route.selectedTopicId}
               theme={theme}
               onToggleTheme={toggleTheme}
               onTabChange={(newTab) => {
