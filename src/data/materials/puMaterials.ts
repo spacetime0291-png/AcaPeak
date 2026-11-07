@@ -15,40 +15,65 @@ export const MATERIAL_PU_01_01: Material = {
       'Evaluasi Kualitas Generalisasi (HOTS)',
     ],
     requires_svg: false,
-    updated_at: '2026-11-06',
+    updated_at: '2026-11-07',
   },
   content: {
     tactical_overview:
-      'Simpulan induktif generalisasi tidak pernah 100% pasti mutlak, melainkan bersifat probabilistik. Kunci utama UTBK: waspadai lompatan cakupan sampel (scope) dan selalu eliminasi opsi jawaban dengan kuantor ekstrem mutlak (pasti, selalu, seluruh) jika data teks memiliki batasan atau pengecualian.',
-    exam_blueprint_markdown: `### 1. Konsep & Pola Logika Inti
+      'Generalisasi menarik simpulan umum dari sampel data atau peristiwa khusus. Kunci penting UTBK: simpulan generalisasi tidak pernah bernilai 100% mutlak pasti (hindari kata "semua" atau "pasti"). Pilih simpulan terukur (sebagian besar, cenderung) dan jangan pernah melompat ke luar kelompok/wilayah yang dibahas dalam wacana.',
+    exam_blueprint_markdown: `### 1. Bedah Konsep Berdasarkan Contoh Nyata Soal UTBK
 
-**Generalisasi** adalah proses penarikan simpulan umum berdasarkan sejumlah data, fakta, atau peristiwa khusus (sampel) yang memiliki kemiripan sifat.
+Mari kita pelajari cara berpikir **Generalisasi** lewat penggalan teks soal UTBK yang sering muncul:
 
-$$P(x_1) \\land P(x_2) \\land \\dots \\land P(x_n) \\xrightarrow{\\text{Induksi}} \\text{Kemungkinan besar } \\forall x, P(x)$$
+> **Wacana Soal:**  
+> *"Berdasarkan hasil survei terhadap 500 pengguna motor listrik di Jakarta, sebanyak 460 pengguna mengaku berhasil menghemat biaya operasional bulanan hingga 60%. Sementara itu, 40 pengguna lainnya merasa biaya operasionalnya tidak banyak berubah karena jarak tempuh hariannya sangat dekat."*  
+>  
+> **Pertanyaan UTBK:** *Simpulan yang paling tepat berdasarkan teks di atas adalah...*
 
-- **Prinsip Utama UTBK:** Simpulan induktif **tidak pernah 100% pasti mutlak**, melainkan bersifat **probabilistik** (*kemungkinan besar, cenderung, sebagian besar, umumnya*).
-- **Syarat Generalisasi Kuat:**
-  1. **Kuantitas Sampel Memadai:** Semakin banyak contoh khusus ($n$) yang diamati, semakin kuat simpulannya.
-  2. **Representatif:** Sampel mewakili keseluruhan populasi, bukan kasus ekstrem atau anomali.
-  3. **Kesesuaian Cakupan (*Scope*):** Simpulan tidak melompat keluar dari kategori kelompok yang dibahas pada premis.
+Bagaimana cara menentukan kesimpulan yang **sah** di UTBK?
+
+1. **Kenali Datanya (Sampel Khusus):**
+   - Yang disurvei: *500 pengguna motor listrik di Jakarta*.
+   - Hasilnya: Sebagian besar (460 orang atau 92%) hemat, tetapi **ada 40 orang yang tidak hemat**.
+
+2. **Uji Opsi Jawaban (Mengapa Benar vs Salah?):**
+   - ❌ **Opsi Jebakan 1:** *"Semua pengguna motor listrik di Jakarta berhasil menghemat biaya."*  
+     👉 **Salah!** Mengapa? Karena ada 40 orang yang tidak hemat. Kata **"Semua"** terlalu mutlak dan mengabaikan fakta teks.
+   - ❌ **Opsi Jebakan 2:** *"Masyarakat di seluruh Indonesia pasti hemat jika beralih ke motor listrik."*  
+     👉 **Salah!** Wacana hanya meneliti pengguna di Jakarta, bukan seluruh Indonesia (*Lompatan Cakupan/Out of Scope*).
+   - ✔️ **Opsi Kunci Jawaban Benar:** *"Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya bulanan."*  
+     👉 **Tepat!** Sesuai fakta data wacana dan menggunakan bahasa yang terukur (*sebagian besar*).
 
 ---
 
-### 2. Tabel Terjemahan Premis ke Simpulan Valid
+### 2. Aturan Emas UTBK dalam Menarik Kesimpulan Generalisasi
 
-| Pola Data pada Teks (Premis Khusus) | Kata Kunci Simpulan Valid | Kata Kunci Pengecoh (Opsi Salah) |
+Dari contoh soal di atas, ada 3 prinsip utama yang selalu diuji dalam UTBK:
+
+1. **Hasil Generalisasi Tidak Pernah 100% Mutlak:**  
+   Simpulan induktif selalu bersifat **probabilistik** (kemungkinan). Cari kata kunci: **"sebagian besar"**, **"cenderung"**, **"kemungkinan besar"**, atau **"pada umumnya"**.
+2. **Jangan Melompat Keluar dari Batas Wilayah atau Kelompok (Scope):**  
+   Jika teks berbicara tentang *"siswa SMA di Surabaya"*, jangan pilih jawaban yang menyimpulkan *"pelajar di Indonesia"*.
+3. **Waspadai Kata Mutlak (Pasti, Semua, Selalu):**  
+   Jika data di teks ada sedikit saja pengecualian, opsi yang memakai kata **"pasti"** atau **"selalu"** langsung eliminasi.
+
+---
+
+### 3. Tabel Panduan Kata Kunci Soal vs Kunci Jawaban Valid
+
+| Situasi Data di Teks Soal | Pola Jawaban yang BENAR di Kunci | Jebakan Pengecoh yang SALAH (Langsung Eliminasi) |
 | :--- | :--- | :--- |
-| Seluruh sampel yang diamati memiliki sifat $A$ tanpa terkecuali. | *Umumnya*, *cenderung*, *kemungkinan besar*, *pada umumnya*. | *Pasti*, *selalu*, *tidak mungkin tidak*, *mutlak* (Terlalu ekstrem). |
-| Mayoritas sampel memiliki sifat $A$, tetapi ada 1–2 pengecualian. | *Sebagian besar*, *mayoritas*, *hampir semua*. | *Semua*, *setiap*, *seluruh* (Mengabaikan pengecualian). |
-| Tren data meningkat/menurun secara konsisten dari periode $t_1$ ke $t_n$. | *Cenderung meningkat/menurun*, *diprediksi akan terus...* | *Akan naik selamanya*, *tidak akan pernah turun lagi*. |
+| **Data Mayoritas (Ada Pengecualian)**<br>*Contoh: 9 dari 10 pasien flu sembuh setelah istirahat cukup.* | *"Sebagian besar pasien flu cenderung sembuh dengan istirahat cukup."* | *"Semua pasien flu pasti langsung sembuh jika tidur cukup."* *(Mengabaikan 1 pasien yang belum sembuh)* |
+| **Data Tren Meningkat/Menurun**<br>*Contoh: Penjualan produk X naik konsisten di kuartal 1, 2, dan 3.* | *"Penjualan produk X cenderung mengalami tren kenaikan positif."* | *"Penjualan produk X dipastikan akan naik terus selamanya tanpa henti."* *(Terlalu berlebihan/klaim mutlak)* |
+| **Data Wilayah / Sampel Terbatas**<br>*Contoh: Uji coba tanaman padi varietas A berhasil subur di dataran tinggi Malang.* | *"Varietas A berpotensi tumbuh baik di daerah dataran tinggi beriklim serupa."* | *"Seluruh lahan pertanian di Indonesia cocok ditanami varietas A."* *(Lompat cakupan ke wilayah lain tanpa data)* |
 
 ---
 
-### 3. Jebakan Konsep (*Common Pitfalls*)
+### 4. Trik Eliminasi Cepat di Ruang Ujian (15 Detik)
 
-- **Hasty Generalization (Generalisasi Terburu-buru):** Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.
-- **Overgeneralization (Lompatan Cakupan):** Teks hanya membahas *"siswa SMA di kota X"*, tetapi opsi jawaban menyimpulkan *"seluruh pelajar di Indonesia"*.
-- **Jebakan Kuantor Universal (*"Semua/Selalu"*):** Jika di dalam teks terdapat kata *"beberapa"*, *"sebagian"*, atau ada kasus pengecualian, langsung **eliminasi** opsi yang menggunakan kata *"semua"* atau *"pasti"*.`,
+1. **Langkah 1:** Baca angka atau kata penjelas sampel di teks (apakah ada kata *sebagian*, *mayoritas*, atau persentase tertentu).
+2. **Langkah 2:** Langsung coret opsi jawaban yang mengandung kata ekstrem: **semua, seluruh, selalu, pasti, mutlak, tidak pernah**.
+3. **Langkah 3:** Coret opsi yang membawa kelompok atau lokasi baru yang tidak pernah dibahas di teks.
+4. **Langkah 4:** Pilih opsi yang menggunakan kata terukur seperti **cenderung, sebagian besar, berpotensi, kemungkinan besar**.`,
     visualizations_svg: [],
     distractor_traps: [
       'Hasty Generalization (Generalisasi Terburu-buru): Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.',
@@ -56,7 +81,7 @@ $$P(x_1) \\land P(x_2) \\land \\dots \\land P(x_n) \\xrightarrow{\\text{Induksi}
       'Jebakan Kuantor Universal ("Semua/Selalu"): Jika di dalam teks terdapat kata beberapa, sebagian, atau ada kasus pengecualian, langsung eliminasi opsi yang menggunakan kata semua atau pasti.',
     ],
     quick_execution_algorithm: [
-      'Identifikasi populasi dan ukuran sampel (n) yang diobservasi dalam teks wacana.',
+      'Identifikasi populasi dan ukuran sampel yang diobservasi dalam teks wacana.',
       'Periksa apakah terdapat data pengecualian atau hanya mencakup wilayah/sub-populasi tertentu.',
       'Eliminasi opsi berkuantor ekstrem (pasti, selalu, mutlak) atau opsi yang melompat keluar cakupan (out of scope).',
       'Pilih simpulan probabilistik (cenderung, sebagian besar, kemungkinan besar) yang setia pada data premis.',
@@ -100,6 +125,8 @@ $$P(x_1) \\land P(x_2) \\land \\dots \\land P(x_n) \\xrightarrow{\\text{Induksi}
         },
       ],
       correct_answer: 'C',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Cermati data teks: dari 500 orang, 460 orang hemat (mayoritas) dan 40 orang tidak hemat. Karena ada 40 orang yang tidak hemat, pilihan dengan kata mutlak seperti *"semua"* atau *"selalu"* otomatis salah. Perhatikan juga batasan wilayah penelitian!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
 - **Populasi sampel:** Pengguna motor listrik di Jakarta ($n = 500$).
@@ -156,6 +183,8 @@ Tersisa **C**.`,
         },
       ],
       correct_answer: 'B',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Penjualan kopi arabika meningkat konsisten pada kuartal 1 (12%), kuartal 2 (15%), dan kuartal 3 (18%). Cari opsi yang menyatakan kecenderungan dampak positif. Hati-hati dengan opsi yang mengganti jenis komoditas (misal kopi robusta) atau menebak angka masa depan secara mutlak!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
 - **Data khusus:** Kuartal 1 ($+12\\%$), Kuartal 2 ($+15\\%$), Kuartal 3 ($+18\\%$) pada komoditas kopi arabika setelah penerapan teknik fermentasi tertutup.
@@ -212,6 +241,8 @@ Jawaban: **B**.`,
         },
       ],
       correct_answer: 'C',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Perhatikan perbedaan antara subjek yang diuji (hanya 25 mahasiswa teknik) dengan simpulan peneliti yang mengklaim berlaku untuk *"seluruh kelompok usia dewasa"*. Apakah sampel 25 mahasiswa teknik cukup mewakili seluruh orang dewasa dari berbagai usia dan profesi?',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
 - **Klaim simpulan peneliti:** Berlaku untuk *"seluruh kelompok usia dewasa"* (rentang usia 18 hingga 65+ tahun dengan beragam kondisi fisik dan latar belakang pekerjaan).
@@ -249,49 +280,77 @@ export const MATERIAL_PU_01_02: Material = {
       'Memperlemah Analogi / Critical Disanalogy (HOTS)',
     ],
     requires_svg: false,
-    updated_at: '2026-11-06',
+    updated_at: '2026-11-07',
   },
   content: {
     tactical_overview:
-      'Analogi menarik kesimpulan berdasarkan kemiripan esensial antar dua entitas atau sistem. Kunci UTBK: Kenali apakah soal meminta transfer sifat (A ke B), parallel reasoning (kesetaraan struktur logika), atau mencari critical disanalogy (perbedaan kritis yang meruntuhkan kesimpulan).',
-    exam_blueprint_markdown: `### 1. Konsep & Pola Logika Inti
+      'Penalaran analogi menyimpulkan sifat suatu hal berdasarkan kemiripannya dengan hal lain yang sudah terbukti. Kunci penting UTBK: kenali apakah soal meminta prediksi sifat (mentransfer kesimpulan karena kemiripan kondisi), mencari pola penalaran kembar (parallel reasoning), atau mencari perbedaan kritis (critical disanalogy) yang meruntuhkan argumen.',
+    exam_blueprint_markdown: `### 1. Bedah Konsep Berdasarkan Contoh Nyata Soal UTBK
 
-**Analogi Induktif** adalah penarikan simpulan dengan membandingkan dua entitas atau fenomena berbeda ($A$ dan $B$) yang memiliki sejumlah kesamaan sifat esensial ($p_1, p_2, p_3$). Jika entitas $A$ diketahui memiliki sifat tambahan $q$ yang berkaitan erat dengan sifat-sifat esensial tersebut, maka entitas $B$ disimpulkan kemungkinan besar juga memiliki sifat $q$.
+Mari kita pelajari cara kerja **Penalaran Analogi** lewat studi kasus teks soal asli yang sering keluar di UTBK:
 
-$$\\left. \\begin{array}{l} \\text{Objek } A \\text{ memiliki sifat } p_1, p_2, p_3, \\text{ dan } q \\\\ \\text{Objek } B \\text{ memiliki sifat } p_1, p_2, p_3 \\end{array} \\right\\} \\xrightarrow{\\text{Analogi}} \\text{Objek } B \\text{ kemungkinan besar memiliki sifat } q$$
+> **Wacana Soal:**  
+> *"Planet Kepler-186f dan Planet Bumi sama-sama berada di zona layak huni bintangnya, permukaannya tersusun atas batuan padat, dan menerima panas yang cukup agar air tetap berbentuk cair. Di Bumi, gabungan kondisi tersebut memungkinkan terjadinya siklus air dan hujan yang stabil."*  
+>  
+> **Pertanyaan UTBK:** *Berdasarkan penalaran analogi, simpulan yang paling mungkin benar adalah...*
 
-- **Dua Tipe Soal Analogi di UTBK:**
-  1. **Analogi Argumen/Fenomena (Wacana):** Menyimpulkan nasib atau sifat objek $B$ berdasarkan kemiripan karakteristiknya dengan objek $A$, atau mencari pernyataan yang memiliki **pola penalaran sepadan** (*parallel reasoning*).
-  2. **Analogi Relasi Konsep:** Memetakan fungsi atau mekanisme kerja suatu sistem dengan sistem lain yang sejenis.
+Bagaimana cara logika analogi bekerja di soal ini?
+
+1. **Temukan Titik Kemiripannya (Objek Pembanding):**
+   - Bumi dan Kepler-186f punya 3 kesamaan: sama-sama di zona layak huni, sama-sama berbatu padat, dan suhu memungkinkan air cair.
+2. **Lihat Sifat Tambahan yang Ditransfer:**
+   - Di Bumi, ketiga kondisi itu menghasilkan **siklus air yang stabil**.
+3. **Tarik Kesimpulan Analogi ke Objek Kedua:**
+   - Karena kondisinya mirip, maka Kepler-186f **kemungkinan besar juga memiliki potensi siklus air yang stabil**.
+4. **Waspadai Kesimpulan yang 'Kebablasan':**
+   - ❌ *"Kepler-186f pasti dihuni oleh peradaban manusia cerdas."* 👉 **Salah!** Teks hanya bicara soal air dan suhu, bukan peradaban cerdas. Analogi hanya boleh memindahkan sifat yang relevan, tidak boleh mengarang bebas.
 
 ---
 
-### 2. Tabel Pola Relasi Analogi yang Sering Muncul
+### 2. Dua Tipe Soal Analogi yang Paling Sering Keluar di UTBK
 
-| Jenis Pola Analogi | Struktur Hubungan ($A \\approx B$) | Contoh Penerapan di UTBK |
+Di UTBK, soal analogi biasanya muncul dalam 2 bentuk:
+
+#### Tipe 1: Analogi Fenomena & Kebijakan (Transfer Kesimpulan)
+Menyimpulkan kondisi objek kedua berdasarkan keberhasilan di objek pertama karena kemiripan lingkungannya.
+- *Contoh UTBK:* Program penataan trotoar dan jalur sepeda berhasil mengurangi kemacetan di Kota Solo. Karena Kota Yogyakarta memiliki tata kota dan aktivitas warga yang serupa, maka program tersebut diprediksi juga berpotensi menekan kemacetan di Yogyakarta.
+
+#### Tipe 2: Parallel Reasoning (Pola Penalaran Kembar)
+Mencari kalimat di pilihan ganda yang **cara berpikir logisnya kembar identik** dengan kalimat di soal, meskipun topiknya berbeda jauh!
+- *Contoh Pola di Soal:*  
+  *"Melatih otot secara bertahap membuatnya semakin kuat, tetapi jika langsung dipaksa beban ekstrem akan cedera. Sama halnya belajar koding; latihan logika bertahap membangun pemahaman kokoh, sedangkan langsung mengerjakan proyek raksasa akan memicu kegagalan."*  
+  *(Polanya: [Bertahap $\\to$ Sukses] VS [Berlebihan $\\to$ Rusak/Gagal]).*
+- *Pola Kembar yang Benar di Pilihan Ganda:*  
+  *"Memberi pupuk tanaman bertahap menyuburkan pohon, namun pupuk berlebih membuat tanaman mati; sama halnya memberi materi belajar harus bertahap agar siswa tidak kewalahan."*
+
+---
+
+### 3. Tabel Pola Analogi UTBK & Trik Membedahnya
+
+| Jenis Soal Analogi | Pola Cara Berpikir | Cara Cepat Temukan Kunci Jawaban |
 | :--- | :--- | :--- |
-| **Kesamaan Mekanisme / Fungsi** | Komponen $X$ pada sistem $A$ bekerja dengan cara yang sama seperti komponen $Y$ pada sistem $B$. | Cara kerja *firewall* menyaring trafik jaringan $\\approx$ cara kerja sistem imun menyaring patogen tubuh. |
-| **Prediksi Dampak Kebijakan** | Wilayah/Kasus $A$ dan $B$ punya kondisi demografis serupa. Kebijakan $P$ sukses di $A \\implies$ Kebijakan $P$ diprediksi sukses di $B$. | Subsidi transportasi publik di Kota $X$ menurunkan macet $\\implies$ di Kota $Y$ yang berkarakteristik serupa juga akan menurunkan macet. |
-| **Parallel Reasoning (Struktur Setara)** | Meniru struktur pola logika kalimat tanpa memedulikan topik pembicaraan. | *"Jika bahan baku langka, harga naik. Saat ini harga tidak naik, maka bahan baku tidak langka"* $\\approx$ pola Modus Tollens pada bidang kedokteran atau hukum. |
+| **Transfer Prediksi**<br>*(Contoh: Sistem X sukses $\\to$ Sistem Y diprediksi sukses)* | Membandingkan dua hal yang mirip (misal sistem imun tubuh manusia $\\approx$ sistem keamanan firewall komputer). | Cari kesimpulan yang bernada **probabilitas** (*"kemungkinan besar"*, *"berpotensi"*) dan tolak opsi yang berlebihan (*"pasti sama persis"*). |
+| **Parallel Reasoning**<br>*(Pola Penalaran Kembar)* | Menyalin kerangka logika kalimat: sebab-akibat, perbandingan positif vs negatif. | Abaikan topiknya (apakah bahas sains, olahraga, atau sejarah), fokus ke **rangka logikanya**: apakah ada kontras [jika perlakuan A $\\to$ sukses, perlakuan ekstrem $\\to$ gagal]? |
+| **Memperlemah Analogi (HOTS)**<br>*(Mencari perbedaan fatal)* | Menemukan satu perbedaan mendasar yang membuat perbandingan menjadi tidak sah (*Critical Disanalogy*). | Cari opsi yang menunjukkan bahwa kedua hal itu sebenarnya punya cara kerja yang bertolak belakang (misal: membandingkan toko online dengan toko fisik). |
 
 ---
 
-### 3. Jebakan Konsep (*Common Pitfalls*)
+### 4. Trik Eliminasi Cepat di Ruang Ujian (15 Detik)
 
-- **False Analogy (Analogi Palsu/Dangkal):** Membandingkan dua objek hanya karena kemiripan permukaan atau nama, padahal mekanisme dasarnya bertolak belakang (contoh: menyamakan pengelolaan anggaran negara dengan tabungan uang saku anak sekolah).
-- **Mengabaikan Perbedaan Kritis (*Critical Disanalogy*):** Jika terdapat satu perbedaan faktor krusial antara objek $A$ dan $B$ yang justru menjadi penyebab munculnya sifat $q$, maka analogi langsung gugur.
-- **Jebakan Kesamaan Topik Semu:** Terkecoh memilih opsi hanya karena temanya mirip, bukan karena kesamaan struktur argumennya.`,
+1. **Trik 1 (Cek Kesetaraan Sifat):** Pastikan sifat yang disimpulkan berhubungan langsung dengan kemiripan yang dibahas. Tolak opsi yang menambahkan klaim di luar topik wacana.
+2. **Trik 2 (Untuk Soal Penalaran Kembar):** Buat pola sederhana di kepala: *"Jika bertahap $\\to$ baik, jika berlebihan $\\to$ buruk"*. Lalu cari opsi yang persis memiliki dua sisi perbandingan tersebut.
+3. **Trik 3 (Untuk Soal Memperlemah):** Cari fakta di pilihan ganda yang membongkar bahwa objek pembanding punya mekanisme kerja yang berbeda jauh.`,
     visualizations_svg: [],
     distractor_traps: [
       'False Analogy (Analogi Palsu/Dangkal): Membandingkan dua objek hanya karena kemiripan permukaan atau kemiripan nama, padahal mekanisme dasarnya bertolak belakang.',
-      'Mengabaikan Perbedaan Kritis (Critical Disanalogy): Jika terdapat satu perbedaan faktor krusial antara objek A dan B yang justru menjadi penyebab munculnya sifat q, maka analogi langsung gugur.',
+      'Mengabaikan Perbedaan Kritis (Critical Disanalogy): Jika terdapat satu perbedaan faktor krusial antara dua objek yang justru menjadi penyebab hasil yang berbeda, maka analogi langsung gugur.',
       'Jebakan Kesamaan Topik Semu: Memilih opsi hanya karena sama-sama membahas bidang yang mirip (misal sains atau teknologi), padahal pola struktur penalarannya tidak sepadan.',
     ],
     quick_execution_algorithm: [
-      'Identifikasi sifat dasar bersama (p1, p2, ...) antara entitas A dan entitas B.',
-      'Cari sifat simpulan (q) yang ingin ditransfer dari A ke B.',
-      'Periksa apakah ada perbedaan kritis (critical disanalogy) yang merusak hubungan kausal antara sifat esensial dengan q.',
-      'Untuk soal Parallel Reasoning, abstraksikan kalimat ke formula logika simbolik sebelum mencocokkan struktur dengan opsi jawaban.',
+      'Identifikasi sifat dasar bersama antara dua entitas yang sedang diperbandingkan.',
+      'Cari sifat simpulan yang ingin ditransfer ke entitas kedua.',
+      'Periksa apakah ada perbedaan kritis (critical disanalogy) yang merusak hubungan kausal.',
+      'Untuk soal Parallel Reasoning, abaikan topik dan cocokkan kerangka logika sebab-akibatnya.',
     ],
   },
   worked_examples: [
@@ -332,14 +391,16 @@ $$\\left. \\begin{array}{l} \\text{Objek } A \\text{ memiliki sifat } p_1, p_2, 
         },
       ],
       correct_answer: 'C',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Cari kesamaan antara Bumi dan Kepler-186f (zona laik huni, batuan padat, air cair). Di Bumi, kondisi ini menghasilkan siklus hidrologi stabil. Kesimpulan analogi yang sah harus memprediksi sifat yang sama untuk Kepler-186f secara probabilistik (*"kemungkinan besar"*), bukan kepastian mutlak!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
-- **Entitas A (Bumi):** Zona laik huni ($p_1$) + batuan silikat ($p_2$) + air fase cair ($p_3$) $\\implies$ siklus hidrologi stabil ($q$).
-- **Entitas B (Kepler-186f):** Memiliki sifat $p_1, p_2, p_3$.
-- **Simpulan analogi:** Kepler-186f kemungkinan besar juga memiliki sifat $q$ (potensi terbentuknya siklus hidrologi yang stabil).
+- **Entitas A (Bumi):** Zona laik huni + batuan silikat + air fase cair $\\implies$ siklus hidrologi stabil.
+- **Entitas B (Kepler-186f):** Memiliki sifat yang serupa.
+- **Simpulan analogi:** Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil.
 
 **Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Cek Pasangan Sifat q):**
+      quick_trick_markdown: `**Cara Cepat (Cek Pasangan Sifat Terkait):**
 
 - Cari sifat milik Bumi di akhir kalimat teks yang belum disebutkan untuk Kepler-186f: *"siklus hidrologi yang stabil"*.
 - Pasangkan dengan kata bernada probabilistik (*"kemungkinan besar"*).
@@ -388,6 +449,8 @@ Jawaban langsung terlihat: **C**.`,
         },
       ],
       correct_answer: 'B',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Teks membandingkan dua perlakuan: perlakuan bertahap menghasilkan adaptasi/kekuatan positif, sedangkan beban berlebih sekaligus memicu cedera/kegagalan. Cari opsi pilihan ganda yang juga menyajikan dua perbandingan serupa (bertahap membawa kebaikan, berlebihan memicu kerusakan)!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
 - **Struktur argumen asli:** Membandingkan 2 domain berbeda (Fisik/Otot vs Kognitif/Pemrograman) dengan struktur kontras simetris:
@@ -444,6 +507,8 @@ Jawaban: **B**.`,
         },
       ],
       correct_answer: 'C',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Untuk mematahkan argumen analogi antara Perusahaan Ritel (toko fisik) dan Software, temukan perbedaan mendasar pada sistem kerja keduanya. Perusahaan software bisa bekerja dengan target proyek yang fleksibel, sedangkan toko ritel sangat bergantung pada jam operasional toko fisik melayani pembeli setiap hari!',
       conceptual_solution_markdown: `**Cara Konsep Formal:**
 
 - Untuk memperlemah penalaran analogi, cari **perbedaan kritis (*critical disanalogy*)** yang merusak hubungan kausal antara kesamaan pembanding dengan keberhasilan kebijakan.

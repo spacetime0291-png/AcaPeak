@@ -10,6 +10,7 @@ import {
   Minimize2,
   Zap,
   BookOpen,
+  Lightbulb,
   ChevronDown,
   ChevronUp,
 } from 'lucide-react';
@@ -244,9 +245,9 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
         </div>
       </div>
 
-      {/* 2. PAPER CONTAINER: Compact padding/margin, Maximum Reading Space */}
-      <div className={isFocusMode ? 'py-1 px-1 sm:py-2 sm:px-2' : 'py-3 sm:py-5 px-1 sm:px-3'}>
-        <article className="max-w-4xl mx-auto px-3.5 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 shadow-sm rounded-xl sm:rounded-2xl transition-all duration-300 bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800/90 text-slate-800 dark:text-[#f8fafc]">
+      {/* 2. PAPER CONTAINER: Nyaman dengan margin proporsional */}
+      <div className={isFocusMode ? 'py-3 px-2 sm:py-5 sm:px-4' : 'py-5 sm:py-8 px-3.5 sm:px-6 md:px-8 lg:px-12'}>
+        <article className="max-w-4xl mx-auto px-4 py-5 sm:px-8 sm:py-8 md:px-10 md:py-10 shadow-sm rounded-2xl sm:rounded-3xl transition-all duration-300 bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800/90 text-slate-800 dark:text-[#f8fafc] my-2 sm:my-4">
         {/* Academic Header / Metadata */}
         <header className="border-b-2 border-slate-900 dark:border-slate-700 pb-3 sm:pb-4 mb-4 sm:mb-6">
           <div className="flex flex-wrap items-center justify-between gap-1.5 text-[11px] sm:text-xs uppercase font-mono tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
@@ -509,6 +510,25 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                                   </span>
                                 )}
                               </div>
+
+                              {/* Hint / Petunjuk Pengerjaan */}
+                              {example.hint_markdown && (
+                                <div className="p-3.5 bg-amber-50/80 dark:bg-amber-950/40 rounded-xl border border-amber-200/90 dark:border-amber-800/60 text-amber-950 dark:text-amber-200">
+                                  <div className="flex items-center gap-1.5 font-bold text-xs uppercase tracking-wider text-amber-800 dark:text-amber-300 mb-1">
+                                    <Lightbulb className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+                                    <span>Petunjuk / Hint:</span>
+                                  </div>
+                                  <div className="text-sm leading-relaxed">
+                                    <ReactMarkdown
+                                      remarkPlugins={[remarkMath, remarkGfm]}
+                                      rehypePlugins={[rehypeKatex]}
+                                      components={markdownComponents}
+                                    >
+                                      {example.hint_markdown}
+                                    </ReactMarkdown>
+                                  </div>
+                                </div>
+                              )}
 
                               {/* Conceptual Solution */}
                               <div>

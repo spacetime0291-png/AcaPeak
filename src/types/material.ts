@@ -60,6 +60,7 @@ export interface WorkedExample {
   complex_table?: ComplexTable | null;
   options: QuestionOption[];
   correct_answer: 'A' | 'B' | 'C' | 'D' | 'E' | string;
+  hint_markdown?: string;
   conceptual_solution_markdown: string;
   quick_trick_markdown: string;
   why_others_are_wrong_markdown: string;

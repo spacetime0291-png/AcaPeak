@@ -14,6 +14,7 @@ import {
   Trophy,
   ArrowRight,
   Sparkles,
+  Lightbulb,
   BookOpen,
   ChevronDown,
   ChevronUp,
@@ -54,6 +55,15 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   const [isFinished, setIsFinished] = useState(false);
   // Open solutions in review mode
   const [openReviews, setOpenReviews] = useState<Set<string>>(new Set());
+  // Open hints per question
+  const [openHints, setOpenHints] = useState<Record<string, boolean>>({});
+
+  const toggleHint = (exampleId: string) => {
+    setOpenHints((prev) => ({
+      ...prev,
+      [exampleId]: !prev[exampleId],
+    }));
+  };
 
   // Timer states
   const initialSeconds = timerMinutes ? timerMinutes * 60 : 0;
@@ -356,6 +366,24 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       ))}
                     </div>
 
+                    {/* Hint / Petunjuk Soal */}
+                    <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200/90 dark:border-amber-800/60 text-amber-950 dark:text-amber-200 space-y-1">
+                      <div className="font-bold text-xs uppercase tracking-wider text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
+                        <Lightbulb className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+                        <span>Petunjuk / Hint Soal:</span>
+                      </div>
+                      <div className="text-sm sm:text-[15px] leading-relaxed">
+                        <ReactMarkdown
+                          remarkPlugins={[remarkMath, remarkGfm]}
+                          rehypePlugins={[rehypeKatex]}
+                          components={markdownComponents}
+                        >
+                          {q.hint_markdown ||
+                            '💡 **Petunjuk:** Cermati kata kunci dan batas cakupan wacana, lalu eliminasi opsi yang menggunakan kata mutlak.'}
+                        </ReactMarkdown>
+                      </div>
+                    </div>
+
                     {/* Conceptual solution */}
                     <div className="p-3.5 rounded-xl bg-indigo-50/70 dark:bg-slate-900 border border-indigo-100 dark:border-slate-800 text-indigo-950 dark:text-slate-200 space-y-1.5">
                       <div className="font-bold text-xs uppercase tracking-wider text-indigo-800 dark:text-cyan-400 flex items-center gap-1.5">
@@ -560,6 +588,41 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           >
             {currentQuestion.question_markdown}
           </ReactMarkdown>
+        </div>
+
+        {/* Hint Toggle & Display */}
+        <div className="pt-0.5">
+          <button
+            type="button"
+            onClick={() => toggleHint(currentQuestion.example_id)}
+            className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer border ${
+              openHints[currentQuestion.example_id]
+                ? 'bg-amber-100 dark:bg-amber-950/80 text-amber-900 dark:text-amber-200 border-amber-300 dark:border-amber-700 shadow-2xs'
+                : 'bg-amber-50/70 hover:bg-amber-100 dark:bg-amber-950/40 dark:hover:bg-amber-900/50 text-amber-800 dark:text-amber-300 border-amber-200/80 dark:border-amber-800/60'
+            }`}
+          >
+            <Lightbulb className={`w-4 h-4 ${openHints[currentQuestion.example_id] ? 'text-amber-600 dark:text-amber-400 fill-amber-400' : 'text-amber-500'}`} />
+            <span>{openHints[currentQuestion.example_id] ? 'Sembunyikan Hint' : '💡 Butuh Hint / Petunjuk?'}</span>
+          </button>
+
+          {openHints[currentQuestion.example_id] && (
+            <div className="mt-2.5 p-3.5 sm:p-4 rounded-2xl bg-amber-50/90 dark:bg-amber-950/40 border border-amber-200/90 dark:border-amber-800/80 text-amber-950 dark:text-amber-200 shadow-2xs animate-in fade-in duration-200">
+              <div className="flex items-center gap-2 mb-1.5 font-bold text-xs uppercase tracking-wider text-amber-800 dark:text-amber-300">
+                <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                <span>Petunjuk Pengerjaan (Hint):</span>
+              </div>
+              <div className="text-sm sm:text-[15px] leading-relaxed">
+                <ReactMarkdown
+                  remarkPlugins={[remarkMath, remarkGfm]}
+                  rehypePlugins={[rehypeKatex]}
+                  components={markdownComponents}
+                >
+                  {currentQuestion.hint_markdown ||
+                    '💡 **Petunjuk:** Cermati data dan kata kunci pada teks wacana, lalu eliminasi pilihan yang menggunakan kata kuantor ekstrem (*semua*, *selalu*, *pasti*) jika terdapat batasan data.'}
+                </ReactMarkdown>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Options list A, B, C, D, E */}

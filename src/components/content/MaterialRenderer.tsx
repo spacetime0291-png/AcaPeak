@@ -618,6 +618,23 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
 
                       {/* Solution Tabs / Blocks */}
                       <div className="space-y-3">
+                        {/* 0. Petunjuk / Hint Soal */}
+                        {example.hint_markdown && (
+                          <div className="p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80 text-[15px] sm:text-[16px] text-amber-950 dark:text-amber-200 leading-relaxed">
+                            <div className="flex items-center gap-2 mb-1.5 font-bold text-amber-900 dark:text-amber-300 text-sm sm:text-base uppercase tracking-wide">
+                              <Lightbulb className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+                              <span>Petunjuk / Hint Soal:</span>
+                            </div>
+                            <ReactMarkdown
+                              remarkPlugins={[remarkMath, remarkGfm]}
+                              rehypePlugins={[rehypeKatex]}
+                              components={markdownComponents}
+                            >
+                              {example.hint_markdown}
+                            </ReactMarkdown>
+                          </div>
+                        )}
+
                         {/* 1. Algoritma Eksekusi Konseptual */}
                         <div className="p-4 rounded-xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 text-[15px] sm:text-[16px] text-slate-800 dark:text-slate-200 leading-relaxed">
                           <div className="flex items-center gap-2 mb-2 font-bold text-indigo-900 dark:text-cyan-300 text-sm sm:text-base uppercase tracking-wide">

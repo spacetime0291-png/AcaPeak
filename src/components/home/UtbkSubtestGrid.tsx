@@ -14,7 +14,7 @@ interface UtbkSubtestGridProps {
 
 // 1. Penalaran Umum (PU): Swirling Cosmic Atom / Orbiting Galaxy (Mockup 1 & 2)
 const PuIcon = () => (
-  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="puCoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#FDE047" />
@@ -52,7 +52,7 @@ const PuIcon = () => (
 
 // 2. Pengetahuan & Pemahaman Umum (PPU): 3D Earth Globe + Golden Magnifying Glass (Mockup 1 & 2)
 const PpuIcon = () => (
-  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="globeOceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#38BDF8" />
@@ -109,7 +109,7 @@ const PpuIcon = () => (
 
 // 3. Pemahaman Bacaan & Menulis (PBM): Document Sheet with Bold Yellow Lightning (Mockup 1 & 2)
 const PbmIcon = () => (
-  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#FEF08A" />
@@ -147,7 +147,7 @@ const PbmIcon = () => (
 
 // 4. Pengetahuan Kuantitatif (PK): Sleek Blue Calculator with 4 Colored Buttons (Mockup 1 & 2)
 const PkIcon = () => (
-  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="calcBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
         <stop offset="0%" stopColor="#3B82F6" />
@@ -193,7 +193,7 @@ const PkIcon = () => (
 
 // 5. Literasi Bahasa Indonesia (LBI): Buku Merah-Putih dengan Penanda Pita
 const LbiIcon = () => (
-  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="10" y="10" width="32" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="1.5" />
     {/* Flag Header (Merah) */}
     <path d="M10 11H42V23H10V11Z" fill="#DC2626" />
@@ -210,7 +210,7 @@ const LbiIcon = () => (
 
 // 6. Literasi Bahasa Inggris (LBE): Royal Blue Crest & British Motif
 const LbeIcon = () => (
-  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g transform="translate(9, 9)">
       <rect x="0" y="0" width="34" height="34" rx="6" fill="#1E3A8A" />
       <line x1="0" y1="0" x2="34" y2="34" stroke="#FFFFFF" strokeWidth="4" />
@@ -233,7 +233,7 @@ const LbeIcon = () => (
 
 // 7. Penalaran Matematika (PM): Geometri Segitiga & Kurva Fungsi
 const PmIcon = () => (
-  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M10 40L10 12L38 40H10Z"
       fill="#ECFDF5"
@@ -415,7 +415,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
   });
 
   return (
-    <div className="w-full space-y-4">
+    <div className="w-full space-y-4 px-2 sm:px-4 md:px-6">
       {/* 1. Category Filter Tabs: Semua | TPS | Literasi & Subtitle (Standalone Row directly on background) */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1 z-10 relative">
         <div className="flex items-center bg-stone-100/90 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 shadow-2xs">
@@ -473,7 +473,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       </div>
 
       {/* 2. Standalone Cards Grid (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4.5 z-10 relative">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3.5 md:gap-4 z-10 relative">
         {filteredSubtests.map((sub) => {
           // Dark mode: hilangkan gradasi neon & warna terang yang terlalu ramai, gunakan kartu gelap tenang & elegan
           const cardBgClass = isDark
@@ -493,7 +493,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
               key={sub.code}
               type="button"
               onClick={() => onSelectSubtest(sub.code.toLowerCase())}
-              className={`w-full flex flex-col items-center justify-between p-4 sm:p-5 rounded-[24px] transition-all duration-300 hover:-translate-y-1 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${cardBgClass}`}
+              className={`w-full flex flex-col items-center justify-between p-3 sm:p-3.5 md:p-4 rounded-2xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${cardBgClass}`}
               aria-label={`Buka Subtes ${sub.name}`}
             >
               {/* Light Mode Decorative Corner SVGs */}
@@ -501,23 +501,23 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
 
               {/* Category / Code Pill */}
               <span
-                className={`px-3 py-0.5 rounded-full text-[11px] font-bold shadow-2xs mb-2 transition-colors z-10 ${badgeClass}`}
+                className={`px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold shadow-2xs mb-1.5 transition-colors z-10 ${badgeClass}`}
               >
                 {sub.code} • {sub.category}
               </span>
 
-              {/* Icon Squircle Container (Halo gradasi terang dihilangkan pada tema gelap) */}
-              <div className="relative my-2 z-10 flex items-center justify-center">
+              {/* Icon Squircle Container */}
+              <div className="relative my-1.5 z-10 flex items-center justify-center">
                 <div
-                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shrink-0 ${squircleClass}`}
+                  className={`w-12 h-12 sm:w-14 sm:h-14 md:w-15 md:h-15 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-xs mx-auto transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shrink-0 ${squircleClass}`}
                 >
                   {sub.icon}
                 </div>
               </div>
 
-              {/* Label Nama Subtes Lengkap (Ukuran tulisan judul diperbesar) */}
-              <div className="w-full flex-1 flex flex-col items-center justify-start mt-2.5 z-10">
-                <span className={`text-sm sm:text-base md:text-lg font-bold ${textClass} text-center leading-snug w-full break-words group-hover:text-indigo-600 dark:group-hover:text-cyan-300 transition-colors`}>
+              {/* Label Nama Subtes Lengkap */}
+              <div className="w-full flex-1 flex flex-col items-center justify-start mt-1.5 z-10">
+                <span className={`text-xs sm:text-sm md:text-[15px] font-bold ${textClass} text-center leading-snug w-full break-words group-hover:text-indigo-600 dark:group-hover:text-cyan-300 transition-colors`}>
                   {sub.name}
                 </span>
               </div>
