@@ -115,7 +115,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer relative overflow-hidden select-none ${
                   mode === 'utbk'
                     ? isDark
-                      ? 'bg-[#0e162f] text-cyan-200 border border-cyan-400/80 tab-glow-utbk shadow-md'
+                      ? 'bg-[#0e162f] text-cyan-200 border border-cyan-400 shadow-[0_0_16px_rgba(0,242,254,0.4)]'
                       : 'bg-[#ffe4e6] text-rose-900 border border-rose-300 shadow-xs'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
@@ -137,7 +137,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer relative overflow-hidden select-none ${
                   mode === 'sma'
                     ? isDark
-                      ? 'bg-[#1e170d] text-amber-200 border border-amber-400/80 tab-glow-sma shadow-md'
+                      ? 'bg-[#1e170d] text-amber-200 border border-amber-400 shadow-[0_0_16px_rgba(245,158,11,0.4)]'
                       : 'bg-[#ffedd5] text-amber-900 border border-amber-300 shadow-xs'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
@@ -177,9 +177,9 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
               }}
               onFocus={() => setIsSearchOpen(true)}
               placeholder="Cari sub-bab, bab, atau materi..."
-              className={`w-full text-sm pl-11 pr-10 py-3 rounded-2xl outline-none transition-all shadow-2xs ${
+              className={`w-full text-sm pl-11 pr-10 py-3 rounded-2xl outline-none transition-all shadow-sm ${
                 isDark
-                  ? 'cyber-grid-input text-slate-100 placeholder-slate-400 border border-cyan-500/35 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30'
+                  ? 'cyber-grid-input text-slate-100 placeholder-slate-400 border border-cyan-400/60 shadow-[0_0_15px_rgba(0,242,254,0.3)] focus:border-cyan-300 focus:ring-2 focus:ring-cyan-500/40'
                   : 'bg-white text-slate-800 placeholder-slate-400 border border-slate-200/90 focus:border-blue-500 focus:ring-2 focus:ring-blue-100'
               }`}
             />

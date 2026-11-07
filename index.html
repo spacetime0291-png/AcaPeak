@@ -2,24 +2,33 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="theme-color" content="#4f46e5" />
     <meta name="description" content="Platform Web Edukasi UTBK-SNBT & SMA berskala besar, bebas biaya (Rp0), latency rendah, adaptif Desktop & Mobile." />
-    <title>UTBK-SNBT Edu Platform | Belajar Mandiri & Gratis</title>
-    <!-- Pre-compiled stylesheet fallback for direct branch deployment -->
-    <link rel="stylesheet" href="./assets/index.css">
+    <title>Portal Belajar | UTBK-SNBT & SMA</title>
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('kognitedu_theme');
+          var isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) document.documentElement.classList.add('dark');
+          else document.documentElement.classList.remove('dark');
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+  <body class="antialiased selection:bg-cyan-500 selection:text-white">
     <div id="root"></div>
-    <!-- Vite entry point -->
+    <!-- Development entry point -->
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Fallback loader if /src/main.tsx cannot be loaded directly (e.g. unbuilt static hosting) -->
+    <!-- Fallback production bundle for static hosting (e.g. GitHub Pages) -->
     <script>
       window.addEventListener('error', function (e) {
         if (e.target && e.target.src && e.target.src.includes('main.tsx')) {
           console.warn('Switching to production bundle fallback...');
-          const script = document.createElement('script');
+          var script = document.createElement('script');
           script.type = 'module';
           script.crossOrigin = 'anonymous';
           script.src = './assets/index.js';

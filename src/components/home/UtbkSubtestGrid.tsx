@@ -11,129 +11,207 @@ interface UtbkSubtestGridProps {
   onSelectSubtest: (code: string) => void;
 }
 
-// 1. Penalaran Umum (PU): Ungu-Indigo dengan grafik otak/logika & roda gigi ungu-oranye
+// 1. Penalaran Umum (PU): Swirling Cosmic Atom / Orbiting Galaxy (Mockup 1 & 2)
 const PuIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M17 12C14.79 12 13 13.79 13 16C11.34 16 10 17.34 10 19C10 20.35 10.9 21.5 12.14 21.87C12.05 22.23 12 22.61 12 23C12 24.32 12.57 25.51 13.48 26.33C13.18 27.13 13 27.99 13 28.9C13 31.72 15.28 34 18.1 34C18.74 34 19.35 33.88 19.92 33.66C20.89 35.09 22.48 36 24.3 36C26.12 36 27.71 35.09 28.68 33.66C29.25 33.88 29.86 34 30.5 34C33.32 34 35.6 31.72 35.6 28.9C35.6 27.99 35.42 27.13 35.12 26.33C36.03 25.51 36.6 24.32 36.6 23C36.6 22.61 36.55 22.23 36.46 21.87C37.7 21.5 38.6 20.35 38.6 19C38.6 17.34 37.26 16 35.6 16C35.6 13.79 33.81 12 31.6 12C30.66 12 29.79 12.33 29.1 12.88C28.17 11.72 26.75 11 25.15 11H23.45C21.85 11 20.43 11.72 19.5 12.88C18.81 12.33 17.94 12 17 12Z"
-      fill="#8B5CF6"
-    />
-    <path
-      d="M24.3 12V35"
-      stroke="#6D28D9"
-      strokeWidth="1.6"
-      strokeDasharray="2 2"
-      strokeLinecap="round"
-    />
-    <g transform="translate(18, 17)">
-      <circle cx="9" cy="9" r="7.5" fill="#F97316" />
-      <circle cx="9" cy="9" r="3.5" fill="#FEF3C7" />
-      <path
-        d="M9 1.5V3M9 15V16.5M1.5 9H3M15 9H16.5M3.7 3.7L4.8 4.8M13.2 13.2L14.3 14.3M3.7 14.3L4.8 13.2M13.2 4.8L14.3 3.7"
-        stroke="#EA580C"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-    </g>
-    <circle cx="16.5" cy="18" r="1.3" fill="#DDD6FE" />
-    <circle cx="16" cy="27" r="1.3" fill="#DDD6FE" />
-    <circle cx="31.5" cy="19" r="1.3" fill="#FED7AA" />
+  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="puCoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#FDE047" />
+        <stop offset="50%" stopColor="#FB923C" />
+        <stop offset="100%" stopColor="#EC4899" />
+      </linearGradient>
+      <filter id="puGlow" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur stdDeviation="1.8" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+    {/* Elliptical Orbital Ring 1 (Tilted 35 deg) */}
+    <ellipse cx="26" cy="26" rx="21" ry="8" stroke="#C084FC" strokeWidth="2" transform="rotate(35 26 26)" opacity="0.9" />
+    <circle cx="11" cy="15" r="2.2" fill="#FDE047" filter="url(#puGlow)" />
+
+    {/* Elliptical Orbital Ring 2 (Tilted -35 deg) */}
+    <ellipse cx="26" cy="26" rx="21" ry="8" stroke="#00F2FE" strokeWidth="2" transform="rotate(-35 26 26)" opacity="0.9" />
+    <circle cx="41" cy="15" r="2.2" fill="#FFFFFF" filter="url(#puGlow)" />
+
+    {/* Horizontal Orbital Ring 3 */}
+    <ellipse cx="26" cy="26" rx="19" ry="7" stroke="#A855F7" strokeWidth="1.6" opacity="0.75" />
+    <circle cx="36" cy="31" r="1.8" fill="#38BDF8" />
+
+    {/* Central Glowing Core / Cosmic Star */}
+    <circle cx="26" cy="26" r="7.5" fill="url(#puCoreGrad)" filter="url(#puGlow)" />
+    <circle cx="24.5" cy="24.5" r="2.5" fill="#FFFFFF" opacity="0.8" />
+
+    {/* Tiny Cosmic Sparkle */}
+    <path d="M42 9L43.2 12.8L47 14L43.2 15.2L42 19L40.8 15.2L37 14L40.8 12.8Z" fill="#FDE047" />
   </svg>
 );
 
-// 2. Pengetahuan & Pemahaman Umum (PPU): Biru Cerah dengan bola dunia/buku & kaca pembesar
+// 2. Pengetahuan & Pemahaman Umum (PPU): 3D Earth Globe + Golden Magnifying Glass (Mockup 1 & 2)
 const PpuIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="21" cy="21" r="13" fill="#0284C7" />
+  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="globeOceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#38BDF8" />
+        <stop offset="70%" stopColor="#0284C7" />
+        <stop offset="100%" stopColor="#0369A1" />
+      </linearGradient>
+      <linearGradient id="goldRimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#FDE047" />
+        <stop offset="60%" stopColor="#F59E0B" />
+        <stop offset="100%" stopColor="#B45309" />
+      </linearGradient>
+    </defs>
+    {/* Globe Ocean Sphere */}
+    <circle cx="22" cy="24" r="14" fill="url(#globeOceanGrad)" />
+    
+    {/* Earth Continents (Emerald Green) */}
     <path
-      d="M13 17C14.5 15.5 17 15 18 16.5C19 18 17.5 20.5 16 21C14.5 21.5 12 20 13 17Z"
+      d="M14 19C15.5 17 18 16.5 19 18C20 19.5 19 22 17.5 22.5C16 23 13 21.5 14 19Z"
       fill="#10B981"
     />
     <path
-      d="M22 11C24 10.5 27 12 28 14C29 16 28 18 26 19C24 20 22 18.5 21 16.5C20 14.5 20 11.5 22 11Z"
+      d="M23 13.5C25 13 28 14.5 29 16.5C30 18.5 29 20.5 27 21.5C25 22.5 23 21 22 19C21 17 21 14 23 13.5Z"
       fill="#10B981"
     />
     <path
-      d="M17 26C18.5 25 21 26 22 28C23 30 20.5 32.5 18.5 32.5C16.5 32.5 15.5 27 17 26Z"
+      d="M17 28.5C18.5 27.5 21 28.5 22 30.5C23 32.5 20.5 35 18.5 35C16.5 35 15.5 30 17 28.5Z"
       fill="#10B981"
     />
     <path
-      d="M26 24C28 23 31 24.5 32 27C33 29.5 30.5 31.5 28.5 31C26.5 30.5 24 25 26 24Z"
+      d="M27 26.5C29 25.5 32 27 33 29.5C33.8 31.5 32 33.5 30 33C28 32.5 25.5 28 27 26.5Z"
       fill="#10B981"
     />
-    <circle cx="21" cy="21" r="13" stroke="#38BDF8" strokeWidth="1.2" />
-    <ellipse cx="21" cy="21" rx="5.5" ry="13" stroke="#38BDF8" strokeWidth="1" strokeDasharray="2.5 2" />
-    <line x1="8" y1="21" x2="34" y2="21" stroke="#38BDF8" strokeWidth="1" />
+
+    {/* Latitude & Longitude Thin Lines */}
+    <circle cx="22" cy="24" r="14" stroke="#7DD3FC" strokeWidth="1" opacity="0.6" />
+    <ellipse cx="22" cy="24" rx="6" ry="14" stroke="#7DD3FC" strokeWidth="1" strokeDasharray="3 2" opacity="0.6" />
+    <line x1="8" y1="24" x2="36" y2="24" stroke="#7DD3FC" strokeWidth="1" opacity="0.6" />
+
+    {/* Golden Magnifying Glass (Tilted 45 Deg) */}
     <g>
-      <circle cx="31" cy="29" r="7.5" fill="#E0F2FE" fillOpacity="0.85" stroke="#F59E0B" strokeWidth="2.8" />
-      <path d="M28 26.5C29 25 31 24.5 32.5 25" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="36.5" y1="34.5" x2="43.5" y2="41.5" stroke="#D97706" strokeWidth="4" strokeLinecap="round" />
-      <line x1="36.5" y1="34.5" x2="43.5" y2="41.5" stroke="#FBBF24" strokeWidth="2" strokeLinecap="round" />
+      {/* Magnifier Glass Lens (Cyan Glare) */}
+      <circle cx="33" cy="27" r="8.5" fill="#E0F2FE" fillOpacity="0.75" />
+      <path d="M29 24C30 22 32.5 21.5 34.5 22" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round" />
+
+      {/* Gold Metallic Rim */}
+      <circle cx="33" cy="27" r="8.5" stroke="url(#goldRimGrad)" strokeWidth="3" />
+
+      {/* Golden Handle with Grip Lines */}
+      <line x1="39" y1="33" x2="47" y2="41" stroke="#92400E" strokeWidth="4.5" strokeLinecap="round" />
+      <line x1="39" y1="33" x2="47" y2="41" stroke="url(#goldRimGrad)" strokeWidth="2.8" strokeLinecap="round" />
     </g>
   </svg>
 );
 
-// 3. Pemahaman Bacaan & Menulis (PBM): Merah-Rose dengan buku merah & pena emas
+// 3. Pemahaman Bacaan & Menulis (PBM): Document Sheet with Bold Yellow Lightning (Mockup 1 & 2)
 const PbmIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g transform="translate(5, 7)">
-      <rect x="2" y="2" width="26" height="32" rx="3" fill="#BE123C" />
-      <path d="M2 2H6.5V34H2C0.9 34 0 33.1 0 32V4C0 2.9 0.9 2 2 2Z" fill="#9F1239" />
-      <rect x="6.5" y="5" width="19.5" height="26" rx="1.5" fill="#FFF1F2" />
-      <line x1="9.5" y1="10" x2="23" y2="10" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
-      <line x1="9.5" y1="15" x2="21" y2="15" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
-      <line x1="9.5" y1="20" x2="23" y2="20" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
-      <line x1="9.5" y1="25" x2="18" y2="25" stroke="#FDA4AF" strokeWidth="1.8" strokeLinecap="round" />
-    </g>
-    <g transform="translate(19, 10) rotate(25)">
-      <rect x="4" y="0" width="5.5" height="19" rx="1.8" fill="#D97706" />
-      <rect x="4" y="13" width="5.5" height="3.5" fill="#FBBF24" />
-      <path d="M4 19L6.75 27L9.5 19H4Z" fill="#F59E0B" />
-      <line x1="6.75" y1="19" x2="6.75" y2="24" stroke="#78350F" strokeWidth="0.8" />
-    </g>
-    <circle cx="36" cy="38" r="2.2" fill="#F59E0B" />
+  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#FEF08A" />
+        <stop offset="50%" stopColor="#FACC15" />
+        <stop offset="100%" stopColor="#EAB308" />
+      </linearGradient>
+      <filter id="pbmGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="1.2" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+    {/* White Paper Document Card with rounded corners */}
+    <rect x="13" y="10" width="26" height="32" rx="4" fill="#FFFFFF" stroke="#F1F5F9" strokeWidth="1.5" />
+    
+    {/* Soft inner fold highlight */}
+    <path d="M33 10L39 16H35C33.9 16 33 15.1 33 14V10Z" fill="#E2E8F0" />
+
+    {/* Bold Yellow / Gold Lightning Bolt Striking in Center */}
+    <path
+      d="M28 15L20 27H26L23 37L32 24H26L28 15Z"
+      fill="url(#boltGrad)"
+      stroke="#CA8A04"
+      strokeWidth="1.2"
+      strokeLinejoin="round"
+      filter="url(#pbmGlow)"
+    />
+
+    {/* Golden Accent Dot */}
+    <circle cx="34" cy="36" r="2.2" fill="#FACC15" />
   </svg>
 );
 
-// 4. Pengetahuan Kuantitatif (PK): Biru-Cyan dengan kalkulator/simbol operasi
+// 4. Pengetahuan Kuantitatif (PK): Sleek Blue Calculator with 4 Colored Buttons (Mockup 1 & 2)
 const PkIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="9" y="6" width="30" height="36" rx="5" fill="#2563EB" />
-    <rect x="13" y="10" width="22" height="8.5" rx="2" fill="#0F172A" />
-    <text x="32" y="16.5" fill="#38BDF8" fontSize="5.5" fontFamily="monospace" fontWeight="bold" textAnchor="end">
+  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="calcBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stopColor="#3B82F6" />
+        <stop offset="100%" stopColor="#1D4ED8" />
+      </linearGradient>
+    </defs>
+    {/* Blue Calculator Device Body */}
+    <rect x="11" y="9" width="30" height="34" rx="6" fill="url(#calcBodyGrad)" stroke="#60A5FA" strokeWidth="1.5" />
+    
+    {/* Dark Cyan Digital Display Header */}
+    <rect x="15" y="13" width="22" height="7.5" rx="2.5" fill="#0B132B" />
+    <text
+      x="34"
+      y="19"
+      fill="#00F2FE"
+      fontSize="6"
+      fontFamily="monospace"
+      fontWeight="bold"
+      textAnchor="end"
+      letterSpacing="0.8"
+    >
       84×2
     </text>
-    <rect x="13" y="21.5" width="9.5" height="7.5" rx="2" fill="#06B6D4" />
-    <path d="M17.75 23.5V27M16 25.25H19.5" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
-    <rect x="25.5" y="21.5" width="9.5" height="7.5" rx="2" fill="#F97316" />
-    <path d="M28.5 25.25H32" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
-    <rect x="13" y="31.5" width="9.5" height="7.5" rx="2" fill="#10B981" />
-    <path d="M16 33.5L19.5 37M19.5 33.5L16 37" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
-    <rect x="25.5" y="31.5" width="9.5" height="7.5" rx="2" fill="#F59E0B" />
-    <path d="M28.5 35.25H32M30.25 33.25V33.35M30.25 37.15V37.25" stroke="#FFFFFF" strokeWidth="1.6" strokeLinecap="round" />
+
+    {/* 4 Colored Function Buttons arranged 2x2 */}
+    {/* Top-Left: Golden/Yellow Button (+) */}
+    <rect x="15" y="23.5" width="9.5" height="7.5" rx="2" fill="#F59E0B" />
+    <path d="M19.75 25.5V29M17.75 27.25H21.75" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+
+    {/* Top-Right: Electric Blue Button (−) */}
+    <rect x="27.5" y="23.5" width="9.5" height="7.5" rx="2" fill="#06B6D4" />
+    <path d="M30.25 27.25H34.25" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+
+    {/* Bottom-Left: Emerald Green Button (×) */}
+    <rect x="15" y="33" width="9.5" height="7.5" rx="2" fill="#10B981" />
+    <path d="M18 35.25L21.5 38.75M21.5 35.25L18 38.75" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+
+    {/* Bottom-Right: Coral/Orange Button (=) */}
+    <rect x="27.5" y="33" width="9.5" height="7.5" rx="2" fill="#F97316" />
+    <path d="M30 36H34M30 38H34" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
 
-// 5. Literasi Bahasa Indonesia (LBI): Merah-Putih/Coral dengan buku bendera
+// 5. Literasi Bahasa Indonesia (LBI): Buku Merah-Putih dengan Penanda Pita
 const LbiIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="8" y="9" width="32" height="30" rx="3.5" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1.5" />
-    <path d="M9 10H39V22H9V10Z" fill="#DC2626" />
-    <path d="M9 22H39V34H9V22Z" fill="#FFFFFF" />
-    <rect x="11" y="6" width="26" height="4" rx="1.5" fill="#CBD5E1" />
-    <path d="M9 10C7.5 10 6.5 11 6.5 12.5V32.5C6.5 34 7.5 35 9 35V10Z" fill="#B91C1C" />
-    <path d="M23 10V27L26 24.5L29 27V10H23Z" fill="#DC2626" />
-    <path d="M23 10V18L26 16.5L29 18V10H23Z" fill="#FFFFFF" />
-    <line x1="12" y1="26" x2="20" y2="26" stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" />
-    <line x1="12" y1="30" x2="20" y2="30" stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" />
+  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="32" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="1.5" />
+    {/* Flag Header (Merah) */}
+    <path d="M10 11H42V23H10V11Z" fill="#DC2626" />
+    {/* Flag Bottom (Putih) */}
+    <path d="M10 23H42V35H10V23Z" fill="#FFFFFF" />
+    {/* Spine Red Bookmark */}
+    <path d="M23 11V29L26 26.5L29 29V11H23Z" fill="#DC2626" />
+    <path d="M23 11V19L26 17.5L29 19V11H23Z" fill="#FFFFFF" />
+    {/* Reading text lines */}
+    <line x1="14" y1="37" x2="28" y2="37" stroke="#94A3B8" strokeWidth="1.6" strokeLinecap="round" />
+    <line x1="14" y1="40" x2="22" y2="40" stroke="#94A3B8" strokeWidth="1.6" strokeLinecap="round" />
   </svg>
 );
 
-// 6. Literasi Bahasa Inggris (LBE): Ungu-Biru dengan buku aksen Union Jack
+// 6. Literasi Bahasa Inggris (LBE): Royal Blue Crest & British Motif
 const LbeIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g transform="translate(7, 7)">
-      <rect x="0" y="0" width="34" height="34" rx="5" fill="#1E3A8A" />
+  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(9, 9)">
+      <rect x="0" y="0" width="34" height="34" rx="6" fill="#1E3A8A" />
       <line x1="0" y1="0" x2="34" y2="34" stroke="#FFFFFF" strokeWidth="4" />
       <line x1="34" y1="0" x2="0" y2="34" stroke="#FFFFFF" strokeWidth="4" />
       <line x1="0" y1="0" x2="34" y2="34" stroke="#DC2626" strokeWidth="2" />
@@ -142,51 +220,35 @@ const LbeIcon = () => (
       <rect x="0" y="13" width="34" height="8" fill="#FFFFFF" />
       <rect x="14.5" y="0" width="5" height="34" fill="#DC2626" />
       <rect x="0" y="14.5" width="34" height="5" fill="#DC2626" />
-      <rect x="0" y="0" width="34" height="34" rx="5" stroke="#312E81" strokeWidth="1.5" />
     </g>
-    <g transform="translate(25, 26)">
-      <rect width="18" height="15" rx="3.5" fill="#7C3AED" stroke="#FFFFFF" strokeWidth="1.5" />
-      <text x="9" y="10.5" fill="#FFFFFF" fontSize="8" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">
+    <g transform="translate(26, 26)">
+      <rect width="18" height="15" rx="4" fill="#7C3AED" stroke="#FFFFFF" strokeWidth="1.5" />
+      <text x="9" y="10.5" fill="#FFFFFF" fontSize="8.5" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">
         EN
       </text>
     </g>
   </svg>
 );
 
-// 7. Penalaran Matematika (PM): Hijau-Emerald dengan penggaris geometri & grafik
+// 7. Penalaran Matematika (PM): Geometri Segitiga & Kurva Fungsi
 const PmIcon = () => (
-  <svg viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-2xs" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 52 52" className="w-11 h-11 sm:w-13 sm:h-13 drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M8 38L8 11L35 38H8Z"
-      fill="#F59E0B"
-      stroke="#D97706"
-      strokeWidth="1.5"
+      d="M10 40L10 12L38 40H10Z"
+      fill="#ECFDF5"
+      stroke="#10B981"
+      strokeWidth="2.8"
+      strokeLinejoin="round"
     />
+    <line x1="10" y1="34" x2="16" y2="34" stroke="#059669" strokeWidth="1.8" />
+    <line x1="16" y1="34" x2="16" y2="40" stroke="#059669" strokeWidth="1.8" />
     <path
-      d="M13 34L13 21L26 34H13Z"
-      fill="#A7F3D0"
-      stroke="#D97706"
-      strokeWidth="1"
-    />
-    <line x1="8" y1="17" x2="10.5" y2="17" stroke="#92400E" strokeWidth="1.2" />
-    <line x1="8" y1="23" x2="10.5" y2="23" stroke="#92400E" strokeWidth="1.2" />
-    <line x1="8" y1="29" x2="10.5" y2="29" stroke="#92400E" strokeWidth="1.2" />
-    <line x1="17" y1="38" x2="17" y2="35.5" stroke="#92400E" strokeWidth="1.2" />
-    <line x1="23" y1="38" x2="23" y2="35.5" stroke="#92400E" strokeWidth="1.2" />
-    <path
-      d="M17 26C21 25 27 17 37 12"
-      stroke="#047857"
-      strokeWidth="2.5"
+      d="M14 26C18 24 24 28 32 18"
+      stroke="#6366F1"
+      strokeWidth="2.4"
       strokeLinecap="round"
     />
-    <circle cx="23" cy="22" r="2.2" fill="#10B981" stroke="#FFFFFF" strokeWidth="1" />
-    <circle cx="37" cy="12" r="2.8" fill="#047857" stroke="#FFFFFF" strokeWidth="1" />
-    <g transform="translate(24, 4)">
-      <rect width="18" height="15" rx="3.5" fill="#065F46" />
-      <text x="9" y="11" fill="#34D399" fontSize="9" fontWeight="bold" textAnchor="middle" fontFamily="sans-serif">
-        √x
-      </text>
-    </g>
+    <circle cx="32" cy="18" r="3" fill="#F59E0B" />
   </svg>
 );
 
@@ -195,14 +257,15 @@ interface SubtestThemeConfig {
   name: string;
   category: 'TPS' | 'Literasi';
   icon: React.ReactNode;
-  // Dark mode styles
+  // Dark mode styling
   darkBorderClass: string;
   darkHaloClass: string;
   darkBadgeClass: string;
-  // Light mode styles
+  darkSquircleClass: string;
+  // Light mode styling
   lightBgClass: string;
   lightBadgeClass: string;
-  lightIconBgClass: string;
+  lightSquircleClass: string;
   cornerElement: React.ReactNode;
 }
 
@@ -215,12 +278,13 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Penalaran Umum',
       category: 'TPS',
       icon: <PuIcon />,
-      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_24px_rgba(168,85,247,0.45)]',
+      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_26px_rgba(168,85,247,0.5)]',
       darkHaloClass: 'icon-halo-purple',
-      darkBadgeClass: 'bg-purple-950/80 text-purple-300 border-purple-500/50',
+      darkBadgeClass: 'bg-purple-950/90 text-purple-200 border-purple-500/60',
+      darkSquircleClass: 'bg-[#181136] border border-purple-500/50 shadow-[0_0_15px_rgba(168,85,247,0.35)]',
       lightBgClass: 'pastel-card-pink',
-      lightBadgeClass: 'bg-white/90 text-rose-800 border-rose-200',
-      lightIconBgClass: 'bg-rose-100/90',
+      lightBadgeClass: 'bg-white/95 text-rose-800 border-rose-200',
+      lightSquircleClass: 'bg-rose-100/90 border border-rose-200/80',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-left" />
@@ -233,12 +297,13 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Pengetahuan & Pemahaman Umum',
       category: 'TPS',
       icon: <PpuIcon />,
-      darkBorderClass: 'neon-border-cyan hover:shadow-[0_0_24px_rgba(0,242,254,0.45)]',
+      darkBorderClass: 'neon-border-cyan hover:shadow-[0_0_26px_rgba(0,242,254,0.5)]',
       darkHaloClass: 'icon-halo-cyan',
-      darkBadgeClass: 'bg-cyan-950/80 text-cyan-300 border-cyan-500/50',
+      darkBadgeClass: 'bg-cyan-950/90 text-cyan-200 border-cyan-500/60',
+      darkSquircleClass: 'bg-[#0a2336] border border-cyan-500/50 shadow-[0_0_15px_rgba(0,242,254,0.35)]',
       lightBgClass: 'pastel-card-peach',
-      lightBadgeClass: 'bg-white/90 text-amber-800 border-amber-200',
-      lightIconBgClass: 'bg-amber-100/90',
+      lightBadgeClass: 'bg-white/95 text-amber-800 border-amber-200',
+      lightSquircleClass: 'bg-amber-100/90 border border-amber-200/80',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-left" />
@@ -251,25 +316,32 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Pemahaman Bacaan & Menulis',
       category: 'TPS',
       icon: <PbmIcon />,
-      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_24px_rgba(244,63,94,0.45)]',
+      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_26px_rgba(244,63,94,0.5)]',
       darkHaloClass: 'icon-halo-coral',
-      darkBadgeClass: 'bg-rose-950/80 text-rose-300 border-rose-500/50',
+      darkBadgeClass: 'bg-rose-950/90 text-rose-200 border-rose-500/60',
+      darkSquircleClass: 'bg-[#33111f] border border-rose-500/50 shadow-[0_0_15px_rgba(244,63,94,0.35)]',
       lightBgClass: 'pastel-card-mint',
-      lightBadgeClass: 'bg-white/90 text-emerald-800 border-emerald-200',
-      lightIconBgClass: 'bg-emerald-100/90',
-      cornerElement: <PottedPlantDecor position="bottom-left" />,
+      lightBadgeClass: 'bg-white/95 text-emerald-800 border-emerald-200',
+      lightSquircleClass: 'bg-emerald-100/90 border border-emerald-200/80',
+      cornerElement: (
+        <>
+          <LeafCornerDecor position="top-left" />
+          <PottedPlantDecor position="bottom-left" />
+        </>
+      ),
     },
     {
       code: 'PK',
       name: 'Pengetahuan Kuantitatif',
       category: 'TPS',
       icon: <PkIcon />,
-      darkBorderClass: 'neon-border-blue hover:shadow-[0_0_24px_rgba(59,130,246,0.45)]',
+      darkBorderClass: 'neon-border-blue hover:shadow-[0_0_26px_rgba(59,130,246,0.5)]',
       darkHaloClass: 'icon-halo-blue',
-      darkBadgeClass: 'bg-blue-950/80 text-blue-300 border-blue-500/50',
+      darkBadgeClass: 'bg-blue-950/90 text-blue-200 border-blue-500/60',
+      darkSquircleClass: 'bg-[#0d1d3d] border border-blue-500/50 shadow-[0_0_15px_rgba(59,130,246,0.35)]',
       lightBgClass: 'pastel-card-sky',
-      lightBadgeClass: 'bg-white/90 text-sky-800 border-sky-200',
-      lightIconBgClass: 'bg-sky-100/90',
+      lightBadgeClass: 'bg-white/95 text-sky-800 border-sky-200',
+      lightSquircleClass: 'bg-sky-100/90 border border-sky-200/80',
       cornerElement: (
         <>
           <DottedCornerDecor position="top-right" />
@@ -282,38 +354,50 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
       name: 'Literasi Bahasa Indonesia',
       category: 'Literasi',
       icon: <LbiIcon />,
-      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_24px_rgba(244,63,94,0.45)]',
+      darkBorderClass: 'neon-border-coral hover:shadow-[0_0_26px_rgba(244,63,94,0.5)]',
       darkHaloClass: 'icon-halo-coral',
-      darkBadgeClass: 'bg-rose-950/80 text-rose-300 border-rose-500/50',
+      darkBadgeClass: 'bg-rose-950/90 text-rose-200 border-rose-500/60',
+      darkSquircleClass: 'bg-[#2a1322] border border-rose-500/50 shadow-[0_0_15px_rgba(244,63,94,0.35)]',
       lightBgClass: 'pastel-card-pink',
-      lightBadgeClass: 'bg-white/90 text-rose-800 border-rose-200',
-      lightIconBgClass: 'bg-rose-100/90',
-      cornerElement: <LeafCornerDecor position="top-right" />,
+      lightBadgeClass: 'bg-white/95 text-rose-800 border-rose-200',
+      lightSquircleClass: 'bg-rose-100/90 border border-rose-200/80',
+      cornerElement: (
+        <>
+          <LeafCornerDecor position="top-right" />
+          <DottedCornerDecor position="bottom-left" />
+        </>
+      ),
     },
     {
       code: 'LBE',
       name: 'Literasi Bahasa Inggris',
       category: 'Literasi',
       icon: <LbeIcon />,
-      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_24px_rgba(168,85,247,0.45)]',
+      darkBorderClass: 'neon-border-purple hover:shadow-[0_0_26px_rgba(168,85,247,0.5)]',
       darkHaloClass: 'icon-halo-purple',
-      darkBadgeClass: 'bg-purple-950/80 text-purple-300 border-purple-500/50',
+      darkBadgeClass: 'bg-purple-950/90 text-purple-200 border-purple-500/60',
+      darkSquircleClass: 'bg-[#171638] border border-purple-500/50 shadow-[0_0_15px_rgba(168,85,247,0.35)]',
       lightBgClass: 'pastel-card-lavender',
-      lightBadgeClass: 'bg-white/90 text-purple-800 border-purple-200',
-      lightIconBgClass: 'bg-purple-100/90',
-      cornerElement: <PottedPlantDecor position="bottom-right" />,
+      lightBadgeClass: 'bg-white/95 text-purple-800 border-purple-200',
+      lightSquircleClass: 'bg-purple-100/90 border border-purple-200/80',
+      cornerElement: (
+        <>
+          <PottedPlantDecor position="bottom-right" />
+        </>
+      ),
     },
     {
       code: 'PM',
       name: 'Penalaran Matematika',
       category: 'Literasi',
       icon: <PmIcon />,
-      darkBorderClass: 'neon-border-emerald hover:shadow-[0_0_24px_rgba(16,185,129,0.45)]',
+      darkBorderClass: 'neon-border-emerald hover:shadow-[0_0_26px_rgba(16,185,129,0.5)]',
       darkHaloClass: 'icon-halo-emerald',
-      darkBadgeClass: 'bg-emerald-950/80 text-emerald-300 border-emerald-500/50',
+      darkBadgeClass: 'bg-emerald-950/90 text-emerald-200 border-emerald-500/60',
+      darkSquircleClass: 'bg-[#0a2920] border border-emerald-500/50 shadow-[0_0_15px_rgba(16,185,129,0.35)]',
       lightBgClass: 'pastel-card-mint',
-      lightBadgeClass: 'bg-white/90 text-emerald-800 border-emerald-200',
-      lightIconBgClass: 'bg-emerald-100/90',
+      lightBadgeClass: 'bg-white/95 text-emerald-800 border-emerald-200',
+      lightSquircleClass: 'bg-emerald-100/90 border border-emerald-200/80',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-left" />
@@ -329,16 +413,16 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
   });
 
   return (
-    <div className="relative rounded-3xl p-4 sm:p-6 space-y-5 transition-all duration-300 bg-white/70 dark:bg-[#0d1326]/75 border border-stone-200/80 dark:border-cyan-500/20 backdrop-blur-md shadow-sm dark:shadow-[0_12px_32px_rgba(0,0,0,0.4)] overflow-hidden">
+    <div className="relative rounded-3xl p-4 sm:p-6 space-y-5 transition-all duration-300 bg-white/70 dark:bg-[#0c1228]/80 border border-stone-200/80 dark:border-indigo-500/30 backdrop-blur-md shadow-sm dark:shadow-[0_12px_36px_rgba(0,0,0,0.5)] overflow-hidden">
       {/* Category Filter Tabs: Semua | TPS | Literasi */}
       <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-stone-200/80 dark:border-slate-800/80 pb-3.5 z-10">
         <div className="flex items-center bg-stone-100/90 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 shadow-2xs">
           <button
             type="button"
             onClick={() => setCategoryFilter('ALL')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
+            className={`px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
               categoryFilter === 'ALL'
-                ? 'bg-blue-600 dark:bg-[#0e244d] text-white dark:text-cyan-200 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_12px_rgba(0,242,254,0.3)]'
+                ? 'bg-blue-600 dark:bg-gradient-to-r dark:from-blue-600 dark:to-indigo-600 text-white dark:text-cyan-100 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_14px_rgba(0,242,254,0.4)]'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
@@ -347,9 +431,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
           <button
             type="button"
             onClick={() => setCategoryFilter('TPS')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+            className={`px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
               categoryFilter === 'TPS'
-                ? 'bg-blue-600 dark:bg-[#0e244d] text-white dark:text-cyan-200 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_12px_rgba(0,242,254,0.3)]'
+                ? 'bg-blue-600 dark:bg-gradient-to-r dark:from-blue-600 dark:to-indigo-600 text-white dark:text-cyan-100 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_14px_rgba(0,242,254,0.4)]'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
@@ -359,9 +443,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
           <button
             type="button"
             onClick={() => setCategoryFilter('Literasi')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+            className={`px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
               categoryFilter === 'Literasi'
-                ? 'bg-blue-600 dark:bg-[#0e244d] text-white dark:text-cyan-200 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_12px_rgba(0,242,254,0.3)]'
+                ? 'bg-blue-600 dark:bg-gradient-to-r dark:from-blue-600 dark:to-indigo-600 text-white dark:text-cyan-100 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_14px_rgba(0,242,254,0.4)]'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
@@ -386,18 +470,18 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
         </div>
       </div>
 
-      {/* Grid Responsif (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) dengan border-radius: 20px */}
+      {/* Grid Responsif (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) dengan border-radius: 22px */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-5 z-10 relative">
         {filteredSubtests.map((sub) => (
           <button
             key={sub.code}
             type="button"
             onClick={() => onSelectSubtest(sub.code.toLowerCase())}
-            className={`w-full flex flex-col items-center justify-between p-4 sm:p-5 rounded-[20px] transition-all duration-300 hover:-translate-y-1.5 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${
+            className={`w-full flex flex-col items-center justify-between p-4 sm:p-5 rounded-[22px] transition-all duration-300 hover:-translate-y-1.5 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${
               // Light mode pastel styles
-              `${sub.lightBgClass} dark:bg-[rgba(18,25,48,0.75)] dark:backdrop-blur-md ` +
+              `${sub.lightBgClass} dark:bg-[rgba(14,22,48,0.85)] dark:backdrop-blur-md ` +
               // Dark mode neon borders & glows
-              `dark:${sub.darkBorderClass} border`
+              `dark:${sub.darkBorderClass}`
             }`}
             aria-label={`Buka Subtes ${sub.name}`}
           >
@@ -413,23 +497,23 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ onSelectSubtes
               {sub.code} • {sub.category}
             </span>
 
-            {/* 1. Ikon Squircle dengan Glowing Halo di Dark Mode & Soft Squircle di Light Mode */}
-            <div className="relative my-1 z-10 flex items-center justify-center">
-              {/* Cosmic glowing halo behind the icon in Dark Mode */}
+            {/* 1. Ikon Squircle dengan Radiant Glowing Halo di Dark Mode & Soft Squircle di Light Mode */}
+            <div className="relative my-2 z-10 flex items-center justify-center">
+              {/* Intense Cosmic Glowing Halo behind the icon in Dark Mode */}
               <div
-                className={`hidden dark:block absolute w-24 h-24 rounded-full ${sub.darkHaloClass} blur-md pointer-events-none group-hover:scale-125 transition-transform duration-300`}
+                className={`hidden dark:block absolute w-28 h-28 rounded-full ${sub.darkHaloClass} pointer-events-none group-hover:scale-125 transition-transform duration-300 -z-10`}
               />
 
-              {/* Icon Container */}
+              {/* Icon Squircle Container */}
               <div
-                className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shrink-0 ${sub.lightIconBgClass} dark:bg-slate-900/80 dark:border dark:border-white/10`}
+                className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xs mx-auto transition-transform duration-300 group-hover:scale-105 group-active:scale-95 shrink-0 ${sub.lightSquircleClass} dark:${sub.darkSquircleClass}`}
               >
                 {sub.icon}
               </div>
             </div>
 
-            {/* 2. Label Nama Subtes Lengkap Tanpa Terpotong */}
-            <div className="w-full flex-1 flex flex-col items-center justify-start mt-3 z-10">
+            {/* 2. Label Nama Subtes Lengkap */}
+            <div className="w-full flex-1 flex flex-col items-center justify-start mt-2.5 z-10">
               <span className="text-xs sm:text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 text-center leading-snug w-full break-words group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                 {sub.name}
               </span>

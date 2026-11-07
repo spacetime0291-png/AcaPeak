@@ -99,25 +99,47 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   // Total subtopics count
   const totalSubtopics = (subtest.modules || []).reduce((acc, m) => acc + m.subtopics.length, 0);
 
-  // Squircle background color per subtest in Light Mode
-  const squircleBg = (() => {
-    switch (subtest.code.toUpperCase()) {
-      case 'PU':
-        return 'bg-purple-100 text-purple-900';
-      case 'PPU':
-        return 'bg-amber-100 text-amber-900';
-      case 'PBM':
-        return 'bg-rose-100 text-rose-900';
-      case 'PK':
-        return 'bg-sky-100 text-sky-900';
-      case 'LBI':
-        return 'bg-rose-100 text-rose-900';
-      case 'LBE':
-        return 'bg-purple-100 text-purple-900';
-      case 'PM':
-        return 'bg-emerald-100 text-emerald-900';
-      default:
-        return 'bg-sky-100 text-sky-900';
+  // Squircle styling per subtest
+  const moduleSquircleStyle = (() => {
+    const code = subtest.code.toUpperCase();
+    if (isDark) {
+      switch (code) {
+        case 'PU':
+          return 'bg-[#181136] border border-purple-500/50 text-purple-300 shadow-[0_0_12px_rgba(168,85,247,0.25)]';
+        case 'PPU':
+          return 'bg-[#0a2336] border border-cyan-500/50 text-cyan-300 shadow-[0_0_12px_rgba(0,242,254,0.25)]';
+        case 'PBM':
+          return 'bg-[#33111f] border border-rose-500/50 text-rose-300 shadow-[0_0_12px_rgba(244,63,94,0.25)]';
+        case 'PK':
+          return 'bg-[#0d1d3d] border border-blue-500/50 text-blue-300 shadow-[0_0_12px_rgba(59,130,246,0.25)]';
+        case 'LBI':
+          return 'bg-[#2a1322] border border-rose-500/50 text-rose-300 shadow-[0_0_12px_rgba(244,63,94,0.25)]';
+        case 'LBE':
+          return 'bg-[#171638] border border-purple-500/50 text-purple-300 shadow-[0_0_12px_rgba(168,85,247,0.25)]';
+        case 'PM':
+          return 'bg-[#0a2920] border border-emerald-500/50 text-emerald-300 shadow-[0_0_12px_rgba(16,185,129,0.25)]';
+        default:
+          return 'bg-[#0d1d3d] border border-blue-500/50 text-blue-300';
+      }
+    } else {
+      switch (code) {
+        case 'PU':
+          return 'bg-purple-100 text-purple-900 border border-purple-200/90';
+        case 'PPU':
+          return 'bg-amber-100 text-amber-900 border border-amber-200/90';
+        case 'PBM':
+          return 'bg-rose-100 text-rose-900 border border-rose-200/90';
+        case 'PK':
+          return 'bg-sky-100 text-sky-900 border border-sky-200/90';
+        case 'LBI':
+          return 'bg-rose-100 text-rose-900 border border-rose-200/90';
+        case 'LBE':
+          return 'bg-purple-100 text-purple-900 border border-purple-200/90';
+        case 'PM':
+          return 'bg-emerald-100 text-emerald-900 border border-emerald-200/90';
+        default:
+          return 'bg-sky-100 text-sky-900 border border-sky-200/90';
+      }
     }
   })();
 
@@ -126,7 +148,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
       {/* 1. STICKY TOP APP BAR (Native App Feel, Distraction-Free Header) */}
       <div className="sticky top-0 z-40 w-full shadow-xs">
         {/* Baris 1: Top Navigation Bar */}
-        <div className="relative overflow-hidden bg-white/95 dark:bg-[#070913]/95 border-b border-stone-200/90 dark:border-indigo-500/25 w-full shadow-sm transition-all duration-300 backdrop-blur-md">
+        <div className="relative overflow-hidden bg-white/95 dark:bg-[#070913]/95 border-b border-stone-200/90 dark:border-indigo-500/30 w-full shadow-sm transition-all duration-300 backdrop-blur-md">
           {/* Light Mode Subtle Watermark Foliage Accent (opacity 0.18 - 0.25) */}
           {!isDark && <NatureFocusHeaderAccent />}
 
@@ -148,7 +170,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             <div className="flex items-center gap-2 sm:gap-3 shrink-0">
               {/* Subtest Information Badge */}
               {totalSubtopics > 0 && (
-                <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-[#121930] border border-stone-200 dark:border-indigo-500/30 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs">
+                <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-[#121930] border border-stone-200 dark:border-indigo-500/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs">
                   <span className="text-slate-900 dark:text-slate-100 font-bold">{subtest.modules?.length || 0} Bab</span>
                   <span className="text-slate-400 dark:text-slate-400 text-xs">• {totalSubtopics} Sub-bab</span>
                 </div>
@@ -172,7 +194,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'materi'
                     ? isDark
-                      ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-[0_0_14px_rgba(59,130,246,0.5)]'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_16px_rgba(0,242,254,0.4)] border border-cyan-400/40'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
@@ -185,7 +207,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'drilling'
                     ? isDark
-                      ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-[0_0_14px_rgba(59,130,246,0.5)]'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_16px_rgba(0,242,254,0.4)] border border-cyan-400/40'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
@@ -199,7 +221,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <button
                   type="button"
                   onClick={selectAllSubtest}
-                  className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-400 hover:bg-blue-50 dark:hover:bg-slate-800 border border-blue-200 dark:border-cyan-500/40 cursor-pointer transition shadow-2xs"
+                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/50 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_10px_rgba(0,242,254,0.2)]"
                 >
                   Pilih Semua
                 </button>
@@ -207,7 +229,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   <button
                     type="button"
                     onClick={clearAllSubtest}
-                    className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
+                    className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
                   >
                     Batal
                   </button>
@@ -237,9 +259,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   >
                     {/* Left: Module Squircle Icon */}
                     <div
-                      className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${
-                        isDark ? 'bg-slate-900/90 border border-indigo-500/30' : squircleBg
-                      } transition-transform duration-200 group-hover:scale-105`}
+                      className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${moduleSquircleStyle} transition-transform duration-200 group-hover:scale-105`}
                     >
                       <ModuleIcon moduleId={mod.id} className="w-8 h-8 sm:w-9 sm:h-9" />
                     </div>
@@ -275,22 +295,22 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <div className="bg-[#fcfbf9] dark:bg-[#090e1f] px-3.5 sm:px-6 py-3 border-t border-stone-100 dark:border-slate-800/80 space-y-2 animate-subtopic-slide">
+                      <div className="bg-[#fffdf9] dark:bg-[#0a0f22] px-3.5 sm:px-6 py-3 border-t border-stone-100 dark:border-slate-800/80 space-y-2 animate-subtopic-slide">
                         {mod.subtopics.map((sub, sIdx) => {
                           return (
                             <div
                               key={sub.id}
                               onClick={() => onSelectMaterial(sub.id)}
                               style={{ animationDelay: `${sIdx * 30}ms` }}
-                              className="flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#0f172a] hover:bg-[#fffbeb] dark:hover:bg-[#131d36] border border-stone-200/90 dark:border-slate-800 hover:border-amber-200 dark:hover:border-cyan-500/40 hover:shadow-xs dark:hover:shadow-[0_0_12px_rgba(0,242,254,0.15)] transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs"
+                              className="flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#0f172a] hover:bg-[#fff9eb] dark:hover:bg-[#131d36] border border-stone-200/90 dark:border-slate-800 hover:border-amber-300/80 dark:hover:border-cyan-400 hover:shadow-xs dark:hover:shadow-[0_0_14px_rgba(0,242,254,0.25)] transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs"
                             >
                               {/* Left: Book Icon + Full Sub-bab Title */}
                               <div className="flex items-start sm:items-center gap-3 min-w-0 flex-1 py-0.5">
-                                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-50 dark:bg-indigo-950/70 text-blue-600 dark:text-indigo-300 border border-blue-100 dark:border-indigo-800/60 flex items-center justify-center shrink-0 group-hover/sub:bg-blue-600 group-hover/sub:text-white transition-colors shadow-2xs mt-0.5 sm:mt-0">
+                                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-50 dark:bg-cyan-950/80 text-amber-700 dark:text-cyan-300 border border-amber-200 dark:border-cyan-800/60 flex items-center justify-center shrink-0 group-hover/sub:bg-amber-500 dark:group-hover/sub:bg-cyan-500 group-hover/sub:text-white dark:group-hover/sub:text-slate-950 transition-colors shadow-2xs mt-0.5 sm:mt-0">
                                   <BookOpen className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
                                 </div>
 
-                                <span className="text-sm sm:text-base font-semibold leading-relaxed break-words whitespace-normal flex-1 text-slate-800 dark:text-slate-100 group-hover/sub:text-blue-700 dark:group-hover/sub:text-cyan-300 transition-colors">
+                                <span className="text-sm sm:text-base font-semibold leading-relaxed break-words whitespace-normal flex-1 text-slate-800 dark:text-slate-100 group-hover/sub:text-amber-900 dark:group-hover/sub:text-cyan-200 transition-colors">
                                   {sub.title}
                                 </span>
                               </div>
@@ -331,7 +351,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <button
                   type="button"
                   onClick={selectAllSubtest}
-                  className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-400 hover:bg-blue-50 dark:hover:bg-slate-800 border border-blue-200 dark:border-cyan-500/40 cursor-pointer transition shadow-2xs"
+                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_10px_rgba(0,242,254,0.2)]"
                 >
                   Pilih Semua
                 </button>
@@ -339,7 +359,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   <button
                     type="button"
                     onClick={clearAllSubtest}
-                    className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
+                    className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
                   >
                     Batal
                   </button>
@@ -363,9 +383,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     >
                       {/* Left: Module Squircle Icon */}
                       <div
-                        className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${
-                          isDark ? 'bg-slate-900/90 border border-indigo-500/30' : squircleBg
-                        } transition-transform duration-200 group-hover:scale-105`}
+                        className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${moduleSquircleStyle} transition-transform duration-200 group-hover:scale-105`}
                       >
                         <ModuleIcon moduleId={mod.id} className="w-8 h-8 sm:w-9 sm:h-9" />
                       </div>
@@ -402,10 +420,10 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                           className={`text-xs sm:text-sm font-bold px-3 py-1.5 rounded-xl border transition cursor-pointer shadow-2xs ${
                             allSelectedInMod
                               ? isDark
-                                ? 'bg-cyan-600 text-white border-cyan-500 shadow-[0_0_10px_rgba(0,242,254,0.4)]'
+                                ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.5)] font-black'
                                 : 'bg-blue-600 text-white border-blue-600'
                               : isDark
-                              ? 'text-cyan-400 hover:bg-cyan-950/60 border-cyan-500/40'
+                              ? 'text-cyan-300 hover:bg-cyan-950/60 border-cyan-400/50'
                               : 'text-blue-600 hover:bg-blue-50 border-blue-200'
                           }`}
                         >
@@ -429,7 +447,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="bg-[#fcfbf9] dark:bg-[#090e1f] px-3.5 sm:px-6 py-3 border-t border-stone-100 dark:border-slate-800/80 space-y-2 animate-subtopic-slide">
+                        <div className="bg-[#fffdf9] dark:bg-[#0a0f22] px-3.5 sm:px-6 py-3 border-t border-stone-100 dark:border-slate-800/80 space-y-2 animate-subtopic-slide">
                           {mod.subtopics.map((sub, sIdx) => {
                             const isSelected = selectedSubchapters.has(sub.id);
 
@@ -441,11 +459,11 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 className={`flex items-center justify-between p-3.5 sm:p-4 rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
                                   isSelected
                                     ? isDark
-                                      ? 'bg-[#0e2142] border-cyan-400 text-cyan-100 shadow-[0_0_12px_rgba(0,242,254,0.25)]'
-                                      : 'bg-blue-50/90 border-blue-300 shadow-xs'
+                                      ? 'bg-[#0e244d] border-cyan-400 text-cyan-100 shadow-[0_0_14px_rgba(0,242,254,0.3)]'
+                                      : 'bg-sky-50/90 border-sky-300 shadow-xs'
                                     : isDark
-                                    ? 'bg-[#0f172a] hover:bg-[#131d36] border-slate-800 hover:border-cyan-500/40 text-slate-200'
-                                    : 'bg-white hover:bg-[#fffbeb] border-stone-200/90 hover:border-amber-200 text-slate-800'
+                                    ? 'bg-[#0f172a] hover:bg-[#131d36] border-slate-800 hover:border-cyan-400/60 text-slate-200'
+                                    : 'bg-white hover:bg-[#fff9eb] border-stone-200/90 hover:border-amber-200 text-slate-800'
                                 }`}
                               >
                                 {/* Left: Icon Zap + Judul Lengkap */}
@@ -455,7 +473,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                     className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border mt-0.5 sm:mt-0 ${
                                       isSelected
                                         ? isDark
-                                          ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_0_8px_rgba(0,242,254,0.6)] font-bold'
+                                          ? 'bg-cyan-400 text-slate-950 border-cyan-300 shadow-[0_0_10px_rgba(0,242,254,0.6)] font-bold'
                                           : 'bg-blue-600 text-white border-blue-600'
                                         : isDark
                                         ? 'bg-slate-800 text-cyan-300 border-slate-700 group-hover/sub:bg-cyan-600 group-hover/sub:text-white'
@@ -470,10 +488,10 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                     className={`text-sm sm:text-base font-semibold leading-relaxed break-words whitespace-normal flex-1 ${
                                       isSelected
                                         ? isDark
-                                          ? 'text-cyan-200 font-bold'
+                                          ? 'text-cyan-100 font-bold'
                                           : 'text-blue-950 font-bold'
                                         : isDark
-                                        ? 'text-slate-200 group-hover/sub:text-cyan-300'
+                                        ? 'text-slate-200 group-hover/sub:text-cyan-200'
                                         : 'text-slate-800 group-hover/sub:text-blue-700'
                                     }`}
                                   >
@@ -498,13 +516,13 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
       {activeTab === 'drilling' && (
         <aside
           aria-label="Konfigurasi Sesi Drilling"
-          className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl p-3.5 sm:p-5 transition-all duration-300 bg-white/95 dark:bg-[#0c1224]/90 border-stone-200/90 dark:border-cyan-500/30 shadow-[0_-8px_25px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_30px_rgba(0,0,0,0.6)]"
+          className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl p-3.5 sm:p-5 transition-all duration-300 bg-white/95 dark:bg-[#0c1228]/95 border-stone-200/90 dark:border-cyan-500/40 shadow-[0_-8px_25px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_30px_rgba(0,0,0,0.75)]"
         >
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3.5">
             {/* Left: Selected count info */}
             <div className="flex items-center justify-between w-full sm:w-auto gap-3">
               <div className="flex items-center gap-3">
-                <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white font-black flex items-center justify-center text-sm sm:text-base shadow-sm shrink-0 border border-blue-400/30">
+                <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-500 text-white font-black flex items-center justify-center text-sm sm:text-base shadow-sm shrink-0 border border-cyan-400/30">
                   {selectedSubchapters.size}
                 </span>
                 <div>
@@ -633,7 +651,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className={`px-5 sm:px-8 py-3 sm:py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none ${
                   selectedSubchapters.size > 0
                     ? isDark
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white cursor-pointer shadow-[0_0_20px_rgba(0,242,254,0.45)]'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white cursor-pointer shadow-[0_0_24px_rgba(0,242,254,0.55)] border border-cyan-400/40'
                       : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 active:scale-95 text-white cursor-pointer shadow-blue-500/25'
                     : 'bg-stone-200 dark:bg-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed'
                 }`}

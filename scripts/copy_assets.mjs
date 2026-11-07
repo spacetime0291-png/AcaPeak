@@ -20,6 +20,11 @@ for (const file of files) {
 fs.writeFileSync('.nojekyll', '', 'utf8');
 if (fs.existsSync('dist')) {
   fs.writeFileSync('dist/.nojekyll', '', 'utf8');
+  // Create 404.html for GitHub Pages SPA client-side routing fallback
+  if (fs.existsSync('dist/index.html')) {
+    fs.copyFileSync('dist/index.html', 'dist/404.html');
+    fs.copyFileSync('dist/index.html', '404.html');
+  }
 }
 
 // Copy public/content to root content if exists
@@ -29,4 +34,4 @@ if (fs.existsSync(publicContent)) {
   fs.cpSync(publicContent, rootContent, { recursive: true });
 }
 
-console.log(`Copied ${files.length} production assets to ./assets/, mirrored content, and created .nojekyll`);
+console.log(`Copied ${files.length} production assets to ./assets/, created 404.html, mirrored content, and created .nojekyll`);

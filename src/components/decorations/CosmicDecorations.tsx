@@ -1,97 +1,164 @@
 import React from 'react';
 
 /**
- * Cosmic constellations, twinkling stars, and shooting star for Dark Mode Home Dashboard
+ * Cosmic constellations, concentric orbital wave rings, twinkling stars, 
+ * and shooting star for Dark Mode (Kosmik & Cyber)
  */
 export const CosmicStarsBg: React.FC = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none select-none z-0">
-      {/* 1. Constellations SVG Layer */}
+    <div className="fixed inset-0 overflow-hidden pointer-events-none select-none z-0">
       <svg
-        className="w-full h-full opacity-60"
-        viewBox="0 0 1000 600"
+        className="w-full h-full opacity-85"
+        viewBox="0 0 800 1200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid slice"
       >
-        {/* Constellation 1: Top Left Big Dipper / Cassiopeia-like cluster */}
-        <g stroke="rgba(147, 197, 253, 0.25)" strokeWidth="1" strokeDasharray="3 3">
-          <line x1="80" y1="90" x2="160" y2="70" />
-          <line x1="160" y1="70" x2="230" y2="110" />
-          <line x1="230" y1="110" x2="310" y2="90" />
-          <line x1="310" y1="90" x2="350" y2="150" />
-          <line x1="350" y1="150" x2="270" y2="170" />
-          <line x1="270" y1="170" x2="230" y2="110" />
-        </g>
-        {/* Star Nodes in Constellation 1 */}
-        <circle cx="80" cy="90" r="3" fill="#67E8F9" filter="drop-shadow(0 0 4px #00f2fe)" />
-        <circle cx="160" cy="70" r="2.5" fill="#FFFFFF" />
-        <circle cx="230" cy="110" r="3.5" fill="#A78BFA" filter="drop-shadow(0 0 4px #a855f7)" />
-        <circle cx="310" cy="90" r="2.5" fill="#FFFFFF" />
-        <circle cx="350" cy="150" r="3" fill="#93C5FD" />
-        <circle cx="270" cy="170" r="2.5" fill="#FFFFFF" />
-
-        {/* Constellation 2: Top Right Geometric Star Cluster */}
-        <g stroke="rgba(196, 181, 253, 0.2)" strokeWidth="1" strokeDasharray="2 3">
-          <line x1="720" y1="80" x2="790" y2="50" />
-          <line x1="790" y1="50" x2="880" y2="90" />
-          <line x1="880" y1="90" x2="930" y2="160" />
-          <line x1="880" y1="90" x2="810" y2="130" />
-          <line x1="810" y1="130" x2="720" y2="80" />
-        </g>
-        {/* Star Nodes in Constellation 2 */}
-        <circle cx="720" cy="80" r="3" fill="#E879F9" filter="drop-shadow(0 0 5px #d946ef)" />
-        <circle cx="790" cy="50" r="2" fill="#FFFFFF" />
-        <circle cx="880" cy="90" r="3.5" fill="#38BDF8" filter="drop-shadow(0 0 4px #00f2fe)" />
-        <circle cx="930" cy="160" r="2.5" fill="#FFFFFF" />
-        <circle cx="810" cy="130" r="2.5" fill="#FDE047" />
-
-        {/* Diagonal Shooting Star with radiant trail */}
-        <g transform="translate(680, 220) rotate(-35)">
-          <line x1="0" y1="0" x2="110" y2="0" stroke="url(#shootingStarGrad)" strokeWidth="2" strokeLinecap="round" />
-          <circle cx="110" cy="0" r="3.5" fill="#FFFFFF" filter="drop-shadow(0 0 6px #67e8f9)" />
-        </g>
-
-        {/* Gradient for shooting star */}
         <defs>
-          <linearGradient id="shootingStarGrad" x1="0" y1="0" x2="110" y2="0" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#00f2fe" stopOpacity="0" />
-            <stop offset="0.7" stopColor="#38bdf8" stopOpacity="0.5" />
-            <stop offset="1" stopColor="#ffffff" stopOpacity="1" />
+          {/* Shooting Star Gradient */}
+          <linearGradient id="shootingStarTrail" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#00f2fe" stopOpacity="0" />
+            <stop offset="60%" stopColor="#38bdf8" stopOpacity="0.4" />
+            <stop offset="90%" stopColor="#fde047" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#ffffff" stopOpacity="1" />
           </linearGradient>
+
+          {/* Glow filter for bright star nodes */}
+          <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
         </defs>
 
-        {/* Random Twinkling Micro Stars */}
-        <circle cx="60" cy="240" r="1.5" fill="#F8FAFC" className="animate-cosmic-twinkle" />
-        <circle cx="140" cy="360" r="1.2" fill="#BAE6FD" />
-        <circle cx="210" cy="480" r="1.8" fill="#DDD6FE" className="animate-cosmic-twinkle-delay" />
-        <circle cx="480" cy="70" r="2" fill="#FDE047" className="animate-cosmic-twinkle" />
-        <circle cx="560" cy="190" r="1.2" fill="#F8FAFC" />
-        <circle cx="640" cy="380" r="1.6" fill="#67E8F9" className="animate-cosmic-twinkle-delay" />
-        <circle cx="890" cy="310" r="1.5" fill="#F472B6" className="animate-cosmic-twinkle" />
-        <circle cx="940" cy="490" r="2" fill="#FFFFFF" />
+        {/* =================================================================
+            1. CONCENTRIC ORBITAL WAVE RINGS (Planetary Orbits / Cyber Waves)
+            ================================================================= */}
+        {/* Upper-Right Orbital Center (cx: 720, cy: 180) */}
+        <g stroke="rgba(99, 102, 241, 0.22)" strokeWidth="1.2">
+          <ellipse cx="740" cy="160" rx="90" ry="80" strokeDasharray="6 4" />
+          <ellipse cx="740" cy="160" rx="170" ry="155" />
+          <ellipse cx="740" cy="160" rx="250" ry="230" stroke="rgba(0, 242, 254, 0.18)" strokeDasharray="3 4" />
+          <ellipse cx="740" cy="160" rx="340" ry="310" stroke="rgba(168, 85, 247, 0.18)" />
+          <ellipse cx="740" cy="160" rx="440" ry="400" />
+          <ellipse cx="740" cy="160" rx="560" ry="510" stroke="rgba(99, 102, 241, 0.14)" strokeDasharray="8 6" />
+          <ellipse cx="740" cy="160" rx="690" ry="630" stroke="rgba(0, 242, 254, 0.12)" />
+        </g>
+
+        {/* Lower-Left Orbital Center (cx: 60, cy: 950) */}
+        <g stroke="rgba(168, 85, 247, 0.18)" strokeWidth="1">
+          <ellipse cx="60" cy="950" rx="120" ry="105" />
+          <ellipse cx="60" cy="950" rx="210" ry="190" stroke="rgba(0, 242, 254, 0.15)" strokeDasharray="4 4" />
+          <ellipse cx="60" cy="950" rx="320" ry="290" />
+          <ellipse cx="60" cy="950" rx="460" ry="420" stroke="rgba(99, 102, 241, 0.14)" />
+          <ellipse cx="60" cy="950" rx="620" ry="570" strokeDasharray="6 6" />
+        </g>
+
+        {/* =================================================================
+            2. TOP CONSTELLATIONS (Cassiopeia / Geometric Star Cluster)
+            ================================================================= */}
+        <g stroke="rgba(147, 197, 253, 0.35)" strokeWidth="1.2">
+          {/* Main Top Constellation Lines */}
+          <line x1="220" y1="90" x2="280" y2="70" />
+          <line x1="280" y1="70" x2="340" y2="105" />
+          <line x1="340" y1="105" x2="420" y2="85" />
+          <line x1="420" y1="85" x2="490" y2="120" />
+          <line x1="490" y1="120" x2="450" y2="155" />
+          <line x1="450" y1="155" x2="380" y2="140" />
+          <line x1="380" y1="140" x2="340" y2="105" />
+
+          {/* Secondary Star Link */}
+          <line x1="280" y1="70" x2="320" y2="40" strokeDasharray="3 3" stroke="rgba(168, 85, 247, 0.4)" />
+          <line x1="420" y1="85" x2="520" y2="75" strokeDasharray="3 3" stroke="rgba(0, 242, 254, 0.4)" />
+        </g>
+
+        {/* Constellation Star Vertices */}
+        <circle cx="220" cy="90" r="3" fill="#00f2fe" filter="url(#starGlow)" />
+        <circle cx="280" cy="70" r="3.5" fill="#ffffff" filter="url(#starGlow)" />
+        <circle cx="320" cy="40" r="2.5" fill="#a855f7" />
+        <circle cx="340" cy="105" r="4" fill="#67e8f9" filter="url(#starGlow)" />
+        <circle cx="380" cy="140" r="2.5" fill="#ffffff" />
+        <circle cx="420" cy="85" r="4" fill="#a855f7" filter="url(#starGlow)" />
+        <circle cx="450" cy="155" r="3" fill="#38bdf8" />
+        <circle cx="490" cy="120" r="3.5" fill="#ffffff" filter="url(#starGlow)" />
+        <circle cx="520" cy="75" r="2.5" fill="#00f2fe" />
+
+        {/* =================================================================
+            3. RADIANT SHOOTING STAR WITH GOLDEN TRAIL
+            ================================================================= */}
+        <g transform="translate(560, 360) rotate(-42)">
+          {/* Luminous Tail */}
+          <line x1="0" y1="0" x2="160" y2="0" stroke="url(#shootingStarTrail)" strokeWidth="2.5" strokeLinecap="round" />
+          {/* Shooting Star Head */}
+          <circle cx="160" cy="0" r="4" fill="#ffffff" filter="url(#starGlow)" />
+          {/* Sparkling Cross on Star Head */}
+          <path d="M160 -8L160 8M152 0L168 0" stroke="#fde047" strokeWidth="1.2" strokeLinecap="round" />
+        </g>
+
+        {/* =================================================================
+            4. 4-POINT SPARKLE STARS (GOLDEN & CYAN)
+            ================================================================= */}
+        {/* Sparkle 1: Near Shooting Star */}
+        <g transform="translate(630, 420)">
+          <path d="M0 -7L2 -2L7 0L2 2L0 7L-2 2L-7 0L-2 -2Z" fill="#FDE047" filter="url(#starGlow)" />
+        </g>
+        {/* Sparkle 2: Near Module Grid */}
+        <g transform="translate(680, 390)">
+          <path d="M0 -5L1.5 -1.5L5 0L1.5 1.5L0 5L-1.5 1.5L-5 0L-1.5 -1.5Z" fill="#00F2FE" />
+        </g>
+        {/* Sparkle 3: Left Margin */}
+        <g transform="translate(90, 450)">
+          <path d="M0 -6L2 -2L6 0L2 2L0 6L-2 2L-6 0L-2 -2Z" fill="#A855F7" filter="url(#starGlow)" />
+        </g>
+        {/* Sparkle 4: Mid Screen */}
+        <g transform="translate(130, 720)">
+          <path d="M0 -5L1.5 -1.5L5 0L1.5 1.5L0 5L-1.5 1.5L-5 0L-1.5 -1.5Z" fill="#FDE047" />
+        </g>
+        {/* Sparkle 5: Bottom Right */}
+        <g transform="translate(710, 850)">
+          <path d="M0 -7L2 -2L7 0L2 2L0 7L-2 2L-7 0L-2 -2Z" fill="#00F2FE" filter="url(#starGlow)" />
+        </g>
+
+        {/* =================================================================
+            5. AMBIENT TWINKLING MICRO STARS
+            ================================================================= */}
+        <circle cx="70" cy="220" r="1.5" fill="#FFFFFF" className="animate-cosmic-twinkle" />
+        <circle cx="150" cy="310" r="1.2" fill="#67E8F9" />
+        <circle cx="180" cy="490" r="1.8" fill="#DDD6FE" className="animate-cosmic-twinkle-delay" />
+        <circle cx="110" cy="620" r="1.4" fill="#FFFFFF" />
+        <circle cx="730" cy="260" r="1.8" fill="#FDE047" className="animate-cosmic-twinkle" />
+        <circle cx="760" cy="540" r="1.2" fill="#67E8F9" />
+        <circle cx="680" cy="670" r="1.5" fill="#FFFFFF" className="animate-cosmic-twinkle-delay" />
+        <circle cx="740" cy="780" r="1.3" fill="#A78BFA" />
+        <circle cx="260" cy="1120" r="1.6" fill="#00F2FE" className="animate-cosmic-twinkle" />
+        <circle cx="580" cy="1150" r="1.4" fill="#FFFFFF" />
       </svg>
     </div>
   );
 };
 
 /**
- * Nebula background glowing color masses
+ * Deep cosmic nebula background glowing color masses
  */
 export const CosmicNebulaGlow: React.FC = () => {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-      {/* Top Left Nebula: Deep Violet/Indigo */}
-      <div className="absolute -top-32 -left-32 w-[520px] h-[520px] rounded-full bg-gradient-to-br from-purple-700/25 via-indigo-900/20 to-transparent blur-3xl" />
+      {/* Top Left Deep Space Violet Nebula */}
+      <div className="absolute -top-36 -left-36 w-[560px] h-[560px] rounded-full bg-gradient-to-br from-purple-800/35 via-indigo-900/25 to-transparent blur-[100px]" />
       
-      {/* Top Right Nebula: Electric Cyan/Blue */}
-      <div className="absolute -top-28 -right-28 w-[480px] h-[480px] rounded-full bg-gradient-to-bl from-cyan-600/20 via-blue-900/20 to-transparent blur-3xl" />
+      {/* Top Right Cyan Cyber Nebula */}
+      <div className="absolute -top-28 -right-28 w-[500px] h-[500px] rounded-full bg-gradient-to-bl from-cyan-600/25 via-blue-900/25 to-transparent blur-[90px]" />
       
-      {/* Mid Right Subtle Nebula: Magenta */}
-      <div className="absolute top-1/2 -right-36 w-[450px] h-[450px] rounded-full bg-gradient-to-tl from-pink-600/15 via-purple-900/10 to-transparent blur-3xl" />
+      {/* Mid Right Magenta Accent */}
+      <div className="absolute top-1/3 -right-40 w-[480px] h-[480px] rounded-full bg-gradient-to-tl from-fuchsia-600/20 via-purple-900/15 to-transparent blur-[100px]" />
       
-      {/* Bottom Center Nebula: Deep Blue */}
-      <div className="absolute -bottom-32 left-1/3 w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-blue-800/20 via-indigo-950/15 to-transparent blur-3xl" />
+      {/* Bottom Left Deep Indigo Cluster */}
+      <div className="absolute bottom-10 -left-32 w-[520px] h-[520px] rounded-full bg-gradient-to-tr from-indigo-700/25 via-purple-950/20 to-transparent blur-[100px]" />
+      
+      {/* Bottom Center Blue Nebula */}
+      <div className="absolute -bottom-36 left-1/3 w-[520px] h-[520px] rounded-full bg-gradient-to-t from-blue-700/20 via-cyan-950/15 to-transparent blur-[100px]" />
     </div>
   );
 };
@@ -102,9 +169,16 @@ export const CosmicNebulaGlow: React.FC = () => {
 export const CosmicSubtitleSparkle: React.FC = () => {
   return (
     <span className="inline-flex items-center gap-1 text-cyan-400">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block drop-shadow-[0_0_6px_#00f2fe]">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="inline-block drop-shadow-[0_0_8px_#00f2fe]"
+      >
         <path
-          d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+          d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"
           fill="#00F2FE"
         />
       </svg>
