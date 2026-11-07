@@ -51,14 +51,24 @@ Berikut adalah bedah tipe variasi soal Generalisasi yang paling sering diujikan 
 > **Konteks Wacana Soal:**  
 > Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.  
 >  
-> **Pertanyaan UTBK:** *Simpulan yang paling tepat berdasarkan teks tersebut adalah...*
+> **Pertanyaan UTBK:** *Simpulan yang paling tepat berdasarkan teks tersebut adalah...*  
+>  
+> **Pilihan Ganda:**  
+> - **A.** Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%.  
+> - **B.** Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta.  
+> - **C.** Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan.  
+> - **D.** Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik.  
+> - **E.** Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik.
+
+**Kunci Jawaban: C**
 
 **Bedah Logika & Penjelasan:**
 - **Identifikasi Data:** Dari total 500 responden, sebanyak 460 orang (92%) mengalami penghematan biaya operasional, sedangkan 40 orang (8%) tidak merasakan penghematan.
 - **Mengapa Opsi Lain Salah?**
-  - Opsi yang berbunyi *"Semua pengguna motor listrik di Jakarta berhasil menghemat biaya"* adalah **salah**, karena mengabaikan 40 responden yang tidak hemat. Kata *"semua"* terlalu mutlak.
-  - Opsi yang berbunyi *"Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta"* adalah **salah**, karena membuat klaim mutlak terhadap seluruh masyarakat umum yang tidak diteliti.
-  - Opsi yang berbunyi *"Masyarakat luar Jakarta juga akan menghemat biaya hingga 60%"* adalah **salah**, karena melompat keluar wilayah penelitian (*out of scope*).
+  - **A Salah:** Mengabaikan 40 responden yang tidak hemat. Kata *"semua"* terlalu mutlak.
+  - **B Salah:** Membuat klaim mutlak terhadap seluruh masyarakat umum yang tidak diteliti.
+  - **D Salah:** Menyimpulkan vonis mutlak (*pasti tidak cocok*) yang tidak ada di teks wacana.
+  - **E Salah:** Melompat keluar wilayah penelitian (*out of scope* Jakarta $\to$ luar Jakarta).
 - **Simpulan yang Benar:** *"Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan."*  
   Simpulan ini tepat karena setia pada data proporsi (92% merupakan sebagian besar) dan wilayah target penelitian (Jakarta).
 
@@ -69,14 +79,24 @@ Berikut adalah bedah tipe variasi soal Generalisasi yang paling sering diujikan 
 > **Konteks Wacana Soal:**  
 > Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.  
 >  
-> **Pertanyaan UTBK:** *Manakah pernyataan yang paling mungkin benar mengenai penerapan teknik fermentasi tertutup tersebut?*
+> **Pertanyaan UTBK:** *Manakah pernyataan yang paling mungkin benar mengenai penerapan teknik fermentasi tertutup tersebut?*  
+>  
+> **Pilihan Ganda:**  
+> - **A.** Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika.  
+> - **B.** Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut.  
+> - **C.** Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%.  
+> - **D.** Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%.  
+> - **E.** Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar.
+
+**Kunci Jawaban: B**
 
 **Bedah Logika & Penjelasan:**
-- **Identifikasi Data:** Terjadi kenaikan konsisten penjualan kopi arabika di beberapa kuartal berturut-turut (12%, 15%, 18%) setelah petani di daerah pegunungan dan tiga kabupaten sekitarnya menerapkan teknik fermentasi tertutup.
+- **Identifikasi Data:** Terjadi kenaikan konsisten penjualan kopi arabika di beberapa kuartal berturut-turut (12%, 15%, 18%) setelah petani menerapkan teknik fermentasi tertutup.
 - **Mengapa Opsi Lain Salah?**
-  - Opsi yang menyatakan *"Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi"* adalah **salah**, karena teks tidak pernah menyatakan bahwa tidak ada faktor atau cara lain.
-  - Opsi yang mengklaim *"Kopi robusta yang diolah dengan fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%"* adalah **salah**, karena wacana hanya menguji kopi arabika, bukan kopi robusta.
-  - Opsi yang memastikan *"Pada kuartal keempat penjualan pasti naik 21%"* adalah **salah**, karena meramal angka spesifik secara mutlak tanpa data empiris.
+  - **A Salah:** Kata *"satu-satunya cara"* tidak didukung teks wacana.
+  - **C Salah:** Melompat ke objek lain (*kopi robusta*), padahal wacana hanya menguji kopi arabika.
+  - **D Salah:** Meramal angka spesifik (*pasti 21%*) secara mutlak tanpa data empiris.
+  - **E Salah:** Menarik kesimpulan negatif sepihak tentang kondisi petani yang tidak diuji.
 - **Simpulan yang Benar:** *"Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut."*  
   Simpulan ini menyatakan arah tren data secara wajar (*cenderung berdampak positif*) dan tetap berada dalam batasan komoditas wacana (kopi arabika).
 
@@ -87,7 +107,16 @@ Berikut adalah bedah tipe variasi soal Generalisasi yang paling sering diujikan 
 > **Konteks Wacana Soal:**  
 > Seorang peneliti menyimpulkan bahwa *"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa."* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.  
 >  
-> **Pertanyaan UTBK:** *Manakah pernyataan di bawah ini yang paling tepat mengevaluasi kelemahan dari generalisasi peneliti tersebut?*
+> **Pertanyaan UTBK:** *Manakah pernyataan di bawah ini yang paling tepat mengevaluasi kelemahan dari generalisasi peneliti tersebut?*  
+>  
+> **Pilihan Ganda:**  
+> - **A.** Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut.  
+> - **B.** Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek.  
+> - **C.** Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa.  
+> - **D.** Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan.  
+> - **E.** Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam.
+
+**Kunci Jawaban: C**
 
 **Bedah Logika & Penjelasan:**
 - **Identifikasi Cacat Logika:** Peneliti mengklaim bahwa simpulannya berlaku untuk *"seluruh kelompok usia dewasa"* (rentang usia 18 hingga 65 tahun ke atas dengan berbagai latar belakang kesehatan dan profesi). Padahal, subjek yang diuji hanya 25 mahasiswa tingkat akhir dari satu fakultas teknik yang usianya sebaya (21-23 tahun) dan sangat homogen.
@@ -390,54 +419,86 @@ Kaidah utama di UTBK:
 
 # 5. Bedah Soal dan Variasi UTBK
 
-Berikut adalah bedah tiga tipe variasi soal Analogi yang paling sering diujikan di UTBK, lengkap dengan wacana soal asli dan penjelasan alur logikanya:
+Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda, dan pembahasan analisisnya:
 
 ### Variasi 1: Prediksi Berbasis Analogi Fenomena
 
 > **Konteks Wacana:**  
-> Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni bintang induknya, berkomposisi batuan silikat padat, dan menerima radiasi yang menjaga air tetap berfase cair. Di Bumi, kombinasi ketiga faktor ini memungkinkan terbentuknya siklus hidrologi yang stabil.  
+> Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni (*habitable zone*) bintang induknya, berkomposisi batuan silikat padat, dan menerima radiasi yang menjaga air tetap berfase cair. Di Bumi, kombinasi ketiga faktor ini memungkinkan terbentuknya siklus hidrologi yang stabil.  
 >  
-> **Pertanyaan UTBK:** *Berdasarkan penalaran analogi, simpulan yang paling mungkin benar adalah...*
+> **Pertanyaan UTBK:** *Berdasarkan penalaran analogi, simpulan yang paling mungkin benar adalah...*  
+>  
+> **Pilihan Ganda:**  
+> - **A.** Planet Kepler-186f pasti dihuni oleh makhluk hidup cerdas seperti di Bumi.  
+> - **B.** Planet Kepler-186f memiliki ukuran dan jumlah satelit alami yang persis sama dengan Bumi.  
+> - **C.** Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil.  
+> - **D.** Semua planet di luar tata surya yang berbatu padat memiliki air dalam fase cair.  
+> - **E.** Bumi dan Planet Kepler-186f terbentuk pada waktu yang bersamaan.
 
-**Penjelasan Singkat:**
-- **Titik Kesamaan:** Zona laik huni + batuan silikat padat + air fase cair.
-- **Dampak yang Ditransfer:** Di Bumi terbukti menghasilkan siklus hidrologi stabil -> Kepler-186f berpotensi mengalami hal yang sama.
-- **Analisis Pilihan:**
-  - *Salah:* "Kepler-186f pasti dihuni makhluk cerdas" (klaim berlebihan di luar data teks).
-  - *Salah:* "Ukuran dan jumlah satelit kedua planet persis sama" (tidak berkaitan dengan zona laik huni).
-  - **Benar:** *"Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil."*
+**Kunci Jawaban: C**
+
+**Bedah Logika & Pembahasan:**
+- **Analisis Konsep:** Bumi dan Kepler-186f sama-sama memiliki 3 sifat esensial: zona laik huni, batuan silikat padat, dan suhu pendukung air cair. Di Bumi, sifat ini terbukti menghasilkan siklus hidrologi stabil. Simpulan analogi yang sah mentransfer akibat ini ke Kepler-186f dengan kuantor probabilistik (*kemungkinan besar*).
+- **Mengapa Opsi Lain Salah?**
+  - **A Salah:** Lompatan simpulan berlebihan; teks hanya meneliti batuan dan air, bukan keberadaan makhluk hidup cerdas.
+  - **B Salah:** Kesamaan zona laik huni tidak menyiratkan kesamaan ukuran atau jumlah satelit alami.
+  - **D Salah:** Generalisasi berlebihan pada seluruh planet di alam semesta tanpa dasar data.
+  - **E Salah:** Teks wacana tidak memuat data kronologi waktu pembentukan planet.
+- **Trik Cepat (15 Detik):** Cari sifat terbukti milik Bumi di akhir teks (*siklus hidrologi stabil*), lalu pasangkan dengan kata kemungkinan (*kemungkinan besar*). Coret langsung opsi mutlak (*pasti, semua*).
 
 ---
 
 ### Variasi 2: Parallel Reasoning (Pola Penalaran Kembar)
 
 > **Konteks Wacana:**  
-> Melatih otot secara bertahap membuat serat otot beradaptasi dan makin kuat, tetapi jika beban langsung ekstrem sejak hari pertama, otot justru cedera. Demikian pula belajar pemrograman; latihan logika bertahap membangun pemahaman kokoh, sedangkan langsung memaksakan proyek besar kepada pemula memicu kegagalan.  
+> Melatih otot tubuh dengan beban yang ditingkatkan secara bertahap akan membuat serat otot beradaptasi dan menjadi lebih kuat. Sebaliknya, jika beban terlalu ekstrem sejak hari pertama, otot justru akan mengalami cedera. Demikian pula dalam mempelajari pemrograman komputer; memberikan latihan logika secara bertahap akan membangun pemahaman yang kokoh, sedangkan langsung memaksakan proyek berskala besar kepada pemula justru akan memicu kejenuhan dan kegagalan.  
 >  
-> **Pertanyaan UTBK:** *Manakah situasi yang menggunakan pola penalaran paling serupa dengan teks tersebut?*
+> **Pertanyaan UTBK:** *Manakah situasi di bawah ini yang menggunakan pola penalaran analogi paling serupa dengan teks di atas?*  
+>  
+> **Pilihan Ganda:**  
+> - **A.** Membaca buku sejarah setiap hari akan memperluas wawasan seseorang, sama halnya dengan menonton film dokumenter sejarah di televisi.  
+> - **B.** Memberikan pupuk secara bertahap sesuai usia tanaman akan menyuburkan pertumbuhannya, sedangkan pemberian dosis berlebih sekaligus akan membuat tanaman mati; hal ini serupa dengan pemberian materi ajar kepada siswa yang harus disesuaikan tingkat kesulitannya secara bertahap agar tidak membuat siswa kewalahan.  
+> - **C.** Kendaraan listrik membutuhkan pengisian daya baterai secara rutin agar dapat beroperasi, berbeda dengan kendaraan bensin yang dapat diisi dalam waktu singkat di SPBU.  
+> - **D.** Seorang atlet lari maraton harus menjaga pola makan dan waktu tidur yang teratur agar staminanya terjaga saat perlombaan berlangsung.  
+> - **E.** Belajar bermain gitar membutuhkan latihan jari setiap hari, oleh karena itu semua musisi profesional pasti pernah mengalami sakit pada ujung jari mereka.
 
-**Penjelasan Singkat:**
-- **Rumus Logika Wacana:**  
-  [Perlakuan bertahap -> Hasil positif dan adaptasi] VS [Perlakuan berlebih -> Kegagalan dan kerusakan].
-- **Analisis Pilihan:**
-  - Abaikan topik (jangan cari opsi yang membahas otot atau koding). Cari yang memiliki rumus kontras simetris serupa.
-  - **Benar:** *"Pemberian pupuk bertahap menyuburkan tanaman, sedangkan dosis berlebih mematikan tanaman; hal ini serupa dengan materi ajar siswa yang harus diberikan bertahap agar tidak kewalahan."*
+**Kunci Jawaban: B**
+
+**Bedah Logika & Pembahasan:**
+- **Analisis Konsep:** Teks menyusun perbandingan dua ranah berbeda (Latihan Otot Fisik vs Belajar Pemrograman Kognitif) dengan rumus kontras simetris: [Perlakuan bertahap -> Adaptasi positif] VS [Beban ekstrem -> Cedera/kegagalan]. Opsi B mereplikasi rumus yang kembar identik: Pertanian Tanaman vs Pendidikan Siswa dengan rumus [pupuk bertahap -> subur, dosis berlebih -> mati] serupa [materi bertahap -> paham, materi drastis -> kewalahan].
+- **Mengapa Opsi Lain Salah?**
+  - **A Salah:** Hanya membandingkan dua media wawasan tanpa ada sisi kontras kegagalan.
+  - **C Salah:** Merupakan kalimat pembeda (*kontras*), bukan penalaran analogi sistematis.
+  - **D Salah:** Hanya membahas satu ranah tunggal (atlet) tanpa objek analogi pembanding.
+  - **E Salah:** Simpulan induktif satu bidang musik tanpa struktur analogi kembar.
+- **Trik Cepat (15 Detik):** Ringkas pola kontras di kepala: "[Bertahap = Berhasil, Berlebihan = Rusak]". Cari opsi yang menyajikan perbandingan dua sisi yang memiliki rumus kontras identik.
 
 ---
 
 ### Variasi 3: Memperlemah Analogi / Critical Disanalogy (HOTS)
 
 > **Konteks Wacana:**  
-> Manajemen Perusahaan Ritel X ingin menerapkan sistem kerja 4 hari seminggu demi meningkatkan produktivitas, meniru Perusahaan Software Y yang sukses naik produktivitas 25%. Alasan manajemen: kedua perusahaan sama-sama memiliki 300 karyawan dan berlokasi di kota metropolitan yang sama.  
+> Manajemen Perusahaan Ritel X berencana menerapkan sistem kerja 4 hari seminggu tanpa pemotongan gaji untuk meningkatkan produktivitas karyawan. Keputusan ini didasarkan pada keberhasilan Perusahaan Software Y yang mengalami kenaikan produktivitas sebesar 25% setelah menerapkan sistem kerja 4 hari seminggu karena kedua perusahaan memiliki jumlah karyawan yang sama (300 orang) dan berlokasi di kota metropolitan yang sama.  
 >  
-> **Pertanyaan UTBK:** *Manakah fakta yang paling memperlemah argumen analogi Manajemen Ritel X?*
+> **Pertanyaan UTBK:** *Manakah fakta di bawah ini yang paling memperlemah argumen analogi Manajemen Perusahaan Ritel X?*  
+>  
+> **Pilihan Ganda:**  
+> - **A.** Perusahaan Software Y telah berdiri lima tahun lebih lama dibandingkan Perusahaan Ritel X.  
+> - **B.** Sebagian karyawan di Perusahaan Ritel X menggunakan transportasi umum untuk berangkat bekerja.  
+> - **C.** Produktivitas Perusahaan Software Y bergantung pada penyelesaian proyek berbasis output mingguan yang fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik yang melayani pelanggan setiap hari.  
+> - **D.** Perusahaan Software Y memberikan fasilitas makan siang gratis kepada karyawannya, sedangkan Perusahaan Ritel X memberikan tunjangan makan dalam bentuk uang tunai.  
+> - **E.** Biaya sewa gedung kantor di kota metropolitan tersebut meningkat sebesar 10% pada tahun ini.
 
-**Penjelasan Singkat:**
-- **Analogi Manajemen:** Software Y sukses kerja 4 hari -> Ritel X diprediksi ikut sukses karena sama-sama 300 staf di kota yang sama.
-- **Cacat Logika:** Jumlah staf dan lokasi hanyalah kemiripan luar, bukan cara kerja operasional.
-- **Fakta Pelemahan (Critical Disanalogy):**  
-  **Benar:** *"Produktivitas Perusahaan Software Y berbasis penyelesaian proyek fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik melayani pembeli setiap hari."*  
-  (Perbedaan cara kerja ini membuktikan bahwa memangkas hari kerja ritel justru menurunkan jam buka toko dan omzet penjualan).`,
+**Kunci Jawaban: C**
+
+**Bedah Logika & Pembahasan:**
+- **Analisis Konsep (*Critical Disanalogy*):** Kesamaan jumlah karyawan (300 orang) dan lokasi kota metropolitan hanyalah kemiripan luar. Keberhasilan sistem kerja 4 hari di Perusahaan Software Y didorong oleh model kerja fleksibel berbasis penyelesaian output proyek mingguan. Sebaliknya, omzet pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik melayani pembeli setiap hari. Jika toko ritel memangkas hari kerja, jam buka toko berkurang dan omzet penjualan langsung anjlok. Fakta C membeberkan perbedaan cara kerja sistemik yang langsung membatalkan analogi kebijakan manajemen.
+- **Mengapa Opsi Lain Salah?**
+  - **A Salah:** Usia berdiri perusahaan tidak memengaruhi efektivitas skema hari kerja mingguan.
+  - **B Salah:** Moda transportasi karyawan tidak berhubungan dengan cara perusahaan menghasilkan produktivitas.
+  - **D Salah:** Format fasilitas makan siang (uang tunai vs katering) adalah detail sepele yang tidak merusak analogi.
+  - **E Salah:** Kenaikan biaya sewa dialami kedua perusahaan dan tidak membedakan cara kerja operasional bisnis.
+- **Trik Cepat (15 Detik):** Tanyakan: *"Perbedaan apa yang membuat sistem di perusahaan software mustahil diterapkan di toko fisik ritel?"* Pilih fakta yang menunjukkan perbedaan cara operasional menghasilkan pendapatan bisnis.`,
     visualizations_svg: [],
     distractor_traps: [
       'False Analogy (Analogi Palsu/Dangkal): Membandingkan dua objek hanya karena kemiripan permukaan atau kemiripan nama, padahal mekanisme dasarnya bertolak belakang.',
