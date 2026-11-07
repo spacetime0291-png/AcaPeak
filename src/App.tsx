@@ -15,6 +15,7 @@ import { SmaSubjectDetailView } from './components/subtest/SmaSubjectDetailView'
 import { PdfMaterialReader } from './components/reader/PdfMaterialReader';
 import { ActiveDrillingView } from './components/drilling/ActiveDrillingView';
 import { CosmicNebulaGlow, CosmicStarsBg } from './components/decorations/CosmicDecorations';
+import { NatureDecorationsBg } from './components/decorations/NatureDecorations';
 
 interface AppRouteState {
   view: 'home' | 'subtest' | 'materi' | 'drilling' | 'sma-subject';
@@ -289,11 +290,7 @@ export default function App() {
             <CosmicStarsBg />
           </>
         ) : (
-          <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-            <div className="absolute -top-40 -left-40 w-[540px] h-[540px] rounded-full bg-gradient-to-br from-rose-200/20 via-pink-100/15 to-transparent blur-3xl" />
-            <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-gradient-to-bl from-teal-200/20 via-emerald-100/15 to-transparent blur-3xl" />
-            <div className="absolute -bottom-40 left-1/4 w-[520px] h-[520px] rounded-full bg-gradient-to-tr from-sky-200/20 via-indigo-100/15 to-transparent blur-3xl" />
-          </div>
+          <NatureDecorationsBg />
         )
       ) : (
         // Distraction-free focus background for active reading & exam drilling
@@ -333,7 +330,7 @@ export default function App() {
         )}
 
         {/* Main Content Area */}
-        <main className={route.view === 'subtest' ? 'flex-1 w-full' : 'flex-1 w-full max-w-5xl mx-auto px-2 sm:px-4 py-2.5 sm:py-6'}>
+        <main className={route.view === 'subtest' || route.view === 'materi' ? 'flex-1 w-full' : 'flex-1 w-full max-w-5xl mx-auto px-2 sm:px-4 py-2.5 sm:py-6'}>
           {/* VIEW 1: HOME DASHBOARD */}
           {route.view === 'home' && (
             <div className="space-y-4">

@@ -6,7 +6,6 @@ import rehypeKatex from 'rehype-katex';
 import {
   ChevronLeft,
   ChevronRight,
-  Printer,
   Maximize2,
   Minimize2,
   Zap,
@@ -50,10 +49,6 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   // Collapsible solution accordion state: Set of open exampleIds
   const [openSolutions, setOpenSolutions] = useState<Set<string>>(new Set());
-
-  const handlePrint = () => {
-    window.print();
-  };
 
   const toggleSolution = (exampleId: string) => {
     setOpenSolutions((prev) => {
@@ -199,40 +194,30 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   };
 
   return (
-    <div className={`min-h-screen text-slate-800 dark:text-[#f8fafc] animate-page-enter transition-all duration-300 ${isFocusMode ? 'py-2 px-2' : 'py-4 sm:py-8 px-2 sm:px-4'}`}>
-      {/* 1. TOP STICKY BAR: Back button, topic title, Print, Focus & ThemeToggle */}
-      <div className="relative overflow-hidden sticky top-0 z-30 max-w-3xl mx-auto mb-4 bg-white/95 dark:bg-[#0c1224]/95 backdrop-blur-md border border-stone-200/90 dark:border-indigo-500/25 rounded-2xl px-3.5 sm:px-5 py-2.5 shadow-sm flex items-center justify-between gap-3 transition-all duration-300">
+    <div className={`min-h-screen text-slate-800 dark:text-[#f8fafc] animate-page-enter transition-all duration-300 ${isFocusMode ? 'py-1 px-1 sm:py-2 sm:px-2' : 'py-2 sm:py-4 px-1 sm:px-3'}`}>
+      {/* 1. TOP STICKY BAR: Back button, topic title, Focus & ThemeToggle */}
+      <div className="relative overflow-hidden sticky top-0 z-30 max-w-4xl mx-auto mb-2.5 sm:mb-4 bg-white/95 dark:bg-[#0c1224]/95 backdrop-blur-md border border-stone-200/90 dark:border-indigo-500/25 rounded-xl sm:rounded-2xl px-2.5 sm:px-4 py-2 shadow-xs flex items-center justify-between gap-2 transition-all duration-300">
         {!isDark && <NatureFocusHeaderAccent />}
 
         <button
           type="button"
           onClick={onBackToSubtest}
-          className="relative z-10 flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-2.5 py-1.5 rounded-xl hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer"
+          className="relative z-10 flex items-center gap-1 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-2 py-1.5 rounded-xl hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
         >
-          <ChevronLeft className="w-4.5 h-4.5 text-blue-600 dark:text-cyan-400" />
+          <ChevronLeft className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-blue-600 dark:text-cyan-400" />
           <span className="hidden sm:inline">Daftar Bab {metadata.subtest}</span>
           <span className="sm:hidden">Bab</span>
         </button>
 
         {/* Clean Sub-bab title */}
-        <div className="relative z-10 min-w-0 flex-1 text-center px-2">
-          <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 break-words line-clamp-2 leading-tight">
+        <div className="relative z-10 min-w-0 flex-1 text-center px-1">
+          <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 break-words line-clamp-1 sm:line-clamp-2 leading-tight">
             {metadata.title}
           </p>
         </div>
 
-        {/* Actions: Cetak, Mode Fokus, & Theme Toggle */}
+        {/* Actions: Mode Fokus & Theme Toggle (Tombol Cetak dihilangkan sesuai instruksi) */}
         <div className="relative z-10 flex items-center gap-1.5 shrink-0">
-          <button
-            type="button"
-            onClick={handlePrint}
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer"
-            title="Cetak Dokumen (Print to PDF)"
-          >
-            <Printer className="w-4 h-4 text-slate-500 dark:text-slate-400" />
-            <span className="hidden md:inline">Cetak</span>
-          </button>
-
           <button
             type="button"
             onClick={() => setIsFocusMode(!isFocusMode)}
@@ -241,12 +226,12 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           >
             {isFocusMode ? (
               <>
-                <Minimize2 className="w-4 h-4" />
+                <Minimize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 <span className="hidden md:inline">Biasa</span>
               </>
             ) : (
               <>
-                <Maximize2 className="w-4 h-4" />
+                <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 <span className="hidden md:inline">Fokus</span>
               </>
             )}
@@ -256,24 +241,24 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
         </div>
       </div>
 
-      {/* 2. PAPER CONTAINER: Zero Visual Clutter, Distraction-Free LaTeX Typography */}
-      <article className="max-w-3xl mx-auto px-6 py-8 md:px-12 md:py-12 shadow-sm rounded-none sm:rounded-3xl transition-all duration-300 bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800/90 text-slate-800 dark:text-[#f8fafc]">
+      {/* 2. PAPER CONTAINER: Compact padding/margin, Maximum Reading Space */}
+      <article className="max-w-4xl mx-auto px-3.5 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 shadow-sm rounded-xl sm:rounded-2xl transition-all duration-300 bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800/90 text-slate-800 dark:text-[#f8fafc]">
         {/* Academic Header / Metadata */}
-        <header className="border-b-2 border-slate-900 dark:border-slate-700 pb-5 mb-7">
-          <div className="flex flex-wrap items-center justify-between gap-2 text-xs uppercase font-mono tracking-wider text-slate-500 dark:text-slate-400 mb-2">
+        <header className="border-b-2 border-slate-900 dark:border-slate-700 pb-3 sm:pb-4 mb-4 sm:mb-6">
+          <div className="flex flex-wrap items-center justify-between gap-1.5 text-[11px] sm:text-xs uppercase font-mono tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
             <span>
               UTBK-SNBT • {metadata.subtest} • Bab {metadata.chapter_num}
             </span>
-            <span className="text-[11px] font-normal text-slate-400 dark:text-slate-400">
+            <span className="text-[10px] sm:text-[11px] font-normal text-slate-400 dark:text-slate-400">
               Dokumen Akademis Terverifikasi
             </span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight break-words">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-slate-900 dark:text-slate-50 leading-tight break-words">
             {metadata.title}
           </h1>
 
-          <div className="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center gap-2.5">
+          <div className="mt-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center gap-2">
             <span>Bab {metadata.chapter_num}: {metadata.chapter_title}</span>
             {worked_examples && worked_examples.length > 0 && (
               <>
@@ -315,7 +300,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                   backgroundColor: isDark ? 'rgba(30, 41, 59, 0.7)' : '#eef2ff',
                   boxShadow: isDark ? '-2px 0 10px rgba(99,102,241,0.25)' : 'none',
                 }}
-                className="px-5 py-4 my-6 font-serif text-[15.5px] sm:text-[16.5px] leading-relaxed text-slate-800 dark:text-slate-100 rounded-r-2xl transition-all"
+                className="px-3.5 py-3 my-3.5 sm:px-4 sm:py-3.5 sm:my-5 font-serif text-[15px] sm:text-[16px] leading-relaxed text-slate-800 dark:text-slate-100 rounded-r-xl transition-all"
               >
                 <span className="font-sans font-bold text-xs uppercase tracking-wider text-indigo-900 dark:text-indigo-300 block mb-1.5">
                   📌 Kaidah & Prinsip Mutlak:

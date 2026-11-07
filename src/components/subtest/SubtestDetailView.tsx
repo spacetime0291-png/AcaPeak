@@ -329,19 +329,19 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
       </div>
 
       {/* Main Content Area: Separated Standalone Bab Cards (Senada dengan Beranda) */}
-      <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-4 sm:py-6">
+      <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-3 sm:py-5">
         {/* ========================================================
             TAB 1: MATERI (Standalone Cosmic/Nature Bab Cards)
             ======================================================== */}
         {activeTab === 'materi' && (
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-3.5">
             {(subtest.modules || []).map((mod, modIdx) => {
               const isOpen = openModules.has(mod.id);
 
               return (
                 <div
                   key={mod.id}
-                  className={`rounded-2xl sm:rounded-3xl transition-all duration-300 overflow-hidden ${
+                  className={`rounded-xl sm:rounded-2xl transition-all duration-300 overflow-hidden ${
                     isDark
                       ? `bg-[#0e1736]/90 backdrop-blur-md border ${subtestTheme.border} ${subtestTheme.glow}`
                       : `bg-white border ${subtestTheme.border} ${subtestTheme.glow}`
@@ -350,35 +350,35 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   {/* Module Header Row */}
                   <div
                     onClick={() => toggleModule(mod.id)}
-                    className="px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3.5 transition cursor-pointer select-none group"
+                    className="px-3.5 sm:px-5 py-3 sm:py-3.5 flex items-center justify-between gap-3 transition cursor-pointer select-none group"
                   >
                     {/* Left: Module Squircle Icon */}
                     <div
-                      className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
+                      className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
                     >
-                      <ModuleIcon moduleId={mod.id} className="w-8 h-8 sm:w-9 sm:h-9" />
+                      <ModuleIcon moduleId={mod.id} className="w-6 h-6 sm:w-7 sm:h-7" />
                     </div>
 
                     {/* Middle: Title & Meta Info */}
                     <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
+                      <div className="flex items-center gap-2 mb-0.5">
+                        <span className={`px-2 py-0.5 rounded-md sm:rounded-lg text-[10px] sm:text-[11px] font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
                           BAB {modIdx + 1 < 10 ? `0${modIdx + 1}` : modIdx + 1}
                         </span>
-                        <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                        <span className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">
                           • {mod.subtopics.length} Sub-bab • ~{mod.estimatedMinutes} mnt
                         </span>
                       </div>
-                      <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-white leading-snug group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
+                      <h2 className="text-sm sm:text-base font-bold text-slate-800 dark:text-white leading-tight group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                         {mod.title}
                       </h2>
                     </div>
 
                     {/* Right: Smooth Rotating Chevron */}
-                    <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
+                    <div className="flex items-center gap-2 shrink-0">
                       <div className="text-slate-400 group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                         <ChevronDown
-                          className={`w-6 h-6 transition-transform duration-300 ease-out ${
+                          className={`w-5 h-5 transition-transform duration-300 ease-out ${
                             isOpen ? 'rotate-180 text-blue-600 dark:text-cyan-400' : 'rotate-0 text-slate-400'
                           }`}
                         />
@@ -393,7 +393,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3.5 sm:px-6 py-4 border-t border-stone-100 dark:border-indigo-500/25 space-y-2.5 animate-subtopic-slide">
+                      <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3 sm:px-4 py-2.5 border-t border-stone-100 dark:border-indigo-500/25 space-y-2 animate-subtopic-slide">
                         {mod.subtopics.map((sub, sIdx) => {
                           const indexNum = sIdx + 1 < 10 ? `0${sIdx + 1}` : `${sIdx + 1}`;
 
@@ -402,26 +402,26 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               key={sub.id}
                               onClick={() => onSelectMaterial(sub.id)}
                               style={{ animationDelay: `${sIdx * 30}ms` }}
-                              className={`flex items-center justify-between p-3.5 sm:p-4 rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
+                              className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
                                 isDark
-                                  ? 'bg-[#0f1b3b]/90 hover:bg-[#152754] border-slate-700/80 hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(0,242,254,0.35)]'
+                                  ? 'bg-[#0f1b3b]/90 hover:bg-[#152754] border-slate-700/80 hover:border-cyan-400 hover:shadow-[0_0_18px_rgba(0,242,254,0.3)]'
                                   : 'bg-white hover:bg-[#fff9eb] border-stone-200/90 hover:border-amber-300/80 hover:shadow-xs'
                               }`}
                             >
                               {/* Left: Index badge + Title */}
-                              <div className="flex items-center gap-3.5 min-w-0 flex-1 py-0.5">
+                              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1 py-0.5">
                                 {/* Numbered Cyber Badge */}
                                 <div
-                                  className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl font-mono font-black text-xs sm:text-sm flex items-center justify-center shrink-0 transition-colors shadow-2xs ${subtestTheme.numChip}`}
+                                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl font-mono font-black text-[11px] sm:text-xs flex items-center justify-center shrink-0 transition-colors shadow-2xs ${subtestTheme.numChip}`}
                                 >
                                   {indexNum}
                                 </div>
 
                                 <div className="min-w-0 flex-1">
-                                  <span className="text-sm sm:text-base font-bold leading-relaxed break-words whitespace-normal block text-slate-800 dark:text-white group-hover/sub:text-blue-700 dark:group-hover/sub:text-cyan-200 transition-colors">
+                                  <span className="text-xs sm:text-sm font-bold leading-snug break-words whitespace-normal block text-slate-800 dark:text-white group-hover/sub:text-blue-700 dark:group-hover/sub:text-cyan-200 transition-colors">
                                     {sub.title}
                                   </span>
-                                  <div className="flex items-center gap-1.5 mt-0.5 text-[11px] font-semibold text-slate-400 dark:text-cyan-400/80">
+                                  <div className="flex items-center gap-1 mt-0.5 text-[10px] sm:text-[11px] font-semibold text-slate-400 dark:text-cyan-400/80">
                                     <Sparkles className="w-3 h-3 text-amber-500 dark:text-cyan-400" />
                                     <span>Materi Inti UTBK</span>
                                   </div>
@@ -431,10 +431,10 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               {/* Right: Clean Read Action Pill */}
                               <div className="shrink-0 ml-2">
                                 <span
-                                  className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-2xs group-hover/sub:translate-x-1 ${subtestTheme.actionPill}`}
+                                  className={`flex items-center gap-1 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-bold transition-all shadow-2xs group-hover/sub:translate-x-1 ${subtestTheme.actionPill}`}
                                 >
                                   <span>Baca Materi</span>
-                                  <ChevronRight className="w-4 h-4" />
+                                  <ChevronRight className="w-3.5 h-3.5" />
                                 </span>
                               </div>
                             </div>
@@ -453,14 +453,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             TAB 2: DRILLING SOAL (Setup Latihan Standalone Cards)
             ======================================================== */}
         {activeTab === 'drilling' && (
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-3.5">
             {/* Quick Header Bar */}
             <div className="flex items-center justify-between px-1">
               <div>
-                <h3 className="font-bold text-slate-800 dark:text-white text-base sm:text-lg">
+                <h3 className="font-bold text-slate-800 dark:text-white text-sm sm:text-base">
                   Pilih Materi Latihan
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400">
                   Ketuk sub-bab yang ingin diujikan dalam sesi latihan ini.
                 </p>
               </div>
@@ -468,7 +468,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <button
                   type="button"
                   onClick={selectAllSubtest}
-                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]"
+                  className="px-3.5 py-1.5 rounded-xl text-xs font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]"
                 >
                   Pilih Semua
                 </button>
@@ -476,7 +476,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   <button
                     type="button"
                     onClick={clearAllSubtest}
-                    className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
+                    className="px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
                   >
                     Batal
                   </button>
@@ -485,7 +485,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             </div>
 
             {/* Standalone Cards for Drilling */}
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-3.5">
               {(subtest.modules || []).map((mod, modIdx) => {
                 const isOpen = openModules.has(mod.id);
                 const selectedInMod = mod.subtopics.filter((s) => selectedSubchapters.has(s.id)).length;
@@ -494,7 +494,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 return (
                   <div
                     key={mod.id}
-                    className={`rounded-2xl sm:rounded-3xl transition-all duration-300 overflow-hidden ${
+                    className={`rounded-xl sm:rounded-2xl transition-all duration-300 overflow-hidden ${
                       isDark
                         ? `bg-[#0e1736]/90 backdrop-blur-md border ${subtestTheme.border} ${subtestTheme.glow}`
                         : `bg-white border ${subtestTheme.border} ${subtestTheme.glow}`
@@ -503,32 +503,32 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     {/* Module Header Row */}
                     <div
                       onClick={() => toggleModule(mod.id)}
-                      className="px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3.5 transition cursor-pointer select-none group"
+                      className="px-3.5 sm:px-5 py-3 sm:py-3.5 flex items-center justify-between gap-3 transition cursor-pointer select-none group"
                     >
                       {/* Left: Module Squircle Icon */}
                       <div
-                        className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
+                        className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
                       >
-                        <ModuleIcon moduleId={mod.id} className="w-8 h-8 sm:w-9 sm:h-9" />
+                        <ModuleIcon moduleId={mod.id} className="w-6 h-6 sm:w-7 sm:h-7" />
                       </div>
 
                       {/* Middle: Title & Meta Info */}
                       <div className="min-w-0 flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
+                        <div className="flex items-center gap-2 mb-0.5">
+                          <span className={`px-2 py-0.5 rounded-md sm:rounded-lg text-[10px] sm:text-[11px] font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
                             BAB {modIdx + 1 < 10 ? `0${modIdx + 1}` : modIdx + 1}
                           </span>
-                          <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                          <span className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">
                             • {mod.subtopics.length} Sub-bab • ~{mod.estimatedMinutes} mnt
                           </span>
                         </div>
-                        <h2 className="text-base sm:text-lg font-bold text-slate-800 dark:text-white leading-snug group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
+                        <h2 className="text-sm sm:text-base font-bold text-slate-800 dark:text-white leading-tight group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                           {mod.title}
                         </h2>
                       </div>
 
                       {/* Right: Quick Select / Deselect Module & Chevron */}
-                      <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
+                      <div className="flex items-center gap-2 shrink-0">
                         <button
                           type="button"
                           onClick={(e) => {
@@ -544,7 +544,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               return next;
                             });
                           }}
-                          className={`text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-xl border transition cursor-pointer shadow-2xs ${
+                          className={`text-xs font-bold px-3 py-1 rounded-lg sm:rounded-xl border transition cursor-pointer shadow-2xs ${
                             allSelectedInMod
                               ? isDark
                                 ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_0_14px_rgba(0,242,254,0.6)] font-black'
@@ -559,7 +559,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
                         <div className="text-slate-400 group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                           <ChevronDown
-                            className={`w-6 h-6 transition-transform duration-300 ease-out ${
+                            className={`w-5 h-5 transition-transform duration-300 ease-out ${
                               isOpen ? 'rotate-180 text-blue-600 dark:text-cyan-400' : 'rotate-0 text-slate-400'
                             }`}
                           />
@@ -574,7 +574,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3.5 sm:px-6 py-4 border-t border-stone-100 dark:border-indigo-500/25 space-y-2.5 animate-subtopic-slide">
+                        <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3 sm:px-4 py-2.5 border-t border-stone-100 dark:border-indigo-500/25 space-y-2 animate-subtopic-slide">
                           {mod.subtopics.map((sub, sIdx) => {
                             const isSelected = selectedSubchapters.has(sub.id);
 
@@ -583,7 +583,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 key={sub.id}
                                 onClick={() => toggleSubchapterSelect(sub.id)}
                                 style={{ animationDelay: `${sIdx * 30}ms` }}
-                                className={`flex items-center justify-between p-3.5 sm:p-4 rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
+                                className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
                                   isSelected
                                     ? isDark
                                       ? 'bg-[#0c2448] border-cyan-400 text-cyan-100 shadow-[0_0_16px_rgba(0,242,254,0.35)]'
@@ -594,10 +594,10 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 }`}
                               >
                                 {/* Left: Icon Zap + Judul Lengkap */}
-                                <div className="flex items-start sm:items-center gap-3.5 min-w-0 flex-1 py-0.5">
+                                <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1 py-0.5">
                                   {/* Icon Sub-bab */}
                                   <div
-                                    className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border mt-0.5 sm:mt-0 ${
+                                    className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border ${
                                       isSelected
                                         ? isDark
                                           ? 'bg-cyan-400 text-slate-950 border-cyan-300 shadow-[0_0_12px_rgba(0,242,254,0.6)] font-bold'
@@ -607,12 +607,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                         : 'bg-blue-50 text-blue-600 border-blue-100 group-hover/sub:bg-blue-600 group-hover/sub:text-white'
                                     }`}
                                   >
-                                    <Zap className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
+                                    <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                                   </div>
 
                                   {/* Judul Sub-bab */}
                                   <span
-                                    className={`text-sm sm:text-base font-bold leading-relaxed break-words whitespace-normal flex-1 ${
+                                    className={`text-xs sm:text-sm font-bold leading-snug break-words whitespace-normal flex-1 ${
                                       isSelected
                                         ? isDark
                                           ? 'text-cyan-100 font-bold'
@@ -639,154 +639,166 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         )}
       </div>
 
-      {/* STICKY BOTTOM BAR FOR DRILLING SESSION (Frosted Glass per Theme) */}
+      {/* STICKY BOTTOM BAR FOR DRILLING SESSION (Bertingkat Steppers with +/-5 & Direct Start) */}
       {activeTab === 'drilling' && (
         <aside
           aria-label="Konfigurasi Sesi Drilling"
-          className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl p-3.5 sm:p-5 transition-all duration-300 bg-white/95 dark:bg-[#0c1228]/95 border-stone-200/90 dark:border-cyan-500/40 shadow-[0_-8px_25px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_30px_rgba(0,0,0,0.75)]"
+          className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl p-2.5 sm:p-3.5 transition-all duration-300 bg-white/95 dark:bg-[#0c1228]/95 border-stone-200/90 dark:border-cyan-500/40 shadow-[0_-8px_25px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_30px_rgba(0,0,0,0.75)]"
         >
-          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3.5">
-            {/* Left: Selected count info */}
-            <div className="flex items-center justify-between w-full sm:w-auto gap-3">
-              <div className="flex items-center gap-3">
-                <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-500 text-white font-black flex items-center justify-center text-sm sm:text-base shadow-sm shrink-0 border border-cyan-400/40 shadow-[0_0_12px_rgba(0,242,254,0.4)]">
-                  {selectedSubchapters.size}
+          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-4">
+            {/* Bertingkat Steppers (Jumlah Soal & Waktu Bertingkat dengan +5 / -5) */}
+            <div className="flex flex-col gap-1.5 flex-1 min-w-0">
+              {/* Tingkat 1: Stepper Jumlah Soal (-5, -1, [Count Soal], +1, +5) */}
+              <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-slate-900/90 p-1 rounded-xl border border-stone-200/90 dark:border-slate-800 shadow-2xs">
+                <span className="text-[11px] font-bold text-slate-500 dark:text-cyan-400/80 px-2 min-w-[48px]">
+                  Soal
                 </span>
-                <div>
-                  <div className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
-                    {selectedSubchapters.size} Sub-bab Terpilih
-                  </div>
-                  <div className="text-xs text-slate-500 dark:text-cyan-400/80">
-                    {selectedSubchapters.size === 0
-                      ? 'Pilih minimal 1 sub-bab di atas'
-                      : 'Siap untuk drilling latihan'}
-                  </div>
-                </div>
-              </div>
-
-              {selectedSubchapters.size === 0 && (
+                {/* -5 Soal */}
                 <button
                   type="button"
-                  onClick={selectAllSubtest}
-                  className="text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-400 hover:underline cursor-pointer sm:hidden"
+                  onClick={() => setQuestionCount((prev) => Math.max(1, prev - 5))}
+                  disabled={questionCount <= 1}
+                  className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                  title="Kurangi 5 Soal"
                 >
-                  Pilih Semua
+                  -5
                 </button>
-              )}
-            </div>
-
-            {/* Right: Steppers (+1/-1 Fleksibel) with Nonaktifkan Timer & Start Button */}
-            <div className="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
-              {/* Jumlah Soal Stepper (+1 / -1) */}
-              <div
-                className="flex items-center bg-stone-100 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200/90 dark:border-slate-800 shadow-2xs"
-                title="Jumlah Soal (+1 / -1)"
-              >
+                {/* -1 Soal */}
                 <button
                   type="button"
                   onClick={() => setQuestionCount((prev) => Math.max(1, prev - 1))}
                   disabled={questionCount <= 1}
-                  className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-100 flex items-center justify-center transition cursor-pointer font-bold disabled:opacity-40 shadow-2xs border border-stone-200/60 dark:border-slate-700"
-                  aria-label="Kurangi 1 Soal"
+                  className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                  title="Kurangi 1 Soal"
                 >
-                  <Minus className="w-4 h-4" />
+                  <Minus className="w-3.5 h-3.5" />
                 </button>
-                <div className="px-2.5 min-w-[50px] text-center select-none">
-                  <div className="text-sm font-black text-slate-900 dark:text-slate-100 leading-tight">
-                    {questionCount}
-                  </div>
-                  <div className="text-[11px] text-slate-400 leading-none">
-                    Soal
-                  </div>
+                {/* Display Count */}
+                <div className="px-2 min-w-[62px] text-center select-none font-black text-xs sm:text-sm text-slate-900 dark:text-white">
+                  {questionCount} Soal
                 </div>
+                {/* +1 Soal */}
                 <button
                   type="button"
                   onClick={() => setQuestionCount((prev) => Math.min(100, prev + 1))}
-                  className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-100 flex items-center justify-center transition cursor-pointer font-bold shadow-2xs border border-stone-200/60 dark:border-slate-700"
-                  aria-label="Tambah 1 Soal"
+                  className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                  title="Tambah 1 Soal"
                 >
-                  <Plus className="w-4 h-4" />
+                  <Plus className="w-3.5 h-3.5" />
+                </button>
+                {/* +5 Soal */}
+                <button
+                  type="button"
+                  onClick={() => setQuestionCount((prev) => Math.min(100, prev + 5))}
+                  className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                  title="Tambah 5 Soal"
+                >
+                  +5
                 </button>
               </div>
 
-              {/* Batas Waktu Stepper dengan Opsi Nonaktifkan Timer */}
-              {timerMinutes !== null ? (
-                <div
-                  className="flex items-center bg-stone-100 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200/90 dark:border-slate-800 shadow-2xs"
-                  title="Batas Waktu Pengerjaan (+1 / -1 Menit)"
-                >
-                  <button
-                    type="button"
-                    onClick={() => setTimerMinutes((prev) => Math.max(1, (prev ?? 15) - 1))}
-                    disabled={(timerMinutes ?? 15) <= 1}
-                    className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-100 flex items-center justify-center transition cursor-pointer font-bold disabled:opacity-40 shadow-2xs border border-stone-200/60 dark:border-slate-700"
-                    aria-label="Kurangi 1 Menit"
-                  >
-                    <Minus className="w-4 h-4" />
-                  </button>
-                  <div className="px-2 min-w-[46px] text-center select-none">
-                    <div className="text-sm font-black text-slate-900 dark:text-slate-100 leading-tight">
-                      {timerMinutes}
+              {/* Tingkat 2: Stepper Batas Waktu (-5, -1, [Count Menit], +1, +5, Off) */}
+              <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-slate-900/90 p-1 rounded-xl border border-stone-200/90 dark:border-slate-800 shadow-2xs">
+                <span className="text-[11px] font-bold text-slate-500 dark:text-cyan-400/80 px-2 min-w-[48px]">
+                  Waktu
+                </span>
+                {timerMinutes !== null ? (
+                  <>
+                    {/* -5 Menit */}
+                    <button
+                      type="button"
+                      onClick={() => setTimerMinutes((prev) => Math.max(1, (prev ?? 15) - 5))}
+                      disabled={(timerMinutes ?? 15) <= 1}
+                      className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                      title="Kurangi 5 Menit"
+                    >
+                      -5
+                    </button>
+                    {/* -1 Menit */}
+                    <button
+                      type="button"
+                      onClick={() => setTimerMinutes((prev) => Math.max(1, (prev ?? 15) - 1))}
+                      disabled={(timerMinutes ?? 15) <= 1}
+                      className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                      title="Kurangi 1 Menit"
+                    >
+                      <Minus className="w-3.5 h-3.5" />
+                    </button>
+                    {/* Display Minutes */}
+                    <div className="px-2 min-w-[62px] text-center select-none font-black text-xs sm:text-sm text-slate-900 dark:text-white">
+                      {timerMinutes} Mnt
                     </div>
-                    <div className="text-[11px] text-slate-400 leading-none">
-                      Menit
-                    </div>
-                  </div>
+                    {/* +1 Menit */}
+                    <button
+                      type="button"
+                      onClick={() => setTimerMinutes((prev) => Math.min(180, (prev ?? 15) + 1))}
+                      className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                      title="Tambah 1 Menit"
+                    >
+                      <Plus className="w-3.5 h-3.5" />
+                    </button>
+                    {/* +5 Menit */}
+                    <button
+                      type="button"
+                      onClick={() => setTimerMinutes((prev) => Math.min(180, (prev ?? 15) + 5))}
+                      className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
+                      title="Tambah 5 Menit"
+                    >
+                      +5
+                    </button>
+                    {/* Off Button */}
+                    <button
+                      type="button"
+                      onClick={() => setTimerMinutes(null)}
+                      className="ml-auto px-2 py-1 text-[11px] font-bold text-slate-400 hover:text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/50 rounded-lg transition cursor-pointer"
+                      title="Nonaktifkan Timer"
+                    >
+                      Off
+                    </button>
+                  </>
+                ) : (
                   <button
                     type="button"
-                    onClick={() => setTimerMinutes((prev) => Math.min(180, (prev ?? 15) + 1))}
-                    className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-100 flex items-center justify-center transition cursor-pointer font-bold shadow-2xs border border-stone-200/60 dark:border-slate-700"
-                    aria-label="Tambah 1 Menit"
+                    onClick={() => setTimerMinutes(15)}
+                    className="flex-1 h-7 px-3 flex items-center justify-center gap-1.5 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 border border-stone-200/80 dark:border-slate-700 rounded-lg text-slate-600 dark:text-slate-200 text-xs font-bold transition cursor-pointer"
+                    title="Klik untuk mengaktifkan timer 15 menit"
                   >
-                    <Plus className="w-4 h-4" />
+                    <Clock className="w-3.5 h-3.5 text-slate-400" />
+                    <span>Tanpa Timer (Aktifkan 15 Mnt)</span>
                   </button>
-                  {/* Tombol Minimalis Nonaktifkan Timer */}
-                  <button
-                    type="button"
-                    onClick={() => setTimerMinutes(null)}
-                    className="ml-1 px-2 py-1 text-xs font-bold text-slate-400 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/50 active:scale-95 rounded-lg transition cursor-pointer"
-                    title="Nonaktifkan Timer"
-                  >
-                    Off
-                  </button>
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => setTimerMinutes(15)}
-                  className="h-11 px-3.5 flex items-center gap-2 bg-stone-100 dark:bg-slate-900/90 hover:bg-blue-50 dark:hover:bg-slate-800 border border-stone-200/80 dark:border-slate-800 hover:border-blue-200 dark:hover:border-cyan-500 rounded-2xl text-slate-600 dark:text-slate-200 hover:text-blue-700 dark:hover:text-cyan-300 transition cursor-pointer shadow-2xs select-none"
-                  title="Klik untuk mengaktifkan timer"
-                >
-                  <Clock className="w-4 h-4 text-slate-400" />
-                  <span className="text-xs sm:text-sm font-bold">Tanpa Timer</span>
-                </button>
-              )}
-
-              {/* Mulai Drilling Button dengan Cyber Glow di Dark Mode */}
-              <button
-                type="button"
-                disabled={selectedSubchapters.size === 0}
-                onClick={() => {
-                  if (selectedSubchapters.size > 0) {
-                    onStartDrilling(
-                      Array.from(selectedSubchapters),
-                      questionCount,
-                      timerMinutes
-                    );
-                  }
-                }}
-                className={`px-5 sm:px-8 py-3 sm:py-3.5 rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none ${
-                  selectedSubchapters.size > 0
-                    ? isDark
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white cursor-pointer shadow-[0_0_26px_rgba(0,242,254,0.6)] border border-cyan-400/50'
-                      : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 active:scale-95 text-white cursor-pointer shadow-blue-500/25'
-                    : 'bg-stone-200 dark:bg-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed'
-                }`}
-              >
-                <Play className="w-4.5 h-4.5 fill-current" />
-                <span>Mulai Drilling</span>
-              </button>
+                )}
+              </div>
             </div>
+
+            {/* Mulai Drilling Button */}
+            <button
+              type="button"
+              disabled={selectedSubchapters.size === 0}
+              onClick={() => {
+                if (selectedSubchapters.size > 0) {
+                  onStartDrilling(
+                    Array.from(selectedSubchapters),
+                    questionCount,
+                    timerMinutes
+                  );
+                }
+              }}
+              className={`w-full sm:w-auto px-6 sm:px-8 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none cursor-pointer ${
+                selectedSubchapters.size > 0
+                  ? isDark
+                    ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white shadow-[0_0_24px_rgba(0,242,254,0.6)] border border-cyan-400/50'
+                    : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 active:scale-95 text-white shadow-blue-500/25'
+                  : 'bg-stone-200 dark:bg-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed opacity-60'
+              }`}
+            >
+              <Play className="w-4.5 h-4.5 fill-current" />
+              <span>Mulai Drilling</span>
+              {selectedSubchapters.size > 0 && (
+                <span className="ml-1 px-2 py-0.5 rounded-full text-xs bg-white/20 dark:bg-black/25">
+                  {selectedSubchapters.size}
+                </span>
+              )}
+            </button>
           </div>
         </aside>
       )}
