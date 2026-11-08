@@ -54,13 +54,13 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
     <figure
       key={svgItem.id}
       id={svgItem.id}
-      className="my-6 mx-auto w-full max-w-xl text-center"
+      className="my-7 mx-auto w-full max-w-3xl text-center"
     >
       <div
-        className="w-full overflow-x-auto p-4 bg-white dark:bg-slate-900 border border-stone-200 dark:border-slate-800 rounded-2xl shadow-2xs flex justify-center"
+        className="w-full overflow-x-auto p-2 sm:p-5 bg-stone-50/60 dark:bg-slate-900/80 border border-stone-200 dark:border-slate-800 rounded-2xl shadow-sm flex justify-center items-center"
         dangerouslySetInnerHTML={{ __html: svgItem.svg_code }}
       />
-      <figcaption className="mt-2 text-xs font-serif italic text-slate-500 dark:text-slate-400">
+      <figcaption className="mt-2.5 text-xs sm:text-sm font-serif italic text-slate-500 dark:text-slate-400">
         Gambar {metadata.chapter_num}.{index + 1}: {svgItem.title || svgItem.caption}
       </figcaption>
     </figure>
