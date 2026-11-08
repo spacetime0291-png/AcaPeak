@@ -210,18 +210,32 @@ body:not(.dark) .pastel-card-cream {
 .katex {
   font-size: 1.08em;
   text-rendering: auto;
-  line-height: 1.25;
+  line-height: 1.35;
 }
 
-/* Ensure fraction bars are solid, clear, and perfectly centered on the math axis */
+/* Ensure fraction bars are solid, clear, and perfectly centered with ample clearance */
+.katex .mfrac {
+  padding: 0.18em 0.1em !important;
+}
+
 .katex .mfrac .frac-line {
   border-bottom-style: solid !important;
-  border-bottom-width: 1.25px !important;
+  border-bottom-width: 1.6px !important;
+  min-height: 1.6px !important;
+}
+
+/* Prevent fraction line from colliding or cutting through numerator and denominator */
+.katex .mfrac .vlist > span:first-child {
+  transform: translateY(0.22em) !important;
+}
+
+.katex .mfrac .vlist > span:nth-child(3) {
+  transform: translateY(-0.22em) !important;
 }
 
 .katex .sqrt .sqrt-line {
   border-top-style: solid !important;
-  border-top-width: 1.25px !important;
+  border-top-width: 1.5px !important;
 }
 
 .katex .katex-hline,
@@ -229,7 +243,7 @@ body:not(.dark) .pastel-card-cream {
 .katex .overline .overline-line,
 .katex .underline .underline-line {
   border-bottom-style: solid !important;
-  border-bottom-width: 1.25px !important;
+  border-bottom-width: 1.5px !important;
 }
 
 /* Spacing for operators and relations to avoid collisions on mobile */
@@ -297,6 +311,22 @@ html:not(.dark) .katex * {
 .dark .katex-display::-webkit-scrollbar-thumb,
 .dark .overflow-x-auto::-webkit-scrollbar-thumb {
   background-color: #334155;
+}
+
+/* ==========================================================================
+   SVG GRAPHICS & GEOMETRY DIAGRAM SCALING (NO MARGIN WASTE)
+   ========================================================================== */
+
+figure svg,
+.svg-wrapper svg,
+.svg-container svg,
+[id^="svg-"] svg,
+div[id^="svg-"] svg {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto !important;
 }
 
 /* ==========================================================================

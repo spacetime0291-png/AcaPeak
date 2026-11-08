@@ -21,6 +21,8 @@ import {
 } from 'lucide-react';
 import type { Material, SvgVisualization, WorkedExample } from '../../types/material';
 
+const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { macros: { '\\frac': '\\dfrac' } }] as any];
+
 interface MaterialRendererProps {
   material: Material;
   onAnswerSubmit?: (exampleId: string, answer: string, isCorrect: boolean) => void;
@@ -73,14 +75,14 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
     }
   };
 
-  // Helper to render SVG with responsive wrapper and Tap-to-Zoom
+  // Helper to render SVG with responsive wrapper and Tap-to-Zoom (large view, zero margin waste)
   const renderSvgContainer = (svgItem: SvgVisualization) => (
     <div
       key={svgItem.id}
       id={svgItem.id}
-      className="w-full max-w-xl mx-auto my-6 p-2 sm:p-4 bg-stone-50/90 dark:bg-slate-900/90 border border-stone-200 dark:border-slate-800 rounded-xl shadow-xs flex flex-col items-center group relative transition-all"
+      className="w-full max-w-5xl mx-auto my-6 p-0 sm:p-1 svg-container bg-stone-50/90 dark:bg-slate-900/90 border border-stone-200 dark:border-slate-800 rounded-xl shadow-xs flex flex-col items-center group relative transition-all"
     >
-      <div className="w-full flex items-center justify-between mb-2 px-1 text-xs text-slate-500 dark:text-slate-400 font-medium">
+      <div className="w-full flex items-center justify-between mb-1.5 px-3 pt-2.5 text-xs text-slate-500 dark:text-slate-400 font-medium">
         <span className="flex items-center gap-1.5 text-indigo-700 dark:text-cyan-400 font-semibold">
           <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-cyan-400"></span>
           {svgItem.title}
@@ -97,13 +99,13 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
       </div>
 
       <div
-        className="w-full overflow-x-auto flex justify-center cursor-zoom-in py-1"
+        className="w-full overflow-x-auto flex justify-center cursor-zoom-in p-0"
         onClick={() => setZoomSvg(svgItem)}
         dangerouslySetInnerHTML={{ __html: svgItem.svg_code }}
       />
 
       {svgItem.caption && (
-        <p className="mt-2 text-center text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 italic px-2">
+        <p className="mt-2 text-center text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 italic px-2 pb-2">
           {svgItem.caption}
         </p>
       )}
@@ -212,7 +214,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
         <ReactMarkdown
           key={index}
           remarkPlugins={[remarkMath, remarkGfm]}
-          rehypePlugins={[rehypeKatex]}
+          rehypePlugins={KATEX_REHYPE_PLUGINS}
           components={markdownComponents}
         >
           {part}
@@ -483,7 +485,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                             </div>
                             <ReactMarkdown
                               remarkPlugins={[remarkMath, remarkGfm]}
-                              rehypePlugins={[rehypeKatex]}
+                              rehypePlugins={KATEX_REHYPE_PLUGINS}
                               components={markdownComponents}
                             >
                               {example.context_markdown}
@@ -494,7 +496,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                         <div className="p-3.5 rounded-xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 text-sm leading-relaxed text-slate-800 dark:text-slate-200 mb-4">
                           <ReactMarkdown
                             remarkPlugins={[remarkMath, remarkGfm]}
-                            rehypePlugins={[rehypeKatex]}
+                            rehypePlugins={KATEX_REHYPE_PLUGINS}
                             components={markdownComponents}
                           >
                             {example.context_markdown}
@@ -519,7 +521,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                   <div className="text-sm sm:text-base font-semibold text-slate-900 dark:text-slate-100 leading-snug">
                     <ReactMarkdown
                       remarkPlugins={[remarkMath, remarkGfm]}
-                      rehypePlugins={[rehypeKatex]}
+                      rehypePlugins={KATEX_REHYPE_PLUGINS}
                       components={markdownComponents}
                     >
                       {example.question_markdown}
@@ -568,7 +570,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                           <div className="text-xs sm:text-sm pt-0.5 leading-relaxed flex-1">
                             <ReactMarkdown
                               remarkPlugins={[remarkMath, remarkGfm]}
-                              rehypePlugins={[rehypeKatex]}
+                              rehypePlugins={KATEX_REHYPE_PLUGINS}
                               components={markdownComponents}
                             >
                               {option.text_markdown}
@@ -627,7 +629,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                             </div>
                             <ReactMarkdown
                               remarkPlugins={[remarkMath, remarkGfm]}
-                              rehypePlugins={[rehypeKatex]}
+                              rehypePlugins={KATEX_REHYPE_PLUGINS}
                               components={markdownComponents}
                             >
                               {example.hint_markdown}
@@ -643,7 +645,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                           </div>
                           <ReactMarkdown
                             remarkPlugins={[remarkMath, remarkGfm]}
-                            rehypePlugins={[rehypeKatex]}
+                            rehypePlugins={KATEX_REHYPE_PLUGINS}
                             components={markdownComponents}
                           >
                             {example.conceptual_solution_markdown}
@@ -658,7 +660,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                           </div>
                           <ReactMarkdown
                             remarkPlugins={[remarkMath, remarkGfm]}
-                            rehypePlugins={[rehypeKatex]}
+                            rehypePlugins={KATEX_REHYPE_PLUGINS}
                             components={markdownComponents}
                           >
                             {example.quick_trick_markdown}
@@ -673,7 +675,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
                           </div>
                           <ReactMarkdown
                             remarkPlugins={[remarkMath, remarkGfm]}
-                            rehypePlugins={[rehypeKatex]}
+                            rehypePlugins={KATEX_REHYPE_PLUGINS}
                             components={markdownComponents}
                           >
                             {example.why_others_are_wrong_markdown}

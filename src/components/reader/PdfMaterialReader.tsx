@@ -49,15 +49,15 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [metadata.id]);
 
-  // Render centered SVG container with academic caption
+  // Render centered SVG container with academic caption (maximized view, zero margin waste)
   const renderSvgContainer = (svgItem: SvgVisualization, index: number) => (
     <figure
       key={svgItem.id}
       id={svgItem.id}
-      className="my-7 mx-auto w-full max-w-3xl text-center"
+      className="my-6 mx-auto w-full max-w-5xl text-center px-0"
     >
       <div
-        className="w-full overflow-x-auto p-2 sm:p-5 bg-stone-50/60 dark:bg-slate-900/80 border border-stone-200 dark:border-slate-800 rounded-2xl shadow-sm flex justify-center items-center"
+        className="w-full overflow-x-auto p-0 sm:p-1 bg-stone-50/60 dark:bg-slate-900/80 border border-stone-200/80 dark:border-slate-800 rounded-2xl shadow-sm flex justify-center items-center"
         dangerouslySetInnerHTML={{ __html: svgItem.svg_code }}
       />
       <figcaption className="mt-2.5 text-xs sm:text-sm font-serif italic text-slate-500 dark:text-slate-400">
@@ -125,6 +125,8 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
     },
   };
 
+  const katexOptions = { macros: { '\\frac': '\\dfrac' } };
+
   // Helper to split markdown and replace `[[SVG:id]]`, plus sanitize raw <br> tags
   const renderMarkdownWithSvg = (rawText: string) => {
     if (!rawText) return null;
@@ -146,7 +148,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
         <ReactMarkdown
           key={index}
           remarkPlugins={[remarkMath, remarkGfm]}
-          rehypePlugins={[rehypeKatex]}
+          rehypePlugins={[[rehypeKatex, katexOptions] as any]}
           components={markdownComponents}
         >
           {part}

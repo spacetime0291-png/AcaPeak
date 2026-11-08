@@ -22,6 +22,8 @@ import {
 import type { WorkedExample } from '../../types/material';
 import { ThemeToggle } from '../common/ThemeToggle';
 
+const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { macros: { '\\frac': '\\dfrac' } }] as any];
+
 interface ActiveDrillingViewProps {
   questions: WorkedExample[];
   currentQuestionIndex: number;
@@ -320,7 +322,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       <div className="p-3.5 sm:p-4 bg-stone-50 dark:bg-slate-900 rounded-xl border border-stone-200/80 dark:border-slate-800 text-[15px] sm:text-base text-slate-800 dark:text-slate-200 leading-relaxed italic">
                         <ReactMarkdown
                           remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={[rehypeKatex]}
+                          rehypePlugins={KATEX_REHYPE_PLUGINS}
                           components={markdownComponents}
                         >
                           {q.context_markdown}
@@ -332,7 +334,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                     <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-relaxed">
                       <ReactMarkdown
                         remarkPlugins={[remarkMath, remarkGfm]}
-                        rehypePlugins={[rehypeKatex]}
+                        rehypePlugins={KATEX_REHYPE_PLUGINS}
                         components={markdownComponents}
                       >
                         {q.question_markdown}
@@ -356,7 +358,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                           <div className="flex-1 text-[15px] sm:text-base leading-relaxed">
                             <ReactMarkdown
                               remarkPlugins={[remarkMath, remarkGfm]}
-                              rehypePlugins={[rehypeKatex]}
+                              rehypePlugins={KATEX_REHYPE_PLUGINS}
                               components={markdownComponents}
                             >
                               {opt.text_markdown}
@@ -375,7 +377,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       <div className="text-sm sm:text-[15px] leading-relaxed">
                         <ReactMarkdown
                           remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={[rehypeKatex]}
+                          rehypePlugins={KATEX_REHYPE_PLUGINS}
                           components={markdownComponents}
                         >
                           {q.hint_markdown ||
@@ -392,7 +394,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       </div>
                       <ReactMarkdown
                         remarkPlugins={[remarkMath, remarkGfm]}
-                        rehypePlugins={[rehypeKatex]}
+                        rehypePlugins={KATEX_REHYPE_PLUGINS}
                         components={markdownComponents}
                       >
                         {q.conceptual_solution_markdown}
@@ -407,7 +409,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                         </div>
                         <ReactMarkdown
                           remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={[rehypeKatex]}
+                          rehypePlugins={KATEX_REHYPE_PLUGINS}
                           components={markdownComponents}
                         >
                           {q.quick_trick_markdown}
@@ -571,7 +573,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           <div className="p-4 sm:p-6 bg-stone-50/90 dark:bg-slate-900 rounded-2xl border border-stone-200/90 dark:border-slate-800 text-base sm:text-[17px] text-slate-800 dark:text-slate-200 leading-[1.8] italic">
             <ReactMarkdown
               remarkPlugins={[remarkMath, remarkGfm]}
-              rehypePlugins={[rehypeKatex]}
+              rehypePlugins={KATEX_REHYPE_PLUGINS}
               components={markdownComponents}
             >
               {currentQuestion.context_markdown}
@@ -583,7 +585,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
         <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-50 leading-relaxed tracking-tight">
           <ReactMarkdown
             remarkPlugins={[remarkMath, remarkGfm]}
-            rehypePlugins={[rehypeKatex]}
+            rehypePlugins={KATEX_REHYPE_PLUGINS}
             components={markdownComponents}
           >
             {currentQuestion.question_markdown}
@@ -614,7 +616,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               <div className="text-sm sm:text-[15px] leading-relaxed">
                 <ReactMarkdown
                   remarkPlugins={[remarkMath, remarkGfm]}
-                  rehypePlugins={[rehypeKatex]}
+                  rehypePlugins={KATEX_REHYPE_PLUGINS}
                   components={markdownComponents}
                 >
                   {currentQuestion.hint_markdown ||
@@ -661,7 +663,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                 <div className="flex-1 text-base sm:text-[17px] leading-relaxed">
                   <ReactMarkdown
                     remarkPlugins={[remarkMath, remarkGfm]}
-                    rehypePlugins={[rehypeKatex]}
+                    rehypePlugins={KATEX_REHYPE_PLUGINS}
                     components={markdownComponents}
                   >
                     {option.text_markdown}
