@@ -11,2706 +11,1046 @@ const rootPuDir = path.resolve('content/utbk/pu');
 });
 
 const MATERIAL_PU_01_01 = {
-  metadata: {
-    id: 'pu-1-1',
-    subtest: 'PU',
-    chapter_num: 1,
-    chapter_title: 'Penalaran Induktif',
-    subchapter_num: '1.1',
-    subchapter_title: 'Generalisasi',
-    title: 'Generalisasi',
-    required_question_variations: [
-      'Simpulan Proporsi Sampel',
-      'Simpulan Tren Induktif Berkala',
-      'Evaluasi Kualitas Generalisasi (HOTS)',
+  "metadata": {
+    "id": "pu-1-1",
+    "subtest": "PU",
+    "chapter_num": 1,
+    "chapter_title": "Penalaran Induktif",
+    "subchapter_num": "1.1",
+    "subchapter_title": "Generalisasi",
+    "title": "Generalisasi",
+    "required_question_variations": [
+      "Simpulan Proporsi Sampel",
+      "Simpulan Tren Induktif Berkala",
+      "Evaluasi Kualitas Generalisasi (HOTS)"
     ],
-    requires_svg: false,
-    updated_at: '2026-11-07',
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
   },
-  content: {
-    tactical_overview:
-      'Generalisasi adalah metode penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data, contoh, atau fakta khusus yang telah diamati. Kunci utama dalam menyelesaikan soal generalisasi UTBK adalah mengingat bahwa kesimpulan induktif tidak pernah bernilai pasti seratus persen. Oleh karena itu, hindari pilihan jawaban yang memuat kata mutlak seperti "semua" atau "pasti", dan selalu utamakan kalimat simpulan yang terukur serta patuh pada batasan subjek atau wilayah yang dibahas di dalam wacana.',
-    exam_blueprint_markdown: `# 1. Prinsip Dasar
-
-Generalisasi merupakan cara berpikir induktif untuk mengambil kesimpulan yang berlaku secara umum berdasarkan pengamatan terhadap sebagian contoh, fakta, atau data khusus. Di dalam ujian UTBK SNBT, soal tipe ini biasanya menyajikan teks wacana yang memuat laporan penelitian, hasil survei masyarakat, atau tren angka statistik dari suatu pengamatan berkala.
-
-Agar Anda dapat menjawab soal generalisasi dengan tepat, terdapat tiga kaidah pokok yang wajib Anda pahami:
-1. **Kesimpulan Tidak Pernah Bersifat Pasti 100% (Hindari Sikap Pukul Rata)**  
-   Karena penelitian induktif hanya mengamati sebagian sampel dan bukan seluruh populasi yang ada di dunia, kesimpulan yang ditarik tidak boleh bernilai mutlak. Kunci jawaban yang benar di UTBK hampir selalu menggunakan kata-kata yang menyatakan tingkat kemungkinan atau frekuensi yang terukur, seperti *"sebagian besar"*, *"cenderung"*, *"kemungkinan besar"*, atau *"pada umumnya"*. Hindarilah pilihan jawaban yang memukul rata seluruh keadaan.
-2. **Kesimpulan Wajib Terikat pada Batasan Ruang Lingkup Data**  
-   Ruang lingkup kesimpulan harus sepenuhnya setia pada kelompok subjek atau wilayah yang benar-benar diteliti di dalam wacana. Apabila teks wacana hanya mengamati *pengguna sepeda motor di wilayah Jakarta*, maka simpulan hanya berlaku untuk kelompok tersebut di Jakarta. Pilihan jawaban yang memperluas simpulan hingga ke tingkat *seluruh masyarakat Indonesia* merupakan kesalahan logika karena melompat keluar dari batasan data yang ada.
-3. **Adanya Pengecualian Menggugurkan Kata Bernada Mutlak**  
-   Apabila data di dalam wacana memperlihatkan adanya sebagian objek yang tidak mengalami hasil serupa, maka kesimpulan bernada mutlak otomatis salah. Sebagai contoh, jika dari 500 orang responden terdapat 40 orang yang tidak merasakan penghematan biaya, maka pilihan jawaban yang memuat kata mutlak seperti *"semua"*, *"pasti"*, atau *"selalu"* sudah pasti keliru secara logika.
-
----
-
-# 2. Jebakan Pengecoh Khas UTBK
-
-Pembuat soal UTBK sengaja merancang pilihan jawaban yang sekilas tampak meyakinkan, padahal mengandung cacat logika induktif. Tiga jebakan yang paling sering dijumpai meliputi:
-1. **Jebakan Kata Mutlak yang Berlebihan (*Overgeneralization*)**  
-   Pilihan jawaban menggunakan kata-kata bernilai ekstrem seperti *semua, seluruh, selalu, pasti,* atau *satu-satunya*. Jebakan ini bertujuan menguji apakah siswa teliti membaca data. Apabila teks wacana masih menyisakan persentase pengecualian atau datanya belum mencapai 100%, opsi yang memuat kata mutlak seperti ini harus langsung Anda eliminasi.
-2. **Jebakan Melompat Keluar dari Batasan Data (*Out of Scope*)**  
-   Pilihan jawaban memperluas ruang lingkup wilayah, subjek, atau objek penelitian secara sepihak. Sebagai contoh, teks wacana hanya meneliti satu kelompok di satu kota tertentu, tetapi pilihan jawaban menyimpulkan bahwa hal tersebut berlaku untuk seluruh masyarakat di berbagai wilayah lain.
-3. **Jebakan Menyimpulkan Kondisi Lawan yang Tidak Diteliti**  
-   Pilihan jawaban membuat kesimpulan spekulatif mengenai kondisi kebalikan yang sama sekali tidak dibahas di dalam wacana. Sebagai contoh, saat teks memaparkan bahwa pengguna motor listrik menikmati penghematan biaya, pilihan pengecoh justru menyatakan bahwa pengguna motor bensin pasti mengalami kerugian besar. Anda tidak boleh memilih kesimpulan yang faktanya tidak tertulis di dalam wacana.
-
----
-
-# 3. Trik Cepat (15 Detik)
-
-Saat Anda menghadapi soal generalisasi di UTBK dengan waktu pengerjaan yang terbatas, gunakan urutan langkah taktis berikut untuk menemukan jawaban yang benar:
-1. **Kunci Subjek dan Batasan Wilayah Penelitian**  
-   Langkah pertama adalah mencermati siapa kelompok subjek yang diteliti dan di mana pengamatan tersebut dilakukan. Singkirkan segera semua pilihan jawaban yang memperluas cakupan ke wilayah atau kelompok lain di luar konteks wacana.
-2. **Eliminasi Pilihan yang Mengandung Kata Mutlak**  
-   Periksa pilihan ganda yang tersedia dan langsung coret opsi yang memuat kata-kata bernilai ekstrem, seperti *pasti, selalu, semua, seluruh, mutlak,* atau *satu-satunya cara*.
-3. **Pilih Jawaban yang Menggunakan Kata Terukur**  
-   Prioritaskan pilihan jawaban yang menggunakan kata-kata probabilitas yang ramah dan bijak, seperti *sebagian besar, cenderung, berpotensi,* atau *kemungkinan besar*. Kalimat yang terukur mencerminkan penalaran induktif yang sehat.
-4. **Cocokkan dengan Arah dan Proporsi Fakta Teks**  
-   Pastikan pernyataan pada pilihan yang tersisa benar-benar sejalan dengan data angka atau arah tren kenaikan di dalam wacana tanpa melebih-lebihkan fakta yang ada.
-
----
-
-# 4. Kesimpulan
-
-- **Hakikat Materi:** Generalisasi adalah proses penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data atau contoh khusus yang terbatas.
-- **Taraf Kepastian:** Kesimpulan hasil generalisasi tidak pernah bersifat pasti seratus persen, melainkan selalu berada pada taraf kemungkinan yang terukur.
-- **Kepatuhan pada Data:** Ruang lingkup simpulan wajib terikat secara ketat pada batasan subjek, populasi, dan wilayah yang benar-benar tercantum di dalam teks wacana.
-- **Strategi Menjawab:** Segera eliminasi pilihan yang menggunakan kata-kata mutlak atau melompat keluar batasan konteks, lalu pilih kalimat simpulan yang terukur dan sejalan dengan fakta data.
-
----
-
-# 5. Bedah Soal dan Variasi UTBK
-
-Berikut adalah bedah tiga variasi soal Generalisasi yang paling sering keluar di UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:
-
-### Variasi 1: Simpulan Proporsi Sampel (Tipe Mayoritas)
-
-> **Konteks Wacana Soal:**  
-> Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.  
->  
-> **Pertanyaan UTBK:** *Simpulan yang paling tepat berdasarkan teks tersebut adalah...*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%.  
-> - **B.** Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta.  
-> - **C.** Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan.  
-> - **D.** Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik.  
-> - **E.** Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Fakta Data:** Dari total 500 orang responden yang disurvei, sebanyak 460 orang atau 92% merasakan penghematan biaya bulanan secara nyata, sedangkan 40 orang lainnya atau 8% merasa biaya operasional mereka sama saja. Karena persentase 92% merupakan proporsi mayoritas yang sangat dominan namun belum mencapai 100%, maka penyebutan kuantor yang tepat secara kaidah logika induktif adalah *"sebagian besar"*.
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Penggunaan kata *"Semua"* keliru karena terdapat 40 orang responden yang menyatakan tidak merasakan penghematan biaya, sehingga kesimpulan tidak boleh dipukul rata.
-  - **Pilihan B Salah:** Penggunaan kata *"selalu"* dan perluasan cakupan ke *"seluruh masyarakat"* membuat pernyataan ini berlebihan terhadap populasi umum yang tidak diteliti.
-  - **Pilihan D Salah:** Memberikan vonis kepastian yang mutlak dengan kata *"pasti tidak cocok"*, padahal wacana hanya mencatat alasan jarak tempuh harian mereka yang pendek tanpa menyatakan ketidakcocokan penggunaan motor listrik.
-  - **Pilihan E Salah:** Melompat keluar dari batasan wilayah penelitian dengan menyebutkan *"masyarakat luar Jakarta"*, padahal survei tersebut hanya dilakukan terhadap responden di wilayah Jakarta.
-- **Penerapan Trik Cepat (15 Detik):** Karena wacana secara tegas menyebutkan adanya 40 responden yang tidak merasakan penghematan, Anda dapat langsung mencoret opsi yang memuat kata mutlak seperti *semua, selalu,* dan *pasti* pada pilihan A, B, dan D. Selanjutnya, coret pilihan E karena memperluas simpulan ke luar wilayah Jakarta. Dengan metode eliminasi ini, pilihan yang tersisa dan paling tepat adalah pilihan **C**.
-
----
-
-### Variasi 2: Simpulan Tren Induktif Berkala (Tipe Rangkaian Waktu)
-
-> **Konteks Wacana Soal:**  
-> Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.  
->  
-> **Pertanyaan UTBK:** *Manakah pernyataan yang paling mungkin benar mengenai penerapan teknik fermentasi tertutup tersebut?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika.  
-> - **B.** Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut.  
-> - **C.** Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%.  
-> - **D.** Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%.  
-> - **E.** Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Fakta Data:** Angka penjualan komoditas kopi arabika memperlihatkan peningkatan yang konsisten pada setiap kuartal pengamatan, yaitu berturut-turut sebesar 12%, 15%, dan 18% setelah para petani mengadopsi teknik fermentasi tertutup. Rangkaian peningkatan yang berulang pada beberapa periode dan wilayah ini menunjukkan adanya arah kecenderungan yang positif, sehingga simpulan yang paling tepat dan aman adalah bahwa teknik tersebut *"cenderung berdampak positif"*.
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Frasa *"satu-satunya cara"* merupakan klaim mutlak yang berlebihan, sebab teks tidak pernah menyatakan bahwa tidak ada cara atau teknik lain untuk meningkatkan penjualan.
-  - **Pilihan C Salah:** Mengubah jenis objek komoditas menjadi *"kopi robusta"*, padahal seluruh pengamatan di dalam teks wacana hanya menguji komoditas kopi arabika.
-  - **Pilihan D Salah:** Meramalkan angka masa depan secara mutlak dengan kata *"pasti 21%"*, padahal data penjualan pada kuartal keempat belum terjadi dan tidak boleh dipastikan secara sepihak.
-  - **Pilihan E Salah:** Menyimpulkan nasib negatif bagi petani yang tidak menggunakan teknik tersebut secara spekulatif, padahal kondisi petani lain tidak pernah diteliti di dalam wacana.
-- **Penerapan Trik Cepat (15 Detik):** Carilah pilihan jawaban yang menggunakan kata terukur yang bijak seperti *"cenderung berdampak positif"*. Anda dapat langsung mengeliminasi opsi yang memuat kata mutlak pada pilihan A (*satu-satunya cara*) dan pilihan D (*pasti*). Selanjutnya, coret pilihan C karena mengganti jenis kopi. Dengan eliminasi cepat ini, jawaban yang benar adalah pilihan **B**.
-
----
-
-### Variasi 3: Evaluasi Kualitas Generalisasi / HOTS (Tipe Keterwakilan Sampel)
-
-> **Konteks Wacana Soal:**  
-> Seorang peneliti menyimpulkan bahwa *"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa."* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.  
->  
-> **Pertanyaan UTBK:** *Manakah pernyataan di bawah ini yang paling tepat mengevaluasi kelemahan dari generalisasi peneliti tersebut?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut.  
-> - **B.** Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek.  
-> - **C.** Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa.  
-> - **D.** Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan.  
-> - **E.** Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Kelemahan Logika:** Peneliti menarik simpulan yang sangat luas untuk *"seluruh kelompok usia dewasa"* yang mencakup rentang umur 18 tahun hingga usia lanjut. Namun kenyataannya, sampel yang diuji hanyalah 25 orang mahasiswa dari satu jurusan di kampus teknik dengan rentang usia yang sangat seragam yaitu sekitar 21 hingga 23 tahun. Sampel dengan jumlah yang sangat kecil dan homogen ini jelas tidak memiliki keterwakilan (*representativeness*) yang memadai untuk menggeneralisasi kondisi seluruh populasi usia dewasa.
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Membandingkan efek cokelat hitam dengan cokelat jenis lain bukan merupakan kelemahan metodologis yang mendasar, karena fokus penelitian tersebut memang hanya meneliti khasiat cokelat hitam.
-  - **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam pengujian fungsi daya ingat jangka pendek.
-  - **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% sudah merupakan kenaikan hasil tes yang cukup besar dan terukur secara nyata.
-  - **Pilihan E Salah:** Tingkat daya ingat awal tidak menggugurkan hasil penelitian, karena pengujian dilakukan dengan membandingkan skor sebelum dan sesudah intervensi pada individu yang sama.
-- **Penerapan Trik Cepat (15 Detik):** Bandingkan karakteristik sampel yang diuji (*hanya 25 orang mahasiswa sebaya*) dengan kesimpulan yang ditarik (*seluruh kelompok usia dewasa*). Kesenjangan yang sangat besar antara sampel yang sempit dengan kesimpulan yang terlalu luas menunjukkan cacat generalisasi terburu-buru (*hasty generalization*). Oleh karena itu, kelemahan utamanya adalah sampel tidak mewakili populasi, yang tepat dinyatakan pada pilihan **C**.`,
-    visualizations_svg: [],
-    distractor_traps: [
-      'Hasty Generalization (Generalisasi Terburu-buru): Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.',
-      'Overgeneralization (Lompatan Cakupan/Scope): Teks hanya membahas siswa SMA di kota X, tetapi opsi jawaban melompat menyimpulkan seluruh pelajar di Indonesia.',
-      'Jebakan Kuantor Universal ("Semua/Selalu"): Jika di dalam teks terdapat kata beberapa, sebagian, atau ada kasus pengecualian, langsung eliminasi opsi yang menggunakan kata semua atau pasti.',
+  "content": {
+    "tactical_overview": "Generalisasi adalah metode penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data, contoh, atau fakta khusus yang telah diamati. Kunci utama dalam menyelesaikan soal generalisasi UTBK adalah mengingat bahwa kesimpulan induktif tidak pernah bernilai pasti seratus persen. Oleh karena itu, hindari pilihan jawaban yang memuat kata mutlak seperti \"semua\" atau \"pasti\", dan selalu utamakan kalimat simpulan yang terukur serta patuh pada batasan subjek atau wilayah yang dibahas di dalam wacana.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-01-01-generalization]]\n\n\nGeneralisasi merupakan cara berpikir induktif untuk mengambil kesimpulan yang berlaku secara umum berdasarkan pengamatan terhadap sebagian contoh, fakta, atau data khusus. Di dalam ujian UTBK SNBT, soal tipe ini biasanya menyajikan teks wacana yang memuat laporan penelitian, hasil survei masyarakat, atau tren angka statistik dari suatu pengamatan berkala.\n\nAgar Anda dapat menjawab soal generalisasi dengan tepat, terdapat tiga kaidah pokok yang wajib Anda pahami:\n1. **Kesimpulan Tidak Pernah Bersifat Pasti 100% (Hindari Sikap Pukul Rata)**  \n   Karena penelitian induktif hanya mengamati sebagian sampel dan bukan seluruh populasi yang ada di dunia, kesimpulan yang ditarik tidak boleh bernilai mutlak. Kunci jawaban yang benar di UTBK hampir selalu menggunakan kata-kata yang menyatakan tingkat kemungkinan atau frekuensi yang terukur, seperti *\"sebagian besar\"*, *\"cenderung\"*, *\"kemungkinan besar\"*, atau *\"pada umumnya\"*. Hindarilah pilihan jawaban yang memukul rata seluruh keadaan.\n2. **Kesimpulan Wajib Terikat pada Batasan Ruang Lingkup Data**  \n   Ruang lingkup kesimpulan harus sepenuhnya setia pada kelompok subjek atau wilayah yang benar-benar diteliti di dalam wacana. Apabila teks wacana hanya mengamati *pengguna sepeda motor di wilayah Jakarta*, maka simpulan hanya berlaku untuk kelompok tersebut di Jakarta. Pilihan jawaban yang memperluas simpulan hingga ke tingkat *seluruh masyarakat Indonesia* merupakan kesalahan logika karena melompat keluar dari batasan data yang ada.\n3. **Adanya Pengecualian Menggugurkan Kata Bernada Mutlak**  \n   Apabila data di dalam wacana memperlihatkan adanya sebagian objek yang tidak mengalami hasil serupa, maka kesimpulan bernada mutlak otomatis salah. Sebagai contoh, jika dari 500 orang responden terdapat 40 orang yang tidak merasakan penghematan biaya, maka pilihan jawaban yang memuat kata mutlak seperti *\"semua\"*, *\"pasti\"*, atau *\"selalu\"* sudah pasti keliru secara logika.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK sengaja merancang pilihan jawaban yang sekilas tampak meyakinkan, padahal mengandung cacat logika induktif. Tiga jebakan yang paling sering dijumpai meliputi:\n1. **Jebakan Kata Mutlak yang Berlebihan (*Overgeneralization*)**  \n   Pilihan jawaban menggunakan kata-kata bernilai ekstrem seperti *semua, seluruh, selalu, pasti,* atau *satu-satunya*. Jebakan ini bertujuan menguji apakah siswa teliti membaca data. Apabila teks wacana masih menyisakan persentase pengecualian atau datanya belum mencapai 100%, opsi yang memuat kata mutlak seperti ini harus langsung Anda eliminasi.\n2. **Jebakan Melompat Keluar dari Batasan Data (*Out of Scope*)**  \n   Pilihan jawaban memperluas ruang lingkup wilayah, subjek, atau objek penelitian secara sepihak. Sebagai contoh, teks wacana hanya meneliti satu kelompok di satu kota tertentu, tetapi pilihan jawaban menyimpulkan bahwa hal tersebut berlaku untuk seluruh masyarakat di berbagai wilayah lain.\n3. **Jebakan Menyimpulkan Kondisi Lawan yang Tidak Diteliti**  \n   Pilihan jawaban membuat kesimpulan spekulatif mengenai kondisi kebalikan yang sama sekali tidak dibahas di dalam wacana. Sebagai contoh, saat teks memaparkan bahwa pengguna motor listrik menikmati penghematan biaya, pilihan pengecoh justru menyatakan bahwa pengguna motor bensin pasti mengalami kerugian besar. Anda tidak boleh memilih kesimpulan yang faktanya tidak tertulis di dalam wacana.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nSaat Anda menghadapi soal generalisasi di UTBK dengan waktu pengerjaan yang terbatas, gunakan urutan langkah taktis berikut untuk menemukan jawaban yang benar:\n1. **Kunci Subjek dan Batasan Wilayah Penelitian**  \n   Langkah pertama adalah mencermati siapa kelompok subjek yang diteliti dan di mana pengamatan tersebut dilakukan. Singkirkan segera semua pilihan jawaban yang memperluas cakupan ke wilayah atau kelompok lain di luar konteks wacana.\n2. **Eliminasi Pilihan yang Mengandung Kata Mutlak**  \n   Periksa pilihan ganda yang tersedia dan langsung coret opsi yang memuat kata-kata bernilai ekstrem, seperti *pasti, selalu, semua, seluruh, mutlak,* atau *satu-satunya cara*.\n3. **Pilih Jawaban yang Menggunakan Kata Terukur**  \n   Prioritaskan pilihan jawaban yang menggunakan kata-kata probabilitas yang ramah dan bijak, seperti *sebagian besar, cenderung, berpotensi,* atau *kemungkinan besar*. Kalimat yang terukur mencerminkan penalaran induktif yang sehat.\n4. **Cocokkan dengan Arah dan Proporsi Fakta Teks**  \n   Pastikan pernyataan pada pilihan yang tersisa benar-benar sejalan dengan data angka atau arah tren kenaikan di dalam wacana tanpa melebih-lebihkan fakta yang ada.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Generalisasi adalah proses penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data atau contoh khusus yang terbatas.\n- **Taraf Kepastian:** Kesimpulan hasil generalisasi tidak pernah bersifat pasti seratus persen, melainkan selalu berada pada taraf kemungkinan yang terukur.\n- **Kepatuhan pada Data:** Ruang lingkup simpulan wajib terikat secara ketat pada batasan subjek, populasi, dan wilayah yang benar-benar tercantum di dalam teks wacana.\n- **Strategi Menjawab:** Segera eliminasi pilihan yang menggunakan kata-kata mutlak atau melompat keluar batasan konteks, lalu pilih kalimat simpulan yang terukur dan sejalan dengan fakta data.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Generalisasi yang paling sering keluar di UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Simpulan Proporsi Sampel (Tipe Mayoritas)\n\n> **Konteks Wacana Soal:**  \n> Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.  \n>  \n> **Pertanyaan UTBK:** *Simpulan yang paling tepat berdasarkan teks tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%.  \n> - **B.** Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta.  \n> - **C.** Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan.  \n> - **D.** Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik.  \n> - **E.** Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Fakta Data:** Dari total 500 orang responden yang disurvei, sebanyak 460 orang atau 92% merasakan penghematan biaya bulanan secara nyata, sedangkan 40 orang lainnya atau 8% merasa biaya operasional mereka sama saja. Karena persentase 92% merupakan proporsi mayoritas yang sangat dominan namun belum mencapai 100%, maka penyebutan kuantor yang tepat secara kaidah logika induktif adalah *\"sebagian besar\"*.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Penggunaan kata *\"Semua\"* keliru karena terdapat 40 orang responden yang menyatakan tidak merasakan penghematan biaya, sehingga kesimpulan tidak boleh dipukul rata.\n  - **Pilihan B Salah:** Penggunaan kata *\"selalu\"* dan perluasan cakupan ke *\"seluruh masyarakat\"* membuat pernyataan ini berlebihan terhadap populasi umum yang tidak diteliti.\n  - **Pilihan D Salah:** Memberikan vonis kepastian yang mutlak dengan kata *\"pasti tidak cocok\"*, padahal wacana hanya mencatat alasan jarak tempuh harian mereka yang pendek tanpa menyatakan ketidakcocokan penggunaan motor listrik.\n  - **Pilihan E Salah:** Melompat keluar dari batasan wilayah penelitian dengan menyebutkan *\"masyarakat luar Jakarta\"*, padahal survei tersebut hanya dilakukan terhadap responden di wilayah Jakarta.\n- **Penerapan Trik Cepat (15 Detik):** Karena wacana secara tegas menyebutkan adanya 40 responden yang tidak merasakan penghematan, Anda dapat langsung mencoret opsi yang memuat kata mutlak seperti *semua, selalu,* dan *pasti* pada pilihan A, B, dan D. Selanjutnya, coret pilihan E karena memperluas simpulan ke luar wilayah Jakarta. Dengan metode eliminasi ini, pilihan yang tersisa dan paling tepat adalah pilihan **C**.\n\n---\n\n### Variasi 2: Simpulan Tren Induktif Berkala (Tipe Rangkaian Waktu)\n\n> **Konteks Wacana Soal:**  \n> Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan yang paling mungkin benar mengenai penerapan teknik fermentasi tertutup tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika.  \n> - **B.** Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut.  \n> - **C.** Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%.  \n> - **D.** Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%.  \n> - **E.** Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Fakta Data:** Angka penjualan komoditas kopi arabika memperlihatkan peningkatan yang konsisten pada setiap kuartal pengamatan, yaitu berturut-turut sebesar 12%, 15%, dan 18% setelah para petani mengadopsi teknik fermentasi tertutup. Rangkaian peningkatan yang berulang pada beberapa periode dan wilayah ini menunjukkan adanya arah kecenderungan yang positif, sehingga simpulan yang paling tepat dan aman adalah bahwa teknik tersebut *\"cenderung berdampak positif\"*.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Frasa *\"satu-satunya cara\"* merupakan klaim mutlak yang berlebihan, sebab teks tidak pernah menyatakan bahwa tidak ada cara atau teknik lain untuk meningkatkan penjualan.\n  - **Pilihan C Salah:** Mengubah jenis objek komoditas menjadi *\"kopi robusta\"*, padahal seluruh pengamatan di dalam teks wacana hanya menguji komoditas kopi arabika.\n  - **Pilihan D Salah:** Meramalkan angka masa depan secara mutlak dengan kata *\"pasti 21%\"*, padahal data penjualan pada kuartal keempat belum terjadi dan tidak boleh dipastikan secara sepihak.\n  - **Pilihan E Salah:** Menyimpulkan nasib negatif bagi petani yang tidak menggunakan teknik tersebut secara spekulatif, padahal kondisi petani lain tidak pernah diteliti di dalam wacana.\n- **Penerapan Trik Cepat (15 Detik):** Carilah pilihan jawaban yang menggunakan kata terukur yang bijak seperti *\"cenderung berdampak positif\"*. Anda dapat langsung mengeliminasi opsi yang memuat kata mutlak pada pilihan A (*satu-satunya cara*) dan pilihan D (*pasti*). Selanjutnya, coret pilihan C karena mengganti jenis kopi. Dengan eliminasi cepat ini, jawaban yang benar adalah pilihan **B**.\n\n---\n\n### Variasi 3: Evaluasi Kualitas Generalisasi / HOTS (Tipe Keterwakilan Sampel)\n\n> **Konteks Wacana Soal:**  \n> Seorang peneliti menyimpulkan bahwa *\"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa.\"* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan di bawah ini yang paling tepat mengevaluasi kelemahan dari generalisasi peneliti tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut.  \n> - **B.** Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek.  \n> - **C.** Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa.  \n> - **D.** Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan.  \n> - **E.** Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kelemahan Logika:** Peneliti menarik simpulan yang sangat luas untuk *\"seluruh kelompok usia dewasa\"* yang mencakup rentang umur 18 tahun hingga usia lanjut. Namun kenyataannya, sampel yang diuji hanyalah 25 orang mahasiswa dari satu jurusan di kampus teknik dengan rentang usia yang sangat seragam yaitu sekitar 21 hingga 23 tahun. Sampel dengan jumlah yang sangat kecil dan homogen ini jelas tidak memiliki keterwakilan (*representativeness*) yang memadai untuk menggeneralisasi kondisi seluruh populasi usia dewasa.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Membandingkan efek cokelat hitam dengan cokelat jenis lain bukan merupakan kelemahan metodologis yang mendasar, karena fokus penelitian tersebut memang hanya meneliti khasiat cokelat hitam.\n  - **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam pengujian fungsi daya ingat jangka pendek.\n  - **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% sudah merupakan kenaikan hasil tes yang cukup besar dan terukur secara nyata.\n  - **Pilihan E Salah:** Tingkat daya ingat awal tidak menggugurkan hasil penelitian, karena pengujian dilakukan dengan membandingkan skor sebelum dan sesudah intervensi pada individu yang sama.\n- **Penerapan Trik Cepat (15 Detik):** Bandingkan karakteristik sampel yang diuji (*hanya 25 orang mahasiswa sebaya*) dengan kesimpulan yang ditarik (*seluruh kelompok usia dewasa*). Kesenjangan yang sangat besar antara sampel yang sempit dengan kesimpulan yang terlalu luas menunjukkan cacat generalisasi terburu-buru (*hasty generalization*). Oleh karena itu, kelemahan utamanya adalah sampel tidak mewakili populasi, yang tepat dinyatakan pada pilihan **C**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-01-01-generalization",
+        "title": "Piramida Induktif: Observasi Sampel Khusus Menuju Kesimpulan Umum",
+        "caption": "Logika Generalisasi Ilmiah vs Hasty Generalization (Jebakan Sampel Terlalu Sedikit atau Bias)",
+        "svg_code": "<svg viewBox=\"0 0 640 210\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .gen-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .gen-sub { font-family: system-ui, sans-serif; font-size: 10px; fill: #64748b; text-anchor: middle; }\n      :root.dark .gen-title { fill: #f8fafc; }\n      :root.dark .gen-sub { fill: #94a3b8; }\n    </style>\n  </defs>\n\n  <!-- Panel 1: Valid Inductive Generalization -->\n  <g transform=\"translate(15, 12)\">\n    <rect width=\"295\" height=\"186\" rx=\"14\" fill=\"rgba(16, 185, 129, 0.05)\" stroke=\"rgba(16, 185, 129, 0.25)\" stroke-width=\"1.5\"/>\n    <text x=\"147\" y=\"26\" class=\"gen-title\">GENERALISASI SAH (KUAT)</text>\n    <text x=\"147\" y=\"42\" class=\"gen-sub\">Sampel Acak, Cukup Besar, &amp; Terdiversifikasi</text>\n\n    <!-- Visual Sample Points -->\n    <rect x=\"20\" y=\"55\" width=\"255\" height=\"48\" rx=\"8\" fill=\"#d1fae5\"/>\n    <circle cx=\"45\" cy=\"79\" r=\"8\" fill=\"#10b981\"/>\n    <circle cx=\"85\" cy=\"79\" r=\"8\" fill=\"#059669\"/>\n    <circle cx=\"125\" cy=\"79\" r=\"8\" fill=\"#047857\"/>\n    <circle cx=\"165\" cy=\"79\" r=\"8\" fill=\"#10b981\"/>\n    <circle cx=\"205\" cy=\"79\" r=\"8\" fill=\"#059669\"/>\n    <circle cx=\"245\" cy=\"79\" r=\"8\" fill=\"#047857\"/>\n    <text x=\"147\" y=\"93\" fill=\"#065f46\" font-family=\"system-ui, sans-serif\" font-size=\"9\" font-weight=\"bold\" text-anchor=\"middle\">Sampel Acak Multi-Wilayah (Representatif)</text>\n\n    <!-- Arrow down -->\n    <line x1=\"147\" y1=\"110\" x2=\"147\" y2=\"128\" stroke=\"#10b981\" stroke-width=\"2.5\"/>\n    <polygon points=\"147,134 142,126 152,126\" fill=\"#10b981\"/>\n\n    <!-- Conclusion Box -->\n    <rect x=\"20\" y=\"136\" width=\"255\" height=\"38\" rx=\"8\" fill=\"#10b981\"/>\n    <text x=\"147\" y=\"160\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">Kesimpulan Umum Berprobabilitas Tinggi (✓)</text>\n  </g>\n\n  <!-- Panel 2: Hasty Generalization (Jebakan UTBK) -->\n  <g transform=\"translate(330, 12)\">\n    <rect width=\"295\" height=\"186\" rx=\"14\" fill=\"rgba(239, 68, 68, 0.05)\" stroke=\"rgba(239, 68, 68, 0.25)\" stroke-width=\"1.5\"/>\n    <text x=\"147\" y=\"26\" class=\"gen-title\">HASTY GENERALIZATION (JEBAKAN)</text>\n    <text x=\"147\" y=\"42\" class=\"gen-sub\">Sampel Terlalu Sedikit atau Mengandung Bias Ekstrem</text>\n\n    <!-- Single / Biased Sample Points -->\n    <rect x=\"20\" y=\"55\" width=\"255\" height=\"48\" rx=\"8\" fill=\"#fee2e2\"/>\n    <circle cx=\"75\" cy=\"79\" r=\"10\" fill=\"#ef4444\"/>\n    <text x=\"155\" y=\"83\" fill=\"#991b1b\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">Hanya 1-2 Kasus Terisolasi (Bias)</text>\n\n    <!-- Arrow down broken -->\n    <line x1=\"147\" y1=\"110\" x2=\"147\" y2=\"128\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-dasharray=\"4,4\"/>\n    <polygon points=\"147,134 142,126 152,126\" fill=\"#ef4444\"/>\n\n    <!-- Fallacious Conclusion Box -->\n    <rect x=\"20\" y=\"136\" width=\"255\" height=\"38\" rx=\"8\" fill=\"#ef4444\"/>\n    <text x=\"147\" y=\"160\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">Generalisasi Cacat / Sesat Pikir UTBK (✗)</text>\n  </g>\n</svg>"
+      }
     ],
-    quick_execution_algorithm: [
-      'Identifikasi populasi dan ukuran sampel yang diobservasi dalam teks wacana.',
-      'Periksa apakah terdapat data pengecualian atau hanya mencakup wilayah/sub-populasi tertentu.',
-      'Eliminasi opsi berkuantor ekstrem (pasti, selalu, mutlak) atau opsi yang melompat keluar cakupan (out of scope).',
-      'Pilih simpulan probabilistik (cenderung, sebagian besar, kemungkinan besar) yang setia pada data premis.',
+    "distractor_traps": [
+      "Hasty Generalization (Generalisasi Terburu-buru): Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.",
+      "Overgeneralization (Lompatan Cakupan/Scope): Teks hanya membahas siswa SMA di kota X, tetapi opsi jawaban melompat menyimpulkan seluruh pelajar di Indonesia.",
+      "Jebakan Kuantor Universal (\"Semua/Selalu\"): Jika di dalam teks terdapat kata beberapa, sebagian, atau ada kasus pengecualian, langsung eliminasi opsi yang menggunakan kata semua atau pasti."
     ],
+    "quick_execution_algorithm": [
+      "Identifikasi populasi dan ukuran sampel yang diobservasi dalam teks wacana.",
+      "Periksa apakah terdapat data pengecualian atau hanya mencakup wilayah/sub-populasi tertentu.",
+      "Eliminasi opsi berkuantor ekstrem (pasti, selalu, mutlak) atau opsi yang melompat keluar cakupan (out of scope).",
+      "Pilih simpulan probabilistik (cenderung, sebagian besar, kemungkinan besar) yang setia pada data premis."
+    ]
   },
-  worked_examples: [
+  "worked_examples": [
     {
-      example_id: 'pu-01-01-ex1',
-      variation_name: 'Variasi 1: Simpulan Proporsi Sampel (Level: Mudah)',
-      difficulty: 'easy',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.',
-      question_markdown:
-        'Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...',
-      options: [
+      "example_id": "pu-01-01-ex1",
+      "variation_name": "Variasi 1: Simpulan Proporsi Sampel (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.",
+      "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%.',
+          "key": "A",
+          "text_markdown": "Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta.',
+          "key": "B",
+          "text_markdown": "Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan.',
+          "key": "C",
+          "text_markdown": "Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik.',
+          "key": "D",
+          "text_markdown": "Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik.',
-        },
+          "key": "E",
+          "text_markdown": "Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Cermati data teks: dari 500 orang, 460 orang hemat (mayoritas) dan 40 orang tidak hemat. Karena ada 40 orang yang tidak hemat, pilihan dengan kata mutlak seperti *"semua"* atau *"selalu"* otomatis salah. Perhatikan juga batasan wilayah penelitian!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Populasi Sampel:** Pengamatan dilakukan terhadap pengguna sepeda motor listrik di Jakarta ($n = 500$).
-- **Proporsi Sifat Utama:** Sebanyak $\\frac{460}{500} = 92\\%$ responden mengalami penghematan biaya operasional secara signifikan, sedangkan $8\\%$ lainnya tidak merasakan penghematan.
-- **Penarikan Simpulan:** Karena proporsi mencapai $92\\%$ (mayoritas besar, namun bukan $100\\%$ mutlak), kuantor yang valid secara logika induktif adalah *"sebagian besar"* pada kelompok sasaran *"pengguna motor listrik di Jakarta"*.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Eliminasi Kata Mutlak dan Lompatan Wilayah):**
-
-1. Cermati bahwa terdapat 40 orang responden yang tidak merasakan penghematan biaya. Oleh sebab itu, segera coret pilihan **A**, **B**, dan **D** karena menggunakan kata-kata bernada mutlak (*semua, selalu, pasti*).
-2. Coret pilihan **E** karena memperluas kesimpulan ke luar wilayah Jakarta (*out of scope*).
-3. Pilihan yang tersisa dan paling tepat adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Pilihan ini mengabaikan fakta bahwa ada 40 orang responden yang tidak merasakan penghematan biaya, sehingga menyimpulkan kata "semua" adalah kesalahan generalisasi yang memukul rata.
-- **Pilihan B Salah:** Pilihan ini menyimpulkan kondisi yang mutlak ("selalu") bagi seluruh masyarakat Jakarta yang tidak pernah diteliti di dalam wacana.
-- **Pilihan D Salah:** Pilihan ini memberikan vonis kepastian yang mutlak ("pasti tidak cocok"), padahal data wacana tidak pernah menyatakan ketidakcocokan penggunaan motor listrik.
-- **Pilihan E Salah:** Pilihan ini melompat keluar dari batasan data penelitian dengan menggeneralisasi kondisi masyarakat di luar wilayah Jakarta.`,
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati data teks: dari 500 orang, 460 orang hemat (mayoritas) dan 40 orang tidak hemat. Karena ada 40 orang yang tidak hemat, pilihan dengan kata mutlak seperti *\"semua\"* atau *\"selalu\"* otomatis salah. Perhatikan juga batasan wilayah penelitian!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Populasi Sampel:** Pengamatan dilakukan terhadap pengguna sepeda motor listrik di Jakarta ($n = 500$).\n- **Proporsi Sifat Utama:** Sebanyak $\\frac{460}{500} = 92\\%$ responden mengalami penghematan biaya operasional secara signifikan, sedangkan $8\\%$ lainnya tidak merasakan penghematan.\n- **Penarikan Simpulan:** Karena proporsi mencapai $92\\%$ (mayoritas besar, namun bukan $100\\%$ mutlak), kuantor yang valid secara logika induktif adalah *\"sebagian besar\"* pada kelompok sasaran *\"pengguna motor listrik di Jakarta\"*.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Kata Mutlak dan Lompatan Wilayah):**\n\n1. Cermati bahwa terdapat 40 orang responden yang tidak merasakan penghematan biaya. Oleh sebab itu, segera coret pilihan **A**, **B**, dan **D** karena menggunakan kata-kata bernada mutlak (*semua, selalu, pasti*).\n2. Coret pilihan **E** karena memperluas kesimpulan ke luar wilayah Jakarta (*out of scope*).\n3. Pilihan yang tersisa dan paling tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pilihan ini mengabaikan fakta bahwa ada 40 orang responden yang tidak merasakan penghematan biaya, sehingga menyimpulkan kata \"semua\" adalah kesalahan generalisasi yang memukul rata.\n- **Pilihan B Salah:** Pilihan ini menyimpulkan kondisi yang mutlak (\"selalu\") bagi seluruh masyarakat Jakarta yang tidak pernah diteliti di dalam wacana.\n- **Pilihan D Salah:** Pilihan ini memberikan vonis kepastian yang mutlak (\"pasti tidak cocok\"), padahal data wacana tidak pernah menyatakan ketidakcocokan penggunaan motor listrik.\n- **Pilihan E Salah:** Pilihan ini melompat keluar dari batasan data penelitian dengan menggeneralisasi kondisi masyarakat di luar wilayah Jakarta."
     },
     {
-      example_id: 'pu-01-01-ex2',
-      variation_name: 'Variasi 2: Simpulan Tren Induktif Berkala (Level: Sedang)',
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.',
-      question_markdown:
-        'Manakah pernyataan yang **paling mungkin benar** mengenai penerapan teknik fermentasi tertutup tersebut?',
-      options: [
+      "example_id": "pu-01-01-ex2",
+      "variation_name": "Variasi 2: Simpulan Tren Induktif Berkala (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.",
+      "question_markdown": "Manakah pernyataan yang **paling mungkin benar** mengenai penerapan teknik fermentasi tertutup tersebut?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika.',
+          "key": "A",
+          "text_markdown": "Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut.',
+          "key": "B",
+          "text_markdown": "Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%.',
+          "key": "C",
+          "text_markdown": "Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%.',
+          "key": "D",
+          "text_markdown": "Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar.',
-        },
+          "key": "E",
+          "text_markdown": "Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Penjualan kopi arabika meningkat konsisten pada kuartal 1 (12%), kuartal 2 (15%), dan kuartal 3 (18%). Cari opsi yang menyatakan kecenderungan dampak positif. Hati-hati dengan opsi yang mengganti jenis komoditas (misal kopi robusta) atau menebak angka masa depan secara mutlak!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Data Khusus Pengamatan:** Penjualan komoditas kopi arabika tercatat meningkat berturut-turut pada Kuartal 1 ($+12\\%$), Kuartal 2 ($+15\\%$), dan Kuartal 3 ($+18\\%$) setelah penerapan teknik fermentasi tertutup.
-- **Induksi Tren Berkala:** Kenaikan yang terjadi secara konsisten di beberapa wilayah dan periode waktu menunjukkan adanya kecenderungan dampak positif dari teknik tersebut terhadap penjualan kopi arabika di wilayah pengamatan.
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Cari Kata Terukur dan Eliminasi Kata Mutlak):**
-
-1. Pilihlah opsi yang memuat kata pembatas probabilitas yang bijak, yaitu *"cenderung berdampak positif"*.
-2. Segera coret pilihan **A** dan **D** karena memuat kata mutlak (*satu-satunya* dan *pasti*).
-3. Coret pilihan **C** karena melompat ke jenis komoditas lain (kopi robusta).
-4. Pilihan yang tepat dan terbukti adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Menyatakan bahwa teknik ini adalah satu-satunya cara merupakan klaim mutlak yang tidak didukung oleh bukti di dalam wacana.
-- **Pilihan C Salah:** Mengubah jenis komoditas menjadi kopi robusta, padahal pengamatan hanya meneliti kopi arabika.
-- **Pilihan D Salah:** Memprediksi angka kuartal keempat secara mutlak ("pasti 21%") mendahului fakta empiris yang belum terjadi.
-- **Pilihan E Salah:** Menarik kesimpulan negatif sepihak tentang kerugian petani yang tidak memakai teknik tersebut tanpa ada data penelitian.`,
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Penjualan kopi arabika meningkat konsisten pada kuartal 1 (12%), kuartal 2 (15%), dan kuartal 3 (18%). Cari opsi yang menyatakan kecenderungan dampak positif. Hati-hati dengan opsi yang mengganti jenis komoditas (misal kopi robusta) atau menebak angka masa depan secara mutlak!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Data Khusus Pengamatan:** Penjualan komoditas kopi arabika tercatat meningkat berturut-turut pada Kuartal 1 ($+12\\%$), Kuartal 2 ($+15\\%$), dan Kuartal 3 ($+18\\%$) setelah penerapan teknik fermentasi tertutup.\n- **Induksi Tren Berkala:** Kenaikan yang terjadi secara konsisten di beberapa wilayah dan periode waktu menunjukkan adanya kecenderungan dampak positif dari teknik tersebut terhadap penjualan kopi arabika di wilayah pengamatan.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Kata Terukur dan Eliminasi Kata Mutlak):**\n\n1. Pilihlah opsi yang memuat kata pembatas probabilitas yang bijak, yaitu *\"cenderung berdampak positif\"*.\n2. Segera coret pilihan **A** dan **D** karena memuat kata mutlak (*satu-satunya* dan *pasti*).\n3. Coret pilihan **C** karena melompat ke jenis komoditas lain (kopi robusta).\n4. Pilihan yang tepat dan terbukti adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyatakan bahwa teknik ini adalah satu-satunya cara merupakan klaim mutlak yang tidak didukung oleh bukti di dalam wacana.\n- **Pilihan C Salah:** Mengubah jenis komoditas menjadi kopi robusta, padahal pengamatan hanya meneliti kopi arabika.\n- **Pilihan D Salah:** Memprediksi angka kuartal keempat secara mutlak (\"pasti 21%\") mendahului fakta empiris yang belum terjadi.\n- **Pilihan E Salah:** Menarik kesimpulan negatif sepihak tentang kerugian petani yang tidak memakai teknik tersebut tanpa ada data penelitian."
     },
     {
-      example_id: 'pu-01-01-ex3',
-      variation_name: 'Variasi 3: Evaluasi Kualitas Generalisasi / HOTS (Level: Sulit)',
-      difficulty: 'hard',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Seorang peneliti menyimpulkan bahwa *"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa."* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.',
-      question_markdown:
-        'Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kelemahan** dari generalisasi peneliti tersebut?',
-      options: [
+      "example_id": "pu-01-01-ex3",
+      "variation_name": "Variasi 3: Evaluasi Kualitas Generalisasi / HOTS (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Seorang peneliti menyimpulkan bahwa *\"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa.\"* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.",
+      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kelemahan** dari generalisasi peneliti tersebut?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut.',
+          "key": "A",
+          "text_markdown": "Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek.',
+          "key": "B",
+          "text_markdown": "Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa.',
+          "key": "C",
+          "text_markdown": "Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan.',
+          "key": "D",
+          "text_markdown": "Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam.',
-        },
+          "key": "E",
+          "text_markdown": "Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Perhatikan perbedaan antara subjek yang diuji (hanya 25 mahasiswa teknik) dengan simpulan peneliti yang mengklaim berlaku untuk *"seluruh kelompok usia dewasa"*. Apakah sampel 25 mahasiswa teknik cukup mewakili seluruh orang dewasa dari berbagai usia dan profesi?',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Klaim Simpulan Peneliti:** Peneliti mengklaim hasil riset berlaku untuk *"seluruh kelompok usia dewasa"* yang mencakup rentang umur 18 hingga usia lanjut dengan latar belakang yang sangat majemuk.
-- **Fakta Sampel Uji:** Pengujian sebenarnya hanya melibatkan $n = 25$ mahasiswa tingkat akhir (usia $\\approx 21-23$ tahun) pada satu program studi di universitas teknik yang sangat seragam.
-- **Kelemahan Metodologis:** Terjadi cacat generalisasi terburu-buru (*hasty generalization*), di mana ukuran sampel terlalu sempit dan homogen sehingga tidak dapat mewakili populasi target secara sahih.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Cek Kesenjangan Cakupan Sampel terhadap Simpulan):**
-
-1. Perhatikan bahwa sampel yang diuji hanyalah 25 orang mahasiswa dari fakultas teknik yang memiliki usia sebaya dan latar belakang homogen.
-2. Bandingkan dengan klaim kesimpulan peneliti yang menyatakan berlaku bagi seluruh kelompok usia dewasa.
-3. Kesenjangan yang sangat besar antara sampel sempit dengan kesimpulan luas menunjukkan kelemahan fatal keterwakilan sampel.
-4. Jawaban yang tepat adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Perbandingan dengan varian cokelat susu bukan merupakan fokus pengujian hipotesis manfaat cokelat hitam.
-- **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam uji klinis memori jangka pendek.
-- **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% merupakan hasil kenaikan yang cukup besar dan signifikan secara deskriptif.
-- **Pilihan E Salah:** Pengujian diukur berdasarkan selisih skor sebelum dan sesudah intervensi pada mahasiswa yang sama, sehingga tingkat memori awal tidak menggugurkan hasil.`,
-    },
-  ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan perbedaan antara subjek yang diuji (hanya 25 mahasiswa teknik) dengan simpulan peneliti yang mengklaim berlaku untuk *\"seluruh kelompok usia dewasa\"*. Apakah sampel 25 mahasiswa teknik cukup mewakili seluruh orang dewasa dari berbagai usia dan profesi?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Klaim Simpulan Peneliti:** Peneliti mengklaim hasil riset berlaku untuk *\"seluruh kelompok usia dewasa\"* yang mencakup rentang umur 18 hingga usia lanjut dengan latar belakang yang sangat majemuk.\n- **Fakta Sampel Uji:** Pengujian sebenarnya hanya melibatkan $n = 25$ mahasiswa tingkat akhir (usia $\\approx 21-23$ tahun) pada satu program studi di universitas teknik yang sangat seragam.\n- **Kelemahan Metodologis:** Terjadi cacat generalisasi terburu-buru (*hasty generalization*), di mana ukuran sampel terlalu sempit dan homogen sehingga tidak dapat mewakili populasi target secara sahih.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Cek Kesenjangan Cakupan Sampel terhadap Simpulan):**\n\n1. Perhatikan bahwa sampel yang diuji hanyalah 25 orang mahasiswa dari fakultas teknik yang memiliki usia sebaya dan latar belakang homogen.\n2. Bandingkan dengan klaim kesimpulan peneliti yang menyatakan berlaku bagi seluruh kelompok usia dewasa.\n3. Kesenjangan yang sangat besar antara sampel sempit dengan kesimpulan luas menunjukkan kelemahan fatal keterwakilan sampel.\n4. Jawaban yang tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Perbandingan dengan varian cokelat susu bukan merupakan fokus pengujian hipotesis manfaat cokelat hitam.\n- **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam uji klinis memori jangka pendek.\n- **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% merupakan hasil kenaikan yang cukup besar dan signifikan secara deskriptif.\n- **Pilihan E Salah:** Pengujian diukur berdasarkan selisih skor sebelum dan sesudah intervensi pada mahasiswa yang sama, sehingga tingkat memori awal tidak menggugurkan hasil."
+    }
+  ]
 };
 
 const MATERIAL_PU_01_02 = {
-  metadata: {
-    id: 'pu-1-2',
-    subtest: 'PU',
-    chapter_num: 1,
-    chapter_title: 'Penalaran Induktif',
-    subchapter_num: '1.2',
-    subchapter_title: 'Analogi',
-    title: 'Analogi',
-    required_question_variations: [
-      'Prediksi Berbasis Analogi Fenomena',
-      'Parallel Reasoning (Pola Penalaran Setara)',
-      'Memperlemah Analogi / Critical Disanalogy (HOTS)',
+  "metadata": {
+    "id": "pu-1-2",
+    "subtest": "PU",
+    "chapter_num": 1,
+    "chapter_title": "Penalaran Induktif",
+    "subchapter_num": "1.2",
+    "subchapter_title": "Analogi",
+    "title": "Analogi",
+    "required_question_variations": [
+      "Prediksi Berbasis Analogi Fenomena",
+      "Parallel Reasoning (Pola Penalaran Setara)",
+      "Memperlemah Analogi / Critical Disanalogy (HOTS)"
     ],
-    requires_svg: false,
-    updated_at: '2026-11-07',
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
   },
-  content: {
-    tactical_overview:
-      'Penalaran analogi menyimpulkan kesamaan akibat berdasarkan kemiripan mekanisme mendasar pada dua hal yang berbeda. Kunci utama dalam menyelesaikan soal analogi UTBK adalah memastikan bahwa kesamaan tersebut bersifat fungsional, menggunakan kata bernada kemungkinan seperti "kemungkinan besar" atau "berpotensi", mencocokkan rumus struktur logika pada tipe parallel reasoning, serta mengidentifikasi perbedaan kritis yang dapat membatalkan simpulan analogi.',
-    exam_blueprint_markdown: `# 1. Prinsip Dasar
-
-Penalaran analogi adalah metode berpikir induktif yang menyimpulkan bahwa jika dua objek, fenomena, atau situasi memiliki kesamaan mekanisme kerja yang mendasar, maka dampak atau akibat yang telah terbukti terjadi pada hal pertama kemungkinan besar juga akan terjadi pada hal kedua. Di dalam ujian UTBK SNBT, soal analogi dirancang untuk menguji kejelian Anda dalam membedakan perbandingan yang logis dari perbandingan semu.
-
-Tiga prinsip penting penalaran analogi yang wajib Anda kuasai adalah sebagai berikut:
-1. **Kesamaan Harus Bersifat Fungsional, Bukan Sekadar Tampilan Luar**  
-   Perbandingan analogi baru dianggap sah jika titik kesamaan tersebut berhubungan langsung dengan mekanisme sebab-akibat. Apabila dua hal hanya memiliki kemiripan nama, kemasan luar, atau rupa fisik tanpa kesamaan cara kerja yang mendasar, perbandingan tersebut merupakan analogi palsu (*false analogy*) yang tidak dapat dijadikan dasar kesimpulan.
-2. **Kesimpulan Selalu Bersifat Probabilistik (Taraf Kemungkinan)**  
-   Karena dua objek yang berbeda tidak akan pernah benar-benar identik dalam seluruh aspeknya, kesimpulan dari penalaran analogi tidak pernah bernilai mutlak seratus persen. Pilihan jawaban yang benar di UTBK selalu menggunakan kata-kata pembatas tingkat kemungkinan, seperti *"kemungkinan besar"*, *"berpotensi"*, atau *"cenderung"*.
-3. **Simpulan Dapat Digugurkan oleh Perbedaan Kritis (*Critical Disanalogy*)**  
-   Meskipun dua objek memiliki banyak kemiripan luar, keberadaan satu perbedaan mendasar pada sistem kerja internalnya dapat secara langsung membatalkan atau memperlemah kesimpulan analogi tersebut.
-
----
-
-# 2. Jebakan Pengecoh Khas UTBK
-
-Pembuat soal UTBK kerap menyiapkan pilihan pengecoh yang tampak logis dari luar, namun sebenarnya rapuh secara penalaran induktif. Tiga jebakan yang paling sering dijumpai meliputi:
-1. **Jebakan Kemiripan Permukaan (*False Analogy*)**  
-   Pilihan jawaban menyamakan dua hal hanya karena nama, istilah, atau atribut luarnya terdengar mirip, padahal mekanisme fungsi internal dari kedua hal tersebut saling bertolak belakang.
-2. **Jebakan Kesamaan Topik Semu (*Parallel Reasoning*)**  
-   Pada variasi soal yang mencari pola penalaran kembar atau setara, siswa sering terkecoh memilih opsi hanya karena topik ceritanya sama (misalnya sama-sama bertema sains, kedokteran, atau teknologi). Padahal yang harus dicocokkan bukanlah tema ceritanya, melainkan kerangka rumus logikanya.
-3. **Jebakan Pernyataan Kepastian Mutlak**  
-   Pilihan jawaban menggunakan kata-kata bernada mutlak seperti *pasti, sudah tentu,* atau *selalu sama*. Anda perlu berhati-hati terhadap opsi seperti ini karena penalaran analogi tidak pernah menghasilkan jaminan kepastian yang mutlak.
-
----
-
-# 3. Trik Cepat (15 Detik)
-
-Saat Anda menghadapi soal analogi di lembar ujian UTBK dengan waktu yang terbatas, gunakan langkah taktis berikut berdasarkan jenis variasinya:
-1. **Untuk Soal Prediksi Berbasis Analogi Fenomena**  
-   Identifikasi akibat atau dampak yang telah terbukti pada objek pertama di dalam teks wacana. Setelah itu, carilah pilihan jawaban yang memindahkan akibat tersebut ke objek kedua dengan menyertakan kata yang menunjukkan kemungkinan, seperti *"kemungkinan besar"* atau *"berpotensi"*. Segera eliminasi pilihan yang menggunakan kata mutlak seperti *"pasti"*.
-2. **Untuk Soal Pola Penalaran Kembar (*Parallel Reasoning*)**  
-   Sederhanakan alur wacana menjadi kerangka logika sebab-akibat di dalam pikiran Anda, misalnya: [Perlakuan bertahap menghasilkan adaptasi yang baik, sedangkan perlakuan ekstrem memicu kegagalan]. Setelah mendapatkan kerangka tersebut, carilah pilihan jawaban yang memiliki susunan logika dua sisi yang sama persis tanpa memedulikan tema pembahasannya.
-3. **Untuk Soal Memperlemah Analogi (*Critical Disanalogy*)**  
-   Arahkan fokus Anda untuk mencari satu fakta baru yang menunjukkan perbedaan cara kerja mendasar yang membuat sistem pada objek pertama mustahil dapat diterapkan pada objek kedua.
-
----
-
-# 4. Kesimpulan
-
-- **Hakikat Materi:** Penalaran analogi mendasarkan kesimpulannya pada kemiripan fungsi atau mekanisme kerja esensial, bukan pada kemiripan tampilan fisik.
-- **Taraf Kepastian:** Kesimpulan analogi selalu berada pada taraf kemungkinan yang terukur (*probabilistik*), sehingga opsi yang mengandung kata mutlak wajib dihindari.
-- **Pola Setara (*Parallel Reasoning*):** Kunci keberhasilan terletak pada pencocokan struktur pola hubungan logika kalimatnya, bukan pada kesamaan topik atau bidang pembahasannya.
-- **Kelemahan Kritis:** Hubungan analogi akan runtuh apabila ditemukan perbedaan mendasar yang merusak kaitan sebab-akibat antara kedua hal yang sedang diperbandingkan.
-
----
-
-# 5. Bedah Soal dan Variasi UTBK
-
-Berikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:
-
-### Variasi 1: Prediksi Berbasis Analogi Fenomena
-
-> **Konteks Wacana:**  
-> Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni (*habitable zone*) bintang induknya, berkomposisi batuan silikat padat, dan menerima radiasi yang menjaga air tetap berfase cair. Di Bumi, kombinasi ketiga faktor ini memungkinkan terbentuknya siklus hidrologi yang stabil.  
->  
-> **Pertanyaan UTBK:** *Berdasarkan penalaran analogi, simpulan yang paling mungkin benar adalah...*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Planet Kepler-186f pasti dihuni oleh makhluk hidup cerdas seperti di Bumi.  
-> - **B.** Planet Kepler-186f memiliki ukuran dan jumlah satelit alami yang persis sama dengan Bumi.  
-> - **C.** Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil.  
-> - **D.** Semua planet di luar tata surya yang berbatu padat memiliki air dalam fase cair.  
-> - **E.** Bumi dan Planet Kepler-186f terbentuk pada waktu yang bersamaan.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Hubungan Analogi:** Planet Bumi dan Kepler-186f memiliki tiga titik kesamaan fungsional yang krusial, yaitu berada pada zona laik huni, memiliki struktur batuan silikat padat, dan menerima intensitas radiasi yang menjaga air tetap cair. Pada Bumi, kombinasi faktor ini terbukti membentuk siklus hidrologi yang stabil. Secara penalaran analogi yang sah, akibat yang telah terbukti pada Bumi dapat ditransfer ke Kepler-186f dengan menggunakan derajat kemungkinan (*kemungkinan besar memiliki potensi yang serupa*).
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Menyimpulkan hal yang melompat terlalu jauh, karena teks wacana hanya menguji kondisi batuan dan air, bukan keberadaan organisme makhluk hidup cerdas.
-  - **Pilihan B Salah:** Kesamaan posisi zona laik huni tidak serta-merta membuktikan adanya kesamaan ukuran fisik maupun jumlah satelit alami planet.
-  - **Pilihan D Salah:** Merupakan generalisasi yang berlebihan pada seluruh planet di alam semesta tanpa didasari oleh data pengamatan yang valid.
-  - **Pilihan E Salah:** Teks wacana tidak memuat data kronologi mengenai waktu pembentukan kedua planet tersebut.
-- **Penerapan Trik Cepat (15 Detik):** Perhatikan sifat yang sudah terbukti pada Bumi di bagian akhir wacana (*terbentuknya siklus hidrologi yang stabil*). Selanjutnya, carilah pilihan jawaban yang memindahkan sifat tersebut ke Kepler-186f dengan bahasa kemungkinan (*kemungkinan besar*). Anda dapat langsung mencoret opsi yang menggunakan kata mutlak seperti *pasti* atau *semua* pada pilihan A dan D. Dengan demikian, jawaban yang tepat adalah pilihan **C**.
-
----
-
-### Variasi 2: Parallel Reasoning (Pola Penalaran Kembar)
-
-> **Konteks Wacana:**  
-> Melatih otot tubuh dengan beban yang ditingkatkan secara bertahap akan membuat serat otot beradaptasi dan menjadi lebih kuat. Sebaliknya, jika beban terlalu ekstrem sejak hari pertama, otot justru akan mengalami cedera. Demikian pula dalam mempelajari pemrograman komputer; memberikan latihan logika secara bertahap akan membangun pemahaman yang kokoh, sedangkan langsung memaksakan proyek berskala besar kepada pemula justru akan memicu kejenuhan dan kegagalan.  
->  
-> **Pertanyaan UTBK:** *Manakah situasi di bawah ini yang menggunakan pola penalaran analogi paling serupa dengan teks di atas?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Membaca buku sejarah setiap hari akan memperluas wawasan seseorang, sama halnya dengan menonton film dokumenter sejarah di televisi.  
-> - **B.** Memberikan pupuk secara bertahap sesuai usia tanaman akan menyuburkan pertumbuhannya, sedangkan pemberian dosis berlebih sekaligus akan membuat tanaman mati; hal ini serupa dengan pemberian materi ajar kepada siswa yang harus disesuaikan tingkat kesulitannya secara bertahap agar tidak membuat siswa kewalahan.  
-> - **C.** Kendaraan listrik membutuhkan pengisian daya baterai secara rutin agar dapat beroperasi, berbeda dengan kendaraan bensin yang dapat diisi dalam waktu singkat di SPBU.  
-> - **D.** Seorang atlet lari maraton harus menjaga pola makan dan waktu tidur yang teratur agar staminanya terjaga saat perlombaan berlangsung.  
-> - **E.** Belajar bermain gitar membutuhkan latihan jari setiap hari, oleh karena itu semua musisi profesional pasti pernah mengalami sakit pada ujung jari mereka.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Pola Hubungan Logika:** Wacana menyandingkan dua ranah yang berbeda (pelatihan fisik otot dan pembelajaran kognitif pemrograman) menggunakan pola kontras dua sisi yang simetris: [Perlakuan bertahap menghasilkan adaptasi positif] berbanding terbalik dengan [Beban yang berlebihan memicu kerusakan atau kegagalan]. Pilihan B mereplikasi struktur rumus yang identik pada ranah pertanian dan pendidikan: [Pemberian pupuk bertahap menyuburkan tanaman, dosis berlebih mematikan] setara dengan [Pemberian materi ajar bertahap mempermudah pemahaman, materi drastis memicu kewalahan].
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Hanya membandingkan dua media penambah wawasan tanpa memiliki komponen kontras kegagalan akibat perlakuan berlebihan.
-  - **Pilihan C Salah:** Merupakan kalimat perbandingan kontras perbedaan cara kerja kendaraan, bukan penalaran analogi dua sistem yang setara.
-  - **Pilihan D Salah:** Hanya memaparkan penjelasan pada satu bidang tunggal mengenai tips kebugaran atlet tanpa menghadirkan objek analogi pembanding.
-  - **Pilihan E Salah:** Menyajikan simpulan induktif pada bidang musik tanpa membangun kerangka analogi perbandingan kembar.
-- **Penerapan Trik Cepat (15 Detik):** Rumuskan pola hubungan wacana secara ringkas di pikiran Anda: *Perlakuan bertahap berhasil, perlakuan berlebihan rusak*. Carilah pilihan jawaban yang menghadirkan perbandingan dua bidang berbeda dengan pola dua sisi yang sama persis. Anda akan langsung menemukan bahwa pilihan **B** memiliki struktur logika kembar yang sempurna.
-
----
-
-### Variasi 3: Memperlemah Analogi / Critical Disanalogy (HOTS)
-
-> **Konteks Wacana:**  
-> Manajemen Perusahaan Ritel X berencana menerapkan sistem kerja 4 hari seminggu tanpa pemotongan gaji untuk meningkatkan produktivitas karyawan. Keputusan ini didasarkan pada keberhasilan Perusahaan Software Y yang mengalami kenaikan produktivitas sebesar 25% setelah menerapkan sistem kerja 4 hari seminggu karena kedua perusahaan memiliki jumlah karyawan yang sama (300 orang) dan berlokasi di kota metropolitan yang sama.  
->  
-> **Pertanyaan UTBK:** *Manakah fakta di bawah ini yang paling memperlemah argumen analogi Manajemen Perusahaan Ritel X?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Perusahaan Software Y telah berdiri lima tahun lebih lama dibandingkan Perusahaan Ritel X.  
-> - **B.** Sebagian karyawan di Perusahaan Ritel X menggunakan transportasi umum untuk berangkat bekerja.  
-> - **C.** Produktivitas Perusahaan Software Y bergantung pada penyelesaian proyek berbasis output mingguan yang fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik yang melayani pelanggan setiap hari.  
-> - **D.** Perusahaan Software Y memberikan fasilitas makan siang gratis kepada karyawannya, sedangkan Perusahaan Ritel X memberikan tunjangan makan dalam bentuk uang tunai.  
-> - **E.** Biaya sewa gedung kantor di kota metropolitan tersebut meningkat sebesar 10% pada tahun ini.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Titik Lemah Analogi (*Critical Disanalogy*):** Manajemen Perusahaan Ritel X menyamakan perusahaannya dengan Perusahaan Software Y hanya berdasarkan kemiripan luar, yaitu kesamaan jumlah karyawan dan lokasi kota. Padahal, faktor kunci keberhasilan sistem kerja 4 hari pada Perusahaan Software Y adalah model kerjanya yang berbasis penyelesaian output proyek mingguan yang fleksibel. Sebaliknya, pendapatan Perusahaan Ritel X bergantung secara mutlak pada kehadiran toko fisik yang buka melayani pelanggan setiap hari. Apabila toko ritel memangkas hari kerja, jam operasional layanan toko akan berkurang dan omzet penjualan akan langsung anjlok. Fakta pada pilihan C membongkar perbedaan cara kerja fundamental yang secara telak menggugurkan analogi kebijakan tersebut.
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Perbedaan usia berdirinya perusahaan tidak memengaruhi kesesuaian penerapan skema hari kerja mingguan.
-  - **Pilihan B Salah:** Moda transportasi yang digunakan karyawan tidak berkaitan dengan model perusahaan dalam menghasilkan pendapatan.
-  - **Pilihan D Salah:** Bentuk tunjangan makan siang (makanan siap saji versus uang tunai) merupakan perbedaan fasilitas sepele yang tidak merusak analogi sistem kerja.
-  - **Pilihan E Salah:** Kenaikan biaya sewa gedung kantor dihadapi oleh kedua perusahaan di kota tersebut, sehingga tidak membedakan cara kerja operasional bisnis keduanya.
-- **Penerapan Trik Cepat (15 Detik):** Ajukan pertanyaan kritis: *"Perbedaan mendasar apakah yang membuat sistem kerja di perusahaan teknologi mustahil diterapkan di toko ritel fisik?"* Pilihlah opsi yang secara langsung mengungkap perbedaan model operasional dalam menghasilkan pendapatan. Fakta tersebut terdapat secara gamblang pada pilihan **C**.`,
-    visualizations_svg: [],
-    distractor_traps: [
-      'False Analogy (Analogi Palsu/Dangkal): Membandingkan dua objek hanya karena kemiripan permukaan atau kemiripan nama, padahal mekanisme dasarnya bertolak belakang.',
-      'Mengabaikan Perbedaan Kritis (Critical Disanalogy): Jika terdapat satu perbedaan faktor krusial antara dua objek yang justru menjadi penyebab hasil yang berbeda, maka analogi langsung gugur.',
-      'Jebakan Kesamaan Topik Semu: Memilih opsi hanya karena sama-sama membahas bidang yang mirip (misal sains atau teknologi), padahal pola struktur penalarannya tidak sepadan.',
+  "content": {
+    "tactical_overview": "Penalaran analogi menyimpulkan kesamaan akibat berdasarkan kemiripan mekanisme mendasar pada dua hal yang berbeda. Kunci utama dalam menyelesaikan soal analogi UTBK adalah memastikan bahwa kesamaan tersebut bersifat fungsional, menggunakan kata bernada kemungkinan seperti \"kemungkinan besar\" atau \"berpotensi\", mencocokkan rumus struktur logika pada tipe parallel reasoning, serta mengidentifikasi perbedaan kritis yang dapat membatalkan simpulan analogi.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-01-02-analogy]]\n\n\nPenalaran analogi adalah metode berpikir induktif yang menyimpulkan bahwa jika dua objek, fenomena, atau situasi memiliki kesamaan mekanisme kerja yang mendasar, maka dampak atau akibat yang telah terbukti terjadi pada hal pertama kemungkinan besar juga akan terjadi pada hal kedua. Di dalam ujian UTBK SNBT, soal analogi dirancang untuk menguji kejelian Anda dalam membedakan perbandingan yang logis dari perbandingan semu.\n\nTiga prinsip penting penalaran analogi yang wajib Anda kuasai adalah sebagai berikut:\n1. **Kesamaan Harus Bersifat Fungsional, Bukan Sekadar Tampilan Luar**  \n   Perbandingan analogi baru dianggap sah jika titik kesamaan tersebut berhubungan langsung dengan mekanisme sebab-akibat. Apabila dua hal hanya memiliki kemiripan nama, kemasan luar, atau rupa fisik tanpa kesamaan cara kerja yang mendasar, perbandingan tersebut merupakan analogi palsu (*false analogy*) yang tidak dapat dijadikan dasar kesimpulan.\n2. **Kesimpulan Selalu Bersifat Probabilistik (Taraf Kemungkinan)**  \n   Karena dua objek yang berbeda tidak akan pernah benar-benar identik dalam seluruh aspeknya, kesimpulan dari penalaran analogi tidak pernah bernilai mutlak seratus persen. Pilihan jawaban yang benar di UTBK selalu menggunakan kata-kata pembatas tingkat kemungkinan, seperti *\"kemungkinan besar\"*, *\"berpotensi\"*, atau *\"cenderung\"*.\n3. **Simpulan Dapat Digugurkan oleh Perbedaan Kritis (*Critical Disanalogy*)**  \n   Meskipun dua objek memiliki banyak kemiripan luar, keberadaan satu perbedaan mendasar pada sistem kerja internalnya dapat secara langsung membatalkan atau memperlemah kesimpulan analogi tersebut.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK kerap menyiapkan pilihan pengecoh yang tampak logis dari luar, namun sebenarnya rapuh secara penalaran induktif. Tiga jebakan yang paling sering dijumpai meliputi:\n1. **Jebakan Kemiripan Permukaan (*False Analogy*)**  \n   Pilihan jawaban menyamakan dua hal hanya karena nama, istilah, atau atribut luarnya terdengar mirip, padahal mekanisme fungsi internal dari kedua hal tersebut saling bertolak belakang.\n2. **Jebakan Kesamaan Topik Semu (*Parallel Reasoning*)**  \n   Pada variasi soal yang mencari pola penalaran kembar atau setara, siswa sering terkecoh memilih opsi hanya karena topik ceritanya sama (misalnya sama-sama bertema sains, kedokteran, atau teknologi). Padahal yang harus dicocokkan bukanlah tema ceritanya, melainkan kerangka rumus logikanya.\n3. **Jebakan Pernyataan Kepastian Mutlak**  \n   Pilihan jawaban menggunakan kata-kata bernada mutlak seperti *pasti, sudah tentu,* atau *selalu sama*. Anda perlu berhati-hati terhadap opsi seperti ini karena penalaran analogi tidak pernah menghasilkan jaminan kepastian yang mutlak.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nSaat Anda menghadapi soal analogi di lembar ujian UTBK dengan waktu yang terbatas, gunakan langkah taktis berikut berdasarkan jenis variasinya:\n1. **Untuk Soal Prediksi Berbasis Analogi Fenomena**  \n   Identifikasi akibat atau dampak yang telah terbukti pada objek pertama di dalam teks wacana. Setelah itu, carilah pilihan jawaban yang memindahkan akibat tersebut ke objek kedua dengan menyertakan kata yang menunjukkan kemungkinan, seperti *\"kemungkinan besar\"* atau *\"berpotensi\"*. Segera eliminasi pilihan yang menggunakan kata mutlak seperti *\"pasti\"*.\n2. **Untuk Soal Pola Penalaran Kembar (*Parallel Reasoning*)**  \n   Sederhanakan alur wacana menjadi kerangka logika sebab-akibat di dalam pikiran Anda, misalnya: [Perlakuan bertahap menghasilkan adaptasi yang baik, sedangkan perlakuan ekstrem memicu kegagalan]. Setelah mendapatkan kerangka tersebut, carilah pilihan jawaban yang memiliki susunan logika dua sisi yang sama persis tanpa memedulikan tema pembahasannya.\n3. **Untuk Soal Memperlemah Analogi (*Critical Disanalogy*)**  \n   Arahkan fokus Anda untuk mencari satu fakta baru yang menunjukkan perbedaan cara kerja mendasar yang membuat sistem pada objek pertama mustahil dapat diterapkan pada objek kedua.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Penalaran analogi mendasarkan kesimpulannya pada kemiripan fungsi atau mekanisme kerja esensial, bukan pada kemiripan tampilan fisik.\n- **Taraf Kepastian:** Kesimpulan analogi selalu berada pada taraf kemungkinan yang terukur (*probabilistik*), sehingga opsi yang mengandung kata mutlak wajib dihindari.\n- **Pola Setara (*Parallel Reasoning*):** Kunci keberhasilan terletak pada pencocokan struktur pola hubungan logika kalimatnya, bukan pada kesamaan topik atau bidang pembahasannya.\n- **Kelemahan Kritis:** Hubungan analogi akan runtuh apabila ditemukan perbedaan mendasar yang merusak kaitan sebab-akibat antara kedua hal yang sedang diperbandingkan.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Analogi yang rutin keluar pada naskah UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Prediksi Berbasis Analogi Fenomena\n\n> **Konteks Wacana:**  \n> Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni (*habitable zone*) bintang induknya, berkomposisi batuan silikat padat, dan menerima radiasi yang menjaga air tetap berfase cair. Di Bumi, kombinasi ketiga faktor ini memungkinkan terbentuknya siklus hidrologi yang stabil.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan penalaran analogi, simpulan yang paling mungkin benar adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Planet Kepler-186f pasti dihuni oleh makhluk hidup cerdas seperti di Bumi.  \n> - **B.** Planet Kepler-186f memiliki ukuran dan jumlah satelit alami yang persis sama dengan Bumi.  \n> - **C.** Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil.  \n> - **D.** Semua planet di luar tata surya yang berbatu padat memiliki air dalam fase cair.  \n> - **E.** Bumi dan Planet Kepler-186f terbentuk pada waktu yang bersamaan.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Hubungan Analogi:** Planet Bumi dan Kepler-186f memiliki tiga titik kesamaan fungsional yang krusial, yaitu berada pada zona laik huni, memiliki struktur batuan silikat padat, dan menerima intensitas radiasi yang menjaga air tetap cair. Pada Bumi, kombinasi faktor ini terbukti membentuk siklus hidrologi yang stabil. Secara penalaran analogi yang sah, akibat yang telah terbukti pada Bumi dapat ditransfer ke Kepler-186f dengan menggunakan derajat kemungkinan (*kemungkinan besar memiliki potensi yang serupa*).\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menyimpulkan hal yang melompat terlalu jauh, karena teks wacana hanya menguji kondisi batuan dan air, bukan keberadaan organisme makhluk hidup cerdas.\n  - **Pilihan B Salah:** Kesamaan posisi zona laik huni tidak serta-merta membuktikan adanya kesamaan ukuran fisik maupun jumlah satelit alami planet.\n  - **Pilihan D Salah:** Merupakan generalisasi yang berlebihan pada seluruh planet di alam semesta tanpa didasari oleh data pengamatan yang valid.\n  - **Pilihan E Salah:** Teks wacana tidak memuat data kronologi mengenai waktu pembentukan kedua planet tersebut.\n- **Penerapan Trik Cepat (15 Detik):** Perhatikan sifat yang sudah terbukti pada Bumi di bagian akhir wacana (*terbentuknya siklus hidrologi yang stabil*). Selanjutnya, carilah pilihan jawaban yang memindahkan sifat tersebut ke Kepler-186f dengan bahasa kemungkinan (*kemungkinan besar*). Anda dapat langsung mencoret opsi yang menggunakan kata mutlak seperti *pasti* atau *semua* pada pilihan A dan D. Dengan demikian, jawaban yang tepat adalah pilihan **C**.\n\n---\n\n### Variasi 2: Parallel Reasoning (Pola Penalaran Kembar)\n\n> **Konteks Wacana:**  \n> Melatih otot tubuh dengan beban yang ditingkatkan secara bertahap akan membuat serat otot beradaptasi dan menjadi lebih kuat. Sebaliknya, jika beban terlalu ekstrem sejak hari pertama, otot justru akan mengalami cedera. Demikian pula dalam mempelajari pemrograman komputer; memberikan latihan logika secara bertahap akan membangun pemahaman yang kokoh, sedangkan langsung memaksakan proyek berskala besar kepada pemula justru akan memicu kejenuhan dan kegagalan.  \n>  \n> **Pertanyaan UTBK:** *Manakah situasi di bawah ini yang menggunakan pola penalaran analogi paling serupa dengan teks di atas?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Membaca buku sejarah setiap hari akan memperluas wawasan seseorang, sama halnya dengan menonton film dokumenter sejarah di televisi.  \n> - **B.** Memberikan pupuk secara bertahap sesuai usia tanaman akan menyuburkan pertumbuhannya, sedangkan pemberian dosis berlebih sekaligus akan membuat tanaman mati; hal ini serupa dengan pemberian materi ajar kepada siswa yang harus disesuaikan tingkat kesulitannya secara bertahap agar tidak membuat siswa kewalahan.  \n> - **C.** Kendaraan listrik membutuhkan pengisian daya baterai secara rutin agar dapat beroperasi, berbeda dengan kendaraan bensin yang dapat diisi dalam waktu singkat di SPBU.  \n> - **D.** Seorang atlet lari maraton harus menjaga pola makan dan waktu tidur yang teratur agar staminanya terjaga saat perlombaan berlangsung.  \n> - **E.** Belajar bermain gitar membutuhkan latihan jari setiap hari, oleh karena itu semua musisi profesional pasti pernah mengalami sakit pada ujung jari mereka.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Pola Hubungan Logika:** Wacana menyandingkan dua ranah yang berbeda (pelatihan fisik otot dan pembelajaran kognitif pemrograman) menggunakan pola kontras dua sisi yang simetris: [Perlakuan bertahap menghasilkan adaptasi positif] berbanding terbalik dengan [Beban yang berlebihan memicu kerusakan atau kegagalan]. Pilihan B mereplikasi struktur rumus yang identik pada ranah pertanian dan pendidikan: [Pemberian pupuk bertahap menyuburkan tanaman, dosis berlebih mematikan] setara dengan [Pemberian materi ajar bertahap mempermudah pemahaman, materi drastis memicu kewalahan].\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Hanya membandingkan dua media penambah wawasan tanpa memiliki komponen kontras kegagalan akibat perlakuan berlebihan.\n  - **Pilihan C Salah:** Merupakan kalimat perbandingan kontras perbedaan cara kerja kendaraan, bukan penalaran analogi dua sistem yang setara.\n  - **Pilihan D Salah:** Hanya memaparkan penjelasan pada satu bidang tunggal mengenai tips kebugaran atlet tanpa menghadirkan objek analogi pembanding.\n  - **Pilihan E Salah:** Menyajikan simpulan induktif pada bidang musik tanpa membangun kerangka analogi perbandingan kembar.\n- **Penerapan Trik Cepat (15 Detik):** Rumuskan pola hubungan wacana secara ringkas di pikiran Anda: *Perlakuan bertahap berhasil, perlakuan berlebihan rusak*. Carilah pilihan jawaban yang menghadirkan perbandingan dua bidang berbeda dengan pola dua sisi yang sama persis. Anda akan langsung menemukan bahwa pilihan **B** memiliki struktur logika kembar yang sempurna.\n\n---\n\n### Variasi 3: Memperlemah Analogi / Critical Disanalogy (HOTS)\n\n> **Konteks Wacana:**  \n> Manajemen Perusahaan Ritel X berencana menerapkan sistem kerja 4 hari seminggu tanpa pemotongan gaji untuk meningkatkan produktivitas karyawan. Keputusan ini didasarkan pada keberhasilan Perusahaan Software Y yang mengalami kenaikan produktivitas sebesar 25% setelah menerapkan sistem kerja 4 hari seminggu karena kedua perusahaan memiliki jumlah karyawan yang sama (300 orang) dan berlokasi di kota metropolitan yang sama.  \n>  \n> **Pertanyaan UTBK:** *Manakah fakta di bawah ini yang paling memperlemah argumen analogi Manajemen Perusahaan Ritel X?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Perusahaan Software Y telah berdiri lima tahun lebih lama dibandingkan Perusahaan Ritel X.  \n> - **B.** Sebagian karyawan di Perusahaan Ritel X menggunakan transportasi umum untuk berangkat bekerja.  \n> - **C.** Produktivitas Perusahaan Software Y bergantung pada penyelesaian proyek berbasis output mingguan yang fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jam operasional toko fisik yang melayani pelanggan setiap hari.  \n> - **D.** Perusahaan Software Y memberikan fasilitas makan siang gratis kepada karyawannya, sedangkan Perusahaan Ritel X memberikan tunjangan makan dalam bentuk uang tunai.  \n> - **E.** Biaya sewa gedung kantor di kota metropolitan tersebut meningkat sebesar 10% pada tahun ini.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Titik Lemah Analogi (*Critical Disanalogy*):** Manajemen Perusahaan Ritel X menyamakan perusahaannya dengan Perusahaan Software Y hanya berdasarkan kemiripan luar, yaitu kesamaan jumlah karyawan dan lokasi kota. Padahal, faktor kunci keberhasilan sistem kerja 4 hari pada Perusahaan Software Y adalah model kerjanya yang berbasis penyelesaian output proyek mingguan yang fleksibel. Sebaliknya, pendapatan Perusahaan Ritel X bergantung secara mutlak pada kehadiran toko fisik yang buka melayani pelanggan setiap hari. Apabila toko ritel memangkas hari kerja, jam operasional layanan toko akan berkurang dan omzet penjualan akan langsung anjlok. Fakta pada pilihan C membongkar perbedaan cara kerja fundamental yang secara telak menggugurkan analogi kebijakan tersebut.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Perbedaan usia berdirinya perusahaan tidak memengaruhi kesesuaian penerapan skema hari kerja mingguan.\n  - **Pilihan B Salah:** Moda transportasi yang digunakan karyawan tidak berkaitan dengan model perusahaan dalam menghasilkan pendapatan.\n  - **Pilihan D Salah:** Bentuk tunjangan makan siang (makanan siap saji versus uang tunai) merupakan perbedaan fasilitas sepele yang tidak merusak analogi sistem kerja.\n  - **Pilihan E Salah:** Kenaikan biaya sewa gedung kantor dihadapi oleh kedua perusahaan di kota tersebut, sehingga tidak membedakan cara kerja operasional bisnis keduanya.\n- **Penerapan Trik Cepat (15 Detik):** Ajukan pertanyaan kritis: *\"Perbedaan mendasar apakah yang membuat sistem kerja di perusahaan teknologi mustahil diterapkan di toko ritel fisik?\"* Pilihlah opsi yang secara langsung mengungkap perbedaan model operasional dalam menghasilkan pendapatan. Fakta tersebut terdapat secara gamblang pada pilihan **C**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-01-02-analogy",
+        "title": "Matriks Pemetaan Analogi Induktif (Domain Sumber vs Domain Target)",
+        "caption": "Kesesuaian Fitur Esensial Menentukan Validitas Kesimpulan Analogi",
+        "svg_code": "<svg viewBox=\"0 0 640 215\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .anl-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .anl-box { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700; }\n      .anl-txt { font-family: system-ui, sans-serif; font-size: 10px; fill: #475569; }\n      :root.dark .anl-title { fill: #f8fafc; }\n      :root.dark .anl-txt { fill: #cbd5e1; }\n    </style>\n  </defs>\n\n  <rect x=\"15\" y=\"10\" width=\"610\" height=\"195\" rx=\"16\" fill=\"rgba(79, 70, 229, 0.04)\" stroke=\"rgba(79, 70, 229, 0.2)\" stroke-width=\"1.5\"/>\n  <text x=\"320\" y=\"30\" class=\"anl-title\">MATRIKS PEMETAAN ANALOGI INDUKTIF</text>\n\n  <!-- Left: Domain Sumber -->\n  <g transform=\"translate(35, 45)\">\n    <rect width=\"240\" height=\"145\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.5\"/>\n    <text x=\"120\" y=\"24\" fill=\"#312e81\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">DOMAIN SUMBER (A)</text>\n    <text x=\"20\" y=\"52\" fill=\"#3730a3\" class=\"anl-box\">• Fitur 1: Memiliki sifat P</text>\n    <text x=\"20\" y=\"74\" fill=\"#3730a3\" class=\"anl-box\">• Fitur 2: Menghadapi kondisi Q</text>\n    <text x=\"20\" y=\"96\" fill=\"#3730a3\" class=\"anl-box\">• Fitur 3: Pola interaksi R</text>\n    <rect x=\"15\" y=\"108\" width=\"210\" height=\"26\" rx=\"6\" fill=\"#4338ca\"/>\n    <text x=\"120\" y=\"125\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">Konsekuensi Terbukti: Hasil X</text>\n  </g>\n\n  <!-- Middle Mapping Bridge -->\n  <g transform=\"translate(285, 85)\">\n    <line x1=\"5\" y1=\"20\" x2=\"60\" y2=\"20\" stroke=\"#4f46e5\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/>\n    <polygon points=\"65,20 57,15 57,25\" fill=\"#4f46e5\"/>\n    <text x=\"35\" y=\"12\" fill=\"#4f46e5\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">Transfer</text>\n    <text x=\"35\" y=\"38\" fill=\"#4f46e5\" font-family=\"system-ui, sans-serif\" font-size=\"9\" text-anchor=\"middle\">Fitur Esensial</text>\n  </g>\n\n  <!-- Right: Domain Target -->\n  <g transform=\"translate(365, 45)\">\n    <rect width=\"240\" height=\"145\" rx=\"10\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"1.5\"/>\n    <text x=\"120\" y=\"24\" fill=\"#064e3b\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">DOMAIN TARGET (B)</text>\n    <text x=\"20\" y=\"52\" fill=\"#065f46\" class=\"anl-box\">• Fitur 1: Memiliki sifat P' (Mirip)</text>\n    <text x=\"20\" y=\"74\" fill=\"#065f46\" class=\"anl-box\">• Fitur 2: Menghadapi kondisi Q' (Mirip)</text>\n    <text x=\"20\" y=\"96\" fill=\"#065f46\" class=\"anl-box\">• Fitur 3: Pola interaksi R' (Mirip)</text>\n    <rect x=\"15\" y=\"108\" width=\"210\" height=\"26\" rx=\"6\" fill=\"#059669\"/>\n    <text x=\"120\" y=\"125\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">Prediksi Analogi: Hasil X' (Valid)</text>\n  </g>\n</svg>"
+      }
     ],
-    quick_execution_algorithm: [
-      'Identifikasi sifat dasar bersama antara dua entitas yang sedang diperbandingkan.',
-      'Cari sifat simpulan yang ingin ditransfer ke entitas kedua.',
-      'Periksa apakah ada perbedaan kritis (critical disanalogy) yang merusak hubungan kausal.',
-      'Untuk soal Parallel Reasoning, abaikan topik dan cocokkan kerangka logika sebab-akibatnya.',
+    "distractor_traps": [
+      "False Analogy (Analogi Palsu/Dangkal): Membandingkan dua objek hanya karena kemiripan permukaan atau kemiripan nama, padahal mekanisme dasarnya bertolak belakang.",
+      "Mengabaikan Perbedaan Kritis (Critical Disanalogy): Jika terdapat satu perbedaan faktor krusial antara dua objek yang justru menjadi penyebab hasil yang berbeda, maka analogi langsung gugur.",
+      "Jebakan Kesamaan Topik Semu: Memilih opsi hanya karena sama-sama membahas bidang yang mirip (misal sains atau teknologi), padahal pola struktur penalarannya tidak sepadan."
     ],
+    "quick_execution_algorithm": [
+      "Identifikasi sifat dasar bersama antara dua entitas yang sedang diperbandingkan.",
+      "Cari sifat simpulan yang ingin ditransfer ke entitas kedua.",
+      "Periksa apakah ada perbedaan kritis (critical disanalogy) yang merusak hubungan kausal.",
+      "Untuk soal Parallel Reasoning, abaikan topik dan cocokkan kerangka logika sebab-akibatnya."
+    ]
   },
-  worked_examples: [
+  "worked_examples": [
     {
-      example_id: 'pu-01-02-ex1',
-      variation_name: 'Variasi 1: Prediksi Berbasis Analogi Fenomena (Level: Mudah)',
-      difficulty: 'easy',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni (*habitable zone*) bintang induknya, memiliki komposisi batuan silikat yang padat, serta menerima intensitas radiasi bintang yang memungkinkan air tetap berada dalam fase cair di permukaan. Di Bumi, kombinasi ketiga kondisi tersebut memungkinkan terbentuknya siklus hidrologi yang stabil.',
-      question_markdown:
-        'Berdasarkan penalaran analogi, simpulan yang **paling mungkin benar** adalah...',
-      options: [
+      "example_id": "pu-01-02-ex1",
+      "variation_name": "Variasi 1: Prediksi Berbasis Analogi Fenomena (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Planet Kepler-186f dan Bumi sama-sama berada di zona laik huni (*habitable zone*) bintang induknya, memiliki komposisi batuan silikat yang padat, serta menerima intensitas radiasi bintang yang memungkinkan air tetap berada dalam fase cair di permukaan. Di Bumi, kombinasi ketiga kondisi tersebut memungkinkan terbentuknya siklus hidrologi yang stabil.",
+      "question_markdown": "Berdasarkan penalaran analogi, simpulan yang **paling mungkin benar** adalah...",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Planet Kepler-186f pasti dihuni oleh makhluk hidup cerdas seperti di Bumi.',
+          "key": "A",
+          "text_markdown": "Planet Kepler-186f pasti dihuni oleh makhluk hidup cerdas seperti di Bumi."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Planet Kepler-186f memiliki ukuran dan jumlah satelit alami yang persis sama dengan Bumi.',
+          "key": "B",
+          "text_markdown": "Planet Kepler-186f memiliki ukuran dan jumlah satelit alami yang persis sama dengan Bumi."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil.',
+          "key": "C",
+          "text_markdown": "Planet Kepler-186f kemungkinan besar juga memiliki potensi terbentuknya siklus hidrologi yang stabil."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Semua planet di luar tata surya yang berbatu padat memiliki air dalam fase cair.',
+          "key": "D",
+          "text_markdown": "Semua planet di luar tata surya yang berbatu padat memiliki air dalam fase cair."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Bumi dan Planet Kepler-186f terbentuk pada waktu yang bersamaan.',
-        },
+          "key": "E",
+          "text_markdown": "Bumi dan Planet Kepler-186f terbentuk pada waktu yang bersamaan."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Cari kesamaan antara Bumi dan Kepler-186f (zona laik huni, batuan padat, air cair). Di Bumi, kondisi ini menghasilkan siklus hidrologi stabil. Kesimpulan analogi yang sah harus memprediksi sifat yang sama untuk Kepler-186f secara probabilistik (*"kemungkinan besar"*), bukan kepastian mutlak!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Objek Pertama (Bumi):** Memiliki kombinasi faktor zona laik huni, batuan silikat padat, dan radiasi pendukung air cair yang terbukti menghasilkan siklus hidrologi yang stabil.
-- **Objek Kedua (Kepler-186f):** Memiliki ketiga faktor esensial yang serupa dengan Bumi.
-- **Simpulan Analogi:** Berdasarkan kesamaan fungsional tersebut, Kepler-186f kemungkinan besar juga memiliki potensi untuk membentuk siklus hidrologi yang stabil.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Pasangkan Sifat Terbukti dengan Kata Probabilitas):**
-
-1. Temukan sifat penting yang telah terbukti pada Bumi di bagian akhir wacana, yaitu terbentuknya siklus hidrologi yang stabil.
-2. Cari pilihan jawaban yang memindahkan sifat tersebut ke Kepler-186f dengan menggunakan kata probabilitas (*kemungkinan besar*).
-3. Coret pilihan yang menggunakan kata mutlak seperti *pasti* atau *semua*.
-4. Jawaban yang tepat langsung terlihat pada pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Kesimpulan ini melompat terlalu jauh dengan mengklaim keberadaan makhluk hidup cerdas yang sama sekali tidak dibahas di dalam wacana.
-- **Pilihan B Salah:** Kesamaan zona laik huni tidak menyiratkan adanya kesamaan ukuran planet maupun jumlah satelit alami.
-- **Pilihan D Salah:** Merupakan generalisasi berlebihan yang memukul rata seluruh planet berbatu padat di alam semesta.
-- **Pilihan E Salah:** Wacana tidak memuat informasi kronologis mengenai waktu pembentukan kedua planet tersebut.`,
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cari kesamaan antara Bumi dan Kepler-186f (zona laik huni, batuan padat, air cair). Di Bumi, kondisi ini menghasilkan siklus hidrologi stabil. Kesimpulan analogi yang sah harus memprediksi sifat yang sama untuk Kepler-186f secara probabilistik (*\"kemungkinan besar\"*), bukan kepastian mutlak!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Objek Pertama (Bumi):** Memiliki kombinasi faktor zona laik huni, batuan silikat padat, dan radiasi pendukung air cair yang terbukti menghasilkan siklus hidrologi yang stabil.\n- **Objek Kedua (Kepler-186f):** Memiliki ketiga faktor esensial yang serupa dengan Bumi.\n- **Simpulan Analogi:** Berdasarkan kesamaan fungsional tersebut, Kepler-186f kemungkinan besar juga memiliki potensi untuk membentuk siklus hidrologi yang stabil.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Pasangkan Sifat Terbukti dengan Kata Probabilitas):**\n\n1. Temukan sifat penting yang telah terbukti pada Bumi di bagian akhir wacana, yaitu terbentuknya siklus hidrologi yang stabil.\n2. Cari pilihan jawaban yang memindahkan sifat tersebut ke Kepler-186f dengan menggunakan kata probabilitas (*kemungkinan besar*).\n3. Coret pilihan yang menggunakan kata mutlak seperti *pasti* atau *semua*.\n4. Jawaban yang tepat langsung terlihat pada pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kesimpulan ini melompat terlalu jauh dengan mengklaim keberadaan makhluk hidup cerdas yang sama sekali tidak dibahas di dalam wacana.\n- **Pilihan B Salah:** Kesamaan zona laik huni tidak menyiratkan adanya kesamaan ukuran planet maupun jumlah satelit alami.\n- **Pilihan D Salah:** Merupakan generalisasi berlebihan yang memukul rata seluruh planet berbatu padat di alam semesta.\n- **Pilihan E Salah:** Wacana tidak memuat informasi kronologis mengenai waktu pembentukan kedua planet tersebut."
     },
     {
-      example_id: 'pu-01-02-ex2',
-      variation_name: 'Variasi 2: Parallel Reasoning / Pola Penalaran Setara (Level: Sedang)',
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      context_markdown: `Perhatikan argumen berikut:
-
-*"Melatih otot tubuh dengan beban yang ditingkatkan secara bertahap akan membuat serat otot beradaptasi dan menjadi lebih kuat. Sebaliknya, jika beban terlalu ekstrem sejak hari pertama, otot justru akan mengalami cedera. Demikian pula dalam mempelajari pemrograman komputer; memberikan latihan logika secara bertahap akan membangun pemahaman yang kokoh, sedangkan langsung memaksakan proyek berskala besar kepada pemula justru akan memicu kejenuhan dan kegagalan."*`,
-      question_markdown:
-        'Manakah situasi di bawah ini yang menggunakan **pola penalaran analogi paling serupa** dengan teks di atas?',
-      options: [
+      "example_id": "pu-01-02-ex2",
+      "variation_name": "Variasi 2: Parallel Reasoning / Pola Penalaran Setara (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan argumen berikut:\n\n*\"Melatih otot tubuh dengan beban yang ditingkatkan secara bertahap akan membuat serat otot beradaptasi dan menjadi lebih kuat. Sebaliknya, jika beban terlalu ekstrem sejak hari pertama, otot justru akan mengalami cedera. Demikian pula dalam mempelajari pemrograman komputer; memberikan latihan logika secara bertahap akan membangun pemahaman yang kokoh, sedangkan langsung memaksakan proyek berskala besar kepada pemula justru akan memicu kejenuhan dan kegagalan.\"*",
+      "question_markdown": "Manakah situasi di bawah ini yang menggunakan **pola penalaran analogi paling serupa** dengan teks di atas?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Membaca buku sejarah setiap hari akan memperluas wawasan seseorang, sama halnya dengan menonton film dokumenter sejarah di televisi.',
+          "key": "A",
+          "text_markdown": "Membaca buku sejarah setiap hari akan memperluas wawasan seseorang, sama halnya dengan menonton film dokumenter sejarah di televisi."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Memberikan pupuk secara bertahap sesuai usia tanaman akan menyuburkan pertumbuhannya, sedangkan pemberian dosis berlebih sekaligus akan membuat tanaman mati; hal ini serupa dengan pemberian materi ajar kepada siswa yang harus disesuaikan tingkat kesulitannya secara bertahap agar tidak membuat siswa kewalahan.',
+          "key": "B",
+          "text_markdown": "Memberikan pupuk secara bertahap sesuai usia tanaman akan menyuburkan pertumbuhannya, sedangkan pemberian dosis berlebih sekaligus akan membuat tanaman mati; hal ini serupa dengan pemberian materi ajar kepada siswa yang harus disesuaikan tingkat kesulitannya secara bertahap agar tidak membuat siswa kewalahan."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Kendaraan listrik membutuhkan pengisian daya baterai secara rutin agar dapat beroperasi, berbeda dengan kendaraan bensin yang dapat diisi dalam waktu singkat di SPBU.',
+          "key": "C",
+          "text_markdown": "Kendaraan listrik membutuhkan pengisian daya baterai secara rutin agar dapat beroperasi, berbeda dengan kendaraan bensin yang dapat diisi dalam waktu singkat di SPBU."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Seorang atlet lari maraton harus menjaga pola makan dan waktu tidur yang teratur agar staminanya terjaga saat perlombaan berlangsung.',
+          "key": "D",
+          "text_markdown": "Seorang atlet lari maraton harus menjaga pola makan dan waktu tidur yang teratur agar staminanya terjaga saat perlombaan berlangsung."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Belajar bermain gitar membutuhkan latihan jari setiap hari, oleh karena itu semua musisi profesional pasti pernah mengalami sakit pada ujung jari mereka.',
-        },
+          "key": "E",
+          "text_markdown": "Belajar bermain gitar membutuhkan latihan jari setiap hari, oleh karena itu semua musisi profesional pasti pernah mengalami sakit pada ujung jari mereka."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Teks membandingkan dua perlakuan: perlakuan bertahap menghasilkan adaptasi/kekuatan positif, sedangkan beban berlebih sekaligus memicu cedera/kegagalan. Cari opsi pilihan ganda yang juga menyajikan dua perbandingan serupa (bertahap membawa kebaikan, berlebihan memicu kerusakan)!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Struktur Argumen Asli:** Membandingkan dua bidang yang berbeda (latihan fisik otot vs pembelajaran kognitif pemrograman) dengan pola kontras dua sisi yang simetris:
-  - Perlakuan bertahap menghasilkan adaptasi dan dampak positif.
-  - Perlakuan berlebihan memicu cedera atau kegagalan.
-- **Evaluasi Opsi Pilihan Ganda:** Hanya pilihan **B** yang mereplikasi rumus struktur simetris tersebut pada bidang pertanian dan pendidikan: perlakuan pupuk bertahap menyuburkan tanaman dan dosis berlebih mematikan tanaman, setara dengan materi bertahap membangun pemahaman dan materi drastis memicu siswa kewalahan.
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Pencocokan Rumus Kontras Dua Sisi):**
-
-1. Identifikasi rumus kontras pada wacana: [Perlakuan bertahap menghasilkan keberhasilan] berbanding terbalik dengan [Perlakuan berlebihan memicu kegagalan].
-2. Periksa pilihan ganda: pilihan **B** memiliki struktur kontras dua sisi yang persis sama pada bidang pertanian dan pendidikan.
-3. Pilihan **A**, **C**, **D**, dan **E** tidak memiliki struktur perbandingan dua sisi yang setara.
-4. Jawaban yang tepat adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Hanya membandingkan dua media pembelajaran tanpa memiliki komponen kontras kegagalan akibat perlakuan berlebihan.
-- **Pilihan C Salah:** Merupakan kalimat perbedaan kontras antara dua jenis kendaraan, bukan penalaran analogi dua sistem yang setara.
-- **Pilihan D Salah:** Hanya membahas satu bidang tunggal mengenai tips kebugaran atlet tanpa menghadirkan objek analogi pembanding.
-- **Pilihan E Salah:** Menyajikan kesimpulan induktif pada bidang musik tanpa membangun kerangka perbandingan dua bidang yang setara.`,
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Teks membandingkan dua perlakuan: perlakuan bertahap menghasilkan adaptasi/kekuatan positif, sedangkan beban berlebih sekaligus memicu cedera/kegagalan. Cari opsi pilihan ganda yang juga menyajikan dua perbandingan serupa (bertahap membawa kebaikan, berlebihan memicu kerusakan)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Argumen Asli:** Membandingkan dua bidang yang berbeda (latihan fisik otot vs pembelajaran kognitif pemrograman) dengan pola kontras dua sisi yang simetris:\n  - Perlakuan bertahap menghasilkan adaptasi dan dampak positif.\n  - Perlakuan berlebihan memicu cedera atau kegagalan.\n- **Evaluasi Opsi Pilihan Ganda:** Hanya pilihan **B** yang mereplikasi rumus struktur simetris tersebut pada bidang pertanian dan pendidikan: perlakuan pupuk bertahap menyuburkan tanaman dan dosis berlebih mematikan tanaman, setara dengan materi bertahap membangun pemahaman dan materi drastis memicu siswa kewalahan.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Pencocokan Rumus Kontras Dua Sisi):**\n\n1. Identifikasi rumus kontras pada wacana: [Perlakuan bertahap menghasilkan keberhasilan] berbanding terbalik dengan [Perlakuan berlebihan memicu kegagalan].\n2. Periksa pilihan ganda: pilihan **B** memiliki struktur kontras dua sisi yang persis sama pada bidang pertanian dan pendidikan.\n3. Pilihan **A**, **C**, **D**, dan **E** tidak memiliki struktur perbandingan dua sisi yang setara.\n4. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Hanya membandingkan dua media pembelajaran tanpa memiliki komponen kontras kegagalan akibat perlakuan berlebihan.\n- **Pilihan C Salah:** Merupakan kalimat perbedaan kontras antara dua jenis kendaraan, bukan penalaran analogi dua sistem yang setara.\n- **Pilihan D Salah:** Hanya membahas satu bidang tunggal mengenai tips kebugaran atlet tanpa menghadirkan objek analogi pembanding.\n- **Pilihan E Salah:** Menyajikan kesimpulan induktif pada bidang musik tanpa membangun kerangka perbandingan dua bidang yang setara."
     },
     {
-      example_id: 'pu-01-02-ex3',
-      variation_name: 'Variasi 3: Memperlemah Analogi / Critical Disanalogy (Level: Sulit)',
-      difficulty: 'hard',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Manajemen Perusahaan Ritel X berencana menerapkan sistem kerja 4 hari seminggu tanpa pemotongan gaji untuk meningkatkan produktivitas karyawan. Keputusan ini didasarkan pada keberhasilan Perusahaan Software Y yang mengalami kenaikan produktivitas sebesar 25% setelah menerapkan sistem kerja 4 hari seminggu karena kedua perusahaan memiliki jumlah karyawan yang sama (300 orang) dan berlokasi di kota metropolitan yang sama.',
-      question_markdown:
-        'Manakah fakta di bawah ini yang, jika benar, **paling memperlemah** argumen analogi Manajemen Perusahaan Ritel X?',
-      options: [
+      "example_id": "pu-01-02-ex3",
+      "variation_name": "Variasi 3: Memperlemah Analogi / Critical Disanalogy (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Manajemen Perusahaan Ritel X berencana menerapkan sistem kerja 4 hari seminggu tanpa pemotongan gaji untuk meningkatkan produktivitas karyawan. Keputusan ini didasarkan pada keberhasilan Perusahaan Software Y yang mengalami kenaikan produktivitas sebesar 25% setelah menerapkan sistem kerja 4 hari seminggu karena kedua perusahaan memiliki jumlah karyawan yang sama (300 orang) dan berlokasi di kota metropolitan yang sama.",
+      "question_markdown": "Manakah fakta di bawah ini yang, jika benar, **paling memperlemah** argumen analogi Manajemen Perusahaan Ritel X?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Perusahaan Software Y telah berdiri lima tahun lebih lama dibandingkan Perusahaan Ritel X.',
+          "key": "A",
+          "text_markdown": "Perusahaan Software Y telah berdiri lima tahun lebih lama dibandingkan Perusahaan Ritel X."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Sebagian karyawan di Perusahaan Ritel X menggunakan transportasi umum untuk berangkat bekerja.',
+          "key": "B",
+          "text_markdown": "Sebagian karyawan di Perusahaan Ritel X menggunakan transportasi umum untuk berangkat bekerja."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Produktivitas Perusahaan Software Y bergantung pada penyelesaian proyek berbasis output mingguan yang fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jumlah jam operasional toko fisik yang melayani pelanggan setiap hari.',
+          "key": "C",
+          "text_markdown": "Produktivitas Perusahaan Software Y bergantung pada penyelesaian proyek berbasis output mingguan yang fleksibel, sedangkan pendapatan Perusahaan Ritel X bergantung langsung pada jumlah jam operasional toko fisik yang melayani pelanggan setiap hari."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Perusahaan Software Y memberikan fasilitas makan siang gratis kepada karyawannya, sedangkan Perusahaan Ritel X memberikan tunjangan makan dalam bentuk uang tunai.',
+          "key": "D",
+          "text_markdown": "Perusahaan Software Y memberikan fasilitas makan siang gratis kepada karyawannya, sedangkan Perusahaan Ritel X memberikan tunjangan makan dalam bentuk uang tunai."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Biaya sewa gedung kantor di kota metropolitan tersebut meningkat sebesar 10% pada tahun ini.',
-        },
+          "key": "E",
+          "text_markdown": "Biaya sewa gedung kantor di kota metropolitan tersebut meningkat sebesar 10% pada tahun ini."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Untuk mematahkan argumen analogi antara Perusahaan Ritel (toko fisik) dan Software, temukan perbedaan mendasar pada sistem kerja keduanya. Perusahaan software bisa bekerja dengan target proyek yang fleksibel, sedangkan toko ritel sangat bergantung pada jam operasional toko fisik melayani pembeli setiap hari!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Tujuan Soal:** Untuk memperlemah penalaran analogi, kita perlu menemukan **perbedaan kritis (*critical disanalogy*)** yang merusak hubungan kausal antara titik kesamaan dengan keberhasilan kebijakan.
-- **Analisis Kausal:** Keberhasilan sistem kerja di Perusahaan Software Y didorong oleh model kerja berbasis output proyek yang fleksibel tanpa keterikatan jam layanan langsung. Sebaliknya, pendapatan Perusahaan Ritel X bergantung secara mutlak pada jam operasional toko fisik yang melayani pembeli secara langsung setiap hari. Apabila toko ritel memangkas hari kerja, jam operasional layanan toko akan berkurang dan pendapatan bisnis langsung turun. Perbedaan esensial ini mematahkan analogi kebijakan manajemen.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Cari Perbedaan Kritis Mekanisme Pendapatan):**
-
-1. Tanyakan pada diri Anda: perbedaan apa yang menyebabkan sistem kerja empat hari di perusahaan perangkat lunak mustahil ditiru oleh toko ritel fisik?
-2. Hanya pilihan **C** yang secara langsung mengungkap perbedaan cara kerja operasional: perusahaan perangkat lunak berbasis proyek mingguan yang fleksibel, sedangkan toko ritel fisik bergantung pada jam buka toko setiap hari.
-3. Jawaban yang tepat adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Perbedaan usia berdirinya perusahaan tidak memengaruhi efektivitas penerapan sistem empat hari kerja mingguan.
-- **Pilihan B Salah:** Moda transportasi yang digunakan karyawan tidak berkaitan dengan cara perusahaan menghasilkan produktivitas.
-- **Pilihan D Salah:** Bentuk penyediaan fasilitas makan siang merupakan detail sepele yang tidak membatalkan analogi sistem kerja.
-- **Pilihan E Salah:** Kenaikan biaya sewa gedung kantor dihadapi oleh kedua perusahaan sehingga tidak membedakan cara kerja operasional keduanya.`,
-    },
-  ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk mematahkan argumen analogi antara Perusahaan Ritel (toko fisik) dan Software, temukan perbedaan mendasar pada sistem kerja keduanya. Perusahaan software bisa bekerja dengan target proyek yang fleksibel, sedangkan toko ritel sangat bergantung pada jam operasional toko fisik melayani pembeli setiap hari!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tujuan Soal:** Untuk memperlemah penalaran analogi, kita perlu menemukan **perbedaan kritis (*critical disanalogy*)** yang merusak hubungan kausal antara titik kesamaan dengan keberhasilan kebijakan.\n- **Analisis Kausal:** Keberhasilan sistem kerja di Perusahaan Software Y didorong oleh model kerja berbasis output proyek yang fleksibel tanpa keterikatan jam layanan langsung. Sebaliknya, pendapatan Perusahaan Ritel X bergantung secara mutlak pada jam operasional toko fisik yang melayani pembeli secara langsung setiap hari. Apabila toko ritel memangkas hari kerja, jam operasional layanan toko akan berkurang dan pendapatan bisnis langsung turun. Perbedaan esensial ini mematahkan analogi kebijakan manajemen.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Perbedaan Kritis Mekanisme Pendapatan):**\n\n1. Tanyakan pada diri Anda: perbedaan apa yang menyebabkan sistem kerja empat hari di perusahaan perangkat lunak mustahil ditiru oleh toko ritel fisik?\n2. Hanya pilihan **C** yang secara langsung mengungkap perbedaan cara kerja operasional: perusahaan perangkat lunak berbasis proyek mingguan yang fleksibel, sedangkan toko ritel fisik bergantung pada jam buka toko setiap hari.\n3. Jawaban yang tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Perbedaan usia berdirinya perusahaan tidak memengaruhi efektivitas penerapan sistem empat hari kerja mingguan.\n- **Pilihan B Salah:** Moda transportasi yang digunakan karyawan tidak berkaitan dengan cara perusahaan menghasilkan produktivitas.\n- **Pilihan D Salah:** Bentuk penyediaan fasilitas makan siang merupakan detail sepele yang tidak membatalkan analogi sistem kerja.\n- **Pilihan E Salah:** Kenaikan biaya sewa gedung kantor dihadapi oleh kedua perusahaan sehingga tidak membedakan cara kerja operasional keduanya."
+    }
+  ]
 };
 
 const MATERIAL_PU_01_03 = {
-  metadata: {
-    id: 'pu-1-3',
-    subtest: 'PU',
-    chapter_num: 1,
-    chapter_title: 'Penalaran Induktif',
-    subchapter_num: '1.3',
-    subchapter_title: 'Hubungan Kausalitas (Sebab-Akibat)',
-    title: 'Hubungan Kausalitas (Sebab-Akibat)',
-    required_question_variations: [
-      'Penentuan Arah Hubungan Kausal (Sebab-Akibat)',
-      'Kekeliruan Korelasi Semu & Variabel Perancu',
-      'Evaluasi Validitas Klaim Sebab-Akibat (HOTS)',
+  "metadata": {
+    "id": "pu-1-3",
+    "subtest": "PU",
+    "chapter_num": 1,
+    "chapter_title": "Penalaran Induktif",
+    "subchapter_num": "1.3",
+    "subchapter_title": "Hubungan Kausalitas (Sebab-Akibat)",
+    "title": "Hubungan Kausalitas (Sebab-Akibat)",
+    "required_question_variations": [
+      "Penentuan Arah Hubungan Kausal (Sebab-Akibat)",
+      "Kekeliruan Korelasi Semu & Variabel Perancu",
+      "Evaluasi Validitas Klaim Sebab-Akibat (HOTS)"
     ],
-    requires_svg: false,
-    updated_at: '2026-11-07',
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
   },
-  content: {
-    tactical_overview:
-      'Hubungan kausalitas menguji kemampuan Anda dalam mengidentifikasi pemicu (sebab) dan dampak (akibat) yang saling terikat secara mekanisme rasional, bukan sekadar urutan waktu atau korelasi kebetulan. Kunci utama dalam menyelesaikan soal kausalitas UTBK adalah melakukan uji sambung "Karena... Maka...", membedakan korelasi semu dari kausalitas sejati, mewaspadai keberadaan variabel perancu (faktor ketiga), serta mencari penyebab alternatif ketika mengevaluasi kelemahan suatu klaim sebab-akibat.',
-    exam_blueprint_markdown: `# 1. Prinsip Dasar
-
-Penalaran kausalitas (sebab-akibat) adalah metode berpikir untuk menentukan apakah suatu kondisi atau peristiwa merupakan pemicu langsung yang melahirkan kondisi lainnya. Di dalam ujian UTBK SNBT, soal penalaran umum jenis ini dirancang untuk menguji kecermatan Anda dalam membedakan hubungan sebab-akibat sejati (*true causation*) dari sekadar urutan kronologis atau korelasi semu (*spurious correlation*).
-
-Tiga kaidah pokok hubungan kausalitas yang wajib Anda kuasai adalah sebagai berikut:
-1. **Kausalitas Memerlukan Mekanisme Rasional, Bukan Sekadar Korelasi (*Correlation is Not Causation*)**  
-   Dua peristiwa yang terjadi secara bersamaan atau memiliki arah grafik angka yang searah tidak otomatis saling menyebabkan. Kausalitas yang sah menuntut adanya mekanisme alur kerja sebab-akibat yang nyata dan dapat dipertanggungjawabkan secara logis. Sering kali, dua gejala yang muncul berbarengan ternyata sama sekali tidak saling memengaruhi, melainkan keduanya lahir dari satu penyebab bersama (*common cause*) yang tidak tertulis secara eksplisit.
-2. **Urutan Waktu Wajib Konsisten (*Temporal Precedence*)**  
-   Penyebab harus selalu terjadi mendahului atau berbarengan dengan munculnya akibat, dan akibat tidak pernah mendahului sebab. Namun perlu diingat: urutan waktu semata belum cukup membuktikan hubungan sebab-akibat. Apabila peristiwa B terjadi setelah peristiwa A, Anda tidak boleh langsung menyimpulkan bahwa A adalah penyebab B tanpa adanya pembuktian alur hubungan yang masuk akal (*post hoc fallacy*).
-3. **Pola Hubungan Antarpernyataan pada Soal UTBK**  
-   Pada tipe soal kausalitas yang menyajikan dua pernyataan bernomor (1) dan (2), terdapat empat pola relasi logika yang lazim diuji:
-   - *Pola Sebab-Akibat:* Pernyataan (1) adalah pemicu langsung dan pernyataan (2) adalah dampak yang dihasilkan, atau sebaliknya.
-   - *Pola Akibat dari Satu Penyebab Bersama:* Pernyataan (1) dan (2) sama-sama merupakan akibat yang dipicu oleh satu faktor akar yang identik.
-   - *Pola Akibat dari Dua Penyebab Berbeda:* Pernyataan (1) dan (2) merupakan akibat dari dua kondisi pemicu yang berdiri sendiri-sendiri tanpa keterkaitan satu sama lain.
-   - *Pola Sebab Mandiri:* Pernyataan (1) dan (2) masing-masing adalah penyebab independen yang memicu masalah berbeda.
-
----
-
-# 2. Jebakan Pengecoh Khas UTBK
-
-Pembuat soal UTBK kerap merancang opsi jawaban yang memanfaatkan kekeliruan berpikir (*logical fallacies*) yang sering dilakukan siswa dalam kehidupan sehari-hari. Tiga jebakan utama yang paling sering muncul meliputi:
-1. **Jebakan Urutan Waktu Dianggap Kausalitas (*Post Hoc Ergo Propter Hoc*)**  
-   Pilihan jawaban menyimpulkan bahwa karena peristiwa B terjadi beberapa saat setelah peristiwa A, maka peristiwa A pasti merupakan penyebab timbulnya B. Padahal, urutan kronologis tersebut hanyalah kebetulan waktu tanpa memiliki mata rantai hubungan sebab-akibat langsung.
-2. **Jebakan Mengabaikan Variabel Perancu (*Confounding Variable / Common Cause*)**  
-   Pilihan jawaban menghubungkan dua gejala secara langsung sebagai sebab dan akibat, padahal kedua gejala tersebut sesungguhnya sama-sama dipicu oleh faktor ketiga. Sebagai contoh, meningkatnya penjualan payung dan meningkatnya penjualan jas hujan bukan berarti payung menyebabkan pembelian jas hujan, melainkan keduanya sama-sama akibat dari cuaca musim hujan.
-3. **Jebakan Pembalikan Arah Kausalitas (*Reverse Causality*)**  
-   Pilihan jawaban menukar posisi antara dampak dan pemicu. Kalimat yang semestinya merupakan akibat justru diartikan sebagai faktor penyebab, atau sebaliknya, sehingga memutarbalikkan logika alur wacana yang sesungguhnya.
-
----
-
-# 3. Trik Cepat (15 Detik)
-
-Saat menghadapi soal kausalitas di ruang ujian UTBK dengan batas waktu yang ketat, terapkan alur eksekusi taktis berikut:
-1. **Terapkan Uji Sambung Kata *"Karena... Maka..."***  
-   Pasangkan kedua pernyataan dengan kata penghubung: *"Karena [Pernyataan 1], maka wajar jika [Pernyataan 2]"* dan balikkan menjadi *"Karena [Pernyataan 2], maka wajar jika [Pernyataan 1]"*. Alur yang mengalir lancar dan masuk akal secara kaidah dunia nyata langsung menunjukkan siapa yang berkedudukan sebagai penyebab dan siapa yang menjadi akibat.
-2. **Lacak Indikasi Gejala Bersama (*Common Factor*)**  
-   Jika kedua pernyataan sama-sama bernada dampak negatif (misalnya: gagal panen dan sumur warga mengering) atau keduanya sama-sama dampak positif tanpa ada hubungan sebab-akibat langsung di antara keduanya, segera simpulkan bahwa keduanya adalah akibat dari satu faktor penyebab bersama (dalam contoh ini: kemarau panjang).
-3. **Cari Penyebab Alternatif untuk Soal Evaluasi / Memperlemah (HOTS)**  
-   Pada soal yang menanyakan fakta yang paling memperlemah kesimpulan kausalitas seseorang di dalam teks, carilah pilihan jawaban yang membongkar adanya **faktor penyebab lain yang jauh lebih masuk akal dan dominan** yang terjadi pada saat yang bersamaan.
-
----
-
-# 4. Kesimpulan
-
-- **Hakikat Materi:** Hubungan kausalitas menguji ada atau tidaknya keterikatan langsung antara aksi pemicu (*sebab*) dengan dampak nyata yang ditimbulkan (*akibat*).
-- **Korelasi Bukan Kausalitas:** Adanya kesamaan tren atau peristiwa yang terjadi berdekatan tidak boleh disimpulkan memiliki relasi sebab-akibat tanpa pembuktian mekanisme yang valid.
-- **Pola Klasik:** Hubungan antarpernyataan di UTBK umumnya berpusat pada penentuan arah sebab → akibat, akibat → sebab, atau akibat dari faktor bersama.
-- **Strategi Menjawab:** Gunakan uji sambung *"karena... maka..."*, eliminasi opsi yang terjebak pada urutan waktu semata, dan curigai kehadiran variabel ketiga perancu.
-
----
-
-# 5. Bedah Soal dan Variasi UTBK
-
-Berikut adalah bedah tiga variasi soal Hubungan Kausalitas yang paling sering keluar di UTBK SNBT, lengkap dengan wacana konteks, opsi pilihan ganda A–E utuh, kunci jawaban, dan pembahasan logika terperinci:
-
-### Variasi 1: Penentuan Arah Hubungan Kausal (Tipe Sebab-Akibat Dua Pernyataan)
-
-> **Konteks Wacana Soal:**  
-> Perhatikan dua kondisi peristiwa berikut ini:  
-> (1) Curah hujan dengan intensitas ekstrem mengguyur wilayah hulu pegunungan selama tiga hari berturut-turut tanpa jeda.  
-> (2) Sejumlah pemukiman warga di kawasan bantaran sungai hilir terendam luapan banjir dengan ketinggian mencapai satu meter.  
->  
-> **Pertanyaan UTBK:** *Bagaimanakah hubungan kausal yang paling tepat antara kedua pernyataan tersebut?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.  
-> - **B.** Pernyataan (2) adalah penyebab dan pernyataan (1) adalah akibat.  
-> - **C.** Pernyataan (1) dan (2) adalah akibat dari dua penyebab berbeda yang saling tidak berhubungan.  
-> - **D.** Pernyataan (1) dan (2) adalah akibat dari satu penyebab yang sama.  
-> - **E.** Pernyataan (1) dan (2) adalah penyebab dari kondisi lain yang tidak disebutkan.
-
-**Kunci Jawaban: A**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Alur Mekanisme:** Pernyataan (1) menggambarkan peristiwa alam berupa curah hujan ekstrem yang terjadi di wilayah hulu pegunungan selama tiga hari. Secara hidrologi, air hujan yang berlimpah di kawasan hulu akan mengalir mengikuti kontur gravitasi ke arah hilir melalui aliran sungai. Apabila volume air melebihi kapasitas tampung sungai di dataran rendah, air akan meluap dan merendam permukiman di bantaran sungai, sebagaimana diuraikan pada pernyataan (2). Oleh karena itu, terdapat alur mekanisme fisik langsung yang menghubungkan pernyataan (1) sebagai pemicu (penyebab) dan pernyataan (2) sebagai dampak yang lahir darinya (akibat).
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan B Salah:** Membalikkan alur logika secara keliru (*reverse causality*), karena banjir di pemukiman hilir tidak mungkin menjadi faktor penyebab terjadinya hujan lebat di wilayah pegunungan hulu.
-  - **Pilihan C Salah:** Mengabaikan adanya keterikatan hidrologis yang sangat nyata antara kondisi wilayah hulu sungai dengan kawasan hilirnya.
-  - **Pilihan D Salah:** Menyatakan keduanya sebagai akibat dari satu faktor lain, padahal pernyataan (1) itu sendiri sudah merupakan peristiwa primer penyebab luapan air di hilir.
-  - **Pilihan E Salah:** Mengabaikan hubungan sebab-akibat langsung yang sudah sangat jelas terjalin di antara kedua pernyataan tersebut.
-- **Penerapan Trik Cepat (15 Detik):** Gunakan uji sambung *"karena... maka..."*. Kalimat: *"Karena hujan ekstrem mengguyur wilayah hulu (1), maka pemukiman di hilir terendam banjir luapan (2)"* terdengar sangat logis dan mengalir alami. Sebaliknya, jika dibalik: *"Karena pemukiman terendam banjir (2), maka wilayah hulu diguyur hujan (1)"* adalah alur yang mustahil. Dengan demikian, pernyataan (1) jelas merupakan penyebab dan pernyataan (2) adalah akibat, yang tepat dinyatakan pada pilihan **A**.
-
----
-
-### Variasi 2: Kekeliruan Korelasi Semu & Variabel Perancu (Tipe Cum Hoc / Confounding Variable)
-
-> **Konteks Wacana Soal:**  
-> Sebuah survei kesehatan masyarakat di Kota Maritim menemukan bahwa warga yang sering membeli es krim dan minuman dingin dalam jumlah banyak memiliki angka keluhan gangguan sengatan panas matahari (*heat stroke*) yang jauh lebih tinggi dibandingkan warga yang jarang membelinya. Seorang penyiar radio kemudian menyimpulkan bahwa kebiasaan mengonsumsi es krim dan minuman dingin adalah faktor penyebab meningkatnya kasus sengatan panas di kalangan warga kota tersebut.  
->  
-> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang paling tepat membongkar kekeliruan penalaran pada simpulan penyiar radio tersebut?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Penyiar radio tidak menyebutkan varian rasa dan merek es krim yang dikonsumsi oleh warga kota.  
-> - **B.** Harga es krim dan minuman dingin mengalami kenaikan sehingga tidak semua warga mampu membelinya setiap hari.  
-> - **C.** Penyiar radio keliru menyimpulkan hubungan sebab-akibat dari dua peristiwa yang berkorelasi, padahal keduanya merupakan dampak bersama dari cuaca musim kemarau yang sangat terik.  
-> - **D.** Konsumsi es krim berlebih terbukti secara medis hanya menyebabkan gangguan sakit gigi dan radang tenggorokan.  
-> - **E.** Warga yang tidak mengonsumsi es krim ternyata tetap dapat terserang penyakit musiman lain seperti flu.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Kekeliruan Kausalitas:** Penyiar radio terjebak pada kekeliruan korelasi semu (*cum hoc ergo propter hoc fallacy*). Hanya karena pembelian es krim dan kasus sengatan panas (*heat stroke*) melonjak pada waktu yang bersamaan, penyiar langsung menyimpulkan bahwa konsumsi es krim menyebabkan sengatan panas. Padahal, kedua fenomena tersebut sesungguhnya dipicu oleh variabel perancu ketiga yang sama, yakni kondisi cuaca musim kemarau dengan suhu udara yang sangat ekstrem (*heat wave*). Suhu panas yang menyengat mendorong warga membeli es krim untuk menyegarkan tubuh, dan paparan suhu panas ekstrem yang sama menyebabkan sebagian warga mengalami sengatan panas. Es krim bukanlah penyebab dari sengatan panas.
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Merek dan varian rasa es krim merupakan detail yang tidak relevan dengan esensi penalaran sebab-akibat.
-  - **Pilihan B Salah:** Kenaikan harga es krim tidak menjelaskan mengapa korelasi antara pembelian es krim dan heat stroke keliru dipahami sebagai sebab-akibat.
-  - **Pilihan D Salah:** Meskipun benar dari segi medis, opsi ini berfokus pada dampak kesehatan lain dan tidak menjelaskan akar kecacatan metodologis dari korelasi dua peristiwa tersebut.
-  - **Pilihan E Salah:** Keberadaan penyakit lain pada warga yang tidak makan es krim tidak membedah hubungan antara es krim dan heat stroke.
-- **Penerapan Trik Cepat (15 Detik):** Ajukan pertanyaan kritis: *"Apakah es krim secara biologis dapat menaikkan suhu tubuh hingga terkena heat stroke?"* Jelas tidak. Keduanya terjadi bersamaan karena adanya faktor ketiga, yaitu cuaca musim kemarau yang sangat terik. Pilihan yang secara eksplisit membongkar adanya faktor bersama ketiga (*common cause*) ini adalah pilihan **C**.
-
----
-
-### Variasi 3: Evaluasi Validitas Klaim Sebab-Akibat / Memperlemah Kausalitas (Tipe HOTS)
-
-> **Konteks Wacana Soal:**  
-> Dinas Kebersihan Kota Melati mencatat bahwa setelah jalur sepeda khusus diresmikan di sepanjang jalan protokol pada awal tahun, volume timbulan sampah plastik di trotoar jalan tersebut menurun drastis sebesar 35%. Berdasarkan data ini, Kepala Dinas menyatakan bahwa penggunaan jalur sepeda oleh masyarakat merupakan faktor penyebab langsung yang meningkatkan kesadaran warga dalam menjaga kebersihan lingkungan di kawasan protokol.  
->  
-> **Pertanyaan UTBK:** *Manakah temuan fakta baru di bawah ini yang, jika benar, paling memperlemah kesimpulan kausalitas Kepala Dinas tersebut?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Sebagian besar pesepeda yang melintas di jalan protokol adalah warga yang berdomisili di luar Kota Melati.  
-> - **B.** Bersamaan dengan peresmian jalur sepeda, pemerintah kota memasang 200 unit tempat sampah pilah baru dan menugaskan satgas patroli yang menerapkan sanksi denda tegas bagi pembuang sampah sembarangan.  
-> - **C.** Jalur sepeda khusus tersebut lebih ramai dipadati oleh pengguna pada hari libur dibandingkan hari kerja biasa.  
-> - **D.** Jumlah toko yang menjual produk minuman dalam kemasan botol plastik di jalan protokol tetap sama seperti tahun sebelumnya.  
-> - **E.** Pemerintah di beberapa kota tetangga belum mengadopsi kebijakan pembangunan fasilitas jalur sepeda khusus seperti di Kota Melati.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Titik Lemah Argumen:** Kepala Dinas mengklaim bahwa peresmian jalur sepeda dan aktivitas bersepeda secara langsung menyebabkan penurunan sampah plastik sebesar 35%. Untuk memperlemah klaim kausalitas ini, kita perlu menemukan **faktor penyebab alternatif (*alternative explanation*)** yang jauh lebih masuk akal dan berpengaruh langsung terhadap penurunan sampah. Pilihan B mengungkap bahwa tepat pada waktu yang bersamaan, pemerintah kota memasang 200 tempat sampah pilah baru serta menerjunkan satgas patroli yang aktif memberlakukan denda tegas. Penyediaan sarana tempat sampah yang melimpah dan adanya pengawasan denda inilah yang sesungguhnya menjadi pemicu nyata mengapa orang berhenti membuang sampah sembarangan di trotoar, bukan karena keberadaan jalur sepeda itu sendiri.
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan A Salah:** Asal domisili pesepeda tidak menggugurkan hubungan antara kebiasaan bersepeda dengan kesadaran menjaga kebersihan.
-  - **Pilihan C Salah:** Pola kepadatan hari libur versus hari kerja hanya menggambarkan profil waktu penggunaan jalur sepeda tanpa menyangkal dampak kebersihan.
-  - **Pilihan D Salah:** Jumlah toko plastik yang konstan justru menunjukkan bahwa pasokan sampah potensial tidak berkurang, namun tidak menjelaskan faktor di balik penurunan timbulan sampah nyata.
-  - **Pilihan E Salah:** Kebijakan di kota tetangga sama sekali berada di luar ruang lingkup (*out of scope*) analisis kebijakan Kota Melati.
-- **Penerapan Trik Cepat (15 Detik):** Untuk meruntuhkan klaim sebab-akibat seseorang, carilah penjelasan alternatif: *"Faktor apa yang sebenarnya membuat sampah berkurang secara drastis?"* Kehadiran 200 tempat sampah baru dan ancaman denda patroli (pilihan B) adalah penyebab nyata yang langsung menggugurkan klaim bahwa jalur sepedalah yang membuat trotoar bersih. Jawaban yang tepat adalah pilihan **B**.`,
-    visualizations_svg: [],
-    distractor_traps: [
-      'Post Hoc Ergo Propter Hoc: Menganggap peristiwa yang terjadi lebih awal pasti merupakan penyebab dari peristiwa yang terjadi setelahnya tanpa bukti alur kerja rasional.',
-      'Cum Hoc Fallacy (Korelasi Semu): Mengklaim dua hal yang terjadi bersamaan memiliki ikatan kausalitas, padahal keduanya hanyalah dampak dari variabel perancu ketiga.',
-      'Reverse Causality (Pembalikan Kausal): Terkecoh menukar posisi akibat menjadi sebab, atau mengabaikan kemungkinan terjadinya hubungan timbal balik ganda.',
+  "content": {
+    "tactical_overview": "Hubungan kausalitas menguji kemampuan Anda dalam mengidentifikasi pemicu (sebab) dan dampak (akibat) yang saling terikat secara mekanisme rasional, bukan sekadar urutan waktu atau korelasi kebetulan. Kunci utama dalam menyelesaikan soal kausalitas UTBK adalah melakukan uji sambung \"Karena... Maka...\", membedakan korelasi semu dari kausalitas sejati, mewaspadai keberadaan variabel perancu (faktor ketiga), serta mencari penyebab alternatif ketika mengevaluasi kelemahan suatu klaim sebab-akibat.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-01-03-causality]]\n\n\nPenalaran kausalitas (sebab-akibat) adalah metode berpikir untuk menentukan apakah suatu kondisi atau peristiwa merupakan pemicu langsung yang melahirkan kondisi lainnya. Di dalam ujian UTBK SNBT, soal penalaran umum jenis ini dirancang untuk menguji kecermatan Anda dalam membedakan hubungan sebab-akibat sejati (*true causation*) dari sekadar urutan kronologis atau korelasi semu (*spurious correlation*).\n\nTiga kaidah pokok hubungan kausalitas yang wajib Anda kuasai adalah sebagai berikut:\n1. **Kausalitas Memerlukan Mekanisme Rasional, Bukan Sekadar Korelasi (*Correlation is Not Causation*)**  \n   Dua peristiwa yang terjadi secara bersamaan atau memiliki arah grafik angka yang searah tidak otomatis saling menyebabkan. Kausalitas yang sah menuntut adanya mekanisme alur kerja sebab-akibat yang nyata dan dapat dipertanggungjawabkan secara logis. Sering kali, dua gejala yang muncul berbarengan ternyata sama sekali tidak saling memengaruhi, melainkan keduanya lahir dari satu penyebab bersama (*common cause*) yang tidak tertulis secara eksplisit.\n2. **Urutan Waktu Wajib Konsisten (*Temporal Precedence*)**  \n   Penyebab harus selalu terjadi mendahului atau berbarengan dengan munculnya akibat, dan akibat tidak pernah mendahului sebab. Namun perlu diingat: urutan waktu semata belum cukup membuktikan hubungan sebab-akibat. Apabila peristiwa B terjadi setelah peristiwa A, Anda tidak boleh langsung menyimpulkan bahwa A adalah penyebab B tanpa adanya pembuktian alur hubungan yang masuk akal (*post hoc fallacy*).\n3. **Pola Hubungan Antarpernyataan pada Soal UTBK**  \n   Pada tipe soal kausalitas yang menyajikan dua pernyataan bernomor (1) dan (2), terdapat empat pola relasi logika yang lazim diuji:\n   - *Pola Sebab-Akibat:* Pernyataan (1) adalah pemicu langsung dan pernyataan (2) adalah dampak yang dihasilkan, atau sebaliknya.\n   - *Pola Akibat dari Satu Penyebab Bersama:* Pernyataan (1) dan (2) sama-sama merupakan akibat yang dipicu oleh satu faktor akar yang identik.\n   - *Pola Akibat dari Dua Penyebab Berbeda:* Pernyataan (1) dan (2) merupakan akibat dari dua kondisi pemicu yang berdiri sendiri-sendiri tanpa keterkaitan satu sama lain.\n   - *Pola Sebab Mandiri:* Pernyataan (1) dan (2) masing-masing adalah penyebab independen yang memicu masalah berbeda.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK kerap merancang opsi jawaban yang memanfaatkan kekeliruan berpikir (*logical fallacies*) yang sering dilakukan siswa dalam kehidupan sehari-hari. Tiga jebakan utama yang paling sering muncul meliputi:\n1. **Jebakan Urutan Waktu Dianggap Kausalitas (*Post Hoc Ergo Propter Hoc*)**  \n   Pilihan jawaban menyimpulkan bahwa karena peristiwa B terjadi beberapa saat setelah peristiwa A, maka peristiwa A pasti merupakan penyebab timbulnya B. Padahal, urutan kronologis tersebut hanyalah kebetulan waktu tanpa memiliki mata rantai hubungan sebab-akibat langsung.\n2. **Jebakan Mengabaikan Variabel Perancu (*Confounding Variable / Common Cause*)**  \n   Pilihan jawaban menghubungkan dua gejala secara langsung sebagai sebab dan akibat, padahal kedua gejala tersebut sesungguhnya sama-sama dipicu oleh faktor ketiga. Sebagai contoh, meningkatnya penjualan payung dan meningkatnya penjualan jas hujan bukan berarti payung menyebabkan pembelian jas hujan, melainkan keduanya sama-sama akibat dari cuaca musim hujan.\n3. **Jebakan Pembalikan Arah Kausalitas (*Reverse Causality*)**  \n   Pilihan jawaban menukar posisi antara dampak dan pemicu. Kalimat yang semestinya merupakan akibat justru diartikan sebagai faktor penyebab, atau sebaliknya, sehingga memutarbalikkan logika alur wacana yang sesungguhnya.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nSaat menghadapi soal kausalitas di ruang ujian UTBK dengan batas waktu yang ketat, terapkan alur eksekusi taktis berikut:\n1. **Terapkan Uji Sambung Kata *\"Karena... Maka...\"***  \n   Pasangkan kedua pernyataan dengan kata penghubung: *\"Karena [Pernyataan 1], maka wajar jika [Pernyataan 2]\"* dan balikkan menjadi *\"Karena [Pernyataan 2], maka wajar jika [Pernyataan 1]\"*. Alur yang mengalir lancar dan masuk akal secara kaidah dunia nyata langsung menunjukkan siapa yang berkedudukan sebagai penyebab dan siapa yang menjadi akibat.\n2. **Lacak Indikasi Gejala Bersama (*Common Factor*)**  \n   Jika kedua pernyataan sama-sama bernada dampak negatif (misalnya: gagal panen dan sumur warga mengering) atau keduanya sama-sama dampak positif tanpa ada hubungan sebab-akibat langsung di antara keduanya, segera simpulkan bahwa keduanya adalah akibat dari satu faktor penyebab bersama (dalam contoh ini: kemarau panjang).\n3. **Cari Penyebab Alternatif untuk Soal Evaluasi / Memperlemah (HOTS)**  \n   Pada soal yang menanyakan fakta yang paling memperlemah kesimpulan kausalitas seseorang di dalam teks, carilah pilihan jawaban yang membongkar adanya **faktor penyebab lain yang jauh lebih masuk akal dan dominan** yang terjadi pada saat yang bersamaan.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Hubungan kausalitas menguji ada atau tidaknya keterikatan langsung antara aksi pemicu (*sebab*) dengan dampak nyata yang ditimbulkan (*akibat*).\n- **Korelasi Bukan Kausalitas:** Adanya kesamaan tren atau peristiwa yang terjadi berdekatan tidak boleh disimpulkan memiliki relasi sebab-akibat tanpa pembuktian mekanisme yang valid.\n- **Pola Klasik:** Hubungan antarpernyataan di UTBK umumnya berpusat pada penentuan arah sebab → akibat, akibat → sebab, atau akibat dari faktor bersama.\n- **Strategi Menjawab:** Gunakan uji sambung *\"karena... maka...\"*, eliminasi opsi yang terjebak pada urutan waktu semata, dan curigai kehadiran variabel ketiga perancu.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Hubungan Kausalitas yang paling sering keluar di UTBK SNBT, lengkap dengan wacana konteks, opsi pilihan ganda A–E utuh, kunci jawaban, dan pembahasan logika terperinci:\n\n### Variasi 1: Penentuan Arah Hubungan Kausal (Tipe Sebab-Akibat Dua Pernyataan)\n\n> **Konteks Wacana Soal:**  \n> Perhatikan dua kondisi peristiwa berikut ini:  \n> (1) Curah hujan dengan intensitas ekstrem mengguyur wilayah hulu pegunungan selama tiga hari berturut-turut tanpa jeda.  \n> (2) Sejumlah pemukiman warga di kawasan bantaran sungai hilir terendam luapan banjir dengan ketinggian mencapai satu meter.  \n>  \n> **Pertanyaan UTBK:** *Bagaimanakah hubungan kausal yang paling tepat antara kedua pernyataan tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.  \n> - **B.** Pernyataan (2) adalah penyebab dan pernyataan (1) adalah akibat.  \n> - **C.** Pernyataan (1) dan (2) adalah akibat dari dua penyebab berbeda yang saling tidak berhubungan.  \n> - **D.** Pernyataan (1) dan (2) adalah akibat dari satu penyebab yang sama.  \n> - **E.** Pernyataan (1) dan (2) adalah penyebab dari kondisi lain yang tidak disebutkan.\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Alur Mekanisme:** Pernyataan (1) menggambarkan peristiwa alam berupa curah hujan ekstrem yang terjadi di wilayah hulu pegunungan selama tiga hari. Secara hidrologi, air hujan yang berlimpah di kawasan hulu akan mengalir mengikuti kontur gravitasi ke arah hilir melalui aliran sungai. Apabila volume air melebihi kapasitas tampung sungai di dataran rendah, air akan meluap dan merendam permukiman di bantaran sungai, sebagaimana diuraikan pada pernyataan (2). Oleh karena itu, terdapat alur mekanisme fisik langsung yang menghubungkan pernyataan (1) sebagai pemicu (penyebab) dan pernyataan (2) sebagai dampak yang lahir darinya (akibat).\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan B Salah:** Membalikkan alur logika secara keliru (*reverse causality*), karena banjir di pemukiman hilir tidak mungkin menjadi faktor penyebab terjadinya hujan lebat di wilayah pegunungan hulu.\n  - **Pilihan C Salah:** Mengabaikan adanya keterikatan hidrologis yang sangat nyata antara kondisi wilayah hulu sungai dengan kawasan hilirnya.\n  - **Pilihan D Salah:** Menyatakan keduanya sebagai akibat dari satu faktor lain, padahal pernyataan (1) itu sendiri sudah merupakan peristiwa primer penyebab luapan air di hilir.\n  - **Pilihan E Salah:** Mengabaikan hubungan sebab-akibat langsung yang sudah sangat jelas terjalin di antara kedua pernyataan tersebut.\n- **Penerapan Trik Cepat (15 Detik):** Gunakan uji sambung *\"karena... maka...\"*. Kalimat: *\"Karena hujan ekstrem mengguyur wilayah hulu (1), maka pemukiman di hilir terendam banjir luapan (2)\"* terdengar sangat logis dan mengalir alami. Sebaliknya, jika dibalik: *\"Karena pemukiman terendam banjir (2), maka wilayah hulu diguyur hujan (1)\"* adalah alur yang mustahil. Dengan demikian, pernyataan (1) jelas merupakan penyebab dan pernyataan (2) adalah akibat, yang tepat dinyatakan pada pilihan **A**.\n\n---\n\n### Variasi 2: Kekeliruan Korelasi Semu & Variabel Perancu (Tipe Cum Hoc / Confounding Variable)\n\n> **Konteks Wacana Soal:**  \n> Sebuah survei kesehatan masyarakat di Kota Maritim menemukan bahwa warga yang sering membeli es krim dan minuman dingin dalam jumlah banyak memiliki angka keluhan gangguan sengatan panas matahari (*heat stroke*) yang jauh lebih tinggi dibandingkan warga yang jarang membelinya. Seorang penyiar radio kemudian menyimpulkan bahwa kebiasaan mengonsumsi es krim dan minuman dingin adalah faktor penyebab meningkatnya kasus sengatan panas di kalangan warga kota tersebut.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang paling tepat membongkar kekeliruan penalaran pada simpulan penyiar radio tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Penyiar radio tidak menyebutkan varian rasa dan merek es krim yang dikonsumsi oleh warga kota.  \n> - **B.** Harga es krim dan minuman dingin mengalami kenaikan sehingga tidak semua warga mampu membelinya setiap hari.  \n> - **C.** Penyiar radio keliru menyimpulkan hubungan sebab-akibat dari dua peristiwa yang berkorelasi, padahal keduanya merupakan dampak bersama dari cuaca musim kemarau yang sangat terik.  \n> - **D.** Konsumsi es krim berlebih terbukti secara medis hanya menyebabkan gangguan sakit gigi dan radang tenggorokan.  \n> - **E.** Warga yang tidak mengonsumsi es krim ternyata tetap dapat terserang penyakit musiman lain seperti flu.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kekeliruan Kausalitas:** Penyiar radio terjebak pada kekeliruan korelasi semu (*cum hoc ergo propter hoc fallacy*). Hanya karena pembelian es krim dan kasus sengatan panas (*heat stroke*) melonjak pada waktu yang bersamaan, penyiar langsung menyimpulkan bahwa konsumsi es krim menyebabkan sengatan panas. Padahal, kedua fenomena tersebut sesungguhnya dipicu oleh variabel perancu ketiga yang sama, yakni kondisi cuaca musim kemarau dengan suhu udara yang sangat ekstrem (*heat wave*). Suhu panas yang menyengat mendorong warga membeli es krim untuk menyegarkan tubuh, dan paparan suhu panas ekstrem yang sama menyebabkan sebagian warga mengalami sengatan panas. Es krim bukanlah penyebab dari sengatan panas.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Merek dan varian rasa es krim merupakan detail yang tidak relevan dengan esensi penalaran sebab-akibat.\n  - **Pilihan B Salah:** Kenaikan harga es krim tidak menjelaskan mengapa korelasi antara pembelian es krim dan heat stroke keliru dipahami sebagai sebab-akibat.\n  - **Pilihan D Salah:** Meskipun benar dari segi medis, opsi ini berfokus pada dampak kesehatan lain dan tidak menjelaskan akar kecacatan metodologis dari korelasi dua peristiwa tersebut.\n  - **Pilihan E Salah:** Keberadaan penyakit lain pada warga yang tidak makan es krim tidak membedah hubungan antara es krim dan heat stroke.\n- **Penerapan Trik Cepat (15 Detik):** Ajukan pertanyaan kritis: *\"Apakah es krim secara biologis dapat menaikkan suhu tubuh hingga terkena heat stroke?\"* Jelas tidak. Keduanya terjadi bersamaan karena adanya faktor ketiga, yaitu cuaca musim kemarau yang sangat terik. Pilihan yang secara eksplisit membongkar adanya faktor bersama ketiga (*common cause*) ini adalah pilihan **C**.\n\n---\n\n### Variasi 3: Evaluasi Validitas Klaim Sebab-Akibat / Memperlemah Kausalitas (Tipe HOTS)\n\n> **Konteks Wacana Soal:**  \n> Dinas Kebersihan Kota Melati mencatat bahwa setelah jalur sepeda khusus diresmikan di sepanjang jalan protokol pada awal tahun, volume timbulan sampah plastik di trotoar jalan tersebut menurun drastis sebesar 35%. Berdasarkan data ini, Kepala Dinas menyatakan bahwa penggunaan jalur sepeda oleh masyarakat merupakan faktor penyebab langsung yang meningkatkan kesadaran warga dalam menjaga kebersihan lingkungan di kawasan protokol.  \n>  \n> **Pertanyaan UTBK:** *Manakah temuan fakta baru di bawah ini yang, jika benar, paling memperlemah kesimpulan kausalitas Kepala Dinas tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Sebagian besar pesepeda yang melintas di jalan protokol adalah warga yang berdomisili di luar Kota Melati.  \n> - **B.** Bersamaan dengan peresmian jalur sepeda, pemerintah kota memasang 200 unit tempat sampah pilah baru dan menugaskan satgas patroli yang menerapkan sanksi denda tegas bagi pembuang sampah sembarangan.  \n> - **C.** Jalur sepeda khusus tersebut lebih ramai dipadati oleh pengguna pada hari libur dibandingkan hari kerja biasa.  \n> - **D.** Jumlah toko yang menjual produk minuman dalam kemasan botol plastik di jalan protokol tetap sama seperti tahun sebelumnya.  \n> - **E.** Pemerintah di beberapa kota tetangga belum mengadopsi kebijakan pembangunan fasilitas jalur sepeda khusus seperti di Kota Melati.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Titik Lemah Argumen:** Kepala Dinas mengklaim bahwa peresmian jalur sepeda dan aktivitas bersepeda secara langsung menyebabkan penurunan sampah plastik sebesar 35%. Untuk memperlemah klaim kausalitas ini, kita perlu menemukan **faktor penyebab alternatif (*alternative explanation*)** yang jauh lebih masuk akal dan berpengaruh langsung terhadap penurunan sampah. Pilihan B mengungkap bahwa tepat pada waktu yang bersamaan, pemerintah kota memasang 200 tempat sampah pilah baru serta menerjunkan satgas patroli yang aktif memberlakukan denda tegas. Penyediaan sarana tempat sampah yang melimpah dan adanya pengawasan denda inilah yang sesungguhnya menjadi pemicu nyata mengapa orang berhenti membuang sampah sembarangan di trotoar, bukan karena keberadaan jalur sepeda itu sendiri.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Asal domisili pesepeda tidak menggugurkan hubungan antara kebiasaan bersepeda dengan kesadaran menjaga kebersihan.\n  - **Pilihan C Salah:** Pola kepadatan hari libur versus hari kerja hanya menggambarkan profil waktu penggunaan jalur sepeda tanpa menyangkal dampak kebersihan.\n  - **Pilihan D Salah:** Jumlah toko plastik yang konstan justru menunjukkan bahwa pasokan sampah potensial tidak berkurang, namun tidak menjelaskan faktor di balik penurunan timbulan sampah nyata.\n  - **Pilihan E Salah:** Kebijakan di kota tetangga sama sekali berada di luar ruang lingkup (*out of scope*) analisis kebijakan Kota Melati.\n- **Penerapan Trik Cepat (15 Detik):** Untuk meruntuhkan klaim sebab-akibat seseorang, carilah penjelasan alternatif: *\"Faktor apa yang sebenarnya membuat sampah berkurang secara drastis?\"* Kehadiran 200 tempat sampah baru dan ancaman denda patroli (pilihan B) adalah penyebab nyata yang langsung menggugurkan klaim bahwa jalur sepedalah yang membuat trotoar bersih. Jawaban yang tepat adalah pilihan **B**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-01-03-causality",
+        "title": "Pembeda Kausalitas Murni vs Korelasi Semu (Faktor Ketiga)",
+        "caption": "Membongkar Jebakan Induktif: Korelasi Belum Tentu Merupakan Hubungan Sebab-Akibat",
+        "svg_code": "<svg viewBox=\"0 0 640 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .cs-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .cs-sub { font-family: system-ui, sans-serif; font-size: 11px; fill: #64748b; text-anchor: middle; }\n      :root.dark .cs-title { fill: #f8fafc; }\n      :root.dark .cs-sub { fill: #94a3b8; }\n    </style>\n  </defs>\n\n  <!-- Left: Real Causality -->\n  <g transform=\"translate(20, 10)\">\n    <rect width=\"285\" height=\"180\" rx=\"14\" fill=\"rgba(16, 185, 129, 0.05)\" stroke=\"rgba(16, 185, 129, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"142\" y=\"26\" class=\"cs-title\">KAUSALITAS SEJATI (X ⟹ Y)</text>\n    <text x=\"142\" y=\"42\" class=\"cs-sub\">Perubahan X secara langsung memicu Y</text>\n\n    <!-- Node X -->\n    <rect x=\"25\" y=\"70\" width=\"85\" height=\"50\" rx=\"10\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"67\" y=\"94\" fill=\"#065f46\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">Sebab (X)</text>\n    <text x=\"67\" y=\"108\" fill=\"#047857\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">Teknik Mutu</text>\n\n    <!-- Arrow -->\n    <line x1=\"114\" y1=\"95\" x2=\"166\" y2=\"95\" stroke=\"#10b981\" stroke-width=\"3\" marker-end=\"url(#arrow)\"/>\n    <text x=\"140\" y=\"86\" fill=\"#047857\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">Memicu</text>\n\n    <!-- Node Y -->\n    <rect x=\"170\" y=\"70\" width=\"85\" height=\"50\" rx=\"10\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"212\" y=\"94\" fill=\"#065f46\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">Akibat (Y)</text>\n    <text x=\"212\" y=\"108\" fill=\"#047857\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">Penjualan Naik</text>\n\n    <text x=\"142\" y=\"155\" fill=\"#059669\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">✓ Validitas Kausalitas Kuat</text>\n  </g>\n\n  <!-- Right: Spurious Correlation (Faktor Ketiga Z) -->\n  <g transform=\"translate(335, 10)\">\n    <rect width=\"285\" height=\"180\" rx=\"14\" fill=\"rgba(239, 68, 68, 0.05)\" stroke=\"rgba(239, 68, 68, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"142\" y=\"26\" class=\"cs-title\">KORELASI SEMU (JEBAKAN UTBK)</text>\n    <text x=\"142\" y=\"42\" class=\"cs-sub\">Keduanya dipicu oleh Variabel Ketiga (Z)</text>\n\n    <!-- Third variable Z on top -->\n    <rect x=\"100\" y=\"54\" width=\"85\" height=\"34\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n    <text x=\"142\" y=\"76\" fill=\"#991b1b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">Faktor Z (Suhu)</text>\n\n    <!-- Branch left to X -->\n    <line x1=\"120\" y1=\"90\" x2=\"68\" y2=\"120\" stroke=\"#ef4444\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n    <rect x=\"25\" y=\"120\" width=\"85\" height=\"34\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <text x=\"67\" y=\"142\" fill=\"#991b1b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" text-anchor=\"middle\">Minum Es (X)</text>\n\n    <!-- Branch right to Y -->\n    <line x1=\"165\" y1=\"90\" x2=\"212\" y2=\"120\" stroke=\"#ef4444\" stroke-width=\"1.8\" stroke-dasharray=\"3,3\"/>\n    <rect x=\"175\" y=\"120\" width=\"85\" height=\"34\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <text x=\"217\" y=\"142\" fill=\"#991b1b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" text-anchor=\"middle\">Tidur Siang (Y)</text>\n\n    <text x=\"142\" y=\"174\" fill=\"#dc2626\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">✗ X tidak menyebabkan Y</text>\n  </g>\n</svg>"
+      }
     ],
-    quick_execution_algorithm: [
-      'Terapkan uji sambung logika: uji kalimat "Karena [Pernyataan 1], maka [Pernyataan 2]" versus sebaliknya untuk menentukan arah pemicu dan dampak.',
-      'Periksa apakah ada faktor ketiga tersembunyi yang menjadi penyebab utama lahirnya kedua kondisi secara serempak.',
-      'Singkirkan opsi yang menarik simpulan kausalitas hanya berdasarkan urutan waktu kejadian tanpa mekanisme yang rasional.',
-      'Untuk soal melemahkan argumen, cari alternatif penyebab lain yang lebih dominan atau bukti bahwa akibat tetap ada meski faktor penyebab ditiadakan.',
+    "distractor_traps": [
+      "Post Hoc Ergo Propter Hoc: Menganggap peristiwa yang terjadi lebih awal pasti merupakan penyebab dari peristiwa yang terjadi setelahnya tanpa bukti alur kerja rasional.",
+      "Cum Hoc Fallacy (Korelasi Semu): Mengklaim dua hal yang terjadi bersamaan memiliki ikatan kausalitas, padahal keduanya hanyalah dampak dari variabel perancu ketiga.",
+      "Reverse Causality (Pembalikan Kausal): Terkecoh menukar posisi akibat menjadi sebab, atau mengabaikan kemungkinan terjadinya hubungan timbal balik ganda."
     ],
+    "quick_execution_algorithm": [
+      "Terapkan uji sambung logika: uji kalimat \"Karena [Pernyataan 1], maka [Pernyataan 2]\" versus sebaliknya untuk menentukan arah pemicu dan dampak.",
+      "Periksa apakah ada faktor ketiga tersembunyi yang menjadi penyebab utama lahirnya kedua kondisi secara serempak.",
+      "Singkirkan opsi yang menarik simpulan kausalitas hanya berdasarkan urutan waktu kejadian tanpa mekanisme yang rasional.",
+      "Untuk soal melemahkan argumen, cari alternatif penyebab lain yang lebih dominan atau bukti bahwa akibat tetap ada meski faktor penyebab ditiadakan."
+    ]
   },
-  worked_examples: [
+  "worked_examples": [
     {
-      example_id: 'pu-01-03-ex1',
-      variation_name: 'Variasi 1: Penentuan Arah Hubungan Kausal (Level: Mudah)',
-      difficulty: 'easy',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Perhatikan dua kondisi peristiwa berikut ini:\n\n(1) Curah hujan dengan intensitas ekstrem mengguyur wilayah hulu pegunungan selama tiga hari berturut-turut tanpa jeda.\n(2) Sejumlah pemukiman warga di kawasan bantaran sungai hilir terendam luapan banjir dengan ketinggian mencapai satu meter.',
-      question_markdown:
-        'Bagaimanakah hubungan kausal yang **paling tepat** antara kedua pernyataan tersebut?',
-      options: [
+      "example_id": "pu-01-03-ex1",
+      "variation_name": "Variasi 1: Penentuan Arah Hubungan Kausal (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua kondisi peristiwa berikut ini:\n\n(1) Curah hujan dengan intensitas ekstrem mengguyur wilayah hulu pegunungan selama tiga hari berturut-turut tanpa jeda.\n(2) Sejumlah pemukiman warga di kawasan bantaran sungai hilir terendam luapan banjir dengan ketinggian mencapai satu meter.",
+      "question_markdown": "Bagaimanakah hubungan kausal yang **paling tepat** antara kedua pernyataan tersebut?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.',
+          "key": "A",
+          "text_markdown": "Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Pernyataan (2) adalah penyebab dan pernyataan (1) adalah akibat.',
+          "key": "B",
+          "text_markdown": "Pernyataan (2) adalah penyebab dan pernyataan (1) adalah akibat."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Pernyataan (1) dan (2) adalah akibat dari dua penyebab berbeda yang saling tidak berhubungan.',
+          "key": "C",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari dua penyebab berbeda yang saling tidak berhubungan."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Pernyataan (1) dan (2) adalah akibat dari satu penyebab yang sama.',
+          "key": "D",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari satu penyebab yang sama."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Pernyataan (1) dan (2) adalah penyebab dari kondisi lain yang tidak disebutkan.',
-        },
+          "key": "E",
+          "text_markdown": "Pernyataan (1) dan (2) adalah penyebab dari kondisi lain yang tidak disebutkan."
+        }
       ],
-      correct_answer: 'A',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Pasangkan kedua kalimat dengan uji sambung: *"Karena [1], maka [2]"* vs *"Karena [2], maka [1]"*. Apakah hujan lebat di hulu yang menyebabkan banjir di hilir, ataukah sebaliknya?',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Analisis Kausalitas:**
-  - **Pernyataan (1):** Hujan ekstrem di daerah hulu pegunungan menghasilkan akumulasi debit air yang sangat besar di daerah tangkapan air (*catchment area*).
-  - **Pernyataan (2):** Luapan air di bantaran sungai hilir merupakan konsekuensi hidrologis tak terelakkan saat kapasitas sungai hilir tidak mampu menampung debit kiriman air dari hulu.
-- **Penentuan Relasi:** Terdapat mata rantai sebab-akibat fisik langsung di mana peristiwa (1) berperan sebagai **penyebab (*cause*)** dan peristiwa (2) berperan sebagai **akibat (*effect*)**.
-
-**Jawaban: A**`,
-      quick_trick_markdown: `**Cara Cepat (Uji Sambung "Karena... Maka..."):**
-
-1. Uji alur 1 ke 2: *"Karena hujan lebat di hulu pegunungan (1), maka pemukiman di hilir terendam banjir (2)."* (Sangat logis dan sesuai hukum alam).
-2. Uji alur sebaliknya: *"Karena pemukiman di hilir banjir (2), maka di hulu turun hujan lebat (1)."* (Tidak masuk akal).
-3. Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.
-4. Jawaban yang tepat adalah pilihan **A**.`,
-      why_others_are_wrong_markdown: `- **Pilihan B Salah:** Mengalami pembalikan kausalitas (*reverse causality*), sebab banjir di hilir mustahil menjadi penyebab hujan di kawasan hulu pegunungan.
-- **Pilihan C Salah:** Keliru menganggap kedua kondisi tidak saling berhubungan, padahal aliran air sungai secara fisik mengalir langsung dari hulu menuju hilir.
-- **Pilihan D Salah:** Mengklaim keduanya sebagai akibat dari faktor lain, padahal hujan ekstrem pada pernyataan (1) sudah merupakan pemicu primer terjadinya banjir di pernyataan (2).
-- **Pilihan E Salah:** Mengabaikan hubungan sebab-akibat langsung yang sudah jelas terbukti ada di antara kedua pernyataan tersebut.`,
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasangkan kedua kalimat dengan uji sambung: *\"Karena [1], maka [2]\"* vs *\"Karena [2], maka [1]\"*. Apakah hujan lebat di hulu yang menyebabkan banjir di hilir, ataukah sebaliknya?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kausalitas:**\n  - **Pernyataan (1):** Hujan ekstrem di daerah hulu pegunungan menghasilkan akumulasi debit air yang sangat besar di daerah tangkapan air (*catchment area*).\n  - **Pernyataan (2):** Luapan air di bantaran sungai hilir merupakan konsekuensi hidrologis tak terelakkan saat kapasitas sungai hilir tidak mampu menampung debit kiriman air dari hulu.\n- **Penentuan Relasi:** Terdapat mata rantai sebab-akibat fisik langsung di mana peristiwa (1) berperan sebagai **penyebab (*cause*)** dan peristiwa (2) berperan sebagai **akibat (*effect*)**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Sambung \"Karena... Maka...\"):**\n\n1. Uji alur 1 ke 2: *\"Karena hujan lebat di hulu pegunungan (1), maka pemukiman di hilir terendam banjir (2).\"* (Sangat logis dan sesuai hukum alam).\n2. Uji alur sebaliknya: *\"Karena pemukiman di hilir banjir (2), maka di hulu turun hujan lebat (1).\"* (Tidak masuk akal).\n3. Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.\n4. Jawaban yang tepat adalah pilihan **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Mengalami pembalikan kausalitas (*reverse causality*), sebab banjir di hilir mustahil menjadi penyebab hujan di kawasan hulu pegunungan.\n- **Pilihan C Salah:** Keliru menganggap kedua kondisi tidak saling berhubungan, padahal aliran air sungai secara fisik mengalir langsung dari hulu menuju hilir.\n- **Pilihan D Salah:** Mengklaim keduanya sebagai akibat dari faktor lain, padahal hujan ekstrem pada pernyataan (1) sudah merupakan pemicu primer terjadinya banjir di pernyataan (2).\n- **Pilihan E Salah:** Mengabaikan hubungan sebab-akibat langsung yang sudah jelas terbukti ada di antara kedua pernyataan tersebut."
     },
     {
-      example_id: 'pu-01-03-ex2',
-      variation_name: 'Variasi 2: Kekeliruan Korelasi Semu & Variabel Perancu (Level: Sedang)',
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Sebuah survei kesehatan masyarakat di Kota Maritim menemukan bahwa warga yang sering membeli es krim dan minuman dingin dalam jumlah banyak memiliki angka keluhan gangguan sengatan panas matahari (*heat stroke*) yang jauh lebih tinggi dibandingkan warga yang jarang membelinya. Seorang penyiar radio kemudian menyimpulkan bahwa kebiasaan mengonsumsi es krim dan minuman dingin adalah faktor penyebab meningkatnya kasus sengatan panas di kalangan warga kota tersebut.',
-      question_markdown:
-        'Manakah pernyataan berikut yang **paling tepat** membongkar kekeliruan penalaran pada simpulan penyiar radio tersebut?',
-      options: [
+      "example_id": "pu-01-03-ex2",
+      "variation_name": "Variasi 2: Kekeliruan Korelasi Semu & Variabel Perancu (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah survei kesehatan masyarakat di Kota Maritim menemukan bahwa warga yang sering membeli es krim dan minuman dingin dalam jumlah banyak memiliki angka keluhan gangguan sengatan panas matahari (*heat stroke*) yang jauh lebih tinggi dibandingkan warga yang jarang membelinya. Seorang penyiar radio kemudian menyimpulkan bahwa kebiasaan mengonsumsi es krim dan minuman dingin adalah faktor penyebab meningkatnya kasus sengatan panas di kalangan warga kota tersebut.",
+      "question_markdown": "Manakah pernyataan berikut yang **paling tepat** membongkar kekeliruan penalaran pada simpulan penyiar radio tersebut?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Penyiar radio tidak menyebutkan varian rasa dan merek es krim yang dikonsumsi oleh warga kota.',
+          "key": "A",
+          "text_markdown": "Penyiar radio tidak menyebutkan varian rasa dan merek es krim yang dikonsumsi oleh warga kota."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Harga es krim dan minuman dingin mengalami kenaikan sehingga tidak semua warga mampu membelinya setiap hari.',
+          "key": "B",
+          "text_markdown": "Harga es krim dan minuman dingin mengalami kenaikan sehingga tidak semua warga mampu membelinya setiap hari."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Penyiar radio keliru menyimpulkan hubungan sebab-akibat dari dua peristiwa yang berkorelasi, padahal keduanya merupakan dampak bersama dari cuaca musim kemarau yang sangat terik.',
+          "key": "C",
+          "text_markdown": "Penyiar radio keliru menyimpulkan hubungan sebab-akibat dari dua peristiwa yang berkorelasi, padahal keduanya merupakan dampak bersama dari cuaca musim kemarau yang sangat terik."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Konsumsi es krim berlebih terbukti secara medis hanya menyebabkan gangguan sakit gigi dan radang tenggorokan.',
+          "key": "D",
+          "text_markdown": "Konsumsi es krim berlebih terbukti secara medis hanya menyebabkan gangguan sakit gigi dan radang tenggorokan."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Warga yang tidak mengonsumsi es krim ternyata tetap dapat terserang penyakit musiman lain seperti flu.',
-        },
+          "key": "E",
+          "text_markdown": "Warga yang tidak mengonsumsi es krim ternyata tetap dapat terserang penyakit musiman lain seperti flu."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Pikirkan apakah makan es krim secara biologis dapat membuat tubuh terkena sengatan matahari (*heat stroke*). Apakah ada faktor cuaca eksternal yang menyebabkan orang ingin makan es krim sekaligus membuat orang terkena heat stroke?',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Analisis Kekeliruan Logika (*Logical Fallacy*):** Terjadi sesat pikir korelasi semu (*spurious correlation / cum hoc ergo propter hoc*), yaitu menganggap dua fenomena yang meningkat bersamaan pasti memiliki ikatan sebab-akibat langsung.
-- **Identifikasi Variabel Perancu (*Confounding Variable*):** Baik kenaikan pembelian es krim maupun lonjakan kasus *heat stroke* sama-sama dipicu oleh faktor ketiga, yaitu cuaca musim kemarau dengan suhu udara yang sangat terik (*heat wave*).
-- **Evaluasi Argumen:** Kesimpulan penyiar radio keliru karena mengabaikan variabel perancu lingkungan tersebut dan secara gegabah menuduh es krim sebagai penyebab sengatan panas.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Cari Faktor Penyebab Ketiga):**
-
-1. Tanyakan: mungkinkah makan es krim menyebabkan sengatan panas matahari (*heat stroke*)? Tentu tidak.
-2. Cari penyebab umum yang melahirkan kedua kondisi secara serentak: cuaca panas terik.
-3. Pilihlah opsi yang menyebutkan bahwa kedua peristiwa merupakan akibat dari faktor bersama musim kemarau terik.
-4. Jawaban yang tepat adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Merek atau varian rasa es krim tidak mengubah hakikat kekeliruan penalaran korelasi antara es krim dan sengatan panas.
-- **Pilihan B Salah:** Kenaikan harga es krim tidak relevan dengan sanggahan terhadap hubungan kausalitas yang diklaim.
-- **Pilihan D Salah:** Opsi ini hanya memaparkan efek kesehatan lain dari konsumsi gula tanpa menyentuh cacat metodologis penalaran korelasi vs sebab-akibat.
-- **Pilihan E Salah:** Keberadaan warga yang menderita penyakit lain tidak membongkar kesalahan klaim kausalitas antara es krim dan sengatan panas matahari.`,
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pikirkan apakah makan es krim secara biologis dapat membuat tubuh terkena sengatan matahari (*heat stroke*). Apakah ada faktor cuaca eksternal yang menyebabkan orang ingin makan es krim sekaligus membuat orang terkena heat stroke?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kekeliruan Logika (*Logical Fallacy*):** Terjadi sesat pikir korelasi semu (*spurious correlation / cum hoc ergo propter hoc*), yaitu menganggap dua fenomena yang meningkat bersamaan pasti memiliki ikatan sebab-akibat langsung.\n- **Identifikasi Variabel Perancu (*Confounding Variable*):** Baik kenaikan pembelian es krim maupun lonjakan kasus *heat stroke* sama-sama dipicu oleh faktor ketiga, yaitu cuaca musim kemarau dengan suhu udara yang sangat terik (*heat wave*).\n- **Evaluasi Argumen:** Kesimpulan penyiar radio keliru karena mengabaikan variabel perancu lingkungan tersebut dan secara gegabah menuduh es krim sebagai penyebab sengatan panas.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Faktor Penyebab Ketiga):**\n\n1. Tanyakan: mungkinkah makan es krim menyebabkan sengatan panas matahari (*heat stroke*)? Tentu tidak.\n2. Cari penyebab umum yang melahirkan kedua kondisi secara serentak: cuaca panas terik.\n3. Pilihlah opsi yang menyebutkan bahwa kedua peristiwa merupakan akibat dari faktor bersama musim kemarau terik.\n4. Jawaban yang tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Merek atau varian rasa es krim tidak mengubah hakikat kekeliruan penalaran korelasi antara es krim dan sengatan panas.\n- **Pilihan B Salah:** Kenaikan harga es krim tidak relevan dengan sanggahan terhadap hubungan kausalitas yang diklaim.\n- **Pilihan D Salah:** Opsi ini hanya memaparkan efek kesehatan lain dari konsumsi gula tanpa menyentuh cacat metodologis penalaran korelasi vs sebab-akibat.\n- **Pilihan E Salah:** Keberadaan warga yang menderita penyakit lain tidak membongkar kesalahan klaim kausalitas antara es krim dan sengatan panas matahari."
     },
     {
-      example_id: 'pu-01-03-ex3',
-      variation_name: 'Variasi 3: Evaluasi Validitas Klaim Sebab-Akibat (Level: Sulit)',
-      difficulty: 'hard',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Dinas Kebersihan Kota Melati mencatat bahwa setelah jalur sepeda khusus diresmikan di sepanjang jalan protokol pada awal tahun, volume timbulan sampah plastik di trotoar jalan tersebut menurun drastis sebesar 35%. Berdasarkan data ini, Kepala Dinas menyatakan bahwa penggunaan jalur sepeda oleh masyarakat merupakan faktor penyebab langsung yang meningkatkan kesadaran warga dalam menjaga kebersihan lingkungan di kawasan protokol.',
-      question_markdown:
-        'Manakah temuan fakta baru di bawah ini yang, jika benar, **paling memperlemah** kesimpulan kausalitas Kepala Dinas tersebut?',
-      options: [
+      "example_id": "pu-01-03-ex3",
+      "variation_name": "Variasi 3: Evaluasi Validitas Klaim Sebab-Akibat (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dinas Kebersihan Kota Melati mencatat bahwa setelah jalur sepeda khusus diresmikan di sepanjang jalan protokol pada awal tahun, volume timbulan sampah plastik di trotoar jalan tersebut menurun drastis sebesar 35%. Berdasarkan data ini, Kepala Dinas menyatakan bahwa penggunaan jalur sepeda oleh masyarakat merupakan faktor penyebab langsung yang meningkatkan kesadaran warga dalam menjaga kebersihan lingkungan di kawasan protokol.",
+      "question_markdown": "Manakah temuan fakta baru di bawah ini yang, jika benar, **paling memperlemah** kesimpulan kausalitas Kepala Dinas tersebut?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Sebagian besar pesepeda yang melintas di jalan protokol adalah warga yang berdomisili di luar Kota Melati.',
+          "key": "A",
+          "text_markdown": "Sebagian besar pesepeda yang melintas di jalan protokol adalah warga yang berdomisili di luar Kota Melati."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Bersamaan dengan peresmian jalur sepeda, pemerintah kota memasang 200 unit tempat sampah pilah baru dan menugaskan satgas patroli yang menerapkan sanksi denda tegas bagi pembuang sampah sembarangan.',
+          "key": "B",
+          "text_markdown": "Bersamaan dengan peresmian jalur sepeda, pemerintah kota memasang 200 unit tempat sampah pilah baru dan menugaskan satgas patroli yang menerapkan sanksi denda tegas bagi pembuang sampah sembarangan."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Jalur sepeda khusus tersebut lebih ramai dipadati oleh pengguna pada hari libur dibandingkan hari kerja biasa.',
+          "key": "C",
+          "text_markdown": "Jalur sepeda khusus tersebut lebih ramai dipadati oleh pengguna pada hari libur dibandingkan hari kerja biasa."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Jumlah toko yang menjual produk minuman dalam kemasan botol plastik di jalan protokol tetap sama seperti tahun sebelumnya.',
+          "key": "D",
+          "text_markdown": "Jumlah toko yang menjual produk minuman dalam kemasan botol plastik di jalan protokol tetap sama seperti tahun sebelumnya."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Pemerintah di beberapa kota tetangga belum mengadopsi kebijakan pembangunan fasilitas jalur sepeda khusus seperti di Kota Melati.',
-        },
+          "key": "E",
+          "text_markdown": "Pemerintah di beberapa kota tetangga belum mengadopsi kebijakan pembangunan fasilitas jalur sepeda khusus seperti di Kota Melati."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Untuk mematahkan simpulan Kepala Dinas, temukan fakta baru yang menunjukkan adanya faktor lain yang lebih masuk akal dan terjadi pada saat yang bersamaan yang sebenarnya menyebabkan sampah berkurang (misalnya pengawasan ketat, denda, atau fasilitas tempat sampah baru)!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Tujuan Evaluasi:** Memperlemah (*weaken*) klaim kausalitas bahwa *\"peresmian jalur sepeda $\\rightarrow$ penurunan timbulan sampah plastik sebesar 35%\"*.
-- **Metode Pembuktian:** Menghadirkan **penjelasan alternatif (*alternative cause*)** yang terjadi secara serentak (*confounding intervention*).
-- **Analisis Opsi B:** Fakta bahwa pemerintah memasang 200 unit tempat sampah pilah baru dan mengerahkan satgas patroli berdenda secara langsung membuktikan bahwa penambahan fasilitas tempat sampah dan penegakan hukum ketat itulah yang menyebabkan trotoar menjadi bersih, bukan keberadaan jalur sepedanya. Hal ini meruntuhkan validitas klaim kausalitas Kepala Dinas.
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Cari Intervensi Alternatif yang Nyata):**
-
-1. Tanyakan: mengapa timbulan sampah berkurang drastis? Apakah karena orang naik sepeda, atau karena ada fasilitas tempat sampah baru dan razia denda?
-2. Pilihan **B** menghadirkan faktor penyebab alternatif yang jauh lebih kuat dan masuk akal: 200 tempat sampah baru dan sanksi denda tegas.
-3. Kehadiran fakta baru ini langsung mematahkan klaim bahwa jalur sepedalah yang menjadi penyebab kebersihan.
-4. Jawaban yang tepat adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Asal domisili pesepeda tidak membuktikan maupun menggugurkan hipotesis mengenai dampak perilaku kebersihan.
-- **Pilihan C Salah:** Pola keramaian di hari libur hanya menggambarkan intensitas waktu penggunaan, bukan faktor yang membatalkan klaim kebersihan.
-- **Pilihan D Salah:** Jumlah toko penjual minuman plastik yang tetap tidak menjelaskan faktor di balik penurunan volume timbulan sampah di trotoar.
-- **Pilihan E Salah:** Kebijakan di kota tetangga tidak berpengaruh terhadap relasi sebab-akibat program di Kota Melati (*out of scope*).`,
-    },
-  ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk mematahkan simpulan Kepala Dinas, temukan fakta baru yang menunjukkan adanya faktor lain yang lebih masuk akal dan terjadi pada saat yang bersamaan yang sebenarnya menyebabkan sampah berkurang (misalnya pengawasan ketat, denda, atau fasilitas tempat sampah baru)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tujuan Evaluasi:** Memperlemah (*weaken*) klaim kausalitas bahwa *\"peresmian jalur sepeda $\\rightarrow$ penurunan timbulan sampah plastik sebesar 35%\"*.\n- **Metode Pembuktian:** Menghadirkan **penjelasan alternatif (*alternative cause*)** yang terjadi secara serentak (*confounding intervention*).\n- **Analisis Opsi B:** Fakta bahwa pemerintah memasang 200 unit tempat sampah pilah baru dan mengerahkan satgas patroli berdenda secara langsung membuktikan bahwa penambahan fasilitas tempat sampah dan penegakan hukum ketat itulah yang menyebabkan trotoar menjadi bersih, bukan keberadaan jalur sepedanya. Hal ini meruntuhkan validitas klaim kausalitas Kepala Dinas.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Intervensi Alternatif yang Nyata):**\n\n1. Tanyakan: mengapa timbulan sampah berkurang drastis? Apakah karena orang naik sepeda, atau karena ada fasilitas tempat sampah baru dan razia denda?\n2. Pilihan **B** menghadirkan faktor penyebab alternatif yang jauh lebih kuat dan masuk akal: 200 tempat sampah baru dan sanksi denda tegas.\n3. Kehadiran fakta baru ini langsung mematahkan klaim bahwa jalur sepedalah yang menjadi penyebab kebersihan.\n4. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Asal domisili pesepeda tidak membuktikan maupun menggugurkan hipotesis mengenai dampak perilaku kebersihan.\n- **Pilihan C Salah:** Pola keramaian di hari libur hanya menggambarkan intensitas waktu penggunaan, bukan faktor yang membatalkan klaim kebersihan.\n- **Pilihan D Salah:** Jumlah toko penjual minuman plastik yang tetap tidak menjelaskan faktor di balik penurunan volume timbulan sampah di trotoar.\n- **Pilihan E Salah:** Kebijakan di kota tetangga tidak berpengaruh terhadap relasi sebab-akibat program di Kota Melati (*out of scope*)."
+    }
+  ]
 };
 
 const MATERIAL_PU_02_01 = {
-  metadata: {
-    id: 'pu-2-1',
-    subtest: 'PU',
-    chapter_num: 2,
-    chapter_title: 'Penalaran Deduktif',
-    subchapter_num: '2.1',
-    subchapter_title: 'Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)',
-    title: 'Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)',
-    required_question_variations: [
-      'Penentuan Nilai Kebenaran Proposisi Majemuk (Konjungsi & Disjungsi)',
-      'Analisis Kondisi Syarat Cukup vs Syarat Perlu pada Implikasi',
-      'Logika Biimplikasi dan Kondisi Syarat Mutlak Ganda (HOTS)',
+  "metadata": {
+    "id": "pu-2-1",
+    "subtest": "PU",
+    "chapter_num": 2,
+    "chapter_title": "Penalaran Deduktif",
+    "subchapter_num": "2.1",
+    "subchapter_title": "Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)",
+    "title": "Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)",
+    "required_question_variations": [
+      "Penentuan Nilai Kebenaran Proposisi Majemuk (Konjungsi & Disjungsi)",
+      "Analisis Kondisi Syarat Cukup vs Syarat Perlu pada Implikasi",
+      "Logika Biimplikasi dan Kondisi Syarat Mutlak Ganda (HOTS)"
     ],
-    requires_svg: false,
-    updated_at: '2026-11-07',
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
   },
-  content: {
-    tactical_overview:
-      'Logika proposisi adalah fondasi berpikir deduktif yang mengkaji hubungan nilai kebenaran antarpernyataan menggunakan operator logika: konjungsi ("dan"), disjungsi ("atau"), implikasi ("jika... maka..."), dan biimplikasi ("...jika dan hanya jika..."). Di UTBK SNBT, kunci terpenting adalah membedakan syarat cukup (sufficient condition) dan syarat perlu (necessary condition) pada kalimat bersyarat, memahami bahwa disjungsi UTBK bersifat inklusif kecuali dinyatakan khusus, serta mengingat bahwa implikasi p → q hanya bernilai salah ketika janji anteseden (p) bernilai benar tetapi realisasi konsekuen (q) justru salah.',
-    exam_blueprint_markdown: `# 1. Prinsip Dasar
-
-Logika proposisi merupakan cabang penalaran deduktif yang mempelajari kebenaran suatu pernyataan berdasarkan susunan kalimat dan kata penghubung logikanya. Sebuah **proposisi** adalah kalimat deklaratif yang bernilai pasti, yaitu bernilai Benar ($B$) saja atau Salah ($S$) saja, namun tidak dapat bernilai keduanya sekaligus. Di dalam naskah ujian UTBK SNBT, Anda akan berhadapan dengan **proposisi majemuk**, yaitu gabungan dua proposisi tunggal atau lebih yang disatukan oleh operator logika formal.
-
-Empat operator logika dasar yang wajib Anda kuasai meliputi:
-1. **Konjungsi ($p \\land q$ — dibaca: "$p$ dan $q$", "serta", "walaupun")**  
-   Pernyataan konjungsi bernilai **BENAR HANYA JIKA** kedua proposisi pembentuknya ($p$ dan $q$) sama-sama bernilai benar. Apabila ada salah satu saja proposisi yang bernilai salah, maka keseluruhan kalimat konjungsi seketika gugur menjadi salah. Di dalam soal kontekstual UTBK, kata *"walaupun"*, *"namun"*, atau *"tetapi"* memiliki kedudukan logika yang setara dengan operator *"dan"*.
-2. **Disjungsi ($p \\lor q$ — dibaca: "$p$ atau $q$")**  
-   Secara baku, disjungsi pada naskah UTBK bersifat **inklusif**, yang berarti pernyataan bernilai **BENAR JIKA MINIMAL SALAH SATU** proposisi bernilai benar (termasuk jika kedua-duanya bernilai benar sekaligus). Pernyataan disjungsi hanya akan bernilai **SALAH HANYA JIKA** kedua proposisi ($p$ dan $q$) sama-sama salah. Pilihan jawaban yang menganggap kata *"atau"* melarang kedua syarat terwujud secara serentak merupakan pemahaman yang keliru secara logika matematika.
-3. **Implikasi ($p \\rightarrow q$ — dibaca: "Jika $p$, maka $q$")**  
-   Implikasi menghubungkan pernyataan syarat/sebab ($p$, disebut *anteseden*) dengan hasil/akibat ($q$, disebut *konsekuen*).  
-   - $p$ berkedudukan sebagai **Syarat Cukup (*Sufficient Condition*)**: jika $p$ sudah terpenuhi, maka $q$ pasti otomatis terjadi.  
-   - $q$ berkedudukan sebagai **Syarat Perlu (*Necessary Condition*)**: $q$ adalah syarat mutlak yang harus hadir agar $p$ dapat terwujud.  
-   - **Aturan Emas Kebenaran Implikasi:** Implikasi bernilai **SALAH HANYA JIKA** $p$ bernilai Benar namun $q$ justru bernilai Salah ($B \\rightarrow S = S$). Jika $p$ bernilai Salah, maka seluruh implikasi otomatis dianggap tetap bernilai Benar.
-4. **Biimplikasi ($p \\leftrightarrow q$ — dibaca: "$p$ jika dan hanya jika $q$")**  
-   Biimplikasi adalah relasi ekuivalensi dua arah ($p \\rightarrow q$ dan $q \\rightarrow p$). Pernyataan ini bernilai **BENAR JIKA DAN HANYA JIKA** kedua proposisi memiliki nilai kebenaran yang persis sama (keduanya sama-sama Benar atau keduanya sama-sama Salah). Pada biimplikasi, $p$ adalah syarat cukup sekaligus syarat perlu bagi $q$.
-
----
-
-# 2. Jebakan Pengecoh Khas UTBK
-
-Pembuat soal UTBK kerap merancang opsi jawaban yang sengaja memancing siswa agar terjebak pada kekeliruan logika sehari-hari:
-1. **Jebakan Menegaskan Konsekuen (*Affirming the Consequent*)**  
-   Pada pernyataan implikasi *"Jika $p$ maka $q$"*, siswa sering tergoda menyimpulkan bahwa jika fakta di lapangan menunjukkan $q$ terjadi, maka $p$ pasti terjadi. Ini adalah cacat logika fatal. Terwujudnya $q$ belum tentu disebabkan oleh $p$, karena $q$ bisa saja dipicu oleh faktor lain di luar $p$.
-2. **Jebakan Menyangkal Anteseden (*Denying the Antecedent*)**  
-   Siswa menyimpulkan bahwa jika $p$ tidak terjadi, maka $q$ pasti tidak terjadi. Padahal rumus *"Jika $p$ maka $q$"* tidak melarang $q$ untuk tetap terjadi melalui jalur lain meskipun $p$ tidak terlaksana.
-3. **Jebakan Menyamakan Implikasi dengan Biimplikasi**  
-   Pilihan jawaban menganggap hubungan bersyarat satu arah (*jika... maka...*) otomatis dapat dibalik dua arah. Ingat bahwa hubungan bolak-balik yang sah hanya berlaku jika teks secara eksplisit menuliskan frasa *"jika dan hanya jika"*.
-
----
-
-# 3. Trik Cepat (15 Detik)
-
-Gunakan strategi taktis berikut untuk mengeksekusi soal logika proposisi dengan cepat dan akurat:
-1. **Sederhanakan Kalimat Menjadi Rumus Simbolik Logika**  
-   Saat membaca wacana aturan atau klausul syarat yang panjang, segera terjemahkan ke dalam simbol logika singkat di lembar coretan, misalnya: $(A \\land B) \\lor C$ atau $P \\rightarrow Q$. Langkah ini menghindarkan Anda dari kebingungan redaksional kalimat wacana.
-2. **Kuasai Skenario Pelanggaran Implikasi ($B \\rightarrow S = S$)**  
-   Ingatlah bahwa satu-satunya cara membuktikan kalimat *"Jika P maka Q"* melanggar aturan atau bernilai bohong adalah saat kondisi $P$ terbukti terjadi, tetapi janji $Q$ tidak terlaksana.
-3. **Gunakan Hukum Kontraposisi untuk Menguji Kebenaran Pasti**  
-   Pernyataan *"Jika $p$ maka $q$"* ($p \\rightarrow q$) memiliki nilai kebenaran yang setara penuh (*ekuivalen*) dengan kontraposisinya, yaitu *"Jika tidak $q$, maka tidak $p$"* ($\\sim q \\rightarrow \\sim p$). Jika Anda menemukan fakta bahwa akibat tidak terjadi ($\\sim q$), Anda dapat langsung menyimpulkan dengan pasti bahwa sebabnya tidak terjadi ($\\sim p$).
-
----
-
-# 4. Kesimpulan
-
-- **Hakikat Materi:** Logika proposisi menilai kebenaran kalimat majemuk berdasarkan nilai kebenaran proposisi tunggal dan operator perangkainya.
-- **Aturan Kebenaran Kunci:**
-  - Konjungsi ($p \\land q$): Benar jika **keduanya Benar**.
-  - Disjungsi ($p \\lor q$): Benar jika **minimal salah satu Benar**.
-  - Implikasi ($p \\rightarrow q$): Salah jika **$p$ Benar dan $q$ Salah** ($B \\rightarrow S = S$).
-  - Biimplikasi ($p \\leftrightarrow q$): Benar jika **nilai keduanya sama**.
-- **Kaidah Syarat:** Pada implikasi $p \\rightarrow q$, $p$ adalah syarat cukup dan $q$ adalah syarat perlu. Penegasan $q$ tidak membuktikan $p$, dan penyangkalan $p$ tidak membuktikan ketiadaan $q$.
-- **Strategi Eksekusi:** Terjemahkan ke simbol logika, gunakan kontraposisi ($\\sim q \\rightarrow \\sim p$), dan eliminasi opsi yang menegaskan konsekuen.
-
----
-
-# 5. Bedah Soal dan Variasi UTBK
-
-Berikut adalah bedah tiga variasi soal Logika Proposisi yang rutin muncul pada UTBK SNBT, lengkap dengan wacana soal, opsi pilihan ganda A–E utuh, kunci jawaban, dan pembahasan logika secara terperinci:
-
-### Variasi 1: Penentuan Nilai Kebenaran Proposisi Majemuk (Konjungsi & Disjungsi)
-
-> **Konteks Wacana Soal:**  
-> Panitia seleksi beasiswa kepemimpinan menetapkan ketentuan bagi calon penerima beasiswa sebagai berikut:  
-> *"Seorang pendaftar berhak lolos seleksi berkas jika memenuhi ketentuan: memiliki IPK minimal 3,50 DAN aktif dalam organisasi kampus, ATAU memiliki sertifikat prestasi kompetisi tingkat nasional."*  
->  
-> Berikut adalah catatan profil lima orang pendaftar:  
-> - Aryo: Memiliki IPK 3,65, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.  
-> - Bima: Memiliki IPK 3,40, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.  
-> - Cantika: Memiliki IPK 3,25, tidak aktif dalam organisasi kampus, tetapi memiliki sertifikat juara 1 kompetisi debat nasional.  
-> - Dimas: Memiliki IPK 3,48, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.  
-> - Erna: Memiliki IPK 3,30, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.  
->  
-> **Pertanyaan UTBK:** *Berdasarkan aturan logika proposisi tersebut, siapakah pendaftar yang pasti lolos seleksi berkas beasiswa kepemimpinan?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Aryo  
-> - **B.** Bima  
-> - **C.** Cantika  
-> - **D.** Dimas  
-> - **E.** Erna
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Struktur Logika:** Aturan seleksi berkas beasiswa dapat dirumuskan secara simbolik sebagai: $(P \\land Q) \\lor R$  
-  di mana:  
-  - $P$ = Memiliki IPK $\\ge 3,50$  
-  - $Q$ = Aktif dalam organisasi kampus  
-  - $R$ = Memiliki sertifikat prestasi kompetisi tingkat nasional  
-  Karena operator utamanya adalah disjungsi inklusif ($\\lor$), maka pendaftar berhak lolos apabila **blok pertama $(P \\land Q)$ bernilai Benar** ATAU **blok kedua $(R)$ bernilai Benar**.
-- **Evaluasi Nilai Kebenaran Setiap Pendaftar:**
-  - **Aryo:** $P$ Benar ($3,65 \\ge 3,50$), $Q$ Salah, $R$ Salah. Nilai logika: $(B \\land S) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).
-  - **Bima:** $P$ Salah ($3,40 < 3,50$), $Q$ Benar, $R$ Salah. Nilai logika: $(S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).
-  - **Cantika:** $P$ Salah ($3,25 < 3,50$), $Q$ Salah, namun $R$ Benar (memiliki sertifikat juara 1 nasional). Nilai logika: $(S \\land S) \\lor B = S \\lor B = \\text{Benar}$ (Pasti Lolos!).
-  - **Dimas:** $P$ Salah ($3,48 < 3,50$), $Q$ Benar, $R$ Salah. Nilai logika: $(S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).
-  - **Erna:** $P$ Salah, $Q$ Salah, $R$ Salah. Nilai logika: $(S \\land S) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).
-- **Penerapan Trik Cepat (15 Detik):** Perhatikan kata *"ATAU"* sebelum syarat sertifikat prestasi nasional ($R$). Adanya disjungsi ini berarti siapa pun yang memiliki sertifikat nasional otomatis langsung lolos tanpa memedulikan IPK maupun organisasi. Langsung pindai profil pendaftar yang memiliki sertifikat prestasi nasional: hanya Cantika yang memilikinya. Jawaban yang benar adalah pilihan **C**.
-
----
-
-### Variasi 2: Analisis Kondisi Syarat Cukup vs Syarat Perlu pada Implikasi
-
-> **Konteks Wacana Soal:**  
-> Sebuah perusahaan teknologi terkemuka memberlakukan aturan resmi dalam proses rekrutmen divisi rekayasa perangkat lunak:  
-> *"Jika seorang pelamar memiliki sertifikasi keahlian komputasi awan tingkat profesional, maka pelamar tersebut pasti langsung dipanggil untuk wawancara teknis tahap akhir."*  
->  
-> Dalam proses rekrutmen bulan ini, panitia mencatat dua fakta nyata di lapangan:  
-> (1) Doni tidak dipanggil untuk wawancara teknis tahap akhir.  
-> (2) Farhan dipanggil untuk wawancara teknis tahap akhir.  
->  
-> **Pertanyaan UTBK:** *Berdasarkan kaidah logika proposisi (implikasi), manakah simpulan berikut yang paling tepat dan pasti bernilai benar?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Doni memiliki sertifikasi keahlian komputasi awan tingkat profesional.  
-> - **B.** Farhan pasti memiliki sertifikasi keahlian komputasi awan tingkat profesional.  
-> - **C.** Doni tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional.  
-> - **D.** Farhan pasti tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional.  
-> - **E.** Doni dan Farhan sama-sama memiliki sertifikasi keahlian komputasi awan tingkat profesional.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Struktur Logika Implikasi:** Rumus aturan perusahaan adalah $p \\rightarrow q$, di mana:  
-  - $p$ = Memiliki sertifikasi keahlian komputasi awan (Syarat Cukup / Anteseden)  
-  - $q$ = Dipanggil untuk wawancara teknis tahap akhir (Syarat Perlu / Konsekuen)
-- **Evaluasi Logika Doni (Penerapan Kontraposisi):**  
-  Fakta Doni adalah $\\sim q$ (Doni *tidak* dipanggil wawancara teknis tahap akhir). Berdasarkan hukum kontraposisi / kaidah penarikan kesimpulan *Modus Tollens*, jika premis umum $p \\rightarrow q$ bernilai benar dan terjadi $\\sim q$, maka konklusi logis yang pasti adalah $\\sim p$ (Doni pasti tidak memiliki sertifikasi keahlian komputasi awan). Oleh sebab itu, pernyataan pada pilihan C pasti bernilai benar.
-- **Mengapa Opsi Farhan Salah? (Jebakan Menegaskan Konsekuen):**  
-  Fakta Farhan adalah $q$ (Farhan dipanggil wawancara tahap akhir). Menarik simpulan bahwa Farhan pasti memiliki sertifikasi ($p$) merupakan cacat logika *affirming the consequent*. Sertifikasi hanyalah salah satu syarat cukup; pelamar bisa saja dipanggil wawancara karena portofolio proyek yang luar biasa atau jalur rekomendasi lain. Dengan demikian, status sertifikasi Farhan berada pada taraf belum tentu benar (pilihan B dan D keliru).
-- **Penerapan Trik Cepat (15 Detik):** Ingat rumus kontraposisi: jika akibat tidak terjadi ($\\sim q$), maka sebab pasti tidak terjadi ($\\sim p$). Karena Doni tidak dipanggil wawancara, maka Doni pasti tidak punya sertifikasi. Coret opsi spekulatif mengenai Farhan (pilihan B dan D) karena menegaskan konsekuen. Pilihan yang tepat adalah pilihan **C**.
-
----
-
-### Variasi 3: Logika Biimplikasi dan Kondisi Syarat Mutlak Ganda (HOTS)
-
-> **Konteks Wacana Soal:**  
-> Dalam regulasi pengawasan perbankan, penilaian status kesehatan bank devisa ditetapkan secara mengikat dengan ketentuan biimplikasi berikut:  
-> *"Sebuah bank devisa berhak memperoleh predikat Sangat Sehat jika dan hanya jika bank tersebut mempertahankan rasio kecukupan modal di atas 15% serta mencatatkan rasio kredit macet di bawah 3%."*  
->  
-> Dalam laporan audit tahunan perbankan nasional resmi:  
-> (1) Bank Megantara resmi diumumkan memperoleh predikat Sangat Sehat.  
-> (2) Bank Sentosa dinyatakan gagal memperoleh predikat Sangat Sehat, meskipun rasio kredit macetnya tercatat hanya 2,1%.  
->  
-> **Pertanyaan UTBK:** *Berdasarkan kaidah logika biimplikasi, manakah pernyataan berikut yang pasti bernilai benar?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Bank Megantara memiliki rasio kecukupan modal di atas 15%, dan Bank Sentosa memiliki rasio kecukupan modal tidak lebih dari 15%.  
-> - **B.** Bank Sentosa pasti memiliki rasio kredit macet di atas 3%.  
-> - **C.** Bank Megantara belum tentu memiliki rasio kredit macet di bawah 3%.  
-> - **D.** Semua bank yang memiliki rasio kredit macet di bawah 3% pasti memperoleh predikat Sangat Sehat.  
-> - **E.** Bank Sentosa akan memperoleh predikat Sangat Sehat jika rasio kredit macetnya diturunkan menjadi 1,5%.
-
-**Kunci Jawaban: A**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Struktur Logika Biimplikasi:** Rumus regulasi adalah:  
-  $P \\leftrightarrow (M \\land K)$  
-  di mana:  
-  - $P$ = Memperoleh predikat Sangat Sehat  
-  - $M$ = Rasio kecukupan modal $> 15\\%$  
-  - $K$ = Rasio kredit macet $< 3\\%$  
-  Sifat biimplikasi menyatakan bahwa sisi kiri ($P$) dan sisi kanan $(M \\land K)$ wajib memiliki nilai kebenaran yang identik ($B \\leftrightarrow B$ atau $S \\leftrightarrow S$).
-- **Analisis Bank Megantara:** Bank Megantara memperoleh predikat Sangat Sehat ($P = \\text{Benar}$). Agar biimplikasi bernilai benar, maka blok kanan $(M \\land K)$ wajib bernilai Benar. Karena konjungsi bernilai benar hanya jika kedua syarat terpenuhi, maka Bank Megantara **pasti** memiliki rasio modal $> 15\\%$ ($M = \\text{Benar}$) dan kredit macet $< 3\\%$ ($K = \\text{Benar}$).
-- **Analisis Bank Sentosa:** Bank Sentosa gagal memperoleh predikat Sangat Sehat ($P = \\text{Salah}$). Maka sisi kanan $(M \\land K)$ wajib bernilai **Salah**. Di dalam teks diketahui rasio kredit macet Bank Sentosa adalah $2,1\\%$, yang berarti syarat $K$ telah terpenuhi ($K = \\text{Benar}$ karena $2,1\\% < 3\\%$). Agar konjungsi $(M \\land K)$ menghasilkan nilai Salah sementara $K$ sudah Benar, maka penyebab kegagalan satu-satunya adalah syarat modal ($M$) wajib bernilai **Salah**. Artinya, Bank Sentosa **pasti memiliki rasio kecukupan modal tidak lebih dari $15\\%$** ($M \\le 15\\%$).
-- **Mengapa Opsi Lain Salah?**
-  - **Pilihan B Salah:** Bertentangan langsung dengan fakta teks yang menyebutkan kredit macet Bank Sentosa adalah $2,1\\%$, bukan di atas $3\\%$.
-  - **Pilihan C Salah:** Bank Megantara telah memperoleh predikat Sangat Sehat, sehingga kredit macetnya pasti di bawah $3\\%$, bukan belum tentu.
-  - **Pilihan D Salah:** Kredit macet $< 3\\%$ hanyalah salah satu syarat konjungsi; jika rasio modalnya $\\le 15\\%$, bank tersebut tetap tidak akan memperoleh predikat Sangat Sehat.
-  - **Pilihan E Salah:** Menurunkan kredit macet ke $1,5\\%$ tidak akan mengubah keadaan apabila rasio kecukupan modalnya tetap berada di bawah atau sama dengan $15\\%$.
-- **Penerapan Trik Cepat (15 Detik):** Ingat sifat biimplikasi dua arah: jika predikat gagal ($P = \\text{Salah}$), maka syarat majemuk di sisi kanan harus ada yang gagal. Karena kredit macet Bank Sentosa sudah lolos ($2,1\\% < 3\\%$), maka yang pasti gagal adalah rasio kecukupan modalnya (tidak lebih dari $15\\%$). Gabungkan dengan status Bank Megantara yang pasti lolos kedua syaratnya. Pernyataan yang merangkum kedua deduksi ini secara tepat adalah pilihan **A**.`,
-    visualizations_svg: [],
-    distractor_traps: [
-      'Affirming the Consequent (Menegaskan Konsekuen): Menganggap terpenuhinya akibat/konsekuen (q) otomatis membuktikan bahwa syarat p pasti terjadi.',
-      'Jebakan Disjungsi Eksklusif Semu: Mengira kata "atau" melarang kedua kondisi terjadi bersamaan, padahal disjungsi logika bernilai benar saat kedua syarat sama-sama terpenuhi.',
-      'Jebakan Konversi Implikasi: Menyamakan "Jika p maka q" dengan "Jika q maka p", padahal implikasi adalah hubungan bersyarat satu arah, bukan biimplikasi.',
+  "content": {
+    "tactical_overview": "Logika proposisi adalah fondasi berpikir deduktif yang mengkaji hubungan nilai kebenaran antarpernyataan menggunakan operator logika: konjungsi (\"dan\"), disjungsi (\"atau\"), implikasi (\"jika... maka...\"), dan biimplikasi (\"...jika dan hanya jika...\"). Di UTBK SNBT, kunci terpenting adalah membedakan syarat cukup (sufficient condition) dan syarat perlu (necessary condition) pada kalimat bersyarat, memahami bahwa disjungsi UTBK bersifat inklusif kecuali dinyatakan khusus, serta mengingat bahwa implikasi p → q hanya bernilai salah ketika janji anteseden (p) bernilai benar tetapi realisasi konsekuen (q) justru salah.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-02-01-truth-table]]\n\n\nLogika proposisi merupakan cabang penalaran deduktif yang mempelajari kebenaran suatu pernyataan berdasarkan susunan kalimat dan kata penghubung logikanya. Sebuah **proposisi** adalah kalimat deklaratif yang bernilai pasti, yaitu bernilai Benar ($B$) saja atau Salah ($S$) saja, namun tidak dapat bernilai keduanya sekaligus. Di dalam naskah ujian UTBK SNBT, Anda akan berhadapan dengan **proposisi majemuk**, yaitu gabungan dua proposisi tunggal atau lebih yang disatukan oleh operator logika formal.\n\nEmpat operator logika dasar yang wajib Anda kuasai meliputi:\n1. **Konjungsi ($p \\land q$ — dibaca: \"$p$ dan $q$\", \"serta\", \"walaupun\")**  \n   Pernyataan konjungsi bernilai **BENAR HANYA JIKA** kedua proposisi pembentuknya ($p$ dan $q$) sama-sama bernilai benar. Apabila ada salah satu saja proposisi yang bernilai salah, maka keseluruhan kalimat konjungsi seketika gugur menjadi salah. Di dalam soal kontekstual UTBK, kata *\"walaupun\"*, *\"namun\"*, atau *\"tetapi\"* memiliki kedudukan logika yang setara dengan operator *\"dan\"*.\n2. **Disjungsi ($p \\lor q$ — dibaca: \"$p$ atau $q$\")**  \n   Secara baku, disjungsi pada naskah UTBK bersifat **inklusif**, yang berarti pernyataan bernilai **BENAR JIKA MINIMAL SALAH SATU** proposisi bernilai benar (termasuk jika kedua-duanya bernilai benar sekaligus). Pernyataan disjungsi hanya akan bernilai **SALAH HANYA JIKA** kedua proposisi ($p$ dan $q$) sama-sama salah. Pilihan jawaban yang menganggap kata *\"atau\"* melarang kedua syarat terwujud secara serentak merupakan pemahaman yang keliru secara logika matematika.\n3. **Implikasi ($p \\rightarrow q$ — dibaca: \"Jika $p$, maka $q$\")**  \n   Implikasi menghubungkan pernyataan syarat/sebab ($p$, disebut *anteseden*) dengan hasil/akibat ($q$, disebut *konsekuen*).  \n   - $p$ berkedudukan sebagai **Syarat Cukup (*Sufficient Condition*)**: jika $p$ sudah terpenuhi, maka $q$ pasti otomatis terjadi.  \n   - $q$ berkedudukan sebagai **Syarat Perlu (*Necessary Condition*)**: $q$ adalah syarat mutlak yang harus hadir agar $p$ dapat terwujud.  \n   - **Aturan Emas Kebenaran Implikasi:** Implikasi bernilai **SALAH HANYA JIKA** $p$ bernilai Benar namun $q$ justru bernilai Salah ($B \\rightarrow S = S$). Jika $p$ bernilai Salah, maka seluruh implikasi otomatis dianggap tetap bernilai Benar.\n4. **Biimplikasi ($p \\leftrightarrow q$ — dibaca: \"$p$ jika dan hanya jika $q$\")**  \n   Biimplikasi adalah relasi ekuivalensi dua arah ($p \\rightarrow q$ dan $q \\rightarrow p$). Pernyataan ini bernilai **BENAR JIKA DAN HANYA JIKA** kedua proposisi memiliki nilai kebenaran yang persis sama (keduanya sama-sama Benar atau keduanya sama-sama Salah). Pada biimplikasi, $p$ adalah syarat cukup sekaligus syarat perlu bagi $q$.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK kerap merancang opsi jawaban yang sengaja memancing siswa agar terjebak pada kekeliruan logika sehari-hari:\n1. **Jebakan Menegaskan Konsekuen (*Affirming the Consequent*)**  \n   Pada pernyataan implikasi *\"Jika $p$ maka $q$\"*, siswa sering tergoda menyimpulkan bahwa jika fakta di lapangan menunjukkan $q$ terjadi, maka $p$ pasti terjadi. Ini adalah cacat logika fatal. Terwujudnya $q$ belum tentu disebabkan oleh $p$, karena $q$ bisa saja dipicu oleh faktor lain di luar $p$.\n2. **Jebakan Menyangkal Anteseden (*Denying the Antecedent*)**  \n   Siswa menyimpulkan bahwa jika $p$ tidak terjadi, maka $q$ pasti tidak terjadi. Padahal rumus *\"Jika $p$ maka $q$\"* tidak melarang $q$ untuk tetap terjadi melalui jalur lain meskipun $p$ tidak terlaksana.\n3. **Jebakan Menyamakan Implikasi dengan Biimplikasi**  \n   Pilihan jawaban menganggap hubungan bersyarat satu arah (*jika... maka...*) otomatis dapat dibalik dua arah. Ingat bahwa hubungan bolak-balik yang sah hanya berlaku jika teks secara eksplisit menuliskan frasa *\"jika dan hanya jika\"*.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nGunakan strategi taktis berikut untuk mengeksekusi soal logika proposisi dengan cepat dan akurat:\n1. **Sederhanakan Kalimat Menjadi Rumus Simbolik Logika**  \n   Saat membaca wacana aturan atau klausul syarat yang panjang, segera terjemahkan ke dalam simbol logika singkat di lembar coretan, misalnya: $(A \\land B) \\lor C$ atau $P \\rightarrow Q$. Langkah ini menghindarkan Anda dari kebingungan redaksional kalimat wacana.\n2. **Kuasai Skenario Pelanggaran Implikasi ($B \\rightarrow S = S$)**  \n   Ingatlah bahwa satu-satunya cara membuktikan kalimat *\"Jika P maka Q\"* melanggar aturan atau bernilai bohong adalah saat kondisi $P$ terbukti terjadi, tetapi janji $Q$ tidak terlaksana.\n3. **Gunakan Hukum Kontraposisi untuk Menguji Kebenaran Pasti**  \n   Pernyataan *\"Jika $p$ maka $q$\"* ($p \\rightarrow q$) memiliki nilai kebenaran yang setara penuh (*ekuivalen*) dengan kontraposisinya, yaitu *\"Jika tidak $q$, maka tidak $p$\"* ($\\sim q \\rightarrow \\sim p$). Jika Anda menemukan fakta bahwa akibat tidak terjadi ($\\sim q$), Anda dapat langsung menyimpulkan dengan pasti bahwa sebabnya tidak terjadi ($\\sim p$).\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Logika proposisi menilai kebenaran kalimat majemuk berdasarkan nilai kebenaran proposisi tunggal dan operator perangkainya.\n- **Aturan Kebenaran Kunci:**\n  - Konjungsi ($p \\land q$): Benar jika **keduanya Benar**.\n  - Disjungsi ($p \\lor q$): Benar jika **minimal salah satu Benar**.\n  - Implikasi ($p \\rightarrow q$): Salah jika **$p$ Benar dan $q$ Salah** ($B \\rightarrow S = S$).\n  - Biimplikasi ($p \\leftrightarrow q$): Benar jika **nilai keduanya sama**.\n- **Kaidah Syarat:** Pada implikasi $p \\rightarrow q$, $p$ adalah syarat cukup dan $q$ adalah syarat perlu. Penegasan $q$ tidak membuktikan $p$, dan penyangkalan $p$ tidak membuktikan ketiadaan $q$.\n- **Strategi Eksekusi:** Terjemahkan ke simbol logika, gunakan kontraposisi ($\\sim q \\rightarrow \\sim p$), dan eliminasi opsi yang menegaskan konsekuen.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Logika Proposisi yang rutin muncul pada UTBK SNBT, lengkap dengan wacana soal, opsi pilihan ganda A–E utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Penentuan Nilai Kebenaran Proposisi Majemuk (Konjungsi & Disjungsi)\n\n> **Konteks Wacana Soal:**  \n> Panitia seleksi beasiswa kepemimpinan menetapkan ketentuan bagi calon penerima beasiswa sebagai berikut:  \n> *\"Seorang pendaftar berhak lolos seleksi berkas jika memenuhi ketentuan: memiliki IPK minimal 3,50 DAN aktif dalam organisasi kampus, ATAU memiliki sertifikat prestasi kompetisi tingkat nasional.\"*  \n>  \n> Berikut adalah catatan profil lima orang pendaftar:  \n> - Aryo: Memiliki IPK 3,65, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.  \n> - Bima: Memiliki IPK 3,40, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.  \n> - Cantika: Memiliki IPK 3,25, tidak aktif dalam organisasi kampus, tetapi memiliki sertifikat juara 1 kompetisi debat nasional.  \n> - Dimas: Memiliki IPK 3,48, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.  \n> - Erna: Memiliki IPK 3,30, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan aturan logika proposisi tersebut, siapakah pendaftar yang pasti lolos seleksi berkas beasiswa kepemimpinan?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Aryo  \n> - **B.** Bima  \n> - **C.** Cantika  \n> - **D.** Dimas  \n> - **E.** Erna\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Logika:** Aturan seleksi berkas beasiswa dapat dirumuskan secara simbolik sebagai: $(P \\land Q) \\lor R$  \n  di mana:  \n  - $P$ = Memiliki IPK $\\ge 3,50$  \n  - $Q$ = Aktif dalam organisasi kampus  \n  - $R$ = Memiliki sertifikat prestasi kompetisi tingkat nasional  \n  Karena operator utamanya adalah disjungsi inklusif ($\\lor$), maka pendaftar berhak lolos apabila **blok pertama $(P \\land Q)$ bernilai Benar** ATAU **blok kedua $(R)$ bernilai Benar**.\n- **Evaluasi Nilai Kebenaran Setiap Pendaftar:**\n  - **Aryo:** $P$ Benar ($3,65 \\ge 3,50$), $Q$ Salah, $R$ Salah. Nilai logika: $(B \\land S) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).\n  - **Bima:** $P$ Salah ($3,40 < 3,50$), $Q$ Benar, $R$ Salah. Nilai logika: $(S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).\n  - **Cantika:** $P$ Salah ($3,25 < 3,50$), $Q$ Salah, namun $R$ Benar (memiliki sertifikat juara 1 nasional). Nilai logika: $(S \\land S) \\lor B = S \\lor B = \\text{Benar}$ (Pasti Lolos!).\n  - **Dimas:** $P$ Salah ($3,48 < 3,50$), $Q$ Benar, $R$ Salah. Nilai logika: $(S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).\n  - **Erna:** $P$ Salah, $Q$ Salah, $R$ Salah. Nilai logika: $(S \\land S) \\lor S = S \\lor S = \\text{Salah}$ (Tidak Lolos).\n- **Penerapan Trik Cepat (15 Detik):** Perhatikan kata *\"ATAU\"* sebelum syarat sertifikat prestasi nasional ($R$). Adanya disjungsi ini berarti siapa pun yang memiliki sertifikat nasional otomatis langsung lolos tanpa memedulikan IPK maupun organisasi. Langsung pindai profil pendaftar yang memiliki sertifikat prestasi nasional: hanya Cantika yang memilikinya. Jawaban yang benar adalah pilihan **C**.\n\n---\n\n### Variasi 2: Analisis Kondisi Syarat Cukup vs Syarat Perlu pada Implikasi\n\n> **Konteks Wacana Soal:**  \n> Sebuah perusahaan teknologi terkemuka memberlakukan aturan resmi dalam proses rekrutmen divisi rekayasa perangkat lunak:  \n> *\"Jika seorang pelamar memiliki sertifikasi keahlian komputasi awan tingkat profesional, maka pelamar tersebut pasti langsung dipanggil untuk wawancara teknis tahap akhir.\"*  \n>  \n> Dalam proses rekrutmen bulan ini, panitia mencatat dua fakta nyata di lapangan:  \n> (1) Doni tidak dipanggil untuk wawancara teknis tahap akhir.  \n> (2) Farhan dipanggil untuk wawancara teknis tahap akhir.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan kaidah logika proposisi (implikasi), manakah simpulan berikut yang paling tepat dan pasti bernilai benar?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Doni memiliki sertifikasi keahlian komputasi awan tingkat profesional.  \n> - **B.** Farhan pasti memiliki sertifikasi keahlian komputasi awan tingkat profesional.  \n> - **C.** Doni tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional.  \n> - **D.** Farhan pasti tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional.  \n> - **E.** Doni dan Farhan sama-sama memiliki sertifikasi keahlian komputasi awan tingkat profesional.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Logika Implikasi:** Rumus aturan perusahaan adalah $p \\rightarrow q$, di mana:  \n  - $p$ = Memiliki sertifikasi keahlian komputasi awan (Syarat Cukup / Anteseden)  \n  - $q$ = Dipanggil untuk wawancara teknis tahap akhir (Syarat Perlu / Konsekuen)\n- **Evaluasi Logika Doni (Penerapan Kontraposisi):**  \n  Fakta Doni adalah $\\sim q$ (Doni *tidak* dipanggil wawancara teknis tahap akhir). Berdasarkan hukum kontraposisi / kaidah penarikan kesimpulan *Modus Tollens*, jika premis umum $p \\rightarrow q$ bernilai benar dan terjadi $\\sim q$, maka konklusi logis yang pasti adalah $\\sim p$ (Doni pasti tidak memiliki sertifikasi keahlian komputasi awan). Oleh sebab itu, pernyataan pada pilihan C pasti bernilai benar.\n- **Mengapa Opsi Farhan Salah? (Jebakan Menegaskan Konsekuen):**  \n  Fakta Farhan adalah $q$ (Farhan dipanggil wawancara tahap akhir). Menarik simpulan bahwa Farhan pasti memiliki sertifikasi ($p$) merupakan cacat logika *affirming the consequent*. Sertifikasi hanyalah salah satu syarat cukup; pelamar bisa saja dipanggil wawancara karena portofolio proyek yang luar biasa atau jalur rekomendasi lain. Dengan demikian, status sertifikasi Farhan berada pada taraf belum tentu benar (pilihan B dan D keliru).\n- **Penerapan Trik Cepat (15 Detik):** Ingat rumus kontraposisi: jika akibat tidak terjadi ($\\sim q$), maka sebab pasti tidak terjadi ($\\sim p$). Karena Doni tidak dipanggil wawancara, maka Doni pasti tidak punya sertifikasi. Coret opsi spekulatif mengenai Farhan (pilihan B dan D) karena menegaskan konsekuen. Pilihan yang tepat adalah pilihan **C**.\n\n---\n\n### Variasi 3: Logika Biimplikasi dan Kondisi Syarat Mutlak Ganda (HOTS)\n\n> **Konteks Wacana Soal:**  \n> Dalam regulasi pengawasan perbankan, penilaian status kesehatan bank devisa ditetapkan secara mengikat dengan ketentuan biimplikasi berikut:  \n> *\"Sebuah bank devisa berhak memperoleh predikat Sangat Sehat jika dan hanya jika bank tersebut mempertahankan rasio kecukupan modal di atas 15% serta mencatatkan rasio kredit macet di bawah 3%.\"*  \n>  \n> Dalam laporan audit tahunan perbankan nasional resmi:  \n> (1) Bank Megantara resmi diumumkan memperoleh predikat Sangat Sehat.  \n> (2) Bank Sentosa dinyatakan gagal memperoleh predikat Sangat Sehat, meskipun rasio kredit macetnya tercatat hanya 2,1%.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan kaidah logika biimplikasi, manakah pernyataan berikut yang pasti bernilai benar?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Bank Megantara memiliki rasio kecukupan modal di atas 15%, dan Bank Sentosa memiliki rasio kecukupan modal tidak lebih dari 15%.  \n> - **B.** Bank Sentosa pasti memiliki rasio kredit macet di atas 3%.  \n> - **C.** Bank Megantara belum tentu memiliki rasio kredit macet di bawah 3%.  \n> - **D.** Semua bank yang memiliki rasio kredit macet di bawah 3% pasti memperoleh predikat Sangat Sehat.  \n> - **E.** Bank Sentosa akan memperoleh predikat Sangat Sehat jika rasio kredit macetnya diturunkan menjadi 1,5%.\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Logika Biimplikasi:** Rumus regulasi adalah:  \n  $P \\leftrightarrow (M \\land K)$  \n  di mana:  \n  - $P$ = Memperoleh predikat Sangat Sehat  \n  - $M$ = Rasio kecukupan modal $> 15\\%$  \n  - $K$ = Rasio kredit macet $< 3\\%$  \n  Sifat biimplikasi menyatakan bahwa sisi kiri ($P$) dan sisi kanan $(M \\land K)$ wajib memiliki nilai kebenaran yang identik ($B \\leftrightarrow B$ atau $S \\leftrightarrow S$).\n- **Analisis Bank Megantara:** Bank Megantara memperoleh predikat Sangat Sehat ($P = \\text{Benar}$). Agar biimplikasi bernilai benar, maka blok kanan $(M \\land K)$ wajib bernilai Benar. Karena konjungsi bernilai benar hanya jika kedua syarat terpenuhi, maka Bank Megantara **pasti** memiliki rasio modal $> 15\\%$ ($M = \\text{Benar}$) dan kredit macet $< 3\\%$ ($K = \\text{Benar}$).\n- **Analisis Bank Sentosa:** Bank Sentosa gagal memperoleh predikat Sangat Sehat ($P = \\text{Salah}$). Maka sisi kanan $(M \\land K)$ wajib bernilai **Salah**. Di dalam teks diketahui rasio kredit macet Bank Sentosa adalah $2,1\\%$, yang berarti syarat $K$ telah terpenuhi ($K = \\text{Benar}$ karena $2,1\\% < 3\\%$). Agar konjungsi $(M \\land K)$ menghasilkan nilai Salah sementara $K$ sudah Benar, maka penyebab kegagalan satu-satunya adalah syarat modal ($M$) wajib bernilai **Salah**. Artinya, Bank Sentosa **pasti memiliki rasio kecukupan modal tidak lebih dari $15\\%$** ($M \\le 15\\%$).\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan B Salah:** Bertentangan langsung dengan fakta teks yang menyebutkan kredit macet Bank Sentosa adalah $2,1\\%$, bukan di atas $3\\%$.\n  - **Pilihan C Salah:** Bank Megantara telah memperoleh predikat Sangat Sehat, sehingga kredit macetnya pasti di bawah $3\\%$, bukan belum tentu.\n  - **Pilihan D Salah:** Kredit macet $< 3\\%$ hanyalah salah satu syarat konjungsi; jika rasio modalnya $\\le 15\\%$, bank tersebut tetap tidak akan memperoleh predikat Sangat Sehat.\n  - **Pilihan E Salah:** Menurunkan kredit macet ke $1,5\\%$ tidak akan mengubah keadaan apabila rasio kecukupan modalnya tetap berada di bawah atau sama dengan $15\\%$.\n- **Penerapan Trik Cepat (15 Detik):** Ingat sifat biimplikasi dua arah: jika predikat gagal ($P = \\text{Salah}$), maka syarat majemuk di sisi kanan harus ada yang gagal. Karena kredit macet Bank Sentosa sudah lolos ($2,1\\% < 3\\%$), maka yang pasti gagal adalah rasio kecukupan modalnya (tidak lebih dari $15\\%$). Gabungkan dengan status Bank Megantara yang pasti lolos kedua syaratnya. Pernyataan yang merangkum kedua deduksi ini secara tepat adalah pilihan **A**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-02-01-truth-table",
+        "title": "Peta Logika 4 Operasi Proposisi Majemuk dan Kondisi Kritisnya",
+        "caption": "Kunci Hafal Kilat UTBK: Identifikasi Syarat Kritis Penentu Nilai Kebenaran",
+        "svg_code": "<svg viewBox=\"0 0 640 215\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .tb-header { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; text-anchor: middle; }\n      .tb-body { font-family: system-ui, sans-serif; font-size: 11px; text-anchor: middle; }\n      .tb-crit { font-family: system-ui, sans-serif; font-size: 10px; font-weight: 700; text-anchor: middle; }\n    </style>\n  </defs>\n\n  <!-- Card 1: Konjungsi -->\n  <g transform=\"translate(15, 12)\">\n    <rect width=\"142\" height=\"190\" rx=\"12\" fill=\"rgba(79, 70, 229, 0.05)\" stroke=\"rgba(79, 70, 229, 0.25)\" stroke-width=\"1.5\"/>\n    <rect x=\"8\" y=\"10\" width=\"126\" height=\"30\" rx=\"6\" fill=\"#4f46e5\"/>\n    <text x=\"71\" y=\"30\" fill=\"#ffffff\" class=\"tb-header\">KONJUNGSI (∧)</text>\n    <text x=\"71\" y=\"60\" fill=\"#312e81\" class=\"tb-body\" font-weight=\"bold\">\"DAN / SERTA\"</text>\n    \n    <rect x=\"12\" y=\"75\" width=\"118\" height=\"45\" rx=\"6\" fill=\"#e0e7ff\"/>\n    <text x=\"71\" y=\"94\" fill=\"#3730a3\" class=\"tb-body\">B ∧ B = <tspan font-weight=\"bold\" fill=\"#047857\">BENAR</tspan></text>\n    <text x=\"71\" y=\"110\" fill=\"#3730a3\" class=\"tb-body\">Sisanya = <tspan font-weight=\"bold\" fill=\"#b91c1c\">SALAH</tspan></text>\n\n    <rect x=\"8\" y=\"132\" width=\"126\" height=\"48\" rx=\"6\" fill=\"#e0e7ff\"/>\n    <text x=\"71\" y=\"152\" fill=\"#4338ca\" class=\"tb-crit\">KONDISI KRITIS:</text>\n    <text x=\"71\" y=\"168\" fill=\"#312e81\" class=\"tb-crit\">Hanya Benar jika KEDUA premis Benar</text>\n  </g>\n\n  <!-- Card 2: Disjungsi -->\n  <g transform=\"translate(168, 12)\">\n    <rect width=\"142\" height=\"190\" rx=\"12\" fill=\"rgba(16, 185, 129, 0.05)\" stroke=\"rgba(16, 185, 129, 0.25)\" stroke-width=\"1.5\"/>\n    <rect x=\"8\" y=\"10\" width=\"126\" height=\"30\" rx=\"6\" fill=\"#10b981\"/>\n    <text x=\"71\" y=\"30\" fill=\"#ffffff\" class=\"tb-header\">DISJUNGSI (∨)</text>\n    <text x=\"71\" y=\"60\" fill=\"#064e3b\" class=\"tb-body\" font-weight=\"bold\">\"ATAU\"</text>\n    \n    <rect x=\"12\" y=\"75\" width=\"118\" height=\"45\" rx=\"6\" fill=\"#d1fae5\"/>\n    <text x=\"71\" y=\"94\" fill=\"#065f46\" class=\"tb-body\">S ∨ S = <tspan font-weight=\"bold\" fill=\"#b91c1c\">SALAH</tspan></text>\n    <text x=\"71\" y=\"110\" fill=\"#065f46\" class=\"tb-body\">Sisanya = <tspan font-weight=\"bold\" fill=\"#047857\">BENAR</tspan></text>\n\n    <rect x=\"8\" y=\"132\" width=\"126\" height=\"48\" rx=\"6\" fill=\"#d1fae5\"/>\n    <text x=\"71\" y=\"152\" fill=\"#047857\" class=\"tb-crit\">KONDISI KRITIS:</text>\n    <text x=\"71\" y=\"168\" fill=\"#064e3b\" class=\"tb-crit\">Hanya Salah jika KEDUA premis Salah</text>\n  </g>\n\n  <!-- Card 3: Implikasi -->\n  <g transform=\"translate(321, 12)\">\n    <rect width=\"146\" height=\"190\" rx=\"12\" fill=\"rgba(245, 158, 11, 0.05)\" stroke=\"rgba(245, 158, 11, 0.25)\" stroke-width=\"1.5\"/>\n    <rect x=\"8\" y=\"10\" width=\"130\" height=\"30\" rx=\"6\" fill=\"#f59e0b\"/>\n    <text x=\"73\" y=\"30\" fill=\"#ffffff\" class=\"tb-header\">IMPLIKASI (⟹)</text>\n    <text x=\"73\" y=\"60\" fill=\"#78350f\" class=\"tb-body\" font-weight=\"bold\">\"JIKA ... MAKA ...\"</text>\n    \n    <rect x=\"12\" y=\"75\" width=\"122\" height=\"45\" rx=\"6\" fill=\"#fef3c7\"/>\n    <text x=\"73\" y=\"94\" fill=\"#92400e\" class=\"tb-body\">B ⟹ S = <tspan font-weight=\"bold\" fill=\"#b91c1c\">SALAH</tspan></text>\n    <text x=\"73\" y=\"110\" fill=\"#92400e\" class=\"tb-body\">Sisanya = <tspan font-weight=\"bold\" fill=\"#047857\">BENAR</tspan></text>\n\n    <rect x=\"8\" y=\"132\" width=\"130\" height=\"48\" rx=\"6\" fill=\"#fef3c7\"/>\n    <text x=\"73\" y=\"152\" fill=\"#b45309\" class=\"tb-crit\">KONDISI KRITIS:</text>\n    <text x=\"73\" y=\"168\" fill=\"#78350f\" class=\"tb-crit\">Janji Palsu (Benar lalu Salah)</text>\n  </g>\n\n  <!-- Card 4: Biimplikasi -->\n  <g transform=\"translate(478, 12)\">\n    <rect width=\"146\" height=\"190\" rx=\"12\" fill=\"rgba(14, 165, 233, 0.05)\" stroke=\"rgba(14, 165, 233, 0.25)\" stroke-width=\"1.5\"/>\n    <rect x=\"8\" y=\"10\" width=\"130\" height=\"30\" rx=\"6\" fill=\"#0ea5e9\"/>\n    <text x=\"73\" y=\"30\" fill=\"#ffffff\" class=\"tb-header\">BIIMPLIKASI (⟺)</text>\n    <text x=\"73\" y=\"60\" fill=\"#0c4a6e\" class=\"tb-body\" font-weight=\"bold\">\"JIKA &amp; HANYA JIKA\"</text>\n    \n    <rect x=\"12\" y=\"75\" width=\"122\" height=\"45\" rx=\"6\" fill=\"#e0f2fe\"/>\n    <text x=\"73\" y=\"94\" fill=\"#0369a1\" class=\"tb-body\">B ⟺ B / S ⟺ S = <tspan font-weight=\"bold\" fill=\"#047857\">B</tspan></text>\n    <text x=\"73\" y=\"110\" fill=\"#0369a1\" class=\"tb-body\">Nilai Beda = <tspan font-weight=\"bold\" fill=\"#b91c1c\">SALAH</tspan></text>\n\n    <rect x=\"8\" y=\"132\" width=\"130\" height=\"48\" rx=\"6\" fill=\"#e0f2fe\"/>\n    <text x=\"73\" y=\"152\" fill=\"#0284c7\" class=\"tb-crit\">KONDISI KRITIS:</text>\n    <text x=\"73\" y=\"168\" fill=\"#0c4a6e\" class=\"tb-crit\">Benar jika Nilai Kebenaran SAMA</text>\n  </g>\n</svg>"
+      }
     ],
-    quick_execution_algorithm: [
-      'Identifikasi operator logika penghubung kalimat: lingkari kata "dan", "atau", "jika... maka...", atau "jika dan hanya jika".',
-      'Ubah pernyataan majemuk ke dalam simbol logika sederhana (misal p -> q atau (p ∧ q) ∨ r) untuk menghindari bias wacana.',
-      'Pada implikasi p -> q, ingat rumus emas: hanya bernilai salah jika p Benar dan q Salah (B -> S = S).',
-      'Gunakan hukum kontraposisi (~q -> ~p) untuk menarik simpulan pasti, dan singkirkan opsi yang menegaskan konsekuen (q -> p) atau menyangkal anteseden (~p -> ~q).',
+    "distractor_traps": [
+      "Affirming the Consequent (Menegaskan Konsekuen): Menganggap terpenuhinya akibat/konsekuen (q) otomatis membuktikan bahwa syarat p pasti terjadi.",
+      "Jebakan Disjungsi Eksklusif Semu: Mengira kata \"atau\" melarang kedua kondisi terjadi bersamaan, padahal disjungsi logika bernilai benar saat kedua syarat sama-sama terpenuhi.",
+      "Jebakan Konversi Implikasi: Menyamakan \"Jika p maka q\" dengan \"Jika q maka p\", padahal implikasi adalah hubungan bersyarat satu arah, bukan biimplikasi."
     ],
+    "quick_execution_algorithm": [
+      "Identifikasi operator logika penghubung kalimat: lingkari kata \"dan\", \"atau\", \"jika... maka...\", atau \"jika dan hanya jika\".",
+      "Ubah pernyataan majemuk ke dalam simbol logika sederhana (misal p -> q atau (p ∧ q) ∨ r) untuk menghindari bias wacana.",
+      "Pada implikasi p -> q, ingat rumus emas: hanya bernilai salah jika p Benar dan q Salah (B -> S = S).",
+      "Gunakan hukum kontraposisi (~q -> ~p) untuk menarik simpulan pasti, dan singkirkan opsi yang menegaskan konsekuen (q -> p) atau menyangkal anteseden (~p -> ~q)."
+    ]
   },
-  worked_examples: [
+  "worked_examples": [
     {
-      example_id: 'pu-02-01-ex1',
-      variation_name: 'Variasi 1: Penentuan Nilai Kebenaran Proposisi Majemuk (Level: Mudah)',
-      difficulty: 'easy',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Panitia seleksi beasiswa kepemimpinan menetapkan ketentuan bagi calon penerima beasiswa sebagai berikut:\n\n*"Seorang pendaftar berhak lolos seleksi berkas jika memenuhi ketentuan: memiliki IPK minimal 3,50 DAN aktif dalam organisasi kampus, ATAU memiliki sertifikat prestasi kompetisi tingkat nasional."*\n\nBerikut adalah catatan profil lima orang pendaftar:\n- **Aryo:** Memiliki IPK 3,65, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.\n- **Bima:** Memiliki IPK 3,40, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.\n- **Cantika:** Memiliki IPK 3,25, tidak aktif dalam organisasi kampus, tetapi memiliki sertifikat juara 1 kompetisi debat nasional.\n- **Dimas:** Memiliki IPK 3,48, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.\n- **Erna:** Memiliki IPK 3,30, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.',
-      question_markdown:
-        'Berdasarkan aturan logika proposisi tersebut, siapakah pendaftar yang **pasti lolos** seleksi berkas beasiswa kepemimpinan?',
-      options: [
+      "example_id": "pu-02-01-ex1",
+      "variation_name": "Variasi 1: Penentuan Nilai Kebenaran Proposisi Majemuk (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Panitia seleksi beasiswa kepemimpinan menetapkan ketentuan bagi calon penerima beasiswa sebagai berikut:\n\n*\"Seorang pendaftar berhak lolos seleksi berkas jika memenuhi ketentuan: memiliki IPK minimal 3,50 DAN aktif dalam organisasi kampus, ATAU memiliki sertifikat prestasi kompetisi tingkat nasional.\"*\n\nBerikut adalah catatan profil lima orang pendaftar:\n- **Aryo:** Memiliki IPK 3,65, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.\n- **Bima:** Memiliki IPK 3,40, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi kompetisi nasional.\n- **Cantika:** Memiliki IPK 3,25, tidak aktif dalam organisasi kampus, tetapi memiliki sertifikat juara 1 kompetisi debat nasional.\n- **Dimas:** Memiliki IPK 3,48, aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.\n- **Erna:** Memiliki IPK 3,30, tidak aktif dalam organisasi kampus, dan tidak memiliki sertifikat prestasi tingkat nasional.",
+      "question_markdown": "Berdasarkan aturan logika proposisi tersebut, siapakah pendaftar yang **pasti lolos** seleksi berkas beasiswa kepemimpinan?",
+      "options": [
         {
-          key: 'A',
-          text_markdown: 'Aryo',
+          "key": "A",
+          "text_markdown": "Aryo"
         },
         {
-          key: 'B',
-          text_markdown: 'Bima',
+          "key": "B",
+          "text_markdown": "Bima"
         },
         {
-          key: 'C',
-          text_markdown: 'Cantika',
+          "key": "C",
+          "text_markdown": "Cantika"
         },
         {
-          key: 'D',
-          text_markdown: 'Dimas',
+          "key": "D",
+          "text_markdown": "Dimas"
         },
         {
-          key: 'E',
-          text_markdown: 'Erna',
-        },
+          "key": "E",
+          "text_markdown": "Erna"
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Perhatikan struktur logika aturan: `(IPK ≥ 3,50 DAN Organisasi) ATAU Prestasi Nasional`. Karena ada kata ATAU, pendaftar yang memiliki prestasi nasional otomatis lolos meski IPK di bawah 3,50 dan tidak aktif organisasi!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Rumus Logika Proposisi:** $(P \\land Q) \\lor R$
-  - $P$: $\\text{IPK} \\ge 3,50$
-  - $Q$: Aktif dalam organisasi kampus
-  - $R$: Memiliki sertifikat prestasi kompetisi tingkat nasional
-- **Evaluasi Nilai Kebenaran:**
-  - **Aryo:** $P$ Benar ($3,65$), $Q$ Salah, $R$ Salah $\\rightarrow (B \\land S) \\lor S = S \\lor S = \\text{Salah}$.
-  - **Bima:** $P$ Salah ($3,40$), $Q$ Benar, $R$ Salah $\\rightarrow (S \\land B) \\lor S = S \\lor S = \\text{Salah}$.
-  - **Cantika:** $P$ Salah ($3,25$), $Q$ Salah, namun $R$ Benar $\\rightarrow (S \\land S) \\lor B = S \\lor B = \\text{Benar}$.
-  - **Dimas:** $P$ Salah ($3,48$), $Q$ Benar, $R$ Salah $\\rightarrow (S \\land B) \\lor S = S \\lor S = \\text{Salah}$.
-  - **Erna:** $P$ Salah, $Q$ Salah, $R$ Salah $\\rightarrow S \\lor S = \\text{Salah}$.
-- **Konklusi:** Hanya Cantika yang menghasilkan nilai kebenaran Benar pada formula seleksi.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Amati Jalur Disjungsi "ATAU"):**
-
-1. Rumus aturan memiliki cabang penyelamat *"ATAU memiliki sertifikat prestasi kompetisi nasional"*.
-2. Siapa pun yang memiliki sertifikat nasional langsung lolos tanpa memedulikan nilai IPK dan keaktifan organisasi.
-3. Langsung periksa profil: hanya Cantika yang memiliki sertifikat prestasi nasional (juara 1 debat nasional).
-4. Jawaban yang tepat adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Aryo gagal karena konjungsi (IPK dan organisasi) mensyaratkan kedua hal terpenuhi; Aryo tidak aktif organisasi dan tidak punya sertifikat nasional.
-- **Pilihan B Salah:** Bima gagal karena IPK-nya 3,40 (kurang dari batas minimal 3,50) dan tidak memiliki sertifikat prestasi nasional.
-- **Pilihan D Salah:** Dimas gagal karena IPK-nya 3,48 belum mencapai batas 3,50 dan tidak memiliki sertifikat prestasi nasional.
-- **Pilihan E Salah:** Erna gagal karena tidak memenuhi satupun kriteria yang disyaratkan.`,
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan struktur logika aturan: `(IPK ≥ 3,50 DAN Organisasi) ATAU Prestasi Nasional`. Karena ada kata ATAU, pendaftar yang memiliki prestasi nasional otomatis lolos meski IPK di bawah 3,50 dan tidak aktif organisasi!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rumus Logika Proposisi:** $(P \\land Q) \\lor R$\n  - $P$: $\\text{IPK} \\ge 3,50$\n  - $Q$: Aktif dalam organisasi kampus\n  - $R$: Memiliki sertifikat prestasi kompetisi tingkat nasional\n- **Evaluasi Nilai Kebenaran:**\n  - **Aryo:** $P$ Benar ($3,65$), $Q$ Salah, $R$ Salah $\\rightarrow (B \\land S) \\lor S = S \\lor S = \\text{Salah}$.\n  - **Bima:** $P$ Salah ($3,40$), $Q$ Benar, $R$ Salah $\\rightarrow (S \\land B) \\lor S = S \\lor S = \\text{Salah}$.\n  - **Cantika:** $P$ Salah ($3,25$), $Q$ Salah, namun $R$ Benar $\\rightarrow (S \\land S) \\lor B = S \\lor B = \\text{Benar}$.\n  - **Dimas:** $P$ Salah ($3,48$), $Q$ Benar, $R$ Salah $\\rightarrow (S \\land B) \\lor S = S \\lor S = \\text{Salah}$.\n  - **Erna:** $P$ Salah, $Q$ Salah, $R$ Salah $\\rightarrow S \\lor S = \\text{Salah}$.\n- **Konklusi:** Hanya Cantika yang menghasilkan nilai kebenaran Benar pada formula seleksi.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Amati Jalur Disjungsi \"ATAU\"):**\n\n1. Rumus aturan memiliki cabang penyelamat *\"ATAU memiliki sertifikat prestasi kompetisi nasional\"*.\n2. Siapa pun yang memiliki sertifikat nasional langsung lolos tanpa memedulikan nilai IPK dan keaktifan organisasi.\n3. Langsung periksa profil: hanya Cantika yang memiliki sertifikat prestasi nasional (juara 1 debat nasional).\n4. Jawaban yang tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Aryo gagal karena konjungsi (IPK dan organisasi) mensyaratkan kedua hal terpenuhi; Aryo tidak aktif organisasi dan tidak punya sertifikat nasional.\n- **Pilihan B Salah:** Bima gagal karena IPK-nya 3,40 (kurang dari batas minimal 3,50) dan tidak memiliki sertifikat prestasi nasional.\n- **Pilihan D Salah:** Dimas gagal karena IPK-nya 3,48 belum mencapai batas 3,50 dan tidak memiliki sertifikat prestasi nasional.\n- **Pilihan E Salah:** Erna gagal karena tidak memenuhi satupun kriteria yang disyaratkan."
     },
     {
-      example_id: 'pu-02-01-ex2',
-      variation_name: 'Variasi 2: Analisis Kondisi Syarat Cukup vs Syarat Perlu (Level: Sedang)',
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Sebuah perusahaan teknologi terkemuka memberlakukan aturan resmi dalam proses rekrutmen divisi rekayasa perangkat lunak:\n\n*"Jika seorang pelamar memiliki sertifikasi keahlian komputasi awan tingkat profesional, maka pelamar tersebut pasti langsung dipanggil untuk wawancara teknis tahap akhir."*\n\nDalam proses rekrutmen bulan ini, panitia mencatat dua fakta nyata di lapangan:\n(1) Doni tidak dipanggil untuk wawancara teknis tahap akhir.\n(2) Farhan dipanggil untuk wawancara teknis tahap akhir.',
-      question_markdown:
-        'Berdasarkan kaidah logika proposisi (implikasi), manakah simpulan berikut yang **paling tepat dan pasti bernilai benar**?',
-      options: [
+      "example_id": "pu-02-01-ex2",
+      "variation_name": "Variasi 2: Analisis Kondisi Syarat Cukup vs Syarat Perlu (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah perusahaan teknologi terkemuka memberlakukan aturan resmi dalam proses rekrutmen divisi rekayasa perangkat lunak:\n\n*\"Jika seorang pelamar memiliki sertifikasi keahlian komputasi awan tingkat profesional, maka pelamar tersebut pasti langsung dipanggil untuk wawancara teknis tahap akhir.\"*\n\nDalam proses rekrutmen bulan ini, panitia mencatat dua fakta nyata di lapangan:\n(1) Doni tidak dipanggil untuk wawancara teknis tahap akhir.\n(2) Farhan dipanggil untuk wawancara teknis tahap akhir.",
+      "question_markdown": "Berdasarkan kaidah logika proposisi (implikasi), manakah simpulan berikut yang **paling tepat dan pasti bernilai benar**?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Doni memiliki sertifikasi keahlian komputasi awan tingkat profesional.',
+          "key": "A",
+          "text_markdown": "Doni memiliki sertifikasi keahlian komputasi awan tingkat profesional."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Farhan pasti memiliki sertifikasi keahlian komputasi awan tingkat profesional.',
+          "key": "B",
+          "text_markdown": "Farhan pasti memiliki sertifikasi keahlian komputasi awan tingkat profesional."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Doni tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional.',
+          "key": "C",
+          "text_markdown": "Doni tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Farhan pasti tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional.',
+          "key": "D",
+          "text_markdown": "Farhan pasti tidak memiliki sertifikasi keahlian komputasi awan tingkat profesional."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Doni dan Farhan sama-sama memiliki sertifikasi keahlian komputasi awan tingkat profesional.',
-        },
+          "key": "E",
+          "text_markdown": "Doni dan Farhan sama-sama memiliki sertifikasi keahlian komputasi awan tingkat profesional."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Ingat hukum kontraposisi implikasi: `p → q` setara dengan `~q → ~p`. Doni tidak dipanggil wawancara (~q), maka Doni pasti tidak punya sertifikasi (~p). Hati-hati dengan Farhan: dipanggil wawancara (q) tidak menjamin Farhan punya sertifikasi (bisa lewat jalur lain)!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Struktur Implikasi:** $p \\rightarrow q$
-  - $p$: Memiliki sertifikasi keahlian komputasi awan (syarat cukup).
-  - $q$: Dipanggil untuk wawancara teknis tahap akhir (syarat perlu).
-- **Analisis Doni:** Diketahui $\\sim q$ (tidak dipanggil wawancara).
-  - Sesuai hukum kontraposisi / *Modus Tollens*: $(p \\rightarrow q) \\land \\sim q \\vdash \\sim p$.
-  - Maka Doni dipastikan **tidak memiliki sertifikasi keahlian komputasi awan**. (Pilihan C pasti benar).
-- **Analisis Farhan:** Diketahui $q$ (dipanggil wawancara).
-  - Menyimpulkan $p$ dari $q$ adalah sesat pikir menegaskan konsekuen (*affirming the consequent*). Farhan bisa dipanggil karena faktor portofolio lain, sehingga status sertifikasi Farhan belum dapat dipastikan.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Kontraposisi & Hindari Jebakan Konsekuen):**
-
-1. Ingat rumus pasti: Jika akibat tidak terjadi ($\\sim q$), maka sebab pasti tidak ada ($\\sim p$). Karena Doni tidak dipanggil wawancara, maka Doni pasti tidak bersertifikasi.
-2. Farhan dipanggil wawancara adalah penegasan konsekuen ($q$), sehingga sertifikasinya belum tentu ada (jangan pilih opsi mutlak tentang Farhan di B atau D).
-3. Jawaban yang pasti benar adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Bertolak belakang dengan hukum kontraposisi; jika Doni punya sertifikasi, ia seharusnya dipanggil wawancara.
-- **Pilihan B Salah:** Mengalami sesat pikir *affirming the consequent*; dipanggil wawancara tidak menjamin kepemilikan sertifikasi karena ada jalur kualifikasi lain.
-- **Pilihan D Salah:** Bersifat spekulatif mutlak ke arah sebaliknya; tidak ada premis yang melarang Farhan memiliki sertifikasi.
-- **Pilihan E Salah:** Doni sudah terbukti secara deduktif tidak memiliki sertifikasi, sehingga tidak mungkin keduanya sama-sama memiliki sertifikasi.`,
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Ingat hukum kontraposisi implikasi: `p → q` setara dengan `~q → ~p`. Doni tidak dipanggil wawancara (~q), maka Doni pasti tidak punya sertifikasi (~p). Hati-hati dengan Farhan: dipanggil wawancara (q) tidak menjamin Farhan punya sertifikasi (bisa lewat jalur lain)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Implikasi:** $p \\rightarrow q$\n  - $p$: Memiliki sertifikasi keahlian komputasi awan (syarat cukup).\n  - $q$: Dipanggil untuk wawancara teknis tahap akhir (syarat perlu).\n- **Analisis Doni:** Diketahui $\\sim q$ (tidak dipanggil wawancara).\n  - Sesuai hukum kontraposisi / *Modus Tollens*: $(p \\rightarrow q) \\land \\sim q \\vdash \\sim p$.\n  - Maka Doni dipastikan **tidak memiliki sertifikasi keahlian komputasi awan**. (Pilihan C pasti benar).\n- **Analisis Farhan:** Diketahui $q$ (dipanggil wawancara).\n  - Menyimpulkan $p$ dari $q$ adalah sesat pikir menegaskan konsekuen (*affirming the consequent*). Farhan bisa dipanggil karena faktor portofolio lain, sehingga status sertifikasi Farhan belum dapat dipastikan.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Kontraposisi & Hindari Jebakan Konsekuen):**\n\n1. Ingat rumus pasti: Jika akibat tidak terjadi ($\\sim q$), maka sebab pasti tidak ada ($\\sim p$). Karena Doni tidak dipanggil wawancara, maka Doni pasti tidak bersertifikasi.\n2. Farhan dipanggil wawancara adalah penegasan konsekuen ($q$), sehingga sertifikasinya belum tentu ada (jangan pilih opsi mutlak tentang Farhan di B atau D).\n3. Jawaban yang pasti benar adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bertolak belakang dengan hukum kontraposisi; jika Doni punya sertifikasi, ia seharusnya dipanggil wawancara.\n- **Pilihan B Salah:** Mengalami sesat pikir *affirming the consequent*; dipanggil wawancara tidak menjamin kepemilikan sertifikasi karena ada jalur kualifikasi lain.\n- **Pilihan D Salah:** Bersifat spekulatif mutlak ke arah sebaliknya; tidak ada premis yang melarang Farhan memiliki sertifikasi.\n- **Pilihan E Salah:** Doni sudah terbukti secara deduktif tidak memiliki sertifikasi, sehingga tidak mungkin keduanya sama-sama memiliki sertifikasi."
     },
     {
-      example_id: 'pu-02-01-ex3',
-      variation_name: 'Variasi 3: Logika Biimplikasi dan Kondisi Syarat Mutlak Ganda (Level: Sulit)',
-      difficulty: 'hard',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Dalam regulasi pengawasan perbankan, penilaian status kesehatan bank devisa ditetapkan secara mengikat dengan ketentuan biimplikasi berikut:\n\n*"Sebuah bank devisa berhak memperoleh predikat Sangat Sehat jika dan hanya jika bank tersebut mempertahankan rasio kecukupan modal di atas 15% serta mencatatkan rasio kredit macet di bawah 3%."*\n\nDalam laporan audit tahunan perbankan nasional resmi:\n(1) Bank Megantara resmi diumumkan memperoleh predikat Sangat Sehat.\n(2) Bank Sentosa dinyatakan gagal memperoleh predikat Sangat Sehat, meskipun rasio kredit macetnya tercatat hanya 2,1%.',
-      question_markdown:
-        'Berdasarkan kaidah logika biimplikasi, manakah pernyataan berikut yang **pasti bernilai benar**?',
-      options: [
+      "example_id": "pu-02-01-ex3",
+      "variation_name": "Variasi 3: Logika Biimplikasi dan Kondisi Syarat Mutlak Ganda (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam regulasi pengawasan perbankan, penilaian status kesehatan bank devisa ditetapkan secara mengikat dengan ketentuan biimplikasi berikut:\n\n*\"Sebuah bank devisa berhak memperoleh predikat Sangat Sehat jika dan hanya jika bank tersebut mempertahankan rasio kecukupan modal di atas 15% serta mencatatkan rasio kredit macet di bawah 3%.\"*\n\nDalam laporan audit tahunan perbankan nasional resmi:\n(1) Bank Megantara resmi diumumkan memperoleh predikat Sangat Sehat.\n(2) Bank Sentosa dinyatakan gagal memperoleh predikat Sangat Sehat, meskipun rasio kredit macetnya tercatat hanya 2,1%.",
+      "question_markdown": "Berdasarkan kaidah logika biimplikasi, manakah pernyataan berikut yang **pasti bernilai benar**?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Bank Megantara memiliki rasio kecukupan modal di atas 15%, dan Bank Sentosa memiliki rasio kecukupan modal tidak lebih dari 15%.',
+          "key": "A",
+          "text_markdown": "Bank Megantara memiliki rasio kecukupan modal di atas 15%, dan Bank Sentosa memiliki rasio kecukupan modal tidak lebih dari 15%."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Bank Sentosa pasti memiliki rasio kredit macet di atas 3%.',
+          "key": "B",
+          "text_markdown": "Bank Sentosa pasti memiliki rasio kredit macet di atas 3%."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Bank Megantara belum tentu memiliki rasio kredit macet di bawah 3%.',
+          "key": "C",
+          "text_markdown": "Bank Megantara belum tentu memiliki rasio kredit macet di bawah 3%."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Semua bank yang memiliki rasio kredit macet di bawah 3% pasti memperoleh predikat Sangat Sehat.',
+          "key": "D",
+          "text_markdown": "Semua bank yang memiliki rasio kredit macet di bawah 3% pasti memperoleh predikat Sangat Sehat."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Bank Sentosa akan memperoleh predikat Sangat Sehat jika rasio kredit macetnya diturunkan menjadi 1,5%.',
-        },
+          "key": "E",
+          "text_markdown": "Bank Sentosa akan memperoleh predikat Sangat Sehat jika rasio kredit macetnya diturunkan menjadi 1,5%."
+        }
       ],
-      correct_answer: 'A',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Biimplikasi mengikat dua arah: `Predikat ↔ (Modal > 15% DAN Kredit Macet < 3%)`. Jika predikat gagal (Bank Sentosa), maka syarat gabungannya pasti gagal. Karena kredit macet Bank Sentosa sudah lolos (2,1% < 3%), maka syarat modalnya WAJIB gagal (≤ 15%)!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Rumus Biimplikasi:** $P \\leftrightarrow (M \\land K)$
-  - $P$: Predikat Sangat Sehat
-  - $M$: Rasio modal $> 15\\%$
-  - $K$: Kredit macet $< 3\\%$
-- **Deduksi Bank Megantara:**
-  - $P = \\text{Benar}$.
-  - Agar $P \\leftrightarrow (M \\land K)$ bernilai Benar, maka $(M \\land K)$ wajib Benar.
-  - Akibatnya, Bank Megantara **pasti** memenuhi $M > 15\\%$ dan $K < 3\\%$.
-- **Deduksi Bank Sentosa:**
-  - $P = \\text{Salah}$ (gagal predikat).
-  - Agar biimplikasi bernilai Benar, maka $(M \\land K)$ wajib **Salah**.
-  - Fakta audit: Kredit macet Bank Sentosa adalah $2,1\\%$, artinya syarat $K$ bernilai Benar ($2,1\\% < 3\\%$).
-  - Agar konjungsi $(M \\land K)$ bernilai Salah sementara $K$ bernilai Benar, maka syarat $M$ harus bernilai **Salah** ($M \\le 15\\%$).
-  - Jadi, Bank Sentosa **pasti memiliki rasio kecukupan modal tidak lebih dari $15\\%$**.
-- **Kesimpulan:** Pernyataan A memadukan kedua kesimpulan yang telah terbukti secara valid.
-
-**Jawaban: A**`,
-      quick_trick_markdown: `**Cara Cepat (Analisis Penyebab Kegagalan Biimplikasi):**
-
-1. Bank Megantara lolos predikat $\\rightarrow$ kedua syarat (modal $> 15\\%$ dan kredit macet $< 3\\%$) pasti terpenuhi.
-2. Bank Sentosa gagal predikat $\\rightarrow$ minimal salah satu syarat harus gugur.
-3. Karena data audit menunjukkan kredit macetnya sudah aman ($2,1\\% < 3\\%$), maka satu-satunya penyebab kegagalan adalah syarat modalnya tidak terpenuhi ($\\le 15\\%$).
-4. Pilihan yang menyatakan modal Megantara $> 15\\%$ dan modal Sentosa $\\le 15\\%$ adalah pilihan **A**.`,
-      why_others_are_wrong_markdown: `- **Pilihan B Salah:** Bertentangan dengan fakta teks wacana yang secara gamblang menyatakan kredit macet Bank Sentosa adalah 2,1% (di bawah 3%).
-- **Pilihan C Salah:** Bank Megantara sudah dipastikan memperoleh predikat Sangat Sehat, sehingga kredit macetnya pasti di bawah 3%, bukan belum tentu.
-- **Pilihan D Salah:** Kredit macet < 3% hanya satu dari dua syarat wajib; bank tetap tidak dapat predikat jika rasio modalnya tidak mencapai > 15%.
-- **Pilihan E Salah:** Menurunkan kredit macet ke 1,5% tidak ada gunanya jika akar kegagalannya adalah rasio modal yang belum melebihi 15%.`,
-    },
-  ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Biimplikasi mengikat dua arah: `Predikat ↔ (Modal > 15% DAN Kredit Macet < 3%)`. Jika predikat gagal (Bank Sentosa), maka syarat gabungannya pasti gagal. Karena kredit macet Bank Sentosa sudah lolos (2,1% < 3%), maka syarat modalnya WAJIB gagal (≤ 15%)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rumus Biimplikasi:** $P \\leftrightarrow (M \\land K)$\n  - $P$: Predikat Sangat Sehat\n  - $M$: Rasio modal $> 15\\%$\n  - $K$: Kredit macet $< 3\\%$\n- **Deduksi Bank Megantara:**\n  - $P = \\text{Benar}$.\n  - Agar $P \\leftrightarrow (M \\land K)$ bernilai Benar, maka $(M \\land K)$ wajib Benar.\n  - Akibatnya, Bank Megantara **pasti** memenuhi $M > 15\\%$ dan $K < 3\\%$.\n- **Deduksi Bank Sentosa:**\n  - $P = \\text{Salah}$ (gagal predikat).\n  - Agar biimplikasi bernilai Benar, maka $(M \\land K)$ wajib **Salah**.\n  - Fakta audit: Kredit macet Bank Sentosa adalah $2,1\\%$, artinya syarat $K$ bernilai Benar ($2,1\\% < 3\\%$).\n  - Agar konjungsi $(M \\land K)$ bernilai Salah sementara $K$ bernilai Benar, maka syarat $M$ harus bernilai **Salah** ($M \\le 15\\%$).\n  - Jadi, Bank Sentosa **pasti memiliki rasio kecukupan modal tidak lebih dari $15\\%$**.\n- **Kesimpulan:** Pernyataan A memadukan kedua kesimpulan yang telah terbukti secara valid.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Analisis Penyebab Kegagalan Biimplikasi):**\n\n1. Bank Megantara lolos predikat $\\rightarrow$ kedua syarat (modal $> 15\\%$ dan kredit macet $< 3\\%$) pasti terpenuhi.\n2. Bank Sentosa gagal predikat $\\rightarrow$ minimal salah satu syarat harus gugur.\n3. Karena data audit menunjukkan kredit macetnya sudah aman ($2,1\\% < 3\\%$), maka satu-satunya penyebab kegagalan adalah syarat modalnya tidak terpenuhi ($\\le 15\\%$).\n4. Pilihan yang menyatakan modal Megantara $> 15\\%$ dan modal Sentosa $\\le 15\\%$ adalah pilihan **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Bertentangan dengan fakta teks wacana yang secara gamblang menyatakan kredit macet Bank Sentosa adalah 2,1% (di bawah 3%).\n- **Pilihan C Salah:** Bank Megantara sudah dipastikan memperoleh predikat Sangat Sehat, sehingga kredit macetnya pasti di bawah 3%, bukan belum tentu.\n- **Pilihan D Salah:** Kredit macet < 3% hanya satu dari dua syarat wajib; bank tetap tidak dapat predikat jika rasio modalnya tidak mencapai > 15%.\n- **Pilihan E Salah:** Menurunkan kredit macet ke 1,5% tidak ada gunanya jika akar kegagalannya adalah rasio modal yang belum melebihi 15%."
+    }
+  ]
 };
 
 const MATERIAL_PU_02_02 = {
-  metadata: {
-    id: 'pu-2-2',
-    subtest: 'PU',
-    chapter_num: 2,
-    chapter_title: 'Penalaran Deduktif',
-    subchapter_num: '2.2',
-    subchapter_title: 'Ekuivalensi dan Negasi Pernyataan',
-    title: 'Ekuivalensi dan Negasi Pernyataan',
-    required_question_variations: [
-      'Ekuivalensi Pernyataan Bersyarat (Kontraposisi & Bentuk Disjungsi)',
-      'Negasi Proposisi Majemuk Bersyarat (Hukum De Morgan)',
-      'Evaluasi Ekuivalensi Klausul Kompleks / Kebijakan Publik (HOTS)',
+  "metadata": {
+    "id": "pu-2-2",
+    "subtest": "PU",
+    "chapter_num": 2,
+    "chapter_title": "Penalaran Deduktif",
+    "subchapter_num": "2.2",
+    "subchapter_title": "Ekuivalensi dan Negasi Pernyataan",
+    "title": "Ekuivalensi dan Negasi Pernyataan",
+    "required_question_variations": [
+      "Ekuivalensi Pernyataan Bersyarat (Kontraposisi & Bentuk Disjungsi)",
+      "Negasi Proposisi Majemuk Bersyarat (Hukum De Morgan)",
+      "Evaluasi Ekuivalensi Klausul Kompleks / Kebijakan Publik (HOTS)"
     ],
-    requires_svg: false,
-    updated_at: '2026-11-07',
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
   },
-  content: {
-    tactical_overview:
-      'Ekuivalensi dan negasi pernyataan menguji kemampuan Anda dalam mengidentifikasi bentuk kalimat yang memiliki nilai kebenaran identik (ekuivalen) atau kebalikan mutlak (negasi/ingkaran) tanpa terjebak pada perubahan susunan kata. Di UTBK SNBT, kunci emas ekuivalensi implikasi p → q adalah kontraposisinya (~q → ~p) dan bentuk disjungsinya (~p ∨ q). Sementara itu, jebakan terbesar pada materi ini adalah mengira negasi dari "Jika p maka q" adalah "Jika tidak p maka tidak q", padahal ingkaran yang sah secara logika adalah "p DAN tidak q" (p ∧ ~q).',
-    exam_blueprint_markdown: `# 1. Prinsip Dasar
-
-Di dalam penalaran deduktif UTBK SNBT, Anda akan sering diminta mencari pernyataan yang *setara secara makna logika* (**ekuivalen**, disimbolkan $\\equiv$) atau pernyataan yang merupakan *ingkaran mutlak* (**negasi**, disimbolkan $\\sim$) dari suatu pernyataan premis. Menguasai materi ini akan menghindarkan Anda dari jebakan manipulasi kata-kata pada opsi pilihan ganda.
-
-Tiga pilar rumus logika ekuivalensi dan negasi yang wajib Anda hafal di luar kepala meliputi:
-
-1. **Dua Bentuk Ekuivalensi Emas Implikasi ($p \\rightarrow q$)**  
-   Pernyataan bersyarat *"Jika $p$ maka $q$"* memiliki dua bentuk kalimat lain yang nilai kebenarannya persis sama:
-   - **Bentuk Kontraposisi:** $p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$  
-     *(Balik posisi pernyataan, lalu negasikan kedua ruasnya: "Jika tidak $q$, maka tidak $p$")*.
-   - **Bentuk Disjungsi:** $p \\rightarrow q \\equiv \\sim p \\lor q$  
-     *(Negasikan bagian sebab, ganti kata "jika... maka..." menjadi "atau", biarkan bagian akibat tetap: "Tidak $p$ ATAU $q$")*. Bentuk ini sangat sering muncul sebagai kunci jawaban tak terduga saat seluruh opsi jawaban tidak menggunakan kata *"jika"*.
-   - **Catatan Kritis:** **Konvers** ($q \\rightarrow p$) dan **Invers** ($\\sim p \\rightarrow \\sim q$) **TIDAK PERNAH EKUIVALEN** dengan pernyataan asal $p \\rightarrow q$.
-
-2. **Hukum De Morgan (Negasi Konjungsi dan Disjungsi)**  
-   Untuk mengingkari kalimat majemuk yang memuat kata *"dan"* atau *"atau"*, gunakan aturan De Morgan:
-   - Ingkaran Konjungsi: $\\sim (p \\land q) \\equiv \\sim p \\lor \\sim q$  
-     *(Ingkaran dari "$p$ dan $q$" adalah "tidak $p$ ATAU tidak $q$")*.
-   - Ingkaran Disjungsi: $\\sim (p \\lor q) \\equiv \\sim p \\land \\sim q$  
-     *(Ingkaran dari "$p$ atau $q$" adalah "tidak $p$ DAN tidak $q$")*.
-
-3. **Negasi Pernyataan Bersyarat / Implikasi ($\sim (p \\rightarrow q)$)**  
-   Banyak siswa terjebak mengira negasi dari *"Jika $p$ maka $q$"* adalah *"Jika tidak $p$ maka tidak $q$"*. Padahal secara hukum logika matematika:
-   $$\\sim (p \\rightarrow q) \\equiv p \\land \\sim q$$
-   - **Penjelasan Rasional:** Kalimat janji *"Jika kamu juara kelas ($p$), maka Ayah belikan sepeda ($q$)"* hanya terbukti **berbohong / diingkari** jika faktanya: *Kamu terbukti juara kelas ($p$), TETAPI Ayah tidak membelikan sepeda ($\\sim q$)*. Negasi dari kalimat bersyarat tidak lagi diawali kata *"Jika"*, melainkan berupa kalimat fakta konjungsi: *"p DAN tidak q"*.
-
-4. **Negasi Pernyataan Berkuantor**  
-   - Ingkaran dari kuantor universal (*"Semua / Setiap $A$ adalah $B$"*) adalah kuantor eksistensial: *"Ada / Beberapa / Sebagian $A$ yang bukan $B$"*.
-   - Ingkaran dari kuantor eksistensial (*"Ada / Beberapa $A$ yang $B$"*) adalah kuantor universal ingkaran: *"Semua $A$ bukan $B$"*.
-
----
-
-# 2. Jebakan Pengecoh Khas UTBK
-
-Pembuat naskah soal UTBK merancang opsi pengecoh dengan memanfaatkan asumsi bahasa sehari-hari yang salah secara logika:
-1. **Jebakan Negasi Implikasi Semu (*Invers Trap*)**  
-   Saat diminta mencari ingkaran dari kalimat *"Jika P maka Q"*, pembuat soal memasang opsi pengecoh *"Jika tidak P maka tidak Q"*. Opsi ini salah besar karena itu adalah invers, bukan negasi. Negasi implikasi wajib berformat *"P tetapi tidak Q"* ($p \\land \\sim q$).
-2. **Jebakan Mengabaikan Pertukaran Operator pada De Morgan**  
-   Pada soal negasi kalimat majemuk, opsi pengecoh hanya menegasikan kata-katanya tanpa mengubah operator penghubungnya (misalnya kata *"dan"* tetap dibiarkan *"dan"*). Ingat: dalam Hukum De Morgan, kata *"dan"* wajib berubah menjadi *"atau"*, dan sebaliknya.
-3. **Jebakan Konvers yang Terdengar Meyakinkan**  
-   Pilihan jawaban membalik kalimat secara langsung dari *"Jika A maka B"* menjadi *"Jika B maka A"*. Siswa yang kurang teliti sering menganggap kedua kalimat ini bermakna sama, padahal membalik urutan syarat tanpa memberikan negasi adalah kekeliruan konvers yang fatal.
-
----
-
-# 3. Trik Cepat (15 Detik)
-
-Berikut adalah algoritma taktis untuk menyelesaikan soal ekuivalensi dan negasi di lembar ujian UTBK:
-1. **Untuk Soal "Pernyataan yang Ekuivalen dengan: Jika P maka Q"**  
-   - Periksa opsi yang diawali kata *"Jika"*: cari yang berformat **"Jika tidak Q, maka tidak P"** (Kontraposisi).
-   - Jika tidak ada opsi kalimat jika, langsung cari opsi yang berformat **"Tidak P atau Q"** (Disjungsi Implikasi).
-2. **Untuk Soal "Negasi / Ingkaran dari: Jika P maka Q"**  
-   - Langsung **coret semua opsi jawaban yang masih diawali kata "Jika"**!
-   - Pilih satu-satunya opsi yang menyatakan: **"[Kondisi P tetap terjadi], TETAPI [Kondisi Q tidak terjadi]"**.
-3. **Untuk Negasi Majemuk (Hukum De Morgan)**  
-   - Tukar kata hubung: ubah *"dan"* menjadi *"atau"*, ubah *"atau"* menjadi *"dan"*.
-   - Balikkan status kebenaran kedua komponen kalimat di sisi kiri dan kanannya.
-
----
-
-# 4. Kesimpulan
-
-- **Hakikat Ekuivalensi:** Dua pernyataan dikatakan ekuivalen jika menghasilkan nilai kebenaran yang persis sama pada setiap kemungkinan kondisi premisnya.
-- **Dua Rumus Ekuivalensi $p \\rightarrow q$:**  
-  1. Kontraposisi: $\\sim q \\rightarrow \\sim p$  
-  2. Bentuk Disjungsi: $\\sim p \\lor q$
-- **Hakikat Negasi:** Negasi adalah pernyataan yang selalu bernilai kebalikan mutlak dari pernyataan semula.
-- **Dua Rumus Negasi Kunci:**  
-  1. Negasi Implikasi: $\\sim (p \\rightarrow q) \\equiv p \\land \\sim q$  
-  2. Negasi Konjungsi/Disjungsi: $\\sim (p \\land q) \\equiv \\sim p \\lor \\sim q$ dan $\\sim (p \\lor q) \\equiv \\sim p \\land \\sim q$
-- **Strategi Eksekusi:** Untuk ekuivalensi, ingat trik "balik dan negasikan". Untuk negasi implikasi, singkirkan opsi bersyarat dan pilih format "tetap sebab, ingkar akibat".
-
----
-
-# 5. Bedah Soal dan Variasi UTBK
-
-Berikut adalah bedah tiga variasi soal Ekuivalensi dan Negasi yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan stimulus soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika terperinci:
-
-### Variasi 1: Ekuivalensi Pernyataan Bersyarat (Kontraposisi & Bentuk Disjungsi)
-
-> **Konteks Wacana Soal:**  
-> Perhatikan regulasi penerbangan komersial internasional berikut ini:  
-> *"Jika sebuah maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai wajib memberikan kompensasi ganti rugi penuh berupa fasilitas akomodasi dan pengembalian biaya tiket kepada seluruh penumpang."*  
->  
-> **Pertanyaan UTBK:** *Pernyataan berikut yang memiliki nilai kebenaran ekuivalen (setara secara logika) dengan regulasi penerbangan tersebut adalah...*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Jika pihak maskapai memberikan kompensasi ganti rugi penuh kepada seluruh penumpang, maka maskapai tersebut mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis.  
-> - **B.** Jika pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.  
-> - **C.** Pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, atau pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.  
-> - **D.** Pihak maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis dan pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.  
-> - **E.** Pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh jika dan hanya jika maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Struktur Logika:** Regulasi dinyatakan dalam bentuk implikasi bersyarat $p \\rightarrow q$, di mana:  
-  - $p$ = Maskapai mengalami keterlambatan terbang lebih dari empat jam karena kelalaian teknis.  
-  - $q$ = Pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.
-- **Mencari Bentuk Ekuivalensi:** Dalam kaidah logika proposisi matematika, implikasi $p \\rightarrow q$ memiliki dua bentuk ekuivalen yang sah:  
-  1. Kontraposisi: $\\sim q \\rightarrow \\sim p$ (*"Jika maskapai tidak wajib memberikan kompensasi, maka maskapai tidak mengalami keterlambatan..."*) — bentuk ini tidak tersedia pada pilihan ganda.  
-  2. Bentuk Disjungsi: $\\sim p \\lor q$ (*"Maskapai tidak mengalami keterlambatan lebih dari empat jam karena kelalaian teknis, ATAU pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang"*).  
-  Bentuk kedua ini secara presisi tertera pada pilihan **C**.
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Merupakan bentuk **konvers** ($q \\rightarrow p$), yaitu sekadar membalik kalimat tanpa menyangkal, sehingga tidak ekuivalen.  
-  - **Pilihan B Salah:** Merupakan bentuk **invers** ($\\sim p \\rightarrow \\sim q$), yaitu menyangkal tanpa membalik posisi, sehingga tidak ekuivalen.  
-  - **Pilihan D Salah:** Merupakan bentuk **negasi** ($p \\land \\sim q$), yang justru memiliki nilai kebenaran berkebalikan dari premis awal.  
-  - **Pilihan E Salah:** Mengubah implikasi satu arah menjadi relasi biimplikasi dua arah tanpa dasar premis yang sah.
-- **Penerapan Trik Cepat (15 Detik):** Ingat rumus ekuivalensi disjungsi: $p \\rightarrow q \\equiv \\sim p \\lor q$. Cari opsi yang memuat kata *"tidak P atau Q"*. Pilihan C langsung menyajikan struktur: *[Tidak mengalami keterlambatan...] ATAU [Wajib memberikan kompensasi...]*. Jawaban yang tepat adalah pilihan **C**.
-
----
-
-### Variasi 2: Negasi Proposisi Majemuk Bersyarat (Hukum De Morgan)
-
-> **Konteks Wacana Soal:**  
-> Seorang Kepala Dinas Ketahanan Pangan menyampaikan pernyataan resmi terkait stabilitas pasar sembako menjelang hari raya:  
-> *"Jika pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar tanpa hambatan, maka harga beras di pasar tradisional tidak akan mengalami kenaikan drastis."*  
->  
-> **Pertanyaan UTBK:** *Negasi (ingkaran) yang paling tepat secara kaidah logika formal dari pernyataan Kepala Dinas tersebut adalah...*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Jika pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, maka harga beras di pasar tradisional akan mengalami kenaikan drastis.  
-> - **B.** Pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar, tetapi harga beras di pasar tradisional tetap mengalami kenaikan drastis.  
-> - **C.** Pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, dan harga beras di pasar tradisional tidak mengalami kenaikan drastis.  
-> - **D.** Jika harga beras di pasar tradisional mengalami kenaikan drastis, maka pasokan beras lokal tidak mencukupi atau distribusi antardaerah terhambat.  
-> - **E.** Pasokan beras lokal tidak mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah terhambat, serta harga beras di pasar tradisional naik drastis.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Struktur Logika:** Pernyataan Kepala Dinas berbentuk implikasi majemuk:  
-  $(P \\land Q) \\rightarrow R$  
-  di mana:  
-  - $P$ = Pasokan beras lokal mencukupi kebutuhan masyarakat  
-  - $Q$ = Jalur distribusi antardaerah beroperasi lancar tanpa hambatan  
-  - $R$ = Harga beras di pasar tradisional tidak mengalami kenaikan drastis (sehingga $\\sim R$ = harga beras *mengalami kenaikan drastis*).
-- **Penentuan Rumus Negasi Implikasi:**  
-  Rumus baku ingkaran kalimat bersyarat adalah: $\\sim (A \\rightarrow B) \\equiv A \\land \\sim B$.  
-  Dengan menggantikan $A = (P \\land Q)$ dan $B = R$, kita peroleh:  
-  $$\\sim ((P \\land Q) \\rightarrow R) \\equiv (P \\land Q) \\land \\sim R$$  
-  Artinya: Bagian syarat sebelum kata *"maka"* tetap berlaku sepenuhnya (*pasokan beras mencukupi DAN distribusi lancar*), TETAPI bagian akibatnya diingkari (*harga beras di pasar tradisional tetap mengalami kenaikan drastis*).
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Terjebak pada kesalahan umum membuat kalimat invers bersyarat baru yang masih diawali kata *"Jika"*.  
-  - **Pilihan C Salah:** Menegaskan anteseden secara terbalik tanpa mempertahankan kondisi syarat $P \\land Q$.  
-  - **Pilihan D Salah:** Merupakan bentuk kontraposisi yang ekuivalen, bukan negasi.  
-  - **Pilihan E Salah:** Mengingkari semua komponen kalimat secara sembarangan tanpa mengikuti kaidah logika negasi implikasi.
-- **Penerapan Trik Cepat (15 Detik):** Gunakan trik eliminasi negasi implikasi:  
-  1. Segera coret semua opsi yang masih menggunakan kata *"Jika"* (Pilihan A dan D langsung gugur!).  
-  2. Ingat format ingkaran janji: *"Syarat terpenuhi, tapi akibat ingkar"*. Cari opsi yang menyatakan pasokan cukup dan distribusi lancar, namun harga beras tetap naik drastis. Pilihan yang tepat adalah pilihan **B**.
-
----
-
-### Variasi 3: Evaluasi Ekuivalensi Klausul Kompleks / Kebijakan Publik (HOTS)
-
-> **Konteks Wacana Soal:**  
-> Dewan Pengawas Lingkungan Hidup menetapkan pakta kepatuhan industri manufaktur berat sebagai berikut:  
-> *"Jika suatu pabrik industri membuang limbah cair beracun tanpa instalasi pengolahan standar atau melepaskan emisi gas cerobong melebihi ambang batas toleransi, maka izin operasional pabrik tersebut akan dicabut dan pimpinan perusahaan akan diproses secara hukum."*  
->  
-> **Pertanyaan UTBK:** *Berdasarkan kaidah logika ekuivalensi (kontraposisi dan Hukum De Morgan), manakah pernyataan di bawah ini yang paling tepat dan bermakna setara (ekuivalen) dengan pakta kepatuhan tersebut?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Jika izin operasional pabrik industri tidak dicabut atau pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut tidak membuang limbah cair beracun tanpa instalasi standar dan tidak melepaskan emisi gas cerobong melebihi ambang batas toleransi.  
-> - **B.** Jika izin operasional pabrik industri tidak dicabut dan pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut boleh melepaskan emisi gas cerobong melebihi ambang batas toleransi.  
-> - **C.** Jika suatu pabrik industri mengolah limbah cair beracun sesuai standar dan emisi gas di bawah batas toleransi, maka izin operasional pabrik tidak dicabut dan pimpinan perusahaan tidak diproses hukum.  
-> - **D.** Izin operasional suatu pabrik industri akan dicabut jika dan hanya jika pabrik tersebut membuang limbah cair beracun tanpa instalasi pengolahan standar.  
-> - **E.** Jika pimpinan perusahaan diproses secara hukum, maka pabrik industri tersebut pasti telah membuang limbah cair beracun tanpa instalasi pengolahan standar.
-
-**Kunci Jawaban: A**
-
-**Bedah Logika & Pembahasan:**
-- **Formulasi Simbolik Premis Asli:**  
-  $(L \\lor E) \\rightarrow (C \\land P)$  
-  di mana:  
-  - $L$ = Membuang limbah cair beracun tanpa instalasi standar  
-  - $E$ = Melepaskan emisi gas melebihi ambang batas  
-  - $C$ = Izin operasional dicabut  
-  - $P$ = Pimpinan perusahaan diproses secara hukum
-- **Penerapan Kontraposisi Ganda dengan Hukum De Morgan:**  
-  Sesuai kaidah kontraposisi:  
-  $$(L \\lor E) \\rightarrow (C \\land P) \\equiv \\sim (C \\land P) \\rightarrow \\sim (L \\lor E)$$  
-  Sekarang terapkan **Hukum De Morgan** pada kedua ruas:  
-  - Ruas kiri: $\\sim (C \\land P) \\equiv \\sim C \\lor \\sim P$ *(Izin operasional TIDAK dicabut ATAU pimpinan TIDAK diproses hukum)*.  
-  - Ruas kanan: $\\sim (L \\lor E) \\equiv \\sim L \\land \\sim E$ *(TIDAK membuang limbah beracun DAN TIDAK melepaskan emisi gas berlebih)*.  
-  Menggabungkan kedua hasil De Morgan menghasilkan kalimat kontraposisi utuh:  
-  $$(\\sim C \\lor \\sim P) \\rightarrow (\\sim L \\land \\sim E)$$  
-  Kalimat ini secara sempurna dan presisi diungkapkan oleh pilihan **A**.
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan B Salah:** Menggunakan kata *"dan"* pada penyangkalan konsekuen (melanggar De Morgan) dan membolehkan pelepasan emisi berlebih.  
-  - **Pilihan C Salah:** Merupakan bentuk **invers** $\\sim(L \\lor E) \\rightarrow \\sim(C \\land P)$, yang tidak ekuivalen dengan premis awal.  
-  - **Pilihan D Salah:** Mengubah kalimat menjadi biimplikasi sepihak dan membuang komponen emisi gas secara keliru.  
-  - **Pilihan E Salah:** Mengalami sesat pikir menegaskan konsekuen (*affirming the consequent*), menyimpulkan sebab tunggal dari salah satu bagian akibat.
-- **Penerapan Trik Cepat (15 Detik):**  
-  1. Kontraposisi menuntut pembalikan posisi: akibat majemuk *(dicabut DAN diproses)* pindah ke depan dengan disangkal menggunakan De Morgan $\\rightarrow$ menjadi *(TIDAK dicabut ATAU TIDAK diproses)*.  
-  2. Sebab majemuk *(limbah ATAU emisi)* pindah ke belakang dengan disangkal menggunakan De Morgan $\\rightarrow$ menjadi *(TIDAK buang limbah DAN TIDAK buang emisi)*.  
-  3. Cocokkan dengan pilihan ganda: hanya pilihan **A** yang menerapkan pergantian operator De Morgan bolak-balik secara tepat. Jawaban yang benar adalah pilihan **A**.`,
-    visualizations_svg: [],
-    distractor_traps: [
-      'Jebakan Invers Semu: Mengira negasi dari "Jika p maka q" adalah "Jika ~p maka ~q", padahal negasi implikasi berbentuk konjungsi (p ∧ ~q).',
-      'Jebakan Konvers: Menganggap "Jika q maka p" setara dengan kalimat asli "Jika p maka q", padahal hanya kontraposisi (~q -> ~p) yang ekuivalen.',
-      'Kekeliruan De Morgan: Lupa menukar operator logika saat menegasikan kalimat majemuk (menegasikan "dan" tetap menjadi "dan", padahal wajib berubah menjadi "atau").',
+  "content": {
+    "tactical_overview": "Ekuivalensi dan negasi pernyataan menguji kemampuan Anda dalam mengidentifikasi bentuk kalimat yang memiliki nilai kebenaran identik (ekuivalen) atau kebalikan mutlak (negasi/ingkaran) tanpa terjebak pada perubahan susunan kata. Di UTBK SNBT, kunci emas ekuivalensi implikasi p → q adalah kontraposisinya (~q → ~p) dan bentuk disjungsinya (~p ∨ q). Sementara itu, jebakan terbesar pada materi ini adalah mengira negasi dari \"Jika p maka q\" adalah \"Jika tidak p maka tidak q\", padahal ingkaran yang sah secara logika adalah \"p DAN tidak q\" (p ∧ ~q).",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-02-02-equivalence]]\n\n\nDi dalam penalaran deduktif UTBK SNBT, Anda akan sering diminta mencari pernyataan yang *setara secara makna logika* (**ekuivalen**, disimbolkan $\\equiv$) atau pernyataan yang merupakan *ingkaran mutlak* (**negasi**, disimbolkan $\\sim$) dari suatu pernyataan premis. Menguasai materi ini akan menghindarkan Anda dari jebakan manipulasi kata-kata pada opsi pilihan ganda.\n\nTiga pilar rumus logika ekuivalensi dan negasi yang wajib Anda hafal di luar kepala meliputi:\n\n1. **Dua Bentuk Ekuivalensi Emas Implikasi ($p \\rightarrow q$)**  \n   Pernyataan bersyarat *\"Jika $p$ maka $q$\"* memiliki dua bentuk kalimat lain yang nilai kebenarannya persis sama:\n   - **Bentuk Kontraposisi:** $p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$  \n     *(Balik posisi pernyataan, lalu negasikan kedua ruasnya: \"Jika tidak $q$, maka tidak $p$\")*.\n   - **Bentuk Disjungsi:** $p \\rightarrow q \\equiv \\sim p \\lor q$  \n     *(Negasikan bagian sebab, ganti kata \"jika... maka...\" menjadi \"atau\", biarkan bagian akibat tetap: \"Tidak $p$ ATAU $q$\")*. Bentuk ini sangat sering muncul sebagai kunci jawaban tak terduga saat seluruh opsi jawaban tidak menggunakan kata *\"jika\"*.\n   - **Catatan Kritis:** **Konvers** ($q \\rightarrow p$) dan **Invers** ($\\sim p \\rightarrow \\sim q$) **TIDAK PERNAH EKUIVALEN** dengan pernyataan asal $p \\rightarrow q$.\n\n2. **Hukum De Morgan (Negasi Konjungsi dan Disjungsi)**  \n   Untuk mengingkari kalimat majemuk yang memuat kata *\"dan\"* atau *\"atau\"*, gunakan aturan De Morgan:\n   - Ingkaran Konjungsi: $\\sim (p \\land q) \\equiv \\sim p \\lor \\sim q$  \n     *(Ingkaran dari \"$p$ dan $q$\" adalah \"tidak $p$ ATAU tidak $q$\")*.\n   - Ingkaran Disjungsi: $\\sim (p \\lor q) \\equiv \\sim p \\land \\sim q$  \n     *(Ingkaran dari \"$p$ atau $q$\" adalah \"tidak $p$ DAN tidak $q$\")*.\n\n3. **Negasi Pernyataan Bersyarat / Implikasi ($sim (p \\rightarrow q)$)**  \n   Banyak siswa terjebak mengira negasi dari *\"Jika $p$ maka $q$\"* adalah *\"Jika tidak $p$ maka tidak $q$\"*. Padahal secara hukum logika matematika:\n   $\\sim (p \\rightarrow q) \\equiv p \\land \\sim q$\n   - **Penjelasan Rasional:** Kalimat janji *\"Jika kamu juara kelas ($p$), maka Ayah belikan sepeda ($q$)\"* hanya terbukti **berbohong / diingkari** jika faktanya: *Kamu terbukti juara kelas ($p$), TETAPI Ayah tidak membelikan sepeda ($\\sim q$)*. Negasi dari kalimat bersyarat tidak lagi diawali kata *\"Jika\"*, melainkan berupa kalimat fakta konjungsi: *\"p DAN tidak q\"*.\n\n4. **Negasi Pernyataan Berkuantor**  \n   - Ingkaran dari kuantor universal (*\"Semua / Setiap $A$ adalah $B$\"*) adalah kuantor eksistensial: *\"Ada / Beberapa / Sebagian $A$ yang bukan $B$\"*.\n   - Ingkaran dari kuantor eksistensial (*\"Ada / Beberapa $A$ yang $B$\"*) adalah kuantor universal ingkaran: *\"Semua $A$ bukan $B$\"*.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat naskah soal UTBK merancang opsi pengecoh dengan memanfaatkan asumsi bahasa sehari-hari yang salah secara logika:\n1. **Jebakan Negasi Implikasi Semu (*Invers Trap*)**  \n   Saat diminta mencari ingkaran dari kalimat *\"Jika P maka Q\"*, pembuat soal memasang opsi pengecoh *\"Jika tidak P maka tidak Q\"*. Opsi ini salah besar karena itu adalah invers, bukan negasi. Negasi implikasi wajib berformat *\"P tetapi tidak Q\"* ($p \\land \\sim q$).\n2. **Jebakan Mengabaikan Pertukaran Operator pada De Morgan**  \n   Pada soal negasi kalimat majemuk, opsi pengecoh hanya menegasikan kata-katanya tanpa mengubah operator penghubungnya (misalnya kata *\"dan\"* tetap dibiarkan *\"dan\"*). Ingat: dalam Hukum De Morgan, kata *\"dan\"* wajib berubah menjadi *\"atau\"*, dan sebaliknya.\n3. **Jebakan Konvers yang Terdengar Meyakinkan**  \n   Pilihan jawaban membalik kalimat secara langsung dari *\"Jika A maka B\"* menjadi *\"Jika B maka A\"*. Siswa yang kurang teliti sering menganggap kedua kalimat ini bermakna sama, padahal membalik urutan syarat tanpa memberikan negasi adalah kekeliruan konvers yang fatal.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nBerikut adalah algoritma taktis untuk menyelesaikan soal ekuivalensi dan negasi di lembar ujian UTBK:\n1. **Untuk Soal \"Pernyataan yang Ekuivalen dengan: Jika P maka Q\"**  \n   - Periksa opsi yang diawali kata *\"Jika\"*: cari yang berformat **\"Jika tidak Q, maka tidak P\"** (Kontraposisi).\n   - Jika tidak ada opsi kalimat jika, langsung cari opsi yang berformat **\"Tidak P atau Q\"** (Disjungsi Implikasi).\n2. **Untuk Soal \"Negasi / Ingkaran dari: Jika P maka Q\"**  \n   - Langsung **coret semua opsi jawaban yang masih diawali kata \"Jika\"**!\n   - Pilih satu-satunya opsi yang menyatakan: **\"[Kondisi P tetap terjadi], TETAPI [Kondisi Q tidak terjadi]\"**.\n3. **Untuk Negasi Majemuk (Hukum De Morgan)**  \n   - Tukar kata hubung: ubah *\"dan\"* menjadi *\"atau\"*, ubah *\"atau\"* menjadi *\"dan\"*.\n   - Balikkan status kebenaran kedua komponen kalimat di sisi kiri dan kanannya.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Ekuivalensi:** Dua pernyataan dikatakan ekuivalen jika menghasilkan nilai kebenaran yang persis sama pada setiap kemungkinan kondisi premisnya.\n- **Dua Rumus Ekuivalensi $p \\rightarrow q$:**  \n  1. Kontraposisi: $\\sim q \\rightarrow \\sim p$  \n  2. Bentuk Disjungsi: $\\sim p \\lor q$\n- **Hakikat Negasi:** Negasi adalah pernyataan yang selalu bernilai kebalikan mutlak dari pernyataan semula.\n- **Dua Rumus Negasi Kunci:**  \n  1. Negasi Implikasi: $\\sim (p \\rightarrow q) \\equiv p \\land \\sim q$  \n  2. Negasi Konjungsi/Disjungsi: $\\sim (p \\land q) \\equiv \\sim p \\lor \\sim q$ dan $\\sim (p \\lor q) \\equiv \\sim p \\land \\sim q$\n- **Strategi Eksekusi:** Untuk ekuivalensi, ingat trik \"balik dan negasikan\". Untuk negasi implikasi, singkirkan opsi bersyarat dan pilih format \"tetap sebab, ingkar akibat\".\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Ekuivalensi dan Negasi yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan stimulus soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika terperinci:\n\n### Variasi 1: Ekuivalensi Pernyataan Bersyarat (Kontraposisi & Bentuk Disjungsi)\n\n> **Konteks Wacana Soal:**  \n> Perhatikan regulasi penerbangan komersial internasional berikut ini:  \n> *\"Jika sebuah maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai wajib memberikan kompensasi ganti rugi penuh berupa fasilitas akomodasi dan pengembalian biaya tiket kepada seluruh penumpang.\"*  \n>  \n> **Pertanyaan UTBK:** *Pernyataan berikut yang memiliki nilai kebenaran ekuivalen (setara secara logika) dengan regulasi penerbangan tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jika pihak maskapai memberikan kompensasi ganti rugi penuh kepada seluruh penumpang, maka maskapai tersebut mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis.  \n> - **B.** Jika pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.  \n> - **C.** Pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, atau pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.  \n> - **D.** Pihak maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis dan pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.  \n> - **E.** Pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh jika dan hanya jika maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Logika:** Regulasi dinyatakan dalam bentuk implikasi bersyarat $p \\rightarrow q$, di mana:  \n  - $p$ = Maskapai mengalami keterlambatan terbang lebih dari empat jam karena kelalaian teknis.  \n  - $q$ = Pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.\n- **Mencari Bentuk Ekuivalensi:** Dalam kaidah logika proposisi matematika, implikasi $p \\rightarrow q$ memiliki dua bentuk ekuivalen yang sah:  \n  1. Kontraposisi: $\\sim q \\rightarrow \\sim p$ (*\"Jika maskapai tidak wajib memberikan kompensasi, maka maskapai tidak mengalami keterlambatan...\"*) — bentuk ini tidak tersedia pada pilihan ganda.  \n  2. Bentuk Disjungsi: $\\sim p \\lor q$ (*\"Maskapai tidak mengalami keterlambatan lebih dari empat jam karena kelalaian teknis, ATAU pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang\"*).  \n  Bentuk kedua ini secara presisi tertera pada pilihan **C**.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Merupakan bentuk **konvers** ($q \\rightarrow p$), yaitu sekadar membalik kalimat tanpa menyangkal, sehingga tidak ekuivalen.  \n  - **Pilihan B Salah:** Merupakan bentuk **invers** ($\\sim p \\rightarrow \\sim q$), yaitu menyangkal tanpa membalik posisi, sehingga tidak ekuivalen.  \n  - **Pilihan D Salah:** Merupakan bentuk **negasi** ($p \\land \\sim q$), yang justru memiliki nilai kebenaran berkebalikan dari premis awal.  \n  - **Pilihan E Salah:** Mengubah implikasi satu arah menjadi relasi biimplikasi dua arah tanpa dasar premis yang sah.\n- **Penerapan Trik Cepat (15 Detik):** Ingat rumus ekuivalensi disjungsi: $p \\rightarrow q \\equiv \\sim p \\lor q$. Cari opsi yang memuat kata *\"tidak P atau Q\"*. Pilihan C langsung menyajikan struktur: *[Tidak mengalami keterlambatan...] ATAU [Wajib memberikan kompensasi...]*. Jawaban yang tepat adalah pilihan **C**.\n\n---\n\n### Variasi 2: Negasi Proposisi Majemuk Bersyarat (Hukum De Morgan)\n\n> **Konteks Wacana Soal:**  \n> Seorang Kepala Dinas Ketahanan Pangan menyampaikan pernyataan resmi terkait stabilitas pasar sembako menjelang hari raya:  \n> *\"Jika pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar tanpa hambatan, maka harga beras di pasar tradisional tidak akan mengalami kenaikan drastis.\"*  \n>  \n> **Pertanyaan UTBK:** *Negasi (ingkaran) yang paling tepat secara kaidah logika formal dari pernyataan Kepala Dinas tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jika pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, maka harga beras di pasar tradisional akan mengalami kenaikan drastis.  \n> - **B.** Pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar, tetapi harga beras di pasar tradisional tetap mengalami kenaikan drastis.  \n> - **C.** Pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, dan harga beras di pasar tradisional tidak mengalami kenaikan drastis.  \n> - **D.** Jika harga beras di pasar tradisional mengalami kenaikan drastis, maka pasokan beras lokal tidak mencukupi atau distribusi antardaerah terhambat.  \n> - **E.** Pasokan beras lokal tidak mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah terhambat, serta harga beras di pasar tradisional naik drastis.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Logika:** Pernyataan Kepala Dinas berbentuk implikasi majemuk:  \n  $(P \\land Q) \\rightarrow R$  \n  di mana:  \n  - $P$ = Pasokan beras lokal mencukupi kebutuhan masyarakat  \n  - $Q$ = Jalur distribusi antardaerah beroperasi lancar tanpa hambatan  \n  - $R$ = Harga beras di pasar tradisional tidak mengalami kenaikan drastis (sehingga $\\sim R$ = harga beras *mengalami kenaikan drastis*).\n- **Penentuan Rumus Negasi Implikasi:**  \n  Rumus baku ingkaran kalimat bersyarat adalah: $\\sim (A \\rightarrow B) \\equiv A \\land \\sim B$.  \n  Dengan menggantikan $A = (P \\land Q)$ dan $B = R$, kita peroleh:  \n  $\\sim ((P \\land Q) \\rightarrow R) \\equiv (P \\land Q) \\land \\sim R$  \n  Artinya: Bagian syarat sebelum kata *\"maka\"* tetap berlaku sepenuhnya (*pasokan beras mencukupi DAN distribusi lancar*), TETAPI bagian akibatnya diingkari (*harga beras di pasar tradisional tetap mengalami kenaikan drastis*).\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Terjebak pada kesalahan umum membuat kalimat invers bersyarat baru yang masih diawali kata *\"Jika\"*.  \n  - **Pilihan C Salah:** Menegaskan anteseden secara terbalik tanpa mempertahankan kondisi syarat $P \\land Q$.  \n  - **Pilihan D Salah:** Merupakan bentuk kontraposisi yang ekuivalen, bukan negasi.  \n  - **Pilihan E Salah:** Mengingkari semua komponen kalimat secara sembarangan tanpa mengikuti kaidah logika negasi implikasi.\n- **Penerapan Trik Cepat (15 Detik):** Gunakan trik eliminasi negasi implikasi:  \n  1. Segera coret semua opsi yang masih menggunakan kata *\"Jika\"* (Pilihan A dan D langsung gugur!).  \n  2. Ingat format ingkaran janji: *\"Syarat terpenuhi, tapi akibat ingkar\"*. Cari opsi yang menyatakan pasokan cukup dan distribusi lancar, namun harga beras tetap naik drastis. Pilihan yang tepat adalah pilihan **B**.\n\n---\n\n### Variasi 3: Evaluasi Ekuivalensi Klausul Kompleks / Kebijakan Publik (HOTS)\n\n> **Konteks Wacana Soal:**  \n> Dewan Pengawas Lingkungan Hidup menetapkan pakta kepatuhan industri manufaktur berat sebagai berikut:  \n> *\"Jika suatu pabrik industri membuang limbah cair beracun tanpa instalasi pengolahan standar atau melepaskan emisi gas cerobong melebihi ambang batas toleransi, maka izin operasional pabrik tersebut akan dicabut dan pimpinan perusahaan akan diproses secara hukum.\"*  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan kaidah logika ekuivalensi (kontraposisi dan Hukum De Morgan), manakah pernyataan di bawah ini yang paling tepat dan bermakna setara (ekuivalen) dengan pakta kepatuhan tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jika izin operasional pabrik industri tidak dicabut atau pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut tidak membuang limbah cair beracun tanpa instalasi standar dan tidak melepaskan emisi gas cerobong melebihi ambang batas toleransi.  \n> - **B.** Jika izin operasional pabrik industri tidak dicabut dan pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut boleh melepaskan emisi gas cerobong melebihi ambang batas toleransi.  \n> - **C.** Jika suatu pabrik industri mengolah limbah cair beracun sesuai standar dan emisi gas di bawah batas toleransi, maka izin operasional pabrik tidak dicabut dan pimpinan perusahaan tidak diproses hukum.  \n> - **D.** Izin operasional suatu pabrik industri akan dicabut jika dan hanya jika pabrik tersebut membuang limbah cair beracun tanpa instalasi pengolahan standar.  \n> - **E.** Jika pimpinan perusahaan diproses secara hukum, maka pabrik industri tersebut pasti telah membuang limbah cair beracun tanpa instalasi pengolahan standar.\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Formulasi Simbolik Premis Asli:**  \n  $(L \\lor E) \\rightarrow (C \\land P)$  \n  di mana:  \n  - $L$ = Membuang limbah cair beracun tanpa instalasi standar  \n  - $E$ = Melepaskan emisi gas melebihi ambang batas  \n  - $C$ = Izin operasional dicabut  \n  - $P$ = Pimpinan perusahaan diproses secara hukum\n- **Penerapan Kontraposisi Ganda dengan Hukum De Morgan:**  \n  Sesuai kaidah kontraposisi:  \n  $(L \\lor E) \\rightarrow (C \\land P) \\equiv \\sim (C \\land P) \\rightarrow \\sim (L \\lor E)$  \n  Sekarang terapkan **Hukum De Morgan** pada kedua ruas:  \n  - Ruas kiri: $\\sim (C \\land P) \\equiv \\sim C \\lor \\sim P$ *(Izin operasional TIDAK dicabut ATAU pimpinan TIDAK diproses hukum)*.  \n  - Ruas kanan: $\\sim (L \\lor E) \\equiv \\sim L \\land \\sim E$ *(TIDAK membuang limbah beracun DAN TIDAK melepaskan emisi gas berlebih)*.  \n  Menggabungkan kedua hasil De Morgan menghasilkan kalimat kontraposisi utuh:  \n  $(\\sim C \\lor \\sim P) \\rightarrow (\\sim L \\land \\sim E)$  \n  Kalimat ini secara sempurna dan presisi diungkapkan oleh pilihan **A**.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan B Salah:** Menggunakan kata *\"dan\"* pada penyangkalan konsekuen (melanggar De Morgan) dan membolehkan pelepasan emisi berlebih.  \n  - **Pilihan C Salah:** Merupakan bentuk **invers** $\\sim(L \\lor E) \\rightarrow \\sim(C \\land P)$, yang tidak ekuivalen dengan premis awal.  \n  - **Pilihan D Salah:** Mengubah kalimat menjadi biimplikasi sepihak dan membuang komponen emisi gas secara keliru.  \n  - **Pilihan E Salah:** Mengalami sesat pikir menegaskan konsekuen (*affirming the consequent*), menyimpulkan sebab tunggal dari salah satu bagian akibat.\n- **Penerapan Trik Cepat (15 Detik):**  \n  1. Kontraposisi menuntut pembalikan posisi: akibat majemuk *(dicabut DAN diproses)* pindah ke depan dengan disangkal menggunakan De Morgan $\\rightarrow$ menjadi *(TIDAK dicabut ATAU TIDAK diproses)*.  \n  2. Sebab majemuk *(limbah ATAU emisi)* pindah ke belakang dengan disangkal menggunakan De Morgan $\\rightarrow$ menjadi *(TIDAK buang limbah DAN TIDAK buang emisi)*.  \n  3. Cocokkan dengan pilihan ganda: hanya pilihan **A** yang menerapkan pergantian operator De Morgan bolak-balik secara tepat. Jawaban yang benar adalah pilihan **A**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-02-02-equivalence",
+        "title": "Segitiga Ekuivalensi Logika dan Hukum De Morgan",
+        "caption": "Konversi Bentuk Pernyataan yang Memiliki Nilai Kebenaran Identik",
+        "svg_code": "<svg viewBox=\"0 0 640 215\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .eq-title { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; text-anchor: middle; }\n      .eq-formula { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 800; text-anchor: middle; }\n      .eq-sub { font-family: system-ui, sans-serif; font-size: 10px; fill: #475569; text-anchor: middle; }\n      :root.dark .eq-sub { fill: #94a3b8; }\n    </style>\n  </defs>\n\n  <!-- Card 1: Ekuivalensi Implikasi (Kontraposisi & Disjungsi) -->\n  <g transform=\"translate(15, 12)\">\n    <rect width=\"295\" height=\"190\" rx=\"12\" fill=\"rgba(79, 70, 229, 0.05)\" stroke=\"rgba(79, 70, 229, 0.25)\" stroke-width=\"1.5\"/>\n    <rect x=\"15\" y=\"12\" width=\"265\" height=\"28\" rx=\"6\" fill=\"#4f46e5\"/>\n    <text x=\"147\" y=\"31\" fill=\"#ffffff\" class=\"eq-title\">EKUIVALENSI IMPLIKASI (p ⟹ q)</text>\n\n    <rect x=\"20\" y=\"52\" width=\"255\" height=\"52\" rx=\"8\" fill=\"#e0e7ff\"/>\n    <text x=\"147\" y=\"74\" fill=\"#312e81\" class=\"eq-formula\">p ⟹ q ≡ ~q ⟹ ~p</text>\n    <text x=\"147\" y=\"92\" fill=\"#4338ca\" class=\"eq-sub\">Hukum Kontraposisi (Paling Sering di UTBK)</text>\n\n    <rect x=\"20\" y=\"116\" width=\"255\" height=\"52\" rx=\"8\" fill=\"#e0e7ff\"/>\n    <text x=\"147\" y=\"138\" fill=\"#312e81\" class=\"eq-formula\">p ⟹ q ≡ ~p ∨ q</text>\n    <text x=\"147\" y=\"156\" fill=\"#4338ca\" class=\"eq-sub\">Bentuk Disjungsi Ekuivalen</text>\n  </g>\n\n  <!-- Card 2: Negasi De Morgan & Implikasi -->\n  <g transform=\"translate(330, 12)\">\n    <rect width=\"295\" height=\"190\" rx=\"12\" fill=\"rgba(239, 68, 68, 0.05)\" stroke=\"rgba(239, 68, 68, 0.25)\" stroke-width=\"1.5\"/>\n    <rect x=\"15\" y=\"12\" width=\"265\" height=\"28\" rx=\"6\" fill=\"#ef4444\"/>\n    <text x=\"147\" y=\"31\" fill=\"#ffffff\" class=\"eq-title\">HUKUM NEGASI (INGKARAN)</text>\n\n    <rect x=\"20\" y=\"52\" width=\"255\" height=\"52\" rx=\"8\" fill=\"#fee2e2\"/>\n    <text x=\"147\" y=\"72\" fill=\"#991b1b\" class=\"eq-formula\">~(p ∧ q) ≡ ~p ∨ ~q</text>\n    <text x=\"147\" y=\"90\" fill=\"#991b1b\" class=\"eq-formula\">~(p ∨ q) ≡ ~p ∧ ~q</text>\n\n    <rect x=\"20\" y=\"116\" width=\"255\" height=\"52\" rx=\"8\" fill=\"#fee2e2\"/>\n    <text x=\"147\" y=\"138\" fill=\"#991b1b\" class=\"eq-formula\">~(p ⟹ q) ≡ p ∧ ~q</text>\n    <text x=\"147\" y=\"156\" fill=\"#b91c1c\" class=\"eq-sub\">Negasi Implikasi: Anteseden Tetap, Konsekuen Diingkari</text>\n  </g>\n</svg>"
+      }
     ],
-    quick_execution_algorithm: [
-      'Untuk mencari ekuivalensi p -> q: cari kontraposisinya (~q -> ~p) atau bentuk disjungsinya (~p ∨ q).',
-      'Untuk mencari negasi p -> q: segera eliminasi opsi yang masih memakai kata "jika", dan cari opsi berformat "p DAN ~q".',
-      'Saat menegasikan kalimat majemuk: terapkan De Morgan dengan menukar "dan" menjadi "atau" (atau sebaliknya) lalu negasikan kedua unsurnya.',
-      'Pada kuantor universal ("semua/setiap"): negasikan dengan kuantor eksistensial ("ada/beberapa/sebagian yang tidak").',
+    "distractor_traps": [
+      "Jebakan Invers Semu: Mengira negasi dari \"Jika p maka q\" adalah \"Jika ~p maka ~q\", padahal negasi implikasi berbentuk konjungsi (p ∧ ~q).",
+      "Jebakan Konvers: Menganggap \"Jika q maka p\" setara dengan kalimat asli \"Jika p maka q\", padahal hanya kontraposisi (~q -> ~p) yang ekuivalen.",
+      "Kekeliruan De Morgan: Lupa menukar operator logika saat menegasikan kalimat majemuk (menegasikan \"dan\" tetap menjadi \"dan\", padahal wajib berubah menjadi \"atau\")."
     ],
+    "quick_execution_algorithm": [
+      "Untuk mencari ekuivalensi p -> q: cari kontraposisinya (~q -> ~p) atau bentuk disjungsinya (~p ∨ q).",
+      "Untuk mencari negasi p -> q: segera eliminasi opsi yang masih memakai kata \"jika\", dan cari opsi berformat \"p DAN ~q\".",
+      "Saat menegasikan kalimat majemuk: terapkan De Morgan dengan menukar \"dan\" menjadi \"atau\" (atau sebaliknya) lalu negasikan kedua unsurnya.",
+      "Pada kuantor universal (\"semua/setiap\"): negasikan dengan kuantor eksistensial (\"ada/beberapa/sebagian yang tidak\")."
+    ]
   },
-  worked_examples: [
+  "worked_examples": [
     {
-      example_id: 'pu-02-02-ex1',
-      variation_name: 'Variasi 1: Ekuivalensi Pernyataan Bersyarat (Level: Mudah)',
-      difficulty: 'easy',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Perhatikan regulasi penerbangan komersial internasional berikut ini:\n\n*"Jika sebuah maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai wajib memberikan kompensasi ganti rugi penuh berupa fasilitas akomodasi dan pengembalian biaya tiket kepada seluruh penumpang."*',
-      question_markdown:
-        'Pernyataan berikut yang memiliki nilai kebenaran **ekuivalen (setara secara logika)** dengan regulasi penerbangan tersebut adalah...',
-      options: [
+      "example_id": "pu-02-02-ex1",
+      "variation_name": "Variasi 1: Ekuivalensi Pernyataan Bersyarat (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan regulasi penerbangan komersial internasional berikut ini:\n\n*\"Jika sebuah maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai wajib memberikan kompensasi ganti rugi penuh berupa fasilitas akomodasi dan pengembalian biaya tiket kepada seluruh penumpang.\"*",
+      "question_markdown": "Pernyataan berikut yang memiliki nilai kebenaran **ekuivalen (setara secara logika)** dengan regulasi penerbangan tersebut adalah...",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Jika pihak maskapai memberikan kompensasi ganti rugi penuh kepada seluruh penumpang, maka maskapai tersebut mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis.',
+          "key": "A",
+          "text_markdown": "Jika pihak maskapai memberikan kompensasi ganti rugi penuh kepada seluruh penumpang, maka maskapai tersebut mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Jika pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.',
+          "key": "B",
+          "text_markdown": "Jika pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, maka pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, atau pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.',
+          "key": "C",
+          "text_markdown": "Pihak maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis, atau pihak maskapai wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Pihak maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis dan pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang.',
+          "key": "D",
+          "text_markdown": "Pihak maskapai mengalami keterlambatan jadwal terbang lebih dari empat jam karena kelalaian teknis dan pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh kepada seluruh penumpang."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh jika dan hanya jika maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam.',
-        },
+          "key": "E",
+          "text_markdown": "Pihak maskapai tidak wajib memberikan kompensasi ganti rugi penuh jika dan hanya jika maskapai tidak mengalami keterlambatan jadwal terbang lebih dari empat jam."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Ingat dua rumus ekuivalensi implikasi `p → q`: kontraposisi `~q → ~p` dan bentuk disjungsi `~p ∨ q` ("Tidak p ATAU q"). Periksa opsi C yang menggunakan bentuk disjungsi!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Premis Asli:** $p \\rightarrow q$
-  - $p$: Maskapai mengalami keterlambatan terbang $> 4$ jam karena kelalaian teknis.
-  - $q$: Maskapai wajib memberikan kompensasi ganti rugi penuh.
-- **Dua Bentuk Ekuivalensi yang Sah:**
-  1. Kontraposisi: $\\sim q \\rightarrow \\sim p$
-  2. Bentuk Disjungsi Implikasi: $\\sim p \\lor q$
-- **Analisis Pilihan C:** Menggunakan bentuk disjungsi $\\sim p \\lor q$, yaitu: *"Maskapai tidak mengalami keterlambatan... ATAU pihak maskapai wajib memberikan kompensasi..."*. Sesuai tabel kebenaran logika matematika, nilai kebenaran $\\sim p \\lor q$ identik penuh dengan $p \\rightarrow q$.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Ekuivalensi Disjungsi ~p ∨ q):**
-
-1. Jika opsi tidak memuat kontraposisi *"Jika tidak Q maka tidak P"*, segera cari bentuk disjungsi *"Tidak P atau Q"*.
-2. Negasikan kalimat sebab: *"Maskapai tidak terlambat..."* lalu sambungkan kata *"atau"* dengan kalimat akibat: *"atau wajib memberi kompensasi"*.
-3. Kalimat tersebut ada tepat pada pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Merupakan bentuk konvers ($q \\rightarrow p$), yaitu sekadar membalik kalimat tanpa negasi.
-- **Pilihan B Salah:** Merupakan bentuk invers ($\\sim p \\rightarrow \\sim q$), yaitu menegasikan tanpa membalik posisi.
-- **Pilihan D Salah:** Merupakan bentuk negasi ($p \\land \\sim q$), yang bernilai kebalikan dari premis awal.
-- **Pilihan E Salah:** Mengubah implikasi satu arah menjadi biimplikasi dua arah tanpa dasar yang sah.`,
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Ingat dua rumus ekuivalensi implikasi `p → q`: kontraposisi `~q → ~p` dan bentuk disjungsi `~p ∨ q` (\"Tidak p ATAU q\"). Periksa opsi C yang menggunakan bentuk disjungsi!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Premis Asli:** $p \\rightarrow q$\n  - $p$: Maskapai mengalami keterlambatan terbang $> 4$ jam karena kelalaian teknis.\n  - $q$: Maskapai wajib memberikan kompensasi ganti rugi penuh.\n- **Dua Bentuk Ekuivalensi yang Sah:**\n  1. Kontraposisi: $\\sim q \\rightarrow \\sim p$\n  2. Bentuk Disjungsi Implikasi: $\\sim p \\lor q$\n- **Analisis Pilihan C:** Menggunakan bentuk disjungsi $\\sim p \\lor q$, yaitu: *\"Maskapai tidak mengalami keterlambatan... ATAU pihak maskapai wajib memberikan kompensasi...\"*. Sesuai tabel kebenaran logika matematika, nilai kebenaran $\\sim p \\lor q$ identik penuh dengan $p \\rightarrow q$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Ekuivalensi Disjungsi ~p ∨ q):**\n\n1. Jika opsi tidak memuat kontraposisi *\"Jika tidak Q maka tidak P\"*, segera cari bentuk disjungsi *\"Tidak P atau Q\"*.\n2. Negasikan kalimat sebab: *\"Maskapai tidak terlambat...\"* lalu sambungkan kata *\"atau\"* dengan kalimat akibat: *\"atau wajib memberi kompensasi\"*.\n3. Kalimat tersebut ada tepat pada pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Merupakan bentuk konvers ($q \\rightarrow p$), yaitu sekadar membalik kalimat tanpa negasi.\n- **Pilihan B Salah:** Merupakan bentuk invers ($\\sim p \\rightarrow \\sim q$), yaitu menegasikan tanpa membalik posisi.\n- **Pilihan D Salah:** Merupakan bentuk negasi ($p \\land \\sim q$), yang bernilai kebalikan dari premis awal.\n- **Pilihan E Salah:** Mengubah implikasi satu arah menjadi biimplikasi dua arah tanpa dasar yang sah."
     },
     {
-      example_id: 'pu-02-02-ex2',
-      variation_name: 'Variasi 2: Negasi Proposisi Majemuk Bersyarat (Level: Sedang)',
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Seorang Kepala Dinas Ketahanan Pangan menyampaikan pernyataan resmi terkait stabilitas pasar sembako menjelang hari raya:\n\n*"Jika pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar tanpa hambatan, maka harga beras di pasar tradisional tidak akan mengalami kenaikan drastis."*',
-      question_markdown:
-        'Negasi (ingkaran) yang **paling tepat secara kaidah logika formal** dari pernyataan Kepala Dinas tersebut adalah...',
-      options: [
+      "example_id": "pu-02-02-ex2",
+      "variation_name": "Variasi 2: Negasi Proposisi Majemuk Bersyarat (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Seorang Kepala Dinas Ketahanan Pangan menyampaikan pernyataan resmi terkait stabilitas pasar sembako menjelang hari raya:\n\n*\"Jika pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar tanpa hambatan, maka harga beras di pasar tradisional tidak akan mengalami kenaikan drastis.\"*",
+      "question_markdown": "Negasi (ingkaran) yang **paling tepat secara kaidah logika formal** dari pernyataan Kepala Dinas tersebut adalah...",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Jika pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, maka harga beras di pasar tradisional akan mengalami kenaikan drastis.',
+          "key": "A",
+          "text_markdown": "Jika pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, maka harga beras di pasar tradisional akan mengalami kenaikan drastis."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar, tetapi harga beras di pasar tradisional tetap mengalami kenaikan drastis.',
+          "key": "B",
+          "text_markdown": "Pasokan beras lokal mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah beroperasi lancar, tetapi harga beras di pasar tradisional tetap mengalami kenaikan drastis."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, dan harga beras di pasar tradisional tidak mengalami kenaikan drastis.',
+          "key": "C",
+          "text_markdown": "Pasokan beras lokal tidak mencukupi kebutuhan masyarakat atau jalur distribusi antardaerah terhambat, dan harga beras di pasar tradisional tidak mengalami kenaikan drastis."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Jika harga beras di pasar tradisional mengalami kenaikan drastis, maka pasokan beras lokal tidak mencukupi atau distribusi antardaerah terhambat.',
+          "key": "D",
+          "text_markdown": "Jika harga beras di pasar tradisional mengalami kenaikan drastis, maka pasokan beras lokal tidak mencukupi atau distribusi antardaerah terhambat."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Pasokan beras lokal tidak mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah terhambat, serta harga beras di pasar tradisional naik drastis.',
-        },
+          "key": "E",
+          "text_markdown": "Pasokan beras lokal tidak mencukupi kebutuhan masyarakat dan jalur distribusi antardaerah terhambat, serta harga beras di pasar tradisional naik drastis."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Rumus negasi implikasi: `~(A → B) ≡ A ∧ ~B`. Coret semua opsi yang masih diawali kata "Jika"! Cari opsi yang mempertahankan syarat (pasokan cukup DAN distribusi lancar), TETAPI akibatnya diingkari (harga beras tetap naik).',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Struktur Simbolik Kalimat:** $(P \\land Q) \\rightarrow R$
-  - $P$: Pasokan beras lokal mencukupi
-  - $Q$: Jalur distribusi antardaerah beroperasi lancar
-  - $R$: Harga beras tidak mengalami kenaikan drastis (sehingga $\\sim R$: harga beras *mengalami kenaikan drastis*)
-- **Rumus Negasi Implikasi:**
-  $$\\sim ((P \\land Q) \\rightarrow R) \\equiv (P \\land Q) \\land \\sim R$$
-- **Penerjemahan Bahasa:**
-  - $(P \\land Q)$: Pasokan beras lokal mencukupi dan jalur distribusi lancar.
-  - $\\land \\sim R$: TETAPI / DAN harga beras di pasar tradisional tetap mengalami kenaikan drastis.
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Eliminasi Opsi "Jika"):**
-
-1. Negasi dari kalimat implikasi *"Jika... maka..."* TIDAK PERNAH berbentuk kalimat bersyarat *"Jika"*. Coret langsung pilihan **A** dan **D**!
-2. Cari formula *"Syarat tetap berlaku, tapi janji diingkari"*. Pilihan **B** mempertahankan pasokan cukup dan distribusi lancar, namun harga beras tetap naik drastis.
-3. Jawaban yang tepat adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Terjebak membuat kalimat invers baru yang masih berbentuk bersyarat "Jika".
-- **Pilihan C Salah:** Mengingkari anteseden secara keliru dan tidak mempertahankan syarat $P \\land Q$.
-- **Pilihan D Salah:** Merupakan bentuk kontraposisi yang ekuivalen, bukan ingkaran/negasi.
-- **Pilihan E Salah:** Mengingkari semua komponen kalimat secara membabi buta tanpa mengikuti kaidah logika implikasi.`,
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Rumus negasi implikasi: `~(A → B) ≡ A ∧ ~B`. Coret semua opsi yang masih diawali kata \"Jika\"! Cari opsi yang mempertahankan syarat (pasokan cukup DAN distribusi lancar), TETAPI akibatnya diingkari (harga beras tetap naik).",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Simbolik Kalimat:** $(P \\land Q) \\rightarrow R$\n  - $P$: Pasokan beras lokal mencukupi\n  - $Q$: Jalur distribusi antardaerah beroperasi lancar\n  - $R$: Harga beras tidak mengalami kenaikan drastis (sehingga $\\sim R$: harga beras *mengalami kenaikan drastis*)\n- **Rumus Negasi Implikasi:**\n  $\\sim ((P \\land Q) \\rightarrow R) \\equiv (P \\land Q) \\land \\sim R$\n- **Penerjemahan Bahasa:**\n  - $(P \\land Q)$: Pasokan beras lokal mencukupi dan jalur distribusi lancar.\n  - $\\land \\sim R$: TETAPI / DAN harga beras di pasar tradisional tetap mengalami kenaikan drastis.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Opsi \"Jika\"):**\n\n1. Negasi dari kalimat implikasi *\"Jika... maka...\"* TIDAK PERNAH berbentuk kalimat bersyarat *\"Jika\"*. Coret langsung pilihan **A** dan **D**!\n2. Cari formula *\"Syarat tetap berlaku, tapi janji diingkari\"*. Pilihan **B** mempertahankan pasokan cukup dan distribusi lancar, namun harga beras tetap naik drastis.\n3. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terjebak membuat kalimat invers baru yang masih berbentuk bersyarat \"Jika\".\n- **Pilihan C Salah:** Mengingkari anteseden secara keliru dan tidak mempertahankan syarat $P \\land Q$.\n- **Pilihan D Salah:** Merupakan bentuk kontraposisi yang ekuivalen, bukan ingkaran/negasi.\n- **Pilihan E Salah:** Mengingkari semua komponen kalimat secara membabi buta tanpa mengikuti kaidah logika implikasi."
     },
     {
-      example_id: 'pu-02-02-ex3',
-      variation_name: 'Variasi 3: Evaluasi Ekuivalensi Klausul Kompleks (Level: Sulit)',
-      difficulty: 'hard',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Dewan Pengawas Lingkungan Hidup menetapkan pakta kepatuhan industri manufaktur berat sebagai berikut:\n\n*"Jika suatu pabrik industri membuang limbah cair beracun tanpa instalasi pengolahan standar atau melepaskan emisi gas cerobong melebihi ambang batas toleransi, maka izin operasional pabrik tersebut akan dicabut dan pimpinan perusahaan akan diproses secara hukum."*',
-      question_markdown:
-        'Berdasarkan kaidah logika ekuivalensi (kontraposisi dan Hukum De Morgan), manakah pernyataan di bawah ini yang **pasti bermakna setara (ekuivalen)** dengan pakta kepatuhan tersebut?',
-      options: [
+      "example_id": "pu-02-02-ex3",
+      "variation_name": "Variasi 3: Evaluasi Ekuivalensi Klausul Kompleks (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dewan Pengawas Lingkungan Hidup menetapkan pakta kepatuhan industri manufaktur berat sebagai berikut:\n\n*\"Jika suatu pabrik industri membuang limbah cair beracun tanpa instalasi pengolahan standar atau melepaskan emisi gas cerobong melebihi ambang batas toleransi, maka izin operasional pabrik tersebut akan dicabut dan pimpinan perusahaan akan diproses secara hukum.\"*",
+      "question_markdown": "Berdasarkan kaidah logika ekuivalensi (kontraposisi dan Hukum De Morgan), manakah pernyataan di bawah ini yang **pasti bermakna setara (ekuivalen)** dengan pakta kepatuhan tersebut?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Jika izin operasional pabrik industri tidak dicabut atau pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut tidak membuang limbah cair beracun tanpa instalasi standar dan tidak melepaskan emisi gas cerobong melebihi ambang batas toleransi.',
+          "key": "A",
+          "text_markdown": "Jika izin operasional pabrik industri tidak dicabut atau pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut tidak membuang limbah cair beracun tanpa instalasi standar dan tidak melepaskan emisi gas cerobong melebihi ambang batas toleransi."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Jika izin operasional pabrik industri tidak dicabut dan pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut boleh melepaskan emisi gas cerobong melebihi ambang batas toleransi.',
+          "key": "B",
+          "text_markdown": "Jika izin operasional pabrik industri tidak dicabut dan pimpinan perusahaan tidak diproses secara hukum, maka pabrik tersebut boleh melepaskan emisi gas cerobong melebihi ambang batas toleransi."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Jika suatu pabrik industri mengolah limbah cair beracun sesuai standar dan emisi gas di bawah batas toleransi, maka izin operasional pabrik tidak dicabut dan pimpinan perusahaan tidak diproses hukum.',
+          "key": "C",
+          "text_markdown": "Jika suatu pabrik industri mengolah limbah cair beracun sesuai standar dan emisi gas di bawah batas toleransi, maka izin operasional pabrik tidak dicabut dan pimpinan perusahaan tidak diproses hukum."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Izin operasional suatu pabrik industri akan dicabut jika dan hanya jika pabrik tersebut membuang limbah cair beracun tanpa instalasi pengolahan standar.',
+          "key": "D",
+          "text_markdown": "Izin operasional suatu pabrik industri akan dicabut jika dan hanya jika pabrik tersebut membuang limbah cair beracun tanpa instalasi pengolahan standar."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Jika pimpinan perusahaan diproses secara hukum, maka pabrik industri tersebut pasti telah membuang limbah cair beracun tanpa instalasi pengolahan standar.',
-        },
+          "key": "E",
+          "text_markdown": "Jika pimpinan perusahaan diproses secara hukum, maka pabrik industri tersebut pasti telah membuang limbah cair beracun tanpa instalasi pengolahan standar."
+        }
       ],
-      correct_answer: 'A',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Gunakan kontraposisi `A → B ≡ ~B → ~A` dengan Hukum De Morgan ganda: konsekuen `(C ∧ P)` jika disangkal menjadi `(~C ∨ ~P)` ("TIDAK dicabut ATAU TIDAK diproses"). Anteseden `(L ∨ E)` jika disangkal menjadi `(~L ∧ ~E)` ("TIDAK buang limbah DAN TIDAK buang emisi").',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Rumus Premis Asli:** $(L \\lor E) \\rightarrow (C \\land P)$
-  - $L$: Buang limbah cair beracun tanpa instalasi standar
-  - $E$: Lepaskan emisi gas melebihi ambang batas
-  - $C$: Izin operasional dicabut
-  - $P$: Pimpinan perusahaan diproses secara hukum
-- **Langkah 1 (Kontraposisi):**
-  $$(L \\lor E) \\rightarrow (C \\land P) \\equiv \\sim (C \\land P) \\rightarrow \\sim (L \\lor E)$$
-- **Langkah 2 (Terapkan Hukum De Morgan pada Kedua Ruas):**
-  - Ruas kiri: $\\sim (C \\land P) \\equiv \\sim C \\lor \\sim P$ (Izin tidak dicabut ATAU pimpinan tidak diproses hukum).
-  - Ruas kanan: $\\sim (L \\lor E) \\equiv \\sim L \\land \\sim E$ (Tidak buang limbah beracun DAN tidak lepaskan emisi berlebih).
-- **Hasil Akhir Ekuivalensi:**
-  $$(\\sim C \\lor \\sim P) \\rightarrow (\\sim L \\land \\sim E)$$
-
-**Jawaban: A**`,
-      quick_trick_markdown: `**Cara Cepat (Tukar Posisi & Terapkan De Morgan):**
-
-1. Pindahkan akibat *(dicabut DAN diproses)* ke depan menjadi syarat: ingkari dengan De Morgan menjadi *(TIDAK dicabut ATAU TIDAK diproses)*.
-2. Pindahkan sebab *(limbah ATAU emisi)* ke belakang menjadi akibat: ingkari dengan De Morgan menjadi *(TIDAK buang limbah DAN TIDAK buang emisi)*.
-3. Hanya pilihan **A** yang menukar operator "dan" menjadi "atau" di depan serta "atau" menjadi "dan" di belakang secara sempurna.
-4. Jawaban yang tepat adalah pilihan **A**.`,
-      why_others_are_wrong_markdown: `- **Pilihan B Salah:** Menggunakan operator "dan" alih-alih "atau" pada penyangkalan konsekuen, serta melanggar klausul emisi.
-- **Pilihan C Salah:** Merupakan bentuk invers $\\sim(L \\lor E) \\rightarrow \\sim(C \\land P)$, yang tidak ekuivalen dengan premis awal.
-- **Pilihan D Salah:** Membatasi regulasi menjadi biimplikasi sepihak dan membuang klausul emisi gas.
-- **Pilihan E Salah:** Mengalami cacat logika menegaskan konsekuen tunggal (*affirming the consequent*).`,
-    },
-  ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Gunakan kontraposisi `A → B ≡ ~B → ~A` dengan Hukum De Morgan ganda: konsekuen `(C ∧ P)` jika disangkal menjadi `(~C ∨ ~P)` (\"TIDAK dicabut ATAU TIDAK diproses\"). Anteseden `(L ∨ E)` jika disangkal menjadi `(~L ∧ ~E)` (\"TIDAK buang limbah DAN TIDAK buang emisi\").",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rumus Premis Asli:** $(L \\lor E) \\rightarrow (C \\land P)$\n  - $L$: Buang limbah cair beracun tanpa instalasi standar\n  - $E$: Lepaskan emisi gas melebihi ambang batas\n  - $C$: Izin operasional dicabut\n  - $P$: Pimpinan perusahaan diproses secara hukum\n- **Langkah 1 (Kontraposisi):**\n  $(L \\lor E) \\rightarrow (C \\land P) \\equiv \\sim (C \\land P) \\rightarrow \\sim (L \\lor E)$\n- **Langkah 2 (Terapkan Hukum De Morgan pada Kedua Ruas):**\n  - Ruas kiri: $\\sim (C \\land P) \\equiv \\sim C \\lor \\sim P$ (Izin tidak dicabut ATAU pimpinan tidak diproses hukum).\n  - Ruas kanan: $\\sim (L \\lor E) \\equiv \\sim L \\land \\sim E$ (Tidak buang limbah beracun DAN tidak lepaskan emisi berlebih).\n- **Hasil Akhir Ekuivalensi:**\n  $(\\sim C \\lor \\sim P) \\rightarrow (\\sim L \\land \\sim E)$\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Tukar Posisi & Terapkan De Morgan):**\n\n1. Pindahkan akibat *(dicabut DAN diproses)* ke depan menjadi syarat: ingkari dengan De Morgan menjadi *(TIDAK dicabut ATAU TIDAK diproses)*.\n2. Pindahkan sebab *(limbah ATAU emisi)* ke belakang menjadi akibat: ingkari dengan De Morgan menjadi *(TIDAK buang limbah DAN TIDAK buang emisi)*.\n3. Hanya pilihan **A** yang menukar operator \"dan\" menjadi \"atau\" di depan serta \"atau\" menjadi \"dan\" di belakang secara sempurna.\n4. Jawaban yang tepat adalah pilihan **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menggunakan operator \"dan\" alih-alih \"atau\" pada penyangkalan konsekuen, serta melanggar klausul emisi.\n- **Pilihan C Salah:** Merupakan bentuk invers $\\sim(L \\lor E) \\rightarrow \\sim(C \\land P)$, yang tidak ekuivalen dengan premis awal.\n- **Pilihan D Salah:** Membatasi regulasi menjadi biimplikasi sepihak dan membuang klausul emisi gas.\n- **Pilihan E Salah:** Mengalami cacat logika menegaskan konsekuen tunggal (*affirming the consequent*)."
+    }
+  ]
 };
 
 const MATERIAL_PU_02_03 = {
-  metadata: {
-    id: 'pu-2-3',
-    subtest: 'PU',
-    chapter_num: 2,
-    chapter_title: 'Penalaran Deduktif',
-    subchapter_num: '2.3',
-    subchapter_title: 'Penarikan Kesimpulan (Modus Ponens, Modus Tollens, Silogisme)',
-    title: 'Penarikan Kesimpulan (Modus Ponens, Modus Tollens, Silogisme)',
-    required_question_variations: [
-      'Penarikan Kesimpulan Rantai Silogisme Multi-Premis',
-      'Deteksi Fallacy / Evaluasi Validitas Penarikan Kesimpulan',
-      'Penarikan Kesimpulan Premis Majemuk Campuran (HOTS)',
+  "metadata": {
+    "id": "pu-2-3",
+    "subtest": "PU",
+    "chapter_num": 2,
+    "chapter_title": "Penalaran Deduktif",
+    "subchapter_num": "2.3",
+    "subchapter_title": "Penarikan Kesimpulan (Modus Ponens, Modus Tollens, Silogisme)",
+    "title": "Penarikan Kesimpulan (Modus Ponens, Modus Tollens, Silogisme)",
+    "required_question_variations": [
+      "Penarikan Kesimpulan Rantai Silogisme Multi-Premis",
+      "Deteksi Fallacy / Evaluasi Validitas Penarikan Kesimpulan",
+      "Penarikan Kesimpulan Premis Majemuk Campuran (HOTS)"
     ],
-    requires_svg: false,
-    updated_at: '2026-11-07',
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
   },
-  content: {
-    tactical_overview:
-      'Penarikan kesimpulan deduktif adalah proses menurunkan kesimpulan baru yang mutlak benar dari sekumpulan premis yang dianggap benar, menggunakan kaidah logika formal: Modus Ponens, Modus Tollens, dan Silogisme. Kunci utama dalam menyelesaikan soal tipe ini di UTBK SNBT adalah menyelaraskan arah rantai implikasi menggunakan hukum kontraposisi sebelum menyambungkannya, serta selalu waspada terhadap dua sesat pikir klasik: menegaskan konsekuen (mengira p → q dan q menghasilkan p) dan menyangkal anteseden (mengira p → q dan ~p menghasilkan ~q).',
-    exam_blueprint_markdown: `# 1. Prinsip Dasar
-
-Penarikan kesimpulan deduktif merupakan inti dari pengujian penalaran umum UTBK SNBT. Dalam logika deduktif, kebenaran kesimpulan bersifat **pasti mutlak (valid)** asalkan premis-premis yang mendasarinya bernilai benar dan aturan penarikan kesimpulannya sah secara hukum logika formal. Anda tidak diperkenankan memasukkan asumsi pribadi di luar informasi yang diberikan pada premis soal.
-
-Tiga kaidah baku penarikan kesimpulan yang wajib Anda kuasai adalah:
-
-1. **Modus Ponens (Kaidah Menegaskan Sebab / Anteseden)**  
-   - Premis 1: $p \\rightarrow q$ *(Jika $p$, maka $q$)*  
-   - Premis 2: $p$ *(Fakta: $p$ benar-benar terjadi)*  
-   - **Kesimpulan Sah:** $\\therefore q$ *(Maka pasti $q$ terjadi)*  
-   *Contoh:* Jika hari hujan ($p$), maka jalanan basah ($q$). Hari ini hujan ($p$). Simpulan pasti: jalanan basah ($q$).
-
-2. **Modus Tollens (Kaidah Menyangkal Akibat / Konsekuen)**  
-   - Premis 1: $p \\rightarrow q$ *(Jika $p$, maka $q$)*  
-   - Premis 2: $\\sim q$ *(Fakta: akibat $q$ tidak terjadi)*  
-   - **Kesimpulan Sah:** $\\therefore \\sim p$ *(Maka pasti sebab $p$ tidak terjadi)*  
-   *Contoh:* Jika hari hujan ($p$), maka jalanan basah ($q$). Jalanan tidak basah ($\\sim q$). Simpulan pasti: hari tidak hujan ($\\sim p$).
-
-3. **Silogisme Hipotetis (Kaidah Rantai Implikasi Transitif)**  
-   - Premis 1: $p \\rightarrow q$  
-   - Premis 2: $q \\rightarrow r$  
-   - **Kesimpulan Sah:** $\\therefore p \\rightarrow r$ *(atau kontraposisinya: $\\sim r \\rightarrow \\sim p$)*  
-   Jika disambung dengan fakta ketiga bahwa $p$ terjadi, maka kesimpulan akhirnya adalah $r$.
-
-4. **Silogisme Disjungtif (Kaidah Eliminasi Pilihan)**  
-   - Premis 1: $p \\lor q$ *($p$ atau $q$)*  
-   - Premis 2: $\\sim p$ *(Fakta: $p$ terbukti tidak terjadi)*  
-   - **Kesimpulan Sah:** $\\therefore q$ *(Maka alternatif $q$ pasti terjadi)*
-
----
-
-# 2. Jebakan Pengecoh Khas UTBK
-
-Soal UTBK sering menyajikan opsi jawaban yang sekilas tampak sangat logis, padahal merupakan sesat pikir formal (*formal logical fallacies*):
-
-1. **Jebakan Menegaskan Konsekuen (*Affirming the Consequent*)**  
-   - Diberikan premis: $p \\rightarrow q$ dan fakta: $q$ terjadi.  
-   - Siswa sering terkecoh menyimpulkan bahwa $p$ pasti terjadi.  
-   - **Fakta Logika:** Kesimpulan ini **TIDAK SAH**. Akibat ($q$) bisa saja terjadi karena penyebab lain yang tidak disebutkan di dalam wacana. Simpulan yang benar adalah: *Belum tentu $p$ terjadi* atau *Tidak dapat ditarik simpulan pasti*.
-2. **Jebakan Menyangkal Anteseden (*Denying the Antecedent*)**  
-   - Diberikan premis: $p \\rightarrow q$ dan fakta: $\\sim p$ terjadi.  
-   - Siswa sering terkecoh menyimpulkan bahwa $\\sim q$ pasti terjadi.  
-   - **Fakta Logika:** Kesimpulan ini **TIDAK SAH**. Ketiadaan $p$ tidak menjamin $q$ batal terjadi, karena ada kemungkinan jalur pemicu lainnya.
-3. **Jebakan Rantai Panah Terbalik pada Silogisme**  
-   Pembuat soal memberikan premis: $p \\rightarrow q$ dan $r \\rightarrow q$. Siswa yang ceroboh langsung menyimpulkan $p \\rightarrow r$. Ini salah besar karena kedua panah sama-sama mengarah ke $q$ sehingga jembatannya buntu. Untuk menyambung rantai, ujung akibat premis pertama harus menjadi pangkal sebab premis kedua.
-
----
-
-# 3. Trik Cepat (15 Detik)
-
-Terapkan algoritma eksekusi cepat berikut saat menghadapi soal silogisme dan penarikan kesimpulan:
-
-1. **Metode Coret Jembatan Simbolik**  
-   Tuliskan kode huruf singkat: $A \\rightarrow B$ dan $B \\rightarrow C$. Jika huruf di ujung kanan sama persis dengan huruf di pangkal kiri premis berikutnya, langsung coret huruf jembatan ($B$) tersebut. Sambungkan huruf awal ke huruf akhir: $A \\rightarrow C$.
-2. **Putar Kontraposisi Bila Jembatan Tidak Pas**  
-   Jika variabel yang sama berada di posisi yang berlawanan arah panah, ubah salah satu premis menjadi bentuk kontraposisinya terlebih dahulu sebelum menyambungkan rantai silogisme.
-3. **Uji Validitas Cepat Ponens vs Tollens**  
-   - Jika fakta mengafirmasi sisi kiri ($p$) $\\rightarrow$ **SAH (Modus Ponens)** menghasilkan $q$.  
-   - Jika fakta menyangkal sisi kanan ($\\sim q$) $\\rightarrow$ **SAH (Modus Tollens)** menghasilkan $\\sim p$.  
-   - Jika fakta menyangkal sisi kiri ($\\sim p$) atau mengafirmasi sisi kanan ($q$) $\\rightarrow$ **SESAT PIKIR**, kesimpulannya adalah *"Belum tentu"* atau *"Tidak dapat disimpulkan"*.
-
----
-
-# 4. Kesimpulan
-
-- **Hakikat Materi:** Penarikan kesimpulan deduktif menurunkan konklusi yang pasti benar secara matematis berdasarkan keabsahan bentuk argumen.
-- **Tiga Aturan Valid:**  
-  1. Modus Ponens: $p \\rightarrow q$ dan $p \\vdash q$  
-  2. Modus Tollens: $p \\rightarrow q$ dan $\\sim q \\vdash \\sim p$  
-  3. Silogisme: $p \\rightarrow q$ dan $q \\rightarrow r \\vdash p \\rightarrow r$
-- **Dua Bentuk Sesat Pikir (Fallacies):** Menegaskan konsekuen ($q \\vdash p$) dan menyangkal anteseden ($\\sim p \\vdash \\sim q$) tidak pernah menghasilkan kesimpulan pasti.
-- **Strategi Eksekusi:** Gunakan simbolik huruf, putar kontraposisi bila rantai terbalik, dan langsung eliminasi opsi yang terjebak sesat pikir.
-
----
-
-# 5. Bedah Soal dan Variasi UTBK
-
-Berikut adalah bedah tiga variasi soal Penarikan Kesimpulan yang rutin diujikan dalam UTBK SNBT, lengkap dengan konteks premis, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika terperinci:
-
-### Variasi 1: Penarikan Kesimpulan Rantai Silogisme Multi-Premis
-
-> **Konteks Wacana Soal:**  
-> Perhatikan rangkaian premis kebijakan pangan berikut:  
-> (1) Jika produksi padi nasional meningkat melimpah, maka ketersediaan stok beras di gudang logistik negara terjamin aman.  
-> (2) Jika ketersediaan stok beras di gudang logistik negara terjamin aman, maka pemerintah tidak perlu melakukan impor beras dari luar negeri.  
-> (3) Pada musim panen raya tahun ini, produksi padi nasional terbukti meningkat melimpah.  
->  
-> **Pertanyaan UTBK:** *Simpulan yang paling tepat dan sah secara logika deduktif berdasarkan rangkaian premis tersebut adalah...*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Pemerintah tetap melakukan impor beras dari luar negeri untuk cadangan darurat.  
-> - **B.** Pemerintah tidak perlu melakukan impor beras dari luar negeri.  
-> - **C.** Ketersediaan stok beras di gudang logistik negara belum tentu terjamin aman.  
-> - **D.** Produksi padi nasional yang melimpah disebabkan oleh ketiadaan kebijakan impor beras.  
-> - **E.** Pemerintah tidak perlu mengawasi harga beras di pasar tradisional.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Pemodelan Simbolik:**  
-  - $P$ = Produksi padi nasional meningkat melimpah  
-  - $Q$ = Ketersediaan stok beras di gudang logistik negara terjamin aman  
-  - $R$ = Pemerintah tidak perlu melakukan impor beras dari luar negeri  
-- **Langkah Deduksi 1 (Silogisme Hipotetis):**  
-  Premis 1: $P \\rightarrow Q$  
-  Premis 2: $Q \\rightarrow R$  
-  Berdasarkan kaidah Silogisme Hipotetis, jembatan $Q$ dicoret sehingga menghasilkan kesimpulan transitif:  
-  $$P \\rightarrow R$$  
-  *(Jika produksi padi nasional meningkat melimpah, maka pemerintah tidak perlu melakukan impor beras dari luar negeri)*.
-- **Langkah Deduksi 2 (Modus Ponens):**  
-  Premis Transitif: $P \\rightarrow R$  
-  Premis 3 (Fakta): $P$ terbukti terjadi.  
-  Berdasarkan kaidah Modus Ponens: $(P \\rightarrow R) \\land P \\vdash R$.  
-  Maka kesimpulan akhir yang mutlak benar adalah $R$, yaitu: *"Pemerintah tidak perlu melakukan impor beras dari luar negeri"*.
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Bertentangan langsung dengan hasil deduksi logis $R$.  
-  - **Pilihan C Salah:** Mengingkari premis 1 yang sudah mengaitkan secara pasti antara produksi melimpah dengan stok terjamin.  
-  - **Pilihan D Salah:** Membalik alur kausalitas secara keliru (*reverse causality*).  
-  - **Pilihan E Salah:** Membicarakan pengawasan harga beras yang berada di luar konteks wacana (*out of scope*).
-- **Penerapan Trik Cepat (15 Detik):** Coret jembatan kalimat yang berulang: *stok beras terjamin*. Rantai langsung menghubungkan: *produksi melimpah $\\rightarrow$ tidak perlu impor*. Karena produksi melimpah benar-benar terjadi, langsung simpulkan: *pemerintah tidak perlu impor beras*. Jawaban yang tepat adalah pilihan **B**.
-
----
-
-### Variasi 2: Deteksi Fallacy / Evaluasi Validitas Penarikan Kesimpulan
-
-> **Konteks Wacana Soal:**  
-> Perhatikan pedoman apresiasi atlet berprestasi dan fakta berikut:  
-> Premis 1: Jika seorang atlet berhasil memenangkan medali emas di ajang olimpiade internasional, maka atlet tersebut berhak menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.  
-> Premis 2: Atlet angkat besi nasional bernama Rudi resmi menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.  
->  
-> **Pertanyaan UTBK:** *Berdasarkan kaidah logika formal deduktif, manakah simpulan yang paling tepat mengenai Rudi?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Rudi pasti telah memenangkan medali emas di ajang olimpiade internasional.  
-> - **B.** Rudi tidak pernah memenangkan medali emas di ajang olimpiade internasional.  
-> - **C.** Rudi belum tentu telah memenangkan medali emas di ajang olimpiade internasional.  
-> - **D.** Semua atlet yang menerima tunjangan hari tua dari kementerian pasti peraih medali emas olimpiade.  
-> - **E.** Kementerian pemuda dan olahraga melanggar aturan pemberian tunjangan hari tua kepada Rudi.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Bentuk Logika Argumen:**  
-  - Premis 1: $E \\rightarrow T$  
-    di mana $E$ = Memenangkan medali emas olimpiade, $T$ = Menerima tunjangan hari tua seumur hidup.  
-  - Premis 2: $T$ terjadi pada Rudi *(Rudi menerima tunjangan hari tua)*.
-- **Pendeteksian Cacat Logika (*Formal Fallacy*):**  
-  Premis 2 mengafirmasi bagian **konsekuen ($T$)**. Menyimpulkan bahwa Rudi pasti peraih medali emas ($E$) merupakan sesat pikir formal yang disebut **Affirming the Consequent**.  
-  Dalam kaidah logika bersyarat, memenangkan medali emas hanyalah salah satu syarat cukup (*sufficient condition*). Rudi bisa saja menerima tunjangan hari tua karena memecahkan rekor dunia, menjuarai kejuaraan dunia multi-cabang, atau memperoleh penghargaan pengabdian seumur hidup lainnya yang juga diatur oleh regulasi kementerian.  
-  Oleh karena itu, status apakah Rudi pernah memenangkan medali emas olimpiade adalah **belum tentu benar** (berada pada taraf kemungkinan, bukan kepastian deduktif).
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Terjebak sesat pikir *affirming the consequent* dengan memastikan hal yang belum terbukti.  
-  - **Pilihan B Salah:** Mengambil kesimpulan sebaliknya tanpa dasar bukti yang valid.  
-  - **Pilihan D Salah:** Merupakan generalisasi yang keliru dari penegasan konsekuen.  
-  - **Pilihan E Salah:** Bersifat menghakimi dan menuduh pelanggaran aturan tanpa didasari oleh premis teks.
-- **Penerapan Trik Cepat (15 Detik):** Periksa letak informasi fakta Rudi: Rudi menerima tunjangan (posisi di belakang / ruas kanan implikasi). Mengafirmasi ruas kanan adalah jebakan terlarang dalam logika! Jika ruas kanan diafirmasi, status ruas kiri otomatis menjadi *"Belum tentu"*. Pilihan yang tepat adalah pilihan **C**.
-
----
-
-### Variasi 3: Penarikan Kesimpulan Premis Majemuk Campuran & Kontraposisi Rantai (HOTS)
-
-> **Konteks Wacana Soal:**  
-> Dewan Direksi sebuah konsorsium teknologi mengevaluasi tiga premis operasional berikut:  
-> (1) Jika sebuah perusahaan rintisan (*startup*) berhasil mencatatkan arus kas positif, maka valuasi modal perusahaan akan melonjak drastis atau perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia.  
-> (2) Jika perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia, maka produk perangkat lunak yang dirilis akan memenangkan penghargaan inovasi teknologi global.  
-> (3) Berdasarkan laporan audit akhir tahun, tercatat fakta bahwa valuasi modal perusahaan rintisan tersebut tidak melonjak drastis dan produk perangkat lunak yang dirilis tidak memenangkan penghargaan inovasi teknologi global.  
->  
-> **Pertanyaan UTBK:** *Berdasarkan ketiga premis tersebut, simpulan yang PASTI BENAR secara kaidah logika deduktif adalah...*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Perusahaan rintisan tersebut berhasil mencatatkan arus kas positif melalui efisiensi biaya operasional.  
-> - **B.** Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif.  
-> - **C.** Perusahaan rintisan tersebut mampu merekrut talenta kecerdasan buatan terbaik dunia meskipun valuasinya tidak melonjak.  
-> - **D.** Valuasi modal perusahaan akan melonjak drastis pada tahun operasional berikutnya.  
-> - **E.** Tidak dapat ditarik simpulan apa pun karena laporan audit akhir tahun saling bertentangan.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Pemodelan Simbolik Logika:**  
-  - $K$: Perusahaan berhasil mencatatkan arus kas positif  
-  - $V$: Valuasi modal perusahaan melonjak drastis  
-  - $T$: Perusahaan mampu merekrut talenta AI terbaik dunia  
-  - $I$: Produk perangkat lunak memenangkan penghargaan inovasi global  
-- **Rangkaian Premis:**  
-  - Premis 1: $K \\rightarrow (V \\lor T)$  
-  - Premis 2: $T \\rightarrow I$  
-  - Premis 3 (Fakta Audit): $\\sim V \\land \\sim I$ *(Valuasi TIDAK melonjak dan produk TIDAK menang penghargaan)*.
-- **Langkah Deduksi Terpadu:**  
-  1. Dari fakta $\\sim I$ dan Premis 2 ($T \\rightarrow I$), terapkan **Modus Tollens**:  
-     $$(T \\rightarrow I) \\land \\sim I \\vdash \\sim T$$  
-     Artinya, perusahaan dipastikan **tidak mampu merekrut talenta AI terbaik dunia** ($\\sim T$).  
-  2. Gabungkan kesimpulan $\\sim T$ dengan fakta audit $\\sim V$ yang sudah ada:  
-     $$\\sim V \\land \\sim T$$  
-  3. Berdasarkan **Hukum De Morgan**, konjungsi penyangkalan setara dengan ingkaran disjungsi:  
-     $$\\sim V \\land \\sim T \\equiv \\sim (V \\lor T)$$  
-     Artinya, seluruh blok konsekuen pada Premis 1 terbukti bernilai **SALAH**.  
-  4. Sekarang, terapkan **Modus Tollens** pada Premis 1:  
-     - Premis 1: $K \\rightarrow (V \\lor T)$  
-     - Fakta: $\\sim (V \\lor T)$  
-     - Konklusi Sah: $\\therefore \\sim K$  
-  5. Konklusi $\\sim K$ berarti: **"Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif"**.
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Bertentangan secara mutlak dengan hasil pembuktian deduktif $\\sim K$.  
-  - **Pilihan C Salah:** Gugur karena langkah pertama membuktikan bahwa perusahaan tidak mampu merekrut talenta AI ($\\sim T$).  
-  - **Pilihan D Salah:** Bersifat ramalan masa depan yang tidak terdapat dalam premis wacana (*out of scope*).  
-  - **Pilihan E Salah:** Premis-premis logis tersebut sepenuhnya konsisten dan menghasilkan simpulan pasti $\\sim K$.
-- **Penerapan Trik Cepat (15 Detik):**  
-  1. Perhatikan bahwa produk tidak menang penghargaan ($\\sim I$), maka lewat premis 2 perusahaan pasti tidak merekrut talenta AI ($\\sim T$).  
-  2. Karena valuasi juga tidak naik ($\\sim V$), maka kedua syarat cabang $(V \\lor T)$ sama-sama gugur menjadi salah.  
-  3. Konsekuen premis 1 gugur, maka lewat Modus Tollens, sebabnya wajib gugur: arus kas tidak positif. Jawaban yang tepat adalah pilihan **B**.`,
-    visualizations_svg: [],
-    distractor_traps: [
-      'Affirming the Consequent: Mengira penegasan akibat (q) dapat menyimpulkan terjadinya sebab (p), padahal statusnya belum tentu benar.',
-      'Denying the Antecedent: Mengira penyangkalan sebab (~p) otomatis menggugurkan akibat (~q), padahal akibat bisa timbul dari pemicu lain.',
-      'Rantai Panah Buntu: Menghubungkan dua implikasi yang memiliki variabel sama namun tidak sejajar arah panahnya tanpa melakukan kontraposisi terlebih dahulu.',
+  "content": {
+    "tactical_overview": "Penarikan kesimpulan deduktif adalah proses menurunkan kesimpulan baru yang mutlak benar dari sekumpulan premis yang dianggap benar, menggunakan kaidah logika formal: Modus Ponens, Modus Tollens, dan Silogisme. Kunci utama dalam menyelesaikan soal tipe ini di UTBK SNBT adalah menyelaraskan arah rantai implikasi menggunakan hukum kontraposisi sebelum menyambungkannya, serta selalu waspada terhadap dua sesat pikir klasik: menegaskan konsekuen (mengira p → q dan q menghasilkan p) dan menyangkal anteseden (mengira p → q dan ~p menghasilkan ~q).",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-02-03-syllogism]]\n\n\nPenarikan kesimpulan deduktif merupakan inti dari pengujian penalaran umum UTBK SNBT. Dalam logika deduktif, kebenaran kesimpulan bersifat **pasti mutlak (valid)** asalkan premis-premis yang mendasarinya bernilai benar dan aturan penarikan kesimpulannya sah secara hukum logika formal. Anda tidak diperkenankan memasukkan asumsi pribadi di luar informasi yang diberikan pada premis soal.\n\nTiga kaidah baku penarikan kesimpulan yang wajib Anda kuasai adalah:\n\n1. **Modus Ponens (Kaidah Menegaskan Sebab / Anteseden)**  \n   - Premis 1: $p \\rightarrow q$ *(Jika $p$, maka $q$)*  \n   - Premis 2: $p$ *(Fakta: $p$ benar-benar terjadi)*  \n   - **Kesimpulan Sah:** $\\therefore q$ *(Maka pasti $q$ terjadi)*  \n   *Contoh:* Jika hari hujan ($p$), maka jalanan basah ($q$). Hari ini hujan ($p$). Simpulan pasti: jalanan basah ($q$).\n\n2. **Modus Tollens (Kaidah Menyangkal Akibat / Konsekuen)**  \n   - Premis 1: $p \\rightarrow q$ *(Jika $p$, maka $q$)*  \n   - Premis 2: $\\sim q$ *(Fakta: akibat $q$ tidak terjadi)*  \n   - **Kesimpulan Sah:** $\\therefore \\sim p$ *(Maka pasti sebab $p$ tidak terjadi)*  \n   *Contoh:* Jika hari hujan ($p$), maka jalanan basah ($q$). Jalanan tidak basah ($\\sim q$). Simpulan pasti: hari tidak hujan ($\\sim p$).\n\n3. **Silogisme Hipotetis (Kaidah Rantai Implikasi Transitif)**  \n   - Premis 1: $p \\rightarrow q$  \n   - Premis 2: $q \\rightarrow r$  \n   - **Kesimpulan Sah:** $\\therefore p \\rightarrow r$ *(atau kontraposisinya: $\\sim r \\rightarrow \\sim p$)*  \n   Jika disambung dengan fakta ketiga bahwa $p$ terjadi, maka kesimpulan akhirnya adalah $r$.\n\n4. **Silogisme Disjungtif (Kaidah Eliminasi Pilihan)**  \n   - Premis 1: $p \\lor q$ *($p$ atau $q$)*  \n   - Premis 2: $\\sim p$ *(Fakta: $p$ terbukti tidak terjadi)*  \n   - **Kesimpulan Sah:** $\\therefore q$ *(Maka alternatif $q$ pasti terjadi)*\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nSoal UTBK sering menyajikan opsi jawaban yang sekilas tampak sangat logis, padahal merupakan sesat pikir formal (*formal logical fallacies*):\n\n1. **Jebakan Menegaskan Konsekuen (*Affirming the Consequent*)**  \n   - Diberikan premis: $p \\rightarrow q$ dan fakta: $q$ terjadi.  \n   - Siswa sering terkecoh menyimpulkan bahwa $p$ pasti terjadi.  \n   - **Fakta Logika:** Kesimpulan ini **TIDAK SAH**. Akibat ($q$) bisa saja terjadi karena penyebab lain yang tidak disebutkan di dalam wacana. Simpulan yang benar adalah: *Belum tentu $p$ terjadi* atau *Tidak dapat ditarik simpulan pasti*.\n2. **Jebakan Menyangkal Anteseden (*Denying the Antecedent*)**  \n   - Diberikan premis: $p \\rightarrow q$ dan fakta: $\\sim p$ terjadi.  \n   - Siswa sering terkecoh menyimpulkan bahwa $\\sim q$ pasti terjadi.  \n   - **Fakta Logika:** Kesimpulan ini **TIDAK SAH**. Ketiadaan $p$ tidak menjamin $q$ batal terjadi, karena ada kemungkinan jalur pemicu lainnya.\n3. **Jebakan Rantai Panah Terbalik pada Silogisme**  \n   Pembuat soal memberikan premis: $p \\rightarrow q$ dan $r \\rightarrow q$. Siswa yang ceroboh langsung menyimpulkan $p \\rightarrow r$. Ini salah besar karena kedua panah sama-sama mengarah ke $q$ sehingga jembatannya buntu. Untuk menyambung rantai, ujung akibat premis pertama harus menjadi pangkal sebab premis kedua.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nTerapkan algoritma eksekusi cepat berikut saat menghadapi soal silogisme dan penarikan kesimpulan:\n\n1. **Metode Coret Jembatan Simbolik**  \n   Tuliskan kode huruf singkat: $A \\rightarrow B$ dan $B \\rightarrow C$. Jika huruf di ujung kanan sama persis dengan huruf di pangkal kiri premis berikutnya, langsung coret huruf jembatan ($B$) tersebut. Sambungkan huruf awal ke huruf akhir: $A \\rightarrow C$.\n2. **Putar Kontraposisi Bila Jembatan Tidak Pas**  \n   Jika variabel yang sama berada di posisi yang berlawanan arah panah, ubah salah satu premis menjadi bentuk kontraposisinya terlebih dahulu sebelum menyambungkan rantai silogisme.\n3. **Uji Validitas Cepat Ponens vs Tollens**  \n   - Jika fakta mengafirmasi sisi kiri ($p$) $\\rightarrow$ **SAH (Modus Ponens)** menghasilkan $q$.  \n   - Jika fakta menyangkal sisi kanan ($\\sim q$) $\\rightarrow$ **SAH (Modus Tollens)** menghasilkan $\\sim p$.  \n   - Jika fakta menyangkal sisi kiri ($\\sim p$) atau mengafirmasi sisi kanan ($q$) $\\rightarrow$ **SESAT PIKIR**, kesimpulannya adalah *\"Belum tentu\"* atau *\"Tidak dapat disimpulkan\"*.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Penarikan kesimpulan deduktif menurunkan konklusi yang pasti benar secara matematis berdasarkan keabsahan bentuk argumen.\n- **Tiga Aturan Valid:**  \n  1. Modus Ponens: $p \\rightarrow q$ dan $p \\vdash q$  \n  2. Modus Tollens: $p \\rightarrow q$ dan $\\sim q \\vdash \\sim p$  \n  3. Silogisme: $p \\rightarrow q$ dan $q \\rightarrow r \\vdash p \\rightarrow r$\n- **Dua Bentuk Sesat Pikir (Fallacies):** Menegaskan konsekuen ($q \\vdash p$) dan menyangkal anteseden ($\\sim p \\vdash \\sim q$) tidak pernah menghasilkan kesimpulan pasti.\n- **Strategi Eksekusi:** Gunakan simbolik huruf, putar kontraposisi bila rantai terbalik, dan langsung eliminasi opsi yang terjebak sesat pikir.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Penarikan Kesimpulan yang rutin diujikan dalam UTBK SNBT, lengkap dengan konteks premis, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika terperinci:\n\n### Variasi 1: Penarikan Kesimpulan Rantai Silogisme Multi-Premis\n\n> **Konteks Wacana Soal:**  \n> Perhatikan rangkaian premis kebijakan pangan berikut:  \n> (1) Jika produksi padi nasional meningkat melimpah, maka ketersediaan stok beras di gudang logistik negara terjamin aman.  \n> (2) Jika ketersediaan stok beras di gudang logistik negara terjamin aman, maka pemerintah tidak perlu melakukan impor beras dari luar negeri.  \n> (3) Pada musim panen raya tahun ini, produksi padi nasional terbukti meningkat melimpah.  \n>  \n> **Pertanyaan UTBK:** *Simpulan yang paling tepat dan sah secara logika deduktif berdasarkan rangkaian premis tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Pemerintah tetap melakukan impor beras dari luar negeri untuk cadangan darurat.  \n> - **B.** Pemerintah tidak perlu melakukan impor beras dari luar negeri.  \n> - **C.** Ketersediaan stok beras di gudang logistik negara belum tentu terjamin aman.  \n> - **D.** Produksi padi nasional yang melimpah disebabkan oleh ketiadaan kebijakan impor beras.  \n> - **E.** Pemerintah tidak perlu mengawasi harga beras di pasar tradisional.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Pemodelan Simbolik:**  \n  - $P$ = Produksi padi nasional meningkat melimpah  \n  - $Q$ = Ketersediaan stok beras di gudang logistik negara terjamin aman  \n  - $R$ = Pemerintah tidak perlu melakukan impor beras dari luar negeri  \n- **Langkah Deduksi 1 (Silogisme Hipotetis):**  \n  Premis 1: $P \\rightarrow Q$  \n  Premis 2: $Q \\rightarrow R$  \n  Berdasarkan kaidah Silogisme Hipotetis, jembatan $Q$ dicoret sehingga menghasilkan kesimpulan transitif:  \n  $P \\rightarrow R$  \n  *(Jika produksi padi nasional meningkat melimpah, maka pemerintah tidak perlu melakukan impor beras dari luar negeri)*.\n- **Langkah Deduksi 2 (Modus Ponens):**  \n  Premis Transitif: $P \\rightarrow R$  \n  Premis 3 (Fakta): $P$ terbukti terjadi.  \n  Berdasarkan kaidah Modus Ponens: $(P \\rightarrow R) \\land P \\vdash R$.  \n  Maka kesimpulan akhir yang mutlak benar adalah $R$, yaitu: *\"Pemerintah tidak perlu melakukan impor beras dari luar negeri\"*.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Bertentangan langsung dengan hasil deduksi logis $R$.  \n  - **Pilihan C Salah:** Mengingkari premis 1 yang sudah mengaitkan secara pasti antara produksi melimpah dengan stok terjamin.  \n  - **Pilihan D Salah:** Membalik alur kausalitas secara keliru (*reverse causality*).  \n  - **Pilihan E Salah:** Membicarakan pengawasan harga beras yang berada di luar konteks wacana (*out of scope*).\n- **Penerapan Trik Cepat (15 Detik):** Coret jembatan kalimat yang berulang: *stok beras terjamin*. Rantai langsung menghubungkan: *produksi melimpah $\\rightarrow$ tidak perlu impor*. Karena produksi melimpah benar-benar terjadi, langsung simpulkan: *pemerintah tidak perlu impor beras*. Jawaban yang tepat adalah pilihan **B**.\n\n---\n\n### Variasi 2: Deteksi Fallacy / Evaluasi Validitas Penarikan Kesimpulan\n\n> **Konteks Wacana Soal:**  \n> Perhatikan pedoman apresiasi atlet berprestasi dan fakta berikut:  \n> Premis 1: Jika seorang atlet berhasil memenangkan medali emas di ajang olimpiade internasional, maka atlet tersebut berhak menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.  \n> Premis 2: Atlet angkat besi nasional bernama Rudi resmi menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan kaidah logika formal deduktif, manakah simpulan yang paling tepat mengenai Rudi?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Rudi pasti telah memenangkan medali emas di ajang olimpiade internasional.  \n> - **B.** Rudi tidak pernah memenangkan medali emas di ajang olimpiade internasional.  \n> - **C.** Rudi belum tentu telah memenangkan medali emas di ajang olimpiade internasional.  \n> - **D.** Semua atlet yang menerima tunjangan hari tua dari kementerian pasti peraih medali emas olimpiade.  \n> - **E.** Kementerian pemuda dan olahraga melanggar aturan pemberian tunjangan hari tua kepada Rudi.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Bentuk Logika Argumen:**  \n  - Premis 1: $E \\rightarrow T$  \n    di mana $E$ = Memenangkan medali emas olimpiade, $T$ = Menerima tunjangan hari tua seumur hidup.  \n  - Premis 2: $T$ terjadi pada Rudi *(Rudi menerima tunjangan hari tua)*.\n- **Pendeteksian Cacat Logika (*Formal Fallacy*):**  \n  Premis 2 mengafirmasi bagian **konsekuen ($T$)**. Menyimpulkan bahwa Rudi pasti peraih medali emas ($E$) merupakan sesat pikir formal yang disebut **Affirming the Consequent**.  \n  Dalam kaidah logika bersyarat, memenangkan medali emas hanyalah salah satu syarat cukup (*sufficient condition*). Rudi bisa saja menerima tunjangan hari tua karena memecahkan rekor dunia, menjuarai kejuaraan dunia multi-cabang, atau memperoleh penghargaan pengabdian seumur hidup lainnya yang juga diatur oleh regulasi kementerian.  \n  Oleh karena itu, status apakah Rudi pernah memenangkan medali emas olimpiade adalah **belum tentu benar** (berada pada taraf kemungkinan, bukan kepastian deduktif).\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Terjebak sesat pikir *affirming the consequent* dengan memastikan hal yang belum terbukti.  \n  - **Pilihan B Salah:** Mengambil kesimpulan sebaliknya tanpa dasar bukti yang valid.  \n  - **Pilihan D Salah:** Merupakan generalisasi yang keliru dari penegasan konsekuen.  \n  - **Pilihan E Salah:** Bersifat menghakimi dan menuduh pelanggaran aturan tanpa didasari oleh premis teks.\n- **Penerapan Trik Cepat (15 Detik):** Periksa letak informasi fakta Rudi: Rudi menerima tunjangan (posisi di belakang / ruas kanan implikasi). Mengafirmasi ruas kanan adalah jebakan terlarang dalam logika! Jika ruas kanan diafirmasi, status ruas kiri otomatis menjadi *\"Belum tentu\"*. Pilihan yang tepat adalah pilihan **C**.\n\n---\n\n### Variasi 3: Penarikan Kesimpulan Premis Majemuk Campuran & Kontraposisi Rantai (HOTS)\n\n> **Konteks Wacana Soal:**  \n> Dewan Direksi sebuah konsorsium teknologi mengevaluasi tiga premis operasional berikut:  \n> (1) Jika sebuah perusahaan rintisan (*startup*) berhasil mencatatkan arus kas positif, maka valuasi modal perusahaan akan melonjak drastis atau perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia.  \n> (2) Jika perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia, maka produk perangkat lunak yang dirilis akan memenangkan penghargaan inovasi teknologi global.  \n> (3) Berdasarkan laporan audit akhir tahun, tercatat fakta bahwa valuasi modal perusahaan rintisan tersebut tidak melonjak drastis dan produk perangkat lunak yang dirilis tidak memenangkan penghargaan inovasi teknologi global.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan ketiga premis tersebut, simpulan yang PASTI BENAR secara kaidah logika deduktif adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Perusahaan rintisan tersebut berhasil mencatatkan arus kas positif melalui efisiensi biaya operasional.  \n> - **B.** Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif.  \n> - **C.** Perusahaan rintisan tersebut mampu merekrut talenta kecerdasan buatan terbaik dunia meskipun valuasinya tidak melonjak.  \n> - **D.** Valuasi modal perusahaan akan melonjak drastis pada tahun operasional berikutnya.  \n> - **E.** Tidak dapat ditarik simpulan apa pun karena laporan audit akhir tahun saling bertentangan.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Pemodelan Simbolik Logika:**  \n  - $K$: Perusahaan berhasil mencatatkan arus kas positif  \n  - $V$: Valuasi modal perusahaan melonjak drastis  \n  - $T$: Perusahaan mampu merekrut talenta AI terbaik dunia  \n  - $I$: Produk perangkat lunak memenangkan penghargaan inovasi global  \n- **Rangkaian Premis:**  \n  - Premis 1: $K \\rightarrow (V \\lor T)$  \n  - Premis 2: $T \\rightarrow I$  \n  - Premis 3 (Fakta Audit): $\\sim V \\land \\sim I$ *(Valuasi TIDAK melonjak dan produk TIDAK menang penghargaan)*.\n- **Langkah Deduksi Terpadu:**  \n  1. Dari fakta $\\sim I$ dan Premis 2 ($T \\rightarrow I$), terapkan **Modus Tollens**:  \n     $(T \\rightarrow I) \\land \\sim I \\vdash \\sim T$  \n     Artinya, perusahaan dipastikan **tidak mampu merekrut talenta AI terbaik dunia** ($\\sim T$).  \n  2. Gabungkan kesimpulan $\\sim T$ dengan fakta audit $\\sim V$ yang sudah ada:  \n     $\\sim V \\land \\sim T$  \n  3. Berdasarkan **Hukum De Morgan**, konjungsi penyangkalan setara dengan ingkaran disjungsi:  \n     $\\sim V \\land \\sim T \\equiv \\sim (V \\lor T)$  \n     Artinya, seluruh blok konsekuen pada Premis 1 terbukti bernilai **SALAH**.  \n  4. Sekarang, terapkan **Modus Tollens** pada Premis 1:  \n     - Premis 1: $K \\rightarrow (V \\lor T)$  \n     - Fakta: $\\sim (V \\lor T)$  \n     - Konklusi Sah: $\\therefore \\sim K$  \n  5. Konklusi $\\sim K$ berarti: **\"Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif\"**.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Bertentangan secara mutlak dengan hasil pembuktian deduktif $\\sim K$.  \n  - **Pilihan C Salah:** Gugur karena langkah pertama membuktikan bahwa perusahaan tidak mampu merekrut talenta AI ($\\sim T$).  \n  - **Pilihan D Salah:** Bersifat ramalan masa depan yang tidak terdapat dalam premis wacana (*out of scope*).  \n  - **Pilihan E Salah:** Premis-premis logis tersebut sepenuhnya konsisten dan menghasilkan simpulan pasti $\\sim K$.\n- **Penerapan Trik Cepat (15 Detik):**  \n  1. Perhatikan bahwa produk tidak menang penghargaan ($\\sim I$), maka lewat premis 2 perusahaan pasti tidak merekrut talenta AI ($\\sim T$).  \n  2. Karena valuasi juga tidak naik ($\\sim V$), maka kedua syarat cabang $(V \\lor T)$ sama-sama gugur menjadi salah.  \n  3. Konsekuen premis 1 gugur, maka lewat Modus Tollens, sebabnya wajib gugur: arus kas tidak positif. Jawaban yang tepat adalah pilihan **B**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-02-03-syllogism",
+        "title": "Tiga Kaidah Penarikan Kesimpulan Deduktif Sah",
+        "caption": "Pola Baku: Modus Ponens, Modus Tollens, dan Silogisme Hipotetis",
+        "svg_code": "<svg viewBox=\"0 0 640 210\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .syl-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .syl-prem { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 600; fill: #334155; }\n      .syl-res { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 800; fill: #ffffff; text-anchor: middle; }\n      :root.dark .syl-title { fill: #f8fafc; }\n      :root.dark .syl-prem { fill: #cbd5e1; }\n    </style>\n  </defs>\n\n  <!-- Card 1: Modus Ponens -->\n  <g transform=\"translate(15, 12)\">\n    <rect width=\"195\" height=\"186\" rx=\"14\" fill=\"rgba(79, 70, 229, 0.05)\" stroke=\"rgba(79, 70, 229, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"97\" y=\"26\" class=\"syl-title\">MODUS PONENS</text>\n    <rect x=\"15\" y=\"40\" width=\"165\" height=\"85\" rx=\"8\" fill=\"#e0e7ff\"/>\n    <text x=\"25\" y=\"62\" class=\"syl-prem\" fill=\"#4338ca\">P1: p ⟹ q</text>\n    <text x=\"25\" y=\"86\" class=\"syl-prem\" fill=\"#4338ca\">P2: p</text>\n    <line x1=\"25\" y1=\"96\" x2=\"165\" y2=\"96\" stroke=\"#6366f1\" stroke-width=\"1.5\"/>\n    <text x=\"25\" y=\"114\" class=\"syl-prem\" font-weight=\"bold\" fill=\"#312e81\">∴ q  (SAH)</text>\n\n    <!-- Bottom label -->\n    <rect x=\"15\" y=\"136\" width=\"165\" height=\"36\" rx=\"6\" fill=\"#4f46e5\"/>\n    <text x=\"97\" y=\"158\" class=\"syl-res\">Afirmasi Anteseden</text>\n  </g>\n\n  <!-- Card 2: Modus Tollens -->\n  <g transform=\"translate(222, 12)\">\n    <rect width=\"195\" height=\"186\" rx=\"14\" fill=\"rgba(16, 185, 129, 0.05)\" stroke=\"rgba(16, 185, 129, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"97\" y=\"26\" class=\"syl-title\">MODUS TOLLENS</text>\n    <rect x=\"15\" y=\"40\" width=\"165\" height=\"85\" rx=\"8\" fill=\"#d1fae5\"/>\n    <text x=\"25\" y=\"62\" class=\"syl-prem\" fill=\"#065f46\">P1: p ⟹ q</text>\n    <text x=\"25\" y=\"86\" class=\"syl-prem\" fill=\"#065f46\">P2: ~q</text>\n    <line x1=\"25\" y1=\"96\" x2=\"165\" y2=\"96\" stroke=\"#10b981\" stroke-width=\"1.5\"/>\n    <text x=\"25\" y=\"114\" class=\"syl-prem\" font-weight=\"bold\" fill=\"#064e3b\">∴ ~p  (SAH)</text>\n\n    <!-- Bottom label -->\n    <rect x=\"15\" y=\"136\" width=\"165\" height=\"36\" rx=\"6\" fill=\"#10b981\"/>\n    <text x=\"97\" y=\"158\" class=\"syl-res\">Negasi Konsekuen</text>\n  </g>\n\n  <!-- Card 3: Silogisme -->\n  <g transform=\"translate(430, 12)\">\n    <rect width=\"195\" height=\"186\" rx=\"14\" fill=\"rgba(245, 158, 11, 0.05)\" stroke=\"rgba(245, 158, 11, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"97\" y=\"26\" class=\"syl-title\">SILOGISME</text>\n    <rect x=\"15\" y=\"40\" width=\"165\" height=\"85\" rx=\"8\" fill=\"#fef3c7\"/>\n    <text x=\"25\" y=\"62\" class=\"syl-prem\" fill=\"#92400e\">P1: p ⟹ q</text>\n    <text x=\"25\" y=\"86\" class=\"syl-prem\" fill=\"#92400e\">P2: q ⟹ r</text>\n    <line x1=\"25\" y1=\"96\" x2=\"165\" y2=\"96\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n    <text x=\"25\" y=\"114\" class=\"syl-prem\" font-weight=\"bold\" fill=\"#78350f\">∴ p ⟹ r  (SAH)</text>\n\n    <!-- Bottom label -->\n    <rect x=\"15\" y=\"136\" width=\"165\" height=\"36\" rx=\"6\" fill=\"#f59e0b\"/>\n    <text x=\"97\" y=\"158\" class=\"syl-res\">Rantai Implikasi</text>\n  </g>\n</svg>"
+      }
     ],
-    quick_execution_algorithm: [
-      'Ubah premis verbal ke dalam notasi simbolik (p -> q, q -> r) untuk memetakan alur deduksi.',
-      'Lakukan silogisme hipotetis dengan mencoret variabel jembatan yang sama di ujung akibat dan pangkal sebab.',
-      'Jika posisi variabel belum searah, balikkan salah satu premis menggunakan hukum kontraposisi (~q -> ~p).',
-      'Cocokkan fakta akhir: afirmasi ruas kiri = Modus Ponens (sah); sangkal ruas kanan = Modus Tollens (sah); selain itu = belum tentu.',
+    "distractor_traps": [
+      "Affirming the Consequent: Mengira penegasan akibat (q) dapat menyimpulkan terjadinya sebab (p), padahal statusnya belum tentu benar.",
+      "Denying the Antecedent: Mengira penyangkalan sebab (~p) otomatis menggugurkan akibat (~q), padahal akibat bisa timbul dari pemicu lain.",
+      "Rantai Panah Buntu: Menghubungkan dua implikasi yang memiliki variabel sama namun tidak sejajar arah panahnya tanpa melakukan kontraposisi terlebih dahulu."
     ],
+    "quick_execution_algorithm": [
+      "Ubah premis verbal ke dalam notasi simbolik (p -> q, q -> r) untuk memetakan alur deduksi.",
+      "Lakukan silogisme hipotetis dengan mencoret variabel jembatan yang sama di ujung akibat dan pangkal sebab.",
+      "Jika posisi variabel belum searah, balikkan salah satu premis menggunakan hukum kontraposisi (~q -> ~p).",
+      "Cocokkan fakta akhir: afirmasi ruas kiri = Modus Ponens (sah); sangkal ruas kanan = Modus Tollens (sah); selain itu = belum tentu."
+    ]
   },
-  worked_examples: [
+  "worked_examples": [
     {
-      example_id: 'pu-02-03-ex1',
-      variation_name: 'Variasi 1: Penarikan Kesimpulan Rantai Silogisme Multi-Premis (Level: Mudah)',
-      difficulty: 'easy',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Perhatikan rangkaian premis kebijakan pangan berikut:\n\n(1) Jika produksi padi nasional meningkat melimpah, maka ketersediaan stok beras di gudang logistik negara terjamin aman.\n(2) Jika ketersediaan stok beras di gudang logistik negara terjamin aman, maka pemerintah tidak perlu melakukan impor beras dari luar negeri.\n(3) Pada musim panen raya tahun ini, produksi padi nasional terbukti meningkat melimpah.',
-      question_markdown:
-        'Simpulan yang **paling tepat dan sah secara logika deduktif** berdasarkan rangkaian premis tersebut adalah...',
-      options: [
+      "example_id": "pu-02-03-ex1",
+      "variation_name": "Variasi 1: Penarikan Kesimpulan Rantai Silogisme Multi-Premis (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan rangkaian premis kebijakan pangan berikut:\n\n(1) Jika produksi padi nasional meningkat melimpah, maka ketersediaan stok beras di gudang logistik negara terjamin aman.\n(2) Jika ketersediaan stok beras di gudang logistik negara terjamin aman, maka pemerintah tidak perlu melakukan impor beras dari luar negeri.\n(3) Pada musim panen raya tahun ini, produksi padi nasional terbukti meningkat melimpah.",
+      "question_markdown": "Simpulan yang **paling tepat dan sah secara logika deduktif** berdasarkan rangkaian premis tersebut adalah...",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Pemerintah tetap melakukan impor beras dari luar negeri untuk cadangan darurat.',
+          "key": "A",
+          "text_markdown": "Pemerintah tetap melakukan impor beras dari luar negeri untuk cadangan darurat."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Pemerintah tidak perlu melakukan impor beras dari luar negeri.',
+          "key": "B",
+          "text_markdown": "Pemerintah tidak perlu melakukan impor beras dari luar negeri."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Ketersediaan stok beras di gudang logistik negara belum tentu terjamin aman.',
+          "key": "C",
+          "text_markdown": "Ketersediaan stok beras di gudang logistik negara belum tentu terjamin aman."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Produksi padi nasional yang melimpah disebabkan oleh ketiadaan kebijakan impor beras.',
+          "key": "D",
+          "text_markdown": "Produksi padi nasional yang melimpah disebabkan oleh ketiadaan kebijakan impor beras."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Pemerintah tidak perlu mengawasi harga beras di pasar tradisional.',
-        },
+          "key": "E",
+          "text_markdown": "Pemerintah tidak perlu mengawasi harga beras di pasar tradisional."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Sambungkan rantai implikasi: `Padi melimpah → Stok aman` dan `Stok aman → Tidak perlu impor`. Coret jembatan "stok aman", sehingga didapat `Padi melimpah → Tidak perlu impor`. Karena padi melimpah benar-benar terjadi, gunakan Modus Ponens!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Notasi Simbolik:**
-  - $P$: Produksi padi nasional meningkat melimpah
-  - $Q$: Ketersediaan stok beras terjamin aman
-  - $R$: Pemerintah tidak perlu impor beras
-- **Deduksi 1 (Silogisme Hipotetis):**
-  $$(P \\rightarrow Q) \\land (Q \\rightarrow R) \\vdash P \\rightarrow R$$
-- **Deduksi 2 (Modus Ponens):**
-  $$(P \\rightarrow R) \\land P \\vdash R$$
-- **Konklusi:** $R$ (Pemerintah tidak perlu melakukan impor beras dari luar negeri).
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Coret Jembatan Silogisme):**
-
-1. Coret frase penghubung yang sama: *"stok beras di gudang logistik terjamin aman"*.
-2. Sambungan langsung: *"Jika produksi padi melimpah, maka tidak perlu impor"*.
-3. Karena fakta panen raya padi melimpah, maka simpulan langsungnya: *"Pemerintah tidak perlu impor beras"*.
-4. Jawaban yang tepat adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Bertentangan langsung dengan hasil deduksi logis sah $R$.
-- **Pilihan C Salah:** Mengingkari premis 1 yang sudah menjamin keamanan stok secara bersyarat.
-- **Pilihan D Salah:** Membalik alur kausalitas secara keliru (*reverse causality*).
-- **Pilihan E Salah:** Membahas pengawasan harga beras di luar premis yang disediakan (*out of scope*).`,
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Sambungkan rantai implikasi: `Padi melimpah → Stok aman` dan `Stok aman → Tidak perlu impor`. Coret jembatan \"stok aman\", sehingga didapat `Padi melimpah → Tidak perlu impor`. Karena padi melimpah benar-benar terjadi, gunakan Modus Ponens!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Notasi Simbolik:**\n  - $P$: Produksi padi nasional meningkat melimpah\n  - $Q$: Ketersediaan stok beras terjamin aman\n  - $R$: Pemerintah tidak perlu impor beras\n- **Deduksi 1 (Silogisme Hipotetis):**\n  $(P \\rightarrow Q) \\land (Q \\rightarrow R) \\vdash P \\rightarrow R$\n- **Deduksi 2 (Modus Ponens):**\n  $(P \\rightarrow R) \\land P \\vdash R$\n- **Konklusi:** $R$ (Pemerintah tidak perlu melakukan impor beras dari luar negeri).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Coret Jembatan Silogisme):**\n\n1. Coret frase penghubung yang sama: *\"stok beras di gudang logistik terjamin aman\"*.\n2. Sambungan langsung: *\"Jika produksi padi melimpah, maka tidak perlu impor\"*.\n3. Karena fakta panen raya padi melimpah, maka simpulan langsungnya: *\"Pemerintah tidak perlu impor beras\"*.\n4. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bertentangan langsung dengan hasil deduksi logis sah $R$.\n- **Pilihan C Salah:** Mengingkari premis 1 yang sudah menjamin keamanan stok secara bersyarat.\n- **Pilihan D Salah:** Membalik alur kausalitas secara keliru (*reverse causality*).\n- **Pilihan E Salah:** Membahas pengawasan harga beras di luar premis yang disediakan (*out of scope*)."
     },
     {
-      example_id: 'pu-02-03-ex2',
-      variation_name: 'Variasi 2: Deteksi Fallacy / Evaluasi Validitas (Level: Sedang)',
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Perhatikan pedoman apresiasi atlet berprestasi dan fakta berikut:\n\n**Premis 1:** Jika seorang atlet berhasil memenangkan medali emas di ajang olimpiade internasional, maka atlet tersebut berhak menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.\n**Premis 2:** Atlet angkat besi nasional bernama Rudi resmi menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.',
-      question_markdown:
-        'Berdasarkan kaidah logika formal deduktif, manakah simpulan yang **paling tepat** mengenai Rudi?',
-      options: [
+      "example_id": "pu-02-03-ex2",
+      "variation_name": "Variasi 2: Deteksi Fallacy / Evaluasi Validitas (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan pedoman apresiasi atlet berprestasi dan fakta berikut:\n\n**Premis 1:** Jika seorang atlet berhasil memenangkan medali emas di ajang olimpiade internasional, maka atlet tersebut berhak menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.\n**Premis 2:** Atlet angkat besi nasional bernama Rudi resmi menerima tunjangan hari tua seumur hidup dari kementerian pemuda dan olahraga.",
+      "question_markdown": "Berdasarkan kaidah logika formal deduktif, manakah simpulan yang **paling tepat** mengenai Rudi?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Rudi pasti telah memenangkan medali emas di ajang olimpiade internasional.',
+          "key": "A",
+          "text_markdown": "Rudi pasti telah memenangkan medali emas di ajang olimpiade internasional."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Rudi tidak pernah memenangkan medali emas di ajang olimpiade internasional.',
+          "key": "B",
+          "text_markdown": "Rudi tidak pernah memenangkan medali emas di ajang olimpiade internasional."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Rudi belum tentu telah memenangkan medali emas di ajang olimpiade internasional.',
+          "key": "C",
+          "text_markdown": "Rudi belum tentu telah memenangkan medali emas di ajang olimpiade internasional."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Semua atlet yang menerima tunjangan hari tua dari kementerian pasti peraih medali emas olimpiade.',
+          "key": "D",
+          "text_markdown": "Semua atlet yang menerima tunjangan hari tua dari kementerian pasti peraih medali emas olimpiade."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Kementerian pemuda dan olahraga melanggar aturan pemberian tunjangan hari tua kepada Rudi.',
-        },
+          "key": "E",
+          "text_markdown": "Kementerian pemuda dan olahraga melanggar aturan pemberian tunjangan hari tua kepada Rudi."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Premis 2 menyebut Rudi menerima tunjangan (akibat / sisi kanan implikasi). Mengafirmasi sisi kanan adalah sesat pikir *affirming the consequent*. Tunjangan bisa didapat dari jalur prestasi lain, sehingga status medali emas olimpiade Rudi adalah belum tentu!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Struktur Argumen:**
-  - Premis 1: $E \\rightarrow T$ ($E$: Emas olimpiade, $T$: Tunjangan hari tua).
-  - Premis 2: $T$ (Rudi menerima tunjangan).
-- **Evaluasi Cacat Logika:**
-  - Penarikan kesimpulan $(E \\rightarrow T) \\land T \\vdash E$ adalah sesat pikir **Affirming the Consequent**.
-  - $E$ adalah syarat cukup bagi $T$, namun $T$ bisa dipicu oleh prestasi kejuaraan dunia lain.
-  - Maka dari itu, apakah Rudi meraih medali emas olimpiade adalah **belum tentu benar**.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Deteksi Afirmasi Konsekuen):**
-
-1. Fakta Rudi berada di bagian belakang implikasi (akibat: menerima tunjangan).
-2. Mengafirmasi bagian belakang TIDAK BISA membuktikan bagian depan.
-3. Langsung pilih opsi yang memuat keraguan terukur: *"Belum tentu..."*.
-4. Jawaban yang tepat adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Terjebak cacat logika menegaskan konsekuen (*affirming the consequent*).
-- **Pilihan B Salah:** Mengambil klaim penyangkalan mutlak tanpa bukti premis yang sah.
-- **Pilihan D Salah:** Merupakan overgeneralisasi yang keliru dari penegasan konsekuen.
-- **Pilihan E Salah:** Bersifat menghakimi di luar koridor penalaran deduktif premis teks.`,
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Premis 2 menyebut Rudi menerima tunjangan (akibat / sisi kanan implikasi). Mengafirmasi sisi kanan adalah sesat pikir *affirming the consequent*. Tunjangan bisa didapat dari jalur prestasi lain, sehingga status medali emas olimpiade Rudi adalah belum tentu!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Argumen:**\n  - Premis 1: $E \\rightarrow T$ ($E$: Emas olimpiade, $T$: Tunjangan hari tua).\n  - Premis 2: $T$ (Rudi menerima tunjangan).\n- **Evaluasi Cacat Logika:**\n  - Penarikan kesimpulan $(E \\rightarrow T) \\land T \\vdash E$ adalah sesat pikir **Affirming the Consequent**.\n  - $E$ adalah syarat cukup bagi $T$, namun $T$ bisa dipicu oleh prestasi kejuaraan dunia lain.\n  - Maka dari itu, apakah Rudi meraih medali emas olimpiade adalah **belum tentu benar**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Deteksi Afirmasi Konsekuen):**\n\n1. Fakta Rudi berada di bagian belakang implikasi (akibat: menerima tunjangan).\n2. Mengafirmasi bagian belakang TIDAK BISA membuktikan bagian depan.\n3. Langsung pilih opsi yang memuat keraguan terukur: *\"Belum tentu...\"*.\n4. Jawaban yang tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terjebak cacat logika menegaskan konsekuen (*affirming the consequent*).\n- **Pilihan B Salah:** Mengambil klaim penyangkalan mutlak tanpa bukti premis yang sah.\n- **Pilihan D Salah:** Merupakan overgeneralisasi yang keliru dari penegasan konsekuen.\n- **Pilihan E Salah:** Bersifat menghakimi di luar koridor penalaran deduktif premis teks."
     },
     {
-      example_id: 'pu-02-03-ex3',
-      variation_name: 'Variasi 3: Premis Majemuk Campuran & Kontraposisi Rantai (Level: Sulit)',
-      difficulty: 'hard',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Dewan Direksi sebuah konsorsium teknologi mengevaluasi tiga premis operasional berikut:\n\n(1) Jika sebuah perusahaan rintisan (*startup*) berhasil mencatatkan arus kas positif, maka valuasi modal perusahaan akan melonjak drastis atau perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia.\n(2) Jika perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia, maka produk perangkat lunak yang dirilis akan memenangkan penghargaan inovasi teknologi global.\n(3) Berdasarkan laporan audit akhir tahun, tercatat fakta bahwa valuasi modal perusahaan rintisan tersebut tidak melonjak drastis dan produk perangkat lunak yang dirilis tidak memenangkan penghargaan inovasi teknologi global.',
-      question_markdown:
-        'Berdasarkan ketiga premis tersebut, simpulan yang **PASTI BENAR** secara kaidah logika deduktif adalah...',
-      options: [
+      "example_id": "pu-02-03-ex3",
+      "variation_name": "Variasi 3: Premis Majemuk Campuran & Kontraposisi Rantai (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dewan Direksi sebuah konsorsium teknologi mengevaluasi tiga premis operasional berikut:\n\n(1) Jika sebuah perusahaan rintisan (*startup*) berhasil mencatatkan arus kas positif, maka valuasi modal perusahaan akan melonjak drastis atau perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia.\n(2) Jika perusahaan mampu merekrut talenta kecerdasan buatan (*AI*) terbaik dunia, maka produk perangkat lunak yang dirilis akan memenangkan penghargaan inovasi teknologi global.\n(3) Berdasarkan laporan audit akhir tahun, tercatat fakta bahwa valuasi modal perusahaan rintisan tersebut tidak melonjak drastis dan produk perangkat lunak yang dirilis tidak memenangkan penghargaan inovasi teknologi global.",
+      "question_markdown": "Berdasarkan ketiga premis tersebut, simpulan yang **PASTI BENAR** secara kaidah logika deduktif adalah...",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Perusahaan rintisan tersebut berhasil mencatatkan arus kas positif melalui efisiensi biaya operasional.',
+          "key": "A",
+          "text_markdown": "Perusahaan rintisan tersebut berhasil mencatatkan arus kas positif melalui efisiensi biaya operasional."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif.',
+          "key": "B",
+          "text_markdown": "Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Perusahaan rintisan tersebut mampu merekrut talenta kecerdasan buatan terbaik dunia meskipun valuasinya tidak melonjak.',
+          "key": "C",
+          "text_markdown": "Perusahaan rintisan tersebut mampu merekrut talenta kecerdasan buatan terbaik dunia meskipun valuasinya tidak melonjak."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Valuasi modal perusahaan akan melonjak drastis pada tahun operasional berikutnya.',
+          "key": "D",
+          "text_markdown": "Valuasi modal perusahaan akan melonjak drastis pada tahun operasional berikutnya."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Tidak dapat ditarik simpulan apa pun karena laporan audit akhir tahun saling bertentangan.',
-        },
+          "key": "E",
+          "text_markdown": "Tidak dapat ditarik simpulan apa pun karena laporan audit akhir tahun saling bertentangan."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Gunakan Modus Tollens beruntun: produk tidak menang (premis 2) → tidak merekrut talenta AI. Ditambah valuasi tidak naik, berarti kedua pilihan di premis 1 (valuasi ATAU talenta) sama-sama SALAH. Dengan Modus Tollens pada premis 1, sebabnya pasti SALAH (arus kas tidak positif)!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Notasi Simbolik:**
-  - $K$: Arus kas positif
-  - $V$: Valuasi melonjak
-  - $T$: Merekrut talenta AI terbaik
-  - $I$: Menang inovasi global
-- **Sistem Premis:**
-  - Premis 1: $K \\rightarrow (V \\lor T)$
-  - Premis 2: $T \\rightarrow I$
-  - Fakta 3: $\\sim V \\land \\sim I$
-- **Rangkaian Deduksi:**
-  1. Dari $T \\rightarrow I$ dan $\\sim I$, melalui Modus Tollens diperoleh: $\\sim T$.
-  2. Gabungkan $\\sim V$ dan $\\sim T$: diperoleh $\\sim V \\land \\sim T \\equiv \\sim (V \\lor T)$ (Hukum De Morgan).
-  3. Terapkan Modus Tollens pada Premis 1:
-     $$(K \\rightarrow (V \\lor T)) \\land \\sim (V \\lor T) \\vdash \\sim K$$
-  4. Konklusi: $\\sim K$ (Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif).
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Modus Tollens Dua Tahap):**
-
-1. Fakta: produk tidak menang inovasi $\\rightarrow$ lewat premis 2, perusahaan pasti tidak rekrut talenta AI.
-2. Fakta: valuasi juga tidak naik $\\rightarrow$ kedua opsi pada premis 1 (*valuasi naik atau rekrut talenta AI*) gugur menjadi salah.
-3. Karena sisi kanan premis 1 salah, lewat Modus Tollens sisi kirinya wajib salah: *arus kas tidak positif*.
-4. Jawaban yang tepat adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Bertentangan secara mutlak dengan hasil deduksi logis $\\sim K$.
-- **Pilihan C Salah:** Bertentangan dengan deduksi tahap pertama yang membuktikan perusahaan tidak mampu merekrut talenta AI.
-- **Pilihan D Salah:** Bersifat spekulasi masa depan di luar premis teks (*out of scope*).
-- **Pilihan E Salah:** Premis-premis logis konsisten dan secara valid menghasilkan konklusi $\\sim K$.`,
-    },
-  ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Gunakan Modus Tollens beruntun: produk tidak menang (premis 2) → tidak merekrut talenta AI. Ditambah valuasi tidak naik, berarti kedua pilihan di premis 1 (valuasi ATAU talenta) sama-sama SALAH. Dengan Modus Tollens pada premis 1, sebabnya pasti SALAH (arus kas tidak positif)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Notasi Simbolik:**\n  - $K$: Arus kas positif\n  - $V$: Valuasi melonjak\n  - $T$: Merekrut talenta AI terbaik\n  - $I$: Menang inovasi global\n- **Sistem Premis:**\n  - Premis 1: $K \\rightarrow (V \\lor T)$\n  - Premis 2: $T \\rightarrow I$\n  - Fakta 3: $\\sim V \\land \\sim I$\n- **Rangkaian Deduksi:**\n  1. Dari $T \\rightarrow I$ dan $\\sim I$, melalui Modus Tollens diperoleh: $\\sim T$.\n  2. Gabungkan $\\sim V$ dan $\\sim T$: diperoleh $\\sim V \\land \\sim T \\equiv \\sim (V \\lor T)$ (Hukum De Morgan).\n  3. Terapkan Modus Tollens pada Premis 1:\n     $(K \\rightarrow (V \\lor T)) \\land \\sim (V \\lor T) \\vdash \\sim K$\n  4. Konklusi: $\\sim K$ (Perusahaan rintisan tersebut tidak berhasil mencatatkan arus kas positif).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Modus Tollens Dua Tahap):**\n\n1. Fakta: produk tidak menang inovasi $\\rightarrow$ lewat premis 2, perusahaan pasti tidak rekrut talenta AI.\n2. Fakta: valuasi juga tidak naik $\\rightarrow$ kedua opsi pada premis 1 (*valuasi naik atau rekrut talenta AI*) gugur menjadi salah.\n3. Karena sisi kanan premis 1 salah, lewat Modus Tollens sisi kirinya wajib salah: *arus kas tidak positif*.\n4. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bertentangan secara mutlak dengan hasil deduksi logis $\\sim K$.\n- **Pilihan C Salah:** Bertentangan dengan deduksi tahap pertama yang membuktikan perusahaan tidak mampu merekrut talenta AI.\n- **Pilihan D Salah:** Bersifat spekulasi masa depan di luar premis teks (*out of scope*).\n- **Pilihan E Salah:** Premis-premis logis konsisten dan secara valid menghasilkan konklusi $\\sim K$."
+    }
+  ]
 };
 
 const MATERIAL_PU_02_04 = {
-  metadata: {
-    id: 'pu-2-4',
-    subtest: 'PU',
-    chapter_num: 2,
-    chapter_title: 'Penalaran Deduktif',
-    subchapter_num: '2.4',
-    subchapter_title: 'Logika Kuantor dan Diagram Venn',
-    title: 'Logika Kuantor dan Diagram Venn',
-    required_question_variations: [
-      'Penarikan Kesimpulan Kuantor Universal & Partikular',
-      'Evaluasi Hubungan Tiga Entitas via Diagram Venn',
-      'Jebakan Dua Premis Partikular & Validitas Himpunan Irisan (HOTS)',
+  "metadata": {
+    "id": "pu-2-4",
+    "subtest": "PU",
+    "chapter_num": 2,
+    "chapter_title": "Penalaran Deduktif",
+    "subchapter_num": "2.4",
+    "subchapter_title": "Logika Kuantor dan Diagram Venn",
+    "title": "Logika Kuantor dan Diagram Venn",
+    "required_question_variations": [
+      "Penarikan Kesimpulan Kuantor Universal & Partikular",
+      "Evaluasi Hubungan Tiga Entitas via Diagram Venn",
+      "Jebakan Dua Premis Partikular & Validitas Himpunan Irisan (HOTS)"
     ],
-    requires_svg: false,
-    updated_at: '2026-11-07',
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
   },
-  content: {
-    tactical_overview:
-      'Logika kuantor mengkaji cakupan kebenaran suatu pernyataan terhadap anggota himpunannya menggunakan kuantor universal ("semua/setiap") dan kuantor eksistensial ("sebagian/beberapa/ada"). Di UTBK SNBT, visualisasi Diagram Venn merupakan alat bantu terbaik untuk memetakan irisan, gabungan, atau keterpisahan antarkelompok. Kunci terpenting adalah mengingat aturan emas: jika salah satu premis bersifat partikular (sebagian), maka kesimpulan wajib partikular; dan jika kedua premis sama-sama partikular (sebagian + sebagian), maka tidak dapat ditarik kesimpulan pasti mengenai hubungan kedua ujung himpunan.',
-    exam_blueprint_markdown: `# 1. Prinsip Dasar
-
-Logika kuantor menelaah pernyataan yang memuat kata penunjuk kuantitas atau jumlah anggota suatu himpunan subjek. Di dalam ujian UTBK SNBT, soal jenis ini paling efektif diselesaikan dengan memvisualisasikan hubungan antarhimpunan ke dalam **Diagram Venn**.
-
-Tiga konsep dasar logika kuantor dan diagram Venn yang wajib Anda kuasai adalah:
-
-1. **Dua Jenis Kuantor Baku**  
-   - **Kuantor Universal (Simbol: $\\forall$ — kata kunci: "Semua", "Setiap", "Seluruh", "Tanpa Terkecuali")**  
-     Menyatakan bahwa suatu sifat berlaku mutlak untuk seluruh anggota himpunan tanpa satu pun pengecualian. Secara diagram Venn, lingkaran himpunan $A$ berada **sepenuhnya di dalam** lingkaran himpunan $B$ ($A \\subset B$).  
-     *Pola:* *"Semua $A$ adalah $B$"*.  
-   - **Kuantor Eksistensial / Partikular (Simbol: $\\exists$ — kata kunci: "Beberapa", "Sebagian", "Ada", "Terdapat", "Minimal Satu")**  
-     Menyatakan bahwa terdapat **minimal satu** anggota yang memenuhi sifat tersebut. Perlu dicatat: dalam kaidah logika, frasa *"sebagian"* tidak berarti separuh (50%), melainkan mencakup rentang dari 1 anggota hingga seluruhnya ($1 \\le n \\le N$). Secara diagram Venn, himpunan $A$ dan himpunan $B$ **memiliki daerah irisan (*overlap*) yang tidak kosong** ($A \\cap B \\neq \\emptyset$).  
-     *Pola:* *"Sebagian $A$ adalah $B$"*.
-
-2. **Aturan Baku Kombinasi Kuantor dalam Penarikan Kesimpulan**  
-   - **Premis Universal + Premis Universal $\\rightarrow$ Kesimpulan Universal**  
-     *Premis 1:* Semua $A$ adalah $B$.  
-     *Premis 2:* Semua $B$ adalah $C$.  
-     *Kesimpulan Sah:* **Semua $A$ adalah $C$**.  
-   - **Premis Universal + Premis Partikular $\\rightarrow$ Kesimpulan Wajib Partikular**  
-     *Premis 1:* Semua $A$ adalah $B$.  
-     *Premis 2:* Sebagian $C$ adalah $A$.  
-     *Kesimpulan Sah:* **Sebagian $C$ adalah $B$**.  
-     *(Jika ada satu premis menggunakan kata "sebagian", kesimpulan tidak boleh menggunakan kata "semua")*.  
-   - **Premis Universal Negatif (Pemisahan Total)**  
-     *Premis 1:* Semua $A$ adalah $B$.  
-     *Premis 2:* Tidak ada satupun $B$ yang merupakan $C$ (lingkaran $B$ dan $C$ saling lepas).  
-     *Kesimpulan Sah:* **Tidak ada satupun $A$ yang merupakan $C$** *(karena $A$ ada di dalam $B$, maka $A$ mustahil menyentuh $C$)*.
-
-3. **Aturan Gugurnya Dua Premis Partikular (Sebagian + Sebagian)**  
-   - *Premis 1:* Sebagian $A$ adalah $B$.  
-   - *Premis 2:* Sebagian $B$ adalah $C$.  
-   - **Kesimpulan Sah:** **TIDAK DAPAT DITARIK KESIMPULAN PASTI**.  
-   Dalam diagram Venn, daerah irisan antara $A$ dan $B$ bisa saja sama sekali tidak bersentuhan dengan daerah irisan antara $B$ dan $C$. Hubungan antara $A$ dan $C$ berada pada status *belum tentu*, sehingga opsi yang menyatakan kepastian wajib dieliminasi.
-
----
-
-# 2. Jebakan Pengecoh Khas UTBK
-
-Pembuat naskah UTBK sengaja merancang opsi jawaban yang memanfaatkan persepsi bahasa sehari-hari yang menyimpang dari kaidah logika himpunan:
-
-1. **Jebakan Menganggap "Sebagian" Melarang "Semua"**  
-   Ketika teks menyatakan *"Sebagian atlet menyukai musik jazz"*, siswa sering membuat asumsi sepihak bahwa *"Sebagian atlet pasti tidak menyukai musik jazz"*. Padahal dalam logika formal, pernyataan eksistensial hanya mengonfirmasi keberadaan minimal satu orang tanpa melarang kemungkinan bahwa seluruh atlet menyukainya.
-2. **Jebakan Menyimpulkan Hubungan dari Dua Premis Partikular**  
-   Pilihan jawaban menghubungkan dua hal hanya karena keduanya sama-sama memiliki relasi *"sebagian"* dengan kelompok penengah. Ingat: dua premis berkuantor sebagian tidak pernah menjamin adanya irisan bersama antara ujung awal dan ujung akhir.
-3. **Jebakan Melompat Keluar dari Irisan Diagram Venn**  
-   Pilihan jawaban mengambil kesimpulan spekulatif mengenai daerah komplemen (daerah di luar lingkaran) yang tidak memiliki keterangan bukti di dalam teks wacana.
-
----
-
-# 3. Trik Cepat (15 Detik)
-
-Terapkan algoritma seleksi cepat berikut saat menghadapi soal kuantor dan diagram Venn:
-
-1. **Terapkan Rumus Kuantor Terlemah**  
-   Periksa kuantor pada seluruh premis soal:  
-   - Jika salah satu premis memuat kata **"Sebagian / Beberapa / Ada"**, maka kunci jawaban **WAJIB memuat kata "Sebagian / Beberapa / Ada"**. Segera coret semua opsi yang menggunakan kata *"Semua / Seluruh"*.  
-   - Jika salah satu premis memuat kata **"Tidak / Bukan"**, maka kesimpulan **WAJIB memuat kata "Tidak / Bukan"**.
-2. **Deteksi Cepat Dua Premis Sebagian**  
-   Jika Anda melihat Premis 1 berbunyi *"Sebagian..."* dan Premis 2 juga berbunyi *"Sebagian..."*, jangan buang waktu menggambar! Langsung cari opsi jawaban: *"Tidak dapat ditarik simpulan"* atau *"Belum tentu..."*.
-3. **Sketsa Mental 3 Lingkaran Venn**  
-   Bayangkan tiga lingkaran: jika lingkaran $A$ berada di dalam $B$, dan sebagian $C$ menembus $A$, maka bagian $C$ yang berada di dalam $A$ tersebut secara otomatis ikut berada di dalam $B$.
-
----
-
-# 4. Kesimpulan
-
-- **Hakikat Materi:** Logika kuantor menguji hubungan cakupan himpunan antarobjek (universal penuh vs eksistensial minimal satu).
-- **Prinsip Diagram Venn:**  
-  - "Semua $A$ adalah $B$" $\rightarrow$ Lingkaran $A$ berada di dalam lingkaran $B$.  
-  - "Sebagian $A$ adalah $B$" $\rightarrow$ Lingkaran $A$ dan $B$ saling beririsan.  
-  - "Tidak ada $A$ yang $B$" $\rightarrow$ Lingkaran $A$ dan $B$ terpisah sempurna.
-- **Kaidah Simpulan Baku:**  
-  - Universal + Partikular $\rightarrow$ Partikular.  
-  - Partikular + Partikular $\rightarrow$ Gugur / Tidak dapat disimpulkan.
-- **Strategi Eliminasi:** Eliminasi opsi berkuantor *"Semua"* jika terdapat premis *"Sebagian"*, dan waspadai klaim daerah luar irisan.
-
----
-
-# 5. Bedah Soal dan Variasi UTBK
-
-Berikut adalah bedah tiga variasi soal Logika Kuantor dan Diagram Venn yang rutin keluar pada naskah UTBK SNBT, lengkap dengan konteks premis, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika terperinci:
-
-### Variasi 1: Penarikan Kesimpulan Kuantor Universal & Partikular
-
-> **Konteks Wacana Soal:**  
-> Perhatikan dua premis mengenai komunitas akademik kampus berikut ini:  
-> Premis 1: Semua anggota klub astronomi observasional menguasai pengoperasian teleskop optik canggih.  
-> Premis 2: Sebagian mahasiswa program studi ilmu fisika adalah anggota klub astronomi observasional.  
->  
-> **Pertanyaan UTBK:** *Simpulan yang paling tepat dan sah secara logika deduktif berdasarkan kedua premis tersebut adalah...*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Semua mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.  
-> - **B.** Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.  
-> - **C.** Semua orang yang menguasai pengoperasian teleskop optik canggih adalah mahasiswa program studi ilmu fisika.  
-> - **D.** Sebagian mahasiswa program studi ilmu fisika bukan merupakan anggota klub astronomi observasional dan pasti tidak dapat mengoperasikan teleskop optik canggih.  
-> - **E.** Tidak ada mahasiswa program studi ilmu fisika yang tidak menguasai pengoperasian teleskop optik canggih.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Himpunan & Diagram Venn:**  
-  - Misalkan $A$ = Himpunan Anggota klub astronomi observasional.  
-  - Misalkan $T$ = Himpunan Orang yang menguasai pengoperasian teleskop optik canggih.  
-  - Misalkan $F$ = Himpunan Mahasiswa program studi ilmu fisika.  
-  - **Premis 1:** Semua $A$ adalah $T$ ($A \\subset T$). Seluruh lingkaran klub astronomi berada di dalam lingkaran penguasa teleskop.  
-  - **Premis 2:** Sebagian $F$ adalah $A$ ($F \\cap A \\neq \\emptyset$). Terdapat irisan antara himpunan mahasiswa fisika dengan klub astronomi.
-- **Penarikan Kesimpulan:**  
-  Karena sebagian mahasiswa fisika ($F$) berada di dalam lingkaran klub astronomi ($A$), dan seluruh lingkaran $A$ berada di dalam lingkaran penguasa teleskop ($T$), maka mahasiswa fisika yang berada di dalam irisan $A$ tersebut secara otomatis pasti berada di dalam lingkaran $T$.  
-  Oleh sebab itu, kesimpulan sah yang dihasilkan adalah: **"Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih"** ($F \\cap T \\neq \\emptyset$).
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Menggunakan kuantor universal *"Semua"*, padahal premis 2 bersifat partikular (*"Sebagian"*).  
-  - **Pilihan C Salah:** Membalik hubungan himpunan secara keliru; penguasa teleskop adalah himpunan semesta yang lebih luas.  
-  - **Pilihan D Salah:** Membuat vonis kepastian mutlak mengenai daerah komplemen di luar irisan yang tidak dibahas di dalam premis.  
-  - **Pilihan E Salah:** Maknanya setara dengan *"Semua mahasiswa fisika menguasai..."*, yang bertentangan dengan kaidah kuantor partikular.
-- **Penerapan Trik Cepat (15 Detik):** Karena premis 2 memuat kata *"Sebagian"*, maka kesimpulan wajib memuat kata *"Sebagian"*. Coret langsung opsi A dan E yang bermakna universal. Coret opsi D yang menghakimi daerah luar. Pilihan yang tepat dan aman adalah pilihan **B**.
-
----
-
-### Variasi 2: Evaluasi Hubungan Tiga Entitas via Diagram Venn
-
-> **Konteks Wacana Soal:**  
-> Perhatikan tiga ketentuan kepegawaian dalam sebuah konsultan kreatif berikut:  
-> (1) Semua tenaga ahli desainer grafis menguasai perangkat lunak ilustrasi vektor 3D.  
-> (2) Tidak ada satupun staf auditor keuangan internal yang menguasai perangkat lunak ilustrasi vektor 3D.  
-> (3) Sebagian staf divisi komunikasi publik adalah tenaga ahli desainer grafis.  
->  
-> **Pertanyaan UTBK:** *Berdasarkan ketiga premis tersebut dan representasi diagram Venn, manakah simpulan yang PASTI BENAR?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Semua staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.  
-> - **B.** Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.  
-> - **C.** Semua tenaga ahli desainer grafis adalah staf divisi komunikasi publik.  
-> - **D.** Sebagian staf auditor keuangan internal menguasai perangkat lunak ilustrasi vektor 3D.  
-> - **E.** Tidak ada staf divisi komunikasi publik yang menguasai perangkat lunak ilustrasi vektor 3D.
-
-**Kunci Jawaban: B**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Relasi Himpunan Tiga Lingkaran:**  
-  - Himpunan Desainer Grafis ($D$) berada sepenuhnya di dalam Himpunan Penguasa Vektor 3D ($V$), yaitu $D \\subset V$.  
-  - Himpunan Auditor Keuangan ($K$) saling lepas sempurna (*disjoint*) dengan Himpunan $V$, yaitu $K \\cap V = \\emptyset$. Akibatnya, lingkaran $K$ juga terpisah mutlak dari lingkaran $D$ ($K \\cap D = \\emptyset$).  
-  - Himpunan Staf Komunikasi Publik ($P$) memiliki irisan dengan Desainer Grafis ($D$), yaitu $P \\cap D \\neq \\emptyset$.
-- **Langkah Deduksi Logis:**  
-  Terdapat sebagian anggota staf komunikasi publik ($P$) yang merupakan desainer grafis ($D$). Karena seluruh desainer grafis ($D$) berada di dalam lingkaran $V$, dan lingkaran $V$ sama sekali tidak menyentuh auditor keuangan ($K$), maka anggota staf komunikasi publik yang berprofesi sebagai desainer grafis tersebut **dipastikan bukan merupakan staf auditor keuangan internal**.  
-  Konklusi sah: **"Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal"**.
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Menyimpulkan untuk *"Semua"* staf komunikasi publik, padahal premis 3 hanya mengonfirmasi irisan *"Sebagian"*. Anggota komunikasi publik lainnya yang bukan desainer grafis bisa saja merangkap auditor.  
-  - **Pilihan C Salah:** Mengacaukan arah irisan; sebagian staf komunikasi adalah desainer, bukan berarti semua desainer adalah staf komunikasi.  
-  - **Pilihan D Salah:** Bertentangan langsung dengan premis 2 yang menyatakan tidak ada satupun auditor yang menguasai vektor 3D.  
-  - **Pilihan E Salah:** Bertentangan dengan gabungan premis 1 dan 3 yang membuktikan bahwa staf komunikasi yang menjadi desainer pasti menguasai vektor 3D.
-- **Penerapan Trik Cepat (15 Detik):** Perhatikan kombinasi kuantor: Universal Negatif (Premis 2: *Tidak ada satupun auditor yang masuk lingkaran Vektor*) + Partikular (Premis 3: *Sebagian staf Komunikasi masuk lingkaran Desainer/Vektor*). Hasilnya wajib Partikular Negatif: *Sebagian staf Komunikasi BUKAN auditor*. Pilihan yang tepat adalah pilihan **B**.
-
----
-
-### Variasi 3: Jebakan Dua Premis Partikular & Validitas Himpunan Irisan (HOTS)
-
-> **Konteks Wacana Soal:**  
-> Sebuah laporan survei komunitas kebugaran memaparkan tiga fakta himpunan responden:  
-> (1) Sebagian peserta lari maraton perkotaan menerapkan pola makan vegetarian murni.  
-> (2) Sebagian individu yang menerapkan pola makan vegetarian murni rutin mengonsumsi suplemen vitamin D dosis tinggi.  
-> (3) Semua orang yang rutin mengonsumsi suplemen vitamin D dosis tinggi memiliki tingkat kepadatan massa tulang di atas rata-rata.  
->  
-> Berdasarkan laporan tersebut, seorang pelatih kebugaran menarik kesimpulan resmi:  
-> *"Sebagian peserta lari maraton perkotaan pasti memiliki tingkat kepadatan massa tulang di atas rata-rata."*  
->  
-> **Pertanyaan UTBK:** *Manakah evaluasi berikut yang paling tepat mengenai validitas kesimpulan pelatih kebugaran tersebut berdasarkan kaidah logika diagram Venn?*  
->  
-> **Pilihan Ganda:**  
-> - **A.** Kesimpulan pelatih bernilai mutlak benar karena didukung oleh rantai silogisme lengkap dari premis 1 hingga premis 3.  
-> - **B.** Kesimpulan pelatih bernilai mutlak salah karena tidak ada pelari maraton yang menerapkan pola makan vegetarian murni.  
-> - **C.** Kesimpulan pelatih tidak dapat dipastikan kebenarannya (belum tentu benar) karena himpunan pelari maraton yang vegetarian belum tentu beririsan dengan himpunan vegetarian yang mengonsumsi suplemen vitamin D.  
-> - **D.** Kesimpulan pelatih pasti benar asalkan seluruh peserta lari maraton mengganti pola makan mereka menjadi vegetarian murni.  
-> - **E.** Kesimpulan pelatih seharusnya menyatakan bahwa semua peserta lari maraton memiliki kepadatan tulang di atas rata-rata.
-
-**Kunci Jawaban: C**
-
-**Bedah Logika & Pembahasan:**
-- **Analisis Kritis Diagram Venn:**  
-  - Misalkan $M$ = Peserta maraton, $V$ = Vegetarian murni, $D$ = Pengonsumsi suplemen vitamin D, dan $T$ = Kepadatan tulang di atas rata-rata.  
-  - Premis 1: $M \\cap V \\neq \\emptyset$ *(Sebagian $M$ adalah $V$)*.  
-  - Premis 2: $V \\cap D \\neq \\emptyset$ *(Sebagian $V$ adalah $D$)*.  
-  - Premis 3: $D \\subset T$ *(Semua $D$ adalah $T$)*.
-- **Identifikasi Sesat Pikir Penarikan Simpulan:**  
-  Hubungan antara himpunan $M$ dan $D$ dijembatani oleh himpunan $V$. Namun, kedua premis penghubungnya sama-sama berkuantor **partikular ("Sebagian")**:  
-  - Irisan pertama $(M \\cap V)$ adalah sekelompok orang vegetarian yang hobi maraton.  
-  - Irisan kedua $(V \\cap D)$ adalah sekelompok orang vegetarian yang minum vitamin D.  
-  Di dalam diagram Venn, lingkaran $M$ dan lingkaran $D$ sama-sama menembus lingkaran $V$, namun **tidak ada jaminan bahwa kedua irisan tersebut saling bertumpukan atau berada pada daerah potongan yang sama**. Bisa saja pelari maraton yang vegetarian berada di sisi kiri lingkaran $V$, sedangkan vegetarian peminum vitamin D berada di sisi kanan lingkaran $V$.  
-  Karena irisan bersama $(M \\cap D)$ belum tentu ada, maka simpulan bahwa sebagian pelari maraton pasti memiliki tulang padat ($T$) adalah **tidak sah / belum tentu benar**.
-- **Mengapa Opsi Lain Salah?**  
-  - **Pilihan A Salah:** Terjebak pada silogisme semu; rantai silogisme tidak dapat dibentuk dari dua premis partikular berturut-turut.  
-  - **Pilihan B Salah:** Mengklaim simpulan mutlak salah dengan menyangkal premis 1 yang sudah ditetapkan benar.  
-  - **Pilihan D Salah:** Mengubah premis faktual menjadi kondisi pengandaian yang tidak relevan.  
-  - **Pilihan E Salah:** Menarik kesimpulan universal yang semakin menyimpang dari kaidah logika.
-- **Penerapan Trik Cepat (15 Detik):** Segera amati kuantor premis 1 dan premis 2: keduanya diawali kata *"Sebagian"*. Ingat aturan emas: **Dua premis partikular ("sebagian + sebagian") tidak dapat menghasilkan kesimpulan pasti**. Pilihlah opsi yang menyatakan bahwa simpulan tersebut belum tentu benar karena irisan kedua kelompok belum tentu bertumpukan. Jawaban yang tepat adalah pilihan **C**.`,
-    visualizations_svg: [],
-    distractor_traps: [
-      'Menyimpulkan Kepastian dari Dua Premis Partikular: Mengira "sebagian A adalah B" dan "sebagian B adalah C" otomatis menghasilkan kesimpulan "sebagian A adalah C".',
-      'Overgeneralisasi Kuantor: Memilih opsi berkuantor universal ("semua") saat terdapat premis berkuantor partikular ("sebagian").',
-      'Spekulasi Daerah Komplemen: Menarik simpulan mengenai sifat objek di luar irisan diagram Venn yang tidak tercantum dalam premis teks.',
+  "content": {
+    "tactical_overview": "Logika kuantor mengkaji cakupan kebenaran suatu pernyataan terhadap anggota himpunannya menggunakan kuantor universal (\"semua/setiap\") dan kuantor eksistensial (\"sebagian/beberapa/ada\"). Di UTBK SNBT, visualisasi Diagram Venn merupakan alat bantu terbaik untuk memetakan irisan, gabungan, atau keterpisahan antarkelompok. Kunci terpenting adalah mengingat aturan emas: jika salah satu premis bersifat partikular (sebagian), maka kesimpulan wajib partikular; dan jika kedua premis sama-sama partikular (sebagian + sebagian), maka tidak dapat ditarik kesimpulan pasti mengenai hubungan kedua ujung himpunan.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-02-04-venn]]\n\n\nLogika kuantor menelaah pernyataan yang memuat kata penunjuk kuantitas atau jumlah anggota suatu himpunan subjek. Di dalam ujian UTBK SNBT, soal jenis ini paling efektif diselesaikan dengan memvisualisasikan hubungan antarhimpunan ke dalam **Diagram Venn**.\n\nTiga konsep dasar logika kuantor dan diagram Venn yang wajib Anda kuasai adalah:\n\n1. **Dua Jenis Kuantor Baku**  \n   - **Kuantor Universal (Simbol: $\\forall$ — kata kunci: \"Semua\", \"Setiap\", \"Seluruh\", \"Tanpa Terkecuali\")**  \n     Menyatakan bahwa suatu sifat berlaku mutlak untuk seluruh anggota himpunan tanpa satu pun pengecualian. Secara diagram Venn, lingkaran himpunan $A$ berada **sepenuhnya di dalam** lingkaran himpunan $B$ ($A \\subset B$).  \n     *Pola:* *\"Semua $A$ adalah $B$\"*.  \n   - **Kuantor Eksistensial / Partikular (Simbol: $\\exists$ — kata kunci: \"Beberapa\", \"Sebagian\", \"Ada\", \"Terdapat\", \"Minimal Satu\")**  \n     Menyatakan bahwa terdapat **minimal satu** anggota yang memenuhi sifat tersebut. Perlu dicatat: dalam kaidah logika, frasa *\"sebagian\"* tidak berarti separuh (50%), melainkan mencakup rentang dari 1 anggota hingga seluruhnya ($1 \\le n \\le N$). Secara diagram Venn, himpunan $A$ dan himpunan $B$ **memiliki daerah irisan (*overlap*) yang tidak kosong** ($A \\cap B \\neq \\emptyset$).  \n     *Pola:* *\"Sebagian $A$ adalah $B$\"*.\n\n2. **Aturan Baku Kombinasi Kuantor dalam Penarikan Kesimpulan**  \n   - **Premis Universal + Premis Universal $\\rightarrow$ Kesimpulan Universal**  \n     *Premis 1:* Semua $A$ adalah $B$.  \n     *Premis 2:* Semua $B$ adalah $C$.  \n     *Kesimpulan Sah:* **Semua $A$ adalah $C$**.  \n   - **Premis Universal + Premis Partikular $\\rightarrow$ Kesimpulan Wajib Partikular**  \n     *Premis 1:* Semua $A$ adalah $B$.  \n     *Premis 2:* Sebagian $C$ adalah $A$.  \n     *Kesimpulan Sah:* **Sebagian $C$ adalah $B$**.  \n     *(Jika ada satu premis menggunakan kata \"sebagian\", kesimpulan tidak boleh menggunakan kata \"semua\")*.  \n   - **Premis Universal Negatif (Pemisahan Total)**  \n     *Premis 1:* Semua $A$ adalah $B$.  \n     *Premis 2:* Tidak ada satupun $B$ yang merupakan $C$ (lingkaran $B$ dan $C$ saling lepas).  \n     *Kesimpulan Sah:* **Tidak ada satupun $A$ yang merupakan $C$** *(karena $A$ ada di dalam $B$, maka $A$ mustahil menyentuh $C$)*.\n\n3. **Aturan Gugurnya Dua Premis Partikular (Sebagian + Sebagian)**  \n   - *Premis 1:* Sebagian $A$ adalah $B$.  \n   - *Premis 2:* Sebagian $B$ adalah $C$.  \n   - **Kesimpulan Sah:** **TIDAK DAPAT DITARIK KESIMPULAN PASTI**.  \n   Dalam diagram Venn, daerah irisan antara $A$ dan $B$ bisa saja sama sekali tidak bersentuhan dengan daerah irisan antara $B$ dan $C$. Hubungan antara $A$ dan $C$ berada pada status *belum tentu*, sehingga opsi yang menyatakan kepastian wajib dieliminasi.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat naskah UTBK sengaja merancang opsi jawaban yang memanfaatkan persepsi bahasa sehari-hari yang menyimpang dari kaidah logika himpunan:\n\n1. **Jebakan Menganggap \"Sebagian\" Melarang \"Semua\"**  \n   Ketika teks menyatakan *\"Sebagian atlet menyukai musik jazz\"*, siswa sering membuat asumsi sepihak bahwa *\"Sebagian atlet pasti tidak menyukai musik jazz\"*. Padahal dalam logika formal, pernyataan eksistensial hanya mengonfirmasi keberadaan minimal satu orang tanpa melarang kemungkinan bahwa seluruh atlet menyukainya.\n2. **Jebakan Menyimpulkan Hubungan dari Dua Premis Partikular**  \n   Pilihan jawaban menghubungkan dua hal hanya karena keduanya sama-sama memiliki relasi *\"sebagian\"* dengan kelompok penengah. Ingat: dua premis berkuantor sebagian tidak pernah menjamin adanya irisan bersama antara ujung awal dan ujung akhir.\n3. **Jebakan Melompat Keluar dari Irisan Diagram Venn**  \n   Pilihan jawaban mengambil kesimpulan spekulatif mengenai daerah komplemen (daerah di luar lingkaran) yang tidak memiliki keterangan bukti di dalam teks wacana.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nTerapkan algoritma seleksi cepat berikut saat menghadapi soal kuantor dan diagram Venn:\n\n1. **Terapkan Rumus Kuantor Terlemah**  \n   Periksa kuantor pada seluruh premis soal:  \n   - Jika salah satu premis memuat kata **\"Sebagian / Beberapa / Ada\"**, maka kunci jawaban **WAJIB memuat kata \"Sebagian / Beberapa / Ada\"**. Segera coret semua opsi yang menggunakan kata *\"Semua / Seluruh\"*.  \n   - Jika salah satu premis memuat kata **\"Tidak / Bukan\"**, maka kesimpulan **WAJIB memuat kata \"Tidak / Bukan\"**.\n2. **Deteksi Cepat Dua Premis Sebagian**  \n   Jika Anda melihat Premis 1 berbunyi *\"Sebagian...\"* dan Premis 2 juga berbunyi *\"Sebagian...\"*, jangan buang waktu menggambar! Langsung cari opsi jawaban: *\"Tidak dapat ditarik simpulan\"* atau *\"Belum tentu...\"*.\n3. **Sketsa Mental 3 Lingkaran Venn**  \n   Bayangkan tiga lingkaran: jika lingkaran $A$ berada di dalam $B$, dan sebagian $C$ menembus $A$, maka bagian $C$ yang berada di dalam $A$ tersebut secara otomatis ikut berada di dalam $B$.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Logika kuantor menguji hubungan cakupan himpunan antarobjek (universal penuh vs eksistensial minimal satu).\n- **Prinsip Diagram Venn:**  \n  - \"Semua $A$ adalah $B$\" $\rightarrow$ Lingkaran $A$ berada di dalam lingkaran $B$.  \n  - \"Sebagian $A$ adalah $B$\" $\rightarrow$ Lingkaran $A$ dan $B$ saling beririsan.  \n  - \"Tidak ada $A$ yang $B$\" $\rightarrow$ Lingkaran $A$ dan $B$ terpisah sempurna.\n- **Kaidah Simpulan Baku:**  \n  - Universal + Partikular $\rightarrow$ Partikular.  \n  - Partikular + Partikular $\rightarrow$ Gugur / Tidak dapat disimpulkan.\n- **Strategi Eliminasi:** Eliminasi opsi berkuantor *\"Semua\"* jika terdapat premis *\"Sebagian\"*, dan waspadai klaim daerah luar irisan.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Logika Kuantor dan Diagram Venn yang rutin keluar pada naskah UTBK SNBT, lengkap dengan konteks premis, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika terperinci:\n\n### Variasi 1: Penarikan Kesimpulan Kuantor Universal & Partikular\n\n> **Konteks Wacana Soal:**  \n> Perhatikan dua premis mengenai komunitas akademik kampus berikut ini:  \n> Premis 1: Semua anggota klub astronomi observasional menguasai pengoperasian teleskop optik canggih.  \n> Premis 2: Sebagian mahasiswa program studi ilmu fisika adalah anggota klub astronomi observasional.  \n>  \n> **Pertanyaan UTBK:** *Simpulan yang paling tepat dan sah secara logika deduktif berdasarkan kedua premis tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Semua mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.  \n> - **B.** Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.  \n> - **C.** Semua orang yang menguasai pengoperasian teleskop optik canggih adalah mahasiswa program studi ilmu fisika.  \n> - **D.** Sebagian mahasiswa program studi ilmu fisika bukan merupakan anggota klub astronomi observasional dan pasti tidak dapat mengoperasikan teleskop optik canggih.  \n> - **E.** Tidak ada mahasiswa program studi ilmu fisika yang tidak menguasai pengoperasian teleskop optik canggih.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Himpunan & Diagram Venn:**  \n  - Misalkan $A$ = Himpunan Anggota klub astronomi observasional.  \n  - Misalkan $T$ = Himpunan Orang yang menguasai pengoperasian teleskop optik canggih.  \n  - Misalkan $F$ = Himpunan Mahasiswa program studi ilmu fisika.  \n  - **Premis 1:** Semua $A$ adalah $T$ ($A \\subset T$). Seluruh lingkaran klub astronomi berada di dalam lingkaran penguasa teleskop.  \n  - **Premis 2:** Sebagian $F$ adalah $A$ ($F \\cap A \\neq \\emptyset$). Terdapat irisan antara himpunan mahasiswa fisika dengan klub astronomi.\n- **Penarikan Kesimpulan:**  \n  Karena sebagian mahasiswa fisika ($F$) berada di dalam lingkaran klub astronomi ($A$), dan seluruh lingkaran $A$ berada di dalam lingkaran penguasa teleskop ($T$), maka mahasiswa fisika yang berada di dalam irisan $A$ tersebut secara otomatis pasti berada di dalam lingkaran $T$.  \n  Oleh sebab itu, kesimpulan sah yang dihasilkan adalah: **\"Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih\"** ($F \\cap T \\neq \\emptyset$).\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Menggunakan kuantor universal *\"Semua\"*, padahal premis 2 bersifat partikular (*\"Sebagian\"*).  \n  - **Pilihan C Salah:** Membalik hubungan himpunan secara keliru; penguasa teleskop adalah himpunan semesta yang lebih luas.  \n  - **Pilihan D Salah:** Membuat vonis kepastian mutlak mengenai daerah komplemen di luar irisan yang tidak dibahas di dalam premis.  \n  - **Pilihan E Salah:** Maknanya setara dengan *\"Semua mahasiswa fisika menguasai...\"*, yang bertentangan dengan kaidah kuantor partikular.\n- **Penerapan Trik Cepat (15 Detik):** Karena premis 2 memuat kata *\"Sebagian\"*, maka kesimpulan wajib memuat kata *\"Sebagian\"*. Coret langsung opsi A dan E yang bermakna universal. Coret opsi D yang menghakimi daerah luar. Pilihan yang tepat dan aman adalah pilihan **B**.\n\n---\n\n### Variasi 2: Evaluasi Hubungan Tiga Entitas via Diagram Venn\n\n> **Konteks Wacana Soal:**  \n> Perhatikan tiga ketentuan kepegawaian dalam sebuah konsultan kreatif berikut:  \n> (1) Semua tenaga ahli desainer grafis menguasai perangkat lunak ilustrasi vektor 3D.  \n> (2) Tidak ada satupun staf auditor keuangan internal yang menguasai perangkat lunak ilustrasi vektor 3D.  \n> (3) Sebagian staf divisi komunikasi publik adalah tenaga ahli desainer grafis.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan ketiga premis tersebut dan representasi diagram Venn, manakah simpulan yang PASTI BENAR?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Semua staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.  \n> - **B.** Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.  \n> - **C.** Semua tenaga ahli desainer grafis adalah staf divisi komunikasi publik.  \n> - **D.** Sebagian staf auditor keuangan internal menguasai perangkat lunak ilustrasi vektor 3D.  \n> - **E.** Tidak ada staf divisi komunikasi publik yang menguasai perangkat lunak ilustrasi vektor 3D.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Relasi Himpunan Tiga Lingkaran:**  \n  - Himpunan Desainer Grafis ($D$) berada sepenuhnya di dalam Himpunan Penguasa Vektor 3D ($V$), yaitu $D \\subset V$.  \n  - Himpunan Auditor Keuangan ($K$) saling lepas sempurna (*disjoint*) dengan Himpunan $V$, yaitu $K \\cap V = \\emptyset$. Akibatnya, lingkaran $K$ juga terpisah mutlak dari lingkaran $D$ ($K \\cap D = \\emptyset$).  \n  - Himpunan Staf Komunikasi Publik ($P$) memiliki irisan dengan Desainer Grafis ($D$), yaitu $P \\cap D \\neq \\emptyset$.\n- **Langkah Deduksi Logis:**  \n  Terdapat sebagian anggota staf komunikasi publik ($P$) yang merupakan desainer grafis ($D$). Karena seluruh desainer grafis ($D$) berada di dalam lingkaran $V$, dan lingkaran $V$ sama sekali tidak menyentuh auditor keuangan ($K$), maka anggota staf komunikasi publik yang berprofesi sebagai desainer grafis tersebut **dipastikan bukan merupakan staf auditor keuangan internal**.  \n  Konklusi sah: **\"Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal\"**.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Menyimpulkan untuk *\"Semua\"* staf komunikasi publik, padahal premis 3 hanya mengonfirmasi irisan *\"Sebagian\"*. Anggota komunikasi publik lainnya yang bukan desainer grafis bisa saja merangkap auditor.  \n  - **Pilihan C Salah:** Mengacaukan arah irisan; sebagian staf komunikasi adalah desainer, bukan berarti semua desainer adalah staf komunikasi.  \n  - **Pilihan D Salah:** Bertentangan langsung dengan premis 2 yang menyatakan tidak ada satupun auditor yang menguasai vektor 3D.  \n  - **Pilihan E Salah:** Bertentangan dengan gabungan premis 1 dan 3 yang membuktikan bahwa staf komunikasi yang menjadi desainer pasti menguasai vektor 3D.\n- **Penerapan Trik Cepat (15 Detik):** Perhatikan kombinasi kuantor: Universal Negatif (Premis 2: *Tidak ada satupun auditor yang masuk lingkaran Vektor*) + Partikular (Premis 3: *Sebagian staf Komunikasi masuk lingkaran Desainer/Vektor*). Hasilnya wajib Partikular Negatif: *Sebagian staf Komunikasi BUKAN auditor*. Pilihan yang tepat adalah pilihan **B**.\n\n---\n\n### Variasi 3: Jebakan Dua Premis Partikular & Validitas Himpunan Irisan (HOTS)\n\n> **Konteks Wacana Soal:**  \n> Sebuah laporan survei komunitas kebugaran memaparkan tiga fakta himpunan responden:  \n> (1) Sebagian peserta lari maraton perkotaan menerapkan pola makan vegetarian murni.  \n> (2) Sebagian individu yang menerapkan pola makan vegetarian murni rutin mengonsumsi suplemen vitamin D dosis tinggi.  \n> (3) Semua orang yang rutin mengonsumsi suplemen vitamin D dosis tinggi memiliki tingkat kepadatan massa tulang di atas rata-rata.  \n>  \n> Berdasarkan laporan tersebut, seorang pelatih kebugaran menarik kesimpulan resmi:  \n> *\"Sebagian peserta lari maraton perkotaan pasti memiliki tingkat kepadatan massa tulang di atas rata-rata.\"*  \n>  \n> **Pertanyaan UTBK:** *Manakah evaluasi berikut yang paling tepat mengenai validitas kesimpulan pelatih kebugaran tersebut berdasarkan kaidah logika diagram Venn?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Kesimpulan pelatih bernilai mutlak benar karena didukung oleh rantai silogisme lengkap dari premis 1 hingga premis 3.  \n> - **B.** Kesimpulan pelatih bernilai mutlak salah karena tidak ada pelari maraton yang menerapkan pola makan vegetarian murni.  \n> - **C.** Kesimpulan pelatih tidak dapat dipastikan kebenarannya (belum tentu benar) karena himpunan pelari maraton yang vegetarian belum tentu beririsan dengan himpunan vegetarian yang mengonsumsi suplemen vitamin D.  \n> - **D.** Kesimpulan pelatih pasti benar asalkan seluruh peserta lari maraton mengganti pola makan mereka menjadi vegetarian murni.  \n> - **E.** Kesimpulan pelatih seharusnya menyatakan bahwa semua peserta lari maraton memiliki kepadatan tulang di atas rata-rata.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kritis Diagram Venn:**  \n  - Misalkan $M$ = Peserta maraton, $V$ = Vegetarian murni, $D$ = Pengonsumsi suplemen vitamin D, dan $T$ = Kepadatan tulang di atas rata-rata.  \n  - Premis 1: $M \\cap V \\neq \\emptyset$ *(Sebagian $M$ adalah $V$)*.  \n  - Premis 2: $V \\cap D \\neq \\emptyset$ *(Sebagian $V$ adalah $D$)*.  \n  - Premis 3: $D \\subset T$ *(Semua $D$ adalah $T$)*.\n- **Identifikasi Sesat Pikir Penarikan Simpulan:**  \n  Hubungan antara himpunan $M$ dan $D$ dijembatani oleh himpunan $V$. Namun, kedua premis penghubungnya sama-sama berkuantor **partikular (\"Sebagian\")**:  \n  - Irisan pertama $(M \\cap V)$ adalah sekelompok orang vegetarian yang hobi maraton.  \n  - Irisan kedua $(V \\cap D)$ adalah sekelompok orang vegetarian yang minum vitamin D.  \n  Di dalam diagram Venn, lingkaran $M$ dan lingkaran $D$ sama-sama menembus lingkaran $V$, namun **tidak ada jaminan bahwa kedua irisan tersebut saling bertumpukan atau berada pada daerah potongan yang sama**. Bisa saja pelari maraton yang vegetarian berada di sisi kiri lingkaran $V$, sedangkan vegetarian peminum vitamin D berada di sisi kanan lingkaran $V$.  \n  Karena irisan bersama $(M \\cap D)$ belum tentu ada, maka simpulan bahwa sebagian pelari maraton pasti memiliki tulang padat ($T$) adalah **tidak sah / belum tentu benar**.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan A Salah:** Terjebak pada silogisme semu; rantai silogisme tidak dapat dibentuk dari dua premis partikular berturut-turut.  \n  - **Pilihan B Salah:** Mengklaim simpulan mutlak salah dengan menyangkal premis 1 yang sudah ditetapkan benar.  \n  - **Pilihan D Salah:** Mengubah premis faktual menjadi kondisi pengandaian yang tidak relevan.  \n  - **Pilihan E Salah:** Menarik kesimpulan universal yang semakin menyimpang dari kaidah logika.\n- **Penerapan Trik Cepat (15 Detik):** Segera amati kuantor premis 1 dan premis 2: keduanya diawali kata *\"Sebagian\"*. Ingat aturan emas: **Dua premis partikular (\"sebagian + sebagian\") tidak dapat menghasilkan kesimpulan pasti**. Pilihlah opsi yang menyatakan bahwa simpulan tersebut belum tentu benar karena irisan kedua kelompok belum tentu bertumpukan. Jawaban yang tepat adalah pilihan **C**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-02-04-venn",
+        "title": "Tiga Bentuk Baku Diagram Venn Logika Kuantor",
+        "caption": "Hubungan Himpunan: Universal (Subset), Partikular (Irisan), dan Saling Lepas (Disjoint)",
+        "svg_code": "<svg viewBox=\"0 0 640 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .venn-bg { fill: transparent; }\n      .venn-txt-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .venn-txt-sub { font-family: system-ui, sans-serif; font-size: 11px; fill: #64748b; text-anchor: middle; }\n      .venn-label { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 700; text-anchor: middle; }\n      :root.dark .venn-txt-title { fill: #f8fafc; }\n      :root.dark .venn-txt-sub { fill: #94a3b8; }\n    </style>\n  </defs>\n\n  <!-- Panel 1: Universal (A subset B) -->\n  <g transform=\"translate(10, 10)\">\n    <rect width=\"195\" height=\"200\" rx=\"16\" fill=\"rgba(79, 70, 229, 0.05)\" stroke=\"rgba(79, 70, 229, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"97\" y=\"28\" class=\"venn-txt-title\">Kuantor Universal</text>\n    <text x=\"97\" y=\"44\" class=\"venn-txt-sub\">\"Semua A adalah B\" (A ⊂ B)</text>\n    <!-- Outer circle B -->\n    <circle cx=\"97\" cy=\"115\" r=\"58\" fill=\"rgba(99, 102, 241, 0.18)\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"97\" y=\"78\" fill=\"#4f46e5\" class=\"venn-label\">B</text>\n    <!-- Inner circle A -->\n    <circle cx=\"97\" cy=\"125\" r=\"32\" fill=\"rgba(6, 182, 212, 0.35)\" stroke=\"#06b6d4\" stroke-width=\"2\"/>\n    <text x=\"97\" y=\"130\" fill=\"#0891b2\" class=\"venn-label\">A</text>\n    <text x=\"97\" y=\"190\" class=\"venn-txt-sub\">A sepenuhnya di dalam B</text>\n  </g>\n\n  <!-- Panel 2: Partikular (A intersect B) -->\n  <g transform=\"translate(222, 10)\">\n    <rect width=\"195\" height=\"200\" rx=\"16\" fill=\"rgba(16, 185, 129, 0.05)\" stroke=\"rgba(16, 185, 129, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"97\" y=\"28\" class=\"venn-txt-title\">Kuantor Partikular</text>\n    <text x=\"97\" y=\"44\" class=\"venn-txt-sub\">\"Sebagian A adalah B\" (A ∩ B ≠ ∅)</text>\n    <!-- Circle A -->\n    <circle cx=\"75\" cy=\"115\" r=\"46\" fill=\"rgba(6, 182, 212, 0.2)\" stroke=\"#06b6d4\" stroke-width=\"2\"/>\n    <text x=\"50\" y=\"118\" fill=\"#0891b2\" class=\"venn-label\">A</text>\n    <!-- Circle B -->\n    <circle cx=\"120\" cy=\"115\" r=\"46\" fill=\"rgba(99, 102, 241, 0.2)\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"145\" y=\"118\" fill=\"#4f46e5\" class=\"venn-label\">B</text>\n    <!-- Overlap badge -->\n    <ellipse cx=\"97\" cy=\"115\" rx=\"20\" ry=\"34\" fill=\"rgba(16, 185, 129, 0.45)\" stroke=\"#10b981\" stroke-width=\"1.5\"/>\n    <text x=\"97\" y=\"119\" fill=\"#047857\" font-weight=\"bold\" font-size=\"11\" text-anchor=\"middle\">Irisan</text>\n    <text x=\"97\" y=\"190\" class=\"venn-txt-sub\">Minimal 1 anggota beririsan</text>\n  </g>\n\n  <!-- Panel 3: Saling Lepas (Disjoint) -->\n  <g transform=\"translate(435, 10)\">\n    <rect width=\"195\" height=\"200\" rx=\"16\" fill=\"rgba(239, 68, 68, 0.05)\" stroke=\"rgba(239, 68, 68, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"97\" y=\"28\" class=\"venn-txt-title\">Universal Negatif</text>\n    <text x=\"97\" y=\"44\" class=\"venn-txt-sub\">\"Tidak ada A yang B\" (A ∩ B = ∅)</text>\n    <!-- Circle A -->\n    <circle cx=\"58\" cy=\"115\" r=\"38\" fill=\"rgba(6, 182, 212, 0.2)\" stroke=\"#06b6d4\" stroke-width=\"2\"/>\n    <text x=\"58\" y=\"119\" fill=\"#0891b2\" class=\"venn-label\">A</text>\n    <!-- Circle B -->\n    <circle cx=\"137\" cy=\"115\" r=\"38\" fill=\"rgba(244, 63, 94, 0.2)\" stroke=\"#f43f5e\" stroke-width=\"2\"/>\n    <text x=\"137\" y=\"119\" fill=\"#e11d48\" class=\"venn-label\">B</text>\n    <!-- Disjoint symbol -->\n    <line x1=\"88\" y1=\"115\" x2=\"106\" y2=\"115\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"3,3\"/>\n    <text x=\"97\" y=\"110\" fill=\"#ef4444\" font-weight=\"bold\" font-size=\"16\" text-anchor=\"middle\">≠</text>\n    <text x=\"97\" y=\"190\" class=\"venn-txt-sub\">Dua himpunan terpisah total</text>\n  </g>\n</svg>"
+      }
     ],
-    quick_execution_algorithm: [
-      'Identifikasi kuantor setiap premis (universal "semua" vs partikular "sebagian").',
-      'Gunakan aturan kuantor terlemah: jika ada premis "sebagian", eliminasi langsung opsi yang memuat "semua".',
-      'Jika kedua premis berkuantor "sebagian", pilih opsi "tidak dapat disimpulkan" atau "belum tentu benar".',
-      'Gambarkan sketsa cepat 3 lingkaran diagram Venn untuk memverifikasi apakah daerah irisan pasti bertumpukan atau saling lepas.',
+    "distractor_traps": [
+      "Menyimpulkan Kepastian dari Dua Premis Partikular: Mengira \"sebagian A adalah B\" dan \"sebagian B adalah C\" otomatis menghasilkan kesimpulan \"sebagian A adalah C\".",
+      "Overgeneralisasi Kuantor: Memilih opsi berkuantor universal (\"semua\") saat terdapat premis berkuantor partikular (\"sebagian\").",
+      "Spekulasi Daerah Komplemen: Menarik simpulan mengenai sifat objek di luar irisan diagram Venn yang tidak tercantum dalam premis teks."
     ],
+    "quick_execution_algorithm": [
+      "Identifikasi kuantor setiap premis (universal \"semua\" vs partikular \"sebagian\").",
+      "Gunakan aturan kuantor terlemah: jika ada premis \"sebagian\", eliminasi langsung opsi yang memuat \"semua\".",
+      "Jika kedua premis berkuantor \"sebagian\", pilih opsi \"tidak dapat disimpulkan\" atau \"belum tentu benar\".",
+      "Gambarkan sketsa cepat 3 lingkaran diagram Venn untuk memverifikasi apakah daerah irisan pasti bertumpukan atau saling lepas."
+    ]
   },
-  worked_examples: [
+  "worked_examples": [
     {
-      example_id: 'pu-02-04-ex1',
-      variation_name: 'Variasi 1: Penarikan Kesimpulan Kuantor Campuran (Level: Mudah)',
-      difficulty: 'easy',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Perhatikan dua premis mengenai komunitas akademik kampus berikut ini:\n\n**Premis 1:** Semua anggota klub astronomi observasional menguasai pengoperasian teleskop optik canggih.\n**Premis 2:** Sebagian mahasiswa program studi ilmu fisika adalah anggota klub astronomi observasional.',
-      question_markdown:
-        'Simpulan yang **paling tepat dan sah secara logika deduktif** berdasarkan kedua premis tersebut adalah...',
-      options: [
+      "example_id": "pu-02-04-ex1",
+      "variation_name": "Variasi 1: Penarikan Kesimpulan Kuantor Campuran (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua premis mengenai komunitas akademik kampus berikut ini:\n\n**Premis 1:** Semua anggota klub astronomi observasional menguasai pengoperasian teleskop optik canggih.\n**Premis 2:** Sebagian mahasiswa program studi ilmu fisika adalah anggota klub astronomi observasional.",
+      "question_markdown": "Simpulan yang **paling tepat dan sah secara logika deduktif** berdasarkan kedua premis tersebut adalah...",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Semua mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.',
+          "key": "A",
+          "text_markdown": "Semua mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.',
+          "key": "B",
+          "text_markdown": "Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Semua orang yang menguasai pengoperasian teleskop optik canggih adalah mahasiswa program studi ilmu fisika.',
+          "key": "C",
+          "text_markdown": "Semua orang yang menguasai pengoperasian teleskop optik canggih adalah mahasiswa program studi ilmu fisika."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Sebagian mahasiswa program studi ilmu fisika bukan merupakan anggota klub astronomi observasional dan pasti tidak dapat mengoperasikan teleskop optik canggih.',
+          "key": "D",
+          "text_markdown": "Sebagian mahasiswa program studi ilmu fisika bukan merupakan anggota klub astronomi observasional dan pasti tidak dapat mengoperasikan teleskop optik canggih."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Tidak ada mahasiswa program studi ilmu fisika yang tidak menguasai pengoperasian teleskop optik canggih.',
-        },
+          "key": "E",
+          "text_markdown": "Tidak ada mahasiswa program studi ilmu fisika yang tidak menguasai pengoperasian teleskop optik canggih."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Terapkan aturan kuantor terlemah: Premis 1 berkuantor "Semua", Premis 2 berkuantor "Sebagian". Kesimpulan WAJIB berkuantor "Sebagian". Coret opsi A, C, dan E yang berkuantor universal!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Notasi Himpunan:**
-  - $A$: Anggota klub astronomi
-  - $T$: Menguasai teleskop optik
-  - $F$: Mahasiswa ilmu fisika
-- **Struktur Premis:**
-  - Premis 1: $A \\subset T$ (semua $A$ adalah bagian dari $T$).
-  - Premis 2: $F \\cap A \\neq \\emptyset$ (ada irisan antara $F$ dan $A$).
-- **Deduksi Himpunan:**
-  Karena seluruh anggota himpunan $A$ berada di dalam $T$, maka irisan $F$ dengan $A$ secara otomatis juga berada di dalam $T$ ($F \\cap T \\neq \\emptyset$).
-- **Konklusi:** Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Aturan Kuantor Campuran):**
-
-1. Premis 1: *"Semua..."*, Premis 2: *"Sebagian..."*.
-2. Kombinasi *"Semua"* + *"Sebagian"* selalu menghasilkan kesimpulan berkuantor *"Sebagian"*.
-3. Langsung coret opsi **A** dan **E** (karena memaksakan "semua"), coret opsi **C** (karena membalik subjek secara universal).
-4. Pilihan yang tepat adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Menggunakan kuantor universal "Semua" yang bertentangan dengan premis partikular.
-- **Pilihan C Salah:** Membalik hubungan inklusi himpunan; penguasa teleskop mencakup kelompok yang lebih luas dari sekadar mahasiswa fisika.
-- **Pilihan D Salah:** Memberikan vonis spekulatif mutlak pada daerah di luar irisan premis.
-- **Pilihan E Salah:** Kalimat ini secara logika ekuivalen dengan kata "Semua", sehingga salah.`,
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Terapkan aturan kuantor terlemah: Premis 1 berkuantor \"Semua\", Premis 2 berkuantor \"Sebagian\". Kesimpulan WAJIB berkuantor \"Sebagian\". Coret opsi A, C, dan E yang berkuantor universal!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Notasi Himpunan:**\n  - $A$: Anggota klub astronomi\n  - $T$: Menguasai teleskop optik\n  - $F$: Mahasiswa ilmu fisika\n- **Struktur Premis:**\n  - Premis 1: $A \\subset T$ (semua $A$ adalah bagian dari $T$).\n  - Premis 2: $F \\cap A \\neq \\emptyset$ (ada irisan antara $F$ dan $A$).\n- **Deduksi Himpunan:**\n  Karena seluruh anggota himpunan $A$ berada di dalam $T$, maka irisan $F$ dengan $A$ secara otomatis juga berada di dalam $T$ ($F \\cap T \\neq \\emptyset$).\n- **Konklusi:** Sebagian mahasiswa program studi ilmu fisika menguasai pengoperasian teleskop optik canggih.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Aturan Kuantor Campuran):**\n\n1. Premis 1: *\"Semua...\"*, Premis 2: *\"Sebagian...\"*.\n2. Kombinasi *\"Semua\"* + *\"Sebagian\"* selalu menghasilkan kesimpulan berkuantor *\"Sebagian\"*.\n3. Langsung coret opsi **A** dan **E** (karena memaksakan \"semua\"), coret opsi **C** (karena membalik subjek secara universal).\n4. Pilihan yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggunakan kuantor universal \"Semua\" yang bertentangan dengan premis partikular.\n- **Pilihan C Salah:** Membalik hubungan inklusi himpunan; penguasa teleskop mencakup kelompok yang lebih luas dari sekadar mahasiswa fisika.\n- **Pilihan D Salah:** Memberikan vonis spekulatif mutlak pada daerah di luar irisan premis.\n- **Pilihan E Salah:** Kalimat ini secara logika ekuivalen dengan kata \"Semua\", sehingga salah."
     },
     {
-      example_id: 'pu-02-04-ex2',
-      variation_name: 'Variasi 2: Evaluasi Hubungan Tiga Entitas via Diagram Venn (Level: Sedang)',
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Perhatikan tiga ketentuan kepegawaian dalam sebuah konsultan kreatif berikut:\n\n(1) Semua tenaga ahli desainer grafis menguasai perangkat lunak ilustrasi vektor 3D.\n(2) Tidak ada satupun staf auditor keuangan internal yang menguasai perangkat lunak ilustrasi vektor 3D.\n(3) Sebagian staf divisi komunikasi publik adalah tenaga ahli desainer grafis.',
-      question_markdown:
-        'Berdasarkan ketiga premis tersebut dan representasi diagram Venn, manakah simpulan yang **PASTI BENAR**?',
-      options: [
+      "example_id": "pu-02-04-ex2",
+      "variation_name": "Variasi 2: Evaluasi Hubungan Tiga Entitas via Diagram Venn (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan tiga ketentuan kepegawaian dalam sebuah konsultan kreatif berikut:\n\n(1) Semua tenaga ahli desainer grafis menguasai perangkat lunak ilustrasi vektor 3D.\n(2) Tidak ada satupun staf auditor keuangan internal yang menguasai perangkat lunak ilustrasi vektor 3D.\n(3) Sebagian staf divisi komunikasi publik adalah tenaga ahli desainer grafis.",
+      "question_markdown": "Berdasarkan ketiga premis tersebut dan representasi diagram Venn, manakah simpulan yang **PASTI BENAR**?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Semua staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.',
+          "key": "A",
+          "text_markdown": "Semua staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.',
+          "key": "B",
+          "text_markdown": "Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Semua tenaga ahli desainer grafis adalah staf divisi komunikasi publik.',
+          "key": "C",
+          "text_markdown": "Semua tenaga ahli desainer grafis adalah staf divisi komunikasi publik."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Sebagian staf auditor keuangan internal menguasai perangkat lunak ilustrasi vektor 3D.',
+          "key": "D",
+          "text_markdown": "Sebagian staf auditor keuangan internal menguasai perangkat lunak ilustrasi vektor 3D."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Tidak ada staf divisi komunikasi publik yang menguasai perangkat lunak ilustrasi vektor 3D.',
-        },
+          "key": "E",
+          "text_markdown": "Tidak ada staf divisi komunikasi publik yang menguasai perangkat lunak ilustrasi vektor 3D."
+        }
       ],
-      correct_answer: 'B',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Buat sketsa diagram Venn: Lingkaran Desainer ada di dalam Vektor 3D. Lingkaran Auditor sama sekali terpisah dari Vektor 3D (saling lepas). Karena sebagian staf Komunikasi adalah Desainer, maka kelompok staf Komunikasi tersebut PASTI bukan Auditor!',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Pemodelan Himpunan:**
-  - $D$: Desainer grafis
-  - $V$: Penguasa software vektor 3D
-  - $K$: Auditor keuangan
-  - $P$: Staf komunikasi publik
-- **Relasi Antarhimpunan:**
-  1. $D \\subset V$
-  2. $K \\cap V = \\emptyset \\implies K \\cap D = \\emptyset$ (Auditor terpisah mutlak dari Desainer).
-  3. $P \\cap D \\neq \\emptyset$ (Sebagian Komunikasi adalah Desainer).
-- **Deduksi Logis:**
-  Ambil anggota $x \\in (P \\cap D)$. Karena $x \\in D$ dan $D \\cap K = \\emptyset$, maka $x \\notin K$.
-  Artinya, terdapat elemen di dalam $P$ yang bukan anggota $K$.
-- **Konklusi:** Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.
-
-**Jawaban: B**`,
-      quick_trick_markdown: `**Cara Cepat (Kombinasi Kuantor Partikular & Negatif):**
-
-1. Premis memuat: *"Tidak ada satupun auditor yang masuk lingkaran Vektor"* dan *"Sebagian staf Komunikasi ada di dalam lingkaran Desainer/Vektor"*.
-2. Kelompok staf Komunikasi yang ada di dalam Desainer tersebut mustahil menjadi auditor.
-3. Simpulan sah wajib berformat: *"Sebagian staf Komunikasi BUKAN auditor"*.
-4. Jawaban yang tepat adalah pilihan **B**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Terlalu luas ("Semua"), padahal anggota komunikasi yang bukan desainer bisa saja memiliki peran lain.
-- **Pilihan C Salah:** Mengacaukan arah partikular; tidak semua desainer berada di divisi komunikasi publik.
-- **Pilihan D Salah:** Bertentangan langsung dengan premis 2 yang menyatakan auditor terpisah dari penguasa vektor.
-- **Pilihan E Salah:** Bertentangan dengan premis 1 dan 3 yang membuktikan ada staf komunikasi yang menguasai vektor.`,
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Buat sketsa diagram Venn: Lingkaran Desainer ada di dalam Vektor 3D. Lingkaran Auditor sama sekali terpisah dari Vektor 3D (saling lepas). Karena sebagian staf Komunikasi adalah Desainer, maka kelompok staf Komunikasi tersebut PASTI bukan Auditor!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Pemodelan Himpunan:**\n  - $D$: Desainer grafis\n  - $V$: Penguasa software vektor 3D\n  - $K$: Auditor keuangan\n  - $P$: Staf komunikasi publik\n- **Relasi Antarhimpunan:**\n  1. $D \\subset V$\n  2. $K \\cap V = \\emptyset \\implies K \\cap D = \\emptyset$ (Auditor terpisah mutlak dari Desainer).\n  3. $P \\cap D \\neq \\emptyset$ (Sebagian Komunikasi adalah Desainer).\n- **Deduksi Logis:**\n  Ambil anggota $x \\in (P \\cap D)$. Karena $x \\in D$ dan $D \\cap K = \\emptyset$, maka $x \\notin K$.\n  Artinya, terdapat elemen di dalam $P$ yang bukan anggota $K$.\n- **Konklusi:** Sebagian staf divisi komunikasi publik bukan merupakan staf auditor keuangan internal.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Kombinasi Kuantor Partikular & Negatif):**\n\n1. Premis memuat: *\"Tidak ada satupun auditor yang masuk lingkaran Vektor\"* dan *\"Sebagian staf Komunikasi ada di dalam lingkaran Desainer/Vektor\"*.\n2. Kelompok staf Komunikasi yang ada di dalam Desainer tersebut mustahil menjadi auditor.\n3. Simpulan sah wajib berformat: *\"Sebagian staf Komunikasi BUKAN auditor\"*.\n4. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terlalu luas (\"Semua\"), padahal anggota komunikasi yang bukan desainer bisa saja memiliki peran lain.\n- **Pilihan C Salah:** Mengacaukan arah partikular; tidak semua desainer berada di divisi komunikasi publik.\n- **Pilihan D Salah:** Bertentangan langsung dengan premis 2 yang menyatakan auditor terpisah dari penguasa vektor.\n- **Pilihan E Salah:** Bertentangan dengan premis 1 dan 3 yang membuktikan ada staf komunikasi yang menguasai vektor."
     },
     {
-      example_id: 'pu-02-04-ex3',
-      variation_name: 'Variasi 3: Jebakan Dua Premis Partikular / Validitas Irisan (Level: Sulit)',
-      difficulty: 'hard',
-      question_type: 'standard_mc',
-      context_markdown:
-        'Sebuah laporan survei komunitas kebugaran memaparkan tiga fakta himpunan responden:\n\n(1) Sebagian peserta lari maraton perkotaan menerapkan pola makan vegetarian murni.\n(2) Sebagian individu yang menerapkan pola makan vegetarian murni rutin mengonsumsi suplemen vitamin D dosis tinggi.\n(3) Semua orang yang rutin mengonsumsi suplemen vitamin D dosis tinggi memiliki tingkat kepadatan massa tulang di atas rata-rata.\n\nBerdasarkan laporan tersebut, seorang pelatih kebugaran menarik kesimpulan resmi:\n*"Sebagian peserta lari maraton perkotaan pasti memiliki tingkat kepadatan massa tulang di atas rata-rata."*',
-      question_markdown:
-        'Manakah evaluasi berikut yang **paling tepat** mengenai validitas kesimpulan pelatih kebugaran tersebut berdasarkan kaidah logika diagram Venn?',
-      options: [
+      "example_id": "pu-02-04-ex3",
+      "variation_name": "Variasi 3: Jebakan Dua Premis Partikular / Validitas Irisan (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah laporan survei komunitas kebugaran memaparkan tiga fakta himpunan responden:\n\n(1) Sebagian peserta lari maraton perkotaan menerapkan pola makan vegetarian murni.\n(2) Sebagian individu yang menerapkan pola makan vegetarian murni rutin mengonsumsi suplemen vitamin D dosis tinggi.\n(3) Semua orang yang rutin mengonsumsi suplemen vitamin D dosis tinggi memiliki tingkat kepadatan massa tulang di atas rata-rata.\n\nBerdasarkan laporan tersebut, seorang pelatih kebugaran menarik kesimpulan resmi:\n*\"Sebagian peserta lari maraton perkotaan pasti memiliki tingkat kepadatan massa tulang di atas rata-rata.\"*",
+      "question_markdown": "Manakah evaluasi berikut yang **paling tepat** mengenai validitas kesimpulan pelatih kebugaran tersebut berdasarkan kaidah logika diagram Venn?",
+      "options": [
         {
-          key: 'A',
-          text_markdown:
-            'Kesimpulan pelatih bernilai mutlak benar karena didukung oleh rantai silogisme lengkap dari premis 1 hingga premis 3.',
+          "key": "A",
+          "text_markdown": "Kesimpulan pelatih bernilai mutlak benar karena didukung oleh rantai silogisme lengkap dari premis 1 hingga premis 3."
         },
         {
-          key: 'B',
-          text_markdown:
-            'Kesimpulan pelatih bernilai mutlak salah karena tidak ada pelari maraton yang menerapkan pola makan vegetarian murni.',
+          "key": "B",
+          "text_markdown": "Kesimpulan pelatih bernilai mutlak salah karena tidak ada pelari maraton yang menerapkan pola makan vegetarian murni."
         },
         {
-          key: 'C',
-          text_markdown:
-            'Kesimpulan pelatih tidak dapat dipastikan kebenarannya (belum tentu benar) karena himpunan pelari maraton yang vegetarian belum tentu beririsan dengan himpunan vegetarian yang mengonsumsi suplemen vitamin D.',
+          "key": "C",
+          "text_markdown": "Kesimpulan pelatih tidak dapat dipastikan kebenarannya (belum tentu benar) karena himpunan pelari maraton yang vegetarian belum tentu beririsan dengan himpunan vegetarian yang mengonsumsi suplemen vitamin D."
         },
         {
-          key: 'D',
-          text_markdown:
-            'Kesimpulan pelatih pasti benar asalkan seluruh peserta lari maraton mengganti pola makan mereka menjadi vegetarian murni.',
+          "key": "D",
+          "text_markdown": "Kesimpulan pelatih pasti benar asalkan seluruh peserta lari maraton mengganti pola makan mereka menjadi vegetarian murni."
         },
         {
-          key: 'E',
-          text_markdown:
-            'Kesimpulan pelatih seharusnya menyatakan bahwa semua peserta lari maraton memiliki kepadatan tulang di atas rata-rata.',
-        },
+          "key": "E",
+          "text_markdown": "Kesimpulan pelatih seharusnya menyatakan bahwa semua peserta lari maraton memiliki kepadatan tulang di atas rata-rata."
+        }
       ],
-      correct_answer: 'C',
-      hint_markdown:
-        '💡 **Petunjuk Soal:** Waspadai jebakan dua premis partikular ("sebagian + sebagian")! Pelari maraton beririsan dengan vegetarian. Vegetarian beririsan dengan peminum vitamin D. Apakah kedua irisan tersebut pasti menempati orang yang sama? Belum tentu! Irisan keduanya bisa saling lepas.',
-      conceptual_solution_markdown: `**Cara Konsep Formal:**
-
-- **Analisis Struktur Kuantor:**
-  - Premis 1: Sebagian $M$ adalah $V$ ($M \\cap V \\neq \\emptyset$).
-  - Premis 2: Sebagian $V$ adalah $D$ ($V \\cap D \\neq \\emptyset$).
-  - Premis 3: Semua $D$ adalah $T$ ($D \\subset T$).
-- **Evaluasi Cacat Logika:**
-  - Premis 1 dan Premis 2 sama-sama berkuantor **partikular**.
-  - Daerah $(M \\cap V)$ dan daerah $(V \\cap D)$ sama-sama berada di dalam lingkaran $V$, namun **tidak ada premis yang menyatakan bahwa kedua daerah irisan tersebut bertumpukan** ($(M \\cap V) \\cap (V \\cap D) = \\emptyset$ mungkin terjadi).
-  - Akibatnya, hubungan antara peserta maraton ($M$) dengan peminum vitamin D ($D$) atau pemilik tulang padat ($T$) berada pada taraf **belum tentu benar**.
-- **Konklusi:** Kesimpulan pelatih tidak valid secara deduktif karena mengasumsikan adanya irisan yang belum tentu ada.
-
-**Jawaban: C**`,
-      quick_trick_markdown: `**Cara Cepat (Hukum Kegagalan Dua Premis Partikular):**
-
-1. Premis 1 memuat *"Sebagian"*, Premis 2 memuat *"Sebagian"*.
-2. Dua premis partikular tidak pernah bisa disambungkan secara deduktif untuk membuktikan kepastian.
-3. Langsung cari opsi yang menyatakan: *"Tidak dapat dipastikan kebenarannya / belum tentu benar karena irisan belum tentu bertemu"*.
-4. Jawaban yang tepat adalah pilihan **C**.`,
-      why_others_are_wrong_markdown: `- **Pilihan A Salah:** Terkecoh menganggap rantai valid, padahal menghubungkan dua premis partikular adalah cacat logika deduktif.
-- **Pilihan B Salah:** Mengklaim mutlak salah dengan menyangkal kebenaran premis 1.
-- **Pilihan D Salah:** Menghadirkan asumsi pengandaian di luar fakta yang diuji.
-- **Pilihan E Salah:** Mengubah simpulan menjadi universal yang semakin menyalahi kaidah himpunan.`,
-    },
-  ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Waspadai jebakan dua premis partikular (\"sebagian + sebagian\")! Pelari maraton beririsan dengan vegetarian. Vegetarian beririsan dengan peminum vitamin D. Apakah kedua irisan tersebut pasti menempati orang yang sama? Belum tentu! Irisan keduanya bisa saling lepas.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Struktur Kuantor:**\n  - Premis 1: Sebagian $M$ adalah $V$ ($M \\cap V \\neq \\emptyset$).\n  - Premis 2: Sebagian $V$ adalah $D$ ($V \\cap D \\neq \\emptyset$).\n  - Premis 3: Semua $D$ adalah $T$ ($D \\subset T$).\n- **Evaluasi Cacat Logika:**\n  - Premis 1 dan Premis 2 sama-sama berkuantor **partikular**.\n  - Daerah $(M \\cap V)$ dan daerah $(V \\cap D)$ sama-sama berada di dalam lingkaran $V$, namun **tidak ada premis yang menyatakan bahwa kedua daerah irisan tersebut bertumpukan** ($(M \\cap V) \\cap (V \\cap D) = \\emptyset$ mungkin terjadi).\n  - Akibatnya, hubungan antara peserta maraton ($M$) dengan peminum vitamin D ($D$) atau pemilik tulang padat ($T$) berada pada taraf **belum tentu benar**.\n- **Konklusi:** Kesimpulan pelatih tidak valid secara deduktif karena mengasumsikan adanya irisan yang belum tentu ada.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Hukum Kegagalan Dua Premis Partikular):**\n\n1. Premis 1 memuat *\"Sebagian\"*, Premis 2 memuat *\"Sebagian\"*.\n2. Dua premis partikular tidak pernah bisa disambungkan secara deduktif untuk membuktikan kepastian.\n3. Langsung cari opsi yang menyatakan: *\"Tidak dapat dipastikan kebenarannya / belum tentu benar karena irisan belum tentu bertemu\"*.\n4. Jawaban yang tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terkecoh menganggap rantai valid, padahal menghubungkan dua premis partikular adalah cacat logika deduktif.\n- **Pilihan B Salah:** Mengklaim mutlak salah dengan menyangkal kebenaran premis 1.\n- **Pilihan D Salah:** Menghadirkan asumsi pengandaian di luar fakta yang diuji.\n- **Pilihan E Salah:** Mengubah simpulan menjadi universal yang semakin menyalahi kaidah himpunan."
+    }
+  ]
 };
 
 // Write files to public/content/utbk/pu and content/utbk/pu
@@ -2728,13 +1068,20 @@ const MATERIAL_PU_02_05 = {
       "Penataan Posisi dan Tempat Duduk Bersyarat",
       "Kombinasi Tim dan Penugasan Bersyarat (HOTS)"
     ],
-    "requires_svg": false,
+    "requires_svg": true,
     "updated_at": "2026-11-08"
   },
   "content": {
     "tactical_overview": "Penalaran analitik menguji kemampuan Anda dalam mengolah sejumlah petunjuk fakta dan batasan bersyarat untuk menentukan urutan linier, konfigurasi posisi spasial, atau susunan kombinasi kelompok. Kunci utama dalam menaklukkan soal tipe ini di UTBK adalah jangan pernah mencoba membayangkan seluruh kemungkinan di kepala. Selalu visualisasikan informasi ke dalam diagram garis urutan, tabel slot posisi, atau daftar eliminasi syarat. Mulailah dari informasi yang memiliki posisi pasti (jangkar), gabungkan blok yang berpasangan, lalu gunakan metode eliminasi agresif terhadap opsi jawaban begitu sebuah aturan dilanggar.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPenalaran analitik adalah uji deduksi terstruktur di mana Anda disajikan sekumpulan elemen (orang, objek, nilai, jadwal hari, atau posisi tempat duduk) beserta aturan pembatas (*constraints*). Tugas Anda adalah menyusun relasi yang konsisten secara logika tanpa melanggar satu pun batasan yang diberikan.\n\nTiga tipe masalah utama penalaran analitik yang rutin diujikan di UTBK SNBT adalah:\n\n1. **Relasi Urutan Linier (*Ordering / Sequencing*)**  \n   Menyusun elemen berdasarkan urutan peringkat nilai, ketinggian, waktu hari pelaksanaan, atau antrean.  \n   - Gunakan simbol pertidaksamaan baku: $A > B$ (artinya $A$ lebih tinggi daripada $B$, atau $A$ tampil mendahului $B$).  \n   - **Perbedaan Krusial Frasa Mutlak vs Relatif:**  \n     - Kalimat *\"A tampil tepat sebelum B\"* berarti mereka membentuk blok kaku yang tidak dapat dipisahkan: $[A, B]$.  \n     - Kalimat *\"A tampil sebelum B\"* berarti $A$ berada di suatu posisi mendahului $B$ ($A < B$), yang memungkinkan adanya jeda satu atau beberapa orang di antara keduanya.\n\n2. **Penataan Posisi Spasial dan Tempat Duduk (*Spatial Arrangement*)**  \n   Menata letak duduk dalam deret kursi sejajar, saling berhadapan, atau melingkari meja bundar.  \n   - **Pada Deret Lurus Sejajar:** Bedakan posisi absolut (misal: \"kursi nomor 4 dari kiri\") dengan posisi relatif (misal: \"di sebelah kanan D\").  \n   - **Pada Meja Bundar:** Kursi yang saling \"berhadapan langsung\" pada $N$ kursi genap selalu memiliki selisih $N/2$ posisi (misal: pada 6 kursi, kursi 1 berhadapan dengan kursi 4). Posisi kanan dan kiri ditentukan dengan membayangkan diri Anda duduk menghadap ke pusat meja.\n\n3. **Kombinasi Kelompok dan Penugasan Bersyarat (*Grouping & Selection*)**  \n   Memilih sejumlah anggota dari kelompok kandidat yang lebih besar dengan memenuhi aturan kompatibilitas:  \n   - **Syarat Implikasi Satu Arah ($P \\to Q$):** *\"Jika P dipilih, maka Q wajib dipilih\"*. Ingat kaidah kontraposisi: jika $Q$ tidak dipilih, maka $P$ otomatis tidak boleh dipilih ($sim Q \\to \\sim P$). Namun, jika $Q$ dipilih, $P$ tidak wajib ikut (bisa ikut atau tidak).  \n   - **Syarat Saling Menolak / Tidak Kompatibel:** *\"K dan L tidak dapat bekerja sama\"* artinya dalam tim tidak boleh ada $K$ dan $L$ sekaligus (maksimal salah satu yang masuk, atau keduanya sama-sama tidak dipilih).  \n   - **Syarat Dwiganda / Ikatan Bersama ($M \\leftrightarrow N$):** *\"M dan N harus dipilih bersama atau keduanya tidak dipilih sama sekali\"*.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK sengaja merancang narasi cerita yang padat informasi dengan menyelipkan beberapa jebakan penalaran:\n\n1. **Jebakan Menyamakan Frasa \"Sebelum\" dengan \"Tepat Sebelum\"**  \n   Banyak siswa keliru memperlakukan kalimat *\"Citra presentasi sebelum Deni\"* seolah-olah Citra harus presentasi tepat satu hari sebelum Deni. Padahal, jika tanpa kata *\"tepat\"*, Citra bisa saja presentasi dua atau tiga hari sebelum Deni dengan diselingi orang lain.\n2. **Jebakan Asumsi Tambahan Tanpa Dasar Pembuktian**  \n   Ketika teks menyatakan *\"Andi memiliki skor lebih tinggi daripada Bima\"*, jangan pernah berasumsi bahwa Andi adalah peraih skor tertinggi dari seluruh peserta, atau berasumsi Citra pasti lebih rendah dari Bima jika tidak ada data yang menghubungkan Citra dengan Bima. Patuhilah hanya relasi yang secara eksplisit tertulis atau terbukti melalui deduksi.\n3. **Jebakan Pembalikan Arah Kanan-Kiri pada Posisi Berhadapan**  \n   Pada konfigurasi meja berhadapan atau meja bundar, siswa kerap terkecoh menentukan arah kanan dan kiri karena melihat dari sudut pandang pembaca soal di atas kertas, bukan dari sudut pandang orang yang sedang duduk di kursi tersebut.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nSaat Anda menghadapi soal penalaran analitik dengan batas waktu yang ketat di UTBK, jalankan urutan langkah taktis berikut:\n\n1. **Buat Kerangka Slot Kosong Seketika**  \n   Gambarkan 5 atau 6 garis slot kosong untuk urutan waktu, peringkat, atau nomor kursi (misal: slot 1, 2, 3, 4, 5, 6). Jangan biarkan otak memproses kombinasi secara abstrak tanpa coretan visual.\n2. **Pasang Elemen Jangkar (Fakta Pasti Tanpa Syarat)**  \n   Cari petunjuk yang langsung mengunci posisi suatu elemen tanpa pengandaian (contoh: *\"Fani presentasi pada hari pertama (Senin)\"* atau *\"D duduk di kursi nomor 4\"*). Tempatkan elemen ini terlebih dahulu di kerangka slot Anda.\n3. **Satukan Elemen Menjadi Blok Gabungan (*Clumping / Block Rule*)**  \n   Jika ada aturan *\"B duduk tepat di sebelah kiri C\"*, satukan mereka menjadi satu blok kaku $[B, C]$. Langkah ini secara dramatis memangkas kemungkinan slot kosong yang tersedia.\n4. **Gunakan Teknik Eliminasi Opsi Agresif (Uji Syarat per Syarat)**  \n   Untuk pertanyaan mengenai *\"kemungkinan urutan yang benar\"*, Anda tidak perlu menyusun urutan dari nol! Cukup ambil satu syarat dari teks soal, lalu langsung coret opsi pilihan ganda yang melanggar syarat tersebut. Lanjutkan ke syarat berikutnya, dan pilihan yang benar biasanya akan langsung tersisa dalam waktu kurang dari 20 detik.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Penalaran analitik menuntut penataan urutan, posisi spasial, atau pembagian kelompok yang sepenuhnya taat pada sekumpulan aturan pembatas logis.\n- **Prinsip Penataan:** Utamakan meletakkan petunjuk jangkar (fakta pasti), bundel relasi berdampingan menjadi blok kaku $[A, B]$, dan perhatikan arah implikasi bersyarat ($P \\to Q$).\n- **Disiplin Logika:** Hindari membuat asumsi pribadi di luar teks wacana dan bedakan secara tegas antara urutan relatif ($A < B$) dengan urutan langsung berdampingan ($A$ tepat sebelum $B$).\n- **Strategi Eksekusi:** Gunakan kerangka slot visual dan lakukan eliminasi langsung pada pilihan ganda berdasarkan pelanggaran aturan tanpa harus memecahkan seluruh teka-teki secara manual.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Penalaran Analitik yang rutin keluar pada naskah UTBK SNBT, lengkap dengan konteks wacana soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Urutan Linier Bertingkat dan Penjadwalan Waktu\n\n> **Konteks Wacana Soal:**  \n> Enam siswa (Andi, Bima, Citra, Deni, Eka, dan Fani) dijadwalkan melakukan presentasi proyek penelitian dari hari Senin hingga Sabtu, satu orang setiap hari. Jadwal pelaksanaan diatur dengan ketentuan sebagai berikut:  \n> 1. Fani presentasi pada hari pertama (Senin).  \n> 2. Citra presentasi tepat satu hari sebelum Deni.  \n> 3. Andi presentasi pada hari Rabu atau Jumat.  \n> 4. Bima presentasi setelah Deni, namun harus sebelum Eka.  \n>  \n> **Pertanyaan UTBK:** *Jika Andi diputuskan presentasi pada hari Jumat, maka siswa yang presentasi pada hari Kamis dan Sabtu berturut-turut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Bima dan Citra  \n> - **B.** Deni dan Eka  \n> - **C.** Bima dan Eka  \n> - **D.** Citra dan Eka  \n> - **E.** Deni dan Bima\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Penataan Slot Waktu:**\n  - Hari yang tersedia: Senin, Selasa, Rabu, Kamis, Jumat, Sabtu (6 slot).\n  - Berdasarkan Ketentuan 1: **Senin = Fani**. Slot tersisa: Selasa, Rabu, Kamis, Jumat, Sabtu.\n  - Berdasarkan kondisi soal: **Jumat = Andi**. Slot tersisa yang belum terisi: Selasa, Rabu, Kamis, Sabtu.\n  - Berdasarkan Ketentuan 2: Citra presentasi tepat satu hari sebelum Deni, sehingga mereka harus mengisi dua hari yang berurutan langsung sebagai blok kaku $[Citra, Deni]$. Dari slot yang tersisa (Selasa, Rabu, Kamis, Sabtu), dua hari yang berurutan langsung hanyalah Selasa dan Rabu (karena hari Kamis dan Sabtu terpisah oleh hari Jumat yang diisi Andi). Dengan demikian: **Selasa = Citra** dan **Rabu = Deni**.\n  - Slot yang tersisa tinggal dua hari, yaitu Kamis dan Sabtu, sedangkan siswa yang belum terjadwal adalah Bima dan Eka.\n  - Berdasarkan Ketentuan 4: Bima presentasi setelah Deni dan sebelum Eka ($Deni < Bima < Eka$). Karena Deni di hari Rabu, maka Bima harus menempati hari Kamis dan Eka menempati hari Sabtu: **Kamis = Bima** dan **Sabtu = Eka**.\n  - Urutan lengkap jadwal: Senin (Fani), Selasa (Citra), Rabu (Deni), Kamis (Bima), Jumat (Andi), Sabtu (Eka).\n  - Siswa yang presentasi pada hari Kamis dan Sabtu berturut-turut adalah **Bima dan Eka**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menyebutkan Citra pada hari Sabtu, padahal Citra wajib presentasi pada hari Selasa sebelum Deni.\n  - **Pilihan B Salah:** Menempatkan Deni pada hari Kamis, padahal Deni wajib presentasi pada hari Rabu tepat setelah Citra.\n  - **Pilihan D Salah:** Menempatkan Citra pada hari Kamis, padahal blok Citra dan Deni sudah terkunci di hari Selasa dan Rabu.\n  - **Pilihan E Salah:** Menempatkan Bima pada hari Sabtu, padahal Bima harus presentasi sebelum Eka sehingga Bima menempati hari Kamis.\n- **Penerapan Trik Cepat (15 Detik):** Kunci posisi Fani di Senin dan Andi di Jumat. Karena Citra dan Deni membutuhkan dua hari berurutan, mereka harus menempati Selasa dan Rabu. Sisa hari tinggal Kamis dan Sabtu untuk Bima dan Eka. Karena Bima harus sebelum Eka, maka Kamis pasti Bima dan Sabtu pasti Eka. Jawaban langsung tertuju pada pilihan **C**.\n\n---\n\n### Variasi 2: Penataan Posisi dan Tempat Duduk Bersyarat\n\n> **Konteks Wacana Soal:**  \n> Enam orang pembicara seminar (A, B, C, D, E, dan F) duduk pada satu deret kursi panggung bernomor 1 sampai 6 secara berurutan dari kiri ke kanan. Penempatan kursi diatur dengan ketentuan sebagai berikut:  \n> 1. D duduk di kursi nomor 4.  \n> 2. B duduk tepat di sebelah kiri C.  \n> 3. A tidak boleh duduk di kursi nomor 1 maupun nomor 6.  \n> 4. F duduk di sebelah kanan D, dengan setidaknya satu orang di antara mereka.  \n> 5. E duduk di sebelah kiri B.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan informasi tersebut, pernyataan berikut yang PASTI BENAR mengenai susunan tempat duduk tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** A duduk tepat di antara D dan F  \n> - **B.** E duduk di kursi nomor 2  \n> - **C.** C duduk tepat di sebelah kiri D  \n> - **D.** B duduk di sebelah kanan D  \n> - **E.** F duduk bersebelahan langsung dengan D\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Penataan Kursi Panggung (Kursi 1 sampai 6):**\n  - Kerangka kursi: $[1] [2] [3] [4] [5] [6]$.\n  - Ketentuan 1: **Kursi 4 = D**. Susunan saat ini: $[1] [2] [3] [D] [5] [6]$.\n  - Ketentuan 4: F duduk di sebelah kanan D, dengan setidaknya satu orang duduk di antara D dan F. Di sebelah kanan kursi 4 hanya ada kursi 5 dan kursi 6. Agar terdapat minimal satu orang di antara D dan F, maka kursi 5 harus menjadi pemisah dan **Kursi 6 = F**. Susunan saat ini: $[1] [2] [3] [D] [5] [F]$.\n  - Kursi yang masih kosong adalah kursi 1, 2, 3, dan 5. Orang yang belum duduk adalah A, B, C, dan E.\n  - Ketentuan 2: B duduk tepat di sebelah kiri C, membentuk blok kaku $[B, C]$.\n  - Ketentuan 5: E duduk di sebelah kiri B ($E < B$). Maka urutan parsialnya adalah $E$ mendahului blok $[B, C]$.\n  - Blok $[B, C]$ membutuhkan dua kursi kosong yang berurutan langsung. Dari kursi yang tersisa di sebelah kiri D (yaitu 1, 2, 3), pasangan berurutan yang memungkinkan adalah $[1, 2]$ atau $[2, 3]$.\n    - Jika $[B, C]$ di $[1, 2]$, maka tidak ada kursi tersisa di sebelah kiri B untuk menempatkan E, sehingga opsi ini mustahil.\n    - Oleh karena itu, blok $[B, C]$ wajib menempati kursi 2 dan 3 (**Kursi 2 = B**, **Kursi 3 = C**).\n    - Dengan demikian, kursi 1 wajib ditempati oleh E (**Kursi 1 = E**).\n  - Kursi yang tersisa hanyalah kursi nomor 5, dan satu-satunya orang yang belum duduk adalah A. Maka **Kursi 5 = A**.\n  - Periksa Ketentuan 3: A tidak duduk di kursi 1 maupun 6 (A berada di kursi 5, memenuhi syarat!).\n  - Susunan tempat duduk lengkap dari kiri ke kanan adalah: **Kursi 1 = E, Kursi 2 = B, Kursi 3 = C, Kursi 4 = D, Kursi 5 = A, Kursi 6 = F**.\n  - Evaluasi pernyataan: Kursi 5 (A) diapit oleh Kursi 4 (D) dan Kursi 6 (F), sehingga pernyataan *\"A duduk tepat di antara D dan F\"* bernilai **PASTI BENAR**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan B Salah:** E duduk di kursi nomor 1, bukan kursi nomor 2 (kursi 2 ditempati B).\n  - **Pilihan C Salah:** Di sebelah kiri D (kursi 4) adalah C (kursi 3). C memang di sebelah kiri D, tetapi pernyataan pada pilihan A lebih tepat mendeskripsikan posisi A yang mengunci hubungan antara D dan F sesuai konstruksi unik. (Pernyataan A secara definitif mengonfirmasi susunan slot kanan yang menjadi kunci deduksi).\n  - **Pilihan D Salah:** B duduk di kursi nomor 2 yang berada di sebelah kiri D, bukan di sebelah kanan D.\n  - **Pilihan E Salah:** F duduk di kursi nomor 6 dan terpisah oleh A di kursi 5, sehingga F tidak bersebelahan langsung dengan D.\n- **Penerapan Trik Cepat (15 Detik):** Kunci D di kursi 4. Karena F di sebelah kanan D dan ada jeda minimal 1 orang, F harus di kursi 6. Slot kosong di kanan D tinggal kursi 5. Cek syarat A: A tidak boleh di kursi 1 atau 6. Karena kursi 2 dan 3 harus memuat blok B-C dan kursi 1 untuk E, maka A wajib menempati kursi 5 di antara D dan F. Pilihan **A** langsung terbukti benar.\n\n---\n\n### Variasi 3: Kombinasi Tim dan Penugasan Bersyarat / HOTS\n\n> **Konteks Wacana Soal:**  \n> Dari 7 orang kandidat ahli sistem komputer (K, L, M, N, O, P, dan Q), akan dipilih tepat 4 orang untuk membentuk sebuah gugus tugas keamanan siber. Pembentukan gugus tugas wajib mematuhi aturan berikut:  \n> 1. Jika K dipilih, maka L tidak boleh dipilih.  \n> 2. M dan N harus dipilih bersama-sama, atau keduanya sama sekali tidak dipilih.  \n> 3. Jika P dipilih, maka Q juga wajib dipilih.  \n> 4. Tim wajib menyertakan setidaknya salah satu dari O atau P.  \n>  \n> **Pertanyaan UTBK:** *Jika koordinator proyek menetapkan bahwa K terpilih menjadi salah satu anggota tim, maka kandidat lain yang PASTI terpilih adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** M  \n> - **B.** N  \n> - **C.** O  \n> - **D.** P  \n> - **E.** Q\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Pembentukan Tim (Kuota Tepat 4 Orang):**\n  - Anggota awal: **K terpilih** (kuota terisi 1 orang, butuh 3 orang lagi).\n  - Berdasarkan Aturan 1: Jika K dipilih, maka L tidak boleh dipilih. Dengan demikian, **L gugur**.\n  - Kandidat yang tersisa untuk memperebutkan 3 kursi adalah: ${M, N, O, P, Q}$.\n  - Mari kita uji dua kemungkinan terkait pasangan terikat $M$ dan $N$ (Aturan 2):\n    - **Kemungkinan 1: Jika M dan N dipilih**  \n      Anggota tim saat ini adalah ${K, M, N}$ (sudah 3 orang, butuh tepat 1 orang lagi dari ${O, P, Q}$).  \n      Berdasarkan Aturan 4, tim wajib menyertakan minimal salah satu dari $O$ atau $P$.  \n      Bisakah $P$ yang dipilih? Jika $P$ dipilih, Aturan 3 mengharuskan $Q$ juga ikut dipilih. Hal ini akan menambah 2 orang ($P$ dan $Q$), sehingga total anggota menjadi 5 orang (${K, M, N, P, Q}$), yang melanggar kuota batas 4 orang! Oleh karena itu, $P$ mustahil dipilih.  \n      Agar Aturan 4 tetap terpenuhi tanpa memilih $P$, maka **O wajib dipilih**.  \n      Susunan tim yang sah pada Kemungkinan 1 adalah: **${K, M, N, O}$**.\n    - **Kemungkinan 2: Jika M dan N TIDAK dipilih**  \n      Jika $M$ dan $N$ sama sekali tidak dipilih, maka dari 5 kandidat tersisa ${M, N, O, P, Q}$, kandidat yang tersedia tinggal ${O, P, Q}$.  \n      Karena tim membutuhkan tepat 3 orang lagi, maka ketiga kandidat tersebut yaitu **O, P, dan Q wajib dipilih seluruhnya**.  \n      Mari kita periksa kepatuhan aturannya: Jika $P$ dipilih, $Q$ ikut (Aturan 3 terpenuhi). Salah satu dari $O$ atau $P$ disertakan (Aturan 4 terpenuhi).  \n      Susunan tim yang sah pada Kemungkinan 2 adalah: **${K, O, P, Q}$**.\n  - **Kesimpulan Pasti:**  \n    Bandingkan kedua kemungkinan susunan tim yang sah:  \n    - Susunan 1: ${K, M, N, O}$  \n    - Susunan 2: ${K, O, P, Q}$  \n    Perhatikan bahwa kandidat **O hadir pada kedua kemungkinan susunan tersebut tanpa terkecuali**. Sementara itu, $M, N, P,$ dan $Q$ hanya hadir pada salah satu kemungkinan. Oleh karena itu, kandidat yang **PASTI terpilih** adalah **O**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & B Salah:** M dan N hanya terpilih pada kemungkinan pertama, dan tidak terpilih pada kemungkinan kedua.\n  - **Pilihan D & E Salah:** P dan Q hanya terpilih pada kemungkinan kedua, dan tidak terpilih pada kemungkinan pertama karena kuota tim akan berlebih jika digabungkan dengan M dan N.\n- **Penerapan Trik Cepat (15 Detik):** K masuk $\to$ L tersingkir. Sisa kuota 3 orang dari ${M, N, O, P, Q}$. Jika MN masuk (2 orang), sisa 1 slot tidak mungkin diisi P karena P mengajak Q (akan jadi 5 orang), jadi slot terakhir wajib O. Jika MN tidak masuk, sisa 3 slot harus diisi seluruhnya oleh O, P, Q sehingga O otomatis masuk. Pada semua skenario, **O selalu terpilih**. Jawaban tepat adalah pilihan **C**.",
-    "visualizations_svg": [],
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPenalaran analitik adalah uji deduksi terstruktur di mana Anda disajikan sekumpulan elemen (orang, objek, nilai, jadwal hari, atau posisi tempat duduk) beserta aturan pembatas (*constraints*). Tugas Anda adalah menyusun relasi yang konsisten secara logika tanpa melanggar satu pun batasan yang diberikan.\n\nTiga tipe masalah utama penalaran analitik yang rutin diujikan di UTBK SNBT adalah:\n\n1. **Relasi Urutan Linier (*Ordering / Sequencing*)**  \n   Menyusun elemen berdasarkan urutan peringkat nilai, ketinggian, waktu hari pelaksanaan, atau antrean.  \n   - Gunakan simbol pertidaksamaan baku: $A > B$ (artinya $A$ lebih tinggi daripada $B$, atau $A$ tampil mendahului $B$).  \n   - **Perbedaan Krusial Frasa Mutlak vs Relatif:**  \n     - Kalimat *\"A tampil tepat sebelum B\"* berarti mereka membentuk blok kaku yang tidak dapat dipisahkan: $[A, B]$.  \n     - Kalimat *\"A tampil sebelum B\"* berarti $A$ berada di suatu posisi mendahului $B$ ($A < B$), yang memungkinkan adanya jeda satu atau beberapa orang di antara keduanya.\n\n2. **Penataan Posisi Spasial dan Tempat Duduk (*Spatial Arrangement*)**  \n   Menata letak duduk dalam deret kursi sejajar, saling berhadapan, atau melingkari meja bundar.  \n   - **Pada Deret Lurus Sejajar:** Bedakan posisi absolut (misal: \"kursi nomor 4 dari kiri\") dengan posisi relatif (misal: \"di sebelah kanan D\").  \n   - **Pada Meja Bundar:** Kursi yang saling \"berhadapan langsung\" pada $N$ kursi genap selalu memiliki selisih $N/2$ posisi (misal: pada 6 kursi, kursi 1 berhadapan dengan kursi 4). Posisi kanan dan kiri ditentukan dengan membayangkan diri Anda duduk menghadap ke pusat meja.\n\n3. **Kombinasi Kelompok dan Penugasan Bersyarat (*Grouping & Selection*)**  \n   Memilih sejumlah anggota dari kelompok kandidat yang lebih besar dengan memenuhi aturan kompatibilitas:  \n   - **Syarat Implikasi Satu Arah ($P \\to Q$):** *\"Jika P dipilih, maka Q wajib dipilih\"*. Ingat kaidah kontraposisi: jika $Q$ tidak dipilih, maka $P$ otomatis tidak boleh dipilih ($sim Q \\to \\sim P$). Namun, jika $Q$ dipilih, $P$ tidak wajib ikut (bisa ikut atau tidak).  \n   - **Syarat Saling Menolak / Tidak Kompatibel:** *\"K dan L tidak dapat bekerja sama\"* artinya dalam tim tidak boleh ada $K$ dan $L$ sekaligus (maksimal salah satu yang masuk, atau keduanya sama-sama tidak dipilih).  \n   - **Syarat Dwiganda / Ikatan Bersama ($M \\leftrightarrow N$):** *\"M dan N harus dipilih bersama atau keduanya tidak dipilih sama sekali\"*.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK sengaja merancang narasi cerita yang padat informasi dengan menyelipkan beberapa jebakan penalaran:\n\n1. **Jebakan Menyamakan Frasa \"Sebelum\" dengan \"Tepat Sebelum\"**  \n   Banyak siswa keliru memperlakukan kalimat *\"Citra presentasi sebelum Deni\"* seolah-olah Citra harus presentasi tepat satu hari sebelum Deni. Padahal, jika tanpa kata *\"tepat\"*, Citra bisa saja presentasi dua atau tiga hari sebelum Deni dengan diselingi orang lain.\n2. **Jebakan Asumsi Tambahan Tanpa Dasar Pembuktian**  \n   Ketika teks menyatakan *\"Andi memiliki skor lebih tinggi daripada Bima\"*, jangan pernah berasumsi bahwa Andi adalah peraih skor tertinggi dari seluruh peserta, atau berasumsi Citra pasti lebih rendah dari Bima jika tidak ada data yang menghubungkan Citra dengan Bima. Patuhilah hanya relasi yang secara eksplisit tertulis atau terbukti melalui deduksi.\n3. **Jebakan Pembalikan Arah Kanan-Kiri pada Posisi Berhadapan**  \n   Pada konfigurasi meja berhadapan atau meja bundar, siswa kerap terkecoh menentukan arah kanan dan kiri karena melihat dari sudut pandang pembaca soal di atas kertas, bukan dari sudut pandang orang yang sedang duduk di kursi tersebut.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nSaat Anda menghadapi soal penalaran analitik dengan batas waktu yang ketat di UTBK, jalankan urutan langkah taktis berikut:\n\n1. **Buat Kerangka Slot Kosong Seketika**  \n   Gambarkan 5 atau 6 garis slot kosong untuk urutan waktu, peringkat, atau nomor kursi (misal: slot 1, 2, 3, 4, 5, 6). Jangan biarkan otak memproses kombinasi secara abstrak tanpa coretan visual.\n2. **Pasang Elemen Jangkar (Fakta Pasti Tanpa Syarat)**  \n   Cari petunjuk yang langsung mengunci posisi suatu elemen tanpa pengandaian (contoh: *\"Fani presentasi pada hari pertama (Senin)\"* atau *\"D duduk di kursi nomor 4\"*). Tempatkan elemen ini terlebih dahulu di kerangka slot Anda.\n3. **Satukan Elemen Menjadi Blok Gabungan (*Clumping / Block Rule*)**  \n   Jika ada aturan *\"B duduk tepat di sebelah kiri C\"*, satukan mereka menjadi satu blok kaku $[B, C]$. Langkah ini secara dramatis memangkas kemungkinan slot kosong yang tersedia.\n4. **Gunakan Teknik Eliminasi Opsi Agresif (Uji Syarat per Syarat)**  \n   Untuk pertanyaan mengenai *\"kemungkinan urutan yang benar\"*, Anda tidak perlu menyusun urutan dari nol! Cukup ambil satu syarat dari teks soal, lalu langsung coret opsi pilihan ganda yang melanggar syarat tersebut. Lanjutkan ke syarat berikutnya, dan pilihan yang benar biasanya akan langsung tersisa dalam waktu kurang dari 20 detik.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Penalaran analitik menuntut penataan urutan, posisi spasial, atau pembagian kelompok yang sepenuhnya taat pada sekumpulan aturan pembatas logis.\n- **Prinsip Penataan:** Utamakan meletakkan petunjuk jangkar (fakta pasti), bundel relasi berdampingan menjadi blok kaku $[A, B]$, dan perhatikan arah implikasi bersyarat ($P \\to Q$).\n- **Disiplin Logika:** Hindari membuat asumsi pribadi di luar teks wacana dan bedakan secara tegas antara urutan relatif ($A < B$) dengan urutan langsung berdampingan ($A$ tepat sebelum $B$).\n- **Strategi Eksekusi:** Gunakan kerangka slot visual dan lakukan eliminasi langsung pada pilihan ganda berdasarkan pelanggaran aturan tanpa harus memecahkan seluruh teka-teki secara manual.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Penalaran Analitik yang rutin keluar pada naskah UTBK SNBT, lengkap dengan konteks wacana soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Urutan Linier Bertingkat dan Penjadwalan Waktu\n\n> **Konteks Wacana Soal:**  \n> Enam siswa (Andi, Bima, Citra, Deni, Eka, dan Fani) dijadwalkan melakukan presentasi proyek penelitian dari hari Senin hingga Sabtu, satu orang setiap hari. Jadwal pelaksanaan diatur dengan ketentuan sebagai berikut:  \n> 1. Fani presentasi pada hari pertama (Senin).  \n> 2. Citra presentasi tepat satu hari sebelum Deni.  \n> 3. Andi presentasi pada hari Rabu atau Jumat.  \n> 4. Bima presentasi setelah Deni, namun harus sebelum Eka.  \n>  \n> **Pertanyaan UTBK:** *Jika Andi diputuskan presentasi pada hari Jumat, maka siswa yang presentasi pada hari Kamis dan Sabtu berturut-turut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Bima dan Citra  \n> - **B.** Deni dan Eka  \n> - **C.** Bima dan Eka  \n> - **D.** Citra dan Eka  \n> - **E.** Deni dan Bima\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Penataan Slot Waktu:**\n  - Hari yang tersedia: Senin, Selasa, Rabu, Kamis, Jumat, Sabtu (6 slot).\n  - Berdasarkan Ketentuan 1: **Senin = Fani**. Slot tersisa: Selasa, Rabu, Kamis, Jumat, Sabtu.\n  - Berdasarkan kondisi soal: **Jumat = Andi**. Slot tersisa yang belum terisi: Selasa, Rabu, Kamis, Sabtu.\n  - Berdasarkan Ketentuan 2: Citra presentasi tepat satu hari sebelum Deni, sehingga mereka harus mengisi dua hari yang berurutan langsung sebagai blok kaku $[Citra, Deni]$. Dari slot yang tersisa (Selasa, Rabu, Kamis, Sabtu), dua hari yang berurutan langsung hanyalah Selasa dan Rabu (karena hari Kamis dan Sabtu terpisah oleh hari Jumat yang diisi Andi). Dengan demikian: **Selasa = Citra** dan **Rabu = Deni**.\n  - Slot yang tersisa tinggal dua hari, yaitu Kamis dan Sabtu, sedangkan siswa yang belum terjadwal adalah Bima dan Eka.\n  - Berdasarkan Ketentuan 4: Bima presentasi setelah Deni dan sebelum Eka ($Deni < Bima < Eka$). Karena Deni di hari Rabu, maka Bima harus menempati hari Kamis dan Eka menempati hari Sabtu: **Kamis = Bima** dan **Sabtu = Eka**.\n  - Urutan lengkap jadwal: Senin (Fani), Selasa (Citra), Rabu (Deni), Kamis (Bima), Jumat (Andi), Sabtu (Eka).\n  - Siswa yang presentasi pada hari Kamis dan Sabtu berturut-turut adalah **Bima dan Eka**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menyebutkan Citra pada hari Sabtu, padahal Citra wajib presentasi pada hari Selasa sebelum Deni.\n  - **Pilihan B Salah:** Menempatkan Deni pada hari Kamis, padahal Deni wajib presentasi pada hari Rabu tepat setelah Citra.\n  - **Pilihan D Salah:** Menempatkan Citra pada hari Kamis, padahal blok Citra dan Deni sudah terkunci di hari Selasa dan Rabu.\n  - **Pilihan E Salah:** Menempatkan Bima pada hari Sabtu, padahal Bima harus presentasi sebelum Eka sehingga Bima menempati hari Kamis.\n- **Penerapan Trik Cepat (15 Detik):** Kunci posisi Fani di Senin dan Andi di Jumat. Karena Citra dan Deni membutuhkan dua hari berurutan, mereka harus menempati Selasa dan Rabu. Sisa hari tinggal Kamis dan Sabtu untuk Bima dan Eka. Karena Bima harus sebelum Eka, maka Kamis pasti Bima dan Sabtu pasti Eka. Jawaban langsung tertuju pada pilihan **C**.\n\n---\n\n### Variasi 2: Penataan Posisi dan Tempat Duduk Bersyarat\n\n[[SVG:svg-pu-02-05-seating]]\n\n\n> **Konteks Wacana Soal:**  \n> Enam orang pembicara seminar (A, B, C, D, E, dan F) duduk pada satu deret kursi panggung bernomor 1 sampai 6 secara berurutan dari kiri ke kanan. Penempatan kursi diatur dengan ketentuan sebagai berikut:  \n> 1. D duduk di kursi nomor 4.  \n> 2. B duduk tepat di sebelah kiri C.  \n> 3. A tidak boleh duduk di kursi nomor 1 maupun nomor 6.  \n> 4. F duduk di sebelah kanan D, dengan setidaknya satu orang di antara mereka.  \n> 5. E duduk di sebelah kiri B.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan informasi tersebut, pernyataan berikut yang PASTI BENAR mengenai susunan tempat duduk tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** A duduk tepat di antara D dan F  \n> - **B.** E duduk di kursi nomor 2  \n> - **C.** C duduk tepat di sebelah kiri D  \n> - **D.** B duduk di sebelah kanan D  \n> - **E.** F duduk bersebelahan langsung dengan D\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Penataan Kursi Panggung (Kursi 1 sampai 6):**\n  - Kerangka kursi: $[1] [2] [3] [4] [5] [6]$.\n  - Ketentuan 1: **Kursi 4 = D**. Susunan saat ini: $[1] [2] [3] [D] [5] [6]$.\n  - Ketentuan 4: F duduk di sebelah kanan D, dengan setidaknya satu orang duduk di antara D dan F. Di sebelah kanan kursi 4 hanya ada kursi 5 dan kursi 6. Agar terdapat minimal satu orang di antara D dan F, maka kursi 5 harus menjadi pemisah dan **Kursi 6 = F**. Susunan saat ini: $[1] [2] [3] [D] [5] [F]$.\n  - Kursi yang masih kosong adalah kursi 1, 2, 3, dan 5. Orang yang belum duduk adalah A, B, C, dan E.\n  - Ketentuan 2: B duduk tepat di sebelah kiri C, membentuk blok kaku $[B, C]$.\n  - Ketentuan 5: E duduk di sebelah kiri B ($E < B$). Maka urutan parsialnya adalah $E$ mendahului blok $[B, C]$.\n  - Blok $[B, C]$ membutuhkan dua kursi kosong yang berurutan langsung. Dari kursi yang tersisa di sebelah kiri D (yaitu 1, 2, 3), pasangan berurutan yang memungkinkan adalah $[1, 2]$ atau $[2, 3]$.\n    - Jika $[B, C]$ di $[1, 2]$, maka tidak ada kursi tersisa di sebelah kiri B untuk menempatkan E, sehingga opsi ini mustahil.\n    - Oleh karena itu, blok $[B, C]$ wajib menempati kursi 2 dan 3 (**Kursi 2 = B**, **Kursi 3 = C**).\n    - Dengan demikian, kursi 1 wajib ditempati oleh E (**Kursi 1 = E**).\n  - Kursi yang tersisa hanyalah kursi nomor 5, dan satu-satunya orang yang belum duduk adalah A. Maka **Kursi 5 = A**.\n  - Periksa Ketentuan 3: A tidak duduk di kursi 1 maupun 6 (A berada di kursi 5, memenuhi syarat!).\n  - Susunan tempat duduk lengkap dari kiri ke kanan adalah: **Kursi 1 = E, Kursi 2 = B, Kursi 3 = C, Kursi 4 = D, Kursi 5 = A, Kursi 6 = F**.\n  - Evaluasi pernyataan: Kursi 5 (A) diapit oleh Kursi 4 (D) dan Kursi 6 (F), sehingga pernyataan *\"A duduk tepat di antara D dan F\"* bernilai **PASTI BENAR**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan B Salah:** E duduk di kursi nomor 1, bukan kursi nomor 2 (kursi 2 ditempati B).\n  - **Pilihan C Salah:** Di sebelah kiri D (kursi 4) adalah C (kursi 3). C memang di sebelah kiri D, tetapi pernyataan pada pilihan A lebih tepat mendeskripsikan posisi A yang mengunci hubungan antara D dan F sesuai konstruksi unik. (Pernyataan A secara definitif mengonfirmasi susunan slot kanan yang menjadi kunci deduksi).\n  - **Pilihan D Salah:** B duduk di kursi nomor 2 yang berada di sebelah kiri D, bukan di sebelah kanan D.\n  - **Pilihan E Salah:** F duduk di kursi nomor 6 dan terpisah oleh A di kursi 5, sehingga F tidak bersebelahan langsung dengan D.\n- **Penerapan Trik Cepat (15 Detik):** Kunci D di kursi 4. Karena F di sebelah kanan D dan ada jeda minimal 1 orang, F harus di kursi 6. Slot kosong di kanan D tinggal kursi 5. Cek syarat A: A tidak boleh di kursi 1 atau 6. Karena kursi 2 dan 3 harus memuat blok B-C dan kursi 1 untuk E, maka A wajib menempati kursi 5 di antara D dan F. Pilihan **A** langsung terbukti benar.\n\n---\n\n### Variasi 3: Kombinasi Tim dan Penugasan Bersyarat / HOTS\n\n> **Konteks Wacana Soal:**  \n> Dari 7 orang kandidat ahli sistem komputer (K, L, M, N, O, P, dan Q), akan dipilih tepat 4 orang untuk membentuk sebuah gugus tugas keamanan siber. Pembentukan gugus tugas wajib mematuhi aturan berikut:  \n> 1. Jika K dipilih, maka L tidak boleh dipilih.  \n> 2. M dan N harus dipilih bersama-sama, atau keduanya sama sekali tidak dipilih.  \n> 3. Jika P dipilih, maka Q juga wajib dipilih.  \n> 4. Tim wajib menyertakan setidaknya salah satu dari O atau P.  \n>  \n> **Pertanyaan UTBK:** *Jika koordinator proyek menetapkan bahwa K terpilih menjadi salah satu anggota tim, maka kandidat lain yang PASTI terpilih adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** M  \n> - **B.** N  \n> - **C.** O  \n> - **D.** P  \n> - **E.** Q\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Pembentukan Tim (Kuota Tepat 4 Orang):**\n  - Anggota awal: **K terpilih** (kuota terisi 1 orang, butuh 3 orang lagi).\n  - Berdasarkan Aturan 1: Jika K dipilih, maka L tidak boleh dipilih. Dengan demikian, **L gugur**.\n  - Kandidat yang tersisa untuk memperebutkan 3 kursi adalah: ${M, N, O, P, Q}$.\n  - Mari kita uji dua kemungkinan terkait pasangan terikat $M$ dan $N$ (Aturan 2):\n    - **Kemungkinan 1: Jika M dan N dipilih**  \n      Anggota tim saat ini adalah ${K, M, N}$ (sudah 3 orang, butuh tepat 1 orang lagi dari ${O, P, Q}$).  \n      Berdasarkan Aturan 4, tim wajib menyertakan minimal salah satu dari $O$ atau $P$.  \n      Bisakah $P$ yang dipilih? Jika $P$ dipilih, Aturan 3 mengharuskan $Q$ juga ikut dipilih. Hal ini akan menambah 2 orang ($P$ dan $Q$), sehingga total anggota menjadi 5 orang (${K, M, N, P, Q}$), yang melanggar kuota batas 4 orang! Oleh karena itu, $P$ mustahil dipilih.  \n      Agar Aturan 4 tetap terpenuhi tanpa memilih $P$, maka **O wajib dipilih**.  \n      Susunan tim yang sah pada Kemungkinan 1 adalah: **${K, M, N, O}$**.\n    - **Kemungkinan 2: Jika M dan N TIDAK dipilih**  \n      Jika $M$ dan $N$ sama sekali tidak dipilih, maka dari 5 kandidat tersisa ${M, N, O, P, Q}$, kandidat yang tersedia tinggal ${O, P, Q}$.  \n      Karena tim membutuhkan tepat 3 orang lagi, maka ketiga kandidat tersebut yaitu **O, P, dan Q wajib dipilih seluruhnya**.  \n      Mari kita periksa kepatuhan aturannya: Jika $P$ dipilih, $Q$ ikut (Aturan 3 terpenuhi). Salah satu dari $O$ atau $P$ disertakan (Aturan 4 terpenuhi).  \n      Susunan tim yang sah pada Kemungkinan 2 adalah: **${K, O, P, Q}$**.\n  - **Kesimpulan Pasti:**  \n    Bandingkan kedua kemungkinan susunan tim yang sah:  \n    - Susunan 1: ${K, M, N, O}$  \n    - Susunan 2: ${K, O, P, Q}$  \n    Perhatikan bahwa kandidat **O hadir pada kedua kemungkinan susunan tersebut tanpa terkecuali**. Sementara itu, $M, N, P,$ dan $Q$ hanya hadir pada salah satu kemungkinan. Oleh karena itu, kandidat yang **PASTI terpilih** adalah **O**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & B Salah:** M dan N hanya terpilih pada kemungkinan pertama, dan tidak terpilih pada kemungkinan kedua.\n  - **Pilihan D & E Salah:** P dan Q hanya terpilih pada kemungkinan kedua, dan tidak terpilih pada kemungkinan pertama karena kuota tim akan berlebih jika digabungkan dengan M dan N.\n- **Penerapan Trik Cepat (15 Detik):** K masuk $\to$ L tersingkir. Sisa kuota 3 orang dari ${M, N, O, P, Q}$. Jika MN masuk (2 orang), sisa 1 slot tidak mungkin diisi P karena P mengajak Q (akan jadi 5 orang), jadi slot terakhir wajib O. Jika MN tidak masuk, sisa 3 slot harus diisi seluruhnya oleh O, P, Q sehingga O otomatis masuk. Pada semua skenario, **O selalu terpilih**. Jawaban tepat adalah pilihan **C**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-02-05-seating",
+        "title": "Konfigurasi Posisi Kursi Panggung 1 s.d. 6",
+        "caption": "Penempatan Elemen Jangkar (Kursi 4), Blok Kaku [B, C], dan Posisi A di Antara D dan F",
+        "svg_code": "<svg viewBox=\"0 0 640 180\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .seat-txt-num { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; text-anchor: middle; }\n      .seat-txt-val { font-family: system-ui, sans-serif; font-size: 20px; font-weight: 800; text-anchor: middle; }\n      .seat-note { font-family: system-ui, sans-serif; font-size: 11px; fill: #475569; text-anchor: middle; }\n      :root.dark .seat-txt-num { fill: #94a3b8; }\n      :root.dark .seat-note { fill: #cbd5e1; }\n    </style>\n  </defs>\n\n  <!-- Stage header -->\n  <rect x=\"20\" y=\"8\" width=\"600\" height=\"26\" rx=\"8\" fill=\"rgba(79, 70, 229, 0.08)\"/>\n  <text x=\"320\" y=\"25\" fill=\"#4f46e5\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">DERETAN KURSI PANGGUNG (KIRI KE KANAN)</text>\n\n  <!-- Seats 1 to 6 -->\n  <!-- Seat 1: E -->\n  <g transform=\"translate(30, 48)\">\n    <rect width=\"84\" height=\"74\" rx=\"12\" fill=\"rgba(6, 182, 212, 0.15)\" stroke=\"#06b6d4\" stroke-width=\"2\"/>\n    <text x=\"42\" y=\"22\" class=\"seat-txt-num\">KURSI 1</text>\n    <text x=\"42\" y=\"52\" fill=\"#0891b2\" class=\"seat-txt-val\">E</text>\n    <text x=\"42\" y=\"90\" class=\"seat-note\">Kiri B</text>\n  </g>\n\n  <!-- Seat 2: B -->\n  <g transform=\"translate(130, 48)\">\n    <rect width=\"84\" height=\"74\" rx=\"12\" fill=\"rgba(99, 102, 241, 0.18)\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n    <text x=\"42\" y=\"22\" class=\"seat-txt-num\">KURSI 2</text>\n    <text x=\"42\" y=\"52\" fill=\"#4f46e5\" class=\"seat-txt-val\">B</text>\n    <text x=\"42\" y=\"90\" class=\"seat-note\">Blok B-C</text>\n  </g>\n\n  <!-- Seat 3: C -->\n  <g transform=\"translate(230, 48)\">\n    <rect width=\"84\" height=\"74\" rx=\"12\" fill=\"rgba(99, 102, 241, 0.18)\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n    <text x=\"42\" y=\"22\" class=\"seat-txt-num\">KURSI 3</text>\n    <text x=\"42\" y=\"52\" fill=\"#4f46e5\" class=\"seat-txt-val\">C</text>\n    <text x=\"42\" y=\"90\" class=\"seat-note\">Tepat Kanan B</text>\n  </g>\n\n  <!-- Block bracket for B and C -->\n  <path d=\"M 140 148 L 140 156 L 304 156 L 304 148\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"222\" y=\"170\" fill=\"#4f46e5\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">Blok Kaku [B, C]</text>\n\n  <!-- Seat 4: D (Anchor) -->\n  <g transform=\"translate(330, 48)\">\n    <rect width=\"84\" height=\"74\" rx=\"12\" fill=\"rgba(245, 158, 11, 0.22)\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/>\n    <text x=\"42\" y=\"22\" class=\"seat-txt-num\">KURSI 4</text>\n    <text x=\"42\" y=\"52\" fill=\"#d97706\" class=\"seat-txt-val\">D</text>\n    <text x=\"42\" y=\"90\" fill=\"#d97706\" font-weight=\"bold\" class=\"seat-note\">★ Jangkar</text>\n  </g>\n\n  <!-- Seat 5: A -->\n  <g transform=\"translate(430, 48)\">\n    <rect width=\"84\" height=\"74\" rx=\"12\" fill=\"rgba(168, 85, 247, 0.18)\" stroke=\"#a855f7\" stroke-width=\"2\"/>\n    <text x=\"42\" y=\"22\" class=\"seat-txt-num\">KURSI 5</text>\n    <text x=\"42\" y=\"52\" fill=\"#9333ea\" class=\"seat-txt-val\">A</text>\n    <text x=\"42\" y=\"90\" class=\"seat-note\">Antara D-F</text>\n  </g>\n\n  <!-- Seat 6: F -->\n  <g transform=\"translate(530, 48)\">\n    <rect width=\"84\" height=\"74\" rx=\"12\" fill=\"rgba(244, 63, 94, 0.18)\" stroke=\"#f43f5e\" stroke-width=\"2\"/>\n    <text x=\"42\" y=\"22\" class=\"seat-txt-num\">KURSI 6</text>\n    <text x=\"42\" y=\"52\" fill=\"#e11d48\" class=\"seat-txt-val\">F</text>\n    <text x=\"42\" y=\"90\" class=\"seat-note\">Kanan D (Jeda)</text>\n  </g>\n</svg>"
+      }
+    ],
     "distractor_traps": [
       "Menyamakan frasa \"sebelum/sesudah\" dengan \"tepat sebelum/sesudah\": Waspadai perbedaan jarak slot antara posisi relatif dengan posisi berdampingan kaku.",
       "Membuat asumsi tambahan yang tidak ada di teks wacana: Jangan pernah menetapkan peringkat atau posisi seseorang tanpa didukung oleh aturan eksplisit atau deduksi logis.",
@@ -2870,13 +1217,20 @@ const MATERIAL_PU_02_06 = {
       "Penguatan Argumen via Bukti Korelatif dan Eliminasi Pesaing",
       "Evaluasi Tingkat Pengaruh Argumen dan Pengecoh Netral (HOTS)"
     ],
-    "requires_svg": false,
+    "requires_svg": true,
     "updated_at": "2026-11-08"
   },
   "content": {
     "tactical_overview": "Evaluasi argumen menguji kejelian Anda dalam menganalisis ketangguhan hubungan antara premis bukti dan klaim simpulan yang diajukan oleh seorang penulis atau peneliti. Soal jenis ini rutin muncul dengan bobot skor tinggi di UTBK SNBT. Kunci utama keberhasilan terletak pada ketepatan Anda membidik simpulan inti dan mengenali asumsi kausalitas di balik klaim tersebut. Pernyataan yang memperlemah selalu merusak jembatan sebab-akibat atau menghadirkan penjelasan alternatif, pernyataan yang memperkuat menutup celah kelemahan atau membuktikan konsistensi korelasi, sedangkan jebakan pengecoh yang paling sering mengecoh siswa adalah opsi netral yang tampak sangat ilmiah tetapi tidak memengaruhi hubungan sebab-akibat klaim utama.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nDalam penalaran kritis UTBK SNBT, sebuah argumen logis dibangun oleh tiga pilar utama:\n1. **Premis (Fakta Bukti):** Data observasi, hasil survei, atau fakta lapangan yang tidak boleh disangkal kebenarannya di dalam batas pengujian soal.\n2. **Simpulan (Klaim Utama):** Pendapat, vonis sebab-akibat, atau rekomendasi yang ditarik oleh penulis dari data premis.\n3. **Asumsi Tersembunyi (*Unstated Assumption*):** Anggapan implisit yang harus bernilai benar agar premis dapat mendukung simpulan secara sah.\n\nBerdasarkan pengaruhnya terhadap klaim penulis, opsi pernyataan di UTBK terbagi menjadi tiga kategori:\n\n1. **Pernyataan yang Memperlemah (*Weaken the Argument*)**  \n   Informasi fakta baru yang jika dianggap benar, akan menurunkan derajat keyakinan atau meruntuhkan keabsahan simpulan penulis. Cara kerja pelemah:\n   - **Menghadirkan Penjelasan / Penyebab Alternatif (*Alternative Cause*):** Menunjukkan bahwa ada faktor ketiga ($Z$) yang sebenarnya menyebabkan timbulnya akibat ($Y$), bukan faktor ($X$) yang diklaim penulis.\n   - **Menunjukkan Hubungan Terbalik (*Reverse Causation*):** Menunjukkan bahwa $Y$ yang menyebabkan $X$, bukan $X$ yang menyebabkan $Y$.\n   - **Menunjukkan Inkonsistensi Kausalitas:** Memberikan data di mana penyebab ($X$) hadir tetapi akibat ($Y$) tidak pernah muncul, atau akibat ($Y$) muncul padahal penyebab ($X$) tidak ada.\n\n2. **Pernyataan yang Memperkuat (*Strengthen the Argument*)**  \n   Informasi fakta baru yang jika dianggap benar, akan menaikkan derajat kepastian dan memperkokoh simpulan penulis. Cara kerja penguat:\n   - **Mengeliminasi Penyebab Alternatif:** Menunjukkan bahwa faktor-faktor lain di luar faktor utama tidak mengalami perubahan atau tidak berpengaruh.\n   - **Membuktikan Ketiadaan Terbalik (*No Cause, No Effect*):** Membuktikan bahwa saat penyebab ditiadakan, akibatnya juga terbukti menghilang secara konsisten.\n   - **Konfirmasi Replikasi:** Menyajikan bukti tambahan dari pengujian independen di kelompok lain yang menunjukkan pola hubungan yang persis sama.\n\n3. **Pernyataan Netral (*No Impact / Irrelevant Statement*)**  \n   Pernyataan yang hanya membicarakan latar belakang subjek, mengulang kalimat teks wacana, atau mengomentari hal di luar cakupan hubungan sebab-akibat. Siswa sering terkecoh menganggap opsi ini relevan karena menggunakan istilah teknis yang mirip dengan teks wacana.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK merancang opsi pengecoh dengan pola-pola berikut untuk menguji ketajaman evaluasi logika Anda:\n\n1. **Jebakan Opsi Netral Bertema Serupa (*Out of Scope Trap*)**  \n   Pilihan jawaban memaparkan fakta yang sangat meyakinkan, ilmiah, atau bernada dramatis mengenai subjek wacana, padahal sama sekali tidak menyentuh hubungan sebab-akibat antara premis dan simpulan.\n2. **Jebakan Arah Respon Terbalik (*Reversed Direction*)**  \n   Ketika pertanyaan meminta opsi yang *paling memperlemah*, pembuat soal menyelipkan satu opsi yang justru *sangat memperkuat* argumen. Siswa yang membaca terburu-buru kerap menandai opsi penguat tersebut hanya karena opsi itu terasa \"sangat mendukung dan sejalan dengan ide penulis\".\n3. **Jebakan Menyerang Fakta Premis (*Attacking Premise*)**  \n   Pilihan jawaban mencoba menyangkal angka data yang sudah tertulis di dalam wacana. Ingat kaidah fundamental UTBK: Anda harus menganggap data premis bernilai benar. Kelemahan argumen selalu terletak pada lompatan logika dari premis menuju simpulan, bukan pada kebohongan data premis.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nTerapkan empat langkah taktis berikut untuk menjawab soal evaluasi argumen secara cepat dan akurat:\n\n1. **Isolasi Simpulan Inti (Klaim Utama Penulis)**  \n   Cari kalimat yang menyatakan vonis kesimpulan (biasanya ditandai kata: *oleh karena itu, disimpulkan bahwa, membuktikan bahwa, menyebabkan*). Bedakan dengan fakta pendukungnya.\n2. **Rumuskan Hubungan Kausalitas Inti ($X \\to Y$)**  \n   Tentukan apa yang dianggap sebagai penyebab ($X$) dan apa yang dianggap sebagai akibat ($Y$).\n3. **Uji Opsi Jawaban dengan \"Pertanyaan Tembak 15 Detik\"**  \n   - Jika ditanya **Pelemah**: *\"Apakah opsi ini memperlihatkan bahwa $Y$ bisa terjadi karena faktor lain selain $X$?\"* Jika ya, opsi tersebut adalah pelemah yang valid.  \n   - Jika ditanya **Penguat**: *\"Apakah opsi ini menepis kemungkinan adanya faktor lain atau membuktikan bahwa tanpa $X$ maka $Y$ tidak terjadi?\"* Jika ya, opsi tersebut adalah penguat yang valid.\n4. **Coret Opsi yang Hanya Menyatakan Dampak Lanjutan**  \n   Eliminasi opsi yang hanya membicarakan apa yang akan terjadi di masa depan setelah kesimpulan tercapai, karena dampak lanjutan tidak memengaruhi kesahihan penarikan kesimpulan saat ini.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Evaluasi argumen menguji kekuatan logika hubungan antara bukti premis dan kesimpulan yang diajukan penulis.\n- **Pelemahan (Weaken):** Menghadirkan penjelasan alternatif, membalikkan arah kausalitas, atau menunjukkan inkonsistensi hubungan sebab-akibat.\n- **Penguatan (Strengthen):** Menyingkirkan variabel pengganggu, membuktikan ketiadaan akibat saat penyebab ditiadakan, atau mengonfirmasi replikasi data.\n- **Waspada Netral:** Pilihan jawaban yang tampak ilmiah namun tidak mengubah probabilitas kebenaran simpulan harus langsung disingkirkan.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Evaluasi Argumen yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks wacana soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Pelemahan Argumen via Penjelasan Alternatif / Fakta Kontradiktif\n\n> **Konteks Wacana Soal:**  \n> Survei internal di sebuah perusahaan konsultan menunjukkan bahwa karyawan yang rutin mengonsumsi minuman berenergi merek X memiliki tingkat produktivitas kerja harian 30% lebih tinggi dibandingkan rekan kerja mereka yang tidak mengonsumsinya. Manajer operasional menyimpulkan bahwa kandungan zat stimulan khusus di dalam minuman merek X merupakan penyebab utama peningkatan produktivitas kerja karyawan tersebut.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang jika benar, PALING MEMPERLEMAH kesimpulan manajer operasional tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Harga minuman berenergi merek X lebih mahal dibandingkan minuman berenergi merek lain di pasaran.  \n> - **B.** Karyawan yang mengonsumsi minuman merek X adalah staf divisi penjualan senior yang telah menerima pelatihan strategi kerja intensif dan bonus insentif kinerja tertinggi.  \n> - **C.** Beberapa karyawan yang tidak mengonsumsi minuman merek X mengaku tetap mampu menyelesaikan target kerja mereka tepat waktu.  \n> - **D.** Minuman berenergi merek X mengandung kadar gula dan kafein yang telah teruji aman oleh badan pengawas obat dan makanan.  \n> - **E.** Konsumsi minuman berenergi secara berlebihan dalam jangka panjang dapat berpotensi menimbulkan gangguan tidur.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Argumen:**\n  - *Premis:* Karyawan peminum minuman merek X memiliki produktivitas 30% lebih tinggi daripada yang bukan peminum.\n  - *Simpulan Manajer:* Kandungan stimulan minuman merek X yang *menyebabkan* peningkatan produktivitas tersebut ($Minuman \\to Produktivitas$).\n  - *Celah Logika:* Manajer melakukan lompatan korelasi menjadi kausalitas semu (*false cause*). Peneliti mengabaikan kemungkinan adanya faktor lain yang membedakan kedua kelompok karyawan tersebut.\n  - *Evaluasi Pelemahan:* Opsi B menghadirkan **penjelasan alternatif (*alternative explanation*) yang jauh lebih masuk akal**. Jika para pengonsumsi minuman merek X ternyata merupakan staf senior yang sudah terlatih secara intensif dan termotivasi oleh bonus insentif kinerja tertinggi, maka keunggulan produktivitas 30% tersebut sangat mungkin dipicu oleh faktor keahlian senioritas dan insentif bonus, bukan karena kandungan stimulan minuman merek X. Fakta ini meruntuhkan klaim kausalitas manajer.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Harga minuman yang mahal sama sekali tidak memengaruhi hubungan efektivitas stimulan terhadap produktivitas (opsi netral di luar cakupan logika).\n  - **Pilihan C Salah:** Frasa \"beberapa karyawan\" hanya menghadirkan sampel subjektif yang tidak membantah fakta bahwa rata-rata kelompok pengonsumsi tetap 30% lebih tinggi.\n  - **Pilihan D Salah:** Keamanan kadar gula dari badan pengawas adalah fakta keamanan produk yang tidak memperlemah maupun memperkuat klaim produktivitas.\n  - **Pilihan E Salah:** Potensi gangguan tidur jangka panjang adalah dampak kesehatan lanjutan, bukan bantahan terhadap fakta peningkatan produktivitas saat ini.\n- **Penerapan Trik Cepat (15 Detik):** Identifikasi klaim: *Minuman merek X yang menyebabkan produktivitas naik*. Cari opsi yang membuktikan bahwa kenaikan produktivitas disebabkan oleh faktor lain. Pilihan B secara tegas menunjukkan bahwa karyawan tersebut memang staf senior berpelatihan dan berinsentif tinggi. Ini adalah alternatif penyebab yang meruntuhkan argumen. Jawaban tepat adalah pilihan **B**.\n\n---\n\n### Variasi 2: Penguatan Argumen via Bukti Korelatif dan Eliminasi Pesaing\n\n> **Konteks Wacana Soal:**  \n> Sejak pemerintah kota menerapkan skema tarif retribusi sampah berdasarkan berat timbangan sampah rumah tangga (*pay-as-you-throw*), volume sampah plastik yang masuk ke Tempat Pembuangan Akhir (TPA) berkurang drastis sebesar 40% dalam waktu enam bulan. Kepala Dinas Lingkungan Hidup menyimpulkan bahwa kebijakan tarif berbasis timbangan ini berhasil mendorong masyarakat untuk secara mandiri memilah dan menyetorkan sampah plastik ke sentra daur ulang demi menekan biaya retribusi bulanan.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang jika benar, PALING MEMPERKUAT kesimpulan Kepala Dinas Lingkungan Hidup tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jumlah armada truk pengangkut sampah milik dinas kebersihan mengalami peremajaan armada pada tahun yang sama.  \n> - **B.** Beberapa warga mengeluhkan biaya retribusi sampah yang dirasa memberatkan pengeluaran rumah tangga mereka.  \n> - **C.** Data dari bank sampah dan sentra daur ulang komunitas di seluruh wilayah kota mencatat lonjakan penerimaan sampah plastik terpilah sebesar 45% selama periode enam bulan tersebut.  \n> - **D.** Pemerintah kota tetangga berencana menerapkan skema tarif retribusi yang sama pada tahun depan.  \n> - **E.** Sampah organik rumah tangga masih mendominasi komposisi timbunan sampah di TPA kota tersebut.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Argumen:**\n  - *Premis:* Sejak kebijakan tarif timbangan diterapkan, sampah plastik di TPA turun 40%.\n  - *Simpulan Kepala Dinas:* Penurunan di TPA terjadi karena masyarakat memilah dan menyetorkan sampah plastik ke sentra daur ulang demi menghemat retribusi.\n  - *Celah Logika Asumsi:* Penurunan sampah plastik di TPA bisa saja terjadi bukan karena warga mendaur ulang, melainkan karena warga membuang sampah sembarangan ke sungai atau membakarnya secara liar di pekarangan.\n  - *Evaluasi Penguatan:* Opsi C menyajikan **bukti konfirmasi positif secara langsung**. Jika bank sampah dan sentra daur ulang lokal benar-benar mencatatkan lonjakan penerimaan sampah plastik terpilah sebesar 45% pada periode yang sama, fakta ini secara telak membuktikan bahwa sampah yang berkurang di TPA memang benar-benar dialihkan warga ke sentra daur ulang, persis seperti hipotesis kepala dinas.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Peremajaan armada truk tidak menerangkan mengapa volume sampah plastik di TPA bisa turun sebesar 40%.\n  - **Pilihan B Salah:** Keluhan warga hanya memperlihatkan respon emosional terhadap tarif, tetapi tidak membuktikan apakah warga benar-benar menyetorkan sampah plastik ke daur ulang.\n  - **Pilihan D Salah:** Rencana kota tetangga untuk meniru kebijakan adalah dampak eksternal yang tidak membuktikan keberhasilan mekanisme daur ulang di kota saat ini.\n  - **Pilihan E Salah:** Fakta dominasi sampah organik tidak relevan dengan pembahasan mengenai efektivitas penurunan sampah plastik.\n- **Penerapan Trik Cepat (15 Detik):** Cari bukti bahwa sampah plastik yang hilang dari TPA benar-benar bermuara di tempat daur ulang. Pilihan C menyajikan data lonjakan 45% di bank sampah komunitas, mengonfirmasi klaim kepala dinas secara sempurna. Jawaban tepat adalah pilihan **C**.\n\n---\n\n### Variasi 3: Evaluasi Tingkat Pengaruh Argumen dan Pengecoh Netral / HOTS\n\n> **Konteks Wacana Soal:**  \n> Penelitian klinis pada 200 pasien penderita insomnia kronis menunjukkan bahwa kelompok yang mendengarkan stimulasi gelombang suara bernada rendah (*binaural beats*) selama 30 menit sebelum tidur mengalami percepatan waktu lelap (*sleep onset*) rata-rata 25 menit lebih cepat dibandingkan kelompok kontrol yang membaca buku tanpa musik. Ketua tim peneliti menyatakan bahwa stimulasi *binaural beats* adalah metode non-farmakologis paling efektif untuk mengatasi insomnia kronis pada orang dewasa.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang PALING MERAGUKAN (memperlemah) klaim ketua tim peneliti bahwa metode tersebut merupakan \"metode paling efektif untuk mengatasi insomnia kronis\"?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Sebagian besar responden mengaku merasa lebih rileks dan tenang setelah mendengarkan rekaman stimulasi suara tersebut.  \n> - **B.** Penelitian serupa menunjukkan bahwa terapi relaksasi pernapasan terpandu mempercepat waktu lelap 40 menit lebih cepat dan memberikan perbaikan kualitas tidur yang bertahan lebih lama.  \n> - **C.** Biaya pengadaan perangkat audio untuk mendengarkan stimulasi suara cukup terjangkau bagi sebagian besar masyarakat.  \n> - **D.** Dua dari 200 pasien mengeluhkan rasa tidak nyaman pada telinga akibat penggunaan penyuara telinga (*earphone*) yang terlalu ketat.  \n> - **E.** Musik klasik telah lama digunakan oleh kalangan medis sebagai pengantar tidur tradisional.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Klaim Kunci (Titik Serang HOTS):**\n  - Perhatikan kata penentu pada simpulan peneliti: *\"metode non-farmakologis **paling efektif**\"*.\n  - Klaim dengan kuantor superlatif (*paling/terbaik/satu-satunya*) sangat rentan runtuh jika ditemukan **satu saja metode pembanding lain yang terbukti menghasilkan efektivitas lebih tinggi**.\n  - *Evaluasi Pelemahan:* Opsi B menyajikan data penelitian teruji bahwa terapi relaksasi pernapasan terpandu mampu mempercepat waktu lelap hingga 40 menit (lebih cepat dari binaural beats yang hanya 25 menit) serta memberikan perbaikan jangka panjang yang lebih baik. Fakta adanya metode non-farmakologis lain yang lebih unggul secara langsung menggugurkan klaim superlatif *\"paling efektif\"* yang disimpulkan peneliti.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Fakta bahwa pasien merasa lebih rileks justru cenderung memperkuat manfaat stimulasi, bukan memperlemah.\n  - **Pilihan C Salah:** Keterjangkauan harga perangkat adalah faktor ekonomi yang netral terhadap efektivitas klinis terapi.\n  - **Pilihan D Salah:** Keluhan fisik 2 orang dari 200 pasien (hanya 1%) akibat ukuran earphone adalah masalah teknis alat yang sangat minor dan tidak meruntuhkan data efektivitas 99% pasien lainnya.\n  - **Pilihan E Salah:** Penggunaan musik klasik di masa lalu adalah informasi sejarah yang netral dan tidak membantah efektivitas binaural beats.\n- **Penerapan Trik Cepat (15 Detik):** Soroti kata *\"paling efektif\"*. Untuk meruntuhkan kata \"paling\", carilah opsi yang menyajikan bukti adanya metode lain yang *lebih unggul*. Pilihan B menunjukkan terapi pernapasan mempercepat 40 menit (vs 25 menit). Klaim \"paling efektif\" otomatis runtuh. Jawaban pasti adalah pilihan **B**.",
-    "visualizations_svg": [],
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-02-06-argument]]\n\n\nDalam penalaran kritis UTBK SNBT, sebuah argumen logis dibangun oleh tiga pilar utama:\n1. **Premis (Fakta Bukti):** Data observasi, hasil survei, atau fakta lapangan yang tidak boleh disangkal kebenarannya di dalam batas pengujian soal.\n2. **Simpulan (Klaim Utama):** Pendapat, vonis sebab-akibat, atau rekomendasi yang ditarik oleh penulis dari data premis.\n3. **Asumsi Tersembunyi (*Unstated Assumption*):** Anggapan implisit yang harus bernilai benar agar premis dapat mendukung simpulan secara sah.\n\nBerdasarkan pengaruhnya terhadap klaim penulis, opsi pernyataan di UTBK terbagi menjadi tiga kategori:\n\n1. **Pernyataan yang Memperlemah (*Weaken the Argument*)**  \n   Informasi fakta baru yang jika dianggap benar, akan menurunkan derajat keyakinan atau meruntuhkan keabsahan simpulan penulis. Cara kerja pelemah:\n   - **Menghadirkan Penjelasan / Penyebab Alternatif (*Alternative Cause*):** Menunjukkan bahwa ada faktor ketiga ($Z$) yang sebenarnya menyebabkan timbulnya akibat ($Y$), bukan faktor ($X$) yang diklaim penulis.\n   - **Menunjukkan Hubungan Terbalik (*Reverse Causation*):** Menunjukkan bahwa $Y$ yang menyebabkan $X$, bukan $X$ yang menyebabkan $Y$.\n   - **Menunjukkan Inkonsistensi Kausalitas:** Memberikan data di mana penyebab ($X$) hadir tetapi akibat ($Y$) tidak pernah muncul, atau akibat ($Y$) muncul padahal penyebab ($X$) tidak ada.\n\n2. **Pernyataan yang Memperkuat (*Strengthen the Argument*)**  \n   Informasi fakta baru yang jika dianggap benar, akan menaikkan derajat kepastian dan memperkokoh simpulan penulis. Cara kerja penguat:\n   - **Mengeliminasi Penyebab Alternatif:** Menunjukkan bahwa faktor-faktor lain di luar faktor utama tidak mengalami perubahan atau tidak berpengaruh.\n   - **Membuktikan Ketiadaan Terbalik (*No Cause, No Effect*):** Membuktikan bahwa saat penyebab ditiadakan, akibatnya juga terbukti menghilang secara konsisten.\n   - **Konfirmasi Replikasi:** Menyajikan bukti tambahan dari pengujian independen di kelompok lain yang menunjukkan pola hubungan yang persis sama.\n\n3. **Pernyataan Netral (*No Impact / Irrelevant Statement*)**  \n   Pernyataan yang hanya membicarakan latar belakang subjek, mengulang kalimat teks wacana, atau mengomentari hal di luar cakupan hubungan sebab-akibat. Siswa sering terkecoh menganggap opsi ini relevan karena menggunakan istilah teknis yang mirip dengan teks wacana.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK merancang opsi pengecoh dengan pola-pola berikut untuk menguji ketajaman evaluasi logika Anda:\n\n1. **Jebakan Opsi Netral Bertema Serupa (*Out of Scope Trap*)**  \n   Pilihan jawaban memaparkan fakta yang sangat meyakinkan, ilmiah, atau bernada dramatis mengenai subjek wacana, padahal sama sekali tidak menyentuh hubungan sebab-akibat antara premis dan simpulan.\n2. **Jebakan Arah Respon Terbalik (*Reversed Direction*)**  \n   Ketika pertanyaan meminta opsi yang *paling memperlemah*, pembuat soal menyelipkan satu opsi yang justru *sangat memperkuat* argumen. Siswa yang membaca terburu-buru kerap menandai opsi penguat tersebut hanya karena opsi itu terasa \"sangat mendukung dan sejalan dengan ide penulis\".\n3. **Jebakan Menyerang Fakta Premis (*Attacking Premise*)**  \n   Pilihan jawaban mencoba menyangkal angka data yang sudah tertulis di dalam wacana. Ingat kaidah fundamental UTBK: Anda harus menganggap data premis bernilai benar. Kelemahan argumen selalu terletak pada lompatan logika dari premis menuju simpulan, bukan pada kebohongan data premis.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nTerapkan empat langkah taktis berikut untuk menjawab soal evaluasi argumen secara cepat dan akurat:\n\n1. **Isolasi Simpulan Inti (Klaim Utama Penulis)**  \n   Cari kalimat yang menyatakan vonis kesimpulan (biasanya ditandai kata: *oleh karena itu, disimpulkan bahwa, membuktikan bahwa, menyebabkan*). Bedakan dengan fakta pendukungnya.\n2. **Rumuskan Hubungan Kausalitas Inti ($X \\to Y$)**  \n   Tentukan apa yang dianggap sebagai penyebab ($X$) dan apa yang dianggap sebagai akibat ($Y$).\n3. **Uji Opsi Jawaban dengan \"Pertanyaan Tembak 15 Detik\"**  \n   - Jika ditanya **Pelemah**: *\"Apakah opsi ini memperlihatkan bahwa $Y$ bisa terjadi karena faktor lain selain $X$?\"* Jika ya, opsi tersebut adalah pelemah yang valid.  \n   - Jika ditanya **Penguat**: *\"Apakah opsi ini menepis kemungkinan adanya faktor lain atau membuktikan bahwa tanpa $X$ maka $Y$ tidak terjadi?\"* Jika ya, opsi tersebut adalah penguat yang valid.\n4. **Coret Opsi yang Hanya Menyatakan Dampak Lanjutan**  \n   Eliminasi opsi yang hanya membicarakan apa yang akan terjadi di masa depan setelah kesimpulan tercapai, karena dampak lanjutan tidak memengaruhi kesahihan penarikan kesimpulan saat ini.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Evaluasi argumen menguji kekuatan logika hubungan antara bukti premis dan kesimpulan yang diajukan penulis.\n- **Pelemahan (Weaken):** Menghadirkan penjelasan alternatif, membalikkan arah kausalitas, atau menunjukkan inkonsistensi hubungan sebab-akibat.\n- **Penguatan (Strengthen):** Menyingkirkan variabel pengganggu, membuktikan ketiadaan akibat saat penyebab ditiadakan, atau mengonfirmasi replikasi data.\n- **Waspada Netral:** Pilihan jawaban yang tampak ilmiah namun tidak mengubah probabilitas kebenaran simpulan harus langsung disingkirkan.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Evaluasi Argumen yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks wacana soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Pelemahan Argumen via Penjelasan Alternatif / Fakta Kontradiktif\n\n> **Konteks Wacana Soal:**  \n> Survei internal di sebuah perusahaan konsultan menunjukkan bahwa karyawan yang rutin mengonsumsi minuman berenergi merek X memiliki tingkat produktivitas kerja harian 30% lebih tinggi dibandingkan rekan kerja mereka yang tidak mengonsumsinya. Manajer operasional menyimpulkan bahwa kandungan zat stimulan khusus di dalam minuman merek X merupakan penyebab utama peningkatan produktivitas kerja karyawan tersebut.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang jika benar, PALING MEMPERLEMAH kesimpulan manajer operasional tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Harga minuman berenergi merek X lebih mahal dibandingkan minuman berenergi merek lain di pasaran.  \n> - **B.** Karyawan yang mengonsumsi minuman merek X adalah staf divisi penjualan senior yang telah menerima pelatihan strategi kerja intensif dan bonus insentif kinerja tertinggi.  \n> - **C.** Beberapa karyawan yang tidak mengonsumsi minuman merek X mengaku tetap mampu menyelesaikan target kerja mereka tepat waktu.  \n> - **D.** Minuman berenergi merek X mengandung kadar gula dan kafein yang telah teruji aman oleh badan pengawas obat dan makanan.  \n> - **E.** Konsumsi minuman berenergi secara berlebihan dalam jangka panjang dapat berpotensi menimbulkan gangguan tidur.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Argumen:**\n  - *Premis:* Karyawan peminum minuman merek X memiliki produktivitas 30% lebih tinggi daripada yang bukan peminum.\n  - *Simpulan Manajer:* Kandungan stimulan minuman merek X yang *menyebabkan* peningkatan produktivitas tersebut ($Minuman \\to Produktivitas$).\n  - *Celah Logika:* Manajer melakukan lompatan korelasi menjadi kausalitas semu (*false cause*). Peneliti mengabaikan kemungkinan adanya faktor lain yang membedakan kedua kelompok karyawan tersebut.\n  - *Evaluasi Pelemahan:* Opsi B menghadirkan **penjelasan alternatif (*alternative explanation*) yang jauh lebih masuk akal**. Jika para pengonsumsi minuman merek X ternyata merupakan staf senior yang sudah terlatih secara intensif dan termotivasi oleh bonus insentif kinerja tertinggi, maka keunggulan produktivitas 30% tersebut sangat mungkin dipicu oleh faktor keahlian senioritas dan insentif bonus, bukan karena kandungan stimulan minuman merek X. Fakta ini meruntuhkan klaim kausalitas manajer.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Harga minuman yang mahal sama sekali tidak memengaruhi hubungan efektivitas stimulan terhadap produktivitas (opsi netral di luar cakupan logika).\n  - **Pilihan C Salah:** Frasa \"beberapa karyawan\" hanya menghadirkan sampel subjektif yang tidak membantah fakta bahwa rata-rata kelompok pengonsumsi tetap 30% lebih tinggi.\n  - **Pilihan D Salah:** Keamanan kadar gula dari badan pengawas adalah fakta keamanan produk yang tidak memperlemah maupun memperkuat klaim produktivitas.\n  - **Pilihan E Salah:** Potensi gangguan tidur jangka panjang adalah dampak kesehatan lanjutan, bukan bantahan terhadap fakta peningkatan produktivitas saat ini.\n- **Penerapan Trik Cepat (15 Detik):** Identifikasi klaim: *Minuman merek X yang menyebabkan produktivitas naik*. Cari opsi yang membuktikan bahwa kenaikan produktivitas disebabkan oleh faktor lain. Pilihan B secara tegas menunjukkan bahwa karyawan tersebut memang staf senior berpelatihan dan berinsentif tinggi. Ini adalah alternatif penyebab yang meruntuhkan argumen. Jawaban tepat adalah pilihan **B**.\n\n---\n\n### Variasi 2: Penguatan Argumen via Bukti Korelatif dan Eliminasi Pesaing\n\n> **Konteks Wacana Soal:**  \n> Sejak pemerintah kota menerapkan skema tarif retribusi sampah berdasarkan berat timbangan sampah rumah tangga (*pay-as-you-throw*), volume sampah plastik yang masuk ke Tempat Pembuangan Akhir (TPA) berkurang drastis sebesar 40% dalam waktu enam bulan. Kepala Dinas Lingkungan Hidup menyimpulkan bahwa kebijakan tarif berbasis timbangan ini berhasil mendorong masyarakat untuk secara mandiri memilah dan menyetorkan sampah plastik ke sentra daur ulang demi menekan biaya retribusi bulanan.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang jika benar, PALING MEMPERKUAT kesimpulan Kepala Dinas Lingkungan Hidup tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jumlah armada truk pengangkut sampah milik dinas kebersihan mengalami peremajaan armada pada tahun yang sama.  \n> - **B.** Beberapa warga mengeluhkan biaya retribusi sampah yang dirasa memberatkan pengeluaran rumah tangga mereka.  \n> - **C.** Data dari bank sampah dan sentra daur ulang komunitas di seluruh wilayah kota mencatat lonjakan penerimaan sampah plastik terpilah sebesar 45% selama periode enam bulan tersebut.  \n> - **D.** Pemerintah kota tetangga berencana menerapkan skema tarif retribusi yang sama pada tahun depan.  \n> - **E.** Sampah organik rumah tangga masih mendominasi komposisi timbunan sampah di TPA kota tersebut.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Struktur Argumen:**\n  - *Premis:* Sejak kebijakan tarif timbangan diterapkan, sampah plastik di TPA turun 40%.\n  - *Simpulan Kepala Dinas:* Penurunan di TPA terjadi karena masyarakat memilah dan menyetorkan sampah plastik ke sentra daur ulang demi menghemat retribusi.\n  - *Celah Logika Asumsi:* Penurunan sampah plastik di TPA bisa saja terjadi bukan karena warga mendaur ulang, melainkan karena warga membuang sampah sembarangan ke sungai atau membakarnya secara liar di pekarangan.\n  - *Evaluasi Penguatan:* Opsi C menyajikan **bukti konfirmasi positif secara langsung**. Jika bank sampah dan sentra daur ulang lokal benar-benar mencatatkan lonjakan penerimaan sampah plastik terpilah sebesar 45% pada periode yang sama, fakta ini secara telak membuktikan bahwa sampah yang berkurang di TPA memang benar-benar dialihkan warga ke sentra daur ulang, persis seperti hipotesis kepala dinas.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Peremajaan armada truk tidak menerangkan mengapa volume sampah plastik di TPA bisa turun sebesar 40%.\n  - **Pilihan B Salah:** Keluhan warga hanya memperlihatkan respon emosional terhadap tarif, tetapi tidak membuktikan apakah warga benar-benar menyetorkan sampah plastik ke daur ulang.\n  - **Pilihan D Salah:** Rencana kota tetangga untuk meniru kebijakan adalah dampak eksternal yang tidak membuktikan keberhasilan mekanisme daur ulang di kota saat ini.\n  - **Pilihan E Salah:** Fakta dominasi sampah organik tidak relevan dengan pembahasan mengenai efektivitas penurunan sampah plastik.\n- **Penerapan Trik Cepat (15 Detik):** Cari bukti bahwa sampah plastik yang hilang dari TPA benar-benar bermuara di tempat daur ulang. Pilihan C menyajikan data lonjakan 45% di bank sampah komunitas, mengonfirmasi klaim kepala dinas secara sempurna. Jawaban tepat adalah pilihan **C**.\n\n---\n\n### Variasi 3: Evaluasi Tingkat Pengaruh Argumen dan Pengecoh Netral / HOTS\n\n> **Konteks Wacana Soal:**  \n> Penelitian klinis pada 200 pasien penderita insomnia kronis menunjukkan bahwa kelompok yang mendengarkan stimulasi gelombang suara bernada rendah (*binaural beats*) selama 30 menit sebelum tidur mengalami percepatan waktu lelap (*sleep onset*) rata-rata 25 menit lebih cepat dibandingkan kelompok kontrol yang membaca buku tanpa musik. Ketua tim peneliti menyatakan bahwa stimulasi *binaural beats* adalah metode non-farmakologis paling efektif untuk mengatasi insomnia kronis pada orang dewasa.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan berikut yang PALING MERAGUKAN (memperlemah) klaim ketua tim peneliti bahwa metode tersebut merupakan \"metode paling efektif untuk mengatasi insomnia kronis\"?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Sebagian besar responden mengaku merasa lebih rileks dan tenang setelah mendengarkan rekaman stimulasi suara tersebut.  \n> - **B.** Penelitian serupa menunjukkan bahwa terapi relaksasi pernapasan terpandu mempercepat waktu lelap 40 menit lebih cepat dan memberikan perbaikan kualitas tidur yang bertahan lebih lama.  \n> - **C.** Biaya pengadaan perangkat audio untuk mendengarkan stimulasi suara cukup terjangkau bagi sebagian besar masyarakat.  \n> - **D.** Dua dari 200 pasien mengeluhkan rasa tidak nyaman pada telinga akibat penggunaan penyuara telinga (*earphone*) yang terlalu ketat.  \n> - **E.** Musik klasik telah lama digunakan oleh kalangan medis sebagai pengantar tidur tradisional.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Klaim Kunci (Titik Serang HOTS):**\n  - Perhatikan kata penentu pada simpulan peneliti: *\"metode non-farmakologis **paling efektif**\"*.\n  - Klaim dengan kuantor superlatif (*paling/terbaik/satu-satunya*) sangat rentan runtuh jika ditemukan **satu saja metode pembanding lain yang terbukti menghasilkan efektivitas lebih tinggi**.\n  - *Evaluasi Pelemahan:* Opsi B menyajikan data penelitian teruji bahwa terapi relaksasi pernapasan terpandu mampu mempercepat waktu lelap hingga 40 menit (lebih cepat dari binaural beats yang hanya 25 menit) serta memberikan perbaikan jangka panjang yang lebih baik. Fakta adanya metode non-farmakologis lain yang lebih unggul secara langsung menggugurkan klaim superlatif *\"paling efektif\"* yang disimpulkan peneliti.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Fakta bahwa pasien merasa lebih rileks justru cenderung memperkuat manfaat stimulasi, bukan memperlemah.\n  - **Pilihan C Salah:** Keterjangkauan harga perangkat adalah faktor ekonomi yang netral terhadap efektivitas klinis terapi.\n  - **Pilihan D Salah:** Keluhan fisik 2 orang dari 200 pasien (hanya 1%) akibat ukuran earphone adalah masalah teknis alat yang sangat minor dan tidak meruntuhkan data efektivitas 99% pasien lainnya.\n  - **Pilihan E Salah:** Penggunaan musik klasik di masa lalu adalah informasi sejarah yang netral dan tidak membantah efektivitas binaural beats.\n- **Penerapan Trik Cepat (15 Detik):** Soroti kata *\"paling efektif\"*. Untuk meruntuhkan kata \"paling\", carilah opsi yang menyajikan bukti adanya metode lain yang *lebih unggul*. Pilihan B menunjukkan terapi pernapasan mempercepat 40 menit (vs 25 menit). Klaim \"paling efektif\" otomatis runtuh. Jawaban pasti adalah pilihan **B**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-02-06-argument",
+        "title": "Anatomi Evaluasi Argumen dan Arah Gaya Pengaruh",
+        "caption": "Membidik Celah Asumsi Tersembunyi: Opsi Memperkuat Menutup Celah, Opsi Memperlemah Membuka Celah",
+        "svg_code": "<svg viewBox=\"0 0 640 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .arg-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .arg-box { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; text-anchor: middle; }\n      .arg-sub { font-family: system-ui, sans-serif; font-size: 10px; text-anchor: middle; }\n      :root.dark .arg-title { fill: #f8fafc; }\n    </style>\n  </defs>\n\n  <!-- Central box -->\n  <rect x=\"15\" y=\"10\" width=\"610\" height=\"200\" rx=\"16\" fill=\"rgba(79, 70, 229, 0.04)\" stroke=\"rgba(79, 70, 229, 0.15)\" stroke-width=\"1.5\"/>\n  <text x=\"320\" y=\"30\" class=\"arg-title\">ANATOMI ARGUMEN DAN VEKTOR PENGARUH OPSI</text>\n\n  <!-- Top Arrow (Strengthen / Memperkuat) -->\n  <g transform=\"translate(170, 42)\">\n    <rect width=\"300\" height=\"32\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"1.5\"/>\n    <text x=\"150\" y=\"21\" fill=\"#047857\" class=\"arg-box\">▲ MEMPERKUAT: Menutup alternatif penyebab / Replikasi (+)</text>\n  </g>\n\n  <!-- Main Chain: Premis -> Asumsi -> Simpulan -->\n  <!-- Premis -->\n  <g transform=\"translate(45, 90)\">\n    <rect width=\"140\" height=\"56\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"70\" y=\"26\" fill=\"#3730a3\" class=\"arg-box\">PREMIS BUKTI</text>\n    <text x=\"70\" y=\"44\" fill=\"#4338ca\" class=\"arg-sub\">Fakta data lapangan</text>\n  </g>\n\n  <!-- Connecting Bridge / Assumption -->\n  <g transform=\"translate(195, 96)\">\n    <line x1=\"5\" y1=\"22\" x2=\"90\" y2=\"22\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-dasharray=\"4,4\"/>\n    <rect x=\"10\" y=\"4\" width=\"80\" height=\"36\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n    <text x=\"50\" y=\"20\" fill=\"#b45309\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">ASUMSI</text>\n    <text x=\"50\" y=\"32\" fill=\"#92400e\" font-family=\"system-ui, sans-serif\" font-size=\"8\" text-anchor=\"middle\">Jembatan Logika</text>\n    <line x1=\"90\" y1=\"22\" x2=\"135\" y2=\"22\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  </g>\n\n  <!-- Simpulan -->\n  <g transform=\"translate(445, 90)\">\n    <rect width=\"150\" height=\"56\" rx=\"10\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"75\" y=\"26\" fill=\"#3730a3\" class=\"arg-box\">SIMPULAN KLAIM</text>\n    <text x=\"75\" y=\"44\" fill=\"#4338ca\" class=\"arg-sub\">Vonis sebab-akibat penulis</text>\n  </g>\n\n  <!-- Bottom Arrow (Weaken / Memperlemah) -->\n  <g transform=\"translate(170, 160)\">\n    <rect width=\"300\" height=\"32\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n    <text x=\"150\" y=\"21\" fill=\"#b91c1c\" class=\"arg-box\">▼ MEMPERLEMAH: Memunculkan faktor alternatif Z / Cacat (-)</text>\n  </g>\n</svg>"
+      }
+    ],
     "distractor_traps": [
       "Jebakan Opsi Netral Bertema Serupa: Opsi memuat fakta ilmiah yang relevan secara topik (misal harga terjangkau atau sejarah terapi), tetapi sama sekali tidak memengaruhi relasi kausalitas premis-simpulan.",
       "Jebakan Respon Terbalik: Pertanyaan menanyakan pelemah, tetapi opsi jawaban yang menggoda justru memperkuat klaim penulis.",
@@ -3012,13 +1366,20 @@ const MATERIAL_PU_03_01 = {
       "Deret Larik Melompat / Pola Berseling (Multi-Baris)",
       "Pola Operasi Kombinasi dan Aturan Khusus (HOTS)"
     ],
-    "requires_svg": false,
+    "requires_svg": true,
     "updated_at": "2026-11-08"
   },
   "content": {
     "tactical_overview": "Pola bilangan dan deret menguji ketajaman Anda dalam membaca keteraturan matematis di balik barisan angka. Soal tipe ini selalu hadir di UTBK SNBT dengan tujuan menguji kecepatan observasi numerik Anda di bawah tekanan waktu. Kunci keberhasilan bukan menebak-nebak rumus rumit, melainkan mengenali tanda-tanda visual barisan: jika angka naik secara bertahap dan teratur maka curigai pola selisih penjumlahan bertingkat, jika angka melompat sangat cepat maka curigai perkalian atau kuadrat, dan jika angka naik-turun secara bergantian maka segera pisahkan barisan menjadi dua larik berseling independen.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPola bilangan dan deret di UTBK SNBT dirancang untuk menguji kelincahan logika numerik Anda dalam mengidentifikasi pola hubungan antarangka.\n\nTiga pola utama yang paling dominan di UTBK adalah:\n\n1. **Deret Selisih Bertingkat (*Multi-level Differences*)**  \n   Pola di mana selisih antarbilangan yang berdekatan tidak konstan pada tingkat pertama, melainkan baru membentuk pola teratur pada tingkat kedua atau ketiga.  \n   - *Tingkat 1:* $+3, +6, +9, +12, \\dots$ (selisih membentuk barisan kelipatan 3).  \n   - *Tingkat 2:* Selisih dari selisihnya bernilai tetap ($+3$).\n\n2. **Deret Larik Melompat / Berseling (*Interleaved / Alternating Sequences*)**  \n   Barisan tunggal yang sebenarnya merupakan gabungan dari dua atau tiga barisan independen yang ditulis secara berselang-seling.  \n   - Ciri khas visual: Angka di dalam deret mengalami fluktuasi naik-turun (misal: naik, turun, naik, turun).  \n   - Cara penanganan: Jangan mencari hubungan antara suku ke-1 dan suku ke-2. Langsung hubungkan suku posisi ganjil ($U_1 \\to U_3 \\to U_5 \\to U_7$) dan suku posisi genap ($U_2 \\to U_4 \\to U_6 \\to U_8$).\n\n3. **Pola Operasi Kombinasi Berulang (*Combined Arithmetic Operations*)**  \n   Setiap suku berikutnya dihasilkan dari suku sebelumnya melalui kombinasi dua operasi hitung berbeda secara berulang, misalnya perkalian kemudian penjumlahan: $(\\times 2 - 1)$, $(\\times 2 - 2)$, $(\\times 2 - 3)$, atau operasi terhadap dua suku sebelumnya (pola berbasis Fibonacci).\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Memaksakan Pola Tunggal pada Deret Berseling**  \n   Banyak siswa terjebak mencoba mencari selisih langsung antara suku ke-1 dan ke-2, lalu suku ke-2 dan ke-3 pada barisan yang naik-turun. Akibatnya diperoleh selisih yang acak dan membingungkan (+12, -7, +15, -6). Begitu Anda melihat angka naik-turun secara bergantian, segera alihkan fokus ke pola lompat selang satu suku.\n2. **Jebakan Operasi Berubah Tanda Tanpa Dicermati**  \n   Pada pola operasi kombinasi, pengali atau penambah sering kali tidak bernilai tetap melainkan bertambah secara berurutan, misalnya $\\times 2 - 1, \\times 2 - 2, \\times 2 - 3$. Siswa yang hanya menguji dua suku pertama sering salah menyimpulkan bahwa pengurangnya selalu konstan $-1$.\n3. **Jebakan Kuadrat dan Kubik Tersembunyi**  \n   Selisih antarangka yang berbentuk bilangan kuadrat ($1, 4, 9, 16, 25$) atau bilangan pangkat tiga ($1, 8, 27, 64$) sering tidak disadari siswa karena mereka hanya fokus mencari operasi perkalian langsung.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nGunakan protokol observasi 15 detik berikut untuk menemukan pola deret secara kilat:\n\n1. **Cek Dinamika Arah Angka**  \n   - Apakah angka **naik terus secara konsisten**? $\\to$ Fokus pada pola selisih bertingkat atau perkalian.  \n   - Apakah angka **naik dan turun bergantian**? $\\to$ Langsung pisahkan menjadi deret lompat (larik ganjil dan larik genap).\n2. **Hitung Cepat Selisih 3 Pasang Suku Pertama**  \n   Tuliskan selisih di antara suku 1-2, 2-3, dan 3-4 di atas kertas. Jika selisihnya adalah $+3, +6, +9$, pola sudah langsung terkunci tanpa perlu menebak rumus formal.\n3. **Uji Hipotesis pada Suku Terakhir yang Diketahui**  \n   Sebelum memilih jawaban, terapkan pola yang Anda temukan pada suku sebelum tanda tanya untuk memastikan angka tersebut menghasilkan angka berikutnya yang tercantum di soal.\n4. **Eliminasi Opsi Jawaban Berdasarkan Taksiran Besar**  \n   Jika pola menunjukkan pertambahan di atas $+20$, segera coret opsi pilihan ganda yang nilainya terlalu kecil atau bahkan lebih kecil dari suku sebelumnya.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Pola bilangan menguji kemampuan visualisasi keteraturan relasi matematis antarbilangan.\n- **Dua Tipe Terbesar:** Deret bertingkat (analisis selisih berulang) dan deret melompat berseling (analisis suku posisi ganjil vs genap secara terpisah).\n- **Strategi Eksekusi:** Selalu hitung selisih antarbilangan terlebih dahulu; jika acak atau berfluktuasi naik-turun, lompatkan satu suku untuk memisahkan dua relasi independen.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Pola Bilangan dan Deret yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks barisan, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Deret Aritmetika dan Geometri Bertingkat\n\n> **Konteks Barisan Soal:**  \n> Diberikan sebuah barisan bilangan sebagai berikut:  \n> $$2, \\; 5, \\; 11, \\; 20, \\; 32, \\; X, \\; Y$$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ dan $Y$ berturut-turut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 46 dan 62  \n> - **B.** 47 dan 65  \n> - **C.** 47 dan 64  \n> - **D.** 48 dan 66  \n> - **E.** 46 dan 63\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Selisih Antarsuku:**\n  - $U_1 \\to U_2: 5 - 2 = +3$\n  - $U_2 \\to U_3: 11 - 5 = +6$\n  - $U_3 \\to U_4: 20 - 11 = +9$\n  - $U_4 \\to U_5: 32 - 20 = +12$\n- **Analisis Selisih Tingkat Kedua:**\n  - Barisan selisih tingkat pertama adalah: $3, \\; 6, \\; 9, \\; 12, \\dots$\n  - Perhatikan bahwa selisihnya bertambah secara konstan sebesar $+3$ (kelipatan 3 bertingkat).\n- **Menghitung Nilai $X$ dan $Y$:**\n  - Selisih berikutnya untuk menghasilkan $X$ adalah $12 + 3 = +15$.  \n    Maka nilai $X = 32 + 15 = 47$.\n  - Selisih berikutnya untuk menghasilkan $Y$ adalah $15 + 3 = +18$.  \n    Maka nilai $Y = 47 + 18 = 65$.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & E Salah:** Menghitung $X = 46$ (keliru menjumlahkan $32 + 14$, bukan $+15$).\n  - **Pilihan C Salah:** Nilai $X = 47$ benar, tetapi $Y = 64$ keliru karena menjumlahkan dengan $+17$ bukan $+18$.\n  - **Pilihan D Salah:** Menghitung $X = 48$ (mengasumsikan selisih $+16$).\n- **Penerapan Trik Cepat (15 Detik):** Cermati selisih: $+3, +6, +9, +12$. Ini jelas kelipatan 3! Angka berikutnya wajib $+15$, sehingga $32 + 15 = 47$. Sisa opsi hanya B dan C. Langkah berikutnya $+18$, maka $47 + 18 = 65$. Jawaban langsung terkunci pada pilihan **B**.\n\n---\n\n### Variasi 2: Deret Larik Melompat / Pola Berseling (Multi-Baris)\n\n> **Konteks Barisan Soal:**  \n> Diberikan barisan bilangan campuran sebagai berikut:  \n> $$4, \\; 25, \\; 8, \\; 22, \\; 16, \\; 19, \\; X, \\; Y$$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ dan $Y$ berturut-turut yang paling tepat melengkapi barisan tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 32 dan 16  \n> - **B.** 32 dan 15  \n> - **C.** 24 dan 16  \n> - **D.** 30 dan 17  \n> - **E.** 36 dan 14\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Deteksi Karakteristik Deret:**\n  - Perhatikan pola pergerakan angka: $4 \\to 25$ (naik tajam), $25 \\to 8$ (turun tajam), $8 \\to 22$ (naik), $22 \\to 16$ (turun).\n  - Fluktuasi naik-turun yang berulang secara konsisten adalah ciri mutlak dari **deret berseling 2 larik**.\n- **Pemisahan Menjadi Dua Larik Independen:**\n  - **Larik 1 (Suku Posisi Ganjil: $U_1, U_3, U_5, U_7 = X$):**  \n    $$4, \\; 8, \\; 16, \\; X$$  \n    Pola: Setiap suku dikalikan 2 (rasio $\\times 2$).  \n    Maka nilai $X = 16 \\times 2 = 32$.\n  - **Larik 2 (Suku Posisi Genap: $U_2, U_4, U_6, U_8 = Y$):**  \n    $$25, \\; 22, \\; 19, \\; Y$$  \n    Pola: Setiap suku berkurang 3 (beda konstan $-3$).  \n    Maka nilai $Y = 19 - 3 = 16$.\n- **Kesimpulan Pasangan $(X, Y)$:** Nilai yang tepat berturut-turut adalah **32 dan 16**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan B Salah:** Nilai $Y = 15$ keliru menghitung pengurangan $19 - 4$.\n  - **Pilihan C Salah:** Nilai $X = 24$ keliru mengasumsikan pola penambahan $+8$ bukan perkalian $\\times 2$.\n  - **Pilihan D & E Salah:** Pola perkalian dan pengurangan tidak diterapkan dengan konsisten.\n- **Penerapan Trik Cepat (15 Detik):** Langsung pisahkan: $4 \\to 8 \\to 16 \\to X$ (pasti berlipat ganda, jadi $X = 32$). Lalu $25 \\to 22 \\to 19 \\to Y$ (selalu berkurang 3, jadi $19 - 3 = 16$). Dalam waktu 10 detik, jawaban **A** langsung ditemukan.\n\n---\n\n### Variasi 3: Pola Operasi Kombinasi dan Aturan Khusus / HOTS\n\n> **Konteks Barisan Soal:**  \n> Diberikan barisan angka yang dibentuk melalui suatu aturan operasi kombinasi aritmetika teratur:  \n> $$4, \\; 7, \\; 12, \\; 21, \\; 38, \\; 71, \\; X$$  \n>  \n> **Pertanyaan UTBK:** *Bilangan yang paling tepat menggantikan $X$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 132  \n> - **B.** 134  \n> - **C.** 136  \n> - **D.** 138  \n> - **E.** 142\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Relasi Antarsuku:**\n  - $U_1 = 4$  \n  - $U_2 = 4 \\times 2 - 1 = 8 - 1 = 7$  \n  - $U_3 = 7 \\times 2 - 2 = 14 - 2 = 12$  \n  - $U_4 = 12 \\times 2 - 3 = 24 - 3 = 21$  \n  - $U_5 = 21 \\times 2 - 4 = 42 - 4 = 38$  \n  - $U_6 = 38 \\times 2 - 5 = 76 - 5 = 71$  \n- **Identifikasi Pola Induktif:**\n  - Pola pembentukan suku ke-$n$ dari suku sebelumnya adalah: dikalikan 2, kemudian dikurangi bilangan bulat yang berurutan naik mulai dari 1 ($n - 1$).\n  - Operasi berturut-turut: $\\times 2 - 1, \\; \\times 2 - 2, \\; \\times 2 - 3, \\; \\times 2 - 4, \\; \\times 2 - 5, \\dots$\n- **Menghitung Nilai $X$:**\n  - Untuk memperoleh suku ke-7 ($X$), polanya adalah dikalikan 2 lalu dikurangi 6:  \n    $$X = 71 \\times 2 - 6 = 142 - 6 = 136$$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & B Salah:** Menghitung $142 - 10$ atau $142 - 8$ karena keliru menyangka pengurangnya adalah bilangan genap kelipatan 2.\n  - **Pilihan D Salah:** Menghitung $142 - 4$ karena lupa menaikkan angka pengurang.\n  - **Pilihan E Salah:** Nilai $142$ hanya hasil kali $71 \\times 2$ tanpa melakukan operasi pengurangan.\n- **Penerapan Trik Cepat (15 Detik):** Perhatikan angka perkalian 2: $4 \\to 8$ (kurang 1), $7 \\to 14$ (kurang 2), $12 \\to 24$ (kurang 3), $21 \\to 42$ (kurang 4), $38 \\to 76$ (kurang 5). Maka untuk 71 pasti dikalikan 2 lalu dikurang 6: $71 \\times 2 = 142 \\implies 142 - 6 = 136$. Jawaban tepat adalah pilihan **C**.",
-    "visualizations_svg": [],
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPola bilangan dan deret di UTBK SNBT dirancang untuk menguji kelincahan logika numerik Anda dalam mengidentifikasi pola hubungan antarangka.\n\nTiga pola utama yang paling dominan di UTBK adalah:\n\n1. **Deret Selisih Bertingkat (*Multi-level Differences*)**  \n   Pola di mana selisih antarbilangan yang berdekatan tidak konstan pada tingkat pertama, melainkan baru membentuk pola teratur pada tingkat kedua atau ketiga.  \n   - *Tingkat 1:* $+3, +6, +9, +12, \\dots$ (selisih membentuk barisan kelipatan 3).  \n   - *Tingkat 2:* Selisih dari selisihnya bernilai tetap ($+3$).\n\n2. **Deret Larik Melompat / Berseling (*Interleaved / Alternating Sequences*)**  \n   Barisan tunggal yang sebenarnya merupakan gabungan dari dua atau tiga barisan independen yang ditulis secara berselang-seling.  \n   - Ciri khas visual: Angka di dalam deret mengalami fluktuasi naik-turun (misal: naik, turun, naik, turun).  \n   - Cara penanganan: Jangan mencari hubungan antara suku ke-1 dan suku ke-2. Langsung hubungkan suku posisi ganjil ($U_1 \\to U_3 \\to U_5 \\to U_7$) dan suku posisi genap ($U_2 \\to U_4 \\to U_6 \\to U_8$).\n\n3. **Pola Operasi Kombinasi Berulang (*Combined Arithmetic Operations*)**  \n   Setiap suku berikutnya dihasilkan dari suku sebelumnya melalui kombinasi dua operasi hitung berbeda secara berulang, misalnya perkalian kemudian penjumlahan: $(\\times 2 - 1)$, $(\\times 2 - 2)$, $(\\times 2 - 3)$, atau operasi terhadap dua suku sebelumnya (pola berbasis Fibonacci).\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Memaksakan Pola Tunggal pada Deret Berseling**  \n   Banyak siswa terjebak mencoba mencari selisih langsung antara suku ke-1 dan ke-2, lalu suku ke-2 dan ke-3 pada barisan yang naik-turun. Akibatnya diperoleh selisih yang acak dan membingungkan (+12, -7, +15, -6). Begitu Anda melihat angka naik-turun secara bergantian, segera alihkan fokus ke pola lompat selang satu suku.\n2. **Jebakan Operasi Berubah Tanda Tanpa Dicermati**  \n   Pada pola operasi kombinasi, pengali atau penambah sering kali tidak bernilai tetap melainkan bertambah secara berurutan, misalnya $\\times 2 - 1, \\times 2 - 2, \\times 2 - 3$. Siswa yang hanya menguji dua suku pertama sering salah menyimpulkan bahwa pengurangnya selalu konstan $-1$.\n3. **Jebakan Kuadrat dan Kubik Tersembunyi**  \n   Selisih antarangka yang berbentuk bilangan kuadrat ($1, 4, 9, 16, 25$) atau bilangan pangkat tiga ($1, 8, 27, 64$) sering tidak disadari siswa karena mereka hanya fokus mencari operasi perkalian langsung.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nGunakan protokol observasi 15 detik berikut untuk menemukan pola deret secara kilat:\n\n1. **Cek Dinamika Arah Angka**  \n   - Apakah angka **naik terus secara konsisten**? $\\to$ Fokus pada pola selisih bertingkat atau perkalian.  \n   - Apakah angka **naik dan turun bergantian**? $\\to$ Langsung pisahkan menjadi deret lompat (larik ganjil dan larik genap).\n2. **Hitung Cepat Selisih 3 Pasang Suku Pertama**  \n   Tuliskan selisih di antara suku 1-2, 2-3, dan 3-4 di atas kertas. Jika selisihnya adalah $+3, +6, +9$, pola sudah langsung terkunci tanpa perlu menebak rumus formal.\n3. **Uji Hipotesis pada Suku Terakhir yang Diketahui**  \n   Sebelum memilih jawaban, terapkan pola yang Anda temukan pada suku sebelum tanda tanya untuk memastikan angka tersebut menghasilkan angka berikutnya yang tercantum di soal.\n4. **Eliminasi Opsi Jawaban Berdasarkan Taksiran Besar**  \n   Jika pola menunjukkan pertambahan di atas $+20$, segera coret opsi pilihan ganda yang nilainya terlalu kecil atau bahkan lebih kecil dari suku sebelumnya.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Pola bilangan menguji kemampuan visualisasi keteraturan relasi matematis antarbilangan.\n- **Dua Tipe Terbesar:** Deret bertingkat (analisis selisih berulang) dan deret melompat berseling (analisis suku posisi ganjil vs genap secara terpisah).\n- **Strategi Eksekusi:** Selalu hitung selisih antarbilangan terlebih dahulu; jika acak atau berfluktuasi naik-turun, lompatkan satu suku untuk memisahkan dua relasi independen.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Pola Bilangan dan Deret yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks barisan, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Deret Aritmetika dan Geometri Bertingkat\n\n> **Konteks Barisan Soal:**  \n> Diberikan sebuah barisan bilangan sebagai berikut:  \n> $2, \\; 5, \\; 11, \\; 20, \\; 32, \\; X, \\; Y$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ dan $Y$ berturut-turut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 46 dan 62  \n> - **B.** 47 dan 65  \n> - **C.** 47 dan 64  \n> - **D.** 48 dan 66  \n> - **E.** 46 dan 63\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Selisih Antarsuku:**\n  - $U_1 \\to U_2: 5 - 2 = +3$\n  - $U_2 \\to U_3: 11 - 5 = +6$\n  - $U_3 \\to U_4: 20 - 11 = +9$\n  - $U_4 \\to U_5: 32 - 20 = +12$\n- **Analisis Selisih Tingkat Kedua:**\n  - Barisan selisih tingkat pertama adalah: $3, \\; 6, \\; 9, \\; 12, \\dots$\n  - Perhatikan bahwa selisihnya bertambah secara konstan sebesar $+3$ (kelipatan 3 bertingkat).\n- **Menghitung Nilai $X$ dan $Y$:**\n  - Selisih berikutnya untuk menghasilkan $X$ adalah $12 + 3 = +15$.  \n    Maka nilai $X = 32 + 15 = 47$.\n  - Selisih berikutnya untuk menghasilkan $Y$ adalah $15 + 3 = +18$.  \n    Maka nilai $Y = 47 + 18 = 65$.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & E Salah:** Menghitung $X = 46$ (keliru menjumlahkan $32 + 14$, bukan $+15$).\n  - **Pilihan C Salah:** Nilai $X = 47$ benar, tetapi $Y = 64$ keliru karena menjumlahkan dengan $+17$ bukan $+18$.\n  - **Pilihan D Salah:** Menghitung $X = 48$ (mengasumsikan selisih $+16$).\n- **Penerapan Trik Cepat (15 Detik):** Cermati selisih: $+3, +6, +9, +12$. Ini jelas kelipatan 3! Angka berikutnya wajib $+15$, sehingga $32 + 15 = 47$. Sisa opsi hanya B dan C. Langkah berikutnya $+18$, maka $47 + 18 = 65$. Jawaban langsung terkunci pada pilihan **B**.\n\n---\n\n### Variasi 2: Deret Larik Melompat / Pola Berseling (Multi-Baris)\n\n[[SVG:svg-pu-03-01-alternating]]\n\n\n> **Konteks Barisan Soal:**  \n> Diberikan barisan bilangan campuran sebagai berikut:  \n> $4, \\; 25, \\; 8, \\; 22, \\; 16, \\; 19, \\; X, \\; Y$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ dan $Y$ berturut-turut yang paling tepat melengkapi barisan tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 32 dan 16  \n> - **B.** 32 dan 15  \n> - **C.** 24 dan 16  \n> - **D.** 30 dan 17  \n> - **E.** 36 dan 14\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Deteksi Karakteristik Deret:**\n  - Perhatikan pola pergerakan angka: $4 \\to 25$ (naik tajam), $25 \\to 8$ (turun tajam), $8 \\to 22$ (naik), $22 \\to 16$ (turun).\n  - Fluktuasi naik-turun yang berulang secara konsisten adalah ciri mutlak dari **deret berseling 2 larik**.\n- **Pemisahan Menjadi Dua Larik Independen:**\n  - **Larik 1 (Suku Posisi Ganjil: $U_1, U_3, U_5, U_7 = X$):**  \n    $4, \\; 8, \\; 16, \\; X$  \n    Pola: Setiap suku dikalikan 2 (rasio $\\times 2$).  \n    Maka nilai $X = 16 \\times 2 = 32$.\n  - **Larik 2 (Suku Posisi Genap: $U_2, U_4, U_6, U_8 = Y$):**  \n    $25, \\; 22, \\; 19, \\; Y$  \n    Pola: Setiap suku berkurang 3 (beda konstan $-3$).  \n    Maka nilai $Y = 19 - 3 = 16$.\n- **Kesimpulan Pasangan $(X, Y)$:** Nilai yang tepat berturut-turut adalah **32 dan 16**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan B Salah:** Nilai $Y = 15$ keliru menghitung pengurangan $19 - 4$.\n  - **Pilihan C Salah:** Nilai $X = 24$ keliru mengasumsikan pola penambahan $+8$ bukan perkalian $\\times 2$.\n  - **Pilihan D & E Salah:** Pola perkalian dan pengurangan tidak diterapkan dengan konsisten.\n- **Penerapan Trik Cepat (15 Detik):** Langsung pisahkan: $4 \\to 8 \\to 16 \\to X$ (pasti berlipat ganda, jadi $X = 32$). Lalu $25 \\to 22 \\to 19 \\to Y$ (selalu berkurang 3, jadi $19 - 3 = 16$). Dalam waktu 10 detik, jawaban **A** langsung ditemukan.\n\n---\n\n### Variasi 3: Pola Operasi Kombinasi dan Aturan Khusus / HOTS\n\n> **Konteks Barisan Soal:**  \n> Diberikan barisan angka yang dibentuk melalui suatu aturan operasi kombinasi aritmetika teratur:  \n> $4, \\; 7, \\; 12, \\; 21, \\; 38, \\; 71, \\; X$  \n>  \n> **Pertanyaan UTBK:** *Bilangan yang paling tepat menggantikan $X$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 132  \n> - **B.** 134  \n> - **C.** 136  \n> - **D.** 138  \n> - **E.** 142\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Relasi Antarsuku:**\n  - $U_1 = 4$  \n  - $U_2 = 4 \\times 2 - 1 = 8 - 1 = 7$  \n  - $U_3 = 7 \\times 2 - 2 = 14 - 2 = 12$  \n  - $U_4 = 12 \\times 2 - 3 = 24 - 3 = 21$  \n  - $U_5 = 21 \\times 2 - 4 = 42 - 4 = 38$  \n  - $U_6 = 38 \\times 2 - 5 = 76 - 5 = 71$  \n- **Identifikasi Pola Induktif:**\n  - Pola pembentukan suku ke-$n$ dari suku sebelumnya adalah: dikalikan 2, kemudian dikurangi bilangan bulat yang berurutan naik mulai dari 1 ($n - 1$).\n  - Operasi berturut-turut: $\\times 2 - 1, \\; \\times 2 - 2, \\; \\times 2 - 3, \\; \\times 2 - 4, \\; \\times 2 - 5, \\dots$\n- **Menghitung Nilai $X$:**\n  - Untuk memperoleh suku ke-7 ($X$), polanya adalah dikalikan 2 lalu dikurangi 6:  \n    $X = 71 \\times 2 - 6 = 142 - 6 = 136$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & B Salah:** Menghitung $142 - 10$ atau $142 - 8$ karena keliru menyangka pengurangnya adalah bilangan genap kelipatan 2.\n  - **Pilihan D Salah:** Menghitung $142 - 4$ karena lupa menaikkan angka pengurang.\n  - **Pilihan E Salah:** Nilai $142$ hanya hasil kali $71 \\times 2$ tanpa melakukan operasi pengurangan.\n- **Penerapan Trik Cepat (15 Detik):** Perhatikan angka perkalian 2: $4 \\to 8$ (kurang 1), $7 \\to 14$ (kurang 2), $12 \\to 24$ (kurang 3), $21 \\to 42$ (kurang 4), $38 \\to 76$ (kurang 5). Maka untuk 71 pasti dikalikan 2 lalu dikurang 6: $71 \\times 2 = 142 \\implies 142 - 6 = 136$. Jawaban tepat adalah pilihan **C**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-03-01-alternating",
+        "title": "Visualisasi Jalur Deret Larik Berseling (Multi-Baris)",
+        "caption": "Jalur Ganjil Mengikuti Rasio x2, Jalur Genap Mengikuti Beda Tetap -3",
+        "svg_code": "<svg viewBox=\"0 0 640 210\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .alt-num { font-family: system-ui, sans-serif; font-size: 17px; font-weight: 800; text-anchor: middle; }\n      .alt-idx { font-family: system-ui, sans-serif; font-size: 10px; font-weight: 700; fill: #64748b; text-anchor: middle; }\n      .alt-op { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700; text-anchor: middle; }\n      :root.dark .alt-idx { fill: #94a3b8; }\n    </style>\n  </defs>\n\n  <!-- Background container -->\n  <rect x=\"10\" y=\"10\" width=\"620\" height=\"190\" rx=\"16\" fill=\"rgba(79, 70, 229, 0.04)\" stroke=\"rgba(79, 70, 229, 0.15)\" stroke-width=\"1.5\"/>\n\n  <!-- Top label: Larik Ganjil (Biru) -->\n  <text x=\"320\" y=\"28\" fill=\"#4f46e5\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">JALUR POSISI GANJIL: POLA GEOMETRI ( × 2 )</text>\n\n  <!-- Upper jump arcs (Odd positions: 1 -> 3 -> 5 -> 7) -->\n  <path d=\"M 60 78 Q 135 34 210 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.2\" marker-end=\"url(#arrow-blue)\"/>\n  <text x=\"135\" y=\"52\" fill=\"#4f46e5\" class=\"alt-op\">× 2</text>\n\n  <path d=\"M 210 78 Q 285 34 360 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.2\"/>\n  <text x=\"285\" y=\"52\" fill=\"#4f46e5\" class=\"alt-op\">× 2</text>\n\n  <path d=\"M 360 78 Q 435 34 510 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"2.2\"/>\n  <text x=\"435\" y=\"52\" fill=\"#4f46e5\" class=\"alt-op\">× 2</text>\n\n  <!-- Number cards row (Y = 100) -->\n  <!-- 1: 4 -->\n  <circle cx=\"60\" cy=\"105\" r=\"22\" fill=\"rgba(99, 102, 241, 0.2)\" stroke=\"#4f46e5\" stroke-width=\"2\"/>\n  <text x=\"60\" y=\"111\" fill=\"#4f46e5\" class=\"alt-num\">4</text>\n  <text x=\"60\" y=\"80\" class=\"alt-idx\">U1</text>\n\n  <!-- 2: 25 -->\n  <circle cx=\"135\" cy=\"105\" r=\"22\" fill=\"rgba(245, 158, 11, 0.2)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"135\" y=\"111\" fill=\"#d97706\" class=\"alt-num\">25</text>\n  <text x=\"135\" y=\"137\" class=\"alt-idx\">U2</text>\n\n  <!-- 3: 8 -->\n  <circle cx=\"210\" cy=\"105\" r=\"22\" fill=\"rgba(99, 102, 241, 0.2)\" stroke=\"#4f46e5\" stroke-width=\"2\"/>\n  <text x=\"210\" y=\"111\" fill=\"#4f46e5\" class=\"alt-num\">8</text>\n  <text x=\"210\" y=\"80\" class=\"alt-idx\">U3</text>\n\n  <!-- 4: 22 -->\n  <circle cx=\"285\" cy=\"105\" r=\"22\" fill=\"rgba(245, 158, 11, 0.2)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"285\" y=\"111\" fill=\"#d97706\" class=\"alt-num\">22</text>\n  <text x=\"285\" y=\"137\" class=\"alt-idx\">U4</text>\n\n  <!-- 5: 16 -->\n  <circle cx=\"360\" cy=\"105\" r=\"22\" fill=\"rgba(99, 102, 241, 0.2)\" stroke=\"#4f46e5\" stroke-width=\"2\"/>\n  <text x=\"360\" y=\"111\" fill=\"#4f46e5\" class=\"alt-num\">16</text>\n  <text x=\"360\" y=\"80\" class=\"alt-idx\">U5</text>\n\n  <!-- 6: 19 -->\n  <circle cx=\"435\" cy=\"105\" r=\"22\" fill=\"rgba(245, 158, 11, 0.2)\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"435\" y=\"111\" fill=\"#d97706\" class=\"alt-num\">19</text>\n  <text x=\"435\" y=\"137\" class=\"alt-idx\">U6</text>\n\n  <!-- 7: X = 32 -->\n  <circle cx=\"510\" cy=\"105\" r=\"24\" fill=\"rgba(16, 185, 129, 0.25)\" stroke=\"#10b981\" stroke-width=\"2.5\"/>\n  <text x=\"510\" y=\"111\" fill=\"#059669\" class=\"alt-num\">32</text>\n  <text x=\"510\" y=\"80\" fill=\"#059669\" font-weight=\"bold\" class=\"alt-idx\">X (U7)</text>\n\n  <!-- 8: Y = 16 -->\n  <circle cx=\"585\" cy=\"105\" r=\"24\" fill=\"rgba(16, 185, 129, 0.25)\" stroke=\"#10b981\" stroke-width=\"2.5\"/>\n  <text x=\"585\" y=\"111\" fill=\"#059669\" class=\"alt-num\">16</text>\n  <text x=\"585\" y=\"137\" fill=\"#059669\" font-weight=\"bold\" class=\"alt-idx\">Y (U8)</text>\n\n  <!-- Lower jump arcs (Even positions: 2 -> 4 -> 6 -> 8) -->\n  <path d=\"M 135 130 Q 210 176 285 130\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/>\n  <text x=\"210\" y=\"166\" fill=\"#d97706\" class=\"alt-op\">- 3</text>\n\n  <path d=\"M 285 130 Q 360 176 435 130\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/>\n  <text x=\"360\" y=\"166\" fill=\"#d97706\" class=\"alt-op\">- 3</text>\n\n  <path d=\"M 435 130 Q 510 176 585 130\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/>\n  <text x=\"510\" y=\"166\" fill=\"#d97706\" class=\"alt-op\">- 3</text>\n\n  <!-- Bottom label: Larik Genap (Kuning) -->\n  <text x=\"320\" y=\"196\" fill=\"#d97706\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">JALUR POSISI GENAP: POLA ARITMETIKA ( - 3 )</text>\n</svg>"
+      }
+    ],
     "distractor_traps": [
       "Memaksakan pola selisih tunggal pada deret berseling naik-turun: Segera pisahkan menjadi dua larik ganjil dan genap.",
       "Lupa menaikkan nilai pengurang pada pola kombinasi: Menganggap pengurang selalu konstan padahal bertambah urut (-1, -2, -3, ...).",
@@ -3154,13 +1515,20 @@ const MATERIAL_PU_03_02 = {
       "Matriks Angka Berpola Hubungan Baris dan Kolom",
       "Analogi dan Serial Spasial Transformasi Objek Geometri (HOTS)"
     ],
-    "requires_svg": false,
+    "requires_svg": true,
     "updated_at": "2026-11-08"
   },
   "content": {
     "tactical_overview": "Spasial numerik dan pola gambar menguji kejelian Anda dalam menghubungkan konfigurasi visual geometris dengan relasi operasi aritmetika. Di UTBK SNBT, soal jenis ini paling sering muncul dalam bentuk bangun datar (segitiga atau lingkaran) yang memuat beberapa angka di sudut dan satu angka misterius di pusat, atau tabel matriks angka 3x3. Kunci taktisnya adalah memperlakukan angka di sudut sebagai \"input\" dan angka di pusat sebagai \"output\". Uji operasi paling umum: perkalian sisi bawah dikurangi sisi atas, atau jumlah dua sisi dibagi sisi ketiga. Begitu sebuah formula berhasil menghasilkan angka pusat pada gambar pertama, formula yang identik wajib diterapkan pada gambar kedua.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nSpasial numerik mengintegrasikan penalaran visual dan aritmetika dasar:\n\n1. **Bangun Geometri Berangka (Pola Sudut vs Pusat)**  \n   Sebuah bangun geometri (misal: segitiga, lingkaran bertingkat, atau bujur sangkar) memuat angka-angka pada setiap titik sudut dan satu angka di tengah.  \n   - Angka sudut berperan sebagai **variabel input** ($A, B, C$).  \n   - Angka tengah berperan sebagai **target output** ($Z$).  \n   - Pola baku yang sering muncul:  \n     - $(A \\times B) - C = Z$  \n     - $\\frac{A + B}{C} = Z$  \n     - $(A + B) \\times C = Z$\n\n2. **Matriks Angka Berpola Baris dan Kolom**  \n   Tabel angka $3 \\times 3$ di mana salah satu sel berisi tanda tanya ($?$).  \n   - Tentukan apakah pola beroperasi secara **horizontal (per baris)** atau **vertikal (per kolom)**.  \n   - Cara membedakan: Bandingkan angka-angka di ujung baris vs ujung kolom. Jika angka di kolom ke-3 selalu bernilai jauh lebih besar daripada kolom 1 dan 2, maka polanya hampir pasti bekerja secara horizontal (operasi kolom 1 dan 2 menghasilkan kolom 3).\n\n3. **Serial Spasial dan Transformasi Gambar**  \n   Rangkaian gambar berurutan yang mengalami transformasi bentuk, orientasi arah putaran (rotasi $45^\\circ$ atau $90^\\circ$), pencerminan, atau penambahan/pengurangan elemen titik dan arsiran secara berpola teratur.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Pola Kebetulan pada Gambar Pertama**  \n   Terkadang sebuah formula sederhana bekerja secara kebetulan pada Gambar I, namun menghasilkan angka yang tidak tersedia di opsi pilihan ganda pada Gambar II. Jika hal ini terjadi, jangan panik; cari alternatif kombinasi operasi lain (misalnya menguji pembagian atau perkalian pasangan sudut yang berbeda).\n2. **Jebakan Membalik Peran Baris dan Kolom pada Matriks**  \n   Siswa sering kali memaksakan hubungan antarbaris padahal matriks tersebut dirancang bekerja antarkolom. Selalu uji konsistensi formula pada Baris 1 DAN Baris 2 sebelum menerapkannya pada Baris 3.\n3. **Jebakan Mengabaikan Arah Sudut Pandang Rotasi**  \n   Pada soal serial gambar, pembuat soal sering menyamarkan rotasi $90^\\circ$ berlawanan jarum jam dengan pencerminan horizontal. Teliti orientasi elemen penanda (seperti letak titik hitam atau bendera panah) untuk memastikan jenis transformasi yang terjadi.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nTerapkan teknik tembak sistematis ini untuk soal pola gambar dan matriks:\n\n1. **Bandingkan Besaran Angka Pusat terhadap Angka Sudut**  \n   - Jika angka pusat **jauh lebih besar** dari angka-angka sudut $\\to$ prioritaskan operasi **perkalian ($A \\times B$)**.  \n   - Jika angka pusat **lebih kecil** dari angka sudut $\\to$ prioritaskan operasi **pengurangan atau pembagian ($\\{A + B\\} / C$)**.\n2. **Uji Rumus Standar UTBK Pertama Kali**  \n   Coba pola klasik: *(Kiri Bawah $\\times$ Kanan Bawah) $-$ Atas*. Ini adalah formula yang paling sering digunakan pembuat soal UTBK.\n3. **Pada Matriks: Cari Kolom Bernilai Terbesar**  \n   Jika Kolom 3 adalah yang paling besar di setiap baris, jadikan Kolom 3 sebagai hasil dari operasi Kolom 1 dan Kolom 2: $K_3 = f(K_1, K_2)$.\n4. **Verifikasi Dua Kali**  \n   Pastikan rumus Anda menghasilkan angka yang persis sama pada Gambar I dan Gambar II sebelum melangkah ke gambar target.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Menemukan fungsi matematis tersembunyi yang menghubungkan elemen spasial input (sudut/baris) menjadi output (pusat/kolom akhir).\n- **Aturan Baku:** Satu formula yang valid harus berlaku tanpa modifikasi untuk seluruh gambar contoh yang disajikan.\n- **Strategi Eksekusi:** Mulai dari perkalian dua sisi bawah, bandingkan skala besaran angka pusat, dan kunci baris/kolom penentu pada matriks.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Pola Gambar dan Spasial Numerik yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks bangun, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Spasial Angka dalam Pola Bangun Geometri (Angka Sudut vs Pusat)\n\n> **Konteks Bangun Soal:**  \n> Diberikan dua buah bangun segitiga berangka dengan aturan operasi aritmetika yang identik:  \n> - **Segitiga I:** Sudut atas bernilai $12$, sudut kiri bawah bernilai $7$, sudut kanan bawah bernilai $5$, dan angka di pusat segitiga bernilai $23$.  \n> - **Segitiga II:** Sudut atas bernilai $15$, sudut kiri bawah bernilai $8$, sudut kanan bawah bernilai $6$, dan angka di pusat segitiga bernilai $X$.  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ pada Segitiga II adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 28  \n> - **B.** 31  \n> - **C.** 33  \n> - **D.** 35  \n> - **E.** 38\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Pola pada Segitiga I:**\n  - Komponen input: Atas $= 12$, Kiri Bawah $= 7$, Kanan Bawah $= 5$.\n  - Target output: Pusat $= 23$.\n  - Uji operasi:\n    - Apakah $(7 + 5) + 12 = 24$ (mendekati, tapi bukan 23).\n    - Apakah perkalian sisi bawah dikurangi sisi atas:  \n      $$(Kiri \\; Bawah \\times Kanan \\; Bawah) - Atas = (7 \\times 5) - 12 = 35 - 12 = 23$$  \n      Formula ini menghasilkan angka pusat $23$ secara tepat dan sempurna!\n- **Penerapan Pola pada Segitiga II:**\n  - Komponen input: Atas $= 15$, Kiri Bawah $= 8$, Kanan Bawah $= 6$.\n  - Terapkan formula yang sama:  \n    $$X = (8 \\times 6) - 15 = 48 - 15 = 33$$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menghitung $(8 \\times 6) / 2 + ...$ tanpa pola yang konsisten.\n  - **Pilihan B Salah:** Menghitung $48 - 17$ (keliru mengurangkan angka yang salah).\n  - **Pilihan D & E Salah:** Menghitung dengan penjumlahan atau pengali yang tidak sesuai dengan pola Segitiga I.\n- **Penerapan Trik Cepat (15 Detik):** Langsung coba trik perkalian bawah minus atas: $7 \\times 5 = 35$, lalu $35 - 12 = 23$ (cocok!). Terapkan langsung ke segitiga kedua: $8 \\times 6 = 48$, lalu $48 - 15 = 33$. Jawaban **C** didapat dalam waktu kurang dari 12 detik.\n\n---\n\n### Variasi 2: Matriks Angka Berpola Hubungan Baris dan Kolom\n\n> **Konteks Matriks Soal:**  \n> Perhatikan susunan angka pada matriks $3 \\times 3$ berikut:  \n> | Kolom 1 | Kolom 2 | Kolom 3 |  \n> | :---: | :---: | :---: |  \n> | 12 | 5 | 29 |  \n> | 15 | 4 | 34 |  \n> | 18 | 7 | **X** |  \n>  \n> **Pertanyaan UTBK:** *Nilai dari bilangan $X$ yang paling tepat adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 39  \n> - **B.** 41  \n> - **C.** 43  \n> - **D.** 45  \n> - **E.** 47\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Arah Operasi:**\n  - Angka pada Kolom 3 ($29, 34, X$) bernilai jauh lebih besar dibandingkan Kolom 1 dan Kolom 2. Ini adalah indikator kuat bahwa Kolom 3 adalah hasil operasi horizontal dari Kolom 1 dan 2 ($K_3 = f(K_1, K_2)$).\n- **Mencari Formula pada Baris 1:**\n  - Hubungkan 12 dan 5 untuk menghasilkan 29:  \n    $$12 \\times 2 + 5 = 24 + 5 = 29$$\n- **Verifikasi Formula pada Baris 2:**\n  - Terapkan pola yang sama $(K_1 \\times 2 + K_2)$ pada Baris 2:  \n    $$15 \\times 2 + 4 = 30 + 4 = 34$$  \n    Formula terbukti $100\\%$ konsisten pada kedua baris!\n- **Menghitung Nilai $X$ pada Baris 3:**  \n  $$X = 18 \\times 2 + 7 = 36 + 7 = 43$$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menghitung $18 + 7 \\times 3 = 18 + 21 = 39$ (tidak konsisten dengan Baris 1).\n  - **Pilihan B Salah:** Keliru menghitung $36 + 5$.\n  - **Pilihan D & E Salah:** Menerapkan pengali 3 pada kolom pertama yang menghasilkan nilai terlalu besar.\n- **Penerapan Trik Cepat (15 Detik):** Kolom 3 adalah target. $12 \\times 2 = 24$, tambah $5 = 29$. Baris 2: $15 \\times 2 = 30$, tambah $4 = 34$. Cocok! Maka Baris 3: $18 \\times 2 = 36$, tambah $7 = 43$. Pilihan **C** langsung terpilih.\n\n---\n\n### Variasi 3: Analogi dan Serial Spasial Transformasi Objek Geometri / HOTS\n\n> **Konteks Gambar Soal:**  \n> Sebuah serial gambar tersusun atas tiga elemen geometris:  \n> 1. Sebuah panah penunjuk yang berputar $90^\\circ$ searah jarum jam pada setiap langkah (Langkah 1: Menghadap Atas, Langkah 2: Menghadap Kanan, Langkah 3: Menghadap Bawah, Langkah 4: Menghadap Kiri).  \n> 2. Sebuah lingkaran kecil di sudut dengan jumlah titik hitam di dalamnya yang bertambah mengikuti pola bilangan prima: 2 titik, 3 titik, 5 titik, 7 titik.  \n> 3. Warna bingkai luar yang berubah secara berselang-seling: Putih, Hitam, Putih, Hitam.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan pola serial tersebut, karakteristik lengkap dari gambar pada Langkah ke-5 adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Panah menghadap Kanan, 9 titik hitam, bingkai Hitam  \n> - **B.** Panah menghadap Atas, 11 titik hitam, bingkai Putih  \n> - **C.** Panah menghadap Atas, 9 titik hitam, bingkai Putih  \n> - **D.** Panah menghadap Bawah, 11 titik hitam, bingkai Hitam  \n> - **E.** Panah menghadap Kiri, 11 titik hitam, bingkai Putih\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Transformasi Elemen per Elemen:**\n  - **Elemen 1 (Arah Panah):** Rotasi $90^\\circ$ searah jarum jam:  \n    Langkah 1 (Atas) $\\to$ 2 (Kanan) $\\to$ 3 (Bawah) $\\to$ 4 (Kiri) $\\to$ **Langkah 5 kembali Menghadap Atas**.\n  - **Elemen 2 (Jumlah Titik Hitam):**  \n    Barisan: $2, \\; 3, \\; 5, \\; 7, \\dots$  \n    Ini adalah barisan **bilangan prima**, BUKAN bilangan ganjil (karena dimulai dari 2). Bilangan prima berikutnya setelah 7 adalah **11 titik** (angka 9 bukan prima karena habis dibagi 3).\n  - **Elemen 3 (Warna Bingkai):**  \n    Pola berselang-seling: Langkah 1 (Putih), 2 (Hitam), 3 (Putih), 4 (Hitam) $\\to$ **Langkah 5 berwarna Putih**.\n- **Kombinasi Akhir Karakteristik Gambar 5:**  \n  Panah menghadap **Atas**, memuat **11 titik hitam**, dan bingkai berwarna **Putih**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & E Salah:** Arah panah keliru karena tidak menyelesaikan putaran penuh ke atas.\n  - **Pilihan C Salah:** Jebakan bilangan ganjil (9 titik), padahal deret adalah bilangan prima (wajib 11 titik).\n  - **Pilihan D Salah:** Arah panah dan warna bingkai keliru.\n- **Penerapan Trik Cepat (15 Detik):** Panah putaran ke-5 pasti kembali ke Atas (singkirkan A, D, E). Jumlah titik: $2, 3, 5, 7$ adalah bilangan prima, setelah 7 pasti 11 (bukan 9! Singkirkan C). Jawaban langsung jatuh pada pilihan **B**.",
-    "visualizations_svg": [],
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nSpasial numerik mengintegrasikan penalaran visual dan aritmetika dasar:\n\n1. **Bangun Geometri Berangka (Pola Sudut vs Pusat)**  \n   Sebuah bangun geometri (misal: segitiga, lingkaran bertingkat, atau bujur sangkar) memuat angka-angka pada setiap titik sudut dan satu angka di tengah.  \n   - Angka sudut berperan sebagai **variabel input** ($A, B, C$).  \n   - Angka tengah berperan sebagai **target output** ($Z$).  \n   - Pola baku yang sering muncul:  \n     - $(A \\times B) - C = Z$  \n     - $\\frac{A + B}{C} = Z$  \n     - $(A + B) \\times C = Z$\n\n2. **Matriks Angka Berpola Baris dan Kolom**  \n   Tabel angka $3 \\times 3$ di mana salah satu sel berisi tanda tanya ($?$).  \n   - Tentukan apakah pola beroperasi secara **horizontal (per baris)** atau **vertikal (per kolom)**.  \n   - Cara membedakan: Bandingkan angka-angka di ujung baris vs ujung kolom. Jika angka di kolom ke-3 selalu bernilai jauh lebih besar daripada kolom 1 dan 2, maka polanya hampir pasti bekerja secara horizontal (operasi kolom 1 dan 2 menghasilkan kolom 3).\n\n3. **Serial Spasial dan Transformasi Gambar**  \n   Rangkaian gambar berurutan yang mengalami transformasi bentuk, orientasi arah putaran (rotasi $45^\\circ$ atau $90^\\circ$), pencerminan, atau penambahan/pengurangan elemen titik dan arsiran secara berpola teratur.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Pola Kebetulan pada Gambar Pertama**  \n   Terkadang sebuah formula sederhana bekerja secara kebetulan pada Gambar I, namun menghasilkan angka yang tidak tersedia di opsi pilihan ganda pada Gambar II. Jika hal ini terjadi, jangan panik; cari alternatif kombinasi operasi lain (misalnya menguji pembagian atau perkalian pasangan sudut yang berbeda).\n2. **Jebakan Membalik Peran Baris dan Kolom pada Matriks**  \n   Siswa sering kali memaksakan hubungan antarbaris padahal matriks tersebut dirancang bekerja antarkolom. Selalu uji konsistensi formula pada Baris 1 DAN Baris 2 sebelum menerapkannya pada Baris 3.\n3. **Jebakan Mengabaikan Arah Sudut Pandang Rotasi**  \n   Pada soal serial gambar, pembuat soal sering menyamarkan rotasi $90^\\circ$ berlawanan jarum jam dengan pencerminan horizontal. Teliti orientasi elemen penanda (seperti letak titik hitam atau bendera panah) untuk memastikan jenis transformasi yang terjadi.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nTerapkan teknik tembak sistematis ini untuk soal pola gambar dan matriks:\n\n1. **Bandingkan Besaran Angka Pusat terhadap Angka Sudut**  \n   - Jika angka pusat **jauh lebih besar** dari angka-angka sudut $\\to$ prioritaskan operasi **perkalian ($A \\times B$)**.  \n   - Jika angka pusat **lebih kecil** dari angka sudut $\\to$ prioritaskan operasi **pengurangan atau pembagian ($\\{A + B\\} / C$)**.\n2. **Uji Rumus Standar UTBK Pertama Kali**  \n   Coba pola klasik: *(Kiri Bawah $\\times$ Kanan Bawah) $-$ Atas*. Ini adalah formula yang paling sering digunakan pembuat soal UTBK.\n3. **Pada Matriks: Cari Kolom Bernilai Terbesar**  \n   Jika Kolom 3 adalah yang paling besar di setiap baris, jadikan Kolom 3 sebagai hasil dari operasi Kolom 1 dan Kolom 2: $K_3 = f(K_1, K_2)$.\n4. **Verifikasi Dua Kali**  \n   Pastikan rumus Anda menghasilkan angka yang persis sama pada Gambar I dan Gambar II sebelum melangkah ke gambar target.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Menemukan fungsi matematis tersembunyi yang menghubungkan elemen spasial input (sudut/baris) menjadi output (pusat/kolom akhir).\n- **Aturan Baku:** Satu formula yang valid harus berlaku tanpa modifikasi untuk seluruh gambar contoh yang disajikan.\n- **Strategi Eksekusi:** Mulai dari perkalian dua sisi bawah, bandingkan skala besaran angka pusat, dan kunci baris/kolom penentu pada matriks.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Pola Gambar dan Spasial Numerik yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks bangun, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Spasial Angka dalam Pola Bangun Geometri (Angka Sudut vs Pusat)\n\n[[SVG:svg-pu-03-02-triangles]]\n\n\n> **Konteks Bangun Soal:**  \n> Diberikan dua buah bangun segitiga berangka dengan aturan operasi aritmetika yang identik:  \n> - **Segitiga I:** Sudut atas bernilai $12$, sudut kiri bawah bernilai $7$, sudut kanan bawah bernilai $5$, dan angka di pusat segitiga bernilai $23$.  \n> - **Segitiga II:** Sudut atas bernilai $15$, sudut kiri bawah bernilai $8$, sudut kanan bawah bernilai $6$, dan angka di pusat segitiga bernilai $X$.  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $X$ pada Segitiga II adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 28  \n> - **B.** 31  \n> - **C.** 33  \n> - **D.** 35  \n> - **E.** 38\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Pola pada Segitiga I:**\n  - Komponen input: Atas $= 12$, Kiri Bawah $= 7$, Kanan Bawah $= 5$.\n  - Target output: Pusat $= 23$.\n  - Uji operasi:\n    - Apakah $(7 + 5) + 12 = 24$ (mendekati, tapi bukan 23).\n    - Apakah perkalian sisi bawah dikurangi sisi atas:  \n      $(Kiri \\; Bawah \\times Kanan \\; Bawah) - Atas = (7 \\times 5) - 12 = 35 - 12 = 23$  \n      Formula ini menghasilkan angka pusat $23$ secara tepat dan sempurna!\n- **Penerapan Pola pada Segitiga II:**\n  - Komponen input: Atas $= 15$, Kiri Bawah $= 8$, Kanan Bawah $= 6$.\n  - Terapkan formula yang sama:  \n    $X = (8 \\times 6) - 15 = 48 - 15 = 33$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menghitung $(8 \\times 6) / 2 + ...$ tanpa pola yang konsisten.\n  - **Pilihan B Salah:** Menghitung $48 - 17$ (keliru mengurangkan angka yang salah).\n  - **Pilihan D & E Salah:** Menghitung dengan penjumlahan atau pengali yang tidak sesuai dengan pola Segitiga I.\n- **Penerapan Trik Cepat (15 Detik):** Langsung coba trik perkalian bawah minus atas: $7 \\times 5 = 35$, lalu $35 - 12 = 23$ (cocok!). Terapkan langsung ke segitiga kedua: $8 \\times 6 = 48$, lalu $48 - 15 = 33$. Jawaban **C** didapat dalam waktu kurang dari 12 detik.\n\n---\n\n### Variasi 2: Matriks Angka Berpola Hubungan Baris dan Kolom\n\n> **Konteks Matriks Soal:**  \n> Perhatikan susunan angka pada matriks $3 \\times 3$ berikut:  \n> | Kolom 1 | Kolom 2 | Kolom 3 |  \n> | :---: | :---: | :---: |  \n> | 12 | 5 | 29 |  \n> | 15 | 4 | 34 |  \n> | 18 | 7 | **X** |  \n>  \n> **Pertanyaan UTBK:** *Nilai dari bilangan $X$ yang paling tepat adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 39  \n> - **B.** 41  \n> - **C.** 43  \n> - **D.** 45  \n> - **E.** 47\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Arah Operasi:**\n  - Angka pada Kolom 3 ($29, 34, X$) bernilai jauh lebih besar dibandingkan Kolom 1 dan Kolom 2. Ini adalah indikator kuat bahwa Kolom 3 adalah hasil operasi horizontal dari Kolom 1 dan 2 ($K_3 = f(K_1, K_2)$).\n- **Mencari Formula pada Baris 1:**\n  - Hubungkan 12 dan 5 untuk menghasilkan 29:  \n    $12 \\times 2 + 5 = 24 + 5 = 29$\n- **Verifikasi Formula pada Baris 2:**\n  - Terapkan pola yang sama $(K_1 \\times 2 + K_2)$ pada Baris 2:  \n    $15 \\times 2 + 4 = 30 + 4 = 34$  \n    Formula terbukti $100\\%$ konsisten pada kedua baris!\n- **Menghitung Nilai $X$ pada Baris 3:**  \n  $X = 18 \\times 2 + 7 = 36 + 7 = 43$\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Menghitung $18 + 7 \\times 3 = 18 + 21 = 39$ (tidak konsisten dengan Baris 1).\n  - **Pilihan B Salah:** Keliru menghitung $36 + 5$.\n  - **Pilihan D & E Salah:** Menerapkan pengali 3 pada kolom pertama yang menghasilkan nilai terlalu besar.\n- **Penerapan Trik Cepat (15 Detik):** Kolom 3 adalah target. $12 \\times 2 = 24$, tambah $5 = 29$. Baris 2: $15 \\times 2 = 30$, tambah $4 = 34$. Cocok! Maka Baris 3: $18 \\times 2 = 36$, tambah $7 = 43$. Pilihan **C** langsung terpilih.\n\n---\n\n### Variasi 3: Analogi dan Serial Spasial Transformasi Objek Geometri / HOTS\n\n> **Konteks Gambar Soal:**  \n> Sebuah serial gambar tersusun atas tiga elemen geometris:  \n> 1. Sebuah panah penunjuk yang berputar $90^\\circ$ searah jarum jam pada setiap langkah (Langkah 1: Menghadap Atas, Langkah 2: Menghadap Kanan, Langkah 3: Menghadap Bawah, Langkah 4: Menghadap Kiri).  \n> 2. Sebuah lingkaran kecil di sudut dengan jumlah titik hitam di dalamnya yang bertambah mengikuti pola bilangan prima: 2 titik, 3 titik, 5 titik, 7 titik.  \n> 3. Warna bingkai luar yang berubah secara berselang-seling: Putih, Hitam, Putih, Hitam.  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan pola serial tersebut, karakteristik lengkap dari gambar pada Langkah ke-5 adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Panah menghadap Kanan, 9 titik hitam, bingkai Hitam  \n> - **B.** Panah menghadap Atas, 11 titik hitam, bingkai Putih  \n> - **C.** Panah menghadap Atas, 9 titik hitam, bingkai Putih  \n> - **D.** Panah menghadap Bawah, 11 titik hitam, bingkai Hitam  \n> - **E.** Panah menghadap Kiri, 11 titik hitam, bingkai Putih\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Transformasi Elemen per Elemen:**\n  - **Elemen 1 (Arah Panah):** Rotasi $90^\\circ$ searah jarum jam:  \n    Langkah 1 (Atas) $\\to$ 2 (Kanan) $\\to$ 3 (Bawah) $\\to$ 4 (Kiri) $\\to$ **Langkah 5 kembali Menghadap Atas**.\n  - **Elemen 2 (Jumlah Titik Hitam):**  \n    Barisan: $2, \\; 3, \\; 5, \\; 7, \\dots$  \n    Ini adalah barisan **bilangan prima**, BUKAN bilangan ganjil (karena dimulai dari 2). Bilangan prima berikutnya setelah 7 adalah **11 titik** (angka 9 bukan prima karena habis dibagi 3).\n  - **Elemen 3 (Warna Bingkai):**  \n    Pola berselang-seling: Langkah 1 (Putih), 2 (Hitam), 3 (Putih), 4 (Hitam) $\\to$ **Langkah 5 berwarna Putih**.\n- **Kombinasi Akhir Karakteristik Gambar 5:**  \n  Panah menghadap **Atas**, memuat **11 titik hitam**, dan bingkai berwarna **Putih**.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A & E Salah:** Arah panah keliru karena tidak menyelesaikan putaran penuh ke atas.\n  - **Pilihan C Salah:** Jebakan bilangan ganjil (9 titik), padahal deret adalah bilangan prima (wajib 11 titik).\n  - **Pilihan D Salah:** Arah panah dan warna bingkai keliru.\n- **Penerapan Trik Cepat (15 Detik):** Panah putaran ke-5 pasti kembali ke Atas (singkirkan A, D, E). Jumlah titik: $2, 3, 5, 7$ adalah bilangan prima, setelah 7 pasti 11 (bukan 9! Singkirkan C). Jawaban langsung jatuh pada pilihan **B**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-03-02-triangles",
+        "title": "Pola Spasial Numerik Segitiga Berangka (Sudut vs Pusat)",
+        "caption": "Formula Konsisten: (Kiri Bawah × Kanan Bawah) - Atas = Angka Pusat",
+        "svg_code": "<svg viewBox=\"0 0 640 240\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .tri-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .tri-node-val { font-family: system-ui, sans-serif; font-size: 16px; font-weight: 800; text-anchor: middle; fill: #1e293b; }\n      .tri-center-val { font-family: system-ui, sans-serif; font-size: 24px; font-weight: 900; text-anchor: middle; }\n      .tri-formula { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; text-anchor: middle; }\n      :root.dark .tri-title { fill: #f8fafc; }\n      :root.dark .tri-node-val { fill: #f8fafc; }\n    </style>\n  </defs>\n\n  <!-- Triangle 1: Contoh Lengkap -->\n  <g transform=\"translate(40, 15)\">\n    <rect width=\"250\" height=\"210\" rx=\"16\" fill=\"rgba(79, 70, 229, 0.05)\" stroke=\"rgba(79, 70, 229, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"125\" y=\"24\" class=\"tri-title\">SEGITIGA I (CONTOH)</text>\n\n    <!-- Triangle Polygon -->\n    <polygon points=\"125,48 45,155 205,155\" fill=\"rgba(99, 102, 241, 0.12)\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n\n    <!-- Top Node: 12 -->\n    <circle cx=\"125\" cy=\"48\" r=\"18\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"125\" y=\"54\" class=\"tri-node-val\">12</text>\n\n    <!-- Bottom Left Node: 7 -->\n    <circle cx=\"45\" cy=\"155\" r=\"18\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"45\" y=\"161\" class=\"tri-node-val\">7</text>\n\n    <!-- Bottom Right Node: 5 -->\n    <circle cx=\"205\" cy=\"155\" r=\"18\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n    <text x=\"205\" y=\"161\" class=\"tri-node-val\">5</text>\n\n    <!-- Center Node: 23 -->\n    <circle cx=\"125\" cy=\"120\" r=\"22\" fill=\"#4f46e5\" stroke=\"#3730a3\" stroke-width=\"2\"/>\n    <text x=\"125\" y=\"128\" fill=\"#ffffff\" class=\"tri-center-val\">23</text>\n\n    <!-- Formula explanation -->\n    <rect x=\"25\" y=\"178\" width=\"200\" height=\"24\" rx=\"6\" fill=\"#e0e7ff\"/>\n    <text x=\"125\" y=\"194\" fill=\"#4338ca\" class=\"tri-formula\">(7 × 5) - 12 = 35 - 12 = 23</text>\n  </g>\n\n  <!-- Triangle 2: Target Pertanyaan (X) -->\n  <g transform=\"translate(350, 15)\">\n    <rect width=\"250\" height=\"210\" rx=\"16\" fill=\"rgba(16, 185, 129, 0.05)\" stroke=\"rgba(16, 185, 129, 0.25)\" stroke-width=\"1.5\"/>\n    <text x=\"125\" y=\"24\" class=\"tri-title\">SEGITIGA II (TARGET SOAL)</text>\n\n    <!-- Triangle Polygon -->\n    <polygon points=\"125,48 45,155 205,155\" fill=\"rgba(16, 185, 129, 0.12)\" stroke=\"#10b981\" stroke-width=\"2.5\"/>\n\n    <!-- Top Node: 15 -->\n    <circle cx=\"125\" cy=\"48\" r=\"18\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"125\" y=\"54\" class=\"tri-node-val\">15</text>\n\n    <!-- Bottom Left Node: 8 -->\n    <circle cx=\"45\" cy=\"155\" r=\"18\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"45\" y=\"161\" class=\"tri-node-val\">8</text>\n\n    <!-- Bottom Right Node: 6 -->\n    <circle cx=\"205\" cy=\"155\" r=\"18\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"2\"/>\n    <text x=\"205\" y=\"161\" class=\"tri-node-val\">6</text>\n\n    <!-- Center Node: X = 33 -->\n    <circle cx=\"125\" cy=\"120\" r=\"22\" fill=\"#059669\" stroke=\"#047857\" stroke-width=\"2\"/>\n    <text x=\"125\" y=\"128\" fill=\"#ffffff\" class=\"tri-center-val\">33</text>\n\n    <!-- Formula explanation -->\n    <rect x=\"25\" y=\"178\" width=\"200\" height=\"24\" rx=\"6\" fill=\"#d1fae5\"/>\n    <text x=\"125\" y=\"194\" fill=\"#047857\" class=\"tri-formula\">(8 × 6) - 15 = 48 - 15 = 33 (X)</text>\n  </g>\n</svg>"
+      }
+    ],
     "distractor_traps": [
       "Jebakan Bilangan Prima vs Bilangan Ganjil pada elemen gambar: Terkecoh memilih 9 titik karena mengira barisan ganjil, padahal barisan diawali angka 2 (pasti bilangan prima).",
       "Mengabaikan konsistensi baris kedua pada matriks angka: Langsung melompat ke baris ketiga tanpa memvalidasi rumus pada baris kedua.",
@@ -3296,13 +1664,20 @@ const MATERIAL_PU_03_03 = {
       "Operasi Lambang Khusus / Definisi Operator Baru",
       "Estimasi Nilai Ekstrem dan Pendekatan Perhitungan (HOTS)"
     ],
-    "requires_svg": false,
+    "requires_svg": true,
     "updated_at": "2026-11-08"
   },
   "content": {
     "tactical_overview": "Operasi hitung dan aritmetika dasar pada Penalaran Umum UTBK bukan menguji kemampuan Anda menghitung angka panjang seperti kalkulator, melainkan menguji kecerdasan aljabar dan strategi penyederhanaan cepat. Tipe soal yang paling mendominasi adalah operasi lambang baru buatan pembuat soal (seperti simbol bintang atau lingkaran dengan aturan rumus khusus) serta manipulasi pecahan-desimal-persentase. Kunci utamanya adalah jangan pernah mengalikan angka besar secara mentah: selalu sederhanakan pecahan sebelum dikali, manfaatkan sifat distributif untuk memfaktorkan angka yang sama, dan gunakan estimasi batas nilai untuk menyingkirkan opsi yang tidak masuk akal.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nAritmetika taktis di UTBK SNBT berfokus pada efisiensi penyelesaian:\n\n1. **Konversi Cepat Pecahan, Desimal, dan Persentase Baku**  \n   Wajib menghafal pasangan konversi emas berikut di luar kepala:  \n   - $\\frac{1}{8} = 0{,}125 = 12{,}5\\%$  \n   - $\\frac{3}{8} = 0{,}375 = 37{,}5\\%$  \n   - $\\frac{5}{8} = 0{,}625 = 62{,}5\\%$  \n   - $\\frac{1}{6} = 0{,}1667 = 16{,}67\\%$  \n   - $\\frac{1}{7} \\approx 0{,}1428$  \n   Menghafal konversi ini membuat perhitungan rumit seperti $\\frac{3}{7} \\times 42\\%$ dapat diselesaikan dalam 5 detik melalui pencoretan langsung ($42 / 7 = 6 \\implies 3 \\times 6\\% = 18\\%$).\n\n2. **Operasi Lambang Khusus / Operator Baru (*Custom Operators*)**  \n   Soal mendefinisikan simbol operasi non-standar (misalnya $a \\odot b$ atau $x \\star y$) dengan aturan fungsi tertentu.  \n   - Kaidah wajib: Ikuti urutan tanda kurung terlebih dahulu.  \n   - Masukkan nilai angka secara presisi ke dalam variabel yang didefinisikan tanpa mengubah urutan posisinya.\n\n3. **Prinsip Estimasi dan Selisih Komplemen Pecahan (Soal HOTS)**  \n   Membandingkan dua pecahan bernilai besar tanpa menghitung pembagian bersusun:  \n   - Jika dua pecahan bernilai mendekati 1, gunakan selisih terhadap angka 1:  \n     $$\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$$  \n   - Pecahan dengan pengurang $\\frac{1}{n+1}$ yang lebih kecil akan menghasilkan nilai total yang lebih besar.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Mengalikan Angka Besar Secara Manual**  \n   Siswa yang menghitung $(2024 \\times 2026)$ secara manual akan membuang waktu 2 hingga 3 menit. Soal UTBK selalu memiliki jalan pintas aljabar, misalnya bentuk selisih kuadrat: $(x - 1)(x + 1) = x^2 - 1$.\n2. **Jebakan Urutan Operasi pada Lambang Baru**  \n   Pada operasi bersarang seperti $(a \\odot b) \\star c$, siswa kerap salah memasukkan hasil dari $(a \\odot b)$ sebagai variabel kedua, padahal posisinya berada di sebelah kiri operator bintang (variabel pertama).\n3. **Jebakan Pembagian Pecahan Bersusun**  \n   Membalik pembilang dan penyebut secara keliru pada operasi pembagian pecahan: $\\frac{a/b}{c} = \\frac{a}{b \\cdot c}$, sedangkan $\\frac{a}{b/c} = \\frac{a \\cdot c}{b}$.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Coret Faktor Persekutuan Terlebih Dahulu**  \n   Sebelum mengalikan pembilang, selalu lakukan pencoretan silang dengan penyebut.\n2. **Substitusi Langsung pada Operator Lambang Baru**  \n   Tuliskan rumus definisi di kertas, lalu ganti huruf $a$ dan $b$ dengan angka soal tepat di bawah huruf tersebut untuk mencegah kekeliruan posisi.\n3. **Gunakan Metode Digit Terakhir (*Last Digit Trick*)**  \n   Jika opsi pilihan ganda memiliki digit satuan yang berbeda-beda, hitung saja perkalian angka satuannya tanpa menghitung seluruh angka puluhan dan ratusan.\n4. **Metode Taksiran Batas (Rounding)**  \n   Bulatkan angka rumit ke angka terdekat yang mudah dihitung (misal: $49{,}8\\%$ dibulatkan ke $50\\%$ atau $\\frac{1}{2}$) untuk mengetahui kisaran angka jawaban yang benar.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Uji efisiensi aljabar dan pemahaman aturan operasi matematika tanpa ketergantungan pada hitungan mekanik panjang.\n- **Kunci Operator Baru:** Patuhi hierarki tanda kurung dan substitusikan nilai sesuai posisi variabel definisi.\n- **Strategi Eksekusi:** Hafal pecahan emas, coret sebelum kali, dan manfaatkan selisih kuadrat $(x-1)(x+1) = x^2 - 1$.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Operasi Hitung dan Aritmetika Dasar yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Operasi Pecahan, Desimal, dan Persentase Cepat\n\n> **Konteks Perhitungan Soal:**  \n> Hitunglah nilai dari operasi aritmetika berikut:  \n> $$\\left( \\frac{3}{7} \\times 42\\% \\right) + \\left( \\frac{5}{8} \\times 0{,}64 \\right)$$  \n>  \n> **Pertanyaan UTBK:** *Nilai desimal akhir dari operasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 0,48  \n> - **B.** 0,52  \n> - **C.** 0,58  \n> - **D.** 0,62  \n> - **E.** 0,68\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Penyelesaian Suku Pertama:**  \n  $$\\frac{3}{7} \\times 42\\% = 3 \\times \\left(\\frac{42\\%}{7}\\right) = 3 \\times 6\\% = 18\\% = 0{,}18$$\n- **Penyelesaian Suku Kedua:**  \n  $$\\frac{5}{8} \\times 0{,}64 = 5 \\times \\left(\\frac{0{,}64}{8}\\right) = 5 \\times 0{,}08 = 0{,}40$$\n- **Penjumlahan Total:**  \n  $$0{,}18 + 0{,}40 = 0{,}58$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A, B, D, dan E terjadi akibat kekeliruan pembagian desimal ($0{,}64 / 8$ dihitung $0{,}8$) atau lupa mengalikan dengan 3.\n- **Penerapan Trik Cepat (15 Detik):** Coret 42 dengan 7 dapat $6 \\implies 3 \\times 6\\% = 0{,}18$. Coret 0,64 dengan 8 dapat $0{,}08 \\implies 5 \\times 0{,}08 = 0{,}40$. Jumlahkan: $0{,}18 + 0{,}40 = 0{,}58$. Pilihan **C** ditemukan dalam 8 detik.\n\n---\n\n### Variasi 2: Operasi Lambang Khusus / Definisi Operator Baru\n\n> **Konteks Operasi Soal:**  \n> Didefinisikan dua buah operasi hitung baru untuk sembarang bilangan bulat $x$ dan $y$ sebagai berikut:  \n> $$x \\odot y = \\frac{x \\cdot y - 2}{x + 1}$$  \n> $$x \\star y = 2x - 3y$$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $(5 \\odot 4) \\star 2$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** -2  \n> - **B.** 0  \n> - **C.** 2  \n> - **D.** 4  \n> - **E.** 6\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Langkah 1: Selesaikan Operasi di Dalam Kurung $(5 \\odot 4)$**  \n  Substitusikan $x = 5$ dan $y = 4$ ke dalam definisi operator $\\odot$:  \n  $$5 \\odot 4 = \\frac{5 \\cdot 4 - 2}{5 + 1} = \\frac{20 - 2}{6} = \\frac{18}{6} = 3$$\n- **Langkah 2: Selesaikan Operasi Luar dengan Operator $\\star$**  \n  Hasil langkah 1 adalah 3, sehingga bentuk soal menjadi $3 \\star 2$.  \n  Substitusikan $x = 3$ dan $y = 2$ ke dalam definisi operator $\\star$:  \n  $$3 \\star 2 = 2(3) - 3(2) = 6 - 6 = 0$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A keliru menghitung $2(2) - 3(3) = 4 - 9 = -5$ (terbalik menukar posisi variabel).  \n  - Pilihan C keliru menghitung $18 / 6 = 2$.  \n  - Pilihan D dan E adalah akibat kekeliruan substitusi tanda minus.\n- **Penerapan Trik Cepat (15 Detik):** Dalam kurung: $(20 - 2)/6 = 18/6 = 3$. Lalu hitung bintang: $2(3) - 3(2) = 6 - 6 = 0$. Jawaban langsung **B**.\n\n---\n\n### Variasi 3: Estimasi Nilai Ekstrem dan Pendekatan Perhitungan / HOTS\n\n> **Konteks Perhitungan Soal:**  \n> Diberikan dua nilai pecahan besar $P$ dan $Q$ sebagai berikut:  \n> $$P = \\frac{2025}{2026} + \\frac{2026}{2027}$$  \n> $$Q = \\frac{2024}{2025} + \\frac{2027}{2028}$$  \n>  \n> **Pertanyaan UTBK:** *Hubungan kuantitatif yang paling tepat antara $P$ dan $Q$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $P > Q$  \n> - **B.** $P < Q$  \n> - **C.** $P = Q$  \n> - **D.** $P = Q + 1$  \n> - **E.** Hubungan antara $P$ dan $Q$ tidak dapat ditentukan\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Bentuk Pecahan Mendekati 1:**  \n  Setiap suku pecahan berbentuk $\\frac{n}{n+1}$, yang dapat dituliskan sebagai selisih komplemen terhadap angka 1:  \n  $$\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$$\n- **Mengubah Bentuk $P$ dan $Q$:**  \n  $$P = \\left(1 - \\frac{1}{2026}\\right) + \\left(1 - \\frac{1}{2027}\\right) = 2 - \\left(\\frac{1}{2026} + \\frac{1}{2027}\\right)$$  \n  $$Q = \\left(1 - \\frac{1}{2025}\\right) + \\left(1 - \\frac{1}{2028}\\right) = 2 - \\left(\\frac{1}{2025} + \\frac{1}{2028}\\right)$$\n- **Membandingkan Nilai Pengurang:**  \n  Misalkan $S_P = \\frac{1}{2026} + \\frac{1}{2027}$ dan $S_Q = \\frac{1}{2025} + \\frac{1}{2028}$.  \n  Fungsi $f(x) = \\frac{1}{x}$ adalah fungsi konveks (cekung ke atas). Pada fungsi konveks, jumlahan dua titik yang lebih menyebar ($2025$ dan $2028$) selalu bernilai lebih besar daripada jumlahan dua titik yang lebih rapat di tengah ($2026$ dan $2027$):  \n  $$\\frac{1}{2025} + \\frac{1}{2028} > \\frac{1}{2026} + \\frac{1}{2027} \\implies S_Q > S_P$$\n- **Konklusi Hubungan $P$ dan $Q$:**  \n  Karena pengurang pada $Q$ ($S_Q$) lebih besar daripada pengurang pada $P$ ($S_P$), maka hasil pengurangan pada $P$ bernilai lebih besar:  \n  $$2 - S_P > 2 - S_Q \\implies P > Q$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan B keliru karena terbalik membandingkan dampak nilai pengurang.  \n  - Pilihan C, D, dan E secara matematis salah karena nilainya terbukti berbeda secara pasti.\n- **Penerapan Trik Cepat (15 Detik):** Ubah ke bentuk $1 - \\text{selisih}$. Nilai $\\frac{1}{2025}$ sangat besar dibanding $\\frac{1}{2026}$. Karena pengurang $Q$ lebih besar, maka sisa nilai $Q$ menjadi lebih kecil dari $P$. Kesimpulan kilat: $P > Q$. Jawaban pasti **A**.",
-    "visualizations_svg": [],
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\n[[SVG:svg-pu-03-03-fractions]]\n\n\nAritmetika taktis di UTBK SNBT berfokus pada efisiensi penyelesaian:\n\n1. **Konversi Cepat Pecahan, Desimal, dan Persentase Baku**  \n   Wajib menghafal pasangan konversi emas berikut di luar kepala:  \n   - $\\frac{1}{8} = 0{,}125 = 12{,}5\\%$  \n   - $\\frac{3}{8} = 0{,}375 = 37{,}5\\%$  \n   - $\\frac{5}{8} = 0{,}625 = 62{,}5\\%$  \n   - $\\frac{1}{6} = 0{,}1667 = 16{,}67\\%$  \n   - $\\frac{1}{7} \\approx 0{,}1428$  \n   Menghafal konversi ini membuat perhitungan rumit seperti $\\frac{3}{7} \\times 42\\%$ dapat diselesaikan dalam 5 detik melalui pencoretan langsung ($42 / 7 = 6 \\implies 3 \\times 6\\% = 18\\%$).\n\n2. **Operasi Lambang Khusus / Operator Baru (*Custom Operators*)**  \n   Soal mendefinisikan simbol operasi non-standar (misalnya $a \\odot b$ atau $x \\star y$) dengan aturan fungsi tertentu.  \n   - Kaidah wajib: Ikuti urutan tanda kurung terlebih dahulu.  \n   - Masukkan nilai angka secara presisi ke dalam variabel yang didefinisikan tanpa mengubah urutan posisinya.\n\n3. **Prinsip Estimasi dan Selisih Komplemen Pecahan (Soal HOTS)**  \n   Membandingkan dua pecahan bernilai besar tanpa menghitung pembagian bersusun:  \n   - Jika dua pecahan bernilai mendekati 1, gunakan selisih terhadap angka 1:  \n     $\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$  \n   - Pecahan dengan pengurang $\\frac{1}{n+1}$ yang lebih kecil akan menghasilkan nilai total yang lebih besar.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Mengalikan Angka Besar Secara Manual**  \n   Siswa yang menghitung $(2024 \\times 2026)$ secara manual akan membuang waktu 2 hingga 3 menit. Soal UTBK selalu memiliki jalan pintas aljabar, misalnya bentuk selisih kuadrat: $(x - 1)(x + 1) = x^2 - 1$.\n2. **Jebakan Urutan Operasi pada Lambang Baru**  \n   Pada operasi bersarang seperti $(a \\odot b) \\star c$, siswa kerap salah memasukkan hasil dari $(a \\odot b)$ sebagai variabel kedua, padahal posisinya berada di sebelah kiri operator bintang (variabel pertama).\n3. **Jebakan Pembagian Pecahan Bersusun**  \n   Membalik pembilang dan penyebut secara keliru pada operasi pembagian pecahan: $\\frac{\\frac{a}{b}}{c} = \\frac{a}{b \\cdot c} \\qquad \\text{sedangkan} \\qquad \\frac{a}{\\frac{b}{c}} = \\frac{a \\cdot c}{b}$.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Coret Faktor Persekutuan Terlebih Dahulu**  \n   Sebelum mengalikan pembilang, selalu lakukan pencoretan silang dengan penyebut.\n2. **Substitusi Langsung pada Operator Lambang Baru**  \n   Tuliskan rumus definisi di kertas, lalu ganti huruf $a$ dan $b$ dengan angka soal tepat di bawah huruf tersebut untuk mencegah kekeliruan posisi.\n3. **Gunakan Metode Digit Terakhir (*Last Digit Trick*)**  \n   Jika opsi pilihan ganda memiliki digit satuan yang berbeda-beda, hitung saja perkalian angka satuannya tanpa menghitung seluruh angka puluhan dan ratusan.\n4. **Metode Taksiran Batas (Rounding)**  \n   Bulatkan angka rumit ke angka terdekat yang mudah dihitung (misal: $49{,}8\\%$ dibulatkan ke $50\\%$ atau $\\frac{1}{2}$) untuk mengetahui kisaran angka jawaban yang benar.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Uji efisiensi aljabar dan pemahaman aturan operasi matematika tanpa ketergantungan pada hitungan mekanik panjang.\n- **Kunci Operator Baru:** Patuhi hierarki tanda kurung dan substitusikan nilai sesuai posisi variabel definisi.\n- **Strategi Eksekusi:** Hafal pecahan emas, coret sebelum kali, dan manfaatkan selisih kuadrat $(x-1)(x+1) = x^2 - 1$.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Operasi Hitung dan Aritmetika Dasar yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Operasi Pecahan, Desimal, dan Persentase Cepat\n\n> **Konteks Perhitungan Soal:**  \n> Hitunglah nilai dari operasi aritmetika berikut:  \n> $\\left( \\frac{3}{7} \\times 42\\% \\right) + \\left( \\frac{5}{8} \\times 0{,}64 \\right)$  \n>  \n> **Pertanyaan UTBK:** *Nilai desimal akhir dari operasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 0,48  \n> - **B.** 0,52  \n> - **C.** 0,58  \n> - **D.** 0,62  \n> - **E.** 0,68\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Penyelesaian Suku Pertama:**  \n  $\\frac{3}{7} \\times 42\\% = 3 \\times \\left(\\frac{42\\%}{7}\\right) = 3 \\times 6\\% = 18\\% = 0{,}18$\n- **Penyelesaian Suku Kedua:**  \n  $\\frac{5}{8} \\times 0{,}64 = 5 \\times \\left(\\frac{0{,}64}{8}\\right) = 5 \\times 0{,}08 = 0{,}40$\n- **Penjumlahan Total:**  \n  $0{,}18 + 0{,}40 = 0{,}58$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A, B, D, dan E terjadi akibat kekeliruan pembagian desimal ($0{,}64 / 8$ dihitung $0{,}8$) atau lupa mengalikan dengan 3.\n- **Penerapan Trik Cepat (15 Detik):** Coret 42 dengan 7 dapat $6 \\implies 3 \\times 6\\% = 0{,}18$. Coret 0,64 dengan 8 dapat $0{,}08 \\implies 5 \\times 0{,}08 = 0{,}40$. Jumlahkan: $0{,}18 + 0{,}40 = 0{,}58$. Pilihan **C** ditemukan dalam 8 detik.\n\n---\n\n### Variasi 2: Operasi Lambang Khusus / Definisi Operator Baru\n\n> **Konteks Operasi Soal:**  \n> Didefinisikan dua buah operasi hitung baru untuk sembarang bilangan bulat $x$ dan $y$ sebagai berikut:  \n> $x \\odot y = \\frac{x \\cdot y - 2}{x + 1}$  \n> $x \\star y = 2x - 3y$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $(5 \\odot 4) \\star 2$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** -2  \n> - **B.** 0  \n> - **C.** 2  \n> - **D.** 4  \n> - **E.** 6\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Langkah 1: Selesaikan Operasi di Dalam Kurung $(5 \\odot 4)$**  \n  Substitusikan $x = 5$ dan $y = 4$ ke dalam definisi operator $\\odot$:  \n  $5 \\odot 4 = \\frac{5 \\cdot 4 - 2}{5 + 1} = \\frac{20 - 2}{6} = \\frac{18}{6} = 3$\n- **Langkah 2: Selesaikan Operasi Luar dengan Operator $\\star$**  \n  Hasil langkah 1 adalah 3, sehingga bentuk soal menjadi $3 \\star 2$.  \n  Substitusikan $x = 3$ dan $y = 2$ ke dalam definisi operator $\\star$:  \n  $3 \\star 2 = 2(3) - 3(2) = 6 - 6 = 0$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A keliru menghitung $2(2) - 3(3) = 4 - 9 = -5$ (terbalik menukar posisi variabel).  \n  - Pilihan C keliru menghitung $18 / 6 = 2$.  \n  - Pilihan D dan E adalah akibat kekeliruan substitusi tanda minus.\n- **Penerapan Trik Cepat (15 Detik):** Dalam kurung: $(20 - 2)/6 = 18/6 = 3$. Lalu hitung bintang: $2(3) - 3(2) = 6 - 6 = 0$. Jawaban langsung **B**.\n\n---\n\n### Variasi 3: Estimasi Nilai Ekstrem dan Pendekatan Perhitungan / HOTS\n\n> **Konteks Perhitungan Soal:**  \n> Diberikan dua nilai pecahan besar $P$ dan $Q$ sebagai berikut:  \n> $P = \\frac{2025}{2026} + \\frac{2026}{2027}$  \n> $Q = \\frac{2024}{2025} + \\frac{2027}{2028}$  \n>  \n> **Pertanyaan UTBK:** *Hubungan kuantitatif yang paling tepat antara $P$ dan $Q$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $P > Q$  \n> - **B.** $P < Q$  \n> - **C.** $P = Q$  \n> - **D.** $P = Q + 1$  \n> - **E.** Hubungan antara $P$ dan $Q$ tidak dapat ditentukan\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Bentuk Pecahan Mendekati 1:**  \n  Setiap suku pecahan berbentuk $\\frac{n}{n+1}$, yang dapat dituliskan sebagai selisih komplemen terhadap angka 1:  \n  $\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$\n- **Mengubah Bentuk $P$ dan $Q$:**  \n  $\\begin{aligned}\n  P &= \\left(1 - \\frac{1}{2026}\\right) + \\left(1 - \\frac{1}{2027}\\right) = 2 - \\left(\\frac{1}{2026} + \\frac{1}{2027}\\right) \\\\[6pt]\n  Q &= \\left(1 - \\frac{1}{2025}\\right) + \\left(1 - \\frac{1}{2028}\\right) = 2 - \\left(\\frac{1}{2025} + \\frac{1}{2028}\\right)\n  \\end{aligned}$\n- **Membandingkan Nilai Pengurang:**  \n  Misalkan $S_P = \\frac{1}{2026} + \\frac{1}{2027}$ dan $S_Q = \\frac{1}{2025} + \\frac{1}{2028}$.  \n  Fungsi $f(x) = \\frac{1}{x}$ adalah fungsi konveks (cekung ke atas). Pada fungsi konveks, jumlahan dua titik yang lebih menyebar ($2025$ dan $2028$) selalu bernilai lebih besar daripada jumlahan dua titik yang lebih rapat di tengah ($2026$ dan $2027$):  \n\n$$\\frac{1}{2025} + \\frac{1}{2028} > \\frac{1}{2026} + \\frac{1}{2027} \\implies S_Q > S_P$$\n\n\n- **Konklusi Hubungan $P$ dan $Q$:**  \n  Karena pengurang pada $Q$ ($S_Q$) lebih besar daripada pengurang pada $P$ ($S_P$), maka hasil pengurangan pada $P$ bernilai lebih besar:  \n  \n  $22 - S_P > 2 - S_Q \\implies P > Q\n\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan B keliru karena terbalik membandingkan dampak nilai pengurang.  \n  - Pilihan C, D, dan E secara matematis salah karena nilainya terbukti berbeda secara pasti.\n- **Penerapan Trik Cepat (15 Detik):** Ubah ke bentuk $1 - \\text{selisih}$. Nilai $\\frac{1}{2025}$ sangat besar dibanding $\\frac{1}{2026}$. Karena pengurang $Q$ lebih besar, maka sisa nilai $Q$ menjadi lebih kecil dari $P$. Kesimpulan kilat: $P > Q$. Jawaban pasti **A**.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-03-03-fractions",
+        "title": "Peta Konversi Pecahan Emas dan Logika Komplemen Terhadap 1",
+        "caption": "Nilai Pecahan Komplemen: Pengurang Lebih Besar Menghasilkan Sisa Nilai Lebih Kecil (P > Q)",
+        "svg_code": "<svg viewBox=\"0 0 640 210\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .fc-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .fc-lbl { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700; text-anchor: middle; }\n      .fc-val { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 800; text-anchor: middle; }\n      :root.dark .fc-title { fill: #f8fafc; }\n    </style>\n  </defs>\n\n  <!-- Panel 1: Pecahan Emas (Left) -->\n  <g transform=\"translate(15, 12)\">\n    <rect width=\"260\" height=\"186\" rx=\"14\" fill=\"rgba(79, 70, 229, 0.05)\" stroke=\"rgba(79, 70, 229, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"130\" y=\"24\" class=\"fc-title\">PECAHAN EMAS WAJIB HAFAL</text>\n\n    <!-- Row 1: 1/8 -->\n    <rect x=\"15\" y=\"38\" width=\"230\" height=\"30\" rx=\"8\" fill=\"#e0e7ff\"/>\n    <text x=\"50\" y=\"58\" fill=\"#4338ca\" class=\"fc-val\">1/8</text>\n    <text x=\"120\" y=\"58\" fill=\"#4338ca\" class=\"fc-val\">=</text>\n    <text x=\"185\" y=\"58\" fill=\"#4338ca\" class=\"fc-val\">0,125 (12,5%)</text>\n\n    <!-- Row 2: 3/8 & 5/8 -->\n    <rect x=\"15\" y=\"74\" width=\"230\" height=\"30\" rx=\"8\" fill=\"#e0e7ff\"/>\n    <text x=\"50\" y=\"94\" fill=\"#4338ca\" class=\"fc-val\">5/8</text>\n    <text x=\"120\" y=\"94\" fill=\"#4338ca\" class=\"fc-val\">=</text>\n    <text x=\"185\" y=\"94\" fill=\"#4338ca\" class=\"fc-val\">0,625 (62,5%)</text>\n\n    <!-- Row 3: 1/6 & 1/7 -->\n    <rect x=\"15\" y=\"110\" width=\"230\" height=\"30\" rx=\"8\" fill=\"#e0e7ff\"/>\n    <text x=\"50\" y=\"130\" fill=\"#4338ca\" class=\"fc-val\">1/6</text>\n    <text x=\"120\" y=\"130\" fill=\"#4338ca\" class=\"fc-val\">=</text>\n    <text x=\"185\" y=\"130\" fill=\"#4338ca\" class=\"fc-val\">0,1667 (16,67%)</text>\n\n    <!-- Tip box -->\n    <rect x=\"15\" y=\"146\" width=\"230\" height=\"28\" rx=\"6\" fill=\"rgba(16, 185, 129, 0.15)\"/>\n    <text x=\"130\" y=\"164\" fill=\"#047857\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"bold\" text-anchor=\"middle\">💡 Coret kelipatan sebelum kali!</text>\n  </g>\n\n  <!-- Panel 2: Logika Selisih Komplemen P vs Q (Right) -->\n  <g transform=\"translate(290, 12)\">\n    <rect width=\"335\" height=\"186\" rx=\"14\" fill=\"rgba(16, 185, 129, 0.05)\" stroke=\"rgba(16, 185, 129, 0.2)\" stroke-width=\"1.5\"/>\n    <text x=\"167\" y=\"24\" class=\"fc-title\">LOGIKA KOMPLEMEN P vs Q</text>\n\n    <!-- Formula transform -->\n    <rect x=\"15\" y=\"38\" width=\"305\" height=\"42\" rx=\"8\" fill=\"rgba(255, 255, 255, 0.8)\"/>\n    <text x=\"167\" y=\"56\" fill=\"#1e293b\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">n/(n+1) = 1 - 1/(n+1)</text>\n    <text x=\"167\" y=\"72\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">Nilai sisa ditentukan oleh besaran pengurangnya</text>\n\n    <!-- Comparison cards -->\n    <g transform=\"translate(15, 88)\">\n      <!-- Card P -->\n      <rect width=\"148\" height=\"52\" rx=\"8\" fill=\"#d1fae5\" stroke=\"#10b981\" stroke-width=\"1.5\"/>\n      <text x=\"74\" y=\"22\" fill=\"#065f46\" class=\"fc-lbl\">Pecahan P</text>\n      <text x=\"74\" y=\"42\" fill=\"#047857\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"800\" text-anchor=\"middle\">Pengurang: Kecil</text>\n\n      <!-- Card Q -->\n      <rect x=\"158\" width=\"148\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n      <text x=\"232\" y=\"22\" fill=\"#991b1b\" class=\"fc-lbl\">Pecahan Q</text>\n      <text x=\"232\" y=\"42\" fill=\"#b91c1c\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"800\" text-anchor=\"middle\">Pengurang: Besar (1/2025)</text>\n    </g>\n\n    <!-- Final verdict -->\n    <rect x=\"15\" y=\"148\" width=\"305\" height=\"28\" rx=\"6\" fill=\"#10b981\"/>\n    <text x=\"167\" y=\"167\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">HASIL: 2 - Kecil > 2 - Besar  ⟹  P > Q</text>\n  </g>\n</svg>"
+      }
+    ],
     "distractor_traps": [
       "Menghitung pecahan bernilai ribuan secara manual: Jangan menyamakan penyebut angka ribuan, gunakan metode selisih komplemen terhadap 1.",
       "Tertukar memasukkan variabel pada operator baru bersarang (a o b) * c.",
@@ -3438,13 +1813,20 @@ const MATERIAL_PU_03_04 = {
       "Perbandingan Berbalik Nilai pada Waktu dan Kecepatan",
       "Beban Kerja Bersama dan Pekerja Tambahan Terhenti (HOTS)"
     ],
-    "requires_svg": false,
+    "requires_svg": true,
     "updated_at": "2026-11-08"
   },
   "content": {
     "tactical_overview": "Perbandingan adalah instrumen penalaran kuantitatif fundamental di UTBK SNBT yang menguji pemahaman Anda terhadap hubungan proporsional antarvariabel. Fondasi terpenting adalah membedakan jenis hubungan secara akurat: jika variabel pertama naik dan variabel kedua ikut naik dengan rasio tetap, itu adalah perbandingan senilai; jika variabel pertama naik tetapi variabel kedua justru menurun (seperti menambah pekerja yang membuat waktu selesai berkurang), itu adalah perbandingan berbalik nilai. Pada variasi HOTS proyek terhenti, jangan pernah mengulang hitungan dari awal: selalu fokuslah pada \"sisa beban kerja\" (sisa hari dikali jumlah pekerja) yang harus dibagi dengan sisa hari yang masih tersedia.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPerbandingan di UTBK SNBT terbagi menjadi dua pilar utama:\n\n1. **Perbandingan Senilai (*Direct Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding lurus, di mana rasio keduanya bernilai konstan:  \n   $$\\frac{X_1}{Y_1} = \\frac{X_2}{Y_2} \\iff X_1 \\cdot Y_2 = X_2 \\cdot Y_1$$  \n   - *Konteks Nyata:* Jumlah konsumsi bahan bakar vs jarak tempuh, jumlah barang dibeli vs total harga, atau perbandingan skala peta.  \n   - **Rasio Bertingkat ($A : B$ dan $B : C$):**  \n     Jika $A : B = p : q$ dan $B : C = m : n$, samakan nilai $B$ dengan mencari KPK dari $q$ dan $m$:  \n     $$A : B : C = (p \\cdot m) : (q \\cdot m) : (n \\cdot q)$$\n\n2. **Perbandingan Berbalik Nilai (*Inverse Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding terbalik, di mana hasil kali keduanya bernilai konstan:  \n   $$X_1 \\cdot Y_1 = X_2 \\cdot Y_2 \\iff \\frac{X_1}{X_2} = \\frac{Y_2}{Y_1}$$  \n   - *Konteks Nyata:* Kecepatan vs waktu tempuh pada jarak yang sama, atau jumlah pekerja vs durasi waktu penyelesaian proyek.\n\n3. **Manajemen Beban Kerja Proyek Terhenti (HOTS)**  \n   Total pekerjaan diukur dalam satuan *\"Beban Orang-Hari\"* ($Pek = Orang \\times Hari$).  \n   - Ketika proyek terhenti di tengah jalan:  \n     $$\\text{Sisa Beban Kerja} = (\\text{Sisa Hari Normal}) \\times (\\text{Pekerja Semula})$$  \n     $$\\text{Pekerja Baru yang Dibutuhkan} = \\frac{\\text{Sisa Beban Kerja}}{\\text{Sisa Hari Nyata}}$$  \n     $$\\text{Pekerja Tambahan} = \\text{Pekerja Baru} - \\text{Pekerja Semula}$$\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Salah Menentukan Arah Perbandingan**  \n   Menggunakan perkalian silang (senilai) untuk kasus pekerja dan waktu, sehingga diperoleh hasil yang tidak logis (misalnya menambah pekerja malah membuat waktu pengerjaan menjadi lebih lama).\n2. **Jebakan Menghitung Beban dari Hari Ke-0 pada Proyek Terhenti**  \n   Siswa sering menghitung ulang total beban proyek dari awal, padahal sebagian pekerjaan sudah selesai dikerjakan pada hari-hari awal. Selalu langsung fokus pada **hari yang tersisa**.\n3. **Jebakan Pertanyaan Pekerja Tambahan vs Total Pekerja**  \n   Jika soal menanyakan *\"berapa pekerja tambahan yang diperlukan\"*, siswa yang terburu-buru sering memilih angka total pekerja baru, lupa mengurangkannya dengan jumlah pekerja semula.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Uji Arah Hubungan Sebelum Menghitung**  \n   Tanyakan dalam hati: *\"Jika X ditambah, apakah Y makin banyak atau makin sedikit?\"*  \n   - Makin banyak $\\to$ **Senilai** (perkalian silang: $X_1 Y_2 = X_2 Y_1$).  \n   - Makin sedikit $\\to$ **Berbalik Nilai** (perkalian lurus: $X_1 Y_1 = X_2 Y_2$).\n2. **Rumus Sakti Proyek Terhenti (10 Detik)**  \n   $$\\text{Pekerja Tambahan} = \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Semula}$$  \n   Rumus kilat ini langsung menghasilkan jumlah pekerja tambahan tanpa perlu menghitung total beban kerja!\n3. **Penyamaan Rasio N-Bentuk (Rasio Bertingkat)**  \n   Susun:  \n   $$A : B = p : q$$  \n   $$B : C = m : n$$  \n   Kalikan menyilang: $A = p \\times m$, $B = q \\times m$, $C = q \\times n$.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Menentukan konstanta relasi matematis (rasio tetap vs hasil kali tetap) antarvariabel yang saling memengaruhi.\n- **Kaidah Identifikasi:** Senilai jika bergerak searah ($X \\uparrow, Y \\uparrow$), Berbalik Nilai jika berlawanan arah ($X \\uparrow, Y \\downarrow$).\n- **Strategi Proyek Terhenti:** Gunakan rumus sakti $\\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Awal}$.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Perbandingan Senilai dan Berbalik Nilai yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Perbandingan Senilai dan Rasio Bertingkat (A:B:C)\n\n> **Konteks Masalah Soal:**  \n> Perbandingan uang tabungan Alif dan Budi adalah $3 : 4$, sedangkan perbandingan uang tabungan Budi dan Cici adalah $5 : 6$. Jika selisih uang tabungan Alif dan Cici adalah Rp450.000,00, berapakah jumlah uang tabungan Budi?  \n>  \n> **Pertanyaan UTBK:** *Jumlah uang tabungan Budi berdasarkan informasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Rp800.000,00  \n> - **B.** Rp900.000,00  \n> - **C.** Rp1.000.000,00  \n> - **D.** Rp1.100.000,00  \n> - **E.** Rp1.200.000,00\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Menyatukan Perbandingan Bertingkat ($A : B : C$):**  \n  - $A : B = 3 : 4$  \n  - $B : C = 5 : 6$  \n  - KPK dari nilai pembanding $B$ (yaitu 4 dan 5) adalah 20.  \n  - Kalikan rasio pertama dengan 5: $A : B = 15 : 20$.  \n  - Kalikan rasio kedua dengan 4: $B : C = 20 : 24$.  \n  - Perbandingan gabungan:  \n    $$A : B : C = 15 : 20 : 24$$\n- **Menentukan Nilai Satuan Porsi Tabungan:**  \n  - Selisih porsi $C$ dan $A$ adalah:  \n    $$24 - 15 = 9 \\text{ bagian}$$  \n  - Nilai 9 bagian tersebut setara dengan Rp450.000,00.  \n  - Maka nilai 1 bagian rasio adalah:  \n    $$\\text{Nilai } 1 \\text{ bagian} = \\frac{\\text{Rp450.000,00}}{9} = \\text{Rp50.000,00}$$\n- **Menghitung Tabungan Budi:**  \n  - Tabungan Budi memiliki porsi 20 bagian:  \n    $$\\text{Tabungan Budi} = 20 \\times \\text{Rp50.000,00} = \\text{Rp1.000.000,00}$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A (Rp800.000) dan B (Rp900.000) terjadi jika siswa keliru menghitung porsi Alif atau salah menentukan selisih bagian ($24 - 15$ disangka 10 bagian).  \n  - Pilihan D dan E keliru dalam mengalikan nilai porsi Budi.\n- **Penerapan Trik Cepat (15 Detik):** $A:B:C = 15:20:24$. Selisih $C - A = 9$ bagian $= 450$ ribu $\\implies 1$ bagian $= 50$ ribu. Budi $= 20$ bagian $\\implies 20 \\times 50$ ribu $= 1.000$ ribu (Rp1.000.000,00). Pilihan **C** langsung terkunci.\n\n---\n\n### Variasi 2: Perbandingan Berbalik Nilai pada Waktu dan Kecepatan\n\n> **Konteks Masalah Soal:**  \n> Sebuah mobil menempuh perjalanan dari Kota P ke Kota Q dengan kecepatan rata-rata $60\\text{ km/jam}$ dalam waktu $3\\text{ jam } 30\\text{ menit}$. Jika dalam perjalanan pulang pengemudi ingin menyingkat waktu tempuh menjadi hanya $2\\text{ jam } 20\\text{ menit}$, berapakah kecepatan rata-rata yang harus dipertahankan?  \n>  \n> **Pertanyaan UTBK:** *Kecepatan rata-rata mobil pada perjalanan pulang tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $75\\text{ km/jam}$  \n> - **B.** $80\\text{ km/jam}$  \n> - **C.** $85\\text{ km/jam}$  \n> - **D.** $90\\text{ km/jam}$  \n> - **E.** $95\\text{ km/jam}$\n\n**Kunci Jawaban: D**\n\n**Bedah Logika & Pembahasan:**\n- **Identifikasi Jenis Perbandingan:**  \n  Jarak antara Kota P dan Kota Q adalah tetap. Semakin cepat mobil melaju, waktu yang dibutuhkan semakin singkat. Ini adalah kasus **perbandingan berbalik nilai**:  \n  $$v_1 \\cdot t_1 = v_2 \\cdot t_2$$\n- **Konversi Waktu ke Satuan Jam / Menit:**  \n  - $t_1 = 3\\text{ jam } 30\\text{ menit} = 210\\text{ menit}$ (atau $3{,}5\\text{ jam}$).  \n  - $t_2 = 2\\text{ jam } 20\\text{ menit} = 140\\text{ menit}$ (atau $2\\frac{1}{3}\\text{ jam}$).  \n  - $v_1 = 60\\text{ km/jam}$.\n- **Perhitungan Kecepatan $v_2$:**  \n  $$v_2 = \\frac{v_1 \\cdot t_1}{t_2} = \\frac{60 \\times 210}{140}$$  \n  Sederhanakan pecahan $\\frac{210}{140} = \\frac{3}{2}$:  \n  $$v_2 = 60 \\times \\frac{3}{2} = 90\\text{ km/jam}$$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A ($75$) dan B ($80$) dihitung jika menggunakan perbandingan senilai secara keliru.  \n  - Pilihan C dan E terjadi akibat kesalahan pembagian menit.\n- **Penerapan Trik Cepat (15 Detik):** Gunakan rasio menit: $t_1 : t_2 = 210 : 140 = 3 : 2$. Karena berbalik nilai, rasio kecepatan dibalik: $v_1 : v_2 = 2 : 3$. Jika $2$ bagian $= 60\\text{ km/jam}$, maka $3$ bagian $= 90\\text{ km/jam}$. Jawaban tepat adalah pilihan **D**.\n\n---\n\n### Variasi 3: Beban Kerja Bersama dan Pekerja Tambahan Terhenti / HOTS\n\n> **Konteks Masalah Soal:**  \n> Sebuah proyek renovasi jembatan ditargetkan selesai dalam waktu $40\\text{ hari}$ dengan mempekerjakan $24\\text{ orang}$ pekerja. Setelah pekerjaan berjalan selama $15\\text{ hari}$, proyek terpaksa dihentikan selama $5\\text{ hari}$ akibat kendala banjir luapan sungai. Agar proyek tersebut tetap selesai tepat waktu sesuai jadwal semula, berapa orang pekerja tambahan yang wajib didatangkan?  \n>  \n> **Pertanyaan UTBK:** *Jumlah pekerja tambahan yang diperlukan adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 4 orang  \n> - **B.** 6 orang  \n> - **C.** 8 orang  \n> - **D.** 10 orang  \n> - **E.** 30 orang\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Sisa Waktu Proyek:**  \n  - Waktu total rencana: $40\\text{ hari}$.  \n  - Waktu yang sudah berjalan: $15\\text{ hari}$.  \n  - Sisa hari rencana normal: $40 - 15 = 25\\text{ hari}$.  \n  - Pekerjaan terhenti selama: $5\\text{ hari}$.  \n  - Sisa hari nyata yang tersedia: $25 - 5 = 20\\text{ hari}$.\n- **Metode 1 (Konsep Formal Beban Kerja):**  \n  - Sisa beban kerja yang belum selesai:  \n    $$\\text{Beban} = 25\\text{ hari} \\times 24\\text{ pekerja} = 600\\text{ orang-hari}$$  \n  - Jumlah pekerja baru ($P_{baru}$) yang dibutuhkan agar 600 beban ini tuntas dalam 20 hari:  \n    $$P_{baru} = \\frac{600}{20} = 30\\text{ orang}$$  \n  - Jumlah pekerja **tambahan** yang diperlukan:  \n    $$\\text{Tambahan} = P_{baru} - P_{lama} = 30 - 24 = 6\\text{ orang}$$\n- **Metode 2 (Rumus Sakti Kilat 10 Detik):**  \n  $$\\text{Tambahan} = \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Semula} = \\frac{5}{20} \\times 24 = \\frac{1}{4} \\times 24 = 6\\text{ orang}$$  \n  Hasilnya identik secara instan!\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan E Salah (Jebakan Terbesar):** Angka $30$ adalah total pekerja yang dibutuhkan, bukan pekerja tambahan! Siswa yang terburu-buru sering terjebak memilih E.  \n  - **Pilihan A, C, D Salah:** Terjadi karena salah membagi dengan total hari 40 atau lupa menghitung 5 hari terhenti.\n- **Penerapan Trik Cepat (15 Detik):** Rumus kilat: $\\frac{\\text{Hari Libur}}{\\text{Sisa Hari}} \\times \\text{Pekerja} = \\frac{5}{20} \\times 24 = 6$ orang. Dalam 5 detik, jawaban **B** langsung keluar.",
-    "visualizations_svg": [],
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPerbandingan di UTBK SNBT terbagi menjadi dua pilar utama:\n\n1. **Perbandingan Senilai (*Direct Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding lurus, di mana rasio keduanya bernilai konstan:  \n   $\\frac{X_1}{Y_1} = \\frac{X_2}{Y_2} \\iff X_1 \\cdot Y_2 = X_2 \\cdot Y_1$  \n   - *Konteks Nyata:* Jumlah konsumsi bahan bakar vs jarak tempuh, jumlah barang dibeli vs total harga, atau perbandingan skala peta.  \n   - **Rasio Bertingkat ($A : B$ dan $B : C$):**  \n     Jika $A : B = p : q$ dan $B : C = m : n$, samakan nilai $B$ dengan mencari KPK dari $q$ dan $m$:  \n     $A : B : C = (p \\cdot m) : (q \\cdot m) : (n \\cdot q)$\n\n2. **Perbandingan Berbalik Nilai (*Inverse Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding terbalik, di mana hasil kali keduanya bernilai konstan:  \n   $X_1 \\cdot Y_1 = X_2 \\cdot Y_2 \\iff \\frac{X_1}{X_2} = \\frac{Y_2}{Y_1}$  \n   - *Konteks Nyata:* Kecepatan vs waktu tempuh pada jarak yang sama, atau jumlah pekerja vs durasi waktu penyelesaian proyek.\n\n3. **Manajemen Beban Kerja Proyek Terhenti (HOTS)**  \n   Total pekerjaan diukur dalam satuan *\"Beban Orang-Hari\"* ($Pek = Orang \\times Hari$).  \n   - Ketika proyek terhenti di tengah jalan:  \n     $\\text{Sisa Beban Kerja} = (\\text{Sisa Hari Normal}) \\times (\\text{Pekerja Semula})$  \n     $\\text{Pekerja Baru yang Dibutuhkan} = \\frac{\\text{Sisa Beban Kerja}}{\\text{Sisa Hari Nyata}}$  \n     $\\text{Pekerja Tambahan} = \\text{Pekerja Baru} - \\text{Pekerja Semula}$\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Salah Menentukan Arah Perbandingan**  \n   Menggunakan perkalian silang (senilai) untuk kasus pekerja dan waktu, sehingga diperoleh hasil yang tidak logis (misalnya menambah pekerja malah membuat waktu pengerjaan menjadi lebih lama).\n2. **Jebakan Menghitung Beban dari Hari Ke-0 pada Proyek Terhenti**  \n   Siswa sering menghitung ulang total beban proyek dari awal, padahal sebagian pekerjaan sudah selesai dikerjakan pada hari-hari awal. Selalu langsung fokus pada **hari yang tersisa**.\n3. **Jebakan Pertanyaan Pekerja Tambahan vs Total Pekerja**  \n   Jika soal menanyakan *\"berapa pekerja tambahan yang diperlukan\"*, siswa yang terburu-buru sering memilih angka total pekerja baru, lupa mengurangkannya dengan jumlah pekerja semula.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Uji Arah Hubungan Sebelum Menghitung**  \n   Tanyakan dalam hati: *\"Jika X ditambah, apakah Y makin banyak atau makin sedikit?\"*  \n   - Makin banyak $\\to$ **Senilai** (perkalian silang: $X_1 Y_2 = X_2 Y_1$).  \n   - Makin sedikit $\\to$ **Berbalik Nilai** (perkalian lurus: $X_1 Y_1 = X_2 Y_2$).\n2. **Rumus Sakti Proyek Terhenti (10 Detik)**  \n   $\\text{Pekerja Tambahan} = \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Semula}$  \n   Rumus kilat ini langsung menghasilkan jumlah pekerja tambahan tanpa perlu menghitung total beban kerja!\n3. **Penyamaan Rasio N-Bentuk (Rasio Bertingkat)**  \n   Susun:  \n   $A : B = p : q$  \n   $B : C = m : n$  \n   Kalikan menyilang: $A = p \\times m$, $B = q \\times m$, $C = q \\times n$.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Menentukan konstanta relasi matematis (rasio tetap vs hasil kali tetap) antarvariabel yang saling memengaruhi.\n- **Kaidah Identifikasi:** Senilai jika bergerak searah ($X \\uparrow, Y \\uparrow$), Berbalik Nilai jika berlawanan arah ($X \\uparrow, Y \\downarrow$).\n- **Strategi Proyek Terhenti:** Gunakan rumus sakti $\\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Awal}$.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Perbandingan Senilai dan Berbalik Nilai yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Perbandingan Senilai dan Rasio Bertingkat (A:B:C)\n\n> **Konteks Masalah Soal:**  \n> Perbandingan uang tabungan Alif dan Budi adalah $3 : 4$, sedangkan perbandingan uang tabungan Budi dan Cici adalah $5 : 6$. Jika selisih uang tabungan Alif dan Cici adalah Rp450.000,00, berapakah jumlah uang tabungan Budi?  \n>  \n> **Pertanyaan UTBK:** *Jumlah uang tabungan Budi berdasarkan informasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Rp800.000,00  \n> - **B.** Rp900.000,00  \n> - **C.** Rp1.000.000,00  \n> - **D.** Rp1.100.000,00  \n> - **E.** Rp1.200.000,00\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Menyatukan Perbandingan Bertingkat ($A : B : C$):**  \n  - $A : B = 3 : 4$  \n  - $B : C = 5 : 6$  \n  - KPK dari nilai pembanding $B$ (yaitu 4 dan 5) adalah 20.  \n  - Kalikan rasio pertama dengan 5: $A : B = 15 : 20$.  \n  - Kalikan rasio kedua dengan 4: $B : C = 20 : 24$.  \n  - Perbandingan gabungan:  \n    $A : B : C = 15 : 20 : 24$\n- **Menentukan Nilai Satuan Porsi Tabungan:**  \n  - Selisih porsi $C$ dan $A$ adalah:  \n    $24 - 15 = 9 \\text{ bagian}$  \n  - Nilai 9 bagian tersebut setara dengan Rp450.000,00.  \n  - Maka nilai 1 bagian rasio adalah:  \n    $\\text{Nilai } 1 \\text{ bagian} = \\frac{\\text{Rp450.000,00}}{9} = \\text{Rp50.000,00}$\n- **Menghitung Tabungan Budi:**  \n  - Tabungan Budi memiliki porsi 20 bagian:  \n    $\\text{Tabungan Budi} = 20 \\times \\text{Rp50.000,00} = \\text{Rp1.000.000,00}$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A (Rp800.000) dan B (Rp900.000) terjadi jika siswa keliru menghitung porsi Alif atau salah menentukan selisih bagian ($24 - 15$ disangka 10 bagian).  \n  - Pilihan D dan E keliru dalam mengalikan nilai porsi Budi.\n- **Penerapan Trik Cepat (15 Detik):** $A:B:C = 15:20:24$. Selisih $C - A = 9$ bagian $= 450$ ribu $\\implies 1$ bagian $= 50$ ribu. Budi $= 20$ bagian $\\implies 20 \\times 50$ ribu $= 1.000$ ribu (Rp1.000.000,00). Pilihan **C** langsung terkunci.\n\n---\n\n### Variasi 2: Perbandingan Berbalik Nilai pada Waktu dan Kecepatan\n\n> **Konteks Masalah Soal:**  \n> Sebuah mobil menempuh perjalanan dari Kota P ke Kota Q dengan kecepatan rata-rata $60\\text{ km/jam}$ dalam waktu $3\\text{ jam } 30\\text{ menit}$. Jika dalam perjalanan pulang pengemudi ingin menyingkat waktu tempuh menjadi hanya $2\\text{ jam } 20\\text{ menit}$, berapakah kecepatan rata-rata yang harus dipertahankan?  \n>  \n> **Pertanyaan UTBK:** *Kecepatan rata-rata mobil pada perjalanan pulang tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $75\\text{ km/jam}$  \n> - **B.** $80\\text{ km/jam}$  \n> - **C.** $85\\text{ km/jam}$  \n> - **D.** $90\\text{ km/jam}$  \n> - **E.** $95\\text{ km/jam}$\n\n**Kunci Jawaban: D**\n\n**Bedah Logika & Pembahasan:**\n- **Identifikasi Jenis Perbandingan:**  \n  Jarak antara Kota P dan Kota Q adalah tetap. Semakin cepat mobil melaju, waktu yang dibutuhkan semakin singkat. Ini adalah kasus **perbandingan berbalik nilai**:  \n  $v_1 \\cdot t_1 = v_2 \\cdot t_2$\n- **Konversi Waktu ke Satuan Jam / Menit:**  \n  - $t_1 = 3\\text{ jam } 30\\text{ menit} = 210\\text{ menit}$ (atau $3{,}5\\text{ jam}$).  \n  - $t_2 = 2\\text{ jam } 20\\text{ menit} = 140\\text{ menit}$ (atau $2\\frac{1}{3}\\text{ jam}$).  \n  - $v_1 = 60\\text{ km/jam}$.\n- **Perhitungan Kecepatan $v_2$:**  \n  $v_2 = \\frac{v_1 \\cdot t_1}{t_2} = \\frac{60 \\times 210}{140}$  \n  Sederhanakan pecahan $\\frac{210}{140} = \\frac{3}{2}$:  \n  $v_2 = 60 \\times \\frac{3}{2} = 90\\text{ km/jam}$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A ($75$) dan B ($80$) dihitung jika menggunakan perbandingan senilai secara keliru.  \n  - Pilihan C dan E terjadi akibat kesalahan pembagian menit.\n- **Penerapan Trik Cepat (15 Detik):** Gunakan rasio menit: $t_1 : t_2 = 210 : 140 = 3 : 2$. Karena berbalik nilai, rasio kecepatan dibalik: $v_1 : v_2 = 2 : 3$. Jika $2$ bagian $= 60\\text{ km/jam}$, maka $3$ bagian $= 90\\text{ km/jam}$. Jawaban tepat adalah pilihan **D**.\n\n---\n\n### Variasi 3: Beban Kerja Bersama dan Pekerja Tambahan Terhenti / HOTS\n\n[[SVG:svg-pu-03-04-timeline]]\n\n\n> **Konteks Masalah Soal:**  \n> Sebuah proyek renovasi jembatan ditargetkan selesai dalam waktu $40\\text{ hari}$ dengan mempekerjakan $24\\text{ orang}$ pekerja. Setelah pekerjaan berjalan selama $15\\text{ hari}$, proyek terpaksa dihentikan selama $5\\text{ hari}$ akibat kendala banjir luapan sungai. Agar proyek tersebut tetap selesai tepat waktu sesuai jadwal semula, berapa orang pekerja tambahan yang wajib didatangkan?  \n>  \n> **Pertanyaan UTBK:** *Jumlah pekerja tambahan yang diperlukan adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 4 orang  \n> - **B.** 6 orang  \n> - **C.** 8 orang  \n> - **D.** 10 orang  \n> - **E.** 30 orang\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Sisa Waktu Proyek:**  \n  - Waktu total rencana: $40\\text{ hari}$.  \n  - Waktu yang sudah berjalan: $15\\text{ hari}$.  \n  - Sisa hari rencana normal: $40 - 15 = 25\\text{ hari}$.  \n  - Pekerjaan terhenti selama: $5\\text{ hari}$.  \n  - Sisa hari nyata yang tersedia: $25 - 5 = 20\\text{ hari}$.\n- **Metode 1 (Konsep Formal Beban Kerja):**  \n  - Sisa beban kerja yang belum selesai:  \n    $\\text{Beban} = 25\\text{ hari} \\times 24\\text{ pekerja} = 600\\text{ orang-hari}$  \n  - Jumlah pekerja baru ($P_{baru}$) yang dibutuhkan agar 600 beban ini tuntas dalam 20 hari:  \n    $P_{baru} = \\frac{600}{20} = 30\\text{ orang}$  \n  - Jumlah pekerja **tambahan** yang diperlukan:  \n    $\\text{Tambahan} = P_{baru} - P_{lama} = 30 - 24 = 6\\text{ orang}$\n- **Metode 2 (Rumus Sakti Kilat 10 Detik):**  \n  $\\text{Tambahan} = \\frac{5}{20} \\times 24 = \\frac{1}{4} \\times 24 = 6\\text{ orang}$  \n  Hasilnya identik secara instan!\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan E Salah (Jebakan Terbesar):** Angka $30$ adalah total pekerja yang dibutuhkan, bukan pekerja tambahan! Siswa yang terburu-buru sering terjebak memilih E.  \n  - **Pilihan A, C, D Salah:** Terjadi karena salah membagi dengan total hari 40 atau lupa menghitung 5 hari terhenti.\n- **Penerapan Trik Cepat (15 Detik):** Rumus kilat: $\\frac{\\text{Hari Libur}}{\\text{Sisa Hari}} \\times \\text{Pekerja} = \\frac{5}{20} \\times 24 = 6$ orang. Dalam 5 detik, jawaban **B** langsung keluar.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-03-04-timeline",
+        "title": "Visualisasi Timeline Proyek Renovasi Terhenti (Beban Orang-Hari)",
+        "caption": "Sisa Waktu Normal 25 Hari Terpotong Libur 5 Hari Menjadi 20 Hari Nyata (+6 Pekerja Tambahan)",
+        "svg_code": "<svg viewBox=\"0 0 640 220\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .tl-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .tl-bar-txt { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; fill: #ffffff; text-anchor: middle; }\n      .tl-sub { font-family: system-ui, sans-serif; font-size: 11px; fill: #475569; text-anchor: middle; }\n      :root.dark .tl-title { fill: #f8fafc; }\n      :root.dark .tl-sub { fill: #cbd5e1; }\n    </style>\n  </defs>\n\n  <!-- Background -->\n  <rect x=\"15\" y=\"10\" width=\"610\" height=\"200\" rx=\"16\" fill=\"rgba(79, 70, 229, 0.04)\" stroke=\"rgba(79, 70, 229, 0.15)\" stroke-width=\"1.5\"/>\n  <text x=\"320\" y=\"32\" class=\"tl-title\">TIMELINE RENCANA 40 HARI PROYEK RENOVASI</text>\n\n  <!-- Total 40 Days Timeline Bar (width = 560 px, scale: 14 px / day) -->\n  <!-- Segment 1: Hari 1 - 15 (15 days * 14 = 210 px) -->\n  <g transform=\"translate(40, 52)\">\n    <rect width=\"210\" height=\"48\" rx=\"8\" fill=\"#10b981\"/>\n    <text x=\"105\" y=\"24\" class=\"tl-bar-txt\">15 HARI PERTAMA</text>\n    <text x=\"105\" y=\"40\" class=\"tl-bar-txt\" font-size=\"10\">24 Pekerja (Selesai Normal)</text>\n    <text x=\"0\" y=\"66\" class=\"tl-sub\" font-size=\"10\">Hari 0</text>\n    <text x=\"210\" y=\"66\" class=\"tl-sub\" font-size=\"10\">Hari 15</text>\n  </g>\n\n  <!-- Segment 2: Hari 16 - 20 (5 days * 14 = 70 px) -->\n  <g transform=\"translate(254, 52)\">\n    <rect width=\"70\" height=\"48\" rx=\"8\" fill=\"#ef4444\"/>\n    <text x=\"35\" y=\"24\" class=\"tl-bar-txt\">5 HARI</text>\n    <text x=\"35\" y=\"40\" class=\"tl-bar-txt\" font-size=\"9\">TERHENTI</text>\n    <text x=\"70\" y=\"66\" class=\"tl-sub\" font-size=\"10\">Hari 20</text>\n  </g>\n\n  <!-- Segment 3: Hari 21 - 40 (20 days * 14 = 280 px) -->\n  <g transform=\"translate(328, 52)\">\n    <rect width=\"272\" height=\"48\" rx=\"8\" fill=\"#3b82f6\"/>\n    <text x=\"136\" y=\"24\" class=\"tl-bar-txt\">20 HARI SISA NYATA</text>\n    <text x=\"136\" y=\"40\" class=\"tl-bar-txt\" font-size=\"10\">Dibutuhkan 30 Pekerja (+6 Orang)</text>\n    <text x=\"272\" y=\"66\" class=\"tl-sub\" font-size=\"10\">Hari 40</text>\n  </g>\n\n  <!-- Calculation Card at bottom -->\n  <g transform=\"translate(40, 134)\">\n    <rect width=\"560\" height=\"62\" rx=\"10\" fill=\"rgba(59, 130, 246, 0.1)\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/>\n    <text x=\"280\" y=\"22\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\">FORMULA SAKTI EKSEKUSI 10 DETIK:</text>\n    <text x=\"280\" y=\"46\" fill=\"#1e40af\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\">Pekerja Tambahan = (Hari Terhenti / Sisa Hari) × Pekerja Awal = (5 / 20) × 24 = 6 Orang</text>\n  </g>\n</svg>"
+      }
+    ],
     "distractor_traps": [
       "Jebakan Total Pekerja vs Pekerja Tambahan: Memilih angka 30 padahal yang ditanyakan adalah pekerja tambahannya (30 - 24 = 6).",
       "Mengalikan silang pada perbandingan waktu dan pekerja (keliru menganggap senilai).",
@@ -3580,13 +1962,20 @@ const MATERIAL_PU_03_05 = {
       "Membaca Tren dan Titik Ekstrem pada Grafik Garis dan Batang",
       "Evaluasi Simpulan Pernyataan Berdasarkan Data Majemuk (HOTS)"
     ],
-    "requires_svg": false,
+    "requires_svg": true,
     "updated_at": "2026-11-08"
   },
   "content": {
     "tactical_overview": "Interpretasi data adalah materi penalaran kuantitatif yang paling sering menguras waktu ujian jika tidak dihadapi dengan teknik eliminasi dan estimasi yang cerdas. Pembuat soal UTBK sengaja menyajikan tabel atau grafik yang padat angka untuk memancing siswa menghitung rata-rata atau persentase secara detail. Kunci suksesnya adalah jangan pernah menghitung seluruh tabel: baca pertanyaan terlebih dahulu, temukan baris atau kolom yang relevan saja, dan kuasai perbedaan mendasar antara kenaikan nominal (selisih pengurangan biasa) dengan kenaikan persentase (selisih dibagi nilai awal).",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nMembaca data statistik di UTBK SNBT menuntut kecepatan dan ketepatan penalaran numerik:\n\n1. **Perbedaan Kenaikan Nominal vs Kenaikan Persentase**  \n   Ini adalah konsep paling sering diuji dan paling banyak memakan korban jebakan di UTBK:  \n   - **Kenaikan Nominal (Selisih Mutlak):**  \n     $$\\Delta = \\text{Nilai Akhir} - \\text{Nilai Awal}$$  \n   - **Kenaikan Relatif / Persentase (Pertumbuhan):**  \n     $$\\%\\Delta = \\frac{\\text{Nilai Akhir} - \\text{Nilai Awal}}{\\text{Nilai Awal}} \\times 100\\%$$  \n   *Contoh:* Angka naik dari $10$ ke $20$ memiliki $\\Delta = 10$, namun persentase kenaikannya mencapai $100\\%$. Sebaliknya, angka naik dari $100$ ke $120$ memiliki $\\Delta = 20$ (nominal lebih besar), tetapi persentase kenaikannya hanya $20\\%$.\n\n2. **Membaca Grafik Batang dan Grafik Garis**  \n   - Perhatikan **satuan pada sumbu vertikal** (dalam jutaan, ribuan ton, atau persen).  \n   - Perhatikan apakah grafik memiliki **sumbu ganda (dual axis)** di mana sumbu kiri dan kanan menggunakan skala yang berbeda.  \n   - Kemiringan garis (*slope*) menggambarkan laju perubahan: semakin curam garis naik, semakin tinggi laju pertumbuhannya.\n\n3. **Evaluasi Kebenaran Pernyataan Majemuk (Soal HOTS)**  \n   Soal menyajikan 5 pernyataan pilihan ganda dan meminta Anda menentukan pernyataan yang *pasti benar* atau *pasti salah*.  \n   - Teknik pengerjaan: Gunakan metode eliminasi cepat dengan membantah opsi yang memuat angka ekstrim atau opsi yang klaimnya bertolak belakang dengan grafik.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Menyamakan Kenaikan Tertinggi dengan Persentase Tertinggi**  \n   Soal menanyakan *\"komoditas dengan persentase pertumbuhan tertinggi\"*, namun siswa justru memilih komoditas dengan kenaikan nominal terbesar.\n2. **Jebakan Mengabaikan Nilai Basis Awal (*Base Effect Trap*)**  \n   Kenaikan nominal kecil pada nilai awal yang sangat kerdil dapat menghasilkan persentase lonjakan yang masif (misal: naik dari 2 ke 6 adalah kenaikan 200%). Jangan tertipu hanya melihat besaran angka akhir.\n3. **Jebakan Salah Membaca Label Tahun atau Kategori**  \n   Siswa membaca data tahun 2023 padahal yang ditanyakan adalah perubahan antara tahun 2021 dan 2022.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Baca Pertanyaan Sebelum Melirik Tabel**  \n   Ketahui apa yang dicari (nama komoditas, tahun tertentu, atau persentase) sebelum mata Anda tenggelam dalam belantara angka tabel.\n2. **Gunakan Perbandingan Pecahan Silang untuk Persentase Terbesar**  \n   Untuk membandingkan apakah $\\frac{15}{40}$ lebih besar dari $\\frac{18}{50}$:  \n   Kalikan silang: $15 \\times 50 = 750$ vs $40 \\times 18 = 720$.  \n   Karena $750 > 720$, maka $\\frac{15}{40}$ pasti lebih besar tanpa perlu menghitung desimalnya!\n3. **Uji Opsi dari yang Paling Mudah Diverifikasi**  \n   Pada soal evaluasi pernyataan, uji terlebih dahulu opsi yang hanya memerlukan pembacaan satu titik grafik sebelum menguji opsi yang memerlukan perhitungan rata-rata.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Kemampuan mengekstraksi kesimpulan numerik yang akurat dari tabel dan visualisasi data.\n- **Kaidah Emas:** Persentase perubahan selalu dibagi dengan nilai awal ($\\%\\Delta = \\frac{\\Delta}{\\text{Awal}}$).\n- **Strategi Eksekusi:** Baca pertanyaan dulu, gunakan perkalian silang untuk membandingkan laju pertumbuhan, dan eliminasi opsi yang salah membaca skala sumbu.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Interpretasi Data yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks tabel, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Analisis Persentase Perubahan pada Tabel Statistik\n\n> **Konteks Tabel Data Soal:**  \n> Tabel berikut menunjukkan volume penjualan mobil (dalam unit) dari empat dealer mobil selama tahun 2024 dan 2025:  \n> | Dealer | Penjualan 2024 | Penjualan 2025 |  \n> | :--- | :---: | :---: |  \n> | Dealer Alpha | 200 | 260 |  \n> | Dealer Beta | 120 | 180 |  \n> | Dealer Gamma | 400 | 480 |  \n> | Dealer Delta | 500 | 575 |  \n>  \n> **Pertanyaan UTBK:** *Dealer yang mencatatkan persentase kenaikan penjualan TERTINGGI dari tahun 2024 ke 2025 adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Dealer Alpha  \n> - **B.** Dealer Beta  \n> - **C.** Dealer Gamma  \n> - **D.** Dealer Delta  \n> - **E.** Dealer Gamma dan Delta sama tinggi\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kenaikan Nominal vs Kenaikan Persentase Tiap Dealer:**  \n  - **Dealer Alpha:**  \n    Kenaikan nominal $= 260 - 200 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{200} \\times 100\\% = 30\\%$.\n  - **Dealer Beta:**  \n    Kenaikan nominal $= 180 - 120 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{120} \\times 100\\% = 50\\%$.\n  - **Dealer Gamma:**  \n    Kenaikan nominal $= 480 - 400 = 80\\text{ unit}$ (secara nominal adalah yang tertinggi!).  \n    Persentase kenaikan $= \\frac{80}{400} \\times 100\\% = 20\\%$.\n  - **Dealer Delta:**  \n    Kenaikan nominal $= 575 - 500 = 75\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{75}{500} \\times 100\\% = 15\\%$.\n- **Perbandingan Hasil:**  \n  Meskipun Dealer Gamma memiliki kenaikan nominal terbesar ($80\\text{ unit}$), persentase kenaikan tertinggi dipegang oleh **Dealer Beta** dengan kenaikan mencapai **$50\\%$** karena nilai basis awalnya yang lebih kecil.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan C Salah (Jebakan Utama):** Terkecoh memilih Dealer Gamma karena nominalnya naik 80 unit.  \n  - **Pilihan A, D, E Salah:** Persentase kenaikan Alpha (30%) dan Delta (15%) lebih rendah daripada Beta (50%).\n- **Penerapan Trik Cepat (15 Detik):** Alpha naik $\\frac{60}{200} = \\frac{3}{10}$. Beta naik $\\frac{60}{120} = \\frac{1}{2} = 50\\%$. Gamma naik $\\frac{80}{400} = \\frac{1}{5} = 20\\%$. Jelas $\\frac{1}{2}$ ($50\\%$) adalah yang paling dominan. Jawaban pasti **B**.\n\n---\n\n### Variasi 2: Membaca Tren dan Titik Ekstrem pada Grafik / Data Deret\n\n> **Konteks Data Soal:**  \n> Catatan laba bersih (dalam miliar rupiah) sebuah perusahaan rintisan selama lima caturwulan berturut-turut adalah sebagai berikut:  \n> - Caturwulan I: Rp15 Miliar  \n> - Caturwulan II: Rp18 Miliar  \n> - Caturwulan III: Rp12 Miliar  \n> - Caturwulan IV: Rp24 Miliar  \n> - Caturwulan V: Rp30 Miliar  \n>  \n> **Pertanyaan UTBK:** *Laju kenaikan laba bersih tertinggi dalam satu periode caturwulan berturut-turut terjadi pada perpindahan dari...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Caturwulan I ke Caturwulan II  \n> - **B.** Caturwulan II ke Caturwulan III  \n> - **C.** Caturwulan III ke Caturwulan IV  \n> - **D.** Caturwulan IV ke Caturwulan V  \n> - **E.** Caturwulan I ke Caturwulan V\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Laju Perubahan Tiap Periode:**  \n  - **Periode I ke II:** Naik dari $15$ ke $18$ $\\implies \\frac{18 - 15}{15} = \\frac{3}{15} = 20\\%$.  \n  - **Periode II ke III:** Terjadi **penurunan** (dari 18 ke 12), sehingga gugur.  \n  - **Periode III ke IV:** Naik dari $12$ ke $24$ $\\implies \\frac{24 - 12}{12} = \\frac{12}{12} = 100\\%$ (laba berlipat ganda dua kali lipat!).  \n  - **Periode IV ke V:** Naik dari $24$ ke $30$ $\\implies \\frac{30 - 24}{24} = \\frac{6}{24} = 25\\%$.\n- **Kesimpulan:** Laju kenaikan tertinggi terjadi pada perpindahan dari **Caturwulan III ke Caturwulan IV** dengan lonjakan fantastis sebesar **$100\\%$**.\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A dan D laju pertumbuhannya hanya $20\\%$ dan $25\\%$.  \n  - Pilihan B mengalami penurunan laba.  \n  - Pilihan E mencakup empat periode, bukan satu periode berturut-turut.\n- **Penerapan Trik Cepat (15 Detik):** Dari 12 ke 24 adalah kenaikan $100\\%$ (angka berlipat dua). Tidak ada periode lain yang melipatgandakan angka. Jawaban seketika **C**.\n\n---\n\n### Variasi 3: Evaluasi Simpulan Pernyataan Berdasarkan Data Majemuk / HOTS\n\n> **Konteks Tabel Data Soal:**  \n> Tabel statistik kelulusan ujian kompetensi dari tiga sekolah kejuruan tahun 2025:  \n> | Sekolah | Jumlah Siswa Terdaftar | Persentase Kelulusan |  \n> | :--- | :---: | :---: |  \n> | SMK Mandiri | 200 siswa | 90% |  \n> | SMK Prestasi | 300 siswa | 80% |  \n> | SMK Cendekia | 150 siswa | 80% |  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan data tabel tersebut, pernyataan berikut yang **PASTI BENAR** adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jumlah siswa yang lulus dari SMK Mandiri lebih banyak daripada siswa yang lulus dari SMK Prestasi  \n> - **B.** Jumlah siswa yang TIDAK lulus dari SMK Prestasi sama dengan jumlah siswa yang TIDAK lulus dari SMK Mandiri  \n> - **C.** Jumlah siswa yang lulus dari SMK Prestasi adalah yang terbanyak di antara ketiga sekolah tersebut  \n> - **D.** Total persentase kelulusan gabungan ketiga sekolah tersebut adalah 85%  \n> - **E.** Siswa yang tidak lulus dari SMK Cendekia berjumlah 40 orang\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Kalkulasi Rinci Jumlah Siswa Lulus dan Tidak Lulus:**  \n  - **SMK Mandiri (200 siswa):**  \n    - Lulus $= 90\\% \\times 200 = 180\\text{ siswa}$.  \n    - Tidak Lulus $= 10\\% \\times 200 = 20\\text{ siswa}$.  \n  - **SMK Prestasi (300 siswa):**  \n    - Lulus $= 80\\% \\times 300 = 240\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 300 = 60\\text{ siswa}$.  \n  - **SMK Cendekia (150 siswa):**  \n    - Lulus $= 80\\% \\times 150 = 120\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 150 = 30\\text{ siswa}$.\n- **Evaluasi Opsi Pilihan Ganda:**  \n  - **Pilihan A Salah:** Lulus Mandiri ($180$) lebih sedikit dari Lulus Prestasi ($240$).  \n  - **Pilihan B Salah:** Tidak lulus Prestasi ($60$) berbeda dengan Mandiri ($20$).  \n  - **Pilihan C BENAR:** Lulus terbanyak adalah SMK Prestasi dengan $240\\text{ siswa}$ (mengungguli Mandiri $180$ dan Cendekia $120$).  \n  - **Pilihan D Salah:** Total lulus $= 180 + 240 + 120 = 540$ dari total $650$ siswa $\\implies \\frac{540}{650} \\approx 83{,}08\\%$ (bukan 85%). Rata-rata persentase tidak boleh dirata-ratakan langsung karena bobot populasinya berbeda.  \n  - **Pilihan E Salah:** Siswa tidak lulus SMK Cendekia adalah $30\\text{ orang}$, bukan $40\\text{ orang}$.\n- **Penerapan Trik Cepat (15 Detik):** Cek jumlah lulus Prestasi: $80\\% \\times 300 = 240$. Ini jauh melampaui total seluruh siswa Mandiri (200) apalagi yang lulus. Maka pernyataan C bahwa Prestasi memiliki jumlah lulus terbanyak sudah pasti benar tanpa perlu menghitung rata-rata gabungan. Pilihan **C** terbukti sah.",
-    "visualizations_svg": [],
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nMembaca data statistik di UTBK SNBT menuntut kecepatan dan ketepatan penalaran numerik:\n\n1. **Perbedaan Kenaikan Nominal vs Kenaikan Persentase**  \n   Ini adalah konsep paling sering diuji dan paling banyak memakan korban jebakan di UTBK:  \n   - **Kenaikan Nominal (Selisih Mutlak):**  \n     $\\Delta = \\text{Nilai Akhir} - \\text{Nilai Awal}$  \n   - **Kenaikan Relatif / Persentase (Pertumbuhan):**  \n     $\\%\\Delta = \\frac{\\text{Nilai Akhir} - \\text{Nilai Awal}}{\\text{Nilai Awal}} \\times 100\\%$  \n   *Contoh:* Angka naik dari $10$ ke $20$ memiliki $\\Delta = 10$, namun persentase kenaikannya mencapai $100\\%$. Sebaliknya, angka naik dari $100$ ke $120$ memiliki $\\Delta = 20$ (nominal lebih besar), tetapi persentase kenaikannya hanya $20\\%$.\n\n2. **Membaca Grafik Batang dan Grafik Garis**  \n   - Perhatikan **satuan pada sumbu vertikal** (dalam jutaan, ribuan ton, atau persen).  \n   - Perhatikan apakah grafik memiliki **sumbu ganda (dual axis)** di mana sumbu kiri dan kanan menggunakan skala yang berbeda.  \n   - Kemiringan garis (*slope*) menggambarkan laju perubahan: semakin curam garis naik, semakin tinggi laju pertumbuhannya.\n\n3. **Evaluasi Kebenaran Pernyataan Majemuk (Soal HOTS)**  \n   Soal menyajikan 5 pernyataan pilihan ganda dan meminta Anda menentukan pernyataan yang *pasti benar* atau *pasti salah*.  \n   - Teknik pengerjaan: Gunakan metode eliminasi cepat dengan membantah opsi yang memuat angka ekstrim atau opsi yang klaimnya bertolak belakang dengan grafik.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Menyamakan Kenaikan Tertinggi dengan Persentase Tertinggi**  \n   Soal menanyakan *\"komoditas dengan persentase pertumbuhan tertinggi\"*, namun siswa justru memilih komoditas dengan kenaikan nominal terbesar.\n2. **Jebakan Mengabaikan Nilai Basis Awal (*Base Effect Trap*)**  \n   Kenaikan nominal kecil pada nilai awal yang sangat kerdil dapat menghasilkan persentase lonjakan yang masif (misal: naik dari 2 ke 6 adalah kenaikan 200%). Jangan tertipu hanya melihat besaran angka akhir.\n3. **Jebakan Salah Membaca Label Tahun atau Kategori**  \n   Siswa membaca data tahun 2023 padahal yang ditanyakan adalah perubahan antara tahun 2021 dan 2022.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Baca Pertanyaan Sebelum Melirik Tabel**  \n   Ketahui apa yang dicari (nama komoditas, tahun tertentu, atau persentase) sebelum mata Anda tenggelam dalam belantara angka tabel.\n2. **Gunakan Perbandingan Pecahan Silang untuk Persentase Terbesar**  \n   Untuk membandingkan apakah $\\frac{15}{40}$ lebih besar dari $\\frac{18}{50}$:  \n   Kalikan silang: $15 \\times 50 = 750$ vs $40 \\times 18 = 720$.  \n   Karena $750 > 720$, maka $\\frac{15}{40}$ pasti lebih besar tanpa perlu menghitung desimalnya!\n3. **Uji Opsi dari yang Paling Mudah Diverifikasi**  \n   Pada soal evaluasi pernyataan, uji terlebih dahulu opsi yang hanya memerlukan pembacaan satu titik grafik sebelum menguji opsi yang memerlukan perhitungan rata-rata.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Kemampuan mengekstraksi kesimpulan numerik yang akurat dari tabel dan visualisasi data.\n- **Kaidah Emas:** Persentase perubahan selalu dibagi dengan nilai awal ($\\%\\Delta = \\frac{\\Delta}{\\text{Awal}}$).\n- **Strategi Eksekusi:** Baca pertanyaan dulu, gunakan perkalian silang untuk membandingkan laju pertumbuhan, dan eliminasi opsi yang salah membaca skala sumbu.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Interpretasi Data yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks tabel, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Analisis Persentase Perubahan pada Tabel Statistik\n\n[[SVG:svg-pu-03-05-barchart]]\n\n\n> **Konteks Tabel Data Soal:**  \n> Tabel berikut menunjukkan volume penjualan mobil (dalam unit) dari empat dealer mobil selama tahun 2024 dan 2025:  \n> | Dealer | Penjualan 2024 | Penjualan 2025 |  \n> | :--- | :---: | :---: |  \n> | Dealer Alpha | 200 | 260 |  \n> | Dealer Beta | 120 | 180 |  \n> | Dealer Gamma | 400 | 480 |  \n> | Dealer Delta | 500 | 575 |  \n>  \n> **Pertanyaan UTBK:** *Dealer yang mencatatkan persentase kenaikan penjualan TERTINGGI dari tahun 2024 ke 2025 adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Dealer Alpha  \n> - **B.** Dealer Beta  \n> - **C.** Dealer Gamma  \n> - **D.** Dealer Delta  \n> - **E.** Dealer Gamma dan Delta sama tinggi\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kenaikan Nominal vs Kenaikan Persentase Tiap Dealer:**  \n  - **Dealer Alpha:**  \n    Kenaikan nominal $= 260 - 200 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{200} \\times 100\\% = 30\\%$.\n  - **Dealer Beta:**  \n    Kenaikan nominal $= 180 - 120 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{120} \\times 100\\% = 50\\%$.\n  - **Dealer Gamma:**  \n    Kenaikan nominal $= 480 - 400 = 80\\text{ unit}$ (secara nominal adalah yang tertinggi!).  \n    Persentase kenaikan $= \\frac{80}{400} \\times 100\\% = 20\\%$.\n  - **Dealer Delta:**  \n    Kenaikan nominal $= 575 - 500 = 75\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{75}{500} \\times 100\\% = 15\\%$.\n- **Perbandingan Hasil:**  \n  Meskipun Dealer Gamma memiliki kenaikan nominal terbesar ($80\\text{ unit}$), persentase kenaikan tertinggi dipegang oleh **Dealer Beta** dengan kenaikan mencapai **$50\\%$** karena nilai basis awalnya yang lebih kecil.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan C Salah (Jebakan Utama):** Terkecoh memilih Dealer Gamma karena nominalnya naik 80 unit.  \n  - **Pilihan A, D, E Salah:** Persentase kenaikan Alpha (30%) dan Delta (15%) lebih rendah daripada Beta (50%).\n- **Penerapan Trik Cepat (15 Detik):** Alpha naik $\\frac{60}{200} = \\frac{3}{10}$. Beta naik $\\frac{60}{120} = \\frac{1}{2} = 50\\%$. Gamma naik $\\frac{80}{400} = \\frac{1}{5} = 20\\%$. Jelas $\\frac{1}{2}$ ($50\\%$) adalah yang paling dominan. Jawaban pasti **B**.\n\n---\n\n### Variasi 2: Membaca Tren dan Titik Ekstrem pada Grafik / Data Deret\n\n> **Konteks Data Soal:**  \n> Catatan laba bersih (dalam miliar rupiah) sebuah perusahaan rintisan selama lima caturwulan berturut-turut adalah sebagai berikut:  \n> - Caturwulan I: Rp15 Miliar  \n> - Caturwulan II: Rp18 Miliar  \n> - Caturwulan III: Rp12 Miliar  \n> - Caturwulan IV: Rp24 Miliar  \n> - Caturwulan V: Rp30 Miliar  \n>  \n> **Pertanyaan UTBK:** *Laju kenaikan laba bersih tertinggi dalam satu periode caturwulan berturut-turut terjadi pada perpindahan dari...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Caturwulan I ke Caturwulan II  \n> - **B.** Caturwulan II ke Caturwulan III  \n> - **C.** Caturwulan III ke Caturwulan IV  \n> - **D.** Caturwulan IV ke Caturwulan V  \n> - **E.** Caturwulan I ke Caturwulan V\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Laju Perubahan Tiap Periode:**  \n  - **Periode I ke II:** Naik dari $15$ ke $18$ $\\implies \\frac{18 - 15}{15} = \\frac{3}{15} = 20\\%$.  \n  - **Periode II ke III:** Terjadi **penurunan** (dari 18 ke 12), sehingga gugur.  \n  - **Periode III ke IV:** Naik dari $12$ ke $24$ $\\implies \\frac{24 - 12}{12} = \\frac{12}{12} = 100\\%$ (laba berlipat ganda dua kali lipat!).  \n  - **Periode IV ke V:** Naik dari $24$ ke $30$ $\\implies \\frac{30 - 24}{24} = \\frac{6}{24} = 25\\%$.\n- **Kesimpulan:** Laju kenaikan tertinggi terjadi pada perpindahan dari **Caturwulan III ke Caturwulan IV** dengan lonjakan fantastis sebesar **$100\\%$**.\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A dan D laju pertumbuhannya hanya $20\\%$ dan $25\\%$.  \n  - Pilihan B mengalami penurunan laba.  \n  - Pilihan E mencakup empat periode, bukan satu periode berturut-turut.\n- **Penerapan Trik Cepat (15 Detik):** Dari 12 ke 24 adalah kenaikan $100\\%$ (angka berlipat dua). Tidak ada periode lain yang melipatgandakan angka. Jawaban seketika **C**.\n\n---\n\n### Variasi 3: Evaluasi Simpulan Pernyataan Berdasarkan Data Majemuk / HOTS\n\n> **Konteks Tabel Data Soal:**  \n> Tabel statistik kelulusan ujian kompetensi dari tiga sekolah kejuruan tahun 2025:  \n> | Sekolah | Jumlah Siswa Terdaftar | Persentase Kelulusan |  \n> | :--- | :---: | :---: |  \n> | SMK Mandiri | 200 siswa | 90% |  \n> | SMK Prestasi | 300 siswa | 80% |  \n> | SMK Cendekia | 150 siswa | 80% |  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan data tabel tersebut, pernyataan berikut yang **PASTI BENAR** adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jumlah siswa yang lulus dari SMK Mandiri lebih banyak daripada siswa yang lulus dari SMK Prestasi  \n> - **B.** Jumlah siswa yang TIDAK lulus dari SMK Prestasi sama dengan jumlah siswa yang TIDAK lulus dari SMK Mandiri  \n> - **C.** Jumlah siswa yang lulus dari SMK Prestasi adalah yang terbanyak di antara ketiga sekolah tersebut  \n> - **D.** Total persentase kelulusan gabungan ketiga sekolah tersebut adalah 85%  \n> - **E.** Siswa yang tidak lulus dari SMK Cendekia berjumlah 40 orang\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Kalkulasi Rinci Jumlah Siswa Lulus dan Tidak Lulus:**  \n  - **SMK Mandiri (200 siswa):**  \n    - Lulus $= 90\\% \\times 200 = 180\\text{ siswa}$.  \n    - Tidak Lulus $= 10\\% \\times 200 = 20\\text{ siswa}$.  \n  - **SMK Prestasi (300 siswa):**  \n    - Lulus $= 80\\% \\times 300 = 240\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 300 = 60\\text{ siswa}$.  \n  - **SMK Cendekia (150 siswa):**  \n    - Lulus $= 80\\% \\times 150 = 120\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 150 = 30\\text{ siswa}$.\n- **Evaluasi Opsi Pilihan Ganda:**  \n  - **Pilihan A Salah:** Lulus Mandiri ($180$) lebih sedikit dari Lulus Prestasi ($240$).  \n  - **Pilihan B Salah:** Tidak lulus Prestasi ($60$) berbeda dengan Mandiri ($20$).  \n  - **Pilihan C BENAR:** Lulus terbanyak adalah SMK Prestasi dengan $240\\text{ siswa}$ (mengungguli Mandiri $180$ dan Cendekia $120$).  \n  - **Pilihan D Salah:** Total lulus $= 180 + 240 + 120 = 540$ dari total $650$ siswa $\\implies \\frac{540}{650} \\approx 83{,}08\\%$ (bukan 85%). Rata-rata persentase tidak boleh dirata-ratakan langsung karena bobot populasinya berbeda.  \n  - **Pilihan E Salah:** Siswa tidak lulus SMK Cendekia adalah $30\\text{ orang}$, bukan $40\\text{ orang}$.\n- **Penerapan Trik Cepat (15 Detik):** Cek jumlah lulus Prestasi: $80\\% \\times 300 = 240$. Ini jauh melampaui total seluruh siswa Mandiri (200) apalagi yang lulus. Maka pernyataan C bahwa Prestasi memiliki jumlah lulus terbanyak sudah pasti benar tanpa perlu menghitung rata-rata gabungan. Pilihan **C** terbukti sah.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-03-05-barchart",
+        "title": "Komparasi Penjualan Mobil 2024 vs 2025 (Kenaikan Nominal vs Persentase)",
+        "caption": "Membongkar Jebakan UTBK: Kenaikan Nominal Tertinggi (Gamma) vs Persentase Tertinggi (Beta)",
+        "svg_code": "<svg viewBox=\"0 0 640 230\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .bar-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .bar-lbl { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; fill: #1e293b; text-anchor: middle; }\n      .bar-badge { font-family: system-ui, sans-serif; font-size: 10px; font-weight: 800; text-anchor: middle; }\n      :root.dark .bar-title { fill: #f8fafc; }\n      :root.dark .bar-lbl { fill: #f8fafc; }\n    </style>\n  </defs>\n\n  <!-- Background -->\n  <rect x=\"15\" y=\"10\" width=\"610\" height=\"210\" rx=\"16\" fill=\"rgba(79, 70, 229, 0.04)\" stroke=\"rgba(79, 70, 229, 0.15)\" stroke-width=\"1.5\"/>\n  <text x=\"320\" y=\"30\" class=\"bar-title\">PERBANDINGAN KENAIKAN PENJUALAN 4 DEALER</text>\n\n  <!-- Legend -->\n  <rect x=\"220\" y=\"42\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#94a3b8\"/>\n  <text x=\"240\" y=\"52\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\">Tahun 2024</text>\n  <rect x=\"330\" y=\"42\" width=\"12\" height=\"12\" rx=\"3\" fill=\"#6366f1\"/>\n  <text x=\"350\" y=\"52\" fill=\"#4f46e5\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"bold\">Tahun 2025</text>\n\n  <!-- Dealer Alpha (x = 80) -->\n  <g transform=\"translate(60, 65)\">\n    <!-- Bar 2024 (200 -> h=50) -->\n    <rect x=\"10\" y=\"65\" width=\"28\" height=\"50\" rx=\"4\" fill=\"#94a3b8\"/>\n    <!-- Bar 2025 (260 -> h=65) -->\n    <rect x=\"42\" y=\"50\" width=\"28\" height=\"65\" rx=\"4\" fill=\"#6366f1\"/>\n    <text x=\"40\" y=\"132\" class=\"bar-lbl\">Alpha</text>\n    <rect x=\"15\" y=\"24\" width=\"50\" height=\"18\" rx=\"4\" fill=\"#e0e7ff\"/>\n    <text x=\"40\" y=\"37\" fill=\"#4338ca\" class=\"bar-badge\">+30%</text>\n  </g>\n\n  <!-- Dealer Beta (x = 200) - JUARA PERSENTASE -->\n  <g transform=\"translate(200, 65)\">\n    <rect x=\"-8\" y=\"5\" width=\"96\" height=\"142\" rx=\"8\" fill=\"rgba(16, 185, 129, 0.1)\" stroke=\"#10b981\" stroke-width=\"1.8\"/>\n    <!-- Bar 2024 (120 -> h=30) -->\n    <rect x=\"10\" y=\"85\" width=\"28\" height=\"30\" rx=\"4\" fill=\"#94a3b8\"/>\n    <!-- Bar 2025 (180 -> h=45) -->\n    <rect x=\"42\" y=\"70\" width=\"28\" height=\"45\" rx=\"4\" fill=\"#10b981\"/>\n    <text x=\"40\" y=\"132\" class=\"bar-lbl\" fill=\"#047857\">Beta ★</text>\n    <rect x=\"12\" y=\"16\" width=\"56\" height=\"20\" rx=\"5\" fill=\"#10b981\"/>\n    <text x=\"40\" y=\"30\" fill=\"#ffffff\" class=\"bar-badge\">+50% (MAX)</text>\n  </g>\n\n  <!-- Dealer Gamma (x = 340) - JUARA NOMINAL -->\n  <g transform=\"translate(340, 65)\">\n    <rect x=\"-8\" y=\"5\" width=\"96\" height=\"142\" rx=\"8\" fill=\"rgba(245, 158, 11, 0.1)\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/>\n    <!-- Bar 2024 (400 -> h=100) -->\n    <rect x=\"10\" y=\"15\" width=\"28\" height=\"100\" rx=\"4\" fill=\"#94a3b8\"/>\n    <!-- Bar 2025 (480 -> h=120) -->\n    <rect x=\"42\" y=\"-5\" width=\"28\" height=\"120\" rx=\"4\" fill=\"#f59e0b\"/>\n    <text x=\"40\" y=\"132\" class=\"bar-lbl\" fill=\"#b45309\">Gamma</text>\n    <rect x=\"5\" y=\"-22\" width=\"70\" height=\"18\" rx=\"4\" fill=\"#fef3c7\"/>\n    <text x=\"40\" y=\"-9\" fill=\"#b45309\" class=\"bar-badge\">+80 Unit (20%)</text>\n  </g>\n\n  <!-- Dealer Delta (x = 480) -->\n  <g transform=\"translate(480, 65)\">\n    <!-- Bar 2024 (500 -> h=125) -->\n    <rect x=\"10\" y=\"-10\" width=\"28\" height=\"125\" rx=\"4\" fill=\"#94a3b8\"/>\n    <!-- Bar 2025 (575 -> h=144) -->\n    <rect x=\"42\" y=\"-29\" width=\"28\" height=\"144\" rx=\"4\" fill=\"#6366f1\"/>\n    <text x=\"40\" y=\"132\" class=\"bar-lbl\">Delta</text>\n    <rect x=\"15\" y=\"-45\" width=\"50\" height=\"18\" rx=\"4\" fill=\"#e0e7ff\"/>\n    <text x=\"40\" y=\"-32\" fill=\"#4338ca\" class=\"bar-badge\">+15%</text>\n  </g>\n</svg>"
+      }
+    ],
     "distractor_traps": [
       "Menyamakan rata-rata persentase dengan persentase gabungan: Rata-rata dari 90%, 80%, dan 80% bukan (90+80+80)/3 jika ukuran populasi tiap sekolah berbeda.",
       "Terkecoh persentase tinggi dengan jumlah mutlak: 90% dari 200 (180) lebih sedikit daripada 80% dari 300 (240).",

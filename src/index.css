@@ -195,31 +195,105 @@ body:not(.dark) .pastel-card-cream {
 }
 
 /* ==========================================================================
-   KATEX & MATHEMATICAL FORMULAS HIGH CONTRAST
+   KATEX & MATHEMATICAL FORMULAS HIGH CONTRAST & TAILWIND RESET FIX
    ========================================================================== */
 
+/* Fix Tailwind universal reset collapsing KaTeX box-sizing and borders */
+.katex,
+.katex *,
+.katex *::before,
+.katex *::after {
+  box-sizing: content-box !important;
+  border-color: currentColor;
+}
+
 .katex {
-  font-size: 1.1em;
+  font-size: 1.08em;
   text-rendering: auto;
+  line-height: 1.25;
+}
+
+/* Ensure fraction bars and mathematical lines are always distinct, clear, and visible */
+.katex .mfrac {
+  padding: 0 0.12em !important;
+}
+
+.katex .mfrac .frac-line,
+.katex .frac-line {
+  border-bottom-style: solid !important;
+  border-bottom-width: 1.5px !important;
+  min-height: 1.5px !important;
+  display: block !important;
+}
+
+.katex .sqrt .sqrt-line {
+  border-top-style: solid !important;
+  border-top-width: 1.5px !important;
+  min-height: 1.5px !important;
+}
+
+.katex .katex-hline,
+.katex .katex-rule,
+.katex .overline .overline-line,
+.katex .underline .underline-line {
+  border-bottom-style: solid !important;
+  border-bottom-width: 1.5px !important;
+  min-height: 1.5px !important;
+}
+
+/* Spacing for operators and relations to avoid collisions on mobile */
+.katex .mbin {
+  margin-left: 0.28em !important;
+  margin-right: 0.28em !important;
+}
+
+.katex .mrel {
+  margin-left: 0.35em !important;
+  margin-right: 0.35em !important;
+}
+
+.katex .mpunct {
+  margin-right: 0.22em !important;
+}
+
+.katex .mopen {
+  margin-right: 0.04em !important;
+}
+
+.katex .mclose {
+  margin-left: 0.04em !important;
+}
+
+/* Inline math spacing to prevent collision with surrounding words and awkward mid-word breaks */
+p .katex:not(.katex-display .katex),
+li .katex:not(.katex-display .katex) {
+  padding: 0 0.15em;
+  margin: 0 0.05em;
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 
 /* Dark Mode KaTeX: high-contrast pure white/slate */
 .dark .katex,
 .dark .katex * {
   color: #f8fafc !important;
+  border-color: #f8fafc !important;
 }
 
 /* Light Mode KaTeX: high-contrast charcoal */
 html:not(.dark) .katex,
 html:not(.dark) .katex * {
   color: #0f172a !important;
+  border-color: #0f172a !important;
 }
 
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
-  padding: 0.6rem 0;
+  margin: 0.9rem 0;
+  padding: 0.75rem 0.5rem;
   -webkit-overflow-scrolling: touch;
 }
 

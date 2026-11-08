@@ -84,7 +84,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
       </h4>
     ),
     p: ({ children }: any) => (
-      <p className="text-[15.5px] sm:text-[16.5px] leading-[1.85] text-slate-800 dark:text-slate-200 mb-4 text-justify sm:text-left">
+      <p className="text-[15.5px] sm:text-[16.5px] leading-[1.8] text-slate-800 dark:text-slate-200 mb-4 text-left">
         {children}
       </p>
     ),
