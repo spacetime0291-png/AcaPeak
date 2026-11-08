@@ -10,6 +10,8 @@ import {
   Minimize2,
   Zap,
   BookOpen,
+  ZoomIn,
+  X,
 } from 'lucide-react';
 import type { Material, SvgVisualization } from '../../types/material';
 import { ThemeToggle } from '../common/ThemeToggle';
@@ -43,25 +45,43 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
 
   // Focus Mode toggle
   const [isFocusMode, setIsFocusMode] = useState<boolean>(false);
+  const [zoomSvg, setZoomSvg] = useState<SvgVisualization | null>(null);
 
   // Always ensure reading begins at the top of the document
   React.useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [metadata.id]);
 
-  // Render centered SVG container with academic caption (maximized view, zero margin waste)
+  // Render centered SVG container with academic caption (maximized view, zero margin waste, tap-to-zoom)
   const renderSvgContainer = (svgItem: SvgVisualization, index: number) => (
     <figure
       key={svgItem.id}
       id={svgItem.id}
-      className="my-6 mx-auto w-full max-w-5xl text-center px-0"
+      className="my-6 -mx-4 sm:mx-auto w-[calc(100%+2rem)] sm:w-full max-w-5xl text-center px-0 svg-container"
     >
+      <div className="flex items-center justify-between mb-1.5 px-4 sm:px-2 text-xs text-slate-500 dark:text-slate-400">
+        <span className="font-semibold text-indigo-700 dark:text-cyan-400 truncate pr-2 text-left">
+          {svgItem.title}
+        </span>
+        <button
+          type="button"
+          onClick={() => setZoomSvg(svgItem)}
+          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-300 bg-stone-100 dark:bg-slate-800 border border-stone-200 dark:border-slate-700 rounded-md shadow-2xs hover:bg-stone-200 dark:hover:bg-slate-700 transition active:scale-95 cursor-pointer shrink-0"
+          title="Perbesar Tampilan (Tap to Zoom)"
+        >
+          <ZoomIn className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
+          <span>Perbesar</span>
+        </button>
+      </div>
+
       <div
-        className="w-full overflow-x-auto p-0 sm:p-1 bg-stone-50/60 dark:bg-slate-900/80 border border-stone-200/80 dark:border-slate-800 rounded-2xl shadow-sm flex justify-center items-center"
+        className="w-full overflow-x-auto p-0 bg-transparent border-0 rounded-none sm:rounded-xl flex justify-center items-center cursor-zoom-in"
+        onClick={() => setZoomSvg(svgItem)}
+        title="Klik untuk memperbesar tampilan grafik"
         dangerouslySetInnerHTML={{ __html: svgItem.svg_code }}
       />
-      <figcaption className="mt-2.5 text-xs sm:text-sm font-serif italic text-slate-500 dark:text-slate-400">
-        Gambar {metadata.chapter_num}.{index + 1}: {svgItem.title || svgItem.caption}
+      <figcaption className="mt-2 text-xs sm:text-sm font-serif italic text-slate-500 dark:text-slate-400 px-4 sm:px-0">
+        Gambar {metadata.chapter_num}.{index + 1}: {svgItem.caption || svgItem.title}
       </figcaption>
     </figure>
   );
@@ -307,6 +327,44 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           </button>
         </footer>
       </article>
+
+      {/* Tap-to-Zoom Fullscreen / Expanded Modal */}
+      {zoomSvg && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6"
+          onClick={() => setZoomSvg(null)}
+        >
+          <div
+            className="bg-white dark:bg-slate-900 rounded-2xl max-w-4xl w-full p-4 sm:p-6 relative shadow-2xl overflow-hidden flex flex-col max-h-[92vh] border border-stone-200 dark:border-slate-800"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-3 mb-2 border-b border-stone-200 dark:border-slate-800">
+              <h3 className="font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base">
+                {zoomSvg.title}
+              </h3>
+              <button
+                type="button"
+                onClick={() => setZoomSvg(null)}
+                className="p-1.5 rounded-lg text-slate-500 hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer"
+                title="Tutup"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div
+              className="flex-1 overflow-auto flex items-center justify-center py-2"
+              dangerouslySetInnerHTML={{ __html: zoomSvg.svg_code }}
+            />
+
+            {zoomSvg.caption && (
+              <p className="pt-3 text-center text-xs sm:text-sm text-slate-600 dark:text-slate-400 border-t border-stone-200 dark:border-slate-800">
+                {zoomSvg.caption}
+              </p>
+            )}
+          </div>
+        </div>
+      )}
       </div>
     </div>
   );

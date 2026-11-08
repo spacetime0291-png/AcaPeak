@@ -80,17 +80,17 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
     <div
       key={svgItem.id}
       id={svgItem.id}
-      className="w-full max-w-5xl mx-auto my-6 p-0 sm:p-1 svg-container bg-stone-50/90 dark:bg-slate-900/90 border border-stone-200 dark:border-slate-800 rounded-xl shadow-xs flex flex-col items-center group relative transition-all"
+      className="-mx-4 sm:mx-auto w-[calc(100%+2rem)] sm:w-full max-w-5xl my-6 p-0 svg-container bg-transparent border-0 rounded-none sm:rounded-xl flex flex-col items-center group relative transition-all"
     >
-      <div className="w-full flex items-center justify-between mb-1.5 px-3 pt-2.5 text-xs text-slate-500 dark:text-slate-400 font-medium">
-        <span className="flex items-center gap-1.5 text-indigo-700 dark:text-cyan-400 font-semibold">
-          <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-cyan-400"></span>
+      <div className="w-full flex items-center justify-between mb-1.5 px-4 sm:px-2 text-xs text-slate-500 dark:text-slate-400 font-medium">
+        <span className="flex items-center gap-1.5 text-indigo-700 dark:text-cyan-400 font-semibold truncate pr-2">
+          <span className="w-2 h-2 rounded-full bg-indigo-500 dark:bg-cyan-400 shrink-0"></span>
           {svgItem.title}
         </span>
         <button
           type="button"
           onClick={() => setZoomSvg(svgItem)}
-          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800 border border-stone-200 dark:border-slate-700 rounded-md shadow-xs hover:bg-stone-100 dark:hover:bg-slate-700 transition active:scale-95 cursor-pointer"
+          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800 border border-stone-200 dark:border-slate-700 rounded-md shadow-xs hover:bg-stone-100 dark:hover:bg-slate-700 transition active:scale-95 cursor-pointer shrink-0"
           title="Perbesar Gambar (Tap to Zoom)"
         >
           <ZoomIn className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
@@ -105,7 +105,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
       />
 
       {svgItem.caption && (
-        <p className="mt-2 text-center text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 italic px-2 pb-2">
+        <p className="mt-2 text-center text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 italic px-4 sm:px-2 pb-1">
           {svgItem.caption}
         </p>
       )}

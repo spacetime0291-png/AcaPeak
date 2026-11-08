@@ -213,24 +213,30 @@ body:not(.dark) .pastel-card-cream {
   line-height: 1.35;
 }
 
-/* Ensure fraction bars are solid, clear, and perfectly centered with ample clearance */
+/* Ensure fraction bars are solid, clear, raised to math axis (=), with ample clearance */
 .katex .mfrac {
-  padding: 0.18em 0.1em !important;
+  padding: 0.2em 0.1em !important;
 }
 
+/* Raise fraction line slightly upwards so it aligns with math axis (=) and does not cut into denominator */
 .katex .mfrac .frac-line {
   border-bottom-style: solid !important;
-  border-bottom-width: 1.6px !important;
-  min-height: 1.6px !important;
+  border-bottom-width: 1.5px !important;
+  min-height: 1.5px !important;
+  position: relative !important;
+  transform: translateY(-0.16em) !important;
 }
 
-/* Prevent fraction line from colliding or cutting through numerator and denominator */
-.katex .mfrac .vlist > span:first-child {
-  transform: translateY(0.22em) !important;
+/* Denominator clearance: push downward */
+.katex .mfrac .vlist-r:first-child .vlist > span:first-child,
+.katex .mfrac .vlist > span:first-child:not(:last-child) {
+  transform: translateY(0.2em) !important;
 }
 
+/* Numerator clearance: push upward */
+.katex .mfrac .vlist-r:first-child .vlist > span:nth-child(3),
 .katex .mfrac .vlist > span:nth-child(3) {
-  transform: translateY(-0.22em) !important;
+  transform: translateY(-0.24em) !important;
 }
 
 .katex .sqrt .sqrt-line {
