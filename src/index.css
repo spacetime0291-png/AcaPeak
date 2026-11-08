@@ -203,45 +203,24 @@ body:not(.dark) .pastel-card-cream {
 .katex *,
 .katex *::before,
 .katex *::after {
-  box-sizing: content-box !important;
+  box-sizing: content-box;
   border-color: currentColor;
 }
 
 .katex {
-  font-size: 1.08em;
+  font-size: 1.06em;
   text-rendering: auto;
-  line-height: 1.35;
 }
 
-/* Ensure fraction bars are solid, clear, raised to math axis (=), with ample clearance */
-.katex .mfrac {
-  padding: 0.2em 0.1em !important;
-}
-
-/* Raise fraction line slightly upwards so it aligns with math axis (=) and does not cut into denominator */
+/* Ensure fraction bars and mathematical lines are solid, clear, and visible */
 .katex .mfrac .frac-line {
   border-bottom-style: solid !important;
-  border-bottom-width: 1.5px !important;
-  min-height: 1.5px !important;
-  position: relative !important;
-  transform: translateY(-0.16em) !important;
-}
-
-/* Denominator clearance: push downward */
-.katex .mfrac .vlist-r:first-child .vlist > span:first-child,
-.katex .mfrac .vlist > span:first-child:not(:last-child) {
-  transform: translateY(0.2em) !important;
-}
-
-/* Numerator clearance: push upward */
-.katex .mfrac .vlist-r:first-child .vlist > span:nth-child(3),
-.katex .mfrac .vlist > span:nth-child(3) {
-  transform: translateY(-0.24em) !important;
+  border-bottom-width: 1.2px !important;
 }
 
 .katex .sqrt .sqrt-line {
   border-top-style: solid !important;
-  border-top-width: 1.5px !important;
+  border-top-width: 1.2px !important;
 }
 
 .katex .katex-hline,
@@ -249,30 +228,30 @@ body:not(.dark) .pastel-card-cream {
 .katex .overline .overline-line,
 .katex .underline .underline-line {
   border-bottom-style: solid !important;
-  border-bottom-width: 1.5px !important;
+  border-bottom-width: 1.2px !important;
 }
 
 /* Spacing for operators and relations to avoid collisions on mobile */
 .katex .mbin {
-  margin-left: 0.25em !important;
-  margin-right: 0.25em !important;
+  margin-left: 0.22em;
+  margin-right: 0.22em;
 }
 
 .katex .mrel {
-  margin-left: 0.3em !important;
-  margin-right: 0.3em !important;
+  margin-left: 0.26em;
+  margin-right: 0.26em;
 }
 
 .katex .mpunct {
-  margin-right: 0.2em !important;
+  margin-right: 0.18em;
 }
 
-/* Inline math spacing - do NOT override vertical-align so math axis aligns with text */
-p .katex:not(.katex-display .katex),
-li .katex:not(.katex-display .katex) {
-  padding: 0 0.12em;
-  margin: 0 0.05em;
-  white-space: nowrap;
+/* Inline math: natural wrap, zero overflow outside container */
+p .katex,
+li .katex {
+  padding: 0 0.08em;
+  max-width: 100%;
+  white-space: normal;
 }
 
 /* Dark Mode KaTeX: high-contrast pure white/slate */
@@ -289,12 +268,25 @@ html:not(.dark) .katex * {
   border-color: #0f172a !important;
 }
 
+/* Container safety: prevent ANY text or math formula from overflowing container boundaries */
+.academic-content,
+.academic-content p,
+.academic-content li,
+.academic-content ul,
+.academic-content ol,
+article {
+  overflow-wrap: break-word;
+  word-break: normal;
+  max-width: 100%;
+}
+
 .katex-display {
+  display: block;
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
-  margin: 0.9rem 0;
-  padding: 0.75rem 0.5rem;
+  margin: 1rem 0;
+  padding: 0.6rem 0.25rem;
   -webkit-overflow-scrolling: touch;
 }
 

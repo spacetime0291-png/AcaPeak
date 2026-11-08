@@ -22,7 +22,7 @@ import {
 import type { WorkedExample } from '../../types/material';
 import { ThemeToggle } from '../common/ThemeToggle';
 
-const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { macros: { '\\frac': '\\dfrac' } }] as any];
+const KATEX_REHYPE_PLUGINS = [rehypeKatex as any];
 
 interface ActiveDrillingViewProps {
   questions: WorkedExample[];

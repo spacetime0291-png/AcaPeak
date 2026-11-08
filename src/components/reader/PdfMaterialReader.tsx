@@ -145,8 +145,6 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
     },
   };
 
-  const katexOptions = { macros: { '\\frac': '\\dfrac' } };
-
   // Helper to split markdown and replace `[[SVG:id]]`, plus sanitize raw <br> tags
   const renderMarkdownWithSvg = (rawText: string) => {
     if (!rawText) return null;
@@ -168,7 +166,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
         <ReactMarkdown
           key={index}
           remarkPlugins={[remarkMath, remarkGfm]}
-          rehypePlugins={[[rehypeKatex, katexOptions] as any]}
+          rehypePlugins={[rehypeKatex as any]}
           components={markdownComponents}
         >
           {part}

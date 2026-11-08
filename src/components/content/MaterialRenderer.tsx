@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import type { Material, SvgVisualization, WorkedExample } from '../../types/material';
 
-const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { macros: { '\\frac': '\\dfrac' } }] as any];
+const KATEX_REHYPE_PLUGINS = [rehypeKatex as any];
 
 interface MaterialRendererProps {
   material: Material;
