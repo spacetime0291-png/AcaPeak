@@ -311,6 +311,356 @@
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Titik Kesamaan (Target Analogi):** Kota Benteng Kuno memiliki kondisi awal (stagnasi ekonomi, bangunan bersejarah terlantar, demografi) yang identik dengan Kota Lama Samudra.\n- **Hasil yang Terbukti pada Kasus Pertama:** Penerapan paket kebijakan terpadu berhasil merevitalisasi kawasan dan menggerakkan ekonomi lokal secara mandiri.\n- **Simpulan Induktif Analogi:** Berdasarkan kesamaan kondisi dan mekanisme intervensi, penerapan paket kebijakan serupa di Kota Benteng Kuno berpotensi membangkitkan vitalitas cagar budaya serta aktivitas ekonomi lokal.\n\n**Jawaban: E**",
       "quick_trick_markdown": "**Cara Cepat (Pindahkan Efek Positif dengan Bahasa Peluang Terukur):**\n\n1. Sifat terbukti: Paket kebijakan terpadu berhasil menghidupkan kawasan dan ekonomi Kota Lama Samudra.\n2. Prediksi untuk Kota Benteng Kuno: *berpotensi membangkitkan vitalitas cagar budaya dan ekonomi* (Pilihan **E**).\n3. Coret pilihan **A**, **C**, dan **D** karena menggunakan vonis mutlak *\"dipastikan\"* dan meramal angka pasti.\n4. Coret pilihan **B** karena membuat instruksi wajib berlebihan bagi seluruh kota di Indonesia.\n5. Jawaban tepat: **E**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyimpulkan pelipatan PAD hingga lima kali lipat dalam hitungan bulan secara mutlak merupakan klaim spekulatif tanpa dasar data.\n- **Pilihan B Salah:** Menggeneralisasi kewajiban mutlak kepada seluruh kota di Indonesia yang melompat dari batasan konteks wacana (*out of scope*).\n- **Pilihan C Salah:** Memvonis penolakan mutlak dari pemilik gedung tanpa dukungan fakta empiris di dalam teks.\n- **Pilihan D Salah:** Menjamin angka capaian yang persis sama, padahal penalaran analogi tidak pernah menjamin angka identik secara mutlak."
+    },
+    {
+      "example_id": "pu-01-02-ex9",
+      "variation_name": "Variasi 9: Memperlemah Analogi Introduksi Pengendalian Hayati (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Manajemen perkebunan kelapa sawit di Pulau Andalas berhasil mengendalikan ledakan populasi hama tikus pohon secara ramah lingkungan tanpa racun antikoagulan dengan membangun 200 rumah sarang burung hantu serak jawa (*Tyto alba*) di seluruh blok kebun. Keberhasilan ini didorong oleh ketersediaan mangsa tikus yang melimpah dan tidak adanya satwa mangsa alternatif. Terinspirasi oleh pencapaian tersebut, pengelola suaka margasatwa di Pulau Nirwana—yang merupakan habitat suaka burung kicau endemik langka yang terancam punah—berencana mengintroduksi 50 pasang burung hantu *Tyto alba* untuk mengatasi serangan hama tikus ladang di batas kawasan hutan suaka, dengan argumen kedua wilayah sama-sama memiliki iklim tropis lembap dan kepadatan populasi tikus yang tinggi.",
+      "question_markdown": "Manakah fakta ekologis di bawah ini yang, jika benar, **paling memperlemah** argumen analogi kebijakan introduksi burung hantu di suaka margasatwa Pulau Nirwana?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Perkebunan sawit di Pulau Andalas menggunakan tiang sarang kayu ulin, sedangkan di Pulau Nirwana menggunakan kayu jati lokal."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Burung hantu serak jawa merupakan predator oportunistik yang secara alami akan memangsa telur dan anak burung kicau endemik langka yang bersarang terbuka di pepohonan ketika populasi tikus mulai menurun, sehingga justru mempercepat kepunahan satwa yang dilindungi di suaka tersebut."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Biaya pembuatan rumah burung hantu di Pulau Nirwana didanai oleh hibah konservasi nirlaba internasional."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Curah hujan rata-rata tahunan di Pulau Andalas mencapai 2.800 mm per tahun dengan musim kemarau yang relatif pendek."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tikus ladang di Pulau Nirwana memiliki bobot tubuh yang rata-rata 10% lebih ringan dibandingkan tikus pohon di Pulau Andalas."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk meruntuhkan argumen analogi pemindahan kebijakan pengendalian hayati, cari perbedaan kritis (*critical disanalogy*) ekologis di Pulau Nirwana. Di perkebunan sawit tidak ada mangsa alternatif lain, sedangkan di suaka margasatwa Pulau Nirwana terdapat burung kicau endemik langka! Jika burung hantu memangsa anak burung langka tersebut, tujuan konservasi suaka margasatwa justru akan hancur!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Argumen Analogi:** Pengelola mengasumsikan keberhasilan di kebun kelapa sawit dapat diduplikasi di suaka margasatwa hanya karena kesamaan iklim tropis dan kepadatan hama tikus.\n- **Identifikasi Perbedaan Kritis (*Critical Disanalogy*):** Keberhasilan di perkebunan sawit bersandar pada premis bahwa tikus adalah satu-satunya mangsa utama di ekosistem monokultur. Sebaliknya di suaka margasatwa Pulau Nirwana, terdapat populasi burung kicau endemik langka bersarang terbuka. Sebagai predator oportunistik, burung hantu akan memangsa satwa langka tersebut ketika mangsa tikus berkurang. Perbedaan ekologis esensial ini memicu malapetaka ekologis dan secara telak membatalkan analogi kebijakan introduksi predator.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Perbedaan Kritis yang Membawa Petaka Terbalik):**\n\n1. Tujuan di suaka margasatwa: melindungi satwa liar dan menjaga keseimbangan suaka.\n2. Titik lemah fatal: Pilihan **B** membuktikan burung hantu akan beralih memangsa burung kicau langka yang dilindungi, memicu kepunahan satwa suaka.\n3. Pilihan **A**, **C**, **D**, dan **E** hanya membahas materi tiang, sumber dana, curah hujan, dan selisih bobot tikus yang tidak relevan dengan kegagalan ekologis.\n4. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Jenis kayu penyangga tiang sarang adalah detail teknis sepele yang tidak memengaruhi perilaku berburu burung hantu.\n- **Pilihan C Salah:** Sumber pendanaan hibah tidak memengaruhi interaksi rantai makanan biologis di ekosistem hutan suaka.\n- **Pilihan D Salah:** Variasi curah hujan tahunan tidak menggugurkan kecocokan iklim tropis yang telah dinyatakan serupa di wacana.\n- **Pilihan E Salah:** Perbedaan bobot tubuh tikus sebesar 10% merupakan variasi minor yang tidak menghalangi burung hantu untuk memangsa tikus."
+    },
+    {
+      "example_id": "pu-01-02-ex10",
+      "variation_name": "Variasi 10: Prediksi Berbasis Analogi Regulasi Cukai Plastik (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Negara Bagian Samudra Barat berhasil memangkas timbulan limbah kantong plastik belanja sekali pakai hingga 78% dalam kurun waktu satu tahun setelah memberlakukan pungutan disinsentif cukai wajib sebesar 15% pada setiap kantong plastik di kasir toko ritel, diiringi ketersediaan tas belanja daur ulang berharga terjangkau. Keberhasilan ini didorong oleh sensitivitas harga konsumen belanja harian yang langsung beralih membawa tas belanja sendiri dari rumah. Sementara itu, Negara Bagian Lembah Hijau memiliki profil pendapatan per kapita, kerapatan gerai ritel modern, dan tingkat kepedulian lingkungan masyarakat yang sangat serupa dengan kondisi awal Negara Bagian Samudra Barat sebelum regulasi diterapkan.",
+      "question_markdown": "Berdasarkan prinsip penalaran analogi, simpulan yang **paling mungkin benar** mengenai dampak penerapan regulasi serupa di Negara Bagian Lembah Hijau adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Negara Bagian Lembah Hijau dipastikan akan mencapai angka penurunan sampah plastik tepat sebesar 78,0% dalam 12 bulan kalender ke depan."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Seluruh pabrik manufaktur kemasan plastik di Negara Bagian Lembah Hijau pasti mengalami kebangkrutan massal seketika."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Konsumen di Negara Bagian Lembah Hijau dipastikan akan menolak total aturan tersebut dan beralih berbelanja ke luar negeri."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pemberlakuan cukai kantong plastik berbayar di gerai ritel modern Negara Bagian Lembah Hijau berpotensi besar mendorong peralihan perilaku konsumen menuju penggunaan tas belanja guna ulang secara signifikan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pemberlakuan pungutan cukai kantong plastik merupakan satu-satunya instrumen hukum yang mampu melestarikan lingkungan hidup."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati dampak positif terbukti di Samudra Barat: cukai kantong plastik efektif mendorong konsumen beralih membawa tas belanja guna ulang. Karena Lembah Hijau memiliki karakteristik konsumen dan ritel yang sangat serupa, prediksi analogi yang valid adalah kebijakan tersebut *berpotensi besar mendorong peralihan perilaku konsumen*. Hindari opsi dengan kepastian mutlak atau angka persis sama!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Premis Analogi Kasus Awal:** Negara Bagian Samudra Barat berhasil menurunkan sampah plastik sebesar $78\\%$ karena cukai kasir mendorong peralihan konsumen ke tas guna ulang.\n- **Kesamaan Kondisi Kunci:** Lembah Hijau memiliki pendapatan per kapita, kerapatan ritel, dan preferensi konsumen yang setara.\n- **Kaidah Simpulan Analogi:** Hasil yang terbukti pada kasus pertama ditransfer ke kasus kedua dengan derajat kemungkinan rasional (*\"berpotensi besar mendorong peralihan perilaku konsumen secara signifikan\"*), tanpa klaim kepastian mutlak $100\\%$ atau jaminan angka numerik identik.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Transfer Dampak Positif dengan Bahasa Peluang Terukur):**\n\n1. Cari opsi yang memindahkan dampak sukses (peralihan ke tas guna ulang) dengan bahasa kemungkinan terukur (*\"berpotensi besar\"*): Pilihan **D**.\n2. Coret pilihan **A** karena menjamin angka masa depan identik (*\"dipastikan tepat 78,0%\"*).\n3. Coret pilihan **B** dan **C** karena memvonis kehancuran mutlak (*kebangkrutan massal, menolak total*).\n4. Coret pilihan **E** karena klaim ekstrem *\"satu-satunya instrumen hukum\"*.\n5. Jawaban tepat: **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Memastikan angka penurunan masa depan tepat 78,0% menyalahi kaidah analogi induktif yang bersifat probabilistik dan rentan variasi riil.\n- **Pilihan B Salah:** Mengklaim kebangkrutan seketika seluruh pabrik plastik merupakan hiperbola ekstrem tanpa dasar data di dalam wacana.\n- **Pilihan C Salah:** Menjatuhkan vonis penolakan total dan belanja ke luar negeri yang spekulatif dan tidak rasional.\n- **Pilihan E Salah:** Menggunakan frasa absolut \"satu-satunya instrumen hukum\" yang melompat dari konteks pembatasan kantong plastik belanja."
+    },
+    {
+      "example_id": "pu-01-02-ex11",
+      "variation_name": "Variasi 11: Parallel Reasoning Pengelolaan Katup Tekanan Emosi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan argumen berikut:\n\n*\"Menekan dan memendam emosi negatif secara terus-menerus tanpa penyaluran yang sehat ibarat menutup rapat katup pengaman pada ketel uap bertekanan tinggi; semakin lama dibendung, akumulasi tekanan internal akan memuncak hingga akhirnya meledak dalam bentuk ledakan amarah impulsif atau gangguan kesehatan mental akut. Sebaliknya, membuka katup pembuangan uap secara terkontrol secara berkala akan menstabilkan tekanan tabung; demikian pula mengekspresikan perasaan secara asertif melalui katarsis terstruktur atau jurnalisme emosi akan menenangkan sistem saraf dan memulihkan kestabilan psikologis.\"*",
+      "question_markdown": "Manakah situasi di bawah ini yang menggunakan **pola penalaran analogi paling serupa** dengan teks di atas?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Membendung sedimen lumpur dan debit air sungai secara kaku tanpa pintu limpasan darurat akan memicu jebolnya tanggul secara dahsyat saat puncak banjir, sedangkan membuka pintu air secara bertahap menjaga kestabilan daya tampung waduk; hal ini serupa dengan menahan keluhan kerja karyawan tanpa ruang dialog terbuka memicu aksi mogok kerja massal yang melumpuhkan pabrik, sedangkan menyediakan saluran aspirasi berkala menjaga keharmonisan iklim industri perusahaan."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Berolahraga lari setiap pagi membuat daya tahan jantung dan paru-paru meningkat, sama halnya dengan mengonsumsi sayuran segar setiap hari yang menjaga kesehatan saluran pencernaan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Mengonsumsi makanan tinggi gula memicu lonjakan kadar glukosa darah seketika, sama bahayanya dengan mengonsumsi minuman berkafein tinggi yang memicu peningkatan denyut jantung abnormal."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Seorang psikolog klinis wajib menjaga kerahasiaan riwayat konseling pasien sesuai dengan kode etik profesi agar pasien merasa aman saat berkonsultasi."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Sistem peredaran darah manusia mengalirkan oksigen ke seluruh sel tubuh, berbeda dengan sistem getah bening yang berfungsi menyaring cairan limfa dan melawan infeksi."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Petakan struktur logikanya: [Membendung tekanan tanpa saluran keluar $\\implies$ akumulasi berlebih hingga meledak merusak] versus [Membuka saluran pelepasan terkontrol $\\implies$ tekanan stabil dan aman]. Cari pilihan jawaban yang mereplikasi pola perbandingan dua sisi simetris ini pada dua bidang berbeda!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Struktur Logika Wacana Asli:**\n  - Sisi Negatif: Membendung beban/tekanan terus-menerus tanpa penyaluran $\\implies$ akumulasi memicu ledakan destruktif.\n  - Sisi Positif: Memberikan saluran pelepasan bertahap/terkontrol $\\implies$ tercipta kestabilan dan keamanan sistem.\n  - Bidang yang Dianalogikan: Fisiika mekanik tabung uap $\\longleftrightarrow$ Dinamika psikologi emosi manusia.\n- **Pencocokan Opsi:** Hanya opsi **A** yang memiliki rumus struktur dua sisi yang persis setara: membendung debit air tanpa limpasan menjebolkan tanggul vs membuka bertahap menjaga waduk, serupa dengan menahan keluhan memicu mogok kerja vs saluran dialog menjaga keharmonisan industri.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Pencocokan Rumus: Dibendung = Meledak vs Dilepas Teratur = Selamat):**\n\n1. Rumus wacana: [Bendung tanpa ventilasi $\\implies$ ledakan destruktif] vs [Pelepasan terkontrol $\\implies$ stabil aman].\n2. Cek opsi **A**: Tanggul air dijebol vs dibuka bertahap $\\longleftrightarrow$ keluhan karyawan memicu mogok vs dialog berkala. Struktur 100% simetris!\n3. Opsi **B** dan **C** hanya membandingkan manfaat atau risiko searah tanpa kontras dua sisi.\n4. Opsi **D** dan **E** bukan analogi komparatif simetris.\n5. Jawaban tepat: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Hanya membandingkan manfaat positif dua kebiasaan hidup sehat tanpa memuat struktur kontras ledakan akibat pembendungan.\n- **Pilihan C Salah:** Hanya menyandingkan dua dampak negatif konsumsi zat tanpa menghadirkan komponen solusi pelepasan terkontrol.\n- **Pilihan D Salah:** Membahas etika profesi psikolog pada satu ranah tunggal tanpa kerangka analogi perbandingan.\n- **Pilihan E Salah:** Merupakan penjelasan perbedaan fungsi biologis antara dua sistem organ tubuh, bukan analogi setara."
+    },
+    {
+      "example_id": "pu-01-02-ex12",
+      "variation_name": "Variasi 12: Evaluasi Kekuatan Analogi Arsitektur Keamanan Berlapis (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Seorang pakar arsitektur keamanan siber menjelaskan konsep pertahanan berlapis (*Defense-in-Depth*):\n\n*\"Membangun sistem keamanan jaringan pada pusat data perbankan modern serupa dengan merancang sistem pertahanan kastel benteng kuno. Benteng kuno tidak hanya mengandalkan satu dinding luar yang tebal, melainkan memadukan parit air dalam (penyaring firewall tepi), pos menara pengawas (sistem deteksi intrusi / IDS), pintu gerbang kisi baja (autentikasi multi-faktor), dan ruang perbendaharaan bawah tanah berdinding granit (enkripsi data di tempat istirahat / encryption at rest). Apabila penyusup berhasil menyeberangi parit air luar, mereka masih terhalang oleh menara pengawas dan pintu baja sebelum dapat menyentuh ruang penyimpanan aset berharga.\"*",
+      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kekuatan fungsional** dari analogi benteng kastel pertahanan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Analogi tersebut lemah dan tidak ilmiah karena kastel kuno dibangun menggunakan batu granit dan kayu jati, sedangkan pusat data perbankan dibangun dari semikonduktor silikon dan kabel optik."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Analogi tersebut hanya berlaku jika gedung pusat data perbankan secara fisik dikelilingi oleh parit air dan dijaga oleh prajurit berpedang."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Analogi tersebut sangat kuat dan relevan karena secara tepat memetakan prinsip mitigasi risiko redundansi berlapis: kegagalan proteksi pada satu lapisan perimeter tidak langsung melumpuhkan keamanan aset inti karena masih terlindungi oleh lapis verifikasi dan isolasi berikutnya."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Analogi tersebut keliru karena peretas komputer di era digital tidak dapat dilumpuhkan dengan panah api atau jebakan fisik abad pertengahan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Analogi tersebut membuktikan bahwa pakar keamanan siber wajib memiliki latar belakang keilmuan arkeologi militer klasik."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Evaluasi kekuatan analogi: apakah perbandingan benteng kastel berlapis dengan keamanan siber berlapis memiliki kesamaan prinsip kerja fungsional? Pilihan yang benar mengakui keabsahan pemetaan mitigasi risiko berlapis (*Defense-in-Depth*) tanpa terjebak pada perbedaan bahan fisik (batu vs silikon)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kaidah Evaluasi Analogi Relasional:** Nilai keabsahan analogi fungsional tidak ditentukan oleh kesamaan materi penyusun fisik, melainkan oleh **kesejajaran struktur relasi (*isomorphic relational mapping*)**.\n  - Parit air $\\longleftrightarrow$ Firewall tepi.\n  - Menara pengawas $\\longleftrightarrow$ Sistem deteksi intrusi (IDS).\n  - Pintu kisi baja $\\longleftrightarrow$ Autentikasi multi-faktor (MFA).\n  - Ruang granit dalam $\\longleftrightarrow$ Enkripsi data tersimpan.\n- **Simpulan Evaluasi:** Analogi sangat kuat karena berhasil menerangkan hakikat pertahanan berlapis (*redundancy*): jika satu pos jebol, pos berikutnya tetap mengisolasi bahaya dan menjaga keamanan aset inti.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Fokus pada Hubungan Fungsional dan Abaikan Perbedaan Fisik):**\n\n1. Cari opsi yang memvalidasi kesamaan struktur logika pertahanan berlapis: Pilihan **C**.\n2. Coret pilihan **A** dan **D** karena terjebak mempermasalahkan perbedaan material fisik (batu vs silikon, panah vs kode biner).\n3. Coret pilihan **B** dan **E** karena menuntut kesamaan harfiah yang konyol (*prajurit berpedang, wajib ahli arkeologi*).\n4. Jawaban tepat: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menolak analogi atas dasar perbedaan materi penyusun fisik (batu vs silikon) mencerminkan ketidakpahaman atas konsep analogi struktural.\n- **Pilihan B Salah:** Menuntut penerapan harfiah fisik seperti parit air dan prajurit berpedang adalah kesalahan logika literal yang absurd.\n- **Pilihan D Salah:** Mempermasalahkan senjata fisik panah api alih-alih fungsi konseptual pencegahan intrusi.\n- **Pilihan E Salah:** Menarik simpulan kualifikasi profesi yang tidak berhubungan secara logis (*non-sequitur*)."
+    },
+    {
+      "example_id": "pu-01-02-ex13",
+      "variation_name": "Variasi 13: Prediksi Berbasis Analogi Konservasi Naskah Kuno (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Komunitas Arsip Keraton Melayu berhasil menyelamatkan ribuan naskah kuno berbahan daun lontar dari ancaman pembusukan jamur tropis dan kepunahan dengan menerapkan program konservasi terpadu: pengasapan minyak atsiri sereh wangi untuk mencegah serangga perusak serat, penyimpanan di ruang beriklim mikro terkontrol ($50\\%$ RH), dan digitalisasi resolusi tinggi yang diunggah ke repositori riset akses terbuka (*open access*). Program ini terbukti menghentikan degradasi fisik naskah sekaligus melipatgandakan publikasi riset filologi internasional hingga 300%. Sementara itu, Yayasan Pusaka Keraton Pesisir Timur memiliki koleksi naskah kuno berbahan serat lontar dan kertas daluwang dalam jumlah setara, tersimpan di lingkungan iklim pesisir lembap yang sama, serta menghadapi ancaman pelapukan dan minimnya keterjangkauan riset akademis yang serupa dengan kondisi awal sebelum program di Keraton Melayu dimulai.",
+      "question_markdown": "Berdasarkan prinsip penalaran analogi, simpulan yang **paling mungkin benar** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Seluruh naskah kuno di Yayasan Pusaka Keraton Pesisir Timur dipastikan akan abadi selamanya tanpa membutuhkan perawatan fisik berkala di masa depan."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Yayasan Pusaka Keraton Pesisir Timur dipastikan akan mencatatkan kenaikan publikasi riset tepat sebesar 300,0% dalam kurun waktu satu tahun kalender."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Digitalisasi naskah kuno merupakan satu-satunya cara mutlak untuk menyelamatkan seluruh peninggalan cagar budaya di Indonesia."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Seluruh masyarakat umum di pesisir timur dipastikan mampu membaca aksara kuno Melayu secara fasih setelah program digitalisasi diluncurkan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Penerapan program konservasi minyak atsiri, pengaturan mikroklimat ruang, dan digitalisasi akses terbuka di Yayasan Pusaka Keraton Pesisir Timur berpotensi tinggi memperlambat pelapukan fisik naskah sekaligus memperluas keterjangkauan riset akademis terhadap warisan naskah tersebut."
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati hasil yang telah terbukti di Keraton Melayu: program terpadu berhasil menghentikan pelapukan dan memperluas riset filologi. Dengan kemiripan bahan naskah, iklim, dan masalah di Yayasan Pusaka Pesisir Timur, prediksi analogi yang sah menyatakan program serupa *berpotensi tinggi memperlambat pelapukan dan memperluas riset*. Singkirkan kata mutlak *\"dipastikan abadi\"* atau angka pasti *\"tepat 300,0%\"*!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Kasus Sumber:** Keraton Melayu berhasil menjaga integritas fisik naskah lontar dan menaikkan riset melalui konservasi mikroklimat dan digitalisasi terbuka.\n- **Kondisi Kasus Target:** Yayasan Keraton Pesisir Timur memiliki kesamaan material naskah, iklim pesisir lembap, dan tingkat keparahan degradasi awal.\n- **Transfer Simpulan Analogi:** Berdasarkan kesetaraan faktor fungsional tersebut, implementasi paket program yang sama di Yayasan Keraton Pesisir Timur *berpotensi tinggi memperlambat pelapukan fisik naskah sekaligus memperluas keterjangkauan riset akademis*. Kesimpulan dirumuskan dengan kuantor probabilitas terukur.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Transfer Dampak Positif dengan Bahasa Probabilitas):**\n\n1. Cari opsi yang memuat transfer manfaat positif dengan kalimat terukur: Pilihan **E** (*berpotensi tinggi memperlambat pelapukan dan memperluas riset*).\n2. Coret pilihan **A** karena vonis ekstrem *\"abadi selamanya tanpa perawatan\"*.\n3. Coret pilihan **B** karena meramal angka persis sama di masa depan (*\"tepat 300,0%\"*).\n4. Coret pilihan **C** karena klaim mutlak *\"satu-satunya cara mutlak\"*.\n5. Coret pilihan **D** karena melompat keluar batasan kemampuan masyarakat umum.\n6. Jawaban tepat: **E**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengklaim naskah akan abadi selamanya tanpa perawatan merupakan klaim kemutlakan yang bertentangan dengan hukum pelapukan materi organik.\n- **Pilihan B Salah:** Menjamin angka kenaikan yang persis sama (\"tepat 300,0%\") menyalahi prinsip penalaran induktif yang fleksibel terhadap dinamika empiris.\n- **Pilihan C Salah:** Menggunakan kata mutlak \"satu-satunya cara mutlak\" dan melompat ke seluruh cagar budaya nasional di luar konteks wacana.\n- **Pilihan D Salah:** Menggeneralisasi kemampuan membaca aksara kuno bagi seluruh masyarakat umum yang tidak pernah diteliti di dalam wacana."
+    },
+    {
+      "example_id": "pu-01-02-ex14",
+      "variation_name": "Variasi 14: Memperlemah Analogi Restorasi Hutan Mangrove (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dinas Lingkungan Hidup Kabupaten Pesisir Utara berencana mereplikasi program penanaman bibit mangrove jenis *Rhizophora mucronata* (bakau kurap) yang berhasil diterapkan di Teluk Cemara. Di Teluk Cemara, penanaman 50.000 bibit *Rhizophora* berhasil mencapai tingkat kelulushidupan (*survival rate*) 92% dan efektif meredam abrasi pantai karena kawasan tersebut memiliki garis pantai landai berteluk dengan substrat lumpur halus berpasir yang kaya nutrien organik dan terlindung dari gelombang laut lepas. Dinas berargumen bahwa karena Kabupaten Pesisir Utara juga memiliki target menanam 50.000 bibit di kawasan pesisir dengan luas yang sama, maka program restorasi tersebut akan menghasilkan tingkat keberhasilan kelulushidupan yang sama tingginya.",
+      "question_markdown": "Manakah fakta di bawah ini yang **paling memperlemah argumen analogi** Dinas Lingkungan Hidup Kabupaten Pesisir Utara tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Biaya pengadaan bibit bakau kurap di Kabupaten Pesisir Utara sedikit lebih mahal daripada di Teluk Cemara."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Warga di sekitar Teluk Cemara sebagian besar berprofesi sebagai nelayan tangkap ikan teri."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pesisir Utara berhadapan langsung dengan samudra terbuka dengan gelombang berenergi tinggi dan memiliki substrat pasir terjal berbatu tanpa endapan lumpur, sehingga bibit bakau mudah tercabut dan kekurangan nutrisi perakaran."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Kabupaten Pesisir Utara memiliki jumlah sukarelawan penanam pohon yang lebih banyak daripada Teluk Cemara."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Penanaman bibit di Teluk Cemara dilakukan pada pagi hari sedangkan di Pesisir Utara direncanakan pada sore hari."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Identifikasi faktor kunci keberhasilan di Teluk Cemara: teluk terlindung, garis pantai landai, dan substrat lumpur halus berpasir kaya nutrien. Cari fakta baru yang mengungkap perbedaan lingkungan kritis (*critical disanalogy*) di Pesisir Utara yang membuat bibit bakau tidak mampu bertahan hidup!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kaidah Pelemahan Analogi (Critical Disanalogy):** Hubungan analogi induktif gugur jika ditemukan perbedaan mendasar (*fundamental disparity*) yang secara langsung merusak mekanisme kausal keberhasilan kasus awal.\n- **Faktor Penentu Keberhasilan Kasus Sumber (Teluk Cemara):** Lingkungan geomorfologi pesisir berupa teluk terlindung dari ombak besar dan adanya sedimen substrat lumpur kaya bahan organik sebagai media cengkeram akar tunjang *Rhizophora*.\n- **Pembuktian Opsi C:** Pesisir Utara berhadapan dengan samudra terbuka bergelombang tinggi serta bertanah pasir berbatu terjal tanpa lumpur. Perbedaan kritis ini secara fatal menggagalkan kemampuan bibit bakau untuk bertahan hidup dan berakar, sehingga menganalogikan kesuksesan Teluk Cemara adalah kesesatan analogi (*false analogy*).\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Perbedaan Kritis yang Mematikan Mekanisme Kunci):**\n\n1. Kunci sukses di teks: Teluk terlindung + lumpur halus penahan akar.\n2. Cari opsi yang membalikkan kedua kunci sukses tersebut: Pilihan **C** (Ombak samudra terbuka ganas + pasir berbatu tanpa lumpur).\n3. Opsi **A**, **B**, **D**, dan **E** hanya membahas biaya, profesi warga, jumlah sukarelawan, atau jam tanam yang bukan faktor biologis penentu kelulushidupan tanaman.\n4. Jawaban seketika: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Selisih biaya pengadaan bibit merupakan isu anggaran, bukan faktor biologis atau lingkungan yang memengaruhi kelulushidupan tanaman.\n- **Pilihan B Salah:** Profesi nelayan tangkap ikan teri tidak memengaruhi mekanisme geomorfologi dan salinitas perakaran bakau.\n- **Pilihan D Salah:** Jumlah sukarelawan yang lebih banyak justru memperkuat dukungan logistik penanaman, bukan memperlemah analogi.\n- **Pilihan E Salah:** Waktu penanaman pagi vs sore hari adalah perbedaan sepele yang tidak menggugurkan kecocokan ekosistem pesisir."
+    },
+    {
+      "example_id": "pu-01-02-ex15",
+      "variation_name": "Variasi 15: Parallel Reasoning Stabilisasi Likuiditas Moneter dan Waduk Air (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan argumen kebijakan publik berikut:\n\n*\"Membangun cadangan beras penyangga (buffer stock) pemerintah ibarat mengoperasikan waduk penampung air multifungsi. Pada musim penghujan saat curah hujan melimpah, waduk menampung kelebihan air agar tidak memicu banjir bahaya di dataran rendah. Sebaliknya, pada musim kemarau saat kekeringan melanda, air waduk dialirkan secara terukur untuk menjaga kebutuhan irigasi persawahan. Demikian pula dalam tata kelola pasar beras; saat musim panen raya ketika pasokan melimpah, pemerintah menyerap gabah petani dengan harga dasar wajar untuk mencegah anjloknya harga, sedangkan saat musim paceklik, pemerintah menggelar operasi pasar melepas cadangan beras untuk meredam lonjakan inflasi harga di tingkat konsumen.\"*",
+      "question_markdown": "Manakah situasi di bawah ini yang menggunakan **pola penalaran analogi paling serupa** dengan teks di atas?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Petani menanam palawija bergantian dengan padi untuk menjaga kesuburan tanah, serupa dengan pekerja kantor yang beristirahat sejenak di akhir pekan agar tidak mengalami kejenuhan kerja."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Bank sentral mengelola likuiditas perbankan seperti sistem waduk stabilisasi: saat terjadi kelebihan likuiditas yang memicu pemanasan ekonomi dan inflasi, bank sentral menaikkan suku bunga acuan untuk menyerap ekses uang beredar; sebaliknya, saat terjadi kelesuan resesi, bank sentral menurunkan suku bunga dan menyuntikkan likuiditas untuk menggerakkan kembali sektor riil."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Perusahaan teknologi mempekerjakan analis data untuk memantau performa penjualan produk secara daring dari waktu ke waktu."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Mengonsumsi vitamin C dosis tinggi saat flu dapat mempercepat penyembuhan, berbeda dengan mengonsumsi antibiotik yang harus menggunakan resep dokter."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Harga minyak mentah dunia selalu berfluktuasi mengikuti ketegangan geopolitik internasional di kawasan produsen minyak."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Petakan struktur logika dua sisi simetrisnya: [Saat berlebih $\\implies$ diserap/ditampung agar tidak rusak/anjlok] berbanding lurus dengan [Saat kekurangan $\\implies$ disalurkan/dilepas agar tidak krisis/melonjak]. Cari opsi yang memiliki kerangka rumus logika dua arah yang identik pada dua ranah berbeda!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Rumus Logika Wacana Asli:**\n  - Kondisi Ekses/Kelimpahan: Ditampung/diserap untuk mencegah bencana depresiasi/banjir.\n  - Kondisi Defisit/Kelangkaan: Dilepaskan/dialirkan untuk menstabilkan kebutuhan dasar dari inflasi/kekeringan.\n  - Bidang Komparasi: Hidrologi waduk $\\longleftrightarrow$ Cadangan beras penyangga pangan.\n- **Pencocokan Struktur Opsi B:** Bank sentral menaikkan suku bunga untuk menyerap ekses likuiditas saat *overheating* (mencegah inflasi/banjir uang) vs menurunkan suku bunga dan menyuntikkan likuiditas saat resesi (mengalirkan air kredit). Rumus struktur dua sisi simetris ini identik $100\\%$ dengan wacana.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cocokkan Rumus: Berlebih Diserap vs Kurang Disuntik):**\n\n1. Pola wacana: [Banjir ditampung vs Kering dialirkan] $\\longleftrightarrow$ [Panen raya diserap vs Paceklik dilepas].\n2. Cek opsi **B**: [Uang berlebih diserap via bunga naik vs Resesi disuntik likuiditas via bunga turun]. Pola kembar sempurna!\n3. Opsi **A**, **C**, **D**, **E** tidak memiliki struktur dua sisi kontras yang simetris.\n4. Jawaban seketika: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Membandingkan rotasi tanaman dengan istirahat mingguan hanya berpola selingan aktivitas, tanpa struktur penyangga dinamis dua arah (ekses vs defisit).\n- **Pilihan C Salah:** Hanya deskripsi tugas pemantauan data tunggal tanpa kerangka perbandingan analogi.\n- **Pilihan D Salah:** Merupakan perbandingan kontras perbedaan aturan konsumsi obat, bukan analogi setara.\n- **Pilihan E Salah:** Hubungan kausalitas tunggal faktor geopolitik terhadap komoditas minyak tanpa elemen perbandingan analogis."
+    },
+    {
+      "example_id": "pu-01-02-ex16",
+      "variation_name": "Variasi 16: Prediksi Berbasis Analogi Plastisitas Saraf Kognitif Lansia (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Penelitian neurosains kognitif membuktikan bahwa pada kelompok lansia usia 60–75 tahun, aktivitas rutin mempelajari bahasa asing baru (menuntut pembentukan jalur sinapsis baru, pergantian aturan gramatikal, dan pemanggilan memori leksikal aktif) secara nyata mempertebal volume materi abu-abu di korteks prefrontal serta menunda timbulnya penurunan fungsi eksekutif otak (*cognitive reserve hypothesis*). Sementara itu, sekelompok peneliti menguji program pelatihan bermain instrumen musik akustik baru (seperti piano atau kecapi) pada kelompok lansia dengan rentang usia dan latar belakang pendidikan setara. Pelatihan instrumen musik ini menuntut koordinasi motorik jari yang kompleks, membaca notasi simbolik baru, dan pemanggilan memori auditori secara aktif yang mengaktifkan sirkuit plastisitas korteks prefrontal secara intensif serupa dengan pembelajaran bahasa baru.",
+      "question_markdown": "Berdasarkan prinsip penalaran analogi, simpulan yang **paling mungkin benar** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Seluruh lansia yang berlatih piano dipastikan akan sembuh total 100% dari penyakit Alzheimer tanpa perawatan medis."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Program pelatihan instrumen musik akustik baru tersebut berpotensi besar membantu memelihara volume materi abu-abu otak dan memperlambat penurunan fungsi kognitif eksekutif pada lansia."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Lansia yang tidak mempelajari bahasa asing atau instrumen musik dipastikan akan kehilangan seluruh memorinya sebelum usia 70 tahun."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Seluruh instrumen musik akustik menghasilkan frekuensi suara yang identik dengan vokal percakapan bahasa manusia."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Berlatih instrumen musik membutuhkan waktu sepuluh tahun lebih lama dibandingkan mempelajari bahasa asing baru."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati akibat yang sudah terbukti pada pembelajaran bahasa: mengaktifkan plastisitas korteks prefrontal dan menunda penurunan kognitif. Karena pelatihan instrumen musik baru mengaktifkan sirkuit plastisitas yang sama intensifnya, prediksi analogi yang sah mentransfer manfaat tersebut dengan kuantor probabilitas terukur (*\"berpotensi besar membantu memelihara...\"*)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Kasus Sumber (Pembelajaran Bahasa Baru):** Aktivitas kognitif intensif $\\implies$ aktivasi plastisitas korteks prefrontal $\\implies$ mempertebal materi abu-abu dan menunda penurunan fungsi eksekutif otak.\n- **Kondisi Kasus Target (Pelatihan Musik Akustik Baru):** Memiliki aktivasi sirkuit plastisitas korteks prefrontal yang serupa melalui pemrosesan notasi baru dan koordinasi motorik-auditori.\n- **Transfer Simpulan Analogi:** Berdasarkan kesamaan mekanisme neurologis tersebut, pelatihan instrumen musik akustik baru berpotensi besar menghasilkan efek neuroprotektif yang serupa pada pemeliharaan volume materi abu-abu dan fungsi kognitif lansia.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Transfer Efek Terbukti dengan Derajat Probabilitas):**\n\n1. Cari opsi yang memindahkan dampak neuroprotektif ke pelatihan musik dengan bahasa probabilitas: Pilihan **B** (*berpotensi besar membantu memelihara...*).\n2. Coret pilihan **A** karena klaim kesembuhan ajaib mutlak (*sembuh total 100% dari Alzheimer tanpa medis*).\n3. Coret pilihan **C** karena memvonis kepastian ekstrem kondisi lawan (*pasti hilang seluruh memori*).\n4. Coret pilihan **D** dan **E** karena membuat perbandingan fisik atau durasi yang tidak dibahas di teks.\n5. Jawaban tepat: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menjanjikan kesembuhan 100% dari penyakit neurodegeneratif Alzheimer merupakan klaim mutlak yang menyimpang dari ranah pencegahan/penundaan kognitif wacana.\n- **Pilihan C Salah:** Menjatuhkan vonis kepunahan memori mutlak terhadap lansia yang tidak berlatih musik/bahasa adalah kesalahan dikotomi palsu yang ekstrem.\n- **Pilihan D Salah:** Menyamakan frekuensi akustik fisik dengan vokal bahasa manusia adalah analogi dangkal yang salah sasaran.\n- **Pilihan E Salah:** Mengklaim perbandingan durasi waktu belajar yang sama sekali tidak terdapat dalam teks."
+    },
+    {
+      "example_id": "pu-01-02-ex17",
+      "variation_name": "Variasi 17: Evaluasi Kekuatan Analogi Kompresi Model AI dan Distilasi Fraksi Minyak (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Seorang arsitek kecerdasan buatan (AI) menjelaskan teknik *Knowledge Distillation* (distilasi pengetahuan) untuk memperkecil ukuran model bahasa besar (LLM):\n\n*\"Mengecilkan model LLM raksasa (Teacher Model dengan ratusan miliar parameter) menjadi model kecil berkinerja tinggi (Student Model dengan beberapa miliar parameter) dianalogikan seperti proses pemurnian dan fraksionasi pada pengilangan minyak mentah. Minyak mentah yang sangat pekat dan bervolume masif dipanaskan dan disaring untuk mengekstraksi fraksi hidrokarbon murni bernilai tinggi (seperti avtur atau bensin beroktan tinggi) yang jauh lebih ringkas, efisien, dan siap digunakan langsung pada mesin kendaraan. Dalam distilasi model AI, model 'Student' yang ringkas dilatih secara terarah untuk meniru pola probabilitas inferensi dari model 'Teacher' yang masif, sehingga menghasilkan model berukuran kecil yang tetap mempertahankan 90% kemampuan penalaran inti tanpa harus memikul miliaran parameter redundant yang boros memori komputasi.\"*",
+      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kekuatan fungsional** dari analogi pemurnian distilasi tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Analogi tersebut keliru dan cacat logika karena minyak bumi berwujud zat cair hidrokarbon sedangkan model AI tersusun dari matriks komputasi digital di server."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Analogi tersebut hanya berlaku jika chip akselerator AI dibasahi cairan kimia hidrokarbon agar tidak mengalami panas berlebih saat kompresi model."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Analogi tersebut sangat kuat dan relevan karena secara tepat memetakan konsep reduksi volume dan ekstraksi esensi: memadatkan kapasitas fungsional inti dari sistem yang besar dan boros sumber daya menjadi entitas yang ramping, efisien, dan siap pakai."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Analogi tersebut membuktikan bahwa para insinyur AI wajib menempuh pendidikan sarjana di jurusan teknik perminyakan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Analogi tersebut tidak valid karena minyak bumi tidak dapat menghasilkan jawaban teks dalam bahasa manusia."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati apakah perbandingan antara pengilangan minyak mentah dan distilasi model AI memiliki kesamaan prinsip esensial: memadatkan kapasitas inti dari entitas raksasa dan membuang komponen mubazir/redundant demi efisiensi tinggi? Abaikan perbedaan fisik (cairan vs kode digital)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kaidah Keabsahan Analogi Fungsional:** Analogi dievaluasi berdasarkan kesepadanan relasi struktural (*relational mapping*), bukan kesamaan substansi materi fisik.\n  - Minyak mentah bervolume masif $\\longleftrightarrow$ Model Teacher ratusan miliar parameter.\n  - Fraksi murni beroktan tinggi $\\longleftrightarrow$ Model Student ringkas mempertahankan $90\\%$ penalaran inti.\n  - Komponen residu berat $\\longleftrightarrow$ Parameter redundant boros memori.\n- **Simpulan Evaluasi:** Analogi terbukti sangat kuat dan fungsional karena secara tepat membedah esensi pemadatan kapasitas: memangkas volume raksasa menjadi entitas ringkas berperforma tinggi.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Fokus pada Pemetaan Konseptual dan Eliminasi Jebakan Material):**\n\n1. Cari opsi yang memvalidasi konsep pemadatan efisiensi dan ekstraksi esensi inti: Pilihan **C**.\n2. Coret pilihan **A** dan **E** karena terjebak menolak analogi atas dasar perbedaan fisik (cair vs digital, minyak tak bisa nulis teks).\n3. Coret pilihan **B** dan **D** karena penafsiran harfiah absurd (membasahi chip dengan minyak, wajib kuliah perminyakan).\n4. Jawaban tepat: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menolak analogi karena perbedaan wujud zat (cair vs matriks komputasi) adalah kekeliruan menuntut kesamaan materi fisik alih-alih fungsi konseptual.\n- **Pilihan B Salah:** Menuntut chip dibasahi minyak merupakan pemahaman harfiah yang keliru secara teknis dan berbahaya bagi perangkat keras.\n- **Pilihan D Salah:** Menarik syarat kualifikasi akademik yang tidak memiliki relevansi logis (*non-sequitur*).\n- **Pilihan E Salah:** Mempermasalahkan output teks pada minyak bumi menunjukkan ketidakpahaman atas hakikat metafora analogis."
+    },
+    {
+      "example_id": "pu-01-02-ex18",
+      "variation_name": "Variasi 18: Memperlemah Analogi Konsep Kota Spons di Kawasan Bersejarah (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Pemerintah Kota Pusaka Lama berencana mereplikasi konsep \"Kota Spons\" (*Sponge City*) yang sukses membebaskan Distrik Baru Metroville dari genangan air hujan ekstrem. Di Distrik Baru Metroville, keberhasilan konsep spons dicapai melalui penggalian masif danau retensi buatan seluas 100 hektare di bawah permukaan jalan raya, pembongkaran trotoar untuk diganti dengan aspal berpori (*permeable pavement*) di seluruh sudut kota, serta instalasi sumur resapan raksasa berskala kota. Pemerintah Kota Pusaka Lama berargumen bahwa karena kedua kota memiliki curah hujan tahunan yang serupa (di atas 2.500 mm per tahun) dan kerapatan penduduk yang setara, maka proyek pembongkaran trotoar dan penggalian danau bawah tanah secara masif di kawasan pusat Kota Pusaka Lama akan menghasilkan solusi bebas banjir yang sama suksesnya.",
+      "question_markdown": "Manakah fakta di bawah ini yang **paling memperlemah argumen analogi** Pemerintah Kota Pusaka Lama tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Distrik Baru Metroville memiliki jumlah gedung pencakar langit yang lebih banyak daripada Kota Pusaka Lama."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Biaya pembelian paving berpori di Kota Pusaka Lama dapat dinegosiasikan melalui tender terbuka pemerintah daerah."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sebagian warga di Kota Pusaka Lama menggunakan sepeda ontel untuk berkeliling di kawasan wisata kota tua."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Kawasan pusat Kota Pusaka Lama merupakan zona inti cagar budaya yang di bawah permukaannya terkubur lapisan fondasi batu bata kuno abad ke-16 yang rapuh dan dilindungi hukum, sehingga penggalian danau retensi serta pembongkaran masif berisiko meruntuhkan struktur bersejarah dan melanggar undang-undang konservasi warisan budaya."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Curah hujan di Kota Pusaka Lama pada bulan Januari biasanya berlangsung selama tiga jam tanpa henti pada siang hari."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Temukan perbedaan mendasar (*critical disanalogy*) antara Distrik Baru Metroville (kawasan baru bebas konstruksi bawah tanah) dengan Kota Pusaka Lama (kota tua bersejarah). Cari fakta yang membuktikan bahwa metode rekayasa sipil masif (penggalian danau bawah tanah dan pembongkaran) mustahil diterapkan di kawasan cagar budaya rapuh yang dilindungi undang-undang!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Kasus Sumber (Metroville):** Distrik modern terencana tanpa beban peninggalan purbakala bawah tanah, memungkinkan penggalian danau bawah tanah skala besar dan perombakan total struktur perkerasan jalan.\n- **Kondisi Khusus Kasus Target (Pusaka Lama):** Berdiri di atas situs arkeologi cagar budaya rapuh berfondasi batu bata kuno yang dilindungi undang-undang konservasi warisan budaya.\n- **Analisis Pelemahan Kritis (Critical Disanalogy):** Metode penggalian masif dan pembongkaran trotoar yang menjadi kunci sukses Metroville tidak dapat diterapkan di Pusaka Lama karena akan menghancurkan warisan sejarah yang rapuh dan melanggar hukum konservasi nasional. Perbedaan struktural ini membatalkan keabsahan analogi replikasi kebijakan tersebut.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Temukan Halangan Mendasar / Critical Disanalogy):**\n\n1. Kunci sukses di Metroville: Penggalian danau bawah tanah masif dan pembongkaran trotoar besar-besaran.\n2. Hambatan fatal di Pusaka Lama: Zona inti cagar budaya bawah tanah abad ke-16 yang rapuh dan dilindungi undang-undang (Pilihan **D**).\n3. Opsi **A**, **B**, **C**, dan **E** hanya membahas gedung tinggi, negosiasi tender, sepeda ontel, atau jam hujan yang tidak menyentuh kendala fisik pelaksanaan proyek.\n4. Jawaban seketika: **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Jumlah gedung pencakar langit adalah perbedaan lanskap modern yang tidak menjadi faktor penghalang hidrologi serapan air tanah.\n- **Pilihan B Salah:** Kemudahan negosiasi tender harga paving adalah isu administratif pengadaan barang, bukan kendala kelayakan struktural.\n- **Pilihan C Salah:** Penggunaan sepeda ontel oleh warga adalah aspek gaya hidup santai yang tidak relevan dengan sistem drainase perkotaan.\n- **Pilihan E Salah:** Durasi hujan siang hari adalah detail pola cuaca mikro yang tidak merusak analogi kesamaan curah hujan tahunan makro."
     }
   ]
 }

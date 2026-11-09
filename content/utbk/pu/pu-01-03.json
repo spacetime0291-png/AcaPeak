@@ -661,6 +661,76 @@
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Uji Kausalitas Langsung:**\n  - Apakah (1) $\\implies$ (2)? Kenaikan harga sewa kamar kos tidak secara langsung menciptakan kemacetan lalu lintas jalan arteri.\n  - Apakah (2) $\\implies$ (1)? Kemacetan waktu tempuh komuter tidak secara langsung menaikkan harga sewa kamar petak.\n- **Analisis Faktor Penyebab Bersama (*Common Cause*):**\n  - Terdapat faktor pemicu makro: Pembukaan kawasan industri baru yang memicu arus urbanisasi/migrasi masuk puluhan ribu tenaga kerja secara massal ($C$).\n  - $C \\implies$ Ledakan permintaan hunian di kawasan penyangga $\\rightarrow$ tarif sewa melonjak $35\\%$ (Pernyataan 1).\n  - $C \\implies$ Ledakan volume perjalanan harian pekerja komuter $\\rightarrow$ waktu tempuh macet melipat ganda (Pernyataan 2).\n- Kesimpulan: Kedua pernyataan merupakan **akibat dari satu faktor penyebab bersama (*common cause*)**.\n\n**Jawaban: C**",
       "quick_trick_markdown": "**Cara Cepat (Uji Hubungan Langsung vs Penyebab Bersama):**\n\n1. Tanyakan: Apakah sewa kamar kos mahal membikin jalanan macet? Tidak.\n2. Tanyakan: Apakah jalanan macet membikin pemilik kos menaikkan harga sewa? Tidak.\n3. Mengapa dua-duanya terjadi berbarengan? Karena ledakan ribuan orang baru pindah ke kota itu mencari kerja dan tempat tinggal!\n4. Ini adalah pola klasik *akibat dari satu penyebab bersama* (*common cause*).\n5. Jawaban yang tepat adalah pilihan **C**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyimpulkan hubungan sebab-akibat langsung yang keliru, karena inflasi biaya sewa properti bukan penyebab teknis macetnya kendaraan di jalan raya.\n- **Pilihan B Salah:** Kemacetan lalu lintas bukan faktor penggerak naiknya biaya sewa kamar indekos pekerja.\n- **Pilihan D Salah:** Mengaitkan fenomena urbanisasi modern dengan peristiwa masa lalu yang bertentangan tanpa dasar ilmiah.\n- **Pilihan E Salah:** Menganggap kedua data saling meniadakan, padahal keduanya merupakan indikator sosial terpadu dari dampak ledakan urbanisasi."
+    },
+    {
+      "example_id": "pu-01-03-ex19",
+      "variation_name": "Variasi 19: Evaluasi Validitas Klaim Kausalitas Polusi Merkuri Sungai (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah lembaga pemantau lingkungan hidup mempublikasikan laporan yang menuding bahwa buangan air limbah pengolahan emas tradisional berkadar merkuri ($Hg$) terlarut tinggi adalah penyebab utama kemerosotan drastis populasi larva lalat capung (*Ephemeroptera*) dan udang air tawar di sepanjang hilir Sungai Mahawu selama dua tahun terakhir. Tudingan kausalitas ini didasarkan pada korelasi kuat antara peningkatan konsentrasi merkuri di sedimen dasar sungai dengan penyusutan biomassa makrozoobentos tersebut hingga 70%.\n\nNamun, perwakilan paguyuban penambang rakyat membantah tudingan tersebut dan berargumen bahwa kemerosotan populasi larva dan udang semata-mata diakibatkan oleh sedimentasi lumpur tanah akibat erosi lahan pembukaan perkebunan sawit di bagian hulu, yang menyumbat insang serta habitat berbatu tempat hidup organisme bentos.",
+      "question_markdown": "Manakah temuan empiris berikut yang **paling kuat mengonfirmasi keabsahan klaim** bahwa toksisitas merkuri, dan bukan sedimentasi lumpur, yang merupakan penyebab utama kemerosotan populasi makrozoobentos tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Kadar merkuri pada jaringan tubuh ikan predator di hilir Sungai Mahawu berada pada ambang batas yang masih dapat ditoleransi oleh manusia."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pemerintah daerah mengalokasikan anggaran restorasi sungai dan membangun kolam pengendap lumpur di sekitar area perkebunan sawit hulu."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Di stasiun pengamatan anak sungai terdekat yang mengalami laju sedimentasi lumpur erosi dengan ketebalan dan kekeruhan yang identik namun bebas dari buangan limbah merkuri, populasi larva lalat capung dan udang air tawar tetap melimpah dan tidak mengalami penurunan biomassa yang signifikan."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Sebagian penambang emas rakyat bersedia beralih menggunakan teknik pemisahan gravitasi tanpa merkuri jika diberikan kompensasi alat dari pemerintah."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Jumlah izin usaha penambangan emas rakyat di sepanjang Sungai Mahawu meningkat sebesar 25% dalam tiga tahun terakhir."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk membuktikan bahwa Merkuri (Faktor A), BUKAN Sedimentasi Lumpur (Faktor B), yang menyebabkan kemerosotan bentos (Akibat Y), gunakan metode perbedaan (*control group*): cari stasiun pembanding yang SAMA-SAMA terkena lumpur (Faktor B ada) tetapi TANPA merkuri (Faktor A nihil). Jika di stasiun tanpa merkuri populasi bentos tetap lestari, terbukti secara sah bahwa merkurilah penyebab sejati kehancuran bentos tersebut!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Hipotesis Kausal Bersaing:**\n  - Hipotesis 1 (LSM): Toksisitas Merkuri ($M$) $\\implies$ Kemerosotan Makrozoobentos ($Y$).\n  - Hipotesis 2 (Penambang): Sedimentasi Lumpur Erosi ($L$) $\\implies$ Kemerosotan Makrozoobentos ($Y$).\n- **Kaidah Pengujian Kausalitas via Metode Perbedaan John Stuart Mill (*Method of Difference*):**\n  - Untuk mengisolasi pengaruh kausal $M$ dari variabel perancu $L$, diperlukan kelompok kontrol alami di mana variabel perancu $L$ hadir dalam intensitas yang sama, namun faktor intervensi $M$ absen ($M = 0$).\n  - Pilihan **C** memberikan bukti kelompok pembanding yang menentukan: Pada anak sungai dengan ketebalan dan kekeruhan lumpur erosi yang sama persis ($L$ ada), ketiadaan merkuri ($M = 0$) ternyata tidak menimbulkan kemerosotan bentos ($Y$ tidak terjadi).\n  - Hal ini secara telak membuktikan bahwa sedimentasi lumpur bukanlah penyebab tunggal kemerosotan, dan mengonfirmasi bahwa toksisitas merkurilah pemicu kausal utama rusaknya komunitas makrozoobentos.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Kelompok Kontrol Pemisah Variabel):**\n\n1. Penambang beralasan: Bukan salah merkuri saya, tapi karena lumpur erosi sawit!\n2. Cara membuktikannya: Cari sungai yang sama-sama berlumpur tebal, tapi tidak ada merkuri!\n3. Pilihan **C** menunjukkan di sungai yang sama-sama berlumpur tanpa merkuri, hewannya tetap hidup subur. Berarti terbukti penyebab matinya hewan di Sungai Mahawu adalah racun merkuri!\n4. Pilihan **A**, **B**, **D**, dan **E** tidak menguji komparasi kausalitas antarvariabel.\n5. Jawaban tepat: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Ambang toleransi merkuri pada ikan predator untuk konsumsi manusia tidak menerangkan daya tahan larva dan udang terhadap toksisitas merkuri di sedimen dasar.\n- **Pilihan B Salah:** Alokasi anggaran dan pembangunan kolam pengendap merupakan rencana kebijakan administratif, bukan data empiris pengujian kausalitas.\n- **Pilihan D Salah:** Kesediaan penambang beralih metode merupakan sikap sosial ekonomi yang tidak membuktikan apakah merkuri telah merusak bentos di masa lalu.\n- **Pilihan E Salah:** Kenaikan izin penambangan hanya menunjukkan korelasi aktivitas ekonomi tanpa mengisolasi efek merkuri terhadap sedimentasi lumpur."
+    },
+    {
+      "example_id": "pu-01-03-ex20",
+      "variation_name": "Variasi 20: Deteksi Kausalitas Terbalik Penggunaan Layanan PayLater (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah survei ekonomi perilaku terhadap 1.500 kepala keluarga muda di wilayah perkotaan menemukan korelasi positif yang signifikan ($r = 0{,}68$) antara frekuensi transaksi menggunakan fitur pembayaran tunda digital (*Buy Now Pay Later* / BNPL) dengan tingginya skor stres finansial bulanan rumah tangga. Peneliti lembaga tersebut langsung menyimpulkan bahwa *\"Penggunaan fasilitas pembayaran tunda secara aktif adalah faktor penyebab utama memburuknya kesehatan mental dan keparahan stres keuangan pada keluarga muda karena memicu ilusi likuiditas dan kebiasaan belanja konsumtif impulsif.\"*",
+      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat menunjukkan kemungkinan terjadinya kesesatan kausalitas terbalik (*reverse causation fallacy*)** pada simpulan peneliti tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Biaya administrasi dan denda keterlambatan pada aplikasi BNPL umumnya lebih tinggi daripada suku bunga kartu kredit konvensional."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Sebagian keluarga muda memanfaatkan promo potongan harga pada platform lokapasar untuk menghemat anggaran belanja bulanan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Lembaga pengawas jasa keuangan mewajibkan pembatasan batas kredit maksimal bagi pengguna fitur pembayaran tunda digital."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Keluarga muda yang sudah terbelit tekanan ekonomi berat dan krisis likuiditas tunai sejak awal justru terdorong lebih sering menggunakan fasilitas pembayaran tunda sebagai instrumen darurat untuk bertahan hidup membeli kebutuhan pokok harian."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tingkat stres finansial juga dipengaruhi oleh tingginya biaya sewa hunian dan tarif transportasi komuter harian di wilayah perkotaan."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati arah sebab-akibat yang diklaim peneliti: Penggunaan PayLater ($A$) $\\implies$ Stres Finansial ($B$). Kausalitas terbalik (*reverse causation*) terjadi jika arah sebenarnya justru sebaliknya: Tekanan ekonomi/stres finansial yang sudah ada ($B$) $\\implies$ memaksa keluarga memakai PayLater untuk bertahan hidup ($A$). Cari opsi yang menerangkan arah terbalik ini!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Arah Kausalitas Peneliti:**\n  - Peneliti mengklaim: Transaksi PayLater ($X$) $\\implies$ Stres Finansial Rumah Tangga ($Y$).\n- **Definisi Kesesatan Kausalitas Terbalik (*Reverse Causation Fallacy*):**\n  - Terjadi ketika hubungan sebab-akibat yang sebenarnya adalah $Y \\implies X$, yaitu variabel yang dianggap sebagai akibat sesungguhnya merupakan penyebab awal dari variabel perlakuan.\n- **Evaluasi Opsi:**\n  - Pilihan **D** secara tepat membongkar arah hubungan sebenarnya: Keluarga yang sejak awal sudah mengalami krisis likuiditas dan tekanan keuangan parah ($Y$) terpaksa beralih memanfaatkan PayLater ($X$) sebagai dana talangan darurat untuk menyambung hidup membeli sembako.\n  - Dengan demikian, tingginya transaksi PayLater bukan pemicu stres keuangan, melainkan gejala/respons adaptif terhadap kesulitan finansial yang telah terjadi sebelumnya.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Deteksi Arah Hubungan Terbalik: Akibat Ternyata Menjadi Sebab):**\n\n1. Klaim peneliti: Pakai PayLater $\\rightarrow$ Bikin stres keuangan (Arah: $A \\rightarrow B$).\n2. Cek Kausalitas Terbalik: Apakah justru orang yang stres dan kepepet uang yang terpaksa pakai PayLater? (Arah: $B \\rightarrow A$).\n3. Pilihan **D** secara gamblang menyatakan bahwa tekanan keuangan yang sudah ada sejak awal yang mendorong orang memakai PayLater.\n4. Opsi **E** membahas faktor perancu lain (*confounding factor*), bukan kausalitas terbalik.\n5. Jawaban tepat: **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Membandingkan struktur bunga dan denda adalah detail instrumen finansial yang tidak menguji arah hubungan kausalitas.\n- **Pilihan B Salah:** Menggambarkan strategi berburu promo diskon belanja yang tidak menjelaskan dinamika sebab-akibat stres keuangan.\n- **Pilihan C Salah:** Merupakan regulasi administratif pembatasan kredit yang tidak menyentuh hubungan perilaku kausalitas.\n- **Pilihan E Salah:** Menyebutkan variabel biaya hunian dan komuter merupakan deteksi faktor perancu luar (*confounding factor*), bukan kesesatan kausalitas terbalik (*reverse causation*)."
     }
   ]
 }

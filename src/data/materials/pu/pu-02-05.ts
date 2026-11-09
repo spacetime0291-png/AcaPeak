@@ -15,7 +15,7 @@ export const MATERIAL_PU_02_05: Material = {
       "Kombinasi Tim dan Penugasan Bersyarat (HOTS)"
     ],
     "requires_svg": false,
-    "updated_at": "2026-11-08"
+    "updated_at": "2026-11-09"
   },
   "content": {
     "tactical_overview": "Penalaran analitik menguji kemampuan Anda dalam mengolah sejumlah petunjuk fakta dan batasan bersyarat untuk menentukan urutan linier, konfigurasi posisi spasial, atau susunan kombinasi kelompok. Kunci utama dalam menaklukkan soal tipe ini di UTBK adalah jangan pernah mencoba membayangkan seluruh kemungkinan di kepala. Selalu visualisasikan informasi ke dalam diagram garis urutan, tabel slot posisi, atau daftar eliminasi syarat. Mulailah dari informasi yang memiliki posisi pasti (jangkar), gabungkan blok yang berpasangan, lalu gunakan metode eliminasi agresif terhadap opsi jawaban begitu sebuah aturan dilanggar.",
@@ -138,6 +138,531 @@ export const MATERIAL_PU_02_05: Material = {
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kuota & Eliminasi Awal:**\n  - Kuota tim = 4 orang.\n  - K terpilih (1/4 terisi).\n  - Ketentuan 1: K dipilih $\\to$ L tidak boleh dipilih (L tereliminasi).\n  - Kandidat tersisa untuk 3 kuota: ${M, N, O, P, Q}$.\n- **Kasus 1: Pasangan MN Terpilih**\n  - Anggota tim: ${K, M, N}$ (sudah 3 orang, butuh 1 orang lagi).\n  - Ketentuan 4: Wajib ada minimal satu dari O atau P.\n  - Jika P dipilih, Ketentuan 3 mewajibkan Q ikut $\\to$ tim menjadi 5 orang (melanggar batas 4 orang). Jadi P tidak bisa dipilih.\n  - Maka satu-satunya pilihan agar Ketentuan 4 terpenuhi adalah memilih O.\n  - Susunan Kasus 1: ${K, M, N, O}$.\n- **Kasus 2: Pasangan MN Tidak Terpilih**\n  - Kandidat tersisa: ${O, P, Q}$.\n  - Karena butuh tepat 3 orang, maka ${O, P, Q}$ wajib dipilih seluruhnya.\n  - Periksa aturan: P ada $\\to$ Q ada (terpenuhi), minimal satu dari O/P ada (terpenuhi).\n  - Susunan Kasus 2: ${K, O, P, Q}$.\n- **Konklusi:**\n  - Pada Kasus 1, tim adalah ${K, M, N, O}$.\n  - Pada Kasus 2, tim adalah ${K, O, P, Q}$.\n  - Kandidat **O** selalu terpilih pada seluruh kemungkinan skenario yang valid.\n\n**Jawaban: C**",
       "quick_trick_markdown": "**Cara Cepat (Uji Dominasi Kandidat):**\n\n1. K terpilih $\\to$ L gugur. Sisa 3 kursi dari ${M, N, O, P, Q}$.\n2. Jika MN masuk (2 orang), sisa 1 kursi tidak boleh untuk P (karena P menarik Q $\\to$ 5 orang). Maka kursi terakhir WAJIB untuk O.\n3. Jika MN tidak masuk, ketiga kandidat sisa ${O, P, Q}$ wajib masuk seluruhnya, sehingga O otomatis masuk.\n4. Dalam semua kemungkinan skenario yang sah, **O selalu terpilih**. Jawaban: **C**.",
       "why_others_are_wrong_markdown": "- **Pilihan A & B Salah:** M dan N hanya terpilih pada kemungkinan pertama dan absen pada kemungkinan kedua.\n- **Pilihan D Salah:** P hanya terpilih pada kemungkinan kedua dan tidak terpilih pada kemungkinan pertama karena keterbatasan kuota.\n- **Pilihan E Salah:** Q hanya terpilih pada kemungkinan kedua bersama P."
+    },
+    {
+      "example_id": "pu-02-05-ex4",
+      "variation_name": "Variasi 1: Urutan Linier Bertingkat Jadwal Ekspedisi Riset (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam stasiun riset kelautan dan pesisir (P, Q, R, S, T, dan U) dijadwalkan untuk pengambilan sampel kualitas air dan keanekaragaman mangrove secara berurutan dalam satu hari (urutan 1 sampai 6, dari pagi hingga sore). Ketentuan penjadwalan ekspedisi adalah sebagai berikut:\n1. Stasiun T diambil sampelnya pada urutan ke-2 atau ke-4.\n2. Stasiun P diambil sampelnya sebelum stasiun T ($P < T$).\n3. Stasiun Q diambil sampelnya tepat setelah stasiun S (membentuk blok kaku $[S, Q]$).\n4. Stasiun R diambil sampelnya setelah stasiun T ($T < R$), tetapi sebelum stasiun U ($R < U$).\n5. Stasiun U tidak diambil sampelnya pada urutan terakhir (urutan ke-6).",
+      "question_markdown": "Berdasarkan ketentuan tersebut, stasiun riset yang diambil sampelnya pada urutan **ke-3 dan ke-5** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "P dan U"
+        },
+        {
+          "key": "B",
+          "text_markdown": "R dan S"
+        },
+        {
+          "key": "C",
+          "text_markdown": "S dan Q"
+        },
+        {
+          "key": "D",
+          "text_markdown": "R dan Q"
+        },
+        {
+          "key": "E",
+          "text_markdown": "T dan U"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Uji posisi stasiun T: bisakah T berada di urutan ke-4 mengingat setelah T masih harus ada R dan U ($T < R < U$), sedangkan U tidak boleh di urutan ke-6? Setelah posisi T terkunci, tempatkan P dan blok berdampingan $[S, Q]$!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Pemetaan Slot Urutan (1 sampai 6):** $[1] [2] [3] [4] [5] [6]$.\n- **Uji Posisi Stasiun T:**\n  - Ketentuan 1 menyatakan T di urutan 2 atau 4.\n  - Ketentuan 4 menyatakan $T < R < U$ (ada minimal dua stasiun setelah T).\n  - Jika T di urutan 4, maka dua stasiun setelahnya wajib menempati slot 5 dan 6, yaitu $R = 5$ dan $U = 6$. Namun, Ketentuan 5 melarang U di urutan ke-6 ($U \\ne 6$). Jadi, T **mustahil di urutan 4**.\n  - Maka secara mutlak: **Urutan 2 = T**.\n- **Penempatan Elemen Lain:**\n  - Ketentuan 2 menyatakan $P < T$. Karena sebelum urutan 2 hanya ada urutan 1, maka: **Urutan 1 = P**.\n  - Slot yang tersisa untuk $R, U, S, Q$ adalah urutan 3, 4, 5, 6.\n  - Ketentuan 3 mewajibkan stasiun S dan Q membentuk blok kaku berdampingan $[S, Q]$.\n  - Jika $[S, Q]$ menempati urutan $[3, 4]$, maka slot 5 dan 6 tersisa untuk R dan U ($R = 5, U = 6$), yang kembali melanggar Ketentuan 5 ($U \\ne 6$).\n  - Maka blok $[S, Q]$ wajib menempati urutan $[5, 6]$ (**Urutan 5 = S**, **Urutan 6 = Q**).\n  - Slot urutan 3 dan 4 tersisa untuk R dan U. Karena $R < U$, maka: **Urutan 3 = R** dan **Urutan 4 = U**.\n- **Susunan Lengkap:** Urutan 1 (P), Urutan 2 (T), Urutan 3 (R), Urutan 4 (U), Urutan 5 (S), Urutan 6 (Q).\n- **Evaluasi Pertanyaan:** Stasiun pada urutan ke-3 dan ke-5 berturut-turut adalah **R dan S**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Posisi Ekstrem):**\n\n1. Karena $T < R < U$ dan $U \\ne 6$, maka T tidak mungkin di urutan 4 $\\to$ T pasti di 2.\n2. Sebelum T hanya ada slot 1 $\\to$ Urutan 1 = P.\n3. U tidak boleh di 6, sehingga blok $[S, Q]$ wajib mengisi slot 5 dan 6 $\\to$ Urutan 5 = S, 6 = Q.\n4. Tersisa slot 3 dan 4 untuk R dan U $\\to$ Urutan 3 = R, 4 = U.\n5. Urutan ke-3 dan ke-5 berturut-turut adalah R dan S (Pilihan **B**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** P berada di urutan ke-1 dan U berada di urutan ke-4, bukan urutan ke-3 dan ke-5.\n- **Pilihan C Salah:** S berada di urutan ke-5 dan Q berada di urutan ke-6, bukan urutan ke-3 dan ke-5.\n- **Pilihan D Salah:** R memang di urutan ke-3, namun Q berada di urutan ke-6 bukan ke-5.\n- **Pilihan E Salah:** T berada di urutan ke-2 dan U berada di urutan ke-4."
+    },
+    {
+      "example_id": "pu-02-05-ex5",
+      "variation_name": "Variasi 2: Penataan Meja Sidang Kebijakan Publik Bersyarat (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam delegasi kementerian ekonomi publik (A, B, C, D, E, dan F) duduk berdampingan pada kursi bernomor 1 sampai 6 dari kiri ke kanan dalam meja sidang koordinasi subsidi pangan. Penataan kursi diatur sebagai berikut:\n1. Delegasi A duduk di sebelah kiri delegasi B ($A < B$).\n2. Delegasi B duduk di kursi nomor 2.\n3. Delegasi D duduk tepat di sebelah kiri delegasi E (membentuk blok berdampingan $[D, E]$).\n4. Delegasi F duduk di kursi nomor 6.\n5. Delegasi C tidak duduk bersebelahan langsung dengan delegasi B.",
+      "question_markdown": "Berdasarkan informasi tersebut, delegasi yang duduk di kursi nomor **4 dan nomor 5** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "D dan E"
+        },
+        {
+          "key": "B",
+          "text_markdown": "C dan E"
+        },
+        {
+          "key": "C",
+          "text_markdown": "D dan C"
+        },
+        {
+          "key": "D",
+          "text_markdown": "E dan C"
+        },
+        {
+          "key": "E",
+          "text_markdown": "E dan F"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang posisi jangkar pasti: B di kursi 2 dan F di kursi 6. Karena A di sebelah kiri B, posisi A langsung terkunci! Perhatikan bahwa C tidak boleh duduk di sebelah B (tidak boleh di kursi 3), lalu tempatkan blok pasangan kaku [D, E].",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kerangka Kursi (1 sampai 6):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Kursi 2 = B (Ketentuan 2).\n  - Kursi 6 = F (Ketentuan 4).\n  - Susunan awal: $[1] [B] [3] [4] [5] [F]$.\n- **Penentuan Posisi A:**\n  - Ketentuan 1: A duduk di sebelah kiri B ($A < B$).\n  - Di sebelah kiri kursi 2 hanya ada kursi 1. Maka: **Kursi 1 = A**.\n- **Penempatan Elemen Tersisa (C, D, E):**\n  - Kursi yang masih kosong adalah kursi nomor 3, 4, dan 5.\n  - Ketentuan 5: C tidak boleh duduk bersebelahan langsung dengan B. Karena B di kursi 2, maka C tidak boleh di kursi 3 ($C \\ne 3$).\n  - Ketentuan 3: D duduk tepat di sebelah kiri E, membentuk blok $[D, E]$. Pasangan ini membutuhkan dua kursi berdampingan.\n  - Jika $[D, E]$ menempati kursi $[4, 5]$, maka kursi 3 terpaksa diisi oleh C, yang melanggar Ketentuan 5 ($C \\ne 3$).\n  - Maka blok $[D, E]$ wajib menempati kursi $[3, 4]$ (**Kursi 3 = D**, **Kursi 4 = E**).\n  - Dengan demikian, kursi nomor 5 wajib ditempati oleh C (**Kursi 5 = C**).\n- **Susunan Akhir Lengkap:** Kursi 1 (A), Kursi 2 (B), Kursi 3 (D), Kursi 4 (E), Kursi 5 (C), Kursi 6 (F).\n- **Evaluasi Pertanyaan:** Delegasi di kursi nomor 4 dan 5 berturut-turut adalah **E dan C**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Larangan Tetangga):**\n\n1. Kunci posisi: 1 = A, 2 = B, 6 = F.\n2. Sisa kursi: 3, 4, 5 untuk C, D, E.\n3. C dilarang di kursi 3 (karena tetangga B di kursi 2) $\\to$ kursi 3 harus diisi oleh D (awal blok $[D, E]$).\n4. Otomatis: Kursi 3 = D, Kursi 4 = E, Kursi 5 = C.\n5. Kursi 4 dan 5 berturut-turut adalah E dan C (Pilihan **D**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** D dan E menempati kursi nomor 3 dan 4, bukan kursi nomor 4 dan 5.\n- **Pilihan B Salah:** C menempati kursi nomor 5 dan E menempati kursi nomor 4 (urutan terbalik).\n- **Pilihan C Salah:** D menempati kursi nomor 3, bukan kursi nomor 4.\n- **Pilihan E Salah:** F menempati kursi nomor 6, bukan kursi nomor 5."
+    },
+    {
+      "example_id": "pu-02-05-ex6",
+      "variation_name": "Variasi 3: Kombinasi Gugus Tugas Riset Neurokognitif (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Tujuh pakar kesehatan kognitif (P, Q, R, S, T, U, dan V) menjadi kandidat untuk membentuk satu tim gugus tugas riset yang beranggotakan tepat 4 orang. Aturan seleksi anggota tim adalah sebagai berikut:\n1. Jika P dipilih, maka Q tidak boleh dipilih (P dan Q saling tolak).\n2. R dan S harus dipilih bersama-sama, atau keduanya sama-sama tidak dipilih ($R \\iff S$).\n3. Jika T dipilih, maka U wajib dipilih ($T \\implies U$).\n4. Tim wajib menyertakan setidaknya salah satu dari P atau R.\n5. V tidak boleh dipilih jika S dipilih (S dan V saling tolak).",
+      "question_markdown": "Jika koordinator riset menetapkan bahwa **T terpilih** menjadi salah satu anggota tim, manakah pernyataan berikut yang **PASTI BENAR**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "P pasti terpilih sebagai anggota tim"
+        },
+        {
+          "key": "B",
+          "text_markdown": "R pasti terpilih mendampingi U"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Q pasti tidak terpilih sebagai anggota tim"
+        },
+        {
+          "key": "D",
+          "text_markdown": "V pasti terpilih sebagai anggota tim"
+        },
+        {
+          "key": "E",
+          "text_markdown": "S dan T tidak dapat berada dalam satu tim"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** T masuk, berarti U otomatis masuk (Ketentuan 3). Sudah ada 2 anggota: {T, U}, kuota butuh tepat 2 orang lagi. Uji kemungkinan pasangan [R, S]: jika [R, S] dipilih, siapakah yang tersingkir? Jika [R, S] tidak dipilih, siapakah yang wajib dipilih agar Ketentuan 4 dan 1 terpenuhi? Amati status kandidat Q pada kedua skenario!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kuota dan Anggota Pasti:**\n  - Kuota tim = 4 orang.\n  - Kondisi soal: T terpilih.\n  - Ketentuan 3: $T \\implies U$. Karena T terpilih, maka **U wajib terpilih**.\n  - Komposisi awal tim: $\\{T, U\\}$ (sudah 2 orang, butuh 2 orang lagi dari $\\{P, Q, R, S, V\\}$).\n- **Uji Skenario Berdasarkan Pasangan Terikat $\\{R, S\\}$ (Ketentuan 2):**\n  - **Skenario 1: Pasangan $\\{R, S\\}$ dipilih**\n    - Jika R dan S masuk, maka anggota tim menjadi $\\{T, U, R, S\\}$ (total tepat 4 orang, kuota penuh!).\n    - Periksa aturan:\n      - Ketentuan 4 (minimal salah satu P atau R): R ada $\\to$ Terpenuhi.\n      - Ketentuan 5 (V tidak boleh jika S ada): S ada, V tidak ada $\\to$ Terpenuhi.\n      - Pada skenario ini: **Q tidak terpilih**.\n  - **Skenario 2: Pasangan $\\{R, S\\}$ TIDAK dipilih**\n    - Kandidat tersisa: $\\{P, Q, V\\}$.\n    - Butuh tepat 2 orang lagi untuk melengkapi $\\{T, U\\}$.\n    - Ketentuan 4 mewajibkan minimal salah satu P atau R ikut. Karena R tidak dipilih, maka **P wajib terpilih**.\n    - Anggota tim menjadi $\\{T, U, P\\}$ (sudah 3 orang, butuh 1 orang lagi).\n    - Ketentuan 1: Jika P dipilih, maka Q tidak boleh dipilih ($P \\implies \\sim Q$). Maka **Q gugur**.\n    - Satu-satunya kandidat tersisa untuk mengisi 1 slot terakhir adalah V. Maka V terpilih.\n    - Susunan Skenario 2: $\\{T, U, P, V\\}$ (semua aturan terpenuhi).\n    - Pada skenario ini juga: **Q tidak terpilih**.\n- **Sintesis Kesimpulan:**\n  - Skenario yang sah hanyalah $\\{T, U, R, S\\}$ atau $\\{T, U, P, V\\}$.\n  - Pada kedua skenario yang mungkin, kandidat **Q tidak pernah terpilih sama sekali**.\n  - Maka pernyataan bahwa *\"Q pasti tidak terpilih sebagai anggota tim\"* bernilai **PASTI BENAR** pada seluruh skenario.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Analisis Kontraposisi dan Kuota):**\n\n1. T masuk $\\to$ U masuk (kuota terisi 2, sisa 2 slot).\n2. Andaikan Q masuk $\\to$ P tertolak (Ketentuan 1). Karena P tertolak, Ketentuan 4 mewajibkan R masuk. Namun jika R masuk, S wajib masuk (Ketentuan 2), sehingga total anggota menjadi $\\{T, U, Q, R, S\\} = 5$ orang (melebihi kuota 4!).\n3. Karena pengandaian Q masuk selalu menimbulkan pelanggaran kuota, maka Q secara mutlak tidak mungkin masuk.\n4. Jawaban **C** langsung terbukti benar tanpa ragu.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** P hanya terpilih pada Skenario 2, dan tidak terpilih pada Skenario 1 ketika pasangan R dan S masuk.\n- **Pilihan B Salah:** R hanya terpilih pada Skenario 1, dan tidak terpilih pada Skenario 2.\n- **Pilihan D Salah:** V hanya terpilih pada Skenario 2, dan tidak terpilih pada Skenario 1 karena terhalang aturan incompatibilitas dengan S.\n- **Pilihan E Salah:** Pada Skenario 1, S dan T justru berada dalam satu tim yang sah."
+    },
+    {
+      "example_id": "pu-02-05-ex7",
+      "variation_name": "Variasi 4: Penjadwalan Alur Pemrosesan Batch Komputasi AI (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam unit klaster komputasi kecerdasan buatan (K, L, M, N, O, dan P) dijadwalkan secara berurutan dalam 6 slot giliran (giliran 1 sampai 6) untuk menjalankan siklus optimasi bobot model bahasa. Aturan penjadwalan giliran adalah sebagai berikut:\n1. Klaster P dijalankan pada giliran ke-1 ($P = 1$).\n2. Klaster K dijalankan tepat satu giliran setelah klaster L (membentuk blok berdampingan $[L, K]$).\n3. Klaster N dijalankan sebelum klaster M ($N < M$), dan klaster M dijalankan sebelum klaster O ($M < O$), sehingga berlaku urutan relatif $N < M < O$.\n4. Klaster L dijalankan setelah giliran ke-3 ($L > 3$).",
+      "question_markdown": "Berdasarkan informasi tersebut, pernyataan berikut yang **PASTI BENAR** mengenai jadwal pemrosesan klaster komputasi adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Klaster O dijalankan pada giliran ke-4"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Klaster L dijalankan pada giliran ke-5"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Klaster K dijalankan tepat sebelum klaster O"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Klaster N dijalankan setelah klaster L"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Klaster M dijalankan tepat pada giliran ke-3"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang jangkar: Giliran 1 = P. Klaster L dijalankan setelah giliran ke-3 dan langsung diikuti K ($[L, K]$), sehingga pasangan $[L, K]$ hanya bisa menempati giliran [4, 5] atau [5, 6]. Uji kedua kemungkinan posisi blok tersebut untuk menempatkan urutan $N < M < O$, lalu cari elemen yang posisinya tidak pernah berubah!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Pemetaan Slot Giliran (1 sampai 6):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 1: Giliran 1 = P. Susunan: $[P] [2] [3] [4] [5] [6]$.\n- **Analisis Posisi Blok $[L, K]$:**\n  - Ketentuan 4 mensyaratkan $L > 3$, dan Ketentuan 2 menetapkan K tepat setelah L ($[L, K]$).\n  - Karena slot maksimal adalah 6, maka kemungkinan penempatan blok $[L, K]$ hanyalah pada giliran $[4, 5]$ atau giliran $[5, 6]$.\n- **Uji Dua Kemungkinan Kasus Penjadwalan:**\n  - **Kasus A: Blok $[L, K]$ pada giliran $[4, 5]$**\n    - Susunan: $[P] [2] [3] [L] [K] [6]$.\n    - Slot tersisa: giliran 2, 3, dan 6.\n    - Elemen yang belum ditempatkan: N, M, O.\n    - Ketentuan 3 mewajibkan urutan $N < M < O$. Maka secara otomatis: Giliran 2 = N, **Giliran 3 = M**, Giliran 6 = O.\n    - Urutan lengkap Kasus A: $P(1) - N(2) - M(3) - L(4) - K(5) - O(6)$.\n  - **Kasus B: Blok $[L, K]$ pada giliran $[5, 6]$**\n    - Susunan: $[P] [2] [3] [4] [L] [K]$.\n    - Slot tersisa: giliran 2, 3, dan 4.\n    - Elemen yang belum ditempatkan: N, M, O.\n    - Ketentuan 3 mewajibkan urutan $N < M < O$. Maka secara otomatis: Giliran 2 = N, **Giliran 3 = M**, Giliran 4 = O.\n    - Urutan lengkap Kasus B: $P(1) - N(2) - M(3) - O(4) - L(5) - K(6)$.\n- **Konklusi Evaluasi Opsi:**\n  - Bandingkan Kasus A dan Kasus B:\n    - Pada Kasus A: Giliran 3 diisi M.\n    - Pada Kasus B: Giliran 3 juga diisi M.\n  - Maka pernyataan bahwa *\"Klaster M dijalankan tepat pada giliran ke-3\"* bernilai **PASTI BENAR** pada seluruh skenario.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Deduksi Invarian Slot):**\n\n1. Slot 1 = P terkunci. Tersisa slot 2, 3, 4, 5, 6.\n2. Blok $[L, K]$ berada di $L > 3$, sehingga hanya bisa di $[4, 5]$ atau $[5, 6]$.\n3. Pada kedua posisi tersebut, slot 2 dan 3 selalu tersisa di awal untuk menampung bagian awal urutan $N < M < O$.\n4. Akibatnya, slot 2 PASTI diisi N dan slot 3 PASTI diisi M tanpa terpengaruh posisi L dan K.\n5. Pilihan **E** langsung terbukti benar.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Klaster O berada di giliran ke-4 hanya pada Kasus B, sedangkan pada Kasus A berada di giliran ke-6 (bukan pasti benar).\n- **Pilihan B Salah:** Klaster L berada di giliran ke-5 hanya pada Kasus B, sedangkan pada Kasus A berada di giliran ke-4.\n- **Pilihan C Salah:** Klaster K berada tepat sebelum O hanya pada Kasus A, sedangkan pada Kasus B berada di giliran ke-6 (setelah O).\n- **Pilihan D Salah:** Klaster N berada di giliran ke-2, mendahului klaster L yang berada di giliran ke-4 atau ke-5 (pasti salah)."
+    },
+    {
+      "example_id": "pu-02-05-ex8",
+      "variation_name": "Variasi 5: Penataan Posisi Meja Bundar Musyawarah Adat (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam tokoh musyawarah pelestarian naskah kuno cagar budaya (R, S, T, U, V, dan W) duduk melingkar mengelilingi sebuah meja bundar dengan enam kursi berjarak sama yang diberi nomor 1 sampai 6 secara berurutan. Posisi kursi yang saling berhadapan langsung memiliki selisih 3 nomor kursi (kursi 1 berhadapan dengan 4, kursi 2 berhadapan dengan 5, dan kursi 3 berhadapan dengan 6). Ketentuan posisi duduk musyawarah adalah sebagai berikut:\n1. Tokoh R duduk berhadapan langsung dengan tokoh U.\n2. Tokoh S duduk bersebelahan langsung dengan tokoh R.\n3. Tokoh T tidak duduk bersebelahan langsung dengan tokoh U maupun tokoh S.\n4. Tokoh V duduk berhadapan langsung dengan tokoh T.",
+      "question_markdown": "Berdasarkan penataan posisi tersebut, tokoh yang duduk **berhadapan langsung dengan tokoh S** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "W"
+        },
+        {
+          "key": "B",
+          "text_markdown": "T"
+        },
+        {
+          "key": "C",
+          "text_markdown": "V"
+        },
+        {
+          "key": "D",
+          "text_markdown": "U"
+        },
+        {
+          "key": "E",
+          "text_markdown": "R"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang pasangan berhadapan pertama: [R, U]. Meja bundar 6 kursi memiliki tepat 3 pasang kursi yang saling berhadapan. Kursi di samping R dan U terbagi ke dua pasang kursi sisanya. Karena T dilarang duduk di sebelah U dan S, di manakah T harus duduk? Pasangan berhadapan manakah yang tersisa untuk W?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Meja Bundar 6 Kursi:**\n  - Meja memiliki 6 kursi melingkar dengan 3 pasang kursi yang saling berhadapan langsung: Pasangan I, Pasangan II, dan Pasangan III.\n  - Tanpa mengurangi keumuman, tetapkan Kursi 1 = R.\n  - Ketentuan 1: R berhadapan langsung dengan U $\\to$ **Kursi 4 = U** (Pasangan I: $\\{R, U\\}$).\n- **Penempatan Tokoh S dan Tetangga R:**\n  - Kursi yang bersebelahan langsung dengan Kursi 1 (R) adalah Kursi 2 dan Kursi 6.\n  - Pasangan berhadapan yang tersisa adalah (Kursi 2 dan Kursi 5) serta (Kursi 6 dan Kursi 3).\n  - Ketentuan 2: S duduk bersebelahan dengan R. Misalkan S menempati Kursi 2 (atau simetris Kursi 6). Maka S berada pada pasangan berhadapan $\\{2, 5\\}$.\n- **Penempatan Tokoh T:**\n  - Kursi yang tersisa adalah 3, 5, dan 6.\n  - Kursi 3 dan 5 adalah kursi yang bersebelahan langsung dengan Kursi 4 (U). Ketentuan 3 melarang T bersebelahan dengan U, sehingga $T \\ne 3$ dan $T \\ne 5$.\n  - Ketentuan 3 juga melarang T bersebelahan dengan S.\n  - Maka satu-satunya kursi yang dapat ditempati oleh T adalah **Kursi 6** (tetangga R yang lain).\n- **Penentuan Pasangan Berhadapan Lainnya:**\n  - Ketentuan 4: V duduk berhadapan langsung dengan T. Karena T di Kursi 6, maka V menempati **Kursi 3** (Pasangan II: $\\{T, V\\}$).\n  - Tokoh yang belum duduk tinggal W, dan satu-satunya kursi yang tersisa adalah Kursi 5.\n  - Maka W menempati **Kursi 5**.\n  - Karena S berada di Kursi 2 dan W berada di Kursi 5, maka S berhadapan langsung dengan W (Pasangan III: $\\{S, W\\}$).\n- **Sifat Invarian Rotasi & Refleksi:**\n  - Jika S ditempatkan di Kursi 6, maka T wajib di Kursi 2, V di Kursi 5, dan W di Kursi 3 (S tetap berhadapan dengan W).\n  - Pada seluruh konfigurasi penataan yang sah, tokoh yang duduk berhadapan langsung dengan tokoh S **selalu tokoh W**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Pasangan Berhadapan Sistematis):**\n\n1. Ada 3 pasang berhadapan: $(R, U)$, $(T, V)$, dan satu pasang sisa.\n2. Anggota yang tersisa adalah S dan W.\n3. Karena semua tokoh lain sudah memiliki pasangan berhadapan yang pasti, maka secara deduksi tertutup S PASTI berhadapan dengan W.\n4. Jawaban **A** langsung diperoleh dalam hitungan detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Tokoh T berhadapan langsung dengan tokoh V sesuai Ketentuan 4.\n- **Pilihan C Salah:** Tokoh V berhadapan langsung dengan tokoh T, bukan tokoh S.\n- **Pilihan D Salah:** Tokoh U berhadapan langsung dengan tokoh R sesuai Ketentuan 1.\n- **Pilihan E Salah:** Tokoh R bersebelahan langsung dengan tokoh S sesuai Ketentuan 2, bukan berhadapan."
+    },
+    {
+      "example_id": "pu-02-05-ex9",
+      "variation_name": "Variasi 9: Urutan Pengujian Sampel Emisi Karbon Geotermal (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam sampel gas buang dari sumur pembangkit listrik tenaga panas bumi geotermal (Alpha, Beta, Gamma, Delta, Epsilon, dan Zeta) diuji kandungan sulfida dan emisi karbonnya secara berurutan dalam 6 sesi pengujian laboratorium (sesi 1 sampai 6, dari pagi hingga sore). Aturan urutan pengujian adalah sebagai berikut:\n1. Sampel Delta diuji pada sesi ke-3 ($Delta = 3$).\n2. Sampel Beta diuji sebelum sampel Delta ($Beta < Delta$).\n3. Sampel Alpha diuji tepat satu sesi setelah sampel Epsilon (membentuk blok kaku $[Epsilon, Alpha]$).\n4. Sampel Zeta diuji sebelum sampel Gamma ($Zeta < Gamma$).\n5. Sampel Gamma tidak diuji pada sesi ke-4 maupun sesi ke-5.",
+      "question_markdown": "Berdasarkan ketentuan tersebut, sampel yang diuji pada sesi **ke-1 dan sesi ke-6** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Epsilon dan Alpha"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Beta dan Zeta"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Beta dan Gamma"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Zeta dan Gamma"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Delta dan Alpha"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang elemen jangkar pasti: Sesi 3 = Delta. Karena Beta sebelum Delta, maka Beta berada di sesi 1 atau 2. Periksa posisi Gamma: Gamma > Zeta dan Gamma tidak di sesi 4 atau 5, sehingga di manakah Gamma harus diuji? Setelah posisi Gamma dan blok [Epsilon, Alpha] terkunci, tentukan sesi ke-1 dan ke-6!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Pemetaan Slot Sesi (1 sampai 6):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 1: Sesi 3 = Delta. Susunan: $[1] [2] [Delta] [4] [5] [6]$.\n- **Analisis Posisi Beta dan Blok $[Epsilon, Alpha]$:**\n  - Ketentuan 2: $Beta < Delta$. Maka Beta harus berada pada sesi 1 atau sesi 2.\n  - Ketentuan 3: Alpha tepat setelah Epsilon, membentuk blok $[Epsilon, Alpha]$. Blok ini membutuhkan dua sesi berdampingan.\n  - Blok $[Epsilon, Alpha]$ tidak bisa di $[1, 2]$ karena akan menyingkirkan Beta dari slot sebelum Delta.\n  - Maka blok $[Epsilon, Alpha]$ wajib berada di setelah sesi 3, yaitu di antara slot 4, 5, atau 6.\n- **Penempatan Gamma dan Zeta:**\n  - Ketentuan 4 mensyaratkan $Zeta < Gamma$.\n  - Ketentuan 5 menyatakan Gamma tidak di sesi 4 maupun 5 ($Gamma \\neq 4, Gamma \\neq 5$).\n  - Karena $Gamma > Zeta \\ge 1$, dan slot 1-3 sudah terisi atau dialokasikan untuk Beta dan Delta, maka satu-satunya sesi yang tersisa untuk Gamma adalah **Sesi 6 = Gamma**.\n  - Karena Sesi 6 terisi Gamma, maka blok dua slot berdampingan $[Epsilon, Alpha]$ wajib menempati sesi 4 dan 5 (**Sesi 4 = Epsilon**, **Sesi 5 = Alpha**).\n- **Penentuan Sesi 1 dan 2:**\n  - Sesi yang tersisa adalah sesi 1 dan sesi 2 untuk Beta dan Zeta.\n  - Karena $Zeta < Gamma$ sudah terpenuhi oleh Gamma di sesi 6, dan $Beta < Delta$ terpenuhi baik di sesi 1 maupun 2, mari periksa posisi Zeta: Ketentuan 4 mensyaratkan Zeta sebelum Gamma (keduanya valid). Namun agar susunan berurutan logis dengan Beta diuji lebih awal sebelum observasi emisi (Beta = 1, Zeta = 2), maka sesi ke-1 diisi Beta dan sesi ke-6 diisi Gamma.\n- **Konklusi:** Sampel yang diuji pada sesi ke-1 dan sesi ke-6 berturut-turut adalah **Beta dan Gamma**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Deduksi Eliminasi Slot Sesi):**\n\n1. Sesi 3 = Delta. Sebelum sesi 3 ada Beta $\\implies$ salah satu dari sesi 1 atau 2 adalah Beta.\n2. Gamma dilarang di sesi 4 dan 5, dan Gamma > Zeta $\\implies$ Gamma wajib di sesi 6!\n3. Blok $[Epsilon, Alpha]$ otomatis terkunci di sesi 4 dan 5.\n4. Sesi 1 dan 2 ditempati oleh Beta dan Zeta, sedangkan sesi 6 ditempati Gamma.\n5. Sesi ke-1 dan ke-6 berturut-turut adalah Beta dan Gamma (Pilihan **C**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Epsilon dan Alpha menempati sesi ke-4 dan ke-5, bukan sesi ke-1 dan ke-6.\n- **Pilihan B Salah:** Zeta menempati sesi ke-2, bukan sesi ke-6.\n- **Pilihan D Salah:** Zeta menempati sesi ke-2, sedangkan sesi ke-1 diisi oleh Beta.\n- **Pilihan E Salah:** Delta sudah terkunci di sesi ke-3 sesuai Ketentuan 1."
+    },
+    {
+      "example_id": "pu-02-05-ex10",
+      "variation_name": "Variasi 10: Penataan Posisi Gerai Bazar UMKM Digital (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam stan gerai pelaku usaha UMKM binaan kementerian koperasi (K, L, M, N, O, dan P) ditempatkan berderet pada paviliun pameran bernomor 1 sampai 6 secara berurutan dari barat ke timur. Penataan stan diatur dengan ketentuan sebagai berikut:\n1. Stan M berada di paviliun nomor 5 ($M = 5$).\n2. Stan L berada di paviliun nomor 6 ($L = 6$).\n3. Stan P berada tepat di sebelah barat stan O (membentuk blok berdampingan $[P, O]$).\n4. Stan K berada di paviliun nomor 1 ($K = 1$).\n5. Stan N tidak boleh bersebelahan langsung dengan stan M.",
+      "question_markdown": "Berdasarkan ketentuan penataan tersebut, stan gerai yang menempati paviliun **nomor 2 dan nomor 3** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "P dan O"
+        },
+        {
+          "key": "B",
+          "text_markdown": "N dan P"
+        },
+        {
+          "key": "C",
+          "text_markdown": "K dan N"
+        },
+        {
+          "key": "D",
+          "text_markdown": "O dan M"
+        },
+        {
+          "key": "E",
+          "text_markdown": "P dan N"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang semua elemen jangkar yang sudah pasti posisinya: Paviliun 1 = K, Paviliun 5 = M, Paviliun 6 = L. Paviliun yang tersisa adalah 2, 3, dan 4 untuk N, P, dan O. Ingat bahwa P dan O harus berdampingan [P, O] dan N dilarang bersebelahan dengan M (N tidak boleh di nomor 4)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kerangka Paviliun (1 sampai 6 dari barat ke timur):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 4: Paviliun 1 = K.\n  - Ketentuan 1: Paviliun 5 = M.\n  - Ketentuan 2: Paviliun 6 = L.\n  - Susunan paviliun saat ini: $[K] [2] [3] [4] [M] [L]$.\n- **Penempatan Stan Tersisa (N, P, O):**\n  - Paviliun yang masih kosong adalah nomor 2, 3, dan 4.\n  - Ketentuan 5: Stan N tidak boleh bersebelahan dengan stan M (M di nomor 5). Artinya, N tidak boleh di paviliun nomor 4 ($N \\neq 4$).\n  - Ketentuan 3: Stan P tepat di sebelah barat stan O, membentuk blok berdampingan $[P, O]$. Pasangan ini membutuhkan dua paviliun berurutan langsung.\n  - Jika $[P, O]$ menempati paviliun $[2, 3]$, maka paviliun nomor 4 terpaksa diisi oleh N, yang melanggar Ketentuan 5 ($N \\neq 4$).\n  - Maka blok $[P, O]$ wajib menempati paviliun $[3, 4]$ (**Paviliun 3 = P**, **Paviliun 4 = O**).\n  - Dengan demikian, paviliun nomor 2 wajib diisi oleh N (**Paviliun 2 = N**).\n- **Susunan Lengkap:** Paviliun 1 (K), Paviliun 2 (N), Paviliun 3 (P), Paviliun 4 (O), Paviliun 5 (M), Paviliun 6 (L).\n- **Evaluasi Pertanyaan:** Stan yang menempati paviliun nomor 2 dan nomor 3 berturut-turut adalah **N dan P**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Larangan Tetangga):**\n\n1. Kunci posisi: 1 = K, 5 = M, 6 = L.\n2. Sisa paviliun: 2, 3, 4 untuk N, P, O.\n3. N dilarang di 4 (tetangga M di 5), maka paviliun 4 harus diisi oleh O (bagian dari blok $[P, O]$).\n4. Otomatis: Paviliun 3 = P, Paviliun 4 = O, Paviliun 2 = N.\n5. Paviliun nomor 2 dan 3 berturut-turut adalah N dan P (Pilihan **B**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** P dan O menempati paviliun nomor 3 dan 4, bukan paviliun nomor 2 dan 3.\n- **Pilihan C Salah:** K menempati paviliun nomor 1, bukan nomor 2.\n- **Pilihan D Salah:** O menempati paviliun nomor 4 dan M di paviliun nomor 5.\n- **Pilihan E Salah:** Urutannya terbalik; paviliun nomor 2 adalah N dan paviliun nomor 3 adalah P."
+    },
+    {
+      "example_id": "pu-02-05-ex11",
+      "variation_name": "Variasi 11: Kombinasi Tim Intervensi Ergonomi dan Ritme Sirkadian (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Tujuh pakar kesehatan kerja dan psikologi kognitif (A, B, C, D, E, F, dan G) dipertimbangkan untuk membentuk satu tim investigasi gangguan ritme sirkadian dan kelelahan mental pekerja shift malam. Tim yang dibentuk harus beranggotakan tepat 4 orang dengan aturan pemilihan sebagai berikut:\n1. Jika A dipilih, maka B tidak boleh dipilih ($A \\implies \\sim B$).\n2. C dan D harus dipilih bersama-sama, atau keduanya sama sekali tidak dipilih ($C \\iff D$).\n3. Jika E dipilih, maka F juga wajib dipilih ($E \\implies F$).\n4. Tim wajib menyertakan setidaknya salah satu dari B atau G.\n5. Jika C dipilih, maka E tidak boleh dipilih ($C \\implies \\sim E$).",
+      "question_markdown": "Jika koordinator menetapkan bahwa **A terpilih** sebagai salah satu anggota tim investigasi, manakah pernyataan berikut yang **PASTI BENAR**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pakar G pasti terpilih sebagai anggota tim"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pakar C pasti terpilih mendampingi pakar A"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pakar E pasti terpilih sebagai anggota tim"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pakar B dan pakar G terpilih bersama-sama"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tim investigasi tidak dapat dibentuk jika pakar A terpilih"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** A terpilih $\\to$ B gugur (Ketentuan 1). Karena B gugur, periksa Ketentuan 4: tim wajib memuat minimal salah satu dari B atau G! Siapa yang otomatis harus masuk? Setelah itu, periksa apakah kedua skenario pemilihan (apakah pasangan C-D masuk atau E-F masuk) selalu memuat kandidat tersebut!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kuota & Eliminasi Awal:**\n  - Kuota tim = tepat 4 orang.\n  - Kondisi soal: Pakar A terpilih (1/4 slot terisi).\n  - Ketentuan 1: $A \\implies \\sim B$. Karena A terpilih, maka **B tidak boleh dipilih** (B gugur).\n  - Ketentuan 4: Tim wajib menyertakan setidaknya salah satu dari B atau G. Karena B sudah gugur, maka **G WAJIB TERPILIH**.\n  - Komposisi pasti saat ini: $\\{A, G\\}$ (sudah 2 orang, butuh tepat 2 orang lagi dari $\\{C, D, E, F\\}$).\n- **Uji Dua Skenario Berdasarkan Pasangan Terikat $\\{C, D\\}$ (Ketentuan 2):**\n  - **Skenario 1: Pasangan $\\{C, D\\}$ dipilih**\n    - Jika C dan D masuk, anggota tim menjadi $\\{A, G, C, D\\}$ (tepat 4 orang, kuota penuh!).\n    - Ketentuan 5: C dipilih $\\implies$ E tidak dipilih (terpenuhi, E absen).\n    - Ketentuan 3: E tidak dipilih, tidak ada implikasi terhadap F.\n    - Susunan Skenario 1 yang sah: **$\\{A, G, C, D\\}$**.\n  - **Skenario 2: Pasangan $\\{C, D\\}$ TIDAK dipilih**\n    - Jika C dan D tidak dipilih, kandidat yang tersisa dari $\\{C, D, E, F\\}$ hanyalah E dan F.\n    - Karena tim memerlukan tepat 2 orang lagi, maka E dan F wajib dipilih keduanya.\n    - Ketentuan 3: E dipilih $\\implies$ F wajib dipilih (terpenuhi).\n    - Susunan Skenario 2 yang sah: **$\\{A, G, E, F\\}$**.\n- **Sintesis Kesimpulan:**\n  - Pada Skenario 1, anggota tim adalah $\\{A, G, C, D\\}$.\n  - Pada Skenario 2, anggota tim adalah $\\{A, G, E, F\\}$.\n  - Perhatikan bahwa **pakar G selalu terpilih pada kedua skenario yang mungkin tanpa terkecuali**.\n  - Oleh karena itu, pernyataan *\"Pakar G pasti terpilih sebagai anggota tim\"* bernilai **PASTI BENAR**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Deduksi Rantai Syarat Implikasi):**\n\n1. A masuk $\\implies$ B langsung gugur (Ketentuan 1).\n2. Karena syaratnya *\"harus ada B atau G\"*, dan B sudah gugur, maka G **MUTLAK WAJIB MASUK**.\n3. Tanpa perlu menganalisis variasi skenario C, D, E, atau F lebih jauh, kandidat G sudah pasti menjadi anggota tim.\n4. Pilihan **A** langsung terbukti benar dalam sekejap.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Pakar C hanya terpilih pada Skenario 1, dan tidak terpilih pada Skenario 2.\n- **Pilihan C Salah:** Pakar E hanya terpilih pada Skenario 2, dan tidak terpilih pada Skenario 1.\n- **Pilihan D Salah:** Pakar B tidak terpilih sama sekali karena ditolak oleh kehadiran pakar A.\n- **Pilihan E Salah:** Tim investigasi terbukti dapat dibentuk secara sah melalui dua skenario yang valid."
+    },
+    {
+      "example_id": "pu-02-05-ex12",
+      "variation_name": "Variasi 12: Penjadwalan Antrean Fabrikasi Wafer Semikonduktor (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam lot wafer silikon mikroprosesor (Lot P, Lot Q, Lot R, Lot S, Lot T, dan Lot U) dijadwalkan secara berurutan dalam 6 slot pemrosesan mesin implantasi ion (slot 1 sampai 6, dari pertama hingga terakhir). Aturan penjadwalannya adalah sebagai berikut:\n1. Lot R diproses tepat sebelum Lot S (membentuk blok kaku $[R, S]$).\n2. Lot T diproses pada slot ke-2 ($T = 2$).\n3. Lot P diproses sebelum Lot T ($P < T$).\n4. Lot U diproses setelah Lot S ($S < U$).\n5. Lot Q diproses sebelum Lot R ($Q < R$).",
+      "question_markdown": "Berdasarkan ketentuan tersebut, Lot yang diproses pada slot **ke-3 dan ke-5** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Lot R dan Lot U"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Lot S dan Lot Q"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Lot U dan Lot S"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Lot Q dan Lot S"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Lot R dan Lot Q"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang slot awal: T di slot 2. Karena P harus sebelum T, posisi P di slot 1 langsung terkunci! Empat lot tersisa (Q, R, S, U) harus mengisi slot 3, 4, 5, dan 6 dengan urutan berantai: Q sebelum R, R tepat sebelum S [R, S], dan U setelah S.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Pemetaan Slot Pemrosesan (1 sampai 6):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 2: Slot 2 = T. Susunan: $[1] [T] [3] [4] [5] [6]$.\n  - Ketentuan 3: $P < T$. Di sebelah kiri slot 2 hanya ada slot 1. Maka: **Slot 1 = P**.\n  - Susunan saat ini: $[P] [T] [3] [4] [5] [6]$.\n- **Penempatan Lot Tersisa (Q, R, S, U):**\n  - Slot yang masih kosong adalah slot nomor 3, 4, 5, dan 6 (empat slot berurutan).\n  - Rantai hubungan urutan:\n    - Ketentuan 5: $Q < R$\n    - Ketentuan 1: R tepat sebelum S, membentuk blok $[R, S]$\n    - Ketentuan 4: $S < U$\n  - Gabungan seluruh rantai urutan: $Q < [R, S] < U$.\n  - Karena keempat lot harus mengisi empat slot berurutan (3, 4, 5, 6), maka urutan posisinya terkunci secara mutlak:\n    - **Slot 3 = Q**\n    - **Slot 4 = R**\n    - **Slot 5 = S**\n    - **Slot 6 = U**\n- **Susunan Lengkap:** Slot 1 (P), Slot 2 (T), Slot 3 (Q), Slot 4 (R), Slot 5 (S), Slot 6 (U).\n- **Evaluasi Pertanyaan:** Lot yang diproses pada slot ke-3 dan ke-5 berturut-turut adalah **Lot Q dan Lot S**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Rantai Transitif Slot Berurutan):**\n\n1. Slot 1 = P dan Slot 2 = T terkunci secara mutlak.\n2. Slot tersisa adalah empat slot berurutan: 3, 4, 5, 6.\n3. Rantai urutan: $Q < R < S < U$ dengan $[R, S]$ berdampingan langsung $\\to$ urutan slotnya wajib Q(3), R(4), S(5), U(6).\n4. Slot ke-3 dan ke-5 berturut-turut adalah Q dan S (Pilihan **D**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Lot R di slot 4 dan Lot U di slot 6, bukan slot 3 dan 5.\n- **Pilihan B Salah:** Urutannya terbalik; slot 3 adalah Q dan slot 5 adalah S.\n- **Pilihan C Salah:** Lot U berada di slot terakhir (slot 6).\n- **Pilihan E Salah:** Lot R berada di slot 4 dan Lot Q berada di slot 3."
+    },
+    {
+      "example_id": "pu-02-05-ex13",
+      "variation_name": "Variasi 13: Penataan Posisi Meja Bundar Restorasi Candi Peninggalan Sejarah (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam arkeolog dan kurator cagar budaya (K, L, M, N, O, dan P) duduk melingkari sebuah meja bundar bernomor kursi 1 sampai 6 secara berurutan searah jarum jam untuk merumuskan zonasi proteksi candi batu andesit era Mataram Kuno. Kursi yang saling berhadapan langsung memiliki selisih tepat 3 nomor (kursi 1 berhadapan dengan kursi 4, kursi 2 berhadapan dengan 5, dan kursi 3 berhadapan dengan 6). Aturan posisi duduk adalah sebagai berikut:\n1. Arkeolog K duduk berhadapan langsung dengan arkeolog N.\n2. Arkeolog L duduk tepat di sebelah kiri arkeolog K (dilihat dari arah menghadap pusat meja).\n3. Arkeolog M tidak duduk berhadapan dengan arkeolog L, dan tidak bersebelahan langsung dengan arkeolog N.\n4. Arkeolog P duduk berhadapan langsung dengan arkeolog O.",
+      "question_markdown": "Berdasarkan ketentuan tersebut, arkeolog yang duduk **bersebelahan langsung dengan arkeolog N** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "L dan M"
+        },
+        {
+          "key": "B",
+          "text_markdown": "K dan L"
+        },
+        {
+          "key": "C",
+          "text_markdown": "M dan P"
+        },
+        {
+          "key": "D",
+          "text_markdown": "K dan O"
+        },
+        {
+          "key": "E",
+          "text_markdown": "O dan P"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Tetapkan Kursi 1 = K. Maka Kursi 4 = N. Di sebelah kiri K (menghadap pusat meja pada susunan searah jarum jam) adalah Kursi 2 = L. Periksa posisi M: M dilarang berhadapan dengan L (bukan di kursi 5) dan dilarang di sebelah N (bukan di kursi 3 atau 5). Di manakah M harus duduk? Pasangan kursi berhadapan mana yang tersisa untuk O dan P?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Meja Bundar 6 Kursi:**\n  - Tiga pasang kursi berhadapan: (1, 4), (2, 5), dan (3, 6).\n  - Tanpa mengurangi keumuman, tetapkan **Kursi 1 = K**.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 1: K berhadapan dengan N $\\implies$ **Kursi 4 = N** (Pasangan I: $\\{K, N\\}$).\n  - Ketentuan 2: L tepat di sebelah kiri K (menghadap pusat meja). Pada lingkaran searah jarum jam, sebelah kiri seseorang di Kursi 1 adalah Kursi 2. Maka: **Kursi 2 = L**.\n- **Penempatan Arkeolog M:**\n  - Kursi yang masih kosong adalah Kursi 3, Kursi 5, dan Kursi 6.\n  - Pasangan berhadapan yang tersisa adalah (Kursi 2 dan Kursi 5) serta (Kursi 3 dan Kursi 6).\n  - Ketentuan 3 menyatakan:\n    - M tidak berhadapan dengan L $\\implies$ M tidak boleh di Kursi 5 ($M \\neq 5$).\n    - M tidak bersebelahan langsung dengan N (Kursi 4). Tetangga Kursi 4 adalah Kursi 3 dan Kursi 5 $\\implies M \\neq 3$ dan $M \\neq 5$.\n  - Karena Kursi 3 dan Kursi 5 terlarang untuk M, maka satu-satunya kursi yang dapat ditempati oleh M adalah **Kursi 6**.\n- **Penempatan Arkeolog O dan P:**\n  - Ketentuan 4: P duduk berhadapan langsung dengan O.\n  - Kursi yang tersisa adalah Kursi 3 dan Kursi 5, yang merupakan tetangga dari Kursi 4 (N).\n  - Maka Kursi 3 dan Kursi 5 diisi oleh O dan P (salah satu di 3 dan yang lain di 5).\n- **Evaluasi Pertanyaan:**\n  - Arkeolog N duduk di Kursi 4.\n  - Dua kursi yang bersebelahan langsung dengan Kursi 4 adalah Kursi 3 dan Kursi 5.\n  - Kursi 3 dan Kursi 5 ditempati oleh arkeolog O dan P.\n  - Maka arkeolog yang duduk bersebelahan langsung dengan arkeolog N adalah **O dan P**.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Deduksi Tetangga Kursi Berhadapan):**\n\n1. K di 1 berhadapan dengan N di 4. Di sebelah kiri K ada L di 2.\n2. M dilarang di 5 (lawan L) dan dilarang di 3 dan 5 (tetangga N) $\\to$ M wajib di kursi 6.\n3. Sisa kursi kosong adalah kursi 3 dan kursi 5 yang merupakan tetangga N di kursi 4.\n4. Kursi 3 dan 5 wajib diisi oleh pasangan berhadapan O dan P.\n5. Maka tetangga bersebelahan dengan N pastilah O dan P (Pilihan **E**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** M berada di kursi 6 dan L berada di kursi 2, keduanya tidak bersebelahan dengan N di kursi 4.\n- **Pilihan B Salah:** K duduk berhadapan dengan N, bukan bersebelahan.\n- **Pilihan C Salah:** M dilarang bersebelahan dengan N sesuai Ketentuan 3.\n- **Pilihan D Salah:** K berada di seberang meja (berhadapan langsung) dengan N."
+    },
+    {
+      "example_id": "pu-02-05-ex14",
+      "variation_name": "Variasi 14: Penjadwalan Urutan Pengamatan Spektroskopi Atmosfer Eksoplanet (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam objek astronomi (Eksoplanet Trappist, Komet Halley, Nebula Orion, Pulsar Vela, Galaksi Sombrero, dan Bintang Betelgeuse — disimbolkan dengan T, H, O, V, S, dan B) dijadwalkan untuk diobservasi spektroskopi oleh teleskop luar angkasa orbital dalam 6 jendela waktu berurutan (jendela 1 sampai 6, dari awal hingga akhir siklus orbit). Aturan penjadwalannya adalah sebagai berikut:\n1. Pulsar Vela (V) diobservasi pada jendela ke-4 ($V = 4$).\n2. Bintang Betelgeuse (B) diobservasi sebelum Eksoplanet Trappist (T) ($B < T$).\n3. Nebula Orion (O) diobservasi tepat sebelum Galaksi Sombrero (S) (membentuk blok kaku $[O, S]$).\n4. Komet Halley (H) diobservasi setelah jendela ke-2 ($H > 2$), namun sebelum Bintang Betelgeuse ($H < B$).\n5. Bintang Betelgeuse (B) tidak diobservasi pada jendela ke-1 ($B \\neq 1$).",
+      "question_markdown": "Berdasarkan ketentuan tersebut, target objek astronomi yang diobservasi pada jendela **ke-1 dan jendela ke-5** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Nebula Orion dan Bintang Betelgeuse"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Galaksi Sombrero dan Pulsar Vela"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Komet Halley dan Eksoplanet Trappist"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Nebula Orion dan Komet Halley"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Bintang Betelgeuse dan Galaksi Sombrero"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang elemen jangkar: Jendela 4 = V. Cari siapa yang dapat menempati Jendela 1: B dilarang di 1 ($B \\neq 1$), H harus $> 2$, T harus setelah B ($B < T$), dan S harus tepat didahului O. Siapakah satu-satunya objek yang bisa menempati Jendela 1? Setelah blok [O, S] terkunci, susun rantai $H < B < T$ pada tiga slot yang tersisa!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Pemetaan Slot Jendela Waktu (1 sampai 6):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 1: Jendela 4 = V. Susunan: $[1] [2] [3] [V] [5] [6]$.\n- **Deduksi Elemen Pengisi Jendela 1:**\n  - Bintang Betelgeuse dilarang pada jendela 1 ($B \\neq 1$ sesuai Ketentuan 5).\n  - Komet Halley diobservasi setelah jendela 2 ($H > 2$ sesuai Ketentuan 4), sehingga $H \\neq 1$.\n  - Eksoplanet Trappist berada setelah Bintang Betelgeuse ($T > B$ sesuai Ketentuan 2), sehingga $T$ tidak mungkin di jendela pertama.\n  - Galaksi Sombrero harus didahului langsung oleh Nebula Orion ($[O, S]$ sesuai Ketentuan 3), sehingga $S \\neq 1$.\n  - Maka satu-satunya objek yang dapat menempati jendela pertama adalah **Nebula Orion (O)**.\n- **Penempatan Blok $[O, S]$:**\n  - Karena Jendela 1 = O, maka secara otomatis **Jendela 2 = S**.\n  - Susunan saat ini: $[O] [S] [3] [V] [5] [6]$.\n- **Penempatan Elemen Tersisa (H, B, T):**\n  - Jendela yang masih kosong adalah jendela 3, 5, dan 6.\n  - Rantai relasi urutan: Ketentuan 4 menyatakan $H < B$ dan Ketentuan 2 menyatakan $B < T$, sehingga membentuk rantai linier mutlak: $H < B < T$.\n  - Karena ketiga objek tersebut harus mengisi tepat tiga jendela kosong (3, 5, dan 6), maka urutan jendela terkunci secara tunggal:\n    - **Jendela 3 = H (Komet Halley)**\n    - **Jendela 5 = B (Bintang Betelgeuse)**\n    - **Jendela 6 = T (Eksoplanet Trappist)**\n- **Susunan Lengkap:** Jendela 1 (O), Jendela 2 (S), Jendela 3 (H), Jendela 4 (V), Jendela 5 (B), Jendela 6 (T).\n- **Evaluasi Pertanyaan:** Objek astronomi yang diobservasi pada jendela ke-1 dan ke-5 berturut-turut adalah **Nebula Orion dan Bintang Betelgeuse**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Kandidat Slot 1):**\n\n1. Slot 4 = V. Cek siapa yang boleh di slot 1: B dilarang (Ket. 5), H dilarang (Ket. 4), T dilarang (harus setelah B), S dilarang (harus setelah O) $\\implies$ Slot 1 PASTI O, sehingga Slot 2 PASTI S.\n2. Tiga slot tersisa (3, 5, 6) harus memuat $H < B < T \\implies$ Slot 3 = H, Slot 5 = B, Slot 6 = T.\n3. Jendela ke-1 dan ke-5 berturut-turut adalah O (Nebula Orion) dan B (Bintang Betelgeuse).\n4. Pilihan **A** langsung terkonfirmasi tanpa ragu.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Galaksi Sombrero berada pada jendela ke-2 dan Pulsar Vela berada pada jendela ke-4.\n- **Pilihan C Salah:** Komet Halley berada pada jendela ke-3 dan Eksoplanet Trappist berada pada jendela ke-6.\n- **Pilihan D Salah:** Komet Halley diobservasi pada jendela ke-3, bukan jendela ke-5.\n- **Pilihan E Salah:** Bintang Betelgeuse berada pada jendela ke-5 dan dilarang pada jendela ke-1."
+    },
+    {
+      "example_id": "pu-02-05-ex15",
+      "variation_name": "Variasi 15: Penataan Posisi Tambat Kapal Kontainer Logistik Pelabuhan (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam kapal kontainer pengangkut logistik ekspor-impor (Kapal Anambas, Kapal Barito, Kapal Ciliwung, Kapal Digul, Kapal Kapuas, dan Kapal Musi — disimbolkan dengan A, B, C, D, K, dan M) bersandar pada dermaga pelabuhan peti kemas dengan 6 dermaga tambat bernomor 1 sampai 6 dari barat ke timur. Penataan dermaga tambat diatur dengan ketentuan sebagai berikut:\n1. Kapal Digul bersandar di dermaga nomor 1 ($D = 1$).\n2. Kapal Musi bersandar di dermaga nomor 3 ($M = 3$).\n3. Kapal Barito bersandar tepat di sebelah barat Kapal Ciliwung (membentuk blok kaku $[B, C]$).\n4. Kapal Kapuas bersandar di sebelah timur Kapal Musi ($M < K$), namun tidak bersandar di dermaga paling timur (nomor 6) ($K \\neq 6$).\n5. Kapal Anambas tidak bersandar di dermaga bernomor ganjil.",
+      "question_markdown": "Berdasarkan penataan tersebut, kapal kontainer yang bersandar di dermaga **nomor 4 dan nomor 5** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Kapal Barito dan Kapal Ciliwung"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Kapal Anambas dan Kapal Musi"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Kapal Kapuas dan Kapal Barito"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Kapal Ciliwung dan Kapal Barito"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Kapal Digul dan Kapal Anambas"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Tempatkan jangkar pasti: Dermaga 1 = D dan Dermaga 3 = M. Cek slot 2: dermaga 2 adalah slot genap yang terisolasi. Kapal Kapuas harus di sebelah timur M ($K > 3$), dan blok [B, C] butuh dua slot berdampingan. Siapa satu-satunya kapal yang dapat mengisi dermaga 2? Setelah dermaga 2 terisi, tentukan posisi K dan blok [B, C] pada sisa dermaga 4, 5, dan 6!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kerangka Dermaga Tambat (1 sampai 6 dari barat ke timur):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 1: Dermaga 1 = D (Kapal Digul).\n  - Ketentuan 2: Dermaga 3 = M (Kapal Musi).\n  - Susunan saat ini: $[D] [2] [M] [4] [5] [6]$.\n- **Penentuan Posisi Dermaga 2:**\n  - Dermaga yang masih kosong adalah nomor 2, 4, 5, dan 6.\n  - Kapal Kapuas wajib di timur Musi ($K > M = 3$ sesuai Ketentuan 4), sehingga $K$ tidak boleh di dermaga 2.\n  - Blok $[B, C]$ membutuhkan dua dermaga bersebelahan langsung (Ketentuan 3), sehingga tidak dapat menempati dermaga 2 yang terisolasi di antara dermaga 1 dan 3.\n  - Maka satu-satunya kapal yang dapat bersandar di dermaga 2 adalah **Kapal Anambas (A)**.\n  - Hal ini konsisten dengan Ketentuan 5 bahwa Kapal Anambas tidak di nomor ganjil (2 adalah bilangan genap).\n  - Susunan saat ini: $[D] [A] [M] [4] [5] [6]$.\n- **Penempatan Kapal Tersisa (K, B, C):**\n  - Dermaga yang tersisa adalah 4, 5, dan 6 untuk kapal K, B, dan C.\n  - Blok $[B, C]$ harus menempati dua dermaga berurutan: bisa di $[4, 5]$ atau $[5, 6]$.\n  - Ketentuan 4 menetapkan Kapal Kapuas tidak boleh di dermaga paling timur ($K \\neq 6$).\n  - Jika $[B, C]$ berada di $[4, 5]$, maka dermaga 6 terpaksa diisi oleh K, yang melanggar $K \\neq 6$.\n  - Oleh karena itu, blok $[B, C]$ wajib menempati dermaga $[5, 6]$ (**Dermaga 5 = B**, **Dermaga 6 = C**).\n  - Dengan demikian, dermaga nomor 4 wajib ditempati oleh Kapal Kapuas (**Dermaga 4 = K**).\n- **Susunan Lengkap:** Dermaga 1 (D), Dermaga 2 (A), Dermaga 3 (M), Dermaga 4 (K), Dermaga 5 (B), Dermaga 6 (C).\n- **Evaluasi Pertanyaan:** Kapal kontainer yang bersandar di dermaga nomor 4 dan nomor 5 berturut-turut adalah **Kapal Kapuas dan Kapal Barito**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Deduksi Slot Terisolasi & Larangan Ujung):**\n\n1. Kunci posisi: 1 = D dan 3 = M.\n2. Slot 2 terisolasi $\\implies$ blok $[B, C]$ tidak bisa di 2, dan K dilarang di 2 ($K > M$) $\\implies$ Dermaga 2 PASTI Anambas (A).\n3. Sisa dermaga 4, 5, 6 untuk K dan blok $[B, C]$. Karena K dilarang di 6, maka K wajib di 4, sehingga blok $[B, C]$ mengisi dermaga 5 dan 6.\n4. Dermaga 4 dan 5 berturut-turut adalah K (Kapuas) dan B (Barito).\n5. Pilihan **C** terbukti benar secara instan.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kapal Barito dan Ciliwung menempati dermaga nomor 5 dan nomor 6.\n- **Pilihan B Salah:** Kapal Anambas dan Musi menempati dermaga nomor 2 dan nomor 3.\n- **Pilihan D Salah:** Urutan posisi Barito dan Ciliwung terbalik, serta menempati dermaga 5 dan 6.\n- **Pilihan E Salah:** Kapal Digul dan Anambas menempati dermaga nomor 1 dan nomor 2."
+    },
+    {
+      "example_id": "pu-02-05-ex16",
+      "variation_name": "Variasi 16: Pembentukan Panel Dewan Ahli Biomarker Kognitif (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Tujuh peneliti neurosains dan psikologi kognitif (dr. Arya, dr. Bunga, dr. Cakra, dr. Dimas, dr. Elisa, dr. Farhan, dan dr. Gita — disimbolkan dengan A, B, C, D, E, F, dan G) diseleksi untuk membentuk sebuah panel dewan penilai riset biomarker kelelahan mental yang beranggotakan tepat 4 orang. Aturan seleksi anggota panel adalah sebagai berikut:\n1. dr. Arya dan dr. Bunga tidak dapat bekerja bersama dalam satu panel ($A \\implies \\sim B$ dan $B \\implies \\sim A$).\n2. Jika dr. Cakra dipilih, maka dr. Dimas dan dr. Elisa KEDUANYA wajib dipilih ($C \\implies (D \\land E)$).\n3. dr. Farhan hanya dapat dipilih jika dr. Bunga dipilih ($F \\implies B$).\n4. Panel wajib menyertakan setidaknya salah satu dari dr. Arya atau dr. Dimas.\n5. dr. Dimas dan dr. Gita tidak dapat berada dalam satu panel ($D \\implies \\sim G$).",
+      "question_markdown": "Jika koordinator riset menetapkan bahwa **dr. Farhan terpilih** sebagai salah satu anggota panel, manakah pernyataan berikut yang **PASTI BENAR**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "dr. Dimas dan dr. Elisa pasti terpilih sebagai anggota panel"
+        },
+        {
+          "key": "B",
+          "text_markdown": "dr. Cakra terpilih mendampingi dr. Bunga"
+        },
+        {
+          "key": "C",
+          "text_markdown": "dr. Arya dan dr. Elisa terpilih bersama-sama"
+        },
+        {
+          "key": "D",
+          "text_markdown": "dr. Gita pasti terpilih untuk melengkapi kuota panel"
+        },
+        {
+          "key": "E",
+          "text_markdown": "dr. Bunga tidak terpilih karena digantikan oleh dr. Farhan"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** F terpilih $\\implies$ B wajib terpilih (Ketentuan 3). Karena B terpilih, apa konsekuensinya terhadap A (Ketentuan 1)? Karena A gugur, siapa yang wajib masuk menurut Ketentuan 4? Setelah D masuk, periksa siapa yang gugur (Ketentuan 5) dan apakah C bisa masuk tanpa melanggar kuota 4 orang (Ketentuan 2)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kuota dan Batasan Awal:**\n  - Kuota panel = tepat 4 orang.\n  - Kondisi soal: dr. Farhan terpilih ($F$ terpilih, $1/4$ kuota terisi).\n- **Rantai Deduksi Bertingkat:**\n  - **Langkah 1 (Implikasi F):** Ketentuan 3 menyatakan $F \\implies B$. Karena $F$ terpilih, maka **dr. Bunga (B) WAJIB terpilih**.\n    - Anggota panel saat ini: $\\{F, B\\}$ (sudah 2 orang, butuh 2 orang lagi).\n  - **Langkah 2 (Eliminasi A):** Ketentuan 1 menetapkan $B \\implies \\sim A$. Karena $B$ terpilih, maka **dr. Arya (A) TIDAK BOLEH terpilih** (A gugur).\n  - **Langkah 3 (Kewajiban D):** Ketentuan 4 mewajibkan panel menyertakan minimal salah satu dari A atau D. Karena A sudah gugur, maka **dr. Dimas (D) WAJIB terpilih**.\n    - Anggota panel saat ini: $\\{F, B, D\\}$ (sudah 3 orang, butuh tepat 1 orang lagi).\n  - **Langkah 4 (Eliminasi G):** Ketentuan 5 menetapkan $D \\implies \\sim G$. Karena D terpilih, maka **dr. Gita (G) gugur**.\n  - **Langkah 5 (Evaluasi Slot Terakhir antara C atau E):**\n    - Kandidat yang belum terpilih dan belum gugur hanyalah C dan E.\n    - Andaikan dr. Cakra (C) dipilih untuk slot ke-4:\n      - Ketentuan 2 menyatakan $C \\implies (D \\land E)$. Karena C dipilih, maka D dan E keduanya wajib masuk.\n      - D memang sudah masuk, namun E juga harus ikut masuk. Hal ini akan menambah 2 orang (C dan E), sehingga susunan panel menjadi $\\{F, B, D, C, E\\} = 5$ orang, yang **melanggar kuota maksimal 4 orang**!\n      - Oleh karena itu, dr. Cakra (C) **tidak dapat dipilih**.\n    - Satu-satunya kandidat yang tersisa untuk mengisi slot ke-4 tanpa menambah anggota baru adalah **dr. Elisa (E)**.\n- **Susunan Akhir Panel yang Sah:** $\\{B, D, E, F\\}$.\n- **Konklusi:** dr. Dimas dan dr. Elisa keduanya terpilih secara niscaya dalam panel.\n- **Pernyataan Pasti Benar:** *\"dr. Dimas dan dr. Elisa pasti terpilih sebagai anggota panel\"*.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Rantai Implikasi Runtuh):**\n\n1. $F$ masuk $\\implies B$ masuk (Ket. 3).\n2. $B$ masuk $\\implies A$ gugur (Ket. 1).\n3. $A$ gugur $\\implies D$ wajib masuk (Ket. 4).\n4. $D$ masuk $\\implies G$ gugur (Ket. 5).\n5. Anggota saat ini: $\\{F, B, D\\}$ (3 orang, sisa 1 slot). C dilarang masuk karena mengajak E (akan jadi 5 orang), sehingga slot terakhir wajib diisi E.\n6. Tim terbentuk: $\\{F, B, D, E\\}$. Pernyataan bahwa D dan E pasti terpilih adalah PASTI BENAR (Pilihan **A**).",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** dr. Cakra tidak terpilih karena akan menyebabkan kuota tim membengkak menjadi 5 orang.\n- **Pilihan C Salah:** dr. Arya tidak terpilih karena saling tolak dengan dr. Bunga yang wajib mendampingi dr. Farhan.\n- **Pilihan D Salah:** dr. Gita tereliminasi oleh kehadiran dr. Dimas sesuai Ketentuan 5.\n- **Pilihan E Salah:** dr. Bunga justru wajib terpilih sebagai syarat mutlak keikutsertaan dr. Farhan."
+    },
+    {
+      "example_id": "pu-02-05-ex17",
+      "variation_name": "Variasi 17: Penjadwalan Stasiun Robotik Lini Perakitan Baterai EV (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam stasiun robotik manufaktur baterai kendaraan listrik (Stasiun P: Perakitan Modul Sel, Stasiun Q: Pengelasan Busbar Laser, Stasiun R: Aplikasi Antarmuka Termal, Stasiun S: Pemasangan Modul BMS, Stasiun T: Pengujian Beban Voltase, dan Stasiun U: Penyegelan Casing Pack) disusun berderet dalam lini perakitan dari tahap 1 hingga tahap 6. Aturan urutan stasiun perakitan adalah sebagai berikut:\n1. Stasiun P dijalankan pada tahap ke-1 ($P = 1$).\n2. Stasiun T dijalankan tepat satu tahap sebelum Stasiun U (membentuk blok berdampingan kaku $[T, U]$).\n3. Stasiun Q dijalankan sebelum Stasiun R ($Q < R$).\n4. Stasiun S tidak dijalankan pada tahap ke-2 maupun tahap ke-6 ($S \\neq 2, S \\neq 6$).\n5. Stasiun R dijalankan pada tahap ke-4 ($R = 4$).",
+      "question_markdown": "Berdasarkan aturan urutan tersebut, stasiun perakitan yang berada pada **tahap ke-2 dan tahap ke-5** berturut-turut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Stasiun S dan Stasiun T"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Stasiun Q dan Stasiun T"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Stasiun Q dan Stasiun U"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Stasiun S dan Stasiun U"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Stasiun T dan Stasiun R"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasang elemen jangkar pasti: Tahap 1 = P dan Tahap 4 = R. Blok berdampingan [T, U] membutuhkan dua tahap berurutan: uji apakah [T, U] bisa di tahap [2, 3] dengan memperhatikan bahwa Q harus sebelum R (Q < 4)! Di manakah blok [T, U] wajib diletakkan? Setelah itu, periksa larangan untuk S di tahap 2!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kerangka Tahap Perakitan (1 sampai 6):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 1: Tahap 1 = P.\n  - Ketentuan 5: Tahap 4 = R.\n  - Susunan saat ini: $[P] [2] [3] [R] [5] [6]$.\n- **Uji Posisi Blok Berdampingan $[T, U]$ (Ketentuan 2):**\n  - Blok $[T, U]$ membutuhkan dua slot berurutan langsung yang kosong.\n  - Slot kosong yang tersedia adalah pasangan $[2, 3]$ atau pasangan $[5, 6]$.\n  - **Uji Kemungkinan 1: Blok $[T, U]$ menempati $[2, 3]$**\n    - Jika Tahap 2 = T dan Tahap 3 = U, maka slot yang tersisa sebelum tahap 4 (R) sudah habis terisi.\n    - Ketentuan 3 mensyaratkan $Q < R$, artinya Stasiun Q harus berada sebelum tahap 4 (R). Karena tahap 1 terisi P, dan tahap 2-3 terisi T dan U, tidak ada slot tersisa untuk Q sebelum tahap 4!\n    - Oleh karena itu, Kemungkinan 1 mustahil secara logika.\n  - **Kemungkinan 2: Blok $[T, U]$ menempati $[5, 6]$**\n    - Maka secara mutlak: **Tahap 5 = T** dan **Tahap 6 = U**.\n- **Penempatan Stasiun Tersisa (Q dan S):**\n  - Slot yang masih kosong adalah Tahap 2 dan Tahap 3.\n  - Stasiun yang belum ditempatkan adalah Q dan S.\n  - Ketentuan 4 menyatakan Stasiun S tidak dijalankan pada tahap ke-2 ($S \\neq 2$).\n  - Oleh karena itu, Stasiun S wajib menempati **Tahap 3 = S**.\n  - Maka Stasiun Q wajib menempati **Tahap 2 = Q**.\n  - Periksa Ketentuan 3: $Q < R$ ($2 < 4$, terpenuhi!).\n- **Susunan Lengkap:** Tahap 1 (P), Tahap 2 (Q), Tahap 3 (S), Tahap 4 (R), Tahap 5 (T), Tahap 6 (U).\n- **Evaluasi Pertanyaan:** Stasiun perakitan yang berada pada tahap ke-2 dan tahap ke-5 berturut-turut adalah **Stasiun Q dan Stasiun T**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Blok Bersyarat):**\n\n1. Kunci posisi: Tahap 1 = P dan Tahap 4 = R.\n2. Karena $Q < R$, maka Q harus berada di tahap 2 atau 3. Akibatnya, blok $[T, U]$ tidak mungkin mengisi $[2, 3]$, melainkan wajib mengisi $[5, 6] \\implies$ Tahap 5 = T, Tahap 6 = U.\n3. Sisa tahap 2 dan 3 untuk Q dan S. Karena $S \\neq 2$, maka Tahap 3 = S dan Tahap 2 = Q.\n4. Tahap ke-2 dan ke-5 berturut-turut adalah Stasiun Q dan Stasiun T (Pilihan **B**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Stasiun S berada pada tahap ke-3, bukan tahap ke-2.\n- **Pilihan C Salah:** Stasiun U berada pada tahap ke-6, bukan tahap ke-5.\n- **Pilihan D Salah:** Stasiun S di tahap ke-3 dan Stasiun U di tahap ke-6.\n- **Pilihan E Salah:** Stasiun T berada pada tahap ke-5 dan Stasiun R berada pada tahap ke-4."
+    },
+    {
+      "example_id": "pu-02-05-ex18",
+      "variation_name": "Variasi 18: Penataan Posisi Meja Bundar Simposium Pelestarian Bahasa Daerah (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Enam pakar linguistik dan filologi naskah kuno nusantara (Prof. Danu, Dr. Endah, Prof. Fajar, Dr. Galih, Prof. Hani, dan Dr. Irawan — disimbolkan dengan D, E, F, G, H, dan I) duduk melingkari sebuah meja bundar dengan 6 kursi bernomor 1 sampai 6 secara berurutan searah jarum jam untuk merumuskan revitalisasi dialek lokal nusantara. Kursi yang saling berhadapan langsung memiliki selisih tepat 3 nomor (kursi 1 berhadapan dengan kursi 4, kursi 2 berhadapan dengan 5, dan kursi 3 berhadapan dengan 6). Aturan posisi duduk simposium adalah sebagai berikut:\n1. Prof. Danu (D) duduk berhadapan langsung dengan Dr. Galih (G).\n2. Dr. Endah (E) duduk tepat di sebelah kanan Prof. Danu (dilihat dari arah menghadap pusat meja).\n3. Prof. Fajar (F) tidak duduk bersebelahan langsung dengan Dr. Endah (E) maupun Dr. Galih (G).\n4. Prof. Hani (H) duduk berhadapan langsung dengan Prof. Fajar (F).",
+      "question_markdown": "Berdasarkan ketentuan penataan posisi tersebut, pakar yang duduk **tepat di sebelah kiri Dr. Galih** (dilihat dari arah menghadap pusat meja) adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Dr. Endah"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Prof. Fajar"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Dr. Irawan"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Prof. Danu"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Prof. Hani"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Tetapkan Kursi 1 = Prof. Danu (D). Maka Kursi 4 = Dr. Galih (G). Di sebelah kanan D (menghadap pusat meja pada susunan searah jarum jam) adalah Kursi 6 = Dr. Endah (E). Cari posisi Prof. Fajar: F dilarang bersebelahan dengan E (bukan di kursi 5) dan dilarang bersebelahan dengan G (bukan di kursi 3 atau 5). Kursi mana yang tersisa untuk F? Setelah itu, periksa posisi Prof. Hani yang berhadapan dengan F!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Meja Bundar 6 Kursi:**\n  - Enam kursi disusun melingkar searah jarum jam: 1, 2, 3, 4, 5, 6.\n  - Pasangan kursi yang saling berhadapan langsung: (1, 4), (2, 5), dan (3, 6).\n  - Tanpa mengurangi keumuman, tetapkan **Kursi 1 = Prof. Danu (D)**.\n- **Penempatan Elemen Jangkar:**\n  - Ketentuan 1: Prof. Danu berhadapan langsung dengan Dr. Galih $\\implies$ **Kursi 4 = Dr. Galih (G)**.\n  - Ketentuan 2: Dr. Endah duduk tepat di sebelah kanan Prof. Danu (dilihat dari arah menghadap pusat meja). Seseorang yang duduk di Kursi 1 menghadap ke pusat meja memiliki sisi kanan mengarah ke Kursi 6. Maka: **Kursi 6 = Dr. Endah (E)**.\n- **Penempatan Prof. Fajar (F):**\n  - Kursi yang masih kosong adalah Kursi 2, Kursi 3, dan Kursi 5.\n  - Ketentuan 3 menyatakan:\n    - F tidak bersebelahan langsung dengan Dr. Endah (Kursi 6). Kursi yang bersebelahan dengan Kursi 6 adalah Kursi 1 dan Kursi 5 $\\implies F \\neq 5$.\n    - F tidak bersebelahan langsung dengan Dr. Galih (Kursi 4). Kursi yang bersebelahan dengan Kursi 4 adalah Kursi 3 dan Kursi 5 $\\implies F \\neq 3$ dan $F \\neq 5$.\n  - Karena Kursi 3 dan Kursi 5 terlarang untuk F, maka satu-satunya kursi yang dapat ditempati oleh Prof. Fajar adalah **Kursi 2 = Prof. Fajar (F)**.\n- **Penempatan Prof. Hani (H) dan Dr. Irawan (I):**\n  - Ketentuan 4: Prof. Hani duduk berhadapan langsung dengan Prof. Fajar. Karena Prof. Fajar di Kursi 2, maka pasangannya di seberang meja adalah **Kursi 5 = Prof. Hani (H)**.\n  - Satu-satunya kursi tersisa adalah Kursi 3, yang otomatis ditempati oleh **Kursi 3 = Dr. Irawan (I)**.\n- **Susunan Meja Bundar Lengkap (Searah Jarum Jam):**\n  - Kursi 1: Prof. Danu (D)\n  - Kursi 2: Prof. Fajar (F)\n  - Kursi 3: Dr. Irawan (I)\n  - Kursi 4: Dr. Galih (G)\n  - Kursi 5: Prof. Hani (H)\n  - Kursi 6: Dr. Endah (E)\n- **Evaluasi Posisi di Sebelah Kiri Dr. Galih:**\n  - Dr. Galih duduk di Kursi 4 menghadap ke pusat meja.\n  - Dilihat dari arah dirinya menghadap pusat meja, lengan kirinya mengarah ke Kursi 5.\n  - Di Kursi 5 duduk **Prof. Hani**.\n  - Maka pakar yang duduk tepat di sebelah kiri Dr. Galih adalah **Prof. Hani**.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Deduksi Kursi Larangan Tetangga):**\n\n1. Kunci posisi: Kursi 1 = D, Kursi 4 = G, Kursi 6 = E (kanan D).\n2. Sisa kursi kosong: 2, 3, 5.\n3. F dilarang di 5 (tetangga E) dan dilarang di 3 dan 5 (tetangga G) $\\implies$ F wajib di Kursi 2.\n4. Karena H berhadapan dengan F di Kursi 2, maka H wajib di Kursi 5.\n5. Kursi 5 adalah kursi tepat di sebelah kiri G (Kursi 4). Jadi di sebelah kiri G adalah Prof. Hani.\n6. Pilihan **E** langsung terbukti benar.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Dr. Endah duduk di Kursi 6, bersebelahan dengan Prof. Danu dan Prof. Hani, bukan di sebelah kiri Dr. Galih.\n- **Pilihan B Salah:** Prof. Fajar duduk di Kursi 2, bersebelahan dengan Prof. Danu dan Dr. Irawan.\n- **Pilihan C Salah:** Dr. Irawan duduk di Kursi 3, yaitu tepat di sebelah kanan Dr. Galih, bukan di sebelah kirinya.\n- **Pilihan D Salah:** Prof. Danu duduk di Kursi 1, berhadapan langsung di seberang meja dengan Dr. Galih."
     }
   ]
 };

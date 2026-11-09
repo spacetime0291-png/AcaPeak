@@ -15,7 +15,7 @@ export const MATERIAL_PU_03_01: Material = {
       "Pola Operasi Kombinasi dan Aturan Khusus (HOTS)"
     ],
     "requires_svg": false,
-    "updated_at": "2026-11-08"
+    "updated_at": "2026-11-09"
   },
   "content": {
     "tactical_overview": "Pola bilangan dan deret menguji ketajaman Anda dalam membaca keteraturan matematis di balik barisan angka. Soal tipe ini selalu hadir di UTBK SNBT dengan tujuan menguji kecepatan observasi numerik Anda di bawah tekanan waktu. Kunci keberhasilan bukan menebak-nebak rumus rumit, melainkan mengenali tanda-tanda visual barisan: jika angka naik secara bertahap dan teratur maka curigai pola selisih penjumlahan bertingkat, jika angka melompat sangat cepat maka curigai perkalian atau kuadrat, dan jika angka naik-turun secara bergantian maka segera pisahkan barisan menjadi dua larik berseling independen.",
@@ -138,6 +138,531 @@ export const MATERIAL_PU_03_01: Material = {
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Operasi Suku:**\n  - $U_2 = 4 \\times 2 - 1 = 7$\n  - $U_3 = 7 \\times 2 - 2 = 12$\n  - $U_4 = 12 \\times 2 - 3 = 21$\n  - $U_5 = 21 \\times 2 - 4 = 38$\n  - $U_6 = 38 \\times 2 - 5 = 71$\n- **Rumusan Pola:** Setiap suku dikalikan 2 lalu dikurangi bilangan bulat yang terus bertambah 1.\n- **Perhitungan X:**\n  - $X = 71 \\times 2 - 6 = 142 - 6 = 136$.\n\n**Jawaban: C**",
       "quick_trick_markdown": "**Cara Cepat (Perkalian 2 minus n):**\n\n1. Pola: $\\times 2 - 1, \\times 2 - 2, \\times 2 - 3, \\times 2 - 4, \\times 2 - 5$.\n2. Suku berikutnya: $71 \\times 2 - 6 = 142 - 6 = 136$.\n3. Jawaban langsung **C**.",
       "why_others_are_wrong_markdown": "- **Pilihan A & B Salah:** Menghitung 142 - 10 atau 142 - 8 karena salah mengasumsikan pengurang genap.\n- **Pilihan D Salah:** Menghitung 142 - 4 karena lupa menaikkan pengurang menjadi 6.\n- **Pilihan E Salah:** 142 hanya hasil kali tanpa pengurangan."
+    },
+    {
+      "example_id": "pu-03-01-ex4",
+      "variation_name": "Variasi 1: Deret Selisih Kuadrat Akumulasi Biomassa (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data pemantauan akumulasi biomassa fitoplankton pesisir ($g/m^3$) di stasiun oseanografi tercatat dalam barisan bilangan berkala berikut:\n$3, \\; 7, \\; 16, \\; 32, \\; 57, \\; X, \\; Y$",
+      "question_markdown": "Nilai dari **X** dan **Y** berturut-turut yang paling tepat melengkapi barisan data tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "89 dan 138"
+        },
+        {
+          "key": "B",
+          "text_markdown": "93 dan 142"
+        },
+        {
+          "key": "C",
+          "text_markdown": "93 dan 140"
+        },
+        {
+          "key": "D",
+          "text_markdown": "92 dan 141"
+        },
+        {
+          "key": "E",
+          "text_markdown": "95 dan 144"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung selisih di antara dua suku yang berdekatan: $7 - 3 = 4$, $16 - 7 = 9$, $32 - 16 = 16$, $57 - 32 = 25$. Kenali bentuk bilangan selisih tersebut ($4, 9, 16, 25$) sebagai barisan bilangan kuadrat!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Selisih Antarsuku ($U_{n+1} - U_n$):**\n  - $U_2 - U_1 = 7 - 3 = 4 = 2^2$\n  - $U_3 - U_2 = 16 - 7 = 9 = 3^2$\n  - $U_4 - U_3 = 32 - 16 = 16 = 4^2$\n  - $U_5 - U_4 = 57 - 32 = 25 = 5^2$\n- **Identifikasi Pola Kuadrat Bertingkat:**\n  - Selisih antarsuku membentuk barisan bilangan kuadrat sempurna: $2^2, \\; 3^2, \\; 4^2, \\; 5^2, \\dots$\n- **Perhitungan Nilai X dan Y:**\n  - Selisih berikutnya untuk mendapatkan suku ke-6 ($X$) adalah $6^2 = 36$:\n    $$X = 57 + 36 = 93$$\n  - Selisih berikutnya lagi untuk mendapatkan suku ke-7 ($Y$) adalah $7^2 = 49$:\n    $$Y = 93 + 49 = 142$$\n- **Konklusi:** Nilai $X$ dan $Y$ berturut-turut adalah **93 dan 142**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Pola Bilangan Kuadrat):**\n\n1. Amati pertambahan antarsuku: $+4 (+2^2), \\; +9 (+3^2), \\; +16 (+4^2), \\; +25 (+5^2)$.\n2. Langkah selanjutnya pasti $+36 (+6^2) \\implies 57 + 36 = 93$ (Opsi tersisa B dan C).\n3. Langkah berikutnya $+49 (+7^2) \\implies 93 + 49 = 142$.\n4. Jawaban tepat langsung tertuju pada pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $X = 89$ karena salah menambahkan $57 + 32$ bukan $57 + 36$.\n- **Pilihan C Salah:** Nilai $X = 93$ sudah tepat, namun $Y$ keliru dihitung 140 karena salah menjumlahkan $93 + 47$.\n- **Pilihan D Salah:** Menghitung $X = 92$ akibat kekeliruan perhitungan aritmetika dasar satu angka.\n- **Pilihan E Salah:** Menghitung $X = 95$ karena mengasumsikan selisih $+38$ bukan bilangan kuadrat $6^2 = 36$."
+    },
+    {
+      "example_id": "pu-03-01-ex5",
+      "variation_name": "Variasi 2: Deret Tiga Larik Melompat Indeks Logistik (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data indeks volume perdagangan komoditas logistik pangan tercatat dalam barisan campuran sebagai berikut:\n$2, \\; 50, \\; 7, \\; 6, \\; 45, \\; 11, \\; 18, \\; 40, \\; 15, \\; X, \\; Y$",
+      "question_markdown": "Nilai dari **X** dan **Y** berturut-turut yang paling tepat melengkapi barisan data tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "54 dan 32"
+        },
+        {
+          "key": "B",
+          "text_markdown": "48 dan 35"
+        },
+        {
+          "key": "C",
+          "text_markdown": "54 dan 36"
+        },
+        {
+          "key": "D",
+          "text_markdown": "54 dan 35"
+        },
+        {
+          "key": "E",
+          "text_markdown": "52 dan 35"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Barisan berfluktuasi secara ritmis dengan 3 kelompok nilai yang berbeda. Pisahkan barisan menjadi 3 larik independen dengan melompat setiap 3 suku: Larik 1 (suku 1, 4, 7, 10), Larik 2 (suku 2, 5, 8, 11), dan Larik 3 (suku 3, 6, 9)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Karakteristik Deret:**\n  - Angka mengalami fluktuasi naik-turun berkala dengan periode kelipatan 3: $2 \\to 50 \\to 7 \\to 6 \\to 45 \\to 11 \\to 18 \\to 40 \\to 15 \\to X \\to Y$.\n  - Struktur ini merupakan barisan **3 larik berseling** (*3-track interleaved sequence*).\n- **Pemisahan Berdasarkan Tiga Larik Independen:**\n  - **Larik 1 (Suku ke-1, 4, 7, 10):**\n    $$2, \\; 6, \\; 18, \\; X$$\n    Pola geometri dengan rasio $\\times 3$ ($2 \\times 3 = 6$, $6 \\times 3 = 18$).\n    Maka suku ke-10 adalah: $$X = 18 \\times 3 = 54$$\n  - **Larik 2 (Suku ke-2, 5, 8, 11):**\n    $$50, \\; 45, \\; 40, \\; Y$$\n    Pola aritmetika dengan beda konstan $-5$ ($50 - 5 = 45$, $45 - 5 = 40$).\n    Maka suku ke-11 adalah: $$Y = 40 - 5 = 35$$\n  - **Larik 3 (Suku ke-3, 6, 9):**\n    $$7, \\; 11, \\; 15$$\n    Pola aritmetika dengan beda konstan $+4$ ($7 + 4 = 11$, $11 + 4 = 15$).\n- **Konklusi Pasangan (X, Y):** Nilai $X$ dan $Y$ berturut-turut adalah **54 dan 35**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Tiga Jalur Melompat 3 Suku):**\n\n1. Suku $X$ ada di posisi ke-10 $\\to$ terhubung ke suku 1, 4, 7: $2 \\xrightarrow{\\times 3} 6 \\xrightarrow{\\times 3} 18 \\xrightarrow{\\times 3} X = 54$.\n2. Suku $Y$ ada di posisi ke-11 $\\to$ terhubung ke suku 2, 5, 8: $50 \\xrightarrow{-5} 45 \\xrightarrow{-5} 40 \\xrightarrow{-5} Y = 35$.\n3. Dalam 15 detik, pasangan $(54, 35)$ langsung ditemukan pada pilihan **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Nilai $Y = 32$ keliru mengurangkan 8 bukan 5 pada larik kedua.\n- **Pilihan B Salah:** Nilai $X = 48$ keliru mengasumsikan penambahan bertingkat bukan rasio geometri perkalian 3 ($18 \\times 3 = 54$).\n- **Pilihan C Salah:** Nilai $X = 54$ benar, namun $Y = 36$ salah mengurangkan 4 bukan 5.\n- **Pilihan E Salah:** Nilai $X = 52$ salah menghitung hasil kali $18 \\times 3$."
+    },
+    {
+      "example_id": "pu-03-01-ex6",
+      "variation_name": "Variasi 3: Pola Operasi Pengali Konstan Pengurang Ganjil (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Data skor latensi pemulihan atensi kognitif (milidetik) pada uji neuropsikologi membentuk barisan angka teratur sebagai berikut:\n$2, \\; 5, \\; 12, \\; 31, \\; 86, \\; X$",
+      "question_markdown": "Bilangan yang **paling tepat** menggantikan **X** sesuai aturan pembentukan deret tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "245"
+        },
+        {
+          "key": "B",
+          "text_markdown": "247"
+        },
+        {
+          "key": "C",
+          "text_markdown": "249"
+        },
+        {
+          "key": "D",
+          "text_markdown": "251"
+        },
+        {
+          "key": "E",
+          "text_markdown": "258"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Amati relasi antarsuku yang berdekatan menggunakan operasi perkalian 3: $2 \\times 3 = 6$ (dikurangi 1 jadi 5), $5 \\times 3 = 15$ (dikurangi 3 jadi 12), $12 \\times 3 = 36$ (dikurangi 5 jadi 31). Perhatikan deret angka pengurangnya!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Operasi Relasi Antarsuku:**\n  - $U_1 = 2$\n  - $U_2 = 2 \\times 3 - 1 = 6 - 1 = 5$\n  - $U_3 = 5 \\times 3 - 3 = 15 - 3 = 12$\n  - $U_4 = 12 \\times 3 - 5 = 36 - 5 = 31$\n  - $U_5 = 31 \\times 3 - 7 = 93 - 7 = 86$\n- **Identifikasi Pola Kombinasi Berulang:**\n  - Setiap suku diperoleh dengan mengalikan suku sebelumnya dengan 3, kemudian dikurangi bilangan ganjil yang bertambah secara berurutan: $-1, \\; -3, \\; -5, \\; -7, \\dots$\n  - Rumus rekursif suku ke-$n$: $U_n = 3 \\cdot U_{n-1} - (2n - 3)$ untuk $n \\ge 2$.\n- **Perhitungan Nilai Suku ke-6 (X):**\n  - Bilangan ganjil berikutnya setelah 7 adalah 9.\n  - Maka untuk menghitung $X$:\n    $$X = 86 \\times 3 - 9 = 258 - 9 = 249$$\n- **Konklusi:** Bilangan yang paling tepat menggantikan $X$ adalah **249**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Perkalian 3 minus Ganjil Berurutan):**\n\n1. Pola pengurang: $\\times 3 - 1, \\; \\times 3 - 3, \\; \\times 3 - 5, \\; \\times 3 - 7$.\n2. Operasi untuk $X$ pasti: $\\times 3 - 9$.\n3. Hitung: $86 \\times 3 = 258 \\implies 258 - 9 = 249$.\n4. Jawaban **C** langsung terbukti akurat.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $258 - 13$ karena keliru menyangka pengurangnya adalah bilangan prima berurutan.\n- **Pilihan B Salah:** Menghitung $258 - 11$ karena melompati angka ganjil 9.\n- **Pilihan D Salah:** Menghitung $258 - 7$ karena lupa menaikkan angka pengurang dari suku sebelumnya.\n- **Pilihan E Salah:** Angka 258 murni hasil kali $86 \\times 3$ tanpa melakukan operasi pengurangan."
+    },
+    {
+      "example_id": "pu-03-01-ex7",
+      "variation_name": "Variasi 4: Deret Pecahan Pola Pembilang dan Penyebut Terpisah (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data rasio efisiensi throughput paket data transmisi semikonduktor dinyatakan dalam barisan bilangan pecahan sebagai berikut:\n$\\frac{3}{4}, \\; \\frac{6}{9}, \\; \\frac{11}{16}, \\; \\frac{18}{25}, \\; \\frac{27}{36}, \\; X$",
+      "question_markdown": "Pecahan yang **paling tepat** melengkapi barisan data **X** tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "$\\frac{38}{49}$"
+        },
+        {
+          "key": "B",
+          "text_markdown": "$\\frac{36}{49}$"
+        },
+        {
+          "key": "C",
+          "text_markdown": "$\\frac{38}{48}$"
+        },
+        {
+          "key": "D",
+          "text_markdown": "$\\frac{39}{50}$"
+        },
+        {
+          "key": "E",
+          "text_markdown": "$\\frac{37}{49}$"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan menyederhanakan pecahan! Analisis barisan pembilang (angka atas: 3, 6, 11, 18, 27) dan barisan penyebut (angka bawah: 4, 9, 16, 25, 36) secara terpisah!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Barisan Pembilang ($P_n$):**\n  - Barisan: $3, \\; 6, \\; 11, \\; 18, \\; 27, \\; P_6$\n  - Selisih antarsuku pembilang:\n    - $6 - 3 = +3$\n    - $11 - 6 = +5$\n    - $18 - 11 = +7$\n    - $27 - 18 = +9$\n  - Selisih pembilang membentuk barisan bilangan ganjil bertambah $+2$.\n  - Maka selisih berikutnya adalah $+11$:\n    $$P_6 = 27 + 11 = 38$$\n- **Analisis Barisan Penyebut ($Q_n$):**\n  - Barisan: $4, \\; 9, \\; 16, \\; 25, \\; 36, \\; Q_6$\n  - Perhatikan bahwa setiap penyebut adalah bilangan kuadrat berurutan mulai dari $2^2$:\n    - $4 = 2^2$\n    - $9 = 3^2$\n    - $16 = 4^2$\n    - $25 = 5^2$\n    - $36 = 6^2$\n  - Maka suku ke-6 penyebut adalah $7^2$:\n    $$Q_6 = 7^2 = 49$$\n- **Konklusi Pecahan X:**\n  - Nilai pecahan suku ke-6 adalah $\\frac{P_6}{Q_6} = \\frac{38}{49}$.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Pecah Pembilang dan Penyebut):**\n\n1. Pembilang: $+3, +5, +7, +9 \\implies 27 + 11 = 38$.\n2. Penyebut: $2^2, 3^2, 4^2, 5^2, 6^2 \\implies 7^2 = 49$.\n3. Gabungkan langsung: $\\frac{38}{49}$.\n4. Jawaban **A** langsung diperoleh tanpa ragu.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Pembilang 36 keliru menambahkan 9 bukan 11.\n- **Pilihan C Salah:** Penyebut 48 keliru menganggap pola pertambahan $+12$ bukan kuadrat sempurna $7^2 = 49$.\n- **Pilihan D Salah:** Pembilang 39 dan penyebut 50 tidak konsisten dengan pola selisih ganjil dan kuadrat.\n- **Pilihan E Salah:** Pembilang 37 keliru mengurangkan 1 angka pada hasil penjumlahan $27 + 11$."
+    },
+    {
+      "example_id": "pu-03-01-ex8",
+      "variation_name": "Variasi 5: Deret Aritmetika Bertingkat Dua Penomoran Relief Adat (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Data kode urutan inventarisasi penomoran panel relief cagar budaya candi kuno membentuk barisan bilangan bertingkat sebagai berikut:\n$1, \\; 4, \\; 11, \\; 23, \\; 41, \\; 66, \\; X$",
+      "question_markdown": "Bilangan yang **paling tepat** melengkapi nilai **X** pada barisan data tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "91"
+        },
+        {
+          "key": "B",
+          "text_markdown": "94"
+        },
+        {
+          "key": "C",
+          "text_markdown": "96"
+        },
+        {
+          "key": "D",
+          "text_markdown": "97"
+        },
+        {
+          "key": "E",
+          "text_markdown": "99"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung selisih tingkat pertama antarsuku: dari 1 ke 4 (+3), 4 ke 11 (+7), 11 ke 23 (+12), 23 ke 41 (+18), 41 ke 66 (+25). Kemudian periksa selisih tingkat kedua dari deret selisih tersebut (3, 7, 12, 18, 25)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Selisih Tingkat Pertama ($D_1$):**\n  - $U_2 - U_1 = 4 - 1 = +3$\n  - $U_3 - U_2 = 11 - 4 = +7$\n  - $U_4 - U_3 = 23 - 11 = +12$\n  - $U_5 - U_4 = 41 - 23 = +18$\n  - $U_6 - U_5 = 66 - 41 = +25$\n  - Deret selisih tingkat 1 adalah: $3, \\; 7, \\; 12, \\; 18, \\; 25, \\dots$\n- **Analisis Selisih Tingkat Kedua ($D_2$):**\n  - $7 - 3 = +4$\n  - $12 - 7 = +5$\n  - $18 - 12 = +6$\n  - $25 - 18 = +7$\n  - Selisih tingkat kedua bertambah konstan $+1$ ($+4, \\; +5, \\; +6, \\; +7, \\dots$).\n- **Rekonstruksi Nilai Suku ke-7 (X):**\n  - Beda tingkat kedua berikutnya adalah $+8$.\n  - Maka selisih tingkat pertama berikutnya adalah:\n    $$D_{1(6)} = 25 + 8 = 33$$\n  - Nilai $X$ pada suku ke-7 adalah:\n    $$X = U_6 + D_{1(6)} = 66 + 33 = 99$$\n- **Konklusi:** Bilangan yang paling tepat melengkapi nilai $X$ adalah **99**.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Tingkat Dua Bertambah 1):**\n\n1. Selisih tingkat 1: $+3, \\; +7, \\; +12, \\; +18, \\; +25$.\n2. Selisih tingkat 2: $+4, \\; +5, \\; +6, \\; +7$.\n3. Langkah berikutnya: selisih tingkat 2 adalah $+8 \\implies$ selisih tingkat 1 menjadi $25 + 8 = 33$.\n4. Suku berikutnya: $66 + 33 = 99$.\n5. Jawaban **E** langsung terbukti pasti.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung 66 + 25 = 91 karena tidak menaikkan selisih tingkat kedua.\n- **Pilihan B Salah:** Menghitung 66 + 28 = 94 karena salah menjumlahkan selisih tingkat kedua dengan angka 3 bukan 8.\n- **Pilihan C Salah:** Menghitung 66 + 30 = 96 akibat keliru mengasumsikan selisih tingkat kedua tetap di +5.\n- **Pilihan D Salah:** Menghitung 66 + 31 = 97 karena salah mengira selisih tingkat kedua adalah bilangan prima (+7 lalu +6)."
+    },
+    {
+      "example_id": "pu-03-01-ex9",
+      "variation_name": "Variasi 9: Deret Aritmetika Bertingkat Tiga Laju Penyerapan Karbon Hutan Mangrove (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Data pemantauan laju serapan karbon organik sedimen tanah gambut pesisir ($ton/ha$) yang direstorasi selama 6 tahun berturut-turut membentuk barisan bilangan:\n$2, \\; 9, \\; 28, \\; 65, \\; 126, \\; X$",
+      "question_markdown": "Nilai yang **paling tepat** menggantikan **X** pada barisan data serapan karbon tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "215"
+        },
+        {
+          "key": "B",
+          "text_markdown": "217"
+        },
+        {
+          "key": "C",
+          "text_markdown": "219"
+        },
+        {
+          "key": "D",
+          "text_markdown": "221"
+        },
+        {
+          "key": "E",
+          "text_markdown": "225"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan hubungan setiap suku terhadap bilangan kubik: $2 = 1^3 + 1$, $9 = 2^3 + 1$, $28 = 3^3 + 1$, $65 = 4^3 + 1$, $126 = 5^3 + 1$. Pola kubik ditambah 1 langsung mengunci suku berikutnya!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Pola Berbasis Pangkat Tiga:**\n  - $U_1 = 1^3 + 1 = 1 + 1 = 2$\n  - $U_2 = 2^3 + 1 = 8 + 1 = 9$\n  - $U_3 = 3^3 + 1 = 27 + 1 = 28$\n  - $U_4 = 4^3 + 1 = 64 + 1 = 65$\n  - $U_5 = 5^3 + 1 = 125 + 1 = 126$\n- **Verifikasi Selisih Bertingkat Tiga:**\n  - *Tingkat 1 ($D_1$):* $7, \\; 19, \\; 37, \\; 61$\n  - *Tingkat 2 ($D_2$):* $12, \\; 18, \\; 24$ (bertambah $+6$)\n  - *Tingkat 3 ($D_3$):* $+6$ (konstan)\n  - Beda $D_2$ berikutnya $= 24 + 6 = 30$.\n  - Beda $D_1$ berikutnya $= 61 + 30 = 91$.\n  - Maka suku ke-6 adalah: $X = 126 + 91 = 217$.\n- **Perhitungan Langsung Menggunakan Rumus Pola:**\n  $$X = 6^3 + 1 = 216 + 1 = 217$$\n- **Konklusi:** Nilai yang paling tepat menggantikan $X$ adalah **217**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Pola $n^3 + 1$):**\n\n1. Kenali pola kubik: $1^3+1=2, \\; 2^3+1=9, \\; 3^3+1=28, \\; 4^3+1=65, \\; 5^3+1=126$.\n2. Suku ke-6 pasti: $6^3 + 1 = 216 + 1 = 217$.\n3. Jawaban **B** langsung diperoleh dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $6^3 - 1 = 215$ (keliru menggunakan operasi pengurangan).\n- **Pilihan C Salah:** Menghitung $216 + 3 = 219$ karena salah mengasumsikan penambahan bertambah ganjil.\n- **Pilihan D Salah:** Menghitung 221 akibat kekeliruan perhitungan selisih bertingkat.\n- **Pilihan E Salah:** Menghitung $6^3 + 9 = 225$ yang tidak konsisten dengan pola $+1$ konstan."
+    },
+    {
+      "example_id": "pu-03-01-ex10",
+      "variation_name": "Variasi 10: Deret Dua Larik Berseling Indeks Omzet UMKM Ekspor (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data fluktuasi indeks volume ekspor produk UMKM kerajinan rotan ke pasar regional dicatat dalam barisan bulanan berikut:\n$5, \\; 48, \\; 9, \\; 44, \\; 17, \\; 38, \\; 33, \\; 30, \\; X, \\; Y$",
+      "question_markdown": "Nilai dari **X** dan **Y** berturut-turut yang paling tepat melengkapi barisan data tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "65 dan 22"
+        },
+        {
+          "key": "B",
+          "text_markdown": "63 dan 20"
+        },
+        {
+          "key": "C",
+          "text_markdown": "65 dan 20"
+        },
+        {
+          "key": "D",
+          "text_markdown": "67 dan 18"
+        },
+        {
+          "key": "E",
+          "text_markdown": "64 dan 20"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Barisan berfluktuasi naik-turun. Pisahkan barisan menjadi dua larik: Larik 1 pada suku posisi ganjil ($5, 9, 17, 33, X$) dan Larik 2 pada suku posisi genap ($48, 44, 38, 30, Y$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Pemisahan Deret Dua Larik Berseling:**\n  - Barisan mengalami fluktuasi periodik, sehingga dipisahkan menjadi dua larik independen.\n- **Larik 1 (Suku Posisi Ganjil: $U_1, U_3, U_5, U_7, U_9 = X$):**\n  - Barisan: $5, \\; 9, \\; 17, \\; 33, \\; X$\n  - Analisis selisih pertambahan antarsuku:\n    - $9 - 5 = +4 = 2^2$\n    - $17 - 9 = +8 = 2^3$\n    - $33 - 17 = +16 = 2^4$\n  - Selisih selalu berlipat ganda (rasio $\\times 2$).\n  - Maka selisih berikutnya adalah $+32$ ($2^5$):\n    $$X = 33 + 32 = 65$$\n- **Larik 2 (Suku Posisi Genap: $U_2, U_4, U_6, U_8, U_{10} = Y$):**\n  - Barisan: $48, \\; 44, \\; 38, \\; 30, \\; Y$\n  - Analisis selisih pengurangan antarsuku:\n    - $44 - 48 = -4$\n    - $38 - 44 = -6$\n    - $30 - 38 = -8$\n  - Pengurangan bilangan genap negatif bertambah secara teratur ($-4, \\; -6, \\; -8$).\n  - Maka pengurangan berikutnya adalah $-10$:\n    $$Y = 30 - 10 = 20$$\n- **Konklusi:** Nilai $X$ dan $Y$ berturut-turut adalah **65 dan 20**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Dua Jalur Terpisah):**\n\n1. Jalur Ganjil ($X$): $5 \\xrightarrow{+4} 9 \\xrightarrow{+8} 17 \\xrightarrow{+16} 33 \\xrightarrow{+32} X = 65$.\n2. Jalur Genap ($Y$): $48 \\xrightarrow{-4} 44 \\xrightarrow{-6} 38 \\xrightarrow{-8} 30 \\xrightarrow{-10} Y = 20$.\n3. Pasangan $(65, 20)$ langsung terkunci pada pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Nilai $Y = 22$ keliru mengurangkan 8 bukan 10.\n- **Pilihan B Salah:** Nilai $X = 63$ keliru menambahkan 30 bukan 32.\n- **Pilihan D Salah:** Nilai $X = 67$ dan $Y = 18$ tidak konsisten dengan pola selisih ganjil dan genap.\n- **Pilihan E Salah:** Nilai $X = 64$ salah menghitung penjumlahan $33 + 32$."
+    },
+    {
+      "example_id": "pu-03-01-ex11",
+      "variation_name": "Variasi 11: Pola Operasi Pengali Dinamis Dosis Kinetika Farmakologi (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Data profil kinetika eliminasi metabolit obat dalam plasma darah subjek uji klinis (satuan $ng/mL$) membentuk barisan teratur:\n$3, \\; 5, \\; 13, \\; 43, \\; 177, \\; X$",
+      "question_markdown": "Nilai yang **paling tepat** menggantikan **X** sesuai aturan pembentukan deret tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "885"
+        },
+        {
+          "key": "B",
+          "text_markdown": "889"
+        },
+        {
+          "key": "C",
+          "text_markdown": "890"
+        },
+        {
+          "key": "D",
+          "text_markdown": "891"
+        },
+        {
+          "key": "E",
+          "text_markdown": "895"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati kombinasi pengali dan penambah antarsuku: $3 \\times 1 + 2 = 5$, $5 \\times 2 + 3 = 13$, $13 \\times 3 + 4 = 43$, $43 \\times 4 + 5 = 177$. Perhatikan bahwa angka pengali bertambah 1 dan angka penambah juga bertambah 1!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Operasi Kombinasi Antarsuku:**\n  - $U_1 = 3$\n  - $U_2 = 3 \\times 1 + 2 = 3 + 2 = 5$\n  - $U_3 = 5 \\times 2 + 3 = 10 + 3 = 13$\n  - $U_4 = 13 \\times 3 + 4 = 39 + 4 = 43$\n  - $U_5 = 43 \\times 4 + 5 = 172 + 5 = 177$\n- **Formulasi Pola Rekursif:**\n  - Setiap suku ke-$n$ dibentuk dengan rumus: $U_n = U_{n-1} \\times (n-1) + n$ untuk $n \\ge 2$.\n  - Pengali berturut-turut: $\\times 1, \\; \\times 2, \\; \\times 3, \\; \\times 4, \\; \\times 5$.\n  - Penambah berturut-turut: $+2, \\; +3, \\; +4, \\; +5, \\; +6$.\n- **Perhitungan Nilai Suku ke-6 (X):**\n  - Untuk mendapatkan $X$ ($U_6$):\n    $$X = 177 \\times 5 + 6$$\n  - Hitung perkalian: $177 \\times 5 = 885$.\n  - Tambahkan penambah: $885 + 6 = 891$.\n- **Konklusi:** Nilai yang paling tepat menggantikan $X$ adalah **891**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Pola $\\times k + (k+1)$):**\n\n1. Identifikasi pola: $\\times 1 + 2, \\; \\times 2 + 3, \\; \\times 3 + 4, \\; \\times 4 + 5$.\n2. Operasi untuk $X$ pasti: $\\times 5 + 6$.\n3. Hitung cepat: $177 \\times 5 = 885 \\implies 885 + 6 = 891$.\n4. Pilihan **D** langsung terbukti benar.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** 885 hanya hasil kali $177 \\times 5$ tanpa menambahkan konstanta $+6$.\n- **Pilihan B Salah:** Menghitung $885 + 4 = 889$ karena salah menggunakan angka penambah suku sebelumnya.\n- **Pilihan C Salah:** Menghitung $885 + 5 = 890$ karena lupa menaikkan angka penambah menjadi 6.\n- **Pilihan E Salah:** Menghitung $885 + 10 = 895$ akibat kekeliruan aritmetika."
+    },
+    {
+      "example_id": "pu-03-01-ex12",
+      "variation_name": "Variasi 12: Deret Pecahan Pola Kuadrat dan Kubik Latensi Jaringan 5G (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Rasio efisiensi alokasi bandwidth paket data pada antena Base Transceiver Station (BTS) dinyatakan dalam barisan pecahan berkala:\n$\\frac{1}{8}, \\; \\frac{3}{27}, \\; \\frac{7}{64}, \\; \\frac{13}{125}, \\; \\frac{21}{216}, \\; X$",
+      "question_markdown": "Pecahan yang **paling tepat** melengkapi barisan data **X** tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "$\\frac{31}{343}$"
+        },
+        {
+          "key": "B",
+          "text_markdown": "$\\frac{29}{343}$"
+        },
+        {
+          "key": "C",
+          "text_markdown": "$\\frac{31}{324}$"
+        },
+        {
+          "key": "D",
+          "text_markdown": "$\\frac{33}{343}$"
+        },
+        {
+          "key": "E",
+          "text_markdown": "$\\frac{31}{512}$"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Analisis pembilang dan penyebut secara terpisah! Pembilang: $1, 3, 7, 13, 21$ (selisih bertingkat $+2, +4, +6, +8$). Penyebut: $8, 27, 64, 125, 216$ (barisan bilangan kubik $2^3, 3^3, 4^3, 5^3, 6^3$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Barisan Pembilang ($P_n$):**\n  - Barisan: $1, \\; 3, \\; 7, \\; 13, \\; 21, \\; P_6$\n  - Selisih antarsuku pembilang:\n    - $3 - 1 = +2$\n    - $7 - 3 = +4$\n    - $13 - 7 = +6$\n    - $21 - 13 = +8$\n  - Selisih pembilang bertambah konstan $+2$ (bilangan genap positif berurutan).\n  - Maka selisih berikutnya untuk $P_6$ adalah $+10$:\n    $$P_6 = 21 + 10 = 31$$\n- **Analisis Barisan Penyebut ($Q_n$):**\n  - Barisan: $8, \\; 27, \\; 64, \\; 125, \\; 216, \\; Q_6$\n  - Perhatikan bahwa setiap penyebut merupakan bilangan kubik sempurna berurutan mulai dari $2^3$:\n    - $8 = 2^3$\n    - $27 = 3^3$\n    - $64 = 4^3$\n    - $125 = 5^3$\n    - $216 = 6^3$\n  - Maka penyebut suku ke-6 ($Q_6$) adalah $7^3$:\n    $$Q_6 = 7^3 = 343$$\n- **Konklusi Nilai Pecahan X:**\n  - Nilai pecahan suku ke-6 adalah $\\frac{P_6}{Q_6} = \\frac{31}{343}$.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Pembilang Genap, Penyebut Kubik):**\n\n1. Pembilang: $+2, +4, +6, +8 \\implies 21 + 10 = 31$.\n2. Penyebut: $2^3, 3^3, 4^3, 5^3, 6^3 \\implies 7^3 = 343$.\n3. Satukan langsung: $\\frac{31}{343}$.\n4. Jawaban **A** langsung terkonfirmasi tanpa ragu.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Pembilang 29 keliru menambahkan 8 bukan 10.\n- **Pilihan C Salah:** Penyebut 324 adalah hasil kuadrat $18^2$, bukan bilangan kubik $7^3 = 343$.\n- **Pilihan D Salah:** Pembilang 33 keliru menambahkan 12 bukan 10.\n- **Pilihan E Salah:** Penyebut 512 adalah $8^3$, melompati nilai $7^3 = 343$."
+    },
+    {
+      "example_id": "pu-03-01-ex13",
+      "variation_name": "Variasi 13: Deret Fibonacci Modifikasi Bertingkat Inventarisasi Keramik Kuno (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Pencatatan kode katalog pecahan keramik kuno dinasti Song yang ditemukan pada situs ekskavasi pelabuhan maritim kuno mengikuti barisan bilangan teratur:\n$1, \\; 3, \\; 5, \\; 11, \\; 21, \\; 43, \\; 85, \\; X$",
+      "question_markdown": "Bilangan yang **paling tepat** melengkapi nilai **X** pada barisan data katalog keramik kuno tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "169"
+        },
+        {
+          "key": "B",
+          "text_markdown": "170"
+        },
+        {
+          "key": "C",
+          "text_markdown": "171"
+        },
+        {
+          "key": "D",
+          "text_markdown": "173"
+        },
+        {
+          "key": "E",
+          "text_markdown": "175"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati operasi yang menghubungkan setiap suku ke suku berikutnya: $1 \\times 2 + 1 = 3$, $3 \\times 2 - 1 = 5$, $5 \\times 2 + 1 = 11$, $11 \\times 2 - 1 = 21$. Pola bergantian antara $(\\times 2 + 1)$ dan $(\\times 2 - 1)$! Atau gunakan relasi dua suku sebelumnya: $U_n = U_{n-1} + 2 \\cdot U_{n-2}$.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Metode 1: Pola Operasi Berseling (Alternating Operations):**\n  - $U_1 = 1$\n  - $U_2 = 1 \\times 2 + 1 = 3$\n  - $U_3 = 3 \\times 2 - 1 = 5$\n  - $U_4 = 5 \\times 2 + 1 = 11$\n  - $U_5 = 11 \\times 2 - 1 = 21$\n  - $U_6 = 21 \\times 2 + 1 = 43$\n  - $U_7 = 43 \\times 2 - 1 = 85$\n  - Operasi bergantian secara teratur: $(\\times 2 + 1), \\; (\\times 2 - 1), \\; (\\times 2 + 1), \\; (\\times 2 - 1), \\dots$\n  - Karena $U_7$ menggunakan operasi $(\\times 2 - 1)$, maka untuk suku ke-8 ($X$) polanya adalah $(\\times 2 + 1)$:\n    $$X = 85 \\times 2 + 1 = 170 + 1 = 171$$\n- **Metode 2: Verifikasi Relasi Rekursif Dua Suku Sebelumnya ($U_n = U_{n-1} + 2 \\cdot U_{n-2}$):**\n  - $U_3 = 3 + 2(1) = 5$\n  - $U_4 = 5 + 2(3) = 11$\n  - $U_5 = 11 + 2(5) = 21$\n  - $U_6 = 21 + 2(11) = 43$\n  - $U_7 = 43 + 2(21) = 85$\n  - $X = U_8 = 85 + 2(43) = 85 + 86 = 171$\n  - Kedua metode menghasilkan nilai yang identik secara mutlak.\n- **Konklusi:** Bilangan yang paling tepat melengkapi nilai $X$ adalah **171**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Berseling $\\times 2 + 1$ dan $\\times 2 - 1$):**\n\n1. Cermati alur: $+1, -1, +1, -1, +1, -1$.\n2. Dari 43 ke 85 polanya: $43 \\times 2 - 1 = 85$.\n3. Maka dari 85 ke $X$ giliran: $85 \\times 2 + 1 = 170 + 1 = 171$.\n4. Jawaban **C** langsung diperoleh dengan kepastian 100%.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $85 \\times 2 - 1 = 169$ karena tidak menukar tanda operasi menjadi $+1$.\n- **Pilihan B Salah:** 170 murni hasil kali $85 \\times 2$ tanpa menambahkan 1.\n- **Pilihan D Salah:** Menghitung $170 + 3 = 173$ akibat keliru mengasumsikan penambahan bilangan ganjil bertingkat.\n- **Pilihan E Salah:** Menghitung $170 + 5 = 175$ yang tidak konsisten dengan pola operasi satuan."
+    },
+    {
+      "example_id": "pu-03-01-ex14",
+      "variation_name": "Variasi 14: Deret Bertingkat Tiga Akumulasi Aerosol Hidrometeorologi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data stasiun pemantau kualitas udara mencatat konsentrasi partikel aerosol jelaga karbon ($PM_{2.5}$ dalam $\\mu g/m^3$) selama 8 interval pengamatan berturut-turut membentuk barisan bilangan teratur:\n$3, \\; 7, \\; 14, \\; 26, \\; 45, \\; 73, \\; X, \\; Y$",
+      "question_markdown": "Nilai **X** dan **Y** berturut-turut yang paling tepat melengkapi barisan data konsentrasi aerosol tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "110 dan 160"
+        },
+        {
+          "key": "B",
+          "text_markdown": "112 dan 164"
+        },
+        {
+          "key": "C",
+          "text_markdown": "112 dan 162"
+        },
+        {
+          "key": "D",
+          "text_markdown": "114 dan 168"
+        },
+        {
+          "key": "E",
+          "text_markdown": "108 dan 158"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung selisih tingkat pertama antarsuku: $7 - 3 = 4$, $14 - 7 = 7$, $26 - 14 = 12$, $45 - 26 = 19$, $73 - 45 = 28$. Lalu hitung selisih tingkat kedua: $7 - 4 = 3$, $12 - 7 = 5$, $19 - 12 = 7$, $28 - 19 = 9$. Perhatikan pola penambahan bilangan ganjil pada tingkat kedua!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Selisih Tingkat Pertama ($D_1$):**\n  - $U_2 - U_1 = 7 - 3 = +4$\n  - $U_3 - U_2 = 14 - 7 = +7$\n  - $U_4 - U_3 = 26 - 14 = +12$\n  - $U_5 - U_4 = 45 - 26 = +19$\n  - $U_6 - U_5 = 73 - 45 = +28$\n  - Barisan selisih tingkat pertama: $4, \\; 7, \\; 12, \\; 19, \\; 28, \\dots$\n- **Analisis Selisih Tingkat Kedua ($D_2$):**\n  - $7 - 4 = +3$\n  - $12 - 7 = +5$\n  - $19 - 12 = +7$\n  - $28 - 19 = +9$\n  - Selisih tingkat kedua membentuk barisan bilangan ganjil positif berurutan dengan penambahan konstan $+2$ (selisih tingkat ketiga konstan $+2$).\n- **Perhitungan Nilai Suku ke-7 (X) dan Suku ke-8 (Y):**\n  - Selisih tingkat kedua berikutnya adalah $9 + 2 = +11$.\n  - Maka selisih tingkat pertama berikutnya adalah $28 + 11 = +39$.\n  - Nilai $X$:\n    $$X = 73 + 39 = 112$$\n  - Selisih tingkat kedua selanjutnya adalah $11 + 2 = +13$.\n  - Maka selisih tingkat pertama selanjutnya adalah $39 + 13 = +52$.\n  - Nilai $Y$:\n    $$Y = 112 + 52 = 164$$\n- **Konklusi:** Nilai $X$ dan $Y$ berturut-turut adalah **112 dan 164**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Tingkat Dua Ganjil $+3, +5, +7, +9, +11, +13$):**\n\n1. Selisih tingkat satu: $+4, +7, +12, +19, +28$.\n2. Langkah selanjutnya: $+28 + 11 = +39 \\implies X = 73 + 39 = 112$.\n3. Langkah berikutnya: $+39 + 13 = +52 \\implies Y = 112 + 52 = 164$.\n4. Pasangan $(112, 164)$ langsung terkunci pada pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Nilai 110 dan 160 keliru menambahkan selisih $+37$ dan $+50$.\n- **Pilihan C Salah:** Nilai $X = 112$ tepat, namun $Y = 162$ keliru menghitung $112 + 50$.\n- **Pilihan D Salah:** Nilai 114 keliru menambahkan $+41$ pada suku $X$.\n- **Pilihan E Salah:** Nilai 108 keliru menghitung penjumlahan dasar $73 + 35$."
+    },
+    {
+      "example_id": "pu-03-01-ex15",
+      "variation_name": "Variasi 15: Deret Larik Melompat Fluktuasi Arus Kontainer Peti Kemas (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Indeks arus bongkar muat kontainer peti kemas pelabuhan internasional dan tarif logistik tercatat dalam barisan campuran berkala:\n$6, \\; 120, \\; 11, \\; 112, \\; 18, \\; 100, \\; 27, \\; 84, \\; X, \\; Y$",
+      "question_markdown": "Nilai **X** dan **Y** berturut-turut yang paling tepat melengkapi barisan data logistik tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "36 dan 66"
+        },
+        {
+          "key": "B",
+          "text_markdown": "38 dan 68"
+        },
+        {
+          "key": "C",
+          "text_markdown": "38 dan 64"
+        },
+        {
+          "key": "D",
+          "text_markdown": "40 dan 62"
+        },
+        {
+          "key": "E",
+          "text_markdown": "37 dan 64"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Barisan berfluktuasi naik-turun tajam secara berselang-seling. Pisahkan menjadi dua barisan terpisah: Larik 1 pada suku posisi ganjil ($6, 11, 18, 27, X$) dan Larik 2 pada suku posisi genap ($120, 112, 100, 84, Y$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Deret Dua Larik Berseling:**\n  - Angka mengalami pola osilasi naik-turun: $6 < 120 > 11 < 112 > 18 < 100 > 27 < 84$, yang menandakan penggabungan dua barisan independen.\n- **Larik 1 (Suku Posisi Ganjil: $U_1, U_3, U_5, U_7, U_9 = X$):**\n  - Barisan: $6, \\; 11, \\; 18, \\; 27, \\; X$\n  - Analisis selisih penambahan antarsuku:\n    - $11 - 6 = +5$\n    - $18 - 11 = +7$\n    - $27 - 18 = +9$\n  - Selisih penambahan bertambah $+2$ (bilangan ganjil berurutan: $+5, +7, +9$).\n  - Maka selisih berikutnya untuk $X$ adalah $+11$:\n    $$X = 27 + 11 = 38$$\n- **Larik 2 (Suku Posisi Genap: $U_2, U_4, U_6, U_8, U_{10} = Y$):**\n  - Barisan: $120, \\; 112, \\; 100, \\; 84, \\; Y$\n  - Analisis selisih pengurangan antarsuku:\n    - $112 - 120 = -8$\n    - $100 - 112 = -12$\n    - $84 - 100 = -16$\n  - Pola pengurangan bertambah sebesar $-4$ (kelipatan 4 berurutan: $-8, -12, -16$).\n  - Maka pengurangan berikutnya untuk $Y$ adalah $-20$:\n    $$Y = 84 - 20 = 64$$\n- **Konklusi:** Nilai $X$ dan $Y$ berturut-turut adalah **38 dan 64**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Pemisahan Dua Jalur Ganjil-Genap):**\n\n1. Jalur Ganjil ($X$): $6 \\xrightarrow{+5} 11 \\xrightarrow{+7} 18 \\xrightarrow{+9} 27 \\xrightarrow{+11} X = 38$.\n2. Jalur Genap ($Y$): $120 \\xrightarrow{-8} 112 \\xrightarrow{-12} 100 \\xrightarrow{-16} 84 \\xrightarrow{-20} Y = 64$.\n3. Pasangan $(38, 64)$ langsung terkonfirmasi pada pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Nilai $X = 36$ keliru menambahkan 9 bukan 11, dan $Y = 66$ keliru mengurangkan 18 bukan 20.\n- **Pilihan B Salah:** Nilai $Y = 68$ keliru mengurangkan 16 bukan 20.\n- **Pilihan D Salah:** Nilai $X = 40$ keliru menambahkan 13 pada suku $X$.\n- **Pilihan E Salah:** Nilai $X = 37$ salah melakukan penjumlahan dasar $27 + 11$."
+    },
+    {
+      "example_id": "pu-03-01-ex16",
+      "variation_name": "Variasi 16: Pola Operasi Pengali Tetap dan Penambah Genap Berseling Dosis Serum (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Data titrasi konsentrasi antibodi netralisasi dalam serum klinis pasca-imunisasi (satuan $IU/mL$) mengikuti aturan kombinasi operasi berulang:\n$5, \\; 14, \\; 22, \\; 52, \\; 94, \\; 200, \\; X$",
+      "question_markdown": "Bilangan yang **paling tepat** menggantikan **X** sesuai aturan operasi kombinasi deret tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "382"
+        },
+        {
+          "key": "B",
+          "text_markdown": "384"
+        },
+        {
+          "key": "C",
+          "text_markdown": "386"
+        },
+        {
+          "key": "D",
+          "text_markdown": "390"
+        },
+        {
+          "key": "E",
+          "text_markdown": "414"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati kombinasi operasi pengali dan penambah antarsuku: $5 \\times 2 + 4 = 14$, $14 \\times 2 - 6 = 22$, $22 \\times 2 + 8 = 52$, $52 \\times 2 - 10 = 94$, $94 \\times 2 + 12 = 200$. Perhatikan bahwa pengali selalu konstan $\\times 2$, tanda operasi bergantian antara $(+)$ dan $(-)$, serta angka penambah bertambah 2!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Operasi Kombinasi Antarsuku:**\n  - $U_1 = 5$\n  - $U_2 = 5 \\times 2 + 4 = 10 + 4 = 14$\n  - $U_3 = 14 \\times 2 - 6 = 28 - 6 = 22$\n  - $U_4 = 22 \\times 2 + 8 = 44 + 8 = 52$\n  - $U_5 = 52 \\times 2 - 10 = 104 - 10 = 94$\n  - $U_6 = 94 \\times 2 + 12 = 188 + 12 = 200$\n- **Formulasi Pola Rekursif:**\n  - Pengali konstan: selalu dikalikan 2 ($\\times 2$).\n  - Operasi penyesuaian bergantian tanda: $(+), \\; (-), \\; (+), \\; (-), \\; (+), \\dots$\n  - Nilai absolut penyesuaian membentuk barisan bilangan genap bertambah 2: $4, \\; 6, \\; 8, \\; 10, \\; 12, \\dots$\n- **Perhitungan Nilai Suku ke-7 (X):**\n  - Operasi sebelumnya pada $U_6$ adalah penambahan $+12$.\n  - Maka operasi untuk $U_7$ ($X$) adalah pengurangan dengan $-14$:\n    $$X = 200 \\times 2 - 14$$\n    $$X = 400 - 14 = 386$$\n- **Konklusi:** Bilangan yang paling tepat menggantikan $X$ adalah **386**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Pola $\\times 2 \\pm \\text{Genap}$):**\n\n1. Pola operasi: $\\times 2 + 4, \\; \\times 2 - 6, \\; \\times 2 + 8, \\; \\times 2 - 10, \\; \\times 2 + 12$.\n2. Operasi untuk $X$ pasti: $\\times 2 - 14$.\n3. Hitung cepat: $200 \\times 2 - 14 = 400 - 14 = 386$.\n4. Jawaban **C** langsung diperoleh secara pasti.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $400 - 18 = 382$ karena salah melompati besaran pengurang genap.\n- **Pilihan B Salah:** Menghitung $400 - 16 = 384$ karena keliru menambahkan pengurang sebesar 4 bukan 2.\n- **Pilihan D Salah:** Menghitung $400 - 10 = 390$ karena menggunakan pengurang suku sebelumnya.\n- **Pilihan E Salah:** Menghitung $400 + 14 = 414$ akibat lupa menukar tanda operasi menjadi pengurangan."
+    },
+    {
+      "example_id": "pu-03-01-ex17",
+      "variation_name": "Variasi 17: Deret Pecahan Rasio Kompresi Bobot Matriks AI (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Nilai rasio efisiensi kuantisasi bobot model kecerdasan buatan pada chip akselerator tensor membentuk barisan pecahan teratur:\n$\\frac{4}{5}, \\; \\frac{7}{11}, \\; \\frac{13}{23}, \\; \\frac{25}{47}, \\; \\frac{49}{95}, \\; X$",
+      "question_markdown": "Pecahan yang **paling tepat** melengkapi nilai **X** pada barisan rasio kuantisasi tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "$\\frac{95}{191}$"
+        },
+        {
+          "key": "B",
+          "text_markdown": "$\\frac{97}{189}$"
+        },
+        {
+          "key": "C",
+          "text_markdown": "$\\frac{97}{191}$"
+        },
+        {
+          "key": "D",
+          "text_markdown": "$\\frac{99}{193}$"
+        },
+        {
+          "key": "E",
+          "text_markdown": "$\\frac{97}{195}$"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Analisis pembilang dan penyebut secara terpisah! Pembilang: $4, 7, 13, 25, 49$ (setiap suku dikalikan 2 lalu dikurangi 1: $\\times 2 - 1$ atau selisih berlipat ganda $+3, +6, +12, +24$). Penyebut: $5, 11, 23, 47, 95$ (setiap suku dikalikan 2 lalu ditambah 1: $\\times 2 + 1$ atau selisih berlipat ganda $+6, +12, +24, +48$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Barisan Pembilang ($P_n$):**\n  - Barisan: $4, \\; 7, \\; 13, \\; 25, \\; 49, \\; P_6$\n  - Metode 1 (Selisih Geometri):  \n    $7 - 4 = +3$  \n    $13 - 7 = +6$  \n    $25 - 13 = +12$  \n    $49 - 25 = +24$  \n    Selisih selalu berlipat ganda (rasio $\\times 2$). Selisih berikutnya adalah $+48$.  \n    $$P_6 = 49 + 48 = 97$$\n  - Metode 2 (Pola Operasi Rekursif):  \n    $P_n = 2 \\cdot P_{n-1} - 1$  \n    $$P_6 = 2(49) - 1 = 98 - 1 = 97$$\n- **Analisis Barisan Penyebut ($Q_n$):**\n  - Barisan: $5, \\; 11, \\; 23, \\; 47, \\; 95, \\; Q_6$\n  - Metode 1 (Selisih Geometri):  \n    $11 - 5 = +6$  \n    $23 - 11 = +12$  \n    $47 - 23 = +24$  \n    $95 - 47 = +48$  \n    Selisih berlipat ganda dengan rasio $\\times 2$. Selisih berikutnya adalah $+96$.  \n    $$Q_6 = 95 + 96 = 191$$\n  - Metode 2 (Pola Operasi Rekursif):  \n    $Q_n = 2 \\cdot Q_{n-1} + 1$  \n    $$Q_6 = 2(95) + 1 = 190 + 1 = 191$$\n- **Konklusi Nilai Pecahan X:**\n  - Nilai pecahan suku ke-6 adalah $\\frac{P_6}{Q_6} = \\frac{97}{191}$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Operasi Rekursif $\\times 2 \\pm 1$):**\n\n1. Pembilang: $49 \\times 2 - 1 = 98 - 1 = 97$.\n2. Penyebut: $95 \\times 2 + 1 = 190 + 1 = 191$.\n3. Satukan pecahan: $\\frac{97}{191}$.\n4. Pilihan **C** terbukti benar secara instan.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pembilang 95 keliru mengurangkan 3 bukan 1 pada $2 \\times 49$.\n- **Pilihan B Salah:** Penyebut 189 keliru melakukan pengurangan alih-alih penambahan $+1$.\n- **Pilihan D Salah:** Pembilang 99 dan penyebut 193 salah menerapkan pola penambahan konstan $+50$ dan $+98$.\n- **Pilihan E Salah:** Penyebut 195 keliru menambahkan 5 bukan 1."
+    },
+    {
+      "example_id": "pu-03-01-ex18",
+      "variation_name": "Variasi 18: Deret Larik Melompat Tiga Baris Registrasi Artefak Budaya (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Data inventarisasi nomor registrasi pelestarian artefak cagar budaya batu megalitikum tersusun dalam barisan tiga larik berseling:\n$3, \\; 50, \\; 4, \\; 6, \\; 45, \\; 9, \\; 12, \\; 38, \\; 16, \\; X, \\; Y$",
+      "question_markdown": "Nilai **X** dan **Y** berturut-turut yang paling tepat melengkapi barisan registrasi artefak tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "22 dan 31"
+        },
+        {
+          "key": "B",
+          "text_markdown": "24 dan 31"
+        },
+        {
+          "key": "C",
+          "text_markdown": "24 dan 29"
+        },
+        {
+          "key": "D",
+          "text_markdown": "26 dan 28"
+        },
+        {
+          "key": "E",
+          "text_markdown": "24 dan 27"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Barisan ini merupakan gabungan dari tiga larik independen yang berselang setiap 3 suku! Larik 1 ($U_1, U_4, U_7, U_{10} = X$): $3, 6, 12, X$. Larik 2 ($U_2, U_5, U_8, U_{11} = Y$): $50, 45, 38, Y$. Larik 3 ($U_3, U_6, U_9$): $4, 9, 16$ (barisan kuadrat $2^2, 3^2, 4^2$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Deret Tiga Larik Berseling (Periodisitas 3 Suku):**\n  - Barisan memiliki fluktuasi acak jika dilihat tunggal, namun menunjukkan keteraturan bila dikelompokkan berdasarkan modulo 3 indeks suku.\n- **Larik 1 (Suku Posisi $1, 4, 7, 10 = X$):**\n  - Suku-suku: $U_1 = 3, \\; U_4 = 6, \\; U_7 = 12, \\; U_{10} = X$\n  - Pola: Setiap suku dikalikan 2 secara konsisten (rasio $\\times 2$).\n    - $6 = 3 \\times 2$\n    - $12 = 6 \\times 2$\n  - Maka nilai $X$ ($U_{10}$):\n    $$X = 12 \\times 2 = 24$$\n- **Larik 2 (Suku Posisi $2, 5, 8, 11 = Y$):**\n  - Suku-suku: $U_2 = 50, \\; U_5 = 45, \\; U_8 = 38, \\; U_{11} = Y$\n  - Pola: Pengurangan bilangan ganjil bertambah 2:\n    - $45 - 50 = -5$\n    - $38 - 45 = -7$\n  - Maka pengurangan berikutnya untuk $Y$ ($U_{11}$) adalah $-9$:\n    $$Y = 38 - 9 = 29$$\n- **Larik 3 (Suku Posisi $3, 6, 9$):**\n  - Suku-suku: $U_3 = 4 = 2^2, \\; U_6 = 9 = 3^2, \\; U_9 = 16 = 4^2$ (sebagai deret pengunci konsistensi).\n- **Konklusi:** Nilai $X$ dan $Y$ berturut-turut adalah **24 dan 29**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Lompat Tiga Suku):**\n\n1. Larik Pertama ($X$): $3 \\xrightarrow{\\times 2} 6 \\xrightarrow{\\times 2} 12 \\xrightarrow{\\times 2} X = 24$.\n2. Larik Kedua ($Y$): $50 \\xrightarrow{-5} 45 \\xrightarrow{-7} 38 \\xrightarrow{-9} Y = 29$.\n3. Pasangan $(24, 29)$ langsung terkunci pada pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Nilai $X = 22$ keliru mengasumsikan penambahan $+10$ bukan perkalian $\\times 2$.\n- **Pilihan B Salah:** Nilai $Y = 31$ keliru mengurangkan 7 bukan 9.\n- **Pilihan D Salah:** Nilai $X = 26$ keliru menambahkan 14 pada suku 12.\n- **Pilihan E Salah:** Nilai $Y = 27$ keliru mengurangkan 11 bukan 9."
     }
   ]
 };

@@ -13,7 +13,7 @@
       "Analogi dan Serial Spasial Transformasi Objek Geometri (HOTS)"
     ],
     "requires_svg": true,
-    "updated_at": "2026-11-08"
+    "updated_at": "2026-11-09"
   },
   "content": {
     "tactical_overview": "Spasial numerik dan pola gambar menguji kejelian Anda dalam menghubungkan konfigurasi visual geometris dengan relasi operasi aritmetika. Di UTBK SNBT, soal jenis ini paling sering muncul dalam bentuk bangun datar (segitiga atau lingkaran) yang memuat beberapa angka di sudut dan satu angka misterius di pusat, atau tabel matriks angka 3x3. Kunci taktisnya adalah memperlakukan angka di sudut sebagai \"input\" dan angka di pusat sebagai \"output\". Uji operasi paling umum: perkalian sisi bawah dikurangi sisi atas, atau jumlah dua sisi dibagi sisi ketiga. Begitu sebuah formula berhasil menghasilkan angka pusat pada gambar pertama, formula yang identik wajib diterapkan pada gambar kedua.",
@@ -143,6 +143,531 @@
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Arah Panah:** Siklus 4 posisi: Atas (1) $\\to$ Kanan (2) $\\to$ Bawah (3) $\\to$ Kiri (4) $\\to$ **Atas (5)**.\n- **Jumlah Titik:** Barisan bilangan prima: $2, 3, 5, 7 \\implies$ bilangan prima berikutnya adalah **11** (bukan 9).\n- **Bingkai:** Putih (1) $\\to$ Hitam (2) $\\to$ Putih (3) $\\to$ Hitam (4) $\\to$ **Putih (5)**.\n- **Konklusi:** Panah Atas, 11 titik hitam, bingkai Putih.\n\n**Jawaban: B**",
       "quick_trick_markdown": "**Cara Cepat (Eliminasi Cepat):**\n\n1. Putaran ke-5 = kembali ke Atas $\\implies$ coret A, D, E.\n2. Deret prima: $2, 3, 5, 7 \\to 11$ (bukan 9) $\\implies$ coret C.\n3. Tersisa pilihan **B**.",
       "why_others_are_wrong_markdown": "- **Pilihan A, D, E Salah:** Arah panah tidak berada di posisi atas.\n- **Pilihan C Salah:** Jebakan angka 9 (angka 9 bukan bilangan prima karena dapat dibagi 3)."
+    },
+    {
+      "example_id": "pu-03-02-ex4",
+      "variation_name": "Variasi 1: Spasial Empat Kuadran Lingkaran Sensor Emisi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah alat sensor pemantau emisi lingkungan berbentuk lingkaran yang terbagi menjadi empat kuadran (Atas, Bawah, Kiri, dan Kanan) dengan satu angka indeks di pusat lingkaran. Aturan operasi aritmetika pada setiap alat sensor adalah identik:\n- **Sensor I:** Angka Atas = 15, Bawah = 5, Kiri = 8, Kanan = 6, dan Angka Pusat = 42.\n- **Sensor II:** Angka Atas = 24, Bawah = 6, Kiri = 9, Kanan = 7, dan Angka Pusat = X.",
+      "question_markdown": "Nilai dari **X** pada Sensor II adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "56"
+        },
+        {
+          "key": "B",
+          "text_markdown": "60"
+        },
+        {
+          "key": "C",
+          "text_markdown": "64"
+        },
+        {
+          "key": "D",
+          "text_markdown": "68"
+        },
+        {
+          "key": "E",
+          "text_markdown": "72"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hubungkan angka vertikal (Atas dan Bawah) dengan operasi pembagian: $15 / 5 = 3$. Lalu hubungkan angka horizontal (Kiri dan Kanan) dengan operasi penjumlahan: $8 + 6 = 14$. Kalikan kedua hasil tersebut untuk memperoleh angka pusat 42!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Pola Operasi pada Sensor I:**\n  - Angka vertikal: Atas $= 15$, Bawah $= 5$.\n    $$\\frac{\\text{Atas}}{\\text{Bawah}} = \\frac{15}{5} = 3$$\n  - Angka horizontal: Kiri $= 8$, Kanan $= 6$.\n    $$\\text{Kiri} + \\text{Kanan} = 8 + 6 = 14$$\n  - Kombinasi operasi untuk menghasilkan angka pusat:\n    $$\\text{Pusat} = \\left(\\frac{\\text{Atas}}{\\text{Bawah}}\\right) \\times (\\text{Kiri} + \\text{Kanan}) = 3 \\times 14 = 42$$\n    Formula terbukti tepat dan konsisten menghasilkan angka pusat 42.\n- **Penerapan Pola pada Sensor II:**\n  - Angka vertikal: Atas $= 24$, Bawah $= 6$.\n    $$\\frac{\\text{Atas}}{\\text{Bawah}} = \\frac{24}{6} = 4$$\n  - Angka horizontal: Kiri $= 9$, Kanan $= 7$.\n    $$\\text{Kiri} + \\text{Kanan} = 9 + 7 = 16$$\n  - Perhitungan nilai $X$ di pusat Sensor II:\n    $$X = 4 \\times 16 = 64$$\n- **Konklusi:** Nilai $X$ pada Sensor II adalah **64**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Bagi Vertikal x Jumlah Horizontal):**\n\n1. Sensor I: $(15 / 5) \\times (8 + 6) = 3 \\times 14 = 42$.\n2. Sensor II: $(24 / 6) \\times (9 + 7) = 4 \\times 16 = 64$.\n3. Jawaban langsung **C** diperoleh dalam 15 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $(24 / 6) \\times 14 = 56$ (keliru menjumlahkan angka horizontal).\n- **Pilihan B Salah:** Menghitung $4 \\times 15 = 60$ karena keliru menjumlahkan $9 + 6$.\n- **Pilihan D Salah:** Menghitung $4 \\times 17 = 68$ akibat salah menjumlahkan $9 + 8$.\n- **Pilihan E Salah:** Menghitung $(24 - 6) \\times 4 = 72$ yang tidak sesuai dengan pola Sensor I."
+    },
+    {
+      "example_id": "pu-03-02-ex5",
+      "variation_name": "Variasi 2: Matriks Kuadrat Pengurang Indeks Fiskal (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data evaluasi efisiensi alokasi anggaran investasi fiskal daerah tersusun dalam matriks $3 \\times 3$ yang mematuhi keteraturan operasi baris tertentu:\n\n| Kolom 1 | Kolom 2 | Kolom 3 |\n| :---: | :---: | :---: |\n| 7 | 15 | 34 |\n| 8 | 22 | 42 |\n| 9 | 26 | **X** |",
+      "question_markdown": "Nilai bilangan **X** yang paling tepat untuk melengkapi matriks tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "48"
+        },
+        {
+          "key": "B",
+          "text_markdown": "50"
+        },
+        {
+          "key": "C",
+          "text_markdown": "52"
+        },
+        {
+          "key": "D",
+          "text_markdown": "54"
+        },
+        {
+          "key": "E",
+          "text_markdown": "55"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan angka pada Kolom 3 ($34, 42, X$). Nilainya berkaitan erat dengan kuadrat angka di Kolom 1! Coba kuadratkan angka di Kolom 1 ($7^2 = 49$), lalu kurangkan dengan angka di Kolom 2 ($49 - 15$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Arah Operasi:**\n  - Angka pada Kolom 3 adalah hasil dari operasi horizontal terhadap Kolom 1 dan Kolom 2 pada baris yang sama ($K_3 = f(K_1, K_2)$).\n- **Uji Formula pada Baris 1:**\n  - $K_1 = 7, \\; K_2 = 15$\n  - Kuadratkan Kolom 1 lalu kurangkan dengan Kolom 2:\n    $$K_3 = (K_1)^2 - K_2 = 7^2 - 15 = 49 - 15 = 34$$\n    Hasil cocok sempurna dengan angka 34 pada Baris 1.\n- **Verifikasi Formula pada Baris 2:**\n  - $K_1 = 8, \\; K_2 = 22$\n  - Terapkan formula yang sama:\n    $$K_3 = 8^2 - 22 = 64 - 22 = 42$$\n    Formula terbukti valid $100\\%$ pada Baris 2.\n- **Perhitungan Nilai X pada Baris 3:**\n  - $K_1 = 9, \\; K_2 = 26$\n  - Maka nilai $X$ adalah:\n    $$X = 9^2 - 26 = 81 - 26 = 55$$\n- **Konklusi:** Nilai $X$ yang melengkapi matriks adalah **55**.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Kuadrat K1 - K2):**\n\n1. Baris 1: $7^2 - 15 = 49 - 15 = 34$.\n2. Baris 2: $8^2 - 22 = 64 - 22 = 42$.\n3. Baris 3: $9^2 - 26 = 81 - 26 = 55$.\n4. Jawaban pasti **E**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $81 - 33 = 48$ karena keliru mengingat nilai Kolom 2.\n- **Pilihan B Salah:** Menghitung $81 - 31 = 50$ akibat salah melakukan operasi pengurangan dasar.\n- **Pilihan C Salah:** Menghitung $81 - 29 = 52$ (keliru mengurangkan angka yang salah).\n- **Pilihan D Salah:** Menghitung $81 - 27 = 54$ karena salah mencatat angka 26 menjadi 27."
+    },
+    {
+      "example_id": "pu-03-02-ex6",
+      "variation_name": "Variasi 3: Spasial Belah Ketupat Selisih Perkalian Aksis (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam uji ketajaman persepsi visual spasial, disajikan dua figur bangun belah ketupat berangka dengan aturan aritmetika yang identik:\n- **Figur I:** Sudut Atas = 8, Sudut Bawah = 9, Sudut Kiri = 5, Sudut Kanan = 6, dan Angka Pusat = 42.\n- **Figur II:** Sudut Atas = 7, Sudut Bawah = 11, Sudut Kiri = 6, Sudut Kanan = 7, dan Angka Pusat = X.",
+      "question_markdown": "Nilai dari **X** pada Figur II yang paling tepat adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "35"
+        },
+        {
+          "key": "B",
+          "text_markdown": "38"
+        },
+        {
+          "key": "C",
+          "text_markdown": "41"
+        },
+        {
+          "key": "D",
+          "text_markdown": "44"
+        },
+        {
+          "key": "E",
+          "text_markdown": "47"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Kalikan pasangan angka pada sumbu vertikal (Atas x Bawah: $8 \\times 9 = 72$) dan kalikan pasangan angka pada sumbu horizontal (Kiri x Kanan: $5 \\times 6 = 30$). Kurangkan kedua hasil kali sumbu tersebut!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Relasi Figur I:**\n  - Perkalian sumbu vertikal: $\\text{Atas} \\times \\text{Bawah} = 8 \\times 9 = 72$\n  - Perkalian sumbu horizontal: $\\text{Kiri} \\times \\text{Kanan} = 5 \\times 6 = 30$\n  - Selisih perkalian kedua aksis menghasilkan angka pusat:\n    $$\\text{Pusat} = (\\text{Atas} \\times \\text{Bawah}) - (\\text{Kiri} \\times \\text{Kanan}) = 72 - 30 = 42$$\n    Formula tepat menghasilkan angka pusat 42.\n- **Penerapan Relasi pada Figur II:**\n  - Perkalian sumbu vertikal: $\\text{Atas} \\times \\text{Bawah} = 7 \\times 11 = 77$\n  - Perkalian sumbu horizontal: $\\text{Kiri} \\times \\text{Kanan} = 6 \\times 7 = 42$\n  - Perhitungan nilai $X$ di pusat Figur II:\n    $$X = (7 \\times 11) - (6 \\times 7) = 77 - 42 = 35$$\n- **Konklusi:** Nilai $X$ pada Figur II adalah **35**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Perkalian Vertikal minus Horizontal):**\n\n1. Figur I: $(8 \\times 9) - (5 \\times 6) = 72 - 30 = 42$.\n2. Figur II: $(7 \\times 11) - (6 \\times 7) = 77 - 42 = 35$.\n3. Pilihan **A** langsung terkonfirmasi benar.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menghitung $77 - 39 = 38$ karena salah mengalikan $6 \\times 7$.\n- **Pilihan C Salah:** Menghitung $77 - 36 = 41$ karena salah mengalikan $6 \\times 6$.\n- **Pilihan D Salah:** Menghitung $(7 + 11) + (6 \\times 7) - ...$ tanpa pola yang konsisten.\n- **Pilihan E Salah:** Menghitung $77 - 30 = 47$ karena menggunakan hasil kali horizontal dari Figur I."
+    },
+    {
+      "example_id": "pu-03-02-ex7",
+      "variation_name": "Variasi 4: Serial Spasial Geometris Multi-Parameter Sirkuit Semikonduktor (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah sistem inspeksi optik otomatis pada perakitan modul sirkuit semikonduktor memantau serial gambar yang mengalami transformasi teratur berdasarkan tiga aturan simultan berikut:\n1. **Jumlah Sisi Poligon Luar:** Bertambah satu sisi secara bertahap pada setiap langkah (Langkah 1: Segitiga / 3 sisi, Langkah 2: Segiempat / 4 sisi, Langkah 3: Segilima / 5 sisi, Langkah 4: Segienam / 6 sisi).\n2. **Arah Jarum Penunjuk:** Berotasi $45^\\circ$ berlawanan arah jarum jam pada setiap langkah (Langkah 1: Menghadap jam 12 / Utara, Langkah 2: Menghadap jam 10.30 / Barat Laut, Langkah 3: Menghadap jam 9 / Barat, Langkah 4: Menghadap jam 7.30 / Barat Daya).\n3. **Arsiran Poligon Inti:** Berubah secara bersiklus tiga tahap: Langkah 1 (Arsir Garis Miring), Langkah 2 (Hitam Penuh), Langkah 3 (Putih Polos), Langkah 4 (kembali ke Arsir Garis Miring).",
+      "question_markdown": "Berdasarkan pola transformasi simultan tersebut, karakteristik lengkap gambar pada **Langkah ke-5** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Poligon luar Segienam, jarum penunjuk menghadap tegak ke bawah (Selatan), dan inti berwarna Hitam Penuh"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Poligon luar Segitujuh, jarum penunjuk menghadap condong ke kiri (Barat Daya), dan inti berarsir Garis Miring"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Poligon luar Segitujuh, jarum penunjuk menghadap tegak ke atas (Utara), dan inti berwarna Putih Polos"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Poligon luar Segitujuh, jarum penunjuk menghadap tegak ke bawah (Selatan), dan inti berwarna Hitam Penuh"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Poligon luar Segidelapan, jarum penunjuk menghadap tegak ke bawah (Selatan), dan inti berwarna Hitam Penuh"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Analisis setiap elemen secara terpisah: Poligon bertambah 1 sisi ($3 \\to 4 \\to 5 \\to 6 \\to ?$). Jarum berputar $45^\\circ$ berlawanan arah jarum jam dari jam 7.30 akan menuju ke arah mana? Arsiran bersiklus 3 tahap (Miring $\\to$ Hitam $\\to$ Putih $\\to$ Miring $\\to$ ?).",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Elemen 1 (Poligon Luar):**\n  - Pola jumlah sisi bertambah 1:\n    $$\\text{Langkah 1 (3 sisi)} \\to \\text{Langkah 2 (4 sisi)} \\to \\text{Langkah 3 (5 sisi)} \\to \\text{Langkah 4 (6 sisi)}$$\n  - Maka Langkah 5 adalah **Segitujuh (Heptagon / 7 sisi)**.\n- **Analisis Elemen 2 (Rotasi Jarum Penunjuk):**\n  - Berotasi $45^\\circ$ berlawanan arah jarum jam (*counter-clockwise*):\n    $$\\text{Jam 12 (Utara)} \\xrightarrow{-45^\\circ} \\text{Jam 10.30 (Barat Laut)} \\xrightarrow{-45^\\circ} \\text{Jam 9 (Barat)} \\xrightarrow{-45^\\circ} \\text{Jam 7.30 (Barat Daya)}$$\n  - Rotasi $-45^\\circ$ dari jam 7.30 pada Langkah 5 mengarah ke **Jam 6 (Tegak ke Bawah / Selatan)**.\n- **Analisis Elemen 3 (Arsiran Inti):**\n  - Siklus 3 tahap berulang:\n    $$\\text{Langkah 1 (Miring)} \\to \\text{Langkah 2 (Hitam)} \\to \\text{Langkah 3 (Putih)} \\to \\text{Langkah 4 (Miring)}$$\n  - Maka Langkah 5 adalah **Hitam Penuh**.\n- **Kombinasi Karakteristik Lengkap:** Poligon luar Segitujuh, jarum penunjuk tegak ke bawah (Selatan), dan inti berwarna Hitam Penuh.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Tiga Pilar):**\n\n1. Jumlah sisi: Langkah 5 wajib 7 sisi (Segitujuh) $\\implies$ coret A dan E.\n2. Arah jarum: Dari Barat Daya berputar $-45^\\circ$ wajib ke Selatan (arah jam 6 / bawah) $\\implies$ coret B dan C.\n3. Tersisa pilihan **D** secara mutlak.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyebutkan Segienam (tidak menambah sisi pada langkah ke-5).\n- **Pilihan B Salah:** Arah jarum dan arsiran salah karena tidak melanjutkan rotasi dan siklus arsiran.\n- **Pilihan C Salah:** Arah jarum salah mengira putaran searah jarum jam atau kembali ke awal.\n- **Pilihan E Salah:** Menyebutkan Segidelapan (melompati segidelapan yang merupakan langkah ke-6)."
+    },
+    {
+      "example_id": "pu-03-02-ex8",
+      "variation_name": "Variasi 5: Analogi Transformasi Struktural Ornamen Cagar Budaya (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Pada analisis digitalisasi motif ukiran cagar budaya nusantara, hubungan antara **Gambar A** dan **Gambar B** mematuhi aturan transformasi spasial tertentu:\n1. Bangun geometri di bagian dalam membesar menjadi bangun di bagian luar, dengan garis tepi berubah dari garis utuh menjadi garis putus-putus.\n2. Bangun geometri di bagian luar mengecil menjadi bangun di bagian dalam, dengan warna berubah mengalami inversi (dari putih polos menjadi hitam penuh).\n3. Titik penanda lingkaran kecil berpindah posisi secara diagonal terbalik (dari sudut kanan atas ke sudut kiri bawah).\n\nJika aturan transformasi analogis yang identik diterapkan pada **Gambar C** (sebuah bujur sangkar bergaris utuh yang memuat segitiga putih polos di bagian dalamnya, serta memiliki titik penanda di sudut kanan atas), maka figur **Gambar D** yang terbentuk adalah...",
+      "question_markdown": "Karakteristik visual yang **paling tepat** mendeskripsikan figur **Gambar D** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Segitiga bergaris utuh di bagian luar, bujur sangkar putih di bagian dalam, dan titik penanda di sudut kanan bawah"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Segitiga bergaris putus-putus di bagian luar, bujur sangkar hitam di bagian dalam, dan titik penanda di sudut kiri bawah"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Bujur sangkar bergaris putus-putus di bagian luar, segitiga hitam di bagian dalam, dan titik penanda di sudut kiri bawah"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Segitiga bergaris putus-putus di bagian luar, lingkaran hitam di bagian dalam, dan titik penanda di sudut kanan atas"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Segitiga bergaris utuh di bagian luar, bujur sangkar hitam di bagian dalam, dan titik penanda di sudut kiri atas"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Terapkan tiga aturan transformasi secara presisi pada Gambar C: (1) Segitiga di dalam pindah ke luar menjadi bergaris putus-putus, (2) Bujur sangkar di luar pindah ke dalam menjadi hitam penuh, (3) Titik penanda pindah ke sudut diagonal seberangnya (kiri bawah)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kondisi Awal Gambar C:**\n  - Bangun luar: Bujur sangkar (garis utuh, putih).\n  - Bangun dalam: Segitiga (putih polos).\n  - Titik penanda: Sudut kanan atas.\n- **Penerapan Aturan Transformasi Analogis:**\n  - **Aturan 1 (Dalam ke Luar):** Segitiga di bagian dalam berpindah ke luar, ukurannya membesar, dan garis tepinya berubah menjadi **garis putus-putus**.\n  - **Aturan 2 (Luar ke Dalam):** Bujur sangkar di bagian luar mengecil ke dalam, dan warnanya mengalami inversi menjadi **hitam penuh**.\n  - **Aturan 3 (Perpindahan Titik Penanda):** Titik penanda lingkaran kecil berpindah diagonal dari sudut kanan atas ke **sudut kiri bawah**.\n- **Sintesis Bentuk Gambar D:**\n  - Figur luar: Segitiga bergaris putus-putus.\n  - Figur dalam: Bujur sangkar hitam penuh.\n  - Posisi titik penanda: Sudut kiri bawah.\n- **Konklusi:** Deskripsi visual yang tepat adalah Pilihan B.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Tukar Posisi & Ganti Sifat):**\n\n1. Bangun luar Gambar D harus berasal dari dalam Gambar C $\\implies$ Segitiga bergaris putus-putus (coret A, C, E).\n2. Bangun dalam Gambar D harus berasal dari luar Gambar C dengan inversi $\\implies$ Bujur sangkar hitam (coret D karena lingkaran).\n3. Titik penanda wajib di sudut kiri bawah $\\implies$ Pilihan **B** langsung terkunci sempurna.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Garis segitiga luar tetap utuh dan bujur sangkar dalam tidak mengalami inversi warna hitam.\n- **Pilihan C Salah:** Gagal menukar posisi elemen dalam dan luar (bujur sangkar tetap di luar).\n- **Pilihan D Salah:** Menghadirkan bangun lingkaran yang tidak ada pada Gambar C.\n- **Pilihan E Salah:** Garis segitiga luar tetap utuh dan posisi titik penanda keliru di sudut kiri atas."
+    },
+    {
+      "example_id": "pu-03-02-ex9",
+      "variation_name": "Variasi 9: Spasial Numerik Segiempat Determinan Sensor Ekosistem Lahan Basah (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah diagram pemantauan indeks ekosistem lahan basah berbentuk segiempat berangka memuat empat nilai sensor pada setiap sudutnya dan satu angka indeks di pusat bangun datar. Aturan operasi aritmetika pada kedua figur segiempat adalah identik:\n- **Figur I:** Sudut Kiri Atas = 9, Sudut Kanan Atas = 4, Sudut Kiri Bawah = 7, Sudut Kanan Bawah = 8, dan Angka Pusat = 44.\n- **Figur II:** Sudut Kiri Atas = 11, Sudut Kanan Atas = 5, Sudut Kiri Bawah = 6, Sudut Kanan Bawah = 9, dan Angka Pusat = X.",
+      "question_markdown": "Nilai dari **X** pada Figur II adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "63"
+        },
+        {
+          "key": "B",
+          "text_markdown": "65"
+        },
+        {
+          "key": "C",
+          "text_markdown": "67"
+        },
+        {
+          "key": "D",
+          "text_markdown": "69"
+        },
+        {
+          "key": "E",
+          "text_markdown": "72"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Terapkan operasi perkalian diagonal silang (seperti determinan matriks $2 \\times 2$): kalikan sudut (Kiri Atas x Kanan Bawah) lalu kurangkan dengan hasil kali (Kanan Atas x Kiri Bawah)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Relasi Operasi pada Figur I:**\n  - Perkalian diagonal utama: $\\text{Kiri Atas} \\times \\text{Kanan Bawah} = 9 \\times 8 = 72$.\n  - Perkalian diagonal sekunder: $\\text{Kanan Atas} \\times \\text{Kiri Bawah} = 4 \\times 7 = 28$.\n  - Selisih perkalian kedua diagonal menghasilkan angka pusat:\n    $$\\text{Pusat} = (9 \\times 8) - (4 \\times 7) = 72 - 28 = 44$$\n    Formula terbukti valid dan konsisten menghasilkan angka pusat 44.\n- **Penerapan Relasi pada Figur II:**\n  - Perkalian diagonal utama: $11 \\times 9 = 99$.\n  - Perkalian diagonal sekunder: $5 \\times 6 = 30$.\n  - Perhitungan nilai $X$ di pusat Figur II:\n    $$X = (11 \\times 9) - (5 \\times 6) = 99 - 30 = 69$$\n- **Konklusi:** Nilai $X$ pada Figur II adalah **69**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Perkalian Silang Determinan):**\n\n1. Figur I: $(9 \\times 8) - (4 \\times 7) = 72 - 28 = 44$.\n2. Figur II: $(11 \\times 9) - (5 \\times 6) = 99 - 30 = 69$.\n3. Pilihan **D** langsung terbukti akurat dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $99 - 36 = 63$ karena salah mengalikan diagonal sekunder.\n- **Pilihan B Salah:** Menghitung $99 - 34 = 65$ akibat salah mengurangi dasar.\n- **Pilihan C Salah:** Menghitung $99 - 32 = 67$ karena keliru menjumlahkan.\n- **Pilihan E Salah:** Menghitung $(11 \\times 6) + ...$ tanpa pola yang konsisten."
+    },
+    {
+      "example_id": "pu-03-02-ex10",
+      "variation_name": "Variasi 10: Matriks Angka Berpola Kombinasi Dua Kolom Awal Neraca Dagang (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Data simulasi neraca transaksi berjalan fiskal daerah tersusun dalam matriks $3 \\times 3$ yang mematuhi pola operasi horizontal antarkolom:\n\n| Kolom 1 | Kolom 2 | Kolom 3 |\n| :---: | :---: | :---: |\n| 8 | 5 | 54 |\n| 7 | 6 | 56 |\n| 9 | 4 | **X** |",
+      "question_markdown": "Nilai bilangan **X** yang paling tepat untuk melengkapi matriks tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "46"
+        },
+        {
+          "key": "B",
+          "text_markdown": "48"
+        },
+        {
+          "key": "C",
+          "text_markdown": "50"
+        },
+        {
+          "key": "D",
+          "text_markdown": "52"
+        },
+        {
+          "key": "E",
+          "text_markdown": "54"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati angka di Kolom 3 ($54, 56$). Angka tersebut adalah hasil kali dari masing-masing angka Kolom 1 dan Kolom 2 yang masing-masing telah ditambah 1: $(K_1 + 1) \\times (K_2 + 1)$!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Pola Horizontal Baris 1:**\n  - $K_1 = 8, \\; K_2 = 5$\n  - Tambahkan 1 pada masing-masing kolom lalu kalikan:\n    $$K_3 = (8 + 1) \\times (5 + 1) = 9 \\times 6 = 54$$\n    Hasil cocok sempurna dengan angka 54 pada Baris 1.\n- **Verifikasi Formula pada Baris 2:**\n  - $K_1 = 7, \\; K_2 = 6$\n  - Terapkan formula yang sama:\n    $$K_3 = (7 + 1) \\times (6 + 1) = 8 \\times 7 = 56$$\n    Formula terbukti valid $100\\%$ pada Baris 2.\n- **Perhitungan Nilai X pada Baris 3:**\n  - $K_1 = 9, \\; K_2 = 4$\n  - Maka nilai $X$ adalah:\n    $$X = (9 + 1) \\times (4 + 1) = 10 \\times 5 = 50$$\n- **Konklusi:** Nilai $X$ yang melengkapi matriks adalah **50**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat ($(K_1 + 1) \\times (K_2 + 1)$):**\n\n1. Baris 1: $(8+1) \\times (5+1) = 9 \\times 6 = 54$.\n2. Baris 2: $(7+1) \\times (6+1) = 8 \\times 7 = 56$.\n3. Baris 3: $(9+1) \\times (4+1) = 10 \\times 5 = 50$.\n4. Jawaban **C** langsung diperoleh dengan pasti.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $(9 \\times 4) + 10 = 46$ tanpa pola yang konsisten pada baris sebelumnya.\n- **Pilihan B Salah:** Menghitung $10 \\times 4 + 8 = 48$.\n- **Pilihan D Salah:** Menghitung $9 \\times 5 + 7 = 52$.\n- **Pilihan E Salah:** Mengulang angka 54 dari Baris 1."
+    },
+    {
+      "example_id": "pu-03-02-ex11",
+      "variation_name": "Variasi 11: Spasial Segitiga Terbalik Pembagian Selisih Skor Neuroplastisitas (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dua figur segitiga terbalik menyajikan data skor hasil asesmen plastisitas memori kerja pada kelompok rehabilitasi kognitif dengan aturan aritmetika identik:\n- **Segitiga I:** Sudut Kiri Atas = 28, Sudut Kanan Atas = 36, Sudut Bawah = 4, dan Angka Pusat = 16.\n- **Segitiga II:** Sudut Kiri Atas = 38, Sudut Kanan Atas = 52, Sudut Bawah = 5, dan Angka Pusat = X.",
+      "question_markdown": "Nilai dari **X** pada Segitiga II adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "15"
+        },
+        {
+          "key": "B",
+          "text_markdown": "17"
+        },
+        {
+          "key": "C",
+          "text_markdown": "18"
+        },
+        {
+          "key": "D",
+          "text_markdown": "20"
+        },
+        {
+          "key": "E",
+          "text_markdown": "22"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jumlahkan dua sudut di bagian atas, lalu bagilah hasilnya dengan sudut di bagian bawah untuk memperoleh angka di pusat segitiga!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Operasi pada Segitiga I:**\n  - Angka bagian atas: Kiri $= 28$, Kanan $= 36$.\n    $$\\text{Jumlah Atas} = 28 + 36 = 64$$\n  - Angka bagian bawah $= 4$.\n  - Bagi jumlah atas dengan angka bawah:\n    $$\\text{Pusat} = \\frac{28 + 36}{4} = \\frac{64}{4} = 16$$\n    Hasil cocok sempurna dengan angka pusat 16.\n- **Penerapan Operasi pada Segitiga II:**\n  - Angka bagian atas: Kiri $= 38$, Kanan $= 52$.\n    $$\\text{Jumlah Atas} = 38 + 52 = 90$$\n  - Angka bagian bawah $= 5$.\n  - Perhitungan nilai $X$ di pusat Segitiga II:\n    $$X = \\frac{38 + 52}{5} = \\frac{90}{5} = 18$$\n- **Konklusi:** Nilai $X$ pada Segitiga II adalah **18**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Jumlah Atas dibagi Bawah):**\n\n1. Segitiga I: $(28 + 36) / 4 = 64 / 4 = 16$.\n2. Segitiga II: $(38 + 52) / 5 = 90 / 5 = 18$.\n3. Jawaban **C** didapat dalam hitungan 8 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $(38 + 52) / 6 = 15$ karena salah membagi dengan 6 bukan 5.\n- **Pilihan B Salah:** Menghitung $85 / 5 = 17$ akibat keliru menjumlahkan $38 + 52$.\n- **Pilihan D Salah:** Menghitung $(38 + 52 + 10) / 5 = 20$.\n- **Pilihan E Salah:** Menghitung $(38 \\times 52) / ...$ tanpa operasi pembagian yang sesuai."
+    },
+    {
+      "example_id": "pu-03-02-ex12",
+      "variation_name": "Variasi 12: Serial Spasial Geometris Robotik Lengan Fabrikasi Otomatis (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sistem inspeksi pengelasan lengan robotik cerdas membaca transformasi serial simbol grafis pada panel kontrol mesin mikroelektronika. Transformasi mematuhi tiga aturan berkala:\n1. **Rotasi Lengan Garis:** Berputar $60^\\circ$ searah jarum jam pada setiap langkah (Langkah 1: Sudut $0^\\circ$ / arah jam 3, Langkah 2: Sudut $60^\\circ$ / arah jam 5, Langkah 3: Sudut $120^\\circ$ / arah jam 7, Langkah 4: Sudut $180^\\circ$ / arah jam 9).\n2. **Bentuk Simbol di Ujung Lengan:** Mengikuti siklus bentuk penambahan sisi: Langkah 1 (Lingkaran / 0 sisi), Langkah 2 (Segitiga / 3 sisi), Langkah 3 (Bujur Sangkar / 4 sisi), Langkah 4 (Segilima / 5 sisi).\n3. **Warna Simbol di Ujung Lengan:** Mengalami siklus biner inversi warna: Langkah 1 (Hitam Penuh), Langkah 2 (Putih Polos), Langkah 3 (Hitam Penuh), Langkah 4 (Putih Polos).",
+      "question_markdown": "Berdasarkan pola transformasi berkala tersebut, karakteristik lengkap gambar pada **Langkah ke-5** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Lengan mengarah ke sudut 240 derajat (arah jam 11), simbol ujung berupa Segilima berwarna Putih Polos"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Lengan mengarah ke sudut 240 derajat (arah jam 11), simbol ujung berupa Segienam berwarna Hitam Penuh"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Lengan mengarah ke sudut 240 derajat (arah jam 11), simbol ujung berupa Segienam berwarna Putih Polos"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Lengan mengarah ke sudut 270 derajat (arah jam 12), simbol ujung berupa Segienam berwarna Hitam Penuh"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Lengan mengarah ke sudut 210 derajat (arah jam 10), simbol ujung berupa Segitujuh berwarna Hitam Penuh"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Periksa tiga parameter: (1) Sudut rotasi: $180^\\circ + 60^\\circ = 240^\\circ$ (arah jam 11). (2) Bentuk poligon: setelah segilima (5 sisi) pasti segienam (6 sisi). (3) Warna: setelah putih pada langkah 4 pasti kembali ke hitam!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Elemen 1 (Rotasi Lengan Garis):**\n  - Pola rotasi $+60^\\circ$ searah jarum jam:\n    $$0^\\circ \\to 60^\\circ \\to 120^\\circ \\to 180^\\circ \\to 240^\\circ$$\n  - Sudut $240^\\circ$ mengarah ke posisi jam 11 (serong kiri atas).\n- **Analisis Elemen 2 (Bentuk Geometri Ujung):**\n  - Perkembangan jumlah sisi poligon:\n    $$\\text{Lingkaran} \\to \\text{Segitiga (3)} \\to \\text{Segiempat (4)} \\to \\text{Segilima (5)} \\to \\text{Segienam (6)}$$\n  - Maka Langkah 5 menghasilkan **Segienam (Heksagon)**.\n- **Analisis Elemen 3 (Warna Simbol):**\n  - Pola inversi biner:\n    $$\\text{Hitam (1)} \\to \\text{Putih (2)} \\to \\text{Hitam (3)} \\to \\text{Putih (4)} \\to \\text{Hitam Penuh (5)}$$\n- **Sintesis Karakteristik Lengkap:** Lengan mengarah ke sudut $240^\\circ$ (arah jam 11), simbol ujung berupa Segienam, dan berwarna Hitam Penuh.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Tiga Langkah Cepat):**\n\n1. Sudut: $180^\\circ + 60^\\circ = 240^\\circ$ (singkirkan D dan E).\n2. Bentuk: Setelah segilima adalah segienam (singkirkan A).\n3. Warna: Langkah ganjil (1, 3, 5) selalu Hitam Penuh (singkirkan C).\n4. Pilihan **B** langsung terkunci sempurna.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bentuk tidak bertambah sisi (masih segilima) dan warna keliru.\n- **Pilihan C Salah:** Warna simbol keliru putih (langkah ke-5 wajib hitam penuh).\n- **Pilihan D Salah:** Sudut rotasi keliru $270^\\circ$ (terlalu jauh $90^\\circ$).\n- **Pilihan E Salah:** Sudut rotasi keliru $210^\\circ$ dan jumlah sisi melompat ke segitujuh."
+    },
+    {
+      "example_id": "pu-03-02-ex13",
+      "variation_name": "Variasi 13: Spasial Lingkaran Konsentris Penataan Zonasi Kompleks Percandian (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah skema zonasi cagar budaya percandian kuno digambarkan dalam dua figur lingkaran konsentris bertingkat (Lingkaran Luar, Lingkaran Tengah, dan Titik Pusat). Angka-angka pada setiap lingkaran diatur dengan formula matematika yang identik:\n- **Figur I:** Lingkaran Luar memuat angka 13 dan 17, Lingkaran Tengah memuat angka 8 dan 4, dan Titik Pusat bernilai 15.\n- **Figur II:** Lingkaran Luar memuat angka 16 dan 24, Lingkaran Tengah memuat angka 8 dan 5, dan Titik Pusat bernilai X.",
+      "question_markdown": "Nilai dari **X** pada Figur II adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "20"
+        },
+        {
+          "key": "B",
+          "text_markdown": "22"
+        },
+        {
+          "key": "C",
+          "text_markdown": "24"
+        },
+        {
+          "key": "D",
+          "text_markdown": "25"
+        },
+        {
+          "key": "E",
+          "text_markdown": "28"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jumlahkan kedua angka di Lingkaran Luar ($13 + 17 = 30$). Kemudian kalikan dengan angka kedua di Lingkaran Tengah ($30 \\times 4 = 120$), lalu bagilah dengan angka pertama di Lingkaran Tengah ($120 / 8 = 15$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Formula pada Figur I:**\n  - Angka Lingkaran Luar: $L_1 = 13, \\; L_2 = 17 \\implies L_1 + L_2 = 13 + 17 = 30$.\n  - Angka Lingkaran Tengah: $T_1 = 8, \\; T_2 = 4$.\n  - Operasi kombinasi untuk memperoleh Titik Pusat:\n    $$\\text{Pusat} = \\frac{(L_1 + L_2) \\times T_2}{T_1} = \\frac{30 \\times 4}{8} = \\frac{120}{8} = 15$$\n    Formula tepat menghasilkan angka titik pusat 15.\n- **Penerapan Formula pada Figur II:**\n  - Angka Lingkaran Luar: $L_1 = 16, \\; L_2 = 24 \\implies L_1 + L_2 = 16 + 24 = 40$.\n  - Angka Lingkaran Tengah: $T_1 = 8, \\; T_2 = 5$.\n  - Perhitungan nilai $X$ di Titik Pusat Figur II:\n    $$X = \\frac{(16 + 24) \\times 5}{8} = \\frac{40 \\times 5}{8} = 5 \\times 5 = 25$$\n- **Konklusi:** Nilai $X$ pada Figur II adalah **25**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Jumlah Luar x Tengah2 / Tengah1):**\n\n1. Figur I: $(13 + 17) \\times 4 / 8 = 30 / 2 = 15$.\n2. Figur II: $(16 + 24) \\times 5 / 8 = 40 \\times 5 / 8 = 5 \\times 5 = 25$.\n3. Pilihan **D** langsung diperoleh secara pasti.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $(40 \\times 4) / 8 = 20$ karena keliru menggunakan angka $T_2$ dari Figur I.\n- **Pilihan B Salah:** Menghitung $(40 + 5) / 2 = 22,5$ dibulatkan tanpa pola yang konsisten.\n- **Pilihan C Salah:** Menghitung $(40 \\times 6) / 10 = 24$.\n- **Pilihan E Salah:** Menghitung $(40 \\times 7) / 10 = 28$."
+    },
+    {
+      "example_id": "pu-03-02-ex14",
+      "variation_name": "Variasi 14: Spasial Belah Ketupat Fluktuasi Biomassa Plankton Estuari (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dua figur belah ketupat berangka menyajikan data biomassa plankton estuari pesisir dengan formula operasi matematika yang identik:\n- **Figur I:** Sudut Atas = 16, Sudut Bawah = 9, Sudut Kiri = 6, Sudut Kanan = 7, dan Angka Pusat = 17.\n- **Figur II:** Sudut Atas = 20, Sudut Bawah = 12, Sudut Kiri = 8, Sudut Kanan = 9, dan Angka Pusat = X.",
+      "question_markdown": "Nilai dari **X** pada Figur II adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "18"
+        },
+        {
+          "key": "B",
+          "text_markdown": "19"
+        },
+        {
+          "key": "C",
+          "text_markdown": "21"
+        },
+        {
+          "key": "D",
+          "text_markdown": "23"
+        },
+        {
+          "key": "E",
+          "text_markdown": "25"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Kalikan angka Sudut Atas dan Sudut Bawah ($16 \\times 9 = 144$), bagilah dengan angka Sudut Kiri ($144 / 6 = 24$), lalu kurangkan dengan angka Sudut Kanan ($24 - 7 = 17$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Formula pada Figur I:**\n  - Sudut Atas $= 16$, Sudut Bawah $= 9$.\n    $$\\text{Hasil Kali Vertikal} = 16 \\times 9 = 144$$\n  - Sudut Kiri $= 6$, Sudut Kanan $= 7$.\n  - Operasi kombinasi untuk memperoleh Angka Pusat:\n    $$\\text{Pusat} = \\frac{\\text{Atas} \\times \\text{Bawah}}{\\text{Kiri}} - \\text{Kanan} = \\frac{16 \\times 9}{6} - 7 = 24 - 7 = 17$$\n    Formula tepat menghasilkan angka pusat 17.\n- **Penerapan Formula pada Figur II:**\n  - Sudut Atas $= 20$, Sudut Bawah $= 12$.\n    $$\\text{Hasil Kali Vertikal} = 20 \\times 12 = 240$$\n  - Sudut Kiri $= 8$, Sudut Kanan $= 9$.\n  - Perhitungan nilai $X$ di pusat Figur II:\n    $$X = \\frac{20 \\times 12}{8} - 9 = \\frac{240}{8} - 9 = 30 - 9 = 21$$\n- **Konklusi:** Nilai $X$ pada Figur II adalah **21**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat ((Atas x Bawah / Kiri) - Kanan):**\n\n1. Figur I: $(16 \\times 9 / 6) - 7 = 24 - 7 = 17$.\n2. Figur II: $(20 \\times 12 / 8) - 9 = 30 - 9 = 21$.\n3. Jawaban **C** langsung diperoleh dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $30 - 12 = 18$ karena salah mengurangkan dengan Sudut Bawah bukan Sudut Kanan.\n- **Pilihan B Salah:** Menghitung $(20 \\times 12 / 10) - 5 = 19$.\n- **Pilihan D Salah:** Menghitung $30 - 7 = 23$ karena menggunakan angka Sudut Kanan dari Figur I.\n- **Pilihan E Salah:** Menghitung $(20 + 12 + 8) / ...$ tanpa operasi perkalian vertikal."
+    },
+    {
+      "example_id": "pu-03-02-ex15",
+      "variation_name": "Variasi 15: Matriks Angka Berpola Efisiensi Logistik Peti Kemas (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan susunan angka pada matriks $3 \\times 3$ evaluasi biaya logistik berikut:\n| Kolom 1 | Kolom 2 | Kolom 3 |\n| :---: | :---: | :---: |\n| 6 | 4 | 14 |\n| 7 | 5 | 23 |\n| 8 | 6 | **X** |",
+      "question_markdown": "Nilai bilangan **X** yang paling tepat melengkapi matriks tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "30"
+        },
+        {
+          "key": "B",
+          "text_markdown": "32"
+        },
+        {
+          "key": "C",
+          "text_markdown": "34"
+        },
+        {
+          "key": "D",
+          "text_markdown": "36"
+        },
+        {
+          "key": "E",
+          "text_markdown": "38"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati hubungan horizontal antarbaris: kalikan Kolom 1 dan Kolom 2 ($6 \\times 4 = 24$), lalu kurangkan dengan jumlah Kolom 1 dan Kolom 2 ($6 + 4 = 10$), sehingga $24 - 10 = 14$! Pola ini juga setara dengan $(K_1 - 1)(K_2 - 1) - 1$.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Pola Horizontal Baris 1:**\n  - $K_1 = 6, \\; K_2 = 4$\n  - Operasi perkalian dikurangi jumlah:\n    $$K_3 = (K_1 \\times K_2) - (K_1 + K_2) = (6 \\times 4) - (6 + 4) = 24 - 10 = 14$$\n    Hasil cocok sempurna dengan angka 14 pada Baris 1.\n- **Verifikasi Formula pada Baris 2:**\n  - $K_1 = 7, \\; K_2 = 5$\n  - Terapkan formula yang sama:\n    $$K_3 = (7 \\times 5) - (7 + 5) = 35 - 12 = 23$$\n    Formula terbukti valid $100\\%$ pada Baris 2.\n- **Perhitungan Nilai X pada Baris 3:**\n  - $K_1 = 8, \\; K_2 = 6$\n  - Nilai $X$:\n    $$X = (8 \\times 6) - (8 + 6) = 48 - 14 = 34$$\n- **Verifikasi Vertikal Konsisten:**\n  - Barisan Kolom 3: $14 \\xrightarrow{+9} 23 \\xrightarrow{+11} 34$ (selisih bertambah $+2$, konsisten dengan pertambahan $+1$ pada Kolom 1 dan Kolom 2).\n- **Konklusi:** Nilai $X$ yang melengkapi matriks adalah **34**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Perkalian Minus Jumlah):**\n\n1. Baris 1: $24 - 10 = 14$.\n2. Baris 2: $35 - 12 = 23$.\n3. Baris 3: $48 - 14 = 34$.\n4. Jawaban **C** langsung terkunci pasti.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $48 - 18 = 30$ karena salah menjumlahkan $8 + 6$.\n- **Pilihan B Salah:** Menghitung $48 - 16 = 32$.\n- **Pilihan D Salah:** Menghitung $48 - 12 = 36$ karena menggunakan pengurang dari Baris 2.\n- **Pilihan E Salah:** Menghitung $48 - 10 = 38$ karena menggunakan pengurang dari Baris 1."
+    },
+    {
+      "example_id": "pu-03-02-ex16",
+      "variation_name": "Variasi 16: Spasial Lingkaran Empat Kuadran Biomarker Kebugaran Kognitif (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dua figur lingkaran empat kuadran menyajikan data biomarker kebugaran neurokognitif dengan aturan aritmetika identik:\n- **Figur I:** Kuadran Kiri Atas = 15, Kuadran Kiri Bawah = 7, Kuadran Kanan Atas = 25, Kuadran Kanan Bawah = 4, dan Angka Pusat = 5.\n- **Figur II:** Kuadran Kiri Atas = 16, Kuadran Kiri Bawah = 8, Kuadran Kanan Atas = 22, Kuadran Kanan Bawah = 5, dan Angka Pusat = X.",
+      "question_markdown": "Nilai dari **X** pada Figur II adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "14"
+        },
+        {
+          "key": "B",
+          "text_markdown": "16"
+        },
+        {
+          "key": "C",
+          "text_markdown": "18"
+        },
+        {
+          "key": "D",
+          "text_markdown": "20"
+        },
+        {
+          "key": "E",
+          "text_markdown": "22"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Kalikan dua angka di kolom sisi kiri ($15 \\times 7 = 105$), kalikan dua angka di kolom sisi kanan ($25 \\times 4 = 100$), lalu hitung selisih hasil kali sisi kiri dikurangi sisi kanan ($105 - 100 = 5$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Operasi pada Figur I:**\n  - Sisi Kiri: $\\text{Atas} = 15, \\; \\text{Bawah} = 7 \\implies 15 \\times 7 = 105$.\n  - Sisi Kanan: $\\text{Atas} = 25, \\; \\text{Bawah} = 4 \\implies 25 \\times 4 = 100$.\n  - Selisih hasil kali kiri dan kanan:\n    $$\\text{Pusat} = (15 \\times 7) - (25 \\times 4) = 105 - 100 = 5$$\n    Hasil cocok sempurna dengan angka pusat 5.\n- **Penerapan Operasi pada Figur II:**\n  - Sisi Kiri: $\\text{Atas} = 16, \\; \\text{Bawah} = 8 \\implies 16 \\times 8 = 128$.\n  - Sisi Kanan: $\\text{Atas} = 22, \\; \\text{Bawah} = 5 \\implies 22 \\times 5 = 110$.\n  - Perhitungan nilai $X$ di pusat Figur II:\n    $$X = (16 \\times 8) - (22 \\times 5) = 128 - 110 = 18$$\n- **Konklusi:** Nilai $X$ pada Figur II adalah **18**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Perkalian Kolom Kiri Minus Kolom Kanan):**\n\n1. Figur I: $(15 \\times 7) - (25 \\times 4) = 105 - 100 = 5$.\n2. Figur II: $(16 \\times 8) - (22 \\times 5) = 128 - 110 = 18$.\n3. Jawaban **C** didapat dalam waktu kurang dari 12 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung $128 - 114 = 14$.\n- **Pilihan B Salah:** Menghitung $128 - 112 = 16$.\n- **Pilihan D Salah:** Menghitung $130 - 110 = 20$.\n- **Pilihan E Salah:** Menghitung $(16 + 8) - (22 - 5) = 24 - 17 = 7$ tanpa operasi perkalian kolom."
+    },
+    {
+      "example_id": "pu-03-02-ex17",
+      "variation_name": "Variasi 17: Serial Spasial Geometris Transformasi Mikro-Matriks Litografi Semikonduktor (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sistem inspeksi litografi semikonduktor memantau pola serial mikro-matriks uji yang mengalami transformasi bentuk geometris pada setiap siklus langkah (Langkah 1 hingga Langkah 5):\n1. **Poligon Utama Luar:** Mengikuti barisan pertambahan jumlah sisi poligon beraturan: Langkah 1 (Segitiga / 3 sisi), Langkah 2 (Bujur Sangkar / 4 sisi), Langkah 3 (Segilima / 5 sisi), Langkah 4 (Segienam / 6 sisi).\n2. **Panah Indikator Pusat:** Berputar $45^\\circ$ berlawanan arah jarum jam pada setiap langkah: Langkah 1 (Menghadap Timur / jam 3), Langkah 2 (Menghadap Timur Laut / jam 1.30), Langkah 3 (Menghadap Utara / jam 12), Langkah 4 (Menghadap Barat Laut / jam 10.30).\n3. **Jumlah Titik Sensor:** Bertambah mengikuti barisan kuadrat sempurna: Langkah 1 (1 titik), Langkah 2 (4 titik), Langkah 3 (9 titik), Langkah 4 (16 titik).\n4. **Warna Isian Poligon:** Mengalami siklus 3 fase berulang: Langkah 1 (Putih Polos), Langkah 2 (Abu-abu Terarsir), Langkah 3 (Hitam Penuh), Langkah 4 (Putih Polos).",
+      "question_markdown": "Berdasarkan pola serial transformasi geometris tersebut, karakteristik lengkap gambar pada **Langkah ke-5** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Poligon berupa Segitujuh beraturan, panah menghadap ke Barat (arah jam 9), memuat 20 titik sensor, dan warna isian Hitam Penuh"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Poligon berupa Segienam beraturan, panah menghadap ke Barat (arah jam 9), memuat 25 titik sensor, dan warna isian Abu-abu Terarsir"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Poligon berupa Segitujuh beraturan, panah menghadap ke Barat (arah jam 9), memuat 25 titik sensor, dan warna isian Abu-abu Terarsir"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Poligon berupa Segitujuh beraturan, panah menghadap ke Barat Daya (arah jam 7.30), memuat 25 titik sensor, dan warna isian Abu-abu Terarsir"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Poligon berupa Segidelapan beraturan, panah menghadap ke Barat (arah jam 9), memuat 25 titik sensor, dan warna isian Putih Polos"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Evaluasi 4 elemen satu per satu: (1) Sisi poligon: setelah segienam adalah segitujuh (7 sisi). (2) Arah panah: $135^\\circ + 45^\\circ = 180^\\circ$ (menghadap Barat / jam 9). (3) Titik sensor: $5^2 = 25$ titik. (4) Warna: siklus Putih $\\to$ Abu-abu $\\to$ Hitam $\\to$ Putih $\\to$ Abu-abu Terarsir!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Elemen 1 (Bentuk Poligon Utama):**\n  - Barisan sisi poligon beraturan bertambah 1:\n    $$3 \\; (\\text{Segitiga}) \\to 4 \\; (\\text{Bujur Sangkar}) \\to 5 \\; (\\text{Segilima}) \\to 6 \\; (\\text{Segienam}) \\to 7 \\; (\\text{Segitujuh / Heptagon})$$\n  - Poligon pada Langkah 5 adalah **Segitujuh beraturan**.\n- **Analisis Elemen 2 (Rotasi Panah Pusat):**\n  - Rotasi $+45^\\circ$ berlawanan jarum jam (CCW):\n    $$\\text{Timur} (0^\\circ) \\to \\text{Timur Laut} (45^\\circ) \\to \\text{Utara} (90^\\circ) \\to \\text{Barat Laut} (135^\\circ) \\to \\text{Barat} (180^\\circ)$$\n  - Pada Langkah 5, panah tepat menghadap ke **Barat (arah jam 9)**.\n- **Analisis Elemen 3 (Jumlah Titik Sensor):**\n  - Barisan bilangan kuadrat sempurna: $1^2 = 1, \\; 2^2 = 4, \\; 3^2 = 9, \\; 4^2 = 16$.\n  - Suku ke-5 adalah $5^2 = \\mathbf{25}$ titik sensor.\n- **Analisis Elemen 4 (Siklus Warna Isian):**\n  - Siklus 3 fase berulang: Putih (1), Abu-abu (2), Hitam (3), Putih (4), **Abu-abu Terarsir (5)**.\n- **Sintesis Karakteristik Lengkap:** Poligon berupa Segitujuh beraturan, panah menghadap ke Barat (arah jam 9), memuat 25 titik sensor, dan warna isian Abu-abu Terarsir.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Parameter Bertahap):**\n\n1. Sisi poligon: setelah 6 sisi pasti 7 sisi (singkirkan B dan E).\n2. Titik sensor: kuadrat dari 5 adalah 25 titik (singkirkan A).\n3. Arah panah: dari Barat Laut berputar $45^\\circ$ menjadi Barat (singkirkan D).\n4. Pilihan **C** langsung terpilih dengan akurasi 100%.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Jumlah titik sensor keliru 20 titik dan warna isian keliru Hitam Penuh.\n- **Pilihan B Salah:** Bentuk poligon tidak bertambah sisi (masih segienam).\n- **Pilihan D Salah:** Arah panah berputar berlebihan ke Barat Daya ($225^\\circ$).\n- **Pilihan E Salah:** Jumlah sisi poligon melompat ke segidelapan dan warna isian keliru Putih Polos."
+    },
+    {
+      "example_id": "pu-03-02-ex18",
+      "variation_name": "Variasi 18: Analogi Struktur Hubungan Bentuk Motif Tenun Tradisional (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Diberikan hubungan analogi bentuk geometris $Gambar \\; A : Gambar \\; B = Gambar \\; C : Gambar \\; D$ yang merepresentasikan evolusi motif ukiran tenun ikat tradisional nusantara:\n- **Gambar A:** Memuat sebuah bangun belah ketupat besar bergaris ganda yang di dalamnya terdapat 3 lingkaran hitam padat dan 2 segitiga putih kecil.\n- **Gambar B:** Mengalami transformasi menjadi sebuah lingkaran besar bergaris ganda yang di dalamnya memuat 3 belah ketupat putih dan 2 segitiga hitam kecil.\n- **Gambar C:** Memuat sebuah bangun segilima besar bergaris ganda yang di dalamnya terdapat 4 bujur sangkar hitam padat dan 3 bintang putih kecil.\n- **Gambar D:** Merupakan hasil transformasi dari Gambar C dengan aturan analogi yang identik dengan transformasi Gambar A ke Gambar B.",
+      "question_markdown": "Berdasarkan analogi struktur hubungan bentuk tersebut, karakteristik dari **Gambar D** yang paling tepat adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Bangun luar berupa segilima bergaris ganda, memuat 4 bujur sangkar putih dan 3 bintang hitam"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Bangun luar berupa bujur sangkar bergaris ganda, memuat 4 segilima putih dan 3 bintang hitam"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Bangun luar berupa bujur sangkar bergaris ganda, memuat 4 segilima hitam dan 3 bintang putih"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Bangun luar berupa bintang besar bergaris ganda, memuat 3 bujur sangkar putih dan 4 segilima hitam"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Bangun luar berupa bujur sangkar bergaris tunggal, memuat 3 segilima putih dan 4 bintang hitam"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati tiga aturan transformasi analogi $A \\to B$: (1) Bentuk luar mengadopsi bentuk elemen pertama di dalam ($Lingkaran$). (2) Elemen luar yang lama ($Belah Ketupat$) masuk ke dalam dengan jumlah sama dengan elemen pertama (3 buah) dan warnanya berubah menjadi putih. (3) Elemen kedua ($Segitiga$) tetap berada di dalam dengan jumlah sama namun mengalami inversi warna dari putih ke hitam!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Aturan Analogi ($A \\to B$):**\n  - **Aturan 1 (Pertukaran Bentuk Luar):** Bentuk luar Gambar B mengadopsi bentuk elemen pertama yang ada di dalam Gambar A (lingkaran) dengan tetap mempertahankan bingkai garis ganda.\n  - **Aturan 2 (Transformasi Elemen Pertama):** Bentuk luar Gambar A (belah ketupat) berpindah ke dalam Gambar B dengan jumlah sebanyak elemen pertama (3 buah) dan warnanya berubah dari hitam menjadi putih (3 belah ketupat putih).\n  - **Aturan 3 (Inversi Warna Elemen Kedua):** Elemen kedua (segitiga) tetap berada di dalam dengan jumlah yang sama (2 buah), namun warnanya mengalami inversi dari putih menjadi hitam (2 segitiga hitam).\n- **Penerapan Aturan Analogi pada Gambar C untuk Menghasilkan Gambar D:**\n  - Dalam Gambar C:\n    - Bentuk luar: Segilima besar bergaris ganda.\n    - Elemen dalam 1: 4 bujur sangkar hitam padat.\n    - Elemen dalam 2: 3 bintang putih kecil.\n  - Transformasi menjadi Gambar D:\n    - **Bentuk Luar Baru:** Mengadopsi elemen dalam 1 $\\implies$ **Bujur sangkar besar bergaris ganda**.\n    - **Elemen Dalam 1 Baru:** Bentuk luar lama (segilima) masuk ke dalam dengan jumlah 4 buah dan berubah warna menjadi putih $\\implies$ **4 segilima putih**.\n    - **Elemen Dalam 2 Baru:** Elemen kedua (bintang) tetap ada 3 buah dengan inversi warna menjadi hitam $\\implies$ **3 bintang hitam**.\n- **Sintesis Gambar D:** Bangun luar berupa bujur sangkar bergaris ganda, memuat 4 segilima putih dan 3 bintang hitam.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Tukar Peran Luar-Dalam & Inversi Warna):**\n\n1. Bentuk luar baru: Bujur sangkar bergaris ganda (singkirkan A dan D).\n2. Elemen dalam 1: Segilima putih berjumlah 4 (singkirkan C dan E).\n3. Elemen dalam 2: Bintang hitam berjumlah 3.\n4. Pilihan **B** langsung terbukti benar tanpa keraguan.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bentuk luar tidak berganti menjadi bujur sangkar.\n- **Pilihan C Salah:** Warna segilima tidak dibalik menjadi putih (masih hitam).\n- **Pilihan D Salah:** Bentuk luar keliru mengambil bentuk bintang.\n- **Pilihan E Salah:** Bingkai luar keliru bergaris tunggal dan jumlah segilima salah (3 bukan 4)."
     }
   ]
 }

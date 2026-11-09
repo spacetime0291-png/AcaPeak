@@ -15,7 +15,7 @@ export const MATERIAL_PU_02_06: Material = {
       "Evaluasi Tingkat Pengaruh Argumen dan Pengecoh Netral (HOTS)"
     ],
     "requires_svg": false,
-    "updated_at": "2026-11-08"
+    "updated_at": "2026-11-09"
   },
   "content": {
     "tactical_overview": "Evaluasi argumen menguji kejelian Anda dalam menganalisis ketangguhan hubungan antara premis bukti dan klaim simpulan yang diajukan oleh seorang penulis atau peneliti. Soal jenis ini rutin muncul dengan bobot skor tinggi di UTBK SNBT. Kunci utama keberhasilan terletak pada ketepatan Anda membidik simpulan inti dan mengenali asumsi kausalitas di balik klaim tersebut. Pernyataan yang memperlemah selalu merusak jembatan sebab-akibat atau menghadirkan penjelasan alternatif, pernyataan yang memperkuat menutup celah kelemahan atau membuktikan konsistensi korelasi, sedangkan jebakan pengecoh yang paling sering mengecoh siswa adalah opsi netral yang tampak sangat ilmiah tetapi tidak memengaruhi hubungan sebab-akibat klaim utama.",
@@ -138,6 +138,531 @@ export const MATERIAL_PU_02_06: Material = {
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Klaim Superlatif:**\n  - Klaim peneliti mengandung kata kuantor ekstrem: *\"metode non-farmakologis paling efektif\"*.\n  - Untuk meruntuhkan klaim ini, cukup dibuktikan adanya metode non-farmakologis lain yang efektivitasnya melampaui stimulasi tersebut.\n- **Evaluasi Opsi:**\n  - Opsi B membuktikan bahwa terapi relaksasi pernapasan terpandu mempercepat waktu lelap 40 menit (lebih unggul dari 25 menit) dengan perbaikan tidur yang lebih tahan lama.\n  - Keberadaan metode tandingan yang terbukti lebih efektif secara otomatis menggugurkan klaim superlatif peneliti.\n- **Konklusi:** Pernyataan B paling telak meragukan dan meruntuhkan kesimpulan ketua peneliti.\n\n**Jawaban: B**",
       "quick_trick_markdown": "**Cara Cepat (Runtuhkan Kata \"Paling\"):**\n\n1. Klaim: *Binaural beats adalah metode non-obat PALING EFEKTIF*.\n2. Cari sanggahan: Adakah metode lain yang terbukti LEBIH EFEKTIF?\n3. Opsi B menyajikan terapi pernapasan yang mempercepat 40 menit (vs 25 menit binaural beats).\n4. Klaim \"paling efektif\" seketika runtuh. Jawaban: **B**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pasien merasa rileks justru memperkuat manfaat stimulasi, bukan memperlemah.\n- **Pilihan C Salah:** Harga perangkat terjangkau adalah faktor ekonomi yang netral terhadap efektivitas medis.\n- **Pilihan D Salah:** Keluhan 2 orang (1%) akibat earphone sempit adalah isu teknis minoritas yang tidak menggugurkan hasil 99% pasien.\n- **Pilihan E Salah:** Sejarah musik klasik adalah latar belakang historis yang netral dan tidak menguji efektivitas metode baru."
+    },
+    {
+      "example_id": "pu-02-06-ex4",
+      "variation_name": "Variasi 1: Pelemahan Argumen via Penjelasan Alternatif Ekologis (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah tim peneliti kelautan mengamati peningkatan tutupan karang keras (hard coral cover) sebesar 28% di perairan teluk zona konservasi X selama dua tahun terakhir setelah peletakan struktur terumbu buatan berbahan beton porous. Peneliti menyimpulkan bahwa peletakan struktur beton porous tersebut merupakan penyebab utama pemulihan tutupan karang keras di perairan teluk tersebut.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERLEMAH** kesimpulan peneliti tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Biaya produksi dan pengangkutan struktur terumbu buatan beton porous lebih hemat dibandingkan struktur berbahan logam."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Wilayah kontrol di perairan teluk yang sama namun sama sekali tidak dipasangi struktur beton porous juga mengalami peningkatan tutupan karang keras sebesar 27% akibat terjadinya arus dingin upwelling yang meredam pemanasan air laut."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Larva karang (planula) terbukti menempel lebih cepat pada substrat buatan berpori dibandingkan pada permukaan batu alami yang halus."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Beberapa nelayan lokal melaporkan peningkatan tangkapan ikan karang di sekitar area peletakan struktur terumbu buatan tersebut."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Struktur beton porous membutuhkan waktu sekitar enam bulan sebelum ditumbuhi alga kapur yang memikat larva karang."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim peneliti: Struktur beton porous adalah *penyebab utama* kenaikan tutupan karang 28%. Untuk meruntuhkan klaim kausalitas ini, cari bukti yang menunjukkan bahwa pertumbuhan karang terjadi merata di seluruh perairan karena faktor oseanografi alami, bahkan di tempat yang tanpa struktur buatan!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Terumbu buatan beton porous diletakkan $\\to$ Tutupan karang keras naik 28% dalam dua tahun.\n  - *Simpulan Peneliti:* Peletakan beton porous adalah penyebab utama pemulihan karang keras ($Struktur Beton \\to Tutupan Karang Naik$).\n- **Uji Pelemahan Argumen:**\n  - Kausalitas peneliti rentan runtuh jika ada penjelasan alternatif (*alternative explanation*) atau jika korelasi tersebut terbukti bersifat kebetulan (*spurious correlation*).\n  - Pilihan B menyajikan data kelompok kontrol: wilayah teluk yang sama tanpa struktur beton buatan ternyata juga mengalami kenaikan tutupan karang keras sebesar 27% (hampir identik) yang didorong oleh fenomena arus dingin *upwelling*.\n  - Fakta bahwa karang tetap pulih secara seragam tanpa adanya struktur beton buatan membuktikan bahwa penyebab utama pemulihan adalah arus dingin *upwelling*, bukan struktur beton porous.\n- **Konklusi:** Pernyataan B paling telak menggugurkan dan memperlemah kesimpulan peneliti.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cek Kelompok Kontrol Tanpa Penyebab):**\n\n1. Klaim: *Struktur beton yang menyebabkan karang naik 28%*.\n2. Uji tandingan: Bagaimana dengan area yang TIDAK dipasangi beton?\n3. Opsi B menunjukkan area tanpa beton juga naik 27% karena arus dingin alami.\n4. Ini membuktikan karang tumbuh bukan karena beton, melainkan faktor iklim alami. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Biaya produksi ekonomis adalah faktor finansial operasional yang netral terhadap efektivitas biologis pertumbuhan karang.\n- **Pilihan C Salah:** Penempelan larva pada beton berpori justru memperkuat alasan mengapa struktur tersebut efektif, bukan memperlemah.\n- **Pilihan D Salah:** Laporan tangkapan ikan nelayan adalah dampak ekologis sekunder yang tidak membantah peningkatan tutupan karang keras.\n- **Pilihan E Salah:** Waktu kolonisasi alga kapur selama 6 bulan adalah dinamika suksesi alami yang tetap selaras dengan rentang riset 2 tahun."
+    },
+    {
+      "example_id": "pu-02-06-ex5",
+      "variation_name": "Variasi 2: Penguatan Argumen via Eliminasi Variabel Luar Kebijakan (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Otoritas pelabuhan nasional menerapkan platform digital logistik terintegrasi untuk memangkas birokrasi verifikasi dokumen izin impor peti kemas. Tiga bulan pasca-penerapan sistem digital ini, rata-rata waktu inap peti kemas (dwelling time) di pelabuhan utama turun signifikan dari 5,4 hari menjadi 2,8 hari. Kepala otoritas pelabuhan menyimpulkan bahwa digitalisasi verifikasi dokumen adalah faktor kunci yang berhasil memangkas dwelling time pelabuhan.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERKUAT** kesimpulan Kepala Otoritas Pelabuhan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Sejumlah importir mengeluhkan gangguan jaringan server aplikasi logistik pada minggu pertama peluncuran sistem."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Asosiasi logistik memberikan apresiasi tertulis atas komitmen otoritas pelabuhan dalam memodernisasi layanan kepelabuhanan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pada periode tiga bulan yang sama, volume kedatangan kapal kontainer turun drastis 50% akibat kelesuan ekonomi perdagangan internasional."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Audit operasional mencatat bahwa durasi persetujuan dokumen impor terpangkas dari rata-rata 3,4 hari menjadi hanya 4 jam kerja, sedangkan durasi penanganan fisik kontainer di dermaga tetap tidak berubah."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pelabuhan dagang di negara tetangga telah menerapkan sistem perizinan digital logistik yang serupa sejak lima tahun lalu."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim: Pemangkasan dwelling time disebabkan oleh digitalisasi verifikasi dokumen. Cari bukti yang mengonfirmasi bahwa komponen dwelling time yang terpangkas secara nyata memang berasal dari pos durasi verifikasi dokumen, bukan dari kecepatan bongkar muat fisik!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Platform digital diterapkan $\\to$ *Dwelling time* turun dari 5,4 hari menjadi 2,8 hari (turun 2,6 hari).\n  - *Simpulan:* Digitalisasi dokumen adalah faktor penentu penurunan waktu inap ($Digitalisasi Dokumen \\to Dwelling Time Turun$).\n- **Uji Penguatan Argumen:**\n  - *Dwelling time* terdiri dari dua komponen: waktu administrasi dokumen dan waktu penanganan fisik kargo.\n  - Penurunan bisa saja terjadi karena faktor lain (misalnya penambahan derek atau sepinya kontainer).\n  - Pilihan D menunjukkan data audit terperinci: durasi persetujuan dokumen turun drastis dari 3,4 hari menjadi 4 jam kerja (turun sekitar 3,2 hari), sementara waktu pemindahan fisik kontainer tidak berubah sama sekali.\n  - Data ini mengonfirmasi secara pasti bahwa lokus penurunan waktu inap 100% bersumber dari efisiensi verifikasi dokumen digital.\n- **Konklusi:** Pernyataan D paling kuat memvalidasi hubungan sebab-akibat simpulan kepala otoritas.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Konfirmasi Mekanisme Langsung):**\n\n1. Simpulan: *Digitalisasi dokumen $\\to$ Waktu inap turun*.\n2. Cari bukti: Apakah data membuktikan waktu urus dokumen benar-benar terpangkas drastis?\n3. Opsi D menunjukkan urus dokumen turun dari 3,4 hari menjadi 4 jam, membuktikan klaim secara langsung.\n4. Jawaban tepat adalah **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Keluhan gangguan server di minggu awal justru sedikit memperlemah kelancaran sistem, bukan memperkuat.\n- **Pilihan B Salah:** Apresiasi asosiasi adalah sentimen dukungan diplomatik yang tidak membuktikan data validitas pemangkasan waktu.\n- **Pilihan C Salah:** Penurunan volume kapal 50% adalah pelemah telak, karena penurunan dwelling time bisa jadi semata-mata karena pelabuhan sedang sepi.\n- **Pilihan E Salah:** Penerapan sistem di negara tetangga adalah komparasi eksternal yang netral dan tidak membuktikan efektivitas di pelabuhan lokal."
+    },
+    {
+      "example_id": "pu-02-06-ex6",
+      "variation_name": "Variasi 3: Identifikasi Asumsi Implisit Efektivitas Intervensi Kognitif (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah riset neuropsikologi kerja melibatkan 120 insinyur perangkat lunak yang diwajibkan mengambil jeda mikro (micro-break) selama 3 menit setiap 45 menit bekerja di depan komputer untuk melakukan relaksasi mata dan fokus jarak jauh. Setelah empat minggu, tingkat kesalahan sintaks dalam kode pemrograman yang mereka hasilkan menurun sebesar 35% dibandingkan bulan sebelumnya. Peneliti neurosains menyimpulkan bahwa jeda mikro efektif memulihkan kapasitas memori kerja insinyur dari kelelahan kognitif.",
+      "question_markdown": "Simpulan peneliti neurosains tersebut didasarkan pada **asumsi implisit** bahwa...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Seluruh insinyur perangkat lunak yang diteliti memiliki kapasitas memori kerja awal yang identik sebelum program jeda mikro dimulai."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Jeda mikro berdurasi lebih dari 3 menit akan menghasilkan penurunan kesalahan kode yang berlipat ganda."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Terjadinya kesalahan sintaks penulisan kode pada insinyur tersebut sebagian besar dipicu oleh kelelahan kognitif yang mengganggu fungsi memori kerja."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Tidak ada metode intervensi non-fisik lain yang mampu mereduksi kelelahan kerja selain jeda mikro."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Insinyur perangkat lunak merasa lebih bahagia dan puas terhadap pekerjaannya setelah menerapkan jeda mikro."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Gunakan Uji Negasi (*Negation Test*): Apa yang menghubungkan antara indikator *kesalahan sintaks kode berkurang* dengan klaim *kapasitas memori kerja pulih dari kelelahan kognitif*? Andaikan kesalahan kode tidak ada hubungannya dengan kelelahan kognitif memori kerja, apakah simpulan peneliti masih bisa berdiri?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Argumen:**\n  - *Premis Bukti:* Setelah jeda mikro diterapkan $\\to$ Kesalahan sintaks kode turun 35%.\n  - *Simpulan Peneliti:* Jeda mikro memulihkan kapasitas memori kerja dari kelelahan kognitif ($Jeda Mikro \\to Memori Kerja Pulih$).\n- **Identifikasi Celah Logika & Uji Negasi:**\n  - Peneliti menarik kesimpulan tentang kondisi *memori kerja dan kelelahan kognitif* hanya berdasarkan metrik penurunan *kesalahan sintaks kode*.\n  - Agar lompatan premis ke simpulan ini sah, harus diasumsikan bahwa kesalahan sintaks kode memang merupakan manifestasi langsung dari gangguan memori kerja akibat kelelahan kognitif.\n  - Mari lakukan negasi pada Pilihan C: *\"Terjadinya kesalahan sintaks penulisan kode pada insinyur TIDAK dipicu oleh kelelahan kognitif atau memori kerja (misalnya murni karena tingkat kerumitan bahasa pemrograman)\"*. Jika negasi ini benar, maka penurunan kesalahan kode sama sekali tidak membuktikan pulihnya memori kerja, dan simpulan peneliti seketika runtuh total!\n- **Konklusi:** Asumsi implisit mutlak yang melandasi argumen adalah Pilihan C.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Jembatan Premis-Simpulan):**\n\n1. Premis: Kesalahan kode turun.\n2. Simpulan: Kelelahan memori kerja terpulihkan.\n3. Jembatan yang hilang: Kesalahan kode = akibat dari kelelahan memori kerja.\n4. Opsi C secara tepat menyatakan jembatan asumsi tersebut.\n5. Jawaban: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Memori kerja awal tidak harus identik antarsubjek, karena perbandingan diukur terhadap performa masing-masing individu sebelum dan sesudah intervensi (*within-subject design*).\n- **Pilihan B Salah:** Ekstrapolasi durasi lebih dari 3 menit tidak dibutuhkan untuk memvalidasi efektivitas intervensi 3 menit yang sedang diuji.\n- **Pilihan D Salah:** Klaim tidak menyatakan jeda mikro sebagai \"satu-satunya metode\", sehingga asumsi ketiadaan metode lain tidak diperlukan.\n- **Pilihan E Salah:** Tingkat kepuasan emosional insinyur adalah faktor afektif sekunder yang berada di luar cakupan hubungan kausalitas memori kerja."
+    },
+    {
+      "example_id": "pu-02-06-ex7",
+      "variation_name": "Variasi 4: Evaluasi Kerusakan Argumen Kinerja Model AI (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah laboratorium teknologi meluncurkan Model Bahasa Besar (LLM) baru bernama OmniMind-9. Dalam uji tolak ukur penalaran matematis dan logika formal internasional (LogiBench-2025), OmniMind-9 berhasil meraih skor akurasi 94%, melampaui seluruh model komersial terkemuka lainnya yang rata-rata hanya mencapai 78%. Kepala laboratorium menyimpulkan bahwa arsitektur komputasi baru pada OmniMind-9 memiliki kemampuan penalaran logis umum (general reasoning ability) yang telah melampaui standar industri saat ini.",
+      "question_markdown": "Manakah fakta penyelidikan independen berikut yang jika benar, memberikan dampak **PALING MERUSAK (paling melemahkan)** terhadap kesimpulan Kepala Laboratorium tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Korpus data prapelatihan OmniMind-9 terbukti memuat seluruh naskah uji LogiBench-2025, dan saat dievaluasi menggunakan kumpulan soal penalaran baru dengan struktur setara yang belum pernah dipublikasikan, akurasi model anjlok menjadi 42%."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Biaya komputasi dan konsumsi energi listrik untuk melatih OmniMind-9 dua kali lipat lebih boros dibandingkan model pesaingnya."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Dua laboratorium pengembang model pesaing menolak untuk mengakui keunggulan OmniMind-9 sebelum laporan penelitian dipublikasikan secara lengkap."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Kecepatan inferensi OmniMind-9 dalam merespons perintah teks 30% lebih cepat dibandingkan model bahasa terkemuka lainnya."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Sejumlah pakar pendidikan etika teknologi menyampaikan kekhawatiran bahwa tingginya akurasi penalaran model AI dapat disalahgunakan dalam ujian akademik."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim: Model memiliki *kemampuan penalaran umum* yang unggul berdasarkan skor 94%. Fakta apakah yang mampu membuktikan bahwa skor 94% tersebut bukanlah hasil penalaran sejati, melainkan hasil hafalan karena kebocoran data uji (*data contamination*)?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Argumen:**\n  - *Premis:* OmniMind-9 meraih skor 94% pada uji LogiBench-2025 (unggul atas model lain di 78%).\n  - *Simpulan Kepala Lab:* Arsitektur model memiliki kemampuan penalaran umum (*general reasoning*) yang unggul melampaui industri.\n- **Evaluasi Tingkat Kerusakan Argumen (HOTS):**\n  - Simpulan mendasarkan klaim \"penalaran umum\" pada tolak ukur LogiBench-2025.\n  - Pilihan A membuktikan terjadinya *data contamination* (kebocoran dataset evaluasi ke dalam data pelatihan) dan menyajikan pengujian tandingan independen: saat diuji pada soal baru yang tidak pernah bocor, skor model anjlok ke 42% (jauh di bawah rata-rata industri 78%).\n  - Temuan ini membongkar bahwa skor 94% murni hafalan teks (*memorization bias*), bukan kemampuan penalaran logis, sehingga secara telak meruntuhkan seluruh fondasi kesimpulan kepala lab.\n- **Konklusi:** Pernyataan A memberikan dampak kerusakan logika paling fatal terhadap klaim tersebut.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Deteksi Kebocoran / Data Contamination):**\n\n1. Klaim: Model hebat dalam penalaran umum karena skor tes 94%.\n2. Titik kelemahan fatal tolak ukur AI: *Apakah model hanya menghafal kunci jawaban tes?*\n3. Opsi A membuktikan soal tes bocor di data latih dan skor anjlok jadi 42% di tes baru.\n4. Klaim penalaran unggul langsung hancur total. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Pemborosan energi adalah isu efisiensi biaya komputasi, tidak membantah kecerdasan atau akurasi penalaran model.\n- **Pilihan C Salah:** Penolakan pesaing adalah persaingan bisnis/keberatan prosedural yang tidak menyajikan bukti ilmiah bantahan terhadap data akurasi.\n- **Pilihan D Salah:** Kecepatan inferensi yang tinggi justru memperkuat kecanggihan model, bukan merusaknya.\n- **Pilihan E Salah:** Kekhawatiran penyalahgunaan akademik adalah isu dampak sosial etika yang justru mengonfirmasi kepintaran model."
+    },
+    {
+      "example_id": "pu-02-06-ex8",
+      "variation_name": "Variasi 5: Deteksi Bias Seleksi Diri pada Mobilitas Sosial Budaya (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Yayasan Kebudayaan Nusantara meluncurkan program residensi magang seni kriya batik dan ukir tradisional selama satu tahun bagi pemuda desa. Survei pelacakan alumni setelah tiga tahun menunjukkan bahwa 75% peserta program residensi berhasil meningkatkan pendapatan ekonomi rumah tangga mereka hingga dua kali lipat dan menjadi wirausahawan mandiri. Direktur yayasan menyimpulkan bahwa kurikulum pembinaan kriya tradisional di residensi tersebut merupakan kunci penggerak utama yang mengubah daya juang dan mengangkat derajat mobilitas sosio-ekonomi para pemuda desa tersebut.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERLEMAH** kesimpulan Direktur Yayasan Kebudayaan Nusantara tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Sebagian besar karya seni batik dan ukir yang dihasilkan peserta residensi telah dipamerkan dalam pameran cagar budaya tingkat nasional."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Survei pada pemuda desa lain yang tidak mengikuti program residensi menunjukkan pendapatan ekonomi mereka cenderung stagnan selama tiga tahun terakhir."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Biaya penyelenggaraan residensi seni kriya tersebut didanai secara kolaboratif oleh dana hibah kementerian kebudayaan dan pihak sponsor."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Tiga dari total alumni residensi memilih beralih profesi menjadi pegawai kantor setelah program magang selesai."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Seleksi penerimaan program residensi secara khusus memprioritaskan pemuda dari keluarga perajin mapan yang telah memiliki jejaring pemasaran dan aset modal usaha sebelum program dimulai."
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim: Kurikulum residensilah yang *mengubah daya juang dan melipatgandakan pendapatan* pemuda. Untuk memperlemah klaim ini, cari bukti bias seleksi (*selection bias*): apakah para peserta yang diterima memang sejak awal sudah memiliki modal kekayaan dan pasar bisnis keluarga yang mapan?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* 75% alumni residensi kriya mampu menggandakan pendapatan dan menjadi wirausahawan mandiri.\n  - *Simpulan Direktur:* Kurikulum residensi adalah faktor penentu utama yang mengangkat mobilitas ekonomi mereka ($Kurikulum Residensi \\to Mobilitas Ekonomi Naik$).\n- **Uji Bias Seleksi Diri (*Selection Bias*):**\n  - Argumen mengasumsikan keberhasilan ekonomi para alumni lahir dari proses didikan residensi.\n  - Pilihan E membongkar adanya bias seleksi yang sangat mendasar: program residensi ternyata hanya menerima pemuda yang berasal dari keluarga perajin mapan yang sudah menguasai modal dan jaringan pasar.\n  - Peningkatan pendapatan mereka adalah akibat dari modal awal dan jejaring bisnis keluarga yang telah mereka miliki sebelumnya, bukan karena kurikulum residensi mengubah nasib mereka dari nol.\n- **Konklusi:** Fakta bias seleksi pada Pilihan E secara telak menggugurkan klaim kausalitas direktur yayasan.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Identifikasi Bias Seleksi Awal):**\n\n1. Simpulan: *Pelatihan residensi yang membuat mereka kaya dan mandiri*.\n2. Cek latar belakang peserta: Apakah mereka memang sudah kaya dan bermodal sejak awal?\n3. Opsi E menunjukkan seleksi memprioritaskan mereka yang sudah punya modal dan jaringan pasar keluarga.\n4. Keberhasilan ekonomi terbukti bukan karena residensi, melainkan modal asal. Jawaban: **E**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Prestasi pameran cagar budaya adalah indikator kualitas karya yang tidak membantah keberhasilan ekonomi para peserta.\n- **Pilihan B Salah:** Stagnasi pemuda non-peserta justru memperkuat dugaan bahwa keikutsertaan dalam residensi memberikan dampak positif.\n- **Pilihan C Salah:** Sumber pendanaan program (hibah/sponsor) adalah rincian anggaran yang netral terhadap efektivitas kurikulum bagi peserta.\n- **Pilihan D Salah:** Kasus 3 alumni yang menjadi pegawai kantor adalah minoritas yang wajar dan tidak menggugurkan fakta keberhasilan 75% alumni lainnya."
+    },
+    {
+      "example_id": "pu-02-06-ex9",
+      "variation_name": "Variasi 9: Pelemahan Argumen Solusi Fitoremediasi Lahan Bekas Tambang (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah konsorsium bioteknologi lingkungan menanam tanaman hiperakumulator jenis pakis rem (*Pteris vittata*) di lahan bekas tambang tembaga dan timbal untuk uji coba fitoremediasi logam berat. Setelah 18 bulan, kadar logam berat terlarut di lapisan tanah pucuk (*topsoil*) turun hingga 65%. Tim peneliti menyimpulkan bahwa mekanisme translokasi akar tanaman *Pteris vittata* merupakan faktor penentu utama yang berhasil menyerap dan membersihkan polutan logam berat dari tanah bekas tambang tersebut.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERLEMAH** kesimpulan tim peneliti bioteknologi lingkungan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Biaya pembibitan dan penanaman pakis Pteris vittata relatif murah jika dibandingkan dengan metode remediasi tanah kimiawi buatan."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Curah hujan ekstrem musiman selama setahun terakhir menyebabkan penurunan pH tanah drastis sehingga ion logam berat terlindi (leached) dan hanyut ke lapisan akuifer tanah dalam di bawah zona perakaran, bukan terserap ke dalam jaringan tanaman."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Beberapa spesies serangga herbivora lokal tidak mau memakan daun pakis Pteris vittata karena tingginya akumulasi rasa pahit senyawa logam."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Konsorsium lingkungan berencana memperluas area penanaman pakis hiperakumulator ke lahan tambang batubara di provinsi lain."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Sebagian kecil pakis Pteris vittata mengalami kekerdilan akibat defisiensi fosfor pada bulan-bulan pertama penanaman."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim peneliti: Tanamanlah yang *menyerap dan membersihkan logam berat*. Cari penjelasan alternatif: apakah ada faktor lingkungan alam (seperti air hujan) yang sebenarnya melarutkan dan menghanyutkan logam berat tersebut ke tempat lain?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis Bukti:* *Pteris vittata* ditanam di lahan tambang $\\to$ Logam berat di lapisan pucuk (*topsoil*) turun 65% dalam 18 bulan.\n  - *Simpulan Peneliti:* Translokasi akar tanaman yang menyerap dan membersihkan logam berat dari tanah ($Akar Tanaman \\to Logam Berat Bersih$).\n- **Uji Penjelasan Alternatif (*Alternative Explanation*):**\n  - Pilihan B menyajikan data hidrologi lingkungan: curah hujan ekstrem memicu pelindian masif (*acid leaching*) yang melarutkan ion logam berat ke akuifer air tanah dalam di bawah zona perakaran tanaman.\n  - Fakta ini membuktikan bahwa logam berat berkurang di lapisan atas bukan karena diserap dan dibersihkan oleh biomassa tanaman, melainkan karena hanyut mencemari air tanah dalam.\n  - Temuan ini secara fundamental meruntuhkan klaim keberhasilan fitoremediasi tanaman tersebut.\n- **Konklusi:** Pernyataan B paling telak menggugurkan simpulan peneliti.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Penyebab Alternatif Pelindian):**\n\n1. Simpulan: *Pakis menyerap logam berat sehingga tanah bersih*.\n2. Cari bukti tandingan: Ke mana perginya logam berat jika bukan ke tanaman?\n3. Opsi B membuktikan logam berat hanyut terbawa rembesan hujan ke air tanah dalam (*leaching*).\n4. Klaim pembersihan oleh tanaman gugur seketika. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Biaya pembibitan yang murah adalah pertimbangan ekonomis yang netral terhadap efektivitas biologis penyerapan logam.\n- **Pilihan C Salah:** Penolakan serangga herbivora terhadap daun justru mengonfirmasi adanya akumulasi logam di jaringan daun tanaman, bukan memperlemah.\n- **Pilihan D Salah:** Rencana ekspansi proyek adalah kebijakan masa depan yang tidak membuktikan keabsahan data penyerapan tanah saat ini.\n- **Pilihan E Salah:** Fenomena kekerdilan minoritas akibat defisiensi fosfor tidak menggugurkan hasil penurunan 65% kadar logam pada skala populasi."
+    },
+    {
+      "example_id": "pu-02-06-ex10",
+      "variation_name": "Variasi 10: Penguatan Argumen Efektivitas Subsidi Ongkos Angkut Pangan (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Badan Pangan Nasional meluncurkan program Fasilitasi Distribusi Pangan (FDP) berupa subsidi biaya ongkos angkut bahan pokok pangan dari daerah sentra surplus ke daerah defisit kepulauan. Dua bulan setelah subsidi ongkos angkut dikucurkan, selisih (*disparitas*) harga cabai merah dan beras antara pulau Jawa dan kepulauan terluar menyusut dari 42% menjadi hanya 14%. Deputi Ketersediaan Pangan menyimpulkan bahwa intervensi subsidi ongkos angkut tersebut secara efektif menekan margin biaya logistik distributor sehingga harga pangan di pulau terluar menjadi lebih terjangkau.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERKUAT** kesimpulan Deputi Ketersediaan Pangan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pemerintah daerah kepulauan terluar menyampaikan ucapan terima kasih atas bantuan pangan dari pemerintah pusat."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Beberapa pedagang pasar tradisional di kepulauan terluar tetap menjual komoditas pangan non-subsidi dengan harga tinggi."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Anggaran belanja subsidi ongkos angkut pangan berasal dari realokasi dana tak terduga Anggaran Pendapatan dan Belanja Negara (APBN)."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Audit pembukuan distributor logistik mencatat bahwa seluruh nilai subsidi ongkos angkut diteruskan dalam bentuk potongan harga jual grosir ke pengecer pulau terluar, sementara volume pasokan lokal kepulauan dan harga jual di pulau Jawa tetap stabil."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Komoditas hortikultura seperti bawang merah dan sayuran daun memiliki masa simpan yang lebih rentan membusuk dibandingkan beras."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim: Subsidi ongkos angkut berhasil *menekan biaya distributor sehingga disparitas harga menyusut*. Cari bukti yang mengonfirmasi bahwa subsidi benar-benar dipotongkan ke harga jual dan tidak ada faktor luar lain (seperti harga Jawa yang melonjak atau panen raya lokal kepulauan) yang menyebabkan penyusutan disparitas!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Subsidi ongkos angkut diberikan $\\to$ Disparitas harga pangan Jawa vs kepulauan turun dari 42% menjadi 14%.\n  - *Simpulan Deputi:* Subsidi ongkos angkut efektif menekan biaya logistik distributor sehingga harga di kepulauan terluar menjadi lebih terjangkau ($Subsidi \\to Biaya Logistik Turun \\to Harga Pangan Terjangkau$).\n- **Uji Penguatan Argumen (Eliminasi Faktor Luar & Konfirmasi Jalur Distribusi):**\n  - Penurunan disparitas harga bisa terjadi secara semu jika harga di Jawa naik tajam atau jika kepulauan mengalami panen raya mandiri.\n  - Pilihan D menyajikan bukti ganda yang sangat kuat: audit distributor membuktikan subsidi diteruskan secara penuh menjadi diskon harga grosir ke pengecer, DAN mengonfirmasi bahwa pasokan lokal serta harga di Jawa tetap stabil.\n  - Fakta ini memastikan bahwa penyusutan disparitas 100% didorong oleh efisiensi subsidi logistik, persis seperti kesimpulan deputi pangan.\n- **Konklusi:** Pernyataan D paling kuat mendukung dan memvalidasi keabsahan argumen deputi.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Konfirmasi Transmisi Harga & Kontrol Luar):**\n\n1. Simpulan: *Subsidi ongkos angkut $\\to$ Harga di kepulauan turun*.\n2. Cari bukti: Apakah distributor benar-benar memotong harga dan harga asal tetap stabil?\n3. Opsi D mengonfirmasi potongan harga grosir penuh dan kestabilan harga Jawa serta pasokan lokal.\n4. Argumen terbukti sangat kokoh. Jawaban: **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Ucapan terima kasih pemda adalah formalitas birokrasi yang netral terhadap analisis ekonomi harga pangan.\n- **Pilihan B Salah:** Penjualan komoditas non-subsidi dengan harga tinggi tidak memengaruhi efektivitas subsidi pada cabai dan beras.\n- **Pilihan C Salah:** Sumber pos anggaran APBN adalah urusan administrasi fiskal yang tidak membuktikan transmisi harga di pasar.\n- **Pilihan E Salah:** Karakteristik daya simpan komoditas adalah sifat biologis produk yang tidak membuktikan dampak subsidi ongkos angkut."
+    },
+    {
+      "example_id": "pu-02-06-ex11",
+      "variation_name": "Variasi 11: Identifikasi Asumsi Implisit Latihan Ketangkasan Mental Lansia (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah pusat riset geriatri menguji efektivitas program permainan strategi berbasis papan catur dan teka-teki logika tiga dimensi terhadap 150 lansia penderita penurunan kognitif ringan (*mild cognitive impairment*). Program latihan dilakukan intensif 3 kali seminggu selama enam bulan. Pada evaluasi akhir, skor rata-rata kecepatan pemrosesan informasi visual (*visual processing speed*) para lansia tersebut meningkat sebesar 38%. Peneliti gerontologi menyimpulkan bahwa pelatihan strategi papan dan teka-teki logika efektif mencegah atau menunda risiko timbulnya demensia Alzheimer pada lansia.",
+      "question_markdown": "Simpulan peneliti gerontologi tersebut bertumpu pada **asumsi implisit** bahwa...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Peningkatan kecepatan pemrosesan informasi visual pada lansia berkorelasi nyata dengan perlambatan proses degenerasi neurokognitif yang menjadi patologi utama demensia Alzheimer."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Semua lansia penderita penurunan kognitif ringan menyukai permainan catur dan teka-teki logika tiga dimensi sejak usia muda."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Latihan strategi mental berdurasi lebih dari 3 kali seminggu akan menghapus seluruh gejala penurunan kognitif secara permanen."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Tidak ada terapi nutrisi atau intervensi farmakologis yang dapat menandingi efektivitas permainan papan catur."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Keluarga para lansia melaporkan suasana hati para peserta menjadi lebih ceria selama mengikuti program latihan mental."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Gunakan Uji Negasi (*Negation Test*): Premis berbicara tentang *kecepatan pemrosesan visual*, namun kesimpulan melompat ke klaim *pencegahan demensia Alzheimer*. Apa jembatan asumsi yang harus bernilai benar agar lompatan ini sah? Andaikan kecepatan visual TIDAK berhubungan dengan patologi Alzheimer, apakah kesimpulan peneliti masih berlaku?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Latihan papan catur dan teka-teki 6 bulan $\\to$ Skor kecepatan pemrosesan informasi visual naik 38%.\n  - *Simpulan Peneliti:* Latihan tersebut efektif mencegah atau menunda risiko demensia Alzheimer ($Latihan Papan \\to Cegah Alzheimer$).\n- **Identifikasi Celah Logika & Uji Negasi (Asumsi Implisit):**\n  - Peneliti mengukur variabel perantara: *kecepatan pemrosesan visual*, lalu mengklaim pencegahan terhadap *patologi penyakit Alzheimer*.\n  - Agar kesimpulan ini valid, wajib diasumsikan bahwa peningkatan skor pemrosesan visual tersebut benar-benar mencerminkan perlambatan degenerasi saraf otak Alzheimer.\n  - Mari negasikan Pilihan A: *\"Peningkatan kecepatan pemrosesan informasi visual pada lansia TIDAK berkorelasi dengan perlambatan degenerasi neurokognitif Alzheimer (hanya peningkatan keterampilan bermain game semata)\"*. Jika negasi ini benar, maka kenaikan skor 38% tidak ada hubungannya dengan pencegahan Alzheimer, dan simpulan peneliti seketika runtuh total!\n- **Konklusi:** Asumsi implisit mutlak yang melandasi argumen adalah Pilihan A.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Jembatan Premis $\\to$ Simpulan):**\n\n1. Premis: Skor kecepatan visual naik 38%.\n2. Simpulan: Mencegah penyakit demensia Alzheimer.\n3. Jembatan yang hilang: Kecepatan visual berhubungan langsung dengan perlambatan Alzheimer.\n4. Opsi A secara presisi menyatakan jembatan penghubung tersebut.\n5. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Minat masa muda terhadap catur bukan syarat mutlak keabsahan efektivitas latihan klinis saat ini.\n- **Pilihan C Salah:** Peneliti tidak mengklaim kesembuhan permanen, melainkan pencegahan atau penundaan risiko.\n- **Pilihan D Salah:** Peneliti tidak mengklaim catur sebagai \"satu-satunya metode yang tak tertandingi\".\n- **Pilihan E Salah:** Suasana hati ceria adalah dampak emosional afektif yang berada di luar cakupan degenerasi patologi Alzheimer."
+    },
+    {
+      "example_id": "pu-02-06-ex12",
+      "variation_name": "Variasi 12: Evaluasi Kerusakan Argumen Efisiensi Baterai Solid-State EV (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah perusahaan manufaktur otomotif mengumumkan terobosan baterai keadaan padat (*solid-state battery*) untuk kendaraan listrik (EV). Dalam pengujian laboratorium dengan 1.000 siklus pengisian daya cepat (*ultra-fast charging*), sel baterai mempertahankan 92% kapasitas aslinya dan tidak mengalami degradasi termal. Direktur riset perusahaan mengklaim bahwa baterai *solid-state* mereka telah siap diproduksi massal untuk menghadirkan mobil listrik dengan daya tahan baterai tanpa degradasi selama lebih dari 10 tahun pemakaian harian di jalan raya.",
+      "question_markdown": "Manakah fakta pengujian independen berikut yang jika benar, memberikan dampak **PALING MERUSAK (paling melemahkan)** terhadap klaim Direktur Riset tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pengujian laboratorium dilakukan di bawah tekanan mekanik hidrolik eksternal konstan; saat dirakit ke dalam paket modul kendaraan tanpa penekan hidrolik pada variasi suhu jalanan riil, kontak antarmuka elektrolit padat retak dan kapasitas baterai anjlok 60% hanya dalam 150 siklus."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Biaya pembangunan pabrik manufaktur baterai solid-state membutuhkan investasi awal yang lebih tinggi daripada pabrik baterai lithium-ion konvensional."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Perusahaan kompetitor asal Eropa sedang mengembangkan teknologi baterai sodium-ion yang menggunakan bahan baku garam melimpah."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Beberapa analis industri otomotif memprediksi bahwa penetrasi pasar mobil listrik akan menghadapi perlambatan ekonomi global dalam dua tahun ke depan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Waktu tunggu pengiriman bahan baku keramik elektrolit padat impor memerlukan waktu hingga empat minggu."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim direktur: Baterai *siap diproduksi massal untuk 10 tahun pemakaian jalan raya* berdasarkan uji lab 1.000 siklus. Cari fakta pengujian yang membongkar bahwa kondisi uji lab sangat artifisial dan baterai langsung rusak parah saat diuji pada kondisi fisik mobil jalanan riil!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Argumen:**\n  - *Premis:* Pengujian lab 1.000 siklus pengisian cepat menghasilkan retensi kapasitas 92% tanpa degradasi termal.\n  - *Klaim Direktur:* Baterai telah siap diproduksi massal untuk pemakaian harian jalan raya selama lebih dari 10 tahun ($Uji Lab 1.000 Siklus \\to Siap Pakai 10 Tahun Jalan Raya$).\n- **Evaluasi Dampak Kerusakan Fatal (HOTS):**\n  - Klaim menggeneralisasi hasil pengujian sel tunggal laboratorium ke modul kendaraan komersial di jalan raya.\n  - Pilihan A membuktikan kelemahan fatal: pengujian lab ternyata menggunakan tekanan penekan hidrolik buatan; ketika baterai dipasang di kendaraan tanpa alat penekan tersebut pada rentang suhu jalan raya, terjadi retak mikroskopis antarmuka yang menyebabkan kapasitas baterai drop drastis 60% hanya dalam 150 siklus (jauh dari target 10 tahun).\n  - Fakta ini secara langsung menggugurkan klaim \"kesiapan produksi massal\" dan \"daya tahan 10 tahun\".\n- **Konklusi:** Pernyataan A memberikan dampak kerusakan logika paling fatal terhadap klaim direktur.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Bongkar Artifisialitas Uji Laboratorium):**\n\n1. Klaim: *Baterai siap diproduksi untuk 10 tahun di jalan raya*.\n2. Titik serang terlemah: *Apakah uji lab mencerminkan kondisi mobil sebenarnya?*\n3. Opsi A menunjukkan baterai retak dan drop 60% hanya dalam 150 siklus saat diuji di kondisi jalanan riil.\n4. Klaim kesiapan mobil 10 tahun hancur total. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Biaya investasi pabrik adalah tantangan permodalan finansial, bukan bukti kegagalan teknis daya tahan baterai.\n- **Pilihan C Salah:** Pengembangan baterai sodium oleh pesaing adalah kompetisi pasar yang tidak meruntuhkan data teknis baterai solid-state.\n- **Pilihan D Salah:** Proyeksi perlambatan pasar adalah tren ekonomi makro yang tidak membantah performa teknis sel baterai.\n- **Pilihan E Salah:** Waktu pengiriman bahan baku 4 minggu adalah isu rantai pasok biasa dalam industri manufaktur."
+    },
+    {
+      "example_id": "pu-02-06-ex13",
+      "variation_name": "Variasi 13: Pelemahan Argumen Revitalisasi Bahasa Daerah via Media Sosial (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Balai Bahasa Provinsi meluncurkan kampanye pembuatan konten video pendek kreatif berbahasa daerah di platform media sosial untuk mencegah kepunahan bahasa daerah X. Setelah kampanye berjalan satu tahun, jumlah penayangan (*views*) video bertagar bahasa daerah X menembus 15 juta kali dengan jutaan komentar positif dari generasi muda. Kepala Balai Bahasa menyimpulkan bahwa kampanye media sosial ini telah berhasil merevitalisasi daya hidup bahasa daerah X dan menyelamatkannya dari ancaman kepunahan.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERLEMAH** kesimpulan Kepala Balai Bahasa tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Produksi video kreatif berbahasa daerah X melibatkan sejumlah kreator konten muda yang memiliki pengikut jutaan di media sosial."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pemerintah provinsi memberikan piagam penghargaan kepada balai bahasa atas pencapaian kampanye digital kebudayaan tersebut."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sensus linguistik lapangan mencatat bahwa penggunaan bahasa daerah X dalam percakapan lisan harian di lingkungan keluarga dan anak-anak terus merosot hingga 40%, karena penonton video hanya menikmati unsur komedi konten tanpa mempraktikkan tutur bahasa secara aktif."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Beberapa dialek lokal dari bahasa daerah X memiliki variasi kosakata kuno yang sulit dipahami oleh masyarakat perkotaan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Akses jaringan internet pita lebar belum menjangkau sepuluh persen desa terpencil di wilayah pedalaman provinsi tersebut."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim kepala balai: Kampanye media sosial telah *merevitalisasi dan menyelamatkan bahasa dari kepunahan*. Apakah viralitas video (tontonan pasif hiburan) menjamin masyarakat benar-benar bertutur bahasa daerah tersebut dalam kehidupan sehari-hari?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Video bertagar bahasa daerah X ditonton 15 juta kali dan meraih jutaan komentar positif.\n  - *Simpulan Kepala Balai:* Kampanye media sosial berhasil merevitalisasi daya hidup bahasa daerah X dan menyelamatkannya dari kepunahan ($15 Juta Views \\to Bahasa Terselamatkan$).\n- **Uji Evaluasi Kelemahan Ukuran Metrik:**\n  - Indikator vitalitas bahasa (*language vitality*) dalam sosiolinguistik diukur dari transmisi percakapan lisan antargenerasi dalam kehidupan sehari-hari, bukan dari metrik tontonan video hiburan digital.\n  - Pilihan C menghadirkan data empiris sensus lapangan: percakapan lisan harian anak-anak dan keluarga justru anjlok 40% karena penonton hanya menikmati komedi tanpa pernah berbicara bahasa daerah tersebut secara aktif.\n  - Fakta ini membuktikan bahwa angka 15 juta penayangan adalah popularitas semu di dunia maya yang gagal mentransmisikan bahasa ke dunia nyata.\n- **Konklusi:** Pernyataan C paling kuat meruntuhkan klaim keberhasilan revitalisasi bahasa kepala balai.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Bedakan Viralitas vs Praktik Nyata):**\n\n1. Simpulan: *15 juta penonton medsos $\\to$ Bahasa daerah terselamatkan dari kepunahan*.\n2. Cek kenyataan lapangan: Apakah orang benar-benar berbicara bahasa tersebut?\n3. Opsi C membuktikan praktik bicara lisan harian justru merosot 40% karena video hanya ditonton sebagai hiburan komedi.\n4. Klaim revitalisasi bahasa daerah langsung runtuh. Jawaban: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Keterlibatan kreator konten terkenal justru menerangkan mengapa video tersebut viral, bukan membantah keberhasilannya.\n- **Pilihan B Salah:** Piagam penghargaan pemerintah adalah apresiasi seremonial birokrasi yang netral terhadap vitalitas bahasa riil.\n- **Pilihan D Salah:** Keragaman dialek kuno adalah fenomena linguistik alami yang tidak membantah pengaruh kampanye media sosial.\n- **Pilihan E Salah:** Ketiadaan internet di 10% desa adalah keterbatasan infrastruktur minoritas yang tidak membatalkan efek pada 90% wilayah lainnya."
+    },
+    {
+      "example_id": "pu-02-06-ex14",
+      "variation_name": "Variasi 14: Pelemahan Klaim Sekuestrasi Karbon Padang Lamun Pesisir (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah lembaga riset oseanografi mempublikasikan hasil restorasi 500 hektare padang lamun (*seagrass meadow*) jenis *Enhalus acoroides* di perairan teluk pesisir. Pengukuran sedimen dasar laut selama dua tahun menunjukkan peningkatan simpanan karbon organik (*organic carbon stock*) sebesar 35% dibandingkan area teluk tanpa vegetasi lamun. Kepala tim peneliti menyimpulkan bahwa perluasan penanaman padang lamun jenis ini merupakan solusi rekayasa biologis paling efektif untuk mempercepat penyerapan emisi karbon pesisir (*blue carbon*) dan menahan laju pemanasan global.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERLEMAH** kesimpulan kepala tim peneliti tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Biaya pembiakan bibit lamun Enhalus acoroides memerlukan fasilitas laboratorium air laut khusus yang mahal."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Analisis fluks biogeokimia menunjukkan bahwa pembusukan serasah akar lamun di sedimen teluk anaerobik memicu pelepasan gas metana ($CH_4$) dalam jumlah besar yang potensi pemanasan globalnya 28 kali lebih kuat melampaui efek pendinginan karbon yang tersimpan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Padang lamun Enhalus acoroides menjadi habitat tempat mencari makan penting bagi fauna penyu hijau dan dugong."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Beberapa kelompok nelayan lokal melaporkan hasil tangkapan kepiting bakau di sekitar padang lamun meningkat 15%."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Ekosistem hutan mangrove di kawasan pesisir teluk sebelah memiliki laju serapan karbon per hektare yang sebanding dengan padang lamun."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Simpulan peneliti: Padang lamun adalah *solusi paling efektif menahan pemanasan global*. Cari fakta ilmiah yang mengungkap adanya dampak sampingan biogeokimia yang justru memperparah efek pemanasan global melebihi jumlah karbon yang terserap!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Simpanan karbon organik di sedimen padang lamun naik 35% dalam dua tahun.\n  - *Simpulan Peneliti:* Perluasan padang lamun adalah solusi rekayasa biologis paling efektif menyerap emisi karbon dan menahan laju pemanasan global ($Padang Lamun \\to Solusi Efektif Tahan Pemanasan Global$).\n- **Uji Evaluasi Pelemahan (Faktor Penyeimbang Perusak Emisi):**\n  - Efektivitas penahanan pemanasan global dihitung berdasarkan fluks gas rumah kaca bersih (*net greenhouse gas balance*), bukan sekadar penimbunan karbon padat di tanah.\n  - Pilihan B membuktikan fakta ilmiah yang merusak: penguraian serasah lamun dalam sedimen anaerobik memicu pembentukan gas metana ($CH_4$) masif. Karena metana memiliki potensi pemanasan global (*global warming potential*) 28 kali lipat lebih dahsyat daripada $CO_2$, pelepasan metana tersebut membatalkan manfaat pendinginan karbon dan justru menjadikan padang lamun sebagai sumber bersih (*net source*) pemanasan iklim.\n  - Fakta ini menggugurkan simpulan peneliti bahwa restorasi lamun adalah solusi efektif menahan pemanasan global.\n- **Konklusi:** Pernyataan B memberikan pelemahan paling mendasar dan mematikan terhadap argumen peneliti.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Netralisasi Dampak Iklim):**\n\n1. Simpulan: *Padang lamun menyerap karbon $\\to$ Efektif menahan pemanasan global*.\n2. Cek apakah ada emisi gas rumah kaca lain yang lebih berbahaya?\n3. Opsi B mengungkap emisi gas metana ($CH_4$) berkekuatan 28 kali lipat yang merusak netralitas iklim.\n4. Klaim efektivitas pendinginan iklim seketika gugur. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Biaya laboratorium adalah kendala finansial teknis yang tidak membantah mekanisme penyerapan karbon.\n- **Pilihan C Salah:** Manfaat bagi penyu dan dugong adalah dampak keanekaragaman hayati positif yang netral terhadap mitigasi emisi karbon.\n- **Pilihan D Salah:** Hasil tangkapan kepiting adalah indikator ekonomi perikanan lokal yang tidak membantah klaim pemanasan global.\n- **Pilihan E Salah:** Kapasitas serapan mangrove yang sebanding adalah komparasi ekosistem lain yang tidak memperlemah kemampuan spesifik padang lamun."
+    },
+    {
+      "example_id": "pu-02-06-ex15",
+      "variation_name": "Variasi 15: Penguatan Efektivitas Digitalisasi Pembayaran QRIS bagi UMKM (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Kementerian Koperasi dan UKM bersama Bank Indonesia mengevaluasi dampak program digitalisasi sistem pembayaran non-tunai berbasis QRIS pada 1.200 pedagang tradisional di sentra kuliner dan pasar basah. Satu tahun setelah adopsi QRIS, rata-rata omzet bulanan pedagang meningkat 28%, dan proporsi pedagang yang berhasil mendapatkan persetujuan Kredit Usaha Rakyat (KUR) perbankan melonjak dari 15% menjadi 52%. Tim analis kementerian menyimpulkan bahwa pencatatan riwayat transaksi digital melalui QRIS efektif membangun jejak rekam finansial (*credit footprint*) yang kredibel, sehingga mempermudah bank menilai kelayakan usaha mikro dan memperluas persetujuan kredit produktif.",
+      "question_markdown": "Manakah pernyataan berikut yang jika benar, **PALING MEMPERKUAT** kesimpulan tim analis kementerian tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Penggunaan QRIS mempermudah konsumen karena tidak perlu lagi membawa uang tunai pecahan kecil saat bertransaksi."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Audit bank penyalur KUR mengonfirmasi bahwa analis kredit memanfaatkan mutasi harian QRIS sebagai bukti utama omzet riil pedagang, sementara pedagang non-QRIS dengan omzet serupa di pasar yang sama memiliki tingkat penolakan kredit di atas 80%."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pemerintah daerah memberikan piagam penghargaan kepada pengelola pasar atas keberhasilan digitalisasi retribusi pasar."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Sebagian besar pedagang menggunakan aplikasi pembukuan digital di ponsel pintar untuk memonitor stok persediaan barang dagangan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Biaya transaksi bagi pedagang (*Merchant Discount Rate*) untuk kategori usaha mikro ditetapkan sebesar 0% oleh bank sentral."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Simpulan analis: *Riwayat QRIS menjadi dasar bank menyetujui KUR*. Cari opsi yang membuktikan secara langsung bahwa analis kredit benar-benar menggunakan mutasi QRIS untuk verifikasi omzet dan bandingkan dengan kelompok kontrol pedagang tunai!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Adopsi QRIS 1 tahun $\\to$ Omzet naik 28% dan persetujuan KUR melonjak dari 15% ke 52%.\n  - *Simpulan Analis:* Riwayat transaksi digital QRIS membangun jejak rekam finansial kredibel yang menjadi dasar utama kemudahan persetujuan kredit perbankan ($QRIS \\to Credit Footprint \\to Bank Setujui KUR$).\n- **Uji Penguatan Argumen (Eliminasi Pesaing & Bukti Kausalitas Riil):**\n  - Lonjakan persetujuan kredit bisa saja disebabkan oleh pelonggaran syarat umum bank atau subsidi program pemda.\n  - Pilihan B menghadirkan bukti ganda yang mengunci hubungan sebab-akibat: (1) audit perbankan membuktikan bahwa mutasi QRIS dijadikan bukti utama penilai kredit dalam memvalidasi omzet pedagang, dan (2) kelompok kontrol pedagang tunai dengan profil omzet serupa di lokasi yang sama tetap mengalami penolakan kredit di atas 80%.\n  - Perbandingan kelompok kontrol ini membuktikan secara definitif bahwa keberadaan jejak rekam QRIS-lah yang menjadi faktor pembeda penentu persetujuan kredit.\n- **Konklusi:** Pernyataan B memberikan dukungan konfirmasi kausalitas paling kuat terhadap argumen analis.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Konfirmasi Mekanisme & Kelompok Kontrol):**\n\n1. Simpulan: *Data QRIS yang menyebabkan bank menyetujui kredit UMKM*.\n2. Cari bukti: Apakah bank benar-benar memakai data QRIS, dan pedagang tanpa QRIS tetap ditolak?\n3. Opsi B mengonfirmasi verifikasi analis kredit via QRIS dan kegagalan kredit 80% pada pedagang tunai.\n4. Kausalitas terbukti mutlak kokoh. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kemudahan pembeli tanpa uang tunai adalah kenyamanan konsumen yang tidak membuktikan mekanisme analisis kelayakan kredit perbankan.\n- **Pilihan C Salah:** Piagam penghargaan pemda adalah formalitas birokrasi yang netral terhadap relasi kausalitas kredit perbankan.\n- **Pilihan D Salah:** Pembukuan stok barang adalah manajemen inventaris internal yang tidak membuktikan pemanfaatan data oleh pihak bank.\n- **Pilihan E Salah:** Tarif MDR 0% adalah insentif biaya transaksi yang tidak memvalidasi kelayakan kredit pinjaman modal."
+    },
+    {
+      "example_id": "pu-02-06-ex16",
+      "variation_name": "Variasi 16: Identifikasi Asumsi Implisit Filter Cahaya Biru dan Ritme Sirkadian (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah eksperimen laboratorium kronobiologi menguji 80 mahasiswa yang terbiasa menggunakan gawai layar digital selama 2 jam tepat sebelum tidur. Kelompok perlakuan mengenakan kacamata penyaring spektrum cahaya biru pendek (*blue-light blocking glasses* 450-480 nm), sedangkan kelompok kontrol mengenakan kacamata bening plasebo. Hasil uji biomarker menunjukkan bahwa kelompok pengguna kacamata penyaring cahaya biru mengalami lonjakan kadar melatonin saliva malam hari sebesar 58% lebih tinggi dan waktu laten lelap (*sleep latency*) 22 menit lebih cepat. Dokter spesialis kedokteran tidur menyimpulkan bahwa penggunaan kacamata penyaring cahaya biru pada malam hari efektif memperbaiki arsitektur tidur dan memulihkan performa memori kerja kognitif mahasiswa pada keesokan paginya.",
+      "question_markdown": "Simpulan dokter spesialis kedokteran tidur tersebut bertumpu pada **asumsi implisit** bahwa...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Mahasiswa yang tidak menggunakan kacamata penyaring cahaya biru selalu mengalami insomnia parah dan penurunan nilai akademik."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Peningkatan sekresi melatonin dan percepatan waktu lelap malam hari berkorelasi positif dengan perbaikan fase tidur gelombang lambat yang esensial bagi pemulihan performa memori kerja kognitif keesokan harinya."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Kacamata penyaring cahaya biru merupakan satu-satunya metode non-farmakologis yang mampu mencegah gangguan ritme sirkadian tubuh."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Semua jenis layar gawai digital memancarkan intensitas spektrum cahaya biru dengan frekuensi gelombang yang identik."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Kacamata bening plasebo yang digunakan oleh kelompok kontrol tidak menimbulkan efek sugesti psikologis terhadap waktu tidur responden."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Terapkan Uji Negasi (*Negation Test*): Premis wacana hanya mengukur *kadar melatonin saliva* dan *waktu lelap (sleep latency)*. Namun simpulan dokter melompat ke klaim *pemulihan memori kerja kognitif keesokan paginya*. Apa jembatan asumsi yang wajib bernilai benar agar lompatan ini sah?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Kacamata filter cahaya biru $\\to$ Kadar melatonin saliva naik 58% dan waktu lelap 22 menit lebih cepat.\n  - *Simpulan Dokter:* Kacamata filter cahaya biru efektif memperbaiki arsitektur tidur dan memulihkan performa memori kerja kognitif keesokan paginya ($Melatonin \\& Cepat Lelap \\to Pemulihan Memori Kerja$).\n- **Identifikasi Celah Logika & Uji Negasi (Asumsi Implisit):**\n  - Ada kesenjangan (*logical gap*) antara variabel premis (hormon melatonin dan waktu lelap) dengan variabel kesimpulan (arsitektur tidur restoratif dan memori kerja kognitif).\n  - Agar kesimpulan dokter sahih, harus ada asumsi tak tertulis bahwa peningkatan melatonin dan percepatan waktu lelap memang memicu fase tidur restoratif (*slow-wave sleep*) yang secara fungsional memulihkan memori kognitif.\n  - Mari lakukan negasi terhadap Pilihan B: *\"Peningkatan sekresi melatonin dan percepatan lelap TIDAK berkorelasi dengan perbaikan fase tidur restoratif dan TIDAK memengaruhi pemulihan memori kerja kognitif keesokan harinya\"*.\n  - Jika negasi ini benar, maka naiknya melatonin 58% sama sekali tidak menjamin pulihnya memori kerja mahasiswa, sehingga simpulan dokter runtuh seketika!\n- **Konklusi:** Asumsi implisit mutlak yang melandasi keabsahan argumen adalah Pilihan B.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Jembatan Logika yang Hilang):**\n\n1. Premis: Melatonin saliva naik 58% dan waktu lelap 22 menit lebih cepat.\n2. Simpulan: Memulihkan performa memori kerja kognitif keesokan hari.\n3. Jembatan yang hilang: Melatonin & waktu lelap berhubungan dengan fase tidur pemulih memori kerja.\n4. Opsi B secara sempurna merumuskan jembatan kausalitas tersebut.\n5. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Frasa mutlak \"selalu mengalami insomnia parah\" adalah distorsi ekstrem yang tidak diasumsikan oleh dokter.\n- **Pilihan C Salah:** Dokter tidak mengklaim kacamata sebagai \"satu-satunya metode\" di dunia.\n- **Pilihan D Salah:** Kesamaan frekuensi pancaran semua gawai bukan prasyarat mutlak efektivitas kacamata filter yang diuji.\n- **Pilihan E Salah:** Efek plasebo kacamata kontrol adalah detail metodologi eksperimen, bukan jembatan kausalitas ke performa memori kognitif."
+    },
+    {
+      "example_id": "pu-02-06-ex17",
+      "variation_name": "Variasi 17: Evaluasi Kerusakan Argumen Otomasi Inspeksi Cacat Semikonduktor (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah pabrik fabrikasi chip semikonduktor menguji sistem visi komputer berbasis kecerdasan buatan (*AI computer vision*) untuk menggantikan teknisi manusia dalam mendeteksi retak mikroskopis dan anomali penyolderan interkoneksi bola timah (*ball grid array*). Dalam pengujian simulasi pada 50.000 citra uji statis beresolusi tinggi di laboratorium, model AI mencatatkan akurasi deteksi 99,8% dengan waktu inspeksi 0,05 detik per chip. Direktur operasional pabrik menyimpulkan bahwa sistem AI ini siap segera diintegrasikan penuh ke lini produksi berkecepatan tinggi untuk menggantikan 100% teknisi inspeksi manual tanpa risiko penurunan standar mutu chip yang dikirim ke pelanggan.",
+      "question_markdown": "Manakah temuan uji coba operasional lapangan berikut yang jika benar, memberikan dampak **PALING MERUSAK (paling melemahkan)** terhadap kesimpulan Direktur Operasional tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pada konveyor kecepatan tinggi di lini pabrik nyata, getaran mekanik mesin dan variasi pantulan cahaya solder memicu keburaman optik mikro sehingga AI meloloskan 18% chip berpatahan kritis yang biasanya selalu terdeteksi oleh inspektur manual melalui mikroskop multi-sudut dinamis."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Konsumsi daya listrik server akselerator GPU yang memproses model kecerdasan buatan sedikit lebih tinggi daripada daya lampu meja kerja teknisi manual."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Serikat pekerja teknisi pabrik menyampaikan kekhawatiran atas potensi pengurangan jam lembur teknisi akibat otomatisasi inspeksi."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Model kecerdasan buatan memerlukan pembaruan berkala setiap empat bulan sekali oleh tim teknisi teknologi informasi internal."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Biaya lisensi tahunan perangkat lunak pengenalan citra mengalami kenaikan penyesuaian inflasi sebesar 4% per tahun."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim direktur: AI *siap menggantikan 100% teknisi tanpa risiko cacat lolos ke pelanggan* berdasarkan uji lab citra statis. Cari fakta lapangan yang membongkar bahwa lingkungan konveyor pabrik nyata membuat AI buta terhadap cacat kritis yang selama ini mampu ditangkap oleh teknisi manusia!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Argumen:**\n  - *Premis:* Pengujian lab pada 50.000 citra statis beresolusi tinggi menghasilkan akurasi 99,8% dalam 0,05 detik/chip.\n  - *Simpulan Direktur:* AI siap diintegrasikan penuh menggantikan 100% teknisi manual tanpa risiko penurunan mutu chip ke pelanggan ($Simulasi Lab Citra Statis \\to Siap Gantikan 100\\% Teknisi Pabrik Riil$).\n- **Evaluasi Tingkat Kerusakan Argumen (HOTS):**\n  - Celah fatal argumen terletak pada generalisasi kondisi laboratorium (citra diam tanpa getaran) ke kondisi pabrik komersial (konveyor bergerak cepat penuh getaran dan pantulan dinamis).\n  - Pilihan A membuktikan kegagalan operasional fatal: getaran konveyor dan pantulan cahaya solder menimbulkan keburaman optik mikro yang membuat AI meloloskan 18% chip berpatahan mikroskopis ke pelanggan (*false negative* kritis).\n  - Fakta bahwa teknisi manusia selama ini mampu mendeteksi patahan tersebut melalui pengamatan mikroskop multi-sudut dinamis secara telak meruntuhkan klaim bahwa AI \"siap menggantikan 100% teknisi tanpa risiko penurunan mutu\".\n- **Konklusi:** Pernyataan A menghancurkan dasar logika kesimpulan direktur secara menyeluruh.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Bongkar Kesenjangan Lab vs Pabrik Nyata):**\n\n1. Klaim: *AI lab 99,8% $\\to$ Siap gantikan 100% teknisi tanpa ada chip cacat lolos*.\n2. Titik serang: Apakah di pabrik nyata AI meloloskan cacat?\n3. Opsi A membuktikan getaran mesin membuat AI meloloskan 18% chip patah kritis yang biasanya ditangkap mata teknisi.\n4. Klaim kesiapan otomasi 100% hancur lebur. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Konsumsi listrik GPU yang sedikit lebih tinggi adalah biaya utilitas marjinal yang tidak membuktikan kegagalan mutu chip.\n- **Pilihan C Salah:** Kekhawatiran serikat pekerja adalah isu ketenagakerjaan sosial yang netral terhadap performa teknis akurasi inspeksi chip.\n- **Pilihan D Salah:** Pembaruan rutin 4 bulan sekali adalah prosedur pemeliharaan sistem standar dalam industri teknologi informasi.\n- **Pilihan E Salah:** Kenaikan lisensi 4% adalah beban finansial operasional rutin, bukan bukti cacat mutu pada chip produksi."
+    },
+    {
+      "example_id": "pu-02-06-ex18",
+      "variation_name": "Variasi 18: Pelemahan Klaim Mobilitas Sosial Beasiswa Afirmasi Pedalaman (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah yayasan pendidikan tinggi mempublikasikan laporan evaluasi program beasiswa sarjana afirmasi khusus generasi muda dari distrik tertinggal dan terluar di wilayah perbatasan. Laporan menunjukkan bahwa 10 tahun setelah kelulusan, para penerima beasiswa afirmasi tersebut berhasil meraih penghasilan rata-rata 4,5 kali lipat lebih tinggi dibandingkan rata-rata pendapatan angkatan kerja di distrik asal mereka, serta 75% di antaranya menduduki posisi manajerial di perkotaan. Direktur yayasan menyimpulkan bahwa bantuan dana beasiswa perguruan tinggi secara mandiri merupakan faktor pengungkit paling utama yang berhasil merombak nasib ekonomi dan mewujudkan mobilitas sosial vertikal generasi muda dari keluarga prasejahtera perbatasan.",
+      "question_markdown": "Manakah pernyataan sosiologis berikut yang jika benar, **PALING MEMPERLEMAH** kesimpulan Direktur Yayasan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Sebagian besar penerima beasiswa afirmasi rutin mengirimkan remitansi uang bulanan untuk membantu biaya hidup keluarga di desa asal."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Audit latar belakang demografi mengungkap bahwa 85% penerima beasiswa afirmasi adalah putra-putri pejabat birokrasi dan pengusaha distrik yang sejak awal telah disekolahkan di asrama unggulan kota dengan modal sosial dan relasi kuat, sehingga kesuksesan karir mereka digerakkan oleh privilese keluarga asal, bukan karena beasiswa mengentaskan keluarga prasejahtera."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Biaya sewa tempat tinggal mahasiswa di kota besar lokasi perguruan tinggi mengalami kenaikan indeks harga selama sepuluh tahun terakhir."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Beberapa alumni penerima beasiswa afirmasi memilih melanjutkan studi magister ke luar negeri dengan skema pembiayaan lain."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Penggunaan dialek bahasa daerah distrik asal di kalangan generasi muda penerima beasiswa mengalami pergeseran ke bahasa nasional."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Klaim direktur: Beasiswa *secara mandiri menjadi faktor utama pengubah nasib keluarga prasejahtera*. Periksa bias seleksi (*selection bias*): siapakah sebenarnya 85% mahasiswa yang memenangkan beasiswa tersebut? Apakah mereka benar-benar anak keluarga prasejahtera, ataukah anak keluarga elit distrik yang memang sudah memiliki modal sosial tinggi?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Anatomi Argumen:**\n  - *Premis:* Penerima beasiswa afirmasi berpenghasilan 4,5 kali lipat dari warga distrik asal dan 75% menduduki posisi manajer perkotaan.\n  - *Simpulan Direktur:* Bantuan dana beasiswa secara mandiri menjadi faktor pengungkit utama yang merombak nasib ekonomi dan memicu mobilitas vertikal pemuda dari keluarga prasejahtera ($Beasiswa \\to Mobilitas Vertikal Prasejahtera$).\n- **Uji Evaluasi Pelemahan (Bias Seleksi & Modal Sosial Bawaan):**\n  - Kesimpulan direktur mengasumsikan bahwa para penerima beasiswa mewakili profil generasi muda keluarga miskin/prasejahtera di distrik perbatasan.\n  - Pilihan B membongkar bias seleksi (*selection bias*) yang fatal: 85% penerima beasiswa afirmasi ternyata merupakan anak-anak pejabat birokrasi dan pengusaha distrik yang telah menikmati privilese pendidikan asrama elit kota sejak kecil serta memiliki jaringan koneksi sosial keluarga yang kuat.\n  - Keberhasilan karir manajerial dan pendapatan tinggi mereka pada hakikatnya adalah kelanjutan dari reproduksi modal sosial dan privilese keluarga yang sudah mapan sejak awal, bukan merupakan bukti bahwa beasiswa telah berhasil mengentaskan generasi muda keluarga prasejahtera.\n- **Konklusi:** Pernyataan B meruntuhkan premis representasi dan klaim utama direktur yayasan secara menyeluruh.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Deteksi Bias Seleksi / Privilese Terselubung):**\n\n1. Simpulan: *Beasiswa merombak nasib anak keluarga prasejahtera perbatasan*.\n2. Cek siapa penerima beasiswanya: Apakah benar anak prasejahtera?\n3. Opsi B membuktikan 85% penerima beasiswa adalah anak pejabat dan pengusaha berprivilese kuat.\n4. Klaim pengentasan keluarga prasejahtera gugur seketika. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pengiriman remitansi uang adalah perilaku filantropi keluarga yang tidak membantah keberhasilan finansial lulusan.\n- **Pilihan C Salah:** Kenaikan harga sewa tempat tinggal adalah faktor inflasi biaya hidup perkotaan yang netral terhadap mobilitas karir 10 tahun kemudian.\n- **Pilihan D Salah:** Studi magister ke luar negeri justru menunjukkan mobilitas akademik lanjutan yang sejalan dengan pencapaian prestasi.\n- **Pilihan E Salah:** Pergeseran dialek bahasa adalah fenomena sosiolinguistik akulturasi perkotaan yang tidak meruntuhkan data pencapaian ekonomi."
     }
   ]
 };

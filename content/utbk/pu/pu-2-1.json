@@ -311,6 +311,356 @@
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika Aturan Adat:** $\\text{Hak Garap} = M \\land ((D \\land U) \\lor I)$\n  - $M$: Garis keturunan matrilineal sah\n  - $D$: Menetap di wilayah desa adat\n  - $U$: Ikut upacara musyawarah adat tahunan\n  - $I$: Memperoleh izin khusus ketua adat\n- **Evaluasi Tiap Profil Warga:**\n  - **Umar:** $M = B$, $D = S$, $U = S$, $I = S \\implies B \\land ((S \\land S) \\lor S) = B \\land (S \\lor S) = B \\land S = \\text{Salah}$ (Tidak Berhak).\n  - **Hamid:** $M = S$, $D = B$, $I = B \\implies S \\land ((B \\land U) \\lor B) = S \\land B = \\text{Salah}$ (Tidak Berhak karena syarat utama $M$ mutlak wajib Benar).\n  - **Zainab:** $M = B$, $D = B$, $U = B$, $I = S \\implies B \\land ((B \\land B) \\lor S) = B \\land (B \\lor S) = B \\land B = \\text{Benar}$ (Pasti Berhak!).\n- **Kesimpulan:** Hanya Zainab yang berhak memperoleh hak garap tanah ulayat.\n\n**Jawaban: E**",
       "quick_trick_markdown": "**Cara Cepat (Eliminasi Syarat Mutlak Utama):**\n\n1. Syarat utama di luar kurung adalah garis matrilineal ($M$). Siapa yang bukan matrilineal langsung coret!\n2. Hamid bukan garis matrilineal $\\implies$ Hamid langsung gugur.\n3. Umar di perantauan dan tanpa izin adat $\\implies$ Umar gugur.\n4. Zainab matrilineal sah, tinggal di desa, dan ikut musyawarah $\\implies$ Zainab lolos murni.\n5. Yang berhak hanyalah Zainab saja $\\implies$ Pilihan **E**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Umar gagal karena tidak menetap di desa, absen musyawarah, dan tidak memiliki izin khusus ketua adat.\n- **Pilihan B Salah:** Hamid gagal karena bukan berasal dari garis keturunan matrilineal yang merupakan syarat mutlak utama aturan adat.\n- **Pilihan C Salah:** Umar tidak memenuhi syarat hak garap tanah ulayat.\n- **Pilihan D Salah:** Hamid tidak memenuhi syarat garis keturunan matrilineal."
+    },
+    {
+      "example_id": "pu-02-01-ex9",
+      "variation_name": "Variasi 9: Analisis Syarat Perlu Sertifikasi Karbon Biru Padang Lamun (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam panduan ilmiah verifikasi kredit karbon biru (*blue carbon*) dari pemulihan ekosistem padang lamun (*Enhalus acoroides*), tercantum ketentuan metodologis berikut:\n\n*\"Kerapatan tutupan kanopi lamun mencapai minimal 70% ($p$) merupakan **syarat perlu (*necessary condition*)**, tetapi **bukan syarat cukup (*sufficient condition*)**, bagi suatu proyek restorasi pesisir untuk dapat diterbitkan sertifikat kredit karbon internasional ($q$).\"*",
+      "question_markdown": "Berdasarkan prinsip logika proposisi tersebut, manakah pernyataan di bawah ini yang **pasti benar secara deduktif**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Setiap proyek restorasi padang lamun yang berhasil mencapai kerapatan tutupan kanopi minimal 70% pasti langsung otomatis diterbitkan sertifikat kredit karbon internasional."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Jika sebuah proyek restorasi padang lamun memiliki kerapatan tutupan kanopi di bawah 70%, maka proyek tersebut dipastikan tidak dapat diterbitkan sertifikat kredit karbon internasional."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sebuah proyek restorasi pesisir yang telah berhasil memperoleh sertifikat kredit karbon internasional dapat saja memiliki kerapatan kanopi di bawah 70%."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Jika suatu proyek restorasi gagal memperoleh sertifikat kredit karbon internasional, maka penyebab utamanya sudah tentu karena kerapatan kanopinya di bawah 70%."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Kerapatan tutupan kanopi lamun 70% merupakan satu-satunya faktor penentu dan tidak memerlukan syarat teknis lainnya."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pahami relasi logika syarat perlu (*necessary condition*): jika $p$ adalah syarat perlu bagi $q$, maka rumusnya adalah $q \\implies p$ (artinya: untuk mendapat $q$, mutlak harus ada $p$). Bentuk kontraposisinya yang ekuivalen adalah $\\sim p \\implies \\sim q$ (jika syarat $p$ tidak terpenuhi/kurang dari 70%, maka $q$ pasti tidak terjadi/tidak dapat sertifikat). Jangan samakan syarat perlu dengan syarat cukup!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formalisasi Logika Proposisi:**\n  - Pernyataan: $p$ adalah syarat perlu (*necessary condition*) bagi $q$, tetapi bukan syarat cukup (*sufficient condition*).\n  - Rumus Implikasi Formal: $q \\implies p$.\n  - Ekuivalensi Kontraposisi: $\\sim p \\implies \\sim q$.\n- **Analisis Makna:**\n  - Jika sertifikat kredit karbon diterbitkan ($q$), maka kerapatan kanopi pasti $\\ge 70\\%$ ($p$).\n  - Jika kerapatan kanopi $< 70\\%$ (negasi $\\sim p$), maka sertifikat kredit karbon **pasti tidak dapat diterbitkan** ($\\sim q$).\n  - Karena $p$ bukan syarat cukup, pencapaian $p$ saja belum menjamin $q$ (mungkin butuh syarat perlu lain seperti verifikasi sedimen).\n- **Evaluasi Opsi:** Pilihan **B** secara sempurna merefleksikan kontraposisi valid $\\sim p \\implies \\sim q$.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Aturan Emas Syarat Perlu: Tidak Ada Syarat = Gagal Total):**\n\n1. Aturan: Syarat perlu artinya *wajib ada*. Jika syarat itu TIDAK ada (kanopi $< 70\\%$), maka hasil PASTI TIDAK TERJADI (sertifikat pasti tidak terbit).\n2. Cek opsi **B**: Kanopi di bawah $70\\% \\implies$ pasti tidak dapat sertifikat. Ini adalah rumus pasti $\\sim p \\implies \\sim q$.\n3. Coret opsi **A** karena memperlakukan syarat perlu sebagai syarat cukup (*otomatis terbit*).\n4. Coret opsi **C** karena melanggar syarat mutlak.\n5. Coret opsi **D** karena sesat pikir inversi (*denying the antecedent*).\n6. Jawaban tepat: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyatakan bahwa mencapai 70% langsung otomatis menerbitkan sertifikat merupakan kesalahan logika menyamakan syarat perlu dengan syarat cukup (*sufficient condition*).\n- **Pilihan C Salah:** Mengklaim proyek berstatus tersertifikasi bisa memiliki kanopi di bawah 70% menyalahi kaidah syarat perlu ($q \\implies p$).\n- **Pilihan D Salah:** Menyimpulkan jika gagal sertifikasi pasti karena kanopi $< 70\\%$ merupakan sesat pikir inversi; kegagalan bisa dipicu oleh syarat perlu lain yang tidak terpenuhi.\n- **Pilihan E Salah:** Menyatakan sebagai satu-satunya penentu bertentangan dengan klausul teks bahwa kanopi 70% bukan syarat cukup."
+    },
+    {
+      "example_id": "pu-02-01-ex10",
+      "variation_name": "Variasi 10: Evaluasi Konsistensi Regulasi Subsidi Bunga Kredit Tani (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Kementerian Keuangan menerbitkan regulasi mengenai penyaluran fasilitas subsidi bunga pinjaman usaha perbankan:\n\n1. *\"Pelaku usaha tani pangan berhak memperoleh subsidi bunga kredit usaha jika dan hanya jika memenuhi syarat: berstatus anggota aktif kelompok tani (poktan) terdaftar ($p$) DAN memiliki kepemilikan lahan garapan sah maksimal 2 hektare ($q$).\"*\n2. *\"Jika pelaku usaha tani pangan menggarap komoditas jagung atau kedelai ($r$), maka mereka wajib menyertakan surat rekomendasi dinas pertanian kabupaten ($s$) sebagai dokumen tambahan.\"*\n\nPak Danu adalah seorang petani yang memiliki lahan garapan sah seluas 1,5 hektare ($q$ bernilai Benar) dan menggarap komoditas jagung ($r$ bernilai Benar). Namun, berdasarkan verifikasi data, Pak Danu belum terdaftar sebagai anggota poktan mana pun ($p$ bernilai Salah) dan belum memiliki surat rekomendasi dinas ($s$ bernilai Salah).",
+      "question_markdown": "Berdasarkan aturan regulasi di atas, simpulan yang **pasti benar secara deduktif** mengenai hak subsidi bunga kredit Pak Danu adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pak Danu dipastikan tidak berhak memperoleh subsidi bunga kredit usaha karena tidak memenuhi syarat keanggotaan aktif kelompok tani, meskipun luas lahannya memenuhi kriteria."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pak Danu tetap berhak memperoleh subsidi bunga kredit usaha asalkan bersedia menaikkan luas lahan garapannya menjadi di atas 2 hektare."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pak Danu otomatis berhak memperoleh subsidi bunga kredit usaha karena komoditas jagung merupakan prioritas pangan nasional."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pak Danu dipastikan berhak memperoleh subsidi bunga jika ia segera mengurus surat rekomendasi dinas pertanian tanpa perlu mendaftar ke kelompok tani."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Status hak subsidi Pak Danu belum dapat ditentukan karena aturan komoditas jagung membatalkan aturan luas lahan."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati operator biimplikasi dan konjungsi pada aturan 1: Hak Subsidi $\\iff (p \\land q)$. Konjungsi $(p \\land q)$ menuntut KEDUA syarat harus bernilai Benar. Karena Pak Danu BUKAN anggota poktan ($p$ bernilai Salah), maka $(p \\land q)$ otomatis bernilai Salah. Sesuai biimplikasi, Pak Danu PASTI TIDAK BERHAK memperoleh subsidi!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Representasi Proposisi:**\n  - $H$: Hak memperoleh subsidi bunga kredit usaha.\n  - Aturan 1: $H \\iff (p \\land q)$, dengan $p$: anggota poktan terdaftar, $q$: lahan $\\le 2$ ha.\n- **Evaluasi Kondisi Faktual Pak Danu:**\n  - $q = \\text{Benar}$ (lahan $1{,}5$ ha $\\le 2$ ha).\n  - $p = \\text{Salah}$ (belum terdaftar anggota poktan).\n- **Penentuan Nilai Kebenaran:**\n  - Konjungsi: $p \\land q = \\text{Salah} \\land \\text{Benar} = \\text{Salah}$.\n  - Biimplikasi: $H \\iff \\text{Salah} \\implies H = \\text{Salah}$.\n- **Simpulan Deduktif:** Pak Danu secara sah dan niscaya **tidak berhak** memperoleh subsidi bunga kredit usaha karena kegagalan pemenuhan salah satu syarat konjungsi ($p$). Dokumen tambahan $s$ tidak dapat mengubah status ketidakberhakan ini.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Trik Eliminasi Konjungsi 'DAN'):**\n\n1. Syarat utama: Anggota Poktan ($p$) DAN Lahan $\\le 2$ ha ($q$).\n2. Kata hubung 'DAN' mewajibkan keduanya harus terpenuhi tanpa kompromi.\n3. Pak Danu bukan anggota poktan ($p = \\text{Salah}$) $\\implies$ langsung gugur hak subsidinya!\n4. Pilihan yang menyatakan Pak Danu tidak berhak karena syarat poktan tidak terpenuhi adalah pilihan **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menaikkan luas lahan di atas 2 hektare justru melanggar syarat $q$ (maksimal 2 ha).\n- **Pilihan C Salah:** Prioritas nasional komoditas tidak menghapuskan syarat mutlak keanggotaan poktan.\n- **Pilihan D Salah:** Mengurus surat rekomendasi saja tidak cukup karena syarat keanggotaan poktan adalah syarat mutlak ganda.\n- **Pilihan E Salah:** Aturan kedua merupakan syarat tambahan untuk komoditas tertentu, bukan pembatal aturan pokok."
+    },
+    {
+      "example_id": "pu-02-01-ex11",
+      "variation_name": "Variasi 11: Logika Biimplikasi Kriteria Diagnostik Remisi Depresi (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam pedoman psikiatri klinis internasional, status *remisi penuh* ($R$) pada pasien gangguan depresi mayor didefinisikan menggunakan relasi biimplikasi logis:\n\n*\"Seorang pasien depresi ditetapkan mencapai status remisi penuh ($R$) **jika dan hanya jika** memenuhi kondisi: skor skala penilaian depresi HAM-D berada pada rentang $\\le 7$ ($p$) DAN ketiadaan gejala anhedonia serta ide bunuh diri bertahan stabil selama minimal dua bulan berturut-turut ($q$).\"*\n\nBerdasarkan hasil audit rekam medis dua pasien di bangsal psikiatri:\n- **Pasien Rama**: Telah mencapai skor HAM-D bernilai 5 ($p$ bernilai Benar), namun ia masih dilaporkan mengalami anhedonia berat dalam dua minggu terakhir ($q$ bernilai Salah).\n- **Pasien Shinta**: Telah bebas sepenuhnya dari anhedonia dan ide bunuh diri selama tiga bulan berturut-turut ($q$ bernilai Benar), dan hasil asesmen skor klinis HAM-D miliknya tercatat 6 ($p$ bernilai Benar).",
+      "question_markdown": "Manakah simpulan yang **pasti benar secara deduktif** berdasarkan pedoman klinis tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pasien Rama dan Pasien Shinta sama-sama dipastikan telah mencapai status remisi penuh karena keduanya memiliki skor skala HAM-D di bawah 7."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pasien Rama berhak ditetapkan remisi penuh karena skor numerik kuantitatif HAM-D memiliki bobot lebih tinggi daripada laporan gejala kualitatif."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pasien Shinta dipastikan telah mencapai status remisi penuh, sedangkan Pasien Rama dipastikan belum mencapai status remisi penuh."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pasien Shinta belum dapat ditetapkan remisi penuh sebelum masa bebas gejala mencapai minimal enam bulan berturut-turut."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Status remisi kedua pasien belum dapat dipastikan karena evaluasi biimplikasi psikiatri bersifat probabilistik dan tidak mutlak."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati rumus biimplikasi: $R \\iff (p \\land q)$. Status remisi $R$ bernilai Benar jika dan hanya jika $p$ DAN $q$ keduanya Benar sekaligus. Cek masing-masing pasien: Rama ($p$ Benar, $q$ Salah) $\\implies R$ Salah. Shinta ($p$ Benar, $q$ Benar) $\\implies R$ Benar. Kesimpulan deduktif berlaku mutlak!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Definisi Formal Kaidah:** $R \\iff (p \\land q)$.\n  - $p$: Skor HAM-D $\\le 7$.\n  - $q$: Bebas anhedonia dan ide bunuh diri $\\ge 2$ bulan.\n- **Evaluasi Pasien Rama:**\n  - Nilai kebenaran: $p = \\text{Benar}$ (skor 5), $q = \\text{Salah}$ (masih anhedonia).\n  - Nilai konjungsi: $p \\land q = \\text{Benar} \\land \\text{Salah} = \\text{Salah}$.\n  - Status remisi: $R_{\\text{Rama}} \\iff \\text{Salah} \\implies R_{\\text{Rama}} = \\text{Salah}$ (Belum remisi penuh).\n- **Evaluasi Pasien Shinta:**\n  - Nilai kebenaran: $p = \\text{Benar}$ (skor 6), $q = \\text{Benar}$ (bebas gejala 3 bulan $\\ge 2$ bulan).\n  - Nilai konjungsi: $p \\land q = \\text{Benar} \\land \\text{Benar} = \\text{Benar}$.\n  - Status remisi: $R_{\\text{Shinta}} \\iff \\text{Benar} \\implies R_{\\text{Shinta}} = \\text{Benar}$ (Telah remisi penuh).\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Tabel Kebenaran Biimplikasi dan Konjungsi):**\n\n1. Syarat remisi: Skor $\\le 7$ DAN Bebas gejala $\\ge 2$ bulan.\n2. Rama: Skor lolos (5), tapi masih anhedonia $\\implies$ GAGAL remisi.\n3. Shinta: Skor lolos (6), bebas gejala 3 bulan $\\implies$ LOLOS remisi penuh.\n4. Jawaban yang menyatakan Shinta lolos dan Rama belum lolos adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan syarat $q$ pada Rama; skor HAM-D saja tidak cukup tanpa bebas gejala anhedonia.\n- **Pilihan B Salah:** Membuat asumsi hierarki bobot sendiri yang tidak tercantum dalam pedoman formal biimplikasi.\n- **Pilihan D Salah:** Menambahkan batas waktu 6 bulan secara sepihak, padahal pedoman menetapkan minimal 2 bulan (Shinta sudah 3 bulan).\n- **Pilihan E Salah:** Penalaran deduktif dengan aturan biimplikasi formal menghasilkan kepastian mutlak, bukan probabilistik."
+    },
+    {
+      "example_id": "pu-02-01-ex12",
+      "variation_name": "Variasi 12: Penentuan Nilai Kebenaran Protokol Redundansi Catu Daya Server (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam spesifikasi pusat data komputasi awan berkeandalan tinggi, sistem kontinuitas daya server diatur oleh protokol logika proposisi otomatis:\n\n1. Unit peladen komputasi kritis beroperasi normal ($N$) jika dan hanya jika sistem menerima suplai daya listrik stabil ($S$). Rumus: $N \\iff S$.\n2. Suplai daya listrik stabil ($S$) didefinisikan sebagai terpenuhinya kondisi: *\"Sistem ditenagai oleh Saluran Jaringan Utama PLN ($A$) ATAU Unit Genset Turbin Cadangan ($B$) secara eksklusif ($A \\oplus B$), DAN sistem baterai UPS daring berada dalam kondisi siap siaga ($C$).\"* Rumus: $S \\iff [(A \\oplus B) \\land C]$.\n\n*(Catatan Teknis: Operasi disjungsi eksklusif $A \\oplus B$ bernilai Benar jika tepat salah satu dari $A$ atau $B$ menyala aktif, dan bernilai Salah jika keduanya menyala serentak atau keduanya padam).*\n\nPada suatu insiden gangguan kelistrikan:\n- Saluran Jaringan Utama PLN terputus padam ($A$ bernilai Salah).\n- Unit Genset Turbin Cadangan berhasil menyala aktif ($B$ bernilai Benar).\n- Sistem pemantau mendeteksi baterai UPS daring mengalami kerusakan modul sehingga berstatus tidak siap siaga ($C$ bernilai Salah).",
+      "question_markdown": "Berdasarkan protokol logika proposisi di atas, bagaimanakah nilai kebenaran dari status suplai listrik stabil ($S$) dan operasional normal peladen komputasi ($N$)?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Status suplai listrik stabil ($S$) bernilai Benar dan peladen komputasi ($N$) beroperasi normal karena unit genset turbin berhasil menyala aktif."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Status suplai listrik stabil ($S$) bernilai Benar, tetapi peladen komputasi ($N$) bernilai Salah akibat sistem proteksi keselamatan mandiri."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Disjungsi eksklusif $A \\oplus B$ bernilai Salah sehingga suplai listrik stabil ($S$) otomatis padam."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Status suplai listrik stabil ($S$) bernilai Salah dan peladen komputasi ($N$) dipastikan tidak beroperasi normal karena kegagalan kesiapan sistem baterai UPS ($C$ bernilai Salah)."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Status operasional peladen komputasi ($N$) tidak dapat ditentukan sebelum teknisi listrik melakukan verifikasi manual di lapangan."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung bertahap:\n1. Hitung disjungsi eksklusif $A \\oplus B$: $A = \\text{Salah}$, $B = \\text{Benar} \\implies \\text{Salah} \\oplus \\text{Benar} = \\text{Benar}$.\n2. Hitung konjungsi dengan $C$: $(A \\oplus B) \\land C = \\text{Benar} \\land \\text{Salah} = \\text{Salah}$.\n3. Maka $S = \\text{Salah}$. Karena $N \\iff S$, maka $N = \\text{Salah}$ (server tidak beroperasi normal)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Evaluasi Langkah 1 (Disjungsi Eksklusif $A \\oplus B$):**\n  - $A = \\text{Salah}$ (PLN padam), $B = \\text{Benar}$ (Genset aktif).\n  - Berdasarkan definisi disjungsi eksklusif (XOR), jika tepat satu bernilai Benar, maka hasilnya Benar:\n    $$A \\oplus B = \\text{Salah} \\oplus \\text{Benar} = \\text{Benar}$$\n- **Evaluasi Langkah 2 (Konjungsi dengan Kesiapan UPS $C$):**\n  - $C = \\text{Salah}$ (UPS tidak siap siaga).\n  - Nilai suplai stabil: $S = (A \\oplus B) \\land C = \\text{Benar} \\land \\text{Salah} = \\text{Salah}$.\n- **Evaluasi Langkah 3 (Operasional Normal Server $N$):**\n  - Relasi: $N \\iff S$.\n  - Karena $S = \\text{Salah}$, maka $N = \\text{Salah}$.\n- **Simpulan Deduktif:** Suplai listrik stabil bernilai Salah dan unit server dipastikan tidak beroperasi normal akibat kegagalan kesiapan baterai UPS ($C$).\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Cek Efek Penggugur Konjungsi):**\n\n1. Perhatikan rumus daya stabil: $S = (A \\oplus B) \\land C$.\n2. Operasi '$\\land$' (DAN) bernilai Salah jika salah satu komponennya Salah.\n3. Karena baterai UPS rusak ($C = \\text{Salah}$), maka seluruh rangkaian konjungsi langsung bernilai Salah ($S = \\text{Salah}$) tanpa peduli genset hidup atau mati!\n4. Karena $S$ Salah, server $N$ pasti mati/tidak normal ($N = \\text{Salah}$).\n5. Pilihan tepat langsung teridentifikasi pada pilihan **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan syarat konjungsi baterai UPS ($C$); nyalanya genset saja tidak menjamin suplai stabil jika UPS tidak siap.\n- **Pilihan B Salah:** Kontradiksi dengan biimplikasi $N \\iff S$; jika $S$ Benar, $N$ harus Benar.\n- **Pilihan C Salah:** Disjungsi eksklusif $A \\oplus B$ justru bernilai Benar karena salah satu sumber listrik aktif menyala.\n- **Pilihan E Salah:** Nilai kebenaran logika proposisi formal dapat ditentukan secara pasti dan mutlak tanpa perlu inspeksi fisik tambahan."
+    },
+    {
+      "example_id": "pu-02-01-ex13",
+      "variation_name": "Variasi 13: Evaluasi Konsistensi Ketentuan Penetapan Cagar Budaya Nasional (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Berdasarkan regulasi perundang-undangan perlindungan warisan pusaka, suatu artefak sejarah dapat ditetapkan berstatus Cagar Budaya Peringkat Nasional ($N$) apabila memenuhi ketentuan logika proposisi berikut:\n\n1. Ketentuan Intrinsik: Objek wajib berusia minimal 50 tahun ($p$) DAN mewakili masa gaya paling singkat 50 tahun ($q$), SERTA memiliki arti khusus bagi sejarah atau ilmu pengetahuan ($r$). Rumus: $(p \\land q \\land r)$.\n2. Ketentuan Signifikansi: Objek wajib memiliki nilai penguatan kepribadian bangsa ($s$) ATAU merupakan bukti penting migrasi peradaban nusantara ($t$). Rumus: $(s \\lor t)$.\n3. Ketentuan Penetapan Nasional: *\"Artefak berstatus Cagar Budaya Peringkat Nasional ($N$) jika dan hanya jika memenuhi seluruh syarat intrinsik, memenuhi syarat signifikansi, DAN telah berstatus Cagar Budaya Peringkat Provinsi ($P$).\"*\nRumus: $N \\iff [(p \\land q \\land r) \\land (s \\lor t) \\land P]$.\n\nSebuah naskah piagam tembaga kuno diteliti oleh tim kurator:\n- Berusia 110 tahun ($p$ Benar), gaya aksara bertahan 60 tahun ($q$ Benar), dan memiliki arti sejarah tinggi ($r$ Benar).\n- Terbukti menjadi bukti kunci jalur migrasi maritim peradaban nusantara ($t$ Benar, sehingga $s \\lor t$ Benar).\n- Namun, artefak tersebut diusulkan langsung dari koleksi swasta dan belum pernah didaftarkan maupun ditetapkan sebagai Cagar Budaya Peringkat Provinsi ($P$ bernilai Salah).",
+      "question_markdown": "Berdasarkan ketentuan hukum tersebut, simpulan yang **pasti benar secara deduktif** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Artefak piagam tembaga kuno tersebut otomatis langsung berstatus Cagar Budaya Peringkat Nasional karena telah melampaui usia 100 tahun."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Artefak piagam tembaga kuno gugur haknya secara permanen dan tidak akan pernah bisa diusulkan menjadi cagar budaya apa pun di masa depan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Syarat status Peringkat Provinsi ($P$) dapat diabaikan jika nilai bukti migrasi peradaban nusantara ($t$) bernilai Benar."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Tim kurator berhak menerbitkan diskresi penetapan status Nasional langsung tanpa persetujuan pemerintah provinsi."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Artefak piagam tembaga kuno tersebut dipastikan belum dapat ditetapkan sebagai Cagar Budaya Peringkat Nasional karena belum memenuhi syarat keabsahan status Peringkat Provinsi, kendati seluruh kriteria intrinsik dan signifikansinya telah terpenuhi secara sah."
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati operator konjungsi pada aturan penetapan: $N \\iff [\\text{Intrinsik} \\land \\text{Signifikansi} \\land P]$. Karena piagam belum berstatus Peringkat Provinsi ($P$ bernilai Salah), maka seluruh kalimat konjungsi otomatis bernilai Salah. Simpulan deduktif yang pasti adalah piagam *belum dapat ditetapkan sebagai Peringkat Nasional*!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika:**\n  $$N \\iff [(p \\land q \\land r) \\land (s \\lor t) \\land P]$$\n- **Evaluasi Nilai Kebenaran Komponen:**\n  - Syarat Intrinsik: $p \\land q \\land r = \\text{Benar} \\land \\text{Benar} \\land \\text{Benar} = \\text{Benar}$.\n  - Syarat Signifikansi: $s \\lor t = s \\lor \\text{Benar} = \\text{Benar}$ (disjungsi bernilai Benar jika salah satu Benar).\n  - Syarat Jenjang Administrasi: $P = \\text{Salah}$ (belum berstatus Peringkat Provinsi).\n- **Hasil Evaluasi Konjungsi Total:**\n  $$\\text{Benar} \\land \\text{Benar} \\land \\text{Salah} = \\text{Salah}$$\n- **Simpulan Deduktif:** Karena sisi kanan bernilai Salah, maka $N = \\text{Salah}$. Piagam belum dapat ditetapkan berstatus Peringkat Nasional semata-mata karena belum memenuhi syarat administratif tingkat provinsi ($P$).\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Identifikasi Mata Rantai Syarat yang Hilang):**\n\n1. Syarat berstatus Nasional mewajibkan 3 hal sekaligus: [Intrinsik] DAN [Signifikansi] DAN [Peringkat Provinsi].\n2. Cek fakta: Intrinsik lengkap, Signifikansi lengkap, tapi BELUM berstatus Peringkat Provinsi ($P = \\text{Salah}$).\n3. Satu syarat 'DAN' gagal $\\implies$ Penetapan status Nasional otomatis belum bisa disahkan.\n4. Opsi yang dengan tepat menyimpulkan kegagalan syarat provinsi ini adalah pilihan **E**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Usia di atas 100 tahun hanya memenuhi syarat $p$, tidak menggugurkan syarat jenjang peringkat provinsi $P$.\n- **Pilihan B Salah:** Mengklaim gugur hak permanen merupakan vonis mutlak berlebihan; objek masih dapat diusulkan bertahap melalui tingkat provinsi terlebih dahulu.\n- **Pilihan C Salah:** Dalam logika proposisi konjungsi, kebenaran suatu variabel ($t$) tidak dapat menganulir kewajiban variabel konjungsi lainnya ($P$).\n- **Pilihan D Salah:** Melanggar kaidah hukum formal yang tertulis di dalam teks regulasi."
+    },
+    {
+      "example_id": "pu-02-01-ex14",
+      "variation_name": "Variasi 14: Analisis Syarat Cukup vs Syarat Perlu Sertifikasi Hutan Berkelanjutan (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Badan Standardisasi Pengelolaan Hutan Nasional memberlakukan regulasi audit kehutanan bersyarat:\n\n*\"Jika sebuah konsesi kehutanan mengimplementasikan sistem tebang pilih dengan siklus rotasi minimal 30 tahun ($p$) DAN menerapkan pemantauan deforestasi berbasis citra satelit nir-awak real-time ($q$), maka konsesi tersebut pasti memperoleh sertifikat Label Emas Hutan Berkelanjutan ($S$).\"*\n\nRumus logika implikasi: $(p \\land q) \\implies S$.\n\nHasil audit lingkungan independen mencatat data dua konsesi:\n1. Konsesi Rimba Lestari dinyatakan tidak memperoleh sertifikat Label Emas Hutan Berkelanjutan ($S$ bernilai Salah).\n2. Konsesi Bukit Barisan memperoleh sertifikat Label Emas Hutan Berkelanjutan ($S$ bernilai Benar).",
+      "question_markdown": "Berdasarkan kaidah logika proposisi (implikasi), manakah simpulan berikut yang **pasti bernilai benar secara deduktif**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Konsesi Rimba Lestari dipastikan telah menerapkan tebang pilih 30 tahun sekaligus pemantauan satelit real-time."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Konsesi Bukit Barisan dipastikan memenuhi syarat tebang pilih rotasi 30 tahun dan pemantauan satelit real-time."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Konsesi Rimba Lestari dipastikan tidak menerapkan tebang pilih rotasi minimal 30 tahun ATAU tidak menerapkan pemantauan deforestasi berbasis satelit real-time."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Konsesi Bukit Barisan pasti tidak menerapkan pemantauan satelit real-time."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Kedua konsesi kehutanan tersebut dipastikan melanggar undang-undang pidana perlindungan lingkungan hidup."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Terapkan hukum kontraposisi implikasi: $(p \\land q) \\implies S \\equiv \\sim S \\implies \\sim(p \\land q)$. Berdasarkan hukum De Morgan, $\\sim(p \\land q) \\equiv \\sim p \\lor \\sim q$. Karena Konsesi Rimba Lestari tidak memperoleh sertifikat ($\\sim S$), maka konsesi tersebut pasti tidak menerapkan tebang pilih 30 tahun ATAU tidak menerapkan pemantauan satelit!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Aturan:** $(p \\land q) \\implies S$.\n- **Kaidah Kontraposisi (Modus Tollens):**\n  $$\\sim S \\implies \\sim(p \\land q)$$\n- **Penerapan Hukum De Morgan:**\n  $$\\sim(p \\land q) \\equiv \\sim p \\lor \\sim q$$\n- **Deduksi Konsesi Rimba Lestari:** Karena Rimba Lestari gagal memperoleh sertifikat Label Emas ($S = \\text{Salah}$), maka secara mutlak berlaku $\\sim p \\lor \\sim q$ (tidak menerapkan rotasi 30 tahun ATAU tidak menerapkan pemantauan satelit real-time).\n- **Evaluasi Konsesi Bukit Barisan:** Memperoleh sertifikat ($S = \\text{Benar}$). Menarik simpulan bahwa Bukit Barisan pasti memenuhi $(p \\land q)$ adalah kekeliruan *affirming the consequent* karena sertifikat bisa diperoleh lewat jalur penilaian konservasi lain.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Terapkan Kontraposisi dan De Morgan):**\n\n1. Aturan: [Tebang Pilih DAN Satelit] $\\implies$ Label Emas.\n2. Kontraposisi: TIDAK Label Emas $\\implies$ [TIDAK Tebang Pilih ATAU TIDAK Satelit].\n3. Rimba Lestari tidak dapat sertifikat $\\implies$ opsi **C** pasti benar seketika!\n4. Coret opsi **B** dan **D** tentang Bukit Barisan karena terjebak *affirming the consequent*.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kontradiksi langsung dengan kontraposisi; jika keduanya diterapkan, konsesi pasti memperoleh sertifikat.\n- **Pilihan B Salah:** Kekeliruan logika menegaskan konsekuen (*affirming the consequent*); terwujudnya akibat $S$ tidak menjamin anteseden $p \\land q$ terjadi secara tunggal.\n- **Pilihan D Salah:** Spekulasi liar tanpa dasar logika terhadap konsesi Bukit Barisan.\n- **Pilihan E Salah:** Menjatuhkan vonis pidana yang tidak berhubungan dengan ketentuan sertifikasi sukarela (*non-sequitur*)."
+    },
+    {
+      "example_id": "pu-02-01-ex15",
+      "variation_name": "Variasi 15: Logika Biimplikasi Insentif Tarif Pajak Ekspor Komoditas Hilir (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Kementerian Keuangan dan Kementerian Perdagangan menetapkan regulasi pembebasan bea keluar ekspor (tarif 0%) bagi produk olahan nikel:\n\n*\"Perusahaan pengolahan mineral berhak memperoleh fasilitas pembebasan bea keluar ekspor ($F$) **jika dan hanya jika** produk nikel yang diekspor memiliki kadar kemurnian minimal 99,8% berupa nikel presipitasi baterai ($p$) DAN perusahaan telah mengoperasikan fasilitas pengolahan limbah ramah lingkungan berteknologi dry-stacking ($q$).\"*\n\nRumus logika biimplikasi: $F \\iff (p \\land q)$.\n\nBerdasarkan berkas verifikasi bea cukai terhadap dua perusahaan pemurnian smelter:\n- **PT Bahodopi Mineral**: Berhasil mengoperasikan teknologi dry-stacking limbah secara resmi ($q$ bernilai Benar), namun kadar kemurnian nikel yang diekspor tercatat hanya 92,5% berupa feronikel mentah ($p$ bernilai Salah).\n- **PT Morowali Battery**: Memproduksi nikel berstandar baterai dengan kemurnian 99,9% ($p$ bernilai Benar) dan fasilitas dry-stacking limbahnya telah beroperasi penuh sesuai AMDAL ($q$ bernilai Benar).",
+      "question_markdown": "Berdasarkan kaidah logika biimplikasi, manakah simpulan yang **pasti benar secara deduktif**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "PT Bahodopi Mineral dan PT Morowali Battery sama-sama berhak memperoleh pembebasan bea keluar karena keduanya telah mengoperasikan fasilitas dry-stacking ramah lingkungan."
+        },
+        {
+          "key": "B",
+          "text_markdown": "PT Bahodopi Mineral dipastikan tidak berhak memperoleh fasilitas pembebasan bea keluar ekspor, sedangkan PT Morowali Battery dipastikan berhak memperoleh fasilitas tersebut."
+        },
+        {
+          "key": "C",
+          "text_markdown": "PT Bahodopi Mineral dapat memperoleh pembebasan bea keluar ekspor jika membayar denda kompensasi lingkungan."
+        },
+        {
+          "key": "D",
+          "text_markdown": "PT Morowali Battery belum tentu memperoleh fasilitas pembebasan bea keluar jika volume ekspornya di bawah 10.000 ton per bulan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pemenuhan fasilitas dry-stacking limbah merupakan syarat cukup tunggal yang membatalkan ketentuan kadar kemurnian nikel."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati biimplikasi $F \\iff (p \\land q)$. Hak pembebasan $F$ bernilai Benar jika dan hanya jika kedua syarat $p$ DAN $q$ terpenuhi serentak. Cek Bahodopi: $p$ Salah $\\implies (p \\land q)$ Salah $\\implies F$ Salah. Cek Morowali: $p$ Benar dan $q$ Benar $\\implies (p \\land q)$ Benar $\\implies F$ Benar!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Regulasi:** $F \\iff (p \\land q)$.\n- **Evaluasi PT Bahodopi Mineral:**\n  - $p = \\text{Salah}$ (kemurnian $92{,}5\\% < 99{,}8\\%$).\n  - $q = \\text{Benar}$ (dry-stacking aktif).\n  - Konjungsi: $p \\land q = \\text{Salah} \\land \\text{Benar} = \\text{Salah}$.\n  - Biimplikasi: $F_{\\text{Bahodopi}} \\iff \\text{Salah} \\implies F_{\\text{Bahodopi}} = \\text{Salah}$ (Tidak Berhak).\n- **Evaluasi PT Morowali Battery:**\n  - $p = \\text{Benar}$ (kemurnian $99{,}9\\% \\ge 99{,}8\\%$).\n  - $q = \\text{Benar}$ (dry-stacking aktif).\n  - Konjungsi: $p \\land q = \\text{Benar} \\land \\text{Benar} = \\text{Benar}$.\n  - Biimplikasi: $F_{\\text{Morowali}} \\iff \\text{Benar} \\implies F_{\\text{Morowali}} = \\text{Benar}$ (Pasti Berhak).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Gugur Konjungsi 'DAN'):**\n\n1. Syarat: Kemurnian $\\ge 99{,}8\\%$ ($p$) DAN Dry-stacking ($q$).\n2. Bahodopi: kemurnian hanya $92{,}5\\%$ $\\implies$ satu syarat gagal $\\implies$ langsung gugur hak pembebasannya!\n3. Morowali: kemurnian $99{,}9\\%$ dan limbah lolos $\\implies$ kedua syarat lengkap $\\implies$ pasti berhak!\n4. Pilihan tepat: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan syarat kadar kemurnian $p$ pada Bahodopi; fasilitas limbah saja tidak cukup.\n- **Pilihan C Salah:** Pembayaran denda kompensasi tidak tercantum sebagai klausul substitusi kemurnian nikel dalam regulasi.\n- **Pilihan D Salah:** Menambahkan kuota volume 10.000 ton yang tidak pernah disyaratkan dalam teks biimplikasi.\n- **Pilihan E Salah:** Salah mengartikan operator konjungsi; dalam logika proposisi, konjungsi menuntut kedua syarat dipenuhi bersama tanpa saling membatalkan."
+    },
+    {
+      "example_id": "pu-02-01-ex16",
+      "variation_name": "Variasi 16: Penentuan Nilai Kebenaran Protokol Triase Klinis Gawat Darurat (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Pedoman gawat darurat rumah sakit menetapkan bahwa seorang pasien yang tiba di IGD wajib langsung dikategorikan ke dalam Kategori Merah / Penanganan Resusitasi Segera ($R$) jika memenuhi ketentuan proposisi majemuk berikut:\n\n*\"Pasien mengalami sumbatan jalan napas akut ($A$) ATAU laju pernapasan kurang dari 8 kali per menit ($B$), ATAU memenuhi kondisi: saturasi oksigen darah di bawah 88% ($C$) DAN mengalami penurunan kesadaran dengan skor GCS di bawah 9 ($D$).\"*\n\nRumus logika proposisi: $R \\iff [A \\lor B \\lor (C \\land D)]$.\n\nBerikut data pemeriksaan fisik awal pada lima pasien yang tiba di IGD:\n- **Pasien 1**: Jalan napas bersih ($A$ Salah), laju napas 14 kali/menit ($B$ Salah), saturasi 85% ($C$ Benar), namun skor GCS 14 sadar penuh ($D$ Salah).\n- **Pasien 2**: Jalan napas bersih ($A$ Salah), laju napas 6 kali/menit ($B$ Benar), saturasi 91% ($C$ Salah), skor GCS 12 ($D$ Salah).\n- **Pasien 3**: Jalan napas bersih ($A$ Salah), laju napas 18 kali/menit ($B$ Salah), saturasi 94% ($C$ Salah), skor GCS 7 stupor ($D$ Benar).\n- **Pasien 4**: Jalan napas bersih ($A$ Salah), laju napas 16 kali/menit ($B$ Salah), saturasi 96% ($C$ Salah), skor GCS 15 sadar ($D$ Salah).\n- **Pasien 5**: Jalan napas bersih ($A$ Salah), laju napas 20 kali/menit ($B$ Salah), saturasi 86% ($C$ Benar), skor GCS 13 ($D$ Salah).",
+      "question_markdown": "Berdasarkan pedoman triase tersebut, siapakah pasien yang **pasti wajib langsung dikategorikan ke dalam Kategori Merah ($R$)**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pasien 1"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pasien 2"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pasien 3"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pasien 4"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pasien 5"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan disjungsi $A \\lor B \\lor (C \\land D)$. Jika salah satu cabang $A$, $B$, atau blok $(C \\land D)$ bernilai Benar, maka $R$ otomatis bernilai Benar. Periksa Pasien 2: laju pernapasan 6 kali/menit memenuhi $B$ ($< 8$ kali/menit) $\\implies B$ bernilai Benar, sehingga langsung masuk Kategori Merah!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Triase:** $R \\iff [A \\lor B \\lor (C \\land D)]$.\n- **Evaluasi Tiap Pasien:**\n  - **Pasien 1:** $A=\\text{Salah}, B=\\text{Salah}, C=\\text{Benar}, D=\\text{Salah} \\implies S \\lor S \\lor (B \\land S) = S \\lor S \\lor S = \\text{Salah}$.\n  - **Pasien 2:** $A=\\text{Salah}, B=\\text{Benar}$ (napas $6 < 8$), $C=\\text{Salah}, D=\\text{Salah} \\implies S \\lor B \\lor (S \\land S) = \\text{Benar}$.\n  - **Pasien 3:** $A=\\text{Salah}, B=\\text{Salah}, C=\\text{Salah}, D=\\text{Benar} \\implies S \\lor S \\lor (S \\land B) = S \\lor S \\lor S = \\text{Salah}$.\n  - **Pasien 4:** Semua parameter normal $\\implies \\text{Salah}$.\n  - **Pasien 5:** $A=\\text{Salah}, B=\\text{Salah}, C=\\text{Benar}, D=\\text{Salah} \\implies S \\lor S \\lor (B \\land S) = \\text{Salah}$.\n- **Konklusi:** Hanya Pasien 2 yang menghasilkan nilai kebenaran Benar pada formula triase gawat darurat.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Manfaatkan Jalur Bebas Disjungsi 'ATAU'):**\n\n1. Syarat Merah: [Sumbatan Napas] ATAU [Napas $< 8$] ATAU [Saturasi $< 88\\%$ DAN GCS $< 9$].\n2. Cari pasien yang memenuhi jalur mandiri tanpa konjungsi: Pasien 2 memiliki napas 6 kali/menit ($< 8$).\n3. Karena satu cabang disjungsi sudah Benar, pasien langsung resmi Kategori Merah tanpa perlu mengecek saturasi atau GCS.\n4. Jawaban seketika: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A & E Salah:** Pasien 1 dan 5 memiliki saturasi rendah ($C$), namun GCS masih tinggi ($D$ Salah); karena disyaratkan konjungsi 'DAN', cabang ini gugur.\n- **Pilihan C Salah:** Pasien 3 memiliki GCS rendah ($D$), namun saturasi masih baik ($C$ Salah); konjungsi gagal.\n- **Pilihan D Salah:** Pasien 4 seluruh parameternya stabil dan sadar penuh."
+    },
+    {
+      "example_id": "pu-02-01-ex17",
+      "variation_name": "Variasi 17: Logika Verifikasi Otorisasi Kriptografis Multi-Signature (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam protokol keamanan dompet multi-tanda tangan (*multi-signature crypto vault*), sebuah transaksi penarikan dana berstatus sah dan dieksekusi ($E$) jika dan hanya jika memenuhi ketentuan logika berikut:\n\n1. Otorisasi Identitas Primer: Tanda tangan digital kunci privat direktur keuangan valid ($A$) DAN lolos verifikasi biometrik perangkat keras ($B$). Rumus: $(A \\land B)$.\n2. Otorisasi Sekunder: Persetujuan validator kustodian berlisensi ($C$) ATAU persetujuan komite audit ($D$) secara disjungsi eksklusif ($C \\oplus D$).\n*(Catatan Teknis: $C \\oplus D$ bernilai Benar jika tepat salah satu dari $C$ atau $D$ menyetujui, dan bernilai Salah jika keduanya menyetujui serentak atau keduanya menolak).* \n3. Ketentuan Eksekusi: Transaksi dieksekusi ($E$) jika dan hanya jika Otorisasi Identitas Primer terpenuhi, Otorisasi Sekunder terpenuhi, DAN nilai transaksi tidak melebihi limit harian ($L$).\nRumus: $E \\iff [(A \\land B) \\land (C \\oplus D) \\land L]$.\n\nPada sebuah pengajuan transaksi penarikan:\n- Kunci privat direktur valid ($A$ bernilai Benar) dan lolos biometrik perangkat keras ($B$ bernilai Benar).\n- Baik validator kustodian ($C$) maupun komite audit ($D$) ternyata sama-sama menyetujui transaksi tersebut secara serentak ($C$ bernilai Benar dan $D$ bernilai Benar).\n- Nilai transaksi berada di bawah limit harian ($L$ bernilai Benar).",
+      "question_markdown": "Berdasarkan aturan protokol kriptografis di atas, bagaimanakah status eksekusi penarikan dana ($E$) tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Transaksi berhasil dieksekusi ($E$ bernilai Benar) karena seluruh pihak pendukung menyetujui dan nilai transaksi di bawah limit."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Transaksi berhasil dieksekusi ($E$ bernilai Benar) karena persetujuan ganda dari $C$ dan $D$ memberikan tingkat keamanan yang lebih tinggi daripada satu persetujuan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Transaksi gagal dieksekusi ($E$ bernilai Salah) karena operasi disjungsi eksklusif $C \\oplus D$ bernilai Salah ketika kedua pihak sekunder memberikan persetujuan serentak."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Status eksekusi transaksi tidak dapat ditentukan karena sistem harus menunggu konfirmasi dari otoritas moneter pusat."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Kunci privat direktur otomatis hangus dan dibekukan permanen oleh protokol."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati tabel kebenaran disjungsi eksklusif (XOR, $\\oplus$): pernyataan $C \\oplus D$ bernilai Benar jika TEPAT SATU pihak menyetujui. Jika kedua pihak $C$ dan $D$ sama-sama Benar, maka $C \\oplus D = \\text{Salah}$. Karena rumus eksekusi mensyaratkan konjungsi $(A \\land B) \\land (C \\oplus D) \\land L$, kegagalan pada cabang XOR menyebabkan seluruh transaksi GAGAL dieksekusi ($E = \\text{Salah}$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Protokol:** $E \\iff [(A \\land B) \\land (C \\oplus D) \\land L]$.\n- **Evaluasi Langkah demi Langkah:**\n  1. Otorisasi Primer: $A \\land B = \\text{Benar} \\land \\text{Benar} = \\text{Benar}$.\n  2. Otorisasi Sekunder ($C \\oplus D$):\n     Berdasarkan aturan disjungsi eksklusif, jika kedua proposisi bernilai Benar:\n     $$C \\oplus D = \\text{Benar} \\oplus \\text{Benar} = \\text{Salah}$$\n  3. Pengecekan Limit: $L = \\text{Benar}$.\n  4. Evaluasi Konjungsi Total:\n     $$E = \\text{Benar} \\land \\text{Salah} \\land \\text{Benar} = \\text{Salah}$$\n- **Simpulan Deduktif:** Transaksi penarikan dana dipastikan gagal dieksekusi ($E$ bernilai Salah) semata-mata karena klausul disjungsi eksklusif dilanggar oleh persetujuan ganda simultan ($C \\oplus D = \\text{Salah}$). \n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Periksa Sifat Disjungsi Eksklusif XOR):**\n\n1. Disjungsi eksklusif ($C \\oplus D$) = WAJIB TEPAT SATU, TIDAK BOLEH DUA-DUANYA.\n2. Fakta: $C$ Benar DAN $D$ Benar $\\implies$ XOR seketika menghasilkan nilai **Salah**.\n3. Karena dirangkai dengan operator 'DAN', satu nilai Salah langsung membatalkan eksekusi ($E = \\text{Salah}$).\n4. Pilihan yang secara presisi menyatakan kegagalan akibat XOR adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A & B Salah:** Mengabaikan aturan disjungsi eksklusif (XOR); dalam logika formal, persetujuan ganda pada klausul XOR bernilai Salah, bukan lebih aman.\n- **Pilihan D Salah:** Menambahkan syarat eksternal otoritas moneter yang tidak terdapat dalam spesifikasi protokol.\n- **Pilihan E Salah:** Kegagalan eksekusi tidak memicu pembekuan atau penghangusan kunci privat."
+    },
+    {
+      "example_id": "pu-02-01-ex18",
+      "variation_name": "Variasi 18: Evaluasi Konsistensi Hak Kelola Perhutanan Sosial Adat (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Berdasarkan peraturan menteri lingkungan hidup dan kehutanan, sebuah komunitas masyarakat hukum adat berhak memperoleh Surat Keputusan Hak Kelola Hutan Adat ($H$) jika dan hanya jika memenuhi struktur ketentuan berikut:\n\n1. Keabsahan Subjek: Adanya pengakuan keberadaan masyarakat hukum adat melalui Peraturan Daerah ($A$) DAN wilayah adat memiliki batas wilayah terpetakan secara partisipatif ($B$). Rumus: $(A \\land B)$.\n2. Keabsahan Objek: Kawasan hutan yang dimohonkan berstatus hutan negara bebas sengketa tumpang-tindih izin pihak ketiga ($C$) ATAU merupakan wilayah ulayat yang telah dikelola secara turun-temurun minimal tiga generasi ($D$). Rumus: $(C \\lor D)$.\n3. Regulasi Penetapan: Surat Keputusan Hak Kelola disahkan ($H$) jika dan hanya jika Keabsahan Subjek terpenuhi DAN Keabsahan Objek terpenuhi.\nRumus: $H \\iff [(A \\land B) \\land (C \\lor D)]$.\n\nDalam sidang verifikasi permohonan Komunitas Adat Dayak Paser:\n- Komunitas telah mengantongi Peraturan Daerah resmi pengakuan masyarakat adat ($A$ bernilai Benar).\n- Namun, peta wilayah partisipatif belum disahkan karena masih ada sengketa tapal batas dengan desa tetangga ($B$ bernilai Salah).\n- Kawasan hutan terbukti merupakan wilayah ulayat leluhur yang dikelola sejak lima generasi lalu ($D$ bernilai Benar, sehingga $C \\lor D$ bernilai Benar).",
+      "question_markdown": "Berdasarkan kaidah logika proposisi, simpulan yang **pasti benar secara deduktif** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Komunitas Adat Dayak Paser otomatis berhak memperoleh SK Hak Kelola Hutan Adat karena telah mengelola wilayah ulayat selama lima generasi."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Komunitas Adat Dayak Paser dipastikan belum berhak memperoleh SK Hak Kelola Hutan Adat karena kegagalan pemenuhan syarat keabsahan subjek pada aspek peta batas partisipatif ($B$ bernilai Salah)."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Syarat peta batas wilayah partisipatif ($B$) otomatis gugur jika komunitas telah memiliki Peraturan Daerah ($A$)."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Wilayah adat tersebut dipastikan akan disita oleh negara dan dilelang kepada perusahaan swasta."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Komunitas Adat Dayak Paser berhak menerbitkan izin penebangan kayu komersial mandiri tanpa SK menteri."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati konjungsi $H \\iff [(A \\land B) \\land (C \\lor D)]$. Syarat Subjek $(A \\land B)$ mewajibkan KEDUA syarat $A$ dan $B$ bernilai Benar. Karena peta batas belum disahkan ($B$ bernilai Salah), maka $(A \\land B) = \\text{Salah}$. Akibatnya, seluruh konjungsi bernilai Salah, sehingga SK Hak Kelola belum berhak diterbitkan ($H = \\text{Salah}$)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Regulasi:** $H \\iff [(A \\land B) \\land (C \\lor D)]$.\n- **Evaluasi Keabsahan Subjek:**\n  - $A = \\text{Benar}$ (Perda ada).\n  - $B = \\text{Salah}$ (Peta batas belum tuntas).\n  - Nilai Subjek: $A \\land B = \\text{Benar} \\land \\text{Salah} = \\text{Salah}$.\n- **Evaluasi Keabsahan Objek:**\n  - $D = \\text{Benar}$ (kelola 5 generasi $\\ge 3$ generasi).\n  - Nilai Objek: $C \\lor D = C \\lor \\text{Benar} = \\text{Benar}$.\n- **Evaluasi Total Biimplikasi:**\n  $$H \\iff [\\text{Salah} \\land \\text{Benar}] \\iff \\text{Salah} \\implies H = \\text{Salah}$$\n- **Simpulan Deduktif:** Komunitas Adat Dayak Paser dipastikan belum berhak memperoleh SK Hak Kelola Hutan Adat ($H = \\text{Salah}$) akibat belum terpenuhinya salah satu komponen syarat subjek, yaitu pengesahan peta batas partisipatif ($B$).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Identifikasi Kegagalan Syarat 'DAN'):**\n\n1. Subjek sah = Perda ($A$) DAN Peta Batas ($B$).\n2. Peta batas bermasalah ($B = \\text{Salah}$) $\\implies$ Subjek GAGAL secara hukum.\n3. Karena disyaratkan 'DAN' dengan objek, kegagalan subjek langsung menggugurkan penerbitan SK ($H = \\text{Salah}$) tanpa peduli lamanya sejarah ulayat ($D$).\n4. Jawaban pasti: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan syarat subjek; pengelolaan 5 generasi hanya memenuhi syarat objek $D$, tidak menghapuskan syarat peta batas $B$.\n- **Pilihan C Salah:** Dalam konjungsi logika, keberadaan satu syarat ($A$) tidak menganulir kewajiban pemenuhan syarat lainnya ($B$).\n- **Pilihan D Salah:** Menarik kesimpulan penyitaan dan lelang yang tidak memiliki dasar yuridis dalam wacana.\n- **Pilihan E Salah:** Komunitas tidak berhak mengeluarkan izin komersial mandiri tanpa legalitas SK menteri yang sah."
     }
   ]
 }

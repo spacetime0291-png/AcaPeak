@@ -1,16 +1,16 @@
 {
   "total_target": 280,
-  "total_current": 72,
-  "progress_percentage": 25.71,
-  "next_target": "pu-02-02.json",
+  "total_current": 254,
+  "progress_percentage": 90.7,
+  "next_target": "pu-01-01.json",
   "batch_size": 5,
   "target_per_subchapter": 20,
   "recent_concepts": [
-    "Evaluasi Nilai Kebenaran Status Peringatan Dini Hidrometeorologi (Sains & Lingkungan)",
-    "Analisis Syarat Cukup vs Syarat Perlu Insentif Pajak Kendaraan Rendah Emisi (Ekonomi & Kebijakan Publik)",
-    "Logika Biimplikasi Diagnosis Sindrom Metabolik Klinis (Kesehatan & Psikologi Kognitif)",
-    "Penentuan Nilai Kebenaran Protokol Autentikasi Zero-Trust Multi-Faktor (Teknologi & Industri)",
-    "Evaluasi Konsistensi Proposisi Majemuk Pewarisan Tanah Ulayat Adat (Sosial, Budaya & Sejarah)"
+    "Persentase Pertumbuhan Stok Karbon Biru Estuari (Sains & Lingkungan)",
+    "Rekalibrasi Proporsi Subsidi Transportasi Publik Ramah Lingkungan (Ekonomi & Kebijakan Publik)",
+    "Evaluasi Efektivitas Intervensi Mindfulness terhadap Skor Kecemasan (Kesehatan & Psikologi Kognitif)",
+    "Laju Pertumbuhan Kapasitas Produksi Baterai LFP Gigafactory (Teknologi & Industri)",
+    "Komparasi Penerimaan Tiket Wisatawan Kompleks Percandian Cagar Budaya (Sosial, Budaya & Sejarah)"
   ],
   "subchapters": [
     {
@@ -18,7 +18,7 @@
       "id": "pu-1-1",
       "chapter": "Bab 1: Penalaran Induktif",
       "subchapter": "1.1 Generalisasi",
-      "current": 8,
+      "current": 18,
       "target": 20,
       "status": "IN_PROGRESS"
     },
@@ -27,7 +27,7 @@
       "id": "pu-1-2",
       "chapter": "Bab 1: Penalaran Induktif",
       "subchapter": "1.2 Analogi",
-      "current": 8,
+      "current": 18,
       "target": 20,
       "status": "IN_PROGRESS"
     },
@@ -36,16 +36,16 @@
       "id": "pu-1-3",
       "chapter": "Bab 1: Penalaran Induktif",
       "subchapter": "1.3 Hubungan Kausalitas (Sebab-Akibat)",
-      "current": 18,
+      "current": 20,
       "target": 20,
-      "status": "IN_PROGRESS"
+      "status": "DONE"
     },
     {
       "file": "pu-02-01.json",
       "id": "pu-2-1",
       "chapter": "Bab 2: Penalaran Deduktif",
       "subchapter": "2.1 Logika Proposisi",
-      "current": 8,
+      "current": 18,
       "target": 20,
       "status": "IN_PROGRESS"
     },
@@ -54,90 +54,90 @@
       "id": "pu-2-2",
       "chapter": "Bab 2: Penalaran Deduktif",
       "subchapter": "2.2 Ekuivalensi dan Negasi Pernyataan",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-02-03.json",
       "id": "pu-2-3",
       "chapter": "Bab 2: Penalaran Deduktif",
       "subchapter": "2.3 Penarikan Kesimpulan",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-02-04.json",
       "id": "pu-2-4",
       "chapter": "Bab 2: Penalaran Deduktif",
       "subchapter": "2.4 Logika Kuantor dan Diagram Venn",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-02-05.json",
       "id": "pu-2-5",
       "chapter": "Bab 2: Penalaran Deduktif",
       "subchapter": "2.5 Penalaran Analitik",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-02-06.json",
       "id": "pu-2-6",
       "chapter": "Bab 2: Penalaran Deduktif",
       "subchapter": "2.6 Evaluasi Argumen",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-03-01.json",
       "id": "pu-3-1",
       "chapter": "Bab 3: Penalaran Kuantitatif",
       "subchapter": "3.1 Pola Bilangan dan Deret",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-03-02.json",
       "id": "pu-3-2",
       "chapter": "Bab 3: Penalaran Kuantitatif",
       "subchapter": "3.2 Pola Gambar dan Spasial Numerik",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-03-03.json",
       "id": "pu-3-3",
       "chapter": "Bab 3: Penalaran Kuantitatif",
       "subchapter": "3.3 Operasi Hitung dan Aritmetika Dasar",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-03-04.json",
       "id": "pu-3-4",
       "chapter": "Bab 3: Penalaran Kuantitatif",
       "subchapter": "3.4 Perbandingan Senilai dan Berbalik Nilai",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     },
     {
       "file": "pu-03-05.json",
       "id": "pu-3-5",
       "chapter": "Bab 3: Penalaran Kuantitatif",
       "subchapter": "3.5 Interpretasi Data",
-      "current": 3,
+      "current": 18,
       "target": 20,
-      "status": "TODO"
+      "status": "IN_PROGRESS"
     }
   ]
 }

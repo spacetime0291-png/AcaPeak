@@ -13,7 +13,7 @@
       "Estimasi Nilai Ekstrem dan Pendekatan Perhitungan (HOTS)"
     ],
     "requires_svg": false,
-    "updated_at": "2026-11-08"
+    "updated_at": "2026-11-09"
   },
   "content": {
     "tactical_overview": "Operasi hitung dan aritmetika dasar pada Penalaran Umum UTBK bukan menguji kemampuan Anda menghitung angka panjang seperti kalkulator, melainkan menguji kecerdasan aljabar dan strategi penyederhanaan cepat. Tipe soal yang paling mendominasi adalah operasi lambang baru buatan pembuat soal (seperti simbol bintang atau lingkaran dengan aturan rumus khusus) serta manipulasi pecahan-desimal-persentase. Kunci utamanya adalah jangan pernah mengalikan angka besar secara mentah: selalu sederhanakan pecahan sebelum dikali, manfaatkan sifat distributif untuk memfaktorkan angka yang sama, dan gunakan estimasi batas nilai untuk menyingkirkan opsi yang tidak masuk akal.",
@@ -136,6 +136,531 @@
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Ubah Bentuk:**\n  - $P = (1 - \\frac{1}{2026}) + (1 - \\frac{1}{2027}) = 2 - (\\frac{1}{2026} + \\frac{1}{2027})$.\n  - $Q = (1 - \\frac{1}{2025}) + (1 - \\frac{1}{2028}) = 2 - (\\frac{1}{2025} + \\frac{1}{2028})$.\n- **Evaluasi Pengurang:**\n  - Karena $f(x) = 1/x$ konveks, maka $\\frac{1}{2025} + \\frac{1}{2028} > \\frac{1}{2026} + \\frac{1}{2027}$.\n  - Pengurang $Q$ lebih besar daripada pengurang $P$.\n- **Konklusi:** $2 - \\text{pengurang kecil} > 2 - \\text{pengurang besar} \\implies P > Q$.\n\n**Jawaban: A**",
       "quick_trick_markdown": "**Cara Cepat (Logika Komplemen 1):**\n\n1. Pecahan mendekati 1: yang memiliki suku pembagi paling kecil (2025) memiliki \"cacat/pengurang\" paling besar.\n2. Karena Q dikurangi oleh 1/2025 (cacat terbesar), maka nilai Q lebih kecil daripada P.\n3. Kesimpulan: $P > Q$. Jawaban: **A**.",
       "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Terbalik membandingkan peran pengurang.\n- **Pilihan C, D, E Salah:** Nilai P dan Q terbukti berbeda secara matematis pasti."
+    },
+    {
+      "example_id": "pu-03-03-ex4",
+      "variation_name": "Variasi 1: Operasi Campuran Pecahan Emas dan Desimal Emisi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah instalasi pengolahan limbah gas industri menghitung efisiensi reduksi partikulat emisi melalui operasi campuran pecahan, desimal, dan persentase berikut:\n$$(37{,}5\\% \\times 72) + \\left( \\frac{5}{9} \\times 0{,}81 \\right) - (12{,}5\\% \\times 48)$$",
+      "question_markdown": "Nilai akhir dari hasil perhitungan operasi emisi tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "20,45"
+        },
+        {
+          "key": "B",
+          "text_markdown": "21,45"
+        },
+        {
+          "key": "C",
+          "text_markdown": "21,55"
+        },
+        {
+          "key": "D",
+          "text_markdown": "22,45"
+        },
+        {
+          "key": "E",
+          "text_markdown": "23,50"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Manfaatkan konversi pecahan emas: $37{,}5\\% = \\frac{3}{8}$ dan $12{,}5\\% = \\frac{1}{8}$. Sederhanakan perkalian dengan mencoret angka penyebut terhadap 72 dan 48, lalu bagi 0,81 dengan 9!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Konversi Nilai Persentase ke Pecahan Emas:**\n  - $37{,}5\\% = \\frac{37{,}5}{100} = \\frac{3}{8}$\n  - $12{,}5\\% = \\frac{12{,}5}{100} = \\frac{1}{8}$\n- **Penyelesaian Masing-Masing Suku:**\n  - Suku 1:\n    $$37{,}5\\% \\times 72 = \\frac{3}{8} \\times 72 = 3 \\times 9 = 27$$\n  - Suku 2:\n    $$\\frac{5}{9} \\times 0{,}81 = 5 \\times \\left(\\frac{0{,}81}{9}\\right) = 5 \\times 0{,}09 = 0{,}45$$\n  - Suku 3:\n    $$12{,}5\\% \\times 48 = \\frac{1}{8} \\times 48 = 6$$\n- **Penjumlahan dan Pengurangan Total:**\n  $$\\text{Hasil} = 27 + 0{,}45 - 6 = (27 - 6) + 0{,}45 = 21 + 0{,}45 = 21{,}45$$\n- **Konklusi:** Nilai akhir operasi hitung tersebut adalah **21,45**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Substitusi Pecahan Emas):**\n\n1. $37{,}5\\% \\times 72 = \\frac{3}{8} \\times 72 = 27$.\n2. $\\frac{5}{9} \\times 0{,}81 = 5 \\times 0{,}09 = 0{,}45$.\n3. $12{,}5\\% \\times 48 = \\frac{1}{8} \\times 48 = 6$.\n4. Hitung langsung: $27 - 6 + 0{,}45 = 21{,}45$.\n5. Jawaban **B** selesai dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung 20,45 karena salah mengurangkan $27 - 7 = 20$.\n- **Pilihan C Salah:** Menghitung 21,55 karena keliru mengalikan $5 \\times 0{,}09 = 0{,}55$.\n- **Pilihan D Salah:** Menghitung 22,45 karena salah membagi $48 / 8 = 5$.\n- **Pilihan E Salah:** Menghitung dengan pembulatan kasar tanpa menghitung desimal secara presisi."
+    },
+    {
+      "example_id": "pu-03-03-ex5",
+      "variation_name": "Variasi 2: Operasi Lambang Khusus Bersarang Indeks Subsidi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam formulasi penetapan bobot bantuan subsidi logistik pangan daerah, didefinisikan dua buah operator aritmetika khusus untuk sembarang bilangan bulat $a$ dan $b$:\n$$a \\ \\square \\ b = \\frac{a \\cdot b + 6}{a + b - 1}$$\n$$a \\ \\Delta \\ b = 3a - 2b + 5$$",
+      "question_markdown": "Nilai dari hasil operasi bersarang **$(6 \\ \\square \\ 3) \\ \\Delta \\ 4$** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "0"
+        },
+        {
+          "key": "B",
+          "text_markdown": "2"
+        },
+        {
+          "key": "C",
+          "text_markdown": "4"
+        },
+        {
+          "key": "D",
+          "text_markdown": "6"
+        },
+        {
+          "key": "E",
+          "text_markdown": "8"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Tuntaskan operasi di dalam tanda kurung $(6 \\ \\square \\ 3)$ terlebih dahulu dengan mengganti $a = 6$ dan $b = 3$. Setelah mendapatkan hasilnya, jadikan angka tersebut sebagai nilai $a$ baru pada operator segitiga terhadap $b = 4$!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tahap 1: Evaluasi Operasi Dalam Kurung $(6 \\ \\square \\ 3)$**\n  - Definisi operator: $a \\ \\square \\ b = \\frac{a \\cdot b + 6}{a + b - 1}$\n  - Masukkan $a = 6$ dan $b = 3$:\n    $$6 \\ \\square \\ 3 = \\frac{6 \\cdot 3 + 6}{6 + 3 - 1} = \\frac{18 + 6}{8} = \\frac{24}{8} = 3$$\n- **Tahap 2: Evaluasi Operasi Luar $3 \\ \\Delta \\ 4$**\n  - Definisi operator: $a \\ \\Delta \\ b = 3a - 2b + 5$\n  - Masukkan $a = 3$ dan $b = 4$:\n    $$3 \\ \\Delta \\ 4 = 3(3) - 2(4) + 5 = 9 - 8 + 5 = 1 + 5 = 6$$\n- **Konklusi:** Nilai akhir dari operasi bersarang tersebut adalah **6**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Dua Langkah Runtun):**\n\n1. Dalam kurung: $\\frac{18 + 6}{8} = \\frac{24}{8} = 3$.\n2. Operator segitiga: $3(3) - 2(4) + 5 = 9 - 8 + 5 = 6$.\n3. Jawaban **D** langsung diperoleh.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Lupa menambahkan konstanta $+5$ pada operator kedua sehingga menghitung $9 - 8 = 1$ lalu dikurang 1.\n- **Pilihan B Salah:** Menghitung $3(3) - 2(4) = 1$ lalu keliru menjumlahkan dengan angka lain.\n- **Pilihan C Salah:** Terbalik memasukkan variabel menjadi $3(4) - 2(3) + 5 = 12 - 6 + 5 = 11$ atau salah hitung.\n- **Pilihan E Salah:** Kesalahan aritmetika pada pembagian tahap pertama."
+    },
+    {
+      "example_id": "pu-03-03-ex6",
+      "variation_name": "Variasi 3: Sifat Keterbagian Bilangan Bulat Bersyarat Kode Medis (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah nomor kode identifikasi rekam medis pasien di rumah sakit terdiri dari bilangan bulat positif lima digit berbentuk $\\overline{5a74b}$. Tim audit sistem menyatakan bahwa nomor kode tersebut habis dibagi oleh $36$.",
+      "question_markdown": "Nilai **maksimum** dari hasil kali digit **$a \\times b$** yang memenuhi ketentuan tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "11"
+        },
+        {
+          "key": "B",
+          "text_markdown": "16"
+        },
+        {
+          "key": "C",
+          "text_markdown": "20"
+        },
+        {
+          "key": "D",
+          "text_markdown": "24"
+        },
+        {
+          "key": "E",
+          "text_markdown": "28"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Faktorkan 36 menjadi dua bilangan prima relatif: $36 = 4 \\times 9$. (1) Syarat habis dibagi 4: dua digit terakhir $\\overline{4b}$ harus habis dibagi 4 $\\to$ tentukan kemungkinan nilai $b$. (2) Syarat habis dibagi 9: jumlah seluruh digit $(5 + a + 7 + 4 + b)$ harus habis dibagi 9 $\\to$ tentukan pasangan nilai $a$ untuk setiap $b$, lalu cari nilai perkalian $a \\times b$ yang paling besar!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kriteria Keterbagian oleh 36:**\n  - Bilangan habis dibagi 36 jika dan hanya jika bilangan tersebut habis dibagi $4$ dan habis dibagi $9$ secara simultan (karena $\\text{FPB}(4, 9) = 1$).\n- **Syarat 1: Habis Dibagi 4**\n  - Dua digit terakhir bilangan adalah $\\overline{4b}$.\n  - Nilai $\\overline{4b}$ yang habis dibagi 4 dengan $b$ digit tunggal ($0 \\le b \\le 9$):\n    $$\\overline{4b} \\in \\{40, \\; 44, \\; 48\\} \\implies b \\in \\{0, \\; 4, \\; 8\\}$$\n- **Syarat 2: Habis Dibagi 9**\n  - Jumlah seluruh digit harus merupakan kelipatan 9:\n    $$\\sum = 5 + a + 7 + 4 + b = 16 + a + b$$\n  - Uji untuk setiap kemungkinan nilai $b$:\n    - **Kasus 1 ($b = 0$):**\n      $$16 + a + 0 = 16 + a$$\n      Kelipatan 9 terdekat adalah 18, maka $a = 18 - 16 = 2$.\n      Pasangan $(a, b) = (2, 0) \\implies a \\times b = 2 \\times 0 = 0$.\n    - **Kasus 2 ($b = 4$):**\n      $$16 + a + 4 = 20 + a$$\n      Kelipatan 9 terdekat adalah 27, maka $a = 27 - 20 = 7$.\n      Pasangan $(a, b) = (7, 4) \\implies a \\times b = 7 \\times 4 = 28$.\n    - **Kasus 3 ($b = 8$):**\n      $$16 + a + 8 = 24 + a$$\n      Kelipatan 9 terdekat adalah 27, maka $a = 27 - 24 = 3$.\n      Pasangan $(a, b) = (3, 8) \\implies a \\times b = 3 \\times 8 = 24$.\n- **Evaluasi Nilai Maksimum:**\n  - Nilai-nilai $a \\times b$ yang mungkin adalah $\\{0, \\; 24, \\; 28\\}$.\n  - Nilai maksimumnya adalah **28** (tercapai saat $a = 7$ dan $b = 4$).\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Tiga Cabang):**\n\n1. Habis dibagi 4: $b \\in \\{0, 4, 8\\}$.\n2. Habis dibagi 9 ($16 + a + b$ kelipatan 9):\n   - $b = 0 \\implies a = 2 \\implies a \\times b = 0$\n   - $b = 4 \\implies a = 7 \\implies a \\times b = 28$\n   - $b = 8 \\implies a = 3 \\implies a \\times b = 24$\n3. Nilai terbesar adalah 28 (Pilihan **E**).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Angka 11 merupakan nilai $a + b$ pada Kasus 2 dan Kasus 3, bukan hasil perkalian $a \\times b$.\n- **Pilihan B & C Salah:** Bukan merupakan hasil kali dari pasangan solusi digit yang sah.\n- **Pilihan D Salah:** Angka 24 adalah hasil kali pada Kasus 3 ($3 \\times 8$), namun bukan merupakan nilai maksimum karena masih ada 28."
+    },
+    {
+      "example_id": "pu-03-03-ex7",
+      "variation_name": "Variasi 4: Komparasi Aljabar P dan Q Bentuk Kuadrat Sempurna (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Pada pengujian performa algoritma akselerasi komputasi, didefinisikan dua nilai tolak ukur $P$ dan $Q$ sebagai berikut:\n$$P = \\frac{2025^2 - 1}{2026}$$\n$$Q = \\sqrt{2024 \\times 2026 + 1}$$",
+      "question_markdown": "Hubungan kuantitatif yang **paling tepat** antara **P** dan **Q** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "$P < Q$"
+        },
+        {
+          "key": "B",
+          "text_markdown": "$P > Q$"
+        },
+        {
+          "key": "C",
+          "text_markdown": "$P = Q$"
+        },
+        {
+          "key": "D",
+          "text_markdown": "$P = 2Q$"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Hubungan antara P dan Q tidak dapat ditentukan"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan hitung angka ribuan secara manual! Gunakan rumus selisih kuadrat $x^2 - 1 = (x - 1)(x + 1)$. Pada $Q$, ubah perkalian $2024 \\times 2026$ menjadi $(2025 - 1)(2025 + 1) = 2025^2 - 1$. Amati penyederhanaannya!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Penyederhanaan Nilai P:**\n  - Manfaatkan identitas selisih kuadrat $a^2 - b^2 = (a - b)(a + b)$ dengan $a = 2025$ dan $b = 1$:\n    $$2025^2 - 1 = (2025 - 1)(2025 + 1) = 2024 \\times 2026$$\n  - Substitusikan ke nilai $P$:\n    $$P = \\frac{2024 \\times 2026}{2026} = 2024$$\n- **Penyederhanaan Nilai Q:**\n  - Perhatikan bentuk di dalam tanda akar:\n    $$2024 \\times 2026 = (2025 - 1)(2025 + 1) = 2025^2 - 1^2 = 2025^2 - 1$$\n  - Maka nilai di dalam akar menjadi:\n    $$2024 \\times 2026 + 1 = (2025^2 - 1) + 1 = 2025^2$$\n  - Tarik akar kuadratnya:\n    $$Q = \\sqrt{2025^2} = 2025$$\n- **Perbandingan Nilai P dan Q:**\n  - $P = 2024$\n  - $Q = 2025$\n  - Karena $2024 < 2025$, maka berlaku hubungan kuantitatif: $$P < Q$$ (secara spesifik $Q = P + 1$).\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Identitas Selisih Kuadrat):**\n\n1. Pembilang $P = (2025-1)(2025+1) = 2024 \\times 2026 \\implies P = 2024$.\n2. Isi akar $Q = (2025^2 - 1) + 1 = 2025^2 \\implies Q = 2025$.\n3. Terbukti $P = 2024 < Q = 2025 \\implies P < Q$.\n4. Jawaban **A** didapat dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Terbalik menyimpulkan relasi perbandingan.\n- **Pilihan C Salah:** Menganggap kedua bentuk identik padahal memiliki selisih tepat 1 angka.\n- **Pilihan D & E Salah:** Nilai kedua variabel terbukti berhingga dan dapat dibandingkan secara definitif."
+    },
+    {
+      "example_id": "pu-03-03-ex8",
+      "variation_name": "Variasi 5: Faktorisasi Selisih Kuadrat Angka Tahun Prasasti (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam kajian epigrafi sejarah, perhitungan selisih kuadrat angka tahun Saka kronogram prasasti dirumuskan ke dalam bentuk aritmetika berikut:\n$$\\frac{2026^2 - 2022^2}{2024}$$",
+      "question_markdown": "Nilai bulat sederhana dari hasil operasi tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "2"
+        },
+        {
+          "key": "B",
+          "text_markdown": "4"
+        },
+        {
+          "key": "C",
+          "text_markdown": "8"
+        },
+        {
+          "key": "D",
+          "text_markdown": "12"
+        },
+        {
+          "key": "E",
+          "text_markdown": "16"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan kuadratkan angka ribuan secara manual! Gunakan rumus faktorisasi selisih kuadrat: $a^2 - b^2 = (a - b)(a + b)$. Hitung $(2026 - 2022)$ dan $(2026 + 2022)$, lalu hubungkan dengan penyebut 2024!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Bentuk Aljabar:**\n  - Pembilang memiliki bentuk selisih kuadrat $a^2 - b^2$ dengan $a = 2026$ dan $b = 2022$.\n  - Terapkan rumus faktorisasi:\n    $$a^2 - b^2 = (a - b)(a + b)$$\n- **Perhitungan Komponen Pembilang:**\n  - Faktor selisih:\n    $$a - b = 2026 - 2022 = 4$$\n  - Faktor penjumlahan:\n    $$a + b = 2026 + 2022 = 4048$$\n  - Perhatikan hubungan antara 4048 dan penyebut 2024:\n    $$4048 = 2 \\times 2024$$\n  - Maka pembilang utuh adalah:\n    $$2026^2 - 2022^2 = 4 \\times 4048 = 4 \\times (2 \\times 2024) = 8 \\times 2024$$\n- **Penyelesaian Pembagian terhadap Penyebut:**\n  $$\\frac{2026^2 - 2022^2}{2024} = \\frac{8 \\times 2024}{2024} = 8$$\n- **Konklusi:** Nilai bulat dari operasi tersebut adalah **8**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Faktorisasi Kilat):**\n\n1. Pembilang $= (2026 - 2022)(2026 + 2022) = 4 \\times 4048$.\n2. Bagi dengan 2024: $\\frac{4 \\times 4048}{2024} = 4 \\times 2 = 8$.\n3. Jawaban **C** tuntas dalam 8 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menghitung hanya rasio $4048 / 2024 = 2$ tanpa mengalikan dengan faktor selisih 4.\n- **Pilihan B Salah:** Menghitung hanya faktor selisih $2026 - 2022 = 4$ dan lupa mengalikan dengan 2.\n- **Pilihan D Salah:** Kesalahan perkalian dasar $4 \\times 3 = 12$.\n- **Pilihan E Salah:** Mengalikan dengan $4 \\times 4 = 16$ karena keliru menghitung faktor selisih kuadrat."
+    },
+    {
+      "example_id": "pu-03-03-ex9",
+      "variation_name": "Variasi 6: Operasi Campuran Pecahan Emas dan Desimal Karbon Biru (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam kajian neraca karbon biru ekosistem pesisir, stasiun pemantauan mengukur rasio efisiensi penyerapan vegetasi mangrove ($E$) melalui formula aritmetika campuran pecahan, persentase, dan desimal berikut:\n$$E = \\frac{(12{,}5\\% \\times 64) + (37{,}5\\% \\times 48)}{\\left( \\frac{4}{9} \\times 0{,}72 \\right) + 0{,}18}$$",
+      "question_markdown": "Nilai bulat akhir dari rasio efisiensi penyerapan karbon **$E$** tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "26"
+        },
+        {
+          "key": "B",
+          "text_markdown": "39"
+        },
+        {
+          "key": "C",
+          "text_markdown": "48"
+        },
+        {
+          "key": "D",
+          "text_markdown": "52"
+        },
+        {
+          "key": "E",
+          "text_markdown": "56"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Manfaatkan konversi pecahan emas: $12{,}5\\% = \\frac{1}{8}$ dan $37{,}5\\% = \\frac{3}{8}$. Sederhanakan pembilang dan penyebut secara terpisah sebelum membaginya!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Evaluasi Nilai Pembilang:**\n  - Konversi persentase ke pecahan emas:\n    $$12{,}5\\% = \\frac{1}{8} \\qquad \\text{dan} \\qquad 37{,}5\\% = \\frac{3}{8}$$\n  - Hitung suku-suku pada pembilang:\n    $$12{,}5\\% \\times 64 = \\frac{1}{8} \\times 64 = 8$$\n    $$37{,}5\\% \\times 48 = \\frac{3}{8} \\times 48 = 3 \\times 6 = 18$$\n  - Jumlahkan pembilang:\n    $$\\text{Pembilang} = 8 + 18 = 26$$\n- **Evaluasi Nilai Penyebut:**\n  - Sederhanakan suku desimal:\n    $$\\frac{4}{9} \\times 0{,}72 = 4 \\times \\left( \\frac{0{,}72}{9} \\right) = 4 \\times 0{,}08 = 0{,}32$$\n  - Jumlahkan penyebut:\n    $$\\text{Penyebut} = 0{,}32 + 0{,}18 = 0{,}50 = \\frac{1}{2}$$\n- **Perhitungan Nilai Akhir $E$:**\n  $$E = \\frac{\\text{Pembilang}}{\\text{Penyebut}} = \\frac{26}{0{,}50} = \\frac{26}{\\frac{1}{2}} = 26 \\times 2 = 52$$\n- **Konklusi:** Nilai bulat dari rasio efisiensi penyerapan karbon $E$ adalah **52**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Substitusi Pecahan Emas & Dua Kali Lipat):**\n\n1. Pembilang: $\\frac{64}{8} + 3 \\times \\frac{48}{8} = 8 + 18 = 26$.\n2. Penyebut: $4 \\times 0{,}08 + 0{,}18 = 0{,}32 + 0{,}18 = 0{,}50$.\n3. Membagi dengan $0{,}50$ identik dengan mengalikan 2: $26 \\times 2 = 52$.\n4. Pilihan **D** langsung terkunci dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Nilai 26 hanyalah hasil dari pembilang saja, lupa membagi dengan penyebut 0,50.\n- **Pilihan B Salah:** Menghitung $26 \\times 1{,}5 = 39$ karena keliru mengira penyebut bernilai $2/3$.\n- **Pilihan C Salah:** Kesalahan hitung pada pembilang $8 + 16 = 24$ lalu dikali 2 menjadi 48.\n- **Pilihan E Salah:** Menghitung pembilang $10 + 18 = 28$ lalu dikali 2 menjadi 56."
+    },
+    {
+      "example_id": "pu-03-03-ex10",
+      "variation_name": "Variasi 7: Operator Baru Bersarang Ganda Kelayakan Kredit UMKM (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam model penilaian kelayakan debitur usaha mikro pada platform keuangan daerah, dirumuskan dua operator matematika khusus untuk sembarang bilangan bulat positif $x$ dan $y$:\n$$x \\ \\otimes \\ y = \\frac{x \\cdot y + 10}{x + 2}$$\n$$a \\ \\odot \\ b = 4a - 3b + 8$$",
+      "question_markdown": "Nilai dari hasil operasi bersarang **$(6 \\ \\otimes \\ 5) \\ \\odot \\ (4 \\ \\otimes \\ 8)$** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "3"
+        },
+        {
+          "key": "B",
+          "text_markdown": "5"
+        },
+        {
+          "key": "C",
+          "text_markdown": "7"
+        },
+        {
+          "key": "D",
+          "text_markdown": "9"
+        },
+        {
+          "key": "E",
+          "text_markdown": "11"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Selesaikan kedua tanda kurung secara terpisah menggunakan operator $\\otimes$. Setelah memperoleh kedua bilangan bulat tersebut, operasikan hasilnya menggunakan aturan $4a - 3b + 8$!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tahap 1: Evaluasi Kurung Pertama $(6 \\ \\otimes \\ 5)$**\n  - Aturan: $x \\ \\otimes \\ y = \\frac{x \\cdot y + 10}{x + 2}$\n  - Masukkan $x = 6$ dan $y = 5$:\n    $$6 \\ \\otimes \\ 5 = \\frac{6 \\cdot 5 + 10}{6 + 2} = \\frac{30 + 10}{8} = \\frac{40}{8} = 5$$\n- **Tahap 2: Evaluasi Kurung Kedua $(4 \\ \\otimes \\ 8)$**\n  - Masukkan $x = 4$ dan $y = 8$:\n    $$4 \\ \\otimes \\ 8 = \\frac{4 \\cdot 8 + 10}{4 + 2} = \\frac{32 + 10}{6} = \\frac{42}{6} = 7$$\n- **Tahap 3: Operasikan Kedua Hasil Menggunakan Operator $\\odot$**\n  - Bentuk sekarang menjadi: $5 \\ \\odot \\ 7$\n  - Aturan: $a \\ \\odot \\ b = 4a - 3b + 8$\n  - Masukkan $a = 5$ dan $b = 7$:\n    $$5 \\ \\odot \\ 7 = 4(5) - 3(7) + 8 = 20 - 21 + 8 = -1 + 8 = 7$$\n- **Konklusi:** Nilai akhir dari operasi bersarang tersebut adalah **7**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Tiga Langkah Rapi):**\n\n1. Kurung kiri: $\\frac{30 + 10}{8} = \\frac{40}{8} = 5$.\n2. Kurung kanan: $\\frac{32 + 10}{6} = \\frac{42}{6} = 7$.\n3. Gabung: $4(5) - 3(7) + 8 = 20 - 21 + 8 = 7$.\n4. Jawaban **C** didapat dalam waktu singkat.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Lupa menambahkan konstanta $+8$ pada operator kedua sehingga didapat $20 - 21 = -1$ lalu dijumlahkan salah.\n- **Pilihan B Salah:** Nilai 5 merupakan hasil dari kurung pertama saja, belum dituntaskan.\n- **Pilihan D Salah:** Terbalik memasukkan urutan variabel menjadi $4(7) - 3(5) + 8 = 28 - 15 + 8 = 21$ atau salah reduksi aritmetika.\n- **Pilihan E Salah:** Kesalahan hitung pada tanda negatif: $20 + 21 - 8$ menghasilkan nilai belasan."
+    },
+    {
+      "example_id": "pu-03-03-ex11",
+      "variation_name": "Variasi 8: Komparasi Aljabar Faktorisasi Kubik Waktu Reaksi Kognitif (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam eksperimen psikometri kecepatan pemrosesan kognitif, dihitung dua indikator waktu reaksi $P$ dan $Q$ yang didefinisikan sebagai berikut:\n$$P = \\frac{2026^3 - 1}{2026^2 + 2026 + 1}$$\n$$Q = \\frac{2025^3 + 1}{2025^2 - 2025 + 1}$$",
+      "question_markdown": "Hubungan kuantitatif yang **paling tepat** antara nilai **P** dan **Q** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "$P > Q$"
+        },
+        {
+          "key": "B",
+          "text_markdown": "$P < Q$"
+        },
+        {
+          "key": "C",
+          "text_markdown": "$P = Q$"
+        },
+        {
+          "key": "D",
+          "text_markdown": "$P = 2Q - 1$"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Hubungan antara P dan Q tidak dapat ditentukan"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan mencoba menghitung pemangkatan tiga angka ribuan! Ingat identitas faktorisasi kubik aljabar: $a^3 - 1 = (a - 1)(a^2 + a + 1)$ dan $b^3 + 1 = (b + 1)(b^2 - b + 1)$. Sederhanakan bentuk pecahan tersebut!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Penyederhanaan Indikator P:**\n  - Manfaatkan identitas selisih kubik: $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$.\n  - Untuk $a = 2026$ dan $b = 1$:\n    $$2026^3 - 1^3 = (2026 - 1)(2026^2 + 2026 \\cdot 1 + 1^2) = 2025(2026^2 + 2026 + 1)$$\n  - Substitusikan ke dalam bentuk $P$:\n    $$P = \\frac{2025(2026^2 + 2026 + 1)}{2026^2 + 2026 + 1} = 2025$$\n- **Penyederhanaan Indikator Q:**\n  - Manfaatkan identitas jumlah kubik: $b^3 + c^3 = (b + c)(b^2 - bc + c^2)$.\n  - Untuk $b = 2025$ dan $c = 1$:\n    $$2025^3 + 1^3 = (2025 + 1)(2025^2 - 2025 \\cdot 1 + 1^2) = 2026(2025^2 - 2025 + 1)$$\n  - Substitusikan ke dalam bentuk $Q$:\n    $$Q = \\frac{2026(2025^2 - 2025 + 1)}{2025^2 - 2025 + 1} = 2026$$\n- **Perbandingan Nilai P dan Q:**\n  - Diperoleh $P = 2025$ dan $Q = 2026$.\n  - Karena $2025 < 2026$, maka berlaku hubungan definitif: $$P < Q$$ (secara eksak $Q = P + 1$).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Identitas Aljabar Kubik):**\n\n1. Pembilang $P$ dibagi penyebutnya langsung menghasilkan $a - 1 = 2026 - 1 = 2025$.\n2. Pembilang $Q$ dibagi penyebutnya langsung menghasilkan $b + 1 = 2025 + 1 = 2026$.\n3. Terlihat jelas $P = 2025 < Q = 2026 \\implies P < Q$.\n4. Jawaban **B** selesai dalam 8 detik tanpa kalkulator.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terbalik menyimpulkan pertidaksamaan karena menduga $2026^3$ pasti lebih besar daripada $2025^3$.\n- **Pilihan C Salah:** Menganggap kedua bentuk setara padahal menghasilkan selisih tepat 1 angka.\n- **Pilihan D & E Salah:** Hubungan kedua bilangan bulat terbukti definitif dan bernilai eksak pasti."
+    },
+    {
+      "example_id": "pu-03-03-ex12",
+      "variation_name": "Variasi 9: Sifat Keterbagian 72 Kode Enkripsi Sensor IoT Industri (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah kode token pengaman transmisi data pada kluster sensor IoT pabrik manufaktur otomotif berupa bilangan bulat enam digit: $\\overline{4x85y2}$, di mana $x$ dan $y$ merupakan digit angka tunggal ($0 \\le x, y \\le 9$). Protokol keamanan mensyaratkan kode token tersebut harus habis dibagi oleh $72$.",
+      "question_markdown": "Nilai **maksimum** yang mungkin dari hasil kali kedua digit **$x \\times y$** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "15"
+        },
+        {
+          "key": "B",
+          "text_markdown": "24"
+        },
+        {
+          "key": "C",
+          "text_markdown": "48"
+        },
+        {
+          "key": "D",
+          "text_markdown": "63"
+        },
+        {
+          "key": "E",
+          "text_markdown": "72"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Faktorkan 72 menjadi dua bilangan prima relatif: $72 = 8 \\times 9$. (1) Syarat habis dibagi 8: periksa tiga digit terakhir $\\overline{5y2}$. Cari digit $y$ yang membuat $\\overline{5y2}$ habis dibagi 8. (2) Syarat habis dibagi 9: jumlah seluruh digit harus kelipatan 9. Tentukan pasangan nilai $x$ untuk setiap $y$, lalu pilih hasil kali $x \\times y$ terbesar!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kriteria Keterbagian oleh 72:**\n  - Bilangan bulat habis dibagi 72 jika dan hanya jika bilangan tersebut memenuhi syarat habis dibagi $8$ dan habis dibagi $9$ secara simultan (karena $\\text{FPB}(8, 9) = 1$).\n- **Syarat 1: Keterbagian oleh 8 (Tiga Digit Terakhir)**\n  - Tiga digit terakhir adalah bilangan ratusan $\\overline{5y2}$.\n  - Bilangan kelipatan 8 pada rentang $500$ hingga $599$ yang berakhiran angka 2:\n    $$\\overline{5y2} \\in \\{512, \\; 552, \\; 592\\}$$\n  - Diperoleh tiga kemungkinan nilai digit $y$:\n    $$y \\in \\{1, \\; 5, \\; 9\\}$$\n- **Syarat 2: Keterbagian oleh 9 (Jumlah Seluruh Digit)**\n  - Jumlah digit bilangan $\\overline{4x85y2}$ harus merupakan kelipatan 9:\n    $$\\sum = 4 + x + 8 + 5 + y + 2 = 19 + x + y$$\n  - Karena $0 \\le x \\le 9$ dan $0 \\le y \\le 9$, maka rentang jumlah adalah $19 \\le \\sum \\le 37$.\n  - Kelipatan 9 yang memenuhi adalah $27$ dan $36$:\n    $$x + y = 27 - 19 = 8 \\qquad \\text{atau} \\qquad x + y = 36 - 19 = 17$$\n- **Evaluasi Pasangan Solusi $(x, y)$:**\n  - **Kasus 1 ($y = 1$):**\n    $$x + 1 = 8 \\implies x = 7 \\implies x \\times y = 7 \\times 1 = 7$$\n    *(Jika $x + 1 = 17 \\implies x = 16$, tidak memenuhi karena $x \\le 9$)*\n  - **Kasus 2 ($y = 5$):**\n    $$x + 5 = 8 \\implies x = 3 \\implies x \\times y = 3 \\times 5 = 15$$\n  - **Kasus 3 ($y = 9$):**\n    $$x + 9 = 8 \\implies x = -1 \\; \\text{(tidak memenuhi)}$$\n    $$x + 9 = 17 \\implies x = 8 \\implies x \\times y = 8 \\times 9 = 72$$\n- **Menentukan Nilai Maksimum:**\n  - Himpunan hasil kali yang mungkin adalah $\\{7, \\; 15, \\; 72\\}$.\n  - Nilai maksimumnya adalah **72** (tercapai pada pasangan $x = 8$ dan $y = 9$).\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Keterbagian Cepat):**\n\n1. Habis dibagi 8: $\\overline{5y2}$ habis dibagi 8 untuk $y \\in \\{1, 5, 9\\}$.\n2. Habis dibagi 9: $19 + x + y$ harus kelipatan 9 ($27$ atau $36$).\n3. Uji nilai terbesar untuk optimasi: jika $y = 9$, maka $x + 9 = 17 \\implies x = 8$.\n4. Hasil kali maksimum: $x \\times y = 8 \\times 9 = 72$.\n5. Pilihan **E** langsung terpilih.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Nilai 15 adalah hasil kali dari Kasus 2 ($x = 3, y = 5$), bukan nilai maksimum.\n- **Pilihan B & C Salah:** Bukan merupakan hasil kali dari pasangan solusi digit yang sah.\n- **Pilihan D Salah:** Nilai 63 ($7 \\times 9$) tidak memenuhi kriteria keterbagian 9 karena jumlah digitnya menjadi $19 + 7 + 9 = 35$ (bukan kelipatan 9)."
+    },
+    {
+      "example_id": "pu-03-03-ex13",
+      "variation_name": "Variasi 10: Perkalian Teleskopik Siklus Kalender Penanggalan Kuno (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam kajian arkeoastronomi prasasti Jawa Kuno dinasti Mataram Kuno, rekonstruksi siklus penanggalan perputaran planet dirumuskan melalui perkalian berantai teleskopik pecahan selisih kuadrat berikut:\n$$S = \\left(1 - \\frac{1}{2^2}\\right) \\times \\left(1 - \\frac{1}{3^2}\\right) \\times \\left(1 - \\frac{1}{4^2}\\right) \\times \\dots \\times \\left(1 - \\frac{1}{10^2}\\right)$$",
+      "question_markdown": "Nilai pecahan sederhana yang menyatakan hasil perkalian berantai **$S$** tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "9/20"
+        },
+        {
+          "key": "B",
+          "text_markdown": "1/2"
+        },
+        {
+          "key": "C",
+          "text_markdown": "11/20"
+        },
+        {
+          "key": "D",
+          "text_markdown": "3/5"
+        },
+        {
+          "key": "E",
+          "text_markdown": "13/20"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Faktorkan setiap suku $(1 - \\frac{1}{k^2})$ menjadi selisih kuadrat: $\\frac{k^2 - 1}{k^2} = \\frac{(k - 1)(k + 1)}{k \\times k} = \\frac{k - 1}{k} \\times \\frac{k + 1}{k}$. Tuliskan beberapa suku pertama dan suku terakhir, lalu amati pencoretan silang saling menghilangkan (efek teleskopik)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Faktorisasi Bentuk Umum:**\n  - Setiap faktor pada perkalian berantai memiliki bentuk:\n    $$1 - \\frac{1}{k^2} = \\frac{k^2 - 1}{k^2} = \\frac{(k - 1)(k + 1)}{k \\cdot k} = \\left( \\frac{k - 1}{k} \\right) \\left( \\frac{k + 1}{k} \\right)$$\n- **Penjabaran Perkalian Berantai:**\n  - Uraikan faktor-faktor untuk $k = 2, 3, 4, \\dots, 10$:\n    $$S = \\left( \\frac{1}{2} \\cdot \\frac{3}{2} \\right) \\times \\left( \\frac{2}{3} \\cdot \\frac{4}{3} \\right) \\times \\left( \\frac{3}{4} \\cdot \\frac{5}{4} \\right) \\times \\dots \\times \\left( \\frac{9}{10} \\cdot \\frac{11}{10} \\right)$$\n- **Pemisahan Menjadi Dua Kelompok Perkalian:**\n  - Kelompok pertama (faktor kiri $\\frac{k - 1}{k}$):\n    $$K_1 = \\frac{1}{2} \\times \\frac{2}{3} \\times \\frac{3}{4} \\times \\dots \\times \\frac{9}{10} = \\frac{1}{10}$$\n  - Kelompok kedua (faktor kanan $\\frac{k + 1}{k}$):\n    $$K_2 = \\frac{3}{2} \\times \\frac{4}{3} \\times \\frac{5}{4} \\times \\dots \\times \\frac{11}{10} = \\frac{11}{2}$$\n- **Perhitungan Hasil Akhir:**\n  $$S = K_1 \\times K_2 = \\frac{1}{10} \\times \\frac{11}{2} = \\frac{11}{20}$$\n- **Konklusi:** Nilai pecahan sederhana dari hasil operasi tersebut adalah **$\\frac{11}{20}$** (atau $0{,}55$).\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Formula Teleskopik Selisih Kuadrat):**\n\n1. Formula teleskopik: $\\prod_{k=2}^{n} \\left(1 - \\frac{1}{k^2}\\right) = \\frac{n + 1}{2n}$.\n2. Di sini batas atasnya adalah $n = 10$.\n3. Masukkan langsung: $S = \\frac{10 + 1}{2(10)} = \\frac{11}{20}$.\n4. Jawaban **C** didapatkan dalam 5 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggunakan rumus keliru $\\frac{n - 1}{2n} = \\frac{9}{20}$.\n- **Pilihan B Salah:** Mengabaikan faktor kanan $\\frac{11}{10}$ sehingga mendekati $1/2$.\n- **Pilihan D Salah:** Menghitung $12/20 = 3/5$ karena salah menambahkan pembilang.\n- **Pilihan E Salah:** Menghitung $(10 + 3) / 20 = 13/20$."
+    },
+    {
+      "example_id": "pu-03-03-ex14",
+      "variation_name": "Variasi 11: Komparasi Radikal Selisih Bentuk Akar Laju Anomali Gletser (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam pemantauan dinamika pencairan tudung es kutub dan kenaikan muka air laut global, stasiun oseanografi menghitung dua indikator laju anomali volume lelehan es $P$ dan $Q$ yang dirumuskan sebagai berikut:\n$$P = \\sqrt{2026} - \\sqrt{2025}$$\n$$Q = \\sqrt{2025} - \\sqrt{2024}$$",
+      "question_markdown": "Hubungan kuantitatif yang **paling tepat** antara nilai **P** dan **Q** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "$P < Q$"
+        },
+        {
+          "key": "B",
+          "text_markdown": "$P > Q$"
+        },
+        {
+          "key": "C",
+          "text_markdown": "$P = Q$"
+        },
+        {
+          "key": "D",
+          "text_markdown": "$P = 2Q$"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Hubungan antara P dan Q tidak dapat ditentukan"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan hitung desimal akar kuadrat angka ribuan! Kalikan masing-masing bentuk dengan sekawannya (rasionalkan pembilang): $(\\sqrt{a} - \\sqrt{b}) = \\frac{a - b}{\\sqrt{a} + \\sqrt{b}}$. Amati hubungan nilai penyebut pada kedua pecahan yang dihasilkan!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rasionalisasi Bentuk Indikator P:**\n  - Kalikan dengan bentuk sekawannya:\n    $$P = (\\sqrt{2026} - \\sqrt{2025}) \\times \\frac{\\sqrt{2026} + \\sqrt{2025}}{\\sqrt{2026} + \\sqrt{2025}} = \\frac{2026 - 2025}{\\sqrt{2026} + \\sqrt{2025}} = \\frac{1}{\\sqrt{2026} + \\sqrt{2025}}$$\n- **Rasionalisasi Bentuk Indikator Q:**\n  - Kalikan dengan bentuk sekawannya:\n    $$Q = (\\sqrt{2025} - \\sqrt{2024}) \\times \\frac{\\sqrt{2025} + \\sqrt{2024}}{\\sqrt{2025} + \\sqrt{2024}} = \\frac{2025 - 2024}{\\sqrt{2025} + \\sqrt{2024}} = \\frac{1}{\\sqrt{2025} + \\sqrt{2024}}$$\n- **Perbandingan Nilai Pecahan P dan Q:**\n  - Kedua pecahan memiliki pembilang positif yang identik, yaitu $1$.\n  - Bandingkan nilai penyebutnya:\n    $$\\sqrt{2026} > \\sqrt{2024} \\implies \\sqrt{2026} + \\sqrt{2025} > \\sqrt{2025} + \\sqrt{2024}$$\n  - Pada dua pecahan positif ber-pembilang sama, pecahan dengan penyebut lebih besar memiliki nilai total yang lebih kecil:\n    $$\\frac{1}{\\sqrt{2026} + \\sqrt{2025}} < \\frac{1}{\\sqrt{2025} + \\sqrt{2024}} \\implies P < Q$$\n- **Konklusi:** Hubungan kuantitatif yang definitif adalah **$P < Q$**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Sifat Turunan Fungsi Akar / Konkavitas):**\n\n1. Grafik fungsi $f(x) = \\sqrt{x}$ memiliki kurva cekung ke bawah (konkaf), di mana kemiringannya $f'(x) = \\frac{1}{2\\sqrt{x}}$ monoton turun seiring bertambahnya $x$.\n2. Ini berarti selisih nilai akar antara dua bilangan bulat berurutan $(\\sqrt{x+1} - \\sqrt{x})$ selalu semakin mengecil ketika nilai $x$ semakin besar.\n3. Karena angka pada $P$ ($x = 2025$) lebih besar daripada angka pada $Q$ ($x = 2024$), maka selisih pada $P$ pasti lebih kecil daripada $Q$.\n4. Kesimpulan kilat: $P < Q$. Jawaban **A** didapat dalam 5 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Terbalik menyimpulkan pertidaksamaan karena mengira angka dalam akar yang lebih besar ($2026$) akan menghasilkan selisih yang lebih besar.\n- **Pilihan C Salah:** Menganggap kedua selisih sama karena jarak bilangan sama-sama selisih 1 angka ($2026 - 2025 = 2025 - 2024 = 1$), padahal fungsi akar bersifat tak-linear.\n- **Pilihan D & E Salah:** Nilai kedua bentuk terbukti definitif positif dan memiliki relasi urutan pasti."
+    },
+    {
+      "example_id": "pu-03-03-ex15",
+      "variation_name": "Variasi 12: Operator Lambang Khusus Bersarang Evaluasi Pajak Karbon Industri (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam pemodelan algoritma penetapan tarif pajak karbon emisi industri manufaktur, dirumuskan dua buah operator matematika khusus untuk sembarang bilangan bulat positif $a$ dan $b$:\n$$a \\ \\diamond \\ b = \\frac{a \\cdot b + 12}{a + b + 2}$$\n$$x \\ \\sharp \\ y = 4x - 3y + 5$$",
+      "question_markdown": "Nilai hasil evaluasi dari operasi bersarang **$(7 \\ \\diamond \\ 8) \\ \\sharp \\ (4 \\ \\diamond \\ 6)$** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "8"
+        },
+        {
+          "key": "B",
+          "text_markdown": "10"
+        },
+        {
+          "key": "C",
+          "text_markdown": "12"
+        },
+        {
+          "key": "D",
+          "text_markdown": "14"
+        },
+        {
+          "key": "E",
+          "text_markdown": "16"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Selesaikan operasi di dalam kedua tanda kurung secara terpisah menggunakan definisi operator belah ketupat $(\\diamond)$. Setelah memperoleh dua bilangan bulat hasil evaluasi, masukkan nilai tersebut sebagai $x$ dan $y$ ke dalam operator pagar $(\\sharp)$!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tahap 1: Evaluasi Kurung Pertama $(7 \\ \\diamond \\ 8)$**\n  - Definisi operator: $a \\ \\diamond \\ b = \\frac{a \\cdot b + 12}{a + b + 2}$\n  - Masukkan $a = 7$ dan $b = 8$:\n    $$7 \\ \\diamond \\ 8 = \\frac{7 \\cdot 8 + 12}{7 + 8 + 2} = \\frac{56 + 12}{17} = \\frac{68}{17} = 4$$\n- **Tahap 2: Evaluasi Kurung Kedua $(4 \\ \\diamond \\ 6)$**\n  - Masukkan $a = 4$ dan $b = 6$:\n    $$4 \\ \\diamond \\ 6 = \\frac{4 \\cdot 6 + 12}{4 + 6 + 2} = \\frac{24 + 12}{12} = \\frac{36}{12} = 3$$\n- **Tahap 3: Evaluasi Operasi Penggabungan dengan Operator $\\sharp$**\n  - Bentuk sekarang menjadi: $4 \\ \\sharp \\ 3$\n  - Definisi operator: $x \\ \\sharp \\ y = 4x - 3y + 5$\n  - Masukkan $x = 4$ dan $y = 3$:\n    $$4 \\ \\sharp \\ 3 = 4(4) - 3(3) + 5 = 16 - 9 + 5 = 7 + 5 = 12$$\n- **Konklusi:** Nilai akhir dari hasil perhitungan tersebut adalah **12**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Substitusi Bertahap Terarah):**\n\n1. Kurung kiri: $\\frac{56 + 12}{17} = \\frac{68}{17} = 4$.\n2. Kurung kanan: $\\frac{24 + 12}{12} = \\frac{36}{12} = 3$.\n3. Operasi gabungan: $4(4) - 3(3) + 5 = 16 - 9 + 5 = 12$.\n4. Jawaban **C** didapat dalam 15 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terjadi karena lupa menambahkan konstanta $+5$ pada operator kedua sehingga menghitung $16 - 9 = 7$ lalu ditambah 1.\n- **Pilihan B Salah:** Menghitung $4(4) - 3(3) = 7$ lalu ditambah 3 menjadi 10 akibat kekeliruan aritmetika.\n- **Pilihan D Salah:** Menghitung $16 - 9 + 7 = 14$ karena salah mengingat konstanta akhir operator.\n- **Pilihan E Salah:** Kesalahan substitusi variabel atau keliru mengalikan $4 \\times 3 = 12$ lalu ditambah 4."
+    },
+    {
+      "example_id": "pu-03-03-ex16",
+      "variation_name": "Variasi 13: Sifat Keterbagian 88 Nomor Batch Nanopartikel Imunoterapi (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam protokol kalibrasi dan validasi mutu klinis sediaan obat imunoterapi onkologi, nomor batch produksi diatur berupa bilangan bulat positif enam digit berbentuk $\\overline{7x43y2}$, di mana $x$ dan $y$ merupakan digit angka tunggal ($0 \\le x, y \\le 9$). Pengawas mutu mensyaratkan kode nomor batch tersebut harus habis dibagi oleh $88$.",
+      "question_markdown": "Nilai **maksimum** yang mungkin dari hasil kali kedua digit **$x \\times y$** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "14"
+        },
+        {
+          "key": "B",
+          "text_markdown": "24"
+        },
+        {
+          "key": "C",
+          "text_markdown": "28"
+        },
+        {
+          "key": "D",
+          "text_markdown": "36"
+        },
+        {
+          "key": "E",
+          "text_markdown": "45"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Faktorkan 88 menjadi dua bilangan koprima: $88 = 8 \\times 11$. (1) Syarat keterbagian 8: periksa tiga digit terakhir $\\overline{3y2}$. Tentukan seluruh nilai digit $y$ yang mungkin. (2) Syarat keterbagian 11: hitung selisih jumlah digit pada posisi ganjil dan posisi genap. Pasangkan nilai $x$ yang memenuhi, lalu tentukan nilai $x \\times y$ terbesar!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kriteria Keterbagian oleh 88:**\n  - Bilangan bulat habis dibagi 88 jika dan hanya jika bilangan tersebut habis dibagi $8$ dan habis dibagi $11$ secara simultan (karena $\\text{FPB}(8, 11) = 1$).\n- **Syarat 1: Keterbagian oleh 8 (Tiga Digit Terakhir)**\n  - Tiga digit terakhir bilangan adalah $\\overline{3y2}$.\n  - Cari nilai kelipatan 8 ratusan berakhiran angka 2 di antara $300$ hingga $399$:\n    $$\\overline{3y2} \\in \\{312, \\; 352, \\; 392\\} \\implies y \\in \\{1, \\; 5, \\; 9\\}$$\n- **Syarat 2: Keterbagian oleh 11 (Selisih Tanda Selang-Seling)**\n  - Aturan keterbagian oleh 11: jumlahan digit berganti tanda dari kanan ke kiri harus habis dibagi 11:\n    $$\\Delta = (2 - y + 3 - 4 + x - 7) = (x - y - 6)$$\n    Atau selisih jumlah posisi genap dan ganjil:\n    $$\\sum_{\\text{ganjil}} = 2 + 3 + x = 5 + x$$\n    $$\\sum_{\\text{genap}} = y + 4 + 7 = 11 + y$$\n    $$\\text{Selisih} = (11 + y) - (5 + x) = 6 + y - x$$\n  - Nilai $(6 + y - x)$ harus merupakan kelipatan 11. Karena $0 \\le x, y \\le 9$, maka $-3 \\le 6 + y - x \\le 15$.\n  - Kelipatan 11 yang mungkin di dalam rentang tersebut hanyalah $0$ dan $11$:\n    1. **Kemungkinan A ($6 + y - x = 0 \\implies x - y = 6$):**\n       - Jika $y = 1 \\implies x = 7$. Pasangan $(x, y) = (7, 1) \\implies x \\times y = 7 \\times 1 = 7$.\n       - Jika $y = 5 \\implies x = 11$ *(tidak memenuhi karena $x \\le 9$)*.\n       - Jika $y = 9 \\implies x = 15$ *(tidak memenuhi)*.\n    2. **Kemungkinan B ($6 + y - x = 11 \\implies y - x = 5 \\implies x = y - 5$):**\n       - Jika $y = 1 \\implies x = -4$ *(tidak memenuhi karena $x \\ge 0$)*.\n       - Jika $y = 5 \\implies x = 0$. Pasangan $(x, y) = (0, 5) \\implies x \\times y = 0 \\times 5 = 0$.\n       - Jika $y = 9 \\implies x = 4$. Pasangan $(x, y) = (4, 9) \\implies x \\times y = 4 \\times 9 = 36$.\n- **Evaluasi Nilai Maksimum:**\n  - Himpunan nilai $x \\times y$ yang memenuhi ketentuan adalah $\\{0, \\; 7, \\; 36\\}$.\n  - Nilai maksimum yang diperoleh adalah **36** (tercapai pada pasangan digit $x = 4$ dan $y = 9$).\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Optimasi Digit Terbesar):**\n\n1. Habis dibagi 8: $\\overline{3y2}$ habis dibagi 8 untuk $y \\in \\{1, 5, 9\\}$.\n2. Untuk memaksimalkan perkalian $x \\times y$, prioritaskan uji $y = 9$ terlebih dahulu.\n3. Uji keterbagian 11 untuk $y = 9$:\n   - Selisih: $6 + 9 - x = 15 - x$.\n   - Agar $15 - x$ merupakan kelipatan 11 terdekat, maka $15 - x = 11 \\implies x = 4$.\n4. Hasil kali: $x \\times y = 4 \\times 9 = 36$.\n5. Nilai 36 langsung cocok dengan opsi **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Angka 14 berasal dari $7 \\times 2$ akibat salah mengalikan digit $x$ dengan angka satuan terakhir nomor batch.\n- **Pilihan B Salah:** Angka 24 berasal dari perkalian salah $6 \\times 4$.\n- **Pilihan C Salah:** Angka 28 berasal dari $7 \\times 4$ yang tidak membentuk pasangan solusi bersama.\n- **Pilihan E Salah:** Angka 45 ($5 \\times 9$) tidak memenuhi kriteria keterbagian 11 karena selisihnya menjadi $6 + 9 - 5 = 10$ (bukan kelipatan 11)."
+    },
+    {
+      "example_id": "pu-03-03-ex17",
+      "variation_name": "Variasi 14: Operasi Campuran Pecahan Emas dan Desimal Throughput AI Server (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam pemantauan performa pemrosesan kluster akselerator GPU di pusat data kecerdasan buatan, indeks throughput komputasi paralel ($K$) dinyatakan melalui formula operasi campuran pecahan emas, persentase, dan desimal berikut:\n$$K = \\frac{(62{,}5\\% \\times 64) + (87{,}5\\% \\times 32)}{\\left( \\frac{3}{7} \\times 0{,}42 \\right) + 0{,}07}$$",
+      "question_markdown": "Nilai bulat akhir dari indeks throughput komputasi **$K$** tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "68"
+        },
+        {
+          "key": "B",
+          "text_markdown": "136"
+        },
+        {
+          "key": "C",
+          "text_markdown": "256"
+        },
+        {
+          "key": "D",
+          "text_markdown": "272"
+        },
+        {
+          "key": "E",
+          "text_markdown": "340"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Konversikan persentase baku ke pecahan emas: $62{,}5\\% = \\frac{5}{8}$ dan $87{,}5\\% = \\frac{7}{8}$. Pada bagian penyebut, sederhanakan $\\frac{3}{7} \\times 0{,}42$ dengan membagi $0{,}42$ dengan 7 terlebih dahulu. Ingat bahwa membagi dengan $0{,}25$ sama artinya dengan mengalikan dengan 4!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Evaluasi Nilai Pembilang:**\n  - Ubah persentase ke pecahan emas baku:\n    $$62{,}5\\% = \\frac{62{,}5}{100} = \\frac{5}{8} \\qquad \\text{dan} \\qquad 87{,}5\\% = \\frac{87{,}5}{100} = \\frac{7}{8}$$\n  - Hitung perkalian suku pembilang:\n    $$62{,}5\\% \\times 64 = \\frac{5}{8} \\times 64 = 5 \\times 8 = 40$$\n    $$87{,}5\\% \\times 32 = \\frac{7}{8} \\times 32 = 7 \\times 4 = 28$$\n  - Jumlahkan nilai pembilang:\n    $$\\text{Pembilang} = 40 + 28 = 68$$\n- **Evaluasi Nilai Penyebut:**\n  - Sederhanakan perkalian pecahan dengan desimal:\n    $$\\frac{3}{7} \\times 0{,}42 = 3 \\times \\left( \\frac{0{,}42}{7} \\right) = 3 \\times 0{,}06 = 0{,}18$$\n  - Jumlahkan dengan konstanta desimal:\n    $$\\text{Penyebut} = 0{,}18 + 0{,}07 = 0{,}25 = \\frac{1}{4}$$\n- **Perhitungan Nilai Akhir Indeks K:**\n  $$K = \\frac{\\text{Pembilang}}{\\text{Penyebut}} = \\frac{68}{0{,}25} = \\frac{68}{\\frac{1}{4}} = 68 \\times 4 = 272$$\n- **Konklusi:** Nilai bulat akhir dari indeks throughput $K$ adalah **272**.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Pencoretan Pecahan Emas & Pengali Empat):**\n\n1. Pembilang: $5 \\times 8 + 7 \\times 4 = 40 + 28 = 68$.\n2. Penyebut: $3 \\times 0{,}06 + 0{,}07 = 0{,}18 + 0{,}07 = 0{,}25$.\n3. Trik pembagian desimal: Membagi dengan $0{,}25$ identik dengan mengalikan $4$ secara instan: $68 \\times 4 = 272$.\n4. Jawaban **D** langsung terkunci dalam 10 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Angka 68 hanyalah nilai pembilang, lupa membagi dengan penyebut $0{,}25$.\n- **Pilihan B Salah:** Menghitung $68 \\times 2 = 136$ karena keliru mengira penyebut bernilai $0{,}50$.\n- **Pilihan C Salah:** Kesalahan hitung aritmetika saat mengalikan $64 \\times 4 = 256$.\n- **Pilihan E Salah:** Menghitung $68 \\times 5 = 340$ akibat salah menjumlahkan penyebut menjadi $0{,}20$ ($1/5$)."
+    },
+    {
+      "example_id": "pu-03-03-ex18",
+      "variation_name": "Variasi 15: Aljabar Perkalian Empat Bilangan Bulat Astrometri Maritim Kuno (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam kajian astrometri navigasi maritim Nusantara abad pertengahan, pelaut mengukur deviasi sudut pandang konstelasi bintang melalui rumus indeks reduksi $K$ yang melibatkan perkalian empat bilangan bulat berurutan berikut:\n$$K = (2024 \\times 2025) - \\sqrt{2023 \\times 2024 \\times 2025 \\times 2026 + 1}$$",
+      "question_markdown": "Nilai bulat sederhana dari indeks reduksi **$K$** tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "-1"
+        },
+        {
+          "key": "B",
+          "text_markdown": "0"
+        },
+        {
+          "key": "C",
+          "text_markdown": "1"
+        },
+        {
+          "key": "D",
+          "text_markdown": "2"
+        },
+        {
+          "key": "E",
+          "text_markdown": "2024"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan mencoba mengalikan angka ribuan di dalam akar! Gunakan identitas aljabar perkalian empat bilangan berurutan: pasangkan suku terluar dan suku terdalam, $(n)(n+3) = n^2 + 3n$ dan $(n+1)(n+2) = n^2 + 3n + 2$. Misalkan variabel pengganti $u = n^2 + 3n + 1$ untuk menyederhanakan bentuk di bawah tanda akar!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Struktur Bentuk di Bawah Akar:**\n  - Misalkan $n = 2023$. Maka perkalian empat bilangan berurutan di dalam tanda akar adalah:\n    $$T = n(n + 1)(n + 2)(n + 3) + 1$$\n  - Pasangkan faktor pertama dengan keempat, serta faktor kedua dengan ketiga:\n    $$n(n + 3) = n^2 + 3n$$\n    $$(n + 1)(n + 2) = n^2 + 3n + 2$$\n- **Substitusi Variabel Pemisalan:**\n  - Misalkan $u = n^2 + 3n + 1$. Maka diperoleh:\n    $$n(n + 3) = u - 1$$\n    $$(n + 1)(n + 2) = u + 1$$\n  - Substitusikan ke dalam bentuk $T$:\n    $$T = (u - 1)(u + 1) + 1 = (u^2 - 1) + 1 = u^2$$\n  - Tarik akar kuadrat dari $T$:\n    $$\\sqrt{T} = \\sqrt{u^2} = u = n^2 + 3n + 1$$\n- **Evaluasi Nilai Suku di Depan Akar:**\n  - Suku di depan akar adalah $(2024 \\times 2025) = (n + 1)(n + 2)$.\n  - Berdasarkan pemisalan di atas:\n    $$(n + 1)(n + 2) = u + 1$$\n- **Perhitungan Pengurangan Hasil Akhir:**\n  $$K = (n + 1)(n + 2) - \\sqrt{T} = (u + 1) - u = 1$$\n- **Konklusi:** Nilai bulat sederhana dari ekspresi tersebut selalu bernilai konstan **1** untuk sembarang bilangan bulat $n$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Teorema Bentuk Kuadrat Sempurna):**\n\n1. Teorema aljabar klasik: Perkalian empat bilangan berurutan ditambah 1 selalu merupakan kuadrat sempurna dari suku tengah dikurangi 1:\n   $$\\sqrt{n(n+1)(n+2)(n+3) + 1} = (n+1)(n+2) - 1$$\n2. Di sini, suku pertama ekspresi adalah $(n+1)(n+2) = 2024 \\times 2025$.\n3. Bentuk soal menjadi:\n   $$K = (n+1)(n+2) - \\left[(n+1)(n+2) - 1\\right] = 1$$\n4. Tanpa perlu tahu nilai riil $2024 \\times 2025$, jawabannya selalu bernilai **1**.\n5. Jawaban **C** tuntas dalam 5 detik.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terbalik mengurangkan $\\sqrt{T} - (n+1)(n+2) = u - (u + 1) = -1$.\n- **Pilihan B Salah:** Mengasumsikan nilai di dalam akar tepat sama dengan perkalian di luar akar sehingga saling menghilangkan menjadi 0.\n- **Pilihan D Salah:** Kesalahan aljabar saat membuka tanda kurung: $(u + 1) - (u - 1) = 2$.\n- **Pilihan E Salah:** Menyangka sisa dari operasi tersebut bergantung pada nilai dasar $n+1 = 2024$."
     }
   ]
 }
