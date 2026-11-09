@@ -1,0 +1,143 @@
+import type { Material } from '../../../types/material';
+
+export const MATERIAL_PU_03_03: Material = {
+  "metadata": {
+    "id": "pu-3-3",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.3",
+    "subchapter_title": "Operasi Hitung dan Aritmetika Dasar",
+    "title": "Operasi Hitung dan Aritmetika Dasar",
+    "required_question_variations": [
+      "Operasi Pecahan, Desimal, dan Persentase Cepat",
+      "Operasi Lambang Khusus / Definisi Operator Baru",
+      "Estimasi Nilai Ekstrem dan Pendekatan Perhitungan (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Operasi hitung dan aritmetika dasar pada Penalaran Umum UTBK bukan menguji kemampuan Anda menghitung angka panjang seperti kalkulator, melainkan menguji kecerdasan aljabar dan strategi penyederhanaan cepat. Tipe soal yang paling mendominasi adalah operasi lambang baru buatan pembuat soal (seperti simbol bintang atau lingkaran dengan aturan rumus khusus) serta manipulasi pecahan-desimal-persentase. Kunci utamanya adalah jangan pernah mengalikan angka besar secara mentah: selalu sederhanakan pecahan sebelum dikali, manfaatkan sifat distributif untuk memfaktorkan angka yang sama, dan gunakan estimasi batas nilai untuk menyingkirkan opsi yang tidak masuk akal.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nAritmetika taktis di UTBK SNBT berfokus pada efisiensi penyelesaian:\n\n1. **Konversi Cepat Pecahan, Desimal, dan Persentase Baku**  \n   Wajib menghafal pasangan konversi emas berikut di luar kepala:  \n   - $\\frac{1}{8} = 0{,}125 = 12{,}5\\%$  \n   - $\\frac{3}{8} = 0{,}375 = 37{,}5\\%$  \n   - $\\frac{5}{8} = 0{,}625 = 62{,}5\\%$  \n   - $\\frac{1}{6} = 0{,}1667 = 16{,}67\\%$  \n   - $\\frac{1}{7} \\approx 0{,}1428$  \n   Menghafal konversi ini membuat perhitungan rumit seperti $\\frac{3}{7} \\times 42\\%$ dapat diselesaikan dalam 5 detik melalui pencoretan langsung ($42 / 7 = 6 \\implies 3 \\times 6\\% = 18\\%$).\n\n2. **Operasi Lambang Khusus / Operator Baru (*Custom Operators*)**  \n   Soal mendefinisikan simbol operasi non-standar (misalnya $a \\odot b$ atau $x \\star y$) dengan aturan fungsi tertentu.  \n   - Kaidah wajib: Ikuti urutan tanda kurung terlebih dahulu.  \n   - Masukkan nilai angka secara presisi ke dalam variabel yang didefinisikan tanpa mengubah urutan posisinya.\n\n3. **Prinsip Estimasi dan Selisih Komplemen Pecahan (Soal HOTS)**  \n   Membandingkan dua pecahan bernilai besar tanpa menghitung pembagian bersusun:  \n   - Jika dua pecahan bernilai mendekati 1, gunakan selisih terhadap angka 1:  \n     $\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$  \n   - Pecahan dengan pengurang $\\frac{1}{n+1}$ yang lebih kecil akan menghasilkan nilai total yang lebih besar.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Mengalikan Angka Besar Secara Manual**  \n   Siswa yang menghitung $(2024 \\times 2026)$ secara manual akan membuang waktu 2 hingga 3 menit. Soal UTBK selalu memiliki jalan pintas aljabar, misalnya bentuk selisih kuadrat: $(x - 1)(x + 1) = x^2 - 1$.\n2. **Jebakan Urutan Operasi pada Lambang Baru**  \n   Pada operasi bersarang seperti $(a \\odot b) \\star c$, siswa kerap salah memasukkan hasil dari $(a \\odot b)$ sebagai variabel kedua, padahal posisinya berada di sebelah kiri operator bintang (variabel pertama).\n3. **Jebakan Pembagian Pecahan Bersusun**  \n   Membalik pembilang dan penyebut secara keliru pada operasi pembagian pecahan: $\\frac{\\frac{a}{b}}{c} = \\frac{a}{b \\cdot c} \\qquad \\text{sedangkan} \\qquad \\frac{a}{\\frac{b}{c}} = \\frac{a \\cdot c}{b}$.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Coret Faktor Persekutuan Terlebih Dahulu**  \n   Sebelum mengalikan pembilang, selalu lakukan pencoretan silang dengan penyebut.\n2. **Substitusi Langsung pada Operator Lambang Baru**  \n   Tuliskan rumus definisi di kertas, lalu ganti huruf $a$ dan $b$ dengan angka soal tepat di bawah huruf tersebut untuk mencegah kekeliruan posisi.\n3. **Gunakan Metode Digit Terakhir (*Last Digit Trick*)**  \n   Jika opsi pilihan ganda memiliki digit satuan yang berbeda-beda, hitung saja perkalian angka satuannya tanpa menghitung seluruh angka puluhan dan ratusan.\n4. **Metode Taksiran Batas (Rounding)**  \n   Bulatkan angka rumit ke angka terdekat yang mudah dihitung (misal: $49{,}8\\%$ dibulatkan ke $50\\%$ atau $\\frac{1}{2}$) untuk mengetahui kisaran angka jawaban yang benar.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Uji efisiensi aljabar dan pemahaman aturan operasi matematika tanpa ketergantungan pada hitungan mekanik panjang.\n- **Kunci Operator Baru:** Patuhi hierarki tanda kurung dan substitusikan nilai sesuai posisi variabel definisi.\n- **Strategi Eksekusi:** Hafal pecahan emas, coret sebelum kali, dan manfaatkan selisih kuadrat $(x-1)(x+1) = x^2 - 1$.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Operasi Hitung dan Aritmetika Dasar yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Operasi Pecahan, Desimal, dan Persentase Cepat\n\n> **Konteks Perhitungan Soal:**  \n> Hitunglah nilai dari operasi aritmetika berikut:  \n> $\\left( \\frac{3}{7} \\times 42\\% \\right) + \\left( \\frac{5}{8} \\times 0{,}64 \\right)$  \n>  \n> **Pertanyaan UTBK:** *Nilai desimal akhir dari operasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 0,48  \n> - **B.** 0,52  \n> - **C.** 0,58  \n> - **D.** 0,62  \n> - **E.** 0,68\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Penyelesaian Suku Pertama:**  \n  $\\frac{3}{7} \\times 42\\% = 3 \\times \\left(\\frac{42\\%}{7}\\right) = 3 \\times 6\\% = 18\\% = 0{,}18$\n- **Penyelesaian Suku Kedua:**  \n  $\\frac{5}{8} \\times 0{,}64 = 5 \\times \\left(\\frac{0{,}64}{8}\\right) = 5 \\times 0{,}08 = 0{,}40$\n- **Penjumlahan Total:**  \n  $0{,}18 + 0{,}40 = 0{,}58$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A, B, D, dan E terjadi akibat kekeliruan pembagian desimal ($0{,}64 / 8$ dihitung $0{,}8$) atau lupa mengalikan dengan 3.\n- **Penerapan Trik Cepat (15 Detik):** Coret 42 dengan 7 dapat $6 \\implies 3 \\times 6\\% = 0{,}18$. Coret 0,64 dengan 8 dapat $0{,}08 \\implies 5 \\times 0{,}08 = 0{,}40$. Jumlahkan: $0{,}18 + 0{,}40 = 0{,}58$. Pilihan **C** ditemukan dalam 8 detik.\n\n---\n\n### Variasi 2: Operasi Lambang Khusus / Definisi Operator Baru\n\n> **Konteks Operasi Soal:**  \n> Didefinisikan dua buah operasi hitung baru untuk sembarang bilangan bulat $x$ dan $y$ sebagai berikut:  \n> $x \\odot y = \\frac{x \\cdot y - 2}{x + 1}$  \n> $x \\star y = 2x - 3y$  \n>  \n> **Pertanyaan UTBK:** *Nilai dari $(5 \\odot 4) \\star 2$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** -2  \n> - **B.** 0  \n> - **C.** 2  \n> - **D.** 4  \n> - **E.** 6\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Langkah 1: Selesaikan Operasi di Dalam Kurung $(5 \\odot 4)$**  \n  Substitusikan $x = 5$ dan $y = 4$ ke dalam definisi operator $\\odot$:  \n  $5 \\odot 4 = \\frac{5 \\cdot 4 - 2}{5 + 1} = \\frac{20 - 2}{6} = \\frac{18}{6} = 3$\n- **Langkah 2: Selesaikan Operasi Luar dengan Operator $\\star$**  \n  Hasil langkah 1 adalah 3, sehingga bentuk soal menjadi $3 \\star 2$.  \n  Substitusikan $x = 3$ dan $y = 2$ ke dalam definisi operator $\\star$:  \n  $3 \\star 2 = 2(3) - 3(2) = 6 - 6 = 0$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A keliru menghitung $2(2) - 3(3) = 4 - 9 = -5$ (terbalik menukar posisi variabel).  \n  - Pilihan C keliru menghitung $18 / 6 = 2$.  \n  - Pilihan D dan E adalah akibat kekeliruan substitusi tanda minus.\n- **Penerapan Trik Cepat (15 Detik):** Dalam kurung: $(20 - 2)/6 = 18/6 = 3$. Lalu hitung bintang: $2(3) - 3(2) = 6 - 6 = 0$. Jawaban langsung **B**.\n\n---\n\n### Variasi 3: Estimasi Nilai Ekstrem dan Pendekatan Perhitungan / HOTS\n\n> **Konteks Perhitungan Soal:**  \n> Diberikan dua nilai pecahan besar $P$ dan $Q$ sebagai berikut:  \n> $P = \\frac{2025}{2026} + \\frac{2026}{2027}$  \n> $Q = \\frac{2024}{2025} + \\frac{2027}{2028}$  \n>  \n> **Pertanyaan UTBK:** *Hubungan kuantitatif yang paling tepat antara $P$ dan $Q$ adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $P > Q$  \n> - **B.** $P < Q$  \n> - **C.** $P = Q$  \n> - **D.** $P = Q + 1$  \n> - **E.** Hubungan antara $P$ dan $Q$ tidak dapat ditentukan\n\n**Kunci Jawaban: A**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Bentuk Pecahan Mendekati 1:**  \n  Setiap suku pecahan berbentuk $\\frac{n}{n+1}$, yang dapat dituliskan sebagai selisih komplemen terhadap angka 1:  \n  $\\frac{n}{n+1} = 1 - \\frac{1}{n+1}$\n- **Mengubah Bentuk $P$ dan $Q$:**  \n  $\\begin{aligned}\n  P &= \\left(1 - \\frac{1}{2026}\\right) + \\left(1 - \\frac{1}{2027}\\right) = 2 - \\left(\\frac{1}{2026} + \\frac{1}{2027}\\right) \\\\[6pt]\n  Q &= \\left(1 - \\frac{1}{2025}\\right) + \\left(1 - \\frac{1}{2028}\\right) = 2 - \\left(\\frac{1}{2025} + \\frac{1}{2028}\\right)\n  \\end{aligned}$\n- **Membandingkan Nilai Pengurang:**  \n  Misalkan $S_P = \\frac{1}{2026} + \\frac{1}{2027}$ dan $S_Q = \\frac{1}{2025} + \\frac{1}{2028}$.  \n  Fungsi $f(x) = \\frac{1}{x}$ adalah fungsi konveks (cekung ke atas). Pada fungsi konveks, jumlahan dua titik yang lebih menyebar ($2025$ dan $2028$) selalu bernilai lebih besar daripada jumlahan dua titik yang lebih rapat di tengah ($2026$ dan $2027$):  \n\n$$\\frac{1}{2025} + \\frac{1}{2028} > \\frac{1}{2026} + \\frac{1}{2027} \\implies S_Q > S_P$$\n\n\n- **Konklusi Hubungan $P$ dan $Q$:**  \n  Karena pengurang pada $Q$ ($S_Q$) lebih besar daripada pengurang pada $P$ ($S_P$), maka hasil pengurangan pada $P$ bernilai lebih besar:  \n  \n  $22 - S_P > 2 - S_Q \\implies P > Q\n\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan B keliru karena terbalik membandingkan dampak nilai pengurang.  \n  - Pilihan C, D, dan E secara matematis salah karena nilainya terbukti berbeda secara pasti.\n- **Penerapan Trik Cepat (15 Detik):** Ubah ke bentuk $1 - \\text{selisih}$. Nilai $\\frac{1}{2025}$ sangat besar dibanding $\\frac{1}{2026}$. Karena pengurang $Q$ lebih besar, maka sisa nilai $Q$ menjadi lebih kecil dari $P$. Kesimpulan kilat: $P > Q$. Jawaban pasti **A**.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Menghitung pecahan bernilai ribuan secara manual: Jangan menyamakan penyebut angka ribuan, gunakan metode selisih komplemen terhadap 1.",
+      "Tertukar memasukkan variabel pada operator baru bersarang (a o b) * c.",
+      "Keliru membagi desimal berkoma nol (misal 0,64 / 8 disangka 0,8 bukan 0,08)."
+    ],
+    "quick_execution_algorithm": [
+      "Sederhanakan pembilang dan penyebut dengan pencoretan silang sebelum mengalikan.",
+      "Pada operator lambang baru, tuntaskan operasi dalam kurung terlebih dahulu.",
+      "Pada perbandingan pecahan bernilai ribuan, ubah ke bentuk 1 - (1/(n+1)).",
+      "Manfaatkan taksiran batas untuk mengeliminasi opsi yang tidak logis."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-03-ex1",
+      "variation_name": "Variasi 1: Operasi Pecahan, Desimal, dan Persentase (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Hitunglah nilai dari operasi aritmetika berikut:\n(3/7 x 42%) + (5/8 x 0,64)",
+      "question_markdown": "Nilai desimal akhir dari operasi tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "0,48"
+        },
+        {
+          "key": "B",
+          "text_markdown": "0,52"
+        },
+        {
+          "key": "C",
+          "text_markdown": "0,58"
+        },
+        {
+          "key": "D",
+          "text_markdown": "0,62"
+        },
+        {
+          "key": "E",
+          "text_markdown": "0,68"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Coret 42% dengan 7 (hasilnya 6%), lalu coret 0,64 dengan 8 (hasilnya 0,08). Setelah itu kalikan dengan pembilang masing-masing!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Suku 1:** $\\frac{3}{7} \\times 42\\% = 3 \\times 6\\% = 18\\% = 0{,}18$.\n- **Suku 2:** $\\frac{5}{8} \\times 0{,}64 = 5 \\times 0{,}08 = 0{,}40$.\n- **Total:** $0{,}18 + 0{,}40 = 0{,}58$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Coret Silang):**\n\n1. $42\\% / 7 = 6\\% \\implies 3 \\times 6\\% = 0{,}18$.\n2. $0{,}64 / 8 = 0{,}08 \\implies 5 \\times 0{,}08 = 0{,}40$.\n3. $0{,}18 + 0{,}40 = 0{,}58$.\n4. Jawaban langsung **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, B, D, E Salah:** Terjadi karena salah membagi 0,64 / 8 atau keliru menjumlahkan desimal."
+    },
+    {
+      "example_id": "pu-03-03-ex2",
+      "variation_name": "Variasi 2: Operasi Lambang Khusus (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Didefinisikan dua operasi khusus untuk sembarang bilangan bulat x dan y:\nx @ y = (x . y - 2) / (x + 1)\nx * y = 2x - 3y",
+      "question_markdown": "Nilai dari **(5 @ 4) * 2** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "-2"
+        },
+        {
+          "key": "B",
+          "text_markdown": "0"
+        },
+        {
+          "key": "C",
+          "text_markdown": "2"
+        },
+        {
+          "key": "D",
+          "text_markdown": "4"
+        },
+        {
+          "key": "E",
+          "text_markdown": "6"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung terlebih dahulu yang di dalam kurung (5 @ 4) menggunakan rumus pertama. Hasilnya kemudian operasikan dengan angka 2 menggunakan rumus kedua!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Operasi Dalam Kurung:**\n  - $5 @ 4 = \\frac{5 \\cdot 4 - 2}{5 + 1} = \\frac{20 - 2}{6} = \\frac{18}{6} = 3$.\n- **Operasi Bintang:**\n  - $3 * 2 = 2(3) - 3(2) = 6 - 6 = 0$.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Dua Langkah Tuntas):**\n\n1. $(20 - 2) / 6 = 18 / 6 = 3$.\n2. $2(3) - 3(2) = 6 - 6 = 0$.\n3. Jawaban **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terbalik memasukkan posisi x dan y pada rumus kedua.\n- **Pilihan C, D, E Salah:** Kesalahan hitung pada pembagian atau perkalian."
+    },
+    {
+      "example_id": "pu-03-03-ex3",
+      "variation_name": "Variasi 3: Estimasi Perbandingan Pecahan Ekstrem (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Diberikan dua nilai pecahan besar P dan Q sebagai berikut:\nP = (2025/2026) + (2026/2027)\nQ = (2024/2025) + (2027/2028)",
+      "question_markdown": "Hubungan kuantitatif yang **paling tepat** antara **P** dan **Q** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "P > Q"
+        },
+        {
+          "key": "B",
+          "text_markdown": "P < Q"
+        },
+        {
+          "key": "C",
+          "text_markdown": "P = Q"
+        },
+        {
+          "key": "D",
+          "text_markdown": "P = Q + 1"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Hubungan antara P dan Q tidak dapat ditentukan"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Jangan hitung manual! Ubah setiap pecahan n/(n+1) menjadi 1 - 1/(n+1). Perhatikan nilai pengurangnya: pengurang yang lebih besar akan menghasilkan sisa yang lebih kecil.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Ubah Bentuk:**\n  - $P = (1 - \\frac{1}{2026}) + (1 - \\frac{1}{2027}) = 2 - (\\frac{1}{2026} + \\frac{1}{2027})$.\n  - $Q = (1 - \\frac{1}{2025}) + (1 - \\frac{1}{2028}) = 2 - (\\frac{1}{2025} + \\frac{1}{2028})$.\n- **Evaluasi Pengurang:**\n  - Karena $f(x) = 1/x$ konveks, maka $\\frac{1}{2025} + \\frac{1}{2028} > \\frac{1}{2026} + \\frac{1}{2027}$.\n  - Pengurang $Q$ lebih besar daripada pengurang $P$.\n- **Konklusi:** $2 - \\text{pengurang kecil} > 2 - \\text{pengurang besar} \\implies P > Q$.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Logika Komplemen 1):**\n\n1. Pecahan mendekati 1: yang memiliki suku pembagi paling kecil (2025) memiliki \"cacat/pengurang\" paling besar.\n2. Karena Q dikurangi oleh 1/2025 (cacat terbesar), maka nilai Q lebih kecil daripada P.\n3. Kesimpulan: $P > Q$. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Terbalik membandingkan peran pengurang.\n- **Pilihan C, D, E Salah:** Nilai P dan Q terbukti berbeda secara matematis pasti."
+    }
+  ]
+};

@@ -14,12 +14,13 @@ Sistem pembuatan bank soal drilling Penalaran Umum (PU) beroperasi menggunakan k
    - Di dalam string file JSON / TypeScript, setiap backslash KaTeX **wajib di-escape ganda** (`\\`).
      - Contoh: `$\\frac{3}{7}$`, `$\\times$`, `$\\approx$`, `$\\sim p \\lor q$`, `$\\implies$`, `$\\forall$`, `$\\exists$`.
    - Tanda persen di dalam KaTeX wajib di-escape (`$\\92\\%$`) atau ditulis di luar KaTeX: `92%`.
-3. **Dual-File Architecture Synchronization**:
-   - Repository menyimpan data soal di dua tempat yang saling terhubung:
-     1. File JSON publik: `public/content/utbk/pu/pu-XX-YY.json` (dan aliasnya `pu-X-Y.json`).
-     2. Modul TypeScript preloaded: `src/data/materials/puMaterials.ts` (diimpor oleh `src/lib/contentLoader.ts` untuk performa 0ms latency).
-     3. Folder `content/utbk/pu/` sebagai mirror.
-   - Setiap batch penambahan soal baru wajib memperbarui `src/data/materials/puMaterials.ts`, menjalankan sinkronisasi via `node scripts/export_materials.mjs`, dan memverifikasi build dengan `npm run build`.
+3. **Modular Subchapter & Dual-File Architecture Synchronization**:
+   - Repository menyimpan data soal di modul terpisah per sub-bab untuk keamanan, isolasi, dan skalabilitas tinggi:
+     1. Modul TypeScript terisolasi: `src/data/materials/pu/pu-XX-YY.ts` (misal: `pu-01-01.ts`, `pu-02-02.ts`, dll.).
+     2. Barrel export: `src/data/materials/pu/index.ts` dan `src/data/materials/puMaterials.ts` me-re-export semua sub-bab (zero breaking change).
+     3. File JSON publik runtime: `public/content/utbk/pu/pu-XX-YY.json` (dan aliasnya `pu-X-Y.json`) serta mirror `content/utbk/pu/`.
+   - **Keuntungan Keamanan**: Setiap batch penambahan soal **hanya mengedit satu file spesifik** `src/data/materials/pu/pu-XX-YY.ts`, tidak menyentuh modul sub-bab lainnya sehingga 100% aman dari risiko bentrok (merge conflict) atau error sintaks global.
+   - Setiap batch penambahan soal baru wajib mengedit `src/data/materials/pu/pu-XX-YY.ts`, lalu menjalankan sinkronisasi via `node scripts/export_materials.mjs` (atau `npm run build`).
 4. **Validasi Komputasi Bab 03 (Mandatory Verification)**:
    - Untuk setiap soal di **Bab 03 (Penalaran Kuantitatif)**, agen **wajib memverifikasi perhitungan aritmetika, rasio, deret, dan matriks** dengan komputasi pasti sebelum menuliskan soal dan opsi.
 5. **Anti-Duplikasi Mandiri**:

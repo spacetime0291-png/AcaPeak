@@ -1,0 +1,150 @@
+import type { Material } from '../../../types/material';
+
+export const MATERIAL_PU_03_05: Material = {
+  "metadata": {
+    "id": "pu-3-5",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.5",
+    "subchapter_title": "Interpretasi Data (Tabel, Grafik, Diagram)",
+    "title": "Interpretasi Data (Tabel, Grafik, Diagram)",
+    "required_question_variations": [
+      "Analisis Persentase Perubahan dan Rasio pada Tabel Statistik",
+      "Membaca Tren dan Titik Ekstrem pada Grafik Garis dan Batang",
+      "Evaluasi Simpulan Pernyataan Berdasarkan Data Majemuk (HOTS)"
+    ],
+    "requires_svg": true,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Interpretasi data adalah materi penalaran kuantitatif yang paling sering menguras waktu ujian jika tidak dihadapi dengan teknik eliminasi dan estimasi yang cerdas. Pembuat soal UTBK sengaja menyajikan tabel atau grafik yang padat angka untuk memancing siswa menghitung rata-rata atau persentase secara detail. Kunci suksesnya adalah jangan pernah menghitung seluruh tabel: baca pertanyaan terlebih dahulu, temukan baris atau kolom yang relevan saja, dan kuasai perbedaan mendasar antara kenaikan nominal (selisih pengurangan biasa) dengan kenaikan persentase (selisih dibagi nilai awal).",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nMembaca data statistik di UTBK SNBT menuntut kecepatan dan ketepatan penalaran numerik:\n\n1. **Perbedaan Kenaikan Nominal vs Kenaikan Persentase**  \n   Ini adalah konsep paling sering diuji dan paling banyak memakan korban jebakan di UTBK:  \n   - **Kenaikan Nominal (Selisih Mutlak):**  \n     $\\Delta = \\text{Nilai Akhir} - \\text{Nilai Awal}$  \n   - **Kenaikan Relatif / Persentase (Pertumbuhan):**  \n     $\\%\\Delta = \\frac{\\text{Nilai Akhir} - \\text{Nilai Awal}}{\\text{Nilai Awal}} \\times 100\\% = \\frac{\\Delta}{\\text{Awal}} \\times 100\\%$  \n   *Contoh:* Angka naik dari $10$ ke $20$ memiliki $\\Delta = 10$, namun persentase kenaikannya mencapai $100\\%$. Sebaliknya, angka naik dari $100$ ke $120$ memiliki $\\Delta = 20$ (nominal lebih besar), tetapi persentase kenaikannya hanya $20\\%$.\n\n2. **Membaca Grafik Batang dan Grafik Garis**  \n   - Perhatikan **satuan pada sumbu vertikal** (dalam jutaan, ribuan ton, atau persen).  \n   - Perhatikan apakah grafik memiliki **sumbu ganda (dual axis)** di mana sumbu kiri dan kanan menggunakan skala yang berbeda.  \n   - Kemiringan garis (*slope*) menggambarkan laju perubahan: semakin curam garis naik, semakin tinggi laju pertumbuhannya.\n\n3. **Evaluasi Kebenaran Pernyataan Majemuk (Soal HOTS)**  \n   Soal menyajikan 5 pernyataan pilihan ganda dan meminta Anda menentukan pernyataan yang *pasti benar* atau *pasti salah*.  \n   - Teknik pengerjaan: Gunakan metode eliminasi cepat dengan membantah opsi yang memuat angka ekstrim atau opsi yang klaimnya bertolak belakang dengan grafik.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Menyamakan Kenaikan Tertinggi dengan Persentase Tertinggi**  \n   Soal menanyakan *\"komoditas dengan persentase pertumbuhan tertinggi\"*, namun siswa justru memilih komoditas dengan kenaikan nominal terbesar.\n2. **Jebakan Mengabaikan Nilai Basis Awal (*Base Effect Trap*)**  \n   Kenaikan nominal kecil pada nilai awal yang sangat kerdil dapat menghasilkan persentase lonjakan yang masif (misal: naik dari 2 ke 6 adalah kenaikan 200%). Jangan tertipu hanya melihat besaran angka akhir.\n3. **Jebakan Salah Membaca Label Tahun atau Kategori**  \n   Siswa membaca data tahun 2023 padahal yang ditanyakan adalah perubahan antara tahun 2021 dan 2022.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Baca Pertanyaan Sebelum Melirik Tabel**  \n   Ketahui apa yang dicari (nama komoditas, tahun tertentu, atau persentase) sebelum mata Anda tenggelam dalam belantara angka tabel.\n2. **Gunakan Perbandingan Pecahan Silang untuk Persentase Terbesar**  \n   Untuk membandingkan apakah $\\frac{15}{40}$ lebih besar dari $\\frac{18}{50}$:  \n   Kalikan silang: $15 \\times 50 = 750$ vs $40 \\times 18 = 720$.  \n   Karena $750 > 720$, maka $\\frac{15}{40}$ pasti lebih besar tanpa perlu menghitung desimalnya!\n3. **Uji Opsi dari yang Paling Mudah Diverifikasi**  \n   Pada soal evaluasi pernyataan, uji terlebih dahulu opsi yang hanya memerlukan pembacaan satu titik grafik sebelum menguji opsi yang memerlukan perhitungan rata-rata.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Kemampuan mengekstraksi kesimpulan numerik yang akurat dari tabel dan visualisasi data.\n- **Kaidah Emas:** Persentase perubahan selalu dibagi dengan nilai awal:\n  $\\%\\Delta = \\frac{\\Delta}{\\text{Awal}} \\times 100\\%$\n- **Strategi Eksekusi:** Baca pertanyaan dulu, gunakan perkalian silang untuk membandingkan laju pertumbuhan, dan eliminasi opsi yang salah membaca skala sumbu.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Interpretasi Data yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks tabel, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Analisis Persentase Perubahan pada Tabel Statistik\n\n[[SVG:svg-pu-03-05-barchart]]\n\n\n> **Konteks Tabel Data Soal:**  \n> Tabel berikut menunjukkan volume penjualan mobil (dalam unit) dari empat dealer mobil selama tahun 2024 dan 2025:  \n> | Dealer | Penjualan 2024 | Penjualan 2025 |  \n> | :--- | :---: | :---: |  \n> | Dealer Alpha | 200 | 260 |  \n> | Dealer Beta | 120 | 180 |  \n> | Dealer Gamma | 400 | 480 |  \n> | Dealer Delta | 500 | 575 |  \n>  \n> **Pertanyaan UTBK:** *Dealer yang mencatatkan persentase kenaikan penjualan TERTINGGI dari tahun 2024 ke 2025 adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Dealer Alpha  \n> - **B.** Dealer Beta  \n> - **C.** Dealer Gamma  \n> - **D.** Dealer Delta  \n> - **E.** Dealer Gamma dan Delta sama tinggi\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kenaikan Nominal vs Kenaikan Persentase Tiap Dealer:**  \n  - **Dealer Alpha:**  \n    Kenaikan nominal $= 260 - 200 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{200} \\times 100\\% = 30\\%$.\n  - **Dealer Beta:**  \n    Kenaikan nominal $= 180 - 120 = 60\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{60}{120} \\times 100\\% = 50\\%$.\n  - **Dealer Gamma:**  \n    Kenaikan nominal $= 480 - 400 = 80\\text{ unit}$ (secara nominal adalah yang tertinggi!).  \n    Persentase kenaikan $= \\frac{80}{400} \\times 100\\% = 20\\%$.\n  - **Dealer Delta:**  \n    Kenaikan nominal $= 575 - 500 = 75\\text{ unit}$.  \n    Persentase kenaikan $= \\frac{75}{500} \\times 100\\% = 15\\%$.\n- **Perbandingan Hasil:**  \n  Meskipun Dealer Gamma memiliki kenaikan nominal terbesar ($80\\text{ unit}$), persentase kenaikan tertinggi dipegang oleh **Dealer Beta** dengan kenaikan mencapai **$50\\%$** karena nilai basis awalnya yang lebih kecil.\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan C Salah (Jebakan Utama):** Terkecoh memilih Dealer Gamma karena nominalnya naik 80 unit.  \n  - **Pilihan A, D, E Salah:** Persentase kenaikan Alpha (30%) dan Delta (15%) lebih rendah daripada Beta (50%).\n- **Penerapan Trik Cepat (15 Detik):** Bandingkan rasio pertumbuhan masing-masing dealer:\n  - **Dealer Alpha:** $\\frac{60}{200} = \\frac{3}{10} = 30\\%$\n  - **Dealer Beta:** $\\frac{60}{120} = \\frac{1}{2} = 50\\%$ *(Juara Kenaikan!)*\n  - **Dealer Gamma:** $\\frac{80}{400} = \\frac{1}{5} = 20\\%$\n  Jelas bahwa Dealer Beta memimpin pertumbuhan tertinggi ($50\\%$). Jawaban pasti **B**.\n\n---\n\n### Variasi 2: Membaca Tren dan Titik Ekstrem pada Grafik / Data Deret\n\n> **Konteks Data Soal:**  \n> Catatan laba bersih (dalam miliar rupiah) sebuah perusahaan rintisan selama lima caturwulan berturut-turut adalah sebagai berikut:  \n> - Caturwulan I: Rp15 Miliar  \n> - Caturwulan II: Rp18 Miliar  \n> - Caturwulan III: Rp12 Miliar  \n> - Caturwulan IV: Rp24 Miliar  \n> - Caturwulan V: Rp30 Miliar  \n>  \n> **Pertanyaan UTBK:** *Laju kenaikan laba bersih tertinggi dalam satu periode caturwulan berturut-turut terjadi pada perpindahan dari...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Caturwulan I ke Caturwulan II  \n> - **B.** Caturwulan II ke Caturwulan III  \n> - **C.** Caturwulan III ke Caturwulan IV  \n> - **D.** Caturwulan IV ke Caturwulan V  \n> - **E.** Caturwulan I ke Caturwulan V\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Laju Perubahan Tiap Periode:**  \n  - **Periode I ke II:** Naik dari $15$ ke $18$ $\\implies \\frac{18 - 15}{15} = \\frac{3}{15} = 20\\%$.  \n  - **Periode II ke III:** Terjadi **penurunan** (dari 18 ke 12), sehingga gugur.  \n  - **Periode III ke IV:** Naik dari $12$ ke $24$ $\\implies \\frac{24 - 12}{12} = \\frac{12}{12} = 100\\%$ (laba berlipat ganda dua kali lipat!).  \n  - **Periode IV ke V:** Naik dari $24$ ke $30$ $\\implies \\frac{30 - 24}{24} = \\frac{6}{24} = 25\\%$.\n- **Kesimpulan:** Laju kenaikan tertinggi terjadi pada perpindahan dari **Caturwulan III ke Caturwulan IV** dengan lonjakan fantastis sebesar **$100\\%$**.\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A dan D laju pertumbuhannya hanya $20\\%$ dan $25\\%$.  \n  - Pilihan B mengalami penurunan laba.  \n  - Pilihan E mencakup empat periode, bukan satu periode berturut-turut.\n- **Penerapan Trik Cepat (15 Detik):** Dari 12 ke 24 adalah kenaikan $100\\%$ (angka berlipat dua). Tidak ada periode lain yang melipatgandakan angka. Jawaban seketika **C**.\n\n---\n\n### Variasi 3: Evaluasi Simpulan Pernyataan Berdasarkan Data Majemuk / HOTS\n\n> **Konteks Tabel Data Soal:**  \n> Tabel statistik kelulusan ujian kompetensi dari tiga sekolah kejuruan tahun 2025:  \n> | Sekolah | Jumlah Siswa Terdaftar | Persentase Kelulusan |  \n> | :--- | :---: | :---: |  \n> | SMK Mandiri | 200 siswa | 90% |  \n> | SMK Prestasi | 300 siswa | 80% |  \n> | SMK Cendekia | 150 siswa | 80% |  \n>  \n> **Pertanyaan UTBK:** *Berdasarkan data tabel tersebut, pernyataan berikut yang **PASTI BENAR** adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Jumlah siswa yang lulus dari SMK Mandiri lebih banyak daripada siswa yang lulus dari SMK Prestasi  \n> - **B.** Jumlah siswa yang TIDAK lulus dari SMK Prestasi sama dengan jumlah siswa yang TIDAK lulus dari SMK Mandiri  \n> - **C.** Jumlah siswa yang lulus dari SMK Prestasi adalah yang terbanyak di antara ketiga sekolah tersebut  \n> - **D.** Total persentase kelulusan gabungan ketiga sekolah tersebut adalah 85%  \n> - **E.** Siswa yang tidak lulus dari SMK Cendekia berjumlah 40 orang\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Kalkulasi Rinci Jumlah Siswa Lulus dan Tidak Lulus:**  \n  - **SMK Mandiri (200 siswa):**  \n    - Lulus $= 90\\% \\times 200 = 180\\text{ siswa}$.  \n    - Tidak Lulus $= 10\\% \\times 200 = 20\\text{ siswa}$.  \n  - **SMK Prestasi (300 siswa):**  \n    - Lulus $= 80\\% \\times 300 = 240\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 300 = 60\\text{ siswa}$.  \n  - **SMK Cendekia (150 siswa):**  \n    - Lulus $= 80\\% \\times 150 = 120\\text{ siswa}$.  \n    - Tidak Lulus $= 20\\% \\times 150 = 30\\text{ siswa}$.\n- **Evaluasi Opsi Pilihan Ganda:**  \n  - **Pilihan A Salah:** Lulus Mandiri ($180$) lebih sedikit dari Lulus Prestasi ($240$).  \n  - **Pilihan B Salah:** Tidak lulus Prestasi ($60$) berbeda dengan Mandiri ($20$).  \n  - **Pilihan C BENAR:** Lulus terbanyak adalah SMK Prestasi dengan $240\\text{ siswa}$ (mengungguli Mandiri $180$ dan Cendekia $120$).  \n  - **Pilihan D Salah:** Total lulus $= 180 + 240 + 120 = 540$ dari total $650$ siswa $\\implies \\frac{540}{650} \\approx 83{,}08\\%$ (bukan 85%). Rata-rata persentase tidak boleh dirata-ratakan langsung karena bobot populasinya berbeda.  \n  - **Pilihan E Salah:** Siswa tidak lulus SMK Cendekia adalah $30\\text{ orang}$, bukan $40\\text{ orang}$.\n- **Penerapan Trik Cepat (15 Detik):** Cek jumlah lulus Prestasi: $80\\% \\times 300 = 240$. Ini jauh melampaui total seluruh siswa Mandiri (200) apalagi yang lulus. Maka pernyataan C bahwa Prestasi memiliki jumlah lulus terbanyak sudah pasti benar tanpa perlu menghitung rata-rata gabungan. Pilihan **C** terbukti sah.",
+    "visualizations_svg": [
+      {
+        "id": "svg-pu-03-05-barchart",
+        "title": "Komparasi Penjualan Mobil 2024 vs 2025 (Kenaikan Nominal vs Persentase)",
+        "caption": "Kenaikan Nominal Terbesar (Gamma: +80) vs Persentase Tertinggi (Beta: +50%)",
+        "svg_code": "<svg viewBox=\"0 0 500 350\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\">\n  <defs>\n    <style>\n      .bc-title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 800; fill: #1e293b; text-anchor: middle; }\n      .bc-axis { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; text-anchor: end; }\n      .bc-dealer { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 800; fill: #1e293b; text-anchor: middle; }\n      .bc-val { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 900; fill: #ffffff; text-anchor: middle; }\n      .bc-pct { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 900; text-anchor: middle; }\n      :root.dark .bc-title, :root.dark .bc-dealer { fill: #f8fafc; }\n    </style>\n  </defs>\n\n  <text x=\"250\" y=\"20\" class=\"bc-title\">KOMPARASI KENAIKAN PENJUALAN: NOMINAL vs PERSENTASE</text>\n\n  <!-- Legend -->\n  <g transform=\"translate(155, 30)\">\n    <rect x=\"0\" y=\"0\" width=\"14\" height=\"10\" rx=\"2\" fill=\"#64748b\"/>\n    <text x=\"18\" y=\"9\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\">Tahun 2024</text>\n    <rect x=\"100\" y=\"0\" width=\"14\" height=\"10\" rx=\"2\" fill=\"#4f46e5\"/>\n    <text x=\"118\" y=\"9\" fill=\"#4f46e5\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\">Tahun 2025</text>\n  </g>\n\n  <!-- Grid lines -->\n  <g stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"4,4\" opacity=\"0.6\">\n    <line x1=\"42\" y1=\"75\" x2=\"495\" y2=\"75\"/>\n    <line x1=\"42\" y1=\"118\" x2=\"495\" y2=\"118\"/>\n    <line x1=\"42\" y1=\"162\" x2=\"495\" y2=\"162\"/>\n    <line x1=\"42\" y1=\"205\" x2=\"495\" y2=\"205\"/>\n    <line x1=\"42\" y1=\"248\" x2=\"495\" y2=\"248\" stroke-dasharray=\"0\" stroke-width=\"1.5\" stroke=\"#94a3b8\"/>\n  </g>\n\n  <!-- Y-Axis Labels -->\n  <text x=\"36\" y=\"79\" class=\"bc-axis\">600</text>\n  <text x=\"36\" y=\"122\" class=\"bc-axis\">400</text>\n  <text x=\"36\" y=\"166\" class=\"bc-axis\">200</text>\n  <text x=\"36\" y=\"252\" class=\"bc-axis\">0</text>\n\n  <!-- GROUP 1: Alpha (center at x=100) -->\n  <g transform=\"translate(56, 0)\">\n    <rect x=\"0\" y=\"191\" width=\"38\" height=\"57\" rx=\"5\" fill=\"#64748b\"/>\n    <text x=\"19\" y=\"213\" class=\"bc-val\">200</text>\n    <rect x=\"42\" y=\"174\" width=\"38\" height=\"74\" rx=\"5\" fill=\"#4f46e5\"/>\n    <text x=\"61\" y=\"198\" class=\"bc-val\">260</text>\n    <rect x=\"15\" y=\"138\" width=\"50\" height=\"25\" rx=\"6\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.5\"/>\n    <text x=\"40\" y=\"155\" fill=\"#4338ca\" class=\"bc-pct\">+30%</text>\n    <text x=\"40\" y=\"270\" class=\"bc-dealer\">Alpha</text>\n  </g>\n\n  <!-- GROUP 2: Beta (center at x=210 - WINNER) -->\n  <g transform=\"translate(166, 0)\">\n    <rect x=\"-8\" y=\"65\" width=\"96\" height=\"190\" rx=\"9\" fill=\"rgba(16, 185, 129, 0.08)\" stroke=\"#10b981\" stroke-width=\"2.5\"/>\n    <rect x=\"0\" y=\"214\" width=\"38\" height=\"34\" rx=\"5\" fill=\"#64748b\"/>\n    <text x=\"19\" y=\"233\" class=\"bc-val\">120</text>\n    <rect x=\"42\" y=\"197\" width=\"38\" height=\"51\" rx=\"5\" fill=\"#10b981\"/>\n    <text x=\"61\" y=\"220\" class=\"bc-val\">180</text>\n    <rect x=\"-3\" y=\"74\" width=\"86\" height=\"28\" rx=\"6\" fill=\"#10b981\"/>\n    <text x=\"40\" y=\"93\" fill=\"#ffffff\" class=\"bc-pct\">★ +50% (MAX)</text>\n    <text x=\"40\" y=\"270\" class=\"bc-dealer\" fill=\"#047857\">Beta ★</text>\n  </g>\n\n  <!-- GROUP 3: Gamma (center at x=320 - TRAP) -->\n  <g transform=\"translate(276, 0)\">\n    <rect x=\"-8\" y=\"60\" width=\"96\" height=\"195\" rx=\"9\" fill=\"rgba(245, 158, 11, 0.08)\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"4,4\"/>\n    <rect x=\"0\" y=\"135\" width=\"38\" height=\"113\" rx=\"5\" fill=\"#64748b\"/>\n    <text x=\"19\" y=\"158\" class=\"bc-val\">400</text>\n    <rect x=\"42\" y=\"112\" width=\"38\" height=\"136\" rx=\"5\" fill=\"#f59e0b\"/>\n    <text x=\"61\" y=\"138\" class=\"bc-val\">480</text>\n    <rect x=\"-4\" y=\"69\" width=\"88\" height=\"25\" rx=\"5\" fill=\"#f59e0b\"/>\n    <text x=\"40\" y=\"86\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"900\" text-anchor=\"middle\">+80 Unit (20%)</text>\n    <text x=\"40\" y=\"270\" class=\"bc-dealer\">Gamma</text>\n  </g>\n\n  <!-- GROUP 4: Delta (center at x=430) -->\n  <g transform=\"translate(386, 0)\">\n    <rect x=\"0\" y=\"106\" width=\"38\" height=\"142\" rx=\"5\" fill=\"#64748b\"/>\n    <text x=\"19\" y=\"133\" class=\"bc-val\">500</text>\n    <rect x=\"42\" y=\"85\" width=\"38\" height=\"163\" rx=\"5\" fill=\"#4f46e5\"/>\n    <text x=\"61\" y=\"113\" class=\"bc-val\">575</text>\n    <rect x=\"15\" y=\"53\" width=\"50\" height=\"25\" rx=\"6\" fill=\"#e0e7ff\" stroke=\"#6366f1\" stroke-width=\"1.5\"/>\n    <text x=\"40\" y=\"70\" fill=\"#4338ca\" class=\"bc-pct\">+15%</text>\n    <text x=\"40\" y=\"270\" class=\"bc-dealer\">Delta</text>\n  </g>\n\n  <!-- Bottom Clarification Banner -->\n  <rect x=\"6\" y=\"286\" width=\"488\" height=\"28\" rx=\"6\" fill=\"#0f172a\"/>\n  <text x=\"250\" y=\"304\" fill=\"#38bdf8\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"bold\" text-anchor=\"middle\">💡 KUNCI UTBK: Gamma naik nominal terbesar (+80), tapi Beta juara persentase (+50%)!</text>\n</svg>"
+      }
+    ],
+    "distractor_traps": [
+      "Menyamakan rata-rata persentase dengan persentase gabungan: Rata-rata dari 90%, 80%, dan 80% bukan (90+80+80)/3 jika ukuran populasi tiap sekolah berbeda.",
+      "Terkecoh persentase tinggi dengan jumlah mutlak: 90% dari 200 (180) lebih sedikit daripada 80% dari 300 (240).",
+      "Salah membaca selisih penurunan vs kenaikan."
+    ],
+    "quick_execution_algorithm": [
+      "Identifikasi apa yang ditanyakan: jumlah mutlak atau persentase relatif.",
+      "Kalikan persentase dengan total populasi baris untuk memperoleh angka riil.",
+      "Waspadai jebakan merata-ratakan persentase secara langsung tanpa bobot populasi.",
+      "Uji opsi yang menyatakan perbandingan jumlah mutlak terlebih dahulu."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-05-ex1",
+      "variation_name": "Variasi 1: Persentase Kenaikan Tertinggi (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Tabel berikut menunjukkan volume penjualan mobil (dalam unit) dari empat dealer:\n- Dealer Alpha: 200 unit (2024) -> 260 unit (2025)\n- Dealer Beta: 120 unit (2024) -> 180 unit (2025)\n- Dealer Gamma: 400 unit (2024) -> 480 unit (2025)\n- Dealer Delta: 500 unit (2024) -> 575 unit (2025)",
+      "question_markdown": "Dealer yang mencatatkan **persentase kenaikan penjualan TERTINGGI** dari tahun 2024 ke 2025 adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Dealer Alpha"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Dealer Beta"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Dealer Gamma"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Dealer Delta"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Dealer Gamma dan Delta sama tinggi"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Persentase kenaikan dihitung dari (Kenaikan / Penjualan Awal) x 100%. Jangan terkecoh dengan Dealer Gamma yang kenaikan nominalnya paling banyak!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Alpha:** $\\frac{60}{200} = 30\\%$.\n- **Beta:** $\\frac{60}{120} = 50\\%$.\n- **Gamma:** $\\frac{80}{400} = 20\\%$.\n- **Delta:** $\\frac{75}{500} = 15\\%$.\n- **Konklusi:** Persentase kenaikan tertinggi adalah Dealer Beta ($50\\%$).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Bagi Nilai Awal):**\n\n1. Beta naik $60$ dari $120 \\implies$ naik tepat setengahnya ($50\\%$).\n2. Dealer lain kenaikannya jauh di bawah $50\\%$ dari nilai awalnya.\n3. Jawaban langsung **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan C Salah (Jebakan Nominal):** Gamma naik 80 unit namun basis awalnya 400 unit sehingga hanya naik 20%.\n- **Pilihan A, D, E Salah:** Persentasenya di bawah 50%."
+    },
+    {
+      "example_id": "pu-03-05-ex2",
+      "variation_name": "Variasi 2: Laju Kenaikan Tertinggi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Catatan laba bersih (dalam miliar rupiah) sebuah perusahaan rintisan selama lima caturwulan berturut-turut:\n- Caturwulan I: Rp15 Miliar\n- Caturwulan II: Rp18 Miliar\n- Caturwulan III: Rp12 Miliar\n- Caturwulan IV: Rp24 Miliar\n- Caturwulan V: Rp30 Miliar",
+      "question_markdown": "Laju kenaikan laba bersih **tertinggi** dalam satu periode caturwulan berturut-turut terjadi pada perpindahan dari...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Caturwulan I ke Caturwulan II"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Caturwulan II ke Caturwulan III"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Caturwulan III ke Caturwulan IV"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Caturwulan IV ke Caturwulan V"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Caturwulan I ke Caturwulan V"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cari periode di mana labanya mengalami lonjakan persentase berlipat ganda paling tajam. Coba periksa caturwulan III ke IV (dari 12 ke 24)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **I -> II:** $(18 - 15) / 15 = 3 / 15 = 20\\%$.\n- **II -> III:** Turun.\n- **III -> IV:** $(24 - 12) / 12 = 12 / 12 = 100\\%$.\n- **IV -> V:** $(30 - 24) / 24 = 6 / 24 = 25\\%$.\n- **Konklusi:** Kenaikan tertinggi $100\\%$ terjadi pada III ke IV.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Kenaikan 2 Kali Lipat):**\n\n1. Dari 12 ke 24 naik tepat $100\\%$ (berlipat dua).\n2. Tidak ada periode lain yang mencapai kenaikan $100\\%$.\n3. Jawaban **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, D Salah:** Kenaikan hanya 20% dan 25%.\n- **Pilihan B Salah:** Mengalami penurunan laba.\n- **Pilihan E Salah:** Meliputi 4 periode, bukan satu periode berturut-turut."
+    },
+    {
+      "example_id": "pu-03-05-ex3",
+      "variation_name": "Variasi 3: Evaluasi Simpulan Data Statistik (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Tabel statistik kelulusan ujian kompetensi dari tiga sekolah kejuruan tahun 2025:\n- SMK Mandiri: 200 siswa terdaftar, kelulusan 90%\n- SMK Prestasi: 300 siswa terdaftar, kelulusan 80%\n- SMK Cendekia: 150 siswa terdaftar, kelulusan 80%",
+      "question_markdown": "Berdasarkan data tabel tersebut, pernyataan berikut yang **PASTI BENAR** adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Jumlah siswa yang lulus dari SMK Mandiri lebih banyak daripada siswa yang lulus dari SMK Prestasi"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Jumlah siswa yang TIDAK lulus dari SMK Prestasi sama dengan jumlah siswa yang TIDAK lulus dari SMK Mandiri"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Jumlah siswa yang lulus dari SMK Prestasi adalah yang terbanyak di antara ketiga sekolah tersebut"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Total persentase kelulusan gabungan ketiga sekolah tersebut adalah 85%"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Siswa yang tidak lulus dari SMK Cendekia berjumlah 40 orang"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung jumlah siswa lulus riil untuk setiap sekolah: Mandiri = 90% x 200 = 180 siswa. Prestasi = 80% x 300 = 240 siswa. Cendekia = 80% x 150 = 120 siswa. Bandingkan dengan opsi pernyataan!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kalkulasi Siswa Lulus:**\n  - SMK Mandiri: $90\\% \\times 200 = 180$ siswa.\n  - SMK Prestasi: $80\\% \\times 300 = 240$ siswa.\n  - SMK Cendekia: $80\\% \\times 150 = 120$ siswa.\n- **Kalkulasi Siswa Tidak Lulus:**\n  - SMK Mandiri: $20$ siswa.\n  - SMK Prestasi: $60$ siswa.\n  - SMK Cendekia: $30$ siswa.\n- **Evaluasi Pernyataan:**\n  - Siswa lulus terbanyak adalah SMK Prestasi ($240$ siswa). Pernyataan C pasti benar.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Verifikasi Nilai Terbanyak):**\n\n1. Lulus Prestasi $= 80\\% \\times 300 = 240$ orang.\n2. Total siswa Mandiri saja hanya 200 orang. Jadi Prestasi pasti menghasilkan lulusan terbanyak.\n3. Pilihan **C** seketika terbukti benar.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mandiri (180) lebih sedikit dari Prestasi (240).\n- **Pilihan B Salah:** Tidak lulus Prestasi (60) tidak sama dengan Mandiri (20).\n- **Pilihan D Salah:** Rata-rata tertimbang kelulusan adalah 540/650 = 83,08% bukan 85%.\n- **Pilihan E Salah:** Siswa tidak lulus Cendekia adalah 30 orang bukan 40 orang."
+    }
+  ]
+};

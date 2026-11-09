@@ -1,0 +1,143 @@
+import type { Material } from '../../../types/material';
+
+export const MATERIAL_PU_03_04: Material = {
+  "metadata": {
+    "id": "pu-3-4",
+    "subtest": "PU",
+    "chapter_num": 3,
+    "chapter_title": "Penalaran Kuantitatif",
+    "subchapter_num": "3.4",
+    "subchapter_title": "Perbandingan Senilai dan Berbalik Nilai",
+    "title": "Perbandingan Senilai dan Berbalik Nilai",
+    "required_question_variations": [
+      "Perbandingan Senilai dan Rasio Bertingkat (A:B:C)",
+      "Perbandingan Berbalik Nilai pada Waktu dan Kecepatan",
+      "Beban Kerja Bersama dan Pekerja Tambahan Terhenti (HOTS)"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-08"
+  },
+  "content": {
+    "tactical_overview": "Perbandingan adalah instrumen penalaran kuantitatif fundamental di UTBK SNBT yang menguji pemahaman Anda terhadap hubungan proporsional antarvariabel. Fondasi terpenting adalah membedakan jenis hubungan secara akurat: jika variabel pertama naik dan variabel kedua ikut naik dengan rasio tetap, itu adalah perbandingan senilai; jika variabel pertama naik tetapi variabel kedua justru menurun (seperti menambah pekerja yang membuat waktu selesai berkurang), itu adalah perbandingan berbalik nilai. Pada variasi HOTS proyek terhenti, jangan pernah mengulang hitungan dari awal: selalu fokuslah pada \"sisa beban kerja\" (sisa hari dikali jumlah pekerja) yang harus dibagi dengan sisa hari yang masih tersedia.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nPerbandingan di UTBK SNBT terbagi menjadi dua pilar utama:\n\n1. **Perbandingan Senilai (*Direct Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding lurus, di mana rasio keduanya bernilai konstan:  \n   $\\frac{X_1}{Y_1} = \\frac{X_2}{Y_2} \\iff X_1 \\cdot Y_2 = X_2 \\cdot Y_1$  \n   - *Konteks Nyata:* Jumlah konsumsi bahan bakar vs jarak tempuh, jumlah barang dibeli vs total harga, atau perbandingan skala peta.  \n   - **Rasio Bertingkat ($A : B$ dan $B : C$):**  \n     Jika $A : B = p : q$ dan $B : C = m : n$, samakan nilai $B$ dengan mencari KPK dari $q$ dan $m$:  \n     $A : B : C = (p \\cdot m) : (q \\cdot m) : (n \\cdot q)$\n\n2. **Perbandingan Berbalik Nilai (*Inverse Proportion*)**  \n   Dua variabel $X$ dan $Y$ berbanding terbalik, di mana hasil kali keduanya bernilai konstan:  \n   $X_1 \\cdot Y_1 = X_2 \\cdot Y_2 \\iff \\frac{X_1}{X_2} = \\frac{Y_2}{Y_1}$  \n   - *Konteks Nyata:* Kecepatan vs waktu tempuh pada jarak yang sama, atau jumlah pekerja vs durasi waktu penyelesaian proyek.\n\n3. **Manajemen Beban Kerja Proyek Terhenti (HOTS)**  \n   Total pekerjaan diukur dalam satuan *\"Beban Orang-Hari\"* ($Pek = Orang \\times Hari$).  \n   - Ketika proyek terhenti di tengah jalan:  \n     $\\text{Sisa Beban Kerja} = (\\text{Sisa Hari Normal}) \\times (\\text{Pekerja Semula})$  \n     $\\text{Pekerja Baru yang Dibutuhkan} = \\frac{\\text{Sisa Beban Kerja}}{\\text{Sisa Hari Nyata}}$  \n     $\\text{Pekerja Tambahan} = \\text{Pekerja Baru} - \\text{Pekerja Semula}$\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\n1. **Jebakan Salah Menentukan Arah Perbandingan**  \n   Menggunakan perkalian silang (senilai) untuk kasus pekerja dan waktu, sehingga diperoleh hasil yang tidak logis (misalnya menambah pekerja malah membuat waktu pengerjaan menjadi lebih lama).\n2. **Jebakan Menghitung Beban dari Hari Ke-0 pada Proyek Terhenti**  \n   Siswa sering menghitung ulang total beban proyek dari awal, padahal sebagian pekerjaan sudah selesai dikerjakan pada hari-hari awal. Selalu langsung fokus pada **hari yang tersisa**.\n3. **Jebakan Pertanyaan Pekerja Tambahan vs Total Pekerja**  \n   Jika soal menanyakan *\"berapa pekerja tambahan yang diperlukan\"*, siswa yang terburu-buru sering memilih angka total pekerja baru, lupa mengurangkannya dengan jumlah pekerja semula.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\n1. **Uji Arah Hubungan Sebelum Menghitung**  \n   Tanyakan dalam hati: *\"Jika X ditambah, apakah Y makin banyak atau makin sedikit?\"*  \n   - Makin banyak $\\to$ **Senilai** (perkalian silang: $X_1 Y_2 = X_2 Y_1$).  \n   - Makin sedikit $\\to$ **Berbalik Nilai** (perkalian lurus: $X_1 Y_1 = X_2 Y_2$).\n2. **Rumus Sakti Proyek Terhenti (10 Detik)**  \n   $\\text{Pekerja Tambahan} = \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Semula}$  \n   Rumus kilat ini langsung menghasilkan jumlah pekerja tambahan tanpa perlu menghitung total beban kerja!\n3. **Penyamaan Rasio N-Bentuk (Rasio Bertingkat)**  \n   Susun:  \n   $A : B = p : q$  \n   $B : C = m : n$  \n   Kalikan menyilang: $A = p \\times m$, $B = q \\times m$, $C = q \\times n$.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Menentukan konstanta relasi matematis (rasio tetap vs hasil kali tetap) antarvariabel yang saling memengaruhi.\n- **Kaidah Identifikasi:** Senilai jika bergerak searah ($X \\uparrow, Y \\uparrow$), Berbalik Nilai jika berlawanan arah ($X \\uparrow, Y \\downarrow$).\n- **Strategi Proyek Terhenti:** Gunakan rumus sakti:\n  $\\text{Pekerja Tambahan} = \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Awal}$\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Perbandingan Senilai dan Berbalik Nilai yang paling sering keluar pada naskah UTBK SNBT, lengkap dengan konteks soal, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Perbandingan Senilai dan Rasio Bertingkat (A:B:C)\n\n> **Konteks Masalah Soal:**  \n> Perbandingan uang tabungan Alif dan Budi adalah $3 : 4$, sedangkan perbandingan uang tabungan Budi dan Cici adalah $5 : 6$. Jika selisih uang tabungan Alif dan Cici adalah Rp450.000,00, berapakah jumlah uang tabungan Budi?  \n>  \n> **Pertanyaan UTBK:** *Jumlah uang tabungan Budi berdasarkan informasi tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Rp800.000,00  \n> - **B.** Rp900.000,00  \n> - **C.** Rp1.000.000,00  \n> - **D.** Rp1.100.000,00  \n> - **E.** Rp1.200.000,00\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Menyatukan Perbandingan Bertingkat ($A : B : C$):**  \n  - $A : B = 3 : 4$  \n  - $B : C = 5 : 6$  \n  - KPK dari nilai pembanding $B$ (yaitu 4 dan 5) adalah 20.  \n  - Kalikan rasio pertama dengan 5: $A : B = 15 : 20$.  \n  - Kalikan rasio kedua dengan 4: $B : C = 20 : 24$.  \n  - Perbandingan gabungan:  \n    $A : B : C = 15 : 20 : 24$\n- **Menentukan Nilai Satuan Porsi Tabungan:**  \n  - Selisih porsi $C$ dan $A$ adalah:  \n    $24 - 15 = 9 \\text{ bagian}$  \n  - Nilai 9 bagian tersebut setara dengan Rp450.000,00.  \n  - Maka nilai 1 bagian rasio adalah:  \n    $\\text{Nilai } 1 \\text{ bagian} = \\frac{\\text{Rp450.000,00}}{9} = \\text{Rp50.000,00}$\n- **Menghitung Tabungan Budi:**  \n  - Tabungan Budi memiliki porsi 20 bagian:  \n    $\\text{Tabungan Budi} = 20 \\times \\text{Rp50.000,00} = \\text{Rp1.000.000,00}$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A (Rp800.000) dan B (Rp900.000) terjadi jika siswa keliru menghitung porsi Alif atau salah menentukan selisih bagian ($24 - 15$ disangka 10 bagian).  \n  - Pilihan D dan E keliru dalam mengalikan nilai porsi Budi.\n- **Penerapan Trik Cepat (15 Detik):** $A:B:C = 15:20:24$. Selisih $C - A = 9$ bagian $= 450$ ribu $\\implies 1$ bagian $= 50$ ribu. Budi $= 20$ bagian $\\implies 20 \\times 50$ ribu $= 1.000$ ribu (Rp1.000.000,00). Pilihan **C** langsung terkunci.\n\n---\n\n### Variasi 2: Perbandingan Berbalik Nilai pada Waktu dan Kecepatan\n\n> **Konteks Masalah Soal:**  \n> Sebuah mobil menempuh perjalanan dari Kota P ke Kota Q dengan kecepatan rata-rata $60\\text{ km/jam}$ dalam waktu $3\\text{ jam } 30\\text{ menit}$. Jika dalam perjalanan pulang pengemudi ingin menyingkat waktu tempuh menjadi hanya $2\\text{ jam } 20\\text{ menit}$, berapakah kecepatan rata-rata yang harus dipertahankan?  \n>  \n> **Pertanyaan UTBK:** *Kecepatan rata-rata mobil pada perjalanan pulang tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** $75\\text{ km/jam}$  \n> - **B.** $80\\text{ km/jam}$  \n> - **C.** $85\\text{ km/jam}$  \n> - **D.** $90\\text{ km/jam}$  \n> - **E.** $95\\text{ km/jam}$\n\n**Kunci Jawaban: D**\n\n**Bedah Logika & Pembahasan:**\n- **Identifikasi Jenis Perbandingan:**  \n  Jarak antara Kota P dan Kota Q adalah tetap. Semakin cepat mobil melaju, waktu yang dibutuhkan semakin singkat. Ini adalah kasus **perbandingan berbalik nilai**:  \n  $v_1 \\cdot t_1 = v_2 \\cdot t_2$\n- **Konversi Waktu ke Satuan Jam / Menit:**  \n  - $t_1 = 3\\text{ jam } 30\\text{ menit} = 210\\text{ menit}$ (atau $3{,}5\\text{ jam}$).  \n  - $t_2 = 2\\text{ jam } 20\\text{ menit} = 140\\text{ menit}$ (atau $2\\frac{1}{3}\\text{ jam}$).  \n  - $v_1 = 60\\text{ km/jam}$.\n- **Perhitungan Kecepatan $v_2$:**  \n  $v_2 = \\frac{v_1 \\cdot t_1}{t_2} = \\frac{60 \\times 210}{140}$  \n  Sederhanakan pecahan $\\frac{210}{140} = \\frac{3}{2}$:  \n  $v_2 = 60 \\times \\frac{3}{2} = 90\\text{ km/jam}$\n- **Mengapa Opsi Lain Salah?**  \n  - Pilihan A ($75$) dan B ($80$) dihitung jika menggunakan perbandingan senilai secara keliru.  \n  - Pilihan C dan E terjadi akibat kesalahan pembagian menit.\n- **Penerapan Trik Cepat (15 Detik):** Gunakan rasio menit: $t_1 : t_2 = 210 : 140 = 3 : 2$. Karena berbalik nilai, rasio kecepatan dibalik: $v_1 : v_2 = 2 : 3$. Jika $2$ bagian $= 60\\text{ km/jam}$, maka $3$ bagian $= 90\\text{ km/jam}$. Jawaban tepat adalah pilihan **D**.\n\n---\n\n### Variasi 3: Beban Kerja Bersama dan Pekerja Tambahan Terhenti / HOTS\n\n> **Konteks Masalah Soal:**  \n> Sebuah proyek renovasi jembatan ditargetkan selesai dalam waktu $40\\text{ hari}$ dengan mempekerjakan $24\\text{ orang}$ pekerja. Setelah pekerjaan berjalan selama $15\\text{ hari}$, proyek terpaksa dihentikan selama $5\\text{ hari}$ akibat kendala banjir luapan sungai. Agar proyek tersebut tetap selesai tepat waktu sesuai jadwal semula, berapa orang pekerja tambahan yang wajib didatangkan?  \n>  \n> **Pertanyaan UTBK:** *Jumlah pekerja tambahan yang diperlukan adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** 4 orang  \n> - **B.** 6 orang  \n> - **C.** 8 orang  \n> - **D.** 10 orang  \n> - **E.** 30 orang\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Sisa Waktu Proyek:**  \n  - Waktu total rencana: $40\\text{ hari}$.  \n  - Waktu yang sudah berjalan: $15\\text{ hari}$.  \n  - Sisa hari rencana normal: $40 - 15 = 25\\text{ hari}$.  \n  - Pekerjaan terhenti selama: $5\\text{ hari}$.  \n  - Sisa hari nyata yang tersedia: $25 - 5 = 20\\text{ hari}$.\n- **Metode 1 (Konsep Formal Beban Kerja):**  \n  - Sisa beban kerja yang belum selesai:  \n    $\\text{Beban} = 25\\text{ hari} \\times 24\\text{ pekerja} = 600\\text{ orang-hari}$  \n  - Jumlah pekerja baru ($P_{baru}$) yang dibutuhkan agar 600 beban ini tuntas dalam 20 hari:  \n    $P_{baru} = \\frac{600}{20} = 30\\text{ orang}$  \n  - Jumlah pekerja **tambahan** yang diperlukan:  \n    $\\text{Tambahan} = P_{baru} - P_{lama} = 30 - 24 = 6\\text{ orang}$\n- **Metode 2 (Rumus Sakti Kilat 10 Detik):**  \n  $\\text{Tambahan} = \\frac{5}{20} \\times 24 = \\frac{1}{4} \\times 24 = 6\\text{ orang}$  \n  Hasilnya identik secara instan!\n- **Mengapa Opsi Lain Salah?**  \n  - **Pilihan E Salah (Jebakan Terbesar):** Angka $30$ adalah total pekerja yang dibutuhkan, bukan pekerja tambahan! Siswa yang terburu-buru sering terjebak memilih E.  \n  - **Pilihan A, C, D Salah:** Terjadi karena salah membagi dengan total hari 40 atau lupa menghitung 5 hari terhenti.\n- **Penerapan Trik Cepat (15 Detik):** Rumus kilat: $\\frac{\\text{Hari Libur}}{\\text{Sisa Hari}} \\times \\text{Pekerja} = \\frac{5}{20} \\times 24 = 6$ orang. Dalam 5 detik, jawaban **B** langsung keluar.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Jebakan Total Pekerja vs Pekerja Tambahan: Memilih angka 30 padahal yang ditanyakan adalah pekerja tambahannya (30 - 24 = 6).",
+      "Mengalikan silang pada perbandingan waktu dan pekerja (keliru menganggap senilai).",
+      "Menghitung beban proyek dari hari ke-0 bukan dari hari yang tersisa."
+    ],
+    "quick_execution_algorithm": [
+      "Tentukan jenis perbandingan: berbanding lurus (senilai) atau berbanding terbalik.",
+      "Pada rasio bertingkat A:B dan B:C, samakan nilai B dengan KPK untuk membuat rasio A:B:C.",
+      "Pada proyek terhenti, gunakan rumus sakti: (Hari Terhenti / Sisa Hari Nyata) x Pekerja Semula.",
+      "Periksa dengan teliti apakah pertanyaan meminta nilai total atau nilai selisih/tambahan."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pu-03-04-ex1",
+      "variation_name": "Variasi 1: Rasio Bertingkat Tabungan (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Perbandingan uang tabungan Alif dan Budi adalah 3 : 4, sedangkan perbandingan uang tabungan Budi dan Cici adalah 5 : 6. Jika selisih uang tabungan Alif dan Cici adalah Rp450.000,00, berapakah jumlah uang tabungan Budi?",
+      "question_markdown": "Jumlah uang tabungan Budi berdasarkan informasi tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Rp800.000,00"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Rp900.000,00"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Rp1.000.000,00"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Rp1.100.000,00"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Rp1.200.000,00"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Samakan nilai Budi pada kedua perbandingan! Budi bernilai 4 pada rasio pertama dan bernilai 5 pada rasio kedua. Jadikan 20!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rasio Gabungan:**\n  - $A : B = 3 : 4 = 15 : 20$.\n  - $B : C = 5 : 6 = 20 : 24$.\n  - Maka $A : B : C = 15 : 20 : 24$.\n- **Nilai Per Bagian:**\n  - Selisih $C - A = 24 - 15 = 9$ bagian.\n  - $9$ bagian $= 450.000 \\implies 1$ bagian $= 50.000$.\n- **Tabungan Budi:**\n  - Budi $= 20$ bagian $= 20 \\times 50.000 = \\text{Rp1.000.000,00}$.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Skala Porsi):**\n\n1. $A:B:C = 15:20:24$.\n2. Selisih $C - A = 9$ bagian $= 450.000 \\implies 1$ bagian $= 50.000$.\n3. Budi $= 20$ bagian $\\implies 20 \\times 50.000 = 1.000.000$.\n4. Jawaban **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, B, D, E Salah:** Terjadi karena salah membagi selisih 9 bagian atau salah mengalikan bagian Budi."
+    },
+    {
+      "example_id": "pu-03-04-ex2",
+      "variation_name": "Variasi 2: Kecepatan dan Waktu Berbalik Nilai (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah mobil menempuh perjalanan dari Kota P ke Kota Q dengan kecepatan rata-rata 60 km/jam dalam waktu 3 jam 30 menit (210 menit). Jika pengemudi ingin menyingkat waktu tempuh pulang menjadi 2 jam 20 menit (140 menit), berapakah kecepatan rata-rata yang harus dipertahankan?",
+      "question_markdown": "Kecepatan rata-rata mobil pada perjalanan pulang tersebut adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "75 km/jam"
+        },
+        {
+          "key": "B",
+          "text_markdown": "80 km/jam"
+        },
+        {
+          "key": "C",
+          "text_markdown": "85 km/jam"
+        },
+        {
+          "key": "D",
+          "text_markdown": "90 km/jam"
+        },
+        {
+          "key": "E",
+          "text_markdown": "95 km/jam"
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Ini perbandingan berbalik nilai (kecepatan x waktu = jarak tetap). v1 x t1 = v2 x t2. Masukkan waktu dalam satuan menit: 210 menit dan 140 menit.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rumus:** $v_1 \\cdot t_1 = v_2 \\cdot t_2$.\n- $60 \\times 210 = v_2 \\times 140$.\n- $v_2 = \\frac{60 \\times 210}{140} = 60 \\times \\frac{3}{2} = 90\\text{ km/jam}$.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Rasio Terbalik):**\n\n1. Rasio waktu: $210 : 140 = 3 : 2$.\n2. Rasio kecepatan dibalik: $2 : 3$.\n3. Jika $2$ bagian $= 60\\text{ km/jam}$, maka $3$ bagian $= 90\\text{ km/jam}$.\n4. Jawaban **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A, B Salah:** Hasil jika menghitung dengan perbandingan senilai.\n- **Pilihan C, E Salah:** Kesalahan hitung pada pembagian rasio waktu."
+    },
+    {
+      "example_id": "pu-03-04-ex3",
+      "variation_name": "Variasi 3: Proyek Terhenti dan Pekerja Tambahan (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah proyek renovasi jembatan ditargetkan selesai dalam waktu 40 hari dengan mempekerjakan 24 orang pekerja. Setelah pekerjaan berjalan selama 15 hari, proyek terpaksa dihentikan selama 5 hari akibat kendala banjir luapan sungai. Agar proyek tersebut tetap selesai tepat waktu sesuai jadwal semula, berapa orang pekerja tambahan yang wajib didatangkan?",
+      "question_markdown": "Jumlah **pekerja tambahan** yang diperlukan adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "4 orang"
+        },
+        {
+          "key": "B",
+          "text_markdown": "6 orang"
+        },
+        {
+          "key": "C",
+          "text_markdown": "8 orang"
+        },
+        {
+          "key": "D",
+          "text_markdown": "10 orang"
+        },
+        {
+          "key": "E",
+          "text_markdown": "30 orang"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Gunakan rumus kilat proyek terhenti: Pekerja Tambahan = (Hari Terhenti / Sisa Hari Nyata) x Pekerja Semula. Hari terhenti = 5, sisa hari nyata = (40 - 15) - 5 = 20 hari.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Sisa Beban Kerja:**\n  - Sisa hari normal $= 40 - 15 = 25$ hari.\n  - Beban $= 25 \\times 24 = 600$ orang-hari.\n- **Sisa Waktu Nyata:** $25 - 5 = 20$ hari.\n- **Kebutuhan Pekerja Baru:** $\\frac{600}{20} = 30$ orang.\n- **Pekerja Tambahan:** $30 - 24 = 6$ orang.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Rumus Sakti 10 Detik):**\n\n1. Tambahan $= \\frac{\\text{Hari Terhenti}}{\\text{Sisa Hari Nyata}} \\times \\text{Pekerja Awal}$.\n2. Tambahan $= \\frac{5}{20} \\times 24 = \\frac{1}{4} \\times 24 = 6$ orang.\n3. Jawaban langsung **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan E Salah (Jebakan Utama):** 30 adalah total seluruh pekerja, bukan pekerja tambahan!\n- **Pilihan A, C, D Salah:** Kesalahan hitung pada pembagian sisa hari."
+    }
+  ]
+};

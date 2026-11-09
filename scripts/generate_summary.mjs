@@ -99,7 +99,8 @@ function generateSummary() {
     'src/lib/smaSyllabusData.ts': 'SMA curriculum syllabus data (Matematika TL, Saintek, Soshum)',
     'src/data/syllabus.ts': 'Legacy / extended UTBK curriculum syllabus items',
     'src/data/syllabus.json': 'JSON mirror of syllabus data',
-    'src/data/materials/puMaterials.ts': 'Preloaded monolithic bundle of PU materials & questions for 0ms offline latency',
+    'src/data/materials/puMaterials.ts': 'Barrel export: re-exports all modular PU subchapters from src/data/materials/pu/',
+    'src/data/materials/pu/index.ts': 'Barrel export bundling all individual PU subchapters',
     'src/components/navigation/TopHeader.tsx': 'Top navigation bar: AppMode toggle (UTBK vs SMA), stats pills, theme toggle',
     'src/components/common/ThemeToggle.tsx': 'Light/Dark mode switcher manipulating document.documentElement and localStorage',
     'src/components/home/UtbkSubtestGrid.tsx': 'Dashboard cards grid displaying 7 UTBK subtests with stats & progress',
@@ -113,7 +114,8 @@ function generateSummary() {
     'src/components/decorations/CosmicDecorations.tsx': 'Ambient stars and glowing cosmic nebula background (Dark mode)',
     'src/components/decorations/NatureDecorations.tsx': 'Botanical foliage ambient background (Light mode)',
     'scripts/copy_assets.mjs': 'Post-build script: mirrors dist assets, generates .nojekyll & 404.html for GitHub Pages',
-    'scripts/export_materials.mjs': 'Exports TS materials from puMaterials.ts to JSON files in public & root content',
+    'scripts/export_materials.mjs': 'Exports TS materials from modular pu/*.ts to JSON files in public & root content',
+    'scripts/modularize_pu_materials.mjs': 'Modularization tool: splits monolithic material files into isolated subchapter files',
     'scripts/generate_summary.mjs': 'Auto-generates PROJECT_CONTEXT.md to keep codebase reference always up-to-date',
     'PU-STATE.json': 'Machine state tracker for UTBK PU drilling question batch generation (targets, counts, progress)',
     '.antigravity/rules/pu-rules.md': 'Governance rules directive, KaTeX standards, and blueprint curriculum for PU questions',
@@ -167,7 +169,11 @@ d:/web/
 | File | Ukuran | Baris | Peran / Deskripsi |
 | :--- | :---: | :---: | :--- |
 ${[...srcFiles, ...scriptFiles].map(f => {
-  const role = fileRoles[f.path] || 'Modul pendukung';
+  let role = fileRoles[f.path];
+  if (!role && f.path.startsWith('src/data/materials/pu/pu-')) {
+    role = 'Modul terisolasi materi & bank soal sub-bab PU';
+  }
+  if (!role) role = 'Modul pendukung';
   return `| \`${f.path}\` | ${f.size} | ${f.lines} | ${role} |`;
 }).join('\n')}
 
@@ -264,9 +270,9 @@ ${puContent.files.map(f => `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.ques
    - Seluruh rumus wajib diapit tanda dollar tunggal \`$...$\`.
    - Di dalam string JSON, setiap backslash KaTeX **wajib di-escape ganda** (\`\\\\\`), misal: \`$\\\\frac{a}{b}$\`, \`$\\\\approx$\`, \`$\\\\sim p \\\\lor q$\`.
    - Persen ditulis \`$\\\\92\\\\%$\` atau \`92%\`.
-2. **Sinkronisasi Dual-File**:
-   - Bank soal PU berada di dua lokasi: \`content/utbk/pu/pu-XX-YY.json\` & \`src/data/materials/puMaterials.ts\`.
-   - Jalankan \`node scripts/export_materials.mjs\` jika mengubah \`puMaterials.ts\`.
+2. **Struktur Modular & Sinkronisasi Dual-File**:
+   - Bank soal PU berada di modul mandiri per sub-bab: \`src/data/materials/pu/pu-XX-YY.ts\` (misal: \`pu-01-01.ts\`).
+   - Setiap kali mengedit materi/soal, jalankan \`node scripts/export_materials.mjs\` (atau otomatis via \`npm run build\`) untuk mengekspor ke \`public/content/utbk/pu/\` & \`content/utbk/pu/\`.
 3. **Batch Generation Rule**:
    - Maksimal generate **5 soal per batch** untuk menjaga kualitas berpikir tingkat tinggi (HOTS) dan ketajaman opsi pengecoh.
 4. **Verifikasi Komputasi Bab 03 (Penalaran Kuantitatif)**:
