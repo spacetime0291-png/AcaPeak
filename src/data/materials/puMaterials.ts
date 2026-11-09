@@ -422,6 +422,356 @@ export const MATERIAL_PU_01_03: Material = {
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tujuan Evaluasi:** Memperlemah (*weaken*) klaim kausalitas bahwa *\"peresmian jalur sepeda $\\rightarrow$ penurunan timbulan sampah plastik sebesar 35%\"*.\n- **Metode Pembuktian:** Menghadirkan **penjelasan alternatif (*alternative cause*)** yang terjadi secara serentak (*confounding intervention*).\n- **Analisis Opsi B:** Fakta bahwa pemerintah memasang 200 unit tempat sampah pilah baru dan mengerahkan satgas patroli berdenda secara langsung membuktikan bahwa penambahan fasilitas tempat sampah dan penegakan hukum ketat itulah yang menyebabkan trotoar menjadi bersih, bukan keberadaan jalur sepedanya. Hal ini meruntuhkan validitas klaim kausalitas Kepala Dinas.\n\n**Jawaban: B**",
       "quick_trick_markdown": "**Cara Cepat (Cari Intervensi Alternatif yang Nyata):**\n\n1. Tanyakan: mengapa timbulan sampah berkurang drastis? Apakah karena orang naik sepeda, atau karena ada fasilitas tempat sampah baru dan razia denda?\n2. Pilihan **B** menghadirkan faktor penyebab alternatif yang jauh lebih kuat dan masuk akal: 200 tempat sampah baru dan sanksi denda tegas.\n3. Kehadiran fakta baru ini langsung mematahkan klaim bahwa jalur sepedalah yang menjadi penyebab kebersihan.\n4. Jawaban yang tepat adalah pilihan **B**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Asal domisili pesepeda tidak membuktikan maupun menggugurkan hipotesis mengenai dampak perilaku kebersihan.\n- **Pilihan C Salah:** Pola keramaian di hari libur hanya menggambarkan intensitas waktu penggunaan, bukan faktor yang membatalkan klaim kebersihan.\n- **Pilihan D Salah:** Jumlah toko penjual minuman plastik yang tetap tidak menjelaskan faktor di balik penurunan volume timbulan sampah di trotoar.\n- **Pilihan E Salah:** Kebijakan di kota tetangga tidak berpengaruh terhadap relasi sebab-akibat program di Kota Melati (*out of scope*)."
+    },
+    {
+      "example_id": "pu-01-03-ex4",
+      "variation_name": "Variasi 4: Penentuan Arah Kausalitas Ledakan Alga dan Eutrofikasi Danau (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua kondisi lingkungan perairan berikut:\n\n(1) Terjadi pelindian (*leaching*) pupuk fosfat dan nitrat sintetis dalam volume masif dari perkebunan lereng bukit ke badan danau saat musim hujan lebat.\n(2) Ribuan ikan endemik di perairan danau mati mengambang secara massal akibat penurunan drastis konsentrasi oksigen terlarut (*hypoxia*).",
+      "question_markdown": "Bagaimanakah hubungan kausalitas yang **paling tepat** antara kedua pernyataan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pernyataan (2) adalah penyebab dan pernyataan (1) adalah akibat."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari dua penyebab berbeda yang saling tidak berhubungan."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari satu faktor penyebab bersama yang tidak disebutkan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pernyataan (1) dan (2) merupakan kondisi independen yang sama sekali tidak memiliki relasi kausalitas."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati alur mekanisme biologis dan ekologis danau: Ketika pupuk fosfat dan nitrat masuk ke danau, terjadi ledakan alga (*algal bloom*). Saat alga mati dan membusuk, bakteri pengurai mengonsumsi oksigen terlarut hingga air mengalami hipoksia, yang berakibat kematian massal ikan. Uji dengan kalimat *\"Karena (1), maka wajar jika (2)\"*!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Alur Mekanisme Limnologi (Eutrofikasi):**\n  - *Kondisi (1):* Aliran pupuk fosfat dan nitrat dalam jumlah masif masuk ke danau $\\implies$ menyebabkan pengayaan nutrien (*eutrofikasi*).\n  - *Proses Intermediet:* Eutrofikasi memicu ledakan populasi alga (*algal bloom*). Ketika alga mati, mikroorganisme dekomposer menguraikan biomassa alga dan menghabiskan stok oksigen terlarut (*dissolved oxygen*) di kolom air.\n  - *Kondisi (2):* Lingkungan perairan menjadi anoksik/hipoksik sehingga ribuan ikan mati lemas secara massal.\n- **Penarikan Kesimpulan:** Terdapat mata rantai kausalitas biokimia yang tak terbantahkan di mana Kondisi (1) berperan sebagai **penyebab utama (*causal trigger*)** dan Kondisi (2) adalah **dampak langsung (*consequence/effect*)**.\n- Pilihan **A** menyatakan secara tepat bahwa pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Sambung 'Karena... Maka...'):**\n\n1. Uji Arah 1: *\"Karena terjadi pelindian pupuk kimia ke danau (1), maka ribuan ikan mati akibat kekurangan oksigen (2)\"*. (Sangat logis dan terbukti secara ilmiah).\n2. Uji Arah 2 (Dibalik): *\"Karena ikan mati kekurangan oksigen (2), maka pupuk mengalir dari lereng bukit (1)\"*. (Mustahil secara logika alam).\n3. Kesimpulan instan: (1) = Penyebab, (2) = Akibat.\n4. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Membalikkan logika kausal (*reverse causality*); kematian ikan tidak mungkin menjadi pemicu mengalirnya pupuk dari bukit ke danau.\n- **Pilihan C Salah:** Mengabaikan rantai proses limnologis (eutrofikasi) yang secara langsung menghubungkan limpasan nutrien pupuk dengan penipisan oksigen perairan.\n- **Pilihan D Salah:** Menyatakan keduanya sebagai dampak dari faktor lain, padahal limpasan pupuk (1) itu sendiri adalah faktor pemicu primer timbulnya hipoksia (2).\n- **Pilihan E Salah:** Menyangkal keterkaitan ekologis nyata yang sudah terbukti secara saintifik dalam literatur biologi lingkungan."
+    },
+    {
+      "example_id": "pu-01-03-ex5",
+      "variation_name": "Variasi 5: Deteksi Variabel Perancu Relasi Belanja Mewah dan Pertumbuhan Tabungan (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Laporan tahunan konsorsium perbankan di Kota Tirta mengungkap temuan statistika menarik: dalam kurun waktu tiga tahun terakhir, terdapat korelasi positif yang sangat kuat ($r = 0{,}89$) antara lonjakan volume transaksi belanja barang mewah bermerek impor (tas desainer, perhiasan, dan mobil sport) dengan pertumbuhan saldo rata-rata tabungan dana pensiun warga.\n\nSeorang kolumnis rubrik gaya hidup kemudian menulis artikel dengan simpulan:\n\n*\"Kebiasaan berbelanja barang mewah bermerek impor terbukti menjadi stimulus psikologis efektif yang mendorong masyarakat untuk lebih giat menabung dan meningkatkan saldo tabungan pensiun mereka demi menjaga kemapanan gaya hidup masa depan.\"*",
+      "question_markdown": "Manakah pernyataan di bawah ini yang paling tepat membongkar **kekeliruan penalaran kausalitas (*spurious correlation / confounding factor*)** pada simpulan kolumnis tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Sebagian merek barang mewah impor memberikan diskon musiman kepada pelanggan tetap pemegang kartu kredit bank lokal."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Kolumnis keliru menyimpulkan hubungan sebab-akibat langsung antara dua peristiwa, padahal keduanya merupakan akibat bersama dari melonjaknya pendapatan disposabel dan nilai apresiasi aset properti pada kelompok masyarakat kelas atas."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Tarif pajak pertambahan nilai (PPN) untuk barang mewah impor mengalami kenaikan bertahap selama tiga tahun terakhir."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Warga yang tidak membeli barang mewah impor tetap memiliki kesadaran untuk menyisihkan sebagian penghasilannya ke tabungan darurat."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Mayoritas transaksi belanja barang mewah di Kota Tirta dilakukan secara daring melalui lokapasar internasional terpercaya."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati apakah membeli tas desainer mahal dapat secara logis 'menyebabkan' saldo tabungan pensiun bertambah? Tentu tidak! Kedua fenomena ini melonjak bersamaan karena dipicu oleh satu variabel perancu ketiga yang mendasar: kelompok orang kaya mengalami lonjakan kekayaan/pendapatan besar, sehingga mereka bisa sekaligus belanja mewah dan menambah tabungan!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kekeliruan Logika (Cum Hoc Ergo Propter Hoc / Confounding Variable):**\n  - *Klaim Kolumnis:* Belanja barang mewah $\\implies$ menyebabkan lonjakan saldo tabungan pensiun.\n  - *Kecacatan Metodologis:* Menganggap korelasi tinggi ($r = 0{,}89$) sebagai bukti adanya relasi sebab-akibat langsung, padahal tidak ada mekanisme ekonomi rasional di mana menghabiskan uang untuk barang konsumtif mewah secara langsung menambah saldo simpanan pensiun.\n- **Identifikasi Variabel Perancu (*Common Cause*):**\n  - Faktor riil yang memicu kedua fenomena tersebut secara serentak adalah lonjakan pendapatan disposabel dan kenaikan nilai aset properti/investasi pada segmen warga kelas ekonomi atas. Karena kekayaannya bertambah drastis, kelompok ini leluasa membelanjakan miliaran rupiah untuk barang mewah *sekaligus* menempatkan surplus uangnya ke dalam tabungan dana pensiun.\n- Pilihan **B** secara presisi membongkar keberadaan variabel perancu ketiga (*confounding factor*) ini, membuktikan bahwa korelasi tersebut hanyalah korelasi semu (*spurious correlation*).\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Lacak Faktor Ketiga / Common Cause):**\n\n1. Pertanyaan Kritis: Mengapa belanja barang mewah dan saldo tabungan naik bersamaan?\n2. Logika Realistis: Orang yang sama-sama belanja mewah dan punya tabungan pensiun melimpah adalah kelompok orang berpenghasilan/beraset sangat tinggi!\n3. Pilihan **B** secara eksplisit menunjuk lonjakan pendapatan disposabel dan aset kelas atas sebagai akar penyebab bersama kedua hal tersebut.\n4. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyebutkan diskon musiman barang mewah adalah detail promosi dagang yang tidak menyentuh akar kekeliruan korelasi vs kausalitas.\n- **Pilihan C Salah:** Kenaikan tarif pajak barang mewah adalah isu regulasi fiskal yang tidak membedah hubungan kausal belanja dan tabungan pensiun.\n- **Pilihan D Salah:** Menjelaskan kebiasaan menabung warga non-pembeli barang mewah, yang tidak menjelaskan mengapa kolumnis keliru menyimpulkan korelasi pada kelompok pembeli.\n- **Pilihan E Salah:** Kanal transaksi daring vs luring merupakan variasi saluran pembelian yang tidak memengaruhi struktur penalaran kausal."
+    },
+    {
+      "example_id": "pu-01-03-ex6",
+      "variation_name": "Variasi 6: Deteksi Kausalitas Terbalik Durasi Duduk Statis dan Tingkat Kecemasan (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah studi epidemiologi kesehatan kerja yang melibatkan 4.000 pekerja kantoran di kawasan perkantoran metropolitan mempublikasikan simpulan:\n\n*\"Kebiasaan duduk diam secara statis di depan meja kerja selama lebih dari 9 jam sehari merupakan faktor penyebab utama yang memicu timbulnya gangguan kecemasan kronis (*generalized anxiety disorder*) dan perasaan terisolasi pada pekerja dewasa.\"*\n\nSimpulan tersebut ditarik karena data survei menunjukkan bahwa pekerja dengan durasi duduk terlama secara konsisten mencatatkan skor tingkat kecemasan klinis yang paling tinggi.\n\nNamun demikian, tim psikiater neurosains menyanggah kesimpulan tersebut dan menegaskan bahwa para peneliti telah terperosok ke dalam kekeliruan **kausalitas terbalik (*reverse causation fallacy*)**.",
+      "question_markdown": "Manakah temuan klinis di bawah ini yang **paling kuat membuktikan** terjadinya kausalitas terbalik sebagaimana disanggahkan oleh tim psikiater tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pekerja yang duduk lebih dari 9 jam sehari memiliki risiko 25% lebih tinggi terkena penyakit nyeri punggung bawah kronis."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Individu yang mulai mengalami gejala awal gangguan kecemasan cenderung secara psikologis menarik diri dari interaksi sosial dan secara tidak sadar memilih berdiam lama di meja kerja sebagai mekanisme pertahanan menghindar (*avoidance coping*)."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Perusahaan yang menyediakan fasilitas meja kerja berdiri (*standing desk*) berhasil meningkatkan kepuasan fasilitas kantor para karyawannya."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Tingkat kecemasan pekerja kantoran dapat diredakan dengan mengonsumsi suplemen vitamin D dan rutin melakukan meditasi pernapasan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Sebagian pekerja yang duduk kurang dari 5 jam sehari mengaku tetap merasakan stres akibat beban tenggat waktu proyek yang menumpuk."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati definisi *kausalitas terbalik (reverse causation)*: peneliti mengklaim [Duduk lama $\\implies$ menyebabkan kecemasan]. Lawan atau pembalikan dari klaim tersebut adalah [Kecemasan $\\implies$ menyebabkan orang duduk berdiam lama]. Carilah pilihan jawaban yang membuktikan bahwa rasa cemaslah yang mendorong orang untuk berdiam diri di meja kerja!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Klaim Peneliti:**\n  - Hipotesis Awal: Perilaku duduk statis $> 9$ jam (A) $\\implies$ menyebabkan timbulnya gangguan kecemasan klinis (B).\n- **Analisis Kausalitas Terbalik (*Reverse Causality*):**\n  - Terjadi ketika arah panah sebab-akibat sesungguhnya terbalik: justru B yang menjadi penyebab timbulnya A (B $\\implies$ A), atau terdapat siklus umpan balik di mana pemicu awal berasal dari kondisi psikologis itu sendiri.\n- **Evaluasi Opsi B:**\n  - Pilihan **B** secara gamblang membuktikan mekanisme psikologis pembalikan arah kausal: Karyawan yang mengalami kecemasan mengalami dorongan menarik diri dari lingkungan sosial (*social withdrawal*). Untuk menghindari interaksi yang memicu ketegangan, mereka secara defensif memilih berdiam diri terpaku di balik meja kerja (*avoidance coping*). Dengan demikian, durasi duduk yang panjang sesungguhnya merupakan **akibat/gejala** dari kecemasan yang sudah ada, bukan pemicu utamanya.\n- Fakta ini secara mutlak memvalidasi sanggahan tim psikiater neurosains mengenai *reverse causation*.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Balikkan Arah Panah Sebab-Akibat):**\n\n1. Teori awal: Duduk lama $\\rightarrow$ Jadi Cemas.\n2. Kausalitas terbalik: Cemas $\\rightarrow$ Bikin orang duduk berdiam diri lama.\n3. Cari opsi yang menyatakan bahwa rasa cemas membuat orang menarik diri dan duduk diam di meja: Opsi **B** menyatakan hal ini secara persis!\n4. Opsi A (nyeri punggung), C (standing desk), D (vitamin D/meditasi), E (stres tenggat waktu) tidak membalikkan alur duduk vs kecemasan.\n5. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Membahas dampak muskuloskeletal (nyeri punggung), bukan hubungan psikologis dua arah antara duduk dan kecemasan.\n- **Pilihan C Salah:** Menguraikan kepuasan fasilitas meja berdiri, tanpa membuktikan arah kausalitas biologis antara duduk dan kecemasan.\n- **Pilihan D Salah:** Menjelaskan terapi pereda cemas (vitamin D dan meditasi) yang tidak membantah urutan sebab-akibat studi observasional.\n- **Pilihan E Salah:** Menunjukkan bahwa stres bisa terjadi tanpa duduk lama, namun tidak membuktikan bahwa kecemasanlah yang memicu durasi duduk panjang (*reverse causation*)."
+    },
+    {
+      "example_id": "pu-01-03-ex7",
+      "variation_name": "Variasi 7: Evaluasi Klaim Kausalitas Adopsi Asisten AI Coding dan Kualitas Perangkat Lunak (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Direktur Teknologi (*Chief Technology Officer* / CTO) sebuah perusahaan perangkat lunak global mengumumkan pencapaian efisiensi teknis kepada para pemegang saham:\n\n*\"Kewajiban penggunaan perangkat lunak asisten coding berbasis kecerdasan buatan (*AI coding assistant*) bagi seluruh 500 pengembang perangkat lunak kami sejak awal kuartal ketiga terbukti menjadi faktor penyebab tunggal yang menurunkan tingkat cacat kode (*software bug rate*) sebesar 40% pada seluruh aplikasi yang kami rilis ke server produksi.\"*\n\nCTO mendasarkan klaimnya pada grafik data pelaporan galat sistem yang merosot tajam sejak bulan pertama implementasi asisten AI tersebut.",
+      "question_markdown": "Manakah temuan audit internal berikut yang, jika benar, **paling memperlemah (meruntuhkan)** klaim kausalitas CTO tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Biaya langganan lisensi korporat untuk perangkat asisten AI tersebut mengalami kenaikan sebesar 15% pada akhir kuartal."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Tepat pada awal kuartal ketiga, perusahaan merekrut 30 insinyur penguji mutu (*Quality Assurance*) senior serta memberlakukan sistem integrasi otomatis (*automated CI/CD pipeline*) baru yang mewajibkan peninjauan kode ganda dan secara otomatis memblokir perilisan modul yang tidak lolos uji ketahanan."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sebagian pengembang perangkat lunak junior menyatakan bahwa mereka merasa lebih percaya diri dalam menulis sintaksis bahasa pemrograman yang baru dipelajari."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Waktu respons server aplikasi perusahaan tercatat stabil dengan tingkat ketersediaan (*uptime*) mencapai 99,9% sepanjang tahun."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Perusahaan kompetitor di industri teknologi informasi menggunakan perangkat asisten coding buatan pengembang independen lain."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk meruntuhkan klaim bahwa 'Asisten AI adalah penyebab tunggal turunnya bug 40%', carilah fakta baru yang mengungkap adanya intervensi atau perubahan besar lain yang terjadi serentak yang sesungguhnya jauh lebih bertanggung jawab memangkas bug (misalnya pengujian mutu otomatis yang super ketat dan perekrutan tim QA baru)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Kausalitas:** CTO mengklaim hubungan kausal tunggal: Kewajiban pemakaian asisten AI (Penyebab) $\\implies$ penurunan bug sebesar 40% di server produksi (Akibat).\n- **Kaidah Pelemahan Kausalitas (Weaking Causal Claims):** Klaim kausalitas suatu variabel dapat diruntuhkan apabila terbukti adanya **intervensi alternatif yang terjadi secara bersamaan (*confounding intervention / alternative explanation*)** yang memiliki mekanisme lebih kuat dan langsung dalam menghasilkan akibat tersebut.\n- **Evaluasi Opsi B:** Pilihan **B** membongkar bahwa tepat pada saat yang sama (awal kuartal ketiga), perusahaan merekrut 30 insinyur QA senior dan menerapkan pipeline CI/CD otomatis baru yang memblokir kode cacat sebelum masuk produksi. Pengetatan gerbang pengujian mutu otomatis dan pemeriksaan ganda inilah yang secara riil memangkas perembesan bug ke server produksi, bukan kecerdasan asisten AI. Temuan audit ini menggugurkan klaim CTO bahwa asisten AI adalah faktor penyebab tunggal.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Penjelasan Alternatif yang Nyata & Dominan):**\n\n1. Klaim: AI Coding Assistant = Penyebab tunggal bug turun 40%.\n2. Cari intervensi lain di waktu yang sama: Opsi **B** menghadirkan 30 QA senior baru + sistem uji otomatis CI/CD yang menyaring bug sebelum rilis produksi.\n3. Keberadaan sistem penyaring mutu ketat ini langsung mematahkan klaim sepihak CTO.\n4. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Biaya langganan lisensi adalah isu beban keuangan perusahaan, bukan faktor teknis yang memvalidasi atau membatalkan penurunan galat kode.\n- **Pilihan C Salah:** Tingkat kepercayaan diri pengembang junior adalah persepsi subjektif yang tidak membantah penurunan bug objektif.\n- **Pilihan D Salah:** Uptime server adalah indikator kestabilan infrastruktur komputasi awan, tidak menjelaskan asal-usul penurunan cacat logika kode perangkat lunak.\n- **Pilihan E Salah:** Alat yang digunakan kompetitor berada di luar lingkup internal perusahaan yang diaudit (*out of scope*)."
+    },
+    {
+      "example_id": "pu-01-03-ex8",
+      "variation_name": "Variasi 8: Penentuan Relasi Kausalitas Kebijakan Penggusuran Pasar Tradisional dan Penurunan Omzet UMKM (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua kondisi sosio-ekonomi perkotaan berikut:\n\n(1) Angka kunjungan pembeli ke kawasan sentra kuliner malam dan perajin cenderamata lokal di pusat kota merosot drastis hingga 65% dalam sebulan terakhir.\n(2) Ratusan sopir angkutan kota (angkot) dan juru parkir di sekeliling koridor pusat kota mengalami penurunan penghasilan harian lebih dari separuh.",
+      "question_markdown": "Bagaimanakah hubungan kausalitas yang **paling tepat** antara kedua pernyataan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pernyataan (2) adalah penyebab dan pernyataan (1) adalah akibat."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari satu faktor penyebab bersama yang sama."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari dua penyebab berbeda yang saling tidak berhubungan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pernyataan (1) adalah akibat dan pernyataan (2) adalah kondisi pembanding tanpa kaitan logis."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati apakah warung kuliner sepi yang menyebabkan penghasilan sopir angkot anjlok, ataukah sopir angkot sepi yang menyebabkan orang tidak makan di sentra kuliner? Keduanya bukan saling menyebabkan langsung, melainkan dua dampak kerugian yang serempak dialami akibat satu masalah besar bersama (misalnya: penutupan total akses jalan protokol atau proyek galian jalan yang memblokir pusat kota)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Hubungan Dua Pernyataan:**\n  - *Pernyataan (1):* Omzet dan pengunjung sentra kuliner & perajin cenderamata pusat kota merosot 65% (Dampak Sektor Perdagangan/Jasa).\n  - *Pernyataan (2):* Penghasilan sopir angkot dan juru parkir di koridor yang sama anjlok $> 50\\%$ (Dampak Sektor Transportasi/Logistik Lokal).\n- **Uji Kausalitas Langsung vs Penyebab Bersama (*Common Cause*):**\n  - Apakah warung sepi secara langsung menyebabkan sopir angkot kehilangan penumpang rute umum? Tidak sepenuhnya, karena angkot melayani rute mobilitas warga umum ke berbagai penjuru kota.\n  - Apakah juru parkir berpenghasilan turun yang menyebabkan warga mogok jajan kuliner? Jelas tidak masuk akal.\n  - Kedua kondisi tersebut merupakan dua wujud dampak negatif simultan yang lahir dari **satu faktor akar penyebab yang sama (*single underlying cause*)**, seperti penutupan jalan utama pusat kota akibat proyek galian pipa, pembatasan akses lalu lintas, atau relokasi jalur transportasi massal yang memutus arus mobilitas warga ke kawasan tersebut.\n- Pilihan **C** secara tepat mengidentifikasi bahwa pernyataan (1) dan (2) adalah akibat dari satu faktor penyebab bersama.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Deteksi Gejala Bersama / Dual Effects):**\n\n1. Kondisi (1): Pedagang kuliner & perajin sepi pelanggan (dampak negatif A).\n2. Kondisi (2): Sopir angkot & juru parkir anjlok pendapatan (dampak negatif B).\n3. Keduanya berada di lokasi yang sama (pusat kota) dan sama-sama merugi akibat terputusnya akses mobilitas pengunjung.\n4. Rumus cepat: Jika dua pernyataan sama-sama gejala dampak dari krisis kawasan yang sama $\\implies$ Akibat dari satu penyebab bersama (Opsi **C**).\n5. Jawaban: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyamakan penurunan pembeli toko sebagai pemicu tunggal hilangnya penumpang angkutan kota yang memiliki trayek penumpang umum lebih luas.\n- **Pilihan B Salah:** Membalikkan logika dengan mengklaim pendapatan juru parkir yang turun menjadi penyebab pembeli tidak mengunjungi sentra kuliner.\n- **Pilihan D Salah:** Mengabaikan kesamaan latar ruang dan waktu kawasan pusat kota yang jelas mengindikasikan adanya krisis aksesibilitas bersama yang menimpa kedua profesi.\n- **Pilihan E Salah:** Menganggap kedua pernyataan tidak berkaitan, padahal keduanya terikat secara fungsional dalam ekosistem perputaran ekonomi kawasan perkotaan."
+    },
+    {
+      "example_id": "pu-01-03-ex9",
+      "variation_name": "Variasi 9: Evaluasi Validitas Klaim Kausalitas Akustik Ekowisata dan Pola Terusirnya Mamalia Laut (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah penelitian jangka panjang di kawasan konservasi perairan Teluk Triton mencatat penurunan populasi lumba-lumba hidung botol (*Tursiops aduncus*) sebesar 45% di laguna inti selama tiga tahun terakhir. Pada periode yang sama, frekuensi lalu lintas perahu cepat (*speedboat*) bermesin tempel untuk ekowisata pengamatan lumba-lumba melonjak drastis hingga lima kali lipat. Peneliti ekologi kelautan menyimpulkan bahwa polusi kebisingan akustik frekuensi rendah dari mesin perahu cepat merupakan faktor penyebab utama yang mengacaukan kemampuan ekolokasi dan terusirnya kelompok lumba-lumba dari laguna inti.\n\nNamun, asosiasi operator ekowisata membantah klaim tersebut dan berargumen bahwa penurunan populasi lumba-lumba murni dipicu oleh berkurangnya kelimpahan ikan pelagis kecil (mangsa utama lumba-lumba) akibat maraknya penangkapan ikan komersial berizin di perairan luar teluk.",
+      "question_markdown": "Manakah temuan berikut yang **paling kuat membuktikan** kebenaran kesimpulan peneliti bahwa aktivitas mesin perahu cepat ekowisatalah yang menjadi penyebab utama terusirnya lumba-lumba?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Selama dua bulan masa jeda total (*moratorium*) operasional perahu ekowisata, kawanan lumba-lumba kembali memadati laguna inti meskipun kapal penangkap ikan komersial di luar teluk tetap beroperasi pada kuota tangkapan normal."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Perahu nelayan tradisional berbahan kayu tanpa mesin tempel juga sering berpapasan dengan kawanan lumba-lumba di laguna inti teluk tanpa menimbulkan kepanikan gerak."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Tingkat kebisingan akustik bawah air di perairan luar teluk tercatat lebih rendah dibandingkan di dalam laguna inti akibat kedalaman palung laut terbuka."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Populasi burung pemakan ikan di sekitar tebing teluk tidak mengalami penurunan jumlah populasi yang signifikan sepanjang tiga tahun terakhir."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Operator ekowisata bersedia membatasi batas kecepatan laju perahu cepat menjadi maksimal 10 knot saat mendekati kawanan lumba-lumba."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk membuktikan sebuah hipotesis kausalitas (faktor A: mesin perahu vs faktor B: penangkapan ikan mangsa), carilah bukti metode kontrol/intervensi: ketika faktor A dihilangkan (moratorium perahu) sementara faktor B tetap ada, apakah akibatnya (lumba-lumba pergi) ikut lenyap (lumba-lumba kembali)? Jika ya, itu membuktikan faktor A adalah penyebab sejati!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Pertentangan Hipotesis Kausalitas:**\n  - *Hipotesis Peneliti (Klaim Kausalitas Utama):* Polusi akustik mesin *speedboat* ekowisata ($A$) $\\implies$ lumba-lumba terusir ($C$).\n  - *Hipotesis Tandingan Operator Wisata (Variabel Penjelas Alternatif):* Penangkapan ikan komersial mengurangi pasokan pakan mangsa ($B$) $\\implies$ lumba-lumba terusir ($C$).\n- **Kaidah Validasi Ilmiah Metode Perbedaan (Mill's Method of Difference):**\n  - Untuk membuktikan secara mutlak bahwa $A$ adalah penyebab sejati dari fenomena terusirnya satwa dan menepis variabel tandingan $B$, diperlukan kondisi di mana intervensi dilakukan terhadap $A$ tanpa mengubah kondisi $B$.\n  - Pilihan **A** menyajikan intervensi ilmiah sempurna: Ketika operasional *speedboat* dihentikan total (moratorium selama dua bulan, $A = 0$), kawanan lumba-lumba langsung kembali memadati laguna inti ($C$ lenyap/berbalik), padahal faktor penangkapan ikan mangsa tetap beroperasi penuh ($B$ tetap aktif). Hal ini membuktikan bahwa keberadaan lumba-lumba dikendalikan secara langsung oleh gangguan akustik mesin perahu, bukan oleh kelangkaan pakan ikan komersial.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Metode Intervensi Variabel / Rule of Isolation):**\n\n1. Cari opsi yang mengisolasi variabel pemicu: Ketika faktor yang dicurigai (perahu mesin) ditarik/ditiadakan sementara faktor saingan (kapal nelayan) tetap ada, efek buruk langsung hilang (lumba-lumba kembali).\n2. Opsi A secara langsung membuktikan relasi sebab-akibat murni melalui pembuktian lapangan terisolasi.\n3. Jawaban: **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Sekadar memaparkan perilaku lumba-lumba terhadap perahu kayu tradisional, namun tidak mampu membuktikan secara komparatif bahwa kebisingan mesin *speedboat*-lah pemicu terusirnya lumba-lumba.\n- **Pilihan C Salah:** Hanya memberikan data komparasi intensitas desibel antara dua lokasi tanpa menghubungkan respon perilaku gerak satwa terhadap sumber suara.\n- **Pilihan D Salah:** Menyinggung burung pemakan ikan yang memiliki relung ekologi dan sensitivitas sensori yang berbeda dari mamalia laut berekolokasi sonar.\n- **Pilihan E Salah:** Berupa usulan solusi atau kompromi kebijakan operasional masa depan, bukan data fakta empiris yang membuktikan validitas hubungan sebab-akibat di masa lalu."
+    },
+    {
+      "example_id": "pu-01-03-ex10",
+      "variation_name": "Variasi 10: Deteksi Kausalitas Terbalik Evaluasi Kebijakan Stimulus Festival UMKM Daerah (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Laporan audit dinas perindustrian dan perdagangan provinsi mencatat fenomena ganjil di 20 kabupaten/kota: lima kabupaten yang paling sering menyelenggarakan festival bazar promosi produk UMKM (di atas 12 kali per tahun) justru mencatatkan rata-rata omzet bulanan pelaku UMKM terendah, yakni hanya sebesar Rp14 juta per bulan. Sebaliknya, lima kabupaten yang tidak pernah atau sangat jarang mengadakan festival UMKM (kurang dari 2 kali per tahun) justru mencatatkan rata-rata omzet UMKM tertinggi di angka Rp48 juta per bulan.\n\nBerdasarkan data korelasi tersebut, seorang konsultan kebijakan menyimpulkan bahwa kebiasaan menggelar festival bazar UMKM menjadi penyebab utama anjloknya omzet perajin, karena menyita waktu produksi dan membebani pelaku usaha mikro dengan biaya sewa stan pameran.",
+      "question_markdown": "Manakah pernyataan berikut yang **paling tepat menunjukkan** bahwa simpulan konsultan tersebut terjebak dalam kesesatan berpikir **kausalitas terbalik (*reverse causation*)**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Biaya sewa stan festival bazar UMKM di kabupaten-kabupaten kecil disubsidi penuh oleh anggaran pemerintah daerah sehingga tidak membebani perajin."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Dinas perdagangan sengaja mengalokasikan agenda festival bazar dengan intensitas jauh lebih sering ke kabupaten-kabupaten yang omzet UMKM-nya memang sudah terpuruk sejak awal sebagai upaya stimulus darurat."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Sebagian besar produk UMKM di kabupaten beromzet tinggi mengandalkan penjualan daring melalui media sosial tanpa memerlukan lapak bazar fisik."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Kabupaten yang mencatatkan omzet tinggi didominasi oleh pelaku usaha sektor kuliner yang perputaran modalnya jauh lebih cepat dibanding sektor kriya."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Banyak pelaku UMKM di kabupaten beromzet rendah yang mengeluhkan minimnya fasilitas tenda dan sarana listrik pameran selama bazar berlangsung."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Kesesatan kausalitas terbalik (*reverse causation*) terjadi ketika peristiwa B yang sebenarnya menjadi pemicu timbulnya peristiwa A, tetapi peneliti keliru menganggap peristiwa A yang menyebabkan timbulnya peristiwa B. Cermati arah kebijakan: apakah festival yang bikin omzet anjlok, ataukah dinas baru mengadakan banyak festival justru KARENA omzet daerah itu sudah sangat anjlok?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Logika Peneliti:**\n  - Peneliti mengamati korelasi: Frekuensi festival tinggi ($A$) berbarengan dengan rata-rata omzet rendah ($B$).\n  - Peneliti menarik arah kausal: $A \\implies B$ (Festival bazar menyebabkan omzet rendah).\n- **Analisis Kausalitas Terbalik (*Reverse Causation Fallacy*):**\n  - Kesesatan kausalitas terbalik terjadi apabila arah hubungan sebab-akibat sesungguhnya adalah $B \\implies A$, yaitu kondisi riil yang melatarbelakangi lahirnya kebijakan tersebut.\n  - Pilihan **B** membuktikan secara nyata arah $B \\implies A$: Rendahnya omzet perajin di kabupaten tertinggal ($B$) justru merupakan *alasan penyebab utama* mengapa pemerintah daerah memprioritaskan dan mengucurkan program intervensi festival promosi lebih sering ($A$) sebagai stimulus ekonomi darurat.\n  - Dengan demikian, menyimpulkan festival bazar sebagai pemicu kemerosotan omzet adalah kesalahan telak membalikkan akibat menjadi sebab.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Deteksi Motif Kebijakan Reaktif):**\n\n1. Peneliti menuduh: \"Bazar sering diadakan $\\implies$ Omzet UMKM jadi rendah.\"\n2. Kausalitas terbalik: Tanya logika sebaliknya: \"Apakah justru karena omzetnya rendah, dinas terpaksa sering mengadakan bazar bantuan?\"\n3. Opsi B secara eksplisit menjelaskan bahwa omzet rendah mendahului dan menjadi alasan diselenggarakannya bazar massal.\n4. Jawaban: **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Hanya membantah asumsi biaya sewa stan, tetapi tidak membedah arah logis kausalitas terbalik dari kebijakan stimulus dinas.\n- **Pilihan C Salah:** Menjelaskan strategi pemasaran digital di daerah beromzet tinggi, namun tidak menepis kesesatan arah kausal antara frekuensi festival dan performa omzet.\n- **Pilihan D Salah:** Menunjukkan variasi komposisi komoditas usaha antarwilayah tanpa menyentuh kekeliruan arah kausalitas kebijakan pemerintah.\n- **Pilihan E Salah:** Sekadar keluhan teknis sarana prasarana bazar yang tidak relevan dengan struktur penarikan simpulan sebab-akibat formal."
+    },
+    {
+      "example_id": "pu-01-03-ex11",
+      "variation_name": "Variasi 11: Deteksi Variabel Perancu Relasi Konsumsi Suplemen Vitamin D dan Gejala Depresi Lansia (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah studi epidemiologi longitudinal terhadap 1.200 lansia (usia 65-80 tahun) di lima kota metropolitan mencatat bahwa kelompok lansia yang rutin mengonsumsi suplemen vitamin D dosis tinggi memiliki tingkat kejadian depresi masa tua (*geriatric depression*) 60% lebih rendah dibanding kelompok yang tidak mengonsumsi suplemen.\n\nBerdasarkan korelasi kuat tersebut, tim peneliti mengumumkan kesimpulan bahwa asupan suplemen vitamin D secara farmakologis berperan langsung sebagai antidepresan alami yang menjaga stabilitas transmisi serotonin dan dopamin di otak lansia.",
+      "question_markdown": "Manakah fakta berikut yang menunjukkan bahwa korelasi di atas dipengaruhi oleh **faktor perancu (*confounding factor*)**, sehingga klaim kausalitas peneliti diragukan?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Sebagian kecil lansia dalam kelompok kontrol mengonsumsi minuman herbal tradisional yang tidak terdaftar di badan pengawas obat."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Suplemen vitamin D dalam bentuk cair terserap ke pembuluh darah lebih cepat dibanding suplemen tablet kunyah."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Kekurangan vitamin D pada lansia juga dapat meningkatkan risiko penurunan kepadatan massa tulang dan osteoporosis."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Lansia yang rutin membeli suplemen vitamin D umumnya berasal dari keluarga berpendapatan mapan dan aktif mengikuti komunitas olahraga jalan pagi di taman terbuka."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Efek suplemen vitamin D pada tikus percobaan laboratorium baru terlihat nyata setelah pemberian dosis teratur selama enam bulan."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Variabel perancu (*confounding variable*) adalah faktor ketiga tersembunyi yang berhubungan dengan kedua variabel utama (konsumsi suplemen dan kesehatan mental). Jika kelompok peminum suplemen ternyata orang kaya yang suka berolahraga santai dan bersosialisasi di taman, mungkinkah kebahagiaan dan kesehatan mental mereka berasal dari uang, olahraga, dan interaksi sosial itu, bukan murni dari kapsul vitamin D?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Kausalitas Penelitian:**\n  - Peneliti mengklaim: Konsumsi suplemen vitamin D ($X$) secara langsung menyebabkan rendahnya risiko depresi lansia ($Y$).\n- **Konsep Variabel Perancu (*Confounding Variable*):**\n  - Variabel perancu ($Z$) adalah faktor luar yang berasosiasi dengan variabel independen ($X$) sekaligus memengaruhi variabel dependen ($Y$). Adanya $Z$ menciptakan korelasi semu (*spurious correlation*) antara $X$ dan $Y$.\n  - Pilihan **D** memperkenalkan faktor perancu nyata: Lansia yang mengonsumsi suplemen ternyata berstatus ekonomi mapan, rajin terpapar sinar matahari pagi, rutin berolahraga jalan santai, dan aktif bersosialisasi dalam komunitas ($Z$).\n  - Olahraga, interaksi sosial, kestabilan finansial, dan sinar matahari pagi adalah faktor pelindung neurobiologis yang sangat kuat dalam mencegah depresi lansia. Akibatnya, rendahnya tingkat depresi tidak bisa diklaim murni berkat kapsul vitamin D semata.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Cari Faktor Gaya Hidup / Status Ekonomi):**\n\n1. Studi mengklaim: Minum vitamin D $\\implies$ Bebas depresi.\n2. Jebakan korelasi: Siapa yang biasanya beli suplemen mahal secara mandiri? Orang berada yang peduli kesehatan, rajin olahraga pagi, dan punya jejaring sosial aktif.\n3. Opsi D menyajikan faktor ketiga (keuangan mapan + jalan pagi + interaksi sosial) yang secara ilmiah jauh lebih rasional menjelaskan kestabilan mental lansia.\n4. Jawaban: **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengulas konsumsi herbal minoritas pada kelompok kontrol yang tidak menjelaskan keunggulan sistematis kelompok peminum suplemen.\n- **Pilihan B Salah:** Hanya membahas komparasi farmakokinetik antara bentuk sediaan cair dan padat tanpa menyentuh validitas kausalitas terhadap depresi.\n- **Pilihan C Salah:** Menjelaskan khasiat vitamin D pada kesehatan tulang yang sama sekali berada di luar domain kausalitas gangguan suasana hati/depresi.\n- **Pilihan E Salah:** Menyajikan data hewan uji laboratorium yang tidak membantah dinamika sosio-demografis pada subjek lansia manusia."
+    },
+    {
+      "example_id": "pu-01-03-ex12",
+      "variation_name": "Variasi 12: Penentuan Relasi Kausal Kerusakan Pengelasan Robotik dan Kegagalan Motor Perakitan (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua peristiwa yang dicatat oleh tim pemeliharaan rekayasa (*engineering maintenance*) pada lini perakitan pabrik otomotif modern berikut:\n\n(1) Tingkat kecacatan mikro (*micro-defect*) pada hasil pengelasan robotik rangka sasis mobil melonjak hingga 28% selama tiga bulan terakhir.\n(2) Laporan perbaikan darurat (*unplanned downtime*) akibat kelebihan beban panas (*overheat*) pada motor servo lengan robotik di lini perakitan tersebut melonjak dua kali lipat dibanding periode sebelumnya.",
+      "question_markdown": "Bagaimanakah hubungan kausalitas yang **paling tepat** antara kedua peristiwa tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Peristiwa (1) adalah penyebab langsung dan peristiwa (2) adalah akibat logisnya."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Peristiwa (2) adalah penyebab langsung dan peristiwa (1) adalah akibat logisnya."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Peristiwa (1) dan (2) adalah dua akibat yang berasal dari satu faktor penyebab bersama."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Peristiwa (1) dan (2) adalah dua akibat dari dua faktor penyebab berbeda yang tidak saling berkaitan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Peristiwa (1) adalah faktor pemicu utama yang tidak berhubungan dengan sistem motor mekanik pada peristiwa (2)."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pikirkan secara teknis: Apakah hasil las mobil yang cacat dapat membuat motor servo robot mengalami panas berlebih (*overheat*)? Tentu tidak. Sebaliknya, saat motor robot *overheat* dan mati, robot berhenti total, bukan menyolder secara asal-asalan. Bukankah fluktuasi pasokan arus listrik pabrik yang tidak stabil (atau kontaminasi pelumas konduktif) dapat sekaligus membuat panas motor melonjak DAN membuat arus pengelasan tidak stabil sehingga hasil lasan cacat?",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Relasi Dua Peristiwa:**\n  - *Peristiwa (1):* Hasil pengelasan rangka sasis mobil cacat mikro melonjak 28% (anomali kualitas keluaran elektroda las).\n  - *Peristiwa (2):* Motor servo lengan robotik mengalami panas berlebih (*overheating*) dan sering mogok (anomali subsistem penggerak mekanis).\n- **Uji Kausalitas Langsung vs Penyebab Bersama (*Common Cause*):**\n  - Apakah hasil las yang retak mikro dapat merusak kumparan motor robot? Tidak, hasil lasan adalah produk pasif di atas konveyor.\n  - Apakah motor robot yang mogok/mati mendadak menyebabkan pengelasan berlanjut dengan cacat? Tidak, ketika servo mati, sistem pengaman (*interlock*) mematikan seluruh operasi.\n  - Kedua fenomena tersebut merupakan dua dampak simultan dari **satu faktor akar penyebab yang sama (*common cause*)**, seperti fluktuasi ketidakstabilan tegangan listrik operasional pabrik atau kontaminasi kotoran pada jalur transmisi data dan daya robotik, yang secara bersamaan mengganggu stabilitas busur api pengelasan elektroda sekaligus membebani kerja kumparan motor servo.\n- Oleh karena itu, hubungan yang paling tepat adalah peristiwa (1) dan (2) adalah akibat dari satu faktor penyebab bersama.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Dual Symptoms Mesin Industri):**\n\n1. Gejala 1: Arus las cacat (gangguan sistem kelistrikan/daya las).\n2. Gejala 2: Motor robot overheat (gangguan beban daya/tegangan servo).\n3. Lasan cacat tidak bisa merusak dinamo motor; dinamo rusak membuat robot mati total (bukan bikin lasan cacat berjalan).\n4. Dua kerusakan serempak pada sistem kelistrikan mesin yang sama $\\implies$ Akibat dari satu pemicu bersama (gangguan tegangan/arus catu daya).\n5. Jawaban: **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menganggap produk fisik sasis yang cacat secara mustahil merusak sirkuit internal motor servo lengan robotik.\n- **Pilihan B Salah:** Mengabaikan sistem keselamatan otomasi di mana kegagalan motor servo akan mematikan robot alih-alih terus membiarkannya mengelas dengan cacat.\n- **Pilihan D Salah:** Menganggap kedua masalah terisolasi tanpa korelasi teknis, mengabaikan fakta bahwa keduanya berbagi sistem catu daya dan kendali yang terpadu.\n- **Pilihan E Salah:** Menolak adanya kaitan sistemik pabrik, padahal integrasi robotika industri selalu memiliki interdependensi daya yang kuat."
+    },
+    {
+      "example_id": "pu-01-03-ex13",
+      "variation_name": "Variasi 13: Evaluasi Validitas Klaim Kausalitas Komersialisasi Wisata terhadap Desakralisasi Seni Tradisional (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah laporan kebudayaan daerah menyoroti kemunduran penguasaan makna filosofis dan tata ritual Tari Topeng Sakral di Desa Kalimaya. Pemerhati seni menuding bahwa komersialisasi pementasan tari sebagai hiburan pesanan tamu di hotel-hotel resor pantai menjadi faktor penyebab utama runtuhnya kesakralan tarian tersebut, karena generasi penari muda kini lebih memprioritaskan imbalan uang dan memangkas ritual puasa penyucian diri sebelum menari.\n\nNamun, perwakilan paguyuban seniman setempat menolak klaim kausalitas tersebut dan berpendapat bahwa kemunduran nilai sakral tradisi dipicu oleh pergeseran nilai zaman yang dialami seluruh generasi muda secara umum, bukan karena keterlibatan tarian dalam pentas hotel komersial.",
+      "question_markdown": "Manakah temuan empiris berikut yang **paling kuat melemahkan** tudingan bahwa pementasan komersial di hotel resor merupakan penyebab utama runtuhnya kesakralan seni tari tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pihak hotel resor bersedia menaikkan honorium pementasan dan membiayai pengadaan busana tradisional penari secara berkala."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Beberapa penari senior mengaku merasa bangga ketika kesenian daerah mereka diapresiasi oleh wisatawan mancanegara berpendidikan tinggi."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Upacara penyucian topeng sakral di balai desa tetap dilaksanakan setahun sekali setiap malam pergantian tahun saka."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Jumlah wisatawan yang menyaksikan pementasan tari topeng di hotel resor terus meningkat rata-rata 15% setiap musim liburan."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Di empat desa adat tetangga yang secara ketat melarang tarian dipentaskan di luar ritual sakral pura dan menolak pariwisata komersial, minat generasi muda terhadap pemaknaan ritual dan tradisi puasa tarian tersebut juga merosot dalam laju persentase yang sama."
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk mematahkan klaim bahwa \"Pentas di hotel komersial = penyebab hilangnya nilai sakral tarian\", cari kelompok pembanding (*control group*): Jika di desa-desa yang TIDAK PERNAH pentas di hotel komersial ternyata nilai sakral tariannya JUGA TETAP HILANG dengan laju yang sama, itu membuktikan bahwa pentas di hotel bukanlah penyebab utamanya!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Argumen Kausalitas yang Diuji:**\n  - Tudingan pemerhati: Pementasan komersial di hotel ($K$) adalah penyebab utama desakralisasi seni dan hilangnya ritual tari ($D$). Hubungan: $K \\implies D$.\n- **Kaidah Pelemahan Kausalitas via Kelompok Kontrol (*Absence of Cause with Presence of Effect*):**\n  - Jika suatu faktor dituduh sebagai penyebab utama suatu fenomena, maka bila faktor tersebut ditiadakan sama sekali, fenomena tersebut semestinya tidak terjadi atau minimal terjadi dalam derajat yang jauh lebih rendah.\n  - Pilihan **E** memperlihatkan kondisi kelompok kontrol alami: Di desa adat tetangga yang **tidak memiliki** pementasan komersial sama sekali (kondisi tanpa $K$), fenomena kemunduran ritual dan desakralisasi ($D$) **tetap terjadi** dengan laju kemerosotan yang identik.\n  - Hal ini secara telak membuktikan bahwa kemunduran nilai sakral bukan diakibatkan oleh pementasan hotel komersial, melainkan didorong oleh faktor makro sosiologis lain yang dialami lintas desa (seperti penetrasi modernitas, migrasi pendidikan/pekerjaan, dan pergeseran gaya hidup generasi muda).\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Kelompok Kontrol / No Cause, Same Effect):**\n\n1. Klaim: Faktor A (Pentas hotel komersial) $\\implies$ Masalah B (Hilang kesakralan).\n2. Cara melemahkan: Buktikan bahwa tanpa Faktor A sama sekali (desa adat yang menolak pentas hotel), Masalah B tetap terjadi sama parahnya!\n3. Opsi E secara sempurna memberikan data kelompok pembanding yang menggugurkan klaim kausalitas pemerhati seni.\n4. Jawaban: **E**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menjelaskan kompensasi materi dan sponsor dari hotel, yang justru berpotensi memperkuat kecurigaan ketergantungan finansial dan tidak menguji hubungan kausal.\n- **Pilihan B Salah:** Hanya menggambarkan perasaan subjektif rasa bangga penari senior, tidak membantah fenomena desakralisasi di tingkat generasi muda.\n- **Pilihan C Salah:** Memaparkan jadwal ritual tahunan topeng yang masih berjalan, namun tidak menjawab permasalahan merosotnya disiplin laku puasa dan pemaknaan spiritual penari muda.\n- **Pilihan D Salah:** Menunjukkan tren animo penonton turis hotel, yang tidak relevan dengan validitas sebab-akibat kemunduran nilai intrinsik kebudayaan."
     }
   ]
 };
