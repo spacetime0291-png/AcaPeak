@@ -139,6 +139,182 @@ export const MATERIAL_PU_01_01: Material = {
       "quick_trick_markdown": "**Cara Cepat (Cek Kesenjangan Cakupan Sampel terhadap Simpulan):**\n\n1. Perhatikan bahwa sampel yang diuji hanyalah 25 orang mahasiswa dari fakultas teknik yang memiliki usia sebaya dan latar belakang homogen.\n2. Bandingkan dengan klaim kesimpulan peneliti yang menyatakan berlaku bagi seluruh kelompok usia dewasa.\n3. Kesenjangan yang sangat besar antara sampel sempit dengan kesimpulan luas menunjukkan kelemahan fatal keterwakilan sampel.\n4. Jawaban yang tepat adalah pilihan **C**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Perbandingan dengan varian cokelat susu bukan merupakan fokus pengujian hipotesis manfaat cokelat hitam.\n- **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam uji klinis memori jangka pendek.\n- **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% merupakan hasil kenaikan yang cukup besar dan signifikan secara deskriptif.\n- **Pilihan E Salah:** Pengujian diukur berdasarkan selisih skor sebelum dan sesudah intervensi pada mahasiswa yang sama, sehingga tingkat memori awal tidak menggugurkan hasil."
     }
+,
+    {
+        "example_id": "pu-01-01-ex4",
+        "variation_name": "Variasi 4: Simpulan Proporsi Sampel Konservasi Terumbu Karang (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Sebuah tim biolog kelautan memantau 400 koloni terumbu karang tanduk rusa (*Acropora cervicornis*) yang ditransplantasikan menggunakan struktur substrat *biorock* berarus listrik mikro di perairan Kepulauan Seribu. Setelah 12 bulan pemantauan, tercatat 348 koloni menunjukkan laju kalsifikasi tiga kali lebih cepat dan sintasan (*survival rate*) di atas rata-rata perairan karang alami. Sebanyak 52 koloni lainnya mengalami pemutihan (*bleaching*) dan gagal bertahan akibat anomali kenaikan suhu air laut lokal yang melampaui ambang batas toleransi termal.",
+        "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Seluruh jenis terumbu karang di perairan Kepulauan Seribu akan terbebas dari pemutihan jika dipasangi struktur *biorock*."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Pemasangan struktur *biorock* berarus listrik mikro selalu menjamin keberhasilan transplantasi terumbu karang di perairan mana pun."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Kenaikan suhu air laut lokal pasti menyebabkan kegagalan total pada seluruh metode transplantasi karang di Indonesia."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Sebagian besar koloni terumbu karang yang ditransplantasikan dengan metode *biorock* di perairan tersebut menunjukkan ketahanan dan laju pertumbuhan yang baik."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Koloni karang yang tidak menggunakan teknologi *biorock* di luar Kepulauan Seribu dipastikan mati dalam rentang waktu 12 bulan."
+            }
+        ],
+        "correct_answer": "D",
+        "hint_markdown": "💡 **Petunjuk Soal:** Cermati proporsi angka dalam wacana: dari 400 koloni yang dipantau, sebanyak 348 koloni berhasil tumbuh cepat (mayoritas) dan 52 koloni mengalami pemutihan. Karena ada 52 koloni yang gagal, opsi yang memuat kata mutlak seperti *\"seluruh\"*, *\"selalu\"*, atau *\"pasti\"* otomatis gugur. Pilihlah simpulan terukur yang setia pada subjek dan wilayah penelitian!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Sampel & Populasi Penelitian:** Pengamatan dilakukan terhadap koloni karang tanduk rusa yang ditransplantasikan dengan metode *biorock* di perairan Kepulauan Seribu ($n = 400$).\n- **Kalkulasi Proporsi:**\n  $$\\text{Proporsi Keberhasilan} = \\frac{348}{400} \\times 100\\% = 87\\%$$\n  Sebanyak $87\\%$ koloni berhasil bertahan dan tumbuh cepat, sementara $13\\%$ sisanya mengalami pemutihan.\n- **Kaidah Logika Induktif:** Karena angka $87\\%$ mencakup mayoritas dominan namun bukan $100\\%$ mutlak, maka kuantor yang valid secara induktif adalah *\"sebagian besar\"* yang terikat pada batasan subjek di perairan tersebut.\n\n**Jawaban: D**",
+        "quick_trick_markdown": "**Cara Cepat (Eliminasi Kata Mutlak dan Cek Proporsi Sampel):**\n\n1. Ada 52 koloni yang gagal bertahan $\\implies$ coret langsung opsi bernada mutlak: pilihan **A** (*seluruh*), pilihan **B** (*selalu, di mana pun*), dan pilihan **C** (*pasti, total*).\n2. Coret pilihan **E** karena membuat vonis spekulatif mutlak ke luar wilayah penelitian (*out of scope*).\n3. Pilihan tersisa yang menggunakan kuantor terukur dan sesuai data $87\\%$ adalah pilihan **D**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggunakan kuantor mutlak \"Seluruh jenis\" dan menjanjikan bebas pemutihan total, padahal wacana mencatat 52 koloni tetap memutih dan hanya meneliti spesies karang tanduk rusa.\n- **Pilihan B Salah:** Menggunakan kata mutlak \"selalu menjamin\" dan memperluas cakupan ke \"perairan mana pun\" yang tidak pernah diuji dalam penelitian.\n- **Pilihan C Salah:** Menggeneralisasi secara ekstrem dengan kata \"pasti menyebabkan kegagalan total\" dan melompat ke skala seluruh Indonesia.\n- **Pilihan E Salah:** Membuat kesimpulan spekulatif tanpa data mengenai koloni karang di luar wilayah Kepulauan Seribu (*out of scope*)."
+    },
+    {
+        "example_id": "pu-01-01-ex5",
+        "variation_name": "Variasi 5: Simpulan Tren Induktif Berkala Dwelling Time Pelabuhan (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Otoritas pelabuhan logistik mencatat waktu tunggu bongkar muat peti kemas (*dwelling time*) pasca-penerapan sistem gerbang otomatis terintegrasi. Pada semester I, rata-rata *dwelling time* turun dari 4,8 hari menjadi 3,9 hari. Pada semester II dan III, setelah 85% armada truk logistik mengadopsi identifikasi digital, waktu tunggu peti kemas kembali terpangkas berturut-turut menjadi 3,1 hari dan 2,5 hari.",
+        "question_markdown": "Manakah pernyataan yang **paling mungkin benar** mengenai digitalisasi sistem gerbang logistik di pelabuhan tersebut?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Integrasi sistem gerbang digital cenderung konsisten mempercepat penurunan waktu tunggu peti kemas di pelabuhan tersebut."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Digitalisasi sistem gerbang otomatis merupakan satu-satunya instrumen penentu efisiensi biaya logistik maritim nasional."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Pada semester IV, waktu tunggu bongkar muat di pelabuhan tersebut pasti mencapai tepat 1,8 hari."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Pelabuhan peti kemas lain yang belum menerapkan sistem serupa pasti mengalami kelumpuhan total arus bongkar muat."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Efisiensi waktu tunggu di pelabuhan tersebut otomatis menjamin penurunan harga barang kebutuhan pokok hingga 50% di pasaran."
+            }
+        ],
+        "correct_answer": "A",
+        "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan arah tren data berkala: waktu tunggu turun secara berkesinambungan dari 4,8 hari $\\rightarrow$ 3,9 hari $\\rightarrow$ 3,1 hari $\\rightarrow$ 2,5 hari. Pilihlah opsi yang menyatakan kecenderungan positif secara terukur (*\"cenderung konsisten\"*). Waspadai pilihan yang memuat klaim mutlak atau meramal angka pasti di masa depan!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Rangkaian Waktu (Tren Berkala):**\n  - Baseline: $4{,}8$ hari.\n  - Semester I: $3{,}9$ hari (turun $0{,}9$ hari).\n  - Semester II: $3{,}1$ hari (turun $0{,}8$ hari).\n  - Semester III: $2{,}5$ hari (turun $0{,}6$ hari).\n- **Penarikan Kesimpulan Induktif:** Penurunan waktu inap peti kemas yang terjadi secara berturut-turut pada tiga semester pengamatan membuktikan adanya arah tren yang positif. Simpulan induktif yang sahih dirumuskan dengan derajat kemungkinan yang terukur: sistem tersebut *\"cenderung konsisten mempercepat penurunan waktu tunggu peti kemas\"* di pelabuhan pengamatan.\n\n**Jawaban: A**",
+        "quick_trick_markdown": "**Cara Cepat (Identifikasi Arah Tren dan Singkirkan Kepastian Mutlak):**\n\n1. Cari kata kunci terukur yang mencerminkan penalaran induktif yang hati-hati: *\"cenderung konsisten\"* pada pilihan **A**.\n2. Coret pilihan **B** karena klaim ekstrem *\"satu-satunya instrumen\"* dan melompat ke skala nasional.\n3. Coret pilihan **C** karena memastikan masa depan (*\"pasti tepat 1,8 hari\"*).\n4. Coret pilihan **D** dan **E** karena membuat vonis spekulatif di luar bahasan teks.\n5. Jawaban yang tepat adalah pilihan **A**.",
+        "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menggunakan frasa absolut \"satu-satunya instrumen\" dan memperluas ruang lingkup ke skala maritim nasional yang tidak didukung data teks.\n- **Pilihan C Salah:** Meramalkan angka masa depan secara mutlak (\"pasti tepat 1,8 hari\"), padahal realisasi semester IV belum berlangsung dan dipengaruhi dinamika operasional lain.\n- **Pilihan D Salah:** Menyimpulkan kondisi ekstrem (\"pasti mengalami kelumpuhan total\") pada pelabuhan lain yang sama sekali tidak diteliti (*out of scope*).\n- **Pilihan E Salah:** Menghubungkan dwelling time secara sepihak dengan jaminan penurunan harga komoditas hingga 50%, yang merupakan lompatan kesimpulan tanpa bukti."
+    },
+    {
+        "example_id": "pu-01-01-ex6",
+        "variation_name": "Variasi 6: Evaluasi Kualitas Generalisasi Intervensi Ritme Sirkadian (Level: Sulit)",
+        "difficulty": "hard",
+        "question_type": "standard_mc",
+        "context_markdown": "Sebuah artikel rintisan kesehatan mempublikasikan klaim bahwa *\"Penggunaan kacamata pemblokir sinar biru (*blue light filter*) selama dua jam sebelum tidur terbukti secara mutlak melipatgandakan kapasitas memori kerja dan mengatasi insomnia pada seluruh pekerja kantoran.\"* Klaim tersebut disusun berdasarkan uji coba terhadap 18 staf divisi teknologi informasi berusia 22–26 tahun di satu perusahaan rintisan di Jakarta Selatan yang diminta memakai kacamata tersebut selama 7 hari, dengan hasil 14 staf menyatakan kualitas tidur mereka terasa lebih nyenyak pada survei kuesioner mandiri.",
+        "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kelemahan** generalisasi pada artikel kesehatan tersebut?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Peneliti tidak mengukur indeks kelelahan refraksi mata staf sebelum intervensi kacamata dimulai."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Durasi penelitian selama 7 hari dinilai terlalu lama untuk mengamati pengaruh optik terhadap persepsi kelelahan visual."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Staf perusahaan rintisan teknologi memiliki tingkat tekanan kerja yang diasumsikan lebih ringan daripada industri manufaktur."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Kacamata pemblokir sinar biru yang diuji tidak dilengkapi dengan pelapis fotokromik anti-radiasi ultraviolet luar ruangan."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Ukuran sampel sangat kecil, terbatas pada kelompok usia muda yang homogen, dan hanya bertumpu pada survei persepsi subjektif sehingga tidak layak digeneralisasi untuk seluruh populasi pekerja kantoran."
+            }
+        ],
+        "correct_answer": "E",
+        "hint_markdown": "💡 **Petunjuk Soal:** Bandingkan cakupan klaim simpulan (*\"terbukti secara mutlak melipatgandakan memori kerja pada seluruh pekerja kantoran\"*) dengan fakta sampel penelitian (*hanya 18 orang berusia seragam 22-26 tahun di 1 kantor startup, hanya 7 hari, hanya kuesioner rasa nyenyak subjektif*). Cacat induktif utama terletak pada keterwakilan sampel yang rapuh (*hasty generalization*)!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Peneliti:** Mengklaim khasiat mutlak bagi *\"seluruh pekerja kantoran\"* lintas usia, profesi, dan kondisi kesehatan.\n- **Kondisi Sampel Faktual:** Hanya melibatkan $n = 18$ orang dari satu divisi di satu kantor, rentang umur homogen ($22-26$ tahun), dan instrumen yang digunakan hanya kuesioner persepsi subjektif tanpa pengukuran memori objektif.\n- **Kaidah Evaluasi Generalisasi (Hasty Generalization):** Menarik simpulan universal untuk populasi heterogen yang luas dari sampel yang teramat sempit, homogen, dan berbasis data persepsi subjektif merupakan kekeliruan penalaran induktif mendasar (*hasty generalization*).\n\n**Jawaban: E**",
+        "quick_trick_markdown": "**Cara Cepat (Deteksi Jurang Pemisah Sampel vs Populasi Simpulan):**\n\n1. Sampel: Hanya 18 staf TI usia 22–26 tahun, data persepsi rasa nyenyak kuesioner.\n2. Klaim Simpulan: Berlaku mutlak untuk seluruh pekerja kantoran di segala bidang dan usia.\n3. Kesenjangan ekstrem ini membuktikan sampel tidak mewakili populasi (*unrepresentative sample*).\n4. Pilihan yang secara komprehensif mengkritik kelemahan metodologis ini adalah pilihan **E**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pengukuran indeks refraksi mata bukan kelemahan utama yang menggugurkan representasi populasi sampel pekerja.\n- **Pilihan B Salah:** Waktu 7 hari justru tergolong singkat dalam studi fisiologis sirkadian, bukan terlalu lama.\n- **Pilihan C Salah:** Asumsi perbandingan tingkat tekanan kerja merupakan spekulasi yang tidak menyentuh cacat metodologi keterwakilan sampel.\n- **Pilihan D Salah:** Fitur fotokromik radiasi UV luar ruangan tidak relevan dengan klaim penggunaan dalam ruangan sebelum tidur malam (*out of scope*)."
+    },
+    {
+        "example_id": "pu-01-01-ex7",
+        "variation_name": "Variasi 7: Evaluasi Plausibilitas Kualitas Inspeksi Wafer Semikonduktor (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Sebuah pabrik fabrikasi semikonduktor menguji coba model *computer vision* berbasis *deep learning* untuk mendeteksi cacat mikro pada 1.200 wafer silikon berukuran 300 mm. Hasil pengujian menunjukkan bahwa model berhasil mendeteksi anomali pola litografi dengan akurasi 96,5% dan mengurangi tingkat lolosnya cacat (*defect escape rate*) dari 4,2% menjadi 0,3%. Namun, pada 42 wafer dengan lapisan film tipis berreflektivitas tinggi, model sempat memberikan alarm palsu (*false positive*) akibat pantulan cahaya interferensi optik.",
+        "question_markdown": "Berdasarkan data pengujian tersebut, manakah simpulan yang **paling mungkin benar**?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Model *computer vision* tersebut telah berkinerja sempurna sehingga pasti tidak akan pernah salah dalam mengenali wafer cacat."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Penerapan model *computer vision* secara umum efektif meminimalkan lolosnya cacat wafer silikon, meskipun masih menghadapi tantangan pada karakteristik lapisan tertentu."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Seluruh pabrik semikonduktor di dunia wajib segera mengganti inspektur manusia dengan sistem inspeksi otomatis tersebut."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Wafer silikon dengan lapisan berreflektivitas tinggi sama sekali tidak dapat diinspeksi oleh teknologi kecerdasan buatan apa pun."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Munculnya alarm palsu pada 42 wafer membuktikan bahwa model kecerdasan buatan tersebut gagal total dan tidak layak diuji coba lebih lanjut."
+            }
+        ],
+        "correct_answer": "B",
+        "hint_markdown": "💡 **Petunjuk Soal:** Cermati proporsi capaian: akurasi 96,5% dan tingkat lolos cacat turun menjadi 0,3% membuktikan efektivitas umum yang tinggi, namun alarm palsu pada 42 wafer menunjukkan adanya pengecualian teknis. Simpulan induktif yang sehat wajib merangkul kedua fakta ini secara berimbang tanpa berlebihan!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Evaluasi Dua Aspek Data Pengujian:**\n  - *Aspek Keberhasilan Mayoritas:* Akurasi $96{,}5\\%$ dan penurunan *defect escape rate* dari $4{,}2\\%$ menjadi $0{,}3\\%$ pada sampel $n = 1.200$ wafer silikon.\n  - *Aspek Keterbatasan Spesifik:* Terjadi alarm palsu pada $42$ wafer berlapisan reflektif tinggi karena interferensi optik ($\\frac{42}{1.200} = 3{,}5\\%$).\n- **Penarikan Simpulan Induktif Proporsional:** Simpulan yang paling mungkin benar harus mencerminkan generalisasi yang terukur: sistem ini *\"secara umum efektif meminimalkan lolosnya cacat\"*, sekaligus secara jujur mengakui adanya *\"tantangan pada karakteristik lapisan tertentu\"*.\n\n**Jawaban: B**",
+        "quick_trick_markdown": "**Cara Cepat (Pilih Kesimpulan Berimbang dan Eliminasi Klaim Ekstrem):**\n\n1. Coret pilihan **A** karena menggunakan kata mutlak yang bertentangan dengan fakta (*\"sempurna, pasti tidak pernah salah\"*).\n2. Coret pilihan **C** karena memuat kewajiban mutlak melompat ke skala global (*\"seluruh pabrik di dunia wajib\"*).\n3. Coret pilihan **D** dan **E** karena memvonis kegagalan mutlak (*\"sama sekali tidak dapat, gagal total\"*).\n4. Pilihan yang bijak, seimbang, dan sepenuhnya selaras dengan data adalah pilihan **B**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyatakan model berkinerja sempurna dan pasti tidak pernah salah secara telak mengabaikan fakta adanya alarm palsu pada 42 wafer.\n- **Pilihan C Salah:** Mengeluarkan rekomendasi normatif universal bagi seluruh pabrik di dunia yang melompat keluar dari batasan konteks pengujian pabrik tersebut.\n- **Pilihan D Salah:** Menghakimi secara ekstrem bahwa lapisan reflektif sama sekali tidak dapat diinspeksi oleh AI apa pun di masa mendatang.\n- **Pilihan E Salah:** Menyimpulkan bahwa sistem gagal total merupakan generalisasi keliru yang menafikan capaian akurasi 96,5% pada mayoritas wafer."
+    },
+    {
+        "example_id": "pu-01-01-ex8",
+        "variation_name": "Variasi 8: Simpulan Proporsi Sampel Vitalitas Dialek Bahasa Daerah (Level: Mudah)",
+        "difficulty": "easy",
+        "question_type": "standard_mc",
+        "context_markdown": "Penelitian sosiolinguistik terhadap 250 remaja usia 15–18 tahun di perkampungan nelayan Teluk Bahari mendata pola komunikasi sehari-hari mereka. Hasil survei mencatat bahwa 195 remaja masih aktif menggunakan dialek lokal pesisir saat berinteraksi di lingkungan keluarga dan sesama teman sebaya. Sementara itu, 55 remaja lainnya menyatakan lebih sering menggunakan bahasa Indonesia ragam percakapan santai perkotaan karena terbiasa berinteraksi melalui media sosial dan tayangan video daring.",
+        "question_markdown": "Simpulan yang **paling tepat** mengenai pola berbahasa remaja di perkampungan nelayan Teluk Bahari adalah...",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Seluruh remaja di perkampungan nelayan Teluk Bahari telah melupakan dialek lokal pesisir akibat paparan media sosial."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Bahasa Indonesia ragam santai selalu menggantikan kedudukan bahasa daerah pada seluruh generasi muda pesisir di Indonesia."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Mayoritas remaja di perkampungan nelayan tersebut masih mempertahankan penggunaan dialek lokal pesisir dalam komunikasi harian mereka."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Remaja yang aktif menggunakan media sosial pasti tidak mampu berbicara dalam dialek lokal pesisir dengan fasih."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Dialek lokal pesisir hanya bisa dipertahankan apabila generasi muda dilarang mengakses gawai dan internet."
+            }
+        ],
+        "correct_answer": "C",
+        "hint_markdown": "💡 **Petunjuk Soal:** Cermati angka proporsi: dari total 250 remaja yang disurvei, sebanyak 195 orang masih aktif bertutur dialek lokal. Hitung persentasenya: 195 dari 250 adalah 78%. Karena 78% merupakan kelompok mayoritas (sebagian besar), carilah opsi yang menggunakan kuantor terukur tersebut dan hindari opsi yang memukul rata dengan kata \"seluruh\" atau \"selalu\"!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Sampel & Variabel:** Pengamatan sosiolinguistik pada kelompok remaja usia 15–18 tahun di perkampungan nelayan Teluk Bahari ($n = 250$).\n- **Perhitungan Proporsi Bahasa:**\n  $$\\text{Proporsi Penutur Dialek Lokal} = \\frac{195}{250} \\times 100\\% = 78\\%$$\n  $$\\text{Proporsi Ragam Santai Perkotaan} = \\frac{55}{250} \\times 100\\% = 22\\%$$\n- **Penarikan Simpulan Induktif:** Karena $78\\%$ merupakan porsi mayoritas nyata, simpulan induktif yang valid menyatakan bahwa *\"mayoritas remaja di perkampungan nelayan tersebut masih mempertahankan penggunaan dialek lokal pesisir\"*.\n\n**Jawaban: C**",
+        "quick_trick_markdown": "**Cara Cepat (Hitung Proporsi Mayoritas dan Eliminasi Pukul Rata):**\n\n1. Hitung sekilas: $195/250 = 78\\%$ (artinya mayoritas/sebagian besar, bukan seluruhnya).\n2. Coret pilihan **A** karena menuduh *\"seluruh remaja telah melupakan\"* (padahal 195 masih aktif).\n3. Coret pilihan **B** karena memuat kata mutlak *\"selalu\"* dan memperluas cakupan ke *\"seluruh pesisir Indonesia\"*.\n4. Coret pilihan **D** dan **E** karena memvonis kepastian ekstrem yang tidak berdasar.\n5. Pilihan yang tepat dan objektif adalah pilihan **C**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengklaim secara bertentangan bahwa seluruh remaja telah melupakan dialek lokal, padahal 78% di antaranya masih aktif menggunakan dialek tersebut.\n- **Pilihan B Salah:** Menggunakan kata mutlak \"selalu menggantikan\" dan memperluas simpulan ke tingkat seluruh generasi muda pesisir di Indonesia (*out of scope*).\n- **Pilihan D Salah:** Menghakimi kemampuan berbahasa remaja medsos dengan vonis mutlak (\"pasti tidak mampu\"), padahal teks hanya mendata frekuensi penggunaan bahasa.\n- **Pilihan E Salah:** Memberikan klaim persyaratan mutlak (\"hanya bisa\") tanpa dasar data yang diteliti di dalam wacana."
+    }
   ]
 };
 
@@ -280,6 +456,182 @@ export const MATERIAL_PU_01_02: Material = {
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tujuan Soal:** Untuk memperlemah penalaran analogi, kita perlu menemukan **perbedaan kritis (*critical disanalogy*)** yang merusak hubungan kausal antara titik kesamaan dengan keberhasilan kebijakan.\n- **Analisis Kausal:** Keberhasilan sistem kerja di Perusahaan Software Y didorong oleh model kerja berbasis output proyek yang fleksibel tanpa keterikatan jam layanan langsung. Sebaliknya, pendapatan Perusahaan Ritel X bergantung secara mutlak pada jam operasional toko fisik yang melayani pembeli secara langsung setiap hari. Apabila toko ritel memangkas hari kerja, jam operasional layanan toko akan berkurang dan pendapatan bisnis langsung turun. Perbedaan esensial ini mematahkan analogi kebijakan manajemen.\n\n**Jawaban: C**",
       "quick_trick_markdown": "**Cara Cepat (Cari Perbedaan Kritis Mekanisme Pendapatan):**\n\n1. Tanyakan pada diri Anda: perbedaan apa yang menyebabkan sistem kerja empat hari di perusahaan perangkat lunak mustahil ditiru oleh toko ritel fisik?\n2. Hanya pilihan **C** yang secara langsung mengungkap perbedaan cara kerja operasional: perusahaan perangkat lunak berbasis proyek mingguan yang fleksibel, sedangkan toko ritel fisik bergantung pada jam buka toko setiap hari.\n3. Jawaban yang tepat adalah pilihan **C**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Perbedaan usia berdirinya perusahaan tidak memengaruhi efektivitas penerapan sistem empat hari kerja mingguan.\n- **Pilihan B Salah:** Moda transportasi yang digunakan karyawan tidak berkaitan dengan cara perusahaan menghasilkan produktivitas.\n- **Pilihan D Salah:** Bentuk penyediaan fasilitas makan siang merupakan detail sepele yang tidak membatalkan analogi sistem kerja.\n- **Pilihan E Salah:** Kenaikan biaya sewa gedung kantor dihadapi oleh kedua perusahaan sehingga tidak membedakan cara kerja operasional keduanya."
+    }
+,
+    {
+        "example_id": "pu-01-02-ex4",
+        "variation_name": "Variasi 4: Prediksi Berbasis Analogi Fenomena Biomimikri Desalinasi Mangrove (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Pohon bakau (*Rhizophora mangle*) mampu tumbuh subur di air laut berkadar salinitas tinggi karena memiliki sistem filtrasi akar berlapis dengan membran bermuatan negatif yang menolak ion natrium ($Na^+$) dan klorida ($Cl^-$) menggunakan gradien tekanan osmotik alami tanpa menyumbat pori (*anti-fouling*). Para insinyur material mengembangkan membran polimer grafena nanopori baru dengan struktur muatan elektrostatik permukaan dan arsitektur pori berlapis yang meniru struktur sel membran akar bakau tersebut.",
+        "question_markdown": "Berdasarkan prinsip penalaran analogi, simpulan yang **paling mungkin benar** mengenai membran polimer grafena nanopori tersebut adalah...",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Membran grafena sintetis tersebut pasti mampu menghasilkan air tawar tanpa memerlukan energi listrik sama sekali di seluruh pabrik pengolahan."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Membran polimer grafena tersebut berpotensi tinggi memisahkan garam dari air laut secara efisien dengan risiko penyumbatan pori yang lebih rendah."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Seluruh tanaman pesisir pantai dapat dijadikan model biomimikri untuk menciptakan berbagai filter industri kimia cair."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Membran grafena sintetis akan memiliki laju pertumbuhan dan pembelahan sel yang identik dengan akar pohon bakau alami."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Pohon bakau alami di seluruh kawasan tropis akan punah jika teknologi desalinasi grafena nanopori diproduksi secara massal."
+            }
+        ],
+        "correct_answer": "B",
+        "hint_markdown": "💡 **Petunjuk Soal:** Cermati sifat fungsional yang terbukti pada akar bakau: menolak ion garam secara efisien dan mencegah penyumbatan pori (*anti-fouling*). Karena membran grafena meniru struktur membran akar tersebut, transfer sifat yang logis harus menyatakan bahwa membran sintetis ini *\"berpotensi tinggi memisahkan garam secara efisien dengan risiko penyumbatan lebih rendah\"*. Waspadai opsi mutlak (*\"pasti tanpa energi\"*)!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Prinsip Dasar Penalaran Analogi Ilmiah (Biomimikri):** Apabila sistem buatan (membran grafena) mereplikasi arsitektur fungsional kunci dari sistem biologis alami (akar mangrove), maka karakteristik performa sistem alami (desalinasi efisien dan anti-penyumbatan) berpotensi besar terwujud pada sistem buatan.\n- **Kaidah Probabilitas Induktif:** Kesimpulan analogi tidak pernah bersifat mutlak ($100\\%$ pasti), melainkan pada tingkat kemungkinan atau peluang terukur (*\"berpotensi tinggi\"*).\n\n**Jawaban: B**",
+        "quick_trick_markdown": "**Cara Cepat (Transfer Sifat Fungsional Terbukti):**\n\n1. Sifat terbukti pada akar bakau: tolak ion garam + tidak menyumbat pori (*anti-fouling*).\n2. Membran grafena meniru struktur ini $\\implies$ berpotensi memisahkan garam efisien dengan risiko sumbatan rendah.\n3. Coret pilihan **A** karena klaim mutlak *\"pasti tanpa energi sama sekali\"*.\n4. Coret pilihan **C**, **D**, dan **E** karena melompat dari konteks fungsional.\n5. Jawaban tepat adalah pilihan **B**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyatakan secara mutlak bahwa desalinasi pasti berjalan tanpa energi sama sekali merupakan klaim ekstrem yang tidak didukung fakta ilmiah.\n- **Pilihan C Salah:** Merupakan overgeneralisasi yang memperluas bahasan ke seluruh tanaman pesisir pantai tanpa bukti pengujian (*out of scope*).\n- **Pilihan D Salah:** Merupakan analogi dangkal (*false analogy*) yang menyamakan polimer sintetis tak hidup dengan pembelahan sel biologis hidup.\n- **Pilihan E Salah:** Menyimpulkan hubungan kepunahan tanaman secara spekulatif tanpa ada relasi sebab-akibat di dalam wacana."
+    },
+    {
+        "example_id": "pu-01-02-ex5",
+        "variation_name": "Variasi 5: Memperlemah Analogi Kebijakan Subsidi Pupuk Pertanian (Level: Sulit)",
+        "difficulty": "hard",
+        "question_type": "standard_mc",
+        "context_markdown": "Pemerintah Daerah Agraria berencana menghapus sistem kuota distributor pupuk kimia bersubsidi dan menggantinya dengan transfer tunai langsung (*direct cash transfer*) kepada petani, menyusul kesuksesan kebijakan serupa di Daerah Maritim yang berhasil meningkatkan produksi perikanan budidaya sebesar 35% melalui transfer tunai subsidi pakan ikan ke rekening petambak. Analis kebijakan berargumen bahwa karena kedua daerah sama-sama berstatus produsen pangan primer dengan populasi penerima subsidi sekitar 15.000 produsen kecil, maka skema transfer tunai di Daerah Agraria juga akan meningkatkan produksi padi dengan efektivitas serupa.",
+        "question_markdown": "Manakah fakta empiris di bawah ini yang, jika benar, **paling memperlemah** argumen analogi kebijakan tersebut?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Daerah Agraria memiliki luas wilayah daratan yang dua kali lebih luas dibandingkan luas perairan tambak di Daerah Maritim."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Waktu pencairan transfer tunai di Daerah Maritim dilakukan dua kali dalam setahun anggaran berjalan."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Di Daerah Agraria, 90% petani penggarap terjerat sistem utang ijon dengan tengkulak desa yang secara otomatis menyita dana transfer tunai perbankan untuk pelunasan utang konsumtif sebelum petani sempat membeli pupuk."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Harga gabah kering panen di Daerah Agraria mengalami fluktuasi musiman yang wajar setiap musim panen raya."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Petambak di Daerah Maritim menggunakan benih ikan nila unggul hasil rekayasa genetika lokal."
+            }
+        ],
+        "correct_answer": "C",
+        "hint_markdown": "💡 **Petunjuk Soal:** Untuk meruntuhkan argumen analogi kebijakan transfer tunai, cari faktor perbedaan kritis (*critical disanalogy*) di Daerah Agraria yang membuat uang transfer tunai TIDAK AKAN PERNAH sampai menjadi pupuk. Jika 90% petani terjerat ijon sehingga uang disita tengkulak untuk utang konsumtif, maka tujuan peningkatan produksi padi mustahil tercapai!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Tujuan Soal:** Mengidentifikasi **perbedaan kritis (*critical disanalogy*)** yang mematahkan premis kesetaraan efektivitas kebijakan transfer tunai antardaerah.\n- **Analisis Kausal:** Keberhasilan di Daerah Maritim bertumpu pada asumsi bahwa uang tunai langsung dibelanjakan untuk input produksi (pakan ikan). Namun di Daerah Agraria, fakta bahwa $90\\%$ petani terjerat utang ijon menyebabkan dana transfer perbankan disita otomatis oleh rentenir/tengkulak untuk kebutuhan konsumtif lama sebelum sempat dibelikan pupuk. Perbedaan struktural ini memutus mata rantai kausal kebijakan dan meruntuhkan analogi secara telak.\n\n**Jawaban: C**",
+        "quick_trick_markdown": "**Cara Cepat (Cari Perbedaan Kritis yang Memutus Rantai Fungsi):**\n\n1. Target kebijakan: Uang tunai $\\implies$ Beli pupuk $\\implies$ Produksi naik.\n2. Cari fakta yang membatalkan alur ini di Daerah Agraria: Pilihan **C** menunjukkan uang tunai langsung disita tengkulak ijon untuk utang konsumtif, sehingga pupuk tidak pernah terbeli.\n3. Fakta ini secara mutlak menggugurkan analogi kebijakan.\n4. Jawaban yang tepat adalah pilihan **C**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Perbedaan luas wilayah fisik tidak menjelaskan apakah sistem bantuan tunai dapat berfungsi efektif atau tidak.\n- **Pilihan B Salah:** Frekuensi pencairan anggaran merupakan rincian administratif yang tidak merusak hubungan mekanisme kausal subsidi.\n- **Pilihan D Salah:** Fluktuasi musiman harga gabah adalah fenomena pasar yang lazim dan tidak menggagalkan pemanfaatan pupuk.\n- **Pilihan E Salah:** Perbedaan varietas benih perikanan tidak relevan dengan perilaku ekonomi pembelanjaan subsidi di sektor pertanian (*out of scope*)."
+    },
+    {
+        "example_id": "pu-01-02-ex6",
+        "variation_name": "Variasi 6: Parallel Reasoning Regulasi Beban Kognitif dan Pemulihan (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Perhatikan alur argumentasi berikut:\n\n*\"Menuntut memori kerja memproses informasi kompleks secara terus-menerus tanpa jeda istirahat berkala akan menimbulkan kelelahan kognitif (*cognitive fatigue*) dan memicu lonjakan tingkat kesalahan pengambilan keputusan. Sebaliknya, menyisipkan jeda pemulihan singkat terstruktur di antara sesi tugas berat memungkinkan otak menyegarkan kapasitas atensi dan mempertahankan akurasi berpikir. Hal ini serupa dengan sistem pendinginan mesin turbin pesawat; memacu putaran mesin pada beban puncak secara nonstop tanpa siklus pendinginan memicu panas berlebih (*overheating*) dan kerusakan komponen, sedangkan pengaturan jeda termal yang tepat menjaga keandalan mesin dalam durasi penerbangan panjang.\"*",
+        "question_markdown": "Manakah skenario di bawah ini yang memiliki **pola struktur penalaran analogi paling setara** dengan teks di atas?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Memompa ban kendaraan bermotor secara berlebihan dapat menyebabkan ban pecah di jalan raya, sama bahayanya dengan mengisi muatan barang melebihi kapasitas tonase bak truk."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Olahraga angkat beban berat membutuhkan asupan protein tinggi agar massa otot bertambah, sedangkan olahraga kardio membutuhkan karbohidrat kompleks sebagai sumber energi utama tubuh."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Memberikan stimulasi belajar bahasa asing sejak usia dini lebih mudah diserap oleh otak anak-anak dibandingkan jika baru mulai diajarkan pada masa dewasa."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Menguras air sumur resapan tanah secara terus-menerus melebihi laju pengisian alami akan menurunkan muka air tanah dan memicu amblesan tanah, sedangkan pemanfaatan air yang diselingi periode resapan memulihkan cadangan air tanah; hal ini serupa dengan lahan pertanian monokultur yang dieksploitasi tanpa masa bera (*fallow period*) mengalami degradasi hara berat, sedangkan pergiliran lahan dengan masa jeda memulihkan kesuburan tanah secara berkelanjutan."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Seorang pengemudi profesional harus menguasai rute jalan raya dan mematuhi rambu-rambu lalu lintas agar terhindar dari kecelakaan fatal saat bertugas."
+            }
+        ],
+        "correct_answer": "D",
+        "hint_markdown": "💡 **Petunjuk Soal:** Petakan struktur logikanya: [Aktivitas intensif terus-menerus tanpa jeda pemulihan $\\implies$ kelelahan/kerusakan] versus [Aktivitas dengan jeda pemulihan terstruktur $\\implies$ stabilitas/ketahanan]. Cari pilihan jawaban yang mereplikasi pola perbandingan dua sisi simetris ini pada dua sistem yang berbeda!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Dekonstruksi Pola Wacana (Parallel Reasoning):**\n  - Ranah 1 (Kognisi Otak): Beban terus-menerus tanpa jeda $\\implies$ kelelahan dan eror; Beban dengan jeda berkala $\\implies$ kapasitas segar dan akurat.\n  - Ranah 2 (Mesin Turbin): Beban puncak terus-menerus $\\implies$ *overheating* dan rusak; Beban dengan jeda termal $\\implies$ andal dan tahan lama.\n  - Rumus Logika: *[Eksploitasi kontinu tanpa pemulihan = Kehancuran]* vs *[Pemanfaatan terstruktur dengan fase jeda = Ketahanan]*.\n- **Pencocokan Pola:** Opsi **D** mereplikasi rumus identik pada tata kelola air tanah dan lahan pertanian: eksploitasi sumur tanpa resapan merusak muka tanah vs diselingi resapan memulihkan cadangan air, setara dengan tanam monokultur tanpa jeda bera merusak hara vs rotasi dengan jeda memulihkan kesuburan.\n\n**Jawaban: D**",
+        "quick_trick_markdown": "**Cara Cepat (Pencocokan Pola Rumus: Nonstop = Rusak vs Ada Jeda = Pulih):**\n\n1. Cari opsi yang memuat kontras 2 sisi [tanpa jeda = rusak, ada jeda = pulih] pada DUA ranah berbeda.\n2. Pilihan **A** hanya menyamakan bahaya kelebihan muatan (1 sisi).\n3. Pilihan **B** membandingkan jenis nutrisi olahraga.\n4. Pilihan **C** dan **E** bukan analogi komparatif dua ranah simetris.\n5. Pilihan **D** menyajikan struktur simetris sempurna dua sistem alam.\n6. Jawaban: **D**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Hanya membandingkan satu sisi dampak risiko beban berlebih tanpa memiliki perbandingan sisi pemulihan berkala.\n- **Pilihan B Salah:** Merupakan komparasi kebutuhan gizi untuk dua tipe olahraga yang berbeda, bukan pola eksploitasi vs pemulihan berkala.\n- **Pilihan C Salah:** Merupakan komparasi efektivitas usia belajar bahasa tanpa analogi lintas ranah.\n- **Pilihan E Salah:** Berisi saran normatif keselamatan berkendara pada satu bidang tunggal."
+    },
+    {
+        "example_id": "pu-01-02-ex7",
+        "variation_name": "Variasi 7: Evaluasi Kekuatan Analogi Relasional Arsitektur Mikroprosesor (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Seorang dosen teknik komputer menjelaskan arsitektur prosesor komputer:\n\n*\"Hubungan antara inti komputasi (*CPU cores*), jalur bus data berkecepatan tinggi, dan pengendali memori (*memory controller*) pada sebuah mikroprosesor mirip dengan hubungan antara pusat kawasan perkantoran, jaringan jalan tol lingkar bebas hambatan, dan gerbang tol tiket terintegrasi di wilayah metropolitan. Meskipun jumlah gedung kantor (inti komputasi) terus ditambah, apabila lebar jalan tol lingkar (jalur bus data) sempit dan gerbang tiket (pengendali memori) lambat, maka arus perpindahan orang (aliran paket data) akan mengalami kemacetan parah (*bottleneck*).\"*",
+        "question_markdown": "Manakah pernyataan berikut yang **paling tepat mengevaluasi kekuatan fungsional** dari analogi relasional di atas?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Analogi tersebut sangat kuat dan valid karena secara tepat memetakan hubungan fungsional kapasitas aliran (*throughput*): penambahan unit pemroses tidak akan meningkatkan kinerja keseluruhan jika jalur transfer data dan pengatur akses mengalami hambatan kapasitas (*congestion*)."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Analogi tersebut lemah dan tidak ilmiah karena prosesor komputer terbuat dari bahan semikonduktor silikon, sedangkan jalan metropolitan terbuat dari aspal dan beton bertulang."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Analogi tersebut hanya sahih apabila kecepatan elektron di dalam silikon secara sengaja diperlambat agar setara dengan batas kecepatan mobil di jalan tol."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Analogi tersebut keliru karena gedung perkantoran tidak dapat melakukan operasi aritmetika dan logika biner seperti halnya inti prosesor."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Analogi tersebut membuktikan bahwa perancang mikroprosesor wajib menerapkan undang-undang hukum lalu lintas jalan raya pada perancangan sirkuit terpadu."
+            }
+        ],
+        "correct_answer": "A",
+        "hint_markdown": "💡 **Petunjuk Soal:** Evaluasi kekuatan analogi: apakah perbandingan antara CPU-bus-RAM dengan Kantor-Tol-Gerbang memiliki kesamaan mekanisme fungsional dalam hal aliran (*throughput*) dan hambatan (*bottleneck*)? Pilihan yang benar mengakui kesesuaian relasi kapasitas tersebut tanpa terjebak pada perbedaan bahan fisik (silikon vs aspal)!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Prinsip Evaluasi Analogi Relasional:** Keabsahan analogi relasional dinilai berdasarkan **kesejajaran struktur fungsional (*structural alignment*)**, bukan kemiripan materi penyusun.\n  - Inti CPU $\\equiv$ Gedung kantor (sumber/tujuan pemrosesan).\n  - Bus data $\\equiv$ Jalan tol lingkar (kanal transmisi/aliran).\n  - Memory controller $\\equiv$ Gerbang tiket (pengatur antrean/gerbang akses).\n  - Fenomena bottleneck $\\equiv$ Kemacetan lalu lintas.\n- **Kesimpulan Evaluasi:** Analogi sangat kuat karena berhasil menerangkan hukum keterbatasan sistem aliran (*throughput bottleneck*): peningkatan kapasitas sumber pemroses menjadi sia-sia jika kanal transmisi dan gerbang aksesnya terbatas.\n\n**Jawaban: A**",
+        "quick_trick_markdown": "**Cara Cepat (Fokus pada Hubungan Fungsional Bukan Materi Fisik):**\n\n1. Pertanyaan mengevaluasi analogi relasional: apakah perbandingan aliran data dengan lalu lintas jalan tol tepat?\n2. Sangat tepat karena sama-sama menjelaskan fenomena hambatan kapasitas (*bottleneck*).\n3. Opsi **B**, **C**, dan **D** terjebak menyalahkan perbedaan materi fisik (silikon vs aspal), yang merupakan kesalahan berpikir dangkal.\n4. Opsi **E** adalah kesimpulan non-sequitur yang konyol.\n5. Jawaban tepat: **A**.",
+        "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menggugurkan analogi hanya karena perbedaan bahan fisik (silikon vs aspal) mencerminkan kekeliruan dalam memahami hakikat analogi relasional yang berfokus pada kemiripan struktur hubungan.\n- **Pilihan C Salah:** Menuntut kesamaan besaran numerik kecepatan riil yang tidak relevan dengan konsep proporsionalitas throughput aliran data.\n- **Pilihan D Salah:** Mempermasalahkan fungsi literal gedung kantor alih-alih perannya sebagai analogi produsen/konsumen entitas yang berpindah.\n- **Pilihan E Salah:** Menarik kesimpulan regulasi hukum yang keliru dan tidak masuk akal (*non-sequitur*)."
+    },
+    {
+        "example_id": "pu-01-02-ex8",
+        "variation_name": "Variasi 8: Prediksi Berbasis Analogi Fenomena Revitalisasi Kawasan Bersejarah (Level: Mudah)",
+        "difficulty": "easy",
+        "question_type": "standard_mc",
+        "context_markdown": "Kota Lama Samudra berhasil keluar dari kondisi kawasan kumuh dan terlantar setelah pemerintah daerah menerapkan paket kebijakan terpadu: insentif pemotongan pajak bumi dan bangunan bagi pemilik gedung tua yang merestorasi fasad bersejarah, izin fleksibel pembukaan ruang kreatif komunitas dan galeri seni, serta transformasi jalan utama menjadi koridor pedestrian bebas kendaraan bermotor. Kebijakan ini terbukti meningkatkan kunjungan wisatawan sebesar 200% dan menggerakkan roda ekonomi lokal secara mandiri. Sementara itu, kawasan Kota Benteng Kuno memiliki karakteristik populasi, jumlah gedung kolonial terlantar, dan stagnasi ekonomi kawasan yang sangat serupa dengan kondisi awal Kota Lama Samudra sebelum ditata.",
+        "question_markdown": "Berdasarkan penalaran analogi, simpulan yang **paling mungkin benar** adalah...",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Kota Benteng Kuno dipastikan akan melipatgandakan pendapatan asli daerah hingga lima kali lipat dalam hitungan bulan jika meniru kebijakan tersebut."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Semua kota di Indonesia yang memiliki gedung kolonial kuno wajib melarang total penggunaan kendaraan bermotor di seluruh ruas jalan protokol."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Pemilik gedung tua di Kota Benteng Kuno dipastikan akan menolak tawaran insentif karena lebih memilih merobohkan bangunan warisan tersebut."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Jumlah galeri seni dan kafe yang dibuka di Kota Benteng Kuno pasti mencapai angka yang persis sama dengan Kota Lama Samudra."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Penerapan paket kebijakan insentif restorasi, ruang kreatif, dan koridor pedestrian di Kota Benteng Kuno berpotensi membangkitkan kembali vitalitas cagar budaya dan aktivitas ekonomi masyarakat setempat."
+            }
+        ],
+        "correct_answer": "E",
+        "hint_markdown": "💡 **Petunjuk Soal:** Cari dampak positif yang sudah terbukti di Kota Lama Samudra (bangkitnya kawasan pusaka dan ekonomi kreatif berkat paket kebijakan terpadu). Karena Kota Benteng Kuno memiliki kemiripan kondisi awal yang kuat, prediksi analogi yang valid adalah kebijakan serupa *berpotensi membangkitkan kawasan dan ekonomi* di kota tersebut. Hindari kata mutlak *\"dipastikan\"* atau *\"pasti persis sama\"*!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Titik Kesamaan (Target Analogi):** Kota Benteng Kuno memiliki kondisi awal (stagnasi ekonomi, bangunan bersejarah terlantar, demografi) yang identik dengan Kota Lama Samudra.\n- **Hasil yang Terbukti pada Kasus Pertama:** Penerapan paket kebijakan terpadu berhasil merevitalisasi kawasan dan menggerakkan ekonomi lokal secara mandiri.\n- **Simpulan Induktif Analogi:** Berdasarkan kesamaan kondisi dan mekanisme intervensi, penerapan paket kebijakan serupa di Kota Benteng Kuno berpotensi membangkitkan vitalitas cagar budaya serta aktivitas ekonomi lokal.\n\n**Jawaban: E**",
+        "quick_trick_markdown": "**Cara Cepat (Pindahkan Efek Positif dengan Bahasa Peluang Terukur):**\n\n1. Sifat terbukti: Paket kebijakan terpadu berhasil menghidupkan kawasan dan ekonomi Kota Lama Samudra.\n2. Prediksi untuk Kota Benteng Kuno: *berpotensi membangkitkan vitalitas cagar budaya dan ekonomi* (Pilihan **E**).\n3. Coret pilihan **A**, **C**, dan **D** karena menggunakan vonis mutlak *\"dipastikan\"* dan meramal angka pasti.\n4. Coret pilihan **B** karena membuat instruksi wajib berlebihan bagi seluruh kota di Indonesia.\n5. Jawaban tepat: **E**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyimpulkan pelipatan PAD hingga lima kali lipat dalam hitungan bulan secara mutlak merupakan klaim spekulatif tanpa dasar data.\n- **Pilihan B Salah:** Menggeneralisasi kewajiban mutlak kepada seluruh kota di Indonesia yang melompat dari batasan konteks wacana (*out of scope*).\n- **Pilihan C Salah:** Memvonis penolakan mutlak dari pemilik gedung tanpa dukungan fakta empiris di dalam teks.\n- **Pilihan D Salah:** Menjamin angka capaian yang persis sama, padahal penalaran analogi tidak pernah menjamin angka identik secara mutlak."
     }
   ]
 };
@@ -773,6 +1125,182 @@ export const MATERIAL_PU_01_03: Material = {
       "quick_trick_markdown": "**Cara Cepat (Uji Kelompok Kontrol / No Cause, Same Effect):**\n\n1. Klaim: Faktor A (Pentas hotel komersial) $\\implies$ Masalah B (Hilang kesakralan).\n2. Cara melemahkan: Buktikan bahwa tanpa Faktor A sama sekali (desa adat yang menolak pentas hotel), Masalah B tetap terjadi sama parahnya!\n3. Opsi E secara sempurna memberikan data kelompok pembanding yang menggugurkan klaim kausalitas pemerhati seni.\n4. Jawaban: **E**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menjelaskan kompensasi materi dan sponsor dari hotel, yang justru berpotensi memperkuat kecurigaan ketergantungan finansial dan tidak menguji hubungan kausal.\n- **Pilihan B Salah:** Hanya menggambarkan perasaan subjektif rasa bangga penari senior, tidak membantah fenomena desakralisasi di tingkat generasi muda.\n- **Pilihan C Salah:** Memaparkan jadwal ritual tahunan topeng yang masih berjalan, namun tidak menjawab permasalahan merosotnya disiplin laku puasa dan pemaknaan spiritual penari muda.\n- **Pilihan D Salah:** Menunjukkan tren animo penonton turis hotel, yang tidak relevan dengan validitas sebab-akibat kemunduran nilai intrinsik kebudayaan."
     }
+,
+    {
+        "example_id": "pu-01-03-ex14",
+        "variation_name": "Variasi 14: Deteksi Variabel Perancu Relasi Mikroplastik dan Penurunan Reproduksi Tiram (Level: Sulit / HOTS)",
+        "difficulty": "hard",
+        "question_type": "standard_mc",
+        "context_markdown": "Sebuah penelitian estuari menemukan korelasi kuat ($r = -0{,}82$) antara konsentrasi partikel mikroplastik dalam sedimen lumpur pesisir dengan penurunan tingkat penetasan larva tiram mutiara (*Pinctada maxima*) selama tiga tahun berturut-turut. Peneliti menyimpulkan bahwa paparan mikroplastik merupakan faktor penyebab langsung yang menurunkan daya reproduksi tiram di teluk tersebut. Namun, seorang ahli oseanografi biologi menduga adanya faktor perancu (*confounding factor*) berupa pelepasan limbah termal air pendingin dari pembangkit listrik tenaga uap di dekat muara teluk yang juga meningkat seiring dengan peningkatan aktivitas industri dan buangan limbah.",
+        "question_markdown": "Manakah temuan investigasi berikut yang **paling kuat membuktikan** bahwa relasi antara mikroplastik dan penurunan penetasan larva tiram hanyalah **korelasi semu akibat faktor perancu** suhu air?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Partikel mikroplastik yang ditemukan di muara teluk didominasi oleh jenis polimer polipropilena dan polietilena berdensitas tinggi."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Dalam uji laboratorium terkontrol di mana suhu air dipertahankan stabil pada suhu optimal 24°C, tiram yang diberi konsentrasi mikroplastik tinggi tetap menunjukkan tingkat penetasan larva normal (92%), sedangkan tiram di air bebas mikroplastik yang suhunya dinaikkan menjadi 32°C mengalami kegagalan penetasan larva hingga 85%."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Peternak tiram mutiara di teluk tetangga menggunakan jaring keramba apung berbahan serat nilon sintetis yang tahan lama."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Konsentrasi mikroplastik di kolom permukaan air laut tercatat lebih rendah dibandingkan konsentrasi di lapisan sedimen lumpur dasar teluk."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Harga jual butiran mutiara kualitas super dari teluk tersebut mengalami penurunan 15% pada pasar lelang perhiasan internasional."
+            }
+        ],
+        "correct_answer": "B",
+        "hint_markdown": "💡 **Petunjuk Soal:** Untuk membuktikan bahwa mikroplastik adalah korelasi semu dan faktor perancunya adalah suhu air, carilah eksperimen kontrol yang memisahkan kedua variabel: Jika mikroplastik tinggi pada suhu normal tidak merusak penetasan tiram, tetapi suhu tinggi tanpa mikroplastik justru merusak penetasan tiram hingga 85%, maka terbukti suhu airlah penyebab aslinya!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Hipotesis Kausal Awal:** Paparan mikroplastik ($M$) dituduh sebagai penyebab langsung kegagalan penetasan larva tiram ($K$). Hubungan: $M \\implies K$.\n- **Hipotesis Faktor Perancu (*Confounder*):** Kenaikan suhu limbah termal ($S$) berkorelasi dengan pembuangan limbah industri plastik ($S \\sim M$) dan sekaligus menjadi penyebab sejati kegagalan penetasan ($S \\implies K$).\n- **Uji Isolasi Eksperimental Kontrol:**\n  - Kondisi 1: $M$ tinggi, $S$ normal ($24^\\circ\\text{C}$) $\\implies$ penetasan larva tetap prima ($92\\%$). Ini membuktikan $M$ bukan penyebab kegagalan.\n  - Kondisi 2: Bebas $M$, $S$ tinggi ($32^\\circ\\text{C}$) $\\implies$ penetasan larva anjlok ($85\\%$ gagal). Ini membuktikan $S$ adalah penyebab sejati.\n- Pilihan **B** secara sempurna memisahkan pengaruh kedua variabel dan membuktikan bahwa korelasi $M$ dan $K$ hanyalah fenomena semu (*spurious correlation*) akibat variabel perancu termal.\n\n**Jawaban: B**",
+        "quick_trick_markdown": "**Cara Cepat (Uji Isolasi Variabel Kontrol):**\n\n1. Klaim: Plastik $\\implies$ Larva tiram mati. Dugaan perancu: Suhu air panas.\n2. Cara membuktikan plastik cuma korelasi semu: Uji di lab! Kasih plastik tapi air dingin $\\rightarrow$ larva tetap hidup sehat; tanpa plastik tapi air panas $\\rightarrow$ larva mati massal!\n3. Fakta pada pilihan **B** secara langsung membuktikan bahwa suhu panas adalah penyebab sejati.\n4. Jawaban yang tepat adalah pilihan **B**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Jenis polimer mikroplastik hanya menjelaskan komposisi kimia partikel, bukan membuktikan atau membantah relasi kausal dengan reproduksi tiram.\n- **Pilihan C Salah:** Penggunaan jaring nilon di teluk lain tidak menguji hubungan sebab-akibat variabel perancu suhu air di teluk yang diteliti (*out of scope*).\n- **Pilihan D Salah:** Distribusi spasial mikroplastik di kolom air versus sedimen tidak menguji mekanisme biologis kegagalan penetasan larva.\n- **Pilihan E Salah:** Fluktuasi harga mutiara di pasar lelang adalah fenomena ekonomi hilir yang tidak relevan dengan kausalitas biologis di perairan."
+    },
+    {
+        "example_id": "pu-01-03-ex15",
+        "variation_name": "Variasi 15: Penentuan Arah Kausalitas Inflasi Pangan dan Penurunan Tabungan (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Perhatikan dua fenomena ekonomi yang terjadi secara simultan pada semester kedua tahun berjalan berikut:\n\n(1) Terjadi lonjakan indeks harga kelompok pangan pokok (*volatile food*) sebesar 18,4% di seluruh pasar tradisional dan pasar modern.\n(2) Rasio tabungan riil rumah tangga kelompok pendapatan menengah ke bawah tercatat merosot drastis hingga mencapai level terendah dalam lima tahun terakhir.",
+        "question_markdown": "Bagaimanakah hubungan kausalitas yang **paling tepat** antara pernyataan (1) dan pernyataan (2)?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Pernyataan (1) adalah penyebab langsung dan pernyataan (2) adalah akibat logisnya."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Pernyataan (2) adalah penyebab langsung dan pernyataan (1) adalah akibatnya."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari dua faktor penyebab berbeda yang saling tidak berhubungan."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari kebijakan kenaikan suku bunga simpanan perbankan nasional."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Pernyataan (1) dan (2) merupakan kondisi independen yang muncul bersamaan secara kebetulan semata tanpa keterkaitan logis."
+            }
+        ],
+        "correct_answer": "A",
+        "hint_markdown": "💡 **Petunjuk Soal:** Cermati mekanisme belanja rumah tangga: Pangan pokok adalah kebutuhan primer inelastis (wajib dibeli). Ketika harga pangan melonjak 18,4% (1), keluarga menengah ke bawah terpaksa mengalokasikan porsi uang belanja lebih besar untuk makan, yang secara otomatis menggerus sisa uang yang bisa ditabung (2). Maka (1) sebab $\\implies$ (2) akibat!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kausalitas Ekonomi Rumah Tangga:**\n  - *Pernyataan (1):* Kenaikan indeks harga pangan pokok sebesar $18{,}4\\%$. Karena komoditas pangan pokok memiliki elastisitas permintaan yang inelastis sempurna/rendah, konsumen tidak dapat memangkas volume konsumsi fisik secara drastis.\n  - *Mekanisme Transmisi:* Untuk memenuhi kebutuhan dasar makan, keluarga kelas pekerja menengah ke bawah terpaksa mengalihkan pendapatan yang semula dialokasikan untuk pos tabungan ke pos belanja konsumsi harian.\n  - *Pernyataan (2):* Akibatnya, porsi pendapatan yang dapat disisihkan menyusut tajam hingga rasio tabungan menyentuh rekor terendah.\n- Hubungan yang tepat: Pernyataan (1) merupakan **penyebab** dan pernyataan (2) merupakan **akibat logisnya**.\n\n**Jawaban: A**",
+        "quick_trick_markdown": "**Cara Cepat (Uji Logika: Karena (1), maka wajar jika (2)):**\n\n1. Buat kalimat sebab-akibat: *\"Karena harga pangan melonjak mahal (1), maka uang sisa untuk ditabung keluarga menengah ke bawah merosot drastis (2)\"* $\\implies$ Sangat masuk akal dan runtut secara ekonomi!\n2. Arah panah: Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.\n3. Pilihan yang tepat adalah pilihan **A**.",
+        "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Membalik arah kausalitas secara tidak logis, karena penurunan tabungan warga bukan faktor pemicu kenaikan harga komoditas pangan pokok di pasar.\n- **Pilihan C Salah:** Menganggap kedua fenomena tidak berhubungan, padahal pengeluaran pangan dan tabungan saling terhubung erat dalam anggaran rumah tangga.\n- **Pilihan D Salah:** Kenaikan suku bunga simpanan justru secara teoretis mendorong orang menabung, bukan menurunkan rasio tabungan.\n- **Pilihan E Salah:** Mengabaikan keterkaitan makroekonomi yang nyata dan menganggapnya sebagai kebetulan belaka."
+    },
+    {
+        "example_id": "pu-01-03-ex16",
+        "variation_name": "Variasi 16: Deteksi Kausalitas Terbalik Konsumsi Kafein Tinggi dan Gangguan Kecemasan (Level: Sulit / HOTS)",
+        "difficulty": "hard",
+        "question_type": "standard_mc",
+        "context_markdown": "Sebuah survei epidemiologi observasional terhadap 1.500 pekerja shift malam melaporkan bahwa individu yang mengonsumsi lebih dari empat cangkir kopi berkafein tinggi per hari memiliki skor gangguan kecemasan umum (*Generalized Anxiety Disorder*) 2,8 kali lebih tinggi dibandingkan mereka yang jarang minum kopi. Tim penulis laporan menyimpulkan bahwa konsumsi kafein berlebih merupakan penyebab utama timbulnya gangguan kecemasan pada pekerja shift malam. Namun, seorang neuropsikolog menduga terjadi kesesatan pikir kausalitas terbalik (*reverse causation*).",
+        "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mencerminkan hipotesis kausalitas terbalik** yang diajukan oleh neuropsikolog tersebut?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Kandungan antioksidan polifenol di dalam biji kopi mampu melindungi sel saraf otak dari dampak stres oksidatif jangka panjang."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Konsumsi kopi hitam tanpa pemanis memiliki efek termogenik yang mempercepat laju metabolisme basal tubuh pekerja."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Pekerja yang meminum kopi tanpa kafein (*decaffeinated*) juga dilaporkan mengalami peningkatan denyut nadi saat bekerja pada shift malam."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Pekerja shift malam yang memang sudah memiliki tingkat kecemasan tinggi dan kelelahan mental kronis sengaja meminum kopi dalam frekuensi tinggi sebagai mekanisme koping mandiri (*self-medication*) agar tetap mampu terjaga dan berkonsentrasi."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Tingkat kecemasan pekerja shift malam lebih dipengaruhi oleh intensitas pencahayaan lampu neon di ruang kerja dibandingkan asupan nutrisi."
+            }
+        ],
+        "correct_answer": "D",
+        "hint_markdown": "💡 **Petunjuk Soal:** Konsep kausalitas terbalik (*reverse causation*) menyatakan: bukan kopi yang menyebabkan pekerja cemas, melainkan pekerja yang sudah cemas dan kelelahan mental yang mencari kopi banyak-banyak sebagai mekanisme bertahan (*koping*)! Cari opsi yang membalik arah panah sebab-akibat tersebut!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Penulis Survei:** Minum kopi berkafein banyak ($A$) $\\implies$ Memicu timbulnya gangguan kecemasan ($B$). Arah: $A \\implies B$.\n- **Definisi Kesesatan Kausalitas Terbalik (*Reverse Causation Fallacy*):** Terjadi ketika peneliti keliru mengidentifikasi arah panah kausal, di mana kondisi yang dianggap sebagai akibat ($B$) sebenarnya merupakan kondisi pendahulu yang menyebabkan terjadinya tindakan ($A$). Arah sejati: $B \\implies A$.\n- **Analisis Opsi D:** Pilihan **D** merumuskan hipotesis $B \\implies A$ secara tepat: pekerja yang sudah menderita kecemasan laten dan kelelahan mental berat ($B$) secara aktif mengonsumsi kopi dosis tinggi ($A$) sebagai bentuk pengobatan mandiri (*self-medication*) untuk menopang kewaspadaan kerja.\n\n**Jawaban: D**",
+        "quick_trick_markdown": "**Cara Cepat (Balik Arah Panah Kausalitas):**\n\n1. Klaim awal: Kopi $\\implies$ Cemas.\n2. Kausalitas terbalik: Cemas $\\implies$ Butuh Kopi!\n3. Cari pilihan yang menjelaskan bahwa rasa cemas dan kelelahan mental pekerja yang mendorong mereka minum banyak kopi sebagai koping.\n4. Fakta tersebut diuraikan secara tepat pada pilihan **D**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Membahas peran antioksidan polifenol yang tidak relevan dengan arah kausalitas kecemasan.\n- **Pilihan B Salah:** Menjelaskan laju metabolisme basal tubuh yang merupakan proses fisiologis terpisah dari regulasi kecemasan.\n- **Pilihan C Salah:** Membahas denyut nadi akibat kopi dekafeinasi, bukan membedah arah hubungan sebab-akibat kecemasan.\n- **Pilihan E Salah:** Mengajukan faktor lingkungan luar (lampu neon) sebagai penjelasan alternatif, bukan membalik arah kausalitas variabel kopi dan kecemasan."
+    },
+    {
+        "example_id": "pu-01-03-ex17",
+        "variation_name": "Variasi 17: Evaluasi Validitas Klaim Kausalitas Otomasi Perakitan Baterai EV (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Manajer operasional pabrik perakitan baterai kendaraan listrik (*electric vehicle*) mengklaim bahwa penggantian teknisi manual dengan 24 unit lengan robotik berpresisi mikron pada lini pemasangan elektroda merupakan satu-satunya faktor penyebab turunnya tingkat kerusakan sel baterai (*battery rejection rate*) dari 6,8% menjadi 0,9%. Namun, auditor independen manajemen mutu menyatakan bahwa klaim kausalitas faktor tunggal tersebut tidak sepenuhnya sahih karena terjadi sejumlah pembaruan operasional lain secara bersamaan.",
+        "question_markdown": "Manakah temuan audit berikut yang **paling kuat melemahkan** klaim bahwa robotisasi merupakan faktor tunggal penyebab penurunan tingkat kerusakan sel baterai?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Pabrik baterai tersebut berhasil mendapatkan sertifikasi ISO manajemen lingkungan hidup pada tahun berjalan."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Waktu kerja operasional lini perakitan robotik dapat berlangsung selama 24 jam penuh tanpa memerlukan waktu jeda pergantian shift."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Gaji teknisi manual yang dialihkan ke divisi pengemasan akhir mengalami penyesuaian kenaikan tunjangan keahlian sebesar 10%."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Harga jual modul baterai kendaraan listrik di tingkat pasar global mengalami tren penurunan sebesar 8% pada kuartal tersebut."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Tepat pada bulan yang sama dengan pemasangan robot, pabrik mengganti pemasok bahan pasta litium dengan pemasok baru yang memiliki standar kemurnian material 99,99% serta memasang sistem ruang bersih (*cleanroom*) kelas 100 baru yang menekan partikel debu mikro kontaminan secara drastis."
+            }
+        ],
+        "correct_answer": "E",
+        "hint_markdown": "💡 **Petunjuk Soal:** Untuk melemahkan klaim bahwa lengan robot adalah \"faktor tunggal\" penyebab turunnya kerusakan baterai, hadirkan penjelasan alternatif (*alternative causes*) yang juga terjadi pada saat yang sama: Opsi E memperlihatkan bahwa pabrik secara serentak beralih ke pasta litium dengan kemurnian 99,99% dan cleanroom baru bebas debu! Faktor-faktor inilah yang terbukti memangkas cacat baterai!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Mutlak yang Diuji:** Manajer mengklaim pemasangan lengan robot ($R$) adalah *satu-satunya faktor penyebab* penurunan cacat sel baterai ($D$). Klaim: $R$ adalah penyebab tunggal dari $\\Delta D$.\n- **Kaidah Pelemahan Klaim Kausal Tunggal (*Alternative Explanations / Confounding Interventions*):** Untuk meruntuhkan klaim kausalitas tunggal, auditor harus menunjukkan adanya intervensi atau faktor penyebab lain yang terjadi serempak (*co-occurring causes*) yang memiliki daya kausalitas kuat terhadap variabel akibat.\n- **Analisis Opsi E:** Penggantian pasta litium berkemurnian tinggi ($99{,}99\\%$) dan instalasi *cleanroom* kelas 100 merupakan faktor kritis penentu keutuhan sel baterai dari risiko korsleting dan cacat mikro. Kehadiran dua intervensi besar yang terjadi serempak ini membuktikan bahwa robotisasi bukanlah faktor tunggal penentu keberhasilan.\n\n**Jawaban: E**",
+        "quick_trick_markdown": "**Cara Cepat (Hadirkan Faktor Penyebab Alternatif yang Signifikan):**\n\n1. Klaim manajer: Lengan robot adalah *satu-satunya penyebab* turunnya cacat baterai.\n2. Cara mematahkan klaim \"satu-satunya\": Temukan faktor penyebab lain yang sama-sama terjadi dan sangat menentukan!\n3. Opsi **E** menghadirkan dua faktor penentu sekaligus: bahan baku pasta litium supermurni ($99{,}99\\%$) dan ruang bersih steril debu.\n4. Kehadiran fakta baru ini langsung meruntuhkan klaim faktor tunggal manajer.\n5. Jawaban tepat: **E**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Sertifikasi ISO manajemen lingkungan berkaitan dengan kepatuhan regulasi limbah, bukan variabel teknis cacat mikro elektroda baterai.\n- **Pilihan B Salah:** Jam kerja operasional tanpa henti menjelaskan kapasitas output produksi, bukan membantah keunggulan presisi perakitan robot.\n- **Pilihan C Salah:** Penyesuaian gaji teknisi di divisi pengemasan tidak memengaruhi integritas fisik sel baterai di lini elektroda.\n- **Pilihan D Salah:** Penurunan harga modul baterai di pasar global merupakan dinamika ekonomi pasar luar yang tidak membatalkan klaim efisiensi teknis pabrik."
+    },
+    {
+        "example_id": "pu-01-03-ex18",
+        "variation_name": "Variasi 18: Penentuan Arah Kausalitas Akibat Penyebab Bersama Urbanisasi Cepat (Level: Mudah)",
+        "difficulty": "easy",
+        "question_type": "standard_mc",
+        "context_markdown": "Perhatikan dua kondisi sosial perkotaan di wilayah penyangga Megapolitan Raya berikut:\n\n(1) Terjadi kenaikan tarif sewa rumah petak dan kamar indekos pekerja sebesar 35% dalam tempo kurang dari satu tahun.\n(2) Terjadi lonjakan antrean kendaraan bermotor pribadi dan waktu tempuh komuter harian hingga dua kali lipat pada jalan arteri penghubung kota penyangga.",
+        "question_markdown": "Manakah analisis hubungan kausalitas yang **paling tepat** antara kedua pernyataan tersebut?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Pernyataan (1) adalah penyebab utama dan pernyataan (2) adalah akibat langsungnya."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Pernyataan (2) adalah penyebab utama dan pernyataan (1) adalah akibat langsungnya."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari satu faktor penyebab bersama, yaitu gelombang migrasi masuk puluhan ribu tenaga kerja industri baru ke kawasan perkotaan tersebut yang tidak diimbangi kapasitas hunian terjangkau dan transportasi massal."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari dua peristiwa masa lalu yang saling bertentangan secara sosiologis."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Pernyataan (1) dan (2) merupakan data independen yang saling meniadakan validitas satu sama lain."
+            }
+        ],
+        "correct_answer": "C",
+        "hint_markdown": "💡 **Petunjuk Soal:** Uji hubungan sebab-akibat: Apakah naiknya sewa kamar menyebabkan macet di jalan arteri? Bukan. Apakah macet di jalan arteri menyebabkan sewa kamar naik? Juga bukan. Keduanya adalah dua AKIBAT serentak yang dipicu oleh SATU PENYEBAB BERSAMA (*common cause*), yaitu ledakan migrasi pekerja baru yang memadati kota tanpa kesiapan hunian dan transportasi!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Uji Kausalitas Langsung:**\n  - Apakah (1) $\\implies$ (2)? Kenaikan harga sewa kamar kos tidak secara langsung menciptakan kemacetan lalu lintas jalan arteri.\n  - Apakah (2) $\\implies$ (1)? Kemacetan waktu tempuh komuter tidak secara langsung menaikkan harga sewa kamar petak.\n- **Analisis Faktor Penyebab Bersama (*Common Cause*):**\n  - Terdapat faktor pemicu makro: Pembukaan kawasan industri baru yang memicu arus urbanisasi/migrasi masuk puluhan ribu tenaga kerja secara massal ($C$).\n  - $C \\implies$ Ledakan permintaan hunian di kawasan penyangga $\\rightarrow$ tarif sewa melonjak $35\\%$ (Pernyataan 1).\n  - $C \\implies$ Ledakan volume perjalanan harian pekerja komuter $\\rightarrow$ waktu tempuh macet melipat ganda (Pernyataan 2).\n- Kesimpulan: Kedua pernyataan merupakan **akibat dari satu faktor penyebab bersama (*common cause*)**.\n\n**Jawaban: C**",
+        "quick_trick_markdown": "**Cara Cepat (Uji Hubungan Langsung vs Penyebab Bersama):**\n\n1. Tanyakan: Apakah sewa kamar kos mahal membikin jalanan macet? Tidak.\n2. Tanyakan: Apakah jalanan macet membikin pemilik kos menaikkan harga sewa? Tidak.\n3. Mengapa dua-duanya terjadi berbarengan? Karena ledakan ribuan orang baru pindah ke kota itu mencari kerja dan tempat tinggal!\n4. Ini adalah pola klasik *akibat dari satu penyebab bersama* (*common cause*).\n5. Jawaban yang tepat adalah pilihan **C**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyimpulkan hubungan sebab-akibat langsung yang keliru, karena inflasi biaya sewa properti bukan penyebab teknis macetnya kendaraan di jalan raya.\n- **Pilihan B Salah:** Kemacetan lalu lintas bukan faktor penggerak naiknya biaya sewa kamar indekos pekerja.\n- **Pilihan D Salah:** Mengaitkan fenomena urbanisasi modern dengan peristiwa masa lalu yang bertentangan tanpa dasar ilmiah.\n- **Pilihan E Salah:** Menganggap kedua data saling meniadakan, padahal keduanya merupakan indikator sosial terpadu dari dampak ledakan urbanisasi."
+    }
   ]
 };
 
@@ -914,6 +1442,182 @@ export const MATERIAL_PU_02_01: Material = {
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rumus Biimplikasi:** $P \\leftrightarrow (M \\land K)$\n  - $P$: Predikat Sangat Sehat\n  - $M$: Rasio modal $> 15\\%$\n  - $K$: Kredit macet $< 3\\%$\n- **Deduksi Bank Megantara:**\n  - $P = \\text{Benar}$.\n  - Agar $P \\leftrightarrow (M \\land K)$ bernilai Benar, maka $(M \\land K)$ wajib Benar.\n  - Akibatnya, Bank Megantara **pasti** memenuhi $M > 15\\%$ dan $K < 3\\%$.\n- **Deduksi Bank Sentosa:**\n  - $P = \\text{Salah}$ (gagal predikat).\n  - Agar biimplikasi bernilai Benar, maka $(M \\land K)$ wajib **Salah**.\n  - Fakta audit: Kredit macet Bank Sentosa adalah $2,1\\%$, artinya syarat $K$ bernilai Benar ($2,1\\% < 3\\%$).\n  - Agar konjungsi $(M \\land K)$ bernilai Salah sementara $K$ bernilai Benar, maka syarat $M$ harus bernilai **Salah** ($M \\le 15\\%$).\n  - Jadi, Bank Sentosa **pasti memiliki rasio kecukupan modal tidak lebih dari $15\\%$**.\n- **Kesimpulan:** Pernyataan A memadukan kedua kesimpulan yang telah terbukti secara valid.\n\n**Jawaban: A**",
       "quick_trick_markdown": "**Cara Cepat (Analisis Penyebab Kegagalan Biimplikasi):**\n\n1. Bank Megantara lolos predikat $\\rightarrow$ kedua syarat (modal $> 15\\%$ dan kredit macet $< 3\\%$) pasti terpenuhi.\n2. Bank Sentosa gagal predikat $\\rightarrow$ minimal salah satu syarat harus gugur.\n3. Karena data audit menunjukkan kredit macetnya sudah aman ($2,1\\% < 3\\%$), maka satu-satunya penyebab kegagalan adalah syarat modalnya tidak terpenuhi ($\\le 15\\%$).\n4. Pilihan yang menyatakan modal Megantara $> 15\\%$ dan modal Sentosa $\\le 15\\%$ adalah pilihan **A**.",
       "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Bertentangan dengan fakta teks wacana yang secara gamblang menyatakan kredit macet Bank Sentosa adalah 2,1% (di bawah 3%).\n- **Pilihan C Salah:** Bank Megantara sudah dipastikan memperoleh predikat Sangat Sehat, sehingga kredit macetnya pasti di bawah 3%, bukan belum tentu.\n- **Pilihan D Salah:** Kredit macet < 3% hanya satu dari dua syarat wajib; bank tetap tidak dapat predikat jika rasio modalnya tidak mencapai > 15%.\n- **Pilihan E Salah:** Menurunkan kredit macet ke 1,5% tidak ada gunanya jika akar kegagalannya adalah rasio modal yang belum melebihi 15%."
+    }
+,
+    {
+        "example_id": "pu-02-01-ex4",
+        "variation_name": "Variasi 4: Evaluasi Nilai Kebenaran Status Peringatan Dini Hidrometeorologi (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Berdasarkan protokol operasional Badan Mitigasi Bencana, status Siaga Hidrometeorologi pada suatu Daerah Aliran Sungai (DAS) diterbitkan jika dan hanya jika kawasan hulu memenuhi kriteria:\n\n*\"Curah hujan harian melampaui 100 mm DAN durasi hujan lebat berlangsung lebih dari 4 jam terus-menerus, ATAU sensor telemetri mencatat kenaikan muka air bendung hulu melampaui batas kritis 250 cm.\"*\n\nData stasiun pemantau DAS Citarik pada hari Senin mencatat:\n- Curah hujan harian mencapai 118 mm.\n- Durasi hujan lebat tercatat selama 3 jam, lalu mereda menjadi gerimis.\n- Sensor telemetri bendung hulu mencatat kenaikan muka air mencapai 268 cm.",
+        "question_markdown": "Berdasarkan kaidah logika proposisi, manakah kesimpulan yang **pasti bernilai benar** mengenai penerbitan status Siaga pada DAS Citarik pada hari Senin?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Status Siaga tidak diterbitkan karena durasi hujan lebat hanya berlangsung 3 jam."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Status Siaga pasti diterbitkan karena sensor telemetri bendung hulu melampaui batas kritis 250 cm meskipun durasi hujan lebat kurang dari 4 jam."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Status Siaga hanya dapat diterbitkan apabila ketiga parameter pemantauan hidrometeorologi terpenuhi secara serentak."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Status Siaga tidak dapat diterbitkan karena ketinggian muka air bendung hulu belum melampaui ambang batas 300 cm."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Kenaikan muka air bendung hulu tidak berpengaruh terhadap keputusan penerbitan status siaga bencana."
+            }
+        ],
+        "correct_answer": "B",
+        "hint_markdown": "💡 **Petunjuk Soal:** Terjemahkan aturan ke simbol logika: `(Curah Hujan > 100 mm DAN Durasi > 4 jam) ATAU Muka Air Bendung > 250 cm`. Karena dihubungkan oleh kata ATAU (disjungsi), jika cabang muka air bendung terpenuhi (268 cm > 250 cm), maka status Siaga WAJIB diterbitkan walau durasi hujan cuma 3 jam!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika Regulasi:** $S \\leftrightarrow ((H \\land D) \\lor B)$\n  - $S$: Status Siaga diterbitkan\n  - $H$: Curah hujan $> 100$ mm\n  - $D$: Durasi hujan lebat $> 4$ jam\n  - $B$: Ketinggian muka air bendung $> 250$ cm\n- **Evaluasi Nilai Kebenaran DAS Citarik:**\n  - $H = \\text{Benar}$ ($118 > 100$ mm)\n  - $D = \\text{Salah}$ ($3 \\le 4$ jam)\n  - Blok Konjungsi: $H \\land D = B \\land S = \\text{Salah}$\n  - $B = \\text{Benar}$ ($268 > 250$ cm)\n  - Blok Disjungsi: $(H \\land D) \\lor B = S \\lor B = \\text{Benar}$\n- **Kesimpulan:** Karena sisi kanan formula bernilai Benar, maka status Siaga ($S$) **pasti diterbitkan**.\n\n**Jawaban: B**",
+        "quick_trick_markdown": "**Cara Cepat (Periksa Jalur Penyelamat ATAU):**\n\n1. Aturan memiliki operator disjungsi *\"ATAU sensor muka air bendung > 250 cm\"*.\n2. Cek data sensor bendung: 268 cm ($> 250$ cm) $\\implies$ Jalur disjungsi langsung bernilai BENAR.\n3. Kegagalan durasi hujan (hanya 3 jam) tidak menggugurkan keputusan karena sudah diselamatkan oleh ketinggian bendung.\n4. Status Siaga pasti diterbitkan $\\implies$ Pilihan **B**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan operator disjungsi inklusif; kegagalan durasi hujan tidak membatalkan penerbitan siaga karena syarat alternatif bendung terpenuhi.\n- **Pilihan C Salah:** Keliru menganggap seluruh syarat harus terpenuhi serentak (menganggap disjungsi sebagai konjungsi murni).\n- **Pilihan D Salah:** Ambang batas kritis resmi pada teks wacana adalah 250 cm, bukan 300 cm.\n- **Pilihan E Salah:** Bertentangan langsung dengan teks wacana yang secara eksplisit memuat parameter bendung sebagai kriteria penentu status siaga."
+    },
+    {
+        "example_id": "pu-02-01-ex5",
+        "variation_name": "Variasi 5: Analisis Syarat Cukup vs Syarat Perlu Insentif Pajak Kendaraan Rendah Emisi (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Kementerian Keuangan memberlakukan regulasi insentif fiskal industri otomotif:\n\n*\"Jika sebuah pabrikan otomotif memproduksi kendaraan listrik berbasis baterai murni dengan Tingkat Komponen Dalam Negeri (TKDN) minimal 40%, maka pabrikan tersebut berhak memperoleh fasilitas pembebasan PPnBM 0%.\"*\n\nBerdasarkan laporan verifikasi kementerian terkait pada kuartal ini:\n(1) PT Maju Motor tidak memperoleh fasilitas pembebasan PPnBM 0%.\n(2) PT Garda Otomotif memperoleh fasilitas pembebasan PPnBM 0%.",
+        "question_markdown": "Berdasarkan kaidah penarikan kesimpulan logika implikasi, simpulan manakah yang **pasti bernilai benar**?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "PT Garda Otomotif pasti memproduksi kendaraan listrik baterai murni dengan TKDN minimal 40%."
+            },
+            {
+                "key": "B",
+                "text_markdown": "PT Maju Motor memproduksi kendaraan listrik baterai murni dengan TKDN tepat 40%."
+            },
+            {
+                "key": "C",
+                "text_markdown": "PT Garda Otomotif dipastikan tidak memproduksi kendaraan listrik baterai murni."
+            },
+            {
+                "key": "D",
+                "text_markdown": "PT Maju Motor pasti tidak memproduksi kendaraan listrik baterai murni dengan TKDN minimal 40%."
+            },
+            {
+                "key": "E",
+                "text_markdown": "PT Maju Motor dan PT Garda Otomotif sama-sama memenuhi syarat batas minimal TKDN 40%."
+            }
+        ],
+        "correct_answer": "D",
+        "hint_markdown": "💡 **Petunjuk Soal:** Bentuk implikasi `p → q`: `TKDN ≥ 40% → Bebas PPnBM`. Kontraposisinya: `~q → ~p` (Jika tidak bebas PPnBM, maka TKDN tidak mencapai 40%). PT Maju Motor tidak bebas PPnBM (~q), maka PT Maju Motor pasti tidak memenuhi syarat TKDN 40% (~p). Hati-hati dengan PT Garda: memperoleh bebas PPnBM (q) belum tentu karena syarat p (bisa insentif skema lain)!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Logika Implikasi:** $p \\rightarrow q$\n  - $p$: Memproduksi kendaraan listrik baterai murni dengan $\\text{TKDN} \\ge 40\\%$ (Syarat Cukup / Anteseden).\n  - $q$: Berhak memperoleh fasilitas pembebasan PPnBM $0\\%$ (Syarat Perlu / Konsekuen).\n- **Analisis PT Maju Motor (Kaidah Modus Tollens / Kontraposisi):**\n  - Diketahui fakta $\\sim q$ (tidak memperoleh fasilitas pembebasan PPnBM $0\\%$).\n  - Sesuai hukum ekuivalensi kontraposisi: $(p \\rightarrow q) \\land \\sim q \\vdash \\sim p$.\n  - Maka PT Maju Motor **pasti tidak memproduksi kendaraan listrik baterai murni dengan TKDN minimal 40%** (Pilihan D bernilai Benar mutlak).\n- **Analisis PT Garda Otomotif (Jebakan Menegaskan Konsekuen):**\n  - Fakta: $q$ (memperoleh pembebasan PPnBM $0\\%$).\n  - Menyimpulkan $p$ dari $q$ adalah sesat pikir *affirming the consequent*. Pabrikan bisa saja mendapatkan insentif melalui skema kerja sama investasi khusus lainnya. Status TKDN PT Garda berada pada taraf belum tentu.\n\n**Jawaban: D**",
+        "quick_trick_markdown": "**Cara Cepat (Modus Tollens & Waspadai Affirming Consequent):**\n\n1. Aturan: Syarat $p \\rightarrow$ Akibat $q$.\n2. Fakta Maju Motor: Akibat tidak terjadi ($\\sim q$) $\\implies$ Syarat pasti tidak terpenuhi ($\\sim p$).\n3. Maka PT Maju Motor pasti tidak memenuhi TKDN $40\\%$ $\\implies$ Pilihan **D**.\n4. Coret opsi **A** dan **C** mengenai Garda Otomotif karena menegaskan konsekuen ($q \\rightarrow p$ tidak valid).",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terjebak kesalahan berpikir *affirming the consequent*; memperoleh fasilitas 0% belum tentu karena TKDN 40% (bisa karena jalur insentif investasi perintis lain).\n- **Pilihan B Salah:** Mengklaim angka TKDN tepat 40% secara spekulatif tanpa ada bukti pengujian.\n- **Pilihan C Salah:** Memvonis bahwa Garda Otomotif pasti tidak memproduksi EV baterai, yang merupakan klaim tanpa dasar premis.\n- **Pilihan E Salah:** PT Maju Motor telah terbukti secara deduktif tidak memenuhi syarat TKDN minimal 40%."
+    },
+    {
+        "example_id": "pu-02-01-ex6",
+        "variation_name": "Variasi 6: Logika Biimplikasi Diagnosis Sindrom Metabolik Klinis (Level: Sulit / HOTS)",
+        "difficulty": "hard",
+        "question_type": "standard_mc",
+        "context_markdown": "Sebuah konsensus klinis endokrinologi menetapkan aturan diagnostik biimplikasi berikut:\n\n*\"Seorang pasien terdiagnosis menderita Sindrom Kardiometabolik Primer jika dan hanya jika pasien tersebut memiliki lingkar pinggang berlebih (pria > 90 cm atau wanita > 80 cm) SERTA memenuhi minimal satu dari dua kriteria: kadar trigliserida darah $\\ge 150$ mg/dL ATAU tekanan darah sistolik $\\ge 130$ mmHg.\"*\n\nHasil rekam medis mencatat profil dua pasien:\n- **Tuan Hendra (Pria):** Memiliki lingkar pinggang 96 cm, tekanan darah sistolik 122 mmHg, dan secara resmi divonis terdiagnosis menderita Sindrom Kardiometabolik Primer.\n- **Nyonya Ratna (Wanita):** Dinyatakan TIDAK menderita Sindrom Kardiometabolik Primer, meskipun kadar trigliserida darahnya tinggi yaitu 175 mg/dL.",
+        "question_markdown": "Berdasarkan kaidah logika biimplikasi tersebut, pernyataan manakah yang **pasti bernilai benar**?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Tuan Hendra pasti memiliki kadar trigliserida darah $\\ge 150$ mg/dL, dan Nyonya Ratna pasti memiliki lingkar pinggang tidak lebih dari 80 cm."
+            },
+            {
+                "key": "B",
+                "text_markdown": "Tuan Hendra dipastikan memiliki kadar trigliserida darah di bawah 150 mg/dL."
+            },
+            {
+                "key": "C",
+                "text_markdown": "Nyonya Ratna dipastikan memiliki lingkar pinggang lebih dari 80 cm."
+            },
+            {
+                "key": "D",
+                "text_markdown": "Semua pasien wanita dengan kadar trigliserida darah $\\ge 150$ mg/dL pasti menderita Sindrom Kardiometabolik Primer."
+            },
+            {
+                "key": "E",
+                "text_markdown": "Tuan Hendra dipastikan bebas dari seluruh risiko gangguan metabolisme lemak darah."
+            }
+        ],
+        "correct_answer": "A",
+        "hint_markdown": "💡 **Petunjuk Soal:** Rumus biimplikasi: `Diagnosis ↔ (Lingkar Pinggang DAN (Trigliserida ATAU Tensi))`. Pada Tuan Hendra: Diagnosis Benar, Lingkar Pinggang Benar, Tensi Salah. Agar kurung disjungsi Benar, maka Trigliserida Tuan Hendra WAJIB Benar (≥ 150). Pada Ny. Ratna: Diagnosis Salah, tapi Trigliseridanya Benar (175 ≥ 150). Agar kurung konjungsi bernilai Salah, maka Lingkar Pinggang Ny. Ratna WAJIB bernilai Salah (≤ 80 cm)!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Biimplikasi Diagnostik:** $D \\leftrightarrow (L \\land (T \\lor S))$\n  - $D$: Terdiagnosis Sindrom Kardiometabolik Primer\n  - $L$: Lingkar pinggang berlebih (Pria $> 90$ cm, Wanita $> 80$ cm)\n  - $T$: Trigliserida $\\ge 150$ mg/dL\n  - $S$: Tekanan darah sistolik $\\ge 130$ mmHg\n- **Deduksi Tuan Hendra ($D = \\text{Benar}$):**\n  - Karena $D = B$, maka sisi kanan $L \\land (T \\lor S)$ wajib bernilai **Benar**.\n  - Pria: lingkar pinggang $96$ cm $> 90$ cm $\\implies L = \\text{Benar}$.\n  - Tensi: $122 < 130$ mmHg $\\implies S = \\text{Salah}$.\n  - Agar $(T \\lor S) = (T \\lor S) = \\text{Benar}$, maka syarat trigliserida ($T$) **wajib bernilai Benar** ($T \\ge 150$ mg/dL).\n- **Deduksi Nyonya Ratna ($D = \\text{Salah}$):**\n  - Karena $D = S$, maka sisi kanan $L \\land (T \\lor S)$ wajib bernilai **Salah**.\n  - Fakta: Trigliserida $175 \\ge 150$ mg/dL $\\implies T = \\text{Benar}$.\n  - Maka blok disjungsi $(T \\lor S) = (B \\lor S) = \\text{Benar}$.\n  - Agar konjungsi $L \\land \\text{Benar}$ menghasilkan nilai **Salah**, maka syarat lingkar pinggang ($L$) **wajib bernilai Salah** ($L \\le 80$ cm).\n- **Kesimpulan:** Tuan Hendra memiliki trigliserida $\\ge 150$ mg/dL dan Nyonya Ratna memiliki lingkar pinggang $\\le 80$ cm (Pilihan A).\n\n**Jawaban: A**",
+        "quick_trick_markdown": "**Cara Cepat (Deduksi Komponen Kegagalan dan Keterpenuhan Biimplikasi):**\n\n1. Tuan Hendra positif $\\implies$ Semua syarat harus terpenuhi. Tensi darahnya normal ($< 130$), jadi trigliseridanya WAJIB tinggi ($\\ge 150$).\n2. Ny. Ratna negatif $\\implies$ Syarat harus ada yang gugur. Trigliseridanya sudah tinggi ($175$), jadi yang menggugurkannya WAJIB lingkar pinggangnya yang normal ($\\le 80$ cm).\n3. Cari opsi yang memuat kedua fakta ini $\\implies$ Pilihan **A**.",
+        "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Bertentangan dengan deduksi; jika trigliserida Hendra di bawah 150, maka vonis diagnosisnya seharusnya negatif.\n- **Pilihan C Salah:** Jika lingkar pinggang Ratna > 80 cm, dengan trigliserida 175 mg/dL Ratna seharusnya positif menderita sindrom metabolik.\n- **Pilihan D Salah:** Trigliserida tinggi hanya satu dari dua cabang disjungsi, pasien tetap bebas diagnosis jika lingkar pinggangnya normal.\n- **Pilihan E Salah:** Tuan Hendra justru terbukti secara deduktif memiliki trigliserida tinggi di atas ambang normal."
+    },
+    {
+        "example_id": "pu-02-01-ex7",
+        "variation_name": "Variasi 7: Penentuan Nilai Kebenaran Protokol Autentikasi Zero-Trust Multi-Faktor (Level: Sedang)",
+        "difficulty": "medium",
+        "question_type": "standard_mc",
+        "context_markdown": "Sebuah sistem keamanan siber perusahaan menerapkan protokol autentikasi akses *Zero Trust*:\n\n*\"Permintaan akses ke basis data server utama hanya akan diberikan (bernilai Benar) jika pengguna berhasil memvalidasi kunci kriptografi perangkat terdaftar DAN memverifikasi kode OTP dinamis, ATAU pengguna melakukan verifikasi biometrik sidik jari tersertifikasi.\"*\n\nSistem mencatat empat upaya percobaan akses oleh teknisi pada jam operasional:\n- **Percobaan 1:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 2:** Kunci kriptografi perangkat valid, kode OTP dinamis gagal divalidasi, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 3:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis gagal divalidasi, tetapi verifikasi biometrik sidik jari tersertifikasi berhasil diverifikasi.\n- **Percobaan 4:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik sidik jari gagal diverifikasi.",
+        "question_markdown": "Berdasarkan kaidah logika proposisi majemuk, percobaan akses manakah yang **berhasil memperoleh izin akses ke basis data**?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Percobaan 1 saja"
+            },
+            {
+                "key": "B",
+                "text_markdown": "Percobaan 2 saja"
+            },
+            {
+                "key": "C",
+                "text_markdown": "Percobaan 3 saja"
+            },
+            {
+                "key": "D",
+                "text_markdown": "Percobaan 1 dan Percobaan 4"
+            },
+            {
+                "key": "E",
+                "text_markdown": "Tidak ada percobaan yang berhasil memperoleh izin akses"
+            }
+        ],
+        "correct_answer": "C",
+        "hint_markdown": "💡 **Petunjuk Soal:** Analisis formula logika: `(Kriptografi Perangkat DAN OTP) ATAU Biometrik`. Karena dipisahkan oleh kata ATAU (disjungsi), jika verifikasi biometrik berhasil (Percobaan 3), akses langsung diberikan meskipun kunci kriptografi dan OTP gagal! Sebaliknya pada Percobaan 1 dan 2, syarat konjungsi (DAN) gagal dan biometrik tidak ada, maka akses ditolak.",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika Akses:** $\\text{Akses} = (K \\land O) \\lor B$\n  - $K$: Kunci kriptografi valid\n  - $O$: Kode OTP dinamis valid\n  - $B$: Verifikasi biometrik valid\n- **Evaluasi Tiap Percobaan:**\n  - **Percobaan 1:** $K = S$, $O = B$, $B = S \\implies (S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Akses Ditolak).\n  - **Percobaan 2:** $K = B$, $O = S$, $B = S \\implies (B \\land S) \\lor S = S \\lor S = \\text{Salah}$ (Akses Ditolak).\n  - **Percobaan 3:** $K = S$, $O = S$, $B = B \\implies (S \\land S) \\lor B = S \\lor B = \\text{Benar}$ (Akses Diberikan!).\n  - **Percobaan 4:** $K = S$, $O = B$, $B = S \\implies (S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Akses Ditolak).\n- **Kesimpulan:** Hanya Percobaan 3 yang berhasil memperoleh izin akses.\n\n**Jawaban: C**",
+        "quick_trick_markdown": "**Cara Cepat (Cek Jalur Disjungsi Independen):**\n\n1. Perhatikan kata *\"ATAU verifikasi biometrik\"*.\n2. Biometrik yang berhasil langsung meloloskan pengguna tanpa memedulikan kegagalan kunci kriptografi dan OTP.\n3. Periksa percobaan yang biometriknya valid: hanya Percobaan 3.\n4. Percobaan 1, 2, dan 4 gagal di konjungsi DAN tidak memiliki biometrik yang valid.\n5. Jawaban tepat adalah pilihan **C**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Percobaan 1 gagal memenuhi konjungsi (kriptografi gagal) dan tidak menjalankan biometrik.\n- **Pilihan B Salah:** Percobaan 2 gagal memenuhi konjungsi (OTP gagal) dan tidak menjalankan biometrik.\n- **Pilihan D Salah:** Baik Percobaan 1 maupun Percobaan 4 sama-sama menghasilkan nilai logika Salah.\n- **Pilihan E Salah:** Percobaan 3 secara sah menghasilkan nilai logika Benar berkat keberhasilan verifikasi biometrik."
+    },
+    {
+        "example_id": "pu-02-01-ex8",
+        "variation_name": "Variasi 8: Evaluasi Konsistensi Proposisi Majemuk Pewarisan Tanah Ulayat Adat (Level: Mudah)",
+        "difficulty": "easy",
+        "question_type": "standard_mc",
+        "context_markdown": "Dewan Adat Negeri menetapkan kaidah adat mengenai hak pengelolaan tanah ulayat marga:\n\n*\"Seorang warga adat berhak memperoleh hak garap tanah ulayat jika bergaris keturunan matrilineal sah DENGAN ketentuan: menetap di wilayah desa adat DAN ikut serta dalam upacara musyawarah adat tahunan, KECUALI warga tersebut telah memperoleh izin khusus dari ketua adat.\"*\n\n(Catatan: frasa *\"kecuali...\"* berkedudukan ekuivalen secara logika dengan operator disjungsi *\"ATAU telah memperoleh izin khusus dari ketua adat\"*).\n\nBerikut profil tiga warga adat:\n- **Umar:** Bergaris keturunan matrilineal sah, menetap di perantauan luar pulau (tidak menetap di desa), tidak ikut musyawarah adat, dan tidak mengantongi izin khusus ketua adat.\n- **Hamid:** Bukan garis keturunan matrilineal marga, tetapi menetap di desa adat dan memiliki izin khusus ketua adat.\n- **Zainab:** Bergaris keturunan matrilineal sah, menetap di desa adat, rutin hadir upacara musyawarah adat tahunan, dan tidak memiliki izin khusus ketua adat.",
+        "question_markdown": "Berdasarkan kaidah aturan logika adat tersebut, siapakah warga yang **pasti berhak** memperoleh hak garap tanah ulayat?",
+        "options": [
+            {
+                "key": "A",
+                "text_markdown": "Umar saja"
+            },
+            {
+                "key": "B",
+                "text_markdown": "Hamid saja"
+            },
+            {
+                "key": "C",
+                "text_markdown": "Umar dan Zainab"
+            },
+            {
+                "key": "D",
+                "text_markdown": "Zainab dan Hamid"
+            },
+            {
+                "key": "E",
+                "text_markdown": "Zainab saja"
+            }
+        ],
+        "correct_answer": "E",
+        "hint_markdown": "💡 **Petunjuk Soal:** Cermati struktur syarat: Syarat mutlak utama adalah garis matrilineal sah ($M$), yang digabung dengan syarat `(Menetap DAN Musyawarah) ATAU Izin Ketua Adat`. Hamid otomatis gugur karena bukan garis matrilineal ($M$ = Salah). Umar gugur karena merantau, absen musyawarah, dan tanpa izin. Hanya Zainab yang memenuhi garis matrilineal serta menetap dan ikut musyawarah!",
+        "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika Aturan Adat:** $\\text{Hak Garap} = M \\land ((D \\land U) \\lor I)$\n  - $M$: Garis keturunan matrilineal sah\n  - $D$: Menetap di wilayah desa adat\n  - $U$: Ikut upacara musyawarah adat tahunan\n  - $I$: Memperoleh izin khusus ketua adat\n- **Evaluasi Tiap Profil Warga:**\n  - **Umar:** $M = B$, $D = S$, $U = S$, $I = S \\implies B \\land ((S \\land S) \\lor S) = B \\land (S \\lor S) = B \\land S = \\text{Salah}$ (Tidak Berhak).\n  - **Hamid:** $M = S$, $D = B$, $I = B \\implies S \\land ((B \\land U) \\lor B) = S \\land B = \\text{Salah}$ (Tidak Berhak karena syarat utama $M$ mutlak wajib Benar).\n  - **Zainab:** $M = B$, $D = B$, $U = B$, $I = S \\implies B \\land ((B \\land B) \\lor S) = B \\land (B \\lor S) = B \\land B = \\text{Benar}$ (Pasti Berhak!).\n- **Kesimpulan:** Hanya Zainab yang berhak memperoleh hak garap tanah ulayat.\n\n**Jawaban: E**",
+        "quick_trick_markdown": "**Cara Cepat (Eliminasi Syarat Mutlak Utama):**\n\n1. Syarat utama di luar kurung adalah garis matrilineal ($M$). Siapa yang bukan matrilineal langsung coret!\n2. Hamid bukan garis matrilineal $\\implies$ Hamid langsung gugur.\n3. Umar di perantauan dan tanpa izin adat $\\implies$ Umar gugur.\n4. Zainab matrilineal sah, tinggal di desa, dan ikut musyawarah $\\implies$ Zainab lolos murni.\n5. Yang berhak hanyalah Zainab saja $\\implies$ Pilihan **E**.",
+        "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Umar gagal karena tidak menetap di desa, absen musyawarah, dan tidak memiliki izin khusus ketua adat.\n- **Pilihan B Salah:** Hamid gagal karena bukan berasal dari garis keturunan matrilineal yang merupakan syarat mutlak utama aturan adat.\n- **Pilihan C Salah:** Umar tidak memenuhi syarat hak garap tanah ulayat.\n- **Pilihan D Salah:** Hamid tidak memenuhi syarat garis keturunan matrilineal."
     }
   ]
 };

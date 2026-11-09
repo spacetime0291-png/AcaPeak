@@ -115,7 +115,8 @@ function generateSummary() {
     'scripts/copy_assets.mjs': 'Post-build script: mirrors dist assets, generates .nojekyll & 404.html for GitHub Pages',
     'scripts/export_materials.mjs': 'Exports TS materials from puMaterials.ts to JSON files in public & root content',
     'scripts/generate_summary.mjs': 'Auto-generates PROJECT_CONTEXT.md to keep codebase reference always up-to-date',
-    'PU-DRILLING-TRACKER.md': 'Governance doc, JSON schema reference, anti-duplication log for PU question drilling',
+    'PU-STATE.json': 'Machine state tracker for UTBK PU drilling question batch generation (targets, counts, progress)',
+    '.antigravity/rules/pu-rules.md': 'Governance rules directive, KaTeX standards, and blueprint curriculum for PU questions',
     'vite.config.ts': 'Vite 6 build config with Tailwind CSS & React plugins',
   };
 
@@ -157,7 +158,8 @@ d:/web/
 │   ├── types/                     # TypeScript master contracts & interfaces
 │   ├── App.tsx                    # Main state machine, router search params & views
 │   └── index.css / main.tsx       # Entry styling & ReactDOM mount
-├── PU-DRILLING-TRACKER.md         # Single Source of Truth penambahan soal PU
+├── .antigravity/rules/pu-rules.md  # Governance rules directive & blueprint kurikulum PU
+├── PU-STATE.json                   # Machine state tracker target drilling soal
 └── PROJECT_CONTEXT.md             # File ini (Rangkuman Token-Efficient untuk AI)
 \`\`\`
 

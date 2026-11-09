@@ -136,6 +136,181 @@
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Rumus Biimplikasi:** $P \\leftrightarrow (M \\land K)$\n  - $P$: Predikat Sangat Sehat\n  - $M$: Rasio modal $> 15\\%$\n  - $K$: Kredit macet $< 3\\%$\n- **Deduksi Bank Megantara:**\n  - $P = \\text{Benar}$.\n  - Agar $P \\leftrightarrow (M \\land K)$ bernilai Benar, maka $(M \\land K)$ wajib Benar.\n  - Akibatnya, Bank Megantara **pasti** memenuhi $M > 15\\%$ dan $K < 3\\%$.\n- **Deduksi Bank Sentosa:**\n  - $P = \\text{Salah}$ (gagal predikat).\n  - Agar biimplikasi bernilai Benar, maka $(M \\land K)$ wajib **Salah**.\n  - Fakta audit: Kredit macet Bank Sentosa adalah $2,1\\%$, artinya syarat $K$ bernilai Benar ($2,1\\% < 3\\%$).\n  - Agar konjungsi $(M \\land K)$ bernilai Salah sementara $K$ bernilai Benar, maka syarat $M$ harus bernilai **Salah** ($M \\le 15\\%$).\n  - Jadi, Bank Sentosa **pasti memiliki rasio kecukupan modal tidak lebih dari $15\\%$**.\n- **Kesimpulan:** Pernyataan A memadukan kedua kesimpulan yang telah terbukti secara valid.\n\n**Jawaban: A**",
       "quick_trick_markdown": "**Cara Cepat (Analisis Penyebab Kegagalan Biimplikasi):**\n\n1. Bank Megantara lolos predikat $\\rightarrow$ kedua syarat (modal $> 15\\%$ dan kredit macet $< 3\\%$) pasti terpenuhi.\n2. Bank Sentosa gagal predikat $\\rightarrow$ minimal salah satu syarat harus gugur.\n3. Karena data audit menunjukkan kredit macetnya sudah aman ($2,1\\% < 3\\%$), maka satu-satunya penyebab kegagalan adalah syarat modalnya tidak terpenuhi ($\\le 15\\%$).\n4. Pilihan yang menyatakan modal Megantara $> 15\\%$ dan modal Sentosa $\\le 15\\%$ adalah pilihan **A**.",
       "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Bertentangan dengan fakta teks wacana yang secara gamblang menyatakan kredit macet Bank Sentosa adalah 2,1% (di bawah 3%).\n- **Pilihan C Salah:** Bank Megantara sudah dipastikan memperoleh predikat Sangat Sehat, sehingga kredit macetnya pasti di bawah 3%, bukan belum tentu.\n- **Pilihan D Salah:** Kredit macet < 3% hanya satu dari dua syarat wajib; bank tetap tidak dapat predikat jika rasio modalnya tidak mencapai > 15%.\n- **Pilihan E Salah:** Menurunkan kredit macet ke 1,5% tidak ada gunanya jika akar kegagalannya adalah rasio modal yang belum melebihi 15%."
+    },
+    {
+      "example_id": "pu-02-01-ex4",
+      "variation_name": "Variasi 4: Evaluasi Nilai Kebenaran Status Peringatan Dini Hidrometeorologi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Berdasarkan protokol operasional Badan Mitigasi Bencana, status Siaga Hidrometeorologi pada suatu Daerah Aliran Sungai (DAS) diterbitkan jika dan hanya jika kawasan hulu memenuhi kriteria:\n\n*\"Curah hujan harian melampaui 100 mm DAN durasi hujan lebat berlangsung lebih dari 4 jam terus-menerus, ATAU sensor telemetri mencatat kenaikan muka air bendung hulu melampaui batas kritis 250 cm.\"*\n\nData stasiun pemantau DAS Citarik pada hari Senin mencatat:\n- Curah hujan harian mencapai 118 mm.\n- Durasi hujan lebat tercatat selama 3 jam, lalu mereda menjadi gerimis.\n- Sensor telemetri bendung hulu mencatat kenaikan muka air mencapai 268 cm.",
+      "question_markdown": "Berdasarkan kaidah logika proposisi, manakah kesimpulan yang **pasti bernilai benar** mengenai penerbitan status Siaga pada DAS Citarik pada hari Senin?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Status Siaga tidak diterbitkan karena durasi hujan lebat hanya berlangsung 3 jam."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Status Siaga pasti diterbitkan karena sensor telemetri bendung hulu melampaui batas kritis 250 cm meskipun durasi hujan lebat kurang dari 4 jam."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Status Siaga hanya dapat diterbitkan apabila ketiga parameter pemantauan hidrometeorologi terpenuhi secara serentak."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Status Siaga tidak dapat diterbitkan karena ketinggian muka air bendung hulu belum melampaui ambang batas 300 cm."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Kenaikan muka air bendung hulu tidak berpengaruh terhadap keputusan penerbitan status siaga bencana."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Terjemahkan aturan ke simbol logika: `(Curah Hujan > 100 mm DAN Durasi > 4 jam) ATAU Muka Air Bendung > 250 cm`. Karena dihubungkan oleh kata ATAU (disjungsi), jika cabang muka air bendung terpenuhi (268 cm > 250 cm), maka status Siaga WAJIB diterbitkan walau durasi hujan cuma 3 jam!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika Regulasi:** $S \\leftrightarrow ((H \\land D) \\lor B)$\n  - $S$: Status Siaga diterbitkan\n  - $H$: Curah hujan $> 100$ mm\n  - $D$: Durasi hujan lebat $> 4$ jam\n  - $B$: Ketinggian muka air bendung $> 250$ cm\n- **Evaluasi Nilai Kebenaran DAS Citarik:**\n  - $H = \\text{Benar}$ ($118 > 100$ mm)\n  - $D = \\text{Salah}$ ($3 \\le 4$ jam)\n  - Blok Konjungsi: $H \\land D = B \\land S = \\text{Salah}$\n  - $B = \\text{Benar}$ ($268 > 250$ cm)\n  - Blok Disjungsi: $(H \\land D) \\lor B = S \\lor B = \\text{Benar}$\n- **Kesimpulan:** Karena sisi kanan formula bernilai Benar, maka status Siaga ($S$) **pasti diterbitkan**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Periksa Jalur Penyelamat ATAU):**\n\n1. Aturan memiliki operator disjungsi *\"ATAU sensor muka air bendung > 250 cm\"*.\n2. Cek data sensor bendung: 268 cm ($> 250$ cm) $\\implies$ Jalur disjungsi langsung bernilai BENAR.\n3. Kegagalan durasi hujan (hanya 3 jam) tidak menggugurkan keputusan karena sudah diselamatkan oleh ketinggian bendung.\n4. Status Siaga pasti diterbitkan $\\implies$ Pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan operator disjungsi inklusif; kegagalan durasi hujan tidak membatalkan penerbitan siaga karena syarat alternatif bendung terpenuhi.\n- **Pilihan C Salah:** Keliru menganggap seluruh syarat harus terpenuhi serentak (menganggap disjungsi sebagai konjungsi murni).\n- **Pilihan D Salah:** Ambang batas kritis resmi pada teks wacana adalah 250 cm, bukan 300 cm.\n- **Pilihan E Salah:** Bertentangan langsung dengan teks wacana yang secara eksplisit memuat parameter bendung sebagai kriteria penentu status siaga."
+    },
+    {
+      "example_id": "pu-02-01-ex5",
+      "variation_name": "Variasi 5: Analisis Syarat Cukup vs Syarat Perlu Insentif Pajak Kendaraan Rendah Emisi (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Kementerian Keuangan memberlakukan regulasi insentif fiskal industri otomotif:\n\n*\"Jika sebuah pabrikan otomotif memproduksi kendaraan listrik berbasis baterai murni dengan Tingkat Komponen Dalam Negeri (TKDN) minimal 40%, maka pabrikan tersebut berhak memperoleh fasilitas pembebasan PPnBM 0%.\"*\n\nBerdasarkan laporan verifikasi kementerian terkait pada kuartal ini:\n(1) PT Maju Motor tidak memperoleh fasilitas pembebasan PPnBM 0%.\n(2) PT Garda Otomotif memperoleh fasilitas pembebasan PPnBM 0%.",
+      "question_markdown": "Berdasarkan kaidah penarikan kesimpulan logika implikasi, simpulan manakah yang **pasti bernilai benar**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "PT Garda Otomotif pasti memproduksi kendaraan listrik baterai murni dengan TKDN minimal 40%."
+        },
+        {
+          "key": "B",
+          "text_markdown": "PT Maju Motor memproduksi kendaraan listrik baterai murni dengan TKDN tepat 40%."
+        },
+        {
+          "key": "C",
+          "text_markdown": "PT Garda Otomotif dipastikan tidak memproduksi kendaraan listrik baterai murni."
+        },
+        {
+          "key": "D",
+          "text_markdown": "PT Maju Motor pasti tidak memproduksi kendaraan listrik baterai murni dengan TKDN minimal 40%."
+        },
+        {
+          "key": "E",
+          "text_markdown": "PT Maju Motor dan PT Garda Otomotif sama-sama memenuhi syarat batas minimal TKDN 40%."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Bentuk implikasi `p → q`: `TKDN ≥ 40% → Bebas PPnBM`. Kontraposisinya: `~q → ~p` (Jika tidak bebas PPnBM, maka TKDN tidak mencapai 40%). PT Maju Motor tidak bebas PPnBM (~q), maka PT Maju Motor pasti tidak memenuhi syarat TKDN 40% (~p). Hati-hati dengan PT Garda: memperoleh bebas PPnBM (q) belum tentu karena syarat p (bisa insentif skema lain)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Struktur Logika Implikasi:** $p \\rightarrow q$\n  - $p$: Memproduksi kendaraan listrik baterai murni dengan $\\text{TKDN} \\ge 40\\%$ (Syarat Cukup / Anteseden).\n  - $q$: Berhak memperoleh fasilitas pembebasan PPnBM $0\\%$ (Syarat Perlu / Konsekuen).\n- **Analisis PT Maju Motor (Kaidah Modus Tollens / Kontraposisi):**\n  - Diketahui fakta $\\sim q$ (tidak memperoleh fasilitas pembebasan PPnBM $0\\%$).\n  - Sesuai hukum ekuivalensi kontraposisi: $(p \\rightarrow q) \\land \\sim q \\vdash \\sim p$.\n  - Maka PT Maju Motor **pasti tidak memproduksi kendaraan listrik baterai murni dengan TKDN minimal 40%** (Pilihan D bernilai Benar mutlak).\n- **Analisis PT Garda Otomotif (Jebakan Menegaskan Konsekuen):**\n  - Fakta: $q$ (memperoleh pembebasan PPnBM $0\\%$).\n  - Menyimpulkan $p$ dari $q$ adalah sesat pikir *affirming the consequent*. Pabrikan bisa saja mendapatkan insentif melalui skema kerja sama investasi khusus lainnya. Status TKDN PT Garda berada pada taraf belum tentu.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Modus Tollens & Waspadai Affirming Consequent):**\n\n1. Aturan: Syarat $p \\rightarrow$ Akibat $q$.\n2. Fakta Maju Motor: Akibat tidak terjadi ($\\sim q$) $\\implies$ Syarat pasti tidak terpenuhi ($\\sim p$).\n3. Maka PT Maju Motor pasti tidak memenuhi TKDN $40\\%$ $\\implies$ Pilihan **D**.\n4. Coret opsi **A** dan **C** mengenai Garda Otomotif karena menegaskan konsekuen ($q \\rightarrow p$ tidak valid).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terjebak kesalahan berpikir *affirming the consequent*; memperoleh fasilitas 0% belum tentu karena TKDN 40% (bisa karena jalur insentif investasi perintis lain).\n- **Pilihan B Salah:** Mengklaim angka TKDN tepat 40% secara spekulatif tanpa ada bukti pengujian.\n- **Pilihan C Salah:** Memvonis bahwa Garda Otomotif pasti tidak memproduksi EV baterai, yang merupakan klaim tanpa dasar premis.\n- **Pilihan E Salah:** PT Maju Motor telah terbukti secara deduktif tidak memenuhi syarat TKDN minimal 40%."
+    },
+    {
+      "example_id": "pu-02-01-ex6",
+      "variation_name": "Variasi 6: Logika Biimplikasi Diagnosis Sindrom Metabolik Klinis (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah konsensus klinis endokrinologi menetapkan aturan diagnostik biimplikasi berikut:\n\n*\"Seorang pasien terdiagnosis menderita Sindrom Kardiometabolik Primer jika dan hanya jika pasien tersebut memiliki lingkar pinggang berlebih (pria > 90 cm atau wanita > 80 cm) SERTA memenuhi minimal satu dari dua kriteria: kadar trigliserida darah $\\ge 150$ mg/dL ATAU tekanan darah sistolik $\\ge 130$ mmHg.\"*\n\nHasil rekam medis mencatat profil dua pasien:\n- **Tuan Hendra (Pria):** Memiliki lingkar pinggang 96 cm, tekanan darah sistolik 122 mmHg, dan secara resmi divonis terdiagnosis menderita Sindrom Kardiometabolik Primer.\n- **Nyonya Ratna (Wanita):** Dinyatakan TIDAK menderita Sindrom Kardiometabolik Primer, meskipun kadar trigliserida darahnya tinggi yaitu 175 mg/dL.",
+      "question_markdown": "Berdasarkan kaidah logika biimplikasi tersebut, pernyataan manakah yang **pasti bernilai benar**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Tuan Hendra pasti memiliki kadar trigliserida darah $\\ge 150$ mg/dL, dan Nyonya Ratna pasti memiliki lingkar pinggang tidak lebih dari 80 cm."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Tuan Hendra dipastikan memiliki kadar trigliserida darah di bawah 150 mg/dL."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Nyonya Ratna dipastikan memiliki lingkar pinggang lebih dari 80 cm."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Semua pasien wanita dengan kadar trigliserida darah $\\ge 150$ mg/dL pasti menderita Sindrom Kardiometabolik Primer."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tuan Hendra dipastikan bebas dari seluruh risiko gangguan metabolisme lemak darah."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Rumus biimplikasi: `Diagnosis ↔ (Lingkar Pinggang DAN (Trigliserida ATAU Tensi))`. Pada Tuan Hendra: Diagnosis Benar, Lingkar Pinggang Benar, Tensi Salah. Agar kurung disjungsi Benar, maka Trigliserida Tuan Hendra WAJIB Benar (≥ 150). Pada Ny. Ratna: Diagnosis Salah, tapi Trigliseridanya Benar (175 ≥ 150). Agar kurung konjungsi bernilai Salah, maka Lingkar Pinggang Ny. Ratna WAJIB bernilai Salah (≤ 80 cm)!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Biimplikasi Diagnostik:** $D \\leftrightarrow (L \\land (T \\lor S))$\n  - $D$: Terdiagnosis Sindrom Kardiometabolik Primer\n  - $L$: Lingkar pinggang berlebih (Pria $> 90$ cm, Wanita $> 80$ cm)\n  - $T$: Trigliserida $\\ge 150$ mg/dL\n  - $S$: Tekanan darah sistolik $\\ge 130$ mmHg\n- **Deduksi Tuan Hendra ($D = \\text{Benar}$):**\n  - Karena $D = B$, maka sisi kanan $L \\land (T \\lor S)$ wajib bernilai **Benar**.\n  - Pria: lingkar pinggang $96$ cm $> 90$ cm $\\implies L = \\text{Benar}$.\n  - Tensi: $122 < 130$ mmHg $\\implies S = \\text{Salah}$.\n  - Agar $(T \\lor S) = (T \\lor S) = \\text{Benar}$, maka syarat trigliserida ($T$) **wajib bernilai Benar** ($T \\ge 150$ mg/dL).\n- **Deduksi Nyonya Ratna ($D = \\text{Salah}$):**\n  - Karena $D = S$, maka sisi kanan $L \\land (T \\lor S)$ wajib bernilai **Salah**.\n  - Fakta: Trigliserida $175 \\ge 150$ mg/dL $\\implies T = \\text{Benar}$.\n  - Maka blok disjungsi $(T \\lor S) = (B \\lor S) = \\text{Benar}$.\n  - Agar konjungsi $L \\land \\text{Benar}$ menghasilkan nilai **Salah**, maka syarat lingkar pinggang ($L$) **wajib bernilai Salah** ($L \\le 80$ cm).\n- **Kesimpulan:** Tuan Hendra memiliki trigliserida $\\ge 150$ mg/dL dan Nyonya Ratna memiliki lingkar pinggang $\\le 80$ cm (Pilihan A).\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Deduksi Komponen Kegagalan dan Keterpenuhan Biimplikasi):**\n\n1. Tuan Hendra positif $\\implies$ Semua syarat harus terpenuhi. Tensi darahnya normal ($< 130$), jadi trigliseridanya WAJIB tinggi ($\\ge 150$).\n2. Ny. Ratna negatif $\\implies$ Syarat harus ada yang gugur. Trigliseridanya sudah tinggi ($175$), jadi yang menggugurkannya WAJIB lingkar pinggangnya yang normal ($\\le 80$ cm).\n3. Cari opsi yang memuat kedua fakta ini $\\implies$ Pilihan **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Bertentangan dengan deduksi; jika trigliserida Hendra di bawah 150, maka vonis diagnosisnya seharusnya negatif.\n- **Pilihan C Salah:** Jika lingkar pinggang Ratna > 80 cm, dengan trigliserida 175 mg/dL Ratna seharusnya positif menderita sindrom metabolik.\n- **Pilihan D Salah:** Trigliserida tinggi hanya satu dari dua cabang disjungsi, pasien tetap bebas diagnosis jika lingkar pinggangnya normal.\n- **Pilihan E Salah:** Tuan Hendra justru terbukti secara deduktif memiliki trigliserida tinggi di atas ambang normal."
+    },
+    {
+      "example_id": "pu-02-01-ex7",
+      "variation_name": "Variasi 7: Penentuan Nilai Kebenaran Protokol Autentikasi Zero-Trust Multi-Faktor (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah sistem keamanan siber perusahaan menerapkan protokol autentikasi akses *Zero Trust*:\n\n*\"Permintaan akses ke basis data server utama hanya akan diberikan (bernilai Benar) jika pengguna berhasil memvalidasi kunci kriptografi perangkat terdaftar DAN memverifikasi kode OTP dinamis, ATAU pengguna melakukan verifikasi biometrik sidik jari tersertifikasi.\"*\n\nSistem mencatat empat upaya percobaan akses oleh teknisi pada jam operasional:\n- **Percobaan 1:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 2:** Kunci kriptografi perangkat valid, kode OTP dinamis gagal divalidasi, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 3:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis gagal divalidasi, tetapi verifikasi biometrik sidik jari tersertifikasi berhasil diverifikasi.\n- **Percobaan 4:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik sidik jari gagal diverifikasi.",
+      "question_markdown": "Berdasarkan kaidah logika proposisi majemuk, percobaan akses manakah yang **berhasil memperoleh izin akses ke basis data**?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Percobaan 1 saja"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Percobaan 2 saja"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Percobaan 3 saja"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Percobaan 1 dan Percobaan 4"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tidak ada percobaan yang berhasil memperoleh izin akses"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Analisis formula logika: `(Kriptografi Perangkat DAN OTP) ATAU Biometrik`. Karena dipisahkan oleh kata ATAU (disjungsi), jika verifikasi biometrik berhasil (Percobaan 3), akses langsung diberikan meskipun kunci kriptografi dan OTP gagal! Sebaliknya pada Percobaan 1 dan 2, syarat konjungsi (DAN) gagal dan biometrik tidak ada, maka akses ditolak.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika Akses:** $\\text{Akses} = (K \\land O) \\lor B$\n  - $K$: Kunci kriptografi valid\n  - $O$: Kode OTP dinamis valid\n  - $B$: Verifikasi biometrik valid\n- **Evaluasi Tiap Percobaan:**\n  - **Percobaan 1:** $K = S$, $O = B$, $B = S \\implies (S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Akses Ditolak).\n  - **Percobaan 2:** $K = B$, $O = S$, $B = S \\implies (B \\land S) \\lor S = S \\lor S = \\text{Salah}$ (Akses Ditolak).\n  - **Percobaan 3:** $K = S$, $O = S$, $B = B \\implies (S \\land S) \\lor B = S \\lor B = \\text{Benar}$ (Akses Diberikan!).\n  - **Percobaan 4:** $K = S$, $O = B$, $B = S \\implies (S \\land B) \\lor S = S \\lor S = \\text{Salah}$ (Akses Ditolak).\n- **Kesimpulan:** Hanya Percobaan 3 yang berhasil memperoleh izin akses.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Cek Jalur Disjungsi Independen):**\n\n1. Perhatikan kata *\"ATAU verifikasi biometrik\"*.\n2. Biometrik yang berhasil langsung meloloskan pengguna tanpa memedulikan kegagalan kunci kriptografi dan OTP.\n3. Periksa percobaan yang biometriknya valid: hanya Percobaan 3.\n4. Percobaan 1, 2, dan 4 gagal di konjungsi DAN tidak memiliki biometrik yang valid.\n5. Jawaban tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Percobaan 1 gagal memenuhi konjungsi (kriptografi gagal) dan tidak menjalankan biometrik.\n- **Pilihan B Salah:** Percobaan 2 gagal memenuhi konjungsi (OTP gagal) dan tidak menjalankan biometrik.\n- **Pilihan D Salah:** Baik Percobaan 1 maupun Percobaan 4 sama-sama menghasilkan nilai logika Salah.\n- **Pilihan E Salah:** Percobaan 3 secara sah menghasilkan nilai logika Benar berkat keberhasilan verifikasi biometrik."
+    },
+    {
+      "example_id": "pu-02-01-ex8",
+      "variation_name": "Variasi 8: Evaluasi Konsistensi Proposisi Majemuk Pewarisan Tanah Ulayat Adat (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Dewan Adat Negeri menetapkan kaidah adat mengenai hak pengelolaan tanah ulayat marga:\n\n*\"Seorang warga adat berhak memperoleh hak garap tanah ulayat jika bergaris keturunan matrilineal sah DENGAN ketentuan: menetap di wilayah desa adat DAN ikut serta dalam upacara musyawarah adat tahunan, KECUALI warga tersebut telah memperoleh izin khusus dari ketua adat.\"*\n\n(Catatan: frasa *\"kecuali...\"* berkedudukan ekuivalen secara logika dengan operator disjungsi *\"ATAU telah memperoleh izin khusus dari ketua adat\"*).\n\nBerikut profil tiga warga adat:\n- **Umar:** Bergaris keturunan matrilineal sah, menetap di perantauan luar pulau (tidak menetap di desa), tidak ikut musyawarah adat, dan tidak mengantongi izin khusus ketua adat.\n- **Hamid:** Bukan garis keturunan matrilineal marga, tetapi menetap di desa adat dan memiliki izin khusus ketua adat.\n- **Zainab:** Bergaris keturunan matrilineal sah, menetap di desa adat, rutin hadir upacara musyawarah adat tahunan, dan tidak memiliki izin khusus ketua adat.",
+      "question_markdown": "Berdasarkan kaidah aturan logika adat tersebut, siapakah warga yang **pasti berhak** memperoleh hak garap tanah ulayat?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Umar saja"
+        },
+        {
+          "key": "B",
+          "text_markdown": "Hamid saja"
+        },
+        {
+          "key": "C",
+          "text_markdown": "Umar dan Zainab"
+        },
+        {
+          "key": "D",
+          "text_markdown": "Zainab dan Hamid"
+        },
+        {
+          "key": "E",
+          "text_markdown": "Zainab saja"
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati struktur syarat: Syarat mutlak utama adalah garis matrilineal sah ($M$), yang digabung dengan syarat `(Menetap DAN Musyawarah) ATAU Izin Ketua Adat`. Hamid otomatis gugur karena bukan garis matrilineal ($M$ = Salah). Umar gugur karena merantau, absen musyawarah, dan tanpa izin. Hanya Zainab yang memenuhi garis matrilineal serta menetap dan ikut musyawarah!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Formula Logika Aturan Adat:** $\\text{Hak Garap} = M \\land ((D \\land U) \\lor I)$\n  - $M$: Garis keturunan matrilineal sah\n  - $D$: Menetap di wilayah desa adat\n  - $U$: Ikut upacara musyawarah adat tahunan\n  - $I$: Memperoleh izin khusus ketua adat\n- **Evaluasi Tiap Profil Warga:**\n  - **Umar:** $M = B$, $D = S$, $U = S$, $I = S \\implies B \\land ((S \\land S) \\lor S) = B \\land (S \\lor S) = B \\land S = \\text{Salah}$ (Tidak Berhak).\n  - **Hamid:** $M = S$, $D = B$, $I = B \\implies S \\land ((B \\land U) \\lor B) = S \\land B = \\text{Salah}$ (Tidak Berhak karena syarat utama $M$ mutlak wajib Benar).\n  - **Zainab:** $M = B$, $D = B$, $U = B$, $I = S \\implies B \\land ((B \\land B) \\lor S) = B \\land (B \\lor S) = B \\land B = \\text{Benar}$ (Pasti Berhak!).\n- **Kesimpulan:** Hanya Zainab yang berhak memperoleh hak garap tanah ulayat.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Eliminasi Syarat Mutlak Utama):**\n\n1. Syarat utama di luar kurung adalah garis matrilineal ($M$). Siapa yang bukan matrilineal langsung coret!\n2. Hamid bukan garis matrilineal $\\implies$ Hamid langsung gugur.\n3. Umar di perantauan dan tanpa izin adat $\\implies$ Umar gugur.\n4. Zainab matrilineal sah, tinggal di desa, dan ikut musyawarah $\\implies$ Zainab lolos murni.\n5. Yang berhak hanyalah Zainab saja $\\implies$ Pilihan **E**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Umar gagal karena tidak menetap di desa, absen musyawarah, dan tidak memiliki izin khusus ketua adat.\n- **Pilihan B Salah:** Hamid gagal karena bukan berasal dari garis keturunan matrilineal yang merupakan syarat mutlak utama aturan adat.\n- **Pilihan C Salah:** Umar tidak memenuhi syarat hak garap tanah ulayat.\n- **Pilihan D Salah:** Hamid tidak memenuhi syarat garis keturunan matrilineal."
     }
   ]
 }

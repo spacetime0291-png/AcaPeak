@@ -486,6 +486,181 @@
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Argumen Kausalitas yang Diuji:**\n  - Tudingan pemerhati: Pementasan komersial di hotel ($K$) adalah penyebab utama desakralisasi seni dan hilangnya ritual tari ($D$). Hubungan: $K \\implies D$.\n- **Kaidah Pelemahan Kausalitas via Kelompok Kontrol (*Absence of Cause with Presence of Effect*):**\n  - Jika suatu faktor dituduh sebagai penyebab utama suatu fenomena, maka bila faktor tersebut ditiadakan sama sekali, fenomena tersebut semestinya tidak terjadi atau minimal terjadi dalam derajat yang jauh lebih rendah.\n  - Pilihan **E** memperlihatkan kondisi kelompok kontrol alami: Di desa adat tetangga yang **tidak memiliki** pementasan komersial sama sekali (kondisi tanpa $K$), fenomena kemunduran ritual dan desakralisasi ($D$) **tetap terjadi** dengan laju kemerosotan yang identik.\n  - Hal ini secara telak membuktikan bahwa kemunduran nilai sakral bukan diakibatkan oleh pementasan hotel komersial, melainkan didorong oleh faktor makro sosiologis lain yang dialami lintas desa (seperti penetrasi modernitas, migrasi pendidikan/pekerjaan, dan pergeseran gaya hidup generasi muda).\n\n**Jawaban: E**",
       "quick_trick_markdown": "**Cara Cepat (Uji Kelompok Kontrol / No Cause, Same Effect):**\n\n1. Klaim: Faktor A (Pentas hotel komersial) $\\implies$ Masalah B (Hilang kesakralan).\n2. Cara melemahkan: Buktikan bahwa tanpa Faktor A sama sekali (desa adat yang menolak pentas hotel), Masalah B tetap terjadi sama parahnya!\n3. Opsi E secara sempurna memberikan data kelompok pembanding yang menggugurkan klaim kausalitas pemerhati seni.\n4. Jawaban: **E**.",
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menjelaskan kompensasi materi dan sponsor dari hotel, yang justru berpotensi memperkuat kecurigaan ketergantungan finansial dan tidak menguji hubungan kausal.\n- **Pilihan B Salah:** Hanya menggambarkan perasaan subjektif rasa bangga penari senior, tidak membantah fenomena desakralisasi di tingkat generasi muda.\n- **Pilihan C Salah:** Memaparkan jadwal ritual tahunan topeng yang masih berjalan, namun tidak menjawab permasalahan merosotnya disiplin laku puasa dan pemaknaan spiritual penari muda.\n- **Pilihan D Salah:** Menunjukkan tren animo penonton turis hotel, yang tidak relevan dengan validitas sebab-akibat kemunduran nilai intrinsik kebudayaan."
+    },
+    {
+      "example_id": "pu-01-03-ex14",
+      "variation_name": "Variasi 14: Deteksi Variabel Perancu Relasi Mikroplastik dan Penurunan Reproduksi Tiram (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah penelitian estuari menemukan korelasi kuat ($r = -0{,}82$) antara konsentrasi partikel mikroplastik dalam sedimen lumpur pesisir dengan penurunan tingkat penetasan larva tiram mutiara (*Pinctada maxima*) selama tiga tahun berturut-turut. Peneliti menyimpulkan bahwa paparan mikroplastik merupakan faktor penyebab langsung yang menurunkan daya reproduksi tiram di teluk tersebut. Namun, seorang ahli oseanografi biologi menduga adanya faktor perancu (*confounding factor*) berupa pelepasan limbah termal air pendingin dari pembangkit listrik tenaga uap di dekat muara teluk yang juga meningkat seiring dengan peningkatan aktivitas industri dan buangan limbah.",
+      "question_markdown": "Manakah temuan investigasi berikut yang **paling kuat membuktikan** bahwa relasi antara mikroplastik dan penurunan penetasan larva tiram hanyalah **korelasi semu akibat faktor perancu** suhu air?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Partikel mikroplastik yang ditemukan di muara teluk didominasi oleh jenis polimer polipropilena dan polietilena berdensitas tinggi."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Dalam uji laboratorium terkontrol di mana suhu air dipertahankan stabil pada suhu optimal 24°C, tiram yang diberi konsentrasi mikroplastik tinggi tetap menunjukkan tingkat penetasan larva normal (92%), sedangkan tiram di air bebas mikroplastik yang suhunya dinaikkan menjadi 32°C mengalami kegagalan penetasan larva hingga 85%."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Peternak tiram mutiara di teluk tetangga menggunakan jaring keramba apung berbahan serat nilon sintetis yang tahan lama."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Konsentrasi mikroplastik di kolom permukaan air laut tercatat lebih rendah dibandingkan konsentrasi di lapisan sedimen lumpur dasar teluk."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Harga jual butiran mutiara kualitas super dari teluk tersebut mengalami penurunan 15% pada pasar lelang perhiasan internasional."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk membuktikan bahwa mikroplastik adalah korelasi semu dan faktor perancunya adalah suhu air, carilah eksperimen kontrol yang memisahkan kedua variabel: Jika mikroplastik tinggi pada suhu normal tidak merusak penetasan tiram, tetapi suhu tinggi tanpa mikroplastik justru merusak penetasan tiram hingga 85%, maka terbukti suhu airlah penyebab aslinya!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Hipotesis Kausal Awal:** Paparan mikroplastik ($M$) dituduh sebagai penyebab langsung kegagalan penetasan larva tiram ($K$). Hubungan: $M \\implies K$.\n- **Hipotesis Faktor Perancu (*Confounder*):** Kenaikan suhu limbah termal ($S$) berkorelasi dengan pembuangan limbah industri plastik ($S \\sim M$) dan sekaligus menjadi penyebab sejati kegagalan penetasan ($S \\implies K$).\n- **Uji Isolasi Eksperimental Kontrol:**\n  - Kondisi 1: $M$ tinggi, $S$ normal ($24^\\circ\\text{C}$) $\\implies$ penetasan larva tetap prima ($92\\%$). Ini membuktikan $M$ bukan penyebab kegagalan.\n  - Kondisi 2: Bebas $M$, $S$ tinggi ($32^\\circ\\text{C}$) $\\implies$ penetasan larva anjlok ($85\\%$ gagal). Ini membuktikan $S$ adalah penyebab sejati.\n- Pilihan **B** secara sempurna memisahkan pengaruh kedua variabel dan membuktikan bahwa korelasi $M$ dan $K$ hanyalah fenomena semu (*spurious correlation*) akibat variabel perancu termal.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Isolasi Variabel Kontrol):**\n\n1. Klaim: Plastik $\\implies$ Larva tiram mati. Dugaan perancu: Suhu air panas.\n2. Cara membuktikan plastik cuma korelasi semu: Uji di lab! Kasih plastik tapi air dingin $\\rightarrow$ larva tetap hidup sehat; tanpa plastik tapi air panas $\\rightarrow$ larva mati massal!\n3. Fakta pada pilihan **B** secara langsung membuktikan bahwa suhu panas adalah penyebab sejati.\n4. Jawaban yang tepat adalah pilihan **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Jenis polimer mikroplastik hanya menjelaskan komposisi kimia partikel, bukan membuktikan atau membantah relasi kausal dengan reproduksi tiram.\n- **Pilihan C Salah:** Penggunaan jaring nilon di teluk lain tidak menguji hubungan sebab-akibat variabel perancu suhu air di teluk yang diteliti (*out of scope*).\n- **Pilihan D Salah:** Distribusi spasial mikroplastik di kolom air versus sedimen tidak menguji mekanisme biologis kegagalan penetasan larva.\n- **Pilihan E Salah:** Fluktuasi harga mutiara di pasar lelang adalah fenomena ekonomi hilir yang tidak relevan dengan kausalitas biologis di perairan."
+    },
+    {
+      "example_id": "pu-01-03-ex15",
+      "variation_name": "Variasi 15: Penentuan Arah Kausalitas Inflasi Pangan dan Penurunan Tabungan (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua fenomena ekonomi yang terjadi secara simultan pada semester kedua tahun berjalan berikut:\n\n(1) Terjadi lonjakan indeks harga kelompok pangan pokok (*volatile food*) sebesar 18,4% di seluruh pasar tradisional dan pasar modern.\n(2) Rasio tabungan riil rumah tangga kelompok pendapatan menengah ke bawah tercatat merosot drastis hingga mencapai level terendah dalam lima tahun terakhir.",
+      "question_markdown": "Bagaimanakah hubungan kausalitas yang **paling tepat** antara pernyataan (1) dan pernyataan (2)?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pernyataan (1) adalah penyebab langsung dan pernyataan (2) adalah akibat logisnya."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pernyataan (2) adalah penyebab langsung dan pernyataan (1) adalah akibatnya."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari dua faktor penyebab berbeda yang saling tidak berhubungan."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari kebijakan kenaikan suku bunga simpanan perbankan nasional."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pernyataan (1) dan (2) merupakan kondisi independen yang muncul bersamaan secara kebetulan semata tanpa keterkaitan logis."
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cermati mekanisme belanja rumah tangga: Pangan pokok adalah kebutuhan primer inelastis (wajib dibeli). Ketika harga pangan melonjak 18,4% (1), keluarga menengah ke bawah terpaksa mengalokasikan porsi uang belanja lebih besar untuk makan, yang secara otomatis menggerus sisa uang yang bisa ditabung (2). Maka (1) sebab $\\implies$ (2) akibat!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kausalitas Ekonomi Rumah Tangga:**\n  - *Pernyataan (1):* Kenaikan indeks harga pangan pokok sebesar $18{,}4\\%$. Karena komoditas pangan pokok memiliki elastisitas permintaan yang inelastis sempurna/rendah, konsumen tidak dapat memangkas volume konsumsi fisik secara drastis.\n  - *Mekanisme Transmisi:* Untuk memenuhi kebutuhan dasar makan, keluarga kelas pekerja menengah ke bawah terpaksa mengalihkan pendapatan yang semula dialokasikan untuk pos tabungan ke pos belanja konsumsi harian.\n  - *Pernyataan (2):* Akibatnya, porsi pendapatan yang dapat disisihkan menyusut tajam hingga rasio tabungan menyentuh rekor terendah.\n- Hubungan yang tepat: Pernyataan (1) merupakan **penyebab** dan pernyataan (2) merupakan **akibat logisnya**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Logika: Karena (1), maka wajar jika (2)):**\n\n1. Buat kalimat sebab-akibat: *\"Karena harga pangan melonjak mahal (1), maka uang sisa untuk ditabung keluarga menengah ke bawah merosot drastis (2)\"* $\\implies$ Sangat masuk akal dan runtut secara ekonomi!\n2. Arah panah: Pernyataan (1) adalah penyebab dan pernyataan (2) adalah akibat.\n3. Pilihan yang tepat adalah pilihan **A**.",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Membalik arah kausalitas secara tidak logis, karena penurunan tabungan warga bukan faktor pemicu kenaikan harga komoditas pangan pokok di pasar.\n- **Pilihan C Salah:** Menganggap kedua fenomena tidak berhubungan, padahal pengeluaran pangan dan tabungan saling terhubung erat dalam anggaran rumah tangga.\n- **Pilihan D Salah:** Kenaikan suku bunga simpanan justru secara teoretis mendorong orang menabung, bukan menurunkan rasio tabungan.\n- **Pilihan E Salah:** Mengabaikan keterkaitan makroekonomi yang nyata dan menganggapnya sebagai kebetulan belaka."
+    },
+    {
+      "example_id": "pu-01-03-ex16",
+      "variation_name": "Variasi 16: Deteksi Kausalitas Terbalik Konsumsi Kafein Tinggi dan Gangguan Kecemasan (Level: Sulit / HOTS)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Sebuah survei epidemiologi observasional terhadap 1.500 pekerja shift malam melaporkan bahwa individu yang mengonsumsi lebih dari empat cangkir kopi berkafein tinggi per hari memiliki skor gangguan kecemasan umum (*Generalized Anxiety Disorder*) 2,8 kali lebih tinggi dibandingkan mereka yang jarang minum kopi. Tim penulis laporan menyimpulkan bahwa konsumsi kafein berlebih merupakan penyebab utama timbulnya gangguan kecemasan pada pekerja shift malam. Namun, seorang neuropsikolog menduga terjadi kesesatan pikir kausalitas terbalik (*reverse causation*).",
+      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mencerminkan hipotesis kausalitas terbalik** yang diajukan oleh neuropsikolog tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Kandungan antioksidan polifenol di dalam biji kopi mampu melindungi sel saraf otak dari dampak stres oksidatif jangka panjang."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Konsumsi kopi hitam tanpa pemanis memiliki efek termogenik yang mempercepat laju metabolisme basal tubuh pekerja."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pekerja yang meminum kopi tanpa kafein (*decaffeinated*) juga dilaporkan mengalami peningkatan denyut nadi saat bekerja pada shift malam."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pekerja shift malam yang memang sudah memiliki tingkat kecemasan tinggi dan kelelahan mental kronis sengaja meminum kopi dalam frekuensi tinggi sebagai mekanisme koping mandiri (*self-medication*) agar tetap mampu terjaga dan berkonsentrasi."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tingkat kecemasan pekerja shift malam lebih dipengaruhi oleh intensitas pencahayaan lampu neon di ruang kerja dibandingkan asupan nutrisi."
+        }
+      ],
+      "correct_answer": "D",
+      "hint_markdown": "💡 **Petunjuk Soal:** Konsep kausalitas terbalik (*reverse causation*) menyatakan: bukan kopi yang menyebabkan pekerja cemas, melainkan pekerja yang sudah cemas dan kelelahan mental yang mencari kopi banyak-banyak sebagai mekanisme bertahan (*koping*)! Cari opsi yang membalik arah panah sebab-akibat tersebut!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Penulis Survei:** Minum kopi berkafein banyak ($A$) $\\implies$ Memicu timbulnya gangguan kecemasan ($B$). Arah: $A \\implies B$.\n- **Definisi Kesesatan Kausalitas Terbalik (*Reverse Causation Fallacy*):** Terjadi ketika peneliti keliru mengidentifikasi arah panah kausal, di mana kondisi yang dianggap sebagai akibat ($B$) sebenarnya merupakan kondisi pendahulu yang menyebabkan terjadinya tindakan ($A$). Arah sejati: $B \\implies A$.\n- **Analisis Opsi D:** Pilihan **D** merumuskan hipotesis $B \\implies A$ secara tepat: pekerja yang sudah menderita kecemasan laten dan kelelahan mental berat ($B$) secara aktif mengonsumsi kopi dosis tinggi ($A$) sebagai bentuk pengobatan mandiri (*self-medication*) untuk menopang kewaspadaan kerja.\n\n**Jawaban: D**",
+      "quick_trick_markdown": "**Cara Cepat (Balik Arah Panah Kausalitas):**\n\n1. Klaim awal: Kopi $\\implies$ Cemas.\n2. Kausalitas terbalik: Cemas $\\implies$ Butuh Kopi!\n3. Cari pilihan yang menjelaskan bahwa rasa cemas dan kelelahan mental pekerja yang mendorong mereka minum banyak kopi sebagai koping.\n4. Fakta tersebut diuraikan secara tepat pada pilihan **D**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Membahas peran antioksidan polifenol yang tidak relevan dengan arah kausalitas kecemasan.\n- **Pilihan B Salah:** Menjelaskan laju metabolisme basal tubuh yang merupakan proses fisiologis terpisah dari regulasi kecemasan.\n- **Pilihan C Salah:** Membahas denyut nadi akibat kopi dekafeinasi, bukan membedah arah hubungan sebab-akibat kecemasan.\n- **Pilihan E Salah:** Mengajukan faktor lingkungan luar (lampu neon) sebagai penjelasan alternatif, bukan membalik arah kausalitas variabel kopi dan kecemasan."
+    },
+    {
+      "example_id": "pu-01-03-ex17",
+      "variation_name": "Variasi 17: Evaluasi Validitas Klaim Kausalitas Otomasi Perakitan Baterai EV (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Manajer operasional pabrik perakitan baterai kendaraan listrik (*electric vehicle*) mengklaim bahwa penggantian teknisi manual dengan 24 unit lengan robotik berpresisi mikron pada lini pemasangan elektroda merupakan satu-satunya faktor penyebab turunnya tingkat kerusakan sel baterai (*battery rejection rate*) dari 6,8% menjadi 0,9%. Namun, auditor independen manajemen mutu menyatakan bahwa klaim kausalitas faktor tunggal tersebut tidak sepenuhnya sahih karena terjadi sejumlah pembaruan operasional lain secara bersamaan.",
+      "question_markdown": "Manakah temuan audit berikut yang **paling kuat melemahkan** klaim bahwa robotisasi merupakan faktor tunggal penyebab penurunan tingkat kerusakan sel baterai?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pabrik baterai tersebut berhasil mendapatkan sertifikasi ISO manajemen lingkungan hidup pada tahun berjalan."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Waktu kerja operasional lini perakitan robotik dapat berlangsung selama 24 jam penuh tanpa memerlukan waktu jeda pergantian shift."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Gaji teknisi manual yang dialihkan ke divisi pengemasan akhir mengalami penyesuaian kenaikan tunjangan keahlian sebesar 10%."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Harga jual modul baterai kendaraan listrik di tingkat pasar global mengalami tren penurunan sebesar 8% pada kuartal tersebut."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Tepat pada bulan yang sama dengan pemasangan robot, pabrik mengganti pemasok bahan pasta litium dengan pemasok baru yang memiliki standar kemurnian material 99,99% serta memasang sistem ruang bersih (*cleanroom*) kelas 100 baru yang menekan partikel debu mikro kontaminan secara drastis."
+        }
+      ],
+      "correct_answer": "E",
+      "hint_markdown": "💡 **Petunjuk Soal:** Untuk melemahkan klaim bahwa lengan robot adalah \"faktor tunggal\" penyebab turunnya kerusakan baterai, hadirkan penjelasan alternatif (*alternative causes*) yang juga terjadi pada saat yang sama: Opsi E memperlihatkan bahwa pabrik secara serentak beralih ke pasta litium dengan kemurnian 99,99% dan cleanroom baru bebas debu! Faktor-faktor inilah yang terbukti memangkas cacat baterai!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Mutlak yang Diuji:** Manajer mengklaim pemasangan lengan robot ($R$) adalah *satu-satunya faktor penyebab* penurunan cacat sel baterai ($D$). Klaim: $R$ adalah penyebab tunggal dari $\\Delta D$.\n- **Kaidah Pelemahan Klaim Kausal Tunggal (*Alternative Explanations / Confounding Interventions*):** Untuk meruntuhkan klaim kausalitas tunggal, auditor harus menunjukkan adanya intervensi atau faktor penyebab lain yang terjadi serempak (*co-occurring causes*) yang memiliki daya kausalitas kuat terhadap variabel akibat.\n- **Analisis Opsi E:** Penggantian pasta litium berkemurnian tinggi ($99{,}99\\%$) dan instalasi *cleanroom* kelas 100 merupakan faktor kritis penentu keutuhan sel baterai dari risiko korsleting dan cacat mikro. Kehadiran dua intervensi besar yang terjadi serempak ini membuktikan bahwa robotisasi bukanlah faktor tunggal penentu keberhasilan.\n\n**Jawaban: E**",
+      "quick_trick_markdown": "**Cara Cepat (Hadirkan Faktor Penyebab Alternatif yang Signifikan):**\n\n1. Klaim manajer: Lengan robot adalah *satu-satunya penyebab* turunnya cacat baterai.\n2. Cara mematahkan klaim \"satu-satunya\": Temukan faktor penyebab lain yang sama-sama terjadi dan sangat menentukan!\n3. Opsi **E** menghadirkan dua faktor penentu sekaligus: bahan baku pasta litium supermurni ($99{,}99\\%$) dan ruang bersih steril debu.\n4. Kehadiran fakta baru ini langsung meruntuhkan klaim faktor tunggal manajer.\n5. Jawaban tepat: **E**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Sertifikasi ISO manajemen lingkungan berkaitan dengan kepatuhan regulasi limbah, bukan variabel teknis cacat mikro elektroda baterai.\n- **Pilihan B Salah:** Jam kerja operasional tanpa henti menjelaskan kapasitas output produksi, bukan membantah keunggulan presisi perakitan robot.\n- **Pilihan C Salah:** Penyesuaian gaji teknisi di divisi pengemasan tidak memengaruhi integritas fisik sel baterai di lini elektroda.\n- **Pilihan D Salah:** Penurunan harga modul baterai di pasar global merupakan dinamika ekonomi pasar luar yang tidak membatalkan klaim efisiensi teknis pabrik."
+    },
+    {
+      "example_id": "pu-01-03-ex18",
+      "variation_name": "Variasi 18: Penentuan Arah Kausalitas Akibat Penyebab Bersama Urbanisasi Cepat (Level: Mudah)",
+      "difficulty": "easy",
+      "question_type": "standard_mc",
+      "context_markdown": "Perhatikan dua kondisi sosial perkotaan di wilayah penyangga Megapolitan Raya berikut:\n\n(1) Terjadi kenaikan tarif sewa rumah petak dan kamar indekos pekerja sebesar 35% dalam tempo kurang dari satu tahun.\n(2) Terjadi lonjakan antrean kendaraan bermotor pribadi dan waktu tempuh komuter harian hingga dua kali lipat pada jalan arteri penghubung kota penyangga.",
+      "question_markdown": "Manakah analisis hubungan kausalitas yang **paling tepat** antara kedua pernyataan tersebut?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Pernyataan (1) adalah penyebab utama dan pernyataan (2) adalah akibat langsungnya."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Pernyataan (2) adalah penyebab utama dan pernyataan (1) adalah akibat langsungnya."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari satu faktor penyebab bersama, yaitu gelombang migrasi masuk puluhan ribu tenaga kerja industri baru ke kawasan perkotaan tersebut yang tidak diimbangi kapasitas hunian terjangkau dan transportasi massal."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pernyataan (1) dan (2) adalah akibat dari dua peristiwa masa lalu yang saling bertentangan secara sosiologis."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Pernyataan (1) dan (2) merupakan data independen yang saling meniadakan validitas satu sama lain."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Uji hubungan sebab-akibat: Apakah naiknya sewa kamar menyebabkan macet di jalan arteri? Bukan. Apakah macet di jalan arteri menyebabkan sewa kamar naik? Juga bukan. Keduanya adalah dua AKIBAT serentak yang dipicu oleh SATU PENYEBAB BERSAMA (*common cause*), yaitu ledakan migrasi pekerja baru yang memadati kota tanpa kesiapan hunian dan transportasi!",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Uji Kausalitas Langsung:**\n  - Apakah (1) $\\implies$ (2)? Kenaikan harga sewa kamar kos tidak secara langsung menciptakan kemacetan lalu lintas jalan arteri.\n  - Apakah (2) $\\implies$ (1)? Kemacetan waktu tempuh komuter tidak secara langsung menaikkan harga sewa kamar petak.\n- **Analisis Faktor Penyebab Bersama (*Common Cause*):**\n  - Terdapat faktor pemicu makro: Pembukaan kawasan industri baru yang memicu arus urbanisasi/migrasi masuk puluhan ribu tenaga kerja secara massal ($C$).\n  - $C \\implies$ Ledakan permintaan hunian di kawasan penyangga $\\rightarrow$ tarif sewa melonjak $35\\%$ (Pernyataan 1).\n  - $C \\implies$ Ledakan volume perjalanan harian pekerja komuter $\\rightarrow$ waktu tempuh macet melipat ganda (Pernyataan 2).\n- Kesimpulan: Kedua pernyataan merupakan **akibat dari satu faktor penyebab bersama (*common cause*)**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Hubungan Langsung vs Penyebab Bersama):**\n\n1. Tanyakan: Apakah sewa kamar kos mahal membikin jalanan macet? Tidak.\n2. Tanyakan: Apakah jalanan macet membikin pemilik kos menaikkan harga sewa? Tidak.\n3. Mengapa dua-duanya terjadi berbarengan? Karena ledakan ribuan orang baru pindah ke kota itu mencari kerja dan tempat tinggal!\n4. Ini adalah pola klasik *akibat dari satu penyebab bersama* (*common cause*).\n5. Jawaban yang tepat adalah pilihan **C**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyimpulkan hubungan sebab-akibat langsung yang keliru, karena inflasi biaya sewa properti bukan penyebab teknis macetnya kendaraan di jalan raya.\n- **Pilihan B Salah:** Kemacetan lalu lintas bukan faktor penggerak naiknya biaya sewa kamar indekos pekerja.\n- **Pilihan D Salah:** Mengaitkan fenomena urbanisasi modern dengan peristiwa masa lalu yang bertentangan tanpa dasar ilmiah.\n- **Pilihan E Salah:** Menganggap kedua data saling meniadakan, padahal keduanya merupakan indikator sosial terpadu dari dampak ledakan urbanisasi."
     }
   ]
 }
