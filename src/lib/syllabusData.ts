@@ -457,28 +457,28 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
             "id": "ppu-4-1",
             "subchapter_num": "4.1",
             "title": "Ide Pokok dan Gagasan Pendukung",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-4-2",
             "subchapter_num": "4.2",
             "title": "Kepaduan Paragraf (Kohesi dan Koherensi)",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-4-3",
             "subchapter_num": "4.3",
             "title": "Sikap, Nada, dan Tujuan Penulis",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-4-4",
             "subchapter_num": "4.4",
             "title": "Bahasa Panda (Kriptografi Bahasa Buatan)",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           }
         ]

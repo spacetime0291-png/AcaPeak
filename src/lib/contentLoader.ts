@@ -29,6 +29,10 @@ import {
   MATERIAL_PPU_03_02,
   MATERIAL_PPU_03_03,
   MATERIAL_PPU_03_04,
+  MATERIAL_PPU_04_01,
+  MATERIAL_PPU_04_02,
+  MATERIAL_PPU_04_03,
+  MATERIAL_PPU_04_04,
 } from '../data/materials/ppuMaterials';
 import {
   MATERIAL_PBM_01_01,
@@ -154,6 +158,20 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
   'ppu-3-4': MATERIAL_PPU_03_04,
   'ppu-03-04': MATERIAL_PPU_03_04,
   'ppu-3.4': MATERIAL_PPU_03_04,
+
+  // PPU Chapter 4: Wacana dan Pragmatik
+  'ppu-4-1': MATERIAL_PPU_04_01,
+  'ppu-04-01': MATERIAL_PPU_04_01,
+  'ppu-4.1': MATERIAL_PPU_04_01,
+  'ppu-4-2': MATERIAL_PPU_04_02,
+  'ppu-04-02': MATERIAL_PPU_04_02,
+  'ppu-4.2': MATERIAL_PPU_04_02,
+  'ppu-4-3': MATERIAL_PPU_04_03,
+  'ppu-04-03': MATERIAL_PPU_04_03,
+  'ppu-4.3': MATERIAL_PPU_04_03,
+  'ppu-4-4': MATERIAL_PPU_04_04,
+  'ppu-04-04': MATERIAL_PPU_04_04,
+  'ppu-4.4': MATERIAL_PPU_04_04,
 };
 
 // Flatten all UTBK subchapters for metadata lookup

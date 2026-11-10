@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "id": "ppu-4-4",
+    "subtest": "PPU",
+    "chapter_num": 4,
+    "chapter_title": "Wacana dan Pragmatik",
+    "subchapter_num": "4.4",
+    "subchapter_title": "Bahasa Panda (Kriptografi Bahasa Buatan)",
+    "title": "Bahasa Panda (Kriptografi Bahasa Buatan)",
+    "required_question_variations": [
+      "Terjemahan Bahasa Buatan dengan Pola Sintaksis",
+      "Dekonstruksi Afiksasi Morfologis Bahasa Fiktif",
+      "Pemecahan Kriptografi Alfabet Sandi Geser"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-10"
+  },
+  "content": {
+    "tactical_overview": "Bahasa Panda (kriptografi bahasa fiktif/artifisial) adalah model soal penalaran linguistik logis yang menguji kemampuan dekonstruksi pola bahasa tanpa memerlukan pengetahuan kosakata bahasa terkait sebelumnya. Tipe soal ini mensimulasikan prinsip tipologi linguistik nyata: korespondensi alfabetis, morfologi inflektif-derivatif, dan sintaksis tata kata (word order). Kuncinya terletak pada metode perbandingan berpasangan, irisan leksikal, dan dekomposisi morfem.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar dan Kerangka Teori\n\nBahasa Panda (kriptografi bahasa fiktif/artifisial) adalah model soal penalaran linguistik logis yang menguji kemampuan dekonstruksi pola bahasa tanpa memerlukan pengetahuan kosakata bahasa terkait sebelumnya. Diperkenalkan secara masif dalam UTBK-SNBT (khususnya subtes PPU dan PU), tipe soal ini bukan sekadar sandi acak, melainkan simulasi sistematis dari prinsip tipologi linguistik: korespondensi fonologis/alfabetis, morfologi inflektif-derivatif, dan sintaksis tata kata (*word order*). Peserta dituntut menemukan keteraturan relasi makna antara teks bahasa Indonesia dengan sistem lambang bahasa fiktif melalui metode perbandingan berpasangan (*contrastive pairing*), pemetaan irisan kata (*word intersection*), dan eliminasi variabel.\n\n---\n\n## 1.1 Analisis Sintaksis dan Pola Frasa Bahasa Buatan\n\nBahasa artifisial sering mengadopsi aturan urutan konstituen yang berbeda dengan bahasa Indonesia:\n\n1. **Urutan Konstituen Kalimat (*Word Order*)**:\n   - Bahasa Indonesia: Berpola **S - P - O** (Subjek - Predikat - Objek).\n   - Bahasa Buatan: Kerap direkayasa menjadi:\n     - **S - O - P** (misal: *Budi apel makan*).\n     - **O - S - P** atau **O - P - S** (Objek ditaruh di depan).\n     - **P - S - O** (Predikat mengawali kalimat).\n   - *Teknik identifikasi*: Temukan kalimat intransitif (S-P), lalu bandingkan dengan kalimat transitif (S-P-O) untuk mendeteksi posisi objek.\n2. **Pola Pembentukan Frasa (Hukum Hubungan Kata)**:\n   - **Hukum D-M (Diterangkan-Menerangkan)**: Kata inti di depan, kata penjelas/sifat di belakang (seperti bahasa Indonesia: *mobil merah*).\n   - **Hukum M-D (Menerangkan-Diterangkan)**: Kata penjelas/sifat di depan, kata inti di belakang (seperti bahasa Inggris: *red car*).\n   - Dalam soal Bahasa Panda, frasa *rumah besar* mungkin diterjemahkan menjadi *moran klip* di mana *moran* = besar dan *klip* = rumah (pola M-D terbalik).\n\n---\n\n## 1.2 Sistem Morfologi dan Penanda Gramatikal (Afiksasi Fiktif)\n\nBahasa buatan memanfaatkan morfem terikat (imbuhan/afiks) untuk menyandikan kategori gramatikal tertentu:\n\n1. **Penanda Jumlah (Kuantitas / Jamak)**:\n   - Ditandai oleh prefiks (awalan), sufiks (akhiran), atau infiks (sisipan) konsisten.\n   - Contoh: jika *voka* = kucing dan *vokami* = kucing-kucing, maka *-mi* adalah morfem penanda jamak.\n2. **Penanda Kala Waktu (*Tense* / Aspek)**:\n   - Perubahan bentuk verba berdasarkan waktu (lampau, sekarang, masa depan).\n   - Contoh: *leren* = makan, *lerento* = sudah makan (lampau), *lerenva* = akan makan (futuristik).\n3. **Penanda Relasi Milik (Posesif)**:\n   - Penambahan afiks yang menyatakan kepemilikan (misal akhiran *-ku, -da, -no* pada nomina).\n4. **Penanda Diatesis (Aktif vs Pasif)**:\n   - Morfem pembeda subjek sebagai pelaku (*agens*) versus sasaran (*pasien*).\n   - Contoh: *daruk* = memukul, *idaruk* = dipukul.\n\n---\n\n## 1.3 Kriptografi Alfabet dan Sandi Geser (*Ciphers*)\n\nSelain translasi gramatikal fiktif, variasi numerik/kriptografis menguji pengodean berbasis posisi alfabet formal:\n\n1. **Sandi Geser Konstan (*Caesar Cipher*)**:\n   - Setiap huruf digeser maju ($+n$) atau mundur ($-n$) dengan interval tetap dalam siklus alfabet 26 huruf (A-Z).\n   - Rumus indeks: $C = (P + k) \\pmod{26}$, dengan $P$ adalah posisi awal dan $k$ adalah nilai pergeseran.\n2. **Sandi Geser Bertingkat / Progresif**:\n   - Pergeseran berubah berdasarkan posisi indeks karakter dalam kata:\n     - Huruf ke-1: $+1$\n     - Huruf ke-2: $+2$\n     - Huruf ke-3: $+3$, dan seterusnya.\n3. **Sandi Cermin / Refleksi (*Atbash Cipher*)**:\n   - Pemetaan huruf simetris dari ujung berlawanan: $A \\leftrightarrow Z$, $B \\leftrightarrow Y$, $C \\leftrightarrow X$, $M \\leftrightarrow N$.\n4. **Sandi Substitusi Fonetis / Pola Vokal-Konsonan**:\n   - Pertukaran simetris antarhuruf vokal ($A \\leftrightarrow E$, $I \\leftrightarrow U$) atau pergeseran terpisah khusus konsonan.\n\n---\n\n## 1.4 Matriks Komparasi Karakteristik Pola Bahasa Panda UTBK\n\n| Tipe Pengodean | Fokus Pengujian Linguistik | Metode Identifikasi Cepat | Contoh Implementasi Pola |\n| :--- | :--- | :--- | :--- |\n| **Irisan Leksikal (*Word Intersection*)** | Penentuan kosakata dasar | Bandingkan 2 kalimat yang memuat 1 kata bahasa Indonesia sama. Kata asing yang identik adalah padanannya. | Kalimat 1: *kucing hitam* (*milo tan*); Kalimat 2: *kucing putih* (*milo zep*) $\\rightarrow$ *milo* = kucing. |\n| **Inversi Sintaksis (M-D vs D-M)** | Tata urutan pembentuk frasa/klausa | Cek posisi kata sifat/penjelas terhadap nomina intinya. | Bahasa Indonesia: Inti + Pewatas; Bahasa Panda kerap membalik: Pewatas + Inti. |\n| **Afiksasi Inflektif** | Pengenalan imbuhan jamak / kala / posesif | Kurangkan kata kompleks dengan kata dasarnya untuk menemukan residu morfem terikat. | *buku* (*bort*), *buku-buku saya* (*bortan-ku*) $\\rightarrow$ *-an* = jamak, *-ku* = milik saya. |\n| **Sandi Geser Alfabet (*Caesar Cipher*)** | Transformasi posisi karakter matematis | Hitung selisih urutan alfabet antara huruf awal kata sumber dan kata sandi. | B $\\rightarrow$ E (+3), U $\\rightarrow$ X (+3), K $\\rightarrow$ N (+3), U $\\rightarrow$ X (+3). |\n| **Sandi Progresif** | Deret aritmetika pada karakter | Selisih jarak antarhuruf bertambah atau berkurang teratur tiap langkah indeks. | Karakter ke-$n$ mengalami pergeseran $+n$ atau berulang berpola $+1, -1, +1, -1$. |\n\n---\n\n## 1.5 Rangkuman Inti\n\n- **Bahasa Panda** adalah instrumen penalaran deduktif murni berbasis aturan linguistik logis (analogi sintaksis, morfologi, dan kriptografi).\n- Pemecahan kosakata mutlak menggunakan metode **irisan kata (*intersection*)** antarkalimat pembanding, bukan menebak arti leksikal secara intuitif.\n- Wajib menentukan arah keteraturan frasa: apakah menganut kaidah **D-M (Diterangkan-Menerangkan)** atau **M-D (Menerangkan-Diterangkan)**.\n- Identifikasi afiksasi (jamak, kala, pasif) dilakukan melalui teknik isolasi morfem (mengurangkan bentuk turunan dengan bentuk dasar).\n- Pada kriptografi alfabet, identifikasi apakah berupa sandi geser konstan (*Caesar*), sandi berpola deret/progresif, atau pemetaan cermin (*Atbash*).",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Jebakan Asumsi Urutan Kata Linier (1-to-1 Word Order Trap): Mengira urutan kata bahasa buatan sama persis dari kiri ke kanan dengan bahasa Indonesia, padahal bahasa buatan sering memakai pola M-D terbalik atau O-S-P.",
+      "Jebakan Morfem Palsu (Mirip Bahasa Indonesia/Daerah): Kosakata fiktif sekilas terdengar mirip bahasa daerah/Indonesia, mengecoh peserta yang menebak tanpa menguji irisan logis.",
+      "Jebakan Ambiguitas Jamak Reduplikasi: Mengira bentuk jamak bahasa buatan diulang dua kali seperti bahasa Indonesia, padahal cukup disandikan oleh sufiks/prefiks kecil di ujung kata.",
+      "Jebakan Pergeseran Alfabet Melintasi Titik Z (Wrap-Around Error): Kesalahan hitung saat pergeseran melampaui huruf Z kembali ke A (misal: Y + 3 = B, bukan di luar siklus).",
+      "Jebakan Distorsi Konjungsi / Partikel Pewatas: Kata tugas kecil seperti \"di\", \"yang\", \"dan\" kerap disandikan bukan sebagai kata terpisah, melainkan klitika/imbuhan yang menempel pada kata di dekatnya."
+    ],
+    "quick_execution_algorithm": [
+      "Metode Eliminasi Irisan Kata (Matriks Venn): Bandingkan premis: jika Premis 1 (A+B = X+Y) dan Premis 2 (A+C = X+Z), maka unsur sekutu A = X secara mutlak.",
+      "Metode Dekomposisi Panjang Kata (Morfem Subtraksi): Kurangkan huruf kata kompleks dengan kata dasar untuk menemukan imbuhannya: Imbuhan = Bentuk Kompleks - Bentuk Dasar.",
+      "Uji Pola D-M vs M-D dalam 5 Detik: Ambil frasa Benda + Sifat. Amati posisi kata benda: jika di depan polanya D-M; jika di belakang polanya M-D. Terapkan pola sama ke pertanyaan target.",
+      "Deteksi Cepat Jarak Huruf Sandi: Cek selisih alfabet huruf pertama dan kedua saja. Jika konsisten +2 dan +2, langsung asumsikan seluruh kata bergeser +2 konstan."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "ppu-04-04-ex1",
+      "variation_name": "Variasi 1: Terjemahan Bahasa Buatan dengan Pola Sintaksis Terbalik (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Berikut adalah beberapa kata dan terjemahannya dalam bahasa fiktif Lumina:\n\n1. *drakon mor* diartikan sebagai \"anjing galak\".\n2. *mor klip* diartikan sebagai \"serigala galak\".\n3. *klip zep* diartikan sebagai \"serigala putih\".",
+      "question_markdown": "Berdasarkan data di atas, bagaimanakah cara menerjemahkan \"anjing putih\" ke dalam bahasa Lumina?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "drakon zep"
+        },
+        {
+          "key": "B",
+          "text_markdown": "zep drakon"
+        },
+        {
+          "key": "C",
+          "text_markdown": "mor zep"
+        },
+        {
+          "key": "D",
+          "text_markdown": "zep mor"
+        },
+        {
+          "key": "E",
+          "text_markdown": "drakon klip"
+        }
+      ],
+      "correct_answer": "A",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cari irisan kata: bandingkan kalimat (1) dan (2) untuk menemukan arti *galak*, lalu cari arti *serigala* dan *putih*. Periksa apakah susunan katanya menganut D-M atau M-D.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n1. **Identifikasi Kosakata melalui Irisan Kata (*Intersection*):**\n   - Bandingkan pernyataan (1) dan (2):\n     - Kata Indonesia sekutu: \"galak\".\n     - Kata Lumina sekutu: *mor*.\n     - Maka: **galak = mor**.\n   - Dari pernyataan (1) (*drakon mor* = \"anjing galak\"):\n     - Karena *mor* = galak, maka **anjing = drakon**.\n   - Dari pernyataan (2) (*mor klip* = \"serigala galak\"):\n     - Karena *mor* = galak, maka **serigala = klip**.\n   - Dari pernyataan (3) (*klip zep* = \"serigala putih\"):\n     - Karena *klip* = serigala, maka **putih = zep**.\n2. **Analisis Pola Sintaksis Frasa:**\n   - \"anjing galak\" diterjemahkan menjadi *drakon* (anjing) + *mor* (galak) $\\rightarrow$ Mengikuti pola **D - M** (Diterangkan di depan, Menerangkan di belakang).\n3. **Formulasi Terjemahan Target:**\n   - Target: \"anjing putih\"\n   - \"anjing\" = *drakon*\n   - \"putih\" = *zep*\n   - Susunan pola D-M: **drakon zep**.\n\n**Jawaban: A**",
+      "quick_trick_markdown": "**Cara Cepat (Irisan Kilat):**\n\n1. *drakon mor* & *mor klip* sama-sama ada *mor* & \"galak\" $\\rightarrow$ *mor* = galak.\n2. Berarti *drakon* = anjing.\n3. *klip zep* = \"serigala putih\". Karena *klip* = serigala, maka *zep* = putih.\n4. \"anjing putih\" = *drakon* + *zep* = **drakon zep**. Langsung pilih **A** (<15 detik)!",
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Membalik susunan kata menjadi pola M-D (*zep drakon*), padahal data nomor 1 terbukti berpola D-M.\n- **Pilihan C & D Salah:** Mengikutsertakan kata *mor* yang berarti \"galak\".\n- **Pilihan E Salah:** Menggunakan kata *klip* yang berarti \"serigala\"."
+    },
+    {
+      "example_id": "ppu-04-04-ex2",
+      "variation_name": "Variasi 2: Dekonstruksi Afiksasi Morfologis dan Penanda Jamak / Kala (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "Berikut adalah daftar kosakata dalam bahasa buatan Valyris:\n\n1. *valon* = prajurit\n2. *valontas* = banyak prajurit (prajurit-prajurit)\n3. *kempa* = kastel\n4. *kempatas* = banyak kastel\n5. *rok* = melihat\n6. *irok* = sudah melihat (lampau)\n7. *valon irok kempa* = seorang prajurit sudah melihat kastel",
+      "question_markdown": "Berdasarkan pola gramatikal bahasa Valyris tersebut, kalimat manakah yang menyatakan \"Banyak prajurit sudah melihat banyak kastel\"?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "valontas irok kempai"
+        },
+        {
+          "key": "B",
+          "text_markdown": "valontas roktas kempatas"
+        },
+        {
+          "key": "C",
+          "text_markdown": "valontas irok kempatas"
+        },
+        {
+          "key": "D",
+          "text_markdown": "ivalontas rok kempatas"
+        },
+        {
+          "key": "E",
+          "text_markdown": "valon iroktas kempa"
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cari sufiks jamak pada kata benda (*-tas*) dan prefiks aspek lampau pada kata kerja (*i-*). Rangkai kalimat dengan susunan S - P - O.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n1. **Isolasi Morfem Penanda Jamak Nomina:**\n   - *valon* (tunggal) $\\rightarrow$ *valontas* (jamak).\n   - *kempa* (tunggal) $\\rightarrow$ *kempatas* (jamak).\n   - Residu morfem: Penambahan sufiks **-tas** menandai bentuk jamak nomina.\n2. **Isolasi Morfem Penanda Kala Lampau Verba:**\n   - *rok* (kata dasar verba: melihat) $\\rightarrow$ *irok* (aspek lampau: sudah melihat).\n   - Residu morfem: Penambahan prefiks **i-** menandai kala lampau pada verba.\n3. **Analisis Struktur Sintaksis:**\n   - Kalimat nomor 7: *valon* (S) *irok* (P) *kempa* (O) $\\rightarrow$ Mengikuti pola linier **S - P - O**.\n4. **Rekonstruksi Kalimat Target:**\n   - \"Banyak prajurit\" (Subjek Jamak) = *valontas*\n   - \"sudah melihat\" (Predikat Lampau) = *irok*\n   - \"banyak kastel\" (Objek Jamak) = *kempatas*\n   - Hasil rangkaian: **valontas irok kempatas**.\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Rumus Morfem Target):**\n\n1. \"Banyak prajurit\" $\\rightarrow$ wajib ada akhiran *-tas* (*valontas*).\n2. \"sudah melihat\" $\\rightarrow$ wajib ada awalan *i-* (*irok*).\n3. \"banyak kastel\" $\\rightarrow$ wajib ada akhiran *-tas* (*kempatas*).\n4. Gabungan: *valontas* + *irok* + *kempatas*. Opsi **C** cocok sempurna (<10 detik)!",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggunakan bentuk fiktif yang tidak dikenal (*kempai*).\n- **Pilihan B Salah:** Menempelkan sufiks jamak *-tas* ke kata kerja (*roktas*), padahal *-tas* khusus untuk nomina.\n- **Pilihan D Salah:** Menempelkan prefiks lampau *i-* ke kata benda (*ivalontas*).\n- **Pilihan E Salah:** Tidak memuat penanda jamak pada subjek dan objek."
+    },
+    {
+      "example_id": "ppu-04-04-ex3",
+      "variation_name": "Variasi 3: Pemecahan Kriptografi Alfabet Sandi Geser Bertingkat (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Dalam suatu sistem kode enkripsi rahasia:\n\n- Kata **BUKU** disandikan menjadi **DWNW**.\n- Kata **MEJA** disandikan menjadi **OGLC**.",
+      "question_markdown": "Dengan menggunakan metode algoritma enkripsi yang sama, bagaimanakah kata **TINTA** disandikan?",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "VKPVB"
+        },
+        {
+          "key": "B",
+          "text_markdown": "VKPVC"
+        },
+        {
+          "key": "C",
+          "text_markdown": "VJPUC"
+        },
+        {
+          "key": "D",
+          "text_markdown": "WKPVC"
+        },
+        {
+          "key": "E",
+          "text_markdown": "VKQWD"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Hitung selisih jarak huruf antara MEJA dan OGLC pada urutan alfabet A-Z: M ke O, E ke G, J ke L, A ke C.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n1. **Analisis Nilai Pergeseran Alfabet (*Caesar Cipher*):**\n   - Uji pada kata MEJA $\\rightarrow$ OGLC:\n     - M (urutan ke-13) $\\rightarrow$ O (urutan ke-15) : $+2$\n     - E (urutan ke-5) $\\rightarrow$ G (urutan ke-7) : $+2$\n     - J (urutan ke-10) $\\rightarrow$ L (urutan ke-12) : $+2$\n     - A (urutan ke-1) $\\rightarrow$ C (urutan ke-3) : $+2$\n   - Uji pada kata BUKU $\\rightarrow$ DWNW:\n     - B(2) $+2 = $ D(4)\n     - U(21) $+2 = $ W(23)\n     - K(11) $+2 = $ N(13)\n     - U(21) $+2 = $ W(23)\n   - **Aturan Enkripsi:** Setiap huruf digeser maju **+2 langkah** dalam urutan alfabet.\n2. **Aplikasi Algoritma pada Kata Target TINTA:**\n   - T (20) $+ 2 = $ **V** (22)\n   - I (9) $+ 2 = $ **K** (11)\n   - N (14) $+ 2 = $ **P** (16)\n   - T (20) $+ 2 = $ **V** (22)\n   - A (1) $+ 2 = $ **C** (3)\n3. Hasil sandi enkripsi kata TINTA adalah **VKPVC**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Huruf Awal dan Akhir):**\n\n1. Pola: M $\\rightarrow$ O (+2), B $\\rightarrow$ D (+2). Geser **+2** konstan.\n2. Huruf pertama: T + 2 = **V** (eliminasi D).\n3. Huruf terakhir: A + 2 = **C** (eliminasi A).\n4. Huruf kedua: I + 2 = **K** (eliminasi C).\n5. Langsung tersisa opsi **B (VKPVC)** (<10 detik)!",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Huruf terakhir adalah B (+1), seharusnya C (+2).\n- **Pilihan C Salah:** Huruf kedua adalah J (+1), seharusnya K (+2).\n- **Pilihan D Salah:** Huruf pertama adalah W (+3), bukan V (+2).\n- **Pilihan E Salah:** Menyimpang dari pergeseran konstan +2."
+    }
+  ]
+}
