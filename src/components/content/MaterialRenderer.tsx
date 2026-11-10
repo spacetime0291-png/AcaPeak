@@ -115,8 +115,8 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
   // Markdown component replacements for mobile-friendly tables and styled typography
   const markdownComponents = {
     table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
-      <div className="w-full overflow-x-auto my-6">
-        <table className="w-full text-left border-collapse text-[15px] sm:text-[16px] leading-relaxed" {...props}>
+      <div className="w-full overflow-x-auto my-6 max-w-full">
+        <table className="w-full min-w-full text-left border-collapse text-[15px] sm:text-[16px] leading-relaxed" {...props}>
           {children}
         </table>
       </div>
@@ -142,7 +142,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
       </th>
     ),
     td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
-      <td className="py-3.5 px-3.5 first:pl-0 last:pr-0 text-slate-700 dark:text-slate-300 text-[15px] sm:text-[16px] leading-relaxed align-top whitespace-normal" {...props}>
+      <td className="py-3.5 px-3.5 first:pl-0 last:pr-0 text-slate-700 dark:text-slate-300 text-[15px] sm:text-[16px] leading-relaxed align-top whitespace-normal break-words" {...props}>
         {children}
       </td>
     ),

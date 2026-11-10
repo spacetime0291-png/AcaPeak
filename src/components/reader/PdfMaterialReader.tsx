@@ -144,8 +144,8 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
       );
     },
     table: ({ children, ...props }: any) => (
-      <div className="w-full overflow-x-auto my-6">
-        <table className="w-full text-left border-collapse text-[15px] sm:text-[16px] leading-relaxed" {...props}>
+      <div className="w-full overflow-x-auto my-6 max-w-full">
+        <table className="w-full min-w-full text-left border-collapse text-[15px] sm:text-[16px] leading-relaxed" {...props}>
           {children}
         </table>
       </div>
@@ -171,7 +171,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
       </th>
     ),
     td: ({ children, ...props }: any) => (
-      <td className="py-3.5 px-3.5 first:pl-0 last:pr-0 text-slate-700 dark:text-slate-300 text-[15px] sm:text-[16px] leading-relaxed align-top whitespace-normal" {...props}>
+      <td className="py-3.5 px-3.5 first:pl-0 last:pr-0 text-slate-700 dark:text-slate-300 text-[15px] sm:text-[16px] leading-relaxed align-top whitespace-normal break-words" {...props}>
         {children}
       </td>
     ),
@@ -180,7 +180,12 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   // Helper to split markdown and replace `[[SVG:id]]`, plus sanitize raw <br> tags
   const renderMarkdownWithSvg = (rawText: string) => {
     if (!rawText) return null;
-    const cleanText = rawText.replace(/<br\s*\/?>/gi, '\n\n');
+    // Safeguard: Do not replace <br> inside markdown table rows (lines starting with |),
+    // because \n\n breaks GFM table parsing completely.
+    const cleanText = rawText
+      .split('\n')
+      .map((line) => (line.trim().startsWith('|') ? line : line.replace(/<br\s*\/?>/gi, '\n\n')))
+      .join('\n');
     const parts = cleanText.split(/(\[\[SVG:[a-zA-Z0-9_-]+\]\])/g);
 
     return parts.map((part, index) => {
