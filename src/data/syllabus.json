@@ -260,34 +260,62 @@
       },
       {
         "id": "pbm-mod-2",
-        "title": "Ejaan (EYD V)",
+        "title": "Morfologi dan Frasa",
         "priority": "High-Yield",
         "estimatedMinutes": 45,
         "subtopics": [
           {
             "id": "pbm-2-1",
-            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
+            "title": "Afiksasi (Imbuhan) dan Maknanya",
             "isCompleted": false
           },
           {
             "id": "pbm-2-2",
-            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+            "title": "Kata Ulang (Reduplikasi) dan Kata Majemuk",
             "isCompleted": false
           },
           {
             "id": "pbm-2-3",
-            "title": "Penulisan Kata Serapan dan Kata Baku",
+            "title": "Jenis dan Konstruksi Frasa",
             "isCompleted": false
           },
           {
             "id": "pbm-2-4",
-            "title": "Penulisan Angka dan Bilangan",
+            "title": "Kelompok Kata dan Pasangan Makna Sebidang",
             "isCompleted": false
           }
         ]
       },
       {
         "id": "pbm-mod-3",
+        "title": "Ejaan (EYD V)",
+        "priority": "High-Yield",
+        "estimatedMinutes": 45,
+        "subtopics": [
+          {
+            "id": "pbm-3-1",
+            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-3-2",
+            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-3-3",
+            "title": "Penulisan Kata Serapan dan Kata Baku",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-3-4",
+            "title": "Penulisan Angka dan Bilangan",
+            "isCompleted": false
+          }
+        ]
+      },
+      {
+        "id": "pbm-mod-4",
         "title": "Tanda Baca",
         "priority": "High-Yield",
         "estimatedMinutes": 40,
@@ -310,7 +338,7 @@
         ]
       },
       {
-        "id": "pbm-mod-4",
+        "id": "pbm-mod-5",
         "title": "Konjungsi dan Preposisi",
         "priority": "High-Yield",
         "estimatedMinutes": 40,
@@ -333,7 +361,7 @@
         ]
       },
       {
-        "id": "pbm-mod-5",
+        "id": "pbm-mod-6",
         "title": "Penyuntingan Kalimat dan Wacana",
         "priority": "Core",
         "estimatedMinutes": 45,

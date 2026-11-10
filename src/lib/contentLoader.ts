@@ -21,6 +21,10 @@ import {
   MATERIAL_PBM_01_02,
   MATERIAL_PBM_01_03,
   MATERIAL_PBM_01_04,
+  MATERIAL_PBM_02_01,
+  MATERIAL_PBM_02_02,
+  MATERIAL_PBM_02_03,
+  MATERIAL_PBM_02_04,
 } from '../data/materials/pbmMaterials';
 
 // Helper to create an aliased material for PPU cross-compatibility
@@ -37,6 +41,10 @@ const MATERIAL_PPU_01_01 = aliasForPpu(MATERIAL_PBM_01_01, 'ppu-1-1');
 const MATERIAL_PPU_01_02 = aliasForPpu(MATERIAL_PBM_01_02, 'ppu-1-2');
 const MATERIAL_PPU_01_03 = aliasForPpu(MATERIAL_PBM_01_03, 'ppu-1-3');
 const MATERIAL_PPU_01_04 = aliasForPpu(MATERIAL_PBM_01_04, 'ppu-1-4');
+const MATERIAL_PPU_02_01 = aliasForPpu(MATERIAL_PBM_02_01, 'ppu-2-1');
+const MATERIAL_PPU_02_02 = aliasForPpu(MATERIAL_PBM_02_02, 'ppu-2-2');
+const MATERIAL_PPU_02_03 = aliasForPpu(MATERIAL_PBM_02_03, 'ppu-2-3');
+const MATERIAL_PPU_02_04 = aliasForPpu(MATERIAL_PBM_02_04, 'ppu-2-4');
 
 export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-1-1': MATERIAL_PU_01_01,
@@ -96,6 +104,20 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pbm-01-04': MATERIAL_PBM_01_04,
   'pbm-1.4': MATERIAL_PBM_01_04,
 
+  // PBM Chapter 2: Morfologi dan Frasa
+  'pbm-2-1': MATERIAL_PBM_02_01,
+  'pbm-02-01': MATERIAL_PBM_02_01,
+  'pbm-2.1': MATERIAL_PBM_02_01,
+  'pbm-2-2': MATERIAL_PBM_02_02,
+  'pbm-02-02': MATERIAL_PBM_02_02,
+  'pbm-2.2': MATERIAL_PBM_02_02,
+  'pbm-2-3': MATERIAL_PBM_02_03,
+  'pbm-02-03': MATERIAL_PBM_02_03,
+  'pbm-2.3': MATERIAL_PBM_02_03,
+  'pbm-2-4': MATERIAL_PBM_02_04,
+  'pbm-02-04': MATERIAL_PBM_02_04,
+  'pbm-2.4': MATERIAL_PBM_02_04,
+
   // PPU Chapter 1 Alias
   'ppu-1-1': MATERIAL_PPU_01_01,
   'ppu-01-01': MATERIAL_PPU_01_01,
@@ -109,6 +131,20 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
   'ppu-1-4': MATERIAL_PPU_01_04,
   'ppu-01-04': MATERIAL_PPU_01_04,
   'ppu-1.4': MATERIAL_PPU_01_04,
+
+  // PPU Chapter 2 Alias
+  'ppu-2-1': MATERIAL_PPU_02_01,
+  'ppu-02-01': MATERIAL_PPU_02_01,
+  'ppu-2.1': MATERIAL_PPU_02_01,
+  'ppu-2-2': MATERIAL_PPU_02_02,
+  'ppu-02-02': MATERIAL_PPU_02_02,
+  'ppu-2.2': MATERIAL_PPU_02_02,
+  'ppu-2-3': MATERIAL_PPU_02_03,
+  'ppu-02-03': MATERIAL_PPU_02_03,
+  'ppu-2.3': MATERIAL_PPU_02_03,
+  'ppu-2-4': MATERIAL_PPU_02_04,
+  'ppu-02-04': MATERIAL_PPU_02_04,
+  'ppu-2.4': MATERIAL_PPU_02_04,
 };
 
 // Flatten all UTBK subchapters for metadata lookup

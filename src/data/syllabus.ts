@@ -263,101 +263,129 @@ export const SYLLABUS_DATA: SubtestItem[] = [
       },
       {
         "id": "pbm-mod-2",
-        "title": "Ejaan (EYD V)",
+        "title": "Morfologi dan Frasa",
         "priority": "High-Yield",
         "estimatedMinutes": 45,
         "subtopics": [
           {
             "id": "pbm-2-1",
-            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
+            "title": "Afiksasi (Imbuhan) dan Maknanya",
             "isCompleted": false
           },
           {
             "id": "pbm-2-2",
-            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+            "title": "Kata Ulang (Reduplikasi) dan Kata Majemuk",
             "isCompleted": false
           },
           {
             "id": "pbm-2-3",
-            "title": "Penulisan Kata Serapan dan Kata Baku",
+            "title": "Jenis dan Konstruksi Frasa",
             "isCompleted": false
           },
           {
             "id": "pbm-2-4",
-            "title": "Penulisan Angka dan Bilangan",
+            "title": "Kelompok Kata dan Pasangan Makna Sebidang",
             "isCompleted": false
           }
         ]
       },
       {
         "id": "pbm-mod-3",
-        "title": "Tanda Baca",
+        "title": "Ejaan (EYD V)",
         "priority": "High-Yield",
-        "estimatedMinutes": 40,
+        "estimatedMinutes": 45,
         "subtopics": [
           {
             "id": "pbm-3-1",
-            "title": "Tanda Titik, Koma, dan Titik Koma",
+            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
             "isCompleted": false
           },
           {
             "id": "pbm-3-2",
-            "title": "Tanda Titik Dua, Hubung, dan Pisah",
+            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
             "isCompleted": false
           },
           {
             "id": "pbm-3-3",
-            "title": "Tanda Petik dan Tanda Kurung",
+            "title": "Penulisan Kata Serapan dan Kata Baku",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-3-4",
+            "title": "Penulisan Angka dan Bilangan",
             "isCompleted": false
           }
         ]
       },
       {
         "id": "pbm-mod-4",
-        "title": "Konjungsi dan Preposisi",
+        "title": "Tanda Baca",
         "priority": "High-Yield",
         "estimatedMinutes": 40,
         "subtopics": [
           {
             "id": "pbm-4-1",
-            "title": "Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
+            "title": "Tanda Titik, Koma, dan Titik Koma",
             "isCompleted": false
           },
           {
             "id": "pbm-4-2",
-            "title": "Konjungsi Antarkalimat",
+            "title": "Tanda Titik Dua, Hubung, dan Pisah",
             "isCompleted": false
           },
           {
             "id": "pbm-4-3",
-            "title": "Konjungsi Korelatif dan Preposisi Tepat",
+            "title": "Tanda Petik dan Tanda Kurung",
             "isCompleted": false
           }
         ]
       },
       {
         "id": "pbm-mod-5",
+        "title": "Konjungsi dan Preposisi",
+        "priority": "High-Yield",
+        "estimatedMinutes": 40,
+        "subtopics": [
+          {
+            "id": "pbm-5-1",
+            "title": "Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-5-2",
+            "title": "Konjungsi Antarkalimat",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-5-3",
+            "title": "Konjungsi Korelatif dan Preposisi Tepat",
+            "isCompleted": false
+          }
+        ]
+      },
+      {
+        "id": "pbm-mod-6",
         "title": "Penyuntingan Kalimat dan Wacana",
         "priority": "Core",
         "estimatedMinutes": 45,
         "subtopics": [
           {
-            "id": "pbm-5-1",
+            "id": "pbm-6-1",
             "title": "Perbaikan Kalimat Tidak Efektif dan Ambigu",
             "isCompleted": false
           },
           {
-            "id": "pbm-5-2",
+            "id": "pbm-6-2",
             "title": "Penggabungan dan Pemisahan Kalimat",
             "isCompleted": false
           },
           {
-            "id": "pbm-5-3",
+            "id": "pbm-6-3",
             "title": "Melengkapi Rumpang dalam Paragraf",
             "isCompleted": false
           },
           {
-            "id": "pbm-5-4",
+            "id": "pbm-6-4",
             "title": "Simpulan dan Ringkasan Teks",
             "isCompleted": false
           }
