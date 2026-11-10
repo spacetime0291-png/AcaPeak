@@ -16,6 +16,27 @@ import {
   MATERIAL_PU_03_04,
   MATERIAL_PU_03_05,
 } from '../data/materials/puMaterials';
+import {
+  MATERIAL_PBM_01_01,
+  MATERIAL_PBM_01_02,
+  MATERIAL_PBM_01_03,
+  MATERIAL_PBM_01_04,
+} from '../data/materials/pbmMaterials';
+
+// Helper to create an aliased material for PPU cross-compatibility
+const aliasForPpu = (mat: Material, ppuId: string): Material => ({
+  ...mat,
+  metadata: {
+    ...mat.metadata,
+    id: ppuId,
+    subtest: 'PPU',
+  },
+});
+
+const MATERIAL_PPU_01_01 = aliasForPpu(MATERIAL_PBM_01_01, 'ppu-1-1');
+const MATERIAL_PPU_01_02 = aliasForPpu(MATERIAL_PBM_01_02, 'ppu-1-2');
+const MATERIAL_PPU_01_03 = aliasForPpu(MATERIAL_PBM_01_03, 'ppu-1-3');
+const MATERIAL_PPU_01_04 = aliasForPpu(MATERIAL_PBM_01_04, 'ppu-1-4');
 
 export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-1-1': MATERIAL_PU_01_01,
@@ -60,6 +81,34 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-3-5': MATERIAL_PU_03_05,
   'pu-03-05': MATERIAL_PU_03_05,
   'pu-3.5': MATERIAL_PU_03_05,
+
+  // PBM Chapter 1: Makna dan Relasi Kata
+  'pbm-1-1': MATERIAL_PBM_01_01,
+  'pbm-01-01': MATERIAL_PBM_01_01,
+  'pbm-1.1': MATERIAL_PBM_01_01,
+  'pbm-1-2': MATERIAL_PBM_01_02,
+  'pbm-01-02': MATERIAL_PBM_01_02,
+  'pbm-1.2': MATERIAL_PBM_01_02,
+  'pbm-1-3': MATERIAL_PBM_01_03,
+  'pbm-01-03': MATERIAL_PBM_01_03,
+  'pbm-1.3': MATERIAL_PBM_01_03,
+  'pbm-1-4': MATERIAL_PBM_01_04,
+  'pbm-01-04': MATERIAL_PBM_01_04,
+  'pbm-1.4': MATERIAL_PBM_01_04,
+
+  // PPU Chapter 1 Alias
+  'ppu-1-1': MATERIAL_PPU_01_01,
+  'ppu-01-01': MATERIAL_PPU_01_01,
+  'ppu-1.1': MATERIAL_PPU_01_01,
+  'ppu-1-2': MATERIAL_PPU_01_02,
+  'ppu-01-02': MATERIAL_PPU_01_02,
+  'ppu-1.2': MATERIAL_PPU_01_02,
+  'ppu-1-3': MATERIAL_PPU_01_03,
+  'ppu-01-03': MATERIAL_PPU_01_03,
+  'ppu-1.3': MATERIAL_PPU_01_03,
+  'ppu-1-4': MATERIAL_PPU_01_04,
+  'ppu-01-04': MATERIAL_PPU_01_04,
+  'ppu-1.4': MATERIAL_PPU_01_04,
 };
 
 // Flatten all UTBK subchapters for metadata lookup

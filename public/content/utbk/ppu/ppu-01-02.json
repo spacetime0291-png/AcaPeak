@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "id": "ppu-1-2",
+    "subtest": "PPU",
+    "chapter_num": 1,
+    "chapter_title": "Makna dan Relasi Kata",
+    "subchapter_num": "1.2",
+    "subchapter_title": "Sinonim, Antonim, Homonim, dan Polisemi",
+    "title": "Sinonim, Antonim, Homonim, dan Polisemi",
+    "required_question_variations": [
+      "Identifikasi Relasi Polisemi vs Homonim (HOTS)",
+      "Kesepadanan Jenis Oposisi Makna (Antonim Relasional)",
+      "Presisi Diksi dan Kolokasi Sinonim Teks Ilmiah"
+    ],
+    "requires_svg": false,
+    "updated_at": "2026-11-10"
+  },
+  "content": {
+    "tactical_overview": "Relasi makna antarkata terbagi ke dalam empat poros utama: sinonim (kemiripan makna yang dipengaruhi register dan kolokasi), antonim (oposisi biner, bergradasi, relasional, hierarkis, atau majemuk), relasi bentuk-bunyi (homonim, homofon, homograf), dan polisemi (satu leksem beragam arti yang masih berkerabat konseptual). Kunci penyelesaian cepat adalah menguji asal usul kata untuk membedakan homonim vs polisemi, serta menyisipkan kata \"agak/sangat\" untuk membedakan antonim biner vs bergradasi.",
+    "exam_blueprint_markdown": "# 1. Prinsip Dasar dan Kerangka Teori\n\nRelasi makna antarkata dalam semantik bahasa Indonesia dikelompokkan ke dalam empat poros:\n\n## 1.1 Sinonim (Relasi Kemiripan Makna / Kesepadanan)\nSinonim adalah relasi semantik antara dua satuan ujaran atau lebih yang memiliki kesamaan atau kemiripan makna.\n\n- **Sinonim Mutlak (Absolut)**: Dapat saling bertukar posisi dalam semua konteks kalimat tanpa mengubah makna (*kosmetik* = *alat molek*, *laris* = *laku keras*).\n- **Sinonim Kontekstual (Proporsional)**: Hanya dapat saling menggantikan dalam konteks tertentu (*melihat drama* = *menonton drama*, tetapi bukan *menonton mikroskop*).\n- **Sinonim Nilai Rasa (Konotatif / Register)**: Makna leksikal sama tetapi berbeda tingkat kehalusan sosial:\n  - *Wafat* (penghormatan tokoh/agama)\n  - *Gugur* (pahlawan/pejuang di medan tempur)\n  - *Tewas* (korban kecelakaan/bencana alam/kriminalitas)\n  - *Mangkat* (raja/bangsawan tinggi)\n  - *Mampus* (kasar/makian)\n  - *Mati* (netral bagi hewan/tumbuhan/biologis umum)\n\n---\n\n## 1.2 Antonim (Relasi Oposisi Makna / Pertentangan)\n- **Antonim Biner (Komplementer / Mutlak)**: Pertentangan mutlak tanpa tingkatan tengah.  \n  *Rumus Logika*: $\\text{Tidak } A = B$ (*hidup* vs. *mati*, *jantan* vs. *betina*, *sah* vs. *batal*).\n- **Antonim Bergradasi (Kutub / Skalar / Relatif)**: Berada pada kontinum bertingkat dan memiliki zona netral.  \n  *Rumus Logika*: $\\text{Tidak } A \\neq B$ (*panas* vs. *dingin*, *besar* vs. *kecil*, *mahal* vs. *murah*).\n- **Antonim Relasional (Kebalikan / Korelatif)**: Pertentangan makna timbal balik; kehadiran satu entitas secara logis mensyaratkan entitas lain (*suami* vs. *istri*, *penjual* vs. *pembeli*, *guru* vs. *murid*).\n- **Antonim Hierarkis**: Satuan leksikal yang memiliki penjenjangan sistematis (*jenderal* vs. *prajurit*, *meter* vs. *sentimeter*).\n- **Antonim Majemuk**: Pertentangan makna satu kata terhadap lebih dari satu kata luar kelompok (*merah* vs. *bukan merah*).\n\n---\n\n## 1.3 Relasi Bentuk dan Bunyi: Homonim, Homofon, dan Homograf\n- **Homonim**: Ejaan dan lafal sama persis, makna berbeda total dan etimologi terpisah (*bisa* = racun ular vs. mampu; *genting* = gawat vs. atap rumah; *rapat* = pertemuan resmi vs. tidak renggang).\n- **Homofon**: Lafal sama, ejaan dan makna berbeda (*bank* tempat uang vs. *bang* panggilan saudara; *massa* kerumunan orang vs. *masa* kurun waktu; *sanksi* hukuman vs. *sangsi* ragu-ragu).\n- **Homograf**: Ejaan sama, lafal (terutama vokal pepet [ə] vs. taling [e]) dan makna berbeda:\n  - *Apel* [apəl] (upacara bendera) vs. *Apel* [apel] (buah)\n  - *Teras* [təras] (inti kayu/pejabat utama) vs. *Teras* [teras] (beranda rumah)\n  - *Mental* [məntal] (terpelanting) vs. *Mental* [mental] (kondisi kejiwaan)\n\n---\n\n## 1.4 Polisemi (Satu Kata Banyak Makna Berkerabat)\nPolisemi adalah kondisi sebuah leksem tunggal yang memiliki variasi makna lebih dari satu yang masih berkerabat secara konseptual atau metaforis dari satu makna induk asali.\n\n- **Contoh Polisemi \"Kepala\"**:\n  - Bagian tubuh atas (*makna dasar fisik*)\n  - Pemimpin lembaga (*kepala kantor*)\n  - Bagian teratas lembar surat (*kepala surat*)\n  - Rangkaian terdepan (*kepala kereta api*)\n- **Contoh Polisemi \"Kaki\"**:\n  - Anggota gerak tubuh bawah (*makna dasar fisik*)\n  - Lereng bagian bawah gunung (*kaki gunung*)\n  - Tiang penyangga perabot (*kaki meja*)\n\n---\n\n## 1.5 Matriks Komparasi: Homonim vs. Polisemi vs. Homofon vs. Homograf\n\n| Bentuk Relasi | Ejaan (Grafis) | Lafal (Fonis) | Makna | Asal-usul Leksikon |\n| :--- | :--- | :--- | :--- | :--- |\n| **Homonim** | Sama | Sama | Berbeda total | Berasal dari kata dasar berbeda (dua entitas kamus terpisah) |\n| **Polisemi** | Sama | Sama | Beragam tapi berkerabat | Berasal dari satu kata dasar yang sama (satu entitas kamus bercabang) |\n| **Homofon** | Berbeda | Sama | Berbeda total | Kata yang sepenuhnya berlainan asal-usulnya |\n| **Homograf** | Sama | Berbeda | Berbeda total | Kata yang sepenuhnya berlainan asal-usulnya |\n\n---\n\n# 2. Pola Jebakan Pengecoh UTBK\n\n1. **Jebakan Homonim vs. Polisemi**: Menyamaratakan pasangan kata yang memiliki kesamaan fungsi/posisi metaforis sebagai homonim, padahal merupakan relasi polisemi yang berakar dari satu leksem tubuh/letak yang sama.\n2. **Jebakan Kolokasi dan Nilai Rasa Sinonim**: Mengganti kata baku dengan sinonim leksikal yang tidak sesuai register (misal menggunakan kata *tewas* untuk pahlawan kemerdekaan yang seharusnya *gugur*).\n3. **Jebakan Negasi Antonim Bergradasi**: Menyimpulkan bahwa negasi dari kata bergradasi pasti kutub lawannya (misal berasumsi *tidak panas* pasti *dingin*, padahal ada zona hangat atau sejuk).\n4. **Jebakan Transkripsi Homograf Fonetis**: Salah mengidentifikasi perbedaan fonetis vokal pepet [ə] dan taling [e].\n\n---\n\n# 3. Trik Analisis Taktis (<30 Detik)\n\n1. **Uji Asal Usul / Metafora Cabang**: Jika ada analogi kemiripan fungsi/letak/bentuk $\\rightarrow$ Polisemi; jika terputus total dari dua etimologi berbeda $\\rightarrow$ Homonim.\n2. **Uji Skala Kontinum (Biner vs. Gradual)**: Sisipkan kata *agak* atau *sangat*. Jika tidak logis (*agak mati*) $\\rightarrow$ Biner; jika logis (*agak dingin*) $\\rightarrow$ Bergradasi.\n3. **Uji Kolokasi Kalimat**: Periksa kelaziman pasangan kata baku (misal *mengentaskan kemiskinan*, bukan *mengentaskan kebodohan*).\n4. **Uji Vokal Pepet-Taling**: Ucapkan dalam hati perbedaan bunyi vokal lemah [ə] dan vokal lebar [e].\n\n---\n\n# 4. Rangkuman Inti\n\n- **Sinonim**: Kemiripan arti yang dibatasi oleh konteks, register, dan kolokasi.\n- **Antonim**: Oposisi biner (mutlak), bergradasi (skalar bertingkat), dan relasional (timbal balik fungsional).\n- **Homonim**: Tulisan sama, bunyi sama, asal-usul dan arti berbeda lepas.\n- **Polisemi**: Tulisan sama, bunyi sama, arti jamak berakar dari satu induk leksikon yang sama.",
+    "visualizations_svg": [],
+    "distractor_traps": [
+      "Jebakan Homonim vs Polisemi: Menyamaratakan pasangan kata yang memiliki kesamaan fungsi/posisi metaforis sebagai homonim, padahal merupakan relasi polisemi.",
+      "Jebakan Kolokasi dan Nilai Rasa Sinonim: Mengganti kata baku dengan sinonim leksikal yang tidak sesuai register (tewas untuk pahlawan kemerdekaan yang seharusnya gugur).",
+      "Jebakan Negasi Antonim Bergradasi: Menyimpulkan bahwa negasi dari kata bergradasi pasti kutub lawannya (tidak panas disimpulkan pasti dingin).",
+      "Jebakan Transkripsi Homograf Fonetis: Salah mengidentifikasi perbedaan fonetis vokal pepet [ə] dan taling [e]."
+    ],
+    "quick_execution_algorithm": [
+      "Uji Asal Usul / Metafora Cabang: Jika ada analogi kemiripan fungsi/letak/bentuk → Polisemi; jika terputus total → Homonim.",
+      "Uji Skala Kontinum (Biner vs Gradual): Sisipkan kata agak/sangat. Jika tidak logis (agak mati) → Biner; jika logis (agak dingin) → Bergradasi.",
+      "Uji Kolokasi Kalimat: Periksa kelaziman pasangan kata baku (mengentaskan kemiskinan, bukan mengentaskan kebodohan).",
+      "Uji Vokal Pepet-Taling: Ucapkan dalam hati perbedaan bunyi vokal lemah [ə] dan vokal lebar [e]."
+    ]
+  },
+  "worked_examples": [
+    {
+      "example_id": "pbm-01-02-ex1",
+      "variation_name": "Variasi 1: Identifikasi Relasi Polisemi vs Homonim / HOTS (Level: Sulit)",
+      "difficulty": "hard",
+      "question_type": "standard_mc",
+      "context_markdown": "(1) Tim ekspedisi berhasil mendirikan tenda darurat tepat di kaki Gunung Semeru.\n(2) Karena kelelahan parah setelah pendakian terjal, kaki pendaki itu mengalami kram otot.\n(3) Petugas keamanan melarang pengunjung membawa senjata tajam atau benda yang bisa melukai orang lain.\n(4) Racun yang terkandung di dalam kantung bisa ular kobra sangat berbahaya bagi sistem saraf.",
+      "question_markdown": "Pernyataan yang **tepat** mengenai relasi semantik kata bercetak miring pada kalimat-kalimat di atas adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Kata kaki (1, 2) berelasi homonim; kata bisa (3, 4) berelasi polisemi."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Kata kaki (1, 2) berelasi polisemi; kata bisa (3, 4) berelasi homonim."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Kedua pasangan kata sama-sama berelasi homonim murni."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Kedua pasangan kata sama-sama berelasi polisemi."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Kata kaki berelasi homograf; kata bisa berelasi homofon."
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Cek hubungan asal-usul kata: apakah *kaki* (bagian bawah tubuh manusia) dan *kaki gunung* (lereng paling bawah) memiliki kesamaan konsep dasar posisi bawah? Lalu bandingkan dengan *bisa* (dapat) vs *bisa* (racun ular).",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kata \"Kaki\" (Kalimat 1 & 2):** Kata *kaki* pada anggota gerak tubuh bawah manusia dan *kaki* pada gunung berasal dari leksem induk yang sama, di mana letak lereng bawah gunung dianalogikan secara spasial dengan posisi kaki manusia. Hubungan makna turunan yang masih berkerabat konsep letak/fungsi ini merupakan **Polisemi**.\n- **Analisis Kata \"Bisa\" (Kalimat 3 & 4):** Kata *bisa* pada kalimat (3) bermakna modalitas \"dapat/mampu\", sedangkan *bisa* pada kalimat (4) bermakna cairan racun ular. Keduanya berasal dari dua etimologi berbeda yang kebetulan memiliki bentuk grafis dan fonis yang sama, terdaftar sebagai dua lema kamus terpisah. Hubungan ini merupakan **Homonim**.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Kekerabatan Makna Induk):**\n\n1. *Kaki gunung* $\\leftrightarrow$ *Kaki pendaki* = sama-sama posisi letak paling bawah $\\rightarrow$ Ada hubungan metaforis $\\rightarrow$ **Polisemi**.\n2. *Bisa melukai* (dapat) $\\leftrightarrow$ *Bisa ular* (racun) = arti putus total, asal kata beda $\\rightarrow$ **Homonim**.\n3. Pilih opsi: kaki polisemi & bisa homonim $\\rightarrow$ Opsi **B**.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terbalik dalam memetakan relasi semantik kedua pasangan kata.\n- **Pilihan C Salah:** Menyamaratakan kedua pasangan kata sebagai homonim tanpa mempertimbangkan metafora spasial pada kata kaki.\n- **Pilihan D Salah:** Mengabaikan fakta bahwa kata bisa berasal dari dua etimologi leksikon yang terpisah total.\n- **Pilihan E Salah:** Salah klasifikasi fonologis; baik kaki maupun bisa memiliki ejaan dan lafal yang identik sempurna, bukan sekadar homograf/homofon."
+    },
+    {
+      "example_id": "pbm-01-02-ex2",
+      "variation_name": "Variasi 2: Kesepadanan Jenis Oposisi Makna (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Hubungan harmonis antara penjual dan pembeli di pasar induk tradisional itu tetap terjaga meski harga pangan mengalami fluktuasi tajam.",
+      "question_markdown": "Relasi antonim antara kata **penjual** dan **pembeli** pada kalimat tersebut sejenis dengan relasi pasangan kata pada kalimat...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "Dokter forensik memastikan korban telah berada dalam kondisi hidup sebelum dipindahkan, bukan langsung mati."
+        },
+        {
+          "key": "B",
+          "text_markdown": "Panitia memastikan bahwa harga tiket masuk seminar tersebut sangat murah, tidak mahal."
+        },
+        {
+          "key": "C",
+          "text_markdown": "Interaksi interaktif antara guru dan murid menjadi kunci keberhasilan metode pembelajaran."
+        },
+        {
+          "key": "D",
+          "text_markdown": "Pasukan khusus itu bergerak perlahan dari tempat yang gelap menuju area yang terang."
+        },
+        {
+          "key": "E",
+          "text_markdown": "Ruang pertemuan itu didesain dengan langit-langit yang tinggi agar ruangan tidak terasa rendah."
+        }
+      ],
+      "correct_answer": "C",
+      "hint_markdown": "💡 **Petunjuk Soal:** Pasangan *penjual* dan *pembeli* adalah hubungan oposisi timbal balik: tidak mungkin ada penjual tanpa keberadaan pembeli. Cari pasangan kata yang juga bersifat relasional korelatif.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Jenis Oposisi:** Pasangan *penjual* dan *pembeli* merupakan **Antonim Relasional (Korelatif / Kebalikan)**, yaitu hubungan pertentangan timbal balik di mana kehadiran satu pihak mensyaratkan pihak lainnya.\n- **Evaluasi Opsi:**\n  - Pilihan A: *hidup* vs *mati* = Antonim Biner (Mutlak/Komplementer; tidak hidup = mati).\n  - Pilihan B: *murah* vs *mahal* = Antonim Bergradasi (Skalar; memiliki tingkatan tengah/sedang).\n  - Pilihan C: *guru* vs *murid* = Antonim Relasional (interaksi fungsional timbal balik; guru mengandaikan keberadaan murid).\n  - Pilihan D: *gelap* vs *terang* = Antonim Bergradasi (ada kondisi temaram/remang-remang).\n  - Pilihan E: *tinggi* vs *rendah* = Antonim Bergradasi (ada ukuran sedang).\n\n**Jawaban: C**",
+      "quick_trick_markdown": "**Cara Cepat (Uji Peran Timbal Balik):**\n\n1. Penjual $\\leftrightarrow$ Pembeli = pasangan peran fungsional timbal balik (relasional).\n2. Cari peran profesi/sosial timbal balik pada opsi: Guru $\\leftrightarrow$ Murid (Opsi C).\n3. Opsi A adalah oposisi mutlak biner; opsi B, D, E adalah kata sifat skalar bertingkat.",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pasangan *hidup - mati* adalah oposisi biner mutlak (komplementer murni tanpa tingkatan perantara).\n- **Pilihan B Salah:** Pasangan *murah - mahal* adalah oposisi polar/bergradasi pada kontinum harga.\n- **Pilihan D Salah:** Pasangan *gelap - terang* adalah oposisi bergradasi intensitas cahaya.\n- **Pilihan E Salah:** Pasangan *tinggi - rendah* adalah oposisi skalar dimensi spasial."
+    },
+    {
+      "example_id": "pbm-01-02-ex3",
+      "variation_name": "Variasi 3: Presisi Diksi dan Kolokasi Sinonim Teks Ilmiah (Level: Sedang)",
+      "difficulty": "medium",
+      "question_type": "standard_mc",
+      "context_markdown": "Lembaga riset nasional berupaya [...] populasi satwa endemik yang terancam punah melalui pembangunan suaka margasatwa baru serta [...] masyarakat sekitar agar tidak membuka lahan perkebunan di zona inti.",
+      "question_markdown": "Kata yang paling tepat untuk melengkapi bagian rumpang teks di atas secara berurutan adalah...",
+      "options": [
+        {
+          "key": "A",
+          "text_markdown": "membesarkan; mengajari"
+        },
+        {
+          "key": "B",
+          "text_markdown": "melestarikan; mengedukasi"
+        },
+        {
+          "key": "C",
+          "text_markdown": "mengembangbiakkan; menggurui"
+        },
+        {
+          "key": "D",
+          "text_markdown": "memelihara; menyuruh"
+        },
+        {
+          "key": "E",
+          "text_markdown": "memperbanyak; melatih"
+        }
+      ],
+      "correct_answer": "B",
+      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan register bahasa ilmiah konservasi lingkungan. Kata untuk populasi satwa langka yang terancam punah menuntut istilah konservasi resmi, dan kata untuk masyarakat menuntut istilah pembinaan yang berkonotasi positif dan menghargai martabat.",
+      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kolokasi Rumpang 1:** Istilah ilmiah dan baku dalam domain konservasi satwa langka yang terancam punah adalah *melestarikan* (menjaga kelangsungan hidup spesies).\n- **Analisis Kolokasi Rumpang 2:** Hubungan lembaga riset dengan masyarakat sekitar kawasan konservasi menuntut diksi edukatif yang persuasif dan santun. Kata *mengedukasi* bernilai amelioratif dan formal. Kata *menggurui* bernilai peyoratif/negatif (merendahkan); kata *menyuruh* dan *mengajari* bernilai informal.\n\n**Jawaban: B**",
+      "quick_trick_markdown": "**Cara Cepat (Pindai Nilai Rasa & Register Keilmuan):**\n\n1. Rumpang 2: Coret opsi C (*menggurui* = berkonotasi sombong/peyoratif) dan D (*menyuruh* = ragam informal/perintah kasar).\n2. Rumpang 1: Bandingkan *melestarikan* (konservasi resmi suaka margasatwa) vs *membesarkan* (kurang presisi) atau *memperbanyak* (tidak lazim untuk populasi endemik suaka margasatwa).\n3. Pasangan paling presisi dan elegan adalah B (*melestarikan; mengedukasi*).",
+      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kata *membesarkan* dan *mengajari* tergolong ragam nonformal sehari-hari, tidak selaras dengan artikel ilmiah konservasi.\n- **Pilihan C Salah:** Kata *menggurui* mengandung nilai rasa peyoratif (sikap sok tahu yang merendahkan pihak lain).\n- **Pilihan D Salah:** Kata *memelihara* lazim untuk hewan peliharaan domestik, dan kata *menyuruh* bernada imperatif informal.\n- **Pilihan E Salah:** Kata *melatih* lazim untuk keterampilan fisik/teknis khusus (misal melatih atlet), bukan penyadaran konservasi masyarakat."
+    }
+  ]
+}

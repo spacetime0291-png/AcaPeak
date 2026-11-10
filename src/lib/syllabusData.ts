@@ -355,28 +355,28 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
             "id": "ppu-1-1",
             "subchapter_num": "1.1",
             "title": "Makna Leksikal, Gramatikal, dan Kontekstual",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-1-2",
             "subchapter_num": "1.2",
             "title": "Sinonim, Antonim, Homonim, dan Polisemi",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-1-3",
             "subchapter_num": "1.3",
             "title": "Hipernim dan Hiponim",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-1-4",
             "subchapter_num": "1.4",
             "title": "Perubahan Makna (Meluas, Menyempit, Ameliorasi, Peyorasi)",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           }
         ]
@@ -491,105 +491,133 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
     "title": "Pemahaman Bacaan dan Menulis",
     "name": "Pemahaman Bacaan dan Menulis",
     "category": "TPS",
-    "description": "Ejaan EYD V, tanda baca, konjungsi, preposisi, dan penyuntingan kalimat.",
+    "description": "Makna kata, ejaan EYD V, tanda baca, konjungsi, preposisi, dan penyuntingan kalimat.",
     "modules": [
       {
         "id": "pbm-mod-1",
-        "title": "Ejaan (EYD V)",
+        "title": "Makna dan Relasi Kata",
         "priority": "High-Yield",
-        "estimatedMinutes": 45,
+        "estimatedMinutes": 40,
         "subtopics": [
           {
             "id": "pbm-1-1",
-            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
+            "title": "Makna Leksikal, Gramatikal, dan Kontekstual",
             "isCompleted": false
           },
           {
             "id": "pbm-1-2",
-            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+            "title": "Sinonim, Antonim, Homonim, dan Polisemi",
             "isCompleted": false
           },
           {
             "id": "pbm-1-3",
-            "title": "Penulisan Kata Serapan dan Kata Baku",
+            "title": "Hipernim dan Hiponim",
             "isCompleted": false
           },
           {
             "id": "pbm-1-4",
-            "title": "Penulisan Angka dan Bilangan",
+            "title": "Perubahan Makna (Meluas, Menyempit, Ameliorasi, Peyorasi)",
             "isCompleted": false
           }
         ]
       },
       {
         "id": "pbm-mod-2",
-        "title": "Tanda Baca",
+        "title": "Ejaan (EYD V)",
         "priority": "High-Yield",
-        "estimatedMinutes": 40,
+        "estimatedMinutes": 45,
         "subtopics": [
           {
             "id": "pbm-2-1",
-            "title": "Tanda Titik, Koma, dan Titik Koma",
+            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
             "isCompleted": false
           },
           {
             "id": "pbm-2-2",
-            "title": "Tanda Titik Dua, Hubung, dan Pisah",
+            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
             "isCompleted": false
           },
           {
             "id": "pbm-2-3",
-            "title": "Tanda Petik dan Tanda Kurung",
+            "title": "Penulisan Kata Serapan dan Kata Baku",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-2-4",
+            "title": "Penulisan Angka dan Bilangan",
             "isCompleted": false
           }
         ]
       },
       {
         "id": "pbm-mod-3",
-        "title": "Konjungsi dan Preposisi",
+        "title": "Tanda Baca",
         "priority": "High-Yield",
         "estimatedMinutes": 40,
         "subtopics": [
           {
             "id": "pbm-3-1",
-            "title": "Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
+            "title": "Tanda Titik, Koma, dan Titik Koma",
             "isCompleted": false
           },
           {
             "id": "pbm-3-2",
-            "title": "Konjungsi Antarkalimat",
+            "title": "Tanda Titik Dua, Hubung, dan Pisah",
             "isCompleted": false
           },
           {
             "id": "pbm-3-3",
-            "title": "Konjungsi Korelatif dan Preposisi Tepat",
+            "title": "Tanda Petik dan Tanda Kurung",
             "isCompleted": false
           }
         ]
       },
       {
         "id": "pbm-mod-4",
+        "title": "Konjungsi dan Preposisi",
+        "priority": "High-Yield",
+        "estimatedMinutes": 40,
+        "subtopics": [
+          {
+            "id": "pbm-4-1",
+            "title": "Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-4-2",
+            "title": "Konjungsi Antarkalimat",
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-4-3",
+            "title": "Konjungsi Korelatif dan Preposisi Tepat",
+            "isCompleted": false
+          }
+        ]
+      },
+      {
+        "id": "pbm-mod-5",
         "title": "Penyuntingan Kalimat dan Wacana",
         "priority": "Core",
         "estimatedMinutes": 45,
         "subtopics": [
           {
-            "id": "pbm-4-1",
+            "id": "pbm-5-1",
             "title": "Perbaikan Kalimat Tidak Efektif dan Ambigu",
             "isCompleted": false
           },
           {
-            "id": "pbm-4-2",
+            "id": "pbm-5-2",
             "title": "Penggabungan dan Pemisahan Kalimat",
             "isCompleted": false
           },
           {
-            "id": "pbm-4-3",
+            "id": "pbm-5-3",
             "title": "Melengkapi Rumpang dalam Paragraf",
             "isCompleted": false
           },
           {
-            "id": "pbm-4-4",
+            "id": "pbm-5-4",
             "title": "Simpulan dan Ringkasan Teks",
             "isCompleted": false
           }
@@ -599,32 +627,66 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
     "chapters": [
       {
         "chapter_num": 1,
-        "chapter_title": "Ejaan (EYD V)",
+        "chapter_title": "Makna dan Relasi Kata",
         "subchapters": [
           {
             "id": "pbm-1-1",
             "subchapter_num": "1.1",
-            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
-            "variations_count": 0,
+            "title": "Makna Leksikal, Gramatikal, dan Kontekstual",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "pbm-1-2",
             "subchapter_num": "1.2",
-            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
-            "variations_count": 0,
+            "title": "Sinonim, Antonim, Homonim, dan Polisemi",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "pbm-1-3",
             "subchapter_num": "1.3",
-            "title": "Penulisan Kata Serapan dan Kata Baku",
-            "variations_count": 0,
+            "title": "Hipernim dan Hiponim",
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "pbm-1-4",
             "subchapter_num": "1.4",
+            "title": "Perubahan Makna (Meluas, Menyempit, Ameliorasi, Peyorasi)",
+            "variations_count": 3,
+            "isCompleted": false
+          }
+        ]
+      },
+      {
+        "chapter_num": 2,
+        "chapter_title": "Ejaan (EYD V)",
+        "subchapters": [
+          {
+            "id": "pbm-2-1",
+            "subchapter_num": "2.1",
+            "title": "Pemakaian Huruf Kapital dan Huruf Miring",
+            "variations_count": 0,
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-2-2",
+            "subchapter_num": "2.2",
+            "title": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+            "variations_count": 0,
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-2-3",
+            "subchapter_num": "2.3",
+            "title": "Penulisan Kata Serapan dan Kata Baku",
+            "variations_count": 0,
+            "isCompleted": false
+          },
+          {
+            "id": "pbm-2-4",
+            "subchapter_num": "2.4",
             "title": "Penulisan Angka dan Bilangan",
             "variations_count": 0,
             "isCompleted": false
@@ -632,26 +694,26 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
         ]
       },
       {
-        "chapter_num": 2,
+        "chapter_num": 3,
         "chapter_title": "Tanda Baca",
         "subchapters": [
           {
-            "id": "pbm-2-1",
-            "subchapter_num": "2.1",
+            "id": "pbm-3-1",
+            "subchapter_num": "3.1",
             "title": "Tanda Titik, Koma, dan Titik Koma",
             "variations_count": 0,
             "isCompleted": false
           },
           {
-            "id": "pbm-2-2",
-            "subchapter_num": "2.2",
+            "id": "pbm-3-2",
+            "subchapter_num": "3.2",
             "title": "Tanda Titik Dua, Hubung, dan Pisah",
             "variations_count": 0,
             "isCompleted": false
           },
           {
-            "id": "pbm-2-3",
-            "subchapter_num": "2.3",
+            "id": "pbm-3-3",
+            "subchapter_num": "3.3",
             "title": "Tanda Petik dan Tanda Kurung",
             "variations_count": 0,
             "isCompleted": false
@@ -659,26 +721,26 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
         ]
       },
       {
-        "chapter_num": 3,
+        "chapter_num": 4,
         "chapter_title": "Konjungsi dan Preposisi",
         "subchapters": [
           {
-            "id": "pbm-3-1",
-            "subchapter_num": "3.1",
+            "id": "pbm-4-1",
+            "subchapter_num": "4.1",
             "title": "Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
             "variations_count": 0,
             "isCompleted": false
           },
           {
-            "id": "pbm-3-2",
-            "subchapter_num": "3.2",
+            "id": "pbm-4-2",
+            "subchapter_num": "4.2",
             "title": "Konjungsi Antarkalimat",
             "variations_count": 0,
             "isCompleted": false
           },
           {
-            "id": "pbm-3-3",
-            "subchapter_num": "3.3",
+            "id": "pbm-4-3",
+            "subchapter_num": "4.3",
             "title": "Konjungsi Korelatif dan Preposisi Tepat",
             "variations_count": 0,
             "isCompleted": false
@@ -686,33 +748,33 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
         ]
       },
       {
-        "chapter_num": 4,
+        "chapter_num": 5,
         "chapter_title": "Penyuntingan Kalimat dan Wacana",
         "subchapters": [
           {
-            "id": "pbm-4-1",
-            "subchapter_num": "4.1",
+            "id": "pbm-5-1",
+            "subchapter_num": "5.1",
             "title": "Perbaikan Kalimat Tidak Efektif dan Ambigu",
             "variations_count": 0,
             "isCompleted": false
           },
           {
-            "id": "pbm-4-2",
-            "subchapter_num": "4.2",
+            "id": "pbm-5-2",
+            "subchapter_num": "5.2",
             "title": "Penggabungan dan Pemisahan Kalimat",
             "variations_count": 0,
             "isCompleted": false
           },
           {
-            "id": "pbm-4-3",
-            "subchapter_num": "4.3",
+            "id": "pbm-5-3",
+            "subchapter_num": "5.3",
             "title": "Melengkapi Rumpang dalam Paragraf",
             "variations_count": 0,
             "isCompleted": false
           },
           {
-            "id": "pbm-4-4",
-            "subchapter_num": "4.4",
+            "id": "pbm-5-4",
+            "subchapter_num": "5.4",
             "title": "Simpulan dan Ringkasan Teks",
             "variations_count": 0,
             "isCompleted": false

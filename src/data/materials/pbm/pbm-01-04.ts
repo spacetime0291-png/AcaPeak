@@ -1,0 +1,271 @@
+import type { Material } from '../../../types/material';
+
+export const MATERIAL_PBM_01_04: Material = {
+  metadata: {
+    id: 'pbm-1-4',
+    subtest: 'PBM',
+    chapter_num: 1,
+    chapter_title: 'Makna dan Relasi Kata',
+    subchapter_num: '1.4',
+    subchapter_title: 'Perubahan Makna (Meluas, Menyempit, Ameliorasi, Peyorasi)',
+    title: 'Perubahan Makna (Meluas, Menyempit, Ameliorasi, Peyorasi)',
+    required_question_variations: [
+      'Analisis Historis Diakronis (Meluas vs Menyempit)',
+      'Identifikasi Pertukaran Tanggapan Indra (Sinestesia HOTS)',
+      'Analisis Polarisasi Nilai Rasa (Ameliorasi vs Peyorasi)',
+    ],
+    requires_svg: false,
+    updated_at: '2026-11-10',
+  },
+  content: {
+    tactical_overview:
+      'Perubahan makna adalah pergeseran konsep semantis kata dari masa ke masa akibat perkembangan budaya, teknologi, dan persepsi sosial penutur. Enam poros perubahan makna utama mencakup: generalisasi (meluas), spesialisasi (menyempit), ameliorasi (peningkatan nilai rasa sosial), peyorasi (penurunan nilai rasa sosial), sinestesia (pertukaran modalitas tanggapan antarindra sensorik manusia), dan asosiasi (persamaan sifat objek fisik yang diangkat menjadi lambang metaforis).',
+    exam_blueprint_markdown: `# 1. Prinsip Dasar dan Kerangka Teori
+
+Perubahan makna adalah pergeseran konsep makna kata dari masa ke masa akibat perkembangan sosiokultural, kontak bahasa, dan analogi pemakaian:
+
+## 1.1 Makna Meluas (Generalisasi)
+Cakupan makna sekarang lebih luas daripada makna dahulu ($\\text{Cakupan Lama} \\subset \\text{Cakupan Baru}$).
+- **Ibu**: dahulu hanya wanita yang melahirkan anak kandung; sekarang sebutan penghormatan bagi seluruh wanita dewasa/berstatus sosial tinggi.
+- **Bapak**: dahulu hanya ayah kandung; sekarang semua pria dewasa atau pemimpin institusi.
+- **Saudara**: dahulu hanya orang yang sekandung/sedarah; sekarang panggilan sapaan setara sesama rekan atau warga.
+- **Papan**: dahulu lempengan kayu rata; sekarang merujuk pada kebutuhan umum tempat tinggal/perumahan.
+- **Pelayaran**: dahulu mengarungi lautan dengan perahu layar; sekarang perjalanan transportasi laut dengan kapal bermesin apa saja.
+
+---
+
+## 1.2 Makna Menyempit (Spesialisasi)
+Cakupan makna sekarang lebih terbatas dan khusus pada bidang, profesi, atau strata tertentu ($\\text{Cakupan Baru} \\subset \\text{Cakupan Lama}$).
+- **Sarjana**: dahulu sebutan untuk cendekiawan / orang pandai umum; sekarang lulusan perguruan tinggi jenjang strata satu (S1).
+- **Guru**: dahulu pengajar ilmu apa saja (termasuk guru silat/kebatinan); sekarang tenaga pendidik profesional pada institusi formal sekolah.
+- **Kitab**: dahulu buku atau tulisan apa saja; sekarang khusus kitab suci keagamaan atau undang-undang hukum formal (seperti KUHP).
+- **Madrasah**: dahulu sekolah apa saja (bahasa Arab); sekarang lembaga pendidikan formal Islam di bawah naungan Kementerian Agama.
+- **Pendeta**: dahulu orang berilmu / petapa pertapa Hindu-Buddha kuno; sekarang pemuka rohani Kristen/Katolik.
+- **Ulama**: dahulu semua ilmuwan/ilmuwan alam; sekarang pemuka agama atau pakar hukum syariat Islam.
+
+---
+
+## 1.3 Ameliorasi (Peningkatan Nilai Rasa / Konotasi Positif)
+Pergeseran makna yang menghasilkan nilai rasa lebih halus, sopan, atau terhormat (berfungsi sebagai eufemisme sosial):
+- **Tunanetra** (*amelioratif*) $\\leftarrow$ *buta*
+- **Tunawicara** (*amelioratif*) $\\leftarrow$ *bisu*
+- **Tunadaksa** (*amelioratif*) $\\leftarrow$ *lumpuh / cacat fisik*
+- **Pramuniaga** (*amelioratif*) $\\leftarrow$ *pelayan toko*
+- **Pramusaji** (*amelioratif*) $\\leftarrow$ *pelayan restoran*
+- **Karyawan / Pegawai** (*amelioratif*) $\\leftarrow$ *buruh*
+- **Wisma / Graha** (*amelioratif*) $\\leftarrow$ *pondok / rumah sewa*
+
+---
+
+## 1.4 Peyorasi (Penurunan Nilai Rasa / Konotasi Negatif)
+Pergeseran makna yang menyebabkan nilai rasa kata menjadi lebih kasar, rendah, atau tercela:
+- **Bunting**: dahulu netral untuk manusia; sekarang berkonotasi kasar bagi manusia dan hanya layak untuk hewan (digantikan oleh *hamil* / *mengandung*).
+- **Oknum**: dahulu pribadi terhormat atau persona mandiri; sekarang terpeyorasi merujuk pada anggota instansi pelaku kejahatan atau pelanggaran disiplin hukum.
+- **Gerombolan**: dahulu sekumpulan orang berkerumun; sekarang terpeyorasi merujuk pada komplotan perusuh atau pemberontak bersenjata.
+- **Bini**: berkonotasi lebih kasar atau tidak resmi dibanding *istri*.
+- **Gelandangan**: berkonotasi sosial rendah/terhina (kini diperhalus menjadi *tunawisma*).
+
+---
+
+## 1.5 Sinestesia (Pertukaran Tanggapan Antarindra)
+Pergeseran makna akibat pertukaran respons antara dua indra sensorik manusia yang berlainan modalitas ($\\text{Indra Asal} \\rightarrow \\text{Indra Sasaran}$):
+- *Kata-katanya sangat pedas*: Pengecap lidah $\\rightarrow$ Pendengaran telinga (ucapan).
+- *Senyumannya sangat manis*: Pengecap lidah $\\rightarrow$ Penglihatan mata (raut muka).
+- *Sikap diplomat itu terasa dingin*: Peraba/suhu kulit $\\rightarrow$ Penglihatan / suasana sikap sosial.
+- *Suaranya terdengar berat*: Peraba/kinestetik $\\rightarrow$ Pendengaran telinga (vokal).
+- *Warna bajunya sangat mencolok*: Raba/sentuh tusukan $\\rightarrow$ Penglihatan mata (warna).
+
+---
+
+## 1.6 Asosiasi (Pergeseran Persamaan Sifat / Metafora)
+Pergeseran makna kata akibat persamaan sifat fisik, fungsi, atau peranan antara objek asal konkret dengan konsep baru:
+- **Amplop**: sampul kertas pos $\\rightarrow$ uang pelicin / suap birokrasi.
+- **Kursi**: tempat duduk perabot kayu $\\rightarrow$ kedudukan politik / jabatan struktural.
+- **Mencatut**: mencabut paku dengan tang $\\rightarrow$ mengambil keuntungan ilegal / menjadi calo.
+- **Benalu**: tumbuhan perusak pohon inang $\\rightarrow$ orang yang hidup menumpang dan merugikan pihak lain.
+
+---
+
+## 1.7 Matriks Komparasi Enam Tipe Perubahan Makna
+
+| Dimensi Perubahan | Sifat Arah Pergeseran | Parameter Pengubah | Contoh Kata | Makna Dahulu | Makna Sekarang |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Meluas (Generalisasi)** | Sempit $\\rightarrow$ Luas | Jumlah cakupan referen bertambah | *Ibu* | Wanita yang melahirkan | Semua wanita dewasa/yang dihormati |
+| **Menyempit (Spesialisasi)** | Luas $\\rightarrow$ Sempit | Cakupan dikhususkan pada kualifikasi tertentu | *Sarjana* | Cendekiawan/orang pandai umum | Lulusan pendidikan tinggi jenjang S1 |
+| **Ameliorasi** | Biasa/Rendah $\\rightarrow$ Halus/Tinggi | Nilai rasa konotasi sosial dinaikkan | *Tunanetra* | Kata *buta* dirasa kasar | Sebutan penghormatan disabilitas penglihatan |
+| **Peyorasi** | Netral/Luhur $\\rightarrow$ Kasar/Rendah | Nilai rasa sosial terdegradasi | *Oknum* | Pribadi terhormat/entitas mandiri | Anggota instansi pelaku kejahatan |
+| **Sinestesia** | Lintas Modalitas Sensorik | Pertukaran rangsangan antar-dua indra manusia | *Kata pedas* | Indra pengecap rasa cabai | Ditanggapi oleh indra pendengaran ucapan |
+| **Asosiasi** | Harfiah $\\rightarrow$ Kiasan Sifat | Persamaan sifat, fungsi, atau kebiasaan fisik | *Amplop* | Sampul kertas pos surat | Uang sogokan/suap birokrasi |
+
+---
+
+# 2. Pola Jebakan Pengecoh UTBK
+
+1. **Jebakan Sinkronis vs. Diakronis**: Menyamakan evolusi historis zaman dahulu ke modern (spesialisasi/generalisasi) dengan relasi sinonim atau polisemi masa kini.
+2. **Jebakan Asosiasi vs. Sinestesia**: Sinestesia wajib melibatkan pertukaran indra sensorik fisik manusia; asosiasi berakar pada persamaan sifat lambang fisik ke konsep abstrak.
+3. **Jebakan Ameliorasi vs. Peyorasi Terbalik**: Menukar label peningkatan kesopanan istilah dengan penurunan nilai rasa.
+4. **Jebakan Kata Berimbuhan**: Perubahan makna harfiah menjadi kiasan akibat intervensi proses afiksasi.
+
+---
+
+# 3. Trik Analisis Taktis (<30 Detik)
+
+1. **Uji Lintas Waktu (Dulu vs. Sekarang)**: Dahulu sempit sekarang luas $\\rightarrow$ Meluas; dahulu luas sekarang sempit $\\rightarrow$ Menyempit.
+2. **Uji Detektor Modalitas Sensorik (Sinestesia)**: Cek kata sifat rasa/suhu/bunyi yang dikenakan pada objek nonfisik indra tersebut (*senyum manis*, *kritik pedas*).
+3. **Uji Nilai Rasa Emosional (+ vs. -)**: Menghaluskan untuk kesopanan $\\rightarrow$ Ameliorasi; merendahkan/pelanggaran $\\rightarrow$ Peyorasi.
+4. **Uji Objek Lambang Fisik (Asosiasi)**: Objek benda konkret difungsikan sebagai lambang uang suap atau jabatan politik (*amplop*, *kursi*).
+
+---
+
+# 4. Rangkuman Inti
+
+- **Meluas**: Ruang lingkup referen bertambah (*ibu*, *bapak*, *saudara*).
+- **Menyempit**: Ruang lingkup referen disaring ke bidang khusus (*sarjana*, *guru*, *kitab*, *pendeta*).
+- **Ameliorasi**: Nilai rasa dinaikkan lebih sopan (*tunanetra*, *pramuniaga*).
+- **Peyorasi**: Nilai rasa diturunkan lebih kasar/rendah (*oknum*, *gerombolan*, *bunting*).
+- **Sinestesia**: Silang tanggapan antar-dua indra tubuh (*senyum manis*, *kritik pedas*).
+- **Asosiasi**: Persamaan sifat objek fisik dijadikan lambang sosial (*amplop*, *kursi*).`,
+    visualizations_svg: [],
+    distractor_traps: [
+      'Jebakan Sinkronis vs Diakronis: Menyamakan evolusi historis zaman dahulu ke modern (spesialisasi/generalisasi) dengan relasi sinonim/polisemi masa kini.',
+      'Jebakan Asosiasi vs Sinestesia: Sinestesia wajib melibatkan pertukaran indra sensorik fisik manusia; asosiasi berakar pada persamaan sifat lambang fisik ke konsep abstrak.',
+      'Jebakan Ameliorasi vs Peyorasi Terbalik: Menukar label peningkatan kesopanan istilah dengan penurunan nilai rasa.',
+      'Jebakan Kata Berimbuhan: Perubahan makna harfiah menjadi kiasan akibat intervensi afiks.',
+    ],
+    quick_execution_algorithm: [
+      'Uji Lintas Waktu (Dulu vs Sekarang): Dahulu sempit sekarang luas → Meluas; dahulu luas sekarang sempit → Menyempit.',
+      'Uji Detektor Modalitas Sensorik (Sinestesia): Cek kata sifat rasa/suhu/bunyi yang mengenakan pada objek nonfisik indra tersebut (senyum manis, kritik pedas).',
+      'Uji Nilai Rasa Emosional (+ vs -): Menghaluskan untuk kesopanan → Ameliorasi; merendahkan/pelanggaran → Peyorasi.',
+      'Uji Objek Lambang Fisik (Asosiasi): Objek benda konkret difungsikan sebagai lambang uang haram atau jabatan (amplop, kursi).',
+    ],
+  },
+  worked_examples: [
+    {
+      example_id: 'pbm-01-04-ex1',
+      variation_name: 'Variasi 1: Analisis Historis Diakronis / Meluas vs Menyempit (Level: Sedang)',
+      difficulty: 'medium',
+      question_type: 'standard_mc',
+      context_markdown:
+        'Pada masa kolonial awal, sebutan sarjana disematkan kepada siapa saja yang memiliki wawasan luas dan berbudi luhur di tengah masyarakat. Namun dalam sistem pendidikan nasional modern, predikat tersebut secara eksklusif hanya diberikan kepada mereka yang telah menyelesaikan kurikulum jenjang strata satu di perguruan tinggi.',
+      question_markdown:
+        'Perubahan makna kata **sarjana** pada wacana di atas tergolong ke dalam jenis...',
+      options: [
+        {
+          key: 'A',
+          text_markdown: 'Generalisasi, karena kini digunakan secara resmi oleh seluruh perguruan tinggi.',
+        },
+        {
+          key: 'B',
+          text_markdown:
+            'Spesialisasi, karena maknanya dibatasi hanya untuk lulusan perguruan tinggi jenjang S1.',
+        },
+        {
+          key: 'C',
+          text_markdown:
+            'Ameliorasi, karena lulusan universitas memiliki status sosial yang tinggi di masyarakat.',
+        },
+        {
+          key: 'D',
+          text_markdown:
+            'Asosiasi, karena adanya persamaan sifat antara orang pintar dengan mahasiswa lulusan S1.',
+        },
+        {
+          key: 'E',
+          text_markdown:
+            'Polisemi, karena kata tersebut memiliki makna ganda yang saling bertolak belakang.',
+        },
+      ],
+      correct_answer: 'B',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Cermati evolusi waktu teks: dahulu bermakna luas mencakup siapa saja yang pandai dan berilmu, sekarang dibatasi secara khusus hanya bagi lulusan jenjang S1. Perubahan dari luas ke sempit disebut spesialisasi.',
+      conceptual_solution_markdown:
+        '**Cara Konsep Formal:**\n\n- **Analisis Diakronis:** Pada masa lampau, kata *sarjana* memiliki cakupan referen yang sangat luas, yaitu merujuk pada setiap orang cerdik, pandai, dan berwawasan luas. Pada masa pendidikan formal modern, ruang lingkup maknanya mengalami pembatasan spesifik (pengkhususan) hanya bagi individu yang telah menamatkan pendidikan tinggi tingkat strata satu (S1).\n- **Penetapan Kaidah:** Pergeseran makna dari cakupan umum ke cakupan yang lebih sempit/khusus disebut **Spesialisasi (Menyempit)**.\n\n**Jawaban: B**',
+      quick_trick_markdown:
+        '**Cara Cepat (Rumus Luas $\\rightarrow$ Sempit):**\n\n1. Dahulu: Luas (cendekiawan/orang pandai umum).\n2. Sekarang: Sempit (khusus lulusan S1 perguruan tinggi).\n3. Luas $\\rightarrow$ Sempit = **Spesialisasi (B)**.',
+      why_others_are_wrong_markdown:
+        '- **Pilihan A Salah:** Generalisasi adalah pergeseran dari cakupan sempit ke luas (kebalikan dari spesialisasi).\n- **Pilihan C Salah:** Ameliorasi berkaitan dengan peningkatan kesopanan nilai rasa sosial bahasa, bukan penyempitan kualifikasi akademik.\n- **Pilihan D Salah:** Asosiasi berakar pada persamaan sifat fisik objek konkret, bukan perkembangan definisi gelar pendidikan.\n- **Pilihan E Salah:** Polisemi bukan merupakan jenis arah perubahan historis, melainkan relasi leksikal sinkronis masa kini.',
+    },
+    {
+      example_id: 'pbm-01-04-ex2',
+      variation_name: 'Variasi 2: Identifikasi Pertukaran Tanggapan Indra / Sinestesia HOTS (Level: Sulit)',
+      difficulty: 'hard',
+      question_type: 'standard_mc',
+      context_markdown:
+        '(1) Aroma parfum melati itu tercium sangat harum di sepanjang lorong hotel.\n(2) Sambutan hangat dari dekan fakultas membuat para mahasiswa baru merasa nyaman.\n(3) Sorot matanya yang tajam mengintimidasi seluruh peserta ruang sidang etik.\n(4) Peneliti itu menambahkan larutan asam pekat ke dalam tabung reaksi kimia.\n(5) Jaksa penuntut umum melontarkan pertanyaan yang sangat pedas kepada saksi kunci.',
+      question_markdown:
+        'Kalimat yang memuat kata yang mengalami perubahan makna **sinestesia** secara tepat adalah kalimat nomor...',
+      options: [
+        {
+          key: 'A',
+          text_markdown: '(1) dan (4)',
+        },
+        {
+          key: 'B',
+          text_markdown: '(2) dan (3)',
+        },
+        {
+          key: 'C',
+          text_markdown: '(3) dan (5)',
+        },
+        {
+          key: 'D',
+          text_markdown: '(2) dan (5)',
+        },
+        {
+          key: 'E',
+          text_markdown: '(4) dan (5)',
+        },
+      ],
+      correct_answer: 'D',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Sinestesia terjadi jika tanggapan dari suatu indra sensorik (misal suhu/pengecap) dialihkan untuk menanggapi stimulus yang semestinya ditangkap oleh indra lain (misal pendengaran/suasana tuturan).',
+      conceptual_solution_markdown:
+        '**Cara Konsep Formal:**\n\n- **Kaidah Sinestesia:** Terjadinya pertukaran tanggapan antara dua indra sensorik biologis manusia yang berbeda modalitas.\n- **Analisis Setiap Kalimat:**\n  - Kalimat (1): *Aroma tercium harum* $\\rightarrow$ Indra penciuman (hidung) menanggapi bau wangi $\\rightarrow$ Denotasi murni (Bukan sinestesia).\n  - Kalimat (2): *Sambutan hangat* $\\rightarrow$ *Hangat* (indra peraba/kulit) dialihkan untuk menanggapi *sambutan/suasana* (indra pendengaran/afeksi sosial) $\\rightarrow$ **Sinestesia**.\n  - Kalimat (3): *Sorot mata tajam* $\\rightarrow$ Mengandung asosiasi sifat benda tajam (menusuk) terhadap tatapan mata.\n  - Kalimat (4): *Larutan asam pekat* $\\rightarrow$ Istilah kimia denotasi murni untuk larutan ber-pH rendah $\\rightarrow$ Denotatif murni (Bukan sinestesia).\n  - Kalimat (5): *Pertanyaan pedas* $\\rightarrow$ *Pedas* (indra pengecap lidah) dialihkan untuk menanggapi *pertanyaan/tuturan* (indra pendengaran telinga) $\\rightarrow$ **Sinestesia**.\n- Kalimat yang memuat sinestesia murni tak terbantahkan adalah nomor (2) dan (5).\n\n**Jawaban: D**',
+      quick_trick_markdown:
+        '**Cara Cepat (Cari Pertukaran Sensorik Murni):**\n\n1. Kalimat (1) *aroma harum* = murni hidung (bukan silang indra).\n2. Kalimat (4) *larutan asam* = murni sifat kimia larutan asam.\n3. Coret semua opsi yang memuat nomor (1) atau (4) $\\rightarrow$ Coret A dan E!\n4. Kalimat (5) *pertanyaan pedas* (lidah $\\rightarrow$ telinga) adalah sinestesia klasik paling valid $\\rightarrow$ tersisa opsi C dan D.\n5. Pada kalimat (2), *sambutan hangat* (kulit $\\rightarrow$ telinga/suasana) adalah sinestesia baku UTBK $\\rightarrow$ Pilih **D**.',
+      why_others_are_wrong_markdown:
+        '- **Pilihan A & E Salah:** Kalimat (1) dan (4) menggunakan makna denotasi fisik murni tanpa pertukaran respons antarindra sensorik.\n- **Pilihan B & C Salah:** Kalimat (3) menitikberatkan pada asosiasi persamaan sifat pisau tajam (benda fisik) terhadap tatapan mata, bukan silang modalitas indra murni.',
+    },
+    {
+      example_id: 'pbm-01-04-ex3',
+      variation_name: 'Variasi 3: Analisis Polarisasi Nilai Rasa / Ameliorasi vs Peyorasi (Level: Sedang)',
+      difficulty: 'medium',
+      question_type: 'standard_mc',
+      context_markdown:
+        'Pemerintah daerah merelokasi para tunawisma ke balai rehabilitasi sosial terpadu guna mendapatkan pelatihan wirausaha. Langkah ini diambil setelah oknum aparat penertiban kedapatan melakukan tindakan represif yang mencederai prinsip hak asasi manusia.',
+      question_markdown:
+        'Jenis perubahan makna yang dialami oleh kata **tunawisma** dan **oknum** pada wacana di atas secara berurutan adalah...',
+      options: [
+        {
+          key: 'A',
+          text_markdown: 'Ameliorasi dan Peyorasi',
+        },
+        {
+          key: 'B',
+          text_markdown: 'Peyorasi dan Ameliorasi',
+        },
+        {
+          key: 'C',
+          text_markdown: 'Generalisasi dan Spesialisasi',
+        },
+        {
+          key: 'D',
+          text_markdown: 'Spesialisasi dan Peyorasi',
+        },
+        {
+          key: 'E',
+          text_markdown: 'Asosiasi dan Sinestesia',
+        },
+      ],
+      correct_answer: 'A',
+      hint_markdown:
+        '💡 **Petunjuk Soal:** Kata *tunawisma* digunakan untuk menghaluskan sebutan gelandangan (peningkatan kesopanan rasa). Sebaliknya, kata *oknum* kini berkonotasi negatif sebagai pelaku pelanggaran hukum (penurunan rasa bahasa).',
+      conceptual_solution_markdown:
+        '**Cara Konsep Formal:**\n\n- **Analisis Kata "Tunawisma":** Kata ini diciptakan untuk menggantikan sebutan *gelandangan* yang dirasa merendahkan martabat sosial. Penggunaan bentuk yang lebih halus, sopan, dan terhormat merupakan **Ameliorasi**.\n- **Analisis Kata "Oknum":** Dahulu kata *oknum* bermakna netral bahkan luhur (pribadi atau persona perseorangan). Namun dalam perkembangan mutakhir, kata *oknum* mengalami pergeseran rasa bahasa ke arah negatif/tercela, yaitu hampir selalu digunakan untuk merujuk pada anggota instansi/organisasi yang melakukan perbuatan tercela atau melanggar hukum. Penurunan nilai rasa bahasa ini disebut **Peyorasi**.\n- Urutan yang tepat berturut-turut adalah Ameliorasi dan Peyorasi.\n\n**Jawaban: A**',
+      quick_trick_markdown:
+        '**Cara Cepat (Tanda Nilai Rasa + vs -):**\n\n1. *Tunawisma* = diperhalus/sopan (+) $\\rightarrow$ **Ameliorasi**.\n2. *Oknum* = pelaku kejahatan/pelanggaran (-) $\\rightarrow$ **Peyorasi**.\n3. Urutan: Ameliorasi dan Peyorasi $\\rightarrow$ Opsi **A**.',
+      why_others_are_wrong_markdown:
+        '- **Pilihan B Salah:** Urutan posisi tertukar (*peyorasi dan ameliorasi*).\n- **Pilihan C & D Salah:** Mengira terjadi generalisasi/spesialisasi cakupan referen, padahal fokus utama adalah pergeseran konotasi nilai rasa sosial.\n- **Pilihan E Salah:** Tidak terdapat unsur persamaan sifat lambang fisik maupun pertukaran alat indra manusia.',
+    },
+  ],
+};
