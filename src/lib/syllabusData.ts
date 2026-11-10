@@ -423,28 +423,28 @@ export const UTBK_SYLLABUS: SubtestItem[] = [
             "id": "ppu-3-1",
             "subchapter_num": "3.1",
             "title": "Pola Dasar Kalimat (S-P-O-K-Pel)",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-3-2",
             "subchapter_num": "3.2",
             "title": "Kalimat Inti dan Transformasi Kalimat",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-3-3",
             "subchapter_num": "3.3",
             "title": "Kalimat Efektif dan Kepaduan Makna",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           },
           {
             "id": "ppu-3-4",
             "subchapter_num": "3.4",
             "title": "Kalimat Pasif dan Aktif",
-            "variations_count": 0,
+            "variations_count": 3,
             "isCompleted": false
           }
         ]

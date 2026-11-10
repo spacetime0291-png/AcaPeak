@@ -25,6 +25,10 @@ import {
   MATERIAL_PPU_02_02,
   MATERIAL_PPU_02_03,
   MATERIAL_PPU_02_04,
+  MATERIAL_PPU_03_01,
+  MATERIAL_PPU_03_02,
+  MATERIAL_PPU_03_03,
+  MATERIAL_PPU_03_04,
 } from '../data/materials/ppuMaterials';
 import {
   MATERIAL_PBM_01_01,
@@ -136,6 +140,20 @@ export const PRELOADED_MATERIALS: Record<string, Material> = {
   'ppu-2-4': MATERIAL_PPU_02_04,
   'ppu-02-04': MATERIAL_PPU_02_04,
   'ppu-2.4': MATERIAL_PPU_02_04,
+
+  // PPU Chapter 3: Sintaksis dan Kalimat
+  'ppu-3-1': MATERIAL_PPU_03_01,
+  'ppu-03-01': MATERIAL_PPU_03_01,
+  'ppu-3.1': MATERIAL_PPU_03_01,
+  'ppu-3-2': MATERIAL_PPU_03_02,
+  'ppu-03-02': MATERIAL_PPU_03_02,
+  'ppu-3.2': MATERIAL_PPU_03_02,
+  'ppu-3-3': MATERIAL_PPU_03_03,
+  'ppu-03-03': MATERIAL_PPU_03_03,
+  'ppu-3.3': MATERIAL_PPU_03_03,
+  'ppu-3-4': MATERIAL_PPU_03_04,
+  'ppu-03-04': MATERIAL_PPU_03_04,
+  'ppu-3.4': MATERIAL_PPU_03_04,
 };
 
 // Flatten all UTBK subchapters for metadata lookup
