@@ -35,7 +35,7 @@
   },
   "worked_examples": [
     {
-      "example_id": "pbm-02-01-ex1",
+      "example_id": "ppu-02-01-ex1",
       "variation_name": "Variasi 1: Uji Kesamaan Makna Gramatikal Prefiks ter- / HOTS Semantik (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -70,7 +70,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Imbuhan *ter-* pada *terbawa* menyatakan perbuatan yang tidak disengaja (aksidental).\n- **Pilihan C Salah:** Imbuhan *ter-* pada *tercepat* melekat pada kata sifat yang menyatakan tingkat paling (superlatif).\n- **Pilihan D Salah:** Imbuhan *ter-* pada *terbuka* menyatakan keadaan/kondisi pasif suatu objek.\n- **Pilihan E Salah:** Imbuhan *ter-* pada *terkejut* menyatakan reaksi perasaan spontan."
     },
     {
-      "example_id": "pbm-02-01-ex2",
+      "example_id": "ppu-02-01-ex2",
       "variation_name": "Variasi 2: Kaidah Morfofonemik Pembentukan Kata Baku / KTSP (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -105,7 +105,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bentuk *mensuplai* tidak baku karena fonem /s/ yang diikuti vokal wajib luluh menjadi *menyuplai*.\n- **Pilihan B Salah:** Bentuk *memrogramkan* salah karena gugus konsonan /pr/ tidak boleh diluluhkan.\n- **Pilihan D Salah:** Kedua bentuk kata imbuhan sama-sama menyalahi kaidah morfofonemik KTSP.\n- **Pilihan E Salah:** Kata *memproduksi* tidak kontekstual untuk melengkapi distribusi anggaran ke wilayah pelosok."
     },
     {
-      "example_id": "pbm-02-01-ex3",
+      "example_id": "ppu-02-01-ex3",
       "variation_name": "Variasi 3: Analisis Dikotomi Konfiks pe(N)-...-an vs per-...-an (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",

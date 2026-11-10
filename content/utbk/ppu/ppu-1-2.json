@@ -34,7 +34,7 @@
   },
   "worked_examples": [
     {
-      "example_id": "pbm-01-02-ex1",
+      "example_id": "ppu-01-02-ex1",
       "variation_name": "Variasi 1: Identifikasi Relasi Polisemi vs Homonim / HOTS (Level: Sulit)",
       "difficulty": "hard",
       "question_type": "standard_mc",
@@ -69,7 +69,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terbalik dalam memetakan relasi semantik kedua pasangan kata.\n- **Pilihan C Salah:** Menyamaratakan kedua pasangan kata sebagai homonim tanpa mempertimbangkan metafora spasial pada kata kaki.\n- **Pilihan D Salah:** Mengabaikan fakta bahwa kata bisa berasal dari dua etimologi leksikon yang terpisah total.\n- **Pilihan E Salah:** Salah klasifikasi fonologis; baik kaki maupun bisa memiliki ejaan dan lafal yang identik sempurna, bukan sekadar homograf/homofon."
     },
     {
-      "example_id": "pbm-01-02-ex2",
+      "example_id": "ppu-01-02-ex2",
       "variation_name": "Variasi 2: Kesepadanan Jenis Oposisi Makna (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -104,7 +104,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pasangan *hidup - mati* adalah oposisi biner mutlak (komplementer murni tanpa tingkatan perantara).\n- **Pilihan B Salah:** Pasangan *murah - mahal* adalah oposisi polar/bergradasi pada kontinum harga.\n- **Pilihan D Salah:** Pasangan *gelap - terang* adalah oposisi bergradasi intensitas cahaya.\n- **Pilihan E Salah:** Pasangan *tinggi - rendah* adalah oposisi skalar dimensi spasial."
     },
     {
-      "example_id": "pbm-01-02-ex3",
+      "example_id": "ppu-01-02-ex3",
       "variation_name": "Variasi 3: Presisi Diksi dan Kolokasi Sinonim Teks Ilmiah (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",

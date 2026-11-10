@@ -35,7 +35,7 @@
   },
   "worked_examples": [
     {
-      "example_id": "pbm-02-02-ex1",
+      "example_id": "ppu-02-02-ex1",
       "variation_name": "Variasi 1: Analisis Pleonasme dan Makna Reduplikasi (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -70,7 +70,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan B & E Salah:** Kalimat (3) benar secara tata bahasa; *mobil-mobilan* bermakna tiruan mainan mobil tanpa cacat pleonasme.\n- **Pilihan C & D Salah:** Kalimat (4) memuat pemborosan leksikal kata keterangan, bukan kesalahan kaidah reduplikasi morfologis."
     },
     {
-      "example_id": "pbm-02-02-ex2",
+      "example_id": "ppu-02-02-ex2",
       "variation_name": "Variasi 2: Kaidah Penulisan Kata Majemuk Berimbuhan (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -105,7 +105,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A & C Salah:** Menuliskan spasi pada *mempertanggung jawabkan*, menyalahi kaidah konfiks apitan.\n- **Pilihan D Salah:** Menuliskan spasi pada *menganak tirikan*.\n- **Pilihan E Salah:** Menggunakan tanda hubung tidak baku serta bentuk *pertanggung jawabkan* yang salah secara sintaksis dan ejaan."
     },
     {
-      "example_id": "pbm-02-02-ex3",
+      "example_id": "ppu-02-02-ex3",
       "variation_name": "Variasi 3: Analisis Relasi Semantis Kata Majemuk Idiomatis (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",

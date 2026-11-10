@@ -34,7 +34,7 @@
   },
   "worked_examples": [
     {
-      "example_id": "pbm-01-04-ex1",
+      "example_id": "ppu-01-04-ex1",
       "variation_name": "Variasi 1: Analisis Historis Diakronis / Meluas vs Menyempit (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -69,7 +69,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Generalisasi adalah pergeseran dari cakupan sempit ke luas (kebalikan dari spesialisasi).\n- **Pilihan C Salah:** Ameliorasi berkaitan dengan peningkatan kesopanan nilai rasa sosial bahasa, bukan penyempitan kualifikasi akademik.\n- **Pilihan D Salah:** Asosiasi berakar pada persamaan sifat fisik objek konkret, bukan perkembangan definisi gelar pendidikan.\n- **Pilihan E Salah:** Polisemi bukan merupakan jenis arah perubahan historis, melainkan relasi leksikal sinkronis masa kini."
     },
     {
-      "example_id": "pbm-01-04-ex2",
+      "example_id": "ppu-01-04-ex2",
       "variation_name": "Variasi 2: Identifikasi Pertukaran Tanggapan Indra / Sinestesia HOTS (Level: Sulit)",
       "difficulty": "hard",
       "question_type": "standard_mc",
@@ -104,7 +104,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A & E Salah:** Kalimat (1) dan (4) menggunakan makna denotasi fisik murni tanpa pertukaran respons antarindra sensorik.\n- **Pilihan B & C Salah:** Kalimat (3) menitikberatkan pada asosiasi persamaan sifat pisau tajam (benda fisik) terhadap tatapan mata, bukan silang modalitas indra murni."
     },
     {
-      "example_id": "pbm-01-04-ex3",
+      "example_id": "ppu-01-04-ex3",
       "variation_name": "Variasi 3: Analisis Polarisasi Nilai Rasa / Ameliorasi vs Peyorasi (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",

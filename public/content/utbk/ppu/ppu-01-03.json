@@ -34,7 +34,7 @@
   },
   "worked_examples": [
     {
-      "example_id": "pbm-01-03-ex1",
+      "example_id": "ppu-01-03-ex1",
       "variation_name": "Variasi 1: Distingsi Hiponim vs Meronim dalam Teks Sains (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -69,7 +69,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A, B, C, dan D Salah (sebagai jawaban):** Keempatnya adalah hiponim yang sah karena masing-masing merupakan jenis taksonomi fauna (hewan) laut."
     },
     {
-      "example_id": "pbm-01-03-ex2",
+      "example_id": "ppu-01-03-ex2",
       "variation_name": "Variasi 2: Kesepadanan Relasi Kohiponim Horizontal (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -104,7 +104,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kategori tidak homogen sempurna antara komponen mekanis suku cadang dengan zat pelumas cair.\n- **Pilihan B Salah:** Menggabungkan hipernim (*mamalia*) bersamaan dengan hiponimnya (*harimau* dan *gajah*).\n- **Pilihan D Salah:** Berelasi meronimi (unsur fisik penyusun pesawat terbang), bukan hubungan jenis.\n- **Pilihan E Salah:** Kategori tidak setara antara instalasi fisik (*poli bedah*) dengan tenaga medis (*perawat, dokter*)."
     },
     {
-      "example_id": "pbm-01-03-ex3",
+      "example_id": "ppu-01-03-ex3",
       "variation_name": "Variasi 3: Penentuan Hipernim Terdekat / Paling Presisi / HOTS (Level: Sulit)",
       "difficulty": "hard",
       "question_type": "standard_mc",

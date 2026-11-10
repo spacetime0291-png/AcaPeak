@@ -143,6 +143,38 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
         </code>
       );
     },
+    table: ({ children, ...props }: any) => (
+      <div className="w-full overflow-x-auto my-6">
+        <table className="w-full text-left border-collapse text-[15px] sm:text-[16px] leading-relaxed" {...props}>
+          {children}
+        </table>
+      </div>
+    ),
+    thead: ({ children, ...props }: any) => (
+      <thead className="border-b-2 border-stone-300 dark:border-slate-700 text-slate-900 dark:text-slate-100 font-bold" {...props}>
+        {children}
+      </thead>
+    ),
+    tbody: ({ children, ...props }: any) => (
+      <tbody className="divide-y divide-stone-200/90 dark:divide-slate-800/90" {...props}>
+        {children}
+      </tbody>
+    ),
+    tr: ({ children, ...props }: any) => (
+      <tr className="hover:bg-stone-50/70 dark:hover:bg-slate-800/40 transition-colors" {...props}>
+        {children}
+      </tr>
+    ),
+    th: ({ children, ...props }: any) => (
+      <th className="py-3 px-3.5 first:pl-0 last:pr-0 text-left font-bold text-slate-900 dark:text-slate-100 text-[15px] sm:text-[16px] align-top" {...props}>
+        {children}
+      </th>
+    ),
+    td: ({ children, ...props }: any) => (
+      <td className="py-3.5 px-3.5 first:pl-0 last:pr-0 text-slate-700 dark:text-slate-300 text-[15px] sm:text-[16px] leading-relaxed align-top whitespace-normal" {...props}>
+        {children}
+      </td>
+    ),
   };
 
   // Helper to split markdown and replace `[[SVG:id]]`, plus sanitize raw <br> tags

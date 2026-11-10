@@ -9,6 +9,11 @@ const subtests = [
     prefix: 'MATERIAL_PU_',
   },
   {
+    code: 'ppu',
+    dirName: 'ppu',
+    prefix: 'MATERIAL_PPU_',
+  },
+  {
     code: 'pbm',
     dirName: 'pbm',
     prefix: 'MATERIAL_PBM_',
@@ -57,27 +62,6 @@ for (const sub of subtests) {
         fs.writeFileSync(path.join(dir, `${idPadded}.json`), JSON.stringify(mat, null, 2), 'utf8');
       });
       totalExported++;
-
-      // If PBM Bab 1, also mirror to PPU for backward/cross compatibility
-      if (sub.code === 'pbm') {
-        const ppuPubDir = path.resolve('public/content/utbk/ppu');
-        const ppuRootDir = path.resolve('content/utbk/ppu');
-        [ppuPubDir, ppuRootDir].forEach(dir => {
-          if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-        });
-
-        const ppuMat = JSON.parse(JSON.stringify(mat));
-        ppuMat.metadata.id = `ppu-${ch}-${subNum}`;
-        ppuMat.metadata.subtest = 'PPU';
-
-        const ppuIdShort = `ppu-${ch}-${subNum}`;
-        const ppuIdPadded = `ppu-${ch.padStart(2, '0')}-${subNum.padStart(2, '0')}`;
-
-        [ppuPubDir, ppuRootDir].forEach(dir => {
-          fs.writeFileSync(path.join(dir, `${ppuIdShort}.json`), JSON.stringify(ppuMat, null, 2), 'utf8');
-          fs.writeFileSync(path.join(dir, `${ppuIdPadded}.json`), JSON.stringify(ppuMat, null, 2), 'utf8');
-        });
-      }
     }
   }
 }

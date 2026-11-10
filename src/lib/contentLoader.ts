@@ -17,6 +17,16 @@ import {
   MATERIAL_PU_03_05,
 } from '../data/materials/puMaterials';
 import {
+  MATERIAL_PPU_01_01,
+  MATERIAL_PPU_01_02,
+  MATERIAL_PPU_01_03,
+  MATERIAL_PPU_01_04,
+  MATERIAL_PPU_02_01,
+  MATERIAL_PPU_02_02,
+  MATERIAL_PPU_02_03,
+  MATERIAL_PPU_02_04,
+} from '../data/materials/ppuMaterials';
+import {
   MATERIAL_PBM_01_01,
   MATERIAL_PBM_01_02,
   MATERIAL_PBM_01_03,
@@ -26,25 +36,6 @@ import {
   MATERIAL_PBM_02_03,
   MATERIAL_PBM_02_04,
 } from '../data/materials/pbmMaterials';
-
-// Helper to create an aliased material for PPU cross-compatibility
-const aliasForPpu = (mat: Material, ppuId: string): Material => ({
-  ...mat,
-  metadata: {
-    ...mat.metadata,
-    id: ppuId,
-    subtest: 'PPU',
-  },
-});
-
-const MATERIAL_PPU_01_01 = aliasForPpu(MATERIAL_PBM_01_01, 'ppu-1-1');
-const MATERIAL_PPU_01_02 = aliasForPpu(MATERIAL_PBM_01_02, 'ppu-1-2');
-const MATERIAL_PPU_01_03 = aliasForPpu(MATERIAL_PBM_01_03, 'ppu-1-3');
-const MATERIAL_PPU_01_04 = aliasForPpu(MATERIAL_PBM_01_04, 'ppu-1-4');
-const MATERIAL_PPU_02_01 = aliasForPpu(MATERIAL_PBM_02_01, 'ppu-2-1');
-const MATERIAL_PPU_02_02 = aliasForPpu(MATERIAL_PBM_02_02, 'ppu-2-2');
-const MATERIAL_PPU_02_03 = aliasForPpu(MATERIAL_PBM_02_03, 'ppu-2-3');
-const MATERIAL_PPU_02_04 = aliasForPpu(MATERIAL_PBM_02_04, 'ppu-2-4');
 
 export const PRELOADED_MATERIALS: Record<string, Material> = {
   'pu-1-1': MATERIAL_PU_01_01,

@@ -16,7 +16,7 @@
     "updated_at": "2026-11-10"
   },
   "content": {
-    "tactical_overview": "Kelompok kata dan pasangan makna sebidang dalam subtes PBM UTBK menguji kepekaan leksikosemantis terhadap medan makna (semantic field), kolokasi alamiah baku bahasa Indonesia formal, dan kepatuhan terhadap prinsip paralelisme gramatikal. Kunci utama penyelesaian soal adalah mengidentifikasi ranah/register disiplin ilmu teks (ekonomi, hukum, medis, lingkungan, teknologi), menyeleksi pasangan kolokasi leksikal yang berterima, serta memastikan keseragaman bentuk afiksasi pada rincian frasa yang berpasangan.",
+    "tactical_overview": "Kelompok kata dan pasangan makna sebidang dalam subtes PPU UTBK menguji kepekaan leksikosemantis terhadap medan makna (semantic field), kolokasi alamiah baku bahasa Indonesia formal, dan kepatuhan terhadap prinsip paralelisme gramatikal. Kunci utama penyelesaian soal adalah mengidentifikasi ranah/register disiplin ilmu teks (ekonomi, hukum, medis, lingkungan, teknologi), menyeleksi pasangan kolokasi leksikal yang berterima, serta memastikan keseragaman bentuk afiksasi pada rincian frasa yang berpasangan.",
     "exam_blueprint_markdown": "# 1. Prinsip Dasar dan Kerangka Teori\n\nDalam komunikasi tulis ilmiah dan akademik, pemilihan kelompok kata tidak hanya dinilai dari kebenaran sintaksisnya, melainkan juga dari keselarasan semantisnya: **medan makna (*semantic field*)**, **kolokasi lazim**, dan **kesejajaran bentuk (paralelisme)**.\n\n---\n\n## 1.1 Medan Makna dan Pasangan Makna Sebidang\n\nMedan makna adalah gugusan atau jaringan leksikal yang saling terikat dalam ranah konseptual, disiplin ilmu, atau wilayah aktivitas yang sama.\n\n### Bentuk Pasangan Makna Sebidang:\n1. **Ko-hiponim Koordinatif (Satu Naungan Hipernim)**:\n   - Kata-kata yang menempati hierarki taksonomi sejajar di bawah konsep umum yang sama.\n   - *Contoh*: *panel surya*, *turbin angin*, *pembangkit geotermal* (berada di bawah medan makna hipernim *energi terbarukan*).\n2. **Kolokasi Alamiah (Pasangan Leksikal Baku)**:\n   - Kebiasaan leksikal penutur bahasa dan konvensi laras ilmiah dalam memasangkan kata kerja dengan kata benda tertentu (*collocation*).\n   - *Contoh*: *menjatuhkan vonis* (bukan *membagikan vonis*), *menegakkan diagnosis* (bukan *mendirikan diagnosis*), *mengendalikan laju inflasi* (bukan *menahan laju inflasi*).\n3. **Pasangan Relasional Resiprokal / Komplementer**:\n   - Kata-kata yang saling melengkapi dalam sistem hubungan biner atau sistemik.\n   - *Contoh*: *debit* $\\leftrightarrow$ *kredit*, *hulu* $\\leftrightarrow$ *hilir*, *jaksa penuntut umum* $\\leftrightarrow$ *penasihat hukum*.\n\n---\n\n## 1.2 Paralelisme Bentuk Kelompok Kata\n\nParalelisme sintaktis mewajibkan bahwa unsur-unsur dalam kelompok kata yang berpasangan atau diperinci dengan konjungsi setara (*dan*, *serta*, *maupun*, *atau*) harus memiliki **kesejajaran kategori gramatikal dan pola afiksasi**:\n\n- **Kesejajaran Nomina Berkonfiks *pe-...-an***:\n  - *pengembangan komoditas*, *pemanfaatan lahan*, dan *peningkatan produktivitas*.\n  - $\\rightarrow$ **Salah**: *pengembangan komoditas*, *memanfaatkan lahan*, dan *ditingkatkannya produktivitas* (rancu gabungan nomina, verba aktif, dan verba pasif).\n- **Kesejajaran Verba Berprefiks *me-***:\n  - *mengumpulkan data*, *menganalisis sampel*, serta *menarik kesimpulan*.\n  - $\\rightarrow$ **Salah**: *mengumpulkan data*, *analisis sampel*, dan *penarikan kesimpulan* (tidak paralel antara verba dan nomina).\n\n---\n\n## 1.3 Matriks Komparasi Medan Makna dan Pasangan Sebidang\n\n| Ranah / Bidang Ilmu | Kelompok Kata Kunci | Pasangan Makna Sebidang Lazim | Anomali Pasangan (Janggal / Salah Register) |\n| :--- | :--- | :--- | :--- |\n| **Ekonomi & Moneter** | *suku bunga acuan* | *laju inflasi*, *cadangan devisa*, *likuiditas perbankan*, *stabilitas moneter* | *suku bunga acuan - ekosistem buatan* (inkonsistensi ranah) |\n| **Hukum & Peradilan** | *jaksa penuntut umum* | *surat dakwaan*, *nota pembelaan (pledoi)*, *vonis majelis hakim*, *putusan bebas* | *jaksa penuntut - resep generik* (rancu ranah medis) |\n| **Kesehatan & Kedokteran** | *uji klinis vaksin* | *efikasi obat*, *kekebalan kelompok (herd immunity)*, *transmisi patogen* | *uji klinis - laba bersih kuartal* (rancu ranah finansial) |\n| **Ekologi & Lingkungan** | *kerusakan habitat* | *kepunahan spesies*, *degradasi lahan*, *suksesi ekologis*, *keanekaragaman hayati* | *kerusakan habitat - diversifikasi portofolio* |\n| **Teknologi Informasi** | *keamanan siber* | *enkripsi data end-to-end*, *celah kerentanan (vulnerability)*, *serangan siber* | *keamanan siber - berkas perkara* (rancu ranah hukum acara) |\n\n---\n\n## 1.4 Rangkuman Inti\n\n- **Medan Makna** menyatukan kata-kata dalam ranah disiplin ilmu dan aktivitas tertentu yang koheren.\n- **Kolokasi** mengatur kelaziman dan kepatutan penyandingan leksikal formal baku dalam konteks tertentu.\n- **Paralelisme** mewajibkan keseragaman bentuk morfosintaksis (kesamaan kelas kata dan pola imbuhan) pada kelompok kata berpasangan.",
     "visualizations_svg": [],
     "distractor_traps": [
@@ -34,7 +34,7 @@
   },
   "worked_examples": [
     {
-      "example_id": "pbm-02-04-ex1",
+      "example_id": "ppu-02-04-ex1",
       "variation_name": "Variasi 1: Identifikasi Kelompok Kata Berpasangan Sebidang (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
@@ -69,7 +69,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Berasal dari domain ekologi/lingkungan hidup.\n- **Pilihan C Salah:** Merupakan istilah teknis laras hukum peradilan.\n- **Pilihan D Salah:** Merupakan istilah biologi molekuler/genetika.\n- **Pilihan E Salah:** Merupakan istilah rekayasa industri/mesin."
     },
     {
-      "example_id": "pbm-02-04-ex2",
+      "example_id": "ppu-02-04-ex2",
       "variation_name": "Variasi 2: Paralelisme dan Kesejajaran Bentuk Frasa Berpasangan (Level: Sulit)",
       "difficulty": "hard",
       "question_type": "standard_mc",
@@ -104,7 +104,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Berbentuk klausa kalimat (S-P-O), merusak struktur rincian frasa nomina.\n- **Pilihan B Salah:** Berbentuk verba pasif klitika *-nya*, tidak sejajar dengan nomina tindakan.\n- **Pilihan D Salah:** Frasa preposisional berpartikel *untuk* mengubah fungsi menjadi keterangan tujuan tambahan.\n- **Pilihan E Salah:** Berbentuk verba aktif transitif (*me-*), bukan nomina berkonfiks *pe-...-an*."
     },
     {
-      "example_id": "pbm-02-04-ex3",
+      "example_id": "ppu-02-04-ex3",
       "variation_name": "Variasi 3: Analisis Anomali Kolokasi Pasangan Kata (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",

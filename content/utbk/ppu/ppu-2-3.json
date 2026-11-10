@@ -34,7 +34,7 @@
   },
   "worked_examples": [
     {
-      "example_id": "pbm-02-03-ex1",
+      "example_id": "ppu-02-03-ex1",
       "variation_name": "Variasi 1: Penentuan Unsur Inti Frasa Bertingkat Kompleks (Level: Sulit)",
       "difficulty": "hard",
       "question_type": "standard_mc",
@@ -69,7 +69,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kata *pupuk* hanyalah pewatas objek dari kata *pendistribusian*.\n- **Pilihan B Salah:** Kata *pendistribusian* berada di dalam anak pewatas keterangan *tata kelola sistem...*.\n- **Pilihan C Salah:** Kata *sistem* merupakan pewatas dari *tata kelola*.\n- **Pilihan D Salah:** *Tata kelola* adalah aksis frasa preposisional penjelas, bukan inti subjek utama."
     },
     {
-      "example_id": "pbm-02-03-ex2",
+      "example_id": "ppu-02-03-ex2",
       "variation_name": "Variasi 2: Identifikasi Konstruksi Frasa Ambigu (Level: Sulit)",
       "difficulty": "hard",
       "question_type": "standard_mc",
@@ -104,7 +104,7 @@
       "why_others_are_wrong_markdown": "- **Pilihan B Salah:** *Monyet ekor panjang* adalah istilah taksonomi biologi baku yang bermakna tunggal.\n- **Pilihan C Salah:** *Pemindai termutakhir* berpola D-M baku tanpa percabangan makna.\n- **Pilihan D Salah:** Karakteristik *bersenjata tajam* secara semantis hanya merujuk pada *pencuri/sindikat*, bukan *sepeda motor*.\n- **Pilihan E Salah:** *Paket bantuan pangan langsung tunai* merujuk pada satu kesatuan program resmi pemerintah."
     },
     {
-      "example_id": "pbm-02-03-ex3",
+      "example_id": "ppu-02-03-ex3",
       "variation_name": "Variasi 3: Analisis Jenis Hubungan Distribusi Frasa (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
