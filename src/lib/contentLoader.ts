@@ -1,4 +1,5 @@
 import type { Material, WorkedExample } from '../types/material';
+import { assembleDrillingSession, type OrderMode } from './drillingRotationEngine';
 import { UTBK_SYLLABUS } from './syllabusData';
 import {
   MATERIAL_PU_01_01,
@@ -265,43 +266,17 @@ export async function fetchMaterialById(id: string): Promise<Material> {
   };
 }
 
-// Collect questions from multiple subchapters for drilling
+// Collect questions using the Deterministic Stratified Rotation Engine
 export async function collectDrillingQuestions(
   subchapterIds: string[],
-  requestedCount: number
+  requestedCount: number,
+  orderMode: OrderMode = 'blocking'
 ): Promise<WorkedExample[]> {
-  const allCollected: WorkedExample[] = [];
-
-  for (const id of subchapterIds) {
-    try {
-      const mat = await fetchMaterialById(id);
-      if (mat && mat.worked_examples && mat.worked_examples.length > 0) {
-        allCollected.push(...mat.worked_examples);
-      }
-    } catch (e) {
-      console.warn(`Error loading questions for ${id}`, e);
-    }
-  }
-
-  // If no questions are available for the selected subchapters, return empty array
-  if (allCollected.length === 0) {
-    return [];
-  }
-
-  // Shuffle questions randomly
-  const shuffled = [...allCollected].sort(() => 0.5 - Math.random());
-
-  // If we have fewer than requested, cycle to fill requested count
-  const result: WorkedExample[] = [];
-  let index = 0;
-  while (result.length < requestedCount && shuffled.length > 0) {
-    const item = shuffled[index % shuffled.length];
-    result.push({
-      ...item,
-      example_id: `${item.example_id}-q${result.length + 1}`,
-    });
-    index++;
-  }
-
-  return result.slice(0, requestedCount);
+  return assembleDrillingSession({
+    subchapterIds,
+    requestedCount,
+    orderMode,
+  });
 }
+
+export { assembleDrillingSession } from './drillingRotationEngine';

@@ -261,10 +261,11 @@ export default function App() {
   const handleStartDrilling = async (
     subchapterIds: string[],
     questionCount: number,
-    timerMins: number | null
+    timerMins: number | null,
+    orderMode: 'blocking' | 'interleaved' = 'blocking'
   ) => {
     setDrillingTimerMinutes(timerMins);
-    const qs = await collectDrillingQuestions(subchapterIds, questionCount);
+    const qs = await collectDrillingQuestions(subchapterIds, questionCount, orderMode);
     setDrillingQuestions(qs);
     navigateTo({
       view: 'drilling',

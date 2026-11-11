@@ -319,7 +319,7 @@ export const MATERIAL_PU_02_02: Material = {
     "variation_name": "Variasi 9: Negasi Proposisi Bersyarat Reduksi Emisi Geotermal (Level: Sedang)",
     "difficulty": "medium",
     "question_type": "standard_mc",
-    "context_markdown": "Dalam laporan Analisis Mengenai Dampak Lingkungan (AMDAL) pembangunan unit pembangkit panas bumi di lereng gunung api aktif, seorang konsultan lingkungan merumuskan hipotesis pernyataan bersyarat:\n\n*\"Jika teknologi injeksi ulang fluida geotermal bertekanan tinggi diterapkan secara kontinu ($p$), maka emisi gas hidrogen sulfida ($H_2S$) ke atmosfer pasti tereduksi di bawah ambang batas bahaya ($q$).\"*\n\nSetelah serangkaian pengujian independen di lapangan, dewan pengawas lingkungan menemukan fakta ilmiah yang secara resmi **menyangkal / membatalkan (menegasikan)** pernyataan konsultan lingkungan tersebut.",
+    "context_markdown": "Dalam laporan Analisis Mengenai Dampak Lingkungan (AMDAL) pembangunan unit pembangkit panas bumi di lereng gunung api aktif, seorang konsultan lingkungan merumuskan hipotesis pernyataan bersyarat:\n\n*\"Jika teknologi injeksi ulang fluida geotermal bertekanan tinggi diterapkan secara kontinu, maka emisi gas hidrogen sulfida ($H_2S$) ke atmosfer pasti tereduksi di bawah ambang batas bahaya.\"*\n\nSetelah serangkaian pengujian independen di lapangan, dewan pengawas lingkungan menemukan fakta ilmiah yang secara resmi **menyangkal / membatalkan (menegasikan)** pernyataan konsultan lingkungan tersebut.",
     "question_markdown": "Berdasarkan kaidah logika matematika, manakah kondisi faktual berikut yang merupakan **negasi (ingkaran)** yang sah dari pernyataan konsultan lingkungan tersebut?",
     "options": [
         {
@@ -354,7 +354,7 @@ export const MATERIAL_PU_02_02: Material = {
     "variation_name": "Variasi 10: Bentuk Ekuivalensi Disjungtif Insentif Bea Masuk Industri (Level: Sedang)",
     "difficulty": "medium",
     "question_type": "standard_mc",
-    "context_markdown": "Kementerian Perdagangan mengeluarkan peraturan tertulis terkait fasilitas kepabeanan bagi industri energi terbarukan:\n\n*\"Jika pelaku industri perakitan domestik meningkatkan Tingkat Komponen Dalam Negeri (TKDN) minimal 60% ($p$), maka pemerintah memberikan fasilitas pembebasan bea masuk komponen inverter surya ($q$).\"*\n\nDalam suatu rapat harmonisasi hukum, biro regulasi kementerian diminta merumuskan klausul alternatif yang ekuivalen (setara logis) ke dalam format pernyataan disjungtif (menggunakan kata hubung 'ATAU') tanpa mengubah substansi hukum aslinya.",
+    "context_markdown": "Kementerian Perdagangan mengeluarkan peraturan tertulis terkait fasilitas kepabeanan bagi industri energi terbarukan:\n\n*\"Jika pelaku industri perakitan domestik meningkatkan Tingkat Komponen Dalam Negeri (TKDN) minimal 60%, maka pemerintah memberikan fasilitas pembebasan bea masuk komponen inverter surya.\"*\n\nDalam suatu rapat harmonisasi hukum, biro regulasi kementerian diminta merumuskan klausul alternatif yang ekuivalen (setara logis) ke dalam format pernyataan disjungtif (menggunakan kata hubung 'ATAU') tanpa mengubah substansi hukum aslinya.",
     "question_markdown": "Berdasarkan kaidah ekuivalensi logika formal, manakah pernyataan disjungtif berikut yang **ekuivalen (setara logis)** dengan regulasi di atas?",
     "options": [
         {
@@ -389,7 +389,7 @@ export const MATERIAL_PU_02_02: Material = {
     "variation_name": "Variasi 11: Kontraposisi Implikasi Konjungtif Stimulasi Neurokognitif (Level: Sulit / HOTS)",
     "difficulty": "hard",
     "question_type": "standard_mc",
-    "context_markdown": "Sebuah tim neurobiologi mempublikasikan kaidah penarikan kesimpulan medis dari hasil uji coba klinis:\n\n*\"Jika pasien penurunan kognitif ringan menjalani stimulasi auditori gelombang gamma 40 Hz secara rutin ($p$), maka pasien tersebut mengalami perbaikan konsolidasi memori kerja ($q$) DAN penurunan kadar protein amiloid-beta di cairan serebrospinal ($r$).\"*",
+    "context_markdown": "Sebuah tim neurobiologi mempublikasikan kaidah penarikan kesimpulan medis dari hasil uji coba klinis:\n\n*\"Jika pasien penurunan kognitif ringan menjalani stimulasi auditori gelombang gamma 40 Hz secara rutin, maka pasien tersebut mengalami perbaikan konsolidasi memori kerja DAN penurunan kadar protein amiloid-beta di cairan serebrospinal.\"*",
     "question_markdown": "Manakah pernyataan di bawah ini yang merupakan **kontraposisi yang ekuivalen (pasti benar)** dengan pernyataan peneliti di atas?",
     "options": [
         {
@@ -424,8 +424,8 @@ export const MATERIAL_PU_02_02: Material = {
     "variation_name": "Variasi 12: Hukum De Morgan pada Negasi Keamanan Kanal Kuantum (Level: Sedang)",
     "difficulty": "medium",
     "question_type": "standard_mc",
-    "context_markdown": "Dalam dokumen spesifikasi transmisi jaringan serat optik kuantum (*Quantum Key Distribution* / QKD) perbankan nasional, tertera klausul jaminan integritas berikut:\n\n*\"Kanal transmisi data perbankan aman dari penyadapan pihak ketiga ($S$) jika dan hanya jika terpenuhi kondisi: Terjadi interferensi foton acak pada detektor ($p$) ATAU terdeteksi lonjakan tingkat kesalahan bit kuantum di atas ambang batas 11% ($q$).\"*\nRumus: $S \\iff (p \\lor q)$.\n\nSuatu tim auditor siber ingin membuktikan secara deduktif bahwa kanal transmisi data tersebut **TIDAK aman dari penyadapan pihak ketiga (bernilai $\\sim S$)**.",
-    "question_markdown": "Berdasarkan hukum De Morgan dalam logika matematika, kondisi faktual manakah yang **secara niscaya membuktikan** bahwa kanal transmisi tersebut tidak aman ($\\sim S$)?",
+    "context_markdown": "Dalam dokumen spesifikasi transmisi jaringan serat optik kuantum (*Quantum Key Distribution* / QKD) perbankan nasional, tertera klausul jaminan integritas berikut:\n\n*\"Kanal transmisi data perbankan aman dari penyadapan pihak ketiga jika dan hanya jika terpenuhi kondisi: Terjadi interferensi foton acak pada detektor ATAU terdeteksi lonjakan tingkat kesalahan bit kuantum di atas ambang batas 11%.\"*\n\nSuatu tim auditor siber ingin membuktikan secara deduktif kondisi yang membuktikan bahwa kanal transmisi data tersebut **TIDAK aman dari penyadapan pihak ketiga**.",
+    "question_markdown": "Berdasarkan prinsip logika, kondisi faktual manakah yang **secara niscaya membuktikan** bahwa kanal transmisi tersebut tidak aman?",
     "options": [
         {
             "key": "A",
@@ -459,7 +459,7 @@ export const MATERIAL_PU_02_02: Material = {
     "variation_name": "Variasi 13: Negasi Implikasi Anteseden Disjungtif Cagar Budaya (Level: Sulit / HOTS)",
     "difficulty": "hard",
     "question_type": "standard_mc",
-    "context_markdown": "Dewan Pakar Pelestarian Warisan Arsitektur menetapkan dalil perlindungan cagar budaya daerah:\n\n*\"Jika suatu bangunan cagar budaya mengalami kerusakan struktur kayu akibat rayap ($p$) ATAU mengalami pelapukan batu pondasi akibat naiknya air tanah ($q$), maka pemerintah daerah wajib mengalokasikan pos anggaran tanggap darurat restorasi ($r$).\"*\nRumus: $(p \\lor q) \\implies r$.\n\nSebuah koalisi masyarakat pemerhati sejarah mendalilkan bahwa pemerintah daerah telah **melanggar (mengingkari / menegasikan)** dalil perlindungan tersebut dalam kasus penanganan Kompleks Candi Batu Wadas.",
+    "context_markdown": "Dewan Pakar Pelestarian Warisan Arsitektur menetapkan dalil perlindungan cagar budaya daerah:\n\n*\"Jika suatu bangunan cagar budaya mengalami kerusakan struktur kayu akibat rayap ATAU mengalami pelapukan batu pondasi akibat naiknya air tanah, maka pemerintah daerah wajib mengalokasikan pos anggaran tanggap darurat restorasi.\"*\n\nSebuah koalisi masyarakat pemerhati sejarah mendalilkan bahwa pemerintah daerah telah **melanggar (mengingkari / menegasikan)** dalil perlindungan tersebut dalam kasus penanganan Kompleks Candi Batu Wadas.",
     "question_markdown": "Berdasarkan kaidah logika matematika, kondisi faktual manakah pada Kompleks Candi Batu Wadas yang **membuktikan secara sah terjadinya pengingkaran (negasi)** terhadap dalil perlindungan tersebut?",
     "options": [
         {
@@ -494,7 +494,7 @@ export const MATERIAL_PU_02_02: Material = {
       "variation_name": "Variasi 14: Bentuk Ekuivalensi Disjungtif Baku Mutu Emisi PLTP (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Dinas Lingkungan Hidup menetapkan standar kepatuhan operasional Pembangkit Listrik Tenaga Panas Bumi (PLTP):\n\n*\"Jika sebuah unit PLTP melepaskan uap geothermal dengan konsentrasi gas hidrogen sulfida ($H_2S$) melebihi 10 ppm ($p$), maka pihak pengelola wajib mengaktifkan sistem penyaring bioscrubber penurun emisi secara seketika ($q$).\"*\n\nRumus logika implikasi: $p \\implies q$.",
+      "context_markdown": "Dinas Lingkungan Hidup menetapkan standar kepatuhan operasional Pembangkit Listrik Tenaga Panas Bumi (PLTP):\n\n*\"Jika sebuah unit PLTP melepaskan uap geothermal dengan konsentrasi gas hidrogen sulfida ($H_2S$) melebihi 10 ppm, maka pihak pengelola wajib mengaktifkan sistem penyaring bioscrubber penurun emisi secara seketika.\"*",
       "question_markdown": "Pernyataan berikut yang memiliki nilai kebenaran **ekuivalen (setara secara logika)** dengan standar kepatuhan operasional tersebut adalah...",
       "options": [
         {
@@ -529,7 +529,7 @@ export const MATERIAL_PU_02_02: Material = {
       "variation_name": "Variasi 15: Negasi Proposisi Bersyarat Subsidi Mobil Listrik (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Kementerian Perindustrian menyampaikan klausul kebijakan insentif kendaraan rendah emisi:\n\n*\"Jika produsen kendaraan listrik memproduksi mobil dengan capaian Tingkat Komponen Dalam Negeri (TKDN) minimal 40% ($p$), maka konsumen berhak memperoleh potongan Pajak Pertambahan Nilai (PPN) ditanggung pemerintah sebesar 10% ($q$).\"*\n\nRumus logika implikasi: $p \\implies q$.\n\nSebuah asosiasi konsumen mendalilkan bahwa sebuah agen pemegang merek (APM) telah **mengingkari (menegasikan / melanggar)** janji kebijakan tersebut dalam penjualan mobil listrik model terbaru.",
+      "context_markdown": "Kementerian Perindustrian menyampaikan klausul kebijakan insentif kendaraan rendah emisi:\n\n*\"Jika produsen kendaraan listrik memproduksi mobil dengan capaian Tingkat Komponen Dalam Negeri (TKDN) minimal 40%, maka konsumen berhak memperoleh potongan Pajak Pertambahan Nilai (PPN) ditanggung pemerintah sebesar 10%.\"*\n\nSebuah asosiasi konsumen mendalilkan bahwa sebuah agen pemegang merek (APM) telah **mengingkari (menegasikan / melanggar)** janji kebijakan tersebut dalam penjualan mobil listrik model terbaru.",
       "question_markdown": "Berdasarkan kaidah logika proposisi formal, kondisi faktual manakah yang **membuktikan secara sah terjadinya pengingkaran (negasi)** terhadap pernyataan kementerian tersebut?",
       "options": [
         {
@@ -564,7 +564,7 @@ export const MATERIAL_PU_02_02: Material = {
       "variation_name": "Variasi 16: Kontraposisi Implikasi Majemuk Ritme Sirkadian Pekerja Shift (Level: Sulit / HOTS)",
       "difficulty": "hard",
       "question_type": "standard_mc",
-      "context_markdown": "Pakar kedokteran okupasi merumuskan kaidah implikasi kesehatan pekerja shift malam:\n\n*\"Jika pekerja pabrik rotasi malam bekerja lembur lebih dari 12 jam per shift ($p$) ATAU tidak memperoleh jeda tidur pemulihan minimal 8 jam ($q$), maka pekerja tersebut mengalami gangguan ritme sirkadian hormon kortisol ($r$) DAN penurunan konsentrasi kognitif saat bertugas ($s$).\"*\n\nRumus logika implikasi majemuk: $(p \\lor q) \\implies (r \\land s)$.",
+      "context_markdown": "Pakar kedokteran okupasi merumuskan kaidah implikasi kesehatan pekerja shift malam:\n\n*\"Jika pekerja pabrik rotasi malam bekerja lembur lebih dari 12 jam per shift ATAU tidak memperoleh jeda tidur pemulihan minimal 8 jam, maka pekerja tersebut mengalami gangguan ritme sirkadian hormon kortisol DAN penurunan konsentrasi kognitif saat bertugas.\"*",
       "question_markdown": "Manakah pernyataan berikut yang merupakan **kontraposisi yang ekuivalen (pasti benar)** dengan kaidah implikasi kesehatan di atas?",
       "options": [
         {
@@ -599,7 +599,7 @@ export const MATERIAL_PU_02_02: Material = {
       "variation_name": "Variasi 17: Hukum De Morgan pada Negasi Sel Robotik Manufaktur (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Spesifikasi keselamatan sistem otomasi robotik lini manufaktur menetapkan klausul operasional:\n\n*\"Sel robot pengelasan beroperasi aktif dalam kecepatan tinggi ($A$) jika dan hanya jika memenuhi kondisi: Pintu pengaman pelindung tertutup rapat ($p$) DAN sensor tirai cahaya inframerah tidak mendeteksi objek asing ($q$).\"*\n\nRumus logika biimplikasi: $A \\iff (p \\land q)$.\n\nSeorang teknisi keselamatan industri ingin membuktikan secara deduktif bahwa sel robot pengelasan **TIDAK beroperasi aktif dalam kecepatan tinggi (bernilai $\\sim A$)**.",
+      "context_markdown": "Spesifikasi keselamatan sistem otomasi robotik lini manufaktur menetapkan klausul operasional:\n\n*\"Sel robot pengelasan beroperasi aktif dalam kecepatan tinggi jika dan hanya jika memenuhi kondisi: Pintu pengaman pelindung tertutup rapat DAN sensor tirai cahaya inframerah tidak mendeteksi objek asing.\"*\n\nSeorang teknisi keselamatan industri ingin membuktikan secara deduktif bahwa sel robot pengelasan **TIDAK beroperasi aktif dalam kecepatan tinggi**.",
       "question_markdown": "Berdasarkan hukum De Morgan dalam logika matematika, kondisi faktual manakah yang **secara niscaya membuktikan** status sel robot tidak beroperasi aktif ($\\sim A$)?",
       "options": [
         {
@@ -634,7 +634,7 @@ export const MATERIAL_PU_02_02: Material = {
       "variation_name": "Variasi 18: Negasi Implikasi Anteseden Konjungtif Pelestarian Dialek Lokal (Level: Sulit / HOTS)",
       "difficulty": "hard",
       "question_type": "standard_mc",
-      "context_markdown": "Balai Bahasa dan Majelis Adat Kepulauan mendeklarasikan komitmen pelestarian bahasa ibu:\n\n*\"Jika pemerintah daerah mewajibkan pengajaran dialek bahasa lokal dalam kurikulum muatan lokal sekolah dasar ($p$) DAN keluarga penutur asli aktif bertutur menggunakan bahasa ibu di ruang domestik keluarga ($q$), maka daya hidup dialek bahasa lokal tersebut tidak akan punah dalam generasi mendatang ($r$).\"*\n\nRumus logika implikasi bersyarat: $(p \\land q) \\implies r$.\n\nSebuah lembaga riset sosiolinguistik independen menemukan bukti bahwa komitmen deklarasi tersebut telah **diingkari / dinegasikan (terbukti tidak berlaku)** dalam kasus kepunahan dialek Talaud Kuno.",
+      "context_markdown": "Balai Bahasa dan Majelis Adat Kepulauan mendeklarasikan komitmen pelestarian bahasa ibu:\n\n*\"Jika pemerintah daerah mewajibkan pengajaran dialek bahasa lokal dalam kurikulum muatan lokal sekolah dasar DAN keluarga penutur asli aktif bertutur menggunakan bahasa ibu di ruang domestik keluarga, maka daya hidup dialek bahasa lokal tersebut tidak akan punah dalam generasi mendatang.\"*\n\nSebuah lembaga riset sosiolinguistik independen menemukan bukti bahwa komitmen deklarasi tersebut telah **diingkari / dinegasikan (terbukti tidak berlaku)** dalam kasus kepunahan dialek Talaud Kuno.",
       "question_markdown": "Berdasarkan kaidah logika proposisi matematika, kondisi faktual manakah yang **membuktikan secara sah terjadinya pengingkaran (negasi)** terhadap deklarasi pelestarian bahasa tersebut?",
       "options": [
         {

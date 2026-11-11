@@ -247,7 +247,7 @@
       "variation_name": "Variasi 7: Penentuan Nilai Kebenaran Protokol Autentikasi Zero-Trust Multi-Faktor (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Sebuah sistem keamanan siber perusahaan menerapkan protokol autentikasi akses *Zero Trust*:\n\n*\"Permintaan akses ke basis data server utama hanya akan diberikan (bernilai Benar) jika pengguna berhasil memvalidasi kunci kriptografi perangkat terdaftar DAN memverifikasi kode OTP dinamis, ATAU pengguna melakukan verifikasi biometrik sidik jari tersertifikasi.\"*\n\nSistem mencatat empat upaya percobaan akses oleh teknisi pada jam operasional:\n- **Percobaan 1:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 2:** Kunci kriptografi perangkat valid, kode OTP dinamis gagal divalidasi, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 3:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis gagal divalidasi, tetapi verifikasi biometrik sidik jari tersertifikasi berhasil diverifikasi.\n- **Percobaan 4:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik sidik jari gagal diverifikasi.",
+      "context_markdown": "Sebuah sistem keamanan siber perusahaan menerapkan protokol autentikasi akses *Zero Trust*:\n\n*\"Permintaan akses ke basis data server utama hanya akan diberikan jika pengguna berhasil memvalidasi kunci kriptografi perangkat terdaftar DAN memverifikasi kode OTP dinamis, ATAU pengguna melakukan verifikasi biometrik sidik jari tersertifikasi.\"*\n\nSistem mencatat empat upaya percobaan akses oleh teknisi pada jam operasional:\n- **Percobaan 1:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 2:** Kunci kriptografi perangkat valid, kode OTP dinamis gagal divalidasi, dan verifikasi biometrik tidak dilakukan.\n- **Percobaan 3:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis gagal divalidasi, tetapi verifikasi biometrik sidik jari tersertifikasi berhasil diverifikasi.\n- **Percobaan 4:** Kunci kriptografi perangkat gagal divalidasi, kode OTP dinamis valid, dan verifikasi biometrik sidik jari gagal diverifikasi.",
       "question_markdown": "Berdasarkan kaidah logika proposisi majemuk, percobaan akses manakah yang **berhasil memperoleh izin akses ke basis data**?",
       "options": [
         {
@@ -314,11 +314,11 @@
     },
     {
       "example_id": "pu-02-01-ex9",
-      "variation_name": "Variasi 9: Analisis Syarat Perlu Sertifikasi Karbon Biru Padang Lamun (Level: Sedang)",
+      "variation_name": "Variasi 9: Analisis Syarat Wajib Sertifikasi Karbon Biru Padang Lamun (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Dalam panduan ilmiah verifikasi kredit karbon biru (*blue carbon*) dari pemulihan ekosistem padang lamun (*Enhalus acoroides*), tercantum ketentuan metodologis berikut:\n\n*\"Kerapatan tutupan kanopi lamun mencapai minimal 70% ($p$) merupakan **syarat perlu (*necessary condition*)**, tetapi **bukan syarat cukup (*sufficient condition*)**, bagi suatu proyek restorasi pesisir untuk dapat diterbitkan sertifikat kredit karbon internasional ($q$).\"*",
-      "question_markdown": "Berdasarkan prinsip logika proposisi tersebut, manakah pernyataan di bawah ini yang **pasti benar secara deduktif**?",
+      "context_markdown": "Dalam panduan ilmiah verifikasi kredit karbon biru (*blue carbon*) dari pemulihan ekosistem padang lamun (*Enhalus acoroides*), tercantum ketentuan metodologis berikut:\n\n*\"Kerapatan tutupan kanopi lamun mencapai minimal 70% merupakan syarat mutlak agar suatu proyek restorasi pesisir dapat diterbitkan sertifikat kredit karbon internasional. Namun, tercapainya kerapatan 70% tersebut belum menjamin diterbitkannya sertifikat karena masih memerlukan pemenuhan kriteria teknis lainnya.\"*",
+      "question_markdown": "Berdasarkan ketentuan tersebut, manakah pernyataan di bawah ini yang **pasti benar**?",
       "options": [
         {
           "key": "A",
@@ -352,7 +352,7 @@
       "variation_name": "Variasi 10: Evaluasi Konsistensi Regulasi Subsidi Bunga Kredit Tani (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Kementerian Keuangan menerbitkan regulasi mengenai penyaluran fasilitas subsidi bunga pinjaman usaha perbankan:\n\n1. *\"Pelaku usaha tani pangan berhak memperoleh subsidi bunga kredit usaha jika dan hanya jika memenuhi syarat: berstatus anggota aktif kelompok tani (poktan) terdaftar ($p$) DAN memiliki kepemilikan lahan garapan sah maksimal 2 hektare ($q$).\"*\n2. *\"Jika pelaku usaha tani pangan menggarap komoditas jagung atau kedelai ($r$), maka mereka wajib menyertakan surat rekomendasi dinas pertanian kabupaten ($s$) sebagai dokumen tambahan.\"*\n\nPak Danu adalah seorang petani yang memiliki lahan garapan sah seluas 1,5 hektare ($q$ bernilai Benar) dan menggarap komoditas jagung ($r$ bernilai Benar). Namun, berdasarkan verifikasi data, Pak Danu belum terdaftar sebagai anggota poktan mana pun ($p$ bernilai Salah) dan belum memiliki surat rekomendasi dinas ($s$ bernilai Salah).",
+      "context_markdown": "Kementerian Keuangan menerbitkan regulasi mengenai penyaluran fasilitas subsidi bunga pinjaman usaha perbankan:\n\n1. *\"Pelaku usaha tani pangan berhak memperoleh subsidi bunga kredit usaha jika dan hanya jika memenuhi dua syarat: berstatus anggota aktif kelompok tani (poktan) terdaftar DAN memiliki kepemilikan lahan garapan sah maksimal 2 hektare.\"*\n2. *\"Jika pelaku usaha tani pangan menggarap komoditas jagung atau kedelai, maka mereka wajib menyertakan surat rekomendasi dinas pertanian kabupaten sebagai dokumen tambahan.\"*\n\nPak Danu adalah seorang petani yang memiliki lahan garapan sah seluas 1,5 hektare dan menggarap komoditas jagung. Namun, berdasarkan verifikasi data, Pak Danu belum terdaftar sebagai anggota poktan mana pun dan belum memiliki surat rekomendasi dinas.",
       "question_markdown": "Berdasarkan aturan regulasi di atas, simpulan yang **pasti benar secara deduktif** mengenai hak subsidi bunga kredit Pak Danu adalah...",
       "options": [
         {
@@ -387,7 +387,7 @@
       "variation_name": "Variasi 11: Logika Biimplikasi Kriteria Diagnostik Remisi Depresi (Level: Sulit / HOTS)",
       "difficulty": "hard",
       "question_type": "standard_mc",
-      "context_markdown": "Dalam pedoman psikiatri klinis internasional, status *remisi penuh* ($R$) pada pasien gangguan depresi mayor didefinisikan menggunakan relasi biimplikasi logis:\n\n*\"Seorang pasien depresi ditetapkan mencapai status remisi penuh ($R$) **jika dan hanya jika** memenuhi kondisi: skor skala penilaian depresi HAM-D berada pada rentang $\\le 7$ ($p$) DAN ketiadaan gejala anhedonia serta ide bunuh diri bertahan stabil selama minimal dua bulan berturut-turut ($q$).\"*\n\nBerdasarkan hasil audit rekam medis dua pasien di bangsal psikiatri:\n- **Pasien Rama**: Telah mencapai skor HAM-D bernilai 5 ($p$ bernilai Benar), namun ia masih dilaporkan mengalami anhedonia berat dalam dua minggu terakhir ($q$ bernilai Salah).\n- **Pasien Shinta**: Telah bebas sepenuhnya dari anhedonia dan ide bunuh diri selama tiga bulan berturut-turut ($q$ bernilai Benar), dan hasil asesmen skor klinis HAM-D miliknya tercatat 6 ($p$ bernilai Benar).",
+      "context_markdown": "Dalam pedoman psikiatri klinis internasional, status *remisi penuh* pada pasien gangguan depresi mayor ditetapkan dengan ketentuan berikut:\n\n*\"Seorang pasien depresi ditetapkan mencapai status remisi penuh **jika dan hanya jika** memenuhi dua kondisi: skor skala penilaian depresi HAM-D berada pada rentang $\\le 7$ DAN ketiadaan gejala anhedonia serta ide bunuh diri bertahan stabil selama minimal dua bulan berturut-turut.\"*\n\nBerdasarkan hasil audit rekam medis dua pasien di bangsal psikiatri:\n- **Pasien Rama**: Telah mencapai skor HAM-D sebesar 5, namun ia masih dilaporkan mengalami anhedonia berat dalam dua minggu terakhir.\n- **Pasien Shinta**: Telah bebas sepenuhnya dari anhedonia dan ide bunuh diri selama tiga bulan berturut-turut, dan hasil asesmen skor klinis HAM-D miliknya tercatat 6.",
       "question_markdown": "Manakah simpulan yang **pasti benar secara deduktif** berdasarkan pedoman klinis tersebut?",
       "options": [
         {
@@ -422,28 +422,28 @@
       "variation_name": "Variasi 12: Penentuan Nilai Kebenaran Protokol Redundansi Catu Daya Server (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Dalam spesifikasi pusat data komputasi awan berkeandalan tinggi, sistem kontinuitas daya server diatur oleh protokol logika proposisi otomatis:\n\n1. Unit peladen komputasi kritis beroperasi normal ($N$) jika dan hanya jika sistem menerima suplai daya listrik stabil ($S$). Rumus: $N \\iff S$.\n2. Suplai daya listrik stabil ($S$) didefinisikan sebagai terpenuhinya kondisi: *\"Sistem ditenagai oleh Saluran Jaringan Utama PLN ($A$) ATAU Unit Genset Turbin Cadangan ($B$) secara eksklusif ($A \\oplus B$), DAN sistem baterai UPS daring berada dalam kondisi siap siaga ($C$).\"* Rumus: $S \\iff [(A \\oplus B) \\land C]$.\n\n*(Catatan Teknis: Operasi disjungsi eksklusif $A \\oplus B$ bernilai Benar jika tepat salah satu dari $A$ atau $B$ menyala aktif, dan bernilai Salah jika keduanya menyala serentak atau keduanya padam).*\n\nPada suatu insiden gangguan kelistrikan:\n- Saluran Jaringan Utama PLN terputus padam ($A$ bernilai Salah).\n- Unit Genset Turbin Cadangan berhasil menyala aktif ($B$ bernilai Benar).\n- Sistem pemantau mendeteksi baterai UPS daring mengalami kerusakan modul sehingga berstatus tidak siap siaga ($C$ bernilai Salah).",
-      "question_markdown": "Berdasarkan protokol logika proposisi di atas, bagaimanakah nilai kebenaran dari status suplai listrik stabil ($S$) dan operasional normal peladen komputasi ($N$)?",
+      "context_markdown": "Dalam spesifikasi pusat data komputasi awan, sistem kontinuitas daya server diatur dengan protokol berikut:\n\n1. Unit peladen komputasi kritis beroperasi normal jika dan hanya jika sistem menerima suplai daya listrik stabil.\n2. Suplai daya listrik stabil didefinisikan sebagai kondisi di mana sistem ditenagai oleh tepat salah satu dari Saluran Jaringan Utama PLN ATAU Unit Genset Turbin Cadangan (tidak boleh keduanya padam dan tidak boleh keduanya menyala bersamaan), DAN sistem baterai UPS daring berada dalam kondisi siap siaga.\n\nPada suatu insiden gangguan kelistrikan:\n- Saluran Jaringan Utama PLN terputus padam.\n- Unit Genset Turbin Cadangan berhasil menyala aktif.\n- Sistem pemantau mendeteksi baterai UPS daring mengalami kerusakan modul sehingga berstatus tidak siap siaga.",
+      "question_markdown": "Berdasarkan protokol di atas, bagaimanakah status suplai listrik stabil dan operasional normal peladen komputasi?",
       "options": [
         {
           "key": "A",
-          "text_markdown": "Status suplai listrik stabil ($S$) bernilai Benar dan peladen komputasi ($N$) beroperasi normal karena unit genset turbin berhasil menyala aktif."
+          "text_markdown": "Status suplai listrik stabil dan peladen komputasi beroperasi normal karena unit genset turbin berhasil menyala aktif."
         },
         {
           "key": "B",
-          "text_markdown": "Status suplai listrik stabil ($S$) bernilai Benar, tetapi peladen komputasi ($N$) bernilai Salah akibat sistem proteksi keselamatan mandiri."
+          "text_markdown": "Status suplai listrik stabil, tetapi peladen komputasi tidak beroperasi normal akibat sistem proteksi keselamatan mandiri."
         },
         {
           "key": "C",
-          "text_markdown": "Disjungsi eksklusif $A \\oplus B$ bernilai Salah sehingga suplai listrik stabil ($S$) otomatis padam."
+          "text_markdown": "Pembangkit listrik cadangan gagal berfungsi sehingga suplai listrik stabil otomatis padam."
         },
         {
           "key": "D",
-          "text_markdown": "Status suplai listrik stabil ($S$) bernilai Salah dan peladen komputasi ($N$) dipastikan tidak beroperasi normal karena kegagalan kesiapan sistem baterai UPS ($C$ bernilai Salah)."
+          "text_markdown": "Status suplai listrik tidak stabil dan peladen komputasi dipastikan tidak beroperasi normal karena kegagalan kesiapan sistem baterai UPS."
         },
         {
           "key": "E",
-          "text_markdown": "Status operasional peladen komputasi ($N$) tidak dapat ditentukan sebelum teknisi listrik melakukan verifikasi manual di lapangan."
+          "text_markdown": "Status operasional peladen komputasi tidak dapat ditentukan sebelum teknisi listrik melakukan verifikasi manual di lapangan."
         }
       ],
       "correct_answer": "D",
@@ -457,7 +457,7 @@
       "variation_name": "Variasi 13: Evaluasi Konsistensi Ketentuan Penetapan Cagar Budaya Nasional (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Berdasarkan regulasi perundang-undangan perlindungan warisan pusaka, suatu artefak sejarah dapat ditetapkan berstatus Cagar Budaya Peringkat Nasional ($N$) apabila memenuhi ketentuan logika proposisi berikut:\n\n1. Ketentuan Intrinsik: Objek wajib berusia minimal 50 tahun ($p$) DAN mewakili masa gaya paling singkat 50 tahun ($q$), SERTA memiliki arti khusus bagi sejarah atau ilmu pengetahuan ($r$). Rumus: $(p \\land q \\land r)$.\n2. Ketentuan Signifikansi: Objek wajib memiliki nilai penguatan kepribadian bangsa ($s$) ATAU merupakan bukti penting migrasi peradaban nusantara ($t$). Rumus: $(s \\lor t)$.\n3. Ketentuan Penetapan Nasional: *\"Artefak berstatus Cagar Budaya Peringkat Nasional ($N$) jika dan hanya jika memenuhi seluruh syarat intrinsik, memenuhi syarat signifikansi, DAN telah berstatus Cagar Budaya Peringkat Provinsi ($P$).\"*\nRumus: $N \\iff [(p \\land q \\land r) \\land (s \\lor t) \\land P]$.\n\nSebuah naskah piagam tembaga kuno diteliti oleh tim kurator:\n- Berusia 110 tahun ($p$ Benar), gaya aksara bertahan 60 tahun ($q$ Benar), dan memiliki arti sejarah tinggi ($r$ Benar).\n- Terbukti menjadi bukti kunci jalur migrasi maritim peradaban nusantara ($t$ Benar, sehingga $s \\lor t$ Benar).\n- Namun, artefak tersebut diusulkan langsung dari koleksi swasta dan belum pernah didaftarkan maupun ditetapkan sebagai Cagar Budaya Peringkat Provinsi ($P$ bernilai Salah).",
+      "context_markdown": "Berdasarkan regulasi perundang-undangan perlindungan warisan pusaka, suatu artefak sejarah dapat ditetapkan berstatus Cagar Budaya Peringkat Nasional apabila memenuhi ketentuan berikut:\n\n1. Ketentuan Intrinsik: Objek wajib berusia minimal 50 tahun, mewakili masa gaya paling singkat 50 tahun, SERTA memiliki arti khusus bagi sejarah atau ilmu pengetahuan.\n2. Ketentuan Signifikansi: Objek wajib memiliki nilai penguatan kepribadian bangsa ATAU merupakan bukti penting migrasi peradaban nusantara.\n3. Ketentuan Penetapan Nasional: *\"Artefak berstatus Cagar Budaya Peringkat Nasional jika dan hanya jika memenuhi seluruh syarat intrinsik, memenuhi syarat signifikansi, DAN telah berstatus Cagar Budaya Peringkat Provinsi.\"*\n\nSebuah naskah piagam tembaga kuno diteliti oleh tim kurator:\n- Berusia 110 tahun, gaya aksara bertahan 60 tahun, dan memiliki arti sejarah tinggi.\n- Terbukti menjadi bukti kunci jalur migrasi maritim peradaban nusantara.\n- Namun, artefak tersebut diusulkan langsung dari koleksi swasta dan belum pernah didaftarkan maupun ditetapkan sebagai Cagar Budaya Peringkat Provinsi.",
       "question_markdown": "Berdasarkan ketentuan hukum tersebut, simpulan yang **pasti benar secara deduktif** adalah...",
       "options": [
         {
@@ -470,7 +470,7 @@
         },
         {
           "key": "C",
-          "text_markdown": "Syarat status Peringkat Provinsi ($P$) dapat diabaikan jika nilai bukti migrasi peradaban nusantara ($t$) bernilai Benar."
+          "text_markdown": "Syarat status Peringkat Provinsi dapat diabaikan jika nilai bukti migrasi peradaban nusantara telah terpenuhi."
         },
         {
           "key": "D",
@@ -492,7 +492,7 @@
       "variation_name": "Variasi 14: Analisis Syarat Cukup vs Syarat Perlu Sertifikasi Hutan Berkelanjutan (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Badan Standardisasi Pengelolaan Hutan Nasional memberlakukan regulasi audit kehutanan bersyarat:\n\n*\"Jika sebuah konsesi kehutanan mengimplementasikan sistem tebang pilih dengan siklus rotasi minimal 30 tahun ($p$) DAN menerapkan pemantauan deforestasi berbasis citra satelit nir-awak real-time ($q$), maka konsesi tersebut pasti memperoleh sertifikat Label Emas Hutan Berkelanjutan ($S$).\"*\n\nRumus logika implikasi: $(p \\land q) \\implies S$.\n\nHasil audit lingkungan independen mencatat data dua konsesi:\n1. Konsesi Rimba Lestari dinyatakan tidak memperoleh sertifikat Label Emas Hutan Berkelanjutan ($S$ bernilai Salah).\n2. Konsesi Bukit Barisan memperoleh sertifikat Label Emas Hutan Berkelanjutan ($S$ bernilai Benar).",
+      "context_markdown": "Badan Standardisasi Pengelolaan Hutan Nasional memberlakukan regulasi audit kehutanan bersyarat:\n\n*\"Jika sebuah konsesi kehutanan mengimplementasikan sistem tebang pilih dengan siklus rotasi minimal 30 tahun DAN menerapkan pemantauan deforestasi berbasis citra satelit nir-awak real-time, maka konsesi tersebut pasti memperoleh sertifikat Label Emas Hutan Berkelanjutan.\"*\n\nHasil audit lingkungan independen mencatat data dua konsesi:\n1. Konsesi Rimba Lestari dinyatakan tidak memperoleh sertifikat Label Emas Hutan Berkelanjutan.\n2. Konsesi Bukit Barisan memperoleh sertifikat Label Emas Hutan Berkelanjutan.",
       "question_markdown": "Berdasarkan kaidah logika proposisi (implikasi), manakah simpulan berikut yang **pasti bernilai benar secara deduktif**?",
       "options": [
         {
@@ -527,8 +527,8 @@
       "variation_name": "Variasi 15: Logika Biimplikasi Insentif Tarif Pajak Ekspor Komoditas Hilir (Level: Sulit / HOTS)",
       "difficulty": "hard",
       "question_type": "standard_mc",
-      "context_markdown": "Kementerian Keuangan dan Kementerian Perdagangan menetapkan regulasi pembebasan bea keluar ekspor (tarif 0%) bagi produk olahan nikel:\n\n*\"Perusahaan pengolahan mineral berhak memperoleh fasilitas pembebasan bea keluar ekspor ($F$) **jika dan hanya jika** produk nikel yang diekspor memiliki kadar kemurnian minimal 99,8% berupa nikel presipitasi baterai ($p$) DAN perusahaan telah mengoperasikan fasilitas pengolahan limbah ramah lingkungan berteknologi dry-stacking ($q$).\"*\n\nRumus logika biimplikasi: $F \\iff (p \\land q)$.\n\nBerdasarkan berkas verifikasi bea cukai terhadap dua perusahaan pemurnian smelter:\n- **PT Bahodopi Mineral**: Berhasil mengoperasikan teknologi dry-stacking limbah secara resmi ($q$ bernilai Benar), namun kadar kemurnian nikel yang diekspor tercatat hanya 92,5% berupa feronikel mentah ($p$ bernilai Salah).\n- **PT Morowali Battery**: Memproduksi nikel berstandar baterai dengan kemurnian 99,9% ($p$ bernilai Benar) dan fasilitas dry-stacking limbahnya telah beroperasi penuh sesuai AMDAL ($q$ bernilai Benar).",
-      "question_markdown": "Berdasarkan kaidah logika biimplikasi, manakah simpulan yang **pasti benar secara deduktif**?",
+      "context_markdown": "Kementerian Keuangan dan Kementerian Perdagangan menetapkan regulasi pembebasan bea keluar ekspor (tarif 0%) bagi produk olahan nikel:\n\n*\"Perusahaan pengolahan mineral berhak memperoleh fasilitas pembebasan bea keluar ekspor **jika dan hanya jika** produk nikel yang diekspor memiliki kadar kemurnian minimal 99,8% berupa nikel presipitasi baterai DAN perusahaan telah mengoperasikan fasilitas pengolahan limbah ramah lingkungan berteknologi dry-stacking.\"*\n\nBerdasarkan berkas verifikasi bea cukai terhadap dua perusahaan pemurnian smelter:\n- **PT Bahodopi Mineral**: Berhasil mengoperasikan teknologi dry-stacking limbah secara resmi, namun kadar kemurnian nikel yang diekspor tercatat hanya 92,5% berupa feronikel mentah.\n- **PT Morowali Battery**: Memproduksi nikel berstandar baterai dengan kemurnian 99,9% dan fasilitas dry-stacking limbahnya telah beroperasi penuh sesuai AMDAL.",
+      "question_markdown": "Berdasarkan regulasi di atas, manakah simpulan yang **pasti benar**?",
       "options": [
         {
           "key": "A",
@@ -562,8 +562,8 @@
       "variation_name": "Variasi 16: Penentuan Nilai Kebenaran Protokol Triase Klinis Gawat Darurat (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Pedoman gawat darurat rumah sakit menetapkan bahwa seorang pasien yang tiba di IGD wajib langsung dikategorikan ke dalam Kategori Merah / Penanganan Resusitasi Segera ($R$) jika memenuhi ketentuan proposisi majemuk berikut:\n\n*\"Pasien mengalami sumbatan jalan napas akut ($A$) ATAU laju pernapasan kurang dari 8 kali per menit ($B$), ATAU memenuhi kondisi: saturasi oksigen darah di bawah 88% ($C$) DAN mengalami penurunan kesadaran dengan skor GCS di bawah 9 ($D$).\"*\n\nRumus logika proposisi: $R \\iff [A \\lor B \\lor (C \\land D)]$.\n\nBerikut data pemeriksaan fisik awal pada lima pasien yang tiba di IGD:\n- **Pasien 1**: Jalan napas bersih ($A$ Salah), laju napas 14 kali/menit ($B$ Salah), saturasi 85% ($C$ Benar), namun skor GCS 14 sadar penuh ($D$ Salah).\n- **Pasien 2**: Jalan napas bersih ($A$ Salah), laju napas 6 kali/menit ($B$ Benar), saturasi 91% ($C$ Salah), skor GCS 12 ($D$ Salah).\n- **Pasien 3**: Jalan napas bersih ($A$ Salah), laju napas 18 kali/menit ($B$ Salah), saturasi 94% ($C$ Salah), skor GCS 7 stupor ($D$ Benar).\n- **Pasien 4**: Jalan napas bersih ($A$ Salah), laju napas 16 kali/menit ($B$ Salah), saturasi 96% ($C$ Salah), skor GCS 15 sadar ($D$ Salah).\n- **Pasien 5**: Jalan napas bersih ($A$ Salah), laju napas 20 kali/menit ($B$ Salah), saturasi 86% ($C$ Benar), skor GCS 13 ($D$ Salah).",
-      "question_markdown": "Berdasarkan pedoman triase tersebut, siapakah pasien yang **pasti wajib langsung dikategorikan ke dalam Kategori Merah ($R$)**?",
+      "context_markdown": "Pedoman gawat darurat rumah sakit menetapkan bahwa seorang pasien yang tiba di IGD wajib langsung dimasukkan ke dalam Kategori Merah (Penanganan Resusitasi Segera) jika memenuhi ketentuan berikut:\n\n*\"Pasien mengalami sumbatan jalan napas akut ATAU laju pernapasan kurang dari 8 kali per menit, ATAU memenuhi kondisi: saturasi oksigen darah di bawah 88% DAN mengalami penurunan kesadaran dengan skor GCS di bawah 9.\"*\n\nBerikut data pemeriksaan fisik awal pada lima pasien yang tiba di IGD:\n- **Pasien 1**: Jalan napas bersih, laju napas 14 kali/menit, saturasi 85%, skor GCS 14 (sadar penuh).\n- **Pasien 2**: Jalan napas bersih, laju napas 6 kali/menit, saturasi 91%, skor GCS 12.\n- **Pasien 3**: Jalan napas bersih, laju napas 18 kali/menit, saturasi 94%, skor GCS 7 (stupor).\n- **Pasien 4**: Jalan napas bersih, laju napas 16 kali/menit, saturasi 96%, skor GCS 15 (sadar penuh).\n- **Pasien 5**: Jalan napas bersih, laju napas 20 kali/menit, saturasi 86%, skor GCS 13.",
+      "question_markdown": "Berdasarkan pedoman triase tersebut, siapakah pasien yang **wajib langsung dikategorikan ke dalam Kategori Merah**?",
       "options": [
         {
           "key": "A",
@@ -597,20 +597,20 @@
       "variation_name": "Variasi 17: Logika Verifikasi Otorisasi Kriptografis Multi-Signature (Level: Sedang)",
       "difficulty": "medium",
       "question_type": "standard_mc",
-      "context_markdown": "Dalam protokol keamanan dompet multi-tanda tangan (*multi-signature crypto vault*), sebuah transaksi penarikan dana berstatus sah dan dieksekusi ($E$) jika dan hanya jika memenuhi ketentuan logika berikut:\n\n1. Otorisasi Identitas Primer: Tanda tangan digital kunci privat direktur keuangan valid ($A$) DAN lolos verifikasi biometrik perangkat keras ($B$). Rumus: $(A \\land B)$.\n2. Otorisasi Sekunder: Persetujuan validator kustodian berlisensi ($C$) ATAU persetujuan komite audit ($D$) secara disjungsi eksklusif ($C \\oplus D$).\n*(Catatan Teknis: $C \\oplus D$ bernilai Benar jika tepat salah satu dari $C$ atau $D$ menyetujui, dan bernilai Salah jika keduanya menyetujui serentak atau keduanya menolak).* \n3. Ketentuan Eksekusi: Transaksi dieksekusi ($E$) jika dan hanya jika Otorisasi Identitas Primer terpenuhi, Otorisasi Sekunder terpenuhi, DAN nilai transaksi tidak melebihi limit harian ($L$).\nRumus: $E \\iff [(A \\land B) \\land (C \\oplus D) \\land L]$.\n\nPada sebuah pengajuan transaksi penarikan:\n- Kunci privat direktur valid ($A$ bernilai Benar) dan lolos biometrik perangkat keras ($B$ bernilai Benar).\n- Baik validator kustodian ($C$) maupun komite audit ($D$) ternyata sama-sama menyetujui transaksi tersebut secara serentak ($C$ bernilai Benar dan $D$ bernilai Benar).\n- Nilai transaksi berada di bawah limit harian ($L$ bernilai Benar).",
-      "question_markdown": "Berdasarkan aturan protokol kriptografis di atas, bagaimanakah status eksekusi penarikan dana ($E$) tersebut?",
+      "context_markdown": "Dalam protokol keamanan dompet multi-tanda tangan (*multi-signature crypto vault*), sebuah transaksi penarikan dana berstatus sah dan dieksekusi jika dan hanya jika memenuhi ketentuan berikut:\n\n1. Otorisasi Identitas Primer: Tanda tangan digital kunci privat direktur keuangan valid DAN lolos verifikasi biometrik perangkat keras.\n2. Otorisasi Sekunder: Tepat salah satu dari validator kustodian berlisensi ATAU komite audit menyetujui penarikan (tidak boleh keduanya menyetujui serentak dan tidak boleh keduanya menolak).\n3. Ketentuan Eksekusi: Transaksi dieksekusi jika dan hanya jika Otorisasi Identitas Primer terpenuhi, Otorisasi Sekunder terpenuhi, DAN nilai transaksi tidak melebihi limit harian.\n\nPada sebuah pengajuan transaksi penarikan:\n- Kunci privat direktur valid dan lolos biometrik perangkat keras.\n- Baik validator kustodian maupun komite audit ternyata sama-sama menyetujui transaksi tersebut secara serentak.\n- Nilai transaksi berada di bawah limit harian.",
+      "question_markdown": "Berdasarkan aturan protokol di atas, bagaimanakah status eksekusi penarikan dana tersebut?",
       "options": [
         {
           "key": "A",
-          "text_markdown": "Transaksi berhasil dieksekusi ($E$ bernilai Benar) karena seluruh pihak pendukung menyetujui dan nilai transaksi di bawah limit."
+          "text_markdown": "Transaksi berhasil dieksekusi karena seluruh pihak pendukung menyetujui dan nilai transaksi di bawah limit."
         },
         {
           "key": "B",
-          "text_markdown": "Transaksi berhasil dieksekusi ($E$ bernilai Benar) karena persetujuan ganda dari $C$ dan $D$ memberikan tingkat keamanan yang lebih tinggi daripada satu persetujuan."
+          "text_markdown": "Transaksi berhasil dieksekusi karena persetujuan ganda memberikan tingkat keamanan yang lebih tinggi daripada satu persetujuan."
         },
         {
           "key": "C",
-          "text_markdown": "Transaksi gagal dieksekusi ($E$ bernilai Salah) karena operasi disjungsi eksklusif $C \\oplus D$ bernilai Salah ketika kedua pihak sekunder memberikan persetujuan serentak."
+          "text_markdown": "Transaksi gagal dieksekusi karena aturan otorisasi sekunder dilanggar ketika kedua pihak memberikan persetujuan serentak."
         },
         {
           "key": "D",
@@ -632,8 +632,8 @@
       "variation_name": "Variasi 18: Evaluasi Konsistensi Hak Kelola Perhutanan Sosial Adat (Level: Sulit / HOTS)",
       "difficulty": "hard",
       "question_type": "standard_mc",
-      "context_markdown": "Berdasarkan peraturan menteri lingkungan hidup dan kehutanan, sebuah komunitas masyarakat hukum adat berhak memperoleh Surat Keputusan Hak Kelola Hutan Adat ($H$) jika dan hanya jika memenuhi struktur ketentuan berikut:\n\n1. Keabsahan Subjek: Adanya pengakuan keberadaan masyarakat hukum adat melalui Peraturan Daerah ($A$) DAN wilayah adat memiliki batas wilayah terpetakan secara partisipatif ($B$). Rumus: $(A \\land B)$.\n2. Keabsahan Objek: Kawasan hutan yang dimohonkan berstatus hutan negara bebas sengketa tumpang-tindih izin pihak ketiga ($C$) ATAU merupakan wilayah ulayat yang telah dikelola secara turun-temurun minimal tiga generasi ($D$). Rumus: $(C \\lor D)$.\n3. Regulasi Penetapan: Surat Keputusan Hak Kelola disahkan ($H$) jika dan hanya jika Keabsahan Subjek terpenuhi DAN Keabsahan Objek terpenuhi.\nRumus: $H \\iff [(A \\land B) \\land (C \\lor D)]$.\n\nDalam sidang verifikasi permohonan Komunitas Adat Dayak Paser:\n- Komunitas telah mengantongi Peraturan Daerah resmi pengakuan masyarakat adat ($A$ bernilai Benar).\n- Namun, peta wilayah partisipatif belum disahkan karena masih ada sengketa tapal batas dengan desa tetangga ($B$ bernilai Salah).\n- Kawasan hutan terbukti merupakan wilayah ulayat leluhur yang dikelola sejak lima generasi lalu ($D$ bernilai Benar, sehingga $C \\lor D$ bernilai Benar).",
-      "question_markdown": "Berdasarkan kaidah logika proposisi, simpulan yang **pasti benar secara deduktif** adalah...",
+      "context_markdown": "Berdasarkan peraturan menteri lingkungan hidup dan kehutanan, sebuah komunitas masyarakat hukum adat berhak memperoleh Surat Keputusan Hak Kelola Hutan Adat jika dan hanya jika memenuhi ketentuan berikut:\n\n1. Keabsahan Subjek: Adanya pengakuan keberadaan masyarakat hukum adat melalui Peraturan Daerah DAN wilayah adat memiliki batas wilayah terpetakan secara partisipatif.\n2. Keabsahan Objek: Kawasan hutan yang dimohonkan berstatus hutan negara bebas sengketa tumpang-tindih izin pihak ketiga ATAU merupakan wilayah ulayat yang telah dikelola secara turun-temurun minimal tiga generasi.\n3. Regulasi Penetapan: Surat Keputusan Hak Kelola disahkan jika dan hanya jika Keabsahan Subjek terpenuhi DAN Keabsahan Objek terpenuhi.\n\nDalam sidang verifikasi permohonan Komunitas Adat Dayak Paser:\n- Komunitas telah mengantongi Peraturan Daerah resmi pengakuan masyarakat adat.\n- Namun, peta wilayah partisipatif belum disahkan karena masih ada sengketa tapal batas dengan desa tetangga.\n- Kawasan hutan terbukti merupakan wilayah ulayat leluhur yang dikelola sejak lima generasi lalu.",
+      "question_markdown": "Berdasarkan ketentuan tersebut, simpulan yang **pasti benar** adalah...",
       "options": [
         {
           "key": "A",
@@ -641,7 +641,7 @@
         },
         {
           "key": "B",
-          "text_markdown": "Komunitas Adat Dayak Paser dipastikan belum berhak memperoleh SK Hak Kelola Hutan Adat karena kegagalan pemenuhan syarat keabsahan subjek pada aspek peta batas partisipatif ($B$ bernilai Salah)."
+          "text_markdown": "Komunitas Adat Dayak Paser dipastikan belum berhak memperoleh SK Hak Kelola Hutan Adat karena belum memenuhi syarat keabsahan subjek pada aspek peta batas wilayah partisipatif."
         },
         {
           "key": "C",

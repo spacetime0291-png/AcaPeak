@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   ArrowLeft,
   ChevronDown,
@@ -9,8 +9,19 @@ import {
   Plus,
   Clock,
   Sparkles,
+  RotateCcw,
+  Layers,
+  Shuffle,
+  ShieldCheck,
 } from 'lucide-react';
 import type { SubtestItem } from '../../types/material';
+import { UTBK_SYLLABUS } from '../../lib/syllabusData';
+import { PRELOADED_MATERIALS } from '../../lib/contentLoader';
+import {
+  getSeenStats,
+  resetSeenQuestions,
+  type OrderMode,
+} from '../../lib/drillingRotationEngine';
 import { ModuleIcon } from './ModuleIcon';
 import { ThemeToggle } from '../common/ThemeToggle';
 import { NatureFocusHeaderAccent } from '../decorations/NatureDecorations';
@@ -28,7 +39,8 @@ interface SubtestDetailViewProps {
   onStartDrilling: (
     selectedSubchapterIds: string[],
     questionCount: number,
-    timerMinutes: number | null
+    timerMinutes: number | null,
+    orderMode?: OrderMode
   ) => void;
 }
 
@@ -81,6 +93,62 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   }, [subtest.code, initialSelectedTopicId]);
   const [questionCount, setQuestionCount] = useState<number>(10);
   const [timerMinutes, setTimerMinutes] = useState<number | null>(15);
+  const [drillingSubtestCode, setDrillingSubtestCode] = useState<string>(subtest.code);
+  const [orderMode, setOrderMode] = useState<OrderMode>('blocking');
+  const [seenStatsVersion, setSeenStatsVersion] = useState<number>(0);
+
+  // Sync drilling subtest code when subtest prop changes
+  useEffect(() => {
+    setDrillingSubtestCode(subtest.code);
+  }, [subtest.code]);
+
+  // Active subtest for drilling selector
+  const currentDrillingSubtest = useMemo(() => {
+    return (
+      UTBK_SYLLABUS.find(
+        (s) => s.code.toLowerCase() === drillingSubtestCode.toLowerCase()
+      ) || subtest
+    );
+  }, [drillingSubtestCode, subtest]);
+
+  // Compute question IDs and seen stats from preloaded bank
+  const { allAvailableExampleIds, selectedExampleIds } = useMemo(() => {
+    const allIds: string[] = [];
+    const selIds: string[] = [];
+
+    for (const [key, mat] of Object.entries(PRELOADED_MATERIALS)) {
+      if (mat && mat.worked_examples) {
+        for (const ex of mat.worked_examples) {
+          const canonical = ex.example_id.replace(/-(q|repeat)\d+$/i, '');
+          if (!allIds.includes(canonical)) {
+            allIds.push(canonical);
+          }
+          if (
+            selectedSubchapters.has(mat.metadata.id) ||
+            selectedSubchapters.has(key)
+          ) {
+            if (!selIds.includes(canonical)) {
+              selIds.push(canonical);
+            }
+          }
+        }
+      }
+    }
+    return { allAvailableExampleIds: allIds, selectedExampleIds: selIds };
+  }, [selectedSubchapters, seenStatsVersion]);
+
+  const activeSeenStats = useMemo(() => {
+    const targetPool =
+      selectedExampleIds.length > 0 ? selectedExampleIds : allAvailableExampleIds;
+    return getSeenStats(targetPool);
+  }, [selectedExampleIds, allAvailableExampleIds, seenStatsVersion]);
+
+  const handleResetSeen = () => {
+    if (typeof window !== 'undefined' && window.confirm('Reset riwayat pengerjaan soal? Seluruh status Seen akan kembali 0.')) {
+      resetSeenQuestions();
+      setSeenStatsVersion((v) => v + 1);
+    }
+  };
 
   // Toggle single module accordion
   const toggleModule = (moduleId: string) => {
@@ -109,13 +177,38 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
     });
   };
 
+  const selectAllInActiveSubtest = () => {
+    const allIds = (currentDrillingSubtest.modules || []).flatMap((m) =>
+      m.subtopics.map((s) => s.id)
+    );
+    setSelectedSubchapters((prev) => {
+      const next = new Set(prev);
+      allIds.forEach((id) => next.add(id));
+      return next;
+    });
+  };
+
   const selectAllSubtest = () => {
-    const allIds = (subtest.modules || []).flatMap((m) => m.subtopics.map((s) => s.id));
-    setSelectedSubchapters(new Set(allIds));
+    selectAllInActiveSubtest();
+  };
+
+  const selectAll7Subtests = () => {
+    const all7Ids = UTBK_SYLLABUS.flatMap((s) =>
+      (s.modules || []).flatMap((m) => m.subtopics.map((sub) => sub.id))
+    );
+    setSelectedSubchapters(new Set(all7Ids));
   };
 
   const clearAllSubtest = () => {
     setSelectedSubchapters(new Set());
+  };
+
+  // Helper count selected per subtest
+  const getSelectedCountForSubtest = (code: string) => {
+    const sub = UTBK_SYLLABUS.find((s) => s.code.toLowerCase() === code.toLowerCase());
+    if (!sub) return 0;
+    const ids = (sub.modules || []).flatMap((m) => m.subtopics.map((s) => s.id));
+    return ids.filter((id) => selectedSubchapters.has(id)).length;
   };
 
   // Total subtopics count
@@ -472,35 +565,192 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         )}
 
         {/* ========================================================
-            TAB 2: DRILLING SOAL (Setup Latihan Standalone Cards)
+            TAB 2: DRILLING SOAL (Deterministic Stratified Engine)
             ======================================================== */}
         {activeTab === 'drilling' && (
-          <div className="space-y-3 sm:space-y-3.5">
-            {/* Quick Header Bar */}
-            <div className="flex items-center justify-between px-1">
-              <div>
-                <h3 className="font-bold text-slate-800 dark:text-white text-sm sm:text-base">
-                  Pilih Materi Latihan
-                </h3>
-                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400">
-                  Ketuk sub-bab yang ingin diujikan dalam sesi latihan ini.
+          <div className="space-y-4">
+            {/* 1. Multi-Subtest Selector Pills */}
+            <div className="bg-white/80 dark:bg-[#0c1326]/80 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-stone-200/90 dark:border-slate-800 shadow-2xs space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-cyan-400/80 flex items-center gap-1.5">
+                  <Layers className="w-3.5 h-3.5" />
+                  <span>Subtes Latihan ({UTBK_SYLLABUS.length} Subtes BPPP)</span>
+                </span>
+                <span className="text-[11px] font-semibold text-slate-400">
+                  {selectedSubchapters.size} sub-bab dipilih
+                </span>
+              </div>
+
+              {/* Subtest Pills */}
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-thin">
+                {UTBK_SYLLABUS.map((st) => {
+                  const isActive = st.code.toLowerCase() === drillingSubtestCode.toLowerCase();
+                  const selectedCount = getSelectedCountForSubtest(st.code);
+
+                  return (
+                    <button
+                      key={st.code}
+                      type="button"
+                      onClick={() => setDrillingSubtestCode(st.code)}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 border shrink-0 ${
+                        isActive
+                          ? isDark
+                            ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.4)]'
+                            : 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                          : isDark
+                          ? 'bg-slate-900/90 text-slate-300 hover:text-white border-slate-800 hover:border-slate-700'
+                          : 'bg-stone-50 text-slate-700 hover:bg-stone-100 border-stone-200/80'
+                      }`}
+                    >
+                      <span>{st.code}</span>
+                      {selectedCount > 0 && (
+                        <span
+                          className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono font-black ${
+                            isActive
+                              ? 'bg-white/25 text-white'
+                              : 'bg-blue-100 dark:bg-cyan-950 text-blue-700 dark:text-cyan-300'
+                          }`}
+                        >
+                          {selectedCount}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* 2. Seen / Unseen Tracker Box */}
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-stone-50 dark:bg-slate-900/90 border border-stone-200/90 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs">
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100">
+                    Pelacak Riwayat Soal (Seen Tracker)
+                  </span>
+                </div>
+                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Bank Soal: <strong>{activeSeenStats.totalCount} Soal</strong> • Belum Dikerjakan (Unseen):{' '}
+                  <strong className="text-indigo-600 dark:text-cyan-400">{activeSeenStats.unseenCount}</strong> • Pernah Dikerjakan:{' '}
+                  <strong>{activeSeenStats.seenCount}</strong> ({activeSeenStats.percentage}%)
                 </p>
               </div>
-              <div className="flex items-center gap-2">
+
+              <button
+                type="button"
+                onClick={handleResetSeen}
+                className="self-start sm:self-auto inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800 hover:bg-rose-50 dark:hover:bg-rose-950/40 hover:text-rose-600 dark:hover:text-rose-400 border border-stone-200 dark:border-slate-700 transition cursor-pointer shadow-2xs active:scale-95"
+                title="Hapus riwayat soal yang pernah dikerjakan"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Reset Riwayat Soal</span>
+              </button>
+            </div>
+
+            {/* 3. Order Mode: Blocking vs Interleaved */}
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800 shadow-2xs space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
+                  <Shuffle className="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400" />
+                  <span>Mode Urutan Soal (Rotation Engine)</span>
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800 text-slate-500">
+                  UTBK BPPP
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {/* Mode 1: Blocking per Subtes */}
+                <div
+                  onClick={() => setOrderMode('blocking')}
+                  className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${
+                    orderMode === 'blocking'
+                      ? isDark
+                        ? 'bg-[#0f1d3c] border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.3)] ring-1 ring-cyan-400'
+                        : 'bg-blue-50/90 border-blue-400 shadow-xs ring-1 ring-blue-300'
+                      : isDark
+                      ? 'bg-slate-900/60 hover:bg-slate-850 border-slate-800'
+                      : 'bg-stone-50/60 hover:bg-stone-100/60 border-stone-200'
+                  }`}
+                >
+                  <ShieldCheck
+                    className={`w-5 h-5 shrink-0 mt-0.5 ${
+                      orderMode === 'blocking' ? 'text-blue-600 dark:text-cyan-400' : 'text-slate-400'
+                    }`}
+                  />
+                  <div className="min-w-0">
+                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
+                      Blocking per Subtes (Simulasi Asli)
+                    </div>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 leading-snug">
+                      Disajikan blok per subtes secara utuh, mereplikasi susunan asli lembar tes UTBK-SNBT.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Mode 2: Interleaved Round-Robin */}
+                <div
+                  onClick={() => setOrderMode('interleaved')}
+                  className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${
+                    orderMode === 'interleaved'
+                      ? isDark
+                        ? 'bg-[#0f1d3c] border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.3)] ring-1 ring-cyan-400'
+                        : 'bg-blue-50/90 border-blue-400 shadow-xs ring-1 ring-blue-300'
+                      : isDark
+                      ? 'bg-slate-900/60 hover:bg-slate-850 border-slate-800'
+                      : 'bg-stone-50/60 hover:bg-stone-100/60 border-stone-200'
+                  }`}
+                >
+                  <Shuffle
+                    className={`w-5 h-5 shrink-0 mt-0.5 ${
+                      orderMode === 'interleaved' ? 'text-blue-600 dark:text-cyan-400' : 'text-slate-400'
+                    }`}
+                  />
+                  <div className="min-w-0">
+                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
+                      Interleaved Round-Robin (Campuran)
+                    </div>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 leading-snug">
+                      Soal diputar bergantian antar subtes secara round-robin untuk melatih kelincahan kognitif.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 4. Subchapter Action Toolbar */}
+            <div className="flex flex-wrap items-center justify-between gap-2 px-1 pt-1">
+              <div>
+                <h3 className="font-bold text-slate-800 dark:text-white text-sm sm:text-base">
+                  Sub-bab {currentDrillingSubtest.name || currentDrillingSubtest.title} ({currentDrillingSubtest.code})
+                </h3>
+                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400">
+                  Pilih sub-bab spesifik yang ingin dimasukkan dalam rotasi latihan.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-1.5 flex-wrap">
                 <button
                   type="button"
-                  onClick={selectAllSubtest}
-                  className="px-3.5 py-1.5 rounded-xl text-xs font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]"
+                  onClick={selectAllInActiveSubtest}
+                  className="px-3 py-1 rounded-xl text-xs font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs"
                 >
-                  Pilih Semua
+                  Pilih Subtes Ini
+                </button>
+                <button
+                  type="button"
+                  onClick={selectAll7Subtests}
+                  className="px-3 py-1 rounded-xl text-xs font-bold text-indigo-600 dark:text-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-400/50 cursor-pointer transition shadow-2xs"
+                >
+                  Pilih Semua 7 Subtes
                 </button>
                 {selectedSubchapters.size > 0 && (
                   <button
                     type="button"
                     onClick={clearAllSubtest}
-                    className="px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
+                    className="px-3 py-1 rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
                   >
-                    Batal
+                    Batal ({selectedSubchapters.size})
                   </button>
                 )}
               </div>
@@ -508,7 +758,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
             {/* Standalone Cards for Drilling */}
             <div className="space-y-3 sm:space-y-3.5">
-              {(subtest.modules || []).map((mod, modIdx) => {
+              {(currentDrillingSubtest.modules || []).map((mod, modIdx) => {
                 const isOpen = openModules.has(mod.id);
                 const selectedInMod = mod.subtopics.filter((s) => selectedSubchapters.has(s.id)).length;
                 const allSelectedInMod = mod.subtopics.length > 0 && selectedInMod === mod.subtopics.length;
@@ -801,7 +1051,8 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   onStartDrilling(
                     Array.from(selectedSubchapters),
                     questionCount,
-                    timerMinutes
+                    timerMinutes,
+                    orderMode
                   );
                 }
               }}

@@ -87,7 +87,7 @@ export const MATERIAL_PU_02_05: Material = {
         },
         {
           "key": "C",
-          "text_markdown": "C duduk tepat di sebelah kiri D"
+          "text_markdown": "C duduk di sebelah kanan D"
         },
         {
           "key": "D",
@@ -102,7 +102,7 @@ export const MATERIAL_PU_02_05: Material = {
       "hint_markdown": "💡 **Petunjuk Soal:** Mulai dari kursi 4 yang ditempati D. F di sebelah kanan D dengan minimal 1 kursi jeda, berarti F pasti di kursi berapa? Setelah slot kanan terisi, tempatkan blok [B, C] dan E di slot kiri.",
       "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Kerangka Kursi (1-6):** $[1] [2] [3] [4] [5] [6]$.\n- **Penempatan Elemen Pasti:**\n  - Kursi 4 = D (Ketentuan 1).\n  - Ketentuan 4: F di sebelah kanan D (kursi 5 atau 6) dengan minimal satu orang di antara mereka. Maka kursi 5 adalah pemisah dan Kursi 6 = F.\n  - Susunan saat ini: $[1] [2] [3] [D] [5] [F]$.\n- **Penempatan Blok Kiri:**\n  - B tepat di sebelah kiri C $[B, C]$ (Ketentuan 2) dan E di sebelah kiri B (Ketentuan 5).\n  - Agar E ada di sebelah kiri B, blok $[B, C]$ harus di kursi 2 dan 3, sehingga Kursi 1 = E, Kursi 2 = B, Kursi 3 = C.\n- **Penempatan Elemen Tersisa:**\n  - Kursi 5 tersisa untuk A (Ketentuan 3 terpenuhi: A bukan di kursi 1 atau 6).\n- **Susunan Akhir:** Kursi 1 (E), Kursi 2 (B), Kursi 3 (C), Kursi 4 (D), Kursi 5 (A), Kursi 6 (F).\n- **Pernyataan Pasti Benar:** A duduk di kursi 5, tepat di antara D (kursi 4) dan F (kursi 6).\n\n**Jawaban: A**",
       "quick_trick_markdown": "**Cara Cepat (Deduksi Slot Kanan-Kiri):**\n\n1. D di 4 $\\to$ F di kanan D dengan jeda $\\to$ F wajib di 6.\n2. Slot 5 tersisa di kanan. Di kiri (1, 2, 3), E harus sebelum B, C $\\to$ E di 1, B di 2, C di 3.\n3. Satu-satunya orang tersisa adalah A $\\to$ A wajib menempati kursi 5 di antara D dan F.\n4. Jawaban **A** langsung terkonfirmasi.",
-      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** E duduk di kursi nomor 1, bukan kursi nomor 2 (kursi 2 ditempati B).\n- **Pilihan C Salah:** Di sebelah kiri D (kursi 4) adalah C (kursi 3). Namun pilihan A memberikan kepastian struktur hubungan di antara D dan F yang menjadi fokus soal.\n- **Pilihan D Salah:** B duduk di kursi nomor 2 yang berada di sebelah kiri D, bukan di sebelah kanan.\n- **Pilihan E Salah:** F duduk di kursi 6 dan berjarak satu kursi dari D (terpisah oleh A), sehingga tidak bersebelahan langsung."
+      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** E duduk di kursi nomor 1, bukan kursi nomor 2 (kursi 2 ditempati B).\n- **Pilihan C Salah:** C duduk di kursi nomor 3 yang berada di sebelah kiri D (kursi 4), bukan di sebelah kanan.\n- **Pilihan D Salah:** B duduk di kursi nomor 2 yang berada di sebelah kiri D, bukan di sebelah kanan.\n- **Pilihan E Salah:** F duduk di kursi 6 dan berjarak satu kursi dari D (terpisah oleh A), sehingga tidak bersebelahan langsung."
     },
     {
       "example_id": "pu-02-05-ex3",

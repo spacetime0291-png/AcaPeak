@@ -48,18 +48,40 @@ export interface ComplexTable {
   rows: ComplexTableRow[];
 }
 
+export type QuestionType =
+  | 'standard_mc'
+  | 'statements_1234'
+  | 'data_sufficiency'
+  | 'mc_complex_table'
+  | 'mc_complex_checkbox'
+  | 'short_answer'
+  | 'reading_comprehension'
+  | 'table_evaluation'
+  | string;
+
+export interface ComplexStatementItem {
+  id: string;
+  statement_markdown: string;
+  is_true: boolean;
+}
+
 export interface WorkedExample {
   example_id: string;
   variation_name: string;
   difficulty: 'easy' | 'medium' | 'hard';
-  question_type: 'standard_mc' | 'statements_1234' | 'data_sufficiency' | 'reading_comprehension' | 'table_evaluation' | string;
+  question_type: QuestionType;
   context_markdown?: string | null;
   svg_illustration?: SvgIllustration | null;
   question_markdown: string;
   statements?: string[] | null;
   complex_table?: ComplexTable | null;
-  options: QuestionOption[];
-  correct_answer: 'A' | 'B' | 'C' | 'D' | 'E' | string;
+  options?: QuestionOption[];
+  correct_answer?: 'A' | 'B' | 'C' | 'D' | 'E' | string;
+  // Format baru UTBK-SNBT BPPP: PGK & Isian Singkat
+  complex_statements?: ComplexStatementItem[];
+  table_headers?: [string, string];
+  short_answer_key?: string | number;
+  passage_group_id?: string;
   hint_markdown?: string;
   conceptual_solution_markdown: string;
   quick_trick_markdown: string;

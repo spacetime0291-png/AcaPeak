@@ -18,8 +18,13 @@ import {
   BookOpen,
   ChevronDown,
   ChevronUp,
+  Check,
 } from 'lucide-react';
 import type { WorkedExample } from '../../types/material';
+import {
+  isAnswerCorrect,
+  recordQuestionsSeen,
+} from '../../lib/drillingRotationEngine';
 import { ThemeToggle } from '../common/ThemeToggle';
 
 const KATEX_REHYPE_PLUGINS = [rehypeKatex as any];
@@ -45,8 +50,9 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 }) => {
   const isDark = theme === 'dark';
 
-  // Answers state: { [questionId]: selectedKey }
-  const [answers, setAnswers] = useState<Record<string, string>>({});
+  // Answers state: { [questionId]: answerValue }
+  // Supports string ('A'), short answer ('42'), table map ({ stmt1: 'Benar' }), checkbox array (['id1', 'id2'])
+  const [answers, setAnswers] = useState<Record<string, any>>({});
   // Flagged questions: Set of question indices
   const [flaggedIndices, setFlaggedIndices] = useState<Set<number>>(new Set());
   // Show palette modal on mobile
@@ -103,6 +109,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
         setSecondsRemaining((prev) => {
           if (prev <= 1) {
             clearInterval(interval);
+            recordQuestionsSeen(questions.map((q) => q.example_id));
             setIsFinished(true);
             return 0;
           }
@@ -114,7 +121,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [isFinished, timerMinutes]);
+  }, [isFinished, timerMinutes, questions]);
 
   const formatTimer = (totalSecs: number) => {
     const mins = Math.floor(totalSecs / 60);
@@ -125,12 +132,69 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   const currentQuestion = questions[currentQuestionIndex] || questions[0];
   const totalQuestions = questions.length;
 
+  // Question Answer Handlers
   const handleSelectOption = (optionKey: string) => {
     if (isFinished) return;
     setAnswers((prev) => ({
       ...prev,
       [currentQuestion.example_id]: optionKey,
     }));
+  };
+
+  const handleTableSelect = (stmtId: string, choice: string) => {
+    if (isFinished) return;
+    setAnswers((prev) => {
+      const cur = (prev[currentQuestion.example_id] && typeof prev[currentQuestion.example_id] === 'object')
+        ? { ...prev[currentQuestion.example_id] }
+        : {};
+      cur[stmtId] = choice;
+      return {
+        ...prev,
+        [currentQuestion.example_id]: cur,
+      };
+    });
+  };
+
+  const handleCheckboxToggle = (itemId: string) => {
+    if (isFinished) return;
+    setAnswers((prev) => {
+      const cur: string[] = Array.isArray(prev[currentQuestion.example_id])
+        ? [...prev[currentQuestion.example_id]]
+        : [];
+      const idx = cur.indexOf(itemId);
+      if (idx >= 0) {
+        cur.splice(idx, 1);
+      } else {
+        cur.push(itemId);
+      }
+      return {
+        ...prev,
+        [currentQuestion.example_id]: cur,
+      };
+    });
+  };
+
+  const handleShortAnswerChange = (val: string) => {
+    if (isFinished) return;
+    setAnswers((prev) => ({
+      ...prev,
+      [currentQuestion.example_id]: val,
+    }));
+  };
+
+  const isQuestionAnswered = (q: WorkedExample): boolean => {
+    const ans = answers[q.example_id];
+    if (ans === undefined || ans === null) return false;
+    if (q.question_type === 'mc_complex_table') {
+      return typeof ans === 'object' && Object.keys(ans).length > 0;
+    }
+    if (q.question_type === 'mc_complex_checkbox') {
+      return Array.isArray(ans) && ans.length > 0;
+    }
+    if (q.question_type === 'short_answer') {
+      return typeof ans === 'string' && ans.trim().length > 0;
+    }
+    return typeof ans === 'string' && ans.length > 0;
   };
 
   const toggleFlagCurrent = () => {
@@ -147,6 +211,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
   const handleFinishDrilling = () => {
     setIsFinished(true);
+    recordQuestionsSeen(questions.map((q) => q.example_id));
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
@@ -162,11 +227,11 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
     });
   };
 
-  // Calculate score
-  const correctCount = questions.filter(
-    (q) => answers[q.example_id] === q.correct_answer
+  // Calculate score with stratified question type support
+  const correctCount = questions.filter((q) =>
+    isAnswerCorrect(q, answers[q.example_id])
   ).length;
-  const answeredCount = Object.keys(answers).length;
+  const answeredCount = questions.filter((q) => isQuestionAnswered(q)).length;
   const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
   // Custom markdown component styling for KaTeX & high contrast
@@ -254,9 +319,33 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
           {questions.map((q, idx) => {
             const userAnswer = answers[q.example_id];
-            const isCorrect = userAnswer === q.correct_answer;
-            const isAnswered = !!userAnswer;
+            const isCorrect = isAnswerCorrect(q, userAnswer);
+            const isAnswered = isQuestionAnswered(q);
             const isReviewOpen = openReviews.has(q.example_id);
+
+            // User answer label & key label
+            let userAnswerLabel = 'Tidak Dijawab';
+            let keyAnswerLabel = String(q.correct_answer || '-');
+
+            if (isAnswered) {
+              if (q.question_type === 'short_answer') {
+                userAnswerLabel = String(userAnswer);
+              } else if (q.question_type === 'mc_complex_table') {
+                userAnswerLabel = 'Tabel PGK Diisi';
+              } else if (q.question_type === 'mc_complex_checkbox') {
+                userAnswerLabel = Array.isArray(userAnswer) ? `${userAnswer.length} Opsi Dipilih` : String(userAnswer);
+              } else {
+                userAnswerLabel = String(userAnswer);
+              }
+            }
+
+            if (q.question_type === 'short_answer') {
+              keyAnswerLabel = String(q.short_answer_key ?? q.correct_answer ?? '-');
+            } else if (q.question_type === 'mc_complex_table') {
+              keyAnswerLabel = 'Kunci Tabel';
+            } else if (q.question_type === 'mc_complex_checkbox') {
+              keyAnswerLabel = 'Multi Opsi';
+            }
 
             return (
               <div
@@ -286,11 +375,11 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       </div>
                       <div className="flex items-center gap-2 mt-0.5 text-[11px]">
                         <span className="text-slate-500 dark:text-slate-400">
-                          Jawaban Anda: <strong>{userAnswer || 'Tidak Dijawab'}</strong>
+                          Jawaban Anda: <strong>{userAnswerLabel}</strong>
                         </span>
                         <span className="text-slate-300 dark:text-slate-600">•</span>
                         <span className="text-emerald-700 dark:text-emerald-400 font-semibold">
-                          Kunci: <strong>{q.correct_answer}</strong>
+                          Kunci: <strong>{keyAnswerLabel}</strong>
                         </span>
                       </div>
                     </div>
@@ -341,32 +430,155 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       </ReactMarkdown>
                     </div>
 
-                    {/* Options list */}
-                    <div className="space-y-2 pl-1">
-                      {q.options.map((opt) => (
-                        <div
-                          key={opt.key}
-                          className={`p-3 rounded-xl border flex items-start gap-3 ${
-                            opt.key === q.correct_answer
-                              ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 font-semibold text-emerald-950 dark:text-emerald-100'
-                              : opt.key === userAnswer
-                              ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-950 dark:text-rose-100'
-                              : 'bg-white dark:bg-slate-900 border-stone-100 dark:border-slate-800 text-slate-700 dark:text-slate-300'
-                          }`}
-                        >
-                          <span className="font-bold text-sm w-6">{opt.key}.</span>
-                          <div className="flex-1 text-[15px] sm:text-base leading-relaxed">
-                            <ReactMarkdown
-                              remarkPlugins={[remarkMath, remarkGfm]}
-                              rehypePlugins={KATEX_REHYPE_PLUGINS}
-                              components={markdownComponents}
+                    {/* Answer Review for Complex Table */}
+                    {q.question_type === 'mc_complex_table' && q.complex_statements && (
+                      <div className="w-full overflow-x-auto rounded-2xl border border-stone-200 dark:border-slate-800 shadow-2xs">
+                        <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                          <thead>
+                            <tr className="bg-stone-50 dark:bg-slate-900 border-b border-stone-200 dark:border-slate-800">
+                              <th className="p-3 font-bold">Pernyataan</th>
+                              <th className="p-3 text-center font-bold">Pilihan Anda</th>
+                              <th className="p-3 text-center font-bold text-emerald-600 dark:text-emerald-400">Kunci Benar</th>
+                              <th className="p-3 text-center font-bold">Hasil</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-stone-100 dark:divide-slate-800">
+                            {q.complex_statements.map((stmt) => {
+                              const ansMap = (userAnswer || {}) as Record<string, string>;
+                              const userChoice = ansMap[stmt.id] || '(Kosong)';
+                              const col0 = (q.table_headers || ['Benar', 'Salah'])[0];
+                              const col1 = (q.table_headers || ['Benar', 'Salah'])[1];
+                              const correctChoice = stmt.is_true ? col0 : col1;
+                              const isRowCorrect = userChoice === correctChoice;
+
+                              return (
+                                <tr key={stmt.id} className="hover:bg-stone-50/50 dark:hover:bg-slate-850/50">
+                                  <td className="p-3 text-slate-800 dark:text-slate-200">
+                                    <ReactMarkdown
+                                      remarkPlugins={[remarkMath, remarkGfm]}
+                                      rehypePlugins={KATEX_REHYPE_PLUGINS}
+                                      components={markdownComponents}
+                                    >
+                                      {stmt.statement_markdown}
+                                    </ReactMarkdown>
+                                  </td>
+                                  <td className="p-3 text-center font-semibold">{userChoice}</td>
+                                  <td className="p-3 text-center font-bold text-emerald-600 dark:text-emerald-400">{correctChoice}</td>
+                                  <td className="p-3 text-center">
+                                    {isRowCorrect ? (
+                                      <span className="text-emerald-600 font-bold">✓ Benar</span>
+                                    ) : (
+                                      <span className="text-rose-600 font-bold">✕ Salah</span>
+                                    )}
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+
+                    {/* Answer Review for Complex Checkbox */}
+                    {q.question_type === 'mc_complex_checkbox' && (
+                      <div className="space-y-2 pl-1">
+                        {(q.complex_statements && q.complex_statements.length > 0
+                          ? q.complex_statements.map((s) => ({
+                              id: s.id,
+                              text: s.statement_markdown,
+                              is_correct: s.is_true,
+                            }))
+                          : (q.options || []).map((o) => ({
+                              id: o.key,
+                              text: o.text_markdown,
+                              is_correct: String(q.correct_answer || '').includes(o.key),
+                            }))
+                        ).map((item) => {
+                          const userSelectedList: string[] = Array.isArray(userAnswer) ? userAnswer : [];
+                          const wasSelected = userSelectedList.includes(item.id);
+
+                          return (
+                            <div
+                              key={item.id}
+                              className={`p-3 rounded-xl border flex items-start gap-3 ${
+                                item.is_correct
+                                  ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 font-semibold text-emerald-950 dark:text-emerald-100'
+                                  : wasSelected
+                                  ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-950 dark:text-rose-100'
+                                  : 'bg-white dark:bg-slate-900 border-stone-100 dark:border-slate-800 text-slate-700 dark:text-slate-300'
+                              }`}
                             >
-                              {opt.text_markdown}
-                            </ReactMarkdown>
-                          </div>
+                              <span className="font-bold text-xs shrink-0 mt-0.5 px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800">
+                                {wasSelected ? 'Dipilih' : 'Tidak Dipilih'}
+                              </span>
+                              <div className="flex-1 text-[15px] sm:text-base leading-relaxed">
+                                <ReactMarkdown
+                                  remarkPlugins={[remarkMath, remarkGfm]}
+                                  rehypePlugins={KATEX_REHYPE_PLUGINS}
+                                  components={markdownComponents}
+                                >
+                                  {item.text}
+                                </ReactMarkdown>
+                              </div>
+                              {item.is_correct && (
+                                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 shrink-0">
+                                  (Kunci Benar)
+                                </span>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+
+                    {/* Answer Review for Short Answer */}
+                    {q.question_type === 'short_answer' && (
+                      <div className="p-4 rounded-2xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 space-y-2">
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-slate-500 dark:text-slate-400">Jawaban Anda:</span>
+                          <span className="font-bold text-base text-slate-900 dark:text-white">
+                            {userAnswer ? String(userAnswer) : '(Tidak Dijawab)'}
+                          </span>
                         </div>
-                      ))}
-                    </div>
+                        <div className="flex items-center justify-between text-sm border-t border-stone-200 dark:border-slate-800 pt-2">
+                          <span className="text-emerald-700 dark:text-emerald-400 font-semibold">Kunci Jawaban:</span>
+                          <span className="font-black text-base text-emerald-700 dark:text-emerald-400">
+                            {String(q.short_answer_key ?? q.correct_answer ?? '-')}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Answer Review for Standard Multiple Choice */}
+                    {q.question_type !== 'mc_complex_table' &&
+                      q.question_type !== 'mc_complex_checkbox' &&
+                      q.question_type !== 'short_answer' && (
+                        <div className="space-y-2 pl-1">
+                          {(q.options || []).map((opt) => (
+                            <div
+                              key={opt.key}
+                              className={`p-3 rounded-xl border flex items-start gap-3 ${
+                                opt.key === q.correct_answer
+                                  ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 font-semibold text-emerald-950 dark:text-emerald-100'
+                                  : opt.key === userAnswer
+                                  ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-950 dark:text-rose-100'
+                                  : 'bg-white dark:bg-slate-900 border-stone-100 dark:border-slate-800 text-slate-700 dark:text-slate-300'
+                              }`}
+                            >
+                              <span className="font-bold text-sm w-6">{opt.key}.</span>
+                              <div className="flex-1 text-[15px] sm:text-base leading-relaxed">
+                                <ReactMarkdown
+                                  remarkPlugins={[remarkMath, remarkGfm]}
+                                  rehypePlugins={KATEX_REHYPE_PLUGINS}
+                                  components={markdownComponents}
+                                >
+                                  {opt.text_markdown}
+                                </ReactMarkdown>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
 
                     {/* Hint / Petunjuk Soal */}
                     <div className="p-3.5 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200/90 dark:border-amber-800/60 text-amber-950 dark:text-amber-200 space-y-1">
@@ -512,7 +724,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           <div className="grid grid-cols-5 sm:grid-cols-10 gap-2">
             {questions.map((q, idx) => {
               const isCurrent = idx === currentQuestionIndex;
-              const isAnswered = !!answers[q.example_id];
+              const isAnswered = isQuestionAnswered(q);
               const isFlagged = flaggedIndices.has(idx);
 
               let badgeClass = 'bg-stone-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-stone-200 dark:border-slate-800 hover:bg-stone-100';
@@ -627,51 +839,230 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           )}
         </div>
 
-        {/* Options list A, B, C, D, E */}
-        <div className="space-y-3 pt-2">
-          {currentQuestion.options.map((option) => {
-            const isSelected = answers[currentQuestion.example_id] === option.key;
+        {/* INTERACTIVE QUESTION OPTIONS / INPUT / TABLE ACCORDING TO QUESTION TYPE */}
+        <div className="pt-2">
+          {/* TYPE 1: PGK COMPLEX TABLE (Tabel 2 Kolom Benar/Salah) */}
+          {currentQuestion.question_type === 'mc_complex_table' && currentQuestion.complex_statements && (
+            <div className="space-y-3">
+              <div className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-cyan-300 flex items-center gap-1.5 mb-1">
+                <Sparkles className="w-3.5 h-3.5 text-amber-500 dark:text-cyan-400" />
+                <span>Pilihlah kolom yang tepat untuk setiap pernyataan berikut:</span>
+              </div>
+              <div className="w-full overflow-x-auto rounded-2xl border border-stone-200/90 dark:border-slate-800 shadow-2xs">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-stone-50/90 dark:bg-slate-900 border-b border-stone-200 dark:border-slate-800 text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-200">
+                      <th className="p-3.5 sm:p-4 font-bold">Pernyataan</th>
+                      <th className="p-3.5 sm:p-4 text-center w-24 sm:w-32 text-indigo-700 dark:text-cyan-300 font-black">
+                        {(currentQuestion.table_headers || ['Benar', 'Salah'])[0]}
+                      </th>
+                      <th className="p-3.5 sm:p-4 text-center w-24 sm:w-32 text-rose-700 dark:text-rose-400 font-black">
+                        {(currentQuestion.table_headers || ['Benar', 'Salah'])[1]}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-stone-100 dark:divide-slate-800/80 bg-white dark:bg-[#080d21]">
+                    {currentQuestion.complex_statements.map((stmt) => {
+                      const ansMap = (answers[currentQuestion.example_id] || {}) as Record<string, string>;
+                      const choice = ansMap[stmt.id];
+                      const col0 = (currentQuestion.table_headers || ['Benar', 'Salah'])[0];
+                      const col1 = (currentQuestion.table_headers || ['Benar', 'Salah'])[1];
 
-            return (
-              <button
-                key={option.key}
-                type="button"
-                onClick={() => handleSelectOption(option.key)}
-                className={`w-full text-left p-4 sm:p-5 rounded-2xl border transition-all flex items-start gap-4 cursor-pointer ${
-                  isSelected
-                    ? isDark
-                      ? 'bg-[#0f1d3c] border-cyan-400 text-cyan-100 font-medium shadow-[0_0_14px_rgba(0,242,254,0.25)]'
-                      : 'bg-indigo-50/90 border-indigo-400 text-indigo-950 font-medium shadow-xs ring-1 ring-indigo-300'
-                    : isDark
-                    ? 'bg-[#070c18] hover:bg-[#0f1730] border-slate-800 hover:border-cyan-500/40 text-slate-200'
-                    : 'bg-white hover:bg-stone-50 border-stone-200/90 text-slate-800'
-                }`}
-              >
-                {/* Option Letter Circle */}
-                <div
-                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl text-sm sm:text-base font-bold flex items-center justify-center shrink-0 mt-0.5 transition ${
-                    isSelected
-                      ? isDark
-                        ? 'bg-cyan-500 text-slate-950 font-bold'
-                        : 'bg-indigo-600 text-white shadow-2xs'
-                      : 'bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200 dark:border-slate-700'
-                  }`}
+                      return (
+                        <tr
+                          key={stmt.id}
+                          className="hover:bg-stone-50/60 dark:hover:bg-slate-850/50 transition-colors"
+                        >
+                          <td className="p-3.5 sm:p-4 text-xs sm:text-sm md:text-base leading-relaxed text-slate-800 dark:text-slate-200">
+                            <ReactMarkdown
+                              remarkPlugins={[remarkMath, remarkGfm]}
+                              rehypePlugins={KATEX_REHYPE_PLUGINS}
+                              components={markdownComponents}
+                            >
+                              {stmt.statement_markdown}
+                            </ReactMarkdown>
+                          </td>
+                          <td className="p-3.5 sm:p-4 text-center align-middle">
+                            <button
+                              type="button"
+                              onClick={() => handleTableSelect(stmt.id, col0)}
+                              className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
+                                choice === col0
+                                  ? isDark
+                                    ? 'bg-cyan-500 border-cyan-400 text-slate-950 shadow-[0_0_10px_rgba(0,242,254,0.5)] font-bold'
+                                    : 'bg-indigo-600 border-indigo-600 text-white font-bold'
+                                  : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700 hover:border-indigo-400'
+                              }`}
+                            >
+                              {choice === col0 && <Check className="w-4 h-4 stroke-[3]" />}
+                            </button>
+                          </td>
+                          <td className="p-3.5 sm:p-4 text-center align-middle">
+                            <button
+                              type="button"
+                              onClick={() => handleTableSelect(stmt.id, col1)}
+                              className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
+                                choice === col1
+                                  ? isDark
+                                    ? 'bg-rose-500 border-rose-400 text-white shadow-[0_0_10px_rgba(244,63,94,0.5)] font-bold'
+                                    : 'bg-rose-600 border-rose-600 text-white font-bold'
+                                  : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700 hover:border-rose-400'
+                              }`}
+                            >
+                              {choice === col1 && <Check className="w-4 h-4 stroke-[3]" />}
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+
+          {/* TYPE 2: PGK COMPLEX CHECKBOX (Pilih Lebih Dari 1 Jawaban) */}
+          {currentQuestion.question_type === 'mc_complex_checkbox' && (
+            <div className="space-y-3">
+              <div className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-cyan-300 flex items-center gap-1.5 mb-1">
+                <Sparkles className="w-3.5 h-3.5 text-amber-500 dark:text-cyan-400" />
+                <span>Pilih semua jawaban yang benar (dapat lebih dari satu opsi):</span>
+              </div>
+              <div className="space-y-2.5">
+                {(currentQuestion.complex_statements && currentQuestion.complex_statements.length > 0
+                  ? currentQuestion.complex_statements.map((s) => ({
+                      id: s.id,
+                      text: s.statement_markdown,
+                    }))
+                  : (currentQuestion.options || []).map((o) => ({
+                      id: o.key,
+                      text: o.text_markdown,
+                    }))
+                ).map((item) => {
+                  const userAnswers: string[] = Array.isArray(answers[currentQuestion.example_id])
+                    ? answers[currentQuestion.example_id]
+                    : [];
+                  const isChecked = userAnswers.includes(item.id);
+
+                  return (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => handleCheckboxToggle(item.id)}
+                      className={`w-full text-left p-4 sm:p-4.5 rounded-2xl border transition-all flex items-start gap-3.5 cursor-pointer ${
+                        isChecked
+                          ? isDark
+                            ? 'bg-[#0f1d3c] border-cyan-400 text-cyan-100 font-medium shadow-[0_0_14px_rgba(0,242,254,0.25)]'
+                            : 'bg-indigo-50/90 border-indigo-400 text-indigo-950 font-medium shadow-xs ring-1 ring-indigo-300'
+                          : isDark
+                          ? 'bg-[#070c18] hover:bg-[#0f1730] border-slate-800 hover:border-cyan-500/40 text-slate-200'
+                          : 'bg-white hover:bg-stone-50 border-stone-200/90 text-slate-800'
+                      }`}
+                    >
+                      <div
+                        className={`w-6 h-6 rounded-lg border flex items-center justify-center shrink-0 mt-0.5 transition ${
+                          isChecked
+                            ? isDark
+                              ? 'bg-cyan-500 border-cyan-400 text-slate-950 font-bold'
+                              : 'bg-indigo-600 border-indigo-600 text-white font-bold'
+                            : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700'
+                        }`}
+                      >
+                        {isChecked && <Check className="w-4 h-4 stroke-[3]" />}
+                      </div>
+                      <div className="flex-1 text-sm sm:text-base leading-relaxed">
+                        <ReactMarkdown
+                          remarkPlugins={[remarkMath, remarkGfm]}
+                          rehypePlugins={KATEX_REHYPE_PLUGINS}
+                          components={markdownComponents}
+                        >
+                          {item.text}
+                        </ReactMarkdown>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* TYPE 3: SHORT ANSWER (Isian Singkat Angka / Kata Baku) */}
+          {currentQuestion.question_type === 'short_answer' && (
+            <div className="space-y-3">
+              <div className="p-4 sm:p-5 rounded-2xl bg-stone-50/90 dark:bg-slate-900 border border-stone-200/90 dark:border-slate-800 space-y-2.5">
+                <label
+                  htmlFor="short-answer-input"
+                  className="block text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-cyan-400/90"
                 >
-                  {option.key}
+                  Jawaban Isian Singkat:
+                </label>
+                <div className="relative">
+                  <input
+                    id="short-answer-input"
+                    type="text"
+                    value={answers[currentQuestion.example_id] || ''}
+                    onChange={(e) => handleShortAnswerChange(e.target.value)}
+                    placeholder="Ketik jawaban angka atau kata di sini..."
+                    className="w-full px-4 py-3 text-base sm:text-lg font-bold bg-white dark:bg-[#080d21] border border-stone-300 dark:border-slate-700 rounded-xl focus:outline-hidden focus:ring-2 focus:ring-indigo-500 dark:focus:ring-cyan-400 text-slate-900 dark:text-white placeholder:font-normal placeholder:text-slate-400 transition"
+                  />
                 </div>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  *Isikan angka desimal/bulat atau kata sesuai instruksi soal. Sistem otomatis mengabaikan spasi dan huruf besar/kecil.
+                </p>
+              </div>
+            </div>
+          )}
 
-                <div className="flex-1 text-base sm:text-[17px] leading-relaxed">
-                  <ReactMarkdown
-                    remarkPlugins={[remarkMath, remarkGfm]}
-                    rehypePlugins={KATEX_REHYPE_PLUGINS}
-                    components={markdownComponents}
-                  >
-                    {option.text_markdown}
-                  </ReactMarkdown>
-                </div>
-              </button>
-            );
-          })}
+          {/* TYPE 4: STANDARD MULTIPLE CHOICE (Pilihan Ganda A-E, statements_1234, data_sufficiency) */}
+          {currentQuestion.question_type !== 'mc_complex_table' &&
+            currentQuestion.question_type !== 'mc_complex_checkbox' &&
+            currentQuestion.question_type !== 'short_answer' && (
+              <div className="space-y-3">
+                {(currentQuestion.options || []).map((option) => {
+                  const isSelected = answers[currentQuestion.example_id] === option.key;
+
+                  return (
+                    <button
+                      key={option.key}
+                      type="button"
+                      onClick={() => handleSelectOption(option.key)}
+                      className={`w-full text-left p-4 sm:p-5 rounded-2xl border transition-all flex items-start gap-4 cursor-pointer ${
+                        isSelected
+                          ? isDark
+                            ? 'bg-[#0f1d3c] border-cyan-400 text-cyan-100 font-medium shadow-[0_0_14px_rgba(0,242,254,0.25)]'
+                            : 'bg-indigo-50/90 border-indigo-400 text-indigo-950 font-medium shadow-xs ring-1 ring-indigo-300'
+                          : isDark
+                          ? 'bg-[#070c18] hover:bg-[#0f1730] border-slate-800 hover:border-cyan-500/40 text-slate-200'
+                          : 'bg-white hover:bg-stone-50 border-stone-200/90 text-slate-800'
+                      }`}
+                    >
+                      {/* Option Letter Circle */}
+                      <div
+                        className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl text-sm sm:text-base font-bold flex items-center justify-center shrink-0 mt-0.5 transition ${
+                          isSelected
+                            ? isDark
+                              ? 'bg-cyan-500 text-slate-950 font-bold'
+                              : 'bg-indigo-600 text-white shadow-2xs'
+                            : 'bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200 dark:border-slate-700'
+                        }`}
+                      >
+                        {option.key}
+                      </div>
+
+                      <div className="flex-1 text-base sm:text-[17px] leading-relaxed">
+                        <ReactMarkdown
+                          remarkPlugins={[remarkMath, remarkGfm]}
+                          rehypePlugins={KATEX_REHYPE_PLUGINS}
+                          components={markdownComponents}
+                        >
+                          {option.text_markdown}
+                        </ReactMarkdown>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
         </div>
       </div>
 
