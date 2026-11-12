@@ -95,6 +95,7 @@ function generateSummary() {
     'src/index.css': 'Tailwind CSS v4 base configuration & custom design utility classes',
     'src/types/material.ts': 'Core TypeScript interfaces: Material, WorkedExample, SvgVisualization, SubtestItem',
     'src/lib/contentLoader.ts': 'Dynamic/Preloaded content fetcher with 0ms preloaded fallback & drilling randomizer',
+    'src/lib/drillingRotationEngine.ts': 'Deterministic Stratified Rotation Engine: multi-subtest balancing, difficulty wave patterning, BPPP question type quotas, seen tracking, passage grouping',
     'src/lib/syllabusData.ts': 'UTBK Syllabus definition: 7 subtests (PU, PPU, PBM, PK, LBI, LBE, PM) with modules',
     'src/lib/smaSyllabusData.ts': 'SMA curriculum syllabus data (Matematika TL, Saintek, Soshum)',
     'src/data/syllabus.ts': 'Legacy / extended UTBK curriculum syllabus items',
@@ -142,6 +143,7 @@ function generateSummary() {
     'src/components/decorations/CosmicDecorations.tsx': 'Ambient stars and glowing cosmic nebula background (Dark mode)',
     'src/components/decorations/NatureDecorations.tsx': 'Botanical foliage ambient background (Light mode)',
     'scripts/copy_assets.mjs': 'Post-build script: mirrors dist assets, generates .nojekyll & 404.html for GitHub Pages',
+    'scripts/test_rotation_engine.mjs': 'Unit test suite verifying deterministic stratified rotation engine algorithms, validation, and quotas',
     'scripts/export_materials.mjs': 'Exports TS materials from modular pu/*.ts to JSON files in public & root content',
     'scripts/modularize_pu_materials.mjs': 'Modularization tool: splits monolithic material files into isolated subchapter files',
     'scripts/generate_summary.mjs': 'Auto-generates PROJECT_CONTEXT.md to keep codebase reference always up-to-date',
@@ -253,18 +255,38 @@ interface Material {
 }
 \`\`\`
 
-### Struktur \`WorkedExample\` (Soal Drilling)
+### Struktur \`WorkedExample\` (Soal Drilling Multi-Format)
 \`\`\`typescript
+type QuestionType =
+  | 'standard_mc'          // Pilihan Ganda 5 opsi A-E reguler
+  | 'statements_1234'      // PG Asosiatif (1), (2), (3), (4)
+  | 'data_sufficiency'     // Kecukupan data Pernyataan (1) & (2)
+  | 'mc_complex_table'     // PGK Tabel 2 Kolom (Benar/Salah)
+  | 'mc_complex_checkbox'  // PGK Multi-select (>1 jawaban benar)
+  | 'short_answer'         // Isian singkat numerik / kata baku
+  | string;
+
+interface ComplexStatementItem {
+  id: string;
+  statement_markdown: string;
+  is_true: boolean;
+}
+
 interface WorkedExample {
   example_id: string;                  // e.g. "pu-01-01-ex1"
   variation_name: string;              // e.g. "Variasi 1: Simpulan Proporsi Sampel"
   difficulty: 'easy' | 'medium' | 'hard';
-  question_type: 'standard_mc' | 'statements_1234' | 'data_sufficiency' | string;
+  question_type: QuestionType;
   context_markdown?: string | null;    // Teks wacana / stimulus soal
   svg_illustration?: SvgIllustration | null;
   question_markdown: string;           // Pertanyaan spesifik
-  options: { key: string; text_markdown: string }[]; // A, B, C, D, E
-  correct_answer: 'A' | 'B' | 'C' | 'D' | 'E';
+  options?: { key: string; text_markdown: string }[]; // A, B, C, D, E (opsional untuk non-MC)
+  correct_answer?: 'A' | 'B' | 'C' | 'D' | 'E' | string;
+  // Format baru BPPP: PGK & Isian Singkat
+  complex_statements?: ComplexStatementItem[]; // Baris pernyataan untuk tabel/checkbox
+  table_headers?: [string, string];            // Default: ['Benar', 'Salah']
+  short_answer_key?: string | number;          // Kunci isian angka / kata baku
+  passage_group_id?: string;                   // ID grup wacana bersama
   hint_markdown?: string;
   conceptual_solution_markdown: string; // Pembahasan mendalam
   quick_trick_markdown: string;         // Trik 15-30 detik eliminasi opsi
@@ -274,7 +296,48 @@ interface WorkedExample {
 
 ---
 
-## 5. Inventaris Subtes UTBK & Status Bank Soal
+## 5. Arsitektur Drilling & Deterministic Stratified Rotation Engine (\`src/lib/drillingRotationEngine.ts\`)
+
+Mesin perakitan sesi latihan soal menggunakan pendekatan **Stratified Rotation** deterministik untuk mereplikasi proporsi ujian asli UTBK-SNBT BPPP:
+
+### 1. Multi-Subtest & Subchapter Round-Robin Balancing
+- **Alokasi Kuota Proporsional:** Untuk $N$ total soal dari $k$ subtes terpilih, dialokasikan $\\lfloor N / k \\rfloor$ soal per subtes, dan sisa $N \\pmod k$ didistribusikan merata ke subtes pertama.
+- **Bucket Rotation Sub-bab:** Di dalam satu subtes, alokasi soal dirotasi merata ke seluruh \`chapter_num\` dan \`subchapter_num\` terpilih agar materi tidak menumpuk di satu topik saja.
+- **Variation Anti-Collision:** Dalam 1 sesi pengerjaan, tidak ada 2 soal dengan \`variation_name\` yang identik kecuali seluruh variasi unik di sub-bab tersebut telah terpilih.
+- **Passage Grouping:** Soal yang memiliki \`passage_group_id\` (atau stimulus wacana identik) dikelompokkan secara berurutan berdampingan (maksimal 2–3 soal per wacana) agar pengguna tidak membaca ulang stimulus yang sama secara terpisah-pisah.
+
+### 2. Filter & Wave Rotation Tingkat Kesulitan
+- **Strict Difficulty Filter:** Seluruh soal \`difficulty === 'easy'\` otomatis disaring (dibuang). Hanya soal berkategori \`'medium'\` (Sedang, target ~55%) dan \`'hard'\` (HOTS, target ~45%) yang digunakan.
+- **Pola Gelombang 5-Soal (Wave Patterning):** Urutan kesulitan dalam blok subtes mengikuti siklus:
+  \`[medium, medium, hard, medium, hard]\` (dengan fallback otomatis antar \`medium\` $\\leftrightarrow$ \`hard\` jika stok salah satu tingkat kesulitan habis).
+
+### 3. Matriks Proporsi Tipe Soal Resmi BPPP
+Sampling jenis soal menerapkan rasio pakem BPPP per subtes (dengan graceful fallback ke \`standard_mc\` jika tipe soal tertentu belum tersedia):
+- **PU & LBI:** 75% Pilihan Ganda (\`standard_mc\`), 25% PGK (\`mc_complex_table\` / \`mc_complex_checkbox\` / \`statements_1234\`), 0% Isian.
+- **PPU & LBE:** 85% Pilihan Ganda, 15% PGK, 0% Isian.
+- **PBM:** 80% Pilihan Ganda, 15% PGK, 5% Isian Singkat (\`short_answer\`).
+- **PK & PM:** 55% Pilihan Ganda, 25% PGK (\`statements_1234\` / \`data_sufficiency\` / \`mc_complex_table\`), 20% Isian Singkat (\`short_answer\`).
+- **Non-PG Interleaving:** Soal PGK dan Isian tidak ditumpuk di akhir sesi, melainkan disebar merata di sepanjang barisan soal.
+
+### 4. Pelacak Riwayat Soal (LocalStorage Seen Tracker)
+- **Key Storage:** \`utbk_seen_questions_v1\` menyimpan map \`Record<string, number>\` berisi frekuensi pengerjaan per \`example_id\`.
+- **Prioritas Unseen:** Soal dengan frekuensi \`seen_count\` terendah selalu diprioritaskan lebih dulu saat sesi dirakit.
+- **Manajemen Riwayat:** UI drilling menyediakan indikator real-time rasio *Unseen* vs *Seen* dan tombol **"Reset Riwayat Soal"** untuk mengosongkan histori.
+
+### 5. Mode Urutan Penyajian (Order Mode)
+- **🛡️ Blocking per Subtes (Simulasi Asli):** Soal dikelompokkan per subtes secara berurutan sesuai pakem lembar tes UTBK-SNBT resmi.
+- **🔀 Interleaved Round-Robin (Drill Campuran):** Soal dirotasi bergantian antar subtes secara round-robin untuk melatih ketangkasan peralihan konteks berpikir.
+
+### 6. Universal Answer Evaluator (\`isAnswerCorrect\`)
+Mengevaluasi kebenaran jawaban pengguna secara lintas format:
+- \`standard_mc\` / \`statements_1234\` / \`data_sufficiency\`: Kesesuaian kunci opsi A–E (case-insensitive).
+- \`short_answer\`: Pencocokan teks ter-normalisasi (\`trim().toLowerCase()\`) dan kesetaraan desimal numerik (misal: \`1,5\` ekuivalen dengan \`1.5\`).
+- \`mc_complex_table\`: Memvalidasi seluruh baris pernyataan terhadap kolom target (Benar/Salah).
+- \`mc_complex_checkbox\`: Memvalidasi kecocokan himpunan opsi terpilih dengan kunci multi-select.
+
+---
+
+## 6. Inventaris Subtes UTBK & Status Bank Soal
 
 ### 7 Subtes Resmi UTBK SNBT
 1. **PU (Penalaran Umum)**: Induktif, Deduktif, Kuantitatif $\\rightarrow$ *${puContent.subchapters} Sub-bab aktif, ${puContent.questions} Soal terdaftar*.
@@ -292,7 +355,7 @@ ${puContent.files.map(f => `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.ques
 
 ---
 
-## 6. Aturan Wajib Pengembangan untuk AI & Developer
+## 7. Aturan Wajib Pengembangan untuk AI & Developer
 
 1. **KaTeX & Notasi Matematika**:
    - Seluruh rumus wajib diapit tanda dollar tunggal \`$...$\`.
@@ -314,7 +377,7 @@ ${puContent.files.map(f => `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.ques
 
 ---
 
-## 7. Perintah Terminal Penting
+## 8. Perintah Terminal Penting
 
 | Perintah | Deskripsi |
 | :--- | :--- |
