@@ -1,0 +1,134 @@
+{
+  "kode_subbab": "pu-01-01",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 1: Penalaran Induktif",
+  "judul_subbab": "Generalisasi",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Survei terhadap 60 mahasiswa di Kantin Fakultas Teknik menunjukkan $90\\%$ menyukai kopi hitam tanpa gula. Apakah simpulan 'Mayoritas mahasiswa di universitas tersebut menyukai kopi hitam tanpa gula' bernilai pasti benar?",
+      "opsi_cepat": [
+        "Pasti Benar",
+        "Mungkin Benar (Belum Tentu)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Sampel Kantin Fakultas Teknik belum tentu mewakili mahasiswa fakultas lain di seluruh universitas. Dalam generalisasi induktif UTBK, lompatan dari sampel terbatas ke populasi luas hanya menghasilkan peluang kebenaran (Mungkin Benar), bukan kepastian mutlak."
+    },
+    "konsep_inti_markdown": "**Generalisasi induktif** menarik simpulan umum berdasarkan sejumlah fakta atau sampel khusus. Karena premis tidak mencakup seluruh anggota populasi, kebenarannya bersifat **probabilistik**.\n\n* **Alur Logika:** $\\text{Fakta Spesifik } (S_1, S_2, \\dots, S_n) \\rightarrow \\text{Asumsi Representatif} \\rightarrow \\text{Simpulan Umum}$\n* **Syarat Sahih:** Ukuran sampel memadai, dipilih secara acak (tidak bias), dan bebas bukti penyangkal (*counter-example*).\n* **Skala Kepastian:** Simpulan generalisasi yang valid maksimal berstatus **Mungkin Benar**, tidak pernah **Pasti Benar**.",
+    "radar_jebakan_utbk": [
+      "Menganggap simpulan hasil generalisasi dari sampel terbatas berstatus Pasti Benar pada soal 5 Skala Kepastian.",
+      "Melompatkan batas objek dan kuantor dari 'sebagian sampel di lokasi X' menjadi 'semua populasi di seluruh wilayah'."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Simpulan Proporsi Sampel ke Populasi (Generalisasi Statistik)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Berdasarkan survei Dinas Perhubungan terhadap 400 pengguna kereta komuter di Stasiun Sudirman, sebanyak $78\\%$ responden memilih kereta karena waktu tempuh lebih pasti dibandingkan kendaraan pribadi. Peneliti menyimpulkan bahwa sebagian besar komuter di wilayah Jabodetabek menggunakan kereta demi kepastian waktu tempuh.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik ($78\\%$ dari 400 sampel pengguna kereta di Stasiun Sudirman mengutamakan kepastian waktu tempuh) $\\rightarrow$ Asumsi Jembatan (400 responden di satu stasiun cukup mewakili seluruh populasi komuter Jabodetabek) $\\rightarrow$ Simpulan (Sebagian besar komuter Jabodetabek memilih kereta karena kepastian waktu).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| $78\\%$ dari 400 sampel memilih kepastian waktu | Semua komuter Jabodetabek mengutamakan ketepatan waktu |\n| Pengamatan dilakukan pada komuter kereta | Pengguna bus dan ojek daring memiliki alasan serupa |\n\n**Uji Kepastian:** Padankan proporsi kuantitatif ($78\\% > 50\\% = \\text{sebagian besar}$) dan batasi objek pada populasi sejenis. Karena sampel diambil dari satu stasiun tanpa jaminan keterwakilan seluruh wilayah, simpulan ini berstatus **Mungkin Benar**. Sebaliknya, klaim mengenai *semua* komuter atau pengguna moda transportasi lain melampaui bukti sehingga berstatus **Mungkin Salah** atau **Tidak Relevan**.",
+      "kunci_pembeda": "Memproyeksikan persentase atau proporsi dari kelompok sampel terbatas menuju keseluruhan populasi target yang sejenis.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Generalisasi Tren Data Kualitatif Lintas Waktu/Kelompok",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Selama empat kuartal berturut-turut, perusahaan rintisan X, Y, dan Z menerapkan sistem kerja empat hari seminggu dan mencatat penurunan tingkat pengunduran diri karyawan serta peningkatan kepuasan kerja. Analis ketenagakerjaan menyimpulkan bahwa skema kerja empat hari seminggu efektif menjaga retensi talenta di sektor perusahaan rintisan.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Perusahaan rintisan X, Y, dan Z mengalami penurunan *turnover* dan kenaikan kepuasan kerja selama empat kuartal lewat skema empat hari kerja) $\\rightarrow$ Asumsi Jembatan (Karakteristik operasional X, Y, dan Z serupa dengan perusahaan rintisan lain dalam jangka panjang) $\\rightarrow$ Simpulan (Skema empat hari kerja efektif menjaga retensi talenta perusahaan rintisan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Teramati pada 3 perusahaan selama 4 kuartal | Berlaku permanen bagi seluruh perusahaan di semua sektor |\n| Pengunduran diri turun dan kepuasan naik | Keuntungan bersih dan omzet perusahaan pasti meningkat |\n\n**Uji Kepastian:** Evaluasi konsistensi pola antar-kelompok dan rentang waktu pengamatan tanpa menambah variabel baru. Simpulan mengenai efektivitas retensi talenta pada sektor yang sama berstatus **Mungkin Benar**. Klaim bahwa kebijakan ini pasti menaikkan keuntungan finansial perusahaan bernilai **Tidak Relevan** karena tidak tercantum dalam premis observasi.",
+      "kunci_pembeda": "Menarik kaidah umum dari pola perubahan kualitatif yang konsisten lintas beberapa entitas atau periode waktu.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Identifikasi Cacat Generalisasi Terburu-buru (Hasty Generalization)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Seorang pembeli memesan tiga kotak buah mangga dari penjual daring K dan menemukan dua buah di antaranya memar pada lapisan paling atas. Pembeli tersebut langsung memberikan ulasan bahwa seluruh buah mangga yang dijual toko K berkualitas buruk dan tidak layak konsumsi.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Ditemukan 2 buah mangga memar pada lapisan atas dari pesanan 3 kotak) $\\rightarrow$ Asumsi Jembatan (Kondisi dua buah teratas mewakili seluruh stok dagangan penjual K) $\\rightarrow$ Simpulan Cacat (Seluruh mangga di toko K berkualitas buruk dan tidak layak konsumsi).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Hanya 2 buah memar di bagian atas kemasan | Seluruh stok mangga penjual K rusak total |\n| Buah mengalami memar fisik kemasan | Semua buah busuk dan tidak layak konsumsi |\n\n**Uji Kepastian:** Identifikasi cacat *Hasty Generalization* melalui ukuran sampel yang ekstrem kecil ($n = 2$) dan kondisi pengamatan yang bias (lapisan teratas rawan benturan pengiriman). Karena simpulan menyamaratakan seluruh populasi secara mutlak dari bukti mikro, klaim *seluruh buah berkualitas buruk* berstatus **Mungkin Salah**, dan berubah menjadi **Pasti Salah** apabila terdapat bukti satu buah saja yang segar.",
+      "kunci_pembeda": "Mendeteksi kesesatan logika akibat menarik kesimpulan mutlak dari ukuran sampel yang sangat minim atau bias.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Prediksi Kemungkinan (Paling Mungkin Benar) dari Pola Kasus Spesifik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Catatan Badan Meteorologi menunjukkan bahwa setiap kali suhu permukaan laut di perairan selatan meningkat lebih dari $2^{\\circ}\\text{C}$ disertai angin baratan kencang, wilayah pesisir selalu dilanda gelombang tinggi dalam dua hari berikutnya. Hari ini terpantau kenaikan suhu laut $2,5^{\\circ}\\text{C}$ dan angin baratan bertiup kencang.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pola historis: kenaikan suhu laut $>2^{\\circ}\\text{C}$ dan angin baratan kencang $\\rightarrow$ gelombang tinggi dalam 2 hari; kondisi hari ini memenuhi kedua syarat tersebut) $\\rightarrow$ Asumsi Jembatan (Dinamika atmosfer dan perairan tetap bekerja mengikuti pola preseden masa lalu) $\\rightarrow$ Simpulan Prediktif (Wilayah pesisir paling mungkin dilanda gelombang tinggi dalam dua hari ke depan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Suhu naik $2,5^{\\circ}\\text{C}$ dan angin baratan kencang | Gelombang tinggi pasti menenggelamkan seluruh pelabuhan |\n| Preseden memicu gelombang tinggi dalam 2 hari | Ketinggian gelombang dipastikan melampaui 5 meter |\n\n**Uji Kepastian:** Proyeksi kejadian masa depan dalam penalaran induktif tidak pernah bersifat mutlak sehingga opsi **Pasti Benar** otomatis gugur. Pilih prediksi yang mempertahankan variabel akibat secara persis tanpa menambah rincian ekstrem baru, dengan status kebenaran **Mungkin Benar** (*Paling Mungkin Benar*).",
+      "kunci_pembeda": "Memproyeksikan peristiwa mendatang berdasarkan berulangnya kombinasi kondisi syarat yang identik di masa lampau.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pembatasan Kuantor Simpulan (Sebagian vs Semua) Berdasarkan Bukti Empiris",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Laporan evaluasi Dinas Pendidikan terhadap 50 sekolah menengah di Kabupaten M mencatat bahwa 38 sekolah telah menerapkan laboratorium virtual berbasis daring, sedangkan 12 sekolah lainnya masih memakai modul cetak. Seluruh sekolah yang menerapkan laboratorium virtual terbukti mengalami peningkatan nilai rata-rata praktikum.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (38 dari 50 sekolah memakai laboratorium virtual dan semuanya mengalami kenaikan nilai praktikum; 12 sekolah memakai modul cetak) $\\rightarrow$ Asumsi Jembatan (Data evaluasi mencerminkan capaian aktual seluruh sampel sekolah) $\\rightarrow$ Simpulan Berkuantor (Sebagian sekolah menengah di Kabupaten M mengalami peningkatan nilai praktikum).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| 38 sekolah virtual naik nilai praktikumnya | Semua sekolah di Kabupaten M naik nilai praktikumnya |\n| 12 sekolah masih menggunakan modul cetak | Sekolah bermodul cetak pasti turun nilai praktikumnya |\n\n**Uji Kepastian:** Sesuaikan kuantor simpulan dengan cakupan bukti empiris: bukti sebagian ($38/50$) hanya mengizinkan kuantor **sebagian/beberapa**, tidak boleh **semua/seluruh**. Pernyataan *'Semua sekolah mengalami kenaikan nilai'* bernilai **Pasti Salah** apabila 12 sekolah sisanya diketahui tidak naik, sedangkan klaim *'Sekolah modul cetak gagal meningkat'* bernilai **Mungkin Benar** karena belum diuji dalam premis.",
+      "kunci_pembeda": "Menjaga ketepatan kuantor logika agar simpulan tidak melampaui proporsi bukti dari 'sebagian' menjadi 'semua'.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan survei lembaga riset transportasi terhadap 600 pekerja komuter di Jakarta Pusat, sebanyak $84\\%$ responden menyatakan beralih menggunakan kereta rel listrik karena tarif perjalanan lebih terjangkau, sedangkan sisanya memilih kereta karena menghindari kemacetan jalan raya. Manakah simpulan generalisasi yang PALING MUNGKIN BENAR berdasarkan data tersebut?",
+      "opsi_jawaban": [
+        "A. Seluruh pekerja komuter di wilayah Jakarta Pusat beralih menggunakan kereta rel listrik karena tarif murah.",
+        "B. Sebagian besar pekerja komuter di Jakarta Pusat yang menggunakan kereta rel listrik mempertimbangkan keterjangkauan tarif.",
+        "C. Pekerja komuter di seluruh kota besar Indonesia memilih kereta rel listrik terutama karena faktor biaya perjalanan.",
+        "D. Pekerja yang memilih kereta karena menghindari kemacetan pasti tidak mempermasalahkan mahalnya tarif perjalanan.",
+        "E. Penurunan tarif kereta rel listrik akan membuat seluruh pengguna kendaraan pribadi di Jakarta Pusat beralih ke kereta."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Proporsi $84\\%$ ($>50\\%$) pada sampel pekerja komuter Jakarta Pusat diterjemahkan secara akurat dengan kuantor **sebagian besar** pada populasi target yang sama (**Opsi B** benar). **Opsi A** dan **E** salah karena menggunakan kuantor mutlak *seluruh*. **Opsi C** melakukan lompatan wilayah secara berlebihan ke *seluruh kota besar Indonesia*, sedangkan **Opsi D** menambahkan asumsi eksklusivitas yang tidak tercantum dalam premis.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Data Dinas Pertanian selama lima tahun terakhir menunjukkan bahwa setiap kali curah hujan bulanan di Kecamatan Sukatani melampaui $350\\text{ mm}$ disertai kelembapan udara di atas $85\\%$, tanaman cabai di wilayah tersebut selalu terserang jamur antraknosa dalam kurun waktu sepuluh hari. Pada awal bulan ini, curah hujan tercatat mencapai $380\\text{ mm}$ dengan kelembapan udara $88\\%$. Berdasarkan pola generalisasi tersebut, kejadian yang PALING MUNGKIN terjadi adalah ....",
+      "opsi_jawaban": [
+        "A. seluruh hasil panen cabai di Kecamatan Sukatani dipastikan gagal total pada bulan ini",
+        "B. tanaman cabai di seluruh kabupaten akan terserang jamur antraknosa dalam waktu sepuluh hari",
+        "C. tanaman cabai di Kecamatan Sukatani berpeluang tinggi terserang jamur antraknosa dalam sepuluh hari ke depan",
+        "D. petani cabai di Kecamatan Sukatani pasti mengalami kerugian finansial lebih besar dibandingkan tahun lalu",
+        "E. serangan jamur antraknosa pada tanaman cabai di Kecamatan Sukatani tidak akan terjadi jika suhu udara tetap hangat"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Kondisi awal bulan ini ($380\\text{ mm} > 350\\text{ mm}$ dan kelembapan $88\\% > 85\\%$) memenuhi kedua syarat preseden historis di Kecamatan Sukatani. Dalam penalaran induktif prediktif, simpulan yang tepat mempertahankan cakupan wilayah serta variabel akibat secara probabilistik (**Opsi C** benar). **Opsi A** dan **D** keliru karena bernada mutlak (*dipastikan*, *pasti*) dan menambah klaim baru, **Opsi B** memperluas wilayah secara tidak sah ke *seluruh kabupaten*, sedangkan **Opsi E** memasukkan variabel suhu di luar premis.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Laporan audit kualitas terhadap 40 gerai kopi waralaba Z mencatat bahwa 36 gerai memenuhi seluruh standar kebersihan alat seduh, sedangkan 4 gerai lainnya mendapat catatan perbaikan karena keterlambatan sanitasi harian. Berdasarkan informasi tersebut, pernyataan: *'Seluruh gerai kopi waralaba Z telah memenuhi standar kebersihan alat seduh tanpa pengecualian'* bernilai ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Premis menyebutkan secara eksplisit bahwa dari 40 gerai yang diaudit, terdapat **4 gerai yang mendapat catatan perbaikan** karena keterlambatan sanitasi harian. Oleh karena itu, generalisasi berkuantor mutlak *'Seluruh gerai kopi waralaba Z telah memenuhi standar kebersihan... tanpa pengecualian'* bertentangan langsung dengan bukti empiris 4 gerai penyangkal tersebut sehingga berstatus **Pasti Salah** (**Opsi C**).",
+      "visual": null
+    }
+  ]
+}

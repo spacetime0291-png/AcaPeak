@@ -1,0 +1,126 @@
+{
+  "kode_subbab": "lbi-01-01",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 1: Pemahaman Informasi Eksplisit",
+  "judul_subbab": "Pencarian Fakta dan Data Langsung (Scanning & Skimming)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Teks menyebutkan bahwa aplikasi arang hayati menurunkan kadar kadmium terlarut hingga 42,5% dan mencegah akar menyerap racun. Apakah pernyataan 'Arang hayati menghilangkan 42,5% total logam berat dari dalam tanah' bernilai BENAR?",
+      "opsi_cepat": [
+        "Benar, sesuai angka penurunan 42,5%",
+        "Salah, logam tidak hilang melainkan diimobilisasi"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kata 'menghilangkan total massa' bertentangan dengan kalimat akhir teks yang menyatakan logam hanya diimobilisasi (dikunci), bukan dimusnahkan. Peserta UTBK sering terjebak mencocokkan angka tanpa mengecek predikat tindakannya."
+    },
+    "konsep_inti_markdown": "**Strategi Eksekusi Pemahaman Eksplisit:**\n- **Skimming (15–20 detik):** Pindai kalimat pertama tiap paragraf untuk memetakan struktur ide (masalah $\\rightarrow$ mekanisme $\\rightarrow$ data hasil).\n- **Scanning Kata Kunci:** Cari kata benda spesifik, angka, satuan, atau konjungsi kausal/kronologis dari soal langsung ke paragraf target.\n- **Uji Kesetaraan Semantik:** Opsi benar adalah **parafrasa akurat** dari teks, bukan sekadar salinan kata yang diubah maknanya.",
+    "radar_jebakan_utbk": [
+      "Distorsi Predikat & Kuantor: Mengganti kata 'menurunkan ketersediaan terlarut' menjadi 'menghilangkan total massa' atau menambahkan kata ekstrem ('selalu', 'satu-satunya').",
+      "Tukar-Pasang Atribut Klasifikasi: Menukar ciri kategori A ke kategori B (misalnya menukar fungsi suhu rendah dan suhu tinggi)."
+    ],
+    "stimulus_utama_bersama": "Pencemaran logam berat seperti kadmium (Cd) dan timbal (Pb) pada lahan pertanian intensif akibat penggunaan pupuk fosfat anorganik jangka panjang mengancam keamanan pangan nasional. Untuk mengatasi degradasi ini, peneliti dari Balai Penelitian Tanah mengembangkan aplikasi biochar atau arang hayati berbasis limbah tempurung kelapa. Secara teknis, biochar didefinisikan sebagai material padat kaya karbon yang dihasilkan melalui proses dekomposisi termal biomassa pada kondisi minim atau tanpa oksigen. Berdasarkan suhu pirolisisnya, biochar diklasifikasikan menjadi dua kategori utama: biochar suhu rendah (300–450 °C) yang memiliki gugus fungsi permukaan melimpah untuk mengikat kation logam, serta biochar suhu tinggi (500–700 °C) yang unggul dalam luas permukaan spesifik dan stabilitas struktur pori jangka panjang.\n\nMekanisme remediasi tanah oleh biochar berlangsung melalui tahapan yang sistematis. Pertama, setelah diaplikasikan dan dicampur merata pada lapisan olah tanah sedalam 0–20 sentimeter, struktur mikropori biochar segera menyerap kelembapan tanah dan meningkatkan kapasitas tukar kation (KTK). Kedua, gugus karboksil dan hidroksil bermuatan negatif pada permukaan biochar berinteraksi secara elektrostatis dengan ion logam berat bermuatan positif. Ketiga, proses presipitasi kimiawi mengubah bentuk ion logam bebas yang beracun menjadi senyawa mineral stabil yang tidak larut air, sehingga akar tanaman tidak mampu menyerapnya.\n\nUji lapangan selama dua musim tanam di lahan sawah tercemar menunjukkan hasil signifikan. Pemberian dosis biochar sebesar 10 ton per hektare menurunkan ketersediaan kadmium terlarut dalam tanah hingga 42,5 persen dibandingkan petak kontrol tanpa perlakuan. Sementara itu, akumulasi timbal pada bulir gabah padi berkurang sebesar 31,8 persen, disertai peningkatan pH tanah masam dari 4,8 menjadi 6,1. Meski efektif menekan serapan racun logam berat, para peneliti mencatat bahwa biochar tidak menghancurkan atau menghilangkan total massa logam berat dari dalam tanah, melainkan hanya mengimobilisasinya agar tidak masuk ke rantai makanan.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifikasi Penyebab, Pelaku, Waktu, atau Mekanisme Spesifik yang Tersurat di Dalam Wacana Sains/Sosial",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1 & 2: Penyebab pencemaran logam berat serta mekanisme pengikatan ion logam oleh gugus fungsi biochar.",
+      "bedah_pola_markdown": "**Teknik Scanning:**\n1. Kunci kata tanya soal: *penyebab* (cari penanda *akibat*, *karena*), *pelaku* (subjek aktif), atau *mekanisme* (kata kerja proses).\n2. Pindai Paragraf 1 kalimat pertama untuk penyebab: *\"akibat penggunaan pupuk fosfat anorganik jangka panjang\"*.\n3. Pindai Paragraf 2 untuk mekanisme: gugus karboksil dan hidroksil bermuatan negatif berinteraksi secara elektrostatis dengan ion logam bermuatan positif.\n\n**Parafrasa ke Opsi Benar:**\n- *Teks:* Interaksi elektrostatis gugus bermuatan negatif dengan ion logam bermuatan positif.\n- *Opsi Benar:* Gaya tarik-menarik muatan listrik yang berlawanan antara permukaan arang hayati dan ion logam.\n\n**Ciri Opsi Jebakan:**\n- Membalikkan arah mekanisme (menyebut gugus biochar bermuatan positif).\n- Mencampur penyebab dengan dampak (menyebut penurunan pH tanah sebagai penyebab pencemaran).",
+      "kunci_pembeda": "Fokus variasi ini adalah memetakan relasi agen, pemicu, dan cara kerja secara presisi tanpa tertukar antara sebab dan akibat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Pencarian Definisi atau Kriteria Klasifikasi Konsep Berdasarkan Penjelasan Eksplisit Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1: Definisi teknis biochar serta pembagian dua kategori utama berdasarkan suhu pirolisis.",
+      "bedah_pola_markdown": "**Teknik Scanning:**\n1. Cari kopula definisi (*didefinisikan sebagai*, *merupakan*) dan penanda klasifikasi (*diklasifikasikan menjadi*, *berdasarkan*). Pisahkan syarat definisi umum dari ciri khusus tiap subkategori.\n2. Pada Paragraf 1, dasar klasifikasi adalah **suhu pirolisis**: suhu rendah ($300\\text{--}450\\text{ }^\\circ\\text{C}$) unggul pada gugus fungsi permukaan, sedangkan suhu tinggi ($500\\text{--}700\\text{ }^\\circ\\text{C}$) unggul pada luas permukaan spesifik dan stabilitas pori.\n\n**Parafrasa ke Opsi Benar:**\n- *Teks:* Dekomposisi termal biomassa pada kondisi minim atau tanpa oksigen.\n- *Opsi Benar:* Penguraian bahan organik melalui pemanasan dengan pasokan oksigen yang sangat terbatas atau nihil.\n\n**Ciri Opsi Jebakan:**\n- **Tukar-silang kriteria:** Mengklaim *biochar* suhu rendah memiliki stabilitas struktur pori lebih unggul.\n- **Distorsi syarat mutlak:** Menyebutkan pirolisis wajib dilakukan dengan aliran oksigen tinggi (berlawanan dengan teks).",
+      "kunci_pembeda": "Fokus variasi ini adalah mengunci batasan istilah dan mencocokkan dasar pengelompokan dengan atribut masing-masing kelas.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penelusuran Kronologi Peristiwa atau Tahapan Proses dalam Teks Eksplanasi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 2: Urutan tiga tahapan remediasi tanah sejak pencampuran biochar hingga presipitasi kimiawi.",
+      "bedah_pola_markdown": "**Teknik Scanning:**\n1. Pindai penanda urutan eksplisit (*Pertama*, *Kedua*, *Ketiga*, *setelah*, *sehingga*) di Paragraf 2.\n2. Petakan rantai proses: (1) pencampuran di kedalaman $0\\text{--}20\\text{ cm}$ meningkatkan kapasitas tukar kation $\\rightarrow$ (2) interaksi elektrostatis gugus negatif dengan ion logam $\\rightarrow$ (3) presipitasi kimiawi membentuk senyawa mineral stabil tak larut air.\n\n**Parafrasa ke Opsi Benar:**\n- *Teks:* Presipitasi kimiawi mengubah ion logam bebas menjadi senyawa mineral stabil yang tidak larut air.\n- *Opsi Benar:* Pengendapan kimiawi terjadi setelah pengikatan elektrostatis untuk mengunci logam agar tidak terserap akar.\n\n**Ciri Opsi Jebakan:**\n- **Inversi urutan:** Menyebutkan presipitasi kimiawi berlangsung sebelum *biochar* dicampurkan ke lapisan olah tanah.\n- **Lompatan kausal:** Mengklaim peningkatan kelembapan tanah langsung mengubah logam menjadi mineral tanpa melalui interaksi elektrostatis.",
+      "kunci_pembeda": "Fokus variasi ini adalah menjaga integritas urutan langkah sebelum-sesudah dalam alur eksplanasi ilmiah.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Ekstraksi Data Kuantitatif/Kualitatif Spesifik yang Disebutkan dalam Teks Panjang",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 3: Capaian kuantitatif uji lapangan (dosis, persentase penurunan logam, pH) serta batasan kualitatif kinerja biochar.",
+      "bedah_pola_markdown": "**Teknik Scanning:**\n1. Pindai angka dan satuan spesifik di Paragraf 3: dosis $10\\text{ ton/hektare}$, kadmium terlarut turun $42,5\\%$, timbal pada gabah turun $31,8\\%$, dan pH naik dari $4,8$ menjadi $6,1$.\n2. Perhatikan konjungsi pertentangan (*Meski*, *melainkan*) pada kalimat terakhir sebagai batasan kualitatif penting: logam berat tidak hilang, hanya diimobilisasi.\n\n**Parafrasa ke Opsi Benar:**\n- *Teks:* Peningkatan pH tanah masam dari $4,8$ menjadi $6,1$.\n- *Opsi Benar:* Tingkat kemasaman tanah berkurang setelah aplikasi arang hayati dengan kenaikan indeks pH sebesar $1,3$ poin.\n\n**Ciri Opsi Jebakan:**\n- **Tukar variabel angka:** Menempelkan angka $42,5\\%$ pada penurunan timbal (seharusnya kadmium).\n- **Abaikan klausa pengecualian:** Menyimpulkan total massa logam berat di sawah berkurang $42,5\\%$.",
+      "kunci_pembeda": "Fokus variasi ini adalah memverifikasi kecocokan angka dengan subjeknya sekaligus membaca syarat pengecualian kualitatif.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan bacaan tersebut, manakah pernyataan yang PALING TEPAT mengenai karakteristik *biochar* dan mekanisme kerjanya?",
+      "opsi_jawaban": [
+        "A. Biochar yang diproduksi pada suhu 350 °C memiliki stabilitas struktur pori jangka panjang yang lebih unggul dibandingkan biochar suhu tinggi.",
+        "B. Pencemaran kadmium dan timbal pada lahan pertanian intensif disebabkan oleh aplikasi pupuk organik secara berlebihan dalam jangka panjang.",
+        "C. Pengikatan ion logam berat terjadi karena permukaan biochar memiliki gugus karboksil dan hidroksil yang bermuatan listrik negatif.",
+        "D. Proses dekomposisi termal biomassa dalam pembuatan biochar memerlukan pasokan oksigen tinggi agar menghasilkan karbon padat.",
+        "E. Senyawa mineral hasil presipitasi kimiawi bersifat mudah larut dalam air sehingga mencegah ion logam masuk ke jaringan akar tanaman."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Paragraf 2 kalimat ketiga menyatakan secara eksplisit bahwa gugus karboksil dan hidroksil bermuatan negatif pada permukaan *biochar* berinteraksi secara elektrostatis dengan ion logam berat bermuatan positif. **Analisis pengecoh:**\n- **A salah:** Stabilitas pori adalah keunggulan suhu tinggi ($500\\text{--}700\\text{ }^\\circ\\text{C}$), bukan $350\\text{ }^\\circ\\text{C}$.\n- **B salah:** Teks menyebut pupuk fosfat *anorganik*, bukan organik.\n- **D salah:** Pembuatan dilakukan pada kondisi minim/tanpa oksigen.\n- **E salah:** Senyawa mineral hasil presipitasi bersifat *tidak larut air*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Tentukan apakah setiap pernyataan berikut **BENAR** atau **SALAH** berdasarkan informasi eksplisit dalam bacaan!\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Pencampuran *biochar* pada kedalaman $0\\text{--}20\\text{ cm}$ dilakukan setelah proses presipitasi kimiawi mengubah ion logam menjadi mineral stabil. | | |\n| 2 | Aplikasi *biochar* dosis $10\\text{ ton/hektare}$ terbukti menurunkan akumulasi timbal pada bulir gabah padi lebih dari $30\\%$. | | |\n| 3 | Penggunaan *biochar* selama dua musim tanam berhasil menghilangkan total massa kadmium dan timbal dari lahan sawah tercemar. | | |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah",
+        "B. Salah - Benar - Benar",
+        "C. Salah - Benar - Salah",
+        "D. Benar - Salah - Salah",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "- **Pernyataan 1 (Salah):** Inversi urutan proses. Pencampuran di kedalaman $0\\text{--}20\\text{ cm}$ adalah tahap **pertama**, sedangkan presipitasi kimiawi adalah tahap **ketiga**.\n- **Pernyataan 2 (Benar):** Paragraf 3 mencatat akumulasi timbal pada bulir gabah berkurang sebesar $31,8\\%$ (lebih dari $30\\%$) pada dosis $10\\text{ ton/hektare}$.\n- **Pernyataan 3 (Salah):** Kalimat terakhir menegaskan *biochar* **tidak menghancurkan atau menghilangkan** total massa logam berat, melainkan hanya mengimobilisasinya.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Apabila petani menerapkan protokol uji lapangan Balai Penelitian Tanah sesuai bacaan di atas, kondisi mana yang secara eksplisit terjadi pada lahan sawah tersebut?",
+      "opsi_jawaban": [
+        "A. Kadar kadmium terlarut turun sebesar 31,8% sehingga akar tanaman tidak lagi menyerap unsur hara dari lapisan olah tanah.",
+        "B. Kapasitas tukar kation tanah meningkat setelah biochar dicampurkan merata pada lapisan olah tanah sedalam 0–20 sentimeter.",
+        "C. Derajat keasaman tanah meningkat dari pH 6,1 menjadi 4,8 akibat pelepasan gugus karboksil dari struktur mikropori biochar.",
+        "D. Seluruh ion logam berat dalam tanah langsung mengalami presipitasi kimiawi tanpa melalui tahap interaksi elektrostatis.",
+        "E. Penurunan kadar timbal pada bulir gabah padi mencapai 42,5% setelah perlakuan dilakukan selama satu musim tanam."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Paragraf 2 kalimat kedua menyatakan secara langsung bahwa setelah *biochar* dicampur merata pada lapisan olah tanah sedalam $0\\text{--}20\\text{ cm}$, struktur mikroporinya menyerap kelembapan dan meningkatkan kapasitas tukar kation (KTK). **Analisis pengecoh:**\n- **A & E salah:** Angka $42,5\\%$ adalah untuk kadmium dan $31,8\\%$ untuk timbal (tertukar), serta uji berlangsung dua musim tanam.\n- **C salah:** Angka pH terbalik (seharusnya naik dari $4,8$ menjadi $6,1$).\n- **D salah:** Presipitasi kimiawi terjadi pada tahap ketiga setelah interaksi elektrostatis.",
+      "visual": null
+    }
+  ]
+}

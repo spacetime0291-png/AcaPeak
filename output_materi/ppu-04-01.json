@@ -1,0 +1,123 @@
+{
+  "kode_subbab": "ppu-04-01",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 4: Wacana dan Pragmatik",
+  "judul_subbab": "Ide Pokok dan Gagasan Pendukung",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam paragraf yang diawali data rincian survei lalu diakhiri pernyataan umum yang diawali konjungsi 'dengan demikian', di manakah letak gagasan utamanya?",
+      "opsi_cepat": [
+        "Di kalimat pertama karena memuat angka rincian",
+        "Di kalimat terakhir sebagai simpulan menyeluruh"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Angka dan data statistik bersifat khusus sehingga hanya berfungsi sebagai gagasan pendukung. Konjungsi penyimpul seperti 'dengan demikian' atau 'oleh karena itu' di akhir paragraf menandai gagasan utama induktif."
+    },
+    "konsep_inti_markdown": "**Ide pokok dan gagasan pendukung** membedah hierarki informasi wacana baku sesuai kaidah EYD V dan KBBI VI:\n\n* **Gagasan Utama:** Inti pembicaraan yang bersifat umum dan menaungi seluruh kalimat dalam paragraf.\n* **Gagasan Pendukung:** Rincian data, contoh, atau penjelasan khusus yang memperjelas kalimat utama.\n* **Kepaduan Lintas Paragraf:** Topik utama merangkum irisan gagasan dua paragraf berurutan, sementara kata transisi menandai arah gagasan sebelumnya atau berikutnya.",
+    "radar_jebakan_utbk": [
+      "Terkecoh memilih kalimat pertama sebagai gagasan utama padahal hanya berisi contoh kasus atau data statistik khusus, sementara simpulannya berada di akhir paragraf.",
+      "Memilih pernyataan yang terlalu sempit (hanya mewakili satu paragraf) atau terlalu luas (melampaui cakupan teks) saat merangkum topik utama dua paragraf."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Penentuan Gagasan Utama Paragraf Deduktif, Induktif, dan Campuran",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "(1) Penurunan muka tanah di pesisir utara Jawa terus meningkat akibat eksploitasi air tanah berlebihan. (2) Di beberapa titik industri, laju penurunan mencapai sepuluh sentimeter per tahun. (3) Oleh karena itu, pengendalian pengambilan air tanah menjadi langkah mendesak.",
+      "bedah_pola_markdown": "**Bedah Pola Letak Gagasan & Fungsi:**\nPerhatikan susunan inti kalimat penegas dalam struktur fungsi: [K] *Oleh karena itu*, [S] *pengendalian pengambilan air tanah* + [P] *menjadi* + [Pel] *langkah mendesak*. Kalimat (1) memperkenalkan masalah umum, kalimat (2) menyajikan rincian data khusus, dan kalimat (3) menegaskan kembali inti solusi di akhir sehingga membentuk pola **campuran** sesuai kaidah kepaduan EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengambil kalimat (2) (*data sepuluh sentimeter*) sebagai gagasan utama. | Mengambil inti [S]-[P] kalimat umum pembuka dan penegas sebagai gagasan utama. |\n| Penulisan konjungsi antarkalimat tanpa koma: *Oleh karena itu pengendalian...* | Penulisan konjungsi baku berkoma: *Oleh karena itu, pengendalian...* |\n\n**Strategi Eksekusi:** Periksa kalimat awal dan akhir terlebih dahulu; jika akhir paragraf memuat penanda simpulan (*dengan demikian, jadi*), gabungkan inti keduanya sebagai gagasan utama.",
+      "kunci_pembeda": "Mengidentifikasi posisi pernyataan paling umum—di awal (deduktif), akhir (induktif), atau keduanya (campuran)—yang dinaungi oleh seluruh rincian.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Pemisahan Kalimat Utama dari Kalimat Penjelas atau Ilustrasi Spesifik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "(1) Pemanfaatan kecerdasan buatan mempercepat deteksi dini penyakit jantung. (2) Sebagai contoh, algoritma pemindai elektrokardiogram mampu mengenali gangguan irama jantung dalam hitungan detik. (3) Teknologi ini juga menekan kesalahan diagnosis hingga dua puluh persen.",
+      "bedah_pola_markdown": "**Bedah Pola Hierarki & Fungsi:**\nPerhatikan struktur fungsi kalimat utama (1): [S] *Pemanfaatan kecerdasan buatan* + [P] *mempercepat* + [O] *deteksi dini penyakit jantung*. Sebaliknya, kalimat (2) berfungsi sebagai ilustrasi spesifik yang ditandai frasa transisi *sebagai contoh*, sementara kalimat (3) menambahkan bukti kuantitatif. Pemisahan gagasan utama wajib menjaga keutuhan inti [S]-[P]-[O] serta ejaan bilangan baku sesuai EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Memilih ilustrasi *pemindai elektrokardiogram* sebagai kalimat utama paragraf. | Memilih pernyataan payung pada kalimat (1) sebagai kalimat utama. |\n| Penulisan frasa contoh tanpa koma: *Sebagai contoh algoritma pemindai...* | Penulisan frasa transisi berkoma baku: *Sebagai contoh, algoritma pemindai...* |\n\n**Strategi Eksekusi:** Eliminasi kalimat yang memuat angka spesifik, nama tempat, atau penanda ilustrasi (*misalnya, yakni*), lalu ambil kalimat berlingkup paling luas.",
+      "kunci_pembeda": "Memisahkan pernyataan payung berlingkup umum dari kalimat rincian yang ditandai angka statistik, contoh kasus, atau kata rujukan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penentuan Topik Utama yang Merangkum Dua Paragraf Berurutan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Paragraf 1: Program penghijauan bantaran sungai mengurangi risiko banjir bandang saat curah hujan tinggi. Paragraf 2: Selain mencegah banjir, ruang terbuka hijau di sepanjang sungai juga menurunkan suhu udara perkotaan secara signifikan.",
+      "bedah_pola_markdown": "**Bedah Pola Sintesis Lintas Paragraf & Fungsi:**\nPerhatikan titik temu fungsi kedua paragraf: Paragraf 1 [S] *Program penghijauan bantaran sungai* + [P] *mengurangi* + [O] *risiko banjir*, sedangkan Paragraf 2 [S] *ruang terbuka hijau sungai* + [P] *menurunkan* + [O] *suhu udara*. Topik utama gabungan wajib berupa frasa nominal baku sesuai EYD V dan KBBI VI yang mengikat persamaan subjek kedua paragraf beserta manfaat ekologisnya secara menyeluruh.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Topik terlalu sempit: *Upaya pencegahan banjir bandang di bantaran sungai*. | Topik merangkum dua paragraf: *Manfaat ekologis penghijauan bantaran sungai*. |\n| Topik berbentuk kalimat lengkap berpredikat atau melenceng ke anggaran kota. | Topik berbentuk kelompok kata benda (frasa nominal) netral dan menyeluruh. |\n\n**Strategi Eksekusi:** Gabungkan gagasan utama paragraf pertama dan kedua, cari irisan objek pembicaraan yang berulang, lalu rumuskan dalam bentuk frasa benda.",
+      "kunci_pembeda": "Menggabungkan irisan gagasan utama dua paragraf berurutan menjadi satu frasa benda yang tidak terlalu sempit maupun terlalu luas.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Prediksi Gagasan Utama Paragraf Sebelumnya atau Selanjutnya Berdasarkan Transisi Wacana",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Selain memicu gangguan pernapasan akut, paparan polusi udara jangka panjang ternyata juga berdampak serius terhadap penurunan fungsi kognitif anak usia sekolah.",
+      "bedah_pola_markdown": "**Bedah Pola Transisi Wacana & Fungsi:**\nPerhatikan penanda peralihan gagasan pada kalimat pembuka paragraf: [K-transisi] *Selain memicu gangguan pernapasan akut*, [S] *paparan polusi udara jangka panjang* + [P] *berdampak* + [Pel] *terhadap penurunan fungsi kognitif*. Frasa *selain memicu gangguan pernapasan* menjadi jembatan kohesi yang menyiratkan bahwa paragraf sebelumnya telah membahas dampak polusi udara pada kesehatan pernapasan sesuai aturan kepaduan EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Memprediksi paragraf sebelumnya membahas *solusi pengurangan polusi udara*. | Memprediksi paragraf sebelumnya membahas *dampak polusi pada gangguan pernapasan*. |\n| Mengabaikan kata penghubung peralihan (*selain itu, namun, akibatnya*) di batas paragraf. | Mengunci kata kunci tepat setelah konjungsi transisi sebagai petunjuk arah wacana. |\n\n**Strategi Eksekusi:** Untuk memprediksi paragraf sebelumnya, bedah bagian awal paragraf pertama; untuk paragraf berikutnya, bedah isyarat lanjutan pada kalimat terakhir teks.",
+      "kunci_pembeda": "Membaca petunjuk transisi pada kalimat pertama untuk melacak paragraf sebelumnya dan kalimat terakhir untuk memproyeksikan paragraf berikutnya.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n> (1) Penerapan sistem pertanian hidroponik di lahan perkotaan semakin diminati masyarakat dalam lima tahun terakhir. (2) Di sejumlah wilayah padat penduduk, warga memanfaatkan atap rumah untuk menanam sayuran hijau tanpa media tanah. (3) Selain menghemat penggunaan air hingga delapan puluh persen, metode ini juga mampu menghasilkan panen lebih cepat dibandingkan pertanian konvensional. (4) Dengan demikian, pertanian hidroponik menjadi solusi efektif untuk memperkuat ketahanan pangan rumah tangga di perkotaan.\n\nGagasan utama paragraf tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. minat masyarakat perkotaan terhadap pertanian hidroponik terus meningkat",
+        "B. warga perkotaan memanfaatkan atap rumah sebagai lahan tanam sayuran hijau",
+        "C. sistem hidroponik mampu menghemat penggunaan air hingga delapan puluh persen",
+        "D. pertanian hidroponik merupakan solusi efektif bagi ketahanan pangan perkotaan",
+        "E. waktu panen pertanian hidroponik jauh lebih cepat daripada pertanian konvensional"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Paragraf tersebut berpola **induktif** karena kalimat (1) hingga (3) memaparkan fenomena minat warga, contoh pemanfaatan atap rumah, serta rincian efisiensi air dan waktu panen sebagai gagasan pendukung. Simpulan menyeluruh yang menaungi seluruh rincian ditegaskan pada kalimat (4) melalui konjungsi *dengan demikian*, yakni pertanian hidroponik menjadi solusi efektif bagi ketahanan pangan perkotaan (**opsi D**). **Opsi A**, **B**, **C**, dan **E** hanya memuat rincian pendukung yang bersifat khusus pada sebagian kalimat. Jadi, jawaban yang tepat adalah **D**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah dua paragraf berikut dengan saksama!\n\n> **Paragraf 1:** Digitalisasi layanan perbankan mendorong peningkatan transaksi nontunai di kalangan pelaku usaha mikro. Kemudahan pembayaran melalui kode respons cepat membuat pencatatan arus kas harian menjadi lebih rapi dan transparan.\n>\n> **Paragraf 2:** Di sisi lain, pesatnya adopsi layanan keuangan digital tersebut turut meningkatkan risiko kejahatan siber berupa pencurian data nasabah. Oleh karena itu, literasi keamanan digital perlu diperkuat agar pelaku usaha terhindar dari kerugian finansial.\n\nTopik utama yang paling tepat untuk merangkum kedua paragraf di atas adalah ....",
+      "opsi_jawaban": [
+        "A. kemudahan pencatatan arus kas melalui sistem pembayaran kode respons cepat",
+        "B. ancaman kejahatan siber terhadap keamanan data nasabah perbankan digital",
+        "C. manfaat dan tantangan penggunaan layanan keuangan digital bagi pelaku usaha",
+        "D. kewajiban peningkatan literasi keamanan siber bagi seluruh nasabah bank",
+        "E. percepatan transaksi nontunai di sektor usaha mikro dan menengah"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Paragraf 1 membahas dampak positif digitalisasi layanan perbankan berupa kemudahan transaksi dan pencatatan arus kas bagi pelaku usaha, sedangkan Paragraf 2 menyoroti sisi tantangan berupa risiko kejahatan siber yang memerlukan penguatan literasi keamanan. Topik utama yang merangkum irisan kedua paragraf secara utuh adalah **manfaat dan tantangan penggunaan layanan keuangan digital bagi pelaku usaha** (**opsi C**). **Opsi A** dan **E** terlalu sempit karena hanya mewakili Paragraf 1, sedangkan **opsi B** dan **D** hanya merangkum sebagian isi Paragraf 2.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut!\n\n> (1) Kendati pembangunan jalur kereta cepat berhasil memangkas waktu tempuh antarkota secara signifikan, tingkat keterisian penumpang pada hari kerja masih belum mencapai target optimal. (2) Salah satu penyebab utamanya adalah terbatasnya integrasi moda transportasi lanjutan dari stasiun menuju pusat aktivitas ekonomi. (3) Guna mengatasi hambatan konektivitas tersebut, operator transportasi mulai menyiapkan skema pengumpan terpadu yang akan diuraikan secara terperinci berikut ini.\n\nBerdasarkan transisi wacana pada paragraf di atas, gagasan utama yang paling mungkin dibahas pada paragraf **selanjutnya** adalah ....",
+      "opsi_jawaban": [
+        "A. sejarah pembangunan jalur kereta cepat di berbagai negara maju",
+        "B. rincian rancangan layanan angkutan pengumpan yang terintegrasi dengan stasiun",
+        "C. perbandingan tarif tiket kereta cepat dengan moda transportasi udara",
+        "D. evaluasi penyebab rendahnya minat penumpang pada akhir pekan",
+        "E. dampak ekonomi pembangunan stasiun baru di kawasan pinggiran kota"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Untuk memprediksi gagasan utama paragraf berikutnya, cermati petunjuk transisi pada kalimat terakhir paragraf. Kalimat (3) secara eksplisit menutup paragraf dengan pernyataan pengantar bahwa operator menyiapkan **skema pengumpan terpadu yang akan diuraikan secara terperinci berikut ini** untuk mengatasi masalah konektivitas stasiun. Dengan demikian, paragraf selanjutnya pasti membahas **rincian rancangan layanan angkutan pengumpan yang terintegrasi dengan stasiun** (**opsi B**). **Opsi A**, **C**, **D**, dan **E** menyimpang dari jejak transisi kalimat penutup tersebut.",
+      "visual": null
+    }
+  ]
+}

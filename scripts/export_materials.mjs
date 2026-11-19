@@ -1,69 +1,33 @@
 import fs from 'fs';
 import path from 'path';
-import vm from 'vm';
 
-const subtests = [
-  {
-    code: 'pu',
-    dirName: 'pu',
-    prefix: 'MATERIAL_PU_',
-  },
-  {
-    code: 'ppu',
-    dirName: 'ppu',
-    prefix: 'MATERIAL_PPU_',
-  },
-  {
-    code: 'pbm',
-    dirName: 'pbm',
-    prefix: 'MATERIAL_PBM_',
-  },
-];
+// Sync all materials from output_materi to public/content/utbk and content/utbk
+const subtestDirs = ['pu', 'ppu', 'pbm', 'pk', 'lbi', 'lbe', 'pm'];
 
-let totalExported = 0;
-
-for (const sub of subtests) {
-  const pubDir = path.resolve(`public/content/utbk/${sub.code}`);
-  const rootDir = path.resolve(`content/utbk/${sub.code}`);
-  [pubDir, rootDir].forEach(dir => {
+['content/utbk', 'public/content/utbk'].forEach(baseDir => {
+  subtestDirs.forEach(sub => {
+    const dir = path.resolve(baseDir, sub);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   });
+});
 
-  const modularDir = path.resolve(`src/data/materials/${sub.dirName}`);
-  if (!fs.existsSync(modularDir)) continue;
+if (fs.existsSync('output_materi')) {
+  const sourceFiles = fs.readdirSync('output_materi').filter(f => f.endsWith('.json'));
+  let count = 0;
+  for (const file of sourceFiles) {
+    const filePath = path.join('output_materi', file);
+    const content = fs.readFileSync(filePath, 'utf8');
+    const prefix = file.split('-')[0].toLowerCase();
 
-  const files = fs.readdirSync(modularDir)
-    .filter(f => f.startsWith(`${sub.code}-`) && f.endsWith('.ts'))
-    .sort();
+    if (!subtestDirs.includes(prefix)) continue;
 
-  console.log(`Exporting ${files.length} modular material files from src/data/materials/${sub.dirName}/...`);
-
-  for (const file of files) {
-    const filePath = path.join(modularDir, file);
-    const tsCode = fs.readFileSync(filePath, 'utf8');
-    const jsCode = tsCode
-      .replace(/import\s+type\s+[^;]+;/g, '')
-      .replace(/:\s*Material\b/g, '')
-      .replace(/export\s+const\s+/g, 'var ');
-
-    const context = {};
-    vm.createContext(context);
-    vm.runInContext(jsCode, context);
-
-    const matNames = Object.keys(context).filter(k => k.startsWith(sub.prefix));
-    for (const name of matNames) {
-      const mat = context[name];
-      const idShort = mat.metadata.id; // e.g. "pbm-1-1"
-      const [_, ch, subNum] = mat.metadata.subchapter_num.match(/(\d+)\.(\d+)/);
-      const idPadded = `${sub.code}-${ch.padStart(2, '0')}-${subNum.padStart(2, '0')}`; // e.g. "pbm-01-01"
-
-      [pubDir, rootDir].forEach(dir => {
-        fs.writeFileSync(path.join(dir, `${idShort}.json`), JSON.stringify(mat, null, 2), 'utf8');
-        fs.writeFileSync(path.join(dir, `${idPadded}.json`), JSON.stringify(mat, null, 2), 'utf8');
-      });
-      totalExported++;
-    }
+    ['content/utbk', 'public/content/utbk'].forEach(baseDir => {
+      const destPath = path.join(baseDir, prefix, file);
+      fs.writeFileSync(destPath, content, 'utf8');
+    });
+    count++;
   }
+  console.log(`Exported/synced ${count} material files to content/utbk/ and public/content/utbk/`);
+} else {
+  console.log('output_materi directory not found, keeping existing content/utbk files.');
 }
-
-console.log(`Successfully exported ${totalExported} materials to JSON.`);

@@ -1,0 +1,123 @@
+{
+  "kode_subbab": "ppu-03-03",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 3: Sintaksis dan Kalimat",
+  "judul_subbab": "Kelogisan Kalimat dan Kepaduan Makna",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Rapat evaluasi anggaran itu membahas tentang pemangkasan biaya operasional', apakah subjek kalimat tersebut secara logis mampu melakukan tindakan predikatnya?",
+      "opsi_cepat": [
+        "Ya, karena subjek berada di awal kalimat",
+        "Tidak, 'rapat' tidak dapat melakukan tindakan membahas"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Benda mati atau peristiwa seperti 'rapat' tidak bisa bertindak sebagai pelaku aktif ('membahas'). Selain itu, kata kerja aktif 'membahas' tidak boleh diikuti kata depan 'tentang' sehingga struktur [S]-[P]-[O] menjadi rancu."
+    },
+    "konsep_inti_markdown": "**Kelogisan kalimat dan kepaduan makna** menguji masuk akalnya hubungan antarunsur kalimat serta ketepatan struktur sesuai EYD V dan KBBI VI:\n\n* **Kelogisan Pelaku–Tindakan:** Subjek [S] wajib masuk akal melakukan tindakan pada predikat [P].\n* **Kepaduan Antarklausa:** Kata penghubung wajib selaras dengan relasi logis sebab-akibat atau pertentangan.\n* **Antikerancuan:** Hindari pencampuran dua pola kalimat baku (*menurut X mengatakan* atau *membahas tentang*).",
+    "radar_jebakan_utbk": [
+      "Tertipu kalimat berpredikat aktif yang subjeknya berupa benda mati, waktu, atau tempat (misal: 'Waktu dan tempat kami persilakan' atau 'Artikel ini mengkaji').",
+      "Menggabungkan dua struktur kalimat benar menjadi satu kalimat rancu (misal: 'Menurut ahli menyatakan bahwa...' atau 'Meskipun hujan deras, tetapi perjalanan tetap dilanjutkan')."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifikasi Kalimat Tidak Logis (Subjek Tidak Dapat Melakukan Tindakan Predikat)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam pengantar seminar nasional, pembawa acara menyampaikan, 'Acara berikutnya adalah sambutan ketua panitia, waktu dan tempat kami persilakan.'",
+      "bedah_pola_markdown": "**Bedah Pola Kelogisan & Fungsi:**\nPerhatikan susunan fungsi berikut: [S] *waktu dan tempat* + [P] *kami persilakan*. Secara logis, *waktu* dan *tempat* merupakan konsep abstrak yang tidak mampu melakukan tindakan setelah dipersilakan, melainkan [S] *ketua panitia* yang bertindak sebagai pelaku utama sesuai kaidah baku EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [S] **Waktu dan tempat** [P] kami persilakan. | [K] Kepada ketua panitia, [S] **kami** [P] **persilakan**. |\n| [S] **Laporan ini** [P] **membahas** [O] dampak inflasi. | [K] Dalam laporan ini [P] **dibahas** [S] **dampak inflasi**. |\n\n**Strategi Eksekusi:** Uji kecocokan nalar antara inti [S] dan [P] dengan bertanya apakah subjek tersebut secara rasional mampu menjalankan predikat aktifnya, lalu ganti subjek benda menjadi pelaku bernyawa atau ubah predikatnya menjadi bentuk pasif.",
+      "kunci_pembeda": "Memastikan inti subjek [S] secara masuk akal mampu melakukan atau mengalami tindakan yang dinyatakan oleh predikat [P].",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Evaluasi Kesesuaian Hubungan Sebab-Akibat dan Pertentangan Antar-Klausa dalam Bacaan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Curah hujan di wilayah hulu meningkat drastis selama sepekan terakhir, **sedangkan** debit air sungai di hilir meluap hingga merendam permukiman warga.",
+      "bedah_pola_markdown": "**Bedah Pola Relasi Klausa & Fungsi:**\nPerhatikan hubungan dua klausa dalam kalimat berikut: [Klausa 1] *Curah hujan meningkat drastis* + [Konjungsi] ***sehingga*** + [Klausa 2] *debit air sungai meluap*. Klausa kedua merupakan dampak langsung dari klausa pertama, sehingga pemakaian kata penghubung pertentangan (*sedangkan*) merusak kepaduan makna kalimat sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Hujan turun deras, **sedangkan** jalan raya tergenang banjir. | Hujan turun deras **sehingga** jalan raya tergenang banjir. |\n| Anggaran riset terbatas, **sehingga** inovasi tetap berjalan. | Anggaran riset terbatas, **tetapi** inovasi tetap berjalan. |\n\n**Strategi Eksekusi:** Identifikasi arah gagasan antara induk kalimat dan anak kalimat; gunakan konjungsi kausal (*karena, sehingga, akibatnya*) bila gagasan kedua menjadi hasil, serta konjungsi pertentangan (*padahal, sedangkan, namun*) bila kedua gagasan berkebalikan.",
+      "kunci_pembeda": "Menyelaraskan kata penghubung antarklausa dengan arah logika gagasan apakah berupa hubungan sebab-akibat atau pertentangan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penafsiran Maksud Tersirat dari Kalimat Kompleks dalam Wacana Akademik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kendati subsidi kendaraan listrik telah diperluas, adopsi di kalangan masyarakat berpenghasilan menengah ke bawah tetap tersendat karena keterbatasan stasiun pengisian daya di luar kota besar.",
+      "bedah_pola_markdown": "**Bedah Pola Kalimat Kompleks & Fungsi:**\nPisahkan inti gagasan dari klausa perluasannya: [K-konsesif] *Kendati subsidi diperluas*, [S] *adopsi masyarakat* + [P] *tetap tersendat* + [K-sebab] *karena keterbatasan stasiun pengisian*. Struktur bertingkat ini menyiratkan bahwa insentif harga saja belum cukup mendorong peralihan kendaraan tanpa dukungan infrastruktur pengisian yang merata sesuai konteks bacaan.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyimpulkan **subsidi kendaraan listrik gagal total** di semua wilayah. | Menyimpulkan **insentif finansial perlu diimbangi pemerataan fasilitas**. |\n| Menafsirkan **stasiun pengisian hanya tersedia di kota besar saja**. | Menafsirkan **minimnya stasiun pengisian menghambat adopsi luar kota**. |\n\n**Strategi Eksekusi:** Pangkas seluruh klausa keterangan [K] untuk menemukan inti [S]-[P] kalimat terlebih dahulu, lalu gabungkan maknanya dengan kata kunci penanda hubungan (*kendati, karena, akibatnya*) tanpa melebih-lebihkan cakupan fakta teks.",
+      "kunci_pembeda": "Membedah relasi logis antara inti [S]-[P] dan anak kalimat perluasan untuk menarik makna tersirat tanpa melampaui batasan premis teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbaikan Kalimat Rancu (Pencampuran Dua Struktur Kalimat yang Berbeda)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "**Menurut** laporan Badan Pusat Statistik **menyatakan bahwa** tingkat pengangguran terbuka menurun pada kuartal ketiga tahun ini.",
+      "bedah_pola_markdown": "**Bedah Pola Kerancuan & Fungsi:**\nKalimat di atas mencampur dua struktur baku menjadi satu konstruksi rancu sehingga kehilangan unsur subjek: [K] *Menurut laporan BPS* + [P] *menyatakan bahwa...*. Sesuai kaidah EYD V dan KBBI VI, kata depan *menurut* membentuk keterangan [K] sehingga tidak boleh diikuti kata kerja aktif *menyatakan*, atau hapus *menurut* agar [S] *laporan BPS* berdiri utuh.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [K] **Menurut** pakar [P] **mengatakan** krisis air mengancam. | [S] **Pakar** [P] **mengatakan** krisis air mengancam. |\n| [K] **Meskipun** lelah, [Konj] **tetapi** [S] ia [P] tetap bekerja. | [K] **Meskipun** lelah, [S] ia [P] tetap bekerja. |\n\n**Strategi Eksekusi:** Pecah kalimat rancu menjadi dua versi struktur dasar yang terpisah, lalu buang salah satu kata tugas atau imbuhan yang bertabrakan agar pola [S]-[P]-[O]-[K] kembali bersih dan tunggal.",
+      "kunci_pembeda": "Memisahkan dua pola sintaksis yang bertabrakan dan menghapus kata tugas berlebih agar struktur kalimat memiliki subjek serta predikat yang utuh.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Dalam jurnal kesehatan masyarakat tersebut **membahas tentang** efektivitas vaksinasi musiman terhadap penurunan angka rawat inap lansia.\"\n\nPerbaikan yang PALING TEPAT agar kalimat di atas menjadi logis dan baku sesuai kaidah EYD V adalah ....",
+      "opsi_jawaban": [
+        "A. menghapus kata *dalam* dan kata *tentang* sehingga inti kalimat menjadi jelas",
+        "B. mengganti kata *membahas* menjadi *terbahas* tanpa menghapus kata *dalam*",
+        "C. menghilangkan kata *tersebut* agar pelaku tindakan menjadi lebih spesifik",
+        "D. menambahkan kata *yang* sebelum kata *membahas* untuk memperjelas keterangan",
+        "E. mengganti kata *tentang* menjadi *mengenai* agar selaras dengan predikat aktif"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Kalimat tersebut tidak memiliki pelaku yang jelas karena diawali kata depan *dalam* sekaligus mencampur dua pola kalimat melalui gabungan kata kerja aktif *membahas* dan kata depan *tentang*. Menghapus kata *dalam* serta *tentang* (**opsi A**) mengembalikan struktur logis pelaku–tindakan (*Jurnal kesehatan masyarakat tersebut membahas efektivitas vaksinasi...*). **Opsi B** dan **E** tetap menyisakan pencampuran struktur, sedangkan **opsi C** dan **D** menghilangkan inti tindakan kalimat. Jadi, jawaban yang tepat adalah **A**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Kawasan industri hijau di pesisir timur telah dilengkapi instalasi pengolahan air limbah terpadu. (2) **Meskipun** tingkat pencemaran sungai di sekitar kawasan tersebut berhasil ditekan secara signifikan, **tetapi** ekosistem perairan pesisir tetap membutuhkan pemantauan berkala.\n\nManakah evaluasi yang PALING TEPAT terhadap kepaduan makna dan struktur kalimat (2)?",
+      "opsi_jawaban": [
+        "A. Kata *meskipun* dan *tetapi* digunakan bersamaan sehingga membuat hubungan pertentangan menjadi rancu.",
+        "B. Kata *meskipun* perlu diganti dengan kata *karena* agar menunjukkan hubungan sebab-akibat yang padu.",
+        "C. Kata *tetapi* harus diganti dengan kata *sehingga* untuk menegaskan dampak pemantauan ekosistem.",
+        "D. Kalimat (2) sudah efektif karena kedua kata penghubung saling menguatkan makna perlawanan.",
+        "E. Bagian awal kalimat (2) tidak memiliki pelaku sehingga kata *tetapi* wajib diubah menjadi *melainkan*."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Kalimat (2) mempertentangkan keberhasilan menekan pencemaran dengan perlunya pemantauan berkala. Namun, pemakaian kata penghubung *meskipun* di awal dan *tetapi* di tengah secara bersamaan menciptakan pencampuran dua struktur kalimat baku (**opsi A** benar, **opsi D** salah). Cukup gunakan salah satu kata penghubung saja agar hubungan pertentangan tetap padu. **Opsi B** dan **C** keliru mengubah hubungan pertentangan menjadi sebab-akibat, sedangkan **opsi E** salah mengidentifikasi bagian yang rancu.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kalimat kompleks berikut dengan saksama!\n\n> \"Walaupun efisiensi panel surya komersial terus meningkat dalam satu dekade terakhir, ketergantungan industri berat terhadap bahan bakar fosil belum tergantikan akibat tingginya kebutuhan energi berskala besar yang stabil sepanjang waktu.\"\n\nMaksud tersirat yang PALING TEPAT berdasarkan kalimat di atas adalah ....",
+      "opsi_jawaban": [
+        "A. Panel surya komersial belum mampu memasok kebutuhan daya besar secara stabil bagi industri berat.",
+        "B. Efisiensi panel surya komersial tidak mengalami perkembangan berarti selama sepuluh tahun terakhir.",
+        "C. Seluruh sektor industri nasional dilarang beralih menggunakan energi surya karena biayanya mahal.",
+        "D. Bahan bakar fosil akan segera habis sehingga industri berat terpaksa menghentikan kegiatan produksi.",
+        "E. Peningkatan efisiensi panel surya secara otomatis menghapus ketergantungan industri pada energi fosil."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Inti kalimat tersebut menyatakan ketergantungan industri berat pada bahan bakar fosil belum tergantikan, dengan keterangan alasan berupa kebutuhan energi besar yang stabil sepanjang waktu. Hal ini menyiratkan bahwa panel surya komersial saat ini belum sanggup memenuhi tuntutan pasokan daya besar dan stabil tersebut (**opsi A**). **Opsi B** dan **E** bertentangan langsung dengan fakta teks, sedangkan **opsi C** dan **D** menambahkan klaim di luar informasi kalimat. Jadi, jawaban yang tepat adalah **A**.",
+      "visual": null
+    }
+  ]
+}

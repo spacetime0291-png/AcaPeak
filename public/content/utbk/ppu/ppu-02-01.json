@@ -1,143 +1,134 @@
 {
-  "metadata": {
-    "id": "ppu-2-1",
-    "subtest": "PPU",
-    "chapter_num": 2,
-    "chapter_title": "Morfologi dan Frasa",
-    "subchapter_num": "2.1",
-    "subchapter_title": "Afiksasi (Imbuhan) dan Maknanya",
-    "title": "Afiksasi (Imbuhan) dan Maknanya",
-    "required_question_variations": [
-      "Uji Kesamaan Makna Gramatikal Prefiks ter- (HOTS Semantik)",
-      "Kaidah Morfofonemik Pembentukan Kata Baku (KTSP)",
-      "Analisis Dikotomi Konfiks pe(N)-...-an vs per-...-an"
-    ],
-    "requires_svg": false,
-    "updated_at": "2026-11-10"
-  },
-  "content": {
-    "tactical_overview": "Afiksasi adalah proses morfologis pembentukan kata turunan polimorfemis yang memicu perubahan kelas kata (derivasi) atau pengubahan bentuk kata tanpa mengubah kelas kata (infleksi). Kunci menjawab soal UTBK terletak pada penguasaan hukum peluluhan fonem KTSP (luluh jika huruf ke-2 vokal, bertahan jika klaster konsonan), pembedaan teliti makna prefiks ter- (potensial vs aksidental), serta dikotomi konfiks pe(N)-...-an (proses tindakan) vs per-...-an (tempat/hal/hasil).",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar dan Kerangka Teori\n\nAfiksasi adalah proses morfologis pembentukan kata dengan cara melekatkan afiks (imbuhan) pada bentuk dasar (kata tunggal maupun kompleks) sehingga menghasilkan kata turunan (polimorfemis) dengan kategori gramatikal dan makna baru.\n\nDua fungsi gramatikal afiksasi:\n1. **Derivasi (Derivasional)**: Mengubah kelas kata bentuk dasar (*tulis* [verba] $\\rightarrow$ *penulis* [nomina]; *kuning* [adjektiva] $\\rightarrow$ *menguning* [verba]).\n2. **Infleksi (Infleksional)**: Mengubah bentuk kata untuk menyesuaikan fungsi sintaksis tanpa mengubah kelas kata (*makan* [verba] $\\rightarrow$ *memakan* [verba aktif transitif]).\n\n---\n\n## 1.1 Klasifikasi Afiks Berdasarkan Posisi\n1. **Prefiks (Awalan)**: Dilekatkan di awal bentuk dasar (*me(N)-*, *ber-*, *di-*, *ter-*, *pe(N)-*, *per-*, *se-*, *ke-*).\n2. **Sufiks (Akhiran)**: Dilekatkan di akhir bentuk dasar (*-an*, *-kan*, *-i*, *-nya*, serta sufiks serapan *-isasi*, *-is*, *-wi*, *-man*, *-wan*, *-wati*).\n3. **Infiks (Sisipan)**: Disisipkan di antara konsonan pertama dan vokal pertama bentuk dasar (*-el-* pada *telapak*, *-em-* pada *gemetar*, *-er-* pada *gerigi*, *-in-* pada *kinerja*).\n4. **Konfiks (Afiks Tunggal Tak Terpisah)**: Gabungan awalan dan akhiran yang melekat secara serentak membentuk satu kesatuan gramatikal tunggal (*ke-...-an*, *pe(N)-...-an*, *per-...-an*, *ber-...-an*, *se-...-nya*).\n5. **Kombinasi Afiks (Simulfiks / Afiks Gabung Bertahap)**: Melekat secara bertahap pada bentuk dasar (*me-...-kan*, *memper-...-kan*).\n\n---\n\n## 1.2 Kaidah Morfofonemik (Peluluhan Fonem K, T, S, P)\nKaidah morfofonemik mengatur perubahan fonem alomorf ketika prefiks *me(N)-* dan *pe(N)-* bertemu konsonan inisial bentuk dasar.\n\n### A. Kaidah Wajib Luluh\nFonem awal **/k/**, **/t/**, **/s/**, dan **/p/** wajib luluh menjadi alomorf sengau (*/ng/*, */n/*, */ny/*, */m/*) jika memenuhi **dua syarat akumulatif**:\n1. Terdiri atas lebih dari satu suku kata (polisilabel).\n2. Huruf kedua setelah K, T, S, atau P adalah **huruf vokal** (*a, i, u, e, o*).\n\n*Contoh*:\n- *me(N)-* + *kunci* $\\rightarrow$ **mengunci**\n- *me(N)-* + *tulis* $\\rightarrow$ **menulis**\n- *me(N)-* + *sapu* $\\rightarrow$ **menyapu**\n- *me(N)-* + *pakai* $\\rightarrow$ **memakai**\n\n### B. Pengecualian Peluluhan (Tidak Boleh Luluh)\n1. **Bentuk dasar diawali gugus konsonan (klaster: kr, tr, sp, pr, kl, st)**:\n   - *me(N)-* + *kritik* $\\rightarrow$ **mengkritik** (Bukan *mengritik*)\n   - *me(N)-* + *traktir* $\\rightarrow$ **mentraktir** (Bukan *menraktir*)\n   - *me(N)-* + *produksi* $\\rightarrow$ **memproduksi** (Bukan *memroduksi*)\n   - *me(N)-* + *klasifikasi* $\\rightarrow$ **mengklasifikasikan**\n   - *me(N)-* + *stimulus* $\\rightarrow$ **menstimulus**\n2. **Bentuk dasar berupa kata bersuku satu (monosilabel)**:\n   - Menggunakan alomorf *menge-* / *penge-*: *mengecat*, *mengebom*, *mengelap*, *mengetik*, *mengelas*.\n3. **Bentuk dasar sudah berupa kata berimbuhan (afiksasi bertingkat)**:\n   - *me(N)-* + *per-* + *satu* $\\rightarrow$ **mempersatukan** (/p/ pada prefiks tidak luluh).\n4. **Pembedaan Makna Leksikal Khusus (Kasus Kaji)**:\n   - *kaji* (penelitian ilmiah) $\\rightarrow$ **mengkaji** / **pengkaji** (meneliti secara ilmiah).\n   - *aji/kaji* (bacaan kitab suci) $\\rightarrow$ **mengaji** / **pengajian**.\n   - *saji* (hidangan) $\\rightarrow$ **penyaji** / **menyajikan**.\n\n---\n\n## 1.3 Nilai Makna Gramatikal Afiks Utama UTBK\n- **Prefiks me(N)-**: Melakukan tindakan aktif (*memasak*), menjadi/membuat jadi (*meratakan*, *memburuk*), mengeluarkan bunyi/benda (*meringkik*, *berkeringat*), menuju ke arah (*melaut*, *mendarat*), menyerupai (*membatu*).\n- **Prefiks ber-**: Mempunyai (*beruang*, *bermobil*), memakai (*berbaju*), menghasilkan (*bertelur*), refleksif (*bercermin*), resiprokal/saling (*bersalaman*, *berpelukan*), kondisi/keadaan (*bergembira*).\n- **Prefiks ter-**:\n  - *Superlatif/paling*: *tertinggi*, *terbesar*.\n  - *Potensial/dapat di-*: *terjangkau* (dapat dijangkau), *terbaca* (dapat dibaca).\n  - *Aksidental/tak sengaja*: *terinjak*, *tertelan*, *tertinggal*.\n  - *Resultatif/keadaan*: *terbuka*, *terkunci*, *tertutup*.\n- **Konfiks ke-...-an**: Keadaan abstrak (*kesehatan*, *keadilan*), daerah/wilayah (*kerajaan*), eksesif/terlalu (*kebesaran*, *kemalaman*), adversatif/terkena musibah (*kehujanan*, *kemalingan*).\n- **pe(N)-...-an vs. per-...-an**:\n  - *pe(N)-...-an* berkorelasi dengan verba *me(N)-* (**proses / metode pelaksanaan**): *pemukiman* (proses memukimkan), *pembangunan* (proses membangun).\n  - *per-...-an* berkorelasi dengan verba *ber-* atau nomina (**lokasi, hal, atau hasil**): *permukiman* (kawasan hunian), *perkembangan* (hal berkembang), *perjanjian* (hasil berjanji).\n- **Sufiks -kan vs. -i**:\n  - *-kan* (kausatif/benefaktif): menyebabkan jadi (*menjatuhkan*) atau tindakan untuk orang lain (*membelikan*).\n  - *-i* (lokatif/repetitif): objek tempat (*menaburi*, *menghampiri*) atau berulang-ulang (*memukuli*).\n\n---\n\n## 1.4 Matriks Komparasi Makna Afiksasi\n\n| Tipe Afiks | Bentuk Turunan | Bentuk Dasar | Kaidah Semantik | Makna Gramatikal |\n| :--- | :--- | :--- | :--- | :--- |\n| **Prefiks me(N)-** | Melaut | Laut (Nomina) | Arah tujuan | Menuju ke laut |\n| **Prefiks me(N)-** | Menguning | Kuning (Adjektiva) | Perubahan sifat | Menjadi kuning |\n| **Prefiks ber-** | Bersenjata | Senjata (Nomina) | Kepemilikan alat | Memiliki/memakai senjata |\n| **Prefiks ber-** | Bertinju | Tinju (Verba) | Resiprokalitas | Saling memukul tinju |\n| **Prefiks ter-** | Termurah | Murah (Adjektiva) | Gradasi intensitas | Paling murah (superlatif) |\n| **Prefiks ter-** | Tertabrak | Tabrak (Verba) | Ketidaksengajaan | Tidak sengaja ditabrak (aksidental) |\n| **Prefiks ter-** | Terpecahkan | Pecah (Verba) | Potensialitas | Dapat dipecahkan |\n| **Konfiks ke-...-an** | Kecilikan | Cilik (Adjektiva) | Melebihi takaran | Terlalu kecil (eksesif) |\n| **Konfiks ke-...-an** | Kecopetan | Copet (Nomina) | Tertimpa musibah | Menderita kena aksi copet (adversatif) |\n| **pe(N)-...-an** | Pemisahan | Pisah (Verba) | Nominalisasi aksi (*me-*) | Proses/cara memisahkan |\n| **per-...-an** | Peristirahatan | Istirahat (Verba) | Lokasi/perihal (*ber-*) | Tempat untuk beristirahat |\n\n---\n\n# 2. Pola Jebakan Pengecoh UTBK\n\n1. **Jebakan Gugus Konsonan KTSP**: Kata serapan berawalan klaster (*traktir, produksi, kritik, klarifikasi*) tidak boleh luluh (*mentraktir, memproduksi, mengkritik*).\n2. **Jebakan Homonim Konfiks ke-...-an**: Menukar makna hal abstrak (*keadilan*) dengan kondisi terkena musibah (*kemalingan*).\n3. **Jebakan Dikotomi Pemukiman vs Permukiman**: *Pemukiman* adalah proses memukimkan, sedangkan *permukiman* adalah kawasan tempat tinggal.\n4. **Jebakan Tripartit Makna Prefiks ter-**: Membedakan *ter-* potensial (*dapat di-*) dengan aksidental (*tidak sengaja*) pada kalimat pasif negatif (*masalah tidak teratasi* = potensial).\n5. **Jebakan Pleonasme Makna Resiprokal Prefiks ber-**: Penggabungan *saling bersalaman* mengandung pleonasme karena *ber-* pada bentuk tersebut sudah bermakna saling.\n\n---\n\n# 3. Trik Analisis Taktis (<30 Detik)\n\n1. **Uji Formula Parafrasa Kata Dasar**: Substitusi kata imbuhan dengan sinonim maknanya (*ber-* $\\rightarrow$ mempunyai/saling; *ter-* $\\rightarrow$ paling/tidak sengaja/dapat di-; *ke-...-an* $\\rightarrow$ perihal/terlalu/terkena).\n2. **Uji Rumus Huruf Kedua Klaster KTSP**: Huruf ke-2 vokal = wajib luluh; huruf ke-2 konsonan = pertahankan (tidak luluh).\n3. **Uji Asosiasi Pasangan Verba Dasar (peN-...-an vs per-...-an)**: Dari verba *me-* $\\rightarrow$ *pe(N)-...-an*; dari verba *ber-* $\\rightarrow$ *per-...-an*.\n4. **Uji Sisipan \"Dapat Di-\" pada Prefiks ter-**: Jika logis disisipi frasa \"dapat di-\", fungsinya adalah potensial.\n\n---\n\n# 4. Rangkuman Inti\n\n- **Afiksasi**: Menghasilkan kata jadian dengan makna gramatikal spesifik melalui derivasi atau infleksi.\n- **KTSP**: Luluh jika huruf ke-2 vokal; tidak luluh jika huruf ke-2 konsonan (klaster) atau kata bersuku satu.\n- **ter-**: Memiliki makna utama superlatif (paling), potensial (dapat di-), aksidental (tidak sengaja), dan resultatif (keadaan).\n- **pe(N)-...-an vs. per-...-an**: *pe(N)-...-an* merujuk pada proses aksi; *per-...-an* merujuk pada kawasan/hasil/hal.\n---\n\n# 5. Bedah Soal Terstandar UTBK\n\nBerikut adalah bedah tiga variasi soal Afiksasi (Imbuhan) dan Maknanya terstandar UTBK-SNBT, lengkap dengan konteks wacana, pertanyaan, pilihan ganda A–E, kunci jawaban, petunjuk taktis, dan pembahasan analitis menyeluruh:\n\n### Variasi 1: Uji Kesamaan Makna Gramatikal Prefiks ter- / HOTS Semantik (Level: Sedang)\n\n> **Konteks Wacana Soal:**  \n> Tingkat pencemaran mikroplastik pada ekosistem laut kini telah berada pada ambang batas yang tidak **terbayangkan** sebelumnya oleh para peneliti lingkungan.  \n>  \n> **Pertanyaan UTBK:** *Makna gramatikal imbuhan *ter-* pada kata **terbayangkan** semakna dengan prefiks *ter-* pada kata bercetak miring dalam kalimat...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Dokumen rahasia itu tidak sengaja *terbawa* oleh staf magang.  \n> - **B.** Harga obat-obatan generik di apotek itu sangat *terjangkau* oleh masyarakat.  \n> - **C.** Kereta cepat tersebut merupakan moda transportasi darat *tercepat* di Asia Tenggara.  \n> - **D.** Pintu gerbang museum itu sudah *terbuka* sejak pukul delapan pagi.  \n> - **E.** Seluruh peserta upacara merasa *terkejut* mendengar dentuman keras.  \n\n**Kunci Jawaban: B**\n\n> 💡 **Petunjuk Soal:** Perhatikan frasa *\"tidak terbayangkan\"*, yang bermakna \"tidak dapat dibayangkan\" (menyatakan kemampuan/potensialitas pasif). Cari kata berprefiks *ter-* pada opsi yang juga dapat disubstitusi dengan rumus *\"dapat di-\"*.\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Konsep Formal:**  \n**Cara Konsep Formal:**\n\n- **Analisis Gramatikal Target:** Kata *terbayangkan* terbentuk dari prefiks *ter-* + verba *bayangkan*. Dalam konstruksi *\"tidak terbayangkan\"*, fungsi semantisnya adalah **pasif potensial** (\"dapat dibayangkan\").\n- **Analisis Pilihan Jawaban:**\n  - Pilihan A: *terbawa* = ketidaksengajaan (aksidental).\n  - Pilihan B: *terjangkau* = dapat dijangkau (pasif potensial).\n  - Pilihan C: *tercepat* = paling cepat (superlatif).\n  - Pilihan D: *terbuka* = sudah dalam kondisi terbuka (resultatif/keadaan).\n  - Pilihan E: *terkejut* = mengalami keadaan terperanjat (kondisional afektif).\n\n**Jawaban: B**\n\n- **Penerapan Trik Cepat (<30 Detik):**  \n**Cara Cepat (Uji Sisipan \"Dapat Di-\"):**\n\n1. *Terbayangkan* $\\rightarrow$ *dapat dibayangkan* (potensial).\n2. Cek opsi: *Terjangkau* $\\rightarrow$ *dapat dijangkau* (100% cocok!).\n3. Coret A (tidak sengaja), C (paling), dan D (keadaan).\n\n- **Mengapa Opsi Lain Salah?**  \n- **Pilihan A Salah:** Imbuhan *ter-* pada *terbawa* menyatakan perbuatan yang tidak disengaja (aksidental).\n- **Pilihan C Salah:** Imbuhan *ter-* pada *tercepat* melekat pada kata sifat yang menyatakan tingkat paling (superlatif).\n- **Pilihan D Salah:** Imbuhan *ter-* pada *terbuka* menyatakan keadaan/kondisi pasif suatu objek.\n- **Pilihan E Salah:** Imbuhan *ter-* pada *terkejut* menyatakan reaksi perasaan spontan.\n\n---\n\n### Variasi 2: Kaidah Morfofonemik Pembentukan Kata Baku / KTSP (Level: Sedang)\n\n> **Konteks Wacana Soal:**  \n> Kementerian berencana [...] program pemberdayaan UMKM pedesaan secara digital serta [...] anggaran infrastruktur dasar ke wilayah pelosok.  \n>  \n> **Pertanyaan UTBK:** *Kata berimbuhan baku yang paling tepat untuk mengisi bagian rumpang kalimat di atas secara berurutan adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** memprogramkan; mensuplai  \n> - **B.** memrogramkan; menyuplai  \n> - **C.** memprogramkan; menyuplai  \n> - **D.** memrogramkan; mensuplai  \n> - **E.** memprogramkan; memproduksi  \n\n**Kunci Jawaban: C**\n\n> 💡 **Petunjuk Soal:** Cermati huruf kedua kata dasar: kata *program* diawali gugus konsonan /pr/ (klaster), sedangkan kata *suplai* diawali konsonan /s/ yang langsung diikuti huruf vokal /u/. Ingat kaidah peluluhan KTSP!\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Konsep Formal:**  \n**Cara Konsep Formal:**\n\n- **Analisis Kata \"Program\":** Kata dasar *program* diawali oleh klaster konsonan **/pr/**. Sesuai kaidah EYD V, fonem K, T, S, P yang diikuti konsonan lain (klaster) **TIDAK LULUH**. Bentuk bakunya adalah *me(N)-* + *programkan* $\\rightarrow$ **memprogramkan** (bukan *memrogramkan*).\n- **Analisis Kata \"Suplai\":** Kata dasar *suplai* diawali konsonan **/s/** dan langsung diikuti huruf vokal **/u/**. Karena memenuhi dua syarat (polisilabel dan diikuti vokal), fonem /s/ **WAJIB LULUH** menjadi alomorf /ny/. Bentuk bakunya adalah *me(N)-* + *suplai* $\\rightarrow$ **menyuplai** (bukan *mensuplai*).\n\n**Jawaban: C**\n\n- **Penerapan Trik Cepat (<30 Detik):**  \n**Cara Cepat (Rumus Huruf Kedua Klaster):**\n\n1. *Pr-ogram* (huruf ke-2 adalah /r/ = konsonan) $\\rightarrow$ Tahan, jangan diluluhkan $\\rightarrow$ **memprogramkan**.\n2. *S-uplai* (huruf ke-2 adalah /u/ = vokal) $\\rightarrow$ Wajib lebur/luluh $\\rightarrow$ **menyuplai**.\n3. Kombinasi yang benar adalah opsi **C**.\n\n- **Mengapa Opsi Lain Salah?**  \n- **Pilihan A Salah:** Bentuk *mensuplai* tidak baku karena fonem /s/ yang diikuti vokal wajib luluh menjadi *menyuplai*.\n- **Pilihan B Salah:** Bentuk *memrogramkan* salah karena gugus konsonan /pr/ tidak boleh diluluhkan.\n- **Pilihan D Salah:** Kedua bentuk kata imbuhan sama-sama menyalahi kaidah morfofonemik KTSP.\n- **Pilihan E Salah:** Kata *memproduksi* tidak kontekstual untuk melengkapi distribusi anggaran ke wilayah pelosok.\n\n---\n\n### Variasi 3: Analisis Dikotomi Konfiks pe(N)-...-an vs per-...-an (Level: Sedang)\n\n> **Konteks Wacana Soal:**  \n> (1) Bencana banjir bandang meluluhlantakkan kawasan [...] padat penduduk di sepanjang bantaran sungai.\n> (2) Pemerintah daerah segera mempercepat proses [...] warga terdampak ke zona relokasi yang aman.  \n>  \n> **Pertanyaan UTBK:** *Bentuk kata turunan yang tepat untuk melengkapi kalimat (1) dan kalimat (2) secara berturut-turut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** pemukiman dan permukiman  \n> - **B.** permukiman dan pemukiman  \n> - **C.** permukiman dan permukiman  \n> - **D.** pemukiman dan pemukiman  \n> - **E.** pemukim dan permukiman  \n\n**Kunci Jawaban: B**\n\n> 💡 **Petunjuk Soal:** Bedakan konsep *tempat/kawasan hunian* (berkorelasi dengan kata *bermukim*) dengan konsep *proses/tindakan memindahkan* (berkorelasi dengan kata *memukimkan*).\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Konsep Formal:**  \n**Cara Konsep Formal:**\n\n- **Analisis Kalimat (1):** Teks membutuhkan nomina yang merujuk pada **kawasan, wilayah, atau tempat tinggal**. Konfiks *per-...-an* yang berkorelasi dengan verba *bermukim* membentuk kata **permukiman** (daerah/tempat bermukim).\n- **Analisis Kalimat (2):** Teks membutuhkan nomina yang menyatakan **proses, tindakan, atau perbuatan**. Konfiks *pe(N)-...-an* yang berkorelasi dengan verba transitif *memukimkan* membentuk kata **pemukiman** (proses atau cara memukimkan penduduk).\n- Maka urutan yang tepat adalah *permukiman* (1) dan *pemukiman* (2).\n\n**Jawaban: B**\n\n- **Penerapan Trik Cepat (<30 Detik):**  \n**Cara Cepat (Proses vs Tempat):**\n\n1. Kalimat (1): Ada kata *kawasan* $\\rightarrow$ Butuh makna tempat $\\rightarrow$ **permukiman**.\n2. Kalimat (2): Ada kata *proses* $\\rightarrow$ Butuh makna tindakan $\\rightarrow$ **pemukiman**.\n3. Urutan: permukiman dan pemukiman $\\rightarrow$ Opsi **B**.\n\n- **Mengapa Opsi Lain Salah?**  \n- **Pilihan A Salah:** Urutan posisi tertukar (*pemukiman* ditaruh di kalimat tempat, dan *permukiman* di kalimat proses).\n- **Pilihan C Salah:** Menggunakan kata *permukiman* untuk kedua konteks, padahal kalimat (2) jelas menyatakan proses tindakan.\n- **Pilihan D Salah:** Menggunakan kata *pemukiman* untuk kawasan fisik, yang merupakan kerancuan makna klasik di UTBK.\n- **Pilihan E Salah:** Kata *pemukim* merujuk pada orang (pelaku yang mendiami), bukan kawasan tempat tinggal.",
-    "visualizations_svg": [],
-    "distractor_traps": [
-      "Jebakan Gugus Konsonan KTSP: Kata serapan berawalan klaster (traktir, produksi, kritik, klarifikasi) tidak luluh (mentraktir, memproduksi, mengkritik).",
-      "Jebakan Homonim Konfiks ke-...-an: Menukar makna hal abstrak (keadilan) dengan kondisi terkena musibah (kemalingan).",
-      "Jebakan Dikotomi Pemukiman vs Permukiman: Pemukiman adalah proses memukimkan, sedangkan permukiman adalah kawasan tempat tinggal.",
-      "Jebakan Tripartit Makna Prefiks ter-: Membedakan ter- potensial (dapat di-) dengan aksidental (tidak sengaja) pada kalimat pasif negatif (masalah tidak teratasi = potensial).",
-      "Jebakan Pleonasme Makna Resiprokal Prefiks ber-: Penggabungan saling bersalaman mengandung pleonasme karena ber- sudah bermakna saling."
-    ],
-    "quick_execution_algorithm": [
-      "Uji Formula Parafrasa Kata Dasar: Substitusi kata imbuhan dengan sinonim maknanya (ber- → mempunyai/saling; ter- → paling/tidak sengaja/dapat di-; ke-...-an → perihal/terlalu/terkena).",
-      "Uji Rumus Huruf Kedua Klaster KTSP: Huruf ke-2 vokal = wajib luluh; huruf ke-2 konsonan = pertahankan (tidak luluh).",
-      "Uji Asosiasi Pasangan Verba Dasar (peN-...-an vs per-...-an): Dari verba me- → pe(N)-...-an; dari verba ber- → per-...-an.",
-      "Uji Sisipan \"Dapat Di-\" pada Prefiks ter-: Jika logis disisipi frasa \"dapat di-\", fungsinya adalah potensial."
-    ]
-  },
-  "worked_examples": [
-    {
-      "example_id": "ppu-02-01-ex1",
-      "variation_name": "Variasi 1: Uji Kesamaan Makna Gramatikal Prefiks ter- / HOTS Semantik (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Tingkat pencemaran mikroplastik pada ekosistem laut kini telah berada pada ambang batas yang tidak **terbayangkan** sebelumnya oleh para peneliti lingkungan.",
-      "question_markdown": "Makna gramatikal imbuhan *ter-* pada kata **terbayangkan** semakna dengan prefiks *ter-* pada kata bercetak miring dalam kalimat...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Dokumen rahasia itu tidak sengaja *terbawa* oleh staf magang."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Harga obat-obatan generik di apotek itu sangat *terjangkau* oleh masyarakat."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Kereta cepat tersebut merupakan moda transportasi darat *tercepat* di Asia Tenggara."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pintu gerbang museum itu sudah *terbuka* sejak pukul delapan pagi."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Seluruh peserta upacara merasa *terkejut* mendengar dentuman keras."
-        }
+  "kode_subbab": "ppu-02-01",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 2: Morfologi dan Frasa",
+  "judul_subbab": "Afiksasi (Imbuhan) dan Maknanya",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Kementerian Kesehatan mensosialisasikan kebijakan baru guna merubah pola hidup masyarakat', apakah bentukan kata 'mensosialisasikan' dan 'merubah' sudah baku?",
+      "opsi_cepat": [
+        "Ya, keduanya lazim digunakan",
+        "Tidak, keduanya melanggar kaidah peluluhan fonem"
       ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan frasa *\"tidak terbayangkan\"*, yang bermakna \"tidak dapat dibayangkan\" (menyatakan kemampuan/potensialitas pasif). Cari kata berprefiks *ter-* pada opsi yang juga dapat disubstitusi dengan rumus *\"dapat di-\"*.",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Gramatikal Target:** Kata *terbayangkan* terbentuk dari prefiks *ter-* + verba *bayangkan*. Dalam konstruksi *\"tidak terbayangkan\"*, fungsi semantisnya adalah **pasif potensial** (\"dapat dibayangkan\").\n- **Analisis Pilihan Jawaban:**\n  - Pilihan A: *terbawa* = ketidaksengajaan (aksidental).\n  - Pilihan B: *terjangkau* = dapat dijangkau (pasif potensial).\n  - Pilihan C: *tercepat* = paling cepat (superlatif).\n  - Pilihan D: *terbuka* = sudah dalam kondisi terbuka (resultatif/keadaan).\n  - Pilihan E: *terkejut* = mengalami keadaan terperanjat (kondisional afektif).\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Uji Sisipan \"Dapat Di-\"):**\n\n1. *Terbayangkan* $\\rightarrow$ *dapat dibayangkan* (potensial).\n2. Cek opsi: *Terjangkau* $\\rightarrow$ *dapat dijangkau* (100% cocok!).\n3. Coret A (tidak sengaja), C (paling), dan D (keadaan).",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Imbuhan *ter-* pada *terbawa* menyatakan perbuatan yang tidak disengaja (aksidental).\n- **Pilihan C Salah:** Imbuhan *ter-* pada *tercepat* melekat pada kata sifat yang menyatakan tingkat paling (superlatif).\n- **Pilihan D Salah:** Imbuhan *ter-* pada *terbuka* menyatakan keadaan/kondisi pasif suatu objek.\n- **Pilihan E Salah:** Imbuhan *ter-* pada *terkejut* menyatakan reaksi perasaan spontan."
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Awalan meN- meluluhkan huruf awal K-T-S-P pada kata dasar tunggal sehingga 'sosialisasi' menjadi 'menyosialisasikan', sedangkan kata dasar 'ubah' berawalan vokal berubah menjadi 'mengubah'."
+    },
+    "konsep_inti_markdown": "**Afiksasi (pengimbuhan)** membentuk kata turunan dan mengubah makna maupun kelas kata sesuai kaidah EYD V dan KBBI VI:\n\n* **Kesamaan Makna:** Satu imbuhan dapat memiliki beragam makna kontekstual (*peN-...-an* bermakna proses atau tempat).\n* **Peluluhan K-T-S-P:** Huruf awal *k, t, s, p* kata dasar luluh jika bertemu awalan *meN-* atau *peN-*, kecuali gugus konsonan.\n* **Imbuhan Serapan:** Unsur terikat (*pra-*, *non-*) ditulis serangkai dengan kata dasar.",
+    "radar_jebakan_utbk": [
+      "Menganggap imbuhan yang sama bentuknya selalu memiliki makna identik (misal: menyamakan 'perumahan' yang bermakna kumpulan rumah dengan 'penanaman' yang bermakna proses).",
+      "Tertipu peluluhan fonem pada kata dasar berimbuhan ganda atau kluster (misal: menulis 'mempengaruhi' yang seharusnya 'memengaruhi', atau 'menyetabilkan' yang seharusnya 'menstabilkan')."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Kesamaan Makna Imbuhan (peN-...-an, ke-...-an, ber-, -an, meN-) Antar-Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pemerintah mempercepat **pembangunan** infrastruktur pelabuhan untuk menekan biaya logistik antarpulau.",
+      "bedah_pola_markdown": "**Bedah Pola Makna Imbuhan & Fungsi:**\nPerhatikan struktur kalimat: [S] *Pemerintah* + [P] *mempercepat* + [O] ***pembangunan** infrastruktur pelabuhan* + [K] *untuk menekan biaya logistik*. Konfiks *peN-...-an* pada **pembangunan** bermakna *proses atau perbuatan membangun* yang terikat pada kata kerja dasarnya. Pada soal UTBK, imbuhan serupa bisa bermakna tempat (*pelabuhan*) atau hasil (*karangan*). Uji kesamaan makna dengan mengubah kata berimbuhan menjadi frasa definisi sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Pembangunan** (*proses*) disamakan dengan **perkebunan** (*tempat/lahan*). | **Pembangunan** (*proses*) sejajar dengan **penyaluran** (*proses menyalurkan*). |\n| **Kehujanan** (*terkena hujan*) disamakan dengan **kedinginan** (*merasakan dingin*). | **Kehujanan** (*tertimpa*) sejajar dengan **kejatuhan** (*tertimpa sesuatu*). |\n\n**Strategi Eksekusi:** Parafrasakan kata berimbuhan menjadi frasa kerja atau keadaan, lalu pilih opsi dengan pola definisi yang persis sama.",
+      "kunci_pembeda": "Memparafrasakan kata berimbuhan menjadi frasa definisi untuk memastikan kesamaan relasi makna antara imbuhan dan kata dasarnya.",
+      "visual": null
     },
     {
-      "example_id": "ppu-02-01-ex2",
-      "variation_name": "Variasi 2: Kaidah Morfofonemik Pembentukan Kata Baku / KTSP (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Kementerian berencana [...] program pemberdayaan UMKM pedesaan secara digital serta [...] anggaran infrastruktur dasar ke wilayah pelosok.",
-      "question_markdown": "Kata berimbuhan baku yang paling tepat untuk mengisi bagian rumpang kalimat di atas secara berurutan adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "memprogramkan; mensuplai"
-        },
-        {
-          "key": "B",
-          "text_markdown": "memrogramkan; menyuplai"
-        },
-        {
-          "key": "C",
-          "text_markdown": "memprogramkan; menyuplai"
-        },
-        {
-          "key": "D",
-          "text_markdown": "memrogramkan; mensuplai"
-        },
-        {
-          "key": "E",
-          "text_markdown": "memprogramkan; memproduksi"
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati huruf kedua kata dasar: kata *program* diawali gugus konsonan /pr/ (klaster), sedangkan kata *suplai* diawali konsonan /s/ yang langsung diikuti huruf vokal /u/. Ingat kaidah peluluhan KTSP!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kata \"Program\":** Kata dasar *program* diawali oleh klaster konsonan **/pr/**. Sesuai kaidah EYD V, fonem K, T, S, P yang diikuti konsonan lain (klaster) **TIDAK LULUH**. Bentuk bakunya adalah *me(N)-* + *programkan* $\\rightarrow$ **memprogramkan** (bukan *memrogramkan*).\n- **Analisis Kata \"Suplai\":** Kata dasar *suplai* diawali konsonan **/s/** dan langsung diikuti huruf vokal **/u/**. Karena memenuhi dua syarat (polisilabel dan diikuti vokal), fonem /s/ **WAJIB LULUH** menjadi alomorf /ny/. Bentuk bakunya adalah *me(N)-* + *suplai* $\\rightarrow$ **menyuplai** (bukan *mensuplai*).\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Rumus Huruf Kedua Klaster):**\n\n1. *Pr-ogram* (huruf ke-2 adalah /r/ = konsonan) $\\rightarrow$ Tahan, jangan diluluhkan $\\rightarrow$ **memprogramkan**.\n2. *S-uplai* (huruf ke-2 adalah /u/ = vokal) $\\rightarrow$ Wajib lebur/luluh $\\rightarrow$ **menyuplai**.\n3. Kombinasi yang benar adalah opsi **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bentuk *mensuplai* tidak baku karena fonem /s/ yang diikuti vokal wajib luluh menjadi *menyuplai*.\n- **Pilihan B Salah:** Bentuk *memrogramkan* salah karena gugus konsonan /pr/ tidak boleh diluluhkan.\n- **Pilihan D Salah:** Kedua bentuk kata imbuhan sama-sama menyalahi kaidah morfofonemik KTSP.\n- **Pilihan E Salah:** Kata *memproduksi* tidak kontekstual untuk melengkapi distribusi anggaran ke wilayah pelosok."
+      "nomor_variasi": 2,
+      "nama_variasi": "Ketepatan Bentukan Kata Berimbuhan Sesuai Konteks Kalimat Aktif dan Pasif",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam rapat evaluasi anggaran, para peneliti **membahas** temuan lapangan yang **didiskusikan** sejak pekan lalu.",
+      "bedah_pola_markdown": "**Bedah Pola Diatesis & Fungsi:**\nPerhatikan keselarasan pelaku dan predikat pada struktur berikut: [S] *para peneliti* + [P-aktif] ***membahas*** + [O] *temuan lapangan* + [K-klausa] *yang [P-pasif] **didiskusikan** sejak pekan lalu*. Kalimat aktif transitif mewajibkan predikat berawalan *meN-* dengan objek tanpa preposisi, sedangkan kalimat pasif memakai awalan *di-* atau *ter-* sesuai kaidah baku EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Tim auditor **membahas tentang** (*preposisi merusak fungsi objek*) laporan keuangan. | Tim auditor **membahas** (*verba transitif langsung*) laporan keuangan. |\n| Kebijakan baru itu **kami sudah sepakati** (*urutan pasif persona salah*). | Kebijakan baru itu **sudah kami sepakati** (*aspek mendahului pelaku*). |\n\n**Strategi Eksekusi:** Periksa apakah subjek [S] bertindak sebagai pelaku atau sasaran, lalu hilangkan preposisi yang menghalangi objek [O] di belakang predikat aktif *meN-*.",
+      "kunci_pembeda": "Menyelaraskan imbuhan aktif (meN-) atau pasif (di-/ter-) dengan peran subjek sebagai pelaku atau sasaran tindakan.",
+      "visual": null
     },
     {
-      "example_id": "ppu-02-01-ex3",
-      "variation_name": "Variasi 3: Analisis Dikotomi Konfiks pe(N)-...-an vs per-...-an (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "(1) Bencana banjir bandang meluluhlantakkan kawasan [...] padat penduduk di sepanjang bantaran sungai.\n(2) Pemerintah daerah segera mempercepat proses [...] warga terdampak ke zona relokasi yang aman.",
-      "question_markdown": "Bentuk kata turunan yang tepat untuk melengkapi kalimat (1) dan kalimat (2) secara berturut-turut adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "pemukiman dan permukiman"
-        },
-        {
-          "key": "B",
-          "text_markdown": "permukiman dan pemukiman"
-        },
-        {
-          "key": "C",
-          "text_markdown": "permukiman dan permukiman"
-        },
-        {
-          "key": "D",
-          "text_markdown": "pemukiman dan pemukiman"
-        },
-        {
-          "key": "E",
-          "text_markdown": "pemukim dan permukiman"
-        }
+      "nomor_variasi": 3,
+      "nama_variasi": "Peluluhan Fonem (K-T-S-P) dan Perubahan Bentuk Awalan dalam Konteks Kalimat",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Otoritas kesehatan terus **memengaruhi** perilaku warga agar **menyosialisasikan** pola hidup bersih sekaligus **menstabilkan** angka imunisasi.",
+      "bedah_pola_markdown": "**Bedah Pola Peluluhan & Fungsi:**\nAnalisis struktur fungsi kalimat: [S] *Otoritas kesehatan* + [P] ***memengaruhi*** + [O] *perilaku warga* + [K] *agar **menyosialisasikan** pola hidup bersih sekaligus **menstabilkan** angka imunisasi*. Sesuai kaidah EYD V dan KBBI VI, fonem awal **k, t, s, p** pada kata dasar luluh saat mendapat awalan *meN-* atau *peN-* (*pengaruh* $\\rightarrow$ *memengaruhi*; *sosialisasi* $\\rightarrow$ *menyosialisasikan*), kecuali kata dasar berkluster konsonan (*stabil* $\\rightarrow$ *menstabilkan*).\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemerintah **mensukseskan** dan **memperhatikan** (*salah peluluhan*) program vaksinasi. | Pemerintah **menyukseskan** (*luluh s*) dan **memerhatikan** (*luluh p*) program vaksinasi. |\n| Petugas **mengkaji** (*tidak luluh*) serta **menyetabilkan** (*luluh pada kluster*) data. | Petugas **mengaji** (*luluh k: menelaah*) serta **menstabilkan** (*kluster st*) data. |\n\n**Strategi Eksekusi:** Lepas semua imbuhan hingga tersisa kata dasar tunggal, lalu cek apakah huruf pertamanya *k, t, s, p* tunggal (luluh) atau gugus konsonan (tetap).",
+      "kunci_pembeda": "Meluluhkan huruf awal k, t, s, p pada kata dasar tunggal di belakang awalan meN-/peN-, tetapi mempertahankan gugus konsonan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perubahan Jenis Kata Akibat Pengimbuhan (Kata Kerja ↔ Kata Benda atau Sifat)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "**Peningkatan** kapasitas produksi baterai listrik **memperkuat** daya saing industri otomotif nasional secara **berkelanjutan**.",
+      "bedah_pola_markdown": "**Bedah Pola Derivasi & Fungsi:**\nPerhatikan pergeseran kelas kata dalam struktur kalimat: [S] ***Peningkatan** kapasitas produksi* (nomina dari *tingkat*) + [P] ***memperkuat*** (verba dari adjektiva *kuat*) + [O] *daya saing industri* + [K] *secara **berkelanjutan*** (adjektiva dari verba *lanjut*). Pengimbuhan tidak hanya menambah makna, tetapi juga mengubah kelas kata agar tepat menduduki fungsi sintaksis [S], [P], [O], atau [K] sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [S] **Memperbaiki** (*verba di posisi subjek*) tata kelola sangat mendesak. | [S] **Perbaikan** (*nomina berkonfiks per-...-an*) tata kelola sangat mendesak. |\n| Riset ini berjalan sangat **berkualitas** (*salah bentuk*) dan **efektifitas** (*nomina*). | Riset ini berjalan sangat **bermutu** (*adjektiva*) dan **efektif** (*adjektiva baku*). |\n\n**Strategi Eksekusi:** Tentukan posisi fungsi kata yang rumpang dalam kalimat, lalu pilih imbuhan pembentuk nomina (*peN-...-an*, *ke-...-an*) untuk [S]/[O] atau verba (*meN-*, *di-*) untuk [P].",
+      "kunci_pembeda": "Menyesuaikan jenis kata hasil pengimbuhan (benda, kerja, atau sifat) dengan slot fungsi [S]-[P]-[O]-[K] yang ditempatinya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Identifikasi Imbuhan Serapan (-wan, -isme, pra-, non-, -isasi) yang Semakna",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Para **ilmuwan** melakukan uji **praklinis** terhadap vaksin **nonalergi** sebelum memasuki tahap **hilirisasi** industri farmasi.",
+      "bedah_pola_markdown": "**Bedah Pola Afiks Serapan & Fungsi:**\nPerhatikan ketepatan ejaan dan makna afiks serapan pada kalimat: [S] *Para **ilmuwan*** (*-wan*: orang yang ahli) + [P] *melakukan* + [O] *uji **praklinis*** (*pra-*: sebelum) + [K] *terhadap vaksin **nonalergi*** (*non-*: bukan/tidak) *sebelum tahap **hilirisasi*** (*-isasi*: proses menjadikan). Sesuai kaidah EYD V, bentuk terikat (*pra-*, *non-*, *pasca-*) wajib ditulis serangkai dengan kata dasar, kecuali diikuti kata berhuruf kapital.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Penulisan terpisah: uji **pra klinis** dan sektor **non migas** di daerah. | Penulisan serangkai baku: uji **praklinis** dan sektor **nonmigas** di daerah. |\n| **Legalisir** (*akhiran Belanda tidak baku*) dokumen dan **modernisir** alat lab. | **Legalisasi** (*proses mengesahkan*) dokumen dan **modernisasi** (*proses pembaruan*) alat lab. |\n\n**Strategi Eksekusi:** Terjemahkan makna inti imbuhan serapan (*pra-* = sebelum, *non-* = bukan, *-wan* = pelaku, *-isasi* = proses), lalu pastikan penulisannya serangkai sesuai EYD V.",
+      "kunci_pembeda": "Menerjemahkan makna inti afiks serapan dan memastikan bentuk terikat ditulis serangkai dengan kata dasarnya sesuai EYD V.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
       ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Bedakan konsep *tempat/kawasan hunian* (berkorelasi dengan kata *bermukim*) dengan konsep *proses/tindakan memindahkan* (berkorelasi dengan kata *memukimkan*).",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kalimat (1):** Teks membutuhkan nomina yang merujuk pada **kawasan, wilayah, atau tempat tinggal**. Konfiks *per-...-an* yang berkorelasi dengan verba *bermukim* membentuk kata **permukiman** (daerah/tempat bermukim).\n- **Analisis Kalimat (2):** Teks membutuhkan nomina yang menyatakan **proses, tindakan, atau perbuatan**. Konfiks *pe(N)-...-an* yang berkorelasi dengan verba transitif *memukimkan* membentuk kata **pemukiman** (proses atau cara memukimkan penduduk).\n- Maka urutan yang tepat adalah *permukiman* (1) dan *pemukiman* (2).\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Proses vs Tempat):**\n\n1. Kalimat (1): Ada kata *kawasan* $\\rightarrow$ Butuh makna tempat $\\rightarrow$ **permukiman**.\n2. Kalimat (2): Ada kata *proses* $\\rightarrow$ Butuh makna tindakan $\\rightarrow$ **pemukiman**.\n3. Urutan: permukiman dan pemukiman $\\rightarrow$ Opsi **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Urutan posisi tertukar (*pemukiman* ditaruh di kalimat tempat, dan *permukiman* di kalimat proses).\n- **Pilihan C Salah:** Menggunakan kata *permukiman* untuk kedua konteks, padahal kalimat (2) jelas menyatakan proses tindakan.\n- **Pilihan D Salah:** Menggunakan kata *pemukiman* untuk kawasan fisik, yang merupakan kerancuan makna klasik di UTBK.\n- **Pilihan E Salah:** Kata *pemukim* merujuk pada orang (pelaku yang mendiami), bukan kawasan tempat tinggal."
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Lembaga riset energi nasional mempercepat **penghijauan** kawasan bekas tambang guna memulihkan keseimbangan ekosistem setempat.\"\n\nMakna imbuhan *peN-...-an* pada kata **penghijauan** memiliki kesamaan makna dengan imbuhan pada kata bercetak tebal dalam kalimat ....",
+      "opsi_jawaban": [
+        "A. Kawasan **perumahan** ramah lingkungan itu dibangun di dekat jalur transportasi massal.",
+        "B. Pemerintah memperluas **penanaman** modal asing pada sektor industri pengolahan mineral.",
+        "C. Seluruh dokumen hasil audit keuangan disimpan di ruang **penyimpanan** arsip utama.",
+        "D. Rute **penyeberangan** antarpulau sempat ditutup sementara akibat gelombang tinggi.",
+        "E. Tim arkeolog menemukan **permukiman** kuno di sekitar lembah sungai besar."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat stimulus, kata **penghijauan** bermakna *proses atau perbuatan menghijaukan* suatu kawasan. Makna serupa sebagai proses atau perbuatan ditemukan pada kata **penanaman** dalam **opsi B**, yakni *proses menanamkan* modal pada sektor industri. Sebaliknya, **perumahan** (**opsi A**) dan **permukiman** (**opsi E**) bermakna kumpulan atau tempat tinggal, **penyimpanan** (**opsi C**) merujuk pada tempat menyimpan, sedangkan **penyeberangan** (**opsi D**) merujuk pada jalur atau tempat menyeberang. Jadi, jawaban yang tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Kementerian Perhubungan terus **mensosialisasikan** aturan keselamatan pelayaran kepada operator kapal tradisional. (2) Langkah preventif ini dilakukan untuk **meminimalisir** risiko kecelakaan laut serta **memengaruhi** kepatuhan awak kapal terhadap standar navigasi.\n\nPerbaikan bentukan kata berimbuhan yang PALING TEPAT sesuai kaidah EYD V dan KBBI VI pada kutipan di atas adalah ....",
+      "opsi_jawaban": [
+        "A. mengganti kata *mensosialisasikan* menjadi *menyosialisasikan* dan *meminimalisir* menjadi *meminimalkan*",
+        "B. mengganti kata *memengaruhi* menjadi *mempengaruhi* dan *mensosialisasikan* menjadi *bersosialisasi*",
+        "C. mengganti kata *dilakukan* menjadi *melakukan* dan *meminimalisir* menjadi *minimalisasi*",
+        "D. mengganti kata *memengaruhi* menjadi *terpengaruh* dan *mensosialisasikan* menjadi *disosialisasikan*",
+        "E. mengganti kata *mensosialisasikan* menjadi *tersosialisasi* dan *memengaruhi* menjadi *berpengaruh*"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Berdasarkan kaidah EYD V, kata dasar *sosialisasi* berawalan huruf tunggal *s* wajib luluh ketika mendapat awalan *meN-*, sehingga bentuk bakunya adalah **menyosialisasikan**. Selain itu, akhiran serapan Belanda *-ir* tidak baku dalam KBBI VI, sehingga *meminimalisir* harus diperbaiki menjadi **meminimalkan** (**opsi A**). Sementara itu, kata **memengaruhi** sudah baku karena huruf *p* pada kata dasar *pengaruh* luluh. **Opsi B**, **C**, **D**, dan **E** justru merusak struktur aktif transitif kalimat.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan paragraf berikut!\n\n> (1) Pengujian **praklinis** kandidat obat herbal tersebut melibatkan puluhan **ilmuwan** dari berbagai pusat riset biomedis. (2) Tahapan awal ini bertujuan memastikan keamanan formula **nontoksik** sebelum memasuki fase uji coba pada manusia.\n\nKata berimbuhan serapan yang memiliki kesamaan makna imbuhan dengan kata **ilmuwan** pada kalimat (1) adalah ....",
+      "opsi_jawaban": [
+        "A. sastrawan",
+        "B. rupawan",
+        "C. hartawan",
+        "D. dermawan",
+        "E. bangsawan"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Menurut KBBI VI, imbuhan serapan *-wan* pada kata **ilmuwan** bermakna *orang yang ahli atau berkecimpung dalam bidang ilmu*. Makna serupa sebagai orang yang ahli dalam bidang tertentu terdapat pada kata **sastrawan** (**opsi A**), yakni *orang yang ahli atau berkarya di bidang sastra*. Sebaliknya, **rupawan** (**opsi B**), **hartawan** (**opsi C**), **dermawan** (**opsi D**), dan **bangsawan** (**opsi E**) bermakna *orang yang memiliki sifat atau kepemilikan* rupa, harta, derma, serta kebangsawanan.",
+      "visual": null
     }
   ]
 }

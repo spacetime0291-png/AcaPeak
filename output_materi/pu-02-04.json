@@ -1,0 +1,141 @@
+{
+  "kode_subbab": "pu-02-04",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 2: Penalaran Deduktif",
+  "judul_subbab": "Logika Kuantor dan Diagram Venn",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Premis menyatakan: 'Semua atlet pelatnas menjalani tes kebugaran' dan 'Sebagian atlet pelatnas adalah peraih medali emas.' Apakah pasti ada peraih medali emas yang tidak menjalani tes kebugaran?",
+      "opsi_cepat": [
+        "Pasti Benar",
+        "Salah (Justru Semua Peraih Medali Emas Menjalani Tes)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kata 'sebagian' dalam logika formal UTBK bermakna minimal satu dan tidak otomatis berarti 'sebagian lainnya tidak'. Karena seluruh atlet pelatnas masuk lingkaran tes kebugaran, irisan peraih medali emas di dalamnya pasti ikut menjalani tes kebugaran."
+    },
+    "konsep_inti_markdown": "**Logika kuantor** menguji hubungan antarhimpunan berdasarkan cakupan anggotanya melalui pemetaan **Diagram Venn**:\n\n* **Universal ($\\forall$, Semua):** Seluruh anggota himpunan $A$ berada di dalam himpunan $B$ ($A \\subset B$).\n* **Eksistensial ($\\exists$, Sebagian/Ada):** Minimal satu anggota $A$ beririsan dengan $B$ ($A \\cap B \\neq \\emptyset$).\n* **Eksklusi (Tidak Ada):** Himpunan $A$ dan $B$ saling lepas total ($A \\cap B = \\emptyset$).\n* **Aturan Emas:** Satu premis berkuantor **sebagian** membatasi simpulan wajib berkuantor **sebagian**.",
+    "radar_jebakan_utbk": [
+      "Menganggap pernyataan 'Sebagian A adalah B' otomatis berarti 'Sebagian A bukan B', padahal kata 'sebagian' dalam logika formal mencakup kemungkinan seluruhnya.",
+      "Menarik simpulan berkuantor 'semua' dari dua premis yang salah satunya berkuantor 'sebagian', atau menggabungkan dua premis berkuantor 'sebagian' tanpa jaminan irisan tengah."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='72' y='38' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Semua A = B</text><circle cx='72' cy='112' r='44' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><circle cx='72' cy='122' r='22' fill='#FFFFFF' stroke='#1E293B' stroke-width='2'/><text x='72' y='86' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>B</text><text x='72' y='126' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>A</text><text x='72' y='182' text-anchor='middle' font-family='sans-serif' font-size='11' fill='#1E293B'>A di dalam B</text><line x1='126' y1='28' x2='126' y2='192' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><text x='182' y='38' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Sebagian A = B</text><circle cx='168' cy='112' r='28' fill='#EFF6FF' fill-opacity='0.7' stroke='#3B82F6' stroke-width='2'/><circle cx='196' cy='112' r='28' fill='#FFFBEB' fill-opacity='0.7' stroke='#F59E0B' stroke-width='2'/><circle cx='182' cy='112' r='4' fill='#10B981'/><text x='152' y='116' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>A</text><text x='212' y='116' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>B</text><text x='182' y='182' text-anchor='middle' font-family='sans-serif' font-size='11' fill='#10B981'>Ada irisan</text><line x1='238' y1='28' x2='238' y2='192' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><text x='290' y='38' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Tidak Ada A = B</text><circle cx='266' cy='112' r='20' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><circle cx='314' cy='112' r='20' fill='#FFFBEB' stroke='#F59E0B' stroke-width='2'/><text x='266' y='116' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>A</text><text x='314' y='116' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>B</text><text x='290' y='182' text-anchor='middle' font-family='sans-serif' font-size='11' fill='#1E293B'>Saling lepas</text></svg>",
+      "caption": "Perbandingan visual Diagram Venn untuk kuantor Semua, Sebagian, dan Tidak Ada"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Irisan Kuantor Universal dan Eksistensial",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Semua peserta pelatihan riset nasional wajib menguasai perangkat lunak statistik. Sebagian peserta pelatihan riset nasional berasal dari perguruan tinggi di luar Pulau Jawa.",
+      "bedah_pola_markdown": "**Struktur Logika:** Himpunan peserta pelatihan riset ($A$) berada sepenuhnya di dalam kelompok penguasa perangkat lunak statistik ($B$). Karena sebagian anggota $A$ merupakan mahasiswa asal luar Pulau Jawa ($C$), irisan antara kelompok $A$ dan $C$ otomatis ikut terlingkup di dalam lingkaran $B$.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Kata *sebagian* dianggap pasti berarti hanya segelintir saja | Kata *sebagian* bermakna minimal satu dan bisa mencakup seluruhnya |\n| Kesimpulan memakai kata *semua* agar terdengar meyakinkan | Gabungan premis *semua* dan *sebagian* wajib menghasilkan simpulan *sebagian* |\n\n**Langkah Eliminasi:** Pertama, gambar lingkaran $A$ di dalam lingkaran besar $B$, lalu buat lingkaran $C$ memotong sebagian area $A$. Kedua, coret seluruh opsi berkuantor **semua** atau **seluruh** karena premis kedua membatasi irisan secara partikular. Ketiga, pilih simpulan sah bahwa **sebagian** mahasiswa luar Pulau Jawa menguasai perangkat lunak statistik.",
+      "kunci_pembeda": "Menggabungkan himpunan bagian universal (Semua A adalah B) dengan irisan sebagian (Sebagian A adalah C) sehingga menghasilkan simpulan eksistensial pada irisan ketiganya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Negasi Pernyataan Berkuantor",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Panitia olimpiade sains mengumumkan klaim bahwa semua peserta dari sekolah mitra telah mengunggah berkas verifikasi keaslian karya. Tim auditor menemukan fakta lapangan yang membuktikan bahwa pengumuman panitia tersebut tidak benar.",
+      "bedah_pola_markdown": "**Struktur Logika:** Ingkaran dari pernyataan universal positif (**Semua** $A$ adalah $B$) bukanlah pernyataan universal negatif (**Tidak ada** $A$ yang $B$), melainkan eksistensial negatif (**Ada/Sebagian** $A$ yang **tidak** $B$). Satu saja bukti penyangkal sudah cukup meruntuhkan klaim universal.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Lawan kata *semua patuh* dianggap *semua melanggar* | Negasi *Semua A adalah B* adalah *Ada/Sebagian A tidak B* |\n| Kata *tidak semua* dianggap berbeda dengan *sebagian tidak* | Frasa *tidak semua* ekuivalen dengan *ada/sebagian yang tidak* |\n\n**Langkah Eliminasi:** Pertama, identifikasi kuantor awal kalimat yang diingkari (*semua* bertukar dengan *ada/sebagian*, sedangkan *tidak ada* bertukar dengan *ada/sebagian*). Kedua, ubah predikat kalimat menjadi berlawanan (*telah mengunggah* menjadi *belum/tidak mengunggah*). Ketiga, coret opsi berkuantor mutlak **tidak ada** atau **semua**, lalu pilih opsi bahwa **ada** peserta sekolah mitra yang belum mengunggah berkas verifikasi.",
+      "kunci_pembeda": "Menukar jenis kuantor universal dengan eksistensial sekaligus membalikkan sifat predikat kalimat dari positif menjadi negatif atau sebaliknya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Eksklusi Himpunan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tidak ada kendaraan berbahan bakar bensin yang diizinkan melintasi kawasan zona rendah emisi pusat kota. Semua bus listrik operasional milik pemerintah daerah beroperasi penuh di kawasan zona rendah emisi tersebut.",
+      "bedah_pola_markdown": "**Struktur Logika:** Premis pertama memisahkan total himpunan kendaraan bensin ($A$) dari pelintas zona rendah emisi ($B$) sehingga keduanya saling lepas ($A \\cap B = \\emptyset$). Karena seluruh bus listrik ($C$) berada di dalam $B$, maka himpunan $C$ otomatis terpisah total dari himpunan $A$.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Eksklusi dianggap hanya berlaku satu arah dari subjek awal | Hubungan *Tidak ada A yang B* berlaku simetris (*Tidak ada B yang A*) |\n| Menyimpulkan *sebagian* agar terasa lebih aman dari kesalahan | Hubungan himpunan saling lepas menghasilkan simpulan mutlak *tidak ada* |\n\n**Langkah Eliminasi:** Pertama, gambar lingkaran $A$ dan $B$ secara terpisah jauh tanpa irisan, lalu tempatkan lingkaran $C$ di dalam $B$. Kedua, coret seluruh opsi yang membuka celah irisan (*sebagian* atau *mungkin*) antara $A$ dan $C$. Ketiga, pilih simpulan mutlak bahwa **tidak ada** bus listrik pemerintah daerah yang berbahan bakar bensin.",
+      "kunci_pembeda": "Memetakan dua himpunan yang saling lepas total tanpa irisan sehingga setiap himpunan bagian di dalam salah satunya pasti terpisah mutlak dari himpunan lawan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Penarikan Kesimpulan 3 Himpunan Bersusun tanpa Kata 'Semua' di Kedua Premis",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Sebagian peneliti di lembaga bioteknologi merupakan lulusan doktor luar negeri. Sebagian lulusan doktor luar negeri menjadi ketua tim proyek pengembangan vaksin.",
+      "bedah_pola_markdown": "**Struktur Logika:** Himpunan peneliti ($A$) beririsan sebagian dengan lulusan doktor luar negeri ($B$), dan $B$ beririsan sebagian dengan ketua tim vaksin ($C$). Karena himpunan tengah ($B$) tidak pernah mencakup seluruh anggota secara universal, irisan $A \\cap B$ dan $B \\cap C$ bisa terpisah total di dalam lingkaran $B$.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Dua rantai *sebagian* dianggap otomatis menyambung ujung ke ujung | Dua premis *sebagian* tanpa kuantor *semua* tidak menjamin irisan |\n| Menyimpulkan *sebagian A adalah C* dari dua premis partikular | Simpulan sahnya adalah *tidak dapat ditarik kesimpulan pasti* |\n\n**Langkah Eliminasi:** Pertama, periksa apakah himpunan penghubung tengah ($B$) pernah didahului kata **semua** pada salah satu premis. Kedua, jika kedua premis hanya memakai **sebagian**, posisikan irisan $A$ di sisi kiri $B$ dan irisan $C$ di sisi kanan $B$ tanpa bersentuhan. Ketiga, coret seluruh opsi kepastian dan pilih **tidak dapat disimpulkan**.",
+      "kunci_pembeda": "Mendeteksi kegagalan distribusi term tengah ketika kedua premis menggunakan kuantor partikular 'sebagian' tanpa jaminan irisan antara himpunan pertama dan ketiga.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='34' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Dua Premis Sebagian: A dan C Bisa Terpisah</text><circle cx='180' cy='116' r='54' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><circle cx='106' cy='116' r='38' fill='#FFFBEB' fill-opacity='0.75' stroke='#F59E0B' stroke-width='2'/><circle cx='254' cy='116' r='38' fill='#ECFDF5' fill-opacity='0.75' stroke='#10B981' stroke-width='2'/><text x='94' y='112' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='94' y='128' text-anchor='middle' font-family='sans-serif' font-size='11' fill='#1E293B'>Peneliti</text><text x='180' y='112' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>B</text><text x='180' y='128' text-anchor='middle' font-family='sans-serif' font-size='11' fill='#1E293B'>Doktor LN</text><text x='266' y='112' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>C</text><text x='266' y='128' text-anchor='middle' font-family='sans-serif' font-size='11' fill='#1E293B'>Ketua Tim</text><text x='180' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Irisan A-B dan B-C ada, tetapi A dan C tidak bertemu</text></svg>",
+        "caption": "Visualisasi 3 himpunan tanpa kuantor universal pada himpunan tengah B"
+      }
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Kuantor Numerik atau Proporsional",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Berdasarkan data kepegawaian instansi, sebanyak $75\\%$ pegawai menguasai bahasa Inggris aktif dan $60\\%$ pegawai memiliki sertifikasi manajemen proyek. Tidak satupun pegawai magang termasuk dalam data kepegawaian tetap tersebut.",
+      "bedah_pola_markdown": "**Struktur Logika:** Kuantor numerik mengukur kepastian irisan melalui batas persentase populasi ($100\\%$). Jika dua kelompok berada dalam populasi yang sama dengan total persentase melebihi $100\\%$ ($75\\% + 60\\% = 135\\%$), keduanya wajib beririsan minimal sebesar selisih kelebihannya ($135\\% - 100\\% = 35\\%$). \n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Kata *mayoritas* atau *hampir seluruh* dianggap sama dengan *semua* | *Mayoritas* ($>50\\%$) dan *hampir seluruh* tetap menyisakan pengecualian |\n| Dua kelompok mayoritas dianggap bisa terpisah tanpa irisan | Total proporsi $>100\\%$ menjamin minimal irisan $(A + B - 100\\%)$ |\n\n**Langkah Eliminasi:** Pertama, terjemahkan frasa proporsional (*mayoritas* $= >50\\%$, *tidak satupun* $= 0\\%$). Kedua, jumlahkan dua persentase dalam satu semesta; jika melampaui $100\\%$, hitung irisan minimumnya. Ketiga, coret opsi yang melampaui batas minimum irisan atau menyamakan *hampir seluruh* dengan *semua*, lalu pilih simpulan minimal $35\\%$ pegawai memiliki kedua kualifikasi.",
+      "kunci_pembeda": "Menggunakan batas proporsi kuantitatif seperti mayoritas, hampir seluruh, atau persentase untuk menghitung kepastian irisan minimum antarkelompok.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Semua anggota tim audit internal perusahaan wajib menandatangani pakta integritas tahunan. Tidak ada anggota tim audit internal yang diperbolehkan merangkap jabatan di divisi pengadaan barang. Sebagian karyawan divisi keuangan merupakan anggota tim audit internal perusahaan. Simpulan yang PASTI BENAR berdasarkan informasi tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. Semua karyawan divisi keuangan wajib menandatangani pakta integritas tahunan.",
+        "B. Sebagian karyawan divisi keuangan tidak diperbolehkan merangkap jabatan di divisi pengadaan barang.",
+        "C. Tidak ada karyawan divisi keuangan yang diperbolehkan bekerja di divisi pengadaan barang.",
+        "D. Sebagian anggota tim audit internal yang menandatangani pakta integritas berasal dari divisi pengadaan barang.",
+        "E. Semua karyawan yang menandatangani pakta integritas berasal dari divisi keuangan."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Irisan antara **sebagian karyawan divisi keuangan** dan **tim audit internal** berada sepenuhnya di dalam lingkaran tim audit. Karena tidak ada satu pun anggota tim audit yang boleh merangkap di divisi pengadaan barang, kelompok irisan karyawan keuangan tersebut juga terlarang merangkap di divisi pengadaan (**Opsi B**). **Opsi A** dan **C** keliru menggunakan kuantor mutlak *semua* dan *tidak ada* untuk seluruh divisi keuangan, **Opsi D** bertentangan dengan premis eksklusi, sedangkan **Opsi E** membalik arah himpunan.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan dua premis berikut!\n\n* **Premis 1:** Sebagian peserta konferensi internasional merupakan dosen perguruan tinggi negeri.\n* **Premis 2:** Sebagian dosen perguruan tinggi negeri menjadi pembicara utama dalam sesi pleno.\n\nApabila diketahui pula bahwa klaim *'Semua pembicara utama dalam sesi pleno berasal dari luar negeri'* bernilai **SALAH**, manakah simpulan yang PASTI BENAR?",
+      "opsi_jawaban": [
+        "A. Sebagian peserta konferensi internasional menjadi pembicara utama dalam sesi pleno.",
+        "B. Semua peserta konferensi internasional bukan pembicara utama dalam sesi pleno.",
+        "C. Ada pembicara utama dalam sesi pleno yang tidak berasal dari luar negeri.",
+        "D. Tidak ada dosen perguruan tinggi negeri yang menjadi pembicara utama dalam sesi pleno.",
+        "E. Sebagian pembicara utama dalam sesi pleno pasti merupakan peserta konferensi internasional."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Premis 1 dan Premis 2 sama-sama menggunakan kuantor **sebagian** pada himpunan tengah (dosen perguruan tinggi negeri), sehingga tidak ada jaminan irisan antara peserta konferensi dan pembicara utama (**Opsi A**, **B**, dan **E** gugur). Sementara itu, karena klaim universal *'Semua pembicara utama berasal dari luar negeri'* bernilai salah, negasi logisnya wajib benar, yakni **ada pembicara utama dalam sesi pleno yang tidak berasal dari luar negeri** (**Opsi C**). **Opsi D** bertentangan langsung dengan Premis 2.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Laporan evaluasi akademik sebuah fakultas mencatat bahwa sebanyak $80\\%$ mahasiswa tingkat akhir telah menyelesaikan mata kuliah metodologi penelitian dan $65\\%$ mahasiswa tingkat akhir telah lulus ujian proposal skripsi. Sementara itu, tidak satupun mahasiswa tingkat awal diizinkan mengambil ujian proposal skripsi. Berdasarkan informasi tersebut, pernyataan: *'Minimal $45\\%$ mahasiswa tingkat akhir di fakultas tersebut telah menyelesaikan mata kuliah metodologi penelitian sekaligus lulus ujian proposal skripsi'* bernilai ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Dalam satu populasi semesta mahasiswa tingkat akhir ($100\\%$), terdapat dua kelompok beririsan dengan proporsi $80\\%$ (selesai metodologi penelitian) dan $65\\%$ (lulus ujian proposal). Irisan minimum kedua kelompok tersebut dihitung dari selisih kelebihan total persentase terhadap semesta, yaitu $80\\% + 65\\% - 100\\% = 45\\%$. Karena dalam kondisi terpisah paling ekstrem pun irisan keduanya tetap paling sedikit $45\\%$, pernyataan tersebut bernilai **Pasti Benar** (**Opsi A**).",
+      "visual": null
+    }
+  ]
+}

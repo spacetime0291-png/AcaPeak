@@ -1,0 +1,132 @@
+{
+  "kode_subbab": "pu-03-03",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 3: Penalaran Kuantitatif",
+  "judul_subbab": "Operasi Hitung dan Aritmetika Dasar",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Harga sebuah laptop naik $20\\%$, lalu bulan berikutnya didiskon $20\\%$ dari harga baru. Banyak peserta mengira harganya kembali ke harga awal—apakah benar demikian?",
+      "opsi_cepat": [
+        "Ya, naik 20% dan turun 20% saling meniadakan",
+        "Salah, harga akhir justru turun 4% dari harga awal"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Basis pengali kedua operasi berbeda: kenaikan $20\\%$ dihitung dari harga awal ($100\\%$), sedangkan diskon $20\\%$ dihitung dari harga yang sudah naik ($120\\%$). Akibatnya, $1,2 \\times 0,8 = 0,96$ atau turun bersih $4\\%$."
+    },
+    "konsep_inti_markdown": "**Aritmetika PU UTBK** menguji kecepatan berhitung taktis tanpa kalkulator melalui aproksimasi dan sifat aljabar:\n\n* **Aproksimasi Pecahan Istimewa:** Ubah persentase rumit ke pecahan sederhana ($33,3\\% \\approx \\frac{1}{3}$, $16,7\\% \\approx \\frac{1}{6}$).\n* **Banding Pecahan Cepat:** Gunakan kali silang bawah-ke-atas atau selisih pembilang-penyebut.\n* **Prioritas & Aljabar:** Dahulukan kurung-kali-bagi dan manfaatkan identitas $a^2 - b^2 = (a+b)(a-b)$.\n* **Persentase Bertingkat:** Kalikan faktor pengali beruntun, bukan menjumlahkan persennya.",
+    "radar_jebakan_utbk": [
+      "Menjumlahkan langsung persentase kenaikan dan penurunan bertingkat (misal $+25\\%$ lalu $-20\\%$ dianggap $+5\\%$), padahal basis pengalinya berubah.",
+      "Menghitung perkalian atau pembagian desimal panjang secara eksak hingga angka di belakang koma, padahal opsi jawaban UTBK berjarak cukup jauh untuk diestimasi."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Estimasi dan Aproksimasi Cepat Pecahan, Desimal, dan Persentase Kompleks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan nilai pendekatan paling akurat untuk operasi hitung berikut: $33,4\\% \\times 603 + 16,6\\% \\times 298$.",
+      "bedah_pola_markdown": "**Pola Kunci:** Ubah desimal atau persentase kompleks menjadi pecahan istimewa terdekat, lalu bulatkan bilangan pengali ke kelipatan penyebutnya.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Konversi ke pecahan istimewa:** Kenali bahwa $33,4\\% \\approx \\frac{1}{3}$ dan $16,6\\% \\approx \\frac{1}{6}$. Jangan pernah mengalikan desimal secara bersusun.\n2. **Bulatkan bilangan pengali secara kompensatif:**\n   * Bulatkan $603 \\rightarrow 600$ (turun sedikit), lalu hitung $\\frac{1}{3} \\times 600 = 200$. Karena $33,4\\% > 33,3\\%$ dan $603 > 600$, nilai eksaknya sedikit di atas $200$ (sekitar $201,4$).\n   * Bulatkan $298 \\rightarrow 300$ (naik sedikit), lalu hitung $\\frac{1}{6} \\times 300 = 50$. Karena $16,6\\% < 16,67\\%$, nilai eksaknya tepat di kisaran $49,5$.\n3. **Jumlahkan dan eliminasi opsi:** Total estimasi adalah $201,4 + 49,5 \\approx 250,9$. Segera pilih opsi yang paling dekat dengan $251$ dan coret opsi di bawah $245$ atau di atas $255$.",
+      "kunci_pembeda": "Mengganti persentase tanggung dengan pecahan berpenyebut kecil ($\\frac{1}{3}, \\frac{1}{6}, \\frac{1}{8}$) untuk menghindari perkalian desimal panjang.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Perbandingan Nilai Pecahan Besar (Metode Kali Silang & Selisih Penyebut)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Urutkan pecahan berikut dari yang terbesar hingga terkecil: $P = \\frac{17}{21}$, $Q = \\frac{23}{27}$, dan $R = \\frac{11}{15}$.",
+      "bedah_pola_markdown": "**Pola Kunci:** Jika selisih antara penyebut dan pembilang sama pada beberapa pecahan murni ($<1$), pecahan dengan angka pembilang terbesar memiliki nilai paling besar.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Cek selisih penyebut dan pembilang:**\n   * Pada $P = \\frac{17}{21}$, selisihnya $21 - 17 = 4$.\n   * Pada $Q = \\frac{23}{27}$, selisihnya $27 - 23 = 4$.\n   * Pada $R = \\frac{11}{15}$, selisihnya $15 - 11 = 4$.\n2. **Terapkan aturan komplementer ($1 - \\text{pecahan}$):** Setiap pecahan bernilai $1 - \\frac{4}{\\text{penyebut}}$. Pengurang terkecil menghasilkan nilai sisa terbesar, sehingga $\\frac{23}{27} > \\frac{17}{21} > \\frac{11}{15}$ ($Q > P > R$).\n3. **Gunakan kali silang jika selisih berbeda:** Untuk membandingkan $\\frac{a}{b}$ dan $\\frac{c}{d}$, kalikan menyilang ke atas ($a \\times d$ di kiri vs $c \\times b$ di kanan) tanpa menyamakan penyebut.",
+      "kunci_pembeda": "Menentukan urutan pecahan tanpa pembagian desimal dengan mengecek selisih tetap pembilang-penyebut atau perkalian silang ke atas.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Aritmetika Kata Cerita Cepat (Selisih Umur, Bagi Hasil, Konversi Satuan)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Perbandingan usia Rani dan Sinta saat ini adalah $3 : 5$. Jika selisih usia mereka $12$ tahun, tentukan perbandingan usia mereka $6$ tahun mendatang.",
+      "bedah_pola_markdown": "**Pola Kunci:** Selisih usia dua orang bersifat konstan sepanjang waktu, sehingga selisih angka rasio selalu mewakili selisih tahun yang sama.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Kunci nilai $1$ bagian rasio:** Selisih rasio Rani dan Sinta adalah $5 - 3 = 2$ bagian, yang setara dengan $12$ tahun. Artinya, $1$ bagian $= \\frac{12}{2} = 6$ tahun.\n2. **Hitung usia saat ini secara proporsional:**\n   * Usia Rani $= 3 \\times 6 = 18$ tahun.\n   * Usia Sinta $= 5 \\times 6 = 30$ tahun.\n3. **Tambahkan pergeseran waktu ($+6$ tahun):** Karena $6$ tahun setara dengan $+1$ bagian rasio, usia Rani menjadi $18 + 6 = 24$ tahun ($4$ bagian) dan usia Sinta menjadi $30 + 6 = 36$ tahun ($6$ bagian).\n4. **Sederhanakan rasio akhir:** Perbandingan usia mereka menjadi $24 : 36$ atau disederhanakan menjadi $2 : 3$.",
+      "kunci_pembeda": "Memanfaatkan kekekalan selisih rasio untuk menemukan nilai satu satuan bagian sebelum melakukan konversi waktu atau pembagian hasil.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Operasi Bilangan dengan Aturan Prioritas & Manipulasi Aljabar Dasar ($a^2 - b^2$)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Hitunglah hasil cepat dari operasi bilangan berikut tanpa perkalian bersusun: $\\frac{2026^2 - 2024^2}{4} + 18 \\div 3 \\times 2$.",
+      "bedah_pola_markdown": "**Pola Kunci:** Gunakan identitas selisih dua kuadrat $a^2 - b^2 = (a + b)(a - b)$ untuk menyederhanakan kuadrat bilangan besar, lalu eksekusi perkalian dan pembagian setara dari kiri ke kanan.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Faktorkan bentuk kuadrat di pembilang:** Ubah $2026^2 - 2024^2$ menjadi $(2026 + 2024)(2026 - 2024) = 4050 \\times 2 = 8100$.\n2. **Sederhanakan pecahan pertama:** Bagi hasil tersebut dengan penyebutnya: $\\frac{8100}{4} = 2025$ (atau langsung coret $2$ dengan $4$, lalu $4050 \\div 2 = 2025$).\n3. **Terapkan aturan prioritas (KABATAKU) secara ketat:** Pada suku $18 \\div 3 \\times 2$, pembagian dan perkalian memiliki derajat setara sehingga wajib dikerjakan dari kiri: $(18 \\div 3) \\times 2 = 6 \\times 2 = 12$ (bukan $18 \\div 6 = 3$).\n4. **Jumlahkan hasil akhir:** Gabungkan kedua bagian menjadi $2025 + 12 = 2037$.",
+      "kunci_pembeda": "Memfaktorkan selisih kuadrat menjadi perkalian jumlah dan selisihnya sebelum mengeksekusi operasi kali-bagi dari kiri ke kanan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Analisis Perubahan Persentase Bertingkat (Kenaikan Diikuti Penurunan)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Volume ekspor kopi sebuah daerah meningkat $25\\%$ pada kuartal I, lalu menurun $20\\%$ pada kuartal II akibat cuaca. Tentukan perubahan bersih volume ekspor dari kondisi awal.",
+      "bedah_pola_markdown": "**Pola Kunci:** Perubahan persentase beruntun tidak boleh dijumlahkan langsung, melainkan dikalikan menggunakan faktor pengali terhadap basis awal $100$ atau rumus praktis $a + b + \\frac{a \\times b}{100}$.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Gunakan metode basis $100$:** Misalkan volume awal ekspor adalah $100$ ton.\n2. **Hitung tahap pertama (naik $25\\%$):** Volume menjadi $100 + 25 = 125$ ton (faktor pengali $1,25$).\n3. **Hitung tahap kedua (turun $20\\%$ dari nilai baru):** Hitung $20\\% \\times 125 = \\frac{1}{5} \\times 125 = 25$ ton. Maka, volume akhir menjadi $125 - 25 = 100$ ton.\n4. **Evaluasi perubahan bersih:** Karena nilai akhir kembali tepat ke $100$ ton, perubahan bersihnya adalah $0\\%$ (tetap). Cara cepat alternatif: $+25 - 20 + \\frac{(25)(-20)}{100} = 5 - 5 = 0\\%$.",
+      "kunci_pembeda": "Mengalikan faktor pertumbuhan secara berantai pada basis $100$ karena persentase kedua dihitung dari nilai setelah perubahan pertama.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Dinas Pertanian mencatat capaian realisasi distribusi pupuk bersubsidi di lima kabupaten pada semester pertama sebagai berikut:\n\n* Kabupaten A: $\\frac{19}{24}$ dari target\n* Kabupaten B: $79,2\\%$ dari target\n* Kabupaten C: $\\frac{29}{34}$ dari target\n* Kabupaten D: $0,815$ dari target\n* Kabupaten E: $\\frac{24}{29}$ dari target\n\nKabupaten manakah yang memiliki persentase realisasi distribusi **PALING TINGGI**?",
+      "opsi_jawaban": [
+        "A. Kabupaten A",
+        "B. Kabupaten B",
+        "C. Kabupaten C",
+        "D. Kabupaten D",
+        "E. Kabupaten E"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Perhatikan bahwa pecahan pada Kabupaten A ($\\frac{19}{24}$), C ($\\frac{29}{34}$), dan E ($\\frac{24}{29}$) sama-sama memiliki selisih penyebut dan pembilang sebesar $5$. Berdasarkan aturan komplementer pecahan murni, pembilang terbesar menghasilkan nilai tertinggi, sehingga **C > E > A**. Selanjutnya, aproksimasi nilai C: karena $\\frac{29}{34} > \\frac{25}{30} = \\frac{5}{6} \\approx 83,3\\%$, capaian Kabupaten C otomatis melampaui Kabupaten D ($81,5\\%$) dan Kabupaten B ($79,2\\%$). Jadi, realisasi paling tinggi adalah **Kabupaten C** (**C**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diketahui dua kuantitas $P$ dan $Q$ yang didefinisikan sebagai hasil operasi bilangan berikut:\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| $\\frac{105^2 - 95^2}{8} - 24 \\div 4 \\times 2$ | $238$ |\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$ berdasarkan informasi yang diberikan?",
+      "opsi_jawaban": [
+        "A. Kuantitas $P$ lebih besar daripada $Q$",
+        "B. Kuantitas $Q$ lebih besar daripada $P$",
+        "C. Kuantitas $P$ sama dengan $Q$",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Faktorkan pembilang pada $P$ menggunakan identitas $a^2 - b^2 = (a+b)(a-b)$: $105^2 - 95^2 = (105 + 95)(105 - 95) = 200 \\times 10 = 2000$. Bagi dengan penyebutnya sehingga diperoleh $\\frac{2000}{8} = 250$. Selanjutnya, kerjakan operasi pembagian dan perkalian dari kiri ke kanan: $24 \\div 4 \\times 2 = 6 \\times 2 = 12$ (jebakan umum: mendahulukan $4 \\times 2$). Maka, $P = 250 - 12 = 238$. Karena $Q = 238$, hubungan yang tepat adalah **$P = Q$** (**C**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Sebuah koperasi kopi membagi hasil panen biji kopi kering kepada mitra petani dan pengelola dengan rasio $5 : 3$. Pada panen raya bulan ini, total biji kopi yang terkumpul adalah $2,4$ ton. Namun, saat proses penyortiran, jatah bagian mitra petani mengalami penyusutan bobot sebesar $10\\%$, kemudian harga jual per kilogramnya naik $20\\%$ dari harga acuan awal Rp$50.000,00$/kg. Berapa total nilai jual bersih biji kopi milik mitra petani setelah penyortiran?",
+      "opsi_jawaban": [
+        "A. Rp$72.000.000,00$",
+        "B. Rp$75.000.000,00$",
+        "C. Rp$81.000.000,00$",
+        "D. Rp$82.500.000,00$",
+        "E. Rp$90.000.000,00$"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Konversi $2,4\\text{ ton} = 2.400\\text{ kg}$. Jatah awal mitra petani adalah $\\frac{5}{5+3} \\times 2.400 = 1.500\\text{ kg}$ dengan nilai awal $1.500 \\times \\text{Rp}50.000,00 = \\text{Rp}75.000.000,00$. Perubahan bertingkat turun $10\\%$ lalu naik $20\\%$ menghasilkan faktor pengali bersih $0,9 \\times 1,2 = 1,08$ atau naik $8\\%$ (jebakan **D** menjumlahkan $-10\\% + 20\\% = +10\\%$, sedangkan **E** mengabaikan penyusutan). Nilai jual bersihnya adalah $1,08 \\times \\text{Rp}75.000.000,00 = \\text{Rp}81.000.000,00$ (**C**).",
+      "visual": null
+    }
+  ]
+}

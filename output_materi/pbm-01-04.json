@@ -1,0 +1,119 @@
+{
+  "kode_subbab": "pbm-01-04",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 1: Ejaan (EYD V)",
+  "judul_subbab": "Penulisan Angka dan Bilangan",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam teks laporan penelitian, manakah penulisan yang sesuai kaidah EYD V: 'Sebanyak 150 orang responden mengisi survei pada abad ke-XXI' atau 'Seratus lima puluh orang responden mengisi survei pada abad XXI'?",
+      "opsi_cepat": [
+        "Opsi pertama (150 orang ... abad ke-XXI)",
+        "Opsi kedua (Seratus lima puluh ... abad XXI)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Bilangan tingkat memakai Romawi tidak boleh diawali 'ke-' (cukup abad XXI), sedangkan bilangan di awal kalimat wajib ditulis huruf jika maksimal dua kata."
+    },
+    "konsep_inti_markdown": "Kaidah **EYD V** mengatur penulisan angka dan bilangan berdasarkan posisi dan fungsinya:\n- **Satu kata** ditulis huruf (*tiga kali*), **lebih dari satu kata** ditulis angka (*15 orang*), kecuali dalam perincian berurutan.\n- **Awal kalimat** wajib huruf (maksimal dua kata); jika lebih, ubah struktur kalimat.\n- **Bilangan tingkat** pilih salah satu: Romawi (*abad XX*), `ke-` + angka (*abad ke-20*), atau huruf (*abad kedua puluh*).\n- **Ukuran, waktu, uang, persentase, dan alamat** wajib memakai angka.",
+    "radar_jebakan_utbk": [
+      "Menggabungkan awalan 'ke-' dengan angka Romawi (contoh: 'abad ke-XXI' atau 'Perang Dunia ke-II'), padahal angka Romawi sudah bermakna tingkat.",
+      "Menulis angka di awal kalimat untuk bilangan besar (contoh: '125 mahasiswa mengikuti seminar'), padahal awal kalimat tidak boleh diawali angka."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Aturan Bilangan Satu Kata vs Lebih dari Satu Kata dalam Teks Naratif/Ekspositoris",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tim peneliti mengamati 3 ekor komodo jantan, dua belas ekor betina, dan 5 tukik selama dua tahun di Taman Nasional Komodo.",
+      "bedah_pola_markdown": "Dalam teks naratif maupun ekspositoris, bilangan yang dapat dinyatakan dengan **satu kata** wajib ditulis menggunakan huruf, sedangkan bilangan **lebih dari satu kata** ditulis memakai angka. Namun, aturan ini gugur apabila bilangan muncul berurutan dalam **perincian**; seluruhnya wajib ditulis angka jika salah satunya lebih dari satu kata.\n\n| Aspek | Salah (Before) | Benar (After EYD V) |\n| :--- | :--- | :--- |\n| **Perincian** [O] | mengamati **3** komodo, **dua belas** betina, dan **5** tukik | mengamati **3** komodo, **12** betina, dan **5** tukik |\n| **Nonperincian** [K] | berlangsung selama **2** tahun | berlangsung selama **dua** tahun |\n\nPada struktur `[S] Tim peneliti` `[P] mengamati` `[O] 3 komodo, 12 betina, dan 5 tukik` `[K] selama dua tahun`, objek merupakan perincian berurutan sehingga memakai angka, sedangkan keterangan waktu terdiri atas satu kata sehingga ditulis huruf. Ingat, kata *seratus* atau *sejuta* terhitung satu kata.",
+      "kunci_pembeda": "Satu kata ditulis huruf dan lebih dari satu kata ditulis angka, kecuali dalam perincian berurutan yang mewajibkan semuanya memakai angka.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Penulisan Bilangan di Awal Kalimat dan Bilangan Besar Sebagian Huruf",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "250 juta jiwa penduduk terdampak kebijakan subsidi energi yang menyedot anggaran sebesar Rp 150.000.000.000.000,00.",
+      "bedah_pola_markdown": "Angka **tidak boleh** diletakkan di awal kalimat. Jika bilangan di awal kalimat hanya satu atau dua kata, ubahlah menjadi huruf. Namun, jika lebih dari dua kata, ubahlah **susunan kalimat** sehingga bilangan berpindah ke tengah. Sementara itu, bilangan bulat berukuran besar dalam teks dapat ditulis **sebagian dengan huruf** agar mudah dibaca.\n\n| Kaidah | Salah (Before) | Benar (After EYD V) |\n| :--- | :--- | :--- |\n| **Awal Kalimat (lebih dari 2 kata)** | **250 juta** jiwa terdampak kebijakan | Sebanyak **250 juta** jiwa [S] terdampak kebijakan [P] |\n| **Bilangan Besar** | anggaran sebesar **Rp 150.000.000.000.000,00** | anggaran sebesar **150 triliun rupiah** |\n\nPada perbaikan pertama, penambahan kata *sebanyak* menggeser posisi bilangan dari awal kalimat tanpa mengubah makna subjek `[S]`. Pada perbaikan kedua, penulisan *150 triliun rupiah* jauh lebih efektif daripada deretan angka nol yang rawan salah baca.",
+      "kunci_pembeda": "Awal kalimat tidak boleh diawali angka (ubah susunan kalimat jika lebih dari dua kata), sedangkan bilangan bulat besar ditulis sebagian dengan huruf tanpa lambang Rp.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penulisan Bilangan Tingkat (abad XX, abad ke-20, abad kedua puluh) dan Akhiran -an (tahun 1990-an)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Transformasi industri manufaktur yang dimulai pada abad ke-XX mencapai puncaknya pada era tahun 1990an.",
+      "bedah_pola_markdown": "Bilangan tingkat memiliki **tiga opsi penulisan** yang sah menurut EYD V, tetapi tidak boleh dicampur. Angka Romawi sudah mengandung makna urutan sehingga haram diberi awalan *ke-*. Sementara itu, angka yang mendapat akhiran *-an* wajib dirangkai menggunakan **tanda hubung (-)**.\n\n| Jenis Bentuk | Salah (Before) | Benar (After EYD V) |\n| :--- | :--- | :--- |\n| **Bilangan Tingkat** | pada **abad ke-XX** / **abad ke 20** | pada **abad XX** / **abad ke-20** / **abad kedua puluh** |\n| **Akhiran -an** | era **tahun 1990an** | era **tahun 1990-an** |\n\nDalam struktur keterangan waktu `[K] pada abad XX`, penggunaan tanda hubung hanya berlaku jika memakai angka Arab (`ke-20`). Jika ditulis huruf penuh, bentuknya menjadi *abad kedua puluh* tanpa tanda hubung. Pola tanda hubung yang sama berlaku pada nominal seperti *pecahan 5.000-an*, sedangkan bentuk *kelima puluhan* ditulis tanpa tanda hubung.",
+      "kunci_pembeda": "Bilangan tingkat memakai Romawi tidak boleh memakai 'ke-', sedangkan akhiran '-an' pada angka wajib dirangkai dengan tanda hubung (-).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Penulisan Lambang Bilangan dengan Satuan, Mata Uang, Persentase, dan Nomor Rincian",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Kantor cabang di Jalan Sudirman Nomor. 12 mencatat kenaikan laba 15 % atau senilai Rp. 75.000.000,- selama 6 bulan.",
+      "bedah_pola_markdown": "Angka wajib dipakai untuk menyatakan **ukuran satuan** (panjang, berat, waktu), **nilai uang**, **persentase**, serta **nomor alamat atau bagian karangan** meskipun hanya satu kata. Perhatikan pula aturan spasi dan tanda baca pada simbol mata uang serta persen.\n\n| Elemen | Salah (Before) | Benar (After EYD V) |\n| :--- | :--- | :--- |\n| **Alamat** [K] | Jalan Sudirman **Nomor. 12** | Jalan Sudirman **No. 12** / **Nomor 12** |\n| **Persentase** [O] | kenaikan laba **15 %** | kenaikan laba **15%** / **15 persen** |\n| **Mata Uang** [O] | senilai **Rp. 75.000.000,-** | senilai **Rp75.000.000,00** |\n\nPenulisan lambang rupiah (`Rp`) **tidak memakai titik dan spasi** sebelum angka, lalu diakhiri `,00` jika menyatakan nilai utuh. Simbol `%` ditulis menempel tanpa spasi, sedangkan kata *persen* diberi spasi. Sementara itu, kata *Nomor* tidak boleh disingkat menjadi *Nomor.* dengan titik, dan satuan waktu *6 bulan* tetap memakai angka.",
+      "kunci_pembeda": "Lambang Rp dan % ditulis menempel tanpa spasi dengan angka, serta satuan ukuran dan nomor alamat wajib memakai angka.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Cermati kutipan laporan berikut!\n\n> (1) 120 orang relawan diterjunkan ke lokasi bencana banjir bandang sejak kemarin. (2) Mereka membawa 15 kotak obat, dua puluh karung beras, dan 8 tenda darurat. (3) Bantuan logistik tersebut telah dikirim sebanyak 3 kali sejak pekan lalu. (4) Pemerintah daerah juga mengalokasikan dana darurat sebesar 2,5 miliar rupiah. (5) Distribusi bantuan dipantau langsung oleh 3 orang petugas lapangan.\n\nPenggunaan bilangan yang **sudah tepat** sesuai kaidah EYD V terdapat pada kalimat nomor ....",
+      "opsi_jawaban": [
+        "A. (1)",
+        "B. (2)",
+        "C. (3)",
+        "D. (4)",
+        "E. (5)"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Kalimat **(4)** tepat karena bilangan besar dalam teks dapat ditulis sebagian dengan huruf (*2,5 miliar rupiah*) agar mudah dibaca. Opsi lain salah karena:\n- **(1)** Angka tidak boleh mengawali kalimat (seharusnya *Sebanyak 120 orang*).\n- **(2)** Bilangan dalam perincian berurutan wajib ditulis angka seluruhnya (*20 karung*).\n- **(3) & (5)** Bilangan yang dinyatakan dengan satu kata (*tiga kali*, *tiga orang*) dan bukan satuan ukuran wajib ditulis menggunakan huruf.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> Arsip kuno yang disimpan di gedung Nomor. 14 tersebut memuat catatan perdagangan rempah Nusantara sejak abad ke-XVI hingga era tahun 1980an.\n\nDalam kalimat tersebut terdapat tiga kesalahan penulisan angka dan bilangan. Tuliskan perbaikan yang tepat khusus untuk frasa **tahun 1980an** sesuai kaidah EYD V! *(Tuliskan dua kata saja tanpa tanda baca akhir)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "tahun 1980-an",
+      "bedah_cepat_markdown": "Angka yang mendapat akhiran *-an* wajib dirangkai menggunakan tanda hubung (`-`), sehingga penulisan yang baku adalah **tahun 1980-an**. Sementara itu, dua kesalahan lain pada kalimat tersebut adalah singkatan *Nomor.* yang seharusnya ditulis *No.* (atau *Nomor* tanpa titik) serta *abad ke-XVI* yang redundan karena angka Romawi sudah menyatakan tingkat (seharusnya *abad XVI* atau *abad ke-16*).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manakah kalimat berikut yang seluruh penulisan angka dan bilangannya **sesuai** dengan kaidah EYD V?",
+      "opsi_jawaban": [
+        "A. Perusahaan yang berdiri pada era 1990-an itu membukukan kenaikan omzet sebesar 12 % pada kuartal kedua.",
+        "B. Rapat evaluasi kinerja divisi pemasaran dilaksanakan di Ruang 304 dengan anggaran konsumsi Rp 750.000,00.",
+        "C. Sejak Perang Dunia ke-II berakhir, jalur pelayaran niaga di kawasan Asia Tenggara tumbuh pesat.",
+        "D. Penelitian yang dimuat dalam jurnal edisi ke-4 tersebut menguji efektivitas ekstrak tanaman seberat 25 gram.",
+        "E. Sebanyak lima puluh lima peserta seminar berkumpul di aula Jalan Merdeka No. 8 sejak pukul 08.00 WIB."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Opsi **D** tepat karena bilangan tingkat angka Arab ditulis memakai tanda hubung (*edisi ke-4*) dan satuan ukuran berat memakai angka (*25 gram*). Kesalahan pada opsi lain:\n- **A:** Simbol persen tidak diberi spasi (*12%*).\n- **B:** Lambang mata uang `Rp` tidak diberi spasi (*Rp750.000,00*).\n- **C:** Angka Romawi tidak boleh diawali *ke-* (*Perang Dunia II*).\n- **E:** Bilangan lebih dari satu kata di tengah kalimat wajib ditulis angka (*Sebanyak 55 peserta*).",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "kode_subbab": "pbm-04-01",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 4: Penyuntingan Kalimat dan Wacana",
+  "judul_subbab": "Perbaikan Kalimat Tidak Efektif dan Ambigu",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Manakah kalimat yang efektif: (A) Bagi peserta yang terlambat dilarang masuk ruang ujian, atau (B) Peserta yang terlambat dilarang masuk ruang ujian?",
+      "opsi_cepat": [
+        "Kalimat (A) karena terdengar lebih formal",
+        "Kalimat (B) karena memiliki subjek yang jelas"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Preposisi 'bagi' di awal kalimat (A) mengubah subjek menjadi keterangan sehingga kalimat kehilangan subjek intinya."
+    },
+    "konsep_inti_markdown": "Kalimat efektif wajib memenuhi kaidah **EYD V** dan **KBBI VI** tanpa mengubah makna asal:\n- **Kesepadanan Struktur:** Wajib memiliki inti **[S] + [P]** jelas; hindari preposisi (*bagi, untuk, dalam, pada*) sebelum subjek.\n- **Kehematan:** Hapus pleonasme/sinonim ganda (*agar supaya, sangat sekali*) dan subjek ganda.\n- **Kelogisan & Ketegasan:** Hindari makna ganda (ambiguitas) akibat urutan kata salah serta interferensi struktur asing (*di mana, yang mana*).",
+    "radar_jebakan_utbk": [
+      "Opsi perbaikan tampak ringkas dan baku, tetapi menghilangkan informasi penting atau mengubah makna kalimat asal.",
+      "Terjebak penggunaan kata tanya 'di mana' atau 'yang mana' sebagai konjungsi penghubung klausa yang dianggap formal."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Menyunting Kalimat Tidak Efektif Tanpa Mengubah Makna Asli",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam penelitian terbaru membuktikan bahwa konsumsi gula berlebih memicu resistensi insulin pada remaja.",
+      "bedah_pola_markdown": "Identifikasi cacat sintaksis tanpa memangkas informasi inti pada stimulus. Preposisi *dalam* di awal kalimat mengubah frasa nomina menjadi keterangan [K], sehingga kalimat kehilangan subjek [S] utamanya.\n\n| Status | Analisis Struktur [S]-[P]-[O]-[K] |\n| :--- | :--- |\n| **Salah** | *Dalam penelitian terbaru* [K] *membuktikan* [P] *bahwa konsumsi gula berlebih memicu resistensi insulin pada remaja* [O]. |\n| **Benar** | ***Penelitian terbaru*** [S] ***membuktikan*** [P] *bahwa konsumsi gula berlebih memicu resistensi insulin pada remaja* [O]. |\n\n**Langkah Eksekusi:**\n1. Hapus preposisi (*dalam, bagi, untuk, pada*) di depan subjek agar pola [S]-[P]-[O] kembali lengkap dan gramatikal.\n2. Eliminasi opsi perbaikan yang menghilangkan keterangan penting (*pada remaja*) karena mengubah kandungan makna kalimat asli.\n3. Pastikan imbuhan verba aktif (*membuktikan*) tetap sejajar dengan subjek pelaku (*penelitian terbaru*), atau ubah menjadi verba pasif jika preposisi dipertahankan.",
+      "kunci_pembeda": "Fokus pada perbaikan struktur kalimat utuh sambil menjaga 100% kelengkapan informasi asal.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Menentukan Kata atau Frasa yang Harus Dihilangkan Agar Kalimat Menjadi Efektif",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Para hadirin sekalian dimohon berdiri sejenak untuk menyanyikan lagu kebangsaan secara bersama-sama.",
+      "bedah_pola_markdown": "Pemborosan kata (pleonasme) terjadi saat dua unsur bermakna sama hadir bersamaan dalam satu frasa atau klausa. Hapus salah satu unsur tanpa merusak pola inti [S]-[P]-[O]-[K].\n\n| Status | Perbaikan Kehematan Kata (EYD V & KBBI VI) |\n| :--- | :--- |\n| **Salah** | *Para hadirin sekalian* [S] *dimohon berdiri sejenak* [P] *untuk menyanyikan lagu kebangsaan secara bersama-sama* [K]. |\n| **Benar** | ***Hadirin*** [S] *dimohon berdiri sejenak* [P] *untuk menyanyikan lagu kebangsaan* [K]. |\n\n**Bentuk Pleonasme Langganan UTBK:**\n1. **Penjamakan ganda:** *para hadirin*, *banyak siswa-siswa*, *daftar nama-nama* (cukup *hadirin* atau *banyak siswa*).\n2. **Sinonim berurutan:** *agar supaya*, *demi untuk*, *sejak dari*, *adalah merupakan* (pilih satu saja).\n3. **Makna sudah terkandung pada verba:** *naik ke atas*, *turun ke bawah*, *mundur ke belakang*, atau *saling tolong-menolong* (cukup *saling menolong*).",
+      "kunci_pembeda": "Hanya menghapus kata mubazir spesifik tanpa mengubah susunan klausa lainnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Perbaikan Struktur Kalimat Terjemahan Harfiah atau Interferensi Bahasa Asing",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pemerintah meresmikan kawasan industri hijau di mana proyek tersebut menyerap ribuan tenaga kerja lokal.",
+      "bedah_pola_markdown": "Interferensi struktur bahasa Inggris (*where, which, in which*) sering diterjemahkan kaku menjadi *di mana*, *yang mana*, atau *dalam mana* sebagai penghubung antarklausa. Dalam kaidah baku bahasa Indonesia, kata *di mana* hanya berfungsi sebagai kata tanya lokasi.\n\n| Status | Penyuntingan Konjungsi Interferensi Asing |\n| :--- | :--- |\n| **Salah** | *Pemerintah meresmikan kawasan industri hijau* [Induk] ***di mana*** *proyek tersebut menyerap ribuan tenaga kerja lokal* [Anak]. |\n| **Benar** | *Pemerintah meresmikan kawasan industri hijau* [Induk] ***yang*** *menyerap ribuan tenaga kerja lokal* [Anak]. |\n\n**Padanan Pengganti Baku:**\n1. Ganti *di mana* atau *dalam mana* dengan konjungsi **yang**, **tempat**, atau **ketika** sesuai konteks makna.\n2. Ganti *yang mana* dengan konjungsi **yang** atau pecah menjadi dua kalimat tunggal.\n3. Hapus subjek ulang (*proyek tersebut*) jika sudah diwakili oleh konjungsi **yang**.",
+      "kunci_pembeda": "Mengganti kata tanya (*di mana, yang mana*) yang disalahgunakan sebagai konjungsi antarklausa.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbaikan Ambiguitas Makna Akibat Urutan Kata atau Peletakan Keterangan yang Salah",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kucing tetangga yang baru melahirkan itu mengejar tikus di halaman belakang rumah.",
+      "bedah_pola_markdown": "Ambiguitas muncul ketika frasa pewatas (*yang baru melahirkan*) atau keterangan [K] diletakkan pada posisi yang memicu tafsir ganda mengenai siapa pelaku atau objek yang diterangkan.\n\n| Status | Perbaikan Urutan Kata & Peletakan Keterangan |\n| :--- | :--- |\n| **Salah (Ambigu)** | *Kucing tetangga yang baru melahirkan itu* [S] *mengejar* [P] *tikus* [O] *di halaman belakang rumah* [K]. |\n| **Benar (Tegas)** | *Kucing milik tetangga yang baru melahirkan itu* [S] *mengejar* [P] *tikus* [O] *di halaman belakang rumah* [K]. |\n\n**Strategi Menghilangkan Ketaksaan:**\n1. **Sisipkan preposisi/penjelas:** Tambahkan kata *milik* jika yang melahirkan adalah tetangga, atau gunakan tanda koma aposisi (*Kucing tetangga, yang baru melahirkan itu,*) jika yang melahirkan adalah kucing.\n2. **Dekatkan keterangan pada inti:** Letakkan keterangan alat/cara tepat setelah verba yang dijelaskan agar tidak salah rujukan.\n3. **Uji dua tafsir:** Pastikan kalimat hanya menghasilkan satu interpretasi logis.",
+      "kunci_pembeda": "Kalimat sudah memiliki [S]-[P], tetapi posisi pewatas atau tanda koma memicu makna ganda.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Evaluasi Kalimat Bebas Kesalahan Ejaan, Tanda Baca, dan Keefektifan Sekaligus",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Meskipun curah hujan tinggi, namun distribusi logistik ke wilayah terdampak banjir tetap berjalan lancar.",
+      "bedah_pola_markdown": "Soal evaluasi menyeluruh menguji tiga lapis sekaligus: kelengkapan [S]-[P], tanda baca koma, serta ejaan baku **EYD V** dan **KBBI VI**. Satu cacat kecil langsung menggugurkan opsi.\n\n| Status | Audit Tiga Lapis (Sintaksis, Tanda Baca, Ejaan) |\n| :--- | :--- |\n| **Salah** | *Meskipun curah hujan tinggi* [Anak], ***namun*** *distribusi logistik ke wilayah terdampak banjir tetap berjalan lancar* [Induk]. |\n| **Benar** | *Meskipun curah hujan tinggi* [Anak], *distribusi logistik ke wilayah terdampak banjir tetap berjalan lancar* [Induk]. |\n\n**Daftar Periksa Audit Cepat:**\n1. **Konjungsi Ganda:** Hapus *namun/tetapi* jika klausa awal sudah memakai konjungsi subordinatif (*meskipun, walaupun, karena, jika*).\n2. **Tanda Baca:** Pastikan koma memisahkan anak kalimat yang mendahului induk kalimat, dan **tidak ada koma** sebelum *bahwa*.\n3. **Ejaan & Bentuk Baku:** Cek penulisan *di-* (dipisah untuk tempat, dirangkai untuk pasif) serta kata baku KBBI VI (*risiko, analisis, praktik*).",
+      "kunci_pembeda": "Menuntut ketelitian menyeluruh pada struktur sintaksis, tanda baca, dan ejaan sekaligus.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> *Berdasarkan hasil audit lingkungan menunjukkan bahwa kawasan pesisir di mana mangrove ditebang secara ilegal mengalami abrasi parah selama lima tahun terakhir.*\n\nPerbaikan yang paling tepat untuk kalimat tersebut tanpa mengubah makna aslinya adalah ....",
+      "opsi_jawaban": [
+        "A. Hasil audit lingkungan menunjukkan bahwa kawasan pesisir tempat mangrove ditebang secara ilegal mengalami abrasi parah selama lima tahun terakhir.",
+        "B. Berdasarkan hasil audit lingkungan menunjukkan bahwa kawasan pesisir tempat mangrove ditebang secara ilegal mengalami abrasi parah.",
+        "C. Hasil audit lingkungan menunjukkan bahwa kawasan pesisir di mana mangrove ditebang secara ilegal mengalami abrasi parah selama lima tahun terakhir.",
+        "D. Berdasarkan hasil audit lingkungan, kawasan pesisir yang mangrove ditebang secara ilegal mengalami abrasi parah selama lima tahun terakhir.",
+        "E. Audit lingkungan menunjukkan bahwa kawasan pesisir tempat mangrove ditebang mengalami abrasi parah selama lima tahun terakhir."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "**Langkah 1:** Hapus preposisi *berdasarkan* di awal agar frasa *hasil audit lingkungan* menjadi subjek [S] bagi predikat *menunjukkan* [P].\n**Langkah 2:** Ganti konjungsi interferensi *di mana* dengan kata **tempat** karena merujuk pada lokasi (*kawasan pesisir*).\n**Analisis Opsi:**\n- **B & E:** Menghilangkan informasi asli (*selama lima tahun terakhir* / *secara ilegal*).\n- **C:** Masih memakai *di mana*.\n- **D:** Konjungsi *yang* tidak tepat untuk keterangan tempat.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manakah kalimat di bawah ini yang memenuhi kaidah ejaan, tanda baca, dan keefektifan kalimat sesuai EYD Edisi V?",
+      "opsi_jawaban": [
+        "A. Walaupun anggaran penelitian terbatas, tetapi tim riset tetap melanjutkan uji klinis tahap kedua.",
+        "B. Para peneliti-peneliti muda itu mempresentasikan hasil analisis dampak mikroplastik di pesisir utara.",
+        "C. Laporan keuangan tersebut menjelaskan tentang penyebab turunnya daya beli masyarakat pada kuartal ketiga.",
+        "D. Sebelum memublikasikan data survei, tim editor memverifikasi keabsahan seluruh sampel responden.",
+        "E. Pakar ekonomi mengingatkan, bahwa kenaikan suku bunga acuan berpotensi menekan sektor manufaktur."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Kalimat **D** memenuhi pola [K] + [S] + [P] + [O], menggunakan koma setelah anak kalimat di awal, serta menerapkan peluluhan kata baku *memublikasikan* dan *memverifikasi*.\n**Kesalahan Opsi Lain:**\n- **A:** Konjungsi ganda (*walaupun ... tetapi*).\n- **B:** Penjamakan ganda (*para peneliti-peneliti*).\n- **C:** Pemborosan preposisi *tentang* setelah verba transitif *menjelaskan*.\n- **E:** Tanda koma tidak boleh diletakkan sebelum konjungsi *bahwa*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n(1) Dinas Kesehatan setempat gencar menyosialisasikan pencegahan demam berdarah sejak awal musim hujan. (2) Petugas puskesmas membagikan bubuk abate kepada warga di setiap kelurahan. (3) Anak ketua RT yang baru sembuh dari demam berdarah itu ikut membantu mendata rumah warga yang memiliki penampungan air terbuka. (4) Kegiatan pemberantasan sarang nyamuk tersebut dilakukan demi untuk menekan angka penularan secara signifikan.\n\nKalimat bernomor berapakah yang mengandung pemborosan kata (pleonasme) sehingga tidak efektif? *(Tuliskan angkanya saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "4",
+      "bedah_cepat_markdown": "Kalimat **(4)** tidak efektif karena menggunakan dua konjungsi bersinonim secara berurutan, yaitu ***demi untuk***. Cukup gunakan salah satu (*demi* atau *untuk*) agar kalimat menjadi hemat.\n**Catatan Kalimat Lain:**\n- **Kalimat (1) & (2):** Sudah efektif dan baku (*menyosialisasikan* luluh tepat).\n- **Kalimat (3):** Konteks *ikut membantu mendata* memperjelas bahwa yang baru sembuh adalah anak ketua RT, sehingga tidak menimbulkan ambiguitas.",
+      "visual": null
+    }
+  ]
+}

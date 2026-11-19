@@ -1,0 +1,124 @@
+{
+  "kode_subbab": "ppu-02-02",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 2: Morfologi dan Frasa",
+  "judul_subbab": "Kata Ulang (Reduplikasi) dan Kata Majemuk",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Panitia menyebarluaskan undangan kepada para tamu-tamu undangan di gedung serbaguna', apakah penulisan 'menyebarluaskan' dan frasa 'para tamu-tamu' sudah baku?",
+      "opsi_cepat": [
+        "Ya, keduanya sudah tepat",
+        "Tidak, penulisan kata majemuk dan bentuk jamak keliru"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Gabungan kata majemuk yang mendapat awalan dan akhiran sekaligus wajib ditulis serangkai ('menyebarluaskan' sudah benar), tetapi frasa 'para tamu-tamu' mubazir karena jamak ganda."
+    },
+    "konsep_inti_markdown": "**Kata ulang dan kata majemuk** menguji ketepatan makna kontekstual, ejaan EYD V, dan kehematan kalimat sesuai KBBI VI:\n\n* **Makna Kata Ulang:** Menyatakan jamak (*gedung-gedung*), saling (*bantu-membantu*), intensitas (*setinggi-tingginya*), atau menyerupai (*kehijau-hijauan*).\n* **Ejaan Kata Majemuk:** Ditulis terpisah (*tanggung jawab*), kecuali berimbuhan apitan (*mempertanggungjawabkan*) atau padu (*olahraga*).\n* **Kehematan Jamak:** Hindari pengulangan kata bermakna jamak (*para*, *banyak*) bersama kata ulang.",
+    "radar_jebakan_utbk": [
+      "Menulis gabungan kata majemuk yang hanya mendapat awalan atau akhiran secara serangkai (misal: 'bertanggungjawab' atau 'tandatangani'), padahal EYD V mewajibkan penulisan terpisah kecuali mendapat awalan dan akhiran sekaligus.",
+      "Mempertahankan penanda jamak ('para', 'banyak', 'sejumlah', 'berbagai') di depan kata ulang bermakna jamak atau menyamakan makna kata ulang yang identik bentuknya tetapi berbeda konteks kalimat."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Kesamaan Makna Kata Ulang (Saling atau Resiprokal, Jamak, Intensitas, Menyerupai) Antar-Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Para peneliti dari berbagai universitas **bertukar-tukaran** gagasan mengenai mitigasi bencana hidrometeorologi dalam simposium nasional.",
+      "bedah_pola_markdown": "**Bedah Pola Makna & Fungsi:**\nPerhatikan struktur fungsi kalimat berikut: [S] *Para peneliti* + [P] ***bertukar-tukaran*** + [O] *gagasan* + [K] *dalam simposium nasional*. Kata ulang **bertukar-tukaran** bermakna *saling melakukan tindakan* (resiprokal). Pada soal UTBK, kata ulang yang sama bentuknya dapat berbeda makna bergantung pada kelas kata dasar serta konteks kalimat yang menyertainya.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Bantu-membantu** (*saling*) disamakan dengan **jalan-jalan** (*bersantai*). | **Bantu-membantu** (*saling*) sejajar dengan **salam-menyalami** (*saling*). |\n| **Kehijau-hijauan** (*menyerupai*) disamakan dengan **kejar-kejaran** (*saling*). | **Kehijau-hijauan** (*menyerupai*) sejajar dengan **kemerah-merahan** (*agak merah*). |\n\n**Strategi Eksekusi:** Parafrasakan kata ulang target menjadi frasa definisi kontekstual (*banyak X*, *saling X*, *sangat X*, atau *menyerupai X*), lalu cocokkan dengan opsi kalimat yang memiliki pola makna definisi persis sama.",
+      "kunci_pembeda": "Memparafrasakan kata ulang menjadi frasa definisi kontekstual untuk mencocokkan kesamaan makna antarkalimat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Kesamaan Pola Bentuk Kata Ulang (Utuh, Berimbuhan, Berubah Bunyi, Sebagian)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Otoritas transportasi membenahi **tata kelola** logistik, mengevaluasi **bolak-balik** arus peti kemas, serta mengamati **gerak-gerik** distribusi antarpulau.",
+      "bedah_pola_markdown": "**Bedah Pola Bentuk & Fungsi:**\nPerhatikan susunan objek pada klausa: [S] *Otoritas transportasi* + [P] *mengevaluasi* + [O] ***bolak-balik** arus peti kemas*. Pengulangan kata terbagi atas empat pola baku dalam KBBI VI: **utuh** (*gedung-gedung*), **berimbuhan** (*berlari-larian*, *memukul-mukul*), **berubah bunyi** (*bolak-balik*, *sayur-mayur*), dan **sebagian** (*tetangga*, *leluhur*). Semua bentuk ulang wajib memakai tanda hubung (-), kecuali bentuk sebagian yang telah luluh.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Penulisan tanpa tanda hubung: **bolak balik** dan **berlari larian** di lapangan. | Penulisan baku bertanda hubung: **bolak-balik** dan **berlari-larian** di lapangan. |\n| **Sayur-mayur** (*berubah bunyi*) disamakan dengan **bantu-membantu** (*berimbuhan*). | **Sayur-mayur** (*berubah bunyi*) sejajar dengan **gerak-gerik** (*berubah bunyi*). |\n\n**Strategi Eksekusi:** Kupas imbuhan di luar kata dasar terlebih dahulu untuk mengenali apakah kata dasar diulang secara utuh, mengalami variasi vokal/konsonan, atau hanya suku awalnya.",
+      "kunci_pembeda": "Mengidentifikasi struktur morfologis pengulangan kata (utuh, berimbuhan, berubah bunyi, atau sebagian) beserta kaidah tanda hubungnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Kata Majemuk Bermakna Kias (Idiomatis) vs Bermakna Lugas dalam Konteks Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam rapat evaluasi anggaran, tim auditor tetap bertindak sebagai **tangan kanan** pimpinan yang bekerja dengan **kepala dingin** tanpa sikap **keras kepala**.",
+      "bedah_pola_markdown": "**Bedah Pola Gabungan Kata & Fungsi:**\nPerhatikan struktur fungsi kalimat: [S] *tim auditor* + [P] *bekerja* + [K] *dengan **kepala dingin** tanpa sikap **keras kepala***. Kata majemuk menggabungkan dua kata menjadi satu konsep makna baru. Gabungan bermakna **lugas** (*rumah sakit*, *meja hijau* 'meja berwarna hijau') mempertahankan arti unsur pembentuknya, sedangkan bermakna **kias** (*tangan kanan* 'orang kepercayaan', *kepala dingin* 'tenang') membentuk arti idiomatis baru.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Penulisan serangkai: **tanggungjawab** dan **bertanggungjawab** atas laporan. | Penulisan terpisah vs apitan: **tanggung jawab** dan **mempertanggungjawabkan**. |\n| Terdakwa diseret ke **meja hijau** (*diartikan meja kayu berwarna hijau*). | Terdakwa diseret ke **meja hijau** (*bermakna kias pengadilan*). |\n\n**Strategi Eksekusi:** Uji apakah arti harfiah tiap unsur masuk akal dalam konteks kalimat, lalu pastikan gabungan kata ditulis terpisah kecuali mendapat awalan dan akhiran sekaligus.",
+      "kunci_pembeda": "Membedakan gabungan kata berkonsep lugas dengan idiom bermakna kias serta menerapkan kaidah penulisan terpisah atau serangkai sesuai EYD V.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbaikan Kemubaziran akibat Kata Ulang Jamak",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Kementerian Pendidikan menyalurkan bantuan perangkat digital kepada **banyak sekolah-sekolah** di daerah tertinggal untuk menunjang asesmen nasional.",
+      "bedah_pola_markdown": "**Bedah Pola Kehematan & Fungsi:**\nPerhatikan struktur objek pada kalimat berikut: [S] *Kementerian Pendidikan* + [P] *menyalurkan* + [O] *bantuan perangkat digital* + [K] *kepada **banyak sekolah** di daerah tertinggal*. Kata ulang utuh pada nomina (*sekolah-sekolah*, *buku-buku*) sudah mengandung makna jamak. Menambahkan penanda jamak lain seperti *para*, *banyak*, *sejumlah*, atau *berbagai* memicu kemubaziran (pleonasme) yang melanggar kaidah kehematan kalimat EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Para hadirin-hadirin** (*jamak ganda*) dimohon memasuki ruang sidang utama. | **Hadirin** atau **para tamu** (*tunggal efektif*) dimohon memasuki ruang sidang. |\n| Peneliti menganalisis **berbagai data-data** (*mubazir*) hasil survei lapangan. | Peneliti menganalisis **berbagai data** atau **data-data** hasil survei lapangan. |\n\n**Strategi Eksekusi:** Hapus salah satu penanda jamak (pertahankan kata penanda jamak atau bentuk ulangnya saja) dan perbaiki bentuk ulang majemuk menjadi pengulangan unsur pertama (*rumah sakit-rumah sakit* $\\rightarrow$ *rumah-rumah sakit*).",
+      "kunci_pembeda": "Menghilangkan penanda jamak ganda di depan kata ulang nomina agar kalimat memenuhi syarat kehematan struktur baku EYD V.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Dalam forum kerja sama regional tersebut, para delegasi negara anggota **bahu-membahu** merumuskan protokol penanganan krisis pangan lintas batas.\"\n\nKata ulang pada kalimat di atas memiliki kesamaan makna dengan kata bercetak tebal pada kalimat ....",
+      "opsi_jawaban": [
+        "A. Petugas lapangan memeriksa **berkas-berkas** perizinan ekspor komoditas pertanian sebelum kapal bertolak.",
+        "B. Kedua tim peneliti **tukar-menukar** data pemantauan kualitas udara untuk memvalidasi model prediksi iklim.",
+        "C. Air sungai di kawasan hilir tampak **kehijau-hijauan** akibat ledakan populasi alga selama musim kemarau.",
+        "D. Pemerintah pusat berupaya **secepat-cepatnya** menyalurkan bantuan logistik ke wilayah terdampak bencana.",
+        "E. Warga pesisir memantau **gerak-gerik** gelombang pasang sebelum melaut pada dini hari."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat stimulus, kata ulang **bahu-membahu** bermakna *saling menolong atau bekerja sama*. Makna saling melakukan tindakan tersebut sejajar dengan kata ulang **tukar-menukar** (*saling memberi dan menerima*) pada **opsi B**. Sebaliknya, **berkas-berkas** (**opsi A**) menyatakan makna jamak, **kehijau-hijauan** (**opsi C**) bermakna menyerupai warna hijau, **secepat-cepatnya** (**opsi D**) menyatakan tingkat intensitas tertinggi, dan **gerak-gerik** (**opsi E**) merujuk pada berbagai tingkah laku. Jadi, jawaban yang tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Pengelola kawasan industri wajib **bertanggungjawab** penuh atas pengelolaan limbah cair sebelum dialirkan ke sungai. (2) Apabila ditemukan pelanggaran baku mutu lingkungan, perusahaan terkait akan segera dibawa ke **meja hijau** sesuai ketentuan peraturan perundang-undangan yang berlaku.\n\nManakah pernyataan yang PALING TEPAT mengenai penulisan dan makna gabungan kata dalam kutipan di atas?",
+      "opsi_jawaban": [
+        "A. Gabungan kata *bertanggungjawab* pada kalimat (1) sudah baku karena mendapat awalan *ber-*.",
+        "B. Frasa *meja hijau* pada kalimat (2) bermakna lugas sebagai tempat pemeriksaan sampel limbah.",
+        "C. Gabungan kata *bertanggungjawab* pada kalimat (1) harus ditulis terpisah menjadi *bertanggung jawab*.",
+        "D. Frasa *baku mutu* pada kalimat (2) bermakna kias sebagai aturan yang tidak dapat diubah.",
+        "E. Frasa *meja hijau* pada kalimat (2) wajib ditulis serangkai menjadi *mejahijau* karena bermakna khusus."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Menurut kaidah EYD V, gabungan kata yang hanya mendapat awalan atau akhiran tetap ditulis terpisah, sehingga *bertanggungjawab* harus ditulis **bertanggung jawab** (**opsi C** benar, **opsi A** salah). Sementara itu, frasa **meja hijau** pada kalimat (2) bermakna kias (*pengadilan*), bukan lugas (**opsi B** salah), tetapi tetap ditulis terpisah sesuai KBBI VI (**opsi E** salah). Frasa **baku mutu** bermakna lugas sebagai standar kualitas lingkungan (**opsi D** salah).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Dalam konferensi tingkat tinggi tersebut, **para menteri-menteri** ekonomi membahas **berbagai langkah-langkah** strategis guna menjaga stabilitas rantai pasok global.\"\n\nPerbaikan yang PALING TEPAT agar kalimat di atas menjadi efektif dan baku sesuai kaidah EYD V adalah ....",
+      "opsi_jawaban": [
+        "A. mengubah *para menteri-menteri* menjadi *para menteri* dan *berbagai langkah-langkah* menjadi *berbagai langkah*",
+        "B. menghilangkan tanda hubung pada *menteri-menteri* dan *langkah-langkah* agar menjadi satu kesatuan",
+        "C. mengganti *para menteri-menteri* menjadi *sejumlah menteri-menteri* dan menghapus kata *berbagai*",
+        "D. mengubah *para menteri-menteri* menjadi *para menteri-menteri sekalian* untuk menegaskan makna jamak",
+        "E. mengganti *berbagai langkah-langkah* menjadi *banyak langkah-langkah* agar selaras dengan kata *para*"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Kata ulang utuh pada kata benda (*menteri-menteri*, *langkah-langkah*) sudah bermakna jamak sehingga tidak boleh didahului penanda jamak lain seperti *para* atau *berbagai*. Menghapus bentuk ulang di belakang penanda jamak menjadi **para menteri** dan **berbagai langkah** (**opsi A**) menjadikan kalimat hemat dan baku. **Opsi B** melanggar aturan tanda hubung EYD V, sedangkan **opsi C**, **D**, dan **E** tetap mempertahankan kemubaziran jamak ganda.",
+      "visual": null
+    }
+  ]
+}

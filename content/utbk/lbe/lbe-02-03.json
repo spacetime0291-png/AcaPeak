@@ -1,0 +1,113 @@
+{
+  "kode_subbab": "lbe-02-03",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 2: Detailed Information & Paraphrasing",
+  "judul_subbab": "Restating/Paraphrasing Sentences",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Kalimat asli: 'Unless cities expand green corridors, urban heat islands will intensify.' Manakah parafrasa yang tepat?",
+      "opsi_cepat": [
+        "Expanding green corridors guarantees the elimination of urban heat.",
+        "Urban heat islands will worsen if cities fail to enlarge green corridors."
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta memilih opsi pertama karena kata kuncinya mirip, padahal kata 'guarantees elimination' mengubah syarat negatif menjadi kepastian ekstrem."
+    },
+    "konsep_inti_markdown": "* **Prinsip Ekuivalensi ($A \\equiv B$):** Parafrasa wajib mempertahankan subjek, tindakan, dan hubungan logis (sebab-akibat, syarat, kontras) tanpa menambah/mengurangi cakupan.\n* **Teknik Bedah:**\n  1. Isolasi **Main Clause** (S + V + O).\n  2. Kunci **Logical Connector** (*although, unless, thereby*).\n  3. Uji kesetaraan makna menggunakan sinonim dan transformasi struktur aktif-pasif.",
+    "radar_jebakan_utbk": [
+      "Reversal of Logic: Membalik posisi sebab dan akibat (A menyebabkan B diubah menjadi B menyebabkan A).",
+      "Scope Distortion & Extremes: Menambahkan kata absolut (always, solely, completely) atau informasi baru yang tidak ada di kalimat asal."
+    ],
+    "stimulus_utama_bersama": "**Forum Thread: Urban Rewilding & Micro-Forests**\n\n**@Dr_Aris (Urban Ecologist):** While conventional city parks offer recreational value, they often lack the biodiversity required to mitigate extreme urban heat; conversely, dense native micro-forests—planted using the Miyawaki method—accelerate canopy growth tenfold and lower ambient temperatures significantly. Unless municipalities prioritize these compact ecological zones over purely ornamental landscaping, metropolitan areas will remain dangerously vulnerable to summer heatwaves.\n\n**@Maya_Planner (City Architect):** I appreciate the ecological metrics, yet implementing Miyawaki plots across high-density business districts presents severe spatial and financial constraints. Had city councils integrated soil-depth mandates into zoning laws a decade ago, retrofitting concrete plazas today would not require such prohibitive excavation budgets. Therefore, I advocate for a hybrid approach: deploying modular rooftop gardens on existing skyscrapers while reserving ground-level micro-forests for suburban schoolyards.\n\n**@Leo_Civic (Resident Advocate):** Both perspectives overlook community maintenance. Even when municipal grants fund initial planting, micro-forests frequently deteriorate within three years because local neighborhoods are excluded from stewardship planning. True urban resilience depends less on botanical density and more on sustained civic participation.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Best Restatement of a Highlighted Complex Sentence",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan @Dr_Aris (Kalimat 1): 'While conventional city parks offer recreational value, they often lack the biodiversity required to mitigate extreme urban heat; conversely, dense native micro-forests... accelerate canopy growth tenfold and lower ambient temperatures significantly.'",
+      "bedah_pola_markdown": "* **Scanning Kalimat Kunci:** Temukan struktur kontras `While [A], [B]; conversely, [C]`. Subjek utama terbagi dua: *conventional parks* (kurang biodiversitas) vs *micro-forests* (mempercepat kanopi & menurunkan suhu).\n* **Transformasi Parafrasa:** Ubah *While/conversely* menjadi *Unlike* atau *In contrast to*. Ganti *lack the biodiversity required to mitigate* menjadi *insufficient biodiversity to reduce*, dan *lower ambient temperatures* menjadi *cool surrounding areas*.\n* **Deteksi Jebakan:**\n  * *Terlalu Ekstrem:* Menyatakan taman konvensional sama sekali tidak bermanfaat (padahal punya *recreational value*).\n  * *Salah Hubungan:* Menyatakan taman konvensional menurunkan suhu sepuluh kali lipat (tertukar subjek dengan *micro-forests*).",
+      "kunci_pembeda": "Fokus menjaga akurasi perbandingan dua subjek dan mempertahankan kata penghubung kontras tanpa membalik atribut masing-masing.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Identifying Equivalent Conditional or Causal Meaning in Different Grammatical Structures",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujukan @Maya_Planner (Kalimat 2): 'Had city councils integrated soil-depth mandates into zoning laws a decade ago, retrofitting concrete plazas today would not require such prohibitive excavation budgets.'",
+      "bedah_pola_markdown": "* **Scanning Struktur Gramatikal:** Identifikasi *Mixed Conditional* bentuk inversi: `Had + S + V3` (kondisi lampau yang tidak terjadi) $\\rightarrow$ `S + would not + V1` (akibat di masa kini).\n* **Transformasi Parafrasa:** Ubah pengandaian tak nyata (*counterfactual*) menjadi pernyataan fakta sebab-akibat (*causal*): `Because city councils failed to include soil-depth rules ten years ago, converting concrete plazas now demands excessive excavation costs.`\n* **Deteksi Jebakan:**\n  * *Salah Kala (Tense):* Menganggap dewan kota *sudah* menerapkan aturan tersebut sepuluh tahun lalu.\n  * *Sebab-Akibat Terbalik:* Menyatakan biaya penggalian yang mahal menyebabkan dewan kota gagal membuat aturan zonasi.",
+      "kunci_pembeda": "Wajib mengonversi kalimat pengandaian (conditional) menjadi fakta realitas yang berlawanan polaritasnya (positif menjadi negatif, atau sebaliknya).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Summarizing a Commenter's Core Argument in One Paraphrased Sentence",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan @Leo_Civic (Seluruh Postingan): Membahas kegagalan perawatan hutan mikro meski didanai hibah karena warga lokal tidak dilibatkan, sehingga ketahanan kota bergantung pada partisipasi warga.",
+      "bedah_pola_markdown": "* **Skimming Klausa Inti:** Abaikan detail contoh (`three years`, `municipal grants`), lalu gabungkan premis masalah (`excluded from stewardship`) dengan tesis penutup (`depends less on botanical density and more on sustained civic participation`).\n* **Transformasi Parafrasa:** Sintesis menjadi satu kalimat tunggal: `Long-term urban ecological success relies primarily on ongoing local community involvement rather than mere planting density or initial funding.`\n* **Deteksi Jebakan:**\n  * *Terlalu Sempit:* Hanya membahas hibah pemerintah kota (mengabaikan peran warga sebagai poin utama).\n  * *Tidak Disebut:* Menyatakan warga menolak pendanaan hutan mikro.",
+      "kunci_pembeda": "Merangkum keseluruhan posisi/tesis satu komentator menjadi satu pernyataan makro dengan membuang detail teknis.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Which of the following best restates the last sentence of @Dr_Aris's post: *\"Unless municipalities prioritize these compact ecological zones over purely ornamental landscaping, metropolitan areas will remain dangerously vulnerable to summer heatwaves\"*?",
+      "opsi_jawaban": [
+        "A. Metropolitan regions will completely eliminate summer heatwaves once city governments replace all decorative gardens with micro-forests.",
+        "B. Decorative landscaping is the primary cause of severe summer heatwaves in densely populated metropolitan areas.",
+        "C. Cities will continue to face severe risks from summer heatwaves if local governments fail to favor compact ecological areas above merely decorative plants.",
+        "D. Municipalities have already prioritized compact ecological zones to protect metropolitan areas from dangerous summer heatwaves.",
+        "E. Unless ornamental landscaping is entirely banned, compact ecological zones cannot reduce urban vulnerability to heatwaves."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Struktur *Unless [X], [Y]* ekuivalen dengan *If not [X], [Y]*. Opsi C tepat memparafrasa *unless municipalities prioritize* menjadi *if local governments fail to favor*, dan *dangerously vulnerable* menjadi *severe risks*. Opsi A dan E salah karena mengandung kata ekstrem (*completely*, *entirely banned*). Opsi B salah hubungan sebab-akibat, sedangkan D salah kala waktu (*have already prioritized*).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "What can be accurately restated from @Maya_Planner's second sentence regarding zoning laws and excavation budgets?",
+      "opsi_jawaban": [
+        "A. Current excavation expenses for retrofitting concrete plazas are excessively high because zoning regulations ten years ago lacked soil-depth requirements.",
+        "B. City councils enforced soil-depth mandates a decade ago, which successfully minimized today's plaza excavation budgets.",
+        "C. Prohibitive excavation budgets prevented city councils from updating zoning laws with soil-depth mandates ten years ago.",
+        "D. If city councils integrate soil-depth mandates into zoning laws today, plaza excavation costs will immediately decrease.",
+        "E. Retrofitting concrete plazas requires low budgets despite the absence of soil-depth mandates in past zoning laws."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Kalimat menggunakan *Mixed Conditional* (*Had city councils integrated... would not require...*) yang bermakna fakta kebalikan: dewan kota **tidak** memasukkan aturan kedalaman tanah 10 tahun lalu, sehingga biaya penggalian saat ini **sangat mahal** (*prohibitive*). Opsi A mempertahankan hubungan sebab-akibat faktual ini secara akurat. Opsi B bertentangan fakta, C membalik sebab-akibat, D mengubah kala menjadi masa depan (*First Conditional*), dan E berlawanan makna.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Determine whether each statement below accurately paraphrases the core argument of the respective commenter in the thread.\n\n| Statement | True | False |\n| :--- | :---: | :---: |\n| 1. @Leo_Civic argues that ongoing neighborhood involvement is more critical to urban resilience than how densely plants are grown. | | |\n| 2. @Maya_Planner concludes that ground-level micro-forests must completely replace rooftop gardens in all urban areas. | | |\n| 3. @Dr_Aris maintains that native micro-forests cool urban surroundings far more effectively than traditional recreational parks. | | |",
+      "opsi_jawaban": [
+        "A. True - True - False",
+        "B. True - False - True",
+        "C. False - True - True",
+        "D. True - False - False",
+        "E. False - False - True"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "* **Pernyataan 1 (True):** Parafrasa tepat dari kalimat terakhir @Leo_Civic (*depends less on botanical density and more on sustained civic participation*).\n* **Pernyataan 2 (False):** Kontradiksi dengan teks; @Maya_Planner justru menyarankan pendekatan hibrida (*hybrid approach*) yang menggabungkan keduanya.\n* **Pernyataan 3 (True):** Parafrasa tepat dari kontras @Dr_Aris bahwa hutan mikro menurunkan suhu secara signifikan dibanding taman konvensional.",
+      "visual": null
+    }
+  ]
+}

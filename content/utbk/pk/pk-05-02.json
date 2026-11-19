@@ -1,0 +1,148 @@
+{
+  "kode_subbab": "pk-05-02",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 5: Geometri dan Pengukuran",
+  "judul_subbab": "Bangun Datar (Luas, Keliling, Kesebangunan)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah persegi diperbesar sehingga panjang sisinya menjadi $3$ kali lipat semula. Apakah luas persegi tersebut ikut bertambah menjadi $3$ kali lipat?",
+      "opsi_cepat": [
+        "Ya, luas ikut menjadi 3 kali lipat",
+        "Tidak, luas menjadi 9 kali lipat"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Keliling berbanding lurus dengan faktor skala ($k = 3$), sedangkan luas berbanding lurus dengan kuadrat faktor skala ($k^2 = 3^2 = 9$). Banyak peserta UTBK terjebak menyamakan rasio keliling dengan rasio luas."
+    },
+    "konsep_inti_markdown": "**Geometri bangun datar PK UTBK** mengandalkan rasio, simetri, dan dekomposisi bentuk tanpa kalkulator.\n\n* **Arsiran & Simetri:** $L_{\\text{arsir}} = L_{\\text{total}} - L_{\\text{kosong}}$; gunakan pemindahan area simetris.\n* **Segitiga Tinggi Sama:** $\\frac{L_1}{L_2} = \\frac{a_1}{a_2}$ (rasio luas sama dengan rasio alas).\n* **Kesebangunan & Skala:** Jika rasio sisi $= k$, maka rasio keliling $= k$ dan rasio luas $= k^2$.\n* **Pythagoras Kunci:** Hafalkan tripel $(3,4,5)$, $(5,12,13)$, $(7,24,25)$, $(8,15,17)$.",
+    "radar_jebakan_utbk": [
+      "Menggunakan rasio sisi ($k$) secara langsung sebagai rasio luas ($k^2$) saat membandingkan dua bangun sebangun.",
+      "Menganggap dua segitiga yang memiliki alas sama otomatis sebangun, padahal tinggi sama hanya menjamin perbandingan luas."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='180,48 130,116 230,116' fill='#EFF6FF'/><polygon points='180,48 80,184 280,184' fill='none' stroke='#1E293B' stroke-width='2'/><line x1='130' y1='116' x2='230' y2='116' stroke='#3B82F6' stroke-width='2.5'/><polyline points='176,112 182,116 176,120' fill='none' stroke='#10B981' stroke-width='2'/><polyline points='176,180 182,184 176,188' fill='none' stroke='#10B981' stroke-width='2'/><circle cx='180' cy='48' r='3' fill='#1E293B'/><circle cx='80' cy='184' r='3' fill='#1E293B'/><circle cx='280' cy='184' r='3' fill='#1E293B'/><circle cx='130' cy='116' r='3' fill='#3B82F6'/><circle cx='230' cy='116' r='3' fill='#3B82F6'/><text x='180' y='38' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='66' y='190' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>B</text><text x='294' y='190' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>C</text><text x='114' y='118' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>D</text><text x='246' y='118' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>E</text><text x='144' y='80' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>a</text><text x='91' y='152' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>b</text><text x='180' y='107' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#3B82F6'>x</text><text x='180' y='176' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>y</text></svg>",
+      "caption": "Kesebangunan segitiga pada garis sejajar (DE // BC): a / (a + b) = x / y."
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Luas Daerah yang Diarsir pada Gabungan/Irisan Persegi, Segitiga, dan Lingkaran (Juring/Tembereng)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui persegi $ABCD$ dengan panjang sisi $14\\text{ cm}$. Di dalamnya dibuat dua buah seperempat lingkaran yang berpusat di titik $A$ dan titik $C$ dengan jari-jari $14\\text{ cm}$ sehingga beririsan membentuk daerah daun di tengah persegi. Tentukan luas daerah irisan tersebut ($\\pi = \\frac{22}{7}$).",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDaerah irisan (daun) terbentuk dari gabungan dua juring seperempat lingkaran yang saling bertumpuk di dalam persegi $ABCD$. Luas satu tembereng diperoleh dari luas juring dikurangi luas segitiga siku-siku: $L_{\\text{tembereng}} = \\frac{1}{4}\\pi r^2 - \\frac{1}{2}r^2$. Karena daerah daun terdiri atas dua tembereng simetris, maka:\n$$L_{\\text{arsir}} = 2 \\times \\left(\\frac{1}{4}\\pi r^2 - \\frac{1}{2}r^2\\right) = \\frac{1}{2}\\pi r^2 - r^2$$\nSubstitusi $r = 14$ dan $\\pi = \\frac{22}{7}$ menghasilkan $\\frac{1}{2} \\cdot \\frac{22}{7} \\cdot 196 - 196 = 308 - 196 = 112\\text{ cm}^2$.\n\n**2. Jalur Taktis UTBK**\nGunakan prinsip inklusi-eksklusi: $\\text{Irisan} = (\\text{Juring } A + \\text{Juring } C) - \\text{Persegi}$. Dua seperempat lingkaran sama dengan **setengah lingkaran** ($\\frac{1}{2} \\times \\frac{22}{7} \\times 14 \\times 14 = 11 \\times 28 = 308$). Kurangi langsung dengan luas persegi ($14^2 = 196$), diperoleh **$112\\text{ cm}^2$** dalam 20 detik.",
+      "kunci_pembeda": "Hitung luas irisan dua juring simetris menggunakan rumus cepat gabungan dikurangi luas bangun pembatasnya.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><path d='M 110 40 A 140 140 0 0 1 250 180 A 140 140 0 0 1 110 40 Z' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><rect x='110' y='40' width='140' height='140' fill='none' stroke='#1E293B' stroke-width='2'/><line x1='250' y1='180' x2='110' y2='40' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><text x='96' y='38' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>D</text><text x='264' y='38' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>C</text><text x='96' y='188' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='264' y='188' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>B</text><text x='180' y='198' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>14 cm</text></svg>",
+        "caption": "Irisan dua juring seperempat lingkaran di dalam persegi membentuk dua tembereng simetris."
+      }
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Perbandingan Luas Segitiga yang Memiliki Tinggi Sama (Sebanding dengan Rasio Alas)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pada segitiga $ABC$, titik $D$ terletak pada sisi $BC$ sehingga $BD : DC = 2 : 3$, dan titik $E$ terletak pada ruas garis $AD$ sehingga $AE : ED = 1 : 2$. Jika luas $\\triangle ABC = 60\\text{ cm}^2$, berapakah luas $\\triangle BDE$?",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDua segitiga yang berbagi satu titik puncak dan alasnya segaris memiliki tinggi yang identik. Akibatnya, perbandingan luas kedua segitiga sama persis dengan perbandingan panjang alasnya ($L = \\frac{1}{2} \\cdot a \\cdot t$).\n* Pada $\\triangle ABC$, titik $D$ membagi alas $BC$ dengan rasio $2 : 3$, sehingga $L_{\\triangle ABD} = \\frac{2}{2+3} \\times L_{\\triangle ABC} = \\frac{2}{5} \\times 60 = 24\\text{ cm}^2$.\n* Pada $\\triangle ABD$, titik $E$ membagi alas $AD$ dengan rasio $1 : 2$, sehingga $L_{\\triangle BDE} = \\frac{2}{1+2} \\times L_{\\triangle ABD} = \\frac{2}{3} \\times 24 = 16\\text{ cm}^2$.\n\n**2. Jalur Taktis UTBK**\nJangan menggambar garis tinggi! Langsung kalikan **fraksi bagian alas** secara berantai dari segitiga terbesar menuju segitiga target:\n$$L_{\\triangle BDE} = \\frac{2}{5} \\times \\frac{2}{3} \\times 60 = \\frac{4}{15} \\times 60 = 16\\text{ cm}^2$$\nCukup dua kali pencoretan pecahan dalam 15 detik.",
+      "kunci_pembeda": "Rasio luas segitiga yang berbagi titik puncak dan alas segaris selalu sama dengan rasio panjang alasnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Kesebangunan dan Kekongruenan Segitiga (Garis Sejajar dalam Segitiga & Segitiga Siku-siku Berbagi Sudut)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Segitiga $ABC$ siku-siku di $A$ dengan panjang $AB = 15\\text{ cm}$ dan $AC = 20\\text{ cm}$. Titik $D$ merupakan proyeksi titik $A$ pada sisi miring $BC$ ($AD \\perp BC$). Tentukan panjang ruas garis $BD$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nGaris tinggi $AD$ pada segitiga siku-siku $ABC$ membagi segitiga menjadi dua segitiga siku-siku kecil yang sebangun dengan segitiga induknya ($\\triangle DBA \\sim \\triangle DAC \\sim \\triangle ABC$) karena memenuhi syarat sudut-sudut (sd-sd). Dari kesebangunan $\\triangle DBA \\sim \\triangle ABC$, diperoleh perbandingan sisi bersesuaian:\n$$\\frac{BD}{AB} = \\frac{AB}{BC} \\implies AB^2 = BD \\times BC$$\nDengan $BC = \\sqrt{15^2 + 20^2} = 25\\text{ cm}$, maka $15^2 = BD \\times 25 \\implies BD = \\frac{225}{25} = 9\\text{ cm}$.\n\n**2. Jalur Taktis UTBK**\nGunakan pola **air mancur siku-siku**: kuadrat sisi siku-siku sama dengan proyeksinya dikali hipotenusa ($AB^2 = BD \\cdot BC$). Tanpa mengkuadratkan $15$, faktorkan langsung:\n$$BD = \\frac{15 \\times 15}{25} = 3 \\times 3 = 9\\text{ cm}$$\nTrik pemfaktoran menghindari perhitungan angka besar dan tuntas di bawah 20 detik.",
+      "kunci_pembeda": "Gunakan kesamaan dua sudut (sd-sd) atau pola kuadrat sisi tegak pada segitiga siku-siku bergaris tinggi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Teorema Pythagoras, Tripel Pythagoras, dan Garis Tinggi/Garis Berat Segitiga",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui segitiga sama kaki $PQR$ dengan panjang sisi $PQ = PR = 13\\text{ cm}$ dan alas $QR = 10\\text{ cm}$. Jika titik $M$ adalah titik tengah $QR$, tentukan panjang garis berat yang ditarik dari titik $Q$ ke sisi $PR$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPada segitiga sama kaki $PQR$, garis tinggi dari puncak $P$ berimpit dengan garis berat $PM$, sehingga $QM = MR = 5\\text{ cm}$ dan $PM \\perp QR$. Menggunakan Teorema Pythagoras pada $\\triangle PMR$, tinggi $PM = \\sqrt{13^2 - 5^2} = 12\\text{ cm}$. Selanjutnya, panjang garis berat $q$ yang membagi sisi $PR$ menjadi dua sama panjang dihitung dengan dalil garis berat:\n$$q^2 = \\frac{1}{2}PQ^2 + \\frac{1}{2}QR^2 - \\frac{1}{4}PR^2$$\nSubstitusi nilai sisi: $q^2 = \\frac{1}{2}(169) + \\frac{1}{2}(100) - \\frac{1}{4}(169) = \\frac{169}{4} + 50 = \\frac{369}{4}$, sehingga $q = \\frac{3}{2}\\sqrt{41}\\text{ cm}$.\n\n**2. Jalur Taktis UTBK**\nKenali **tripel Pythagoras dasar** $(5, 12, 13)$ untuk mendapatkan tinggi $PM = 12$ secara instan. Untuk mencari garis berat ke sisi $b$, ingat pola simetri: jumlah kuadrat dua sisi pengapit dibagi dua dikurangi seperempat kuadrat sisi tujuan.",
+      "kunci_pembeda": "Eksploitasi kelipatan tripel Pythagoras untuk tinggi segitiga sama kaki dan dalil garis berat untuk pembagi sisi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Sifat Segi Empat (Jajar Genjang, Belah Ketupat, Trapesium, Layang-layang) dan Garis Singgung Lingkaran",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sebuah trapesium sama kaki $ABCD$ ($AB \\parallel CD$) memiliki keliling $52\\text{ cm}$ dan menyinggung sebuah lingkaran di dalamnya (trapesium garis singgung). Jika panjang sisi sejajar $AB = 18\\text{ cm}$ dan $CD = 8\\text{ cm}$, tentukan luas trapesium tersebut.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPada segi empat yang keempat sisinya menyinggung lingkaran (*tangential quadrilateral*), jumlah panjang dua sisi yang berhadapan selalu sama ($AB + CD = AD + BC$). Diketahui $AB + CD = 18 + 8 = 26\\text{ cm}$, maka jumlah kedua kaki trapesium sama kaki adalah $AD + BC = 26\\text{ cm}$, sehingga $AD = BC = 13\\text{ cm}$. Tinggi trapesium dicari dengan memproyeksikan titik $D$ dan $C$ ke alas $AB$, menghasilkan segmen alas tepi $\\frac{18 - 8}{2} = 5\\text{ cm}$. Dengan Pythagoras, tinggi $t = \\sqrt{13^2 - 5^2} = 12\\text{ cm}$, sehingga $L = \\frac{18 + 8}{2} \\times 12 = 156\\text{ cm}^2$.\n\n**2. Jalur Taktis UTBK**\nIngat sifat **Teorema Pitot**: jumlah sisi sejajar trapesium garis singgung pasti setengah keliling ($52 \\div 2 = 26$), otomatis memberi kaki $13$. Pasangkan selisih alas dibagi dua ($5$) dengan kaki ($13$) menggunakan tripel $(5, 12, 13)$ untuk memperoleh tinggi $12$ tanpa rumus rumit.",
+      "kunci_pembeda": "Pada segi empat garis singgung lingkaran, jumlah pasangan sisi berhadapan selalu bernilai sama.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 6,
+      "nama_variasi": "Efek Perubahan Skala Dimensi Panjang terhadap Keliling dan Luas Bangun Datar",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Panjang suatu persegi panjang ditambah $25\\%$, sedangkan lebarnya dikurangi $20\\%$. Berapa persen perubahan luas persegi panjang tersebut dibandingkan luas semula?",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nMisalkan panjang awal adalah $p$ dan lebar awal adalah $l$, sehingga luas awal $L_0 = p \\times l$. Penambahan panjang sebesar $25\\%$ mengubah panjang menjadi $p' = p + 0,25p = 1,25p$. Pengurangan lebar sebesar $20\\%$ mengubah lebar menjadi $l' = l - 0,20l = 0,80l$. Luas akhir bangun datar tersebut adalah:\n$$L' = p' \\times l' = (1,25p)(0,80l) = 1,00 \\cdot pl = L_0$$\nKarena $L' = L_0$, selisih luasnya adalah nol ($0\\%$), artinya luas persegi panjang tetap atau tidak mengalami perubahan.\n\n**2. Jalur Taktis UTBK**\nJangan pernah mengurangkan persentase secara langsung ($+25\\% - 20\\% \\neq +5\\%$). Gunakan **uji substitusi angka $10$**: misalkan $p = 10$ dan $l = 10$ ($L_0 = 100$). Setelah diubah, $p' = 12,5$ dan $l' = 8$, maka $L' = 12,5 \\times 8 = 100$. Langsung terlihat perubahan luasnya **$0\\%$** dalam 10 detik.",
+      "kunci_pembeda": "Substitusikan dimensi awal dengan angka $10$ atau $100$ untuk melihat efek kuadratik perubahan skala secara instan.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Perhatikan gambar berikut! Diketahui $ABCD$ adalah persegi panjang dengan $AB = 16\\text{ cm}$ dan $BC = 12\\text{ cm}$. Titik $E$ adalah perpotongan kedua diagonal $AC$ dan $BD$, sedangkan setengah lingkaran berdiameter $AD$ berada di dalam persegi panjang. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut?\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| Luas daerah yang diarsir ($\\text{cm}^2$) | $90$ |",
+      "opsi_jawaban": [
+        "A. P > Q",
+        "B. Q > P",
+        "C. P = Q",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Luas persegi panjang $ABCD = 16 \\times 12 = 192\\text{ cm}^2$. Setengah lingkaran berdiameter $AD = 12\\text{ cm}$ ($r = 6\\text{ cm}$) memiliki luas $\\frac{1}{2}\\pi(6)^2 = 18\\pi\\text{ cm}^2$. Titik potong diagonal $E$ membagi lebar menjadi tinggi segitiga $8\\text{ cm}$, sehingga $L_{\\triangle BEC} = \\frac{1}{2} \\times 12 \\times 8 = 48\\text{ cm}^2$. Maka $P = 192 - 48 - 18\\pi = 144 - 18\\pi$. Karena $\\pi > 3$, nilai $18\\pi > 54$, sehingga $P < 144 - 54 = 90$. Diperoleh **$Q > P$** (**B**).",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><rect x='90' y='36' width='180' height='135' fill='#EFF6FF'/><path d='M 90 36 A 67.5 67.5 0 0 1 90 171 Z' fill='#FFFFFF' stroke='#3B82F6' stroke-width='2'/><polygon points='270,171 180,103.5 270,36' fill='#FFFFFF' stroke='#3B82F6' stroke-width='2'/><line x1='90' y1='171' x2='270' y2='36' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='90' y1='36' x2='270' y2='171' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='90' y='36' width='180' height='135' fill='none' stroke='#1E293B' stroke-width='2'/><text x='76' y='34' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>D</text><text x='284' y='34' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>C</text><text x='76' y='178' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='284' y='178' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>B</text><text x='180' y='92' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>E</text><text x='180' y='190' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>16 cm</text><text x='302' y='108' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>12 cm</text></svg>",
+        "caption": "Persegi panjang ABCD dikurangi setengah lingkaran berdiameter AD dan segitiga BEC."
+      }
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Kecukupan Data",
+      "pertanyaan_markdown": "Pada segitiga $ABC$, titik $D$ terletak pada sisi $AB$ dan titik $E$ terletak pada sisi $AC$ sedemikian sehingga garis $DE$ sejajar dengan sisi $BC$. Berapakah luas segitiga $ADE$?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut.\n(1) Perbandingan panjang $AD : DB = 2 : 1$.\n(2) Luas trapesium $DBCE$ adalah $25\\text{ cm}^2$.",
+      "opsi_jawaban": [
+        "A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C. DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.",
+        "D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.",
+        "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Karena $DE \\parallel BC$, maka $\\triangle ADE \\sim \\triangle ABC$. **Pernyataan (1) saja** hanya memberi rasio sisi $AD : AB = 2 : 3$ sehingga rasio luas $L_{\\triangle ADE} : L_{\\triangle ABC} = 4 : 9$, belum cukup tanpa ukuran luas. **Pernyataan (2) saja** hanya memberi luas trapesium $DBCE = 25\\text{ cm}^2$ tanpa faktor skala, belum cukup. **Jika digabungkan**, rasio $L_{\\triangle ADE} : L_{DBCE} = 4 : (9 - 4) = 4 : 5$, sehingga $L_{\\triangle ADE} = \\frac{4}{5} \\times 25 = 20\\text{ cm}^2$. Jadi, **dua pernyataan bersama-sama cukup** (**C**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5,
+        6
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Sebuah belah ketupat memiliki keliling $52\\text{ cm}$ dan panjang salah satu diagonalnya $24\\text{ cm}$. Jika kedua diagonal belah ketupat tersebut diperpanjang menjadi $1,5$ kali panjang semula, berapakah luas belah ketupat yang baru dalam satuan $\\text{cm}^2$? *(Tuliskan bilangan bulat saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "270",
+      "bedah_cepat_markdown": "Panjang sisi belah ketupat awal adalah $52 \\div 4 = 13\\text{ cm}$. Setengah diagonal pertama adalah $24 \\div 2 = 12\\text{ cm}$. Dengan tripel Pythagoras $(5, 12, 13)$, setengah diagonal kedua bernilai $5\\text{ cm}$ sehingga $d_2 = 10\\text{ cm}$. Luas awal belah ketupat adalah $L_0 = \\frac{1}{2} \\times 24 \\times 10 = 120\\text{ cm}^2$. Karena kedua diagonal diperbesar dengan faktor skala $k = 1,5 = \\frac{3}{2}$, luas baru menjadi $L' = k^2 \\times L_0 = \\left(\\frac{3}{2}\\right)^2 \\times 120 = \\frac{9}{4} \\times 120 = \\mathbf{270}$.",
+      "visual": null
+    }
+  ]
+}

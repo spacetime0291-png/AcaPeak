@@ -1,0 +1,116 @@
+{
+  "kode_subbab": "lbe-03-01",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 3: Inference, Tone, & Multi-Text",
+  "judul_subbab": "Drawing Logical Inferences and Predictions",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Teks menyebutkan: 'Solar panels reduce household electricity bills by 40% in sunny regions.' Simpulan mana yang paling valid menurut standar UTBK?",
+      "opsi_cepat": [
+        "Solar panels eliminate all electricity costs in sunny areas.",
+        "Households in sunny regions still pay 60% of their original electricity costs."
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Opsi pertama menggunakan kata ekstrem 'eliminate all' (menghapus semua), padahal pengurangan 40% menyisakan 60% biaya yang tetap harus dibayar."
+    },
+    "konsep_inti_markdown": "**Inference** adalah kesimpulan logis yang **tidak tertulis eksplisit**, tetapi **pasti benar** berdasarkan bukti tekstual.\n\n* **Rumus Emas:** $\\text{Teks Eksplisit} + \\text{Logika Ketat} = \\text{Valid Inference}$\n* **Aturan Ketat:** Hindari lompatan asumsi liar, opini pribadi, atau kata ekstrem (*always, never, completely*).\n* **Fokus Eksekusi:** Cari kalimat kunci (*scanning*), pahami hubungan sebab-akibat/tren data, lalu cocokkan dengan parafrasa yang akurat.",
+    "radar_jebakan_utbk": [
+      "Opsi Ekstrem (Extreme Wording): Memakai kata 'all', 'never', 'only', atau 'must' padahal teks hanya menyatakan kecenderungan sebagian.",
+      "Lompatan Logika (Out of Scope): Opsi terdengar masuk akal di dunia nyata, tetapi tidak memiliki dasar bukti di dalam stimulus."
+    ],
+    "stimulus_utama_bersama": "**Text 1: Urban Green Spaces and Heat Mitigation**\nRecent meteorological measurements across twelve metropolitan districts demonstrate that neighborhoods with more than 30% tree canopy coverage experience daytime surface temperatures up to $3.5^{\\circ}\\text{C}$ lower than concrete-dominated zones. Urban trees cool the air not only by providing direct shade, but also through evapotranspiration, a process where water absorbed by roots is released as vapor through leaves. However, municipal planners warn that planting trees alone cannot offset urban heat islands if asphalt expansion continues unchecked, as dark pavement absorbs and re-radiates solar heat long after sunset.\n\n**Table 1: District Canopy Coverage vs. Afternoon Peak Temperature (2024)**\n| District | Tree Canopy (%) | Avg. Peak Temp ($^{\\circ}\\text{C}$) | AC Energy Demand Index |\n| :--- | :---: | :---: | :---: |\n| Northwood | 36% | 29.8 | 78 |\n| Eastgate | 24% | 31.4 | 92 |\n| Southport | 11% | 33.2 | 115 |\n\n**Text 2: Forum Discussion on Urban Forestry**\n* **@EcoPlanner_ID:** Expanding green corridors in Southport is urgent. Without immediate zoning restrictions on commercial parking lots, newly planted saplings will fail to lower nighttime temperatures.\n* **@UrbanBuilder99:** True, but mature canopies take 15 to 20 years to develop. In the short term, coating existing rooftops with high-albedo reflective paint offers faster thermal relief than waiting for saplings to grow.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Strict Logical Inference",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Text 1 Kalimat 2: '...evapotranspiration, a process where water absorbed by roots is released as vapor through leaves.'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning:** Pindai kata kunci pertanyaan (misal: *evapotranspiration*) ke Text 1 kalimat kedua.\n2. **Identifikasi Syarat:** Proses pendinginan udara membutuhkan penyerapan air oleh akar (*water absorbed by roots*).\n3. **Parafrasa ke Opsi Benar:** Jika tanah terlalu kering atau kekurangan air tanah, efektivitas pendinginan pohon melalui penguapan daun akan menurun.\n\n**Radar Jebakan:**\n* *Terlalu sempit:* Mengklaim pohon hanya mendinginkan udara lewat bayangan (mengabaikan *evapotranspiration*).\n* *Tidak disebut:* Menyatakan pohon menggantikan fungsi pendingin ruangan sepenuhnya.",
+      "kunci_pembeda": "Hanya menarik deduksi langsung dari satu fakta spesifik tanpa menambah skenario baru.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Inferring Unstated Assumptions Underlying the Author's or Commenter's Claim",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Text 2 (@UrbanBuilder99): '...coating existing rooftops with high-albedo reflective paint offers faster thermal relief than waiting for saplings to grow.'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning:** Temukan klaim utama komentator di Text 2 (@UrbanBuilder99), yaitu cat reflektif memberi pendinginan lebih cepat daripada bibit pohon.\n2. **Cari Jembatan Logika (Asumsi):** Agar klaim ini valid, harus ada anggapan tak tertulis bahwa bangunan di wilayah tersebut memiliki atap yang dapat diakses dan dilapisi cat.\n3. **Parafrasa ke Opsi Benar:** *Existing buildings have accessible roof surfaces suitable for reflective coating.*\n\n**Radar Jebakan:**\n* *Terlalu ekstrem:* Mengasumsikan penanaman pohon tidak berguna sama sekali (bertentangan dengan kata *'True'* di awal kalimat).\n* *Out of scope:* Membahas biaya anggaran pemerintah yang tidak disinggung.",
+      "kunci_pembeda": "Mencari premis tersembunyi yang wajib benar agar argumen penulis tidak runtuh.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Predicting Outcomes Based on Textual Evidence",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Text 1 Kalimat 3: '...planting trees alone cannot offset urban heat islands if asphalt expansion continues unchecked...'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning:** Cari frasa kondisional (*if asphalt expansion continues unchecked*) di akhir Text 1.\n2. **Proyeksi Tren:** Teks menyatakan aspal menyerap dan memancarkan panas setelah matahari terbenam, sehingga penanaman pohon saja gagal menetralkan pulau panas.\n3. **Parafrasa ke Opsi Benar:** Jika pembangunan lahan parkir beraspal dibiarkan tanpa regulasi, suhu kota tetap tinggi meskipun jumlah pohon bertambah.\n\n**Radar Jebakan:**\n* *Kebalikan fakta:* Memprediksi suhu turun drastis hanya karena program tanam pohon massal.\n* *Ekstrem:* Memprediksi seluruh pohon di kota akan mati akibat aspal.",
+      "kunci_pembeda": "Memproyeksikan skenario masa depan ('what would happen if') berdasarkan aturan kausalitas di teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Inferring Implied Cause-and-Effect Relationships",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Text 1 Kalimat 3 & Text 2 (@EcoPlanner_ID): '...dark pavement absorbs and re-radiates solar heat long after sunset.'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning:** Hubungkan penjelasan mekanisme aspal di Text 1 dengan peringatan @EcoPlanner_ID tentang *nighttime temperatures* di Text 2.\n2. **Rantai Sebab-Akibat:** Aspal gelap menyerap panas siang hari $\\rightarrow$ melepaskan radiasi panas setelah matahari terbenam $\\rightarrow$ suhu malam hari gagal turun.\n3. **Parafrasa ke Opsi Benar:** Tingginya suhu malam hari di distrik padat terutama dipicu oleh pelepasan panas tersimpan dari permukaan beraspal.\n\n**Radar Jebakan:**\n* *Sebab-akibat terbalik:* Mengklaim suhu malam yang tinggi menyebabkan perluasan lahan aspal.\n* *Faktor keliru:* Menyebut kurangnya bayangan pohon sebagai penyebab utama panas setelah matahari terbenam.",
+      "kunci_pembeda": "Menghubungkan dua peristiwa secara kausal (sebab $\\rightarrow$ akibat) meski kata 'because' tidak ditulis langsung.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Data & Chart Integration Inference",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujukan Table 1 (Baris Southport & Northwood) + Text 1 Kalimat 1.",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Data:** Bandingkan angka pada Table 1: saat *Tree Canopy* turun dari 36% (Northwood) ke 11% (Southport), *Avg. Peak Temp* naik dari $29.8^{\\circ}\\text{C}$ ke $33.2^{\\circ}\\text{C}$ dan *AC Energy Demand Index* melonjak dari 78 ke 115.\n2. **Sintesis Teks + Tabel:** Teks menjelaskan pohon menurunkan suhu; tabel membuktikan suhu rendah berkorelasi dengan turunnya konsumsi listrik AC.\n3. **Parafrasa ke Opsi Benar:** Meningkatkan tutupan kanopi pohon di Southport hingga setara Northwood berpotensi menekan indeks permintaan energi pendingin ruangan.\n\n**Radar Jebakan:**\n* *Salah baca angka:* Mengklaim Eastgate memiliki kebutuhan energi AC tertinggi.\n* *Korelasi palsu:* Menyimpulkan penggunaan AC yang memicu kenaikan suhu udara luar.",
+      "kunci_pembeda": "Menggabungkan tren numerik tabel/grafik dengan penjelasan mekanisme kualitatif di dalam paragraf.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Based on Text 1 and @EcoPlanner_ID's statement in Text 2, what would most likely occur if Southport initiates a massive tree-planting campaign without restricting new asphalt parking lots?",
+      "opsi_jawaban": [
+        "A. Daytime peak temperatures in Southport would immediately drop below $29.8^{\\circ}\\text{C}$.",
+        "B. Newly planted trees would completely stop evapotranspiration during summer.",
+        "C. Elevated nighttime temperatures would persist due to heat re-radiated by dark pavement.",
+        "D. Southport's AC Energy Demand Index would fall below Eastgate's level within a year.",
+        "E. Shade from young saplings would neutralize all solar heat absorbed by asphalt."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "**Kunci: C.** Text 1 menjelaskan bahwa aspal gelap menyerap dan memancarkan kembali panas setelah matahari terbenam (*after sunset*), sementara @EcoPlanner_ID menegaskan bibit pohon gagal menurunkan *nighttime temperatures* tanpa pembatasan lahan parkir aspal. Opsi A, D, dan E salah karena memuat klaim ekstrem/instan (*immediately, within a year, neutralize all*), sedangkan Opsi B bertentangan dengan mekanisme biologis pohon di teks.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        5
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Evaluate the following inferences based on the integration of Text 1, Table 1, and Text 2. Determine whether each statement is **TRUE** or **FALSE**!\n\n| No. | Inference Statement | TRUE | FALSE |\n| :---: | :--- | :---: | :---: |\n| 1 | Districts with lower tree canopy percentages consistently exhibit higher afternoon peak temperatures and greater AC energy demand. | | |\n| 2 | @UrbanBuilder99 assumes that applying high-albedo roof paint requires less time to reduce heat than waiting for newly planted trees to mature. | | |\n| 3 | Increasing Northwood's tree canopy from 36% to 50% will completely eliminate the need for air conditioning in that district. | | |",
+      "opsi_jawaban": [
+        "A. TRUE - TRUE - TRUE",
+        "B. TRUE - TRUE - FALSE",
+        "C. TRUE - FALSE - FALSE",
+        "D. FALSE - TRUE - FALSE",
+        "E. FALSE - FALSE - TRUE"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Kunci: B (TRUE - TRUE - FALSE).**\n* **Pernyataan 1 (TRUE):** Data Table 1 menunjukkan pola konsisten: kanopi turun ($36\\% \\rightarrow 24\\% \\rightarrow 11\\%$), suhu puncak naik ($29.8 \\rightarrow 31.4 \\rightarrow 33.2$), dan indeks AC naik ($78 \\rightarrow 92 \\rightarrow 115$).\n* **Pernyataan 2 (TRUE):** @UrbanBuilder99 membandingkan masa tunggu pohon 15–20 tahun dengan solusi cat reflektif yang lebih cepat (*faster thermal relief*).\n* **Pernyataan 3 (FALSE):** Kata *completely eliminate* merupakan jebakan ekstrem yang tidak didukung data.",
+      "visual": null
+    }
+  ]
+}

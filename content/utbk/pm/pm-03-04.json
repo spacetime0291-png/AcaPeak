@@ -1,0 +1,119 @@
+{
+  "kode_subbab": "pm-03-04",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 3: Geometri Terapan dan Pengukuran",
+  "judul_subbab": "Pengukuran Waktu, Zona Waktu, Jadwal Siklik, dan Rute",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Pesawat berangkat dari Jakarta pukul 22.30 WIB menuju Jayapura dengan lama terbang 5 jam 15 menit. Mengapa penumpang tidak mendarat pada pukul 03.45 WIT di hari berikutnya?",
+      "opsi_cepat": [
+        "Karena perbedaan zona waktu menambah 2 jam menjadi pukul 05.45 WIT",
+        "Karena perbedaan zona waktu mengurangi 2 jam menjadi pukul 01.45 WIT"
+      ],
+      "jawaban_benar_index": 0,
+      "penjelasan_kilat": "Jakarta (UTC+7) ke Jayapura (UTC+9) berselisih +2 jam ke timur. Waktu lokal tujuan wajib ditambah selisih zona (+2 jam) setelah durasi tempuh dijumlahkan, sehingga tiba pukul 05.45 WIT."
+    },
+    "konsep_inti_markdown": "- **Konversi Zona Waktu:** $\\text{Waktu Tujuan} = \\text{Waktu Asal} + \\text{Durasi} + (\\text{UTC}_{\\text{Tujuan}} - \\text{UTC}_{\\text{Asal}})$. Bergerak ke timur ($+$), ke barat ($-$).\n- **Zona Indonesia:** $\\text{WIB}$ ($\\text{UTC}+7$), $\\text{WITA}$ ($\\text{UTC}+8$), $\\text{WIT}$ ($\\text{UTC}+9$).\n- **Durasi Multi-Transit:** Jumlahkan seluruh waktu terbang dan jeda transit dalam satu zona waktu acuan yang sama.\n- **Jadwal Siklik:** Pertemuan ulang menggunakan $\\text{KPK}$ periode; penentuan hari menggunakan sisa pembagian $\\text{KPK} \\pmod{7}$.\n- **Optimasi Rute:** Prioritaskan titik dengan batas jam operasional paling ketat sebelum meminimalkan total jarak tempuh.",
+    "radar_jebakan_utbk": [
+      "Lupa mengonversi semua waktu ke satu zona acuan (misalnya UTC atau WIB) sebelum menghitung durasi perjalanan multi-transit, sehingga selisih zona terhitung ganda atau terlewat.",
+      "Keliru menentukan arah pergantian hari saat melewati pukul 00.00 atau 24.00 (mundur tanggal saat bergerak ke barat dan maju tanggal saat bergerak ke timur).",
+      "Menggunakan algoritma rute terdekat (greedy) tanpa memeriksa batas jam tutup lokasi, sehingga paket tiba melewati tenggat operasional."
+    ],
+    "stimulus_utama_bersama": "**Operasional Penerbangan Kargo dan Distribusi Medis PT Dirgantara Logistik (DILOG)**\n\nPT Dirgantara Logistik (DILOG) mengoperasikan jaringan pengiriman kargo udara dan darat lintas zona waktu dengan acuan waktu standar berikut: Jakarta ($\\text{WIB} = \\text{UTC}+7$), Makassar ($\\text{WITA} = \\text{UTC}+8$), Jayapura ($\\text{WIT} = \\text{UTC}+9$), Frankfurt ($\\text{CET} = \\text{UTC}+1$), dan Tokyo ($\\text{JST} = \\text{UTC}+9$).\n\n**1. Jadwal Penerbangan Berantai (DILOG-01)**\nPesawat kargo DILOG-01 dijadwalkan berangkat dari Bandara Soekarno-Hatta Jakarta (CGK) menuju Bandara Sentani Jayapura (DJJ) dengan transit di Bandara Sultan Hasanuddin Makassar (UPG) setiap hari Senin:\n- Berangkat dari Jakarta (CGK): **Senin, pukul 06.30 WIB**.\n- Lama penerbangan murni CGK $\\rightarrow$ UPG: **2 jam 25 menit**.\n- Jeda wajib bongkar muat dan pengisian bahan bakar di UPG: **1 jam 15 menit**.\n- Lama penerbangan murni UPG $\\rightarrow$ DJJ: **3 jam 10 menit**.\n\n**2. Jadwal Siklik Pemeliharaan & Terminal**\n- Pemeliharaan berkala pesawat DILOG-01 terdiri atas inspeksi mesin setiap **6 hari**, kalibrasi radar setiap **8 hari**, dan audit keamanan kargo setiap **12 hari**. Ketiganya dilaksanakan serentak pertama kali pada hari **Senin**.\n- Di terminal kargo CGK, pengiriman batch vaksin diberangkatkan setiap **45 menit** sekali sejak pukul 06.00 WIB, sedangkan truk pendingin mitra tiba setiap **60 menit** sekali sejak pukul 06.00 WIB.\n\n**3. Jaringan Distribusi Darat Jayapura**\nSetibanya di Bandara DJJ, muatan medis dipindahkan ke mobil kurir selama **10 menit** sebelum diantar ke tiga rumah sakit: **RS Harapan (H)**, **RS Sentani (S)**, dan **RS Abepura (A)**, lalu kembali ke **Bandara (B)** paling lambat pukul **18.00 WIT**. Waktu tempuh antar-titik (dua arah sama) disajikan pada tabel berikut:\n\n| Rute Antar-Titik | Waktu Tempuh | Rute Antar-Titik | Waktu Tempuh |\n| :--- | :---: | :--- | :---: |\n| Bandara (B) $\\leftrightarrow$ RS Harapan (H) | 25 menit | RS Harapan (H) $\\leftrightarrow$ RS Sentani (S) | 15 menit |\n| Bandara (B) $\\leftrightarrow$ RS Sentani (S) | 20 menit | RS Harapan (H) $\\leftrightarrow$ RS Abepura (A) | 30 menit |\n| Bandara (B) $\\leftrightarrow$ RS Abepura (A) | 40 menit | RS Sentani (S) $\\leftrightarrow$ RS Abepura (A) | 35 menit |\n\n*Catatan Operasional:* Bongkar muat di setiap rumah sakit membutuhkan waktu **10 menit**. **RS Abepura (A)** menutup loket penerimaan barang tepat pukul **16.30 WIT**, sedangkan RS Harapan dan RS Sentani menerima barang hingga pukul 18.00 WIT.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Konversi Zona Waktu Nasional (WIB, WITA, WIT) dan Internasional (UTC/GMT) untuk Jadwal Penerbangan & Rapat Daring",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian Jadwal Penerbangan DILOG-01: pesawat berangkat dari Jakarta (06.30 WIB) dan terbang 2 jam 25 menit menuju Makassar (WITA). Jika pada waktu pendaratan di Makassar diadakan rapat daring dengan kantor Frankfurt (CET) dan Tokyo (JST), pukul berapakah rapat dimulai di ketiga kota tersebut?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nDiketahui keberangkatan pukul $06.30\\text{ WIB}$ ($\\text{UTC}+7$) dengan durasi terbang $2\\text{ jam } 25\\text{ menit}$. Tujuan berada di Makassar ($\\text{WITA} = \\text{UTC}+8$), serta peserta rapat berada di Frankfurt ($\\text{CET} = \\text{UTC}+1$) dan Tokyo ($\\text{JST} = \\text{UTC}+9$).\n\n**2. Model Matematika (Employing)**\nGunakan rumus pergeseran zona waktu terhadap $\\text{WIB}$:\n$$\\text{Waktu Tujuan} = \\text{Waktu WIB} + \\text{Durasi} + (\\text{UTC}_{\\text{Tujuan}} - 7)$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nWaktu tiba dalam acuan $\\text{WIB}$ adalah $06.30 + 02.25 = 08.55\\text{ WIB}$. Konversi ke masing-masing kota:\n- Makassar ($+1\\text{ jam}$): $08.55 + 01.00 = 09.55\\text{ WITA}$.\n- Frankfurt ($-6\\text{ jam}$): $08.55 - 06.00 = 02.55\\text{ CET}$ (Senin dini hari).\n- Tokyo ($+2\\text{ jam}$): $08.55 + 02.00 = 10.55\\text{ JST}$.\nSecara praktis, rapat pukul $02.55\\text{ CET}$ kurang ideal bagi tim Frankfurt karena berada di luar jam kerja.",
+      "kunci_pembeda": "Fokus utama variasi ini adalah memetakan satu titik kejadian yang sama ke berbagai zona waktu lokal menggunakan selisih offset UTC tanpa akumulasi transit berantai.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Perhitungan Durasi Perjalanan Multi-Transit dengan Perubahan Zona Waktu dan Jeda Keberangkatan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian Jadwal Penerbangan Berantai DILOG-01: pesawat berangkat dari Jakarta pukul 06.30 WIB, terbang 2 jam 25 menit ke Makassar, transit 1 jam 15 menit, lalu terbang 3 jam 10 menit menuju Jayapura (WIT). Pukul berapakah pesawat mendarat di Jayapura?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPerjalanan terdiri atas tiga komponen waktu berurutan: terbang pertama $2\\text{ jam } 25\\text{ menit}$, jeda transit $1\\text{ jam } 15\\text{ menit}$, dan terbang kedua $3\\text{ jam } 10\\text{ menit}$. Keberangkatan dimulai pukul $06.30\\text{ WIB}$ ($\\text{UTC}+7$) dan berakhir di Jayapura ($\\text{WIT} = \\text{UTC}+9$).\n\n**2. Model Matematika (Employing)**\nKunci perjalanan multi-transit adalah menjumlahkan seluruh durasi dalam satu zona acuan awal sebelum mengonversi ke zona akhir:\n$$\\text{Tiba}_{\\text{WIT}} = \\text{Berangkat}_{\\text{WIB}} + \\sum \\text{Durasi} + (9 - 7)$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nTotal durasi perjalanan:\n$$(2\\text{ j } 25\\text{ m}) + (1\\text{ j } 15\\text{ m}) + (3\\text{ j } 10\\text{ m}) = 6\\text{ jam } 50\\text{ menit}$$\nWaktu tiba dalam zona asal menjadi $06.30 + 06.50 = 13.20\\text{ WIB}$. Konversi ke $\\text{WIT}$ ($+2\\text{ jam}$) menghasilkan pukul **$15.20\\text{ WIT}$**. Evaluasi jadwal menunjukkan jeda transit $1\\text{ jam } 15\\text{ menit}$ sudah terakomodasi tanpa menggeser hari kedatangan.",
+      "kunci_pembeda": "Variasi ini menggabungkan seluruh segmen tempuh dan waktu tunggu transit menjadi satu total durasi sebelum melakukan konversi zona waktu di akhir.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penentuan Pertemuan Jadwal Siklik (Shift Kerja, Lampu Lalu Lintas, Keberangkatan Armada) Menggunakan KPK dan Modulo Hari/Jam",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian Jadwal Siklik Pemeliharaan: inspeksi mesin (6 hari), kalibrasi radar (8 hari), dan audit keamanan (12 hari) dilakukan bersamaan pertama kali pada hari Senin. Pada hari apakah ketiga kegiatan tersebut akan berlangsung bersamaan untuk kedua kalinya setelah hari Senin tersebut?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTiga aktivitas siklik memiliki periode $T_1 = 6$, $T_2 = 8$, dan $T_3 = 12$ hari dengan titik awal bersama pada hari Senin. Dicari hari pertemuan bersama kedua setelah awal (yaitu kelipatan persekutuan kedua).\n\n**2. Model Matematika (Employing)**\nInterval pertemuan bersama pertama ditentukan oleh kelipatan persekutuan terkecil:\n$$\\Delta t = \\text{KPK}(6, 8, 12)$$\nUntuk pertemuan kedua setelah hari awal, selang waktunya adalah $2 \\times \\Delta t$, lalu dicari sisanya terhadap siklus $7\\text{ hari}$ menggunakan operasi modulo $\\Delta t_{\\text{total}} \\pmod{7}$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nFaktorisasi prima menghasilkan $\\text{KPK}(6, 8, 12) = 2^3 \\times 3 = 24\\text{ hari}$. Selang waktu pertemuan kedua setelah Senin awal adalah $2 \\times 24 = 48\\text{ hari}$. Karena $48 = 6 \\times 7 + 6$, maka $48 \\equiv 6 \\pmod{7}$. Menggeser $6\\text{ hari}$ setelah Senin menghasilkan hari **Minggu**, sehingga tim teknisi perlu menyiapkan jadwal lembur akhir pekan.",
+      "kunci_pembeda": "Variasi ini tidak mencari selisih zona geografis, melainkan menggunakan KPK untuk menyinkronkan siklus berulang dan aritmetika modulo untuk memetakan nama hari atau jam.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Optimasi Rute Kunjungan Multi-Titik dengan Kendala Jam Operasional dan Batas Waktu Tempuh",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk bagian Jaringan Distribusi Darat Jayapura: kurir mulai berangkat dari Bandara (B) pukul 15.30 WIT setelah bongkar muat pesawat, wajib mengunjungi RS Harapan (H), RS Sentani (S), dan RS Abepura (A) dengan syarat tiba di A paling lambat pukul 16.30 WIT dan kembali ke B sebelum pukul 18.00 WIT. Tentukan rute tercepat!",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nKurir berangkat dari B pukul $15.30\\text{ WIT}$ dan wajib kembali sebelum $18.00\\text{ WIT}$ (anggaran $150\\text{ menit}$). Bongkar muat tiga lokasi memakan $3 \\times 10 = 30\\text{ menit}$, sehingga waktu berkendara maksimal $120\\text{ menit}$. Tenggat RS Abepura pukul $16.30\\text{ WIT}$ membatasi waktu tempuh menuju A maksimal $60\\text{ menit}$.\n\n**2. Model Matematika (Employing)**\nSaring permutasi rute dengan syarat $t_{\\text{tiba}, A} \\le 16.30\\text{ WIT}$, lalu minimalkan:\n$$T_{\\text{total}} = \\sum t_{\\text{jalan}} + 30 \\le 150\\text{ menit}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nMengunjungi S atau H lebih dulu membuat kurir tiba di A pukul $16.35\\text{ WIT}$ (terlambat $5\\text{ menit}$). Rute wajib dimulai ke A: jalur $B \\rightarrow A \\rightarrow H \\rightarrow S \\rightarrow B$ membutuhkan waktu jalan $40 + 30 + 15 + 20 = 105\\text{ menit}$ (total $135\\text{ menit}$), sehingga tiba di B pukul **$17.45\\text{ WIT}$** sebelum batas waktu berakhir.",
+      "kunci_pembeda": "Variasi ini menggabungkan optimasi jalur terpendek dengan kendala jendela waktu (time window) keras yang menggugurkan rute terdekat secara naif.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan jadwal penerbangan berantai DILOG-01 pada teks utama, apabila terjadi cuaca buruk di Makassar sehingga jeda transit di UPG diperpanjang menjadi 2 jam 5 menit dan pesawat baru bisa mendarat di Jayapura kemudian dilaporkan ke kantor mitra Frankfurt (CET) tepat 15 menit setelah pendaratan, pukul berapakah laporan tersebut diterima di Frankfurt?",
+      "opsi_jawaban": [
+        "A. Senin, pukul 07.35 CET",
+        "B. Senin, pukul 08.10 CET",
+        "C. Senin, pukul 08.25 CET",
+        "D. Senin, pukul 10.25 CET",
+        "E. Senin, pukul 20.25 CET"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Total durasi perjalanan dari Jakarta adalah $2\\text{ j } 25\\text{ m} + 2\\text{ j } 5\\text{ m} + 3\\text{ j } 10\\text{ m} = 7\\text{ jam } 40\\text{ menit}$, sehingga pesawat tiba pukul $06.30 + 07.40 = 14.10\\text{ WIB}$. Laporan dikirim $15\\text{ menit}$ kemudian pada pukul $14.25\\text{ WIB}$ ($\\text{UTC}+7$). Konversi ke Frankfurt ($\\text{CET} = \\text{UTC}+1$) berselisih $-6\\text{ jam}$: $14.25 - 06.00 = 08.25\\text{ CET}$ hari Senin. Opsi A memakai transit lama, B lupa jeda $15\\text{ menit}$, D salah selisih zona dari WIT, dan E terbalik arah konversi.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Merujuk bagian Jadwal Siklik Pemeliharaan & Terminal pada teks utama, di terminal kargo CGK pengiriman batch vaksin dan kedatangan truk pendingin mitra berlangsung bersamaan pertama kali pada pukul 06.00 WIB. Berapa kali total pertemuan bersamaan antara keberangkatan batch vaksin dan kedatangan truk pendingin terjadi mulai pukul 06.00 WIB hingga tepat pukul 18.00 WIB pada hari yang sama? (Tuliskan jawaban dalam bilangan bulat)",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "5",
+      "bedah_cepat_markdown": "Keberangkatan batch vaksin ($45\\text{ menit}$) dan kedatangan truk pendingin ($60\\text{ menit}$) bertemu bersamaan setiap $\\text{KPK}(45, 60) = 180\\text{ menit} = 3\\text{ jam}$. Rentang waktu dari pukul $06.00$ hingga $18.00\\text{ WIB}$ adalah $12\\text{ jam}$. Banyaknya pertemuan bersamaan termasuk titik awal pukul $06.00$ dan titik akhir pukul $18.00$ adalah $\\frac{12}{3} + 1 = 4 + 1 = 5\\text{ kali}$ (pukul $06.00, 09.00, 12.00, 15.00,$ dan $18.00\\text{ WIB}$).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Pesawat DILOG-01 mendarat sesuai jadwal normal pada pukul 15.20 WIT di Bandara DJJ, dan kurir darat berangkat dari Bandara (B) pukul 15.30 WIT untuk mengantar paket ke RS Harapan (H), RS Sentani (S), dan RS Abepura (A) sebelum kembali ke Bandara (B). Perhatikan pernyataan-pernyataan berikut terkait rute distribusi darat tersebut:\n\n(1) Rute $B \\rightarrow S \\rightarrow A \\rightarrow H \\rightarrow B$ memenuhi seluruh tenggat jam operasional rumah sakit.\n(2) Waktu tiba paling awal yang mungkin dicapai kurir kembali di Bandara (B) adalah pukul 17.45 WIT.\n(3) Rute $B \\rightarrow H \\rightarrow A \\rightarrow S \\rightarrow B$ lebih cepat 5 menit dibandingkan rute $B \\rightarrow A \\rightarrow S \\rightarrow H \\rightarrow B$ dan memenuhi semua tenggat.\n(4) Selisih total waktu perjalanan antara kedua rute yang memenuhi seluruh tenggat operasional adalah 10 menit.\n\nPernyataan yang benar ditunjukkan oleh nomor ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pernyataan benar"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "- **(1) Salah:** Rute $B \\rightarrow S \\rightarrow A \\rightarrow H \\rightarrow B$ tiba di A pukul $15.30 + 20 + 10 + 35 = 16.35\\text{ WIT}$ (lewat tenggat $16.30\\text{ WIT}$).\n- **(2) Benar:** Rute $B \\rightarrow A \\rightarrow H \\rightarrow S \\rightarrow B$ tiba di A pukul $16.10\\text{ WIT}$ dengan total waktu $(40+30+15+20)+30 = 135\\text{ menit}$, kembali di B pukul $17.45\\text{ WIT}$.\n- **(3) Salah:** Rute $B \\rightarrow H \\rightarrow A \\rightarrow S \\rightarrow B$ tiba di A pukul $16.35\\text{ WIT}$ sehingga melanggar tenggat.\n- **(4) Benar:** Hanya dua rute valid dimulai dari A dengan selisih $145 - 135 = 10\\text{ menit}$.",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "kode_subbab": "pk-05-04",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 5: Geometri dan Pengukuran",
+  "judul_subbab": "Sistem Koordinat Kartesius dan Persamaan Garis Lurus",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Garis $g$ melalui titik $(0, 4)$ dan $(6, 0)$. Apakah gradien garis yang tegak lurus dengan $g$ bernilai $-\\frac{3}{2}$?",
+      "opsi_cepat": [
+        "Ya, bernilai -3/2",
+        "Salah, bernilai 3/2"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Gradien garis $g$ turun dari kiri ke kanan sehingga bernilai negatif ($m_1 = -\\frac{4}{6} = -\\frac{2}{3}$). Syarat tegak lurus $m_1 \\cdot m_2 = -1$ menghasilkan gradien positif $m_2 = \\frac{3}{2}$."
+    },
+    "konsep_inti_markdown": "- **Gradien ($m$):** Kemiringan garis melalui $(x_1,y_1)$ dan $(x_2,y_2)$ adalah $m = \\frac{y_2-y_1}{x_2-x_1}$, atau $m = -\\frac{A}{B}$ pada $Ax + By + C = 0$.\n- **Hubungan Dua Garis:** Sejajar jika $m_1 = m_2$; tegak lurus jika $m_1 \\cdot m_2 = -1$.\n- **Persamaan Garis:** Melalui $(x_1,y_1)$ bergradien $m$: $y - y_1 = m(x - x_1)$. Memotong $(a,0)$ dan $(0,b)$: $bx + ay = ab$.\n- **Jarak Dua Titik:** $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.",
+    "radar_jebakan_utbk": [
+      "Lupa tanda minus pada rumus gradien bentuk implisit $Ax + By + C = 0$ ($m = -\\frac{A}{B}$, bukan $\\frac{A}{B}$).",
+      "Tertukar posisi $a$ dan $b$ pada rumus cepat garis memotong sumbu: titik $(0, b)$ di sumbu-$Y$ menjadi koefisien $x$ ($bx + ay = ab$)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='85' y1='35' x2='85' y2='180' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='135' y1='35' x2='135' y2='180' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='160' y1='35' x2='160' y2='180' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='185' y1='35' x2='185' y2='180' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='210' y1='35' x2='210' y2='180' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='60' y1='50' x2='250' y2='50' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='60' y1='75' x2='250' y2='75' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='60' y1='100' x2='250' y2='100' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='60' y1='125' x2='250' y2='125' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='50' y1='150' x2='270' y2='150' stroke='#1E293B' stroke-width='2'/><line x1='110' y1='30' x2='110' y2='185' stroke='#1E293B' stroke-width='2'/><line x1='98' y1='38' x2='222' y2='162' stroke='#3B82F6' stroke-width='2.5'/><line x1='85' y1='175' x2='210' y2='50' stroke='#10B981' stroke-width='2'/><circle cx='160' cy='100' r='4.5' fill='#F59E0B' stroke='#1E293B' stroke-width='1.5'/><text x='276' y='154' font-family='sans-serif' font-size='12' fill='#1E293B'>X</text><text x='106' y='24' font-family='sans-serif' font-size='12' fill='#1E293B'>Y</text><text x='96' y='164' font-family='sans-serif' font-size='12' fill='#1E293B'>O</text><text x='74' y='54' font-family='sans-serif' font-size='12' fill='#1E293B'>(0,4)</text><text x='204' y='166' font-family='sans-serif' font-size='12' fill='#1E293B'>(4,0)</text><text x='168' y='104' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>P(2,2)</text><text x='218' y='142' font-family='sans-serif' font-size='12' fill='#3B82F6'>x+y=4</text><text x='214' y='52' font-family='sans-serif' font-size='12' fill='#10B981'>y=x</text></svg>",
+      "caption": "Perpotongan garis x + y = 4 dan y = x di titik P(2,2) pada bidang Kartesius"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Gradien dan Persamaan Garis Lurus yang Sejajar atau Tegak Lurus",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Garis $k$ memiliki persamaan $3x - 2y + 6 = 0$. Tentukan persamaan garis $l$ yang melalui titik $(4, -1)$ dan tegak lurus terhadap garis $k$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nUbah persamaan garis $k$ menjadi bentuk eksplisit $y = mx + c$ untuk mencari gradiennya: $2y = 3x + 6 \\Rightarrow y = \\frac{3}{2}x + 3$, sehingga diperoleh $m_k = \\frac{3}{2}$. Karena garis $l$ tegak lurus garis $k$, berlaku syarat $m_k \\cdot m_l = -1$, maka $m_l = -\\frac{2}{3}$. Selanjutnya, substitusikan titik $(4, -1)$ dan $m_l = -\\frac{2}{3}$ ke rumus $y - y_1 = m(x - x_1)$: $y - (-1) = -\\frac{2}{3}(x - 4) \\Rightarrow 3y + 3 = -2x + 8$, sehingga persamaan garis $l$ adalah $2x + 3y - 5 = 0$.\n\n**2. Jalur Taktis UTBK**\nUntuk garis tegak lurus dari $Ax + By + C = 0$, tukar koefisien $x$ dan $y$ lalu ubah salah satu tandanya menjadi $Bx - Ay = C_{\\text{baru}}$. Dari $3x - 2y$, langsung tulis $2x + 3y$. Masukkan titik $(4, -1)$: $2(4) + 3(-1) = 8 - 3 = 5$, diperoleh $2x + 3y = 5$ dalam waktu kurang dari 15 detik.",
+      "kunci_pembeda": "Fokus utama variasi ini adalah mengonversi hubungan arah garis (sejajar $m_1 = m_2$ atau tegak lurus $m_1 \\cdot m_2 = -1$) menjadi persamaan garis baru.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Titik Potong Dua Garis, Jarak Dua Titik, dan Koordinat Titik Pembagi Ruas Garis",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui titik $A(-2, 3)$ dan $B(6, -3)$. Jika titik $P$ terletak pada ruas garis $AB$ sehingga $AP : PB = 1 : 3$, tentukan jarak dari titik $P$ ke titik asal $O(0, 0)$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nGunakan rumus pembagian ruas garis dengan rasio $m : n = 1 : 3$. Koordinat $P(x_P, y_P)$ dihitung terpisah: $x_P = \\frac{1(6) + 3(-2)}{1 + 3} = 0$ dan $y_P = \\frac{1(-3) + 3(3)}{1 + 3} = \\frac{6}{4} = 1,5$, sehingga diperoleh $P(0; 1,5)$. Hitung jarak $P$ ke $O(0, 0)$ memakai rumus $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{0^2 + (1,5)^2} = 1,5$.\n\n**2. Jalur Taktis UTBK**\nHitung pergeseran dari $A(-2, 3)$ ke $B(6, -3)$: $\\Delta x = 8$ dan $\\Delta y = -6$. Karena $AP : PB = 1 : 3$, titik $P$ berada pada $\\frac{1}{4}$ jarak dari $A$ ke $B$. Cukup tambahkan $\\frac{1}{4}$ perubahan ke koordinat $A$: $x_P = -2 + \\frac{1}{4}(8) = 0$ dan $y_P = 3 + \\frac{1}{4}(-6) = 1,5$. Karena $x_P = 0$, jaraknya ke pusat langsung $1,5$.",
+      "kunci_pembeda": "Variasi ini berfokus pada penentuan koordinat titik tertentu (perpotongan atau pembagi segmen) sebelum menghitung panjang segmen antartitik.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Luas Bangun Datar yang Dibatasi oleh Beberapa Garis Lurus dan Sumbu Koordinat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Hitunglah luas daerah segitiga yang dibatasi oleh garis $y = 2x$, garis $x + y = 6$, dan sumbu-$X$ pada bidang Kartesius.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nCari ketiga titik sudut segitiga dari perpotongan garis pembatas. Garis $y = 2x$ memotong sumbu-$X$ ($y = 0$) di $O(0, 0)$, sedangkan $x + y = 6$ memotong sumbu-$X$ di $A(6, 0)$, membentuk alas $a = 6$. Substitusikan $y = 2x$ ke $x + y = 6$ untuk memperoleh puncak $B$: $3x = 6 \\Rightarrow x = 2$ dan $y = 4$. Tinggi segitiga adalah ordinat $B(2, 4)$, yaitu $t = 4$, sehingga $L = \\frac{1}{2} \\times 6 \\times 4 = 12$ satuan luas.\n\n**2. Jalur Taktis UTBK**\nJadikan segmen pada sumbu koordinat sebagai alas: garis $x + y = 6$ memotong sumbu-$X$ di $x = 6$, maka $a = 6$. Untuk tinggi segitiga, langsung eliminasi $x$ dari $y = 2x$ dan $x + y = 6$: substitusi $x = \\frac{y}{2}$ menghasilkan $\\frac{3}{2}y = 6 \\Rightarrow y = 4$. Segera kalikan $\\frac{1}{2} \\times 6 \\times 4 = 12$ tanpa perlu menggambar grafik.",
+      "kunci_pembeda": "Ciri khas variasi ini adalah pemanfaatan titik potong garis terhadap sumbu-$X$ atau sumbu-$Y$ sebagai alas bangun datar untuk menghitung luas.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Jarak Titik ke Garis Lurus dan Pencerminan Titik terhadap Garis Dasar",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Titik $A(2, -3)$ dicerminkan terhadap garis $y = x$, kemudian bayangannya dihitung jaraknya terhadap garis $3x + 4y - 10 = 0$. Berapakah jarak tersebut?",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPertama, tentukan bayangan titik $A(2, -3)$ oleh pencerminan terhadap garis $y = x$. Aturan refleksi garis $y = x$ menukar absis dan ordinat menjadi $A'(y, x)$, sehingga diperoleh $A'(-3, 2)$. Kedua, hitung jarak titik $A'(-3, 2)$ ke garis $3x + 4y - 10 = 0$ memakai rumus $d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$. Substitusikan $A = 3$, $B = 4$, $C = -10$, dan $(-3, 2)$: $d = \\frac{|3(-3) + 4(2) - 10|}{\\sqrt{3^2 + 4^2}} = \\frac{|-11|}{5} = 2,2$.\n\n**2. Jalur Taktis UTBK**\nGunakan tripel Pythagoras $(3, 4, 5)$ agar penyebut $\\sqrt{3^2 + 4^2}$ langsung terbaca $5$. Tukar koordinat $(2, -3) \\rightarrow (-3, 2)$ karena cermin $y = x$, lalu masukkan ke ruas kiri garis: $3(-3) + 4(2) - 10 = -11$. Ambil nilai mutlak dan bagi $5$ untuk memperoleh $\\frac{11}{5} = 2,2$.",
+      "kunci_pembeda": "Variasi ini menggabungkan transformasi refleksi titik terhadap garis dasar ($y=x$, $y=-x$, $x=k$, $y=k$) dengan proyeksi jarak tegak lurus titik ke garis.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Sistem Pertidaksamaan Linear Dua Variabel",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan nilai maksimum fungsi objektif $f(x, y) = 4x + 5y$ pada daerah penyelesaian sistem pertidaksamaan $x + 2y \\le 8$, $3x + 2y \\le 12$, $x \\ge 0$, dan $y \\ge 0$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nTentukan titik pojok daerah penyelesaian di kuadran I ($x \\ge 0, y \\ge 0$). Garis $x + 2y = 8$ memotong sumbu di $(8, 0)$ dan $(0, 4)$, sedangkan $3x + 2y = 12$ di $(4, 0)$ dan $(0, 6)$. Eliminasi keduanya menghasilkan titik potong $B(2, 3)$ dari $2x = 4 \\Rightarrow x = 2$ dan $y = 3$. Uji titik pojok terluar ke $f(x, y) = 4x + 5y$: $f(4, 0) = 16$, $f(0, 4) = 20$, dan nilai maksimum tercapai pada $f(2, 3) = 4(2) + 5(3) = 23$.\n\n**2. Jalur Taktis UTBK**\nBandingkan gradien fungsi objektif $m_f = -\\frac{4}{5} = -0,8$ dengan gradien kedua garis batas, yaitu $m_1 = -\\frac{1}{2} = -0,5$ dan $m_2 = -\\frac{3}{2} = -1,5$. Karena nilai $m_f$ diapit di antara $m_1$ dan $m_2$, optimum pasti berada di perpotongan kedua garis pada titik $(2, 3)$, sehingga langsung diperoleh $4(2) + 5(3) = 23$.",
+      "kunci_pembeda": "Berbeda dari persamaan garis tunggal, variasi ini membatasi area himpunan penyelesaian oleh pertidaksamaan untuk mencari nilai optimum di titik ekstrem.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='60,180 160,180 110,114 60,92' fill='#EFF6FF'/><line x1='110' y1='114' x2='110' y2='180' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='60' y1='114' x2='110' y2='114' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='40' y1='180' x2='295' y2='180' stroke='#1E293B' stroke-width='2'/><line x1='60' y1='25' x2='60' y2='195' stroke='#1E293B' stroke-width='2'/><line x1='60' y1='92' x2='260' y2='180' stroke='#3B82F6' stroke-width='2'/><line x1='60' y1='48' x2='160' y2='180' stroke='#10B981' stroke-width='2'/><circle cx='110' cy='114' r='4.5' fill='#F59E0B' stroke='#1E293B' stroke-width='1.5'/><circle cx='160' cy='180' r='3.5' fill='#F59E0B'/><circle cx='60' cy='92' r='3.5' fill='#F59E0B'/><text x='302' y='184' font-family='sans-serif' font-size='12' fill='#1E293B'>X</text><text x='56' y='20' font-family='sans-serif' font-size='12' fill='#1E293B'>Y</text><text x='45' y='194' font-family='sans-serif' font-size='12' fill='#1E293B'>O</text><text x='74' y='154' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>DHP</text><text x='118' y='112' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>B(2,3)</text><text x='156' y='196' font-family='sans-serif' font-size='12' fill='#1E293B'>4</text><text x='256' y='196' font-family='sans-serif' font-size='12' fill='#1E293B'>8</text><text x='44' y='96' font-family='sans-serif' font-size='12' fill='#1E293B'>4</text><text x='44' y='52' font-family='sans-serif' font-size='12' fill='#1E293B'>6</text><text x='205' y='142' font-family='sans-serif' font-size='12' fill='#3B82F6'>x+2y=8</text><text x='95' y='65' font-family='sans-serif' font-size='12' fill='#10B981'>3x+2y=12</text></svg>",
+        "caption": "Daerah Himpunan Penyelesaian (DHP) pada kuadran I dengan titik ekstrem optimum B(2,3)"
+      }
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Garis $g$ melalui titik $(0, 6)$ dan tegak lurus terhadap garis $3x - 2y + 4 = 0$. Berdasarkan informasi tersebut, manakah pernyataan berikut yang bernilai benar?\n\n(1) Gradien garis $g$ adalah $-\\frac{2}{3}$.\n(2) Garis $g$ memotong sumbu-$X$ di titik $(9, 0)$.\n(3) Titik $(3, 4)$ terletak pada garis $g$.\n(4) Luas segitiga yang dibatasi garis $g$, sumbu-$X$, dan sumbu-$Y$ adalah $27$ satuan luas.",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pernyataan benar."
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "Gradien garis $3x - 2y + 4 = 0$ adalah $m_1 = \\frac{3}{2}$, sehingga gradien garis $g$ yang tegak lurus adalah $m_g = -\\frac{2}{3}$ **(1 benar)**. Persamaan garis $g$ melalui $(0, 6)$ adalah $y = -\\frac{2}{3}x + 6$ atau $2x + 3y = 18$. Saat $y = 0$, diperoleh $x = 9$ sehingga titik potong sumbu-$X$ adalah $(9, 0)$ **(2 benar)**. Substitusi $(3, 4)$ menghasilkan $2(3) + 3(4) = 18$ **(3 benar)**. Luas segitiga pada kuadran I adalah $\\frac{1}{2} \\times 9 \\times 6 = 27$ **(4 benar)**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Kecukupan Data",
+      "pertanyaan_markdown": "Garis $l$ memotong sumbu-$Y$ di titik $(0, 4)$. Berapakah koordinat titik potong antara garis $l$ dan garis $2x - y = 6$?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut.\n(1) Garis $l$ sejajar dengan garis $4x + 2y - 7 = 0$.\n(2) Garis $l$ melalui titik $(3, -2)$.",
+      "opsi_jawaban": [
+        "A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C. DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.",
+        "D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.",
+        "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Garis $l$ sudah diketahui melalui $(0, 4)$, sehingga hanya dibutuhkan gradien $m \\neq 2$ agar berpotongan tunggal dengan $y = 2x - 6$. Dari pernyataan (1), gradien garis sejajar $4x + 2y - 7 = 0$ adalah $m = -2$, menghasilkan persamaan $y = -2x + 4$ dan titik potong tunggal $(2,5; -1)$ **(cukup)**. Dari pernyataan (2), dua titik $(0, 4)$ dan $(3, -2)$ menentukan gradien tunggal $m = \\frac{-2 - 4}{3 - 0} = -2$ dengan titik potong yang sama **(cukup)**. Masing-masing pernyataan saja sudah cukup.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Titik $P(4, -2)$ dicerminkan terhadap sumbu-$X$ menghasilkan bayangan $P'$. Jarak dari titik $P'$ ke garis $6x - 8y + 12 = 0$ adalah $\\dots$ (Tuliskan jawaban dalam bentuk bilangan bulat atau pecahan paling sederhana).",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "2",
+      "bedah_cepat_markdown": "Pencerminan titik $P(x, y)$ terhadap sumbu-$X$ mengubah tanda ordinat menjadi $P'(x, -y)$, sehingga bayangan $P(4, -2)$ adalah $P'(4, 2)$. Selanjutnya, substitusikan titik $P'(4, 2)$ ke rumus jarak titik ke garis $6x - 8y + 12 = 0$: $d = \\frac{|6(4) - 8(2) + 12|}{\\sqrt{6^2 + (-8)^2}} = \\frac{|24 - 16 + 12|}{\\sqrt{100}} = \\frac{20}{10} = 2$. Jadi, jarak titik $P'$ ke garis tersebut adalah $2$.",
+      "visual": null
+    }
+  ]
+}

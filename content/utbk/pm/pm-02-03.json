@@ -1,0 +1,132 @@
+{
+  "kode_subbab": "pm-02-03",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 2: Pemodelan Aljabar dan Fungsi",
+  "judul_subbab": "Laju Perubahan, Kecepatan, Debit, dan Waktu Kerja Bersama",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah kapal menempuh rute sungai pergi-pulang sejauh 24 km sekali jalan dengan kecepatan mesin 14 km/jam dan arus 2 km/jam. Apakah kecepatan rata-rata total perjalanan pergi-pulang tersebut tepat 14 km/jam?",
+      "opsi_cepat": [
+        "Ya, karena efek arus saling meniadakan (16 dan 12)",
+        "Tidak, kecepatannya lebih kecil dari 14 km/jam"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Waktu tempuh melawan arus (24/12 = 2 jam) lebih lama daripada searah arus (24/16 = 1,5 jam), sehingga rata-rata harmoniknya 48 / 3,5 = 13,71 km/jam, bukan rata-rata aritmetika."
+    },
+    "konsep_inti_markdown": "- **Prinsip Laju Dasar:** Kuantitas = Laju $\\times$ Waktu ($Q = v \\cdot t$).\n- **Gerak Relatif:** Berpapasan memakai $t = \\frac{\\Delta s}{v_1 + v_2}$; susul-menyusul memakai $t = \\frac{\\Delta s}{|v_1 - v_2|}$.\n- **Kecepatan Rata-rata:** Wajib menggunakan $\\bar{v} = \\frac{\\sum s_i}{\\sum t_i}$, bukan rata-rata kecepatan.\n- **Debit & Kerja Bersama:** Laju total adalah jumlah aljabar laju tiap komponen ($Q_{\\text{net}} = Q_{\\text{masuk}} - Q_{\\text{keluar}}$; $\\frac{1}{t_{\\text{gab}}} = \\frac{1}{t_1} + \\frac{1}{t_2}$).\n- **Grafik $v\\text{-}t$:** Jarak tempuh sama dengan luas daerah di bawah kurva.",
+    "radar_jebakan_utbk": [
+      "Menghitung kecepatan rata-rata pergi-pulang dengan rumus aritmetika (v1 + v2)/2, padahal waktu tempuh tiap segmen berbeda sehingga wajib memakai Total Jarak dibagi Total Waktu.",
+      "Lupa mengonversi satuan waktu atau volume secara konsisten (misal liter/menit ke m3/jam, atau menit ke jam pada grafik v-t bersumbu kecepatan km/jam)."
+    ],
+    "stimulus_utama_bersama": "**Operasional Logistik dan Pengolahan Air Bersih Kawasan Pelabuhan Sungai Kapuas**\n\nManajemen pelabuhan mengelola distribusi logistik dan suplai air bersih dengan rincian operasional sebagai berikut:\n- **Data 1 (Lintasan Darat dan Sungai):** Gudang Utama A dan Dermaga B terhubung jalan lurus sepanjang $36\\text{ km}$. Truk logistik beroperasi dari A ke B dengan kecepatan konstan $40\\text{ km/jam}$, sedangkan mobil pengawas beroperasi dari B ke A dengan kecepatan konstan $50\\text{ km/jam}$. Dari Dermaga B menuju Pulau C sejauh $24\\text{ km}$ melalui jalur sungai, kapal motor melaju dengan kecepatan mesin di air tenang $14\\text{ km/jam}$, sementara arus sungai mengalir konstan dari arah B ke C dengan kecepatan $2\\text{ km/jam}$.\n- **Data 2 (Tangki Penampungan Air):** Di Dermaga B tersedia tangki penampungan berbentuk tabung dengan luas alas $2\\text{ m}^2$ dan tinggi $2,5\\text{ m}$ (kapasitas penuh $5\\text{ m}^3 = 5.000\\text{ liter}$). Pipa pengisian utama memiliki debit masuk $50\\text{ liter/menit}$, sedangkan katup distribusi ke kapal mengalirkan air keluar dengan debit $10\\text{ liter/menit}$.\n- **Data 3 (Unit Pemurnian dan Shift):** Fasilitas pemurnian memiliki Mesin P yang mampu memproses $1\\text{ batch}$ ($5.000\\text{ liter}$) air bersih secara mandiri dalam $6\\text{ jam}$, serta Mesin Q yang mampu memproses $1\\text{ batch}$ yang sama secara mandiri dalam $4\\text{ jam}$. Operasional terbagi atas Shift Pagi ($2\\text{ jam}$ pertama) dan Shift Siang.\n- **Data 4 (Grafik Rute Khusus):** Pengiriman rute khusus oleh truk tercatat pada grafik kecepatan-waktu ($v\\text{-}t$) berdurasi $40\\text{ menit}$: akselerasi linear dari $0$ ke $60\\text{ km/jam}$ selama $10\\text{ menit}$ pertama, konstan $60\\text{ km/jam}$ selama $20\\text{ menit}$ berikutnya, lalu perlambatan linear hingga berhenti pada menit ke-$40$.",
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='24' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>Grafik Kecepatan-Waktu (v-t) Truk Rute Khusus</text><polygon points='60,175 125,65 255,65 320,175' fill='#EFF6FF' stroke='none'/><line x1='60' y1='65' x2='325' y2='65' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='125' y1='65' x2='125' y2='175' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='255' y1='65' x2='255' y2='175' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='60' y1='42' x2='60' y2='175' stroke='#1E293B' stroke-width='2'/><line x1='60' y1='175' x2='332' y2='175' stroke='#1E293B' stroke-width='2'/><polyline points='60,175 125,65 255,65 320,175' fill='none' stroke='#3B82F6' stroke-width='3'/><circle cx='60' cy='175' r='3.5' fill='#3B82F6'/><circle cx='125' cy='65' r='3.5' fill='#3B82F6'/><circle cx='255' cy='65' r='3.5' fill='#3B82F6'/><circle cx='320' cy='175' r='3.5' fill='#3B82F6'/><text x='24' y='115' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B' transform='rotate(-90 24 115)'>v (km/jam)</text><text x='52' y='69' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>60</text><text x='52' y='179' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>0</text><text x='60' y='193' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>0</text><text x='125' y='193' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>10</text><text x='255' y='193' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>30</text><text x='320' y='193' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>40</text><text x='190' y='211' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Waktu t (menit)</text><text x='190' y='125' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>Luas = Jarak Tempuh</text></svg>",
+      "caption": "Grafik v-t perjalanan truk rute khusus selama 40 menit (Data 4)"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Gerak Berpapasan (Berangkat Bersama vs Berbeda Waktu) dan Gerak Susul-Menyusul pada Lintasan Lurus/Melingkar",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk Data 1 stimulus utama: Jarak Gudang A ke Dermaga B adalah 36 km. Truk berangkat dari A pukul 07.00 (40 km/jam), sedangkan mobil pengawas berangkat dari B menuju A pukul 07.09 (50 km/jam). Kapan keduanya berpapasan?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTruk berangkat 9 menit ($\\frac{9}{60} = 0,15\\text{ jam}$) lebih awal dari Gudang A menuju Dermaga B sebelum mobil pengawas mulai bergerak dari arah berlawanan. Jarak sisa saat keduanya bergerak bersamaan berkurang sebesar jarak yang telah ditempuh truk.\n\n**2. Model Matematika (Employing)**\nJarak awal truk: $s_0 = v_{\\text{truk}} \\times t_{\\text{awal}} = 40 \\times 0,15 = 6\\text{ km}$. Sisa jarak tempuh bersama: $\\Delta s = 36 - 6 = 30\\text{ km}$. Waktu berpapasan dihitung dari pukul 07.09 menggunakan kecepatan relatif mendekat:\n$$t_{\\text{papas}} = \\frac{\\Delta s}{v_{\\text{truk}} + v_{\\text{mobil}}} = \\frac{30}{40 + 50} = \\frac{1}{3}\\text{ jam} = 20\\text{ menit}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nKedua kendaraan bertemu pukul $07.09 + 20\\text{ menit} = 07.29$ pada jarak $6 + (40 \\times \\frac{1}{3}) = 19,33\\text{ km}$ dari Gudang A, sehingga aman melintas di titik tengah jalan.",
+      "kunci_pembeda": "Gunakan penjumlahan kecepatan untuk gerak berlawanan arah (berpapasan) dan selisih kecepatan untuk gerak searah (susul-menyusul) setelah menyamakan titik waktu berangkat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Kecepatan Rata-rata Perjalanan Multi-Segmen dan Gerak Perahu Melawan/Searah Arus Sungai",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk Data 1 stimulus utama: Kapal motor menempuh rute sungai Dermaga B ke Pulau C sejauh 24 km pergi-pulang tanpa jeda sandar. Dengan kecepatan kapal di air tenang 14 km/jam dan arus sungai 2 km/jam dari B ke C, tentukan kecepatan rata-rata total kapal.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPerjalanan terbagi atas dua segmen berjarak sama ($24\\text{ km}$). Saat berangkat dari B ke C, arus mendorong kapal sehingga kecepatannya bertambah. Saat kembali dari C ke B, kapal melawan arus sehingga kecepatannya berkurang.\n\n**2. Model Matematika (Employing)**\nKecepatan pergi searah arus: $v_1 = v_k + v_a = 14 + 2 = 16\\text{ km/jam}$, dengan waktu $t_1 = \\frac{24}{16} = 1,5\\text{ jam}$. Kecepatan pulang melawan arus: $v_2 = v_k - v_a = 14 - 2 = 12\\text{ km/jam}$, dengan waktu $t_2 = \\frac{24}{12} = 2\\text{ jam}$. Kecepatan rata-rata dirumuskan sebagai:\n$$\\bar{v} = \\frac{s_{\\text{total}}}{t_{\\text{total}}} = \\frac{24 + 24}{1,5 + 2}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nDiperoleh $\\bar{v} = \\frac{48}{3,5} = \\frac{96}{7} \\approx 13,71\\text{ km/jam}$. Nilai ini lebih kecil daripada $14\\text{ km/jam}$ karena kapal menghabiskan durasi lebih lama saat melawan arus.",
+      "kunci_pembeda": "Kecepatan rata-rata selalu dihitung dari total jarak dibagi total waktu seluruh segmen, sedangkan laju di sungai merupakan penjumlahan atau selisih kecepatan mesin terhadap arus.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pengisian dan Pengurasan Tangki Air Secara Bersamaan (Debit Keran Masuk vs Kebocoran Keluar pada Wadah Berbentuk Prisma/Tabung)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk Data 2 stimulus utama: Tangki tabung berluas alas 2 m2 dan tinggi 2,5 m mula-mula terisi air setinggi 0,5 m. Pipa masuk (50 liter/menit) dan katup keluar (10 liter/menit) dibuka bersamaan. Berapa menit waktu yang dibutuhkan hingga tangki penuh?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTangki tabung sudah memiliki volume awal sebelum pipa dibuka. Karena pipa pengisian dan katup distribusi dibuka serentak, laju pertambahan volume bersih di dalam tangki merupakan selisih antara debit masuk dan debit keluar.\n\n**2. Model Matematika (Employing)**\nVolume total tangki adalah $V_{\\text{total}} = A \\times h = 2 \\times 2,5 = 5\\text{ m}^3 = 5.000\\text{ liter}$. Volume awal air adalah $V_0 = 2 \\times 0,5 = 1\\text{ m}^3 = 1.000\\text{ liter}$, sehingga volume yang harus diisi sebesar $\\Delta V = 5.000 - 1.000 = 4.000\\text{ liter}$. Debit bersih pengisian:\n$$Q_{\\text{net}} = Q_{\\text{masuk}} - Q_{\\text{keluar}} = 50 - 10 = 40\\text{ liter/menit}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nWaktu pengisian hingga penuh adalah $t = \\frac{\\Delta V}{Q_{\\text{net}}} = \\frac{4.000}{40} = 100\\text{ menit}$ ($1\\text{ jam } 40\\text{ menit}$). Operator wajib menutup pipa tepat pada menit ke-100 agar air tidak meluap.",
+      "kunci_pembeda": "Konversikan seluruh ukuran geometri wadah (m3 atau cm3) ke satuan debit (liter) terlebih dahulu, lalu gunakan debit bersih (Q_masuk - Q_keluar) untuk menghitung waktu pengisian sisa volume.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Produktivitas Kerja Bersama Mesin/Pekerja dengan Efisiensi Berbeda dan Penjadwalan Shift",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk Data 3 stimulus utama: Mesin P menyelesaikan 1 batch pemurnian dalam 6 jam, sedangkan Mesin Q dalam 4 jam. Pada Shift Pagi (2 jam pertama) hanya Mesin P yang beroperasi, lalu Shift Siang keduanya bekerja bersama hingga tuntas. Berapa total jam prosesnya?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPekerjaan dibagi dalam dua fase shift. Pada Shift Pagi berdurasi $2\\text{ jam}$, hanya Mesin P yang menyumbang porsi kerja. Sisa pekerjaan yang belum rampung kemudian dituntaskan secara kolaboratif oleh Mesin P dan Q pada Shift Siang.\n\n**2. Model Matematika (Employing)**\nLaju kerja Mesin P adalah $\\frac{1}{6}\\text{ batch/jam}$ dan Mesin Q adalah $\\frac{1}{4}\\text{ batch/jam}$. Hasil Shift Pagi: $W_1 = 2 \\times \\frac{1}{6} = \\frac{1}{3}\\text{ batch}$, sehingga sisa pekerjaan adalah $1 - \\frac{1}{3} = \\frac{2}{3}\\text{ batch}$. Laju gabungan kedua mesin:\n$$R_{\\text{gab}} = \\frac{1}{6} + \\frac{1}{4} = \\frac{5}{12}\\text{ batch/jam}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nDurasi Shift Siang adalah $t_2 = \\frac{2/3}{5/12} = \\frac{2}{3} \\times \\frac{12}{5} = 1,6\\text{ jam}$. Total waktu pemurnian $1\\text{ batch}$ menjadi $2 + 1,6 = 3,6\\text{ jam}$ ($3\\text{ jam } 36\\text{ menit}$).",
+      "kunci_pembeda": "Nyatakan produktivitas tiap pekerja/mesin sebagai laju per satuan waktu (1/t), hitung porsi kerja per shift secara bertahap, lalu bagi sisa pekerjaan dengan jumlah laju tim yang aktif.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pembacaan Grafik Jarak-Waktu (s-t) dan Kecepatan-Waktu (v-t) untuk Menghitung Jarak Tempuh Total",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk Data 4 dan grafik v-t pada stimulus utama: Truk pengantar rute khusus melaju selama 40 menit dengan kecepatan puncak 60 km/jam pada interval menit ke-10 hingga ke-30. Hitung jarak tempuh total truk tersebut.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nGrafik kecepatan-waktu ($v\\text{-}t$) pada stimulus membentuk bangun trapesium dengan sumbu mendatar dalam satuan menit dan sumbu tegak dalam satuan $\\text{km/jam}$. Jarak tempuh total setara dengan luas daerah di bawah kurva tersebut.\n\n**2. Model Matematika (Employing)**\nKonversikan durasi sisi sejajar trapesium dari menit ke jam agar selaras dengan satuan kecepatan: sisi bawah $a = 40\\text{ menit} = \\frac{2}{3}\\text{ jam}$ dan sisi atas $b = 30 - 10 = 20\\text{ menit} = \\frac{1}{3}\\text{ jam}$, dengan tinggi $v = 60\\text{ km/jam}$. Rumus luas trapesium:\n$$s_{\\text{total}} = \\frac{(a + b) \\times v}{2} = \\frac{\\left(\\frac{2}{3} + \\frac{1}{3}\\right) \\times 60}{2}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nDiperoleh $s_{\\text{total}} = \\frac{1 \\times 60}{2} = 30\\text{ km}$. Metode luas grafik ini jauh lebih ringkas daripada menghitung jarak tiap segmen percepatan satu per satu.",
+      "kunci_pembeda": "Pada grafik v-t jarak tempuh ditentukan oleh luas di bawah kurva (wajib samakan satuan waktu sumbu-x dengan kecepatan sumbu-y), sedangkan pada grafik s-t kecepatan ditunjukkan oleh gradien garis.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Merujuk **Data 1** pada stimulus utama, truk logistik berangkat dari Gudang A menuju Dermaga B pada pukul $06.30$. Setibanya di Dermaga B, muatan langsung dipindahkan ke kapal motor selama $6\\text{ menit}$, kemudian kapal berangkat menuju Pulau C tanpa jeda tambahan. Pukul berapa muatan tersebut tiba di Pulau C?",
+      "opsi_jawaban": [
+        "A. 08.45",
+        "B. 08.54",
+        "C. 09.00",
+        "D. 09.15",
+        "E. 09.20"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Waktu tempuh truk dari A ke B adalah $t_1 = \\frac{36}{40} = 0,9\\text{ jam} = 54\\text{ menit}$. Ditambah jeda bongkar muat $6\\text{ menit}$, kapal mulai berlayar pukul $07.30$. Karena searah arus, kecepatan kapal menjadi $14 + 2 = 16\\text{ km/jam}$ dengan waktu tempuh $t_2 = \\frac{24}{16} = 1,5\\text{ jam} = 90\\text{ menit}$. Total perjalanan $150\\text{ menit}$ sehingga tiba pukul $09.00$. Opsi D salah karena mengabaikan dorongan arus ($24/14$), sedangkan opsi B lupa jeda bongkar muat.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Merujuk **Data 2** dan **Data 3** pada stimulus utama, tangki penampungan mula-mula dalam keadaan kosong dan katup keluar tetap terbuka. Jika Mesin P dan Mesin Q dioperasikan bersama sejak awal untuk memproduksi tepat $1\\text{ batch}$ air murni, perhatikan empat pernyataan berikut:\n\n(1) Waktu yang dibutuhkan Mesin P dan Q memproduksi $1\\text{ batch}$ secara bersama adalah $2,4\\text{ jam}$.\n(2) Laju produksi gabungan Mesin P dan Q setara dengan $\\frac{625}{18}\\text{ liter/menit}$.\n(3) Tangki penampungan kosong akan terisi penuh dalam waktu $125\\text{ menit}$ jika pasokan pipa utama selalu tersedia.\n(4) Jika katup keluar ditutup, tangki kosong terisi penuh $25\\text{ menit}$ lebih cepat.\n\nPernyataan yang benar adalah ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pilihan benar."
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "Laju gabungan Mesin P dan Q adalah $\\frac{1}{6} + \\frac{1}{4} = \\frac{5}{12}\\text{ batch/jam}$, sehingga waktu produksi $1\\text{ batch}$ adalah $\\frac{12}{5} = 2,4\\text{ jam} = 144\\text{ menit}$ **(1 benar)** dengan laju $\\frac{5.000}{144} = \\frac{625}{18}\\text{ liter/menit}$ **(2 benar)**. Dengan debit bersih $50 - 10 = 40\\text{ liter/menit}$, tangki kosong penuh dalam $\\frac{5.000}{40} = 125\\text{ menit}$ **(3 benar)**. Tanpa katup keluar, waktu menjadi $\\frac{5.000}{50} = 100\\text{ menit}$ atau $25\\text{ menit}$ lebih cepat **(4 benar)**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        5
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Merujuk **Data 4** dan grafik $v\\text{-}t$ pada stimulus utama, tepat pada menit ke-$10$ sejak truk pengantar mulai berangkat, sebuah mobil pengawas berangkat dari titik tujuan rute khusus tersebut menuju titik awal truk dengan kecepatan konstan $90\\text{ km/jam}$. Pada menit ke berapa sejak truk mulai berangkat keduanya berpapasan? *(Tuliskan jawaban dalam bilangan bulat saja)*.",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "20",
+      "bedah_cepat_markdown": "Dari grafik $v\\text{-}t$, panjang rute khusus adalah luas trapesium sebesar $30\\text{ km}$. Selama $10\\text{ menit}$ pertama ($\\frac{1}{6}\\text{ jam}$), truk menempuh jarak segitiga $s_0 = \\frac{1}{2} \\times \\frac{1}{6} \\times 60 = 5\\text{ km}$, sehingga sisa jarak $25\\text{ km}$. Mulai menit ke-$10$, truk melaju konstan $60\\text{ km/jam}$ dan mobil pengawas $90\\text{ km/jam}$ berlawanan arah, sehingga waktu papasan tambahan adalah $\\frac{25}{60 + 90} = \\frac{1}{6}\\text{ jam} = 10\\text{ menit}$. Total waktu sejak truk berangkat adalah $10 + 10 = 20\\text{ menit}$.",
+      "visual": null
+    }
+  ]
+}

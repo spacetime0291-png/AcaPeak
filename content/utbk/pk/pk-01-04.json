@@ -1,0 +1,126 @@
+{
+  "kode_subbab": "pk-01-04",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 1: Bilangan dan Operasi Aljabar",
+  "judul_subbab": "Persamaan dan Pertidaksamaan Linear & Nilai Mutlak",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui $-3 < x < 2$ dan $-4 < y < -1$. Manakah batas bawah (nilai infimum) dari hasil kali $xy$?",
+      "opsi_cepat": [
+        "$-2$",
+        "$-8$"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta langsung mengalikan batas kanan dengan kanan sehingga mendapat $-2$. Padahal pada rentang bertanda campuran, perkalian silang ekstrem $(2)(-4) = -8$ menghasilkan nilai paling kecil."
+    },
+    "konsep_inti_markdown": "- **SPL Dua Variabel** ($a_1x+b_1y=c_1$, $a_2x+b_2y=c_2$): Solusi tunggal jika $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$; tak hingga jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$; tidak ada jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.\\n- **Pertidaksamaan Rasional**: Nolkan ruas kanan, faktorkan, uji tanda di garis bilangan dengan syarat penyebut $\\neq 0$.\\n- **Nilai Mutlak**: $|u| = u$ jika $u \\ge 0$, dan $-u$ jika $u < 0$; $|u| < k \\Leftrightarrow -k < u < k$ ($k > 0$).",
+    "radar_jebakan_utbk": [
+      "Mengalikan atau membagi kedua ruas pertidaksamaan dengan ekspresi bervariabel (seperti $x + 3$) yang belum diketahui tanda positif atau negatifnya.",
+      "Melupakan syarat penyebut tidak sama dengan nol (bulatan kosong) pada pertidaksamaan rasional bertanda $\\le$ atau $\\ge$, serta mengabaikan syarat ruas kanan $\\ge 0$ pada persamaan mutlak."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Sistem Persamaan Linear dengan Parameter (Menentukan Syarat Solusi Tunggal, Tak Hingga, atau Tidak Ada)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui sistem persamaan linear $kx + 3y = 6$ dan $4x + (k + 1)y = 8$. Tentukan nilai $k$ agar sistem tersebut tidak memiliki penyelesaian!",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\\nBentuk umum SPLDV adalah $a_1x+b_1y=c_1$ dan $a_2x+b_2y=c_2$. Sistem tidak memiliki solusi jika kedua garis sejajar tetapi tidak berimpit, yakni $\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\neq\\frac{c_1}{c_2}$. Substitusi koefisien menghasilkan $\\frac{k}{4}=\\frac{3}{k+1}\\neq\\frac{6}{8}$. Dari persamaan pertama diperoleh $k(k+1)=12$, sehingga $k^2+k-12=0$ atau $(k+4)(k-3)=0$ dengan kandidat $k=-4$ atau $k=3$. Karena syarat ketidaksamaan menuntut $\\frac{k}{4}\\neq\\frac{3}{4}$ atau $k\\neq 3$, maka nilai yang memenuhi hanyalah $k=-4$.\\n\\n**(2) Jalur Taktis UTBK**\\nGunakan determinan koefisien $D=a_1b_2-a_2b_1=0$ untuk mencari kandidat gradien sama: $k(k+1)-12=0$, langsung didapat $k=-4$ atau $k=3$. Cek cepat $k=3$ ke sistem: persamaan menjadi $3x+3y=6$ dan $4x+4y=8$. Keduanya disederhanakan menjadi $x+y=2$ (berimpit/solusi tak hingga). Tanpa menghitung ulang, jawaban pasti $k=-4$. Metode eliminasi kandidat ini jauh lebih aman dan hemat waktu dibanding menyelesaikan pertidaksamaan pecahan secara terpisah saat ujian berlangsung.",
+      "kunci_pembeda": "Gunakan rasio koefisien atau determinan $D = 0$ untuk menyaring kandidat parameter, lalu wajib uji balik ke konstanta agar tidak tertukar antara solusi tak hingga dan tidak ada solusi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Pertidaksamaan Linear dan Rasional Satu Variabel (Garis Bilangan & Syarat Penyebut $\\neq 0$)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan himpunan penyelesaian dari pertidaksamaan rasional $\\frac{2x - 1}{x + 3} \\ge 1$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\\nJangan pernah mengalikan kedua ruas dengan $(x+3)$ karena tanda $(x+3)$ belum diketahui positif atau negatif. Pindahkan seluruh suku ke ruas kiri agar ruas kanan bernilai nol: $\\frac{2x-1}{x+3}-1\\ge 0$. Samakan penyebut menjadi $\\frac{(2x-1)-(x+3)}{x+3}\\ge 0$, sehingga diperoleh $\\frac{x-4}{x+3}\\ge 0$. Pembuat nol pembilang adalah $x=4$ (bulatan penuh karena tanda $\\ge$) dan pembuat nol penyebut $x=-3$ (wajib bulatan kosong karena penyebut $\\neq 0$). Uji titik $x=0$ menghasilkan $-\\frac{4}{3}<0$, sehingga daerah positif berada di kiri $-3$ dan kanan $4$: $x<-3$ atau $x\\ge 4$.\\n\\n**(2) Jalur Taktis UTBK**\\nEliminasi opsi pilihan ganda langsung lewat syarat penyebut: karena $x=-3$ membuat penyebut nol, semua opsi yang memuat $x\\le -3$ otomatis gugur. Selanjutnya, cek batas pembilang $x=4$ yang menghasilkan $0\\ge 0$ (benar, wajib memuat tanda sama dengan), lalu uji titik mudah $x=0$ yang menghasilkan $-\\frac{1}{3}\\ge 1$ (salah, sehingga $0$ bukan solusi).",
+      "kunci_pembeda": "Wajib nolkan ruas kanan tanpa kali silang variabel, dan selalu beri bulatan kosong pada pembuat nol penyebut meskipun soal memakai tanda $\\le$ atau $\\ge$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Manipulasi Rentang Pertidaksamaan Gabungan (Jika $a < x < b$ dan $c < y < d$, cari rentang $x-y, xy, x/y$)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui $-2 < x < 5$ dan $-4 < y < -1$. Tentukan rentang nilai yang tepat untuk $x - y$ dan $\\frac{x}{y}$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\\nOperasi pengurangan dan pembagian pertidaksamaan tidak boleh dikurangkan atau dibagi langsung searah. Untuk $x-y$, ubah dulu rentang $y$ menjadi $-y$ dengan mengalikan $-1$: $-4<y<-1$ menjadi $1<-y<4$. Jumlahkan searah dengan $-2<x<5$ sehingga diperoleh $-1<x-y<9$. Untuk $\\frac{x}{y}$, karena interval $y$ tidak memuat nol, ubah menjadi perkalian $x\\cdot\\frac{1}{y}$ dengan $-1<\\frac{1}{y}<-\\frac{1}{4}$, lalu ambil nilai terkecil dan terbesar dari seluruh kombinasi ujung interval, sehingga diperoleh $-5<\\frac{x}{y}<2$.\\n\\n**(2) Jalur Taktis UTBK**\\nGunakan metode Uji Empat Sudut Ekstrem: pasangkan seluruh ujung interval $x\\in\\{-2,5\\}$ dan $y\\in\\{-4,-1\\}$ langsung ke ekspresi target. Untuk $x-y$, hitung $(-2)-(-1)=-1$, $(-2)-(-4)=2$, $5-(-1)=6$, dan $5-(-4)=9$, lalu ambil batas terendah dan tertinggi: $-1<x-y<9$. Untuk $\\frac{x}{y}$ (pastikan penyebut tidak melewati nol), hitung $\\frac{-2}{-4}=\\frac{1}{2}$, $\\frac{-2}{-1}=2$, $\\frac{5}{-4}=-\\frac{5}{4}$, dan $\\frac{5}{-1}=-5$, langsung didapat $-5<\\frac{x}{y}<2$.",
+      "kunci_pembeda": "Hitung keempat kombinasi titik ujung interval untuk menentukan batas minimum dan maksimum baru, dengan syarat khusus pada pembagian bahwa penyebut tidak boleh melintasi angka nol.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Persamaan Nilai Mutlak Dasar ($|ax + b| = c$ dan $|f(x)| = |g(x)|$)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Tentukan jumlah semua nilai $x$ yang memenuhi persamaan nilai mutlak $|2x - 3| = |x + 6|$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\\nDefinisi nilai mutlak menyatakan $|u|=u$ untuk $u\\ge 0$ dan $|u|=-u$ untuk $u<0$. Untuk bentuk $|f(x)|=|g(x)|$, kedua ruas selalu bernilai tak negatif sehingga persamaan ekuivalen dengan dua kasus linear: $f(x)=g(x)$ atau $f(x)=-g(x)$. Dari $|2x-3|=|x+6|$, kasus pertama menghasilkan $2x-3=x+6$ atau $x=9$, sedangkan kasus kedua menghasilkan $2x-3=-(x+6)$ atau $x=-1$. Kedua nilai valid sehingga jumlah akarnya adalah $9+(-1)=8$.\\n\\n**(2) Jalur Taktis UTBK**\\nGunakan identitas selisih dua kuadrat: $|f(x)|=|g(x)|$ ekuivalen dengan $[f(x)+g(x)][f(x)-g(x)]=0$. Langsung jumlahkan dan kurangkan kedua fungsi di dalam mutlak: $[(2x-3)+(x+6)][(2x-3)-(x+6)]=0$, menjadi $(3x+3)(x-9)=0$. Tanpa menjabarkan persamaan kuadrat, langsung terbaca akarnya $x_1=-1$ dan $x_2=9$, sehingga jumlahnya $-1+9=8$. Jika ruas kanan berupa fungsi biasa $g(x)$ tanpa tanda mutlak, wajib uji balik syarat $g(x)\\ge 0$ agar tidak terjebak akar semu.",
+      "kunci_pembeda": "Bentuk $|f(x)| = |g(x)|$ dapat langsung difaktorkan menjadi $[f(x)+g(x)][f(x)-g(x)] = 0$, sedangkan bentuk $|f(x)| = g(x)$ wajib memenuhi syarat tambahan $g(x) \\ge 0$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pertidaksamaan Nilai Mutlak dan Interpretasi Jarak pada Garis Bilangan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Tentukan himpunan penyelesaian dari pertidaksamaan nilai mutlak $3 < |2x - 1| \\le 7$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\\nPertidaksamaan nilai mutlak ganda $a<|u|\\le b$ (dengan $0<a<b$) menyatakan nilai $u$ berada pada jarak lebih dari $a$ dan maksimal $b$ dari nol. Secara aljabar, bentuk ini terpecah menjadi dua interval simetris: $-b\\le u<-a$ atau $a<u\\le b$. Substitusi $u=2x-1$ menghasilkan $-7\\le 2x-1<-3$ atau $3<2x-1\\le 7$. Tambahkan $1$ ke semua ruas: $-6\\le 2x<-2$ atau $4<2x\\le 8$. Bagi dengan $2$ sehingga diperoleh $-3\\le x<-1$ atau $2<x\\le 4$.\\n\\n**(2) Jalur Taktis UTBK**\\nGunakan interpretasi jarak pada garis bilangan dengan membagi dua koefisien $x$: $1,5<|x-0,5|\\le 3,5$. Artinya, jarak $x$ dari titik pusat $0,5$ harus lebih dari $1,5$ satuan dan maksimal $3,5$ satuan. Geser ke kanan dari $0,5$: batasnya $0,5+1,5=2$ (terbuka) hingga $0,5+3,5=4$ (tertutup), didapat $2<x\\le 4$. Geser ke kiri dari $0,5$: batasnya $0,5-3,5=-3$ (tertutup) hingga $0,5-1,5=-1$ (terbuka), didapat $-3\\le x<-1$.",
+      "kunci_pembeda": "Terjemahkan $|x - p| < r$ sebagai jarak $x$ ke pusat $p$ kurang dari $r$ satuan (interval diapit), sedangkan $|x - p| > r$ berarti jarak lebih dari $r$ satuan (interval terpisah).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Diketahui sistem persamaan linear:\\n$$\\begin{cases} mx + 2y = 6 \\\\ 3x + (m - 1)y = 6 \\end{cases}$$\\ntidak memiliki penyelesaian. Berdasarkan nilai $m$ yang memenuhi, perhatikan empat pernyataan berikut:\\n(1) Nilai $m = -2$.\\n(2) Nilai $m$ memenuhi pertidaksamaan $\\frac{x - 1}{x + 2} \\le 0$.\\n(3) Nilai $m$ memenuhi pertidaksamaan $\\frac{x + 2}{x - 1} \\le 0$.\\n(4) Nilai $m = 3$ juga membuat sistem tidak memiliki solusi.\\n\\nPernyataan mana saja yang bernilai benar?",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pernyataan benar."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Syarat tidak ada solusi: $\\frac{m}{3} = \\frac{2}{m - 1} \\neq \\frac{6}{6}$. Dari $m(m - 1) = 6$, diperoleh $m = 3$ atau $m = -2$. Untuk $m = 3$, rasio menjadi $1 = 1 = 1$ (solusi tak hingga), sehingga hanya $m = -2$ yang memenuhi ((1) benar, (4) salah). Pada pertidaksamaan rasional, penyebut wajib $\\neq 0$: substitusi $x = -2$ ke (2) membuat penyebut $0$ (salah), sedangkan pada (3) menghasilkan $\\frac{0}{-3} = 0 \\le 0$ (benar). Jawaban: **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diketahui bilangan real $x$ memenuhi pertidaksamaan $|2x - 1| < 5$ dan bilangan real $y$ memenuhi $-4 < y < -1$.\\n\\nBerdasarkan informasi yang diberikan, manakah hubungan antara kuantitas $P$ dan $Q$ berikut yang benar?\\n\\n| $P$ | $Q$ |\\n| :---: | :---: |\\n| Nilai maksimum dari $x - y$ untuk $x, y$ bilangan bulat | $6$ |",
+      "opsi_jawaban": [
+        "A. Kuantitas P lebih besar daripada Q.",
+        "B. Kuantitas P lebih kecil daripada Q.",
+        "C. Kuantitas P sama dengan Q.",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Selesaikan pertidaksamaan mutlak: $|2x - 1| < 5 \\Leftrightarrow -5 < 2x - 1 < 5 \\Leftrightarrow -2 < x < 3$. Karena $x$ dan $y$ bilangan bulat, anggota yang memenuhi adalah $x \\in \\{-1, 0, 1, 2\\}$ dan $y \\in \\{-3, -2\\}$. Nilai maksimum $x - y$ tercapai saat $x$ terbesar dan $y$ terkecil, sehingga $P = 2 - (-3) = 5$. Opsi A salah karena menggunakan batas real $3 - (-4) = 7$, sedangkan Opsi C mencampur batas real dan bulat. Karena $P = 5 < Q = 6$, jawaban: **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Diketahui $x_1$ dan $x_2$ dengan $x_1 > x_2$ adalah penyelesaian dari persamaan nilai mutlak:\\n$$|3x - 2| = |x + 6|$$\\nNilai dari $2x_1 - 3x_2$ adalah .... *(Tuliskan jawaban dalam bentuk bilangan bulat)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "11",
+      "bedah_cepat_markdown": "Gunakan sifat $|f(x)| = |g(x)| \\Leftrightarrow [f(x) + g(x)][f(x) - g(x)] = 0$. Diperoleh $[(3x - 2) + (x + 6)][(3x - 2) - (x + 6)] = 0$, sehingga $(4x + 4)(2x - 8) = 0$. Akar-akar yang memenuhi adalah $x = -1$ dan $x = 4$. Karena syarat soal menetapkan $x_1 > x_2$, maka $x_1 = 4$ dan $x_2 = -1$. Substitusikan ke target: $2x_1 - 3x_2 = 2(4) - 3(-1) = 8 + 3 = 11$. Waspadai kesalahan tanda negatif saat menghitung $-3(-1)$.",
+      "visual": null
+    }
+  ]
+}

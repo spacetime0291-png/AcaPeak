@@ -1,0 +1,125 @@
+{
+  "kode_subbab": "pu-02-02",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 2: Penalaran Deduktif",
+  "judul_subbab": "Ekuivalensi dan Negasi Pernyataan",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah aturan perpustakaan berbunyi: 'Jika pengunjung membawa tas besar, maka ia wajib menitipkannya di loker.' Manakah pernyataan yang memiliki makna logis sama persis dengan aturan tersebut?",
+      "opsi_cepat": [
+        "Jika tidak membawa tas besar, maka tidak wajib menitipkannya di loker",
+        "Jika tidak menitipkan tas di loker, maka pengunjung tidak membawa tas besar"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Membalik implikasi tanpa negasi maupun menegasi keduanya tanpa membalik posisi adalah jebakan klasik. Kalimat yang ekuivalen dengan 'Jika P maka Q' hanyalah kontraposisinya: 'Jika bukan Q, maka bukan P'."
+    },
+    "konsep_inti_markdown": "**Ekuivalensi dan negasi** mengubah struktur pernyataan logika tanpa merusak makna, atau menemukan penyangkal sah:\n\n* **Kontraposisi:** $p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$ (balik posisi dan negasikan).\n* **Disjungsi Ekuivalen:** $p \\rightarrow q \\equiv \\sim p \\lor q$ (tidak $p$ atau $q$).\n* **Negasi Implikasi:** $\\sim(p \\rightarrow q) \\equiv p \\land \\sim q$ ($p$ terjadi, namun $q$ gagal).\n* **Negasi Majemuk:** Tukar kata hubung **dan** $\\leftrightarrow$ **atau** lalu negasikan tiap klausa.",
+    "radar_jebakan_utbk": [
+      "Menganggap pernyataan 'Jika P maka Q' sama artinya dengan 'Jika tidak P maka tidak Q' (invers) atau 'Jika Q maka P' (konvers).",
+      "Menegasi kalimat 'Jika P maka Q' menjadi kalimat bersyarat 'Jika P maka tidak Q', padahal negasi implikasi berbentuk fakta 'P terjadi tetapi tidak Q'."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Ekuivalensi Kontraposisi dalam Paragraf Argumentatif",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam rapat evaluasi transportasi kota, kepala dinas menegaskan bahwa apabila jalur khusus bus steril dari kendaraan pribadi, maka waktu tempuh angkutan umum akan tepat waktu. Fakta lapangan menunjukkan bahwa waktu tempuh angkutan umum masih sering terlambat dari jadwal.",
+      "bedah_pola_markdown": "**Struktur Logika:** Pernyataan 'Jika jalur steril ($p$), maka angkutan tepat waktu ($q$)' memiliki nilai kebenaran yang identik dengan kontraposisinya: 'Jika angkutan tidak tepat waktu ($\\sim q$), maka jalur tidak steril ($\\sim p$)'.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Jalur tidak steril berarti angkutan pasti terlambat | Tidak steril ($\\sim p$) belum tentu membuat terlambat ($\\sim q$) |\n| Bentuk ekuivalen cukup dibalik posisinya saja | Wajib dibalik posisinya sekaligus dinegasikan keduanya |\n\n**Langkah Eliminasi:** Pertama, tandai klausa sebab ($p$) setelah kata *jika/apabila* dan klausa akibat ($q$) setelah kata *maka*. Kedua, tukar posisi keduanya sambil menambahkan kata penyangkal *tidak/bukan* pada masing-masing klausa. Ketiga, coret opsi yang mempertahankan urutan asli atau hanya menegasi satu bagian saja, lalu pilih simpulan bahwa jalur khusus bus belum steril dari kendaraan pribadi.",
+      "kunci_pembeda": "Mengubah pernyataan bersyarat menjadi bentuk ekuivalennya dengan membalik posisi sebab-akibat sekaligus menegasi kedua klausa.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Transformasi Implikasi ke Disjungsi",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Panitia seleksi beasiswa menetapkan aturan: 'Jika pendaftar berasal dari luar pulau, maka panitia menanggung biaya tiket pesawat.' Dalam pedoman teknis, aturan tersebut ditulis ulang menggunakan kata hubung 'atau' tanpa mengubah maknanya.",
+      "bedah_pola_markdown": "**Struktur Logika:** Kalimat bersyarat 'Jika $p$, maka $q$' setara secara logis dengan kalimat pilihan 'Tidak $p$ **atau** $q$' ($\\sim p \\lor q$). Artinya, pendaftar bukan dari luar pulau atau panitia menanggung tiket pesawatnya.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Kalimat 'jika-maka' tidak bisa diubah menjadi kalimat 'atau' | Implikasi sah diubah ke disjungsi dengan menegasi syarat awal |\n| Kedua bagian klausa ikut dinegasikan saat memakai 'atau' | Hanya bagian sebab ($p$) yang dinegasikan, akibat ($q$) tetap |\n\n**Langkah Eliminasi:** Pertama, pisahkan syarat awal ($p$) dan konsekuensi ($q$) dari kalimat implikasi stimulus. Kedua, negasikan hanya bagian syarat awal ($\\sim p$), ganti kata *maka* dengan penghubung **atau**, lalu biarkan bagian konsekuensi ($q$) tetap positif. Ketiga, coret opsi yang memakai kata hubung *dan* atau menegasi bagian konsekuensi, sehingga tersisa pernyataan ekuivalen yang tepat.",
+      "kunci_pembeda": "Mengubah bentuk implikasi menjadi kalimat pilihan 'atau' dengan menegasi bagian sebab saja sementara bagian akibat dibiarkan tetap.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Negasi Implikasi untuk Membuktikan Pernyataan Salah atau Hoaks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sebuah iklan produk suplemen mengklaim: 'Jika mengonsumsi kapsul herbal ini setiap pagi, maka tekanan darah tinggi pasti sembuh dalam seminggu.' Badan pengawas obat mencari satu kasus bukti lapangan untuk membuktikan klaim iklan tersebut salah.",
+      "bedah_pola_markdown": "**Struktur Logika:** Ingkaran dari janji 'Jika $p$, maka $q$' bukanlah kalimat bersyarat baru, melainkan fakta kejadian nyata: '$p$ terjadi **dan** $q$ tidak terjadi' ($p \\land \\sim q$). Satu kasus penyangkal sudah cukup meruntuhkan klaim umum.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Lawan dari 'Jika P maka Q' adalah 'Jika P maka tidak Q' | Negasi implikasi berbentuk fakta konjungsi ($p$ dan tidak $q$) |\n| Tidak mengonsumsi kapsul dianggap membatalkan klaim | Subjek wajib memenuhi syarat $p$ namun gagal meraih hasil $q$ |\n\n**Langkah Eliminasi:** Pertama, identifikasi klausa syarat ($p$) dan klausa janji akibat ($q$) pada klaim yang ingin dibantah. Kedua, cari opsi yang menyatakan subjek sudah melakukan $p$ secara penuh, **tetapi** hasil $q$ tidak terwujud. Ketiga, coret opsi yang diawali kata *jika* atau subjek gagal melakukan $p$, lalu pilih pengonsumsi rutin yang tensinya tetap tinggi.",
+      "kunci_pembeda": "Membuktikan pernyataan bersyarat bernilai salah dengan menemukan fakta nyata bahwa syarat awal terpenuhi tetapi akibatnya gagal terjadi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Negasi Pernyataan Majemuk Verbal ('dan' vs 'atau') dalam Konteks Aturan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Syarat pengajuan cuti tahunan pegawai menyatakan bahwa pemohon wajib melampirkan surat persetujuan atasan dan telah bekerja minimal satu tahun. Diketahui permohonan cuti milik Bagas ditolak karena tidak memenuhi syarat tersebut.",
+      "bedah_pola_markdown": "**Struktur Logika:** Menegasi pernyataan majemuk menuntut pembalikan kata hubung (**dan** $\\leftrightarrow$ **atau**) disertai penyangkalan pada setiap klausa. Ingkaran dari 'Syarat $p$ **dan** syarat $q$' adalah 'Tidak $p$ **atau** tidak $q$'.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Menolak aturan 'dan' berarti kedua syarat sama-sama gagal | Cukup salah satu syarat gagal (penghubung berubah menjadi **atau**) |\n| Kata penghubung 'dan' tetap dipertahankan saat kalimat dinegasi | Kata **dan** wajib berubah menjadi **atau**, begitu pula sebaliknya |\n\n**Langkah Eliminasi:** Pertama, lingkari kata penghubung utama (**dan** atau **atau**) di antara dua syarat aturan. Kedua, balikkan penghubung tersebut menjadi lawannya lalu tambahkan negasi pada masing-masing syarat. Ketiga, coret opsi yang mewajibkan Bagas melanggar kedua syarat sekaligus, lalu pilih opsi bahwa Bagas belum melampirkan surat atasan atau masa kerjanya belum satu tahun.",
+      "kunci_pembeda": "Membalikkan operator logika majemuk dari 'dan' menjadi 'atau' (dan sebaliknya) disertai penyangkalan pada setiap komponen klausa.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Pedoman keselamatan laboratorium menetapkan aturan: 'Jika peneliti memasuki ruang sterilisasi, maka ia wajib mengenakan jas pelindung dan sarung tangan nitril.' Pada rekaman kamera pengawas, diketahui bahwa Riko tidak mengenakan sarung tangan nitril saat bertugas. Simpulan yang PASTI BENAR berdasarkan aturan tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. Riko tidak memasuki ruang sterilisasi dan tidak mengenakan jas pelindung.",
+        "B. Riko tidak memasuki ruang sterilisasi.",
+        "C. Riko memasuki ruang sterilisasi dengan mengenakan jas pelindung saja.",
+        "D. Jika Riko tidak memasuki ruang sterilisasi, maka ia tidak mengenakan jas pelindung.",
+        "E. Riko mengenakan jas pelindung, tetapi tetap memasuki ruang sterilisasi."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Aturan berbentuk implikasi: masuk ruang sterilisasi ($p$) $\\rightarrow$ mengenakan jas ($q$) **dan** sarung tangan ($r$). Kontraposisinya adalah: tidak mengenakan jas ($\\sim q$) **atau** tidak mengenakan sarung tangan ($\\sim r$) $\\rightarrow$ tidak masuk ruang sterilisasi ($\\sim p$). Karena Riko terbukti tidak memakai sarung tangan nitril ($\\sim r$), syarat disjungsi di depan terpenuhi sehingga pasti Riko tidak memasuki ruang sterilisasi (**Opsi B**). **Opsi A** keliru karena nasib jas pelindung tidak diketahui, sedangkan **Opsi C**, **D**, dan **E** menyalahi arah kontraposisi.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Sebuah platform lokapasar menjanjikan kepada pengguna: 'Jika pesanan dikirim melewati batas waktu estimasi, maka pembeli memperoleh kupon kompensasi otomatis.' Manakah pernyataan berikut yang memiliki nilai kebenaran SAMA (ekuivalen) dengan janji platform tersebut?",
+      "opsi_jawaban": [
+        "A. Pesanan dikirim melewati batas waktu estimasi dan pembeli tidak memperoleh kupon kompensasi otomatis.",
+        "B. Pesanan dikirim tidak melewati batas waktu estimasi atau pembeli memperoleh kupon kompensasi otomatis.",
+        "C. Jika pesanan tidak dikirim melewati batas waktu estimasi, maka pembeli tidak memperoleh kupon kompensasi.",
+        "D. Pesanan dikirim tidak melewati batas waktu estimasi dan pembeli memperoleh kupon kompensasi otomatis.",
+        "E. Jika pembeli memperoleh kupon kompensasi otomatis, maka pesanan dikirim melewati batas waktu estimasi."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pernyataan bersyarat 'Jika $p$ (pesanan terlambat), maka $q$ (dapat kupon)' secara logis ekuivalen dengan bentuk disjungsi '$\\sim p$ **atau** $q$', yaitu pesanan dikirim tidak melewati batas waktu estimasi **atau** pembeli memperoleh kupon kompensasi otomatis (**Opsi B**). **Opsi A** merupakan negasi dari janji tersebut, bukan ekuivalensinya. **Opsi C** adalah invers dan **Opsi E** adalah konvers yang tidak ekuivalen, sedangkan **Opsi D** keliru menggunakan kata hubung *dan*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Seorang pengamat ekonomi menyatakan klaim: 'Jika suku bunga acuan diturunkan atau insentif pajak diberlakukan, maka investasi sektor manufaktur pasti meningkat.' Data kuartal berjalan mencatat bahwa insentif pajak telah diberlakukan, tetapi investasi sektor manufaktur justru menurun. Berdasarkan fakta tersebut, pernyataan: *'Klaim pengamat ekonomi tersebut bernilai benar'* berstatus ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Klaim pengamat berbentuk implikasi dengan syarat disjungsi: ($p$ **atau** $q$) $\\rightarrow r$. Karena insentif pajak diberlakukan ($q$ benar), maka syarat majemuk ($p \\lor q$) sudah terpenuhi secara sah. Namun, fakta mencatat investasi manufaktur justru menurun ($\\sim r$), sehingga terpenuhi pola negasi implikasi $(p \\lor q) \\land \\sim r$. Bukti penyangkal eksplisit ini membuktikan klaim pengamat gugur mutlak, sehingga pernyataan bahwa klaim tersebut benar berstatus **Pasti Salah** (**Opsi C**).",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "kode_subbab": "lbe-02-01",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 2: Detailed Information & Paraphrasing",
+  "judul_subbab": "Stated Detail Questions (True/False/Not Given)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Teks menyebut: 'Urban vertical farms reduce water usage by 90%, yet high energy costs currently limit them to leafy greens.' Manakah pernyataan yang PASTI BENAR menurut teks?",
+      "opsi_cepat": [
+        "Vertical farms are completely unable to grow root vegetables.",
+        "Electricity expenses restrict what crops vertical farms currently cultivate."
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Opsi pertama salah karena menambahkan kata mutlak 'completely unable' (False/Not Given), sedangkan opsi kedua merupakan parafrasa persis dari 'high energy costs currently limit them to leafy greens'."
+    },
+    "konsep_inti_markdown": "* **Prinsip Utama:** Jawaban benar **100% eksplisit** dalam bacaan, hanya diubah struktur kalimatnya (**parafrasa sinonim/aktif-pasif**).\n* **Alur Taktis:** Pindai kata kunci soal $\\rightarrow$ Baca 1 kalimat sebelum dan sesudah kata kunci $\\rightarrow$ Eliminasi opsi ekstrem.\n* **Klasifikasi Logika:**\n  * **TRUE:** Fakta sesuai makna teks.\n  * **FALSE:** Kontradiksi langsung dengan fakta teks.\n  * **NOT GIVEN:** Informasi tidak pernah dibahas atau tidak ada pembandingnya di teks.",
+    "radar_jebakan_utbk": [
+      "Opsi 'Copy-Paste' Kata Kunci: Mengulang persis kata-kata di teks namun menyelipkan kata ekstrem (always, never, only, completely) yang mengubah makna.",
+      "Asumsi Logis Eksternal (Not Given Trap): Pernyataan terdengar masuk akal secara pengetahuan umum, tetapi tidak pernah dinyatakan oleh penulis maupun narasumber di teks."
+    ],
+    "stimulus_utama_bersama": "Urban vertical farming—the practice of cultivating crops in vertically stacked layers indoors—has gained traction as cities seek resilient food supply chains. By utilizing hydroponic and aeroponic systems, these facilities recycle nutrient-rich water, slashing agricultural water consumption by up to 95 percent compared to conventional open-field farming. Furthermore, controlled indoor environments eliminate the need for chemical pesticides and shield crops from erratic weather events.\n\nDespite these ecological advantages, widespread commercial adoption remains constrained by substantial capital expenditure and steep electricity demands. Artificial LED lighting and climate-control systems account for nearly 60 percent of operational overhead, making calorie-dense staple crops like wheat or corn economically unviable indoors. Consequently, most commercial vertical farms focus on fast-growing, high-margin produce such as lettuce, herbs, and microgreens.\n\n**Online Policy Forum Discussion: Subsidizing Urban Vertical Farms**\n* **Dr. Aris Thorne (Agronomist):** \"Direct government energy subsidies for vertical farms are premature. Until facilities transition to dedicated renewable microgrids, subsidizing their power bills merely shifts fossil-fuel emissions from rural tractors to urban power plants.\"\n* **Elena Rostova (Urban Planner):** \"Rather than subsidizing electricity, municipalities should offer zoning tax exemptions to developers who integrate vertical farms into abandoned industrial warehouses, reducing food transport miles.\"\n* **Marcus Vance (Agri-Tech Investor):** \"Initial hardware costs are the real bottleneck. Public-private co-investment grants for automated robotics would lower labor expenses and allow farms to diversify beyond leafy greens.\"",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "According to the Passage, Which Statement is TRUE?",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1: '...slashing agricultural water consumption by up to 95 percent compared to conventional open-field farming. Furthermore, controlled indoor environments eliminate the need for chemical pesticides...'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Skimming & Scanning:** Ambil kata benda spesifik pada opsi (misal: *pesticides*, *water*, *weather*) lalu lacak lokasinya di paragraf terkait.\n2. **Cocokkan Parafrasa:** Kalimat teks *'eliminate the need for chemical pesticides'* diparafrasa menjadi *'indoor vertical crops are grown without synthetic pest-control chemicals'*.\n3. **Eliminasi Jebakan:**\n   * *Terlalu Ekstrem:* Mengubah *'up to 95 percent'* menjadi *'eliminates all water usage'* (False).\n   * *Tukar Subjek:* Menyebut pertanian konvensional menghemat air 95%.\n   * *Tidak Disebut:* Menyebut rasa sayuran hidroponik lebih enak daripada sayuran ladang.",
+      "kunci_pembeda": "Fokus menguji kesetaraan makna (parafrasa) dari satu klausa faktual secara umum tanpa menanyakan hubungan sebab-akibat spesifik.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Comprehending Specific Causal/Procedural Details",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 2: 'Artificial LED lighting and climate-control systems account for nearly 60 percent of operational overhead, making calorie-dense staple crops like wheat or corn economically unviable indoors.'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Deteksi Penanda Kausal/Proses:** Cari kata kunci pertanyaan seperti *triggers*, *results in*, *prevents*, atau *by utilizing*.\n2. **Petakan Arah Sebab $\\rightarrow$ Akibat:**\n   * **Sebab:** Biaya listrik LED dan kontrol iklim tinggi (60% biaya operasional).\n   * **Akibat:** Tanaman pokok berkalori tinggi (*wheat/corn*) tidak menguntungkan secara ekonomi di dalam ruangan.\n3. **Identifikasi Jebakan:** UTBK sering membalik arah kausalitas (menyebut tanaman gandum menyebabkan biaya listrik naik) atau mengambil akibat yang salah (menyebut biaya listrik membuat selada gagal panen).",
+      "kunci_pembeda": "Pertanyaan secara eksplisit menanyakan pemicu (*what triggers/causes*), alasan (*why*), atau mekanisme proses (*how*) suatu fenomena terjadi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Matching Commenters/Experts to Their Stated Opinions",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Bagian Forum Thread: Perbandingan usulan kebijakan antara Dr. Aris Thorne (Agronomist), Elena Rostova (Urban Planner), dan Marcus Vance (Agri-Tech Investor).",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Buat Peta Entitas-Usulan:** Jangan membaca seluruh forum berulang kali; tandai kata kerja usulan (*should*, *merely*, *would*) milik tiap tokoh:\n   * **Dr. Thorne:** Menolak subsidi listrik langsung sebelum memakai energi terbarukan.\n   * **Elena Rostova:** Mengusulkan insentif pajak zonasi (*zoning tax exemptions*) untuk alih fungsi gudang terbengkalai.\n   * **Marcus Vance:** Mengusulkan hibah investasi bersama (*co-investment grants*) untuk robotika otomatis.\n2. **Waspadai Jebakan Tukar Tokoh:** Opsi pengecoh biasanya mengambil kebijakan valid dari Elena (insentif pajak) tetapi mengatasnamakannya sebagai pendapat Marcus.",
+      "kunci_pembeda": "Berbasis teks multi-sudut pandang (Forum Thread/Paired Texts) yang menguji ketepatan atribusi opini kepada tokoh yang tepat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Evaluating True/False/Not Given Matrix Statements",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Keseluruhan Teks & Forum: Evaluasi 3–4 pernyataan independen dalam format tabel matriks (True / False atau True / False / Not Given).",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Bedah Per Baris Secara Independen:** Kebenaran baris ke-1 tidak memengaruhi baris ke-2.\n2. **Gunakan Uji Bukti Tekstual:**\n   * **TRUE:** Ada kalimat pendukung eksplisit di teks.\n   * **FALSE:** Ada kalimat di teks yang membantah langsung pernyataan tersebut (misal: teks menyebut LED memakan 60% biaya, pernyataan menyebut kurang dari 20%).\n   * **NOT GIVEN (atau False pada matriks biner UTBK):** Klaim memuat perbandingan atau fakta baru yang absen di teks (misal: membandingkan gaji pekerja pertanian vertikal dengan petani tradisional).",
+      "kunci_pembeda": "Menuntut verifikasi simultan atas beberapa klaim terpisah dari bagian teks yang berbeda dalam satu butir soal.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "According to the passage, what primarily prevents commercial vertical farms from cultivating staple crops such as wheat and corn?",
+      "opsi_jawaban": [
+        "A. The inability of hydroponic systems to deliver sufficient nutrients to grain crops",
+        "B. Strict municipal zoning laws that prohibit grain cultivation inside urban warehouses",
+        "C. The prohibitive operational costs driven by artificial lighting and climate regulation",
+        "D. Rapid spoilage rates of calorie-dense crops during urban distribution",
+        "E. The lack of automated robotics capable of harvesting fast-growing produce"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "**Langkah Bedah:**\n1. **Kata Kunci:** *prevents*, *staple crops*, *wheat and corn* merujuk ke kalimat kedua Paragraf 2.\n2. **Bukti Teks:** *'Artificial LED lighting and climate-control systems account for nearly 60 percent of operational overhead, making calorie-dense staple crops like wheat or corn economically unviable indoors.'*\n3. **Analisis Opsi:** Opsi **C** memparafrasa biaya operasional tinggi akibat LED dan kontrol iklim (*prohibitive operational costs*). Opsi A, B, dan D adalah *Not Given* (tidak dibahas), sedangkan E keliru karena *fast-growing produce* justru tanaman yang berhasil ditanam.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "In the online policy forum discussion, who proposes utilizing repurposed urban buildings through tax incentives to shorten supply chains?",
+      "opsi_jawaban": [
+        "A. Dr. Aris Thorne",
+        "B. Elena Rostova",
+        "C. Marcus Vance",
+        "D. Both Dr. Aris Thorne and Elena Rostova",
+        "E. Both Elena Rostova and Marcus Vance"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Langkah Bedah:**\n1. **Kata Kunci:** *repurposed urban buildings*, *tax incentives*, *shorten supply chains*.\n2. **Bukti Teks:** Elena Rostova menyatakan: *'...offer zoning tax exemptions to developers who integrate vertical farms into abandoned industrial warehouses, reducing food transport miles.'*\n3. **Analisis Opsi:** Frasa *abandoned industrial warehouses* diparafrasa menjadi *repurposed urban buildings*, dan *reducing food transport miles* menjadi *shorten supply chains*. Dr. Thorne membahas emisi energi, sementara Marcus membahas hibah robotika.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Based on the passage and the forum thread, determine whether each statement below is **TRUE** or **FALSE**!\n\n| No. | Statement | True | False |\n|---|---|---|---|\n| 1 | Indoor vertical farming requires zero chemical pesticides because its environment is regulated. | [ ] | [ ] |\n| 2 | Dr. Aris Thorne supports immediate government electricity subsidies to lower fossil-fuel emissions. | [ ] | [ ] |\n| 3 | Marcus Vance believes public-private robotics grants could enable vertical farms to grow a wider variety of crops. | [ ] | [ ] |",
+      "opsi_jawaban": [
+        "A. True - True - False",
+        "B. True - False - True",
+        "C. False - True - True",
+        "D. False - False - True",
+        "E. True - False - False"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Langkah Bedah:**\n* **Pernyataan 1 (TRUE):** Paragraf 1 menyatakan *'controlled indoor environments eliminate the need for chemical pesticides'* (sesuai dengan *requires zero chemical pesticides*).\n* **Pernyataan 2 (FALSE):** Kontradiksi dengan Dr. Thorne yang menyebut subsidi listrik saat ini bersifat *'premature'* dan hanya memindahkan emisi bahan bakar fosil.\n* **Pernyataan 3 (TRUE):** Marcus Vance menyebut *'co-investment grants for automated robotics... allow farms to diversify beyond leafy greens'*.",
+      "visual": null
+    }
+  ]
+}

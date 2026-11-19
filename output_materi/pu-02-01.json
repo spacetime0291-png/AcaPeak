@@ -1,0 +1,134 @@
+{
+  "kode_subbab": "pu-02-01",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 2: Penalaran Deduktif",
+  "judul_subbab": "Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Aturan beasiswa menyatakan: 'Jika mahasiswa meraih IPK minimal 3,75, maka ia lolos seleksi berkas.' Diketahui Bima lolos seleksi berkas, apakah pasti IPK Bima minimal 3,75?",
+      "opsi_cepat": [
+        "Pasti Benar",
+        "Belum Tentu (Mungkin Salah)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Panah implikasi hanya berjalan satu arah ($P \\rightarrow Q$), tidak otomatis berlaku sebaliknya ($Q \\rightarrow P$). Bima bisa saja lolos seleksi berkas melalui jalur prestasi nonakademik."
+    },
+    "konsep_inti_markdown": "**Logika proposisi** menguji nilai kebenaran pernyataan majemuk dari fakta premis verbal:\n\n* **Konjungsi ($P \\land Q$, 'dan'):** Benar hanya jika **kedua** unsur benar.\n* **Disjungsi ($P \\lor Q$, 'atau'):** Benar jika **minimal satu** unsur benar (inklusif).\n* **Implikasi ($P \\rightarrow Q$, 'jika... maka...'):** Salah hanya jika sebab ($P$) benar tetapi akibat ($Q$) salah.\n* **Biimplikasi ($P \\leftrightarrow Q$, 'jika dan hanya jika'):** Benar saat nilai kebenaran $P$ dan $Q$ **sama** (keduanya benar atau keduanya salah).",
+    "radar_jebakan_utbk": [
+      "Membalik arah panah implikasi: menganggap 'Jika P maka Q' otomatis berarti 'Jika Q maka P' (afirmasi konsekuen).",
+      "Mengartikan kata 'atau' dalam premis UTBK sebagai pilihan eksklusif (salah satu saja), padahal logika formal menggunakan disjungsi inklusif (bisa keduanya)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Evaluasi Nilai Kebenaran Majemuk dari Fakta Tunggal",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Peraturan perusahaan menetapkan bahwa karyawan berhak menerima bonus tahunan apabila mencapai target penjualan dan tidak memiliki catatan pelanggaran disiplin. Pada evaluasi akhir tahun, Raka berhasil melampaui target penjualan, tetapi pernah mendapat surat peringatan pelanggaran disiplin.",
+      "bedah_pola_markdown": "**Struktur Logika:** Klaim gabungan 'Target tercapai ($B$) **dan** bebas pelanggaran ($S$)' bernilai **Salah** secara keseluruhan karena operator konjungsi **dan** menuntut seluruh komponen terpenuhi tanpa satu pun pengecualian.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Sudah mencapai target utama, wajar tetap mendapat bonus sebagian | Satu syarat gugur otomatis membuat konjungsi bernilai Salah |\n| Satu fakta benar dianggap cukup mewakili kelayakan | Setiap klausa wajib diuji nilai kebenarannya secara terpisah |\n\n**Langkah Eliminasi:** Pertama, pecah pernyataan majemuk menjadi proposisi tunggal lalu tandai nilai Benar ($B$) atau Salah ($S$) sesuai fakta premis. Kedua, terapkan aturan penghubung: kata **dan** mewajibkan semua unsur $B$, sedangkan **atau** cukup satu unsur $B$. Ketiga, eliminasi opsi yang menyimpulkan Raka tetap memperoleh bonus atau opsi yang menyatakan ia gagal mencapai target penjualan.",
+      "kunci_pembeda": "Variasi ini berfokus pada penentuan nilai kebenaran satu pernyataan majemuk tunggal berdasarkan kombinasi fakta unsur-unsurnya, bukan penarikan simpulan implikasi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Syarat Cukup (Sufficient) vs Syarat Perlu (Necessary) dalam Teks Hukum/Aturan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Undang-undang kependudukan menyatakan bahwa warga negara hanya dapat mengajukan pembuatan paspor apabila telah memiliki kartu tanda penduduk elektronik yang sah. Ditemukan fakta bahwa Sinta telah memiliki kartu tanda penduduk elektronik yang sah.",
+      "bedah_pola_markdown": "**Struktur Logika:** Frasa '**hanya dapat** $P$ **apabila** $Q$' menempatkan kepemilikan KTP elektronik ($Q$) sebagai **syarat perlu**, bukan syarat cukup. Arah panah logikanya adalah Mengajukan paspor ($P$) $\\rightarrow$ Memiliki KTP ($Q$).\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Punya KTP berarti otomatis pasti bisa bikin paspor | Punya KTP ($Q$) belum tentu mengajukan paspor ($P$) |\n| Kata 'hanya jika' disamakan dengan sebab langsung | 'P hanya jika Q' berarti jika tidak punya Q, mustahil P |\n\n**Langkah Eliminasi:** Pertama, kenali penanda **syarat perlu** seperti *hanya jika*, *syarat wajib*, atau *harus* sebagai ujung panah ($Q$). Kedua, kenali penanda **syarat cukup** seperti *jika* atau *apabila* sebagai pangkal panah ($P$). Ketiga, coret opsi yang memastikan Sinta pasti membuat paspor, lalu pilih opsi bahwa Sinta mungkin mengajukan paspor atau tidak membuat paspor jika tidak ber-KTP.",
+      "kunci_pembeda": "Variasi ini membedakan posisi sebab sebagai syarat cukup di pangkal panah dengan posisi akibat mutlak sebagai syarat perlu di ujung panah.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Evaluasi Kalimat Pilihan ('Atau') dalam Skenario Pengambilan Keputusan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Panitia seminar nasional mengumumkan bahwa peserta yang terlambat registrasi ulang wajib mengikuti sesi daring atau membayar denda administrasi. Pada hari pelaksanaan, Ardi terlambat melakukan registrasi ulang dan terbukti tidak membayar denda administrasi.",
+      "bedah_pola_markdown": "**Struktur Logika:** Kewajiban berbentuk disjungsi 'Sesi daring ($A$) **atau** bayar denda ($B$)' menuntut minimal satu tindakan terlaksana. Karena Ardi tidak membayar denda ($\\sim B$), maka mengikuti sesi daring ($A$) menjadi keharusan mutlak.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Kata 'atau' selalu berarti pilih salah satu saja | Kata 'atau' bersifat inklusif (boleh terlaksana keduanya) |\n| Menolak opsi B tidak otomatis mewajibkan opsi A | Jika salah satu pilihan gugur, pilihan lainnya wajib benar |\n\n**Langkah Eliminasi:** Pertama, pastikan pemicu awal (Ardi terlambat registrasi) benar-benar terjadi sehingga aturan disjungsi aktif. Kedua, periksa fakta penyangkal salah satu cabang pilihan pada premis kedua. Ketiga, coret opsi yang menyatakan Ardi bebas dari kedua kewajiban atau wajib memilih keduanya sekaligus, lalu pilih simpulan bahwa Ardi wajib mengikuti sesi daring.",
+      "kunci_pembeda": "Variasi ini menguji penarikan simpulan disjungtif ketika salah satu opsi dalam pernyataan 'atau' dibatalkan oleh fakta lapangan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Syarat Dua Arah Verbal ('Jika dan Hanya Jika') pada Kriteria Kelulusan/Klasifikasi",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Pedoman akademik fakultas menetapkan bahwa mahasiswa dinyatakan lulus dengan predikat pujian jika dan hanya jika memperoleh indeks prestasi kumulatif minimal 3,80 tanpa nilai mengulang. Diketahui Nadia lulus dengan predikat pujian.",
+      "bedah_pola_markdown": "**Struktur Logika:** Frasa '**jika dan hanya jika**' membentuk implikasi dua arah ($P \\leftrightarrow Q$). Artinya, lulus pujian ($P$) berlaku sekaligus sebagai syarat cukup maupun syarat perlu bagi IPK minimal 3,80 tanpa mengulang ($Q$).\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Aturan dianggap hanya berlaku satu arah dari syarat | Panah berlaku bolak-balik ($P \\rightarrow Q$ dan $Q \\rightarrow P$) |\n| Lolos predikat bisa melalui jalur pengecualian lain | Jika salah satu sisi terjadi, sisi lainnya pasti ikut terjadi |\n\n**Langkah Eliminasi:** Pertama, deteksi frasa kunci *jika dan hanya jika*, *berlaku sebaliknya*, atau *ekuivalen dengan*. Kedua, perlakukan kedua klausa sebagai pasangan yang selalu hadir bersama atau gugur bersama. Ketiga, coret opsi yang membuka peluang Nadia pernah mengulang mata kuliah, lalu pilih opsi bahwa Nadia pasti memiliki IPK minimal 3,80 dan tidak pernah mengulang.",
+      "kunci_pembeda": "Variasi ini menggabungkan syarat cukup dan syarat perlu secara simetris sehingga kesimpulan sah ditarik dari arah kiri maupun kanan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Kalimat Syarat Majemuk Verbal ('Jika A dan B, maka C' / 'Jika A, maka B atau C')",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kebijakan subsidi energi menyatakan bahwa jika rumah tangga berpenghasilan rendah dan daya listrik terpasang maksimal 900 VA, maka keluarga tersebut berhak menerima bantuan tarif atau paket konversi kompor. Keluarga Pak Hasan memenuhi kedua kriteria tersebut, tetapi tidak menerima paket konversi kompor.",
+      "bedah_pola_markdown": "**Struktur Logika:** Pola 'Jika ($A$ **dan** $B$), maka ($C$ **atau** $D$)' menuntut kedua sebab terpenuhi lebih dulu agar memicu minimal satu akibat. Karena $A$ dan $B$ terpenuhi sementara $D$ tidak terjadi, maka $C$ pasti berlaku.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Satu syarat saja terpenuhi dianggap sudah memicu akibat | Sebab majemuk 'dan' wajib lengkap sebelum akibat aktif |\n| Akibat 'atau' dianggap gugur jika satu bantuan tidak cair | Akibat 'atau' tetap sah selama salah satu opsi terpenuhi |\n\n**Langkah Eliminasi:** Pertama, verifikasi apakah seluruh unsur di bagian sebab (**dan**) sudah lengkap terpenuhi oleh subjek. Kedua, setelah panah aktif, gunakan fakta negatif pada bagian akibat untuk mencoret cabang yang gugur. Ketiga, coret opsi yang menyatakan Pak Hasan tidak berhak atas bantuan apa pun, lalu pilih bahwa Pak Hasan menerima bantuan tarif.",
+      "kunci_pembeda": "Variasi ini menggabungkan dua operator logika sekaligus dalam satu kalimat bersyarat sehingga menuntut evaluasi bertahap dari sebab ke akibat.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Peraturan seleksi atlet pelatnas menyatakan bahwa peserta dinyatakan lolos ke tahap pemusatan latihan jika dan hanya jika lolos tes ketahanan fisik dan bebas dari riwayat cedera ligamen. Diketahui bahwa Dimas tidak lolos ke tahap pemusatan latihan, padahal ia memiliki catatan bebas dari riwayat cedera ligamen. Simpulan yang PALING TEPAT berdasarkan informasi tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. Dimas tidak lolos tes ketahanan fisik.",
+        "B. Dimas lolos tes ketahanan fisik, tetapi mengundurkan diri.",
+        "C. Sebagian atlet yang bebas cedera ligamen tetap lolos pemusatan latihan.",
+        "D. Dimas mengalami cedera ligamen saat mengikuti tes ketahanan fisik.",
+        "E. Peserta yang lolos tes ketahanan fisik pasti lolos ke pemusatan latihan."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Frasa **jika dan hanya jika** membentuk hubungan dua arah: lolos pemusatan latihan ($P$) $\\leftrightarrow$ (lolos tes fisik ($Q$) **dan** bebas cedera ($R$)). Karena Dimas tidak lolos pemusatan latihan ($\\sim P$), maka konjungsi ($Q \\land R$) pasti bernilai salah. Diketahui $R$ benar (bebas cedera), sehingga satu-satunya penyebab gugurnya konjungsi adalah $Q$ salah (**Opsi A**). **Opsi B** dan **D** menambah asumsi di luar teks, sedangkan **Opsi E** mengabaikan syarat bebas cedera.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Ketentuan operasional bank digital menyebutkan bahwa apabila transaksi transfer valuta asing melebihi batas harian dan dilakukan di luar jam kliring, maka sistem akan menahan dana sementara atau meminta verifikasi biometrik ulang. Pada pukul 22.00 di luar jam kliring, Rani melakukan transfer valuta asing melebihi batas harian dan sistem tidak meminta verifikasi biometrik ulang. Simpulan yang PASTI BENAR adalah ....",
+      "opsi_jawaban": [
+        "A. Transaksi transfer valuta asing Rani dibatalkan secara permanen oleh sistem.",
+        "B. Sistem menahan dana transaksi Rani untuk sementara waktu.",
+        "C. Rani melakukan transfer valuta asing di bawah batas harian yang ditetapkan.",
+        "D. Sistem meminta verifikasi biometrik ulang setelah jam kliring dibuka kembali.",
+        "E. Transaksi Rani langsung diproses tanpa penahanan dana maupun verifikasi ulang."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Syarat majemuk pada bagian sebab (melebihi batas harian **dan** di luar jam kliring) terpenuhi seluruhnya oleh Rani sehingga akibat disjungtif (menahan dana sementara **atau** verifikasi biometrik ulang) wajib terjadi. Karena verifikasi biometrik ulang tidak diminta, pilihan kedua dari disjungsi—yakni sistem menahan dana sementara—pasti berlaku (**Opsi B**). **Opsi A** dan **D** melampaui informasi premis, **Opsi C** bertentangan dengan fakta premis, dan **Opsi E** mengingkari aturan implikasi.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Regulasi keselamatan penerbangan menetapkan bahwa pesawat komersial hanya diizinkan lepas landas apabila jarak pandang landasan minimal 800 meter dan seluruh indikator mesin berada dalam kondisi normal. Laporan menara pengawas mencatat bahwa jarak pandang landasan saat ini mencapai 1.200 meter dan seluruh indikator mesin normal. Berdasarkan informasi tersebut, pernyataan: *'Pesawat komersial tersebut pasti sudah lepas landas saat ini'* bernilai ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kata kunci **hanya diizinkan ... apabila** menempatkan konjungsi (jarak pandang $\\ge 800\\text{ m}$ **dan** mesin normal) sebagai **syarat perlu**, bukan syarat cukup. Terpenuhinya kedua syarat tersebut membuat pesawat memenuhi izin teknis, tetapi belum menjamin pesawat pasti sudah lepas landas (bisa tertunda faktor antrean lalu lintas udara). Karena sesuai ruang lingkup tanpa kepastian mutlak, pernyataan bernilai **Mungkin Benar** (**Opsi B**), bukan **Pasti Benar** (**Opsi A**).",
+      "visual": null
+    }
+  ]
+}

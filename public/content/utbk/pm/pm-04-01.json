@@ -1,0 +1,131 @@
+{
+  "kode_subbab": "pm-04-01",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 4: Analisis Data dan Probabilitas Terapan",
+  "judul_subbab": "Interpretasi Grafik, Tabel, dan Statistik Kontekstual",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Lima wilayah memiliki rata-rata omzet per gerai: Rp3,0 M; Rp2,5 M; Rp4,0 M; Rp5,0 M; dan Rp4,5 M. Apakah rata-rata omzet seluruh gerai perusahaan tersebut pasti Rp3,80 miliar?",
+      "opsi_cepat": [
+        "Ya, tinggal rata-ratakan kelima angka",
+        "Belum tentu, wajib dikalikan jumlah gerai tiap wilayah"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Rata-rata gabungan wajib memakai pembobotan frekuensi (jumlah gerai per wilayah). Mengabaikan jumlah gerai pada tiap wilayah adalah jebakan klasik UTBK."
+    },
+    "konsep_inti_markdown": "- **Mean Gabungan:** $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$, wajib dikalikan frekuensi tiap kelompok.\n- **Median ($Q_2$) & Kuartil ($Q_1, Q_3$):** Urutkan $n$ data terlebih dahulu; posisi median di data ke-$\\frac{n+1}{2}$.\n- **Indeks Tertimbang:** $\\text{Skor} = \\sum (w_i \\times s_i)$ dengan $\\sum w_i = 100\\%$.\n- **Evaluasi Klaim:** Bedakan laju persentase ($\\%$) dengan nilai absolut ($\\text{Persentase} \\times \\text{Basis}$).\n- **Perubahan Kelompok:** $\\bar{x}_{\\text{baru}} = \\frac{n_{\\text{lama}}\\bar{x}_{\\text{lama}} \\pm \\Delta \\text{Total}}{n_{\\text{baru}}}$.",
+    "radar_jebakan_utbk": [
+      "Merata-ratakan langsung nilai rata-rata antarkelompok tanpa mengalikan jumlah anggota (frekuensi) masing-masing kelompok.",
+      "Terkecoh persentase tertinggi pada tabel demografi atau ekonomi tanpa mengalikan basis populasinya untuk mencari nilai absolut terbesar."
+    ],
+    "stimulus_utama_bersama": "Laporan Evaluasi Kinerja Kuartal III PT Karya Mandiri merangkum performa 20 gerai di lima wilayah operasional (Wilayah A hingga E) berdasarkan jumlah gerai dan rata-rata omzet bulanan per gerai (dalam miliar rupiah) seperti disajikan pada grafik. Untuk ekspansi Kuartal IV, manajemen menetapkan dua instrumen evaluasi berikut:\n\n1. Seleksi Manajer Regional: Dinilai dari tiga kriteria berbobot, yaitu Pertumbuhan Omzet (50%), Efisiensi Biaya (30%), dan Kepuasan Pelanggan (20%). Tiga kandidat memperoleh skor:\n   - Raka: Pertumbuhan 76, Efisiensi 95, Kepuasan 90\n   - Sinta: Pertumbuhan 92, Efisiensi 80, Kepuasan 80\n   - Tari: Pertumbuhan 84, Efisiensi 85, Kepuasan 85\n\n2. Data Demografi Tenaga Kerja Wilayah Operasional:\n   - Wilayah A: Penduduk usia kerja 400 ribu jiwa, tingkat partisipasi kerja 70%\n   - Wilayah B: Penduduk usia kerja 600 ribu jiwa, tingkat partisipasi kerja 60%\n   - Wilayah C: Penduduk usia kerja 500 ribu jiwa, tingkat partisipasi kerja 65%\n   - Wilayah D: Penduduk usia kerja 300 ribu jiwa, tingkat partisipasi kerja 80%\n   - Wilayah E: Penduduk usia kerja 200 ribu jiwa, tingkat partisipasi kerja 75%",
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='25' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Jumlah Gerai (Batang) &amp; Omzet/Gerai Miliar Rp (Garis)</text><line x1='52' y1='94' x2='308' y2='94' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><polyline points='52,48 52,186 308,186 308,48' fill='none' stroke='#1E293B' stroke-width='2'/><rect x='66' y='94' width='28' height='92' fill='#DBEAFE' stroke='#3B82F6' stroke-width='1.5'/><rect x='116' y='48' width='28' height='138' fill='#DBEAFE' stroke='#3B82F6' stroke-width='1.5'/><rect x='166' y='71' width='28' height='115' fill='#DBEAFE' stroke='#3B82F6' stroke-width='1.5'/><rect x='216' y='117' width='28' height='69' fill='#DBEAFE' stroke='#3B82F6' stroke-width='1.5'/><rect x='266' y='140' width='28' height='46' fill='#DBEAFE' stroke='#3B82F6' stroke-width='1.5'/><polyline points='80,117 130,129 180,94 230,71 280,83' fill='none' stroke='#F59E0B' stroke-width='2.5'/><circle cx='80' cy='117' r='4' fill='#F59E0B'/><circle cx='130' cy='129' r='4' fill='#F59E0B'/><circle cx='180' cy='94' r='4' fill='#F59E0B'/><circle cx='230' cy='71' r='4' fill='#F59E0B'/><circle cx='280' cy='83' r='4' fill='#F59E0B'/><text x='80' y='109' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#B45309'>3,0</text><text x='130' y='145' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#B45309'>2,5</text><text x='180' y='86' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#B45309'>4,0</text><text x='230' y='62' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#B45309'>5,0</text><text x='280' y='74' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#B45309'>4,5</text><text x='80' y='206' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>A (4)</text><text x='130' y='206' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>B (6)</text><text x='180' y='206' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>C (5)</text><text x='230' y='206' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>D (3)</text><text x='280' y='206' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>E (2)</text></svg>",
+      "caption": "Distribusi jumlah gerai (batang) dan rata-rata omzet per gerai dalam miliar rupiah (garis) pada lima wilayah operasional."
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Analisis Statistik Deskriptif (Mean, Median, Kuartil) dari Data Survei, Skor Ujian, atau Laporan Keuangan Perusahaan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk pada distribusi 20 gerai PT Karya Mandiri di Wilayah A hingga E pada stimulus utama, tentukan mean, median ($Q_2$), dan kuartil atas ($Q_3$) omzet bulanan per gerai.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTerdapat $n = 20$ gerai terurut naik: $2,5$ miliar (6 gerai B), $3,0$ miliar (4 gerai A), $4,0$ miliar (5 gerai C), $4,5$ miliar (2 gerai E), dan $5,0$ miliar (3 gerai D).\n\n**2. Model Matematika (Employing)**\nGunakan rumus mean berbobot $\\bar{x} = \\frac{\\sum f_i x_i}{20}$. Karena $n = 20$ genap, median ($Q_2$) adalah rata-rata data ke-10 dan ke-11, sedangkan kuartil atas ($Q_3$) adalah rata-rata data ke-15 dan ke-16.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nTotal omzet $= 6(2,5) + 4(3,0) + 5(4,0) + 2(4,5) + 3(5,0) = 71,0$ miliar, sehingga $\\bar{x} = \\frac{71,0}{20} = 3,55$ miliar. Data ke-10 bernilai $3,0$ dan ke-11 bernilai $4,0$, maka $Q_2 = 3,50$ miliar. Data ke-15 bernilai $4,0$ dan ke-16 bernilai $4,5$, sehingga $Q_3 = 4,25$ miliar.",
+      "kunci_pembeda": "Selalu urutkan data beserta frekuensinya sebelum menentukan letak kuartil, dan jangan pernah membagi jumlah rata-rata kelompok dengan banyaknya kelompok.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Membaca Grafik Kompleks (Diagram Pencar/Scatter Plot, Boxplot, Histogram, atau Grafik Dua Sumbu) untuk Pengambilan Keputusan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Berdasarkan grafik dua sumbu pada stimulus utama yang memadukan jumlah gerai (batang) dan rata-rata omzet per gerai (garis), wilayah manakah yang menyumbang total pendapatan tertinggi bagi perusahaan?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nGrafik dua sumbu menampilkan dua variabel berbeda sekaligus: sumbu kiri menyatakan jumlah gerai per wilayah (batang biru), sedangkan sumbu kanan menyatakan rata-rata omzet tiap gerai dalam miliar rupiah (garis oranye).\n\n**2. Model Matematika (Employing)**\nPengambilan keputusan berbasis kontribusi total menuntut perkalian kedua sumbu pada setiap titik wilayah: $\\text{Total Omzet} = \\text{Jumlah Gerai} \\times \\text{Rata-rata Omzet}$. Hindari membaca tinggi batang atau titik garis secara terpisah.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nHitung cepat lima wilayah: Wilayah A ($4 \\times 3,0 = 12,0$), Wilayah B ($6 \\times 2,5 = 15,0$), Wilayah C ($5 \\times 4,0 = 20,0$), Wilayah D ($3 \\times 5,0 = 15,0$), dan Wilayah E ($2 \\times 4,5 = 9,0$). Wilayah C menghasilkan kontribusi tertinggi (Rp20,0 miliar), mengungguli Wilayah B yang memiliki gerai terbanyak maupun Wilayah D yang memiliki rata-rata tertinggi.",
+      "kunci_pembeda": "Pada grafik dua sumbu, selalu periksa satuan sumbu kiri dan kanan secara terpisah lalu kalikan atau bandingkan keduanya sesuai tujuan keputusan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Perhitungan Indeks Tertimbang (IPK Mahasiswa, Skor Penilaian Seleksi Karyawan dengan Bobot Kriteria Berbeda)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Gunakan data skor seleksi Manajer Regional PT Karya Mandiri pada stimulus utama untuk menentukan kandidat dengan indeks tertinggi.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTiga kriteria seleksi memiliki tingkat kepentingan tidak setara: Pertumbuhan Omzet berbobot $50\\%$, Efisiensi Biaya $30\\%$, dan Kepuasan Pelanggan $20\\%$. Ketiga kandidat memiliki nilai berbeda pada setiap aspek penilaian.\n\n**2. Model Matematika (Employing)**\nGunakan rumus rata-rata tertimbang $\\text{Indeks} = 0,50 S_{\\text{pertumbuhan}} + 0,30 S_{\\text{efisiensi}} + 0,20 S_{\\text{kepuasan}}$. Menjumlahkan skor lalu membagi tiga akan menghasilkan keputusan yang keliru karena mengabaikan prioritas perusahaan.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nHitung indeks tiap kandidat: Raka memperoleh $0,5(76) + 0,3(95) + 0,2(90) = 38 + 28,5 + 18 = 84,5$. Sinta memperoleh $0,5(92) + 0,3(80) + 0,2(80) = 46 + 24 + 16 = 86,0$. Tari memperoleh $0,5(84) + 0,3(85) + 0,2(85) = 42 + 25,5 + 17 = 84,5$. Sinta terpilih karena unggul pada kriteria berbobot terbesar, meskipun rata-rata tanpa bobot Raka ($87,0$) lebih tinggi.",
+      "kunci_pembeda": "Kalikan setiap komponen nilai dengan persentase bobotnya masing-masing lalu jumlahkan, bukan merata-ratakan skor mentah secara langsung.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Evaluasi Kebenaran Klaim Berita Berdasarkan Data Tabel Demografi dan Ekonomi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sebuah artikel berita mengklaim bahwa Wilayah D memiliki jumlah angkatan kerja terbanyak karena tingkat partisipasi kerjanya tertinggi (80%). Evaluasi kebenaran klaim tersebut berdasarkan tabel demografi pada stimulus utama.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nKlaim berita menyimpulkan besaran jumlah orang (kuantitas absolut) hanya dari angka persentase tingkat partisipasi kerja tanpa memperhitungkan ukuran populasi usia kerja di masing-masing wilayah operasional.\n\n**2. Model Matematika (Employing)**\nUbah persentase menjadi nilai absolut menggunakan persamaan $\\text{Angkatan Kerja} = \\text{Penduduk Usia Kerja} \\times \\text{Tingkat Partisipasi}$. Bandingkan hasil perkalian antarwilayah untuk menguji validitas klaim secara objektif.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nHitung jumlah angkatan kerja: Wilayah D memiliki $300 \\times 80\\% = 240$ ribu jiwa. Bandingkan dengan Wilayah B ($600 \\times 60\\% = 360$ ribu), Wilayah C ($500 \\times 65\\% = 325$ ribu), dan Wilayah A ($400 \\times 70\\% = 280$ ribu). Klaim berita terbukti salah karena basis populasi Wilayah D jauh lebih kecil dibandingkan tiga wilayah lainnya.",
+      "kunci_pembeda": "Persentase tinggi pada basis populasi kecil dapat menghasilkan nilai absolut yang lebih rendah daripada persentase sedang pada basis populasi besar.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Perubahan Statistik Kelompok Akibat Masuk atau Keluarnya Anggota Baru dalam Skenario Nyata",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Jika perusahaan menutup 2 gerai di Wilayah B yang masing-masing beromzet Rp2,5 miliar per bulan, berapa rata-rata omzet bulanan dari 18 gerai yang tersisa?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nKelompok awal terdiri atas $n_{\\text{lama}} = 20$ gerai dengan total omzet $71,0$ miliar rupiah ($\\bar{x}_{\\text{lama}} = 3,55$ miliar). Sebanyak $2$ gerai beromzet di bawah rata-rata ($2,5$ miliar) dikeluarkan dari kelompok.\n\n**2. Model Matematika (Employing)**\nGunakan prinsip kekekalan jumlah total: $\\bar{x}_{\\text{baru}} = \\frac{\\text{Total Awal} - \\text{Total Keluar}}{n_{\\text{lama}} - n_{\\text{keluar}}}$. Karena anggota yang keluar bernilai lebih kecil daripada rata-rata awal, nilai rata-rata kelompok pasti meningkat.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nKurangi total omzet awal dengan omzet dua gerai yang tutup: $\\text{Total Baru} = 71,0 - 2(2,5) = 66,0$ miliar rupiah. Bagi dengan sisa $18$ gerai sehingga diperoleh $\\bar{x}_{\\text{baru}} = \\frac{66,0}{18} = \\frac{11}{3} \\approx 3,67$ miliar rupiah. Rata-rata perusahaan naik $0,12$ miliar rupiah karena unit berkinerja terendah dieliminasi.",
+      "kunci_pembeda": "Selalu hitung perubahan jumlah total nilai dan perubahan banyaknya anggota secara bersamaan; mengeluarkan anggota di bawah rata-rata akan menaikkan rata-rata baru.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan grafik laporan Kuartal III PT Karya Mandiri pada stimulus utama, selisih antara rata-rata (mean) dan median omzet bulanan seluruh 20 gerai perusahaan adalah ....",
+      "opsi_jawaban": [
+        "A. Rp25.000.000,00",
+        "B. Rp50.000.000,00",
+        "C. Rp150.000.000,00",
+        "D. Rp250.000.000,00",
+        "E. Rp300.000.000,00"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Total omzet $20$ gerai $= 4(3,0) + 6(2,5) + 5(4,0) + 3(5,0) + 2(4,5) = 71,0$ miliar rupiah, sehingga $\\text{mean} = \\frac{71,0}{20} = 3,55$ miliar rupiah. Setelah diurutkan, data ke-$10$ adalah $3,0$ dan data ke-$11$ adalah $4,0$, maka $\\text{median} = \\frac{3,0+4,0}{2} = 3,50$ miliar rupiah. Selisihnya $3,55 - 3,50 = 0,05$ miliar rupiah atau Rp50.000.000,00. Opsi E salah karena memakai rata-rata tanpa bobot ($3,80$ miliar).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manajemen menetapkan kandidat Manajer Regional terpilih harus memperoleh indeks tertimbang minimal $85,0$ dan ditempatkan pada wilayah dengan jumlah angkatan kerja terbesar kedua. Berdasarkan data pada stimulus utama, kandidat dan wilayah penempatan yang sesuai adalah ....",
+      "opsi_jawaban": [
+        "A. Raka di Wilayah D",
+        "B. Raka di Wilayah C",
+        "C. Sinta di Wilayah D",
+        "D. Sinta di Wilayah C",
+        "E. Tari di Wilayah B"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Indeks tertimbang kandidat: Raka $= 0,5(76)+0,3(95)+0,2(90) = 84,5$; Sinta $= 0,5(92)+0,3(80)+0,2(80) = 86,0$; Tari $= 0,5(84)+0,3(85)+0,2(85) = 84,5$. Hanya Sinta yang memenuhi syarat $\\ge 85,0$. Jumlah angkatan kerja: Wilayah B $= 360$ ribu (ke-1), Wilayah C $= 500 \\times 65\\% = 325$ ribu (ke-2), Wilayah A $= 280$ ribu, Wilayah D $= 240$ ribu. Opsi A dan C salah karena terjebak persentase partisipasi tertinggi Wilayah D ($80\\%$).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Pada Kuartal IV, PT Karya Mandiri membuka $5$ gerai baru sehingga rata-rata omzet bulanan seluruh $25$ gerai meningkat menjadi Rp3,75 miliar. Rata-rata omzet bulanan dari $5$ gerai baru tersebut adalah ... miliar rupiah. (Tuliskan angka desimal menggunakan tanda koma, misalnya: 4,25)",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "4,55",
+      "bedah_cepat_markdown": "Total omzet awal $20$ gerai adalah $71,0$ miliar rupiah. Setelah bertambah $5$ gerai, total omzet $25$ gerai menjadi $25 \\times 3,75 = 93,75$ miliar rupiah. Selisih total omzet merupakan kontribusi $5$ gerai baru, yaitu $93,75 - 71,0 = 22,75$ miliar rupiah. Dengan demikian, rata-rata omzet tiap gerai baru adalah $\\frac{22,75}{5} = 4,55$ miliar rupiah.",
+      "visual": null
+    }
+  ]
+}

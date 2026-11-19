@@ -1,0 +1,120 @@
+{
+  "kode_subbab": "pbm-02-02",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 2: Tanda Baca",
+  "judul_subbab": "Tanda Titik Dua, Hubung, dan Pisah",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Manakah penulisan yang sesuai EYD V: 'Rute kereta cepat Jakarta-Bandung beroperasi pada periode 2023-2026' atau 'Rute kereta cepat Jakarta—Bandung beroperasi pada periode 2023—2026'?",
+      "opsi_cepat": [
+        "Jakarta-Bandung & 2023-2026 (Tanda Hubung)",
+        "Jakarta—Bandung & 2023—2026 (Tanda Pisah)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Tanda pisah (—) tanpa spasi wajib digunakan di antara dua tempat atau bilangan yang bermakna 'sampai dengan' atau 'sampai ke', bukan tanda hubung (-)."
+    },
+    "konsep_inti_markdown": "- **Titik Dua (`:`):** Dipakai setelah pernyataan lengkap (minimal berpola S-P atau S-P-O) yang diikuti pemerincian; dilarang langsung setelah verba transitif atau preposisi.\n- **Tanda Hubung (`-`):** Merangkai unsur pembentuk kata (kata ulang, `ke-` + angka, huruf kecil + kapital seperti `se-Indonesia`, dan ejaan huruf).\n- **Tanda Pisah (`—`):** Ditulis tanpa spasi untuk mengapit sisipan di luar struktur inti kalimat serta menyatakan rentang 'sampai dengan/ke' (`2020—2026`, `Jakarta—Bandung`).",
+    "radar_jebakan_utbk": [
+      "Menempatkan tanda titik dua (:) tepat setelah kata kerja transitif (meliputi, mencakup, membutuhkan) atau preposisi (seperti, yaitu, adalah) sebelum perincian.",
+      "Menggunakan tanda hubung (-) alih-alih tanda pisah (—) untuk rentang tahun atau jarak kota, serta menyisipkan spasi di sekitar tanda pisah."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Tanda Titik Dua (:) di Akhir Pernyataan Lengkap yang Diikuti Pemerincian vs Larangan Titik Dua Setelah Preposisi/Verba",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Badan Pusat Statistik mencatat bahwa inflasi tahunan dipengaruhi oleh tiga komoditas utama: beras, cabai merah, dan bawang putih.",
+      "bedah_pola_markdown": "Penggunaan tanda titik dua (`:`) wajib didahului klausa berstruktur lengkap sebelum masuk ke perincian. Jika perincian langsung mengisi fungsi Objek [O] atau Pelengkap [Pel] setelah predikat verbal transitif maupun preposisi, tanda titik dua harus dihilangkan.\n\n| Kondisi | Kalimat | Analisis Sintaksis [S]-[P]-[O]-[K] |\n| :--- | :--- | :--- |\n| **Salah** | Tim peneliti [S] membutuhkan [P]: sensor suhu, kabel optik, dan baterai. | Titik dua memutus verba transitif *membutuhkan* [P] dengan rincian [O]. |\n| **Salah** | Bahan bakar fosil [S] meliputi [P]: batu bara, minyak bumi, dan gas alam. | Rincian langsung menjadi [Pel] setelah verba *meliputi* [P]. |\n| **Benar** | Tim peneliti [S] membutuhkan [P] **tiga perangkat [O]**: sensor suhu, kabel optik, dan baterai. | Klausa [S-P-O] tuntas pada frasa *tiga perangkat*, lalu diperinci. |\n\nPastikan ada frasa induk pembuka rincian (seperti *hal berikut*, *komponen ini*) sebelum membubuhkan titik dua.",
+      "kunci_pembeda": "Tanda titik dua (:) hanya sah muncul apabila fungsi sintaksis sebelum titik dua sudah membentuk klausa lengkap tanpa menggantung pada verba transitif atau kata depan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Tanda Hubung (-) pada Kata Ulang, Merangkai Unsur Kecil dengan Kapital/Angka (se-Indonesia, ke-5), dan Ejaan Huruf",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Program literasi digital se-Indonesia memasuki tahap ke-5 dengan melibatkan ratusan komunitas baca sejak tahun 2020-an.",
+      "bedah_pola_markdown": "Tanda hubung (`-`) berfungsi menyambung bagian kata yang terpisah atau merangkai unsur morfologis yang berbeda jenis huruf/angkanya sesuai kaidah EYD V.\n\n| Kaidah EYD V | Salah (Before) | Benar (After) | Alasan Koreksi |\n| :--- | :--- | :--- | :--- |\n| Unsur kecil + kapital | Program **seIndonesia** / **se Indonesia** | Program **se-Indonesia** | Bentuk terikat *se-* wajib dirangkai tanda hubung saat bertemu huruf kapital. |\n| Awalan `ke-` + angka | Tahap **ke 5** / **ke-V** | Tahap **ke-5** / **kelima** | Angka Arab memakai tanda hubung (`ke-5`); angka Romawi tidak memakai `ke-` (`tahap V`). |\n| Kata ulang & ejaan | **berlari lari** / kata **p.e.n.t.i.n.g** | **berlari-lari** / kata **p-e-n-t-i-n-g** | Kata ulang utuh/berimbuhan serta ejaan huruf per huruf wajib memakai `-`. |\n\nPerhatikan pula pemakaian tanda hubung saat merangkai unsur bahasa Indonesia dengan kata asing (misalnya `di-*publish*`) serta singkatan kapital dengan imbuhan (`di-PHK`).",
+      "kunci_pembeda": "Tanda hubung (-) bekerja di tingkat internal kata untuk menyambung morfem, ulangan kata, atau perubahan jenis karakter (huruf kecil ke kapital/angka).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Tanda Pisah (—) untuk Membatasi Penyisipan Keterangan di Luar Bangun Kalimat dan Bermakna \"Sampai Dengan\" (2020—2026, Jakarta—Bandung)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Pembangunan jalur kereta logistik Jakarta—Bandung yang berlangsung pada periode 2020—2026—proyek strategis nasional terbesar tahun ini—mulai diuji coba.",
+      "bedah_pola_markdown": "Dalam EYD V, tanda pisah (`—` atau *em-dash*) wajib ditulis **tanpa spasi** sebelum dan sesudahnya. Tanda ini berfungsi mengapit keterangan sisipan di luar struktur inti [S]-[P] serta menggantikan makna 'sampai dengan' atau 'sampai ke'.\n\n| Fungsi EYD V | Salah (Before) | Benar (After) | Bedah Struktur Kalimat |\n| :--- | :--- | :--- | :--- |\n| Sisipan di luar bangun kalimat | Kebijakan itu **- yang memicu polemik -** akhirnya direvisi. | Kebijakan itu**—yang memicu polemik—**akhirnya direvisi. | [S] *Kebijakan itu* langsung terhubung ke [P] *akhirnya direvisi*; sisipan diapit `—` tanpa spasi. |\n| Rentang waktu ('sampai dengan') | Periode **2020 — 2026** atau **2020-2026** | Periode **2020—2026** | Antara dua bilangan/tanggal memakai `—` rapat tanpa spasi. |\n| Rentang jarak ('sampai ke') | Jalur **Jakarta - Bandung** | Jalur **Jakarta—Bandung** | Antara dua nama tempat bermakna 'sampai ke' wajib memakai `—`. |\n\nUji keterbacaan sisipan: jika bagian di dalam sepasang tanda pisah dihapus, kalimat utama tetap utuh secara gramatikal.",
+      "kunci_pembeda": "Tanda pisah (—) bekerja di tingkat antarklausa atau rentang batas dengan ukuran lebih panjang dan ditulis rapat tanpa spasi di kedua sisinya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Membedakan Konteks Pemakaian Tanda Hubung (-) vs Tanda Pisah (—) dalam Kalimat",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Bandara Internasional Soekarno-Hatta melayani penerbangan domestik rute Tangerang—Makassar selama libur Natal 2025—2026.",
+      "bedah_pola_markdown": "Kesalahan paling sering muncul ketika keduanya hadir dalam satu kalimat atau menghubungkan dua nama diri dengan fungsi makna yang berbeda.\n\n| Konteks Kalimat | Salah (Before) | Benar (After) | Pembeda Makna & Fungsi |\n| :--- | :--- | :--- | :--- |\n| Nama dwitunggal / gabungan | Bandara **Soekarno—Hatta** | Bandara **Soekarno-Hatta** | Merangkai satu kesatuan nama diri (bukan rute 'dari Soekarno ke Hatta'), gunakan `-`. |\n| Rute perjalanan / jarak | Rute penerbangan **Tangerang-Makassar** | Rute penerbangan **Tangerang—Makassar** | Bermakna arah batas 'sampai ke', wajib menggunakan tanda pisah `—`. |\n| Aposisi penjelas vs imbuhan | Riset **se—Asia** itu**—yang didanai PBB—**selesai. | Riset **se-Asia** itu**—yang didanai PBB—**selesai. | `se-Asia` adalah ikatan morfologis (`-`), sedangkan aposisi penjelas diapit `—`. |\n\nGunakan tes substitusi kata: jika tanda baca dapat diganti kata *sampai* atau *yaitu*, gunakan tanda pisah (`—`); jika menyatukan satu kata/nama majemuk, gunakan tanda hubung (`-`).",
+      "kunci_pembeda": "Tanda hubung (-) menyatukan unsur yang melebur menjadi satu entitas kata atau nama, sedangkan tanda pisah (—) membatasi rentang jarak/waktu atau menyisipkan penjelasan luar.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan paragraf berikut!\n\n(1) Kementerian Pendidikan mulai mengevaluasi program revitalisasi perpustakaan sekolah se-Nusantara yang memasuki tahun ke-4. (2) Evaluasi tersebut mencakup: ketersediaan koleksi buku digital, kecepatan akses internet, dan pelatihan pustakawan. (3) Data lapangan menunjukkan bahwa tiga provinsi di wilayah timur memerlukan dukungan perangkat keras tambahan: Papua Barat, Maluku, dan Nusa Tenggara Timur. (4) Seluruh laporan hasil pemantauan dikirimkan secara berkala oleh koordinator daerah.\n\nPenggunaan tanda baca yang **tidak tepat** terdapat pada kalimat nomor ....",
+      "opsi_jawaban": [
+        "A. (1)",
+        "B. (2)",
+        "C. (3)",
+        "D. (1) dan (3)",
+        "E. (2) dan (4)"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "1. Kalimat (1) benar: `se-Nusantara` (unsur kecil + kapital) dan `ke-4` (awalan + angka) memakai tanda hubung (-).\n2. Kalimat (2) **salah**: tanda titik dua (:) diletakkan langsung setelah verba transitif *mencakup*, padahal rincian berfungsi sebagai pelengkap langsung tanpa klausa lengkap sebelumnya.\n3. Kalimat (3) benar: klausa utama sudah lengkap pada objek *perangkat keras tambahan* sebelum diperinci.\n4. Kalimat (4) tidak memuat kesalahan tanda baca.\nJadi, jawaban yang tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manakah kalimat berikut yang menggunakan tanda hubung (`-`) dan tanda pisah (`—`) secara tepat sesuai kaidah EYD Edisi V?",
+      "opsi_jawaban": [
+        "A. Proyek jalan tol Trans-Sumatra ruas Palembang-Bengkulu ditargetkan rampung pada periode 2024-2026.",
+        "B. Proyek jalan tol Trans-Sumatra ruas Palembang—Bengkulu ditargetkan rampung pada periode 2024—2026.",
+        "C. Proyek jalan tol Trans—Sumatra ruas Palembang—Bengkulu ditargetkan rampung pada periode 2024—2026.",
+        "D. Proyek jalan tol Trans-Sumatra ruas Palembang — Bengkulu ditargetkan rampung pada periode 2024 — 2026.",
+        "E. Proyek jalan tol Trans-Sumatra ruas Palembang—Bengkulu—yang sempat tertunda — ditargetkan rampung tahun ini."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "1. Unsur terikat huruf kecil + kapital (`Trans-Sumatra`) wajib memakai tanda hubung (-), sehingga opsi C salah.\n2. Hubungan dua tempat bermakna 'sampai ke' (`Palembang—Bengkulu`) dan rentang tahun bermakna 'sampai dengan' (`2024—2026`) wajib memakai tanda pisah (—) tanpa spasi, sehingga opsi A dan D salah.\n3. Opsi E salah karena menyisipkan spasi sebelum tanda pisah penutup (`tertunda — ditargetkan`).\nJadi, jawaban yang benar adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut!\n\n(1) Riset perubahan iklim global mencatat lonjakan suhu permukaan laut sepanjang dekade 2015—2025. (2) Fenomena pemanasan ekstrem tersebut—yang berdampak langsung pada pemutihan terumbu karang—teramati paling parah di perairan tropis. (3) Para ahli kelautan merekomendasikan tiga langkah mitigasi mendesak: pengurangan emisi karbon industri, perluasan kawasan konservasi laut, dan restorasi ekosistem pesisir. (4) Seluruh negara pesisir di kawasan Asia-Pasifik diharapkan menyepakati protokol baru ini.\n\nBerdasarkan teks di atas, jika terdapat kalimat yang mengandung **kesalahan** penggunaan tanda titik dua, tanda hubung, atau tanda pisah, tuliskan nomor kalimatnya; jika seluruh kalimat sudah benar, tuliskan angka **0**. *(Tuliskan jawaban hanya berupa satu angka)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "0",
+      "bedah_cepat_markdown": "1. Kalimat (1) benar: rentang tahun `2015—2025` memakai tanda pisah (—) tanpa spasi.\n2. Kalimat (2) benar: keterangan sisipan diapit tanda pisah (—) tanpa spasi di kedua sisi.\n3. Kalimat (3) benar: titik dua (:) hadir setelah klausa lengkap berobjek *tiga langkah mitigasi mendesak*.\n4. Kalimat (4) benar: gabungan nama kawasan `Asia-Pasifik` memakai tanda hubung (-).\nKarena seluruh kalimat sudah sesuai EYD V, isian yang tepat adalah **0**.",
+      "visual": null
+    }
+  ]
+}

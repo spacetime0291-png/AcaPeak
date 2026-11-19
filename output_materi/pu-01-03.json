@@ -1,0 +1,142 @@
+{
+  "kode_subbab": "pu-01-03",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 1: Penalaran Induktif",
+  "judul_subbab": "Hubungan Kausalitas (Sebab-Akibat)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Data kota mencatat penjualan es krim dan angka kasus tenggelam di kolam renang sama-sama melonjak tajam setiap bulan Juli. Apakah konsumsi es krim menyebabkan orang tenggelam?",
+      "opsi_cepat": [
+        "Ya, datanya berkorelasi positif",
+        "Tidak, ada faktor ketiga (cuaca panas)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Dua kejadian yang naik bersamaan belum tentu saling menyebabkan (korelasi $\\neq$ kausalitas). Cuaca musim panas merupakan penyebab bersama (common cause) yang memicu orang membeli es krim sekaligus berenang."
+    },
+    "konsep_inti_markdown": "**Hubungan kausalitas** menguji apakah peristiwa $A$ benar-benar memicu peristiwa $B$ ($A \\rightarrow B$). Tidak semua kejadian yang berurutan atau bersamaan bersifat sebab-akibat.\n\n* **Syarat Kausalitas:** Sebab mendahului akibat secara waktu, terdapat mekanisme logis, dan bebas dari variabel perancu.\n* **Format Khas UTBK:** Menilai hubungan dua pernyataan (A dan B) sebagai sebab-akibat tunggal, akibat dari sebab yang sama, atau tidak berhubungan.\n* **Skala Kepastian:** Klaim kausalitas induktif tanpa eksperimen terkontrol maksimal bernilai **Mungkin Benar**.",
+    "radar_jebakan_utbk": [
+      "Menganggap dua peristiwa yang terjadi berurutan atau berkorelasi otomatis memiliki hubungan sebab-akibat langsung (Post Hoc / Cum Hoc).",
+      "Tertukar arah panah kausalitas antara penyebab utama dengan akibat yang ditimbulkan (Reverse Causation) saat membaca opsi A dan B."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Format Baku 5 Opsi Hubungan Pernyataan (A dan B Saling Berhubungan/Tidak)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pernyataan A: Curah hujan ekstrem mengguyur wilayah hulu sungai selama tiga hari berturut-turut sehingga debit air melampaui kapasitas tanggul. Pernyataan B: Harga komoditas sayuran daun di pasar induk meningkat tajam akibat pasokan dari sentra pertanian terhambat genangan banjir.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Hujan ekstrem di hulu memicu luapan tanggul; banjir menghambat distribusi sayur sehingga harga naik) $\\rightarrow$ Asumsi Jembatan (Luapan air sungai menggenangi jalur distribusi pertanian menuju pasar induk) $\\rightarrow$ Simpulan (Pernyataan A merupakan penyebab langsung atau tidak langsung bagi Pernyataan B).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Hujan hulu meluapkan air; banjir menaikkan harga sayur | Seluruh komoditas pangan pasti mengalami kelangkaan |\n| Arah pengaruh bergerak kronologis dari A ke B | Kenaikan harga sayur akan berlangsung permanen |\n\n**Uji Kepastian:** Petakan arah panah kausalitas ($A \\rightarrow B$ atau $B \\rightarrow A$). Jika keduanya dipicu faktor eksternal berbeda, pilih *akibat dari dua penyebab tidak sama*. Karena genangan banjir dari luapan A memicu hambatan pasokan pada B, hubungan $A \\rightarrow B$ berstatus **Mungkin Benar**.",
+      "kunci_pembeda": "Menguji hubungan dua pernyataan terpisah apakah membentuk sebab-akibat langsung, dua akibat dari satu sebab, atau dua peristiwa independen.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Kausalitas Berantai (Chain Causation: A -> B -> C)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kenaikan tarif impor bahan baku semikonduktor mendorong lonjakan biaya produksi perakitan gawai domestik ($A \\rightarrow B$). Akibatnya, produsen menaikkan harga jual ponsel pintar di pasar ritel sehingga daya beli konsumen kelas menengah menurun ($B \\rightarrow C$).",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Tarif impor naik $\\rightarrow$ biaya produksi melonjak $\\rightarrow$ harga ritel naik $\\rightarrow$ daya beli turun) $\\rightarrow$ Asumsi Jembatan (Produsen membebankan kenaikan biaya produksi kepada konsumen akhir tanpa subsidi internal) $\\rightarrow$ Simpulan (Kenaikan tarif impor berdampak pada penurunan daya beli konsumen).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Mata rantai berjalan berurutan dari A ke B lalu ke C | Penurunan daya beli pasti membuat produsen bangkrut |\n| Setiap tautan memiliki mekanisme ekonomi yang jelas | Konsumen beralih membeli ponsel bekas seluruhnya |\n\n**Uji Kepastian:** Pastikan seluruh mata rantai penghubung tetap utuh tanpa terputus variabel penahan. Dalam kausalitas berantai, hubungan ujung ke ujung ($A \\rightarrow C$) bernilai **Mungkin Benar**, sedangkan klaim terputusnya rantai tanpa intervensi baru bernilai **Pasti Salah** karena menyalahi premis.",
+      "kunci_pembeda": "Menghubungkan sebab awal (A) dengan akibat akhir (C) melalui satu atau lebih variabel perantara (B) secara transitif.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Jebakan Korelasi vs Kausalitas (Cum Hoc Ergo Propter Hoc & Post Hoc)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Setelah sekolah memasang papan tulis interaktif baru pada awal semester, nilai rata-rata ujian matematika siswa meningkat $12\\%$ dibanding semester sebelumnya. Kepala sekolah menyimpulkan bahwa perangkat papan tulis tersebut menjadi penyebab utama kenaikan nilai siswa.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pemasangan papan tulis diikuti kenaikan nilai ujian $12\\%$) $\\rightarrow$ Asumsi Jembatan (Tidak ada faktor lain seperti perubahan metode mengajar atau soal yang memengaruhi nilai) $\\rightarrow$ Simpulan Cacat (Papan tulis menjadi penyebab utama kenaikan nilai).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Pemasangan alat mendahului kenaikan nilai (*Post Hoc*) | Alat baru terbukti secara kausal menaikkan nilai |\n| Kedua peristiwa terjadi pada semester yang sama (*Cum Hoc*) | Sekolah lain pasti mengalami kenaikan serupa jika memasangnya |\n\n**Uji Kepastian:** Waspadai kesesatan *Post Hoc* (urutan waktu dianggap sebab-akibat) dan *Cum Hoc* (kejadian bersamaan dianggap saling memicu). Tanpa kontrol variabel lain, klaim kausal kepala sekolah hanya berstatus **Mungkin Benar** dan langsung **diperlemah** bila diketahui guru baru saja menerapkan kelas tambahan intensif.",
+      "kunci_pembeda": "Membongkar kelirunya penyimpulan sebab-akibat yang hanya bersandar pada kedekatan waktu (Post Hoc) atau kemunculan bersamaan (Cum Hoc).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Identifikasi Faktor Penyebab Bersama (Common Cause / Variabel Perancu)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Data Dinas Kesehatan menunjukkan bahwa wilayah permukiman yang memiliki banyak gerai apotek juga mencatat angka kasus infeksi saluran pernapasan akut (ISPA) yang tinggi. Pengamat keliru menyimpulkan bahwa keberadaan apotek memicu tingginya kasus ISPA warga setempat.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Kepadatan gerai apotek berkorelasi positif dengan tingginya kasus ISPA) $\\rightarrow$ Asumsi Jembatan (Apotek dan ISPA sama-sama dipicu oleh faktor ketiga, yakni kepadatan penduduk atau polusi udara perkotaan) $\\rightarrow$ Simpulan (Keduanya merupakan akibat dari satu penyebab bersama $Z$).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Jumlah apotek dan kasus ISPA sama-sama tinggi | Keberadaan apotek menyebabkan warga terserang ISPA |\n| Kedua fenomena muncul di wilayah yang sama | Penutupan apotek akan menurunkan angka kasus ISPA |\n\n**Uji Kepastian:** Cari variabel ketiga ($Z$) yang secara logis memicu $A$ maupun $B$ secara bersamaan ($Z \\rightarrow A$ dan $Z \\rightarrow B$). Klaim bahwa apotek memicu ISPA berstatus **Mungkin Salah**, sedangkan simpulan bahwa keduanya dipicu oleh kepadatan populasi atau tingkat polusi udara tinggi berstatus **Mungkin Benar** dan **memperlemah** klaim kausal langsung.",
+      "kunci_pembeda": "Menemukan variabel perancu (Z) yang menjadi induk penyebab bagi dua fenomena (A dan B) yang tampak saling berkaitan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Kausalitas Terbalik (Reverse Causation: Akibat Diklaim Sebagai Sebab)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Survei gaya hidup mencatat bahwa individu yang rutin mengonsumsi minuman berenergi setiap malam cenderung memiliki tingkat kelelahan kronis lebih tinggi. Peneliti menyimpulkan bahwa minuman berenergi merupakan pemicu utama terjadinya kelelahan kronis pada pekerja.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Konsumsi rutin minuman berenergi berkorelasi dengan tingginya kelelahan kronis) $\\rightarrow$ Asumsi Jembatan (Konsumsi minuman mendahului kelelahan, bukan sebaliknya) $\\rightarrow$ Simpulan Cacat (Minuman berenergi menyebabkan kelelahan kronis).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Peminum minuman berenergi memiliki tingkat kelelahan tinggi | Minuman berenergi adalah penyebab utama kelelahan |\n| Data diambil melalui survei korelasional satu waktu | Menghentikan konsumsi minuman otomatis menghilangkan lelah |\n\n**Uji Kepastian:** Uji arah sebaliknya ($B \\rightarrow A$): pekerja yang sudah mengalami kelelahan kronis akibat lembur justru mengonsumsi minuman berenergi agar tetap terjaga. Karena arah kausalitas berpeluang terbalik, klaim peneliti berstatus **Mungkin Salah** dan **diperlemah** secara kuat bila survei lanjutan menunjukkan responden baru mulai mengonsumsi minuman tersebut setelah mengalami gangguan tidur berat.",
+      "kunci_pembeda": "Membalik arah panah sebab-akibat (B -> A) ketika fenomena yang diklaim sebagai akibat ternyata merupakan pemicu awal.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 6,
+      "nama_variasi": "Analisis Penyebab Utama vs Penyebab Tambahan dalam Wacana Eksperimen",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Dalam uji coba pertanian, lahan A diberi pupuk hayati dan irigasi tetes sehingga panen naik $40\\%$, sedangkan lahan B hanya diberi irigasi tetes dan panen naik $32\\%$. Peneliti menyimpulkan bahwa irigasi tetes berperan sebagai penyebab utama lonjakan panen.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Irigasi tetes tunggal menaikkan panen $32\\%$; tambahan pupuk hayati hanya menambah $8\\%$ menjadi $40\\%$) $\\rightarrow$ Asumsi Jembatan (Kontribusi kuantitatif yang jauh lebih dominan menunjukkan faktor penyebab utama) $\\rightarrow$ Simpulan (Irigasi tetes merupakan penyebab utama, sedangkan pupuk hayati adalah penyebab tambahan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Irigasi tetes berkontribusi $32\\%$ dari total kenaikan $40\\%$ | Pupuk hayati tidak memiliki manfaat sama sekali |\n| Pupuk hayati memberi kontribusi tambahan sebesar $8\\%$ | Kombinasi keduanya pasti cocok untuk semua jenis tanaman |\n\n**Uji Kepastian:** Bandingkan selisih dampak antara kelompok kontrol dan perlakuan tunggal. Klaim bahwa pupuk hayati tidak bermanfaat bernilai **Pasti Salah** karena terbukti menyumbang kenaikan $8\\%$, sedangkan penetapan irigasi tetes sebagai faktor dominan berstatus **Mungkin Benar** pada jenis tanaman uji.",
+      "kunci_pembeda": "Memisahkan bobot pengaruh faktor pemicu utama dari faktor akselerator tambahan melalui perbandingan selisih kelompok uji.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan dua pernyataan berikut!\n\n* **Pernyataan A:** Tingkat penjualan jas hujan dan payung di kota pesisir meningkat sebesar $65\\%$ selama bulan Januari.\n* **Pernyataan B:** Jumlah keluhan kerusakan jalan berlubang di ruas protokol kota pesisir melonjak dua kali lipat pada bulan yang sama.\n\nManakah pilihan berikut yang PALING TEPAT menggambarkan hubungan antara Pernyataan A dan Pernyataan B?",
+      "opsi_jawaban": [
+        "A. Pernyataan A adalah penyebab dan Pernyataan B adalah akibat.",
+        "B. Pernyataan B adalah penyebab dan Pernyataan A adalah akibat.",
+        "C. Pernyataan A dan B adalah penyebab, namun tidak saling berhubungan.",
+        "D. Pernyataan A dan B adalah akibat dari dua penyebab yang tidak sama.",
+        "E. Pernyataan A dan B adalah akibat dari suatu penyebab yang sama."
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "Penjualan jas hujan yang melonjak (**Pernyataan A**) tidak menyebabkan jalan berlubang (**Pernyataan B**), dan sebaliknya. Keduanya muncul bersamaan karena dipicu oleh satu faktor penyebab bersama (*common cause*), yaitu tingginya intensitas curah hujan musim penghujan di kota pesisir tersebut. Oleh karena itu, kedua pernyataan merupakan akibat dari suatu penyebab yang sama (**Opsi E** benar). **Opsi A** dan **B** keliru menentukan arah kausalitas, sedangkan **Opsi C** dan **D** mengabaikan induk penyebab bersama.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Kemarau panjang menurunkan debit air waduk pembangkit listrik tenaga air sehingga pasokan listrik ke kawasan industri berkurang. Penurunan pasokan listrik tersebut memaksa pabrik membatasi jam operasional mesin dan menurunkan volume produksi harian. Berdasarkan rantai kausalitas tersebut, pernyataan: *'Kemarau panjang tidak memiliki pengaruh apa pun terhadap volume produksi harian pabrik di kawasan industri'* bernilai ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Teks membentuk kausalitas berantai yang utuh: kemarau panjang ($A$) $\\rightarrow$ debit waduk dan pasokan listrik turun ($B$) $\\rightarrow$ pembatasan jam mesin dan penurunan produksi pabrik ($C$). Klaim bahwa kemarau panjang *tidak memiliki pengaruh apa pun* terhadap volume produksi bertentangan langsung dengan mata rantai hubungan sebab-akibat yang dinyatakan secara eksplisit dalam premis sehingga bernilai **Pasti Salah** (**Opsi C**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Sebuah studi observasional menemukan bahwa mahasiswa yang sering mengonsumsi suplemen vitamin konsentrasi memiliki tingkat stres akademik yang jauh lebih tinggi dibandingkan mahasiswa yang tidak mengonsumsinya. Tim peneliti menyimpulkan bahwa konsumsi suplemen vitamin konsentrasi menyebabkan munculnya stres akademik berat pada mahasiswa. Manakah temuan berikut yang PALING MENUNJUKKAN kelemahan simpulan peneliti tersebut?",
+      "opsi_jawaban": [
+        "A. Sebagian besar suplemen vitamin konsentrasi dijual bebas di apotek sekitar kampus dengan harga terjangkau.",
+        "B. Mahasiswa yang telah mengalami tekanan ujian dan stres akademik tinggi justru terdorong membeli suplemen agar tetap fokus belajar.",
+        "C. Mahasiswa yang tidak mengonsumsi suplemen vitamin cenderung memiliki waktu tidur malam yang lebih teratur.",
+        "D. Kandungan vitamin B kompleks di dalam suplemen terbukti aman dikonsumsi sesuai dosis harian yang dianjurkan.",
+        "E. Tingkat stres akademik mahasiswa cenderung meningkat tajam menjelang pekan ujian akhir semester di seluruh fakultas."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Peneliti terjebak pada **kausalitas terbalik** (*reverse causation*) dengan menganggap suplemen ($A$) sebagai penyebab stres ($B$). **Opsi B** membongkar arah hubungan sebenarnya ($B \\rightarrow A$): mahasiswa yang sudah tertekan oleh beban ujian justru mencari suplemen untuk bertahan belajar, sehingga stres merupakan pemicu awal konsumsi suplemen. **Opsi A** dan **D** membahas harga serta keamanan kandungan, **Opsi C** membandingkan pola tidur kelompok lain, dan **Opsi E** hanya menyebut waktu munculnya stres tanpa membantah arah kausalitas.",
+      "visual": null
+    }
+  ]
+}

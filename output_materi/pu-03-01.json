@@ -1,0 +1,133 @@
+{
+  "kode_subbab": "pu-03-01",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 3: Penalaran Kuantitatif",
+  "judul_subbab": "Pola Bilangan dan Deret",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Perhatikan barisan berikut: $2, 3, 5, 8, 13, \\dots$ Banyak peserta langsung menebak suku berikutnya adalah $19$ karena mengira selisihnya naik $1, 2, 3, 5$. Apakah benar suku berikutnya $19$?",
+      "opsi_cepat": [
+        "Ya, selisihnya bertambah terus",
+        "Salah, polanya penjumlahan dua suku sebelumnya (21)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Selisih $1, 2, 3, 5$ tidak membentuk pola aritmetika maupun geometri yang teratur. Barisan ini mengikuti pola Fibonacci ($2+3=5$, $3+5=8$, $5+8=13$), sehingga suku berikutnya adalah $8 + 13 = 21$."
+    },
+    "konsep_inti_markdown": "**Pola bilangan PU UTBK** menguji kecepatan menemukan aturan perubahan antarsuku tanpa rumus hafalan rumit:\n\n* **Cek Selisih Berjenjang:** Jika selisih tingkat $1$ belum tetap, cek selisih tingkat $2$.\n* **Cek Loncat Larik:** Jika angka naik-turun tidak beraturan, pisahkan suku ganjil dan suku genap.\n* **Cek Operasi Campuran & Fibonacci:** Uji kombinasi $\\times, +, -, \\div$ berulang atau penjumlahan dua suku sebelumnya.\n* **Estimasi Cepat:** Manfaatkan digit satuan dan kelipatan untuk eliminasi opsi di bawah $60$ detik.",
+    "radar_jebakan_utbk": [
+      "Memaksakan pola satu larik pada barisan yang naik-turun tajam, padahal barisan tersebut terdiri atas dua larik selang-seling yang independen.",
+      "Menghitung nilai eksak bilangan besar atau pecahan rumit secara manual tanpa mengecek digit satuan atau menyamakan penyebut terlebih dahulu."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Barisan Bertingkat (Selisih Tingkat 1 dan Tingkat 2)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan dua suku berikutnya dari barisan bilangan: $4, 7, 13, 22, 34, \\dots, \\dots$",
+      "bedah_pola_markdown": "**Pola Kunci:** Selisih antarsuku belum tetap pada tingkat pertama, tetapi membentuk pola aritmetika teratur pada tingkat kedua ($+3$).\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Cari selisih tingkat $1$:** Dari barisan $4, 7, 13, 22, 34$, diperoleh beda berturut-turut $+3, +6, +9, +12$.\n2. **Kunci selisih tingkat $2$:** Setiap kenaikan beda selalu bertambah $+3$ secara konstan tanpa perubahan arah.\n3. **Lanjutkan penjumlahan manual tanpa rumus $U_n$:**\n   * Beda berikutnya adalah $12 + 3 = +15$, sehingga suku ke-$6$ bernilai $34 + 15 = 49$.\n   * Beda selanjutnya adalah $15 + 3 = +18$, sehingga suku ke-$7$ bernilai $49 + 18 = 67$.\n4. **Trik Eliminasi:** Hitung digit satuan suku ke-$6$ terlebih dahulu ($4 + 5 = 9$), lalu segera coret seluruh opsi jawaban yang tidak berakhiran angka $9$.",
+      "kunci_pembeda": "Perubahan nilai bergerak searah dengan kenaikan atau penurunan selisih yang bertambah tetap pada lapisan kedua.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Barisan Larik Ganda/Selang-Seling (Alternating Interleaved Series)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan dua suku berikutnya dari barisan berikut: $5, 40, 10, 36, 20, 32, 40, \\dots, \\dots$",
+      "bedah_pola_markdown": "**Pola Kunci:** Barisan panjang ($\\ge 7$ suku) dengan pergerakan naik-turun tajam merupakan gabungan dua sub-barisan independen yang disusun selang-seling.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Pisahkan suku posisi ganjil (Larik $1$):** Ambil suku ke-$1, 3, 5, 7$, yakni $5, 10, 20, 40$. Terlihat jelas rasio pengalinya adalah $\\times 2$ secara konstan.\n2. **Pisahkan suku posisi genap (Larik $2$):** Ambil suku ke-$2, 4, 6$, yakni $40, 36, 32$. Terlihat jelas selisih pengurangnya adalah $-4$ secara konstan.\n3. **Hitung masing-masing ujung larik:**\n   * Suku ke-$8$ mengikuti Larik $2$: $32 - 4 = 28$.\n   * Suku ke-$9$ mengikuti Larik $1$: $40 \\times 2 = 80$.\n4. **Trik Eliminasi:** Tentukan satu larik termudah terlebih dahulu (misalnya $28$), lalu coret semua pilihan yang tidak menempatkan $28$ di posisi pertama.",
+      "kunci_pembeda": "Terdapat minimal tujuh suku dengan arah naik-turun bergantian karena dua aturan operasi berjalan paralel pada posisi ganjil dan genap.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pola Operasi Campuran Berulang ($\\times a, +b, \\div c$) dan Fibonacci Modifikasi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan suku berikutnya dari dua pola berikut: Pola A ($3, 6, 8, 16, 18, 36, \\dots$) dan Pola B ($2, 3, 6, 10, 17, \\dots$).",
+      "bedah_pola_markdown": "**Pola Kunci:** Siklus operasi aritmetika berulang secara periodik (Pola A) atau suku baru dibentuk dari jumlah dua suku sebelumnya ditambah konstanta tetap (Pola B).\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Bedah siklus pada Pola A:** Uji hubungan berurutan dari kiri: $3 \\xrightarrow{\\times 2} 6 \\xrightarrow{+2} 8 \\xrightarrow{\\times 2} 16 \\xrightarrow{+2} 18 \\xrightarrow{\\times 2} 36$. Karena siklusnya berulang $(\\times 2, +2)$, suku berikutnya adalah $36 + 2 = 38$.\n2. **Uji akumulasi pada Pola B:** Cek jumlah dua suku berdekatan: $2 + 3 = 5$ (kurang $1$ dari $6$), $3 + 6 = 9$ (kurang $1$ dari $10$), dan $6 + 10 = 16$ (kurang $1$ dari $17$).\n3. **Hitung suku lanjutan Pola B:** Terapkan aturan $U_n = U_{n-1} + U_{n-2} + 1$, sehingga diperoleh $10 + 17 + 1 = 28$.\n4. **Trik Eliminasi:** Periksa kelipatan genap-ganjil untuk langsung menggugurkan opsi yang melanggar paritas operasi.",
+      "kunci_pembeda": "Pola perubahan tidak hanya bergantung pada selisih konstan, melainkan siklus kombinasi kali-tambah atau penjumlahan antarsuku berdekatan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Pola Bilangan Pecahan, Desimal, dan Eksponen Sederhana",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Tentukan suku berikutnya dari barisan: $\\frac{1}{2}, \\frac{3}{4}, \\frac{5}{8}, \\frac{7}{16}, \\dots$ dan barisan desimal: $0,25; 0,5; 1,25; 2,75; \\dots$",
+      "bedah_pola_markdown": "**Pola Kunci:** Pisahkan analisis pembilang dan penyebut pada pecahan, atau ubah desimal menjadi pecahan berpenyebut sama agar pola bilangan bulatnya langsung terlihat.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Pecah pembilang dan penyebut:** Pada $\\frac{1}{2}, \\frac{3}{4}, \\frac{5}{8}, \\frac{7}{16}$, pembilang naik $+2$ ($1, 3, 5, 7 \\rightarrow 9$), sedangkan penyebut mengikuti pangkat dua ($2^1, 2^2, 2^3, 2^4 \\rightarrow 2^5 = 32$). Hasilnya adalah $\\frac{9}{32}$.\n2. **Konversi desimal ke kelipatan perempat:** Ubah $0,25; 0,5; 1,25; 2,75$ menjadi $\\frac{1}{4}, \\frac{2}{4}, \\frac{5}{4}, \\frac{11}{4}$.\n3. **Amati selisih pembilang:** Pembilang $1, 2, 5, 11$ memiliki selisih $+1, +3, +6$ (selisih tingkat kedua $+2, +3 \\rightarrow +4$).\n4. **Tentukan suku kelima:** Selisih berikutnya $+10$, sehingga pembilang menjadi $11 + 10 = 21$ atau $\\frac{21}{4} = 5,25$.",
+      "kunci_pembeda": "Menyamakan penyebut atau memisahkan laju pembilang dan penyebut mengubah soal pecahan rumit menjadi deret bilangan bulat biasa.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Penerapan Barisan Kontekstual (Prediksi Produksi/Populasi Periode ke-$n$)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Data produksi panel surya sebuah pabrik mencatat hasil pada triwulan I hingga IV berturut-turut sebesar $120$, $150$, $190$, dan $240$ unit. Jika tren kenaikan konsisten, tentukan prediksi produksi pada triwulan VI.",
+      "bedah_pola_markdown": "**Pola Kunci:** Terjemahkan data produksi atau populasi per periode menjadi barisan bilangan berurutan, lalu proyeksikan secara bertahap hingga periode yang ditanyakan.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Susun data per periode:** Triwulan I $= 120$, II $= 150$, III $= 190$, IV $= 240$.\n2. **Hitung laju kenaikan tiap periode:** Selisih antar-triwulan adalah $+30$, $+40$, dan $+50$ unit (kenaikan konsisten $+10$ unit per periode).\n3. **Lanjutkan proyeksi bertahap ke periode tujuan:**\n   * Triwulan V: $240 + (50 + 10) = 240 + 60 = 300$ unit.\n   * Triwulan VI: $300 + (60 + 10) = 300 + 70 = 370$ unit.\n4. **Aproksimasi & Eliminasi:** Nilai triwulan VI wajib melampaui $240 + 50 + 50 = 340$ unit; segera coret opsi yang berada di bawah $340$.",
+      "kunci_pembeda": "Mengubah narasi pertumbuhan berkala menjadi barisan bertingkat sederhana untuk memprediksi capaian beberapa periode ke depan.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan barisan bilangan berikut:\n\n$$3, 50, 6, 48, 11, 44, 18, 38, x, y$$\n\nNilai yang tepat untuk menggantikan $x$ dan $y$ secara berturut-turut adalah ....",
+      "opsi_jawaban": [
+        "A. $25$ dan $30$",
+        "B. $27$ dan $30$",
+        "C. $27$ dan $32$",
+        "D. $29$ dan $30$",
+        "E. $29$ dan $32$"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pisahkan barisan menjadi dua larik selang-seling. **Larik ganjil** ($3, 6, 11, 18, x$) memiliki selisih bertingkat $+3, +5, +7$, sehingga beda berikutnya adalah $+9$ dan $x = 18 + 9 = 27$ (coret **A**, **D**, dan **E**). **Larik genap** ($50, 48, 44, 38, y$) memiliki selisih bertingkat $-2, -4, -6$, sehingga beda berikutnya adalah $-8$ dan $y = 38 - 8 = 30$ (coret **C**). Jadi, pasangan yang tepat adalah **$27$ dan $30$** (**B**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diketahui barisan bilangan pecahan mengikuti pola operasi campuran berulang:\n\n$$\\frac{1}{4}, \\frac{1}{2}, \\frac{3}{4}, \\frac{3}{2}, \\frac{7}{4}, a, b$$\n\nBerdasarkan pola barisan tersebut, perhatikan kuantitas $P$ dan $Q$ berikut:\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| Nilai $b - a$ | $\\frac{1}{4}$ |\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$ berdasarkan informasi yang diberikan?",
+      "opsi_jawaban": [
+        "A. Kuantitas $P$ lebih besar daripada $Q$",
+        "B. Kuantitas $Q$ lebih besar daripada $P$",
+        "C. Kuantitas $P$ sama dengan $Q$",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Samakan seluruh penyebut menjadi perempat: $\\frac{1}{4}, \\frac{2}{4}, \\frac{3}{4}, \\frac{6}{4}, \\frac{7}{4}, a, b$. Pola pembilangnya mengikuti siklus operasi campuran berulang $(\\times 2, +1)$: $1 \\xrightarrow{\\times 2} 2 \\xrightarrow{+1} 3 \\xrightarrow{\\times 2} 6 \\xrightarrow{+1} 7$. Maka, pembilang $a = 7 \\times 2 = 14$ ($a = \\frac{14}{4}$) dan pembilang $b = 14 + 1 = 15$ ($b = \\frac{15}{4}$). Diperoleh $P = b - a = \\frac{15}{4} - \\frac{14}{4} = \\frac{1}{4}$, sehingga **$P = Q$** (**C**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Dinas Perindustrian mencatat jumlah unit kendaraan listrik yang dirakit sebuah pabrik pada lima bulan pertama tahun berjalan sebagai berikut:\n\n| Bulan | Jan | Feb | Mar | Apr | Mei |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| **Produksi (unit)** | $210$ | $225$ | $245$ | $270$ | $300$ |\n\nApabila pola pertumbuhan produksi bulanan terus berlanjut secara konsisten, pernyataan manakah yang **PASTI BENAR**?",
+      "opsi_jawaban": [
+        "A. Produksi pada bulan Juni mencapai $330$ unit.",
+        "B. Kenaikan produksi pada bulan Juli dibandingkan bulan Juni adalah $35$ unit.",
+        "C. Produksi pada bulan Agustus melampaui $400$ unit.",
+        "D. Total produksi selama bulan Juni dan Juli adalah $700$ unit.",
+        "E. Produksi pada bulan Juli tepat dua kali lipat produksi bulan Januari."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Selisih produksi bulanan dari Januari hingga Mei adalah $+15, +20, +25, +30$ unit (kenaikan tingkat kedua konstan $+5$ unit). Proyeksi berikutnya adalah: **Juni** $= 300 + 35 = 335$ unit (**A** salah), **Juli** $= 335 + 40 = 375$ unit (**B** dan **E** salah, total Juni–Juli $= 710$ unit sehingga **D** salah), dan **Agustus** $= 375 + 45 = 420$ unit. Karena $420 > 400$, pernyataan yang pasti benar adalah **C**.",
+      "visual": null
+    }
+  ]
+}

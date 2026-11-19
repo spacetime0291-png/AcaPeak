@@ -1,666 +1,134 @@
 {
-  "metadata": {
-    "id": "pu-1-1",
-    "subtest": "PU",
-    "chapter_num": 1,
-    "chapter_title": "Penalaran Induktif",
-    "subchapter_num": "1.1",
-    "subchapter_title": "Generalisasi",
-    "title": "Generalisasi",
-    "required_question_variations": [
-      "Simpulan Proporsi Sampel",
-      "Simpulan Tren Induktif Berkala",
-      "Evaluasi Kualitas Generalisasi (HOTS)"
+  "kode_subbab": "pu-01-01",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 1: Penalaran Induktif",
+  "judul_subbab": "Generalisasi",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Survei terhadap 60 mahasiswa di Kantin Fakultas Teknik menunjukkan $90\\%$ menyukai kopi hitam tanpa gula. Apakah simpulan 'Mayoritas mahasiswa di universitas tersebut menyukai kopi hitam tanpa gula' bernilai pasti benar?",
+      "opsi_cepat": [
+        "Pasti Benar",
+        "Mungkin Benar (Belum Tentu)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Sampel Kantin Fakultas Teknik belum tentu mewakili mahasiswa fakultas lain di seluruh universitas. Dalam generalisasi induktif UTBK, lompatan dari sampel terbatas ke populasi luas hanya menghasilkan peluang kebenaran (Mungkin Benar), bukan kepastian mutlak."
+    },
+    "konsep_inti_markdown": "**Generalisasi induktif** menarik simpulan umum berdasarkan sejumlah fakta atau sampel khusus. Karena premis tidak mencakup seluruh anggota populasi, kebenarannya bersifat **probabilistik**.\n\n* **Alur Logika:** $\\text{Fakta Spesifik } (S_1, S_2, \\dots, S_n) \\rightarrow \\text{Asumsi Representatif} \\rightarrow \\text{Simpulan Umum}$\n* **Syarat Sahih:** Ukuran sampel memadai, dipilih secara acak (tidak bias), dan bebas bukti penyangkal (*counter-example*).\n* **Skala Kepastian:** Simpulan generalisasi yang valid maksimal berstatus **Mungkin Benar**, tidak pernah **Pasti Benar**.",
+    "radar_jebakan_utbk": [
+      "Menganggap simpulan hasil generalisasi dari sampel terbatas berstatus Pasti Benar pada soal 5 Skala Kepastian.",
+      "Melompatkan batas objek dan kuantor dari 'sebagian sampel di lokasi X' menjadi 'semua populasi di seluruh wilayah'."
     ],
-    "requires_svg": false,
-    "updated_at": "2026-11-08"
+    "stimulus_utama_bersama": null,
+    "visual": null
   },
-  "content": {
-    "tactical_overview": "Generalisasi adalah metode penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data, contoh, atau fakta khusus yang telah diamati. Kunci utama dalam menyelesaikan soal generalisasi UTBK adalah mengingat bahwa kesimpulan induktif tidak pernah bernilai pasti seratus persen. Oleh karena itu, hindari pilihan jawaban yang memuat kata mutlak seperti \"semua\" atau \"pasti\", dan selalu utamakan kalimat simpulan yang terukur serta patuh pada batasan subjek atau wilayah yang dibahas di dalam wacana.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar\n\nGeneralisasi merupakan cara berpikir induktif untuk mengambil kesimpulan yang berlaku secara umum berdasarkan pengamatan terhadap sebagian contoh, fakta, atau data khusus. Di dalam ujian UTBK SNBT, soal tipe ini biasanya menyajikan teks wacana yang memuat laporan penelitian, hasil survei masyarakat, atau tren angka statistik dari suatu pengamatan berkala.\n\nAgar Anda dapat menjawab soal generalisasi dengan tepat, terdapat tiga kaidah pokok yang wajib Anda pahami:\n1. **Kesimpulan Tidak Pernah Bersifat Pasti 100% (Hindari Sikap Pukul Rata)**  \n   Karena penelitian induktif hanya mengamati sebagian sampel dan bukan seluruh populasi yang ada di dunia, kesimpulan yang ditarik tidak boleh bernilai mutlak. Kunci jawaban yang benar di UTBK hampir selalu menggunakan kata-kata yang menyatakan tingkat kemungkinan atau frekuensi yang terukur, seperti *\"sebagian besar\"*, *\"cenderung\"*, *\"kemungkinan besar\"*, atau *\"pada umumnya\"*. Hindarilah pilihan jawaban yang memukul rata seluruh keadaan.\n2. **Kesimpulan Wajib Terikat pada Batasan Ruang Lingkup Data**  \n   Ruang lingkup kesimpulan harus sepenuhnya setia pada kelompok subjek atau wilayah yang benar-benar diteliti di dalam wacana. Apabila teks wacana hanya mengamati *pengguna sepeda motor di wilayah Jakarta*, maka simpulan hanya berlaku untuk kelompok tersebut di Jakarta. Pilihan jawaban yang memperluas simpulan hingga ke tingkat *seluruh masyarakat Indonesia* merupakan kesalahan logika karena melompat keluar dari batasan data yang ada.\n3. **Adanya Pengecualian Menggugurkan Kata Bernada Mutlak**  \n   Apabila data di dalam wacana memperlihatkan adanya sebagian objek yang tidak mengalami hasil serupa, maka kesimpulan bernada mutlak otomatis salah. Sebagai contoh, jika dari 500 orang responden terdapat 40 orang yang tidak merasakan penghematan biaya, maka pilihan jawaban yang memuat kata mutlak seperti *\"semua\"*, *\"pasti\"*, atau *\"selalu\"* sudah pasti keliru secara logika.\n\n---\n\n# 2. Jebakan Pengecoh Khas UTBK\n\nPembuat soal UTBK sengaja merancang pilihan jawaban yang sekilas tampak meyakinkan, padahal mengandung cacat logika induktif. Tiga jebakan yang paling sering dijumpai meliputi:\n1. **Jebakan Kata Mutlak yang Berlebihan (*Overgeneralization*)**  \n   Pilihan jawaban menggunakan kata-kata bernilai ekstrem seperti *semua, seluruh, selalu, pasti,* atau *satu-satunya*. Jebakan ini bertujuan menguji apakah siswa teliti membaca data. Apabila teks wacana masih menyisakan persentase pengecualian atau datanya belum mencapai 100%, opsi yang memuat kata mutlak seperti ini harus langsung Anda eliminasi.\n2. **Jebakan Melompat Keluar dari Batasan Data (*Out of Scope*)**  \n   Pilihan jawaban memperluas ruang lingkup wilayah, subjek, atau objek penelitian secara sepihak. Sebagai contoh, teks wacana hanya meneliti satu kelompok di satu kota tertentu, tetapi pilihan jawaban menyimpulkan bahwa hal tersebut berlaku untuk seluruh masyarakat di berbagai wilayah lain.\n3. **Jebakan Menyimpulkan Kondisi Lawan yang Tidak Diteliti**  \n   Pilihan jawaban membuat kesimpulan spekulatif mengenai kondisi kebalikan yang sama sekali tidak dibahas di dalam wacana. Sebagai contoh, saat teks memaparkan bahwa pengguna motor listrik menikmati penghematan biaya, pilihan pengecoh justru menyatakan bahwa pengguna motor bensin pasti mengalami kerugian besar. Anda tidak boleh memilih kesimpulan yang faktanya tidak tertulis di dalam wacana.\n\n---\n\n# 3. Trik Cepat (15 Detik)\n\nSaat Anda menghadapi soal generalisasi di UTBK dengan waktu pengerjaan yang terbatas, gunakan urutan langkah taktis berikut untuk menemukan jawaban yang benar:\n1. **Kunci Subjek dan Batasan Wilayah Penelitian**  \n   Langkah pertama adalah mencermati siapa kelompok subjek yang diteliti dan di mana pengamatan tersebut dilakukan. Singkirkan segera semua pilihan jawaban yang memperluas cakupan ke wilayah atau kelompok lain di luar konteks wacana.\n2. **Eliminasi Pilihan yang Mengandung Kata Mutlak**  \n   Periksa pilihan ganda yang tersedia dan langsung coret opsi yang memuat kata-kata bernilai ekstrem, seperti *pasti, selalu, semua, seluruh, mutlak,* atau *satu-satunya cara*.\n3. **Pilih Jawaban yang Menggunakan Kata Terukur**  \n   Prioritaskan pilihan jawaban yang menggunakan kata-kata probabilitas yang ramah dan bijak, seperti *sebagian besar, cenderung, berpotensi,* atau *kemungkinan besar*. Kalimat yang terukur mencerminkan penalaran induktif yang sehat.\n4. **Cocokkan dengan Arah dan Proporsi Fakta Teks**  \n   Pastikan pernyataan pada pilihan yang tersisa benar-benar sejalan dengan data angka atau arah tren kenaikan di dalam wacana tanpa melebih-lebihkan fakta yang ada.\n\n---\n\n# 4. Kesimpulan\n\n- **Hakikat Materi:** Generalisasi adalah proses penarikan kesimpulan umum yang berlaku luas berdasarkan sekumpulan data atau contoh khusus yang terbatas.\n- **Taraf Kepastian:** Kesimpulan hasil generalisasi tidak pernah bersifat pasti seratus persen, melainkan selalu berada pada taraf kemungkinan yang terukur.\n- **Kepatuhan pada Data:** Ruang lingkup simpulan wajib terikat secara ketat pada batasan subjek, populasi, dan wilayah yang benar-benar tercantum di dalam teks wacana.\n- **Strategi Menjawab:** Segera eliminasi pilihan yang menggunakan kata-kata mutlak atau melompat keluar batasan konteks, lalu pilih kalimat simpulan yang terukur dan sejalan dengan fakta data.\n\n---\n\n# 5. Bedah Soal dan Variasi UTBK\n\nBerikut adalah bedah tiga variasi soal Generalisasi yang paling sering keluar di UTBK, lengkap dengan wacana soal asli, opsi pilihan ganda utuh, kunci jawaban, dan pembahasan logika secara terperinci:\n\n### Variasi 1: Simpulan Proporsi Sampel (Tipe Mayoritas)\n\n> **Konteks Wacana Soal:**  \n> Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.  \n>  \n> **Pertanyaan UTBK:** *Simpulan yang paling tepat berdasarkan teks tersebut adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%.  \n> - **B.** Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta.  \n> - **C.** Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan.  \n> - **D.** Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik.  \n> - **E.** Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Fakta Data:** Dari total 500 orang responden yang disurvei, sebanyak 460 orang atau 92% merasakan penghematan biaya bulanan secara nyata, sedangkan 40 orang lainnya atau 8% merasa biaya operasional mereka sama saja. Karena persentase 92% merupakan proporsi mayoritas yang sangat dominan namun belum mencapai 100%, maka penyebutan kuantor yang tepat secara kaidah logika induktif adalah *\"sebagian besar\"*.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Penggunaan kata *\"Semua\"* keliru karena terdapat 40 orang responden yang menyatakan tidak merasakan penghematan biaya, sehingga kesimpulan tidak boleh dipukul rata.\n  - **Pilihan B Salah:** Penggunaan kata *\"selalu\"* dan perluasan cakupan ke *\"seluruh masyarakat\"* membuat pernyataan ini berlebihan terhadap populasi umum yang tidak diteliti.\n  - **Pilihan D Salah:** Memberikan vonis kepastian yang mutlak dengan kata *\"pasti tidak cocok\"*, padahal wacana hanya mencatat alasan jarak tempuh harian mereka yang pendek tanpa menyatakan ketidakcocokan penggunaan motor listrik.\n  - **Pilihan E Salah:** Melompat keluar dari batasan wilayah penelitian dengan menyebutkan *\"masyarakat luar Jakarta\"*, padahal survei tersebut hanya dilakukan terhadap responden di wilayah Jakarta.\n- **Penerapan Trik Cepat (15 Detik):** Karena wacana secara tegas menyebutkan adanya 40 responden yang tidak merasakan penghematan, Anda dapat langsung mencoret opsi yang memuat kata mutlak seperti *semua, selalu,* dan *pasti* pada pilihan A, B, dan D. Selanjutnya, coret pilihan E karena memperluas simpulan ke luar wilayah Jakarta. Dengan metode eliminasi ini, pilihan yang tersisa dan paling tepat adalah pilihan **C**.\n\n---\n\n### Variasi 2: Simpulan Tren Induktif Berkala (Tipe Rangkaian Waktu)\n\n> **Konteks Wacana Soal:**  \n> Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan yang paling mungkin benar mengenai penerapan teknik fermentasi tertutup tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika.  \n> - **B.** Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut.  \n> - **C.** Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%.  \n> - **D.** Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%.  \n> - **E.** Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar.\n\n**Kunci Jawaban: B**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Fakta Data:** Angka penjualan komoditas kopi arabika memperlihatkan peningkatan yang konsisten pada setiap kuartal pengamatan, yaitu berturut-turut sebesar 12%, 15%, dan 18% setelah para petani mengadopsi teknik fermentasi tertutup. Rangkaian peningkatan yang berulang pada beberapa periode dan wilayah ini menunjukkan adanya arah kecenderungan yang positif, sehingga simpulan yang paling tepat dan aman adalah bahwa teknik tersebut *\"cenderung berdampak positif\"*.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Frasa *\"satu-satunya cara\"* merupakan klaim mutlak yang berlebihan, sebab teks tidak pernah menyatakan bahwa tidak ada cara atau teknik lain untuk meningkatkan penjualan.\n  - **Pilihan C Salah:** Mengubah jenis objek komoditas menjadi *\"kopi robusta\"*, padahal seluruh pengamatan di dalam teks wacana hanya menguji komoditas kopi arabika.\n  - **Pilihan D Salah:** Meramalkan angka masa depan secara mutlak dengan kata *\"pasti 21%\"*, padahal data penjualan pada kuartal keempat belum terjadi dan tidak boleh dipastikan secara sepihak.\n  - **Pilihan E Salah:** Menyimpulkan nasib negatif bagi petani yang tidak menggunakan teknik tersebut secara spekulatif, padahal kondisi petani lain tidak pernah diteliti di dalam wacana.\n- **Penerapan Trik Cepat (15 Detik):** Carilah pilihan jawaban yang menggunakan kata terukur yang bijak seperti *\"cenderung berdampak positif\"*. Anda dapat langsung mengeliminasi opsi yang memuat kata mutlak pada pilihan A (*satu-satunya cara*) dan pilihan D (*pasti*). Selanjutnya, coret pilihan C karena mengganti jenis kopi. Dengan eliminasi cepat ini, jawaban yang benar adalah pilihan **B**.\n\n---\n\n### Variasi 3: Evaluasi Kualitas Generalisasi / HOTS (Tipe Keterwakilan Sampel)\n\n> **Konteks Wacana Soal:**  \n> Seorang peneliti menyimpulkan bahwa *\"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa.\"* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.  \n>  \n> **Pertanyaan UTBK:** *Manakah pernyataan di bawah ini yang paling tepat mengevaluasi kelemahan dari generalisasi peneliti tersebut?*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut.  \n> - **B.** Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek.  \n> - **C.** Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa.  \n> - **D.** Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan.  \n> - **E.** Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam.\n\n**Kunci Jawaban: C**\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Kelemahan Logika:** Peneliti menarik simpulan yang sangat luas untuk *\"seluruh kelompok usia dewasa\"* yang mencakup rentang umur 18 tahun hingga usia lanjut. Namun kenyataannya, sampel yang diuji hanyalah 25 orang mahasiswa dari satu jurusan di kampus teknik dengan rentang usia yang sangat seragam yaitu sekitar 21 hingga 23 tahun. Sampel dengan jumlah yang sangat kecil dan homogen ini jelas tidak memiliki keterwakilan (*representativeness*) yang memadai untuk menggeneralisasi kondisi seluruh populasi usia dewasa.\n- **Mengapa Opsi Lain Salah?**\n  - **Pilihan A Salah:** Membandingkan efek cokelat hitam dengan cokelat jenis lain bukan merupakan kelemahan metodologis yang mendasar, karena fokus penelitian tersebut memang hanya meneliti khasiat cokelat hitam.\n  - **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam pengujian fungsi daya ingat jangka pendek.\n  - **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% sudah merupakan kenaikan hasil tes yang cukup besar dan terukur secara nyata.\n  - **Pilihan E Salah:** Tingkat daya ingat awal tidak menggugurkan hasil penelitian, karena pengujian dilakukan dengan membandingkan skor sebelum dan sesudah intervensi pada individu yang sama.\n- **Penerapan Trik Cepat (15 Detik):** Bandingkan karakteristik sampel yang diuji (*hanya 25 orang mahasiswa sebaya*) dengan kesimpulan yang ditarik (*seluruh kelompok usia dewasa*). Kesenjangan yang sangat besar antara sampel yang sempit dengan kesimpulan yang terlalu luas menunjukkan cacat generalisasi terburu-buru (*hasty generalization*). Oleh karena itu, kelemahan utamanya adalah sampel tidak mewakili populasi, yang tepat dinyatakan pada pilihan **C**.",
-    "visualizations_svg": [],
-    "distractor_traps": [
-      "Hasty Generalization (Generalisasi Terburu-buru): Menarik simpulan untuk seluruh populasi hanya dari 1 atau 2 sampel yang tidak mewakili.",
-      "Overgeneralization (Lompatan Cakupan/Scope): Teks hanya membahas siswa SMA di kota X, tetapi opsi jawaban melompat menyimpulkan seluruh pelajar di Indonesia.",
-      "Jebakan Kuantor Universal (\"Semua/Selalu\"): Jika di dalam teks terdapat kata beberapa, sebagian, atau ada kasus pengecualian, langsung eliminasi opsi yang menggunakan kata semua atau pasti."
-    ],
-    "quick_execution_algorithm": [
-      "Identifikasi populasi dan ukuran sampel yang diobservasi dalam teks wacana.",
-      "Periksa apakah terdapat data pengecualian atau hanya mencakup wilayah/sub-populasi tertentu.",
-      "Eliminasi opsi berkuantor ekstrem (pasti, selalu, mutlak) atau opsi yang melompat keluar cakupan (out of scope).",
-      "Pilih simpulan probabilistik (cenderung, sebagian besar, kemungkinan besar) yang setia pada data premis."
-    ]
-  },
-  "worked_examples": [
+  "zona_2_variasi_inti": [
     {
-      "example_id": "pu-01-01-ex1",
-      "variation_name": "Variasi 1: Simpulan Proporsi Sampel (Level: Mudah)",
-      "difficulty": "easy",
-      "question_type": "standard_mc",
-      "context_markdown": "Survei terhadap 500 pengguna motor listrik di Jakarta menunjukkan bahwa 460 di antaranya merasakan penghematan biaya operasional bulanan hingga 60% dibandingkan saat menggunakan motor berbahan bakar bensin. Sebanyak 40 pengguna lainnya merasa biayanya sama saja karena jarak tempuh harian mereka sangat pendek.",
-      "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Semua pengguna motor listrik di Jakarta berhasil menghemat biaya operasional hingga 60%."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Motor berbahan bakar bensin selalu lebih boros bagi seluruh masyarakat di Jakarta."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Sebagian besar pengguna motor listrik di Jakarta mengalami penghematan biaya operasional bulanan yang signifikan."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pengguna motor dengan jarak tempuh pendek pasti tidak cocok menggunakan motor listrik."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Masyarakat luar Jakarta juga akan menghemat biaya hingga 60% jika beralih ke motor listrik."
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati data teks: dari 500 orang, 460 orang hemat (mayoritas) dan 40 orang tidak hemat. Karena ada 40 orang yang tidak hemat, pilihan dengan kata mutlak seperti *\"semua\"* atau *\"selalu\"* otomatis salah. Perhatikan juga batasan wilayah penelitian!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Populasi Sampel:** Pengamatan dilakukan terhadap pengguna sepeda motor listrik di Jakarta ($n = 500$).\n- **Proporsi Sifat Utama:** Sebanyak $\\frac{460}{500} = 92\\%$ responden mengalami penghematan biaya operasional secara signifikan, sedangkan $8\\%$ lainnya tidak merasakan penghematan.\n- **Penarikan Simpulan:** Karena proporsi mencapai $92\\%$ (mayoritas besar, namun bukan $100\\%$ mutlak), kuantor yang valid secara logika induktif adalah *\"sebagian besar\"* pada kelompok sasaran *\"pengguna motor listrik di Jakarta\"*.\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Eliminasi Kata Mutlak dan Lompatan Wilayah):**\n\n1. Cermati bahwa terdapat 40 orang responden yang tidak merasakan penghematan biaya. Oleh sebab itu, segera coret pilihan **A**, **B**, dan **D** karena menggunakan kata-kata bernada mutlak (*semua, selalu, pasti*).\n2. Coret pilihan **E** karena memperluas kesimpulan ke luar wilayah Jakarta (*out of scope*).\n3. Pilihan yang tersisa dan paling tepat adalah pilihan **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pilihan ini mengabaikan fakta bahwa ada 40 orang responden yang tidak merasakan penghematan biaya, sehingga menyimpulkan kata \"semua\" adalah kesalahan generalisasi yang memukul rata.\n- **Pilihan B Salah:** Pilihan ini menyimpulkan kondisi yang mutlak (\"selalu\") bagi seluruh masyarakat Jakarta yang tidak pernah diteliti di dalam wacana.\n- **Pilihan D Salah:** Pilihan ini memberikan vonis kepastian yang mutlak (\"pasti tidak cocok\"), padahal data wacana tidak pernah menyatakan ketidakcocokan penggunaan motor listrik.\n- **Pilihan E Salah:** Pilihan ini melompat keluar dari batasan data penelitian dengan menggeneralisasi kondisi masyarakat di luar wilayah Jakarta."
+      "nomor_variasi": 1,
+      "nama_variasi": "Simpulan Proporsi Sampel ke Populasi (Generalisasi Statistik)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Berdasarkan survei Dinas Perhubungan terhadap 400 pengguna kereta komuter di Stasiun Sudirman, sebanyak $78\\%$ responden memilih kereta karena waktu tempuh lebih pasti dibandingkan kendaraan pribadi. Peneliti menyimpulkan bahwa sebagian besar komuter di wilayah Jabodetabek menggunakan kereta demi kepastian waktu tempuh.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik ($78\\%$ dari 400 sampel pengguna kereta di Stasiun Sudirman mengutamakan kepastian waktu tempuh) $\\rightarrow$ Asumsi Jembatan (400 responden di satu stasiun cukup mewakili seluruh populasi komuter Jabodetabek) $\\rightarrow$ Simpulan (Sebagian besar komuter Jabodetabek memilih kereta karena kepastian waktu).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| $78\\%$ dari 400 sampel memilih kepastian waktu | Semua komuter Jabodetabek mengutamakan ketepatan waktu |\n| Pengamatan dilakukan pada komuter kereta | Pengguna bus dan ojek daring memiliki alasan serupa |\n\n**Uji Kepastian:** Padankan proporsi kuantitatif ($78\\% > 50\\% = \\text{sebagian besar}$) dan batasi objek pada populasi sejenis. Karena sampel diambil dari satu stasiun tanpa jaminan keterwakilan seluruh wilayah, simpulan ini berstatus **Mungkin Benar**. Sebaliknya, klaim mengenai *semua* komuter atau pengguna moda transportasi lain melampaui bukti sehingga berstatus **Mungkin Salah** atau **Tidak Relevan**.",
+      "kunci_pembeda": "Memproyeksikan persentase atau proporsi dari kelompok sampel terbatas menuju keseluruhan populasi target yang sejenis.",
+      "visual": null
     },
     {
-      "example_id": "pu-01-01-ex2",
-      "variation_name": "Variasi 2: Simpulan Tren Induktif Berkala (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Pada kuartal pertama, penjualan komoditas kopi arabika dari daerah pegunungan tengah meningkat 12% setelah petani menerapkan teknik fermentasi tertutup. Pada kuartal kedua dan ketiga, petani di tiga kabupaten sekitar ikut menerapkan teknik yang sama dan mencatatkan peningkatan penjualan masing-masing sebesar 15% dan 18%.",
-      "question_markdown": "Manakah pernyataan yang **paling mungkin benar** mengenai penerapan teknik fermentasi tertutup tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Teknik fermentasi tertutup merupakan satu-satunya cara untuk meningkatkan penjualan kopi arabika."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Penerapan teknik fermentasi tertutup cenderung berdampak positif terhadap peningkatan penjualan kopi arabika di wilayah tersebut."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Kopi robusta yang diolah dengan teknik fermentasi tertutup juga akan mengalami kenaikan penjualan di atas 10%."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pada kuartal keempat, penjualan kopi arabika pasti akan meningkat sebesar 21%."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Petani yang tidak menggunakan teknik fermentasi tertutup akan mengalami kerugian besar."
-        }
-      ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Penjualan kopi arabika meningkat konsisten pada kuartal 1 (12%), kuartal 2 (15%), dan kuartal 3 (18%). Cari opsi yang menyatakan kecenderungan dampak positif. Hati-hati dengan opsi yang mengganti jenis komoditas (misal kopi robusta) atau menebak angka masa depan secara mutlak!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Data Khusus Pengamatan:** Penjualan komoditas kopi arabika tercatat meningkat berturut-turut pada Kuartal 1 ($+12\\%$), Kuartal 2 ($+15\\%$), dan Kuartal 3 ($+18\\%$) setelah penerapan teknik fermentasi tertutup.\n- **Induksi Tren Berkala:** Kenaikan yang terjadi secara konsisten di beberapa wilayah dan periode waktu menunjukkan adanya kecenderungan dampak positif dari teknik tersebut terhadap penjualan kopi arabika di wilayah pengamatan.\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Cari Kata Terukur dan Eliminasi Kata Mutlak):**\n\n1. Pilihlah opsi yang memuat kata pembatas probabilitas yang bijak, yaitu *\"cenderung berdampak positif\"*.\n2. Segera coret pilihan **A** dan **D** karena memuat kata mutlak (*satu-satunya* dan *pasti*).\n3. Coret pilihan **C** karena melompat ke jenis komoditas lain (kopi robusta).\n4. Pilihan yang tepat dan terbukti adalah pilihan **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyatakan bahwa teknik ini adalah satu-satunya cara merupakan klaim mutlak yang tidak didukung oleh bukti di dalam wacana.\n- **Pilihan C Salah:** Mengubah jenis komoditas menjadi kopi robusta, padahal pengamatan hanya meneliti kopi arabika.\n- **Pilihan D Salah:** Memprediksi angka kuartal keempat secara mutlak (\"pasti 21%\") mendahului fakta empiris yang belum terjadi.\n- **Pilihan E Salah:** Menarik kesimpulan negatif sepihak tentang kerugian petani yang tidak memakai teknik tersebut tanpa ada data penelitian."
+      "nomor_variasi": 2,
+      "nama_variasi": "Generalisasi Tren Data Kualitatif Lintas Waktu/Kelompok",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Selama empat kuartal berturut-turut, perusahaan rintisan X, Y, dan Z menerapkan sistem kerja empat hari seminggu dan mencatat penurunan tingkat pengunduran diri karyawan serta peningkatan kepuasan kerja. Analis ketenagakerjaan menyimpulkan bahwa skema kerja empat hari seminggu efektif menjaga retensi talenta di sektor perusahaan rintisan.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Perusahaan rintisan X, Y, dan Z mengalami penurunan *turnover* dan kenaikan kepuasan kerja selama empat kuartal lewat skema empat hari kerja) $\\rightarrow$ Asumsi Jembatan (Karakteristik operasional X, Y, dan Z serupa dengan perusahaan rintisan lain dalam jangka panjang) $\\rightarrow$ Simpulan (Skema empat hari kerja efektif menjaga retensi talenta perusahaan rintisan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Teramati pada 3 perusahaan selama 4 kuartal | Berlaku permanen bagi seluruh perusahaan di semua sektor |\n| Pengunduran diri turun dan kepuasan naik | Keuntungan bersih dan omzet perusahaan pasti meningkat |\n\n**Uji Kepastian:** Evaluasi konsistensi pola antar-kelompok dan rentang waktu pengamatan tanpa menambah variabel baru. Simpulan mengenai efektivitas retensi talenta pada sektor yang sama berstatus **Mungkin Benar**. Klaim bahwa kebijakan ini pasti menaikkan keuntungan finansial perusahaan bernilai **Tidak Relevan** karena tidak tercantum dalam premis observasi.",
+      "kunci_pembeda": "Menarik kaidah umum dari pola perubahan kualitatif yang konsisten lintas beberapa entitas atau periode waktu.",
+      "visual": null
     },
     {
-      "example_id": "pu-01-01-ex3",
-      "variation_name": "Variasi 3: Evaluasi Kualitas Generalisasi / HOTS (Level: Sulit)",
-      "difficulty": "hard",
-      "question_type": "standard_mc",
-      "context_markdown": "Seorang peneliti menyimpulkan bahwa *\"Konsumsi cokelat hitam setiap pagi dapat meningkatkan daya ingat jangka pendek pada seluruh kelompok usia dewasa.\"* Simpulan ini diambil setelah ia menguji 25 mahasiswa tingkat akhir di sebuah universitas teknik yang diberi 30 gram cokelat hitam setiap pagi selama dua minggu, dan hasilnya skor tes memori mereka meningkat rata-rata 20%.",
-      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kelemahan** dari generalisasi peneliti tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Peneliti tidak membandingkan efek cokelat hitam dengan cokelat susu pada mahasiswa tersebut."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Durasi penelitian selama dua minggu terlalu lama untuk mengukur daya ingat jangka pendek."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Sampel yang digunakan terlalu sempit dan homogen sehingga tidak mewakili seluruh kelompok usia dewasa."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Peningkatan skor memori sebesar 20% belum cukup signifikan secara statistik untuk ditarik simpulan."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Mahasiswa universitas teknik sudah memiliki daya ingat yang tinggi sebelum mengonsumsi cokelat hitam."
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan perbedaan antara subjek yang diuji (hanya 25 mahasiswa teknik) dengan simpulan peneliti yang mengklaim berlaku untuk *\"seluruh kelompok usia dewasa\"*. Apakah sampel 25 mahasiswa teknik cukup mewakili seluruh orang dewasa dari berbagai usia dan profesi?",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Klaim Simpulan Peneliti:** Peneliti mengklaim hasil riset berlaku untuk *\"seluruh kelompok usia dewasa\"* yang mencakup rentang umur 18 hingga usia lanjut dengan latar belakang yang sangat majemuk.\n- **Fakta Sampel Uji:** Pengujian sebenarnya hanya melibatkan $n = 25$ mahasiswa tingkat akhir (usia $\\approx 21-23$ tahun) pada satu program studi di universitas teknik yang sangat seragam.\n- **Kelemahan Metodologis:** Terjadi cacat generalisasi terburu-buru (*hasty generalization*), di mana ukuran sampel terlalu sempit dan homogen sehingga tidak dapat mewakili populasi target secara sahih.\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Cek Kesenjangan Cakupan Sampel terhadap Simpulan):**\n\n1. Perhatikan bahwa sampel yang diuji hanyalah 25 orang mahasiswa dari fakultas teknik yang memiliki usia sebaya dan latar belakang homogen.\n2. Bandingkan dengan klaim kesimpulan peneliti yang menyatakan berlaku bagi seluruh kelompok usia dewasa.\n3. Kesenjangan yang sangat besar antara sampel sempit dengan kesimpulan luas menunjukkan kelemahan fatal keterwakilan sampel.\n4. Jawaban yang tepat adalah pilihan **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Perbandingan dengan varian cokelat susu bukan merupakan fokus pengujian hipotesis manfaat cokelat hitam.\n- **Pilihan B Salah:** Durasi penelitian selama dua minggu merupakan jangka waktu intervensi yang wajar dalam uji klinis memori jangka pendek.\n- **Pilihan D Salah:** Peningkatan skor rata-rata sebesar 20% merupakan hasil kenaikan yang cukup besar dan signifikan secara deskriptif.\n- **Pilihan E Salah:** Pengujian diukur berdasarkan selisih skor sebelum dan sesudah intervensi pada mahasiswa yang sama, sehingga tingkat memori awal tidak menggugurkan hasil."
+      "nomor_variasi": 3,
+      "nama_variasi": "Identifikasi Cacat Generalisasi Terburu-buru (Hasty Generalization)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Seorang pembeli memesan tiga kotak buah mangga dari penjual daring K dan menemukan dua buah di antaranya memar pada lapisan paling atas. Pembeli tersebut langsung memberikan ulasan bahwa seluruh buah mangga yang dijual toko K berkualitas buruk dan tidak layak konsumsi.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Ditemukan 2 buah mangga memar pada lapisan atas dari pesanan 3 kotak) $\\rightarrow$ Asumsi Jembatan (Kondisi dua buah teratas mewakili seluruh stok dagangan penjual K) $\\rightarrow$ Simpulan Cacat (Seluruh mangga di toko K berkualitas buruk dan tidak layak konsumsi).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Hanya 2 buah memar di bagian atas kemasan | Seluruh stok mangga penjual K rusak total |\n| Buah mengalami memar fisik kemasan | Semua buah busuk dan tidak layak konsumsi |\n\n**Uji Kepastian:** Identifikasi cacat *Hasty Generalization* melalui ukuran sampel yang ekstrem kecil ($n = 2$) dan kondisi pengamatan yang bias (lapisan teratas rawan benturan pengiriman). Karena simpulan menyamaratakan seluruh populasi secara mutlak dari bukti mikro, klaim *seluruh buah berkualitas buruk* berstatus **Mungkin Salah**, dan berubah menjadi **Pasti Salah** apabila terdapat bukti satu buah saja yang segar.",
+      "kunci_pembeda": "Mendeteksi kesesatan logika akibat menarik kesimpulan mutlak dari ukuran sampel yang sangat minim atau bias.",
+      "visual": null
     },
     {
-      "example_id": "pu-01-01-ex4",
-      "variation_name": "Variasi 4: Simpulan Proporsi Sampel Konservasi Terumbu Karang (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah tim biolog kelautan memantau 400 koloni terumbu karang tanduk rusa (*Acropora cervicornis*) yang ditransplantasikan menggunakan struktur substrat *biorock* berarus listrik mikro di perairan Kepulauan Seribu. Setelah 12 bulan pemantauan, tercatat 348 koloni menunjukkan laju kalsifikasi tiga kali lebih cepat dan sintasan (*survival rate*) di atas rata-rata perairan karang alami. Sebanyak 52 koloni lainnya mengalami pemutihan (*bleaching*) dan gagal bertahan akibat anomali kenaikan suhu air laut lokal yang melampaui ambang batas toleransi termal.",
-      "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Seluruh jenis terumbu karang di perairan Kepulauan Seribu akan terbebas dari pemutihan jika dipasangi struktur *biorock*."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Pemasangan struktur *biorock* berarus listrik mikro selalu menjamin keberhasilan transplantasi terumbu karang di perairan mana pun."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Kenaikan suhu air laut lokal pasti menyebabkan kegagalan total pada seluruh metode transplantasi karang di Indonesia."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Sebagian besar koloni terumbu karang yang ditransplantasikan dengan metode *biorock* di perairan tersebut menunjukkan ketahanan dan laju pertumbuhan yang baik."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Koloni karang yang tidak menggunakan teknologi *biorock* di luar Kepulauan Seribu dipastikan mati dalam rentang waktu 12 bulan."
-        }
-      ],
-      "correct_answer": "D",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati proporsi angka dalam wacana: dari 400 koloni yang dipantau, sebanyak 348 koloni berhasil tumbuh cepat (mayoritas) dan 52 koloni mengalami pemutihan. Karena ada 52 koloni yang gagal, opsi yang memuat kata mutlak seperti *\"seluruh\"*, *\"selalu\"*, atau *\"pasti\"* otomatis gugur. Pilihlah simpulan terukur yang setia pada subjek dan wilayah penelitian!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Sampel & Populasi Penelitian:** Pengamatan dilakukan terhadap koloni karang tanduk rusa yang ditransplantasikan dengan metode *biorock* di perairan Kepulauan Seribu ($n = 400$).\n- **Kalkulasi Proporsi:**\n  $$\\text{Proporsi Keberhasilan} = \\frac{348}{400} \\times 100\\% = 87\\%$$\n  Sebanyak $87\\%$ koloni berhasil bertahan dan tumbuh cepat, sementara $13\\%$ sisanya mengalami pemutihan.\n- **Kaidah Logika Induktif:** Karena angka $87\\%$ mencakup mayoritas dominan namun bukan $100\\%$ mutlak, maka kuantor yang valid secara induktif adalah *\"sebagian besar\"* yang terikat pada batasan subjek di perairan tersebut.\n\n**Jawaban: D**",
-      "quick_trick_markdown": "**Cara Cepat (Eliminasi Kata Mutlak dan Cek Proporsi Sampel):**\n\n1. Ada 52 koloni yang gagal bertahan $\\implies$ coret langsung opsi bernada mutlak: pilihan **A** (*seluruh*), pilihan **B** (*selalu, di mana pun*), dan pilihan **C** (*pasti, total*).\n2. Coret pilihan **E** karena membuat vonis spekulatif mutlak ke luar wilayah penelitian (*out of scope*).\n3. Pilihan tersisa yang menggunakan kuantor terukur dan sesuai data $87\\%$ adalah pilihan **D**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggunakan kuantor mutlak \"Seluruh jenis\" dan menjanjikan bebas pemutihan total, padahal wacana mencatat 52 koloni tetap memutih dan hanya meneliti spesies karang tanduk rusa.\n- **Pilihan B Salah:** Menggunakan kata mutlak \"selalu menjamin\" dan memperluas cakupan ke \"perairan mana pun\" yang tidak pernah diuji dalam penelitian.\n- **Pilihan C Salah:** Menggeneralisasi secara ekstrem dengan kata \"pasti menyebabkan kegagalan total\" dan melompat ke skala seluruh Indonesia.\n- **Pilihan E Salah:** Membuat kesimpulan spekulatif tanpa data mengenai koloni karang di luar wilayah Kepulauan Seribu (*out of scope*)."
+      "nomor_variasi": 4,
+      "nama_variasi": "Prediksi Kemungkinan (Paling Mungkin Benar) dari Pola Kasus Spesifik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Catatan Badan Meteorologi menunjukkan bahwa setiap kali suhu permukaan laut di perairan selatan meningkat lebih dari $2^{\\circ}\\text{C}$ disertai angin baratan kencang, wilayah pesisir selalu dilanda gelombang tinggi dalam dua hari berikutnya. Hari ini terpantau kenaikan suhu laut $2,5^{\\circ}\\text{C}$ dan angin baratan bertiup kencang.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pola historis: kenaikan suhu laut $>2^{\\circ}\\text{C}$ dan angin baratan kencang $\\rightarrow$ gelombang tinggi dalam 2 hari; kondisi hari ini memenuhi kedua syarat tersebut) $\\rightarrow$ Asumsi Jembatan (Dinamika atmosfer dan perairan tetap bekerja mengikuti pola preseden masa lalu) $\\rightarrow$ Simpulan Prediktif (Wilayah pesisir paling mungkin dilanda gelombang tinggi dalam dua hari ke depan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Suhu naik $2,5^{\\circ}\\text{C}$ dan angin baratan kencang | Gelombang tinggi pasti menenggelamkan seluruh pelabuhan |\n| Preseden memicu gelombang tinggi dalam 2 hari | Ketinggian gelombang dipastikan melampaui 5 meter |\n\n**Uji Kepastian:** Proyeksi kejadian masa depan dalam penalaran induktif tidak pernah bersifat mutlak sehingga opsi **Pasti Benar** otomatis gugur. Pilih prediksi yang mempertahankan variabel akibat secara persis tanpa menambah rincian ekstrem baru, dengan status kebenaran **Mungkin Benar** (*Paling Mungkin Benar*).",
+      "kunci_pembeda": "Memproyeksikan peristiwa mendatang berdasarkan berulangnya kombinasi kondisi syarat yang identik di masa lampau.",
+      "visual": null
     },
     {
-      "example_id": "pu-01-01-ex5",
-      "variation_name": "Variasi 5: Simpulan Tren Induktif Berkala Dwelling Time Pelabuhan (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Otoritas pelabuhan logistik mencatat waktu tunggu bongkar muat peti kemas (*dwelling time*) pasca-penerapan sistem gerbang otomatis terintegrasi. Pada semester I, rata-rata *dwelling time* turun dari 4,8 hari menjadi 3,9 hari. Pada semester II dan III, setelah 85% armada truk logistik mengadopsi identifikasi digital, waktu tunggu peti kemas kembali terpangkas berturut-turut menjadi 3,1 hari dan 2,5 hari.",
-      "question_markdown": "Manakah pernyataan yang **paling mungkin benar** mengenai digitalisasi sistem gerbang logistik di pelabuhan tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Integrasi sistem gerbang digital cenderung konsisten mempercepat penurunan waktu tunggu peti kemas di pelabuhan tersebut."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Digitalisasi sistem gerbang otomatis merupakan satu-satunya instrumen penentu efisiensi biaya logistik maritim nasional."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Pada semester IV, waktu tunggu bongkar muat di pelabuhan tersebut pasti mencapai tepat 1,8 hari."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pelabuhan peti kemas lain yang belum menerapkan sistem serupa pasti mengalami kelumpuhan total arus bongkar muat."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Efisiensi waktu tunggu di pelabuhan tersebut otomatis menjamin penurunan harga barang kebutuhan pokok hingga 50% di pasaran."
-        }
+      "nomor_variasi": 5,
+      "nama_variasi": "Pembatasan Kuantor Simpulan (Sebagian vs Semua) Berdasarkan Bukti Empiris",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Laporan evaluasi Dinas Pendidikan terhadap 50 sekolah menengah di Kabupaten M mencatat bahwa 38 sekolah telah menerapkan laboratorium virtual berbasis daring, sedangkan 12 sekolah lainnya masih memakai modul cetak. Seluruh sekolah yang menerapkan laboratorium virtual terbukti mengalami peningkatan nilai rata-rata praktikum.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (38 dari 50 sekolah memakai laboratorium virtual dan semuanya mengalami kenaikan nilai praktikum; 12 sekolah memakai modul cetak) $\\rightarrow$ Asumsi Jembatan (Data evaluasi mencerminkan capaian aktual seluruh sampel sekolah) $\\rightarrow$ Simpulan Berkuantor (Sebagian sekolah menengah di Kabupaten M mengalami peningkatan nilai praktikum).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| 38 sekolah virtual naik nilai praktikumnya | Semua sekolah di Kabupaten M naik nilai praktikumnya |\n| 12 sekolah masih menggunakan modul cetak | Sekolah bermodul cetak pasti turun nilai praktikumnya |\n\n**Uji Kepastian:** Sesuaikan kuantor simpulan dengan cakupan bukti empiris: bukti sebagian ($38/50$) hanya mengizinkan kuantor **sebagian/beberapa**, tidak boleh **semua/seluruh**. Pernyataan *'Semua sekolah mengalami kenaikan nilai'* bernilai **Pasti Salah** apabila 12 sekolah sisanya diketahui tidak naik, sedangkan klaim *'Sekolah modul cetak gagal meningkat'* bernilai **Mungkin Benar** karena belum diuji dalam premis.",
+      "kunci_pembeda": "Menjaga ketepatan kuantor logika agar simpulan tidak melampaui proporsi bukti dari 'sebagian' menjadi 'semua'.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        5
       ],
-      "correct_answer": "A",
-      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan arah tren data berkala: waktu tunggu turun secara berkesinambungan dari 4,8 hari $\\rightarrow$ 3,9 hari $\\rightarrow$ 3,1 hari $\\rightarrow$ 2,5 hari. Pilihlah opsi yang menyatakan kecenderungan positif secara terukur (*\"cenderung konsisten\"*). Waspadai pilihan yang memuat klaim mutlak atau meramal angka pasti di masa depan!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Rangkaian Waktu (Tren Berkala):**\n  - Baseline: $4{,}8$ hari.\n  - Semester I: $3{,}9$ hari (turun $0{,}9$ hari).\n  - Semester II: $3{,}1$ hari (turun $0{,}8$ hari).\n  - Semester III: $2{,}5$ hari (turun $0{,}6$ hari).\n- **Penarikan Kesimpulan Induktif:** Penurunan waktu inap peti kemas yang terjadi secara berturut-turut pada tiga semester pengamatan membuktikan adanya arah tren yang positif. Simpulan induktif yang sahih dirumuskan dengan derajat kemungkinan yang terukur: sistem tersebut *\"cenderung konsisten mempercepat penurunan waktu tunggu peti kemas\"* di pelabuhan pengamatan.\n\n**Jawaban: A**",
-      "quick_trick_markdown": "**Cara Cepat (Identifikasi Arah Tren dan Singkirkan Kepastian Mutlak):**\n\n1. Cari kata kunci terukur yang mencerminkan penalaran induktif yang hati-hati: *\"cenderung konsisten\"* pada pilihan **A**.\n2. Coret pilihan **B** karena klaim ekstrem *\"satu-satunya instrumen\"* dan melompat ke skala nasional.\n3. Coret pilihan **C** karena memastikan masa depan (*\"pasti tepat 1,8 hari\"*).\n4. Coret pilihan **D** dan **E** karena membuat vonis spekulatif di luar bahasan teks.\n5. Jawaban yang tepat adalah pilihan **A**.",
-      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menggunakan frasa absolut \"satu-satunya instrumen\" dan memperluas ruang lingkup ke skala maritim nasional yang tidak didukung data teks.\n- **Pilihan C Salah:** Meramalkan angka masa depan secara mutlak (\"pasti tepat 1,8 hari\"), padahal realisasi semester IV belum berlangsung dan dipengaruhi dinamika operasional lain.\n- **Pilihan D Salah:** Menyimpulkan kondisi ekstrem (\"pasti mengalami kelumpuhan total\") pada pelabuhan lain yang sama sekali tidak diteliti (*out of scope*).\n- **Pilihan E Salah:** Menghubungkan dwelling time secara sepihak dengan jaminan penurunan harga komoditas hingga 50%, yang merupakan lompatan kesimpulan tanpa bukti."
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan survei lembaga riset transportasi terhadap 600 pekerja komuter di Jakarta Pusat, sebanyak $84\\%$ responden menyatakan beralih menggunakan kereta rel listrik karena tarif perjalanan lebih terjangkau, sedangkan sisanya memilih kereta karena menghindari kemacetan jalan raya. Manakah simpulan generalisasi yang PALING MUNGKIN BENAR berdasarkan data tersebut?",
+      "opsi_jawaban": [
+        "A. Seluruh pekerja komuter di wilayah Jakarta Pusat beralih menggunakan kereta rel listrik karena tarif murah.",
+        "B. Sebagian besar pekerja komuter di Jakarta Pusat yang menggunakan kereta rel listrik mempertimbangkan keterjangkauan tarif.",
+        "C. Pekerja komuter di seluruh kota besar Indonesia memilih kereta rel listrik terutama karena faktor biaya perjalanan.",
+        "D. Pekerja yang memilih kereta karena menghindari kemacetan pasti tidak mempermasalahkan mahalnya tarif perjalanan.",
+        "E. Penurunan tarif kereta rel listrik akan membuat seluruh pengguna kendaraan pribadi di Jakarta Pusat beralih ke kereta."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Proporsi $84\\%$ ($>50\\%$) pada sampel pekerja komuter Jakarta Pusat diterjemahkan secara akurat dengan kuantor **sebagian besar** pada populasi target yang sama (**Opsi B** benar). **Opsi A** dan **E** salah karena menggunakan kuantor mutlak *seluruh*. **Opsi C** melakukan lompatan wilayah secara berlebihan ke *seluruh kota besar Indonesia*, sedangkan **Opsi D** menambahkan asumsi eksklusivitas yang tidak tercantum dalam premis.",
+      "visual": null
     },
     {
-      "example_id": "pu-01-01-ex6",
-      "variation_name": "Variasi 6: Evaluasi Kualitas Generalisasi Intervensi Ritme Sirkadian (Level: Sulit)",
-      "difficulty": "hard",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah artikel rintisan kesehatan mempublikasikan klaim bahwa *\"Penggunaan kacamata pemblokir sinar biru (*blue light filter*) selama dua jam sebelum tidur terbukti secara mutlak melipatgandakan kapasitas memori kerja dan mengatasi insomnia pada seluruh pekerja kantoran.\"* Klaim tersebut disusun berdasarkan uji coba terhadap 18 staf divisi teknologi informasi berusia 22–26 tahun di satu perusahaan rintisan di Jakarta Selatan yang diminta memakai kacamata tersebut selama 7 hari, dengan hasil 14 staf menyatakan kualitas tidur mereka terasa lebih nyenyak pada survei kuesioner mandiri.",
-      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kelemahan** generalisasi pada artikel kesehatan tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Peneliti tidak mengukur indeks kelelahan refraksi mata staf sebelum intervensi kacamata dimulai."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Durasi penelitian selama 7 hari dinilai terlalu lama untuk mengamati pengaruh optik terhadap persepsi kelelahan visual."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Staf perusahaan rintisan teknologi memiliki tingkat tekanan kerja yang diasumsikan lebih ringan daripada industri manufaktur."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Kacamata pemblokir sinar biru yang diuji tidak dilengkapi dengan pelapis fotokromik anti-radiasi ultraviolet luar ruangan."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Ukuran sampel sangat kecil, terbatas pada kelompok usia muda yang homogen, dan hanya bertumpu pada survei persepsi subjektif sehingga tidak layak digeneralisasi untuk seluruh populasi pekerja kantoran."
-        }
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
       ],
-      "correct_answer": "E",
-      "hint_markdown": "💡 **Petunjuk Soal:** Bandingkan cakupan klaim simpulan (*\"terbukti secara mutlak melipatgandakan memori kerja pada seluruh pekerja kantoran\"*) dengan fakta sampel penelitian (*hanya 18 orang berusia seragam 22-26 tahun di 1 kantor startup, hanya 7 hari, hanya kuesioner rasa nyenyak subjektif*). Cacat induktif utama terletak pada keterwakilan sampel yang rapuh (*hasty generalization*)!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Klaim Peneliti:** Mengklaim khasiat mutlak bagi *\"seluruh pekerja kantoran\"* lintas usia, profesi, dan kondisi kesehatan.\n- **Kondisi Sampel Faktual:** Hanya melibatkan $n = 18$ orang dari satu divisi di satu kantor, rentang umur homogen ($22-26$ tahun), dan instrumen yang digunakan hanya kuesioner persepsi subjektif tanpa pengukuran memori objektif.\n- **Kaidah Evaluasi Generalisasi (Hasty Generalization):** Menarik simpulan universal untuk populasi heterogen yang luas dari sampel yang teramat sempit, homogen, dan berbasis data persepsi subjektif merupakan kekeliruan penalaran induktif mendasar (*hasty generalization*).\n\n**Jawaban: E**",
-      "quick_trick_markdown": "**Cara Cepat (Deteksi Jurang Pemisah Sampel vs Populasi Simpulan):**\n\n1. Sampel: Hanya 18 staf TI usia 22–26 tahun, data persepsi rasa nyenyak kuesioner.\n2. Klaim Simpulan: Berlaku mutlak untuk seluruh pekerja kantoran di segala bidang dan usia.\n3. Kesenjangan ekstrem ini membuktikan sampel tidak mewakili populasi (*unrepresentative sample*).\n4. Pilihan yang secara komprehensif mengkritik kelemahan metodologis ini adalah pilihan **E**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pengukuran indeks refraksi mata bukan kelemahan utama yang menggugurkan representasi populasi sampel pekerja.\n- **Pilihan B Salah:** Waktu 7 hari justru tergolong singkat dalam studi fisiologis sirkadian, bukan terlalu lama.\n- **Pilihan C Salah:** Asumsi perbandingan tingkat tekanan kerja merupakan spekulasi yang tidak menyentuh cacat metodologi keterwakilan sampel.\n- **Pilihan D Salah:** Fitur fotokromik radiasi UV luar ruangan tidak relevan dengan klaim penggunaan dalam ruangan sebelum tidur malam (*out of scope*)."
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Data Dinas Pertanian selama lima tahun terakhir menunjukkan bahwa setiap kali curah hujan bulanan di Kecamatan Sukatani melampaui $350\\text{ mm}$ disertai kelembapan udara di atas $85\\%$, tanaman cabai di wilayah tersebut selalu terserang jamur antraknosa dalam kurun waktu sepuluh hari. Pada awal bulan ini, curah hujan tercatat mencapai $380\\text{ mm}$ dengan kelembapan udara $88\\%$. Berdasarkan pola generalisasi tersebut, kejadian yang PALING MUNGKIN terjadi adalah ....",
+      "opsi_jawaban": [
+        "A. seluruh hasil panen cabai di Kecamatan Sukatani dipastikan gagal total pada bulan ini",
+        "B. tanaman cabai di seluruh kabupaten akan terserang jamur antraknosa dalam waktu sepuluh hari",
+        "C. tanaman cabai di Kecamatan Sukatani berpeluang tinggi terserang jamur antraknosa dalam sepuluh hari ke depan",
+        "D. petani cabai di Kecamatan Sukatani pasti mengalami kerugian finansial lebih besar dibandingkan tahun lalu",
+        "E. serangan jamur antraknosa pada tanaman cabai di Kecamatan Sukatani tidak akan terjadi jika suhu udara tetap hangat"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Kondisi awal bulan ini ($380\\text{ mm} > 350\\text{ mm}$ dan kelembapan $88\\% > 85\\%$) memenuhi kedua syarat preseden historis di Kecamatan Sukatani. Dalam penalaran induktif prediktif, simpulan yang tepat mempertahankan cakupan wilayah serta variabel akibat secara probabilistik (**Opsi C** benar). **Opsi A** dan **D** keliru karena bernada mutlak (*dipastikan*, *pasti*) dan menambah klaim baru, **Opsi B** memperluas wilayah secara tidak sah ke *seluruh kabupaten*, sedangkan **Opsi E** memasukkan variabel suhu di luar premis.",
+      "visual": null
     },
     {
-      "example_id": "pu-01-01-ex7",
-      "variation_name": "Variasi 7: Evaluasi Plausibilitas Kualitas Inspeksi Wafer Semikonduktor (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah pabrik fabrikasi semikonduktor menguji coba model *computer vision* berbasis *deep learning* untuk mendeteksi cacat mikro pada 1.200 wafer silikon berukuran 300 mm. Hasil pengujian menunjukkan bahwa model berhasil mendeteksi anomali pola litografi dengan akurasi 96,5% dan mengurangi tingkat lolosnya cacat (*defect escape rate*) dari 4,2% menjadi 0,3%. Namun, pada 42 wafer dengan lapisan film tipis berreflektivitas tinggi, model sempat memberikan alarm palsu (*false positive*) akibat pantulan cahaya interferensi optik.",
-      "question_markdown": "Berdasarkan data pengujian tersebut, manakah simpulan yang **paling mungkin benar**?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Model *computer vision* tersebut telah berkinerja sempurna sehingga pasti tidak akan pernah salah dalam mengenali wafer cacat."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Penerapan model *computer vision* secara umum efektif meminimalkan lolosnya cacat wafer silikon, meskipun masih menghadapi tantangan pada karakteristik lapisan tertentu."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Seluruh pabrik semikonduktor di dunia wajib segera mengganti inspektur manusia dengan sistem inspeksi otomatis tersebut."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Wafer silikon dengan lapisan berreflektivitas tinggi sama sekali tidak dapat diinspeksi oleh teknologi kecerdasan buatan apa pun."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Munculnya alarm palsu pada 42 wafer membuktikan bahwa model kecerdasan buatan tersebut gagal total dan tidak layak diuji coba lebih lanjut."
-        }
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        5
       ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati proporsi capaian: akurasi 96,5% dan tingkat lolos cacat turun menjadi 0,3% membuktikan efektivitas umum yang tinggi, namun alarm palsu pada 42 wafer menunjukkan adanya pengecualian teknis. Simpulan induktif yang sehat wajib merangkul kedua fakta ini secara berimbang tanpa berlebihan!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Evaluasi Dua Aspek Data Pengujian:**\n  - *Aspek Keberhasilan Mayoritas:* Akurasi $96{,}5\\%$ dan penurunan *defect escape rate* dari $4{,}2\\%$ menjadi $0{,}3\\%$ pada sampel $n = 1.200$ wafer silikon.\n  - *Aspek Keterbatasan Spesifik:* Terjadi alarm palsu pada $42$ wafer berlapisan reflektif tinggi karena interferensi optik ($\\frac{42}{1.200} = 3{,}5\\%$).\n- **Penarikan Simpulan Induktif Proporsional:** Simpulan yang paling mungkin benar harus mencerminkan generalisasi yang terukur: sistem ini *\"secara umum efektif meminimalkan lolosnya cacat\"*, sekaligus secara jujur mengakui adanya *\"tantangan pada karakteristik lapisan tertentu\"*.\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Pilih Kesimpulan Berimbang dan Eliminasi Klaim Ekstrem):**\n\n1. Coret pilihan **A** karena menggunakan kata mutlak yang bertentangan dengan fakta (*\"sempurna, pasti tidak pernah salah\"*).\n2. Coret pilihan **C** karena memuat kewajiban mutlak melompat ke skala global (*\"seluruh pabrik di dunia wajib\"*).\n3. Coret pilihan **D** dan **E** karena memvonis kegagalan mutlak (*\"sama sekali tidak dapat, gagal total\"*).\n4. Pilihan yang bijak, seimbang, dan sepenuhnya selaras dengan data adalah pilihan **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyatakan model berkinerja sempurna dan pasti tidak pernah salah secara telak mengabaikan fakta adanya alarm palsu pada 42 wafer.\n- **Pilihan C Salah:** Mengeluarkan rekomendasi normatif universal bagi seluruh pabrik di dunia yang melompat keluar dari batasan konteks pengujian pabrik tersebut.\n- **Pilihan D Salah:** Menghakimi secara ekstrem bahwa lapisan reflektif sama sekali tidak dapat diinspeksi oleh AI apa pun di masa mendatang.\n- **Pilihan E Salah:** Menyimpulkan bahwa sistem gagal total merupakan generalisasi keliru yang menafikan capaian akurasi 96,5% pada mayoritas wafer."
-    },
-    {
-      "example_id": "pu-01-01-ex8",
-      "variation_name": "Variasi 8: Simpulan Proporsi Sampel Vitalitas Dialek Bahasa Daerah (Level: Mudah)",
-      "difficulty": "easy",
-      "question_type": "standard_mc",
-      "context_markdown": "Penelitian sosiolinguistik terhadap 250 remaja usia 15–18 tahun di perkampungan nelayan Teluk Bahari mendata pola komunikasi sehari-hari mereka. Hasil survei mencatat bahwa 195 remaja masih aktif menggunakan dialek lokal pesisir saat berinteraksi di lingkungan keluarga dan sesama teman sebaya. Sementara itu, 55 remaja lainnya menyatakan lebih sering menggunakan bahasa Indonesia ragam percakapan santai perkotaan karena terbiasa berinteraksi melalui media sosial dan tayangan video daring.",
-      "question_markdown": "Simpulan yang **paling tepat** mengenai pola berbahasa remaja di perkampungan nelayan Teluk Bahari adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Seluruh remaja di perkampungan nelayan Teluk Bahari telah melupakan dialek lokal pesisir akibat paparan media sosial."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Bahasa Indonesia ragam santai selalu menggantikan kedudukan bahasa daerah pada seluruh generasi muda pesisir di Indonesia."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Mayoritas remaja di perkampungan nelayan tersebut masih mempertahankan penggunaan dialek lokal pesisir dalam komunikasi harian mereka."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Remaja yang aktif menggunakan media sosial pasti tidak mampu berbicara dalam dialek lokal pesisir dengan fasih."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Dialek lokal pesisir hanya bisa dipertahankan apabila generasi muda dilarang mengakses gawai dan internet."
-        }
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Laporan audit kualitas terhadap 40 gerai kopi waralaba Z mencatat bahwa 36 gerai memenuhi seluruh standar kebersihan alat seduh, sedangkan 4 gerai lainnya mendapat catatan perbaikan karena keterlambatan sanitasi harian. Berdasarkan informasi tersebut, pernyataan: *'Seluruh gerai kopi waralaba Z telah memenuhi standar kebersihan alat seduh tanpa pengecualian'* bernilai ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
       ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati angka proporsi: dari total 250 remaja yang disurvei, sebanyak 195 orang masih aktif bertutur dialek lokal. Hitung persentasenya: 195 dari 250 adalah 78%. Karena 78% merupakan kelompok mayoritas (sebagian besar), carilah opsi yang menggunakan kuantor terukur tersebut dan hindari opsi yang memukul rata dengan kata \"seluruh\" atau \"selalu\"!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Sampel & Variabel:** Pengamatan sosiolinguistik pada kelompok remaja usia 15–18 tahun di perkampungan nelayan Teluk Bahari ($n = 250$).\n- **Perhitungan Proporsi Bahasa:**\n  $$\\text{Proporsi Penutur Dialek Lokal} = \\frac{195}{250} \\times 100\\% = 78\\%$$\n  $$\\text{Proporsi Ragam Santai Perkotaan} = \\frac{55}{250} \\times 100\\% = 22\\%$$\n- **Penarikan Simpulan Induktif:** Karena $78\\%$ merupakan porsi mayoritas nyata, simpulan induktif yang valid menyatakan bahwa *\"mayoritas remaja di perkampungan nelayan tersebut masih mempertahankan penggunaan dialek lokal pesisir\"*.\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Hitung Proporsi Mayoritas dan Eliminasi Pukul Rata):**\n\n1. Hitung sekilas: $195/250 = 78\\%$ (artinya mayoritas/sebagian besar, bukan seluruhnya).\n2. Coret pilihan **A** karena menuduh *\"seluruh remaja telah melupakan\"* (padahal 195 masih aktif).\n3. Coret pilihan **B** karena memuat kata mutlak *\"selalu\"* dan memperluas cakupan ke *\"seluruh pesisir Indonesia\"*.\n4. Coret pilihan **D** dan **E** karena memvonis kepastian ekstrem yang tidak berdasar.\n5. Pilihan yang tepat dan objektif adalah pilihan **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengklaim secara bertentangan bahwa seluruh remaja telah melupakan dialek lokal, padahal 78% di antaranya masih aktif menggunakan dialek tersebut.\n- **Pilihan B Salah:** Menggunakan kata mutlak \"selalu menggantikan\" dan memperluas simpulan ke tingkat seluruh generasi muda pesisir di Indonesia (*out of scope*).\n- **Pilihan D Salah:** Menghakimi kemampuan berbahasa remaja medsos dengan vonis mutlak (\"pasti tidak mampu\"), padahal teks hanya mendata frekuensi penggunaan bahasa.\n- **Pilihan E Salah:** Memberikan klaim persyaratan mutlak (\"hanya bisa\") tanpa dasar data yang diteliti di dalam wacana."
-    },
-    {
-      "example_id": "pu-01-01-ex9",
-      "variation_name": "Variasi 9: Simpulan Tren Induktif Penyerapan Karbon Mangrove (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Stasiun riset kelautan dan iklim memantau dinamika cadangan karbon pada 50 hektare kawasan restorasi hutan mangrove jenis *Avicennia marina* di Delta Mahakam selama empat tahun berturut-turut. Pada tahun pertama pascapenanaman, laju sekuestrasi karbon tercatat sebesar 4,2 ton $\\text{CO}_2$ per hektare per tahun. Pada tahun kedua dan ketiga, seiring meluasnya sistem perakaran tunjang dan kerapatan kanopi, laju penyerapan karbon naik menjadi 5,8 ton dan 7,5 ton $\\text{CO}_2$ per hektare per tahun. Pada pengukuran akhir tahun keempat, kapasitas serapannya kembali meningkat mencapai 9,1 ton $\\text{CO}_2$ per hektare per tahun.",
-      "question_markdown": "Manakah simpulan yang **paling mungkin benar** mengenai dinamika serapan karbon di kawasan restorasi mangrove tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Laju penyerapan karbon pada tahun kelima pasti akan melampaui angka tepat 12,0 ton $\\text{CO}_2$ per hektare."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Penanaman pohon mangrove jenis *Avicennia marina* merupakan satu-satunya cara yang mampu mengatasi krisis iklim pesisir secara global."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Program restorasi mangrove di kawasan tersebut cenderung berbanding lurus dengan peningkatan kapasitas penyerapan karbon tahunan secara konsisten."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Kawasan hutan pesisir lain di luar Delta Mahakam yang tidak direstorasi pasti mengalami degradasi emisi yang tidak tertolong."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Laju sekuestrasi karbon hutan mangrove dipastikan selalu lebih tinggi daripada seluruh ekosistem hutan hujan tropis daratan."
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati arah pergerakan data dari tahun ke tahun: laju penyerapan naik berurutan dari 4,2 $\\rightarrow$ 5,8 $\\rightarrow$ 7,5 $\\rightarrow$ 9,1 ton. Rangkaian waktu ini menunjukkan tren positif. Cari opsi dengan derajat kemungkinan terukur (*\"cenderung berbanding lurus\"*) dan hindari opsi yang memastikan angka di masa depan atau mengklaim kata mutlak!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Data Rangkaian Waktu (Time Series):**\n  - Tahun 1: $4{,}2$ ton $\\text{CO}_2$/ha/tahun\n  - Tahun 2: $5{,}8$ ton $\\text{CO}_2$/ha/tahun (naik $+1{,}6$ ton)\n  - Tahun 3: $7{,}5$ ton $\\text{CO}_2$/ha/tahun (naik $+1{,}7$ ton)\n  - Tahun 4: $9{,}1$ ton $\\text{CO}_2$/ha/tahun (naik $+1{,}6$ ton)\n- **Prinsip Induksi Tren Berkala:** Kenaikan laju penyerapan yang berlangsung secara teratur dan stabil selama empat tahun berturut-turut merefleksikan kecenderungan (*trend*) yang konsisten. Simpulan induktif yang valid dirumuskan secara terukur dan probabilistik: program restorasi di kawasan tersebut *\"cenderung berbanding lurus dengan peningkatan kapasitas penyerapan karbon tahunan secara konsisten\"*.\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Deteksi Tren Positif dan Eliminasi Vonis Mutlak):**\n\n1. Amati kenaikan stabil: $4{,}2 \\rightarrow 5{,}8 \\rightarrow 7{,}5 \\rightarrow 9{,}1$ menunjukkan tren bertumbuh konsisten.\n2. Coret pilihan **A** karena memastikan masa depan (*\"pasti akan melampaui tepat 12,0 ton\"*).\n3. Coret pilihan **B** karena klaim mutlak ekstrem (*\"satu-satunya cara\"*) dan melompat ke skala global.\n4. Coret pilihan **D** dan **E** karena menghakimi wilayah lain di luar wacana (*out of scope*) serta membandingkan dengan ekosistem yang tidak diteliti.\n5. Pilihan yang aman, terukur, dan objektif adalah pilihan **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Memastikan nilai numerik tahun kelima secara pasti (\"pasti melampaui tepat 12,0 ton\") merupakan ramalan berlebihan tanpa bukti empiris tahun berjalan.\n- **Pilihan B Salah:** Menggunakan frasa mutlak \"satu-satunya cara\" dan memperluas ruang lingkup secara global yang tidak didukung fakta wacana.\n- **Pilihan D Salah:** Menghakimi kondisi kawasan di luar Delta Mahakam dengan vonis ekstrem (\"pasti mengalami degradasi tidak tertolong\") yang keluar dari batasan penelitian.\n- **Pilihan E Salah:** Membandingkan laju serapan secara sepihak dengan hutan hujan tropis daratan yang sama sekali tidak dibahas dalam data teks."
-    },
-    {
-      "example_id": "pu-01-01-ex10",
-      "variation_name": "Variasi 10: Evaluasi Kualitas Generalisasi Bantuan Usaha UMKM (Level: Sulit)",
-      "difficulty": "hard",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah konsultan bisnis menyimpulkan bahwa *\"Pemberian paket subsidi internet cepat dan pendampingan lokapasar digital terbukti menjamin lonjakan laba bersih di atas 50% bagi seluruh pelaku usaha mikro, kecil, dan menengah (UMKM) di Indonesia.\"* Simpulan ini dirumuskan setelah konsultan tersebut melakukan uji coba pada 30 pemilik kedai kopi dan gerai martabak kekinian di sebuah sentra kuliner modern di Kota Bandung yang diberikan pendampingan pemasaran digital intensif selama empat minggu, dengan hasil 27 pemilik gerai membukukan kenaikan omzet rata-rata 52%.",
-      "question_markdown": "Manakah pernyataan di bawah ini yang **paling tepat mengevaluasi kelemahan** dari generalisasi konsultan bisnis tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Konsultan tidak mengikutsertakan pelaku usaha kuliner dari segmen restoran waralaba internasional skala besar."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Kenaikan omzet sebesar 52% dinilai terlalu rendah untuk dapat dikategorikan sebagai lonjakan keuntungan bisnis."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Durasi penelitian selama empat minggu dinilai terlalu panjang untuk mengukur efektivitas kampanye pemasaran digital."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Ukuran sampel sangat terbatas dan hanya terpusat pada segmen kuliner modern di satu kota besar sehingga tidak mewakili keragaman sektor dan profil seluruh UMKM di Indonesia."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Pemilik gerai martabak dan kedai kopi pada umumnya sudah memiliki modal kerja awal yang jauh lebih besar daripada pelaku usaha lainnya."
-        }
-      ],
-      "correct_answer": "D",
-      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan jurang pemisah antara ruang lingkup sampel dengan simpulan: sampel hanya 30 gerai kuliner modern di Bandung, sedangkan simpulan mengklaim berlaku untuk *\"seluruh pelaku UMKM di Indonesia\"* (termasuk pertanian, kerajinan, pelosok daerah, dsb.). Cacat logika ini merupakan generalisasi terburu-buru (*hasty generalization*) akibat sampel sempit dan tidak mewakili (*unrepresentative*)!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Klaim Simpulan Universal:** Konsultan mengklaim intervensi menjamin keberhasilan bagi *\"seluruh pelaku UMKM di Indonesia\"* lintas sektor industri, lokasi geografis, dan tingkat kematangan usaha.\n- **Karakteristik Sampel Faktual:** Hanya melibatkan $n = 30$ pelaku usaha dari subsektor yang sangat spesifik dan homogen (kuliner modern/kopi/martabak), di satu kawasan sentra modern di Kota Bandung dengan fasilitas infrastruktur prima.\n- **Kaidah Evaluasi Generalisasi (Hasty Generalization):** Sampel yang berukuran amat kecil, berlokasi tunggal, dan hanya mencakup satu ceruk sektor tidak memiliki validitas keterwakilan (*representativeness*) untuk digeneralisasikan ke populasi UMKM nasional yang sangat majemuk. Selain itu, konsultan menyamakan kenaikan omzet kotor dengan kenaikan laba bersih secara gegabah.\n\n**Jawaban: D**",
-      "quick_trick_markdown": "**Cara Cepat (Identifikasi Cacat Keterwakilan Sampel):**\n\n1. Bandingkan cakupan sampel (*hanya 30 gerai kuliner di Bandung*) dengan klaim kesimpulan (*seluruh UMKM di Indonesia*).\n2. Adanya kesenjangan ekstrem antara sampel homogen sempit dengan populasi nasional membuktikan cacat keterwakilan sampel.\n3. Cari opsi yang mengkritisi ketidaklayakan representasi sampel tersebut.\n4. Jawaban yang tepat dan komprehensif adalah pilihan **D**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Restoran waralaba besar bukan bagian dari sasaran UMKM, sehingga tidak relevan dimasukkan ke dalam sampel.\n- **Pilihan B Salah:** Kenaikan 52% justru merupakan lonjakan omzet yang tinggi, bukan rendah.\n- **Pilihan C Salah:** Durasi empat minggu merupakan jangka waktu wajar dalam menilai dampak awal pendampingan operasional bulanan.\n- **Pilihan E Salah:** Asumsi perbandingan modal kerja awal merupakan spekulasi yang tidak menyentuh cacat metodologis representasi populasi."
-    },
-    {
-      "example_id": "pu-01-01-ex11",
-      "variation_name": "Variasi 11: Simpulan Proporsi Sampel Intervensi Ergonomi Meja Dinamis (Level: Mudah)",
-      "difficulty": "easy",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah riset kedokteran okupasi mengevaluasi efektivitas fasilitas meja kerja dinamis (*sit-stand desk*) yang dipadukan dengan sesi peregangan terjadwal terhadap 350 pekerja kantor dengan waktu duduk di atas 7 jam per hari. Setelah penerapan selama enam bulan, sebanyak 294 pekerja melaporkan penurunan intensitas nyeri punggung bawah secara nyata dan perbaikan kelancaran sirkulasi darah harian. Sementara itu, 56 pekerja lainnya menyatakan tidak merasakan perbaikan yang berarti karena memiliki riwayat saraf terjepit menahun atau tidak tertib melakukan rotasi posisi duduk-berdiri.",
-      "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Sebagian besar pekerja kantor yang menggunakan meja dinamis dan sesi peregangan terjadwal merasakan manfaat pengurangan nyeri punggung bawah."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Seluruh pekerja kantor dengan waktu duduk panjang pasti terbebas dari keluhan nyeri punggung jika menggunakan meja dinamis."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Meja kerja statis konvensional selalu menjadi penyebab tunggal kelumpuhan saraf pada seluruh pekerja meja di perkotaan."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pekerja yang memiliki riwayat saraf terjepit menahun dipastikan tidak akan pernah mengalami kesembuhan fisik apa pun."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Fasilitas meja kerja dinamis hanya memberikan dampak positif apabila diterapkan di luar gedung perkantoran."
-        }
-      ],
-      "correct_answer": "A",
-      "hint_markdown": "💡 **Petunjuk Soal:** Hitung proporsi responden yang merasakan manfaat: 294 dari 350 orang adalah 84% (mayoritas). Ada 56 orang (16%) yang tidak merasakan perubahan. Karena ada pengecualian, singkirkan kata bernada mutlak seperti *\"seluruh\"* atau *\"pasti\"*, dan pilihlah simpulan dengan kuantor terukur yang tepat!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Populasi Sampel:** Pekerja kantor dengan durasi duduk tinggi ($n = 350$).\n- **Kalkulasi Proporsi:**\n  $$\\text{Proporsi Keberhasilan} = \\frac{294}{350} \\times 100\\% = 84\\%$$\n  $$\\text{Proporsi Tanpa Perubahan} = \\frac{56}{350} \\times 100\\% = 16\\%$$\n- **Penarikan Kesimpulan:** Karena persentase responden yang merasakan manfaat mencapai $84\\%$ (proporsi dominan, bukan $100\\%$), simpulan induktif yang valid wajib menggunakan kuantor probabilistik terukur, yaitu *\"sebagian besar\"* pada kelompok subjek yang diteliti.\n\n**Jawaban: A**",
-      "quick_trick_markdown": "**Cara Cepat (Eliminasi Kata Mutlak Berdasarkan Pengecualian Data):**\n\n1. Karena terdapat 56 pekerja yang tidak merasakan perbaikan, kata mutlak seperti *\"seluruh\"* dan *\"pasti\"* langsung gugur.\n2. Coret pilihan **B** (*seluruh pekerja... pasti terbebas*).\n3. Coret pilihan **C** (*selalu menjadi penyebab tunggal kelumpuhan*) dan **D** (*dipastikan tidak akan pernah...*).\n4. Coret pilihan **E** karena bertentangan dengan konteks riset perkantoran.\n5. Opsi yang sejalan dengan data 84% dan bernada terukur adalah pilihan **A**.",
-      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menggunakan kata \"seluruh\" dan \"pasti terbebas\", padahal wacana mencatat 56 pekerja tidak merasakan perubahan signifikan.\n- **Pilihan C Salah:** Mengklaim meja statis selalu menjadi penyebab tunggal kelumpuhan, yang merupakan lompatan berlebihan tanpa dasar teks.\n- **Pilihan D Salah:** Menjatuhkan vonis kepastian mutlak (\"dipastikan tidak akan pernah mengalami kesembuhan fisik apa pun\") yang spekulatif dan ekstrem.\n- **Pilihan E Salah:** Memutarbalikkan konteks wacana dengan menyatakan dampak hanya positif di luar gedung perkantoran."
-    },
-    {
-      "example_id": "pu-01-01-ex12",
-      "variation_name": "Variasi 12: Evaluasi Plausibilitas Ketahanan Baterai Solid-State (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Laboratorium pengujian material energi menguji ketahanan siklus pengisian cepat (*ultra-fast charging*) pada 500 sel purwarupa baterai padat (*solid-state battery*) berbasis elektrolit sulfida padat. Setelah menjalani 1.500 kali siklus pengisian penuh berdaya tinggi, sebanyak 465 sel baterai berhasil mempertahankan retensi kapasitas daya di atas 90% dengan struktur antarmuka elektroda yang stabil. Di sisi lain, sebanyak 35 sel mengalami pembentukan mikro-retakan pada lapisan elektrolit akibat paparan fluktuasi tekanan mekanis berulang saat pengujian getaran ekstrem.",
-      "question_markdown": "Berdasarkan hasil pengujian tersebut, manakah simpulan yang **paling mungkin benar**?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Purwarupa baterai padat tersebut telah mencapai kesempurnaan mutlak sehingga pasti tidak akan mengalami degradasi selamanya."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Purwarupa baterai padat berbasis elektrolit sulfida tersebut pada umumnya menunjukkan stabilitas daya yang tinggi pada pengisian cepat, kendati masih rentan terhadap tekanan getaran mekanis ekstrem."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Munculnya mikro-retakan pada 35 sel membuktikan bahwa seluruh teknologi baterai padat gagal total dan harus ditinggalkan."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Seluruh pabrik kendaraan listrik di dunia wajib segera menghentikan penggunaan baterai litium-ion cair dalam bulan ini."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Pada pengujian 3.000 siklus berikutnya, jumlah sel yang retak dipastikan tetap persis 35 sel."
-        }
-      ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati dua sisi data: 465 dari 500 sel (93%) menunjukkan stabilitas tinggi, sedangkan 35 sel (7%) mengalami retakan pada uji getaran ekstrem. Simpulan induktif yang sehat tidak boleh memukul rata bahwa baterai sudah sempurna seratus persen, atau sebaliknya memvonis gagal total. Pilihlah simpulan yang objektif merangkul kedua sisi data secara proporsional!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Hasil Uji Coba Material:**\n  - Tingkat keberhasilan umum: $\\frac{465}{500} \\times 100\\% = 93\\%$ sel berkinerja unggul (retensi $> 90\\%$ pasca-1.500 siklus).\n  - Batasan/kelemahan teridentifikasi: $\\frac{35}{500} \\times 100\\% = 7\\%$ sel mengalami mikro-retakan akibat getaran mekanis ekstrem.\n- **Kaidah Simpulan Plausibel (Balanced Generalization):** Simpulan yang paling mungkin benar wajib merefleksikan generalisasi terukur yang seimbang: mengakui keunggulan mayoritas (*\"pada umumnya menunjukkan stabilitas daya yang tinggi\"*) sekaligus mengakui kendala teknis yang nyata (*\"kendati masih rentan terhadap tekanan getaran mekanis ekstrem\"*).\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Pilih Kesimpulan Berimbang dan Eliminasi Klaim Mutlak):**\n\n1. Coret pilihan **A** karena menggunakan klaim absolut yang menyangkal fakta (*\"kesempurnaan mutlak, pasti tidak terdegradasi selamanya\"*).\n2. Coret pilihan **C** karena memvonis kegagalan mutlak (*\"gagal total dan harus ditinggalkan\"*).\n3. Coret pilihan **D** karena membuat instruksi wajib universal melompat ke skala dunia (*out of scope*).\n4. Coret pilihan **E** karena memastikan masa depan (*\"dipastikan tetap persis 35 sel\"*).\n5. Pilihan yang berimbang, proporsional, dan ilmiah adalah pilihan **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan fakta kerusakan pada 35 sel dengan membuat klaim kesempurnaan mutlak yang mustahil secara teknis.\n- **Pilihan C Salah:** Menggeneralisasi kegagalan total secara ekstrem hanya karena ada 7% sel yang retak pada kondisi pengujian mekanis ekstrem.\n- **Pilihan D Salah:** Mengeluarkan seruan kewajiban bagi seluruh industri dunia yang melompat dari konteks uji laboratorium material.\n- **Pilihan E Salah:** Memastikan angka masa depan secara kaku tanpa pengujian empiris lanjutan pada siklus 3.000."
-    },
-    {
-      "example_id": "pu-01-01-ex13",
-      "variation_name": "Variasi 13: Simpulan Tren Induktif Revitalisasi Rumah Tradisional Adat (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Pemerintah daerah bersama yayasan pelestari cagar budaya mendata progres pemugaran rumah panggung kayu tradisional di kawasan permukiman adat Ranah Tua selama empat periode anggaran berkala. Pada periode I, pemugaran awal swadaya baru terlaksana pada 12 unit rumah. Pada periode II, setelah diluncurkan program insentif bahan baku kayu tahan rayap dan subsidi upah tukang, jumlah rumah yang terestorasi bertambah menjadi 25 unit. Tren berlanjut pada periode III dan IV dengan jumlah rumah yang berhasil dipugar mencapai masing-masing 46 unit dan 78 unit, disertai bertambahnya pengrajin ukir lokal dari 8 orang menjadi 34 orang.",
-      "question_markdown": "Manakah simpulan yang **paling mungkin benar** mengenai dampak program pelestarian di kawasan permukiman adat Ranah Tua tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Seluruh rumah panggung tradisional di Ranah Tua telah selesai dipugar 100% pada akhir periode IV."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Insentif bahan baku kayu tahan rayap merupakan satu-satunya cara mutlak untuk menyelamatkan seluruh situs budaya di Indonesia."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Pada periode V, jumlah rumah tradisional yang dipugar pasti melesat tepat menjadi 150 unit."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Kawasan permukiman adat lain yang tidak menerima subsidi dipastikan seluruh bangunannya akan segera musnah."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Pelaksanaan program insentif dan subsidi upah cenderung konsisten meningkatkan capaian pemugaran rumah adat serta keterlibatan pengrajin lokal di kawasan tersebut."
-        }
-      ],
-      "correct_answer": "E",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati perkembangan berkala data pemugaran: berturut-turut 12 unit $\\rightarrow$ 25 unit $\\rightarrow$ 46 unit $\\rightarrow$ 78 unit, diiringi peningkatan jumlah pengrajin ukir dari 8 menjadi 34 orang. Arah pertumbuhan ini positif dan konsisten. Cari opsi yang menyatakan kecenderungan dampak positif secara terukur (*\"cenderung konsisten meningkatkan...\"*) tanpa melompat ke klaim mutlak atau angka masa depan!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Rangkaian Data Pengamatan:**\n  - Periode I: $12$ unit rumah (pengrajin ukir: $8$ orang)\n  - Periode II: $25$ unit rumah (tumbuh $+13$ unit)\n  - Periode III: $46$ unit rumah (tumbuh $+21$ unit)\n  - Periode IV: $78$ unit rumah (tumbuh $+32$ unit; pengrajin: $34$ orang)\n- **Prinsip Penarikan Simpulan Induktif Tren:** Rangkaian peningkatan hasil restorasi fisik dan penyerapan tenaga pengrajin lokal yang konsisten dari waktu ke waktu menunjukkan adanya kecenderungan dampak positif yang nyata. Simpulan induktif yang valid adalah bahwa program tersebut *\"cenderung konsisten meningkatkan capaian pemugaran rumah adat serta keterlibatan pengrajin lokal di kawasan tersebut\"*.\n\n**Jawaban: E**",
-      "quick_trick_markdown": "**Cara Cepat (Periksa Arah Tren dan Buang Opsi Bernada Mutlak):**\n\n1. Amati angka peningkatan yang teratur: $12 \\rightarrow 25 \\rightarrow 46 \\rightarrow 78$ unit (tren naik konsisten).\n2. Coret pilihan **A** karena menyatakan selesai $100\\%$ mutlak tanpa data total populasi rumah.\n3. Coret pilihan **B** karena klaim ekstrem *\"satu-satunya cara mutlak\"* dan melompat ke skala nasional.\n4. Coret pilihan **C** karena memastikan angka masa depan (*\"pasti melesat tepat 150 unit\"*).\n5. Coret pilihan **D** karena vonis kepastian kepunahan pada wilayah lain (*out of scope*).\n6. Pilihan yang menggunakan kalimat terukur dan ilmiah adalah pilihan **E**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menyatakan pemugaran telah selesai 100% merupakan klaim keliru karena wacana tidak menyebutkan total keseluruhan populasi rumah panggung di Ranah Tua.\n- **Pilihan B Salah:** Menggunakan kata mutlak \"satu-satunya cara mutlak\" dan melompat keluar lingkup ke seluruh situs budaya nasional.\n- **Pilihan C Salah:** Menetapkan angka masa depan secara mutlak (\"pasti melesat tepat 150 unit\") yang belum terjadi secara empiris.\n- **Pilihan D Salah:** Menjatuhkan vonis ekstrem kepunahan terhadap kawasan lain yang tidak menjadi subjek pengamatan teks."
-    },
-    {
-      "example_id": "pu-01-01-ex14",
-      "variation_name": "Variasi 14: Simpulan Proporsi Sampel Biofertilizer Fungi Mikoriza (Level: Mudah)",
-      "difficulty": "easy",
-      "question_type": "standard_mc",
-      "context_markdown": "Uji coba lapangan pemberian inokulan konsorsium fungi mikoriza arbuskular (*biofertilizer*) dilakukan pada 400 petak lahan pertanian jagung yang mengalami degradasi unsur hara di dataran rendah Jawa Timur. Setelah satu musim tanam penuh (90 hari), sebanyak 348 petak lahan mencatatkan peningkatan kapasitas serapan fosfor tanaman sebesar 35%–45% dan hasil panen biji kering meningkat rata-rata 25% dibandingkan musim sebelumnya. Di sisi lain, sebanyak 52 petak lahan tidak menunjukkan perubahan hasil panen yang signifikan akibat struktur tanah yang mengalami pemadatan berat (*hardpan*) atau terdampak genangan air berlebih saat fase vegetatif awal.",
-      "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Seluruh petak lahan pertanian jagung di Jawa Timur dipastikan menghasilkan panen melimpah jika diberi inokulan fungi mikoriza."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Sebagian besar petak lahan pertanian jagung yang diuji coba mengalami peningkatan penyerapan hara dan hasil panen setelah aplikasi inokulan fungi mikoriza."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Petak lahan yang memiliki struktur tanah memadat berat pasti tidak akan pernah bisa ditanami jagung selamanya."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Inokulan fungi mikoriza selalu menjadi satu-satunya faktor yang menentukan kesuburan tanah di semua lahan pertanian Indonesia."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Petani yang tidak menggunakan inokulan fungi mikoriza dipastikan akan mengalami gagal panen total pada musim berikutnya."
-        }
-      ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati proporsi sampel yang berhasil: 348 dari 400 petak lahan (87%) menunjukkan peningkatan hasil, sedangkan 52 petak (13%) tidak mengalami perubahan signifikan. Karena ada 52 petak pengecualian, hindari opsi bernada mutlak (*\"seluruh... dipastikan\"*), dan pilih simpulan terukur yang setia pada kelompok sampel yang diteliti!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Data Sampel:** Pengujian dilakukan terhadap $n = 400$ petak lahan jagung terdegradasi di Jawa Timur.\n- **Kalkulasi Proporsi Hasil:**\n  $$\\text{Proporsi Positif} = \\frac{348}{400} \\times 100\\% = 87\\%$$\n  $$\\text{Proporsi Tanpa Perubahan} = \\frac{52}{400} \\times 100\\% = 13\\%$$\n- **Kaidah Penarikan Simpulan:** Proporsi $87\\%$ mencerminkan mayoritas dominan, namun bukan kepastian $100\\%$. Kuantor yang sah menurut penalaran induktif adalah *\"sebagian besar\"* pada kelompok *\"petak lahan pertanian jagung yang diuji coba\"*.\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Deteksi Pengecualian dan Buang Kata Mutlak):**\n\n1. Karena terdapat 52 petak lahan yang tidak mengalami kenaikan panen, kata mutlak seperti *\"seluruh... dipastikan\"* otomatis gugur.\n2. Coret pilihan **A** (*seluruh... dipastikan*), **C** (*pasti tidak akan pernah... selamanya*), dan **D** (*selalu menjadi satu-satunya... di semua lahan*).\n3. Coret pilihan **E** karena menghakimi petani lain dengan vonis ekstrem (*gagal panen total*).\n4. Pilihan yang terukur, ilmiah, dan selaras dengan fakta 87% adalah pilihan **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggeneralisasi secara berlebihan (*overgeneralization*) dengan kata \"seluruh\" dan \"dipastikan\", padahal ada 52 petak yang tidak mengalami peningkatan hasil panen.\n- **Pilihan C Salah:** Menjatuhkan vonis permanen mutlak (\"pasti tidak akan pernah bisa ditanami jagung selamanya\") yang tidak memiliki dasar ilmiah dalam wacana.\n- **Pilihan D Salah:** Mengklaim inokulan sebagai \"satu-satunya faktor mutlak\" dan melompat keluar batasan wilayah ke seluruh Indonesia (*out of scope*).\n- **Pilihan E Salah:** Membuat spekulasi ekstrem mengenai kondisi kebalikan yang sama sekali tidak diteliti pada petani lain."
-    },
-    {
-      "example_id": "pu-01-01-ex15",
-      "variation_name": "Variasi 15: Simpulan Tren Induktif Insentif Angkutan Umum Perkotaan (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Dinas perhubungan sebuah kota metropolitan mengevaluasi dampak integrasi tarif tiket bersubsidi dan penambahan armada bus listrik pada empat triwulan berturut-turut. Pada triwulan I, peluncuran tarif terintegrasi meningkatkan jumlah penumpang harian bus raya terpadu (*Bus Rapid Transit* - BRT) sebesar 14%. Pada triwulan II dan III, seiring dibukanya rute koridor pengumpan baru dan subsidi tarif khusus pelajar/pekerja, rata-rata penumpang harian bertambah masing-masing sebesar 22% dan 31% dibandingkan triwulan dasar. Pada triwulan IV, kenaikan volume penumpang mencapai 38%, diiringi penurunan rata-rata kepadatan kendaraan pribadi di sepanjang koridor utama sebesar 18%.",
-      "question_markdown": "Manakah pernyataan yang **paling mungkin benar** mengenai pelaksanaan kebijakan subsidi angkutan umum di kota tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Kebijakan integrasi tarif dan subsidi rute cenderung efektif meningkatkan minat masyarakat menggunakan transportasi publik serta mengurangi kepadatan lalu lintas di koridor kota tersebut."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Integrasi tarif bersubsidi merupakan satu-satunya cara mutlak untuk melenyapkan kemacetan lalu lintas di seluruh wilayah Indonesia."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Pada triwulan kelima tahun berikutnya, kenaikan jumlah penumpang harian dipastikan melonjak tepat sebesar 50%."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Seluruh pemilik kendaraan pribadi di kota metropolitan tersebut telah beralih sepenuhnya 100% menggunakan bus raya terpadu."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Layanan angkutan umum di kota-kota lain yang tidak bersubsidi dipastikan akan mengalami kebangkrutan operasional total."
-        }
-      ],
-      "correct_answer": "A",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati rangkaian berkala kenaikan penumpang: 14% -> 22% -> 31% -> 38%, disertai penurunan kepadatan kendaraan pribadi sebesar 18%. Arah data bergerak positif dan konsisten antarperiode. Pilihlah simpulan induktif yang memakai kuantor probabilistik ramah seperti *\"cenderung efektif...\"* dan singkirkan klaim angka masa depan mutlak!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Rangkaian Waktu (Time Series Trend):**\n  - Triwulan I: Penumpang naik $+14\\%$\n  - Triwulan II: Penumpang naik $+22\\%$\n  - Triwulan III: Penumpang naik $+31\\%$\n  - Triwulan IV: Penumpang naik $+38\\%$, kepadatan mobil pribadi turun $-18\\%$\n- **Penarikan Simpulan Induktif Tren:** Karena peningkatan jumlah penumpang dan penurunan kemacetan berlangsung teratur dan konsisten selama empat triwulan, kesimpulan induktif yang sah adalah bahwa program tersebut *\"cenderung efektif meningkatkan minat masyarakat menggunakan transportasi publik serta mengurangi kepadatan lalu lintas di koridor kota tersebut\"*.\n\n**Jawaban: A**",
-      "quick_trick_markdown": "**Cara Cepat (Pilih Arah Tren Terukur dan Eliminasi Klaim Mutlak):**\n\n1. Amati arah angka yang meningkat bertahap: $14\\% \\rightarrow 22\\% \\rightarrow 31\\% \\rightarrow 38\\%$.\n2. Coret pilihan **B** (*satu-satunya cara mutlak... di seluruh Indonesia*).\n3. Coret pilihan **C** karena memvonis kepastian masa depan (*dipastikan tepat 50%*).\n4. Coret pilihan **D** karena klaim ekstrem *100% beralih*.\n5. Coret pilihan **E** karena berspekulasi atas kebangkrutan kota lain (*out of scope*).\n6. Opsi yang bijak, ilmiah, dan paling mungkin benar adalah pilihan **A**.",
-      "why_others_are_wrong_markdown": "- **Pilihan B Salah:** Menggunakan kata mutlak \"satu-satunya cara mutlak\" dan memperluas kesimpulan ke skala seluruh wilayah Indonesia.\n- **Pilihan C Salah:** Meramal angka masa depan triwulan kelima secara pasti (tepat 50%), padahal tren induktif tidak pernah memastikan angka presisi sebelum data terkumpul.\n- **Pilihan D Salah:** Mengklaim perpindahan 100% mutlak, padahal teks hanya mencatat penurunan kepadatan sebesar 18%.\n- **Pilihan E Salah:** Menyimpulkan nasib negatif kota lain yang tidak pernah diamati dalam riset."
-    },
-    {
-      "example_id": "pu-01-01-ex16",
-      "variation_name": "Variasi 16: Evaluasi Keterwakilan Sampel Efektivitas Suplemen Adaptogen (Level: Sulit / HOTS)",
-      "difficulty": "hard",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah jenama suplemen kesehatan meluncurkan klaim promosi: *\"Konsumsi ekstrak herbal adaptogen terbukti ampuh melenyapkan stres kerja dan memulihkan vitalitas kognitif pada seluruh tenaga medis di rumah sakit umum seluruh Indonesia.\"* Simpulan ini ditarik berdasarkan uji coba mandiri terhadap 20 dokter muda yang bertugas di unit gawat darurat (UGD) satu rumah sakit swasta tipe A di Jakarta Pusat. Selama tiga minggu, ke-20 dokter tersebut diberi ekstrak herbal harian, dan hasilnya skor kuesioner kelelahan mental (*Burnout Assessment Tool*) mereka turun rata-rata 35%.",
-      "question_markdown": "Manakah pernyataan berikut yang **paling tepat mengevaluasi cacat logika penalaran induktif** dari klaim jenama suplemen tersebut?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Peneliti tidak membandingkan efektivitas ekstrak herbal adaptogen dengan multivitamin kimia sintetik pada dokter tersebut."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Penurunan skor kelelahan mental sebesar 35% dinilai masih terlalu rendah untuk dapat dilaporkan sebagai hasil pengujian ilmiah."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Sampel pengujian terlalu kecil dan hanya terbatas pada satu profesi di satu rumah sakit perkotaan sehingga tidak representatif untuk digeneralisasikan ke seluruh tenaga medis nasional."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pengujian selama tiga minggu dinilai terlalu lama sehingga kelelahan mental berkurang secara alami tanpa pengaruh herbal."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Dokter muda di unit gawat darurat memiliki tingkat toleransi stres fisik yang jauh lebih rendah daripada seluruh tenaga medis lainnya."
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati kesenjangan besar antara sampel dengan klaim simpulan: sampel hanya berjumlah 20 dokter muda di 1 RS swasta Jakarta Pusat, tetapi kesimpulannya memukul rata *\"seluruh tenaga medis di rumah sakit umum seluruh Indonesia\"* (mencakup perawat, bidan, radiografer, RS pelosok, dll.). Cacat ini merupakan generalisasi terburu-buru (*hasty generalization*) akibat sampel sempit yang tidak representatif!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Karakteristik Sampel Faktual:** Hanya melibatkan $n = 20$ subjek dari satu kelompok profesi spesifik (dokter muda UGD) di satu lokasi tunggal (RS swasta tipe A Jakarta Pusat).\n- **Cakupan Klaim Simpulan:** Menggeneralisasikan khasiat mutlak kepada *\"seluruh tenaga medis\"* (lintas profesi perawat, bidan, penunjang medis) di *\"seluruh Indonesia\"* (lintas tipe rumah sakit rujukan, daerah kepulauan, dan pedalaman).\n- **Evaluasi Kelemahan Metodologis (Hasty Generalization):** Sampel berukuran kecil, homogen, dan berlokasi tunggal tidak memiliki validitas representasi (*representativeness*) untuk digeneralisasikan ke populasi tenaga kesehatan nasional yang luar biasa heterogen. Pilihan C secara akurat mengidentifikasi cacat logika keterwakilan sampel ini.\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Bandingkan Ruang Lingkup Sampel vs Klaim Simpulan):**\n\n1. Sampel: *hanya 20 dokter muda di 1 RS swasta Jakarta*.\n2. Klaim: *seluruh tenaga medis di seluruh RS umum se-Indonesia*.\n3. Adanya ketimpangan ekstrem antara sampel sempit homogen dengan populasi luas heterogen langsung menandakan masalah keterwakilan sampel (*sample representativeness*).\n4. Jawaban yang tepat dan tepat sasaran adalah pilihan **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Membandingkan dengan multivitamin sintetik adalah opsi pengayaan komparatif, bukan cacat fundamental penarikan kesimpulan populasi.\n- **Pilihan B Salah:** Penurunan skor kelelahan mental sebesar 35% sudah merupakan perubahan klinis yang signifikan, bukan rendah.\n- **Pilihan D Salah:** Durasi tiga minggu adalah interval waktu yang standar dan wajar dalam uji intervensi adaptogen awal.\n- **Pilihan E Salah:** Klaim bahwa dokter muda UGD memiliki toleransi stres lebih rendah adalah prasangka spekulatif tanpa data pendukung teks."
-    },
-    {
-      "example_id": "pu-01-01-ex17",
-      "variation_name": "Variasi 17: Simpulan Proporsi Sampel Efisiensi Visi Komputer Perakitan PCB (Level: Mudah)",
-      "difficulty": "easy",
-      "question_type": "standard_mc",
-      "context_markdown": "Sebuah pabrik perakitan modul elektronik menguji sistem inspeksi visual berbasis kecerdasan buatan (*computer vision inspection system*) pada 600 papan sirkuit cetak (*Printed Circuit Board* - PCB) berkecepatan tinggi. Dari total 600 PCB yang diperiksa, sistem berhasil mendeteksi cacat solder mikro secara akurat pada 558 unit dalam waktu kurang dari 2 detik per unit. Sementara itu, pada 42 unit PCB lainnya, sistem menghasilkan alarm salah (*false positive*) akibat pantulan cahaya berlebih pada lapisan pelindung transparan (*conformal coating*) atau sudut penataan komponen yang sangat padat.",
-      "question_markdown": "Simpulan yang **paling tepat** berdasarkan teks tersebut adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Sistem inspeksi visual AI selalu bebas dari kesalahan pada seluruh jenis komponen elektronik di dunia."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Pantulan cahaya pelindung dipastikan akan merusak seluruh kamera inspeksi industri selamanya."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Sebagian besar papan sirkuit yang diuji coba berhasil diinspeksi secara akurat oleh sistem visi komputer AI."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pabrik elektronik yang tidak menggunakan visi komputer AI pasti akan memproduksi barang cacat 100%."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Seluruh 42 PCB yang menghasilkan alarm salah tidak dapat diperbaiki kembali dan wajib langsung dibuang."
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Hitung proporsi keberhasilan: 558 dari 600 unit PCB adalah 93% (mayoritas). Ada 42 unit (7%) yang mengalami alarm keliru akibat pantulan cahaya. Karena ada pengecualian nyata, hindari pilihan yang menggunakan kata mutlak seperti *\"selalu bebas kesalahan\"* atau vonis berlebihan, dan pilihlah simpulan dengan kuantor *\"sebagian besar\"*!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Populasi Sampel:** Modul PCB yang diuji inspeksi ($n = 600$).\n- **Kalkulasi Proporsi:**\n  $$\\text{Akurasi Berhasil} = \\frac{558}{600} \\times 100\\% = 93\\%$$\n  $$\\text{Alarm Salah (False Positive)} = \\frac{42}{600} \\times 100\\% = 7\\%$$\n- **Penarikan Kesimpulan:** Karena sistem inspeksi akurat pada $93\\%$ sampel namun masih menyisakan $7\\%$ kekeliruan deteksi, simpulan induktif yang valid harus memakai kuantor terukur *\"sebagian besar\"* pada lingkup pengujian PCB tersebut.\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Eliminasi Pilihan Ekstrem dan Kuantor Mutlak):**\n\n1. Karena terdapat 42 PCB yang mengalami alarm salah, klaim bahwa sistem *\"selalu bebas kesalahan\"* pada pilihan **A** otomatis gugur.\n2. Coret pilihan **B** (*merusak kamera selamanya*) dan **D** (*pasti cacat 100%*) karena bernada mutlak dan tidak masuk akal.\n3. Coret pilihan **E** karena menghakimi 42 PCB harus dibuang tanpa ada keterangan teks.\n4. Opsi yang terukur dan setia pada proporsi 93% adalah pilihan **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Menggunakan kuantor mutlak \"selalu bebas dari kesalahan\" dan melompat ke skala seluruh dunia, padahal ada 42 kasus alarm keliru dalam uji coba.\n- **Pilihan B Salah:** Mengklaim kerusakan fisik permanen pada kamera industri, padahal pantulan cahaya hanya menyebabkan kekeliruan pembacaan algoritma visual.\n- **Pilihan D Salah:** Membuat klaim mutlak mengenai pabrik lain yang tidak pernah diuji coba dalam penelitian.\n- **Pilihan E Salah:** Memberikan keputusan teknis sepihak bahwa PCB harus dibuang, padahal teks hanya membahas kesalahan deteksi (alarm salah)."
-    },
-    {
-      "example_id": "pu-01-01-ex18",
-      "variation_name": "Variasi 18: Simpulan Plausibel Literasi Digital Desa Pesisir (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Program pendampingan literasi informasi digital berbasis komunitas diselenggarakan di 250 desa pesisir kepulauan selama satu tahun. Evaluasi akhir mendata bahwa di 215 desa, warga kelompok usia produktif berhasil memanfaatkan aplikasi ponsel pintar untuk memetakan jalur tangkapan ikan ramah lingkungan dan mencatat transaksi penjualan hasil laut secara transparan. Namun, di 35 desa lainnya, adopsi teknologi belum optimal karena kendala keterbatasan kestabilan pasokan listrik tenaga surya dan rendahnya ketersediaan pemancar sinyal telekomunikasi antarwilayah pulau.",
-      "question_markdown": "Berdasarkan laporan evaluasi tersebut, manakah simpulan yang **paling mungkin benar**?",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Program literasi digital tersebut telah menjamin keberhasilan sempurna tanpa kekurangan di seluruh desa pesisir Indonesia."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Program literasi digital pada umumnya efektif memfasilitasi pemanfaatan teknologi tangkapan dan pemasaran bagi sebagian besar desa pesisir binaan, kendati kendala infrastruktur dasar masih membatasi pencapaian di beberapa lokasi."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Kegagalan adopsi teknologi di 35 desa membuktikan bahwa komunitas masyarakat pesisir tidak memiliki kemampuan literasi teknologi sama sekali."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Ketiadaan sinyal di 35 desa kepulauan dipastikan akan berlangsung permanen hingga puluhan tahun mendatang."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Seluruh kapal nelayan di desa pesisir yang telah mengadopsi aplikasi ponsel dipastikan tidak akan pernah mengalami cuaca buruk di laut."
-        }
-      ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati dua sisi temuan evaluasi: 215 dari 250 desa (86%) sukses memanfaatkan aplikasi, sedangkan 35 desa (14%) terhambat oleh pasokan listrik dan sinyal. Simpulan induktif yang sehat tidak boleh mengklaim kesempurnaan 100%, dan tidak boleh meremehkan kemampuan masyarakat secara total. Pilihlah simpulan berimbang yang secara terukur memadukan keberhasilan mayoritas dan kendala nyata di lapangan!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Capaian Evaluasi Program:**\n  - Tingkat keberhasilan adopsi: $\\frac{215}{250} \\times 100\\% = 86\\%$ desa menunjukkan pemanfaatan produktif pada navigasi tangkapan dan transparansi penjualan.\n  - Batasan/kendala lapangan: $\\frac{35}{250} \\times 100\\% = 14\\%$ desa mengalami kendala infrastruktur daya listrik dan sinyal seluler.\n- **Kaidah Simpulan Induktif Berimbang (Balanced Plausibility):** Simpulan yang paling mungkin benar wajib merangkul kedua sisi temuan secara proporsional: mengapresiasi efektivitas mayoritas (*\"pada umumnya efektif memfasilitasi pemanfaatan teknologi... bagi sebagian besar desa binaan\"*) sekaligus mencatat batasan faktual (*\"kendati kendala infrastruktur dasar masih membatasi pencapaian di beberapa lokasi\"*).\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Pilih Kesimpulan Berimbang dan Buang Klaim Ekstrem):**\n\n1. Coret pilihan **A** karena membuat klaim kesempurnaan mutlak (*menjamin keberhasilan sempurna tanpa kekurangan di seluruh desa*).\n2. Coret pilihan **C** karena meremehkan masyarakat pesisir secara ekstrem (*tidak punya kemampuan sama sekali*).\n3. Coret pilihan **D** karena memastikan masa depan secara permanen (*dipastikan permanen berpuluh tahun*).\n4. Coret pilihan **E** karena membuat kesimpulan tidak relevan (*tidak pernah cuaca buruk*).\n5. Pilihan yang mencerminkan penalaran induktif proporsional dan ilmiah adalah pilihan **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Mengabaikan fakta kendala di 35 desa dan memperluas cakupan tanpa dasar ke seluruh desa pesisir Indonesia.\n- **Pilihan C Salah:** Menggeneralisasi kegagalan 35 desa untuk merendahkan seluruh masyarakat pesisir, padahal kendala utamanya adalah infrastruktur listrik dan sinyal.\n- **Pilihan D Salah:** Memastikan masa depan infrastruktur telekomunikasi secara permanen tanpa dasar data empiris.\n- **Pilihan E Salah:** Mengaitkan literasi aplikasi digital dengan kekebalan terhadap fenomena cuaca alam (*non-sequitur*)."
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Premis menyebutkan secara eksplisit bahwa dari 40 gerai yang diaudit, terdapat **4 gerai yang mendapat catatan perbaikan** karena keterlambatan sanitasi harian. Oleh karena itu, generalisasi berkuantor mutlak *'Seluruh gerai kopi waralaba Z telah memenuhi standar kebersihan... tanpa pengecualian'* bertentangan langsung dengan bukti empiris 4 gerai penyangkal tersebut sehingga berstatus **Pasti Salah** (**Opsi C**).",
+      "visual": null
     }
   ]
 }

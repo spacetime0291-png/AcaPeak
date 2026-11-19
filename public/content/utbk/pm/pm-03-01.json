@@ -1,0 +1,125 @@
+{
+  "kode_subbab": "pm-03-01",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 3: Geometri Terapan dan Pengukuran",
+  "judul_subbab": "Aplikasi Teorema Pythagoras dan Trigonometri",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dari puncak mercusuar, petugas melihat Kapal A dengan sudut depresi 30° dan Kapal B dengan sudut depresi 45° pada arah yang sama. Kapal manakah yang posisinya lebih jauh dari mercusuar?",
+      "opsi_cepat": [
+        "Kapal B (sudut depresi 45°)",
+        "Kapal A (sudut depresi 30°)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Sudut depresi diukur dari garis horizontal mendatar ke bawah. Makin kecil sudut turunnya, makin landai garis pandang sehingga jarak mendatar kapal ke kaki mercusuar justru makin jauh."
+    },
+    "konsep_inti_markdown": "- **Teorema Pythagoras ($c^2 = a^2 + b^2$):** Berlaku pada segitiga siku-siku dengan $c$ sisi miring. Hafalkan tripel dasar $(3,4,5)$, $(5,12,13)$, $(7,24,25)$, dan $(8,15,17)$ untuk eksekusi cepat.\\n- **Rasio Trigonometri Siku-Siku:** $\\sin \\theta = \\frac{\\text{depan}}{\\text{miring}}$, $\\cos \\theta = \\frac{\\text{samping}}{\\text{miring}}$, dan $\\tan \\theta = \\frac{\\text{depan}}{\\text{samping}}$.\\n- **Sudut Elevasi & Depresi:** Selalu diukur dari **garis horizontal**, bernilai sama besar akibat hubungan sudut dalam berseberangan.",
+    "radar_jebakan_utbk": [
+      "Mengukur sudut elevasi atau depresi dari dinding/tiang vertikal (bukan dari garis mendatar horizontal), sehingga nilai tangen tertukar.",
+      "Menganggap pergeseran ujung atas tangga yang merosot selalu sama dengan pergeseran kaki tangga, atau lupa mengalikan faktor 2 pada bagian lurus sabuk katrol."
+    ],
+    "stimulus_utama_bersama": "Balai Teknik Kepelabuhanan membangun fasilitas pemantau, dermaga logistik, dan aksesibilitas di Kawasan Pelabuhan Tanjung Harapan dengan rincian teknis berikut:\\n1. **Menara Suar & Zona Labuh:** Menara suar berdiri tegak lurus di bibir dermaga dengan puncak lampu setinggi $60\\text{ m}$ di atas permukaan air laut rata-rata, sedangkan ruang kendali berada pada ketinggian $20\\text{ m}$ di atas permukaan laut. Dari puncak lampu ($60\\text{ m}$), petugas mengamati Kapal Kargo A dengan sudut depresi $30^\\circ$ dan Kapal Pandu B (segaris dengan Kapal A di sisi dermaga yang sama) dengan sudut depresi $45^\\circ$.\\n2. **Tiang Pemancar & Tangga Perawatan:** Di pelataran dermaga yang datar, berdiri tiang pemancar vertikal setinggi $24\\text{ m}$ yang ditahan dua kabel baja lurus dari puncak tiang ke dua angkur tanah yang berjarak $7\\text{ m}$ di sisi barat dan $18\\text{ m}$ di sisi timur pangkal tiang. Sementara itu, tangga perawatan sepanjang $15\\text{ m}$ disandarkan pada dinding gudang dengan jarak kaki tangga $9\\text{ m}$ dari dinding.\\n3. **Jalur Navigasi Kapal:** Kapal Pandu B berlayar meninggalkan titik labuhnya menuju pelampung suar dengan lintasan lurus sejauh $10\\text{ km}$ pada jurusan tiga angka $030^\\circ$, lalu berbelok pada jurusan $120^\\circ$ sejauh $24\\text{ km}$ menuju stasiun karantina.\\n4. **Fasilitas Ramp & Katrol Derek:** Untuk akses kursi roda menuju ruang kendali, dibangun jalan tanjakan (*ramp*) lurus sesuai standar kemiringan maksimum $1 : 12$ (rasio tinggi vertikal terhadap jarak mendatar) untuk mengatasi beda tinggi $1,5\\text{ m}$. Adapun derek bongkar muat memakai dua roda katrol identik berjari-jari $r = 35\\text{ cm}$ ($\\pi = \\frac{22}{7}$) dengan jarak antarpusat katrol $d = 120\\text{ cm}$ yang dihubungkan sabuk lilitan terbuka (*open belt*).",
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='30' y1='175' x2='335' y2='175' stroke='#3B82F6' stroke-width='2'/><rect x='55' y='45' width='16' height='130' fill='#EFF6FF' stroke='#1E293B' stroke-width='2'/><line x1='71' y1='45' x2='325' y2='45' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='71' y1='45' x2='201' y2='175' stroke='#1E293B' stroke-width='2'/><line x1='71' y1='45' x2='296' y2='175' stroke='#10B981' stroke-width='2'/><path d='M 105 45 A 34 34 0 0 1 95 69' fill='none' stroke='#F59E0B' stroke-width='2'/><path d='M 135 45 A 64 64 0 0 1 126 77' fill='none' stroke='#10B981' stroke-width='2'/><circle cx='71' cy='132' r='3.5' fill='#F59E0B'/><circle cx='201' cy='175' r='4.5' fill='#1E293B'/><circle cx='296' cy='175' r='4.5' fill='#10B981'/><text x='24' y='112' font-family='sans-serif' font-size='12' fill='#1E293B'>60 m</text><text x='101' y='63' font-family='sans-serif' font-size='12' fill='#F59E0B'>45°</text><text x='141' y='68' font-family='sans-serif' font-size='12' fill='#10B981'>30°</text><text x='220' y='37' font-family='sans-serif' font-size='12' fill='#94A3B8'>Garis Horizontal</text><text x='178' y='194' font-family='sans-serif' font-size='12' fill='#1E293B'>Kapal B</text><text x='273' y='194' font-family='sans-serif' font-size='12' fill='#10B981'>Kapal A</text></svg>",
+      "caption": "Ilustrasi sudut depresi 30° dan 45° dari puncak menara suar 60 m"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Sudut Elevasi dan Sudut Depresi pada Pengukuran Tinggi Gedung, Menara, atau Jarak Kapal dari Mercusuar",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 1 stimulus utama: puncak menara suar ($60\\text{ m}$) mengamati Kapal A (depresi $30^\\circ$) dan Kapal B (depresi $45^\\circ$) segaris untuk menentukan jarak antarkapal.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nPengamat di puncak menara suar setinggi $60\\text{ m}$ melihat Kapal A dengan sudut depresi $30^\\circ$ dan Kapal B dengan sudut depresi $45^\\circ$ pada satu garis lurus di sisi dermaga yang sama. Karena garis pandang mendatar sejajar permukaan laut, sudut depresi dari menara sama besar dengan sudut elevasi dari masing-masing kapal.\\n\\n**2. Model Matematika (Employing)**\\nTerbentuk dua segitiga siku-siku dengan tinggi tegak sama $h = 60\\text{ m}$. Gunakan rasio tangen ($\\tan \\theta = \\frac{\\text{depan}}{\\text{samping}}$) untuk mencari jarak mendatar ke kaki menara:\\n- Jarak Kapal A: $x_A = \\frac{60}{\\tan 30^\\circ}$\\n- Jarak Kapal B: $x_B = \\frac{60}{\\tan 45^\\circ}$\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nDengan nilai sudut istimewa diperoleh $x_A = 60\\sqrt{3}\\text{ m}$ dan $x_B = 60\\text{ m}$, sehingga selisih jarak kedua kapal adalah $60(\\sqrt{3} - 1) \\approx 43,9\\text{ m}$. Evaluasi logisnya: sudut depresi lebih kecil selalu menandakan posisi kapal yang lebih jauh dari menara.",
+      "kunci_pembeda": "Ciri utamanya adalah garis pandang miring yang membentuk sudut terhadap garis horizontal untuk menghubungkan ketinggian vertikal dengan jarak mendatar.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Aplikasi Pythagoras 2D & 3D (Tangga Bersandar yang Bergeser, Kabel Penyangga Tiang, Jarak Terpendek Lintas Medan)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 2 stimulus utama: dua kabel penyangga tiang ($24\\text{ m}$) pada jarak angkur $7\\text{ m}$ dan $18\\text{ m}$, serta tangga $15\\text{ m}$ yang ujung atasnya merosot turun $3\\text{ m}$.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nTiang pemancar vertikal setinggi $24\\text{ m}$ ditahan dua kabel lurus ke angkur tanah sejauh $7\\text{ m}$ di barat dan $18\\text{ m}$ di timur. Sementara itu, tangga sepanjang $15\\text{ m}$ bersandar di dinding dengan jarak kaki $9\\text{ m}$, lalu ujung atasnya merosot turun sejauh $3\\text{ m}$.\\n\\n**2. Model Matematika (Employing)**\\nSetiap kabel dan tiang membentuk segitiga siku-siku dengan panjang kabel sebagai sisi miring ($c = \\sqrt{a^2 + b^2}$). Pada tangga bergeser, panjang tangga $L = 15\\text{ m}$ tetap konstan sebagai hipotenusa sebelum maupun sesudah bergeser.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nGunakan tripel Pythagoras: kabel barat $(7, 24, 25) \\rightarrow 25\\text{ m}$ dan kabel timur $(18, 24, 30) \\rightarrow 30\\text{ m}$, totalnya $55\\text{ m}$. Pada tangga, tinggi awal $y_1 = \\sqrt{15^2 - 9^2} = 12\\text{ m}$. Setelah turun $3\\text{ m}$ menjadi $y_2 = 9\\text{ m}$, jarak kaki baru $x_2 = \\sqrt{15^2 - 9^2} = 12\\text{ m}$, sehingga kaki bergeser menjauh $3\\text{ m}$.",
+      "kunci_pembeda": "Fokus pada penguncian sisi miring tetap (panjang tangga/tali) atau pemanfaatan tripel Pythagoras pada struktur tegak lurus tanpa melibatkan sudut istimewa.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Navigasi Arah Mata Angin / Jurusan Tiga Angka menggunakan Segitiga Siku-Siku dan Vektor Komponen Sederhana",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk poin 3 stimulus utama: Kapal Pandu B berlayar $10\\text{ km}$ pada jurusan $030^\\circ$ lalu berbelok pada jurusan $120^\\circ$ sejauh $24\\text{ km}$ menuju stasiun karantina.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nKapal Pandu B berlayar lurus sejauh $10\\text{ km}$ pada jurusan tiga angka $030^\\circ$, kemudian berbelok ke jurusan $120^\\circ$ sejauh $24\\text{ km}$. Jurusan tiga angka selalu diukur searah jarum jam dari arah Utara ($000^\\circ$) dengan penulisan tiga digit.\\n\\n**2. Model Matematika (Employing)**\\nPeriksa sudut belokan antara dua segmen lintasan dengan mengurangkan kedua jurusan: $120^\\circ - 030^\\circ = 90^\\circ$. Karena kedua lintasan membentuk sudut siku-siku tepat di titik belok, jarak lurus dari titik awal ke tujuan merupakan sisi miring segitiga siku-siku ($d = \\sqrt{s_1^2 + s_2^2}$).\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nTerapkan kelipatan dua dari tripel dasar $(5, 12, 13)$ untuk sisi $10\\text{ km}$ dan $24\\text{ km}$, sehingga diperoleh jarak tempuh lurus terpendek $d = 26\\text{ km}$. Dibandingkan rute memutar sejauh $10 + 24 = 34\\text{ km}$, lintasan langsung ini menghemat jarak pelayaran sebesar $8\\text{ km}$.",
+      "kunci_pembeda": "Selalu ukur sudut jurusan searah jarum jam dari Utara ($000^\\circ$) dan cek selisih dua jurusan untuk mendeteksi sudut siku-siku $90^\\circ$ di titik belok.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Kemiringan Atap Bangunan, Jalan Tanjakan (Ramp), dan Panjang Sabuk Lilitan Katrol (Pulley Belt)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk poin 4 stimulus utama: desain ramp kemiringan $1 : 12$ untuk beda tinggi $1,5\\text{ m}$ dan panjang sabuk terbuka pada dua katrol identik ($r = 35\\text{ cm}$, $d = 120\\text{ cm}$).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nJalan tanjakan (*ramp*) memiliki rasio kemiringan maksimum $1 : 12$ untuk naik setinggi $1,5\\text{ m}$. Pada sistem derek, dua roda katrol identik berjari-jari $r = 35\\text{ cm}$ berjarak antarpusat $d = 120\\text{ cm}$ dililit sabuk terbuka (*open belt*).\\n\\n**2. Model Matematika (Employing)**\\nRasio $1 : 12$ berarti $\\frac{\\text{tinggi}}{\\text{mendatar}} = \\frac{1}{12}$, sedangkan panjang *ramp* adalah sisi miring $s = \\sqrt{x^2 + h^2}$. Untuk dua katrol identik, panjang sabuk terbuka terdiri atas dua segmen lurus sejajar sepanjang $d$ dan dua busur setengah lingkaran ($L = 2d + 2\\pi r$).\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nJarak mendatar *ramp* minimum adalah $x = 12 \\times 1,5 = 18\\text{ m}$ dengan panjang miring $s = \\sqrt{18^2 + 1,5^2} \\approx 18,06\\text{ m}$. Sementara itu, panjang sabuk katrol adalah $L = 2(120) + 2 \\cdot \\frac{22}{7} \\cdot 35 = 240 + 220 = 460\\text{ cm}$.",
+      "kunci_pembeda": "Menggabungkan segmen lurus (Pythagoras/jarak pusat) dengan busur lengkung lingkaran ($2\\pi r$) atau rasio gradien vertikal terhadap mendatar.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan data kawasan pelabuhan pada stimulus, sebuah kabel pengaman darurat akan ditarik lurus dari ruang kendali menara suar (ketinggian $20\\text{ m}$) langsung menuju titik posisi Kapal Pandu B di permukaan laut. Jika tinggi gelombang laut diabaikan, berapa meter panjang minimum kabel pengaman tersebut?",
+      "opsi_jawaban": [
+        "A. $20\\sqrt{2}$ meter",
+        "B. $20\\sqrt{10}$ meter",
+        "C. $40\\sqrt{2}$ meter",
+        "D. $60\\sqrt{2}$ meter",
+        "E. $80$ meter"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Dari sudut depresi $45^\\circ$ di puncak menara ($60\\text{ m}$), jarak mendatar Kapal Pandu B ke kaki menara adalah $x_B = \\frac{60}{\\tan 45^\\circ} = 60\\text{ m}$. Karena ruang kendali berada pada ketinggian $20\\text{ m}$, kabel lurus membentuk sisi miring segitiga siku-siku dengan tinggi $20\\text{ m}$ dan alas $60\\text{ m}$: $L = \\sqrt{20^2 + 60^2} = \\sqrt{4.000} = 20\\sqrt{10}\\text{ m}$. Opsi A dan C keliru karena menganggap sudut depresi dari ruang kendali tetap $45^\\circ$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Dalam proses penguatan struktur tiang pemancar pada proyek pelabuhan tersebut, teknisi hendak menambah satu kabel baja penyangga ketiga dari puncak tiang ($24\\text{ m}$) ke angkur baru yang berjarak $10\\text{ m}$ di sebelah utara pangkal tiang. Berapa meter total panjang **ketiga** kabel baja penyangga tiang pemancar sekarang? *(Tuliskan jawaban dalam bilangan bulat saja tanpa satuan)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "81",
+      "bedah_cepat_markdown": "Panjang tiap kabel penyangga dihitung dengan teorema Pythagoras terhadap tinggi tiang $24\\text{ m}$: kabel barat $= \\sqrt{7^2 + 24^2} = 25\\text{ m}$, kabel timur $= \\sqrt{18^2 + 24^2} = 30\\text{ m}$, dan kabel utara baru $= \\sqrt{10^2 + 24^2} = 26\\text{ m}$ (kelipatan tripel $5, 12, 13$). Total panjang ketiga kabel baja adalah $25 + 30 + 26 = 81\\text{ meter}$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Perhatikan pernyataan berikut terkait fasilitas *ramp* dan sistem katrol derek pada proyek Pelabuhan Tanjung Harapan ($\\pi = \\frac{22}{7}$):\\n(1) Panjang lintasan miring minimum jalan tanjakan (*ramp*) lebih dari $18\\text{ meter}$.\\n(2) Jika kemiringan *ramp* diubah menjadi $1 : 10$ untuk beda tinggi yang sama ($1,5\\text{ m}$), jarak mendatar berkurang $3\\text{ meter}$.\\n(3) Panjang bagian sabuk derek yang menempel (melengkung) pada kedua roda katrol adalah $220\\text{ cm}$.\\n(4) Jika jarak antarpusat kedua katrol diperpanjang menjadi $150\\text{ cm}$ tanpa mengubah ukuran katrol, panjang total sabuk menjadi $500\\text{ cm}$.\\n\\nPernyataan yang benar adalah ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pilihan benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Cek tiap pernyataan: (1) Beda tinggi $1,5\\text{ m}$ dengan rasio $1 : 12$ menghasilkan jarak mendatar $18\\text{ m}$, sehingga panjang miring $s = \\sqrt{18^2 + 1,5^2} = \\sqrt{326,25} > 18\\text{ m}$ (benar). (2) Pada rasio $1 : 10$, jarak mendatar menjadi $15\\text{ m}$, berkurang $18 - 15 = 3\\text{ m}$ (benar). (3) Bagian lengkung sabuk pada dua katrol identik adalah $2\\pi r = 2 \\times \\frac{22}{7} \\times 35 = 220\\text{ cm}$ (benar). (4) Jika $d = 150\\text{ cm}$, panjang sabuk menjadi $2(150) + 220 = 520\\text{ cm}$, bukan $500\\text{ cm}$ (salah).",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='105' y1='68' x2='255' y2='68' stroke='#1E293B' stroke-width='2.5'/><line x1='105' y1='152' x2='255' y2='152' stroke='#1E293B' stroke-width='2.5'/><circle cx='105' cy='110' r='42' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><circle cx='255' cy='110' r='42' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><path d='M 105 68 A 42 42 0 0 0 105 152' fill='none' stroke='#1E293B' stroke-width='2.5'/><path d='M 255 68 A 42 42 0 0 1 255 152' fill='none' stroke='#1E293B' stroke-width='2.5'/><line x1='105' y1='110' x2='255' y2='110' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><circle cx='105' cy='110' r='3' fill='#1E293B'/><circle cx='255' cy='110' r='3' fill='#1E293B'/><line x1='105' y1='110' x2='105' y2='68' stroke='#F59E0B' stroke-width='2'/><text x='110' y='92' font-family='sans-serif' font-size='12' fill='#F59E0B'>r = 35 cm</text><text x='148' y='56' font-family='sans-serif' font-size='12' fill='#1E293B'>d = 120 cm</text><text x='138' y='176' font-family='sans-serif' font-size='12' fill='#3B82F6'>Sabuk Terbuka</text></svg>",
+        "caption": "Skema sabuk lilitan terbuka pada dua katrol identik"
+      }
+    }
+  ]
+}

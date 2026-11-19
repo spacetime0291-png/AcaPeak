@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "lbe-02-02",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 2: Detailed Information & Paraphrasing",
+  "judul_subbab": "Unstated Details and Exceptions",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Pada soal bertipe 'All of the following are true EXCEPT...', kamu menemukan opsi A persis sama kata-katanya dengan teks, sedangkan opsi D menggunakan sinonim yang tidak kamu kenali. Mana yang seharusnya dipilih?",
+      "opsi_cepat": [
+        "Opsi D karena bahasanya berbeda dari teks",
+        "Opsi yang tidak disebut sama sekali atau bertentangan fakta di teks"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "UTBK selalu memparafrasa informasi benar menggunakan sinonim agar mengecoh siswa yang sekadar mencocokkan kata persis (word-matching)."
+    },
+    "konsep_inti_markdown": "- **Prinsip Eliminasi Terbalik:** Pada soal *EXCEPT / NOT*, 4 opsi adalah fakta benar yang diparafrasa dari teks, sedangkan 1 opsi benar adalah informasi absen (*unstated*) atau kontradiktif (*false*).\n- **Peta Lokasi:** Gunakan kata kunci pertanyaan untuk *scanning* paragraf spesifik sebelum membedah setiap opsi.\n- **Waspada Parafrasa:** Jangan mencoret opsi hanya karena kosakatanya berbeda dari bacaan; cek kesetaraan maknanya secara utuh.",
+    "radar_jebakan_utbk": [
+      "Jebakan Word-Matching: Memilih opsi berparafrasa valid sebagai jawaban EXCEPT karena tidak menemukan kata persis di teks.",
+      "Jebakan Half-True / Distorsi: Opsi menggabungkan subjek dari paragraf 1 dengan predikat milik subjek lain di paragraf 2."
+    ],
+    "stimulus_utama_bersama": "**Forum Thread: Urban Heat Island Mitigation Strategies**\n\n**@EcoPlanner_Rina (Posted 2 hours ago):** Cities worldwide are adopting cool roofs—surfaces coated with reflective white paint—to combat the Urban Heat Island (UHI) effect. Studies show cool roofs can lower indoor temperatures by up to $3^{\\circ}\\text{C}$ and slash air-conditioning energy demand by 15%. However, critics argue that reflective roofs merely bounce solar radiation back into the upper atmosphere, potentially altering local cloud formation without addressing ground-level heat trapped by asphalt roads.\n\n**@GreenArch_Dodi (Posted 1 hour ago):** @EcoPlanner_Rina brings up a valid limitation. That is why green roofs—rooftops covered with vegetation—are superior. Beyond lowering ambient temperatures through evapotranspiration, green roofs absorb rainwater runoff, extend roof membrane lifespan, and enhance urban biodiversity. Yes, initial installation costs are roughly double those of cool roofs, yet long-term stormwater management savings offset the expense.\n\n**@InfraCost_Maya (Posted 45 mins ago):** While I appreciate the ecological perks @GreenArch_Dodi mentioned, municipal budgets cannot ignore structural retrofitting. Older buildings often lack the load-bearing capacity for wet soil and plants, making cool roofs the only financially viable option for rapid, city-wide deployment.\n\n**@SolarTech_Budi (Posted 20 mins ago):** Why choose between cooling and ecology when rooftop solar panels offer better returns? Shading from solar arrays reduces roof heat gain while generating clean electricity. Contrary to popular belief, cool roofs and green roofs actually waste prime urban real estate that should be dedicated exclusively to renewable power generation.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Negative Factual Information",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Postingan @GreenArch_Dodi mengenai keunggulan green roofs (kalimat ke-3 hingga ke-4).",
+      "bedah_pola_markdown": "- **Target Scanning:** Cari frasa kunci dari pertanyaan (misal: *benefits of green roofs*) pada postingan **@GreenArch_Dodi**.\n- **Pemetaan Fakta & Parafrasa:**\n  1. *Lowering ambient temperatures* $\\rightarrow$ mendinginkan suhu sekitar.\n  2. *Absorb rainwater runoff* $\\rightarrow$ mengurangi limpasan air hujan.\n  3. *Extend roof membrane lifespan* $\\rightarrow$ memperpanjang usia atap.\n  4. *Enhance urban biodiversity* $\\rightarrow$ meningkatkan keanekaragaman hayati.\n- **Identifikasi Opsi Jebakan:** Opsi salah (jawaban soal *EXCEPT*) biasanya menyisipkan klaim milik objek lain (misal: *slashes AC demand by 15%* yang sebenarnya milik *cool roofs*), atau menambah detail tak berdasar seperti *generates renewable electricity*.\n- **Eksekusi:** Coret keempat opsi yang terkonfirmasi ada di teks; pilih satu opsi tersisa yang faktanya meleset.",
+      "kunci_pembeda": "Fokus memverifikasi rincian spesifik milik satu subjek tunggal agar tidak tertukar dengan atribut subjek pembanding.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Identifying Which Topic or Aspect is NOT Discussed in the Passage",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Keseluruhan utas forum (@EcoPlanner_Rina, @GreenArch_Dodi, @InfraCost_Maya, @SolarTech_Budi).",
+      "bedah_pola_markdown": "- **Teknik Skimming Global:** Pindai ide pokok tiap kontributor untuk membuat peta topik:\n  - **Rina:** Mekanisme refleksi *cool roofs*, penghematan AC, dan dampak awan.\n  - **Dodi:** Manfaat ekologis *green roofs* dan perbandingan biaya awal.\n  - **Maya:** Kendala kapasitas beban struktur bangunan tua (*structural retrofitting*).\n  - **Budi:** Efisiensi panel surya sebagai alternatif pembangkit listrik.\n- **Deteksi Aspek Absen:** Cek setiap opsi jawaban terhadap peta topik di atas. Jika muncul topik seperti *government tax subsidies* (subsidi pajak pemerintah) atau *maintenance labor wages* (upah tenaga perawatan), pastikan apakah kata kunci tersebut muncul.\n- **Ciri Jebakan:** Opsi pengecoh sering memakai istilah teknis yang terkesan nyambung dengan tema lingkungan (misal: *carbon credit trading*), padahal sama sekali tidak disinggung penulis mana pun.",
+      "kunci_pembeda": "Menguji cakupan makro seluruh teks atau utas, bukan sekadar rincian sempit di dalam satu kalimat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Finding the Commenter Whose View Contradicts or Diverges from the Majority in a Thread",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Perbandingan sikap keempat pengguna terhadap kelayakan cool roofs dan green roofs.",
+      "bedah_pola_markdown": "- **Langkah 1 — Klasifikasi Sikap (Stance Matrix):**\n  - **Rina:** Mengakui efektivitas *cool roofs* menurunkan suhu, meski mencatat kekurangan.\n  - **Dodi:** Mendukung *green roofs* sebagai solusi jangka panjang terbaik.\n  - **Maya:** Mendukung *cool roofs* secara finansial dan struktural untuk bangunan tua.\n- **Langkah 2 — Temukan Titik Divergensi:** Mayoritas (Rina, Dodi, Maya) setuju bahwa *cool roofs* atau *green roofs* layak diterapkan sesuai konteksnya. Sebaliknya, **@SolarTech_Budi** menolak keduanya secara frontal (*\"waste prime urban real estate\"*) dan menyarankan panel surya.\n- **Ciri Jebakan:** Siswa sering memilih **@InfraCost_Maya** sebagai pihak kontra karena ia mengkritik *green roofs*, padahal Maya tetap mendukung solusi atap pendingin (*cool roofs*), bukan menolak konsep mitigasi suhu atap secara keseluruhan.",
+      "kunci_pembeda": "Memetakan poros kesepakatan mayoritas dalam diskusi multi-penulis untuk menemukan satu suara yang menyimpang total.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Based on the forum thread, all of the following are mentioned as drawbacks or limitations of either cool roofs or green roofs EXCEPT...",
+      "opsi_jawaban": [
+        "A. Cool roofs fail to mitigate ground-level heat retained by asphalt surfaces.",
+        "B. Green roofs require approximately twice the upfront investment compared to cool roofs.",
+        "C. Cool roofs can potentially disrupt local cloud formation patterns.",
+        "D. Green roofs demand frequent chemical fertilization that pollutes stormwater runoff.",
+        "E. Older structures may be unable to support the heavy weight of saturated green roofs."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "- **A benar (ada di teks):** Rina menyebut *without addressing ground-level heat trapped by asphalt roads*.\n- **B benar (ada di teks):** Dodi menyebut biaya awal *green roofs* sekitar dua kali lipat *cool roofs* (*roughly double*).\n- **C benar (ada di teks):** Rina menyebut *potentially altering local cloud formation*.\n- **E benar (ada di teks):** Maya menjelaskan bangunan tua kekurangan *load-bearing capacity* untuk tanah basah.\n- **D salah (tidak disebut):** Teks tidak pernah membahas pupuk kimia atau polusi limpasan air hujan.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Which of the following topics is NOT discussed by any participant in the thread?",
+      "opsi_jawaban": [
+        "A. The structural feasibility of installing vegetation on aging buildings",
+        "B. The financial trade-off between initial installation and long-term water management",
+        "C. Government regulatory mandates requiring reflective coatings on commercial roofs",
+        "D. The opportunity cost of using rooftop space for cooling rather than electricity generation",
+        "E. The reduction in indoor cooling energy consumption achieved by reflective surfaces"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "- **A dibahas:** Maya membahas kapasitas beban struktur bangunan tua (*structural retrofitting*).\n- **B dibahas:** Dodi membandingkan biaya awal tinggi dengan penghematan jangka panjang pengelolaan air hujan.\n- **D dibahas:** Budi menyoroti hilangnya potensi pembangkitan listrik bersih jika atap dipakai untuk *cool/green roofs*.\n- **E dibahas:** Rina menyebut pengurangan kebutuhan energi AC sebesar 15%.\n- **C tidak dibahas:** Tidak ada satu pun komentator yang menyinggung mandat atau regulasi wajib dari pemerintah.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Determine whether each statement accurately reflects the divergence of views in the forum thread!\n\n| Statement | True | False |\n| :--- | :---: | :---: |\n| 1. @SolarTech_Budi is the only commenter who dismisses both cool roofs and green roofs as an inefficient use of rooftop space. | | |\n| 2. @InfraCost_Maya contradicts the majority by claiming that neither cool roofs nor green roofs can reduce urban temperatures. | | |\n| 3. Unlike @GreenArch_Dodi who prioritizes ecological benefits, @InfraCost_Maya emphasizes budget and structural constraints. | | |",
+      "opsi_jawaban": [
+        "A. True - True - False",
+        "B. True - False - True",
+        "C. False - True - True",
+        "D. True - False - False",
+        "E. False - False - True"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "- **Pernyataan 1 (True):** Hanya Budi yang menilai *cool roofs* dan *green roofs* menyia-nyiakan lahan atap (*waste prime urban real estate*).\n- **Pernyataan 2 (False):** Maya tidak menyangkal kemampuan penurunan suhu; ia justru mendukung *cool roofs* sebagai opsi layak secara finansial untuk bangunan tua.\n- **Pernyataan 3 (True):** Dodi berfokus pada aspek ekologis, sedangkan Maya menyoroti keterbatasan anggaran dan beban struktur bangunan.",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "kode_subbab": "lbe-03-05",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 3: Inference, Tone, & Multi-Text",
+  "judul_subbab": "Summary and Conclusion of the Text",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah teks panjang membahas keunggulan panel surya pada tiga paragraf awal, lalu menutup paragraf terakhir dengan kendala biaya penyimpanan baterai. Banyak peserta memilih opsi kesimpulan yang hanya memuji efisiensi panel surya—mengapa pilihan ini langsung gugur di UTBK?",
+      "opsi_cepat": [
+        "Karena opsi tersebut terlalu spesifik pada data angka",
+        "Karena kesimpulan utuh wajib mensintesis seluruh bagian teks termasuk kontras di akhir"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kesimpulan teks UTBK harus mencakup benang merah dari awal hingga akhir (tesis + antitesis/kualifikasi). Opsi yang hanya merangkum sebagian paragraf merupakan jebakan 'too narrow' (terlalu sempit)."
+    },
+    "konsep_inti_markdown": "**Summary & Conclusion** menuntut kemampuan menyarikan gagasan utama seluruh bacaan tanpa terjebak detail minor.\n- **Conclusion (Kesimpulan):** Sintesis logis dari premis awal hingga penutup teks ($\\text{Ide Awal} + \\text{Pergeseran/Kontras} \\rightarrow \\text{Simpulan Utuh}$).\n- **Summary (Ringkasan):** Parafrasa padat gagasan pokok tiap bagian dengan membuang contoh, angka spesifik, dan spekulasi.\n- **Thread Consensus:** Titik temu argumen yang disepakati mayoritas pembicara dalam forum diskusi.",
+    "radar_jebakan_utbk": [
+      "Opsi 'Too Narrow': Hanya merangkum satu paragraf atau pendapat satu pengguna forum saja, mengabaikan bagian kontras.",
+      "Opsi 'Extreme & Speculative': Menggunakan kata absolut (always, completely, impossible) atau memasukkan detail contoh/angka spesifik ke dalam ringkasan utama."
+    ],
+    "stimulus_utama_bersama": "**Thread Topic: Can Vertical Farming Solve Urban Food Security?**\n\n**Dr_ElenaV (09:14 AM):** Urban vertical farming—cultivating crops in vertically stacked layers indoors using LED lighting and hydroponics—is widely promoted as a breakthrough for urban food security. By eliminating soil and reducing water consumption by up to 90 percent compared to conventional agriculture, these facilities can operate year-round inside densely populated cities, cutting transportation emissions. However, high electricity demands for artificial lighting and climate control currently inflate operational costs, restricting most commercial vertical farms to high-margin leafy greens rather than calorie-dense staple crops like wheat or rice. Until renewable energy costs drop substantially, vertical farming will likely remain a specialized supplement rather than a complete replacement for traditional farming.\n\n**Marcus_Agro (09:42 AM):** I agree with Elena's assessment of energy bottlenecks. At our pilot facility in Rotterdam, lighting alone accounts for nearly 65 percent of overhead expenses. While yields per square meter are impressive, scaling up to feed an entire metropolis is economically unfeasible right now.\n\n**Priya_Policy (10:05 AM):** True, staples are out of reach today, yet dismissing vertical farming overlooks its strategic value during supply chain disruptions. Last winter's regional droughts severely disrupted lettuce and herb imports, whereas local indoor farms maintained steady prices. Governments should subsidize solar-powered vertical farms specifically for perishable crops.\n\n**Kenji_Econ (10:30 AM):** Subsidies might help, but only if paired with advances in LED efficiency. Both Elena and Priya highlight a realistic middle ground: vertical farms should not aim to replace rural grain production, but rather secure local supply of fresh, perishable produce while reducing water usage.\n\n**Sora_Tech (10:48 AM):** Agreed. Focusing R&D on crop genetics tailored for indoor environments alongside cheaper clean energy will determine how quickly this niche expands.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Best Overall Conclusion of the Passage",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Postingan pembuka Dr_ElenaV (kalimat pertama hingga kalimat penutup 'Until renewable energy costs drop substantially...').",
+      "bedah_pola_markdown": "**Langkah 1 — Scanning Struktur Argumen:**\nPindai kalimat pertama (*topic sentence*) dan kalimat terakhir (*concluding remark*) pada postingan Dr_ElenaV. Kalimat awal memperkenalkan keunggulan *vertical farming* (*eliminating soil, reducing water*), lalu kata hubung *However* membalik arah argumen ke hambatan biaya listrik.\n\n**Langkah 2 — Sintesis & Parafrasa:**\nGabungkan kedua kutub ide tersebut: *Vertical farming* hemat air dan lahan kota, tetapi tingginya biaya energi membatasinya sebagai pelengkap pertanian tradisional hingga energi terbarukan lebih murah. Pola kontras ini wajib tercermin utuh dalam opsi jawaban benar.\n\n**Langkah 3 — Eliminasi Jebakan UTBK:**\n- *Too Narrow:* Hanya menyebut penghematan air 90% tanpa menyebut kendala biaya listrik.\n- *Extreme:* Menyatakan *vertical farming* akan menggantikan pertanian tradisional sepenuhnya (*complete replacement*), padahal teks menegaskan sebaliknya.",
+      "kunci_pembeda": "Conclusion mensintesis hubungan sebab-akibat atau kontras antara gagasan awal dan penutup teks secara menyeluruh.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Selecting the Best Summary Statement that Excludes Minor Details and Speculations",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Detail spesifik di seluruh utas (angka 90%, 65%, kota Rotterdam, tanaman selada/gandum, dan usulan subsidi Priya).",
+      "bedah_pola_markdown": "**Langkah 1 — Skimming Ide Pokok vs Detail Pendukung:**\nPisahkan klaim makro dari bukti pendukung. Angka penghematan air (*90 percent*), persentase biaya lampu (*65 percent*), lokasi (*Rotterdam*), dan jenis tanaman (*wheat, rice, lettuce*) hanyalah ilustrasi minor yang wajib dibuang saat meringkas.\n\n**Langkah 2 — Saring Opini Spekulatif:**\nUsulan kebijakan spesifik seperti subsidi pemerintah dari Priya (*Governments should subsidize...*) atau riset genetika dari Sora merupakan rekomendasi lanjutan, bukan inti ringkasan kondisi faktual teks.\n\n**Langkah 3 — Verifikasi Opsi Ringkasan Ideal:**\nPilih pernyataan umum yang memayungi seluruh fakta: *Despite its water-saving and urban supply benefits, high energy costs currently restrict vertical farming to perishable crops rather than staple grains.* Opsi yang memuat angka statistik atau kota tertentu otomatis gugur karena terlalu rinci.",
+      "kunci_pembeda": "Summary yang tepat memparafrasakan gagasan pokok pada level umum dengan membuang contoh spesifik, angka statistik, dan spekulasi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Concluding Consensus or Takeaway from a Multi-User Discussion Thread",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Interaksi lima pengguna (Dr_ElenaV, Marcus_Agro, Priya_Policy, Kenji_Econ, dan Sora_Tech).",
+      "bedah_pola_markdown": "**Langkah 1 — Pindai Penanda Persetujuan Lintas Pengguna:**\nGunakan *scanning* untuk menemukan frasa kesepakatan seperti *I agree with Elena's assessment*, *True, staples are out of reach*, *highlight a realistic middle ground*, dan *Agreed*.\n\n**Langkah 2 — Petakan Irisan Argumen (Consensus):**\nSemua peserta sepakat pada dua hal utama: (1) biaya energi/LED membuat *vertical farming* belum layak menggantikan produksi pangan pokok pedesaan, dan (2) teknologi ini tetap bernilai strategis untuk memasok sayuran segar perkotaan secara lokal.\n\n**Langkah 3 — Hindari Jebakan Pendapat Tunggal:**\nJangan memilih pernyataan yang hanya mewakili usulan satu orang (misalnya hanya fokus pada subsidi pemerintah ala Priya atau fasilitas Rotterdam ala Marcus). Konsensus forum UTBK selalu berada pada titik temu (*middle ground*) yang disetujui bersama.",
+      "kunci_pembeda": "Consensus menyaring irisan pandangan yang disepakati bersama oleh mayoritas peserta diskusi, bukan usulan individual satu pengguna.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Which of the following best states the overall conclusion of Dr_ElenaV's opening post?",
+      "opsi_jawaban": [
+        "A. Vertical farming will soon replace conventional rural agriculture due to its 90 percent reduction in water usage.",
+        "B. High electricity costs currently prevent vertical farming from being profitable even for high-margin leafy greens.",
+        "C. Until clean energy becomes substantially cheaper, vertical farming will serve as a niche supplement rather than a full substitute for traditional farming.",
+        "D. Eliminating soil and transportation emissions makes indoor hydroponic farming the most sustainable solution for staple grain production.",
+        "E. Renewable energy companies must partner with urban vertical farms to lower climate control expenses in densely populated cities."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Postingan Dr_ElenaV mengontraskan keunggulan *vertical farming* (hemat air dan transportasi) dengan kendala biaya listrik yang membatasinya pada sayuran hijau, lalu menyimpulkan pada kalimat akhir bahwa teknologi ini hanya menjadi pelengkap hingga biaya energi terbarukan turun (**C**). Opsi **A** dan **D** bertentangan dengan fakta teks (ekstrem/salah sasaran pada *staple grain*). Opsi **B** keliru karena sayuran hijau (*leafy greens*) justru menguntungkan (*high-margin*). Opsi **E** terlalu spesifik pada kemitraan perusahaan yang tidak disebut.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Which statement provides the most accurate summary of the entire discussion thread without including minor details or unverified speculations?",
+      "opsi_jawaban": [
+        "A. Pilot facilities in Rotterdam spend 65 percent of overhead costs on LED lighting, proving that urban farms require government solar subsidies.",
+        "B. While vertical farming saves water and stabilizes local perishable produce supplies, high energy costs currently keep it from replacing traditional staple crop farming.",
+        "C. Last winter's droughts proved that indoor hydroponic farms are superior to rural agriculture in producing lettuce, herbs, wheat, and rice.",
+        "D. Genetic engineering of indoor crops will eliminate electricity bottlenecks and allow vertical farms to feed entire metropolises within a few years.",
+        "E. Urban vertical farming is economically unfeasible across all crop types because artificial climate control consumes more energy than conventional farming."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Ringkasan ideal harus memadukan manfaat utama (*saves water*, *stabilizes local perishable supplies*) dan batasan utamanya (*high energy costs prevent replacing staple farming*) tanpa detail minor (**B**). Opsi **A** memuat detail minor (*Rotterdam*, *65 percent*) dan usulan kebijakan spesifik. Opsi **C** dan **D** mengandung klaim keliru serta spekulasi jangka waktu (*within a few years*). Opsi **E** bersifat ekstrem (*across all crop types*), padahal tanaman *perishable* tetap layak secara strategis.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Based on the multi-user discussion thread, determine whether each statement accurately reflects the shared consensus among the participants.\n\n| No. | Statement | True / False |\n| :--- | :--- | :---: |\n| 1 | High energy expenses for lighting currently prevent vertical farms from replacing rural staple crop production. | ... |\n| 2 | All participants agree that government solar subsidies are the sole effective solution to scale vertical farming. | ... |\n| 3 | Vertical farming holds practical value as a supplementary system for supplying fresh, perishable crops locally. | ... |",
+      "opsi_jawaban": [
+        "A. True - True - False",
+        "B. True - False - True",
+        "C. True - False - False",
+        "D. False - True - True",
+        "E. False - False - True"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pernyataan 1 **True**: Elena, Marcus, Priya, dan Kenji sepakat biaya listrik/LED menghambat penggantian produksi tanaman pokok (*staples*). Pernyataan 2 **False**: Subsidi surya hanya diusulkan Priya, sedangkan Kenji menekankan efisiensi LED dan Sora menyoroti genetika tanaman (bukan solusi tunggal yang disepakati semua). Pernyataan 3 **True**: Kenji merangkum titik temu (*middle ground*) bahwa *vertical farming* berperan sebagai pelengkap penyedia sayuran segar lokal. Urutan tepat: **True - False - True (B)**.",
+      "visual": null
+    }
+  ]
+}

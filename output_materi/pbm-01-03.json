@@ -1,0 +1,119 @@
+{
+  "kode_subbab": "pbm-01-03",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 1: Ejaan (EYD V)",
+  "judul_subbab": "Penulisan Kata Serapan dan Kata Baku",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam rapat evaluasi proyek, manajer meminta tim *meminimalisir resiko* kegagalan sistem. Manakah perbaikan penulisan kata bercetak miring yang tepat sesuai KBBI VI?",
+      "opsi_cepat": [
+        "meminimalisir risiko",
+        "meminimalkan risiko"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Akhiran Belanda *-ir* wajib diserap menjadi *-kan* (*meminimalkan*), sedangkan vokal *i* pada *risiko* tetap dipertahankan sesuai bahasa asalnya (Inggris: *risk*, Belanda: *risico*)."
+    },
+    "konsep_inti_markdown": "- **Prinsip Utama EYD V & KBBI VI**: Penyerapan memprioritaskan bentuk visual dan etimologi asli daripada pelafalan lisan (fonologis).\n- **Afiks Asing**: Akhiran *-ic/-ical* menjadi *-ik/-is*, *-ity* menjadi *-itas*, *-ization* menjadi *-isasi*, dan *-ive* menjadi *-if*.\n- **Peluluhan K-T-S-P**: Awalan *meN-* meluluhkan konsonan tunggal **k, t, s, p** di awal kata dasar (*ubah* $\\rightarrow$ *mengubah*, *pengaruh* $\\rightarrow$ *memengaruhi*).\n- **Kaidah Teknis**: Istilah sains, ekonomi, dan teknologi wajib menyesuaikan bunyi dan huruf bahasa Indonesia tanpa menghilangkan identitas asalnya.",
+    "radar_jebakan_utbk": [
+      "Terkecoh pelafalan sehari-hari yang dianggap baku: menulis *hakekat*, *resiko*, *praktek*, *hirarki*, atau *analisa*.",
+      "Salah menerapkan peluluhan *meN-* pada kata berawalan vokal atau konsonan **p**: menulis *merubah* (seharusnya *mengubah*) dan *mempengaruhi* (seharusnya *memengaruhi*)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifikasi Kata Tidak Baku dalam Kalimat (Jebakan Fonologis)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "(1) Pada hakekatnya, manajemen resiko sangat diperlukan dalam setiap praktek bisnis modern. (2) Struktur hirarki perusahaan harus dirancang secara transparan.",
+      "bedah_pola_markdown": "Peserta UTBK sering terkecoh karena memilih kata berdasarkan pelafalan lisan sehari-hari, bukan etimologi bahasa sumber (Arab, Inggris, atau Belanda) sesuai ketetapan KBBI VI.\n\n| Bentuk Salah (Lisan) | Bentuk Baku (EYD V) | Analisis Struktur & Pola [S]-[P]-[O]-[K] |\n| :--- | :--- | :--- |\n| Pada *hakekatnya* | Pada **hakikatnya** | [K] Serapan Arab *haqīqah* mempertahankan vokal **i** pada suku kedua. |\n| manajemen *resiko* | manajemen **risiko** | [S] Serapan Belanda *risico* memakai vokal **i**, bukan **e**. |\n| setiap *praktek* | setiap **praktik** | [K] Serapan Inggris *practice* dan Belanda *praktijk* memakai vokal **i**. |\n| Struktur *hirarki* | Struktur **hierarki** | [S] Serapan Inggris *hierarchy* mempertahankan gugus vokal **ie**. |\n\n**Langkah Eksekusi:**\n1. Pindai kata serapan yang mengalami perubahan bunyi vokal (**i** menjadi **e** atau pelesapan **ie**).\n2. Uji dengan pola vokal asli bahasa sumbernya: *hakikat*, *risiko*, *praktik*, *hierarki*, *nasihat*, dan *kualitas*.",
+      "kunci_pembeda": "Variasi ini fokus pada distorsi bunyi vokal internal kata dasar akibat pengaruh pelafalan lisan, bukan kesalahan imbuhan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Kaidah Penyerapan Afiks dan Akhiran Asing sesuai EYD V",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pemerintah [S] mendorong [P] aktifitas [O] standarisasi produk untuk meningkatkan produktifitas ekspor [K] secara teoritis.",
+      "bedah_pola_markdown": "EYD V mengatur penyesuaian akhiran serapan secara konsisten berdasarkan kelas kata dan bentuk dasar asalnya agar tidak terjadi hibrida morfologis.\n\n| Bentuk Salah (Before) | Bentuk Baku (After) | Kaidah Penyerapan Afiks EYD V |\n| :--- | :--- | :--- |\n| *aktifitas* [O] | **aktivitas** [O] | Akhiran *-ity* menjadi **-itas**; huruf *v* pada *active* tidak berubah menjadi *f*. |\n| *standarisasi* [O] | **standardisasi** [O] | Akhiran *-ization* menjadi **-isasi** dari bentuk dasar *standard* (memakai huruf **d**). |\n| *produktifitas* [O] | **produktivitas** [O] | Nomina serapan *-ivity* wajib memakai **v** (**-ivitas**), sedangkan adjektiva memakai **f** (*produktif*). |\n| *teoritis* [K] | **teoretis** [K] | Akhiran *-ical* menjadi **-is** dengan mempertahankan vokal **e** pada *teori* (*teoretis*). |\n\n**Strategi Cepat:**\n1. Cek kelas kata: jika kata benda berakhiran *-tas*, pastikan konsonan sebelumnya **v** (*efektivitas*, *kreativitas*), sedangkan kata sifat memakai **f** (*efektif*, *kreatif*).",
+      "kunci_pembeda": "Variasi ini menguji ketepatan konversi sufiks asing (-ic, -is, -itas, -isasi, -if) beserta perubahan konsonan sebelum sufiks tersebut.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Konsistensi Penggunaan Bentuk Baku vs Bentuk Tidak Baku pada Pasangan Kata Mirip",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Perubahan iklim [S] tidak hanya merubah [P] pola curah hujan [O], tetapi juga mempengaruhi [P] ketahanan pangan nasional [O].",
+      "bedah_pola_markdown": "Kesalahan morfologis paling sering muncul pada pengimbuhan prefiks *meN-* dan pemilihan pasangan kata yang mirip bentuk maupun maknanya.\n\n| Bentuk Salah (Before) | Bentuk Baku (After) | Kaidah Morfologis & Struktur Kalimat |\n| :--- | :--- | :--- |\n| *merubah* [P] | **mengubah** [P] | Kata dasar **ubah** (berawalan vokal) mendapat prefiks *meng-* menjadi *mengubah*, bukan dari dasar *rubah*. |\n| *mempengaruhi* [P] | **memengaruhi** [P] | Konsonan tunggal **p** pada dasar **pengaruh** wajib luluh saat bertemu prefiks *meN-*. |\n| *mensukseskan* [P] | **menyukseskan** [P] | Konsonan tunggal **s** pada dasar **sukses** luluh menjadi **ny**; hanya gugus konsonan yang tidak luluh (*memproduksi*). |\n| *acuh* (bermakna peduli) | **acuh** (peduli) / **tak acuh** | Di KBBI VI, *acuh* berarti 'peduli'; untuk makna 'tidak peduli' wajib memakai *tak acuh*. |\n\n**Aturan Emas:**\n1. Pisahkan prefiks *meN-* untuk menemukan kata dasar murni: jika berawalan **k, t, s, p** tunggal, wajib diluluhkan.",
+      "kunci_pembeda": "Variasi ini berfokus pada proses morfofonemik (peluluhan afiks meN-) dan ketepatan diksi pada pasangan kata yang sering tertukar.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Koreksi Ejaan Kata Serapan Bidang Sains, Ekonomi, dan Teknologi dalam Wacana",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Analisa [S] data algoritma [S] pada sistim [K] perbankan digital menunjukkan bahwa likwiditas [S] bank tetap terjaga [P].",
+      "bedah_pola_markdown": "Dalam teks eksposisi ilmiah UTBK, istilah teknis bidang sains, ekonomi, dan teknologi wajib disesuaikan ejaannya menurut pedoman penyerapan unsur asing EYD V.\n\n| Bidang & Salah | Bentuk Baku (EYD V) | Kaidah Penyerapan Unsur Asing |\n| :--- | :--- | :--- |\n| *Analisa* (Sains) | **Analisis** [S] | Akhiran Yunani-Belanda *-yse/-lysis* diserap menjadi **-isis** (*analisis*, *sintesis*, *hipotesis*). |\n| *Algoritma* (Teknologi) | **Algoritme** [S] | Akhiran *-thm* pada *algorithm* diserap menjadi **-tme** (*algoritme*, *ritme*, *logaritme*). |\n| *Sistim* (Teknologi) | **Sistem** [K] | Huruf *y* pada *system* berubah menjadi **e**, bukan **i** (*sistem*, *ekosistem*). |\n| *Likwiditas* (Ekonomi) | **Likuiditas** [S] | Gugus *qu* sebelum vokal berubah menjadi **ku** (*likuiditas*, *kuantitas*, *frekuensi*). |\n\n**Langkah Penyuntingan:**\n1. Periksa gugus konsonan asing (*qu* $\\rightarrow$ *ku*, *ph* $\\rightarrow$ *f*, *ch* $\\rightarrow$ *k*).\n2. Pastikan istilah asing yang belum terserap sepenuhnya dicetak miring dalam wacana.",
+      "kunci_pembeda": "Variasi ini khusus menargetkan adaptasi ortografi istilah teknis lintas disiplin ilmu (sains, ekonomi, dan teknologi) ke dalam ejaan baku Indonesia.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kutipan teks berikut!\n\n(1) Pada hakikatnya, transformasi digital di sektor perbankan bertujuan menekan risiko kebocoran data nasabah. (2) Namun, banyak lembaga keuangan masih menghadapi kendala dalam menyusun algoritme keamanan yang komprehensif. (3) Selain itu, analisa terhadap pola transaksi mencurigakan sering terhambat oleh keterbatasan infrastruktur. (4) Oleh karena itu, diperlukan standardisasi protokol keamanan siber secara nasional.\n\nKata tidak baku dalam kutipan tersebut terdapat pada kalimat nomor ....",
+      "opsi_jawaban": [
+        "A. (1)",
+        "B. (2)",
+        "C. (3)",
+        "D. (4)",
+        "E. (1) dan (3)"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Kalimat (3) memuat kata tidak baku **analisa** yang seharusnya ditulis **analisis** sesuai kaidah penyerapan akhiran *-lysis* menjadi *-isis* pada EYD V.\n- Opsi A dan E salah karena *hakikat* dan *risiko* pada kalimat (1) sudah baku.\n- Opsi B salah karena *algoritme* dan *komprehensif* pada kalimat (2) sudah sesuai KBBI VI.\n- Opsi D salah karena *standardisasi* (berasal dari dasar *standard*) pada kalimat (4) sudah baku.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Bacalah kalimat berikut dengan saksama!\n\nKebijakan stimulus fiskal yang diluncurkan pemerintah diharapkan mampu [...] daya beli masyarakat sekaligus menjaga efektivitas pertumbuhan ekonomi nasional.\n\nTulislah kata bentukan baku yang tepat dari kata dasar *pengaruh* untuk melengkapi bagian rumpang pada kalimat tersebut (tulis dengan huruf kecil semua)!",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "memengaruhi",
+      "bedah_cepat_markdown": "Kata dasar **pengaruh** diawali konsonan tunggal **p** yang diikuti vokal **e**. Berdasarkan kaidah morfofonemik bahasa Indonesia dalam EYD V, konsonan tunggal **k, t, s, p** wajib luluh ketika bertemu dengan prefiks *meN-*. Dengan demikian, bentuk baku yang tepat adalah **memengaruhi**, bukan *mempengaruhi*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Cermatilah kalimat berikut!\n\n*Upaya merubah pola konsumsi energi fosil menjadi energi terbarukan membutuhkan komitmen politik yang kuat serta peningkatan produktifitas riset teknologi hijau.*\n\nPerbaikan yang tepat agar kalimat tersebut sesuai dengan kaidah EYD V dan KBBI VI adalah ....",
+      "opsi_jawaban": [
+        "A. mengganti kata *merubah* menjadi *mengubah* dan *produktifitas* menjadi *produktivitas*",
+        "B. mengganti kata *merubah* menjadi *mengubah* dan *komitmen* menjadi *komitment*",
+        "C. mengganti kata *terbarukan* menjadi *terbaharukan* dan *produktifitas* menjadi *produktivitas*",
+        "D. mengganti kata *riset* menjadi *riset-riset* dan *teknologi* menjadi *tehnologi*",
+        "E. mengganti kata *energi* menjadi *enerji* dan *merubah* menjadi *mengubah*"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Terdapat dua kesalahan ejaan pada kalimat tersebut:\n1. **merubah** tidak baku karena kata dasarnya *ubah* (berawalan vokal), sehingga bentuk bakunya adalah **mengubah**.\n2. **produktifitas** tidak baku karena nomina serapan *-ivity* wajib diserap menjadi **-ivitas** (**produktivitas**).\n- Opsi B, C, D, dan E salah karena *komitmen*, *terbarukan*, *teknologi*, dan *energi* sudah baku dalam KBBI VI.",
+      "visual": null
+    }
+  ]
+}

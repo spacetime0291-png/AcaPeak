@@ -1,5 +1,63 @@
 export type SubtestType = 'PU' | 'PPU' | 'PBM' | 'PK' | 'LBI' | 'LBE' | 'PM';
 
+// -------------------------------------------------------------
+// STANDAR BLUEPRINT 3 ZONA TERSTRUKTUR (UTBK-SNBT)
+// -------------------------------------------------------------
+
+export interface ExamHook {
+  pertanyaan_pemantik: string;
+  opsi_cepat: string[];
+  jawaban_benar_index: number;
+  penjelasan_kilat: string;
+}
+
+export interface Zona1PetaTaktis {
+  estimasi_menit_baca: number;
+  frekuensi_utbk: string;
+  exam_hook?: ExamHook | null;
+  konsep_inti_markdown: string;
+  radar_jebakan_utbk: string[];
+  stimulus_utama_bersama?: string | null;
+  visual?: any | null;
+}
+
+export interface VariasiInti {
+  nomor_variasi: number;
+  nama_variasi: string;
+  kategori_variasi: string;
+  stimulus_mini: string;
+  bedah_pola_markdown: string;
+  kunci_pembeda: string;
+  visual?: any | null;
+}
+
+export interface SoalUjiPemahaman {
+  nomor_soal: number;
+  menguji_variasi_ke: number[];
+  tipe_soal_utbk: string;
+  pertanyaan_markdown: string;
+  opsi_jawaban: string[];
+  kunci_jawaban: string;
+  bedah_cepat_markdown: string;
+  visual?: any | null;
+}
+
+export interface ThreeZoneMaterial {
+  kode_subbab: string;
+  subtes: string;
+  bab: string;
+  judul_subbab: string;
+  klasifikasi_materi: 'INTI' | 'PENGAYAAN' | string;
+  indikator_klasifikasi_web?: string;
+  zona_1_peta_taktis: Zona1PetaTaktis;
+  zona_2_variasi_inti: VariasiInti[];
+  zona_3_uji_pemahaman: SoalUjiPemahaman[];
+}
+
+// -------------------------------------------------------------
+// LEGACY / ADAPTER INTERFACES
+// -------------------------------------------------------------
+
 export interface MaterialMetadata {
   id: string;
   subtest: SubtestType;
@@ -84,11 +142,11 @@ export interface WorkedExample {
   passage_group_id?: string;
   hint_markdown?: string;
   conceptual_solution_markdown: string;
-  quick_trick_markdown: string;
-  why_others_are_wrong_markdown: string;
+  quick_trick_markdown?: string;
+  why_others_are_wrong_markdown?: string;
 }
 
-export interface Material {
+export interface Material extends Partial<ThreeZoneMaterial> {
   metadata: MaterialMetadata;
   content: MaterialContent;
   worked_examples: WorkedExample[];
@@ -101,6 +159,7 @@ export interface SubtopicItem {
   id: string;
   title: string;
   isCompleted?: boolean;
+  classification?: string;
 }
 
 export interface ModuleItem {

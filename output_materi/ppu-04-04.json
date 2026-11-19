@@ -1,0 +1,123 @@
+{
+  "kode_subbab": "ppu-04-04",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 4: Wacana dan Pragmatik",
+  "judul_subbab": "Bahasa Panda (Analisis Morfologi & Sintaksis Buatan)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui 'zara moku tani' berarti 'peneliti mengamati virus' dan 'tani vora luma' berarti 'virus menyerang sel'. Jika urutan bahasa ini O-P-S, apa terjemahan 'sel menghambat virus'?",
+      "opsi_cepat": [
+        "tani kiro luma",
+        "luma kiro tani"
+      ],
+      "jawaban_benar_index": 0,
+      "penjelasan_kilat": "Pada pola O-P-S, objek diletakkan di awal kalimat, bukan di akhir seperti bahasa Indonesia. Kata 'virus' (tani) sebagai objek wajib berada di posisi pertama."
+    },
+    "konsep_inti_markdown": "- **Hakikat:** Bahasa buatan menguji logika pemetaan struktur (sintaksis) dan pembentukan kata (morfologi) melalui deduksi korpus.\n- **Algoritma 3 Langkah:**\n  1. **Eliminasi Leksikal:** Bandingkan dua kalimat untuk mengunci arti kata dasar yang beririsan.\n  2. **Kunci Pola Sintaksis:** Tentukan posisi S-P-O dan hukum diterangkan-menerangkan (D-M vs M-D).\n  3. **Isolasi Morfem Terikat:** Pisahkan imbuhan/partikel penanda waktu, jamak, atau negasi sebelum menyusun kalimat target.",
+    "radar_jebakan_utbk": [
+      "Menerjemahkan kata per kata secara lurus (pola S-P-O dan D-M bahasa Indonesia) tanpa mengecek pembalikan urutan di korpus.",
+      "Mengabaikan perubahan bentuk kata (afiksasi/partikel) saat subjek tunggal berubah menjadi jamak atau saat kala waktu bergeser."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pemetaan Urutan Sintaksis Bahasa Buatan dari Korpus Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Korpus Berita Sains:\n1. *kora dave melu* = 'satelit memantau badai'\n2. *melu vira sito* = 'badai merusak jaringan'\n3. *sito bano kora* = 'jaringan memandu satelit'",
+      "bedah_pola_markdown": "**Algoritma Pemecahan Sandi 3 Langkah:**\n1. **Identifikasi Pola Kata Berulang:** Bandingkan kalimat (1) dan (2). Kata yang muncul di kedua arti adalah *badai*, sedangkan kata bahasa buatan yang beririsan adalah *melu*. Dari kalimat (2) dan (3), irisan arti *jaringan* berpadanan dengan *sito*. Otomatis, *kora* bermakna *satelit*.\n2. **Kunci Urutan S-P-O:** Pada kalimat (1), *kora* (Subjek) berada di awal, *melu* (Objek) di akhir, dan *dave* (Predikat: memantau) di tengah. Pola klausa ini adalah **S-P-O**, namun periksa modifikator frasa: jika *kora rani* berarti 'satelit baru', struktur frasa mengikuti hukum **D-M**.\n3. **Substitusi ke Kalimat Target:** Untuk menyusun kalimat 'satelit merusak jaringan', tempatkan kata sesuai slot S-P-O yang sudah terkunci: Subjek (*kora*) + Predikat (*vira*) + Objek (*sito*), sehingga diperoleh terjemahan tepat *kora vira sito*.",
+      "kunci_pembeda": "Variasi ini berfokus pada pemetaan posisi fungsi kalimat (S-P-O dan D-M) tanpa melibatkan perubahan bentuk kata atau imbuhan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Analisis Imbuhan dan Partikel Penanda Kala, Jamak, serta Negasi dalam Bahasa Buatan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Korpus Laporan Ekonomi:\n1. *tani veku pira* = 'bank menurunkan suku bunga'\n2. *tanizu vekula pira* = 'bank-bank telah menurunkan suku bunga'\n3. *tani no-veku pira* = 'bank tidak menurunkan suku bunga'",
+      "bedah_pola_markdown": "**Algoritma Pemecahan Sandi 3 Langkah:**\n1. **Identifikasi Pola Imbuhan Berulang:** Bandingkan kalimat (1) dan (2). Penambahan akhiran *-zu* pada *tani* mengubah makna tunggal menjadi jamak (*bank-bank*). Sementara itu, akhiran *-la* pada kata kerja *veku* menandai kala lampau (*telah menurunkan*). Pada kalimat (3), awalan *no-* berfungsi sebagai penanda negasi (*tidak*).\n2. **Kunci Urutan S-P-O:** Ketiga kalimat konsisten mempertahankan pola **S-P-O**: *tani* (Subjek) + *veku* (Predikat) + *pira* (Objek). Perhatikan bahwa penanda negasi melekat langsung pada predikat, bukan terpisah.\n3. **Substitusi ke Kalimat Target:** Untuk menerjemahkan 'bank-bank tidak menurunkan suku bunga', gabungkan morfem jamak pada subjek (*tanizu*), lekatkan negasi pada predikat (*no-veku*), lalu tutup dengan objek (*pira*) sehingga tercipta bentuk baku *tanizu no-veku pira*.",
+      "kunci_pembeda": "Variasi ini mewajibkan isolasi morfem terikat (afiks/partikel gramatikal) yang menempel pada kata dasar untuk mengubah jumlah, waktu, atau polaritas kalimat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penerjemahan Kalimat Baru ke Bahasa Buatan dengan Menggabungkan Kaidah Kata Dasar dan Afiksasi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Korpus Artikel Lingkungan:\n1. *sora mika ruma* = 'hutan menyerap karbon'\n2. *ruma-ti nola sora-ne* = 'karbon-karbon akan dilepas hutan besar'\n3. *daro nola mika ruma* = 'laut akan menyerap karbon'",
+      "bedah_pola_markdown": "**Algoritma Pemecahan Sandi 3 Langkah:**\n1. **Identifikasi Pola Kata dan Imbuhan Berulang:** Dari kalimat (1) dan (3), *mika* berarti 'menyerap' dan *ruma* berarti 'karbon', sehingga *sora* adalah 'hutan' dan *daro* adalah 'laut'. Partikel *nola* pada kalimat (2) dan (3) berfungsi sebagai penanda kala akan datang (*akan*). Akhiran *-ti* menandai bentuk jamak, sedangkan *-ne* bermakna sifat *besar*.\n2. **Kunci Urutan S-P-O:** Kalimat (1) dan (3) berpola aktif **S-P-O** (*Subjek + [kala] + Predikat + Objek*), sedangkan penjelas sifat (*-ne*) melekat di belakang kata benda (hukum D-M).\n3. **Substitusi ke Kalimat Target:** Untuk menyusun 'laut besar akan menyerap karbon-karbon', gabungkan leksikon dasar dan afiks: Subjek (*daro-ne*) + kala (*nola*) + Predikat (*mika*) + Objek jamak (*ruma-ti*), menghasilkan *daro-ne nola mika ruma-ti*.",
+      "kunci_pembeda": "Variasi ini menguji sintesis dua aturan sekaligus: memilih akar kata baru dari korpus dan merakitnya dengan afiks gramatikal pada posisi sintaksis yang tepat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Dekonstruksi Kalimat Majemuk Bahasa Buatan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Korpus Teks Kebijakan:\n1. *pala riko sena* = 'regulasi menekan inflasi'\n2. *sena vato kima* = 'inflasi memicu resesi'\n3. *pala riko sena zevu vato kima* = 'regulasi menekan inflasi sehingga memicu resesi'",
+      "bedah_pola_markdown": "**Algoritma Pemecahan Sandi 3 Langkah:**\n1. **Identifikasi Pola Kata Hubung Berulang:** Bandingkan kalimat (1), (2), dan (3). Kata *zevu* muncul di tengah kalimat (3) sebagai penghubung antarklausa yang bermakna *sehingga*. Perhatikan bahwa subjek klausa kedua (*sena* / inflasi) dilesapkan karena merujuk pada entitas yang sama.\n2. **Kunci Urutan S-P-O:** Baik klausa pertama (*pala riko sena*) maupun klausa kedua (*[sena] vato kima*) mempertahankan urutan **S-P-O**. Saat digabung dengan konjungsi *zevu*, subjek yang identik dihilangkan.\n3. **Substitusi ke Kalimat Target:** Untuk menyusun 'inflasi memicu resesi sehingga menekan regulasi', tulis klausa pertama (*sena vato kima*), sisipkan konjungsi (*zevu*), lalu tulis predikat dan objek klausa kedua tanpa mengulang subjek (*riko pala*), menghasilkan *sena vato kima zevu riko pala*.",
+      "kunci_pembeda": "Variasi pengayaan ini menuntut pemecahan kalimat panjang menjadi dua klausa mandiri serta deteksi pelesapan subjek atau objek setelah kata hubung.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan korpus bahasa buatan dari laporan riset biologi berikut:\n- *talu vora kima* = 'bakteri menginfeksi tanaman'\n- *kima-na zora talu* = 'tanaman melindungi bakteri-bakteri'\n- *talu no-vora kima* = 'bakteri tidak menginfeksi tanaman'\n\nManakah terjemahan yang paling tepat untuk kalimat *'tanaman-tanaman tidak melindungi bakteri'*?",
+      "opsi_jawaban": [
+        "A. talu-na no-zora kima",
+        "B. kima no-zora talu-na",
+        "C. kima-na no-zora talu",
+        "D. talu no-zora kima-na",
+        "E. kima zora no-talu-na"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Dari perbandingan kalimat (1) dan (2), diketahui pola kalimat adalah **O-P-S** (*talu* = tanaman, *kima* = bakteri, *vora* = menginfeksi, *zora* = melindungi). Akhiran *-na* menandai bentuk jamak, sedangkan awalan *no-* pada predikat menandai negasi. Untuk menerjemahkan 'tanaman-tanaman tidak melindungi bakteri', tempatkan Objek (*kima*) di awal, Predikat bernegasi (*no-zora*) di tengah, dan Subjek jamak (*talu-na*) di akhir menjadi *kima no-zora talu-na*. Opsi A salah karena mengikuti urutan S-P-O, sedangkan opsi C salah meletakkan penanda jamak.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Cermati data bahasa buatan dalam kutipan berita teknologi berikut:\n- *velo daka mira* = 'algoritma menyaring data'\n- *sato velo bori daka renu mira* = 'algoritma cepat akan menyaring data baru'\n- *mira bori daka velo* = 'data akan menyaring algoritma'\n\nBerdasarkan pola di atas, terjemahan yang paling tepat untuk kalimat *'data baru akan menyaring algoritma cepat'* adalah ....",
+      "opsi_jawaban": [
+        "A. mira renu bori daka velo sato",
+        "B. renu mira daka bori sato velo",
+        "C. renu mira bori daka sato velo",
+        "D. sato mira bori daka renu velo",
+        "E. renu velo bori daka sato mira"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Perbandingan kalimat (1) dan (3) menunjukkan urutan **S-P-O** dengan *velo* = algoritma, *mira* = data, *daka* = menyaring, dan *bori* = akan. Dari kalimat (2), kata sifat diletakkan di depan kata benda (hukum M-D): *sato* = cepat dan *renu* = baru. Untuk menyusun 'data baru akan menyaring algoritma cepat', susun Subjek (*renu mira*) + kala dan Predikat (*bori daka*) + Objek (*sato velo*), menghasilkan *renu mira bori daka sato velo*. Opsi A keliru karena memakai hukum D-M.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan korpus kalimat dari teks kajian kebijakan publik berikut:\n- *nora tiko pema* = 'kebijakan menurunkan emisi'\n- *pema kura liso* = 'emisi memicu pemanasan'\n- *nora tiko pema ravo kura liso* = 'kebijakan menurunkan emisi sehingga memicu pemanasan'\n\nManakah terjemahan yang paling tepat untuk kalimat *'emisi memicu pemanasan sehingga menurunkan kebijakan'*?",
+      "opsi_jawaban": [
+        "A. pema kura liso ravo pema tiko nora",
+        "B. pema kura liso ravo nora tiko",
+        "C. pema kura liso ravo tiko nora",
+        "D. liso kura pema ravo tiko nora",
+        "E. pema tiko nora ravo kura liso"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Berdasarkan korpus, pola kalimat adalah **S-P-O** (*nora* = kebijakan, *tiko* = menurunkan, *pema* = emisi, *kura* = memicu, *liso* = pemanasan). Pada kalimat (3), konjungsi *ravo* ('sehingga') menghubungkan dua klausa dengan melesapkan subjek klausa kedua karena merujuk pada entitas yang sama. Untuk menyusun 'emisi memicu pemanasan sehingga menurunkan kebijakan', tulis klausa pertama (*pema kura liso*), sisipkan *ravo*, lalu tulis predikat dan objek klausa kedua tanpa subjek (*tiko nora*), menghasilkan *pema kura liso ravo tiko nora*. Opsi A salah karena mengulang subjek.",
+      "visual": null
+    }
+  ]
+}

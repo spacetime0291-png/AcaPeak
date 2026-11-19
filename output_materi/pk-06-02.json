@@ -1,0 +1,118 @@
+{
+  "kode_subbab": "pk-06-02",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 6: Geometri Transformasi Dasar dan Trigonometri Segitiga Siku-Siku",
+  "judul_subbab": "Trigonometri Segitiga Siku-Siku dalam Pengukuran Geometri",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui segitiga siku-siku $ABC$ dengan siku-siku di $B$ dan $\\sin A = \\frac{3}{5}$. Jika panjang $BC = 6\\text{ cm}$, berapakah nilai $\\cos C$?",
+      "opsi_cepat": [
+        "$\\frac{4}{5}$",
+        "$\\frac{3}{5}$"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta langsung menjawab $\\frac{4}{5}$ karena hafal tripel $3-4-5$ tanpa sadar sudut acuan berpindah ke $C$. Karena $A + C = 90^\\circ$, maka $\\cos C = \\sin A = \\frac{3}{5}$ tanpa perlu menghitung sisi lain."
+    },
+    "konsep_inti_markdown": "Pada segitiga siku-siku dengan sudut lancip $\\theta$:\n- **Definisi Rasio:** $\\sin \\theta = \\frac{\\text{Depan}}{\\text{Miring}}$, $\\cos \\theta = \\frac{\\text{Samping}}{\\text{Miring}}$, $\\tan \\theta = \\frac{\\text{Depan}}{\\text{Samping}}$.\n- **Identitas Kunci:** $\\sin^2 \\theta + \\cos^2 \\theta = 1$ dan $\\sin(90^\\circ - \\theta) = \\cos \\theta$.\n- **Rasio Sudut Istimewa:**\n  - $30^\\circ : 60^\\circ : 90^\\circ \\rightarrow 1 : \\sqrt{3} : 2$\n  - $45^\\circ : 45^\\circ : 90^\\circ \\rightarrow 1 : 1 : \\sqrt{2}$",
+    "radar_jebakan_utbk": [
+      "Tertukar sisi Depan dan Samping saat posisi sudut acuan $\\theta$ berada di puncak atas segitiga, bukan di alas bawah.",
+      "Menggunakan perbandingan sisi istimewa ($1:\\sqrt{3}:2$) pada segitiga yang tidak memiliki sudut siku-siku tanpa menarik garis tinggi terlebih dahulu."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='65,175 265,175 265,45' fill='#EFF6FF' stroke='#1E293B' stroke-width='2'/><polyline points='249,175 249,159 265,159' fill='none' stroke='#1E293B' stroke-width='2'/><path d='M 100,175 A 35,35 0 0,0 94,156' fill='none' stroke='#F59E0B' stroke-width='2.5'/><text x='107' y='167' font-family='sans-serif' font-size='13' font-weight='bold' fill='#F59E0B'>θ</text><text x='165' y='195' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Samping (Sa)</text><text x='273' y='112' text-anchor='start' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>Depan (De)</text><text x='150' y='98' text-anchor='end' font-family='sans-serif' font-size='12' font-weight='bold' fill='#10B981'>Miring (Mi)</text></svg>",
+      "caption": "Posisi sisi Depan, Samping, dan Miring terhadap sudut lancip θ"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Penentuan Perbandingan Sinus, Kosinus, dan Tangen dari Dua Panjang Sisi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pada segitiga siku-siku $PQR$ dengan siku-siku di $Q$, diketahui panjang sisi $PQ = 2\\sqrt{6}\\text{ cm}$ dan hipotenusa $PR = 5\\text{ cm}$. Tentukan nilai $\\tan P + \\cos R$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nIdentifikasi posisi sudut acuan terlebih dahulu. Terhadap sudut $P$, sisi $PQ = 2\\sqrt{6}$ adalah sisi samping dan $PR = 5$ adalah sisi miring. Hitung sisi depan $QR$ menggunakan teorema Pythagoras:\n$$QR = \\sqrt{PR^2 - PQ^2} = \\sqrt{5^2 - (2\\sqrt{6})^2} = \\sqrt{25 - 24} = 1\\text{ cm}$$\nSelanjutnya, substitusi rasio trigonometri sesuai definisi masing-masing sudut:\n- $\\tan P = \\frac{\\text{Depan } P}{\\text{Samping } P} = \\frac{QR}{PQ} = \\frac{1}{2\\sqrt{6}} = \\frac{\\sqrt{6}}{12}$\n- $\\cos R = \\frac{\\text{Samping } R}{\\text{Miring}} = \\frac{QR}{PR} = \\frac{1}{5}$\nJumlahkan keduanya: $\\frac{\\sqrt{6}}{12} + \\frac{1}{5} = \\frac{5\\sqrt{6} + 12}{60}$.\n\n**(2) Jalur Taktis UTBK**\nGunakan relasi sudut berpenyiku ($P + R = 90^\\circ$) sehingga $\\cos R = \\sin P$. Cek selisih kuadrat hipotenusa dan sisi diketahui ($25 - 24 = 1$) secara mental tanpa menulis rumus panjang untuk langsung memperoleh sisi ketiga bernilai $1$, lalu rasionalkan penyebut akar di langkah akhir.",
+      "kunci_pembeda": "Variasi ini selalu diawali penentuan sisi ketiga via Pythagoras atau tripel istimewa sebelum mengevaluasi rasio sudut lancip yang diminta.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Penggunaan Nilai Sudut Istimewa untuk Menghitung Panjang Sisi atau Luas Bangun Datar",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Jajargenjang $ABCD$ memiliki panjang sisi $AB = 10\\text{ cm}$, $AD = 6\\text{ cm}$, dan besar $\\angle BAD = 60^\\circ$. Hitunglah luas jajargenjang $ABCD$ tersebut.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nTarik garis tinggi $DE$ tegak lurus terhadap alas $AB$ sehingga terbentuk segitiga siku-siku $AED$ dengan $\\angle EAD = 60^\\circ$ dan sisi miring $AD = 6\\text{ cm}$. Tinggi jajargenjang $DE$ merupakan sisi depan sudut $60^\\circ$:\n$$\\sin 60^\\circ = \\frac{DE}{AD} \\Rightarrow \\frac{\\sqrt{3}}{2} = \\frac{DE}{6} \\Rightarrow DE = 3\\sqrt{3}\\text{ cm}$$\nHitung luas jajargenjang menggunakan rumus alas kali tinggi:\n$$L = AB \\times DE = 10 \\times 3\\sqrt{3} = 30\\sqrt{3}\\text{ cm}^2$$\n\n**(2) Jalur Taktis UTBK**\nTerapkan skala perbandingan segitiga istimewa $30^\\circ : 60^\\circ : 90^\\circ = 1 : \\sqrt{3} : 2$ secara langsung tanpa menuliskan persamaan sinus. Karena sisi miring (rasio $2$) bernilai $6\\text{ cm}$, maka faktor pengalinya adalah $3$. Sisi di depan sudut $60^\\circ$ (rasio $\\sqrt{3}$) otomatis bernilai $3\\sqrt{3}\\text{ cm}$, lalu kalikan langsung dengan alas $10\\text{ cm}$ dalam waktu kurang dari $20$ detik.",
+      "kunci_pembeda": "Variasi ini memunculkan sudut eksplisit $30^\\circ, 45^\\circ,$ atau $60^\\circ$ pada bangun datar yang harus dipecah menggunakan garis tinggi bantu.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pengaitan Segitiga Siku-Siku Bersusun untuk Menentukan Panjang Ruas Garis Tak Langsung",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Titik $D$ terletak pada sisi $BC$ dari segitiga $ABC$ yang siku-siku di $B$. Jika $\\angle BAC = 60^\\circ$, $\\angle BDA = 45^\\circ$, dan panjang $DC = (6 - 2\\sqrt{3})\\text{ cm}$, tentukan panjang $AB$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nIdentifikasi dua segitiga siku-siku yang berimpit pada sisi tegak $AB$, yaitu $\\triangle ABD$ dan $\\triangle ABC$. Misalkan panjang $AB = x$. Pada $\\triangle ABD$ yang siku-siku di $B$ dengan $\\angle BDA = 45^\\circ$, berlaku:\n$$\\tan 45^\\circ = \\frac{AB}{BD} \\Rightarrow 1 = \\frac{x}{BD} \\Rightarrow BD = x$$\nSelanjutnya, tinjau $\\triangle ABC$ dengan $\\angle BAC = 60^\\circ$ sehingga panjang $BC = BD + DC = x + 6 - 2\\sqrt{3}$:\n$$\\tan 60^\\circ = \\frac{BC}{AB} \\Rightarrow \\sqrt{3} = \\frac{x + 6 - 2\\sqrt{3}}{x}$$\nKalikan silang menjadi $x\\sqrt{3} = x + 6 - 2\\sqrt{3} \\Rightarrow x(\\sqrt{3} - 1) = 2\\sqrt{3}(\\sqrt{3} - 1)$, sehingga diperoleh $x = 2\\sqrt{3}\\text{ cm}$.\n\n**(2) Jalur Taktis UTBK**\nKunci dari segitiga bersusun adalah mengunci satu sisi persekutuan ($AB = x$) sebagai jembatan rasio. Gunakan fakta $\\triangle ABD$ sama kaki ($BD = x$) dan $BC = x\\sqrt{3}$, lalu selisihkan keduanya: $DC = x(\\sqrt{3} - 1) = 2\\sqrt{3}(\\sqrt{3} - 1)$ untuk mencoret faktor $(\\sqrt{3} - 1)$ secara instan.",
+      "kunci_pembeda": "Variasi ini menggabungkan dua segitiga siku-siku yang berbagi satu sisi persekutuan sehingga memerlukan eliminasi atau substitusi aljabar antar-rasio.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='65,175 290,175 65,45' fill='#EFF6FF' stroke='#1E293B' stroke-width='2'/><line x1='65' y1='45' x2='195' y2='175' stroke='#3B82F6' stroke-width='2' stroke-dasharray='4 4'/><polyline points='65,159 81,159 81,175' fill='none' stroke='#1E293B' stroke-width='2'/><text x='52' y='42' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='50' y='188' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>B</text><text x='195' y='194' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>D</text><text x='295' y='188' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>C</text><text x='162' y='167' font-family='sans-serif' font-size='12' font-weight='bold' fill='#F59E0B'>45°</text><text x='73' y='88' font-family='sans-serif' font-size='12' font-weight='bold' fill='#10B981'>60°</text><text x='48' y='112' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>x</text><text x='243' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>6-2√3</text></svg>",
+        "caption": "Ilustrasi segitiga siku-siku bersusun ABD dan ABC"
+      }
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Diketahui segitiga siku-siku $ABC$ dengan siku-siku di $B$. Jika $\\sin A = \\frac{1}{3}$ dan panjang sisi $AB = 4\\sqrt{2}\\text{ cm}$, perhatikan empat pernyataan berikut:\n\n(1) Panjang sisi $BC = 2\\text{ cm}$.\n(2) Nilai $\\tan C = 2\\sqrt{2}$.\n(3) Luas segitiga $ABC$ adalah $4\\sqrt{2}\\text{ cm}^2$.\n(4) Nilai $\\cos A + \\sin C = \\frac{4\\sqrt{2}}{3}$.\n\nPernyataan yang bernilai benar adalah ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pernyataan benar."
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "Dari $\\sin A = \\frac{BC}{AC} = \\frac{1}{3}$, misalkan $BC = k$ dan $AC = 3k$, sehingga $AB = \\sqrt{9k^2 - k^2} = 2\\sqrt{2}k$. Karena $AB = 4\\sqrt{2}$, diperoleh $k = 2$, maka $BC = 2\\text{ cm}$ **(1 benar)** dan $AC = 6\\text{ cm}$.\n- $\\tan C = \\frac{AB}{BC} = \\frac{4\\sqrt{2}}{2} = 2\\sqrt{2}$ **(2 benar)**.\n- $\\text{Luas} = \\frac{1}{2}(4\\sqrt{2})(2) = 4\\sqrt{2}\\text{ cm}^2$ **(3 benar)**.\n- Karena $A + C = 90^\\circ$, $\\cos A + \\sin C = 2\\cos A = 2\\left(\\frac{4\\sqrt{2}}{6}\\right) = \\frac{4\\sqrt{2}}{3}$ **(4 benar)**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Pada trapesium siku-siku $ABCD$ dengan $AB \\parallel DC$ dan $\\angle A = \\angle D = 90^\\circ$, diketahui panjang $AD = 6\\text{ cm}$, $DC = 5\\text{ cm}$, dan $\\angle ABC = 30^\\circ$.\n\nBerdasarkan informasi tersebut, manakah hubungan yang tepat antara kuantitas $P$ dan $Q$ berikut?\n\n- **$P$**: Luas trapesium $ABCD$ (dalam $\\text{cm}^2$)\n- **$Q$**: $30 + 18\\sqrt{3}$",
+      "opsi_jawaban": [
+        "A. P > Q",
+        "B. Q > P",
+        "C. P = Q",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas.",
+        "E. P + Q = 60"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Tarik garis tinggi $CE \\perp AB$ sehingga $AE = DC = 5\\text{ cm}$ dan $CE = AD = 6\\text{ cm}$. Pada $\\triangle BEC$ yang siku-siku di $E$ dengan $\\angle B = 30^\\circ$, sisi $CE$ berada di depan sudut $30^\\circ$ sehingga $EB = 6\\sqrt{3}\\text{ cm}$ dan $AB = 5 + 6\\sqrt{3}\\text{ cm}$.\n$$P = \\frac{(AB + DC) \\times AD}{2} = \\frac{(10 + 6\\sqrt{3}) \\times 6}{2} = 30 + 18\\sqrt{3}$$\nKarena $Q = 30 + 18\\sqrt{3}$, maka kuantitas $P = Q$. Opsi A dan B keliru akibat salah membagi rasio $\\sqrt{3}$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Sebuah menara pengawas $TP$ berdiri tegak lurus pada bidang datar. Dari titik $A$ dan titik $B$ yang segaris dengan kaki menara $P$ (dengan $B$ terletak di antara $A$ dan $P$), sudut elevasi puncak menara $T$ berturut-turut adalah $30^\\circ$ dan $60^\\circ$. Jika jarak antara titik $A$ dan titik $B$ adalah $24\\text{ meter}$, tinggi menara $TP$ adalah $k\\sqrt{3}\\text{ meter}$. Nilai bilangan bulat $k$ adalah .... *(Tuliskan jawaban dalam bentuk bilangan bulat eksak)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "12",
+      "bedah_cepat_markdown": "Perhatikan $\\triangle TAB$: sudut luar $\\angle TBP = 60^\\circ$ merupakan jumlah $\\angle TAB = 30^\\circ$ dan $\\angle ATB$, sehingga $\\angle ATB = 30^\\circ$. Akibatnya, $\\triangle TAB$ sama kaki dengan $TB = AB = 24\\text{ meter}$. Pada segitiga siku-siku $TBP$:\n$$TP = TB \\cdot \\sin 60^\\circ = 24 \\times \\frac{\\sqrt{3}}{2} = 12\\sqrt{3}\\text{ meter}$$\nKarena $TP = k\\sqrt{3}$, maka nilai $k = 12$.",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "kode_subbab": "ppu-02-01",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 2: Morfologi dan Frasa",
+  "judul_subbab": "Afiksasi (Imbuhan) dan Maknanya",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Kementerian Kesehatan mensosialisasikan kebijakan baru guna merubah pola hidup masyarakat', apakah bentukan kata 'mensosialisasikan' dan 'merubah' sudah baku?",
+      "opsi_cepat": [
+        "Ya, keduanya lazim digunakan",
+        "Tidak, keduanya melanggar kaidah peluluhan fonem"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Awalan meN- meluluhkan huruf awal K-T-S-P pada kata dasar tunggal sehingga 'sosialisasi' menjadi 'menyosialisasikan', sedangkan kata dasar 'ubah' berawalan vokal berubah menjadi 'mengubah'."
+    },
+    "konsep_inti_markdown": "**Afiksasi (pengimbuhan)** membentuk kata turunan dan mengubah makna maupun kelas kata sesuai kaidah EYD V dan KBBI VI:\n\n* **Kesamaan Makna:** Satu imbuhan dapat memiliki beragam makna kontekstual (*peN-...-an* bermakna proses atau tempat).\n* **Peluluhan K-T-S-P:** Huruf awal *k, t, s, p* kata dasar luluh jika bertemu awalan *meN-* atau *peN-*, kecuali gugus konsonan.\n* **Imbuhan Serapan:** Unsur terikat (*pra-*, *non-*) ditulis serangkai dengan kata dasar.",
+    "radar_jebakan_utbk": [
+      "Menganggap imbuhan yang sama bentuknya selalu memiliki makna identik (misal: menyamakan 'perumahan' yang bermakna kumpulan rumah dengan 'penanaman' yang bermakna proses).",
+      "Tertipu peluluhan fonem pada kata dasar berimbuhan ganda atau kluster (misal: menulis 'mempengaruhi' yang seharusnya 'memengaruhi', atau 'menyetabilkan' yang seharusnya 'menstabilkan')."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Kesamaan Makna Imbuhan (peN-...-an, ke-...-an, ber-, -an, meN-) Antar-Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pemerintah mempercepat **pembangunan** infrastruktur pelabuhan untuk menekan biaya logistik antarpulau.",
+      "bedah_pola_markdown": "**Bedah Pola Makna Imbuhan & Fungsi:**\nPerhatikan struktur kalimat: [S] *Pemerintah* + [P] *mempercepat* + [O] ***pembangunan** infrastruktur pelabuhan* + [K] *untuk menekan biaya logistik*. Konfiks *peN-...-an* pada **pembangunan** bermakna *proses atau perbuatan membangun* yang terikat pada kata kerja dasarnya. Pada soal UTBK, imbuhan serupa bisa bermakna tempat (*pelabuhan*) atau hasil (*karangan*). Uji kesamaan makna dengan mengubah kata berimbuhan menjadi frasa definisi sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Pembangunan** (*proses*) disamakan dengan **perkebunan** (*tempat/lahan*). | **Pembangunan** (*proses*) sejajar dengan **penyaluran** (*proses menyalurkan*). |\n| **Kehujanan** (*terkena hujan*) disamakan dengan **kedinginan** (*merasakan dingin*). | **Kehujanan** (*tertimpa*) sejajar dengan **kejatuhan** (*tertimpa sesuatu*). |\n\n**Strategi Eksekusi:** Parafrasakan kata berimbuhan menjadi frasa kerja atau keadaan, lalu pilih opsi dengan pola definisi yang persis sama.",
+      "kunci_pembeda": "Memparafrasakan kata berimbuhan menjadi frasa definisi untuk memastikan kesamaan relasi makna antara imbuhan dan kata dasarnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Ketepatan Bentukan Kata Berimbuhan Sesuai Konteks Kalimat Aktif dan Pasif",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam rapat evaluasi anggaran, para peneliti **membahas** temuan lapangan yang **didiskusikan** sejak pekan lalu.",
+      "bedah_pola_markdown": "**Bedah Pola Diatesis & Fungsi:**\nPerhatikan keselarasan pelaku dan predikat pada struktur berikut: [S] *para peneliti* + [P-aktif] ***membahas*** + [O] *temuan lapangan* + [K-klausa] *yang [P-pasif] **didiskusikan** sejak pekan lalu*. Kalimat aktif transitif mewajibkan predikat berawalan *meN-* dengan objek tanpa preposisi, sedangkan kalimat pasif memakai awalan *di-* atau *ter-* sesuai kaidah baku EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Tim auditor **membahas tentang** (*preposisi merusak fungsi objek*) laporan keuangan. | Tim auditor **membahas** (*verba transitif langsung*) laporan keuangan. |\n| Kebijakan baru itu **kami sudah sepakati** (*urutan pasif persona salah*). | Kebijakan baru itu **sudah kami sepakati** (*aspek mendahului pelaku*). |\n\n**Strategi Eksekusi:** Periksa apakah subjek [S] bertindak sebagai pelaku atau sasaran, lalu hilangkan preposisi yang menghalangi objek [O] di belakang predikat aktif *meN-*.",
+      "kunci_pembeda": "Menyelaraskan imbuhan aktif (meN-) atau pasif (di-/ter-) dengan peran subjek sebagai pelaku atau sasaran tindakan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Peluluhan Fonem (K-T-S-P) dan Perubahan Bentuk Awalan dalam Konteks Kalimat",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Otoritas kesehatan terus **memengaruhi** perilaku warga agar **menyosialisasikan** pola hidup bersih sekaligus **menstabilkan** angka imunisasi.",
+      "bedah_pola_markdown": "**Bedah Pola Peluluhan & Fungsi:**\nAnalisis struktur fungsi kalimat: [S] *Otoritas kesehatan* + [P] ***memengaruhi*** + [O] *perilaku warga* + [K] *agar **menyosialisasikan** pola hidup bersih sekaligus **menstabilkan** angka imunisasi*. Sesuai kaidah EYD V dan KBBI VI, fonem awal **k, t, s, p** pada kata dasar luluh saat mendapat awalan *meN-* atau *peN-* (*pengaruh* $\\rightarrow$ *memengaruhi*; *sosialisasi* $\\rightarrow$ *menyosialisasikan*), kecuali kata dasar berkluster konsonan (*stabil* $\\rightarrow$ *menstabilkan*).\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemerintah **mensukseskan** dan **memperhatikan** (*salah peluluhan*) program vaksinasi. | Pemerintah **menyukseskan** (*luluh s*) dan **memerhatikan** (*luluh p*) program vaksinasi. |\n| Petugas **mengkaji** (*tidak luluh*) serta **menyetabilkan** (*luluh pada kluster*) data. | Petugas **mengaji** (*luluh k: menelaah*) serta **menstabilkan** (*kluster st*) data. |\n\n**Strategi Eksekusi:** Lepas semua imbuhan hingga tersisa kata dasar tunggal, lalu cek apakah huruf pertamanya *k, t, s, p* tunggal (luluh) atau gugus konsonan (tetap).",
+      "kunci_pembeda": "Meluluhkan huruf awal k, t, s, p pada kata dasar tunggal di belakang awalan meN-/peN-, tetapi mempertahankan gugus konsonan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perubahan Jenis Kata Akibat Pengimbuhan (Kata Kerja ↔ Kata Benda atau Sifat)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "**Peningkatan** kapasitas produksi baterai listrik **memperkuat** daya saing industri otomotif nasional secara **berkelanjutan**.",
+      "bedah_pola_markdown": "**Bedah Pola Derivasi & Fungsi:**\nPerhatikan pergeseran kelas kata dalam struktur kalimat: [S] ***Peningkatan** kapasitas produksi* (nomina dari *tingkat*) + [P] ***memperkuat*** (verba dari adjektiva *kuat*) + [O] *daya saing industri* + [K] *secara **berkelanjutan*** (adjektiva dari verba *lanjut*). Pengimbuhan tidak hanya menambah makna, tetapi juga mengubah kelas kata agar tepat menduduki fungsi sintaksis [S], [P], [O], atau [K] sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [S] **Memperbaiki** (*verba di posisi subjek*) tata kelola sangat mendesak. | [S] **Perbaikan** (*nomina berkonfiks per-...-an*) tata kelola sangat mendesak. |\n| Riset ini berjalan sangat **berkualitas** (*salah bentuk*) dan **efektifitas** (*nomina*). | Riset ini berjalan sangat **bermutu** (*adjektiva*) dan **efektif** (*adjektiva baku*). |\n\n**Strategi Eksekusi:** Tentukan posisi fungsi kata yang rumpang dalam kalimat, lalu pilih imbuhan pembentuk nomina (*peN-...-an*, *ke-...-an*) untuk [S]/[O] atau verba (*meN-*, *di-*) untuk [P].",
+      "kunci_pembeda": "Menyesuaikan jenis kata hasil pengimbuhan (benda, kerja, atau sifat) dengan slot fungsi [S]-[P]-[O]-[K] yang ditempatinya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Identifikasi Imbuhan Serapan (-wan, -isme, pra-, non-, -isasi) yang Semakna",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Para **ilmuwan** melakukan uji **praklinis** terhadap vaksin **nonalergi** sebelum memasuki tahap **hilirisasi** industri farmasi.",
+      "bedah_pola_markdown": "**Bedah Pola Afiks Serapan & Fungsi:**\nPerhatikan ketepatan ejaan dan makna afiks serapan pada kalimat: [S] *Para **ilmuwan*** (*-wan*: orang yang ahli) + [P] *melakukan* + [O] *uji **praklinis*** (*pra-*: sebelum) + [K] *terhadap vaksin **nonalergi*** (*non-*: bukan/tidak) *sebelum tahap **hilirisasi*** (*-isasi*: proses menjadikan). Sesuai kaidah EYD V, bentuk terikat (*pra-*, *non-*, *pasca-*) wajib ditulis serangkai dengan kata dasar, kecuali diikuti kata berhuruf kapital.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Penulisan terpisah: uji **pra klinis** dan sektor **non migas** di daerah. | Penulisan serangkai baku: uji **praklinis** dan sektor **nonmigas** di daerah. |\n| **Legalisir** (*akhiran Belanda tidak baku*) dokumen dan **modernisir** alat lab. | **Legalisasi** (*proses mengesahkan*) dokumen dan **modernisasi** (*proses pembaruan*) alat lab. |\n\n**Strategi Eksekusi:** Terjemahkan makna inti imbuhan serapan (*pra-* = sebelum, *non-* = bukan, *-wan* = pelaku, *-isasi* = proses), lalu pastikan penulisannya serangkai sesuai EYD V.",
+      "kunci_pembeda": "Menerjemahkan makna inti afiks serapan dan memastikan bentuk terikat ditulis serangkai dengan kata dasarnya sesuai EYD V.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Lembaga riset energi nasional mempercepat **penghijauan** kawasan bekas tambang guna memulihkan keseimbangan ekosistem setempat.\"\n\nMakna imbuhan *peN-...-an* pada kata **penghijauan** memiliki kesamaan makna dengan imbuhan pada kata bercetak tebal dalam kalimat ....",
+      "opsi_jawaban": [
+        "A. Kawasan **perumahan** ramah lingkungan itu dibangun di dekat jalur transportasi massal.",
+        "B. Pemerintah memperluas **penanaman** modal asing pada sektor industri pengolahan mineral.",
+        "C. Seluruh dokumen hasil audit keuangan disimpan di ruang **penyimpanan** arsip utama.",
+        "D. Rute **penyeberangan** antarpulau sempat ditutup sementara akibat gelombang tinggi.",
+        "E. Tim arkeolog menemukan **permukiman** kuno di sekitar lembah sungai besar."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat stimulus, kata **penghijauan** bermakna *proses atau perbuatan menghijaukan* suatu kawasan. Makna serupa sebagai proses atau perbuatan ditemukan pada kata **penanaman** dalam **opsi B**, yakni *proses menanamkan* modal pada sektor industri. Sebaliknya, **perumahan** (**opsi A**) dan **permukiman** (**opsi E**) bermakna kumpulan atau tempat tinggal, **penyimpanan** (**opsi C**) merujuk pada tempat menyimpan, sedangkan **penyeberangan** (**opsi D**) merujuk pada jalur atau tempat menyeberang. Jadi, jawaban yang tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Kementerian Perhubungan terus **mensosialisasikan** aturan keselamatan pelayaran kepada operator kapal tradisional. (2) Langkah preventif ini dilakukan untuk **meminimalisir** risiko kecelakaan laut serta **memengaruhi** kepatuhan awak kapal terhadap standar navigasi.\n\nPerbaikan bentukan kata berimbuhan yang PALING TEPAT sesuai kaidah EYD V dan KBBI VI pada kutipan di atas adalah ....",
+      "opsi_jawaban": [
+        "A. mengganti kata *mensosialisasikan* menjadi *menyosialisasikan* dan *meminimalisir* menjadi *meminimalkan*",
+        "B. mengganti kata *memengaruhi* menjadi *mempengaruhi* dan *mensosialisasikan* menjadi *bersosialisasi*",
+        "C. mengganti kata *dilakukan* menjadi *melakukan* dan *meminimalisir* menjadi *minimalisasi*",
+        "D. mengganti kata *memengaruhi* menjadi *terpengaruh* dan *mensosialisasikan* menjadi *disosialisasikan*",
+        "E. mengganti kata *mensosialisasikan* menjadi *tersosialisasi* dan *memengaruhi* menjadi *berpengaruh*"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Berdasarkan kaidah EYD V, kata dasar *sosialisasi* berawalan huruf tunggal *s* wajib luluh ketika mendapat awalan *meN-*, sehingga bentuk bakunya adalah **menyosialisasikan**. Selain itu, akhiran serapan Belanda *-ir* tidak baku dalam KBBI VI, sehingga *meminimalisir* harus diperbaiki menjadi **meminimalkan** (**opsi A**). Sementara itu, kata **memengaruhi** sudah baku karena huruf *p* pada kata dasar *pengaruh* luluh. **Opsi B**, **C**, **D**, dan **E** justru merusak struktur aktif transitif kalimat.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan paragraf berikut!\n\n> (1) Pengujian **praklinis** kandidat obat herbal tersebut melibatkan puluhan **ilmuwan** dari berbagai pusat riset biomedis. (2) Tahapan awal ini bertujuan memastikan keamanan formula **nontoksik** sebelum memasuki fase uji coba pada manusia.\n\nKata berimbuhan serapan yang memiliki kesamaan makna imbuhan dengan kata **ilmuwan** pada kalimat (1) adalah ....",
+      "opsi_jawaban": [
+        "A. sastrawan",
+        "B. rupawan",
+        "C. hartawan",
+        "D. dermawan",
+        "E. bangsawan"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Menurut KBBI VI, imbuhan serapan *-wan* pada kata **ilmuwan** bermakna *orang yang ahli atau berkecimpung dalam bidang ilmu*. Makna serupa sebagai orang yang ahli dalam bidang tertentu terdapat pada kata **sastrawan** (**opsi A**), yakni *orang yang ahli atau berkarya di bidang sastra*. Sebaliknya, **rupawan** (**opsi B**), **hartawan** (**opsi C**), **dermawan** (**opsi D**), dan **bangsawan** (**opsi E**) bermakna *orang yang memiliki sifat atau kepemilikan* rupa, harta, derma, serta kebangsawanan.",
+      "visual": null
+    }
+  ]
+}

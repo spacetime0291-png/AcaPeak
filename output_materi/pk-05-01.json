@@ -1,0 +1,130 @@
+{
+  "kode_subbab": "pk-05-01",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 5: Geometri dan Pengukuran",
+  "judul_subbab": "Sudut dan Garis Sejajar",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dua garis sejajar dipotong garis patah membentuk sudut lancip $35^\\circ$ dan $45^\\circ$ yang menghadap ke kanan, serta sudut $x$ yang menghadap ke kiri. Banyak siswa langsung menjawab $x = 180^\\circ - (35^\\circ + 45^\\circ) = 100^\\circ$, benarkah?",
+      "opsi_cepat": [
+        "Benar, jumlah sudut segitiga selalu 180 derajat",
+        "Salah, nilai x seharusnya 80 derajat"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Pada garis sejajar yang dipotong lintasan zig-zag, jumlah sudut yang menghadap ke kiri sama dengan jumlah sudut yang menghadap ke kanan, sehingga $x = 35^\\circ + 45^\\circ = 80^\\circ$."
+    },
+    "konsep_inti_markdown": "- **Garis Sejajar & Transversal**: Sudut sehadap, dalam berseberangan, dan luar berseberangan bernilai **sama besar**; sudut dalam sepihak berjumlah $180^\\circ$.\\n- **Aturan Zig-Zag**: $\\sum \\text{Sudut Kiri} = \\sum \\text{Sudut Kanan}$.\\n- **Segitiga & Poligon**: Jumlah sudut segitiga $180^\\circ$; sudut luar sama dengan jumlah dua sudut dalam non-pelurusnya. Sudut dalam segi-$n$ beraturan: $\\frac{(n-2)\\times 180^\\circ}{n}$.\\n- **Lingkaran**: Sudut pusat $= 2 \\times$ sudut keliling yang menghadap busur sama.\\n- **Relasi Dasar**: Berpenyiku ($90^\\circ$), berpelurus ($180^\\circ$), bertolak belakang (sama besar).",
+    "radar_jebakan_utbk": [
+      "Mengasumsikan dua garis pasti sejajar hanya karena tampilan gambar miring serupa tanpa tanda panah sejajar atau keterangan eksplisit pada soal.",
+      "Tertukar antara sudut dalam berseberangan (sama besar) dengan sudut dalam sepihak (berjumlah $180^\\circ$) saat menyusun persamaan aljabar."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='45' y1='65' x2='315' y2='65' stroke='#1E293B' stroke-width='2'/><line x1='45' y1='155' x2='315' y2='155' stroke='#1E293B' stroke-width='2'/><polygon points='285,61 294,65 285,69' fill='#1E293B'/><polygon points='285,151 294,155 285,159' fill='#1E293B'/><line x1='110' y1='25' x2='250' y2='195' stroke='#1E293B' stroke-width='2'/><path d='M 167,65 A 24,24 0 0,1 158,84 L 143,65 Z' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><path d='M 193,155 A 24,24 0 0,1 202,136 L 217,155 Z' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><path d='M 202,136 A 24,24 0 0,1 241,155 L 217,155 Z' fill='#FFFBEB' stroke='#F59E0B' stroke-width='2'/><text x='172' y='83' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>a</text><text x='180' y='146' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>b</text><text x='236' y='143' font-family='sans-serif' font-size='13' font-weight='bold' fill='#F59E0B'>c</text><text x='30' y='69' font-family='sans-serif' font-size='12' fill='#1E293B'>g1</text><text x='30' y='159' font-family='sans-serif' font-size='12' fill='#1E293B'>g2</text><text x='45' y='205' font-family='sans-serif' font-size='12' fill='#1E293B'>a = b (Berseberangan) | a + c = 180° (Sepihak)</text></svg>",
+      "caption": "Hubungan sudut dalam berseberangan dan dalam sepihak pada garis sejajar"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Hubungan Sudut pada Dua Garis Sejajar yang Dipotong Garis Transversal (Garis Bantu Patah/Zig-zag)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Garis $g_1$ sejajar $g_2$ dipotong garis patah di titik $P$ sehingga terbentuk sudut $32^\\circ$ di atas dan $48^\\circ$ di bawah yang keduanya menghadap ke kiri. Tentukan besar sudut tumpul $\\alpha$ di titik $P$ yang menghadap ke kanan!",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nTarik garis bantu $g_3$ melalui titik patah $P$ yang sejajar garis $g_1$ dan $g_2$. Garis bantu ini membelah sudut $\\alpha$ menjadi $\\alpha_1$ di atas dan $\\alpha_2$ di bawah. Berdasarkan sifat sudut dalam berseberangan, $\\alpha_1$ sama dengan sudut atas sebesar $32^\\circ$, sedangkan $\\alpha_2$ sama dengan sudut bawah sebesar $48^\\circ$. Jumlahkan keduanya sehingga diperoleh $\\alpha = 32^\\circ + 48^\\circ = 80^\\circ$.\\n\\n**2. Jalur Taktis UTBK**\\nGunakan prinsip kesetimbangan arah pada lintasan zig-zag di antara dua garis sejajar tanpa menggambar garis bantu. Total sudut yang menghadap ke kiri selalu sama dengan total sudut yang menghadap ke kanan. Cukup jumlahkan langsung kedua sudut lancip yang diketahui: $\\alpha = 32^\\circ + 48^\\circ = 80^\\circ$ dalam hitungan detik.",
+      "kunci_pembeda": "Wajib menarik garis bantu sejajar melalui setiap titik belokan atau menyamakan total sudut menghadap kiri dengan total sudut menghadap kanan.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='45' y1='45' x2='315' y2='45' stroke='#1E293B' stroke-width='2'/><line x1='45' y1='175' x2='315' y2='175' stroke='#1E293B' stroke-width='2'/><line x1='45' y1='110' x2='315' y2='110' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><polyline points='115,45 215,110 135,175' fill='none' stroke='#1E293B' stroke-width='2'/><path d='M 142,45 A 27,27 0 0,1 138,60' fill='none' stroke='#3B82F6' stroke-width='2'/><path d='M 162,175 A 27,27 0 0,0 156,158' fill='none' stroke='#3B82F6' stroke-width='2'/><path d='M 192,95 A 27,27 0 0,0 194,127' fill='none' stroke='#F59E0B' stroke-width='2'/><circle cx='215' cy='110' r='3.5' fill='#1E293B'/><text x='30' y='49' font-family='sans-serif' font-size='12' fill='#1E293B'>g1</text><text x='30' y='114' font-family='sans-serif' font-size='12' fill='#94A3B8'>g3</text><text x='30' y='179' font-family='sans-serif' font-size='12' fill='#1E293B'>g2</text><text x='223' y='105' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>P</text><text x='150' y='63' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>32°</text><text x='167' y='168' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>48°</text><text x='172' y='105' font-family='sans-serif' font-size='12' font-weight='bold' fill='#F59E0B'>α</text></svg>",
+        "caption": "Garis bantu g3 sejajar g1 dan g2 membelah sudut patah di titik P"
+      }
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Sudut Dalam dan Sudut Luar Segitiga (Teorema Sudut Luar & Segitiga Sama Kaki)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pada segitiga $ABC$, panjang sisi $AB = BC$ dan besar sudut puncak $\\angle ABC = 40^\\circ$. Jika sisi $AC$ diperpanjang hingga titik $D$, tentukan besar sudut luar $\\angle BCD$!",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nKarena panjang $AB = BC$, segitiga $ABC$ merupakan segitiga sama kaki dengan sudut alas $\\angle BAC$ dan $\\angle BCA$ yang sama besar. Jumlah seluruh sudut dalam segitiga adalah $180^\\circ$, sehingga $\\angle BAC + \\angle BCA + 40^\\circ = 180^\\circ$. Diperoleh $2 \\times \\angle BCA = 140^\\circ$ atau $\\angle BCA = 70^\\circ$. Selanjutnya, karena $\\angle BCA$ dan sudut luar $\\angle BCD$ saling berpelurus pada garis lurus $ACD$, maka $\\angle BCD = 180^\\circ - 70^\\circ = 110^\\circ$.\\n\\n**2. Jalur Taktis UTBK**\\nGunakan Teorema Sudut Luar Segitiga: besar sudut luar segitiga selalu sama dengan jumlah dua sudut dalam yang tidak berpelurus dengannya. Hitung langsung satu sudut alas segitiga sama kaki secara mental: $\\frac{180^\\circ - 40^\\circ}{2} = 70^\\circ$. Langsung jumlahkan sudut puncak dan sudut alas tersebut: $\\angle BCD = 40^\\circ + 70^\\circ = 110^\\circ$ tanpa perlu mencari pelurusnya.",
+      "kunci_pembeda": "Besar satu sudut luar segitiga selalu sama dengan jumlah dua sudut dalam yang letaknya tidak bersebelahan dengan sudut luar tersebut.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Sudut pada Poligon Beraturan Segi-$n$ dan Sudut Pusat/Sudut Keliling Lingkaran",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Titik $A, B, C, D, E$ merupakan titik-titik sudut sebuah segilima beraturan yang seluruh titik sudutnya terletak tepat pada keliling lingkaran berpusat di titik $O$. Tentukan besar sudut keliling $\\angle ACE$!",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nBesar setiap sudut dalam segilima beraturan ($n = 5$) dihitung menggunakan rumus $\\frac{(n - 2) \\times 180^\\circ}{n} = \\frac{3 \\times 180^\\circ}{5} = 108^\\circ$. Perhatikan segitiga sama kaki $ABC$ dan $EDC$ yang memiliki sudut puncak $108^\\circ$, sehingga masing-masing sudut alasnya bernilai $\\frac{180^\\circ - 108^\\circ}{2} = 36^\\circ$. Karena sudut dalam $\\angle BCD = 108^\\circ$ terbagi menjadi $\\angle BCA$, $\\angle ACE$, dan $\\angle ECD$, maka diperoleh $\\angle ACE = 108^\\circ - 36^\\circ - 36^\\circ = 36^\\circ$.\\n\\n**2. Jalur Taktis UTBK**\\nGunakan hubungan sudut pusat lingkaran: segilima beraturan membagi keliling lingkaran menjadi $5$ busur identik, masing-masing bersudut pusat $\\frac{360^\\circ}{5} = 72^\\circ$. Sudut keliling $\\angle ACE$ menghadap busur $AE$ yang merupakan tepat $1$ bagian busur segilima ($72^\\circ$). Karena sudut keliling bernilai setengah dari sudut pusatnya, langsung diperoleh $\\angle ACE = \\frac{1}{2} \\times 72^\\circ = 36^\\circ$.",
+      "kunci_pembeda": "Setiap sudut luar poligon beraturan segi-$n$ bernilai $\\frac{360^\\circ}{n}$ yang setara dengan satu sudut pusat busur lingkaran luarnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Sistem Persamaan Aljabar pada Hubungan Sudut Berpelurus, Berpenyiku, dan Bertolak Belakang",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Selisih antara pelurus suatu sudut dan dua kali penyiku sudut tersebut adalah $20^\\circ$. Tentukan besar sudut yang bertolak belakang dengan sudut tersebut!",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nMisalkan besar sudut yang dimaksud adalah $x$. Pelurus dari sudut $x$ dinyatakan sebagai $(180^\\circ - x)$, sedangkan penyikunya dinyatakan sebagai $(90^\\circ - x)$. Terjemahkan kalimat soal ke dalam bentuk persamaan linear satu variabel: $(180^\\circ - x) - 2(90^\\circ - x) = 20^\\circ$. Jabarkan kurung dengan teliti: $180^\\circ - x - 180^\\circ + 2x = 20^\\circ$, sehingga diperoleh $x = 20^\\circ$. Karena sudut yang bertolak belakang memiliki besar yang sama persis, maka jawabannya adalah $20^\\circ$.\\n\\n**2. Jalur Taktis UTBK**\\nIngat identitas selisih tetap: pelurus dikurangi penyiku dari sudut apa pun selalu menghasilkan tepat $90^\\circ$. Ubah bentuk $(180^\\circ - x) - 2(90^\\circ - x)$ menjadi $[(180^\\circ - x) - (90^\\circ - x)] - (90^\\circ - x) = 20^\\circ$, sehingga $90^\\circ - (90^\\circ - x) = 20^\\circ$. Persamaan langsung menyisakan $x = 20^\\circ$ tanpa perlu menjabarkan angka ratusan derajat.",
+      "kunci_pembeda": "Selisih antara sudut pelurus $(180^\\circ - x)$ dan sudut penyiku $(90^\\circ - x)$ selalu konstan bernilai $90^\\circ$.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Perhatikan gambar berikut! Garis $k$ sejajar dengan garis $l$. Jika besar $\\angle ABC = 130^\\circ$ dan $\\angle BCD = 110^\\circ$, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut berdasarkan informasi yang diberikan?\\n\\n- $P$: Besar sudut $x$ (dalam derajat)\\n- $Q$: $65^\\circ$",
+      "opsi_jawaban": [
+        "A. $P > Q$",
+        "B. $Q > P$",
+        "C. $P = Q$",
+        "D. $P + Q = 180^\\circ$",
+        "E. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari pilihan di atas"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Tarik garis bantu horizontal sejajar $k$ dan $l$ melalui titik $C$. Sudut di sebelah kanan $BC$ pada garis $k$ berpelurus dengan $\\angle ABC$, sehingga besarnya $180^\\circ - 130^\\circ = 50^\\circ$. Akibatnya, bagian atas $\\angle BCD$ bernilai $50^\\circ$ (dalam berseberangan), sehingga bagian bawahnya adalah $110^\\circ - 50^\\circ = 60^\\circ$. Karena sudut $x$ berseberangan dalam dengan bagian bawah $\\angle BCD$, maka $P = x = 60^\\circ$. Diperoleh $Q > P$ ($65^\\circ > 60^\\circ$). Jawaban: **B**.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='45' y1='45' x2='315' y2='45' stroke='#1E293B' stroke-width='2'/><line x1='45' y1='175' x2='315' y2='175' stroke='#1E293B' stroke-width='2'/><polygon points='285,41 294,45 285,49' fill='#1E293B'/><polygon points='285,171 294,175 285,179' fill='#1E293B'/><polyline points='160,45 202,95 156,175' fill='none' stroke='#1E293B' stroke-width='2'/><path d='M 136,45 A 24,24 0 0,0 175,63' fill='none' stroke='#3B82F6' stroke-width='2'/><path d='M 187,77 A 24,24 0 0,0 190,116' fill='none' stroke='#3B82F6' stroke-width='2'/><path d='M 168,154 A 24,24 0 0,1 180,175' fill='none' stroke='#F59E0B' stroke-width='2'/><text x='30' y='49' font-family='sans-serif' font-size='12' fill='#1E293B'>k</text><text x='30' y='179' font-family='sans-serif' font-size='12' fill='#1E293B'>l</text><text x='80' y='36' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>A</text><text x='156' y='36' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>B</text><text x='210' y='99' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>C</text><text x='148' y='193' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>D</text><text x='260' y='193' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>E</text><text x='122' y='74' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>130°</text><text x='155' y='103' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>110°</text><text x='184' y='167' font-family='sans-serif' font-size='12' font-weight='bold' fill='#F59E0B'>x</text></svg>",
+        "caption": "Garis sejajar k dan l dipotong lintasan patah ABCD"
+      }
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Kecukupan Data",
+      "pertanyaan_markdown": "Pada segitiga $PQR$, titik $S$ terletak pada perpanjangan sisi $QR$ sehingga terbentuk sudut luar $\\angle PRS = 128^\\circ$. Berapakah besar $\\angle QPR$?\\n\\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut.\\n(1) Besar penyiku dari $\\angle PQR$ adalah $38^\\circ$.\\n(2) Panjang sisi $PQ$ sama dengan panjang sisi $PR$.",
+      "opsi_jawaban": [
+        "A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C. DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.",
+        "D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.",
+        "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Berdasarkan Teorema Sudut Luar Segitiga, $\\angle QPR + \\angle PQR = 128^\\circ$ dan $\\angle PRQ = 180^\\circ - 128^\\circ = 52^\\circ$.\\n- **Pernyataan (1) cukup**: Penyiku $\\angle PQR$ adalah $38^\\circ$, maka $\\angle PQR = 90^\\circ - 38^\\circ = 52^\\circ$, sehingga $\\angle QPR = 128^\\circ - 52^\\circ = 76^\\circ$.\\n- **Pernyataan (2) cukup**: Karena $PQ = PR$, segitiga $PQR$ sama kaki dengan $\\angle PQR = \\angle PRQ = 52^\\circ$, sehingga $\\angle QPR = 128^\\circ - 52^\\circ = 76^\\circ$.\\nJawaban: **D**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Sebuah segi-$n$ beraturan memiliki besar sudut dalam yang sama dengan $5$ kali besar sudut luarnya. Jika seluruh titik sudut segi-$n$ beraturan tersebut terletak pada keliling sebuah lingkaran berpusat di titik $O$, tentukan besar sudut pusat lingkaran (dalam derajat) yang menghadap salah satu sisi poligon tersebut! *(Tuliskan jawaban berupa bilangan bulat tanpa simbol derajat)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "30",
+      "bedah_cepat_markdown": "Jumlah sudut dalam dan sudut luar pada satu titik sudut poligon selalu $180^\\circ$. Misalkan sudut luarnya $x$, maka sudut dalamnya $5x$, sehingga $5x + x = 180^\\circ \\implies 6x = 180^\\circ \\implies x = 30^\\circ$. Pada poligon beraturan yang berada di dalam lingkaran, besar sudut pusat yang menghadap satu sisi selalu sama dengan besar satu sudut luar poligon tersebut, yakni $30^\\circ$. Jawaban: **30**.",
+      "visual": null
+    }
+  ]
+}

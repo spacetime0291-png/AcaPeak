@@ -1,0 +1,120 @@
+{
+  "kode_subbab": "pm-01-01",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 1: Aritmetika Sosial dan Keuangan",
+  "judul_subbab": "Untung, Rugi, Diskon, dan Pajak",
+  "klasifikasi_materi": "INTI",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah kafe memberikan diskon bertingkat $20\\% + 10\\%$, lalu mengenakan *service charge* $5\\%$ dan PB1 $10\\%$. Apakah pelanggan mendapat potongan bersih sebesar $15\\%$ dari harga awal?",
+      "opsi_cepat": [
+        "Ya, karena (20% + 10%) - (5% + 10%) = 15%",
+        "Tidak, persentase dihitung dari basis harga berbeda"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Diskon dan pajak tidak boleh langsung dijumlah-kurangkan karena basis pengalinya bertahap. Diskon $20\\% + 10\\%$ setara faktor bayar $0,8 \\times 0,9 = 0,72$ (diskon $28\\%$), lalu dikalikan faktor pajak bertahap $1,05 \\times 1,10 = 1,155$."
+    },
+    "konsep_inti_markdown": "**Aritmetika sosial UTBK** menguji perubahan nilai berantai melalui faktor pengali desimal.\n\n* **Untung/Rugi & BEP:** $\\text{Untung} = H_J - H_B$; $\\text{BEP (unit)} = \\frac{\\text{Biaya Tetap}}{H_J - \\text{Biaya Variabel/unit}}$\n* **Diskon & Pajak Berantai:** Harga akhir $= H_0 \\times (1 - d_1)(1 - d_2) \\times (1 + p_1)(1 + p_2)$\n* **Bobot Logistik:** $\\text{Bruto} = \\text{Neto} + \\text{Tara}$ (persentase tara selalu dihitung dari **bruto**).",
+    "radar_jebakan_utbk": [
+      "Menjumlahkan langsung persentase diskon bertingkat ($20\\% + 10\\% \\neq 30\\%$) atau menghitung PB1 dari harga sebelum service charge.",
+      "Menghitung biaya produksi per unit menggunakan berat bruto sebelum dikurangi tara dan persentase barang rusak (penyusutan)."
+    ],
+    "stimulus_utama_bersama": "Kafe & Roastery **Kopi Nusantara** merancang anggaran operasional bulanan untuk penjualan minuman dan biji kopi ritel dengan ketentuan data berikut:\n\n1. **Pengadaan Bahan Baku:** Biji kopi sangrai dipasok dalam karung berkapasitas **bruto $25\\text{ kg}$** dengan **tara $4\\%$** dari bruto. Harga dasar biji kopi adalah **Rp95.000,00 per kg neto**. Terdapat dua pilihan pemasok:\n   * **Pemasok A:** Promo **Beli 4 Karung Gratis 1 Karung** (berlaku kelipatan) serta **diskon bertingkat $25\\% + 20\\%$** khusus untuk karung yang dibayar.\n   * **Pemasok B:** **Diskon tunggal $30\\%$** untuk seluruh karung yang dibeli ditambah **cashback $10\\%$** dari total harga setelah diskon dengan **batas maksimum cashback Rp750.000,00** per transaksi.\n2. **Produksi & Penyusutan:** Sebanyak **$5\\%$ dari total berat neto** biji kopi menyusut/rusak saat proses penggilingan. Setiap **$20\\text{ gram}$** biji kopi layak pakai menghasilkan **1 cup kopi susu**. Biaya tetap operasional sebesar **Rp12.000.000,00/bulan**, biaya kemasan dan bahan tambahan **Rp6.040,00/cup**, dan harga jual dasar **Rp20.000,00/cup**.\n3. **Regulasi Pajak & Layanan:** Pembelian *dine-in* dikenakan **biaya layanan (*service charge*) $5\\%$** dari harga jual dasar, lalu dikenakan **PB1 $10\\%$** dari total tagihan setelah *service charge*. Sementara itu, biji kopi ritel $250\\text{ gram}$ seharga **Rp60.000,00** dikenakan **asumsi tarif PPN $12\\%$**."
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Diskon Bertingkat ($a\\% + b\\%$), Cashback dengan Batas Maksimum, dan Promo \"Beli $M$ Gratis $N$\"",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk bagian **Pengadaan Bahan Baku** (Pemasok A dan Pemasok B) pada stimulus utama untuk transaksi pembelian 5 karung biji kopi.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nIdentifikasi skema potongan: Pemasok A memberi promo kuantitas (bayar 4 untuk 5 karung) dan diskon bertingkat $25\\% + 20\\%$. Pemasok B memberi diskon $30\\%$ ditambah *cashback* $10\\%$ maksimal Rp750.000,00.\n\n**2. Model Matematika (Employing)**\n* **Pemasok A:** $H_{\\text{akhir}} = M \\times H_{\\text{karung}} \\times (1 - d_1)(1 - d_2)$\n* **Pemasok B:** $H_{\\text{diskon}} = (M+N) \\times H_{\\text{karung}} \\times (1 - d)$; $\\text{Cashback} = \\min(10\\% \\times H_{\\text{diskon}}, \\text{Rp750.000})$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nDengan $H_{\\text{karung}} = \\text{Rp2.280.000,00}$, Pemasok A menghasilkan $4 \\times 2.280.000 \\times (0,75 \\times 0,80) = \\text{Rp5.472.000,00}$ (diskon efektif $40\\%$, bukan $45\\%$). Pada Pemasok B, $H_{\\text{diskon}} = 5 \\times 2.280.000 \\times 0,70 = \\text{Rp7.980.000,00}$. Karena $10\\% \\times 7.980.000 = \\text{Rp798.000,00}$ melampaui batas, *cashback* terpotong menjadi Rp750.000,00. Secara praktis, *cashback* adalah pengembalian dana pascatransaksi, bukan pemotong tunai di kasir.",
+      "kunci_pembeda": "Diskon bertingkat dikalikan berantai pada sisa harga, sedangkan cashback dibatasi plafon nominal maksimum."
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Kalkulasi Harga Jual, Margin Keuntungan Bersih, dan Titik Impas (Break-Even Point) Usaha UMKM/Produksi dengan Barang Rusak (Penyusutan)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk bagian **Produksi & Penyusutan** pada stimulus utama dengan asumsi pengadaan 5 karung melalui Pemasok A.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nDari $120\\text{ kg}$ ($120.000\\text{ gram}$) kopi neto, $5\\%$ rusak saat penggilingan. Sisa bahan layak pakai diolah menjadi minuman ($20\\text{ gram/cup}$) untuk menutup biaya tetap dan menghasilkan laba.\n\n**2. Model Matematika (Employing)**\n* $\\text{Unit Layak} = \\frac{(1 - s) \\times W_{\\text{neto}}}{\\text{Takaran}}$\n* $\\text{BEP (unit)} = \\frac{\\text{Biaya Tetap}}{H_J - V_{\\text{total}}}$ dengan $V_{\\text{total}} = V_{\\text{bahan}} + V_{\\text{lain}}$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nBerat layak pakai $= 0,95 \\times 120.000 = 114.000\\text{ gram}$, menghasilkan $114.000 \\div 20 = 5.700\\text{ cup}$. Biaya kopi per cup $= \\text{Rp5.472.000} \\div 5.700 = \\text{Rp960,00}$, sehingga $V_{\\text{total}} = 960 + 6.040 = \\text{Rp7.000,00/cup}$. Margin kontribusi bersih $= 20.000 - 7.000 = \\text{Rp13.000,00/cup}$ ($65\\%$ dari harga jual). Titik impas tercapai pada $\\text{BEP} = 12.000.000 \\div 13.000 \\approx 923,08$. Dalam praktik bisnis, pecahan unit dibulatkan ke atas menjadi **924 cup** agar tidak rugi.",
+      "kunci_pembeda": "Total modal bahan baku wajib dibagi dengan kuantitas produk layak jual setelah dikurangi persentase penyusutan."
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Perhitungan Harga Akhir Melibatkan PPN, Pajak Restoran (PB1), dan Biaya Layanan (Service Charge) dengan Besaran Tarif Eksplisit",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk bagian **Regulasi Pajak & Layanan** pada stimulus utama untuk transaksi *dine-in* 1 cup kopi susu dan pembelian 1 kemasan biji kopi ritel.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTransaksi *dine-in* dikenakan *service charge* $5\\%$ terlebih dahulu, baru PB1 $10\\%$ dihitung dari subtotal tersebut. Sebaliknya, produk ritel kemasan dikenakan PPN $12\\%$ langsung dari harga jual.\n\n**2. Model Matematika (Employing)**\n* **Dine-in:** $H_{\\text{bayar}} = H_0 \\times (1 + r_{\\text{service}}) \\times (1 + r_{\\text{PB1}})$\n* **Ritel:** $H_{\\text{bayar}} = H_0 \\times (1 + r_{\\text{PPN}})$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nUntuk 1 cup *dine-in* (Rp20.000,00), *service charge* $5\\%$ menambah Rp1.000,00 menjadi Rp21.000,00. Selanjutnya, PB1 $10\\%$ dihitung dari Rp21.000,00 sebesar Rp2.100,00, menghasilkan tagihan akhir **Rp23.100,00** (kenaikan efektif $15,5\\%$, bukan $15\\%$). Untuk biji kopi ritel Rp60.000,00, penambahan PPN $12\\%$ menghasilkan $60.000 \\times 1,12 = \\text{Rp67.200,00}$. Secara regulasi, makanan restoran dikenai PB1 daerah dan tidak dipungut PPN ganda.",
+      "kunci_pembeda": "Pajak restoran (PB1) dikenakan secara majemuk atas harga dasar yang sudah ditambah biaya layanan (service charge)."
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbandingan Strategi Pembelian Paling Hemat antar Beberapa Toko/Vendor dengan Struktur Promo Berbeda",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk bagian **Pengadaan Bahan Baku** pada stimulus utama untuk menentukan vendor paling hemat berdasarkan variasi volume pesanan (3 karung vs 5 karung).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPemilihan vendor paling hemat bergantung pada ambang batas kuantitas promo. Promo Beli 4 Gratis 1 pada Pemasok A tidak aktif jika pembelian di bawah 5 karung.\n\n**2. Model Matematika (Employing)**\nBandingkan **biaya satuan efektif** ($\\text{Total Biaya Bersih} \\div \\text{Total Karung Diterima}$) pada tiap skenario kuantitas pembelian.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\n* **Skenario 5 Karung:** Pemasok A mengeluarkan biaya bersih Rp5.472.000,00 (Rp1.094.400,00/karung), jauh lebih hemat dibandingkan Pemasok B sebesar $\\text{Rp7.980.000} - \\text{Rp750.000} = \\text{Rp7.230.000,00}$ (Rp1.446.000,00/karung).\n* **Skenario 3 Karung:** Pemasok A tidak memberi gratis karung, sehingga bayar $3 \\times 2.280.000 \\times 0,60 = \\text{Rp4.104.000,00}$. Pemasok B bayar $(3 \\times 2.280.000 \\times 0,70) - 478.800 = \\text{Rp4.309.200,00}$. Pemasok A tetap unggul Rp205.200,00, namun selisihnya menyempit drastis saat kuota gratis tidak tercapai.",
+      "kunci_pembeda": "Evaluasi penghematan lintas vendor harus membandingkan biaya bersih per unit diterima pada volume transaksi spesifik."
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Analisis Bruto, Neto, dan Tara dalam Pengemasan dan Distribusi Logistik Komoditas",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujuk bagian **Pengadaan Bahan Baku** pada stimulus utama mengenai spesifikasi kemasan karung biji kopi dan kapasitas angkut armada pengiriman.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nDalam logistik komoditas, ongkos angkut kendaraan dihitung berdasarkan berat kotor (**bruto**), sedangkan nilai jual dan bahan baku produksi dihitung berdasarkan berat bersih (**neto**).\n\n**2. Model Matematika (Employing)**\n* $\\text{Tara} = \\%\\text{Tara} \\times \\text{Bruto}$\n* $\\text{Neto} = \\text{Bruto} - \\text{Tara} = (1 - \\%\\text{Tara}) \\times \\text{Bruto}$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nSetiap karung memiliki $\\text{Tara} = 4\\% \\times 25\\text{ kg} = 1\\text{ kg}$ dan $\\text{Neto} = 25 - 1 = 24\\text{ kg}$. Untuk pesanan 5 karung, total beban armada pengiriman adalah $5 \\times 25 = 125\\text{ kg}$ (bruto), sedangkan bahan baku yang dibayar ke pemasok hanya $5 \\times 24 = 120\\text{ kg}$ (neto). Jika armada pikap memiliki batas muatan maksimal $500\\text{ kg}$, kapasitas angkut maksimalnya adalah $500 \\div 25 = 20\\text{ karung}$ (setara $480\\text{ kg}$ neto), bukan $500 \\div 24$.",
+      "kunci_pembeda": "Kapasitas angkut logistik menggunakan acuan bruto, sedangkan transaksi harga komoditas menggunakan acuan neto."
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan stimulus **Kopi Nusantara**, manajemen berencana membeli **10 karung** biji kopi untuk stok dua bulan. Jika manajemen memilih strategi pembelian paling hemat di antara kedua pemasok tersebut, selisih biaya bersih yang dapat dihemat dibandingkan memilih pemasok lainnya adalah ....",
+      "opsi_jawaban": [
+        "A. Rp2.898.000,00",
+        "B. Rp3.420.000,00",
+        "C. Rp4.266.000,00",
+        "D. Rp4.443.750,00",
+        "E. Rp5.178.000,00"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Neto per karung $= 25 - (4\\% \\times 25) = 24\\text{ kg}$, sehingga harga 1 karung $= 24 \\times \\text{Rp95.000} = \\text{Rp2.280.000}$. Pada **Pemasok A**, 10 karung cukup membayar 8 karung dengan faktor diskon $0,75 \\times 0,80 = 0,60$, yakni $8 \\times 2.280.000 \\times 0,60 = \\text{Rp10.944.000}$. Pada **Pemasok B**, biaya setelah diskon $30\\%$ adalah $\\text{Rp15.960.000}$ dikurangi batas maksimum *cashback* $\\text{Rp750.000}$ menjadi $\\text{Rp15.210.000}$. Selisihnya adalah **Rp4.266.000,00** (**C**). **Opsi B** keliru karena tidak membatasi *cashback*, sedangkan **E** menjumlahkan diskon menjadi $45\\%$."
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        5
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Melanjutkan pengadaan 10 karung biji kopi melalui **Pemasok A** pada soal sebelumnya, manajemen mengolah seluruh biji kopi tersebut untuk penjualan *dine-in* selama satu bulan. Jika seluruh hasil produksi kopi susu terjual habis dengan harga dasar **Rp20.000,00/cup**, berapa rupiah keuntungan bersih maksimum yang diperoleh kafe setelah dikurangi total biaya tetap dan biaya variabel (sebelum pajak penghasilan)? *(Tuliskan bilangan bulat tanpa titik atau simbol mata uang)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "136200000",
+      "bedah_cepat_markdown": "Total neto 10 karung adalah $240.000\\text{ gram}$. Setelah susut $5\\%$, kopi layak pakai tersisa $228.000\\text{ gram}$, menghasilkan $228.000 \\div 20 = 11.400\\text{ cup}$. Total pendapatan dasar $= 11.400 \\times \\text{Rp20.000} = \\text{Rp228.000.000}$. Total biaya terdiri atas biji kopi ($\\text{Rp10.944.000}$), kemasan/bahan tambahan ($11.400 \\times \\text{Rp6.040} = \\text{Rp68.856.000}$), dan biaya tetap ($\\text{Rp12.000.000}$), yaitu $\\text{Rp91.800.000}$. Keuntungan bersihnya adalah $228.000.000 - 91.800.000 = \\mathbf{136200000}$."
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Pada akhir pekan, **Kopi Nusantara** meluncurkan paket promo *dine-in* berupa **Beli 2 Gratis 1** untuk kopi susu (harga dasar Rp20.000,00/cup; *service charge* dan PB1 hanya dikenakan pada cup yang dibayar) serta memberikan **diskon $15\\%$** untuk setiap kemasan biji kopi ritel (harga dasar Rp60.000,00) sebelum dikenakan PPN $12\\%$. Jika seorang pelanggan memesan **3 cup kopi susu *dine-in*** dan **2 kemasan biji kopi ritel** dalam satu transaksi, total tagihan akhir yang harus dibayar pelanggan adalah ....",
+      "opsi_jawaban": [
+        "A. Rp160.240,00",
+        "B. Rp160.440,00",
+        "C. Rp162.400,00",
+        "D. Rp162.600,00",
+        "E. Rp183.540,00"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Untuk 3 cup *dine-in* (Beli 2 Gratis 1), tagihan dasar 2 cup $= \\text{Rp40.000}$. Setelah *service charge* $5\\%$ ($\\text{Rp42.000}$) dan PB1 $10\\%$, total minuman $= 42.000 \\times 1,10 = \\text{Rp46.200}$. Untuk 2 kemasan ritel ($\\text{Rp120.000}$), diskon $15\\%$ menghasilkan $\\text{Rp102.000}$, lalu dikenakan PPN $12\\%$ menjadi $102.000 \\times 1,12 = \\text{Rp114.240}$. Total tagihan $= 46.200 + 114.240 = \\mathbf{\\text{Rp160.440,00}}$ (**B**). **Opsi A** salah menghitung PB1 dari harga sebelum *service charge*, sedangkan **D** mengurangkan langsung persentase diskon dan PPN ($15\\% - 12\\% = 3\\%$)."
+    }
+  ],
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)"
+}

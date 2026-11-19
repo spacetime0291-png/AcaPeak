@@ -1,0 +1,125 @@
+{
+  "kode_subbab": "ppu-01-01",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 1: Makna dan Relasi Kata",
+  "judul_subbab": "Makna Leksikal, Gramatikal, dan Kontekstual",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Kebijakan fiskal itu memukul daya beli masyarakat kelas menengah', apakah kata 'memukul' bermakna menghantam dengan benda keras seperti di kamus?",
+      "opsi_cepat": [
+        "Ya, sesuai arti dasar kamus",
+        "Tidak, bergeser menjadi berdampak buruk secara kontekstual"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Di UTBK PPU, arti kamus (leksikal) sering kali gugur oleh konteks kalimat. Peserta yang terpaku pada makna dasar akan terjebak opsi literal yang tidak selaras dengan logika wacana."
+    },
+    "konsep_inti_markdown": "**Pemahaman makna kata UTBK** menguji ketepatan menafsirkan kata atau frasa sesuai konteks wacana dan kaidah KBBI VI:\n\n* **Makna Leksikal:** Arti dasar kata sesuai kamus sebelum mengalami pengimbuhan atau masuk ke kalimat.\n* **Makna Gramatikal & Kontekstual:** Perubahan arti akibat afiksasi, pengulangan, atau hubungan antarkata dalam kalimat.\n* **Denotatif vs Konotatif:** Makna lugas (apa adanya) berlawanan dengan makna kias (asosiatif/emosional).\n* **Idiom & Kolokasi:** Gabungan kata tetap yang membentuk makna baru atau pasangan kata baku yang lazim.",
+    "radar_jebakan_utbk": [
+      "Memilih sinonim kamus yang benar secara umum, tetapi merusak kepaduan makna dan struktur [S]-[P]-[O]-[K] saat disubstitusikan ke kalimat soal.",
+      "Menggunakan pasangan kolokasi atau penulisan kata serapan tidak baku (misal: merubah, resiko, mengenyampingkan) karena terbiasa dengan ragam percakapan."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Penentuan Makna Kata Spesifik atau Istilah Serapan Berdasarkan Konteks Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Otoritas moneter melakukan **intervensi** terukur untuk meredam **volatilitas** nilai tukar rupiah akibat tekanan eksternal.",
+      "bedah_pola_markdown": "**Bedah Pola Sintaksis & Substitusi:**\nPerhatikan struktur fungsi kalimat: [S] *Otoritas moneter* + [P] *melakukan* + [O] ***intervensi*** *terukur* + [K] *untuk meredam **volatilitas** nilai tukar*. Istilah **intervensi** (KBBI VI: campur tangan) di sini bermakna *tindakan pengendalian pasar*, sedangkan **volatilitas** bermakna *kecenderungan fluktuasi harga secara cepat*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Bank sentral melakukan **intervensi** (diartikan *penyerangan*) terhadap pasar valas. | Bank sentral melakukan **intervensi** (*campur tangan pengendalian*) terhadap pasar valas. |\n| **Volatilitas** (*kestabilan tetap*) kurs rupiah memicu kekhawatiran investor asing. | **Volatilitas** (*gejolak naik-turun*) kurs rupiah memicu kekhawatiran investor asing. |\n\n**Strategi Eksekusi:** Uji setiap opsi jawaban dengan menyubstitusikannya langsung ke slot [O] atau [K] kalimat tanpa merusak kelogisan wacana, sekaligus pastikan ejaan kata serapan sesuai kaidah baku KBBI VI.",
+      "kunci_pembeda": "Menguji makna istilah spesifik atau kata serapan dengan menyubstitusikannya ke posisi fungsi kalimat tanpa mengubah logika wacana.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Pergeseran Makna Kamus Menjadi Makna Kontekstual akibat Proses Pengimbuhan atau Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kementerian Lingkungan Hidup **menghijaukan** kembali kawasan bekas tambang dan **membekukan** izin operasional perusahaan pelanggar aturan.",
+      "bedah_pola_markdown": "**Bedah Pola Afiksasi & Fungsi:**\nKata dasar *hijau* (warna) dan *beku* (padat) mengalami pergeseran makna gramatikal akibat imbuhan *meN-kan* pada struktur: [S] *Kementerian* + [P1] ***menghijaukan*** + [O1] *kawasan tambang* + [P2] ***membekukan*** + [O2] *izin operasional*. Dalam konteks ini, *menghijaukan* berarti *menanami kembali dengan tumbuhan*, sedangkan *membekukan* berarti *menghentikan sementara*. Perhatikan pula peluluhan huruf awal kata dasar berimbuhan *meN-* sesuai EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemerintah **mensukseskan** program penghijauan dan **membekukan** (*mendinginkan*) izin. | Pemerintah **menyukseskan** program penghijauan dan **membekukan** (*menangguhkan*) izin. |\n| Tim peneliti **merubah** metode pengamatan dan **menterjemahkan** data lapangan. | Tim peneliti **mengubah** metode pengamatan dan **menerjemahkan** data lapangan. |\n\n**Strategi Eksekusi:** Identifikasi bentuk dasar dan imbuhannya, lalu selaraskan perubahan arti dengan objek [O] yang mengikutinya.",
+      "kunci_pembeda": "Melacak perubahan arti kata dasar akibat proses pengimbuhan (afiksasi) atau pengulangan yang terikat pada jenis objek kalimat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Identifikasi Makna Lugas (Denotatif) dan Makna Kias (Konotatif) dalam Wacana",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Meski sempat menjadi **anak emas** investor asing, perusahaan rintisan itu kini **gulung tikar** akibat beban utang yang membengkak.",
+      "bedah_pola_markdown": "**Bedah Pola Kontras Makna:**\nDalam struktur kalimat: [K] *Meski sempat menjadi **anak emas** investor asing*, [S] *perusahaan rintisan itu* + [K] *kini* + [P] ***gulung tikar*** + [K] *akibat beban utang*. Frasa **anak emas** (orang/pihak kesayangan) dan **gulung tikar** (bangkrut) bermakna kias (konotatif), bukan arti fisik sebenarnya. Teks akademik UTBK sering menyisipkan makna kias untuk menghaluskan atau menekankan situasi.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pedagang itu **gulung tikar** (diartikan *melipat alas duduk*) karena sepi pembeli. | Pedagang itu **gulung tikar** (*mengalami kebangkrutan*) karena sepi pembeli. |\n| Pejabat tersebut menolak **amplop** (*sampul surat kertas*) dari rekanan proyek. | Pejabat tersebut menolak **amplop** (*uang suap*) dari rekanan proyek. |\n\n**Strategi Eksekusi:** Uji apakah arti harfiah kata masuk akal secara fisik dalam kalimat; jika janggal, tafsirkan nilai rasa dan asosiasi situasinya.",
+      "kunci_pembeda": "Membedakan arti objektif yang sesuai referensi fisik (denotatif) dengan arti kias yang mengandung nilai rasa atau asosiasi (konotatif).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Pemasangan Kata Berpasangan Tetap (Idiom atau Kolokasi) dalam Konteks Bacaan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kejaksaan Agung **mengambil langkah** tegas untuk **mengusut tuntas** dugaan **tindak pidana** korupsi yang merugikan keuangan negara.",
+      "bedah_pola_markdown": "**Bedah Pola Pasangan Kata Baku:**\nPerhatikan kepaduan frasa pada struktur: [S] *Kejaksaan Agung* + [P] ***mengambil langkah*** *tegas* + [K] *untuk **mengusut tuntas** dugaan **tindak pidana** korupsi*. Kata tertentu memiliki pasangan lazim (kolokasi) atau membentuk kesatuan makna baru (idiom) yang tidak dapat dipertukarkan secara sembarangan dengan sinonimnya meskipun maknanya mirip.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Polisi **memungut langkah** untuk **mencari tuntas** kasus **perbuatan pidana** itu. | Polisi **mengambil langkah** untuk **mengusut tuntas** kasus **tindak pidana** itu. |\n| Panelis **membuat kesimpulan** dan **mengenyampingkan** (*tidak baku*) asumsi liar. | Panelis **menarik simpulan** dan **mengesampingkan** (*baku KBBI VI*) asumsi liar. |\n\n**Strategi Eksekusi:** Hafalkan kolokasi baku bahasa Indonesia formal (*mengambil alih*, *menjatuhkan sanksi*, *mengajukan banding*) dan hindari substitusi sinonim harfiah yang terdengar janggal.",
+      "kunci_pembeda": "Mempertahankan keutuhan pasangan kata tetap (kolokasi dan idiom) agar selaras dengan kelaziman berbahasa baku tanpa mengganti salah satu unsurnya.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kutipan teks berikut!\n\n> (1) Transformasi digital pada sektor logistik nasional menuntut perusahaan pelayaran untuk **mengonsolidasikan** seluruh jaringan distribusi pelabuhan. (2) Langkah tersebut dinilai krusial guna menekan **disparitas** biaya pengiriman antarpulau yang selama ini menghambat daya saing produk domestik.\n\nMakna kata **mengonsolidasikan** pada kalimat (1) dan **disparitas** pada kalimat (2) secara berurutan yang PALING TEPAT adalah ....",
+      "opsi_jawaban": [
+        "A. memisahkan secara terstruktur; kesamaan tarif",
+        "B. menggabungkan agar lebih kuat; perbedaan mencolok",
+        "C. memperluas jangkauan operasi; ketidakpastian jadwal",
+        "D. mengawasi secara ketat; keterlambatan distribusi",
+        "E. menyederhanakan prosedur; kemacetan arus barang"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Berdasarkan KBBI VI dan konteks jaringan pelabuhan, **mengonsolidasikan** (kata dasar *konsolidasi* + *meN-kan*) berarti *memperteguh atau menggabungkan berbagai jaringan menjadi satu kesatuan yang lebih kuat* (opsi **A** berlawanan makna). Sementara itu, **disparitas** pada frasa *disparitas biaya pengiriman antarpulau* bermakna *perbedaan atau ketimpangan yang mencolok* antardaerah. Jika disubstitusikan ke kalimat, hanya opsi **B** yang menjaga kelogisan hubungan sebab-akibat antarkalimat secara utuh.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kalimat berikut dengan saksama!\n\n> \"Kebijakan pengetatan kredit properti tahun ini mulai **mendinginkan** pasar perumahan mewah yang sempat mengalami lonjakan harga spekulatif.\"\n\nKata **mendinginkan** dalam kalimat tersebut memiliki pergeseran makna yang SEPOLA dengan kata bercetak tebal pada kalimat ....",
+      "opsi_jawaban": [
+        "A. Petugas laboratorium **mendinginkan** sampel vaksin di dalam lemari pendingin bersuhu minus dua puluh derajat.",
+        "B. Hujan deras yang mengguyur sejak sore berhasil **mendinginkan** suhu udara perkotaan yang terasa pengap.",
+        "C. Klarifikasi resmi manajemen akhirnya **mendinginkan** ketegangan antara serikat pekerja dan direksi perusahaan.",
+        "D. Koki restoran itu **mendinginkan** adonan kue di atas rak kawat sebelum mengolesinya dengan krim.",
+        "E. Sistem sirkulasi air otomatis bertugas **mendinginkan** mesin turbin pembangkit listrik agar tidak panas berlebih."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Pada kalimat stimulus, kata **mendinginkan** tidak bermakna lugas menurunkan suhu fisik benda, melainkan bergeser secara kontekstual dan kias menjadi *meredakan atau mengurangi gejolak* aktivitas pasar. Pola makna kias serupa terdapat pada **opsi C**, di mana kata **mendinginkan** bermakna *meredakan ketegangan* konflik antarpihak. Sebaliknya, **opsi A**, **B**, **D**, dan **E** seluruhnya mempertahankan makna lugas (denotatif) berupa penurunan temperatur fisik pada sampel vaksin, udara, adonan kue, dan mesin.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan paragraf berikut!\n\n> Dalam sidang komite etik, beberapa anggota berusaha **mencuci tangan** atas kegagalan proyek infrastruktur daerah tersebut. Namun, ketua tim auditor tetap **mengambil langkah** objektif dengan **mengesampingkan** tekanan politik dan menjadikan temuan lapangan sebagai **batu pijakan** penyusunan rekomendasi sanksi.\n\nMakna ungkapan **mencuci tangan** dan ketepatan pasangan kata pada paragraf di atas yang PALING TEPAT adalah ....",
+      "opsi_jawaban": [
+        "A. membersihkan diri sebelum rapat dimulai; frasa *mengambil langkah* seharusnya diganti menjadi *memungut langkah*",
+        "B. menghindar dari tanggung jawab atas kesalahan; seluruh pasangan kata dan bentuk *mengesampingkan* sudah baku",
+        "C. menolak menerima bantuan dana proyek; kata *mengesampingkan* tidak baku dan seharusnya ditulis *mengenyampingkan*",
+        "D. menyerahkan wewenang kepada pihak lain; frasa *batu pijakan* bermakna lugas sebagai pijakan kaki di proyek",
+        "E. menghentikan penyelidikan secara sepihak; frasa *mengambil langkah* tidak efektif dalam kalimat formal"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Ungkapan **mencuci tangan** dalam konteks sidang etik bermakna kias *tidak mau ikut campur atau menghindar dari tanggung jawab atas suatu kesalahan* (**opsi B**). Selain itu, pasangan kolokasi **mengambil langkah** dan **batu pijakan** (dasar tindakan) sudah tepat secara idiomatis. Kata berimbuhan **mengesampingkan** (dari gabungan kata *ke samping* + *meN-kan*) juga telah ditulis baku sesuai kaidah EYD V dan KBBI VI, sehingga **opsi C** salah.",
+      "visual": null
+    }
+  ]
+}

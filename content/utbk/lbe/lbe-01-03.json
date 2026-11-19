@@ -1,0 +1,119 @@
+{
+  "kode_subbab": "lbe-01-03",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 1: Main Idea & Purpose",
+  "judul_subbab": "Target Audience and Text Organization",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah teks membahas krisis banjir pesisir di Paragraf 1, lalu memaparkan instalasi dinding laut modular beserta evaluasi anggarannya di Paragraf 2–3. Apa struktur utama teks tersebut?",
+      "opsi_cepat": [
+        "Cause-and-Effect (fokus pada dampak banjir)",
+        "Problem-Solution (fokus pada pemecahan masalah)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta terjebak kata 'dampak' di awal teks, padahal mayoritas paragraf berikutnya menguraikan intervensi teknis dan evaluasinya (Problem-Solution)."
+    },
+    "konsep_inti_markdown": "- **Target Audience & Source:** Ditentukan lewat *diction* (jargon teknis vs populer), *tone* (objektif vs persuasif), dan jenis rekomendasi.\n- **Text Organization:** Peta arsitektur ide teks secara makro (*Problem-Solution*, *Compare-Contrast*, *Chronological*, *Cause-Effect*).\n- **Paragraph Relationship:** Logika penyambung antar-paragraf berurutan (*elaboration*, *contrast*, *exemplification*, *counterargument*).\n- **Aturan Emas:** Baca **kalimat pertama dan terakhir** setiap paragraf untuk memetakan kerangka tanpa terjebak detail minor.",
+    "radar_jebakan_utbk": [
+      "Menggeneralisasi pola 1 kalimat menjadi struktur keseluruhan teks (misal: ada kata 'because' langsung dianggap Cause-and-Effect).",
+      "Memilih audiens terlalu spesifik/sempit (misal: 'civil engineers only') padahal teks menyajikan tinjauan kebijakan lintas sektor."
+    ],
+    "stimulus_utama_bersama": "Coastal megacities across Southeast Asia face an escalating threat from land subsidence compounded by rising sea levels, a dual phenomenon that renders conventional drainage systems obsolete during seasonal king tides. In Jakarta and Bangkok, groundwater extraction over the past three decades has caused parts of the urban core to sink by up to 10 centimeters annually, exposing millions of residents and critical logistics hubs to chronic inundation.\n\nHistorically, municipal authorities relied almost exclusively on grey infrastructure—such as towering concrete seawalls and mechanical pumping stations—to hold back floodwaters. While these rigid barriers provide immediate protection against moderate storm surges, engineers increasingly warn that they disrupt natural sediment transport, degrade coastal mangroves, and require escalating maintenance budgets that strain municipal finances.\n\nIn response to these limitations, urban planners are now piloting hybrid 'living shorelines' that integrate permeable breakwaters with restored mangrove buffers. Unlike static concrete walls, these nature-based installations dissipate wave energy gradually while trapping alluvial silt, allowing the coastline to accrete vertically over time. Early monitoring data from pilot sites in northern Java indicate a 40 percent reduction in wave height alongside measurable rebounds in local fishery yields.\n\nNevertheless, scaling hybrid defenses across densely populated waterfronts presents complex regulatory hurdles. Securing land tenure for buffer zones often conflicts with port expansion plans, requiring coordinated zoning reforms and blended public-private financing mechanisms before ecological engineering can replace legacy concrete fortifications.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifying the Intended Audience / Source of Publication",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Perhatikan diksi lintas paragraf: 'dual phenomenon', 'grey infrastructure', 'alluvial silt', dan 'blended public-private financing mechanisms' (Paragraf 1–4).",
+      "bedah_pola_markdown": "**Teknik Scanning Diksi & Register:**\n1. **Pindai Jargon & Fokus Pembahasan:** Teks memadukan istilah teknik pesisir (*alluvial silt*, *permeable breakwaters*) dengan istilah tata kelola (*zoning reforms*, *public-private financing*).\n2. **Eliminasi Sumber Ekstrem:** Bukan *consumer blog* (terlalu formal/akademik), bukan pula *pure marine biology journal* (membahas pembiayaan & tata ruang).\n3. **Parafrasa ke Opsi Benar:** Kombinasi sains terapan dan kebijakan publik mengarah pada *urban policy journal*, *environmental planning report*, atau pembaca seperti *urban planners and policymakers*.\n\n| Ciri Teks | Sumber / Audiens Tepat |\n| :--- | :--- |\n| Rumus statistik, *p-value*, metodologi lab | Jurnal ilmiah murni / Peneliti |\n| Evaluasi program + rekomendasi regulasi | Laporan kebijakan / Perencana kota |\n| Bahasa santai, tips praktis harian | Blog populer / Masyarakat umum |",
+      "kunci_pembeda": "Cocokkan tingkat keformalan kosakata dan jenis solusi akhir teks (regulasi, klinis, atau tips praktis) dengan profil pembaca profesionalnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Overall Organizational Structure of the Passage",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "P1: 'face an escalating threat...' -> P2: 'relied almost exclusively on grey infrastructure... While these... warn...' -> P3: 'In response to these limitations, urban planners are now piloting...' -> P4: 'Nevertheless, scaling... presents complex regulatory hurdles.'",
+      "bedah_pola_markdown": "**Teknik Skimming Kalimat Topik (P1–P4):**\n1. **Petakan Fungsi Tiap Paragraf:**\n   - **P1:** Masalah inti (penurunan tanah & banjir rob).\n   - **P2:** Solusi lama (*grey infrastructure*) beserta kelemahannya.\n   - **P3:** Solusi baru (*hybrid living shorelines*) dan bukti keberhasilannya.\n   - **P4:** Tantangan implementasi solusi baru.\n2. **Sintesis Pola Makro:** Alur bergerak dari identifikasi krisis menuju evaluasi intervensi lama dan pengenalan alternatif solusi -> **Problem-Solution**.\n3. **Ciri Opsi Jebakan:** *Chronological* (hanya muncul selintas lewat kata *Historically* di P2) dan *Compare-Contrast* (perbandingan dinding beton vs mangrove hanya alat bantu di P3, bukan tujuan utama seluruh bacaan).",
+      "kunci_pembeda": "Struktur keseluruhan ditentukan oleh proporsi dominan paragraf (mayoritas membahas solusi & kendalanya), bukan satu penanda waktu di satu paragraf.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Relationship Between Two Consecutive Paragraphs",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Akhir P2: '...require escalating maintenance budgets that strain municipal finances.' vs Awal P3: 'In response to these limitations, urban planners are now piloting hybrid living shorelines...'",
+      "bedah_pola_markdown": "**Teknik Jembatan Transisi (Akhir P_n ke Awal P_{n+1}):**\n1. **Baca 1 Kalimat Terakhir P2 & 1 Kalimat Pertama P3:** P2 ditutup dengan kelemahan ekologis dan anggaran tembok laut beton. P3 dibuka dengan frasa penunjuk *In response to these limitations*.\n2. **Identifikasi Hubungan Logis:** P3 hadir untuk menawarkan alternatif yang menjawab kelemahan yang baru saja dipaparkan di P2.\n3. **Parafrasa ke Opsi Benar:** Cari kata kerja transisi seperti *proposes an alternative solution to the drawbacks mentioned in paragraph 2* atau *introduces a remedy for the limitations outlined previously*.\n4. **Jebakan UTBK:** Opsi yang menyebut P3 *contradicts the data in P2* (salah, karena P3 tidak membantah fakta kegagalan beton, melainkan menindaklanjutinya dengan inovasi).",
+      "kunci_pembeda": "Selalu uji frasa transisi di kalimat pertama paragraf kedua—kata rujukan seperti 'these limitations' atau 'nevertheless' langsung mengunci hubungan logisnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Mapping the Flow of Ideas Across the Passage",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Alur lengkap P1 -> P2 -> P3 -> P4 pada stimulus utama.",
+      "bedah_pola_markdown": "**Teknik Pemetaan Blok Ide (Macro-Outline):**\n1. **Kompres Tiap Paragraf Menjadi 3–4 Kata Abstrak:**\n   - **P1:** *Defining the coastal threat* (Ancaman).\n   - **P2:** *Critiquing conventional defenses* (Kritik solusi lama).\n   - **P3:** *Presenting an ecological alternative* (Solusi baru + bukti).\n   - **P4:** *Identifying implementation barriers* (Hambatan penerapan).\n2. **Cocokkan Urutan Linear:** Opsi benar wajib mempertahankan urutan persis (Ancaman -> Kritik -> Alternatif -> Hambatan) tanpa membalik posisi.\n3. **Jebakan UTBK:** Opsi yang menukar urutan (misal: menyebut *regulatory hurdles* dibahas sebelum *pilot data*) atau memasukkan ide yang tidak ada (misal: *final cost-benefit calculation*).",
+      "kunci_pembeda": "Ubah setiap paragraf menjadi label fungsi abstrak (Masalah -> Kritik -> Solusi -> Kendala) lalu eliminasi opsi yang urutannya melompat.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Based on the diction, analytical scope, and overall structure of the passage, where would this text most likely be published, and what is its primary organizational pattern?",
+      "opsi_jawaban": [
+        "A. A marine biology textbook; chronological sequence of coastal erosion",
+        "B. A municipal policy and urban planning journal; problem-solution analysis",
+        "C. A civil engineering construction manual; step-by-step installation guide",
+        "D. A general travel magazine; compare-and-contrast of Southeast Asian cities",
+        "E. An environmental activist pamphlet; cause-and-effect of groundwater laws"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Langkah Eksekusi:**\n1. **Analisis Diksi & Cakupan:** Teks memadukan dampak lingkungan (*subsidence*, *mangroves*) dengan tata kelola (*zoning reforms*, *public-private financing*), khas jurnal kebijakan/perencanaan kota (**municipal policy and urban planning journal**).\n2. **Analisis Struktur:** P1 memaparkan masalah banjir pesisir, P2 mengevaluasi solusi lama, dan P3–P4 membahas solusi hibrida serta hambatan regulasinya (**problem-solution**).\n3. **Eliminasi:** A & D salah struktur; C salah karena tidak ada panduan teknis konstruksi; E salah karena nada teks objektif-analitis, bukan pamflet aktivis.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "How does paragraph 4 primarily relate to paragraph 3 in the passage?",
+      "opsi_jawaban": [
+        "A. It invalidates the empirical monitoring data collected from pilot sites in northern Java.",
+        "B. It shifts focus from ecological benefits to the institutional obstacles of scaling the new approach.",
+        "C. It provides additional statistical evidence proving that concrete seawalls are more cost-effective.",
+        "D. It traces the historical origins of port expansion conflicts in Bangkok and Jakarta.",
+        "E. It concludes that nature-based defenses should be abandoned in favor of private port development."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Langkah Eksekusi:**\n1. **Cek Transisi:** P3 menyoroti keberhasilan ekologis *living shorelines* (meredam 40% tinggi gelombang). P4 diawali kata *Nevertheless* dan langsung membahas *complex regulatory hurdles* serta konflik *land tenure* saat memperluas skala proyek (*scaling*).\n2. **Kesimpulan:** P4 menggeser fokus dari manfaat teknis/ekologis menuju hambatan kelembagaan dalam penerapannya secara luas (**B**).\n3. **Eliminasi:** A & E terlalu ekstrem (*invalidates*, *abandoned*); C bertentangan dengan P2; D melenceng karena P4 membahas regulasi masa depan, bukan sejarah.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Evaluate the following statements regarding the progression of ideas across the passage. Determine whether each statement is **TRUE** or **FALSE**.\n\n| No. | Statement | TRUE | FALSE |\n| :--- | :--- | :---: | :---: |\n| 1 | The passage begins by establishing human-induced land subsidence and sea-level rise as compounding drivers of urban flooding. | | |\n| 2 | Paragraph 2 argues that conventional grey infrastructure has failed to provide any protection even against moderate storm surges. | | |\n| 3 | The author progresses from critiquing legacy flood defenses to presenting hybrid ecological alternatives before addressing governance barriers. | | |",
+      "opsi_jawaban": [
+        "1: TRUE | 2: FALSE | 3: TRUE"
+      ],
+      "kunci_jawaban": "1: TRUE | 2: FALSE | 3: TRUE",
+      "bedah_cepat_markdown": "**Bedah Matriks:**\n- **Pernyataan 1 (TRUE):** P1 secara eksplisit menyebut *land subsidence compounded by rising sea levels* akibat *groundwater extraction* memicu banjir kronis.\n- **Pernyataan 2 (FALSE):** Jebakan ekstrem (*failed to provide any protection*). P2 menyatakan tembok beton *provide immediate protection against moderate storm surges*, hanya saja mahal perawatannya dan merusak ekosistem.\n- **Pernyataan 3 (TRUE):** Sesuai alur makro teks: kritik solusi lama (P2) -> alternatif hibrida (P3) -> hambatan regulasi/tata kelola (P4).",
+      "visual": null
+    }
+  ]
+}

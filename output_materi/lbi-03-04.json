@@ -1,0 +1,123 @@
+{
+  "kode_subbab": "lbi-03-04",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 3: Literasi Teks Sastra dan Literasi Ilmu Pengetahuan",
+  "judul_subbab": "Literasi Teks Sosial-Humaniora, Ekonomi, dan Kebijakan",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah wacana menyebut bahwa kenaikan tarif cukai rokok menurunkan konsumsi rumah tangga miskin sebesar 4%, tetapi memicu pergeseran ke rokok ilegal di daerah pedesaan. Manakah simpulan kebijakan yang paling akurat?",
+      "opsi_cepat": [
+        "Kenaikan cukai terbukti gagal total menekan angka perokok nasional.",
+        "Kebijakan cukai efektif menekan konsumsi legal, namun menimbulkan efek samping peralihan pasar."
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta terjebak generalisasi ekstrem ('gagal total'). Soal LBI menuntut pembacaan proporsional atas dampak ganda suatu kebijakan."
+    },
+    "konsep_inti_markdown": "- **Fokus Utama:** Membedah relasi kausalitas, dinamika makro-mikro ekonomi, diferensiasi dampak sosial, serta polarisasi argumen dalam wacana kebijakan.\n- **Alur Kausal:** $\\text{Kebijakan/Fenomena} \\rightarrow \\text{Mekanisme Transmisi} \\rightarrow \\text{Dampak Diferensial}$.\n- **Prinsip Emas:** Jawaban wajib berakar pada bukti eksplisit teks, bebas dari asumsi opini pribadi maupun generalisasi absolut (`semua`, `pasti`).",
+    "radar_jebakan_utbk": [
+      "Menyamakan korelasi dua fenomena sosial/ekonomi dengan hubungan sebab-akibat langsung tanpa dasar konjungsi kausal di teks.",
+      "Menggeneralisasi dampak kebijakan pada satu kelompok rentan (misal UMKM) sebagai dampak keseluruhan populasi."
+    ],
+    "stimulus_utama_bersama": "Penerapan pajak karbon secara bertahap pada sektor pembangkit listrik berbahan bakar batu bara mulai memicu pergeseran struktural dalam lanskap ekonomi nasional. Secara makroekonomi, kebijakan ini bertujuan menginternalisasi biaya eksternalitas emisi sekaligus mendorong investasi energi terbarukan. Namun, dalam jangka pendek, kenaikan biaya produksi energi berpotensi menekan margin keuntungan industri padat karya yang masih bergantung pada pasokan listrik konvensional. Akibatnya, sejumlah pelaku usaha menengah terpaksa menahan ekspansi tenaga kerja guna menjaga stabilitas arus kas.\n\nDi sisi lain, dinamika pasar kerja menunjukkan fenomena polarisasi keterampilan. Sektor teknologi hijau dan audit lingkungan mengalami lonjakan permintaan tenaga ahli, sementara pekerja kerah biru di wilayah sentra pertambangan menghadapi risiko pemutusan hubungan kerja friksional. Pemerintah merespons ketimpangan dampak ini melalui skema realokasi penerimaan pajak karbon untuk subsidi pelatihan ulang (reskilling) tenaga kerja terdampak serta insentif pembiayaan bagi UMKM yang mengadopsi efisiensi energi.\n\nMeskipun demikian, efektivitas kebijakan tersebut memicu perdebatan di kalangan pengamat kebijakan publik. Kelompok pendukung menilai pajak karbon sebagai instrumen fiskal paling rasional untuk mencegah kerugian ekonomi jangka panjang akibat krisis iklim serta menghindari hambatan tarif karbon di pasar ekspor global. Sebaliknya, kalangan ekonom kritis memperingatkan bahwa tanpa kesiapan infrastruktur jaringan listrik pintar dan rantai pasok komponen lokal, beban pajak justru akan ditransmisikan menjadi inflasi biaya dorong (cost-push inflation) yang menggerus daya beli kelompok berpendapatan rendah.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Analisis Hubungan Sebab-Akibat Fenomena Sosial, Demografi, Budaya, atau Kebijakan Publik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1 & 2: Penerapan pajak karbon memicu kenaikan biaya produksi energi, menekan margin industri padat karya, dan membuat pelaku usaha menengah menahan ekspansi tenaga kerja.",
+      "bedah_pola_markdown": "**Teknik Scanning:** Pindai konjungsi kausalitas eksplisit seperti *memicu*, *mengakibatkan*, *berpotensi menekan*, dan *akibatnya* pada paragraf 1 dan 2.\n\n**Parafrasa Opsi Benar:** Rantai kausal teks membentuk pola $\\text{Pajak Karbon} \\rightarrow \\text{Biaya Energi Naik} \\rightarrow \\text{Margin Tertekan} \\rightarrow \\text{Ekspansi Kerja Tertahan}$. Opsi benar akan merangkum hubungan tidak langsung ini secara presisi, misalnya: *Penerapan pajak karbon berdampak pada tertahannya penyerapan tenaga kerja baru di sektor usaha menengah akibat menyusutnya margin keuntungan.*\n\n**Ciri Opsi Jebakan:**\n- Membalik urutan sebab-akibat (menyebut tertahannya ekspansi kerja memicu pajak karbon).\n- Menghilangkan variabel perantara dan mengklaim pajak karbon langsung memecat seluruh pekerja industri.",
+      "kunci_pembeda": "Selalu lacak mata rantai perantara di antara sebab awal dan akibat akhir agar tidak terjebak lompatan logika.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Penafsiran Dinamika Ekonomi (Inflasi, Pasar Kerja, UMKM, Transisi Energi) Berdasarkan Wacana Analitis",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 2 & 3: Polarisasi keterampilan di pasar kerja (lonjakan ahli teknologi hijau vs PHK friksional tambang) serta risiko cost-push inflation yang menggerus daya beli.",
+      "bedah_pola_markdown": "**Teknik Skimming:** Fokus pada istilah kunci ekonomi seperti *polarisasi keterampilan*, *PHK friksional*, *insentif UMKM*, dan *cost-push inflation*.\n\n**Parafrasa Opsi Benar:** Teks menjelaskan bahwa transisi energi tidak menghapus lapangan kerja secara absolut, melainkan menggeser struktur permintaan (polarisasi). Selain itu, inflasi terjadi jika biaya pajak dibebankan ke harga barang tanpa dukungan infrastruktur. Opsi benar menafsirkan mekanisme ini secara utuh sesuai konteks wacana.\n\n**Ciri Opsi Jebakan:**\n- Menggunakan istilah ekonomi yang mirip tetapi keliru secara konsep teks (misalnya menyebut terjadi *demand-pull inflation* atau inflasi akibat lonjakan permintaan masyarakat).\n- Mengklaim UMKM langsung bangkrut akibat pajak karbon, padahal teks menyebut UMKM mendapat insentif pembiayaan efisiensi energi.",
+      "kunci_pembeda": "Pastikan mekanisme penularan dampak ekonomi (sisi penawaran/biaya vs sisi permintaan) sesuai persis dengan definisi di dalam teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Identifikasi Dampak Kebijakan terhadap Kelompok Masyarakat yang Berbeda",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1, 2, & 3: Perbandingan dampak pada industri padat karya, pekerja kerah biru tambang, tenaga ahli teknologi hijau, UMKM, dan kelompok berpendapatan rendah.",
+      "bedah_pola_markdown": "**Teknik Scanning:** Buat pemetaan cepat (*entity mapping*) untuk setiap kelompok aktor yang disebut dalam teks beserta perlakuan spesifiknya.\n\n**Parafrasa Opsi Benar:** Setiap kelompok menerima dampak asimetris: ahli teknologi hijau diuntungkan oleh lonjakan permintaan; pekerja tambang menghadapi risiko PHK friksional namun memperoleh subsidi *reskilling*; kelompok berpendapatan rendah rentan tergerus daya belinya jika inflasi terjadi. Opsi benar mencocokkan aktor dan dampaknya tanpa tertukar.\n\n**Ciri Opsi Jebakan:**\n- **Tukar Aktor (*Cross-Entity Trap*):** Menyebut pekerja kerah biru tambang mendapatkan insentif pembiayaan efisiensi energi (seharusnya milik UMKM).\n- Menggeneralisasi bahwa seluruh lapisan masyarakat mengalami penurunan daya beli secara langsung tanpa syarat terjadinya inflasi.",
+      "kunci_pembeda": "Ikat setiap klaim dampak hanya pada subjek/kelompok spesifik yang melekat pada kalimat tersebut.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Sintesis Argumen Pro dan Kontra dalam Wacana Kebijakan Publik atau Sosiologi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 3: Kelompok pendukung menyoroti pencegahan kerugian krisis iklim & hambatan ekspor, sedangkan ekonom kritis menyoroti belum siapnya infrastruktur listrik pintar & risiko inflasi.",
+      "bedah_pola_markdown": "**Teknik Skimming:** Identifikasi penanda kontras dialektis pada paragraf 3: *Meskipun demikian*, *Kelompok pendukung menilai*, dan *Sebaliknya, kalangan ekonom kritis memperingatkan*.\n\n**Parafrasa Opsi Benar:** Sintesis yang tepat tidak memihak salah satu kubu, melainkan merangkum titik temu atau ketegangan utama keduanya: *Keberhasilan pajak karbon dalam melindungi daya saing ekspor dan iklim sangat bergantung pada kesiapan infrastruktur pendukung agar tidak memicu inflasi domestik.*\n\n**Ciri Opsi Jebakan:**\n- Menganggap ekonom kritis menolak transisi energi secara mutlak (padahal mereka hanya mengkritisi prasyarat infrastruktur dan risiko transmisi biaya).\n- Menyimpulkan bahwa penulis teks sepenuhnya memihak kelompok pendukung kebijakan.",
+      "kunci_pembeda": "Sintesis objektif menggabungkan syarat keberhasilan dari kubu kontra dengan tujuan strategis dari kubu pro.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan stimulus utama, manakah rangkaian hubungan sebab-akibat yang paling tepat menggambarkan dinamika ekonomi akibat penerapan pajak karbon dalam jangka pendek?",
+      "opsi_jawaban": [
+        "A. Kenaikan biaya produksi energi mendorong pemerintah memangkas subsidi pelatihan ulang bagi pekerja sektor pertambangan.",
+        "B. Internalisasi biaya emisi secara langsung meningkatkan daya beli masyarakat berpendapatan rendah melalui insentif UMKM.",
+        "C. Kenaikan biaya energi menekan margin industri padat karya sehingga pelaku usaha menengah menahan perekrutan tenaga kerja baru.",
+        "D. Lonjakan permintaan ahli teknologi hijau menyebabkan terjadinya PHK friksional pada sektor industri padat karya.",
+        "E. Hambatan tarif karbon di pasar ekspor global memaksa pembangkit listrik batu bara segera beralih ke jaringan listrik pintar."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "**Kunci: C.** Paragraf 1 menjelaskan alur kausal eksplisit: pajak karbon $\\rightarrow$ kenaikan biaya produksi energi $\\rightarrow$ menekan margin industri padat karya $\\rightarrow$ usaha menengah menahan ekspansi tenaga kerja. \n- **A salah:** Pemerintah justru mengalokasikan penerimaan pajak untuk subsidi *reskilling*.\n- **B salah:** Daya beli kelompok berpendapatan rendah justru berisiko tergerus inflasi.\n- **D salah:** Kedua hal tersebut merupakan gejala paralel polarisasi pasar kerja, bukan hubungan sebab-akibat langsung.\n- **E salah:** Tidak ada pernyataan mengenai kewajiban pembangkit batu bara beralih ke jaringan listrik pintar akibat tarif ekspor.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Tentukan apakah pernyataan mengenai dampak kebijakan pajak karbon terhadap berbagai kelompok masyarakat berikut **BENAR** atau **SALAH** berdasarkan wacana!\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Pekerja kerah biru di sentra pertambangan berisiko mengalami PHK friksional sekaligus menjadi sasaran program *reskilling*. | [ ] | [ ] |\n| 2 | Pelaku UMKM mendapatkan subsidi pelatihan ulang tenaga kerja untuk mencegah penurunan daya beli akibat inflasi biaya dorong. | [ ] | [ ] |\n| 3 | Tenaga ahli di bidang audit lingkungan memperoleh peluang kerja lebih luas akibat pergeseran struktur ekonomi hijau. | [ ] | [ ] |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah",
+        "B. Benar - Salah - Benar",
+        "C. Salah - Benar - Benar",
+        "D. Benar - Salah - Salah",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Kunci: B (Benar - Salah - Benar).**\n- **Pernyataan 1 (Benar):** Paragraf 2 menyatakan pekerja kerah biru tambang menghadapi risiko PHK friksional dan mendapat subsidi *reskilling*.\n- **Pernyataan 2 (Salah - Jebakan Tukar Aktor):** UMKM menerima *insentif pembiayaan efisiensi energi*, bukan subsidi pelatihan ulang tenaga kerja.\n- **Pernyataan 3 (Benar):** Paragraf 2 menyebut sektor teknologi hijau dan audit lingkungan mengalami lonjakan permintaan tenaga ahli.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manakah pernyataan yang paling tepat mensintesiskan argumen kelompok pendukung dan kalangan ekonom kritis pada paragraf ketiga?",
+      "opsi_jawaban": [
+        "A. Pajak karbon perlu dibatalkan karena risiko inflasi biaya dorong jauh lebih merugikan daripada hambatan tarif ekspor global.",
+        "B. Penguatan rantai pasok komponen lokal dan infrastruktur listrik pintar menjadi prasyarat penting agar tujuan fiskal pajak karbon tidak terdistorsi oleh inflasi domestik.",
+        "C. Kalangan ekonom kritis sepakat bahwa pajak karbon efektif mencegah krisis iklim asalkan daya beli kelompok berpendapatan rendah diabaikan sementara.",
+        "D. Kelompok pendukung dan ekonom kritis sama-sama meyakini bahwa pajak karbon akan segera menghapus ketergantungan pada batu bara.",
+        "E. Hambatan tarif karbon di pasar ekspor hanya dapat diatasi dengan menurunkan pajak karbon bagi industri padat karya."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Kunci: B.** Sintesis objektif menggabungkan tujuan kubu pendukung (instrumen fiskal pencegah krisis iklim dan hambatan ekspor) dengan catatan kritis kubu ekonom (perlunya kesiapan infrastruktur jaringan listrik pintar dan komponen lokal agar tidak memicu *cost-push inflation*).\n- **A & C salah:** Bersifat ekstrem dan mendistorsi posisi ekonom kritis (mereka tidak meminta pembatalan mutlak maupun pengabaian daya beli).\n- **D & E salah:** Informasi spekulatif yang tidak tercantum di dalam paragraf ketiga.",
+      "visual": null
+    }
+  ]
+}

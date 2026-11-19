@@ -1,0 +1,106 @@
+{
+  "kode_subbab": "lbe-03-02",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 3: Inference, Tone, & Multi-Text",
+  "judul_subbab": "Author's Tone, Attitude, and Bias",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah artikel berbunyi: 'While facial recognition promises faster airport boarding, its unchecked deployment threatens fundamental privacy rights.' Apa nada (tone) penulis terhadap teknologi ini?",
+      "opsi_cepat": [
+        "Fully supportive (Sepenuhnya mendukung)",
+        "Cautious and concerned (Waspada dan prihatin)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta terkecoh kata 'promises faster boarding' di awal klausa. Konjungsi 'While' berfungsi mengontraskan manfaat awal dengan kekhawatiran utama ('unchecked deployment threatens') di klausa inti."
+    },
+    "konsep_inti_markdown": "**Peta Taktis Tone, Attitude, & Bias:**\n- **Tone (Nada Penulis):** Sikap emosional/intelektual penulis yang tergambar lewat diksi (*adjectives/adverbs*) dan konjungsi kontras (*however, yet, while*).\n- **Attitude (Sikap Komentator):** Respons spesifik pemberi komentar terhadap *Original Post* dalam forum diskusi.\n- **Bias (Keberpihakan):** Penggunaan kata bermuatan nilai (*loaded words*) secara sepihak.\n- **Perspective (Sudut Pandang):** Posisi atau argumen inti yang paling selaras dengan klaim utama teks.",
+    "radar_jebakan_utbk": [
+      "Opsi bermakna ekstrem (furious, ecstatic, completely hopeless) padahal teks akademik UTBK cenderung bernada moderat (cautious, skeptical, concerned, ambivalent).",
+      "Terjebak pada klausa konsesif (klausa setelah 'Although/While') yang sebenarnya hanya berfungsi mengakui argumen lawan sebelum disanggah penulis."
+    ],
+    "stimulus_utama_bersama": "**Urban Micro-Mobility Thread: Are E-Scooters Solving Congestion?**\n\n**Original Post — Dr. Aris Thorne (Urban Mobility Researcher)**\nOver the past three years, municipal authorities have aggressively promoted dockless electric scooters as a sustainable cure-all for urban gridlock. Undoubtedly, these compact vehicles offer convenient first- and last-mile connectivity, reducing short car trips in dense commercial districts. However, the uncritical enthusiasm surrounding micro-mobility often masks severe infrastructural deficits. Without dedicated bike lanes, riders frequently encroach upon pedestrian sidewalks, resulting in a documented spike in emergency room admissions. Furthermore, lifecycle assessments reveal that the rapid turnover of cheaply manufactured scooters, coupled with daily van collections for battery charging, substantially erodes their purported carbon savings. Until cities enforce rigorous fleet caps and establish protected transit corridors, treating e-scooters as an environmental panacea remains premature.\n\n**Comment 1 — Maya Lin (City Council Transport Advisor)**\nDr. Thorne raises a vital point regarding sidewalk safety, yet dismissing the entire sector as 'premature' overlooks measurable successes in cities like Oslo and Paris. Where municipalities paired fleet regulations with congestion pricing, private car dependency dropped noticeably. The technology itself is not flawed; rather, fragmented urban governance is to blame.\n\n**Comment 2 — Kevin Vance (Tech Venture Analyst)**\nOh, brilliant—let's drown promising green startups in endless bureaucratic red tape before they even turn a profit. Every transformative transit shift, from bicycles to subways, faced initial growing pains and naysayers predicting doom.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifying the Author's Tone",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk Original Post (Dr. Aris Thorne): 'Undoubtedly, these compact vehicles offer convenient... However, the uncritical enthusiasm... masks severe infrastructural deficits... treating e-scooters as an environmental panacea remains premature.'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Konjungsi Kontras:** Temukan kata *However* di kalimat ketiga. Semua pernyataan positif sebelum *However* hanyalah pengakuan awal (*concession*), bukan posisi utama penulis.\n2. **Inventarisasi Diksi (Word Choice):** Soroti frasa bermuatan penilaian: *uncritical enthusiasm*, *severe infrastructural deficits*, *substantially erodes*, dan *remains premature*.\n3. **Parafrasa ke Opsi Benar:** Gabungan antara pengakuan manfaat terbatas dan kritik berbasis bukti menghasilkan nada **cautious** (waspada/hati-hati) atau **skeptical** (skeptis terhadap klaim berlebihan).\n4. **Eliminasi Jebakan:** Singkirkan opsi ekstrem seperti *hostile* atau *dismissive* karena penulis tetap mengakui fungsi *first- and last-mile connectivity* serta memberi syarat solusi (*Until cities enforce...*).",
+      "kunci_pembeda": "Variasi ini fokus pada nuansa emosi/sikap penulis secara keseluruhan dalam teks tunggal, bukan reaksi antar-penulis.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Determining a Commenter's Attitude Toward the Original Post in a Discussion Thread",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk Comment 1 (Maya Lin): '...raises a vital point... yet dismissing the entire sector... overlooks measurable successes...' vs Comment 2 (Kevin Vance): 'Oh, brilliant—let's drown promising green startups in endless bureaucratic red tape...'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Skimming Kalimat Pembuka Komentar:** Komentator UTBK selalu meletakkan sinyal sikap pada 1–2 kalimat pertama.\n2. **Identifikasi Tipe Respons:**\n   - **Maya Lin:** Memuji sebagian argumen (*raises a vital point*) lalu mengoreksi generalisasi penulis (*yet... overlooks measurable successes*). Ini adalah pola khas sikap **nuanced** (berimbang/mempertimbangkan dua sisi).\n   - **Kevin Vance:** Menggunakan pujian palsu (*Oh, brilliant*) diikuti hiperbola negatif (*drown... in endless bureaucratic red tape*). Ini adalah indikator mutlak sikap **sarcastic** dan **dismissive** (meremehkan).\n3. **Parafrasa & Jebakan:** Untuk Maya Lin, hindari opsi *entirely supportive* (terlalu sempit) atau *antagonistic* (terlalu ekstrem); pilih *partially supportive yet critical* / *nuanced*.",
+      "kunci_pembeda": "Variasi ini wajib membandingkan titik temu atau titik bentrok antara klaim komentator dengan premis Original Post.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Detecting Authorial Bias or One-Sided Argumentation Through Word Choice (Diction)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujuk Comment 2 (Kevin Vance): '...drown promising green startups in endless bureaucratic red tape... naysayers predicting doom.'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Loaded Words (Diksi Emotif):** Bedakan fakta netral (*government regulations*) dengan diksi bias (*endless bureaucratic red tape*). Kata *drown*, *endless*, dan *naysayers* memuat penilaian subjektif tanpa didukung data empiris.\n2. **Cek Keseimbangan Bukti:** Periksa apakah penulis menyertakan kontra-argumen atau batasan risiko. Pada Comment 2, Kevin Vance mengabaikan fakta cedera pejalan kaki dan emisi van pengisi daya dari OP.\n3. **Parafrasa ke Opsi Benar:** Bias terdeteksi ketika penulis melabeli pihak yang berbeda pendapat dengan istilah merendahkan (*naysayers*) sekaligus mengidealkan objek dukungannya (*promising green startups*).\n4. **Eliminasi Jebakan:** Jangan memilih opsi yang menyatakan penulis menggunakan data statistik valid jika argumennya murni retorika.",
+      "kunci_pembeda": "Variasi ini menguji kemampuan membongkar manipulasi diksi dan ketimpangan bukti, bukan sekadar merangkum isi teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Identifying Which Statement Best Reflects the Author's Perspective on Issue X",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk Kalimat Akhir Original Post: 'Until cities enforce rigorous fleet caps and establish protected transit corridors, treating e-scooters as an environmental panacea remains premature.'",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Kalimat Tesis/Simpulan:** Posisi final penulis dalam teks argumentatif UTBK hampir selalu terkunci di kalimat pembuka atau kalimat penutup paragraf.\n2. **Pecah Syarat Logika (Conditional Logic):** Kalimat *Until X happens, Y remains premature* bermakna: Y (e-scooter sebagai solusi lingkungan) baru layak diklaim JIKA X (pembatasan armada & jalur khusus) telah terpenuhi.\n3. **Parafrasa ke Opsi Benar:** Cari opsi yang menyatakan bahwa manfaat lingkungan dan keselamatan e-scooter bergantung pada regulasi serta infrastruktur pendukung yang ketat.\n4. **Eliminasi Jebakan:** Waspadai opsi yang melarang total e-scooter (*should be permanently banned*) karena bertentangan dengan syarat kondisional (*Until cities enforce...*) di teks.",
+      "kunci_pembeda": "Variasi ini menuntut sintesis logis atas syarat/posisi penulis terhadap isu spesifik, bukan sekadar label kata sifat tunggal.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Based on the Original Post, which of the following best describes Dr. Aris Thorne's tone and perspective regarding dockless electric scooters?",
+      "opsi_jawaban": [
+        "A. Outraged and demanding an immediate nationwide ban due to rising pedestrian injuries.",
+        "B. Enthusiastic about their short-trip convenience while ignoring minor battery-charging emissions.",
+        "C. Skeptical of exaggerated environmental claims until strict regulations and infrastructure are established.",
+        "D. Indifferent toward urban congestion as long as private startups continue to innovate.",
+        "E. Optimistic that current municipal policies have already resolved most sidewalk safety hazards."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "**Langkah Eksekusi:**\n- Kalimat penutup OP (*Until cities enforce rigorous fleet caps... treating e-scooters as an environmental panacea remains premature*) menunjukkan nada **skeptis** terhadap klaim solusi lingkungan (*exaggerated environmental claims*) sekaligus menetapkan syarat regulasi dan infrastruktur.\n- **Opsi A & E salah** karena mengandung distorsi ekstrem (*immediate nationwide ban*, *already resolved*). **Opsi B & D salah** karena bertentangan langsung dengan kritik penulis terhadap emisi van dan defisit infrastruktur.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Evaluate the following statements regarding the attitudes and diction used by the commenters in the discussion thread.\n\n| Statement | True | False |\n|---|---|---|\n| 1. Maya Lin adopts a nuanced attitude by validating Dr. Thorne's safety concerns while attributing implementation failures to governance rather than the vehicles. | | |\n| 2. Kevin Vance demonstrates objective argumentation by providing empirical evidence from past transit shifts to refute Dr. Thorne's lifecycle assessment. | | |\n| 3. Kevin Vance uses loaded diction such as *\"endless bureaucratic red tape\"* and *\"naysayers\"* to frame regulatory oversight negatively. | | |",
+      "opsi_jawaban": [
+        "A. True - True - True",
+        "B. True - False - True",
+        "C. True - False - False",
+        "D. False - True - True",
+        "E. False - False - True"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Evaluasi Pernyataan:**\n- **Pernyataan 1 (True):** Maya Lin memuji poin keselamatan OP (*raises a vital point*) namun menyalahkan tata kelola kota (*fragmented urban governance is to blame*), mencerminkan sikap *nuanced*.\n- **Pernyataan 2 (False):** Kevin Vance hanya memakai retorika sarkastis tanpa menyajikan bukti empiris untuk membantah *lifecycle assessment* OP.\n- **Pernyataan 3 (True):** Frasa *endless bureaucratic red tape* dan *naysayers* adalah diksi bermuatan bias untuk mendiskreditkan regulasi.",
+      "visual": null
+    }
+  ]
+}

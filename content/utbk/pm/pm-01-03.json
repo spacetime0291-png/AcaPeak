@@ -1,0 +1,128 @@
+{
+  "kode_subbab": "pm-01-03",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 1: Aritmetika Sosial dan Keuangan",
+  "judul_subbab": "Rasio, Proporsi, dan Skala dalam Konteks Nyata",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Denah lahan agrowisata berskala $1 : 2.000$ memiliki luas gambar $10\\text{ cm}^2$. Banyak peserta langsung mengalikan $10\\text{ cm}^2 \\times 2.000 = 2\\text{ m}^2$, padahal luas riilnya jauh lebih besar. Berapa luas lahan sebenarnya?",
+      "opsi_cepat": [
+        "200 m²",
+        "4.000 m²"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Faktor pengali luas adalah kuadrat dari skala panjang ($k^2 = 2.000^2 = 4.000.000$), bukan dikali $2.000$ secara linear. Setelah dikalikan $10\\text{ cm}^2$ lalu dibagi $10.000$ untuk konversi ke $\\text{m}^2$, diperoleh $4.000\\text{ m}^2$."
+    },
+    "konsep_inti_markdown": "- **Perbandingan Senilai & Berbalik Nilai:** Senilai ($\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$); berbalik nilai ($a_1 \\cdot b_1 = a_2 \\cdot b_2$, misal roda gigi).\n- **Skala Peta & Luas:** Panjang $J_s = J_p \\times k$; Luas $L_s = L_p \\times k^2$ ($1\\text{ m}^2 = 10^4\\text{ cm}^2$, $1\\text{ ha} = 10^4\\text{ m}^2$).\n- **Pencampuran & Dividen:** Kekekalan zat murni $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$; proporsi dividen $\\propto \\text{Modal} \\times \\text{Durasi}$.\n- **Kurs Valas:** Selalu gunakan sudut pandang bank—beli valas pakai **Kurs Jual**, jual valas pakai **Kurs Beli**.",
+    "radar_jebakan_utbk": [
+      "Mengalikan luas pada peta secara linear dengan faktor skala $k$ alih-alih $k^2$, serta keliru mengonversi $\\text{cm}^2$ ke $\\text{m}^2$ (seharusnya dibagi $10.000$, bukan $100$).",
+      "Terbalik memakai Kurs Beli dan Kurs Jual valas karena menggunakan sudut pandang nasabah, serta salah menghitung durasi bulan mitra baru (bulan masuk harus ikut dihitung)."
+    ],
+    "stimulus_utama_bersama": "Koperasi Agrowisata **Nusantara Agro Mandiri** mengembangkan kawasan perkebunan dan pabrik pengolahan konsentrat sari jeruk terpadu di Garut. Pada denah *masterplan* berskala $1 : 2.500$, area kebun produksi digambarkan berbentuk persegi panjang berukuran $8\\text{ cm} \\times 6\\text{ cm}$, sedangkan area pabrik pengolahan memiliki luas $12\\text{ cm}^2$.\n\nDi unit produksi, tersedia $120\\text{ liter}$ larutan konsentrat awal dengan kadar sari jeruk murni $25\\%$. Untuk memenuhi standar mutu, kadar sari murni dinaikkan menjadi $40\\%$ dengan menambahkan sari jeruk murni ($100\\%$). Produk minuman siap saji koperasi mengandung $120\\text{ kkal}$ energi dan $15\\text{ mg}$ vitamin C pada setiap takaran $250\\text{ mL}$.\n\nUntuk ekspansi mesin, koperasi membeli mesin pemeras seharga $\\text{USD } 4.000$ dan menukarkan kas hasil ekspor sebesar $\\text{EUR } 2.500$ melalui bank dengan ketentuan kurs berikut:\n\n| Mata Uang | Kurs Beli | Kurs Jual |\n| :--- | :--- | :--- |\n| USD | Rp15.800 | Rp16.000 |\n| EUR | Rp17.200 | Rp17.500 |\n\nSementara itu, modal awal proyek dihimpun tiga mitra dengan komitmen pembagian laba tahunan proporsional terhadap besar modal dan lama penyertaan: Pak Andi menyetor Rp200.000.000 sejak awal bulan ke-1, Bu Rina menyetor Rp300.000.000 sejak awal bulan ke-1, dan Pak Dedi bergabung pada awal bulan ke-5 dengan modal Rp300.000.000. Pada lini pengemasan pabrik, konveyor digerakkan motor listrik berkecepatan $600\\text{ rpm}$ melalui tautan tiga roda gigi seri: Roda Gigi A (penggerak) memiliki $20$ gigi, Roda Gigi B (perantara) memiliki $50$ gigi, dan Roda Gigi C (poros konveyor) memiliki $30$ gigi.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pencampuran Larutan atau Bahan Baku dengan Konsentrasi Tertentu",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk unit produksi pada stimulus utama, tersedia $120\\text{ liter}$ larutan konsentrat dengan kadar sari jeruk murni $25\\%$. Berapa liter sari jeruk murni ($100\\%$) yang harus ditambahkan agar kadar konsentrat meningkat menjadi $40\\%$?",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Diketahui volume awal larutan $V_1 = 120\\text{ liter}$ dengan konsentrasi sari murni $25\\%$. Penambahan sari jeruk murni berkadar $100\\%$ sebanyak $x\\text{ liter}$ akan mengubah total volume campuran menjadi $(120 + x)\\text{ liter}$ dengan target konsentrasi akhir sebesar $40\\%$.\n\n**2. Model Matematika (Employing):** Terapkan prinsip kekekalan massa zat terlarut murni, yaitu $\\text{Zat Murni Awal} + \\text{Zat Murni Ditambah} = \\text{Zat Murni Akhir}$. Persamaan linearnya dirumuskan sebagai $0,25(120) + 1,00x = 0,40(120 + x)$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Jabarkan persamaan menjadi $30 + x = 48 + 0,4x$, lalu pindahkan suku sejenis sehingga $0,6x = 18$ dan diperoleh $x = 30\\text{ liter}$. Secara operasional, kapasitas tangki pencampuran harus menampung minimal $120 + 30 = 150\\text{ liter}$ agar larutan tidak meluap saat proses pengadukan berlangsung.",
+      "kunci_pembeda": "Selalu setarakan volume zat murni sebelum dan sesudah pencampuran dengan memasukkan konsentrasi $100\\%$ ($1,00$) untuk bahan murni murni yang ditambahkan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Skala Peta, Denah Arsitektur, dan Konversi Luas Lahan Sebenarnya",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Berdasarkan denah masterplan berskala $1 : 2.500$ pada stimulus utama, hitung selisih luas sebenarnya (dalam $\\text{m}^2$) antara area kebun produksi ($8\\text{ cm} \\times 6\\text{ cm}$) dan area pabrik pengolahan ($12\\text{ cm}^2$).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Skala denah $1 : 2.500$ bermakna $1\\text{ cm}$ pada gambar mewakili $2.500\\text{ cm}$ atau $25\\text{ meter}$ di lapangan. Luas kebun pada denah adalah $8\\text{ cm} \\times 6\\text{ cm} = 48\\text{ cm}^2$, sedangkan luas pabrik $12\\text{ cm}^2$. Dicari selisih luas sebenarnya keduanya dalam satuan $\\text{m}^2$.\n\n**2. Model Matematika (Employing):** Hitung selisih luas pada denah terlebih dahulu agar perhitungan ringkas: $\\Delta L_{\\text{denah}} = 48 - 12 = 36\\text{ cm}^2$. Karena konversi dimensi dua arah (panjang dan lebar), gunakan kuadrat skala: $\\Delta L_{\\text{riil}} = \\Delta L_{\\text{denah}} \\times k^2$, dengan $1\\text{ cm}^2$ pada denah setara $25\\text{ m} \\times 25\\text{ m} = 625\\text{ m}^2$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Kalikan langsung $36 \\times 625\\text{ m}^2 = 22.500\\text{ m}^2$ atau setara $2,25\\text{ hektare}$. Mengubah skala panjang $1\\text{ cm} = 25\\text{ m}$ menjadi skala luas $1\\text{ cm}^2 = 625\\text{ m}^2$ sejak awal jauh lebih cepat serta meminimalkan risiko salah hitung nol.",
+      "kunci_pembeda": "Konversikan skala panjang ke satuan meter terlebih dahulu lalu kuadratkan untuk memperoleh skala luas ($1\\text{ cm}^2 = (k\\text{ dalam meter})^2\\text{ m}^2$).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Konversi Mata Uang Asing dan Konversi Satuan Majemuk",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk transaksi valas koperasi pada stimulus utama, tentukan selisih rupiah yang dikeluarkan untuk membeli mesin $\\text{USD } 4.000$ dengan rupiah yang diterima dari penukaran $\\text{EUR } 2.500$.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Penentuan kurs valuta asing selalu dilihat dari sudut pandang bank. Membeli mesin $\\text{USD } 4.000$ berarti koperasi membeli dolar dari bank (gunakan Kurs Jual Rp16.000). Menukarkan $\\text{EUR } 2.500$ ke rupiah berarti koperasi menjual euro ke bank (gunakan Kurs Beli Rp17.200).\n\n**2. Model Matematika (Employing):** Biaya pembelian dolar dirumuskan $B = 4.000 \\times 16.000$, sedangkan penerimaan penjualan euro dirumuskan $T = 2.500 \\times 17.200$. Untuk satuan majemuk seperti kandungan vitamin C ($15\\text{ mg}/250\\text{ mL}$), gunakan perbandingan senilai $\\frac{\\text{Kadar}}{\\text{Takaran}} \\times \\text{Volume Konsumsi}$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Diperoleh pengeluaran $B = \\text{Rp}64.000.000$ dan pemasukan $T = \\text{Rp}43.000.000$. Selisih transaksi tersebut menghasilkan kekurangan kas sebesar $\\text{Rp}21.000.000$ yang wajib ditutup dari saldo rupiah koperasi. Pastikan seluruh nominal sudah dalam rupiah sebelum melakukan pengurangan.",
+      "kunci_pembeda": "Bank selalu menjual valas pada harga lebih tinggi (Kurs Jual) dan membeli kembali valas dari nasabah pada harga lebih rendah (Kurs Beli).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Pembagian Keuntungan atau Biaya Patungan Berdasarkan Proporsi Kontribusi dan Durasi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Berdasarkan data kemitraan pada stimulus utama (Andi Rp200 juta dan Rina Rp300 juta sejak bulan ke-1, serta Dedi Rp300 juta sejak awal bulan ke-5), hitung bagian dividen Pak Dedi jika laba bersih akhir tahun (bulan ke-12) sebesar $\\text{Rp}210.000.000$.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Pembagian dividen tahunan bergantung pada dua faktor sekaligus, yakni besar setoran modal dan durasi bulan modal tersebut aktif selama satu tahun ($12$ bulan). Karena Pak Dedi masuk awal bulan ke-5, masa aktif modalnya adalah $12 - 5 + 1 = 8$ bulan, bukan $7$ bulan.\n\n**2. Model Matematika (Employing):** Hitung bobot kontribusi $(\\text{Modal dalam ratusan juta} \\times \\text{Bulan})$: Andi $= 2 \\times 12 = 24$, Rina $= 3 \\times 12 = 36$, dan Dedi $= 3 \\times 8 = 24$. Sederhanakan perbandingan $24 : 36 : 24$ dengan membagi $12$ menjadi $2 : 3 : 2$ (total $7$ bagian).\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Dividen Pak Dedi adalah $\\frac{2}{7} \\times \\text{Rp}210.000.000 = \\text{Rp}60.000.000$. Meskipun nominal modal Pak Dedi sama besar dengan Bu Rina (Rp300 juta), dividennya lebih kecil Rp30 juta karena keterlambatan waktu penyertaan selama empat bulan.",
+      "kunci_pembeda": "Bobot pembagian dividen berbanding lurus dengan hasil kali modal dan durasi aktif ($\\text{Durasi} = \\text{Bulan Akhir} - \\text{Bulan Awal} + 1$).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Rasio Roda Gigi, Putaran Mesin, dan Transmisi Mekanis",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk sistem transmisi konveyor pada stimulus utama (Roda Gigi A = $20$ gigi pada motor $600\\text{ rpm}$, bertautan dengan Roda Gigi B = $50$ gigi, lalu ke Roda Gigi C = $30$ gigi), tentukan kecepatan putar poros konveyor (Roda Gigi C) dalam rpm.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Tiga roda gigi bertautan berurutan dari penggerak A ($20$ gigi, $600\\text{ rpm}$), perantara B ($50$ gigi), hingga poros konveyor C ($30$ gigi). Semakin banyak jumlah gigi pada roda, semakin lambat kecepatan putarnya sehingga berlaku prinsip perbandingan berbalik nilai.\n\n**2. Model Matematika (Employing):** Pada rangkaian roda gigi bersinggungan seri, laju perpindahan gigi per menit selalu sama: $Z_A \\cdot N_A = Z_B \\cdot N_B = Z_C \\cdot N_C$. Roda gigi perantara B berfungsi sebagai *idler gear* yang sekadar membalik arah putaran tanpa mengubah besar kecepatan sudut akhir pada C.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Substitusi langsung roda pertama dan terakhir: $20 \\times 600 = 30 \\times N_C$, sehingga $N_C = \\frac{12.000}{30} = 400\\text{ rpm}$. Karena Roda Gigi C lebih besar dari A, kecepatan putar turun dari $600\\text{ rpm}$ menjadi $400\\text{ rpm}$ untuk menghasilkan torsi angkut konveyor yang lebih kuat.",
+      "kunci_pembeda": "Pada roda gigi bersinggungan tepi, hasil kali jumlah gigi dan rpm selalu konstan ($Z_1 N_1 = Z_2 N_2$), sedangkan roda gigi perantara tidak mengubah rasio kecepatan.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan stimulus utama, setelah kadar larutan konsentrat dinaikkan dari $25\\%$ menjadi $40\\%$ dengan menambahkan sari jeruk murni ($100\\%$), seluruh larutan akhir tersebut diencerkan menjadi minuman siap saji dengan perbandingan volume $\\text{konsentrat } 40\\% : \\text{air mineral} = 1 : 4$. Berapa botol kemasan $500\\text{ mL}$ minuman siap saji yang dapat diproduksi dari seluruh larutan tersebut?",
+      "opsi_jawaban": [
+        "A. 750",
+        "B. 960",
+        "C. 1.200",
+        "D. 1.500",
+        "E. 3.000"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Penambahan sari murni menghasilkan $120 + 30 = 150\\text{ liter}$ konsentrat $40\\%$. Dengan rasio pengenceran $\\text{konsentrat} : \\text{air} = 1 : 4$, total volume minuman siap saji menjadi $(1 + 4) \\times 150 = 750\\text{ liter}$. Jumlah kemasan $500\\text{ mL}$ ($0,5\\text{ L}$) adalah $\\frac{750}{0,5} = 1.500$ botol. Opsi A belum dikonversi ke kemasan $0,5\\text{ L}$, B dan C mengabaikan penambahan $30\\text{ L}$ sari murni atau salah menjumlahkan rasio, sedangkan E memakai takaran $250\\text{ mL}$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Merujuk informasi denah *masterplan* dan pembagian laba tahunan sebesar $\\text{Rp}210.000.000$ pada stimulus utama, perhatikan empat pernyataan berikut:\n\n(1) Luas sebenarnya area kebun produksi adalah $3\\text{ hektare}$.\n(2) Rasio luas sebenarnya antara pabrik pengolahan dan kebun produksi adalah $1 : 4$.\n(3) Selisih dividen yang diterima Bu Rina dan Pak Andi adalah $\\text{Rp}30.000.000$.\n(4) Jika Pak Dedi bergabung sejak awal bulan ke-4 dengan modal tetap, bagian dividennya menjadi $\\text{Rp}75.000.000$.\n\nPernyataan yang benar adalah ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pilihan benar."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "(1) Benar: luas kebun $48 \\times 25^2 = 30.000\\text{ m}^2 = 3\\text{ ha}$. (2) Benar: rasio luas riil sama dengan rasio luas denah, yakni $12 : 48 = 1 : 4$. (3) Benar: rasio dividen Andi : Rina : Dedi $= 2 : 3 : 2$, sehingga selisih Rina dan Andi adalah $\\frac{3-2}{7} \\times \\text{Rp}210\\text{ juta} = \\text{Rp}30\\text{ juta}$. (4) Salah: masuk awal bulan ke-4 berarti aktif $9$ bulan, menghasilkan bobot $2.400 : 3.600 : 2.700$ sehingga dividen Dedi $\\frac{9}{29} \\times \\text{Rp}210\\text{ juta} \\neq \\text{Rp}75\\text{ juta}$. Jawaban: A.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Sebuah konveyor pengisian botol pada stimulus utama memindahkan $1$ botol kemasan $500\\text{ mL}$ minuman siap saji setiap $2$ putaran penuh poros Roda Gigi C. Jika Roda Gigi C diganti menjadi roda gigi berjumlah $40$ gigi sementara kecepatan motor pada Roda Gigi A tetap $600\\text{ rpm}$, berapa miligram ($\\text{mg}$) total kandungan vitamin C dari seluruh minuman yang dipindahkan konveyor tersebut dalam waktu $1$ menit? *(Tuliskan bilangan bulat saja tanpa titik maupun satuan)*.",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "4500",
+      "bedah_cepat_markdown": "Dengan Roda Gigi C bergigi $40$, kecepatan putar poros konveyor dihitung via perbandingan berbalik nilai: $Z_A \\cdot N_A = Z_C \\cdot N_C \\implies 20 \\times 600 = 40 \\times N_C$, diperoleh $N_C = 300\\text{ rpm}$. Karena $1$ botol bergerak setiap $2$ putaran, dalam $1$ menit konveyor memindahkan $\\frac{300}{2} = 150$ botol kemasan $500\\text{ mL}$. Tiap $500\\text{ mL}$ mengandung $2 \\times 15\\text{ mg} = 30\\text{ mg}$ vitamin C, sehingga totalnya $150 \\times 30 = 4.500\\text{ mg}$.",
+      "visual": null
+    }
+  ]
+}

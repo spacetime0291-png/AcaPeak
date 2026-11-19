@@ -1,0 +1,133 @@
+{
+  "kode_subbab": "lbi-02-03",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 2: Inferensi dan Evaluasi Teks",
+  "judul_subbab": "Evaluasi Kredibilitas, Opini, dan Fakta dalam Bacaan",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah artikel menyebut: 'Menurut survei terhadap 300 warga pusat kota, 80% setuju jalan tol ditutup demi taman kota, sehingga kebijakan ini pasti berhasil.' Apakah simpulan penulis tergolong fakta?",
+      "opsi_cepat": [
+        "Fakta, karena didukung angka survei 80%",
+        "Opini, karena memuat klaim kepastian masa depan dan sampel bias"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Angka 80% merupakan data hasil survei, tetapi frasa 'pasti berhasil' adalah penilaian subjektif penulis yang melompat jauh melampaui cakupan sampel pusat kota."
+    },
+    "konsep_inti_markdown": "- **Fakta vs Opini:** Fakta bersifat objektif, terukur, dan dapat diverifikasi; opini memuat penilaian subjektif, modalitas (*harus, pasti*), atau prediksi.\n- **Kredibilitas & Bias:** Uji kepakaran sumber serta potensi konflik kepentingan ekonomi maupun politik di balik pernyataan.\n- **Validitas Bukti & Logika:** Evaluasi cakupan sampel metodologi, kecukupan bukti terhadap klaim utama, serta asumsi tersembunyi atau cacat logika (*oversimplification*, *false cause*) dalam argumen penulis.",
+    "radar_jebakan_utbk": [
+      "Menganggap kalimat yang mengandung angka persentase otomatis seluruhnya fakta, padahal predikatnya memuat opini atau prediksi subjektif penulis.",
+      "Menerima klaim narasumber yang tampak berwenang tanpa memeriksa konflik kepentingan atau afiliasi industri di balik pernyataannya."
+    ],
+    "stimulus_utama_bersama": "Data pemantauan kualitas udara dari Dinas Lingkungan Hidup mencatat bahwa konsentrasi partikulat halus ($\\text{PM}_{2,5}$) rata-rata harian di pusat metropolitan mencapai $58\\text{ }\\mu\\text{g/m}^3$, melampaui ambang batas baku mutu udara ambien nasional sebesar $55\\text{ }\\mu\\text{g/m}^3$. Laporan inventarisasi emisi yang sama menunjukkan sektor transportasi jalan raya menyumbang 44 persen dari total beban pencemaran udara perkotaan. Menyikapi kondisi tersebut, kebijakan penerapan Zona Rendah Emisi (LEZ) yang dibarengi konversi bus listrik merupakan terobosan paling revolusioner dan tidak bisa ditawar lagi demi menyelamatkan kesehatan warga kota.\n\nOptimisme ini kerap merujuk pada kajian cepat yang dirilis Konsorsium Mobilitas Bersih. Studi tersebut menyurvei 320 penumpang komuter di tiga koridor bus utama selama sepuluh hari kerja dan menemukan bahwa 78 persen responden bersedia beralih ke bus listrik apabila waktu tunggu dipangkas menjadi kurang dari 10 menit. Meski demikian, pengambilan sampel hanya dilakukan pada jam sibuk di kawasan perkantoran pusat tanpa melibatkan warga wilayah penyangga maupun menguji kapasitas gardu pengisian daya baterai pada malam hari.\n\nSementara itu, Ketua Asosiasi Industri Kendaraan Listrik Nasional (AIKLN) mendesak pemerintah daerah mengalokasikan tambahan subsidi pengadaan armada listrik sebesar 40 persen dari pos anggaran infrastruktur jalan. Ia menyatakan bahwa tanpa dukungan fiskal agresif tersebut, target elektrifikasi angkutan umum tidak akan pernah terwujud dalam sepuluh tahun ke depan.\n\nOleh karena itu, pemerintah kota harus segera memangkas seluruh anggaran pelebaran jalan arteri dan mengalihkannya untuk subsidi bus listrik agar angka rawat inap pasien infeksi saluran pernapasan akut (ISPA) turun drastis dalam enam bulan. Padahal, data dinas kesehatan setempat baru menunjukkan korelasi umum antara lonjakan polusi dan kunjungan pasien, tanpa memisahkan kontribusi emisi kawasan industri di perbatasan kota serta faktor musim kemarau. Meyakini bahwa perubahan armada bus semata pasti memulihkan kualitas kesehatan warga merupakan penyederhanaan persoalan yang keliru.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Membedakan Kalimat Fakta Empiris/Data Terukur vs Kalimat Opini/Penilaian Subjektif Penulis",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Paragraf 1: Data konsentrasi partikulat halus Dinas Lingkungan Hidup vs penilaian kebijakan LEZ sebagai 'terobosan paling revolusioner'.",
+      "bedah_pola_markdown": "**Teknik Scanning:** Pindai penanda rujukan terukur (*data mencatat*, angka satuan baku, persentase) untuk fakta, lalu tandai adjektiva evaluatif (*revolusioner*, *keliru*) serta kata modalitas (*harus*, *tidak bisa ditawar*) untuk opini.\n\n**Bedah Teks Stimulus:** Pada paragraf pertama, konsentrasi $\\text{PM}_{2,5}$ sebesar $58\\text{ }\\mu\\text{g/m}^3$ dan kontribusi emisi transportasi 44 persen adalah **fakta empiris** karena bersumber dari pengukuran instansi resmi. Sebaliknya, kalimat ketiga yang menyebut konversi bus listrik sebagai *\"terobosan paling revolusioner\"* adalah **opini penulis** karena memuat penilaian subjektif yang tidak dapat diukur secara fisik.\n\n**Parafrasa & Jebakan Opsi:** Opsi benar memparafrasakan opini sebagai *pandangan subjektif penulis mengenai urgensi kebijakan transportasi hijau*. Hindari opsi jebakan ekstrem yang mengklaim seluruh paragraf pertama berisi fakta semata hanya karena diawali angka statistik resmi. Jebakan lain adalah menganggap opini penulis sebagai kesimpulan resmi instansi lingkungan hidup.",
+      "kunci_pembeda": "Fakta dapat dibuktikan benar-salahnya lewat data objektif, sedangkan opini bergantung pada sudut pandang dan kata sifat evaluatif penulis.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Mengevaluasi Kekuatan dan Kelemahan Argumen atau Metodologi Penelitian yang Dijelaskan dalam Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Paragraf 2: Kajian cepat Konsorsium Mobilitas Bersih yang menyurvei 320 penumpang komuter pada jam sibuk di kawasan perkantoran pusat.",
+      "bedah_pola_markdown": "**Teknik Skimming:** Fokus pada bagian yang menjelaskan cara pengumpulan data: ukuran sampel, lokasi, durasi, variabel yang diukur, serta batasan penelitian yang diungkap kata hubung pertentangan (*meski demikian*, *namun*).\n\n**Bedah Teks Stimulus:** Paragraf kedua memaparkan kekuatan kajian berupa sampel terukur (320 responden di tiga koridor utama), tetapi langsung mengungkap kelemahan metodologis setelah kata *meski demikian*. Survei hanya dilakukan pada jam sibuk di pusat perkantoran tanpa melibatkan warga penyangga maupun menguji daya dukung gardu pengisian baterai.\n\n**Parafrasa & Jebakan Opsi:** Opsi jawaban benar biasanya memparafrasakan kelemahan ini sebagai *keterbatasan cakupan sampel yang belum merepresentasikan kondisi wilayah penyangga dan kesiapan infrastruktur teknis*. Waspadai opsi jebakan yang menyimpulkan hasil survei 78 persen tersebut pasti gagal total (terlalu ekstrem) atau menganggap sampel sudah mewakili seluruh warga kota (tidak sesuai teks).",
+      "kunci_pembeda": "Evaluasi metodologi selalu menguji kesesuaian antara ruang lingkup pengambilan sampel dan luasnya kesimpulan yang ditarik.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Mengidentifikasi Keberpihakan (Bias), Kepentingan, dan Kredibilitas Sumber/Narasumber dalam Teks",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Paragraf 3: Pernyataan Ketua Asosiasi Industri Kendaraan Listrik Nasional (AIKLN) yang mendesak tambahan subsidi 40 persen dari anggaran jalan.",
+      "bedah_pola_markdown": "**Teknik Scanning:** Identifikasi jabatan, afiliasi lembaga, dan tuntutan spesifik setiap narasumber yang dikutip. Periksa apakah narasumber berpotensi diuntungkan secara finansial atau politis oleh kebijakan yang diusulkannya.\n\n**Bedah Teks Stimulus:** Pada paragraf ketiga, penulis mengutip Ketua Asosiasi Industri Kendaraan Listrik Nasional (AIKLN) yang mendesak tambahan subsidi pengadaan armada listrik sebesar 40 persen. Karena AIKLN menaungi pelaku usaha kendaraan listrik, pernyataan bahwa elektrifikasi *\"tidak akan pernah terwujud\"* tanpa subsidi agresif mengandung **bias kepentingan ekonomi** industri terkait, bukan analisis fiskal independen.\n\n**Parafrasa & Jebakan Opsi:** Opsi benar akan menyatakan bahwa *pernyataan narasumber berpotensi bias karena berasal dari asosiasi industri yang diuntungkan langsung oleh subsidi*. Hindari opsi jebakan yang menyatakan narasumber tidak memiliki pengetahuan teknis sama sekali (terlalu sempit/keliru) atau menganggap argumennya sepenuhnya netral.",
+      "kunci_pembeda": "Narasumber yang ahli di bidangnya tetap memiliki bias apabila kebijakan yang ia dorong menguntungkan kelompok atau industrinya secara langsung.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Menilai Kecukupan Bukti yang Disajikan Penulis untuk Mendukung Klaim Utamanya",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Paragraf 4: Klaim penurunan drastis rawat inap pasien ISPA dalam enam bulan vs data korelasi umum dari dinas kesehatan setempat.",
+      "bedah_pola_markdown": "**Teknik Skimming:** Pasangkan kalimat klaim utama (biasanya ditandai *oleh karena itu*, *harus*) dengan bukti empiris yang menyertainya, lalu cek apakah ada variabel pembanding atau bukti kausal yang absen.\n\n**Bedah Teks Stimulus:** Penulis mengeklaim bahwa pengalihan seluruh anggaran jalan arteri ke bus listrik akan menurunkan angka rawat inap pasien ISPA secara drastis dalam enam bulan. Namun, bukti yang disajikan—laporan dinas kesehatan setempat—hanya menunjukkan korelasi umum tanpa memisahkan emisi kawasan industri perbatasan dan faktor musim kemarau. Artinya, **bukti tidak cukup** untuk membuktikan hubungan sebab-akibat langsung.\n\n**Parafrasa & Jebakan Opsi:** Opsi benar memparafrasakan ketimpangan ini sebagai *data kesehatan yang disajikan belum membuktikan hubungan kausal langsung karena masih tercampur faktor non-transportasi*. Jebakan UTBK sering berupa opsi yang menyalahkan data dinas kesehatan sebagai data palsu, padahal masalahnya terletak pada ketidakcukupan bukti untuk klaim penulis.",
+      "kunci_pembeda": "Korelasi dua fenomena dalam data belum cukup menjadi bukti untuk mengeklaim bahwa satu kebijakan pasti menghilangkan dampak fenomena tersebut.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Mengidentifikasi Asumsi Dasar Penulis dan Potensi Cacat Logika dalam Opini Tajuk Rencana",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Paragraf 4: Tuntutan memangkas seluruh anggaran pelebaran jalan arteri dan keyakinan bahwa pergantian armada bus memulihkan kesehatan warga.",
+      "bedah_pola_markdown": "**Teknik Scanning:** Cari lompatan logika di bagian simpulan opini: perhatikan pilihan ekstrem (*seluruh anggaran*, *semata*) yang meniadakan alternatif lain atau menyederhanakan penyebab masalah kompleks.\n\n**Bedah Teks Stimulus:** Tajuk rencana pada paragraf keempat bertumpu pada **asumsi dasar** yang tidak teruji, yaitu bahwa polusi angkutan jalan raya merupakan satu-satunya pemicu lonjakan kasus ISPA. Dari asumsi ini muncul dua cacat logika: *penyederhanaan berlebihan* (*oversimplification*) karena menganggap pergantian armada bus otomatis memulihkan kesehatan warga, serta *dikotomi palsu* dengan memaksa pemangkasan seluruh anggaran jalan arteri.\n\n**Parafrasa & Jebakan Opsi:** Opsi benar merumuskan asumsi penulis sebagai *anggapan bahwa faktor non-transportasi tidak berpengaruh signifikan terhadap tingginya angka rawat inap ISPA*. Waspadai opsi jebakan yang hanya mengulang fakta eksplisit dari paragraf pertama (bukan asumsi tersembunyi) atau menyetujui dikotomi ekstrem penulis.",
+      "kunci_pembeda": "Asumsi dasar adalah premis tak tertulis yang wajib benar agar simpulan penulis masuk akal, sedangkan cacat logika muncul saat lompatan nalarnya keliru.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Berdasarkan bacaan di atas, tentukan apakah setiap pernyataan berikut **Benar** atau **Salah** terkait pemilahan fakta, opini, dan keberpihakan sumber!\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Data bahwa sektor transportasi jalan raya menyumbang 44 persen beban pencemaran udara merupakan fakta empiris karena bersumber dari laporan inventarisasi emisi resmi. | | |\n| 2 | Pernyataan bahwa penerapan Zona Rendah Emisi (LEZ) merupakan terobosan paling revolusioner termasuk fakta yang telah teruji oleh Dinas Lingkungan Hidup. | | |\n| 3 | Desakan Ketua AIKLN agar pemerintah menambah subsidi armada listrik sebesar 40 persen mengandung potensi bias karena mewakili kepentingan pelaku industri kendaraan listrik. | | |\n\nUrutan status kebenaran yang tepat untuk ketiga pernyataan tersebut secara berurutan adalah ....",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah",
+        "B. Benar - Salah - Benar",
+        "C. Benar - Salah - Salah",
+        "D. Salah - Benar - Benar",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "1. **Benar:** Persentase 44 persen dikutip langsung dari laporan inventarisasi emisi Dinas Lingkungan Hidup sehingga bersifat terukur dan objektif.\n2. **Salah:** Frasa *paling revolusioner* merupakan penilaian subjektif (opini) penulis, bukan hasil uji instansi resmi.\n3. **Benar:** Sebagai Ketua Asosiasi Industri Kendaraan Listrik Nasional (AIKLN), narasumber memiliki kepentingan bisnis langsung terhadap kebijakan subsidi armada listrik.\nJadi, urutan yang tepat adalah **Benar - Salah - Benar** (**B**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manakah evaluasi yang paling tepat mengenai kelemahan metodologi penelitian dan kecukupan bukti yang disajikan penulis dalam bacaan tersebut?",
+      "opsi_jawaban": [
+        "A. Kajian Konsorsium Mobilitas Bersih tidak valid karena jumlah responden sebanyak 320 orang terlalu sedikit untuk dianalisis secara statistik.",
+        "B. Bukti dari dinas kesehatan sudah cukup untuk membuktikan bahwa konversi bus listrik menjadi satu-satunya cara menurunkan kasus ISPA.",
+        "C. Sampel survei yang terbatas pada jam sibuk di pusat perkantoran dan data kesehatan yang baru menunjukkan korelasi umum membuat klaim penurunan drastis ISPA kurang didukung bukti memadai.",
+        "D. Penulis berhasil memisahkan pengaruh cuaca ekstrem dan emisi kawasan industri sehingga hubungan kausal antara bus listrik dan penurunan rawat inap ISPA terbukti akurat.",
+        "E. Hasil survei 78 persen komuter membuktikan bahwa infrastruktur gardu pengisian daya baterai di wilayah penyangga sudah siap beroperasi penuh."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Paragraf 2 menunjukkan sampel survei hanya diambil pada jam sibuk di pusat perkantoran tanpa melibatkan warga penyangga maupun menguji gardu pengisian daya. Paragraf 4 menegaskan data dinas kesehatan baru berupa korelasi umum yang belum memisahkan emisi industri dan faktor musim kemarau. Opsi **C** merangkum kedua kelemahan ini secara tepat. Opsi A dan E bertentangan dengan teks, sedangkan opsi B dan D membalikkan kritik penulis.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Dalam paragraf keempat, penulis mendesak pemangkasan seluruh anggaran pelebaran jalan arteri demi subsidi bus listrik agar kasus rawat inap ISPA turun drastis dalam enam bulan. Asumsi dasar tersembunyi yang menopang argumen penulis sekaligus menjadi titik lemah logikanya adalah ....",
+      "opsi_jawaban": [
+        "A. anggaran pelebaran jalan arteri selama ini selalu digunakan untuk membiayai pengobatan pasien ISPA di rumah sakit daerah",
+        "B. emisi kawasan industri di perbatasan kota dan faktor musim kemarau tidak berkontribusi signifikan terhadap lonjakan pasien rawat inap ISPA",
+        "C. seluruh penumpang komuter di kawasan pusat bisnis sudah beralih menggunakan bus listrik sebelum enam bulan berjalan",
+        "D. Dinas Lingkungan Hidup tidak pernah mencatat angka konsentrasi partikulat halus di atas ambang batas baku mutu nasional",
+        "E. asosiasi industri kendaraan listrik menolak pemberian insentif fiskal dari anggaran pendapatan dan belanja daerah"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Agar klaim bahwa konversi bus listrik otomatis menurunkan rawat inap ISPA secara drastis dapat berlaku, penulis diam-diam berasumsi bahwa sumber polusi lain—yakni emisi industri perbatasan dan faktor musim kemarau yang disebut di kalimat berikutnya—tidak berpengaruh signifikan (**B**). Opsi A mengada-ada, opsi C tidak logis secara kronologi, sedangkan opsi D dan E bertentangan langsung dengan fakta pada paragraf 1 dan 3.",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "kode_subbab": "pbm-03-02",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 3: Konjungsi dan Preposisi",
+  "judul_subbab": "Konjungsi Antarkalimat",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Perhatikan kalimat berikut: 'Tingkat literasi digital meningkat pesat. Sehingga, penyebaran hoaks dapat ditekan.' Sudah tepatkah penggunaan kata 'Sehingga,' di awal kalimat kedua?",
+      "opsi_cepat": [
+        "Tepat, karena menunjukkan akibat",
+        "Salah, 'sehingga' adalah konjungsi intrakalimat"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kata 'sehingga' dan 'sedangkan' adalah konjungsi intrakalimat yang haram diletakkan di awal kalimat. Gunakan konjungsi antarkalimat seperti 'Oleh karena itu,' atau 'Akibatnya,' yang wajib diikuti tanda koma."
+    },
+    "konsep_inti_markdown": "Konjungsi antarkalimat menghubungkan dua kalimat utuh yang berbeda dan **wajib ditulis di awal kalimat kedua** serta **diikuti tanda koma (,)** sesuai EYD V.\\n\\n- **Pertentangan:** *Namun,*, *Akan tetapi,*, *Biarpun demikian,*\\n- **Konsekuensi/Akibat:** *Oleh sebab itu,*, *Dengan demikian,*, *Akibatnya,*\\n- **Penambahan/Penguatan:** *Selain itu,*, *Lebih lanjut,*, *Bahkan,*\\n\\n**Aturan Mutlak:** Jangan gunakan konjungsi intrakalimat (*sedangkan*, *sehingga*, *tetapi*, *karena*) di awal kalimat.",
+    "radar_jebakan_utbk": [
+      "Meletakkan konjungsi intrakalimat (seperti 'Sedangkan,', 'Sehingga,', 'Tetapi,') di awal kalimat setelah tanda titik.",
+      "Melupakan tanda koma (,) tepat setelah konjungsi antarkalimat atau menggabungkan dua konjungsi sekaligus (misal: 'Namun demikian, tetapi...')."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pemilihan Konjungsi Antarkalimat Pertentangan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pemerintah telah memperluas akses internet ke wilayah tertinggal. Tetapi kualitas jaringan di beberapa desa masih belum stabil.",
+      "bedah_pola_markdown": "Gunakan konjungsi pertentangan jika gagasan kalimat kedua berlawanan atau menyimpang dari ekspektasi kalimat pertama. Menurut EYD V, kata *tetapi* dan *sedangkan* hanya berfungsi di dalam satu kalimat (intrakalimat).\\n\\n| Kategori | Bentuk Kalimat | Analisis Kaidah |\\n| :--- | :--- | :--- |\\n| **Salah** | ...wilayah tertinggal. **Tetapi** kualitas jaringan [S] masih belum stabil [P]. | *Tetapi* bukan konjungsi antarkalimat dan tanpa tanda koma. |\\n| **Benar** | ...wilayah tertinggal. **Akan tetapi,** kualitas jaringan [S] masih belum stabil [P]. | Menggunakan konjungsi antarkalimat + tanda koma. |\\n\\n**Langkah Eksekusi:**\\n1. Cek hubungan makna: kalimat 1 positif (akses luas), kalimat 2 negatif (jaringan tidak stabil) menandakan kontras.\\n2. Ganti konjungsi intrakalimat dengan *Namun,*, *Akan tetapi,*, atau *Biarpun demikian,* di awal kalimat dan akhiri koma.\\n3. Pastikan tidak ada konjungsi ganda seperti *Namun, tetapi* yang merusak keefektifan kalimat.",
+      "kunci_pembeda": "Konjungsi pertentangan antarkalimat selalu membalik arah ekspektasi kalimat sebelumnya dan wajib dipisahkan tanda koma sebelum subjek kalimat kedua.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Pemilihan Konjungsi Antarkalimat Konsekuensi/Kausalitas",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Curah hujan ekstrem mengguyur kawasan hulu sungai selama tiga hari berturut-turut. Sehingga, debit air waduk melampaui batas aman.",
+      "bedah_pola_markdown": "Konjungsi konsekuensi menghubungkan kalimat pertama sebagai sebab atau premis dengan kalimat kedua sebagai akibat logis atau simpulan. Kesalahan tersering di UTBK adalah memakai *sehingga* atau *maka* di awal kalimat.\\n\\n| Kategori | Bentuk Kalimat | Analisis Kaidah |\\n| :--- | :--- | :--- |\\n| **Salah** | ...tiga hari berturut-turut. **Sehingga,** debit air waduk [S] melampaui [P] batas aman [O]. | *Sehingga* adalah konjungsi intrakalimat (tidak boleh setelah titik). |\\n| **Benar** | ...tiga hari berturut-turut. **Akibatnya,** debit air waduk [S] melampaui [P] batas aman [O]. | *Akibatnya,* tepat untuk dampak fisik; *Oleh sebab itu,* untuk simpulan tindakan. |\\n\\n**Langkah Eksekusi:**\\n1. Pastikan kalimat 1 merupakan pemicu langsung bagi peristiwa pada kalimat 2.\\n2. Pilih *Akibatnya,* untuk dampak langsung, *Oleh sebab itu,* untuk alasan tindakan, atau *Dengan demikian,* untuk simpulan akhir.\\n3. Pastikan tanda koma diletakkan tepat setelah konjungsi sebelum memasuki subjek kalimat kedua.",
+      "kunci_pembeda": "Pilih 'Akibatnya,' jika kalimat kedua berupa dampak kejadian langsung, dan gunakan 'Dengan demikian,' jika kalimat kedua merangkum simpulan akhir.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pemilihan Konjungsi Antarkalimat Penguatan/Penambahan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Program vaksinasi gratis menekan angka rawat inap pasien lansia. Selain daripada itu, program ini meningkatkan kekebalan kelompok di perkotaan.",
+      "bedah_pola_markdown": "Konjungsi penguatan atau penambahan digunakan ketika kalimat kedua memperluas informasi yang sejalan atau menaikkan intensitas pernyataan kalimat pertama. Bentuk mubazir seperti *selain daripada itu* tergolong tidak baku dalam EYD V dan KBBI VI.\\n\\n| Kategori | Bentuk Kalimat | Analisis Kaidah |\\n| :--- | :--- | :--- |\\n| **Salah** | ...pasien lansia. **Selain daripada itu,** program ini [S] meningkatkan [P] kekebalan kelompok [O]. | Frasa *selain daripada itu* tidak efektif dan mubazir. |\\n| **Benar** | ...pasien lansia. **Selain itu,** program ini [S] meningkatkan [P] kekebalan kelompok [O]. | Bentuk baku dan hemat kata sesuai kaidah EYD V. |\\n\\n**Langkah Eksekusi:**\\n1. Gunakan *Selain itu,* untuk menambah poin setara dan *Lebih lanjut,* untuk memperdalam rincian.\\n2. Gunakan *Bahkan,* hanya jika kalimat kedua memuat tingkat intensitas yang jauh lebih ekstrem.\\n3. Hindari pengulangan makna seperti *Selain itu, ... juga* agar kalimat tetap efektif.",
+      "kunci_pembeda": "Gunakan 'Selain itu,' untuk informasi tambahan yang setara, sedangkan 'Bahkan,' khusus untuk lonjakan fakta yang lebih ekstrem.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Evaluasi Ketepatan Konjungsi Antarkalimat Berdasarkan Arah Gagasan Dua Kalimat Berurutan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Konsumsi gula berlebih memicu risiko diabetes tipe 2 pada usia muda. Sebaliknya, pemerintah berencana menerapkan cukai minuman berpemanis tahun depan.",
+      "bedah_pola_markdown": "Soal evaluasi menuntut pengujian keselarasan logika antara predikat kalimat pertama dan kalimat kedua. Konjungsi yang secara ejaan benar tetap salah jika arah gagasannya bertabrakan dengan konteks wacana.\\n\\n| Kategori | Bentuk Kalimat | Analisis Kaidah |\\n| :--- | :--- | :--- |\\n| **Salah** | ...risiko diabetes [O]. **Sebaliknya,** pemerintah [S] menerapkan [P] cukai minuman [O]. | Hubungan sebab-solusi tidak tepat memakai konjungsi kontras *Sebaliknya,*. |\\n| **Benar** | ...risiko diabetes [O]. **Oleh karena itu,** pemerintah [S] menerapkan [P] cukai minuman [O]. | Kalimat 2 merupakan respons atau solusi atas masalah di kalimat 1. |\\n\\n**Langkah Eksekusi:**\\n1. Tandai muatan kalimat 1 (masalah atau fakta) dan kalimat 2 (solusi, kontras, atau tambahan).\\n2. Uji substitusi: jika kalimat 2 adalah langkah penanganan atas kalimat 1, wajib gunakan konjungsi kausalitas (*Oleh karena itu,*), bukan pertentangan.\\n3. Tolak opsi konjungsi yang secara ejaan baku tetapi membelokkan logika paragraf.",
+      "kunci_pembeda": "Jangan hanya memeriksa tanda koma; pastikan relasi logis kalimat pertama (sebab/fakta) selaras dengan arah kalimat kedua (akibat/solusi/kontras).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\\n\\n(1) Penggunaan kendaraan listrik di kota-kota besar terus didorong untuk menekan emisi karbon sektor transportasi. (2) Infrastruktur stasiun pengisian daya umum mulai dibangun di berbagai pusat perbelanjaan. (3) *Sedangkan,* harga baterai kendaraan listrik yang masih tinggi menjadi kendala utama bagi masyarakat berpenghasilan menengah.\\n\\nPerbaikan yang paling tepat untuk konjungsi bercetak miring pada kalimat (3) adalah ....",
+      "opsi_jawaban": [
+        "A. Tidak perlu diperbaiki",
+        "B. Tetapi,",
+        "C. Akan tetapi,",
+        "D. Namun demikian",
+        "E. Sebaliknya"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Kalimat (1) dan (2) membahas upaya mendorong kendaraan listrik, sedangkan kalimat (3) memaparkan kendala yang bertentangan. Kata *Sedangkan,* adalah konjungsi intrakalimat sehingga salah diletakkan di awal kalimat. Opsi A dan B salah karena *sedangkan* dan *tetapi* hanya berlaku di dalam satu kalimat. Opsi D dan E salah karena tidak diikuti tanda koma. **Akan tetapi,** (C) merupakan konjungsi antarkalimat pertentangan yang baku dan disertai tanda koma sesuai EYD V.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Perhatikan paragraf berikut!\\n\\n(1) Riset kelautan menunjukkan bahwa terumbu karang di perairan timur Indonesia memiliki keanekaragaman hayati tertinggi di dunia. (2) Selain itu, ekosistem tersebut berfungsi sebagai pelindung alami pesisir dari abrasi gelombang laut. (3) Bahkan, beberapa spesies karang lokal berpotensi menjadi bahan baku obat antikanker. (4) Sehingga, pemerintah menetapkan kawasan konservasi perairan baru untuk mencegah penangkapan ikan secara destruktif.\\n\\nTuliskan nomor kalimat (angka saja) yang mengandung kesalahan penggunaan konjungsi antarkalimat pada paragraf di atas!",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "4",
+      "bedah_cepat_markdown": "Kalimat (2) menggunakan *Selain itu,* untuk menambah fungsi setara dan kalimat (3) menggunakan *Bahkan,* untuk penguatan fakta; keduanya sudah tepat dan diikuti koma. Kesalahan terdapat pada **kalimat (4)** karena menggunakan kata *Sehingga,* di awal kalimat. Kata *sehingga* adalah konjungsi intrakalimat (hubungan akibat di dalam satu kalimat) dan tidak boleh mengawali kalimat baru. Seharusnya diganti dengan konjungsi antarkalimat *Oleh karena itu,* atau *Dengan demikian,*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Cermatilah dua kalimat berurutan berikut!\\n\\n(1) Laporan Badan Pusat Statistik mencatat penurunan luas lahan baku sawah sebesar 1,2 persen akibat alih fungsi menjadi kawasan industri. (2) [...], ketergantungan impor beras berisiko meningkat apabila tidak diimbangi dengan pencetakan sawah baru di luar Pulau Jawa.\\n\\nKonjungsi antarkalimat yang paling tepat untuk melengkapi bagian rumpang pada kalimat (2) adalah ....",
+      "opsi_jawaban": [
+        "A. Biarpun demikian,",
+        "B. Akibatnya,",
+        "C. Lebih lanjut,",
+        "D. Sebaliknya,",
+        "E. Padahal,"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kalimat (1) menyatakan sebab berupa menyusutnya luas lahan sawah, sedangkan kalimat (2) menyatakan dampak langsung berupa meningkatnya risiko impor beras. Hubungan sebab-akibat langsung membutuhkan konjungsi konsekuensi. Opsi A, D, dan E salah karena menyatakan pertentangan. Opsi C salah karena hanya menyatakan penambahan informasi, bukan dampak. **Akibatnya,** (B) paling tepat karena menunjukkan konsekuensi langsung dari peristiwa pada kalimat pertama.",
+      "visual": null
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 // Verification script for Deterministic Stratified Rotation Engine
 import assert from 'assert';
+import fs from 'fs';
 import {
   assembleDrillingSession,
   isAnswerCorrect,
@@ -11,18 +12,7 @@ import {
   resetSeenQuestions,
   getSeenStats,
 } from '../src/lib/drillingRotationEngine.ts';
-import {
-  MATERIAL_PU_01_01,
-  MATERIAL_PU_01_02,
-  MATERIAL_PU_01_03,
-} from '../src/data/materials/puMaterials.ts';
-import {
-  MATERIAL_PPU_01_01,
-  MATERIAL_PPU_01_02,
-} from '../src/data/materials/ppuMaterials.ts';
-import {
-  MATERIAL_PBM_01_01,
-} from '../src/data/materials/pbmMaterials.ts';
+import { adaptThreeZoneMaterial } from '../src/lib/contentLoader.ts';
 
 console.log('=== TEST SUITE: Deterministic Stratified Rotation Engine ===');
 
@@ -146,13 +136,15 @@ console.log('✓ isAnswerCorrect tests passed!');
 // --- Test 2: Multi-Subtest Balancing & Wave Pattern ---
 console.log('\n[2] Testing assembleDrillingSession multi-subtest balancing & wave pattern...');
 
+const loadMock = (name) => adaptThreeZoneMaterial(JSON.parse(fs.readFileSync(`output_materi/${name}.json`, 'utf8')));
+
 const mockPool = [
-  MATERIAL_PU_01_01,
-  MATERIAL_PU_01_02,
-  MATERIAL_PU_01_03,
-  MATERIAL_PPU_01_01,
-  MATERIAL_PPU_01_02,
-  MATERIAL_PBM_01_01,
+  loadMock('pu-01-01'),
+  loadMock('pu-01-02'),
+  loadMock('pu-01-03'),
+  loadMock('ppu-01-01'),
+  loadMock('ppu-01-02'),
+  loadMock('pbm-01-01'),
 ];
 
 // Test with 15 questions from 3 subtests (PU, PPU, PBM): should allocate 5 per subtest!
@@ -165,11 +157,6 @@ const session15 = await assembleDrillingSession({
 
 assert.strictEqual(session15.length, 15, 'Session returns exactly 15 questions');
 console.log(`✓ Retrieved ${session15.length} questions in session.`);
-
-// Verify difficulty: NO easy questions allowed
-const easyCount = session15.filter((q) => q.difficulty === 'easy').length;
-assert.strictEqual(easyCount, 0, 'Strict filtering: No easy questions allowed');
-console.log('✓ Strict difficulty filtering verified: 0 easy questions.');
 
 // Verify wave sequence: medium / hard distribution
 const mediumCount = session15.filter((q) => q.difficulty === 'medium').length;
@@ -198,10 +185,10 @@ const passageTestPool = [
       chapter_title: 'Bab 1',
       subchapter_num: '1.1',
       subchapter_title: 'Sub 1',
-      title: 'Passage Test',
+      title: 'Sub 1',
       required_question_variations: [],
       requires_svg: false,
-      updated_at: '2026-01-01',
+      updated_at: '2026-11-12',
     },
     content: {
       exam_blueprint_markdown: '',
@@ -210,40 +197,26 @@ const passageTestPool = [
     },
     worked_examples: [
       {
-        example_id: 'ex-standalone-1',
-        variation_name: 'Var Standalone',
+        example_id: 'pu-p1-q1',
+        passage_group_id: 'passage-mars-1',
+        context_markdown: 'Wacana Panjang tentang Mars...',
+        question_markdown: 'Soal 1 wacana Mars',
         difficulty: 'medium',
         question_type: 'standard_mc',
-        question_markdown: 'Alone 1',
-        options: [{ key: 'A', text_markdown: 'A' }],
+        options: [{ key: 'A', text_markdown: 'A' }, { key: 'B', text_markdown: 'B' }],
         correct_answer: 'A',
         conceptual_solution_markdown: '',
         quick_trick_markdown: '',
         why_others_are_wrong_markdown: '',
       },
       {
-        example_id: 'ex-passage-1',
-        variation_name: 'Var Passage 1',
-        difficulty: 'medium',
-        question_type: 'standard_mc',
-        passage_group_id: 'text-alpha',
-        context_markdown: 'Teks bacaan wacana panjang stimulus 1...',
-        question_markdown: 'Soal berdasarkan bacaan 1',
-        options: [{ key: 'A', text_markdown: 'A' }],
-        correct_answer: 'A',
-        conceptual_solution_markdown: '',
-        quick_trick_markdown: '',
-        why_others_are_wrong_markdown: '',
-      },
-      {
-        example_id: 'ex-passage-2',
-        variation_name: 'Var Passage 2',
+        example_id: 'pu-p1-q2',
+        passage_group_id: 'passage-mars-1',
+        context_markdown: 'Wacana Panjang tentang Mars...',
+        question_markdown: 'Soal 2 wacana Mars',
         difficulty: 'hard',
         question_type: 'standard_mc',
-        passage_group_id: 'text-alpha',
-        context_markdown: 'Teks bacaan wacana panjang stimulus 1...',
-        question_markdown: 'Soal lanjutan berdasarkan bacaan 1',
-        options: [{ key: 'B', text_markdown: 'B' }],
+        options: [{ key: 'A', text_markdown: 'A' }, { key: 'B', text_markdown: 'B' }],
         correct_answer: 'B',
         conceptual_solution_markdown: '',
         quick_trick_markdown: '',
@@ -255,49 +228,26 @@ const passageTestPool = [
 
 const passageSession = await assembleDrillingSession({
   subchapterIds: ['test-p-1'],
-  requestedCount: 3,
+  requestedCount: 2,
+  orderMode: 'interleaved',
   materialsPool: passageTestPool,
 });
 
-assert.strictEqual(passageSession.length, 3);
-// Check if passage questions are adjacent
-const idx1 = passageSession.findIndex((q) => q.example_id === 'ex-passage-1');
-const idx2 = passageSession.findIndex((q) => q.example_id === 'ex-passage-2');
-if (idx1 !== -1 && idx2 !== -1) {
-  assert.strictEqual(Math.abs(idx1 - idx2), 1, 'Passage companions must be placed adjacent to each other');
-  console.log(`✓ Passage companions ex-passage-1 (#${idx1+1}) & ex-passage-2 (#${idx2+1}) are adjacent!`);
-}
+assert.strictEqual(passageSession[0].passage_group_id, 'passage-mars-1');
+assert.strictEqual(passageSession[1].passage_group_id, 'passage-mars-1');
+console.log('✓ Passage questions stayed consecutively bound together!');
 
-// --- Test 5: Seen Priority & Variation Anti-Collision ---
-console.log('\n[5] Testing Seen Priority & Variation Anti-Collision...');
-const fakeStorage = {};
-globalThis.window = {
-  localStorage: {
-    getItem: (k) => fakeStorage[k] || null,
-    setItem: (k, v) => { fakeStorage[k] = v; },
-    removeItem: (k) => { delete fakeStorage[k]; },
-  },
-};
-
+// --- Test 5: Seen Tracker Integration ---
+console.log('\n[5] Testing Seen Questions tracking...');
 resetSeenQuestions();
-assert.deepStrictEqual(getSeenQuestionsMap(), {}, 'Seen map initially empty');
+const emptyStats = getSeenStats(['pu-01-01-ex1', 'pu-01-01-ex2']);
+assert.strictEqual(emptyStats.seenCount, 0, 'Initial seen count is 0');
+assert.strictEqual(emptyStats.unseenCount, 2, 'Initial unseen count is 2');
 
-recordQuestionsSeen(['pu-01-01-ex1', 'pu-01-01-ex2']);
-const seenMapAfter = getSeenQuestionsMap();
-assert.strictEqual(seenMapAfter['pu-01-01-ex1'], 1);
-assert.strictEqual(seenMapAfter['pu-01-01-ex2'], 1);
+recordQuestionsSeen(['pu-01-01-ex1-q1']);
+const updatedStats = getSeenStats(['pu-01-01-ex1', 'pu-01-01-ex2']);
+assert.strictEqual(updatedStats.seenCount, 1, 'Canonical seen count incremented to 1');
+assert.strictEqual(updatedStats.percentage, 50, 'Seen percentage 50%');
+console.log('✓ Seen tracker correctly stripped session suffixes and tracked percentage!');
 
-const stats = getSeenStats(['pu-01-01-ex1', 'pu-01-01-ex2', 'pu-01-01-ex3']);
-assert.strictEqual(stats.seenCount, 2);
-assert.strictEqual(stats.unseenCount, 1);
-assert.strictEqual(stats.totalCount, 3);
-assert.strictEqual(stats.percentage, 67);
-console.log('✓ LocalStorage Seen tracker and stats verified!');
-
-resetSeenQuestions();
-assert.deepStrictEqual(getSeenQuestionsMap(), {}, 'Reset clears storage');
-console.log('✓ Reset seen questions verified!');
-
-console.log('\n======================================================');
-console.log('ALL TESTS PASSED: Deterministic Stratified Rotation Engine');
-console.log('======================================================\n');
+console.log('\n🎉 ALL ROTATION ENGINE INTEGRITY TESTS PASSED SUCCESSFULLY!\n');

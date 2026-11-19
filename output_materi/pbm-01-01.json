@@ -1,0 +1,131 @@
+{
+  "kode_subbab": "pbm-01-01",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 1: Ejaan (EYD V)",
+  "judul_subbab": "Pemakaian Huruf Kapital dan Huruf Miring",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam naskah akademik UTBK, manakah penulisan yang baku: 'Ekspor batik pekalongan ke pasar Eropa meningkat' atau 'Ekspor Batik Pekalongan ke pasar Eropa meningkat'?",
+      "opsi_cepat": [
+        "batik pekalongan",
+        "Batik Pekalongan"
+      ],
+      "jawaban_benar_index": 0,
+      "penjelasan_kilat": "Kata 'pekalongan' pada 'batik pekalongan' tidak merujuk lokasi geografis di peta, melainkan nama jenis atau ciri khas produk sehingga ditulis huruf kecil."
+    },
+    "konsep_inti_markdown": "Berdasarkan **EYD Edisi V**, penggunaan huruf kapital dan miring diuji melalui prinsip **spesifikasi makna** dan **asal bahasa**:\n\n* **Huruf Kapital:** Wajib untuk **nama diri** (geografi spesifik, gelar diikuti nama/instansi, peristiwa sejarah, judul karya) dan **identitas** (bangsa, suku, bahasa). Nonkapital untuk **nama jenis** atau bentuk berimbuhan.\n* **Huruf Miring:** Wajib untuk **istilah asing/daerah** yang belum diserap baku dan **judul buku/media massa**. **Tidak miring** untuk nama diri asing (lembaga, merek, orang).",
+    "radar_jebakan_utbk": [
+      "Mengkapitalkan nama jenis yang mengandung unsur geografi (misalnya gula jawa, kunci inggris) karena terkecoh nama daerahnya.",
+      "Memiringkan nama lembaga atau organisasi internasional berbahasa asing (seperti World Health Organization) padahal nama diri tidak dimiringkan."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Kapitalisasi Geografi: Nama Diri Geografi vs Nama Jenis",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pemerintah daerah mengembangkan sentra jeruk bali di kawasan lereng Gunung Merapi guna mendukung ekowisata berbasis pertanian lokal.",
+      "bedah_pola_markdown": "Pada struktur `[S] Pemerintah daerah` `[P] mengembangkan` `[O] sentra jeruk bali` `[K] di lereng Gunung Merapi`, unsur geografi terbagi dua fungsi. **Nama diri geografi** merujuk lokasi spesifik di peta sehingga wajib kapital, sedangkan **nama jenis** merujuk varietas atau produk khas sehingga ditulis nonkapital.\n\n| Salah (Before) | Benar (After) | Analisis EYD V |\n| :--- | :--- | :--- |\n| menyeberangi **selat Bali** | menyeberangi **Selat Bali** | Nama diri geografi spesifik ditulis kapital. |\n| membeli **Jeruk Bali** | membeli **jeruk bali** | Nama jenis buah; bukan lokasi geografis. |\n| motif **Batik Pekalongan** | motif **batik pekalongan** | Nama jenis produk khas daerah ditulis kecil. |\n| mendaki **gunung** | mendaki **gunung** | Geografi tanpa nama diri tetap nonkapital. |\n\n**Langkah Taktis:** Uji apakah unsur tempat dapat diganti kata *khas* atau *jenis*. Jika bermakna varietas atau produk khas, gunakan huruf kecil seluruhnya pada kedua kata.",
+      "kunci_pembeda": "Kapitalkan unsur geografi hanya jika merujuk lokasi nyata di peta atau asal-usul geografis langsung, bukan nama jenis benda.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Kapitalisasi Gelar, Jabatan, Pangkat, dan Sapaan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam rapat kabinet kemarin, Presiden Joko Widodo menginstruksikan para menteri agar segera berkoordinasi dengan gubernur di setiap provinsi.",
+      "bedah_pola_markdown": "Perhatikan pola `[S] Presiden Joko Widodo` `[P] menginstruksikan` `[O] para menteri` `[K] berkoordinasi dengan gubernur`. Gelar, jabatan, dan pangkat ditulis kapital hanya jika diikuti **nama orang**, **nama instansi/wilayah**, atau dipakai sebagai **sapaan langsung**.\n\n| Salah (Before) | Benar (After) | Analisis EYD V |\n| :--- | :--- | :--- |\n| melantik **gubernur** Jawa Barat | melantik **Gubernur** Jawa Barat | Jabatan diikuti nama wilayah wajib kapital. |\n| menemui **Menteri** tersebut | menemui **menteri** tersebut | Jabatan tanpa nama orang/instansi ditulis kecil. |\n| Terima kasih, **dokter**. | Terima kasih, **Dokter**. | Kata sapaan langsung dalam dialog ditulis kapital. |\n| meraih gelar **Sarjana** | meraih gelar **sarjana** | Nama gelar yang berdiri sendiri ditulis nonkapital. |\n\n**Langkah Taktis:** Cek kata tepat setelah jabatan atau gelar. Jika tidak diikuti nama diri, nama instansi, wilayah spesifik, atau bukan sapaan langsung, ubah huruf awalnya menjadi nonkapital.",
+      "kunci_pembeda": "Jabatan dan gelar hanya kapital jika melekat pada nama diri/wilayah spesifik atau berfungsi sebagai sapaan langsung kepada lawan bicara.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Kapitalisasi Nama Bangsa, Suku, Bahasa, dan Peristiwa Sejarah",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Penelitian sosiolinguistik itu mengkaji penggunaan bahasa Indonesia baku pada generasi muda pasca-Perang Dunia II.",
+      "bedah_pola_markdown": "Dalam klausa `[S] Penelitian itu` `[P] mengkaji` `[O] bahasa Indonesia` `[K] pasca-Perang Dunia II`, kata umum seperti *bangsa*, *suku*, dan *bahasa* tetap nonkapital, sedangkan nama spesifiknya kapital. Namun, bentuk turunan berimbuhan ditulis nonkapital seluruhnya.\n\n| Salah (Before) | Benar (After) | Analisis EYD V |\n| :--- | :--- | :--- |\n| memakai **Bahasa** Jawa | memakai **bahasa** Jawa | Kata *bahasa* nonkapital; nama *Jawa* kapital. |\n| sikap **Keindonesiaan** | sikap **keindonesiaan** | Bentuk berimbuhan *ke-...-an* wajib nonkapital. |\n| memicu **perang** saudara | memicu **perang** saudara | Bukan peristiwa sejarah spesifik; ditulis kecil. |\n| tragedi **perang dunia II** | tragedi **Perang Dunia II** | Nama peristiwa sejarah spesifik wajib kapital. |\n\n**Langkah Taktis:** Pisahkan kata klasifikasi umumnya (*suku*, *bahasa*, *perang*) dari nama spesifiknya, lalu periksa apakah kata utama tersebut sudah mendapat imbuhan turunan seperti *ke-...-an* atau *meng-...-kan*.",
+      "kunci_pembeda": "Nama bangsa, suku, bahasa, dan peristiwa sejarah spesifik wajib kapital, kecuali jika sudah dilekati imbuhan pembentuk kata turunan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Penggunaan Huruf Miring untuk Istilah Asing/Daerah vs Nama Lembaga/Organisasi Asing",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Laporan World Health Organization menyoroti fenomena burnout yang meningkat tajam di kalangan pekerja sektor digital.",
+      "bedah_pola_markdown": "Pada kalimat `[S] Laporan World Health Organization` `[P] menyoroti` `[O] fenomena burnout`, terdapat perbedaan perlakuan cetak miring. **Istilah umum asing/daerah** yang belum diserap ke KBBI VI wajib dimiringkan, sedangkan **nama diri asing** (lembaga, organisasi, merek, orang) tetap ditulis tegak.\n\n| Salah (Before) | Benar (After) | Analisis EYD V |\n| :--- | :--- | :--- |\n| riset *United Nations* | riset United Nations | Nama organisasi internasional ditulis tegak. |\n| konsep **sustainable** | konsep *sustainable* | Istilah asing belum terserap wajib miring. |\n| istilah **peusijuek** | istilah *peusijuek* | Kosakata bahasa daerah wajib dicetak miring. |\n| sistem **online** | sistem daring / *online* | Gunakan padanan baku atau miringkan kata asing. |\n\n**Langkah Taktis:** Identifikasi apakah frasa asing tersebut merujuk nama badan atau institusi resmi. Jika berupa nama institusi, organisasi, atau merek dagang, tulis tegak tanpa cetak miring.",
+      "kunci_pembeda": "Cetak miring hanya berlaku untuk kosakata umum bahasa asing atau daerah, bukan untuk nama diri lembaga, perusahaan, maupun organisasi asing.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Kapitalisasi dan Huruf Miring pada Judul Buku, Artikel, Media Massa, dan Dokumen Resmi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Gagasan tersebut diulas secara mendalam dalam buku Dari Ave Maria ke Jalan Lain ke Roma serta harian Kompas edisi Minggu.",
+      "bedah_pola_markdown": "Dalam `[K] buku Dari Ave Maria ke Jalan Lain ke Roma`, setiap awal kata pada judul ditulis kapital kecuali **kata tugas** (*di, ke, dari, dan, yang, untuk*) di tengah judul. Judul buku dan media massa dicetak miring, sedangkan judul artikel atau bab diapit tanda petik dan ditulis tegak.\n\n| Salah (Before) | Benar (After) | Analisis EYD V |\n| :--- | :--- | :--- |\n| novel *Laskar Pelangi **Di** Pulau* | novel *Laskar Pelangi di Pulau* | Kata tugas *di* di tengah judul nonkapital. |\n| artikel *Ekonomi Hijau* | artikel \"Ekonomi Hijau\" | Judul artikel diapit petik dan ditulis tegak. |\n| koran **Media Indonesia** | koran *Media Indonesia* | Nama surat kabar wajib dicetak miring. |\n| **undang-undang** nomor 20 | **Undang-Undang** Nomor 20 | Judul dokumen resmi pemerintah ditulis kapital. |\n\n**Langkah Taktis:** Pastikan kata tugas pada posisi awal judul tetap kapital, sedangkan di posisi tengah wajib huruf kecil seluruhnya.",
+      "kunci_pembeda": "Judul buku dan media massa ditulis kapital-miring, judul dokumen resmi ditulis kapital-tegak, sedangkan judul artikel diapit tanda petik tanpa miring.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n(1) Pada pekan lalu, Gubernur Jawa Tengah meresmikan sentra pengolahan Gula Jawa berbasis ekspor di Kabupaten Banyumas. (2) Program tersebut mendapat dukungan teknis dari *International Labour Organization* guna meningkatkan standar keamanan pangan. (3) Selain itu, para petani didorong menerapkan sistem *traceability* agar produk lokal mampu bersaing di pasar global. (4) Langkah strategis ini diharapkan memperkuat ekonomi masyarakat pedesaan secara berkelanjutan.\n\nPerbaikan penulisan ejaan sesuai kaidah EYD Edisi V yang tepat pada paragraf tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. mengubah *Gubernur* menjadi *gubernur* dan *Gula Jawa* menjadi *gula jawa* pada kalimat (1)",
+        "B. mengubah *Gula Jawa* menjadi *gula jawa* pada kalimat (1) dan *International Labour Organization* menjadi tegak pada kalimat (2)",
+        "C. mengubah *Kabupaten Banyumas* menjadi *kabupaten Banyumas* pada kalimat (1) dan *traceability* menjadi tegak pada kalimat (3)",
+        "D. mengubah *International Labour Organization* menjadi *International labour organization* pada kalimat (2)",
+        "E. mengubah *traceability* menjadi \"traceability\" pada kalimat (3) dan *ekonomi* menjadi *Ekonomi* pada kalimat (4)"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Langkah 1:** Pada kalimat (1), *Gula Jawa* merupakan nama jenis gula sehingga wajib ditulis nonkapital (*gula jawa*), sedangkan *Gubernur Jawa Tengah* sudah tepat kapital karena diikuti nama wilayah.\n\n**Langkah 2:** Pada kalimat (2), *International Labour Organization* adalah nama diri organisasi internasional sehingga tidak dicetak miring.\n\n**Mengapa opsi lain salah:** Opsi A salah karena jabatan diikuti nama wilayah harus kapital; C dan E keliru memperlakukan nama geografi serta istilah asing; D salah karena nama lembaga harus kapital di setiap awal kata.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Cermati kutipan teks ulasan berikut!\n\nKajian mengenai identitas Kebangsaan dalam buku *Dari Sabang Sampai Merauke* yang diulas pada surat kabar *Tempo* edisi Maret menyoroti dinamika penggunaan Bahasa Indonesia di wilayah perbatasan.\n\nPenulisan yang sesuai dengan kaidah EYD Edisi V untuk memperbaiki kutipan tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. *kebangsaan*; *Dari Sabang sampai Merauke*; *Tempo*; *bahasa Indonesia*",
+        "B. *Kebangsaan*; *Dari Sabang Sampai Merauke*; Tempo; *Bahasa Indonesia*",
+        "C. *kebangsaan*; \"Dari Sabang sampai Merauke\"; *Tempo*; *bahasa Indonesia*",
+        "D. *kebangsaan*; *Dari Sabang sampai Merauke*; Tempo; *Bahasa Indonesia*",
+        "E. *Kebangsaan*; \"Dari Sabang Sampai Merauke\"; *Tempo*; *bahasa Indonesia*"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "**Analisis Tiap Frasa:**\n1. *Kebangsaan* adalah kata berimbuhan sehingga wajib nonkapital (*kebangsaan*).\n2. Pada judul buku *Dari Sabang Sampai Merauke*, kata tugas *sampai* di tengah judul harus nonkapital (*Dari Sabang sampai Merauke*) dan tetap miring.\n3. Nama surat kabar *Tempo* sudah tepat dicetak miring.\n4. Kata *Bahasa* sebelum nama bahasa harus nonkapital (*bahasa Indonesia*).\n\n**Mengapa opsi lain salah:** Opsi B, D, dan E salah mengkapitalkan kata berimbuhan/kata tugas atau menghilangkan miring nama koran; C keliru memakai tanda petik untuk judul buku.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Bacalah kalimat-kalimat berikut!\n\n(1) Menteri Pendidikan menetapkan kebijakan baru terkait literasi digital di sekolah menengah.\n(2) Pameran kerajinan tersebut menampilkan beragam kain tenun khas suku Badui.\n(3) Para peneliti sedang menguji efektivitas penggunaan *kunci inggris* berbahan baja ringan.\n(4) Artikel berjudul \"Transformasi Digital Pendidikan\" dimuat dalam jurnal *Cakrawala Pendidikan*.\n\nNomor kalimat yang mengandung kesalahan pemakaian huruf kapital atau huruf miring sesuai EYD Edisi V adalah kalimat nomor .... *(Tuliskan angkanya saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "3",
+      "bedah_cepat_markdown": "**Langkah 1:** Kalimat (1) tepat karena *Menteri Pendidikan* diikuti nama bidang jabatan resmi. Kalimat (2) tepat karena kata *suku* nonkapital dan *Badui* kapital. Kalimat (4) tepat karena judul artikel diapit tanda petik tegak dan nama jurnal dicetak miring.\n\n**Langkah 2:** Kalimat (3) salah karena frasa *kunci inggris* merupakan nama jenis benda dalam bahasa Indonesia (bukan istilah asing) sehingga harus ditulis tegak tanpa cetak miring.",
+      "visual": null
+    }
+  ]
+}

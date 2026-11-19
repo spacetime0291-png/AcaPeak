@@ -1,0 +1,125 @@
+{
+  "kode_subbab": "pm-02-02",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 2: Pemodelan Aljabar dan Fungsi",
+  "judul_subbab": "Pemodelan Fungsi Linear dan Kuadrat",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Harga tiket awal Rp20.000 dengan 400 pembeli. Jika tiap kenaikan Rp2.500 mengurangi 25 pembeli, apakah kenaikan Rp15.000 menghasilkan pendapatan tertinggi?",
+      "opsi_cepat": [
+        "Ya, karena harga jual per tiket jauh lebih mahal",
+        "Tidak, pendapatan justru turun dari puncak optimalnya"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Pendapatan mengikuti fungsi kuadrat $R(n) = (20.000 + 2.500n)(400 - 25n)$ yang mencapai puncak saat $n = 4$ (kenaikan Rp10.000), lalu turun kembali jika harga dinaikkan melampaui titik optimal."
+    },
+    "konsep_inti_markdown": "- **Fungsi Linear** $f(x) = mx + c$: memodelkan laju konstan ($m > 0$ naik, $m < 0$ susut). Perpotongan $f(x) = g(x)$ menentukan titik impas atau ekuilibrium pasar.\\n- **Fungsi Kuadrat** $f(x) = ax^2 + bx + c$: memodelkan lintasan parabola serta optimasi luas dan pendapatan.\\n- **Titik Puncak**: Untuk $a < 0$, maksimum terjadi di $x_p = -\\frac{b}{2a}$ atau rata-rata akar $x_p = \\frac{x_1 + x_2}{2}$.",
+    "radar_jebakan_utbk": [
+      "Berhenti menghitung pada nilai sumbu simetri $x_p$ atau kelipatan kenaikan $n$ tanpa mensubstitusikannya kembali ke fungsi harga, luas, atau pendapatan yang ditanyakan.",
+      "Mengalikan keempat sisi pada pemagaran lahan yang menempel dinding, sehingga gagal mengurangi panjang sisi yang sudah tertutup tembok."
+    ],
+    "stimulus_utama_bersama": "Pengelola Kawasan Agrowisata Lembah Hijau merancang pengembangan fasilitas terpadu dengan rincian teknis dan ekonomi berikut:\\n1. **Wahana Air Mancur**: Nosel di tepi kolam pada koordinat $(0,0)$ menyemprotkan air membentuk lintasan parabola yang mencapai tinggi maksimum $3,2\\text{ meter}$ pada jarak horizontal $4\\text{ meter}$, lalu jatuh kembali ke permukaan air pada jarak $8\\text{ meter}$.\\n2. **Tarif Tiket Masuk**: Harga tiket normal $\\text{Rp}20.000,00$ menarik rata-rata $400$ pengunjung per hari. Survei internal menunjukkan setiap kenaikan harga $\\text{Rp}2.500,00$ mengurangi jumlah pengunjung sebanyak $25$ orang per hari.\\n3. **Area Kebun Bibit**: Tersedia kawat pagar sepanjang $60\\text{ meter}$ untuk memagari lahan persegi panjang yang salah satu sisinya menempel langsung pada tembok kawasan (sisi tembok tidak dipagari).\\n4. **Kios Madu Hutan**: Permintaan harian mengikuti $Q_d = 120 - 2P$ dan penawaran mengikuti $Q_s = 3P - 30$, dengan $P$ adalah harga (dalam ribuan rupiah per botol) dan $Q$ adalah jumlah botol.\\n5. **Operasional Mesin & Listrik**: Mesin pompa dibeli seharga $\\text{Rp}15.000.000,00$ dengan penyusutan nilai linear $\\text{Rp}1.500.000,00$ per tahun. Untuk suplai daya bulanan, **Skema A** mengenakan biaya tetap $\\text{Rp}400.000,00$ ditambah $\\text{Rp}1.500,00/\\text{kWh}$, sedangkan **Skema B** mengenakan tarif murni $\\text{Rp}2.500,00/\\text{kWh}$ tanpa biaya tetap.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pemodelan Lintasan Parabolik dan Penentuan Tinggi atau Jarak Maksimum",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 1 stimulus utama: nosel air mancur di titik $(0,0)$ mencapai puncak $(4; 3,2)$ dan jatuh di $(8,0)$. Tentukan ketinggian pancuran air pada jarak horizontal $6\\text{ meter}$ dari nosel.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nLintasan air berbentuk parabola terbuka ke bawah dengan puncak $(4; 3,2)$ serta memotong sumbu mendatar di $(0,0)$ dan $(8,0)$. Variabel $x$ menyatakan jarak horizontal dan $y$ menyatakan ketinggian air dalam satuan meter.\\n\\n**2. Model Matematika (Employing)**\\nGunakan rumus bentuk puncak $y = a(x - x_p)^2 + y_p$ sehingga $y = a(x - 4)^2 + 3,2$. Substitusi titik $(0,0)$ menghasilkan $0 = 16a + 3,2$, maka $a = -0,2$. Persamaan lintasan air adalah $y = -0,2(x - 4)^2 + 3,2$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nPada jarak $x = 6\\text{ meter}$, diperoleh $y = -0,2(6 - 4)^2 + 3,2 = 2,4\\text{ meter}$. Karena $0 < x < 8$, ketinggian bernilai positif yang berarti pancuran masih berada di atas permukaan air kolam.",
+      "kunci_pembeda": "Gunakan bentuk puncak $y = a(x - x_p)^2 + y_p$ saat koordinat puncak diketahui, atau bentuk faktor $y = a(x - x_1)(x - x_2)$ saat dua titik potong mendatar diketahui.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Optimasi Pendapatan atau Keuntungan Saat Harga Dinaikkan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 2 stimulus utama: tiket normal Rp20.000,00 menarik 400 pengunjung, dan tiap kenaikan Rp2.500,00 mengurangi 25 pengunjung. Tentukan harga tiket agar pendapatan harian maksimum.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nMisalkan $n$ menyatakan banyaknya kelipatan kenaikan harga tiket sebesar $\\text{Rp}2.500,00$. Harga tiket baru menjadi $P(n) = 20.000 + 2.500n$, sedangkan jumlah pengunjung harian berkurang secara linear menjadi $Q(n) = 400 - 25n$.\\n\\n**2. Model Matematika (Employing)**\\nPendapatan harian $R(n)$ adalah hasil kali harga dan jumlah pengunjung: $R(n) = (20.000 + 2.500n)(400 - 25n)$. Faktorkan konstanta agar efisien: $R(n) = 62.500(8 + n)(16 - n)$. Pembuat nol fungsi berada pada $n_1 = -8$ dan $n_2 = 16$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nTitik puncak tercapai pada sumbu simetri $n_p = \\frac{-8 + 16}{2} = 4$. Substitusikan $n = 4$ ke fungsi harga sehingga diperoleh harga optimal $P(4) = 20.000 + 2.500(4) = \\text{Rp}30.000,00$ dengan $300$ pengunjung dan pendapatan puncak $\\text{Rp}9.000.000,00$.",
+      "kunci_pembeda": "Gunakan metode pemfaktoran akar $n_p = \\frac{n_1 + n_2}{2}$ dari perkalian dua faktor linear tanpa perlu menjabarkan persamaan kuadrat ke bentuk umum.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Optimasi Luas Lahan Maksimum dengan Panjang Pagar Terbatas Menempel Dinding",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 3 stimulus utama: kawat pagar sepanjang 60 meter digunakan memagari kebun bibit persegi panjang dengan satu sisi menempel tembok. Hitung luas maksimum kebun tersebut.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nMisalkan sisi kebun yang tegak lurus terhadap tembok adalah lebar $x$ meter dan sisi yang sejajar tembok adalah panjang $p$ meter. Karena sisi yang menempel tembok tidak dipagari, total panjang kawat hanya mencakup dua sisi lebar dan satu sisi panjang.\\n\\n**2. Model Matematika (Employing)**\\nPersamaan keliling kawat adalah $2x + p = 60$, sehingga $p = 60 - 2x$. Fungsi luas kebun dinyatakan sebagai $L(x) = x \\cdot p = x(60 - 2x) = 60x - 2x^2$, dengan koefisien kuadrat $a = -2$ dan linear $b = 60$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nLuas maksimum tercapai saat $x_p = -\\frac{b}{2a} = -\\frac{60}{2(-2)} = 15\\text{ meter}$. Panjang sisi sejajar tembok menjadi $p = 60 - 2(15) = 30\\text{ meter}$, menghasilkan luas maksimum $L = 15 \\times 30 = 450\\text{ m}^2$.",
+      "kunci_pembeda": "Panjang sisi kawat yang sejajar tembok selalu tepat setengah dari total kawat tersedia ($p = \\frac{K}{2}$) pada optimasi persegi panjang satu sisi menempel dinding.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Fungsi Penawaran, Permintaan, dan Titik Ekuilibrium Pasar",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk poin 4 stimulus utama: permintaan madu harian $Q_d = 120 - 2P$ dan penawaran $Q_s = 3P - 30$ (P dalam ribuan rupiah). Tentukan harga dan jumlah keseimbangan pasar.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nFungsi permintaan $Q_d = 120 - 2P$ memiliki gradien negatif karena jumlah barang yang diminta turun saat harga naik. Sebaliknya, fungsi penawaran $Q_s = 3P - 30$ bergradien positif karena penjual menawarkan lebih banyak produk saat harga meningkat.\\n\\n**2. Model Matematika (Employing)**\\nKeseimbangan pasar atau titik ekuilibrium tercapai ketika jumlah barang yang diminta tepat sama dengan jumlah barang yang ditawarkan, ditulis $Q_d = Q_s$. Susun persamaan linear satu variabel: $120 - 2P = 3P - 30$, sehingga diperoleh $5P = 150$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nNilai harga keseimbangan adalah $P = \\frac{150}{5} = 30$, yang berarti $\\text{Rp}30.000,00$ per botol. Substitusikan ke salah satu fungsi untuk memperoleh kuantitas ekuilibrium $Q = 120 - 2(30) = 60\\text{ botol}$ per hari tanpa kelebihan maupun kekurangan stok.",
+      "kunci_pembeda": "Samakan kedua fungsi ($Q_d = Q_s$ atau $P_d = P_s$) dan perhatikan satuan skala variabel harga sebelum menyimpulkan nilai akhir.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pemodelan Penyusutan Linear dan Penentuan Titik Potong Dua Fungsi Biaya",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 5 stimulus utama: mesin pompa Rp15.000.000,00 menyusut Rp1.500.000,00/tahun, sedangkan Skema Listrik A dan B bersaing tarif. Tentukan batas pemakaian kWh saat biaya kedua skema sama.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nNilai buku mesin pompa berkurang konstan sebesar $\\text{Rp}1.500.000,00$ tiap tahun dari modal awal $\\text{Rp}15.000.000,00$. Sementara itu, biaya listrik bulanan untuk pemakaian $x\\text{ kWh}$ terbagi menjadi dua fungsi linear berbeda gradien dan konstanta.\\n\\n**2. Model Matematika (Employing)**\\nModel penyusutan mesin setelah $t$ tahun adalah $V(t) = 15.000.000 - 1.500.000t$. Untuk biaya listrik, Skema A dimodelkan sebagai $C_A(x) = 400.000 + 1.500x$ dan Skema B sebagai $C_B(x) = 2.500x$. Titik impas terjadi saat $C_A(x) = C_B(x)$, yakni $400.000 + 1.500x = 2.500x$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nSelesaikan persamaan menjadi $1.000x = 400.000$, diperoleh titik potong $x = 400\\text{ kWh}$ dengan biaya $\\text{Rp}1.000.000,00$. Artinya, jika pemakaian bulanan melebihi $400\\text{ kWh}$, Skema A menjadi lebih hemat karena tarif per $\\text{kWh}$-nya lebih rendah.",
+      "kunci_pembeda": "Titik potong dua fungsi biaya ($C_1(x) = C_2(x)$) menjadi batas keputusan: di atas titik potong, pilih fungsi dengan gradien (tarif variabel) lebih kecil.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Pengelola memutuskan membagi area kebun bibit pada poin 3 stimulus utama menjadi **dua petak persegi panjang berdampingan** dengan menambahkan satu sekat kawat lurus yang tegak lurus terhadap tembok kawasan. Luas maksimum total kedua petak kebun bibit tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. $225\\text{ m}^2$",
+        "B. $300\\text{ m}^2$",
+        "C. $337,5\\text{ m}^2$",
+        "D. $400\\text{ m}^2$",
+        "E. $450\\text{ m}^2$"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Karena kebun dibagi dua petak berdampingan yang menempel tembok, terdapat $3$ ruas kawat tegak lurus tembok ($x$) dan $1$ ruas sejajar tembok ($p$), sehingga $3x + p = 60 \\implies p = 60 - 3x$. Luas kebun $L(x) = x(60 - 3x) = 60x - 3x^2$ mencapai maksimum saat $x_p = -\\frac{60}{2(-3)} = 10\\text{ meter}$ dan $p = 30\\text{ meter}$, yakni $L = 10 \\times 30 = 300\\text{ m}^2$. Opsi E keliru karena mengabaikan kawat sekat tengah, sedangkan A dan D salah membagi total kawat.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Berdasarkan data operasional mesin pompa dan tarif listrik pada poin 5 stimulus utama, perhatikan dua kuantitas berikut:\\n- **Kuantitas $P$**: Total biaya listrik bulanan menggunakan Skema A pada pemakaian $600\\text{ kWh}$.\\n- **Kuantitas $Q$**: Besar akumulasi penyusutan nilai mesin pompa selama $10\\text{ bulan}$ pertama pemakaian.\\n\\nHubungan yang tepat antara kuantitas $P$ dan $Q$ adalah ....",
+      "opsi_jawaban": [
+        "A. Kuantitas $P$ lebih besar daripada $Q$",
+        "B. Kuantitas $Q$ lebih besar daripada $P$",
+        "C. Kuantitas $P$ sama dengan $Q$",
+        "D. Informasi yang diberikan tidak cukup untuk menentukan hubungan $P$ dan $Q$"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Hitung kuantitas $P$ menggunakan fungsi biaya Skema A pada $x = 600\\text{ kWh}$: $P = 400.000 + 1.500(600) = \\text{Rp}1.300.000,00$. Hitung kuantitas $Q$ dari laju penyusutan linear $\\text{Rp}1.500.000,00$ per tahun atau $\\text{Rp}125.000,00$ per bulan, sehingga penyusutan selama $10$ bulan adalah $Q = 10 \\times 125.000 = \\text{Rp}1.250.000,00$. Karena $1.300.000 > 1.250.000$, maka $P > Q$. Opsi B terbalik membandingkan hasil, sedangkan C keliru menghitung biaya tetap Skema A.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Misalkan nilai $P$ pada titik keseimbangan pasar madu hutan (poin 4 stimulus utama) dibagi $10$ menjadi ukuran jarak horizontal $x$ (dalam meter) dari nosel air mancur. Ketinggian pancuran air mancur pada poin 1 stimulus utama tepat pada jarak tersebut adalah ... meter. *(Tuliskan jawaban dalam bentuk bilangan bulat saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "3",
+      "bedah_cepat_markdown": "Pertama, tentukan titik ekuilibrium pasar madu: $Q_d = Q_s \\implies 120 - 2P = 3P - 30 \\implies 5P = 150 \\implies P = 30$. Jarak horizontal yang dimaksud adalah $x = \\frac{30}{10} = 3\\text{ meter}$. Kedua, substitusikan $x = 3$ ke persamaan lintasan air mancur $y = -0,2(x - 4)^2 + 3,2$, sehingga diperoleh ketinggian $y = -0,2(3 - 4)^2 + 3,2 = -0,2 + 3,2 = 3\\text{ meter}$.",
+      "visual": null
+    }
+  ]
+}

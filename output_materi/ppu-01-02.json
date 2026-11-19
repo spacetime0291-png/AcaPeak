@@ -1,0 +1,133 @@
+{
+  "kode_subbab": "ppu-01-02",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 1: Makna dan Relasi Kata",
+  "judul_subbab": "Sinonim, Antonim, Homonim, dan Polisemi",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Tim peneliti membedah akar persoalan kemiskinan kota', apakah kata 'akar' bermakna bagian tumbuhan di dalam tanah?",
+      "opsi_cepat": [
+        "Ya, arti kamus selalu berlaku",
+        "Tidak, kata berpolisemi bergeser sesuai konteks"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Pada subtes PPU UTBK, satu kata sering memiliki banyak cabang makna (polisemi) atau kemiripan bentuk (homonim). Peserta yang hanya mengandalkan arti dasar kamus akan keliru menyamakan fungsi kata antarkalimat."
+    },
+    "konsep_inti_markdown": "**Relasi makna kata UTBK** menguji ketepatan menafsirkan hubungan makna antarkata dalam wacana baku KBBI VI:\n\n* **Sinonim Kontekstual:** Padanan kata yang dapat saling menggantikan dalam satu struktur kalimat tanpa mengubah nuansa makna.\n* **Antonim Kontekstual:** Oposisi makna dua kata pada kelas kata dan tataran konteks yang sejajar.\n* **Polisemi vs Homonim:** Polisemi adalah satu kata dengan beragam cabang makna terkait; homonim adalah dua kata berbeda yang kebetulan sama bentuk atau bunyinya.\n* **Medan Makna:** Pengelompokan kata dalam satu ranah konsep atau bidang ilmu.",
+    "radar_jebakan_utbk": [
+      "Memilih sinonim kamus yang memiliki makna dasar mirip, tetapi berbeda kelas kata (misal nomina diganti verba) atau merusak kolokasi kalimat.",
+      "Menyamakan dua kata berhomonim sebagai polisemi hanya karena ejaannya identik, padahal asal kata dan ranah maknanya terpisah."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Sinonim Kontekstual (Mengganti Kata dalam Kalimat Tanpa Mengubah Nuansa Makna)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kementerian Kesehatan berupaya **mengakselerasi** pemerataan fasilitas medis di wilayah terpencil agar kualitas layanan publik meningkat.",
+      "bedah_pola_markdown": "**Bedah Pola Sintaksis & Substitusi:**\nPerhatikan struktur fungsi kalimat berikut: [S] *Kementerian Kesehatan* + [P] *berupaya **mengakselerasi*** + [O] *pemerataan fasilitas medis* + [K] *di wilayah terpencil*. Verba transitif **mengakselerasi** (KBBI VI: mempercepat) wajib digantikan oleh verba berimbuhan *meN-* yang sepadan secara gramatikal, efektif, serta selaras dengan nuansa ragam akademik.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemerintah **mengebut** (*ragam cakapan tidak baku*) pemerataan fasilitas medis. | Pemerintah **mempercepat** (*padanan baku formal*) pemerataan fasilitas medis. |\n| Kebijakan itu **akselerasi** (*salah kelas kata nomina*) distribusi logistik. | Kebijakan itu **mengakselerasi** (*tepat kelas kata verba*) distribusi logistik. |\n\n**Strategi Eksekusi:** Uji setiap opsi pengganti langsung pada slot fungsi [P] atau [O] kalimat soal. Pastikan kelas kata tetap konsisten, penulisan mengikuti EYD V, dan pesan utama kalimat tidak bergeser.",
+      "kunci_pembeda": "Memilih padanan kata dengan kelas kata dan ragam baku yang identik agar substitusi tidak mengubah struktur maupun nuansa kalimat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Antonim atau Lawan Kata Kontekstual dalam Paragraf Argumentatif",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Walaupun kebijakan insentif pajak awalnya diprediksi memicu **ekspansi** industri manufaktur, tingginya suku bunga global justru menyebabkan **kontraksi** produksi.",
+      "bedah_pola_markdown": "**Bedah Pola Oposisi & Konjungsi:**\nPerhatikan hubungan pertentangan dalam struktur: [K] *Walaupun kebijakan insentif memicu **ekspansi** industri*, [S] *tingginya suku bunga* + [P] *menyebabkan* + [O] ***kontraksi*** *produksi*. Kata **ekspansi** (KBBI VI: perluasan) beroposisi langsung dengan **kontraksi** (KBBI VI: penyusutan) pada ranah ekonomi. Konjungsi pertentangan (*walaupun*, *namun*, *sebaliknya*) menjadi penanda wajib hadirnya lawan kata kontekstual.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Lawan kata **ekspansi** diartikan sebagai **inflasi** (*kenaikan harga umum*). | Lawan kata **ekspansi** dalam konteks pertumbuhan adalah **kontraksi** (*penyusutan*). |\n| Penulisan lawan kata **statis** ditulis **dinamika** (*kelas kata nomina*). | Penulisan lawan kata **statis** (*adjektiva*) yang sejajar adalah **dinamis** (*adjektiva*). |\n\n**Strategi Eksekusi:** Temukan kata kunci penanda kontras antarklausa, tentukan medan makna wacana (ekonomi, sains, sosial), lalu pilih lawan kata yang sejajar kelas katanya.",
+      "kunci_pembeda": "Menentukan oposisi makna berdasarkan konjungsi pertentangan wacana dan kesejajaran kelas kata pada konteks bidang ilmu tertentu.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Polisemi (Menentukan Kalimat Lain yang Menggunakan Kata X dengan Makna yang Sama)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Lembaga survei nasional **menurunkan** tim peneliti lapangan untuk memverifikasi akurasi data kemiskinan ekstrem di kawasan pesisir.",
+      "bedah_pola_markdown": "**Bedah Pola Cabang Makna Polisemi:**\nAnalisis fungsi kalimat stimulus: [S] *Lembaga survei nasional* + [P] ***menurunkan*** + [O] *tim peneliti lapangan* + [K] *untuk memverifikasi data*. Kata **menurunkan** berpolisemi karena memiliki satu akar makna dasar yang bercabang sesuai konteks objek [O] yang mengikutinya. Pada stimulus, **menurunkan** bermakna *mengirimkan atau menugaskan personel ke lapangan*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Disamakan dengan: *Bank sentral **menurunkan** suku bunga acuan* (*mengurangi nilai*). | Sejajar dengan: *Kementerian **menurunkan** tim relawan ke lokasi bencana* (*menugaskan*). |\n| Disamakan dengan: *Petugas **menurunkan** bendera merah putih* (*memindahkan ke bawah*). | Sejajar dengan: *Kepolisian **menurunkan** personel pengamanan* (*mengerahkan petugas*). |\n\n**Strategi Eksekusi:** Ubah kata target menjadi definisi frasa pendek sesuai objek [O] di stimulus, lalu uji definisi frasa tersebut ke seluruh kalimat opsi.",
+      "kunci_pembeda": "Menguji kesamaan cabang makna satu kata dengan membandingkan jenis objek dan konteks kalimat yang menyertainya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Homonim, Homofon, dan Homograf dalam Perbandingan Dua Kalimat",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Kalimat (1): *Rapat dewan direksi membahas **rapat** barisan menghadapi krisis global.* Kalimat (2): *Pejabat **teras** kementerian duduk di **teras** gedung utama.*",
+      "bedah_pola_markdown": "**Bedah Pola Kemiripan Bentuk & Bunyi:**\nPerhatikan perbedaan tiga relasi bentuk kata dalam KBBI VI. **Homonim** memiliki ejaan dan lafal sama tetapi makna terpisah (*rapat* 'pertemuan' vs *rapat* 'erat'). **Homograf** memiliki ejaan sama tetapi lafal dan makna berbeda (*teras* /təras/ 'inti/pejabat utama' vs *teras* /téras/ 'bagian depan rumah'). **Homofon** memiliki lafal sama tetapi ejaan berbeda (*massa* vs *masa*).\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Atlet itu mencetak **seri** (lafal /səri/) pada **seri** (lafal /séri/) terakhir* dianggap satu makna. | Kata **seri** merupakan **homograf** dengan pelafalan dan arti berbeda sesuai KBBI VI. |\n| Penulisan *kerumunan **masa*** (*waktu*) tertukar dengan ***massa*** (*kumpulan orang*). | Penulisan baku **homofon** membedakan **massa** (*jumlah/orang*) dan **masa** (*waktu*). |\n\n**Strategi Eksekusi:** Periksa lafal pelafalan kata dan ejaan baku KBBI VI pada kedua kalimat pembanding untuk membedakan entri kamus yang berlainan.",
+      "kunci_pembeda": "Membedakan dua entri kata terpisah yang kebetulan berbagi kesamaan ejaan (homograf), bunyi (homofon), atau keduanya (homonim).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pengelompokan Kata Berdasarkan Kemiripan Medan Makna dalam Satu Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam ekosistem perbankan digital, nasabah kini memantau **likuiditas**, **portofolio**, **dividen**, dan **imbal hasil** melalui satu aplikasi terpadu.",
+      "bedah_pola_markdown": "**Bedah Pola Rumpun Medan Makna:**\nPerhatikan rincian objek dalam struktur: [S] *nasabah* + [P] *memantau* + [O] ***likuiditas**, **portofolio**, **dividen**, dan **imbal hasil***. Keempat nomina tersebut berada dalam satu **medan makna** (rumpun konsep keuangan dan investasi). Soal UTBK sering meminta peserta menemukan kata yang satu medan makna dengan kata kunci bacaan atau mengeliminasi satu kata penyusup dari kelompok.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Memasukkan kata **inflasi** (*makroekonomi*) ke kelompok instrumen investasi (*saham, obligasi, **dividen***). | Mengelompokkan *saham, obligasi, **dividen**, **portofolio*** sebagai satu medan makna investasi. |\n| Kata serapan bidang medis ditulis tidak baku: ***diagnosa*** dan ***analisa*** laboratorium. | Kata serapan satu medan makna medis ditulis baku sesuai KBBI VI: ***diagnosis*** dan ***analisis***. |\n\n**Strategi Eksekusi:** Identifikasi payung besar tema paragraf, kelompokkan kata yang berbagi komponen makna spesifik, lalu coret kata yang berbeda ranah.",
+      "kunci_pembeda": "Mengelompokkan kata-kata yang bernaung di bawah satu payung ranah konsep atau bidang ilmu yang sama dalam wacana.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Penerapan teknologi irigasi tetes terbukti mampu **mengoptimalkan** penggunaan air di lahan pertanian kering. (2) Efisiensi ini menjadi solusi strategis di tengah **kelangkaan** pasokan air bersih yang kerap melanda wilayah sentra pangan saat musim kemarau panjang.\n\nKata **mengoptimalkan** pada kalimat (1) dapat digantikan dengan kata .... tanpa mengubah makna kalimat, sedangkan lawan kata dari **kelangkaan** pada kalimat (2) dalam konteks bacaan adalah ....",
+      "opsi_jawaban": [
+        "A. memaksimalkan; kelimpahan",
+        "B. memperbanyak; kekeringan",
+        "C. meningkatkan; keterbatasan",
+        "D. memanfaatkan; ketersediaan",
+        "E. menyempurnakan; kekurangan"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Pada kalimat (1), verba **mengoptimalkan** (KBBI VI: menjadikan paling baik atau paling tinggi) sepadan secara gramatikal dan nuansa makna dengan verba **memaksimalkan** tanpa mengubah struktur kalimat. Sementara itu, nomina **kelangkaan** pada kalimat (2) bermakna kondisi sangat terbatas atau sulit didapat sehingga berlawanan makna secara kontekstual dengan nomina **kelimpahan** (kondisi berlebih atau banyak). **Opsi B**, **C**, dan **E** justru memuat sinonim atau makna berdekatan dengan kelangkaan, sedangkan **opsi D** menggeser nuansa makna optimal. Jawaban tepat adalah **A**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Pemerintah pusat berencana **membuka** jalur distribusi logistik baru guna menekan disparitas harga bahan pokok di kawasan timur Indonesia.\"\n\nKata **membuka** pada kalimat di atas memiliki makna yang PALING SEPADAN dengan kata bercetak tebal pada kalimat ....",
+      "opsi_jawaban": [
+        "A. Petugas bendungan **membuka** pintu air utama saat debit sungai melampaui batas aman.",
+        "B. Kementerian Perdagangan resmi **membuka** akses ekspor komoditas olahan laut ke pasar Eropa.",
+        "C. Peneliti lapangan **membuka** kemasan sampel tanah sebelum memasukkannya ke alat uji.",
+        "D. Moderator **membuka** sesi diskusi panel dengan membacakan profil singkat para narasumber.",
+        "E. Warga pesisir mulai **membuka** lahan tambak udang baru di sekitar muara sungai."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat stimulus, verba **membuka** diikuti objek abstrak berupa *jalur distribusi logistik*, sehingga bermakna kontekstual *menyediakan atau merintis akses jaringan baru*. Makna serupa ditemukan pada **opsi B**, di mana kata **membuka** diikuti objek *akses ekspor* dengan arti menyediakan kesempatan atau jalan masuk perdagangan. Sebaliknya, **opsi A** dan **C** bermakna fisik (menyingkap penutup), **opsi D** bermakna memulai acara, dan **opsi E** bermakna menggarap tanah. Jawaban tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut!\n\n> (1) Percepatan transisi menuju energi bersih mendorong industri otomotif mengembangkan kendaraan listrik berbasis baterai litium. (2) Inovasi tersebut bertujuan menekan **emisi** karbon sekaligus mengurangi ketergantungan pada bahan bakar fosil. (3) Selain itu, pembangunan stasiun pengisian daya cepat terus diperluas di berbagai ruas jalan tol utama.\n\nKata yang memiliki kesamaan ranah makna dengan kata **emisi** pada kalimat (2) dalam konteks pelestarian lingkungan adalah ....",
+      "opsi_jawaban": [
+        "A. residu",
+        "B. baterai",
+        "C. inovasi",
+        "D. baterai litium",
+        "E. distribusi"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Dalam konteks pelestarian lingkungan pada teks tersebut, kata **emisi** (KBBI VI: pancaran atau pembuangan zat sisa pembakaran ke udara) berada dalam satu medan makna zat buangan atau pencemar lingkungan bersama kata **residu** (ampas atau sisa buangan proses industri/kimia). Sebaliknya, **baterai** dan **baterai litium** termasuk medan makna komponen penyimpanan energi, **inovasi** merujuk pada pembaruan teknologi, dan **distribusi** merujuk pada penyaluran barang. Jawaban tepat adalah **A**.",
+      "visual": null
+    }
+  ]
+}

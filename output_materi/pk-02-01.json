@@ -1,0 +1,118 @@
+{
+  "kode_subbab": "pk-02-01",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 2: Fungsi dan Barisan",
+  "judul_subbab": "Relasi, Domain, dan Range Fungsi",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui $f(x) = \\frac{x^2 - 4}{x - 2}$ dan $g(x) = x + 2$. Apakah kedua fungsi ini identik pada seluruh bilangan real?",
+      "opsi_cepat": [
+        "Ya, karena bentuk aljabarnya sama",
+        "Tidak, karena domain keduanya berbeda"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Penyederhanaan aljabar tidak menghapus syarat domain awal. Fungsi $f(x)$ tidak terdefinisi di $x = 2$, sedangkan $g(x)$ terdefinisi di seluruh bilangan real."
+    },
+    "konsep_inti_markdown": "Fungsi $f: A \\rightarrow B$ memetakan setiap anggota domain $A$ ke tepat satu anggota kodomain $B$.\n- **Domain Alami ($D_f$):** Himpunan input $x \\in \\mathbb{R}$ agar $f(x)$ terdefinisi real.\n- **Range ($R_f$):** Himpunan semua output $y = f(x)$ dari anggota $D_f$.\n- **Syarat Kritis:** Penyebut $\\neq 0$ dan ekspresi di dalam akar genap $\\ge 0$.\n- **Simetri & Invers:** Genap jika $f(-x) = f(x)$, ganjil jika $f(-x) = -f(x)$, serta punya invers jika satu-satu.",
+    "radar_jebakan_utbk": [
+      "Mencoret faktor pembuat nol pada pembilang dan penyebut sebelum menentukan syarat domain awal ($g(x) \\neq 0$).",
+      "Menghitung range fungsi kuadrat pada domain terbatas hanya dengan mensubstitusi kedua ujung interval tanpa mengecek letak titik puncak ($x_p$)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Syarat Domain Alami Fungsi Akar dan Fungsi Pecahan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan daerah asal alami (domain) dari fungsi $f(x) = \\frac{\\sqrt{x + 3}}{x^2 - 4}$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nAgar $f(x)$ bernilai real, dua syarat harus terpenuhi secara bersamaan (irisan): pembilang dalam akar tidak boleh negatif ($x + 3 \\ge 0 \\implies x \\ge -3$) dan penyebut pecahan tidak boleh nol ($x^2 - 4 \\neq 0 \\implies x \\neq 2$ dan $x \\neq -2$). Dengan mengiriskan kedua syarat tersebut pada garis bilangan, diperoleh domain alami $D_f = \\{x \\in \\mathbb{R} \\mid x \\ge -3, x \\neq -2, x \\neq 2\\}$.\n\n**(2) Jalur Taktis UTBK**\nGunakan metode eliminasi opsi dengan uji titik ekstrem dan pembuat nol penyebut dalam kurang dari 30 detik. Cek pembuat nol penyebut terlebih dahulu: substitusi $x = 2$ dan $x = -2$ menghasilkan penyebut nol, sehingga opsi yang memuat kedua angka ini langsung gugur. Selanjutnya uji batas akar dengan memasukkan $x = -4$ (menghasilkan $\\sqrt{-1}$, tidak real), maka opsi yang mencakup $x < -3$ otomatis salah.",
+      "kunci_pembeda": "Jika akar genap berada di posisi penyebut ($\\frac{1}{\\sqrt{g(x)}}$), syaratnya berubah ketat menjadi $g(x) > 0$ tanpa tanda sama dengan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Penentuan Daerah Hasil (Range) Fungsi Kuadrat dan Fungsi Rasional pada Domain Terbatas",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui fungsi kuadrat $f(x) = x^2 - 4x + 7$ dengan daerah asal $D_f = \\{x \\mid 0 \\le x \\le 5\\}$. Tentukan daerah hasil ($R_f$) fungsi tersebut.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUntuk fungsi kuadrat $f(x) = ax^2 + bx + c$ pada interval tertutup $[p, q]$, tentukan absis titik puncak $x_p = -\\frac{b}{2a} = -\\frac{-4}{2(1)} = 2$. Karena $x_p = 2$ berada di dalam interval $[0, 5]$ dan koefisien $a = 1 > 0$ (parabola terbuka ke atas), nilai minimum absolut terjadi di puncak: $y_{\\min} = f(2) = 2^2 - 4(2) + 7 = 3$. Nilai maksimum diperoleh dari salah satu ujung interval: $f(0) = 7$ dan $f(5) = 12$. Jadi, $R_f = \\{y \\mid 3 \\le y \\le 12\\}$.\n\n**(2) Jalur Taktis UTBK**\nJangan langsung memasukkan ujung interval $x = 0$ dan $x = 5$! Cek posisi $x_p = -\\frac{b}{2a}$ terlebih dahulu. Jika $x_p$ masuk dalam domain, nilai $f(x_p)$ wajib menjadi salah satu batas range. Bandingkan jarak ujung interval ke $x_p$: karena $5$ lebih jauh dari $2$ dibanding $0$, $f(5)$ pasti menjadi batas maksimum tanpa perlu menghitung $f(0)$.",
+      "kunci_pembeda": "Untuk fungsi rasional linear $f(x) = \\frac{ax + b}{cx + d}$ pada domain terbatas yang tidak memuat asimtot tegak, fungsi bersifat monoton sehingga range cukup dicari dengan mensubstitusi kedua ujung domain.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Evaluasi Nilai Fungsi Sepotong-Sepotong (Piecewise Function) dan Fungsi Implisit",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui $f(2x - 1) = x^2 + 3x - 2$ untuk $x \\le 2$, dan $f(2x - 1) = 4x - 1$ untuk $x > 2$. Tentukan nilai $f(3) + f(5)$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nPada fungsi implisit berbentuk $f(g(x)) = h(x)$, samakan ekspresi di dalam kurung dengan nilai input yang diminta untuk menemukan nilai variabel $x$ yang bersesuaian. Untuk mencari $f(3)$, selesaikan $2x - 1 = 3 \\implies 2x = 4 \\implies x = 2$. Karena $x = 2$ memenuhi syarat cabang pertama ($x \\le 2$), gunakan rumus pertama: $f(3) = 2^2 + 3(2) - 2 = 8$. Untuk mencari $f(5)$, selesaikan $2x - 1 = 5 \\implies x = 3$. Karena $x = 3 > 2$, gunakan rumus kedua: $f(5) = 4(3) - 1 = 11$. Maka $f(3) + f(5) = 19$.\n\n**(2) Jalur Taktis UTBK**\nHindari mencari rumus eksplisit $f(x)$ dengan invers karena membuang waktu dan rawan salah tanda. Langsung cari nilai $x$ pemicu untuk masing-masing target input, lalu cocokan nilai $x$ tersebut (bukan nilai inputnya) ke syarat pertidaksamaan cabang fungsi.",
+      "kunci_pembeda": "Syarat pertidaksamaan pada fungsi sepotong-sepotong mengikat variabel parameter $x$ pada definisi fungsi, bukan nilai akhir di dalam kurung $f(\\dots)$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Sifat Fungsi Satu-Satu (Syarat Punya Invers), Fungsi Genap, dan Fungsi Ganjil dari Grafik atau Rumus",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Diberikan empat fungsi: (1) $f(x) = x^3 + 2x$, (2) $g(x) = x^4 - 3x^2$, (3) $h(x) = x^2 + 1$ untuk $x \\ge 0$, dan (4) $k(x) = |x|$. Manakah fungsi yang memiliki invers pada domainnya?",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nSuatu fungsi memiliki invers jika dan hanya jika bersifat satu-satu (bijektif pada rangenya), artinya setiap nilai $y$ berasal dari tepat satu nilai $x$ (lolos uji garis horizontal). Fungsi $f(x) = x^3 + 2x$ selalu naik karena turunannya $f'(x) = 3x^2 + 2 > 0$, sehingga satu-satu. Fungsi $g(x) = x^4 - 3x^2$ dan $k(x) = |x|$ adalah fungsi genap ($f(-x) = f(x)$) yang simetris terhadap sumbu-$y$, sehingga dua input berlawanan tanda menghasilkan output sama (bukan satu-satu). Namun, $h(x) = x^2 + 1$ dibatasi pada $x \\ge 0$ sehingga monoton naik dan memiliki invers.\n\n**(2) Jalur Taktis UTBK**\nSetiap fungsi genap pada domain simetris $(-a, a)$ pasti tidak memiliki invers karena $f(-c) = f(c)$. Uji cepat ke-satu-satuan cukup dengan memasukkan dua bilangan berlawanan seperti $x = 1$ dan $x = -1$: jika hasilnya sama, fungsi langsung gugur.",
+      "kunci_pembeda": "Fungsi genap simetris terhadap sumbu-$y$ dan tidak pernah satu-satu pada domain simetris, sedangkan fungsi ganjil simetris terhadap titik asal $(0,0)$ dan sering kali satu-satu.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Diketahui fungsi $f(x) = \\sqrt{6 - 2x}$ dan $g(x) = x^2 - 4x + 5$ dengan daerah asal $g$ dibatasi pada $1 \\le x \\le 4$. Manakah pernyataan berikut yang benar?\n\n(1) Daerah asal alami fungsi $f$ adalah $\\{x \\in \\mathbb{R} \\mid x \\le 3\\}$.\n(2) Bilangan $3$ termasuk dalam daerah hasil fungsi $f$.\n(3) Nilai minimum fungsi $g$ pada domainnya adalah $1$.\n(4) Daerah hasil fungsi $g$ adalah $\\{y \\in \\mathbb{R} \\mid 2 \\le y \\le 5\\}$.",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pilihan benar."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Syarat domain $f$: $6 - 2x \\ge 0 \\implies x \\le 3$ **(1 Benar)**, sehingga $R_f = [0, \\infty)$ yang memuat $3$ saat $x = -1,5$ **(2 Benar)**. Pada $g(x)$, absis puncak $x_p = -\\frac{-4}{2} = 2$ berada dalam domain $[1, 4]$, sehingga nilai minimumnya $g(2) = 2^2 - 4(2) + 5 = 1$ **(3 Benar)**. Nilai maksimum di $g(4) = 5$, maka $R_g = [1, 5]$; pernyataan **(4) Salah** karena hanya memakai ujung interval $g(1) = 2$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Kecukupan Data",
+      "pertanyaan_markdown": "Diketahui fungsi $f(x) = ax^3 + bx^2 + cx$ dengan $a, b, c$ bilangan real dan $a \\neq 0$. Apakah fungsi $f$ merupakan fungsi ganjil?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut.\n(1) $b = 0$\n(2) $f(2) + f(-2) = 0$",
+      "opsi_jawaban": [
+        "A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C. DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.",
+        "D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.",
+        "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Fungsi $f$ ganjil jika $f(-x) = -f(x)$, yang berarti $-ax^3 + bx^2 - cx = -ax^3 - bx^2 - cx \\iff b = 0$. Dari **(1)**, diketahui langsung $b = 0$ sehingga $f$ pasti fungsi ganjil (cukup). Dari **(2)**, $f(2) + f(-2) = (8a + 4b + 2c) + (-8a + 4b - 2c) = 8b = 0$, yang juga memaksa $b = 0$ sehingga $f$ pasti ganjil (cukup). Masing-masing pernyataan saja cukup.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Diketahui fungsi $f$ didefinisikan sebagai $f(x - 2) = x^2 - 6x + 14$ untuk $x \\le 4$, dan $f(x - 2) = 3x - 5$ untuk $x > 4$. Jika $m$ adalah nilai minimum dari $f(x - 2)$ pada interval $1 \\le x \\le 4$, tentukan nilai dari $m + f(3)$.",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "15",
+      "bedah_cepat_markdown": "Pada interval $1 \\le x \\le 4$, berlaku cabang pertama $x^2 - 6x + 14$. Absis titik puncak $x_p = -\\frac{-6}{2} = 3$ berada dalam interval tersebut, sehingga nilai minimum $m = 3^2 - 6(3) + 14 = 5$. Untuk mencari $f(3)$, samakan $x - 2 = 3 \\implies x = 5$. Karena $x = 5 > 4$, gunakan cabang kedua sehingga $f(3) = 3(5) - 5 = 10$. Jadi, $m + f(3) = 5 + 10 = 15$.",
+      "visual": null
+    }
+  ]
+}

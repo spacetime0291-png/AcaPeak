@@ -1,0 +1,123 @@
+{
+  "kode_subbab": "lbi-02-02",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 2: Inferensi dan Evaluasi Teks",
+  "judul_subbab": "Hubungan Antarparagraf dan Antarteks",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Teks 1 memprediksi baterai kendaraan listrik bekas akan menjadi limbah beracun dalam 8 tahun, sedangkan Teks 2 menyebut baterai itu masih menyimpan 80% daya. Apakah Teks 2 membantah seluruh isi Teks 1?",
+      "opsi_cepat": [
+        "Ya, Teks 2 menyangkal degradasi baterai",
+        "Tidak, Teks 2 menawarkan solusi pemanfaatan ulang"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Teks 2 tidak membantah bahwa baterai terdegradasi untuk kendaraan, melainkan meluruskan anggapan bahwa baterai bekas langsung menjadi limbah dengan menghadirkan opsi pemanfaatan kedua (second-life)."
+    },
+    "konsep_inti_markdown": "Hubungan antarparagraf dan antarteks menguji kemampuan memetakan fungsi logika gagasan:\n- **Relasi Antarparagraf**: Pahami penanda transisi (*namun*, *akibatnya*, *misalnya*) untuk menentukan peran paragraf kedua sebagai penjelas, kontradiksi, contoh, akibat, atau solusi.\n- **Relasi Antarteks (Teks 1 vs Teks 2)**: Identifikasi irisan topik, bandingkan sikap penulis (kritis vs solutif), sintesis kesimpulan gabungan tanpa melampaui premis, serta uji apakah data Teks 2 memperkuat, memperlemah, atau merinci klaim Teks 1.",
+    "radar_jebakan_utbk": [
+      "Menyimpulkan pertentangan total antarteks padahal Teks 2 hanya mempersempit asumsi atau menawarkan solusi atas masalah di Teks 1.",
+      "Memilih opsi sintesis yang menggabungkan angka antarteks secara keliru atau menambahkan kata ekstrem (seluruhnya, pasti gagal) di luar premis."
+    ],
+    "stimulus_utama_bersama": "**Teks 1**\n\nAkselerasi adopsi kendaraan listrik berbasis baterai (KBLBB) di Indonesia diproyeksikan mampu menekan emisi karbon sektor transportasi darat hingga 28% pada tahun 2030. Pemerintah menggulirkan berbagai insentif fiskal berupa pembebasan Pajak Penjualan atas Barang Mewah (PPnBM), potongan pajak daerah, serta subsidi pembelian unit baru guna mempercepat pergeseran konsumsi masyarakat dari kendaraan berbahan bakar fosil menuju teknologi energi bersih.\n\nNamun, lonjakan populasi kendaraan listrik tersebut memicu ancaman ekologis baru yang kerap luput dari kalkulasi kebijakan, yakni akumulasi limbah baterai litium-ion bekas pakai. Baterai kendaraan listrik umumnya mengalami degradasi kapasitas hingga 20% setelah pemakaian delapan tahun sehingga tidak lagi optimal untuk mobilitas harian. Tanpa ekosistem daur ulang terpadu, ribuan ton baterai bekas berpotensi mencemari air tanah akibat kebocoran logam berat beracun seperti kobalt dan nikel.\n\n**Teks 2**\n\nStudi Pusat Riset Teknologi Material Maju terhadap 120 unit baterai litium bekas menunjukkan bahwa 78% sel baterai yang dipensiunkan dari kendaraan listrik masih menyimpan kapasitas daya efektif sebesar 75% hingga 80%. Temuan empiris ini membuktikan bahwa baterai pascapakai kendaraan tidak serta-merta berubah menjadi limbah berbahaya, melainkan aset energi sekunder yang sangat layak dialihfungsikan sebagai sistem penyimpanan energi stasioner untuk pembangkit listrik tenaga surya (PLTS) skala komunal.\n\nMelalui skema pemanfaatan ulang (*second-life battery*) tersebut, siklus masa pakai baterai dapat diperpanjang hingga sepuluh tahun tambahan sebelum memasuki tahap akhir ekstraksi hidrometalurgi. Pengujian lapangan di tiga kawasan perdesaan terpencil membuktikan integrasi baterai bekas ini mampu menurunkan biaya investasi penyimpanan daya PLTS sebesar 42% dibandingkan pengadaan baterai baru, sekaligus menunda penumpukan limbah logam berat secara signifikan.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Menentukan Fungsi Retoris Paragraf X terhadap Paragraf Y (Penjelas, Contoh Kasus, Kontradiksi, Solusi, Akibat)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Hubungan Paragraf 2 Teks 1 terhadap Paragraf 1 Teks 1.",
+      "bedah_pola_markdown": "**1. Teknik Scanning Penanda Transisi**\nPindai kalimat pertama Paragraf 2 Teks 1: *\"Namun, lonjakan populasi kendaraan listrik tersebut memicu ancaman ekologis baru...\"* Konjungsi antarkalimat **\"Namun\"** menandai pergeseran arah argumen dari dampak positif (tekan emisi karbon di Paragraf 1) menuju sisi negatif (ancaman limbah baterai).\n\n**2. Pemetaan Hubungan & Parafrasa**\nParagraf 1 menyoroti manfaat kebijakan kendaraan listrik, sedangkan Paragraf 2 menguraikan risiko lingkungan yang menyertainya. Maka, Paragraf 2 berfungsi **mengontraskan dampak negatif** atau **memaparkan konsekuensi lanjutan** atas program di Paragraf 1. Opsi benar biasanya menggunakan kata kerja seperti *mempertentangkan risiko*, *mengungkap dampak ikutan*, atau *mengkritisi sisi lain*.\n\n**3. Deteksi Opsi Jebakan**\nHindari opsi yang menyebut Paragraf 2 sebagai *solusi* (belum ada penyelesaian di Teks 1) atau *contoh kasus* (Paragraf 2 membahas masalah baru, bukan ilustrasi insentif pajak).",
+      "kunci_pembeda": "Fokus pada konjungsi awal paragraf dan perubahan arah gagasan utama di dalam satu teks yang sama.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Membandingkan Persamaan dan Perbedaan Sudut Pandang antara Teks 1 dan Teks 2",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Sikap penulis Teks 1 (Paragraf 2) dibandingkan dengan sikap penulis Teks 2 (Paragraf 1).",
+      "bedah_pola_markdown": "**1. Teknik Skimming Irisan & Sikap**\nPindai subjek utama kedua teks: keduanya membahas **baterai kendaraan listrik pascapakai**. Selanjutnya, tangkap diksi evaluatif tiap penulis. Teks 1 menggunakan frasa *\"ancaman ekologis baru\"* dan *\"mencemari air tanah\"* (sudut pandang **kritis-pesimistis** terhadap risiko limbah). Sebaliknya, Teks 2 memakai frasa *\"aset energi sekunder\"* dan *\"layak dialihfungsikan\"* (sudut pandang **solutif-optimistis** berbasis pemanfaatan ulang).\n\n**2. Pola Parafrasa Opsi Benar**\nOpsi jawaban tepat selalu memuat dua elemen: **persamaan topik** (pengelolaan baterai litium pascapakai) dan **perbedaan fokus** (Teks 1 menyoroti bahaya pencemaran lingkungan, sedangkan Teks 2 menekankan nilai guna ekonomi dan teknis).\n\n**3. Deteksi Opsi Jebakan**\nWaspadai opsi yang mengklaim kedua teks memiliki tujuan sama persis atau opsi ekstrem yang menyebut Teks 2 menolak penggunaan kendaraan listrik.",
+      "kunci_pembeda": "Bandingkan diksi bernada masalah versus solusi pada objek kajian yang sama di kedua teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Sintesis Informasi: Menggabungkan Temuan Teks 1 dan Teks 2 untuk Menarik Kesimpulan Baru",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Gabungan durasi pakai baterai di Teks 1 (Paragraf 2) dan skema second-life di Teks 2 (Paragraf 2).",
+      "bedah_pola_markdown": "**1. Teknik Scanning Premis Komplementer**\nKumpulkan dua potongan fakta yang saling melengkapi dari masing-masing teks. Dari Teks 1 Paragraf 2, ambil fakta bahwa baterai kendaraan mengalami degradasi setelah **8 tahun**. Dari Teks 2 Paragraf 2, ambil temuan bahwa skema *second-life battery* memperpanjang masa pakai hingga **10 tahun tambahan** untuk PLTS komunal.\n\n**2. Formulasi Kesimpulan Baru (A + B $\\rightarrow$ C)**\nGabungkan kedua premis secara logis: baterai kendaraan listrik tidak langsung berakhir menjadi limbah pada tahun ke-8, melainkan dapat dimanfaatkan hingga total 18 tahun sekaligus menekan biaya penyimpanan daya PLTS sebesar 42% sebelum didaur ulang.\n\n**3. Deteksi Opsi Jebakan**\nEliminasi opsi yang hanya merangkum satu teks saja (bukan sintesis) atau opsi yang melompat terlalu jauh, seperti menyimpulkan *\"limbah logam berat hilang sepenuhnya\"* (Teks 2 hanya menyebut *menunda penumpukan*).",
+      "kunci_pembeda": "Kesimpulan sintesis wajib menggabungkan minimal satu premis kunci Teks 1 dan satu premis kunci Teks 2 secara valid.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Evaluasi Bagaimana Data di Teks 2 Memperkuat, Memperlemah, atau Merinci Klaim di Teks 1",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan: Klaim Teks 1 (Paragraf 2) versus data riset 120 unit baterai di Teks 2 (Paragraf 1).",
+      "bedah_pola_markdown": "**1. Teknik Scanning Klaim vs Bukti Empiris**\nKunci klaim spesifik di Teks 1 Paragraf 2: *\"akumulasi limbah baterai litium-ion bekas pakai\"* karena baterai tidak lagi optimal setelah 8 tahun. Lalu pindai data kuantitatif di Teks 2 Paragraf 1: riset terhadap **120 unit baterai** membuktikan **78% sel baterai** masih memiliki kapasitas daya **75% hingga 80%**.\n\n**2. Evaluasi Dampak Logis Data**\nData di Teks 2 **memperlemah asumsi implisit** Teks 1 bahwa baterai yang dipensiunkan dari kendaraan langsung berubah menjadi limbah tak berguna. Sekaligus, data tersebut **merinci kondisi teknis** sisa kapasitas baterai pascapakai.\n\n**3. Deteksi Opsi Jebakan**\nJangan terjebak opsi yang menyatakan data Teks 2 *memperkuat klaim pencemaran air tanah* atau *membantah terjadinya degradasi 20%* (angka sisa 80% justru selaras dengan degradasi 20%).",
+      "kunci_pembeda": "Uji apakah angka/fakta di Teks 2 mendukung, mengoreksi asumsi, atau memberi detail teknis pada klaim Teks 1.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan Teks 1, apakah fungsi retoris Paragraf 2 terhadap Paragraf 1?",
+      "opsi_jawaban": [
+        "A. Memberikan contoh konkret keberhasilan pemberian insentif pembebasan PPnBM kendaraan listrik.",
+        "B. Menjelaskan mekanisme teknis pengurangan emisi karbon sektor transportasi darat hingga 28%.",
+        "C. Mengontraskan optimisme kebijakan transisi energi dengan risiko ancaman ekologis yang ditimbulkannya.",
+        "D. Menawarkan solusi pengelolaan limbah baterai litium-ion melalui pembangunan ekosistem daur ulang.",
+        "E. Menyimpulkan bahwa program subsidi kendaraan listrik gagal menurunkan polusi udara nasional."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Paragraf 1 memaparkan manfaat dan insentif kendaraan listrik untuk menekan emisi, sedangkan Paragraf 2 diawali konjungsi pertentangan *\"Namun\"* yang menguraikan ancaman limbah baterai beracun. Artinya, Paragraf 2 mengontraskan optimisme kebijakan dengan risiko ekologisnya (**C**). Opsi A dan B keliru karena Paragraf 2 tidak membahas PPnBM maupun teknis emisi. Opsi D salah karena Teks 1 hanya menyebut ketiadaan ekosistem daur ulang sebagai masalah, bukan solusi. Opsi E menyimpang dari premis.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Simpulan manakah yang paling tepat dihasilkan dari sintesis informasi antara Teks 1 dan Teks 2?",
+      "opsi_jawaban": [
+        "A. Seluruh baterai kendaraan listrik bekas di Indonesia wajib dialihfungsikan menjadi PLTS komunal agar pencemaran air tanah hilang sepenuhnya.",
+        "B. Skema pemanfaatan ulang baterai pascapakai kendaraan dapat memperpanjang usia guna hingga total 18 tahun sekaligus menekan biaya investasi PLTS komunal.",
+        "C. Pemberian insentif fiskal kendaraan listrik terbukti menurunkan biaya investasi penyimpanan daya PLTS sebesar 42% di kawasan perdesaan.",
+        "D. Baterai kendaraan listrik yang terdegradasi hingga 20% tidak lagi memiliki nilai ekonomis sehingga harus langsung menjalani ekstraksi hidrometalurgi.",
+        "E. Pengujian lapangan di tiga desa membuktikan bahwa emisi karbon transportasi darat turun 28% berkat pemanfaatan baterai bekas."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Sintesis menggabungkan fakta Teks 1 (baterai kendaraan terdegradasi setelah 8 tahun) dan Teks 2 (skema *second-life* menambah masa pakai 10 tahun dan menurunkan biaya investasi PLTS 42%), menghasilkan simpulan total usia guna 18 tahun dengan efisiensi biaya PLTS (**B**). Opsi A ekstrem (*seluruhnya*, *hilang sepenuhnya*). Opsi C dan E mencampuradukkan angka antarteks secara keliru. Opsi D bertentangan dengan Teks 2 yang menyebut baterai bekas layak dialihfungsikan sebelum ekstraksi.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Evaluasilah hubungan antara data pada Teks 2 dan klaim pada Teks 1 dalam tabel berikut, lalu tentukan nilai kebenaran setiap pernyataan!\n\n| Pernyataan Evaluasi | Benar | Salah |\n| :--- | :---: | :---: |\n| 1. Temuan 78% sel baterai bekas masih menyimpan daya 75%–80% memperlemah anggapan di Teks 1 bahwa baterai pascapakai langsung menjadi limbah tak berguna. | | |\n| 2. Data sisa kapasitas daya 80% pada Teks 2 membantah klaim Teks 1 mengenai terjadinya degradasi kapasitas baterai sebesar 20% setelah delapan tahun. | | |\n| 3. Pengujian lapangan skema *second-life battery* di Teks 2 merinci langkah teknis mitigasi untuk menunda risiko pencemaran logam berat yang dikhawatirkan Teks 1. | | |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Benar",
+        "B. Benar - Salah - Benar",
+        "C. Benar - Salah - Salah",
+        "D. Salah - Benar - Benar",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "- **Pernyataan 1 (Benar):** Sisa kapasitas 75%–80% membuktikan baterai bekas masih layak guna sebagai aset sekunder, sehingga memperlemah asumsi langsung menjadi limbah.\n- **Pernyataan 2 (Salah):** Sisa daya 80% justru konsisten (selaras) dengan penurunan/degradasi 20% dari kapasitas awal 100%, bukan membantahnya.\n- **Pernyataan 3 (Benar):** Skema *second-life battery* untuk PLTS komunal merinci solusi praktis menunda penumpukan limbah logam berat di Teks 1.\nUrutan tepat adalah **Benar - Salah - Benar** (**B**).",
+      "visual": null
+    }
+  ]
+}

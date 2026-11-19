@@ -1,0 +1,133 @@
+{
+  "kode_subbab": "lbe-03-04",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 3: Inference, Tone, & Multi-Text",
+  "judul_subbab": "Comparing Two Related Texts (Paired Passages)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Text 1 memuji vertical forest karena menurunkan suhu lokal $2,5^{\\circ}\\text{C}$, sedangkan Text 2 mengkritik emisi karbon konstruksinya. Apakah penulis Text 2 menolak seluruh manfaat penghijauan kota?",
+      "opsi_cepat": [
+        "Ya, Text 2 menolak penghijauan karena mahal",
+        "Tidak, Text 2 tetap setuju urgensi penghijauan kota"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta terjebak menyimpulkan dua teks yang berdebat pasti bertolak belakang 100%, padahal kalimat pembuka Text 2 mengakui bahwa integrasi tanaman di kota tetap vital (undeniably vital)."
+    },
+    "konsep_inti_markdown": "- **Tujuan Soal:** Menguji sintesis, hubungan logis, titik temu, dan kontras antara dua teks bertopik sama.\n- **Langkah 30 Detik:**\n  1. Identifikasi tesis & *tone* Text 1 (pro/deskriptif).\n  2. Baca kalimat awal & akhir Text 2 untuk menangkap pivot hubungan (*While..., Rather than...*).\n  3. Peta irisan: **Sama** (tujuan/masalah) vs **Beda** (solusi/metode/dampak).\n- **Aturan Emas:** Opsi benar wajib didukung *kedua* teks untuk soal sintesis, atau akurat memetakan masing-masing penulis tanpa mencampur klaim.",
+    "radar_jebakan_utbk": [
+      "Cross-Text Attribution (Tukar Klaim): Mengatribusikan data atau argumen Text 1 seolah-olah milik Text 2, atau sebaliknya.",
+      "False Dichotomy (Kontradiksi Total): Menganggap kedua penulis tidak sepakat pada hal apa pun, padahal keduanya sepakat pada premis dasar."
+    ],
+    "stimulus_utama_bersama": "**Text 1**\nRapid urbanization has severely intensified the urban heat island effect, prompting architects to integrate living vegetation directly into high-rise structures. Known as vertical forests, these residential buildings feature reinforced cantilevered balconies planted with thousands of trees and native shrubs. Proponents argue that vertical forests capture atmospheric carbon dioxide, filter fine particulate matter, and reduce indoor cooling energy costs by up to 30 percent during peak summer months. In a 2023 longitudinal field study of three high-rise towers in Milan, environmental engineers recorded a localized ambient temperature drop of 2.5 degrees Celsius immediately surrounding the foliage-covered facades compared to adjacent concrete structures. Furthermore, acoustic sensors confirmed that dense exterior greenery dampens street-level traffic noise by nearly 15 decibels. Consequently, urban planners increasingly view vertical forests not merely as luxury aesthetic landmarks, but as essential, scalable infrastructure for climate resilience in densely populated metropolises where ground-level park space is scarce.\n\n**Text 2**\nWhile integrating greenery into dense cityscapes is undeniably vital for mitigating urban heat, celebrating vertical forests as a scalable climate solution overlooks substantial ecological and socioeconomic trade-offs. A lifecycle carbon audit conducted by sustainability researchers across twelve global green-building projects revealed that supporting mature trees dozens of stories above ground requires heavily reinforced steel and concrete slabs. Manufacturing this extra structural material generates embodied carbon emissions that can take over four decades of tree growth to offset. Additionally, elevated plantings demand automated high-pressure irrigation pumps, specialized arborist maintenance, and synthetic fertilizers, driving up operational costs and restricting residency to affluent buyers. Rather than investing millions into exclusive botanical skyscrapers, municipal governments would achieve far broader cooling and air-quality benefits by expanding ground-level street canopies and converting underutilized asphalt lots into accessible neighborhood parks, which require minimal structural reinforcement and serve entire urban communities equitably.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Relationship Between Text 1 and Text 2",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "How does Text 2 primarily relate to the argument presented in Text 1 regarding vertical forests?",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Kalimat Kunci Text 1 (akhir):** *\"urban planners increasingly view vertical forests... as essential, scalable infrastructure for climate resilience.\"* (Klaim optimis bahwa hutan vertikal adalah solusi skalabel).\n- **Kalimat Kunci Text 2 (awal):** *\"While integrating greenery... is undeniably vital... celebrating vertical forests as a scalable climate solution overlooks substantial ecological and socioeconomic trade-offs.\"*\n\n**Strategi Parafrasa Opsi Benar:**\nKata kunci *overlooks substantial... trade-offs* dan *Rather than investing millions...* diparafrasa menjadi *challenges the scalability of vertical forests by highlighting hidden costs and proposing an alternative* (mengkritisi kelayakan solusi Text 1 dan menawarkan alternatif taman kota).\n\n**Ciri Opsi Jebakan:**\n- **Terlalu Ekstrem:** Menyebut Text 2 sepenuhnya membantah data suhu $2,5^{\\circ}\\text{C}$ di Text 1 (*completely refutes the empirical measurements*).\n- **Salah Arah:** Menyebut Text 2 memberikan contoh kasus pendukung (*provides additional supporting evidence*).",
+      "kunci_pembeda": "Fokus pada fungsi retoris Text 2 terhadap tesis utama Text 1 (mendukung, memperluas, mengkritisi, atau memberi solusi tandingan) melalui kata hubung transisi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Points of Agreement and Disagreement Between Both Authors",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "On which point do the authors of Text 1 and Text 2 most clearly agree, and where do they diverge?",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Titik Sepakat (Agreement):** Pindai klausa konsesif (*While...*) di kalimat pertama Text 2: *\"integrating greenery into dense cityscapes is undeniably vital for mitigating urban heat.\"* Ini selaras dengan premis pembuka Text 1 tentang urgensi melawan *urban heat island effect* lewat vegetasi.\n- **Titik Berbeda (Disagreement):** Text 1 menilai hutan vertikal adalah *essential, scalable infrastructure*, sedangkan Text 2 menilai konsep itu tidak efisien secara karbon, mahal, dan eksklusif bagi pembeli kaya (*affluent buyers*).\n\n**Strategi Parafrasa Opsi Benar:**\nOpsi *Agreement* memparafrasa kedua premis menjadi *incorporating vegetation into urban areas helps combat rising city temperatures*. Opsi *Disagreement* menyoroti perbedaan kelayakan ekonomi dan skala dampak lingkungan.\n\n**Ciri Opsi Jebakan:**\n- **Tidak Disebut (Unmentioned):** Mengklaim kedua penulis sepakat bahwa pemerintah harus memberi subsidi apartemen hijau.\n- **Terlalu Sempit:** Menganggap mereka sepakat soal penghematan biaya listrik 30% (hanya ada di Text 1).",
+      "kunci_pembeda": "Memetakan posisi kedua penulis pada isu spesifik yang sama (keduanya sepakat, keduanya menolak, atau satu pro dan satu kontra).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "How the Author of Text 2 Would Most Likely Respond to a Specific Claim in Text 1",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "How would the author of Text 2 most likely respond to Text 1's claim that vertical forests capture atmospheric carbon dioxide?",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Target Klaim di Text 1:** Pindai frasa *capture atmospheric carbon dioxide* pada kalimat ketiga Text 1.\n- **Bukti Penyeimbang di Text 2:** Pindai kata kunci *carbon* di Text 2: *\"reinforced steel and concrete slabs... generates embodied carbon emissions that can take over four decades of tree growth to offset.\"*\n\n**Strategi Parafrasa Opsi Benar:**\nPenulis Text 2 tidak menyangkal pohon menyerap karbon, melainkan menekankan *net carbon balance* (neraca karbon bersih). Opsi benar memparafrasa ini menjadi *while the trees absorb carbon, the building's structural materials produce massive upfront emissions that delay net climate benefits*.\n\n**Ciri Opsi Jebakan:**\n- **Distorsi Fakta:** Menyebut pohon di gedung tinggi secara biologis tidak mampu berfotosintesis atau menyerap karbon sama sekali.\n- **Salah Konteks:** Menjawab dengan argumen polusi suara (*noise pollution*), padahal pertanyaan mengunci klaim karbon.",
+      "kunci_pembeda": "Simulasi dialog langsung: kunci satu kutipan spesifik dari Text 1, lalu cari bukti atau sanggahan langsung dari perspektif Text 2.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Synthesizing Shared Conclusions from Both Texts",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Which conclusion is most strongly supported by the combined information in Text 1 and Text 2?",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Fakta Text 1:** Vegetasi pada bangunan terbukti menurunkan suhu lokal ($2,5^{\\circ}\\text{C}$) dan menyaring polusi udara/suara.\n- **Fakta Text 2:** Namun, konstruksi gedung hijau bertingkat memicu emisi karbon material tinggi dan biaya mahal sehingga taman kota permukaan tanah lebih efektif.\n\n**Strategi Parafrasa Opsi Benar:**\nGabungkan kedua premis menjadi simpulan logis lintas teks (sintesis): *although urban vegetation effectively improves local microclimates, the structural and financial demands of high-rise installations limit their practicality compared to ground-level greening*. Simpulan harus sahih di bawah kedua teks sekaligus.\n\n**Ciri Opsi Jebakan:**\n- **One-Text Only:** Pernyataan yang benar menurut Text 1 (misal: *noise drops by 15 decibels*), tetapi tidak disintesis dengan Text 2.\n- **Ekstrapolasi Berlebih:** Menyimpulkan semua gedung pencakar langit modern harus dilarang dibangun.",
+      "kunci_pembeda": "Menghasilkan inferensi baru yang menjembatani bukti dari Text 1 dan Text 2 secara harmonis tanpa melanggar fakta salah satu teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Comparing Methodologies, Tone, or Scope Between Text 1 and Text 2",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "How do Text 1 and Text 2 differ in terms of their analytical scope and evidentiary approach?",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Metodologi & Cakupan Text 1:** Pindai frasa *longitudinal field study of three high-rise towers in Milan* dan *acoustic sensors*. Cakupannya sempit pada performa operasional gedung lokal (suhu mikro dan kebisingan) dengan nada optimis (*optimistic/advocating*).\n- **Metodologi & Cakupan Text 2:** Pindai frasa *lifecycle carbon audit... across twelve global green-building projects* dan *socioeconomic trade-offs*. Cakupannya jauh lebih luas—mencakup emisi konstruksi jangka panjang, biaya pemeliharaan, dan keadilan sosial—dengan nada kritis-evaluatif (*skeptical/analytical*).\n\n**Strategi Parafrasa Opsi Benar:**\nOpsi benar mengontraskan *localized operational measurements* (Text 1) melawan *broader lifecycle and socioeconomic evaluation* (Text 2).\n\n**Ciri Opsi Jebakan:**\n- **Label Tone Keliru:** Menyebut nada Text 2 marah/sarkastik (*hostile/sarcastic*), padahal bahasanya akademis dan objektif.\n- **Tukar Cakupan:** Mengklaim Text 1 membahas proyek global sementara Text 2 hanya studi kasus satu kota.",
+      "kunci_pembeda": "Tidak menanyakan apa isi argumennya, melainkan bagaimana cara penulis membuktikan argumen, seberapa luas ruang lingkupnya, dan bagaimana sikap penulis.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Based on Text 2, how would its author most likely respond to the assertion in Text 1 that vertical forests serve as \"essential, scalable infrastructure for climate resilience\"?",
+      "opsi_jawaban": [
+        "A. By arguing that vertical forests completely fail to reduce ambient temperatures or filter urban air pollutants.",
+        "B. By contending that high embodied carbon emissions and prohibitive maintenance costs prevent them from being a practical, large-scale solution.",
+        "C. By suggesting that environmental engineers in Milan falsified acoustic and thermal sensor readings to attract wealthy investors.",
+        "D. By agreeing that vertical forests are the only viable greening method in densely populated cities lacking ground-level park space.",
+        "E. By claiming that automated irrigation pumps and synthetic fertilizers eliminate the need for specialized arborist maintenance."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat awal Text 2, penulis langsung menanggapi klaim *scalable climate solution* dengan menyoroti *substantial ecological and socioeconomic trade-offs*, yaitu emisi karbon konstruksi baja/beton yang butuh 40+ tahun untuk impas serta biaya pemeliharaan tinggi (Opsi B tepat). Opsi A salah karena Text 2 tidak menyangkal penurunan suhu lokal; Opsi C salah karena tidak ada tuduhan pemalsuan data; Opsi D bertentangan dengan rekomendasi taman permukaan tanah di Text 2; Opsi E memutarbalikkan fakta pemeliharaan.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Evaluate the following synthesized statements based on both Text 1 and Text 2. Determine whether each statement is **TRUE** or **FALSE** according to the combined passages.\n\n| No. | Synthesized Statement |\n| :--- | :--- |\n| 1 | Both authors acknowledge that incorporating vegetation into urban environments is beneficial for mitigating city heat. |\n| 2 | Both texts conclude that high-rise residential towers are more cost-effective than converting asphalt lots into street-level parks. |\n| 3 | While exterior greenery can improve immediate building microclimates, structural reinforcement requirements complicate the overall carbon benefit of vertical forests. |",
+      "opsi_jawaban": [
+        "A. TRUE - TRUE - FALSE",
+        "B. TRUE - FALSE - TRUE",
+        "C. FALSE - TRUE - TRUE",
+        "D. TRUE - FALSE - FALSE",
+        "E. FALSE - FALSE - TRUE"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Pernyataan 1 (TRUE):** Text 1 membahas penurunan suhu $2,5^{\\circ}\\text{C}$, dan Text 2 mengakui integrasi tanaman *undeniably vital for mitigating urban heat*. **Pernyataan 2 (FALSE):** Hanya Text 2 yang membandingkan taman permukaan tanah dan justru menyatakan taman jalanan jauh lebih hemat dan merata dibanding gedung mahal. **Pernyataan 3 (TRUE):** Sintesis akurat antara manfaat mikroklimat di Text 1 dan beban *embodied carbon* struktur baja/beton di Text 2.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Which statement best contrasts the analytical scope and evidentiary approach of Text 1 with those of Text 2?",
+      "opsi_jawaban": [
+        "A. Text 1 relies on theoretical economic projections, whereas Text 2 presents localized sensor measurements from a single European city.",
+        "B. Text 1 evaluates long-term construction emissions across global projects, whereas Text 2 focuses exclusively on residential housing affordability.",
+        "C. Text 1 examines localized operational benefits using field sensor data, whereas Text 2 adopts a broader lifecycle and socioeconomic evaluation across multiple projects.",
+        "D. Text 1 adopts a deeply skeptical tone toward urban architecture, whereas Text 2 enthusiastically endorses luxury botanical skyscrapers.",
+        "E. Text 1 investigates groundwater depletion caused by urban trees, whereas Text 2 measures street-level noise reduction in decibels."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Text 1 menggunakan *longitudinal field study* di Milan dengan sensor suhu dan akustik untuk mengukur performa operasional lokal (Opsi C benar). Sebaliknya, Text 2 menggunakan *lifecycle carbon audit* pada 12 proyek global serta analisis biaya dan aksesibilitas sosial (cakupan lebih luas). Opsi A dan D menukar karakteristik kedua teks; Opsi B menyempitkan fokus Text 2 hanya pada harga rumah; Opsi E mencampuradukkan topik yang tidak ada di Text 1 maupun salah atribusi data akustik.",
+      "visual": null
+    }
+  ]
+}

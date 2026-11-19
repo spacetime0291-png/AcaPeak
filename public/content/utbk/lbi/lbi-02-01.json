@@ -1,0 +1,133 @@
+{
+  "kode_subbab": "lbi-02-01",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 2: Inferensi dan Evaluasi Teks",
+  "judul_subbab": "Simpulan Implisit dan Prediksi Isi Teks",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam bacaan tertulis: *\"Sebagian besar rumah tangga pesisir masih menggunakan sumur bor karena jaringan pipa air belum merata.\"* Jika opsi jawaban menyebut *\"Seluruh warga pesisir tidak memiliki akses air bersih\"*, apakah simpulan tersebut sah secara logika UTBK?",
+      "opsi_cepat": [
+        "Sah, karena mayoritas warga belum terlayani pipa",
+        "Tidak sah, karena mengandung generalisasi ekstrem"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kata 'sebagian besar' dan 'belum merata' tidak boleh ditarik menjadi klaim mutlak 'seluruh'. Di UTBK, opsi yang menggunakan kata ekstrem (*seluruh, pasti, tidak pernah*) hampir selalu merupakan jebakan overgeneralisasi."
+    },
+    "konsep_inti_markdown": "**Inferensi & Prediksi Teks** menguji kemampuan menarik makna tersirat yang wajib ditopang premis eksplisit bacaan.\n\n* **Rumus Inferensi Valid:** $\\text{Fakta Teks} + \\text{Logika Deduktif/Sintesis} \\rightarrow \\text{Simpulan Pasti Benar}$ (tanpa asumsi luar).\n* **Prediksi & Solusi:** Proyeksikan tren kausal teks ke masa depan atau bidik langsung **akar masalah**, bukan gejalanya.\n* **Filter Eliminasi:** Coret opsi yang **terlalu ekstrem** (*semua/selalu*), **bertentangan**, atau **di luar cakupan teks**.",
+    "radar_jebakan_utbk": [
+      "Jebakan Overgeneralisasi: Mengubah kuantifier terbatas di teks ('sebagian', 'cenderung', '42 persen') menjadi pernyataan mutlak ('seluruh', 'pasti', 'tidak ada satu pun') pada opsi jawaban.",
+      "Jebakan Asumsi Eksternal & Gejala Permukaan: Memilih opsi yang terdengar masuk akal di dunia nyata tetapi tanpa pijakan premis teks, atau solusi yang sekadar mengobati gejala luar tanpa menyentuh akar penyebab."
+    ],
+    "stimulus_utama_bersama": "Fenomena penurunan muka tanah (*land subsidence*) di kawasan pesisir utara Jawa telah mencapai laju kritis antara 8 hingga 12 sentimeter per tahun dalam satu dekade terakhir. Kajian hidrogeologi menunjukkan bahwa penyebab utama kondisi ini bukanlah kenaikan permukaan air laut global semata, melainkan eksploitasi air tanah dalam secara masif oleh kawasan industri dan permukiman padat penduduk. Ketika akuifer bawah tanah terus dikuras tanpa diimbangi sistem resapan air hujan maupun pasokan air perpipaan yang memadai, lapisan sedimen aluvial mengalami pemadatan permanen yang memicu banjir rob semakin sering merendam wilayah daratan.\n\nDi sisi lain, benteng alami pesisir berupa sabuk hijau hutan mangrove mengalami penyusutan luas hingga 42 persen akibat alih fungsi lahan menjadi tambak intensif dan kawasan pergudangan. Padahal, struktur perakaran mangrove mampu meredam energi gelombang pasang hingga 60 persen sekaligus memerangkap sedimen lumpur untuk mempertahankan elevasi pantai. Hilangnya sabuk hijau ini membuat gelombang laut menghantam langsung tanggul beton darurat yang dibangun pemerintah daerah, sehingga biaya pemeliharaan infrastruktur pesisir melonjak tiga kali lipat dalam lima tahun terakhir.\n\nMenanggapi situasi tersebut, pakar tata ruang pesisir dari Institut Teknologi Bandung, Dr. Ardiansyah, menyatakan, \"Meninggikan tanggul beton setiap dua tahun tanpa menyetop penyedotan air tanah ibarat menambal ember bocor dari sisi luar sementara keran di dalamnya terus dibuka penuh.\" Pernyataan ini menggarisbawahi ketimpangan alokasi anggaran daerah yang masih menempatkan proyek konstruksi fisik sebagai prioritas utama, sementara penyediaan jaringan air bersih perpipaan baru menjangkau 38 persen kebutuhan industri dan rumah tangga pesisir.\n\nData Dinas Lingkungan Hidup mencatat bahwa wilayah pesisir yang mempertahankan kawasan mangrove minimal selebar 200 meter dari garis pantai mengalami kerugian ekonomi akibat rob 70 persen lebih rendah dibandingkan wilayah yang mengandalkan tanggul beton semata. Sayangnya, ketiadaan insentif ekonomi bagi petambak tradisional untuk beralih ke pola silvofishery—budidaya perikanan ramah mangrove—membuat laju konversi lahan pesisir sulit dibendung.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Menarik Simpulan Logis (Inferensi) yang Tidak Tertulis Langsung tetapi Pasti Benar Berdasarkan Fakta Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 3: \"...penyediaan jaringan air bersih perpipaan baru menjangkau 38 persen kebutuhan industri dan rumah tangga pesisir.\"",
+      "bedah_pola_markdown": "**1. Scanning Kalimat Kunci**\nPindai data kuantitatif dan relasi logis pada Paragraf 3: *\"...penyediaan jaringan air bersih perpipaan baru menjangkau 38 persen kebutuhan industri dan rumah tangga pesisir.\"*\n\n**2. Teknik Parafrasa Logis ($100\\% - 38\\% = 62\\%$)**\nTarik deduksi langsung dari fakta tersurat tanpa menambahkan asumsi eksternal apa pun:\n* **Fakta Tersurat:** Jaringan air perpipaan baru memenuhi 38 persen kebutuhan sektor industri dan rumah tangga pesisir.\n* **Parafrasa Opsi Benar:** Mayoritas kebutuhan air bersih industri dan rumah tangga pesisir (62 persen) belum tercukupi oleh pasokan air perpipaan sehingga bergantung pada sumber air lain.\n\n**3. Ciri Opsi Jebakan**\n* **Terlalu Ekstrem:** Menyebut *seluruh* kawasan pesisir sama sekali tidak memiliki akses jaringan air bersih.\n* **Tidak Disebut:** Mengklaim tarif air perpipaan jauh lebih mahal dibandingkan biaya mengebor air tanah.\n* **Terlalu Sempit:** Menyatakan hanya kawasan industri yang mengalami defisit layanan air bersih perpipaan.",
+      "kunci_pembeda": "Inferensi sah lahir dari implikasi langsung atau selisih matematis fakta eksplisit teks tanpa menyelipkan opini maupun informasi baru dari luar bacaan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Memprediksi Dampak/Konsekuensi Jangka Panjang jika Fenomena dalam Teks Terus Berlangsung",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1 & 2: \"...lapisan sedimen aluvial mengalami pemadatan permanen...\" dan \"...biaya pemeliharaan infrastruktur pesisir melonjak tiga kali lipat dalam lima tahun terakhir.\"",
+      "bedah_pola_markdown": "**1. Scanning Tren & Kausalitas**\nPindai kata penanda laju berulang di Paragraf 1 dan 2: *\"pemadatan permanen yang memicu banjir rob semakin sering\"* serta *\"biaya pemeliharaan infrastruktur pesisir melonjak tiga kali lipat\"*.\n\n**2. Proyeksi Konsekuensi Linear**\nSambungkan tren saat ini ke masa depan jika variabel penyebab tidak diintervensi:\n* **Premis Tren:** Akuifer terus dikuras dan sabuk hijau mangrove menyusut 42 persen.\n* **Parafrasa Opsi Benar:** Jika eksploitasi air tanah dan alih fungsi mangrove berlanjut, elevasi daratan pesisir akan makin amblas permanen dan beban anggaran pemeliharaan tanggul pemerintah daerah terus membengkak.\n\n**3. Ciri Opsi Jebakan**\n* **Terlalu Ekstrem:** Memprediksi seluruh daratan Pulau Jawa akan tenggelam total dalam waktu dekat.\n* **Kontradiktif:** Menganggap lapisan sedimen aluvial akan kembali terangkat otomatis saat curah hujan tinggi.\n* **Tidak Disebut:** Meramalkan relokasi massal penduduk pesisir ke luar pulau.",
+      "kunci_pembeda": "Prediksi yang valid selalu merupakan kelanjutan garis kausal (sebab-akibat) yang sudah terjadi di teks, bukan ramalan spekulatif di luar variabel bacaan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Merumuskan Solusi atau Rekomendasi Kebijakan yang Paling Relevan dengan Akar Masalah di Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1, 3, & 4: Ketimpangan anggaran infrastruktur fisik vs jaringan air perpipaan (38 persen) serta ketiadaan insentif ekonomi pola silvofishery bagi petambak.",
+      "bedah_pola_markdown": "**1. Scanning Akar Masalah**\nPindai faktor pemicu utama di Paragraf 1, 3, dan 4: penyedotan air tanah karena pipa air baru menjangkau 38 persen kebutuhan, serta konversi mangrove akibat ketiadaan insentif *silvofishery*.\n\n**2. Merumuskan Kebijakan Presisi**\nKebijakan efektif wajib memutus penyebab utama, bukan sekadar menambal gejala fisik:\n* **Akar Masalah:** Defisit pasokan air bersih perpipaan dan ketiadaan insentif ekonomi bagi petambak tradisional.\n* **Parafrasa Opsi Benar:** Pemerintah daerah perlu mengalihkan prioritas anggaran menuju perluasan jaringan air perpipaan guna menekan penyedotan air tanah serta menyediakan insentif pola budidaya *silvofishery*.\n\n**3. Ciri Opsi Jebakan**\n* **Menyasar Gejala:** Menyarankan peninggian tanggul beton darurat secara berkala setiap tahun.\n* **Terlalu Ekstrem:** Menutup paksa seluruh kawasan industri dan tambak tradisional di pesisir utara.\n* **Tidak Relevan:** Mengajukan program penghijauan pegunungan hulu yang tidak dibahas bacaan.",
+      "kunci_pembeda": "Rekomendasi kebijakan yang benar harus memutus faktor penyebab utama (hulu masalah) yang secara spesifik didiagnosis penulis di dalam bacaan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Menentukan Maksud Tersembunyi dari Pernyataan Tokoh/Pakar yang Dikutip dalam Bacaan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujukan Paragraf 3: \"Meninggikan tanggul beton setiap dua tahun tanpa menyetop penyedotan air tanah ibarat menambal ember bocor dari sisi luar sementara keran di dalamnya terus dibuka penuh.\"",
+      "bedah_pola_markdown": "**1. Scanning Pernyataan Figuratif Pakar**\nTemukan kutipan Dr. Ardiansyah di Paragraf 3: *\"Meninggikan tanggul beton setiap dua tahun tanpa menyetop penyedotan air tanah ibarat menambal ember bocor dari sisi luar sementara keran di dalamnya terus dibuka penuh.\"*\n\n**2. Dekode Analogi ke Maksud Tersembunyi**\nPetakan setiap simbol metafora ke konteks kebijakan di bacaan:\n* **Menambal luar =** Meninggikan tanggul beton secara berulang; **keran dibuka penuh =** Penyedotan air tanah terus dibiarkan.\n* **Parafrasa Opsi Benar:** Pakar mengkritik kebijakan penanganan banjir rob yang hanya berfokus pada solusi fisik sementara, tetapi membiarkan akar penyebab penurunan muka tanah terus berlangsung sehingga upaya tersebut menjadi sia-sia.\n\n**3. Ciri Opsi Jebakan**\n* **Makna Harfiah:** Menyimpulkan pakar menyarankan penambalan dinding tanggul beton dari sisi dalam daratan.\n* **Terlalu Ekstrem:** Menganggap pakar menolak seluruh bentuk pembangunan infrastruktur fisik di wilayah pesisir.\n* **Tidak Disebut:** Menuduh kontraktor tanggul sengaja melakukan kelalaian konstruksi.",
+      "kunci_pembeda": "Fokuslah pada fungsi pragmatis kutipan (mengkritik, menyindir ketidakefektifan, atau memperingatkan) dengan menerjemahkan metafora ke isu kebijakan di kalimat pengiringnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Menjelaskan Mengapa Suatu Fenomena Terjadi Berdasarkan Penggabungan Informasi dari Dua Paragraf Berbeda",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 2 & Paragraf 4: Peran perakaran mangrove meredam energi gelombang pasang hingga 60 persen (P2) dan selisih kerugian rob 70 persen lebih rendah pada sabuk mangrove minimal 200 meter (P4).",
+      "bedah_pola_markdown": "**1. Scanning Dua Paragraf Terpisah**\nHubungkan mekanisme fisik di Paragraf 2 dengan data komparatif di Paragraf 4:\n* **Paragraf 2:** Perakaran mangrove meredam energi gelombang pasang hingga 60 persen dan menahan sedimen; hilangnya mangrove membuat gelombang menghantam langsung tanggul beton.\n* **Paragraf 4:** Wilayah ber-mangrove minimal selebar 200 meter mengalami kerugian rob 70 persen lebih rendah daripada wilayah bertanggul beton semata.\n\n**2. Sintesis Hubungan Sebab-Akibat**\nGabungkan kedua premis untuk menjawab mengapa ketergantungan pada tanggul beton saja tidak efektif:\n* **Parafrasa Opsi Benar:** Tanggul beton semata gagal menekan kerugian rob karena ketiadaan sabuk mangrove selebar minimal 200 meter menghilangkan peredam alami gelombang pasang dan penahan sedimen, sehingga tanggul terus terhantam langsung.\n\n**3. Ciri Opsi Jebakan**\n* **Parsial Satu Paragraf:** Menjelaskan kerugian rob hanya akibat ketiadaan insentif *silvofishery* tanpa mengaitkan fungsi peredam gelombang.\n* **Terlalu Ekstrem:** Menyatakan tanggul beton tidak memiliki fungsi perlindungan sama sekali.",
+      "kunci_pembeda": "Jawaban sintesis wajib mengikat dua potongan informasi dari paragraf berbeda menjadi satu rantai penjelasan sebab-akibat yang utuh.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan pernyataan Dr. Ardiansyah dan informasi pendukung pada paragraf ketiga bacaan di atas, simpulan tersirat yang paling tepat adalah ...",
+      "opsi_jawaban": [
+        "A. Pembangunan tanggul beton di pesisir utara Jawa sebaiknya dilakukan dari sisi dalam daratan agar air tanah tidak merembes ke laut.",
+        "B. Seluruh kawasan industri dan rumah tangga pesisir telah beralih menggunakan air tanah karena jaringan pipa air bersih berhenti beroperasi.",
+        "C. Kebijakan penanggulangan rob pemerintah daerah dinilai tidak efektif karena memprioritaskan konstruksi tanggul sementara mayoritas kebutuhan air bersih pesisir belum terlayani jaringan perpipaan.",
+        "D. Pakar tata ruang pesisir menolak segala bentuk pembangunan tanggul beton karena dianggap hanya memboroskan anggaran daerah.",
+        "E. Penyedotan air tanah oleh kawasan industri merupakan satu-satunya faktor yang menyebabkan kenaikan permukaan air laut global."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Analogi *menambal ember bocor tanpa menutup keran* mengkritik kebijakan pemda yang hanya meninggikan tanggul beton tanpa menghentikan eksploitasi air tanah sebagai akar penurunan muka tanah. Pilihan **C** tepat karena merangkum kritik tersebut beserta fakta bahwa 62 persen kebutuhan air pesisir belum terlayani jaringan perpipaan. **A** dan **D** keliru karena memaknai metafora secara harfiah dan ekstrem; **B** bertentangan dengan fakta 38 persen jaringan pipa beroperasi; **E** menyalahkan faktor global yang dibantah teks.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        5
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Tentukan nilai kebenaran dari setiap pernyataan berikut berdasarkan sintesis informasi dan proyeksi dampak pada bacaan!\n\n| No. | Pernyataan |\n|---|---|\n| 1 | Wilayah pesisir yang hanya mengandalkan tanggul beton tanpa sabuk mangrove selebar minimal 200 meter menanggung kerugian ekonomi akibat rob lebih besar karena gelombang pasang menghantam langsung struktur tanggul tanpa peredam alami. |\n| 2 | Apabila penyedotan air tanah dalam dihentikan total hari ini, lapisan sedimen aluvial yang sudah memadat akan segera mengembang kembali ke elevasi semula dalam waktu singkat. |\n| 3 | Jika laju konversi mangrove menjadi tambak intensif serta pemompaan air tanah terus berlanjut tanpa perluasan jaringan air perpipaan, anggaran pemeliharaan tanggul pesisir berpotensi terus meningkat sementara muka tanah makin turun. |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah",
+        "B. Benar - Salah - Benar",
+        "C. Salah - Benar - Benar",
+        "D. Benar - Salah - Salah",
+        "E. Salah - Benar - Salah"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "* **Pernyataan 1 (Benar):** Gabungan Paragraf 2 dan 4 membuktikan sabuk mangrove minimal 200 meter meredam gelombang pasang hingga 60 persen sehingga menekan kerugian rob 70 persen dibandingkan tanggul beton semata.\n* **Pernyataan 2 (Salah):** Paragraf 1 menegaskan pemadatan sedimen aluvial bersifat *permanen*, sehingga tidak akan pulih otomatis.\n* **Pernyataan 3 (Benar):** Tren berlanjutnya penyedotan air tanah dan susutnya mangrove memicu amblesan daratan serta lonjakan biaya tanggul. Urutan tepat adalah **Benar - Salah - Benar** (**B**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Rekomendasi kebijakan terpadu yang paling relevan untuk mengatasi akar permasalahan penurunan muka tanah dan tingginya kerugian banjir rob dalam bacaan adalah ...",
+      "opsi_jawaban": [
+        "A. Meningkatkan alokasi anggaran proyek peninggian tanggul beton darurat setiap tahun di seluruh garis pantai utara Jawa.",
+        "B. Melarang seluruh aktivitas perikanan tambak tradisional dan menutup kawasan industri di wilayah pesisir utara Jawa secara permanen.",
+        "C. Membangun tanggul pemecah gelombang berbahan beton di lepas pantai untuk menggantikan fungsi sabuk hijau mangrove yang telah hilang.",
+        "D. Memperluas cakupan jaringan air bersih perpipaan guna menekan eksploitasi air tanah sekaligus menyediakan skema insentif ekonomi bagi petambak untuk menerapkan pola silvofishery.",
+        "E. Mewajibkan setiap kawasan pergudangan membangun sistem penampungan air hujan tanpa perlu membenahi tata kelola sabuk hijau pesisir."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Akar masalah di teks bersifat ganda: 62 persen kebutuhan air pesisir belum terlayani jaringan perpipaan (Paragraf 3) dan ketiadaan insentif ekonomi memicu alih fungsi mangrove menjadi tambak intensif (Paragraf 4). Pilihan **D** paling presisi karena menyasar kedua akar penyebab melalui perluasan air perpipaan dan skema insentif *silvofishery*. **A** dan **C** hanya menangani gejala permukaan; **B** merupakan tindakan ekstrem di luar konteks solusi; **E** mengabaikan krisis alih fungsi mangrove.",
+      "visual": null
+    }
+  ]
+}

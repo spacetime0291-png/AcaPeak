@@ -1,0 +1,117 @@
+{
+  "kode_subbab": "pk-04-03",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 4: Statistika Dasar",
+  "judul_subbab": "Perubahan Data dan Gabungan Rata-Rata",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Setiap nilai siswa dalam satu kelas dikalikan $2$ lalu dikurangi $10$ sehingga rata-ratanya menjadi $70$, sedangkan jangkauannya menjadi $24$. Berapa jangkauan data mula-mula?",
+      "opsi_cepat": [
+        "17 (ditambah 10 lalu dibagi 2)",
+        "12 (hanya dibagi 2)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Ukuran penyebaran (jangkauan, simpangan baku, varians) hanya dipengaruhi perkalian atau pembagian, sedangkan penjumlahan atau pengurangan menggeser seluruh data secara seragam tanpa mengubah jarak antardata."
+    },
+    "konsep_inti_markdown": "- **Rata-rata Gabungan:** $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2 + n_3\\bar{x}_3}{n_1 + n_2 + n_3}$.\n- **Perubahan & Koreksi Data:** $\\Delta \\Sigma x = n \\cdot \\Delta \\bar{x}$, dengan $\\Sigma x_{\\text{baru}} = \\Sigma x_{\\text{lama}} - x_{\\text{salah/keluar}} + x_{\\text{benar/masuk}}$.\n- **Transformasi Linear ($y_i = ax_i + b$):**\n  - Ukuran Pemusatan (mean, median, modus, kuartil): $\\text{Baru} = a \\cdot \\text{Lama} + b$.\n  - Ukuran Penyebaran (jangkauan, simpangan): $\\text{Baru} = |a| \\cdot \\text{Lama}$ (untuk varians dikali $a^2$).",
+    "radar_jebakan_utbk": [
+      "Mengikutsertakan konstanta penambah/pengurang ($+b$) saat menghitung ukuran penyebaran baru setelah transformasi linear, atau lupa mengkuadratkan faktor pengali ($a^2$) khusus pada varians.",
+      "Menganggap rata-rata gabungan dua kelompok langsung merupakan titik tengah $\\frac{\\bar{x}_1 + \\bar{x}_2}{2}$ tanpa memperhitungkan bobot jumlah anggota masing-masing kelompok ($n_1$ vs $n_2$)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Rata-rata Gabungan (Weighted Mean) Dua atau Tiga Kelompok dan Mencari Rasio Jumlah Anggota Kelompok",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rata-rata nilai ujian Matematika kelas A adalah $72$ dan kelas B adalah $80$. Jika rata-rata nilai gabungan kedua kelas tersebut adalah $75$, tentukan perbandingan jumlah siswa kelas A dan kelas B.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nGunakan persamaan jumlah total nilai: $n_A\\bar{x}_A + n_B\\bar{x}_B = (n_A + n_B)\\bar{x}_{\\text{gab}}$. Substitusikan data yang diketahui menjadi $72n_A + 80n_B = 75(n_A + n_B)$, lalu jabarkan ruas kanan menjadi $72n_A + 80n_B = 75n_A + 75n_B$. Kelompokkan variabel sejenis sehingga $5n_B = 3n_A$, yang menghasilkan rasio $n_A : n_B = 5 : 3$. Prinsip pembobotan yang sama berlaku pula untuk tiga kelompok.\n\n**(2) Jalur Taktis UTBK**\nTerapkan metode **Jungkat-Jungkit (Selisih Silang)** untuk eksekusi cepat. Hitung jarak rata-rata tiap kelompok terhadap rata-rata gabungan: selisih kelas A adalah $75 - 72 = 3$, sedangkan kelas B adalah $80 - 75 = 5$. Karena rata-rata gabungan selalu tertarik lebih dekat ke kelompok beranggota lebih banyak, balikkan kedua selisih secara silang untuk memperoleh $n_A : n_B = 5 : 3$.",
+      "kunci_pembeda": "Melibatkan penggabungan dua atau lebih subkelompok dengan rata-rata berbeda tanpa mengubah nilai individu di dalam tiap kelompok.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Perubahan Rata-rata Akibat Penambahan, Pengurangan, atau Penggantian Satu/Dua Nilai Data",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rata-rata nilai ulangan $9$ siswa adalah $78$. Setelah satu siswa susulan bergabung, rata-rata kelas naik menjadi $80$. Tentukan nilai siswa susulan tersebut.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nHitung selisih antara jumlah total nilai baru dan jumlah total nilai awal. Mula-mula, total nilai $9$ siswa adalah $\\Sigma x_{\\text{awal}} = 9 \\times 78 = 702$. Setelah satu siswa masuk, banyaknya data menjadi $n_{\\text{baru}} = 10$ dengan total nilai $\\Sigma x_{\\text{baru}} = 10 \\times 80 = 800$. Nilai siswa susulan merupakan selisih kedua total tersebut, yakni $x_{10} = 800 - 702 = 98$. Jika terjadi penggantian data, banyaknya anggota $n$ tetap, sedangkan $\\Sigma x_{\\text{baru}} = \\Sigma x_{\\text{awal}} - x_{\\text{keluar}} + x_{\\text{masuk}}$.\n\n**(2) Jalur Taktis UTBK**\nGunakan metode **Distribusi Surplus/Defisit** tanpa mengalikan bilangan besar. Agar rata-rata $9$ siswa lama naik sebesar $+2$ poin (dari $78$ ke $80$), siswa baru harus membawa nilai sebesar rata-rata baru ditambah sumbangan kenaikan bagi seluruh anggota lama: $x_{10} = 80 + 9(80 - 78) = 80 + 18 = 98$. Jika rata-rata turun, cukup ubah tanda menjadi pengurangan.",
+      "kunci_pembeda": "Fokus pada keluar-masuknya anggota baru yang mengubah banyaknya data ($n$) atau mengganti satu anggota lama dengan anggota baru yang valid.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Efek Transformasi Linear Data terhadap Ukuran Pemusatan vs Ukuran Penyebaran",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Suatu kumpulan data memiliki rata-rata $24$, median $22$, dan simpangan baku $6$. Jika setiap data dikalikan $\\frac{1}{2}$ kemudian ditambah $5$, tentukan rata-rata dan simpangan baku yang baru.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nMisalkan setiap data awal $x_i$ ditransformasikan secara linear menjadi $y_i = ax_i + b$, dengan $a = \\frac{1}{2}$ dan $b = 5$. Seluruh **ukuran pemusatan** (rata-rata, median, modus, kuartil) mengikuti operasi secara penuh: $\\bar{y} = a\\bar{x} + b = \\frac{1}{2}(24) + 5 = 17$. Sebaliknya, penjumlahan konstanta $b$ hanya menggeser posisi seluruh data secara seragam tanpa mengubah jarak antardata, sehingga **ukuran penyebaran** (jangkauan, simpangan kuartil, simpangan baku) hanya dikalikan $|a|$: $s_y = |a|s_x = \\frac{1}{2}(6) = 3$.\n\n**(2) Jalur Taktis UTBK**\nTerapkan aturan **Pemusatan Ikut Semua, Penyebaran Abaikan Tambah/Kurang**. Coret langsung komponen $+5$ saat mencari simpangan baku sehingga cukup hitung $6 \\times \\frac{1}{2} = 3$. Ingat pengecualian khusus: jika yang ditanyakan adalah **varians ($s^2$)**, kalikan dengan $a^2$ sehingga menjadi $(\\frac{1}{2})^2 \\times 36 = 9$.",
+      "kunci_pembeda": "Seluruh anggota data mengalami operasi aljabar seragam ($ax_i + b$) secara bersamaan tanpa mengubah jumlah anggota kelompok.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Koreksi Rata-rata Akibat Kesalahan Pencatatan Nilai Data",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rata-rata nilai ujian $20$ siswa tercatat sebesar $74$. Setelah diperiksa ulang, terdapat dua nilai yang salah catat: nilai $65$ tertulis $56$, dan nilai $89$ tertulis $98$. Tentukan rata-rata nilai yang sebenarnya.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nKesalahan pencatatan tidak mengubah banyaknya anggota data ($n = 20$), melainkan hanya menggeser jumlah total nilainya. Hitung total nilai tercatat: $\\Sigma x_{\\text{salah}} = 20 \\times 74 = 1.480$. Keluarkan kedua nilai yang keliru dicatat lalu masukkan nilai yang sebenarnya: $\\Sigma x_{\\text{benar}} = 1.480 - (56 + 98) + (65 + 89) = 1.480 - 154 + 154 = 1.480$. Bagi kembali total nilai yang sudah dikoreksi dengan $n = 20$ sehingga diperoleh rata-rata sebenarnya $\\bar{x}_{\\text{benar}} = \\frac{1.480}{20} = 74$.\n\n**(2) Jalur Taktis UTBK**\nGunakan rumus **Selisih Bersih per Kapita**: $\\bar{x}_{\\text{benar}} = \\bar{x}_{\\text{salah}} + \\frac{\\Sigma x_{\\text{benar}} - \\Sigma x_{\\text{salah}}}{n}$. Hitung perubahan tiap entri secara langsung: data pertama naik $+9$ ($56 \\rightarrow 65$) dan data kedua turun $-9$ ($98 \\rightarrow 89$). Karena total perubahan bersih adalah $+9 - 9 = 0$, rata-rata tidak berubah dan tetap $74$.",
+      "kunci_pembeda": "Banyaknya anggota tetap, tetapi satu atau beberapa nilai awal dikoreksi akibat kekeliruan input sehingga total jumlah data berubah sebesar selisih nilai benar dan salah.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Rata-rata nilai kuis kelompok A yang terdiri atas $12$ siswa adalah $75$, sedangkan rata-rata nilai kelompok B yang terdiri atas $8$ siswa adalah $70$. Satu siswa dari kelompok A dipindahkan ke kelompok B sehingga rata-rata nilai kedua kelompok menjadi sama. Nilai siswa yang dipindahkan tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. 85",
+        "B. 92",
+        "C. 95",
+        "D. 97",
+        "E. 99"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Agar rata-rata kedua kelompok sama setelah perpindahan, keduanya harus sama dengan rata-rata gabungan seluruh $20$ siswa: $\\bar{x}_{\\text{gab}} = \\frac{12(75) + 8(70)}{12 + 8} = \\frac{900 + 560}{20} = 73$. Karena rata-rata $11$ siswa tersisa di kelompok A turun dari $75$ menjadi $73$, siswa yang keluar membawa nilai $x = 75 + 11(75 - 73) = 97$. Opsi A, B, C, dan E keliru karena tidak memperhitungkan turunnya rata-rata $11$ siswa tersisa.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Data hasil pengukuran tinggi kecambah memiliki rata-rata $16\\text{ cm}$, median $15\\text{ cm}$, jangkauan $10\\text{ cm}$, dan varians $9\\text{ cm}^2$. Jika setiap data dikalikan $2$ kemudian dikurangi $4$, perhatikan pernyataan-pernyataan berikut:\n\n(1) Rata-rata data baru menjadi $28\\text{ cm}$.\n(2) Median data baru menjadi $30\\text{ cm}$.\n(3) Jangkauan data baru menjadi $20\\text{ cm}$.\n(4) Varians data baru menjadi $18\\text{ cm}^2$.\n\nPernyataan yang bernilai benar adalah ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pilihan benar."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada transformasi $y_i = 2x_i - 4$, ukuran pemusatan dikali $2$ lalu dikurangi $4$: rata-rata baru $= 2(16) - 4 = 28$ (pernyataan 1 benar), sedangkan median baru $= 2(15) - 4 = 26$ (pernyataan 2 salah karena lupa dikurangi $4$). Ukuran penyebaran tidak terpengaruh pengurangan $4$: jangkauan baru $= 2 \\times 10 = 20$ (pernyataan 3 benar), sedangkan varians baru harus dikali $2^2 = 4$ menjadi $4 \\times 9 = 36$ (pernyataan 4 salah karena hanya dikali $2$).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Rata-rata nilai ujian Ekonomi dari $15$ siswa adalah $76$. Setelah dilakukan pemeriksaan ulang lembar jawaban, diketahui terdapat satu nilai siswa yang seharusnya $92$ tetapi keliru tercatat sebagai $62$. Rata-rata nilai ujian Ekonomi yang sebenarnya setelah dikoreksi adalah .... (Tuliskan jawaban dalam bentuk bilangan bulat)",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "78",
+      "bedah_cepat_markdown": "Selisih nilai yang dikoreksi adalah $x_{\\text{benar}} - x_{\\text{salah}} = 92 - 62 = +30$. Karena banyaknya siswa tetap $n = 15$, kenaikan rata-rata kelas dapat dihitung langsung dari pembagian selisih bersih tersebut: $\\Delta \\bar{x} = \\frac{30}{15} = +2$. Dengan demikian, rata-rata nilai ujian Ekonomi yang sebenarnya adalah $76 + 2 = 78$. Kesalahan umum terjadi jika membagi selisih dengan $16$ atau mengurangi rata-rata awal sebesar $2$.",
+      "visual": null
+    }
+  ]
+}

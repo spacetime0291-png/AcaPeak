@@ -1,0 +1,117 @@
+{
+  "kode_subbab": "ppu-01-03",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 1: Makna dan Relasi Kata",
+  "judul_subbab": "Relasi Kata Umum–Khusus dalam Kepaduan Wacana",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Tim peneliti menemukan berbagai jenis tanaman anggrek bulan, melati putih, dan mawar merah di kawasan konservasi', apakah frasa 'berbagai jenis tanaman' sudah efektif?",
+      "opsi_cepat": [
+        "Ya, memperjelas rincian",
+        "Tidak, memicu pemborosan makna"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kata umum (tanaman) dan kata khusus (anggrek, melati, mawar) tidak boleh hadir berdampingan secara langsung karena makna kata khusus sudah mencakup kata umumnya. Di PPU UTBK, kejelian mendeteksi pemborosan semantik ini menjadi pembeda skor 700+."
+    },
+    "konsep_inti_markdown": "**Relasi kata umum–khusus** menjaga kepaduan dan kehematan wacana baku sesuai EYD V dan KBBI VI:\n\n* **Kata Umum (Hipernim):** Kata berlingkup makna luas yang merangkum sejumlah rincian sejenis (misal: *kendaraan*, *komoditas*).\n* **Kata Khusus (Hiponim):** Kata berlingkup makna sempit yang menjadi anggota spesifik dari kata umum (misal: *kereta*, *kopi*).\n* **Kaidah Kepaduan:** Gunakan kata umum sebagai pengikat kohesi antarkalimat, pilih kata khusus untuk presisi gagasan, dan hindari penggabungan keduanya secara langsung.",
+    "radar_jebakan_utbk": [
+      "Mempertahankan kata umum tepat sebelum kata khususnya dalam satu frasa (misal: 'warna merah', 'ikan tongkol', atau 'bulan Januari') sehingga kalimat tidak efektif.",
+      "Memilih kata umum yang terlalu luas atau terlalu sempit sehingga gagal merangkum seluruh rincian anggota kata khusus pada kalimat sebelumnya."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifikasi Kata Umum (Hipernim) yang Merangkum Deretan Rincian dalam Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "(1) Ekspor komoditas unggulan seperti kopi arabika, kakao fermentasi, dan lada putih mengalami lonjakan permintaan di pasar Eropa. (2) Peningkatan nilai **hasil perkebunan** tersebut turut mendongkrak devisa negara pada kuartal ketiga.",
+      "bedah_pola_markdown": "**Bedah Pola Kepaduan & Fungsi:**\nPerhatikan struktur kalimat (2): [S] *Peningkatan nilai **hasil perkebunan** tersebut* + [P] *turut mendongkrak* + [O] *devisa negara* + [K] *pada kuartal ketiga*. Frasa **hasil perkebunan** berperan sebagai kata umum (hipernim) yang merangkum rincian *kopi, kakao,* dan *lada* pada kalimat (1) agar tercipta kepaduan wacana yang padu dan baku sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Rincian *bayam, kangkung, sawi* dirangkum dengan kata **pangan** (*terlalu luas*). | Rincian *bayam, kangkung, sawi* dirangkum tepat dengan **sayuran** (*hipernim presisi*). |\n| Rincian *emas, nikel, batu bara* dirangkum dengan **logam** (*mengecualikan batu bara*). | Rincian *emas, nikel, batu bara* dirangkum tepat dengan **barang tambang** (*mencakup semua*). |\n\n**Strategi Eksekusi:** Daftarkan seluruh rincian pada kalimat acuan, temukan irisan sifat bersama, lalu pilih kata umum yang menaungi seluruh rincian secara presisi tanpa terlalu melebar.",
+      "kunci_pembeda": "Menemukan satu payung kata umum dengan cakupan makna paling pas untuk mengikat seluruh rincian spesifik antarkalimat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Pemilihan Kata Khusus (Hiponim) yang Paling Tepat untuk Memperjelas Gagasan Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Untuk mencegah abrasi di sepanjang garis pantai utara, pemerintah daerah bersama warga pesisir menanam ribuan bibit **bakau** secara bertahap.",
+      "bedah_pola_markdown": "**Bedah Pola Spesifikasi & Fungsi:**\nPerhatikan struktur kalimat berikut: [K] *Untuk mencegah abrasi di sepanjang garis pantai utara*, [S] *pemerintah daerah bersama warga pesisir* + [P] *menanam* + [O] *ribuan bibit **bakau*** + [K] *secara bertahap*. Penggunaan kata khusus **bakau** memperjelas gagasan dibandingkan kata umum *pohon* karena hanya vegetasi pesisir tersebut yang secara ekologis menahan gelombang laut dan sesuai ejaan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Peneliti mengamati **hewan** (*terlalu umum*) yang menyebarkan virus demam berdarah. | Peneliti mengamati **nyamuk** (*hiponim spesifik*) yang menyebarkan virus demam berdarah. |\n| Petani memanen **biji-bijian** (*kurang presisi*) untuk diolah menjadi tepung terigu. | Petani memanen **gandum** (*hiponim presisi*) untuk diolah menjadi tepung terigu. |\n\n**Strategi Eksekusi:** Analisis petunjuk konteks pada predikat [P] atau keterangan [K], lalu ganti kata umum yang terlalu kabur dengan anggota hiponim yang paling logis dan baku.",
+      "kunci_pembeda": "Mengganti kata umum yang terlalu luas dengan anggota kata khusus yang paling selaras dengan tuntutan konteks kalimat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Deteksi Pemborosan Makna akibat Penggunaan Kata Umum dan Kata Khusus Secara Bersamaan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Dalam rapat koordinasi bulan Oktober lalu, dinas terkait membatasi peredaran **ikan tuna** dan **ikan cakalang** ilegal di pelabuhan perikanan.",
+      "bedah_pola_markdown": "**Bedah Pola Kehematan & Fungsi:**\nPerhatikan struktur kalimat efektif berikut: [K] *Dalam rapat koordinasi Oktober lalu*, [S] *dinas terkait* + [P] *membatasi* + [O] *peredaran **tuna** dan **cakalang** ilegal* + [K] *di pelabuhan perikanan*. Penyebutan kata umum *bulan* sebelum *Oktober* serta kata *ikan* sebelum *tuna* menimbulkan pemborosan makna (pleonasme) karena hiponim sudah mengandung makna hipernimnya sesuai kaidah kehematan kalimat EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Panel surya dipasang pada **hari Senin** dengan lapisan pelindung **warna biru**. | Panel surya dipasang pada **Senin** dengan lapisan pelindung **biru**. |\n| Nelayan menangkap **ikan tongkol** serta memetik **buah kelapa** di pesisir. | Nelayan menangkap **tongkol** serta memetik **kelapa** di pesisir. |\n\n**Strategi Eksekusi:** Coret kata umum yang menempel langsung di depan kata khususnya (*bulan*, *hari*, *warna*, *ikan*, *buah*) apabila konteks kalimat sudah jelas.",
+      "kunci_pembeda": "Menghilangkan kata umum yang berderet langsung dengan kata khususnya dalam satu frasa untuk mencegah pemborosan makna.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Sepanjang tahun lalu, industri pengolahan lokal menyerap ratusan ton bijih nikel, bauksit, dan tembaga dari kawasan timur Indonesia. (2) Pemanfaatan [...] tersebut mampu meningkatkan nilai tambah ekspor nasional sekaligus mengurangi ketergantungan pada penjualan bahan mentah.\n\nFrasa yang PALING TEPAT untuk melengkapi bagian rumpang pada kalimat (2) agar tercipta kepaduan makna dengan kalimat (1) adalah ....",
+      "opsi_jawaban": [
+        "A. sumber daya hayati",
+        "B. mineral logam",
+        "C. energi terbarukan",
+        "D. komoditas pangan",
+        "E. limbah industri"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kalimat (1) memerinci tiga jenis bahan tambang spesifik, yakni *bijih nikel, bauksit,* dan *tembaga*. Untuk menjaga kepaduan antarkalimat secara presisi, bagian rumpang pada kalimat (2) harus diisi frasa umum yang menaungi ketiga rincian tersebut. **Mineral logam** (**opsi B**) tepat merangkum nikel, bauksit, dan tembaga. Sebaliknya, **opsi A**, **C**, **D**, dan **E** merujuk pada kelompok benda di luar rincian kalimat (1) sehingga merusak kohesi wacana.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> 'Pada hari Kamis pekan depan, kementerian akan menyalurkan bantuan bibit tanaman padi tahan kekeringan kepada kelompok tani di wilayah pantura.'\n\nPerbaikan yang PALING TEPAT agar kalimat di atas menjadi efektif tanpa pemborosan makna sesuai kaidah EYD V adalah ....",
+      "opsi_jawaban": [
+        "A. mengganti frasa *pada hari Kamis* menjadi *hari Kamis*",
+        "B. menghilangkan kata *hari* dan kata *tanaman*",
+        "C. mengubah frasa *bibit tanaman padi* menjadi *benih tumbuhan padi*",
+        "D. menghilangkan kata *pekan* dan kata *bibit*",
+        "E. mengganti kata *wilayah* menjadi *daerah kawasan*"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kalimat stimulus mengalami dua pemborosan makna akibat menggabungkan kata umum dan kata khusus secara bersamaan, yaitu pada frasa **hari Kamis** (*Kamis* sudah bermakna nama hari) dan **tanaman padi** (*padi* sudah bermakna jenis tanaman). Menghilangkan kata umum **hari** dan **tanaman** (**opsi B**) menjadikan kalimat hemat tanpa mengubah informasi utama. **Opsi A** dan **C** tetap mempertahankan pemborosan, **opsi D** menghilangkan keterangan penting, sedangkan **opsi E** justru menambah pemborosan baru.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut!\n\n> (1) Museum sejarah kota tersebut memamerkan beragam koleksi senjata tradisional, mulai dari keris, rencong, hingga mandau. (2) Seluruh artefak bernilai tinggi itu dirawat menggunakan cairan khusus berbahan dasar minyak cengkih agar terhindar dari karat. (3) Selain itu, ruang pamer dilengkapi lampu sorot berwarna kuning lembut untuk menjaga keaslian motif bilah.\n\nManakah pernyataan yang PALING TEPAT terkait ketepatan hubungan makna kata dalam paragraf di atas?",
+      "opsi_jawaban": [
+        "A. Kata *artefak* pada kalimat (2) terlalu sempit untuk merangkum rincian pada kalimat (1).",
+        "B. Frasa *minyak cengkih* pada kalimat (2) sebaiknya diganti menjadi *cairan tumbuhan* agar lebih jelas.",
+        "C. Kata *berwarna* pada kalimat (3) perlu dihilangkan karena makna warna sudah tercakup dalam kata *kuning*.",
+        "D. Rincian *keris, rencong,* dan *mandau* pada kalimat (1) tidak memiliki kesamaan kelompok benda.",
+        "E. Frasa *senjata tradisional* pada kalimat (1) harus dihapus karena menimbulkan pemborosan makna."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Pada kalimat (3), penggunaan kata **berwarna** sebelum kata **kuning** menimbulkan pemborosan makna karena *kuning* secara spesifik sudah menunjukkan jenis warna, sehingga cukup ditulis *lampu sorot kuning lembut* (**opsi C**). **Opsi A** salah karena *artefak* tepat merangkum benda bersejarah di kalimat (1). **Opsi B** justru memperkabur makna spesifik menjadi umum. **Opsi D** keliru karena ketiganya termasuk senjata tradisional, dan **opsi E** salah karena *senjata tradisional* berfungsi sebagai pengantar rincian, bukan pemborosan.",
+      "visual": null
+    }
+  ]
+}

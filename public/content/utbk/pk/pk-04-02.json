@@ -1,0 +1,118 @@
+{
+  "kode_subbab": "pk-04-02",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 4: Statistika Dasar",
+  "judul_subbab": "Ukuran Penyebaran (Jangkauan, Kuartil, Simpangan)",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Semua anggota pada himpunan data $A = \\{2, 5, 8, 11\\}$ dikalikan $3$ lalu dikurangi $4$. Bagaimana perubahan nilai simpangan bakunya?",
+      "opsi_cepat": [
+        "Berubah menjadi $3s - 4$",
+        "Berubah menjadi $3s$"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Ukuran penyebaran hanya dipengaruhi operasi perkalian atau pembagian, sedangkan penjumlahan atau pengurangan menggeser seluruh data secara seragam sehingga jarak antardata tetap."
+    },
+    "konsep_inti_markdown": "- **Jangkauan ($R$):** $x_{\\max} - x_{\\min}$.\n- **Kuartil & Hamparan ($H$):** Urutkan data; $Q_2$ (median), $Q_1$ (median paruh bawah), $Q_3$ (median paruh atas), dan $H = Q_3 - Q_1$.\n- **Simpangan Rata-rata ($SR$), Ragam ($s^2$), Simpangan Baku ($s$):**\n$$SR = \\frac{\\sum |x_i - \\bar{x}|}{n}, \\quad s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}, \\quad s = \\sqrt{s^2}$$\n- **Transformasi Linear ($y = ax + b$):** Ukuran sebaran baru $= |a| \\times$ ukuran sebaran lama (konstanta $b$ diabaikan).",
+    "radar_jebakan_utbk": [
+      "Lupa mengurutkan data dari terkecil ke terbesar sebelum menentukan posisi kuartil ($Q_1, Q_2, Q_3$) dan median.",
+      "Ikut mengurangkan atau menjumlahkan konstanta $b$ pada jangkauan atau simpangan baku saat data ditransformasi menjadi $ax + b$."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Kombinasi Syarat Jangkauan ($R = x_{\\max} - x_{\\min}$), Mean, dan Median untuk Menentukan Data Lengkap",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Empat bilangan asli terurut $a \\le b \\le c \\le d$ memiliki mean $7,5$, median $7$, dan jangkauan $6$. Tentukan nilai $d$ jika modus data tersebut tunggal dan bernilai $7$.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nMisalkan data terurut adalah $a \\le b \\le c \\le d$. Dari median $7$, diperoleh $\\frac{b+c}{2} = 7 \\Rightarrow b+c = 14$. Karena modus tunggal bernilai $7$, dua data tengah harus bernilai sama, yaitu $b = 7$ dan $c = 7$. Selanjutnya, dari mean $7,5$ untuk $4$ data, jumlah seluruh data adalah $a + 7 + 7 + d = 4 \\times 7,5 = 30$, sehingga $a + d = 16$. Gunakan syarat jangkauan $d - a = 6$. Jumlahkan kedua persamaan tersebut: $(a + d) + (d - a) = 16 + 6 \\Rightarrow 2d = 22$, maka diperoleh $d = 11$ dan $a = 5$.\n\n**Jalur Taktis UTBK**\nKunci langsung bagian tengah menggunakan kombinasi median dan modus tunggal: jika median sama dengan modus tunggal pada data genap, dua suku tengah pasti bernilai sama ($b = c = 7$). Hitung cepat nilai ujung terbesar: $d = \\frac{\\text{sisa jumlah} + R}{2} = \\frac{(30 - 14) + 6}{2} = 11$.",
+      "kunci_pembeda": "Gunakan modus dan median untuk mengunci nilai data tengah terlebih dahulu sebelum membagi sisa jumlah dengan persamaan jangkauan $x_{\\max} - x_{\\min}$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Penentuan Kuartil Bawah ($Q_1$), Kuartil Tengah ($Q_2$), Kuartil Atas ($Q_3$), dan Jangkauan Antarkuartil ($H = Q_3 - Q_1$)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui data skor kuis $7$ siswa adalah $14, 10, 18, 12, 20, 15, 11$. Tentukan nilai jangkauan antarkuartil ($H$) dari kumpulan data tersebut.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nLangkah pertama adalah mengurutkan ketujuh data dari nilai terkecil hingga terbesar: $10, 11, 12, 14, 15, 18, 20$. Karena banyak data $n = 7$ (ganjil), kuartil tengah ($Q_2$) tepat berada pada suku ke-$\\frac{7+1}{2} = 4$, yaitu $Q_2 = 14$. Selanjutnya, bagi data menjadi dua kelompok simetris tanpa menyertakan $Q_2$. Kelompok bawah berisi tiga data pertama ($10, 11, 12$), sehingga kuartil bawah ($Q_1$) adalah nilai tengahnya, yakni $11$. Kelompok atas berisi tiga data terakhir ($15, 18, 20$), sehingga kuartil atas ($Q_3$) adalah $18$. Terakhir, hitung jangkauan antarkuartil atau hamparan dengan rumus $H = Q_3 - Q_1 = 18 - 11 = 7$.\n\n**Jalur Taktis UTBK**\nUntuk $n = 7$, langsung lingkari posisi ke-$2$, ke-$4$, dan ke-$6$ setelah data terurut sebagai $Q_1, Q_2, Q_3$. Tanpa menulis rumus indeks, cukup kurangkan urutan ke-$6$ dengan urutan ke-$2$: $H = x_6 - x_2 = 18 - 11 = 7$.",
+      "kunci_pembeda": "Kuartil membagi data terurut menjadi empat bagian sama banyak sehingga $H = Q_3 - Q_1$ mengukur sebaran $50\\%$ data tengah tanpa terpengaruh pencilan ekstrem.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Simpangan Rata-rata, Ragam (Variansi), dan Simpangan Baku untuk Data Kecil",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Diberikan himpunan data $S = \\{4, 6, 8, 10, 12\\}$. Tentukan nilai simpangan rata-rata ($SR$), ragam ($s^2$), dan simpangan baku ($s$) dari himpunan tersebut.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nHitung rata-rata terlebih dahulu: $\\bar{x} = \\frac{4+6+8+10+12}{5} = 8$. Selanjutnya, tentukan selisih setiap data terhadap rata-rata, yaitu $-4, -2, 0, 2, 4$. Simpangan rata-rata diperoleh dari rata-rata nilai mutlak selisih tersebut: $SR = \\frac{|-4|+|-2|+|0|+|2|+|4|}{5} = \\frac{12}{5} = 2,4$. Untuk ragam ($s^2$), kuadratkan setiap selisih lalu bagi dengan banyak data: $s^2 = \\frac{(-4)^2+(-2)^2+0^2+2^2+4^2}{5} = \\frac{16+4+0+4+16}{5} = \\frac{40}{5} = 8$. Simpangan baku merupakan akar kuadrat dari ragam, sehingga $s = \\sqrt{8} = 2\\sqrt{2}$. Pastikan tidak tertukar antara ragam ($s^2$) yang masih berbentuk kuadrat dan simpangan baku ($s$) yang sudah ditarik akarnya.\n\n**Jalur Taktis UTBK**\nPerhatikan bahwa $4, 6, 8, 10, 12$ membentuk barisan aritmetika dengan beda $b = 2$ dan $n = 5$. Gunakan rumus khusus $5$ suku berjarak sama: $s^2 = 2b^2 = 2(2^2) = 8$, sehingga $s = 2\\sqrt{2}$ dan $SR = 1,2b = 2,4$ dalam hitungan detik.",
+      "kunci_pembeda": "Simpangan rata-rata menggunakan nilai mutlak selisih $|x_i - \\bar{x}|$, sedangkan ragam mengkuadratkan selisih tersebut sebelum ditarik akar menjadi simpangan baku.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Identifikasi Himpunan Data yang Memiliki Simpangan Baku Terbesar/Terkecil Tanpa Menghitung Penuh",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Manakah di antara keempat himpunan berikut yang memiliki simpangan baku terkecil: $P = \\{10, 10, 10, 10\\}$, $Q = \\{1, 5, 5, 9\\}$, $R = \\{1, 1, 9, 9\\}$, atau $S = \\{50, 51, 51, 52\\}$?",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nSimpangan baku mengukur seberapa jauh sebaran tiap anggota data terhadap nilai rata-ratanya ($\\bar{x}$). Pada himpunan $P = \\{10, 10, 10, 10\\}$, seluruh data bernilai identik sehingga $\\bar{x} = 10$ dan selisih setiap elemen terhadap rata-rata adalah nol; akibatnya simpangan baku $s_P = 0$. Pada himpunan $S = \\{50, 51, 51, 52\\}$, meski angkanya besar, jaraknya terhadap $\\bar{x} = 51$ hanya $-1, 0, 0, 1$ sehingga ragamnya kecil ($s_S^2 = 0,5$). Sebaliknya, pada $Q = \\{1, 5, 5, 9\\}$ dan $R = \\{1, 1, 9, 9\\}$, data menyebar jauh dari $\\bar{x} = 5$, dengan $R$ memiliki simpangan baku terbesar karena seluruh datanya menumpuk di dua titik ekstrem ($1$ dan $9$).\n\n**Jalur Taktis UTBK**\nAbaikan besar kecilnya angka satuan seperti puluhan atau ratusan pada $S$; fokus murni pada kerapatan antardata. Data kembar seluruhnya otomatis memiliki $s = 0$ (terkecil mutlak), sedangkan data yang terkonsentrasi di ujung-ujung ekstrem menghasilkan $s$ terbesar.",
+      "kunci_pembeda": "Besarnya simpangan baku ditentukan oleh kerapatan jarak data terhadap rata-ratanya (konsentrasi di ujung ekstrem memperbesar $s$), bukan oleh besar kecilnya nominal angka.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Data skor lima peserta seleksi yang telah diurutkan dari terkecil ke terbesar adalah $6, a, b, 12, c$ dengan semua nilai berupa bilangan bulat. Diketahui median data tersebut adalah $9$, jangkauan antarkuartilnya $6$, dan jangkauannya $8$.\n\nPerhatikan pernyataan berikut:\n(1) Nilai $c = 14$\n(2) Nilai $a = 8$\n(3) Rata-rata kelima data tersebut adalah $9,8$\n(4) Kuartil atas ($Q_3$) data tersebut adalah $12$\n\nManakah pernyataan di atas yang bernilai benar?",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pilihan benar."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Dari urutan $6, a, b, 12, c$, median $b = 9$. Jangkauan $c - 6 = 8 \\Rightarrow c = 14$, sehingga **(1) benar**. Kuartil atas adalah $Q_3 = \\frac{12+14}{2} = 13$, maka **(4) salah**. Dari $H = Q_3 - Q_1 = 6$, didapat $Q_1 = 7$. Karena $Q_1 = \\frac{6+a}{2} = 7$, diperoleh $a = 8$, sehingga **(2) benar**. Rata-rata data adalah $\\frac{6+8+9+12+14}{5} = \\frac{49}{5} = 9,8$, sehingga **(3) benar**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diberikan dua himpunan data hasil pengukuran berikut:\n$A = \\{12, 14, 16, 18, 20\\}$\n$B = \\{102, 102, 106, 110, 110\\}$\n\nBerdasarkan informasi di atas, manakah hubungan yang tepat antara kuantitas $P$ dan $Q$ berikut?\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| Ragam (variansi) himpunan $A$ | Ragam (variansi) himpunan $B$ |",
+      "opsi_jawaban": [
+        "A. $P > Q$",
+        "B. $Q > P$",
+        "C. $P = Q$",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kedua himpunan sama-sama memiliki $5$ data dengan jangkauan $8$. Namun, simpangan terhadap rata-rata pada $A$ ($\\bar{x}_A = 16$) tersebar merata: $-4, -2, 0, 2, 4$, menghasilkan $P = \\frac{16+4+0+4+16}{5} = 8$. Sementara pada $B$ ($\\bar{x}_B = 106$), data menumpuk di titik ekstrem dengan simpangan $-4, -4, 0, 4, 4$, menghasilkan $Q = \\frac{16+16+0+16+16}{5} = 12,8$. Jadi, $Q > P$ (opsi C terjebak karena mengira jangkauan sama pasti ragam sama).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Empat data bilangan bulat memiliki rata-rata $10$ dan simpangan rata-rata $3$. Jika setiap nilai pada data tersebut dikalikan $2$ kemudian dikurangi $5$, tentukan nilai simpangan rata-rata dari data yang baru!",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "6",
+      "bedah_cepat_markdown": "Pada transformasi linear $y = ax + b$, seluruh ukuran penyebaran (termasuk jangkauan, hamparan, simpangan rata-rata, dan simpangan baku) hanya berubah sebesar faktor pengali $|a|$, sedangkan pengurangan konstanta $b$ tidak mengubah jarak antardata. Dengan $a = 2$ dan $SR_{\\text{lama}} = 3$, diperoleh $SR_{\\text{baru}} = |2| \\times 3 = 6$.",
+      "visual": null
+    }
+  ]
+}

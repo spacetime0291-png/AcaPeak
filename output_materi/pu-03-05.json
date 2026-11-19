@@ -1,0 +1,151 @@
+{
+  "kode_subbab": "pu-03-05",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 3: Penalaran Kuantitatif",
+  "judul_subbab": "Interpretasi Data (Tabel, Grafik, Diagram)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Grafik volume ekspor kopi mencatat kenaikan dari 20 ton (2022) menjadi 35 ton (2023), lalu naik lagi menjadi 55 ton (2024). Pada periode manakah persentase pertumbuhan tertinggi terjadi?",
+      "opsi_cepat": [
+        "2022–2023 (naik 15 ton)",
+        "2023–2024 (naik 20 ton)"
+      ],
+      "jawaban_benar_index": 0,
+      "penjelasan_kilat": "Kenaikan absolut terbesar memang pada 2023–2024 (+20 ton), tetapi persentase pertumbuhan selalu dibagi basis awal: $\\frac{15}{20} = 75\\%$ (2022–2023) lebih tinggi daripada $\\frac{20}{35} \\approx 57,1\\%$ (2023–2024)."
+    },
+    "konsep_inti_markdown": "**Interpretasi data PU** menguji ketelitian membaca tren, proporsi, dan perbandingan multi-variabel tanpa kalkulator:\n\n* **Persentase Perubahan:** Selalu bagi selisih dengan **nilai awal**, bukan nilai akhir ($\\frac{\\Delta}{\\text{Awal}} \\times 100\\%$).\n* **Proporsi Lingkaran:** Ubah sudut ($360^{\\circ}$) atau persen ($100\\%$) ke nilai absolut lewat pecahan sederhana.\n* **Waspada Visual:** Periksa skala sumbu Y, sumbu ganda, serta label **kumulatif vs harian**.\n* **Hitung Taktis:** Gunakan aproksimasi pecahan patokan ($25\\%, 33,3\\%, 50\\%$) untuk eliminasi opsi di bawah $60$ detik.",
+    "radar_jebakan_utbk": [
+      "Menganggap lonjakan batang atau garis paling curam otomatis memiliki persentase pertumbuhan tertinggi tanpa membagi selisih terhadap basis awal.",
+      "Tertukar membaca nilai pada grafik dua sumbu Y berbeda atau mengira grafik data kumulatif yang terus menanjak berarti kinerja harian selalu meningkat."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='26' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>Volume Ekspor Kopi (Ton)</text><line x1='54' y1='40' x2='54' y2='190' stroke='#1E293B' stroke-width='2'/><line x1='54' y1='190' x2='330' y2='190' stroke='#1E293B' stroke-width='2'/><line x1='54' y1='140' x2='330' y2='140' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='54' y1='90' x2='330' y2='90' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='54' y1='40' x2='330' y2='40' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><text x='46' y='194' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>0</text><text x='46' y='144' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>20</text><text x='46' y='94' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>40</text><text x='46' y='44' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>60</text><rect x='74' y='150' width='36' height='40' fill='#3B82F6' rx='3'/><rect x='138' y='140' width='36' height='50' fill='#3B82F6' rx='3'/><rect x='202' y='102.5' width='36' height='87.5' fill='#10B981' rx='3'/><rect x='266' y='52.5' width='36' height='137.5' fill='#F59E0B' rx='3'/><text x='92' y='144' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>16</text><text x='156' y='134' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>20</text><text x='220' y='96' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>35</text><text x='284' y='46' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>55</text><text x='92' y='208' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2021</text><text x='156' y='208' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2022</text><text x='220' y='208' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2023</text><text x='284' y='208' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2024</text></svg>",
+      "caption": "Perbandingan kenaikan absolut terbesar (2023–2024) vs persentase pertumbuhan tertinggi (2022–2023)"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Kalkulasi Persentase Pertumbuhan/Penurunan Tertinggi dari Grafik Garis/Batang",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Laporan Dinas Pariwisata mencatat jumlah kunjungan wisatawan (ribu orang) selama empat bulan berturut-turut: Januari $40$, Februari $56$, Maret $70$, dan April $84$. Tentukan bulan dengan persentase kenaikan kunjungan tertinggi.",
+      "bedah_pola_markdown": "**Pola Kunci:** Persentase perubahan dihitung dari rasio selisih terhadap **nilai periode sebelumnya**, bukan selisih absolut terbesar semata.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Hitung selisih absolut tiap transisi:** Januari ke Februari naik $+16$ (basis $40$), Februari ke Maret naik $+14$ (basis $56$), dan Maret ke April naik $+14$ (basis $70$).\n2. **Eliminasi pecahan bernilai kecil:** Karena pembilang Februari–Maret dan Maret–April sama-sama $14$, otomatis $\\frac{14}{56} > \\frac{14}{70}$ (basis lebih kecil menghasilkan rasio lebih besar).\n3. **Bandingkan kandidat utama lewat aproksimasi:** Bandingkan $\\frac{16}{40}$ dengan $\\frac{14}{56}$. Sederhanakan keduanya: $\\frac{16}{40} = \\frac{2}{5} = 40\\%$, sedangkan $\\frac{14}{56} = \\frac{1}{4} = 25\\%$.\n4. **Kunci jawaban:** Persentase kenaikan tertinggi terjadi pada bulan **Februari** sebesar $40\\%$ tanpa perlu membagi desimal panjang.",
+      "kunci_pembeda": "Membandingkan rasio perubahan relatif terhadap titik awal masing-masing interval, bukan sekadar melihat selisih tertinggi secara visual.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Konversi Proporsi Sudut/Persen ke Nilai Absolut pada Diagram Lingkaran (Pie Chart)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diagram lingkaran alokasi anggaran riset kampus senilai $\\text{Rp}720.000.000,00$ terbagi atas: Peralatan Lab $135^{\\circ}$, Bahan Habis Pakai $90^{\\circ}$, Publikasi $25\\%$, dan sisanya Honorarium Peneliti. Tentukan selisih anggaran Peralatan Lab dan Honorarium Peneliti.",
+      "bedah_pola_markdown": "**Pola Kunci:** Satu lingkaran penuh bernilai $360^{\\circ}$ atau $100\\%$; samakan seluruh sektor ke satu satuan (sudut atau persen) sebelum mengalikan dengan total populasi.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Samakan satuan seluruh sektor:** Ubah Publikasi $25\\%$ ke derajat: $\\frac{25}{100} \\times 360^{\\circ} = 90^{\\circ}$.\n2. **Hitung sisa sudut Honorarium:** Kurangkan total lingkaran dengan tiga sektor diketahui: $360^{\\circ} - (135^{\\circ} + 90^{\\circ} + 90^{\\circ}) = 360^{\\circ} - 315^{\\circ} = 45^{\\circ}$.\n3. **Gunakan selisih proporsi langsung (hindari menghitung dua kali):** Selisih sudut Peralatan Lab dan Honorarium adalah $135^{\\circ} - 45^{\\circ} = 90^{\\circ}$, yang tepat merupakan $\\frac{90^{\\circ}}{360^{\\circ}} = \\frac{1}{4}$ lingkaran.\n4. **Kalikan dengan total anggaran:** $\\frac{1}{4} \\times \\text{Rp}720.000.000,00 = \\text{Rp}180.000.000,00$. Coret semua opsi selain $\\text{Rp}180$ juta.",
+      "kunci_pembeda": "Menyeragamkan satuan derajat dan persentase lalu mengoperasikan selisih atau jumlah proporsinya sebelum dikalikan nilai total.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Analisis Tabel Silang Multi-Variabel (Mencari Rasio, Rata-rata, atau Selisih Ekstrem)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tabel produksi pabrik mencatat output unit dan jumlah pekerja di tiga cabang: Cabang A ($480$ unit, $12$ pekerja), Cabang B ($630$ unit, $15$ pekerja), dan Cabang C ($520$ unit, $13$ pekerja). Tentukan cabang dengan produktivitas per pekerja tertinggi serta rata-rata output seluruh cabang.",
+      "bedah_pola_markdown": "**Pola Kunci:** Untuk membandingkan rasio atau rata-rata pada tabel silang, gunakan pembagian langsung sederhana dan metode **rata-rata sementara** agar angka tidak membengkak.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Hitung rasio per baris secara terpisah:**\n   * Cabang A: $\\frac{480}{12} = 40$ unit/pekerja.\n   * Cabang B: $\\frac{630}{15} = 42$ unit/pekerja (tertinggi).\n   * Cabang C: $\\frac{520}{13} = 40$ unit/pekerja.\n2. **Gunakan titik acuan untuk rata-rata total:** Pilih acuan $500$ unit agar penjumlahan ringan. Selisih tiap cabang terhadap $500$ adalah $-20$ (A), $+130$ (B), dan $+20$ (C).\n3. **Jumlahkan selisih dan bagi banyaknya cabang:** Total selisih $= -20 + 130 + 20 = +130$, sehingga rata-rata keseluruhan adalah $500 + \\frac{130}{3} = 543,33$ unit.\n4. **Trik Eliminasi:** Karena rata-rata wajib berada di antara nilai minimum ($480$) dan maksimum ($630$), segera coret opsi ekstrem di luar rentang tersebut.",
+      "kunci_pembeda": "Mengombinasikan penyederhanaan rasio antar-kolom dengan metode titik acuan rata-rata sementara untuk menghindari penjumlahan bilangan besar.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Prediksi Tren Masa Depan (Ekstrapolasi Linear Berdasarkan Laju Data Historis)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Data penjualan sepeda listrik sebuah distributor dari tahun $2021$ hingga $2024$ tercatat berturut-turut sebesar $1.250$, $1.400$, $1.550$, dan $1.700$ unit. Jika laju pertumbuhan linear tetap bertahan, tentukan prediksi penjualan pada tahun $2027$.",
+      "bedah_pola_markdown": "**Pola Kunci:** Ekstrapolasi linear mengasumsikan selisih perubahan tiap satuan waktu bersifat konstan ($\\Delta y / \\Delta t = \\text{tetap}$), sehingga proyeksi cukup mengalikan laju tetap dengan selisih periode.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Verifikasi laju perubahan historis:** Cek selisih antar-tahun berurutan: $1.400 - 1.250 = +150$, $1.550 - 1.400 = +150$, dan $1.700 - 1.550 = +150$ unit/tahun.\n2. **Hitung jarak tahun ke target:** Dari titik data terakhir ($2024$) menuju tahun target ($2027$) terdapat selisih $2027 - 2024 = 3$ tahun.\n3. **Kalikan laju tetap dengan selisih tahun:** Total penambahan proyeksi $= 3 \\times 150 = +450$ unit.\n4. **Tambahkan ke titik terakhir:** Prediksi tahun $2027 = 1.700 + 450 = 2.150$ unit. Segera eliminasi seluruh opsi yang tidak berakhiran angka $50$.",
+      "kunci_pembeda": "Mengunci selisih konstan antar-periode historis lalu mengalikannya dengan rentang waktu menuju periode masa depan yang ditanyakan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Jebakan Visual Grafik (Membaca Dua Sumbu Y Berbeda atau Data Kumulatif vs Harian)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Grafik kumulatif donasi bencana mencatat total terkumpul hingga Senin $\\text{Rp}20$ juta, Selasa $\\text{Rp}45$ juta, Rabu $\\text{Rp}60$ juta, dan Kamis $\\text{Rp}70$ juta. Tentukan pada hari apa penerimaan donasi harian mengalami penurunan meskipun garis grafik terus menanjak.",
+      "bedah_pola_markdown": "**Pola Kunci:** Grafik **kumulatif** selalu naik selama ada tambahan positif; kinerja harian sebenarnya diperoleh dari **selisih** antartitik, sedangkan grafik **dua sumbu Y** wajib dirujuk ke skala masing-masing.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Konversi nilai kumulatif menjadi nilai harian:**\n   * Senin: $\\text{Rp}20$ juta.\n   * Selasa: $45 - 20 = \\text{Rp}25$ juta (naik).\n   * Rabu: $60 - 45 = \\text{Rp}15$ juta (turun dari Selasa).\n   * Kamis: $70 - 60 = \\text{Rp}10$ juta (turun lagi).\n2. **Identifikasi titik balik penurunan:** Penurunan penerimaan harian mulai terjadi pada hari **Rabu** ($\\text{Rp}15$ juta dibanding Selasa $\\text{Rp}25$ juta) dan mencapai titik terendah pada **Kamis** ($\\text{Rp}10$ juta).\n3. **Waspadai sumbu ganda:** Jika grafik memiliki sumbu kiri dan kanan, pastikan garis tidak terpotong di tengah untuk dibandingkan langsung tanpa membaca angkanya.",
+      "kunci_pembeda": "Membongkar ilusi kemiringan grafik dengan mengurangkan data kumulatif antartitik dan memisahkan pembacaan skala pada dua sumbu Y berbeda.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 6,
+      "nama_variasi": "Penentuan Keputusan Optimal Berdasarkan Kriteria Berlapis dari Tabel Data",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Panitia lomba memilih satu vendor cetak dari empat kandidat dengan syarat wajib: waktu pengerjaan maksimal $3$ hari dan kapasitas minimal $500$ eksemplar, lalu dipilih harga terendah. Data kandidat: Vendor P ($2$ hari, $600$ eks, $\\text{Rp}12$ juta), Q ($4$ hari, $800$ eks, $\\text{Rp}10$ juta), R ($3$ hari, $450$ eks, $\\text{Rp}11$ juta), S ($3$ hari, $550$ eks, $\\text{Rp}11,5$ juta).",
+      "bedah_pola_markdown": "**Pola Kunci:** Terapkan **eliminasi bertingkat** mulai dari syarat batas mutlak (*hard constraint*), baru bandingkan variabel optimasi (harga terendah atau skor tertinggi) pada kandidat yang tersisa.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Saring syarat batas pertama (waktu $\\le 3$ hari):** Vendor Q butuh $4$ hari, sehingga **Q langsung gugur** meski harganya paling murah ($\\text{Rp}10$ juta).\n2. **Saring syarat batas kedua (kapasitas $\\ge 500$ eksemplar):** Dari P, R, dan S, kapasitas Vendor R hanya $450$ eksemplar, sehingga **R ikut gugur**.\n3. **Bandingkan kandidat lolos pada kriteria optimasi:** Tersisa Vendor P ($\\text{Rp}12$ juta) dan Vendor S ($\\text{Rp}11,5$ juta).\n4. **Kunci keputusan optimal:** Pilih **Vendor S** karena memenuhi seluruh syarat wajib sekaligus menawarkan biaya lebih rendah dibandingkan Vendor P.",
+      "kunci_pembeda": "Mencoret baris yang melanggar ambang batas mutlak terlebih dahulu sebelum membandingkan nilai optimal di antara kandidat yang lolos.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Grafik berikut menyajikan data jumlah penumpang kereta cepat (dalam ribu orang) pada empat triwulan berurutan.\n\nBerdasarkan data grafik tersebut, apabila laju pertumbuhan linear sejak Triwulan II terus bertahan hingga Triwulan V, berapakah perkiraan jumlah penumpang pada Triwulan V serta pada periode manakah persentase pertumbuhan tertinggi terjadi?",
+      "opsi_jawaban": [
+        "A. $310$ ribu orang; Triwulan I ke Triwulan II",
+        "B. $330$ ribu orang; Triwulan II ke Triwulan III",
+        "C. $330$ ribu orang; Triwulan III ke Triwulan IV",
+        "D. $350$ ribu orang; Triwulan II ke Triwulan III",
+        "E. $350$ ribu orang; Triwulan III ke Triwulan IV"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Sejak Triwulan II ($150$), penumpang naik tetap sebesar $+60$ ribu per triwulan ($210$ pada Tw III dan $270$ pada Tw IV), sehingga prediksi Tw V adalah $270 + 60 = 330$ ribu (coret **A**, **D**, **E**). Selanjutnya, bandingkan rasio persentase kenaikan tiap interval: Tw I–II naik $\\frac{30}{120} = 25\\%$, Tw II–III naik $\\frac{60}{150} = 40\\%$, dan Tw III–IV naik $\\frac{60}{210} \\approx 28,6\\%$. Persentase tertinggi terjadi pada **Tw II ke Tw III** (**B**), sedangkan **C** terjebak selisih absolut.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='24' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>Penumpang Kereta Cepat (Ribu Orang)</text><line x1='56' y1='40' x2='56' y2='176' stroke='#1E293B' stroke-width='2'/><line x1='56' y1='176' x2='330' y2='176' stroke='#1E293B' stroke-width='2'/><line x1='56' y1='168' x2='330' y2='168' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='56' y1='108' x2='330' y2='108' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='56' y1='48' x2='330' y2='48' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><text x='48' y='172' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>100</text><text x='48' y='112' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>200</text><text x='48' y='52' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>300</text><polyline points='92,156 162,138 232,102 302,66' fill='none' stroke='#3B82F6' stroke-width='2.5'/><circle cx='92' cy='156' r='4.5' fill='#3B82F6'/><circle cx='162' cy='138' r='4.5' fill='#3B82F6'/><circle cx='232' cy='102' r='4.5' fill='#10B981'/><circle cx='302' cy='66' r='4.5' fill='#F59E0B'/><text x='92' y='145' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>120</text><text x='162' y='127' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>150</text><text x='232' y='91' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>210</text><text x='302' y='55' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>270</text><text x='92' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Tw I</text><text x='162' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Tw II</text><text x='232' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Tw III</text><text x='302' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Tw IV</text></svg>",
+        "caption": "Grafik jumlah penumpang kereta cepat Triwulan I hingga IV"
+      }
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Survei penggunaan moda transportasi harian terhadap $1.800$ pekerja di pusat kota disajikan dalam diagram lingkaran dengan rincian sudut sektor: Kereta Komuter $140^{\\circ}$, Bus Rapid Transit $80^{\\circ}$, Kendaraan Pribadi $25\\%$, dan sisanya Sepeda/Jalan Kaki. Berapakah selisih jumlah pekerja yang menggunakan Kereta Komuter dengan Sepeda/Jalan Kaki?",
+      "opsi_jawaban": [
+        "A. $250$ pekerja",
+        "B. $350$ pekerja",
+        "C. $450$ pekerja",
+        "D. $500$ pekerja",
+        "E. $700$ pekerja"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Ubah sektor Kendaraan Pribadi dari persen ke sudut lingkaran: $25\\% \\times 360^{\\circ} = 90^{\\circ}$. Sudut sisa untuk Sepeda/Jalan Kaki adalah $360^{\\circ} - (140^{\\circ} + 80^{\\circ} + 90^{\\circ}) = 50^{\\circ}$. Hitung selisih sudut Kereta Komuter dan Sepeda/Jalan Kaki secara langsung: $140^{\\circ} - 50^{\\circ} = 90^{\\circ}$ atau $\\frac{90^{\\circ}}{360^{\\circ}} = \\frac{1}{4}$ lingkaran. Kalikan dengan total responden: $\\frac{1}{4} \\times 1.800 = 450$ pekerja (**C**). **A** ($50^{\\circ}$) hanya menghitung Sepeda/Jalan Kaki, sedangkan **E** ($140^{\\circ}$) hanya menghitung Kereta Komuter.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        6
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Sebuah perusahaan logistik mengevaluasi empat armada pengiriman berdasarkan tabel kinerja bulanan berikut:\n\n| Armada | Total Paket | Jumlah Kurir | Biaya Operasional |\n| :--- | :---: | :---: | :---: |\n| **Alpha** | $1.200$ | $15$ | $\\text{Rp}18$ juta |\n| **Beta** | $1.500$ | $20$ | $\\text{Rp}21$ juta |\n| **Gamma** | $1.350$ | $15$ | $\\text{Rp}22$ juta |\n| **Delta** | $1.600$ | $16$ | $\\text{Rp}24$ juta |\n\nManajemen menetapkan syarat wajib produktivitas minimal $85$ paket/kurir dan memilih armada dengan biaya per paket paling murah di antara kandidat yang lolos. Armada manakah yang dipilih?",
+      "opsi_jawaban": [
+        "A. Alpha, karena biaya operasional totalnya paling rendah",
+        "B. Beta, karena biaya per paketnya paling rendah sebesar Rp14.000,00",
+        "C. Gamma, karena produktivitasnya tertinggi dan biayanya paling efisien",
+        "D. Delta, karena lolos syarat produktivitas dengan biaya per paket Rp15.000,00",
+        "E. Gamma dan Delta, karena keduanya memiliki rasio biaya per paket yang identik"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Saring syarat wajib produktivitas ($\\ge 85$ paket/kurir): **Alpha** ($\\frac{1.200}{15} = 80$) dan **Beta** ($\\frac{1.500}{20} = 75$) langsung gugur meski total biayanya lebih rendah (**A** dan **B** salah). Kandidat yang lolos adalah **Gamma** ($\\frac{1.350}{15} = 90$ paket/kurir) dan **Delta** ($\\frac{1.600}{16} = 100$ paket/kurir). Bandingkan biaya per paket keduanya: Gamma $= \\frac{\\text{Rp}22\\text{ juta}}{1.350} \\approx \\text{Rp}16.296,00$, sedangkan Delta $= \\frac{\\text{Rp}24\\text{ juta}}{1.600} = \\text{Rp}15.000,00$. Jadi, armada terpilih adalah **Delta** (**D**).",
+      "visual": null
+    }
+  ]
+}

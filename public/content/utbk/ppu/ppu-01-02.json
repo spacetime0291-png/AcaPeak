@@ -1,142 +1,133 @@
 {
-  "metadata": {
-    "id": "ppu-1-2",
-    "subtest": "PPU",
-    "chapter_num": 1,
-    "chapter_title": "Makna dan Relasi Kata",
-    "subchapter_num": "1.2",
-    "subchapter_title": "Sinonim, Antonim, Homonim, dan Polisemi",
-    "title": "Sinonim, Antonim, Homonim, dan Polisemi",
-    "required_question_variations": [
-      "Identifikasi Relasi Polisemi vs Homonim (HOTS)",
-      "Kesepadanan Jenis Oposisi Makna (Antonim Relasional)",
-      "Presisi Diksi dan Kolokasi Sinonim Teks Ilmiah"
-    ],
-    "requires_svg": false,
-    "updated_at": "2026-11-10"
-  },
-  "content": {
-    "tactical_overview": "Relasi makna antarkata terbagi ke dalam empat poros utama: sinonim (kemiripan makna yang dipengaruhi register dan kolokasi), antonim (oposisi biner, bergradasi, relasional, hierarkis, atau majemuk), relasi bentuk-bunyi (homonim, homofon, homograf), dan polisemi (satu leksem beragam arti yang masih berkerabat konseptual). Kunci penyelesaian cepat adalah menguji asal usul kata untuk membedakan homonim vs polisemi, serta menyisipkan kata \"agak/sangat\" untuk membedakan antonim biner vs bergradasi.",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar dan Kerangka Teori\n\nRelasi makna antarkata dalam semantik bahasa Indonesia dikelompokkan ke dalam empat poros:\n\n## 1.1 Sinonim (Relasi Kemiripan Makna / Kesepadanan)\nSinonim adalah relasi semantik antara dua satuan ujaran atau lebih yang memiliki kesamaan atau kemiripan makna.\n\n- **Sinonim Mutlak (Absolut)**: Dapat saling bertukar posisi dalam semua konteks kalimat tanpa mengubah makna (*kosmetik* = *alat molek*, *laris* = *laku keras*).\n- **Sinonim Kontekstual (Proporsional)**: Hanya dapat saling menggantikan dalam konteks tertentu (*melihat drama* = *menonton drama*, tetapi bukan *menonton mikroskop*).\n- **Sinonim Nilai Rasa (Konotatif / Register)**: Makna leksikal sama tetapi berbeda tingkat kehalusan sosial:\n  - *Wafat* (penghormatan tokoh/agama)\n  - *Gugur* (pahlawan/pejuang di medan tempur)\n  - *Tewas* (korban kecelakaan/bencana alam/kriminalitas)\n  - *Mangkat* (raja/bangsawan tinggi)\n  - *Mampus* (kasar/makian)\n  - *Mati* (netral bagi hewan/tumbuhan/biologis umum)\n\n---\n\n## 1.2 Antonim (Relasi Oposisi Makna / Pertentangan)\n- **Antonim Biner (Komplementer / Mutlak)**: Pertentangan mutlak tanpa tingkatan tengah.  \n  *Rumus Logika*: $\\text{Tidak } A = B$ (*hidup* vs. *mati*, *jantan* vs. *betina*, *sah* vs. *batal*).\n- **Antonim Bergradasi (Kutub / Skalar / Relatif)**: Berada pada kontinum bertingkat dan memiliki zona netral.  \n  *Rumus Logika*: $\\text{Tidak } A \\neq B$ (*panas* vs. *dingin*, *besar* vs. *kecil*, *mahal* vs. *murah*).\n- **Antonim Relasional (Kebalikan / Korelatif)**: Pertentangan makna timbal balik; kehadiran satu entitas secara logis mensyaratkan entitas lain (*suami* vs. *istri*, *penjual* vs. *pembeli*, *guru* vs. *murid*).\n- **Antonim Hierarkis**: Satuan leksikal yang memiliki penjenjangan sistematis (*jenderal* vs. *prajurit*, *meter* vs. *sentimeter*).\n- **Antonim Majemuk**: Pertentangan makna satu kata terhadap lebih dari satu kata luar kelompok (*merah* vs. *bukan merah*).\n\n---\n\n## 1.3 Relasi Bentuk dan Bunyi: Homonim, Homofon, dan Homograf\n- **Homonim**: Ejaan dan lafal sama persis, makna berbeda total dan etimologi terpisah (*bisa* = racun ular vs. mampu; *genting* = gawat vs. atap rumah; *rapat* = pertemuan resmi vs. tidak renggang).\n- **Homofon**: Lafal sama, ejaan dan makna berbeda (*bank* tempat uang vs. *bang* panggilan saudara; *massa* kerumunan orang vs. *masa* kurun waktu; *sanksi* hukuman vs. *sangsi* ragu-ragu).\n- **Homograf**: Ejaan sama, lafal (terutama vokal pepet [ə] vs. taling [e]) dan makna berbeda:\n  - *Apel* [apəl] (upacara bendera) vs. *Apel* [apel] (buah)\n  - *Teras* [təras] (inti kayu/pejabat utama) vs. *Teras* [teras] (beranda rumah)\n  - *Mental* [məntal] (terpelanting) vs. *Mental* [mental] (kondisi kejiwaan)\n\n---\n\n## 1.4 Polisemi (Satu Kata Banyak Makna Berkerabat)\nPolisemi adalah kondisi sebuah leksem tunggal yang memiliki variasi makna lebih dari satu yang masih berkerabat secara konseptual atau metaforis dari satu makna induk asali.\n\n- **Contoh Polisemi \"Kepala\"**:\n  - Bagian tubuh atas (*makna dasar fisik*)\n  - Pemimpin lembaga (*kepala kantor*)\n  - Bagian teratas lembar surat (*kepala surat*)\n  - Rangkaian terdepan (*kepala kereta api*)\n- **Contoh Polisemi \"Kaki\"**:\n  - Anggota gerak tubuh bawah (*makna dasar fisik*)\n  - Lereng bagian bawah gunung (*kaki gunung*)\n  - Tiang penyangga perabot (*kaki meja*)\n\n---\n\n## 1.5 Matriks Komparasi: Homonim vs. Polisemi vs. Homofon vs. Homograf\n\n| Bentuk Relasi | Ejaan (Grafis) | Lafal (Fonis) | Makna | Asal-usul Leksikon |\n| :--- | :--- | :--- | :--- | :--- |\n| **Homonim** | Sama | Sama | Berbeda total | Berasal dari kata dasar berbeda (dua entitas kamus terpisah) |\n| **Polisemi** | Sama | Sama | Beragam tapi berkerabat | Berasal dari satu kata dasar yang sama (satu entitas kamus bercabang) |\n| **Homofon** | Berbeda | Sama | Berbeda total | Kata yang sepenuhnya berlainan asal-usulnya |\n| **Homograf** | Sama | Berbeda | Berbeda total | Kata yang sepenuhnya berlainan asal-usulnya |\n\n---\n\n# 2. Pola Jebakan Pengecoh UTBK\n\n1. **Jebakan Homonim vs. Polisemi**: Menyamaratakan pasangan kata yang memiliki kesamaan fungsi/posisi metaforis sebagai homonim, padahal merupakan relasi polisemi yang berakar dari satu leksem tubuh/letak yang sama.\n2. **Jebakan Kolokasi dan Nilai Rasa Sinonim**: Mengganti kata baku dengan sinonim leksikal yang tidak sesuai register (misal menggunakan kata *tewas* untuk pahlawan kemerdekaan yang seharusnya *gugur*).\n3. **Jebakan Negasi Antonim Bergradasi**: Menyimpulkan bahwa negasi dari kata bergradasi pasti kutub lawannya (misal berasumsi *tidak panas* pasti *dingin*, padahal ada zona hangat atau sejuk).\n4. **Jebakan Transkripsi Homograf Fonetis**: Salah mengidentifikasi perbedaan fonetis vokal pepet [ə] dan taling [e].\n\n---\n\n# 3. Trik Analisis Taktis (<30 Detik)\n\n1. **Uji Asal Usul / Metafora Cabang**: Jika ada analogi kemiripan fungsi/letak/bentuk $\\rightarrow$ Polisemi; jika terputus total dari dua etimologi berbeda $\\rightarrow$ Homonim.\n2. **Uji Skala Kontinum (Biner vs. Gradual)**: Sisipkan kata *agak* atau *sangat*. Jika tidak logis (*agak mati*) $\\rightarrow$ Biner; jika logis (*agak dingin*) $\\rightarrow$ Bergradasi.\n3. **Uji Kolokasi Kalimat**: Periksa kelaziman pasangan kata baku (misal *mengentaskan kemiskinan*, bukan *mengentaskan kebodohan*).\n4. **Uji Vokal Pepet-Taling**: Ucapkan dalam hati perbedaan bunyi vokal lemah [ə] dan vokal lebar [e].\n\n---\n\n# 4. Rangkuman Inti\n\n- **Sinonim**: Kemiripan arti yang dibatasi oleh konteks, register, dan kolokasi.\n- **Antonim**: Oposisi biner (mutlak), bergradasi (skalar bertingkat), dan relasional (timbal balik fungsional).\n- **Homonim**: Tulisan sama, bunyi sama, asal-usul dan arti berbeda lepas.\n- **Polisemi**: Tulisan sama, bunyi sama, arti jamak berakar dari satu induk leksikon yang sama.\n---\n\n# 5. Bedah Soal Terstandar UTBK\n\nBerikut adalah bedah tiga variasi soal Sinonim, Antonim, Homonim, dan Polisemi terstandar UTBK-SNBT, lengkap dengan konteks wacana, pertanyaan, pilihan ganda A–E, kunci jawaban, petunjuk taktis, dan pembahasan analitis menyeluruh:\n\n### Variasi 1: Identifikasi Relasi Polisemi vs Homonim / HOTS (Level: Sulit)\n\n> **Konteks Wacana Soal:**  \n> (1) Tim ekspedisi berhasil mendirikan tenda darurat tepat di kaki Gunung Semeru.\n> (2) Karena kelelahan parah setelah pendakian terjal, kaki pendaki itu mengalami kram otot.\n> (3) Petugas keamanan melarang pengunjung membawa senjata tajam atau benda yang bisa melukai orang lain.\n> (4) Racun yang terkandung di dalam kantung bisa ular kobra sangat berbahaya bagi sistem saraf.  \n>  \n> **Pertanyaan UTBK:** *Pernyataan yang **tepat** mengenai relasi semantik kata bercetak miring pada kalimat-kalimat di atas adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Kata kaki (1, 2) berelasi homonim; kata bisa (3, 4) berelasi polisemi.  \n> - **B.** Kata kaki (1, 2) berelasi polisemi; kata bisa (3, 4) berelasi homonim.  \n> - **C.** Kedua pasangan kata sama-sama berelasi homonim murni.  \n> - **D.** Kedua pasangan kata sama-sama berelasi polisemi.  \n> - **E.** Kata kaki berelasi homograf; kata bisa berelasi homofon.  \n\n**Kunci Jawaban: B**\n\n> 💡 **Petunjuk Soal:** Cek hubungan asal-usul kata: apakah *kaki* (bagian bawah tubuh manusia) dan *kaki gunung* (lereng paling bawah) memiliki kesamaan konsep dasar posisi bawah? Lalu bandingkan dengan *bisa* (dapat) vs *bisa* (racun ular).\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Konsep Formal:**  \n**Cara Konsep Formal:**\n\n- **Analisis Kata \"Kaki\" (Kalimat 1 & 2):** Kata *kaki* pada anggota gerak tubuh bawah manusia dan *kaki* pada gunung berasal dari leksem induk yang sama, di mana letak lereng bawah gunung dianalogikan secara spasial dengan posisi kaki manusia. Hubungan makna turunan yang masih berkerabat konsep letak/fungsi ini merupakan **Polisemi**.\n- **Analisis Kata \"Bisa\" (Kalimat 3 & 4):** Kata *bisa* pada kalimat (3) bermakna modalitas \"dapat/mampu\", sedangkan *bisa* pada kalimat (4) bermakna cairan racun ular. Keduanya berasal dari dua etimologi berbeda yang kebetulan memiliki bentuk grafis dan fonis yang sama, terdaftar sebagai dua lema kamus terpisah. Hubungan ini merupakan **Homonim**.\n\n**Jawaban: B**\n\n- **Penerapan Trik Cepat (<30 Detik):**  \n**Cara Cepat (Uji Kekerabatan Makna Induk):**\n\n1. *Kaki gunung* $\\leftrightarrow$ *Kaki pendaki* = sama-sama posisi letak paling bawah $\\rightarrow$ Ada hubungan metaforis $\\rightarrow$ **Polisemi**.\n2. *Bisa melukai* (dapat) $\\leftrightarrow$ *Bisa ular* (racun) = arti putus total, asal kata beda $\\rightarrow$ **Homonim**.\n3. Pilih opsi: kaki polisemi & bisa homonim $\\rightarrow$ Opsi **B**.\n\n- **Mengapa Opsi Lain Salah?**  \n- **Pilihan A Salah:** Terbalik dalam memetakan relasi semantik kedua pasangan kata.\n- **Pilihan C Salah:** Menyamaratakan kedua pasangan kata sebagai homonim tanpa mempertimbangkan metafora spasial pada kata kaki.\n- **Pilihan D Salah:** Mengabaikan fakta bahwa kata bisa berasal dari dua etimologi leksikon yang terpisah total.\n- **Pilihan E Salah:** Salah klasifikasi fonologis; baik kaki maupun bisa memiliki ejaan dan lafal yang identik sempurna, bukan sekadar homograf/homofon.\n\n---\n\n### Variasi 2: Kesepadanan Jenis Oposisi Makna (Level: Sedang)\n\n> **Konteks Wacana Soal:**  \n> Hubungan harmonis antara penjual dan pembeli di pasar induk tradisional itu tetap terjaga meski harga pangan mengalami fluktuasi tajam.  \n>  \n> **Pertanyaan UTBK:** *Relasi antonim antara kata **penjual** dan **pembeli** pada kalimat tersebut sejenis dengan relasi pasangan kata pada kalimat...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** Dokter forensik memastikan korban telah berada dalam kondisi hidup sebelum dipindahkan, bukan langsung mati.  \n> - **B.** Panitia memastikan bahwa harga tiket masuk seminar tersebut sangat murah, tidak mahal.  \n> - **C.** Interaksi interaktif antara guru dan murid menjadi kunci keberhasilan metode pembelajaran.  \n> - **D.** Pasukan khusus itu bergerak perlahan dari tempat yang gelap menuju area yang terang.  \n> - **E.** Ruang pertemuan itu didesain dengan langit-langit yang tinggi agar ruangan tidak terasa rendah.  \n\n**Kunci Jawaban: C**\n\n> 💡 **Petunjuk Soal:** Pasangan *penjual* dan *pembeli* adalah hubungan oposisi timbal balik: tidak mungkin ada penjual tanpa keberadaan pembeli. Cari pasangan kata yang juga bersifat relasional korelatif.\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Konsep Formal:**  \n**Cara Konsep Formal:**\n\n- **Identifikasi Jenis Oposisi:** Pasangan *penjual* dan *pembeli* merupakan **Antonim Relasional (Korelatif / Kebalikan)**, yaitu hubungan pertentangan timbal balik di mana kehadiran satu pihak mensyaratkan pihak lainnya.\n- **Evaluasi Opsi:**\n  - Pilihan A: *hidup* vs *mati* = Antonim Biner (Mutlak/Komplementer; tidak hidup = mati).\n  - Pilihan B: *murah* vs *mahal* = Antonim Bergradasi (Skalar; memiliki tingkatan tengah/sedang).\n  - Pilihan C: *guru* vs *murid* = Antonim Relasional (interaksi fungsional timbal balik; guru mengandaikan keberadaan murid).\n  - Pilihan D: *gelap* vs *terang* = Antonim Bergradasi (ada kondisi temaram/remang-remang).\n  - Pilihan E: *tinggi* vs *rendah* = Antonim Bergradasi (ada ukuran sedang).\n\n**Jawaban: C**\n\n- **Penerapan Trik Cepat (<30 Detik):**  \n**Cara Cepat (Uji Peran Timbal Balik):**\n\n1. Penjual $\\leftrightarrow$ Pembeli = pasangan peran fungsional timbal balik (relasional).\n2. Cari peran profesi/sosial timbal balik pada opsi: Guru $\\leftrightarrow$ Murid (Opsi C).\n3. Opsi A adalah oposisi mutlak biner; opsi B, D, E adalah kata sifat skalar bertingkat.\n\n- **Mengapa Opsi Lain Salah?**  \n- **Pilihan A Salah:** Pasangan *hidup - mati* adalah oposisi biner mutlak (komplementer murni tanpa tingkatan perantara).\n- **Pilihan B Salah:** Pasangan *murah - mahal* adalah oposisi polar/bergradasi pada kontinum harga.\n- **Pilihan D Salah:** Pasangan *gelap - terang* adalah oposisi bergradasi intensitas cahaya.\n- **Pilihan E Salah:** Pasangan *tinggi - rendah* adalah oposisi skalar dimensi spasial.\n\n---\n\n### Variasi 3: Presisi Diksi dan Kolokasi Sinonim Teks Ilmiah (Level: Sedang)\n\n> **Konteks Wacana Soal:**  \n> Lembaga riset nasional berupaya [...] populasi satwa endemik yang terancam punah melalui pembangunan suaka margasatwa baru serta [...] masyarakat sekitar agar tidak membuka lahan perkebunan di zona inti.  \n>  \n> **Pertanyaan UTBK:** *Kata yang paling tepat untuk melengkapi bagian rumpang teks di atas secara berurutan adalah...*  \n>  \n> **Pilihan Ganda:**  \n> - **A.** membesarkan; mengajari  \n> - **B.** melestarikan; mengedukasi  \n> - **C.** mengembangbiakkan; menggurui  \n> - **D.** memelihara; menyuruh  \n> - **E.** memperbanyak; melatih  \n\n**Kunci Jawaban: B**\n\n> 💡 **Petunjuk Soal:** Perhatikan register bahasa ilmiah konservasi lingkungan. Kata untuk populasi satwa langka yang terancam punah menuntut istilah konservasi resmi, dan kata untuk masyarakat menuntut istilah pembinaan yang berkonotasi positif dan menghargai martabat.\n\n**Bedah Logika & Pembahasan:**\n- **Analisis Konsep Formal:**  \n**Cara Konsep Formal:**\n\n- **Analisis Kolokasi Rumpang 1:** Istilah ilmiah dan baku dalam domain konservasi satwa langka yang terancam punah adalah *melestarikan* (menjaga kelangsungan hidup spesies).\n- **Analisis Kolokasi Rumpang 2:** Hubungan lembaga riset dengan masyarakat sekitar kawasan konservasi menuntut diksi edukatif yang persuasif dan santun. Kata *mengedukasi* bernilai amelioratif dan formal. Kata *menggurui* bernilai peyoratif/negatif (merendahkan); kata *menyuruh* dan *mengajari* bernilai informal.\n\n**Jawaban: B**\n\n- **Penerapan Trik Cepat (<30 Detik):**  \n**Cara Cepat (Pindai Nilai Rasa & Register Keilmuan):**\n\n1. Rumpang 2: Coret opsi C (*menggurui* = berkonotasi sombong/peyoratif) dan D (*menyuruh* = ragam informal/perintah kasar).\n2. Rumpang 1: Bandingkan *melestarikan* (konservasi resmi suaka margasatwa) vs *membesarkan* (kurang presisi) atau *memperbanyak* (tidak lazim untuk populasi endemik suaka margasatwa).\n3. Pasangan paling presisi dan elegan adalah B (*melestarikan; mengedukasi*).\n\n- **Mengapa Opsi Lain Salah?**  \n- **Pilihan A Salah:** Kata *membesarkan* dan *mengajari* tergolong ragam nonformal sehari-hari, tidak selaras dengan artikel ilmiah konservasi.\n- **Pilihan C Salah:** Kata *menggurui* mengandung nilai rasa peyoratif (sikap sok tahu yang merendahkan pihak lain).\n- **Pilihan D Salah:** Kata *memelihara* lazim untuk hewan peliharaan domestik, dan kata *menyuruh* bernada imperatif informal.\n- **Pilihan E Salah:** Kata *melatih* lazim untuk keterampilan fisik/teknis khusus (misal melatih atlet), bukan penyadaran konservasi masyarakat.",
-    "visualizations_svg": [],
-    "distractor_traps": [
-      "Jebakan Homonim vs Polisemi: Menyamaratakan pasangan kata yang memiliki kesamaan fungsi/posisi metaforis sebagai homonim, padahal merupakan relasi polisemi.",
-      "Jebakan Kolokasi dan Nilai Rasa Sinonim: Mengganti kata baku dengan sinonim leksikal yang tidak sesuai register (tewas untuk pahlawan kemerdekaan yang seharusnya gugur).",
-      "Jebakan Negasi Antonim Bergradasi: Menyimpulkan bahwa negasi dari kata bergradasi pasti kutub lawannya (tidak panas disimpulkan pasti dingin).",
-      "Jebakan Transkripsi Homograf Fonetis: Salah mengidentifikasi perbedaan fonetis vokal pepet [ə] dan taling [e]."
-    ],
-    "quick_execution_algorithm": [
-      "Uji Asal Usul / Metafora Cabang: Jika ada analogi kemiripan fungsi/letak/bentuk → Polisemi; jika terputus total → Homonim.",
-      "Uji Skala Kontinum (Biner vs Gradual): Sisipkan kata agak/sangat. Jika tidak logis (agak mati) → Biner; jika logis (agak dingin) → Bergradasi.",
-      "Uji Kolokasi Kalimat: Periksa kelaziman pasangan kata baku (mengentaskan kemiskinan, bukan mengentaskan kebodohan).",
-      "Uji Vokal Pepet-Taling: Ucapkan dalam hati perbedaan bunyi vokal lemah [ə] dan vokal lebar [e]."
-    ]
-  },
-  "worked_examples": [
-    {
-      "example_id": "ppu-01-02-ex1",
-      "variation_name": "Variasi 1: Identifikasi Relasi Polisemi vs Homonim / HOTS (Level: Sulit)",
-      "difficulty": "hard",
-      "question_type": "standard_mc",
-      "context_markdown": "(1) Tim ekspedisi berhasil mendirikan tenda darurat tepat di kaki Gunung Semeru.\n(2) Karena kelelahan parah setelah pendakian terjal, kaki pendaki itu mengalami kram otot.\n(3) Petugas keamanan melarang pengunjung membawa senjata tajam atau benda yang bisa melukai orang lain.\n(4) Racun yang terkandung di dalam kantung bisa ular kobra sangat berbahaya bagi sistem saraf.",
-      "question_markdown": "Pernyataan yang **tepat** mengenai relasi semantik kata bercetak miring pada kalimat-kalimat di atas adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Kata kaki (1, 2) berelasi homonim; kata bisa (3, 4) berelasi polisemi."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Kata kaki (1, 2) berelasi polisemi; kata bisa (3, 4) berelasi homonim."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Kedua pasangan kata sama-sama berelasi homonim murni."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Kedua pasangan kata sama-sama berelasi polisemi."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Kata kaki berelasi homograf; kata bisa berelasi homofon."
-        }
+  "kode_subbab": "ppu-01-02",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 1: Makna dan Relasi Kata",
+  "judul_subbab": "Sinonim, Antonim, Homonim, dan Polisemi",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Tim peneliti membedah akar persoalan kemiskinan kota', apakah kata 'akar' bermakna bagian tumbuhan di dalam tanah?",
+      "opsi_cepat": [
+        "Ya, arti kamus selalu berlaku",
+        "Tidak, kata berpolisemi bergeser sesuai konteks"
       ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cek hubungan asal-usul kata: apakah *kaki* (bagian bawah tubuh manusia) dan *kaki gunung* (lereng paling bawah) memiliki kesamaan konsep dasar posisi bawah? Lalu bandingkan dengan *bisa* (dapat) vs *bisa* (racun ular).",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kata \"Kaki\" (Kalimat 1 & 2):** Kata *kaki* pada anggota gerak tubuh bawah manusia dan *kaki* pada gunung berasal dari leksem induk yang sama, di mana letak lereng bawah gunung dianalogikan secara spasial dengan posisi kaki manusia. Hubungan makna turunan yang masih berkerabat konsep letak/fungsi ini merupakan **Polisemi**.\n- **Analisis Kata \"Bisa\" (Kalimat 3 & 4):** Kata *bisa* pada kalimat (3) bermakna modalitas \"dapat/mampu\", sedangkan *bisa* pada kalimat (4) bermakna cairan racun ular. Keduanya berasal dari dua etimologi berbeda yang kebetulan memiliki bentuk grafis dan fonis yang sama, terdaftar sebagai dua lema kamus terpisah. Hubungan ini merupakan **Homonim**.\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Uji Kekerabatan Makna Induk):**\n\n1. *Kaki gunung* $\\leftrightarrow$ *Kaki pendaki* = sama-sama posisi letak paling bawah $\\rightarrow$ Ada hubungan metaforis $\\rightarrow$ **Polisemi**.\n2. *Bisa melukai* (dapat) $\\leftrightarrow$ *Bisa ular* (racun) = arti putus total, asal kata beda $\\rightarrow$ **Homonim**.\n3. Pilih opsi: kaki polisemi & bisa homonim $\\rightarrow$ Opsi **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Terbalik dalam memetakan relasi semantik kedua pasangan kata.\n- **Pilihan C Salah:** Menyamaratakan kedua pasangan kata sebagai homonim tanpa mempertimbangkan metafora spasial pada kata kaki.\n- **Pilihan D Salah:** Mengabaikan fakta bahwa kata bisa berasal dari dua etimologi leksikon yang terpisah total.\n- **Pilihan E Salah:** Salah klasifikasi fonologis; baik kaki maupun bisa memiliki ejaan dan lafal yang identik sempurna, bukan sekadar homograf/homofon."
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Pada subtes PPU UTBK, satu kata sering memiliki banyak cabang makna (polisemi) atau kemiripan bentuk (homonim). Peserta yang hanya mengandalkan arti dasar kamus akan keliru menyamakan fungsi kata antarkalimat."
+    },
+    "konsep_inti_markdown": "**Relasi makna kata UTBK** menguji ketepatan menafsirkan hubungan makna antarkata dalam wacana baku KBBI VI:\n\n* **Sinonim Kontekstual:** Padanan kata yang dapat saling menggantikan dalam satu struktur kalimat tanpa mengubah nuansa makna.\n* **Antonim Kontekstual:** Oposisi makna dua kata pada kelas kata dan tataran konteks yang sejajar.\n* **Polisemi vs Homonim:** Polisemi adalah satu kata dengan beragam cabang makna terkait; homonim adalah dua kata berbeda yang kebetulan sama bentuk atau bunyinya.\n* **Medan Makna:** Pengelompokan kata dalam satu ranah konsep atau bidang ilmu.",
+    "radar_jebakan_utbk": [
+      "Memilih sinonim kamus yang memiliki makna dasar mirip, tetapi berbeda kelas kata (misal nomina diganti verba) atau merusak kolokasi kalimat.",
+      "Menyamakan dua kata berhomonim sebagai polisemi hanya karena ejaannya identik, padahal asal kata dan ranah maknanya terpisah."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Sinonim Kontekstual (Mengganti Kata dalam Kalimat Tanpa Mengubah Nuansa Makna)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kementerian Kesehatan berupaya **mengakselerasi** pemerataan fasilitas medis di wilayah terpencil agar kualitas layanan publik meningkat.",
+      "bedah_pola_markdown": "**Bedah Pola Sintaksis & Substitusi:**\nPerhatikan struktur fungsi kalimat berikut: [S] *Kementerian Kesehatan* + [P] *berupaya **mengakselerasi*** + [O] *pemerataan fasilitas medis* + [K] *di wilayah terpencil*. Verba transitif **mengakselerasi** (KBBI VI: mempercepat) wajib digantikan oleh verba berimbuhan *meN-* yang sepadan secara gramatikal, efektif, serta selaras dengan nuansa ragam akademik.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemerintah **mengebut** (*ragam cakapan tidak baku*) pemerataan fasilitas medis. | Pemerintah **mempercepat** (*padanan baku formal*) pemerataan fasilitas medis. |\n| Kebijakan itu **akselerasi** (*salah kelas kata nomina*) distribusi logistik. | Kebijakan itu **mengakselerasi** (*tepat kelas kata verba*) distribusi logistik. |\n\n**Strategi Eksekusi:** Uji setiap opsi pengganti langsung pada slot fungsi [P] atau [O] kalimat soal. Pastikan kelas kata tetap konsisten, penulisan mengikuti EYD V, dan pesan utama kalimat tidak bergeser.",
+      "kunci_pembeda": "Memilih padanan kata dengan kelas kata dan ragam baku yang identik agar substitusi tidak mengubah struktur maupun nuansa kalimat.",
+      "visual": null
     },
     {
-      "example_id": "ppu-01-02-ex2",
-      "variation_name": "Variasi 2: Kesepadanan Jenis Oposisi Makna (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Hubungan harmonis antara penjual dan pembeli di pasar induk tradisional itu tetap terjaga meski harga pangan mengalami fluktuasi tajam.",
-      "question_markdown": "Relasi antonim antara kata **penjual** dan **pembeli** pada kalimat tersebut sejenis dengan relasi pasangan kata pada kalimat...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Dokter forensik memastikan korban telah berada dalam kondisi hidup sebelum dipindahkan, bukan langsung mati."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Panitia memastikan bahwa harga tiket masuk seminar tersebut sangat murah, tidak mahal."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Interaksi interaktif antara guru dan murid menjadi kunci keberhasilan metode pembelajaran."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pasukan khusus itu bergerak perlahan dari tempat yang gelap menuju area yang terang."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Ruang pertemuan itu didesain dengan langit-langit yang tinggi agar ruangan tidak terasa rendah."
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Pasangan *penjual* dan *pembeli* adalah hubungan oposisi timbal balik: tidak mungkin ada penjual tanpa keberadaan pembeli. Cari pasangan kata yang juga bersifat relasional korelatif.",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Identifikasi Jenis Oposisi:** Pasangan *penjual* dan *pembeli* merupakan **Antonim Relasional (Korelatif / Kebalikan)**, yaitu hubungan pertentangan timbal balik di mana kehadiran satu pihak mensyaratkan pihak lainnya.\n- **Evaluasi Opsi:**\n  - Pilihan A: *hidup* vs *mati* = Antonim Biner (Mutlak/Komplementer; tidak hidup = mati).\n  - Pilihan B: *murah* vs *mahal* = Antonim Bergradasi (Skalar; memiliki tingkatan tengah/sedang).\n  - Pilihan C: *guru* vs *murid* = Antonim Relasional (interaksi fungsional timbal balik; guru mengandaikan keberadaan murid).\n  - Pilihan D: *gelap* vs *terang* = Antonim Bergradasi (ada kondisi temaram/remang-remang).\n  - Pilihan E: *tinggi* vs *rendah* = Antonim Bergradasi (ada ukuran sedang).\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Uji Peran Timbal Balik):**\n\n1. Penjual $\\leftrightarrow$ Pembeli = pasangan peran fungsional timbal balik (relasional).\n2. Cari peran profesi/sosial timbal balik pada opsi: Guru $\\leftrightarrow$ Murid (Opsi C).\n3. Opsi A adalah oposisi mutlak biner; opsi B, D, E adalah kata sifat skalar bertingkat.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Pasangan *hidup - mati* adalah oposisi biner mutlak (komplementer murni tanpa tingkatan perantara).\n- **Pilihan B Salah:** Pasangan *murah - mahal* adalah oposisi polar/bergradasi pada kontinum harga.\n- **Pilihan D Salah:** Pasangan *gelap - terang* adalah oposisi bergradasi intensitas cahaya.\n- **Pilihan E Salah:** Pasangan *tinggi - rendah* adalah oposisi skalar dimensi spasial."
+      "nomor_variasi": 2,
+      "nama_variasi": "Antonim atau Lawan Kata Kontekstual dalam Paragraf Argumentatif",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Walaupun kebijakan insentif pajak awalnya diprediksi memicu **ekspansi** industri manufaktur, tingginya suku bunga global justru menyebabkan **kontraksi** produksi.",
+      "bedah_pola_markdown": "**Bedah Pola Oposisi & Konjungsi:**\nPerhatikan hubungan pertentangan dalam struktur: [K] *Walaupun kebijakan insentif memicu **ekspansi** industri*, [S] *tingginya suku bunga* + [P] *menyebabkan* + [O] ***kontraksi*** *produksi*. Kata **ekspansi** (KBBI VI: perluasan) beroposisi langsung dengan **kontraksi** (KBBI VI: penyusutan) pada ranah ekonomi. Konjungsi pertentangan (*walaupun*, *namun*, *sebaliknya*) menjadi penanda wajib hadirnya lawan kata kontekstual.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Lawan kata **ekspansi** diartikan sebagai **inflasi** (*kenaikan harga umum*). | Lawan kata **ekspansi** dalam konteks pertumbuhan adalah **kontraksi** (*penyusutan*). |\n| Penulisan lawan kata **statis** ditulis **dinamika** (*kelas kata nomina*). | Penulisan lawan kata **statis** (*adjektiva*) yang sejajar adalah **dinamis** (*adjektiva*). |\n\n**Strategi Eksekusi:** Temukan kata kunci penanda kontras antarklausa, tentukan medan makna wacana (ekonomi, sains, sosial), lalu pilih lawan kata yang sejajar kelas katanya.",
+      "kunci_pembeda": "Menentukan oposisi makna berdasarkan konjungsi pertentangan wacana dan kesejajaran kelas kata pada konteks bidang ilmu tertentu.",
+      "visual": null
     },
     {
-      "example_id": "ppu-01-02-ex3",
-      "variation_name": "Variasi 3: Presisi Diksi dan Kolokasi Sinonim Teks Ilmiah (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Lembaga riset nasional berupaya [...] populasi satwa endemik yang terancam punah melalui pembangunan suaka margasatwa baru serta [...] masyarakat sekitar agar tidak membuka lahan perkebunan di zona inti.",
-      "question_markdown": "Kata yang paling tepat untuk melengkapi bagian rumpang teks di atas secara berurutan adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "membesarkan; mengajari"
-        },
-        {
-          "key": "B",
-          "text_markdown": "melestarikan; mengedukasi"
-        },
-        {
-          "key": "C",
-          "text_markdown": "mengembangbiakkan; menggurui"
-        },
-        {
-          "key": "D",
-          "text_markdown": "memelihara; menyuruh"
-        },
-        {
-          "key": "E",
-          "text_markdown": "memperbanyak; melatih"
-        }
+      "nomor_variasi": 3,
+      "nama_variasi": "Polisemi (Menentukan Kalimat Lain yang Menggunakan Kata X dengan Makna yang Sama)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Lembaga survei nasional **menurunkan** tim peneliti lapangan untuk memverifikasi akurasi data kemiskinan ekstrem di kawasan pesisir.",
+      "bedah_pola_markdown": "**Bedah Pola Cabang Makna Polisemi:**\nAnalisis fungsi kalimat stimulus: [S] *Lembaga survei nasional* + [P] ***menurunkan*** + [O] *tim peneliti lapangan* + [K] *untuk memverifikasi data*. Kata **menurunkan** berpolisemi karena memiliki satu akar makna dasar yang bercabang sesuai konteks objek [O] yang mengikutinya. Pada stimulus, **menurunkan** bermakna *mengirimkan atau menugaskan personel ke lapangan*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Disamakan dengan: *Bank sentral **menurunkan** suku bunga acuan* (*mengurangi nilai*). | Sejajar dengan: *Kementerian **menurunkan** tim relawan ke lokasi bencana* (*menugaskan*). |\n| Disamakan dengan: *Petugas **menurunkan** bendera merah putih* (*memindahkan ke bawah*). | Sejajar dengan: *Kepolisian **menurunkan** personel pengamanan* (*mengerahkan petugas*). |\n\n**Strategi Eksekusi:** Ubah kata target menjadi definisi frasa pendek sesuai objek [O] di stimulus, lalu uji definisi frasa tersebut ke seluruh kalimat opsi.",
+      "kunci_pembeda": "Menguji kesamaan cabang makna satu kata dengan membandingkan jenis objek dan konteks kalimat yang menyertainya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Homonim, Homofon, dan Homograf dalam Perbandingan Dua Kalimat",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Kalimat (1): *Rapat dewan direksi membahas **rapat** barisan menghadapi krisis global.* Kalimat (2): *Pejabat **teras** kementerian duduk di **teras** gedung utama.*",
+      "bedah_pola_markdown": "**Bedah Pola Kemiripan Bentuk & Bunyi:**\nPerhatikan perbedaan tiga relasi bentuk kata dalam KBBI VI. **Homonim** memiliki ejaan dan lafal sama tetapi makna terpisah (*rapat* 'pertemuan' vs *rapat* 'erat'). **Homograf** memiliki ejaan sama tetapi lafal dan makna berbeda (*teras* /təras/ 'inti/pejabat utama' vs *teras* /téras/ 'bagian depan rumah'). **Homofon** memiliki lafal sama tetapi ejaan berbeda (*massa* vs *masa*).\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Atlet itu mencetak **seri** (lafal /səri/) pada **seri** (lafal /séri/) terakhir* dianggap satu makna. | Kata **seri** merupakan **homograf** dengan pelafalan dan arti berbeda sesuai KBBI VI. |\n| Penulisan *kerumunan **masa*** (*waktu*) tertukar dengan ***massa*** (*kumpulan orang*). | Penulisan baku **homofon** membedakan **massa** (*jumlah/orang*) dan **masa** (*waktu*). |\n\n**Strategi Eksekusi:** Periksa lafal pelafalan kata dan ejaan baku KBBI VI pada kedua kalimat pembanding untuk membedakan entri kamus yang berlainan.",
+      "kunci_pembeda": "Membedakan dua entri kata terpisah yang kebetulan berbagi kesamaan ejaan (homograf), bunyi (homofon), atau keduanya (homonim).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pengelompokan Kata Berdasarkan Kemiripan Medan Makna dalam Satu Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam ekosistem perbankan digital, nasabah kini memantau **likuiditas**, **portofolio**, **dividen**, dan **imbal hasil** melalui satu aplikasi terpadu.",
+      "bedah_pola_markdown": "**Bedah Pola Rumpun Medan Makna:**\nPerhatikan rincian objek dalam struktur: [S] *nasabah* + [P] *memantau* + [O] ***likuiditas**, **portofolio**, **dividen**, dan **imbal hasil***. Keempat nomina tersebut berada dalam satu **medan makna** (rumpun konsep keuangan dan investasi). Soal UTBK sering meminta peserta menemukan kata yang satu medan makna dengan kata kunci bacaan atau mengeliminasi satu kata penyusup dari kelompok.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Memasukkan kata **inflasi** (*makroekonomi*) ke kelompok instrumen investasi (*saham, obligasi, **dividen***). | Mengelompokkan *saham, obligasi, **dividen**, **portofolio*** sebagai satu medan makna investasi. |\n| Kata serapan bidang medis ditulis tidak baku: ***diagnosa*** dan ***analisa*** laboratorium. | Kata serapan satu medan makna medis ditulis baku sesuai KBBI VI: ***diagnosis*** dan ***analisis***. |\n\n**Strategi Eksekusi:** Identifikasi payung besar tema paragraf, kelompokkan kata yang berbagi komponen makna spesifik, lalu coret kata yang berbeda ranah.",
+      "kunci_pembeda": "Mengelompokkan kata-kata yang bernaung di bawah satu payung ranah konsep atau bidang ilmu yang sama dalam wacana.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
       ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan register bahasa ilmiah konservasi lingkungan. Kata untuk populasi satwa langka yang terancam punah menuntut istilah konservasi resmi, dan kata untuk masyarakat menuntut istilah pembinaan yang berkonotasi positif dan menghargai martabat.",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kolokasi Rumpang 1:** Istilah ilmiah dan baku dalam domain konservasi satwa langka yang terancam punah adalah *melestarikan* (menjaga kelangsungan hidup spesies).\n- **Analisis Kolokasi Rumpang 2:** Hubungan lembaga riset dengan masyarakat sekitar kawasan konservasi menuntut diksi edukatif yang persuasif dan santun. Kata *mengedukasi* bernilai amelioratif dan formal. Kata *menggurui* bernilai peyoratif/negatif (merendahkan); kata *menyuruh* dan *mengajari* bernilai informal.\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Pindai Nilai Rasa & Register Keilmuan):**\n\n1. Rumpang 2: Coret opsi C (*menggurui* = berkonotasi sombong/peyoratif) dan D (*menyuruh* = ragam informal/perintah kasar).\n2. Rumpang 1: Bandingkan *melestarikan* (konservasi resmi suaka margasatwa) vs *membesarkan* (kurang presisi) atau *memperbanyak* (tidak lazim untuk populasi endemik suaka margasatwa).\n3. Pasangan paling presisi dan elegan adalah B (*melestarikan; mengedukasi*).",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Kata *membesarkan* dan *mengajari* tergolong ragam nonformal sehari-hari, tidak selaras dengan artikel ilmiah konservasi.\n- **Pilihan C Salah:** Kata *menggurui* mengandung nilai rasa peyoratif (sikap sok tahu yang merendahkan pihak lain).\n- **Pilihan D Salah:** Kata *memelihara* lazim untuk hewan peliharaan domestik, dan kata *menyuruh* bernada imperatif informal.\n- **Pilihan E Salah:** Kata *melatih* lazim untuk keterampilan fisik/teknis khusus (misal melatih atlet), bukan penyadaran konservasi masyarakat."
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Penerapan teknologi irigasi tetes terbukti mampu **mengoptimalkan** penggunaan air di lahan pertanian kering. (2) Efisiensi ini menjadi solusi strategis di tengah **kelangkaan** pasokan air bersih yang kerap melanda wilayah sentra pangan saat musim kemarau panjang.\n\nKata **mengoptimalkan** pada kalimat (1) dapat digantikan dengan kata .... tanpa mengubah makna kalimat, sedangkan lawan kata dari **kelangkaan** pada kalimat (2) dalam konteks bacaan adalah ....",
+      "opsi_jawaban": [
+        "A. memaksimalkan; kelimpahan",
+        "B. memperbanyak; kekeringan",
+        "C. meningkatkan; keterbatasan",
+        "D. memanfaatkan; ketersediaan",
+        "E. menyempurnakan; kekurangan"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Pada kalimat (1), verba **mengoptimalkan** (KBBI VI: menjadikan paling baik atau paling tinggi) sepadan secara gramatikal dan nuansa makna dengan verba **memaksimalkan** tanpa mengubah struktur kalimat. Sementara itu, nomina **kelangkaan** pada kalimat (2) bermakna kondisi sangat terbatas atau sulit didapat sehingga berlawanan makna secara kontekstual dengan nomina **kelimpahan** (kondisi berlebih atau banyak). **Opsi B**, **C**, dan **E** justru memuat sinonim atau makna berdekatan dengan kelangkaan, sedangkan **opsi D** menggeser nuansa makna optimal. Jawaban tepat adalah **A**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Pemerintah pusat berencana **membuka** jalur distribusi logistik baru guna menekan disparitas harga bahan pokok di kawasan timur Indonesia.\"\n\nKata **membuka** pada kalimat di atas memiliki makna yang PALING SEPADAN dengan kata bercetak tebal pada kalimat ....",
+      "opsi_jawaban": [
+        "A. Petugas bendungan **membuka** pintu air utama saat debit sungai melampaui batas aman.",
+        "B. Kementerian Perdagangan resmi **membuka** akses ekspor komoditas olahan laut ke pasar Eropa.",
+        "C. Peneliti lapangan **membuka** kemasan sampel tanah sebelum memasukkannya ke alat uji.",
+        "D. Moderator **membuka** sesi diskusi panel dengan membacakan profil singkat para narasumber.",
+        "E. Warga pesisir mulai **membuka** lahan tambak udang baru di sekitar muara sungai."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat stimulus, verba **membuka** diikuti objek abstrak berupa *jalur distribusi logistik*, sehingga bermakna kontekstual *menyediakan atau merintis akses jaringan baru*. Makna serupa ditemukan pada **opsi B**, di mana kata **membuka** diikuti objek *akses ekspor* dengan arti menyediakan kesempatan atau jalan masuk perdagangan. Sebaliknya, **opsi A** dan **C** bermakna fisik (menyingkap penutup), **opsi D** bermakna memulai acara, dan **opsi E** bermakna menggarap tanah. Jawaban tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut!\n\n> (1) Percepatan transisi menuju energi bersih mendorong industri otomotif mengembangkan kendaraan listrik berbasis baterai litium. (2) Inovasi tersebut bertujuan menekan **emisi** karbon sekaligus mengurangi ketergantungan pada bahan bakar fosil. (3) Selain itu, pembangunan stasiun pengisian daya cepat terus diperluas di berbagai ruas jalan tol utama.\n\nKata yang memiliki kesamaan ranah makna dengan kata **emisi** pada kalimat (2) dalam konteks pelestarian lingkungan adalah ....",
+      "opsi_jawaban": [
+        "A. residu",
+        "B. baterai",
+        "C. inovasi",
+        "D. baterai litium",
+        "E. distribusi"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Dalam konteks pelestarian lingkungan pada teks tersebut, kata **emisi** (KBBI VI: pancaran atau pembuangan zat sisa pembakaran ke udara) berada dalam satu medan makna zat buangan atau pencemar lingkungan bersama kata **residu** (ampas atau sisa buangan proses industri/kimia). Sebaliknya, **baterai** dan **baterai litium** termasuk medan makna komponen penyimpanan energi, **inovasi** merujuk pada pembaruan teknologi, dan **distribusi** merujuk pada penyaluran barang. Jawaban tepat adalah **A**.",
+      "visual": null
     }
   ]
 }

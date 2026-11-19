@@ -1,0 +1,135 @@
+{
+  "kode_subbab": "pu-03-02",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 3: Penalaran Kuantitatif",
+  "judul_subbab": "Pola Gambar dan Spasial Numerik",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Pada sebuah gambar segitiga berangka, bilangan di sudut luar adalah $4$, $6$, dan $5$, sedangkan angka di tengah adalah $19$. Banyak siswa mengira polanya adalah penjumlahan keliling ditambah $4$, lalu menebak segitiga kedua bersudut $7$, $4$, dan $9$ bernilai tengah $24$. Apakah tebakan tersebut tepat?",
+      "opsi_cepat": [
+        "Ya, pola tambah konstanta selalu berlaku",
+        "Salah, pola operasi perkalian antarsudut memberi hasil berbeda"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Soal pola gambar UTBK hampir selalu memakai kombinasi operasi pengali antarelemen seperti $(4 \\times 6) - 5 = 19$, bukan sekadar menambah konstanta acak. Pada segitiga kedua, $(7 \\times 4) - 9$ menghasilkan $19$, bukan $24$."
+    },
+    "konsep_inti_markdown": "**Pola gambar dan spasial numerik PU** menguji kemampuan menemukan aturan operasi dari tata letak visual tanpa rumus geometri rumit:\n\n* **Aturan Konsistensi:** Rumus aritmetika pada gambar pertama wajib berlaku identik pada gambar kedua.\n* **Arah Baca Matriks:** Uji hubungan horizontal (baris) dan vertikal (kolom) secara terpisah.\n* **Pengkodean Simbol:** Terjemahkan ikon atau posisi ruang menjadi nilai bobot bilangan bulat.\n* **Simetri Spasial:** Gunakan pemotongan atau pergeseran bidang arsir untuk menghitung pecahan luas secara instan.",
+    "radar_jebakan_utbk": [
+      "Membuat aturan operasi yang hanya cocok pada satu gambar contoh, tetapi gagal ketika diuji pada gambar pembanding kedua.",
+      "Menghitung luas daerah terarsir yang terpisah-pisah satu per satu tanpa menyadari bahwa potongan tersebut dapat digeser membentuk pecahan utuh."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='105,50 55,155 155,155' fill='#EFF6FF' stroke='#1E293B' stroke-width='2'/><circle cx='105' cy='116' r='16' fill='#FFFFFF' stroke='#3B82F6' stroke-width='2'/><text x='105' y='40' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>4</text><text x='42' y='162' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>6</text><text x='168' y='162' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>5</text><text x='105' y='121' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>19</text><polygon points='255,50 205,155 305,155' fill='#FFFBEB' stroke='#1E293B' stroke-width='2'/><circle cx='255' cy='116' r='16' fill='#FFFFFF' stroke='#F59E0B' stroke-width='2'/><text x='255' y='40' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>7</text><text x='192' y='162' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>4</text><text x='318' y='162' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>9</text><text x='255' y='121' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#F59E0B'>?</text><text x='180' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Pola: (Atas x Kiri) - Kanan = Tengah</text></svg>",
+      "caption": "Konsistensi operasi antarsudut pada dua bangun segitiga untuk menentukan bilangan tengah."
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Aritmetika Bangun Geometri Tunggal (Segitiga/Lingkaran/Kotak Berisi Angka Terkait)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diberikan dua buah lingkaran yang masing-masing terbagi menjadi empat sektor angka. Lingkaran pertama memuat angka searah jarum jam: $3, 8, 5, 19$ (angka $19$ berada di sektor kanan bawah sebagai hasil). Lingkaran kedua memuat angka $6, 4, 7, x$. Tentukan nilai $x$.",
+      "bedah_pola_markdown": "**Pola Kunci:** Angka target dibentuk dari kombinasi operasi perkalian silang atau penjumlahan berpasangan antarsektor yang posisinya bersesuaian pada setiap bangun.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Identifikasi posisi target:** Angka $19$ pada lingkaran pertama dan $x$ pada lingkaran kedua menempati sektor yang sama, sehingga keduanya berperan sebagai hasil operasi.\n2. **Uji kombinasi pengali dan penjumlah:** Dari angka sumber $3, 8,$ dan $5$, cari hasil yang mendekati $19$. Perkalian $(3 \\times 8) = 24$, lalu dikurangi $5$ menghasilkan $19$ secara tepat.\n3. **Terapkan ke bangun kedua:** Gunakan urutan posisi identik pada lingkaran kedua: $(6 \\times 4) - 7 = 24 - 7 = 17$.\n4. **Trik Eliminasi:** Periksa paritas ganjil-genap. Karena hasil perkalian $(6 \\times 4)$ bernilai genap dan dikurangi bilangan ganjil ($7$), nilai $x$ wajib ganjil. Segera coret seluruh opsi bilangan genap.",
+      "kunci_pembeda": "Operasi aritmetika selalu terikat pada kesamaan posisi geometris antarbangun yang terpisah.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Matriks Angka $3 \\times 3$ atau $4 \\times 4$ (Operasi Baris vs Kolom)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Perhatikan susunan matriks angka $3 \\times 3$ berikut: Baris 1 berisi $(5, 4, 24)$; Baris 2 berisi $(7, 3, 24)$; Baris 3 berisi $(6, 5, y)$. Tentukan nilai $y$ yang memenuhi pola matriks tersebut.",
+      "bedah_pola_markdown": "**Pola Kunci:** Nilai pada kolom ketiga merupakan hasil operasi kombinasi tetap antara elemen kolom pertama dan kolom kedua pada setiap baris.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Baca arah lonjakan angka:** Kolom ketiga ($24, 24, y$) bernilai jauh lebih besar daripada dua kolom awal, sehingga operasi bergerak horizontal dari kiri ke kanan.\n2. **Temukan operasi baris pertama dan kedua:** Pada Baris 1, $(5 \\times 4) + 4 = 24$. Uji langsung ke Baris 2 dengan aturan identik: $(7 \\times 3) + 3 = 24$. Pola terbukti sah karena kedua baris menghasilkan nilai yang konsisten.\n3. **Hitung baris target:** Terapkan aturan $(\\text{Kolom } 1 \\times \\text{Kolom } 2) + \\text{Kolom } 2$ pada Baris 3: $(6 \\times 5) + 5 = 35$.\n4. **Trik Eliminasi:** Karena $(6 \\times 5)$ berakhiran $0$ dan ditambah $5$, nilai $y$ wajib berakhiran digit $5$. Coret semua opsi lain seketika.",
+      "kunci_pembeda": "Pola matriks diuji secara searah seluruh baris atau seluruh kolom, bukan perkalian matriks aljabar SMA.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pengkodean Simbol ke Nilai Numerik atau Operasi Fungsi Gambar",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Sebuah mesin sandi memetakan bentuk geometri menjadi nilai skor: satu lingkaran bernilai $4$, satu segitiga bernilai $7$, dan satu persegi bernilai $9$. Jika simbol di dalam kotak dijumlahkan, sedangkan simbol di luar kotak menjadi pengurang, tentukan nilai dari rangkaian $2$ segitiga di dalam kotak dan $1$ persegi di luar kotak.",
+      "bedah_pola_markdown": "**Pola Kunci:** Ubah setiap atribut visual (jenis bentuk, jumlah sisi, warna, atau posisi dalam-luar) menjadi persamaan aljabar linear sederhana.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Konversi simbol ke angka:** Catat bobot masing-masing ikon: Lingkaran ($L$) $= 4$, Segitiga ($S$) $= 7$, dan Persegi ($P$) $= 9$.\n2. **Terjemahkan aturan posisi ruang:** Aturan menyatakan elemen di dalam kotak bernilai positif ($+$) dan elemen di luar kotak bernilai negatif ($-$).\n3. **Susun ekspresi hitung:** Dua segitiga di dalam kotak berarti $+2S = 2 \\times 7 = 14$. Satu persegi di luar kotak berarti $-1P = -9$. Maka total nilainya adalah $14 - 9 = 5$.\n4. **Trik Eliminasi:** Jika soal menyajikan sistem persamaan dua gambar tanpa bobot awal, kurangkan langsung dua gambar yang memiliki komponen sama untuk mengeliminasi variabel tanpa mencari nilai tiap simbol satu per satu.",
+      "kunci_pembeda": "Setiap bentuk dan posisi spasial memiliki bobot numerik atau operator fungsi yang konsisten.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Pola Spasial Pecahan/Luas Daerah yang Diarsir",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Sebuah persegi besar dibagi oleh dua garis diagonal dan dua garis tengah menjadi $8$ segitiga kongruen. Jika $3$ bagian segitiga diarsir penuh dan $2$ bagian segitiga lainnya masing-masing diarsir setengahnya, berapa pecahan luas daerah yang diarsir terhadap luas seluruh persegi?",
+      "bedah_pola_markdown": "**Pola Kunci:** Bagi bangun utama menjadi unit-unit bagian terkecil yang kongruen (sama bentuk dan luas), lalu geser atau gabungkan arsiran pecahan menjadi satuan utuh.\n\n**Langkah Hitung Cepat (<60 Detik):**\n1. **Tentukan penyebut dasar (total unit):** Persegi terbagi menjadi $8$ segitiga kongruen yang luasnya identik, sehingga penyebut pecahan adalah $8$.\n2. **Gabungkan arsiran parsial:** Terdapat $3$ segitiga penuh ditambah $2$ segitiga setengah arsir. Gabungkan dua potongan setengah tersebut menjadi $2 \\times \\frac{1}{2} = 1$ segitiga penuh.\n3. **Hitung rasio akhir:** Total bagian terarsir setara dengan $3 + 1 = 4$ unit dari $8$ unit keseluruhan, sehingga pecahannya adalah $\\frac{4}{8} = \\frac{1}{2}$.\n4. **Trik Eliminasi:** Estimasi secara visual apakah arsiran melampaui separuh bidang. Jika tepat separuh, langsung coret seluruh opsi pecahan yang lebih besar atau lebih kecil dari $\\frac{1}{2}$.",
+      "kunci_pembeda": "Gunakan partisi grid kongruen dan prinsip geser-gabung untuk menghitung proporsi luas tanpa rumus.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='180,110 110,40 180,40' fill='#3B82F6'/><polygon points='180,110 180,40 250,40' fill='#3B82F6'/><polygon points='180,110 250,40 250,110' fill='#3B82F6'/><polygon points='180,110 250,110 250,145' fill='#F59E0B'/><polygon points='180,110 180,180 145,180' fill='#F59E0B'/><rect x='110' y='40' width='140' height='140' fill='none' stroke='#1E293B' stroke-width='2'/><line x1='110' y1='40' x2='250' y2='180' stroke='#1E293B' stroke-width='1.5'/><line x1='250' y1='40' x2='110' y2='180' stroke='#1E293B' stroke-width='1.5'/><line x1='180' y1='40' x2='180' y2='180' stroke='#1E293B' stroke-width='1.5'/><line x1='110' y1='110' x2='250' y2='110' stroke='#1E293B' stroke-width='1.5'/><line x1='180' y1='110' x2='250' y2='145' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='180' y1='110' x2='145' y2='180' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><text x='180' y='202' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>3 segitiga penuh (biru) + 2 setengah segitiga (oranye) = 4/8</text></svg>",
+        "caption": "Penggabungan dua bagian setengah segitiga menjadi satu unit utuh pada persegi berpartisi delapan."
+      }
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan matriks bilangan $3 \\times 4$ berikut yang disusun mengikuti aturan aritmetika konsisten pada setiap barisnya:\n\n| Kolom 1 | Kolom 2 | Kolom 3 | Kolom 4 |\n| :---: | :---: | :---: | :---: |\n| $4$ | $7$ | $5$ | $27$ |\n| $6$ | $9$ | $4$ | $33$ |\n| $8$ | $5$ | $7$ | $x$ |\n\nNilai $x$ yang tepat untuk melengkapi matriks tersebut adalah ....",
+      "opsi_jawaban": [
+        "A. $53$",
+        "B. $59$",
+        "C. $61$",
+        "D. $63$",
+        "E. $69$"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Amati hubungan antarkolom pada setiap baris matriks. Nilai pada Kolom $4$ diperoleh dengan mengalikan Kolom $1$ dan Kolom $3$, lalu menjumlahkannya dengan Kolom $2$. Pada Baris $1$: $(4 \\times 5) + 7 = 27$. Pada Baris $2$: $(6 \\times 4) + 9 = 33$. Terapkan pola identik pada Baris $3$: $x = (8 \\times 7) + 5 = 56 + 5 = 61$. Opsi **A** keliru menjumlahkan seluruh elemen, sedangkan **B**, **D**, dan **E** salah posisi pengali. Jawaban tepat adalah **C**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Dalam sebuah teka-teki spasial numerik, tiga buah kartu bergambar simbol memiliki total nilai skor sebagai berikut:\n\n* **Kartu I** ($2$ lingkaran $+$ $1$ segitiga) $= 19$\n* **Kartu II** ($1$ lingkaran $+$ $2$ segitiga) $= 23$\n* **Kartu III** ($1$ segitiga $+$ $2$ persegi) $= 25$\n\nBerapakah nilai skor untuk kartu yang berisi $1$ lingkaran, $1$ segitiga, dan $1$ persegi?",
+      "opsi_jawaban": [
+        "A. $19$",
+        "B. $20$",
+        "C. $21$",
+        "D. $22$",
+        "E. $24$"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Jumlahkan nilai Kartu I dan Kartu II untuk menyederhanakan simbol: $(2L + S) + (L + 2S) = 19 + 23 \\implies 3(L + S) = 42$, sehingga $L + S = 14$. Kurangkan persamaan ini dari Kartu II untuk memperoleh nilai satu segitiga: $S = 23 - 14 = 9$. Substitusikan $S = 9$ ke Kartu III: $9 + 2P = 25 \\implies P = 8$. Jadi, nilai $L + S + P = 14 + 8 = 22$. Opsi lain keliru membagi koefisien simbol. Jawaban tepat adalah **D**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan gambar susunan persegi satuan kongruen berikut! Bagian berwarna biru merupakan daerah yang diarsir. Pecahan yang menyatakan perbandingan luas daerah yang diarsir terhadap luas seluruh persegi besar adalah ....",
+      "opsi_jawaban": [
+        "A. $\\frac{3}{8}$",
+        "B. $\\frac{7}{16}$",
+        "C. $\\frac{1}{2}$",
+        "D. $\\frac{9}{16}$",
+        "E. $\\frac{5}{8}$"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Hitung total unit persegi kecil pada grid $4 \\times 4$, yaitu $16$ persegi kongruen. Kelompokkan bagian terarsir menjadi satuan utuh dan pecahan setengah. Terdapat $4$ persegi satuan yang diarsir penuh dan $6$ segitiga siku-siku yang masing-masing bernilai setengah persegi satuan ($6 \\times \\frac{1}{2} = 3$ satuan penuh). Total luas daerah yang diarsir setara dengan $4 + 3 = 7$ satuan dari $16$ satuan keseluruhan, sehingga pecahannya adalah $\\frac{7}{16}$. Opsi **C** keliru menganggap arsiran tepat separuh bidang. Jawaban tepat adalah **B**.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><rect x='140' y='30' width='40' height='40' fill='#3B82F6'/><rect x='140' y='70' width='40' height='40' fill='#3B82F6'/><rect x='180' y='70' width='40' height='40' fill='#3B82F6'/><rect x='180' y='110' width='40' height='40' fill='#3B82F6'/><polygon points='140,30 140,70 100,70' fill='#3B82F6'/><polygon points='180,30 180,70 220,70' fill='#3B82F6'/><polygon points='100,70 140,70 140,110' fill='#3B82F6'/><polygon points='140,110 180,110 180,150' fill='#3B82F6'/><polygon points='220,110 220,150 260,150' fill='#3B82F6'/><polygon points='180,150 220,150 180,190' fill='#3B82F6'/><rect x='100' y='30' width='160' height='160' fill='none' stroke='#1E293B' stroke-width='2'/><line x1='140' y1='30' x2='140' y2='190' stroke='#1E293B' stroke-width='1.5'/><line x1='180' y1='30' x2='180' y2='190' stroke='#1E293B' stroke-width='1.5'/><line x1='220' y1='30' x2='220' y2='190' stroke='#1E293B' stroke-width='1.5'/><line x1='100' y1='70' x2='260' y2='70' stroke='#1E293B' stroke-width='1.5'/><line x1='100' y1='110' x2='260' y2='110' stroke='#1E293B' stroke-width='1.5'/><line x1='100' y1='150' x2='260' y2='150' stroke='#1E293B' stroke-width='1.5'/><text x='180' y='208' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>Grid 4 x 4 Persegi Satuan Kongruen</text></svg>",
+        "caption": "Daerah arsiran pada grid persegi 4 x 4 yang terdiri atas persegi penuh dan segitiga setengah unit."
+      }
+    }
+  ]
+}

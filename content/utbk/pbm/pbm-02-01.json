@@ -1,143 +1,140 @@
 {
-  "metadata": {
-    "id": "pbm-2-1",
-    "subtest": "PBM",
-    "chapter_num": 2,
-    "chapter_title": "Morfologi dan Frasa",
-    "subchapter_num": "2.1",
-    "subchapter_title": "Afiksasi (Imbuhan) dan Maknanya",
-    "title": "Afiksasi (Imbuhan) dan Maknanya",
-    "required_question_variations": [
-      "Uji Kesamaan Makna Gramatikal Prefiks ter- (HOTS Semantik)",
-      "Kaidah Morfofonemik Pembentukan Kata Baku (KTSP)",
-      "Analisis Dikotomi Konfiks pe(N)-...-an vs per-...-an"
-    ],
-    "requires_svg": false,
-    "updated_at": "2026-11-10"
-  },
-  "content": {
-    "tactical_overview": "Afiksasi adalah proses morfologis pembentukan kata turunan polimorfemis yang memicu perubahan kelas kata (derivasi) atau pengubahan bentuk kata tanpa mengubah kelas kata (infleksi). Kunci menjawab soal UTBK terletak pada penguasaan hukum peluluhan fonem KTSP (luluh jika huruf ke-2 vokal, bertahan jika klaster konsonan), pembedaan teliti makna prefiks ter- (potensial vs aksidental), serta dikotomi konfiks pe(N)-...-an (proses tindakan) vs per-...-an (tempat/hal/hasil).",
-    "exam_blueprint_markdown": "# 1. Prinsip Dasar dan Kerangka Teori\n\nAfiksasi adalah proses morfologis pembentukan kata dengan cara melekatkan afiks (imbuhan) pada bentuk dasar (kata tunggal maupun kompleks) sehingga menghasilkan kata turunan (polimorfemis) dengan kategori gramatikal dan makna baru.\n\nDua fungsi gramatikal afiksasi:\n1. **Derivasi (Derivasional)**: Mengubah kelas kata bentuk dasar (*tulis* [verba] $\\rightarrow$ *penulis* [nomina]; *kuning* [adjektiva] $\\rightarrow$ *menguning* [verba]).\n2. **Infleksi (Infleksional)**: Mengubah bentuk kata untuk menyesuaikan fungsi sintaksis tanpa mengubah kelas kata (*makan* [verba] $\\rightarrow$ *memakan* [verba aktif transitif]).\n\n---\n\n## 1.1 Klasifikasi Afiks Berdasarkan Posisi\n1. **Prefiks (Awalan)**: Dilekatkan di awal bentuk dasar (*me(N)-*, *ber-*, *di-*, *ter-*, *pe(N)-*, *per-*, *se-*, *ke-*).\n2. **Sufiks (Akhiran)**: Dilekatkan di akhir bentuk dasar (*-an*, *-kan*, *-i*, *-nya*, serta sufiks serapan *-isasi*, *-is*, *-wi*, *-man*, *-wan*, *-wati*).\n3. **Infiks (Sisipan)**: Disisipkan di antara konsonan pertama dan vokal pertama bentuk dasar (*-el-* pada *telapak*, *-em-* pada *gemetar*, *-er-* pada *gerigi*, *-in-* pada *kinerja*).\n4. **Konfiks (Afiks Tunggal Tak Terpisah)**: Gabungan awalan dan akhiran yang melekat secara serentak membentuk satu kesatuan gramatikal tunggal (*ke-...-an*, *pe(N)-...-an*, *per-...-an*, *ber-...-an*, *se-...-nya*).\n5. **Kombinasi Afiks (Simulfiks / Afiks Gabung Bertahap)**: Melekat secara bertahap pada bentuk dasar (*me-...-kan*, *memper-...-kan*).\n\n---\n\n## 1.2 Kaidah Morfofonemik (Peluluhan Fonem K, T, S, P)\nKaidah morfofonemik mengatur perubahan fonem alomorf ketika prefiks *me(N)-* dan *pe(N)-* bertemu konsonan inisial bentuk dasar.\n\n### A. Kaidah Wajib Luluh\nFonem awal **/k/**, **/t/**, **/s/**, dan **/p/** wajib luluh menjadi alomorf sengau (*/ng/*, */n/*, */ny/*, */m/*) jika memenuhi **dua syarat akumulatif**:\n1. Terdiri atas lebih dari satu suku kata (polisilabel).\n2. Huruf kedua setelah K, T, S, atau P adalah **huruf vokal** (*a, i, u, e, o*).\n\n*Contoh*:\n- *me(N)-* + *kunci* $\\rightarrow$ **mengunci**\n- *me(N)-* + *tulis* $\\rightarrow$ **menulis**\n- *me(N)-* + *sapu* $\\rightarrow$ **menyapu**\n- *me(N)-* + *pakai* $\\rightarrow$ **memakai**\n\n### B. Pengecualian Peluluhan (Tidak Boleh Luluh)\n1. **Bentuk dasar diawali gugus konsonan (klaster: kr, tr, sp, pr, kl, st)**:\n   - *me(N)-* + *kritik* $\\rightarrow$ **mengkritik** (Bukan *mengritik*)\n   - *me(N)-* + *traktir* $\\rightarrow$ **mentraktir** (Bukan *menraktir*)\n   - *me(N)-* + *produksi* $\\rightarrow$ **memproduksi** (Bukan *memroduksi*)\n   - *me(N)-* + *klasifikasi* $\\rightarrow$ **mengklasifikasikan**\n   - *me(N)-* + *stimulus* $\\rightarrow$ **menstimulus**\n2. **Bentuk dasar berupa kata bersuku satu (monosilabel)**:\n   - Menggunakan alomorf *menge-* / *penge-*: *mengecat*, *mengebom*, *mengelap*, *mengetik*, *mengelas*.\n3. **Bentuk dasar sudah berupa kata berimbuhan (afiksasi bertingkat)**:\n   - *me(N)-* + *per-* + *satu* $\\rightarrow$ **mempersatukan** (/p/ pada prefiks tidak luluh).\n4. **Pembedaan Makna Leksikal Khusus (Kasus Kaji)**:\n   - *kaji* (penelitian ilmiah) $\\rightarrow$ **mengkaji** / **pengkaji** (meneliti secara ilmiah).\n   - *aji/kaji* (bacaan kitab suci) $\\rightarrow$ **mengaji** / **pengajian**.\n   - *saji* (hidangan) $\\rightarrow$ **penyaji** / **menyajikan**.\n\n---\n\n## 1.3 Nilai Makna Gramatikal Afiks Utama UTBK\n- **Prefiks me(N)-**: Melakukan tindakan aktif (*memasak*), menjadi/membuat jadi (*meratakan*, *memburuk*), mengeluarkan bunyi/benda (*meringkik*, *berkeringat*), menuju ke arah (*melaut*, *mendarat*), menyerupai (*membatu*).\n- **Prefiks ber-**: Mempunyai (*beruang*, *bermobil*), memakai (*berbaju*), menghasilkan (*bertelur*), refleksif (*bercermin*), resiprokal/saling (*bersalaman*, *berpelukan*), kondisi/keadaan (*bergembira*).\n- **Prefiks ter-**:\n  - *Superlatif/paling*: *tertinggi*, *terbesar*.\n  - *Potensial/dapat di-*: *terjangkau* (dapat dijangkau), *terbaca* (dapat dibaca).\n  - *Aksidental/tak sengaja*: *terinjak*, *tertelan*, *tertinggal*.\n  - *Resultatif/keadaan*: *terbuka*, *terkunci*, *tertutup*.\n- **Konfiks ke-...-an**: Keadaan abstrak (*kesehatan*, *keadilan*), daerah/wilayah (*kerajaan*), eksesif/terlalu (*kebesaran*, *kemalaman*), adversatif/terkena musibah (*kehujanan*, *kemalingan*).\n- **pe(N)-...-an vs. per-...-an**:\n  - *pe(N)-...-an* berkorelasi dengan verba *me(N)-* (**proses / metode pelaksanaan**): *pemukiman* (proses memukimkan), *pembangunan* (proses membangun).\n  - *per-...-an* berkorelasi dengan verba *ber-* atau nomina (**lokasi, hal, atau hasil**): *permukiman* (kawasan hunian), *perkembangan* (hal berkembang), *perjanjian* (hasil berjanji).\n- **Sufiks -kan vs. -i**:\n  - *-kan* (kausatif/benefaktif): menyebabkan jadi (*menjatuhkan*) atau tindakan untuk orang lain (*membelikan*).\n  - *-i* (lokatif/repetitif): objek tempat (*menaburi*, *menghampiri*) atau berulang-ulang (*memukuli*).\n\n---\n\n## 1.4 Matriks Komparasi Makna Afiksasi\n\n| Tipe Afiks | Bentuk Turunan | Bentuk Dasar | Kaidah Semantik | Makna Gramatikal |\n| :--- | :--- | :--- | :--- | :--- |\n| **Prefiks me(N)-** | Melaut | Laut (Nomina) | Arah tujuan | Menuju ke laut |\n| **Prefiks me(N)-** | Menguning | Kuning (Adjektiva) | Perubahan sifat | Menjadi kuning |\n| **Prefiks ber-** | Bersenjata | Senjata (Nomina) | Kepemilikan alat | Memiliki/memakai senjata |\n| **Prefiks ber-** | Bertinju | Tinju (Verba) | Resiprokalitas | Saling memukul tinju |\n| **Prefiks ter-** | Termurah | Murah (Adjektiva) | Gradasi intensitas | Paling murah (superlatif) |\n| **Prefiks ter-** | Tertabrak | Tabrak (Verba) | Ketidaksengajaan | Tidak sengaja ditabrak (aksidental) |\n| **Prefiks ter-** | Terpecahkan | Pecah (Verba) | Potensialitas | Dapat dipecahkan |\n| **Konfiks ke-...-an** | Kecilikan | Cilik (Adjektiva) | Melebihi takaran | Terlalu kecil (eksesif) |\n| **Konfiks ke-...-an** | Kecopetan | Copet (Nomina) | Tertimpa musibah | Menderita kena aksi copet (adversatif) |\n| **pe(N)-...-an** | Pemisahan | Pisah (Verba) | Nominalisasi aksi (*me-*) | Proses/cara memisahkan |\n| **per-...-an** | Peristirahatan | Istirahat (Verba) | Lokasi/perihal (*ber-*) | Tempat untuk beristirahat |\n\n---\n\n# 2. Pola Jebakan Pengecoh UTBK\n\n1. **Jebakan Gugus Konsonan KTSP**: Kata serapan berawalan klaster (*traktir, produksi, kritik, klarifikasi*) tidak boleh luluh (*mentraktir, memproduksi, mengkritik*).\n2. **Jebakan Homonim Konfiks ke-...-an**: Menukar makna hal abstrak (*keadilan*) dengan kondisi terkena musibah (*kemalingan*).\n3. **Jebakan Dikotomi Pemukiman vs Permukiman**: *Pemukiman* adalah proses memukimkan, sedangkan *permukiman* adalah kawasan tempat tinggal.\n4. **Jebakan Tripartit Makna Prefiks ter-**: Membedakan *ter-* potensial (*dapat di-*) dengan aksidental (*tidak sengaja*) pada kalimat pasif negatif (*masalah tidak teratasi* = potensial).\n5. **Jebakan Pleonasme Makna Resiprokal Prefiks ber-**: Penggabungan *saling bersalaman* mengandung pleonasme karena *ber-* pada bentuk tersebut sudah bermakna saling.\n\n---\n\n# 3. Trik Analisis Taktis (<30 Detik)\n\n1. **Uji Formula Parafrasa Kata Dasar**: Substitusi kata imbuhan dengan sinonim maknanya (*ber-* $\\rightarrow$ mempunyai/saling; *ter-* $\\rightarrow$ paling/tidak sengaja/dapat di-; *ke-...-an* $\\rightarrow$ perihal/terlalu/terkena).\n2. **Uji Rumus Huruf Kedua Klaster KTSP**: Huruf ke-2 vokal = wajib luluh; huruf ke-2 konsonan = pertahankan (tidak luluh).\n3. **Uji Asosiasi Pasangan Verba Dasar (peN-...-an vs per-...-an)**: Dari verba *me-* $\\rightarrow$ *pe(N)-...-an*; dari verba *ber-* $\\rightarrow$ *per-...-an*.\n4. **Uji Sisipan \"Dapat Di-\" pada Prefiks ter-**: Jika logis disisipi frasa \"dapat di-\", fungsinya adalah potensial.\n\n---\n\n# 4. Rangkuman Inti\n\n- **Afiksasi**: Menghasilkan kata jadian dengan makna gramatikal spesifik melalui derivasi atau infleksi.\n- **KTSP**: Luluh jika huruf ke-2 vokal; tidak luluh jika huruf ke-2 konsonan (klaster) atau kata bersuku satu.\n- **ter-**: Memiliki makna utama superlatif (paling), potensial (dapat di-), aksidental (tidak sengaja), dan resultatif (keadaan).\n- **pe(N)-...-an vs. per-...-an**: *pe(N)-...-an* merujuk pada proses aksi; *per-...-an* merujuk pada kawasan/hasil/hal.",
-    "visualizations_svg": [],
-    "distractor_traps": [
-      "Jebakan Gugus Konsonan KTSP: Kata serapan berawalan klaster (traktir, produksi, kritik, klarifikasi) tidak luluh (mentraktir, memproduksi, mengkritik).",
-      "Jebakan Homonim Konfiks ke-...-an: Menukar makna hal abstrak (keadilan) dengan kondisi terkena musibah (kemalingan).",
-      "Jebakan Dikotomi Pemukiman vs Permukiman: Pemukiman adalah proses memukimkan, sedangkan permukiman adalah kawasan tempat tinggal.",
-      "Jebakan Tripartit Makna Prefiks ter-: Membedakan ter- potensial (dapat di-) dengan aksidental (tidak sengaja) pada kalimat pasif negatif (masalah tidak teratasi = potensial).",
-      "Jebakan Pleonasme Makna Resiprokal Prefiks ber-: Penggabungan saling bersalaman mengandung pleonasme karena ber- sudah bermakna saling."
-    ],
-    "quick_execution_algorithm": [
-      "Uji Formula Parafrasa Kata Dasar: Substitusi kata imbuhan dengan sinonim maknanya (ber- → mempunyai/saling; ter- → paling/tidak sengaja/dapat di-; ke-...-an → perihal/terlalu/terkena).",
-      "Uji Rumus Huruf Kedua Klaster KTSP: Huruf ke-2 vokal = wajib luluh; huruf ke-2 konsonan = pertahankan (tidak luluh).",
-      "Uji Asosiasi Pasangan Verba Dasar (peN-...-an vs per-...-an): Dari verba me- → pe(N)-...-an; dari verba ber- → per-...-an.",
-      "Uji Sisipan \"Dapat Di-\" pada Prefiks ter-: Jika logis disisipi frasa \"dapat di-\", fungsinya adalah potensial."
-    ]
-  },
-  "worked_examples": [
-    {
-      "example_id": "pbm-02-01-ex1",
-      "variation_name": "Variasi 1: Uji Kesamaan Makna Gramatikal Prefiks ter- / HOTS Semantik (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Tingkat pencemaran mikroplastik pada ekosistem laut kini telah berada pada ambang batas yang tidak **terbayangkan** sebelumnya oleh para peneliti lingkungan.",
-      "question_markdown": "Makna gramatikal imbuhan *ter-* pada kata **terbayangkan** semakna dengan prefiks *ter-* pada kata bercetak miring dalam kalimat...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "Dokumen rahasia itu tidak sengaja *terbawa* oleh staf magang."
-        },
-        {
-          "key": "B",
-          "text_markdown": "Harga obat-obatan generik di apotek itu sangat *terjangkau* oleh masyarakat."
-        },
-        {
-          "key": "C",
-          "text_markdown": "Kereta cepat tersebut merupakan moda transportasi darat *tercepat* di Asia Tenggara."
-        },
-        {
-          "key": "D",
-          "text_markdown": "Pintu gerbang museum itu sudah *terbuka* sejak pukul delapan pagi."
-        },
-        {
-          "key": "E",
-          "text_markdown": "Seluruh peserta upacara merasa *terkejut* mendengar dentuman keras."
-        }
+  "kode_subbab": "pbm-02-01",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 2: Tanda Baca",
+  "judul_subbab": "Tanda Titik, Koma, dan Titik Koma",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Manakah penulisan kalimat yang baku menurut EYD V? (A) Kami gagal berangkat, karena hujan deras. (B) Karena hujan deras, kami gagal berangkat.",
+      "opsi_cepat": [
+        "Kalimat (A) baku karena koma memisahkan alasan",
+        "Kalimat (B) baku karena anak kalimat mendahului induk kalimat"
       ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Perhatikan frasa *\"tidak terbayangkan\"*, yang bermakna \"tidak dapat dibayangkan\" (menyatakan kemampuan/potensialitas pasif). Cari kata berprefiks *ter-* pada opsi yang juga dapat disubstitusi dengan rumus *\"dapat di-\"*.",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Gramatikal Target:** Kata *terbayangkan* terbentuk dari prefiks *ter-* + verba *bayangkan*. Dalam konstruksi *\"tidak terbayangkan\"*, fungsi semantisnya adalah **pasif potensial** (\"dapat dibayangkan\").\n- **Analisis Pilihan Jawaban:**\n  - Pilihan A: *terbawa* = ketidaksengajaan (aksidental).\n  - Pilihan B: *terjangkau* = dapat dijangkau (pasif potensial).\n  - Pilihan C: *tercepat* = paling cepat (superlatif).\n  - Pilihan D: *terbuka* = sudah dalam kondisi terbuka (resultatif/keadaan).\n  - Pilihan E: *terkejut* = mengalami keadaan terperanjat (kondisional afektif).\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Uji Sisipan \"Dapat Di-\"):**\n\n1. *Terbayangkan* $\\rightarrow$ *dapat dibayangkan* (potensial).\n2. Cek opsi: *Terjangkau* $\\rightarrow$ *dapat dijangkau* (100% cocok!).\n3. Coret A (tidak sengaja), C (paling), dan D (keadaan).",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Imbuhan *ter-* pada *terbawa* menyatakan perbuatan yang tidak disengaja (aksidental).\n- **Pilihan C Salah:** Imbuhan *ter-* pada *tercepat* melekat pada kata sifat yang menyatakan tingkat paling (superlatif).\n- **Pilihan D Salah:** Imbuhan *ter-* pada *terbuka* menyatakan keadaan/kondisi pasif suatu objek.\n- **Pilihan E Salah:** Imbuhan *ter-* pada *terkejut* menyatakan reaksi perasaan spontan."
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta mengira jeda napas sebelum kata 'karena' wajib diberi koma. Padahal, tanda koma dilarang mendahului konjungsi subordinatif (karena, sehingga, bahwa) jika induk kalimat berada di depan."
+    },
+    "konsep_inti_markdown": "- **Tanda Koma (,)**: Wajib memisahkan anak kalimat di awal kalimat, mendahului konjungsi pertentangan intrakalimat (*tetapi, sedangkan, melainkan*), mengikuti konjungsi antarkalimat (*Namun, Oleh karena itu,*), mengapit aposisi, dan memisahkan rincian minimal 3 unsur.\n- **Larangan Koma**: Dilarang sebelum *bahwa, karena, sehingga, agar, jika* di tengah kalimat.\n- **Titik Koma (;)**: Memisahkan klausa setara tanpa konjungsi dan rincian bertingkat.\n- **Tanda Titik (.)**: Akhir kalimat, singkatan gelar/nama, pemisah angka ribuan (bukan tahun/halaman).",
+    "radar_jebakan_utbk": [
+      "Menempatkan tanda koma sebelum konjungsi subordinatif (seperti 'sehingga' atau 'bahwa') hanya karena kalimat terasa panjang.",
+      "Menggunakan tanda koma setelah konjungsi intrakalimat seperti 'Sedangkan,' atau 'Tetapi,' di awal kalimat baru."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Tanda Koma pada Kalimat Majemuk Bertingkat (Anak Kalimat mendahului Induk Kalimat vs Induk mendahului Anak)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Perhatikan posisi klausa bersyarat berikut: 'Jika inflasi terus meningkat pada kuartal ketiga bank sentral akan menaikkan suku bunga acuan.'",
+      "bedah_pola_markdown": "Kaidah EYD V menetapkan bahwa tanda koma wajib digunakan untuk memisahkan anak kalimat (klausa terikat berkonjungsi subordinatif seperti *jika, ketika, walaupun, sejak*) yang mendahului induk kalimat. Sebaliknya, tanda koma **tidak digunakan** apabila induk kalimat mendahului anak kalimat.\n\n| Kondisi | Kalimat & Analisis Sintaksis | Status EYD V |\n| :--- | :--- | :--- |\n| **Salah** | Jika inflasi meningkat [K-Anak] bank sentral [S] menaikkan [P] suku bunga [O]. | Tidak ada koma pemisah anak kalimat di awal. |\n| **Benar** | **Jika inflasi meningkat, [K-Anak]** bank sentral [S] menaikkan [P] suku bunga [O]. | Koma wajib hadir setelah batas anak kalimat. |\n| **Benar** | Bank sentral [S] menaikkan [P] suku bunga [O] **jika inflasi meningkat [K-Anak]**. | Tanpa koma karena induk kalimat di depan. |\n\nIdentifikasi konjungsi subordinatif di awal kalimat; temukan batas predikat anak kalimat tersebut sebelum masuk ke subjek induk kalimat, lalu sisipkan tanda koma tepat di titik perbatasan itu.",
+      "kunci_pembeda": "Posisi anak kalimat di awal mewajibkan koma di ujungnya, sedangkan posisi anak kalimat di akhir mengharamkan koma di depannya.",
+      "visual": null
     },
     {
-      "example_id": "pbm-02-01-ex2",
-      "variation_name": "Variasi 2: Kaidah Morfofonemik Pembentukan Kata Baku / KTSP (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "Kementerian berencana [...] program pemberdayaan UMKM pedesaan secara digital serta [...] anggaran infrastruktur dasar ke wilayah pelosok.",
-      "question_markdown": "Kata berimbuhan baku yang paling tepat untuk mengisi bagian rumpang kalimat di atas secara berurutan adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "memprogramkan; mensuplai"
-        },
-        {
-          "key": "B",
-          "text_markdown": "memrogramkan; menyuplai"
-        },
-        {
-          "key": "C",
-          "text_markdown": "memprogramkan; menyuplai"
-        },
-        {
-          "key": "D",
-          "text_markdown": "memrogramkan; mensuplai"
-        },
-        {
-          "key": "E",
-          "text_markdown": "memprogramkan; memproduksi"
-        }
-      ],
-      "correct_answer": "C",
-      "hint_markdown": "💡 **Petunjuk Soal:** Cermati huruf kedua kata dasar: kata *program* diawali gugus konsonan /pr/ (klaster), sedangkan kata *suplai* diawali konsonan /s/ yang langsung diikuti huruf vokal /u/. Ingat kaidah peluluhan KTSP!",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kata \"Program\":** Kata dasar *program* diawali oleh klaster konsonan **/pr/**. Sesuai kaidah EYD V, fonem K, T, S, P yang diikuti konsonan lain (klaster) **TIDAK LULUH**. Bentuk bakunya adalah *me(N)-* + *programkan* $\\rightarrow$ **memprogramkan** (bukan *memrogramkan*).\n- **Analisis Kata \"Suplai\":** Kata dasar *suplai* diawali konsonan **/s/** dan langsung diikuti huruf vokal **/u/**. Karena memenuhi dua syarat (polisilabel dan diikuti vokal), fonem /s/ **WAJIB LULUH** menjadi alomorf /ny/. Bentuk bakunya adalah *me(N)-* + *suplai* $\\rightarrow$ **menyuplai** (bukan *mensuplai*).\n\n**Jawaban: C**",
-      "quick_trick_markdown": "**Cara Cepat (Rumus Huruf Kedua Klaster):**\n\n1. *Pr-ogram* (huruf ke-2 adalah /r/ = konsonan) $\\rightarrow$ Tahan, jangan diluluhkan $\\rightarrow$ **memprogramkan**.\n2. *S-uplai* (huruf ke-2 adalah /u/ = vokal) $\\rightarrow$ Wajib lebur/luluh $\\rightarrow$ **menyuplai**.\n3. Kombinasi yang benar adalah opsi **C**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Bentuk *mensuplai* tidak baku karena fonem /s/ yang diikuti vokal wajib luluh menjadi *menyuplai*.\n- **Pilihan B Salah:** Bentuk *memrogramkan* salah karena gugus konsonan /pr/ tidak boleh diluluhkan.\n- **Pilihan D Salah:** Kedua bentuk kata imbuhan sama-sama menyalahi kaidah morfofonemik KTSP.\n- **Pilihan E Salah:** Kata *memproduksi* tidak kontekstual untuk melengkapi distribusi anggaran ke wilayah pelosok."
+      "nomor_variasi": 2,
+      "nama_variasi": "Tanda Koma Sebelum Konjungsi Intrakalimat (..., tetapi, ..., melainkan, ..., sedangkan) vs Larangan Koma Sebelum bahwa/karena/sehingga",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Cermati penggunaan tanda baca pada kutipan laporan berikut: 'Penelitian ini tidak bertujuan menghambat inovasi tetapi memastikan keamanan data pengguna, sehingga publik terlindungi.'",
+      "bedah_pola_markdown": "Menurut EYD V, tanda koma wajib dipakai sebelum konjungsi intrakalimat yang menyatakan pertentangan atau perlawanan, yaitu **tetapi, melainkan, dan sedangkan**. Sebaliknya, tanda koma **dilarang** digunakan sebelum konjungsi subordinatif di tengah kalimat, seperti **bahwa, karena, sehingga, agar, dan supaya**.\n\n| Kondisi | Kalimat & Struktur [S]-[P]-[O]-[K] | Analisis Kesalahan & Perbaikan |\n| :--- | :--- | :--- |\n| **Salah** | Riset ini [S] bukan menghambat inovasi [P] tetapi menjaga keamanan [P], sehingga publik [S] aman [P]. | Hilang koma sebelum *tetapi*; salah koma sebelum *sehingga*. |\n| **Benar** | Riset ini [S] bukan menghambat inovasi [P]**, tetapi** menjaga keamanan [P] **sehingga** publik [S] aman [P]. | Koma wajib sebelum *tetapi*; tanpa koma sebelum *sehingga*. |\n\nPeriksa setiap konjungsi di tengah kalimat. Jika bermakna pertentangan (*tetapi, melainkan, sedangkan*), tambahkan koma sebelumnya. Jika menyatakan sebab, akibat, atau penjelasan (*karena, sehingga, bahwa*), hapus koma di depannya.",
+      "kunci_pembeda": "Koma wajib mendahului konjungsi pertentangan intrakalimat (tetapi, melainkan, sedangkan), tetapi haram mendahului konjungsi sebab-akibat atau penjelas (karena, sehingga, bahwa).",
+      "visual": null
     },
     {
-      "example_id": "pbm-02-01-ex3",
-      "variation_name": "Variasi 3: Analisis Dikotomi Konfiks pe(N)-...-an vs per-...-an (Level: Sedang)",
-      "difficulty": "medium",
-      "question_type": "standard_mc",
-      "context_markdown": "(1) Bencana banjir bandang meluluhlantakkan kawasan [...] padat penduduk di sepanjang bantaran sungai.\n(2) Pemerintah daerah segera mempercepat proses [...] warga terdampak ke zona relokasi yang aman.",
-      "question_markdown": "Bentuk kata turunan yang tepat untuk melengkapi kalimat (1) dan kalimat (2) secara berturut-turut adalah...",
-      "options": [
-        {
-          "key": "A",
-          "text_markdown": "pemukiman dan permukiman"
-        },
-        {
-          "key": "B",
-          "text_markdown": "permukiman dan pemukiman"
-        },
-        {
-          "key": "C",
-          "text_markdown": "permukiman dan permukiman"
-        },
-        {
-          "key": "D",
-          "text_markdown": "pemukiman dan pemukiman"
-        },
-        {
-          "key": "E",
-          "text_markdown": "pemukim dan permukiman"
-        }
+      "nomor_variasi": 3,
+      "nama_variasi": "Tanda Koma Wajib Setelah Konjungsi Antarkalimat (Oleh karena itu,, Namun,, Akan tetapi,)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Evaluasi kesalahan tanda baca pada paragraf opini berikut: 'Emisi karbon sektor transportasi terus melonjak. Namun kebijakan subsidi kendaraan listrik belum menyasar angkutan umum.'",
+      "bedah_pola_markdown": "Konjungsi antarkalimat bertugas menghubungkan satu kalimat penuh dengan kalimat sebelumnya. Sesuai kaidah EYD V, konjungsi antarkalimat (seperti **Namun, Akan tetapi, Oleh karena itu, Dengan demikian, Selain itu, Meskipun demikian**) wajib diletakkan di awal kalimat dan **langsung diikuti tanda koma**.\n\n| Kondisi | Kalimat & Struktur [S]-[P]-[O]-[K] | Analisis Kaidah EYD V |\n| :--- | :--- | :--- |\n| **Salah** | Emisi [S] melonjak [P]. **Namun** kebijakan subsidi [S] belum menyasar [P] angkutan umum [O]. | Konjungsi antarkalimat *Namun* kehilangan koma pengikut. |\n| **Benar** | Emisi [S] melonjak [P]. **Namun,** kebijakan subsidi [S] belum menyasar [P] angkutan umum [O]. | Tanda koma wajib hadir tepat setelah *Namun*. |\n\nWaspadai jebakan UTBK yang menukar konjungsi antarkalimat dengan intrakalimat. Kata *sedangkan* dan *sehingga* bersifat intrakalimat sehingga tidak boleh mengawali kalimat baru, sedangkan *Namun* wajib di awal kalimat diikuti koma.",
+      "kunci_pembeda": "Konjungsi antarkalimat selalu berada di awal kalimat setelah titik dan wajib langsung dikunci dengan tanda koma.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Tanda Koma Pengapit Keterangan Tambahan (Aposisi) dan Pemerincian Tiga Unsur atau Lebih (Koma Oxford)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sunting tanda baca kalimat berita berikut: 'Bacharuddin Jusuf Habibie Presiden ketiga Republik Indonesia merancang pesawat N-250 yang unggul dalam aerodinamika, avionik dan efisiensi bahan bakar.'",
+      "bedah_pola_markdown": "Kaidah EYD V mewajibkan penggunaan **sepasang tanda koma** untuk mengapit keterangan tambahan atau aposisi yang sifatnya tidak membatasi makna subjek. Selain itu, pemerincian yang terdiri atas **tiga unsur atau lebih** wajib memakai tanda koma sebelum kata penghubung terakhir (*dan, atau*).\n\n| Kondisi | Kalimat & Struktur [S]-[P]-[O] | Analisis Kaidah EYD V |\n| :--- | :--- | :--- |\n| **Salah** | B.J. Habibie [S] Presiden ketiga RI merancang [P] avionik, struktur dan mesin [O]. | Aposisi tidak diapit koma; rincian 3 unsur kurang koma sebelum *dan*. |\n| **Benar** | B.J. Habibie**, Presiden ketiga RI,** [S] merancang [P] avionik, struktur**, dan** mesin [O]. | Aposisi diapit sepasang koma; rincian memakai koma Oxford sebelum *dan*. |\n\nUji aposisi dengan menghapus frasa di antara dua koma: jika kalimat inti [S]-[P]-[O] tetap utuh dan bermakna logis, maka pengapitan sepasang koma tersebut mutlak wajib.",
+      "kunci_pembeda": "Keterangan tambahan (aposisi) wajib diapit dua koma yang simetris, dan perincian minimal tiga unsur wajib memakai koma sebelum 'dan/atau'.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Tanda Titik Koma (;) untuk Memisahkan Bagian Kalimat Setara atau Rincian Frasa Kompleks",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Perbaiki tanda baca pada kalimat majemuk setara dan rincian berikut: 'Ayah mengurus perizinan lahan, ibu menyiapkan modal usaha, adik mengelola pemasaran digital.'",
+      "bedah_pola_markdown": "Tanda titik koma (`;`) berfungsi sebagai pengganti kata penghubung untuk memisahkan bagian kalimat majemuk setara yang berdiri sendiri, serta memisahkan unsur-unsur pemerincian berbentuk frasa kompleks yang di dalamnya sudah mengandung tanda koma.\n\n| Kondisi | Kalimat & Pola Hubungan | Analisis Kaidah EYD V |\n| :--- | :--- | :--- |\n| **Salah** | Ayah [S] mengurus izin [P], ibu [S] menyiapkan modal [P], adik [S] mengelola pemasaran [P]. | Rangkaian klausa setara tanpa konjungsi hanya dipisahkan koma (*comma splice*). |\n| **Benar** | Ayah [S] mengurus izin [P]**;** ibu [S] menyiapkan modal [P]**;** adik [S] mengelola pemasaran [P]. | Titik koma sah menggantikan konjungsi antar-klausa setara. |\n| **Benar** | Syarat: (1) KTP asli**;** (2) akta pendirian, yang disahkan notaris**;** dan (3) NPWP. | Titik koma memisahkan rincian berunsur koma internal. |\n\nGunakan titik koma saat menjumpai dua atau lebih klausa setara tanpa konjungsi (*dan, sedangkan*) atau daftar perincian panjang yang sudah memuat koma internal.",
+      "kunci_pembeda": "Titik koma menggantikan konjungsi pada kalimat majemuk setara atau menjadi pemisah tingkat tinggi pada rincian yang sudah mengandung tanda koma.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 6,
+      "nama_variasi": "Kesalahan Penggunaan Tanda Titik pada Singkatan, Gelar Akademik, Angka Ribuan vs Tahun/Halaman",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Temukan kesalahan tanda titik pada data administratif berikut: 'Menurut Prof Dr Ratna Sari M Hum, anggaran riset tahun 2.025 mencapai Rp500.000.000 pada halaman 1.240.'",
+      "bedah_pola_markdown": "Tanda titik dipakai pada akhir singkatan gelar akademik, singkatan nama orang, dan pemisah bilangan ribuan yang **menunjukkan jumlah**. Sebaliknya, tanda titik **tidak dipakai** pada bilangan ribuan yang menyatakan **tahun, nomor halaman, atau kode identitas**, maupun di akhir judul dan singkatan lembaga resmi (BUMN, UTBK).\n\n| Kondisi | Penulisan Administratif & Angka | Analisis Kaidah EYD V |\n| :--- | :--- | :--- |\n| **Salah** | Prof Dr Ratna Sari M Hum meneliti tahun **2.025** di halaman **1.240** senilai Rp500000000. | Gelar tanpa titik; tahun dan halaman salah diberi titik ribuan; nominal uang tanpa titik. |\n| **Benar** | **Prof. Dr.** Ratna Sari**, M.Hum.** meneliti tahun **2025** di halaman **1240** senilai **Rp500.000.000**. | Titik memisahkan gelar dan nominal jumlah; tahun serta nomor halaman ditulis tanpa titik. |\n\nBedakan fungsi angka ribuan: jika dapat dihitung kuantitasnya (uang, penduduk), beri titik setiap tiga digit; jika sekadar label urutan (tahun, halaman), hilangkan titik.",
+      "kunci_pembeda": "Angka ribuan penunjuk kuantitas wajib bertitik, sedangkan angka penunjuk urutan (tahun, nomor halaman, nomor rekening) wajib tanpa titik.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2,
+        3,
+        6
       ],
-      "correct_answer": "B",
-      "hint_markdown": "💡 **Petunjuk Soal:** Bedakan konsep *tempat/kawasan hunian* (berkorelasi dengan kata *bermukim*) dengan konsep *proses/tindakan memindahkan* (berkorelasi dengan kata *memukimkan*).",
-      "conceptual_solution_markdown": "**Cara Konsep Formal:**\n\n- **Analisis Kalimat (1):** Teks membutuhkan nomina yang merujuk pada **kawasan, wilayah, atau tempat tinggal**. Konfiks *per-...-an* yang berkorelasi dengan verba *bermukim* membentuk kata **permukiman** (daerah/tempat bermukim).\n- **Analisis Kalimat (2):** Teks membutuhkan nomina yang menyatakan **proses, tindakan, atau perbuatan**. Konfiks *pe(N)-...-an* yang berkorelasi dengan verba transitif *memukimkan* membentuk kata **pemukiman** (proses atau cara memukimkan penduduk).\n- Maka urutan yang tepat adalah *permukiman* (1) dan *pemukiman* (2).\n\n**Jawaban: B**",
-      "quick_trick_markdown": "**Cara Cepat (Proses vs Tempat):**\n\n1. Kalimat (1): Ada kata *kawasan* $\\rightarrow$ Butuh makna tempat $\\rightarrow$ **permukiman**.\n2. Kalimat (2): Ada kata *proses* $\\rightarrow$ Butuh makna tindakan $\\rightarrow$ **pemukiman**.\n3. Urutan: permukiman dan pemukiman $\\rightarrow$ Opsi **B**.",
-      "why_others_are_wrong_markdown": "- **Pilihan A Salah:** Urutan posisi tertukar (*pemukiman* ditaruh di kalimat tempat, dan *permukiman* di kalimat proses).\n- **Pilihan C Salah:** Menggunakan kata *permukiman* untuk kedua konteks, padahal kalimat (2) jelas menyatakan proses tindakan.\n- **Pilihan D Salah:** Menggunakan kata *pemukiman* untuk kawasan fisik, yang merupakan kerancuan makna klasik di UTBK.\n- **Pilihan E Salah:** Kata *pemukim* merujuk pada orang (pelaku yang mendiami), bukan kawasan tempat tinggal."
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n(1) Pemerintah menargetkan transisi energi bersih pada tahun 2.030 melalui pembangunan pembangkit listrik tenaga surya. (2) Meskipun potensi radiasi matahari di Indonesia sangat melimpah biaya investasi awal infrastruktur masih tergolong tinggi. (3) Kondisi tersebut memperlambat adopsi teknologi di daerah terpencil, sehingga ketergantungan pada bahan bakar fosil belum berkurang signifikan. (4) Oleh karena itu, skema pembiayaan hijau perlu diperluas agar investor swasta tertarik masuk. (5) Namun kebijakan insentif fiskal tersebut harus diawasi secara ketat.\n\nPenggunaan tanda baca yang sesuai dengan kaidah EYD V terdapat pada kalimat nomor ....",
+      "opsi_jawaban": [
+        "A. (1)",
+        "B. (2)",
+        "C. (3)",
+        "D. (4)",
+        "E. (5)"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Kalimat (4) benar karena konjungsi antarkalimat *Oleh karena itu,* diikuti tanda koma dan konjungsi subordinatif *agar* tidak didahului koma.\n- **(1) Salah:** Penulisan tahun `2.030` tidak boleh memakai tanda titik (seharusnya `2030`).\n- **(2) Salah:** Anak kalimat di awal (*Meskipun ... melimpah*) wajib diakhiri tanda koma sebelum induk kalimat.\n- **(3) Salah:** Konjungsi subordinatif *sehingga* tidak boleh didahului tanda koma.\n- **(5) Salah:** Konjungsi antarkalimat *Namun* wajib langsung diikuti tanda koma.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        4,
+        5,
+        6
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Cermati paragraf laporan riset berikut!\n\n(1) Lembaga riset kelautan itu dipimpin oleh Dr. Hendra Wijaya, M.Si., pakar oseanografi lulusan Jepang. (2) Tim peneliti memetakan ekosistem terumbu karang di Raja Ampat, Wakatobi dan Bunaken selama enam bulan. (3) Hasil ekspedisi menunjukkan bahwa suhu permukaan laut meningkat; keanekaragaman hayati menurun; dan pemutihan karang meluas. (4) Data lengkap mengenai sebaran spesies tersebut tercantum pada laporan teknis halaman 1450.\n\nTuliskan **satu angka nomor kalimat** (contoh: `1`) yang mengandung kesalahan penggunaan tanda baca koma pada paragraf di atas!",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "2",
+      "bedah_cepat_markdown": "Kalimat **(2)** salah karena pemerincian yang terdiri atas tiga unsur (*Raja Ampat, Wakatobi, dan Bunaken*) wajib menggunakan tanda koma sebelum kata hubung *dan* (koma Oxford).\n- **(1) Benar:** Singkatan gelar (*Dr.*, *M.Si.*) dan aposisi (*, pakar oseanografi lulusan Jepang*) sudah diapit koma secara tepat.\n- **(3) Benar:** Tanda titik koma sah memisahkan rincian klausa setara.\n- **(4) Benar:** Nomor halaman `1450` ditulis tanpa tanda titik ribuan.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat tidak baku berikut!\n\n> *Dr. Amalia Putri peneliti senior bidang epidemiologi menyatakan, bahwa lonjakan kasus demam berdarah bukan disebabkan oleh perubahan cuaca ekstrem melainkan akibat rendahnya kesadaran sanitasi lingkungan.*\n\nPerbaikan tanda baca yang tepat sesuai kaidah EYD V adalah ....",
+      "opsi_jawaban": [
+        "A. Dr. Amalia Putri, peneliti senior bidang epidemiologi, menyatakan bahwa lonjakan kasus demam berdarah bukan disebabkan oleh perubahan cuaca ekstrem, melainkan akibat rendahnya kesadaran sanitasi lingkungan.",
+        "B. Dr. Amalia Putri, peneliti senior bidang epidemiologi menyatakan, bahwa lonjakan kasus demam berdarah bukan disebabkan oleh perubahan cuaca ekstrem, melainkan akibat rendahnya kesadaran sanitasi lingkungan.",
+        "C. Dr. Amalia Putri, peneliti senior bidang epidemiologi, menyatakan, bahwa lonjakan kasus demam berdarah bukan disebabkan oleh perubahan cuaca ekstrem melainkan akibat rendahnya kesadaran sanitasi lingkungan.",
+        "D. Dr. Amalia Putri peneliti senior bidang epidemiologi, menyatakan bahwa lonjakan kasus demam berdarah bukan disebabkan oleh perubahan cuaca ekstrem, melainkan akibat rendahnya kesadaran sanitasi lingkungan.",
+        "E. Dr. Amalia Putri, peneliti senior bidang epidemiologi, menyatakan bahwa lonjakan kasus demam berdarah, bukan disebabkan oleh perubahan cuaca ekstrem melainkan akibat rendahnya kesadaran sanitasi lingkungan."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Terdapat tiga aturan EYD V yang diterapkan pada opsi **A**:\n1. **Aposisi:** Keterangan tambahan *peneliti senior bidang epidemiologi* wajib diapit sepasang tanda koma (menggugurkan B dan D).\n2. **Larangan Koma:** Konjungsi subordinatif *bahwa* tidak boleh didahului tanda koma (menggugurkan B dan C).\n3. **Konjungsi Pertentangan:** Kata *melainkan* wajib didahului tanda koma (menggugurkan C dan E).",
+      "visual": null
     }
   ]
 }

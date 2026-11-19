@@ -1,0 +1,128 @@
+{
+  "kode_subbab": "lbi-02-04",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 2: Inferensi dan Evaluasi Teks",
+  "judul_subbab": "Analisis Infografik dan Teks Multimodal",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah laporan menyebutkan bauran energi bersih kawasan industri meningkat konsisten selama lima tahun, padahal grafik batang menunjukkan penurunan tipis dari $22\\%$ (2023) menjadi $21\\%$ (2024). Manakah rujukan yang lebih sahih untuk menguji fakta kuantitatif?",
+      "opsi_cepat": [
+        "Klaim narasi ringkasan eksekutif",
+        "Angka eksplisit pada grafik batang"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Dalam soal teks multimodal UTBK, data visual (tabel atau grafik) merupakan bukti primer kuantitatif. Klaim narasi yang menyamaratakan tren sering kali menjadi jebakan kontradiksi yang sengaja diuji."
+    },
+    "konsep_inti_markdown": "**Teks multimodal UTBK** memadukan narasi verbal dengan infografik, tabel, atau diagram untuk menguji ketelitian sintesis informasi.\n\n* **Verifikasi Silang:** Cocokkan klaim kualitatif paragraf dengan angka spesifik pada label grafik atau tabel.\n* **Deteksi Anomali:** Waspadai kata mutlak (*konsisten*, *selalu*, *seluruh*) di teks yang terbantahkan oleh fluktuasi data visual.\n* **Sintesis & Prediksi:** Gabungkan alasan sebab-akibat di teks dengan tren angka di grafik, lalu terapkan aturan bersyarat (*jika-maka*) secara ketat.",
+    "radar_jebakan_utbk": [
+      "Mempercayai klaim generalisasi dalam teks narasi tanpa memverifikasi fluktuasi angka per tahun pada grafik atau tabel.",
+      "Mengabaikan syarat ganda ('dan' vs 'atau') serta aturan penurunan tingkat saat menentukan kategori data pada tabel."
+    ],
+    "stimulus_utama_bersama": "Transformasi energi pada kawasan industri menjadi instrumen krusial untuk menekan jejak karbon nasional tanpa mengorbankan produktivitas manufaktur. Laporan evaluasi Kementerian Perindustrian mencatat bahwa pengelola Kawasan Industri Terpadu (KIT) Dwipantara mulai mengintegrasikan pembangkit listrik tenaga surya (PLTS) atap dan biomassa sejak tahun 2021. Dalam narasi ringkasan eksekutifnya, pihak pengelola mengklaim bahwa bauran energi terbarukan di kawasan tersebut mengalami tren kenaikan yang konsisten setiap tahun hingga mencapai puncaknya pada 2025.\n\nSecara kualitatif, lonjakan adopsi energi bersih pada 2023 dipicu oleh beroperasinya fasilitas pengolahan limbah sawit menjadi pelet biomassa serta insentif pemotongan tarif sewa lahan bagi tenant yang memasang panel surya. Namun, pada 2024 terjadi gangguan rantai pasok komponen inverter impor dan kemarau panjang yang menurunkan pasokan bahan baku biomassa lokal. Kondisi tersebut memaksa sejumlah pabrik kembali menggunakan generator berbahan bakar fosil selama kuartal ketiga. Pemulihan baru terjadi pada 2025 setelah jaringan interkoneksi mikro (*microgrid*) selesai dibangun sehingga distribusi listrik surya antarblok pabrik berjalan optimal.\n\nUntuk mengevaluasi kinerja lingkungan tiap perusahaan penyewa lahan (*tenant*), otoritas kawasan menetapkan empat kategori predikat hijau berdasarkan capaian bauran energi terbarukan tahunan dan efisiensi konsumsi air. Predikat **Utama** diberikan jika bauran energi terbarukan minimal $30\\%$ dan efisiensi air minimal $15\\%$. Predikat **Madya** diberikan jika bauran energi terbarukan berada pada rentang $20\\%\\text{--}29\\%$ dengan efisiensi air minimal $10\\%$. Predikat **Pratama** disematkan apabila bauran energi terbarukan mencapai $10\\%\\text{--}19\\%$ tanpa syarat batas minimum efisiensi air. Sementara itu, tenant dengan bauran energi terbarukan di bawah $10\\%$ diklasifikasikan sebagai **Pembinaan** dan dikenai disinsentif tarif pengelolaan lingkungan sebesar $12\\%$ dari iuran dasar.\n\nSelain itu, peraturan kawasan menetapkan bahwa apabila salah satu syarat predikat tidak terpenuhi meskipun syarat lainnya melampaui ambang batas, peringkat tenant otomatis turun satu tingkat ke kategori di bawahnya. Kebijakan berjenjang ini dirancang agar pelaku industri menjaga keseimbangan konservasi energi sekaligus pengelolaan sumber daya air.",
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='26' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>Bauran Energi Terbarukan KIT Dwipantara (%)</text><line x1='52' y1='60' x2='336' y2='60' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='52' y1='104' x2='336' y2='104' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='52' y1='148' x2='336' y2='148' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><line x1='52' y1='192' x2='336' y2='192' stroke='#1E293B' stroke-width='2'/><text x='46' y='64' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>30%</text><text x='46' y='108' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>20%</text><text x='46' y='152' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>10%</text><text x='46' y='196' text-anchor='end' font-family='sans-serif' font-size='12' fill='#1E293B'>0%</text><rect x='66' y='139' width='30' height='53' fill='#3B82F6' rx='3'/><rect x='120' y='126' width='30' height='66' fill='#3B82F6' rx='3'/><rect x='174' y='95' width='30' height='97' fill='#3B82F6' rx='3'/><rect x='228' y='100' width='30' height='92' fill='#F59E0B' rx='3'/><rect x='282' y='60' width='30' height='132' fill='#10B981' rx='3'/><text x='81' y='132' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>12%</text><text x='135' y='119' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>15%</text><text x='189' y='88' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>22%</text><text x='243' y='93' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#F59E0B'>21%</text><text x='297' y='53' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#10B981'>30%</text><text x='81' y='212' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2021</text><text x='135' y='212' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2022</text><text x='189' y='212' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2023</text><text x='243' y='212' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2024</text><text x='297' y='212' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>2025</text></svg>",
+      "caption": "Persentase bauran energi terbarukan KIT Dwipantara periode 2021–2025."
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Sinkronisasi Informasi antara Teks Narasi dengan Tabel/Grafik Pendamping",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk paragraf pertama dan kedua teks stimulus utama beserta grafik batang bauran energi terbarukan KIT Dwipantara (2021–2025).",
+      "bedah_pola_markdown": "**Teknik Scanning/Skimming:** Pindai kata kunci tahun serta pemicu teknis pada paragraf kedua (*lonjakan 2023*, *pelet biomassa*, *pemulihan 2025*, *microgrid*), lalu cocokkan langsung dengan label angka pada grafik batang.\n\n* **Jangkar Teks & Visual:** Teks menjelaskan bahwa adopsi energi bersih pada 2023 dipicu oleh fasilitas pelet biomassa dan insentif sewa lahan, selaras dengan grafik yang mencatat bauran energi meningkat dari $15\\%$ (2022) menjadi $22\\%$ (2023).\n* **Parafrasa Opsi Benar:** Gabungkan fakta verbal dan angka secara akurat, misalnya *'Capaian bauran energi terbarukan sebesar $22\\%$ pada 2023 didukung oleh insentif pemotongan tarif sewa lahan'*.\n* **Ciri Opsi Jebakan:** Mencampuradukkan penyebab antar-tahun (*microgrid* diklaim sebagai pemicu kenaikan 2023), memakai kata ekstrem (*seluruh pabrik*), atau menambah informasi yang tidak disebut di kedua sumber.",
+      "kunci_pembeda": "Fokus pada pemadanan langsung antara keterangan proses atau penyebab di teks dengan nilai kuantitatif yang tepat di grafik.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Menemukan Anomali atau Ketidaksesuaian antara Klaim di Teks dengan Angka di Tabel/Infografik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk kalimat terakhir paragraf pertama teks stimulus utama dan bandingkan dengan pergerakan angka batang tahun 2023–2024 pada grafik.",
+      "bedah_pola_markdown": "**Teknik Scanning/Skimming:** Cari kata sifat mutlak atau klaim tren pada teks (*konsisten setiap tahun*, *selalu meningkat*), lalu pindai titik balik atau batang berwarna berbeda pada grafik.\n\n* **Jangkar Teks & Visual:** Paragraf pertama memuat klaim pengelola bahwa bauran energi terbarukan mengalami *tren kenaikan yang konsisten setiap tahun*. Namun, grafik batang menunjukkan penurunan dari $22\\%$ (2023) menjadi $21\\%$ (2024).\n* **Parafrasa Opsi Benar:** Rumuskan kontradiksi secara presisi, misalnya *'Klaim kenaikan konsisten setiap tahun tidak sesuai dengan fakta bahwa terjadi penurunan bauran energi sebesar $1$ poin persen pada 2024'*.\n* **Ciri Opsi Jebakan:** Terlalu sempit dengan menyalahkan seluruh laporan pemerintah, menganggap penurunan 2024 sebagai kegagalan total proyek, atau membesar-besarkan penurunan menjadi drastis padahal hanya turun tipis.",
+      "kunci_pembeda": "Membenturkan klaim generalisasi atau pernyataan mutlak penulis dengan satu titik data penyangkal pada visual.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Menarik Simpulan Komprehensif dengan Mengintegrasikan Data Visual dan Penjelasan Kualitatif Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk keseluruhan dinamika grafik (2021–2025) beserta penjelasan faktor gangguan 2024 dan solusi 2025 pada paragraf kedua teks stimulus.",
+      "bedah_pola_markdown": "**Teknik Scanning/Skimming:** Baca pola besar grafik dari awal hingga akhir (naik, turun sementara, lalu melonjak), kemudian pindai kata hubung kausal dan pertentangan (*namun*, *memaksa*, *setelah*) di teks untuk merangkai alasan di balik kurva tersebut.\n\n* **Jangkar Teks & Visual:** Grafik memperlihatkan penurunan $21\\%$ pada 2024 yang berbalik melonjak ke puncak $30\\%$ pada 2025; teks menjelaskan bahwa ketergantungan pada generator fosil di 2024 teratasi setelah *microgrid* beroperasi pada 2025.\n* **Parafrasa Opsi Benar:** Sintesis sebab-akibat lintas sumber, misalnya *'Optimalisasi distribusi listrik surya melalui microgrid mampu memulihkan gangguan pasokan 2024 sekaligus mendorong capaian energi bersih tertinggi sebesar $30\\%$ pada 2025'*.\n* **Ciri Opsi Jebakan:** Hanya merangkum angka grafik tanpa mekanisme penyebab dari teks (terlalu sempit) atau menyimpulkan bahwa kemarau tidak lagi berdampak di masa depan (terlalu ekstrem).",
+      "kunci_pembeda": "Menggabungkan tren angka dari visual dengan alasan kualitatif dari teks menjadi satu simpulan utuh yang saling melengkapi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Memprediksi Nilai atau Kategori Data pada Tabel Berdasarkan Aturan yang Dijelaskan dalam Bacaan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk paragraf ketiga dan keempat teks stimulus utama mengenai aturan klasifikasi predikat hijau tenant (Utama, Madya, Pratama, Pembinaan) serta aturan penurunan peringkat.",
+      "bedah_pola_markdown": "**Teknik Scanning/Skimming:** Pindai paragraf regulasi untuk menandai kata syarat mutlak (*minimal*, *dan*, *tanpa syarat*) serta klausul pengecualian (*apabila salah satu syarat tidak terpenuhi*, *turun satu tingkat*).\n\n* **Jangkar Teks & Visual:** Ketika capaian kawasan pada 2025 menyentuh $30\\%$, tenant dengan bauran energi $30\\%$ namun efisiensi air hanya $12\\%$ gagal memenuhi syarat minimal air Predikat Utama ($15\\%$) sehingga otomatis turun satu tingkat menjadi **Madya**.\n* **Parafrasa Opsi Benar:** Terapkan logika bersyarat secara berurutan pada setiap kolom data tabel sesuai aturan bacaan tanpa melompati klausul penurunan tingkat.\n* **Ciri Opsi Jebakan:** Hanya melihat satu indikator tertinggi (memilih *Utama* karena bauran energi $30\\%$), keliru membaca batas bawah rentang, atau menerapkan disinsentif tarif $12\\%$ pada kategori selain *Pembinaan*.",
+      "kunci_pembeda": "Menerapkan aturan klasifikasi bersyarat (jika-maka dan pengecualian) dari teks untuk memetakan nilai atau kategori baru.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Berdasarkan teks bacaan dan grafik bauran energi terbarukan KIT Dwipantara, tentukan apakah setiap pernyataan berikut **BENAR** atau **SALAH**!\n\n| No. | Pernyataan | Benar | Salah |\n| :---: | :--- | :---: | :---: |\n| 1 | Pernyataan pengelola mengenai kenaikan konsisten bauran energi terbarukan setiap tahun terbantahkan oleh data tahun 2024. | | |\n| 2 | Peningkatan bauran energi terbarukan sebesar $7$ poin persen pada 2023 dipicu oleh selesainya pembangunan jaringan *microgrid*. | | |\n| 3 | Penurunan porsi energi terbarukan menjadi $21\\%$ pada 2024 berkaitan dengan gangguan pasokan inverter impor dan kemarau panjang. | | |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Benar",
+        "B. Benar - Salah - Benar",
+        "C. Benar - Salah - Salah",
+        "D. Salah - Benar - Benar",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pernyataan (1) **Benar** karena grafik turun dari $22\\%$ (2023) menjadi $21\\%$ (2024), membantah klaim *konsisten setiap tahun*. Pernyataan (2) **Salah** karena kenaikan $15\\%$ ke $22\\%$ ($7$ poin persen) pada 2023 dipicu fasilitas pelet biomassa dan insentif sewa lahan, sedangkan *microgrid* baru selesai pada 2025. Pernyataan (3) **Benar** karena teks mengaitkan kondisi 2024 dengan gangguan inverter impor dan kemarau panjang yang memaksa pemakaian generator fosil. Jadi, urutan yang tepat adalah **Benar - Salah - Benar** (**B**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Dengan mengintegrasikan data grafik dan penjelasan kualitatif pada bacaan, manakah simpulan yang PALING TEPAT menggambarkan dinamika transisi energi di KIT Dwipantara selama periode 2021–2025?",
+      "opsi_jawaban": [
+        "A. Keberhasilan mencapai bauran energi terbarukan $30\\%$ pada 2025 membuktikan bahwa operasional kawasan industri telah sepenuhnya bebas dari bahan bakar fosil.",
+        "B. Hambatan rantai pasok komponen dan faktor iklim sempat menahan laju transisi energi pada 2024 sebelum infrastruktur interkoneksi mendorong lonjakan tertinggi di akhir periode.",
+        "C. Insentif pemotongan tarif sewa lahan merupakan satu-satunya faktor yang menjaga bauran energi terbarukan tetap berada di atas $20\\%$ sejak 2022 hingga 2025.",
+        "D. Peningkatan bauran energi terbarukan dari $12\\%$ pada 2021 menjadi $30\\%$ pada 2025 menyebabkan seluruh tenant otomatis memperoleh keringanan tarif pengelolaan lingkungan.",
+        "E. Penggunaan generator berbahan bakar fosil pada kuartal ketiga 2024 menurunkan porsi energi terbarukan hingga lebih rendah daripada capaian awal tahun 2021."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Opsi B** menyintesis tepat gangguan rantai pasok inverter serta kemarau pada 2024 (turun ke $21\\%$) dan peran *microgrid* yang mendorong lonjakan tertinggi ke $30\\%$ pada 2025. **Opsi A** salah karena $30\\%$ berarti $70\\%$ sisanya belum terbarukan. **Opsi C** keliru karena 2022 masih $15\\%$ dan insentif bukan satu-satunya faktor. **Opsi D** menggeneralisasi capaian kawasan ke *seluruh tenant*, sedangkan **Opsi E** bertentangan dengan grafik ($21\\% > 12\\%$).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan tabel kinerja lingkungan empat perusahaan penyewa lahan (*tenant*) di KIT Dwipantara pada tahun 2025 berikut!\n\n| Nama Tenant | Bauran Energi Terbarukan | Efisiensi Konsumsi Air |\n| :--- | :---: | :---: |\n| PT Surya Baja | $32\\%$ | $11\\%$ |\n| PT Tirta Kemasan | $24\\%$ | $16\\%$ |\n| PT Agro Lestari | $18\\%$ | $6\\%$ |\n| PT Logam Jaya | $9\\%$ | $18\\%$ |\n\nBerdasarkan aturan penetapan predikat hijau dalam bacaan, kombinasi prediksi predikat dan konsekuensi tarif yang PALING TEPAT adalah ....",
+      "opsi_jawaban": [
+        "A. PT Surya Baja meraih predikat Utama karena bauran energi terbarukannya melampaui ambang batas $30\\%$.",
+        "B. PT Tirta Kemasan memperoleh predikat Utama karena efisiensi konsumsi airnya mencapai $16\\%$.",
+        "C. PT Agro Lestari masuk kategori Pembinaan dan dikenai disinsentif tarif sebesar $12\\%$ karena efisiensi airnya di bawah $10\\%$.",
+        "D. PT Logam Jaya memperoleh predikat Pratama karena tingginya efisiensi air mengompensasi rendahnya bauran energi terbarukan.",
+        "E. PT Surya Baja dan PT Tirta Kemasan sama-sama memperoleh predikat Madya tanpa dikenai disinsentif tarif pengelolaan lingkungan."
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "**PT Surya Baja** memenuhi syarat energi Utama ($32\\% \\ge 30\\%$) tetapi efisiensi airnya ($11\\%$) di bawah $15\\%$, sehingga turun satu tingkat menjadi **Madya**. **PT Tirta Kemasan** berada pada rentang energi Madya ($24\\%$) dan memenuhi syarat air minimal $10\\%$ ($16\\%$), sehingga berpredikat **Madya** (**E** benar). **PT Agro Lestari** berpredikat **Pratama** karena tidak ada syarat minimum air. **PT Logam Jaya** berpredikat **Pembinaan** ($9\\% < 10\\%$) dan dikenai disinsentif $12\\%$.",
+      "visual": null
+    }
+  ]
+}

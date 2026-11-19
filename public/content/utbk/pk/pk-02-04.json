@@ -1,0 +1,136 @@
+{
+  "kode_subbab": "pk-02-04",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 2: Fungsi dan Barisan",
+  "judul_subbab": "Barisan dan Deret Aritmetika & Geometri",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui jumlah $n$ suku pertama suatu deret adalah $S_n = 2n^2 + 3n + 1$. Berapakah nilai suku pertama ($U_1$) dari barisan tersebut?",
+      "opsi_cepat": [
+        "5",
+        "6"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Suku pertama selalu $U_1 = S_1 = 2(1)^2 + 3(1) + 1 = 6$. Rumus turunan cepat $U_n = 4n + 1$ hanya berlaku mulai $n \\ge 2$ karena konstanta $+1$ pada $S_n$ menggeser suku awal."
+    },
+    "konsep_inti_markdown": "- **Aritmetika (beda $b$ tetap):** $U_n = a + (n-1)b$ dan $S_n = \\frac{n}{2}(a + U_n) = \\frac{n}{2}(2a + (n-1)b)$.\n- **Geometri (rasio $r$ tetap):** $U_n = ar^{n-1}$ dan $S_n = \\frac{a(r^n - 1)}{r - 1}$ untuk $r \\neq 1$.\n- **Hubungan Umum:** $U_n = S_n - S_{n-1}$ dan $U_1 = S_1$.\n- **Deret Geometri Tak Hingga ($|r| < 1$):** $S_{\\infty} = \\frac{a}{1 - r}$.",
+    "radar_jebakan_utbk": [
+      "Menggunakan rumus cepat $U_n = 2pn + (q - p)$ dari $S_n = pn^2 + qn + c$ ($c \\neq 0$) untuk menghitung $U_1$, padahal $U_1$ wajib dihitung lewat $S_1$.",
+      "Lupa syarat konvergensi deret tak hingga ($-1 < r < 1$) atau keliru memakai rasio $r$ alih-alih $r^2$ saat menghitung jumlah suku bernomor ganjil atau genap."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Hubungan Suku ke-n (U_n) dan Jumlah n Suku Pertama (S_n) pada Barisan Aritmetika",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Jumlah $n$ suku pertama suatu deret aritmetika dinyatakan dengan $S_n = 3n^2 - 4n$. Tentukan nilai dari $U_5 + U_7$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nGunakan relasi fundamental $U_n = S_n - S_{n-1}$ untuk mencari nilai tiap suku secara terpisah. Untuk $n = 5$, hitung $S_5 = 3(5)^2 - 4(5) = 75 - 20 = 55$ dan $S_4 = 3(4)^2 - 4(4) = 48 - 16 = 32$, sehingga $U_5 = 55 - 32 = 23$. Dengan langkah serupa untuk $n = 7$, diperoleh $S_7 = 3(7)^2 - 4(7) = 119$ dan $S_6 = 3(6)^2 - 4(6) = 84$, maka $U_7 = 119 - 84 = 35$. Jadi, $U_5 + U_7 = 23 + 35 = 58$.\n\n**2. Jalur Taktis UTBK**\nJika $S_n = pn^2 + qn$ tanpa konstanta, maka $U_n = 2pn + (q - p)$. Dari $S_n = 3n^2 - 4n$, langsung didapat $U_n = 6n - 7$. Ingat sifat simetri aritmetika: $U_5 + U_7 = 2U_6$. Substitusi $n = 6$ menghasilkan $2(6(6) - 7) = 2(29) = 58$ dalam 15 detik.",
+      "kunci_pembeda": "Jika rumus $S_n$ berbentuk kuadrat $pn^2 + qn$, turunkan langsung menjadi $U_n = 2pn + (q - p)$ tanpa menghitung $S_n - S_{n-1}$ berulang kali.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Sifat Suku Tengah dan Sisipan pada Barisan Aritmetika maupun Geometri",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Di antara bilangan $4$ dan $256$ disisipkan $5$ bilangan sehingga membentuk barisan geometri dengan rasio positif. Tentukan nilai suku tengah barisan baru tersebut.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPenambahan $k = 5$ bilangan di antara $a = 4$ dan $U_n = 256$ menghasilkan total $n = k + 2 = 7$ suku. Rasio baru barisan geometri dihitung melalui $r' = \\sqrt[k+1]{\\frac{U_n}{a}} = \\sqrt[6]{\\frac{256}{4}} = \\sqrt[6]{64} = 2$. Karena banyaknya suku adalah $7$ (ganjil), suku tengah terletak pada urutan ke-$\\frac{7+1}{2} = 4$, yaitu $U_4$. Dengan rumus suku ke-$n$, diperoleh $U_4 = a(r')^{4-1} = 4 \\times 2^3 = 4 \\times 8 = 32$.\n\n**2. Jalur Taktis UTBK**\nPenyisipan simetris di antara dua ujung tidak pernah mengubah nilai suku tengah ($U_t$) barisan! Langsung gunakan rumus suku tengah geometri $U_t = \\sqrt{a \\times U_{\\text{akhir}}}$ tanpa perlu mencari rasio baru maupun jumlah sisipan. Hitung $U_t = \\sqrt{4 \\times 256} = \\sqrt{4} \\times \\sqrt{256} = 2 \\times 16 = 32$. Untuk aritmetika, cukup gunakan $U_t = \\frac{a + U_{\\text{akhir}}}{2}$.",
+      "kunci_pembeda": "Sisipan sebanyak apa pun di antara dua suku ujung tidak mengubah nilai suku tengah ($U_t = \\frac{a+U_n}{2}$ untuk aritmetika, $U_t = \\sqrt{a \\cdot U_n}$ untuk geometri).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Tiga Bilangan Membentuk Barisan Aritmetika, Jika Diubah Sukunya Membentuk Barisan Geometri (dan Sebaliknya)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tiga bilangan membentuk barisan aritmetika dengan jumlah $18$. Jika suku ketiga ditambah $3$, ketiga bilangan tersebut membentuk barisan geometri. Tentukan rasio barisan geometri yang mungkin.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nMisalkan tiga suku aritmetika adalah $a - b, a, a + b$. Jumlahnya $3a = 18$, sehingga $a = 6$ dan barisannya $6 - b, 6, 6 + b$. Setelah suku ketiga ditambah $3$, barisan geometri menjadi $6 - b, 6, 9 + b$. Menggunakan sifat $U_2^2 = U_1 \\cdot U_3$, diperoleh $36 = (6 - b)(9 + b) \\iff b^2 + 3b - 18 = 0 \\iff (b + 6)(b - 3) = 0$. Jika $b = 3$, barisannya $3, 6, 12$ ($r = 2$); jika $b = -6$, barisannya $12, 6, 3$ ($r = \\frac{1}{2}$).\n\n**2. Jalur Taktis UTBK**\nGunakan pemisalan simetris $(a - b), a, (a + b)$ setiap kali diketahui jumlah tiga suku aritmetika agar $b$ langsung hilang dan $a = \\frac{18}{3} = 6$. Selanjutnya, terapkan $U_2^2 = U_1 \\cdot U_3$ lalu tebak faktor dari $36$ (yaitu $3 \\times 12$ atau $12 \\times 3$) untuk memperoleh $b = 3$ atau $b = -6$ tanpa memfaktorkan persamaan kuadrat.",
+      "kunci_pembeda": "Gunakan pemisalan simetris $(a-b), a, (a+b)$ untuk mengunci suku tengah aritmetika $a = \\frac{S_3}{3}$, lalu hubungkan ke geometri via $U_2^2 = U_1 \\cdot U_3$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Rasio, Suku ke-n, dan Hasil Kali Suku-suku pada Barisan Geometri",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui barisan geometri positif dengan $U_2 = 6$ dan $U_6 = 96$. Tentukan hasil kali lima suku pertama barisan tersebut ($U_1 \\times U_2 \\times U_3 \\times U_4 \\times U_5$).",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nBandingkan kedua suku yang diketahui untuk mencari rasio: $\\frac{U_6}{U_2} = \\frac{ar^5}{ar} = r^4 = \\frac{96}{6} = 16$. Karena suku-sukunya positif, didapat $r = 2$. Substitusi ke $U_2 = ar = 6$ menghasilkan $a = 3$. Lima suku pertama barisan tersebut adalah $3, 6, 12, 24, 48$. Hasil kali kelima sukunya adalah $3 \\times 6 \\times 12 \\times 24 \\times 48 = 248.832$ atau dalam bentuk pangkat $3^5 \\times 2^{1+2+3+4} = 3^5 \\times 2^{10} = 248.832$.\n\n**2. Jalur Taktis UTBK**\nJangan pernah mengalikan suku satu per satu! Gunakan sifat simetri hasil kali barisan geometri: $U_1 \\cdot U_5 = U_2 \\cdot U_4 = U_3^2$, sehingga hasil kali $5$ suku pertama selalu sama dengan $(U_3)^5$. Cari $U_3$ secara instan dengan $U_3 = U_2 \\cdot r = 6 \\times \\sqrt[4]{16} = 12$. Maka hasil kalinya adalah $12^5 = 248.832$.",
+      "kunci_pembeda": "Hasil kali $n$ suku pertama barisan geometri (untuk $n$ ganjil) selalu sama dengan pangkat $n$ dari suku tengahnya: $P_n = (U_{\\text{tengah}})^n$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Deret Geometri Tak Hingga Konvergen (|r| < 1, Jumlah Suku Ganjil vs Suku Genap)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Jumlah suatu deret geometri tak hingga konvergen adalah $18$, sedangkan jumlah suku-suku bernomor ganjilnya adalah $12$. Tentukan suku pertama ($a$) dan rasio ($r$) deret tersebut.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDiketahui $S_{\\infty} = \\frac{a}{1 - r} = 18$. Suku-suku bernomor ganjil ($U_1 + U_3 + U_5 + \\dots$) membentuk deret geometri baru dengan suku awal $a$ dan rasio $r^2$, sehingga $S_{\\text{ganjil}} = \\frac{a}{1 - r^2} = 12$. Faktorkan penyebut menjadi $\\frac{a}{(1 - r)(1 + r)} = 12$. Substitusikan $\\frac{a}{1 - r} = 18$ ke persamaan tersebut: $\\frac{18}{1 + r} = 12 \\iff 1 + r = \\frac{3}{2}$, sehingga $r = \\frac{1}{2}$. Masukkan kembali nilai $r$ ke rumus awal: $a = 18(1 - \\frac{1}{2}) = 9$.\n\n**2. Jalur Taktis UTBK**\nGunakan identitas emas deret tak hingga: $S_{\\infty} = S_{\\text{ganjil}} + S_{\\text{genap}}$ dan rasio $r = \\frac{S_{\\text{genap}}}{S_{\\text{ganjil}}}$. Karena $S_{\\infty} = 18$ dan $S_{\\text{ganjil}} = 12$, langsung diperoleh $S_{\\text{genap}} = 18 - 12 = 6$. Tanpa memfaktorkan aljabar, rasio langsung didapat dari $r = \\frac{6}{12} = \\frac{1}{2}$, dan suku pertama $a = S_{\\infty}(1 - r) = 18(\\frac{1}{2}) = 9$.",
+      "kunci_pembeda": "Pada deret geometri tak hingga konvergen, rasio $r$ selalu sama dengan perbandingan jumlah suku genap terhadap jumlah suku ganjil ($r = \\frac{S_{\\text{genap}}}{S_{\\text{ganjil}}}$).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 6,
+      "nama_variasi": "Barisan Rekurensi Sederhana (Mencari Suku Awal a_4, a_5 atau Pola Siklik Berulang)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Barisan bilangan $a_1, a_2, a_3, \\dots$ memenuhi aturan $a_{n+2} = 2a_{n+1} - a_n$ untuk setiap bilangan asli $n$. Jika $a_1 = 3$ dan $a_4 = 15$, tentukan nilai $a_6$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nGunakan relasi rekurensi secara bertahap mulai dari $n = 1$. Untuk $n = 1$: $a_3 = 2a_2 - a_1 = 2a_2 - 3$. Untuk $n = 2$: $a_4 = 2a_3 - a_2$. Substitusikan $a_3$ dan $a_4 = 15$: $15 = 2(2a_2 - 3) - a_2 \\iff 15 = 3a_2 - 6 \\iff 3a_2 = 21$, sehingga $a_2 = 7$. Diperoleh $a_3 = 2(7) - 3 = 11$. Lanjutkan untuk $n = 3$: $a_5 = 2a_4 - a_3 = 2(15) - 11 = 19$, dan untuk $n = 4$: $a_6 = 2a_5 - a_4 = 2(19) - 15 = 23$.\n\n**2. Jalur Taktis UTBK**\nKenali bentuk aljabar tersembunyi pada rekurensi UTBK! Persamaan $a_{n+2} = 2a_{n+1} - a_n$ dapat ditulis ulang menjadi $a_{n+2} - a_{n+1} = a_{n+1} - a_n$, yang merupakan definisi **barisan aritmetika** dengan beda konstan! Karena $a_1 = 3$ dan $a_4 = 15$, langsung hitung beda $b = \\frac{15 - 3}{4 - 1} = 4$. Maka $a_6 = a_4 + 2b = 15 + 2(4) = 23$ dalam 10 detik.",
+      "kunci_pembeda": "Ubah persamaan rekurensi menjadi selisih atau rasio antarsuku ($a_{n+2} - a_{n+1} = a_{n+1} - a_n$ adalah aritmetika; $a_{n+2} = a_{n+1} - a_n$ adalah siklus 6 suku).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Jumlah $n$ suku pertama suatu deret aritmetika dinyatakan dengan $S_n = 2n^2 + 5n$. Berdasarkan informasi tersebut, manakah pernyataan berikut yang bernilai benar?\n\n(1) Suku pertama barisan tersebut adalah $7$.\n(2) Beda antar-suku yang berdekatan adalah $2$.\n(3) Suku ke-$10$ barisan tersebut adalah $43$.\n(4) Jika di antara dua suku berurutan disisipkan $3$ bilangan sehingga terbentuk barisan aritmetika baru, beda barisan baru menjadi $2$.",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pilihan benar."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Dari $S_n = 2n^2 + 5n$, turunkan rumus suku ke-$n$: $U_n = 2(2)n + (5 - 2) = 4n + 3$.\n- **(1) Benar:** $U_1 = S_1 = 4(1) + 3 = 7$.\n- **(2) Salah:** Koefisien $n$ pada $U_n$ menunjukkan beda $b = 4$, bukan $2$.\n- **(3) Benar:** $U_{10} = 4(10) + 3 = 43$.\n- **(4) Salah:** Sisipan $k = 3$ menghasilkan beda baru $b' = \\frac{b}{k+1} = \\frac{4}{4} = 1$.\nJadi, pernyataan yang benar hanya (1) dan (3).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Tiga bilangan positif berbeda membentuk barisan aritmetika dengan jumlah $36$. Jika suku ketiga ditambah $1$, ketiga bilangan tersebut membentuk barisan geometri. Berdasarkan informasi yang diberikan, manakah hubungan antara kuantitas $P$ dan $Q$ berikut yang benar?\n\n| $P$ | $Q$ |\n| :--- | :--- |\n| Jumlah tak hingga deret geometri baru jika disusun turun ($0 < r < 1$) | $60$ |",
+      "opsi_jawaban": [
+        "A. $P > Q$",
+        "B. $Q > P$",
+        "C. $P = Q$",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Misalkan tiga suku aritmetika adalah $12 - b, 12, 12 + b$ (karena jumlahnya $36$, suku tengah $= 12$). Setelah suku ketiga ditambah $1$, barisan geometri menjadi $12 - b, 12, 13 + b$. Dengan $U_2^2 = U_1 \\cdot U_3$, diperoleh $144 = (12 - b)(13 + b) \\iff b^2 + b - 12 = 0$, sehingga $b = 3$ atau $b = -4$. Agar konvergen ($0 < r < 1$), pilih $b = -4$ sehingga barisan geometrinya $16, 12, 9$ dengan $r = \\frac{3}{4}$. Maka $P = S_{\\infty} = \\frac{16}{1 - 3/4} = 64 > Q$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4,
+        6
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Barisan bilangan positif $u_1, u_2, u_3, \\dots$ memenuhi hubungan rekurensi $u_{n+1}^2 = u_n \\cdot u_{n+2}$ untuk setiap bilangan asli $n$. Jika $u_2 = 2$ dan $u_6 = 32$, tentukan nilai dari hasil kali lima suku pertama barisan tersebut ($u_1 \\times u_2 \\times u_3 \\times u_4 \\times u_5$). *(Tuliskan jawaban dalam bilangan bulat saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "1024",
+      "bedah_cepat_markdown": "Persamaan rekurensi $u_{n+1}^2 = u_n \\cdot u_{n+2}$ ekuivalen dengan $\\frac{u_{n+1}}{u_n} = \\frac{u_{n+2}}{u_{n+1}}$, yang berarti barisan tersebut adalah **barisan geometri**. Dari $u_2 = 2$ dan $u_6 = 32$, diperoleh $r^4 = \\frac{u_6}{u_2} = \\frac{32}{2} = 16$, sehingga $r = 2$ (karena suku-sukunya positif). Suku tengah dari lima suku pertama adalah $u_3 = u_2 \\cdot r = 2 \\times 2 = 4$. Dengan sifat simetri hasil kali barisan geometri, $u_1 \\times u_2 \\times u_3 \\times u_4 \\times u_5 = (u_3)^5 = 4^5 = 1024$.",
+      "visual": null
+    }
+  ]
+}

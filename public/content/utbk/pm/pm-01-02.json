@@ -1,0 +1,118 @@
+{
+  "kode_subbab": "pm-01-02",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 1: Aritmetika Sosial dan Keuangan",
+  "judul_subbab": "Bunga Tunggal, Bunga Majemuk, dan Cicilan",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Tabungan A memberi bunga tunggal 6% per tahun (pajak bunga 20%), sedangkan Tabungan B memberi bunga majemuk 5% per tahun bebas pajak. Untuk modal Rp100.000.000,00 selama 2 tahun, manakah yang menghasilkan saldo akhir lebih besar?",
+      "opsi_cepat": [
+        "Tabungan A (bunga tunggal 6%)",
+        "Tabungan B (bunga majemuk 5%)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Pajak 20% memangkas suku bunga efektif Tabungan A menjadi 4,8% per tahun (saldo akhir Rp109.600.000,00), sehingga kalah dari bunga majemuk 5% Tabungan B yang menghasilkan Rp110.250.000,00."
+    },
+    "konsep_inti_markdown": "- **Bunga Tunggal:** Dihitung tetap dari modal awal ($M_0$), sehingga $M_t = M_0(1 + i \\cdot t)$ dengan $i$ suku bunga neto setelah pajak.\\n- **Bunga Majemuk:** Bunga periode berjalan digulung menjadi pokok baru, sehingga $M_t = M_0(1 + i)^t$.\\n- **Cicilan Bunga Flat:** Angsuran bulanan konstan sebesar $\\frac{P}{n} + (i_{\\text{flat}} \\times P)$, dengan pokok pinjaman $P = \\text{Harga} - \\text{DP}$.\\n- **Depresiasi Aset:** Penyusutan nilai buku $V_t = V_0 - D \\cdot t$ (linear) atau $V_t = V_0(1 - r)^t$ (saldo menurun).",
+    "radar_jebakan_utbk": [
+      "Mengalikan persentase bunga flat dengan sisa utang berjalan, padahal bunga flat selalu dikalikan pokok pinjaman awal setelah dikurangi uang muka (DP).",
+      "Lupa memotong tarif pajak bunga sebelum menghitung akumulasi saldo akhir, atau memotong pajak dari total saldo akhir, bukan dari nominal bunganya."
+    ],
+    "stimulus_utama_bersama": "Pada awal tahun 2026, CV Karya Mandiri berencana membeli 1 unit mobil boks operasional seharga Rp200.000.000,00 dengan memanfaatkan dana kas perusahaan sebesar Rp100.000.000,00. Manajemen mengevaluasi pengelolaan kas, skema pembiayaan, dan penyusutan aset berdasarkan data berikut:\\n\\n1. **Instrumen Simpanan Dana Kas (Modal Rp100.000.000,00):**\\n   - **Deposito Bank Nusantara:** Suku bunga tunggal $6\\%$ per tahun (p.a.) yang dibayarkan setiap akhir tahun tanpa digulung ke pokok, dengan asumsi tarif pajak penghasilan (PPh) final atas bunga sebesar $20\\%$.\\n   - **Tabungan Berjangka:** Imbal hasil majemuk $5\\%$ per tahun yang dikapitalisasi setiap akhir tahun (diasumsikan bebas pajak).\\n\\n2. **Skema Kredit Mobil Boks (Harga Rp200.000.000,00):**\\n   - **Opsi Kredit A:** Uang muka (_Down Payment_ / DP) sebesar $40\\%$ dari harga kendaraan. Sisa pinjaman dicicil selama $24$ bulan dengan bunga flat $0,5\\%$ per bulan dari pokok pinjaman awal. Keterlambatan pembayaran angsuran dikenakan denda $2\\%$ dari nominal angsuran bulanan untuk setiap bulan keterlambatan.\\n   - **Opsi Kredit B:** DP sebesar $20\\%$ dari harga kendaraan. Sisa pinjaman dicicil selama $24$ bulan dengan angsuran tetap sebesar Rp7.400.000,00 per bulan (sudah termasuk bunga dan administrasi).\\n\\n3. **Metode Penyusutan Aset Kendaraan:**\\n   - Nilai mobil boks Rp200.000.000,00 disusutkan menggunakan **Metode Garis Lurus (Linear)** sebesar Rp25.000.000,00 per tahun atau **Metode Saldo Menurun** sebesar $20\\%$ per tahun dari nilai buku tahun sebelumnya.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pertumbuhan Tabungan atau Deposito dengan Bunga Tunggal vs Bunga Majemuk",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk stimulus utama: dana kas Rp100.000.000,00 ditempatkan selama 2 tahun pada Deposito Bank Nusantara (bunga tunggal 6% p.a., pajak bunga 20%) atau Tabungan Berjangka (bunga majemuk 5% p.a., bebas pajak).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nIdentifikasi modal awal $M_0 = 100.000.000$ dan durasi $t = 2$ tahun. Deposito memakai skema bunga tunggal berpajak $20\\%$, sedangkan Tabungan Berjangka memakai bunga majemuk tanpa pajak.\\n\\n**2. Model Matematika (Employing)**\\nTarif bunga tunggal bersih setelah pajak adalah $i_{\\text{neto}} = 6\\% \\times (1 - 0,20) = 4,8\\%$. Rumus saldo deposito menjadi $M_{\\text{tunggal}} = M_0(1 + 0,048t)$, sementara tabungan berjangka menggunakan $M_{\\text{majemuk}} = M_0(1 + 0,05)^t$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nSaldo deposito: $100.000.000 \\times (1 + 0,096) = \\text{Rp}109.600.000,00$. Saldo tabungan berjangka: $100.000.000 \\times 1,1025 = \\text{Rp}110.250.000,00$. Secara praktis, meskipun suku bunga nominal deposito lebih tinggi, potongan pajak PPh membuat imbal hasil bersihnya kalah Rp650.000,00 dibandingkan bunga majemuk bebas pajak. Oleh karena itu, investor wajib menghitung tarif neto sebelum membandingkan dua produk simpanan.",
+      "kunci_pembeda": "Selalu konversi bunga kotor menjadi bunga bersih (dikurangi pajak) terlebih dahulu sebelum membandingkan pertumbuhan linear bunga tunggal dengan pertumbuhan eksponensial bunga majemuk.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Skema Kredit Barang atau Pinjaman dengan Bunga Flat Bulanan, Uang Muka, dan Penalti Keterlambatan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk stimulus utama: pembelian mobil boks Rp200.000.000,00 melalui Opsi Kredit A dengan DP 40%, tenor 24 bulan, bunga flat 0,5% per bulan, serta denda keterlambatan 2% dari angsuran bulanan.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nHarga kendaraan Rp200.000.000,00 dibayar sebagian melalui uang muka $40\\%$, sehingga kredit hanya berlaku atas sisa harga selama $n = 24$ bulan dengan bunga flat $0,5\\%$ per bulan.\\n\\n**2. Model Matematika (Employing)**\\nHitung pokok pinjaman $P = \\text{Harga} - \\text{DP}$. Cicilan pokok bulanan adalah $\\frac{P}{24}$ dan bunga bulanan tetap sebesar $0,005P$. Total angsuran normal per bulan $A = \\frac{P}{24} + 0,005P$, sedangkan denda keterlambatan adalah $0,02A$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nDP sebesar $40\\% \\times 200.000.000 = \\text{Rp}80.000.000,00$, menyisakan pokok $P = \\text{Rp}120.000.000,00$. Cicilan pokok Rp5.000.000,00 ditambah bunga Rp600.000,00 menghasilkan angsuran normal Rp5.600.000,00 per bulan. Jika perusahaan menunggak satu bulan, denda yang wajib dibayar adalah $2\\% \\times 5.600.000 = \\text{Rp}112.000,00$, sehingga tagihan bulan tersebut menjadi Rp5.712.000,00.",
+      "kunci_pembeda": "Kurangi harga barang dengan uang muka (DP) untuk memperoleh pokok utang awal, lalu kalikan pokok tersebut dengan persentase bunga flat dan bagi tenor.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Perbandingan Dua Penawaran Kredit atau Investasi untuk Menentukan Total Nilai Terbaik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk stimulus utama: membandingkan total pengeluaran Opsi Kredit A (DP 40%, angsuran Rp5.600.000,00/bulan) dengan Opsi Kredit B (DP 20%, angsuran Rp7.400.000,00/bulan selama 24 bulan).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nManajemen membandingkan dua skema pembiayaan berdurasi sama ($24$ bulan) tetapi berbeda besaran uang muka awal dan cicilan bulanannya untuk mencari total pengeluaran terendah.\\n\\n**2. Model Matematika (Employing)**\\nTotal arus kas keluar setiap opsi dirumuskan sebagai $\\text{Total Bayar} = \\text{DP} + (24 \\times \\text{Angsuran Bulanan})$. Selisih biaya kredit diperoleh dengan mengurangkan total bayar kedua opsi tersebut.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nPada Opsi A, total bayar adalah $\\text{Rp}80.000.000,00 + (24 \\times \\text{Rp}5.600.000,00) = \\text{Rp}214.400.000,00$. Pada Opsi B, DP sebesar $20\\% \\times 200.000.000 = \\text{Rp}40.000.000,00$, sehingga total bayarnya $\\text{Rp}40.000.000,00 + (24 \\times \\text{Rp}7.400.000,00) = \\text{Rp}217.600.000,00$. Opsi A lebih hemat Rp3.200.000,00 secara langsung, tetapi Opsi B menyisakan likuiditas kas awal Rp40.000.000,00 lebih besar untuk diputar dalam usaha.",
+      "kunci_pembeda": "Bandingkan total pengeluaran (DP ditambah seluruh angsuran) serta perhitungkan potensi imbal hasil dari sisa kas awal yang tidak terpakai untuk DP.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Depresiasi atau Penyusutan Nilai Aset secara Linear maupun Persentase Tahunan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk stimulus utama: pencatatan nilai buku mobil boks Rp200.000.000,00 setelah 3 tahun menggunakan Metode Garis Lurus (susut Rp25.000.000,00/tahun) versus Metode Saldo Menurun (susut 20%/tahun).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\\nNilai perolehan aset $V_0 = \\text{Rp}200.000.000,00$ menyusut selama $t = 3$ tahun melalui dua pendekatan akuntansi: pengurangan nominal tetap per tahun atau persentase tetap dari nilai buku berjalan.\\n\\n**2. Model Matematika (Employing)**\\nMetode garis lurus mengikuti barisan aritmetika $V_t = V_0 - (D \\times t)$ dengan $D = 25.000.000$. Sebaliknya, metode saldo menurun mengikuti barisan geometri $V_t = V_0(1 - r)^t$ dengan $r = 0,20$.\\n\\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\\nPada tahun ke-3, nilai buku metode linear adalah $200.000.000 - (3 \\times 25.000.000) = \\text{Rp}125.000.000,00$. Pada metode saldo menurun, nilainya menjadi $200.000.000 \\times (0,8)^3 = 200.000.000 \\times 0,512 = \\text{Rp}102.400.000,00$. Evaluasinya, penyusutan persentase menurunkan nilai aset jauh lebih tajam di awal tahun dengan selisih Rp22.600.000,00 pada tahun ketiga.",
+      "kunci_pembeda": "Bedakan pengurangan nominal konstan pada depresiasi linear (aritmetika) dengan faktor pengali $(1 - r)^t$ pada depresiasi persentase tahunan (geometri).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan data instrumen simpanan CV Karya Mandiri, perusahaan membagi dana kas Rp100.000.000,00 menjadi dua bagian sama besar pada awal tahun 2026: setengahnya ditempatkan di Deposito Bank Nusantara dan setengahnya lagi di Tabungan Berjangka. Berapakah total seluruh saldo kas perusahaan dari kedua instrumen tersebut tepat setelah 2 tahun?",
+      "opsi_jawaban": [
+        "A. Rp109.600.000,00",
+        "B. Rp109.925.000,00",
+        "C. Rp110.250.000,00",
+        "D. Rp111.000.000,00",
+        "E. Rp111.125.000,00"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Setiap instrumen mendapat modal Rp50.000.000,00. Deposito menghasilkan bunga tunggal neto $6\\% \\times 0,8 = 4,8\\%$ per tahun, sehingga setelah 2 tahun menjadi $\\text{Rp}50.000.000,00 \\times 1,096 = \\text{Rp}54.800.000,00$. Tabungan berjangka menghasilkan bunga majemuk $\\text{Rp}50.000.000,00 \\times (1,05)^2 = \\text{Rp}55.125.000,00$. Total keduanya adalah **Rp109.925.000,00**. Opsi D dan E salah karena mengabaikan pajak bunga 20%, sedangkan A dan C menghitung untuk satu instrumen saja.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        1,
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Jika CV Karya Mandiri memilih Opsi Kredit B, sisa dana kas setelah membayar uang muka (DP) langsung ditempatkan seluruhnya ke Tabungan Berjangka selama 2 tahun. Apabila dibandingkan dengan memilih Opsi Kredit A (dengan sisa kas setelah DP juga ditempatkan di Tabungan Berjangka selama 2 tahun), manakah pernyataan evaluasi finansial yang paling tepat pada akhir tahun ke-2?",
+      "opsi_jawaban": [
+        "A. Opsi Kredit B lebih menguntungkan sebesar Rp900.000,00 dibanding Opsi Kredit A.",
+        "B. Opsi Kredit A lebih menguntungkan sebesar Rp900.000,00 dibanding Opsi Kredit B.",
+        "C. Opsi Kredit A lebih menguntungkan sebesar Rp3.200.000,00 dibanding Opsi Kredit B.",
+        "D. Opsi Kredit B lebih menguntungkan sebesar Rp4.100.000,00 dibanding Opsi Kredit A.",
+        "E. Kedua opsi menghasilkan posisi keuangan bersih yang sama persis pada akhir tahun ke-2."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Total bayar Opsi A adalah Rp214.400.000,00 (lebih murah Rp3.200.000,00 dari Opsi B yang sebesar Rp217.600.000,00). Namun, sisa kas Opsi B (Rp60.000.000,00) menghasilkan bunga majemuk $60.000.000 \\times 0,1025 = \\text{Rp}6.150.000,00$, sedangkan sisa kas Opsi A (Rp20.000.000,00) hanya menghasilkan Rp2.050.000,00. Selisih bunga Rp4.100.000,00 menutup selisih kredit Rp3.200.000,00, sehingga **Opsi B unggul Rp900.000,00**. Opsi C mengabaikan bunga investasi, sedangkan D mengabaikan selisih cicilan.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Untuk penyusunan laporan keuangan akhir tahun ke-2 (tepat 2 tahun setelah pembelian mobil boks Rp200.000.000,00), hitunglah selisih nilai buku kendaraan antara Metode Garis Lurus dan Metode Saldo Menurun (dalam rupiah, tulis angkanya saja tanpa tanda titik maupun satuan).",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "22000000",
+      "bedah_cepat_markdown": "Pada tahun ke-2 ($t = 2$), nilai buku dengan Metode Garis Lurus adalah $\\text{Rp}200.000.000,00 - (2 \\times \\text{Rp}25.000.000,00) = \\text{Rp}150.000.000,00$. Sementara itu, dengan Metode Saldo Menurun $20\\%$ per tahun, nilai bukunya adalah $\\text{Rp}200.000.000,00 \\times (1 - 0,20)^2 = \\text{Rp}200.000.000,00 \\times 0,64 = \\text{Rp}128.000.000,00$. Selisih kedua nilai buku tersebut adalah $\\text{Rp}150.000.000,00 - \\text{Rp}128.000.000,00 = \\text{Rp}22.000.000,00$ (ditulis **22000000**).",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "kode_subbab": "pm-03-03",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 3: Geometri Terapan dan Pengukuran",
+  "judul_subbab": "Kesebangunan pada Bayangan dan Peta",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Seorang petugas setinggi $1,6\\text{ m}$ berjalan menjauhi tiang lampu jalan setinggi $4,8\\text{ m}$ dengan kecepatan konstan $1,2\\text{ m/s}$. Apakah panjang bayangan petugas tersebut bertambah dengan kecepatan yang sama ($1,2\\text{ m/s}$)?",
+      "opsi_cepat": [
+        "Ya, sama-sama 1,2 m/s",
+        "Tidak, hanya 0,6 m/s"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak siswa keliru membuat rasio $s/x = h/H$. Karena segitiga kecil bertumpuk di dalam segitiga besar dengan alas total $(x + s)$, berlaku $\\frac{s}{x+s} = \\frac{1,6}{4,8} = \\frac{1}{3}$, sehingga $s = 0,5x$ dan laju pertambahan bayangannya hanya setengah kecepatan jalan ($0,6\\text{ m/s}$)."
+    },
+    "konsep_inti_markdown": "Kesebangunan terjadi saat dua segitiga memiliki sudut bersesuaian sama besar ($\\text{Sudut-Sudut}$), sehingga rasio sisi bersesuaiannya selalu konstan:\n- **Bayangan & Cermin Datar:** $\\frac{T_{\\text{objek}}}{T_{\\text{acuan}}} = \\frac{B_{\\text{objek}}}{B_{\\text{acuan}}}$ dan $\\frac{T_{\\text{objek}}}{d_{\\text{objek}}} = \\frac{h_{\\text{mata}}}{d_{\\text{pengamat}}}$.\n- **Bayangan Dinamis (Lampu Jalan):** $\\frac{s}{x + s} = \\frac{h_{\\text{orang}}}{H_{\\text{tiang}}}$.\n- **Lebar Sungai (Patok):** Segitiga bertolak belakang siku-siku menghasilkan $\\frac{L_{\\text{sungai}}}{d_{\\text{tepi}}} = \\frac{a_1}{a_2}$.\n- **Lensa Kamera & Proyektor:** $\\frac{h_{\\text{bayangan}}}{f} = \\frac{H_{\\text{objek}}}{d_{\\text{objek}}}$.",
+    "radar_jebakan_utbk": [
+      "Menulis rasio lampu jalan sebagai s/x = h/H tanpa menjumlahkan panjang bayangan s pada alas segitiga besar (x + s).",
+      "Lupa menyamakan satuan panjang (milimeter, sentimeter, dan meter) saat menghitung perbesaran lensa kamera atau proyektor."
+    ],
+    "stimulus_utama_bersama": "Tim Ekspedisi Konservasi Hutan Lindung Meranti melakukan rangkaian pengukuran lapangan dan dokumentasi visual dengan data berikut:\n1. **Pengukuran Tinggi Pohon:** Pada pukul 09.30 WIB, panjang bayangan sebatang pohon meranti tua tercatat $14,4\\text{ m}$, sedangkan pada saat bersamaan tongkat ukur vertikal setinggi $1,5\\text{ m}$ menghasilkan bayangan $1,2\\text{ m}$. Sebagai verifikasi kedua, pengamat dengan tinggi mata dari tanah $h_{\\text{mata}} = 1,6\\text{ m}$ meletakkan cermin datar mendatar di tanah sejauh $13,5\\text{ m}$ dari pangkal pohon, lalu mundur $1,2\\text{ m}$ dari cermin hingga puncak pohon terlihat tepat di tengah cermin.\n2. **Patroli Jalur Lampu Solar:** Di jalan setapak posko berdiri tiang lampu tenaga surya setinggi $H = 4,8\\text{ m}$. Seorang petugas patroli setinggi $h = 1,6\\text{ m}$ berjalan lurus menjauhi pangkal tiang lampu dengan kecepatan konstan $v = 1,2\\text{ m/s}$ mulai dari tepat di bawah lampu ($t = 0$).\n3. **Survei Lebar Sungai:** Tim menancapkan patok $A$ di tepi selatan tepat di seberang pohon penanda $P$ di tepi utara ($AP$ tegak lurus tepi sungai). Dari $A$, tim bergerak menyusuri tepi selatan sejauh $24\\text{ m}$ ke patok $B$, lalu lanjut lurus sejauh $8\\text{ m}$ ke patok $C$. Dari $C$, tim berjalan tegak lurus menjauhi sungai sejauh $6\\text{ m}$ ke patok $D$ hingga titik $D$, $B$, dan $P$ segaris lurus.\n4. **Dokumentasi Kamera & Proyeksi:** Pohon meranti setinggi $18\\text{ m}$ dipotret menggunakan kamera full-frame (tinggi sensor $24\\text{ mm}$, panjang fokus lensa $f = 50\\text{ mm}$) dari jarak mendatar $d = 60\\text{ m}$ (jarak sensor ke lensa dianggap sama dengan $f$). Hasil foto kemudian dipresentasikan memakai proyektor: slide selebar $3,6\\text{ cm}$ pada jarak $15\\text{ cm}$ dari lensa proyektor menghasilkan gambar tajam selebar $2,4\\text{ m}$ di layar.",
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='26' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>Sinar Matahari Sejajar: Sudut Elevasi (θ) Sama</text><polygon points='64,175 64,45 194,175' fill='#EFF6FF' stroke='none'/><polygon points='232,175 232,125 282,175' fill='#FFFBEB' stroke='none'/><line x1='28' y1='175' x2='332' y2='175' stroke='#1E293B' stroke-width='2'/><circle cx='64' cy='58' r='16' fill='#10B981' opacity='0.25'/><line x1='64' y1='175' x2='64' y2='45' stroke='#10B981' stroke-width='4'/><line x1='64' y1='175' x2='194' y2='175' stroke='#3B82F6' stroke-width='3'/><line x1='64' y1='45' x2='194' y2='175' stroke='#F59E0B' stroke-width='2' stroke-dasharray='4 4'/><polyline points='64,165 74,165 74,175' fill='none' stroke='#1E293B' stroke-width='1.5'/><line x1='232' y1='175' x2='232' y2='125' stroke='#1E293B' stroke-width='3'/><line x1='232' y1='175' x2='282' y2='175' stroke='#3B82F6' stroke-width='3'/><line x1='232' y1='125' x2='282' y2='175' stroke='#F59E0B' stroke-width='2' stroke-dasharray='4 4'/><polyline points='232,167 240,167 240,175' fill='none' stroke='#1E293B' stroke-width='1.5'/><text x='24' y='112' font-family='sans-serif' font-size='12' fill='#1E293B'>T = 18 m</text><text x='110' y='193' font-family='sans-serif' font-size='12' fill='#3B82F6'>14,4 m</text><text x='162' y='168' font-family='sans-serif' font-size='12' fill='#F59E0B'>θ</text><text x='198' y='152' font-family='sans-serif' font-size='12' fill='#1E293B'>1,5 m</text><text x='242' y='193' font-family='sans-serif' font-size='12' fill='#3B82F6'>1,2 m</text><text x='256' y='168' font-family='sans-serif' font-size='12' fill='#F59E0B'>θ</text></svg>",
+      "caption": "Kesebangunan segitiga siku-siku pada bayangan pohon meranti dan tongkat ukur"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pengukuran Tinggi Pohon/Gedung Menggunakan Panjang Bayangan atau Cermin Datar di Tanah",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk Data 1 Stimulus Utama: bayangan pohon meranti $14,4\\text{ m}$ saat bayangan tongkat $1,5\\text{ m}$ sepanjang $1,2\\text{ m}$, serta verifikasi cermin datar dengan $h_{\\text{mata}} = 1,6\\text{ m}$, jarak cermin ke pohon $13,5\\text{ m}$, dan jarak pengamat ke cermin $1,2\\text{ m}$.",
+      "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Sinar matahari sejajar membentuk sudut elevasi sama pada pohon meranti ($T$) dan tongkat ($1,5\\text{ m}$), sedangkan hukum pemantulan cermin datar menyamakan sudut datang dan pantul pengamat ($h_{\\text{mata}} = 1,6\\text{ m}$).\n2. **Model Matematika (Employing):** Bentuk proporsi dua segitiga siku-siku sebangun: $\\frac{T}{B_{\\text{pohon}}} = \\frac{T_{\\text{tongkat}}}{B_{\\text{tongkat}}}$ pada metode bayangan, serta $\\frac{T}{d_{\\text{pohon}}} = \\frac{h_{\\text{mata}}}{d_{\\text{pengamat}}}$ pada metode cermin datar.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Substitusi data bayangan memberi $\\frac{T}{14,4} = \\frac{1,5}{1,2} = \\frac{5}{4}$, sehingga $T = 14,4 \\times 1,25 = 18\\text{ m}$. Verifikasi cermin memberi $T = 13,5 \\times \\frac{1,6}{1,2} = 18\\text{ m}$. Secara praktis, metode cermin wajib mengukur tinggi hingga mata pengamat (bukan ubun-ubun) dan memastikan permukaan tanah datar karena kemiringan tanah menggeser sudut pantul.",
+      "kunci_pembeda": "Gunakan proporsi langsung tinggi terhadap panjang bayangan atau jarak mendatar ke titik pantul cermin pada segitiga siku-siku yang terpisah.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Dinamika Panjang Bayangan Orang yang Berjalan Menjauhi/Mendekati Tiang Lampu Jalan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujuk Data 2 Stimulus Utama: tiang lampu setinggi $4,8\\text{ m}$, petugas setinggi $1,6\\text{ m}$ berjalan menjauhi tiang dengan kecepatan $1,2\\text{ m/s}$ dari $t = 0$.",
+      "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Tiang lampu ($H = 4,8\\text{ m}$) dan petugas patroli ($h = 1,6\\text{ m}$) berdiri tegak lurus tanah membentuk dua segitiga siku-siku bertumpuk. Jarak petugas dari tiang bertambah sesuai fungsi waktu $x(t) = v \\cdot t = 1,2t$, sedangkan panjang bayangannya adalah $s(t)$.\n2. **Model Matematika (Employing):** Perhatikan bahwa alas segitiga besar adalah jumlah jarak orang dan panjang bayangan ($x + s$), bukan $x$ saja. Persamaan kesebangunannya: $\\frac{s}{x + s} = \\frac{h}{H}$.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Substitusi rasio tinggi $\\frac{1,6}{4,8} = \\frac{1}{3}$ menghasilkan $\\frac{s}{x + s} = \\frac{1}{3} \\Rightarrow 3s = x + s \\Rightarrow s = 0,5x$. Pada $t = 5\\text{ detik}$, jarak $x = 6\\text{ m}$ dan panjang bayangan $s = 3\\text{ m}$. Karena $s = 0,5(1,2t) = 0,6t$, laju pertambahan panjang bayangan konstan $0,6\\text{ m/s}$, sedangkan laju ujung bayangan di tanah mencapai $1,2 + 0,6 = 1,8\\text{ m/s}$.",
+      "kunci_pembeda": "Segitiga kecil berada di dalam segitiga besar dengan sudut puncak bersama di ujung bayangan, sehingga penyebut rasio wajib berbentuk (x + s).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penentuan Lebar Sungai atau Jarak Tak Terjangkau Menggunakan Segitiga Sebangun (Patok Pengukur)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk Data 3 Stimulus Utama: patok garis tepi sungai $AB = 24\\text{ m}$, $BC = 8\\text{ m}$, dan jarak tegak lurus $CD = 6\\text{ m}$ hingga $D, B, P$ segaris.",
+      "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Titik pohon seberang $P$, patok tepi sungai $A, B, C$, dan patok darat $D$ membentuk dua segitiga siku-siku ($\\triangle PAB$ dan $\\triangle DCB$) yang saling bertolak belakang di titik $B$ sehingga $\\angle ABP = \\angle CBD$ dan $\\angle A = \\angle C = 90^\\circ$.\n2. **Model Matematika (Employing):** Susun perbandingan sisi-sisi yang menghadap sudut sama: $\\frac{AP}{CD} = \\frac{AB}{BC}$. Hindari jebakan membagi $AB$ dengan total jarak $AC$, karena sisi segitiga kecil hanya $BC$.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Masukkan data lapangan $AB = 24\\text{ m}$, $BC = 8\\text{ m}$, dan $CD = 6\\text{ m}$ ke persamaan: $\\frac{L}{6} = \\frac{24}{8} = 3$, sehingga lebar sungai $L = 18\\text{ m}$. Dalam evaluasi konstruksi jembatan gantung, angka $18\\text{ m}$ adalah lebar bersih muka air sehingga bentang kabel riil wajib ditambah jarak pondasi jangkar di kedua tebing.",
+      "kunci_pembeda": "Dua segitiga siku-siku bertemu bertolak belakang pada titik patok tengah B, sehingga sisi alas dibandingkan langsung antar-segmen AB dan BC.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbandingan Dimensi pada Fotografi (Jarak Lensa, Ukuran Sensor, dan Tinggi Objek) atau Proyektor Layar",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujuk Data 4 Stimulus Utama: pohon meranti $18\\text{ m}$ dipotret dari jarak $60\\text{ m}$ memakai lensa $50\\text{ mm}$ pada sensor $24\\text{ mm}$, serta proyeksi slide $3,6\\text{ cm}$ pada jarak $15\\text{ cm}$ menjadi gambar $2,4\\text{ m}$.",
+      "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Berkas cahaya lurus yang melewati pusat optik lensa kamera maupun proyektor membentuk dua segitiga yang saling bertolak belakang antara sisi objek nyata dan sisi sensor atau layar.\n2. **Model Matematika (Employing):** Pada kamera dengan jarak objek $d \\gg f$, berlaku $\\frac{h_{\\text{bayangan}}}{f} = \\frac{H_{\\text{objek}}}{d}$. Pada proyektor berlaku prinsip identik: $\\frac{W_{\\text{layar}}}{d_{\\text{layar}}} = \\frac{W_{\\text{slide}}}{d_{\\text{slide}}}$, dengan syarat wajib menyamakan seluruh satuan panjang terlebih dahulu.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Konversi satuan ke milimeter pada kamera memberi $\\frac{h_{\\text{bayangan}}}{50} = \\frac{18.000}{60.000} = 0,3 \\Rightarrow h_{\\text{bayangan}} = 15\\text{ mm}$, yang muat penuh di dalam sensor $24\\text{ mm}$ ($62,5\\%$). Pada proyektor, jarak layar $d_{\\text{layar}} = \\frac{240\\text{ cm}}{3,6\\text{ cm}} \\times 15\\text{ cm} = 1.000\\text{ cm} = 10\\text{ m}$, sehingga ruangan posko minimal harus memiliki panjang bersih lebih dari $10\\text{ m}$.",
+      "kunci_pembeda": "Titik pusat optik lensa bertindak sebagai titik temu dua segitiga bertolak belakang dengan rasio jarak fokus terhadap jarak objek.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan data patroli jalur lampu solar pada teks utama, petugas patroli berjalan menjauhi tiang lampu selama $10\\text{ detik}$ lalu berhenti. Pada posisi tersebut, panjang bayangan petugas dibandingkan dengan tinggi sebatang anakan pohon yang pada pukul 09.30 WIB memiliki panjang bayangan $3,6\\text{ m}$ adalah ....",
+      "opsi_jawaban": [
+        "A. $1,5\\text{ m}$ lebih pendek",
+        "B. $0,9\\text{ m}$ lebih pendek",
+        "C. sama panjang",
+        "D. $0,9\\text{ m}$ lebih panjang",
+        "E. $1,5\\text{ m}$ lebih panjang"
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "Jarak tempuh petugas dalam $10\\text{ detik}$: $x = 1,2 \\times 10 = 12\\text{ m}$. Menggunakan kesebangunan lampu jalan: $\\frac{s}{12 + s} = \\frac{1,6}{4,8} = \\frac{1}{3} \\Rightarrow 3s = 12 + s \\Rightarrow s = 6\\text{ m}$. Tinggi anakan pohon pada rasio bayangan pagi ($1,5 : 1,2 = 5 : 4$): $T_{\\text{anakan}} = 3,6 \\times \\frac{5}{4} = 4,5\\text{ m}$. Selisihnya $6 - 4,5 = 1,5\\text{ m}$ lebih panjang (opsi E). Pengecoh A terbalik arah perbandingan, sedangkan B dan D keliru memakai rumus $\\frac{s}{x} = \\frac{1,6}{4,8}$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Berdasarkan hasil survei lebar sungai pada teks utama, tim konservasi merancang jembatan gantung dengan tambahan panjang landasan pondasi jangkar masing-masing $2,5\\text{ m}$ di tepi utara dan selatan sungai. Untuk mengantisipasi lengkungan kabel baja, total bentang lurus tersebut masih harus ditambah faktor kelonggaran sebesar $10\\%$, lalu dibulatkan ke atas ke satuan meter terdekat untuk pemesanan gulungan baja. Berapa meter panjang minimal gulungan baja yang harus dipesan? *(Tuliskan jawaban berupa bilangan bulat saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "26",
+      "bedah_cepat_markdown": "Dari kesebangunan $\\triangle PAB \\sim \\triangle DCB$, lebar sungai $L = AP$ memenuhi $\\frac{L}{6} = \\frac{24}{8} = 3 \\Rightarrow L = 18\\text{ m}$. Total bentang lurus ditambah landasan jangkar di kedua tepi: $18 + 2,5 + 2,5 = 23\\text{ m}$. Tambahkan kelonggaran lengkungan kabel $10\\%$: $23 \\times 1,10 = 25,3\\text{ m}$. Karena pembelian gulungan baja wajib dibulatkan ke atas ke satuan meter terdekat agar tidak kurang di lapangan, panjang minimalnya adalah $26\\text{ m}$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Perhatikan data dokumentasi kamera dan proyeksi pada teks utama, lalu evaluasi empat pernyataan berikut:\n1. Tinggi bayangan pohon meranti pada sensor kamera dari jarak $60\\text{ m}$ adalah $15\\text{ mm}$.\n2. Jika fotografer ingin tinggi bayangan pohon memenuhi tepat $100\\%$ tinggi sensor ($24\\text{ mm}$) tanpa mengganti lensa, jarak pemotretan harus dimajukan menjadi $37,5\\text{ m}$.\n3. Jarak layar proyektor dari lensa agar gambar slide selebar $3,6\\text{ cm}$ tampil selebar $2,4\\text{ m}$ adalah $10\\text{ m}$.\n4. Jika layar proyektor dimundurkan $2,5\\text{ m}$ dari posisi awal pada pernyataan (3), lebar gambar di layar menjadi $2,8\\text{ m}$.\n\nPernyataan yang benar adalah ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pilihan benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "- **(1) Benar:** $h_{\\text{bayangan}} = 50 \\times \\frac{18.000}{60.000} = 15\\text{ mm}$.\n- **(2) Benar:** Agar $h_{\\text{bayangan}} = 24\\text{ mm}$, jarak $d' = \\frac{18 \\times 50}{24} = 37,5\\text{ m}$.\n- **(3) Benar:** Jarak layar $d_{\\text{layar}} = \\frac{240}{3,6} \\times 15 = 1.000\\text{ cm} = 10\\text{ m}$.\n- **(4) Salah:** Pada jarak $12,5\\text{ m}$ ($1.250\\text{ cm}$), lebar gambar menjadi $3,6 \\times \\frac{1.250}{15} = 300\\text{ cm} = 3,0\\text{ m}$, bukan $2,8\\text{ m}$.\nJadi, pernyataan (1), (2), dan (3) saja yang benar (opsi A).",
+      "visual": null
+    }
+  ]
+}

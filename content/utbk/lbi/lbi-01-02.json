@@ -1,0 +1,134 @@
+{
+  "kode_subbab": "lbi-01-02",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 1: Pemahaman Informasi Eksplisit",
+  "judul_subbab": "Verifikasi Pernyataan Sesuai/Tidak Sesuai Teks",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Teks menyebut 'sebagian besar studi saat ini melibatkan sampel populasi yang homogen'. Jika opsi jawaban menyatakan 'seluruh studi psikobiotik menggunakan sampel populasi seragam', apakah pernyataan tersebut sesuai?",
+      "opsi_cepat": [
+        "Sesuai, karena homogen bermakna seragam",
+        "Tidak sesuai, karena mengubah kuantor sebagian menjadi seluruh"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Meskipun 'homogen' bersinonim dengan 'seragam', pengubahan kata 'sebagian besar' menjadi 'seluruh' melanggar fakta eksplisit teks. Di UTBK, pergeseran kuantor adalah jebakan paling klasik."
+    },
+    "konsep_inti_markdown": "Verifikasi pernyataan menguji ketelitian membandingkan klaim opsi dengan fakta tersurat (*explicit*) pada bacaan.\n\n* **Pernyataan Sesuai:** Merupakan parafrasa (pengungkapan ulang dengan sinonim atau struktur kalimat berbeda) yang makna dan cakupannya 100% identik dengan teks.\n* **Pernyataan Tidak Sesuai:** Mengandung kontradiksi langsung, pembalikan sebab-akibat, atau pergeseran kuantor (*semua* vs *sebagian*).\n* **Informasi Tidak Disebut (Asumsi Luar):** Klaim yang mungkin masuk akal secara umum, tetapi tidak memiliki dasar kalimat eksplisit dalam bacaan.",
+    "radar_jebakan_utbk": [
+      "Mengganti kuantor moderat (*sebagian besar*, *cenderung*, *dapat*) menjadi kuantor ekstrem (*seluruh*, *pasti*, *selalu*).",
+      "Menyisipkan informasi benar berdasarkan pengetahuan umum pembaca, padahal sama sekali tidak tertulis di dalam teks."
+    ],
+    "stimulus_utama_bersama": "Penelitian neurologi dalam satu dekade terakhir mengungkap adanya jalur komunikasi dua arah yang kompleks antara saluran pencernaan dan sistem saraf pusat, yang dikenal sebagai poros usus-otak (*gut-brain axis*). Komunikasi ini dimediasi oleh saraf vagus, sistem imun, serta berbagai metabolit yang dihasilkan oleh triliunan mikroorganisme penghuni usus atau mikrobiota. Secara mengejutkan, sekitar 90 persen serotonin tubuh—neurotransmiter yang berperan krusial dalam mengatur suasana hati, tidur, dan nafsu makan—ternyata diproduksi di saluran pencernaan, bukan di otak. Ketidakseimbangan komposisi mikrobiota usus, atau disbiosis, terbukti memicu peradangan sistemik tingkat rendah yang dapat mengganggu produksi neurotransmiter tersebut dan meningkatkan kerentanan seseorang terhadap gangguan kecemasan serta depresi klinis.\n\nFenomena ini melahirkan konsep psikobiotik, yakni konsumsi probiotik dan prebiotik spesifik yang bertujuan memulihkan keseimbangan mikrobiota demi menunjang kesehatan mental. Dalam sebuah uji klinis acak terkontrol terhadap 120 pasien dewasa dengan gejala depresi ringan hingga sedang, kelompok yang menerima suplemen galakto-oligosakarida (prebiotik) selama empat minggu menunjukkan penurunan kadar hormon kortisol pagi hari secara signifikan dibandingkan kelompok plasebo. Penurunan kortisol ini berkorelasi positif dengan berkurangnya bias perhatian terhadap stimulus emosional negatif. Meskipun demikian, efek perbaikan psikologis tersebut hanya teramati pada partisipan yang tidak sedang mengonsumsi obat antidepresan konvensional secara bersamaan.\n\nPara peneliti menegaskan bahwa intervensi diet berbasis serat pangan, makanan fermentasi, dan prebiotik bukan merupakan pengganti mutlak bagi terapi farmakologis maupun psikoterapi pada kasus gangguan jiwa berat. Sebagian besar studi saat ini masih terbatas pada durasi pemantauan jangka pendek dan melibatkan sampel populasi yang homogen. Oleh karena itu, penerapan psikobiotik dalam praktik psikiatri klinis masih memerlukan protokol standar yang disesuaikan dengan profil mikrobioma masing-masing individu. Selain faktor genetik dan pola makan, penggunaan antibiotik spektrum luas tanpa pengawasan medis juga dicatat sebagai pemicu utama musnahnya bakteri menguntungkan yang mempercepat terjadinya disbiosis usus.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Menentukan Pernyataan yang BENAR/SESUAI dengan Isi Bacaan (Parafrasa Fakta Eksplisit)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1: 'Secara mengejutkan, sekitar 90 persen serotonin tubuh ... ternyata diproduksi di saluran pencernaan, bukan di otak.'",
+      "bedah_pola_markdown": "**Teknik Eksekusi (*Scanning* Kata Kunci):**\n1. **Kunci Entitas Spesifik:** Tandai angka, istilah teknis, atau nama pada opsi (misal: *90 persen*, *serotonin*, *pencernaan*), lalu pindai cepat lokasi kalimatnya di paragraf pertama.\n2. **Cocokkan Parafrasa:** Opsi benar jarang menyalin teks mentah. Kalimat asli *'sekitar 90 persen serotonin tubuh ... diproduksi di saluran pencernaan'* diparafrasakan menjadi: *'Mayoritas hormon pengatur suasana hati diproduksi di sistem pencernaan daripada di otak.'* Makna *sekitar 90%* setara dengan *mayoritas*, dan *serotonin* dijelaskan fungsinya sebagai *pengatur suasana hati*.\n3. **Eliminasi Jebakan:**\n   * **Terlalu Ekstrem:** Mengubah *'sekitar 90%'* menjadi *'tepat 90%'* atau *'seluruh serotonin'*.\n   * **Distorsi Fakta:** Menyebut otak memproduksi 90% serotonin (kebalikan fakta eksplisit teks).\n   * **Tidak Disebut:** Menambahkan klaim bahwa serotonin usus diproduksi khusus oleh saraf vagus.",
+      "kunci_pembeda": "Opsi benar mengubah bentuk kata (sinonim atau struktur aktif-pasif) tanpa mengubah ruang lingkup maupun fakta utama kalimat rujukan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Menentukan Pernyataan yang TIDAK SESUAI/BERTENTANGAN dengan Isi Bacaan (Exception Question)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 2: '...efek perbaikan psikologis tersebut hanya teramati pada partisipan yang tidak sedang mengonsumsi obat antidepresan konvensional secara bersamaan.'",
+      "bedah_pola_markdown": "**Teknik Eksekusi (*Negation & Exception Check*):**\n1. **Waspadai Kata Kunci Pengecualian:** Soal jenis ini memakai frasa *tidak sesuai*, *bertentangan*, atau *kecuali*. Artinya, empat opsi bernilai benar sesuai teks, dan satu opsi menyalahi teks.\n2. **Bandingkan Syarat & Batasan:** Pindai kata pembatas seperti *hanya*, *bukan*, atau *tidak* pada paragraf kedua. Teks menyatakan perbaikan psikologis **hanya** muncul pada partisipan yang **tidak** mengonsumsi obat antidepresan konvensional.\n3. **Deteksi Opsi Kontradiktif:**\n   * **Opsi Jebakan (Kunci Jawaban):** *'Suplemen galakto-oligosakarida terbukti memperbaiki kondisi psikologis pasien yang mengonsumsi obat antidepresan konvensional.'* Pernyataan ini bertentangan langsung dengan syarat negatif pada teks.\n   * **Pengecoh Lain:** Mengubah durasi uji klinis dari *empat minggu* menjadi *empat bulan* atau mengganti *prebiotik* menjadi *antibiotik*.",
+      "kunci_pembeda": "Fokus mencari satu pernyataan yang memiliki kontradiksi langsung dengan fakta tersurat, sementara empat opsi lainnya adalah parafrasa valid.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Format Tabel Matriks Benar – Salah (4–5 Pernyataan Sekaligus untuk Diverifikasi terhadap Wacana)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Verifikasi 4 pernyataan sekaligus dari Paragraf 1–3 (disbiosis, uji klinis prebiotik, pengganti terapi, dan protokol standar).",
+      "bedah_pola_markdown": "**Teknik Eksekusi (*Sequential Paragraph Mapping*):**\n1. **Baca Pernyataan Berurutan:** Soal matriks umumnya menyusun 4–5 pernyataan secara kronologis mengikuti alur paragraf 1 hingga paragraf akhir.\n2. **Audit Satu per Satu:**\n   * *Pernyataan 1 (Paragraf 1):* 'Disbiosis memicu peradangan sistemik tingkat rendah.' $\\rightarrow$ **BENAR** (sesuai kalimat keempat).\n   * *Pernyataan 2 (Paragraf 2):* 'Uji klinis prebiotik dilakukan pada pasien depresi berat.' $\\rightarrow$ **SALAH** (teks menyebut *depresi ringan hingga sedang*).\n   * *Pernyataan 3 (Paragraf 3):* 'Prebiotik dapat menggantikan psikoterapi secara mutlak.' $\\rightarrow$ **SALAH** (teks menegaskan *bukan pengganti mutlak*).\n   * *Pernyataan 4 (Paragraf 3):* 'Psikobiotik klinis butuh protokol standar sesuai profil mikrobioma individu.' $\\rightarrow$ **BENAR** (sesuai kalimat ketiga).\n3. **Ciri Jebakan Matriks:** Penyisipan satu kata pengubah nilai kebenaran (*ringan-sedang* menjadi *berat*, *bukan* dihilangkan) di tengah kalimat yang tampak familiar.",
+      "kunci_pembeda": "Setiap baris pernyataan harus divalidasi secara independen terhadap lokasi paragraf spesifiknya karena satu kata keliru membuat baris tersebut bernilai Salah.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Membedakan Informasi yang Tersurat di Teks vs Informasi Asumsi Luar yang Tidak Disebutkan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 3: 'Selain faktor genetik dan pola makan, penggunaan antibiotik spektrum luas tanpa pengawasan medis juga dicatat sebagai pemicu utama musnahnya bakteri menguntungkan...'",
+      "bedah_pola_markdown": "**Teknik Eksekusi (*Strict Text-Boundary Rule*):**\n1. **Terapkan Prinsip Kacamata Kuda:** Dalam LBI UTBK, pernyataan yang benar secara medis atau logis di dunia nyata tetap dianggap **tidak sesuai** jika tidak tertulis di wacana.\n2. **Uji Bukti Tekstual:** Bandingkan kalimat terakhir paragraf ketiga dengan opsi berikut:\n   * *Opsi Asumsi Luar (Salah):* 'Harga antibiotik spektrum luas yang murah membuat masyarakat sering mengonsumsinya tanpa resep dokter.' Meskipun masuk akal secara sosial-ekonomi, teks sama sekali tidak membahas *harga obat* maupun *alasan pembelian tanpa resep*.\n   * *Opsi Tersurat (Benar):* 'Konsumsi antibiotik spektrum luas tanpa pengawasan dokter berpotensi memusnahkan bakteri baik di usus.'\n3. **Ciri Jebakan Asumsi:** Menggunakan istilah teknis dari teks (*antibiotik spektrum luas*, *bakteri menguntungkan*) sebagai umpan, lalu menyambungkannya dengan latar belakang atau dampak baru yang fiktif.",
+      "kunci_pembeda": "Jangan pernah memakai pengetahuan pribadi di luar teks; setiap klaim wajib memiliki 'jangkar' kalimat eksplisit dalam bacaan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Verifikasi Akurasi Kuantor dan Hubungan Sebab-Akibat pada Pernyataan Opsi",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1 & 2: '...disbiosis, terbukti memicu peradangan sistemik... yang dapat mengganggu produksi neurotransmiter...' serta '...penurunan kortisol ini berkorelasi positif dengan berkurangnya bias perhatian...'",
+      "bedah_pola_markdown": "**Teknik Eksekusi (*Quantifier & Causal Audit*):**\n1. **Periksa Kata Kuantor (Cakupan):** Tandai kata pembatas jumlah/frekuensi seperti *sebagian besar*, *sekitar*, *dapat*, *hanya*, dan *mutlak*. Bandingkan dengan kuantor di opsi.\n   * *Teks:* 'Sebagian besar studi saat ini masih terbatas...' $\\rightarrow$ Jika opsi menulis *'Semua studi psikobiotik terbatas...'*, langsung eliminasi.\n2. **Audit Arah Sebab-Akibat vs Korelasi:**\n   * *Sebab-Akibat ($A \\rightarrow B$):* Disbiosis memicu peradangan sistemik, lalu peradangan mengganggu produksi neurotransmiter. Jebakan sering membalik urutan menjadi *gangguan neurotransmiter menyebabkan disbiosis*.\n   * *Korelasi vs Kausalitas:* Paragraf kedua menyebut penurunan kortisol **berkorelasi positif** dengan berkurangnya bias perhatian negatif. Mengubah kata *berkorelasi* menjadi *satu-satunya penyebab* adalah distorsi logika.\n3. **Ciri Jebakan:** Menaikkan derajat kepastian (*dapat mengganggu* menjadi *pasti merusak*) atau menyamakan hubungan korelatif dengan kausalitas mutlak.",
+      "kunci_pembeda": "Kebenaran kalimat tidak hanya bergantung pada topik pembicaraan, tetapi juga pada ketepatan derajat kuantor dan arah hubungan kausalitasnya.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan bacaan di atas, manakah pernyataan yang **paling sesuai** dengan informasi eksplisit mengenai mekanisme poros usus-otak dan disbiosis?",
+      "opsi_jawaban": [
+        "A. Seluruh serotonin yang mengatur suasana hati diproduksi secara eksklusif di saluran pencernaan tanpa melibatkan otak.",
+        "B. Gangguan kecemasan dan depresi klinis secara langsung memicu terjadinya peradangan sistemik tingkat rendah di usus.",
+        "C. Komunikasi antara usus dan sistem saraf pusat berlangsung satu arah melalui perantaraan saraf vagus dan sistem imun.",
+        "D. Ketidakseimbangan mikrobiota usus berpotensi menghambat produksi neurotransmiter akibat munculnya peradangan sistemik tingkat rendah.",
+        "E. Penggunaan antibiotik spektrum luas merupakan satu-satunya faktor yang menyebabkan musnahnya bakteri menguntungkan di usus."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Paragraf 1 menyatakan disbiosis memicu peradangan sistemik tingkat rendah yang dapat mengganggu produksi neurotransmiter. Opsi D memarafrasakan hubungan sebab-akibat tersebut secara tepat.\n\n* **A salah:** Teks menyebut *sekitar 90 persen*, bukan *seluruh*.\n* **B salah:** Membalik hubungan sebab-akibat (seharusnya peradangan meningkatkan kerentanan depresi).\n* **C salah:** Komunikasi bersifat *dua arah*, bukan *satu arah*.\n* **E salah:** Teks juga menyebut faktor genetik dan pola makan, bukan *satu-satunya*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manakah pernyataan berikut yang **tidak sesuai** dengan hasil uji klinis dan simpulan peneliti pada paragraf kedua dan ketiga?",
+      "opsi_jawaban": [
+        "A. Suplemen galakto-oligosakarida menurunkan kadar kortisol pagi hari secara signifikan pada kelompok perlakuan dibanding kelompok plasebo.",
+        "B. Perbaikan gejala psikologis tidak teramati pada partisipan uji klinis yang sedang mengonsumsi obat antidepresan konvensional.",
+        "C. Intervensi makanan fermentasi dan serat pangan belum dapat menggantikan psikoterapi secara mutlak bagi penderita gangguan jiwa berat.",
+        "D. Mayoritas penelitian psikobiotik saat ini masih memiliki keterbatasan pada durasi pemantauan jangka pendek serta sampel yang homogen.",
+        "E. Pemberian suplemen prebiotik selama empat minggu terbukti menyembuhkan pasien depresi berat secara permanen dalam praktik psikiatri klinis."
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "Uji klinis pada paragraf 2 hanya melibatkan pasien *depresi ringan hingga sedang* selama empat minggu dan menurunkan kadar kortisol, bukan menyembuhkan *depresi berat secara permanen* (Opsi E bertentangan dengan fakta eksplisit sekaligus menambahkan klaim berlebih).\n\n* **A, B, C, dan D benar:** Keempatnya merupakan parafrasa akurat dari kalimat-kalimat eksplisit pada paragraf kedua dan ketiga.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Tentukan status kebenaran setiap pernyataan berikut berdasarkan bacaan!\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Berkurangnya bias perhatian terhadap stimulus emosional negatif berkorelasi positif dengan penurunan kadar kortisol pagi hari. | | |\n| 2 | Psikobiotik mencakup konsumsi probiotik dan prebiotik spesifik yang bertujuan memulihkan keseimbangan mikrobiota usus. | | |\n| 3 | Protokol standar penerapan psikobiotik klinis saat ini sudah seragam dan tidak bergantung pada profil mikrobioma individu. | | |\n| 4 | Studi psikobiotik yang ada sekarang sebagian besar menggunakan sampel populasi yang beragam secara demografis. | | |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah - Salah",
+        "B. Benar - Salah - Benar - Salah",
+        "C. Salah - Benar - Salah - Benar",
+        "D. Benar - Benar - Benar - Salah",
+        "E. Salah - Salah - Benar - Benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "* **Pernyataan 1 (Benar):** Sesuai kalimat ketiga paragraf 2 mengenai korelasi positif penurunan kortisol dengan berkurangnya bias perhatian negatif.\n* **Pernyataan 2 (Benar):** Sesuai definisi psikobiotik pada kalimat pertama paragraf 2.\n* **Pernyataan 3 (Salah):** Bertentangan dengan kalimat ketiga paragraf 3; protokol standar masih diperlukan dan harus disesuaikan dengan profil mikrobioma individu.\n* **Pernyataan 4 (Salah):** Bertentangan dengan kalimat kedua paragraf 3; sampel populasi bersifat *homogen* (seragam), bukan beragam.",
+      "visual": null
+    }
+  ]
+}

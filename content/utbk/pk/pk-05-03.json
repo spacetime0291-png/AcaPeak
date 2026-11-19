@@ -1,0 +1,134 @@
+{
+  "kode_subbab": "pk-05-03",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 5: Geometri dan Pengukuran",
+  "judul_subbab": "Bangun Ruang (Volume, Luas Permukaan, Jarak Titik-Garis)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Jika seluruh rusuk sebuah kubus diperbesar menjadi 2 kali lipat, berapa kali lipatkah peningkatan volume kubus tersebut?",
+      "opsi_cepat": [
+        "4 kali lipat",
+        "8 kali lipat"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Volume adalah besaran tiga dimensi ($s^3$), sehingga faktor skala $k = 2$ menghasilkan volume $2^3 = 8$ kali semula, bukan $2^2 = 4$ yang berlaku untuk luas permukaan."
+    },
+    "konsep_inti_markdown": "- **Prinsip Volume**: Bangun beratap datar (kubus, balok, prisma, tabung) menggunakan $V = L_{\\text{alas}} \\times t$. Bangun meruncing (limas, kerucut) menggunakan $V = \\frac{1}{3} L_{\\text{alas}} \\times t$. Bola: $V = \\frac{4}{3}\\pi r^3$ dan $L = 4\\pi r^2$.\n- **Diagonal Kubus (rusuk $s$)**: Diagonal bidang $= s\\sqrt{2}$; diagonal ruang $= s\\sqrt{3}$.\n- **Skala Kesebangunan ($k$)**: Perbandingan luas $= k^2$ dan perbandingan volume $= k^3$.\n- **Jarak Titik-Garis**: Selalu ditarik tegak lurus membentuk segitiga siku-siku atau dihitung via kesamaan luas segitiga.",
+    "radar_jebakan_utbk": [
+      "Lupa mengalikan faktor $\\frac{1}{3}$ pada rumus volume limas dan kerucut atau salah menggunakan tinggi sisi tegak sebagai tinggi limas.",
+      "Menganggap kenaikan tinggi permukaan air sama dengan tinggi benda padat yang dicelupkan pada wadah yang luas alasnya berbeda."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='110' y1='165' x2='155' y2='130' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='155' y1='130' x2='255' y2='130' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='155' y1='130' x2='155' y2='40' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='110' y1='165' x2='255' y2='130' stroke='#F59E0B' stroke-width='2' stroke-dasharray='4 3'/><line x1='110' y1='165' x2='255' y2='40' stroke='#3B82F6' stroke-width='2.5'/><polygon points='110,165 210,165 210,75 110,75' fill='none' stroke='#1E293B' stroke-width='2'/><polyline points='110,75 155,40 255,40 255,130 210,165' fill='none' stroke='#1E293B' stroke-width='2'/><line x1='210' y1='75' x2='255' y2='40' stroke='#1E293B' stroke-width='2'/><circle cx='110' cy='165' r='3' fill='#1E293B'/><circle cx='255' cy='40' r='3' fill='#3B82F6'/><text x='95' y='172' font-family='sans-serif' font-size='12' fill='#1E293B'>A</text><text x='215' y='172' font-family='sans-serif' font-size='12' fill='#1E293B'>B</text><text x='262' y='134' font-family='sans-serif' font-size='12' fill='#1E293B'>C</text><text x='142' y='125' font-family='sans-serif' font-size='12' fill='#64748B'>D</text><text x='95' y='74' font-family='sans-serif' font-size='12' fill='#1E293B'>E</text><text x='214' y='80' font-family='sans-serif' font-size='12' fill='#1E293B'>F</text><text x='262' y='42' font-family='sans-serif' font-size='12' fill='#3B82F6' font-weight='bold'>G</text><text x='142' y='38' font-family='sans-serif' font-size='12' fill='#1E293B'>H</text><text x='28' y='198' font-family='sans-serif' font-size='12' fill='#3B82F6'>AG: Diagonal Ruang</text><text x='195' y='198' font-family='sans-serif' font-size='12' fill='#F59E0B'>AC: Diagonal Bidang</text></svg>",
+      "caption": "Proyeksi isometrik kubus ABCD.EFGH dengan garis putus-putus rusuk belakang dan diagonal ruang AG."
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Volume dan Luas Permukaan Kubus, Balok, Prisma, Limas, Tabung, Kerucut, dan Bola",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sebuah tabung tertutup memiliki jari-jari alas $7\\text{ cm}$ dan tinggi $10\\text{ cm}$. Hitung perbandingan nilai luas selimut tabung terhadap volumenya.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar:**\nIdentifikasi bentuk alas dan atap bangun ruang terlebih dahulu. Untuk tabung berjari-jari $r = 7\\text{ cm}$ dan tinggi $t = 10\\text{ cm}$, hitung luas selimut menggunakan keliling lingkaran dikali tinggi: $L_{\\text{selimut}} = 2\\pi r t = 2 \\times \\frac{22}{7} \\times 7 \\times 10 = 440\\text{ cm}^2$. Selanjutnya, hitung volume tabung dengan luas alas dikali tinggi: $V = \\pi r^2 t = \\frac{22}{7} \\times 7^2 \\times 10 = 1.540\\text{ cm}^3$. Bandingkan kedua nilai tersebut lalu sederhanakan menjadi $440 : 1.540 = 2 : 7$.\n\n**Jalur Taktis UTBK:**\nHindari menghitung nilai $\\pi$ dan mengalikan angka besar sejak awal. Langsung tulis perbandingan dalam bentuk variabel aljabar: $\\frac{L_{\\text{selimut}}}{V} = \\frac{2\\pi r t}{\\pi r^2 t}$. Coret faktor yang sama ($\\pi$, $r$, dan $t$) pada pembilang dan penyebut sehingga tersisa $\\frac{2}{r}$. Substitusi $r = 7$ secara langsung untuk memperoleh rasio akhir $2 : 7$ dalam hitungan detik. Trik eliminasi variabel ini mencegah kesalahan hitung aritmetika secara efektif.",
+      "kunci_pembeda": "Gunakan rumus umum luas alas kali tinggi untuk bangun beratap dan sepertiganya untuk bangun meruncing, lalu sederhanakan variabel sebelum substitusi angka.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Perbandingan Volume Bangun Ruang yang Sebangun atau Bangun Ruang di Dalam Bangun Ruang (Inscribed Solids)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sebuah kerucut padat dimasukkan tepat ke dalam sebuah tabung sehingga alas dan puncaknya menyentuh alas dan tutup tabung. Jika volume ruang kosong di luar kerucut adalah $120\\text{ cm}^3$, tentukan volume tabung tersebut.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar:**\nKarena kerucut berada tepat di dalam tabung, jari-jari alas ($r$) dan tinggi ($t$) kedua bangun bernilai sama persis. Volume tabung adalah $V_{\\text{tabung}} = \\pi r^2 t$, sedangkan volume kerucut adalah $V_{\\text{kerucut}} = \\frac{1}{3}\\pi r^2 t$. Volume ruang kosong di antara keduanya merupakan selisih volume tabung dan kerucut: $V_{\\text{kosong}} = \\pi r^2 t - \\frac{1}{3}\\pi r^2 t = \\frac{2}{3}\\pi r^2 t$. Dengan menyamakan $\\frac{2}{3}V_{\\text{tabung}} = 120$, diperoleh $V_{\\text{tabung}} = 120 \\times \\frac{3}{2} = 180\\text{ cm}^3$.\n\n**Jalur Taktis UTBK:**\nHafalkan rasio baku bangun ruang sejenis dengan alas dan tinggi identik: perbandingan $V_{\\text{kerucut}} : V_{\\text{setengah bola}} : V_{\\text{tabung}} = 1 : 2 : 3$. Pada kasus ini, kerucut mengambil $1$ bagian dan ruang kosong sisanya mengambil $3 - 1 = 2$ bagian. Karena $2$ bagian bernilai $120\\text{ cm}^3$, maka $1$ bagian adalah $60\\text{ cm}^3$, sehingga volume tabung ($3$ bagian) langsung ketemu $3 \\times 60 = 180\\text{ cm}^3$ tanpa perlu mencari nilai $r$ maupun $t$.",
+      "kunci_pembeda": "Gunakan perbandingan pangkat tiga faktor skala ($k^3$) untuk bangun sebangun, atau rasio $1:2:3$ untuk kerucut, setengah bola, dan tabung yang berhimpit.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Jarak Titik ke Titik dan Titik ke Garis pada Kubus/Balok/Limas",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Diketahui kubus $ABCD.EFGH$ dengan panjang rusuk $6\\text{ cm}$. Tentukan jarak titik $B$ ke garis diagonal ruang $AG$.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar:**\nHubungkan titik $B$ ke ujung-ujung garis $AG$ sehingga terbentuk segitiga $ABG$. Perhatikan bahwa rusuk $AB = 6\\text{ cm}$, diagonal bidang $BG = 6\\sqrt{2}\\text{ cm}$, dan diagonal ruang $AG = 6\\sqrt{3}\\text{ cm}$. Karena $AB^2 + BG^2 = 36 + 72 = 108 = AG^2$, segitiga $ABG$ siku-siku di $B$. Jarak titik $B$ ke garis $AG$ adalah garis tinggi $t$ dari sudut siku-siku $B$ ke sisi miring $AG$. Dengan prinsip kesamaan luas segitiga: $\\frac{1}{2} \\times AB \\times BG = \\frac{1}{2} \\times AG \\times t$, diperoleh $t = \\frac{6 \\times 6\\sqrt{2}}{6\\sqrt{3}} = 2\\sqrt{6}\\text{ cm}$.\n\n**Jalur Taktis UTBK:**\nPada kubus berusuk $s$, jarak dari titik sudut mana pun ke diagonal ruang yang tidak melaluinya selalu mengikuti pola tetap $\\frac{s}{3}\\sqrt{6}$. Cukup substitusi $s = 6$ ke rumus cepat tersebut untuk langsung mendapatkan $\\frac{6}{3}\\sqrt{6} = 2\\sqrt{6}\\text{ cm}$ tanpa menggambar segitiga siku-siku berulang kali.",
+      "kunci_pembeda": "Bentuk segitiga yang memuat titik dan garis tujuan, lalu gunakan Teorema Pythagoras atau kesamaan luas segitiga siku-siku.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='60,170 300,170 140,57' fill='#EFF6FF' stroke='#1E293B' stroke-width='2'/><line x1='140' y1='57' x2='140' y2='170' stroke='#3B82F6' stroke-width='2.5' stroke-dasharray='4 3'/><polyline points='140,158 152,158 152,170' fill='none' stroke='#3B82F6' stroke-width='1.5'/><polyline points='133,67 143,74 150,64' fill='none' stroke='#F59E0B' stroke-width='1.5'/><circle cx='140' cy='57' r='3' fill='#1E293B'/><circle cx='140' cy='170' r='3' fill='#3B82F6'/><text x='44' y='175' font-family='sans-serif' font-size='13' fill='#1E293B' font-weight='bold'>A</text><text x='306' y='175' font-family='sans-serif' font-size='13' fill='#1E293B' font-weight='bold'>G</text><text x='135' y='46' font-family='sans-serif' font-size='13' fill='#1E293B' font-weight='bold'>B</text><text x='135' y='188' font-family='sans-serif' font-size='12' fill='#3B82F6'>P</text><text x='62' y='108' font-family='sans-serif' font-size='12' fill='#1E293B'>AB = s</text><text x='234' y='108' font-family='sans-serif' font-size='12' fill='#1E293B'>BG = s√2</text><text x='146' y='122' font-family='sans-serif' font-size='12' fill='#3B82F6' font-weight='bold'>t</text><text x='195' y='188' font-family='sans-serif' font-size='12' fill='#1E293B'>AG = s√3</text></svg>",
+        "caption": "Segitiga siku-siku ABG untuk menentukan jarak titik B ke diagonal ruang AG (garis tinggi t)."
+      }
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Panjang Diagonal Bidang dan Diagonal Ruang pada Kubus dan Balok",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sebuah balok memiliki panjang $12\\text{ cm}$, lebar $4\\text{ cm}$, dan tinggi $3\\text{ cm}$. Tentukan panjang diagonal ruang balok tersebut.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar:**\nGunakan Teorema Pythagoras dua tahap untuk mencari diagonal ruang balok berukuran $p \\times l \\times t$. Pertama, hitung panjang diagonal bidang alas menggunakan panjang dan lebar: $d_{\\text{alas}} = \\sqrt{p^2 + l^2} = \\sqrt{12^2 + 4^2} = \\sqrt{144 + 16} = \\sqrt{160}\\text{ cm}$. Kedua, pasangkan diagonal alas yang tegak lurus dengan tinggi balok untuk mencari diagonal ruang: $d_{\\text{ruang}} = \\sqrt{d_{\\text{alas}}^2 + t^2} = \\sqrt{160 + 3^2} = \\sqrt{169} = 13\\text{ cm}$.\n\n**Jalur Taktis UTBK:**\nGabungkan dua tahap Pythagoras menjadi satu rumus langsung $d_{\\text{ruang}} = \\sqrt{p^2 + l^2 + t^2}$ tanpa perlu menyederhanakan bentuk akar pada tahap pertama. Khusus soal UTBK, pembuat soal sering menyembunyikan Tripel Pythagoras bertingkat seperti $(3, 4, 5)$ dan $(5, 12, 13)$. Di sini, pasangan $(3, 4)$ menghasilkan $5$, lalu pasangan $(5, 12)$ langsung menghasilkan sisi miring $13\\text{ cm}$ tanpa menghitung kuadrat besar.",
+      "kunci_pembeda": "Kuadratkan ketiga dimensi rusuk sekaligus di dalam satu akar ($\\sqrt{p^2 + l^2 + t^2}$) dan cari kombinasi Tripel Pythagoras tersembunyi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Perubahan Tinggi Permukaan Zat Cair saat Benda Padat Dicelupkan ke Dalam Wadah",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Sebuah wadah berbentuk tabung berjari-jari $10\\text{ cm}$ berisi air setinggi $15\\text{ cm}$. Ke dalam wadah dimasukkan $3$ bola besi pejal masing-masing berjari-jari $5\\text{ cm}$ hingga tenggelam seluruhnya. Hitung kenaikan tinggi air dalam tabung.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar:**\nBerdasarkan prinsip Archimedes, volume air yang naik sama dengan total volume benda padat yang tercelup seluruhnya. Hitung volume tiga bola besi: $V_{\\text{total bola}} = 3 \\times \\frac{4}{3}\\pi r_{\\text{bola}}^3 = 4\\pi (5)^3 = 500\\pi\\text{ cm}^3$. Volume kenaikan air berbentuk tabung dengan jari-jari wadah $R = 10\\text{ cm}$ dan tinggi kenaikan $\\Delta t$: $V_{\\text{naik}} = \\pi R^2 \\Delta t = \\pi (10)^2 \\Delta t = 100\\pi \\Delta t$. Dengan menyamakan $100\\pi \\Delta t = 500\\pi$, diperoleh kenaikan tinggi air $\\Delta t = 5\\text{ cm}$.\n\n**Jalur Taktis UTBK:**\nAbaikan informasi tinggi air mula-mula ($15\\text{ cm}$) selama air tidak tumpah, karena tidak memengaruhi rumus kenaikan tinggi: $\\Delta t = \\frac{V_{\\text{tercelup}}}{L_{\\text{alas wadah}}}$. Langsung bagi kedua volume dalam bentuk simbol $\\pi$: $\\Delta t = \\frac{3 \\times \\frac{4}{3}\\pi \\times 125}{\\pi \\times 100} = \\frac{500}{100} = 5\\text{ cm}$ tanpa menghitung nilai $\\pi$.",
+      "kunci_pembeda": "Samakan volume benda yang tercelup dengan luas alas wadah dikali kenaikan tinggi air ($V_{\\text{benda}} = L_{\\text{wadah}} \\times \\Delta t$), abaikan tinggi air awal jika tidak meluap.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Hubungan Kuantitas P vs Q",
+      "pertanyaan_markdown": "Sebuah bola pejal dimasukkan tepat ke dalam sebuah kubus berusuk $6\\text{ cm}$ sehingga bola menyinggung seluruh sisi kubus.\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut berdasarkan informasi yang diberikan?\n\n| $P$ | $Q$ |\n| :--- | :--- |\n| Volume kubus di luar bola ($\\text{cm}^3$) | $108$ |",
+      "opsi_jawaban": [
+        "A. Kuantitas P lebih besar daripada Q",
+        "B. Kuantitas Q lebih besar daripada P",
+        "C. Kuantitas P sama dengan Q",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Bola menyinggung seluruh sisi kubus berusuk $s = 6\\text{ cm}$, sehingga diameter bola $d = 6\\text{ cm}$ dan jari-jari $r = 3\\text{ cm}$.\n- $V_{\\text{kubus}} = 6^3 = 216\\text{ cm}^3$\n- $V_{\\text{bola}} = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi (3)^3 = 36\\pi \\approx 36(3,14) = 113,04\\text{ cm}^3$\n\nDiperoleh $P = 216 - 113,04 = 102,96 < 108 = Q$. Opsi A salah karena menganggap volume bola kurang dari setengah volume kubus, sedangkan opsi C keliru mengasumsikan volume bola tepat setengah kubus.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Kecukupan Data (1) dan (2)",
+      "pertanyaan_markdown": "Diketahui balok $ABCD.EFGH$ dengan luas alas $ABCD$ adalah $48\\text{ cm}^2$. Berapakah panjang diagonal ruang $AG$?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut.\n(1) Panjang rusuk $CG = 5\\text{ cm}$.\n(2) Keliling alas $ABCD = 28\\text{ cm}$.",
+      "opsi_jawaban": [
+        "A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C. DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.",
+        "D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.",
+        "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Panjang diagonal ruang $AG = \\sqrt{p^2 + l^2 + t^2}$ dengan diketahui $p \\times l = 48$.\n- **Pernyataan (1) saja:** Diketahui $t = 5$, tetapi nilai $p^2 + l^2$ tidak tunggal dari $p \\times l = 48$ saja (tidak cukup).\n- **Pernyataan (2) saja:** Diperoleh $p + l = 14$, sehingga $p^2 + l^2 = (p+l)^2 - 2pl = 196 - 96 = 100$, tetapi tinggi $t$ tidak diketahui (tidak cukup).\n- **Gabungan (1) dan (2):** $AG = \\sqrt{100 + 5^2} = 5\\sqrt{5}\\text{ cm}$ (cukup). Opsi A, B, D, dan E salah.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Sebuah akuarium berbentuk balok dengan ukuran panjang $40\\text{ cm}$, lebar $25\\text{ cm}$, dan tinggi $30\\text{ cm}$ berisi air setinggi $20\\text{ cm}$. Ke dalam akuarium tersebut dimasukkan sebuah kubus logam pejal berusuk $10\\text{ cm}$ hingga tenggelam seluruhnya. Tinggi permukaan air di dalam akuarium sekarang adalah ... $\\text{cm}$.",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "21",
+      "bedah_cepat_markdown": "Hitung volume kubus logam yang tenggelam seluruhnya: $V_{\\text{kubus}} = 10^3 = 1.000\\text{ cm}^3$. Luas alas wadah balok adalah $L_{\\text{alas}} = 40 \\times 25 = 1.000\\text{ cm}^2$. Kenaikan tinggi air adalah $\\Delta t = \\frac{V_{\\text{kubus}}}{L_{\\text{alas}}} = \\frac{1.000}{1.000} = 1\\text{ cm}$. Karena tinggi wadah $30\\text{ cm}$ masih mencukupi dan air tidak meluap, tinggi permukaan air sekarang menjadi $20 + 1 = 21\\text{ cm}$. Jebakan umum adalah hanya menjawab kenaikannya ($1$) atau salah membagi dengan luas sisi tegak.",
+      "visual": null
+    }
+  ]
+}

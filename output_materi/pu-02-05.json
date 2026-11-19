@@ -1,0 +1,133 @@
+{
+  "kode_subbab": "pu-02-05",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 2: Penalaran Deduktif",
+  "judul_subbab": "Penalaran Analitik (Urutan dan Kombinasi Posisi)",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Lima pelari finis berurutan: Adi finis tepat sebelum Budi, sedangkan Candra finis di belakang Budi. Apakah Adi pasti finis di urutan pertama?",
+      "opsi_cepat": [
+        "Ya, Adi pasti juara pertama",
+        "Tidak, posisi Adi belum tentu pertama"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Premis hanya mengunci urutan relatif Adi–Budi–Candra ($A > B > C$), tetapi tidak membatasi dua pelari lain. Pelari keempat atau kelima bisa saja finis lebih awal daripada Adi."
+    },
+    "konsep_inti_markdown": "**Penalaran analitik UTBK** menguji ketelitian memetakan aturan (*constraint*) ke dalam urutan atau kombinasi posisi tanpa menebak.\n\n* **Kunci Jangkar:** Mulai dari syarat paling mutlak (posisi tetap atau blok berdampingan).\n* **Notasi Cepat:** Gunakan tanda panah ($A \\rightarrow B$) untuk urutan, dan tabel matriks untuk pencocokan atribut.\n* **Uji Kontraposisi:** Pada kombinasi tim, syarat $A \\rightarrow B$ wajib dibaca sekaligus sebagai $\\sim B \\rightarrow \\sim A$.\n* **Prinsip Kepastian:** Jawaban benar harus berlaku di **semua** skenario sah.",
+    "radar_jebakan_utbk": [
+      "Menganggap posisi relatif ('A sebelum B') sebagai posisi bersebelahan ('A tepat di depan B') padahal masih dapat disisipi elemen lain.",
+      "Lupa menerapkan kontraposisi saat menyeleksi tim: jika 'A dipilih maka B dipilih' ($A \\rightarrow B$), artinya jika B tidak dipilih, A otomatis gugur."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pengurutan Linear Berdimensi Tunggal (Skor, Waktu Kedatangan, Antrean)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam seleksi wawancara lima kandidat ($P, Q, R, S, T$), $P$ hadir lebih awal daripada $Q$, tetapi setelah $R$. Kandidat $S$ hadir paling akhir, sedangkan $T$ hadir tepat sebelum $R$.",
+      "bedah_pola_markdown": "**Struktur Logika & Skema Panah**\nTerjemahkan hubungan waktu ke garis urutan dari paling awal (kiri) ke paling akhir (kanan):\n* Syarat 1 & 2: $R \\rightarrow P \\rightarrow Q$ ($R$ sebelum $P$, $P$ sebelum $Q$).\n* Syarat 3: $S$ di ujung kanan ($\\_ \\rightarrow \\_ \\rightarrow \\_ \\rightarrow \\_ \\rightarrow S$).\n* Syarat 4: Blok berurutan $[T - R]$.\n\nGabungkan menjadi rantai tunggal pasti: **$T \\rightarrow R \\rightarrow P \\rightarrow Q \\rightarrow S$**.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| \"$P$ setelah $R$\" dianggap langsung di belakangnya | Bisa disisipi orang lain kecuali ada kata **tepat** |\n| Mencoba semua kemungkinan secara acak | Kunci posisi ekstrem ($S$) dan blok berdampingan ($T-R$) dulu |\n\n**Langkah Eliminasi Opsi:** Coret opsi yang memecah blok $[T-R]$ atau menempatkan $Q$ di depan $P$. Dengan rantai tunggal tersebut, setiap urutan dari pertama hingga kelima terkunci pasti tanpa cabang skenario.",
+      "kunci_pembeda": "Gabungkan rantai ketaksamaan ke satu arah panah dan kunci blok posisi yang memiliki kata kunci 'tepat'.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Penjadwalan Sekuensial dengan Syarat Jeda/Blokir Hari",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Lima mata kuliah ($F, G, H, J, K$) dijadwalkan satu per hari dari Senin hingga Jumat. Mata kuliah $F$ dijadwalkan pada Rabu. Mata kuliah $G$ dan $H$ harus dipisahkan tepat satu hari, sedangkan $J$ tidak boleh dijadwalkan pada Senin.",
+      "bedah_pola_markdown": "**Struktur Logika & Slot Hari**\nBuat lima slot tetap (Senin–Jumat) lalu masukkan syarat mutlak terlebih dahulu:\n* Jangkar tetap: **Rabu = $F$**.\n* Syarat jeda tepat 1 hari untuk $G$ dan $H$ menyisakan pasangan slot kosong: **(Senin, Rabu)** mustahil karena Rabu terisi $F$, sehingga $G$ dan $H$ wajib mengisi **Selasa dan Kamis** (bisa bertukar posisi).\n* Sisa hari tinggal **Senin** dan **Jumat**. Karena $J \\neq \\text{Senin}$, maka **Jumat = $J$** dan **Senin = $K$**.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| \"Dipisah 1 hari\" diartikan berurutan | Wajib ada **1 slot lain** di antara keduanya ($X - \\_ - Y$) |\n| Mengabaikan syarat negatif ($J \\neq \\text{Senin}$) | Syarat negatif langsung mengunci elemen tersisa di slot terakhir |\n\n**Langkah Eliminasi Opsi:** Gugurkan opsi yang menempatkan $G$ atau $H$ pada Senin/Jumat, atau meletakkan $J$ di awal pekan.",
+      "kunci_pembeda": "Isi slot tetap terlebih dahulu untuk melihat pasangan jarak jeda yang masih tersedia.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Susunan Melingkar Sederhana (4–6 Orang) dengan Syarat Berhadapan/Berdampingan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Enam peserta rapat ($A, B, C, D, E, F$) duduk mengelilingi meja bundar dengan jarak sama. Kursi $A$ tepat berhadapan dengan $D$. Peserta $B$ duduk tepat di sebelah kanan $A$, sedangkan $C$ tidak mau duduk bersebelahan dengan $D$.",
+      "bedah_pola_markdown": "**Struktur Logika & Pemetaan Kursi**\nPada meja bundar 6 kursi, posisi bersifat relatif tanpa ujung kiri-kanan. Gunakan arah jarum jam sebagai patokan tetap:\n* Jangkar berhadapan: Tempatkan **$A$ di posisi jam 12** dan **$D$ di posisi jam 6** (selisih 3 langkah kursi).\n* Jangkar berdampingan: $B$ di kanan $A$ mengunci **$B$ di posisi jam 10** (menghadap pusat meja).\n* Syarat negatif: $C$ dilarang duduk di kursi jam 4 atau jam 8 (sebelah $D$), sehingga **$C$ wajib menempati kursi jam 2** (sebelah kiri $A$).\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Kiri-kanan dilihat dari sudut pandang pembaca | Kiri-kanan dilihat dari **orang yang duduk menghadap meja** |\n| Semua posisi punya titik awal | Putar meja bebas hingga 1 tokoh kunci berada di titik acuan |\n\n**Langkah Eliminasi Opsi:** Coret opsi yang meletakkan $C$ di samping $D$ atau memisahkan $A$ dan $B$.",
+      "kunci_pembeda": "Tentukan orientasi menghadap pusat meja dan kunci pasangan berhadapan pada diameter lingkaran.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Kombinasi Pemilihan Tim/Menu dengan Syarat Inklusi ($A \\rightarrow B$) & Eksklusi ($C \\rightarrow \\sim D$)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Sebuah tim debat beranggotakan 3 orang dipilih dari lima siswa ($A, B, C, D, E$). Jika $A$ terpilih, maka $B$ wajib terpilih. Jika $C$ terpilih, maka $D$ tidak boleh terpilih. Selain itu, $B$ dan $E$ tidak dapat dipilih bersamaan.",
+      "bedah_pola_markdown": "**Struktur Logika Syarat Bersyarat**\nUbah aturan verbal menjadi panah implikasi dan kontraposisinya untuk menyaring kombinasi sah:\n* **Inklusi ($A \\rightarrow B$):** Jika $A$ masuk, $B$ ikut; jika $B$ absen, $A$ gugur ($\\sim B \\rightarrow \\sim A$).\n* **Eksklusi ($C \\rightarrow \\sim D$ & $B \\rightarrow \\sim E$):** Pasangan $\\{C, D\\}$ dan $\\{B, E\\}$ tidak pernah tampil bersama.\n\nUji skenario memilih 3 anggota:\n1. **Jika $B$ masuk:** $E$ gugur. Dari sisa $\\{A, C, D\\}$ butuh 2 orang. Karena $C$ dan $D$ bentrok, $A$ wajib masuk bersama $C$ atau $D$ $\\rightarrow$ **$\\{A, B, C\\}$** atau **$\\{A, B, D\\}$**.\n2. **Jika $B$ absen:** $A$ gugur. Sisa $\\{C, D, E\\}$ tidak valid karena $C$ dan $D$ bentrok.\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| \"Jika $A$ maka $B$\" dianggap sama dengan \"Jika $B$ maka $A$\" | $B$ bisa terpilih tanpa $A$, tetapi $A$ tak bisa tanpa $B$ |\n\n**Langkah Eliminasi Opsi:** Coret tim yang memuat $\\{B, E\\}$, $\\{C, D\\}$, atau $A$ tanpa $B$.",
+      "kunci_pembeda": "Uji dua cabang dari elemen yang paling banyak terikat syarat inklusi atau eksklusi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pemetaan Matriks Atribut (Pencocokan $N$ orang dengan profesi, kota, dan hobi)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Tiga sahabat ($Rani, Sinta, Tari$) memiliki profesi berbeda (Dokter, Arsitek, Dosen) dan tinggal di kota berbeda (Bandung, Surabaya, Medan). Sinta tinggal di Bandung dan bukan Dokter. Arsitek tinggal di Surabaya, sedangkan Rani tidak tinggal di Medan.",
+      "bedah_pola_markdown": "**Struktur Logika & Eliminasi Matriks**\nSusun tabel silang berpusat pada subjek orang, lalu hubungkan premis yang berbagi atribut sama:\n* Sinta di Bandung dan Rani bukan di Medan $\\rightarrow$ **Rani wajib di Surabaya**, sehingga **Tari di Medan**.\n* Karena Arsitek tinggal di Surabaya, otomatis **Rani = Arsitek**.\n* Sinta bukan Dokter dan bukan Arsitek $\\rightarrow$ **Sinta = Dosen**, menyisakan **Tari = Dokter**.\n\n| Subjek | Kota | Profesi |\n| :--- | :--- | :--- |\n| **Rani** | Surabaya | Arsitek |\n| **Sinta** | Bandung | Dosen |\n| **Tari** | Medan | Dokter |\n\n| Logika Sehari-hari | Logika Formal UTBK |\n| :--- | :--- |\n| Membaca premis satu per satu secara terpisah | Silangkan dua premis beririsan (Kota Surabaya) untuk mengunci identitas |\n\n**Langkah Eliminasi Opsi:** Coret opsi yang memasangkan atribut terkunci milik satu subjek kepada subjek lainnya.",
+      "kunci_pembeda": "Tautkan dua premis yang menyebut kategori atribut yang sama untuk menemukan identitas subjek yang tersembunyi.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Lima pembicara ($K, L, M, N, O$) dijadwalkan tampil berurutan dalam sebuah seminar dari sesi ke-$1$ hingga ke-$5$ dengan aturan berikut:\n* $M$ tampil tepat sebelum $N$.\n* $K$ tampil pada sesi ke-$1$ atau ke-$5$.\n* Terdapat tepat dua pembicara yang tampil di antara $L$ dan $O$.\n\nJika $O$ tampil pada sesi ke-$2$, pernyataan manakah yang **PASTI BENAR**?",
+      "opsi_jawaban": [
+        "A. $K$ tampil pada sesi ke-$5$",
+        "B. $L$ tampil pada sesi ke-$4$",
+        "C. $M$ tampil pada sesi ke-$3$",
+        "D. $N$ tampil tepat sebelum $O$",
+        "E. $M$ tampil setelah $L$"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Susun lima slot sesi ($1$–$5$) dan masukkan fakta $O = 2$. Karena $L$ dan $O$ dipisahkan tepat dua pembicara, $L$ wajib mengisi sesi ke-$5$ ($2 + 3 = 5$). Akibatnya, syarat $K$ di sesi ke-$1$ atau ke-$5$ mengunci **$K = 1$** (opsi A dan B salah). Sisa sesi ke-$3$ dan ke-$4$ diisi blok berurutan $[M - N]$, sehingga **$M = 3$** dan **$N = 4$** (opsi D dan E salah). Jadi, pernyataan yang pasti benar adalah **$M$ tampil pada sesi ke-$3$** (**C**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Sebuah panitia inti beranggotakan $3$ orang dipilih dari lima kandidat ($P, Q, R, S, T$) dengan ketentuan sebagai berikut:\n* Jika $P$ terpilih, maka $Q$ juga harus terpilih.\n* Jika $R$ terpilih, maka $S$ tidak boleh terpilih.\n* Kandidat $Q$ dan $T$ tidak dapat dipilih secara bersamaan.\n\nApabila $P$ terpilih menjadi anggota panitia inti, manakah kualitas simpulan dari pernyataan berikut?\n**\"Kandidat $R$ terpilih menjadi anggota panitia inti.\"**",
+      "opsi_jawaban": [
+        "A. Simpulan tersebut pasti benar.",
+        "B. Simpulan tersebut mungkin benar.",
+        "C. Simpulan tersebut pasti salah.",
+        "D. Simpulan tidak relevan dengan informasi yang diberikan.",
+        "E. Simpulan tidak dapat dinilai karena informasi tidak cukup."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Karena $P$ terpilih, syarat pertama mewajibkan **$Q$ terpilih**. Syarat ketiga menggugurkan **$T$** karena tidak boleh bersama $Q$. Untuk melengkapi kuota $3$ orang dari sisa kandidat $\\{R, S\\}$, terdapat dua kombinasi sah: **$\\{P, Q, R\\}$** atau **$\\{P, Q, S\\}$** (keduanya mematuhi aturan $R \\rightarrow \\sim S$). Karena $R$ hadir pada salah satu kombinasi sah namun tidak wajib di semua kombinasi, simpulan tersebut **mungkin benar** (**B**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Empat delegasi dari kota berbeda (Jakarta, Bandung, Surabaya, Medan) duduk mengelilingi meja bundar dengan posisi berhadapan. Delegasi Jakarta duduk tepat berhadapan dengan delegasi Medan. Delegasi Bandung adalah seorang dokter, sedangkan delegasi Surabaya duduk tepat di sebelah kanan delegasi Jakarta.\n\nBerdasarkan informasi tersebut, manakah pernyataan berikut yang **PASTI BENAR**?\n(1) Delegasi Bandung duduk tepat di sebelah kiri delegasi Jakarta.\n(2) Delegasi Medan duduk bersebelahan dengan dokter.\n(3) Delegasi Surabaya duduk tepat di sebelah kiri delegasi Medan.\n(4) Dokter duduk tepat di sebelah kiri delegasi Medan.",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pilihan benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Tetapkan posisi menghadap pusat meja: Jakarta di arah jam $12$, maka Medan di jam $6$. Sebelah kanan Jakarta adalah arah jam $9$ (**Surabaya**), menyisakan arah jam $3$ untuk **Bandung (dokter)**. Uji pernyataan: **(1) Benar**, arah jam $3$ berada di kiri Jakarta; **(2) Benar**, Medan (jam $6$) bersebelahan dengan dokter (jam $3$); **(3) Benar**, dari jam $6$ menghadap pusat, arah jam $9$ berada di sebelah kiri Medan; **(4) Salah**, dokter berada di sebelah kanan Medan. Jadi, **(1), (2), dan (3) SAJA** benar (**A**).",
+      "visual": null
+    }
+  ]
+}

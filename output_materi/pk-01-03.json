@@ -1,0 +1,126 @@
+{
+  "kode_subbab": "pk-01-03",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 1: Bilangan dan Operasi Aljabar",
+  "judul_subbab": "Operasi Aljabar dan Pemfaktoran",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui $x + y = 5$ dan $xy = 6$. Tanpa mencari nilai $x$ dan $y$ satu per satu, berapakah nilai dari $x^2 + y^2$?",
+      "opsi_cepat": [
+        "25",
+        "13"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta langsung mengkuadratkan $5^2 = 25$ dan lupa mengurangi $2xy$. Padahal $(x+y)^2 = x^2 + 2xy + y^2$, sehingga $x^2 + y^2 = 25 - 2(6) = 13$."
+    },
+    "konsep_inti_markdown": "Operasi aljabar UTBK menuntut manipulasi bentuk tanpa mencari nilai variabel individu.\n\n* **Kuadrat:** $(x \\pm y)^2 = x^2 \\pm 2xy + y^2$ dan $x^2 - y^2 = (x+y)(x-y)$\n* **Kubik:** $x^3 + y^3 = (x+y)^3 - 3xy(x+y)$ dan $x^3 - y^3 = (x-y)^3 + 3xy(x-y)$\n* **Resiprokal:** $x^2 + \\frac{1}{x^2} = \\left(x + \\frac{1}{x}\\right)^2 - 2$\n* **Kuadrat Sempurna:** $ax^2 + bx + c = a\\left(x + \\frac{b}{2a}\\right)^2 - \\frac{D}{4a}$",
+    "radar_jebakan_utbk": [
+      "Menganggap $(x + y)^2 = x^2 + y^2$ sehingga menghilangkan suku tengah $2xy$ saat penjabaran.",
+      "Mencoret variabel pembagi pada pecahan rasional seperti $\\frac{x^2 - 4}{x - 2}$ tanpa mengecek syarat penyebut $x \\neq 2$."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identitas Aljabar Kuadrat dan Kubik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Jika $a - b = 4$ dan $ab = 5$, tentukan nilai dari $a^3 - b^3$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nGunakan penjabaran selisih dua kubik: $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$. Pertama, cari nilai $a^2 + b^2$ dari bentuk kuadrat selisih: $(a - b)^2 = a^2 - 2ab + b^2$. Substitusikan nilai yang diketahui: $4^2 = a^2 + b^2 - 2(5)$, sehingga $16 = a^2 + b^2 - 10$, dan diperoleh $a^2 + b^2 = 26$. Selanjutnya, masukkan kembali ke identitas kubik awal: $a^3 - b^3 = 4 \\times (26 + 5) = 4 \\times 31 = 124$.\n\n**2. Jalur Taktis UTBK**\nHafalkan rumus instan kubik terfaktor: $a^3 - b^3 = (a - b)^3 + 3ab(a - b)$. Langsung masukkan angka tanpa mencari $a^2 + b^2$ terlebih dahulu: $4^3 + 3(5)(4) = 64 + 60 = 124$. Cara ini memangkas waktu pengerjaan menjadi kurang dari 25 detik dan meminimalkan risiko salah hitung tanda.",
+      "kunci_pembeda": "Fokus pada kombinasi operasi jumlah, selisih, dan hasil kali dua variabel yang berpangkat sama tanpa bentuk pecahan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Bentuk Aljabar Simetris Resiprokal",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Diketahui $x + \\frac{1}{x} = 3$ untuk $x > 0$. Berapakah nilai dari $x^3 + \\frac{1}{x^3}$?",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nKuadratkan kedua ruas persamaan awal untuk mendapatkan suku kuadrat: $\\left(x + \\frac{1}{x}\\right)^2 = 3^2 \\implies x^2 + 2(x)\\left(\\frac{1}{x}\\right) + \\frac{1}{x^2} = 9$. Karena $x \\cdot \\frac{1}{x} = 1$, maka $x^2 + \\frac{1}{x^2} = 9 - 2 = 7$. Berikutnya, gunakan identitas jumlah kubik: $x^3 + \\frac{1}{x^3} = \\left(x + \\frac{1}{x}\\right)\\left(x^2 - 1 + \\frac{1}{x^2}\\right)$. Substitusikan nilai yang sudah ditemukan: $3 \\times (7 - 1) = 3 \\times 6 = 18$.\n\n**2. Jalur Taktis UTBK**\nGunakan pola cepat resiprokal: jika $x + \\frac{1}{x} = k$, maka $x^3 + \\frac{1}{x^3} = k^3 - 3k$. Perhatikan bahwa perkalian silang $x \\cdot \\frac{1}{x}$ selalu bernilai $1$ sehingga hilang dari rumus. Langsung hitung $3^3 - 3(3) = 27 - 9 = 18$ dalam 15 detik tanpa menjabarkan bentuk kuadratnya.",
+      "kunci_pembeda": "Ditandai oleh struktur penjumlahan variabel dengan kebalikannya ($x$ dan $\\frac{1}{x}$) sehingga hasil kali keduanya selalu saling meniadakan menjadi $1$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penyederhanaan Pecahan Aljabar Rasional dan Pembagian Polinomial Derajat Dua",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sederhanakan bentuk $\\frac{2x^2 - 5x - 3}{x^2 - 9}$ untuk $x \\neq \\pm 3$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nFaktorkan pembilang dan penyebut secara terpisah. Untuk pembilang $2x^2 - 5x - 3$, cari dua bilangan yang hasil kalinya $2 \\times (-3) = -6$ dan jumlahnya $-5$, yaitu $-6$ dan $+1$. Pecah suku tengah menjadi $2x^2 - 6x + x - 3 = 2x(x - 3) + 1(x - 3) = (2x + 1)(x - 3)$. Sementara itu, penyebut $x^2 - 9$ merupakan selisih kuadrat yang difaktorkan menjadi $(x + 3)(x - 3)$. Coret faktor persekutuan $(x - 3)$ karena $x \\neq 3$, sehingga tersisa $\\frac{2x + 1}{x + 3}$.\n\n**2. Jalur Taktis UTBK**\nGunakan Teorema Faktor lewat substitusi angka uji. Jika soal pilihan ganda, masukkan nilai aman seperti $x = 0$ ke soal awal: $\\frac{-3}{-9} = \\frac{1}{3}$. Cek opsi jawaban dengan $x = 0$; opsi $\\frac{2(0)+1}{0+3} = \\frac{1}{3}$ langsung terkonfirmasi benar tanpa memfaktorkan.",
+      "kunci_pembeda": "Melibatkan bentuk pecahan polinomial yang menyembunyikan faktor linear kembar pada pembilang dan penyebut untuk dicoret.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Manipulasi Sistem Persamaan Non-Linear Tanpa Mencari Nilai Individu Variabel",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui $x + 2y = 10$ dan $x^2 - 4y^2 = 40$. Tentukan nilai dari $x - 2y$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nHindari metode substitusi $x = 10 - 2y$ ke persamaan kuadrat karena akan memakan waktu lama. Perhatikan struktur persamaan kedua: $x^2 - 4y^2$ dapat ditulis ulang sebagai selisih dua kuadrat sempurna, yaitu $x^2 - (2y)^2 = 40$. Jabarkan bentuk tersebut menjadi perkalian dua faktor linear: $(x + 2y)(x - 2y) = 40$. Karena persamaan pertama menyatakan bahwa $x + 2y = 10$, substitusikan nilai tersebut langsung ke persamaan terfaktor: $10 \\times (x - 2y) = 40$. Bagi kedua ruas dengan $10$, sehingga diperoleh $x - 2y = 4$.\n\n**2. Jalur Taktis UTBK**\nJangan pernah mencari nilai $x$ dan $y$ secara terpisah jika pertanyaan menanyakan kombinasi linearnya. Lihat rasio langsung antara bentuk kuadrat dan linearnya: $\\frac{x^2 - 4y^2}{x + 2y} = \\frac{40}{10} = 4$. Eksekusi selesai dalam 10 detik.",
+      "kunci_pembeda": "Terdiri dari dua atau lebih persamaan berbeda derajat di mana persamaan derajat tinggi dapat difaktorkan menjadi kelipatan persamaan linearnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Penentuan Nilai Maksimum atau Minimum Ekspresi Aljabar dengan Melengkapkan Kuadrat Sempurna",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Tentukan nilai minimum dari ekspresi aljabar $P = x^2 - 6x + 14$ untuk semua $x$ bilangan real.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nUbah bentuk kuadrat $x^2 - 6x + 14$ menjadi bentuk kuadrat sempurna $(x - h)^2 + k$. Ambil setengah dari koefisien $x$, yaitu $\\frac{-6}{2} = -3$, lalu kuadratkan menjadi $(-3)^2 = 9$. Pecah konstanta $14$ menjadi $9 + 5$, sehingga ekspresi berubah menjadi $P = (x^2 - 6x + 9) + 5 = (x - 3)^2 + 5$. Karena kuadrat bilangan real selalu bernilai tak negatif atau $(x - 3)^2 \\ge 0$, maka nilai minimum tercapai saat $(x - 3)^2 = 0$ (ketika $x = 3$), menghasilkan nilai minimum $P = 0 + 5 = 5$.\n\n**2. Jalur Taktis UTBK**\nGunakan rumus sumbu simetri puncak parabola $x_p = -\\frac{b}{2a}$. Untuk $x^2 - 6x + 14$, diperoleh $x_p = -\\frac{-6}{2(1)} = 3$. Langsung masukkan $x = 3$ ke fungsi awal: $3^2 - 6(3) + 14 = 9 - 18 + 14 = 5$.",
+      "kunci_pembeda": "Menanyakan nilai ekstrem (terbesar atau terkecil) dari satu ekspresi kuadrat tanpa tanda sama dengan atau pertidaksamaan.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diketahui bilangan real $p$ dan $q$ memenuhi persamaan $p + q = 8$ dan $p^2 - q^2 = 32$.\n\nBerdasarkan informasi yang diberikan, manakah hubungan antara kuantitas $P$ dan $Q$ berikut yang benar?\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| $p^2 + q^2$ | $40$ |",
+      "opsi_jawaban": [
+        "A. Kuantitas P lebih besar daripada Q",
+        "B. Kuantitas P lebih kecil daripada Q",
+        "C. Kuantitas P sama dengan Q",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Faktorkan $p^2 - q^2 = (p + q)(p - q) = 32$. Karena $p + q = 8$, diperoleh $8(p - q) = 32 \\implies p - q = 4$. Gunakan identitas $(p + q)^2 + (p - q)^2 = 2(p^2 + q^2)$, sehingga $8^2 + 4^2 = 2(p^2 + q^2) \\implies 80 = 2(p^2 + q^2)$, maka $P = 40$. Karena $Q = 40$, kuantitas $P$ sama dengan $Q$. Opsi A dan B salah karena mengabaikan suku $2pq$, sedangkan D salah karena data sudah mencukupi.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Diberikan fungsi rasional $f(x) = \\frac{x^3 - 4x}{x - 2}$ untuk $x \\neq 2$.\n\nManakah pernyataan berikut yang bernilai benar?\n1. Bentuk sederhana dari $f(x)$ adalah $x^2 + 2x$.\n2. Nilai minimum dari $f(x)$ tercapai saat $x = -1$.\n3. Nilai minimum dari $f(x)$ adalah $-1$.\n4. Grafik $y = f(x)$ memotong sumbu-$x$ di titik $(2, 0)$.",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pilihan benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Faktorkan pembilang menjadi $\\frac{x(x - 2)(x + 2)}{x - 2} = x^2 + 2x$ untuk $x \\neq 2$, sehingga (1) benar. Lengkapkan kuadrat menjadi $(x + 1)^2 - 1$: nilai minimum $-1$ tercapai saat $x = -1$, maka (2) dan (3) benar. Pernyataan (4) salah karena syarat $x \\neq 2$ membuat grafik berlubang di $x = 2$ dan memotong sumbu-$x$ di $(0,0)$ serta $(-2,0)$. Jadi, jawaban A.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Diketahui bilangan real $x > 0$ memenuhi persamaan $x^2 + \\frac{1}{x^2} = 14$.\n\nNilai dari $x^3 + \\frac{1}{x^3}$ adalah ....",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "52",
+      "bedah_cepat_markdown": "Gunakan identitas kuadrat resiprokal: $\\left(x + \\frac{1}{x}\\right)^2 = x^2 + \\frac{1}{x^2} + 2 = 14 + 2 = 16$. Karena syarat soal $x > 0$, ambil akar positif sehingga $x + \\frac{1}{x} = 4$. Selanjutnya terapkan rumus kubik resiprokal: $x^3 + \\frac{1}{x^3} = \\left(x + \\frac{1}{x}\\right)^3 - 3\\left(x + \\frac{1}{x}\\right) = 4^3 - 3(4) = 64 - 12 = 52$.",
+      "visual": null
+    }
+  ]
+}

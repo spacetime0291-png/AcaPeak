@@ -1,0 +1,133 @@
+{
+  "kode_subbab": "lbe-02-04",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 2: Detailed Information & Paraphrasing",
+  "judul_subbab": "Pronoun Reference and Contextual Vocabulary",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat: 'New coastal regulations aim to arrest rapid shoreline erosion,' apakah kata 'arrest' bermakna menangkap penjahat?",
+      "opsi_cepat": [
+        "A. Menangkap pelaku pelanggaran",
+        "B. Menghentikan atau menahan laju"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Dalam konteks saintek/lingkungan, 'arrest' bermakna 'stop' atau 'halt' (menghentikan proses), bukan arti literal hukum yang paling umum."
+    },
+    "konsep_inti_markdown": "* **Context Over Dictionary:** Makna kata polisemi, idiom, dan *phrasal verb* ditentukan oleh kolokasi kalimat, bukan arti kamus paling umum.\n* **Backward-Forward Substitution:** Pronomina (*they, it, this phenomenon*) wajib diuji dengan menggantinya langsung menggunakan anteseden terdekat yang selaras jumlah dan maknanya.\n* **Pragmatic & Modal Precision:** Sinonim pengganti dan *modal verbs* (*must, might, should*) harus mempertahankan tingkat kepastian serta nada penulis tanpa distorsi ekstrem.",
+    "radar_jebakan_utbk": [
+      "Memilih arti primer/literal kamus (misal: 'harbor' sebagai pelabuhan, padahal di konteks medis bermakna 'menyimpan/mengandung').",
+      "Menunjuk kata benda terdekat sebagai rujukan 'this/these', padahal merujuk pada keseluruhan klausa atau fenomena di kalimat sebelumnya."
+    ],
+    "stimulus_utama_bersama": "**Forum Thread: Urban Microclimate & Green Roof Initiatives**\n\n**@Dr_Aris (Urban Ecologist):** Recent telemetry from Jakarta's central business district confirms that conventional asphalt roofs exacerbate the urban heat island effect. Deploying extensive green roofs can **arrest** daytime thermal spikes by up to $4^\\circ\\text{C}$. However, critics argue that structural retrofitting costs **put a damper on** widespread municipal adoption. If cities subsidize initial installation, developers **must** recognize the long-term cooling dividends.\n\n**@Siska_Arch (Sustainable Architect):** Valid point, Aris. In our pilot project, retrofitting older warehouses initially seemed prohibitive, yet **this hurdle** was overcome using lightweight modular substrates. Moreover, native drought-tolerant sedums **harbor** local pollinators without requiring intensive irrigation. Municipalities **might** mandate green roofs for commercial buildings exceeding $5,000\\text{ m}^2$, though voluntary tax incentives currently **hold more water** among private stakeholders.\n\n**@Bima_Econ (Policy Analyst):** While ecological benefits are indisputable, financial feasibility remains pivotal. A poorly maintained green roof **can** turn into a costly liability if drainage membranes fail. Therefore, policymakers **should** pair installation grants with mandatory maintenance audits rather than relying solely on upfront subsidies.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Contextual Synonym of Academic/Polysemous Words",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Post 1 (@Dr_Aris): \"Deploying extensive green roofs can **arrest** daytime thermal spikes by up to $4^\\circ\\text{C}$.\"",
+      "bedah_pola_markdown": "**Teknik Scanning & Substitusi:**\n1. **Temukan Kalimat Kunci:** Pindai kata target (*arrest* / *harbor*) dan baca satu kalimat penuh sebelum-sesudahnya untuk menangkap topik (mitigasi panas perkotaan).\n2. **Identifikasi Kelas Kata & Objek:** *Arrest* berfungsi sebagai kata kerja transitif dengan objek *daytime thermal spikes* (lonjakan suhu siang hari).\n3. **Uji Substitusi & Parafrasa:** Ganti *arrest* dengan kandidat sinonim. Kata *halt* atau *curb* (menghentikan/menahan) selaras secara logis dengan penurunan suhu $4^\\circ\\text{C}$.\n\n**Ciri Opsi Jebakan UTBK:**\n* **Arti Literal Populer:** *Detain* atau *apprehend* (menangkap tersangka) — hanya berlaku di konteks hukum.\n* **Berlawanan Arah:** *Accelerate* (mempercepat) — bertentangan dengan konteks pendinginan atap hijau.",
+      "kunci_pembeda": "Selalu uji kecocokan kolokasi antara opsi pengganti dengan kata benda objek di sebelah kanannya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Interpreting Idiomatic Expressions and Phrasal Verbs in Context",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Post 1 & 2: \"...retrofitting costs **put a damper on** widespread municipal adoption\" dan \"...tax incentives currently **hold more water** among private stakeholders.\"",
+      "bedah_pola_markdown": "**Teknik Scanning & Pembacaan Nada (Tone):**\n1. **Deteksi Penanda Kontras:** Pada Post 1, kata *However* menandakan pergeseran dari manfaat positif ke hambatan biaya (*put a damper on* = menghambat/mengurangi antusiasme). Pada Post 2, kata *though* mengontraskan mandat wajib dengan insentif pajak yang lebih masuk akal/meyakinkan (*hold more water* = lebih valid/dapat diterima).\n2. **Parafrasa Non-Idiom:** Ubah ungkapan figuratif menjadi bahasa akademik lugas sebelum melihat opsi (*discourage* untuk *put a damper on*; *seem more plausible* untuk *hold more water*).\n\n**Ciri Opsi Jebakan UTBK:**\n* **Terjemahan Kata per Kata:** Mengartikan *damper* sebagai peredam fisik/air atau *hold water* sebagai menampung air hujan di atap hijau.",
+      "kunci_pembeda": "Gunakan konjungsi kontras (*however, though, yet*) di sekitar idiom untuk menentukan apakah maknanya positif atau negatif.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pronoun & Demonstrative Reference",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Post 2 (@Siska_Arch): \"In our pilot project, retrofitting older warehouses initially seemed prohibitive, yet **this hurdle** was overcome using lightweight modular substrates.\"",
+      "bedah_pola_markdown": "**Teknik Scanning Mundur (Backward Tracking):**\n1. **Cek Kesesuaian Jumlah & Kategori:** Frasa demonstratif tunggal *this hurdle* (rintangan ini) wajib merujuk pada satu masalah spesifik yang baru saja disebut sebelumnya.\n2. **Lacak Anteseden Terdekat:** Baca klausa sebelum *yet*: *retrofitting older warehouses initially seemed prohibitive* (biaya/kesulitan merenovasi gudang tua yang awalnya terasa terlalu mahal/sulit).\n3. **Uji Penggantian:** Masukkan anteseden ke posisi *this hurdle* untuk memverifikasi kelogisan kalimat.\n\n**Ciri Opsi Jebakan UTBK:**\n* **Terlalu Sempit:** Hanya menyebut *older warehouses* (gudang tuanya saja, bukan tantangan renovasinya).\n* **Lintas Pembicara:** Mengambil isu dari Post 1 padahal *this* merujuk konteks internal Post 2.",
+      "kunci_pembeda": "Frasa *this/these + kata benda abstrak* (*this hurdle, these findings*) merangkum keseluruhan situasi pada klausa sebelumnya, bukan sekadar satu kata benda.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Word Replacement Without Altering the Pragmatic Nuance of the Sentence",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Post 1 (@Dr_Aris): \"...conventional asphalt roofs **exacerbate** the urban heat island effect.\"",
+      "bedah_pola_markdown": "**Teknik Analisis Nuansa & Intensitas:**\n1. **Bedah Arah & Derajat Makna:** Kata *exacerbate* tidak sekadar bermakna 'menyebabkan' (*cause*), melainkan 'memperburuk kondisi buruk yang sudah ada' (*aggravate/worsen*).\n2. **Cocokkan Register Akademik:** Pilih opsi yang mempertahankan intensitas negatif dan gaya bahasa formal teks.\n3. **Verifikasi Pragmatis:** Jika diganti *aggravate*, makna bahwa efek pulau panas sudah ada lalu diperparah oleh atap aspal tetap utuh 100%.\n\n**Ciri Opsi Jebakan UTBK:**\n* **Pergeseran Kausalitas:** *Initiate* atau *trigger* (memulai dari nol), yang menghilangkan nuansa bahwa masalahnya sudah eksis sebelumnya.\n* **Terlalu Ekstrem:** *Eradicate* (memusnahkan) atau *maximize* (memaksimalkan secara mutlak).",
+      "kunci_pembeda": "Periksa apakah kata target bermakna 'memulai sesuatu' atau 'mengubah intensitas sesuatu yang sudah ada'.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Pragmatic Function of Modal Verbs in Context",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Post 2 & 3: \"Municipalities **might** mandate green roofs...\" (Post 2) vs \"...policymakers **should** pair installation grants with mandatory maintenance audits...\" (Post 3).",
+      "bedah_pola_markdown": "**Teknik Pemetaan Skala Epistemik & Deontik:**\n1. **Identifikasi Subjek & Konteks:** Pada Post 2, *might* berada dalam kalimat konsesif (*though...*) yang menyatakan kemungkinan kebijakan yang belum pasti terjadi (*tentative possibility*).\n2. **Bedakan Fungsi Saran vs Keharusan:** Pada Post 3, diawali penanda simpulan *Therefore*, kata *should* berfungsi sebagai rekomendasi kebijakan optimal (*advisability/recommendation*), sedangkan *can* di kalimat sebelumnya menyatakan potensi risiko (*theoretical possibility*).\n\n**Ciri Opsi Jebakan UTBK:**\n* **Menaikkan Tingkat Kepastian:** Mengartikan *might* atau *can* sebagai kepastian mutlak (*certainty*) atau kewajiban hukum (*strict obligation*).",
+      "kunci_pembeda": "Cocokkan *modal verb* dengan penanda wacana di sekitarnya: *Therefore* memicu fungsi saran (*should*), sedangkan *though* memicu fungsi kemungkinan tentatif (*might*).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "In @Dr_Aris's post, the word **\"arrest\"** in the sentence *\"Deploying extensive green roofs can arrest daytime thermal spikes by up to $4^\\circ\\text{C}$\"* could best be replaced without altering the pragmatic nuance by which of the following?",
+      "opsi_jawaban": [
+        "A. Apprehend",
+        "B. Curb",
+        "C. Trigger",
+        "D. Escalate",
+        "E. Eliminate"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Konteks kalimat membahas kemampuan atap hijau menahan atau menekan lonjakan suhu siang hari hingga $4^\\circ\\text{C}$. Kata **Curb** (menahan/mengendalikan laju) mempertahankan makna dan derajat penurunan terbatas (*up to $4^\\circ\\text{C}$*). **A** adalah arti literal hukum; **C** dan **D** berlawanan arah (memicu/meningkatkan); **E** terlalu ekstrem karena suhu hanya turun hingga $4^\\circ\\text{C}$, bukan hilang total.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Based on @Siska_Arch's response in the forum thread, what does the phrase **\"this hurdle\"** refer to, and what is implied by her statement that tax incentives **\"hold more water\"**?",
+      "opsi_jawaban": [
+        "A. The lack of native sedums; tax incentives retain more rainwater for irrigation.",
+        "B. The daunting expense of modifying older warehouses; tax incentives are more persuasive to private owners.",
+        "C. The $5,000\\text{ m}^2$ building limit; tax incentives are legally mandatory for municipalities.",
+        "D. The failure of drainage membranes; tax incentives prevent structural water leaks.",
+        "E. The urban heat island effect; tax incentives completely replace modular substrates."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Frasa **\"this hurdle\"** merujuk pada klausa sebelumnya: *retrofitting older warehouses initially seemed prohibitive* (biaya/kesulitan renovasi gudang tua yang awalnya terasa memberatkan). Sementara idiom **\"hold more water\"** bermakna lebih masuk akal, valid, atau meyakinkan (*more persuasive/plausible*) dibandingkan mandat wajib. Opsi **A** dan **D** menjebak dengan arti literal kata *water*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Evaluate the pragmatic function of the modal verbs used across the three forum posts. Determine whether each statement below is **TRUE** or **FALSE** based on the text.\n\n| Statement | TRUE | FALSE |\n| :--- | :---: | :---: |\n| 1. In @Siska_Arch's post, the modal **\"might\"** indicates that municipalities are already legally forced to mandate green roofs. | | |\n| 2. In @Bima_Econ's post, the modal **\"can\"** expresses a potential financial risk if drainage maintenance is neglected. | | |\n| 3. In @Bima_Econ's post, the modal **\"should\"** functions as a policy recommendation derived from the maintenance risk. | | |",
+      "opsi_jawaban": [
+        "A. TRUE - TRUE - TRUE",
+        "B. FALSE - TRUE - TRUE",
+        "C. FALSE - FALSE - TRUE",
+        "D. TRUE - FALSE - FALSE",
+        "E. FALSE - TRUE - FALSE"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "* **Pernyataan 1 (FALSE):** Kata *might* menyatakan kemungkinan yang belum pasti (*tentative possibility*), bukan kewajiban hukum yang sudah berlaku.\n* **Pernyataan 2 (TRUE):** Kata *can* dalam *\"can turn into a costly liability\"* menyatakan potensi risiko finansial.\n* **Pernyataan 3 (TRUE):** Diawali *Therefore*, kata *should* berfungsi sebagai saran/rekomendasi kebijakan yang logis.",
+      "visual": null
+    }
+  ]
+}

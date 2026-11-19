@@ -1,0 +1,124 @@
+{
+  "kode_subbab": "ppu-02-04",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 2: Morfologi dan Frasa",
+  "judul_subbab": "Kelompok Kata dan Pasangan Makna Sebidang",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Program itu mencakup penguatan literasi digital, pemerataan akses internet, dan memperluas jaringan distribusi', apakah rincian kelompok katanya sudah sejajar?",
+      "opsi_cepat": [
+        "Ya, seluruh rincian sudah selaras maknanya",
+        "Tidak, bentuk frasa ketiga menyimpang dari dua frasa awal"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Dua frasa pertama diawali kata benda berimbuhan peN-an ('penguatan', 'pemerataan'), sedangkan unsur ketiga memakai kata kerja meN- ('memperluas'). Dalam subtes PPU UTBK, ketaksejajaran bentuk frasa dan penyimpangan ranah makna menjadi jebakan utama."
+    },
+    "konsep_inti_markdown": "**Kelompok kata dan pasangan makna sebidang** menguji ketepatan struktur frasa, kesetaraan relasi makna, serta keutuhan ungkapan tetap sesuai EYD V dan KBBI VI:\n\n* **Analogi Frasa:** Memasangkan dua frasa dengan hubungan logis identik (*proses–hasil*, *alat–objek*).\n* **Medan Sebidang & Kesejajaran:** Memastikan deretan frasa berada dalam satu payung makna dan berkelas kata seragam.\n* **Frasa Tetap (Idiom):** Mengganti ungkapan bermakna khusus dengan padanan pragmatis tanpa merusak nuansa kalimat.",
+    "radar_jebakan_utbk": [
+      "Memasangkan dua frasa yang tampak mirip secara topik, tetapi memiliki arah hubungan makna terbalik (misal: 'penyebab–akibat' disamakan dengan 'akibat–penyebab').",
+      "Mempertahankan rincian frasa yang berbeda kelas kata dalam satu deretan setara (misal: kata benda 'pembangunan' disejajarkan dengan kata kerja 'membangun') atau mengganti ungkapan tetap secara harfiah."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pasangan Kelompok Kata yang Berelasi Makna Setara (Analogi Frasa Antar-Paragraf)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Paragraf 1: Lembaga riset mengembangkan **panel surya** guna menekan emisi karbon. Paragraf 2: Dinas perhubungan membangun **jalur sepeda** untuk mengurangi kemacetan kota.",
+      "bedah_pola_markdown": "**Bedah Pola Relasi & Fungsi:**\nPerhatikan posisi fungsi objek pada kedua kalimat: [S] *Lembaga riset* + [P] *mengembangkan* + [O] ***panel surya*** + [K] *guna menekan emisi*, serta [S] *Dinas perhubungan* + [P] *membangun* + [O] ***jalur sepeda*** + [K] *untuk mengurangi kemacetan*. Kedua frasa tersebut sama-sama berpola **sarana–sumber/pengguna** dengan hubungan logis setara sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Baterai litium** (*benda–bahan*) dipasangkan dengan **polusi udara** (*dampak–lokasi*). | **Baterai litium** (*benda–bahan*) dipasangkan dengan **pipa baja** (*benda–bahan*). |\n| **Pencegahan banjir** (*tindakan–objek*) disamakan dengan **banjir bandang** (*benda–sifat*). | **Pencegahan banjir** (*tindakan–objek*) disamakan dengan **pengendalian inflasi** (*tindakan–objek*). |\n\n**Strategi Eksekusi:** Ubah hubungan dua unsur dalam frasa menjadi kalimat definisi singkat (*X terbuat dari Y* atau *X untuk Y*), lalu cari pasangan frasa pada paragraf lain yang memiliki pola definisi identik.",
+      "kunci_pembeda": "Memetakan kesetaraan hubungan logis antarunsur pembentuk frasa di dua paragraf berbeda menggunakan kalimat definisi relasional.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Identifikasi Kelompok Kata yang Menyimpang atau Tidak Sebidang dalam Satu Deretan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam laporan ketahanan pangan nasional, pemerintah mengevaluasi **irigasi teknis**, **pupuk bersubsidi**, **benih unggul**, dan **suku bunga acuan**.",
+      "bedah_pola_markdown": "**Bedah Pola Medan Makna & Fungsi:**\nPerhatikan deretan objek dalam struktur kalimat berikut: [K] *Dalam laporan ketahanan pangan*, [S] *pemerintah* + [P] *mengevaluasi* + [O] ***irigasi teknis**, **pupuk bersubsidi**, **benih unggul**, dan **suku bunga acuan***. Tiga frasa awal berada dalam satu **ranah makna budi daya pertanian**, sedangkan **suku bunga acuan** menyimpang karena termasuk ranah kebijakan moneter sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Deretan medis: **rawat inap**, **rekam medis**, **tenaga kesehatan**, dan **arus kas**. | Deretan medis: **rawat inap**, **rekam medis**, **tenaga kesehatan**, dan **ruang isolasi**. |\n| Deretan iklim: **curah hujan**, **suhu permukaan**, **kelembapan udara**, dan **inflasi inti**. | Deretan iklim: **curah hujan**, **suhu permukaan**, **kelembapan udara**, dan **tekanan udara**. |\n\n**Strategi Eksekusi:** Tentukan payung besar tema kalimat pada unsur subjek [S] atau keterangan [K], lalu uji apakah setiap kelompok kata pada rincian masuk ke dalam bidang ilmu tersebut.",
+      "kunci_pembeda": "Mendeteksi satu kelompok kata yang keluar dari payung ranah makna atau bidang ilmu bersama dalam sebuah deretan rincian.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Kesejajaran Bentuk Kelompok Kata dalam Rincian Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Strategi pemulihan ekosistem pesisir meliputi **penanaman bakau**, **rehabilitasi terumbu karang**, serta **mengendalikan limbah plastik**.",
+      "bedah_pola_markdown": "**Bedah Pola Paralelisme & Fungsi:**\nPerhatikan rincian pelengkap dalam kalimat berikut: [S] *Strategi pemulihan ekosistem pesisir* + [P] *meliputi* + [Pel] ***penanaman bakau**, **rehabilitasi terumbu karang**, serta **pengendalian limbah plastik***. Rincian dalam satu deretan setara wajib memiliki kelas kata dan imbuhan yang sejajar sesuai EYD V serta KBBI VI. Dua frasa awal berbentuk kelompok kata benda (*penanaman*, *rehabilitasi*), sehingga unsur ketiga wajib diubah dari kata kerja (*mengendalikan*) menjadi kata benda (*pengendalian*).\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Tugas tim adalah **mengumpulkan data**, **menganalisis sampel**, dan **penyusunan laporan**. | Tugas tim adalah **mengumpulkan data**, **menganalisis sampel**, dan **menyusun laporan**. |\n| Program itu berfokus pada **peningkatan mutu**, **perluasan akses**, serta **memperkuat riset**. | Program itu berfokus pada **peningkatan mutu**, **perluasan akses**, serta **penguatan riset**. |\n\n**Strategi Eksekusi:** Tandai kata pertama pada setiap unsur rincian setelah tanda koma, lalu samakan seluruhnya menjadi deretan kata benda (*peN-an*) atau deretan kata kerja (*meN-*).",
+      "kunci_pembeda": "Menyeragamkan kelas kata dan pola imbuhan inti pada seluruh kelompok kata yang berderet dalam rincian kalimat efektif.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Penggantian Ungkapan atau Frasa Tetap dengan Makna Pragmatis yang Sama",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Otoritas moneter harus **mengambil langkah taktis** sebelum gejolak nilai tukar memicu **efek bola salju** bagi industri dalam negeri.",
+      "bedah_pola_markdown": "**Bedah Pola Frasa Tetap & Fungsi:**\nPerhatikan konstruksi predikat dan objek dalam kalimat berikut: [S] *Otoritas moneter* + [P] *harus **mengambil langkah taktis*** + [K] *sebelum gejolak nilai tukar memicu **efek bola salju***. Ungkapan **efek bola salju** merupakan frasa tetap bermakna pragmatis *dampak berantai yang kian membesar* sesuai KBBI VI. Ungkapan tetap tidak boleh diterjemahkan secara harfiah maupun disisipi kata lain di tengahnya.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Kebijakan itu menjadi **kambing yang hitam** (*menyisipi kata*). | Kebijakan itu menjadi **kambing hitam** (*pihak yang dipersalahkan*). |\n| Perusahaan **gulung tikar** (*diartikan melipat alas duduk*). | Perusahaan **gulung tikar** (*bermakna pragmatis bangkrut*). |\n\n**Strategi Eksekusi:** Tangkap maksud keseluruhan frasa tetap berdasarkan konteks klausa sebab-akibat di sekitarnya, lalu pilih frasa pengganti formal yang mempertahankan pesan utuh tanpa mengubah nada kalimat.",
+      "kunci_pembeda": "Menjaga keutuhan struktur ungkapan tetap dan menggantinya dengan padanan frasa formal yang memiliki maksud pragmatis identik.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Pengelolaan kawasan konservasi laut memerlukan pemetaan terumbu karang, pemantauan populasi ikan, perlindungan zona inti, dan **penurunan suku bunga** secara terukur. (2) Upaya tersebut dilakukan agar ekosistem pesisir tetap lestari di tengah tekanan perubahan iklim global.\n\nKelompok kata bercetak tebal pada kalimat (1) tidak sebidang dengan deretan kelompok kata lain dalam kalimat tersebut sehingga perlu diganti menjadi ....",
+      "opsi_jawaban": [
+        "A. pengendalian pencemaran laut",
+        "B. percepatan pertumbuhan ekonomi",
+        "C. peningkatan transaksi ekspor",
+        "D. penyesuaian tarif pajak daerah",
+        "E. perluasan jaringan perbankan"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Kalimat (1) membahas pengelolaan kawasan konservasi laut dengan deretan kelompok kata benda berpola *tindakan–objek lingkungan* (*pemetaan terumbu karang*, *pemantauan populasi ikan*, *perlindungan zona inti*). Frasa **penurunan suku bunga** menyimpang karena masuk ranah kebijakan keuangan. Pengganti yang sebidang secara makna dan sejajar bentuknya adalah **pengendalian pencemaran laut** (**opsi A**). **Opsi B**, **C**, **D**, dan **E** tetap berada di luar ranah pelestarian ekosistem laut.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan dua kutipan berikut!\n\n> **Kutipan 1:** Untuk menekan angka kecelakaan lalu lintas, kementerian memperketat uji kelayakan kendaraan, memperbaiki rambu jalan, serta **pengawasan batas kecepatan** di jalan tol.\n> **Kutipan 2:** Sementara itu, otoritas penerbangan melakukan **kalibrasi instrumen** secara berkala demi menjamin keselamatan navigasi udara.\n\nManakah pernyataan yang PALING TEPAT mengenai hubungan dan bentuk kelompok kata pada kedua kutipan di atas?",
+      "opsi_jawaban": [
+        "A. Frasa *pengawasan batas kecepatan* pada Kutipan 1 harus diubah menjadi *mengawasi batas kecepatan* agar sejajar.",
+        "B. Frasa *kalibrasi instrumen* pada Kutipan 2 berpola hubungan makna *benda–bahan* yang setara dengan *rambu jalan*.",
+        "C. Frasa *uji kelayakan* pada Kutipan 1 tidak memiliki kesamaan struktur inti–penjelas dengan *navigasi udara*.",
+        "D. Seluruh rincian tindakan pada Kutipan 1 sudah berkelas kata seragam sehingga tidak memerlukan perbaikan.",
+        "E. Frasa *angka kecelakaan* pada Kutipan 1 sebidang secara makna dengan *navigasi udara* pada Kutipan 2."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Pada Kutipan 1, rincian setelah predikat diawali dua frasa kerja (*memperketat uji kelayakan*, *memperbaiki rambu jalan*), sehingga rincian ketiga wajib disejajarkan menjadi frasa kerja **mengawasi batas kecepatan** (**opsi A** benar, **opsi D** salah). **Opsi B** keliru karena *kalibrasi instrumen* berpola *tindakan–objek*. **Opsi C** salah karena keduanya berpola inti–penjelas yang identik, sedangkan **opsi E** membandingkan dua frasa yang berbeda ranah makna.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut!\n\n> \"Kenaikan harga energi global menjadi **batu sandungan** bagi pemulihan sektor manufaktur nasional. Jika tidak segera diantisipasi melalui efisiensi rantai pasok, kondisi ini berpotensi memicu **efek domino** terhadap daya beli masyarakat pada kuartal mendatang.\"\n\nFrasa pengganti yang PALING TEPAT untuk menggantikan ungkapan **batu sandungan** dan **efek domino** secara berurutan tanpa mengubah maksud paragraf adalah ....",
+      "opsi_jawaban": [
+        "A. beban anggaran; siklus bisnis",
+        "B. faktor penghambat; dampak berantai",
+        "C. pemicu krisis; kerugian finansial",
+        "D. tantangan baru; gejolak pasar",
+        "E. sumber masalah; penurunan produksi"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Dalam konteks paragraf tersebut, ungkapan tetap **batu sandungan** (KBBI VI: rintangan atau halangan) bermakna pragmatis sebagai **faktor penghambat** pemulihan industri. Sementara itu, ungkapan **efek domino** bermakna satu peristiwa yang memicu rentetan peristiwa serupa berikutnya, sehingga sepadan secara pragmatis dengan **dampak berantai** (**opsi B**). **Opsi A**, **C**, **D**, dan **E** menyempitkan atau menggeser makna asli kedua ungkapan tersebut.",
+      "visual": null
+    }
+  ]
+}

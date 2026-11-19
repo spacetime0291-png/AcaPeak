@@ -1,0 +1,137 @@
+{
+  "kode_subbab": "pk-01-01",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 1: Bilangan dan Operasi Aljabar",
+  "judul_subbab": "Sifat Bilangan (Bulat, Prima, KPK, FPB)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui $x$ adalah bilangan bulat dan $x^2$ merupakan kelipatan $4$. Apakah $x$ pasti merupakan kelipatan $4$?",
+      "opsi_cepat": [
+        "Pasti kelipatan 4",
+        "Belum tentu (bisa kelipatan 2 saja)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Jika $x = 2$, maka $x^2 = 4$ (kelipatan $4$), padahal $2$ bukan kelipatan $4$. Operasi kuadrat menggandakan pangkat setiap faktor primanya."
+    },
+    "konsep_inti_markdown": "- **Paritas:** $\\text{Ganjil} \\pm \\text{Ganjil} = \\text{Genap}$; $\\text{Genap} \\times \\text{Bulat} = \\text{Genap}$.\n- **Faktorisasi Prima:** Jika $N = p_1^{a} \\cdot p_2^{b}$, banyak faktor positif $= (a+1)(b+1)$.\n- **KPK & FPB:** $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\cdot b$.\n- **Modulo Dasar:** Sisa bagi $(a \\cdot b) \\bmod m = ((a \\bmod m)(b \\bmod m)) \\bmod m$.\n- **Desimal Berulang:** $0,\\overline{ab} = \\frac{ab}{99}$.",
+    "radar_jebakan_utbk": [
+      "Menganggap angka $1$ sebagai bilangan prima dan $0$ sebagai bilangan positif (padahal $2$ adalah prima terkecil dan $0$ bersifat netral).",
+      "Lupa menguji bilangan negatif, pecahan, atau nol pada soal Kecukupan Data dan Kuantitas P vs Q ketika syarat hanya menyebut bilangan real atau bulat."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Sifat Paritas (Ganjil-Genap) dan Tanda Positif-Negatif pada Operasi Aljabar",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Jika $a$ dan $b$ adalah bilangan bulat sehingga $3a + 4b = 25$, tentukan paritas dari $a^2 + 2b + 1$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nAnalisis paritas tiap suku pada persamaan $3a + 4b = 25$. Karena $4b = 2(2b)$ selalu bernilai genap untuk setiap $b$ bulat, dan hasil penjumlahan bernilai ganjil ($25$), maka suku $3a$ wajib ganjil. Perkalian bilangan ganjil ($3$) dengan $a$ menghasilkan ganjil hanya jika $a$ adalah bilangan ganjil. Selanjutnya, substitusikan sifat paritas $a$ ke bentuk yang ditanyakan: $a^2$ (ganjil $\\times$ ganjil = ganjil) ditambah $2b$ (selalu genap) menghasilkan bilangan ganjil. Penambahan konstanta $1$ (ganjil) mengubah hasil akhir menjadi genap.\n\n**(2) Jalur Taktis UTBK**\nGunakan substitusi angka bulat paling sederhana yang memenuhi persamaan awal. Pilih $b = 1$, maka $3a + 4(1) = 25 \\Rightarrow 3a = 21 \\Rightarrow a = 7$ (terbukti $a$ ganjil). Langsung masukkan $a = 7$ dan $b = 1$ ke target: $7^2 + 2(1) + 1 = 49 + 2 + 1 = 52$, yang merupakan bilangan **genap**.",
+      "kunci_pembeda": "Fokus pada koefisien genap yang otomatis menetralkan paritas variabelnya, lalu uji dengan bilangan bulat terkecil.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Keterbagian (Divisibility Rules), Sisa Pembagian (Modulo Dasar), dan Digit Satuan Berpola",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan digit satuan dari hasil penjumlahan $3^{2026} + 7^{2025}$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nDigit satuan suatu bilangan bulat identik dengan sisa pembagian bilangan tersebut terhadap $10$ (modulo $10$). Perhatikan pola siklus digit satuan perpangkatan basis $3$: $3^1=3$, $3^2=9$, $3^3=27$ (satuan $7$), $3^4=81$ (satuan $1$), dan berulang setiap $4$ pangkat. Pola siklus basis $7$ juga memiliki periode $4$, yakni $7, 9, 3, 1$. Bagi masing-masing pangkat dengan $4$: $2026 = 4(506) + 2$ bersisa $2$, sehingga satuan $3^{2026}$ sama dengan $3^2 = 9$. Sementara $2025 = 4(506) + 1$ bersisa $1$, sehingga satuan $7^{2025}$ sama dengan $7^1 = 7$. Jumlahkan satuannya: $9 + 7 = 16$, berakhiran digit $6$.\n\n**(2) Jalur Taktis UTBK**\nUntuk pembagi $4$, cukup cek **dua digit terakhir** pangkatnya saja. Pangkat $26 \\div 4$ sisa $2 \\rightarrow 3^2 = 9$; pangkat $25 \\div 4$ sisa $1 \\rightarrow 7^1 = 7$. Jumlahkan langsung $9 + 7 = 16$, ambil digit terakhir yaitu **6**.",
+      "kunci_pembeda": "Gunakan aturan keterbagian $4$ (cek 2 digit akhir) untuk menentukan posisi sisa pada siklus digit satuan berperiode $4$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Sifat Bilangan Prima, Faktorisasi Prima, dan Banyaknya Faktor Positif Suatu Bilangan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Berapa banyak faktor positif dari bilangan $360$ yang merupakan kelipatan $6$?",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUraikan $360$ ke dalam bentuk faktorisasi prima menggunakan pohon faktor: $360 = 36 \\times 10 = (2^2 \\times 3^2) \\times (2 \\times 5) = 2^3 \\times 3^2 \\times 5^1$. Setiap faktor positif dari $360$ memiliki bentuk umum $2^a \\times 3^b \\times 5^c$ dengan $0 \\le a \\le 3$, $0 \\le b \\le 2$, dan $0 \\le c \\le 1$. Agar faktor tersebut merupakan kelipatan $6 = 2^1 \\times 3^1$, nilai pangkat minimal untuk basis $2$ dan $3$ wajib bernilai $1$. Dengan demikian, pilihan nilai $a \\in \\{1, 2, 3\\}$ ($3$ cara), $b \\in \\{1, 2\\}$ ($2$ cara), dan $c \\in \\{0, 1\\}$ ($2$ cara). Total faktor kelipatan $6$ adalah $3 \\times 2 \\times 2 = 12$.\n\n**(2) Jalur Taktis UTBK**\nBagi langsung bilangan target dengan syarat kelipatannya: $360 \\div 6 = 60$. Cari banyaknya faktor positif dari hasil baginya: $60 = 2^2 \\times 3^1 \\times 5^1$. Kalikan seluruh (pangkat $+ 1$): $(2+1)(1+1)(1+1) = 3 \\times 2 \\times 2 = \\mathbf{12}$.",
+      "kunci_pembeda": "Untuk menghitung banyak faktor kelipatan $k$, bagi bilangan awal dengan $k$ terlebih dahulu lalu hitung total faktor hasil baginya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Hubungan KPK, FPB, dan Hasil Kali Dua Bilangan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dua bilangan asli $x$ dan $y$ memiliki $\\text{FPB}(x,y) = 12$ dan $\\text{KPK}(x,y) = 180$. Jika selisih kedua bilangan adalah $24$, tentukan nilai $x + y$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nMisalkan $x = 12a$ dan $y = 12b$ dengan $a$ dan $b$ adalah bilangan asli yang saling prima ($\\text{FPB}(a,b) = 1$). Berdasarkan identitas dasar $\\text{KPK}(x,y) \\times \\text{FPB}(x,y) = x \\cdot y$, diperoleh $180 \\times 12 = (12a)(12b)$, sehingga $a \\cdot b = \\frac{180}{12} = 15$. Pasangan bilangan asli saling prima yang hasil kalinya $15$ adalah $(1, 15)$ dan $(3, 5)$. Syarat tambahan menyatakan $|x - y| = 24 \\Rightarrow 12|a - b| = 24 \\Rightarrow |a - b| = 2$. Pasangan yang memenuhi selisih $2$ adalah $a = 5$ dan $b = 3$, sehingga $x = 60$ dan $y = 36$, lalu $x + y = 96$.\n\n**(2) Jalur Taktis UTBK**\nBagi KPK dan selisih langsung dengan FPB: $a \\cdot b = 180 \\div 12 = 15$ dan $|a - b| = 24 \\div 12 = 2$. Tebak dua faktor $15$ berselisih $2$, yaitu $5$ dan $3$. Kalikan jumlahnya dengan FPB: $(5 + 3) \\times 12 = \\mathbf{96}$.",
+      "kunci_pembeda": "Selalu nyatakan kedua bilangan sebagai kelipatan FPB ($x = d \\cdot a, y = d \\cdot b$) dengan syarat $a$ dan $b$ saling prima.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Operasi Pecahan, Bilangan Desimal Berulang, dan Urutan Garis Bilangan Real",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Urutkan bilangan berikut dari yang terkecil hingga terbesar: $p = 0,\\overline{45}$, $q = \\frac{4}{9}$, dan $r = \\frac{5}{11}$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUbah desimal berulang $p = 0,454545\\dots$ menjadi pecahan biasa dengan memisalkan $100p = 45,4545\\dots$ lalu kurangkan dengan $p = 0,4545\\dots$ sehingga $99p = 45 \\Rightarrow p = \\frac{45}{99} = \\frac{5}{11}$. Terlihat bahwa nilai $p$ sama persis dengan $r = \\frac{5}{11}$. Selanjutnya, bandingkan $q = \\frac{4}{9}$ dengan $\\frac{5}{11}$ dengan menyamakan penyebut ke $99$: diperoleh $q = \\frac{44}{99}$ dan $p = r = \\frac{45}{99}$. Karena $44 < 45$, maka urutan dari terkecil adalah $q < p = r$.\n\n**(2) Jalur Taktis UTBK**\nIngat pola cepat: setiap blok $n$ digit berulang setelah koma sama dengan bilangan tersebut dibagi angka $9$ sebanyak $n$ kali. Maka $0,\\overline{45} = \\frac{45}{99} = \\frac{5}{11} = r$. Untuk membandingkan $\\frac{4}{9}$ vs $\\frac{5}{11}$, lakukan **kali silang ke atas**: $4 \\times 11 = 44$ (kiri) vs $5 \\times 9 = 45$ (kanan). Jadi **q < p = r**.",
+      "kunci_pembeda": "Konversi desimal berulang berperiode $n$ digit menjadi pecahan berpenyebut $99\\dots9$ ($n$ digit), lalu gunakan kali silang untuk mengurutkan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 6,
+      "nama_variasi": "Bilangan Berurutan (Consecutive Integers) dan Representasi Digit Bilangan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Sebuah bilangan dua digit memiliki jumlah digit sama dengan $11$. Jika posisi kedua digitnya ditukar, bilangan baru bernilai $27$ lebih besar dari bilangan semula. Tentukan bilangan semula.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nMisalkan bilangan dua digit semula adalah $\\overline{ab} = 10a + b$ dengan $a$ digit puluhan dan $b$ digit satuan. Diketahui $a + b = 11$ (persamaan 1). Setelah digit ditukar, bilangan baru menjadi $\\overline{ba} = 10b + a$. Berdasarkan selisih nilai: $(10b + a) - (10a + b) = 27 \\Rightarrow 9b - 9a = 27 \\Rightarrow b - a = 3$ (persamaan 2). Eliminasi kedua persamaan dengan menjumlahkannya: $(a + b) + (b - a) = 11 + 3 \\Rightarrow 2b = 14 \\Rightarrow b = 7$. Substitusikan $b = 7$ ke persamaan pertama menghasilkan $a = 4$, sehingga bilangan semula adalah $47$.\n\n**(2) Jalur Taktis UTBK**\nSelisih bilangan dua digit dengan kebalikannya selalu kelipatan $9$, dengan rumus cepat $|b - a| = \\text{Selisih} \\div 9$. Di sini $b - a = 27 \\div 9 = 3$ (karena bilangan baru lebih besar, maka $b > a$). Pasangan digit berjumlah $11$ dan berselisih $3$ adalah $4$ dan $7$, sehingga bilangan semula **47**.",
+      "kunci_pembeda": "Selalu nyatakan bilangan dua digit sebagai $10a + b$ (bukan $a \\cdot b$) dan manfaatkan sifat selisih pembalikan digit yang selalu habis dibagi $9$.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Kecukupan Data",
+      "pertanyaan_markdown": "Diketahui $p$ dan $q$ adalah bilangan prima. Apakah $p + q$ merupakan bilangan ganjil?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut.\n(1) $p \\cdot q$ adalah bilangan genap.\n(2) $p < q$.",
+      "opsi_jawaban": [
+        "A. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.",
+        "B. Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.",
+        "C. DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.",
+        "D. Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.",
+        "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Satu-satunya bilangan prima genap adalah $2$.\n- **Cek (1):** $p \\cdot q$ genap artinya minimal satu variabel bernilai $2$. Jika $p=2, q=2$, maka $p+q=4$ (genap). Jika $p=2, q=3$, maka $p+q=5$ (ganjil). Tidak cukup.\n- **Cek (2):** Jika $p=2, q=3$, hasil ganjil; jika $p=3, q=5$, hasil genap. Tidak cukup.\n- **Gabungan (1) & (2):** Karena $2$ prima terkecil dan $p < q$, wajib $p=2$ dan $q$ prima ganjil, sehingga $p+q$ **pasti ganjil**. Jawaban **C**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        4,
+        5
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Dua bilangan asli $m$ dan $n$ memenuhi $\\text{FPB}(m, n) = 6$ dan $\\text{KPK}(m, n) = 72$. Berdasarkan informasi yang diberikan, manakah hubungan antara kuantitas $P$ dan $Q$ berikut yang benar?\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| Nilai minimum dari $m + n$ | $45$ |",
+      "opsi_jawaban": [
+        "A. Kuantitas $P$ lebih besar daripada $Q$",
+        "B. Kuantitas $P$ lebih kecil daripada $Q$",
+        "C. Kuantitas $P$ sama dengan $Q$",
+        "D. Tidak dapat ditentukan hubungan antara kuantitas $P$ dan $Q$",
+        "E. Informasi yang diberikan tidak cukup untuk membandingkan $P$ dan $Q$"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Misalkan $m = 6a$ dan $n = 6b$ dengan syarat $a$ dan $b$ saling prima ($\\text{FPB}(a,b) = 1$). Gunakan identitas $m \\cdot n = \\text{FPB} \\times \\text{KPK}$:\n$$36ab = 6 \\times 72 \\Rightarrow ab = 12$$\nPasangan faktor $12$ yang saling prima hanyalah $(1, 12)$ dan $(3, 4)$ (pasangan $(2, 6)$ gugur karena FPB-nya $2$). Nilai minimum $m + n$ diperoleh dari $(3, 4)$, yaitu $P = 6(3 + 4) = 42$. Karena $42 < 45$, maka $P < Q$. Opsi A salah karena memakai faktor tidak saling prima. Jawaban **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        6
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Sebuah bilangan bulat positif dua digit $\\overline{ab}$ bersisa $3$ jika dibagi $5$, dan bersisa $2$ jika dibagi $7$. Jika nilai $a + b$ adalah yang terbesar yang mungkin, berapakah nilai dari bilangan $\\overline{ab}$ tersebut?",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "58",
+      "bedah_cepat_markdown": "Bilangan bersisa $3$ saat dibagi $5$ pasti berdigit satuan $3$ atau $8$. Cari bilangan kelipatan $7$ ditambah $2$ (yaitu $9, 16, 23, 30, 37, 44, 51, 58, 65, 72, 79, 86, 93$) yang berakhiran $3$ atau $8$. Diperoleh tiga kandidat dua digit: $23$, $58$, dan $93$. Hitung jumlah digit ($a + b$) masing-masing: $2+3=5$, $5+8=13$, dan $9+3=12$. Nilai $a + b$ terbesar ($13$) dicapai oleh bilangan **58**.",
+      "visual": null
+    }
+  ]
+}

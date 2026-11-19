@@ -1,0 +1,117 @@
+{
+  "kode_subbab": "pm-02-04",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 2: Pemodelan Aljabar dan Fungsi",
+  "judul_subbab": "Barisan dan Pertumbuhan/Peluruhan Eksponensial",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Bola dijatuhkan dari ketinggian 8 meter dan memantul kembali 3/4 kali tinggi sebelumnya hingga berhenti. Apakah total panjang lintasannya 32 meter?",
+      "opsi_cepat": [
+        "Ya, langsung pakai rumus S tak hingga = 8 / (1 - 3/4) = 32 m",
+        "Salah, lintasan pantulan terjadi dua kali (naik dan turun) sehingga 56 m"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Lintasan jatuh awal terjadi satu kali (8 m), sedangkan setiap pantulan berikutnya menempuh jarak naik dan turun yang sama sehingga total lintasan = 2(32) - 8 = 56 meter."
+    },
+    "konsep_inti_markdown": "Pemodelan perubahan kuantitas terbagi menjadi pola aditif (selisih tetap) dan multiplikatif (rasio tetap).\n\n- **Aritmetika (Beda $b$ konstan):** $U_n = a + (n-1)b$ dan $S_n = \\frac{n}{2}(2a + (n-1)b)$.\n- **Geometri (Rasio $r$ konstan):** $U_n = a \\cdot r^{n-1}$, $S_n = \\frac{a(r^n - 1)}{r - 1}$, dan $S_\\infty = \\frac{a}{1 - r}$ untuk $|r| < 1$.\n- **Pertumbuhan & Peluruhan:** $N(t) = N_0 \\cdot (1 \\pm p)^{\\frac{t}{T}}$ atau $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$ dengan $T$ periode waktu.",
+    "radar_jebakan_utbk": [
+      "Lupa mengalikan 2 atau mengurangi tinggi awal ($h_0$) pada lintasan bola memantul: rumus cepat $S_{\\text{total}} = h_0 \\cdot \\frac{q + p}{q - p}$ untuk rasio $\\frac{p}{q}$, bukan sekadar $\\frac{h_0}{1 - r}$.",
+      "Salah menghitung pangkat siklus waktu ($\\frac{t}{T}$): bakteri membelah tiap 3 jam selama 18 jam berarti terjadi $\\frac{18}{3} = 6$ kali pembelahan, bukan 18 kali."
+    ],
+    "stimulus_utama_bersama": "Pusat Riset Bio-Energi dan Edukasi Sains Nusantara mengoperasikan fasilitas terpadu dengan spesifikasi teknis berikut:\n1. **Auditorium & Gudang Logistik:** Ruang kuliah umum memiliki 15 baris kursi dengan 20 kursi pada baris terdepan, dan setiap baris berikutnya bertambah 4 kursi. Di gudang pipa, pipa saluran air ditumpuk secara horizontal dengan 18 pipa pada lapisan paling bawah, berkurang 2 pipa pada setiap lapisan di atasnya hingga tersusun 6 lapisan.\n2. **Laboratorium Uji Material:** Pengujian koefisien restitusi dilakukan dengan menjatuhkan bola polimer dari ketinggian 8 meter di atas lantai datar. Bola memantul vertikal dan mencapai ketinggian $\\frac{3}{4}$ dari ketinggian sebelumnya secara berulang hingga berhenti.\n3. **Unit Bioreaktor Mikroalga:** Tangki kultur diisi larutan starter berisi 500 sel mikroalga per mililiter. Pada suhu optimal, populasi mikroalga membelah menjadi dua kali lipat setiap 3 jam.\n4. **Unit Pelacak Isotop:** Untuk memetakan laju serapan nutrisi, disuntikkan isotop pelacak bermassa awal 160 miligram yang meluruh dengan waktu paruh selama 6 jam.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Barisan Aritmetika Kontekstual",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian 1 stimulus utama: susunan kursi auditorium (baris pertama 20 kursi, beda +4, total 15 baris) serta tumpukan pipa logistik (lapisan bawah 18 pipa, beda -2, total 6 lapisan).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nIdentifikasi apakah pertanyaan menanyakan kapasitas posisi tertentu ($U_n$) atau total keseluruhan ($S_n$). Pada auditorium, suku awal $a = 20$, beda $b = 4$, dan banyak suku $n = 15$. Pada tumpukan pipa, $a = 18$, $b = -2$ (berkurang ke atas), dan $n = 6$.\n\n**2. Model Matematika (Employing)**\nGunakan $U_n = a + (n-1)b$ untuk isi baris ke-$n$, dan $S_n = \\frac{n}{2}(2a + (n-1)b)$ untuk total kapasitas.\n- Kursi baris ke-15: $U_{15} = 20 + 14(4) = 76$ kursi.\n- Total kursi: $S_{15} = \\frac{15}{2}(20 + 76) = 720$ kursi.\n- Total pipa: $S_6 = \\frac{6}{2}(2(18) + 5(-2)) = 3(26) = 78$ pipa.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nPeriksa syarat batas fisik: pada tumpukan pipa, lapisan teratas ($U_6 = 18 + 5(-2) = 8$) wajib bernilai bulat positif agar susunan logis dan stabil.",
+      "kunci_pembeda": "Gunakan model aritmetika jika selisih antarsuku berupa penjumlahan atau pengurangan bilangan konstan ($b$), bukan persentase atau kelipatan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Barisan Geometri & Deret Tak Hingga Kontekstual",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian 2 stimulus utama: bola polimer dijatuhkan dari ketinggian awal $h_0 = 8$ meter dengan rasio pantulan $r = \\frac{3}{4}$ hingga berhenti.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPisahkan gerakan jatuh pertama ($h_0 = 8$ m) yang terjadi satu kali dari gerakan pantulan berikutnya. Setiap pantulan ke-$k$ menghasilkan lintasan naik setinggi $h_k = 8 \\cdot (\\frac{3}{4})^k$ dan lintasan turun dengan panjang identik hingga bola berhenti ($n \\rightarrow \\infty$).\n\n**2. Model Matematika (Employing)**\nDeret pantulan memiliki suku awal $a = h_1 = 8 \\times \\frac{3}{4} = 6$ m dan rasio $r = \\frac{3}{4}$. Karena setiap pantulan terjadi naik-turun, total lintasan adalah:\n$$S_{\\text{total}} = h_0 + 2 \\cdot S_\\infty = 8 + 2\\left(\\frac{6}{1 - \\frac{3}{4}}\\right) = 8 + 2(24) = 56\\text{ meter}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nGunakan rumus cepat rasio $r = \\frac{p}{q}$ yaitu $S_{\\text{total}} = h_0 \\cdot \\frac{q + p}{q - p} = 8 \\cdot \\frac{4 + 3}{4 - 3} = 56$ m. Jika dihitung sejak pantulan pertama, kurangi $h_0$ sehingga menjadi $48$ m.",
+      "kunci_pembeda": "Pada bola memantul vertikal, hitung lintasan naik-turun dua kali lipat dari deret tak hingga pantulan, lalu tambahkan tinggi jatuh awal.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pertumbuhan Eksponensial dengan Periode Waktu Tertentu",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian 3 stimulus utama: populasi awal $N_0 = 500$ sel mikroalga/mL membelah menjadi $k = 2$ kali lipat setiap periode $T = 3$ jam.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTentukan populasi awal ($N_0 = 500$), faktor pengali pertumbuhan ($k = 2$, atau $1 + p$ jika diketahui persentase kenaikan $p$), periode waktu satu kali pembelahan ($T = 3$ jam), serta total durasi pengamatan ($t$). Banyak siklus pertumbuhan adalah $n = \\frac{t}{T}$.\n\n**2. Model Matematika (Employing)**\nGunakan fungsi eksponensial $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$. Jika diamati selama $t = 15$ jam, terjadi $n = \\frac{15}{3} = 5$ kali pembelahan:\n$$N(15) = 500 \\cdot 2^{\\frac{15}{3}} = 500 \\cdot 2^5 = 500 \\times 32 = 16.000\\text{ sel/mL}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nBedakan apakah soal menanyakan *jumlah akhir* ($N(t)$) atau *pertambahan populasi* ($\\Delta N = N(t) - N_0 = 15.500$ sel/mL). Jika $t$ bukan kelipatan $T$, pertahankan bentuk pangkat rasional atau gunakan nilai pendekatan yang disediakan.",
+      "kunci_pembeda": "Berbeda dengan suku ke-$n$ barisan geometri yang berpangkat $n-1$, pertumbuhan eksponensial berbasis waktu menggunakan pangkat penuh $\\frac{t}{T}$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Peluruhan Eksponensial",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk bagian 4 stimulus utama: massa awal isotop pelacak $M_0 = 160$ mg dengan waktu paruh $T_{1/2} = 6$ jam.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nIdentifikasi massa awal zat ($M_0 = 160$ mg), waktu paruh ($T_{1/2} = 6$ jam, artinya massa tersisa $\\frac{1}{2}$ kali semula tiap 6 jam), serta durasi peluruhan ($t$). Jika dinyatakan dalam persentase penyusutan $p\\%$, rasio sisa menjadi $(1 - p\\%)$.\n\n**2. Model Matematika (Employing)**\nRumus sisa massa setelah $t$ jam adalah $M(t) = M_0 \\cdot \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$. Setelah $t = 24$ jam, terjadi $\\frac{24}{6} = 4$ kali periode paruh:\n$$M(24) = 160 \\cdot \\left(\\frac{1}{2}\\right)^4 = \\frac{160}{16} = 10\\text{ mg}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nBedakan secara teliti antara **massa tersisa** ($10$ mg) dan **massa yang telah meluruh** ($160 - 10 = 150$ mg). Dalam konteks medis atau lingkungan, evaluasi apakah sisa konsentrasi sudah berada di bawah ambang batas aman yang ditetapkan.",
+      "kunci_pembeda": "Peluruhan selalu memiliki rasio sisa antara $0$ dan $1$ (seperti $\\frac{1}{2}$ pada waktu paruh atau $1 - p$ pada penyusutan persen).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan data Auditorium & Gudang Logistik, panitia seminar hanya membuka 10 baris kursi terdepan untuk peserta dan menyisakan 5 baris terakhir untuk staf teknis. Selisih kapasitas kursi antara area peserta dan area staf teknis adalah ....",
+      "opsi_jawaban": [
+        "A. 20 kursi",
+        "B. 40 kursi",
+        "C. 60 kursi",
+        "D. 340 kursi",
+        "E. 380 kursi"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kapasitas area peserta mencakup 10 baris pertama ($a = 20, b = 4$):\n$$S_{10} = \\frac{10}{2}(2(20) + 9(4)) = 5(76) = 380\\text{ kursi}$$\n\nKapasitas 5 baris terakhir (baris ke-11 hingga ke-15, dengan $U_{11} = 60$ dan $U_{15} = 76$):\n$$S_{\\text{staf}} = \\frac{5}{2}(60 + 76) = 340\\text{ kursi}$$\n\nSelisih kapasitasnya adalah $380 - 340 = 40$ kursi. Opsi A keliru karena hanya mengalikan $5 \\times 4$, sedangkan D dan E merupakan kapasitas masing-masing area.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Pada pengujian di Laboratorium Uji Material, sensor gerak baru diaktifkan tepat saat bola polimer menyentuh lantai pada pantulan pertama dan memantau gerakan bola hingga berhenti total. Total panjang lintasan yang direkam oleh sensor tersebut adalah ... meter. *(Tuliskan jawaban dalam bilangan bulat saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "48",
+      "bedah_cepat_markdown": "Karena sensor aktif tepat saat tumbukan pertama di lantai, lintasan jatuh awal sepanjang $8$ meter tidak ikut terhitung. Tinggi pantulan pertama adalah $h_1 = 8 \\times \\frac{3}{4} = 6$ meter dengan rasio $r = \\frac{3}{4}$. Setiap pantulan menempuh jarak naik dan turun yang sama sehingga:\n$$S_{\\text{sensor}} = 2 \\cdot \\frac{h_1}{1 - r} = 2 \\left(\\frac{6}{1 - \\frac{3}{4}}\\right) = 2(24) = 48\\text{ meter}$$",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Unit Bioreaktor Mikroalga dan Unit Pelacak Isotop dijalankan bersamaan pada pukul $06.00$ WIB menggunakan sampel standar sesuai spesifikasi fasilitas. Diberikan empat pernyataan kondisi pada pukul $24.00$ WIB di hari yang sama:\n\n(1) Konsentrasi mikroalga mencapai $32.000$ sel per mililiter.\n(2) Pertambahan populasi mikroalga sejak awal pengamatan adalah $31.500$ sel per mililiter.\n(3) Massa isotop pelacak yang tersisa di dalam tangki adalah $20$ miligram.\n(4) Massa isotop pelacak yang telah meluruh sebesar $20$ miligram.\n\nPernyataan yang benar adalah ....",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pernyataan benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Durasi pengamatan pukul $06.00$–$24.00$ WIB adalah $t = 18$ jam.\n- **Mikroalga ($T = 3$ jam):** Terjadi $\\frac{18}{3} = 6$ kali pembelahan sehingga $N(18) = 500 \\cdot 2^6 = 32.000$ sel/mL **(1 Benar)**, dengan pertambahan $32.000 - 500 = 31.500$ sel/mL **(2 Benar)**.\n- **Isotop ($T_{1/2} = 6$ jam):** Terjadi $\\frac{18}{6} = 3$ kali paruh sehingga sisa massa $M(18) = 160 \\cdot (\\frac{1}{2})^3 = 20$ mg **(3 Benar)**.\n\nPernyataan **(4) Salah** karena $20$ mg adalah massa tersisa, sedangkan massa meluruh $160 - 20 = 140$ mg.",
+      "visual": null
+    }
+  ]
+}

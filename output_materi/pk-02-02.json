@@ -1,0 +1,126 @@
+{
+  "kode_subbab": "pk-02-02",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 2: Fungsi dan Barisan",
+  "judul_subbab": "Fungsi Komposisi dan Invers",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Diketahui $f(x) = 2x + 1$ dan $g(x) = x - 3$. Banyak peserta UTBK menghitung $(f \\circ g)^{-1}(5)$ dengan menyusun $(f^{-1} \\circ g^{-1})(5)$. Apakah langkah ini tepat?",
+      "opsi_cepat": [
+        "Tepat, urutan invers mengikuti urutan komposisi",
+        "Keliru, urutan fungsi invers harus dibalik"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Sifat komposisi invers membalik urutan fungsi: $(f \\circ g)^{-1}(x) = (g^{-1} \\circ f^{-1})(x)$. Ibarat memakai kaus kaki lalu sepatu, melepasnya harus sepatu dahulu baru kaus kaki."
+    },
+    "konsep_inti_markdown": "- **Komposisi Fungsi:** $(f \\circ g)(x) = f(g(x))$ (kerjakan fungsi dalam $g(x)$ terlebih dahulu).\n- **Definisi Invers:** $f(a) = b \\iff f^{-1}(b) = a$ (domain $f$ menjadi daerah hasil $f^{-1}$).\n- **Invers Rasional Linear:** Jika $f(x) = \\frac{ax+b}{cx+d}$, maka $f^{-1}(x) = \\frac{-dx+b}{cx-a}$ ($x \\neq \\frac{a}{c}$).\n- **Sifat Komposisi Invers:** $(f \\circ g)^{-1}(x) = (g^{-1} \\circ f^{-1})(x)$ (urutan dibalik).",
+    "radar_jebakan_utbk": [
+      "Lupa membalik urutan saat menginverskan komposisi: menulis $(f \\circ g)^{-1} = f^{-1} \\circ g^{-1}$ padahal seharusnya $g^{-1} \\circ f^{-1}$.",
+      "Salah memilih tanda akar ($+$ atau $-$) saat menginverskan fungsi kuadrat karena mengabaikan syarat domain $x$."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Evaluasi Nilai $(f \\circ g)(a)$ dan $(g \\circ f)^{-1}(a)$ dari Rumus, Tabel, atau Grafik",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui pasangan nilai fungsi berikut: $f(1)=3, f(2)=5, f(3)=4$ dan $g(2)=1, g(4)=2, g(5)=3$. Tentukan nilai dari $(f \\circ g)(4) + (g \\circ f)^{-1}(3)$.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nUntuk $(f \\circ g)(4)$, substitusikan dari dalam ke luar: cari $g(4) = 2$, lalu hitung $f(2) = 5$. Untuk $(g \\circ f)^{-1}(3)$, misalkan $(g \\circ f)^{-1}(3) = k$, sehingga berlaku $(g \\circ f)(k) = 3$ atau $g(f(k)) = 3$. Lihat nilai $g$ yang menghasilkan $3$, yaitu $g(5) = 3$, maka $f(k) = 5$. Selanjutnya, cari nilai $k$ pada data $f$ yang menghasilkan $5$, diperoleh $f(2) = 5$ sehingga $k = 2$. Jadi, hasil penjumlahannya adalah $5 + 2 = 7$.\n\n**Jalur Taktis UTBK**\nJangan pernah mencari rumus aljabar $f(x)$ atau $g(x)$ dari tabel maupun grafik! Gunakan alur panah mundur untuk invers: mulai dari output akhir $3$ di $g$, tarik mundur ke input $g$ ($5$), lalu tarik mundur ke input $f$ ($2$). Proses pembacaan langsung ini selesai dalam 20 detik tanpa coretan aljabar panjang.",
+      "kunci_pembeda": "Evaluasi komposisi bergerak maju dari fungsi dalam ke luar, sedangkan evaluasi invers komposisi bergerak mundur dari output akhir menuju input awal.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Menentukan Fungsi $f(x)$ jika Diketahui $(f \\circ g)(x)$ dan $g(x)$ (atau Sebaliknya)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui $(f \\circ g)(x) = 4x^2 - 6x + 5$ dan $g(x) = 2x - 1$. Tentukan rumus fungsi $f(x)$.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nGunakan pemisalan variabel baru. Karena $f(g(x)) = 4x^2 - 6x + 5$, misalkan $u = g(x) = 2x - 1$, sehingga $x = \\frac{u + 1}{2}$. Substitusikan $x$ ke ruas kanan: $f(u) = 4\\left(\\frac{u + 1}{2}\\right)^2 - 6\\left(\\frac{u + 1}{2}\\right) + 5 = (u^2 + 2u + 1) - (3u + 3) + 5 = u^2 - u + 3$. Ganti kembali $u$ menjadi $x$, diperoleh $f(x) = x^2 - x + 3$. Jika $f(x)$ diketahui dan $g(x)$ dicari, langsung substitusikan $g(x)$ ke rumus $f$ lalu selesaikan secara aljabar.\n\n**Jalur Taktis UTBK**\nPada soal pilihan ganda, hindari penjabaran kuadrat pecahan yang rawan salah tanda! Cukup uji satu angka mudah, misal $x = 1$. Hitung $g(1) = 2(1) - 1 = 1$, maka $f(g(1)) = f(1) = 4(1)^2 - 6(1) + 5 = 3$. Langsung masukkan $x = 1$ ke kelima opsi jawaban dan pilih opsi yang menghasilkan nilai $3$.",
+      "kunci_pembeda": "Jika fungsi luar $f$ ditanya, gunakan invers fungsi dalam $g^{-1}(x)$ sebagai substitusi; jika fungsi dalam $g$ ditanya, cukup substitusi langsung ke rumus $f$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Invers Fungsi Rasional Linear $f(x) = \\frac{ax+b}{cx+d}$ dan Fungsi Kuadrat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui $f(x) = \\frac{3x - 4}{2x + 5}$ untuk $x \\neq -\\frac{5}{2}$ dan $g(x) = x^2 - 4x + 7$ untuk $x \\ge 2$. Tentukan $f^{-1}(x)$ dan $g^{-1}(x)$.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nUntuk fungsi rasional linear $y = \\frac{3x - 4}{2x + 5}$, kalikan silang menjadi $2xy + 5y = 3x - 4$, kumpulkan suku bervariabel $x$ ke satu ruas: $x(2y - 3) = -5y - 4$, sehingga diperoleh $f^{-1}(x) = \\frac{-5x - 4}{2x - 3}$. Untuk fungsi kuadrat $y = x^2 - 4x + 7$, ubah menjadi bentuk kuadrat sempurna: $y = (x - 2)^2 + 3$, maka $(x - 2)^2 = y - 3$. Karena syarat domain $x \\ge 2$ ($x - 2 \\ge 0$), ambil akar positif sehingga $g^{-1}(x) = 2 + \\sqrt{x - 3}$.\n\n**Jalur Taktis UTBK**\nUntuk rasional linear $f(x) = \\frac{ax+b}{cx+d}$, tukar posisi serta ubah tanda koefisien $a$ dan $d$ secara langsung menjadi $f^{-1}(x) = \\frac{-dx+b}{cx-a}$. Untuk invers kuadrat, cek syarat domain $x$: jika $x \\ge x_{\\text{puncak}}$ gunakan tanda $+$ di depan akar, sedangkan jika $x \\le x_{\\text{puncak}}$ gunakan tanda $-$.",
+      "kunci_pembeda": "Invers rasional linear cukup menukar dan menegatifkan diagonal utama ($a$ dan $d$), sedangkan invers kuadrat wajib menyesuaikan tanda akar dengan domain $x$.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Sifat Komposisi Invers $(f \\circ g)^{-1}(x) = (g^{-1} \\circ f^{-1})(x)$ dan $f(a) = b \\iff f^{-1}(b) = a$",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui $f(2x - 1) = \\frac{3x + 2}{x - 4}$ untuk $x \\neq 4$ dan $g(x) = x + 3$. Tentukan nilai dari $(f \\circ g)^{-1}(5)$.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nUbah $f(2x - 1)$ menjadi $f(x)$ dengan memisalkan $u = 2x - 1 \\implies x = \\frac{u+1}{2}$, sehingga $f(u) = \\frac{3(\\frac{u+1}{2}) + 2}{\\frac{u+1}{2} - 4} = \\frac{3u + 7}{u - 7}$. Selanjutnya, cari $f^{-1}(x) = \\frac{7x + 7}{x - 3}$ dan $g^{-1}(x) = x - 3$. Gunakan sifat $(f \\circ g)^{-1}(5) = g^{-1}(f^{-1}(5))$. Hitung $f^{-1}(5) = \\frac{7(5) + 7}{5 - 3} = \\frac{42}{2} = 21$, lalu masukkan ke $g^{-1}(21) = 21 - 3 = 18$.\n\n**Jalur Taktis UTBK**\nJangan pernah mencari rumus $f(x)$ maupun $f^{-1}(x)$! Gunakan sifat $f(a) = b \\iff f^{-1}(b) = a$. Kita butuh nilai $f^{-1}(5) = a$, artinya $f(a) = 5$. Samakan pecahan pada soal dengan $5$: $\\frac{3x + 2}{x - 4} = 5 \\implies 3x + 2 = 5x - 20 \\implies x = 11$. Maka $a = 2(11) - 1 = 21$. Terakhir, $g^{-1}(21) = 21 - 3 = 18$.",
+      "kunci_pembeda": "Jika nilai numerik $f^{-1}(k)$ yang diminta, samakan langsung persamaan $f(\\text{input}) = k$ tanpa mencari rumus aljabar inversnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Komposisi Fungsi Berulang $f^{(n)}(x) = (f \\circ f \\circ \\dots \\circ f)(x)$ yang Membentuk Pola Siklik",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Diketahui $f(x) = \\frac{x - 1}{x + 1}$ untuk $x \\neq -1$. Jika $f^{(n)}(x)$ menyatakan komposisi fungsi $f$ sebanyak $n$ kali, tentukan nilai $f^{(2026)}(3)$.",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nHitung komposisi berulang satu per satu hingga kembali ke bentuk $x$. Diketahui $f^{(1)}(x) = \\frac{x - 1}{x + 1}$. Substitusikan lagi: $f^{(2)}(x) = f(f(x)) = \\frac{\\frac{x-1}{x+1} - 1}{\\frac{x-1}{x+1} + 1} = \\frac{-2}{2x} = -\\frac{1}{x}$. Lanjutkan sekali lagi: $f^{(3)}(x) = f(-\\frac{1}{x}) = \\frac{-\\frac{1}{x} - 1}{-\\frac{1}{x} + 1} = \\frac{-1 - x}{-1 + x} = \\frac{x + 1}{1 - x}$. Pada iterasi keempat, $f^{(4)}(x) = f(\\frac{x+1}{1-x}) = x$. Terbukti fungsi berulang setiap periode $4$.\n\n**Jalur Taktis UTBK**\nJangan turunkan rumus aljabar $f^{(n)}(x)$! Langsung masukkan angka $x = 3$ secara berantai: $f^{(1)}(3) = \\frac{2}{4} = \\frac{1}{2}$, lalu $f^{(2)}(3) = f(\\frac{1}{2}) = \\frac{-1/2}{3/2} = -\\frac{1}{3}$, lanjut $f^{(3)}(3) = f(-\\frac{1}{3}) = \\frac{-4/3}{2/3} = -2$, dan $f^{(4)}(3) = f(-2) = \\frac{-3}{-1} = 3$. Periode sikliknya adalah $4$. Bagi $2026$ dengan $4$ bersisa $2$, sehingga $f^{(2026)}(3) = f^{(2)}(3) = -\\frac{1}{3}$.",
+      "kunci_pembeda": "Evaluasi komposisi berulang dengan angka awal langsung jauh lebih cepat menemukan periode siklik daripada manipulasi aljabar variabel $x$.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Diketahui fungsi $f(x) = \\frac{2x + 1}{x - 3}$ untuk $x \\neq 3$ dan $g(x) = 3x - 2$. Manakah di antara pernyataan berikut yang bernilai benar?\n\n(1) $(f \\circ g)(2) = 9$\n(2) $f^{-1}(4) = \\frac{13}{2}$\n(3) $(g \\circ f)^{-1}(7) = 10$\n(4) Daerah asal $(f \\circ g)(x)$ adalah $x \\neq 3$",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar.",
+        "B. (1) dan (3) SAJA yang benar.",
+        "C. (2) dan (4) SAJA yang benar.",
+        "D. HANYA (4) yang benar.",
+        "E. SEMUA pilihan benar."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "- **Cek (1):** $g(2) = 4$, lalu $f(4) = \\frac{9}{1} = 9$ (**Benar**).\n- **Cek (2):** $f(a) = 4 \\implies \\frac{2a+1}{a-3} = 4 \\implies 2a + 1 = 4a - 12 \\implies a = \\frac{13}{2}$ (**Benar**).\n- **Cek (3):** $(g \\circ f)(k) = 7 \\implies 3f(k) - 2 = 7 \\implies f(k) = 3 \\implies \\frac{2k+1}{k-3} = 3 \\implies k = 10$ (**Benar**).\n- **Cek (4):** Syarat penyebut $(f \\circ g)(x)$ adalah $g(x) - 3 \\neq 0 \\implies 3x - 5 \\neq 0 \\implies x \\neq \\frac{5}{3}$ (**Salah**, opsi C/D/E gugur).\n\nJadi, pernyataan (1), (2), dan (3) saja yang benar (**A**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diketahui fungsi kuadrat $f(x) = x^2 - 6x + 11$ dengan domain $x \\le 3$ serta fungsi linear $g(x) = 2x + 1$. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut?\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| Nilai $f^{-1}(6)$ | Nilai $h(2)$ jika $(h \\circ g)(x) = 4x^2 - 1$ |",
+      "opsi_jawaban": [
+        "A. Kuantitas $P$ lebih besar daripada $Q$",
+        "B. Kuantitas $Q$ lebih besar daripada $P$",
+        "C. Kuantitas $P$ sama dengan $Q$",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "- **Hitung $P$:** Ubah $f(x) = (x - 3)^2 + 2$. Karena $f^{-1}(6) = a \\iff f(a) = 6$, maka $(a - 3)^2 + 2 = 6 \\implies (a - 3)^2 = 4$. Akibat syarat domain $x \\le 3$, ambil $a - 3 = -2 \\implies P = 1$ (jebakan: $a = 5$ melanggar domain).\n- **Hitung $Q$:** Tanpa mencari rumus $h(x)$, samakan $g(x) = 2 \\implies 2x + 1 = 2 \\implies x = \\frac{1}{2}$. Substitusikan ke $(h \\circ g)(x)$: $Q = h(2) = 4(\\frac{1}{2})^2 - 1 = 0$.\n\nDiperoleh $P = 1$ dan $Q = 0$, sehingga $P$ lebih besar daripada $Q$ (**A**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Diketahui fungsi $f(x) = \\frac{x - 3}{x + 1}$ untuk $x \\neq -1$. Jika $f^{(n)}(x) = (f \\circ f \\circ \\dots \\circ f)(x)$ menyatakan komposisi fungsi $f$ sebanyak $n$ kali, tentukan nilai dari $f^{(2027)}(2)$.",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "-5",
+      "bedah_cepat_markdown": "Hitung nilai komposisi berulang secara langsung mulai dari $x = 2$:\n- $f^{(1)}(2) = \\frac{2 - 3}{2 + 1} = -\\frac{1}{3}$\n- $f^{(2)}(2) = f\\left(-\\frac{1}{3}\\right) = \\frac{-\\frac{1}{3} - 3}{-\\frac{1}{3} + 1} = \\frac{-\\frac{10}{3}}{\\frac{2}{3}} = -5$\n- $f^{(3)}(2) = f(-5) = \\frac{-5 - 3}{-5 + 1} = \\frac{-8}{-4} = 2$\n\nPola berulang setiap periode $3$. Karena $2027 = 3 \\times 675 + 2$ (bersisa $2$), maka $f^{(2027)}(2) = f^{(2)}(2) = -5$.",
+      "visual": null
+    }
+  ]
+}

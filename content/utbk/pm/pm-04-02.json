@@ -1,0 +1,117 @@
+{
+  "kode_subbab": "pm-04-02",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 4: Analisis Data dan Probabilitas Terapan",
+  "judul_subbab": "Peluang Kejadian dan Pengambilan Keputusan Berbasis Data",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam final futsal sistem Best-of-Three, Tim Garuda memiliki peluang menang $0,6$ di setiap gim. Apakah peluang Tim Garuda menjadi juara turnamen tetap $0,6$ atau justru lebih besar?",
+      "opsi_cepat": [
+        "Tetap 0,6 karena peluang tiap gim konstan",
+        "Lebih besar dari 0,6 (sekitar 0,648)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Format Best-of-Three memberi ruang satu kali kekalahan bagi tim yang lebih unggul. Peluang juara Tim Garuda meningkat menjadi $0,6^2 + 2(0,6^2)(0,4) = 0,648$ ($64,8\\%$)."
+    },
+    "konsep_inti_markdown": "- **Peluang Klasik:** $P(A) = \\frac{n(A)}{n(S)}$, dengan $0 \\le P(A) \\le 1$ dan komplemen $P(A^c) = 1 - P(A)$.\n- **Peluang Bersyarat:** $P(A|B) = \\frac{n(A \\cap B)}{n(B)}$; fokus hanya pada baris atau kolom syarat $B$ sebagai semesta baru.\n- **Kejadian Majemuk:** Opsi saling lepas dijumlahkan ($+$); tahapan berurutan saling bebas dikalikan ($\\times$).\n- **Keputusan Berbasis Data:** Bandingkan nilai harapan $E(X) = \\sum x_i \\cdot P(x_i)$ atau peluang mencapai target minimum.",
+    "radar_jebakan_utbk": [
+      "Menggunakan total seluruh populasi tabel sebagai penyebut peluang bersyarat $P(A|B)$, padahal ruang sampel wajib dipersempit menjadi total syarat $n(B)$.",
+      "Melupakan faktor permutasi urutan menang-kalah (misalnya G-R-G dan R-G-G) pada seri pertandingan yang berakhir pada gim penentuan."
+    ],
+    "stimulus_utama_bersama": "Panitia Bazar & Turnamen Futsal Antar-SMA **Nusantara Cup** menetapkan ketentuan dan catatan data operasional berikut:\n\n1. **Mekanisme Roda Undian & Kupon:** Pengunjung dengan transaksi minimal Rp50.000 berhak memutar Roda Undian berisi 8 juring sama besar: 4 juring *Voucher Rp10.000*, 2 juring *Merchandise*, 1 juring *Jakpot Rp100.000*, dan 1 juring *Zonk*. Pengunjung yang berhenti pada juring *Zonk* mendapat 1 kesempatan mengambil 1 kupon dari kotak berisi 6 kupon merah (hadiah hiburan) dan 4 kupon putih (kosong).\n2. **Survei Kepuasan Pengunjung (200 Responden):**\n\n| Metode Pembayaran | Puas | Tidak Puas | Total |\n| :--- | :---: | :---: | :---: |\n| **QRIS** | 110 | 10 | 120 |\n| **Tunai** | 50 | 30 | 80 |\n| **Total** | **160** | **40** | **200** |\n\n3. **Final Futsal Best-of-Three:** Partai puncak mempertemukan **Tim Garuda** dan **Tim Rajawali** dengan sistem *Best-of-Three* (tim pertama meraih 2 kemenangan menjadi juara, tanpa hasil seri). Berdasarkan rekor pertemuan, peluang Tim Garuda menang pada setiap gim adalah $0,6$, sedangkan Tim Rajawali $0,4$, dan hasil tiap gim saling bebas.\n4. **Strategi Stok Tenant Minuman:** Harga modal Rp6.000/cup dan harga jual Rp15.000/cup (laba Rp9.000/cup terjual, rugi Rp6.000/cup sisa). Berdasarkan data cuaca, peluang hujan adalah $0,3$ dan peluang cerah adalah $0,7$. Pemilik *tenant* membandingkan dua opsi stok harian:\n   - **Strategi A (100 cup):** Saat cerah terjual 100 cup; saat hujan terjual 60 cup (40 cup sisa).\n   - **Strategi B (80 cup):** Saat cerah terjual 80 cup; saat hujan terjual 70 cup (10 cup sisa).",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Peluang pada Mekanisme Permainan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk aturan Roda Undian (8 juring) dan Kotak Kupon (6 merah, 4 putih) pada stimulus utama. Hitung peluang seorang pengunjung membawa pulang hadiah (bukan Zonk dan bukan kupon putih).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Pengunjung mendapat hadiah jika roda berhenti di salah satu dari 7 juring berhadiah, ATAU berhenti di 1 juring Zonk lalu terambil kupon merah.\n\n**2. Model Matematika (Employing):** Kejadian langsung berhadiah $P(H_1) = \\frac{7}{8}$. Kejadian jalur kedua (Zonk lalu kupon merah) berurutan saling bebas: $P(Z \\cap M) = P(Z) \\times P(M) = \\frac{1}{8} \\times \\frac{6}{10}$. Total peluang: $P(\\text{Hadiah}) = P(H_1) + P(Z \\cap M)$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):**\n$$P(\\text{Hadiah}) = \\frac{7}{8} + \\left(\\frac{1}{8} \\times \\frac{3}{5}\\right) = \\frac{35}{40} + \\frac{3}{40} = \\frac{38}{40} = 0,95$$\nSecara praktis, $95\\%$ pengunjung pasti memperoleh hadiah. Cara lebih singkat menggunakan komplemen: $1 - P(\\text{Zonk} \\cap \\text{Putih}) = 1 - \\left(\\frac{1}{8} \\times \\frac{4}{10}\\right) = 1 - 0,05 = 0,95$.",
+      "kunci_pembeda": "Gunakan penjumlahan untuk jalur kejadian terpisah ('ATAU') dan perkalian untuk tahapan berurutan ('LALU').",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Peluang Bersyarat Sederhana dari Tabel Kontingensi Dua Arah",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk tabel survei 200 pengunjung pada stimulus utama. Jika dipilih satu pengunjung secara acak dan diketahui ia merasa Tidak Puas, tentukan peluang ia menggunakan metode pembayaran Tunai.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Keterangan 'diketahui ia merasa Tidak Puas' membatasi ruang sampel hanya pada kelompok pengunjung yang Tidak Puas ($B$), lalu dicari proporsi pengguna Tunai ($A$) di dalam kelompok tersebut.\n\n**2. Model Matematika (Employing):** Gunakan rumus peluang bersyarat dari irisan sel tabel kontingensi:\n$$P(\\text{Tunai} \\mid \\text{Tidak Puas}) = \\frac{n(\\text{Tunai} \\cap \\text{Tidak Puas})}{n(\\text{Tidak Puas})}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Dari tabel, total pengunjung Tidak Puas adalah $10 + 30 = 40$ orang, sedangkan pengguna Tunai yang Tidak Puas berjumlah $30$ orang. Maka:\n$$P(\\text{Tunai} \\mid \\text{Tidak Puas}) = \\frac{30}{40} = \\frac{3}{4} = 0,75$$\nEvaluasi operasional menunjukkan $75\\%$ ketidakpuasan berasal dari transaksi tunai, sehingga panitia perlu menambah loket pembayaran digital untuk mempercepat antrean.",
+      "kunci_pembeda": "Kunci peluang bersyarat adalah mengganti penyebut dari total seluruh tabel menjadi total baris atau kolom syarat yang diketahui.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Peluang Pertandingan Olahraga Sistem Gugur atau Best-of-Three Series",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujuk data final futsal Best-of-Three antara Tim Garuda (peluang menang 0,6) dan Tim Rajawali (0,4) pada stimulus utama. Hitung peluang Tim Garuda menjuarai turnamen.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Pada format *Best-of-Three*, Tim Garuda juara jika menang 2 gim langsung (`G-G`), atau menang 2-1 dengan urutan menang-kalah-menang (`G-R-G`) maupun kalah-menang-menang (`R-G-G`). Gim ketiga tidak dimainkan jika skor sudah 2-0.\n\n**2. Model Matematika (Employing):** Karena tiap gim saling bebas dengan $P(G) = 0,6$ dan $P(R) = 0,4$:\n$$P(\\text{Juara}) = P(G)^2 + 2 \\times P(G)^2 \\times P(R)$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):**\n$$P(\\text{Juara}) = (0,6)^2 + 2(0,6)^2(0,4) = 0,36 + 2(0,36)(0,4) = 0,36 + 0,288 = 0,648$$\nPeluang juara Tim Garuda sebesar $64,8\\%$ lebih tinggi daripada peluang menang satu gim ($60\\%$) karena format seri panjang mereduksi faktor keberuntungan sesaat.",
+      "kunci_pembeda": "Gim penentu selalu dimenangkan oleh tim juara pada laga terakhir, sehingga permutasi urutan hanya berlaku pada gim-gim sebelumnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbandingan Peluang Keberhasilan Antar-Strategi atau Pemilihan Opsi dengan Risiko Terkecil",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk data stok minuman Strategi A (100 cup) dan Strategi B (80 cup) dengan peluang hujan 0,3 dan cerah 0,7 pada stimulus utama. Evaluasi strategi terbaik jika pemilik tenant menargetkan laba minimal Rp500.000.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Tiap strategi menghasilkan dua skenario laba tergantung cuaca. Keputusan diambil dengan membandingkan nilai harapan laba $E(L)$ sekaligus peluang mencapai ambang batas laba minimal $\\text{Rp500.000}$.\n\n**2. Model Matematika (Employing):** Hitung laba bersih $\\text{Laba} = (\\text{Terjual} \\times 9.000) - (\\text{Sisa} \\times 6.000)$, lalu kalikan dengan peluang cuaca untuk mencari $E(L) = 0,7 L_{\\text{cerah}} + 0,3 L_{\\text{hujan}}$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Pada Strategi A, $L_{\\text{cerah}} = \\text{Rp900.000}$ dan $L_{\\text{hujan}} = 540.000 - 240.000 = \\text{Rp300.000}$, sehingga $E(L_A) = \\text{Rp720.000}$ namun peluang mencapai target $\\ge \\text{Rp500.000}$ hanya $0,7$. Pada Strategi B, $L_{\\text{cerah}} = \\text{Rp720.000}$ dan $L_{\\text{hujan}} = 630.000 - 60.000 = \\text{Rp570.000}$, sehingga $E(L_B) = \\text{Rp675.000}$ dengan peluang mencapai target sebesar $1,0$ ($100\\%$). Strategi B memiliki risiko gagal target terkecil.",
+      "kunci_pembeda": "Pisahkan kriteria rata-rata keuntungan jangka panjang (ekspektasi) dengan kriteria keamanan target minimum (risiko kegagalan) sesuai konteks soal.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan data Roda Undian pada stimulus utama, diketahui bahwa seorang pengunjung **gagal mendapatkan Jakpot Rp100.000** saat memutar roda. Peluang pengunjung tersebut akhirnya pulang dengan membawa **Voucher Rp10.000** adalah ....",
+      "opsi_jawaban": [
+        "A. $\\frac{1}{2}$",
+        "B. $\\frac{4}{7}$",
+        "C. $\\frac{5}{8}$",
+        "D. $\\frac{3}{4}$",
+        "E. $\\frac{7}{8}$"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Karena diketahui pengunjung gagal meraih Jakpot ($1$ juring), ruang sampel menyusut dari $8$ menjadi $7$ juring tersisa. Kejadian mendapat Voucher Rp10.000 hanya berasal dari $4$ juring voucher (jalur Zonk hanya menghasilkan kupon hiburan atau kosong). Jadi, $P(\\text{Voucher} \\mid \\text{Bukan Jakpot}) = \\frac{4}{7}$. Opsi A keliru memakai penyebut awal $8$ ($\\frac{4}{8}$), sedangkan Opsi C menjumlahkan jalur Zonk.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Pada pertandingan final futsal *Best-of-Three* antara Tim Garuda dan Tim Rajawali, **Tim Rajawali berhasil memenangkan gim pertama**. Peluang Tim Garuda membalikkan keadaan dan menjadi juara turnamen adalah ....",
+      "opsi_jawaban": [
+        "A. $0,144$",
+        "B. $0,240$",
+        "C. $0,288$",
+        "D. $0,360$",
+        "E. $0,648$"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Setelah Tim Rajawali merebut gim pertama (skor 0–1), Tim Garuda tidak memiliki ruang kekalahan lagi dan wajib memenangkan gim kedua serta gim ketiga secara beruntun. Karena setiap gim saling bebas dengan peluang menang Tim Garuda $0,6$, peluangnya adalah $0,6 \\times 0,6 = 0,360$. Opsi A salah mengalikan peluang kekalahan gim pertama ($0,4 \\times 0,36$), sedangkan Opsi E adalah peluang juara awal sebelum seri dimulai.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Merujuk data penjualan minuman pada stimulus utama, apabila prakiraan cuaca terbaru merevisi **peluang turun hujan menjadi $0,5$** (sehingga peluang cerah juga $0,5$), berapa rupiah selisih nilai harapan keuntungan antara **Strategi A** dan **Strategi B**? *(Tuliskan jawaban dalam bilangan bulat penuh tanpa titik maupun simbol Rp, contoh: 50000)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "45000",
+      "bedah_cepat_markdown": "Dengan peluang cerah $0,5$ dan hujan $0,5$, hitung nilai harapan keuntungan tiap strategi menggunakan data laba skenario: $E(L_A) = 0,5(900.000) + 0,5(300.000) = 600.000$ dan $E(L_B) = 0,5(720.000) + 0,5(570.000) = 645.000$. Selisih nilai harapan keuntungan kedua strategi adalah $645.000 - 600.000 = 45.000$ rupiah.",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "kode_subbab": "pm-01-04",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 1: Aritmetika Sosial dan Keuangan",
+  "judul_subbab": "Optimasi Biaya dan Perencanaan Anggaran",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Panitia butuh kapasitas 66 kursi dengan pilihan sewa minibus A (12 kursi, Rp1,35 juta) dan minibus B (18 kursi, Rp1,9 juta). Jika memilih 4 minibus B karena tarif per kursinya lebih murah, apakah biaya tersebut sudah paling hemat?",
+      "opsi_cepat": [
+        "Ya, karena biaya per kursi minibus B paling rendah",
+        "Belum tentu, kombinasi 3 minibus B dan 1 minibus A lebih murah"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Tarif satuan termurah sering menyisakan kursi kosong berlebih yang tetap dibayar. Kombinasi 3 minibus B dan 1 minibus A pas menampung 66 kursi seharga Rp7,05 juta, menghemat Rp550 ribu dibanding 4 minibus B (Rp7,6 juta)."
+    },
+    "konsep_inti_markdown": "Optimasi biaya dalam Penalaran Matematika UTBK menguji efisiensi keputusan finansial di bawah kendala kapasitas, tarif, dan batas anggaran:\n- **Kombinasi Paket:** Minimalkan $\\sum (n_i \\times P_i)$ dengan syarat $\\sum (n_i \\times K_i) \\ge K_{\\text{target}}$.\n- **Tarif Progresif:** Hitung bertahap tiap lapisan pemakaian, bukan mengalikan total konsumsi dengan tarif tertinggi.\n- **Kendala Anggaran:** Kunci pos wajib pada batas minimum untuk memaksimalkan sisa dana pos fleksibel.\n- **Sewa vs Beli:** Bandingkan $C_{\\text{sewa}} = v_1 t$ melawan $C_{\\text{beli}} = (F - S) + v_2 t$.",
+    "radar_jebakan_utbk": [
+      "Mengalikan seluruh total pemakaian dengan tarif lapisan tertinggi pada soal tarif progresif/berjenjang.",
+      "Mengabaikan nilai jual kembali (resale value) atau kapasitas sisa terbuang saat membandingkan biaya sewa dan beli."
+    ],
+    "stimulus_utama_bersama": "Panitia Ekspedisi Riset & Bakti Sosial Mahasiswa Universitas Nusantara merencanakan kegiatan lapangan selama 4 hari bagi 66 peserta dengan total pagu anggaran operasional sebesar Rp30.000.000,00. Berdasarkan hasil survei vendor dan ketentuan internal kampus, rincian komponen biaya ditetapkan sebagai berikut:\n\n1. **Transportasi Rombongan (Paket 4 Hari):**\n   - Minibus Tipe A (kapasitas 12 penumpang): Rp1.350.000,00 per unit.\n   - Minibus Tipe B (kapasitas 18 penumpang): Rp1.900.000,00 per unit.\n\n2. **Tarif Utilitas Air Bersih Posko (Progresif per Total Pemakaian Kegiatan):**\n   - Blok I ($0 - 50\\text{ m}^3$): Rp4.000,00 per $\\text{m}^3$\n   - Blok II ($51 - 120\\text{ m}^3$): Rp6.500,00 per $\\text{m}^3$\n   - Blok III ($> 120\\text{ m}^3$): Rp9.000,00 per $\\text{m}^3$\n   - Biaya beban tetap meteran: Rp50.000,00 (sekali bayar untuk seluruh kegiatan).\n\n3. **Aturan Alokasi Pagu Anggaran (Rp30.000.000,00):**\n   - Pos Konsumsi: minimal $35\\%$ dan maksimal $45\\%$ dari pagu anggaran.\n   - Pos Logistik & Kesehatan: minimal $20\\%$ dan maksimal $30\\%$ dari pagu anggaran.\n   - Pos Transportasi & Utilitas: disesuaikan dengan tagihan riil (maksimal $30\\%$ dari pagu anggaran).\n   - Pos Dana Cadangan: minimal $10\\%$ dari pagu anggaran.\n\n4. **Pengadaan 1 Unit Drone Pemetaan Lapangan ($t$ Hari):**\n   - **Opsi Sewa:** Rp650.000,00 per hari (sudah termasuk baterai cadangan dan perawatan).\n   - **Opsi Beli:** Harga beli Rp4.200.000,00 ditambah biaya operasional dan asuransi Rp150.000,00 per hari. Di akhir kegiatan, drone dapat dijual kembali seharga Rp2.200.000,00.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pemilihan Kombinasi Paket Layanan dengan Biaya Minimum untuk Kapasitas Tertentu",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk pada poin 1 stimulus utama, panitia harus memberangkatkan seluruh 66 peserta menggunakan kombinasi Minibus Tipe A dan Tipe B dengan biaya sewa seminimal mungkin.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPanitia harus mengangkut 66 peserta menggunakan kombinasi minibus Tipe A (kapasitas 12 orang, Rp1.350.000,00) dan Tipe B (kapasitas 18 orang, Rp1.900.000,00) tanpa melebihi kapasitas yang dibutuhkan secara berlebihan.\n\n**2. Model Matematika (Employing)**\nMisalkan $x$ adalah jumlah unit Tipe A dan $y$ adalah jumlah unit Tipe B dengan $x, y \\in \\mathbb{Z}_{\\ge 0}$. Fungsi tujuan meminimalkan biaya $Z = 1.350.000x + 1.900.000y$ dengan kendala kapasitas $12x + 18y \\ge 66$ atau disederhanakan menjadi $2x + 3y \\ge 11$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nUji kombinasi batas efisien sekitar $2x + 3y = 11$. Jika $y = 4, x = 0$, kapasitas 72 kursi berbiaya Rp7.600.000,00. Jika $y = 3, x = 1$, kapasitas tepat 66 kursi berbiaya $3(1.900.000) + 1.350.000 = \\text{Rp}7.050.000,00$. Opsi lain seperti $y = 2, x = 3$ berbiaya Rp7.850.000,00. Jadi, kombinasi 1 Tipe A dan 3 Tipe B paling optimal.",
+      "kunci_pembeda": "Selalu uji kombinasi bilangan bulat terdekat di sekitar batas kapasitas minimum karena paket dengan tarif satuan termurah sering kalah efisien akibat kapasitas sisa terbuang.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Tarif Progresif atau Berjenjang",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk pada poin 2 stimulus utama, tercatat total penggunaan air bersih posko selama 4 hari kegiatan adalah sebesar 140 meter kubik.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTotal kebutuhan air posko selama 4 hari adalah $140\\text{ m}^3$. Tagihan dihitung menggunakan tarif progresif tiga blok ditambah biaya beban tetap kegiatan sebesar Rp50.000,00.\n\n**2. Model Matematika (Employing)**\nPecah volume $V = 140$ ke dalam interval blok: $V_1 = 50$ ($0 - 50$), $V_2 = 120 - 50 = 70$ ($51 - 120$), dan $V_3 = 140 - 120 = 20$ ($>120$). Total tagihan dirumuskan sebagai $T = 50.000 + 4.000V_1 + 6.500V_2 + 9.000V_3$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nSubstitusikan setiap blok: lapisan pertama $50 \\times 4.000 = \\text{Rp}200.000,00$; lapisan kedua $70 \\times 6.500 = \\text{Rp}455.000,00$; lapisan ketiga $20 \\times 9.000 = \\text{Rp}180.000,00$. Jumlahkan seluruh komponen beserta biaya beban: $50.000 + 200.000 + 455.000 + 180.000 = \\text{Rp}885.000,00$. Hindari mengalikan langsung $140\\text{ m}^3$ dengan tarif tertinggi Rp9.000,00.",
+      "kunci_pembeda": "Volume pemakaian dipecah berurutan mengisi kapasitas maksimal tiap jenjang tarif dari bawah ke atas, bukan dikalikan langsung dengan tarif jenjang terakhir.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Alokasi Anggaran Proyek dengan Kendala Kuota Minimum dan Maksimum Tiap Pos Pengeluaran",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk pada poin 3 stimulus utama, setelah biaya riil Transportasi dan Utilitas Air terpakai sebesar Rp7.935.000,00, panitia ingin memaksimalkan dana untuk pos Logistik dan Kesehatan.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPagu total Rp30.000.000,00 dibagi ke empat pos dengan syarat persentase minimum dan maksimum. Setelah pos Transportasi dan Utilitas terkunci sebesar Rp7.935.000,00, panitia ingin memaksimalkan anggaran pos Logistik dan Kesehatan.\n\n**2. Model Matematika (Employing)**\nSisa anggaran untuk tiga pos lain adalah $30.000.000 - 7.935.000 = \\text{Rp}22.065.000,00$. Untuk memaksimalkan Logistik ($L$), tetapkan Konsumsi ($K$) pada batas minimum $35\\%$ dan Dana Cadangan ($D$) pada batas minimum $10\\%$, dengan kendala $L \\le 30\\% \\times 30.000.000$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nHitung batas minimum pos pengunci: $K_{\\min} = 0,35 \\times 30.000.000 = \\text{Rp}10.500.000,00$ dan $D_{\\min} = 0,10 \\times 30.000.000 = \\text{Rp}3.000.000,00$. Sisa dana untuk Logistik menjadi $22.065.000 - 10.500.000 - 3.000.000 = \\text{Rp}8.565.000,00$. Karena Rp8.565.000,00 masih di bawah plafon maksimal $30\\%$ (Rp9.000.000,00), nilai tersebut sah sebagai alokasi maksimum.",
+      "kunci_pembeda": "Untuk memaksimalkan satu pos fleksibel, dorong seluruh pos kendala lainnya ke batas minimum yang diizinkan lalu verifikasi hasilnya terhadap plafon maksimum pos target.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Analisis Biaya Tetap (Fixed Cost) vs Biaya Variabel (Variable Cost) untuk Keputusan Sewa vs Beli Alat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk pada poin 4 stimulus utama, panitia mengevaluasi opsi sewa atau beli unit drone pemetaan berdasarkan durasi pemakaian t hari kegiatan.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPanitia membandingkan opsi menyewa drone (Rp650.000,00/hari) melawan membeli perangkat seharga Rp4.200.000,00 dengan biaya operasional Rp150.000,00/hari serta nilai jual kembali Rp2.200.000,00 setelah kegiatan selesai.\n\n**2. Model Matematika (Employing)**\nMisalkan $t$ menyatakan durasi pemakaian dalam hari. Biaya sewa adalah $C_{\\text{sewa}}(t) = 650.000t$. Biaya beli bersih memperhitungkan depresiasi ditambah biaya variabel: $C_{\\text{beli}}(t) = (4.200.000 - 2.200.000) + 150.000t = 2.000.000 + 150.000t$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nCari titik impas saat $C_{\\text{sewa}}(t) = C_{\\text{beli}}(t)$: $650.000t = 2.000.000 + 150.000t \\Rightarrow 500.000t = 2.000.000 \\Rightarrow t = 4\\text{ hari}$. Untuk durasi 4 hari, kedua opsi mengeluarkan biaya identik Rp2.600.000,00. Namun, jika kegiatan diperpanjang menjadi 5 hari atau lebih, opsi beli lebih hemat karena biaya variabelnya lebih rendah.",
+      "kunci_pembeda": "Biaya tetap bersih pada opsi beli adalah selisih harga beli awal dikurangi nilai jual kembali (resale value), bukan harga beli kotornya.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan data pada stimulus utama, pada hari keberangkatan jumlah peserta bertambah 4 orang sehingga total menjadi 70 peserta, sementara pemakaian air bersih di posko selama 4 hari tercatat sebesar $135\\text{ m}^3$. Berapakah total pengeluaran minimum gabungan untuk pos Transportasi dan Utilitas Air?",
+      "opsi_jawaban": [
+        "A. Rp7.890.000,00",
+        "B. Rp8.440.000,00",
+        "C. Rp8.690.000,00",
+        "D. Rp8.865.000,00",
+        "E. Rp9.240.000,00"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Untuk 70 peserta, kombinasi 3 Tipe B + 1 Tipe A (66 kursi) tidak mencukupi. Opsi termurah adalah 4 Tipe B (72 kursi) seharga $4 \\times 1.900.000 = \\text{Rp}7.600.000,00$ (lebih hemat daripada 2 Tipe B + 3 Tipe A seharga Rp7.850.000,00). Tagihan air $135\\text{ m}^3$: $50.000 + (50 \\times 4.000) + (70 \\times 6.500) + (15 \\times 9.000) = \\text{Rp}840.000,00$. Total gabungan = $\\text{Rp}8.440.000,00$. Opsi D salah karena mengalikan seluruh volume dengan tarif tertinggi.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Merujuk pada realisasi biaya gabungan Transportasi dan Utilitas Air pada Soal 1 sebesar Rp8.440.000,00 (yang seluruhnya dibebankan ke pos Transportasi & Utilitas), panitia menetapkan anggaran pos Konsumsi tepat sebesar $38\\%$ dari pagu anggaran Rp30.000.000,00. Berapa rupiah anggaran maksimum yang masih dapat dialokasikan untuk pos Logistik & Kesehatan agar seluruh ketentuan kuota anggaran tetap terpenuhi? *(Tuliskan jawaban dalam bilangan bulat penuh tanpa titik maupun simbol mata uang)*.",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "7160000",
+      "bedah_cepat_markdown": "Pos Transportasi & Utilitas menyerap Rp8.440.000,00 ($28,13\\% \\le 30\\%$, sah). Pos Konsumsi ditetapkan $38\\% \\times 30.000.000 = \\text{Rp}11.400.000,00$. Agar alokasi Logistik & Kesehatan maksimal, pos Dana Cadangan dikunci pada batas minimum $10\\%$, yaitu Rp3.000.000,00. Sisa dana = $30.000.000 - (8.440.000 + 11.400.000 + 3.000.000) = \\text{Rp}7.160.000,00$. Nilai ini valid karena berada dalam rentang kuota Logistik $20\\% - 30\\%$ (Rp6.000.000,00 hingga Rp9.000.000,00).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Akibat cuaca buruk di lokasi riset, masa kegiatan lapangan diperpanjang dari 4 hari menjadi 6 hari. Vendor penyewaan drone memberikan diskon $10\\%$ untuk tarif sewa harian mulai hari ke-5 dan seterusnya, sedangkan harga jual kembali drone pada Opsi Beli turun Rp200.000,00 dari nilai semula karena pemakaian ekstra. Manakah pernyataan yang paling tepat terkait biaya pengadaan drone selama 6 hari tersebut?",
+      "opsi_jawaban": [
+        "A. Opsi Sewa lebih hemat Rp670.000,00 dibandingkan Opsi Beli.",
+        "B. Opsi Beli lebih hemat Rp670.000,00 dibandingkan Opsi Sewa.",
+        "C. Opsi Beli lebih hemat Rp800.000,00 dibandingkan Opsi Sewa.",
+        "D. Opsi Sewa lebih hemat Rp130.000,00 dibandingkan Opsi Beli.",
+        "E. Kedua opsi menghasilkan total biaya bersih yang sama besar."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Biaya Opsi Sewa 6 hari: $(4 \\times 650.000) + (2 \\times 0,9 \\times 650.000) = 2.600.000 + 1.170.000 = \\text{Rp}3.770.000,00$. Pada Opsi Beli, nilai jual kembali turun menjadi Rp2.000.000,00 sehingga biaya bersihnya: $(4.200.000 - 2.000.000) + (6 \\times 150.000) = 2.200.000 + 900.000 = \\text{Rp}3.100.000,00$. Dengan demikian, Opsi Beli lebih hemat sebesar $\\text{Rp}670.000,00$. Opsi C salah karena mengabaikan diskon sewa $10\\%$ pada 2 hari terakhir.",
+      "visual": null
+    }
+  ]
+}

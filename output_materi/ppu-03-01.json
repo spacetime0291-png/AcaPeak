@@ -1,0 +1,134 @@
+{
+  "kode_subbab": "ppu-03-01",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 3: Sintaksis dan Kalimat",
+  "judul_subbab": "Pola Dasar Kalimat (S-P-O-K-Pel)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Di kawasan pesisir utara terjadi abrasi cukup parah', apakah frasa 'Di kawasan pesisir utara' merupakan subjek kalimat tersebut?",
+      "opsi_cepat": [
+        "Ya, karena berada di awal kalimat",
+        "Tidak, itu keterangan dan subjeknya di belakang"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Unsur yang diawali kata depan ('di', 'ke', 'dari', 'dalam') tidak pernah bisa menjadi Subjek, melainkan Keterangan. Kalimat tersebut berpola inversi K-P-S dengan 'abrasi cukup parah' sebagai Subjek."
+    },
+    "konsep_inti_markdown": "**Pola dasar kalimat** membedah jabatan fungsi kata agar kalimat efektif dan baku sesuai EYD V serta KBBI VI:\n\n* **Subjek [S] & Predikat [P]:** Inti wajib kalimat; [S] tidak boleh diawali preposisi.\n* **Objek [O] vs Pelengkap [Pel]:** [O] berada di belakang verba aktif transitif dan dapat dipasifkan, sedangkan [Pel] tidak dapat dipasifkan.\n* **Keterangan [K]:** Bersifat manasuka dan posisinya dapat berpindah tanpa merusak makna.",
+    "radar_jebakan_utbk": [
+      "Menganggap frasa berpreposisi di awal kalimat (seperti 'Bagi para peneliti...' atau 'Dalam laporan itu...') sebagai Subjek, sehingga kalimat kehilangan unsur Subjek inti.",
+      "Menyamakan Pelengkap di belakang predikat berimbuhan 'ber-' atau 'merupakan' sebagai Objek, padahal unsur tersebut tidak dapat dipindahkan menjadi Subjek kalimat pasif."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Mencari Kalimat di Opsi yang Memiliki Pola Dasar Identik dengan Kalimat Acuan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pada kuartal ketiga tahun ini, bank sentral menurunkan suku bunga acuan demi menjaga stabilitas pertumbuhan ekonomi.",
+      "bedah_pola_markdown": "**Bedah Pola Sintaksis & Fungsi:**\nPerhatikan pemenggalan jabatan fungsi kalimat acuan: [K] *Pada kuartal ketiga*, [S] *bank sentral* + [P] *menurunkan* + [O] *suku bunga acuan* + [K] *demi stabilitas ekonomi*. Kalimat tersebut berpola **K-S-P-O-K**. Pada soal UTBK, kesamaan pola ditentukan oleh urutan jabatan fungsi utama, bukan kemiripan topik maupun panjang frasa sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pola `K-S-P-O` disamakan dengan `K-S-P-Pel` (*menjadi ketua*). | Pola `K-S-P-O` sejajar dengan `K-S-P-O` (*memperluas pasar*). |\n| Keterangan awal tanpa koma: *Kemarin tim merilis laporan*. | Keterangan awal berkoma baku: *Kemarin, tim merilis laporan*. |\n\n**Strategi Eksekusi:** Penggal batas fungsi kalimat acuan, tandai inti [S]-[P]-[O]/[Pel], lalu eliminasi opsi yang memiliki jenis predikat atau urutan fungsi berbeda.",
+      "kunci_pembeda": "Memetakan urutan jabatan fungsi inti [S]-[P]-[O]/[Pel] pada kalimat acuan untuk mencocokkan struktur sintaksis yang identik di opsi jawaban.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Membedakan Objek (O) dan Pelengkap (Pel) setelah Predikat Berimbuhan ber-, meN-, atau ter-",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kalimat (1): Pemerintah **menerapkan** regulasi emisi karbon. Kalimat (2): Kebijakan baru tersebut **berlandaskan** prinsip keberlanjutan lingkungan.",
+      "bedah_pola_markdown": "**Bedah Pola Objek vs Pelengkap:**\nBandingkan struktur kedua kalimat: [S] *Pemerintah* + [P] *menerapkan* + [O] *regulasi emisi karbon* (dapat dipasifkan menjadi *Regulasi emisi karbon diterapkan pemerintah*), sedangkan [S] *Kebijakan baru tersebut* + [P] *berlandaskan* + [Pel] *prinsip keberlanjutan lingkungan* (tidak dapat dipasifkan). Unsur di belakang predikat berimbuhan *ber-*, *ter-*, atau verba kopula merupakan Pelengkap [Pel] sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Berdiskusi masalah anggaran* dianggap berpola `S-P-O`. | *Berdiskusi masalah anggaran* berpola `S-P-Pel` (*tak dapat dipasifkan*). |\n| *Regulasi itu berdasarkan pada undang-undang* (*preposisi mubazir*). | *Regulasi itu berdasarkan undang-undang* (`S-P-Pel` baku). |\n\n**Strategi Eksekusi:** Uji unsur di belakang predikat dengan memindahkannya ke posisi awal sebagai subjek kalimat pasif; jika tidak berterima, unsur tersebut adalah Pelengkap [Pel].",
+      "kunci_pembeda": "Menguji keterpasifan unsur di belakang predikat untuk membedakan Objek yang dapat menjadi subjek pasif dari Pelengkap yang tetap terikat.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Identifikasi Subjek dan Predikat pada Kalimat Berpola Terbalik atau Inversi (P-S)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Di kawasan lereng gunung api aktif itu **terdapat** puluhan titik pemantauan aktivitas seismik secara waktu nyata.",
+      "bedah_pola_markdown": "**Bedah Pola Inversi & Fungsi:**\nPerhatikan susunan terbalik pada kalimat berikut: [K] *Di kawasan lereng gunung api aktif itu* + [P] *terdapat* + [S] *puluhan titik pemantauan aktivitas seismik* + [K] *secara waktu nyata*. Kalimat inversi menempatkan Predikat [P] sebelum Subjek [S] guna menonjolkan peristiwa atau keberadaan. Frasa berpreposisi *di kawasan...* tetap menjabat sebagai Keterangan [K], bukan Subjek, sesuai kaidah sintaksis EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Dalam rapat itu membahas* (*tanpa subjek karena berpreposisi*). | *Dalam rapat itu dibahas* [P] *anggaran riset* [S] (`K-P-S`). |\n| *Telah diterbitkan* [P] *kebijakan baru oleh kementerian* (`P-S-O`). | *Telah diterbitkan* [P] *kebijakan baru* [S] *oleh kementerian* [K] (`P-S-K`). |\n\n**Strategi Eksekusi:** Ajukan pertanyaan *apa* atau *siapa* terhadap kata kerja predikat di awal klausa inti untuk menemukan Subjek yang bergeser ke belakang.",
+      "kunci_pembeda": "Mengenali pergeseran posisi Predikat mendahului Subjek (P-S) dan memastikan frasa berpreposisi di awal kalimat tetap dianalisis sebagai Keterangan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Analisis Fungsi Anak Kalimat (Sebagai Pengganti Subjek, Objek, atau Keterangan)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Tim peneliti menyimpulkan **bahwa kenaikan suhu permukaan laut memicu pemutihan terumbu karang secara massal**.",
+      "bedah_pola_markdown": "**Bedah Pola Klausa Bawahan & Fungsi:**\nPerhatikan perluasan jabatan fungsi pada kalimat majemuk bertingkat berikut: [S] *Tim peneliti* + [P] *menyimpulkan* + [O-anak kalimat] *bahwa kenaikan suhu permukaan laut memicu pemutihan terumbu karang secara massal*. Anak kalimat yang diawali konjungsi *bahwa* tersebut menduduki satu jabatan tunggal sebagai Objek [O] karena dapat digantikan oleh kata benda *hal itu* sesuai EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Bahwa riset ini berhasil* [S] *membuktikan* [P] (*tanpa objek*). | *Bahwa riset ini berhasil* [S] *terbukti* [P] *secara empiris* [K]. |\n| *Karena hujan deras, sehingga banjir* (*konjungsi ganda mubazir*). | *Karena hujan deras* [K], *permukiman terendam banjir* [S-P]. |\n\n**Strategi Eksekusi:** Ganti seluruh klausa anak kalimat dengan satu kata ganti (*hal itu* untuk S/O atau *saat itu* untuk K) guna melihat pola induknya.",
+      "kunci_pembeda": "Meringkas seluruh klausa anak kalimat menjadi satu kata ganti tunggal ('hal itu') untuk menentukan jabatan Subjek, Objek, atau Keterangan induknya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Penyederhanaan Kalimat Panjang Beranak-pinak ke dalam Pola Fungsi Utamanya",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Lembaga meteorologi nasional yang memantau dinamika atmosfer di wilayah khatulistiwa **merilis** peringatan dini cuaca ekstrem sejak kemarin sore.",
+      "bedah_pola_markdown": "**Bedah Pola Inti Kalimat Luas:**\nKalimat panjang UTBK sering disisipi perluasan keterangan penjelas (*yang...*) pada Subjek maupun Objek. Perhatikan pemangkasannya: [S] *Lembaga meteorologi nasional (yang memantau dinamika atmosfer...)* + [P] *merilis* + [O] *peringatan dini cuaca ekstrem* + [K] *sejak kemarin sore*. Dengan memangkas klausa perluasan, terlihat pola dasarnya adalah **S-P-O-K** dengan inti kalimat *Lembaga merilis peringatan* sesuai EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Peneliti yang mengkaji sampel tanah itu* (*kalimat buntung tanpa predikat*). | *Peneliti yang mengkaji sampel tanah itu* [S] *menemukan mikroplastik* [P-O]. |\n| Menganggap klausa *yang memantau atmosfer* sebagai predikat utama kalimat. | Menempatkan *merilis* sebagai predikat utama di luar perluasan *yang*. |\n\n**Strategi Eksekusi:** Kurung seluruh bagian setelah kata *yang* hingga menemukan kata kerja utama di luar perluasan untuk mengunci pasangan [S] dan [P] inti.",
+      "kunci_pembeda": "Mengisolasi klausa perluasan berpenanda 'yang' dan keterangan tambahan agar pasangan inti Subjek-Predikat utama langsung terlihat jelas.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Sejak awal tahun ini, perusahaan manufaktur tersebut menerapkan sistem otomasi berbasis kecerdasan buatan.\"\n\nKalimat yang memiliki pola dasar yang sama dengan kalimat di atas adalah ....",
+      "opsi_jawaban": [
+        "A. Pada kuartal kedua, koperasi nelayan tersebut beranggotakan ratusan pelaku usaha mikro.",
+        "B. Dalam rapat koordinasi kemarin, tim peneliti memaparkan temuan lapangan terbaru.",
+        "C. Di kawasan industri terpadu itu terbangun pusat pengolahan limbah berteknologi tinggi.",
+        "D. Kementerian Perhubungan mempercepat pembangunan jalur kereta api antarkota di Pulau Jawa.",
+        "E. Seluruh peserta simposium nasional mendiskusikan strategi mitigasi perubahan iklim global."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kalimat acuan berpola **K-S-P-O**: [K] *Sejak awal tahun ini*, [S] *perusahaan manufaktur tersebut* + [P] *menerapkan* + [O] *sistem otomasi berbasis kecerdasan buatan*. Pola **K-S-P-O** yang identik terdapat pada **opsi B**: [K] *Dalam rapat koordinasi kemarin*, [S] *tim peneliti* + [P] *memaparkan* + [O] *temuan lapangan terbaru*. Sebaliknya, **opsi A** berpola K-S-P-Pel karena berpredikat *beranggotakan*, **opsi C** berpola inversi K-P-S, **opsi D** berpola S-P-O-K, dan **opsi E** berpola S-P-O. Jadi, jawaban yang tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Di balik meningkatnya ekspor komoditas olahan mineral terdapat tantangan besar terkait efisiensi energi industri. (2) Para analis ekonomi menilai bahwa ketergantungan pada pembangkit berbahan bakar fosil dapat menekan daya saing produk nasional di pasar global.\n\nManakah pernyataan yang PALING TEPAT mengenai struktur fungsi kalimat dalam kutipan di atas?",
+      "opsi_jawaban": [
+        "A. Frasa 'Di balik meningkatnya ekspor komoditas olahan mineral' pada kalimat (1) menduduki fungsi Subjek.",
+        "B. Kalimat (1) berpola terbalik (K-P-S) dengan frasa 'tantangan besar terkait efisiensi energi industri' sebagai Subjek.",
+        "C. Klausa setelah kata 'bahwa' pada kalimat (2) menduduki fungsi Keterangan cara.",
+        "D. Predikat utama pada kalimat (2) adalah frasa 'dapat menekan' yang menerangkan subjek 'analis ekonomi'.",
+        "E. Kalimat (1) tidak memiliki unsur Predikat karena diawali oleh kata depan 'di'."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kalimat (1) memiliki susunan terbalik (**K-P-S**): [K] *Di balik meningkatnya ekspor komoditas olahan mineral* + [P] *terdapat* + [S] *tantangan besar terkait efisiensi energi industri* (**opsi B**). **Opsi A** dan **E** keliru karena frasa berpreposisi *di balik...* merupakan Keterangan, bukan Subjek, sedangkan predikatnya adalah *terdapat*. Pada kalimat (2), predikat utamanya adalah *menilai* (**opsi D** salah) dan klausa berkonjungsi *bahwa* berfungsi sebagai Objek (**opsi C** salah). Jadi, jawaban tepat adalah **B**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        5
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Kajian komprehensif yang dilakukan oleh lembaga riset independen selama enam bulan terakhir menghasilkan rekomendasi kebijakan yang berorientasi pada pelestarian ekosistem pesisir.\"\n\nInti kalimat dari pernyataan panjang di atas adalah ....",
+      "opsi_jawaban": [
+        "A. Kajian komprehensif dilakukan oleh lembaga riset independen.",
+        "B. Lembaga riset independen menghasilkan rekomendasi kebijakan.",
+        "C. Kajian komprehensif menghasilkan rekomendasi kebijakan.",
+        "D. Rekomendasi kebijakan berorientasi pada pelestarian ekosistem.",
+        "E. Pelestarian ekosistem pesisir dilakukan selama enam bulan."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Untuk menemukan inti kalimat panjang, pangkas seluruh perluasan berpenanda *yang* serta keterangan waktu. Subjek inti kalimat tersebut adalah **Kajian komprehensif** (klausa *yang dilakukan oleh lembaga riset independen selama enam bulan terakhir* hanyalah perluasan subjek), Predikat intinya **menghasilkan**, dan Objek intinya **rekomendasi kebijakan** (klausa *yang berorientasi pada pelestarian ekosistem pesisir* adalah perluasan objek). Dengan demikian, inti kalimatnya adalah **Kajian komprehensif menghasilkan rekomendasi kebijakan** (**opsi C**). **Opsi A**, **B**, **D**, dan **E** tertipu oleh unsur perluasan.",
+      "visual": null
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "kode_subbab": "pk-01-05",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 1: Bilangan dan Operasi Aljabar",
+  "judul_subbab": "Persamaan dan Fungsi Kuadrat",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Fungsi kuadrat $f(x) = (m - 2)x^2 + 4x + 2$ selalu bernilai positif untuk semua $x$ real. Banyak peserta langsung menghitung $D < 0$ dan menyimpulkan $m > 4$, padahal jawabannya keliru. Mengapa?",
+      "opsi_cepat": [
+        "Syarat a > 0 terlupakan saat m = 2",
+        "Tanda diskriminan seharusnya D > 0"
+      ],
+      "jawaban_benar_index": 0,
+      "penjelasan_kilat": "Saat $m = 2$, koefisien $x^2$ bernilai $0$ sehingga fungsi menjadi linear $f(x) = 4x + 2$ yang tidak definit positif. Syarat definit positif mewajibkan dua kondisi sekaligus: $a > 0$ dan $D < 0$."
+    },
+    "konsep_inti_markdown": "Bentuk umum persamaan kuadrat $ax^2 + bx + c = 0$ ($a \\neq 0$) dan fungsi kuadrat $f(x) = ax^2 + bx + c$.\n- **Diskriminan:** $D = b^2 - 4ac$ menentukan jenis akar dan posisi grafik terhadap sumbu-$x$.\n- **Teorema Vieta:** $x_1 + x_2 = -\\frac{b}{a}$ dan $x_1 x_2 = \\frac{c}{a}$.\n- **Titik Puncak:** $P\\left(-\\frac{b}{2a}, -\\frac{D}{4a}\\right)$ dengan sumbu simetri $x = -\\frac{b}{2a}$.\n- **Definit:** Definit positif ($a > 0, D < 0$); definit negatif ($a < 0, D < 0$).",
+    "radar_jebakan_utbk": [
+      "Mengabaikan syarat koefisien $a \\neq 0$ pada persamaan kuadrat berparameter, atau lupa mengiriskan syarat $a > 0$ ($a < 0$) saat menguji definit positif (negatif).",
+      "Salah tanda pada rumus selisih akar $|x_1 - x_2| = \\frac{\\sqrt{D}}{|a|}$ serta tertukar tanda negatif pada rumus sumbu simetri $x_p = -\\frac{b}{2a}$."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='30' y1='140' x2='330' y2='140' stroke='#1E293B' stroke-width='2'/><line x1='110' y1='24' x2='110' y2='196' stroke='#1E293B' stroke-width='2'/><path d='M 80 36 Q 200 324 320 36' fill='none' stroke='#3B82F6' stroke-width='2.5'/><line x1='200' y1='32' x2='200' y2='188' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><circle cx='200' cy='180' r='4' fill='#F59E0B'/><circle cx='110' cy='99' r='4' fill='#10B981'/><circle cx='137' cy='140' r='4' fill='#3B82F6'/><circle cx='263' cy='140' r='4' fill='#3B82F6'/><text x='322' y='132' font-family='sans-serif' font-size='12' fill='#1E293B'>x</text><text x='116' y='34' font-family='sans-serif' font-size='12' fill='#1E293B'>y</text><text x='208' y='186' font-family='sans-serif' font-size='12' fill='#1E293B'>P(xp, yp)</text><text x='64' y='96' font-family='sans-serif' font-size='12' fill='#1E293B'>(0, c)</text><text x='122' y='156' font-family='sans-serif' font-size='12' fill='#1E293B'>x1</text><text x='268' y='156' font-family='sans-serif' font-size='12' fill='#1E293B'>x2</text><text x='206' y='44' font-family='sans-serif' font-size='12' fill='#3B82F6'>x = -b/2a</text></svg>",
+      "caption": "Anatomi grafik parabola: titik puncak, sumbu simetri, serta titik potong sumbu-x dan sumbu-y"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Teorema Vieta: Jumlah, Hasil Kali, dan Ekspresi Simetris Akar-akar",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Akar-akar persamaan kuadrat $2x^2 - 6x + 3 = 0$ adalah $x_1$ dan $x_2$. Tentukan nilai dari $x_1^2 + x_2^2 + |x_1 - x_2|$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nIdentifikasi koefisien persamaan $2x^2 - 6x + 3 = 0$, diperoleh $a = 2$, $b = -6$, dan $c = 3$. Gunakan identitas aljabar simetris untuk mengubah bentuk kuadrat tanpa mencari akar satu per satu:\n- Jumlah akar: $x_1 + x_2 = -\\frac{b}{a} = -\\frac{-6}{2} = 3$.\n- Hasil kali akar: $x_1 x_2 = \\frac{c}{a} = \\frac{3}{2}$.\n- Jumlah kuadrat: $x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1 x_2 = 3^2 - 2\\left(\\frac{3}{2}\\right) = 9 - 3 = 6$.\n- Selisih mutlak akar: $|x_1 - x_2| = \\sqrt{(x_1 + x_2)^2 - 4x_1 x_2} = \\sqrt{9 - 6} = \\sqrt{3}$.\nJadi, nilai akhirnya adalah $6 + \\sqrt{3}$.\n\n**2. Jalur Taktis UTBK**\nHafalkan rumus instan selisih akar $|x_1 - x_2| = \\frac{\\sqrt{D}}{|a|}$. Hitung $D = (-6)^2 - 4(2)(3) = 12$, sehingga $|x_1 - x_2| = \\frac{\\sqrt{12}}{2} = \\sqrt{3}$. Hindari pemfaktoran langsung saat $D$ bukan bilangan kuadrat.",
+      "kunci_pembeda": "Gunakan identitas Vieta dan rumus instan $\\frac{\\sqrt{D}}{|a|}$ untuk mengevaluasi ekspresi akar simetris tanpa mencari nilai akar individual.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Analisis Diskriminan dan Syarat Definit Positif atau Negatif",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tentukan batas nilai bilangan real $p$ agar fungsi kuadrat $f(x) = px^2 + 2(p - 1)x + (p - 3)$ selalu bernilai negatif untuk setiap $x \\in \\mathbb{R}$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nFungsi kuadrat selalu bernilai negatif (definit negatif) jika grafiknya terbuka ke bawah ($a < 0$) dan tidak memotong sumbu-$x$ ($D < 0$).\n- Syarat pertama: $a < 0 \\Rightarrow p < 0$.\n- Syarat kedua: $D < 0 \\Rightarrow [2(p - 1)]^2 - 4(p)(p - 3) < 0$.\nJabarkan pertidaksamaan diskriminan menjadi $4(p^2 - 2p + 1) - 4p^2 + 12p < 0$, lalu sederhanakan menjadi $4p + 4 < 0 \\Rightarrow p < -1$. Irisan dari $p < 0$ dan $p < -1$ menghasilkan batas $p < -1$.\n\n**2. Jalur Taktis UTBK**\nEliminasi opsi jawaban dengan uji titik ekstrem. Coba substitusi $p = 0$ ke fungsi awal, didapat $f(x) = -2x - 3$ yang bernilai positif saat $x = -2$. Artinya $p = 0$ salah, sehingga semua opsi yang memuat $p = 0$ (seperti $p > -1$) langsung gugur dalam 10 detik.",
+      "kunci_pembeda": "Selalu iriskan syarat tanda koefisien utama ($a > 0$ atau $a < 0$) dengan syarat diskriminan $D < 0$, lalu verifikasi dengan uji titik batas.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Menyusun Persamaan Kuadrat Baru yang Akar-akarnya Berelasi dengan Persamaan Awal",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Persamaan kuadrat $x^2 - 5x + 2 = 0$ memiliki akar-akar $\\alpha$ dan $\\beta$. Susunlah persamaan kuadrat baru yang akar-akarnya $(2\\alpha - 1)$ dan $(2\\beta - 1)$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDari persamaan $x^2 - 5x + 2 = 0$, diperoleh $\\alpha + \\beta = 5$ dan $\\alpha\\beta = 2$. Misalkan akar-akar baru adalah $p = 2\\alpha - 1$ dan $q = 2\\beta - 1$.\n- Jumlah akar baru: $p + q = 2(\\alpha + \\beta) - 2 = 2(5) - 2 = 8$.\n- Hasil kali akar baru: $pq = (2\\alpha - 1)(2\\beta - 1) = 4\\alpha\\beta - 2(\\alpha + \\beta) + 1 = 4(2) - 2(5) + 1 = -1$.\nSubstitusikan ke bentuk baku $x^2 - (p + q)x + pq = 0$, sehingga diperoleh $x^2 - 8x - 1 = 0$.\n\n**2. Jalur Taktis UTBK**\nGunakan teknik invers akar. Karena bentuk akar baru simetris $y = 2x - 1$, nyatakan $x$ dalam $y$: $x = \\frac{y + 1}{2}$. Substitusikan langsung ke persamaan awal: $\\left(\\frac{y + 1}{2}\\right)^2 - 5\\left(\\frac{y + 1}{2}\\right) + 2 = 0$. Kalikan $4$, didapat $(y^2 + 2y + 1) - 10(y + 1) + 8 = 0 \\Rightarrow y^2 - 8y - 1 = 0$.",
+      "kunci_pembeda": "Gunakan substitusi invers $x = f^{-1}(y)$ saat kedua akar baru memiliki pola transformasi aljabar yang identik.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Karakteristik Grafik Parabola dan Tanda Koefisien",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Sebuah fungsi kuadrat memiliki titik puncak $(2, -3)$ dan memotong sumbu-$y$ di titik $(0, 5)$. Tentukan persamaan fungsi kuadrat tersebut beserta nilai $a + b + c$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nGunakan bentuk puncak $f(x) = a(x - x_p)^2 + y_p$. Substitusikan titik puncak $(2, -3)$ menjadi $f(x) = a(x - 2)^2 - 3$. Masukkan titik potong sumbu-$y$ $(0, 5)$ untuk mencari koefisien $a$:\n$5 = a(0 - 2)^2 - 3 \\Rightarrow 8 = 4a \\Rightarrow a = 2$.\nJabarkan fungsi menjadi $f(x) = 2(x^2 - 4x + 4) - 3 = 2x^2 - 8x + 5$. Dari bentuk umum, diperoleh $a = 2$, $b = -8$, $c = 5$, sehingga $a + b + c = 2 - 8 + 5 = -1$.\n\n**2. Jalur Taktis UTBK**\nNilai $a + b + c$ selalu sama dengan $f(1)$. Karena sumbu simetri parabola berada di $x = 2$, titik $x = 1$ berjarak $1$ satuan dari puncak, sedangkan $x = 0$ berjarak $2$ satuan. Selisih tinggi dari puncak ke $x = 0$ adalah $5 - (-3) = 8$, maka pada jarak setengahnya ($x = 1$), selisih tingginya seperempatnya ($2$), sehingga $f(1) = -3 + 2 = -1$.",
+      "kunci_pembeda": "Pilih bentuk puncak $a(x - x_p)^2 + y_p$ jika puncak diketahui, atau bentuk akar $a(x - x_1)(x - x_2)$ jika dua titik potong sumbu-$x$ diketahui.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Kedudukan Garis terhadap Parabola",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Garis $y = mx - 4$ menyinggung parabola $y = x^2 - 2x + 5$. Tentukan semua nilai $m$ yang memenuhi.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nSamakan persamaan garis dan parabola untuk memperoleh persamaan kuadrat gabungan:\n$x^2 - 2x + 5 = mx - 4 \\Rightarrow x^2 - (m + 2)x + 9 = 0$.\nSyarat garis menyinggung parabola adalah diskriminan persamaan gabungan sama dengan nol ($D = 0$). Hitung diskriminan dengan $a = 1$, $b = -(m + 2)$, dan $c = 9$:\n$D = [-(m + 2)]^2 - 4(1)(9) = 0 \\Rightarrow (m + 2)^2 = 36$.\nTarik akar kedua ruas: $m + 2 = 6$ atau $m + 2 = -6$, sehingga diperoleh $m = 4$ atau $m = -8$.\n\n**2. Jalur Taktis UTBK**\nBentuk $x^2 - (m + 2)x + 9 = 0$ memiliki $D = 0$ jika dan hanya jika ruas kiri merupakan kuadrat sempurna $(x \\pm 3)^2 = x^2 \\pm 6x + 9$. Cocokkan koefisien tengah: $-(m + 2) = \\pm 6$, langsung didapat $m = -8$ atau $m = 4$ tanpa perlu menjabarkan $(m + 2)^2$.",
+      "kunci_pembeda": "Substitusikan persamaan garis ke parabola terlebih dahulu, lalu uji diskriminan gabungan ($D > 0$ memotong, $D = 0$ menyinggung, $D < 0$ tidak memotong).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 6,
+      "nama_variasi": "Pertidaksamaan Kuadrat dan Syarat Letak Akar",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Persamaan kuadrat $x^2 - (k + 2)x + (2k - 1) = 0$ memiliki dua akar real berbeda yang keduanya positif. Tentukan batas nilai $k$ yang memenuhi.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDua akar real berbeda ($x_1 \\neq x_2$) dan keduanya positif ($x_1 > 0, x_2 > 0$) wajib memenuhi tiga syarat simultan:\n- Syarat akar berbeda ($D > 0$): $(k + 2)^2 - 4(2k - 1) > 0 \\Rightarrow k^2 - 4k + 8 > 0$. Karena definit positif ($D_k = -16 < 0$), syarat ini berlaku untuk semua $k \\in \\mathbb{R}$.\n- Syarat jumlah positif ($x_1 + x_2 > 0$): $k + 2 > 0 \\Rightarrow k > -2$.\n- Syarat kali positif ($x_1 x_2 > 0$): $2k - 1 > 0 \\Rightarrow k > \\frac{1}{2}$.\nIrisan ketiganya menghasilkan $k > \\frac{1}{2}$.\n\n**2. Jalur Taktis UTBK**\nJika soal meminta dua akar berlainan tanda ($x_1 < 0 < x_2$), cukup uji satu syarat saja: $x_1 x_2 < 0$. Syarat $D > 0$ otomatis terpenuhi saat $\\frac{c}{a} < 0$ karena $D = b^2 - 4ac > 0$, menghemat waktu pengerjaan hingga 40 detik.",
+      "kunci_pembeda": "Akar kembar tanda butuh irisan tiga syarat ($D \\ge 0$, jumlah, hasil kali), sedangkan akar berlainan tanda cukup satu syarat ($x_1 x_2 < 0$).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diketahui $x_1$ dan $x_2$ adalah akar-akar persamaan kuadrat $x^2 - 4x + 1 = 0$ dengan $x_1 > x_2$. Berdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut?\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| $\\frac{x_1}{x_2} + \\frac{x_2}{x_1}$ | $(x_1 - x_2)^2 + 2$ |",
+      "opsi_jawaban": [
+        "A. Kuantitas P lebih besar daripada Q",
+        "B. Kuantitas Q lebih besar daripada P",
+        "C. Kuantitas P sama dengan Q",
+        "D. Tidak dapat ditentukan hubungan antara kuantitas P dan Q"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Dari $x^2 - 4x + 1 = 0$, diperoleh $x_1 + x_2 = 4$ dan $x_1 x_2 = 1$.\n- Hitung $P$: $\\frac{x_1^2 + x_2^2}{x_1 x_2} = \\frac{(x_1 + x_2)^2 - 2x_1 x_2}{x_1 x_2} = \\frac{4^2 - 2(1)}{1} = 14$.\n- Hitung $Q$: $(x_1 - x_2)^2 + 2 = (x_1 + x_2)^2 - 4x_1 x_2 + 2 = 4^2 - 4(1) + 2 = 14$.\nKarena $P = 14$ dan $Q = 14$, kedua kuantitas bernilai sama (opsi A, B, dan D salah).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        4,
+        5
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Perhatikan grafik fungsi kuadrat $f(x) = ax^2 + bx + c$ yang memotong sumbu-$y$ di $(0, 3)$ dan memiliki titik puncak di $(2, 5)$ pada gambar. Manakah pernyataan berikut yang bernilai benar?\n\n(1) $a + b + c = \\frac{9}{2}$\n(2) $b^2 - 4ac > 0$\n(3) $abc < 0$\n(4) Garis $y = 5$ menyinggung grafik fungsi $f(x)$",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pernyataan benar"
+      ],
+      "kunci_jawaban": "E",
+      "bedah_cepat_markdown": "Substitusikan titik puncak $(2, 5)$ dan titik $(0, 3)$ ke $f(x) = a(x - x_p)^2 + y_p$, diperoleh $3 = 4a + 5 \\Rightarrow a = -\\frac{1}{2}$, sehingga $f(x) = -\\frac{1}{2}x^2 + 2x + 3$.\n- (1) Benar: $a + b + c = f(1) = -\\frac{1}{2} + 2 + 3 = \\frac{9}{2}$.\n- (2) Benar: Grafik memotong sumbu-$x$ di dua titik sehingga $D > 0$.\n- (3) Benar: $abc = \\left(-\\frac{1}{2}\\right)(2)(3) = -3 < 0$.\n- (4) Benar: Garis horizontal $y = 5$ tepat menyentuh ordinat puncak.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><line x1='36' y1='150' x2='324' y2='150' stroke='#1E293B' stroke-width='2'/><line x1='120' y1='24' x2='120' y2='196' stroke='#1E293B' stroke-width='2'/><path d='M 75 173 Q 180 -73 285 173' fill='none' stroke='#3B82F6' stroke-width='2.5'/><line x1='180' y1='50' x2='180' y2='150' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='120' y1='50' x2='180' y2='50' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><circle cx='180' cy='50' r='4' fill='#F59E0B'/><circle cx='120' cy='90' r='4' fill='#10B981'/><text x='316' y='142' font-family='sans-serif' font-size='12' fill='#1E293B'>x</text><text x='126' y='34' font-family='sans-serif' font-size='12' fill='#1E293B'>y</text><text x='186' y='46' font-family='sans-serif' font-size='12' fill='#1E293B'>(2, 5)</text><text x='86' y='94' font-family='sans-serif' font-size='12' fill='#1E293B'>(0, 3)</text><text x='176' y='166' font-family='sans-serif' font-size='12' fill='#1E293B'>2</text><text x='106' y='54' font-family='sans-serif' font-size='12' fill='#1E293B'>5</text></svg>",
+        "caption": "Grafik fungsi kuadrat f(x) dengan titik puncak (2, 5) dan titik potong sumbu-y di (0, 3)"
+      }
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        2,
+        6
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Diketahui persamaan kuadrat $x^2 - (m + 3)x + (3m + 1) = 0$ memiliki dua akar real berbeda yang keduanya bernilai positif. Nilai bilangan bulat terkecil $m$ yang memenuhi kondisi tersebut adalah ....",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "0",
+      "bedah_cepat_markdown": "Dua akar real berbeda positif mewajibkan tiga syarat:\n- $D > 0 \\Rightarrow (m + 3)^2 - 4(3m + 1) > 0 \\Rightarrow (m - 1)(m - 5) > 0 \\Rightarrow m < 1$ atau $m > 5$.\n- $x_1 + x_2 > 0 \\Rightarrow m > -3$.\n- $x_1 x_2 > 0 \\Rightarrow 3m + 1 > 0 \\Rightarrow m > -\\frac{1}{3}$.\nIrisannya $-\\frac{1}{3} < m < 1$ atau $m > 5$, sehingga bilangan bulat terkecil adalah $0$ (banyak peserta keliru menjawab $6$ karena mengabaikan interval $-\\frac{1}{3} < m < 1$).",
+      "visual": null
+    }
+  ]
+}

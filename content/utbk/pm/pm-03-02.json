@@ -1,0 +1,131 @@
+{
+  "kode_subbab": "pm-03-02",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 3: Geometri Terapan dan Pengukuran",
+  "judul_subbab": "Luas dan Volume Bangun Gabungan dalam Konteks Fisik",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah tenda silinder berdiameter 14 m dengan atap kerucut dicat seluruh sisi luarnya termasuk alas yang menempel tanah, lalu kontainer diisi kardus hanya dengan membagi total volumenya. Di mana letak kesalahan fatal yang sering memakan korban di UTBK?",
+      "opsi_cepat": [
+        "Rumus volume kerucut lupa dikali 1/3",
+        "Menghitung bidang dempet yang tertutup & mengabaikan sisa ruang susunan kardus"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Pada bangun gabungan fisik, bidang persekutuan yang tertutup atau menempel tanah tidak perlu dilapisi material, sedangkan pengemasan kotak wajib memakai pembulatan ke bawah per rusuk, bukan pembagian total volume."
+    },
+    "konsep_inti_markdown": "- **Luas Permukaan Gabungan:** Jumlahkan hanya sisi luar yang terpapar; eliminasi bidang persekutuan yang berimpit atau menempel tanah.\n- **Pengemasan Optimum:** Hitung kapasitas per rusuk dengan pembulatan ke bawah ($\\lfloor P/p \\rfloor \\times \\lfloor L/l \\rfloor \\times \\lfloor T/t \\rfloor$) pada tiap orientasi.\n- **Benda Berongga & Massa:** $V_{\\text{bahan}} = V_{\\text{luar}} - V_{\\text{rongga}}$, lalu massa $m = \\rho \\times V_{\\text{bahan}}$.\n- **Konservasi Volume Cairan:** Volume zat cair tetap saat pindah wadah ($V_1 = V_2$), sehingga tinggi akhir $h = \\frac{V_{\\text{cair}}}{L_{\\text{alas wadah}}}$.",
+    "radar_jebakan_utbk": [
+      "Ikut menghitung luas alas atau tutup persekutuan di dalam bangun gabungan saat menghitung kebutuhan cat, terpal, atau keramik.",
+      "Membagi langsung volume kontainer dengan volume kardus kecil tanpa mengecek orientasi sisi, sehingga menghasilkan kapasitas semu yang mustahil disusun."
+    ],
+    "stimulus_utama_bersama": "Dinas Ketahanan Pangan membangun Sentra Logistik & Taman Edukasi Desa Sukamaju dengan spesifikasi teknis berikut:\n1. **Silo Penyimpanan Utama:** Bangunan gabungan tabung (diameter $12\\text{ m}$, tinggi dinding $5\\text{ m}$) dan atap kerucut (tinggi $8\\text{ m}$, garis pelukis $10\\text{ m}$) tanpa plafon penyekat. Seluruh sisi luar dinding dan atap dilapisi terpal membran berukuran $2\\text{ m} \\times 25\\text{ m}$ ($50\\text{ m}^2$ per gulung, wajib beli utuh) seharga $\\text{Rp}1.500.000,00$ per gulung ($\\pi = 3,14$).\n2. **Kontainer Benih:** Balok berukuran dalam $220\\text{ cm} \\times 150\\text{ cm} \\times 120\\text{ cm}$ untuk menyusun kardus benih $50\\text{ cm} \\times 40\\text{ cm} \\times 30\\text{ cm}$ secara seragam tanpa dimiringkan.\n3. **Instalasi Pipa Irigasi:** Pipa baja silinder berongga sepanjang $10\\text{ m}$, diameter luar $16\\text{ cm}$, tebal dinding $2\\text{ cm}$, dan massa jenis baja $\\rho = 7,8\\text{ gram/cm}^3$ ($\\pi = \\frac{22}{7}$).\n4. **Taman Edukasi:** Gabungan persegi panjang $20\\text{ m} \\times 6\\text{ m}$ dengan dua setengah lingkaran berdiameter $6\\text{ m}$ di kedua sisi lebarnya, dikelilingi jalur pejalan kaki luar selebar seragam $1\\text{ m}$ ($\\pi = \\frac{22}{7}$).\n5. **Penampungan Air Hujan:** Bak setengah bola berjari-jari dalam $3\\text{ m}$ terisi penuh air yang dipindahkan seluruhnya ke tangki tabung vertikal kosong berjari-jari dalam $2\\text{ m}$ dan tinggi $5\\text{ m}$.",
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='24' y='24' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Sketsa Silo Gabungan Tabung-Kerucut</text><polygon points='140,38 86,102 194,102' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><rect x='86' y='102' width='108' height='74' fill='#FFFBEB' stroke='#1E293B' stroke-width='2'/><ellipse cx='140' cy='102' rx='54' ry='10' fill='#EFF6FF' stroke='#3B82F6' stroke-width='1.5' stroke-dasharray='4 4'/><ellipse cx='140' cy='176' rx='54' ry='10' fill='#FFFBEB' stroke='#1E293B' stroke-width='2'/><line x1='140' y1='38' x2='140' y2='102' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><line x1='140' y1='102' x2='194' y2='102' stroke='#94A3B8' stroke-width='1.5' stroke-dasharray='4 4'/><text x='52' y='68' font-family='sans-serif' font-size='12' fill='#3B82F6'>s = 10 m</text><text x='176' y='68' font-family='sans-serif' font-size='12' fill='#1E293B'>t = 8 m</text><text x='204' y='142' font-family='sans-serif' font-size='12' fill='#1E293B'>t = 5 m</text><text x='98' y='204' font-family='sans-serif' font-size='12' fill='#1E293B'>d = 12 m (r = 6 m)</text><rect x='252' y='48' width='88' height='64' rx='6' fill='#EFF6FF' stroke='#3B82F6' stroke-width='1'/><text x='260' y='68' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1E293B'>Sisi Terpapar:</text><text x='260' y='85' font-family='sans-serif' font-size='11' fill='#3B82F6'>• Selimut Kerucut</text><text x='260' y='101' font-family='sans-serif' font-size='11' fill='#F59E0B'>• Selimut Tabung</text></svg>",
+      "caption": "Penampang bangun gabungan tabung-kerucut pada Silo Penyimpanan Utama"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Perhitungan Kebutuhan Material pada Bangun Ruang Gabungan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 1 stimulus utama, seluruh sisi luar dinding tabung (d = 12 m, t = 5 m) dan atap kerucut (s = 10 m) dilapisi terpal membran 50 m² per gulung seharga Rp1.500.000,00.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPermukaan silo yang dilapisi terpal hanya mencakup selimut tabung dan selimut kerucut. Bagian alas menempel pada fondasi tanah dan batas antara tabung dan kerucut terbuka tanpa plafon, sehingga keduanya tidak masuk dalam perhitungan luas.\n\n**2. Model Matematika (Employing)**\nDengan jari-jari $r = \\frac{12}{2} = 6\\text{ m}$ dan $\\pi = 3,14$, total luas bidang terpapar dirumuskan sebagai:\n$$L_{\\text{total}} = L_{\\text{selimut tabung}} + L_{\\text{selimut kerucut}} = 2\\pi r t + \\pi r s$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nSubstitusi ukuran menghasilkan $L_{\\text{total}} = (2 \\times 3,14 \\times 6 \\times 5) + (3,14 \\times 6 \\times 10) = 188,4 + 188,4 = 376,8\\text{ m}^2$. Kebutuhan terpal adalah $\\frac{376,8}{50} = 7,536\\text{ gulung}$. Karena pembelian material di toko wajib utuh, jumlah dibulatkan ke atas menjadi $8\\text{ gulung}$ dengan total biaya $8 \\times \\text{Rp}1.500.000,00 = \\text{Rp}12.000.000,00$.",
+      "kunci_pembeda": "Fokus pada luas selimut luar yang benar-benar terpapar material dan wajib membulatkan satuan kemasan ke atas.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Kapasitas Wadah dan Pengemasan Optimum",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 2 stimulus utama, kontainer balok berukuran dalam 220 cm × 150 cm × 120 cm diisi kardus benih 50 cm × 40 cm × 30 cm secara seragam tanpa dimiringkan.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nKardus berbentuk balok disusun sejajar dinding kontainer tanpa ruang kosong di sela tumpukan. Pembagian volume total secara langsung tidak valid karena sisa ruang di tepi kontainer tidak bisa digabung untuk memuat kardus tambahan.\n\n**2. Model Matematika (Employing)**\nKapasitas tiap orientasi susunan $(p, l, t)$ terhadap ukuran kontainer $(220, 150, 120)$ dihitung menggunakan fungsi lantai (pembulatan ke bawah per sisi):\n$$N = \\left\\lfloor \\frac{220}{p} \\right\\rfloor \\times \\left\\lfloor \\frac{150}{l} \\right\\rfloor \\times \\left\\lfloor \\frac{120}{t} \\right\\rfloor$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nUji variasi orientasi utama menghasilkan: posisi $(50, 40, 30)$ memuat $4 \\times 3 \\times 4 = 48\\text{ kardus}$; posisi $(40, 50, 30)$ memuat $5 \\times 3 \\times 4 = 60\\text{ kardus}$; sedangkan posisi $(30, 50, 40)$ memuat $7 \\times 3 \\times 3 = 63\\text{ kardus}$. Jadi, kapasitas maksimum riil adalah $63\\text{ kardus}$, bukan $66\\text{ kardus}$ dari rasio volume.",
+      "kunci_pembeda": "Gunakan fungsi lantai pada pembagian tiap dimensi rusuk untuk mencari orientasi dengan kapasitas tertinggi.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Volume Benda Putar atau Pipa Berongga dan Berat Total Berdasarkan Massa Jenis",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk poin 3 stimulus utama, pipa baja silinder berongga sepanjang 10 m memiliki diameter luar 16 cm, tebal dinding 2 cm, dan massa jenis baja 7,8 gram/cm³.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPipa merupakan cincin silinder berongga sehingga volume logam penyusunnya hanyalah selisih antara volume silinder luar dan volume rongga dalam. Seluruh satuan panjang wajib diseragamkan ke sentimeter agar selaras dengan satuan massa jenis.\n\n**2. Model Matematika (Employing)**\nDengan jari-jari luar $R = \\frac{16}{2} = 8\\text{ cm}$, jari-jari dalam $r = 8 - 2 = 6\\text{ cm}$, panjang $t = 1.000\\text{ cm}$, serta $\\pi = \\frac{22}{7}$, volume baja dan massanya adalah:\n$$V = \\pi (R^2 - r^2) t \\quad \\text{dan} \\quad m = \\rho \\times V$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nHitung selisih kuadrat jari-jari terlebih dahulu: $V = \\frac{22}{7} \\times (8^2 - 6^2) \\times 1.000 = \\frac{22}{7} \\times 28 \\times 1.000 = 88.000\\text{ cm}^3$. Selanjutnya, massa pipa adalah $m = 7,8 \\times 88.000 = 686.400\\text{ gram}$, yang dikonversi menjadi $686,4\\text{ kg}$ untuk memperkirakan beban angkut.",
+      "kunci_pembeda": "Kurangkan luas lingkaran luar dengan lingkaran rongga sebelum mengalikan tinggi dan massa jenis bahan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Luas Lahan Berbentuk Gabungan Lingkaran dan Poligon dengan Jalur Pejalan Kaki",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 4 stimulus utama, taman gabungan persegi panjang 20 m × 6 m dan dua setengah lingkaran berdiameter 6 m dikelilingi jalur pejalan kaki selebar 1 m.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nDua setengah lingkaran di kedua ujung taman membentuk satu lingkaran utuh. Penambahan jalur pejalan kaki selebar $1\\text{ m}$ di sekeliling luar memperlebar sisi persegi panjang di kedua tepinya dan menambah jari-jari lingkaran sebesar $1\\text{ m}$.\n\n**2. Model Matematika (Employing)**\nLuas jalur pejalan kaki adalah selisih luas bangun luar dan bangun dalam dengan $r = 3\\text{ m}$, $R = 3 + 1 = 4\\text{ m}$, serta lebar persegi panjang membesar dari $6\\text{ m}$ menjadi $8\\text{ m}$:\n$$L_{\\text{jalur}} = (20 \\times 8 - 20 \\times 6) + \\pi (R^2 - r^2)$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nDengan $\\pi = \\frac{22}{7}$, diperoleh $L_{\\text{jalur}} = (160 - 120) + \\frac{22}{7}(4^2 - 3^2) = 40 + \\frac{22}{7}(7) = 40 + 22 = 62\\text{ m}^2$. Nilai luas bersih $62\\text{ m}^2$ ini langsung menjadi acuan kebutuhan paving blok tanpa tumpang tindih sudut.",
+      "kunci_pembeda": "Pisahkan ekspansi dimensi lurus pada poligon dan pertambahan jari-jari pada bagian lengkung lingkaran.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Perpindahan Volume Cairan dari Wadah Kerucut atau Bola ke Wadah Tabung atau Balok",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk poin 5 stimulus utama, air penuh dari bak setengah bola berjari-jari dalam 3 m dipindahkan seluruhnya ke tangki tabung vertikal berjari-jari 2 m dan tinggi 5 m.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nAir bersifat inkompresibel sehingga volumenya tidak berubah saat dipindahkan dari bak setengah bola ke tangki tabung. Ketinggian akhir permukaan air bergantung pada luas penampang horizontal tangki penerima serta kapasitas maksimum tingginya.\n\n**2. Model Matematika (Employing)**\nSamakan volume setengah bola berjari-jari $R = 3\\text{ m}$ dengan volume tabung terisi air setinggi $h$ pada jari-jari alas $r = 2\\text{ m}$:\n$$V_{\\text{setengah bola}} = V_{\\text{tabung air}} \\implies \\frac{2}{3} \\pi R^3 = \\pi r^2 h$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nEliminasi $\\pi$ di kedua ruas menghasilkan $\\frac{2}{3} (3^3) = (2^2) h \\implies 18 = 4h \\implies h = 4,5\\text{ m}$. Karena ketinggian air $4,5\\text{ m}$ masih di bawah tinggi fisik tangki $5\\text{ m}$, seluruh air tertampung aman tanpa meluap dengan sisa ruang $0,5\\text{ m}$.",
+      "kunci_pembeda": "Pertahankan nilai pi dalam bentuk simbolik selama persamaan volume untuk memudahkan pencoretan antaruas.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan spesifikasi Sentra Logistik Desa Sukamaju, pengelola melapisi seluruh sisi luar dinding tabung dan atap kerucut silo dengan terpal membran, sekaligus melapisi seluruh permukaan jalur pejalan kaki di sekeliling taman edukasi menggunakan cat khusus anti-selip. Jika $1\\text{ kaleng}$ cat anti-selip mampu melapisi area seluas $15\\text{ m}^2$ dan dijual seharga $\\text{Rp}250.000,00$ per kaleng (wajib beli utuh), berapakah selisih biaya pembelian terpal membran silo dengan biaya cat jalur pejalan kaki?",
+      "opsi_jawaban": [
+        "A. Rp10.500.000,00",
+        "B. Rp10.750.000,00",
+        "C. Rp11.000.000,00",
+        "D. Rp13.250.000,00",
+        "E. Rp13.750.000,00"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Luas terpal silo $= 2(3,14)(6)(5) + (3,14)(6)(10) = 376,8\\text{ m}^2$, butuh $\\lceil 376,8/50 \\rceil = 8\\text{ gulung}$ seharga $\\text{Rp}12.000.000,00$. Luas jalur taman $= (160 - 120) + \\frac{22}{7}(16 - 9) = 62\\text{ m}^2$, butuh $\\lceil 62/15 \\rceil = 5\\text{ kaleng}$ seharga $\\text{Rp}1.250.000,00$. Selisihnya adalah $\\text{Rp}10.750.000,00$. Opsi C salah karena membulatkan cat ke bawah ($4\\text{ kaleng}$), sedangkan opsi E salah karena ikut menghitung alas silo.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Di dalam kontainer balok Sentra Logistik Desa Sukamaju yang disusun penuh secara optimum dengan kardus benih (masing-masing kardus memiliki berat kotor $15\\text{ kg}$), turut dimuat pula $2\\text{ batang}$ pipa baja silinder berongga spesifikasi proyek untuk cadangan irigasi. Hitunglah total berat seluruh muatan (kardus benih ditambah $2\\text{ batang}$ pipa baja) dalam satuan kilogram! (Tuliskan bilangan desimal menggunakan tanda koma tanpa satuan)",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "2317,8",
+      "bedah_cepat_markdown": "Susunan optimum kardus pada orientasi $(30, 50, 40)$ memuat $7 \\times 3 \\times 3 = 63\\text{ kardus}$, dengan berat $63 \\times 15 = 945\\text{ kg}$. Satu pipa baja memiliki volume $V = \\frac{22}{7}(8^2 - 6^2)(1.000) = 88.000\\text{ cm}^3$ dan massa $7,8 \\times 88.000\\text{ gram} = 686,4\\text{ kg}$. Untuk $2\\text{ batang}$ pipa beratnya $1.372,8\\text{ kg}$, sehingga total berat muatan adalah $945 + 1.372,8 = 2.317,8\\text{ kg}$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        5
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Setelah air penuh dari bak penampung setengah bola dipindahkan seluruhnya ke tangki tabung vertikal kosong di Sentra Logistik Desa Sukamaju, pengelola menyalurkan air dari tangki tabung tersebut ke lahan pertanian hingga ketinggian air di dalam tangki turun sebesar $2,5\\text{ m}$.\n\nBerdasarkan informasi tersebut, manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut?\n- $P$: Volume air yang tersisa di dalam tangki tabung (dalam $\\text{m}^3$, gunakan $\\pi = 3,14$)\n- $Q$: $25\\text{ m}^3$",
+      "opsi_jawaban": [
+        "A. P > Q",
+        "B. Q > P",
+        "C. P = Q",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas",
+        "E. P + Q = 50"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Ketinggian awal air di tangki tabung adalah $h = \\frac{\\frac{2}{3}\\pi(3^3)}{\\pi(2^2)} = 4,5\\text{ m}$. Setelah turun $2,5\\text{ m}$, sisa ketinggian air menjadi $2\\text{ m}$. Volume sisa air adalah $P = 3,14 \\times 2^2 \\times 2 = 25,12\\text{ m}^3$. Karena $25,12 > 25$, maka $P > Q$. Opsi B salah jika membulatkan $\\pi$ menjadi $3,1$, sedangkan opsi C keliru menganggap $\\pi = 3,125$.",
+      "visual": null
+    }
+  ]
+}

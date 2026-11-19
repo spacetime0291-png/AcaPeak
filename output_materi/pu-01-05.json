@@ -1,0 +1,125 @@
+{
+  "kode_subbab": "pu-01-05",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 1: Penalaran Induktif",
+  "judul_subbab": "Evaluasi Kesesuaian Pernyataan (Format 5 Skala Kepastian)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Data perpustakaan kota mencatat $80\\%$ pengunjung hari Senin adalah mahasiswa yang meminjam buku referensi. Jika seseorang menyatakan 'Tidak ada pelajar SMA yang mengunjungi perpustakaan pada hari Senin', apa status kepastian pernyataan tersebut?",
+      "opsi_cepat": [
+        "Pasti Salah",
+        "Mungkin Salah"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Sisa $20\\%$ pengunjung bisa saja masyarakat umum, dosen, atau pelajar SMA. Karena keberadaan pelajar SMA tidak disebut maupun dilarang secara eksplisit di premis, klaim tersebut belum tentu salah secara mutlak (Mungkin Salah)."
+    },
+    "konsep_inti_markdown": "**Evaluasi Kesesuaian Pernyataan** menguji derajat kebenaran klaim terhadap premis teks atau data menggunakan **5 Skala Kepastian**.\n\n* **Pasti Benar (PB):** Selaras mutlak atau parafrasa logis fakta eksplisit.\n* **Pasti Salah (PS):** Bertentangan langsung dengan fakta eksplisit.\n* **Mungkin Benar (MB) / Mungkin Salah (MS):** Masih dalam cakupan topik, tetapi tidak cukup bukti memastikan.\n* **Tidak Relevan (TR):** Membahas variabel di luar ruang lingkup premis.",
+    "radar_jebakan_utbk": [
+      "Menganggap pernyataan yang tidak disebutkan di teks otomatis bernilai Pasti Salah, padahal seharusnya Mungkin Salah atau Tidak Relevan.",
+      "Tertukar antara Mungkin Benar/Salah (topik masih nyambung dengan celah premis) dengan Tidak Relevan (membawa variabel atau objek asing)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifikasi Pernyataan Pasti Benar dan Pasti Salah Berdasarkan Fakta Eksplisit Teks/Data",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Berdasarkan laporan Dinas Lingkungan Hidup, seluruh industri tekstil di Kecamatan Sukamaju wajib mengolah limbah cair sebelum dibuang ke sungai. Pada inspeksi bulan lalu, ditemukan tiga dari dua belas pabrik tekstil di kecamatan tersebut membuang limbah tanpa pengolahan.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Seluruh industri tekstil Sukamaju wajib mengolah limbah; 3 dari 12 pabrik melanggar aturan) $\\rightarrow$ Asumsi Jembatan (Kesesuaian logis atau kontradiksi langsung terhadap data eksplisit menentukan kepastian mutlak) $\\rightarrow$ Evaluasi Pernyataan (9 pabrik lainnya mematuhi kewajiban adalah **Pasti Benar**; semua pabrik mematuhi aturan adalah **Pasti Salah**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| 3 dari 12 pabrik membuang limbah mentah | Semua pabrik tekstil di Sukamaju melanggar aturan |\n| Kewajiban berlaku bagi industri tekstil Sukamaju | Industri makanan di Sukamaju juga melanggar aturan |\n\n**Uji Kepastian:** Untuk status **Pasti Benar**, cari parafrasa sinonim atau operasi hitung sederhana ($12 - 3 = 9$ pabrik patuh) tanpa menambah informasi baru. Untuk status **Pasti Salah**, temukan benturan langsung dengan angka atau kuantor premis (klaim *semua patuh* menabrak fakta *3 melanggar*).",
+      "kunci_pembeda": "Status Pasti Benar dan Pasti Salah hanya sah apabila pernyataan dapat diverifikasi atau dibantah secara mutlak oleh angka dan fakta tersurat dalam premis.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Membedakan Pernyataan Mungkin Benar vs Mungkin Salah Berdasarkan Celah Informasi Premis",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Hasil survei Kementerian Perhubungan menunjukkan bahwa $65\\%$ penumpang kereta jarak jauh memilih membeli tiket melalui aplikasi resmi karena tersedia fitur pemilihan kursi. Sisanya membeli tiket melalui loket stasiun atau agen perjalanan mitra.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik ($65\\%$ penumpang memilih aplikasi demi fitur pilih kursi; $35\\%$ lewat loket atau agen) $\\rightarrow$ Asumsi Jembatan (Celah informasi pada kelompok $35\\%$ membuka peluang kemungkinan tanpa kepastian mutlak) $\\rightarrow$ Evaluasi Pernyataan (Sebagian pembeli di loket tidak mementingkan pemilihan kursi adalah **Mungkin Benar**; tidak ada pembeli di agen yang memilih kursi adalah **Mungkin Salah**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| $65\\%$ pembeli memakai aplikasi resmi | Seluruh pembeli aplikasi hanya mengincar fitur kursi |\n| $35\\%$ membeli lewat loket atau agen | Pembeli di loket pasti tidak bisa memilih kursi |\n\n**Uji Kepastian:** Kedua skala ini muncul ketika pernyataan masih membahas objek dan variabel premis, tetapi berada di area abu-abu yang belum dirinci. Gunakan **Mungkin Benar** untuk klaim yang sejalan dengan kecenderungan pola data, dan **Mungkin Salah** untuk klaim ekstrem atau pengecualian yang belum terbukti keliru secara eksplisit.",
+      "kunci_pembeda": "Perbedaan Mungkin Benar dan Mungkin Salah terletak pada arah kecenderungan klaim di celah informasi premis yang sama-sama tidak memiliki bukti penyangkal mutlak.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Identifikasi Pernyataan Tidak Relevan / Informasi Tidak Cukup di Luar Ruang Lingkup Wacana",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Penelitian agronomi mencatat bahwa penggunaan pupuk organik cair pada tanaman tomat hidroponik meningkatkan bobot rata-rata buah sebesar $25\\%$ dibandingkan pupuk anorganik standar dalam masa tanam 60 hari.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pupuk organik cair menaikkan bobot buah tomat hidroponik $25\\%$ dalam 60 hari) $\\rightarrow$ Asumsi Jembatan (Keterputusan variabel atau objek membuat kebenaran pernyataan mustahil dinilai dari premis) $\\rightarrow$ Evaluasi Pernyataan (Harga jual tomat organik lebih mahal di pasar swalayan berstatus **Tidak Relevan**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Bobot buah tomat hidroponik naik $25\\%$ | Rasa tomat organik pasti jauh lebih manis |\n| Pengamatan dilakukan selama 60 hari | Tanaman cabai juga mengalami kenaikan bobot $25\\%$ |\n\n**Uji Kepastian:** Deteksi status **Tidak Relevan** (sering disebut *Informasi Tidak Cukup*) dengan memeriksa kemunculan variabel baru (misalnya harga, rasa, biaya produksi) atau perpindahan objek/spesies baru (misalnya tanaman cabai, lahan sawah konvensional). Jika premis sama sekali tidak menyediakan pijakan data untuk menguji variabel tersebut, jangan pilih *Mungkin Salah*, melainkan tetapkan sebagai **Tidak Relevan**.",
+      "kunci_pembeda": "Pernyataan berstatus Tidak Relevan apabila memperkenalkan variabel atau entitas baru yang sama sekali terputus dari informasi premis.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Evaluasi Tingkat Kepastian Pernyataan Berbasis Tabel/Grafik Eksperimen Sederhana",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tabel uji ketahanan baterai ponsel mencatat kapasitas tersisa setelah 500 siklus pengisian: Tipe X tersisa $88\\%$ (suhu $25^{\\circ}\\text{C}$) dan $74\\%$ (suhu $40^{\\circ}\\text{C}$); Tipe Y tersisa $82\\%$ (suhu $25^{\\circ}\\text{C}$) dan $79\\%$ (suhu $40^{\\circ}\\text{C}$).",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pada $25^{\\circ}\\text{C}$, Tipe X unggul $88\\% > 82\\%$; pada $40^{\\circ}\\text{C}$, Tipe Y lebih stabil $79\\% > 74\\%$) $\\rightarrow$ Asumsi Jembatan (Perbandingan baris dan kolom tabel membatasi validitas klaim pada kondisi eksperimen) $\\rightarrow$ Evaluasi Pernyataan (Tipe Y lebih tahan suhu panas daripada Tipe X adalah **Pasti Benar**; pada $50^{\\circ}\\text{C}$ Tipe Y tersisa $75\\%$ adalah **Mungkin Benar**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Penurunan kapasitas Tipe X lebih besar saat panas | Tipe X pasti rusak total pada suhu $45^{\\circ}\\text{C}$ |\n| Pengujian hanya dilakukan hingga 500 siklus | Harga baterai Tipe Y lebih mahal dari Tipe X |\n\n**Uji Kepastian:** Kunci evaluasi data tabel adalah mencocokkan dua sumbu (baris entitas dan kolom kondisi). Klaim perbandingan langsung antarsel tabel menghasilkan **Pasti Benar** atau **Pasti Salah**, ekstrapolasi di luar rentang suhu uji menghasilkan **Mungkin Benar/Salah**, sedangkan variabel di luar tabel seperti harga bernilai **Tidak Relevan**.",
+      "kunci_pembeda": "Evaluasi berbasis tabel menuntut pencocokan presisi antara sel data tersurat (pasti), ekstrapolasi tren (mungkin), dan variabel di luar kolom (tidak relevan).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Laporan evaluasi Balai Taman Nasional mencatat bahwa dari 80 ekor orangutan yang direhabilitasi tahun ini, sebanyak 52 ekor telah dilepasliarkan ke hutan lindung karena mampu mencari pakan alami secara mandiri. Sementara itu, 28 ekor sisanya masih menjalani pelatihan lanjutan di pusat karantina. Berdasarkan informasi tersebut, pernyataan: *'Sebagian orangutan yang masih berada di pusat karantina sebenarnya sudah mampu mencari pakan alami secara mandiri, tetapi belum dilepasliarkan karena faktor kesehatan'* bernilai ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Premis hanya menjelaskan bahwa 52 ekor dilepasliarkan karena mandiri mencari pakan, sedangkan alasan mengapa 28 ekor sisanya masih di karantina tidak dirinci secara eksklusif. Karena pernyataan masih membahas kelompok 28 orangutan dalam wacana dan membuka alasan tambahan yang tidak bertentangan dengan fakta eksplisit, status kepastiannya adalah **Mungkin Benar** (**Opsi B**). **Opsi A** salah karena tidak ada bukti tersurat, sedangkan **Opsi C** keliru karena premis tidak menyatakan semua yang di karantina gagal mencari pakan.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Survei asosiasi ritel modern terhadap 1.200 konsumen di kota besar menunjukkan bahwa $70\\%$ responden memilih berbelanja kebutuhan pokok secara daring karena potongan ongkos kirim, sedangkan $30\\%$ lainnya tetap berbelanja langsung ke toko fisik untuk memeriksa kesegaran produk secara langsung. Manakah pernyataan berikut yang berstatus **TIDAK RELEVAN** berdasarkan informasi tersebut?",
+      "opsi_jawaban": [
+        "A. Sebanyak 840 responden dalam survei memilih berbelanja kebutuhan pokok melalui platform daring.",
+        "B. Seluruh responden yang berbelanja ke toko fisik melakukannya demi mendapatkan potongan ongkos kirim.",
+        "C. Sebagian konsumen yang berbelanja daring juga tetap memeriksa kesegaran produk sebelum membeli.",
+        "D. Keuntungan bersih perusahaan ritel modern meningkat tajam sejak layanan belanja daring diluncurkan.",
+        "E. Tidak ada responden dalam survei tersebut yang berbelanja daring tanpa mempertimbangkan ongkos kirim."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Pernyataan **Tidak Relevan** mengangkat variabel baru di luar ruang lingkup premis. Premis hanya membahas alasan preferensi belanja konsumen ($70\\%$ daring dan $30\\%$ toko fisik), tanpa menyinggung kinerja keuangan atau keuntungan bersih perusahaan ritel (**Opsi D** benar). **Opsi A** berstatus *Pasti Benar* ($70\\% \\times 1.200 = 840$), **Opsi B** dan **E** berstatus *Pasti Salah* karena bertentangan langsung dengan alasan kelompok responden di teks, sedangkan **Opsi C** berstatus *Mungkin Benar*.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "5 Skala Kepastian",
+      "pertanyaan_markdown": "Perhatikan tabel hasil uji laboratorium laju korosi tiga jenis logam (dalam $\\text{mm/tahun}$) pada dua tingkat kadar garam larutan setelah perendaman 30 hari:\n\n| Jenis Logam | Kadar Garam $1\\%$ | Kadar Garam $5\\%$ |\n| :--- | :---: | :---: |\n| Baja Karbon | $0,18$ | $0,64$ |\n| Baja Tahan Karat | $0,02$ | $0,07$ |\n| Paduan Aluminium | $0,05$ | $0,21$ |\n\nBerdasarkan data tabel tersebut, pernyataan: *'Pada kadar garam $5\\%$, laju korosi Paduan Aluminium tercatat lebih rendah dibandingkan Baja Karbon, tetapi lebih tinggi daripada Baja Tahan Karat'* bernilai ....",
+      "opsi_jawaban": [
+        "A. Pasti Benar",
+        "B. Mungkin Benar",
+        "C. Pasti Salah",
+        "D. Mungkin Salah",
+        "E. Tidak Relevan"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Periksa kolom **Kadar Garam $5\\%$** pada tabel secara langsung: laju korosi Baja Tahan Karat adalah $0,07\\text{ mm/tahun}$, Paduan Aluminium adalah $0,21\\text{ mm/tahun}$, dan Baja Karbon adalah $0,64\\text{ mm/tahun}$. Urutan ketiganya memenuhi pertidaksamaan $0,07 < 0,21 < 0,64$. Karena pernyataan sesuai secara mutlak dengan data angka eksplisit pada tabel tanpa menambah asumsi apa pun, nilai kepastiannya adalah **Pasti Benar** (**Opsi A**).",
+      "visual": null
+    }
+  ]
+}

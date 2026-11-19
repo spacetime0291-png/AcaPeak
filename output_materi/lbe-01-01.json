@@ -1,0 +1,124 @@
+{
+  "kode_subbab": "lbe-01-01",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 1: Main Idea & Purpose",
+  "judul_subbab": "Main Idea and Topic of the Passage",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah teks 3 paragraf membahas dampak mikroplastik pada terumbu karang, namun paragraf pertama dibuka dengan anekdot penemuan botol plastik di Palung Mariana. Banyak siswa memilih 'Penemuan Sampah di Palung Mariana' sebagai topik utama—apakah pilihan ini tepat?",
+      "opsi_cepat": [
+        "Tepat, karena selalu berada di kalimat pertama",
+        "Salah, karena hanya berfungsi sebagai pengait (hook)"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kalimat pembuka sering berupa hook naratif; tesis utama (thesis statement) biasanya muncul di akhir paragraf pertama atau berulang di setiap kalimat topik paragraf berikutnya."
+    },
+    "konsep_inti_markdown": "* **Topic:** Subjek umum teks berupa frasa benda (noun phrase) tanpa predikat.\n* **Main Idea:** Gagasan utama berupa kalimat lengkap ($\\text{Topic} + \\text{Controlling Idea}$).\n* **Formula Skimming:** Baca **kalimat pertama & terakhir Paragraf 1** (tesis) + **kalimat pertama tiap paragraf isi** (poin pendukung).\n* **Goldilocks Rule:** Opsi benar harus mencakup seluruh paragraf—tidak terlalu sempit (*too narrow*) dan tidak melebihi batas teks (*too broad*).",
+    "radar_jebakan_utbk": [
+      "Too Narrow (Terlalu Sempit): Opsi menyalin fakta detail atau contoh spesifik dari satu paragraf saja lalu diklaim sebagai gagasan seluruh wacana.",
+      "Too Broad & Extreme: Opsi menggunakan kata mutlak (always, completely, only) atau memperluas cakupan ke topik global yang tidak dibahas penulis."
+    ],
+    "stimulus_utama_bersama": "The rapid expansion of urban areas has transformed local microclimates, creating what environmental scientists call the Urban Heat Island (UHI) effect. In densely built cities, natural vegetation is replaced by asphalt, concrete, and steel, which absorb and re-emit significantly more solar radiation than forests or grasslands. Compounded by waste heat from vehicles and air-conditioning systems, metropolitan centers often record temperatures 2°C to 5°C higher than surrounding rural areas, particularly during nocturnal hours when concrete structures slowly release stored thermal energy.\n\nThis persistent thermal elevation triggers cascading ecological and public health consequences. Elevated nighttime temperatures prevent the human body from cooling adequately, sharply increasing incidences of heat exhaustion and cardiovascular stress among vulnerable populations, such as the elderly and outdoor workers. Simultaneously, warmer urban air accelerates ground-level ozone formation, degrading air quality and exacerbating respiratory illnesses. Energy demand also surges during summer peaks, straining electrical grids and paradoxically intensifying greenhouse gas emissions through heightened fossil-fuel power generation.\n\nTo counteract these vulnerabilities, urban planners are increasingly integrating green infrastructure into municipal zoning laws. Strategies such as reflective 'cool roofs,' permeable pavements, and vertical forests help lower surface temperatures by increasing evapotranspiration and solar albedo. For instance, cities that mandate rooftop gardens on new commercial buildings have observed measurable reductions in ambient neighborhood heat alongside improved stormwater retention. Ultimately, mitigating the UHI effect requires shifting from reactive cooling technologies toward regenerative urban design that restores ecological balance within city boundaries.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Primary Topic / Main Idea of the Entire Passage",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk kalimat pertama & terakhir Paragraf 1 ('Urban Heat Island effect'), kalimat pertama Paragraf 2 ('consequences'), dan kalimat pertama Paragraf 3 ('counteract these vulnerabilities').",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Skimming Struktur:** Identifikasi pola alur teks: Paragraf 1 mendefinisikan *Urban Heat Island (UHI)* dan penyebabnya; Paragraf 2 memaparkan dampak kesehatan/ekologi; Paragraf 3 menjelaskan solusi *green infrastructure*.\n2. **Sintesis Tesis:** Gabungkan benang merah ketiga paragraf menjadi satu pernyataan utuh: *causes, impacts, and mitigation strategies of the Urban Heat Island effect*.\n3. **Parafrasa ke Opsi:** Cari opsi yang menggunakan sinonim akademis (misal: *mitigate* $\\rightarrow$ *alleviate*, *consequences* $\\rightarrow$ *adverse effects*).\n\n**Deteksi Jebakan:**\n* *Jebakan Sempit:* Hanya menyebut *reflective cool roofs* (hanya detail Paragraf 3).\n* *Jebakan Ekstrem:* Menyatakan *green infrastructure completely eliminates global warming* (tidak sesuai teks).",
+      "kunci_pembeda": "Main idea seluruh teks wajib merangkum seluruh fungsi paragraf (definisi, dampak, solusi), bukan hanya menonjolkan satu aspek.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Main Idea of a Specific Paragraph",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Fokus pada Paragraf 2: 'This persistent thermal elevation triggers cascading ecological and public health consequences...' diikuti detail gangguan kardiovaskular, ozon, dan lonjakan energi.",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Isolasi Zona Baca:** Abaikan Paragraf 1 dan 3; fokus penuh pada Paragraf 2.\n2. **Temukan Topic Sentence:** Kalimat pertama Paragraf 2 berfungsi sebagai kalimat topik (*triggers cascading ecological and public health consequences*).\n3. **Cek Kalimat Penjelas:** Kalimat 2–4 merinci bukti konkret dari kalimat topik tersebut: stres kardiovaskular (kesehatan), pembentukan ozon (ekologi/udara), dan lonjakan beban listrik (infrastruktur/emisi).\n4. **Eliminasi Opsi:** Pilih opsi yang memayungi seluruh detail tersebut secara kolektif.\n\n**Deteksi Jebakan:**\n* *Jebakan Detail:* Opsi yang hanya menyebut *cardiovascular stress among the elderly* (ini adalah *supporting detail*, bukan *main idea* paragraf).\n* *Jebakan Lintas Paragraf:* Opsi yang memasukkan *municipal zoning laws* (milik Paragraf 3).",
+      "kunci_pembeda": "Gagasan inti paragraf adalah payung konseptual yang membawahi seluruh contoh spesifik di dalam paragraf tersebut saja.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Best Title for the Passage",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujuk keseluruhan 3 paragraf stimulus mengenai fenomena Urban Heat Island, dampaknya pada warga kota, dan pendekatan desain perkotaan regeneratif.",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Identifikasi Kata Kunci Dominan:** Frasa *Urban Heat Island (UHI)*, *impacts/consequences*, dan *green infrastructure/urban design* mendominasi teks.\n2. **Terapkan Uji Cakupan (Scope Test):** Judul ideal berbentuk frasa benda ringkas yang mencerminkan keseluruhan isi wacana.\n3. **Bandingkan Kandidat Judul:**\n   * *Urban Heat Islands: Causes, Impacts, and Green Mitigation* (Tepat — mencakup Paragraf 1, 2, dan 3).\n   * *The History of Asphalt and Concrete in Modern Cities* (Salah — terlalu luas dan melenceng).\n   * *Mandating Rooftop Gardens on Commercial Buildings* (Salah — terlalu sempit, hanya 1 contoh di Paragraf 3).",
+      "kunci_pembeda": "Judul terbaik berfungsi seperti label kemasan yang akurat: tidak boleh lebih kecil dari isi teks maupun menjanjikan materi di luar teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Central Question Answered by the Text",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Tinjau transisi antarparagraf: Mengapa kota lebih panas (P1) $\\rightarrow$ Apa akibatnya bagi kesehatan dan energi (P2) $\\rightarrow$ Bagaimana perencana kota mengatasinya (P3).",
+      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Ubah Tesis Jadi Pertanyaan:** Konversikan struktur *Phenomenon + Consequences + Solutions* menjadi kalimat tanya (*Wh-question*).\n2. **Cocokkan dengan Bukti Teks:** Pastikan setiap bagian pertanyaan dijawab secara eksplisit di dalam wacana.\n   * *Pertanyaan Tepat:* *What drives the Urban Heat Island effect, and how can cities mitigate its impacts?* (Dijawab tuntas oleh P1, P2, dan P3).\n3. **Eliminasi Pertanyaan Tak Terjawab:** Singkirkan opsi pertanyaan yang menanyakan hal absen dari teks.\n\n**Deteksi Jebakan:**\n* *Unanswered Question:* *How much does it cost to install cool roofs globally?* (Biaya finansial tidak pernah dibahas di teks).\n* *Partial Question:* *Why do vehicles emit waste heat?* (Terlalu mikro).",
+      "kunci_pembeda": "Pertanyaan utama yang tepat harus memiliki jawaban lengkap yang tersebar merata di seluruh paragraf wacana.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Which of the following best expresses the main idea of the entire passage?",
+      "opsi_jawaban": [
+        "A. Nocturnal heat retention in asphalt and concrete is the sole reason metropolitan areas experience higher temperatures than rural regions.",
+        "B. Rising summer electricity demand caused by air-conditioning units has made fossil-fuel power generation unsustainable in large cities.",
+        "C. The Urban Heat Island effect poses severe health and ecological risks, prompting cities to adopt regenerative green infrastructure to lower urban temperatures.",
+        "D. Municipal zoning laws should strictly ban traditional roofing materials in favor of commercial rooftop gardens to prevent stormwater flooding.",
+        "E. Ground-level ozone formation is the most dangerous consequence of urban expansion for elderly residents and outdoor workers."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "**Kunci: C.** Opsi C menyintesis seluruh alur wacana: fenomena UHI (Paragraf 1), risiko kesehatan dan ekologi (Paragraf 2), serta solusi infrastruktur hijau (Paragraf 3).\n* **A salah:** Kata ekstrem *sole reason* (mengabaikan panas limbah kendaraan dan AC).\n* **B & E salah:** *Too narrow*, hanya mengambil satu detail kecil dari Paragraf 2.\n* **D salah:** *Too narrow* dan mengandung klaim keharusan (*strictly ban*) yang tidak disebutkan teks.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "What is the primary focus of the second paragraph?",
+      "opsi_jawaban": [
+        "A. Explaining the thermodynamic process by which concrete absorbs solar radiation",
+        "B. Illustrating how elevated urban heat harms human health, air quality, and energy systems",
+        "C. Comparing cardiovascular disease rates between urban elderly residents and rural workers",
+        "D. Proposing legislative reforms to reduce greenhouse gas emissions from power plants",
+        "E. Evaluating the effectiveness of permeable pavements in reducing summer peak energy demand"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Kunci: B.** Kalimat pertama Paragraf 2 (*triggers cascading ecological and public health consequences*) langsung dirinci melalui gangguan kardiovaskular (*human health*), pembentukan ozon (*air quality*), dan lonjakan beban listrik (*energy systems*).\n* **A salah:** Membahas isi Paragraf 1.\n* **C salah:** Teks tidak membandingkan angka statistik antara kota dan desa.\n* **D & E salah:** Membahas solusi kebijakan dan teknologi yang baru muncul di Paragraf 3.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Evaluate whether each proposed title or central question accurately reflects the scope of the passage as a whole.\n\n| No. | Proposed Title / Central Question | Appropriate (Yes) | Inappropriate (No) |\n|---|---|---|---|\n| 1 | *Addressing Urban Heat Islands: Health Risks and Green Urban Design* (Title) | | |\n| 2 | *How Much Do Municipal Zoning Laws Cost Commercial Developers?* (Central Question) | | |\n| 3 | *What Causes the Urban Heat Island Effect and How Can Cities Counteract It?* (Central Question) | | |",
+      "opsi_jawaban": [
+        "A. Yes - Yes - No",
+        "B. Yes - No - Yes",
+        "C. No - Yes - Yes",
+        "D. Yes - No - No",
+        "E. No - No - Yes"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "**Kunci: B (Yes - No - Yes).**\n* **Pernyataan 1 (Yes):** Judul mencakup fenomena UHI, risiko kesehatan (Paragraf 2), dan desain kota hijau (Paragraf 3) secara proporsional.\n* **Pernyataan 2 (No):** Biaya finansial bagi pengembang komersial (*cost*) tidak pernah dibahas di dalam teks.\n* **Pernyataan 3 (Yes):** Pertanyaan penyebab UHI (Paragraf 1) dan cara mengatasinya (Paragraf 3) dijawab langsung oleh struktur wacana.",
+      "visual": null
+    }
+  ]
+}

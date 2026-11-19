@@ -13,10 +13,11 @@ import {
   Layers,
   Shuffle,
   ShieldCheck,
+  CheckCircle2,
 } from 'lucide-react';
 import type { SubtestItem } from '../../types/material';
 import { UTBK_SYLLABUS } from '../../lib/syllabusData';
-import { PRELOADED_MATERIALS } from '../../lib/contentLoader';
+import { PRELOADED_MATERIALS, isSubchapterCompleted } from '../../lib/contentLoader';
 import {
   getSeenStats,
   resetSeenQuestions,
@@ -96,6 +97,26 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   const [drillingSubtestCode, setDrillingSubtestCode] = useState<string>(subtest.code);
   const [orderMode, setOrderMode] = useState<OrderMode>('blocking');
   const [seenStatsVersion, setSeenStatsVersion] = useState<number>(0);
+  const [progressVersion, setProgressVersion] = useState<number>(0);
+
+  // Sync completion progress state
+  useEffect(() => {
+    const handleProgress = () => setProgressVersion((v) => v + 1);
+    window.addEventListener('utbk_progress_changed', handleProgress);
+    return () => window.removeEventListener('utbk_progress_changed', handleProgress);
+  }, []);
+
+  // Completed subtopics count
+  const completedCount = useMemo(() => {
+    void progressVersion;
+    let count = 0;
+    (subtest.modules || []).forEach((m) => {
+      m.subtopics.forEach((s) => {
+        if (isSubchapterCompleted(s.id)) count++;
+      });
+    });
+    return count;
+  }, [subtest, progressVersion]);
 
   // Sync drilling subtest code when subtest prop changes
   useEffect(() => {
@@ -376,6 +397,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-gradient-to-r dark:from-blue-950/80 dark:to-indigo-950/80 border border-stone-200 dark:border-cyan-500/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]">
                   <span className="text-slate-900 dark:text-cyan-200 font-bold">{subtest.modules?.length || 0} Bab</span>
                   <span className="text-slate-400 dark:text-slate-400 text-xs">• {totalSubtopics} Sub-bab</span>
+                  {completedCount > 0 && (
+                    <span className="text-emerald-600 dark:text-emerald-400 font-bold text-xs">• {completedCount} Selesai</span>
+                  )}
                 </div>
               )}
               <ThemeToggle
@@ -543,8 +567,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 </div>
                               </div>
 
-                              {/* Right: Clean Read Action Pill */}
-                              <div className="shrink-0 ml-2">
+                              {/* Right: Clean Read Action Pill & Completion Status */}
+                              <div className="shrink-0 ml-2 flex items-center gap-1.5">
+                                {isSubchapterCompleted(sub.id) && (
+                                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
+                                    <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                                    <span className="hidden sm:inline">Selesai</span>
+                                  </span>
+                                )}
                                 <span
                                   className={`flex items-center gap-1 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-bold transition-all shadow-2xs group-hover/sub:translate-x-1 ${subtestTheme.actionPill}`}
                                 >

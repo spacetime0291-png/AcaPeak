@@ -1,0 +1,106 @@
+{
+  "kode_subbab": "lbi-03-05",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 3: Literasi Teks Sastra dan Literasi Ilmu Pengetahuan",
+  "judul_subbab": "Literasi Teks Ulasan (Review Text)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Pengulas menulis: 'Alur novel ini melambat pada bab tengah akibat deskripsi arsip yang bertele-tele, meski riset sejarahnya patut dipuji.' Apakah pengulas menyimpulkan novel tersebut gagal total secara kualitas?",
+      "opsi_cepat": [
+        "Ya, karena alur yang lambat merusak keseluruhan struktur narasi.",
+        "Tidak, kelemahan tempo narasi diakui berdampingan dengan keunggulan riset."
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta terjebak menyamaratakan kritik parsial menjadi penolakan total. Dalam teks ulasan UTBK, evaluasi bersifat seimbang antara aspek teknis yang lemah dan substansi yang kuat."
+    },
+    "konsep_inti_markdown": "- **Teks Ulasan**: Teks evaluatif yang menimbang kualitas, kelebihan, dan kelemahan karya/produk berdasarkan bukti objektif.\n- **Struktur Kunci**: Identitas/Orientasi $\\rightarrow$ Tafsiran Isi/Fitur $\\rightarrow$ Evaluasi (Plus-Minus) $\\rightarrow$ Rangkuman/Rekomendasi.\n- **Prinsip Baca UTBK**: Pisahkan secara tegas antara **fakta deskriptif objek** (data/spesifikasi/alur) dan **klaim evaluatif pengulas** (opini nilai beserta bukti pendukungnya).",
+    "radar_jebakan_utbk": [
+      "Menganggap opini pengulas sebagai fakta mutlak atau menyamaratakan kritik pada satu bagian menjadi cacat keseluruhan karya.",
+      "Tertukar antara sudut pandang Pengulas 1 dan Pengulas 2 saat menyimpulkan kesepakatan atau pertentangan penilaian."
+    ],
+    "stimulus_utama_bersama": "Ulasan 1 (Raka Pratama, Kritikus Budaya):\nFilm dokumenter *Jejak Air di Hulu* (2024) garapan sutradara Larasati merekam krisis penyusutan mata air di pegunungan Jawa Tengah selama tiga tahun. Secara sinematografi, pengambilan gambar udara dengan kamera resolusi tinggi berhasil menangkap kontras menyakitkan antara hutan lindung yang tersisa dan ekspansi lahan pertanian intensif. Kekuatan utama film berdurasi 95 menit ini terletak pada keberaniannya menghadirkan kesaksian warga adat tanpa narasi pengantar yang menggurui. Namun, pada paruh kedua, transisi antarbabak terasa melompat karena absennya peta kronologi perubahan tata ruang yang jelas. Akibatnya, penonton awam berisiko kehilangan konteks keterkaitan antara kebijakan izin tambang pasir pada 2018 dan kekeringan sumur warga pada 2023. Meski memiliki celah struktur penyuntingan, dokumenter ini tetap wajib ditonton sebagai rujukan penting diskusi ekologi.\n\nUlasan 2 (Dina Maharani, Peneliti Kebijakan Lingkungan):\nSebagai dokumentasi visual lapangan, *Jejak Air di Hulu* menyajikan rekaman empiris yang kuat mengenai degradasi daerah tangkapan air. Pilihan sutradara meniadakan narator tunggal memang memberi ruang autentik bagi suara petani lokal, tetapi keputusan artistik tersebut justru menjadi titik lemah dari sisi edukasi kebijakan. Tanpa penjelasan teknis mengenai mekanisme hidrologi dan data debit air tahunan, film ini lebih dominan menggugah emosi ketimbang membedah akar persoalan regulasi. Selain itu, wawancara dengan pihak regulator daerah hanya mendapat porsi kurang dari tiga menit sehingga keberimbangan perspektif belum tercapai optimal. Film ini layak diapresiasi sebagai pemantik empati publik, tetapi belum memadai jika dijadikan bahan kajian akademik.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifikasi Kekhasan dan Kelengkapan Paparan Objek Bahasan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Ulasan 1 kalimat 1–3: identitas film *Jejak Air di Hulu* (2024), sutradara Larasati, durasi 95 menit, serta metode perekaman tiga tahun tanpa narator pengantar.",
+      "bedah_pola_markdown": "- **Teknik Scanning**: Pindai kata kunci identitas (judul, tahun, pembuat, durasi, metode, atau ciri khas format) yang umumnya berada di awal paragraf pertama.\n- **Parafrasa ke Opsi Benar**: Gabungkan atribut faktual objek secara akurat—misalnya, dokumenter berdurasi 95 menit ini direkam selama tiga tahun dengan menonjolkan tuturan langsung warga tanpa narasi pengantar.\n- **Ciri Opsi Jebakan**:\n  1. *Terlalu Ekstrem*: Mengklaim film ini merupakan satu-satunya dokumenter lingkungan di Jawa Tengah.\n  2. *Distorsi Fakta*: Menyebut film menggunakan wawancara pejabat sebagai fokus utama (padahal Ulasan 2 menyebut porsinya kurang dari tiga menit).\n  3. *Tidak Disebut*: Menambahkan data anggaran produksi atau penghargaan festival yang tidak tercantum di teks.",
+      "kunci_pembeda": "Fokus murni pada atribut objektif dan keunikan format karya sebelum masuk ke penilaian baik atau buruk.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Evaluasi Keakuratan Paparan Kelebihan dan Kekurangan Objek Berdasarkan Bukti Teks",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Ulasan 1 kalimat 2–5 dan Ulasan 2 kalimat 2–4: penanda kontras 'Namun', 'tetapi', 'titik lemah', serta bukti visual kamera resolusi tinggi vs absennya peta kronologi.",
+      "bedah_pola_markdown": "- **Teknik Scanning**: Cari konjungsi pertentangan (*namun*, *tetapi*, *meski*) dan frasa penilai (*kekuatan utama*, *titik lemah*, *belum tercapai optimal*) lalu ikat dengan bukti konkret di kalimat sebelum/sesudahnya.\n- **Parafrasa ke Opsi Benar**: Pastikan hubungan sebab-akibat bukti terjaga—contoh: loncatan transisi antarbabak (kelemahan) terjadi karena ketiadaan peta kronologi perubahan tata ruang (bukti teks).\n- **Ciri Opsi Jebakan**:\n  1. *Tukar Sebab-Akibat*: Menganggap sinematografi buruk menjadi penyebab kebingungan penonton awam.\n  2. *Generalisasi Berlebihan*: Menyimpulkan seluruh aspek visual gagal hanya karena absennya data debit air.\n  3. *Tertukar Sumber*: Mengatribusikan kritik durasi wawancara regulator (< 3 menit) sebagai temuan Raka Pratama.",
+      "kunci_pembeda": "Setiap klaim keunggulan atau kelemahan dalam opsi wajib tertaut langsung pada bukti spesifik dalam teks.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penilaian Ketepatan Opini, Argumen Evaluatif, dan Rekomendasi Penulis Ulasan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan kalimat penutup Ulasan 1 ('dokumenter ini tetap wajib ditonton sebagai rujukan penting diskusi ekologi') dan Ulasan 2 ('layak diapresiasi sebagai pemantik empati publik, tetapi belum memadai jika dijadikan bahan kajian akademik').",
+      "bedah_pola_markdown": "- **Teknik Skimming**: Lompat ke bagian akhir tiap ulasan untuk menangkap simpulan sikap penulis, syarat kelayakan objek, dan target audiens yang direkomendasikan.\n- **Parafrasa ke Opsi Benar**: Identifikasi rekomendasi bersyarat—Dina Maharani merekomendasikan film untuk membangkitkan empati masyarakat umum, bukan untuk rujukan ilmiah/akademik.\n- **Ciri Opsi Jebakan**:\n  1. *Menghilangkan Syarat*: Menyatakan Dina melarang keras publik menonton film tersebut.\n  2. *Mencampur Fakta dan Opini*: Menganggap pernyataan 'wajib ditonton' sebagai fakta objektif, bukan opini evaluatif pengulas.\n  3. *Salah Sasaran Audiens*: Menyebut Raka menyarankan film ini khusus bagi akademisi hidrologi.",
+      "kunci_pembeda": "Menilai kelogisan simpulan sikap dan batasan rekomendasi pengulas berdasarkan premis kritik yang dibangun sebelumnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbandingan Penilaian Dua Pengulas Berbeda terhadap Satu Objek yang Sama",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Sintesis Ulasan 1 (Raka Pratama) vs Ulasan 2 (Dina Maharani) terhadap keputusan sutradara meniadakan narator dan nilai guna film.",
+      "bedah_pola_markdown": "- **Teknik Scanning Komparatif**: Petakan irisan (persamaan) dan titik pisah (perbedaan) kedua pengulas pada variabel yang sama: kekuatan visual, efek ketiadaan narator, dan kelayakan rujukan.\n- **Parafrasa ke Opsi Benar**: Kedua pengulas sepakat bahwa dokumentasi visual lapangan film ini kuat, tetapi berbeda dalam menilai ketiadaan narator (Raka: autentik; Dina: menghambat edukasi kebijakan).\n- **Ciri Opsi Jebakan**:\n  1. *Kontradiksi Palsu*: Mengklaim kedua pengulas bertentangan dalam menilai kualitas sinematografi.\n  2. *Kesepakatan Palsu*: Menyatakan keduanya sepakat film layak menjadi rujukan kajian akademik.\n  3. *Mengabaikan Latar Pengulas*: Tidak menangkap bahwa fokus kritik Raka pada struktur penyuntingan, sedangkan Dina pada substansi regulasi dan data hidrologi.",
+      "kunci_pembeda": "Memetakan titik temu (irisan penilaian) dan titik bentur (perbedaan sudut pandang) dua pengulas pada aspek spesifik karya.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan Ulasan 1, manakah hubungan evaluasi dan bukti tekstual yang paling akurat mengenai film dokumenter *Jejak Air di Hulu*?",
+      "opsi_jawaban": [
+        "A. Kualitas sinematografi dinilai kurang maksimal karena pengambilan gambar udara hanya berfokus pada ekspansi lahan pertanian.",
+        "B. Penyuntingan paruh kedua film dinilai melompat karena tidak didukung peta kronologi perubahan tata ruang yang memadai.",
+        "C. Ketiadaan narasi pengantar dikritik pengulas karena membuat kesaksian warga adat sulit dipahami oleh penonton awam.",
+        "D. Dampak kebijakan izin tambang pasir tahun 2018 dijelaskan secara rinci melalui wawancara mendalam dengan regulator daerah.",
+        "E. Durasi film selama 95 menit dianggap terlalu panjang sehingga mengaburkan pesan utama krisis penyusutan mata air."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "- **Kunci B**: Kalimat 4–5 Ulasan 1 secara eksplisit menyatakan transisi antarbabak pada paruh kedua terasa melompat akibat absennya peta kronologi perubahan tata ruang.\n- **A salah**: Sinematografi justru dipuji berhasil menangkap kontras hutan lindung dan lahan pertanian.\n- **C salah**: Ketiadaan narasi pengantar dinilai Raka sebagai kekuatan, bukan kritik.\n- **D salah**: Wawancara regulator minim hanya dibahas di Ulasan 2 (< 3 menit) dan bukan menjelaskan izin tambang secara rinci.\n- **E salah**: Tidak ada kritik terhadap durasi 95 menit.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Tentukan apakah pernyataan perbandingan sikap dan rekomendasi antara Raka Pratama (Ulasan 1) dan Dina Maharani (Ulasan 2) berikut **BENAR** atau **SALAH** berdasarkan teks!\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Kedua pengulas sama-sama mengakui kekuatan perekaman visual lapangan dalam dokumenter *Jejak Air di Hulu*. | | |\n| 2 | Raka Pratama dan Dina Maharani memiliki penilaian yang bertolak belakang mengenai dampak ketiadaan narator dalam film. | | |\n| 3 | Baik Raka maupun Dina merekomendasikan film ini sebagai rujukan utama bagi kajian kebijakan dan akademik lingkungan. | | |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah",
+        "B. Benar - Salah - Benar",
+        "C. Salah - Benar - Salah",
+        "D. Benar - Salah - Salah",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "- **Pernyataan 1 (Benar)**: Raka memuji sinematografi kamera resolusi tinggi; Dina mengakui sajian rekaman empiris visual lapangan yang kuat.\n- **Pernyataan 2 (Benar)**: Raka menilai ketiadaan narator sebagai kekuatan autentik, sedangkan Dina menilainya sebagai titik lemah edukasi kebijakan.\n- **Pernyataan 3 (Salah)**: Raka merekomendasikannya untuk diskusi ekologi, sedangkan Dina tegas menyatakan film belum memadai untuk bahan kajian akademik.\n- Susunan tepat adalah **Benar - Benar - Salah (A)**.",
+      "visual": null
+    }
+  ]
+}

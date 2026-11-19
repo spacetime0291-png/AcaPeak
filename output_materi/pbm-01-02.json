@@ -1,0 +1,120 @@
+{
+  "kode_subbab": "pbm-01-02",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 1: Ejaan (EYD V)",
+  "judul_subbab": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kalimat 'Para delegasi diminta **keluar** ruangan saat sesi tertutup **nonASEAN** dimulai,' manakah penulisan kata yang tepat menurut EYD V?",
+      "opsi_cepat": [
+        "keluar ruangan dan nonASEAN",
+        "ke luar ruangan dan non-ASEAN"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Kata 'ke luar' merujuk pada arah/tempat (lawan dari 'ke dalam') sehingga dipisah, sedangkan bentuk terikat 'non-' yang diikuti huruf kapital wajib memakai tanda hubung (-)."
+    },
+    "konsep_inti_markdown": "Kaidah EYD V memisahkan penanda relasi spasial atau makna tambahan dari kata dasar, tetapi merangkaikan imbuhan dan bentuk terikat:\n- **Preposisi (`di`, `ke`, `dari`):** Dipisah jika menunjukkan tempat/arah; dirangkai jika berupa awalan (`di-`, `ke-`).\n- **Partikel (`pun`):** Dipisah jika bermakna 'juga'; dirangkai pada 12 konjungsi baku.\n- **Gabungan Kata:** Dipisah jika hanya mendapat awalan/akhiran; dirangkai jika mendapat konfiks (awalan + akhiran).\n- **Bentuk Terikat:** Dirangkai dengan kata dasar, diberi tanda hubung (`-`) jika diikuti unsur kapital.",
+    "radar_jebakan_utbk": [
+      "Menyamakan verba 'keluar' (lawan 'masuk') dengan frasa preposisional 'ke luar' (lawan 'ke dalam').",
+      "Merangkai bentuk terikat langsung dengan unsur berhuruf kapital tanpa tanda hubung (misalnya 'nonaktif' benar, tetapi 'non-ASEAN' wajib memakai tanda hubung)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Preposisi di, ke, dari vs Prefiks di-, ke-",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Peneliti [S] membawa [P] sampel tanah [O] **kedalam** laboratorium [K] sebelum **di analisis** [P].",
+      "bedah_pola_markdown": "Preposisi (*di, ke, dari*) menandai tempat, arah, atau asal sehingga ditulis terpisah. Sebaliknya, prefiks (*di-, ke-*) membentuk verba pasif atau nomina sehingga ditulis serangkai. Kesalahan tersering muncul saat penulis gagal membedakan fungsi preposisi penunjuk arah dengan imbuhan pembentuk kata kerja. Khusus kata *keluar* (verba, lawan *masuk*) dirangkai, sedangkan *ke luar* (arah/lokasi, lawan *ke dalam*) dipisah. Kata *kemari* dan *kepada* selalu dirangkai.\n\n| Salah (Tidak Baku) | Benar (EYD V) | Analisis Fungsi & Kaidah |\n| :--- | :--- | :--- |\n| masuk **kedalam** ruang [K] | masuk **ke dalam** ruang [K] | Preposisi arah (lawan *ke luar*) |\n| **di analisis** tim [P] | **dianalisis** tim [P] | Prefiks pembentuk verba pasif |\n| **keluar** negeri [K] | **ke luar** negeri [K] | Preposisi lokasi/tujuan |\n| diminta **ke luar** [P] | diminta **keluar** [P] | Verba aktif (lawan *masuk*) |",
+      "kunci_pembeda": "Uji substitusi: jika kata dapat diubah menjadi bentuk aktif berawalan *me-* (misal *dianalisis* menjadi *menganalisis*), rangkai; jika menunjuk lokasi atau arah, pisah.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Partikel -lah, -kah, -tah, dan pun",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Apa **pun** hasil risetnya [S], tim lapangan [S] tetap bertahan [P] **walaupun** cuaca ekstrem melanda [K].",
+      "bedah_pola_markdown": "Partikel *-lah, -kah,* dan *-tah* selalu ditulis serangkai dengan kata yang mendahuluinya. Sementara itu, partikel *pun* ditulis terpisah karena bermakna 'juga' atau penegas, kecuali pada **12 kata penghubung (konjungsi) baku** yang sudah padu: *adapun, andaipun, ataupun, bagaimanapun, biarpun, kalaupun, kendatipun, maupun, meskipun, sekalipun, sungguhpun,* dan *walaupun*. Perhatikan pula perbedaan makna antara *sekalipun* (konjungsi 'meskipun') dan *sekali pun* ('satu kali saja').\n\n| Salah (Tidak Baku) | Benar (EYD V) | Analisis Fungsi & Kaidah |\n| :--- | :--- | :--- |\n| **apapun** hasilnya [S] | **apa pun** hasilnya [S] | Partikel penegas (bukan konjungsi) |\n| satu kali **pun** [K] | **sekalipun** (meskipun) [Konj] | Konjungsi konsesif (dirangkai) |\n| **walau pun** hujan [K] | **walaupun** hujan [K] | Termasuk 12 konjungsi baku |\n| siapa **kah** [P] | **siapakah** [P] | Partikel *-kah* selalu dirangkai |",
+      "kunci_pembeda": "Jika *pun* dapat diganti kata *juga* atau mengikuti kata tanya/benda (*apa pun, satu pun*), tulis terpisah; jika berfungsi sebagai penghubung antarklausa, rangkai.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Gabungan Kata Berimbuhan (Afiksasi)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Kementerian [S] **menyebar luaskan** [P] pedoman mitigasi [O] demi **pertanggung jawaban** publik [K].",
+      "bedah_pola_markdown": "Gabungan kata (kata majemuk) pada dasarnya ditulis terpisah. Jika gabungan kata hanya mendapat awalan **atau** akhiran saja, penulisannya tetap dipisah. Namun, jika gabungan kata mendapat awalan **dan** akhiran sekaligus (konfiks/imbuhan gabung), seluruh unsurnya wajib ditulis serangkai. Aturan ini berlaku konsisten baik pada kata dasar maupun kata berimbuhan kompleks.\n\n| Salah (Tidak Baku) | Benar (EYD V) | Analisis Imbuhan & Fungsi |\n| :--- | :--- | :--- |\n| **bertanggungjawab** [P] | **bertanggung jawab** [P] | Hanya mendapat prefiks *ber-* (pisah) |\n| **garisbawahi** [P] | **garis bawahi** [P] | Hanya mendapat sufiks *-i* (pisah) |\n| **menyebar luaskan** [P] | **menyebarluaskan** [P] | Konfiks *meN-kan* (rangkai) |\n| **pertanggung jawaban** [S] | **pertanggungjawaban** [S] | Konfiks *per-an* (rangkai) |",
+      "kunci_pembeda": "Hitung jumlah imbuhan di tepi gabungan kata: satu sisi (hanya depan atau belakang) tetap dipisah; dua sisi (depan dan belakang sekaligus) wajib dirangkai.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Bentuk Terikat dan Aturan Tanda Hubung",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Program [S] **pasca sarjana** [K] itu membahas kerja sama ekonomi **nonASEAN** [O].",
+      "bedah_pola_markdown": "Bentuk terikat (*adi-, antar-, catur-, dwi-, eka-, infra-, kontra-, maha-, multi-, non-, pasca-, pra-, purna-, semi-, sub-, super-, swa-, tuna-, ultra-*) tidak dapat berdiri sendiri sehingga wajib ditulis serangkai dengan kata berikutnya. Pengecualian berlaku jika bentuk terikat diikuti kata berhuruf kapital (nama diri/singkatan) atau kata *Maha* diikuti kata turunan Tuhan, yang harus memakai tanda hubung (-) atau spasi.\n\n| Salah (Tidak Baku) | Benar (EYD V) | Analisis Kaidah EYD V |\n| :--- | :--- | :--- |\n| **pasca sarjana** [K] | **pascasarjana** [K] | Bentuk terikat + kata dasar (rangkai) |\n| **nonASEAN** [O] | **non-ASEAN** [O] | Diikuti unsur kapital (pakai tanda hubung) |\n| **antar kota** [K] | **antarkota** [K] | Bentuk terikat *antar-* (rangkai) |\n| **Mahapengasih** [P] | **Maha Pengasih** [P] | *Maha* + kata turunan (dipisah & kapital) |",
+      "kunci_pembeda": "Rangkai semua bentuk terikat dengan kata biasa berhuruf kecil, tetapi sisipkan tanda hubung (-) tepat sebelum huruf kapital (seperti *non-Indonesia*, *pro-Barat*).",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Cermati paragraf berikut!\n\n(1) Pemerintah mulai menata kawasan pesisir melalui program rehabilitasi **pascabencana**. (2) Langkah ini diambil agar masyarakat tidak lagi membangun hunian **diatas** zona rawan abrasi. (3) **Kendatipun** anggaran terbatas, pemerintah daerah tetap menggandeng lembaga **nonpemerintah** untuk pendampingan. (4) Warga **pun** diminta aktif mengawasi jalannya proyek tersebut.\n\nPenulisan kata yang TIDAK sesuai dengan kaidah EYD V terdapat pada kalimat nomor ....",
+      "opsi_jawaban": [
+        "A. (1)",
+        "B. (2)",
+        "C. (3) pada kata kendatipun",
+        "D. (3) pada kata nonpemerintah",
+        "E. (4)"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat (2), kata **diatas** seharusnya ditulis terpisah menjadi **di atas** karena *di* berfungsi sebagai preposisi penunjuk tempat. Kalimat (1) sudah tepat karena *pascabencana* merupakan bentuk terikat yang dirangkai. Pada kalimat (3), *kendatipun* termasuk 12 konjungsi baku yang dirangkai dan *nonpemerintah* dirangkai karena diikuti huruf nonkapital. Pada kalimat (4), *pun* bermakna 'juga' sehingga tepat ditulis terpisah.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Manakah kalimat berikut yang seluruh penulisan katanya mengikuti kaidah EYD V?",
+      "opsi_jawaban": [
+        "A. Seluruh panitia harus bertanggungjawab atas kelancaran acara antar-provinsi tersebut.",
+        "B. Tim peneliti sedang menguji cobakan purwarupa sensor banjir di wilayah sub-daerah aliran sungai.",
+        "C. Pihak perusahaan wajib menindaklanjuti laporan kerugian sebelum masa pascaaudit berakhir.",
+        "D. Kebijakan perdagangan nonblok itu disosialisasikan dengan menyebar luaskan panduan teknis.",
+        "E. Para delegasi diminta ke luar ruangan setelah penandatangan nota kesepahaman selesai."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Opsi C benar: **menindaklanjuti** dirangkai karena gabungan kata mendapat konfiks *meN-i*, dan **pascaaudit** dirangkai karena bentuk terikat *pasca-* diikuti kata berhuruf kecil. Opsi A salah pada *bertanggungjawab* (seharusnya dipisah) dan *antar-provinsi* (seharusnya *antarprovinsi*). Opsi B salah pada *menguji cobakan* (seharusnya *mengujicobakan*) dan *sub-daerah* (seharusnya *subdaerah*). Opsi D salah pada *menyebar luaskan* (seharusnya *menyebarluaskan*). Opsi E salah pada *ke luar* (seharusnya verba *keluar*).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n*Lembaga riset nasional tersebut tengah mempersiapkan peluncuran satelit **multi fungsi** yang akan dioperasikan secara **terpadu** untuk memantau wilayah perbatasan.*\n\nTuliskan bentuk baku dari kata bercetak tebal yang penulisannya salah pada kalimat di atas!",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "multifungsi",
+      "bedah_cepat_markdown": "Kata **multi fungsi** tidak baku karena *multi-* merupakan bentuk terikat yang tidak dapat berdiri sendiri. Sesuai kaidah EYD V, bentuk terikat yang diikuti kata dasar berhuruf nonkapital wajib ditulis serangkai menjadi **multifungsi**. Sementara itu, kata **terpadu** sudah baku.",
+      "visual": null
+    }
+  ]
+}

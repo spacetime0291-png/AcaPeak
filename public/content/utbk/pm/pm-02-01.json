@@ -1,0 +1,117 @@
+{
+  "kode_subbab": "pm-02-01",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 2: Pemodelan Aljabar dan Fungsi",
+  "judul_subbab": "Sistem Persamaan Linear Kontekstual (SPLDV & SPLTV)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Harga 2 kopi dan 1 roti adalah Rp50.000, sedangkan 1 kopi dan 2 roti Rp40.000. Jika Anda hanya ingin membeli 1 kopi dan 1 roti, apakah Anda wajib menghitung harga masing-masing barang terlebih dahulu?",
+      "opsi_cepat": [
+        "Wajib eliminasi satu per satu",
+        "Tidak perlu, langsung jumlahkan keduanya lalu bagi 3"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Menjumlahkan kedua persamaan langsung menghasilkan $3(\\text{kopi} + \\text{roti}) = \\text{Rp}90.000$, sehingga paket $(1\\text{ kopi} + 1\\text{ roti})$ langsung ketemu Rp30.000 dalam 5 detik."
+    },
+    "konsep_inti_markdown": "- **Formulating**: Tetapkan variabel eksplisit untuk besaran yang belum diketahui beserta satuannya (misal: harga satuan dalam ribuan rupiah).\n- **Employing**: Ubah setiap syarat cerita menjadi persamaan linear; gunakan kombinasi aljabar (penjumlahan/pengurangan antarpersamaan) sebelum melakukan eliminasi penuh.\n- **Interpreting**: Uji kembali nilai variabel terhadap syarat dunia nyata (wajib bilangan bulat positif untuk jumlah unit/orang atau pembulatan praktis).",
+    "radar_jebakan_utbk": [
+      "Tertukar mendefinisikan variabel antara harga satuan barang dengan kuantitas unit barang yang dibeli.",
+      "Mengabaikan syarat bilangan bulat non-negatif pada variabel jumlah objek (orang, kendaraan, tiket) sehingga memilih solusi pecahan atau nol."
+    ],
+    "stimulus_utama_bersama": "Pengelola Taman Sains dan Edukasi **NusaTech Park** merilis rincian tarif layanan dan sistem penukaran poin bagi pengunjung pada tahun 2026 sebagai berikut:\n\n1. **Paket Tiket Wahana**: Terdapat tiga zona wahana utama, yakni Robotika ($x$), Antariksa ($y$), dan Energi ($z$). Pengunjung dapat membeli paket bundling: **Paket Eksplorasi** (2 tiket Robotika dan 1 tiket Antariksa) seharga Rp110.000; **Paket Inovasi** (1 tiket Robotika dan 2 tiket Energi) seharga Rp125.000; serta **Paket Lengkap** (1 tiket untuk masing-masing ketiga zona) seharga Rp120.000.\n2. **Konversi Token Permainan**: Permainan simulasi memberikan tiga jenis token logam. Nilai 1 Token Emas ($E$) setara dengan gabungan 2 Token Perak ($P$) dan 1 Token Perunggu ($G$). Sementara itu, 3 Token Perak setara dengan 5 Token Perunggu, dengan nilai dasar 1 Token Perunggu sebesar 15 poin.\n3. **Sewa Fasilitas Rombongan**: Data transaksi tiga rombongan sekolah untuk sewa loker kecil ($a$), loker sedang ($b$), dan perangkat *audio-guide* ($c$) tercatat: Rombongan A (2 loker kecil, 3 loker sedang, 1 *audio-guide*) membayar Rp170.000; Rombongan B (3 loker kecil, 1 loker sedang, 2 *audio-guide*) membayar Rp170.000; dan Rombongan C (1 loker kecil, 2 loker sedang, 3 *audio-guide*) membayar Rp200.000.\n4. **Subsidi Armada Antar-Jemput**: Panitia mengalokasikan dana subsidi tepat Rp540.000 untuk menyewa mobil listrik berkapasitas 4 penumpang (tarif Rp60.000/unit) dan minibus listrik berkapasitas 7 penumpang (tarif Rp90.000/unit), dengan syarat minimal menyewa 1 unit dari setiap jenis armada.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pemodelan Transaksi Tiket, Paket Bundling Produk, atau Komposisi Nutrisi ke dalam SPLDV/SPLTV",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian (1) stimulus NusaTech Park, tentukan harga satuan tiket wahana Robotika ($x$), Antariksa ($y$), dan Energi ($z$).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nMisalkan $x, y, z$ berturut-turut adalah harga satuan tiket wahana Robotika, Antariksa, dan Energi dalam satuan ribuan rupiah.\n\n**2. Model Matematika (Employing)**\nBerdasarkan rincian paket bundling pada bagian (1) stimulus, diperoleh sistem persamaan linear tiga variabel:\n- Paket Eksplorasi: $2x + y = 110$\n- Paket Inovasi: $x + 2z = 125$\n- Paket Lengkap: $x + y + z = 120$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nSubstitusi $y = 110 - 2x$ dari persamaan pertama ke persamaan ketiga menghasilkan $x + (110 - 2x) + z = 120$, sehingga $z = x + 10$. Masukkan $z = x + 10$ ke persamaan kedua: $x + 2(x + 10) = 125 \\rightarrow 3x = 105$, diperoleh $x = 35$. Akibatnya, $z = 45$ dan $y = 40$. Dalam konteks nyata, tarif satuan tiket berturut-turut Rp35.000, Rp40.000, dan Rp45.000.",
+      "kunci_pembeda": "Setiap paket bundling diterjemahkan menjadi satu persamaan linear dengan koefisien berupa kuantitas item di dalam paket tersebut.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Masalah Keseimbangan Timbangan, Campuran Logam, atau Konversi Poin Permainan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian (2) stimulus NusaTech Park, tentukan selisih nilai poin antara 1 Token Emas ($E$) dan 1 Token Perak ($P$).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nNyatakan variabel $E, P, G$ sebagai nilai poin untuk masing-masing satu keping Token Emas, Token Perak, dan Token Perunggu.\n\n**2. Model Matematika (Employing)**\nDari relasi kesetaraan nilai tukar pada bagian (2) stimulus, susun sistem persamaan substitusi berantai:\n- Kesetaraan pertama: $E = 2P + G$\n- Kesetaraan kedua: $3P = 5G$\n- Nilai patokan dasar: $G = 15$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nMulai dari variabel yang diketahui nilainya secara eksplisit, yakni $G = 15$. Substitusikan ke persamaan kedua: $3P = 5(15) = 75$, sehingga diperoleh $P = 25$ poin. Selanjutnya, masukkan nilai $P = 25$ dan $G = 15$ ke persamaan pertama: $E = 2(25) + 15 = 65$ poin. Evaluasi pertanyaan meminta selisih nilai poin antara satu Token Emas dan satu Token Perak, yaitu $E - P = 65 - 25 = 40$ poin.",
+      "kunci_pembeda": "Hubungan kesetaraan bobot atau nilai tukar membentuk persamaan tanpa konstanta bebas yang diselesaikan lewat substitusi berantai dari satuan terkecil.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "SPLTV Kontekstual yang Tidak Membutuhkan Solusi Tiap Variabel, Melainkan Kombinasi Langsung ($x + y + z$)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Merujuk bagian (3) stimulus NusaTech Park, tentukan total biaya sewa untuk 1 loker kecil ($a$), 1 loker sedang ($b$), dan 1 perangkat audio-guide ($c$).",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nMisalkan $a, b, c$ berturut-turut menyatakan tarif sewa satuan loker kecil, loker sedang, dan perangkat *audio-guide* dalam ribuan rupiah.\n\n**2. Model Matematika (Employing)**\nCatatan transaksi tiga rombongan sekolah pada bagian (3) membentuk sistem persamaan linear siklik:\n- Rombongan A: $2a + 3b + c = 170$\n- Rombongan B: $3a + b + 2c = 170$\n- Rombongan C: $a + 2b + 3c = 200$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nPerhatikan simetri koefisien pada ketiga variabel. Jangan melakukan eliminasi satu per satu karena membuang waktu. Jumlahkan ketiga persamaan secara langsung untuk memperoleh $(2+3+1)a + (3+1+2)b + (1+2+3)c = 170 + 170 + 200$, yang disederhanakan menjadi $6(a + b + c) = 540$. Bagi kedua ruas dengan $6$, didapat $a + b + c = 90$. Jadi, biaya paket gabungan satu unit tiap fasilitas adalah Rp90.000.",
+      "kunci_pembeda": "Koefisien seluruh persamaan memiliki pola jumlah yang simetris sehingga operasi penjumlahan antarpersamaan langsung menghasilkan kombinasi target.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Sistem Persamaan Linear dengan Kendala Bilangan Bulat Non-Negatif (Diophantine Kontekstual)",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Merujuk bagian (4) stimulus NusaTech Park, tentukan kapasitas penumpang maksimal yang dapat diangkut dengan dana subsidi Rp540.000.",
+      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nMisalkan $m$ adalah banyak unit mobil listrik dan $n$ adalah banyak unit minibus listrik yang disewa panitia, dengan syarat kendala $m, n \\ge 1$ dan $m, n \\in \\mathbb{Z}$.\n\n**2. Model Matematika (Employing)**\nAlokasi anggaran subsidi Rp540.000 membentuk satu persamaan linear dua variabel dengan domain bilangan bulat positif:\n- Persamaan anggaran: $60.000m + 90.000n = 540.000 \\rightarrow 2m + 3n = 18$\n- Fungsi kapasitas: $K = 4m + 7n$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nKarena $2m = 18 - 3n$ harus genap dan positif, maka $n$ wajib bilangan genap positif kurang dari $6$. Uji nilai $n = 2$ menghasilkan $m = 6$ dengan kapasitas $K = 4(6) + 7(2) = 38$ penumpang. Uji nilai $n = 4$ menghasilkan $m = 3$ dengan kapasitas $K = 4(3) + 7(4) = 40$ penumpang. Maka, kapasitas maksimal yang terangkut adalah $40$ penumpang.",
+      "kunci_pembeda": "Jumlah persamaan lebih sedikit daripada jumlah variabel, sehingga himpunan penyelesaian dibatasi oleh syarat bilangan bulat non-negatif dan paritas kelipatan.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Merujuk informasi pada stimulus **NusaTech Park**, sebuah keluarga membeli 3 tiket wahana Robotika, 2 tiket wahana Antariksa, dan 1 tiket wahana Energi secara satuan. Jika mereka menukarkan 4 Token Emas dan 2 Token Perak untuk potongan harga—dengan ketentuan setiap 10 poin bernilai diskon Rp1.000—total biaya bersih yang harus dibayar adalah ....",
+      "opsi_jawaban": [
+        "A. Rp189.000",
+        "B. Rp199.000",
+        "C. Rp204.000",
+        "D. Rp209.000",
+        "E. Rp230.000"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Dari SPLTV bagian (1), diperoleh tarif satuan $x = \\text{Rp}35.000$, $y = \\text{Rp}40.000$, dan $z = \\text{Rp}45.000$, sehingga harga tiket awal adalah $3(35.000) + 2(40.000) + 45.000 = \\text{Rp}230.000$. Dari bagian (2), $P = 25$ poin dan $E = 65$ poin, sehingga $4E + 2P = 310$ poin atau diskon Rp31.000. Biaya bersih adalah $\\text{Rp}230.000 - \\text{Rp}31.000 = \\text{Rp}199.000$. Opsi E salah karena belum dikurangi diskon, sedangkan opsi C keliru menghitung nilai Token Emas.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Merujuk bagian (3) stimulus **NusaTech Park**, Rombongan D berencana menyewa masing-masing 4 unit loker kecil ($a$), 4 unit loker sedang ($b$), dan 4 unit perangkat *audio-guide* ($c$).\n\n| Kuantitas $P$ | Kuantitas $Q$ |\n| :--- | :--- |\n| Total biaya sewa fasilitas Rombongan D | Rp350.000 |\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$ berdasarkan informasi yang diberikan?",
+      "opsi_jawaban": [
+        "A. Kuantitas P lebih besar daripada Q",
+        "B. Kuantitas P lebih kecil daripada Q",
+        "C. Kuantitas P sama dengan Q",
+        "D. Kuantitas P sama dengan Q ditambah Rp20.000",
+        "E. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari pilihan di atas"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Jumlahkan ketiga persamaan transaksi pada bagian (3) sehingga diperoleh $6a + 6b + 6c = \\text{Rp}540.000$, atau $a + b + c = \\text{Rp}90.000$. Biaya sewa Rombongan D adalah $P = 4(a + b + c) = 4 \\times \\text{Rp}90.000 = \\text{Rp}360.000$. Dibandingkan dengan $Q = \\text{Rp}350.000$, jelas bahwa $P > Q$. Opsi E salah karena kombinasi $(a+b+c)$ dapat ditentukan secara tunggal tanpa mencari tarif tiap barang.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Merujuk bagian (4) stimulus **NusaTech Park**, apabila jumlah peserta rombongan yang wajib diangkut ke lokasi pameran adalah **39 orang** dan seluruh dana subsidi tepat Rp540.000 harus terpakai habis, berapa **minimal** total unit kendaraan gabungan (mobil listrik dan minibus listrik) yang harus disewa panitia agar seluruh peserta terangkut? *(Tuliskan jawaban dalam bilangan bulat saja)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "7",
+      "bedah_cepat_markdown": "Persamaan anggaran $60.000m + 90.000n = 540.000$ disederhanakan menjadi $2m + 3n = 18$ dengan syarat $m, n \\ge 1$. Hanya terdapat dua pasangan bilangan bulat positif: $(m, n) = (6, 2)$ berkapasitas $4(6) + 7(2) = 38$ penumpang (kurang dari $39$ orang) dan $(m, n) = (3, 4)$ berkapasitas $4(3) + 7(4) = 40$ penumpang. Agar $39$ peserta terangkut seluruhnya, panitia wajib memilih kombinasi kedua dengan total $3 + 4 = 7$ unit kendaraan.",
+      "visual": null
+    }
+  ]
+}

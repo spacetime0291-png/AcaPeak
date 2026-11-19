@@ -1,0 +1,124 @@
+{
+  "kode_subbab": "ppu-02-03",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 2: Morfologi dan Frasa",
+  "judul_subbab": "Pola Frasa Inti–Penjelas (DM/MD) dan Kesamaan Pola",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam frasa 'tiga unit kendaraan listrik baru', manakah kata yang menjadi inti utama kelompok kata tersebut: 'tiga', 'kendaraan', atau 'baru'?",
+      "opsi_cepat": [
+        "Kata 'tiga' karena berada di posisi paling awal",
+        "Kata 'kendaraan' sebagai pusat makna yang dijelaskan"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Dalam bahasa Indonesia, angka dan penggolong ('tiga unit') mendahului inti (pola MD), sedangkan keterangan sifat ('listrik baru') mengikuti inti (pola DM). Peserta sering tertipu menganggap kata pertama selalu menjadi inti frasa."
+    },
+    "konsep_inti_markdown": "**Pola frasa inti–penjelas** menguji kepekaan membedah susunan gabungan kata dan kesetaraan maknanya sesuai EYD V dan KBBI VI:\n\n* **Hukum DM vs MD:** Unsur inti (Diterangkan) umumnya berada di depan penjelas (Menerangkan), kecuali penanda jumlah atau modalitas yang mendahului inti.\n* **Hubungan Makna Setara:** Dua frasa berpola identik jika memiliki relasi logis sama (misal: *alat–fungsi* atau *bahan–produk*).\n* **Batas Frasa & Kejelasan:** Pemenggalan kelompok kata yang tepat mencegah makna ganda (ambiguitas) dalam kalimat.",
+    "radar_jebakan_utbk": [
+      "Menyamakan frasa berdasarkan kesamaan kelas kata permukaannya saja, padahal susunan inti–penjelasnya terbalik (pola DM disamakan dengan pola MD seperti 'sedang mengkaji' dengan 'rumah sakit').",
+      "Mengabaikan urutan pewatas bertingkat pada frasa panjang (misal: menempatkan kata penunjuk 'ini/itu' di tengah frasa, bukan di posisi paling akhir sebagai penutup batas frasa)."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Identifikasi Frasa dengan Pola Inti–Penjelas Identik (Diterangkan-Menerangkan atau DM vs MD)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Tim peneliti memantau **kualitas udara** perkotaan yang **mulai membaik** setelah penerapan kebijakan rendah emisi.",
+      "bedah_pola_markdown": "**Bedah Pola Inti–Penjelas & Fungsi:**\nPerhatikan dua frasa dalam struktur kalimat berikut: [S] *Tim peneliti* + [P] *memantau* + [O] ***kualitas udara** perkotaan* + [K] *yang **mulai membaik** setelah kebijakan rendah emisi*. Frasa **kualitas udara** berpola **DM** (Inti: *kualitas* + Penjelas: *udara*), sedangkan **mulai membaik** berpola **MD** (Penjelas aspek: *mulai* + Inti: *membaik*). Pada soal UTBK, kesamaan pola ditentukan oleh letak unsur inti, bukan sekadar kemiripan bunyi sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Lahan gambut** (DM) disamakan dengan **telah terbakar** (MD). | **Lahan gambut** (DM) sejajar dengan **hutan lindung** (DM). |\n| Penempatan penunjuk salah: **gedung ini bertingkat**. | Penempatan penunjuk baku: **gedung bertingkat ini** (D-M-M). |\n\n**Strategi Eksekusi:** Temukan kata yang menjadi pusat pembicaraan (inti) di tiap frasa, tandai arah penjelasnya (DM atau MD), lalu eliminasi opsi dengan arah inti terbalik.",
+      "kunci_pembeda": "Menentukan arah letak unsur pusat makna (DM atau MD) serta urutan pewatas bertingkat untuk memastikan kesamaan struktur sintaksis frasa.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Pencarian Frasa dengan Pola Hubungan Makna Setara (Alat–Fungsi, Bahan–Produk, Sifat–Benda)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Para perajin memanfaatkan **serat nanas** untuk menenun **kain tradisional** menggunakan **alat tenun** berteknologi sederhana.",
+      "bedah_pola_markdown": "**Bedah Pola Hubungan Makna & Fungsi:**\nPerhatikan relasi logis antarunsur pada kalimat berikut: [S] *Para perajin* + [P] *memanfaatkan* + [O] ***serat nanas*** (*bahan–asal*) + [K] *untuk menenun **kain tradisional** menggunakan **alat tenun*** (*alat–fungsi*). Meskipun dua frasa sama-sama berpola DM, UTBK sering menguji kesetaraan **hubungan makna internal** di antara dua unsurnya, seperti *bahan–produk*, *alat–fungsi*, *tempat–aktivitas*, atau *benda–sifat* sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Pintu kayu** (*benda–bahan*) disamakan dengan **kunci pintu** (*alat–objek*). | **Pintu kayu** (*benda–bahan*) sejajar dengan **patung perunggu** (*benda–bahan*). |\n| **Ruang bedah** (*tempat–fungsi*) disamakan dengan **dokter bedah** (*pelaku–bidang*). | **Ruang bedah** (*tempat–fungsi*) sejajar dengan **jalur evakuasi** (*tempat–fungsi*). |\n\n**Strategi Eksekusi:** Sisipkan kata penghubung penjelas di antara kedua kata dalam frasa (*terbuat dari*, *berfungsi untuk*, *bersifat*) guna menguji kesamaan relasi logisnya.",
+      "kunci_pembeda": "Menyisipkan kata penghubung relasional di antara unsur inti dan penjelas untuk mencocokkan kesetaraan logika makna kedua frasa.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Pemenggalan Kelompok Kata (Batas Frasa) yang Tepat pada Kalimat Panjang",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Badan Meteorologi memperingatkan potensi gelombang tinggi di perairan selatan Jawa selama puncak musim angin baratan.",
+      "bedah_pola_markdown": "**Bedah Pola Pemenggalan & Fungsi:**\nKalimat panjang UTBK tersusun atas kelompok kata (frasa) yang masing-masing menduduki satu fungsi utuh: [S] *Badan Meteorologi* / [P] *memperingatkan* / [O] *potensi gelombang tinggi* / [K1] *di perairan selatan Jawa* / [K2] *selama puncak musim angin baratan*. Pemenggalan jeda yang keliru memutus kesatuan inti dan penjelasnya sehingga mengaburkan gagasan utama kalimat sesuai kaidah sintaksis EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemenggalan memutus objek: *memperingatkan potensi* / *gelombang tinggi*. | Pemenggalan menjaga kesatuan objek: *memperingatkan* / *potensi gelombang tinggi*. |\n| Pemenggalan memutus preposisi: *di perairan* / *selatan Jawa*. | Pemenggalan menjaga frasa depan: *di perairan selatan Jawa*. |\n\n**Strategi Eksekusi:** Tarik batas jeda hanya di antara peralihan fungsi utama [S], [P], [O], dan [K]; jangan pernah memisahkan kata depan (*di, ke, dari*) maupun kata penghubung (*yang*) dari unsur yang dijelaskannya.",
+      "kunci_pembeda": "Memenggal kelompok kata tepat pada batas pergantian fungsi [S]-[P]-[O]-[K] tanpa memutus inti frasa dari atribut penjelasnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Perbaikan Frasa Ambigu (Makna Ganda) agar Menjadi Tunggal Makna",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Komite etik memanggil **anak pejabat tinggi** yang diduga terlibat dalam penyalahgunaan dana hibah penelitian.",
+      "bedah_pola_markdown": "**Bedah Pola Disambiguasi & Fungsi:**\nPerhatikan kelompok kata objek pada struktur berikut: [S] *Komite etik* + [P] *memanggil* + [O] ***anak pejabat tinggi***. Frasa tersebut bermakna ganda (ambigu) karena penjelas *tinggi* dapat merujuk pada postur tubuh *anak* atau jabatan *pejabat*. Dalam ragam tulis baku sesuai EYD V dan KBBI VI, ambiguitas wajib dihilangkan dengan menyisipkan kata penghubung (*yang*), preposisi (*milik*), atau tanda hubung (-) untuk mengunci batas penjelas.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Lukisan maestro terkenal** (*lukisannya atau maestronya yang terkenal*). | **Lukisan karya maestro terkenal** atau **lukisan terkenal milik maestro**. |\n| **Istri pejabat baru** (*istrinya yang baru atau jabatan suaminya baru*). | **Istri dari pejabat baru** atau **istri baru pejabat itu**. |\n\n**Strategi Eksekusi:** Uraikan dua kemungkinan tafsir frasa bertingkat, lalu sisipkan kata tugas penjelas (*yang*, *milik*, *dari*) tepat di posisi batas makna yang diinginkan.",
+      "kunci_pembeda": "Menyisipkan kata tugas penjelas ('yang', 'milik', 'dari') atau tanda hubung pada frasa bertingkat untuk mengunci satu tafsir makna yang tunggal.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Kementerian Energi mempercepat pembangunan **pembangkit listrik** tenaga surya di kawasan industri terpadu.\"\n\nKelompok kata **pembangkit listrik** pada kalimat di atas memiliki kesamaan pola susunan dengan kelompok kata bercetak tebal pada kalimat ....",
+      "opsi_jawaban": [
+        "A. Sebanyak **lima ratus** delegasi menghadiri konferensi perubahan iklim tingkat regional.",
+        "B. Tim peneliti **sedang menguji** efektivitas katalis baru pada reaktor bertekanan tinggi.",
+        "C. Otoritas pelabuhan menertibkan **kapal kargo** yang melanggar batas jalur pelayaran.",
+        "D. Masyarakat pesisir **akan membangun** tanggul penahan abrasi secara gotong royong.",
+        "E. Perusahaan manufaktur itu **belum melaporkan** rincian emisi karbon tahunan kepada publik."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Kelompok kata **pembangkit listrik** berpola inti–penjelas (DM), yakni kata inti *pembangkit* diikuti penjelas *listrik*. Pola susunan serupa terdapat pada **kapal kargo** (**opsi C**), di mana kata inti *kapal* dijelaskan oleh jenis muatannya, yakni *kargo*. Sebaliknya, **lima ratus** (**opsi A**), **sedang menguji** (**opsi B**), **akan membangun** (**opsi D**), dan **belum melaporkan** (**opsi E**) seluruhnya meletakkan unsur penjelas (jumlah, aspek, modalitas, atau ingkar) sebelum unsur intinya. Jadi, jawaban yang tepat adalah **C**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut!\n\n> \"Untuk mengurangi ketergantungan pada plastik sekali pakai, pelaku usaha kuliner beralih menggunakan **kemasan bambu** yang ramah lingkungan serta mudah terurai secara alami.\"\n\nKelompok kata **kemasan bambu** pada kalimat di atas memiliki kesamaan pola hubungan makna dengan kelompok kata ....",
+      "opsi_jawaban": [
+        "A. kereta cepat",
+        "B. mesin pendingin",
+        "C. gudang logistik",
+        "D. cangkir keramik",
+        "E. petugas lapangan"
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Kelompok kata **kemasan bambu** memiliki pola hubungan makna *produk atau benda–bahan pembuatnya* (kemasan yang terbuat dari bambu). Relasi makna yang setara terdapat pada **cangkir keramik** (**opsi D**), yakni cangkir yang terbuat dari bahan keramik. Sebaliknya, **kereta cepat** (**opsi A**) berpola *benda–sifat*, **mesin pendingin** (**opsi B**) berpola *alat–fungsi*, **gudang logistik** (**opsi C**) berpola *tempat–peruntukan*, sedangkan **petugas lapangan** (**opsi E**) berpola *pelaku–tempat tugas*. Jadi, jawaban yang tepat adalah **D**.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Dalam laporan audit keuangan tersebut, tim pemeriksa menyoroti transaksi mencurigakan milik **rumah pejabat baru** di kawasan elite ibu kota.\"\n\nManakah evaluasi yang PALING TEPAT terkait pemenggalan dan kejelasan makna kelompok kata dalam kalimat di atas?",
+      "opsi_jawaban": [
+        "A. Kelompok kata *rumah pejabat baru* bermakna ganda sehingga perlu diperjelas menjadi *rumah milik pejabat baru*.",
+        "B. Pemenggalan kalimat yang tepat memisahkan kata *milik* dari *rumah pejabat baru* karena berbeda fungsi.",
+        "C. Kelompok kata *transaksi mencurigakan* sebaiknya dipenggal menjadi *transaksi* / *mencurigakan milik*.",
+        "D. Kelompok kata *rumah pejabat baru* sudah bermakna tunggal dan tidak memerlukan kata tugas tambahan.",
+        "E. Pemenggalan yang tepat pada bagian awal kalimat adalah *Dalam laporan* / *audit keuangan tersebut*."
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Kelompok kata **rumah pejabat baru** menimbulkan makna ganda karena kata *baru* dapat menerangkan *rumah* (rumah yang baru dibeli) maupun *pejabat* (pejabat yang baru dilantik). Penyisipan kata tugas sehingga menjadi **rumah milik pejabat baru** (**opsi A**) mengunci satu tafsir yang jelas dan baku sesuai EYD V. **Opsi B**, **C**, dan **E** keliru karena memutus kesatuan inti frasa dari unsur penjelasnya, sedangkan **opsi D** gagal mengenali ambiguitas frasa bertingkat tersebut.",
+      "visual": null
+    }
+  ]
+}

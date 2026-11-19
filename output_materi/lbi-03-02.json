@@ -1,0 +1,124 @@
+{
+  "kode_subbab": "lbi-03-02",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 3: Literasi Teks Sastra dan Literasi Ilmu Pengetahuan",
+  "judul_subbab": "Penokohan, Alur, dan Prediksi Tindakan Tokoh",
+  "klasifikasi_materi": "PENGAYAAN",
+  "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 6,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam kutipan cerpen UTBK, tokoh utama tidak pernah disebut 'jujur' oleh narator, tetapi ia menolak amplop tebal sambil menatap foto anaknya yang sakit. Mengapa opsi 'tokoh bersifat serakah karena butuh uang' salah fatal?",
+      "opsi_cepat": [
+        "Karena watak ditentukan oleh keputusan akhir tokoh, bukan sekadar tekanan ekonominya",
+        "Karena narator tidak menyebutkan secara rinci jumlah uang di dalam amplop tersebut"
+      ],
+      "jawaban_benar_index": 0,
+      "penjelasan_kilat": "Banyak peserta terkecoh oleh kesulitan hidup tokoh dan mengabaikan tindakan finalnya. Pada teknik dramatik, pilihan tindakan di puncak konflik adalah bukti watak paling valid."
+    },
+    "konsep_inti_markdown": "- **Teknik Dramatik:** Watak tokoh disimpulkan tidak langsung melalui dialog, tindakan fisik, pikiran batin, dan reaksi tokoh lain—bukan pernyataan eksplisit narator.\n- **Struktur Alur:** Pengenalan (situasi awal) $\\rightarrow$ Pemunculan Konflik (pemicu masalah) $\\rightarrow$ Klimaks (puncak ketegangan/dilema) $\\rightarrow$ Penyelesaian (keputusan akhir).\n- **Prediksi & Bukti Teks:** Tindakan lanjutan wajib konsisten dengan pola karakter tokoh, sedangkan kutipan bukti harus langsung menopang sifat atau konflik batin yang ditanyakan.",
+    "radar_jebakan_utbk": [
+      "Menyimpulkan watak hanya dari tekanan atau godaan yang dihadapi tokoh, bukan dari keputusan atau respons akhirnya saat klimaks.",
+      "Memprediksi tindakan lanjutan berdasarkan moral ideal pembaca semata tanpa memperhatikan konsistensi karakter tokoh di dalam teks."
+    ],
+    "stimulus_utama_bersama": "Hujan gerimis membasahi lereng bukit Proyek Bendungan Wadasari ketika Bramantyo memeriksa laporan uji tekan beton untuk ketiga kalinya malam itu. Sebagai kepala pengawas mutu lapangan selama dua belas tahun, ia terbiasa menyusuri terowongan inspeksi seorang diri sambil mengetuk dinding penahan dengan palu baja kecil warisan ayahnya. Rekan-rekannya kerap menjulukinya \"Si Telinga Batu\" karena ketelitiannya mendeteksi rongga udara sekecil apa pun di balik lapisan semen.\n\nNamun, ketenangan Bramantyo buyar saat senternya menyorot garis retak rambut sepanjang dua meter di sektor empat dinding utama. Belum sempat ia mencatat koordinat kerusakan itu, Pak Hardi, pimpinan proyek, muncul di mulut terowongan dengan wajah tegang. \"Besok pagi gubernur datang meresmikan pengisian waduk, Bram. Jika kau laporkan temuan ini sekarang, pencairan termin akhir tertunda dan nama kita hancur,\" ujar Pak Hardi sambil menepuk bahu Bramantyo. \"Tanda tangani saja berita acara kelayakan malam ini, tambalan injeksi bisa kita kerjakan diam-diam bulan depan.\"\n\nBramantyo terdiam menatap lembar persetujuan di tangan atasannya, lalu beralih menatap rembesan air halus yang mulai menetes dari celah retakan. Di benaknya terngiang pesan mendiang ayahnya bahwa beton tidak pernah berbohong saat menahan beban jutaan kubik air, dan tiga desa hilir berada tepat di jalur limpasan bendungan. Sementara itu, biaya operasi jantung ibunya bulan depan bergantung pada bonus penyelesaian proyek yang dijanjikan Pak Hardi. Jemari Bramantyo gemetar memegang pulpen, meremas map dokumen hingga sudut kertasnya terlipat kusut.\n\nTanpa sepatah kata pun, Bramantyo menarik kembali tangannya dari map tersebut dan memasukkan pulpen ke saku kemejanya. Ia menyalakan kamera ponsel, memotret retakan itu bersama penggaris skala dari berbagai sudut, lalu mengirimkannya ke grup koordinasi tim teknis pusat sebelum Pak Hardi sempat mencegahnya.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Mengidentifikasi Watak Tokoh melalui Teknik Dramatik (Dialog, Tindakan, Pikiran, Reaksi Tokoh Lain)",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1 dan Paragraf 4 Teks Stimulus Utama (julukan rekan kerja dan aksi memotret retakan bendungan).",
+      "bedah_pola_markdown": "**Teknik Scanning & Analisis:**\n1. **Pindai Petunjuk Tidak Langsung:** Cari kata kerja tindakan, dialog, pikiran batin, atau julukan tokoh lain. Pada paragraf 1, reaksi rekan kerja menjuluki Bramantyo *\"Si Telinga Batu\"* menunjukkan ketelitian tinggi.\n2. **Verifikasi lewat Tindakan Kritis:** Pada paragraf 4, tindakan Bramantyo memotret retakan bersama penggaris skala lalu mengirimkannya ke tim teknis pusat merupakan parafrasa langsung dari sifat **berintegritas dan bertanggung jawab**.\n3. **Eliminasi Opsi Jebakan:**\n   - *Terlalu ekstrem/tidak berdasar:* Menyebut Bramantyo \"pembangkang yang membenci atasannya\" karena teks hanya menunjukkan penolakan atas kecurangan teknis, bukan kebencian personal.\n   - *Tukar peran tokoh:* Mengaitkan watak pragmatis dan manipulatif Pak Hardi pada paragraf 2 sebagai watak Bramantyo saat ia sempat terdiam meremas map dokumen.",
+      "kunci_pembeda": "Teknik dramatik menuntut pembaca menyimpulkan watak dari bukti perilaku dan pikiran tokoh, bukan mencari kata sifat eksplisit yang ditulis narator.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Menentukan Tahapan Alur (Pengenalan, Pemunculan Konflik, Klimaks, Penyelesaian) dalam Kutipan Cerita",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujukan Paragraf 1 hingga Paragraf 4 Teks Stimulus Utama (pergeseran situasi dari pemeriksaan rutin menuju keputusan akhir).",
+      "bedah_pola_markdown": "**Teknik Pemetaan Struktur Alur:**\n1. **Skimming Fungsi Tiap Paragraf:** Identifikasi perubahan intensitas masalah.\n   - *Paragraf 1 (Pengenalan):* Memperkenalkan latar tempat (Bendungan Wadasari), waktu (malam), dan profesi Bramantyo.\n   - *Paragraf 2 (Pemunculan Konflik):* Penemuan retak rambut dan desakan Pak Hardi agar meloloskan kelayakan proyek.\n   - *Paragraf 3 (Klimaks):* Puncak ketegangan batin saat Bramantyo menimbang keselamatan tiga desa hilir melawan biaya operasi jantung ibunya.\n   - *Paragraf 4 (Penyelesaian Awal):* Keputusan tegas mengirim bukti foto ke tim teknis pusat.\n2. **Ciri Opsi Jebakan:**\n   - *Keliru menetapkan klimaks:* Menganggap paragraf 2 sebagai klimaks, padahal paragraf 2 baru memicu masalah, sedangkan puncak dilema emosional terjadi pada paragraf 3.\n   - *Menganggap alur mundur:* Mengira ingatan pesan ayah di paragraf 3 mengubah alur utama menjadi sorot balik (flashback), padahal alur tetap maju.",
+      "kunci_pembeda": "Klimaks ditandai oleh titik puncak ketegangan atau dilema terberat yang memaksa tokoh mengambil keputusan penentu nasib.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Memprediksi Tindakan Tokoh Selanjutnya Berdasarkan Konsistensi Karakter dan Situasi Konflik",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Rujukan Paragraf 3 dan Paragraf 4 Teks Stimulus Utama (keputusan Bramantyo mengirim bukti kerusakan ke tim teknis pusat).",
+      "bedah_pola_markdown": "**Teknik Ekstrapolasi Logis:**\n1. **Kunci Jangkar Karakter & Aksi Terakhir:** Bramantyo konsisten menjunjung kejujuran teknis (*beton tidak pernah berbohong*) dan telah mengirim bukti foto retakan ke tim teknis pusat (paragraf 4).\n2. **Proyeksi Tindakan Berikutnya:** Tindakan lanjutan yang paling selaras adalah **menolak menandatangani berita acara kelayakan dan merekomendasikan penundaan pengisian waduk** demi perbaikan struktur, meski berisiko kehilangan bonus proyek.\n3. **Ciri Opsi Jebakan:**\n   - *Inkonsisten dengan aksi terakhir:* Memprediksi Bramantyo akhirnya menandatangani dokumen demi biaya operasi ibunya (bertentangan dengan langkahnya mengirim bukti ke tim pusat).\n   - *Melompat terlalu jauh tanpa premis:* Memprediksi Bramantyo langsung memenjarakan Pak Hardi atau mengundurkan diri tanpa dukungan fakta dalam teks.",
+      "kunci_pembeda": "Prediksi tindakan yang benar harus menjadi kelanjutan sebab-akibat langsung dari aksi terakhir tokoh dan selaras dengan prinsip utamanya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Menentukan Kutipan Bukti Teks yang Paling Mendukung Sifat atau Dilema Etis Tokoh",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 3 Teks Stimulus Utama (pertentangan antara keselamatan warga hilir dan kebutuhan biaya operasi ibu).",
+      "bedah_pola_markdown": "**Teknik Pencocokan Bukti Tekstual:**\n1. **Bedah Klaim Pertanyaan:** Jika soal menanyakan bukti *dilema etis* (benturan dua nilai moral atau kewajiban penting), cari kalimat yang memuat dua kepentingan bertolak belakang secara bersamaan.\n2. **Kunci Kalimat Bukti:** Kalimat kedua dan ketiga paragraf 3 (*\"...tiga desa hilir berada tepat di jalur limpasan bendungan. Sementara itu, biaya operasi jantung ibunya bulan depan bergantung pada bonus penyelesaian proyek...\"*) membuktikan pertentangan antara keselamatan publik dan tanggung jawab keluarga.\n3. **Ciri Opsi Jebakan:**\n   - *Hanya memuat satu sisi konflik:* Mengutip kalimat desakan Pak Hardi (paragraf 2), yang hanya menunjukkan tekanan eksternal, bukan dilema batin Bramantyo.\n   - *Bukti deskriptif latar:* Mengutip kalimat hujan gerimis di paragraf 1 yang hanya membangun suasana.",
+      "kunci_pembeda": "Kutipan bukti dilema etis wajib menampilkan benturan dua kepentingan sah yang saling meniadakan, bukan sekadar tekanan dari tokoh lain.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan kutipan cerpen tersebut, pernyataan manakah yang paling tepat menggambarkan watak Bramantyo beserta bukti tekstual yang mendukungnya?",
+      "opsi_jawaban": [
+        "A. Pragmatis dan kompromistis, ditunjukkan saat ia terdiam menatap lembar persetujuan di tangan Pak Hardi.",
+        "B. Cermat dan berintegritas tinggi, ditunjukkan oleh kebiasaan memeriksa dinding dengan palu baja serta mengirim foto retakan ke tim teknis pusat.",
+        "C. Gegabah dan emosional, ditunjukkan oleh tindakannya meremas map dokumen hingga sudut kertasnya kusut.",
+        "D. Apatis terhadap kondisi keluarga, ditunjukkan oleh keputusannya mengabaikan biaya operasi jantung ibunya demi jabatan.",
+        "E. Mudah dipengaruhi atasan, ditunjukkan oleh keraguannya saat jemarinya gemetar memegang pulpen di terowongan."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Watak cermat tergambar dari reaksi rekan kerja dan kebiasaan Bramantyo mengetuk dinding dengan palu baja (paragraf 1), sedangkan integritasnya dibuktikan oleh tindakan final memotret retakan dengan penggaris skala dan melaporkannya ke tim pusat (paragraf 4). Opsi A dan E keliru karena diam dan gemetar merupakan respons dilema sesaat sebelum ia menolak kecurangan. Opsi C salah menafsirkan ketegangan batin sebagai sifat gegabah, sedangkan Opsi D bertentangan dengan kepeduliannya terhadap operasi ibunya.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Tentukan apakah pernyataan mengenai struktur alur dalam kutipan cerpen tersebut **Benar** atau **Salah** berdasarkan teks!\n\n| No | Pernyataan Analisis Alur | Benar | Salah |\n|---|---|---|---|\n| 1 | Paragraf pertama berfungsi sebagai tahap pengenalan yang membangun latar tempat serta kepakaran tokoh utama sebelum masalah muncul. | | |\n| 2 | Puncak ketegangan (klimaks) cerita terjadi pada paragraf kedua ketika Pak Hardi meminta Bramantyo menandatangani berita acara kelayakan. | | |\n| 3 | Paragraf keempat menandai tahap awal penyelesaian konflik melalui tindakan tegas tokoh utama dalam menentukan sikap. | | |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah",
+        "B. Benar - Salah - Benar",
+        "C. Salah - Benar - Benar",
+        "D. Benar - Salah - Salah",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pernyataan (1) **Benar** karena paragraf 1 memperkenalkan latar Bendungan Wadasari dan keahlian Bramantyo. Pernyataan (2) **Salah** karena paragraf 2 baru merupakan tahap pemunculan konflik (penemuan retakan dan bujukan Pak Hardi), sedangkan klimaks (puncak dilema batin antara keselamatan warga hilir dan operasi ibu) terjadi pada paragraf 3. Pernyataan (3) **Benar** karena paragraf 4 memperlihatkan keputusan final Bramantyo mengirim bukti kerusakan ke tim teknis pusat. Urutan tepat: Benar - Salah - Benar.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Apabila cerita tersebut dilanjutkan ke paragraf berikutnya, tindakan apakah yang paling logis dilakukan oleh Bramantyo berdasarkan konsistensi karakternya dan situasi konflik terakhir?",
+      "opsi_jawaban": [
+        "A. Meminta maaf kepada Pak Hardi dan menarik kembali pesan foto yang telah terkirim ke grup tim teknis pusat.",
+        "B. Menandatangani berita acara kelayakan dengan syarat Pak Hardi mencairkan bonus operasi ibunya malam itu juga.",
+        "C. Melaporkan Pak Hardi kepada aparat penegak hukum atas dugaan tindak pidana korupsi anggaran konstruksi bendungan.",
+        "D. Menolak menandatangani dokumen kelayakan dan menyiapkan data teknis pendukung untuk menunda peresmian pengisian waduk.",
+        "E. Meninggalkan proyek Bendungan Wadasari secara diam-diam malam itu agar terhindar dari tanggung jawab peresmian."
+      ],
+      "kunci_jawaban": "D",
+      "bedah_cepat_markdown": "Pada paragraf 4, Bramantyo telah memotret retakan bersama penggaris skala dan mengirimkannya ke tim teknis pusat. Selaras dengan wataknya yang cermat, bertanggung jawab, dan berpegang pada prinsip keselamatan tiga desa hilir, langkah lanjutan paling logis adalah menolak menandatangani kelayakan serta menyiapkan data teknis untuk menunda pengisian waduk (Opsi D). Opsi A, B, dan E inkonsisten dengan keberaniannya melapor, sedangkan Opsi C melampaui konteks teks karena fokus konflik adalah kelayakan teknis, bukan korupsi anggaran.",
+      "visual": null
+    }
+  ]
+}

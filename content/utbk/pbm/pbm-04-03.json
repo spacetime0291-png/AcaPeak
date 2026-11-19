@@ -1,0 +1,118 @@
+{
+  "kode_subbab": "pbm-04-03",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 4: Penyuntingan Kalimat dan Wacana",
+  "judul_subbab": "Melengkapi Rumpang dalam Paragraf",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dalam paragraf bertema mitigasi banjir kota, kalimat (2) membahas resapan air dan kalimat (4) membahas pompa penyedot. Kalimat (3) yang rumpang paling tepat diisi kalimat yang...",
+      "opsi_cepat": [
+        "A. Menjelaskan sejarah pembangunan kanal kota sejak era kolonial",
+        "B. Menghubungkan keterbatasan daya serap tanah dengan kebutuhan pompa mekanis"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta memilih opsi yang topiknya masih seputar banjir, padahal kalimat rumpang wajib menjadi jembatan logika langsung antara kalimat sebelum dan sesudahnya."
+    },
+    "konsep_inti_markdown": "Melengkapi rumpang menuntut keselarasan **kohesi** (bentuk bahasa) dan **koherensi** (kepaduan makna) antarbagian teks sesuai EYD V dan KBBI VI.\n\n* **Posisi Awal:** Berisi gagasan utama deduktif yang memayungi seluruh kalimat penjelas berikutnya.\n* **Posisi Tengah:** Berfungsi sebagai jembatan logika sebab-akibat, pertentangan, atau perincian antarkalimat.\n* **Posisi Akhir:** Berisi simpulan induktif yang merangkum premis sebelumnya.\n* **Tingkat Kata/Frasa:** Wajib sejajar secara sintaksis (`[S]-[P]-[O]-[K]`), memakai konjungsi intrakalimat atau antarkalimat secara tepat, dan menaati kaidah peluluhan imbuhan.",
+    "radar_jebakan_utbk": [
+      "Terjebak opsi yang satu topik besar dengan bacaan, tetapi melompat dari fokus kalimat tepat sebelum dan sesudah bagian rumpang.",
+      "Mengabaikan kesejajaran pola imbuhan (meN- vs di-) serta kesalahan tanda baca koma setelah konjungsi antarkalimat."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Melengkapi Kalimat Rumpang di Awal, Tengah, atau Akhir Paragraf agar Koheren",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "(1) [...]. (2) Sektor pertanian menyerap lebih dari 70 persen pasokan air tawar global untuk irigasi. (3) Sementara itu, industri manufaktur dan konsumsi rumah tangga berbagi sisa kuota yang kian menipis akibat kemarau panjang.",
+      "bedah_pola_markdown": "Identifikasi posisi rumpang terlebih dahulu untuk menentukan fungsi gagasannya. Pada rumpang awal, tarik simpulan payung dari kalimat (2) dan (3). Pada rumpang akhir, periksa konjungsi penyimpul seperti *dengan demikian* atau *oleh karena itu* yang wajib diikuti tanda koma sesuai EYD V.\n\n| Aspek | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Rumpang Awal** | Air tawar sangat penting bagi kehidupan manusia di bumi. *(terlalu luas)* | **Krisis ketersediaan air tawar global dipicu oleh ketimpangan distribusi antarsektor.** *(payung spesifik)* |\n| **Rumpang Akhir** | Oleh karena itu penghematan air harus dilakukan. *(tanpa koma)* | **Oleh karena itu,** `[K]` **efisiensi irigasi** `[S]` **menjadi** `[P]` **prioritas utama** `[Pel]`. |\n\nPastikan subjek kalimat baru merujuk kata kunci kalimat tetangga melalui repetisi atau kata ganti (*hal tersebut*, *kondisi ini*). Hindari opsi yang memunculkan variabel baru tanpa kaitan dengan kalimat berikutnya.",
+      "kunci_pembeda": "Rumpang awal menuntut gagasan umum yang mencakup seluruh rincian berikutnya, sedangkan rumpang akhir menuntut simpulan logis dari seluruh premis sebelumnya.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Melengkapi Frasa/Klausa Rumpang di Dalam Kalimat Berdasarkan Konteks Kalimat Sebelahnya",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "(1) Bank sentral mempertahankan suku bunga acuan demi meredam inflasi pangan. (2) Kebijakan ketat tersebut diambil [...], meskipun pertumbuhan kredit konsumsi berpotensi melambat.",
+      "bedah_pola_markdown": "Analisis struktur sintaksis kalimat yang rumpang agar pengisi frasa atau klausa tidak menimbulkan kalimat buntung (tanpa predikat) maupun pleonasme. Perhatikan konjungsi intrakalimat (*karena*, *sehingga*, *sedangkan*) serta rujukan makna dari kalimat sebelumnya.\n\n| Konteks | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Klausa Sebab** | Kebijakan `[S]` diambil `[P]` **karena untuk menjaga stabilitas rupiah** `[K]`. *(konjungsi ganda)* | Kebijakan `[S]` diambil `[P]` **untuk menjaga stabilitas rupiah** `[K]`. *(frasa tujuan efektif)* |\n| **Kesejajaran** | Langkah itu `[S]` bertujuan `[P]` menstabilkan harga `[O]` dan **pengendalian inflasi**. | Langkah itu `[S]` bertujuan `[P]` **menstabilkan** harga dan **mengendalikan** inflasi `[O]`. |\n\nSesuai EYD V, klausa anak kalimat yang mendahului induk kalimat wajib dipisahkan tanda koma, sedangkan anak kalimat di belakang induk kalimat tidak memakai koma. Pastikan pula kelas kata pengisi rumpang sejajar dengan unsur yang dihubungkan konjungsi koordinatif.",
+      "kunci_pembeda": "Fokus pada kelengkapan fungsi inti [S]-[P] dan kesejajaran kategori kata di dalam satu kalimat agar tidak terjadi kalimat tidak bersubjek atau konjungsi ganda.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Melengkapi Deretan Kata Berimbuhan yang Rumpang dalam Satu Paragraf",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Pemerintah daerah berupaya [...] (tata) kawasan pesisir untuk [...] (kurang) risiko abrasi sekaligus [...] (sejahtera) nelayan lokal secara berkelanjutan.",
+      "bedah_pola_markdown": "Uji setiap kata berimbuhan berdasarkan fungsi sintaksis (`[P]` aktif transitif memakai *meN-*, pasif memakai *di-*, sedangkan nomina hasil memakai *peN-...-an*) serta kaidah peluluhan fonem K-T-S-P dalam KBBI VI dan EYD V.\n\n| Kata Dasar | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **kaji** (*meN-*) | Tim peneliti `[S]` **mengkaji** `[P]` dampak emisi `[O]`. *(tidak luluh)* | Tim peneliti `[S]` **mengaji** `[P]` dampak emisi `[O]`. *(K luluh)* |\n| **ubah** (*meN-*) | Inovasi `[S]` **merubah** `[P]` pola konsumsi `[O]`. *(bukan dasar rubah)* | Inovasi `[S]` **mengubah** `[P]` pola konsumsi `[O]`. *(dasar ubah)* |\n| **sejahtera** | Program `[S]` **mensejahterakan** `[P]` warga `[O]`. *(S tidak luluh)* | Program `[S]` **menyejahterakan** `[P]` warga `[O]`. *(S luluh)* |\n\nIngat bahwa fonem *k, t, s, p* di awal kata dasar luluh jika diikuti vokal, tetapi tidak luluh jika diikuti konsonan (*mengklasifikasi*, *memproduksi*).",
+      "kunci_pembeda": "Wajib mengecek kesesuaian diatesis aktif-pasif serta peluluhan morfofonemik K-T-S-P dan penulisan terikat bentuk terikat seperti antar-, pasca-, dan non-.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Menentukan Kalimat Penjelas yang Tepat untuk Mengisi Celah Logika Antar-Kalimat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "(1) Penggunaan pupuk kimia berlebihan menurunkan kadar bahan organik tanah pertanian. (2) [...]. (3) Akibatnya, akar tanaman kesulitan menyerap unsur hara mikro meskipun pemupukan terus ditambah.",
+      "bedah_pola_markdown": "Celah logika muncul ketika kalimat sebelum dan sesudah rumpang melompati satu tahapan proses sebab-akibat. Hubungkan objek pada kalimat sebelumnya dengan subjek kalimat sesudahnya agar rantai kausalitas utuh dan tidak sumbang.\n\n| Hubungan Logika | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Mekanisme Proses** | Petani sering mengeluhkan harga pupuk subsidi yang mahal. *(melenceng ke ekonomi)* | **Penurunan bahan organik tersebut** `[S]` **mengeraskan** `[P]` **struktur pori tanah** `[O]`. *(jembatan fisik tanah)* |\n| **Konjungsi Antarkalimat** | **Namun demikian,** tanah tetap kehilangan kesuburannya. *(bentuk tidak baku)* | **Meskipun demikian,** `[K]` tanah `[S]` tetap kehilangan `[P]` kesuburannya `[O]`. *(baku EYD V)* |\n\nPeriksa kata penunjuk anaforis (*tersebut*, *ini*, *itu*) pada awal kalimat penjelas untuk memastikan rujukannya mengikat konsep spesifik dari kalimat tepat di depannya. Tolak opsi yang hanya mengulang isi kalimat sebelumnya tanpa menambah informasi penghubung.",
+      "kunci_pembeda": "Kalimat penjelas pengisi celah wajib menjembatani mata rantai proses atau alasan antara kalimat sebelum dan kalimat sesudahnya secara berurutan.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Perhatikan kutipan teks berikut!\n\n(1) Kenaikan suhu permukaan laut secara drastis memicu fenomena pemutihan terumbu karang di perairan dangkal. (2) [...]. (3) Akibatnya, populasi ikan karang yang bergantung pada ekosistem tersebut menyusut hingga separuhnya dalam dua tahun terakhir.\n\nKalimat yang paling tepat untuk melengkapi bagian rumpang pada kalimat (2) agar paragraf padu adalah ....",
+      "opsi_jawaban": [
+        "A. Pemerintah daerah telah menetapkan kawasan konservasi laut untuk melindungi biodiversitas pesisir.",
+        "B. Kondisi tersebut membuat alga simbiotik keluar dari jaringan karang sehingga karang kehilangan sumber energi utamanya.",
+        "C. Selain itu, aktivitas penangkapan ikan menggunakan pukat harimau turut mempercepat kerusakan dasar laut.",
+        "D. Terumbu karang membutuhkan cahaya matahari yang cukup agar proses fotosintesis di laut berjalan optimal.",
+        "E. Oleh karena itu, nelayan tradisional harus beralih profesi ke sektor budidaya rumput laut."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kalimat (1) membahas *pemutihan terumbu karang*, sedangkan kalimat (3) diawali *Akibatnya* yang merujuk kerusakan *ekosistem tersebut*. Celah logika di antara keduanya membutuhkan mekanisme biologis bagaimana pemutihan merusak karang. Opsi B tepat karena frasa *Kondisi tersebut* mengikat kalimat (1) dan menjelaskan hilangnya energi karang yang memicu dampak pada kalimat (3). Opsi A dan E melompat ke solusi, opsi C menambah faktor baru (pukat), dan opsi D bersifat definisi umum.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        2,
+        3
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Cermati paragraf berikut!\n\n(1) Digitalisasi layanan publik dirancang untuk memangkas birokrasi yang berbelit. (2) Dalam pelaksanaannya, pemerintah daerah terus [...] infrastruktur jaringan dan [...] kualitas sumber daya manusia agar sistem berjalan optimal. (3) [...], kesenjangan akses internet di wilayah kepulauan masih menjadi hambatan utama.\n\nUrutan kata berimbuhan dan konjungsi yang paling tepat untuk melengkapi bagian rumpang tersebut sesuai EYD V dan KBBI VI adalah ....",
+      "opsi_jawaban": [
+        "A. mengkoordinasikan; meningkatkan; Namun",
+        "B. mengoordinasikan; meningkatkan; Akan tetapi",
+        "C. mengkoordinasi; peningkatan; Meskipun demikian",
+        "D. mengoordinasikan; peningkatan; Sedangkan",
+        "E. mengoordinasi; meningkatkan; Oleh karena itu"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Pada kalimat (2), kata dasar *koordinasi* diawali fonem *k* yang diikuti vokal *o* sehingga luluh menjadi **mengoordinasikan** (bukan *mengkoordinasikan*). Untuk kesejajaran predikat transitif aktif, rumpang kedua wajib berbentuk verba **meningkatkan** (sejajar dengan *mengoordinasikan*, bukan nomina *peningkatan*). Pada kalimat (3), hubungan pertentangan antarkalimat dengan kalimat (2) membutuhkan konjungsi antarkalimat **Akan tetapi** (diikuti koma), sedangkan *Sedangkan* merupakan konjungsi intrakalimat. Jadi, jawaban tepat adalah B.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        3
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\nLembaga riset itu berencana [...] (kaji) ulang efektivitas kebijakan subsidi energi agar tepat sasaran.\n\nTuliskan satu kata berimbuhan meN- yang baku sesuai KBBI VI untuk melengkapi bagian rumpang pada kalimat di atas! (Tulis jawaban dengan huruf kecil semua tanpa tanda baca)",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "mengaji",
+      "bedah_cepat_markdown": "Kata dasar *kaji* diawali konsonan *k* yang diikuti huruf vokal *a*. Sesuai kaidah morfofonemik bahasa Indonesia dalam KBBI VI dan EYD V, imbuhan *meN-* yang melekat pada kata dasar berawalan fonem *k, t, s, p* dengan huruf kedua berupa vokal mengalami peluluhan bunyi. Oleh karena itu, bentuk baku yang tepat untuk makna 'mempelajari atau menyelidiki' adalah **mengaji**, bukan *mengkaji*.",
+      "visual": null
+    }
+  ]
+}

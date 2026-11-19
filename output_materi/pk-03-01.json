@@ -1,0 +1,135 @@
+{
+  "kode_subbab": "pk-03-01",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 3: Himpunan dan Kombinatorika",
+  "judul_subbab": "Operasi Himpunan dan Diagram Venn",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Dari 40 siswa, 28 suka Matematika, 18 suka Fisika, dan 4 tidak suka keduanya. Berapa siswa yang HANYA suka Matematika?",
+      "opsi_cepat": [
+        "10 siswa",
+        "18 siswa"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta berhenti setelah menghitung irisan $28 + 18 - (40 - 4) = 10$. Kata kunci 'HANYA' mewajibkan pengurangan irisan dari himpunan asal sehingga hasilnya $28 - 10 = 18$."
+    },
+    "konsep_inti_markdown": "Himpunan memetakan anggota semesta ke dalam operasi irisan, gabungan, selisih, dan komplemen.\\n- **Prinsip Gabungan:** $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$\\n- **Selisih Himpunan:** $A - B = A \\cap B^c$ (anggota $A$ yang tidak berada di $B$)\\n- **Hukum De Morgan:** $(A \\cup B)^c = A^c \\cap B^c$ dan $(A \\cap B)^c = A^c \\cup B^c$\\n- **Himpunan Bagian:** Jika $n(A) = k$, banyaknya himpunan bagian adalah $2^k$",
+    "radar_jebakan_utbk": [
+      "Lupa mengurangi irisan saat menghitung kategori 'hanya A' atau memasukkan kelompok 'tidak keduanya' ke dalam gabungan $n(A \\cup B)$.",
+      "Salah membaca tanda komplemen ($A^c$) pada daerah arsir Diagram Venn sehingga ikut mengarsir bagian luar himpunan semesta $S$."
+    ],
+    "stimulus_utama_bersama": null,
+    "visual": {
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><rect x='24' y='20' width='312' height='180' rx='6' fill='#F8FAFC' stroke='#1E293B' stroke-width='2'/><text x='36' y='42' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>S</text><circle cx='145' cy='112' r='62' fill='#EFF6FF' fill-opacity='0.85' stroke='#3B82F6' stroke-width='2'/><circle cx='215' cy='112' r='62' fill='#FFFBEB' fill-opacity='0.75' stroke='#F59E0B' stroke-width='2'/><text x='98' y='58' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='256' y='58' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>B</text><text x='116' y='116' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#1E293B'>A - B</text><text x='180' y='116' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle' fill='#1E293B'>A ∩ B</text><text x='244' y='116' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#1E293B'>B - A</text><text x='292' y='188' font-family='sans-serif' font-size='12' text-anchor='middle' fill='#64748B'>(A ∪ B)'</text></svg>",
+      "caption": "Pemetaan wilayah selisih, irisan, dan komplemen pada Diagram Venn dua himpunan"
+    }
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Prinsip Inklusi-Eksklusi 2 dan 3 Himpunan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Dalam suatu kelas berisi 50 siswa, 30 siswa gemar basket, 25 gemar voli, dan 20 gemar futsal. Sebanyak 12 siswa gemar basket dan voli, 10 gemar basket dan futsal, 8 gemar voli dan futsal, serta 3 siswa tidak gemar ketiganya. Tentukan banyak siswa yang gemar ketiga olahraga tersebut!",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\\nPrinsip inklusi-eksklusi mencegah penghitungan ganda pada irisan himpunan. Untuk tiga himpunan berlaku:\\n$$n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)$$\\nDiketahui total $n(S) = 50$ dan komplemen gabungan $n((A \\cup B \\cup C)^c) = 3$, maka $n(A \\cup B \\cup C) = 50 - 3 = 47$. Substitusikan ke rumus: $47 = 30 + 25 + 20 - 12 - 10 - 8 + x$, diperoleh $47 = 45 + x$, sehingga $x = 2$.\\n\\n**Jalur Taktis UTBK**\\nGunakan rumus cepat keseimbangan: $\\text{Total} + \\text{Irisan-2} = \\text{Tunggal} + \\text{Irisan-3} + \\text{Luar}$. Masukkan angkanya langsung: $50 + (12 + 10 + 8) = (30 + 25 + 20) + x + 3$, didapat $80 = 78 + x \\rightarrow x = 2$.",
+      "kunci_pembeda": "Gunakan variasi ini saat soal memberikan total populasi, jumlah tiap kategori tunggal, dan irisan berpasangan untuk mencari irisan pusat atau total gabungan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Operasi Komplemen, Selisih ($A - B$), dan Gabungan Selisih Dua Himpunan pada Diagram Venn",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Diketahui semesta $S = \\{1, 2, 3, 4, 5, 6, 7, 8, 9\\}$, $A = \\{2, 3, 5, 7\\}$, dan $B = \\{1, 3, 5, 7, 9\\}$. Tentukan anggota dari himpunan $(A - B) \\cup (B - A)$ serta komplemennya!",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\\nSelisih himpunan $A - B$ memuat seluruh anggota $A$ yang tidak menjadi anggota $B$. Dari data soal, anggota $A$ yang tidak ada di $B$ hanyalah $\\{2\\}$, sehingga $A - B = \\{2\\}$. Sebaliknya, anggota $B$ yang tidak berada di $A$ adalah $\\{1, 9\\}$, sehingga $B - A = \\{1, 9\\}$. Gabungan keduanya disebut beda setangkup: $(A - B) \\cup (B - A) = \\{1, 2, 9\\}$. Selanjutnya, komplemennya terhadap semesta $S$ adalah seluruh elemen $S$ selain $\\{1, 2, 9\\}$, yakni $\\{3, 4, 5, 6, 7, 8\\}$.\\n\\n**Jalur Taktis UTBK**\\nIdentifikasi identitas visualnya pada Diagram Venn: ekspresi $(A - B) \\cup (B - A)$ selalu setara dengan $(A \\cup B) - (A \\cap B)$, yaitu semua anggota lingkaran kecuali irisan tengah. Cukup coret elemen kembar dari $A$ dan $B$ (yaitu $3, 5, 7$), lalu gabungkan sisanya menjadi $\\{1, 2, 9\\}$. Untuk komplemennya, langsung gabungkan irisan $(3, 5, 7)$ dengan elemen luar lingkaran $(4, 6, 8)$.",
+      "kunci_pembeda": "Gunakan variasi ini saat soal menanyakan bagian 'hanya salah satu' (beda setangkup) atau komplemen dari daerah selisih dua himpunan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Penentuan Nilai Maksimum dan Minimum Irisan Dua Himpunan",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Dalam suatu survei terhadap 60 responden, tercatat 45 orang menggunakan aplikasi A dan 35 orang menggunakan aplikasi B. Tentukan selisih antara nilai maksimum dan nilai minimum responden yang menggunakan kedua aplikasi tersebut!",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\\nBerdasarkan rumus gabungan $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$, nilai irisan $n(A \\cap B)$ berbanding terbalik dengan $n(A \\cup B)$ dan dibatasi oleh himpunan terkecil. Karena $n(A \\cup B) \\le n(S) = 60$, nilai minimum irisan terjadi saat $n(A \\cup B)$ maksimal (tidak ada komplemen di luar): $n(A \\cap B)_{\\min} = 45 + 35 - 60 = 20$. Sementara itu, nilai maksimum irisan terjadi ketika himpunan yang lebih kecil termuat penuh di dalam himpunan yang lebih besar ($B \\subset A$), sehingga $n(A \\cap B)_{\\max} = \\min(45, 35) = 35$. Jadi, selisihnya adalah $35 - 20 = 15$.\\n\\n**Jalur Taktis UTBK**\\nHafalkan pola batas ekstrem tanpa perlu menggambar diagram: **Irisan Maksimum** selalu sama dengan angka terkecil dari kedua himpunan ($35$), sedangkan **Irisan Minimum** adalah $\\max(0, n(A) + n(B) - \\text{Total})$. Hitung selisihnya dalam dua langkah: $35 - (80 - 60) = 15$.",
+      "kunci_pembeda": "Gunakan variasi ini apabila soal tidak mencantumkan jumlah kelompok 'tidak keduanya' sehingga muncul rentang nilai kemungkinan pada irisan.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Analisis Daerah yang Diarsir pada Diagram Venn 3 Himpunan ke dalam Notasi Himpunan",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Perhatikan Diagram Venn tiga himpunan $A$, $B$, dan $C$ pada ilustrasi. Daerah yang diarsir biru berada di dalam irisan lingkaran $A$ dan $B$, tetapi tidak menyentuh lingkaran $C$ sama sekali. Nyatakan daerah tersebut ke dalam notasi operasi himpunan yang paling tepat!",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\\nUntuk menerjemahkan arsiran Diagram Venn 3 himpunan, pecah kondisi batas setiap lingkaran menjadi klausa irisan atau komplemen. Pertama, seluruh titik di daerah arsiran biru berada di dalam lingkaran $A$ sekaligus di dalam lingkaran $B$, sehingga syarat awalnya adalah irisan $A \\cap B$. Kedua, perhatikan bahwa bagian tengah yang masuk ke lingkaran $C$ dibiarkan putih (tidak diarsir). Artinya, seluruh anggota lingkaran $C$ dikeluarkan dari daerah arsiran, yang dinotasikan sebagai irisan dengan komplemen $C^c$ atau operasi selisih dikurangi $C$. Dengan menggabungkan kedua syarat tersebut, notasi himpunannya adalah $(A \\cap B) \\cap C^c$ atau $(A \\cap B) - C$.\\n\\n**Jalur Taktis UTBK**\\nGunakan metode **Uji Titik Ekstrem** pada opsi jawaban: tandai satu titik di dalam arsiran (misal elemen $x$ yang hanya ada di $A$ dan $B$, tidak di $C$), lalu eliminasi opsi yang menghasilkan himpunan kosong atau masih memuat bagian $C$.",
+      "kunci_pembeda": "Gunakan variasi ini saat soal menyajikan gambar Diagram Venn berarsir dan meminta konversi visual ke bentuk aljabar himpunan.",
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><rect x='24' y='16' width='312' height='188' rx='6' fill='#F8FAFC' stroke='#1E293B' stroke-width='2'/><defs><clipPath id='cA'><circle cx='152' cy='92' r='54'/></clipPath></defs><circle cx='208' cy='92' r='54' fill='#3B82F6' fill-opacity='0.5' clip-path='url(#cA)'/><circle cx='180' cy='140' r='54' fill='#F8FAFC'/><circle cx='152' cy='92' r='54' fill='none' stroke='#1E293B' stroke-width='2'/><circle cx='208' cy='92' r='54' fill='none' stroke='#1E293B' stroke-width='2'/><circle cx='180' cy='140' r='54' fill='none' stroke='#1E293B' stroke-width='2'/><text x='36' y='38' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>S</text><text x='96' y='52' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='256' y='52' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>B</text><text x='242' y='182' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>C</text></svg>",
+        "caption": "Daerah arsiran biru menunjukkan irisan A dan B di luar C"
+      }
+    },
+    {
+      "nomor_variasi": 5,
+      "nama_variasi": "Kardinalitas Himpunan Bagian (Power Set) dengan Syarat Memuat/Tidak Memuat Elemen Tertentu",
+      "kategori_variasi": "Pengayaan",
+      "stimulus_mini": "Diketahui himpunan $P = \\{a, b, c, d, e, f, g\\}$. Tentukan banyaknya himpunan bagian dari $P$ yang wajib memuat elemen $a$ dan $b$, tetapi tidak boleh memuat elemen $g$!",
+      "bedah_pola_markdown": "**Jalur Konsep Dasar**\\nSetiap elemen dalam suatu himpunan beranggotakan $n$ memiliki dua pilihan saat membentuk himpunan bagian: masuk atau tidak masuk, sehingga total himpunan bagiannya adalah $2^n$. Pada himpunan $P$ dengan $n(P) = 7$, terdapat elemen yang statusnya telah dikunci oleh syarat soal. Elemen $a$ dan $b$ wajib masuk (hanya 1 pilihan), sedangkan elemen $g$ dilarang masuk (juga hanya 1 pilihan). Dengan demikian, hanya tersisa 4 elemen bebas, yaitu $\\{c, d, e, f\\}$, yang masing-masing masih memiliki 2 pilihan. Banyaknya himpunan bagian yang memenuhi syarat adalah $1 \\times 1 \\times 1 \\times 2^4 = 16$.\\n\\n**Jalur Taktis UTBK**\\nAbaikan pangkat keseluruhan, cukup **coret semua elemen yang dikunci** (baik yang wajib ada maupun yang dilarang ada) dari anggota semesta. Dari 7 elemen awal, coret 3 elemen terkunci ($a, b, g$) sehingga tersisa 4 elemen bebas, lalu langsung hitung $2^4 = 16$.",
+      "kunci_pembeda": "Gunakan variasi ini saat soal menanyakan jumlah himpunan bagian atau kombinasi subset dengan pembatasan elemen tertentu.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Pernyataan 1-2-3-4",
+      "pertanyaan_markdown": "Dalam sebuah seminar yang dihadiri 80 peserta, tercatat 48 peserta menguasai bahasa Inggris, 42 peserta menguasai bahasa Jepang, dan 10 peserta tidak menguasai keduanya. Berdasarkan informasi tersebut, manakah pernyataan berikut yang bernilai benar?\\n\\n(1) Banyak peserta yang menguasai kedua bahasa adalah 20 orang.\\n(2) Banyak peserta yang hanya menguasai bahasa Inggris adalah 28 orang.\\n(3) Banyak peserta yang hanya menguasai salah satu bahasa adalah 50 orang.\\n(4) Banyak peserta yang tidak menguasai bahasa Jepang adalah 30 orang.",
+      "opsi_jawaban": [
+        "A. (1), (2), dan (3) SAJA yang benar",
+        "B. (1) dan (3) SAJA yang benar",
+        "C. (2) dan (4) SAJA yang benar",
+        "D. HANYA (4) yang benar",
+        "E. SEMUA pernyataan benar"
+      ],
+      "kunci_jawaban": "A",
+      "bedah_cepat_markdown": "Total peserta yang menguasai minimal satu bahasa adalah $80 - 10 = 70$. Irisan kedua bahasa: $(48 + 42) - 70 = 20$ (**pernyataan 1 benar**). Peserta yang hanya menguasai bahasa Inggris: $48 - 20 = 28$ (**pernyataan 2 benar**). Peserta yang hanya menguasai bahasa Jepang: $42 - 20 = 22$, sehingga total yang hanya menguasai satu bahasa adalah $28 + 22 = 50$ (**pernyataan 3 benar**). Peserta yang tidak menguasai bahasa Jepang berjumlah $80 - 42 = 38$, bukan 30 (**pernyataan 4 salah**).",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        5
+      ],
+      "tipe_soal_utbk": "Kuantitas P vs Q",
+      "pertanyaan_markdown": "Diketahui semesta $S$ memuat 30 elemen, dengan $A \\subset S$ memiliki $n(A) = 22$ dan $B \\subset S$ memiliki $n(B) = 15$. Sementara itu, $C = \\{1, 2, 3, 4, 5, 6\\}$. Manakah hubungan yang benar antara kuantitas $P$ dan $Q$ berikut berdasarkan informasi yang diberikan?\\n\\n| $P$ | $Q$ |\\n| :---: | :---: |\\n| Nilai minimum dari $n(A \\cap B)$ | Banyak himpunan bagian dari $C$ yang memuat angka 1 tetapi tidak memuat angka 6 |",
+      "opsi_jawaban": [
+        "A. Kuantitas P lebih besar daripada Q",
+        "B. Kuantitas Q lebih besar daripada P",
+        "C. Kuantitas P sama dengan Q",
+        "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Nilai minimum irisan $P$ terjadi saat gabungan kedua himpunan memenuhi semesta $n(A \\cup B) = 30$, sehingga $P = 22 + 15 - 30 = 7$. Untuk kuantitas $Q$, himpunan $C$ memiliki 6 elemen dengan 2 elemen dikunci statusnya (angka 1 wajib masuk dan angka 6 dilarang masuk), menyisakan $6 - 2 = 4$ elemen bebas. Banyak himpunan bagian yang terbentuk adalah $Q = 2^4 = 16$. Karena $7 < 16$, maka kuantitas $Q$ lebih besar daripada $P$.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        4
+      ],
+      "tipe_soal_utbk": "Isian Singkat",
+      "pertanyaan_markdown": "Dari pendataan 100 mahasiswa baru, diperoleh data keikutsertaan tiga unit kegiatan: 52 mahasiswa mengikuti Paduan Suara ($A$), 45 mengikuti Teater ($B$), dan 40 mengikuti Fotografi ($C$). Sebanyak 18 mahasiswa mengikuti $A$ dan $B$, 15 mengikuti $A$ dan $C$, 12 mengikuti $B$ dan $C$, serta 6 mahasiswa mengikuti ketiganya. Berapa banyak mahasiswa yang **tidak** mengikuti satu pun dari ketiga unit kegiatan tersebut? *(Tuliskan jawaban dalam bilangan bulat eksak)*",
+      "opsi_jawaban": [],
+      "kunci_jawaban": "2",
+      "bedah_cepat_markdown": "Hitung total mahasiswa yang mengikuti minimal satu unit kegiatan menggunakan prinsip inklusi-eksklusi: $n(A \\cup B \\cup C) = (52 + 45 + 40) - (18 + 15 + 12) + 6 = 137 - 45 + 6 = 98$. Dengan demikian, banyaknya mahasiswa yang tidak mengikuti satu pun dari ketiga unit kegiatan tersebut adalah $100 - 98 = 2$.",
+      "visual": null
+    }
+  ]
+}

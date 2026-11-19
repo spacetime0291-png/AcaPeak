@@ -1,0 +1,126 @@
+{
+  "kode_subbab": "lbi-03-03",
+  "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+  "bab": "Bab 3: Literasi Teks Sastra dan Literasi Ilmu Pengetahuan",
+  "judul_subbab": "Literasi Teks Saintek dan Kesehatan (Eksplanasi & Riset)",
+  "klasifikasi_materi": "INTI",
+  "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
+  "zona_1_peta_taktis": {
+    "estimasi_menit_baca": 5,
+    "frekuensi_utbk": "Sangat Tinggi",
+    "exam_hook": {
+      "pertanyaan_pemantik": "Sebuah teks riset menyebut terapi virus bakteriofag menyembuhkan 85% mencit dari infeksi paru resisten antibiotik. Apakah simpulan 'terapi fag efektif menggantikan antibiotik untuk semua infeksi akut manusia' pasti benar?",
+      "opsi_cepat": [
+        "Pasti benar karena efektivitasnya jauh melampaui antibiotik",
+        "Salah/tidak didukung karena baru uji hewan dan tidak praktis untuk infeksi akut"
+      ],
+      "jawaban_benar_index": 1,
+      "penjelasan_kilat": "Banyak peserta terjebak menyamaratakan angka keberhasilan uji hewan ke manusia. Teks eksplisit membatasi aplikasi pada uji praklinis dan menyebut fag kurang praktis untuk infeksi akut."
+    },
+    "konsep_inti_markdown": "- **Fokus LBI Saintek:** Menguji ketepatan membaca alur sebab-akibat mekanisme ilmiah, desain eksperimen, dan batas validitas temuan.\n- **Peta Anatomi Teks Riset:**\n  1. *Mekanisme:* Bagaimana agen bekerja (input $\\rightarrow$ proses $\\rightarrow$ dampak).\n  2. *Desain Uji:* Variabel bebas (perlakuan) vs variabel terikat (hasil ukur) + kelompok kontrol.\n  3. *Limitasi:* Batasan sampel, metode, dan ruang lingkup aplikasi.\n- **Prinsip Emas:** Opsi benar adalah parafrasa presisi dari fakta teks, bukan ekstrapolasi berlebihan.",
+    "radar_jebakan_utbk": [
+      "Overgeneralisasi temuan praklinis (uji hewan/in vitro) seolah-olah sudah terbukti ampuh pada populasi manusia secara luas.",
+      "Mencampuradukkan fungsi kelompok kontrol (pembanding tanpa perlakuan aktif) dengan kelompok perlakuan atau mengabaikan syarat kondisi khusus (misal: hanya berlaku jika antibiotik gagal)."
+    ],
+    "stimulus_utama_bersama": "Resistensi antibiotik global mendorong pengembangan terapi bakteriofag, yakni virus spesifik yang hanya menginfeksi bakteri. Berbeda dengan antibiotik spektrum luas yang memusnahkan mikrobiota usus menguntungkan, bakteriofag bekerja melalui mekanisme litik yang sangat presisi. Fag menempel pada reseptor spesifik di dinding sel bakteri patogen menggunakan serat ekornya, menyuntikkan materi genetik ke dalam sitoplasma inang, lalu membajak ribosom bakteri untuk memproduksi ratusan virion baru hingga sel bakteri pecah (lisis) dalam hitungan menit.\n\nUntuk menguji efektivitasnya terhadap infeksi paru akibat *Pseudomonas aeruginosa* resisten karbapenem, tim peneliti melakukan uji praklinis pada 60 mencit yang dibagi merata ke dalam tiga kelompok. Kelompok kontrol negatif hanya diberikan larutan salin steril, kelompok pembanding menerima antibiotik meropenem dosis standar, sedangkan kelompok perlakuan diberikan koktail tiga jenis bakteriofag melalui inhalasi aerosol selama lima hari. Hasil pemantauan hari ketujuh menunjukkan tingkat kelangsungan hidup kelompok perlakuan mencapai 85%, jauh melampaui kelompok meropenem (30%) dan kelompok kontrol negatif (10%), disertai penurunan beban bakteri paru hingga empat logaritma.\n\nMeskipun menjanjikan sebagai alternatif pengobatan infeksi kronis di rumah sakit, penerapan terapi fag secara massal masih menghadapi kendala teknis. Spesifisitas fag yang terlalu sempit menuntut identifikasi galur bakteri pasien secara akurat sebelum terapi diberikan, sehingga kurang praktis untuk penanganan infeksi akut yang membutuhkan tindakan darurat. Selain itu, penelitian ini baru menggunakan model hewan dengan kondisi terkendali dan belum mengevaluasi potensi respons imun adaptif manusia yang dapat menetralkan fag pada pemberian berulang.\n\nSebagian produsen suplemen kesehatan mulai mengklaim bahwa konsumsi kapsul fag komersial dapat mencegah seluruh jenis infeksi saluran pernapasan pada manusia sehat. Klaim tersebut belum didukung bukti klinis memadai karena uji pada manusia masih terbatas pada fase awal untuk kasus infeksi berat, bukan pencegahan umum. Para pakar menegaskan bahwa terapi fag saat ini hanya diposisikan sebagai terapi pendamping atau cadangan ketika antibiotik konvensional terbukti gagal.",
+    "visual": null
+  },
+  "zona_2_variasi_inti": [
+    {
+      "nomor_variasi": 1,
+      "nama_variasi": "Pemahaman Mekanisme Proses Alam, Teknologi, Lingkungan, atau Fisiologi Kesehatan dalam Teks Ilmiah Populer",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 1 Stimulus Utama: Mekanisme kerja litik bakteriofag pada sel bakteri patogen.",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n1. Pindai kata kerja proses dan penanda urutan (*menempel*, *menyuntikkan*, *membajak*, *hingga*). Pada Paragraf 1, rantai kausalitasnya adalah: fag menempel pada reseptor dinding sel $\\rightarrow$ menyuntikkan materi genetik $\\rightarrow$ membajak ribosom untuk membuat virion baru $\\rightarrow$ sel bakteri pecah (lisis).\n2. Bandingkan dengan mekanisme pembanding jika ada: antibiotik spektrum luas memusnahkan mikrobiota usus, sedangkan fag hanya menyasar bakteri spesifik. Perhatikan pula skala waktu proses (*dalam hitungan menit*).\n\n**Parafrasa Opsi Benar:**\nMengubah urutan proses menjadi pernyataan ekuivalen, misalnya: *bakteriofag menghancurkan patogen spesifik dengan memanfaatkan mesin sintesis protein (ribosom) inang untuk memperbanyak diri*.\n\n**Ciri Opsi Jebakan:**\n- Membalik urutan sebab-akibat (misal: sel pecah sebelum materi genetik masuk).\n- Melekatkan mekanisme pembanding (merusak mikrobiota usus) ke subjek utama (bakteriofag).",
+      "kunci_pembeda": "Variasi ini fokus pada alur kerja internal ('bagaimana dan mengapa suatu proses terjadi'), bukan pada angka hasil eksperimen atau opini pakar.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 2,
+      "nama_variasi": "Penafsiran Variabel Penelitian, Kelompok Kontrol/Perlakuan, dan Simpulan Hasil Eksperimen",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 2 Stimulus Utama: Uji praklinis koktail bakteriofag vs meropenem dan salin steril pada 60 mencit.",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n1. Pindai angka sampel, pembagian kelompok, dan indikator ukur di Paragraf 2. Identifikasi tiga komponen desain: subjek uji (60 mencit terinfeksi), variabel bebas/intervensi (salin steril sebagai kontrol negatif, meropenem sebagai pembanding, koktail fag sebagai perlakuan), serta variabel terikat (tingkat kelangsungan hidup dan beban bakteri paru).\n2. Fokus pada kontras kuantitatif hari ketujuh: kelangsungan hidup perlakuan 85% berbanding 30% (meropenem) dan 10% (kontrol negatif).\n\n**Parafrasa Opsi Benar:**\nMenyatakan efektivitas relatif berdasarkan perbandingan antarkelompok: *inhalasi koktail fag menghasilkan tingkat kesintasan mencit tertinggi sekaligus menurunkan kepadatan bakteri paru secara signifikan dibanding meropenem*.\n\n**Ciri Opsi Jebakan:**\n- Menyebut kelompok kontrol menerima obat aktif (padahal hanya salin steril).\n- Mengubah selisih persentase menjadi klaim absolut (misal: seluruh mencit sembuh total 100%).",
+      "kunci_pembeda": "Variasi ini selalu membedah struktur metode riset (variabel bebas, variabel terikat, kontrol) dan membandingkan data hasil antar-kelompok uji.",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 3,
+      "nama_variasi": "Evaluasi Keterbatasan Riset dan Aplikasi Praktis Temuan Sains bagi Masyarakat",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 3 Stimulus Utama: Kendala penerapan massal terapi fag dan batasan model uji.",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n1. Cari konjungsi pertentangan dan kata pembatas (*meskipun*, *namun*, *kendala*, *baru menggunakan*, *belum mengevaluasi*) di Paragraf 3.\n2. Petakan dua jenis evaluasi: (a) hambatan aplikasi praktis di masyarakat/klinik, yakni kebutuhan identifikasi galur bakteri yang membuat fag kurang praktis untuk infeksi akut darurat; (b) keterbatasan metodologis riset, yakni baru memakai model hewan terkendali dan belum menguji respons imun adaptif manusia.\n\n**Parafrasa Opsi Benar:**\nMerangkum syarat atau batas penerapan secara proporsional: *penerapan klinis terapi fag belum dapat dilakukan secara cepat pada kasus darurat karena memerlukan pemetaan galur bakteri yang presisi*.\n\n**Ciri Opsi Jebakan:**\n- Menganggap kendala teknis berarti penelitian gagal total.\n- Mengabaikan frasa *belum mengevaluasi* sehingga menyimpulkan terapi sudah aman untuk pemberian berulang pada manusia.",
+      "kunci_pembeda": "Variasi ini menilai 'sejauh mana temuan boleh diterapkan dan apa celah risetnya', ditandai konjungsi konsesif (*meskipun*) dan kata negatif (*belum*, *kurang*).",
+      "visual": null
+    },
+    {
+      "nomor_variasi": 4,
+      "nama_variasi": "Verifikasi Klaim Medis/Teknologi Berdasarkan Bukti Ilmiah yang Dipaparkan dalam Wacana",
+      "kategori_variasi": "Inti",
+      "stimulus_mini": "Rujukan Paragraf 4 Stimulus Utama: Klaim produsen suplemen kapsul fag vs evaluasi bukti klinis oleh pakar.",
+      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n1. Pindai pihak yang mengajukan klaim (*produsen suplemen*) versus otoritas bukti (*bukti klinis*, *para pakar*) di Paragraf 4.\n2. Cocokkan isi klaim komersial (kapsul fag mencegah seluruh infeksi saluran pernapasan pada orang sehat) dengan bukti riil di teks: uji manusia masih fase awal, ditujukan untuk infeksi berat (bukan pencegahan umum), dan hanya berfungsi sebagai cadangan bila antibiotik gagal.\n\n**Parafrasa Opsi Benar:**\nMenegaskan diskrepansi antara klaim dan bukti: *klaim pencegahan infeksi oleh suplemen fag tidak valid karena bukti uji manusia yang ada hanya menyasar terapi infeksi berat tahap awal*.\n\n**Ciri Opsi Jebakan:**\n- Membenarkan klaim iklan hanya karena bahan aktifnya sama-sama bernama fag.\n- Memakai kata ekstrem (*seluruh jenis infeksi*, *pasti mencegah*) yang bertentangan dengan posisi terapi cadangan.",
+      "kunci_pembeda": "Variasi ini mengadu suatu pernyataan/klaim produk atau teknologi dengan syarat bukti empiris di teks untuk menentukan status validitasnya.",
+      "visual": null
+    }
+  ],
+  "zona_3_uji_pemahaman": [
+    {
+      "nomor_soal": 1,
+      "menguji_variasi_ke": [
+        1,
+        2
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Berdasarkan desain eksperimen dan mekanisme kerja agen dalam bacaan, simpulan manakah yang paling tepat mengenai perbandingan efektivitas koktail bakteriofag dan antibiotik meropenem?",
+      "opsi_jawaban": [
+        "A. Meropenem lebih unggul daripada koktail bakteriofag karena mampu memusnahkan seluruh mikrobiota usus sekaligus menekan infeksi paru.",
+        "B. Koktail bakteriofag menghasilkan tingkat kesintasan mencit 55 poin persentase lebih tinggi daripada meropenem melalui mekanisme lisis sel bakteri yang spesifik.",
+        "C. Kelompok kontrol negatif memiliki tingkat kesintasan terendah karena diberikan dosis meropenem yang lebih rendah dibandingkan kelompok perlakuan.",
+        "D. Pemberian koktail bakteriofag selama lima hari berhasil menghilangkan 100% beban bakteri *Pseudomonas aeruginosa* pada seluruh subjek uji.",
+        "E. Antibiotik meropenem bekerja membajak ribosom bakteri lebih lambat daripada bakteriofag sehingga hanya menyelamatkan 30% populasi mencit."
+      ],
+      "kunci_jawaban": "B",
+      "bedah_cepat_markdown": "Kelangsungan hidup kelompok koktail fag mencapai 85%, sedangkan meropenem 30% (selisih $85\\% - 30\\% = 55$ poin persentase), dengan mekanisme lisis spesifik pada dinding sel bakteri (Paragraf 1 & 2).\n- **A salah:** Meropenem justru kalah efektif (30% vs 85%).\n- **C salah:** Kontrol negatif diberi salin steril, bukan meropenem.\n- **D salah:** Penurunan empat logaritma bukan berarti hilang 100%.\n- **E salah:** Mekanisme membajak ribosom dimiliki fag, bukan meropenem.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 2,
+      "menguji_variasi_ke": [
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Benar-Salah",
+      "pertanyaan_markdown": "Berdasarkan informasi keterbatasan riset dan bukti klinis dalam teks, tentukan apakah setiap pernyataan berikut **BENAR** atau **SALAH**.\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Terapi fag dapat langsung menggantikan antibiotik di unit gawat darurat untuk infeksi akut karena bekerja dalam hitungan menit. | | |\n| 2 | Respons sistem imun adaptif manusia terhadap pemberian terapi fag berulang belum dievaluasi dalam studi praklinis tersebut. | | |\n| 3 | Klaim efektivitas kapsul fag komersial sebagai suplemen pencegah infeksi pernapasan bagi orang sehat tidak didukung uji klinis fase lanjut. | | |",
+      "opsi_jawaban": [
+        "A. Benar - Benar - Salah",
+        "B. Benar - Salah - Benar",
+        "C. Salah - Benar - Benar",
+        "D. Salah - Benar - Salah",
+        "E. Salah - Salah - Benar"
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "- **Pernyataan 1 (SALAH):** Meskipun lisis sel terjadi dalam hitungan menit, Paragraf 3 menegaskan fag *kurang praktis untuk penanganan infeksi akut yang membutuhkan tindakan darurat* karena perlu identifikasi galur.\n- **Pernyataan 2 (BENAR):** Sesuai kalimat terakhir Paragraf 3, studi baru memakai hewan dan *belum mengevaluasi potensi respons imun adaptif manusia*.\n- **Pernyataan 3 (BENAR):** Paragraf 4 menyatakan uji manusia masih fase awal untuk infeksi berat, bukan pencegahan umum.",
+      "visual": null
+    },
+    {
+      "nomor_soal": 3,
+      "menguji_variasi_ke": [
+        1,
+        3,
+        4
+      ],
+      "tipe_soal_utbk": "Standard MC (5 Opsi)",
+      "pertanyaan_markdown": "Apabila sebuah rumah sakit berencana mengadopsi terapi bakteriofag bagi pasien dengan infeksi paru kronis akibat *Pseudomonas aeruginosa*, syarat manakah yang paling sesuai dengan prinsip kehati-hatian ilmiah dalam wacana?",
+      "opsi_jawaban": [
+        "A. Memberikan kapsul fag komersial kepada seluruh pengunjung rumah sakit sebagai langkah pencegahan infeksi saluran pernapasan.",
+        "B. Menghentikan seluruh penggunaan antibiotik konvensional karena terapi fag terbukti lebih aman pada pemberian berulang.",
+        "C. Menggunakan terapi fag hanya sebagai opsi cadangan setelah antibiotik gagal, diawali identifikasi galur bakteri pasien secara akurat.",
+        "D. Menerapkan inhalasi koktail fag secara massal tanpa uji laboratorium karena efektivitasnya pada manusia sudah terbukti mencapai 85%.",
+        "E. Memilih terapi fag untuk pasien gawat darurat akut agar mikrobiota usus pasien tetap terlindungi selama masa kritis."
+      ],
+      "kunci_jawaban": "C",
+      "bedah_cepat_markdown": "Sintesis Paragraf 3 dan 4 menunjukkan dua syarat utama aplikasi medis terapi fag: diposisikan sebagai terapi cadangan saat antibiotik gagal (Paragraf 4) dan mensyaratkan identifikasi galur bakteri spesifik terlebih dahulu (Paragraf 3).\n- **A & D salah:** Tidak ada bukti pencegahan umum maupun efektivitas 85% pada manusia.\n- **B salah:** Keamanan pemberian berulang belum diuji.\n- **E salah:** Fag kurang praktis untuk kasus gawat darurat akut.",
+      "visual": null
+    }
+  ]
+}
