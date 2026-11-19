@@ -208,11 +208,46 @@ body:not(.dark) .pastel-card-cream {
 }
 
 .katex {
-  font-size: 1.06em;
+  font-size: 1.02em;
   text-rendering: auto;
+  max-width: 100%;
 }
 
-/* Ensure fraction bars and mathematical lines are solid, clear, and visible */
+.katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+/* Ensure inline math doesn't burst out of mobile cards: scrollable if wider than container */
+p .katex,
+li .katex,
+span .katex,
+div .katex {
+  padding: 0 0.08em;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: -0.15em;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  display: inline-block;
+}
+
+.katex-html {
+  max-width: 100%;
+}
+
+/* Material SVG Responsive Scaling */
+.material-svg-card svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .katex .mfrac .frac-line {
   border-bottom-style: solid !important;
   border-bottom-width: 1.2px !important;

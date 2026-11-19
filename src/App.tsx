@@ -348,7 +348,7 @@ export default function App() {
         <main
           className={
             route.view === 'materi'
-              ? 'flex-1 w-full px-2 sm:px-6 md:px-8 py-2 sm:py-4'
+              ? 'flex-1 w-full px-0 sm:px-3 md:px-6 py-1 sm:py-3'
               : route.view === 'subtest'
               ? 'flex-1 w-full px-1 sm:px-3 py-2 sm:py-4'
               : 'flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6'

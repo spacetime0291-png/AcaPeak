@@ -95,7 +95,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
       </div>
 
       {/* 2. THREE-ZONE STANDAR BLUEPRINT CONTAINER */}
-      <div className={isFocusMode ? 'py-2 px-1 sm:px-2' : 'py-4 sm:py-6 px-2 sm:px-4'}>
+      <div className={isFocusMode ? 'py-1 px-0.5 sm:px-2 w-full' : 'py-1 sm:py-3 px-1 sm:px-3 w-full'}>
         <ThreeZoneMaterialViewer
           material={material}
           theme={theme}

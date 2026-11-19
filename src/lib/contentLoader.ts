@@ -109,7 +109,9 @@ export function adaptThreeZoneMaterial(data: ThreeZoneMaterial): Material {
 // EAGERLY BUNDLED MATERIALS (Vite import.meta.glob for 0ms offline)
 // -------------------------------------------------------------
 
-const rawGlob = import.meta.glob('../../content/utbk/**/*.json', { eager: true });
+const rawGlob = typeof import.meta.glob === 'function'
+  ? import.meta.glob('../../content/utbk/**/*.json', { eager: true })
+  : {};
 export const PRELOADED_MATERIALS: Record<string, Material> = {};
 
 for (const mod of Object.values(rawGlob)) {

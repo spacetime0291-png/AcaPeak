@@ -10,10 +10,46 @@ export const SEEN_STORAGE_KEY = 'utbk_seen_questions_v1';
 // LOCAL STORAGE SEEN QUESTIONS TRACKER
 // -------------------------------------------------------------
 
+const memoryStorage: Record<string, string> = {};
+
+function safeGetItem(key: string): string | null {
+  if (typeof window !== 'undefined' && window.localStorage) {
+    try {
+      return window.localStorage.getItem(key);
+    } catch {
+      // Fallback to memory
+    }
+  }
+  return memoryStorage[key] || null;
+}
+
+function safeSetItem(key: string, value: string): void {
+  if (typeof window !== 'undefined' && window.localStorage) {
+    try {
+      window.localStorage.setItem(key, value);
+      return;
+    } catch {
+      // Fallback to memory
+    }
+  }
+  memoryStorage[key] = value;
+}
+
+function safeRemoveItem(key: string): void {
+  if (typeof window !== 'undefined' && window.localStorage) {
+    try {
+      window.localStorage.removeItem(key);
+      return;
+    } catch {
+      // Fallback to memory
+    }
+  }
+  delete memoryStorage[key];
+}
+
 export function getSeenQuestionsMap(): Record<string, number> {
-  if (typeof window === 'undefined') return {};
   try {
-    const raw = window.localStorage.getItem(SEEN_STORAGE_KEY);
+    const raw = safeGetItem(SEEN_STORAGE_KEY);
     if (!raw) return {};
     const parsed = JSON.parse(raw);
     if (parsed && typeof parsed === 'object') {
@@ -26,7 +62,7 @@ export function getSeenQuestionsMap(): Record<string, number> {
 }
 
 export function recordQuestionsSeen(exampleIds: string[]): void {
-  if (typeof window === 'undefined' || !exampleIds || exampleIds.length === 0) return;
+  if (!exampleIds || exampleIds.length === 0) return;
   try {
     const current = getSeenQuestionsMap();
     for (const rawId of exampleIds) {
@@ -34,16 +70,15 @@ export function recordQuestionsSeen(exampleIds: string[]): void {
       const canonicalId = rawId.replace(/-(q|repeat)\d+$/i, '');
       current[canonicalId] = (current[canonicalId] || 0) + 1;
     }
-    window.localStorage.setItem(SEEN_STORAGE_KEY, JSON.stringify(current));
+    safeSetItem(SEEN_STORAGE_KEY, JSON.stringify(current));
   } catch (e) {
     console.warn('Failed to record seen questions to localStorage', e);
   }
 }
 
 export function resetSeenQuestions(): void {
-  if (typeof window === 'undefined') return;
   try {
-    window.localStorage.removeItem(SEEN_STORAGE_KEY);
+    safeRemoveItem(SEEN_STORAGE_KEY);
   } catch (e) {
     console.warn('Failed to reset seen questions in localStorage', e);
   }
