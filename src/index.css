@@ -206,12 +206,13 @@ body:not(.dark) .pastel-card-cream {
 .katex *::before,
 .katex *::after {
   box-sizing: content-box;
+  border-color: currentColor;
 }
 
 .katex {
-  font-size: 1.06em;
+  font-size: 1.05em;
   text-rendering: auto;
-  line-height: normal;
+  line-height: 1.2 !important; /* CRITICAL: KaTeX expects line-height 1.2 for internal strut math */
   white-space: normal;
   max-width: 100%;
 }
@@ -222,8 +223,8 @@ body:not(.dark) .pastel-card-cream {
   max-width: 100%;
   overflow-x: auto;
   overflow-y: visible;
-  padding: 0.5rem 0;
-  margin: 0.85rem 0;
+  padding: 0.6rem 0.25rem;
+  margin: 1rem 0;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
 }
@@ -239,22 +240,36 @@ body:not(.dark) .pastel-card-cream {
   max-width: 100%;
 }
 
-/* Fractions styling: clean division bar, let KaTeX compute precise numerator/denominator positions */
+/* Fractions & Division styling: generous breathing room, clean division bar, let KaTeX compute exact positions */
+.katex .mfrac {
+  padding: 0.18em 0.1em !important;
+}
+
 .katex .mfrac .frac-line {
   border-bottom-style: solid !important;
-  min-height: 1.5px !important;
+  border-bottom-width: 1.25px !important;
+  min-height: 1px !important;
+  height: 0 !important;
+}
+
+/* Block any harmful transforms from shifting numerator or denominator out of position */
+.katex .vlist-t,
+.katex .vlist-r,
+.katex .vlist,
+.katex .vlist > span {
+  transform: none !important;
 }
 
 /* Give lines containing KaTeX formulas comfortable vertical room so multi-level fractions/powers never collide */
 p:has(.katex),
 li:has(.katex),
 div:has(.katex) {
-  line-height: 1.95 !important;
+  line-height: 2 !important;
 }
 
 li:has(.katex) {
-  margin-top: 0.35rem;
-  margin-bottom: 0.35rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 /* Material SVG Responsive Scaling */
@@ -333,16 +348,6 @@ article {
   overflow-wrap: break-word;
   word-break: normal;
   max-width: 100%;
-}
-
-.katex-display {
-  display: block;
-  overflow-x: auto;
-  overflow-y: hidden;
-  max-width: 100%;
-  margin: 1rem 0;
-  padding: 0.6rem 0.25rem;
-  -webkit-overflow-scrolling: touch;
 }
 
 .katex-display::-webkit-scrollbar,

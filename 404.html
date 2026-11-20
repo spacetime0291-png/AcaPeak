@@ -35,6 +35,13 @@
       window.addEventListener('error', function (e) {
         if (e.target && e.target.src && e.target.src.includes('main.tsx')) {
           console.warn('Switching to production bundle fallback...');
+          if (!document.querySelector('link[href*="index.css"]')) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.crossOrigin = 'anonymous';
+            link.href = './assets/index.css';
+            document.head.appendChild(link);
+          }
           var script = document.createElement('script');
           script.type = 'module';
           script.crossOrigin = 'anonymous';

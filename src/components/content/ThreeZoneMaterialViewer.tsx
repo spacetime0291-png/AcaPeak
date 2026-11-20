@@ -309,6 +309,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
     ),
   };
 
+  // Preprocessor to promote inline fractions (\frac) to display fractions (\dfrac) for generous spacing and crisp division bars
+  const formatMathContent = (content?: string) => {
+    if (!content) return '';
+    return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
+  };
+
   const renderMarkdown = (text?: string) => {
     if (!text) return null;
     return (
@@ -317,7 +323,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         rehypePlugins={KATEX_REHYPE_PLUGINS}
         components={markdownComponents}
       >
-        {text}
+        {formatMathContent(text)}
       </ReactMarkdown>
     );
   };
@@ -330,7 +336,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         rehypePlugins={KATEX_REHYPE_PLUGINS}
         components={inlineMarkdownComponents}
       >
-        {text}
+        {formatMathContent(text)}
       </ReactMarkdown>
     );
   };
@@ -379,22 +385,24 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           )}
         </div>
 
-        {/* 1. PEMANTIK LOGIKA 15 DETIK (EXAM HOOK) - DITARUH PERTAMA */}
+        {/* 1. PEMANTIK LOGIKA (EXAM HOOK) - DITARUH PERTAMA */}
         {zona1?.exam_hook && (
           <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 p-5 sm:p-6 shadow-xs space-y-4">
             <div className="flex items-center justify-between gap-2">
-              <span className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">
+              <span className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-200">
                 <span className="w-2 h-2 rounded-full bg-[#3B82F6] animate-pulse"></span>
-                Pemantik Logika 15 Detik (Exam Hook)
+                Pemantik Logika
               </span>
               <span className="text-xs text-slate-400 dark:text-slate-500 font-medium font-mono">
                 Tebak Dulu
               </span>
             </div>
 
-            {/* Stimulus Ringkas / Pertanyaan Pemantik */}
-            <div className="text-[16px] text-[#1E293B] dark:text-slate-100 font-medium leading-relaxed">
-              {renderMarkdown(zona1.exam_hook.pertanyaan_pemantik)}
+            {/* Stimulus Ringkas / Pertanyaan Pemantik di dalam Kartu Estetik */}
+            <div className="rounded-2xl bg-slate-50/90 dark:bg-slate-800/50 border border-slate-200/90 dark:border-slate-700/60 border-l-4 border-l-slate-400 dark:border-l-slate-500 p-4 sm:p-5">
+              <div className="text-[15.5px] sm:text-[16px] text-slate-800 dark:text-slate-200 leading-relaxed font-normal">
+                {renderMarkdown(zona1.exam_hook.pertanyaan_pemantik)}
+              </div>
             </div>
 
             {/* Tombol Pilihan Opsi Cepat */}
