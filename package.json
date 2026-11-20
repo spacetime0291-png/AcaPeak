@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/export_materials.mjs && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist/server && node scripts/prerender.mjs && node scripts/generate_seo_files.mjs",
+    "build": "node scripts/build.mjs",
+    "build:client": "vite build",
+    "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist/server",
+    "prerender": "node scripts/prerender.mjs",
     "summary": "node scripts/generate_summary.mjs",
     "summary:watch": "node scripts/generate_summary.mjs --watch",
     "lint": "oxlint",
