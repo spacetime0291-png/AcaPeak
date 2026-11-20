@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Search, X, ChevronRight, Sparkles } from 'lucide-react';
 import { ALL_UTBK_SUBCHAPTERS } from '../../lib/contentLoader';
 import { SMA_SUBJECTS } from '../../lib/smaSyllabusData';
+import { ENABLE_SMA_MODE } from '../../lib/featureFlags';
 import { ThemeToggle } from '../common/ThemeToggle';
 import { NatureHeaderBanner } from '../decorations/NatureDecorations';
 
@@ -54,7 +55,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
       ).slice(0, 6)
     : [];
 
-  const filteredSma = searchQuery.trim().length > 1
+  const filteredSma = (ENABLE_SMA_MODE && searchQuery.trim().length > 1)
     ? SMA_SUBJECTS.flatMap((subj) =>
         subj.chapters.flatMap((ch) =>
           ch.topics
@@ -130,27 +131,29 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                 <span>UTBK-SNBT</span>
               </button>
 
-              {/* Tab Materi SMA */}
-              <button
-                type="button"
-                onClick={() => onModeChange('sma')}
-                className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer relative overflow-hidden select-none ${
-                  mode === 'sma'
-                    ? isDark
-                      ? 'bg-[#1e170d] text-amber-200 border border-amber-400 shadow-[0_0_16px_rgba(245,158,11,0.4)]'
-                      : 'bg-[#ffedd5] text-amber-900 border border-amber-300 shadow-xs'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                }`}
-                aria-label="Pilih Mode Materi SMA"
-              >
-                {!isDark && mode === 'sma' && (
-                  <span className="absolute top-0 right-0 w-3 h-3 text-amber-500/70 pointer-events-none">
-                    🌿
-                  </span>
-                )}
-                <span>🏫</span>
-                <span>Materi SMA</span>
-              </button>
+              {/* Tab Materi SMA (Hidden when ENABLE_SMA_MODE is false) */}
+              {ENABLE_SMA_MODE && (
+                <button
+                  type="button"
+                  onClick={() => onModeChange('sma')}
+                  className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer relative overflow-hidden select-none ${
+                    mode === 'sma'
+                      ? isDark
+                        ? 'bg-[#1e170d] text-amber-200 border border-amber-400 shadow-[0_0_16px_rgba(245,158,11,0.4)]'
+                        : 'bg-[#ffedd5] text-amber-900 border border-amber-300 shadow-xs'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                  aria-label="Pilih Mode Materi SMA"
+                >
+                  {!isDark && mode === 'sma' && (
+                    <span className="absolute top-0 right-0 w-3 h-3 text-amber-500/70 pointer-events-none">
+                      🌿
+                    </span>
+                  )}
+                  <span>🏫</span>
+                  <span>Materi SMA</span>
+                </button>
+              )}
             </div>
 
             {/* Desktop Theme Toggle */}

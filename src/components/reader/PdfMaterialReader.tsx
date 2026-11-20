@@ -44,7 +44,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   // Flexible Font Size Scale: 0.85 to 1.4 (Default 1.0)
   const [fontScale, setFontScale] = useState<number>(() => {
     try {
-      const saved = localStorage.getItem('skolace_reader_font_scale');
+      const saved = typeof window !== 'undefined' ? localStorage.getItem('skolace_reader_font_scale') : null;
       return saved ? Math.min(1.4, Math.max(0.85, parseFloat(saved))) : 1.0;
     } catch {
       return 1.0;
@@ -55,7 +55,9 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
     const clamped = Math.min(1.4, Math.max(0.85, Number(newScale.toFixed(2))));
     setFontScale(clamped);
     try {
-      localStorage.setItem('skolace_reader_font_scale', clamped.toString());
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('skolace_reader_font_scale', clamped.toString());
+      }
     } catch {}
   };
 

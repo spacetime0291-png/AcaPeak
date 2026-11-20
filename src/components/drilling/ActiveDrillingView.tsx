@@ -123,6 +123,29 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
     return () => clearInterval(interval);
   }, [isFinished, timerMinutes, questions]);
 
+  // Ensure interactive drilling sessions are never indexed by search engines
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    let meta = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
+    const originalContent = meta ? meta.getAttribute('content') : null;
+    const created = !meta;
+
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.name = 'robots';
+      document.head.appendChild(meta);
+    }
+    meta.content = 'noindex, nofollow';
+
+    return () => {
+      if (created) {
+        meta?.remove();
+      } else if (meta && originalContent) {
+        meta.content = originalContent;
+      }
+    };
+  }, []);
+
   const formatTimer = (totalSecs: number) => {
     const mins = Math.floor(totalSecs / 60);
     const secs = totalSecs % 60;

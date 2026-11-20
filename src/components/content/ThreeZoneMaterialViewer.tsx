@@ -26,6 +26,7 @@ import {
   isSubchapterCompleted,
   toggleSubchapterCompleted,
 } from '../../lib/contentLoader';
+import { AdSlot } from '../common/AdSlot';
 
 const KATEX_REHYPE_PLUGINS = [rehypeKatex as any];
 
@@ -515,6 +516,9 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
       {/* DIVIDER HALUS ANTARA ZONA 1 & ZONA 2 */}
       <hr className="border-slate-200/80 dark:border-slate-800" />
 
+      {/* SLOT IKLAN AMAN 1 (ANTARA ZONA 1 & ZONA 2) */}
+      <AdSlot slotId="material-between-z1-z2" format="in-article" />
+
       {/* =====================================================================
           ZONA 2: EKSPLORASI VARIASI INTI (KOMPONEN TAB HORIZONTAL INTERAKTIF)
           ===================================================================== */}
@@ -672,6 +676,9 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
       {/* DIVIDER HALUS ANTARA ZONA 2 & ZONA 3 */}
       <hr className="border-slate-200/80 dark:border-slate-800" />
+
+      {/* SLOT IKLAN AMAN 2 (ANTARA ZONA 2 & ZONA 3) */}
+      <AdSlot slotId="material-between-z2-z3" format="in-article" />
 
       {/* =====================================================================
           ZONA 3: ARENA UJI PEMAHAMAN INSTAN (ACTIVE RECALL)

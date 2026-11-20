@@ -1,0 +1,6 @@
+# Robots.txt for SkolAce UTBK-SNBT
+User-agent: *
+Disallow: /drilling/
+Allow: /
+
+Sitemap: https://example.my.id/sitemap.xml
