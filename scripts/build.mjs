@@ -19,25 +19,16 @@ try {
   // 2. Type check
   run('npx tsc -b', 'TypeScript Type Verification');
 
-  // 3. Build Vite Client Bundle
-  run('npx vite build', 'Vite Client Bundle');
+  // 3. Vite Build (Client Bundle + Integrated SSG Prerendering Plugin)
+  run('npx vite build', 'Vite Client Bundle & Native SSG Pre-rendering');
 
-  // 4. Build Vite SSR Server Bundle
-  run('npx vite build --ssr src/entry-server.tsx --outDir dist/server', 'Vite SSR Bundle');
-
-  // 5. Run Native SSG Pre-rendering (generates 118 static HTML files)
-  run('node scripts/prerender.mjs', 'Native SSG Pre-rendering & SEO Injection');
-
-  // 6. Generate Sitemap & Robots.txt
-  run('node scripts/generate_seo_files.mjs', 'Generate SEO Sitemap & Robots.txt');
-
-  // 7. Verification: Ensure dist/index.html is NOT empty
+  // 4. Verification: Ensure dist/index.html is NOT empty
   const distIndex = path.join(ROOT_DIR, 'dist/index.html');
   if (!fs.existsSync(distIndex)) {
     throw new Error('Verification failed: dist/index.html was not generated!');
   }
   const html = fs.readFileSync(distIndex, 'utf8');
-  if (html.includes('<div id="root"></div>') || html.includes('<div id="root"> </div>')) {
+  if (!html.includes('<div id="root"><div')) {
     throw new Error('Verification failed: dist/index.html root container is EMPTY (<div id="root"></div>)!');
   }
 

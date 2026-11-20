@@ -34,15 +34,15 @@ function escapeHtml(str) {
 function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
   let html = templateHtml;
 
-  // 1. Inject server-rendered app HTML
+  // 1. Inject server-rendered app HTML using replacer function to protect dollar signs ($) in math
   html = html.replace(
-    /<div id="root"><\/div>/,
-    `<div id="root">${appHtml}</div>`
+    /<div id="root">[\s\S]*?<\/div>/,
+    () => `<div id="root">${appHtml}</div>`
   );
 
   // 2. Replace title
   if (seo.title) {
-    html = html.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(seo.title)}</title>`);
+    html = html.replace(/<title>.*?<\/title>/i, () => `<title>${escapeHtml(seo.title)}</title>`);
   }
 
   // 3. Prepare head tags to inject
@@ -88,12 +88,12 @@ function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
   }
 
   // Inject head tags before </head>
-  html = html.replace('</head>', `  ${headTags.join('\n  ')}\n</head>`);
+  html = html.replace('</head>', () => `  ${headTags.join('\n  ')}\n</head>`);
 
   // 4. Inject initial data script if present (before closing </body> or entry-client)
   if (initialData) {
     const dataScript = `<script>window.__INITIAL_DATA__ = ${JSON.stringify(initialData)};</script>`;
-    html = html.replace('</body>', `  ${dataScript}\n</body>`);
+    html = html.replace('</body>', () => `  ${dataScript}\n</body>`);
   }
 
   return html;
