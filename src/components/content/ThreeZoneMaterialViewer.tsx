@@ -21,6 +21,7 @@ import {
   Award,
   ZoomIn,
   X,
+  FileText,
 } from 'lucide-react';
 import type {
   Material,
@@ -44,6 +45,7 @@ interface VisualData {
 interface ThreeZoneMaterialViewerProps {
   material: Material;
   theme?: 'light' | 'dark';
+  fontScale?: number;
   onBackToSubtest: () => void;
   onPrevSubchapter?: () => void;
   onNextSubchapter?: () => void;
@@ -54,6 +56,7 @@ interface ThreeZoneMaterialViewerProps {
 
 export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = ({
   material,
+  fontScale = 1.0,
   onBackToSubtest,
   onPrevSubchapter,
   onNextSubchapter,
@@ -163,11 +166,11 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
     );
   };
 
-  // Markdown styling components with strict overflow-containment
+  // Markdown styling components with readable academic typography
   const markdownComponents = {
     table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
       <div className="w-full overflow-x-auto my-3 max-w-full rounded-xl border border-stone-200/90 dark:border-slate-800">
-        <table className="w-full min-w-full text-left border-collapse text-xs sm:text-sm leading-relaxed" {...props}>
+        <table className="w-full min-w-full text-left border-collapse text-sm sm:text-base leading-relaxed" {...props}>
           {children}
         </table>
       </div>
@@ -188,32 +191,32 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
       </tr>
     ),
     th: ({ children, ...props }: React.ComponentPropsWithoutRef<'th'>) => (
-      <th className="py-2 px-2.5 font-bold text-slate-900 dark:text-slate-100 text-xs sm:text-sm align-top" {...props}>
+      <th className="py-2.5 px-3 font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base align-top" {...props}>
         {children}
       </th>
     ),
     td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
-      <td className="py-2 px-2.5 text-slate-700 dark:text-slate-300 text-xs sm:text-sm leading-relaxed align-top" {...props}>
+      <td className="py-2.5 px-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed align-top" {...props}>
         {children}
       </td>
     ),
     p: ({ children, ...props }: React.ComponentPropsWithoutRef<'p'>) => (
-      <p className="my-1.5 leading-relaxed text-slate-800 dark:text-slate-200 text-xs sm:text-sm break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+      <p className="my-2 leading-relaxed text-slate-800 dark:text-slate-200 text-sm sm:text-base break-words [overflow-wrap:anywhere] max-w-full" {...props}>
         {children}
       </p>
     ),
     li: ({ children, ...props }: React.ComponentPropsWithoutRef<'li'>) => (
-      <li className="leading-relaxed break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+      <li className="leading-relaxed text-slate-800 dark:text-slate-200 text-sm sm:text-base break-words [overflow-wrap:anywhere] max-w-full my-1" {...props}>
         {children}
       </li>
     ),
     ul: ({ children, ...props }: React.ComponentPropsWithoutRef<'ul'>) => (
-      <ul className="list-disc list-outside pl-4 sm:pl-5 my-1.5 space-y-1 text-slate-800 dark:text-slate-200 text-xs sm:text-sm break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+      <ul className="list-disc list-outside pl-5 my-2 space-y-1.5 text-slate-800 dark:text-slate-200 text-sm sm:text-base break-words [overflow-wrap:anywhere] max-w-full" {...props}>
         {children}
       </ul>
     ),
     ol: ({ children, ...props }: React.ComponentPropsWithoutRef<'ol'>) => (
-      <ol className="list-decimal list-outside pl-4 sm:pl-5 my-1.5 space-y-1 text-slate-800 dark:text-slate-200 text-xs sm:text-sm break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+      <ol className="list-decimal list-outside pl-5 my-2 space-y-1.5 text-slate-800 dark:text-slate-200 text-sm sm:text-base break-words [overflow-wrap:anywhere] max-w-full" {...props}>
         {children}
       </ol>
     ),
@@ -225,7 +228,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
     code: ({ inline, className, children, ...props }: any) => {
       if (inline) {
         return (
-          <code className="bg-stone-100 dark:bg-slate-800 text-indigo-700 dark:text-cyan-300 px-1 py-0.5 rounded text-[0.88em] font-mono break-all" {...props}>
+          <code className="bg-stone-100 dark:bg-slate-800 text-indigo-700 dark:text-cyan-300 px-1.5 py-0.5 rounded text-[0.9em] font-mono break-all" {...props}>
             {children}
           </code>
         );
@@ -236,6 +239,18 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         </code>
       );
     },
+  };
+
+  // Inline markdown components for badges, buttons, list items, and headings
+  const inlineMarkdownComponents = {
+    p: ({ children }: any) => <span className="inline leading-relaxed">{children}</span>,
+    strong: ({ children }: any) => <strong className="font-bold text-inherit">{children}</strong>,
+    em: ({ children }: any) => <em className="italic text-inherit">{children}</em>,
+    code: ({ children }: any) => (
+      <code className="bg-stone-100 dark:bg-slate-800 text-indigo-700 dark:text-cyan-300 px-1.5 py-0.5 rounded text-[0.9em] font-mono">
+        {children}
+      </code>
+    ),
   };
 
   const renderMarkdown = (text: string) => {
@@ -251,10 +266,29 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
     );
   };
 
+  const renderInlineMarkdown = (text: string) => {
+    if (!text) return null;
+    return (
+      <ReactMarkdown
+        remarkPlugins={[remarkMath, remarkGfm]}
+        rehypePlugins={KATEX_REHYPE_PLUGINS}
+        components={inlineMarkdownComponents}
+      >
+        {text}
+      </ReactMarkdown>
+    );
+  };
+
   const activeVariasi = variasiList[activeVariasiIndex];
 
   return (
-    <article className="w-full max-w-4xl mx-auto space-y-4 sm:space-y-6 pb-16 px-0 sm:px-2">
+    <article
+      className="w-full max-w-4xl mx-auto space-y-4 sm:space-y-6 pb-16 px-0 sm:px-2 reader-scalable-content transition-all"
+      style={{
+        '--reader-font-scale': fontScale,
+        fontSize: `calc(1rem * ${fontScale})`,
+      } as React.CSSProperties}
+    >
       {/* =============================================================
           ZONA 1: PETA TAKTIS SUB-BAB (ESTIMASI BACA: 45 DETIK)
           ============================================================= */}
@@ -294,128 +328,141 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
             {metadata.title}
           </h1>
 
-          {/* Metrics Row: Estimasi Waktu, Frekuensi UTBK, Status Penguasaan */}
-          <div className="mt-3 pt-3 border-t border-stone-100 dark:border-slate-800 flex flex-wrap items-center gap-1.5 sm:gap-2.5 text-[11px] sm:text-xs">
-            {/* Estimasi Waktu Baca */}
-            <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/50 text-blue-800 dark:text-cyan-300 border border-blue-200/80 dark:border-blue-800/60 font-semibold">
-              <Zap className="w-3 h-3 text-blue-600 dark:text-cyan-400" />
-              <span>Estimasi Baca: ~{zona1?.estimasi_menit_baca ? `${zona1.estimasi_menit_baca} Menit` : '45 Detik'}</span>
-            </div>
-
-            {/* Tingkat Frekuensi Kemunculan di UTBK */}
-            <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-orange-50 dark:bg-orange-950/50 text-orange-800 dark:text-orange-300 border border-orange-200/80 dark:border-orange-800/60 font-semibold">
-              <Flame className="w-3 h-3 text-orange-600 dark:text-orange-400" />
+          {/* Metrics Row: Frekuensi UTBK */}
+          <div className="mt-3 pt-3 border-t border-stone-100 dark:border-slate-800 flex items-center gap-2 text-xs sm:text-sm">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-orange-50 dark:bg-orange-950/50 text-orange-800 dark:text-orange-300 border border-orange-200/80 dark:border-orange-800/60 font-semibold shadow-2xs">
+              <Flame className="w-3.5 h-3.5 text-orange-600 dark:text-orange-400 shrink-0" />
               <span>Frekuensi UTBK: {zona1?.frekuensi_utbk || 'Sangat Tinggi'}</span>
-            </div>
-
-            {/* Indikator Progres Penguasaan */}
-            <div
-              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg font-semibold border ${
-                isCompleted
-                  ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
-                  : 'bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-700'
-              }`}
-            >
-              {isCompleted ? (
-                <>
-                  <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
-                  <span>Status: Selesai Dipelajari</span>
-                </>
-              ) : (
-                <>
-                  <div className="w-2 h-2 rounded-full bg-slate-400 animate-pulse" />
-                  <span>Status: Belum Selesai</span>
-                </>
-              )}
             </div>
           </div>
         </header>
 
-        {/* 1-Minute Cheat Sheet (Kartu Konsep Inti Kotak Biru) */}
+        {/* 1. PEMANTIK KONSEP (EXAM HOOK) - DITARUH PERTAMA */}
+        {zona1?.exam_hook && (
+          <div className="p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-gradient-to-br from-indigo-50/90 via-blue-50/70 to-white dark:from-[#0f172e] dark:via-[#0c1428] dark:to-[#090d1c] border-2 border-indigo-200/90 dark:border-indigo-800/60 shadow-xs relative overflow-hidden">
+            <div className="flex items-center justify-between gap-2 mb-2.5">
+              <div className="flex items-center gap-2">
+                <div className="w-7 h-7 rounded-lg bg-indigo-600 dark:bg-indigo-500 flex items-center justify-center text-white shadow-xs shrink-0">
+                  <HelpCircle className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="px-1.5 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-indigo-200 dark:bg-indigo-900/80 text-indigo-900 dark:text-indigo-200">
+                      UJI CEPAT
+                    </span>
+                    <h2 className="text-sm sm:text-base font-extrabold text-indigo-950 dark:text-indigo-100">
+                      Pemantik Konsep (Brain Hook)
+                    </h2>
+                  </div>
+                  <p className="text-xs text-indigo-700/80 dark:text-indigo-300/80">
+                    Tebak dan uji intuisimu sebelum mendalami rangkuman materi di bawah
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-sm sm:text-base font-medium text-slate-800 dark:text-slate-200 my-3 leading-relaxed">
+              {renderInlineMarkdown(zona1.exam_hook.pertanyaan_pemantik)}
+            </div>
+
+            <div className="flex flex-wrap gap-2 pt-1">
+              {zona1.exam_hook.opsi_cepat.map((opsi, idx) => {
+                const isSelected = examHookAnswer === idx;
+                const isCorrect = idx === zona1.exam_hook?.jawaban_benar_index;
+
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setExamHookAnswer(idx)}
+                    className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer border flex items-center gap-1.5 ${
+                      isSelected
+                        ? isCorrect
+                          ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
+                          : 'bg-rose-600 text-white border-rose-600 shadow-xs'
+                        : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-stone-200 dark:border-slate-700 hover:bg-stone-50 dark:hover:bg-slate-700 shadow-2xs'
+                    }`}
+                  >
+                    {renderInlineMarkdown(opsi)}
+                  </button>
+                );
+              })}
+            </div>
+
+            {examHookAnswer !== null && (
+              <div className="mt-3.5 p-3 sm:p-3.5 rounded-xl bg-indigo-100/80 dark:bg-indigo-950/80 border border-indigo-200 dark:border-indigo-800/80 text-sm sm:text-base text-indigo-950 dark:text-cyan-200 animate-fadeIn leading-relaxed">
+                <span className="font-bold">
+                  {examHookAnswer === zona1.exam_hook.jawaban_benar_index ? '✓ Tepat! ' : '💡 Penjelasan: '}
+                </span>
+                {renderInlineMarkdown(zona1.exam_hook.penjelasan_kilat)}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* PEMISAH ESTETIK ANTARA HOOK & KONSEP INTI */}
+        {zona1?.exam_hook && (
+          <div className="relative flex items-center justify-center my-3 sm:my-4 select-none">
+            <div className="w-full border-t border-dashed border-stone-300 dark:border-slate-700/80" />
+            <div className="absolute px-3.5 py-1 rounded-full bg-[#fdfbf7] dark:bg-[#070913] text-[11px] sm:text-xs font-bold text-slate-500 dark:text-slate-400 border border-stone-200 dark:border-slate-700 flex items-center gap-1.5 shadow-2xs">
+              <BookOpen className="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400" />
+              <span>Rangkuman Teori & Rumus Inti</span>
+            </div>
+          </div>
+        )}
+
+        {/* 2. KARTU KONSEP INTI (1-MINUTE CHEAT SHEET) - DITARUH SETELAH HOOK */}
         <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-blue-50/90 dark:bg-[#0c1e3d]/80 border-2 border-blue-200 dark:border-blue-700/60 shadow-xs relative overflow-hidden">
           <div className="flex items-center gap-2 mb-2.5">
             <div className="w-6 h-6 rounded-md bg-blue-600 dark:bg-cyan-500 flex items-center justify-center text-white dark:text-slate-950 shadow-xs shrink-0">
               <BookOpen className="w-3.5 h-3.5" />
             </div>
             <div>
-              <h2 className="text-xs sm:text-sm font-bold text-blue-950 dark:text-cyan-200">
+              <h2 className="text-sm sm:text-base font-bold text-blue-950 dark:text-cyan-200">
                 Kartu Konsep Inti (1-Minute Cheat Sheet)
               </h2>
-              <p className="text-[10px] sm:text-[11px] text-blue-700 dark:text-cyan-400/80">
+              <p className="text-xs sm:text-sm text-blue-700 dark:text-cyan-400/80">
                 Fondasi teori sub-bab dalam rangkuman ringkas padat konsep
               </p>
             </div>
           </div>
 
-          <div className="text-slate-800 dark:text-slate-100 text-xs sm:text-sm leading-relaxed overflow-x-auto">
+          <div className="text-slate-800 dark:text-slate-100 text-sm sm:text-base leading-relaxed overflow-x-auto">
             {renderMarkdown(zona1?.konsep_inti_markdown || material.content?.tactical_overview || '')}
           </div>
 
           {/* SVG Visualisasi Konsep Inti Zona 1 jika ada */}
           {renderVisualElement(zona1?.visual, 'Diagram Konsep Inti Sub-Bab')}
-
-          {/* Interactive Exam Hook (Mini-Poll Pemantik Otak) */}
-          {zona1?.exam_hook && (
-            <div className="mt-3 pt-3 border-t border-blue-200/80 dark:border-blue-800/60 bg-white/70 dark:bg-slate-900/60 p-3 sm:p-3.5 rounded-xl overflow-hidden">
-              <div className="flex items-center gap-1 text-[11px] font-bold text-blue-900 dark:text-cyan-300 uppercase tracking-wider mb-1.5">
-                <HelpCircle className="w-3 h-3 text-blue-600 dark:text-cyan-400 shrink-0" />
-                <span>Uji Cepat Pemantik Konsep:</span>
-              </div>
-              <p className="text-xs sm:text-sm font-medium text-slate-800 dark:text-slate-200 mb-2.5 leading-snug">
-                {zona1.exam_hook.pertanyaan_pemantik}
-              </p>
-
-              <div className="flex flex-wrap gap-1.5">
-                {zona1.exam_hook.opsi_cepat.map((opsi, idx) => {
-                  const isSelected = examHookAnswer === idx;
-                  const isCorrect = idx === zona1.exam_hook?.jawaban_benar_index;
-
-                  return (
-                    <button
-                      key={idx}
-                      type="button"
-                      onClick={() => setExamHookAnswer(idx)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer border ${
-                        isSelected
-                          ? isCorrect
-                            ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                            : 'bg-rose-600 text-white border-rose-600 shadow-xs'
-                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-stone-200 dark:border-slate-700 hover:bg-stone-50 dark:hover:bg-slate-700'
-                      }`}
-                    >
-                      {opsi}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {examHookAnswer !== null && (
-                <div className="mt-2.5 p-2.5 rounded-lg bg-blue-100/70 dark:bg-blue-950/70 text-xs sm:text-sm text-blue-950 dark:text-cyan-200 animate-fadeIn">
-                  <span className="font-bold">
-                    {examHookAnswer === zona1.exam_hook.jawaban_benar_index ? '✓ Tepat! ' : '💡 Penjelasan: '}
-                  </span>
-                  {zona1.exam_hook.penjelasan_kilat}
-                </div>
-              )}
-            </div>
-          )}
         </div>
 
         {/* Radar Jebakan Utama (Kotak Peringatan Kuning/Oranye) */}
         {zona1?.radar_jebakan_utbk && zona1.radar_jebakan_utbk.length > 0 && (
           <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-amber-50/90 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700/60 shadow-xs overflow-hidden">
-            <div className="flex items-center gap-1.5 mb-2 text-amber-950 dark:text-amber-200 font-bold text-xs sm:text-sm">
-              <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
+            <div className="flex items-center gap-2 mb-2.5 text-amber-950 dark:text-amber-200 font-bold text-sm sm:text-base">
+              <AlertTriangle className="w-4.5 h-4.5 text-amber-600 dark:text-amber-400 shrink-0" />
               <span>Radar Jebakan Utama (1–2 Kesalahan Fatal Peserta)</span>
             </div>
-            <ul className="space-y-1.5 text-xs sm:text-sm text-amber-950 dark:text-amber-100">
+            <ul className="space-y-2 text-sm sm:text-base text-amber-950 dark:text-amber-100">
               {zona1.radar_jebakan_utbk.map((trap, idx) => (
-                <li key={idx} className="flex items-start gap-1.5 leading-relaxed">
-                  <span className="text-rose-500 dark:text-rose-400 font-black shrink-0">✕</span>
-                  <span>{trap}</span>
+                <li key={idx} className="flex items-start gap-2 leading-relaxed">
+                  <span className="text-rose-500 dark:text-rose-400 font-black shrink-0 mt-0.5">✕</span>
+                  <span className="flex-1">{renderInlineMarkdown(trap)}</span>
                 </li>
               ))}
             </ul>
+          </div>
+        )}
+
+        {/* Stimulus Utama Bersama (Skenario Terpadu jika tersedia) */}
+        {zona1?.stimulus_utama_bersama && (
+          <div className="p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-xs space-y-2.5 overflow-hidden">
+            <div className="flex items-center gap-2 text-indigo-950 dark:text-cyan-300 font-bold text-sm sm:text-base">
+              <FileText className="w-4 h-4 text-indigo-600 dark:text-cyan-400 shrink-0" />
+              <span>Stimulus Utama Bersama (Konteks Studi Kasus)</span>
+            </div>
+            <div className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed overflow-x-auto">
+              {renderMarkdown(zona1.stimulus_utama_bersama)}
+            </div>
           </div>
         )}
       </section>
@@ -480,10 +527,11 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                     {activeVariasi.nomor_variasi || activeVariasiIndex + 1}
                   </div>
                   <div>
-                    <h3 className="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white leading-tight">
-                      Variasi {activeVariasi.nomor_variasi || activeVariasiIndex + 1}: {activeVariasi.nama_variasi}
+                    <h3 className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white leading-snug">
+                      <span>Variasi {activeVariasi.nomor_variasi || activeVariasiIndex + 1}: </span>
+                      <span>{renderInlineMarkdown(activeVariasi.nama_variasi)}</span>
                     </h3>
-                    <span className="text-[10px] sm:text-[11px] text-blue-700 dark:text-cyan-400 font-semibold">
+                    <span className="text-xs sm:text-sm text-blue-700 dark:text-cyan-400 font-semibold">
                       Kategori: {activeVariasi.kategori_variasi || 'Inti UTBK'}
                     </span>
                   </div>
@@ -492,12 +540,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
               {/* Pola Mikro 1: Contoh Kasus / Mini-Soal Pemantik */}
               {activeVariasi.stimulus_mini && (
-                <div className="p-3 sm:p-4 rounded-xl bg-stone-50 dark:bg-slate-900/70 border border-stone-200 dark:border-slate-800 space-y-1 overflow-hidden">
-                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider">
-                    <Target className="w-3.5 h-3.5 text-rose-500 shrink-0" />
+                <div className="p-3.5 sm:p-4 rounded-xl bg-stone-50 dark:bg-slate-900/70 border border-stone-200 dark:border-slate-800 space-y-1.5 overflow-hidden">
+                  <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider">
+                    <Target className="w-4 h-4 text-rose-500 shrink-0" />
                     <span>Contoh Kasus / Mini-Soal Pemantik</span>
                   </div>
-                  <div className="text-slate-800 dark:text-slate-200 text-xs sm:text-sm leading-relaxed font-serif">
+                  <div className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed font-serif">
                     {renderMarkdown(activeVariasi.stimulus_mini)}
                   </div>
                 </div>
@@ -507,38 +555,38 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               {renderVisualElement(activeVariasi.visual, `Model Visual Variasi ${activeVariasi.nomor_variasi || activeVariasiIndex + 1}`)}
 
               {/* Pola Mikro 2: Bedah Pola & Langkah Eksekusi */}
-              <div className="p-3 sm:p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-indigo-100 dark:border-indigo-900/40 space-y-1.5 shadow-2xs overflow-hidden">
-                <div className="flex items-center gap-1.5 text-[11px] font-bold text-indigo-900 dark:text-cyan-300 uppercase tracking-wider mb-0.5">
-                  <Sparkles className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400 shrink-0" />
+              <div className="p-3.5 sm:p-4 rounded-xl bg-white dark:bg-slate-900/90 border border-indigo-100 dark:border-indigo-900/40 space-y-2 shadow-2xs overflow-hidden">
+                <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-indigo-900 dark:text-cyan-300 uppercase tracking-wider mb-0.5">
+                  <Sparkles className="w-4 h-4 text-indigo-600 dark:text-cyan-400 shrink-0" />
                   <span>Bedah Pola & Langkah Eksekusi Taktis</span>
                 </div>
-                <div className="text-slate-800 dark:text-slate-200 text-xs sm:text-sm leading-relaxed overflow-x-auto">
+                <div className="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed overflow-x-auto">
                   {renderMarkdown(activeVariasi.bedah_pola_markdown)}
                 </div>
               </div>
 
               {/* Pola Mikro 3: Catatan Khusus Variasi (Kunci Pembeda) */}
               {activeVariasi.kunci_pembeda && (
-                <div className="p-3 sm:p-3.5 rounded-xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 flex items-start gap-2 overflow-hidden">
-                  <Lightbulb className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
-                  <div className="text-xs sm:text-sm text-emerald-950 dark:text-emerald-100 leading-relaxed">
+                <div className="p-3.5 sm:p-4 rounded-xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 flex items-start gap-2.5 overflow-hidden">
+                  <Lightbulb className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+                  <div className="text-sm sm:text-base text-emerald-950 dark:text-emerald-100 leading-relaxed">
                     <span className="font-bold text-emerald-900 dark:text-emerald-200">
                       Catatan Khusus & Kunci Pembeda:
                     </span>{' '}
-                    {activeVariasi.kunci_pembeda}
+                    {renderInlineMarkdown(activeVariasi.kunci_pembeda)}
                   </div>
                 </div>
               )}
 
               {/* Step Navigation Inside Tabs */}
-              <div className="pt-2 flex items-center justify-between text-xs">
+              <div className="pt-2 flex items-center justify-between text-xs sm:text-sm">
                 <button
                   type="button"
                   onClick={() => setActiveVariasiIndex((prev) => Math.max(0, prev - 1))}
                   disabled={activeVariasiIndex === 0}
-                  className="px-2.5 py-1.5 rounded-lg border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold disabled:opacity-30 disabled:cursor-not-allowed hover:bg-stone-50 dark:hover:bg-slate-700 cursor-pointer flex items-center gap-1"
+                  className="px-3 py-2 rounded-xl border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold disabled:opacity-30 disabled:cursor-not-allowed hover:bg-stone-50 dark:hover:bg-slate-700 cursor-pointer flex items-center gap-1"
                 >
-                  <ChevronLeft className="w-3.5 h-3.5" />
+                  <ChevronLeft className="w-4 h-4" />
                   <span>Variasi Sebelumnya</span>
                 </button>
 
@@ -548,10 +596,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                     setActiveVariasiIndex((prev) => Math.min(variasiList.length - 1, prev + 1))
                   }
                   disabled={activeVariasiIndex === variasiList.length - 1}
-                  className="px-2.5 py-1.5 rounded-lg border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold disabled:opacity-30 disabled:cursor-not-allowed hover:bg-stone-50 dark:hover:bg-slate-700 cursor-pointer flex items-center gap-1"
+                  className="px-3 py-2 rounded-xl border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold disabled:opacity-30 disabled:cursor-not-allowed hover:bg-stone-50 dark:hover:bg-slate-700 cursor-pointer flex items-center gap-1"
                 >
                   <span>Variasi Selanjutnya</span>
-                  <ChevronRight className="w-3.5 h-3.5" />
+                  <ChevronRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -575,11 +623,11 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                   Arena Uji Pemahaman & Active Recall
                 </h2>
               </div>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+              <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
                 Uji langsung pemahamanmu pada variasi di atas sebelum membuka pembahasan
               </p>
             </div>
-            <span className="text-xs font-mono font-bold text-slate-400 dark:text-slate-500">
+            <span className="text-xs sm:text-sm font-mono font-bold text-slate-400 dark:text-slate-500">
               {soalList.length} Soal Mini
             </span>
           </div>
@@ -596,25 +644,25 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               return (
                 <div
                   key={nomor}
-                  className="rounded-xl border border-stone-200/90 dark:border-slate-800 bg-[#fffdfa] dark:bg-[#0a1024] p-3 sm:p-4 space-y-3 overflow-hidden"
+                  className="rounded-xl border border-stone-200/90 dark:border-slate-800 bg-[#fffdfa] dark:bg-[#0a1024] p-3.5 sm:p-5 space-y-3.5 overflow-hidden"
                 >
                   {/* Soal Meta */}
-                  <div className="flex flex-wrap items-center justify-between gap-1.5 text-xs">
-                    <div className="flex items-center gap-1.5">
-                      <span className="w-5 h-5 rounded-md bg-indigo-600 text-white flex items-center justify-center font-black text-xs shrink-0">
+                  <div className="flex flex-wrap items-center justify-between gap-1.5 text-xs sm:text-sm">
+                    <div className="flex items-center gap-2">
+                      <span className="w-5 h-5 sm:w-6 sm:h-6 rounded-md bg-indigo-600 text-white flex items-center justify-center font-black text-xs shrink-0">
                         {nomor}
                       </span>
-                      <span className="font-bold text-slate-700 dark:text-slate-300 text-xs">
+                      <span className="font-bold text-slate-700 dark:text-slate-300 text-xs sm:text-sm">
                         Menguji Variasi {Array.isArray(soal.menguji_variasi_ke) ? soal.menguji_variasi_ke.join(', ') : 'Inti'}
                       </span>
                     </div>
-                    <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200 dark:border-slate-700">
+                    <span className="px-2 py-0.5 rounded text-xs font-semibold bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200 dark:border-slate-700">
                       {soal.tipe_soal_utbk || 'Standard MC'}
                     </span>
                   </div>
 
                   {/* Pertanyaan */}
-                  <div className="text-slate-900 dark:text-slate-100 text-xs sm:text-sm font-medium leading-relaxed">
+                  <div className="text-slate-900 dark:text-slate-100 text-sm sm:text-base font-medium leading-relaxed">
                     {renderMarkdown(soal.pertanyaan_markdown)}
                   </div>
 
@@ -622,7 +670,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                   {renderVisualElement(soal.visual, `Diagram / Stimulus Soal ${nomor}`)}
 
                   {/* Opsi Jawaban (A-E) */}
-                  <div className="space-y-1.5">
+                  <div className="space-y-2">
                     {soal.opsi_jawaban.map((opsiText, optIdx) => {
                       const optKeyMatch = opsiText.match(/^([A-E])\.\s*(.+)/s);
                       const key = optKeyMatch ? optKeyMatch[1] : String.fromCharCode(65 + optIdx);
@@ -650,10 +698,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                           key={key}
                           type="button"
                           onClick={() => handleSelectQuizAnswer(nomor, key)}
-                          className={`w-full text-left p-2.5 rounded-lg border text-xs sm:text-sm flex items-start gap-2 transition cursor-pointer ${btnStyle}`}
+                          className={`w-full text-left p-3 rounded-xl border text-sm sm:text-base flex items-start gap-2.5 transition cursor-pointer ${btnStyle}`}
                         >
                           <span
-                            className={`w-5 h-5 rounded-md flex items-center justify-center font-bold text-xs shrink-0 ${
+                            className={`w-6 h-6 rounded-md flex items-center justify-center font-bold text-xs shrink-0 ${
                               isAnswered && isThisSelected
                                 ? isRight
                                   ? 'bg-emerald-600 text-white'
@@ -663,7 +711,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                           >
                             {key}
                           </span>
-                          <span className="flex-1 pt-0.5 leading-relaxed break-words">{text}</span>
+                          <span className="flex-1 pt-0.5 leading-relaxed break-words">{renderInlineMarkdown(text)}</span>
                         </button>
                       );
                     })}
@@ -674,7 +722,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                     <div>
                       {isAnswered && (
                         <div
-                          className={`inline-flex items-center gap-1 text-xs font-bold ${
+                          className={`inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold ${
                             isRight ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'
                           }`}
                         >
@@ -696,22 +744,22 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                     <button
                       type="button"
                       onClick={() => togglePembahasan(nomor)}
-                      className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-50 dark:bg-slate-800 text-indigo-700 dark:text-cyan-300 border border-indigo-200/80 dark:border-slate-700 hover:bg-indigo-100 dark:hover:bg-slate-700 transition cursor-pointer self-start sm:self-auto"
+                      className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-indigo-50 dark:bg-slate-800 text-indigo-700 dark:text-cyan-300 border border-indigo-200/80 dark:border-slate-700 hover:bg-indigo-100 dark:hover:bg-slate-700 transition cursor-pointer self-start sm:self-auto"
                     >
                       <span>{isPembahasanOpen ? 'Tutup Pembahasan' : 'Lihat Pembahasan'}</span>
                       {isPembahasanOpen ? (
-                        <ChevronUp className="w-3.5 h-3.5" />
+                        <ChevronUp className="w-4 h-4" />
                       ) : (
-                        <ChevronDown className="w-3.5 h-3.5" />
+                        <ChevronDown className="w-4 h-4" />
                       )}
                     </button>
                   </div>
 
                   {/* Accordion Content Pembahasan */}
                   {isPembahasanOpen && (
-                    <div className="mt-2.5 p-3 rounded-lg bg-blue-50/70 dark:bg-slate-900/90 border border-blue-200/80 dark:border-slate-800 text-xs sm:text-sm text-slate-800 dark:text-slate-200 space-y-1.5 animate-fadeIn overflow-x-auto">
-                      <div className="flex items-center gap-1 font-bold text-blue-950 dark:text-cyan-300 uppercase tracking-wide text-[11px]">
-                        <Sparkles className="w-3 h-3 text-blue-600 dark:text-cyan-400" />
+                    <div className="mt-3 p-3.5 sm:p-4 rounded-xl bg-blue-50/70 dark:bg-slate-900/90 border border-blue-200/80 dark:border-slate-800 text-sm sm:text-base text-slate-800 dark:text-slate-200 space-y-2 animate-fadeIn overflow-x-auto">
+                      <div className="flex items-center gap-1.5 font-bold text-blue-950 dark:text-cyan-300 uppercase tracking-wide text-xs sm:text-sm">
+                        <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400" />
                         <span>Bedah Cepat & Konsep Solusi:</span>
                       </div>
                       <div className="leading-relaxed">

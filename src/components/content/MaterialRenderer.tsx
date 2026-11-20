@@ -5,6 +5,7 @@ import { ThreeZoneMaterialViewer } from './ThreeZoneMaterialViewer';
 export interface MaterialRendererProps {
   material: Material;
   theme?: 'light' | 'dark';
+  fontScale?: number;
   onBackToSubtest?: () => void;
   onPrevSubchapter?: () => void;
   onNextSubchapter?: () => void;
@@ -17,6 +18,7 @@ export interface MaterialRendererProps {
 export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
   material,
   theme = 'light',
+  fontScale = 1.0,
   onBackToSubtest = () => {},
   onPrevSubchapter = () => {},
   onNextSubchapter = () => {},
@@ -28,6 +30,7 @@ export const MaterialRenderer: React.FC<MaterialRendererProps> = ({
     <ThreeZoneMaterialViewer
       material={material}
       theme={theme}
+      fontScale={fontScale}
       onBackToSubtest={onBackToSubtest}
       onPrevSubchapter={onPrevSubchapter}
       onNextSubchapter={onNextSubchapter}

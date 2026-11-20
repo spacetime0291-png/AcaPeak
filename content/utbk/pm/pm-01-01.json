@@ -16,7 +16,7 @@
       "jawaban_benar_index": 1,
       "penjelasan_kilat": "Diskon dan pajak tidak boleh langsung dijumlah-kurangkan karena basis pengalinya bertahap. Diskon $20\\% + 10\\%$ setara faktor bayar $0,8 \\times 0,9 = 0,72$ (diskon $28\\%$), lalu dikalikan faktor pajak bertahap $1,05 \\times 1,10 = 1,155$."
     },
-    "konsep_inti_markdown": "**Aritmetika sosial UTBK** menguji perubahan nilai berantai melalui faktor pengali desimal.\n\n* **Untung/Rugi & BEP:** $\\text{Untung} = H_J - H_B$; $\\text{BEP (unit)} = \\frac{\\text{Biaya Tetap}}{H_J - \\text{Biaya Variabel/unit}}$\n* **Diskon & Pajak Berantai:** Harga akhir $= H_0 \\times (1 - d_1)(1 - d_2) \\times (1 + p_1)(1 + p_2)$\n* **Bobot Logistik:** $\\text{Bruto} = \\text{Neto} + \\text{Tara}$ (persentase tara selalu dihitung dari **bruto**).",
+    "konsep_inti_markdown": "**Aritmetika sosial UTBK** menguji perubahan nilai berantai melalui faktor pengali desimal.\n\n* **Untung & Rugi:** $\\text{Untung} = H_J - H_B$\n* **Titik Impas (BEP):** $\\text{BEP (unit)} = \\frac{\\text{Biaya Tetap}}{H_J - \\text{Biaya Variabel/unit}}$\n* **Diskon & Pajak Berantai:** Harga akhir $= H_0 \\times (1 - d_1)(1 - d_2) \\times (1 + p_1)(1 + p_2)$\n* **Bobot Logistik:** $\\text{Bruto} = \\text{Neto} + \\text{Tara}$ (persentase tara selalu dihitung dari **bruto**).",
     "radar_jebakan_utbk": [
       "Menjumlahkan langsung persentase diskon bertingkat ($20\\% + 10\\% \\neq 30\\%$) atau menghitung PB1 dari harga sebelum service charge.",
       "Menghitung biaya produksi per unit menggunakan berat bruto sebelum dikurangi tara dan persentase barang rusak (penyusutan)."
