@@ -5,8 +5,8 @@
 @layer base {
   :root {
     color-scheme: light dark;
-    --bg-page-light: #fdfbf7;
-    --bg-page-light-grad: #f4f9f5;
+    --bg-page-light: #f8fafc;
+    --bg-page-light-grad: #f1f5f9;
     --text-primary-light: #1e293b;
     --text-secondary-light: #64748b;
     --card-bg-light: #ffffff;
@@ -22,7 +22,7 @@
 
   html {
     font-size: 16px;
-    background-color: #fdfbf7;
+    background-color: #f8fafc;
   }
 
   html.dark {
@@ -35,11 +35,10 @@
 
   body {
     font-size: 1.0625rem;
-    line-height: 1.65;
-    background-color: #fdfbf7;
-    background-image: linear-gradient(180deg, #fdfbf7 0%, #f4f9f5 100%);
+    line-height: 1.7;
+    background-color: #f8fafc;
     color: #1e293b;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -240,22 +239,22 @@ body:not(.dark) .pastel-card-cream {
   max-width: 100%;
 }
 
-/* Fractions styling: proper vertical padding, clean division bar */
-.katex .mfrac {
-  padding: 0.1em 0.15em;
-  margin: 0 0.05em;
-  vertical-align: -0.1em;
-}
-
+/* Fractions styling: clean division bar, let KaTeX compute precise numerator/denominator positions */
 .katex .mfrac .frac-line {
   border-bottom-style: solid !important;
+  min-height: 1.5px !important;
 }
 
 /* Give lines containing KaTeX formulas comfortable vertical room so multi-level fractions/powers never collide */
 p:has(.katex),
 li:has(.katex),
 div:has(.katex) {
-  line-height: 1.85 !important;
+  line-height: 1.95 !important;
+}
+
+li:has(.katex) {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
 }
 
 /* Material SVG Responsive Scaling */
@@ -299,6 +298,15 @@ div:has(.katex) {
 
 .reader-scalable-content {
   font-size: calc(1rem * var(--reader-font-scale, 1));
+}
+
+/* Hide horizontal scrollbar while keeping smooth touch scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Dark Mode KaTeX: high-contrast pure white/slate */
