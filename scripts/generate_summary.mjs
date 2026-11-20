@@ -46,45 +46,75 @@ function scanDirectory(dir, relativeTo = ROOT_DIR) {
   return result;
 }
 
-function analyzePuContent() {
-  const puDir = path.join(ROOT_DIR, 'content/utbk/pu');
-  if (!fs.existsSync(puDir)) return { subchapters: 0, questions: 0, files: [] };
+function analyzeUtbkContent() {
+  const subtests = [
+    { code: 'pu', name: 'Penalaran Umum (PU)' },
+    { code: 'ppu', name: 'Pengetahuan & Pemahaman Umum (PPU)' },
+    { code: 'pbm', name: 'Pemahaman Bacaan & Menulis (PBM)' },
+    { code: 'pk', name: 'Pengetahuan Kuantitatif (PK)' },
+    { code: 'lbi', name: 'Literasi Bahasa Indonesia (LBI)' },
+    { code: 'lbe', name: 'Literasi Bahasa Inggris (LBE)' },
+    { code: 'pm', name: 'Penalaran Matematika (PM)' },
+  ];
 
-  const files = fs.readdirSync(puDir).filter(f => f.startsWith('pu-') && f.endsWith('.json'));
-  // Unique subchapters (filter out unpadded duplicates if any)
-  const paddedFiles = files.filter(f => /^pu-\d{2}-\d{2}\.json$/.test(f));
-  const activeFiles = paddedFiles.length > 0 ? paddedFiles : files;
+  const summary = {
+    totalSubchapters: 0,
+    totalVariations: 0,
+    totalQuestions: 0,
+    subtests: [],
+  };
 
-  let totalQuestions = 0;
-  const list = [];
-
-  for (const file of activeFiles) {
-    try {
-      const data = JSON.parse(fs.readFileSync(path.join(puDir, file), 'utf8'));
-      const qCount = data.worked_examples ? data.worked_examples.length : 0;
-      totalQuestions += qCount;
-      list.push({
-        id: data.metadata?.id || file.replace('.json', ''),
-        title: data.metadata?.title || 'Unknown',
-        chapter: `${data.metadata?.chapter_num || '?'}. ${data.metadata?.chapter_title || ''}`,
-        questions: qCount,
-      });
-    } catch {
-      // skip
+  for (const sub of subtests) {
+    const dir = path.join(ROOT_DIR, 'content/utbk', sub.code);
+    if (!fs.existsSync(dir)) {
+      summary.subtests.push({ ...sub, subchapters: 0, variations: 0, questions: 0, files: [] });
+      continue;
     }
+
+    const files = fs.readdirSync(dir).filter(f => f.startsWith(`${sub.code}-`) && f.endsWith('.json'));
+    let subQuestions = 0;
+    let subVariations = 0;
+    const list = [];
+
+    for (const file of files) {
+      try {
+        const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+        const qCount = (data.zona_3_uji_pemahaman ? data.zona_3_uji_pemahaman.length : 0) || (data.worked_examples ? data.worked_examples.length : 0);
+        const vCount = (data.zona_2_variasi_inti ? data.zona_2_variasi_inti.length : 0);
+        subQuestions += qCount;
+        subVariations += vCount;
+        list.push({
+          id: data.kode_subbab || data.metadata?.id || file.replace('.json', ''),
+          title: data.judul_subbab || data.metadata?.title || 'Unknown',
+          chapter: data.bab || `${data.metadata?.chapter_num || '?'}. ${data.metadata?.chapter_title || ''}`,
+          variations: vCount,
+          questions: qCount,
+        });
+      } catch {
+        // skip
+      }
+    }
+
+    summary.totalSubchapters += files.length;
+    summary.totalVariations += subVariations;
+    summary.totalQuestions += subQuestions;
+    summary.subtests.push({
+      ...sub,
+      subchapters: files.length,
+      variations: subVariations,
+      questions: subQuestions,
+      files: list,
+    });
   }
 
-  return {
-    subchapters: activeFiles.length,
-    questions: totalQuestions,
-    files: list,
-  };
+  return summary;
 }
 
 function generateSummary() {
   const now = new Date().toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
   const pkg = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'package.json'), 'utf8'));
-  const puContent = analyzePuContent();
+  const utbkContent = analyzeUtbkContent();
+  const puSubtest = utbkContent.subtests.find(s => s.code === 'pu') || { subchapters: 0, questions: 0, files: [] };
   const srcFiles = scanDirectory(path.join(ROOT_DIR, 'src'));
   const scriptFiles = scanDirectory(path.join(ROOT_DIR, 'scripts'));
 
@@ -171,7 +201,7 @@ function generateSummary() {
 | **Math & Markdown** | \`react-markdown\` v10 + \`remark-math\` + \`rehype-katex\` + \`katex\` (Inline & Display KaTeX) |
 | **Database / Backend** | Supabase JS client ready (\`@supabase/supabase-js\`), Static JSON repository |
 | **Deployment** | GitHub Pages SPA (\`deploy.yml\`, \`404.html\` client-side routing fallback, \`.nojekyll\`) |
-| **Status Bank Soal PU** | **${puContent.subchapters} Sub-bab** aktif, **${puContent.questions} Soal Drilling** ber-HOTS tinggi |
+| **Status Bank Soal UTBK** | **${utbkContent.totalSubchapters} Sub-bab** aktif, **${utbkContent.totalVariations} Variasi Inti**, **${utbkContent.totalQuestions} Soal Drilling** HOTS (7 Subtes Lengkap) |
 
 ---
 
@@ -339,23 +369,47 @@ Mengevaluasi kebenaran jawaban pengguna secara lintas format:
 
 ## 6. Inventaris Subtes UTBK & Status Bank Soal
 
-### 7 Subtes Resmi UTBK SNBT
-1. **PU (Penalaran Umum)**: Induktif, Deduktif, Kuantitatif $\\rightarrow$ *${puContent.subchapters} Sub-bab aktif, ${puContent.questions} Soal terdaftar*.
-2. **PPU (Pengetahuan & Pemahaman Umum)**
-3. **PBM (Pemahaman Bacaan & Menulis)**
-4. **PK (Pengetahuan Kuantitatif)**
-5. **LBI (Literasi Bahasa Indonesia)**
-6. **LBE (Literasi Bahasa Inggris)**
-7. **PM (Penalaran Matematika)**
+### Ringkasan 7 Subtes Resmi UTBK SNBT
+Total Keseluruhan: **${utbkContent.totalSubchapters} Sub-bab**, **${utbkContent.totalVariations} Variasi Pola Inti**, **${utbkContent.totalQuestions} Soal Drilling HOTS**.
 
-### Rincian Sub-bab PU Aktif Saat Ini
-| ID | Bab | Judul Sub-bab | Jumlah Soal |
-| :--- | :--- | :--- | :---: |
-${puContent.files.map(f => `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.questions} soal |`).join('\n')}
+| Subtes | Kode | Sub-bab Aktif | Variasi Pola Inti | Soal Drilling HOTS |
+| :--- | :---: | :---: | :---: | :---: |
+${utbkContent.subtests.map(s => `| **${s.name}** | \`${s.code.toUpperCase()}\` | ${s.subchapters} Sub-bab | ${s.variations} Variasi | ${s.questions} Soal |`).join('\n')}
+
+### Rincian Sub-bab Penalaran Umum (PU) Aktif
+| ID | Bab | Judul Sub-bab | Variasi | Jumlah Soal |
+| :--- | :--- | :--- | :---: | :---: |
+${puSubtest.files.map(f => `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.variations} variasi | ${f.questions} soal |`).join('\n')}
 
 ---
 
-## 7. Aturan Wajib Pengembangan untuk AI & Developer
+## 7. Arsitektur Layout 3 Zona & KaTeX Math Rendering Engine
+
+### A. Layout 3 Zona Terstruktur (\`ThreeZoneMaterialViewer.tsx\`)
+Tampilan materi belajar dioptimalkan untuk ergonomi visual (lebar maksimal 720px, font scaling responsif, progress tracking persentase):
+1. **Zona 1: Peta Taktis & Fondasi Sub-bab**:
+   - **Pemantik Logika (Exam Hook)**: Mini-studi kasus 15 detik yang dibungkus dalam kartu kontras elegan dengan aksen garis vertikal (\`border-l-4\`), opsi tebak cepat 2 pilihan, dan umpan balik kilat instan.
+   - **Fondasi Konsep Inti**: Ringkasan teori padat, formula esensial, skala kepastian, dan diagram alur SVG adaptif dengan fitur perbesar (zoomable modal).
+   - **Radar Jebakan UTBK**: Checklist bias kognitif dan distraktor umum di UTBK.
+2. **Zona 2: Katalog Variasi Pola Soal Inti**:
+   - Tab navigasi interaktif untuk seluruh variasi pola soal sub-bab.
+   - Bedah pola solusi 3 tahap baku: *Formulating* (Terjemahan Cerita), *Employing* (Model Matematika / Logika), dan *Interpreting & Evaluating* (Hitung Taktis & Uji Realitas).
+3. **Zona 3: Uji Pemahaman Mandiri**:
+   - Soal drilling bertingkat HOTS dengan pembahasan instan dan tombol langsung ke mode drilling intensif.
+
+### B. KaTeX & Math Division Standards
+1. **Auto-Promotion \`\\frac\` $\\rightarrow$ \`\\dfrac\`**:
+   - Preprocessor runtime \`formatMathContent\` secara otomatis menaikkan semua \`\\frac\` menjadi display fraction (\`\\dfrac\`) agar pembilang dan penyebut berukuran penuh, tidak gepeng, dan memiliki jarak vertikal bebas tabrakan.
+2. **KaTeX Baseline & Strut Protection**:
+   - \`.katex\` dikunci dengan \`line-height: 1.2 !important\` untuk menjaga akurasi penghitungan strut dan baseline KaTeX.
+   - \`.katex .mfrac .frac-line\` menggunakan ketebalan solid \`1.25px\` dengan \`height: 0 !important\` agar tidak memicu pergeseran offset.
+   - Mengunci \`transform: none !important\` pada seluruh container \`.vlist\`, \`.mfrac\`, dan span turunannya agar tidak ada CSS warisan yang menggeser posisi pembilang/penyebut.
+3. **Optimasi Asset Bundle**:
+   - Penghapusan referensi CSS statis ganda dari \`index.html\` menurunkan ukuran file bundle \`assets/index.css\` dari **15,8 MB menjadi 174 kB** (90x lebih cepat dan bebas konflik).
+
+---
+
+## 8. Aturan Wajib Pengembangan untuk AI & Developer
 
 1. **KaTeX & Notasi Matematika**:
    - Seluruh rumus wajib diapit tanda dollar tunggal \`$...$\`.
@@ -377,7 +431,7 @@ ${puContent.files.map(f => `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.ques
 
 ---
 
-## 8. Perintah Terminal Penting
+## 9. Perintah Terminal Penting
 
 | Perintah | Deskripsi |
 | :--- | :--- |
