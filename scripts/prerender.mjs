@@ -321,9 +321,10 @@ async function prerender() {
   }
 
   // -----------------------------------------------------------
-  // 5. 404 FALLBACK FOR CLIENT ROUTING & ROOT SYNC
+  // 5. 404 & 200 (SPA CATCH-ALL) FALLBACK FOR CLIENT ROUTING & ROOT SYNC
   // -----------------------------------------------------------
   fs.copyFileSync(path.join(DIST_DIR, 'index.html'), path.join(DIST_DIR, '404.html'));
+  fs.copyFileSync(path.join(DIST_DIR, 'index.html'), path.join(DIST_DIR, '200.html'));
   fs.copyFileSync(path.join(DIST_DIR, 'index.html'), path.join(ROOT_DIR, '404.html'));
 
   // -----------------------------------------------------------
