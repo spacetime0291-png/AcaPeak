@@ -443,15 +443,15 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
             <div className="text-[16px] leading-relaxed text-slate-800 dark:text-slate-200">
               {renderMarkdown(zona1.konsep_inti_markdown)}
             </div>
-
-            {/* Visual Grafis Zona 1 (jika ada) */}
-            {zona1.visual && (
-              <VisualRenderer
-                visual={zona1.visual}
-                onZoom={setZoomSvg}
-              />
-            )}
           </div>
+        )}
+
+        {/* Visual Grafis Zona 1 (Infografis Peta Taktis Full Width Sama Rata) */}
+        {zona1?.visual && (
+          <VisualRenderer
+            visual={zona1.visual}
+            onZoom={setZoomSvg}
+          />
         )}
 
         {/* 2B. DETAIL MATERI LENGKAP (ZONA 1B ACCORDION) */}

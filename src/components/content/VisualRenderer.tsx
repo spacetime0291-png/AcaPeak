@@ -86,7 +86,7 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
 
     const svgClass = isMini
       ? 'w-full h-auto max-w-[260px] mx-auto block'
-      : 'w-full h-auto max-w-[440px] mx-auto block';
+      : 'w-full h-auto max-w-full mx-auto block';
 
     if (code.includes('<svg')) {
       code = code.replace(/<svg\b([^>]*)>/i, (_match, attrs) => {
@@ -107,11 +107,13 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
 
   return (
     <figure
-      className={`my-4 rounded-xl border border-slate-800 bg-[#0B1120] p-3 relative group transition-all ${className}`}
+      className={`my-4 w-full relative group transition-all ${
+        isMermaid ? 'rounded-xl border border-slate-800 bg-[#0B1120] p-3 sm:p-4' : ''
+      } ${className}`}
     >
       {/* Zoom Button if handler provided */}
       {onZoom && showZoomButton && (
-        <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+        <div className="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity z-10">
           <button
             type="button"
             onClick={() => onZoom(visual)}
@@ -128,7 +130,7 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
       {isSvg && (
         <div
           onClick={onZoom ? () => onZoom(visual) : undefined}
-          className={`w-full overflow-hidden flex justify-center items-center ${
+          className={`w-full overflow-hidden rounded-xl flex justify-center items-center ${
             onZoom ? 'cursor-zoom-in' : ''
           }`}
           dangerouslySetInnerHTML={{ __html: formattedSvg }}
@@ -140,7 +142,7 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
         <div
           onClick={onZoom ? () => onZoom(visual) : undefined}
           className={`w-full overflow-x-auto flex justify-center items-center [&>svg]:w-full [&>svg]:h-auto ${
-            isMini ? '[&>svg]:max-w-[260px]' : '[&>svg]:max-w-[440px]'
+            isMini ? '[&>svg]:max-w-[260px]' : '[&>svg]:max-w-full'
           } [&>svg]:mx-auto [&>svg]:block ${onZoom ? 'cursor-zoom-in' : ''}`}
           dangerouslySetInnerHTML={{
             __html: mermaidSvg || `<div class="text-xs text-slate-500 py-4">Memuat diagram...</div>`,
@@ -150,7 +152,7 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
 
       {/* Caption */}
       {visual.caption && (
-        <figcaption className="text-xs text-slate-400 text-center mt-2 leading-relaxed px-2">
+        <figcaption className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 text-center mt-2.5 leading-relaxed px-2">
           {visual.caption}
         </figcaption>
       )}

@@ -55,9 +55,9 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
   const { label_kolom } = data;
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 p-5 sm:p-6 shadow-xs space-y-5 transition-all">
+    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 shadow-xs overflow-hidden transition-all">
       {/* Header Blok Detail Materi (Zona 1B) */}
-      <div className="space-y-1.5 border-b border-slate-100 dark:border-slate-800 pb-4">
+      <div className="p-5 sm:p-6 space-y-1.5 border-b border-slate-100 dark:border-slate-800">
         <div className="flex items-center gap-2">
           <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold uppercase tracking-wider text-sky-700 dark:text-sky-300 bg-sky-50 dark:bg-sky-950/60 px-2.5 py-1 rounded-md">
             <BookOpen className="w-3.5 h-3.5 text-sky-500" />
@@ -75,22 +75,23 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
       </div>
 
       {/* Accordion List Kelompok */}
-      <div className="space-y-3.5">
+      <div className="divide-y divide-slate-200/90 dark:divide-slate-800">
         {data.kelompok.map((kelompok, kIdx) => {
           const isOpen = openGroups[kIdx] ?? false;
           const butirList = kelompok.butir || [];
           const badgeText = getBadgeLabel(butirList.length, kelompok.nama_kelompok);
 
           return (
-            <div
-              key={kIdx}
-              className="rounded-xl border border-slate-200/90 dark:border-slate-800 overflow-hidden bg-slate-50/50 dark:bg-slate-900/60 transition-all"
-            >
+            <div key={kIdx} className="transition-all">
               {/* Accordion Header / Trigger Button */}
               <button
                 type="button"
                 onClick={() => toggleGroup(kIdx)}
-                className="w-full p-4 flex items-center justify-between gap-3 text-left bg-white dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-800 transition cursor-pointer"
+                className={`w-full px-5 py-4 sm:px-6 sm:py-4.5 flex items-center justify-between gap-3 text-left transition-colors cursor-pointer ${
+                  isOpen
+                    ? 'bg-sky-50/40 dark:bg-sky-950/20 text-slate-900 dark:text-white'
+                    : 'bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800/60 text-slate-900 dark:text-slate-100'
+                }`}
                 aria-expanded={isOpen}
               >
                 <div className="flex-1 min-w-0 pr-2">
@@ -120,11 +121,11 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
 
               {/* Accordion Content */}
               {isOpen && (
-                <div className="p-4 sm:p-5 border-t border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900/40 fade-in">
+                <div className="border-t border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900/60 fade-in">
                   {/* =========================================================
                       DESKTOP VIEW: Tabel 3 Kolom Rapi
                       ========================================================= */}
-                  <div className="hidden md:block overflow-x-auto">
+                  <div className="hidden md:block p-5 sm:p-6 overflow-x-auto">
                     <table className="w-full text-left border-collapse">
                       <thead>
                         <tr className="border-b border-slate-200 dark:border-slate-700 bg-slate-100/80 dark:bg-slate-800/80 text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300">
@@ -189,16 +190,16 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                   </div>
 
                   {/* =========================================================
-                      MOBILE VIEW: Tumpukan Kartu Vertikal Ringkas
+                      MOBILE VIEW: Isi Materi Sama Rata Tanpa Margin Tambahan
                       ========================================================= */}
-                  <div className="block md:hidden space-y-4">
+                  <div className="block md:hidden px-4 sm:px-5 py-2 divide-y divide-slate-200/90 dark:divide-slate-800">
                     {butirList.map((b, bIdx) => (
                       <div
                         key={bIdx}
-                        className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 space-y-3.5 shadow-2xs"
+                        className="py-4.5 first:pt-2.5 last:pb-3 space-y-3"
                       >
                         {/* Judul Butir */}
-                        <div className="flex items-start gap-2 border-b border-slate-100 dark:border-slate-800 pb-2">
+                        <div className="flex items-start gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-2">
                           <span className="font-mono text-xs font-bold px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950/80 text-sky-800 dark:text-sky-300 shrink-0 mt-0.5">
                             {bIdx + 1}
                           </span>
@@ -238,7 +239,7 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                         </div>
 
                         {/* Kolom 3: Jebakan atau Catatan */}
-                        <div className="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/40 text-amber-950 dark:text-amber-200 text-xs leading-relaxed space-y-1">
+                        <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/40 text-amber-950 dark:text-amber-200 text-xs sm:text-sm leading-relaxed space-y-1">
                           <div className="font-bold flex items-center gap-1 text-amber-700 dark:text-amber-400 font-mono text-[11px] uppercase tracking-wider">
                             <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                             <span>{label_kolom?.kolom_3 || 'Catatan / Jebakan UTBK'}</span>
