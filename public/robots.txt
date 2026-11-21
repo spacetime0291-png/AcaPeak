@@ -3,4 +3,4 @@ User-agent: *
 Disallow: /drilling/
 Allow: /
 
-Sitemap: https://example.my.id/sitemap.xml
+Sitemap: https://acapeak.spacetime0291.workers.dev/sitemap.xml

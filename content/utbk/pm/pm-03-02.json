@@ -9,13 +9,13 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Sebuah tenda silinder berdiameter 14 m dengan atap kerucut dicat seluruh sisi luarnya termasuk alas yang menempel tanah, lalu kontainer diisi kardus hanya dengan membagi total volumenya. Di mana letak kesalahan fatal yang sering memakan korban di UTBK?",
+      "pertanyaan_pemantik": "Sebuah kontainer berukuran 3 m × 2 m × 2 m (V = 12 m³) akan diisi kardus kubus berusuk 0,8 m (V = 0,512 m³). Apakah kontainer tersebut pasti muat ⌊12 / 0,512⌋ = 23 kardus?",
       "opsi_cepat": [
-        "Rumus volume kerucut lupa dikali 1/3",
-        "Menghitung bidang dempet yang tertutup & mengabaikan sisa ruang susunan kardus"
+        "Pasti muat 23 kardus karena volume total mencukupi",
+        "Tidak, hanya muat 12 kardus karena harus dihitung per rusuk"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Pada bangun gabungan fisik, bidang persekutuan yang tertutup atau menempel tanah tidak perlu dilapisi material, sedangkan pengemasan kotak wajib memakai pembulatan ke bawah per rusuk, bukan pembagian total volume."
+      "penjelasan_kilat": "Kapasitas kardus wajib dihitung per rusuk dengan pembulatan ke bawah: $\\lfloor 3/0{,}8 \\rfloor \\times \\lfloor 2/0{,}8 \\rfloor \\times \\lfloor 2/0{,}8 \\rfloor = 3 \\times 2 \\times 2 = 12$ kardus. Pembagian volume total mengabaikan sisa ruang kosong (void) yang tidak bisa diisi kardus utuh."
     },
     "konsep_inti_markdown": "- **Luas Permukaan Gabungan:** Jumlahkan hanya sisi luar yang terpapar; eliminasi bidang persekutuan yang berimpit atau menempel tanah.\n- **Pengemasan Optimum:** Hitung kapasitas per rusuk dengan pembulatan ke bawah ($\\lfloor P/p \\rfloor \\times \\lfloor L/l \\rfloor \\times \\lfloor T/t \\rfloor$) pada tiap orientasi.\n- **Benda Berongga & Massa:** $V_{\\text{bahan}} = V_{\\text{luar}} - V_{\\text{rongga}}$, lalu massa $m = \\rho \\times V_{\\text{bahan}}$.\n- **Konservasi Volume Cairan:** Volume zat cair tetap saat pindah wadah ($V_1 = V_2$), sehingga tinggi akhir $h = \\frac{V_{\\text{cair}}}{L_{\\text{alas wadah}}}$.",
     "radar_jebakan_utbk": [
@@ -53,7 +53,7 @@
             {
               "judul_poin": "Luas Keramik Kolam Renang Dasar Miring",
               "penjelasan_singkat": "Hitung sisi miring lantai $s = \\sqrt{p^2 + (h_2 - h_1)^2}$, lalu jumlahkan luas lantai, dua trapesium samping, serta dinding ujung.",
-              "contoh_penerapan": "Kolam $p = 12\\text{ m}$, $l = 5\\text{ m}$, kedalaman $1\\text{ m}$ ke $6\\text{ m}$ memiliki panjang lantai miring **$\\sqrt{12^2 + 5^2} = 13\\text{ m}$**.",
+              "contoh_penerapan": "Kolam $p = 12\\text{ m}$, $l = 5\\text{ m}$, kedalaman $1\\text{ m}$ ke $6\\text{ m}$ memiliki lantai miring $s = \\sqrt{12^2 + 5^2} = 13\\text{ m}$. Luas keramik total = lantai ($13 \\times 5$) + 2 samping ($2 \\times \\frac{1+6}{2} \\times 12$) + 2 ujung ($1 \\times 5 + 6 \\times 5$) = $65 + 84 + 35 = \\mathbf{184\\text{ m}^2}$.",
               "jebakan_atau_catatan": "Peserta sering mengalikan panjang mendatar $p$ dengan lebar $l$ untuk luas lantai, padahal lantai miring lebih panjang.",
               "visual": null
             },

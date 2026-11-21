@@ -27,7 +27,7 @@ import {
 } from '../../lib/drillingRotationEngine';
 import { ThemeToggle } from '../common/ThemeToggle';
 
-const KATEX_REHYPE_PLUGINS = [rehypeKatex as any];
+const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
 
 interface ActiveDrillingViewProps {
   questions: WorkedExample[];

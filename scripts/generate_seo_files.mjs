@@ -4,7 +4,7 @@ import path from 'path';
 const ROOT_DIR = process.cwd();
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
-const SITE_URL = (process.env.VITE_SITE_URL || 'https://example.my.id').replace(/\/+$/, '');
+const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://acapeak.spacetime0291.workers.dev').replace(/\/+$/, '');
 const TODAY = new Date().toISOString().split('T')[0];
 
 function generateSeoFiles() {

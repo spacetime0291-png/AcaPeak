@@ -108,6 +108,8 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
   return (
     <figure
       className={`my-4 w-full relative group transition-all ${
+        isMini ? 'min-h-[80px]' : 'min-h-[200px]'
+      } ${
         isMermaid ? 'rounded-xl border border-slate-800 bg-[#0B1120] p-3 sm:p-4' : ''
       } ${className}`}
     >
@@ -131,6 +133,8 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
         <div
           onClick={onZoom ? () => onZoom(visual) : undefined}
           className={`w-full overflow-hidden rounded-xl flex justify-center items-center ${
+            isMini ? 'min-h-[80px]' : 'min-h-[200px]'
+          } ${
             onZoom ? 'cursor-zoom-in' : ''
           }`}
           dangerouslySetInnerHTML={{ __html: formattedSvg }}

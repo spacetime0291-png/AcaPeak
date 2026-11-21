@@ -30,7 +30,7 @@ import { AdSlot } from '../common/AdSlot';
 import { VisualRenderer } from './VisualRenderer';
 import { DetailMateriAccordion } from './DetailMateriAccordion';
 
-const KATEX_REHYPE_PLUGINS = [rehypeKatex as any];
+const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
 
 interface ThreeZoneMaterialViewerProps {
   material: Material;
