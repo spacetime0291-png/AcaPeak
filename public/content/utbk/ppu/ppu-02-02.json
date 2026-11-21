@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam kalimat 'Panitia menyebarluaskan undangan kepada para tamu-tamu undangan di gedung serbaguna', apakah penulisan 'menyebarluaskan' dan frasa 'para tamu-tamu' sudah baku?",
@@ -23,7 +23,131 @@
       "Mempertahankan penanda jamak ('para', 'banyak', 'sejumlah', 'berbagai') di depan kata ulang bermakna jamak atau menyamakan makna kata ulang yang identik bentuknya tetapi berbeda konteks kalimat."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Lengkap Kaidah Kata Ulang dan Kata Majemuk",
+      "subjudul_ringkas": "Panduan sistematis makna, bentuk morfologis, kehematan jamak, dan ejaan EYD V untuk soal UTBK-SNBT.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Makna Kontekstual dan Kehematan Kata Ulang",
+          "ringkasan_kelompok": "Menentukan kesamaan makna reduplikasi serta menghindari pemborosan kata penanda jamak.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Makna Jamak dan Keanekaragaman",
+              "penjelasan_singkat": "Pengulangan kata benda atau kata kerja untuk menyatakan jumlah lebih dari satu atau variasi jenis.",
+              "contoh_penerapan": "Para peneliti mulai mengumpulkan **sampel-sampel** tanah dari berbagai wilayah terdampak bencana alam.",
+              "jebakan_atau_catatan": "Jebakan UTBK: menyamakan makna jamak 'buah-buahan' dengan makna menyerupai pada kata 'mobil-mobilan'.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Makna Saling (Resiprokal)",
+              "penjelasan_singkat": "Kata ulang berimbuhan (umumnya *meN-*, *-an*, atau *ber-*-*an*) yang menyatakan perbuatan berbalasan antarpelaku.",
+              "contoh_penerapan": "Warga desa bergotong royong dan **bantu-membantu** memperbaiki jembatan yang rusak diterjang banjir.",
+              "jebakan_atau_catatan": "Bentuk salah: *saling bantu-membantu* karena kata 'saling' membuat makna resiprokal menjadi mubazir.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Makna Intensitas dan Superlatif",
+              "penjelasan_singkat": "Pengulangan kata sifat atau keterangan untuk menyangatkan kualitas, frekuensi tindakan, atau tingkat paling tinggi.",
+              "contoh_penerapan": "Atlet nasional itu berlatih **sekeras-kerasnya** demi meraih medali emas pada kejuaraan dunia.",
+              "jebakan_atau_catatan": "Catatan: pola *se- + kata ulang + -nya* bermakna 'paling', berbeda dengan 'pukul-memukul' (saling).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Makna Menyerupai (Mirip)",
+              "penjelasan_singkat": "Pengulangan nomina atau adjektiva berkonfiks *ke-*-*an* maupun sufiks *-an* yang menyatakan sifat mirip bentuk dasar.",
+              "contoh_penerapan": "Cairan kimia di dalam tabung reaksi itu perlahan berubah warna menjadi **kehijau-hijauan**.",
+              "jebakan_atau_catatan": "Jangan tertukar: *kemerah-merahan* bermakna menyerupai (agak merah), sedangkan *kegila-gilaan* bermakna intensitas (sangat).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kaidah Kehematan Penanda Jamak",
+              "penjelasan_singkat": "Kata ulang bermakna jamak dilarang didahului kata bilangan tak tentu atau kata penunjuk jamak.",
+              "contoh_penerapan": "Seluruh peserta seminar diwajibkan menyerahkan **makalah-makalah** penelitian sebelum sesi diskusi panel dimulai.",
+              "jebakan_atau_catatan": "Bentuk salah: *para hadirin-hadirin*, *banyak buku-buku*, atau *semua siswa-siswa* karena jamak ganda.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Klasifikasi Pola Bentuk Kata Ulang",
+          "ringkasan_kelompok": "Mengidentifikasi struktur morfologis proses reduplikasi berdasarkan perubahan bentuk dasarnya.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Kata Ulang Utuh (Dwilingga)",
+              "penjelasan_singkat": "Pengulangan seluruh morfem dasar secara lengkap tanpa perubahan vokal, konsonan, maupun penambahan imbuhan.",
+              "contoh_penerapan": "Pemerintah daerah segera menertibkan **bangunan-bangunan** liar yang berdiri di sepanjang bantaran sungai.",
+              "jebakan_atau_catatan": "Jebakan: kata seperti *kupu-kupu* dan *laba-laba* adalah kata ulang semu karena tidak memiliki bentuk dasar.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kata Ulang Sebagian (Dwipurwa)",
+              "penjelasan_singkat": "Pengulangan suku kata awal bentuk dasar yang disertai pelemahan bunyi vokal menjadi *e* pepet.",
+              "contoh_penerapan": "Nenek menyimpan perhiasan warisan keluarga di dalam **lelaci** lemari kayu jati tua.",
+              "jebakan_atau_catatan": "Bentuk salah: *laci-laci* jika konteks menghendaki dwipurwa *lelaci* (dari *laci*) atau *tetangga* (dari *tangga*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kata Ulang Berubah Bunyi (Salin Suara)",
+              "penjelasan_singkat": "Pengulangan bentuk dasar secara utuh dengan variasi perubahan fonem vokal atau konsonan pada unsur kedua.",
+              "contoh_penerapan": "Suara **sorak-sorai** penonton menggema di seluruh penjuru stadion saat gol penentu kemenangan tercipta.",
+              "jebakan_atau_catatan": "Catatan: pastikan memiliki bentuk dasar bermakna (misal *sayur-mayur* dari *sayur*, *bolak-balik* dari *balik*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kata Ulang Berimbuhan",
+              "penjelasan_singkat": "Pengulangan bentuk dasar yang disertai pembubuhan afiks (awalan, sisipan, akhiran, atau gabungan) secara serentak maupun bertahap.",
+              "contoh_penerapan": "Mereka **berjalan-jalan** menyusuri kawasan kota tua untuk mengamati arsitektur bangunan peninggalan kolonial.",
+              "jebakan_atau_catatan": "Pola bentuk: *ber- + jalan-jalan* berbeda prosesnya dengan *memukul-mukul* (*meN- + pukul* diulang).",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Ejaan EYD V dan Makna Kata Majemuk",
+          "ringkasan_kelompok": "Aturan penulisan serangkai atau terpisah serta pembedaan makna lugas dan idiomatis.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Kata Majemuk Ditulis Terpisah",
+              "penjelasan_singkat": "Gabungan kata (termasuk istilah khusus) ditulis terpisah jika tidak mendapat imbuhan atau hanya berimbuhan satu sisi.",
+              "contoh_penerapan": "Setiap pimpinan proyek wajib **bertanggung jawab** penuh atas keselamatan seluruh pekerja di lapangan.",
+              "jebakan_atau_catatan": "Bentuk salah: *bertanggungjawab*, *terimakasih*, *kerjasama*, dan *tandatangan* karena belum mendapat apitan sekaligus.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kata Majemuk Berimbuhan Apitan (Serangkai)",
+              "penjelasan_singkat": "Gabungan kata wajib ditulis serangkai apabila mendapat awalan dan akhiran sekaligus (konfiks atau kombinasi afiks).",
+              "contoh_penerapan": "Perusahaan tersebut siap **mempertanggungjawabkan** seluruh dampak lingkungan akibat aktivitas pertambangan yang dilakukan.",
+              "jebakan_atau_catatan": "Bentuk salah: *mempertanggung jawabkan* atau *menanda tangani* (memisahkan unsur kata majemuk yang berapitan).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kata Majemuk Padu (Tertutup)",
+              "penjelasan_singkat": "Gabungan kata yang sudah menyatu secara leksikal dalam KBBI VI selalu ditulis serangkai meski tanpa imbuhan.",
+              "contoh_penerapan": "Kegiatan **olahraga** rutin setiap pagi terbukti mampu meningkatkan daya tahan tubuh dan konsentrasi belajar.",
+              "jebakan_atau_catatan": "Bentuk salah: *olah raga*, *kaca mata*, *segi tiga*, *mata hari*, dan *sapu tangan* (wajib serangkai).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kata Majemuk Lugas vs. Idiomatis (Kias)",
+              "penjelasan_singkat": "Kata majemuk bermakna lugas mempertahankan arti unsur pembentuknya, sedangkan makna idiomatis membentuk arti kiasan baru.",
+              "contoh_penerapan": "Petugas memeriksa **meja hijau** di ruang sidang, sementara terdakwa siap diadili di **meja hijau**.",
+              "jebakan_atau_catatan": "Jebakan UTBK: *tangan kanan* (anggota tubuh = lugas) vs. *tangan kanan* (orang kepercayaan = idiomatis).",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

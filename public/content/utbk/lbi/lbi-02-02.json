@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Teks 1 memprediksi baterai kendaraan listrik bekas akan menjadi limbah beracun dalam 8 tahun, sedangkan Teks 2 menyebut baterai itu masih menyimpan 80% daya. Apakah Teks 2 membantah seluruh isi Teks 1?",
@@ -23,7 +23,124 @@
       "Memilih opsi sintesis yang menggabungkan angka antarteks secara keliru atau menambahkan kata ekstrem (seluruhnya, pasti gagal) di luar premis."
     ],
     "stimulus_utama_bersama": "**Teks 1**\n\nAkselerasi adopsi kendaraan listrik berbasis baterai (KBLBB) di Indonesia diproyeksikan mampu menekan emisi karbon sektor transportasi darat hingga 28% pada tahun 2030. Pemerintah menggulirkan berbagai insentif fiskal berupa pembebasan Pajak Penjualan atas Barang Mewah (PPnBM), potongan pajak daerah, serta subsidi pembelian unit baru guna mempercepat pergeseran konsumsi masyarakat dari kendaraan berbahan bakar fosil menuju teknologi energi bersih.\n\nNamun, lonjakan populasi kendaraan listrik tersebut memicu ancaman ekologis baru yang kerap luput dari kalkulasi kebijakan, yakni akumulasi limbah baterai litium-ion bekas pakai. Baterai kendaraan listrik umumnya mengalami degradasi kapasitas hingga 20% setelah pemakaian delapan tahun sehingga tidak lagi optimal untuk mobilitas harian. Tanpa ekosistem daur ulang terpadu, ribuan ton baterai bekas berpotensi mencemari air tanah akibat kebocoran logam berat beracun seperti kobalt dan nikel.\n\n**Teks 2**\n\nStudi Pusat Riset Teknologi Material Maju terhadap 120 unit baterai litium bekas menunjukkan bahwa 78% sel baterai yang dipensiunkan dari kendaraan listrik masih menyimpan kapasitas daya efektif sebesar 75% hingga 80%. Temuan empiris ini membuktikan bahwa baterai pascapakai kendaraan tidak serta-merta berubah menjadi limbah berbahaya, melainkan aset energi sekunder yang sangat layak dialihfungsikan sebagai sistem penyimpanan energi stasioner untuk pembangkit listrik tenaga surya (PLTS) skala komunal.\n\nMelalui skema pemanfaatan ulang (*second-life battery*) tersebut, siklus masa pakai baterai dapat diperpanjang hingga sepuluh tahun tambahan sebelum memasuki tahap akhir ekstraksi hidrometalurgi. Pengujian lapangan di tiga kawasan perdesaan terpencil membuktikan integrasi baterai bekas ini mampu menurunkan biaya investasi penyimpanan daya PLTS sebesar 42% dibandingkan pengadaan baterai baru, sekaligus menunda penumpukan limbah logam berat secara signifikan.",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Pola Hubungan Antarparagraf dan Evaluasi Antarteks UTBK",
+      "subjudul_ringkas": "Taksonomi praktis penanda transisi, perbandingan sudut pandang, sintesis premis, dan pengujian klaim antarteks.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Fungsi Retoris Hubungan Antarparagraf",
+          "ringkasan_kelompok": "Memetakan peran logis paragraf lanjutan terhadap paragraf sebelumnya melalui penanda transisi.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Hubungan Penjelas dan Pemerinci",
+              "penjelasan_singkat": "Paragraf kedua menguraikan definisi, mekanisme kerja, atau komponen spesifik dari gagasan umum pada paragraf pertama.",
+              "contoh_penerapan": "Paragraf 1 menyebut krisis air bersih; Paragraf 2 diawali **'Secara spesifik, penurunan muka air tanah terjadi akibat...'**.",
+              "jebakan_atau_catatan": "Jangan tertukar dengan hubungan contoh; penjelas membedah cara kerja konsep, bukan menyebut satu kasus atau nama tertentu.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hubungan Contoh Kasus dan Ilustrasi",
+              "penjelasan_singkat": "Paragraf kedua menyajikan kejadian nyata, lokasi spesifik, atau studi kasus untuk mengonkretkan pernyataan umum sebelumnya.",
+              "contoh_penerapan": "Paragraf 1 membahas adaptasi kota pesisir; Paragraf 2 dibuka **'Sebagai contoh, penerapan tanggul laut di Semarang berhasil...'**.",
+              "jebakan_atau_catatan": "Opsi pengecoh sering menyebut 'membuktikan seluruh klaim', padahal satu contoh kasus hanya mengilustrasikan, bukan menggeneralisasi mutlak.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hubungan Kontradiksi dan Pertentangan",
+              "penjelasan_singkat": "Paragraf kedua menghadirkan sanggahan, pengecualian, atau fakta berlawanan yang membatasi keberlakuan klaim pada paragraf pertama.",
+              "contoh_penerapan": "Paragraf 1 memuji efisiensi kendaraan listrik; Paragraf 2 dimulai **'Namun, proses penambangan nikel untuk baterai justru memicu...'**.",
+              "jebakan_atau_catatan": "Waspadai kata 'sementara itu' yang bisa bermakna perbandingan netral, bukan kontradiksi total jika tidak ada pertentangan nilai.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hubungan Sebab-Akibat (Kausalitas)",
+              "penjelasan_singkat": "Paragraf kedua memaparkan dampak langsung, konsekuensi logis, atau efek berantai dari peristiwa yang dijelaskan paragraf pertama.",
+              "contoh_penerapan": "Paragraf 1 memaparkan kenaikan suku bunga acuan; Paragraf 2 berlanjut **'Akibatnya, ekspansi kredit sektor riil melambat tajam...'**.",
+              "jebakan_atau_catatan": "Jebakan UTBK sering membalik arah kausalitas; pastikan paragraf kedua benar-benar hasil dari paragraf pertama ($P_1 \\rightarrow P_2$).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hubungan Masalah-Solusi (Resolusi)",
+              "penjelasan_singkat": "Paragraf kedua menawarkan langkah mitigasi, intervensi kebijakan, atau rekomendasi praktis untuk mengatasi persoalan pada paragraf pertama.",
+              "contoh_penerapan": "Paragraf 1 mengulas tingginya limbah plastik; Paragraf 2 menawarkan **'Untuk mengatasi persoalan tersebut, pemerintah perlu menerapkan...'**.",
+              "jebakan_atau_catatan": "Bedakan solusi dengan akibat; solusi bersifat preskriptif atau anjuran tindakan perbaikan, sedangkan akibat adalah dampak yang sudah terjadi.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Komparasi Sudut Pandang dan Sintesis Antarteks",
+          "ringkasan_kelompok": "Membandingkan sikap penulis serta menggabungkan premis Teks 1 dan Teks 2 secara sahih.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Identifikasi Irisan Topik Utama",
+              "penjelasan_singkat": "Menemukan objek, fenomena, atau variabel inti yang sama-sama menjadi pusat bahasan dalam Teks 1 dan Teks 2.",
+              "contoh_penerapan": "Teks 1 mengkaji regulasi kecerdasan buatan di kampus; Teks 2 menyoroti **etika penggunaan kecerdasan buatan oleh mahasiswa**.",
+              "jebakan_atau_catatan": "Opsi pengecoh kerap mengambil kata kunci yang hanya muncul di satu teks tanpa menjadi irisan keduanya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Perbandingan Sikap dan Nada Penulis",
+              "penjelasan_singkat": "Memetakan posisi keberpihakan kedua penulis terhadap objek yang sama, misalnya kritis-peringatan versus optimistis-solutif.",
+              "contoh_penerapan": "Penulis Teks 1 bersikap **pesimistis terhadap dampak otomatisasi**, sedangkan Penulis Teks 2 **optimistis selama disertai pelatihan ulang**.",
+              "jebakan_atau_catatan": "Jangan menyamakan perbedaan fokus bahasan dengan pertentangan sikap; dua teks bisa berbeda sudut pandang namun tetap selaras.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sintesis Informasi Lintas Teks",
+              "penjelasan_singkat": "Menggabungkan premis Teks 1 dan Teks 2 ($P_1 + P_2 \\rightarrow K$) untuk menghasilkan simpulan baru yang logis.",
+              "contoh_penerapan": "Teks 1: **polusi udara memicu asma**; Teks 2: **ruang terbuka hijau menyerap polutan**; simpulan: RTH menekan risiko asma.",
+              "jebakan_atau_catatan": "Hindari opsi yang melampaui premis dengan menambahkan variabel luar atau klaim mutlak seperti 'selalu' dan 'satu-satunya'.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Perbedaan Dimensi atau Aspek Kajian",
+              "penjelasan_singkat": "Mengidentifikasi perbedaan sudut tinjauan kedua teks terhadap isu serupa, misalnya aspek ekonomi versus aspek kesehatan.",
+              "contoh_penerapan": "Teks 1 meninjau **kelayakan finansial proyek kereta cepat**, sementara Teks 2 mengevaluasi **dampak kebisingan bagi warga sekitar**.",
+              "jebakan_atau_catatan": "Perhatikan batasan masing-masing teks; jangan mencampuradukkan data finansial Teks 1 sebagai argumen ekologis pada Teks 2.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Evaluasi Dampak Data Teks 2 terhadap Klaim Teks 1",
+          "ringkasan_kelompok": "Menguji fungsi bukti Teks 2 dalam menguatkan, membantah, atau merinci klaim Teks 1.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Data Teks 2 Memperkuat Klaim Teks 1",
+              "penjelasan_singkat": "Temuan empiris atau statistik di Teks 2 selaras dan memvalidasi kebenaran hipotesis atau mekanisme pada Teks 1.",
+              "contoh_penerapan": "Teks 1 mengklaim literasi digital mencegah penipuan; Teks 2 mencatat **penurunan kasus penipuan sebesar $40\\%$ pascapelatihan digital**.",
+              "jebakan_atau_catatan": "Pastikan variabel pada data Teks 2 identik dengan klaim Teks 1, bukan sekadar korelasi topik yang mirip.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Data Teks 2 Memperlemah Klaim Teks 1",
+              "penjelasan_singkat": "Bukti lapangan di Teks 2 menunjukkan kegagalan, anomali, atau hasil bertolak belakang yang menggugurkan klaim Teks 1.",
+              "contoh_penerapan": "Teks 1 menyatakan subsidi pupuk langsung menaikkan panen; Teks 2 menemukan **produktivitas padi stagnan meski subsidi naik**.",
+              "jebakan_atau_catatan": "Opsi pengecoh sering memilih fakta yang berbeda topik dengan klaim utama Teks 1, sehingga sebenarnya tidak relevan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Data Teks 2 Merinci atau Membatasi Klaim",
+              "penjelasan_singkat": "Data Teks 2 tidak membantah Teks 1, melainkan memperjelas syarat keberlakuan, proporsi, atau subkelompok spesifik klaim tersebut.",
+              "contoh_penerapan": "Teks 1 menyebut kerja jarak jauh meningkatkan produktivitas; Teks 2 merinci **peningkatan hanya terjadi pada sektor teknologi**.",
+              "jebakan_atau_catatan": "Jangan menganggap pembatasan syarat sebagai bantahan total; selama klaim tetap berlaku pada kondisi tertentu, fungsinya merinci.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

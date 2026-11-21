@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Sistem saraf manusia memprioritaskan sinyal rasa sakit mendesak agar tubuh segera merespons bahaya. Oleh karena itu, jaringan sensor lalu lintas kota yang meniru mekanisme saraf tersebut dipastikan mampu mencegah seluruh kecelakaan jalan raya. Tepatkah simpulan ini?",
@@ -27,6 +27,102 @@
       "tipe": "svg",
       "kode": "<svg viewBox='0 0 540 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='10'/><g transform='translate(20, 25)'><rect x='0' y='0' width='210' height='90' rx='8' fill='#EFF6FF' stroke='#3B82F6' stroke-width='2'/><text x='105' y='26' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E3A8A'>DOMAIN SUMBER (A : B)</text><rect x='20' y='40' width='70' height='35' rx='4' fill='#FFFFFF' stroke='#93C5FD' stroke-width='1.5'/><text x='55' y='62' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E40AF'>A (Entitas)</text><text x='105' y='63' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='bold' fill='#3B82F6'>:</text><rect x='120' y='40' width='70' height='35' rx='4' fill='#FFFFFF' stroke='#93C5FD' stroke-width='1.5'/><text x='155' y='62' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E40AF'>B (Atribut)</text></g><g transform='translate(245, 60)'><line x1='0' y1='10' x2='40' y2='10' stroke='#6366F1' stroke-width='2.5'/><polygon points='40,6 48,10 40,14' fill='#6366F1'/><text x='25' y='-2' text-anchor='middle' font-family='sans-serif' font-size='10' font-weight='bold' fill='#4F46E5'>RELASI IDENTIK</text></g><g transform='translate(310, 25)'><rect x='0' y='0' width='210' height='90' rx='8' fill='#ECFDF5' stroke='#10B981' stroke-width='2'/><text x='105' y='26' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#064E3B'>DOMAIN TARGET (C : D)</text><rect x='20' y='40' width='70' height='35' rx='4' fill='#FFFFFF' stroke='#6EE7B7' stroke-width='1.5'/><text x='55' y='62' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#047857'>C (Entitas)</text><text x='105' y='63' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='bold' fill='#10B981'>:</text><rect x='120' y='40' width='70' height='35' rx='4' fill='#FFFFFF' stroke='#6EE7B7' stroke-width='1.5'/><text x='155' y='62' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#047857'>D (Atribut)</text></g><rect x='20' y='130' width='500' height='35' rx='6' fill='#FEF3C7' stroke='#F59E0B' stroke-width='1.2'/><text x='270' y='152' text-anchor='middle' font-family='sans-serif' font-size='11' font-weight='bold' fill='#92400E'>Kunci Sukses: Arah relasi A → B harus persis sama dengan arah relasi C → D</text></svg>",
       "caption": "Prinsip pemetaan relasi analogi induktif: memastikan kesejajaran fungsi, hierarki, dan arah relasi antarentitas."
+    },
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Pola, Penanda Teks, dan Jebakan Analogi Induktif",
+      "subjudul_ringkas": "Taksonomi sinyal mekanisme analogi, kesetaraan sebab-akibat, serta teknik mendeteksi sesat pikir dalam wacana UTBK.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Pola & Sinyal Teks",
+        "kolom_2": "Contoh Potongan Wacana",
+        "kolom_3": "Cara Bedakan & Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Pola Analogi Mekanisme Fungsional & Transfer Solusi",
+          "ringkasan_kelompok": "Mengidentifikasi pemetaan prinsip kerja antarsistem berbeda untuk memprediksi solusi masalah baru.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Sinyal Pemetaan Sistem Biologis ke Teknis",
+              "penjelasan_singkat": "Menghubungkan cara kerja organ makhluk hidup ($A$) dengan arsitektur teknologi ($B$) melalui penanda perbandingan fungsional.",
+              "contoh_penerapan": "**Sebagaimana** sel darah putih mengisolasi patogen sebelum menyebar, sistem *firewall* jaringan **bekerja menyaring** paket data mencurigakan.",
+              "jebakan_atau_catatan": "Jebakan: memilih opsi yang menyamakan bentuk fisik ($A$ dan $B$ sama-sama bulat), bukan fungsi perlindungannya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sinyal Pemetaan Sistem Sosial ke Organisasi",
+              "penjelasan_singkat": "Menerapkan dinamika interaksi masyarakat ($A$) untuk menjelaskan tata kelola institusi atau ekonomi ($B$).",
+              "contoh_penerapan": "**Layaknya** ekosistem hutan yang runtuh tanpa predator puncak, pasar bebas **akan mengalami monopoli** tanpa regulasi pengawas.",
+              "jebakan_atau_catatan": "Pastikan hubungan peran ($\\text{pengawas} \\rightarrow \\text{keseimbangan}$) sejajar; abaikan pengecoh yang membahas isu lingkungan hutan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Prediksi Solusi Masalah Baru dari Kasus Analog",
+              "penjelasan_singkat": "Memproyeksikan intervensi berhasil pada kasus sumber ($A$) ke masalah target ($B$) yang memiliki akar kendala identik.",
+              "contoh_penerapan": "**Mengadopsi mekanisme** pajak karbon Swedia yang sukses menekan emisi, penerapan tarif serupa **berpotensi menurunkan** limbah industri.",
+              "jebakan_atau_catatan": "Simpulan wajib bersifat **mungkin efektif**, bukan pasti berhasil 100% seperti pada negara sumber ($A$).",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Analogi Proporsional Sebab-Akibat Setara",
+          "ringkasan_kelompok": "Mendeteksi kesetaraan rasio hubungan kausal ($A : B :: C : D$) dalam argumen kuantitatif maupun kualitatif.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Penanda Kesetaraan Rasio Dampak ($A : B :: C : D$)",
+              "penjelasan_singkat": "Menunjukkan bahwa perubahan variabel pada kasus $A$ menghasilkan rasio akibat yang sebanding pada kasus $B$.",
+              "contoh_penerapan": "**Sebanding dengan** kenaikan suku bunga yang mengerem inflasi, pengetatan kuota kredit **akan memperlambat** laju konsumsi.",
+              "jebakan_atau_catatan": "Waspadai pengecoh dengan arah kausal terbalik (misal: konsumsi memicu kenaikan suku bunga).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Analogi Ambang Batas dan Titik Jenuh Sistem",
+              "penjelasan_singkat": "Membandingkan keruntuhan sistem akibat beban berlebih melewati batas toleransi struktural antara dua fenomena berbeda.",
+              "contoh_penerapan": "**Ibarat** jembatan yang patah saat tonase melampaui kapasitas baja, server **akan lumpuh** ketika trafik melampaui *bandwidth*.",
+              "jebakan_atau_catatan": "Bedakan kerusakan akibat **beban berlebih** dengan kerusakan akibat usia pemakaian yang tidak dibahas di premis.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Prediksi Konsekuensi Lanjutan Berantai",
+              "penjelasan_singkat": "Menarik dampak tahap kedua pada kasus $B$ berdasarkan rantai sebab-akibat yang sudah terbukti pada kasus $A$.",
+              "contoh_penerapan": "**Sebagaimana** hilangnya lebah memicu gagal panen buah, berkurangnya agen literasi **akan menurunkan** minat baca pelajar.",
+              "jebakan_atau_catatan": "Jangan menyimpulkan penyebab hilangnya lebah atau agen literasi; fokus hanya pada **dampak lanjutan** setelahnya.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sinyal Evaluasi Kekuatan Argumen & Sesat Pikir Analogi",
+          "ringkasan_kelompok": "Menguji validitas argumen analogi melalui relevansi parameter kunci dan menghindari jebakan kepastian logika.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Sinyal False Analogy (Kesamaan Permukaan Semu)",
+              "penjelasan_singkat": "Menyimpulkan kesamaan nasib atau fungsi hanya karena kemiripan atribut luar tanpa kesamaan mekanisme kausal.",
+              "contoh_penerapan": "Karena sama-sama memiliki **sayap dan mesin**, pesawat latih baling-baling dianggap **mampu menembus** atmosfer seperti roket.",
+              "jebakan_atau_catatan": "Ciri khas soal evaluasi: cari opsi yang membuktikan kemiripan tersebut **tidak relevan** terhadap hasil akhir.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pelemahan Argumen via Perbedaan Parameter Kunci",
+              "penjelasan_singkat": "Melemahkan simpulan analogi dengan menunjukkan adanya variabel pembeda krusial yang membatalkan transfer mekanisme $A \\rightarrow B$.",
+              "contoh_penerapan": "Argumen adopsi model transportasi Singapura ke Jakarta **melemah jika** luas wilayah dan kepadatan komuter **berbeda drastis**.",
+              "jebakan_atau_catatan": "Untuk **memperkuat** argumen, pilih opsi yang menegaskan kesamaan parameter kunci; untuk **melemahkan**, pilih perbedaannya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Jebakan Kepastian Mutlak pada Simpulan Analogi",
+              "penjelasan_singkat": "Penalaran induktif berbasis analogi hanya menghasilkan probabilitas, sehingga klaim absolut otomatis bernilai salah.",
+              "contoh_penerapan": "Opsi menyatakan kebijakan $B$ **pasti berhasil 100%** karena kebijakan $A$ sukses di kota lain adalah **tidak valid**.",
+              "jebakan_atau_catatan": "Selalu prioritaskan opsi bermodalitas **cenderung, berpotensi, atau mungkin benar** dibanding kata pasti atau mutlak.",
+              "visual": null
+            }
+          ]
+        }
+      ]
     }
   },
   "zona_2_variasi_inti": [

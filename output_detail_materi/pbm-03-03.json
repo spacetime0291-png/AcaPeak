@@ -1,0 +1,121 @@
+{
+  "kode_subbab": "pbm-03-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Kaidah Konjungsi Korelatif dan Preposisi Baku",
+    "subjudul_ringkas": "Panduan tuntas pasangan konjungsi korelatif, pilihan preposisi relasional, idiom verba, dan keutuhan fungsi sintaksis.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Konjungsi Korelatif dan Kesejajaran Unsur",
+        "ringkasan_kelompok": "Pasangan tetap konjungsi antarklausa atau antarfrasa setara sesuai kaidah EYD V.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Pasangan Tidak Hanya ... Tetapi Juga ...",
+            "penjelasan_singkat": "Menghubungkan dua unsur setara (frasa atau klausa) untuk menyatakan penambahan informasi yang bersifat menguatkan.",
+            "contoh_penerapan": "Penelitian itu **tidak hanya** menghemat biaya produksi, **tetapi juga** mengurangi limbah plastik secara signifikan.",
+            "jebakan_atau_catatan": "Salah: *tidak hanya ... melainkan juga ...* atau *tidak hanya ... namun juga ...* (pasangan tidak baku)."
+          },
+          {
+            "judul_poin": "Pasangan Bukan Hanya ... Melainkan Juga ...",
+            "penjelasan_singkat": "Menghubungkan dua nomina atau frasa nominal yang berkontras untuk menegaskan unsur kedua.",
+            "contoh_penerapan": "Keberhasilan tim ini **bukan hanya** hasil kerja keras atlet, **melainkan juga** dukungan penuh pelatih.",
+            "jebakan_atau_catatan": "Salah: memakai *bukan hanya ... tetapi juga ...* atau meletakkan *bukan* sebelum predikat verba."
+          },
+          {
+            "judul_poin": "Pasangan Baik ... Maupun ... dan Entah ... Entah ...",
+            "penjelasan_singkat": "Pasangan *baik ... maupun ...* menggabungkan dua hal setara, sedangkan *entah ... entah ...* menyatakan pilihan tak pasti.",
+            "contoh_penerapan": "**Baik** mahasiswa **maupun** dosen wajib mematuhi pedoman etika akademik yang berlaku di kampus.",
+            "jebakan_atau_catatan": "Salah: *baik ... ataupun ...* atau *antara ... maupun ...* karena mencampur dua pasangan berbeda."
+          },
+          {
+            "judul_poin": "Pasangan Sedemikian Rupa Sehingga dan Demikian ... Sehingga ...",
+            "penjelasan_singkat": "Menyatakan hubungan akibat dari suatu keadaan atau sifat yang mencapai tingkat tertentu.",
+            "contoh_penerapan": "Aturan tersebut dirancang **sedemikian rupa sehingga** seluruh peserta ujian dapat memahaminya dengan mudah.",
+            "jebakan_atau_catatan": "Salah: *sedemikian rupa maka ...* (konjungsi *maka* tidak berpasangan dengan *sedemikian rupa*)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Ketepatan Preposisi Penanda Hubungan",
+        "ringkasan_kelompok": "Pemilihan kata depan sesuai makna relasional waktu, tempat, arah, sasaran, dan lingkup.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Perbedaan Preposisi Di, Pada, dan Dalam",
+            "penjelasan_singkat": "*Di* untuk tempat fisik konkret; *pada* untuk waktu, orang, atau benda abstrak; *dalam* untuk ruang atau lingkup.",
+            "contoh_penerapan": "Gagasan utama tersebut tercantum **pada** paragraf kedua **dalam** artikel ilmiah yang terbit **di** jurnal nasional.",
+            "jebakan_atau_catatan": "Salah: *di abad ke-21* atau *di masa pandemi* (waktu/keadaan abstrak wajib menggunakan *pada* atau *dalam*)."
+          },
+          {
+            "judul_poin": "Perbedaan Preposisi Kepada dan Terhadap",
+            "penjelasan_singkat": "*Kepada* menandai arah tujuan bernyawa (orang/instansi), sedangkan *terhadap* menandai sasaran perilaku, sikap, atau tindakan.",
+            "contoh_penerapan": "Pemerintah menyalurkan bantuan langsung **kepada** warga terdampak sebagai bentuk kepedulian **terhadap** kondisi ekonomi mereka.",
+            "jebakan_atau_catatan": "Salah: *peduli kepada lingkungan* atau *menyerahkan surat terhadap kepala sekolah* (tertukar fungsi arah dan sasaran)."
+          },
+          {
+            "judul_poin": "Perbedaan Preposisi Bagi dan Untuk",
+            "penjelasan_singkat": "*Bagi* menyatakan sudut pandang atau peruntukan khusus subjek tertentu; *untuk* menyatakan tujuan tindakan atau manfaat umum.",
+            "contoh_penerapan": "**Bagi** peneliti pemula, lokakarya ini sangat bermanfaat **untuk** meningkatkan keterampilan penulisan proposal riset.",
+            "jebakan_atau_catatan": "Salah: *bagi yang berminat harap mendaftar* (preposisi *bagi* di awal kalimat membuat subjek hilang)."
+          },
+          {
+            "judul_poin": "Penggunaan Preposisi Atas dan Tentang",
+            "penjelasan_singkat": "*Atas* menandai dasar sebab atau ucapan selamat/terima kasih; *tentang* menandai pokok pembicaraan atau hal yang dibahas.",
+            "contoh_penerapan": "Kami mengucapkan terima kasih **atas** kehadiran narasumber yang memaparkan materi **tentang** mitigasi bencana.",
+            "jebakan_atau_catatan": "Salah: *membahas tentang perubahan iklim* (verba transitif *membahas* langsung diikuti objek tanpa *tentang*)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Idiom Preposisional Verba Baku",
+        "ringkasan_kelompok": "Verba tertentu yang mengikat pasangan preposisi tetap atau melarang kehadiran preposisi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Idiom Terdiri Atas dan Terdiri Dari",
+            "penjelasan_singkat": "*Terdiri atas* digunakan untuk menyebut komponen penyusun keseluruhan; *terdiri dari* digunakan untuk bahan dasar pembentuk benda.",
+            "contoh_penerapan": "Panitia pelaksana kegiatan ini **terdiri atas** ketua, sekretaris, bendahara, dan empat koordinator bidang.",
+            "jebakan_atau_catatan": "Salah: *terdiri* tanpa preposisi (*Panitia terdiri lima orang*) atau memakai *terdiri dari* untuk jabatan."
+          },
+          {
+            "judul_poin": "Idiom Bergantung Pada dan Sesuai Dengan",
+            "penjelasan_singkat": "Verba *bergantung* wajib diikuti preposisi *pada*, sedangkan adjektiva *sesuai* wajib diikuti preposisi *dengan*.",
+            "contoh_penerapan": "Keberhasilan panen raya sangat **bergantung pada** ketersediaan irigasi yang **sesuai dengan** kebutuhan lahan.",
+            "jebakan_atau_catatan": "Salah: *tergantung dari cuaca* atau *sesuai prosedur* tanpa *dengan* dalam ragam tulis formal."
+          },
+          {
+            "judul_poin": "Pelarangan Preposisi Setelah Berdasarkan dan Disebabkan",
+            "penjelasan_singkat": "Bentuk *berdasarkan* tidak boleh diikuti *pada*, sedangkan *disebabkan* diikuti *oleh* (bukan *karena*) agar tidak pleonastis.",
+            "contoh_penerapan": "Keputusan itu diambil **berdasarkan** data empiris, bukan **disebabkan oleh** tekanan pihak luar.",
+            "jebakan_atau_catatan": "Salah: *berdasarkan pada data* $\\rightarrow$ seharusnya *berdasarkan data*; *disebabkan karena* $\\rightarrow$ *disebabkan oleh*."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Keutuhan Fungsi Sintaksis Subjek dan Objek",
+        "ringkasan_kelompok": "Penghindaran preposisi berlebih yang merusak pola dasar kalimat efektif [S]-[P]-[O].",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Larangan Preposisi di Depan Subjek Kalimat",
+            "penjelasan_singkat": "Kehadiran preposisi (*dalam*, *bagi*, *pada*, *menurut*) di depan frasa nomina awal mengubah Subjek menjadi Keterangan.",
+            "contoh_penerapan": "**Penelitian terbaru** membuktikan bahwa pola tidur teratur meningkatkan daya ingat jangka panjang.",
+            "jebakan_atau_catatan": "Salah: *Dalam penelitian terbaru membuktikan bahwa...* (kalimat menjadi kehilangan unsur Subjek)."
+          },
+          {
+            "judul_poin": "Larangan Preposisi Setelah Verba Transitif Aktif",
+            "penjelasan_singkat": "Verba transitif berimbuhan *meN-* harus langsung diikuti nomina Objek tanpa disisipi preposisi (*akan*, *tentang*, *terhadap*).",
+            "contoh_penerapan": "Tim penyusun sedang **mendiskusikan rancangan** anggaran belanja untuk tahun ajaran mendatang.",
+            "jebakan_atau_catatan": "Salah: *mendiskusikan tentang rancangan* atau *mengharapkan akan kehadiran* (Objek berubah menjadi Pelengkap/Keterangan)."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "pk-02-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Relasi, Domain, Range, dan Sifat Fungsi",
+    "subjudul_ringkas": "Panduan praktis menentukan syarat terdefinisi, daerah hasil, evaluasi fungsi implisit, serta sifat simetri UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "1. Identifikasi Fungsi & Syarat Domain Alami",
+        "ringkasan_kelompok": "Menentukan keabsahan relasi sebagai fungsi serta batas input real agar terdefinisi.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Syarat Fungsi & Uji Garis Vertikal",
+            "penjelasan_singkat": "Setiap anggota domain $x$ wajib memiliki tepat satu pasangan $y$; garis vertikal memotong grafik maksimal di satu titik.",
+            "contoh_penerapan": "Relasi $\\{(1,2), (1,3)\\}$ **bukan fungsi** karena $x=1$ bercabang; persamaan $x^2 + y^2 = 4$ juga **bukan fungsi**.",
+            "jebakan_atau_catatan": "Anggota kodomain boleh memiliki lebih dari satu pasangan di domain atau tidak memiliki pasangan sama sekali."
+          },
+          {
+            "judul_poin": "Domain Alami Fungsi Pecahan (Rasional)",
+            "penjelasan_singkat": "Fungsi $f(x) = \\frac{p(x)}{q(x)}$ terdefinisi untuk semua $x \\in \\mathbb{R}$ dengan syarat mutlak penyebut $q(x) \\neq 0$.",
+            "contoh_penerapan": "Untuk $f(x) = \\frac{x-2}{x^2-9}$, syarat $x^2-9 \\neq 0$ menghasilkan **domain alami $D_f = \\{x \\in \\mathbb{R} \\mid x \\neq \\pm 3\\}$**.",
+            "jebakan_atau_catatan": "Jangan mencoret faktor sama di pembilang dan penyebut sebelum mencari syarat penyebut tidak sama dengan nol."
+          },
+          {
+            "judul_poin": "Domain Alami Fungsi Akar Pangkat Genap",
+            "penjelasan_singkat": "Bentuk $\\sqrt[2n]{g(x)}$ terdefinisi real jika ekspresi di dalam akar bernilai tak negatif, yaitu $g(x) \\ge 0$.",
+            "contoh_penerapan": "Pada $f(x) = \\sqrt{6 - 2x}$, syarat $6 - 2x \\ge 0$ memberikan **domain alami $x \\le 3$**.",
+            "jebakan_atau_catatan": "Akar pangkat ganjil seperti $\\sqrt[3]{x}$ berlaku untuk semua $x \\in \\mathbb{R}$ tanpa syarat $\\ge 0$."
+          },
+          {
+            "judul_poin": "Domain Irisan Akar di Posisi Penyebut",
+            "penjelasan_singkat": "Jika akar genap menjadi penyebut $\\frac{1}{\\sqrt{g(x)}}$, syaratnya diperketat menjadi $g(x) > 0$ karena penyebut dilarang nol.",
+            "contoh_penerapan": "Pada $f(x) = \\frac{1}{\\sqrt{x^2 - 4}}$, syarat $x^2 - 4 > 0$ menghasilkan **$x < -2$ atau $x > 2$**.",
+            "jebakan_atau_catatan": "Peserta sering memakai tanda $\\ge 0$ sehingga angka pembuat nol penyebut ikut terbawa ke himpunan penyelesaian."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "2. Penentuan Daerah Hasil (Range) Terbatas",
+        "ringkasan_kelompok": "Mencari batas nilai output $y$ dari fungsi linear, kuadrat, dan rasional.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Range Fungsi Linear pada Interval Terbatas",
+            "penjelasan_singkat": "Karena monoton naik atau turun, range $f(x) = ax + b$ cukup dihitung dengan mensubstitusi kedua ujung domain.",
+            "contoh_penerapan": "Jika $f(x) = 3 - 2x$ pada $-1 \\le x < 4$, ujungnya $f(-1)=5$ dan $f(4)=-5$, maka **$-5 < y \\le 5$**.",
+            "jebakan_atau_catatan": "Perhatikan tanda pertidaksamaan ketat ($<$) atau tak ketat ($\\le$) yang mengikuti masing-masing titik ujung domainnya."
+          },
+          {
+            "judul_poin": "Range Fungsi Kuadrat pada Domain Terbatas",
+            "penjelasan_singkat": "Hitung nilai ujung domain dan nilai puncak $y_p = f\\left(-\\frac{b}{2a}\\right)$ hanya jika $x_p = -\\frac{b}{2a}$ masuk dalam domain.",
+            "contoh_penerapan": "Untuk $f(x) = x^2 - 4x + 5$ pada $0 \\le x \\le 3$, puncak $x_p=2$ masuk interval, sehingga **$1 \\le y \\le 5$**.",
+            "jebakan_atau_catatan": "Kesalahan fatal: langsung memasukkan dua ujung domain tanpa mengecek apakah titik balik $x_p$ berada di dalamnya."
+          },
+          {
+            "judul_poin": "Range Fungsi Rasional Linear (Asimtot Datar)",
+            "penjelasan_singkat": "Untuk $f(x) = \\frac{ax+b}{cx+d}$ pada domain alami, range mencakup seluruh $\\mathbb{R}$ kecuali asimtot datar $y \\neq \\frac{a}{c}$.",
+            "contoh_penerapan": "Fungsi $f(x) = \\frac{2x+1}{x-3}$ memiliki asimtot datar $y = \\frac{2}{1}$, maka **range $R_f = \\{y \\in \\mathbb{R} \\mid y \\neq 2\\}$**.",
+            "jebakan_atau_catatan": "Trik cepat: range $f(x)$ sama persis dengan domain fungsi inversnya $f^{-1}(x)$, cukup cari syarat penyebut invers."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "3. Evaluasi Fungsi Piecewise & Fungsi Implisit",
+        "ringkasan_kelompok": "Menghitung nilai fungsi bersyarat cabang dan persamaan fungsi dengan argumen majemuk.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Evaluasi Fungsi Sepotong-Sepotong (Piecewise Function)",
+            "penjelasan_singkat": "Pilih satu cabang rumus yang syarat intervalnya dipenuhi oleh nilai input $x$ sebelum melakukan substitusi angka.",
+            "contoh_penerapan": "Jika $f(x) = x^2$ ($x < 1$) dan $f(x) = 2x+1$ ($x \\ge 1$), maka **$f(1) = 2(1)+1 = 3$**.",
+            "jebakan_atau_catatan": "Jangan mensubstitusi nilai $x$ ke semua cabang lalu menjumlahkannya; setiap input hanya masuk ke satu cabang."
+          },
+          {
+            "judul_poin": "Evaluasi Fungsi Implisit $f(g(x)) = h(x)$",
+            "penjelasan_singkat": "Untuk mencari $f(k)$ dari $f(g(x)) = h(x)$, samakan argumen $g(x) = k$ untuk memperoleh nilai $x$ pengganti.",
+            "contoh_penerapan": "Diketahui $f(2x - 1) = 4x + 3$. Setarakan $2x - 1 = 5 \\implies x = 3$, maka **$f(5) = 4(3)+3 = 15$**.",
+            "jebakan_atau_catatan": "Jebakan umum: langsung mengganti variabel $x$ dengan $5$ sehingga keliru menghitung $4(5)+3 = 23$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "4. Fungsi Satu-Satu, Genap, & Ganjil",
+        "ringkasan_kelompok": "Menguji syarat keberadaan invers serta mengidentifikasi pola simetri grafik fungsi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Fungsi Satu-Satu (Injektif) & Syarat Invers",
+            "penjelasan_singkat": "Fungsi punya invers jika setiap $y$ berasal dari tepat satu $x$; garis horizontal memotong grafik maksimal sekali.",
+            "contoh_penerapan": "Fungsi $f(x) = x^3$ adalah **satu-satu (punya invers)**, sedangkan $f(x) = x^2$ pada $\\mathbb{R}$ **tidak satu-satu** karena $f(-2)=f(2)$.",
+            "jebakan_atau_catatan": "Fungsi kuadrat tetap bisa punya invers jika domainnya dibatasi hanya pada satu sisi sumbu simetrinya."
+          },
+          {
+            "judul_poin": "Sifat Fungsi Genap ($f(-x) = f(x)$)",
+            "penjelasan_singkat": "Fungsi disebut genap jika $f(-x) = f(x)$ untuk setiap $x \\in D_f$; grafiknya selalu simetris terhadap sumbu-$Y$.",
+            "contoh_penerapan": "Uji $f(x) = x^4 - 3x^2 + 1$: substitusi $-x$ menghasilkan $f(-x) = (-x)^4 - 3(-x)^2 + 1 = f(x)$ (**fungsi genap**).",
+            "jebakan_atau_catatan": "Penjumlahan suku berpangkat genap dan konstanta selalu menghasilkan fungsi genap karena $c(-x)^0 = c$."
+          },
+          {
+            "judul_poin": "Sifat Fungsi Ganjil ($f(-x) = -f(x)$)",
+            "penjelasan_singkat": "Fungsi disebut ganjil jika $f(-x) = -f(x)$ untuk setiap $x \\in D_f$; grafiknya simetris putar terhadap titik asal $(0,0)$.",
+            "contoh_penerapan": "Uji $f(x) = x^3 - 5x$: substitusi $-x$ menghasilkan $f(-x) = -x^3 + 5x = -(x^3 - 5x) = -f(x)$ (**fungsi ganjil**).",
+            "jebakan_atau_catatan": "Penambahan konstanta tak nol seperti $f(x) = x^3 + 2$ merusak sifat ganjil menjadi bukan genap maupun ganjil."
+          }
+        ]
+      }
+    ]
+  }
+}

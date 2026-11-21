@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "ppu-02-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Kaidah Lengkap Pola Frasa Inti–Penjelas (DM/MD) dan Kesetaraan Makna",
+    "subjudul_ringkas": "Kaidah baku susunan inti–penjelas (DM/MD), kesetaraan hubungan makna, pemenggalan batas frasa, dan disambiguasi.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Hukum Susunan Inti–Penjelas (DM vs. MD)",
+        "ringkasan_kelompok": "Menentukan posisi unsur inti dan penjelas berdasarkan kelas kata dalam frasa.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Hukum Diterangkan–Menerangkan (DM) Dasar",
+            "penjelasan_singkat": "Unsur inti (D) terletak di depan sebagai pusat makna, diikuti unsur penjelas (M) di belakangnya.",
+            "contoh_penerapan": "Ia membeli **buku sejarah** (D–M) di toko dekat kampus kemarin sore.",
+            "jebakan_atau_catatan": "Salah: **sejarah buku** (MD); terjebak menyamakan frasa DM dengan frasa bilangan (MD) hanya karena jumlah katanya sama."
+          },
+          {
+            "judul_poin": "Pengecualian Menerangkan–Diterangkan (MD) Numeralia",
+            "penjelasan_singkat": "Frasa nominal dengan penanda jumlah atau bilangan (numeralia) menempatkan unsur penjelas (M) mendahului kata benda inti (D).",
+            "contoh_penerapan": "Peneliti itu mengumpulkan **tiga sampel** (M–D) tanah dari lereng gunung berapi.",
+            "jebakan_atau_catatan": "Menyamakan pola **tiga sampel** (M–D) yang bermakna jumlah dengan **sampel ketiga** (D–M) yang bermakna urutan."
+          },
+          {
+            "judul_poin": "Pola MD pada Frasa Verbal dan Adjektival",
+            "penjelasan_singkat": "Kata ingkar, aspek, modalitas, dan pemeri tingkat selalu menempati posisi penjelas (M) sebelum kata kerja atau sifat (D).",
+            "contoh_penerapan": "Peserta ujian **belum siap** (M–D) dan **sangat gugup** (M–D) menghadapi tes sesi pertama.",
+            "jebakan_atau_catatan": "Salah: **siap belum**; pengecualian berlaku untuk kata keterangan tingkat *sekali* dan *benar* yang diletakkan di belakang (D–M)."
+          },
+          {
+            "judul_poin": "Frasa Setara atau Koordinatif (Non-DM)",
+            "penjelasan_singkat": "Gabungan dua kata berkedudukan sejajar yang dihubungkan konjungsi atau dapat disisipi *dan*/*atau* tidak memiliki inti tunggal.",
+            "contoh_penerapan": "Seluruh **guru dan siswa** (setara) wajib mengikuti upacara bendera setiap hari Senin pagi.",
+            "jebakan_atau_catatan": "Menganggap frasa setara **tua muda** atau **makan minum** berpola D–M hanya karena terdiri atas dua kata."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kesetaraan Pola Hubungan Makna Antarfrasa",
+        "ringkasan_kelompok": "Menguji kesamaan relasi logis antara unsur inti dan penjelas pada dua frasa.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pola Hubungan Alat–Fungsi dan Tempat–Peruntukan",
+            "penjelasan_singkat": "Dua frasa nominal berpola identik apabila unsur penjelas menyatakan kegunaan, tujuan, atau peruntukan bagi unsur inti.",
+            "contoh_penerapan": "Pola **mesin cuci** (alat–fungsi) setara dengan **ruang tunggu** (tempat–fungsi) pada denah gedung itu.",
+            "jebakan_atau_catatan": "Menyamakan **mesin cuci** (alat–fungsi) dengan **mesin diesel** (alat–sumber tenaga) karena sama-sama berinti kata *mesin*."
+          },
+          {
+            "judul_poin": "Pola Hubungan Produk–Bahan dan Produk–Asal",
+            "penjelasan_singkat": "Kesamaan pola terjadi jika unsur penjelas menerangkan material pembuat atau daerah asal unsur inti secara logis.",
+            "contoh_penerapan": "Frasa **cincin emas** (produk–bahan) sepola dengan **batik Pekalongan** (produk–asal) dalam katalog pameran kerajinan.",
+            "jebakan_atau_catatan": "Menyamakan **sate ayam** (produk–bahan) dengan **kandang ayam** (tempat–isi) meski kelas katanya sama-sama nomina + nomina."
+          },
+          {
+            "judul_poin": "Pola Hubungan Benda–Sifat dan Tempat–Aktivitas",
+            "penjelasan_singkat": "Kelas kata penjelas menentukan relasi makna; adjektiva membentuk relasi sifat, sedangkan verba membentuk relasi tindakan atau aktivitas.",
+            "contoh_penerapan": "Frasa **rumah mewah** (benda–sifat) tidak sepola dengan **rumah makan** (tempat–aktivitas) meskipun berinti sama.",
+            "jebakan_atau_catatan": "Hanya melihat kemiripan kata inti tanpa menguji perbedaan kelas kata dan hubungan makna unsur penjelasnya."
+          },
+          {
+            "judul_poin": "Pola Frasa Bertingkat (Inti–Penjelas Majemuk)",
+            "penjelasan_singkat": "Pada frasa tiga kata atau lebih, tentukan inti utama dahulu sebelum mencocokkan hierarki penjelas lapis berikutnya.",
+            "contoh_penerapan": "Pola **baju batik tulis** (D + [M1+M2]) identik dengan **kain tenun ikat** (D + [M1+M2]).",
+            "jebakan_atau_catatan": "Menyamakan **baju batik tulis** (D + [M1+M2]) dengan **buku sejarah baru** ([D+M1] + M2) karena jumlah katanya tiga."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Batas Frasa dan Disambiguasi Makna Ganda",
+        "ringkasan_kelompok": "Memenggal kelompok kata secara tepat dan menghilangkan makna ganda dalam kalimat.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pemenggalan Batas Frasa Berdasarkan Fungsi Sintaksis",
+            "penjelasan_singkat": "Batas frasa ditentukan oleh keutuhan fungsi kalimat (S, P, O, K) yang dapat digeser tanpa merusak makna.",
+            "contoh_penerapan": "Pemenggalan tepat: **[Anak pejabat tinggi itu]** (S) / **[membeli]** (P) / **[mobil mewah baru]** (O).",
+            "jebakan_atau_catatan": "Salah: **[Anak pejabat] / [tinggi itu membeli]**; memotong kata penunjuk (*itu*) sehingga terpisah dari inti frasanya."
+          },
+          {
+            "judul_poin": "Perbaikan Frasa Ambigu dengan Penambahan Preposisi",
+            "penjelasan_singkat": "Frasa nominal beruntun yang bermakna ganda diperjelas dengan menyisipkan preposisi (*karya*, *tentang*, *untuk*) agar tunggal makna.",
+            "contoh_penerapan": "Frasa ambigu *lukisan Affandi* diperbaiki menjadi **lukisan karya Affandi** atau **lukisan wajah Affandi** sesuai maksud kalimat.",
+            "jebakan_atau_catatan": "Membiarkan frasa *istri pejabat yang ramah* tanpa kejelasan apakah kata *ramah* menerangkan *istri* atau *pejabat*."
+          },
+          {
+            "judul_poin": "Disambiguasi Frasa Bertingkat dengan Tanda Hubung",
+            "penjelasan_singkat": "Tanda hubung (-) digunakan untuk merangkai unsur yang bertalian erat agar hierarki penjelas tidak ditafsirkan ganda.",
+            "contoh_penerapan": "Penulisan **anak-istri pejabat** bermakna anak dan istri milik pejabat, berbeda dengan **anak istri-pejabat**.",
+            "jebakan_atau_catatan": "Salah: menulis *rumah sakit jiwa baru* tanpa penegas struktur sehingga membingungkan apakah *rumah sakitnya* atau *jiwanya* yang baru."
+          }
+        ]
+      }
+    ]
+  }
+}

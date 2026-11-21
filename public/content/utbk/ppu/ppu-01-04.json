@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sedang",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam kalimat 'Tim peneliti memanen pujian setelah merilis aplikasi deteksi dini gempa', apakah kata 'memanen' bermakna memetik hasil tanaman padi di sawah?",
@@ -23,7 +23,96 @@
       "Memilih kata pengganti yang bersinonim secara kamus, tetapi merusak kesantunan atau nilai rasa objektif teks jurnalistik maupun akademik."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Lengkap Pergeseran Makna dan Nilai Rasa Kata",
+      "subjudul_ringkas": "Klasifikasi kaidah perubahan cakupan makna, nilai rasa, dan kias lintas indra berdasarkan KBBI VI.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Pergeseran Cakupan dan Asosiasi Makna",
+          "ringkasan_kelompok": "Perubahan luas jangkauan arti kata dari makna asal ke pemakaian modern.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Generalisasi (Perluasan Cakupan Makna)",
+              "penjelasan_singkat": "Cakupan makna kata saat ini menjadi lebih luas daripada makna asalnya yang sempit.",
+              "contoh_penerapan": "Kapal pesiar mewah itu mulai **berlayar** menggunakan mesin diesel tanpa bentangan layar kain.",
+              "jebakan_atau_catatan": "Salah jika menganggap makna baru menghilangkan makna lama; makna asal tetap berlaku di KBBI.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Spesialisasi (Penyempitan Cakupan Makna)",
+              "penjelasan_singkat": "Cakupan makna kata menyempit dari arti umum menjadi khusus pada bidang tertentu.",
+              "contoh_penerapan": "Setiap lulusan perguruan tinggi berhak menyandang gelar **sarjana** sesuai disiplin ilmu masing-masing.",
+              "jebakan_atau_catatan": "Jebakan UTBK: kata sarjana dahulu bermakna semua orang pandai, kini menyempit khusus lulusan S-1.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Asosiasi (Pergeseran Karena Persamaan Sifat)",
+              "penjelasan_singkat": "Perubahan makna akibat persamaan sifat atau kemiripan fungsi antara objek asal dan objek baru.",
+              "contoh_penerapan": "Pejabat itu ditangkap karena menerima **amplop** tebal dari kontraktor proyek jalan tol.",
+              "jebakan_atau_catatan": "Jangan tertukar dengan metafora biasa; asosiasi menggeser makna leksikal kata secara mapan di masyarakat.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Perubahan Nilai Rasa dan Nuansa Kata",
+          "ringkasan_kelompok": "Pergeseran nilai rasa kata menjadi lebih halus atau lebih kasar dalam konteks.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Ameliorasi (Peninggian Nilai Rasa)",
+              "penjelasan_singkat": "Pergeseran makna yang membuat kata baru terasa lebih halus, sopan, dan terhormat.",
+              "contoh_penerapan": "Perpustakaan daerah menyediakan koleksi buku huruf Braille khusus bagi pengunjung **tunanetra**.",
+              "jebakan_atau_catatan": "Bentuk salah: memakai kata buta dalam wacana resmi ketika konteks menuntut penghalusan makna.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Peyorasi (Penurunan Nilai Rasa)",
+              "penjelasan_singkat": "Pergeseran makna yang membuat kata terasa lebih kasar, merendahkan, atau bernilai negatif.",
+              "contoh_penerapan": "Tindakan **oknum** aparat yang menyalahgunakan wewenang telah mencoreng nama baik institusi negara.",
+              "jebakan_atau_catatan": "Jebakan: kata oknum awalnya netral bermakna individu, namun kini berkonotasi negatif sebagai pelaku pelanggaran.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Konotasi Kontekstual dalam Wacana Publik",
+              "penjelasan_singkat": "Nilai rasa positif atau negatif suatu kata ditentukan oleh keseluruhan konteks kalimatnya.",
+              "contoh_penerapan": "Kenaikan harga pangan memicu **gelombang** protes mahasiswa di depan gedung parlemen.",
+              "jebakan_atau_catatan": "Jangan menilai konotasi kata secara terpisah; kata sama bisa bernuansa positif atau negatif tergantung konteks.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pergeseran Makna Kias Lintas Indra (Sinestesia)",
+          "ringkasan_kelompok": "Pertukaran tanggapan antara dua indra berbeda dalam satu gabungan kata.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Sinestesia Pendengaran ke Pengecap atau Peraba",
+              "penjelasan_singkat": "Objek tanggapan indra pendengaran dijelaskan menggunakan kata sifat milik indra pengecap atau peraba.",
+              "contoh_penerapan": "Pengamat kebijakan publik itu melontarkan **kritik pedas** terhadap lambannya penanganan inflasi daerah.",
+              "jebakan_atau_catatan": "Bentuk salah: menafsirkan kata pedas secara harfiah sebagai rasa cabai, bukan ketajaman makna kritik.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sinestesia Penglihatan ke Pengecap atau Peraba",
+              "penjelasan_singkat": "Objek tanggapan indra penglihatan dipadukan dengan kata sifat dari indra pengecap atau peraba.",
+              "contoh_penerapan": "Ia menyambut tamu undangan dengan **senyum manis** meski suasana rapat berlangsung tegang.",
+              "jebakan_atau_catatan": "Jebakan UTBK: membedakan sinestesia dari personifikasi; sinestesia wajib melibatkan dua indra manusia berbeda.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

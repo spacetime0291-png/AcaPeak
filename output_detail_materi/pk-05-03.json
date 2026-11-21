@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "pk-05-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Pembagian Lengkap Rumus dan Sifat Bangun Ruang",
+    "subjudul_ringkas": "Katalog sifat, rumus turunan, kesebangunan, jarak ruang, dan aplikasi volume bangun ruang untuk UTBK-SNBT.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Volume dan Luas Permukaan Bangun Ruang",
+        "ringkasan_kelompok": "Rumus inti volume dan luas sisi lengkung maupun datar bangun ruang.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Kubus dan Balok",
+            "penjelasan_singkat": "Kubus berusuk $s$ memiliki $V = s^3$ dan $L = 6s^2$; balok ($p, l, t$) memiliki $V = plt$ dan $L = 2(pl + pt + lt)$.",
+            "contoh_penerapan": "Balok berukuran $4 \\times 3 \\times 2$ memiliki volume $4 \\times 3 \\times 2 =$ **$24\\text{ cm}^3$** dan luas permukaan $2(12 + 8 + 6) =$ **$52\\text{ cm}^2$**.",
+            "jebakan_atau_catatan": "Perhatikan syarat bangun **tanpa tutup**; luas sisi atas ($s^2$ atau $pl$) wajib dikurangkan dari luas total."
+          },
+          {
+            "judul_poin": "Prisma Tegak dan Tabung",
+            "penjelasan_singkat": "Bangun beratap sejajar memakai $V = L_{\\text{alas}} \\times t$; luas permukaannya $L = 2L_{\\text{alas}} + (K_{\\text{alas}} \\times t)$, dengan $L_{\\text{selimut tabung}} = 2\\pi rt$.",
+            "contoh_penerapan": "Tabung berjari-jari $7\\text{ cm}$ dan tinggi $10\\text{ cm}$ memiliki luas selimut $2 \\times \\frac{22}{7} \\times 7 \\times 10 =$ **$440\\text{ cm}^2$**.",
+            "jebakan_atau_catatan": "Alas prisma segitiga siku-siku sering mengecoh; gunakan **dua sisi penyiku** sebagai alas dan tinggi segitiga, bukan hipotenusa."
+          },
+          {
+            "judul_poin": "Limas dan Kerucut",
+            "penjelasan_singkat": "Bangun meruncing memakai $V = \\frac{1}{3} L_{\\text{alas}} \\times t$; luas kerucut $L = \\pi r(r + s)$ dengan garis pelukis $s = \\sqrt{r^2 + t^2}$.",
+            "contoh_penerapan": "Kerucut berjari-jari $6\\text{ cm}$ dan tinggi $8\\text{ cm}$ memiliki $s = \\sqrt{6^2 + 8^2} =$ **$10\\text{ cm}$**, sehingga luas selimutnya $\\pi(6)(10) =$ **$60\\pi\\text{ cm}^2$**.",
+            "jebakan_atau_catatan": "Jangan tertukar antara **tinggi limas atau kerucut ($t$)** untuk volume dengan **tinggi sisi tegak atau garis pelukis ($s$)** untuk luas permukaan."
+          },
+          {
+            "judul_poin": "Bola dan Setengah Bola",
+            "penjelasan_singkat": "Bola berjari-jari $r$ memiliki $V = \\frac{4}{3}\\pi r^3$ dan $L = 4\\pi r^2$; setengah bola pejal memiliki $L = 3\\pi r^2$.",
+            "contoh_penerapan": "Setengah bola pejal berjari-jari $10\\text{ cm}$ memiliki luas permukaan total $3\\pi(10)^2 =$ **$300\\pi\\text{ cm}^2$** karena mencakup luas lingkaran penutupnya.",
+            "jebakan_atau_catatan": "Bedakan setengah bola **berongga** ($L = 2\\pi r^2$) dengan setengah bola **pejal** ($L = 3\\pi r^2$) akibat tambahan luas lingkaran alas."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Diagonal dan Jarak dalam Bangun Ruang",
+        "ringkasan_kelompok": "Menghitung panjang garis dan jarak terpendek menggunakan teorema Pythagoras dan luas segitiga.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Diagonal Bidang dan Ruang Kubus-Balok",
+            "penjelasan_singkat": "Kubus berusuk $s$ memiliki diagonal bidang $s\\sqrt{2}$ dan diagonal ruang $s\\sqrt{3}$; balok memiliki diagonal ruang $\\sqrt{p^2 + l^2 + t^2}$.",
+            "contoh_penerapan": "Kubus dengan diagonal ruang $6\\sqrt{3}\\text{ cm}$ memiliki panjang rusuk **$6\\text{ cm}$** dan luas permukaan $6(6)^2 =$ **$216\\text{ cm}^2$**.",
+            "jebakan_atau_catatan": "Trik cepat UTBK: ubah akar ke bentuk $\\sqrt{n}$; jika $d_{\\text{ruang}} = \\sqrt{48} = 4\\sqrt{3}$, langsung didapat rusuk **$s = 4$**."
+          },
+          {
+            "judul_poin": "Jarak Titik ke Garis (Segitiga Siku-Siku)",
+            "penjelasan_singkat": "Jarak titik $P$ ke garis $g$ adalah panjang proyeksi tegak lurus; gunakan kesamaan luas segitiga $a \\times t_a = b \\times t_b$.",
+            "contoh_penerapan": "Pada kubus berusuk $6$, jarak titik $A$ ke diagonal ruang $BH$ adalah $\\frac{AB \\times AH}{BH} = \\frac{6 \\times 6\\sqrt{2}}{6\\sqrt{3}} =$ **$2\\sqrt{6}$**.",
+            "jebakan_atau_catatan": "Selalu cek apakah segitiga yang dibentuk titik dan ujung garis merupakan **segitiga siku-siku** lewat teorema tiga garis tegak lurus."
+          },
+          {
+            "judul_poin": "Jarak Titik ke Garis pada Segitiga Sembarang",
+            "penjelasan_singkat": "Jika segitiga bukan siku-siku, tentukan panjang ketiga sisinya lalu gunakan aturan kosinus atau proyeksi Pythagoras untuk mencari tinggi.",
+            "contoh_penerapan": "Segitiga sama kaki bersisi $5, 5, 6$ memiliki tinggi ke sisi alas sebesar $\\sqrt{5^2 - 3^2} =$ **$4$** karena garis tinggi membagi alas sama panjang.",
+            "jebakan_atau_catatan": "Pada **limas segiempat beraturan**, jarak puncak ke rusuk alas bukan tinggi limas, melainkan tinggi segitiga sisi tegak."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kesebangunan dan Bangun di Dalam Bangun",
+        "ringkasan_kelompok": "Hubungan rasio dimensi linear terhadap luas, volume, serta bangun ruang bersinggungan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Skala Kesebangunan Luas dan Volume",
+            "penjelasan_singkat": "Jika rasio panjang sisi atau jari-jari bangun sebangun adalah $k$, maka rasio luasnya $k^2$ dan rasio volumenya $k^3$.",
+            "contoh_penerapan": "Jika jari-jari bola diperbesar **$2$ kali** ($k = 2$), luas permukaannya menjadi $2^2 =$ **$4$ kali** dan volumenya menjadi $2^3 =$ **$8$ kali**.",
+            "jebakan_atau_catatan": "Pada soal **kerucut terpotong**, rasio volume kerucut kecil terhadap utuh adalah $(\\frac{t_1}{t_2})^3$, bukan perbandingan tingginya langsung."
+          },
+          {
+            "judul_poin": "Bola di Dalam Kubus atau Tabung",
+            "penjelasan_singkat": "Bola terbesar di dalam kubus berusuk $s$ berdiameter $d = s$; di dalam tabung ($r, t = 2r$), diameter bola $d = 2r$.",
+            "contoh_penerapan": "Volume bola terbesar di dalam kubus berusuk $6\\text{ cm}$ memiliki $r =$ **$3\\text{ cm}$**, sehingga $V = \\frac{4}{3}\\pi(3)^3 =$ **$36\\pi\\text{ cm}^3$**.",
+            "jebakan_atau_catatan": "Hafalkan rasio volume bola terhadap tabung yang tepat melingkupinya adalah **$2 : 3$** untuk menghemat waktu hitung di UTBK."
+          },
+          {
+            "judul_poin": "Kubus di Dalam Bola (Inscribed Cube)",
+            "penjelasan_singkat": "Kubus terbesar di dalam bola berjari-jari $R$ memiliki panjang diagonal ruang kubus sama dengan diameter bola ($s\\sqrt{3} = 2R$).",
+            "contoh_penerapan": "Jika bola berdiameter $6\\sqrt{3}\\text{ cm}$ memuat kubus terbesar, maka $s\\sqrt{3} = 6\\sqrt{3}$ sehingga rusuk kubus **$s = 6\\text{ cm}$**.",
+            "jebakan_atau_catatan": "Kesalahan fatal adalah menyamakan rusuk kubus ($s$) dengan diameter bola ($2R$); titik sudut kubus menyentuh kulit bola di ujung **diagonal ruang**."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Aplikasi Perubahan Tinggi Permukaan Zat Cair",
+        "ringkasan_kelompok": "Prinsip kekekalan volume saat benda padat dicelupkan ke dalam wadah berisi cairan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Benda Tenggelam Seluruhnya Tanpa Tumpah",
+            "penjelasan_singkat": "Jika benda tenggelam penuh tanpa air tumpah, kenaikan volume air sama dengan volume benda: $L_{\\text{alas wadah}} \\times \\Delta t = V_{\\text{benda}}$.",
+            "contoh_penerapan": "Bola bervolume $100\\pi\\text{ cm}^3$ tenggelam penuh di tabung berjari-jari $5\\text{ cm}$, menyebabkan air naik $\\Delta t = \\frac{100\\pi}{\\pi(5)^2} =$ **$4\\text{ cm}$**.",
+            "jebakan_atau_catatan": "Pastikan tinggi akhir air ($t_{\\text{awal}} + \\Delta t$) **tidak melebihi tinggi wadah**; jika melebihi, sebagian air tumpah keluar."
+          },
+          {
+            "judul_poin": "Benda Tenggelam Sebagian (Tinggi Benda Lebih Besar)",
+            "penjelasan_singkat": "Jika tinggi benda melebihi tinggi air akhir, luas permukaan air menyempit sehingga $V_{\\text{air}} = (L_{\\text{alas wadah}} - L_{\\text{alas benda}}) \\times t_{\\text{akhir}}$.",
+            "contoh_penerapan": "Silinder berluas alas $10\\text{ cm}^2$ berdiri tegak di wadah berluas alas $50\\text{ cm}^2$ berisi $400\\text{ cm}^3$ air, tinggi air menjadi $\\frac{400}{50 - 10} =$ **$10\\text{ cm}$**.",
+            "jebakan_atau_catatan": "Cek apakah $t_{\\text{akhir}} < t_{\\text{benda}}$; jika $t_{\\text{akhir}} \\ge t_{\\text{benda}}$, benda tenggelam penuh sehingga kembali memakai rumus **kenaikan volume total**."
+          }
+        ]
+      }
+    ]
+  }
+}

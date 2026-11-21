@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "lbe-03-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Taksonomi Sinyal & Pola Inferensi Logis UTBK-SNBT",
+    "subjudul_ringkas": "Panduan praktis mengenali penanda teks, asumsi tersirat, prediksi kausal, dan sintesis grafik tanpa terjebak pengecoh.",
+    "mode_tampilan": "katalog_sinyal_pola",
+    "label_kolom": {
+      "kolom_1": "Kategori / Penanda Teks",
+      "kolom_2": "Contoh Potongan / Sinyal",
+      "kolom_3": "Cara Bedakan / Jebakan"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "1. Pola Inferensi Logis Ketat (Strict Inference)",
+        "ringkasan_kelompok": "Menarik kesimpulan pasti dari parafrasa, kontras, dan pembatas kuantitas teks.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Parafrasa Semantik & Sinonim Kontekstual",
+            "penjelasan_singkat": "Simpulan valid menyusun ulang fakta eksplisit memakai sinonim atau struktur berbeda tanpa menambah informasi baru ($A \\equiv A'$).",
+            "contoh_penerapan": "Teks: *\"The species **struggles to survive** in warmer waters.\"* $\\rightarrow$ Inferensi: Spesies tersebut **rentan punah** akibat kenaikan suhu laut.",
+            "jebakan_atau_catatan": "Jebakan: memilih opsi yang menyalin kata persis dari teks tetapi mengubah subjek, objek, atau maknanya."
+          },
+          {
+            "judul_poin": "Penanda Kontras & Pengecualian (*Whereas, Unlike*)",
+            "penjelasan_singkat": "Kata hubung kontras membalikkan sifat subjek kedua dibandingkan subjek pertama secara logis ($A = X, B \\neq A \\rightarrow B \\neq X$).",
+            "contoh_penerapan": "Teks: *\"**Unlike** nocturnal owls, eagles hunt exclusively during daylight.\"* $\\rightarrow$ Inferensi: Burung hantu **tidak berburu secara eksklusif** pada siang hari.",
+            "jebakan_atau_catatan": "Jangan menyimpulkan sifat ekstrem; *unlike* hanya membedakan sifat spesifik yang dibandingkan, bukan kebalikan total di semua aspek."
+          },
+          {
+            "judul_poin": "Kualifikator Kuantitas & Frekuensi (*Rarely, Few, Mostly*)",
+            "penjelasan_singkat": "Kata pembatas seperti *few*, *seldom*, atau *primarily* membatasi cakupan fakta sehingga menolak generalisasi total ($0\\% < X < 100\\%$).",
+            "contoh_penerapan": "Teks: *\"Early treatments **rarely** eliminate the virus completely.\"* $\\rightarrow$ Inferensi: Sebagian kecil pasien **masih menyimpan virus** setelah terapi awal.",
+            "jebakan_atau_catatan": "Opsi dengan kata mutlak (*never, all, completely, always*) otomatis salah karena melampaui batas kualifikator teks."
+          },
+          {
+            "judul_poin": "Perbandingan Komparatif & Superlatif (*More than, Highest*)",
+            "penjelasan_singkat": "Pernyataan komparatif ($A > B$) secara otomatis menetapkan peringkat relatif kedua entitas tanpa memerlukan angka absolut.",
+            "contoh_penerapan": "Teks: *\"Solar adoption grew **faster than** wind energy in 2024.\"* $\\rightarrow$ Inferensi: Laju pertumbuhan energi angin **lebih rendah** daripada surya.",
+            "jebakan_atau_catatan": "Lebih cepat tumbuh ($\\Delta A > \\Delta B$) tidak berarti total kapasitas terpasang surya sudah melampaui energi angin."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "2. Menggali Asumsi Tersirat (Unstated Assumptions)",
+        "ringkasan_kelompok": "Mengidentifikasi premis tersembunyi yang menopang argumen atau rekomendasi penulis.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Jembatan Premis ke Klaim (*Gap Filler*)",
+            "penjelasan_singkat": "Asumsi tersirat adalah syarat wajib tak tertulis yang menghubungkan bukti teks menuju kesimpulan ($\\text{Premis} + \\text{Asumsi} \\rightarrow \\text{Klaim}$).",
+            "contoh_penerapan": "Teks: *\"The app lacks encryption, **so** users' data is unsafe.\"* $\\rightarrow$ Asumsi: Enkripsi merupakan **syarat mutlak** keamanan data pengguna.",
+            "jebakan_atau_catatan": "Uji dengan teknik negasi: jika asumsi dibalik (enkripsi tidak diperlukan), kesimpulan penulis langsung runtuh."
+          },
+          {
+            "judul_poin": "Presuposisi Keterangan Waktu & Penekanan (*Still, Even*)",
+            "penjelasan_singkat": "Kata keterangan seperti *still* atau *no longer* menyiratkan kondisi latar belakang yang sudah berlangsung sebelumnya ($\\text{Still } X \\rightarrow X \\text{ eksis dulu}$).",
+            "contoh_penerapan": "Teks: *\"The city **still** relies on coal power plants.\"* $\\rightarrow$ Asumsi: Kota tersebut **sudah menggunakan** pembangkit batu bara di masa lalu.",
+            "jebakan_atau_catatan": "Jangan mengasumsikan kota tersebut pasti menghentikan batu bara dalam waktu dekat tanpa petunjuk tambahan dalam teks."
+          },
+          {
+            "judul_poin": "Klaim Normatif & Rekomendasi (*Should, Must, Need to*)",
+            "penjelasan_singkat": "Saran kebijakan mengasumsikan bahwa tindakan tersebut layak dijalankan dan memperbaiki kondisi saat ini ($\\text{Should } X \\rightarrow X \\text{ bermanfaat}$).",
+            "contoh_penerapan": "Teks: *\"Schools **must** delay start times to boost teen grades.\"* $\\rightarrow$ Asumsi: Jadwal masuk sekolah saat ini **terlalu pagi** bagi remaja.",
+            "jebakan_atau_catatan": "Hindari opsi yang menyebut solusi tersebut sebagai satu-satunya faktor penentu nilai siswa (*sole factor trap*)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "3. Hubungan Sebab-Akibat & Prediksi Kondisi",
+        "ringkasan_kelompok": "Memetakan rantai sebab-akibat implisit dan memproyeksikan dampak perubahan kondisi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Rantai Sebab-Akibat Implisit (*Trigger, Lead to, Drive*)",
+            "penjelasan_singkat": "Kata kerja kausal menghubungkan variabel pemicu dengan dampak lanjutan secara berantai ($X \\rightarrow Y \\rightarrow Z$, maka $X \\rightarrow Z$).",
+            "contoh_penerapan": "Teks: *\"Deforestation **triggers** soil erosion, which **chokes** river habitats.\"* $\\rightarrow$ Inferensi: Penebangan hutan secara tidak langsung **merusak ekosistem sungai**.",
+            "jebakan_atau_catatan": "Waspadai jebakan pembalikan arah kausalitas ($Z \\rightarrow X$) atau penyamaan korelasi kebetulan sebagai sebab-akibat."
+          },
+          {
+            "judul_poin": "Prediksi Penghapusan Syarat (*If Removed / Without*)",
+            "penjelasan_singkat": "Jika variabel $X$ dibutuhkan agar $Y$ terjadi ($Y \\rightarrow X$), meniadakan $X$ pasti menggagalkan $Y$ ($\\neg X \\rightarrow \\neg Y$).",
+            "contoh_penerapan": "Teks: *\"Coral reefs **depend on** symbiotic algae for nutrients.\"* $\\rightarrow$ Prediksi: Jika alga hilang, terumbu karang **akan kekurangan nutrisi**.",
+            "jebakan_atau_catatan": "Jangan memprediksi dampak sekunder ekstrem di luar teks, seperti kepunahan seluruh spesies laut secara instan."
+          },
+          {
+            "judul_poin": "Prediksi Perubahan Tren Variabel (*Increase / Decrease*)",
+            "penjelasan_singkat": "Ekstrapolasi tren memproyeksikan dampak searah atau berlawanan sesuai pola hubungan variabel pada teks ($X \\uparrow \\Rightarrow Y \\downarrow$).",
+            "contoh_penerapan": "Teks: *\"Higher interest rates consistently **dampen** corporate borrowing.\"* $\\rightarrow$ Prediksi: Pemangkasan suku bunga kemungkinan besar **mendorong pinjaman korporasi**.",
+            "jebakan_atau_catatan": "Prediksi valid selalu menggunakan bahasa probabilitas (*likely, probable*), bukan kepastian mutlak di masa depan."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "4. Sintesis Inferensi Teks & Grafik/Tabel",
+        "ringkasan_kelompok": "Menggabungkan bukti angka pada grafik atau tabel dengan klaim paragraf.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Konfirmasi Klaim Teks dengan Tren Grafik",
+            "penjelasan_singkat": "Cocokkan arah perubahan angka pada grafik atau tabel dengan pernyataan kualitatif penulis untuk menarik simpulan gabungan.",
+            "contoh_penerapan": "Grafik: biaya baterai turun $40\\%$; Teks: *\"Falling costs **drive EV adoption**.\"* $\\rightarrow$ Inferensi: Penurunan harga baterai **mempercepat adopsi kendaraan listrik**.",
+            "jebakan_atau_catatan": "Jangan menarik simpulan dari satu titik tahun saja jika klaim teks membahas tren jangka panjang (*overall trend*)."
+          },
+          {
+            "judul_poin": "Deteksi Anomali & Pengecualian Tabel-Teks",
+            "penjelasan_singkat": "Ketika data tabel menyimpang dari pola umum teks, inferensi berfokus pada faktor pengecualian yang dijelaskan paragraf pendukung.",
+            "contoh_penerapan": "Tabel: Negara Z naik saat negara lain turun; Teks: *\"**Subsidies shielded Z**.\"* $\\rightarrow$ Inferensi: Subsidi **menahan dampak penurunan** di Negara Z.",
+            "jebakan_atau_catatan": "Jebakan umum: menyimpulkan data grafik bertentangan dengan teks, padahal teks sudah memberi alasan pengecualiannya."
+          }
+        ]
+      }
+    ]
+  }
+}

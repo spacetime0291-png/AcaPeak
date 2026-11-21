@@ -11,14 +11,51 @@ export interface ExamHook {
   penjelasan_kilat: string;
 }
 
+export interface VisualData {
+  tipe: 'svg' | 'mermaid' | string;
+  kode: string;
+  caption?: string;
+  engine?: string;
+}
+
+export interface ButirDetailMateri {
+  judul_poin: string;
+  penjelasan_singkat: string;
+  contoh_penerapan: string;
+  jebakan_atau_catatan: string;
+  visual?: VisualData | null;
+}
+
+export interface KelompokDetailMateri {
+  nama_kelompok: string;
+  ringkasan_kelompok?: string;
+  buka_default: boolean;
+  butir: ButirDetailMateri[];
+}
+
+export interface LabelKolomDetailMateri {
+  kolom_1: string;
+  kolom_2: string;
+  kolom_3: string;
+}
+
+export interface DetailMateriLengkap {
+  judul_blok: string;
+  subjudul_ringkas?: string;
+  mode_tampilan?: string;
+  label_kolom: LabelKolomDetailMateri;
+  kelompok: KelompokDetailMateri[];
+}
+
 export interface Zona1PetaTaktis {
   estimasi_menit_baca: number;
   frekuensi_utbk: string;
   exam_hook?: ExamHook | null;
   konsep_inti_markdown: string;
+  detail_materi_lengkap?: DetailMateriLengkap | null;
   radar_jebakan_utbk: string[];
   stimulus_utama_bersama?: string | null;
-  visual?: any | null;
+  visual?: VisualData | null;
 }
 
 export interface VariasiInti {
@@ -28,7 +65,7 @@ export interface VariasiInti {
   stimulus_mini: string;
   bedah_pola_markdown: string;
   kunci_pembeda: string;
-  visual?: any | null;
+  visual?: VisualData | null;
 }
 
 export interface SoalUjiPemahaman {
@@ -39,7 +76,7 @@ export interface SoalUjiPemahaman {
   opsi_jawaban: string[];
   kunci_jawaban: string;
   bedah_cepat_markdown: string;
-  visual?: any | null;
+  visual?: VisualData | null;
 }
 
 export interface ThreeZoneMaterial {

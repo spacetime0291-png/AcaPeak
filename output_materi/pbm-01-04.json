@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam teks laporan penelitian, manakah penulisan yang sesuai kaidah EYD V: 'Sebanyak 150 orang responden mengisi survei pada abad ke-XXI' atau 'Seratus lima puluh orang responden mengisi survei pada abad XXI'?",
@@ -23,7 +23,110 @@
       "Menulis angka di awal kalimat untuk bilangan besar (contoh: '125 mahasiswa mengikuti seminar'), padahal awal kalimat tidak boleh diawali angka."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Pembagian Lengkap Kaidah Penulisan Angka dan Bilangan EYD V",
+      "subjudul_ringkas": "Katalog aturan baku penulisan angka, huruf, bilangan tingkat, satuan, dan penomoran dalam teks sesuai kaidah EYD V.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Kaidah Dasar Bilangan dalam Kalimat",
+          "ringkasan_kelompok": "Aturan utama penggunaan huruf atau angka berdasarkan jumlah kata dan posisi kalimat.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Bilangan Satu Kata vs. Lebih dari Satu Kata",
+              "penjelasan_singkat": "Bilangan satu kata ditulis dengan huruf, sedangkan bilangan lebih dari satu kata ditulis dengan angka.",
+              "contoh_penerapan": "Koleksi buku sejarah di perpustakaan daerah itu bertambah **tiga** judul baru dari total **125** eksemplar.",
+              "jebakan_atau_catatan": "Salah: menulis *bertambah 3 judul* atau *seratus dua puluh lima eksemplar* dalam narasi non-perincian.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Bilangan Berurutan dalam Perincian",
+              "penjelasan_singkat": "Semua bilangan yang dipakai secara berurutan dalam perincian wajib ditulis dengan angka, termasuk satu kata.",
+              "contoh_penerapan": "Dari **80** peserta rapat, **52** orang setuju, **20** orang menolak, dan **8** orang memilih abstain.",
+              "jebakan_atau_catatan": "Salah: menulis *delapan orang* dengan huruf saat dirangkai sejajar bersama angka *52* dan *20*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Bilangan di Awal Kalimat",
+              "penjelasan_singkat": "Bilangan di awal kalimat wajib ditulis huruf maksimal dua kata; jika lebih, ubah struktur kalimatnya.",
+              "contoh_penerapan": "**Lima puluh** mahasiswa penerima beasiswa menghadiri seminar, sedangkan panitia mengundang **250** peserta umum.",
+              "jebakan_atau_catatan": "Salah: *250 peserta umum diundang panitia* atau *Dua ratus lima puluh peserta umum diundang panitia*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Bilangan Besar Sebagian Huruf",
+              "penjelasan_singkat": "Bilangan bernilai besar dapat ditulis kombinasi angka dan huruf agar lebih ringkas dan mudah dibaca.",
+              "contoh_penerapan": "Pembangunan infrastruktur jalan tol tersebut membutuhkan anggaran negara sebesar **250 miliar** rupiah.",
+              "jebakan_atau_catatan": "Salah: menulis bentuk pleonasme seperti *250.000.000 juta* atau mencampur huruf seperti *dua ratus 50 juta*.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Bilangan Tingkat, Akhiran -an, dan Nama Geografi",
+          "ringkasan_kelompok": "Ketentuan penulisan urutan tingkat, imbuhan akhiran angka, serta bilangan pada nama tempat.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Penulisan Bilangan Tingkat",
+              "penjelasan_singkat": "Bilangan tingkat ditulis dengan angka Romawi, awalan ke- diikuti angka Arab, atau seluruhnya dengan huruf.",
+              "contoh_penerapan": "Perubahan iklim global mulai tercatat secara sistematis sejak **abad XX** (atau **abad ke-20** / **abad kedua puluh**).",
+              "jebakan_atau_catatan": "Salah: menggabungkan awalan ke- dengan angka Romawi (*abad ke-XX*) atau menghilangkan tanda hubung (*abad ke 20*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Angka yang Mendapat Akhiran -an",
+              "penjelasan_singkat": "Penulisan lambang bilangan yang diikuti akhiran -an wajib dirangkai menggunakan tanda hubung (-).",
+              "contoh_penerapan": "Lagu-lagu pop Indonesia era **1990-an** kembali digemari oleh generasi muda melalui platform musik digital.",
+              "jebakan_atau_catatan": "Salah: menuliskan tanpa tanda hubung seperti *era 1990an* atau *uang pecahan 5000an*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Bilangan sebagai Unsur Nama Geografi",
+              "penjelasan_singkat": "Bilangan yang menjadi bagian dari nama geografis atau wilayah wajib ditulis seluruhnya menggunakan huruf.",
+              "contoh_penerapan": "Wisatawan mancanegara banyak mengunjungi kepulauan **Raja Ampat** serta kawasan **Simpang Lima** di pusat kota.",
+              "jebakan_atau_catatan": "Salah: mengganti unsur nama wilayah dengan angka seperti *Kepulauan Raja 4* atau *Jalan Simpang 5*.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Satuan, Uang, Alamat, dan Bagian Karangan",
+          "ringkasan_kelompok": "Pemakaian angka wajib untuk ukuran, nilai mata uang, persentase, alamat, serta nomor halaman.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Satuan Ukuran, Waktu, Persentase, dan Uang",
+              "penjelasan_singkat": "Angka wajib dipakai untuk menyatakan ukuran panjang, berat, luas, isi, waktu, persentase, dan nilai uang.",
+              "contoh_penerapan": "Rapat dimulai pukul **08.30** WIB dengan target efisiensi anggaran sebesar **15%** atau senilai **Rp50.000.000,00**.",
+              "jebakan_atau_catatan": "Salah: memberi spasi setelah simbol rupiah (*Rp 50.000*) atau memberi tanda titik setelah satuan (*15 kg.*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penomoran Alamat dan Bagian Karangan",
+              "penjelasan_singkat": "Angka digunakan untuk menomori jalan, rumah, kamar, serta bab, pasal, halaman, dan ayat kitab suci.",
+              "contoh_penerapan": "Kantor redaksi beralamat di Jalan Melati **Nomor 12**, sedangkan rujukan teori terdapat pada **Bab III**, **halaman 45**.",
+              "jebakan_atau_catatan": "Catatan: tanda titik tidak dipakai di belakang angka terakhir pada penomoran bab atau subbab (*Bab III* bukan *Bab III.*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penulisan Bilangan Pecahan",
+              "penjelasan_singkat": "Bilangan pecahan dalam narasi umum ditulis dengan huruf, sedangkan dalam data ukuran ditulis dengan angka.",
+              "contoh_penerapan": "Sebanyak **dua pertiga** peserta setuju, sementara takaran bahan yang dibutuhkan hanya **0,5** liter air.",
+              "jebakan_atau_catatan": "Salah: memisahkan *per* pada penyebut satu kata (*dua per tiga*) atau merangkainya pada penyebut dua kata (*satu perduapuluh*).",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

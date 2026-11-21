@@ -1,0 +1,96 @@
+{
+  "kode_subbab": "pm-03-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Rumus dan Pola Aplikasi Pythagoras-Trigonometri",
+    "subjudul_ringkas": "Panduan sistematis rumus terapan, variasi geometri 2D-3D, sudut pandang, navigasi, dan trik cepat UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Aplikasi Pythagoras 2D, 3D, dan Kemiringan",
+        "ringkasan_kelompok": "Pola perhitungan jarak langsung, pergeseran tangga, lintasan terpendek ruang, dan gradien tanjakan.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Kelipatan Tripel Pythagoras dan Segitiga Siku-Siku Istimewa",
+            "penjelasan_singkat": "Gunakan kelipatan $k$ pada tripel dasar serta rasio sisi sudut istimewa $30^\\circ-60^\\circ-90^\\circ$ ($1:\\sqrt{3}:2$) dan $45^\\circ-45^\\circ-90^\\circ$ ($1:1:\\sqrt{2}$).",
+            "contoh_penerapan": "Kabel penahan tiang membentuk sudut $60^\\circ$ dengan tanah berjarak $4\\text{ m}$ dari pangkal, maka **panjang kabel $= 2 \\times 4 = 8\\text{ m}$**.",
+            "jebakan_atau_catatan": "Jebakan: sisi di depan sudut $60^\\circ$ adalah $\\sqrt{3}$, bukan $2$. Sisi miring selalu memiliki rasio terbesar ($2$)."
+          },
+          {
+            "judul_poin": "Tangga Bersandar yang Bergeser (Invarian Sisi Miring)",
+            "penjelasan_singkat": "Panjang tangga ($L$) tetap konstan saat bergeser: $x_1^2 + y_1^2 = x_2^2 + y_2^2 = L^2$ dengan $x$ jarak dinding dan $y$ tinggi.",
+            "contoh_penerapan": "Tangga $5\\text{ m}$ berujung di tinggi $4\\text{ m}$ ($x_1=3\\text{ m}$). Jika kaki bergeser menjauh $1\\text{ m}$ ($x_2=4\\text{ m}$), **ujung atas turun $1\\text{ m}$** menjadi $3\\text{ m}$.",
+            "jebakan_atau_catatan": "Trik cepat: pergeseran kaki tangga sejauh $\\Delta x$ tidak sama dengan turunnya ujung atas ($\\Delta y \\neq \\Delta x$)."
+          },
+          {
+            "judul_poin": "Jarak Terpendek Lintas Medan dan Diagonal Ruang 3D",
+            "penjelasan_singkat": "Lintasan terpendek pada permukaan balok dihitung dengan membuka jaring-jaring menjadi bidang datar 2D lalu menarik garis lurus Pythagoras.",
+            "contoh_penerapan": "Semut merayap di balok $4\\times 3\\times 2\\text{ cm}$ dari pojok bawah ke atas seberang; **lintasan terpendek $= \\sqrt{(4+3)^2 + 2^2} = \\sqrt{53}\\text{ cm}$**.",
+            "jebakan_atau_catatan": "Jangan hitung diagonal ruang $\\sqrt{p^2+l^2+t^2}$ jika objek merayap di permukaan; jumlahkan dua rusuk terpendek terlebih dahulu."
+          },
+          {
+            "judul_poin": "Kemiringan Atap Bangunan dan Jalan Tanjakan (Ramp)",
+            "penjelasan_singkat": "Kemiringan ($m$) dinyatakan sebagai rasio kenaikan vertikal terhadap jarak horizontal: $m = \\tan \\theta = \\frac{\\Delta y}{\\Delta x}$ atau dalam persentase ($m \\times 100\\%$).",
+            "contoh_penerapan": "Ramp kursi roda memiliki kemiringan standar $1:12$ untuk ketinggian $0,5\\text{ m}$, sehingga **panjang landasan mendatar $= 12 \\times 0,5 = 6\\text{ m}$**.",
+            "jebakan_atau_catatan": "Jebakan: penyebut kemiringan $1:12$ adalah jarak mendatar ($\\Delta x$), bukan panjang lintasan miring ramp ($c$)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Sudut Elevasi, Depresi, dan Tinggi Objek",
+        "ringkasan_kelompok": "Penerapan rasio tangen dan kotangen untuk mengukur tinggi menara maupun jarak kapal.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Tinggi Gedung dengan Sudut Elevasi dan Tinggi Pengamat",
+            "penjelasan_singkat": "Tinggi total objek ($H$) adalah hasil kali jarak horizontal dan $\\tan \\theta$ ditambah tinggi mata pengamat ($h_0$): $H = x \\tan \\theta + h_0$.",
+            "contoh_penerapan": "Pengamat bertinggi mata $1,6\\text{ m}$ melihat puncak tiang sejauh $10\\sqrt{3}\\text{ m}$ dengan elevasi $30^\\circ$; **tinggi tiang $= 10\\sqrt{3}(\\frac{1}{\\sqrt{3}}) + 1,6 = 11,6\\text{ m}$**.",
+            "jebakan_atau_catatan": "Sering lupa menambahkan tinggi mata pengamat ($h_0$) pada hasil akhir $x \\tan \\theta$ jika tinggi pengamat diketahui di soal."
+          },
+          {
+            "judul_poin": "Jarak Kapal dari Mercusuar Menggunakan Sudut Depresi",
+            "penjelasan_singkat": "Sudut depresi $\\alpha$ dari puncak setinggi $H$ sama dengan sudut elevasi dari kapal, sehingga jarak mendatar kapal $x = \\frac{H}{\\tan \\alpha}$.",
+            "contoh_penerapan": "Dari mercusuar $60\\text{ m}$ terlihat kapal dengan sudut depresi $45^\\circ$, maka **jarak kapal ke kaki mercusuar $= \\frac{60}{\\tan 45^\\circ} = 60\\text{ m}$**.",
+            "jebakan_atau_catatan": "Jebakan: sudut depresi diukur dari garis mendatar puncak, bukan dari dinding vertikal mercusuar ($90^\\circ - \\alpha$)."
+          },
+          {
+            "judul_poin": "Pengamatan Dua Posisi Segaris (Selisih Kotangen)",
+            "penjelasan_singkat": "Saat pengamat maju sejauh $d$ hingga sudut elevasi berubah dari $\\alpha$ ke $\\beta$, tinggi objek $h = \\frac{d}{\\cot \\alpha - \\cot \\beta}$.",
+            "contoh_penerapan": "Sudut elevasi puncak menara berubah dari $30^\\circ$ menjadi $45^\\circ$ setelah maju $20\\text{ m}$; **tinggi menara $= \\frac{20}{\\sqrt{3} - 1} = 10(\\sqrt{3}+1)\\text{ m}$**.",
+            "jebakan_atau_catatan": "Trik cepat: jika sudut berubah dari $30^\\circ$ ke $60^\\circ$, tinggi objek langsung bernilai $h = \\frac{d}{2}\\sqrt{3}$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Navigasi Arah dan Sabuk Lilitan Katrol",
+        "ringkasan_kelompok": "Aplikasi vektor komponen jurusan tiga angka serta perhitungan panjang sabuk dua katrol.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Navigasi Mata Angin Tegak Lurus dan Resultan Perpindahan",
+            "penjelasan_singkat": "Gabungkan perpindahan sumbu Utara-Selatan ($\\Delta y$) dan Timur-Barat ($\\Delta x$) secara terpisah, lalu hitung jarak akhir menggunakan $R = \\sqrt{(\\Delta x)^2 + (\\Delta y)^2}$.",
+            "contoh_penerapan": "Kapal berlayar ke Utara $10\\text{ km}$, ke Timur $12\\text{ km}$, lalu ke Selatan $5\\text{ km}$; **jarak dari titik awal $= \\sqrt{12^2 + 5^2} = 13\\text{ km}$**.",
+            "jebakan_atau_catatan": "Bedakan total jarak tempuh (jumlah skalar lintasan) dengan jarak dari titik awal (perpindahan lurus Pythagoras)."
+          },
+          {
+            "judul_poin": "Jurusan Tiga Angka (Bearing) dan Sudut Belok Lintasan",
+            "penjelasan_singkat": "Jurusan tiga angka diukur searah jarum jam dari arah Utara ($000^\\circ$); selisih jurusan $90^\\circ$ atau $270^\\circ$ membentuk lintasan siku-siku.",
+            "contoh_penerapan": "Pesawat terbang sejauh $80\\text{ km}$ berjurusan $030^\\circ$ lalu berbelok ke jurusan $120^\\circ$ sejauh $60\\text{ km}$; **jarak posisi akhir $= 100\\text{ km}$**.",
+            "jebakan_atau_catatan": "Selisih sudut jurusan $120^\\circ - 30^\\circ = 90^\\circ$ langsung membuktikan kedua lintasan saling tegak lurus."
+          },
+          {
+            "judul_poin": "Panjang Sabuk Lilitan Luar Dua Katrol (Pulley Belt)",
+            "penjelasan_singkat": "Untuk dua katrol identik berjari-jari $r$ dan jarak pusat $d$, panjang sabuk lurus luar adalah $L = 2d + 2\\pi r$.",
+            "contoh_penerapan": "Dua katrol berjari-jari $7\\text{ cm}$ berjarak antar-pusat $20\\text{ cm}$ dihubungkan sabuk luar; **panjang sabuk $= 2(20) + 2(\\frac{22}{7})(7) = 84\\text{ cm}$**.",
+            "jebakan_atau_catatan": "Jika jari-jari berbeda ($R \\neq r$), segmen lurus miring menjadi $2\\sqrt{d^2 - (R-r)^2}$, bukan $2d$."
+          }
+        ]
+      }
+    ]
+  }
+}

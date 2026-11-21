@@ -1,0 +1,97 @@
+{
+  "kode_subbab": "pk-04-01",
+  "updated_at": "2026-11-21T09:45:56.284515",
+  "slots": {
+    "z2_v3": {
+      "slot_id": "z2_v3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='18' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Distribusi Frekuensi Nilai Ujian Matematika (N = 20)</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='38' y='196.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>0</text><line x1='44' y1='138.0' x2='376' y2='138.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='142.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>2</text><line x1='44' y1='84.0' x2='376' y2='84.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='88.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>4</text><line x1='44' y1='30.0' x2='376' y2='30.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='34.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>6</text><line x1='44' y1='192' x2='376' y2='192' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='192' x2='44' y2='30' stroke='#94A3B8' stroke-width='1.5'/><text x='77.2' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Nilai 5</text><rect x='57.3' y='111.0' width='37.8' height='81.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='76.2' y='107.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>3</text><text x='143.6' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'><tspan x='143.6' dy='0'>Nilai</tspan><tspan x='143.6' dy='12'>6 (k=4)</tspan></text><rect x='123.7' y='84.0' width='37.8' height='108.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='142.6' y='80.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>4</text><text x='210.0' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'><tspan x='210.0' dy='0'>Nilai 7</tspan><tspan x='210.0' dy='12'>(Median)</tspan></text><rect x='190.1' y='57.0' width='37.8' height='135.0' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='209.0' y='53.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>5</text><text x='276.4' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Nilai 8</text><rect x='256.5' y='30.0' width='37.8' height='162.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='275.4' y='26.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>6</text><text x='342.8' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Nilai 9</text><rect x='322.9' y='138.0' width='37.8' height='54.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='341.8' y='134.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>2</text></svg>",
+      "caption": "Distribusi frekuensi tunggal nilai ujian Matematika dengan k = 4 dan kelas median pada nilai 7.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Distribusi Frekuensi Nilai Ujian Matematika (N = 20)",
+        "items": [
+          {
+            "label": "Nilai 5",
+            "value": 3,
+            "highlight": false
+          },
+          {
+            "label": "Nilai 6 (k=4)",
+            "value": 4,
+            "highlight": false
+          },
+          {
+            "label": "Nilai 7 (Median)",
+            "value": 5,
+            "highlight": true
+          },
+          {
+            "label": "Nilai 8",
+            "value": 6,
+            "highlight": false
+          },
+          {
+            "label": "Nilai 9",
+            "value": 2,
+            "highlight": false
+          }
+        ]
+      }
+    },
+    "z3_s1": {
+      "slot_id": "z3_s1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='190' y='9' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'><tspan x='190' dy='0'>Posisi Empat Bilangan Bulat Positif</tspan><tspan x='190' dy='13'>Terurut (Median = 7, Mean = 8)</tspan></text><line x1='56.8' y1='130.6' x2='323.2' y2='130.6' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='142.6' x2='353' y2='142.6' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='138.6' x2='42.0' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>0</text><line x1='71.6' y1='138.6' x2='71.6' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='71.6' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>2</text><line x1='101.2' y1='138.6' x2='101.2' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='101.2' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>4</text><line x1='130.8' y1='138.6' x2='130.8' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='130.8' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>6</text><line x1='160.4' y1='138.6' x2='160.4' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='160.4' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>8</text><line x1='190.0' y1='138.6' x2='190.0' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='190.0' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>10</text><line x1='219.6' y1='138.6' x2='219.6' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='219.6' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>12</text><line x1='249.2' y1='138.6' x2='249.2' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='249.2' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>14</text><line x1='278.8' y1='138.6' x2='278.8' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='278.8' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>16</text><line x1='308.4' y1='138.6' x2='308.4' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='308.4' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>18</text><line x1='338.0' y1='138.6' x2='338.0' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='338.0' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>20</text><text x='71.6' y='118.6' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>a</text><text x='116.0' y='118.6' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>b</text><text x='175.2' y='118.6' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>c</text><text x='278.8' y='118.6' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>d</text><circle cx='145.6' cy='142.6' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='145.6' y='124.6' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Median = 7</text><circle cx='160.4' cy='142.6' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='160.4' y='124.6' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Mean = 8</text></svg>",
+      "caption": "Ilustrasi posisi relatif empat bilangan bulat terurut a <= b <= c <= d dengan garis median di 7 dan rata-rata 8.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Posisi Empat Bilangan Bulat Positif Terurut (Median = 7, Mean = 8)",
+        "x_range": [
+          0,
+          20
+        ],
+        "boundary_points": [
+          {
+            "value": 7,
+            "closed": false,
+            "label": "Median = 7"
+          },
+          {
+            "value": 8,
+            "closed": false,
+            "label": "Mean = 8"
+          }
+        ],
+        "shading": [
+          {
+            "from": 1,
+            "to": 19,
+            "type": "interval"
+          }
+        ],
+        "signs": [
+          {
+            "x": 2,
+            "sign": "a"
+          },
+          {
+            "x": 5,
+            "sign": "b"
+          },
+          {
+            "x": 9,
+            "sign": "c"
+          },
+          {
+            "x": 16,
+            "sign": "d"
+          }
+        ]
+      }
+    }
+  },
+  "total_slots": 2
+}

@@ -1,0 +1,121 @@
+{
+  "kode_subbab": "pbm-03-02",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Kaidah & Jenis Konjungsi Antarkalimat (EYD V)",
+    "subjudul_ringkas": "Panduan sistematis fungsi, tanda baca, dan jebakan sintaksis konjungsi antarkalimat untuk soal PBM UTBK-SNBT.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "1. Aturan Tanda Baca & Konjungsi Pertentangan",
+        "ringkasan_kelompok": "Kaidah penulisan koma wajib serta ragam konjungsi penanda kontras gagasan.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Wajib Tanda Koma di Belakang Konjungsi",
+            "penjelasan_singkat": "Semua konjungsi antarkalimat di awal kalimat wajib diikuti tanda koma untuk memisahkan unsur penghubung dari induk kalimat.",
+            "contoh_penerapan": "Cuaca pagi ini sangat cerah. **Meskipun demikian,** panitia tetap menyiapkan tenda cadangan di lapangan.",
+            "jebakan_atau_catatan": "Salah: *Meskipun demikian panitia tetap menyiapkan tenda.* Tanpa koma, kalimat melanggar kaidah EYD V."
+          },
+          {
+            "judul_poin": "Pertentangan Langsung (Namun & Akan tetapi)",
+            "penjelasan_singkat": "Menyatakan pertentangan langsung terhadap gagasan pada kalimat sebelumnya tanpa mengubah fakta awal.",
+            "contoh_penerapan": "Harga bahan baku naik tajam. **Namun,** produsen tetap mempertahankan harga jual produk di pasaran.",
+            "jebakan_atau_catatan": "Jebakan: Menggunakan *Tetapi,* di awal kalimat. Kata *tetapi* adalah konjungsi intrakalimat, bukan antarkalimat."
+          },
+          {
+            "judul_poin": "Pertentangan Konsesif (Biarpun demikian & Sungguhpun begitu)",
+            "penjelasan_singkat": "Menunjukkan keadaan yang tetap berlangsung meskipun bertolak belakang dengan syarat atau situasi kalimat sebelumnya.",
+            "contoh_penerapan": "Akses menuju desa terpencil itu rusak parah. **Biarpun demikian,** relawan pendidikan tetap datang mengajar setiap pekan.",
+            "jebakan_atau_catatan": "Catatan: Jangan tertukar dengan *biarpun* (intrakalimat) yang menghubungkan anak kalimat dengan induk kalimat dalam satu kalimat."
+          },
+          {
+            "judul_poin": "Pertentangan Keadaan Sebaliknya (Sebaliknya)",
+            "penjelasan_singkat": "Menyatakan situasi, arah, atau hasil yang berkebalikan secara diametral dari pernyataan kalimat pertama.",
+            "contoh_penerapan": "Sektor pariwisata mengalami penurunan drastis tahun lalu. **Sebaliknya,** sektor logistik justru mencatat rekor pertumbuhan tertinggi.",
+            "jebakan_atau_catatan": "Salah jika digunakan untuk hubungan sebab-akibat. Pastikan kedua subjek atau kondisi benar-benar berlawanan arah."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "2. Konjungsi Konsekuensi, Kausalitas, & Urutan Waktu",
+        "ringkasan_kelompok": "Penghubung antarkalimat yang menandai simpulan logis, dampak langsung, serta kronologi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Simpulan Kausalitas (Oleh sebab itu & Oleh karena itu)",
+            "penjelasan_singkat": "Menghubungkan premis atau alasan di kalimat pertama dengan simpulan logis di kalimat kedua.",
+            "contoh_penerapan": "Tingkat literasi digital masyarakat masih rendah. **Oleh karena itu,** pemerintah menggencarkan sosialisasi keamanan siber di sekolah.",
+            "jebakan_atau_catatan": "Jebakan: Bentuk *Oleh karena itu* dan *Oleh sebab itu* baku; bentuk *Oleh karenanya* tidak baku dalam ragam tulis."
+          },
+          {
+            "judul_poin": "Penegasan Simpulan Akhir (Dengan demikian)",
+            "penjelasan_singkat": "Menandai konsekuensi pasti atau rangkuman deduktif yang ditarik langsung dari pernyataan sebelumnya.",
+            "contoh_penerapan": "Seluruh syarat administratif telah dipenuhi peserta. **Dengan demikian,** kandidat berhak mengikuti tahap wawancara akhir besok.",
+            "jebakan_atau_catatan": "Salah: *Sehingga, kandidat berhak mengikuti wawancara.* Kata *sehingga* wajib berada di tengah kalimat, bukan di awal."
+          },
+          {
+            "judul_poin": "Dampak atau Efek Langsung (Akibatnya)",
+            "penjelasan_singkat": "Menunjukkan hasil nyata atau dampak langsung yang timbul dari peristiwa pada kalimat sebelumnya.",
+            "contoh_penerapan": "Saluran drainase kota tersumbat tumpukan sampah plastik. **Akibatnya,** genangan air setinggi setengah meter merendam jalan utama.",
+            "jebakan_atau_catatan": "Catatan: *Akibatnya,* fokus pada dampak konkret peristiwa, sedangkan *Dengan demikian,* lebih menekankan simpulan logis argumen."
+          },
+          {
+            "judul_poin": "Urutan Peristiwa Kronologis (Setelah itu & Kemudian)",
+            "penjelasan_singkat": "Menghubungkan dua peristiwa berbeda yang terjadi secara berurutan menurut garis waktu.",
+            "contoh_penerapan": "Tim peneliti mengumpulkan sampel air sungai selama tiga hari. **Setelah itu,** sampel diuji di laboratorium kimia.",
+            "jebakan_atau_catatan": "Salah: *Lalu, sampel diuji di laboratorium.* Kata *lalu* tidak berfungsi sebagai konjungsi antarkalimat baku di awal kalimat."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "3. Konjungsi Penambahan, Penguatan, & Pembenaran",
+        "ringkasan_kelompok": "Penanda tambahan informasi setara, penegasan intensitas, serta pengungkapan fakta sebenarnya.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penambahan Informasi Setara (Selain itu & Di samping itu)",
+            "penjelasan_singkat": "Menambahkan argumen, syarat, atau fakta baru yang sejalan dengan gagasan kalimat sebelumnya.",
+            "contoh_penerapan": "Aplikasi ini mampu menerjemahkan teks secara instan. **Selain itu,** fitur pengenalan suaranya bekerja tanpa koneksi internet.",
+            "jebakan_atau_catatan": "Salah: *Disamping itu,* ditulis serangkai. Preposisi *di* penunjuk tempat/posisi wajib ditulis terpisah menjadi *Di samping itu,*."
+          },
+          {
+            "judul_poin": "Penguatan & Pendalaman Gagasan (Bahkan & Lebih lanjut)",
+            "penjelasan_singkat": "Menguatkan pernyataan sebelumnya menuju tingkat yang lebih ekstrem atau rincian yang lebih mendalam.",
+            "contoh_penerapan": "Dampak kekeringan meluas ke berbagai wilayah pertanian. **Bahkan,** beberapa waduk utama mulai menyusut hingga titik kritis.",
+            "jebakan_atau_catatan": "Catatan: Pastikan kalimat kedua memiliki bobot intensitas lebih tinggi daripada kalimat pertama saat menggunakan *Bahkan,*."
+          },
+          {
+            "judul_poin": "Pengungkapan Fakta Sebenarnya (Sebenarnya & Sesungguhnya)",
+            "penjelasan_singkat": "Mengoreksi anggapan awal dengan menghadirkan realitas atau kebenaran yang mendasari kalimat sebelumnya.",
+            "contoh_penerapan": "Proyek pembangunan jembatan itu tampak berjalan lambat. **Sebenarnya,** kontraktor sedang memfokuskan pengerjaan pada fondasi bawah tanah.",
+            "jebakan_atau_catatan": "Catatan: Berfungsi meluruskan persepsi kalimat pertama, berbeda dengan *Namun,* yang langsung mempertentangkan dua fakta sejajar."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "4. Jebakan Sintaksis & Kesalahan Umum UTBK",
+        "ringkasan_kelompok": "Pola kesalahan fatal yang sering dijadikan pengecoh pada soal perbaikan kalimat.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Larangan Konjungsi Intrakalimat di Awal Kalimat",
+            "penjelasan_singkat": "Konjungsi intrakalimat seperti *sedangkan*, *sehingga*, *tetapi*, *melainkan*, dan *karena* haram diletakkan di awal kalimat.",
+            "contoh_penerapan": "Rina menyukai musik klasik. **Sebaliknya,** adiknya lebih gemar mendengarkan musik rok modern.",
+            "jebakan_atau_catatan": "Salah: *Sedangkan adiknya lebih gemar musik rok.* Ganti *sedangkan* dengan *Sebaliknya,* atau gabungkan menjadi satu kalimat."
+          },
+          {
+            "judul_poin": "Larangan Pemborosan Konjungsi Ganda (Pleonasme)",
+            "penjelasan_singkat": "Dilarang menggabungkan dua konjungsi bermakna sama secara berurutan di awal maupun di tengah kalimat.",
+            "contoh_penerapan": "Data penelitian belum lengkap. **Oleh karena itu,** tim menunda publikasi jurnal hingga bulan depan.",
+            "jebakan_atau_catatan": "Salah: *Oleh karena itu, maka tim menunda publikasi.* Gunakan salah satu saja agar kalimat efektif."
+          }
+        ]
+      }
+    ]
+  }
+}

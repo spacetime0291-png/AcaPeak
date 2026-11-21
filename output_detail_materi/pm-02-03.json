@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pm-02-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus & Sifat Laju Perubahan, Kecepatan, Debit, dan Kerja Bersama",
+    "subjudul_ringkas": "Panduan sistematis rumus laju, gerak relatif, debit wadah, produktivitas kerja, serta interpretasi grafik kinematika UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Kinematika Gerak & Kecepatan Relatif",
+        "ringkasan_kelompok": "Rumus gerak berpapasan, susul-menyusul, kecepatan rata-rata, dan pengaruh arus sungai.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Gerak Berpapasan (Berangkat Bersamaan)",
+            "penjelasan_singkat": "Dua objek bergerak berlawanan arah serentak bertemu saat $t_{\\text{papas}} = \\frac{s_{\\text{total}}}{v_1 + v_2}$ dengan satuan kecepatan dan jarak setara.",
+            "contoh_penerapan": "Jarak $150\\text{ km}$ ditempuh dari arah berlawanan dengan $v_1 = 40\\text{ km/jam}$ dan $v_2 = 60\\text{ km/jam}$ bertemu dalam **$t = \\frac{150}{40+60} = 1,5\\text{ jam}$**.",
+            "jebakan_atau_catatan": "Samakan satuan dahulu (misal $\\text{m/s}$ ke $\\text{km/jam}$) sebelum menjumlahkan kecepatan agar waktu pertemuan tidak meleset."
+          },
+          {
+            "judul_poin": "Gerak Berpapasan (Berangkat Berbeda Waktu)",
+            "penjelasan_singkat": "Kurangi jarak total dengan jarak tempuh pihak pertama sebelum pihak kedua berangkat: $t_{\\text{papas}} = \\frac{s_{\\text{total}} - v_1 \\cdot \\Delta t}{v_1 + v_2}$.",
+            "contoh_penerapan": "Jarak $200\\text{ km}$, A ($50\\text{ km/jam}$) berangkat $1\\text{ jam}$ lebih awal dari B ($75\\text{ km/jam}$), berpapasan setelah B jalan **$t = \\frac{200 - 50}{50+75} = 1,2\\text{ jam}$**.",
+            "jebakan_atau_catatan": "Perhatikan patokan jam tanya soal: apakah dihitung sejak orang pertama berangkat atau sejak orang kedua mulai berjalan."
+          },
+          {
+            "judul_poin": "Gerak Susul-Menyusul (Lintasan Lurus & Melingkar)",
+            "penjelasan_singkat": "Objek lebih cepat menyusul objek searah saat $t_{\\text{susul}} = \\frac{\\Delta s}{v_{\\text{cepat}} - v_{\\text{lambat}}}$, dengan $\\Delta s = n \\times K$ pada lintasan melingkar.",
+            "contoh_penerapan": "Pelari A ($6\\text{ m/s}$) dan B ($4\\text{ m/s}$) start bersama di trek melingkar $400\\text{ m}$, A menyalip B pada **$t = \\frac{400}{6 - 4} = 200\\text{ detik}$**.",
+            "jebakan_atau_catatan": "Pada lintasan melingkar, dua pelari searah bertemu kembali tiap kali selisih jarak tempuh mencapai kelipatan keliling lingkaran."
+          },
+          {
+            "judul_poin": "Kecepatan Rata-Rata Perjalanan Multi-Segmen",
+            "penjelasan_singkat": "Kecepatan rata-rata wajib dihitung dari total jarak dibagi total waktu tempuh: $\\bar{v} = \\frac{s_1 + s_2 + \\dots}{t_1 + t_2 + \\dots}$.",
+            "contoh_penerapan": "Pergi $60\\text{ km}$ dalam $1\\text{ jam}$ dan pulang lewat rute sama dalam $2\\text{ jam}$, kecepatan rata-ratanya **$\\bar{v} = \\frac{60 + 60}{1 + 2} = 40\\text{ km/jam}$**.",
+            "jebakan_atau_catatan": "Jangan pernah menghitung rata-rata aritmetika $\\frac{v_1 + v_2}{2}$, kecuali durasi waktu tempuh pada setiap segmen persis sama."
+          },
+          {
+            "judul_poin": "Gerak Perahu Searah dan Melawan Arus",
+            "penjelasan_singkat": "Kecepatan resultan perahu menjadi $v_{\\text{searah}} = v_p + v_a$ saat searah arus dan $v_{\\text{lawan}} = v_p - v_a$ saat melawan arus ($v_p > v_a$).",
+            "contoh_penerapan": "Perahu berkecepatan $12\\text{ km/jam}$ di air tenang melawan arus $3\\text{ km/jam}$ sejauh $27\\text{ km}$ memerlukan waktu **$t = \\frac{27}{12 - 3} = 3\\text{ jam}$**.",
+            "jebakan_atau_catatan": "Jika benda hanyut tanpa mesin (misal pelampung), kecepatannya sama dengan kecepatan arus sungai ($v_p = 0$)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Debit Fluida & Laju Pengisian Wadah",
+        "ringkasan_kelompok": "Perhitungan volume, debit bersih keran bocor, dan laju kenaikan tinggi air.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Hubungan Debit, Volume Wadah, dan Waktu",
+            "penjelasan_singkat": "Debit adalah volume fluida per satuan waktu ($Q = \\frac{V}{t}$), dengan $V = A_{\\text{alas}} \\times h$ untuk prisma atau tabung.",
+            "contoh_penerapan": "Tabung bervolume $2.400\\text{ liter}$ diisi keran berdebit $40\\text{ liter/menit}$ akan penuh dalam waktu **$t = \\frac{2.400}{40} = 60\\text{ menit}$**.",
+            "jebakan_atau_catatan": "Ingat konversi volume: $1\\text{ m}^3 = 1.000\\text{ liter}$ dan $1\\text{ dm}^3 = 1\\text{ liter}$ agar satuan pembagian konsisten."
+          },
+          {
+            "judul_poin": "Debit Bersih (Keran Masuk dan Kebocoran)",
+            "penjelasan_singkat": "Laju pengisian efektif adalah selisih debit masuk dan keluar ($Q_{\\text{net}} = \\sum Q_{\\text{masuk}} - \\sum Q_{\\text{keluar}}$), dengan syarat $Q_{\\text{net}} > 0$.",
+            "contoh_penerapan": "Keran mengisi penuh dalam $4\\text{ jam}$ dan bocor menguras dalam $12\\text{ jam}$, waktu penuh bersama adalah **$\\frac{1}{t} = \\frac{1}{4} - \\frac{1}{12} \\Rightarrow t = 6\\text{ jam}$**.",
+            "jebakan_atau_catatan": "Cek posisi lubang bocor: jika lubang berada di tengah tinggi tangki, kebocoran baru aktif setelah air melewati ketinggian lubang."
+          },
+          {
+            "judul_poin": "Laju Perubahan Ketinggian Permukaan Air",
+            "penjelasan_singkat": "Pada wadah berdinding tegak (prisma/tabung), laju kenaikan tinggi air konstan sebesar $v_h = \\frac{\\Delta h}{\\Delta t} = \\frac{Q_{\\text{net}}}{A_{\\text{alas}}}$.",
+            "contoh_penerapan": "Bak luas alas $2\\text{ m}^2$ diisi debit bersih $0,4\\text{ m}^3\\text{/menit}$, tinggi permukaan air naik sebesar **$v_h = \\frac{0,4}{2} = 0,2\\text{ m/menit}$**.",
+            "jebakan_atau_catatan": "Jika soal menanyakan waktu mencapai ketinggian tertentu $h_{\\text{target}}$, cukup gunakan $t = \\frac{A_{\\text{alas}} \\times h_{\\text{target}}}{Q_{\\text{net}}}$ tanpa menghitung volume penuh."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Produktivitas Kerja Bersama & Analisis Grafik",
+        "ringkasan_kelompok": "Pemodelan efisiensi pekerja/mesin, jadwal shift, serta pembacaan grafik $s\\text{-}t$ dan $v\\text{-}t$.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Waktu Kerja Bersama dengan Laju Konstan",
+            "penjelasan_singkat": "Laju kerja total adalah jumlah laju individu: $\\frac{1}{t_{\\text{gab}}} = \\frac{1}{t_1} + \\frac{1}{t_2} + \\dots$, sehingga $t_{\\text{gab}} < \\min(t_1, t_2)$.",
+            "contoh_penerapan": "Mesin A selesai dalam $6\\text{ jam}$ dan mesin B dalam $3\\text{ jam}$, keduanya bekerja bersamaan selesai dalam **$\\frac{1}{t_{\\text{gab}}} = \\frac{1}{6} + \\frac{1}{3} \\Rightarrow t_{\\text{gab}} = 2\\text{ jam}$**.",
+            "jebakan_atau_catatan": "Waktu gabungan tidak pernah merupakan rata-rata waktu individu dan pasti lebih singkat daripada waktu pekerja tercepat."
+          },
+          {
+            "judul_poin": "Kerja Bersama dengan Penjadwalan Shift",
+            "penjelasan_singkat": "Total pekerjaan utuh bernilai $1$: $\\frac{t_A}{T_A} + \\frac{t_B}{T_B} = 1$, dengan $t_i$ adalah durasi aktual pekerja $i$ bertugas.",
+            "contoh_penerapan": "A ($T_A = 10\\text{ hari}$) bekerja $4\\text{ hari}$ lalu dilanjutkan B ($T_B = 15\\text{ hari}$), sisa waktu B adalah **$\\frac{4}{10} + \\frac{t_B}{15} = 1 \\Rightarrow t_B = 9\\text{ hari}$**.",
+            "jebakan_atau_catatan": "Bedakan antara jumlah pekerja dan waktu kerja: jika kapasitas pekerja identik, gunakan perbandingan berbalik nilai ($n_1 \\cdot t_1 = n_2 \\cdot t_2$)."
+          },
+          {
+            "judul_poin": "Interpretasi Grafik Jarak-Waktu ($s\\text{-}t$)",
+            "penjelasan_singkat": "Kemiringan (gradien) garis grafik $s\\text{-}t$ menunjukkan kecepatan ($v = \\frac{\\Delta s}{\\Delta t}$); segmen horizontal berarti objek berhenti ($v = 0$).",
+            "contoh_penerapan": "Garis naik dari $(0, 10)$ ke $(4, 90)$ dalam satuan jam dan $\\text{km}$ menunjukkan kecepatan konstan sebesar **$v = \\frac{90 - 10}{4 - 0} = 20\\text{ km/jam}$**.",
+            "jebakan_atau_catatan": "Titik potong dua kurva pada grafik $s\\text{-}t$ menunjukkan waktu dan posisi saat kedua objek bertemu atau saling menyusul."
+          },
+          {
+            "judul_poin": "Menghitung Jarak dari Grafik Kecepatan-Waktu ($v\\text{-}t$)",
+            "penjelasan_singkat": "Jarak tempuh total sama dengan jumlah luas seluruh bangun datar (persegi panjang, segitiga, trapesium) di bawah kurva $v\\text{-}t$.",
+            "contoh_penerapan": "Grafik $v\\text{-}t$ membentuk trapesium dengan sisi sejajar $v_1 = 10\\text{ m/s}$, $v_2 = 20\\text{ m/s}$, dan waktu $6\\text{ s}$ menempuh jarak **$s = \\frac{10+20}{2} \\times 6 = 90\\text{ m}$**.",
+            "jebakan_atau_catatan": "Periksa satuan sumbu waktu (menit vs detik) sebelum menghitung luas trapesium atau segitiga agar hasil jarak tidak salah skala."
+          }
+        ]
+      }
+    ]
+  }
+}

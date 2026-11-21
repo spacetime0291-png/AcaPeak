@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "lbi-02-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Taksonomi Penanda Fakta, Opini, Bias, dan Validitas Argumen",
+    "subjudul_ringkas": "Katalog pola sinyal teks untuk menguji objektivitas fakta, kredibilitas sumber, kekuatan bukti, dan cacat logika bacaan.",
+    "mode_tampilan": "katalog_sinyal_pola",
+    "label_kolom": {
+      "kolom_1": "Kategori / Penanda Teks",
+      "kolom_2": "Contoh Potongan / Sinyal",
+      "kolom_3": "Cara Bedakan / Jebakan"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "1. Penanda Fakta Empiris vs Opini Subjektif",
+        "ringkasan_kelompok": "Pola linguistik pemisah data objektif terverifikasi dari penilaian subjektif penulis.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Data Kuantitatif dan Peristiwa Terverifikasi",
+            "penjelasan_singkat": "Pernyataan memuat angka pasti, waktu, lokasi, atau hasil pengukuran resmi yang kebenarannya dapat dibuktikan secara objektif.",
+            "contoh_penerapan": "Badan Pusat Statistik mencatat tingkat pengangguran terbuka **turun menjadi $5,32\\%$ pada Februari 2024**.",
+            "jebakan_atau_catatan": "Jebakan: Angka perkiraan dengan kata **sekitar** atau **diperkirakan** mengubah kalimat menjadi prediksi/opini, bukan fakta mutlak."
+          },
+          {
+            "judul_poin": "Kutipan Opini Narasumber sebagai Fakta Peristiwa",
+            "penjelasan_singkat": "Tindakan narasumber mengucapkan pernyataan adalah fakta empiris, meskipun isi kutipannya berupa penilaian atau prediksi subjektif.",
+            "contoh_penerapan": "**Menteri Keuangan menyatakan bahwa** kebijakan subsidi energi saat ini belum tepat sasaran.",
+            "jebakan_atau_catatan": "Bedakan: Kalimat utuhnya fakta (ia benar-benar berkata demikian), tetapi klaim **belum tepat sasaran** tetap opini narasumber."
+          },
+          {
+            "judul_poin": "Adjektiva Evaluatif dan Diksi Emotif (Opini)",
+            "penjelasan_singkat": "Penggunaan kata sifat bernilai rasa yang bergantung pada sudut pandang penilai dan tidak memiliki tolok ukur baku.",
+            "contoh_penerapan": "Langkah pemerintah merevitalisasi pasar tradisional tersebut tergolong **sangat lamban dan mengecewakan** pedagang.",
+            "jebakan_atau_catatan": "Catatan: Kata **lamban** tidak memiliki standar detik/hari yang disepakati semua pihak sehingga pasti merupakan opini."
+          },
+          {
+            "judul_poin": "Penanda Modalitas, Keharusan, dan Prediksi",
+            "penjelasan_singkat": "Kata kerja bantu atau keterangan yang menyatakan keharusan, kemungkinan, harapan, atau peristiwa masa depan yang belum terjadi.",
+            "contoh_penerapan": "Pemerintah daerah **seharusnya segera memprioritaskan** pembangunan transportasi massal agar kemacetan **dapat terurai**.",
+            "jebakan_atau_catatan": "Sinyal wajib hafal: **harus, perlu, sebaiknya, mungkin, diprediksi, berpotensi, akan** selalu menandai opini atau proyeksi."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "2. Evaluasi Kecukupan Bukti dan Metodologi Riset",
+        "ringkasan_kelompok": "Parameter menguji kekuatan sampel penelitian dan relevansi bukti terhadap klaim utama.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Bias Seleksi dan Ukuran Sampel Penelitian",
+            "penjelasan_singkat": "Kelemahan metodologi akibat jumlah responden terlalu kecil atau teknik pengambilan sampel tidak mewakili populasi sasaran.",
+            "contoh_penerapan": "Survei menyimpulkan $80\\%$ pelajar menyukai pembelajaran daring **berdasarkan wawancara terhadap 15 siswa di satu sekolah**.",
+            "jebakan_atau_catatan": "Cara uji: Bandingkan subjek dalam simpulan (**pelajar** secara umum) dengan cakupan sampel nyata (**15 siswa satu sekolah**)."
+          },
+          {
+            "judul_poin": "Bukti Korelasional untuk Klaim Kausalitas",
+            "penjelasan_singkat": "Data hanya membuktikan dua fenomena naik-turun bersamaan, tetapi penulis menyimpulkan fenomena pertama menyebabkan fenomena kedua.",
+            "contoh_penerapan": "Data menunjukkan konsumsi es krim dan kasus tenggelam meningkat bersamaan, **sehingga es krim memicu risiko tenggelam**.",
+            "jebakan_atau_catatan": "Jebakan: Hubungan korelasi ($A \\leftrightarrow B$) tidak otomatis membuktikan sebab-akibat ($A \\rightarrow B$) tanpa kontrol variabel pengganggu."
+          },
+          {
+            "judul_poin": "Ketimpangan Cakupan Klaim vs Data Pendukung",
+            "penjelasan_singkat": "Klaim utama bersifat mutlak atau menyeluruh, sedangkan bukti yang disajikan hanya berupa kasus kasuistik atau data parsial.",
+            "contoh_penerapan": "Penulis mengklaim **seluruh sektor pertanian nasional gagal panen**, padahal data hanya memuat **penurunan produksi padi di dua kabupaten**.",
+            "jebakan_atau_catatan": "Sinyal lemah: Klaim memakai kuantor mutlak (**semua, pasti, selalu**), tetapi buktinya terbatas ruang, waktu, atau komoditas."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "3. Deteksi Bias Sumber, Asumsi, dan Cacat Logika",
+        "ringkasan_kelompok": "Pola mengidentifikasi konflik kepentingan narasumber, premis tersembunyi, dan sesat pikir tajuk rencana.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Konflik Kepentingan dan Relevansi Kepakaran Sumber",
+            "penjelasan_singkat": "Kredibilitas sumber melemah jika ia memiliki keuntungan finansial/politis dari klaimnya atau berbicara di luar bidang keahliannya.",
+            "contoh_penerapan": "**Direktur perusahaan tambang batu bara menyatakan** bahwa energi fosil jauh lebih ramah lingkungan daripada panel surya.",
+            "jebakan_atau_catatan": "Cara nilai: Periksa jabatan atau afiliasi narasumber; sumber kredibel harus independen dan kompeten di bidang tersebut."
+          },
+          {
+            "judul_poin": "Diksi Bermuatan Emosi (Loaded Language) sebagai Bias",
+            "penjelasan_singkat": "Penulis memilih kosakata berkonotasi positif atau negatif ekstrem untuk memengaruhi emosi pembaca tanpa menambah bukti objektif.",
+            "contoh_penerapan": "Kelompok penolak proyek disebut penulis sebagai **gerombolan penghambat kemajuan**, bukan warga terdampak lingkungan.",
+            "jebakan_atau_catatan": "Sinyal bias: Penggunaan label peyoratif (**oknum, gerombolan, rezim**) atau hiperbolis menunjukkan penulis tidak bersikap netral."
+          },
+          {
+            "judul_poin": "Asumsi Tersembunyi dalam Argumen Tajuk Rencana",
+            "penjelasan_singkat": "Premis dasar yang tidak ditulis eksplisit, tetapi wajib dianggap benar agar alasan penulis dapat melahirkan kesimpulannya.",
+            "contoh_penerapan": "Harga tiket museum dinaikkan agar pengunjung lebih menghargai sejarah. **Asumsi: Harga mahal otomatis meningkatkan apresiasi budaya.**",
+            "jebakan_atau_catatan": "Cara temukan: Cari celah logika antara bukti ($P$) dan simpulan ($Q$); jembatan penghubung keduanya adalah asumsi penulis."
+          },
+          {
+            "judul_poin": "Sesat Pikir Penyederhanaan Berlebihan (Oversimplification)",
+            "penjelasan_singkat": "Menyimpulkan masalah sosial atau ekonomi yang multifaktor disebabkan oleh satu faktor tunggal saja.",
+            "contoh_penerapan": "Menurunnya minat baca remaja **semata-mata disebabkan oleh** hadirnya media sosial video pendek.",
+            "jebakan_atau_catatan": "Sinyal sesat pikir: Frasa **satu-satunya penyebab, semata-mata karena, hanya akibat** yang mengabaikan faktor struktural lain."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pu-02-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Kaidah Lengkap Logika Proposisi dalam Penalaran Deduktif",
+    "subjudul_ringkas": "Panduan nilai kebenaran operator logika, syarat verbal, ekuivalensi, dan negasi untuk analisis premis UTBK-SNBT.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Nilai Kebenaran Operator Dasar",
+        "ringkasan_kelompok": "Menentukan kebenaran pernyataan majemuk dari fakta tunggal pada premis.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Evaluasi Konjungsi ($P \\land Q$)",
+            "penjelasan_singkat": "Pernyataan dengan kata hubung dan, serta, atau tetapi bernilai benar hanya jika kedua unsurnya faktual.",
+            "contoh_penerapan": "Premis: Rina lolos SNBP (B) dan diterima kedokteran (B). Maka **Rina lolos SNBP serta diterima kedokteran** bernilai benar.",
+            "jebakan_atau_catatan": "Salah jika menganggap kalimat benar saat hanya satu fakta terpenuhi, misalnya **Rina lolos SNBP tetapi gagal kedokteran** (B dan S = S)."
+          },
+          {
+            "judul_poin": "Disjungsi Inklusif ($P \\lor Q$) dalam Pilihan",
+            "penjelasan_singkat": "Pernyataan dengan kata atau bernilai benar jika minimal satu unsur benar, termasuk saat keduanya terpenuhi.",
+            "contoh_penerapan": "Syarat kerja: mahir Excel **atau** Python. Budi menguasai keduanya, sehingga ia **memenuhi syarat kerja** ($B \\lor B = B$).",
+            "jebakan_atau_catatan": "Jebakan mengartikan kata atau secara eksklusif sehingga menolak kandidat yang memenuhi kedua syarat sekaligus."
+          },
+          {
+            "judul_poin": "Evaluasi Implikasi ($P \\rightarrow Q$)",
+            "penjelasan_singkat": "Hubungan jika P, maka Q hanya bernilai salah ketika sebab P benar tetapi akibat Q salah.",
+            "contoh_penerapan": "Aturan: jika hujan, jalan basah. Faktanya **tidak hujan dan jalan tetap basah**, aturan tersebut tetap **bernilai benar** ($S \\rightarrow B = B$).",
+            "jebakan_atau_catatan": "Peserta sering menyalahkan aturan saat sebab P tidak terjadi ($S \\rightarrow S$ atau $S \\rightarrow B$), padahal implikasi tetap benar."
+          },
+          {
+            "judul_poin": "Evaluasi Biimplikasi ($P \\leftrightarrow Q$)",
+            "penjelasan_singkat": "Pernyataan jika dan hanya jika bernilai benar apabila kedua unsur memiliki nilai kebenaran yang sama.",
+            "contoh_penerapan": "Kaidah: lulus jika dan hanya jika nilai $\\ge 75$. Dito mendapat **60 dan tidak lulus** ($S \\leftrightarrow S$), kaidah **bernilai benar**.",
+            "jebakan_atau_catatan": "Jebakan menganggap kedua unsur yang sama-sama salah ($S \\leftrightarrow S$) membuat pernyataan salah, padahal biimplikasi justru terpenuhi."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Syarat Cukup, Syarat Perlu, & Kalimat Majemuk",
+        "ringkasan_kelompok": "Mengubah teks aturan hukum dan kriteria verbal menjadi struktur logika formal.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Syarat Cukup (Sufficient Condition)",
+            "penjelasan_singkat": "Pada pola jika P, maka Q, unsur P adalah syarat cukup yang otomatis menjamin terjadinya Q.",
+            "contoh_penerapan": "Aturan: **jika membawa kartu peserta**, siswa boleh masuk ruang ujian. Membawa kartu ($P$) adalah syarat cukup untuk masuk ($Q$).",
+            "jebakan_atau_catatan": "Salah jika membalik arah menjadi **jika boleh masuk, pasti membawa kartu** ($Q \\rightarrow P$), karena syarat cukup bukan syarat tunggal."
+          },
+          {
+            "judul_poin": "Syarat Perlu (Necessary Condition)",
+            "penjelasan_singkat": "Pada implikasi $P \\rightarrow Q$, unsur Q merupakan syarat perlu yang wajib dipenuhi agar P dapat terjadi.",
+            "contoh_penerapan": "Teks: warga dapat memilih **hanya jika berusia minimal 17 tahun**. Usia 17 tahun ($Q$) adalah syarat perlu memilih ($P$).",
+            "jebakan_atau_catatan": "Jebakan menulis **jika usia 17 tahun, pasti memilih** ($Q \\rightarrow P$); bentuk baku frasa P hanya jika Q adalah $P \\rightarrow Q$."
+          },
+          {
+            "judul_poin": "Syarat Dua Arah Verbal ($P \\leftrightarrow Q$)",
+            "penjelasan_singkat": "Frasa syarat perlu dan cukup atau jika dan hanya jika mewajibkan kedua kondisi saling mengunci dua arah.",
+            "contoh_penerapan": "Kriteria: segitiga sama sisi **jika dan hanya jika** ketiga sudutnya $60^\\circ$. Terpenuhinya satu sifat otomatis membuktikan sifat lainnya.",
+            "jebakan_atau_catatan": "Salah jika memperlakukan biimplikasi hanya satu arah sehingga mengabaikan implikasi baliknya ($Q \\rightarrow P$) saat menarik kesimpulan."
+          },
+          {
+            "judul_poin": "Syarat Majemuk Konjungtif ($(P \\land Q) \\rightarrow R$)",
+            "penjelasan_singkat": "Jika sebab berbentuk konjungsi $P \\land Q$, akibat R baru wajib terjadi apabila kedua syarat terpenuhi.",
+            "contoh_penerapan": "Jika **lulus tes tulis dan wawancara** ($P \\land Q$), pelamar diterima ($R$). Andi hanya lulus tes tulis, maka statusnya **belum tentu diterima**.",
+            "jebakan_atau_catatan": "Jebakan menyimpulkan pelamar langsung diterima hanya karena salah satu syarat konjungsi ($P$ saja) sudah terpenuhi."
+          },
+          {
+            "judul_poin": "Syarat dengan Akibat Disjungtif ($P \\rightarrow (Q \\lor R)$)",
+            "penjelasan_singkat": "Jika sebab P terpenuhi pada pola $P \\rightarrow (Q \\lor R)$, minimal satu pilihan akibat wajib terjadi.",
+            "contoh_penerapan": "Jika **terlambat**, siswa **didenda atau menyapu kelas**. Siswa terlambat dan tidak didenda, maka ia **pasti menyapu kelas**.",
+            "jebakan_atau_catatan": "Salah jika menyimpulkan siswa harus menjalani kedua sanksi sekaligus, padahal kata atau cukup dipenuhi salah satu akibat."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Ekuivalensi & Negasi Pernyataan Majemuk",
+        "ringkasan_kelompok": "Mengubah bentuk pernyataan tanpa mengubah nilai kebenaran serta merumuskan ingkaran yang sah.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Ekuivalensi Implikasi ke Disjungsi ($P \\rightarrow Q \\equiv \\neg P \\lor Q$)",
+            "penjelasan_singkat": "Setiap pernyataan jika P, maka Q memiliki nilai kebenaran identik dengan bentuk disjungsi tidak P atau Q.",
+            "contoh_penerapan": "Pernyataan: jika rajin belajar, maka lulus. Bentuk ekuivalennya adalah **tidak rajin belajar atau lulus** ($\\neg P \\lor Q$).",
+            "jebakan_atau_catatan": "Bentuk salah yang sering dipilih adalah **rajin belajar atau tidak lulus** ($P \\lor \\neg Q$), yang justru membalik negasinya."
+          },
+          {
+            "judul_poin": "Hukum De Morgan pada Konjungsi & Disjungsi",
+            "penjelasan_singkat": "Ingkaran konjungsi $\\neg(P \\land Q)$ menjadi $\\neg P \\lor \\neg Q$, sedangkan ingkaran disjungsi $\\neg(P \\lor Q)$ menjadi $\\neg P \\land \\neg Q$.",
+            "contoh_penerapan": "Negasi dari *nilai matematika dan bahasa tinggi* adalah **nilai matematika tidak tinggi atau nilai bahasa tidak tinggi** ($\\neg P \\lor \\neg Q$).",
+            "jebakan_atau_catatan": "Kesalahan fatal menyebar negasi tanpa mengubah penghubung menjadi **nilai matematika tidak tinggi dan bahasa tidak tinggi** ($\\neg P \\land \\neg Q$)."
+          },
+          {
+            "judul_poin": "Negasi Implikasi ($\\neg(P \\rightarrow Q) \\equiv P \\land \\neg Q$)",
+            "penjelasan_singkat": "Ingkaran pernyataan jika P, maka Q berbentuk konjungsi P terjadi dan Q tidak terjadi tanpa kata jika.",
+            "contoh_penerapan": "Ingkaran dari *jika harga naik, permintaan turun* adalah **harga naik dan permintaan tidak turun** ($P \\land \\neg Q$).",
+            "jebakan_atau_catatan": "Jebakan paling umum adalah menulis **jika harga naik, maka permintaan tidak turun** ($P \\rightarrow \\neg Q$), yang bukan ingkaran logis."
+          }
+        ]
+      }
+    ]
+  }
+}

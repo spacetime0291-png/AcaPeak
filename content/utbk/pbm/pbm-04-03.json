@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam paragraf bertema mitigasi banjir kota, kalimat (2) membahas resapan air dan kalimat (4) membahas pompa penyedot. Kalimat (3) yang rumpang paling tepat diisi kalimat yang...",
@@ -23,7 +23,124 @@
       "Mengabaikan kesejajaran pola imbuhan (meN- vs di-) serta kesalahan tanda baca koma setelah konjungsi antarkalimat."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Kaidah Lengkap Melengkapi Rumpang Paragraf (EYD V & KBBI VI)",
+      "subjudul_ringkas": "Panduan kaidah koherensi wacana, struktur sintaksis, konjungsi, dan morfologi kata berimbuhan sesuai standar UTBK-SNBT.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Kepaduan Makna & Posisi Kalimat Rumpang",
+          "ringkasan_kelompok": "Menjaga koherensi gagasan utama dan celah logika pada posisi awal, tengah, serta akhir.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Kalimat Rumpang di Awal Paragraf (Pola Deduktif)",
+              "penjelasan_singkat": "Kalimat pembuka wajib memuat gagasan umum yang mencakup seluruh rincian kalimat penjelas berikutnya secara deduktif.",
+              "contoh_penerapan": "**Perubahan iklim ekstrem mengancam ketahanan pangan global** karena kekeringan menurunkan panen gandum dan banjir merusak sawah.",
+              "jebakan_atau_catatan": "Salah jika mengisi awal paragraf dengan rincian sempit seperti *Kekeringan di Afrika terjadi tahun lalu*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kalimat Rumpang di Tengah Paragraf (Jembatan Logika)",
+              "penjelasan_singkat": "Kalimat tengah berfungsi mengaitkan premis sebelumnya dengan kalimat sesudahnya melalui relasi sebab-akibat, pertentangan, atau perincian.",
+              "contoh_penerapan": "Hulu sungai diguyur hujan lebat berhari-hari, **akibatnya debit air bendungan meluap** hingga merendam ratusan rumah warga.",
+              "jebakan_atau_catatan": "Jebakan UTBK sering berupa kalimat bertema sama tetapi memutus alur logika $A \\rightarrow B \\rightarrow C$ antarkalimat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kalimat Rumpang di Akhir Paragraf (Pola Induktif)",
+              "penjelasan_singkat": "Kalimat penutup merangkum seluruh premis sebelumnya menjadi simpulan logis tanpa memunculkan topik atau variabel baru.",
+              "contoh_penerapan": "Karena ekspor nikel naik dan investasi tumbuh pesat, **kebijakan hilirisasi terbukti mampu mendongkrak perekonomian nasional**.",
+              "jebakan_atau_catatan": "Hindari opsi penutup yang memunculkan variabel, saran, atau data baru yang tidak dibahas pada premis sebelumnya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kohesi Leksikal dan Pengacuan Pronomina Antarkalimat",
+              "penjelasan_singkat": "Kalimat pengisi rumpang wajib menyambung referensi kata tunjuk, pronomina, atau repetisi istilah kunci dari kalimat sebelumnya.",
+              "contoh_penerapan": "Pemerintah merilis aplikasi pajak digital, dan **inovasi tersebut dirancang untuk memangkas antrean** wajib pajak di kantor pelayanan.",
+              "jebakan_atau_catatan": "Kalimat tanpa kata acuan (*tersebut*, *hal ini*, *mereka*) sering gagal mengikat kohesi dengan subjek kalimat sebelumnya.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Struktur Sintaksis & Konjungsi Frasa Rumpang",
+          "ringkasan_kelompok": "Melengkapi rumpang tingkat frasa atau klausa sesuai pola sintaksis baku dan fungsi konjungsi.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Kesejajaran Fungsi Sintaksis ($S-P-O-K$)",
+              "penjelasan_singkat": "Frasa pengisi rumpang wajib melengkapi fungsi kalimat yang hilang tanpa menimbulkan subjek ganda atau kalimat buntung.",
+              "contoh_penerapan": "Penelitian yang dilakukan di kawasan pesisir utara Jawa itu **berhasil mengidentifikasi** sepuluh spesies mangrove langka.",
+              "jebakan_atau_catatan": "Salah: *Penelitian yang dilakukan... itu **yang berhasil mengidentifikasi**...* karena penambahan *yang* menghilangkan predikat utama kalimat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Paralelisme Bentuk dalam Deretan Perincian Rumpang",
+              "penjelasan_singkat": "Unsur rumpang dalam deretan perincian setara harus memiliki kelas kata dan bentuk imbuhan yang sama.",
+              "contoh_penerapan": "Tahapan mitigasi bencana meliputi pemetaan zona rawan, pembangunan jalur evakuasi, dan **penyuluhan** masyarakat pesisir.",
+              "jebakan_atau_catatan": "Salah: *...pemetaan zona rawan, pembangunan jalur evakuasi, dan **menyuluh** masyarakat* karena mencampur nomina dan verba.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Konjungsi Antarkalimat vs. Konjungsi Intrakalimat",
+              "penjelasan_singkat": "Rumpang di awal kalimat wajib diisi konjungsi antarkalimat diikuti tanda koma, bukan konjungsi intrakalimat.",
+              "contoh_penerapan": "**Namun,** para peneliti tetap mampu menghasilkan paten teknologi tepat guna meskipun anggaran riset sangat terbatas.",
+              "jebakan_atau_catatan": "Salah: ***Sedangkan,** para peneliti...* atau ***Tetapi** para peneliti...* karena *sedangkan* dan *tetapi* merupakan konjungsi intrakalimat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Konjungsi Korelatif Berpasangan Tetap",
+              "penjelasan_singkat": "Rumpang yang memuat unsur konjungsi korelatif harus dilengkapi dengan pasangan tetapnya yang sejajar secara gramatikal.",
+              "contoh_penerapan": "Keberhasilan transisi energi tidak hanya bergantung pada teknologi canggih, **tetapi juga** membutuhkan kesiapan regulasi pemerintah.",
+              "jebakan_atau_catatan": "Salah: *tidak hanya ... **melainkan juga** ...* (pasangan *bukan hanya* adalah *melainkan juga*, sedangkan *tidak hanya* dengan *tetapi juga*).",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kaidah Morfologi & Kata Berimbuhan Rumpang",
+          "ringkasan_kelompok": "Menentukan bentukan kata berimbuhan sesuai aturan peluluhan fonem EYD V dan makna KBBI VI.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Peluluhan Fonem Awal $k, p, t, s$ pada Prefiks *meN-*/*peN-*",
+              "penjelasan_singkat": "Kata dasar berawalan $k, p, t, s$ yang diikuti huruf vokal wajib luluh saat mendapat imbuhan *meN-* atau *peN-*.",
+              "contoh_penerapan": "Tim auditor mulai **memesona** publik saat berhasil **mengubah** serta **memengaruhi** tata kelola anggaran menjadi lebih transparan.",
+              "jebakan_atau_catatan": "Bentuk tidak baku: *mempesona*, *merubah* (kata dasar *ubah*), dan *mempengaruhi* (kata dasar *pengaruh*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pengecualian Peluluhan pada Gugus Konsonan Awal",
+              "penjelasan_singkat": "Kata dasar berawalan gugus konsonan seperti $kl, kr, pr, tr, st$ tidak luluh saat diberi prefiks *meN-* atau *peN-*.",
+              "contoh_penerapan": "Pemerintah terus **memproduksi** vaksin lokal, **mengkritik** impor ilegal, dan **menstabilkan** pasokan pangan nasional.",
+              "jebakan_atau_catatan": "Bentuk salah: *memroduksi*, *mengritik*, atau *menyestabilkan*; bedakan pula *mengkaji* (memeriksa) dengan *mengaji* (membaca Al-Qur'an).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Ketepatan Konfiks *memper-kan* vs. *memper-i* pada Adjektiva",
+              "penjelasan_singkat": "Imbuhan *memper-i* bermakna menjadikan lebih pada adjektiva tertentu, bukan *memper-kan* yang menimbulkan bentuk tidak baku.",
+              "contoh_penerapan": "Kontraktor segera **memperbaiki** jalan rusak untuk **memperlancar** arus distribusi logistik antarkota menjelang hari raya.",
+              "jebakan_atau_catatan": "Bentuk salah dan mubazir: *memperbaikkan* atau *memperlancarkan* karena imbuhan *memper-* dan *-kan* tidak bergabung pada adjektiva tersebut.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penulisan Bentuk Terikat *pasca-*, *non-*, dan *sub-*",
+              "penjelasan_singkat": "Bentuk terikat ditulis serangkai dengan kata berikutnya, tetapi memakai tanda hubung sebelum kata berkapital atau singkatan.",
+              "contoh_penerapan": "Pemulihan ekonomi **pascabencana** memerlukan kerja sama lintas sektor, termasuk lembaga **non-APBN** dan instansi **subbagian** daerah.",
+              "jebakan_atau_catatan": "Bentuk salah: *pasca bencana* (dipisah) atau *nonAPBN* (tanpa tanda hubung sebelum huruf kapital).",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

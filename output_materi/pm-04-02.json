@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam final futsal sistem Best-of-Three, Tim Garuda memiliki peluang menang $0,6$ di setiap gim. Apakah peluang Tim Garuda menjadi juara turnamen tetap $0,6$ atau justru lebih besar?",
@@ -23,7 +23,117 @@
       "Melupakan faktor permutasi urutan menang-kalah (misalnya G-R-G dan R-G-G) pada seri pertandingan yang berakhir pada gim penentuan."
     ],
     "stimulus_utama_bersama": "Panitia Bazar & Turnamen Futsal Antar-SMA **Nusantara Cup** menetapkan ketentuan dan catatan data operasional berikut:\n\n1. **Mekanisme Roda Undian & Kupon:** Pengunjung dengan transaksi minimal Rp50.000 berhak memutar Roda Undian berisi 8 juring sama besar: 4 juring *Voucher Rp10.000*, 2 juring *Merchandise*, 1 juring *Jakpot Rp100.000*, dan 1 juring *Zonk*. Pengunjung yang berhenti pada juring *Zonk* mendapat 1 kesempatan mengambil 1 kupon dari kotak berisi 6 kupon merah (hadiah hiburan) dan 4 kupon putih (kosong).\n2. **Survei Kepuasan Pengunjung (200 Responden):**\n\n| Metode Pembayaran | Puas | Tidak Puas | Total |\n| :--- | :---: | :---: | :---: |\n| **QRIS** | 110 | 10 | 120 |\n| **Tunai** | 50 | 30 | 80 |\n| **Total** | **160** | **40** | **200** |\n\n3. **Final Futsal Best-of-Three:** Partai puncak mempertemukan **Tim Garuda** dan **Tim Rajawali** dengan sistem *Best-of-Three* (tim pertama meraih 2 kemenangan menjadi juara, tanpa hasil seri). Berdasarkan rekor pertemuan, peluang Tim Garuda menang pada setiap gim adalah $0,6$, sedangkan Tim Rajawali $0,4$, dan hasil tiap gim saling bebas.\n4. **Strategi Stok Tenant Minuman:** Harga modal Rp6.000/cup dan harga jual Rp15.000/cup (laba Rp9.000/cup terjual, rugi Rp6.000/cup sisa). Berdasarkan data cuaca, peluang hujan adalah $0,3$ dan peluang cerah adalah $0,7$. Pemilik *tenant* membandingkan dua opsi stok harian:\n   - **Strategi A (100 cup):** Saat cerah terjual 100 cup; saat hujan terjual 60 cup (40 cup sisa).\n   - **Strategi B (80 cup):** Saat cerah terjual 80 cup; saat hujan terjual 70 cup (10 cup sisa).",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Rumus Peluang Kejadian dan Pengambilan Keputusan Data",
+      "subjudul_ringkas": "Panduan lengkap rumus peluang permainan, tabel kontingensi, rangkaian pertandingan, dan analisis keputusan berbasis data.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_2": "Contoh Hitung Mini",
+        "kolom_3": "Jebakan / Trik Cepat"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Peluang Klasik, Komplemen, dan Mekanisme Permainan",
+          "ringkasan_kelompok": "Menghitung peluang dasar pada dadu kustom, kupon undian, dan roda putar.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Peluang Ruang Sampel Diskrit dan Dadu Kustom",
+              "penjelasan_singkat": "Gunakan $P(A) = \\frac{n(A)}{n(S)}$ dengan $0 \\le P(A) \\le 1$ untuk elemen ruang sampel berpeluang sama.",
+              "contoh_penerapan": "Dadu 6 sisi bertuliskan angka $\\{1, 2, 2, 3, 5, 5\\}$ memiliki peluang muncul angka 5 sebesar **$P(5) = \\frac{2}{6} = \\frac{1}{3}$**.",
+              "jebakan_atau_catatan": "Jangan anggap ruang sampel dadu kustom selalu angka 1 sampai 6; hitung total sisi yang identik.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Peluang Geometris pada Roda Putar Undian",
+              "penjelasan_singkat": "Pada roda putar kontinu, peluang sektor $A$ sebanding dengan besar sudut pusatnya: $P(A) = \\frac{\\theta_A}{360^\\circ}$.",
+              "contoh_penerapan": "Juring hadiah utama bersudut $45^\\circ$ pada roda putar memberikan peluang menang **$P = \\frac{45^\\circ}{360^\\circ} = \\frac{1}{8}$**.",
+              "jebakan_atau_catatan": "Abaikan jumlah pembagian juring jika ukuran sudutnya tidak sama; fokus pada proporsi sudut atau luas.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Aturan Komplemen untuk Kejadian Minimal Satu",
+              "penjelasan_singkat": "Hitung peluang muncul minimal satu keberhasilan secara efisien memakai komplemen gagal total: $P(A) = 1 - P(A^c)$.",
+              "contoh_penerapan": "Jika peluang gagal tiap tembakan $0,4$, peluang minimal satu gol dalam dua tembakan adalah **$1 - (0,4)^2 = 0,84$**.",
+              "jebakan_atau_catatan": "Komplemen dari 'minimal satu berhasil' adalah 'semua gagal', bukan 'semua berhasil'.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Frekuensi Harapan Percobaan Berulang",
+              "penjelasan_singkat": "Ekspektasi jumlah kemunculan kejadian $A$ dari $N$ percobaan identik dirumuskan sebagai $F_h(A) = N \\times P(A)$.",
+              "contoh_penerapan": "Dari $120$ kali putaran roda berpeluang menang $\\frac{1}{8}$, frekuensi harapan menang adalah **$120 \\times \\frac{1}{8} = 15$ kali**.",
+              "jebakan_atau_catatan": "Frekuensi harapan adalah nilai rata-rata teoretis, bukan jaminan hasil pasti pada percobaan nyata.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Peluang Bersyarat dan Kejadian Majemuk",
+          "ringkasan_kelompok": "Menganalisis tabel kontingensi dua arah serta gabungan beberapa tahapan kejadian.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Peluang Bersyarat pada Tabel Kontingensi",
+              "penjelasan_singkat": "Rumus $P(A|B) = \\frac{n(A \\cap B)}{n(B)}$ membatasi ruang sampel hanya pada total baris atau kolom syarat $B$.",
+              "contoh_penerapan": "Dari $80$ produk lolos uji, $60$ berasal dari Mesin X, sehingga peluang Mesin X diketahui lolos adalah **$\\frac{60}{80} = 0,75$**.",
+              "jebakan_atau_catatan": "Jangan membagi dengan total keseluruhan populasi tabel; penyebut wajib total kategori syarat setelah kata 'jika' atau 'diketahui'.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Aturan Penjumlahan Kejadian Saling Lepas",
+              "penjelasan_singkat": "Untuk dua kejadian yang mustahil terjadi bersamaan ($A \\cap B = \\emptyset$), berlaku $P(A \\cup B) = P(A) + P(B)$.",
+              "contoh_penerapan": "Kotak berisi $3$ kupon emas, $5$ perak, dan $12$ kosong; peluang terambil emas atau perak adalah **$\\frac{3}{20} + \\frac{5}{20} = 0,4$**.",
+              "jebakan_atau_catatan": "Gunakan penjumlahan hanya untuk pilihan alternatif ('atau') dalam satu kali pengambilan, bukan tahapan berurutan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kejadian Majemuk Tak Saling Lepas",
+              "penjelasan_singkat": "Jika dua kategori memiliki irisan pada tabel survei, kurangi irisannya: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+              "contoh_penerapan": "Dari $100$ responden, $50$ suka kopi, $40$ suka teh, dan $15$ suka keduanya; peluang kopi atau teh **$\\frac{50+40-15}{100} = 0,75$**.",
+              "jebakan_atau_catatan": "Lupa mengurangi irisan menyebabkan penghitungan ganda sehingga total peluang bisa melampaui $1$.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pengambilan Berturut-turut Tanpa Pengembalian",
+              "penjelasan_singkat": "Kejadian bergantung mengubah ruang sampel tahap berikutnya: $P(A \\cap B) = P(A) \\times P(B|A)$.",
+              "contoh_penerapan": "Mengambil $2$ kupon menang berturut-turut dari $4$ menang dan $6$ zonk tanpa pengembalian berpeluang **$\\frac{4}{10} \\times \\frac{3}{9} = \\frac{2}{15}$**.",
+              "jebakan_atau_catatan": "Periksa frasa 'sekaligus' atau 'tanpa dikembalikan'; pembilang dan penyebut pada tahap kedua wajib berkurang satu.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Rangkaian Pertandingan dan Pengambilan Keputusan Data",
+          "ringkasan_kelompok": "Menghitung peluang sistem turnamen serta memilih strategi dengan nilai harapan optimal.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Peluang Turnamen Sistem Gugur",
+              "penjelasan_singkat": "Peluang tim menjuarai turnamen sistem gugur adalah hasil kali peluang menang pada setiap babak yang dilalui.",
+              "contoh_penerapan": "Tim dengan peluang menang semifinal $0,7$ dan final $0,6$ memiliki peluang juara sebesar **$0,7 \\times 0,6 = 0,42$**.",
+              "jebakan_atau_catatan": "Jangan menjumlahkan peluang antarbabak; kemenangan di babak final mensyaratkan kemenangan di babak sebelumnya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Peluang Seri Pertandingan Best-of-Three",
+              "penjelasan_singkat": "Tim menang seri jika menang langsung $2$-$0$ ($p^2$) atau menang $2$-$1$ melalui tiga gim ($2p^2(1-p)$).",
+              "contoh_penerapan": "Jika peluang menang tiap gim $p = 0,6$, peluang menang seri adalah **$(0,6)^2 + 2(0,6)^2(0,4) = 0,648$**.",
+              "jebakan_atau_catatan": "Pada skor $2$-$1$, kemenangan tim wajib terjadi di gim ketiga; hanya ada $2$ urutan skenario (M-K-M dan K-M-M).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Nilai Harapan dan Pemilihan Strategi Optimal",
+              "penjelasan_singkat": "Bandingkan nilai harapan $E(X) = \\sum x_i \\cdot P(x_i)$ atau peluang kegagalan untuk menentukan opsi paling menguntungkan dan aman.",
+              "contoh_penerapan": "Opsi A memberi untung Rp$100$ ribu berpeluang $0,6$ ($E = \\text{Rp}60$ ribu), lebih unggul dari Opsi B ($E = \\text{Rp}50$ ribu).",
+              "jebakan_atau_catatan": "Sertakan nilai kerugian sebagai bilangan negatif dalam rumus $E(X)$, dan cek syarat batas risiko maksimum jika diminta.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {
@@ -33,7 +143,11 @@
       "stimulus_mini": "Rujuk aturan Roda Undian (8 juring) dan Kotak Kupon (6 merah, 4 putih) pada stimulus utama. Hitung peluang seorang pengunjung membawa pulang hadiah (bukan Zonk dan bukan kupon putih).",
       "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Pengunjung mendapat hadiah jika roda berhenti di salah satu dari 7 juring berhadiah, ATAU berhenti di 1 juring Zonk lalu terambil kupon merah.\n\n**2. Model Matematika (Employing):** Kejadian langsung berhadiah $P(H_1) = \\frac{7}{8}$. Kejadian jalur kedua (Zonk lalu kupon merah) berurutan saling bebas: $P(Z \\cap M) = P(Z) \\times P(M) = \\frac{1}{8} \\times \\frac{6}{10}$. Total peluang: $P(\\text{Hadiah}) = P(H_1) + P(Z \\cap M)$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):**\n$$P(\\text{Hadiah}) = \\frac{7}{8} + \\left(\\frac{1}{8} \\times \\frac{3}{5}\\right) = \\frac{35}{40} + \\frac{3}{40} = \\frac{38}{40} = 0,95$$\nSecara praktis, $95\\%$ pengunjung pasti memperoleh hadiah. Cara lebih singkat menggunakan komplemen: $1 - P(\\text{Zonk} \\cap \\text{Putih}) = 1 - \\left(\\frac{1}{8} \\times \\frac{4}{10}\\right) = 1 - 0,05 = 0,95$.",
       "kunci_pembeda": "Gunakan penjumlahan untuk jalur kejadian terpisah ('ATAU') dan perkalian untuk tahapan berurutan ('LALU').",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='24' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Pohon Keputusan: Roda Undian &amp; Kotak Kupon</text><circle cx='50' cy='125' r='16' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2'/><text x='50' y='129' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Start</text><path d='M 66 118 L 155 72' stroke='#34D399' stroke-width='2' fill='none'/><text x='104' y='84' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>7/8</text><rect x='155' y='52' width='108' height='38' rx='6' fill='#34D399' fill-opacity='0.18' stroke='#34D399' stroke-width='1.5'/><text x='209' y='69' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>7 Juring Hadiah</text><text x='209' y='83' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>Langsung Menang</text><path d='M 66 132 L 155 168' stroke='#FB7185' stroke-width='2' fill='none'/><text x='104' y='164' fill='#FB7185' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>1/8</text><rect x='155' y='150' width='82' height='36' rx='6' fill='#FB7185' fill-opacity='0.18' stroke='#FB7185' stroke-width='1.5'/><text x='196' y='166' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>1 Zonk</text><text x='196' y='180' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Ambil Kupon</text><path d='M 237 160 L 292 132' stroke='#34D399' stroke-width='2' fill='none'/><text x='262' y='138' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>6/10</text><rect x='292' y='112' width='86' height='36' rx='6' fill='#34D399' fill-opacity='0.18' stroke='#34D399' stroke-width='1.5'/><text x='335' y='128' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>6 Merah</text><text x='335' y='142' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>Hadiah (3/40)</text><path d='M 237 176 L 292 198' stroke='#FB7185' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><text x='262' y='202' fill='#FB7185' font-family='sans-serif' font-size='12' text-anchor='middle'>4/10</text><rect x='292' y='182' width='86' height='36' rx='6' fill='#1E293B' stroke='#FB7185' stroke-width='1.5' stroke-dasharray='4 3'/><text x='335' y='198' fill='#94A3B8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>4 Putih</text><text x='335' y='212' fill='#FB7185' font-family='sans-serif' font-size='12' text-anchor='middle'>Zonk (2/40)</text></svg>",
+        "caption": "Diagram pohon jalur peluang memperoleh hadiah pada roda undian dan kotak kupon"
+      }
     },
     {
       "nomor_variasi": 2,
@@ -51,7 +165,11 @@
       "stimulus_mini": "Rujuk data final futsal Best-of-Three antara Tim Garuda (peluang menang 0,6) dan Tim Rajawali (0,4) pada stimulus utama. Hitung peluang Tim Garuda menjuarai turnamen.",
       "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Pada format *Best-of-Three*, Tim Garuda juara jika menang 2 gim langsung (`G-G`), atau menang 2-1 dengan urutan menang-kalah-menang (`G-R-G`) maupun kalah-menang-menang (`R-G-G`). Gim ketiga tidak dimainkan jika skor sudah 2-0.\n\n**2. Model Matematika (Employing):** Karena tiap gim saling bebas dengan $P(G) = 0,6$ dan $P(R) = 0,4$:\n$$P(\\text{Juara}) = P(G)^2 + 2 \\times P(G)^2 \\times P(R)$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):**\n$$P(\\text{Juara}) = (0,6)^2 + 2(0,6)^2(0,4) = 0,36 + 2(0,36)(0,4) = 0,36 + 0,288 = 0,648$$\nPeluang juara Tim Garuda sebesar $64,8\\%$ lebih tinggi daripada peluang menang satu gim ($60\\%$) karena format seri panjang mereduksi faktor keberuntungan sesaat.",
       "kunci_pembeda": "Gim penentu selalu dimenangkan oleh tim juara pada laga terakhir, sehingga permutasi urutan hanya berlaku pada gim-gim sebelumnya.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='24' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Jalur Kemenangan Best-of-Three (Tim Garuda)</text><text x='62' y='46' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Gim 1</text><text x='166' y='46' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Gim 2</text><text x='272' y='46' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Gim 3</text><text x='352' y='46' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Peluang</text><rect x='34' y='62' width='56' height='28' rx='6' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='1.5'/><text x='62' y='80' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>G (0,6)</text><line x1='90' y1='76' x2='138' y2='76' stroke='#34D399' stroke-width='2'/><rect x='138' y='62' width='56' height='28' rx='6' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><text x='166' y='80' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>G (0,6)</text><line x1='194' y1='76' x2='318' y2='76' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><text x='256' y='71' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>2-0 (Selesai)</text><text x='352' y='80' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>0,360</text><rect x='34' y='114' width='56' height='28' rx='6' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='1.5'/><text x='62' y='132' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>G (0,6)</text><line x1='90' y1='128' x2='138' y2='128' stroke='#FB7185' stroke-width='2'/><rect x='138' y='114' width='56' height='28' rx='6' fill='#FB7185' fill-opacity='0.18' stroke='#FB7185' stroke-width='1.5'/><text x='166' y='132' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>R (0,4)</text><line x1='194' y1='128' x2='244' y2='128' stroke='#34D399' stroke-width='2'/><rect x='244' y='114' width='56' height='28' rx='6' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><text x='272' y='132' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>G (0,6)</text><text x='352' y='132' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>0,144</text><rect x='34' y='166' width='56' height='28' rx='6' fill='#FB7185' fill-opacity='0.18' stroke='#FB7185' stroke-width='1.5'/><text x='62' y='184' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>R (0,4)</text><line x1='90' y1='180' x2='138' y2='180' stroke='#38BDF8' stroke-width='2'/><rect x='138' y='166' width='56' height='28' rx='6' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='1.5'/><text x='166' y='184' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>G (0,6)</text><line x1='194' y1='180' x2='244' y2='180' stroke='#34D399' stroke-width='2'/><rect x='244' y='166' width='56' height='28' rx='6' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><text x='272' y='184' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>G (0,6)</text><text x='352' y='184' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>0,144</text><line x1='34' y1='206' x2='376' y2='206' stroke='#1E293B' stroke-width='1.5'/><text x='200' y='224' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Total P(Garuda Juara) = 0,360 + 0,144 + 0,144 = 0,648</text></svg>",
+        "caption": "Bagan 3 skenario kemenangan Tim Garuda pada seri final Best-of-Three"
+      }
     },
     {
       "nomor_variasi": 4,
@@ -81,7 +199,11 @@
       ],
       "kunci_jawaban": "B",
       "bedah_cepat_markdown": "Karena diketahui pengunjung gagal meraih Jakpot ($1$ juring), ruang sampel menyusut dari $8$ menjadi $7$ juring tersisa. Kejadian mendapat Voucher Rp10.000 hanya berasal dari $4$ juring voucher (jalur Zonk hanya menghasilkan kupon hiburan atau kosong). Jadi, $P(\\text{Voucher} \\mid \\text{Bukan Jakpot}) = \\frac{4}{7}$. Opsi A keliru memakai penyebut awal $8$ ($\\frac{4}{8}$), sedangkan Opsi C menjumlahkan jalur Zonk.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='190' y='24' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Roda Undian (8 Juring) - Ruang Sampel Tereduksi</text><g transform='translate(115, 125)'><path d='M 0 0 L 0 -76 A 76 76 0 0 1 53.7 -53.7 Z' fill='#1E293B' stroke='#FB7185' stroke-width='1.5' stroke-dasharray='4 3'/><path d='M 0 0 L 53.7 -53.7 A 76 76 0 0 1 76 0 Z' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='1.5'/><path d='M 0 0 L 76 0 A 76 76 0 0 1 53.7 53.7 Z' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='1.5'/><path d='M 0 0 L 53.7 53.7 A 76 76 0 0 1 0 76 Z' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='1.5'/><path d='M 0 0 L 0 76 A 76 76 0 0 1 -53.7 53.7 Z' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='1.5'/><path d='M 0 0 L -53.7 53.7 A 76 76 0 0 1 -76 0 Z' fill='#34D399' fill-opacity='0.18' stroke='#34D399' stroke-width='1.5'/><path d='M 0 0 L -76 0 A 76 76 0 0 1 -53.7 -53.7 Z' fill='#34D399' fill-opacity='0.18' stroke='#34D399' stroke-width='1.5'/><path d='M 0 0 L -53.7 -53.7 A 76 76 0 0 1 0 -76 Z' fill='#FBBF24' fill-opacity='0.18' stroke='#FBBF24' stroke-width='1.5'/><text x='19' y='-46' fill='#FB7185' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>JP</text><text x='46' y='-19' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>10k</text><text x='46' y='24' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>10k</text><text x='19' y='50' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>10k</text><text x='-19' y='50' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>10k</text><text x='-46' y='24' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>20k</text><text x='-46' y='-19' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>20k</text><text x='-22' y='-46' fill='#FBBF24' font-family='sans-serif' font-size='12' text-anchor='middle'>Zonk</text><circle cx='0' cy='0' r='10' fill='#0B1120' stroke='#E2E8F0' stroke-width='1.5'/></g><rect x='215' y='54' width='142' height='142' rx='8' fill='#1E293B' fill-opacity='0.45' stroke='#1E293B' stroke-width='1'/><text x='227' y='74' fill='#FB7185' font-family='sans-serif' font-size='12' font-weight='bold'>✕ 1 Jakpot (Bukan)</text><text x='227' y='96' fill='#38BDF8' font-family='sans-serif' font-size='12'>● 4 Voucher 10k</text><text x='227' y='118' fill='#34D399' font-family='sans-serif' font-size='12'>● 2 Voucher 20k</text><text x='227' y='140' fill='#FBBF24' font-family='sans-serif' font-size='12'>● 1 Zonk</text><line x1='227' y1='154' x2='345' y2='154' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 3'/><text x='286' y='178' fill='#FBBF24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>P(10k | Bukan JP) = ?</text></svg>",
+        "caption": "Visualisasi roda undian 8 juring dengan eliminasi juring Jakpot"
+      }
     },
     {
       "nomor_soal": 2,

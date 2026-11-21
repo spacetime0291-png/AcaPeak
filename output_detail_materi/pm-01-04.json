@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "pm-01-04",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus & Strategi Optimasi Biaya dan Perencanaan Anggaran",
+    "subjudul_ringkas": "Rangkuman lengkap rumus, syarat kendala, contoh hitung cepat, dan jebakan optimasi anggaran UTBK-SNBT.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Optimasi Kombinasi Paket & Kapasitas",
+        "ringkasan_kelompok": "Menentukan kombinasi paket paling hemat untuk memenuhi kuota minimal.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Rasio Biaya Satuan (Unit Cost)",
+            "penjelasan_singkat": "Hitung harga per unit kapasitas dengan rumus $r_i = \\frac{P_i}{K_i}$ untuk mengurutkan paket dari yang paling efisien.",
+            "contoh_penerapan": "Paket A (10 GB, Rp40.000) berasio **Rp4.000/GB**, lebih hemat daripada Paket B (6 GB, Rp30.000) sebesar **Rp5.000/GB**.",
+            "jebakan_atau_catatan": "Paket termurah secara unit belum tentu optimal jika menyisakan kapasitas berlebih yang tidak terpakai."
+          },
+          {
+            "judul_poin": "Kombinasi Bilangan Bulat dengan Kapasitas Sisa",
+            "penjelasan_singkat": "Cari pasangan bilangan cacah $(n_1, n_2)$ yang meminimalkan $P_1 n_1 + P_2 n_2$ dengan syarat $K_1 n_1 + K_2 n_2 \\ge K_{\\text{target}}$.",
+            "contoh_penerapan": "Butuh 13 kursi; bus 5 kursi (Rp200.000) dan mobil 4 kursi (Rp170.000) optimal saat **1 bus + 2 mobil = Rp540.000**.",
+            "jebakan_atau_catatan": "Peserta sering memilih 3 bus (15 kursi = Rp600.000) tanpa mengecek kombinasi campuran dengan sisa kapasitas lebih kecil."
+          },
+          {
+            "judul_poin": "Evaluasi Titik Batas Pembulatan ke Atas",
+            "penjelasan_singkat": "Bandingkan biaya paket besar tunggal $\\lceil \\frac{K_{\\text{target}}}{K_{\\text{besar}}} \\rceil \\times P_{\\text{besar}}$ melawan campuran paket besar dan paket kecil pelengkap.",
+            "contoh_penerapan": "Target 22 porsi katering; 2 paket isi 10 + 1 paket isi 5 (**Rp480.000**) lebih murah daripada 3 paket isi 10 (**Rp540.000**).",
+            "jebakan_atau_catatan": "Lupa mengecek apakah tambahan 1 paket kecil lebih murah daripada selisih harga menaikkan jumlah paket besar."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Perhitungan Tarif Progresif & Berjenjang",
+        "ringkasan_kelompok": "Menghitung total tagihan berdasarkan lapisan interval konsumsi atau pendapatan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Dekomposisi Interval Konsumsi (Blok Tarif)",
+            "penjelasan_singkat": "Pecah total pemakaian $Q$ menjadi lapisan $\\Delta Q_i = B_{\\text{atas}, i} - B_{\\text{bawah}, i}$, lalu hitung total $\\sum (\\Delta Q_i \\times T_i)$.",
+            "contoh_penerapan": "Pakai air $25\\text{ m}^3$: $10\\text{ m}^3$ pertama $\\times$ Rp2.000 + $10\\text{ m}^3$ kedua $\\times$ Rp3.000 + $5\\text{ m}^3$ sisa $\\times$ Rp5.000 = **Rp75.000**.",
+            "jebakan_atau_catatan": "Kesalahan fatal mengalikan seluruh total $25\\text{ m}^3$ langsung dengan tarif lapisan tertinggi (Rp5.000)."
+          },
+          {
+            "judul_poin": "Tarif Parkir Berjenjang dengan Pembulatan Waktu",
+            "penjelasan_singkat": "Bulatkan durasi total $t$ ke atas dalam satuan jam ($\\lceil t \\rceil$), lalu hitung tarif jam pertama ditambah sisa jam berikutnya.",
+            "contoh_penerapan": "Parkir 3 jam 15 menit dibulatkan menjadi **4 jam**; tarif Rp5.000 (jam pertama) + $3 \\times$ Rp3.000 = **Rp14.000**.",
+            "jebakan_atau_catatan": "Mengalikan menit sisa secara proporsional; aturan parkir harian UTBK umumnya membulatkan kelebihan menit menjadi 1 jam penuh."
+          },
+          {
+            "judul_poin": "Pajak Progresif Setelah Pengurang Bebas Pajak",
+            "penjelasan_singkat": "Kurangkan penghasilan bruto dengan batas bebas pajak ($\\text{PKP} = Y - \\text{PTKP}$) sebelum menerapkan lapisan persentase tarif pajak.",
+            "contoh_penerapan": "Penghasilan Rp70 juta, batas bebas pajak Rp54 juta; pajak $5\\%$ hanya dikenakan pada sisa **Rp16 juta = Rp800.000**.",
+            "jebakan_atau_catatan": "Langsung mengalikan tarif pajak terhadap penghasilan bruto tanpa dikurangi batas bebas pajak terlebih dahulu."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Alokasi Anggaran & Kendala Kuota Pos",
+        "ringkasan_kelompok": "Mengatur distribusi dana terbatas agar memenuhi syarat minimum dan maksimum pos.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Prinsip Penguncian Pos Minimum",
+            "penjelasan_singkat": "Untuk memaksimalkan pos variabel $X$, kunci seluruh pos wajib lainnya pada batas minimumnya: $X_{\\text{maks}} = B_{\\text{total}} - \\sum M_{\\text{min}, i}$.",
+            "contoh_penerapan": "Anggaran Rp10 juta, wajib konsumsi minimal Rp3 juta dan sewa minimal Rp2 juta; dana maksimal dekorasi adalah **Rp5 juta**.",
+            "jebakan_atau_catatan": "Menggunakan nilai rata-rata pada pos wajib, padahal soal meminta nilai ekstrem maksimum untuk pos target."
+          },
+          {
+            "judul_poin": "Konversi Kendala Persentase ke Nominal",
+            "penjelasan_singkat": "Ubah syarat batas persentase tiap pos menjadi batas rupiah ($p_{\\text{min}} \\cdot B \\le X_i \\le p_{\\text{maks}} \\cdot B$) sebelum menghitung selisih dana.",
+            "contoh_penerapan": "Anggaran Rp20 juta dengan pos logistik $25\\% - 40\\%$ berarti batas belanja logistik berada di rentang **Rp5 juta hingga Rp8 juta**.",
+            "jebakan_atau_catatan": "Menghitung persentase pos kedua dari sisa anggaran, padahal acuan persentase berlaku terhadap total anggaran awal."
+          },
+          {
+            "judul_poin": "Optimasi Jumlah Unit pada Pos Fleksibel",
+            "penjelasan_singkat": "Bagi sisa dana maksimal dengan harga satuan pos target lalu bulatkan ke bawah: $n_{\\text{maks}} = \\lfloor \\frac{X_{\\text{maks}}}{P_{\\text{unit}}} \\rfloor$.",
+            "contoh_penerapan": "Sisa dana suvenir maksimal Rp1.450.000 dengan harga Rp60.000/buah menghasilkan jumlah terbanyak $\\lfloor 24,16 \\rfloor =$ **24 buah**.",
+            "jebakan_atau_catatan": "Membulatkan hasil pembagian ke atas menjadi 25 buah, yang menyebabkan total pengeluaran melampaui pagu anggaran."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Analisis Biaya Tetap vs Biaya Variabel (Sewa vs Beli)",
+        "ringkasan_kelompok": "Membandingkan fungsi biaya linear untuk menentukan titik impas dan opsi terbaik.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Fungsi Biaya Total Linear ($C(t)$)",
+            "penjelasan_singkat": "Modelkan total pengeluaran sebagai jumlah biaya tetap $F$ dan biaya variabel $v$ per unit $t$: $C(t) = F + v \\cdot t$.",
+            "contoh_penerapan": "Biaya cetak buku terdiri dari desain tetap Rp500.000 dan cetak Rp20.000/eksemplar; untuk 100 buku totalnya **Rp2.500.000**.",
+            "jebakan_atau_catatan": "Menukar posisi koefisien biaya tetap dan biaya variabel saat menyusun persamaan dari soal cerita."
+          },
+          {
+            "judul_poin": "Titik Impas (Break-Even Point) Dua Opsi",
+            "penjelasan_singkat": "Samakan kedua fungsi biaya ($F_1 + v_1 t = F_2 + v_2 t$) sehingga titik impas terjadi pada $t_{\\text{BEP}} = \\frac{F_2 - F_1}{v_1 - v_2}$.",
+            "contoh_penerapan": "Sewa Rp50.000/hari vs beli Rp600.000 plus perawatan Rp10.000/hari mencapai titik impas pada $t = \\frac{600.000}{40.000} =$ **15 hari**.",
+            "jebakan_atau_catatan": "Jika $t_{\\text{BEP}}$ berupa pecahan, opsi dengan biaya variabel lebih kecil baru lebih murah pada bilangan bulat setelahnya."
+          },
+          {
+            "judul_poin": "Memperhitungkan Nilai Jual Kembali (Nilai Sisa)",
+            "penjelasan_singkat": "Kurangi biaya beli awal $F$ dengan nilai jual kembali aset $S$ di akhir periode: $C_{\\text{beli}} = (F - S) + v_2 t$.",
+            "contoh_penerapan": "Beli alat Rp5 juta lalu dijual Rp3 juta setelah 10 bulan menghasilkan biaya modal bersih sebesar **Rp2 juta**.",
+            "jebakan_atau_catatan": "Lupa mengurangkan nilai sisa $S$ dari harga beli, sehingga opsi membeli terlihat jauh lebih mahal daripada menyewa."
+          }
+        ]
+      }
+    ]
+  }
+}

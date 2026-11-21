@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pbm-04-04",
+  "detail_materi_lengkap": {
+    "judul_blok": "Kaidah Penentuan Judul, Pengurutan, dan Penyisipan Kalimat",
+    "subjudul_ringkas": "Panduan aturan EYD V dan logika kepaduan wacana untuk menyunting judul serta struktur paragraf UTBK.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Kaidah Penentuan dan Kapitalisasi Judul (EYD V)",
+        "ringkasan_kelompok": "Aturan kelogisan cakupan isi, struktur frasa, dan penulisan huruf kapital judul.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Cakupan Gagasan Pokok yang Proporsional",
+            "penjelasan_singkat": "Judul harus mewakili keseluruhan ide pokok paragraf secara tepat tanpa menyempitkan atau memperluas makna bacaan.",
+            "contoh_penerapan": "Teks dampak mikroplastik pada ekosistem laut dan kesehatan manusia diberi judul **Dampak Ganda Mikroplastik bagi Laut dan Manusia**.",
+            "jebakan_atau_catatan": "Jebakan: memilih **Bahaya Mikroplastik bagi Ikan** (terlalu sempit) atau **Pencemaran Lingkungan Global** (terlalu luas)."
+          },
+          {
+            "judul_poin": "Struktur Frasa Nonkalimat yang Efektif",
+            "penjelasan_singkat": "Judul yang baik berbentuk frasa benda yang padat dan menarik, bukan kalimat lengkap berpola subjek-predikat.",
+            "contoh_penerapan": "Gagasan tentang cara kerja kecerdasan buatan dirumuskan menjadi frasa **Mekanisme Kerja Kecerdasan Buatan dalam Pendidikan**.",
+            "jebakan_atau_catatan": "Bentuk salah: **Kecerdasan Buatan Bekerja Membantu Pendidikan di Sekolah** karena berstruktur kalimat lengkap dan tidak ringkas."
+          },
+          {
+            "judul_poin": "Kapitalisasi Preposisi dan Konjungsi EYD V",
+            "penjelasan_singkat": "Semua kata diawali huruf kapital, kecuali preposisi dan konjungsi yang tidak berada pada posisi awal judul.",
+            "contoh_penerapan": "Penulisan judul yang sesuai EYD V adalah **Peran Teknologi Digital dalam Meningkatkan Literasi di Daerah Terpencil**.",
+            "jebakan_atau_catatan": "Salah: **Peran Teknologi Digital Dalam Meningkatkan Literasi Di Daerah Terpencil** (preposisi *dalam* dan *di* dikapitalkan)."
+          },
+          {
+            "judul_poin": "Kapitalisasi Kata Ulang dalam Judul",
+            "penjelasan_singkat": "Kata ulang utuh ditulis kapital pada semua unsurnya, sedangkan kata ulang berimbuhan hanya dikapitalkan unsur pertamanya.",
+            "contoh_penerapan": "Bentuk baku judul meliputi **Kajian Undang-Undang Perlindungan Data** dan **Strategi Berjalan-jalan Sehat bagi Lansia**.",
+            "jebakan_atau_catatan": "Salah: **Kajian Undang-undang** (kurang kapital) atau **Strategi Berjalan-Jalan Sehat** (unsur kedua kata ulang berimbuhan tidak kapital)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kaidah Kohesi dan Koherensi Pengurutan Kalimat",
+        "ringkasan_kelompok": "Pola penyusunan kalimat acak menjadi paragraf ekspositoris atau argumentatif yang padu.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Alur Deduktif dari Umum ke Khusus",
+            "penjelasan_singkat": "Kalimat pertama paragraf deduktif berisi pernyataan umum atau definisi topik yang belum mengandung rujukan ke kalimat lain.",
+            "contoh_penerapan": "Urutan diawali kalimat **(1) Literasi finansial merupakan keterampilan dasar pengelolaan keuangan pribadi**, lalu diikuti rincian manfaatnya.",
+            "jebakan_atau_catatan": "Jebakan: meletakkan kalimat berpenanda **Kondisi tersebut membuat masyarakat...** di urutan pertama padahal rujukannya belum muncul."
+          },
+          {
+            "judul_poin": "Rantai Pronomina Penunjuk dan Persona",
+            "penjelasan_singkat": "Kata ganti seperti *ini, itu, tersebut,* dan *mereka* wajib diletakkan langsung setelah kalimat yang memuat antesedennya.",
+            "contoh_penerapan": "Kalimat **Inflasi pangan melonjak tajam** langsung diikuti **Kenaikan tersebut menekan daya beli rumah tangga**.",
+            "jebakan_atau_catatan": "Salah urut jika **Kenaikan tersebut** mendahului kalimat yang menjelaskan faktor penyebab kenaikan harga pangan."
+          },
+          {
+            "judul_poin": "Repetisi Kata Kunci Antarkalimat Berurutan",
+            "penjelasan_singkat": "Kepaduan antarkalimat dijaga melalui pengulangan kata kunci atau sinonim dari bagian akhir kalimat ke awal kalimat berikutnya.",
+            "contoh_penerapan": "Kalimat berakhir pada **...menghasilkan energi terbarukan**, lalu kalimat berikutnya dimulai dengan **Energi terbarukan ini mampu menekan emisi**.",
+            "jebakan_atau_catatan": "Jebakan: melompati kalimat yang mengulang kata kunci sehingga alur transisi antaride terasa terputus."
+          },
+          {
+            "judul_poin": "Keselarasan Logika Konjungsi Antarkalimat",
+            "penjelasan_singkat": "Konjungsi antarkalimat menandai hubungan logis spesifik seperti pertentangan (*namun*), akibat (*oleh karena itu*), atau penguatan (*bahkan*).",
+            "contoh_penerapan": "Pernyataan **Curah hujan ekstrem melanda kota** diikuti kalimat **Oleh karena itu, pemerintah menyiagakan pompa banjir**.",
+            "jebakan_atau_catatan": "Salah logika jika menghubungkan dua kalimat sebab-akibat dengan konjungsi pertentangan seperti **Namun** atau **Sebaliknya**."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kaidah Penyisipan dan Penutupan Paragraf",
+        "ringkasan_kelompok": "Aturan penentuan posisi kalimat sisipan dan syarat kalimat penutup yang logis.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Jembatan Anteseden pada Penyisipan Kalimat",
+            "penjelasan_singkat": "Kalimat sisipan harus ditempatkan tepat setelah kalimat yang memperkenalkan istilah yang dirujuk oleh kalimat sisipan.",
+            "contoh_penerapan": "Sisipan **Metode ini meminimalkan limbah kimia** diletakkan tepat **setelah kalimat (2)** yang baru mengenalkan istilah **kimia hijau**.",
+            "jebakan_atau_catatan": "Salah: menyisipkan kalimat sebelum istilah rujukannya diperkenalkan atau terlalu jauh dari kalimat sumber rujukan."
+          },
+          {
+            "judul_poin": "Keutuhan Pasangan Kausal-Kronologis saat Menyisipkan",
+            "penjelasan_singkat": "Penyisipan kalimat baru tidak boleh memisahkan dua kalimat asli yang memiliki hubungan sebab-akibat langsung atau kronologi ketat.",
+            "contoh_penerapan": "Kalimat penjelasan tambahan disisipkan **setelah kalimat (3)** agar tidak memutus kalimat (1) tentang penyebab dan (2) tentang akibatnya.",
+            "jebakan_atau_catatan": "Jebakan: menyisipkan kalimat di tengah pasangan kalimat berkonjungsi **Akibatnya** sehingga hubungan kausal menjadi kabur."
+          },
+          {
+            "judul_poin": "Kalimat Penutup sebagai Penegas Ide Pokok",
+            "penjelasan_singkat": "Kalimat penutup berfungsi merangkum atau menegaskan kembali gagasan utama paragraf secara selaras tanpa mengulang kalimat awal mentah-mentah.",
+            "contoh_penerapan": "Paragraf tentang manfaat transportasi publik ditutup dengan **Dengan demikian, angkutan massal menjadi solusi utama kemacetan kota**.",
+            "jebakan_atau_catatan": "Salah: memilih kalimat penutup yang hanya mengulang satu rincian contoh spesifik tanpa merangkum ide pokok."
+          },
+          {
+            "judul_poin": "Larangan Memunculkan Topik Baru di Akhir",
+            "penjelasan_singkat": "Kalimat penutup dilarang memperkenalkan variabel, subtopik, atau permasalahan baru yang sama sekali belum dibahas dalam paragraf.",
+            "contoh_penerapan": "Teks efisiensi panel surya ditutup dengan **Pemanfaatan teknologi surya terbukti menekan biaya listrik rumah tangga**.",
+            "jebakan_atau_catatan": "Jebakan: menutup teks panel surya dengan **Selain itu, tenaga angin juga potensial dikembangkan** (memicu topik baru)."
+          }
+        ]
+      }
+    ]
+  }
+}

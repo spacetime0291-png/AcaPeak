@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pu-01-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Pola, Sinyal, dan Jebakan Hubungan Kausalitas UTBK",
+    "subjudul_ringkas": "Panduan taksonomi pola sebab-akibat, penanda wacana, dan sesat pikir kausalitas untuk soal Penalaran Umum.",
+    "mode_tampilan": "katalog_sinyal_pola",
+    "label_kolom": {
+      "kolom_1": "Kategori / Penanda Teks",
+      "kolom_2": "Contoh Potongan / Sinyal",
+      "kolom_3": "Cara Bedakan / Jebakan"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Peta Pola Hubungan Pernyataan (Format 5 Opsi)",
+        "ringkasan_kelompok": "Klasifikasi lima kemungkinan relasi kausal antara pernyataan A dan B di UTBK.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Kausalitas Langsung Tunggal ($A \\rightarrow B$)",
+            "penjelasan_singkat": "Pernyataan pertama memicu munculnya pernyataan kedua secara langsung tanpa perantara variabel lain yang dominan.",
+            "contoh_penerapan": "Curah hujan ekstrem **mengakibatkan** debit sungai meluap sehingga permukiman di bantaran kali terendam banjir.",
+            "jebakan_atau_catatan": "Jangan tertukar arah panah; pastikan peristiwa penyebab benar-benar terjadi mendahului peristiwa akibat."
+          },
+          {
+            "judul_poin": "Kausalitas Berantai ($A \\rightarrow B \\rightarrow C$)",
+            "penjelasan_singkat": "Sebab awal memicu akibat antara yang kemudian berperan sebagai pemicu baru bagi akibat akhir.",
+            "contoh_penerapan": "Kenaikan tarif BBM **memicu** lonjakan ongkos logistik, **yang berdampak pada** mahalnya harga bahan pangan.",
+            "jebakan_atau_catatan": "Pada format lima opsi, pernyataan A dan C tetap dinilai memiliki hubungan sebab-akibat."
+          },
+          {
+            "judul_poin": "Akibat dari Satu Penyebab Sama ($X \\rightarrow A, B$)",
+            "penjelasan_singkat": "Dua pernyataan tampak berkaitan erat, padahal keduanya merupakan akibat dari satu pemicu eksternal yang sama.",
+            "contoh_penerapan": "Penjualan jas hujan melonjak dan kasus flu meningkat karena dipicu **datangnya musim penghujan**.",
+            "jebakan_atau_catatan": "Peserta sering mengira A memicu B; selalu cari faktor ketiga yang memicu keduanya."
+          },
+          {
+            "judul_poin": "Akibat dari Dua Penyebab Berbeda",
+            "penjelasan_singkat": "Dua fenomena terjadi bersamaan tetapi berasal dari mekanisme penyebab terpisah yang tidak saling memengaruhi.",
+            "contoh_penerapan": "Rupiah melemah akibat **inflasi global**, sedangkan panen padi turun akibat **serangan hama wereng**.",
+            "jebakan_atau_catatan": "Kesamaan waktu atau lokasi dalam satu paragraf tidak otomatis menjadikan dua pernyataan saling menyebabkan."
+          },
+          {
+            "judul_poin": "Dua Pernyataan Tidak Saling Berhubungan",
+            "penjelasan_singkat": "Kedua pernyataan membahas topik atau objek berbeda tanpa jalur mekanisme kausal maupun korelasi logis.",
+            "contoh_penerapan": "Populasi komodo di habitat aslinya stabil, sementara **harga tiket pesawat** domestik mengalami penyesuaian.",
+            "jebakan_atau_catatan": "Hindari mengarang hubungan asumsi pribadi yang tidak didukung informasi eksplisit di dalam teks."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Katalog Penanda Bahasa & Sinyal Wacana",
+        "ringkasan_kelompok": "Identifikasi kata kunci kausalitas, derajat penyebab, dan struktur eksperimen dalam teks.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penanda Kausalitas Eksplisit (Konjungsi & Verba)",
+            "penjelasan_singkat": "Kata penghubung atau kata kerja yang menegaskan arah aliran dari faktor penyebab menuju akibat.",
+            "contoh_penerapan": "Paparan sinar ultraviolet berlebih **menyebabkan** kerusakan sel kulit **sehingga** risiko kanker meningkat tajam.",
+            "jebakan_atau_catatan": "Klausa tepat setelah kata sehingga atau akibatnya selalu menempati posisi sebagai akibat."
+          },
+          {
+            "judul_poin": "Sinyal Penyebab Utama vs Penyebab Tambahan",
+            "penjelasan_singkat": "Penanda bobot pengaruh yang membedakan faktor determinan utama dengan faktor pendukung dalam wacana analisis.",
+            "contoh_penerapan": "Defisiensi zat besi merupakan **faktor utama** anemia, **diperparah oleh** pola tidur tidak teratur.",
+            "jebakan_atau_catatan": "Pengecoh sering mengubah frasa faktor utama menjadi satu-satunya penyebab yang bernilai salah."
+          },
+          {
+            "judul_poin": "Sinyal Kausalitas Kondisional & Eksperimen Terkontrol",
+            "penjelasan_singkat": "Pola syarat-hasil yang menguji pengaruh perlakuan variabel bebas terhadap variabel terikat dalam penelitian.",
+            "contoh_penerapan": "**Apabila** dosis pupuk nitrogen ditambah $20\\%$, **maka** tinggi tanaman meningkat dibanding kelompok kontrol.",
+            "jebakan_atau_catatan": "Tanpa kelompok pembanding terkontrol, kesimpulan kausalitas induktif maksimal bernilai Mungkin Benar."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Deteksi Sesat Pikir & Jebakan Kausalitas",
+        "ringkasan_kelompok": "Pola keliru dalam menyimpulkan hubungan sebab-akibat dari data observasi induktif.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Jebakan Urutan Waktu (*Post Hoc*)",
+            "penjelasan_singkat": "Menganggap peristiwa pertama pasti penyebab peristiwa kedua hanya karena terjadi lebih dulu secara kronologis.",
+            "contoh_penerapan": "Setelah dinding kelas dicat biru, nilai ujian naik, lalu disimpulkan **cat biru mencerdaskan siswa**.",
+            "jebakan_atau_catatan": "Urutan waktu ($A$ sebelum $B$) hanyalah syarat perlu, bukan bukti cukup adanya kausalitas."
+          },
+          {
+            "judul_poin": "Jebakan Korelasi Bersamaan (*Cum Hoc*)",
+            "penjelasan_singkat": "Menyimpulkan dua tren yang bergerak bersamaan sebagai hubungan sebab-akibat tanpa pembuktian mekanisme logis.",
+            "contoh_penerapan": "Grafik penjualan es krim dan kasus tenggelam di pantai **sama-sama melonjak** setiap bulan Juli.",
+            "jebakan_atau_catatan": "Korelasi statistik tinggi tetap tidak membuktikan variabel pertama memicu variabel kedua secara langsung."
+          },
+          {
+            "judul_poin": "Variabel Perancu (*Confounding Variable*)",
+            "penjelasan_singkat": "Faktor tersembunyi yang memengaruhi sebab dan akibat sekaligus sehingga menciptakan ilusi hubungan langsung.",
+            "contoh_penerapan": "Kebiasaan membawa korek api berkorelasi dengan kanker paru, padahal variabel perancunya adalah **kebiasaan merokok**.",
+            "jebakan_atau_catatan": "Uji apakah ada variabel ketiga yang jika dikendalikan membuat hubungan dua variabel utama lenyap."
+          },
+          {
+            "judul_poin": "Kausalitas Terbalik (*Reverse Causation*)",
+            "penjelasan_singkat": "Kekeliruan menukar posisi akibat menjadi penyebab karena kedua kondisi diamati pada waktu bersamaan.",
+            "contoh_penerapan": "Peneliti mengira **depresi memicu insomnia**, padahal faktanya **kurang tidur kronis yang memicu depresi**.",
+            "jebakan_atau_catatan": "Periksa ulang mana kondisi yang muncul lebih awal sebelum menentukan arah panah kausalitas."
+          }
+        ]
+      }
+    ]
+  }
+}

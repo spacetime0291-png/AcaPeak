@@ -13,7 +13,6 @@ import {
   Sparkles,
   Flame,
   Award,
-  ZoomIn,
   X,
 } from 'lucide-react';
 import type {
@@ -21,20 +20,17 @@ import type {
   ThreeZoneMaterial,
   VariasiInti,
   SoalUjiPemahaman,
+  VisualData,
 } from '../../types/material';
 import {
   isSubchapterCompleted,
   toggleSubchapterCompleted,
 } from '../../lib/contentLoader';
 import { AdSlot } from '../common/AdSlot';
+import { VisualRenderer } from './VisualRenderer';
+import { DetailMateriAccordion } from './DetailMateriAccordion';
 
 const KATEX_REHYPE_PLUGINS = [rehypeKatex as any];
-
-interface VisualData {
-  tipe?: string;
-  kode?: string;
-  caption?: string;
-}
 
 interface ThreeZoneMaterialViewerProps {
   material: Material;
@@ -179,43 +175,6 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
       ...prev,
       [nomorSoal]: !prev[nomorSoal],
     }));
-  };
-
-  // Helper component to render SVG graphics with Tap-to-Zoom
-  const renderVisualElement = (visual?: VisualData | null, label?: string) => {
-    if (!visual || !visual.kode) return null;
-
-    return (
-      <div className="my-4 w-full flex flex-col items-center group">
-        <div className="w-full flex items-center justify-between px-1 mb-1 text-xs text-slate-500 dark:text-slate-400">
-          <span className="font-semibold text-blue-600 dark:text-blue-400 flex items-center gap-1">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>{label || 'Visualisasi Grafis / Model'}</span>
-          </span>
-          <button
-            type="button"
-            onClick={() => setZoomSvg(visual)}
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition cursor-pointer"
-            title="Perbesar Grafik"
-          >
-            <ZoomIn className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-            <span>Perbesar</span>
-          </button>
-        </div>
-
-        <div
-          onClick={() => setZoomSvg(visual)}
-          className="material-svg-card w-full max-w-lg overflow-x-auto rounded-xl p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xs flex justify-center items-center cursor-zoom-in transition hover:border-blue-400 dark:hover:border-blue-500"
-          dangerouslySetInnerHTML={{ __html: visual.kode }}
-        />
-
-        {visual.caption && (
-          <p className="mt-1.5 text-center text-xs text-slate-500 dark:text-slate-400 italic px-2 max-w-md">
-            {visual.caption}
-          </p>
-        )}
-      </div>
-    );
   };
 
   // Academic Markdown Components matching reference HTML specs
@@ -484,7 +443,25 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
             <div className="text-[16px] leading-relaxed text-slate-800 dark:text-slate-200">
               {renderMarkdown(zona1.konsep_inti_markdown)}
             </div>
+
+            {/* Visual Grafis Zona 1 (jika ada) */}
+            {zona1.visual && (
+              <VisualRenderer
+                visual={zona1.visual}
+                onZoom={setZoomSvg}
+              />
+            )}
           </div>
+        )}
+
+        {/* 2B. DETAIL MATERI LENGKAP (ZONA 1B ACCORDION) */}
+        {zona1?.detail_materi_lengkap && (
+          <DetailMateriAccordion
+            data={zona1.detail_materi_lengkap}
+            renderMarkdown={renderMarkdown}
+            renderInlineMarkdown={renderInlineMarkdown}
+            onZoomVisual={setZoomSvg}
+          />
         )}
 
         {/* 3. RADAR JEBAKAN UTBK (Box Kuning/Oranye: #FFFBEB / border #F59E0B) */}
@@ -605,7 +582,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                 )}
 
                 {/* Visual / Gambar SVG (jika ada) */}
-                {activeVariasi.visual && renderVisualElement(activeVariasi.visual, 'Model Visualisasi Variasi')}
+                {activeVariasi.visual && (
+                  <VisualRenderer
+                    visual={activeVariasi.visual}
+                    onZoom={setZoomSvg}
+                  />
+                )}
 
                 {/* Bedah Pola & Langkah Eksekusi */}
                 {activeVariasi.bedah_pola_markdown && (
@@ -747,7 +729,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                   </div>
 
                   {/* SVG Visual Soal (jika ada) */}
-                  {soal.visual && renderVisualElement(soal.visual, `Visualisasi Soal ${nomor}`)}
+                  {soal.visual && (
+                    <VisualRenderer
+                      visual={soal.visual}
+                      onZoom={setZoomSvg}
+                    />
+                  )}
 
                   {/* Pilihan Ganda (Standard MC / Pilihan Ganda Kompleks) */}
                   {soal.opsi_jawaban && soal.opsi_jawaban.length > 0 ? (
@@ -942,16 +929,13 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               </button>
             </div>
 
-            <div
-              className="w-full overflow-auto flex justify-center py-4"
-              dangerouslySetInnerHTML={{ __html: zoomSvg.kode || '' }}
-            />
-
-            {zoomSvg.caption && (
-              <p className="mt-3 text-center text-xs sm:text-sm text-slate-600 dark:text-slate-300 italic px-4">
-                {zoomSvg.caption}
-              </p>
-            )}
+            <div className="w-full overflow-auto flex justify-center py-4">
+              <VisualRenderer
+                visual={zoomSvg}
+                showZoomButton={false}
+                className="my-0 border-0 bg-transparent w-full"
+              />
+            </div>
           </div>
         </div>
       )}

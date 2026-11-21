@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Diketahui $-3 < x < 2$ dan $-4 < y < -1$. Manakah batas bawah (nilai infimum) dari hasil kali $xy$?",
@@ -23,7 +23,117 @@
       "Melupakan syarat penyebut tidak sama dengan nol (bulatan kosong) pada pertidaksamaan rasional bertanda $\\le$ atau $\\ge$, serta mengabaikan syarat ruas kanan $\\ge 0$ pada persamaan mutlak."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Rumus & Sifat Persamaan, Pertidaksamaan Linear, dan Nilai Mutlak",
+      "subjudul_ringkas": "Katalog rumus, syarat domain, dan teknik penyelesaian cepat persamaan-pertidaksamaan linear serta nilai mutlak untuk PK UTBK.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_2": "Contoh Hitung Mini",
+        "kolom_3": "Jebakan / Trik Cepat"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Sistem Persamaan Linear & Pertidaksamaan Rasional",
+          "ringkasan_kelompok": "Menentukan syarat solusi SPL berparameter serta penyelesaian pertidaksamaan linear dan pecahan.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Syarat Solusi Tunggal SPL Dua Variabel",
+              "penjelasan_singkat": "Dua garis berpotongan di satu titik jika rasio koefisien variabelnya tidak sama: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.",
+              "contoh_penerapan": "Sistem $kx + 2y = 5$ dan $3x - y = 4$ bersolusi tunggal jika $\\frac{k}{3} \\neq \\frac{2}{-1} \\Rightarrow$ **$k \\neq -6$**.",
+              "jebakan_atau_catatan": "Pastikan urutan variabel $x$ dan $y$ pada kedua persamaan sudah sejajar sebelum membandingkan rasio koefisiennya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Syarat Solusi Tak Hingga dan Tanpa Solusi",
+              "penjelasan_singkat": "Garis berimpit (tak hingga solusi) jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$; sejajar (tanpa solusi) jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.",
+              "contoh_penerapan": "Sistem $2x + py = 6$ dan $4x + 6y = q$ tanpa solusi jika $\\frac{2}{4} = \\frac{p}{6} \\neq \\frac{6}{q} \\Rightarrow$ **$p = 3$ dan $q \\neq 12$**.",
+              "jebakan_atau_catatan": "Konstanta $c_1$ dan $c_2$ wajib berada di sisi tanda sama dengan yang sama sebelum dibandingkan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Aturan Pembalikan Tanda Pertidaksamaan Linear",
+              "penjelasan_singkat": "Mengalikan atau membagi kedua ruas pertidaksamaan dengan bilangan negatif wajib membalik arah tanda pertidaksamaan.",
+              "contoh_penerapan": "Penyelesaian $-3x + 7 \\le 1$ adalah $-3x \\le -6$, lalu dibagi $-3$ menghasilkan **$x \\ge 2$**.",
+              "jebakan_atau_catatan": "Dilarang mengalikan kedua ruas dengan ekspresi bervariabel jika tanda positif atau negatifnya belum pasti.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pertidaksamaan Rasional dan Syarat Penyebut",
+              "penjelasan_singkat": "Bentuk $\\frac{f(x)}{g(x)} \\ge 0$ diselesaikan lewat uji tanda garis bilangan dengan syarat mutlak penyebut **$g(x) \\neq 0$**.",
+              "contoh_penerapan": "Untuk $\\frac{x - 1}{x + 2} \\ge 0$, titik $x = 1$ (penuh) dan $x = -2$ (kosong) memberi hasil **$x < -2$ atau $x \\ge 1$**.",
+              "jebakan_atau_catatan": "Jangan kali silang $\\frac{f(x)}{g(x)} \\ge k$; pindahkan $k$ ke ruas kiri lalu samakan penyebutnya.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Manipulasi Rentang Pertidaksamaan Gabungan",
+          "ringkasan_kelompok": "Aturan operasi aljabar pada dua variabel yang masing-masing dibatasi interval tertentu.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Penjumlahan dan Pengurangan Dua Interval",
+              "penjelasan_singkat": "Jika $a < x < b$ dan $c < y < d$, maka rentang selisihnya adalah **$a - d < x - y < b - c$**.",
+              "contoh_penerapan": "Diketahui $2 < x < 5$ dan $1 < y < 3$, rentang $x - y$ adalah $2 - 3 < x - y < 5 - 1 \\Rightarrow$ **$-1 < x - y < 4$**.",
+              "jebakan_atau_catatan": "Jangan kurangkan batas bawah dengan batas bawah ($2 - 1$); nilai minimum terjadi saat $x$ terkecil dikurangi $y$ terbesar.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Perkalian Dua Interval Lintas Tanda",
+              "penjelasan_singkat": "Hitung empat hasil kali ujung interval ($ac, ad, bc, bd$), lalu ambil nilai terkecil sebagai batas bawah dan terbesar sebagai batas atas.",
+              "contoh_penerapan": "Untuk $-3 < x < 2$ dan $-4 < y < 5$, kombinasi ujungnya $\\{12, -15, -8, 10\\}$, sehingga **$-15 < xy < 12$**.",
+              "jebakan_atau_catatan": "Jika interval memuat nol (misal $-3 < x < 2$), kuadratnya memiliki batas bawah nol: **$0 \\le x^2 < 9$**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pembagian Dua Interval Bertanda Sama",
+              "penjelasan_singkat": "Ubah $\\frac{x}{y}$ menjadi $x \\cdot \\frac{1}{y}$; jika $c < y < d$ bertanda sama, maka $\\frac{1}{d} < \\frac{1}{y} < \\frac{1}{c}$.",
+              "contoh_penerapan": "Jika $4 < x < 6$ dan $1 < y < 2$, maka $\\frac{1}{2} < \\frac{1}{y} < 1$, sehingga rentang $\\frac{x}{y}$ adalah **$2 < \\frac{x}{y} < 6$**.",
+              "jebakan_atau_catatan": "Jika interval penyebut $y$ melewati nol ($c < 0 < d$), nilai $\\frac{1}{y}$ terputus menuju $\\pm \\infty$.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Persamaan & Pertidaksamaan Nilai Mutlak",
+          "ringkasan_kelompok": "Definisi aljabar, sifat pengkuadratan, dan interpretasi jarak nilai mutlak pada garis bilangan.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Persamaan Nilai Mutlak Dasar $|f(x)| = c$",
+              "penjelasan_singkat": "Untuk konstanta $c > 0$, persamaan $|f(x)| = c$ dipecah menjadi dua kasus: $f(x) = c$ atau $f(x) = -c$.",
+              "contoh_penerapan": "Persamaan $|2x - 3| = 5$ dipecah menjadi $2x - 3 = 5$ atau $2x - 3 = -5$, menghasilkan **$x = 4$ atau $x = -1$**.",
+              "jebakan_atau_catatan": "Jika konstanta ruas kanan bernilai negatif ($c < 0$), persamaan langsung tidak memiliki solusi (**himpunan kosong**).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Persamaan Dua Nilai Mutlak $|f(x)| = |g(x)|$",
+              "penjelasan_singkat": "Kuadratkan kedua ruas dengan sifat $|u|^2 = u^2$, lalu faktorkan selisih kuadrat menjadi $(f(x) + g(x))(f(x) - g(x)) = 0$.",
+              "contoh_penerapan": "Untuk $|x + 1| = |2x - 4|$, faktorkan $(3x - 3)(-x + 5) = 0$, sehingga didapat **$x = 1$ atau $x = 5$**.",
+              "jebakan_atau_catatan": "Hindari menjabarkan kuadrat secara penuh; pemfaktoran $(f + g)(f - g) = 0$ menghemat waktu hitung secara signifikan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pertidaksamaan Nilai Mutlak Bentuk Kurang dan Lebih",
+              "penjelasan_singkat": "Untuk $k > 0$, $|u| < k \\Leftrightarrow -k < u < k$, sedangkan $|u| > k \\Leftrightarrow u < -k$ atau $u > k$.",
+              "contoh_penerapan": "Pertidaksamaan $|x - 2| > 3$ ekuivalen dengan $x - 2 < -3$ atau $x - 2 > 3$, yakni **$x < -1$ atau $x > 5$**.",
+              "jebakan_atau_catatan": "Untuk bentuk $|f(x)| < g(x)$ dengan ruas kanan bervariabel, wajib iriskan hasil dengan syarat **$g(x) > 0$**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Interpretasi Jarak pada Garis Bilangan",
+              "penjelasan_singkat": "Notasi $|x - a|$ menyatakan jarak antara titik $x$ dan titik pusat $a$ pada garis bilangan real.",
+              "contoh_penerapan": "Pertidaksamaan $|x - 4| \\le 3$ bermakna jarak $x$ dari $4$ maksimal $3$ satuan, sehingga **$1 \\le x \\le 7$**.",
+              "jebakan_atau_catatan": "Pada bentuk $|x + a|$, tulis ulang menjadi $|x - (-a)|$ agar titik pusat jarak terbaca sebagai **$-a$**.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {
@@ -42,7 +152,11 @@
       "stimulus_mini": "Tentukan himpunan penyelesaian dari pertidaksamaan rasional $\\frac{2x - 1}{x + 3} \\ge 1$.",
       "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\\nJangan pernah mengalikan kedua ruas dengan $(x+3)$ karena tanda $(x+3)$ belum diketahui positif atau negatif. Pindahkan seluruh suku ke ruas kiri agar ruas kanan bernilai nol: $\\frac{2x-1}{x+3}-1\\ge 0$. Samakan penyebut menjadi $\\frac{(2x-1)-(x+3)}{x+3}\\ge 0$, sehingga diperoleh $\\frac{x-4}{x+3}\\ge 0$. Pembuat nol pembilang adalah $x=4$ (bulatan penuh karena tanda $\\ge$) dan pembuat nol penyebut $x=-3$ (wajib bulatan kosong karena penyebut $\\neq 0$). Uji titik $x=0$ menghasilkan $-\\frac{4}{3}<0$, sehingga daerah positif berada di kiri $-3$ dan kanan $4$: $x<-3$ atau $x\\ge 4$.\\n\\n**(2) Jalur Taktis UTBK**\\nEliminasi opsi pilihan ganda langsung lewat syarat penyebut: karena $x=-3$ membuat penyebut nol, semua opsi yang memuat $x\\le -3$ otomatis gugur. Selanjutnya, cek batas pembilang $x=4$ yang menghasilkan $0\\ge 0$ (benar, wajib memuat tanda sama dengan), lalu uji titik mudah $x=0$ yang menghasilkan $-\\frac{1}{3}\\ge 1$ (salah, sehingga $0$ bukan solusi).",
       "kunci_pembeda": "Wajib nolkan ruas kanan tanpa kali silang variabel, dan selalu beri bulatan kosong pada pembuat nol penyebut meskipun soal memakai tanda $\\le$ atau $\\ge$.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='200' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Garis Bilangan (x - 4)/(x + 3) &gt;= 0</text><line x1='42.0' y1='136.8' x2='114.9' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='285.1' y1='136.8' x2='358.0' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='148.8' x2='373' y2='148.8' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='144.8' x2='42.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-6</text><line x1='90.6' y1='144.8' x2='90.6' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='90.6' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-4</text><line x1='139.2' y1='144.8' x2='139.2' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='139.2' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-2</text><line x1='187.8' y1='144.8' x2='187.8' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='187.8' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>0</text><line x1='236.5' y1='144.8' x2='236.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='236.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>2</text><line x1='285.1' y1='144.8' x2='285.1' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='285.1' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>4</text><line x1='333.7' y1='144.8' x2='333.7' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='333.7' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>6</text><text x='78.5' y='124.8' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><text x='187.8' y='124.8' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>-</text><text x='321.5' y='124.8' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><circle cx='114.9' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='114.9' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-3</text><circle cx='285.1' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='285.1' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>4</text></svg>",
+        "caption": "Garis bilangan bertanda (+ - +) untuk pertidaksamaan rasional (x - 4)/(x + 3) >= 0 dengan x = -3 terbuka dan x = 4 tertutup."
+      }
     },
     {
       "nomor_variasi": 3,
@@ -69,7 +183,11 @@
       "stimulus_mini": "Tentukan himpunan penyelesaian dari pertidaksamaan nilai mutlak $3 < |2x - 1| \\le 7$.",
       "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\\nPertidaksamaan nilai mutlak ganda $a<|u|\\le b$ (dengan $0<a<b$) menyatakan nilai $u$ berada pada jarak lebih dari $a$ dan maksimal $b$ dari nol. Secara aljabar, bentuk ini terpecah menjadi dua interval simetris: $-b\\le u<-a$ atau $a<u\\le b$. Substitusi $u=2x-1$ menghasilkan $-7\\le 2x-1<-3$ atau $3<2x-1\\le 7$. Tambahkan $1$ ke semua ruas: $-6\\le 2x<-2$ atau $4<2x\\le 8$. Bagi dengan $2$ sehingga diperoleh $-3\\le x<-1$ atau $2<x\\le 4$.\\n\\n**(2) Jalur Taktis UTBK**\\nGunakan interpretasi jarak pada garis bilangan dengan membagi dua koefisien $x$: $1,5<|x-0,5|\\le 3,5$. Artinya, jarak $x$ dari titik pusat $0,5$ harus lebih dari $1,5$ satuan dan maksimal $3,5$ satuan. Geser ke kanan dari $0,5$: batasnya $0,5+1,5=2$ (terbuka) hingga $0,5+3,5=4$ (tertutup), didapat $2<x\\le 4$. Geser ke kiri dari $0,5$: batasnya $0,5-3,5=-3$ (tertutup) hingga $0,5-1,5=-1$ (terbuka), didapat $-3\\le x<-1$.",
       "kunci_pembeda": "Terjemahkan $|x - p| < r$ sebagai jarak $x$ ke pusat $p$ kurang dari $r$ satuan (interval diapit), sedangkan $|x - p| > r$ berarti jarak lebih dari $r$ satuan (interval terpisah).",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='200' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Garis Bilangan 3 &lt; |2x - 1| &lt;= 7</text><line x1='99.5' y1='136.8' x2='156.9' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='243.1' y1='136.8' x2='300.5' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='148.8' x2='373' y2='148.8' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='144.8' x2='42.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-5</text><line x1='70.7' y1='144.8' x2='70.7' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='70.7' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-4</text><line x1='99.5' y1='144.8' x2='99.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='99.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-3</text><line x1='128.2' y1='144.8' x2='128.2' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='128.2' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-2</text><line x1='156.9' y1='144.8' x2='156.9' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='156.9' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-1</text><line x1='185.6' y1='144.8' x2='185.6' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='185.6' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>0</text><line x1='214.4' y1='144.8' x2='214.4' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='214.4' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>1</text><line x1='243.1' y1='144.8' x2='243.1' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='243.1' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>2</text><line x1='271.8' y1='144.8' x2='271.8' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='271.8' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>3</text><line x1='300.5' y1='144.8' x2='300.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='300.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>4</text><line x1='329.3' y1='144.8' x2='329.3' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='329.3' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>5</text><line x1='358.0' y1='144.8' x2='358.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='358.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>6</text><circle cx='99.5' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='99.5' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-3</text><circle cx='156.9' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='156.9' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-1</text><circle cx='200.0' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='200.0' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>0,5</text><circle cx='243.1' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='243.1' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>2</text><circle cx='300.5' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='300.5' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>4</text></svg>",
+        "caption": "Interpretasi jarak nilai mutlak 1,5 < |x - 0,5| <= 3,5 dari titik pusat 0,5 pada garis bilangan."
+      }
     }
   ],
   "zona_3_uji_pemahaman": [
@@ -90,7 +208,11 @@
       ],
       "kunci_jawaban": "B",
       "bedah_cepat_markdown": "Syarat tidak ada solusi: $\\frac{m}{3} = \\frac{2}{m - 1} \\neq \\frac{6}{6}$. Dari $m(m - 1) = 6$, diperoleh $m = 3$ atau $m = -2$. Untuk $m = 3$, rasio menjadi $1 = 1 = 1$ (solusi tak hingga), sehingga hanya $m = -2$ yang memenuhi ((1) benar, (4) salah). Pada pertidaksamaan rasional, penyebut wajib $\\neq 0$: substitusi $x = -2$ ke (2) membuat penyebut $0$ (salah), sedangkan pada (3) menghasilkan $\\frac{0}{-3} = 0 \\le 0$ (benar). Jawaban: **B**.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='190' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Sistem Persamaan Linear Tanpa Solusi (Garis Sejajar)</text><line x1='35.0' y1='25' x2='35.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='67.0' y1='25' x2='67.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='99.0' y1='25' x2='99.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='131.0' y1='25' x2='131.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='163.0' y1='25' x2='163.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='195.0' y1='25' x2='195.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='227.0' y1='25' x2='227.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='259.0' y1='25' x2='259.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='291.0' y1='25' x2='291.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='323.0' y1='25' x2='323.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='355.0' y1='25' x2='355.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='200.0' x2='355' y2='200.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='182.5' x2='355' y2='182.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='165.0' x2='355' y2='165.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='147.5' x2='355' y2='147.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='130.0' x2='355' y2='130.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='112.5' x2='355' y2='112.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='95.0' x2='355' y2='95.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='77.5' x2='355' y2='77.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='60.0' x2='355' y2='60.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='42.5' x2='355' y2='42.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='355' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='130.0' x2='367' y2='130.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='373' y='134.0' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='163.0' y1='208' x2='163.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='155.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-4</text><text x='67.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='99.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='131.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='195.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='227.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='259.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='291.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='323.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='355.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='158.0' y='203.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='158.0' y='185.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='158.0' y='168.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='158.0' y='150.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='158.0' y='115.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='158.0' y='98.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='158.0' y='80.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='158.0' y='63.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='158.0' y='45.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='158.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><line x1='35.0' y1='147.5' x2='355.0' y2='-27.5' stroke='#38BDF8' stroke-width='2' /><text x='323.0' y='-16.0' fill='#38BDF8' font-family='sans-serif' font-size='11' font-weight='bold'>mx + 2y = 6</text><line x1='35.0' y1='235.0' x2='355.0' y2='60.0' stroke='#34D399' stroke-width='2' /><text x='323.0' y='71.5' fill='#34D399' font-family='sans-serif' font-size='11' font-weight='bold'>3x + (m - 1)y = 6</text></svg>",
+        "caption": "Ilustrasi kondisi geometris dua garis sejajar pada sistem persamaan linear yang tidak memiliki penyelesaian."
+      }
     },
     {
       "nomor_soal": 2,

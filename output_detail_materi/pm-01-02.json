@@ -1,0 +1,96 @@
+{
+  "kode_subbab": "pm-01-02",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus & Sifat: Bunga, Cicilan, dan Depresiasi Aset",
+    "subjudul_ringkas": "Rangkuman rumus perhitungan bunga simpanan, skema kredit flat, evaluasi penawaran keuangan, dan penyusutan aset.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Bunga Tunggal, Bunga Majemuk, dan Pajak Simpanan",
+        "ringkasan_kelompok": "Rumus pertumbuhan modal, penyesuaian periode majemuk, dan potongan pajak bunga.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Nominal Bunga dan Saldo Akhir Bunga Tunggal",
+            "penjelasan_singkat": "Bunga dihitung tetap dari modal awal ($B = M_0 \\cdot i \\cdot t$), sehingga saldo akhir $M_t = M_0(1 + i \\cdot t)$.",
+            "contoh_penerapan": "Modal $\\text{Rp2.000.000}$, bunga tunggal $6\\%$ per tahun selama $8$ bulan: bunga $= 2.000.000 \\times 6\\% \\times \\frac{8}{12} =$ **$\\text{Rp80.000}$**.",
+            "jebakan_atau_catatan": "Samakan satuan waktu $t$ dengan periode suku bunga $i$; jika $i$ tahunan dan $t$ bulan, bagi $t$ dengan $12$."
+          },
+          {
+            "judul_poin": "Saldo Akhir Bunga Majemuk dan Frekuensi Pemajemukan",
+            "penjelasan_singkat": "Bunga tahunan $r$ yang dimajemukkan $k$ kali setahun selama $t$ tahun menghasilkan $M_t = M_0\\left(1 + \\frac{r}{k}\\right)^{k \\cdot t}$.",
+            "contoh_penerapan": "Modal $\\text{Rp1.000.000}$, bunga $12\\%$ per tahun dimajemukkan per semester selama $1$ tahun: $M_1 = 1.000.000(1 + 0,06)^2 =$ **$\\text{Rp1.123.600}$**.",
+            "jebakan_atau_catatan": "Jangan mengalikan $r$ dengan $t$; bagi $r$ dengan frekuensi $k$ per tahun lalu pangkatkan total periode $k \\cdot t$."
+          },
+          {
+            "judul_poin": "Suku Bunga Neto Setelah Potongan Pajak Bunga",
+            "penjelasan_singkat": "Pajak bunga sebesar $p\\%$ mengurangi tingkat suku bunga efektif menjadi $i_{\\text{neto}} = i_{\\text{bruto}} \\times (1 - p\\%)$.",
+            "contoh_penerapan": "Deposito berbunga bruto $5\\%$ dikenai pajak $20\\%$: bunga neto efektifnya adalah $5\\% \\times (1 - 0,2) =$ **$4\\%$** per tahun.",
+            "jebakan_atau_catatan": "Pajak hanya memotong **nominal bunga** yang dihasilkan, tidak pernah memotong modal pokok awal ($M_0$)."
+          },
+          {
+            "judul_poin": "Mencari Modal Awal atau Lama Periode Menabung",
+            "penjelasan_singkat": "Modal awal dihitung lewat $M_0 = \\frac{M_t}{(1+i)^t}$, sedangkan lama periode $t$ bunga majemuk memakai $t = \\frac{\\log(M_t/M_0)}{\\log(1+i)}$.",
+            "contoh_penerapan": "Agar $\\text{Rp1.000.000}$ tumbuh menjadi $\\text{Rp1.210.000}$ pada bunga majemuk $10\\%$: $(1,1)^t = 1,21 \\Rightarrow t =$ **$2$ periode**.",
+            "jebakan_atau_catatan": "Hafalkan nilai $(1,05)^2 = 1,1025$ dan $(1,1)^3 = 1,331$ untuk mempercepat penentuan pangkat $t$ tanpa tabel logaritma."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Skema Cicilan Bunga Flat, DP, dan Penalti",
+        "ringkasan_kelompok": "Perhitungan pokok utang setelah uang muka, angsuran bulanan tetap, dan denda.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penentuan Pokok Pinjaman Setelah Uang Muka (DP)",
+            "penjelasan_singkat": "Bunga kredit barang hanya dikenakan pada sisa harga setelah dikurangi uang muka: $P = \\text{Harga Tunai} - \\text{DP}$.",
+            "contoh_penerapan": "Motor seharga $\\text{Rp20.000.000}$ dibeli dengan DP $15\\%$ ($\\text{Rp3.000.000}$): pokok pinjaman dasar bunga adalah **$\\text{Rp17.000.000}$**.",
+            "jebakan_atau_catatan": "Jebakan tersering UTBK adalah menghitung bunga cicilan dari harga tunai penuh sebelum dikurangi DP."
+          },
+          {
+            "judul_poin": "Angsuran Bulanan Tetap Skema Bunga Flat",
+            "penjelasan_singkat": "Cicilan bulanan konstan sebesar jumlah pokok dan bunga tetap: $A = \\frac{P}{n} + (i_{\\text{flat}} \\times P)$ untuk tenor $n$ bulan.",
+            "contoh_penerapan": "Pokok $P = \\text{Rp12.000.000}$, tenor $12$ bulan, bunga flat $1\\%$ per bulan: $A = 1.000.000 + 120.000 =$ **$\\text{Rp1.120.000/bulan}$**.",
+            "jebakan_atau_catatan": "Jika soal memberi bunga flat per **tahun**, bagi $12$ terlebih dahulu untuk mendapat $i_{\\text{flat}}$ bulanan."
+          },
+          {
+            "judul_poin": "Total Pembayaran Kredit dan Penalti Keterlambatan",
+            "penjelasan_singkat": "Total uang keluar adalah $\\text{DP} + (n \\times A) + \\text{Denda}$, dengan denda dihitung dari persentase keterlambatan per hari atau bulan.",
+            "contoh_penerapan": "Angsuran $\\text{Rp1.000.000}$ terlambat $5$ hari dengan penalti $0,5\\%$ per hari: denda $= 5 \\times 0,5\\% \\times 1.000.000 =$ **$\\text{Rp25.000}$**.",
+            "jebakan_atau_catatan": "Cermati basis pengali penalti pada soal: apakah dikalikan dari **nominal angsuran bulanan** atau **sisa pokok utang**."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Perbandingan Penawaran Keuangan dan Depresiasi Aset",
+        "ringkasan_kelompok": "Evaluasi kelayakan opsi nilai kini/akhir dan perhitungan penyusutan nilai buku aset.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Perbandingan Opsi Menggunakan Nilai Kini (Present Value)",
+            "penjelasan_singkat": "Dua penawaran pada waktu berbeda dibandingkan dengan menarik nilai masa depan ke saat ini: $PV = \\frac{FV}{(1+i)^t}$.",
+            "contoh_penerapan": "Tunai $\\text{Rp10.000.000}$ vs bayar $\\text{Rp10.800.000}$ tahun depan (bunga $10\\%$): $PV = \\frac{10,8}{1,1} =$ **$\\text{Rp9.818.182}$** (opsi tunda lebih hemat).",
+            "jebakan_atau_catatan": "Nilai nominal uang di periode berbeda tidak bisa dibandingkan langsung tanpa didiskontokan ke titik waktu yang sama."
+          },
+          {
+            "judul_poin": "Depresiasi Linear (Metode Garis Lurus)",
+            "penjelasan_singkat": "Nilai aset berkurang dengan nominal konstan tiap tahun: $V_t = V_0 - D \\cdot t$, dengan $D = \\frac{V_0 - V_{\\text{residu}}}{n}$.",
+            "contoh_penerapan": "Mesin $\\text{Rp50.000.000}$ menyusut linear $\\text{Rp4.000.000}$ per tahun: setelah $3$ tahun, nilai bukunya $50.000.000 - 3(4.000.000) =$ **$\\text{Rp38.000.000}$**.",
+            "jebakan_atau_catatan": "Pada depresiasi garis lurus berbasis persentase $r\\%$, nominal susut tahunan tetap $D = r\\% \\times V_0$ (dari harga awal)."
+          },
+          {
+            "judul_poin": "Depresiasi Persentase Tahunan (Metode Saldo Menurun)",
+            "penjelasan_singkat": "Nilai buku aset menyusut sebesar persentase tetap $r$ dari nilai buku tahun sebelumnya: $V_t = V_0(1 - r)^t$.",
+            "contoh_penerapan": "Mobil $\\text{Rp200.000.000}$ menyusut $10\\%$ per tahun dari nilai buku: setelah $2$ tahun, $V_2 = 200.000.000(0,9)^2 =$ **$\\text{Rp162.000.000}$**.",
+            "jebakan_atau_catatan": "Penyusutan majemuk $10\\%$ selama $2$ tahun menurunkan nilai sebesar **$19\\%$** ($1 - 0,9^2$), bukan $20\\%$."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Pada soal bertipe 'All of the following are true EXCEPT...', kamu menemukan opsi A persis sama kata-katanya dengan teks, sedangkan opsi D menggunakan sinonim yang tidak kamu kenali. Mana yang seharusnya dipilih?",
@@ -23,7 +23,110 @@
       "Jebakan Half-True / Distorsi: Opsi menggabungkan subjek dari paragraf 1 dengan predikat milik subjek lain di paragraf 2."
     ],
     "stimulus_utama_bersama": "**Forum Thread: Urban Heat Island Mitigation Strategies**\n\n**@EcoPlanner_Rina (Posted 2 hours ago):** Cities worldwide are adopting cool roofs—surfaces coated with reflective white paint—to combat the Urban Heat Island (UHI) effect. Studies show cool roofs can lower indoor temperatures by up to $3^{\\circ}\\text{C}$ and slash air-conditioning energy demand by 15%. However, critics argue that reflective roofs merely bounce solar radiation back into the upper atmosphere, potentially altering local cloud formation without addressing ground-level heat trapped by asphalt roads.\n\n**@GreenArch_Dodi (Posted 1 hour ago):** @EcoPlanner_Rina brings up a valid limitation. That is why green roofs—rooftops covered with vegetation—are superior. Beyond lowering ambient temperatures through evapotranspiration, green roofs absorb rainwater runoff, extend roof membrane lifespan, and enhance urban biodiversity. Yes, initial installation costs are roughly double those of cool roofs, yet long-term stormwater management savings offset the expense.\n\n**@InfraCost_Maya (Posted 45 mins ago):** While I appreciate the ecological perks @GreenArch_Dodi mentioned, municipal budgets cannot ignore structural retrofitting. Older buildings often lack the load-bearing capacity for wet soil and plants, making cool roofs the only financially viable option for rapid, city-wide deployment.\n\n**@SolarTech_Budi (Posted 20 mins ago):** Why choose between cooling and ecology when rooftop solar panels offer better returns? Shading from solar arrays reduces roof heat gain while generating clean electricity. Contrary to popular belief, cool roofs and green roofs actually waste prime urban real estate that should be dedicated exclusively to renewable power generation.",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Taksonomi Sinyal Teks dan Pola Jawaban Unstated Details",
+      "subjudul_ringkas": "Pola penanda rincian teks, bentuk distorsi opsi salah, dan sinyal divergensi opini pada soal pengecualian UTBK.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Sinyal Rincian & Pengecualian dalam Teks",
+          "ringkasan_kelompok": "Penanda daftar fakta dan batasan eksplisit untuk memetakan opsi benar pada soal EXCEPT.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Penanda Daftar Eksplisit (Listing Signals)",
+              "penjelasan_singkat": "Kata penghubung aditif menandai deretan fakta sejajar yang menjadi dasar empat opsi benar dalam soal EXCEPT.",
+              "contoh_penerapan": "\"Solar power lowers bills; **moreover**, it cuts emissions **and** boosts property value.\"",
+              "jebakan_atau_catatan": "Opsi benar sering memarafrasa item terakhir setelah moreover atau in addition; jangan terlewat saat scanning.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Pengecualian Langsung (Explicit Exclusion)",
+              "penjelasan_singkat": "Preposisi atau konjungsi pengecualian memisahkan satu unsur yang tidak termasuk dalam generalisasi kalimat.",
+              "contoh_penerapan": "\"All mammals are warm-blooded, **except for** monotremes like the platypus, which lay eggs.\"",
+              "jebakan_atau_catatan": "Kata except dalam teks bisa membalik logika pertanyaan EXCEPT ganda; periksa arah pertanyaan dengan teliti.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Pembatas & Syarat (Limiting Modifiers)",
+              "penjelasan_singkat": "Kata keterangan pembatas mempersempit cakupan fakta sehingga klaim opsi yang terlalu luas menjadi salah.",
+              "contoh_penerapan": "\"The vaccine proved effective **primarily** in adults **under** fifty years old.\"",
+              "jebakan_atau_catatan": "Opsi pengecoh menghapus kata primarily atau mengubah under menjadi all ages agar tampak benar sekilas.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sinyal Rincian Klasifikasi & Contoh",
+              "penjelasan_singkat": "Frasa pengantar contoh menandai sub-poin spesifik yang kerap dipecah menjadi empat opsi eliminasi.",
+              "contoh_penerapan": "\"Urbanization triggers several issues, **such as** traffic congestion, housing shortages, **and** air pollution.\"",
+              "jebakan_atau_catatan": "Pengecoh memasukkan dampak logis umum yang tidak tertulis dalam deretan contoh such as di bacaan.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Distorsi Jawaban Unstated & False",
+          "ringkasan_kelompok": "Empat bentuk manipulasi makna pada opsi yang menjadi kunci jawaban NOT atau EXCEPT.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Pembalikan Kausalitas atau Peran (Role Reversal)",
+              "penjelasan_singkat": "Opsi memakai seluruh kata kunci teks tetapi menukar posisi sebab-akibat atau hubungan pelaku dan objek.",
+              "contoh_penerapan": "Teks: \"**Deforestation accelerates soil erosion**.\" Opsi salah: \"Soil erosion is the primary driver of deforestation.\"",
+              "jebakan_atau_catatan": "Peserta tertipu karena mengenali semua kata kunci tanpa memeriksa arah hubungan kata kerjanya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Generalisasi Berlebihan (Extreme Overstatement)",
+              "penjelasan_singkat": "Opsi mengubah pernyataan probabilitas atau sebagian dalam teks menjadi klaim mutlak tanpa pengecualian.",
+              "contoh_penerapan": "Teks: \"Remote work **can** improve productivity.\" Opsi salah: \"Remote work **always** guarantees higher employee output.\"",
+              "jebakan_atau_catatan": "Waspadai kata mutlak pada opsi (always, never, sole) ketika teks hanya memakai modal can atau often.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Informasi di Luar Cakupan (Out-of-Scope Aspect)",
+              "penjelasan_singkat": "Opsi menyebut topik masuk akal secara umum tetapi aspeknya sama sekali tidak dibahas dalam wacana.",
+              "contoh_penerapan": "Teks membahas sejarah dan budidaya kopi, lalu opsi menanyakan \"**economic impact on coffee farmers**.\"",
+              "jebakan_atau_catatan": "Jangan pakai asumsi luar teks; jika aspek tidak memiliki padanan kalimat di bacaan, itulah jawabannya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Perbandingan Palsu (False Comparison)",
+              "penjelasan_singkat": "Teks menyebut dua hal secara terpisah tanpa membandingkan, namun opsi menambahkan klaim lebih unggul.",
+              "contoh_penerapan": "Teks: \"Both electric and hybrid cars cut fuel use.\" Opsi salah: \"Electric cars are **cheaper than** hybrids.\"",
+              "jebakan_atau_catatan": "Kemunculan dua entitas di paragraf yang sama sering mengecoh pembaca seolah teks membandingkan keduanya.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sinyal Divergensi & Kontradiksi pada Thread Komentar",
+          "ringkasan_kelompok": "Penanda wacana untuk mendeteksi komentator yang melawan arus opini mayoritas dalam utas diskusi.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Penanda Kontras & Sanggahan Eksplisit",
+              "penjelasan_singkat": "Konjungsi pertentangan di awal komentar menandai sikap yang langsung menolak konsensus komentator sebelumnya.",
+              "contoh_penerapan": "\"**On the contrary**, extending school hours will only exhaust students without raising test scores.\"",
+              "jebakan_atau_catatan": "Mayoritas sering memakai I agree atau Exactly; cari satu akun yang membuka dengan However atau Yet.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sinyal Skeptisisme & Pergeseran Fokus (Pivot)",
+              "penjelasan_singkat": "Komentator meragukan efektivitas solusi mayoritas atau mengalihkan diskusi ke risiko tersembunyi yang diabaikan.",
+              "contoh_penerapan": "\"While digital textbooks save paper, **I doubt** they solve unequal internet access among students.\"",
+              "jebakan_atau_catatan": "Klausa awal (While...) mengakui opini mayoritas; fokuslah pada klausa utama setelah koma untuk melihat pertentangannya.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

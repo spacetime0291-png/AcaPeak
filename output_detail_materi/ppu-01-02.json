@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "ppu-01-02",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Kaidah Relasi Makna Kata (KBBI VI)",
+    "subjudul_ringkas": "Panduan sistematis sinonim, antonim, polisemi, homonim, dan medan makna untuk penafsiran wacana UTBK-SNBT.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Sinonim dan Antonim Kontekstual",
+        "ringkasan_kelompok": "Kaidah substitusi dan oposisi makna kata berbasis kelas kata serta nuansa kalimat.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Sinonim Keselarasan Nuansa dan Laras Bahasa",
+            "penjelasan_singkat": "Kata bersinonim wajib memiliki nilai rasa, tingkat keformalan, dan kolokasi yang selaras dengan konteks kalimat.",
+            "contoh_penerapan": "Kebijakan fiskal itu memicu **akselerasi** (padanan: **percepatan**) pertumbuhan ekonomi nasional secara signifikan pada kuartal ketiga.",
+            "jebakan_atau_catatan": "Mengganti kata *wafat* menjadi *mati* untuk tokoh terhormat merusak kesantunan dan register kalimat baku."
+          },
+          {
+            "judul_poin": "Sinonim Kesetaraan Kelas Kata Sintaksis",
+            "penjelasan_singkat": "Kata pengganti harus menduduki kelas kata dan fungsi sintaksis yang identik dengan kata asal.",
+            "contoh_penerapan": "Pemerintah berupaya **menanggulangi** (padanan: **mengatasi**) krisis pangan melalui subsidi pupuk bagi petani kecil.",
+            "jebakan_atau_catatan": "Mengganti verba *menanggulangi* dengan nomina *penanggulangan* menyebabkan kalimat kehilangan predikat aktifnya."
+          },
+          {
+            "judul_poin": "Antonim Kontekstual Berbasis Arah Argumentasi",
+            "penjelasan_singkat": "Lawan kata dalam paragraf argumentatif ditentukan oleh arah sikap penulis, bukan sekadar makna kamus lepas.",
+            "contoh_penerapan": "Alih-alih bersikap **skeptis** terhadap inovasi digital, investor justru tampak **optimistis** menanamkan modalnya.",
+            "jebakan_atau_catatan": "Memilih kata *percaya* sebagai lawan *skeptis* kurang tepat karena tidak sejajar secara nuansa sikap."
+          },
+          {
+            "judul_poin": "Antonim Biner Mutlak vs Antonim Gradasi",
+            "penjelasan_singkat": "Antonim biner bersifat mutlak tanpa tingkatan, sedangkan antonim gradasi memiliki spektrum perbandingan di antaranya.",
+            "contoh_penerapan": "Status kepesertaan ujian bersifat mutlak antara **lulus** atau **gugur** tanpa kategori menengah.",
+            "jebakan_atau_catatan": "Menganggap *mahal* antonim mutlak *murah*, padahal terdapat tingkatan relatif seperti *terjangkau* atau *sedang*."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Polisemi, Homonim, Homofon, dan Homograf",
+        "ringkasan_kelompok": "Pembedaan satu kata bercabang makna dengan dua kata berbeda yang mirip bentuk.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Polisemi Makna Lugas dan Makna Kias Terkait",
+            "penjelasan_singkat": "Satu entri kamus memiliki beragam cabang makna yang masih bertautan secara konseptual atau metaforis.",
+            "contoh_penerapan": "**Kepala** sekolah itu memimpin rapat dengan **kepala** dingin demi meredam konflik internal guru.",
+            "jebakan_atau_catatan": "Mengira *kepala* (bagian tubuh) dan *kepala* (pemimpin) adalah dua kata berbeda padahal satu entri."
+          },
+          {
+            "judul_poin": "Polisemi Lintas Ragam Bidang Ilmu",
+            "penjelasan_singkat": "Kata polisemi dapat bergeser maknanya mengikuti disiplin ilmu namun tetap mempertahankan inti konsep dasarnya.",
+            "contoh_penerapan": "**Akar** pohon beringin itu menghujam tanah, persis **akar** masalah kemiskinan yang sulit dicabut.",
+            "jebakan_atau_catatan": "Menyamakan konteks *akar* (botani) dengan *akar* (akar kuadrat matematika) saat mencari padanan makna."
+          },
+          {
+            "judul_poin": "Homonim Murni (Sama Lafal dan Ejaan)",
+            "penjelasan_singkat": "Dua kata berlainan entri kamus yang kebetulan identik ejaan serta pelafalannya tanpa hubungan makna.",
+            "contoh_penerapan": "**Bisa** ular kobra sangat mematikan, tetapi dokter **bisa** menetralkannya dengan serum khusus.",
+            "jebakan_atau_catatan": "Menganggap *bisa* (racun) dan *bisa* (mampu) berpolisemi padahal keduanya tercatat pada entri berbeda."
+          },
+          {
+            "judul_poin": "Homofon (Sama Lafal, Beda Ejaan dan Makna)",
+            "penjelasan_singkat": "Pasangan kata yang bunyi pelafalannya sama persis, tetapi penulisan huruf dan maknanya berbeda.",
+            "contoh_penerapan": "**Massa** demonstran berkumpul di depan gedung DPR menyuarakan aspirasi **masa** depan buruh.",
+            "jebakan_atau_catatan": "Tertukar menulis *sanksi* (hukuman) menjadi *sangsi* (ragu) dalam penyuntingan teks akademik UTBK."
+          },
+          {
+            "judul_poin": "Homograf (Sama Ejaan, Beda Lafal dan Makna)",
+            "penjelasan_singkat": "Pasangan kata dengan susunan huruf identik, namun berbeda pelafalan vokal dan artinya.",
+            "contoh_penerapan": "Pejabat **teras** kementerian itu berdiskusi santai di **teras** rumah dinas sambil minum teh.",
+            "jebakan_atau_catatan": "Melafalkan kedua kata *teras* secara identik sehingga gagal membedakan makna inti dan serambi."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Medan Makna dan Pengelompokan Leksikal",
+        "ringkasan_kelompok": "Pengelompokan kosakata dalam satu ranah konsep, asosiasi bidang ilmu, atau struktur hierarki.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Medan Makna Kolokasi (Asosiasi Ranah Ilmu)",
+            "penjelasan_singkat": "Kelompok kata yang kerap muncul berdampingan dalam satu ranah aktivitas, profesi, atau bidang ilmu.",
+            "contoh_penerapan": "Dalam wacana agraria, kata **irigasi**, **gulma**, **hama**, dan **panen** terikat medan makna pertanian.",
+            "jebakan_atau_catatan": "Memasukkan kata *inflasi* ke medan makna pertanian hanya karena muncul dalam paragraf sama."
+          },
+          {
+            "judul_poin": "Medan Makna Seperangkat (Kohiponim Sejajar)",
+            "penjelasan_singkat": "Kumpulan kata yang membagi satu konsep utuh ke dalam bagian-bagian setara dan berurutan.",
+            "contoh_penerapan": "Kata **selasa**, **rabu**, dan **kamis** terikat dalam satu medan makna nama hari.",
+            "jebakan_atau_catatan": "Mengelompokkan *januari* (nama bulan) bersama *senin* (nama hari) sebagai submedan waktu setara."
+          }
+        ]
+      }
+    ]
+  }
+}

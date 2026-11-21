@@ -1,0 +1,96 @@
+{
+  "kode_subbab": "pk-04-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Sifat, Rumus, & Strategi Ukuran Pemusatan",
+    "subjudul_ringkas": "Panduan padat konsep aljabar mean, frekuensi tabel, optimasi urutan data, dan ketahanan pencilan untuk UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Aljabar Mean & Hubungan Subset Data",
+        "ringkasan_kelompok": "Mengolah total data, rata-rata gabungan antarkelompok, keseimbangan simpangan, dan transformasi linear.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Ekspansi Jumlah Total Data untuk Variabel Hilang",
+            "penjelasan_singkat": "Ubah rata-rata menjadi total jumlah data menggunakan $\\sum x_i = n \\cdot \\bar{x}$ sebelum menyusun persamaan aljabar untuk mencari nilai variabel.",
+            "contoh_penerapan": "Rata-rata dari $4, 7, x, 9$ adalah $7$, maka $4+7+x+9 = 4 \\times 7 = 28$, sehingga diperoleh **$x = 8$**.",
+            "jebakan_atau_catatan": "Hitung ulang banyak data $n$ termasuk variabel yang dicari; peserta sering lupa memasukkan variabel ke pembagi $n$."
+          },
+          {
+            "judul_poin": "Rata-Rata Gabungan Dua atau Lebih Subset Data",
+            "penjelasan_singkat": "Jika kelompok beranggota $n_1$ (mean $\\bar{x}_1$) digabung dengan $n_2$ (mean $\\bar{x}_2$), maka $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1 + n_2}$.",
+            "contoh_penerapan": "Kelas A ($20$ siswa, mean $80$) digabung Kelas B ($30$ siswa, mean $70$) menghasilkan **$\\bar{x}_{\\text{gab}} = \\frac{1600+2100}{50} = 74$**.",
+            "jebakan_atau_catatan": "Jangan merata-ratakan langsung $\\frac{\\bar{x}_1 + \\bar{x}_2}{2}$ kecuali jika ukuran kedua kelompok sama ($n_1 = n_2$); gunakan perbandingan bobot $n_1 : n_2$."
+          },
+          {
+            "judul_poin": "Sifat Keseimbangan Simpangan terhadap Mean",
+            "penjelasan_singkat": "Jumlah selisih seluruh datum terhadap nilai rata-ratanya selalu sama dengan nol, dirumuskan sebagai $\\sum (x_i - \\bar{x}) = 0$.",
+            "contoh_penerapan": "Data $72, 76, 83, x$ berata-rata $75$. Selisihnya $(-3) + (+1) + (+8) + (x-75) = 0$, maka **$x = 69$**.",
+            "jebakan_atau_catatan": "Trik cepat UTBK untuk angka besar: hitung selisih tiap data terhadap target mean tanpa perlu menjumlahkan ratusan atau ribuan."
+          },
+          {
+            "judul_poin": "Perubahan Ukuran Pemusatan Akibat Operasi Linear",
+            "penjelasan_singkat": "Jika setiap data $x_i$ diubah menjadi $ax_i + b$, maka $\\bar{x}_{\\text{baru}} = a\\bar{x} + b$, $Me_{\\text{baru}} = aMe + b$, $Mo_{\\text{baru}} = aMo + b$.",
+            "contoh_penerapan": "Data dengan $\\bar{x} = 12$ dan $Me = 10$ dikali $2$ lalu dikurangi $3$ menghasilkan **$\\bar{x}_{\\text{baru}} = 21$** dan **$Me_{\\text{baru}} = 17$**.",
+            "jebakan_atau_catatan": "Berbeda dengan jangkauan atau simpangan baku, ukuran pemusatan selalu ikut berubah terhadap operasi penjumlahan maupun pengurangan konstanta $b$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Tabel Frekuensi Tunggal, Diagram, & Kombinasi Ukuran",
+        "ringkasan_kelompok": "Menghitung ukuran pemusatan dari penyajian frekuensi serta memadukan syarat median dan modus.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Mean Data Berbobot pada Tabel dan Diagram Batang",
+            "penjelasan_singkat": "Kalikan setiap nilai data $x_i$ dengan frekuensinya $f_i$, lalu bagi dengan total frekuensi: $\\bar{x} = \\frac{\\sum (f_i \\cdot x_i)}{\\sum f_i}$.",
+            "contoh_penerapan": "Nilai $6$ ($f=2$), $8$ ($f=3$), dan $10$ ($f=5$) memiliki mean **$\\bar{x} = \\frac{12 + 24 + 50}{2+3+5} = 8,6$**.",
+            "jebakan_atau_catatan": "Jangan membagi dengan banyaknya kategori nilai ($3$); pembagi wajib jumlah seluruh frekuensi ($\\sum f_i = 10$) atau total tinggi batang."
+          },
+          {
+            "judul_poin": "Menentukan Median Menggunakan Frekuensi Kumulatif",
+            "penjelasan_singkat": "Urutkan kategori $x_i$ dari terkecil, susun frekuensi kumulatif $F_k$, lalu identifikasi posisi data ke-$\\frac{n+1}{2}$ (ganjil) atau tengah genap.",
+            "contoh_penerapan": "Dari $n = 20$ data terurut ($F_k$ nilai $7$ sampai ke-$9$, nilai $8$ sampai ke-$15$), **$Me = \\frac{x_{10}+x_{11}}{2} = 8$**.",
+            "jebakan_atau_catatan": "Pastikan sumbu mendatar diagram batang atau kolom nilai tabel sudah terurut membesar sebelum menjumlahkan frekuensi kumulatifnya."
+          },
+          {
+            "judul_poin": "Kombinasi Syarat Modus Tunggal, Median, dan Mean",
+            "penjelasan_singkat": "Gunakan modus tunggal ($Mo$) untuk mengunci minimal dua kemunculan nilai yang sama, lalu susun urutan untuk memenuhi syarat $Me$.",
+            "contoh_penerapan": "Empat bilangan bulat memiliki $Mo = 6$, $Me = 7$, dan $\\bar{x} = 8$. Susunan terurutnya adalah **$6, 6, 8, 12$**.",
+            "jebakan_atau_catatan": "Jika $Mo$ tunggal dan $n=4$ dengan $Me > Mo$, maka dua datum terkecil wajib bernilai sama dengan $Mo$ agar frekuensi tertinggi unik."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Optimasi Urutan Data & Ketahanan Pencilan",
+        "ringkasan_kelompok": "Menentukan batas ekstrem datum bilangan bulat positif serta memahami ketahanan median terhadap pencilan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Memaksimalkan Datum Terbesar pada Kumpulan Bilangan Bulat",
+            "penjelasan_singkat": "Susun $x_1 \\le x_2 \\le \\dots \\le x_n$. Agar $x_n$ maksimum dengan $\\bar{x}$ dan $Me$ tetap, buat datum lain sekecil mungkin.",
+            "contoh_penerapan": "Lima bilangan bulat positif berbeda berata-rata $10$ (total $50$) dengan $Me = 8$. Susunan minimumnya $1, 2, 8, 9$, sehingga **$x_5 = 30$**.",
+            "jebakan_atau_catatan": "Perhatikan syarat 'bilangan bulat positif' (mulai dari $1$) dan 'berbeda' (tidak boleh kembar, sehingga setelah median $8$ wajib minimal $9$)."
+          },
+          {
+            "judul_poin": "Meminimalkan Datum Terbesar atau Memaksimalkan Datum Terkecil",
+            "penjelasan_singkat": "Untuk meminimalkan $x_n$ (atau memaksimalkan $x_1$), buat selisih antardatum sekecil mungkin dengan mendekatkan nilai ke median atau mean.",
+            "contoh_penerapan": "Empat bilangan bulat berbeda berjumlah $30$ dengan $Me = 7$. Agar $x_4$ minimum, pilih $x_2=6, x_3=8, x_1=5$, sehingga **$x_4 = 11$**.",
+            "jebakan_atau_catatan": "Jika data boleh sama, set datum di kanan median sama dengan $Me$; jika wajib berbeda, gunakan bilangan bulat berurutan tepat di atas $Me$."
+          },
+          {
+            "judul_poin": "Ketahanan (Robustness) Median dibanding Mean terhadap Pencilan",
+            "penjelasan_singkat": "Median bersifat tahan (*robust*) terhadap nilai ekstrem (*outlier*), sedangkan mean sangat sensitif dan tertarik ke arah ekor pencilan.",
+            "contoh_penerapan": "Data $4, 5, 6, 7, 8$ ($\\bar{x}=6, Me=6$) ditambah pencilan $100$: **$\\bar{x}$ melonjak menjadi $21,7$**, sedangkan **$Me$ hanya bergeser ke $6,5$**.",
+            "jebakan_atau_catatan": "Pada soal konseptual UTBK, jika terdapat pencilan sangat besar di kanan, urutan nilainya hampir selalu $Mo \\le Me < \\bar{x}$."
+          }
+        ]
+      }
+    ]
+  }
+}

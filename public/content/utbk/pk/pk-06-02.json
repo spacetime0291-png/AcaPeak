@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 6,
+    "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Diketahui segitiga siku-siku $ABC$ dengan siku-siku di $B$ dan $\\sin A = \\frac{3}{5}$. Jika panjang $BC = 6\\text{ cm}$, berapakah nilai $\\cos C$?",
@@ -25,8 +25,111 @@
     "stimulus_utama_bersama": null,
     "visual": {
       "tipe": "svg",
-      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='65,175 265,175 265,45' fill='#EFF6FF' stroke='#1E293B' stroke-width='2'/><polyline points='249,175 249,159 265,159' fill='none' stroke='#1E293B' stroke-width='2'/><path d='M 100,175 A 35,35 0 0,0 94,156' fill='none' stroke='#F59E0B' stroke-width='2.5'/><text x='107' y='167' font-family='sans-serif' font-size='13' font-weight='bold' fill='#F59E0B'>θ</text><text x='165' y='195' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Samping (Sa)</text><text x='273' y='112' text-anchor='start' font-family='sans-serif' font-size='12' font-weight='bold' fill='#3B82F6'>Depan (De)</text><text x='150' y='98' text-anchor='end' font-family='sans-serif' font-size='12' font-weight='bold' fill='#10B981'>Miring (Mi)</text></svg>",
-      "caption": "Posisi sisi Depan, Samping, dan Miring terhadap sudut lancip θ"
+      "kode": "<svg viewBox='0 0 420 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><polygon points='60,185 220,185 220,65' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2' stroke-linejoin='round'/><polyline points='208,185 208,173 220,173' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><path d='M 90,185 A 30,30 0 0,0 84,167' fill='none' stroke='#FBBF24' stroke-width='2'/><path d='M 220,95 A 30,30 0 0,0 196,83' fill='none' stroke='#34D399' stroke-width='2'/><text x='44' y='192' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>A</text><text x='226' y='192' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>B</text><text x='224' y='58' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>C</text><text x='95' y='175' fill='#FBBF24' font-family='sans-serif' font-size='13' font-weight='bold'>θ</text><text x='172' y='105' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold'>90°-θ</text><text x='140' y='204' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Samping θ (4)</text><text x='230' y='128' fill='#34D399' font-family='sans-serif' font-size='12'>Depan θ (3)</text><text x='125' y='115' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='end'>Miring (5)</text><rect x='275' y='35' width='125' height='170' rx='8' fill='#0F172A' stroke='#1E293B' stroke-width='1'/><text x='337' y='58' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Identitas Penyiku</text><line x1='288' y1='68' x2='387' y2='68' stroke='#1E293B' stroke-width='1'/><text x='337' y='92' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>A + C = 90°</text><text x='337' y='118' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>cos C = sin A</text><text x='337' y='142' fill='#38BDF8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>= 3 / 5</text><line x1='288' y1='156' x2='387' y2='156' stroke='#1E293B' stroke-width='1'/><text x='337' y='176' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>30°:60°:90° = 1:√3:2</text><text x='337' y='193' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>45°:45°:90° = 1:1:√2</text></svg>",
+      "caption": "Ilustrasi segitiga siku-siku ABC dengan perbandingan sisi depan, samping, miring dan relasi sudut berpenyiku cos C = sin A."
+    },
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Rumus & Sifat Trigonometri Segitiga Siku-Siku",
+      "subjudul_ringkas": "Panduan lengkap rasio trigonometri, sudut istimewa, dan segitiga siku-siku bersusun untuk pengukuran geometri UTBK.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_2": "Contoh Hitung Mini",
+        "kolom_3": "Jebakan / Trik Cepat"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Perbandingan Trigonometri Dasar & Identitas",
+          "ringkasan_kelompok": "Rumus rasio sisi, fungsi kebalikan, serta identitas dasar pada sudut lancip.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Rasio Sinus, Kosinus, dan Tangen",
+              "penjelasan_singkat": "Pada sudut lancip $\\theta$: $\\sin \\theta = \\frac{\\text{De}}{\\text{Mi}}$, $\\cos \\theta = \\frac{\\text{Sa}}{\\text{Mi}}$, dan $\\tan \\theta = \\frac{\\text{De}}{\\text{Sa}}$ dengan sisi miring terpanjang.",
+              "contoh_penerapan": "Segitiga siku-siku dengan depan $3$ dan samping $4$ memiliki miring $\\sqrt{3^2+4^2}=5$, sehingga **$\\sin \\theta = \\frac{3}{5}$**.",
+              "jebakan_atau_catatan": "Sisi depan dan samping bergantung pada posisi sudut acuan $\\theta$, bukan sekadar posisi mendatar atau tegak pada gambar.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Rasio Kebalikan: Cosecan, Secan, dan Cotangen",
+              "penjelasan_singkat": "Kebalikan rasio dasar meliputi $\\csc \\theta = \\frac{\\text{Mi}}{\\text{De}}$, $\\sec \\theta = \\frac{\\text{Mi}}{\\text{Sa}}$, dan $\\cot \\theta = \\frac{\\text{Sa}}{\\text{De}}$ untuk $0^\\circ < \\theta < 90^\\circ$.",
+              "contoh_penerapan": "Jika diketahui $\\cos \\theta = \\frac{5}{13}$ untuk sudut lancip $\\theta$, maka **$\\sec \\theta = \\frac{13}{5}$** dan $\\cot \\theta = \\frac{5}{12}$.",
+              "jebakan_atau_catatan": "Jangan tertukar: $\\sec \\theta$ adalah kebalikan $\\cos \\theta$ (bukan $\\sin \\theta$), sedangkan $\\csc \\theta$ adalah kebalikan $\\sin \\theta$.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Identitas Tangen dan Identitas Pythagoras",
+              "penjelasan_singkat": "Berlaku $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$ ($\\cos \\theta \\neq 0$) serta identitas $\\sin^2 \\theta + \\cos^2 \\theta = 1$ dan $1 + \\tan^2 \\theta = \\sec^2 \\theta$.",
+              "contoh_penerapan": "Jika $\\sin \\theta = \\frac{2}{3}$ pada sudut lancip, maka $\\cos \\theta = \\sqrt{1 - (\\frac{2}{3})^2} =$ **$\\frac{\\sqrt{5}}{3}$**.",
+              "jebakan_atau_catatan": "Gunakan tripel Pythagoras ($3\\text{-}4\\text{-}5$, $5\\text{-}12\\text{-}13$, $8\\text{-}15\\text{-}17$) pada segitiga siku-siku bantu untuk mencari rasio lain lebih cepat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hubungan Sudut Berpenyiku (Komplemen)",
+              "penjelasan_singkat": "Dua sudut lancip segitiga siku-siku berjumlah $90^\\circ$, sehingga $\\sin(90^\\circ - \\theta) = \\cos \\theta$ dan $\\tan(90^\\circ - \\theta) = \\cot \\theta$.",
+              "contoh_penerapan": "Pada $\\triangle ABC$ siku-siku di $C$, jika $\\sin A = \\frac{7}{25}$, maka **$\\cos B = \\sin(90^\\circ - B) = \\frac{7}{25}$**.",
+              "jebakan_atau_catatan": "Nilai $\\sin A$ selalu sama dengan $\\cos B$ selama $A + B = 90^\\circ$; tidak perlu menghitung ulang panjang sisi.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sudut Istimewa & Aplikasi Bangun Datar",
+          "ringkasan_kelompok": "Nilai pasti sudut $0^\\circ\\text{--}90^\\circ$ dan rasio cepat untuk menghitung ukuran bangun datar.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Nilai Pasti Sudut Istimewa ($0^\\circ$ hingga $90^\\circ$)",
+              "penjelasan_singkat": "Nilai $\\sin \\theta$ untuk $(0^\\circ, 30^\\circ, 45^\\circ, 60^\\circ, 90^\\circ)$ adalah $0, \\frac{1}{2}, \\frac{1}{2}\\sqrt{2}, \\frac{1}{2}\\sqrt{3}, 1$, sedangkan $\\cos \\theta$ berkebalikan urutan.",
+              "contoh_penerapan": "Hasil dari $\\tan 60^\\circ \\times \\sin 30^\\circ + \\cos 0^\\circ$ adalah $\\sqrt{3} \\times \\frac{1}{2} + 1 =$ **$\\frac{1}{2}\\sqrt{3} + 1$**.",
+              "jebakan_atau_catatan": "Ingat $\\tan 90^\\circ$ tidak terdefinisi karena pembagian dengan $\\cos 90^\\circ = 0$, sedangkan nilai $\\tan 0^\\circ = 0$.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Rasio Sisi Segitiga Siku-Siku Khusus",
+              "penjelasan_singkat": "Perbandingan sisi depan sudut $(30^\\circ : 60^\\circ : 90^\\circ)$ adalah $1 : \\sqrt{3} : 2$, sedangkan $(45^\\circ : 45^\\circ : 90^\\circ)$ adalah $1 : 1 : \\sqrt{2}$.",
+              "contoh_penerapan": "Jika hipotenusa segitiga $30^\\circ\\text{-}60^\\circ\\text{-}90^\\circ$ adalah $10\\text{ cm}$, sisi depan $30^\\circ$ adalah **$5\\text{ cm}$** dan depan $60^\\circ$ adalah **$5\\sqrt{3}\\text{ cm}$**.",
+              "jebakan_atau_catatan": "Rasio $\\sqrt{3}$ berada di depan sudut $60^\\circ$, bukan hipotenusa; sisi terpanjang selalu di depan sudut $90^\\circ$ (rasio $2$).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Menghitung Tinggi dan Luas Bangun Datar",
+              "penjelasan_singkat": "Tinggi bangun datar dicari lewat $t = s \\sin \\theta$, lalu luas dihitung dengan $L = \\frac{1}{2} a t$ atau $L = a t$.",
+              "contoh_penerapan": "Jajargenjang dengan alas $8\\text{ cm}$, sisi miring $6\\text{ cm}$, dan sudut apit $30^\\circ$ memiliki tinggi $3\\text{ cm}$ dan luas **$24\\text{ cm}^2$**.",
+              "jebakan_atau_catatan": "Pada rumus luas jajargenjang atau trapesium, jangan langsung mengalikan dua sisi yang mengapit sudut tanpa faktor $\\sin \\theta$.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Garis Tinggi Bantu pada Segitiga Sembarang",
+              "penjelasan_singkat": "Garis tinggi membagi segitiga lancip atau tumpul menjadi dua segitiga siku-siku untuk menghitung panjang sisi tak langsung.",
+              "contoh_penerapan": "Pada $\\triangle ABC$ dengan $AB = 4\\sqrt{2}$, $\\angle A = 45^\\circ$, $\\angle C = 30^\\circ$, garis tinggi $BD = 4$ menghasilkan **$BC = 8$**.",
+              "jebakan_atau_catatan": "Jangan terapkan rasio depan/miring langsung pada segitiga sembarang sebelum menarik garis tinggi tegak lurus ke alas.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Segitiga Siku-Siku Bersusun & Pengukuran Tak Langsung",
+          "ringkasan_kelompok": "Strategi mencari ruas garis bertingkat dan sudut elevasi dalam soal pengayaan.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Segitiga Siku-Siku Bersusun Berbagi Satu Sisi",
+              "penjelasan_singkat": "Dua segitiga siku-siku yang menempel dihitung berantai dengan menjadikan sisi persekutuan (bersama) sebagai jembatan penghubung rasio.",
+              "contoh_penerapan": "Jika $\\triangle ABD$ siku-siku di $B$ ($AB=6$, $\\angle A=30^\\circ$) menempel pada $\\triangle BCD$ siku-siku di $D$ ($\\angle DBC=45^\\circ$), maka **$CD = \\sqrt{6}$**.",
+              "jebakan_atau_catatan": "Pastikan posisi sudut $90^\\circ$ pada setiap segitiga teridentifikasi benar agar tidak tertukar antara sisi miring dan sisi tegak.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Segitiga Bertumpuk dengan Dua Sudut Elevasi",
+              "penjelasan_singkat": "Objek tinggi $t$ yang diamati dari dua titik segaris bersudut $\\alpha$ dan $\\beta$ memenuhi selisih jarak $\\Delta x = t(\\cot \\alpha - \\cot \\beta)$.",
+              "contoh_penerapan": "Menara diamati dengan elevasi $30^\\circ$ lalu maju $20\\text{ m}$ menjadi $60^\\circ$; tinggi menara $t = \\frac{20}{\\sqrt{3} - \\frac{1}{3}\\sqrt{3}} =$ **$10\\sqrt{3}\\text{ m}$**.",
+              "jebakan_atau_catatan": "Sudut elevasi dan sudut depresi selalu diukur dari garis mendatar (horizontal), bukan dari garis vertikal dinding atau tiang.",
+              "visual": null
+            }
+          ]
+        }
+      ]
     }
   },
   "zona_2_variasi_inti": [
@@ -37,7 +140,11 @@
       "stimulus_mini": "Pada segitiga siku-siku $PQR$ dengan siku-siku di $Q$, diketahui panjang sisi $PQ = 2\\sqrt{6}\\text{ cm}$ dan hipotenusa $PR = 5\\text{ cm}$. Tentukan nilai $\\tan P + \\cos R$.",
       "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nIdentifikasi posisi sudut acuan terlebih dahulu. Terhadap sudut $P$, sisi $PQ = 2\\sqrt{6}$ adalah sisi samping dan $PR = 5$ adalah sisi miring. Hitung sisi depan $QR$ menggunakan teorema Pythagoras:\n$$QR = \\sqrt{PR^2 - PQ^2} = \\sqrt{5^2 - (2\\sqrt{6})^2} = \\sqrt{25 - 24} = 1\\text{ cm}$$\nSelanjutnya, substitusi rasio trigonometri sesuai definisi masing-masing sudut:\n- $\\tan P = \\frac{\\text{Depan } P}{\\text{Samping } P} = \\frac{QR}{PQ} = \\frac{1}{2\\sqrt{6}} = \\frac{\\sqrt{6}}{12}$\n- $\\cos R = \\frac{\\text{Samping } R}{\\text{Miring}} = \\frac{QR}{PR} = \\frac{1}{5}$\nJumlahkan keduanya: $\\frac{\\sqrt{6}}{12} + \\frac{1}{5} = \\frac{5\\sqrt{6} + 12}{60}$.\n\n**(2) Jalur Taktis UTBK**\nGunakan relasi sudut berpenyiku ($P + R = 90^\\circ$) sehingga $\\cos R = \\sin P$. Cek selisih kuadrat hipotenusa dan sisi diketahui ($25 - 24 = 1$) secara mental tanpa menulis rumus panjang untuk langsung memperoleh sisi ketiga bernilai $1$, lalu rasionalkan penyebut akar di langkah akhir.",
       "kunci_pembeda": "Variasi ini selalu diawali penentuan sisi ketiga via Pythagoras atau tripel istimewa sebelum mengevaluasi rasio sudut lancip yang diminta.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><polygon points='65,180 265,180 265,95' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2' stroke-linejoin='round'/><polyline points='253,180 253,168 265,168' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><path d='M 98,180 A 33,33 0 0,0 95,167' fill='none' stroke='#FBBF24' stroke-width='2'/><path d='M 265,123 A 28,28 0 0,0 240,106' fill='none' stroke='#34D399' stroke-width='2'/><text x='48' y='186' fill='#FBBF24' font-family='sans-serif' font-size='14' font-weight='bold'>P</text><text x='272' y='186' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>Q</text><text x='270' y='88' fill='#34D399' font-family='sans-serif' font-size='14' font-weight='bold'>R</text><text x='165' y='202' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>PQ = 2√6 cm</text><text x='155' y='125' fill='#38BDF8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='end'>PR = 5 cm</text><text x='275' y='142' fill='#34D399' font-family='sans-serif' font-size='13' font-weight='bold'>QR = 1 cm</text><rect x='45' y='24' width='310' height='36' rx='6' fill='#0F172A' stroke='#1E293B' stroke-width='1'/><text x='200' y='46' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Pythagoras: QR = √(5² - (2√6)²) = √(25 - 24) = 1</text></svg>",
+        "caption": "Segitiga siku-siku PQR untuk menentukan sisi ketiga QR menggunakan Pythagoras sebelum menghitung tan P + cos R."
+      }
     },
     {
       "nomor_variasi": 2,
@@ -46,7 +153,11 @@
       "stimulus_mini": "Jajargenjang $ABCD$ memiliki panjang sisi $AB = 10\\text{ cm}$, $AD = 6\\text{ cm}$, dan besar $\\angle BAD = 60^\\circ$. Hitunglah luas jajargenjang $ABCD$ tersebut.",
       "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nTarik garis tinggi $DE$ tegak lurus terhadap alas $AB$ sehingga terbentuk segitiga siku-siku $AED$ dengan $\\angle EAD = 60^\\circ$ dan sisi miring $AD = 6\\text{ cm}$. Tinggi jajargenjang $DE$ merupakan sisi depan sudut $60^\\circ$:\n$$\\sin 60^\\circ = \\frac{DE}{AD} \\Rightarrow \\frac{\\sqrt{3}}{2} = \\frac{DE}{6} \\Rightarrow DE = 3\\sqrt{3}\\text{ cm}$$\nHitung luas jajargenjang menggunakan rumus alas kali tinggi:\n$$L = AB \\times DE = 10 \\times 3\\sqrt{3} = 30\\sqrt{3}\\text{ cm}^2$$\n\n**(2) Jalur Taktis UTBK**\nTerapkan skala perbandingan segitiga istimewa $30^\\circ : 60^\\circ : 90^\\circ = 1 : \\sqrt{3} : 2$ secara langsung tanpa menuliskan persamaan sinus. Karena sisi miring (rasio $2$) bernilai $6\\text{ cm}$, maka faktor pengalinya adalah $3$. Sisi di depan sudut $60^\\circ$ (rasio $\\sqrt{3}$) otomatis bernilai $3\\sqrt{3}\\text{ cm}$, lalu kalikan langsung dengan alas $10\\text{ cm}$ dalam waktu kurang dari $20$ detik.",
       "kunci_pembeda": "Variasi ini memunculkan sudut eksplisit $30^\\circ, 45^\\circ,$ atau $60^\\circ$ pada bangun datar yang harus dipecah menggunakan garis tinggi bantu.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><polygon points='55,180 265,180 335,65 125,65' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2' stroke-linejoin='round'/><line x1='125' y1='65' x2='125' y2='180' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><polyline points='125,168 137,168 137,180' fill='none' stroke='#FBBF24' stroke-width='1.5'/><path d='M 85,180 A 30,30 0 0,0 71,154' fill='none' stroke='#FBBF24' stroke-width='2'/><text x='40' y='186' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>A</text><text x='272' y='186' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>B</text><text x='342' y='65' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>C</text><text x='118' y='56' fill='#E2E8F0' font-family='sans-serif' font-size='14' font-weight='bold'>D</text><text x='120' y='196' fill='#FBBF24' font-family='sans-serif' font-size='13' font-weight='bold'>E</text><text x='86' y='168' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold'>60°</text><text x='78' y='118' fill='#38BDF8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='end'>6 cm</text><text x='132' y='126' fill='#34D399' font-family='sans-serif' font-size='13' font-weight='bold'>t = 3√3 cm</text><text x='200' y='204' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>AB = 10 cm</text><rect x='195' y='24' width='175' height='30' rx='6' fill='#0F172A' stroke='#1E293B' stroke-width='1'/><text x='282' y='43' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Luas = 10 × 3√3 = 30√3 cm²</text></svg>",
+        "caption": "Jajargenjang ABCD dengan garis tinggi bantu DE membentuk segitiga istimewa 30°-60°-90° untuk menghitung tinggi dan luas."
+      }
     },
     {
       "nomor_variasi": 3,
@@ -57,8 +168,8 @@
       "kunci_pembeda": "Variasi ini menggabungkan dua segitiga siku-siku yang berbagi satu sisi persekutuan sehingga memerlukan eliminasi atau substitusi aljabar antar-rasio.",
       "visual": {
         "tipe": "svg",
-        "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><polygon points='65,175 290,175 65,45' fill='#EFF6FF' stroke='#1E293B' stroke-width='2'/><line x1='65' y1='45' x2='195' y2='175' stroke='#3B82F6' stroke-width='2' stroke-dasharray='4 4'/><polyline points='65,159 81,159 81,175' fill='none' stroke='#1E293B' stroke-width='2'/><text x='52' y='42' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>A</text><text x='50' y='188' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>B</text><text x='195' y='194' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>D</text><text x='295' y='188' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>C</text><text x='162' y='167' font-family='sans-serif' font-size='12' font-weight='bold' fill='#F59E0B'>45°</text><text x='73' y='88' font-family='sans-serif' font-size='12' font-weight='bold' fill='#10B981'>60°</text><text x='48' y='112' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='bold' fill='#3B82F6'>x</text><text x='243' y='194' text-anchor='middle' font-family='sans-serif' font-size='12' fill='#1E293B'>6-2√3</text></svg>",
-        "caption": "Ilustrasi segitiga siku-siku bersusun ABD dan ABC"
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><polygon points='95,45 95,180 315,180' fill='#38BDF8' fill-opacity='0.12'/><polygon points='95,45 95,180 230,180' fill='#34D399' fill-opacity='0.15'/><line x1='95' y1='45' x2='95' y2='180' stroke='#38BDF8' stroke-width='2.5'/><line x1='95' y1='180' x2='315' y2='180' stroke='#E2E8F0' stroke-width='2'/><line x1='95' y1='45' x2='315' y2='180' stroke='#E2E8F0' stroke-width='2'/><line x1='95' y1='45' x2='230' y2='180' stroke='#FBBF24' stroke-width='2' stroke-dasharray='5 4'/><polyline points='95,166 109,166 109,180' fill='none' stroke='#94A3B8' stroke-width='1.5'/><path d='M 95 75 A 30 30 0 0 0 121 61' fill='none' stroke='#38BDF8' stroke-width='1.5'/><path d='M 206 180 A 24 24 0 0 1 213 163' fill='none' stroke='#FBBF24' stroke-width='1.5'/><text x='90' y='36' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>A</text><text x='83' y='193' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>B</text><text x='230' y='198' fill='#FBBF24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>D</text><text x='324' y='193' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>C</text><text x='85' y='118' fill='#38BDF8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='end'>x = ?</text><text x='117' y='92' fill='#38BDF8' font-family='sans-serif' font-size='12'>60°</text><text x='184' y='172' fill='#FBBF24' font-family='sans-serif' font-size='12'>45°</text><text x='162' y='198' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>x</text><text x='273' y='215' fill='#FB7185' font-family='sans-serif' font-size='12' text-anchor='middle'>6 - 2√3 cm</text><line x1='232' y1='186' x2='313' y2='186' stroke='#FB7185' stroke-width='1.5'/></svg>",
+        "caption": "Segitiga siku-siku bersusun ABC dan ABD dengan sisi persekutuan AB = x"
       }
     }
   ],
@@ -80,7 +191,11 @@
       ],
       "kunci_jawaban": "E",
       "bedah_cepat_markdown": "Dari $\\sin A = \\frac{BC}{AC} = \\frac{1}{3}$, misalkan $BC = k$ dan $AC = 3k$, sehingga $AB = \\sqrt{9k^2 - k^2} = 2\\sqrt{2}k$. Karena $AB = 4\\sqrt{2}$, diperoleh $k = 2$, maka $BC = 2\\text{ cm}$ **(1 benar)** dan $AC = 6\\text{ cm}$.\n- $\\tan C = \\frac{AB}{BC} = \\frac{4\\sqrt{2}}{2} = 2\\sqrt{2}$ **(2 benar)**.\n- $\\text{Luas} = \\frac{1}{2}(4\\sqrt{2})(2) = 4\\sqrt{2}\\text{ cm}^2$ **(3 benar)**.\n- Karena $A + C = 90^\\circ$, $\\cos A + \\sin C = 2\\cos A = 2\\left(\\frac{4\\sqrt{2}}{6}\\right) = \\frac{4\\sqrt{2}}{3}$ **(4 benar)**.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><polygon points='85,55 85,175 295,175' fill='#38BDF8' fill-opacity='0.16' stroke='#38BDF8' stroke-width='2'/><polyline points='85,161 99,161 99,175' fill='none' stroke='#94A3B8' stroke-width='1.5'/><path d='M 263 175 A 32 32 0 0 1 267 159' fill='none' stroke='#FBBF24' stroke-width='1.5'/><text x='306' y='182' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='start'>A</text><text x='73' y='185' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>B</text><text x='85' y='44' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>C</text><text x='242' y='168' fill='#FBBF24' font-family='sans-serif' font-size='12'>A</text><text x='190' y='195' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>4√2 cm</text><text x='72' y='118' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='end'>?</text><text x='202' y='105' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='start'>?</text><rect x='235' y='35' width='115' height='32' rx='6' fill='#1E293B' stroke='#38BDF8' stroke-width='1'/><text x='292' y='55' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>sin A = 1 / 3</text></svg>",
+        "caption": "Segitiga siku-siku ABC di B dengan panjang AB = 4√2 cm dan rasio sin A = 1/3"
+      }
     },
     {
       "nomor_soal": 2,
@@ -99,7 +214,11 @@
       ],
       "kunci_jawaban": "C",
       "bedah_cepat_markdown": "Tarik garis tinggi $CE \\perp AB$ sehingga $AE = DC = 5\\text{ cm}$ dan $CE = AD = 6\\text{ cm}$. Pada $\\triangle BEC$ yang siku-siku di $E$ dengan $\\angle B = 30^\\circ$, sisi $CE$ berada di depan sudut $30^\\circ$ sehingga $EB = 6\\sqrt{3}\\text{ cm}$ dan $AB = 5 + 6\\sqrt{3}\\text{ cm}$.\n$$P = \\frac{(AB + DC) \\times AD}{2} = \\frac{(10 + 6\\sqrt{3}) \\times 6}{2} = 30 + 18\\sqrt{3}$$\nKarena $Q = 30 + 18\\sqrt{3}$, maka kuantitas $P = Q$. Opsi A dan B keliru akibat salah membagi rasio $\\sqrt{3}$.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><polygon points='65,65 155,65 315,175 65,175' fill='#38BDF8' fill-opacity='0.16' stroke='#38BDF8' stroke-width='2'/><line x1='155' y1='65' x2='155' y2='175' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><polyline points='65,79 79,79 79,65' fill='none' stroke='#94A3B8' stroke-width='1.5'/><polyline points='65,161 79,161 79,175' fill='none' stroke='#94A3B8' stroke-width='1.5'/><polyline points='155,161 169,161 169,175' fill='none' stroke='#FBBF24' stroke-width='1.2'/><path d='M 282 175 A 33 33 0 0 1 288 156' fill='none' stroke='#FBBF24' stroke-width='1.5'/><text x='55' y='188' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>A</text><text x='324' y='188' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>B</text><text x='158' y='55' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>C</text><text x='55' y='60' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>D</text><text x='53' y='124' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>6 cm</text><text x='110' y='55' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>5 cm</text><text x='262' y='168' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold'>30°</text><text x='190' y='196' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>AB = ?</text></svg>",
+        "caption": "Trapesium siku-siku ABCD dengan AD = 6 cm, DC = 5 cm, dan sudut ABC = 30 derajat"
+      }
     },
     {
       "nomor_soal": 3,
@@ -112,7 +231,11 @@
       "opsi_jawaban": [],
       "kunci_jawaban": "12",
       "bedah_cepat_markdown": "Perhatikan $\\triangle TAB$: sudut luar $\\angle TBP = 60^\\circ$ merupakan jumlah $\\angle TAB = 30^\\circ$ dan $\\angle ATB$, sehingga $\\angle ATB = 30^\\circ$. Akibatnya, $\\triangle TAB$ sama kaki dengan $TB = AB = 24\\text{ meter}$. Pada segitiga siku-siku $TBP$:\n$$TP = TB \\cdot \\sin 60^\\circ = 24 \\times \\frac{\\sqrt{3}}{2} = 12\\sqrt{3}\\text{ meter}$$\nKarena $TP = k\\sqrt{3}$, maka nilai $k = 12$.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><polygon points='60,180 310,180 310,45' fill='#38BDF8' fill-opacity='0.1'/><polygon points='230,180 310,180 310,45' fill='#38BDF8' fill-opacity='0.14'/><line x1='35' y1='180' x2='345' y2='180' stroke='#94A3B8' stroke-width='1.5'/><line x1='310' y1='45' x2='310' y2='180' stroke='#38BDF8' stroke-width='2.5'/><line x1='60' y1='180' x2='310' y2='45' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='230' y1='180' x2='310' y2='45' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><polyline points='298,180 298,168 310,168' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><path d='M 92,180 A 32,32 0 0,0 88.2,164.8' fill='none' stroke='#FBBF24' stroke-width='1.5'/><path d='M 252,180 A 22,22 0 0,0 241.3,160.8' fill='none' stroke='#FBBF24' stroke-width='1.5'/><line x1='60' y1='190' x2='60' y2='200' stroke='#34D399' stroke-width='1.2'/><line x1='230' y1='190' x2='230' y2='200' stroke='#34D399' stroke-width='1.2'/><line x1='60' y1='195' x2='115' y2='195' stroke='#34D399' stroke-width='1.2'/><line x1='175' y1='195' x2='230' y2='195' stroke='#34D399' stroke-width='1.2'/><circle cx='60' cy='180' r='3' fill='#E2E8F0'/><circle cx='230' cy='180' r='3' fill='#E2E8F0'/><circle cx='310' cy='180' r='3' fill='#E2E8F0'/><circle cx='310' cy='45' r='3' fill='#38BDF8'/><text x='310' y='35' fill='#38BDF8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>T</text><text x='315' y='197' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='start'>P</text><text x='50' y='197' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>A</text><text x='236' y='197' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='start'>B</text><text x='100' y='173' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='start'>30°</text><text x='255' y='171' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='start'>60°</text><text x='145' y='199' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>24 m</text><text x='320' y='116' fill='#38BDF8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='start'>k√3 m</text></svg>",
+        "caption": "Ilustrasi sudut elevasi puncak menara TP dari titik A (30°) dan titik B (60°) yang berjarak 24 m."
+      }
     }
   ]
 }

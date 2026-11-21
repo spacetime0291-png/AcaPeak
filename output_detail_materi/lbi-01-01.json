@@ -1,0 +1,90 @@
+{
+  "kode_subbab": "lbi-01-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Sinyal Teks Pemahaman Informasi Eksplisit",
+    "subjudul_ringkas": "Panduan mengenali penanda kausal, definisi, kronologi, dan data faktual saat memindai wacana UTBK.",
+    "mode_tampilan": "katalog_sinyal_pola",
+    "label_kolom": {
+      "kolom_1": "Kategori / Penanda Teks",
+      "kolom_2": "Contoh Potongan / Sinyal",
+      "kolom_3": "Cara Bedakan / Jebakan"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Penanda Kausalitas, Mekanisme, dan Pelaku",
+        "ringkasan_kelompok": "Memetakan hubungan sebab-akibat, cara kerja proses, dan subjek tindakan dalam wacana.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Konjungsi Kausalitas Langsung (Sebab-Akibat)",
+            "penjelasan_singkat": "Menandai pemicu spesifik atau dampak langsung suatu fenomena yang dinyatakan secara tersurat dalam kalimat.",
+            "contoh_penerapan": "Peningkatan suhu permukaan laut **memicu** pemutihan terumbu karang secara massal di perairan dangkal.",
+            "jebakan_atau_catatan": "Pengecoh sering membalik arah hubungan ($A \\rightarrow B$ menjadi $B \\rightarrow A$) atau menganggap korelasi sebagai penyebab tunggal."
+          },
+          {
+            "judul_poin": "Penanda Mekanisme dan Cara Kerja",
+            "penjelasan_singkat": "Menunjukkan alat, zat perantara, atau metode spesifik terjadinya suatu proses ilmiah maupun fenomena sosial.",
+            "contoh_penerapan": "Bakteri *Rhizobium* mengikat nitrogen bebas di udara **dengan cara** membentuk bintil pada akar tanaman polong.",
+            "jebakan_atau_catatan": "Opsi salah kerap menukar agen pelaku utama dengan media atau alat perantara yang letaknya berdekatan."
+          },
+          {
+            "judul_poin": "Penanda Pelaku pada Konstruksi Aktif-Pasif",
+            "penjelasan_singkat": "Mengidentifikasi pihak yang melakukan atau dikenai tindakan melalui perubahan imbuhan verba aktif dan pasif.",
+            "contoh_penerapan": "Kebijakan subsidi energi **ditetapkan oleh pemerintah** setelah melalui kajian fiskal lintas kementerian.",
+            "jebakan_atau_catatan": "Kalimat pasif teks sering diparafrasakan menjadi aktif di opsi; pastikan subjek pelakunya tidak tertukar objek."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Penanda Definisi, Klasifikasi, dan Kronologi",
+        "ringkasan_kelompok": "Menangkap batasan istilah teknis, syarat pengelompokan, serta urutan tahapan proses eksplanasi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Kopula Definisi dan Aposisi Konsep",
+            "penjelasan_singkat": "Menjelaskan makna istilah teknis secara eksplisit lewat verba penghubung definisi atau keterangan apositif diapit koma.",
+            "contoh_penerapan": "Eutrofikasi **merupakan** proses pengayaan nutrien berlebih di perairan yang memicu ledakan populasi alga.",
+            "jebakan_atau_catatan": "Pengecoh mengambil contoh atau dampak konsep dari kalimat berikutnya, lalu menyajikannya seolah-olah definisi inti."
+          },
+          {
+            "judul_poin": "Penanda Klasifikasi dan Kriteria Syarat",
+            "penjelasan_singkat": "Membagi kategori objek atau menetapkan syarat mutlak berdasarkan ciri spesifik yang tertulis di teks.",
+            "contoh_penerapan": "Limbah B3 **diklasifikasikan berdasarkan** sifat mudah meledak, beracun, serta tingkat korosivitasnya terhadap logam.",
+            "jebakan_atau_catatan": "Waspadai opsi yang mencampuradukkan syarat milik kategori pertama ke dalam kriteria kategori kedua."
+          },
+          {
+            "judul_poin": "Penanda Kronologi dan Urutan Tahapan",
+            "penjelasan_singkat": "Memetakan alur waktu peristiwa sejarah atau urutan fase proses dari tahap awal hingga akhir.",
+            "contoh_penerapan": "**Setelah** uap air mengalami kondensasi di atmosfer, titik-titik air tersebut jatuh sebagai presipitasi.",
+            "jebakan_atau_catatan": "Pengecoh mengacak urutan tahap (fase ketiga diletakkan sebelum kedua) atau menghilangkan syarat tahap sebelumnya."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Penanda Data Kuantitatif, Kualitatif, dan Pembatas",
+        "ringkasan_kelompok": "Mengunci akurasi angka, perbandingan tren, dan batasan cakupan fakta agar terhindar generalisasi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penanda Data Kuantitatif dan Satuan",
+            "penjelasan_singkat": "Merujuk pada angka eksak, persentase, rasio, atau rentang waktu yang menjadi bukti empiris wacana.",
+            "contoh_penerapan": "Emisi karbon sektor transportasi menyumbang **sebesar $27\\%$** dari total emisi nasional pada tahun 2023.",
+            "jebakan_atau_catatan": "Pengecoh sering mengubah satuan (juta menjadi miliar), mengganti tahun rujukan, atau membulatkan angka tanpa dasar."
+          },
+          {
+            "judul_poin": "Penanda Perbandingan dan Tren Kualitatif",
+            "penjelasan_singkat": "Menunjukkan tingkat kenaikan, penurunan, atau selisih kualitas antarvariabel tanpa harus mencantumkan angka pasti.",
+            "contoh_penerapan": "Daya serap air tanah di kawasan hutan lindung **jauh lebih tinggi dibandingkan** kawasan permukiman.",
+            "jebakan_atau_catatan": "Opsi salah kerap mengubah perbandingan relatif (*lebih tinggi*) menjadi klaim superlatif mutlak (*paling tinggi*)."
+          },
+          {
+            "judul_poin": "Kata Pembatas Cakupan dan Pengecualian",
+            "penjelasan_singkat": "Membatasi ruang lingkup berlakunya suatu pernyataan faktual agar tidak digeneralisasi secara keliru oleh pembaca.",
+            "contoh_penerapan": "Vaksin tersebut efektif mencegah gejala berat **hanya pada** kelompok usia di atas 18 tahun.",
+            "jebakan_atau_catatan": "Pengecoh menghilangkan kata pembatas (*hanya*, *sebagian*, *kecuali*) atau menggantinya dengan kata mutlak (*semua*, *selalu*)."
+          }
+        ]
+      }
+    ]
+  }
+}

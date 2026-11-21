@@ -213,7 +213,7 @@ body:not(.dark) .pastel-card-cream {
   font-size: 1.05em;
   text-rendering: auto;
   line-height: 1.2 !important; /* CRITICAL: KaTeX expects line-height 1.2 for internal strut math */
-  white-space: normal;
+  white-space: nowrap;
   max-width: 100%;
 }
 
@@ -222,8 +222,9 @@ body:not(.dark) .pastel-card-cream {
   display: block;
   max-width: 100%;
   overflow-x: auto;
-  overflow-y: visible;
+  overflow-y: hidden;
   padding: 0.6rem 0.25rem;
+  padding-bottom: 4px;
   margin: 1rem 0;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;

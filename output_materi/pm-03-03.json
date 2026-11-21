@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Seorang petugas setinggi $1,6\\text{ m}$ berjalan menjauhi tiang lampu jalan setinggi $4,8\\text{ m}$ dengan kecepatan konstan $1,2\\text{ m/s}$. Apakah panjang bayangan petugas tersebut bertambah dengan kecepatan yang sama ($1,2\\text{ m/s}$)?",
@@ -25,8 +25,111 @@
     "stimulus_utama_bersama": "Tim Ekspedisi Konservasi Hutan Lindung Meranti melakukan rangkaian pengukuran lapangan dan dokumentasi visual dengan data berikut:\n1. **Pengukuran Tinggi Pohon:** Pada pukul 09.30 WIB, panjang bayangan sebatang pohon meranti tua tercatat $14,4\\text{ m}$, sedangkan pada saat bersamaan tongkat ukur vertikal setinggi $1,5\\text{ m}$ menghasilkan bayangan $1,2\\text{ m}$. Sebagai verifikasi kedua, pengamat dengan tinggi mata dari tanah $h_{\\text{mata}} = 1,6\\text{ m}$ meletakkan cermin datar mendatar di tanah sejauh $13,5\\text{ m}$ dari pangkal pohon, lalu mundur $1,2\\text{ m}$ dari cermin hingga puncak pohon terlihat tepat di tengah cermin.\n2. **Patroli Jalur Lampu Solar:** Di jalan setapak posko berdiri tiang lampu tenaga surya setinggi $H = 4,8\\text{ m}$. Seorang petugas patroli setinggi $h = 1,6\\text{ m}$ berjalan lurus menjauhi pangkal tiang lampu dengan kecepatan konstan $v = 1,2\\text{ m/s}$ mulai dari tepat di bawah lampu ($t = 0$).\n3. **Survei Lebar Sungai:** Tim menancapkan patok $A$ di tepi selatan tepat di seberang pohon penanda $P$ di tepi utara ($AP$ tegak lurus tepi sungai). Dari $A$, tim bergerak menyusuri tepi selatan sejauh $24\\text{ m}$ ke patok $B$, lalu lanjut lurus sejauh $8\\text{ m}$ ke patok $C$. Dari $C$, tim berjalan tegak lurus menjauhi sungai sejauh $6\\text{ m}$ ke patok $D$ hingga titik $D$, $B$, dan $P$ segaris lurus.\n4. **Dokumentasi Kamera & Proyeksi:** Pohon meranti setinggi $18\\text{ m}$ dipotret menggunakan kamera full-frame (tinggi sensor $24\\text{ mm}$, panjang fokus lensa $f = 50\\text{ mm}$) dari jarak mendatar $d = 60\\text{ m}$ (jarak sensor ke lensa dianggap sama dengan $f$). Hasil foto kemudian dipresentasikan memakai proyektor: slide selebar $3,6\\text{ cm}$ pada jarak $15\\text{ cm}$ dari lensa proyektor menghasilkan gambar tajam selebar $2,4\\text{ m}$ di layar.",
     "visual": {
       "tipe": "svg",
-      "kode": "<svg viewBox='0 0 360 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='8'/><text x='180' y='26' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='bold' fill='#1E293B'>Sinar Matahari Sejajar: Sudut Elevasi (θ) Sama</text><polygon points='64,175 64,45 194,175' fill='#EFF6FF' stroke='none'/><polygon points='232,175 232,125 282,175' fill='#FFFBEB' stroke='none'/><line x1='28' y1='175' x2='332' y2='175' stroke='#1E293B' stroke-width='2'/><circle cx='64' cy='58' r='16' fill='#10B981' opacity='0.25'/><line x1='64' y1='175' x2='64' y2='45' stroke='#10B981' stroke-width='4'/><line x1='64' y1='175' x2='194' y2='175' stroke='#3B82F6' stroke-width='3'/><line x1='64' y1='45' x2='194' y2='175' stroke='#F59E0B' stroke-width='2' stroke-dasharray='4 4'/><polyline points='64,165 74,165 74,175' fill='none' stroke='#1E293B' stroke-width='1.5'/><line x1='232' y1='175' x2='232' y2='125' stroke='#1E293B' stroke-width='3'/><line x1='232' y1='175' x2='282' y2='175' stroke='#3B82F6' stroke-width='3'/><line x1='232' y1='125' x2='282' y2='175' stroke='#F59E0B' stroke-width='2' stroke-dasharray='4 4'/><polyline points='232,167 240,167 240,175' fill='none' stroke='#1E293B' stroke-width='1.5'/><text x='24' y='112' font-family='sans-serif' font-size='12' fill='#1E293B'>T = 18 m</text><text x='110' y='193' font-family='sans-serif' font-size='12' fill='#3B82F6'>14,4 m</text><text x='162' y='168' font-family='sans-serif' font-size='12' fill='#F59E0B'>θ</text><text x='198' y='152' font-family='sans-serif' font-size='12' fill='#1E293B'>1,5 m</text><text x='242' y='193' font-family='sans-serif' font-size='12' fill='#3B82F6'>1,2 m</text><text x='256' y='168' font-family='sans-serif' font-size='12' fill='#F59E0B'>θ</text></svg>",
-      "caption": "Kesebangunan segitiga siku-siku pada bayangan pohon meranti dan tongkat ukur"
+      "kode": "<svg viewBox='0 0 420 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><line x1='24' y1='186' x2='396' y2='186' stroke='#E2E8F0' stroke-width='2'/><polygon points='46,186 246,186 46,56' fill='#38BDF8' fill-opacity='0.14' stroke='#38BDF8' stroke-width='2'/><polygon points='166,186 246,186 166,134' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><polyline points='46,176 56,176 56,186' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><polyline points='166,176 176,176 176,186' fill='none' stroke='#34D399' stroke-width='1.5'/><circle cx='46' cy='50' r='6' fill='#FBBF24'/><line x1='46' y1='56' x2='246' y2='186' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><path d='M 224 186 A 22 22 0 0 1 228 174' fill='none' stroke='#FBBF24' stroke-width='1.5'/><text x='36' y='125' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>H</text><text x='158' y='165' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>h</text><line x1='46' y1='198' x2='166' y2='198' stroke='#94A3B8' stroke-width='1.5'/><line x1='46' y1='194' x2='46' y2='202' stroke='#94A3B8' stroke-width='1.5'/><line x1='166' y1='194' x2='166' y2='202' stroke='#94A3B8' stroke-width='1.5'/><text x='106' y='214' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>x</text><line x1='166' y1='198' x2='246' y2='198' stroke='#34D399' stroke-width='1.5'/><line x1='246' y1='194' x2='246' y2='202' stroke='#34D399' stroke-width='1.5'/><text x='206' y='214' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>s</text><text x='146' y='230' fill='#FBBF24' font-family='sans-serif' font-size='12' text-anchor='middle'>Alas Total = x + s</text><line x1='266' y1='32' x2='266' y2='218' stroke='#1E293B' stroke-width='1.5'/><text x='334' y='52' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Rasio Segitiga</text><text x='334' y='78' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>s / (x + s) = h / H</text><text x='334' y='108' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>H = 4,8 m | h = 1,6 m</text><text x='334' y='132' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='middle'>s / (x + s) = 1 / 3</text><text x='334' y='158' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>s = 0,5 x</text><text x='334' y='184' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>ds/dt = 0,5 v</text><text x='334' y='204' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>= 0,6 m/s</text></svg>",
+      "caption": "Dua segitiga siku-siku bertumpuk pada bayangan lampu jalan dengan alas total (x + s) dan sudut puncak berimpit."
+    },
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Rumus & Sifat Kesebangunan Terapan",
+      "subjudul_ringkas": "Panduan lengkap kesebangunan bayangan, cermin, patok sungai, optik kamera, dan skala peta untuk UTBK-SNBT.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_2": "Contoh Hitung Mini",
+        "kolom_3": "Jebakan / Trik Cepat"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Pengukuran Tinggi dengan Bayangan & Cermin Datar",
+          "ringkasan_kelompok": "Rumus segitiga sebangun pada bayangan matahari, cermin datar, dan lampu jalan.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Bayangan Sinar Matahari pada Waktu Sama",
+              "penjelasan_singkat": "Pada waktu sama, sudut sinar matahari konstan sehingga rasio tinggi terhadap panjang bayangan selalu tetap: $\\frac{T_1}{B_1} = \\frac{T_2}{B_2}$.",
+              "contoh_penerapan": "Tongkat $2\\text{ m}$ berbayang $1,5\\text{ m}$ saat gedung berbayang $12\\text{ m}$, maka tinggi gedung **$\\frac{2}{1,5} \\times 12 = 16\\text{ m}$**.",
+              "jebakan_atau_catatan": "Syarat mutlak kedua objek diukur pada jam yang sama dan berdiri tegak lurus pada bidang datar.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Refleksi Cermin Datar di Permukaan Tanah",
+              "penjelasan_singkat": "Sudut datang sama dengan sudut pantul membentuk dua segitiga siku-siku sebangun: $\\frac{T_{\\text{objek}}}{d_{\\text{objek}}} = \\frac{h_{\\text{mata}}}{d_{\\text{pengamat}}}$.",
+              "contoh_penerapan": "Mata pengamat setinggi $1,6\\text{ m}$ berjarak $2\\text{ m}$ dari cermin melihat puncak pohon berjarak $10\\text{ m}$, tinggi pohon **$8\\text{ m}$**.",
+              "jebakan_atau_catatan": "Gunakan tinggi mata pengamat dari tanah ($h_{\\text{mata}}$), bukan tinggi total badan sampai ubun-ubun.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Bayangan Statis di Bawah Lampu Jalan",
+              "penjelasan_singkat": "Segitiga kecil (orang-ujung bayangan) sebangun dengan segitiga besar (tiang-ujung bayangan): $\\frac{s}{x + s} = \\frac{h_{\\text{orang}}}{H_{\\text{tiang}}}$.",
+              "contoh_penerapan": "Orang setinggi $1,5\\text{ m}$ berdiri $3\\text{ m}$ dari tiang lampu $4,5\\text{ m}$ menghasilkan panjang bayangan **$s = 1,5\\text{ m}$**.",
+              "jebakan_atau_catatan": "Alas segitiga besar adalah $x + s$ (jarak ke tiang ditambah bayangan), sering keliru ditulis $x$ saja.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Laju Ujung dan Pertumbuhan Bayangan Dinamis",
+              "penjelasan_singkat": "Orang menjauhi tiang berkecepatan $v$ menghasilkan laju ujung bayangan $v_{\\text{ujung}} = \\frac{H}{H-h}v$ dan laju panjang bayangan $v_s = \\frac{h}{H-h}v$.",
+              "contoh_penerapan": "Tiang $6\\text{ m}$, orang $1,5\\text{ m}$ berjalan $3\\text{ m/s}$ menjauhi tiang, maka panjang bayangannya bertambah cepat **$v_s = \\frac{1,5}{4,5} \\times 3 = 1\\text{ m/s}$**.",
+              "jebakan_atau_catatan": "Bedakan laju perpanjangan bayangan ($\\frac{ds}{dt}$) dengan laju gerak ujung bayangan terhadap tiang ($\\frac{d(x+s)}{dt}$).",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Jarak Tak Terjangkau & Patok Pengukur Sungai",
+          "ringkasan_kelompok": "Teknik segitiga bertolak belakang dan segitiga terpancung untuk mengukur lebar sungai atau jurang.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Segitiga Siku-Siku Bertolak Belakang (Patok Sungai)",
+              "penjelasan_singkat": "Dua garis berpotongan di satu patok membentuk sudut bertolak belakang sama besar: $\\frac{L_{\\text{sungai}}}{d_{\\text{tepi}}} = \\frac{a_1}{a_2}$.",
+              "contoh_penerapan": "Diketahui $a_1 = 12\\text{ m}$, $a_2 = 4\\text{ m}$, dan jarak patok tepi $d_{\\text{tepi}} = 5\\text{ m}$, lebar sungai **$L = 15\\text{ m}$**.",
+              "jebakan_atau_catatan": "Pastikan sisi alas $a_1$ dan $a_2$ sejajar (keduanya tegak lurus garis pandang utama) sebelum membandingkan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Segitiga Bertumpuk Garis Sejajar (Trapesium Sungai)",
+              "penjelasan_singkat": "Garis patok sejajar tepi sungai memotong dua sisi segitiga besar: $\\frac{L_{\\text{sungai}}}{L_{\\text{sungai}} + d} = \\frac{p_{\\text{pendek}}}{p_{\\text{panjang}}}$.",
+              "contoh_penerapan": "Lebar patok depan $6\\text{ m}$, patok belakang $9\\text{ m}$ berjarak $d = 4\\text{ m}$, maka lebar sungai **$L = 8\\text{ m}$**.",
+              "jebakan_atau_catatan": "Jangan langsung menyamakan $\\frac{L}{d} = \\frac{p_{\\text{pendek}}}{p_{\\text{panjang}}}$; penyebut sisi miring wajib dijumlahkan menjadi $L + d$.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Metode Sudut Elevasi Ganda Tanpa Mendekat",
+              "penjelasan_singkat": "Dua pengamatan sejajar berjarak $d$ dengan sudut elevasi $\\alpha$ dan $\\beta$ memenuhi tinggi objek $T = \\frac{d}{\\cot\\alpha - \\cot\\beta}$.",
+              "contoh_penerapan": "Sudut elevasi puncak menara berubah dari $30^\\circ$ menjadi $45^\\circ$ setelah maju $20\\text{ m}$, tinggi menara **$\\frac{20}{\\sqrt{3}-1} = 10(\\sqrt{3}+1)\\text{ m}$**.",
+              "jebakan_atau_catatan": "Tambahkan tinggi alat pengukur (klinometer) ke hasil $T$ jika soal menyebutkan tinggi pengamat dari tanah.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Optik Kamera, Proyektor, dan Skala Peta",
+          "ringkasan_kelompok": "Kesebangunan pembesaran lensa optik serta konversi skala panjang dan luas peta.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Kesebangunan Lensa Kamera (Objek ke Sensor)",
+              "penjelasan_singkat": "Sinar melalui pusat optik membentuk segitiga sebangun antara objek dan sensor: $\\frac{h_{\\text{sensor}}}{f} = \\frac{H_{\\text{objek}}}{d_{\\text{objek}}}$.",
+              "contoh_penerapan": "Lensa fokus $50\\text{ mm}$ memotret gedung setinggi $30\\text{ m}$ dari jarak $100\\text{ m}$, tinggi bayangan pada sensor **$15\\text{ mm}$**.",
+              "jebakan_atau_catatan": "Samakan satuan panjang fokus $f$ (biasanya $\\text{mm}$) dan tinggi sensor sebelum dikalikan jarak objek ($\\text{m}$).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pembesaran Dimensi pada Layar Proyektor",
+              "penjelasan_singkat": "Perbandingan dimensi gambar pada layar terhadap slide berbanding lurus dengan jaraknya: $\\frac{L_{\\text{layar}}}{L_{\\text{slide}}} = \\frac{d_{\\text{layar}}}{d_{\\text{lensa}}}$.",
+              "contoh_penerapan": "Slide selebar $3\\text{ cm}$ berjarak $15\\text{ cm}$ dari lensa diproyeksikan ke layar berjarak $6\\text{ m}$, lebar gambar **$1,2\\text{ m}$**.",
+              "jebakan_atau_catatan": "Jika proyektor dimundurkan sejauh $\\Delta d$, jarak baru menjadi $d_{\\text{layar}} + \\Delta d$, bukan dikalikan langsung.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Skala Peta dan Rasio Luas Bangun Sebangun",
+              "penjelasan_singkat": "Pada peta berskala $1 : k$, rasio jarak adalah $\\frac{1}{k}$, sedangkan rasio luas wilayah adalah $\\frac{1}{k^2}$.",
+              "contoh_penerapan": "Peta berskala $1 : 20.000$ memuat danau seluas $5\\text{ cm}^2$, maka luas sebenarnya **$5 \\times (20.000)^2\\text{ cm}^2 = 20\\text{ hektare}$**.",
+              "jebakan_atau_catatan": "Kesalahan paling sering di UTBK adalah mengalikan luas peta dengan $k$ saja, bukan mengkuadratkannya menjadi $k^2$.",
+              "visual": null
+            }
+          ]
+        }
+      ]
     }
   },
   "zona_2_variasi_inti": [
@@ -37,7 +140,11 @@
       "stimulus_mini": "Rujuk Data 1 Stimulus Utama: bayangan pohon meranti $14,4\\text{ m}$ saat bayangan tongkat $1,5\\text{ m}$ sepanjang $1,2\\text{ m}$, serta verifikasi cermin datar dengan $h_{\\text{mata}} = 1,6\\text{ m}$, jarak cermin ke pohon $13,5\\text{ m}$, dan jarak pengamat ke cermin $1,2\\text{ m}$.",
       "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Sinar matahari sejajar membentuk sudut elevasi sama pada pohon meranti ($T$) dan tongkat ($1,5\\text{ m}$), sedangkan hukum pemantulan cermin datar menyamakan sudut datang dan pantul pengamat ($h_{\\text{mata}} = 1,6\\text{ m}$).\n2. **Model Matematika (Employing):** Bentuk proporsi dua segitiga siku-siku sebangun: $\\frac{T}{B_{\\text{pohon}}} = \\frac{T_{\\text{tongkat}}}{B_{\\text{tongkat}}}$ pada metode bayangan, serta $\\frac{T}{d_{\\text{pohon}}} = \\frac{h_{\\text{mata}}}{d_{\\text{pengamat}}}$ pada metode cermin datar.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Substitusi data bayangan memberi $\\frac{T}{14,4} = \\frac{1,5}{1,2} = \\frac{5}{4}$, sehingga $T = 14,4 \\times 1,25 = 18\\text{ m}$. Verifikasi cermin memberi $T = 13,5 \\times \\frac{1,6}{1,2} = 18\\text{ m}$. Secara praktis, metode cermin wajib mengukur tinggi hingga mata pengamat (bukan ubun-ubun) dan memastikan permukaan tanah datar karena kemiringan tanah menggeser sudut pantul.",
       "kunci_pembeda": "Gunakan proporsi langsung tinggi terhadap panjang bayangan atau jarak mendatar ke titik pantul cermin pada segitiga siku-siku yang terpisah.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='115' y='28' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Metode 1: Bayangan</text><line x1='24' y1='174' x2='196' y2='174' stroke='#E2E8F0' stroke-width='2'/><polygon points='44,174 128,174 44,58' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2'/><polygon points='146,174 182,174 146,124' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><line x1='44' y1='58' x2='128' y2='174' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='146' y1='124' x2='182' y2='174' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><polyline points='44,165 53,165 53,174' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><polyline points='146,165 155,165 155,174' fill='none' stroke='#34D399' stroke-width='1.5'/><text x='38' y='118' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>T</text><text x='86' y='192' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>14,4 m</text><text x='141' y='150' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='end'>1,5</text><text x='166' y='192' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>1,2</text><text x='110' y='218' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>T / 14,4 = 1,5 / 1,2</text><line x1='204' y1='22' x2='204' y2='218' stroke='#1E293B' stroke-width='1.5'/><text x='302' y='28' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Metode 2: Cermin Datar</text><line x1='216' y1='174' x2='384' y2='174' stroke='#E2E8F0' stroke-width='2'/><polygon points='234,174 328,174 234,58' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2'/><polygon points='328,174 368,174 368,124' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><line x1='234' y1='58' x2='328' y2='174' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='328' y1='174' x2='368' y2='124' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><rect x='320' y='172' width='16' height='4' fill='#FBBF24'/><path d='M 314 174 A 14 14 0 0 1 318 164' fill='none' stroke='#FBBF24' stroke-width='1.5'/><path d='M 342 174 A 14 14 0 0 0 338 164' fill='none' stroke='#FBBF24' stroke-width='1.5'/><text x='229' y='118' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>T</text><text x='280' y='192' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>13,5 m</text><text x='373' y='150' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='start'>1,6</text><text x='348' y='192' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>1,2</text><text x='302' y='218' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>T / 13,5 = 1,6 / 1,2</text></svg>",
+        "caption": "Perbandingan dua segitiga siku-siku terpisah pada metode bayangan matahari dan metode pemantulan cermin datar."
+      }
     },
     {
       "nomor_variasi": 2,
@@ -46,7 +153,11 @@
       "stimulus_mini": "Rujuk Data 2 Stimulus Utama: tiang lampu setinggi $4,8\\text{ m}$, petugas setinggi $1,6\\text{ m}$ berjalan menjauhi tiang dengan kecepatan $1,2\\text{ m/s}$ dari $t = 0$.",
       "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Tiang lampu ($H = 4,8\\text{ m}$) dan petugas patroli ($h = 1,6\\text{ m}$) berdiri tegak lurus tanah membentuk dua segitiga siku-siku bertumpuk. Jarak petugas dari tiang bertambah sesuai fungsi waktu $x(t) = v \\cdot t = 1,2t$, sedangkan panjang bayangannya adalah $s(t)$.\n2. **Model Matematika (Employing):** Perhatikan bahwa alas segitiga besar adalah jumlah jarak orang dan panjang bayangan ($x + s$), bukan $x$ saja. Persamaan kesebangunannya: $\\frac{s}{x + s} = \\frac{h}{H}$.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Substitusi rasio tinggi $\\frac{1,6}{4,8} = \\frac{1}{3}$ menghasilkan $\\frac{s}{x + s} = \\frac{1}{3} \\Rightarrow 3s = x + s \\Rightarrow s = 0,5x$. Pada $t = 5\\text{ detik}$, jarak $x = 6\\text{ m}$ dan panjang bayangan $s = 3\\text{ m}$. Karena $s = 0,5(1,2t) = 0,6t$, laju pertambahan panjang bayangan konstan $0,6\\text{ m/s}$, sedangkan laju ujung bayangan di tanah mencapai $1,2 + 0,6 = 1,8\\text{ m/s}$.",
       "kunci_pembeda": "Segitiga kecil berada di dalam segitiga besar dengan sudut puncak bersama di ujung bayangan, sehingga penyebut rasio wajib berbentuk (x + s).",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><line x1='24' y1='172' x2='376' y2='172' stroke='#E2E8F0' stroke-width='2'/><polygon points='54,172 324,172 54,42' fill='#38BDF8' fill-opacity='0.15' stroke='#38BDF8' stroke-width='2'/><polygon points='234,172 324,172 234,128' fill='#34D399' fill-opacity='0.24' stroke='#34D399' stroke-width='2'/><polyline points='54,162 64,162 64,172' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><polyline points='234,162 244,162 244,172' fill='none' stroke='#34D399' stroke-width='1.5'/><circle cx='54' cy='36' r='6' fill='#FBBF24'/><circle cx='234' cy='121' r='5' fill='#34D399'/><line x1='54' y1='42' x2='324' y2='172' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='154' y1='105' x2='206' y2='105' stroke='#34D399' stroke-width='1.5'/><polygon points='206,101 214,105 206,109' fill='#34D399'/><text x='180' y='98' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>v = 1,2 m/s</text><text x='48' y='110' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>4,8 m</text><text x='228' y='152' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>1,6 m</text><line x1='54' y1='186' x2='234' y2='186' stroke='#94A3B8' stroke-width='1.5'/><line x1='54' y1='182' x2='54' y2='190' stroke='#94A3B8' stroke-width='1.5'/><line x1='234' y1='182' x2='234' y2='190' stroke='#94A3B8' stroke-width='1.5'/><text x='144' y='202' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>x(t) = 1,2t</text><line x1='234' y1='186' x2='324' y2='186' stroke='#FBBF24' stroke-width='1.5'/><line x1='324' y1='182' x2='324' y2='190' stroke='#FBBF24' stroke-width='1.5'/><text x='279' y='202' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>s(t) = 0,6t</text><text x='200' y='224' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='middle'>t = 5 s → x = 6 m, s = 3 m (Ujung bayangan = 1,8 m/s)</text></svg>",
+        "caption": "Dinamika pertumbuhan jarak petugas x(t) dan panjang bayangan s(t) yang membentuk rasio s / (x + s) = 1,6 / 4,8."
+      }
     },
     {
       "nomor_variasi": 3,
@@ -55,7 +166,11 @@
       "stimulus_mini": "Rujuk Data 3 Stimulus Utama: patok garis tepi sungai $AB = 24\\text{ m}$, $BC = 8\\text{ m}$, dan jarak tegak lurus $CD = 6\\text{ m}$ hingga $D, B, P$ segaris.",
       "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Titik pohon seberang $P$, patok tepi sungai $A, B, C$, dan patok darat $D$ membentuk dua segitiga siku-siku ($\\triangle PAB$ dan $\\triangle DCB$) yang saling bertolak belakang di titik $B$ sehingga $\\angle ABP = \\angle CBD$ dan $\\angle A = \\angle C = 90^\\circ$.\n2. **Model Matematika (Employing):** Susun perbandingan sisi-sisi yang menghadap sudut sama: $\\frac{AP}{CD} = \\frac{AB}{BC}$. Hindari jebakan membagi $AB$ dengan total jarak $AC$, karena sisi segitiga kecil hanya $BC$.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Masukkan data lapangan $AB = 24\\text{ m}$, $BC = 8\\text{ m}$, dan $CD = 6\\text{ m}$ ke persamaan: $\\frac{L}{6} = \\frac{24}{8} = 3$, sehingga lebar sungai $L = 18\\text{ m}$. Dalam evaluasi konstruksi jembatan gantung, angka $18\\text{ m}$ adalah lebar bersih muka air sehingga bentang kabel riil wajib ditambah jarak pondasi jangkar di kedua tebing.",
       "kunci_pembeda": "Dua segitiga siku-siku bertemu bertolak belakang pada titik patok tengah B, sehingga sisi alas dibandingkan langsung antar-segmen AB dan BC.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><rect x='24' y='30' width='352' height='105' fill='#38BDF8' fill-opacity='0.08' rx='4'/><line x1='24' y1='30' x2='376' y2='30' stroke='#38BDF8' stroke-width='1.5' stroke-dasharray='6 4'/><line x1='24' y1='135' x2='376' y2='135' stroke='#38BDF8' stroke-width='2'/><text x='368' y='46' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='end' opacity='0.85'>Aliran Sungai</text><polygon points='80,30 80,135 260,135' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2'/><polygon points='260,135 320,135 320,170' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><line x1='80' y1='30' x2='320' y2='170' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><polyline points='80,123 92,123 92,135' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><polyline points='308,135 308,147 320,147' fill='none' stroke='#E2E8F0' stroke-width='1.5'/><path d='M 244,135 A 16,16 0 0 1 246.2,126.9' fill='none' stroke='#FBBF24' stroke-width='1.5'/><path d='M 276,135 A 16,16 0 0 1 273.8,143.1' fill='none' stroke='#FBBF24' stroke-width='1.5'/><circle cx='80' cy='30' r='4' fill='#34D399'/><circle cx='80' cy='135' r='3.5' fill='#E2E8F0'/><circle cx='260' cy='135' r='4' fill='#FBBF24'/><circle cx='320' cy='135' r='3.5' fill='#E2E8F0'/><circle cx='320' cy='170' r='3.5' fill='#34D399'/><text x='70' y='26' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>P (Pohon)</text><text x='74' y='152' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>A</text><text x='260' y='152' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>B</text><text x='324' y='128' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>C</text><text x='324' y='182' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold'>D</text><text x='72' y='86' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='end'>L = 18 m</text><text x='170' y='153' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>AB = 24 m</text><text x='290' y='128' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>8 m</text><text x='328' y='157' fill='#34D399' font-family='sans-serif' font-size='12'>6 m</text><text x='200' y='215' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Kesebangunan: AP / CD = AB / BC → L / 6 = 24 / 8</text></svg>",
+        "caption": "Model dua segitiga siku-siku bertolak belakang pada titik B untuk mengukur lebar sungai L."
+      }
     },
     {
       "nomor_variasi": 4,
@@ -64,7 +179,11 @@
       "stimulus_mini": "Rujuk Data 4 Stimulus Utama: pohon meranti $18\\text{ m}$ dipotret dari jarak $60\\text{ m}$ memakai lensa $50\\text{ mm}$ pada sensor $24\\text{ mm}$, serta proyeksi slide $3,6\\text{ cm}$ pada jarak $15\\text{ cm}$ menjadi gambar $2,4\\text{ m}$.",
       "bedah_pola_markdown": "1. **Terjemahan Cerita (Formulating):** Berkas cahaya lurus yang melewati pusat optik lensa kamera maupun proyektor membentuk dua segitiga yang saling bertolak belakang antara sisi objek nyata dan sisi sensor atau layar.\n2. **Model Matematika (Employing):** Pada kamera dengan jarak objek $d \\gg f$, berlaku $\\frac{h_{\\text{bayangan}}}{f} = \\frac{H_{\\text{objek}}}{d}$. Pada proyektor berlaku prinsip identik: $\\frac{W_{\\text{layar}}}{d_{\\text{layar}}} = \\frac{W_{\\text{slide}}}{d_{\\text{slide}}}$, dengan syarat wajib menyamakan seluruh satuan panjang terlebih dahulu.\n3. **Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Konversi satuan ke milimeter pada kamera memberi $\\frac{h_{\\text{bayangan}}}{50} = \\frac{18.000}{60.000} = 0,3 \\Rightarrow h_{\\text{bayangan}} = 15\\text{ mm}$, yang muat penuh di dalam sensor $24\\text{ mm}$ ($62,5\\%$). Pada proyektor, jarak layar $d_{\\text{layar}} = \\frac{240\\text{ cm}}{3,6\\text{ cm}} \\times 15\\text{ cm} = 1.000\\text{ cm} = 10\\text{ m}$, sehingga ruangan posko minimal harus memiliki panjang bersih lebih dari $10\\text{ m}$.",
       "kunci_pembeda": "Titik pusat optik lensa bertindak sebagai titik temu dua segitiga bertolak belakang dengan rasio jarak fokus terhadap jarak objek.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><line x1='24' y1='115' x2='376' y2='115' stroke='#94A3B8' stroke-width='1' stroke-dasharray='4 4'/><polygon points='70,45 70,185 245,115' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2'/><polygon points='245,115 335,80 335,150' fill='#34D399' fill-opacity='0.22' stroke='#34D399' stroke-width='2'/><line x1='70' y1='45' x2='335' y2='150' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='70' y1='185' x2='335' y2='80' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><ellipse cx='245' cy='115' rx='5' ry='48' fill='#38BDF8' fill-opacity='0.35' stroke='#38BDF8' stroke-width='2'/><circle cx='245' cy='115' r='3.5' fill='#FBBF24'/><line x1='70' y1='45' x2='70' y2='185' stroke='#38BDF8' stroke-width='3'/><line x1='335' y1='80' x2='335' y2='150' stroke='#34D399' stroke-width='3'/><text x='70' y='36' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Objek (H)</text><text x='245' y='58' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Pusat Lensa</text><text x='335' y='70' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Sensor / Layar</text><text x='62' y='119' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='end'>18 m</text><text x='343' y='119' fill='#34D399' font-family='sans-serif' font-size='12'>h = 15 mm</text><line x1='70' y1='198' x2='245' y2='198' stroke='#94A3B8' stroke-width='1.2'/><line x1='70' y1='194' x2='70' y2='202' stroke='#94A3B8' stroke-width='1.2'/><line x1='245' y1='194' x2='245' y2='202' stroke='#94A3B8' stroke-width='1.2'/><text x='157' y='214' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>Jarak d = 60 m</text><line x1='245' y1='198' x2='335' y2='198' stroke='#94A3B8' stroke-width='1.2'/><line x1='335' y1='194' x2='335' y2='202' stroke='#94A3B8' stroke-width='1.2'/><text x='290' y='214' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>f = 50 mm</text></svg>",
+        "caption": "Skema optik kamera dan proyektor: dua segitiga sebangun bertolak belakang di titik pusat lensa."
+      }
     }
   ],
   "zona_3_uji_pemahaman": [
@@ -85,7 +204,11 @@
       ],
       "kunci_jawaban": "E",
       "bedah_cepat_markdown": "Jarak tempuh petugas dalam $10\\text{ detik}$: $x = 1,2 \\times 10 = 12\\text{ m}$. Menggunakan kesebangunan lampu jalan: $\\frac{s}{12 + s} = \\frac{1,6}{4,8} = \\frac{1}{3} \\Rightarrow 3s = 12 + s \\Rightarrow s = 6\\text{ m}$. Tinggi anakan pohon pada rasio bayangan pagi ($1,5 : 1,2 = 5 : 4$): $T_{\\text{anakan}} = 3,6 \\times \\frac{5}{4} = 4,5\\text{ m}$. Selisihnya $6 - 4,5 = 1,5\\text{ m}$ lebih panjang (opsi E). Pengecoh A terbalik arah perbandingan, sedangkan B dan D keliru memakai rumus $\\frac{s}{x} = \\frac{1,6}{4,8}$.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><line x1='24' y1='185' x2='356' y2='185' stroke='#E2E8F0' stroke-width='2'/><polygon points='75,45 75,185 330,185' fill='#38BDF8' fill-opacity='0.14' stroke='#38BDF8' stroke-width='1.5'/><polygon points='235,125 235,185 330,185' fill='#34D399' fill-opacity='0.24' stroke='#34D399' stroke-width='2'/><line x1='75' y1='45' x2='330' y2='185' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='75' y1='45' x2='75' y2='185' stroke='#38BDF8' stroke-width='3'/><circle cx='75' cy='45' r='6' fill='#FBBF24'/><line x1='235' y1='134' x2='235' y2='185' stroke='#34D399' stroke-width='3'/><circle cx='235' cy='127' r='5' fill='#34D399'/><polyline points='75,175 85,175 85,185' fill='none' stroke='#E2E8F0' stroke-width='1.2'/><polyline points='235,175 245,175 245,185' fill='none' stroke='#E2E8F0' stroke-width='1.2'/><text x='75' y='32' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Lampu Solar</text><text x='235' y='115' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Petugas</text><text x='155' y='176' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Jalan t = 10 detik</text><line x1='235' y1='198' x2='330' y2='198' stroke='#FB7185' stroke-width='1.5'/><line x1='235' y1='193' x2='235' y2='203' stroke='#FB7185' stroke-width='1.5'/><line x1='330' y1='193' x2='330' y2='203' stroke='#FB7185' stroke-width='1.5'/><text x='282' y='215' fill='#FB7185' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Bayangan = ?</text></svg>",
+        "caption": "Ilustrasi posisi petugas patroli setelah berjalan 10 detik menjauhi tiang lampu solar dan panjang bayangannya (?)."
+      }
     },
     {
       "nomor_soal": 2,
@@ -97,7 +220,11 @@
       "opsi_jawaban": [],
       "kunci_jawaban": "26",
       "bedah_cepat_markdown": "Dari kesebangunan $\\triangle PAB \\sim \\triangle DCB$, lebar sungai $L = AP$ memenuhi $\\frac{L}{6} = \\frac{24}{8} = 3 \\Rightarrow L = 18\\text{ m}$. Total bentang lurus ditambah landasan jangkar di kedua tepi: $18 + 2,5 + 2,5 = 23\\text{ m}$. Tambahkan kelonggaran lengkungan kabel $10\\%$: $23 \\times 1,10 = 25,3\\text{ m}$. Karena pembelian gulungan baja wajib dibulatkan ke atas ke satuan meter terdekat agar tidak kurang di lapangan, panjang minimalnya adalah $26\\text{ m}$.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><rect x='25' y='85' width='330' height='60' fill='#38BDF8' fill-opacity='0.14'/><line x1='25' y1='85' x2='355' y2='85' stroke='#38BDF8' stroke-width='2'/><line x1='25' y1='145' x2='355' y2='145' stroke='#38BDF8' stroke-width='2'/><text x='338' y='77' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='end'>Tepi Utara</text><text x='338' y='162' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='end'>Tepi Selatan</text><rect x='184' y='52' width='12' height='10' rx='2' fill='#34D399'/><rect x='184' y='168' width='12' height='10' rx='2' fill='#34D399'/><line x1='190' y1='62' x2='190' y2='168' stroke='#E2E8F0' stroke-width='2.5'/><line x1='182' y1='85' x2='198' y2='85' stroke='#FBBF24' stroke-width='1.5'/><line x1='182' y1='145' x2='198' y2='145' stroke='#FBBF24' stroke-width='1.5'/><line x1='150' y1='62' x2='150' y2='85' stroke='#34D399' stroke-width='1.5'/><line x1='146' y1='62' x2='154' y2='62' stroke='#34D399' stroke-width='1.5'/><line x1='146' y1='85' x2='154' y2='85' stroke='#34D399' stroke-width='1.5'/><text x='140' y='78' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='end'>2,5 m</text><line x1='150' y1='85' x2='150' y2='145' stroke='#38BDF8' stroke-width='1.5'/><line x1='146' y1='145' x2='154' y2='145' stroke='#38BDF8' stroke-width='1.5'/><text x='140' y='119' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='end'>Lebar Sungai (L)</text><line x1='150' y1='145' x2='150' y2='168' stroke='#34D399' stroke-width='1.5'/><line x1='146' y1='168' x2='154' y2='168' stroke='#34D399' stroke-width='1.5'/><text x='140' y='161' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='end'>2,5 m</text><line x1='225' y1='62' x2='225' y2='168' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='221' y1='62' x2='229' y2='62' stroke='#FBBF24' stroke-width='1.5'/><line x1='221' y1='168' x2='229' y2='168' stroke='#FBBF24' stroke-width='1.5'/><text x='235' y='112' fill='#FBBF24' font-family='sans-serif' font-size='12'>Bentang Total</text><text x='235' y='128' fill='#FB7185' font-family='sans-serif' font-size='12' font-weight='bold'>+10% Kabel = ? m</text><text x='190' y='28' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Sketsa Bentang Jembatan Gantung &amp; Kelonggaran Kabel</text><text x='190' y='208' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Panjang Gulungan Baja = Pembulatan ke Atas (Satuan Meter)</text></svg>",
+        "caption": "Sketsa bentang jembatan gantung melintasi lebar sungai L dengan tambahan landasan pondasi 2,5 m di kedua tepi dan kelonggaran kabel 10%."
+      }
     },
     {
       "nomor_soal": 3,
@@ -115,7 +242,11 @@
       ],
       "kunci_jawaban": "A",
       "bedah_cepat_markdown": "- **(1) Benar:** $h_{\\text{bayangan}} = 50 \\times \\frac{18.000}{60.000} = 15\\text{ mm}$.\n- **(2) Benar:** Agar $h_{\\text{bayangan}} = 24\\text{ mm}$, jarak $d' = \\frac{18 \\times 50}{24} = 37,5\\text{ m}$.\n- **(3) Benar:** Jarak layar $d_{\\text{layar}} = \\frac{240}{3,6} \\times 15 = 1.000\\text{ cm} = 10\\text{ m}$.\n- **(4) Salah:** Pada jarak $12,5\\text{ m}$ ($1.250\\text{ cm}$), lebar gambar menjadi $3,6 \\times \\frac{1.250}{15} = 300\\text{ cm} = 3,0\\text{ m}$, bukan $2,8\\text{ m}$.\nJadi, pernyataan (1), (2), dan (3) saja yang benar (opsi A).",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='190' y='24' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Kesebangunan Lensa Kamera &amp; Proyektor</text><line x1='25' y1='115' x2='355' y2='115' stroke='#1E293B' stroke-width='1'/><text x='100' y='44' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>1. Sensor Kamera</text><polygon points='35,70 115,105 115,125 35,160' fill='#38BDF8' fill-opacity='0.14'/><polygon points='115,105 165,127 165,103 115,125' fill='#34D399' fill-opacity='0.18'/><line x1='35' y1='70' x2='165' y2='127' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='35' y1='160' x2='165' y2='103' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='35' y1='70' x2='35' y2='160' stroke='#34D399' stroke-width='2.5'/><ellipse cx='115' cy='115' rx='4' ry='22' fill='#0B1120' stroke='#38BDF8' stroke-width='2'/><line x1='165' y1='96' x2='165' y2='134' stroke='#E2E8F0' stroke-width='2.5'/><text x='35' y='62' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>Pohon</text><text x='165' y='90' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>24 mm</text><text x='75' y='178' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>60 m / 37,5 m</text><text x='142' y='152' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='middle'>f</text><line x1='190' y1='38' x2='190' y2='210' stroke='#1E293B' stroke-width='1.5' stroke-dasharray='4 3'/><text x='285' y='44' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>2. Layar Proyektor</text><polygon points='215,105 260,115 215,125' fill='#34D399' fill-opacity='0.18'/><polygon points='260,115 350,65 350,165' fill='#38BDF8' fill-opacity='0.14'/><line x1='215' y1='105' x2='350' y2='165' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='215' y1='125' x2='350' y2='65' stroke='#FBBF24' stroke-width='1.5' stroke-dasharray='5 4'/><line x1='215' y1='103' x2='215' y2='127' stroke='#34D399' stroke-width='2.5'/><ellipse cx='260' cy='115' rx='4' ry='22' fill='#0B1120' stroke='#38BDF8' stroke-width='2'/><line x1='350' y1='65' x2='350' y2='165' stroke='#E2E8F0' stroke-width='2.5'/><text x='220' y='95' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>3,6 cm</text><text x='338' y='57' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>2,4 m / ?</text><text x='305' y='178' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>10 m (+2,5 m)</text><text x='285' y='204' fill='#FB7185' font-family='sans-serif' font-size='12' text-anchor='middle'>Evaluasi Pernyataan (1)-(4)</text></svg>",
+        "caption": "Diagram perbandingan segitiga sebangun pada sistem optik sensor kamera (kiri) dan proyeksi layar proyektor (kanan)."
+      }
     }
   ]
 }

@@ -1,0 +1,103 @@
+{
+  "kode_subbab": "pk-05-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Sifat dan Rumus Sudut, Garis Sejajar, dan Bangun Datar",
+    "subjudul_ringkas": "Panduan komprehensif sifat hubungan sudut, garis sejajar, segitiga, poligon, dan lingkaran beserta contoh hitung cepat UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Garis Sejajar, Transversal & Pola Zig-Zag",
+        "ringkasan_kelompok": "Aturan kesamaan dan penjumlahan sudut pada dua garis sejajar yang dipotong garis lain.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Sudut Sehadap, Dalam Berseberangan, dan Luar Berseberangan",
+            "penjelasan_singkat": "Jika dua garis sejajar ($g \\parallel h$) dipotong transversal, pasangan sudut sehadap, dalam berseberangan, dan luar berseberangan bernilai sama besar.",
+            "contoh_penerapan": "Diketahui $g \\parallel h$. Jika sudut dalam berseberangannya adalah $(3x - 10)^\\circ$ dan $80^\\circ$, maka **$3x - 10 = 80 \\rightarrow x = 30^\\circ$**.",
+            "jebakan_atau_catatan": "Sifat sama besar hanya berlaku jika garis benar-benar sejajar; cek tanda panah sejajar pada gambar soal UTBK terlebih dahulu."
+          },
+          {
+            "judul_poin": "Sudut Dalam Sepihak dan Luar Sepihak",
+            "penjelasan_singkat": "Pada dua garis sejajar ($g \\parallel h$), pasangan sudut dalam sepihak maupun luar sepihak saling berpelurus sehingga jumlahnya tepat $180^\\circ$.",
+            "contoh_penerapan": "Sudut dalam sepihak bernilai $2a$ dan $3a + 30^\\circ$, sehingga **$2a + (3a + 30^\\circ) = 180^\\circ \\rightarrow a = 30^\\circ$**.",
+            "jebakan_atau_catatan": "Jangan menyamakan nilai sudut sepihak seperti sudut berseberangan; ingat huruf U pada dalam sepihak berarti jumlahnya $180^\\circ$."
+          },
+          {
+            "judul_poin": "Aturan Garis Bantu Patah (Pola Zig-Zag)",
+            "penjelasan_singkat": "Pada jalur zig-zag di antara dua garis sejajar, jumlah sudut menghadap kiri sama dengan jumlah sudut menghadap kanan.",
+            "contoh_penerapan": "Sudut kiri $40^\\circ$ dan $35^\\circ$, sedangkan sudut kanan tunggal bernilai $x$, maka **$x = 40^\\circ + 35^\\circ = 75^\\circ$**.",
+            "jebakan_atau_catatan": "Pastikan semua sudut yang dijumlahkan adalah sudut dalam lekukan zig-zag yang berselang-seling arahnya, bukan sudut pelurus di luarnya."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Relasi Dasar Sudut & Persamaan Aljabar",
+        "ringkasan_kelompok": "Hubungan sudut pada titik potong dan garis lurus untuk menyusun persamaan linear.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Sudut Berpenyiku (Komplemen) dan Berpelurus (Suplemen)",
+            "penjelasan_singkat": "Dua sudut berpenyiku membentuk sudut siku-siku ($\\alpha + \\beta = 90^\\circ$), sedangkan dua sudut berpelurus membentuk garis lurus ($\\alpha + \\beta = 180^\\circ$).",
+            "contoh_penerapan": "Jika besar suatu sudut adalah $4$ kali penyikunya, maka $x = 4(90^\\circ - x) \\rightarrow 5x = 360^\\circ$, sehingga **$x = 72^\\circ$**.",
+            "jebakan_atau_catatan": "Hati-hati tertukar istilah penyiku ($90^\\circ$) dan pelurus ($180^\\circ$) saat menerjemahkan soal cerita aljabar ke dalam model persamaan."
+          },
+          {
+            "judul_poin": "Sudut Bertolak Belakang dan Sudut Satu Putaran",
+            "penjelasan_singkat": "Sudut yang saling bertolak belakang pada perpotongan dua garis selalu sama besar, sedangkan total sudut satu putaran penuh adalah $360^\\circ$.",
+            "contoh_penerapan": "Dua garis berpotongan membentuk sudut bertolak belakang $(5x - 15)^\\circ$ dan $(3x + 25)^\\circ$, maka **$5x - 15 = 3x + 25 \\rightarrow x = 20^\\circ$**.",
+            "jebakan_atau_catatan": "Sifat bertolak belakang hanya berlaku jika kedua sisi sudut merupakan perpanjangan garis lurus yang sama, bukan garis yang membelok."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Sifat Sudut pada Segitiga",
+        "ringkasan_kelompok": "Aturan sudut dalam, sudut luar, dan kesamaan sudut pada segitiga istimewa.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Jumlah Sudut Dalam dan Segitiga Sama Kaki",
+            "penjelasan_singkat": "Jumlah ketiga sudut dalam segitiga selalu $180^\\circ$; pada segitiga sama kaki, dua sudut di hadapan sisi sama panjang bernilai sama.",
+            "contoh_penerapan": "Segitiga sama kaki memiliki sudut puncak $50^\\circ$, maka masing-masing sudut kakinya adalah **$\\frac{180^\\circ - 50^\\circ}{2} = 65^\\circ$**.",
+            "jebakan_atau_catatan": "Periksa tanda strip kesamaan panjang sisi untuk menentukan sudut mana yang berhadapan dengannya, karena gambar UTBK sering tidak berskala."
+          },
+          {
+            "judul_poin": "Teorema Sudut Luar Segitiga",
+            "penjelasan_singkat": "Besar sudut luar segitiga sama dengan jumlah dua sudut dalam segitiga yang tidak berpelurus dengannya ($\\theta_{\\text{luar}} = \\alpha + \\beta$).",
+            "contoh_penerapan": "Sudut dalam segitiga bernilai $45^\\circ$ dan $(2x + 10)^\\circ$, sedangkan sudut luar di sisi ketiga $115^\\circ$, maka **$45 + 2x + 10 = 115 \\rightarrow x = 30^\\circ$**.",
+            "jebakan_atau_catatan": "Trik cepat: langsung jumlahkan dua sudut dalam yang berjauhan tanpa perlu mencari sudut pelurus di sebelahnya terlebih dahulu."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Sudut Poligon Beraturan & Lingkaran",
+        "ringkasan_kelompok": "Rumus besar sudut segi-n beraturan serta relasi sudut pusat dan keliling lingkaran.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Sudut Dalam dan Luar Poligon Segi-n Beraturan",
+            "penjelasan_singkat": "Untuk segi-$n$ beraturan ($n \\ge 3$), setiap sudut dalam bernilai $\\frac{(n-2) \\times 180^\\circ}{n}$ dan setiap sudut luarnya bernilai $\\frac{360^\\circ}{n}$.",
+            "contoh_penerapan": "Pada segi-$8$ beraturan (oktagon), besar satu sudut dalamnya adalah **$\\frac{(8-2) \\times 180^\\circ}{8} = 135^\\circ$**.",
+            "jebakan_atau_catatan": "Untuk nilai $n$ besar, hitung sudut luar $\\frac{360^\\circ}{n}$ terlebih dahulu lalu kurangkan dari $180^\\circ$ agar perhitungan jauh lebih cepat."
+          },
+          {
+            "judul_poin": "Sudut Pusat dan Sudut Keliling Lingkaran",
+            "penjelasan_singkat": "Jika menghadap busur yang sama, besar sudut pusat sama dengan dua kali sudut keliling ($\\angle \\text{Pusat} = 2 \\times \\angle \\text{Keliling}$).",
+            "contoh_penerapan": "Sudut pusat $\\angle AOB = 110^\\circ$ menghadap busur $AB$, maka sudut keliling $\\angle ACB$ yang menghadap busur sama adalah **$\\frac{1}{2} \\times 110^\\circ = 55^\\circ$**.",
+            "jebakan_atau_catatan": "Pastikan kedua sudut menghadap busur yang sama persis; semua sudut keliling yang menghadap busur sama memiliki besar identik."
+          },
+          {
+            "judul_poin": "Sudut Menghadap Diameter dan Segi Empat Tali Busur",
+            "penjelasan_singkat": "Sudut keliling yang menghadap diameter selalu siku-siku ($90^\\circ$), dan sudut-sudut berhadapan pada segi empat tali busur berjumlah $180^\\circ$.",
+            "contoh_penerapan": "Pada segi empat tali busur $ABCD$, jika $\\angle A = 82^\\circ$, maka sudut di hadapannya yaitu **$\\angle C = 180^\\circ - 82^\\circ = 98^\\circ$**.",
+            "jebakan_atau_catatan": "Pada segi empat tali busur, sudut yang berhadapan berjumlah $180^\\circ$ (berpelurus), bukan sama besar seperti pada jajar genjang."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "kode_subbab": "lbe-01-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Taksonomi Pola Organisasi Teks, Hubungan Paragraf, dan Target Pembaca",
+    "subjudul_ringkas": "Panduan sinyal leksikal untuk memetakan struktur wacana, relasi antar-paragraf, serta profil pembaca sasaran.",
+    "mode_tampilan": "katalog_sinyal_pola",
+    "label_kolom": {
+      "kolom_1": "Kategori / Penanda Teks",
+      "kolom_2": "Contoh Potongan / Sinyal",
+      "kolom_3": "Cara Bedakan / Jebakan"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Pola Organisasi Teks Makro (Overall Structure & Flow)",
+        "ringkasan_kelompok": "Memetakan arsitektur utama dan alur gagasan lintas paragraf dari awal hingga akhir.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Pola Problem–Solution (Masalah dan Solusi)",
+            "penjelasan_singkat": "Memaparkan krisis atau hambatan di paragraf awal, lalu menawarkan intervensi, kebijakan, atau teknologi pemecahannya.",
+            "contoh_penerapan": "Urban **congestion threatens** economic productivity; **to mitigate** this crisis, municipal planners are **implementing** congestion pricing zones.",
+            "jebakan_atau_catatan": "Jangan tertukar dengan Cause–Effect; Problem–Solution wajib memuat usulan tindakan nyata (*mitigate*, *address*, *resolve*), bukan sekadar dampak."
+          },
+          {
+            "judul_poin": "Pola Cause–Effect (Sebab dan Akibat)",
+            "penjelasan_singkat": "Menjelaskan faktor pemicu suatu fenomena beserta rangkaian dampak yang ditimbulkannya secara kausal.",
+            "contoh_penerapan": "Prolonged ocean warming **triggers** coral bleaching, **resulting in** the collapse of local marine biodiversity.",
+            "jebakan_atau_catatan": "Waspadai jebakan Chronological; urutan waktu belum tentu hubungan sebab-akibat kecuali ada penanda kausal (*triggers*, *consequently*, *stem from*)."
+          },
+          {
+            "judul_poin": "Pola Compare–Contrast (Perbandingan dan Pertentangan)",
+            "penjelasan_singkat": "Menjajarkan dua konsep, metode, atau entitas untuk menyoroti persamaan maupun perbedaan utamanya.",
+            "contoh_penerapan": "**Whereas** lithium-ion batteries offer high energy density, sodium-ion alternatives **conversely** excel in thermal stability and cost.",
+            "jebakan_atau_catatan": "Jika dua paragraf membahas dua sisi pro-kontra satu isu, pilih *Compare–Contrast*, bukan *Problem–Solution*."
+          },
+          {
+            "judul_poin": "Pola Chronological / Process (Urutan Waktu atau Tahapan)",
+            "penjelasan_singkat": "Menyusun peristiwa historis atau tahapan mekanisme secara berurutan berdasarkan linimasa atau fase kerja.",
+            "contoh_penerapan": "**Initially** discovered in **1928**, penicillin underwent mass purification **by 1943**, **subsequently** revolutionizing clinical infection treatment.",
+            "jebakan_atau_catatan": "Cek kalimat pertama tiap paragraf; penanda tahun berurutan atau kata *initially*, *subsequently*, *finally* memastikan alur kronologis."
+          },
+          {
+            "judul_poin": "Alur General-to-Specific / Classification (Peta Alur Ide)",
+            "penjelasan_singkat": "Membuka teks dengan definisi atau fenomena luas, lalu memecahnya menjadi subkategori atau bukti empiris.",
+            "contoh_penerapan": "Cognitive biases distort judgment **in three primary ways**: **first**, confirmation bias; **second**, anchoring; and **third**, availability heuristic.",
+            "jebakan_atau_catatan": "Untuk soal *flow of ideas*, lacak pergeseran dari klaim abstrak di paragraf satu menuju rincian mekanisme di paragraf berikutnya."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Hubungan Logis Antar-Paragraf Berurutan (Paragraph Relationship)",
+        "ringkasan_kelompok": "Mengidentifikasi fungsi paragraf lanjutan terhadap gagasan utama paragraf sebelumnya.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Relasi Elaboration (Pendalaman atau Rincian Mekanisme)",
+            "penjelasan_singkat": "Paragraf berikutnya memperjelas konsep, cara kerja, atau alasan di balik klaim paragraf sebelumnya.",
+            "contoh_penerapan": "[P1] Sleep clears neural waste. [P2] **Specifically, this clearance relies on** the glymphatic system expanding during deep sleep.",
+            "jebakan_atau_catatan": "Jangan tertukar dengan *Exemplification*; *Elaboration* menjelaskan cara kerja secara umum, sedangkan *Exemplification* menyebut kasus atau subjek spesifik."
+          },
+          {
+            "judul_poin": "Relasi Exemplification (Ilustrasi Kasus atau Bukti Konkret)",
+            "penjelasan_singkat": "Paragraf kedua menghadirkan studi kasus, eksperimen, atau contoh nyata untuk membuktikan klaim umum paragraf pertama.",
+            "contoh_penerapan": "[P1] Invasive species disrupt island ecosystems. [P2] **A prime illustration is** the brown tree snake's introduction to Guam.",
+            "jebakan_atau_catatan": "Munculnya nama negara, tahun studi, atau kata *for instance* dan *a case in point* menandai fungsi *exemplification*."
+          },
+          {
+            "judul_poin": "Relasi Contrast / Counterargument (Sanggahan atau Pengecualian)",
+            "penjelasan_singkat": "Paragraf lanjutan membatasi, mengkritik, atau menyajikan perspektif berlawanan terhadap argumen paragraf sebelumnya.",
+            "contoh_penerapan": "[P1] Automated grading accelerates feedback. [P2] **Critics, however, contend that** algorithms fail to evaluate nuanced critical reasoning.",
+            "jebakan_atau_catatan": "Kata transisi awal paragraf seperti *however*, *nevertheless*, atau *despite this optimism* langsung menggugurkan opsi yang bermakna menyetujui."
+          },
+          {
+            "judul_poin": "Relasi Consequence / Implication (Dampak atau Tindak Lanjut)",
+            "penjelasan_singkat": "Paragraf kedua memaparkan hasil akhir, efek jangka panjang, atau implikasi praktis dari temuan paragraf pertama.",
+            "contoh_penerapan": "[P1] Groundwater aquifers are depleting rapidly. [P2] **As a result**, agricultural yields in arid regions face severe contraction.",
+            "jebakan_atau_catatan": "Jika P1 berisi penyebab dan P2 berisi akibatnya, hubungan P2 terhadap P1 adalah *presents the consequences of P1*."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Identifikasi Target Pembaca & Sumber Publikasi (Audience & Source)",
+        "ringkasan_kelompok": "Menentukan profil pembaca sasaran dan jenis media lewat diksi, nada, dan rekomendasi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Academic / Scientific Journal (Peneliti dan Akademisi)",
+            "penjelasan_singkat": "Menggunakan jargon teknis tanpa definisi dasar, struktur metodologis, dan nada objektif berbasis data empiris.",
+            "contoh_penerapan": "**Multivariate regression** revealed a **statistically significant correlation ($p = 0.003$)** between **synaptic pruning** and adolescent executive function.",
+            "jebakan_atau_catatan": "Singkirkan opsi *general readers* jika teks memakai istilah statistik atau biokimia berat tanpa penjelasan awam."
+          },
+          {
+            "judul_poin": "Policy Brief / Institutional Guide (Pembuat Kebijakan)",
+            "penjelasan_singkat": "Fokus pada efisiensi anggaran, regulasi makro, dan rekomendasi strategis bagi pemerintah atau pimpinan institusi.",
+            "contoh_penerapan": "**Municipal authorities should mandate** zoning reforms and **reallocate subsidies** to accelerate low-income transit adoption.",
+            "jebakan_atau_catatan": "Bedakan dari blog konsumen; rekomendasi ditujukan pada tingkat sistemik (*regulators*, *ministries*, *stakeholders*), bukan kebiasaan individu."
+          },
+          {
+            "judul_poin": "Popular Media / Consumer Blog (Pembaca Umum)",
+            "penjelasan_singkat": "Menggunakan bahasa sehari-hari, sapaan langsung (*you*), analogi ringan, dan tips praktis yang bisa langsung diterapkan.",
+            "contoh_penerapan": "Struggling with afternoon fatigue? **Try swapping** your second espresso for a **15-minute brisk walk** to reset your focus.",
+            "jebakan_atau_catatan": "Penggunaan kata ganti orang kedua (*you*, *your*) dan kalimat tanya retoris menjadi penanda kuat bacaan publik umum."
+          },
+          {
+            "judul_poin": "Academic Lecture / Textbook (Mahasiswa atau Pelajar)",
+            "penjelasan_singkat": "Memperkenalkan istilah disiplin ilmu secara bertahap disertai definisi eksplisit, analogi pedagogis, dan rangkuman konsep.",
+            "contoh_penerapan": "In economics, **opportunity cost—defined as** the value of the next best alternative forgone—governs every resource allocation decision.",
+            "jebakan_atau_catatan": "Berbeda dari jurnal penelitian yang mengasumsikan pembaca sudah ahli, buku ajar mendefinisikan istilah dasar secara eksplisit."
+          }
+        ]
+      }
+    ]
+  }
+}

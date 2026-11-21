@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "pk-05-04",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus & Sifat Sistem Koordinat Kartesius dan Persamaan Garis Lurus",
+    "subjudul_ringkas": "Katalog lengkap rumus gradien, persamaan garis, jarak titik, luas bangun, pertidaksamaan linear, dan pencerminan dasar UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Gradien dan Konstruksi Persamaan Garis Lurus",
+        "ringkasan_kelompok": "Menentukan kemiringan serta menyusun persamaan garis lurus dari berbagai kondisi titik dan garis.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Gradien Garis dari Dua Titik dan Bentuk Implisit",
+            "penjelasan_singkat": "Gradien melalui $(x_1, y_1)$ dan $(x_2, y_2)$ adalah $m = \\frac{y_2 - y_1}{x_2 - x_1}$, atau $m = -\\frac{A}{B}$ pada $Ax + By + C = 0$ ($B \\neq 0$).",
+            "contoh_penerapan": "Gradien garis $3x - 2y + 6 = 0$ adalah **$m = -\\frac{3}{-2} = \\frac{3}{2}$**.",
+            "jebakan_atau_catatan": "Ubah persamaan ke bentuk $Ax + By + C = 0$ dahulu; jika $x$ dan $y$ berseberangan ruas, tanda minus hilang."
+          },
+          {
+            "judul_poin": "Persamaan Garis Sejajar ($m_1 = m_2$) melalui Satu Titik",
+            "penjelasan_singkat": "Garis sejajar $Ax + By = C$ melalui $(x_1, y_1)$ bergradien sama ($m_1 = m_2$) dengan rumus cepat $Ax + By = Ax_1 + By_1$.",
+            "contoh_penerapan": "Garis sejajar $2x + 5y = 1$ melalui $(3, -1)$ adalah **$2x + 5y = 2(3) + 5(-1) = 1$**.",
+            "jebakan_atau_catatan": "Gunakan trik substitusi langsung $Ax_1 + By_1$ agar tidak perlu mencari nilai gradien pecahan."
+          },
+          {
+            "judul_poin": "Persamaan Garis Tegak Lurus ($m_1 \\cdot m_2 = -1$)",
+            "penjelasan_singkat": "Garis tegak lurus $Ax + By = C$ melalui $(x_1, y_1)$ memenuhi $m_1 \\cdot m_2 = -1$, dirumuskan cepat $Bx - Ay = Bx_1 - Ay_1$.",
+            "contoh_penerapan": "Garis tegak lurus $3x + 4y = 7$ melalui $(2, 1)$ adalah **$4x - 3y = 4(2) - 3(1) = 5$**.",
+            "jebakan_atau_catatan": "Tukar koefisien $x$ dan $y$ lalu balik satu tanda saja; membalik kedua tanda membuat garis tetap sejajar."
+          },
+          {
+            "judul_poin": "Persamaan Garis Memotong Kedua Sumbu Koordinat",
+            "penjelasan_singkat": "Garis yang memotong sumbu-$X$ di $(a, 0)$ dan sumbu-$Y$ di $(0, b)$ memiliki persamaan $bx + ay = ab$ ($a, b \\neq 0$).",
+            "contoh_penerapan": "Garis memotong $(4, 0)$ dan $(0, -3)$ persamaannya **$-3x + 4y = -12$** atau $3x - 4y = 12$.",
+            "jebakan_atau_catatan": "Jangan tertukar posisi koefisien; titik potong sumbu-$Y$ menjadi koefisien $x$, sedangkan titik potong sumbu-$X$ menjadi koefisien $y$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Titik Potong, Jarak, dan Pembagian Ruas Garis",
+        "ringkasan_kelompok": "Menghitung perpotongan garis, panjang segmen, serta koordinat pembagi ruas pada bidang Kartesius.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Titik Potong Dua Garis dan Syarat Tiga Titik Segaris",
+            "penjelasan_singkat": "Titik potong dicari lewat eliminasi-substitusi; tiga titik $(x_1,y_1)$, $(x_2,y_2)$, $(x_3,y_3)$ segaris (kolinear) jika memenuhi $m_{12} = m_{23}$.",
+            "contoh_penerapan": "Titik $(1, 2)$, $(3, 6)$, dan $(4, k)$ kolinear jika $\\frac{6-2}{3-1} = \\frac{k-6}{4-3} \\implies$ **$k = 8$**.",
+            "jebakan_atau_catatan": "Jika eliminasi dua garis menghasilkan $0 = c$ ($c \\neq 0$), kedua garis sejajar sehingga tidak memiliki titik potong."
+          },
+          {
+            "judul_poin": "Jarak Dua Titik pada Bidang Kartesius",
+            "penjelasan_singkat": "Jarak antara titik $A(x_1, y_1)$ dan $B(x_2, y_2)$ dihitung menggunakan rumus Pythagoras: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+            "contoh_penerapan": "Jarak titik $(-1, 2)$ ke $(2, 6)$ adalah **$d = \\sqrt{(2 - (-1))^2 + (6 - 2)^2} = 5$**.",
+            "jebakan_atau_catatan": "Gunakan tripel Pythagoras dasar $(3,4,5)$ atau $(5,12,13)$ dari selisih absis dan ordinat untuk menghitung tanpa akar manual."
+          },
+          {
+            "judul_poin": "Koordinat Titik Tengah dan Pembagi Ruas Garis",
+            "penjelasan_singkat": "Titik $P$ yang membagi ruas $AB$ dengan rasio $AP : PB = m : n$ berkoordinat $\\left(\\frac{mx_B + nx_A}{m+n}, \\frac{my_B + ny_A}{m+n}\\right)$.",
+            "contoh_penerapan": "Titik $P$ membagi $A(1, 2)$ dan $B(7, 5)$ dengan rasio $2:1$ berada di **$\\left(\\frac{2(7)+1(1)}{3}, \\frac{2(5)+1(2)}{3}\\right) = (5, 4)$**.",
+            "jebakan_atau_catatan": "Perkalian rasio selalu menyilang: angka rasio $m$ dikalikan ke koordinat titik ujung $B$, bukan titik pangkal $A$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Luas Bangun Datar dan Program Linear (DHP)",
+        "ringkasan_kelompok": "Menentukan luas poligon berkoordinat serta mengoptimalkan daerah penyelesaian sistem pertidaksamaan linear.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Luas Bangun Datar dari Koordinat Titik Sudut",
+            "penjelasan_singkat": "Luas segitiga bertitik sudut $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$ adalah $L = \\frac{1}{2} |x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.",
+            "contoh_penerapan": "Luas segitiga bertitik sudut $(0,0)$, $(4,0)$, dan $(2,5)$ adalah **$L = \\frac{1}{2}|0 + 4(5-0) + 2(0-0)| = 10$**.",
+            "jebakan_atau_catatan": "Selalu gunakan tanda mutlak agar luas tidak bernilai negatif akibat urutan pengambilan titik yang searah jarum jam."
+          },
+          {
+            "judul_poin": "Daerah Himpunan Penyelesaian (DHP) Pertidaksamaan Linear",
+            "penjelasan_singkat": "Pada $Ax + By \\le C$ dengan syarat $A > 0$, tanda $\\le$ mengarsir wilayah kiri garis, sedangkan $\\ge$ mengarsir kanan.",
+            "contoh_penerapan": "Pada pertidaksamaan $2x - 3y \\ge 6$, karena koefisien $x$ positif ($2 > 0$), DHP berada di **sebelah kanan garis**.",
+            "jebakan_atau_catatan": "Jangan anggap tanda $\\le$ selalu arsiran bawah jika koefisien $y$ negatif; patokan kiri-kanan mensyaratkan koefisien $x$ positif."
+          },
+          {
+            "judul_poin": "Nilai Optimum Fungsi Objektif dengan Uji Titik Pojok",
+            "penjelasan_singkat": "Nilai maksimum atau minimum fungsi objektif $f(x, y) = ax + by$ pada DHP tertutup selalu tercapai di titik pojoknya.",
+            "contoh_penerapan": "Pada pojok $(0,4)$, $(3,2)$, $(5,0)$, nilai maksimum $f(x,y) = 3x + 2y$ dicapai di $(5,0)$ sebesar **$3(5) + 2(0) = 15$**.",
+            "jebakan_atau_catatan": "Periksa titik potong dua garis pembatas di dalam kuadran I; titik ini sering menjadi pemegang nilai optimum."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Jarak Titik ke Garis dan Pencerminan Dasar (Pengayaan)",
+        "ringkasan_kelompok": "Menghitung jarak tegak lurus titik ke garis serta transformasi refleksi garis dasar.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Jarak Terpendek Titik ke Garis Lurus",
+            "penjelasan_singkat": "Jarak tegak lurus dari titik $(x_1, y_1)$ ke garis $Ax + By + C = 0$ dirumuskan $d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$.",
+            "contoh_penerapan": "Jarak titik $(2, -1)$ ke garis $3x + 4y - 7 = 0$ adalah **$d = \\frac{|3(2) + 4(-1) - 7|}{\\sqrt{3^2 + 4^2}} = 1$**.",
+            "jebakan_atau_catatan": "Pastikan konstanta $C$ sudah dipindah ke ruas kiri ($Ax + By + C = 0$) sebelum disubstitusikan ke rumus."
+          },
+          {
+            "judul_poin": "Pencerminan Titik terhadap Sumbu dan Garis $y = \\pm x$",
+            "penjelasan_singkat": "Bayangan $(x, y)$ terhadap sumbu-$X$ adalah $(x, -y)$, sumbu-$Y$ menjadi $(-x, y)$, garis $y = x$ menjadi $(y, x)$, dan $y = -x$ menjadi $(-y, -x)$.",
+            "contoh_penerapan": "Titik $P(3, -5)$ dicerminkan terhadap garis $y = x$ menghasilkan koordinat bayangan **$P'(-5, 3)$**.",
+            "jebakan_atau_catatan": "Pencerminan terhadap $y = x$ hanya menukar posisi koordinat tanpa mengubah tanda, sedangkan $y = -x$ menukar sekaligus membalik tanda."
+          }
+        ]
+      }
+    ]
+  }
+}

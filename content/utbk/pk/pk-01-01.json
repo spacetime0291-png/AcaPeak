@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 6,
+    "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Diketahui $x$ adalah bilangan bulat dan $x^2$ merupakan kelipatan $4$. Apakah $x$ pasti merupakan kelipatan $4$?",
@@ -23,7 +23,124 @@
       "Lupa menguji bilangan negatif, pecahan, atau nol pada soal Kecukupan Data dan Kuantitas P vs Q ketika syarat hanya menyebut bilangan real atau bulat."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Lengkap Sifat Bilangan Bulat, Prima, KPK, FPB, dan Pecahan",
+      "subjudul_ringkas": "Panduan komprehensif sifat bilangan, keterbagian, faktorisasi, hingga representasi digit untuk soal Pengetahuan Kuantitatif.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_2": "Contoh Hitung Mini",
+        "kolom_3": "Jebakan / Trik Cepat"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Paritas, Tanda Aljabar, dan Keterbagian",
+          "ringkasan_kelompok": "Aturan operasi ganjil-genap, tanda pangkat, syarat habis dibagi, dan pola sisa pembagian.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Operasi Penjumlahan dan Perkalian Paritas",
+              "penjelasan_singkat": "Penjumlahan dua paritas sama menghasilkan genap; perkalian menghasilkan genap jika minimal satu faktornya genap ($a, b \\in \\mathbb{Z}$).",
+              "contoh_penerapan": "Jika $n$ ganjil, maka $3n^2 + 5$ bernilai **genap** karena ganjil ditambah ganjil menghasilkan **bilangan genap**.",
+              "jebakan_atau_catatan": "Angka $0$ adalah **bilangan genap**, sedangkan bilangan ganjil dibagi ganjil belum tentu bulat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sifat Tanda Positif-Negatif pada Pangkat",
+              "penjelasan_singkat": "Bilangan negatif berpangkat genap bernilai positif ($a^{2k} > 0$ untuk $a \\neq 0$), sedangkan pangkat ganjil mempertahankan tanda asal.",
+              "contoh_penerapan": "Jika $x^3 y^4 < 0$ dengan $y \\neq 0$, maka $x$ pasti **negatif** karena $y^4$ selalu **positif**.",
+              "jebakan_atau_catatan": "Waspadai kasus $y = 0$ pada pertidaksamaan non-ketat ($\\le$ atau $\\ge$) karena membuat hasil nol.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Aturan Keterbagian Angka Kunci (3, 4, 8, 9, 11)",
+              "penjelasan_singkat": "Habis dibagi $3$ atau $9$ jika jumlah digitnya kelipatan $3$ atau $9$; dibagi $4$ jika dua digit terakhir kelipatan $4$.",
+              "contoh_penerapan": "Bilangan $7128$ habis dibagi $9$ karena $7+1+2+8 = 18$ (**kelipatan 9**) dan dibagi $4$ karena **$28$ habis dibagi 4**.",
+              "jebakan_atau_catatan": "Syarat habis dibagi $11$: selisih jumlah digit posisi ganjil dan genap harus **$0$ atau kelipatan $11$**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sisa Pembagian (Modulo) dan Pola Digit Satuan",
+              "penjelasan_singkat": "Sisa perkalian atau pangkat sama dengan sisa hasil operasi masing-masing sisanya: $a^n \\bmod m = (a \\bmod m)^n \\bmod m$.",
+              "contoh_penerapan": "Digit satuan $7^{2026}$ dicari via sisa $2026 \\div 4$ yaitu **$2$**, sehingga satuannya sama dengan $7^2 = 49$ yaitu **$9$**.",
+              "jebakan_atau_catatan": "Jika sisa pembagian pangkat dengan $4$ adalah **$0$**, gunakan pangkat ke-$4$ (bukan pangkat $0$).",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Bilangan Prima, Faktorisasi, KPK, dan FPB",
+          "ringkasan_kelompok": "Karakteristik bilangan prima, penghitungan jumlah faktor pembagi, dan relasi KPK-FPB.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Sifat Dasar dan Paritas Bilangan Prima",
+              "penjelasan_singkat": "Bilangan prima memiliki tepat dua faktor positif ($1$ dan dirinya sendiri); hanya $2$ yang merupakan prima genap.",
+              "contoh_penerapan": "Jika jumlah dua prima $p + q = 25$ (ganjil), salah satunya wajib **$2$**, sehingga pasangannya **$23$**.",
+              "jebakan_atau_catatan": "Angka **$1$ bukan bilangan prima** karena hanya memiliki satu faktor positif; semua prima selalu positif.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Banyaknya Faktor Positif dari Faktorisasi Prima",
+              "penjelasan_singkat": "Untuk $N = p_1^{a} \\times p_2^{b} \\times p_3^{c}$ dengan $p_i$ prima berbeda, banyak faktor positifnya adalah $(a+1)(b+1)(c+1)$.",
+              "contoh_penerapan": "Faktorisasi $72 = 2^3 \\times 3^2$, maka banyak faktor positifnya adalah $(3+1)(2+1) = 4 \\times 3 =$ **$12$ faktor**.",
+              "jebakan_atau_catatan": "Pastikan basis sudah **bilangan prima**; jika ditanya seluruh faktor bulat (positif dan negatif), kalikan hasil dengan **$2$**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hubungan Hasil Kali KPK dan FPB",
+              "penjelasan_singkat": "Untuk dua bilangan bulat positif $a$ dan $b$, berlaku $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\times b$.",
+              "contoh_penerapan": "Jika $\\text{FPB}(a, 18) = 6$ dan $\\text{KPK}(a, 18) = 90$, maka $a = \\frac{6 \\times 90}{18} =$ **$30$**.",
+              "jebakan_atau_catatan": "Rumus ini **hanya berlaku untuk dua bilangan**, tidak berlaku langsung untuk tiga bilangan sekaligus.",
+              "visual": null
+            },
+            {
+              "judul_poin": "KPK dan FPB Bilangan Koprima atau Kelipatan",
+              "penjelasan_singkat": "Jika $\\text{FPB}(a,b) = 1$ (koprima), maka $\\text{KPK}(a,b) = a \\times b$; jika $b$ kelipatan $a$, $\\text{FPB} = a$ dan $\\text{KPK} = b$.",
+              "contoh_penerapan": "Dua bilangan berurutan $14$ dan $15$ selalu koprima, sehingga $\\text{FPB} =$ **$1$** dan $\\text{KPK} = 14 \\times 15 =$ **$210$**.",
+              "jebakan_atau_catatan": "Bilangan koprima **tidak harus bilangan prima** (contoh $8$ dan $9$ koprima karena $\\text{FPB} = 1$).",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pecahan, Desimal Berulang, dan Struktur Digit",
+          "ringkasan_kelompok": "Konversi desimal berulang, perbandingan pada garis bilangan, serta pemodelan digit.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Konversi Bilangan Desimal Berulang ke Pecahan",
+              "penjelasan_singkat": "Desimal berulang murni dengan $n$ digit berulang diubah menjadi pecahan berpenyebut angka $9$ sebanyak $n$ kali ($0,\\overline{ab} = \\frac{ab}{99}$).",
+              "contoh_penerapan": "Nilai $0,363636\\dots = 0,\\overline{36} = \\frac{36}{99}$, disederhanakan dengan membagi $9$ menjadi **$\\frac{4}{11}$**.",
+              "jebakan_atau_catatan": "Jika ada digit tak berulang di depan seperti $0,1\\overline{6}$, hitung $\\frac{16 - 1}{90} = \\frac{15}{90} =$ **$\\frac{1}{6}$**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Urutan Bilangan Pecahan pada Interval (0, 1)",
+              "penjelasan_singkat": "Untuk pecahan murni positif $0 < x < 1$, pemangkatan memperkecil nilai ($x^2 < x$) sedangkan penarikan akar memperbesar ($\\sqrt{x} > x$).",
+              "contoh_penerapan": "Jika $x = \\frac{1}{4}$, maka urutan dari terkecil adalah $x^2 = \\frac{1}{16} < x = \\frac{1}{4} <$ **$\\sqrt{x} = \\frac{1}{2}$**.",
+              "jebakan_atau_catatan": "Jangan mengasumsikan $x^2 > x$; selalu uji domain **$0 < x < 1$** dan **$-1 < x < 0$** pada soal Kecukupan Data.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pemodelan Aljabar Bilangan Bulat Berurutan",
+              "penjelasan_singkat": "Tiga bilangan bulat berurutan dimodelkan sebagai $n-1, n, n+1$; tiga bilangan genap atau ganjil berurutan sebagai $n-2, n, n+2$.",
+              "contoh_penerapan": "Jumlah $3$ ganjil berurutan adalah $57$, maka $(n-2)+n+(n+2) = 3n = 57 \\rightarrow$ nilai tengah **$n = 19$**.",
+              "jebakan_atau_catatan": "Gunakan bentuk simetris ($n-1, n, n+1$) agar konstanta **saling menghilangkan** saat dijumlahkan sehingga lebih cepat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Representasi Nilai Tempat Digit Bilangan",
+              "penjelasan_singkat": "Bilangan dua digit $\\overline{ab}$ bernilai $10a + b$, dan tiga digit $\\overline{abc}$ bernilai $100a + 10b + c$ ($1 \\le a \\le 9$).",
+              "contoh_penerapan": "Selisih bilangan dua digit $\\overline{ab}$ dengan kebalikannya $\\overline{ba}$ adalah $(10a+b) - (10b+a) =$ **$9(a-b)$**.",
+              "jebakan_atau_catatan": "Dalam aljabar, $\\overline{ab}$ berarti digit puluhan $a$ dan satuan $b$, **bukan perkalian $a \\times b$**.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

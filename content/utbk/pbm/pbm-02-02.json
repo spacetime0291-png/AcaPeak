@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Manakah penulisan yang sesuai EYD V: 'Rute kereta cepat Jakarta-Bandung beroperasi pada periode 2023-2026' atau 'Rute kereta cepat Jakarta—Bandung beroperasi pada periode 2023—2026'?",
@@ -23,7 +23,131 @@
       "Menggunakan tanda hubung (-) alih-alih tanda pisah (—) untuk rentang tahun atau jarak kota, serta menyisipkan spasi di sekitar tanda pisah."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Pembagian Lengkap Pemakaian Tanda Titik Dua, Hubung, dan Pisah (EYD V)",
+      "subjudul_ringkas": "Katalog kaidah baku EYD V mengenai fungsi, posisi penulisan, dan pembedaan tanda titik dua, hubung, dan pisah.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Tanda Titik Dua (:)",
+          "ringkasan_kelompok": "Mengatur penanda pemerincian setelah pernyataan lengkap dan larangan penggunaannya setelah verba transitif.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Akhir Pernyataan Lengkap yang Diikuti Pemerincian",
+              "penjelasan_singkat": "Dipakai pada akhir pernyataan lengkap minimal berpola S-P yang diikuti pemerincian atau penjelasan.",
+              "contoh_penerapan": "Kami menyiapkan **perlengkapan kemah:** tenda, kompor lipat, matras, dan senter.",
+              "jebakan_atau_catatan": "Salah jika sebelum titik dua belum lengkap: *Perlengkapan kemah: tenda, kompor...* (tanpa predikat).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Larangan Setelah Verba Transitif atau Preposisi",
+              "penjelasan_singkat": "Tidak dipakai jika pemerincian merupakan pelengkap atau objek yang langsung mengikuti verba transitif atau preposisi.",
+              "contoh_penerapan": "Panitia **membutuhkan** kursi, meja, dan pengeras suara untuk acara seminar besok.",
+              "jebakan_atau_catatan": "Bentuk salah UTBK: *Panitia membutuhkan: kursi, meja, dan pengeras suara* (memutus fungsi P-O).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sesudah Kata atau Ungkapan Pemerian",
+              "penjelasan_singkat": "Dipakai sesudah kata atau ungkapan yang memerlukan pemerian, seperti *ketua*, *sekretaris*, *hari*, atau *tempat*.",
+              "contoh_penerapan": "**Ketua:** Raden Wijaya; **Sekretaris:** Siti Aminah; **Bendahara:** Budi Santoso.",
+              "jebakan_atau_catatan": "Jangan mengganti tanda titik dua dengan tanda sama dengan (=) dalam dokumen resmi.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Pelaku Percakapan dalam Naskah Drama",
+              "penjelasan_singkat": "Dipakai dalam naskah drama sesudah kata yang menunjukkan pelaku dalam percakapan.",
+              "contoh_penerapan": "**Ibu:** \"Jangan lupa membawa payung karena langit tampak mendung.\"",
+              "jebakan_atau_catatan": "Tanda petik pembuka dialog diletakkan setelah spasi di belakang tanda titik dua.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pemisah Jilid/Halaman, Bab/Ayat, dan Judul/Anak Judul",
+              "penjelasan_singkat": "Dipakai di antara jilid dan halaman, bab dan ayat kitab suci, serta judul dan anak judul.",
+              "contoh_penerapan": "Kajian itu tercantum dalam jurnal *Bahasa* **12:45—60** serta **Surah Al-Baqarah: 255**.",
+              "jebakan_atau_catatan": "Pemisah nomor jilid dan halaman memakai titik dua tanpa spasi, bukan tanda titik.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Hubung (-)",
+          "ringkasan_kelompok": "Merangkai unsur pembentuk kata ulang, imbuhan dengan kapital atau angka, serta singkatan.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Menyambung Unsur-Unsur Kata Ulang",
+              "penjelasan_singkat": "Dipakai untuk menyambung unsur-unsur dalam semua bentuk kata ulang (utuh, berimbuhan, maupun berubah bunyi).",
+              "contoh_penerapan": "Para siswa **berlari-larian** di lapangan sambil membawa **buku-buku** pelajaran.",
+              "jebakan_atau_catatan": "Kata ulang berimbuhan seperti *berlari-larian* tetap wajib diberi tanda hubung, bukan ditulis serangkai.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Merangkai Unsur Kecil dengan Kapital atau Angka",
+              "penjelasan_singkat": "Merangkai *se-* dengan kata berhuruf kapital, *ke-* dengan angka, dan angka dengan akhiran *-an*.",
+              "contoh_penerapan": "Lomba lari **se-Indonesia** itu diikuti oleh peraih juara **ke-2** era **1990-an**.",
+              "jebakan_atau_catatan": "Bentuk salah UTBK: *seIndonesia*, *ke 2*, atau *1990an* (menghilangkan tanda hubung).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Merangkai Singkatan Kapital dengan Imbuhan atau Kata",
+              "penjelasan_singkat": "Dipakai untuk merangkai unsur singkatan yang seluruhnya berhuruf kapital dengan imbuhan atau kata berikutnya.",
+              "contoh_penerapan": "Berkas lamaran kerja tersebut harus segera **di-PDF-kan** dan dilampiri pemindaian **ber-KTP** asli.",
+              "jebakan_atau_catatan": "Bentuk salah: *diPDFkan* atau *di-PDFkan* (tanda hubung harus mengapit singkatan berhuruf kapital).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Mengeja Huruf Kata dan Tanggal Berupa Angka",
+              "penjelasan_singkat": "Dipakai untuk menyambung huruf kata yang dieja satu-satu dan bagian-bagian tanggal berupa angka.",
+              "contoh_penerapan": "Kata *panitia* dieja **p-a-n-i-t-i-a**, sedangkan upacara diadakan pada **17-08-2026**.",
+              "jebakan_atau_catatan": "Penulisan tanggal berbentuk angka menggunakan tanda hubung (-), bukan tanda pisah (—).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Memperjelas Hubungan Bagian Kata atau Ungkapan",
+              "penjelasan_singkat": "Dipakai untuk memperjelas hubungan bagian kata agar tidak menimbulkan makna ganda dalam kalimat.",
+              "contoh_penerapan": "Diskusi itu membahas proses **ber-evolusi** (mengalami evolusi), bukan **be-revolusi** (melakukan revolusi).",
+              "jebakan_atau_catatan": "Tanpa tanda hubung, kata *berevolusi* menimbulkan ketaksaan makna antara dua proses berbeda.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Pisah (—) & Kontras dengan Tanda Hubung",
+          "ringkasan_kelompok": "Mengapit sisipan di luar struktur inti kalimat serta menyatakan rentang 'sampai dengan'.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Membatasi Sisipan Keterangan di Luar Bangun Kalimat",
+              "penjelasan_singkat": "Dipakai untuk membatasi penyisipan kata atau kalimat yang memberi penjelasan di luar bangun kalimat.",
+              "contoh_penerapan": "Kemerdekaan bangsa itu**—saya yakin akan tercapai—**diperjuangkan oleh bangsa itu sendiri.",
+              "jebakan_atau_catatan": "Ditulis rapat tanpa spasi; jebakan UTBK sering menggantinya dengan tanda hubung (-).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Menegaskan Keterangan Aposisi atau Penjelasan Tambahan",
+              "penjelasan_singkat": "Dipakai untuk menegaskan adanya keterangan aposisi atau keterangan lain sehingga kalimat menjadi lebih jelas.",
+              "contoh_penerapan": "Soekarno-Hatta**—Proklamator Kemerdekaan RI—**diabadikan menjadi nama bandar udara internasional.",
+              "jebakan_atau_catatan": "Bentuk salah: *— Proklamator Kemerdekaan RI —* (menambahkan spasi di sekitar tanda pisah).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Menyatakan Rentang 'Sampai Dengan' atau 'Sampai Ke'",
+              "penjelasan_singkat": "Dipakai di antara dua bilangan, tanggal, atau tempat yang berarti 'sampai dengan' atau 'sampai ke'.",
+              "contoh_penerapan": "Proyek kereta cepat **Jakarta—Bandung** dikerjakan secara bertahap pada periode **2020—2026**.",
+              "jebakan_atau_catatan": "Jebakan utama UTBK: memakai tanda hubung (*Jakarta-Bandung*, *2020-2026*) untuk makna rentang.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

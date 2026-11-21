@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 6,
+    "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Teks menyebut 'sebagian besar studi saat ini melibatkan sampel populasi yang homogen'. Jika opsi jawaban menyatakan 'seluruh studi psikobiotik menggunakan sampel populasi seragam', apakah pernyataan tersebut sesuai?",
@@ -23,7 +23,110 @@
       "Menyisipkan informasi benar berdasarkan pengetahuan umum pembaca, padahal sama sekali tidak tertulis di dalam teks."
     ],
     "stimulus_utama_bersama": "Penelitian neurologi dalam satu dekade terakhir mengungkap adanya jalur komunikasi dua arah yang kompleks antara saluran pencernaan dan sistem saraf pusat, yang dikenal sebagai poros usus-otak (*gut-brain axis*). Komunikasi ini dimediasi oleh saraf vagus, sistem imun, serta berbagai metabolit yang dihasilkan oleh triliunan mikroorganisme penghuni usus atau mikrobiota. Secara mengejutkan, sekitar 90 persen serotonin tubuh—neurotransmiter yang berperan krusial dalam mengatur suasana hati, tidur, dan nafsu makan—ternyata diproduksi di saluran pencernaan, bukan di otak. Ketidakseimbangan komposisi mikrobiota usus, atau disbiosis, terbukti memicu peradangan sistemik tingkat rendah yang dapat mengganggu produksi neurotransmiter tersebut dan meningkatkan kerentanan seseorang terhadap gangguan kecemasan serta depresi klinis.\n\nFenomena ini melahirkan konsep psikobiotik, yakni konsumsi probiotik dan prebiotik spesifik yang bertujuan memulihkan keseimbangan mikrobiota demi menunjang kesehatan mental. Dalam sebuah uji klinis acak terkontrol terhadap 120 pasien dewasa dengan gejala depresi ringan hingga sedang, kelompok yang menerima suplemen galakto-oligosakarida (prebiotik) selama empat minggu menunjukkan penurunan kadar hormon kortisol pagi hari secara signifikan dibandingkan kelompok plasebo. Penurunan kortisol ini berkorelasi positif dengan berkurangnya bias perhatian terhadap stimulus emosional negatif. Meskipun demikian, efek perbaikan psikologis tersebut hanya teramati pada partisipan yang tidak sedang mengonsumsi obat antidepresan konvensional secara bersamaan.\n\nPara peneliti menegaskan bahwa intervensi diet berbasis serat pangan, makanan fermentasi, dan prebiotik bukan merupakan pengganti mutlak bagi terapi farmakologis maupun psikoterapi pada kasus gangguan jiwa berat. Sebagian besar studi saat ini masih terbatas pada durasi pemantauan jangka pendek dan melibatkan sampel populasi yang homogen. Oleh karena itu, penerapan psikobiotik dalam praktik psikiatri klinis masih memerlukan protokol standar yang disesuaikan dengan profil mikrobioma masing-masing individu. Selain faktor genetik dan pola makan, penggunaan antibiotik spektrum luas tanpa pengawasan medis juga dicatat sebagai pemicu utama musnahnya bakteri menguntungkan yang mempercepat terjadinya disbiosis usus.",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Taksonomi Pola dan Sinyal Verifikasi Pernyataan Teks",
+      "subjudul_ringkas": "Panduan mendeteksi parafrasa benar, jebakan logika salah, dan asumsi luar pada bacaan UTBK.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Pola Pernyataan Sesuai (Parafrasa & Ekuivalensi Makna)",
+          "ringkasan_kelompok": "Mengenali bentuk pengubahan redaksi yang tetap mempertahankan seratus persen makna asli teks.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Parafrasa Sinonim dan Padanan Kata",
+              "penjelasan_singkat": "Mengganti kata kunci bacaan dengan sinonim baku KBBI tanpa mengubah konteks maupun intensitas makna aslinya.",
+              "contoh_penerapan": "Teks: \"Inflasi **menggerus** daya beli.\" Opsi: \"Kenaikan harga **menurunkan** kemampuan belanja masyarakat.\"",
+              "jebakan_atau_catatan": "Hati-hati terhadap sinonim yang memiliki gradasi makna lebih ekstrem, misalnya *menurunkan* diubah menjadi *menghapus*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Transformasi Struktur Aktif-Pasif dan Nominalisasi",
+              "penjelasan_singkat": "Mengubah kalimat aktif menjadi pasif atau kata kerja menjadi nomina tanpa membalik pelaku dan sasaran tindakan.",
+              "contoh_penerapan": "Teks: \"Bakteri **menguraikan** limbah organik.\" Opsi: \"Terjadi **penguraian** limbah organik oleh bakteri.\"",
+              "jebakan_atau_catatan": "Jebakan UTBK sering menukar posisi subjek dan objek saat mengubah kalimat aktif ke bentuk pasif.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sintesis Dua Kalimat Berdekatan",
+              "penjelasan_singkat": "Menggabungkan dua informasi eksplisit yang tersebar dalam satu paragraf menjadi satu pernyataan kesimpulan yang utuh.",
+              "contoh_penerapan": "Teks: \"Emas **tahan korosi**. Logam ini dipakai di **komponen satelit**.\" Opsi: \"Ketahanan korosi membuat emas digunakan pada satelit.\"",
+              "jebakan_atau_catatan": "Pastikan hubungan penggabungan memang tertulis eksplisit, bukan kesimpulan lompat yang menambahkan fakta baru.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Pernyataan Tidak Sesuai (Distorsi Fakta & Logika)",
+          "ringkasan_kelompok": "Mendeteksi pergeseran cakupan, pembalikan arah logika, dan kontradiksi tersembunyi pada opsi pengecoh.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Pergeseran Kuantor Universal dan Partikular",
+              "penjelasan_singkat": "Mengubah kata penunjuk jumlah seperti *sebagian* atau *umumnya* menjadi kata bermakna mutlak seperti *semua* atau *selalu*.",
+              "contoh_penerapan": "Teks: \"**Sebagian besar** pesisir terancam abrasi.\" Opsi: \"**Seluruh** wilayah pesisir dipastikan mengalami abrasi.\"",
+              "jebakan_atau_catatan": "Kata mutlak seperti *hanya*, *satu-satunya*, dan *tidak pernah* hampir selalu salah jika teks memakai kata tentatif.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pembalikan Hubungan Sebab-Akibat ($P \\rightarrow Q$)",
+              "penjelasan_singkat": "Menukar posisi penyebab dan dampak sehingga hubungan kausalitasnya menjadi terbalik dari pernyataan eksplisit dalam bacaan.",
+              "contoh_penerapan": "Teks: \"**Kurang tidur** memicu **stres**.\" Opsi: \"**Stres** berkepanjangan menjadi penyebab utama seseorang **kurang tidur**.\"",
+              "jebakan_atau_catatan": "Perhatikan penanda kausalitas terbalik seperti *disebabkan oleh* atau *bermuara pada* saat memverifikasi arah hubungan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kontradiksi Negasi dan Antonim Terselubung",
+              "penjelasan_singkat": "Menyisipkan kata ingkar (*tidak*, *bukan*, *tanpa*) atau mengganti kata kunci dengan lawan katanya secara halus.",
+              "contoh_penerapan": "Teks: \"Vaksin ini **efektif mencegah** penularan.\" Opsi: \"Vaksin tersebut **belum mampu menghambat** laju penularan virus.\"",
+              "jebakan_atau_catatan": "Penambahan awalan *non-*, *nir-*, atau *anti-* pada opsi sering terlewat saat peserta membaca cepat di bawah tekanan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Distorsi Derajat Perbandingan dan Data Angka",
+              "penjelasan_singkat": "Mengubah komparasi (*lebih tinggi*) menjadi superlatif (*paling tinggi*) atau memanipulasi angka statistik dan tahun kejadian.",
+              "contoh_penerapan": "Teks: \"Sektor jasa tumbuh **lebih cepat** dari industri.\" Opsi: \"Sektor jasa mencatat pertumbuhan **tertinggi** di antara semua sektor.\"",
+              "jebakan_atau_catatan": "Pengecoh kerap menukar satuan angka (persen menjadi poin) atau menggeser batas bawah dan batas atas rentang data.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pemisahan Asumsi Luar & Verifikasi Matriks",
+          "ringkasan_kelompok": "Membedakan klaim tanpa dasar teks serta strategi memverifikasi tabel Benar-Salah secara efisien.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Deteksi Informasi Tidak Disebut (Asumsi Luar)",
+              "penjelasan_singkat": "Klaim yang terasa masuk akal secara umum, tetapi topik atau rinciannya sama sekali tidak dibahas dalam teks.",
+              "contoh_penerapan": "Teks: \"Kereta cepat **memangkas waktu tempuh**.\" Opsi: \"Kereta cepat **meningkatkan pendapatan UMKM** di sekitar stasiun.\"",
+              "jebakan_atau_catatan": "Pada soal matriks Benar-Salah, pernyataan yang informasinya tidak disebut di teks wajib dikategorikan sebagai **Salah**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Ekstrapolasi Masa Depan dan Opini Penulis",
+              "penjelasan_singkat": "Mengubah prediksi, harapan, atau opini narasumber dalam teks menjadi fakta pasti yang sudah terjadi di lapangan.",
+              "contoh_penerapan": "Teks: \"Pemerintah **berencana memperluas** jalur sepeda.\" Opsi: \"Jalur sepeda **telah diperluas** ke seluruh ruas jalan protokol.\"",
+              "jebakan_atau_catatan": "Waspadai perubahan modalitas *akan*, *diharapkan*, atau *berpotensi* menjadi kata kerja lampau seperti *telah* atau *berhasil*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Teknik Eliminasi Matriks Pernyataan Majemuk",
+              "penjelasan_singkat": "Memecah satu pernyataan panjang pada tabel Benar-Salah menjadi dua klausa terpisah untuk menguji kebenaran masing-masing bagian.",
+              "contoh_penerapan": "Opsi: \"Padi tumbuh subur di lahan basah **dan** **tahan hama wereng**.\" (Klausa kedua tidak ada di teks).",
+              "jebakan_atau_catatan": "Jika klausa pertama benar tetapi klausa kedua salah atau tidak disebut, keseluruhan pernyataan bernilai **Salah**.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

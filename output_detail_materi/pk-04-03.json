@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pk-04-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus Perubahan Data dan Gabungan Rata-Rata",
+    "subjudul_ringkas": "Panduan lengkap rumus pembobotan, pergeseran nilai, koreksi data, dan transformasi linear pada statistika UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Rata-Rata Gabungan dan Rasio Kelompok",
+        "ringkasan_kelompok": "Rumus pembobotan dua hingga tiga kelompok serta metode cepat mencari perbandingan anggotanya.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Rata-Rata Gabungan Dua Kelompok",
+            "penjelasan_singkat": "Rata-rata gabungan adalah jumlah seluruh nilai dibagi total frekuensi: $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1 + n_2}$, syarat $n_1, n_2 > 0$.",
+            "contoh_penerapan": "Kelas A ($n=20$, $\\bar{x}=75$) digabung kelas B ($n=30$, $\\bar{x}=85$) menghasilkan **$\\bar{x}_{\\text{gab}} = \\frac{20(75)+30(85)}{50} = 81$**.",
+            "jebakan_atau_catatan": "Jebakan umum: langsung merata-ratakan $\\frac{75+85}{2} = 80$ tanpa mengalikan dengan jumlah anggota masing-masing kelompok."
+          },
+          {
+            "judul_poin": "Rata-Rata Gabungan Tiga Kelompok",
+            "penjelasan_singkat": "Perluasan pembobotan tiga kelompok menggunakan rumus $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2 + n_3\\bar{x}_3}{n_1 + n_2 + n_3}$ dengan $n_i$ sebagai frekuensi tiap kelompok.",
+            "contoh_penerapan": "Tiga tim beranggota $2, 3, 5$ orang dengan rata-rata $70, 80, 90$ memiliki **$\\bar{x}_{\\text{gab}} = \\frac{140+240+450}{10} = 83$**.",
+            "jebakan_atau_catatan": "Trik cepat: jika jumlah anggota berupa rasio $a:b:c$, langsung masukkan angka rasio sebagai pengganti $n_1, n_2, n_3$."
+          },
+          {
+            "judul_poin": "Rasio Anggota Metode Selisih Silang",
+            "penjelasan_singkat": "Perbandingan frekuensi dua kelompok berbanding terbalik dengan jarak rata-ratanya ke rata-rata gabungan: $\\frac{n_1}{n_2} = \\frac{|\\bar{x}_2 - \\bar{x}_{\\text{gab}}|}{|\\bar{x}_1 - \\bar{x}_{\\text{gab}}|}$.",
+            "contoh_penerapan": "Rata-rata pria $72$, wanita $80$, dan gabungan $75$ memberikan rasio **$\\frac{n_{\\text{pria}}}{n_{\\text{wanita}}} = \\frac{|80-75|}{|72-75|} = \\frac{5}{3}$**.",
+            "jebakan_atau_catatan": "Hati-hati posisi pembilang dan penyebut tertukar; selisih milik kelompok kedua menjadi pembilang untuk frekuensi kelompok pertama."
+          },
+          {
+            "judul_poin": "Rata-Rata Kelompok Sisa Setelah Pemisahan",
+            "penjelasan_singkat": "Jika sebagian anggota dipisahkan, rata-rata sisanya adalah $\\bar{x}_2 = \\frac{n_{\\text{tot}}\\bar{x}_{\\text{tot}} - n_1\\bar{x}_1}{n_{\\text{tot}} - n_1}$ dengan syarat $n_{\\text{tot}} > n_1$.",
+            "contoh_penerapan": "Dari $10$ siswa ($\\bar{x}=80$), $4$ siswa bernilai rata-rata $86$ keluar, sehingga rata-rata sisanya **$\\frac{800 - 344}{6} = 76$**.",
+            "jebakan_atau_catatan": "Lupa mengurangi penyebut ($n_{\\text{tot}} - n_1$) menjadi kesalahan paling sering saat menghitung rata-rata kelompok yang tersisa."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Perubahan Data dan Koreksi Kesalahan",
+        "ringkasan_kelompok": "Dampak penambahan, pengurangan, penggantian anggota, serta koreksi salah catat terhadap nilai rata-rata.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penambahan Satu atau Dua Data Baru",
+            "penjelasan_singkat": "Menambah $k$ data baru mengubah pembilang dan penyebut: $\\bar{x}_{\\text{baru}} = \\frac{n\\bar{x}_{\\text{lama}} + \\Sigma x_{\\text{masuk}}}{n + k}$ dengan $k \\ge 1$.",
+            "contoh_penerapan": "Rata-rata $4$ ulangan adalah $80$; setelah nilai kelima $95$ masuk, rata-ratanya menjadi **$\\frac{320 + 95}{5} = 83$**.",
+            "jebakan_atau_catatan": "Trik cepat selisih: bagi kelebihan nilai baru dengan total data baru, yakni $80 + \\frac{95 - 80}{5} = 83$."
+          },
+          {
+            "judul_poin": "Pengurangan Satu atau Beberapa Nilai Data",
+            "penjelasan_singkat": "Mengeluarkan $k$ data mengurangi total nilai sekaligus frekuensi: $\\bar{x}_{\\text{baru}} = \\frac{n\\bar{x}_{\\text{lama}} - \\Sigma x_{\\text{keluar}}}{n - k}$ dengan syarat $n > k$.",
+            "contoh_penerapan": "Rata-rata $5$ bilangan adalah $12$; jika bilangan $20$ dibuang, rata-rata sisanya menjadi **$\\frac{60 - 20}{4} = 10$**.",
+            "jebakan_atau_catatan": "Jika nilai yang keluar sama persis dengan rata-rata lama ($x_{\\text{keluar}} = \\bar{x}_{\\text{lama}}$), nilai rata-rata baru tidak berubah."
+          },
+          {
+            "judul_poin": "Penggantian Data dengan Frekuensi Tetap",
+            "penjelasan_singkat": "Jika satu data diganti data lain ($n$ tetap), perubahan rata-rata memenuhi $\\bar{x}_{\\text{baru}} = \\bar{x}_{\\text{lama}} + \\frac{x_{\\text{masuk}} - x_{\\text{keluar}}}{n}$.",
+            "contoh_penerapan": "Pemain berumur $30$ diganti pemain berumur $20$ dalam tim $10$ orang; rata-rata umur berubah **$+\\frac{20-30}{10} = -1$ tahun**.",
+            "jebakan_atau_catatan": "Terbalik mengurangkan ($x_{\\text{keluar}} - x_{\\text{masuk}}$) membuat tanda naik atau turunnya rata-rata menjadi berlawanan dari seharusnya."
+          },
+          {
+            "judul_poin": "Koreksi Kesalahan Pencatatan Nilai Data",
+            "penjelasan_singkat": "Perbaikan salah tulis satu data tanpa mengubah jumlah anggota menggunakan rumus $\\bar{x}_{\\text{benar}} = \\bar{x}_{\\text{salah}} + \\frac{x_{\\text{benar}} - x_{\\text{salah}}}{n}$.",
+            "contoh_penerapan": "Rata-rata $20$ siswa tercatat $74$, padahal nilai $65$ tertulis $85$; rata-rata sebenarnya adalah **$74 + \\frac{65-85}{20} = 73$**.",
+            "jebakan_atau_catatan": "Pastikan membedakan angka tertulis ($x_{\\text{salah}}$) dan angka asli ($x_{\\text{benar}}$) agar tidak terbalik saat menghitung selisih koreksi."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Efek Transformasi Linear Data",
+        "ringkasan_kelompok": "Perubahan ukuran pemusatan dan penyebaran akibat setiap data dikali konstanta dan ditambah bilangan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Transformasi Ukuran Pemusatan (Mean, Median, Modus)",
+            "penjelasan_singkat": "Jika $y_i = ax_i + b$, seluruh ukuran pemusatan (mean, median, modus, kuartil) mengikuti pola $\\text{Baru} = a \\cdot \\text{Lama} + b$.",
+            "contoh_penerapan": "Data bermedian $15$ dikali $2$ lalu dikurangi $3$ menghasilkan **$\\text{Median}_{\\text{baru}} = 2(15) - 3 = 27$**.",
+            "jebakan_atau_catatan": "Berlaku mutlak untuk semua ukuran posisi termasuk kuartil ($Q_1, Q_2, Q_3$) dan desil; tidak perlu menghitung ulang seluruh data."
+          },
+          {
+            "judul_poin": "Transformasi Jangkauan dan Simpangan Baku",
+            "penjelasan_singkat": "Pada $y_i = ax_i + b$, jangkauan ($R$), jangkauan antarkuartil ($H$), dan simpangan baku ($s$) hanya dikali $|a|$ tanpa ditambah $b$.",
+            "contoh_penerapan": "Data berjangkauan $12$ dan simpangan baku $3$ ditransformasi $y_i = -2x_i + 10$ menjadi **$R_{\\text{baru}} = |-2|(12) = 24$**.",
+            "jebakan_atau_catatan": "Jebakan klasik UTBK: ikut menambahkan $+b$ atau membiarkan hasil jangkauan dan simpangan bernilai negatif saat $a < 0$."
+          },
+          {
+            "judul_poin": "Transformasi Varians atau Ragam Data",
+            "penjelasan_singkat": "Karena varians ($s^2$) adalah kuadrat simpangan baku, transformasi $y_i = ax_i + b$ mengubah varians menjadi $s_y^2 = a^2 \\cdot s_x^2$.",
+            "contoh_penerapan": "Varians awal $5$ setelah setiap data dikali $3$ dan ditambah $4$ berubah menjadi **$s_y^2 = 3^2 \\times 5 = 45$**.",
+            "jebakan_atau_catatan": "Peserta sering lupa mengkuadratkan pengali $a$ karena tertukar dengan aturan simpangan baku yang hanya dikali $|a|$."
+          },
+          {
+            "judul_poin": "Mencari Konstanta Transformasi dari Dua Ukuran",
+            "penjelasan_singkat": "Untuk mencari $a$ dan $b$ pada $y_i = ax_i + b$, tentukan $|a|$ dari jangkauan/simpangan dulu, lalu cari $b$ dari rata-rata.",
+            "contoh_penerapan": "Mean $10 \\rightarrow 25$ dan jangkauan $4 \\rightarrow 12$ ($a>0$) menghasilkan **$a = \\frac{12}{4} = 3$** serta **$b = 25 - 3(10) = -5$**.",
+            "jebakan_atau_catatan": "Perhatikan syarat soal apakah $a > 0$ atau $a < 0$, karena persamaan $|a| = k$ menghasilkan dua kemungkinan nilai $a$."
+          }
+        ]
+      }
+    ]
+  }
+}

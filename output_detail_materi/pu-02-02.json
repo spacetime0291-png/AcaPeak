@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "pu-02-02",
+  "detail_materi_lengkap": {
+    "judul_blok": "Kaidah Lengkap Ekuivalensi dan Negasi Pernyataan",
+    "subjudul_ringkas": "Panduan sistematis hukum kesetaraan logika dan penyangkalan pernyataan majemuk untuk Penalaran Deduktif UTBK.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Hukum Ekuivalensi Pernyataan Bersyarat (Implikasi)",
+        "ringkasan_kelompok": "Mengubah struktur kalimat jika-maka tanpa merusak nilai kebenaran argumen.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Kontraposisi Dasar ($p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$)",
+            "penjelasan_singkat": "Balik posisi sebab dan akibat, lalu negasikan kedua klausa tersebut secara bersamaan.",
+            "contoh_penerapan": "\"Jika hujan turun, jalanan basah\" ekuivalen dengan \"**Jika jalanan tidak basah, maka hujan tidak turun**.\"",
+            "jebakan_atau_catatan": "Salah jika hanya membalik posisi (konvers: $q \\rightarrow p$) atau hanya menegasi tanpa membalik (invers: $\\sim p \\rightarrow \\sim q$)."
+          },
+          {
+            "judul_poin": "Kontraposisi pada Implikasi Majemuk",
+            "penjelasan_singkat": "Saat menegasi klausa majemuk dalam kontraposisi, ubah konjungsi menjadi disjungsi atau sebaliknya.",
+            "contoh_penerapan": "\"Jika lulus tes dan sehat, ia diterima\" ekuivalen dengan \"**Jika tidak diterima, ia tidak lulus tes atau tidak sehat**.\"",
+            "jebakan_atau_catatan": "Peserta sering lupa mengubah kata \"**dan**\" menjadi \"**atau**\" saat menegasi klausa syarat majemuk."
+          },
+          {
+            "judul_poin": "Transformasi Implikasi ke Disjungsi ($p \\rightarrow q \\equiv \\sim p \\lor q$)",
+            "penjelasan_singkat": "Pernyataan \"jika $p$ maka $q$\" bernilai setara dengan \"tidak $p$ atau $q$\".",
+            "contoh_penerapan": "\"Jika tidak belajar, nilai turun\" ekuivalen dengan \"**Belajar atau nilai turun**.\"",
+            "jebakan_atau_catatan": "Salah jika menulis \"$p \\lor \\sim q$\" karena klausa pertama yang wajib dinegasikan, bukan klausa kedua."
+          },
+          {
+            "judul_poin": "Ekuivalensi Pola \"Hanya Jika\" ($p \\text{ hanya jika } q$)",
+            "penjelasan_singkat": "Kalimat \"$p$ hanya jika $q$\" bermakna $p \\rightarrow q$, sehingga ekuivalen dengan $\\sim q \\rightarrow \\sim p$.",
+            "contoh_penerapan": "\"Ia menang hanya jika berlatih\" ekuivalen dengan \"**Jika tidak berlatih, maka ia tidak menang**.\"",
+            "jebakan_atau_catatan": "Jangan terbalik mengartikan \"$p$ hanya jika $q$\" sebagai $q \\rightarrow p$; posisi syarat tetap di belakang."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Negasi Implikasi dan Hukum De Morgan",
+        "ringkasan_kelompok": "Menemukan kalimat penyangkal sah untuk membuktikan suatu klaim atau aturan salah.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Negasi Implikasi ($\\sim(p \\rightarrow q) \\equiv p \\land \\sim q$)",
+            "penjelasan_singkat": "Implikasi hanya bernilai salah ketika syarat $p$ terpenuhi, tetapi akibat $q$ gagal terjadi.",
+            "contoh_penerapan": "Ingkaran \"Jika rajin, maka sukses\" adalah \"**Rajin, tetapi tidak sukses**.\"",
+            "jebakan_atau_catatan": "Negasi implikasi bukan bentuk \"jika-maka\" lagi, melainkan pernyataan fakta dengan kata hubung \"**dan**\" atau \"**tetapi**\"."
+          },
+          {
+            "judul_poin": "Negasi Konjungsi / De Morgan I ($\\sim(p \\land q) \\equiv \\sim p \\lor \\sim q$)",
+            "penjelasan_singkat": "Ingkaran dari pernyataan \"$p$ dan $q$\" adalah \"tidak $p$ atau tidak $q$\".",
+            "contoh_penerapan": "Ingkaran \"Siswa membawa KTP dan kartu ujian\" adalah \"**Siswa tidak membawa KTP atau tidak membawa kartu ujian**.\"",
+            "jebakan_atau_catatan": "Salah jika tetap memakai kata \"**dan**\" (\"tidak membawa KTP dan tidak membawa kartu ujian\")."
+          },
+          {
+            "judul_poin": "Negasi Disjungsi / De Morgan II ($\\sim(p \\lor q) \\equiv \\sim p \\land \\sim q$)",
+            "penjelasan_singkat": "Ingkaran dari pernyataan \"$p$ atau $q$\" adalah \"tidak $p$ dan tidak $q$\".",
+            "contoh_penerapan": "Ingkaran \"Rapat digelar Senin atau Selasa\" adalah \"**Rapat tidak digelar Senin dan tidak digelar Selasa**.\"",
+            "jebakan_atau_catatan": "Salah jika mempertahankan kata \"**atau**\", karena penyangkalan disjungsi menuntut kedua pilihan sama-sama gagal."
+          },
+          {
+            "judul_poin": "Hukum Negasi Ganda ($\\sim(\\sim p) \\equiv p$)",
+            "penjelasan_singkat": "Menegasikan pernyataan negatif akan mengembalikan makna pernyataan ke bentuk positif semula.",
+            "contoh_penerapan": "Ingkaran \"Tidak benar bahwa harga tiket tidak naik\" adalah \"**Harga tiket naik**.\"",
+            "jebakan_atau_catatan": "Waspadai frasa penyangkal ganda seperti \"tidak mungkin tidak\" atau \"bukan berarti tidak\" dalam bacaan."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Negasi Pernyataan Berkuantor dan Biimplikasi",
+        "ringkasan_kelompok": "Menyusun ingkaran logis untuk kalimat berkuantor semua/beberapa serta syarat dua arah.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Negasi Kuantor Universal ($\\sim(\\forall x, P(x)) \\equiv \\exists x, \\sim P(x)$)",
+            "penjelasan_singkat": "Ingkaran kata \"**semua/setiap**\" adalah \"**ada/beberapa ... tidak**\", bukan sekadar mengganti kuantor tanpa menegasi predikat.",
+            "contoh_penerapan": "Ingkaran \"Semua peserta memakai jas\" adalah \"**Ada peserta yang tidak memakai jas**.\"",
+            "jebakan_atau_catatan": "Jebakan klasik UTBK: menjawab \"Semua peserta tidak memakai jas\" (itu kontrarinya, bukan negasinya)."
+          },
+          {
+            "judul_poin": "Negasi Kuantor Eksistensial ($\\sim(\\exists x, P(x)) \\equiv \\forall x, \\sim P(x)$)",
+            "penjelasan_singkat": "Ingkaran kata \"**ada/beberapa**\" adalah \"**semua/setiap ... tidak**\" atau \"**tidak ada yang ...**\".",
+            "contoh_penerapan": "Ingkaran \"Beberapa siswa terlambat\" adalah \"**Semua siswa tidak terlambat**\" atau \"**Tidak ada siswa yang terlambat**.\"",
+            "jebakan_atau_catatan": "Salah jika menjawab \"Beberapa siswa tidak terlambat\", karena kedua kalimat tersebut bisa benar bersamaan."
+          },
+          {
+            "judul_poin": "Negasi Biimplikasi ($\\sim(p \\leftrightarrow q) \\equiv (p \\land \\sim q) \\lor (q \\land \\sim p)$)",
+            "penjelasan_singkat": "Pernyataan \"$p$ jika dan hanya jika $q$\" salah bila nilai kebenaran kedua klausa berlawanan.",
+            "contoh_penerapan": "Ingkaran \"Lulus jika dan hanya jika nilai tuntas\" adalah \"**Lulus tetapi nilai tidak tuntas, atau tidak lulus tetapi nilai tuntas**.\"",
+            "jebakan_atau_catatan": "Biimplikasi memuat dua arah syarat sehingga negasinya juga harus mencakup dua kondisi berlawanan."
+          }
+        ]
+      }
+    ]
+  }
+}

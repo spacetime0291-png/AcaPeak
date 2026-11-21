@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam kalimat: 'New coastal regulations aim to arrest rapid shoreline erosion,' apakah kata 'arrest' bermakna menangkap penjahat?",
@@ -23,7 +23,117 @@
       "Menunjuk kata benda terdekat sebagai rujukan 'this/these', padahal merujuk pada keseluruhan klausa atau fenomena di kalimat sebelumnya."
     ],
     "stimulus_utama_bersama": "**Forum Thread: Urban Microclimate & Green Roof Initiatives**\n\n**@Dr_Aris (Urban Ecologist):** Recent telemetry from Jakarta's central business district confirms that conventional asphalt roofs exacerbate the urban heat island effect. Deploying extensive green roofs can **arrest** daytime thermal spikes by up to $4^\\circ\\text{C}$. However, critics argue that structural retrofitting costs **put a damper on** widespread municipal adoption. If cities subsidize initial installation, developers **must** recognize the long-term cooling dividends.\n\n**@Siska_Arch (Sustainable Architect):** Valid point, Aris. In our pilot project, retrofitting older warehouses initially seemed prohibitive, yet **this hurdle** was overcome using lightweight modular substrates. Moreover, native drought-tolerant sedums **harbor** local pollinators without requiring intensive irrigation. Municipalities **might** mandate green roofs for commercial buildings exceeding $5,000\\text{ m}^2$, though voluntary tax incentives currently **hold more water** among private stakeholders.\n\n**@Bima_Econ (Policy Analyst):** While ecological benefits are indisputable, financial feasibility remains pivotal. A poorly maintained green roof **can** turn into a costly liability if drainage membranes fail. Therefore, policymakers **should** pair installation grants with mandatory maintenance audits rather than relying solely on upfront subsidies.",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Pola Kosakata Kontekstual, Rujukan Pronomina, dan Nuansa Pragmatik",
+      "subjudul_ringkas": "Panduan taksonomi sinyal teks untuk menaklukkan soal kosakata, rujukan kata ganti, sinonim pragmatis, dan modal verbs.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Katalog Konteks Kosakata, Polisemi & Idiom",
+          "ringkasan_kelompok": "Pola menentukan makna kata polisemi, phrasal verb, dan idiom berdasarkan konteks kalimat.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Kata Polisemi Akademik (Makna Sekunder)",
+              "penjelasan_singkat": "Kata umum sering memakai makna sekunder akademis; tentukan artinya lewat objek atau bidang ilmu di sekitarnya.",
+              "contoh_penerapan": "Early intervention can **arrest** the progression of the disease. Kata *arrest* bermakna menghentikan (*halt*), bukan menangkap.",
+              "jebakan_atau_catatan": "Pengecoh memakai arti kamus paling populer (*capture*) yang tidak cocok dengan konteks medis atau konsep abstrak.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sinyal Definisi dan Kontras Intra-Kalimat",
+              "penjelasan_singkat": "Perhatikan konjungsi kontras (*yet, unlike*) atau tanda baca (*em-dash*, koma) yang langsung menjelaskan kata sulit.",
+              "contoh_penerapan": "The policy proved **ubiquitous**—appearing in virtually every district. Frasa setelah tanda pisah menjelaskan arti *widespread*.",
+              "jebakan_atau_catatan": "Jangan menebak dari kemiripan bunyi kata; baca klausa penjelas tepat sebelum atau sesudah kata target.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Phrasal Verbs dalam Diskusi dan Forum",
+              "penjelasan_singkat": "Gabungan kata kerja dan preposisi membentuk makna baru yang berbeda total dari arti kata dasarnya.",
+              "contoh_penerapan": "User12: Don't **write off** solar panels yet; costs are dropping. Frasa *write off* berarti meremehkan (*dismiss*).",
+              "jebakan_atau_catatan": "Pengecoh memaknai kata secara harfiah (*write* = menulis); uji substitusi sinonim satu kata ke dalam kalimat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Idiom dan Ekspresi Figuratif Forum Thread",
+              "penjelasan_singkat": "Ungkapan kiasan dalam *forum thread* mencerminkan sikap penutur; baca nada komentar sebelumnya untuk menangkap maksud tersirat.",
+              "contoh_penerapan": "Opponents argue the new tax **misses the mark** on inflation. Idiom ini berarti gagal mencapai sasaran.",
+              "jebakan_atau_catatan": "Terjemahan kata per kata menyesatkan; tentukan lebih dulu polaritas positif atau negatif ungkapan dalam argumen.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Rujukan Pronomina & Demonstrativa",
+          "ringkasan_kelompok": "Strategi melacak anteseden pronomina personal, demonstrativa, dan klausa abstrak secara presisi.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Pronomina Personal dan Kesesuaian Jumlah",
+              "penjelasan_singkat": "Rujukan *they, them, their* wajib merujuk nomina jamak sebelumnya, sedangkan *it, its* merujuk nomina tunggal.",
+              "contoh_penerapan": "Researchers tested three **vaccines**, but **they** showed uneven efficacy. Kata *they* merujuk *three vaccines*, bukan *researchers*.",
+              "jebakan_atau_catatan": "Subjek awal sering menjadi pengecoh; masukkan kandidat anteseden ke posisi pronomina untuk menguji kelogisan makna.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Demonstrativa Perangkum Gagasan (This / These + Noun)",
+              "penjelasan_singkat": "Frasa seperti *this phenomenon* atau *such measures* merangkum seluruh peristiwa di kalimat sebelumnya, bukan satu nomina.",
+              "contoh_penerapan": "Coral reefs bleach when oceans warm. **This phenomenon** threatens biodiversity. *This phenomenon* merujuk pemutihan karang akibat pemanasan laut.",
+              "jebakan_atau_catatan": "Pengecoh hanya mengambil satu kata benda terakhir (*oceans*), padahal rujukannya adalah keseluruhan proses kalimat sebelumnya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Rujukan Kontras (The Former vs. The Latter)",
+              "penjelasan_singkat": "Saat dua entitas dibandingkan, *the former* merujuk entitas pertama yang disebut, sedangkan *the latter* merujuk entitas kedua.",
+              "contoh_penerapan": "Between wind and **solar energy**, **the latter** is easier to install. *The latter* merujuk pada *solar energy*.",
+              "jebakan_atau_catatan": "Peserta sering tertukar urutan; selalu beri nomor 1 dan 2 pada dua nomina pembanding sebelum memilih.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pronomina Relatif (Which / That / Where)",
+              "penjelasan_singkat": "Kata *which* tanpa koma merujuk nomina tepat di depannya, tetapi *which* setelah koma merujuk seluruh klausa.",
+              "contoh_penerapan": "Emissions fell by 10%, **which** surprised many economists. Kata *which* merujuk fakta turunnya emisi sebesar 10%.",
+              "jebakan_atau_catatan": "Perhatikan tanda koma; tanpa koma rujukannya spesifik pada objek terdekat, dengan koma rujukannya keseluruhan kejadian.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Presisi Pragmatik Sinonim & Modal Verbs",
+          "ringkasan_kelompok": "Menjaga tingkat kepastian, nada penulis, dan fungsi pragmatis modal dalam parafrase.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Intensitas dan Register Sinonim Pengganti",
+              "penjelasan_singkat": "Kata pengganti harus memiliki derajat kekuatan dan tingkat formalitas yang setara dengan kata asli dalam wacana.",
+              "contoh_penerapan": "The study **suggests** a link between diet and sleep. Padanan tepat adalah *indicates*, bukan *proves* yang absolut.",
+              "jebakan_atau_catatan": "Pengecoh sering menaikkan intensitas klaim (mengganti *suggests* menjadi *guarantees*) atau memakai kata slang tidak formal.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Modal Epistemik: Kepastian vs. Spekulasi",
+              "penjelasan_singkat": "*Must* menunjukkan simpulan logis kuat, sedangkan *may, might, could* menandakan kemungkinan tentatif atau hipotesis belum pasti.",
+              "contoh_penerapan": "The city had no walls, so it **must** have been peaceful. *Must* berfungsi sebagai deduksi logis penulis.",
+              "jebakan_atau_catatan": "Bedakan *must* deduksi dengan keharusan aturan; opsi jawaban memakai *logically concluded* untuk *must* dan *possibly* untuk *might*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Modal Deontik: Keharusan, Saran dan Kemampuan",
+              "penjelasan_singkat": "*Should/ought to* menyatakan rekomendasi normatif, *have to/must* menyatakan kewajiban mutlak, dan *can* menyatakan kapabilitas objektif.",
+              "contoh_penerapan": "Governments **should** subsidize public transit to cut congestion. Kata *should* menunjukkan saran kebijakan (*recommendation*), bukan fakta.",
+              "jebakan_atau_catatan": "Pengecoh mengubah saran (*should*) menjadi kewajiban hukum (*mandatory*) atau klaim yang sudah terjadi di lapangan.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

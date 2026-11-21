@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "ppu-02-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Pembagian Lengkap Kaidah Afiksasi dan Makna Imbuhan EYD V",
+    "subjudul_ringkas": "Kaidah pengimbuhan, peluluhan K-T-S-P, perubahan kelas kata, dan penulisan imbuhan serapan sesuai EYD V dan KBBI VI.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Makna Imbuhan dan Perubahan Kelas Kata",
+        "ringkasan_kelompok": "Menentukan kesamaan makna imbuhan kontekstual serta perubahan jenis kata akibat afiksasi.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Makna Konfiks peN-...-an dan ke-...-an",
+            "penjelasan_singkat": "Konfiks peN-...-an menyatakan proses atau tempat, sedangkan ke-...-an menyatakan hal abstrak, tempat, atau terkena sesuatu.",
+            "contoh_penerapan": "**Pelebaran** jalan utama dilakukan demi kelancaran lalu lintas, sedangkan **kedutaan** besar itu terletak di pusat kota.",
+            "jebakan_atau_catatan": "Jebakan UTBK: menyamakan makna proses (pengairan sawah) dengan makna tempat (pemandian umum) atau hasil (penghasilan bulanan)."
+          },
+          {
+            "judul_poin": "Makna Prefiks ber- dan Sufiks -an",
+            "penjelasan_singkat": "Awalan ber- bermakna mempunyai, memakai, atau melakukan, sedangkan akhiran -an bermakna hasil, alat, atau himpunan.",
+            "contoh_penerapan": "Peserta **bersepeda** santai menyusuri jalur hijau sambil membawa **catatan** rute perjalanan yang telah dibagikan panitia.",
+            "jebakan_atau_catatan": "Jebakan UTBK: mengira berkacamata (memakai) semakna dengan beranak (mempunyai) atau bertinju (saling melakukan)."
+          },
+          {
+            "judul_poin": "Nominalisasi: Verba atau Adjektiva menjadi Nomina",
+            "penjelasan_singkat": "Imbuhan peN-, -an, peN-...-an, dan ke-...-an mengubah kata kerja atau sifat menjadi kata benda ($V/A \\rightarrow N$).",
+            "contoh_penerapan": "Sikap **kejujuran** dan **ketelitian** peneliti sangat menentukan validitas data dalam **pengukuran** sampel laboratorium tersebut.",
+            "jebakan_atau_catatan": "Jebakan UTBK: kata kesehatan (nomina) sering dikelirukan dengan kata dasarnya sehat (adjektiva) saat menentukan fungsi subjek."
+          },
+          {
+            "judul_poin": "Verbalisasi: Nomina atau Adjektiva menjadi Verba",
+            "penjelasan_singkat": "Imbuhan meN-, ber-, meN-...-kan, dan meN-...-i mengubah kata benda atau sifat menjadi kata kerja ($N/A \\rightarrow V$).",
+            "contoh_penerapan": "Pemerintah daerah terus **memperluas** area resapan air untuk **mengantisipasi** banjir kiriman pada puncak musim hujan.",
+            "jebakan_atau_catatan": "Bentuk salah: memperlebarkan (lewah imbuhan per- dan -kan); bentuk baku KBBI adalah memperlebar atau melebarkan."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kaidah Peluluhan K-T-S-P dan Morfofonemik",
+        "ringkasan_kelompok": "Aturan peluluhan konsonan awal kata dasar dan pengecualiannya menurut EYD V.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Peluluhan Konsonan Tunggal K, T, S, P",
+            "penjelasan_singkat": "Huruf awal k, t, s, p kata dasar luluh jika bertemu awalan meN- atau peN- dan diikuti vokal.",
+            "contoh_penerapan": "Tim auditor segera **memesona** publik lewat transparansi laporan saat **memengaruhi** kebijakan anggaran lembaga negara tersebut.",
+            "jebakan_atau_catatan": "Bentuk salah: mempesona, mempengaruhi, mensukseskan, menterjemahkan; bentuk baku adalah memesona, memengaruhi, menyukseskan, dan menerjemahkan."
+          },
+          {
+            "judul_poin": "Pengecualian Peluluhan pada Gugus Konsonan",
+            "penjelasan_singkat": "Kata dasar berawalan gugus konsonan (kr-, tr-, st-, pr-, sp-) tidak luluh saat mendapat awalan meN- atau peN-.",
+            "contoh_penerapan": "Jurnalis investigasi berhasil **mengklarifikasi** isu tersebut sekaligus **memproduksi** laporan mendalam tentang tata kelola energi bersih.",
+            "jebakan_atau_catatan": "Bentuk salah: mengkaji untuk makna menelaah; seharusnya mengaji karena huruf k pada kata kaji diikuti vokal a."
+          },
+          {
+            "judul_poin": "Pengecualian Peluluhan pada Prefiks Bertingkat (meN- + per-)",
+            "penjelasan_singkat": "Konsonan p pada imbuhan per- tidak pernah luluh ketika bergabung dengan awalan meN- membentuk memper-.",
+            "contoh_penerapan": "Para relawan berupaya **memperbaiki** saluran irigasi desa dan **mempersiapkan** logistik pangan sebelum musim kemarau tiba.",
+            "jebakan_atau_catatan": "Bentuk salah: memerhatikan dan memerbaiki; menurut KBBI VI, bentuk baku yang tepat adalah memperhatikan dan memperbaiki."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kaidah Aktif-Pasif dan Imbuhan Serapan EYD V",
+        "ringkasan_kelompok": "Ketepatan imbuhan verba aktif-pasif serta aturan penulisan dan makna imbuhan serapan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Ketepatan Imbuhan Kalimat Aktif dan Pasif (meN- vs di-)",
+            "penjelasan_singkat": "Kalimat aktif transitif memakai awalan meN-, sedangkan pasif memakai di- (pelaku ketiga) atau tanpa awalan (pelaku pertama/kedua).",
+            "contoh_penerapan": "Proposal penelitian yang telah **kami ajukan** bulan lalu akhirnya **disetujui** oleh dewan etik universitas hari ini.",
+            "jebakan_atau_catatan": "Bentuk salah: proposal yang diajukan oleh kami; pelaku pronomina pertama atau kedua wajib memakai bentuk pasif tanpa di-."
+          },
+          {
+            "judul_poin": "Perbedaan Akhiran -kan (Kausatif) dan -i (Lokatif)",
+            "penjelasan_singkat": "Akhiran -kan mengarahkan objek bergerak menuju sasaran, sedangkan akhiran -i menunjukkan objek diam sebagai lokasi atau tindakan berulang.",
+            "contoh_penerapan": "Dokter **memberikan** resep obat kepada pasien, lalu perawat **memberi** pasien edukasi mengenai jadwal konsumsi obat tersebut.",
+            "jebakan_atau_catatan": "Bentuk salah: menugaskan siswa membuat makalah; bentuk baku adalah menugasi siswa atau menugaskan pembuatan makalah kepada siswa."
+          },
+          {
+            "judul_poin": "Penulisan Unsur Terikat Serapan (pra-, non-, pasca-, sub-)",
+            "penjelasan_singkat": "Imbuhan terikat serapan seperti pra-, non-, pasca-, dan sub- ditulis serangkai dengan kata dasar, kecuali diikuti kata kapital.",
+            "contoh_penerapan": "Seluruh peserta wajib mengikuti ujian **pascasarjana** dan melampirkan surat keterangan bebas status **non-ASN** sebelum jadwal wawancara.",
+            "jebakan_atau_catatan": "Bentuk salah: pra sejarah dan non aktif; tulis serangkai (prasejarah, nonaktif) dan pakai tanda hubung sebelum kapital (non-ASN)."
+          },
+          {
+            "judul_poin": "Makna Imbuhan Serapan (-wan, -isme, -isasi)",
+            "penjelasan_singkat": "Sufiks -wan bermakna pelaku atau ahli, -isme bermakna paham atau aliran, dan -isasi bermakna proses menjadikan sesuatu.",
+            "contoh_penerapan": "Para **ilmuwan** menolak **komersialisasi** kawasan konservasi hutan lindung demi menjaga keberlanjutan ekosistem hayati jangka panjang.",
+            "jebakan_atau_catatan": "Bentuk salah: digitalisir atau lokalisir (akhiran Belanda -ir); bentuk baku serapan Indonesia menggunakan akhiran -isasi (digitalisasi, lokalisasi)."
+          }
+        ]
+      }
+    ]
+  }
+}

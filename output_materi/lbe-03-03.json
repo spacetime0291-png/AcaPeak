@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sedang",
     "exam_hook": {
       "pertanyaan_pemantik": "Paragraf pertama teks dibuka dengan kalimat: *\"Despite these promising laboratory yields, scaling conventional hydroponics remains costly.\"* Topik apa yang paling mungkin dibahas pada paragraf tepat sebelum teks ini?",
@@ -23,7 +23,117 @@
       "Menyisipkan kalimat hanya berdasarkan kemiripan kata kunci tanpa memeriksa arah kata ganti rujukan (this, such, they) ke kalimat sebelumnya."
     ],
     "stimulus_utama_bersama": "Despite these promising laboratory yields, scaling conventional hydroponic systems to feed dense urban populations remains financially prohibitive due to exorbitant electricity demands. While soil-free cultivation eliminates arable land constraints and reduces agricultural water consumption by up to 90 percent, artificial full-spectrum LED lighting and continuous HVAC climate regulation account for nearly two-thirds of total operational expenses. Consequently, commercial indoor vertical farms have largely been restricted to cultivating high-margin specialty herbs and leafy greens rather than calorie-dense staple crops capable of bolstering municipal food security.\n\nTo overcome this energy bottleneck, agricultural engineers have begun coupling aeroponic misting towers with excess thermal energy discharged by urban data centers. [1] Server facilities generate vast quantities of low-grade heat that normally require costly mechanical cooling infrastructure to dissipate into the atmosphere. [2] By redirecting this warm exhaust air through insulated conduits into adjacent vertical greenhouses, growers can maintain optimal ambient temperatures without running dedicated electric heaters. [3] Simultaneously, pressurized nutrient-rich aerosol misting suspends plant roots in oxygen-rich chambers, accelerating metabolic uptake and cutting water usage by an additional 40 percent compared to standard deep-water hydroponics. [4] Pilot installations operating under this symbiotic model in Rotterdam and Singapore have already demonstrated a 55 percent reduction in net energy overhead while maintaining year-round crop output. [5]\n\nNevertheless, widespread commercial replication faces a critical non-technical hurdle that engineering alone cannot resolve. Because current municipal zoning ordinances strictly separate heavy industrial computing facilities from commercial food-production zones, developers must navigate years of overlapping regulatory permits before breaking ground. Furthermore, unresolved legal ambiguities surrounding cross-contamination liability, municipal tax incentives, and contractual thermal-supply guarantees continue to deter risk-averse institutional investors from financing large-scale hybrid infrastructure.",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Sinyal Kohesi dan Prediksi Alur Paragraf LBE",
+      "subjudul_ringkas": "Panduan taksonomi penanda transisi dan kata rujukan untuk melacak alur antarkalimat dan antarparagraf.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Kohesi Antarkalimat (Sentence Insertion — Soal Inti)",
+          "ringkasan_kelompok": "Melacak tautan rujukan mundur dan alur maju untuk menyisipkan kalimat baru.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Pronomina dan Demonstrativa Rujukan (Backward Link)",
+              "penjelasan_singkat": "Kata ganti rujukan dalam kalimat sisipan wajib merujuk langsung pada nomina tunggal atau jamak di kalimat sebelumnya.",
+              "contoh_penerapan": "\"If **this chemical process** fails, cells die.\" Letakkan tepat setelah kalimat yang menjelaskan proses kimia spesifik tersebut.",
+              "jebakan_atau_catatan": "Mengecoh dengan menaruh kalimat sisipan sebelum nomina yang dirujuknya muncul di dalam paragraf.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Artikel Pasti (Definite Article \"The\")",
+              "penjelasan_singkat": "Penggunaan frasa the + noun menandakan objek sudah diperkenalkan secara umum dengan artikel a/an sebelumnya.",
+              "contoh_penerapan": "\"...discovered a rare species. **The nocturnal creature**...\" Frasa the creature mengunci posisi setelah penyebutan spesies pertama kali.",
+              "jebakan_atau_catatan": "Terjebak meletakkan kalimat berartikel the di awal paragraf sebelum objek diperkenalkan secara umum.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Transisi Kontras dan Konsesi (However, Yet)",
+              "penjelasan_singkat": "Kalimat sisipan berpenanda kontras membalik arah argumen kalimat sebelumnya dan menjadi pijakan kalimat sesudahnya.",
+              "contoh_penerapan": "\"...boosts short-term yield. **However, prolonged use** degrades soil quality.\" Sisipkan di antara dampak positif dan rincian kerusakan tanah.",
+              "jebakan_atau_catatan": "Memasukkan kalimat kontras di antara dua kalimat yang masih mendukung ide positif yang sama.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Sebab-Akibat dan Tambahan (Consequently, Moreover)",
+              "penjelasan_singkat": "Konjungsi akibat atau tambahan memperluas ide sebelumnya tanpa mengubah arah argumen utama paragraf.",
+              "contoh_penerapan": "\"...temperatures rose rapidly. **Consequently, glacial melt** accelerated.\" Posisikan setelah penyebab langsung dan sebelum dampak lanjutannya.",
+              "jebakan_atau_catatan": "Mengira consequently memperkenalkan topik baru, padahal wajib terikat langsung dengan sebab di kalimat tepat sebelumnya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Alur Umum ke Khusus (General-to-Specific)",
+              "penjelasan_singkat": "Kalimat berisi klaim umum mendahului kalimat yang memuat data statistik, studi kasus, atau contoh spesifik.",
+              "contoh_penerapan": "\"...urban heat islands harm health. **For example, Tokyo recorded**...\" Sisipkan kalimat klaim umum tepat sebelum contoh spesifiknya.",
+              "jebakan_atau_catatan": "Menyelipkan kalimat kesimpulan umum di tengah deretan contoh spesifik yang sedang merinci satu poin.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Prediksi Paragraf Sebelumnya (Preceding Paragraph)",
+          "ringkasan_kelompok": "Menebak topik paragraf pendahulu dari sinyal pembuka kalimat pertama teks.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Transisi Kontras di Awal Teks (Unlike, Despite)",
+              "penjelasan_singkat": "Pembuka kontras menunjukkan paragraf sebelumnya membahas pihak, teori, atau kondisi pembanding yang berlawanan.",
+              "contoh_penerapan": "\"**Unlike traditional fossil fuels**, solar energy produces zero emissions.\" Paragraf sebelumnya membahas karakteristik atau dampak bahan bakar fosil.",
+              "jebakan_atau_catatan": "Memilih opsi tentang energi surya lagi, padahal topik sebelumnya adalah pembanding setelah kata unlike.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Transisi Lanjutan dan Tambahan (Another, Furthermore)",
+              "penjelasan_singkat": "Kata penambah di kalimat perdana menandakan paragraf sebelumnya membahas item atau faktor sejenis yang pertama.",
+              "contoh_penerapan": "\"**Another major factor** driving deforestation is cattle ranching.\" Paragraf sebelumnya memaparkan faktor utama pertama penyebab deforestasi.",
+              "jebakan_atau_catatan": "Memilih opsi yang terlalu luas seperti definisi umum deforestasi, bukan faktor spesifik lain yang setara.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Rujukan Abstrak di Awal Paragraf (This, These)",
+              "penjelasan_singkat": "Frasa this atau these + noun di kalimat pertama merangkum fenomena atau hasil riset sebelumnya.",
+              "contoh_penerapan": "\"**These alarming findings** prompted lawmakers to ban microplastics.\" Paragraf sebelumnya berisi rincian data atau temuan riset yang mengkhawatirkan.",
+              "jebakan_atau_catatan": "Memilih opsi tentang kebijakan pemerintah (lawmakers), yang justru merupakan topik paragraf yang sedang dibaca.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Prediksi Paragraf Berikutnya (Following Paragraph)",
+          "ringkasan_kelompok": "Memproyeksikan topik paragraf lanjutan dari klausa penutup paragraf terakhir teks.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Masalah Terbuka atau Keterbatasan (Limitation, Barrier)",
+              "penjelasan_singkat": "Penutup yang menyoroti kendala atau kelemahan memicu paragraf berikutnya membahas solusi, mitigasi, atau riset lanjutan.",
+              "contoh_penerapan": "\"...yet **high battery costs remain a major barrier** to adoption.\" Paragraf berikutnya membahas upaya menekan biaya baterai.",
+              "jebakan_atau_catatan": "Memilih opsi yang mengulang sejarah penemuan teknologi dari paragraf awal teks.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pengenalan Konsep Baru di Kalimat Terakhir",
+              "penjelasan_singkat": "Istilah atau solusi baru yang disinggung sekilas di kalimat pamungkas akan dijabarkan rinci pada paragraf berikutnya.",
+              "contoh_penerapan": "\"...scientists are now turning to **CRISPR gene editing** for answers.\" Paragraf berikutnya menjelaskan mekanisme atau penerapan CRISPR.",
+              "jebakan_atau_catatan": "Memilih opsi tentang metode lama yang sudah tuntas dibahas di badan paragraf terakhir.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Ajakan Tindakan atau Implikasi Masa Depan",
+              "penjelasan_singkat": "Kalimat penutup berisi urgensi kebijakan atau prediksi dampak memicu pembahasan langkah implementasi konkret berikutnya.",
+              "contoh_penerapan": "\"...governments must therefore **reform existing zoning laws** immediately.\" Paragraf berikutnya menguraikan detail reformasi hukum zonasi yang diperlukan.",
+              "jebakan_atau_catatan": "Terkecoh opsi yang hanya memparafrasekan ulang isi paragraf terakhir tanpa ada progresi ide baru.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

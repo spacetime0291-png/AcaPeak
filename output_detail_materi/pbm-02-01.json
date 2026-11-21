@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pbm-02-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Kaidah Lengkap Tanda Titik, Koma, dan Titik Koma EYD V",
+    "subjudul_ringkas": "Panduan sistematis aturan baku tanda titik, koma, dan titik koma beserta jebakan tersering pada UTBK-SNBT.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "1. Tanda Koma pada Klausa dan Konjungsi",
+        "ringkasan_kelompok": "Aturan wajib dan larangan tanda koma antarklausa serta konjungsi yang paling sering diujikan.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Anak Kalimat Mendahului Induk Kalimat",
+            "penjelasan_singkat": "Tanda koma wajib memisahkan anak kalimat dari induk kalimat apabila posisi anak kalimat berada di awal kalimat.",
+            "contoh_penerapan": "**Karena hujan turun dengan sangat deras**, pertandingan sepak bola antarkampus itu terpaksa ditunda hingga besok pagi.",
+            "jebakan_atau_catatan": "Salah jika tanpa koma (*Karena hujan turun deras pertandingan ditunda*) atau memberi koma saat induk kalimat mendahului anak kalimat."
+          },
+          {
+            "judul_poin": "Larangan Koma Sebelum Konjungsi Subordinatif di Tengah",
+            "penjelasan_singkat": "Tanda koma dilarang mendahului konjungsi *bahwa, karena, sehingga, agar,* dan *jika* ketika induk kalimat mendahului anak kalimat.",
+            "contoh_penerapan": "Tim peneliti menyimpulkan **bahwa metode pembelajaran baru ini** terbukti jauh lebih efektif daripada cara konvensional.",
+            "jebakan_atau_catatan": "Salah: *Tim peneliti menyimpulkan, bahwa metode ini efektif.* Koma sering disisipkan secara keliru hanya karena alasan jeda napas."
+          },
+          {
+            "judul_poin": "Koma Sebelum Konjungsi Intrakalimat Pertentangan",
+            "penjelasan_singkat": "Tanda koma wajib dipakai tepat sebelum kata penghubung intrakalimat seperti *tetapi, melainkan,* dan *sedangkan* di dalam kalimat majemuk.",
+            "contoh_penerapan": "Ia bukan tidak mampu membeli buku referensi itu**, melainkan** memang sedang menghemat pengeluaran bulanannya.",
+            "jebakan_atau_catatan": "Salah: *Kakak rajin belajar sedangkan adik bermain.* Selain itu, kata *tetapi* dan *sedangkan* dilarang diletakkan di awal kalimat."
+          },
+          {
+            "judul_poin": "Koma Wajib Setelah Konjungsi Antarkalimat",
+            "penjelasan_singkat": "Tanda koma wajib mengikuti ungkapan penghubung antarkalimat di awal kalimat, seperti *Oleh karena itu, Namun,* dan *Akan tetapi*.",
+            "contoh_penerapan": "**Oleh karena itu,** pemerintah segera memperketat pengawasan distribusi bahan pokok di seluruh pasar tradisional.",
+            "jebakan_atau_catatan": "Salah: *Namun demikian kami tetap optimis* (tanpa koma) atau meletakkan koma sebelum kata *namun* di tengah kalimat."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "2. Tanda Koma pada Pemerincian, Aposisi, dan Unsur Khusus",
+        "ringkasan_kelompok": "Pemakaian tanda koma pada rincian beruntun, keterangan tambahan, sapaan, serta penulisan gelar.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pemerincian Tiga Unsur atau Lebih (Koma Oxford)",
+            "penjelasan_singkat": "Tanda koma memisahkan setiap unsur dalam pemerincian minimal tiga elemen, termasuk tepat sebelum konjungsi *dan* atau *atau*.",
+            "contoh_penerapan": "Peserta ujian wajib membawa kartu identitas**,** pensil 2B**,** dan penghapus karet ke dalam ruangan.",
+            "jebakan_atau_catatan": "Salah: *Ia membeli buku, pensil dan penggaris.* Jika rincian hanya terdiri atas dua unsur, tanda koma tidak digunakan."
+          },
+          {
+            "judul_poin": "Koma Pengapit Keterangan Tambahan (Aposisi)",
+            "penjelasan_singkat": "Tanda koma wajib mengapit keterangan tambahan atau aposisi yang sifatnya tidak membatasi makna unsur yang diterangkan.",
+            "contoh_penerapan": "Soekarno**,** Presiden pertama Republik Indonesia**,** memproklamasikan kemerdekaan bangsa pada 17 Agustus 1945.",
+            "jebakan_atau_catatan": "Jebakan UTBK: hanya memasang satu koma pembuka tanpa koma penutup aposisi saat posisi aposisi berada di tengah kalimat."
+          },
+          {
+            "judul_poin": "Koma pada Kata Seru dan Kata Sapaan",
+            "penjelasan_singkat": "Tanda koma memisahkan kata seru (*wah, aduh*) dan kata sapaan (*Bu, Pak, Nak*) dari bagian kalimat lainnya.",
+            "contoh_penerapan": "Kapan laporan penelitian ini harus dikumpulkan**, Bu**?",
+            "jebakan_atau_catatan": "Salah: *Wah indah sekali pemandangan ini!* dan *Kapan kita berangkat Pak?* Koma wajib mengapit sapaan di tengah kalimat."
+          },
+          {
+            "judul_poin": "Koma Pemisah Nama dan Gelar Akademik",
+            "penjelasan_singkat": "Tanda koma memisahkan nama orang dari singkatan gelar akademik yang mengikuti di belakangnya untuk membedakannya dari singkatan nama.",
+            "contoh_penerapan": "Prof. Dr. Ratna Sari**, M.Hum.,** menyampaikan orasi ilmiah pada acara pengukuhan guru besar.",
+            "jebakan_atau_catatan": "Salah: *Ratna Sari M.Hum. menyampaikan orasi.* Jangan lupa menyertakan koma penutup setelah gelar jika kalimat masih berlanjut."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "3. Tanda Titik Koma (;) dan Tanda Titik (.)",
+        "ringkasan_kelompok": "Kaidah pengayaan penggunaan tanda titik koma dan penulisan tanda titik sesuai EYD V.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Titik Koma Pemisah Klausa Setara Tanpa Konjungsi",
+            "penjelasan_singkat": "Tanda titik koma menggantikan kata penghubung untuk memisahkan bagian kalimat yang setara di dalam kalimat majemuk setara.",
+            "contoh_penerapan": "Ayah membaca surat kabar di teras**;** ibu menyiapkan sarapan di dapur.",
+            "jebakan_atau_catatan": "Salah jika memakai tanda koma saja (*Ayah membaca koran, ibu memasak*) tanpa konjungsi untuk menggabungkan dua klausa setara."
+          },
+          {
+            "judul_poin": "Titik Koma Pemisah Rincian Frasa Kompleks",
+            "penjelasan_singkat": "Tanda titik koma memisahkan unsur pemerincian dalam kalimat yang bentuk rinciannya sudah menggunakan tanda koma di dalamnya.",
+            "contoh_penerapan": "Syarat pendaftaran meliputi fotokopi ijazah yang dilegalisasi**;** pasfoto terbaru, berwarna, ukuran 3x4**;** dan surat keterangan sehat.",
+            "jebakan_atau_catatan": "Salah jika seluruh rincian kompleks bertingkat hanya dipisahkan tanda koma sehingga batas antarrincian menjadi rancu."
+          },
+          {
+            "judul_poin": "Tanda Titik pada Singkatan Nama, Gelar, dan Sapaan",
+            "penjelasan_singkat": "Tanda titik mengakhiri singkatan nama orang, gelar akademik, dan singkatan umum satu atau dua kata, bukan akronim lembaga.",
+            "contoh_penerapan": "Surat resmi itu telah ditandatangani oleh **Drs. H. Ahmad Yani, S.H., M.H.** pada pekan lalu.",
+            "jebakan_atau_catatan": "Salah memberi titik pada singkatan resmi lembaga/dokumen seperti *KTP*, *UTBK*, *SNPMB*, serta akhir judul karangan atau tabel."
+          },
+          {
+            "judul_poin": "Tanda Titik Pemisah Ribuan vs Angka Tahun/Halaman",
+            "penjelasan_singkat": "Tanda titik memisahkan bilangan ribuan yang menyatakan jumlah, tetapi dilarang dipakai pada bilangan ribuan yang tidak menyatakan jumlah.",
+            "contoh_penerapan": "Sebanyak **12.500** peserta mengikuti ujian seleksi pada tahun **2026** seperti tercantum pada halaman **1050**.",
+            "jebakan_atau_catatan": "Salah menulis angka tahun dengan titik (*tahun 2.026*) atau nomor halaman, nomor rekening, dan kode pos dengan titik."
+          }
+        ]
+      }
+    ]
+  }
+}

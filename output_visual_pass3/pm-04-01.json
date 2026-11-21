@@ -1,0 +1,648 @@
+{
+  "kode_subbab": "pm-04-01",
+  "updated_at": "2026-11-21T08:58:32.949468",
+  "slots": {
+    "z1": {
+      "slot_id": "z1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 420 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='210' y='20' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Data Demografi Tenaga Kerja Wilayah Operasional</text><rect x='44' y='24' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='start'>Penduduk Usia Kerja (Ribu Jiwa)</text><line x1='184' y1='29' x2='200' y2='29' stroke='#FBBF24' stroke-width='2.5'/><circle cx='192.0' cy='29' r='3' fill='#FBBF24'/><text x='376' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>Tingkat Partisipasi Kerja (%)</text><text x='38' y='208.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><text x='382' y='208.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>0</text><line x1='44' y1='152.0' x2='376' y2='152.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='156.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>200</text><text x='382' y='156.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>20</text><line x1='44' y1='100.0' x2='376' y2='100.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='104.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>400</text><text x='382' y='104.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>40</text><line x1='44' y1='48.0' x2='376' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>600</text><text x='382' y='52.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>60</text><line x1='44' y1='204' x2='376' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='48' x2='44' y2='204' stroke='#38BDF8' stroke-width='1.5'/><line x1='376' y1='48' x2='376' y2='204' stroke='#FBBF24' stroke-width='1.5'/><rect x='62.3' y='100.0' width='29.9' height='104.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='77.2' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah A</text><text x='77.2' y='96.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>400</text><rect x='128.7' y='48.0' width='29.9' height='156.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='143.6' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah B</text><text x='143.6' y='44.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>600</text><rect x='195.1' y='74.0' width='29.9' height='130.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='210.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah C</text><text x='210.0' y='70.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>500</text><rect x='261.5' y='126.0' width='29.9' height='78.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='276.4' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah D</text><text x='276.4' y='122.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>300</text><rect x='327.9' y='152.0' width='29.9' height='52.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='342.8' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah E</text><text x='342.8' y='148.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>200</text><polyline points='77.2,67.5 143.6,87.0 210.0,77.2 276.4,48.0 342.8,57.8' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='77.2' cy='67.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='77.2' y='60.5' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>70</text><circle cx='143.6' cy='87.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='143.6' y='80.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>60</text><circle cx='210.0' cy='77.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='210.0' y='70.2' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>65</text><circle cx='276.4' cy='48.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='276.4' y='41.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>80</text><circle cx='342.8' cy='57.8' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='342.8' y='50.8' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>75</text></svg>",
+      "caption": "Perbandingan jumlah penduduk usia kerja (ribu jiwa) dan tingkat partisipasi kerja (%) pada Wilayah A hingga E.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "dual_axis",
+        "title": "Data Demografi Tenaga Kerja Wilayah Operasional",
+        "categories": [
+          "Wilayah A",
+          "Wilayah B",
+          "Wilayah C",
+          "Wilayah D",
+          "Wilayah E"
+        ],
+        "bar_series": {
+          "name": "Penduduk Usia Kerja (Ribu Jiwa)",
+          "values": [
+            400,
+            600,
+            500,
+            300,
+            200
+          ]
+        },
+        "line_series": {
+          "name": "Tingkat Partisipasi Kerja (%)",
+          "values": [
+            70,
+            60,
+            65,
+            80,
+            75
+          ]
+        }
+      }
+    },
+    "dm_k0_b0": {
+      "slot_id": "dm_k0_b0",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='16' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>Pembobotan Mean Gabungan Kelas A dan B</text><rect x='34' y='16' width='8' height='8' fill='#38BDF8' rx='2'/><text x='46' y='24' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='start'>Jumlah Siswa</text><line x1='34' y1='32' x2='46' y2='32' stroke='#FBBF24' stroke-width='2'/><circle cx='40' cy='32' r='2.5' fill='#FBBF24'/><text x='50' y='35' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='start'>Mean Nilai</text><text x='28' y='111.0' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>0</text><text x='212' y='111.0' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>0</text><line x1='34' y1='87.3' x2='206' y2='87.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='91.3' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>10</text><text x='212' y='91.3' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>20</text><line x1='34' y1='67.7' x2='206' y2='67.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='71.7' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>20</text><text x='212' y='71.7' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>40</text><line x1='34' y1='48.0' x2='206' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='52.0' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>30</text><text x='212' y='52.0' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>60</text><line x1='34' y1='107' x2='206' y2='107' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='48' x2='34' y2='107' stroke='#38BDF8' stroke-width='1.5'/><line x1='206' y1='48' x2='206' y2='107' stroke='#FBBF24' stroke-width='1.5'/><rect x='57.6' y='67.7' width='38.7' height='39.3' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='77.0' y='121' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Kelas A</text><text x='77.0' y='63.7' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>20</text><rect x='143.7' y='48.0' width='38.7' height='59.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='163.0' y='121' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Kelas B</text><text x='163.0' y='44.0' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>30</text><polyline points='77.0,48.0 163.0,55.4' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='77.0' cy='48.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='77.0' y='41.0' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>80</text><circle cx='163.0' cy='55.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='163.0' y='48.4' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>70</text></svg>",
+      "caption": "Ilustrasi pembobotan jumlah siswa dan nilai rata-rata pada Kelas A dan Kelas B untuk menghitung mean gabungan 74.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "dual_axis",
+        "title": "Pembobotan Mean Gabungan Kelas A dan B",
+        "categories": [
+          "Kelas A",
+          "Kelas B"
+        ],
+        "bar_series": {
+          "name": "Jumlah Siswa",
+          "values": [
+            20,
+            30
+          ]
+        },
+        "line_series": {
+          "name": "Mean Nilai",
+          "values": [
+            80,
+            70
+          ]
+        }
+      }
+    },
+    "dm_k0_b1": {
+      "slot_id": "dm_k0_b1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='120' y='4' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'><tspan x='120' dy='0'>Posisi Q1 dan Median</tspan><tspan x='120' dy='12'>(Q2) pada 11 Data Terurut</tspan></text><line x1='36.0' y1='71.7' x2='204.0' y2='71.7' stroke='#38BDF8' stroke-width='3.5'/><line x1='21' y1='83.7' x2='219' y2='83.7' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='36.0' y1='79.7' x2='36.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='36.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><line x1='52.8' y1='79.7' x2='52.8' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='52.8' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><line x1='69.6' y1='79.7' x2='69.6' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='69.6' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><line x1='86.4' y1='79.7' x2='86.4' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='86.4' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><line x1='103.2' y1='79.7' x2='103.2' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='103.2' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><line x1='120.0' y1='79.7' x2='120.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='120.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><line x1='136.8' y1='79.7' x2='136.8' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='136.8' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>7</text><line x1='153.6' y1='79.7' x2='153.6' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='153.6' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>8</text><line x1='170.4' y1='79.7' x2='170.4' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='170.4' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>9</text><line x1='187.2' y1='79.7' x2='187.2' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='187.2' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>10</text><line x1='204.0' y1='79.7' x2='204.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='204.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>11</text><circle cx='69.6' cy='83.7' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='69.6' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Q1 (ke-3)</text><circle cx='120.0' cy='83.7' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='120.0' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Q2 (ke-6)</text></svg>",
+      "caption": "Letak posisi kuartil bawah (data ke-3) dan median (data ke-6) pada susunan 11 data terurut.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Posisi Q1 dan Median (Q2) pada 11 Data Terurut",
+        "x_range": [
+          1,
+          11
+        ],
+        "boundary_points": [
+          {
+            "value": 3,
+            "closed": true,
+            "label": "Q1 (ke-3)"
+          },
+          {
+            "value": 6,
+            "closed": true,
+            "label": "Q2 (ke-6)"
+          }
+        ],
+        "shading": [
+          {
+            "from": 1,
+            "to": 11,
+            "type": "interval"
+          }
+        ],
+        "signs": []
+      }
+    },
+    "dm_k0_b2": {
+      "slot_id": "dm_k0_b2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='120' y='16' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>Sebaran Jangkauan Interkuartil (IQR = 22)</text><line x1='48.9' y1='71.7' x2='191.1' y2='71.7' stroke='#38BDF8' stroke-width='3.5'/><line x1='21' y1='83.7' x2='219' y2='83.7' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='36.0' y1='79.7' x2='36.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='36.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>60</text><line x1='48.9' y1='79.7' x2='48.9' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='48.9' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>62</text><line x1='61.8' y1='79.7' x2='61.8' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='61.8' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>64</text><line x1='74.8' y1='79.7' x2='74.8' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='74.8' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>66</text><line x1='87.7' y1='79.7' x2='87.7' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='87.7' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>68</text><line x1='100.6' y1='79.7' x2='100.6' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='100.6' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>70</text><line x1='113.5' y1='79.7' x2='113.5' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='113.5' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>72</text><line x1='126.5' y1='79.7' x2='126.5' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='126.5' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>74</text><line x1='139.4' y1='79.7' x2='139.4' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='139.4' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>76</text><line x1='152.3' y1='79.7' x2='152.3' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='152.3' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>78</text><line x1='165.2' y1='79.7' x2='165.2' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='165.2' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>80</text><line x1='178.2' y1='79.7' x2='178.2' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='178.2' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>82</text><line x1='191.1' y1='79.7' x2='191.1' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='191.1' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>84</text><line x1='204.0' y1='79.7' x2='204.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='204.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>86</text><circle cx='48.9' cy='83.7' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='48.9' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Q1 = 62</text><circle cx='191.1' cy='83.7' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='191.1' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Q3 = 84</text></svg>",
+      "caption": "Rentang sebaran 50% data tengah antara Q1 = 62 dan Q3 = 84 dengan jangkauan interkuartil (IQR) sebesar 22.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Sebaran Jangkauan Interkuartil (IQR = 22)",
+        "x_range": [
+          60,
+          86
+        ],
+        "boundary_points": [
+          {
+            "value": 62,
+            "closed": true,
+            "label": "Q1 = 62"
+          },
+          {
+            "value": 84,
+            "closed": true,
+            "label": "Q3 = 84"
+          }
+        ],
+        "shading": [
+          {
+            "from": 62,
+            "to": 84,
+            "type": "interval"
+          }
+        ],
+        "signs": []
+      }
+    },
+    "dm_k0_b3": {
+      "slot_id": "dm_k0_b3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='14' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Skor Penilaian Tertimbang</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='28' y='103.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><line x1='34' y1='79.8' x2='222' y2='79.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='83.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>25</text><line x1='34' y1='60.5' x2='222' y2='60.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='64.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>50</text><line x1='34' y1='41.2' x2='222' y2='41.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='45.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>75</text><line x1='34' y1='22.0' x2='222' y2='22.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='26.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>100</text><line x1='34' y1='99' x2='222' y2='99' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='99' x2='34' y2='22' stroke='#94A3B8' stroke-width='1.5'/><text x='65.3' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='65.3' dy='0'>Tes</tspan><tspan x='65.3' dy='11'>Tulis (60%)</tspan></text><rect x='46.5' y='37.4' width='35.6' height='61.6' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='64.3' y='33.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>80</text><text x='128.0' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='128.0' dy='0'>Wawancara</tspan><tspan x='128.0' dy='11'>(40%)</tspan></text><rect x='109.2' y='29.7' width='35.6' height='69.3' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='127.0' y='25.7' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>90</text><text x='190.7' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Skor Akhir</text><rect x='171.9' y='34.3' width='35.6' height='64.7' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='189.7' y='30.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>84</text></svg>",
+      "caption": "Perbandingan nilai komponen tes tulis (bobot 60%) dan wawancara (bobot 40%) terhadap skor akhir tertimbang 84.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Skor Penilaian Tertimbang",
+        "items": [
+          {
+            "label": "Tes Tulis (60%)",
+            "value": 80,
+            "highlight": false
+          },
+          {
+            "label": "Wawancara (40%)",
+            "value": 90,
+            "highlight": false
+          },
+          {
+            "label": "Skor Akhir",
+            "value": 84,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    "dm_k1_b0": {
+      "slot_id": "dm_k1_b0",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='14' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Perubahan Mean Saat Anggota Masuk</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='28' y='103.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><line x1='34' y1='79.8' x2='222' y2='79.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='83.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>25</text><line x1='34' y1='60.5' x2='222' y2='60.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='64.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>50</text><line x1='34' y1='41.2' x2='222' y2='41.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='45.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>75</text><line x1='34' y1='22.0' x2='222' y2='22.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='26.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>100</text><line x1='34' y1='99' x2='222' y2='99' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='99' x2='34' y2='22' stroke='#94A3B8' stroke-width='1.5'/><text x='65.3' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='65.3' dy='0'>Mean Lama</tspan><tspan x='65.3' dy='11'>(4 Anak)</tspan></text><rect x='46.5' y='41.2' width='35.6' height='57.8' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='64.3' y='37.2' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>75</text><text x='128.0' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='128.0' dy='0'>Nilai</tspan><tspan x='128.0' dy='11'>Anak Baru</tspan></text><rect x='109.2' y='29.7' width='35.6' height='69.3' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='127.0' y='25.7' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>90</text><text x='190.7' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='190.7' dy='0'>Mean Baru</tspan><tspan x='190.7' dy='11'>(5 Anak)</tspan></text><rect x='171.9' y='38.9' width='35.6' height='60.1' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='189.7' y='34.9' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>78</text></svg>",
+      "caption": "Masuknya 1 anak dengan nilai 90 menarik rata-rata lama 4 anak (75) naik menjadi 78.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Perubahan Mean Saat Anggota Masuk",
+        "items": [
+          {
+            "label": "Mean Lama (4 Anak)",
+            "value": 75,
+            "highlight": false
+          },
+          {
+            "label": "Nilai Anak Baru",
+            "value": 90,
+            "highlight": false
+          },
+          {
+            "label": "Mean Baru (5 Anak)",
+            "value": 78,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    "dm_k1_b1": {
+      "slot_id": "dm_k1_b1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='14' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Dampak Data Baru terhadap Median</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='28' y='103.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><line x1='34' y1='79.8' x2='222' y2='79.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='83.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>25</text><line x1='34' y1='60.5' x2='222' y2='60.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='64.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>50</text><line x1='34' y1='41.2' x2='222' y2='41.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='45.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>75</text><line x1='34' y1='22.0' x2='222' y2='22.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='26.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>100</text><line x1='34' y1='99' x2='222' y2='99' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='99' x2='34' y2='22' stroke='#94A3B8' stroke-width='1.5'/><text x='52.8' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'>Data 1</text><rect x='41.5' y='95.9' width='20.6' height='3.1' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='51.8' y='91.9' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>4</text><text x='90.4' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='90.4' dy='0'>Data 2</tspan><tspan x='90.4' dy='11'>(Median Awal)</tspan></text><rect x='79.1' y='94.4' width='20.6' height='4.6' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='89.4' y='90.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>6</text><text x='128.0' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='128.0' dy='0'>Median</tspan><tspan x='128.0' dy='11'>Baru</tspan></text><rect x='116.7' y='93.6' width='20.6' height='5.4' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='127.0' y='89.6' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>7</text><text x='165.6' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'>Data 3</text><rect x='154.3' y='92.8' width='20.6' height='6.2' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='164.6' y='88.8' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>8</text><text x='203.2' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='203.2' dy='0'>Data</tspan><tspan x='203.2' dy='11'>4 (Baru)</tspan></text><rect x='191.9' y='22.0' width='20.6' height='77.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='202.2' y='18.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>100</text></svg>",
+      "caption": "Penambahan data ekstrem 100 hanya menggeser nilai median dari 6 menjadi 7.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Dampak Data Baru terhadap Median",
+        "items": [
+          {
+            "label": "Data 1",
+            "value": 4,
+            "highlight": false
+          },
+          {
+            "label": "Data 2 (Median Awal)",
+            "value": 6,
+            "highlight": true
+          },
+          {
+            "label": "Median Baru",
+            "value": 7,
+            "highlight": true
+          },
+          {
+            "label": "Data 3",
+            "value": 8,
+            "highlight": false
+          },
+          {
+            "label": "Data 4 (Baru)",
+            "value": 100,
+            "highlight": false
+          }
+        ]
+      }
+    },
+    "dm_k1_b2": {
+      "slot_id": "dm_k1_b2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='4' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'><tspan x='120' dy='0'>Laju Persentase vs</tspan><tspan x='120' dy='12'>Nilai Absolut Pertumbuhan</tspan></text><rect x='34' y='32' width='8' height='8' fill='#38BDF8' rx='2'/><text x='46' y='40' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='start'>Nilai Absolut (Rp Ju…</text><line x1='34' y1='48' x2='46' y2='48' stroke='#FBBF24' stroke-width='2'/><circle cx='40' cy='48' r='2.5' fill='#FBBF24'/><text x='50' y='51' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='start'>Laju Pertumbuhan (%)</text><text x='28' y='103.0' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>0</text><text x='212' y='103.0' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>0</text><line x1='34' y1='87.3' x2='206' y2='87.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='91.3' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>2</text><text x='212' y='91.3' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>5</text><line x1='34' y1='75.7' x2='206' y2='75.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='79.7' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>4</text><text x='212' y='79.7' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>10</text><line x1='34' y1='64.0' x2='206' y2='64.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='68.0' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>6</text><text x='212' y='68.0' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>15</text><line x1='34' y1='99' x2='206' y2='99' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='64' x2='34' y2='99' stroke='#38BDF8' stroke-width='1.5'/><line x1='206' y1='64' x2='206' y2='99' stroke='#FBBF24' stroke-width='1.5'/><rect x='57.6' y='87.3' width='38.7' height='11.7' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='77.0' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='77.0' dy='0'>Basis Omzet</tspan><tspan x='77.0' dy='11'>Rp10 Juta</tspan></text><text x='77.0' y='83.3' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>2</text><rect x='143.7' y='69.8' width='38.7' height='29.2' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='163.0' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='163.0' dy='0'>Basis Omzet</tspan><tspan x='163.0' dy='11'>Rp100 Juta</tspan></text><text x='163.0' y='65.8' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>5</text><polyline points='77.0,64.0 163.0,90.2' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='77.0' cy='64.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='77.0' y='57.0' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>20</text><circle cx='163.0' cy='90.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='163.0' y='83.2' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>5</text></svg>",
+      "caption": "Pertumbuhan 20% pada basis omzet Rp10 juta (Rp2 juta) lebih kecil daripada 5% pada basis Rp100 juta (Rp5 juta).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "dual_axis",
+        "title": "Laju Persentase vs Nilai Absolut Pertumbuhan",
+        "categories": [
+          "Basis Omzet Rp10 Juta",
+          "Basis Omzet Rp100 Juta"
+        ],
+        "bar_series": {
+          "name": "Nilai Absolut (Rp Juta)",
+          "values": [
+            2,
+            5
+          ]
+        },
+        "line_series": {
+          "name": "Laju Pertumbuhan (%)",
+          "values": [
+            20,
+            5
+          ]
+        }
+      }
+    },
+    "dm_k1_b3": {
+      "slot_id": "dm_k1_b3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='14' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Perubahan Harga (Rp)</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='34' y='103.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><line x1='40' y1='79.8' x2='222' y2='79.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='34' y='83.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>25k</text><line x1='40' y1='60.5' x2='222' y2='60.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='34' y='64.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>50k</text><line x1='40' y1='41.2' x2='222' y2='41.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='34' y='45.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>75k</text><line x1='40' y1='22.0' x2='222' y2='22.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='34' y='26.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>100k</text><line x1='40' y1='99' x2='222' y2='99' stroke='#94A3B8' stroke-width='1.5'/><line x1='40' y1='99' x2='40' y2='22' stroke='#94A3B8' stroke-width='1.5'/><text x='85.5' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Harga Awal</text><rect x='58.2' y='37.4' width='52.6' height='61.6' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='84.5' y='33.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>80000</text><text x='176.5' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'><tspan x='176.5' dy='0'>Harga</tspan><tspan x='176.5' dy='11'>Akhir (+25%)</tspan></text><rect x='149.2' y='22.0' width='52.6' height='77.0' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='175.5' y='18.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>100000</text></svg>",
+      "caption": "Perubahan harga dari basis awal Rp80.000 menjadi Rp100.000 menghasilkan kenaikan sebesar 25%.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Perubahan Harga (Rp)",
+        "items": [
+          {
+            "label": "Harga Awal",
+            "value": 80000,
+            "highlight": false
+          },
+          {
+            "label": "Harga Akhir (+25%)",
+            "value": 100000,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    "dm_k2_b0": {
+      "slot_id": "dm_k2_b0",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='14' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Biaya Iklan vs Penjualan</text><text x='28' y='111.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><line x1='34' y1='92.8' x2='220' y2='92.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='96.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><line x1='34' y1='78.7' x2='220' y2='78.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='82.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><line x1='34' y1='64.5' x2='220' y2='64.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='68.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><line x1='34' y1='50.3' x2='220' y2='50.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='54.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>8</text><line x1='34' y1='36.2' x2='220' y2='36.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='40.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>10</text><line x1='34' y1='22.0' x2='220' y2='22.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='26.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>12</text><line x1='34.0' y1='107' x2='34.0' y2='112' stroke='#94A3B8' stroke-width='1.5'/><text x='34.0' y='122' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>0</text><line x1='96.0' y1='107' x2='96.0' y2='112' stroke='#94A3B8' stroke-width='1.5'/><text x='96.0' y='122' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><line x1='158.0' y1='107' x2='158.0' y2='112' stroke='#94A3B8' stroke-width='1.5'/><text x='158.0' y='122' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><line x1='220.0' y1='107' x2='220.0' y2='112' stroke='#94A3B8' stroke-width='1.5'/><text x='220.0' y='122' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><line x1='34' y1='107' x2='220' y2='107' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='22' x2='34' y2='107' stroke='#94A3B8' stroke-width='1.5'/><line x1='34.0' y1='105.6' x2='220.0' y2='29.1' stroke='#FBBF24' stroke-width='2' stroke-dasharray='5 4'/><circle cx='65.0' cy='92.8' r='4.5' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/><circle cx='96.0' cy='78.7' r='4.5' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/><circle cx='127.0' cy='71.6' r='4.5' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/><circle cx='158.0' cy='50.3' r='4.5' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/><circle cx='189.0' cy='43.2' r='4.5' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/><circle cx='220.0' cy='29.1' r='4.5' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/></svg>",
+      "caption": "Sebaran titik biaya iklan terhadap penjualan yang rapat dan naik ke kanan menunjukkan korelasi positif kuat.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "scatter",
+        "title": "Biaya Iklan vs Penjualan",
+        "points": [
+          {
+            "x": 1,
+            "y": 2
+          },
+          {
+            "x": 2,
+            "y": 4
+          },
+          {
+            "x": 3,
+            "y": 5
+          },
+          {
+            "x": 4,
+            "y": 8
+          },
+          {
+            "x": 5,
+            "y": 9
+          },
+          {
+            "x": 6,
+            "y": 11
+          }
+        ],
+        "show_trendline": true
+      }
+    },
+    "dm_k2_b1": {
+      "slot_id": "dm_k2_b1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='14' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>Ringkasan Lima Ukuran (Miring Kanan)</text><line x1='26' y1='103' x2='214' y2='103' stroke='#94A3B8' stroke-width='1.5'/><line x1='26.0' y1='103' x2='26.0' y2='108' stroke='#94A3B8' stroke-width='1.5'/><text x='26.0' y='117' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>0</text><line x1='63.6' y1='103' x2='63.6' y2='108' stroke='#94A3B8' stroke-width='1.5'/><text x='63.6' y='117' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>20</text><line x1='101.2' y1='103' x2='101.2' y2='108' stroke='#94A3B8' stroke-width='1.5'/><text x='101.2' y='117' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>40</text><line x1='138.8' y1='103' x2='138.8' y2='108' stroke='#94A3B8' stroke-width='1.5'/><text x='138.8' y='117' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>60</text><line x1='176.4' y1='103' x2='176.4' y2='108' stroke='#94A3B8' stroke-width='1.5'/><text x='176.4' y='117' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>80</text><line x1='214.0' y1='103' x2='214.0' y2='108' stroke='#94A3B8' stroke-width='1.5'/><text x='214.0' y='117' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>100</text><text x='120' y='43.5' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Distribusi Data</text><line x1='63.6' y1='62.5' x2='91.8' y2='62.5' stroke='#E2E8F0' stroke-width='1.5'/><line x1='157.6' y1='62.5' x2='195.2' y2='62.5' stroke='#E2E8F0' stroke-width='1.5'/><line x1='63.6' y1='54.7' x2='63.6' y2='70.3' stroke='#E2E8F0' stroke-width='2'/><line x1='195.2' y1='54.7' x2='195.2' y2='70.3' stroke='#E2E8F0' stroke-width='2'/><rect x='91.8' y='49.5' width='65.8' height='26.0' fill='#38BDF8' fill-opacity='0.22' stroke='#38BDF8' stroke-width='2' rx='2'/><line x1='105.0' y1='49.5' x2='105.0' y2='75.5' stroke='#FBBF24' stroke-width='2.5'/><text x='105.0' y='86.5' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>42</text></svg>",
+      "caption": "Garis median (Q2) yang bergeser mendekati Q1 menunjukkan 50% data bawah lebih rapat (distribusi miring kanan).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "boxplot",
+        "title": "Ringkasan Lima Ukuran (Miring Kanan)",
+        "data": [
+          {
+            "label": "Distribusi Data",
+            "min": 20,
+            "q1": 35,
+            "median": 42,
+            "q3": 70,
+            "max": 90
+          }
+        ]
+      }
+    },
+    "dm_k2_b2": {
+      "slot_id": "dm_k2_b2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='16' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Laba (Jutaan Rp) vs Margin (%)</text><rect x='34' y='16' width='8' height='8' fill='#38BDF8' rx='2'/><text x='46' y='24' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='start'>Laba (Jutaan Rp)</text><line x1='34' y1='32' x2='46' y2='32' stroke='#FBBF24' stroke-width='2'/><circle cx='40' cy='32' r='2.5' fill='#FBBF24'/><text x='50' y='35' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='start'>Margin (%)</text><text x='28' y='111.0' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>0</text><text x='212' y='111.0' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>0</text><line x1='34' y1='87.3' x2='206' y2='87.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='91.3' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>100</text><text x='212' y='91.3' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>10</text><line x1='34' y1='67.7' x2='206' y2='67.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='71.7' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>200</text><text x='212' y='71.7' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>20</text><line x1='34' y1='48.0' x2='206' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='52.0' fill='#38BDF8' font-family='sans-serif' font-size='9' text-anchor='end'>300</text><text x='212' y='52.0' fill='#FBBF24' font-family='sans-serif' font-size='9' text-anchor='start'>30</text><line x1='34' y1='107' x2='206' y2='107' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='48' x2='34' y2='107' stroke='#38BDF8' stroke-width='1.5'/><line x1='206' y1='48' x2='206' y2='107' stroke='#FBBF24' stroke-width='1.5'/><rect x='45.8' y='83.4' width='19.4' height='23.6' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='55.5' y='121' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Q1</text><text x='55.5' y='79.4' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>120</text><rect x='88.8' y='77.5' width='19.4' height='29.5' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='98.5' y='121' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Q2</text><text x='98.5' y='73.5' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>150</text><rect x='131.8' y='71.6' width='19.4' height='35.4' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='141.5' y='121' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Q3</text><text x='141.5' y='67.6' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>180</text><rect x='174.8' y='65.7' width='19.4' height='41.3' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='184.5' y='121' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>Q4</text><text x='184.5' y='61.7' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>210</text><polyline points='55.5,59.8 98.5,65.7 141.5,71.6 184.5,77.5' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='55.5' cy='59.8' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='55.5' y='52.8' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>24</text><circle cx='98.5' cy='65.7' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='98.5' y='58.7' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>21</text><circle cx='141.5' cy='71.6' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='141.5' y='64.6' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>18</text><circle cx='184.5' cy='77.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='184.5' y='70.5' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>15</text></svg>",
+      "caption": "Perpotongan grafik laba (jutaan Rp) dan margin (%) bukan berarti nilainya sama karena skala sumbu vertikal berbeda.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "dual_axis",
+        "title": "Laba (Jutaan Rp) vs Margin (%)",
+        "categories": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "bar_series": {
+          "name": "Laba (Jutaan Rp)",
+          "values": [
+            120,
+            150,
+            180,
+            210
+          ]
+        },
+        "line_series": {
+          "name": "Margin (%)",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      }
+    },
+    "z2_v1": {
+      "slot_id": "z2_v1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='18' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Distribusi Frekuensi Omzet Bulanan 20 Gerai (Miliar Rp)</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='38' y='208.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>0</text><line x1='44' y1='146.0' x2='376' y2='146.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='150.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>2</text><line x1='44' y1='88.0' x2='376' y2='88.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='92.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>4</text><line x1='44' y1='30.0' x2='376' y2='30.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='34.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>6</text><line x1='44' y1='204' x2='376' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='204' x2='44' y2='30' stroke='#94A3B8' stroke-width='1.5'/><text x='77.2' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>2,5 M (B)</text><rect x='57.3' y='30.0' width='37.8' height='174.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='76.2' y='26.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>6</text><text x='143.6' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>3,0 M (A)</text><rect x='123.7' y='88.0' width='37.8' height='116.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='142.6' y='84.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>4</text><text x='210.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>4,0 M (C)</text><rect x='190.1' y='59.0' width='37.8' height='145.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='209.0' y='55.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>5</text><text x='276.4' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>4,5 M (E)</text><rect x='256.5' y='146.0' width='37.8' height='58.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='275.4' y='142.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>2</text><text x='342.8' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>5,0 M (D)</text><rect x='322.9' y='117.0' width='37.8' height='87.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='341.8' y='113.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>3</text></svg>",
+      "caption": "Distribusi frekuensi omzet bulanan 20 gerai PT Karya Mandiri yang telah diurutkan naik dari Rp2,5 miliar hingga Rp5,0 miliar.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Distribusi Frekuensi Omzet Bulanan 20 Gerai (Miliar Rp)",
+        "items": [
+          {
+            "label": "2,5 M (B)",
+            "value": 6,
+            "highlight": false
+          },
+          {
+            "label": "3,0 M (A)",
+            "value": 4,
+            "highlight": false
+          },
+          {
+            "label": "4,0 M (C)",
+            "value": 5,
+            "highlight": false
+          },
+          {
+            "label": "4,5 M (E)",
+            "value": 2,
+            "highlight": false
+          },
+          {
+            "label": "5,0 M (D)",
+            "value": 3,
+            "highlight": false
+          }
+        ]
+      }
+    },
+    "z2_v2": {
+      "slot_id": "z2_v2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='20' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Jumlah Gerai dan Rata-rata Omzet per Wilayah</text><rect x='44' y='24' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='start'>Jumlah Gerai</text><line x1='176' y1='29' x2='192' y2='29' stroke='#FBBF24' stroke-width='2.5'/><circle cx='184.0' cy='29' r='3' fill='#FBBF24'/><text x='356' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>Rata-rata Omzet (Miliar Rp)</text><text x='38' y='208.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><text x='362' y='208.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>0</text><line x1='44' y1='152.0' x2='356' y2='152.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='156.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='362' y='156.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>2</text><line x1='44' y1='100.0' x2='356' y2='100.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='104.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='362' y='104.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>4</text><line x1='44' y1='48.0' x2='356' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='362' y='52.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>6</text><line x1='44' y1='204' x2='356' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='48' x2='44' y2='204' stroke='#38BDF8' stroke-width='1.5'/><line x1='356' y1='48' x2='356' y2='204' stroke='#FBBF24' stroke-width='1.5'/><rect x='61.2' y='100.0' width='28.1' height='104.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='75.2' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah A</text><text x='75.2' y='96.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>4</text><rect x='123.6' y='48.0' width='28.1' height='156.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='137.6' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah B</text><text x='137.6' y='44.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>6</text><rect x='186.0' y='74.0' width='28.1' height='130.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='200.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah C</text><text x='200.0' y='70.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>5</text><rect x='248.4' y='126.0' width='28.1' height='78.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='262.4' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah D</text><text x='262.4' y='122.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>3</text><rect x='310.8' y='152.0' width='28.1' height='52.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='324.8' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah E</text><text x='324.8' y='148.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>2</text><polyline points='75.2,126.0 137.6,139.0 200.0,100.0 262.4,74.0 324.8,87.0' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='75.2' cy='126.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='75.2' y='119.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>3</text><circle cx='137.6' cy='139.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='137.6' y='132.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>2.5</text><circle cx='200.0' cy='100.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='200.0' y='93.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>4</text><circle cx='262.4' cy='74.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='262.4' y='67.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>5</text><circle cx='324.8' cy='87.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='324.8' y='80.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>4.5</text></svg>",
+      "caption": "Grafik dua sumbu yang memadukan jumlah gerai per wilayah (batang) dan rata-rata omzet per gerai dalam miliar rupiah (garis).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "dual_axis",
+        "title": "Jumlah Gerai dan Rata-rata Omzet per Wilayah",
+        "categories": [
+          "Wilayah A",
+          "Wilayah B",
+          "Wilayah C",
+          "Wilayah D",
+          "Wilayah E"
+        ],
+        "bar_series": {
+          "name": "Jumlah Gerai",
+          "values": [
+            4,
+            6,
+            5,
+            3,
+            2
+          ]
+        },
+        "line_series": {
+          "name": "Rata-rata Omzet (Miliar Rp)",
+          "values": [
+            3.0,
+            2.5,
+            4.0,
+            5.0,
+            4.5
+          ]
+        }
+      }
+    },
+    "z2_v3": {
+      "slot_id": "z2_v3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='18' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Skor Seleksi Kandidat Manajer Regional per Kriteria</text><rect x='44' y='20' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='28' fill='#94A3B8' font-family='sans-serif' font-size='10'>Pertumbuhan Omzet (50%)</text><rect x='203' y='20' width='10' height='10' fill='#FBBF24' rx='2'/><text x='217' y='28' fill='#94A3B8' font-family='sans-serif' font-size='10'>Efisiensi Biaya (30%)</text><rect x='350' y='20' width='10' height='10' fill='#34D399' rx='2'/><text x='364' y='28' fill='#94A3B8' font-family='sans-serif' font-size='10'>Kepuasan Pelanggan (20%)</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='38' y='208.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>0</text><line x1='44' y1='165.0' x2='376' y2='165.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='169.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>25</text><line x1='44' y1='126.0' x2='376' y2='126.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='130.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>50</text><line x1='44' y1='87.0' x2='376' y2='87.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='91.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>75</text><line x1='44' y1='48.0' x2='376' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>100</text><line x1='44' y1='204' x2='376' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='204' x2='44' y2='48' stroke='#94A3B8' stroke-width='1.5'/><text x='99.3' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Raka</text><rect x='66.1' y='85.4' width='20.1' height='118.6' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='76.2' y='81.4' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>76</text><rect x='88.3' y='55.8' width='20.1' height='148.2' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='98.3' y='51.8' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>95</text><rect x='110.4' y='63.6' width='20.1' height='140.4' fill='#34D399' rx='3' fill-opacity='0.9'/><text x='120.5' y='59.6' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>90</text><text x='210.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Sinta</text><rect x='176.8' y='60.5' width='20.1' height='143.5' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='186.9' y='56.5' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>92</text><rect x='198.9' y='79.2' width='20.1' height='124.8' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='209.0' y='75.2' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>80</text><rect x='221.1' y='79.2' width='20.1' height='124.8' fill='#34D399' rx='3' fill-opacity='0.9'/><text x='231.1' y='75.2' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>80</text><text x='320.7' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Tari</text><rect x='287.5' y='73.0' width='20.1' height='131.0' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='297.5' y='69.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>84</text><rect x='309.6' y='71.4' width='20.1' height='132.6' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='319.7' y='67.4' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>85</text><rect x='331.7' y='71.4' width='20.1' height='132.6' fill='#34D399' rx='3' fill-opacity='0.9'/><text x='341.8' y='67.4' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>85</text></svg>",
+      "caption": "Perbandingan skor tiga kandidat Manajer Regional pada tiga kriteria seleksi berbobot 50%, 30%, dan 20%.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Skor Seleksi Kandidat Manajer Regional per Kriteria",
+        "categories": [
+          "Raka",
+          "Sinta",
+          "Tari"
+        ],
+        "series": [
+          {
+            "name": "Pertumbuhan Omzet (50%)",
+            "values": [
+              76,
+              92,
+              84
+            ]
+          },
+          {
+            "name": "Efisiensi Biaya (30%)",
+            "values": [
+              95,
+              80,
+              85
+            ]
+          },
+          {
+            "name": "Kepuasan Pelanggan (20%)",
+            "values": [
+              90,
+              80,
+              85
+            ]
+          }
+        ]
+      }
+    },
+    "z2_v4": {
+      "slot_id": "z2_v4",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='20' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Penduduk Usia Kerja dan Tingkat Partisipasi Kerja</text><rect x='44' y='24' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='start'>Penduduk Usia Kerja (Ribu Jiwa)</text><line x1='164' y1='29' x2='180' y2='29' stroke='#FBBF24' stroke-width='2.5'/><circle cx='172.0' cy='29' r='3' fill='#FBBF24'/><text x='356' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>Tingkat Partisipasi Kerja (%)</text><text x='38' y='208.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><text x='362' y='208.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>0</text><line x1='44' y1='152.0' x2='356' y2='152.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='156.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>200</text><text x='362' y='156.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>20</text><line x1='44' y1='100.0' x2='356' y2='100.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='104.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>400</text><text x='362' y='104.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>40</text><line x1='44' y1='48.0' x2='356' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>600</text><text x='362' y='52.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>60</text><line x1='44' y1='204' x2='356' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='48' x2='44' y2='204' stroke='#38BDF8' stroke-width='1.5'/><line x1='356' y1='48' x2='356' y2='204' stroke='#FBBF24' stroke-width='1.5'/><rect x='65.5' y='100.0' width='35.1' height='104.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='83.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah A</text><text x='83.0' y='96.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>400</text><rect x='143.4' y='48.0' width='35.1' height='156.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='161.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah B</text><text x='161.0' y='44.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>600</text><rect x='221.4' y='74.0' width='35.1' height='130.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='239.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah C</text><text x='239.0' y='70.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>500</text><rect x='299.4' y='126.0' width='35.1' height='78.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='317.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Wilayah D</text><text x='317.0' y='122.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>300</text><polyline points='83.0,67.5 161.0,87.0 239.0,77.2 317.0,48.0' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='83.0' cy='67.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='83.0' y='60.5' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>70</text><circle cx='161.0' cy='87.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='161.0' y='80.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>60</text><circle cx='239.0' cy='77.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='239.0' y='70.2' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>65</text><circle cx='317.0' cy='48.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='317.0' y='41.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>80</text></svg>",
+      "caption": "Perbandingan basis penduduk usia kerja (ribu jiwa) dan tingkat partisipasi kerja (%) di Wilayah A hingga D.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "dual_axis",
+        "title": "Penduduk Usia Kerja dan Tingkat Partisipasi Kerja",
+        "categories": [
+          "Wilayah A",
+          "Wilayah B",
+          "Wilayah C",
+          "Wilayah D"
+        ],
+        "bar_series": {
+          "name": "Penduduk Usia Kerja (Ribu Jiwa)",
+          "values": [
+            400,
+            600,
+            500,
+            300
+          ]
+        },
+        "line_series": {
+          "name": "Tingkat Partisipasi Kerja (%)",
+          "values": [
+            70,
+            60,
+            65,
+            80
+          ]
+        }
+      }
+    },
+    "z2_v5": {
+      "slot_id": "z2_v5",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='5' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'><tspan x='200' dy='0'>Dampak Penutupan 2 Gerai Wilayah B</tspan><tspan x='200' dy='13'>terhadap Rata-Rata Omzet (Miliar Rp)</tspan></text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='38' y='196.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>0</text><line x1='44' y1='155.8' x2='376' y2='155.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='159.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>1</text><line x1='44' y1='119.5' x2='376' y2='119.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='123.5' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>2</text><line x1='44' y1='83.2' x2='376' y2='83.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='87.2' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>3</text><line x1='44' y1='47.0' x2='376' y2='47.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='51.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>4</text><line x1='44' y1='192' x2='376' y2='192' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='192' x2='44' y2='47' stroke='#94A3B8' stroke-width='1.5'/><text x='99.3' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'><tspan x='99.3' dy='0'>Rata-Rata</tspan><tspan x='99.3' dy='12'>Awal (20 Gerai)</tspan></text><rect x='66.1' y='63.3' width='64.4' height='128.7' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='98.3' y='59.3' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>3.55</text><text x='210.0' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'><tspan x='210.0' dy='0'>Gerai Tutup</tspan><tspan x='210.0' dy='12'>(Wilayah B)</tspan></text><rect x='176.8' y='101.4' width='64.4' height='90.6' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='209.0' y='97.4' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>2.5</text><text x='320.7' y='207' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'><tspan x='320.7' dy='0'>Rata-Rata</tspan><tspan x='320.7' dy='12'>Baru (18 Gerai)</tspan></text><rect x='287.5' y='59.0' width='64.4' height='133.0' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='319.7' y='55.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>3.67</text></svg>",
+      "caption": "Perbandingan rata-rata omzet bulanan sebelum dan sesudah penutupan 2 gerai beromzet Rp2,5 miliar di Wilayah B.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Dampak Penutupan 2 Gerai Wilayah B terhadap Rata-Rata Omzet (Miliar Rp)",
+        "items": [
+          {
+            "label": "Rata-Rata Awal (20 Gerai)",
+            "value": 3.55,
+            "highlight": false
+          },
+          {
+            "label": "Gerai Tutup (Wilayah B)",
+            "value": 2.5,
+            "highlight": false
+          },
+          {
+            "label": "Rata-Rata Baru (18 Gerai)",
+            "value": 3.67,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    "z3_s1": {
+      "slot_id": "z3_s1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='190' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Acuan Rata-Rata Omzet 20 Gerai Kuartal III (Miliar Rp)</text><line x1='27' y1='142.6' x2='353' y2='142.6' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='116.0' y1='138.6' x2='116.0' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='116.0' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>3</text><line x1='264.0' y1='138.6' x2='264.0' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='264.0' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>4</text><circle cx='197.4' cy='142.6' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='197.4' y='124.6' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Mean = 3,55</text></svg>",
+      "caption": "Posisi acuan rata-rata (mean) omzet bulanan 20 gerai pada laporan Kuartal III sebelum dibandingkan dengan median.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Acuan Rata-Rata Omzet 20 Gerai Kuartal III (Miliar Rp)",
+        "x_range": [
+          2.5,
+          4.5
+        ],
+        "boundary_points": [
+          {
+            "value": 3.55,
+            "closed": true,
+            "label": "Mean = 3,55"
+          }
+        ],
+        "shading": [],
+        "signs": []
+      }
+    },
+    "z3_s2": {
+      "slot_id": "z3_s2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='190' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Ambang Batas Indeks Tertimbang Manajer Regional</text><line x1='190.0' y1='130.6' x2='338.0' y2='130.6' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='142.6' x2='353' y2='142.6' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='138.6' x2='42.0' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>70</text><line x1='61.7' y1='138.6' x2='61.7' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='61.7' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>72</text><line x1='81.5' y1='138.6' x2='81.5' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='81.5' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>74</text><line x1='101.2' y1='138.6' x2='101.2' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='101.2' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>76</text><line x1='120.9' y1='138.6' x2='120.9' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='120.9' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>78</text><line x1='140.7' y1='138.6' x2='140.7' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='140.7' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>80</text><line x1='160.4' y1='138.6' x2='160.4' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='160.4' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>82</text><line x1='180.1' y1='138.6' x2='180.1' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='180.1' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>84</text><line x1='199.9' y1='138.6' x2='199.9' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='199.9' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>86</text><line x1='219.6' y1='138.6' x2='219.6' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='219.6' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>88</text><line x1='239.3' y1='138.6' x2='239.3' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='239.3' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>90</text><line x1='259.1' y1='138.6' x2='259.1' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='259.1' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>92</text><line x1='278.8' y1='138.6' x2='278.8' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='278.8' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>94</text><line x1='298.5' y1='138.6' x2='298.5' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='298.5' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>96</text><line x1='318.3' y1='138.6' x2='318.3' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='318.3' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>98</text><line x1='338.0' y1='138.6' x2='338.0' y2='146.6' stroke='#94A3B8' stroke-width='1.5'/><text x='338.0' y='158.6' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>100</text><circle cx='190.0' cy='142.6' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='190.0' y='124.6' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Min: 85,0</text></svg>",
+      "caption": "Batas syarat kelulusan indeks tertimbang minimal 85,0 untuk seleksi kandidat Manajer Regional.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Ambang Batas Indeks Tertimbang Manajer Regional",
+        "x_range": [
+          70,
+          100
+        ],
+        "boundary_points": [
+          {
+            "value": 85.0,
+            "closed": true,
+            "label": "Min: 85,0"
+          }
+        ],
+        "shading": [
+          {
+            "from": 85.0,
+            "to": 100,
+            "type": "interval"
+          }
+        ],
+        "signs": []
+      }
+    },
+    "z3_s3": {
+      "slot_id": "z3_s3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='190' y='7' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'><tspan x='190' dy='0'>Jumlah Gerai &amp; Rata-Rata Omzet</tspan><tspan x='190' dy='13'>Bulanan (Kuartal III vs Kuartal IV)</tspan></text><rect x='44' y='41' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='49' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='start'>Jumlah Gerai</text><line x1='156' y1='46' x2='172' y2='46' stroke='#FBBF24' stroke-width='2.5'/><circle cx='164.0' cy='46' r='3' fill='#FBBF24'/><text x='336' y='49' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>Rata-Rata Omzet (Miliar Rp)</text><text x='38' y='198.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><text x='342' y='198.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>0</text><line x1='44' y1='151.0' x2='336' y2='151.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='155.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>10</text><text x='342' y='155.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>1</text><line x1='44' y1='108.0' x2='336' y2='108.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='112.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>20</text><text x='342' y='112.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>2</text><line x1='44' y1='65.0' x2='336' y2='65.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='69.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>30</text><text x='342' y='69.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>3</text><line x1='44' y1='194' x2='336' y2='194' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='65' x2='44' y2='194' stroke='#38BDF8' stroke-width='1.5'/><line x1='336' y1='65' x2='336' y2='194' stroke='#FBBF24' stroke-width='1.5'/><rect x='84.2' y='108.0' width='65.7' height='86.0' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='117.0' y='209' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Kuartal III</text><text x='117.0' y='104.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>20</text><rect x='230.2' y='86.5' width='65.7' height='107.5' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='263.0' y='209' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Kuartal IV</text><text x='263.0' y='82.5' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>25</text><polyline points='117.0,79.5 263.0,73.1' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='117.0' cy='79.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='117.0' y='72.5' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>3.55</text><circle cx='263.0' cy='73.1' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='263.0' y='66.1' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>3.75</text></svg>",
+      "caption": "Perubahan total jumlah gerai dan rata-rata omzet bulanan perusahaan dari Kuartal III (20 gerai) ke Kuartal IV (25 gerai).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "dual_axis",
+        "title": "Jumlah Gerai & Rata-Rata Omzet Bulanan (Kuartal III vs Kuartal IV)",
+        "categories": [
+          "Kuartal III",
+          "Kuartal IV"
+        ],
+        "bar_series": {
+          "name": "Jumlah Gerai",
+          "values": [
+            20,
+            25
+          ]
+        },
+        "line_series": {
+          "name": "Rata-Rata Omzet (Miliar Rp)",
+          "values": [
+            3.55,
+            3.75
+          ]
+        }
+      }
+    }
+  },
+  "total_slots": 20
+}

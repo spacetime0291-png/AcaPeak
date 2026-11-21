@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "pm-04-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus & Kaidah Statistik Kontekstual",
+    "subjudul_ringkas": "Panduan rumus inti, indeks tertimbang, evaluasi klaim tabel, dan pembacaan grafik kompleks untuk UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Ukuran Pemusatan, Letak, dan Pembobotan",
+        "ringkasan_kelompok": "Rumus rata-rata gabungan, posisi kuartil data urut, sebaran, serta perhitungan skor berbobot.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Mean Gabungan dan Data Berfrekuensi",
+            "penjelasan_singkat": "Kalikan tiap nilai atau rata-rata kelompok dengan frekuensinya: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.",
+            "contoh_penerapan": "Kelas A ($20$ siswa, mean $80$) dan B ($30$ siswa, mean $70$) memiliki mean gabungan **$\\frac{20(80)+30(70)}{50} = 74$**.",
+            "jebakan_atau_catatan": "Jebakan: langsung merata-ratakan $80$ dan $70$ menjadi $75$ tanpa pembobotan jumlah siswa."
+          },
+          {
+            "judul_poin": "Posisi Median ($Q_2$) dan Kuartil ($Q_1, Q_3$)",
+            "penjelasan_singkat": "Wajib urutkan $n$ data dari terkecil; posisi $Q_k$ berada pada data ke-$\\frac{k(n+1)}{4}$.",
+            "contoh_penerapan": "Dari $11$ data terurut, $Q_1$ di posisi $\\frac{1(12)}{4} = 3$, sedangkan median di **data ke-$6$**.",
+            "jebakan_atau_catatan": "Jebakan: mencari nilai tengah langsung pada tabel frekuensi sebelum menjumlahkan frekuensi kumulatifnya."
+          },
+          {
+            "judul_poin": "Jangkauan ($R$) dan Jangkauan Interkuartil ($IQR$)",
+            "penjelasan_singkat": "Mengukur sebaran data melalui $R = x_{\\text{maks}} - x_{\\text{min}}$ dan sebaran $50\\%$ data tengah melalui $IQR = Q_3 - Q_1$.",
+            "contoh_penerapan": "Jika $Q_1 = 62$ dan $Q_3 = 84$, maka **jangkauan interkuartilnya $84 - 62 = 22$**.",
+            "jebakan_atau_catatan": "Trik cepat: $IQR$ kebal terhadap nilai ekstrem (pencilan), sedangkan jangkauan $R$ sangat sensitif."
+          },
+          {
+            "judul_poin": "Indeks dan Skor Penilaian Tertimbang",
+            "penjelasan_singkat": "Jumlahkan hasil kali bobot dan skor tiap kriteria: $\\text{Skor} = \\frac{\\sum (w_i \\times s_i)}{\\sum w_i}$, syarat $\\sum w_i = 100\\%$.",
+            "contoh_penerapan": "Tes tulis $80$ (bobot $60\\%$) dan wawancara $90$ (bobot $40\\%$) menghasilkan skor **$0,6(80) + 0,4(90) = 84$**.",
+            "jebakan_atau_catatan": "Catatan: jika total bobot tidak sama dengan $100\\%$ atau $1$, wajib bagi dengan $\\sum w_i$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Dinamika Perubahan Data dan Evaluasi Klaim",
+        "ringkasan_kelompok": "Analisis pergeseran statistik akibat anggota baru serta pengujian kebenaran klaim berbasis tabel.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Perubahan Mean Saat Anggota Masuk atau Keluar",
+            "penjelasan_singkat": "Hitung total nilai lama terlebih dahulu: $\\bar{x}_{\\text{baru}} = \\frac{n_{\\text{lama}}\\bar{x}_{\\text{lama}} \\pm \\Delta \\text{Total}}{n_{\\text{baru}}}$.",
+            "contoh_penerapan": "Mean $4$ anak $75$; jika $1$ anak bernilai $90$ masuk, mean baru **$\\frac{4(75)+90}{5} = 78$**.",
+            "jebakan_atau_catatan": "Trik cepat: selisih nilai masuk terhadap mean lama dibagi $n_{\\text{baru}}$ langsung memberi kenaikan mean: $\\frac{90-75}{5} = +3$."
+          },
+          {
+            "judul_poin": "Dampak Data Baru terhadap Median dan Modus",
+            "penjelasan_singkat": "Penambahan satu data hanya menggeser posisi median maksimal setengah langkah; modus berubah jika frekuensi tertinggi terlampaui.",
+            "contoh_penerapan": "Data $\\{4, 6, 8\\}$ (median $6$) ditambah angka $100$ menjadi $\\{4, 6, 8, 100\\}$, **median hanya bergeser ke $7$**.",
+            "jebakan_atau_catatan": "Catatan: nilai ekstrem baru sangat mengubah mean, tetapi hampir tidak memengaruhi nilai median."
+          },
+          {
+            "judul_poin": "Laju Persentase vs Nilai Absolut pada Tabel",
+            "penjelasan_singkat": "Persentase besar pada basis kecil dapat menghasilkan nilai absolut lebih kecil: $\\text{Nilai} = \\text{Persentase} \\times \\text{Basis}$.",
+            "contoh_penerapan": "Pertumbuhan $20\\%$ dari omzet $\\text{Rp}10\\text{ juta}$ (**$\\text{Rp}2\\text{ juta}$**) lebih kecil daripada $5\\%$ dari $\\text{Rp}100\\text{ juta}$ (**$\\text{Rp}5\\text{ juta}$**).",
+            "jebakan_atau_catatan": "Jebakan: menyimpulkan wilayah dengan persentase tertinggi pasti memiliki jumlah penduduk atau kasus terbanyak."
+          },
+          {
+            "judul_poin": "Perubahan Persentase dan Basis Pembanding",
+            "penjelasan_singkat": "Laju perubahan wajib dibagi nilai awal, bukan nilai akhir: $\\Delta\\% = \\frac{\\text{Akhir} - \\text{Awal}}{\\text{Awal}} \\times 100\\%$.",
+            "contoh_penerapan": "Harga naik dari $\\text{Rp}80.000$ ke $\\text{Rp}100.000$ berarti naik **$\\frac{20.000}{80.000} \\times 100\\% = 25\\%$**, bukan $20\\%$.",
+            "jebakan_atau_catatan": "Jebakan: kenaikan $25\\%$ lalu turun $25\\%$ tidak kembali ke harga awal, melainkan menjadi $0,9375$ kali awal."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Pembacaan Grafik Kompleks dan Pengambilan Keputusan",
+        "ringkasan_kelompok": "Kaidah membaca korelasi pencar, sebaran boxplot, kerapatan histogram, dan skala grafik dua sumbu.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Diagram Pencar (Scatter Plot) dan Arah Korelasi",
+            "penjelasan_singkat": "Pola titik naik ke kanan menunjukkan korelasi positif, turun berarti negatif; kerapatan titik menandakan kekuatan hubungan.",
+            "contoh_penerapan": "Titik biaya iklan vs penjualan membentuk garis naik rapat, menandakan **korelasi positif kuat** untuk prediksi.",
+            "jebakan_atau_catatan": "Jebakan: korelasi kuat pada diagram pencar tidak otomatis membuktikan hubungan sebab-akibat langsung."
+          },
+          {
+            "judul_poin": "Diagram Kotak-Garis (Boxplot) dan Lima Ukuran Ringkasan",
+            "penjelasan_singkat": "Ujung garis adalah $x_{\\text{min}}$ dan $x_{\\text{maks}}$; tepi kotak adalah $Q_1$ dan $Q_3$, garis tengah adalah median ($Q_2$).",
+            "contoh_penerapan": "Kotak dengan garis tengah bergeser ke kiri menandakan **$50\\%$ data bawah lebih rapat** (miring kanan).",
+            "jebakan_atau_catatan": "Jebakan: kotak yang lebih panjang berarti variasi ($IQR$) lebih besar, bukan jumlah frekuensi data lebih banyak."
+          },
+          {
+            "judul_poin": "Histogram dan Grafik Dua Sumbu (Dual-Axis)",
+            "penjelasan_singkat": "Pada histogram, tinggi batang menunjukkan frekuensi interval; pada grafik dua sumbu, tiap kurva mengikuti skala sumbu vertikalnya.",
+            "contoh_penerapan": "Kurva laba (sumbu kiri, jutaan) berpotongan dengan kurva margin (sumbu kanan, persen) **bukan berarti nilainya sama**.",
+            "jebakan_atau_catatan": "Jebakan: membandingkan tinggi dua grafik berbeda secara visual tanpa mengecek satuan dan skala sumbu kiri-kanan."
+          }
+        ]
+      }
+    ]
+  }
+}

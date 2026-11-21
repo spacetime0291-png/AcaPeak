@@ -1,0 +1,909 @@
+{
+  "kode_subbab": "pk-01-05",
+  "updated_at": "2026-11-21T08:41:41.592244",
+  "slots": {
+    "z1": {
+      "slot_id": "z1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 420 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='210' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Garis (m = 2) vs Parabola Batas (m = 4, D = 0)</text><line x1='35.0' y1='25' x2='35.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='86.4' y1='25' x2='86.4' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='137.9' y1='25' x2='137.9' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='189.3' y1='25' x2='189.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='240.7' y1='25' x2='240.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='292.1' y1='25' x2='292.1' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='343.6' y1='25' x2='343.6' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='395.0' y1='25' x2='395.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='210.0' x2='395' y2='210.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='194.6' x2='395' y2='194.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='179.2' x2='395' y2='179.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='163.8' x2='395' y2='163.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='148.3' x2='395' y2='148.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='132.9' x2='395' y2='132.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='117.5' x2='395' y2='117.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='102.1' x2='395' y2='102.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='86.7' x2='395' y2='86.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='71.2' x2='395' y2='71.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='55.8' x2='395' y2='55.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='40.4' x2='395' y2='40.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='395' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='148.3' x2='407' y2='148.3' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='413' y='152.3' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='240.7' y1='218' x2='240.7' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='232.7142857142857' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-4</text><text x='86.4' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='137.9' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='189.3' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='292.1' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='343.6' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='395.0' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='235.7' y='213.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='235.7' y='197.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='235.7' y='182.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='235.7' y='166.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='235.7' y='135.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='235.7' y='120.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='235.7' y='105.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='235.7' y='89.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='235.7' y='74.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='235.7' y='58.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='235.7' y='43.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>7</text><text x='235.7' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>8</text><line x1='35.0' y1='364.2' x2='395.0' y2='-67.5' stroke='#FBBF24' stroke-width='2' /><text x='343.6' y='-11.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold'>m = 2: f(x) = 4x + 2</text><polyline points='35.0,-129.2 39.5,-113.2 44.0,-97.7 48.5,-82.7 53.0,-68.2 57.5,-54.1 62.0,-40.5 66.5,-27.4 71.0,-14.8 75.5,-2.6 80.0,9.1 84.5,20.3 89.0,31.1 93.5,41.4 98.0,51.2 102.5,60.5 107.0,69.4 111.5,77.8 116.0,85.7 120.5,93.2 125.0,100.2 129.5,106.7 134.0,112.7 138.5,118.3 143.0,123.4 147.5,128.0 152.0,132.1 156.5,135.8 161.0,139.0 165.5,141.7 170.0,144.0 174.5,145.8 179.0,147.1 183.5,147.9 188.0,148.3 192.5,148.2 197.0,147.6 201.5,146.6 206.0,145.1 210.5,143.1 215.0,140.6 219.5,137.7 224.0,134.3 228.5,130.4 233.0,126.1 237.5,121.2 242.0,115.9 246.5,110.2 251.0,103.9 255.5,97.2 260.0,90.0 264.5,82.4 269.0,74.3 273.5,65.7 278.0,56.6 282.5,47.0 287.0,37.0 291.5,26.5 296.0,15.6 300.5,4.1 305.0,-7.8 309.5,-20.1 314.0,-33.0 318.5,-46.3 323.0,-60.1 327.5,-74.4 332.0,-89.1 336.5,-104.3 341.0,-120.0' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='189.3' cy='148.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='197.3' y='152.3' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(-1, 0)</text><line x1='189.3' y1='210.0' x2='189.3' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='189.3' cy='148.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='195.3' y='142.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>P(-1, 0)</text><circle cx='240.7' cy='117.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='246.7' y='111.5' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, 2)</text></svg>",
+      "caption": "Perbandingan garis f(x) = 4x + 2 saat m = 2 dengan parabola batas m = 4 (D = 0) yang menyinggung sumbu-x di P(-1, 0).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Garis (m = 2) vs Parabola Batas (m = 4, D = 0)",
+        "x_range": [
+          -4,
+          3
+        ],
+        "y_range": [
+          -4,
+          8
+        ],
+        "parabolas": [
+          {
+            "a": 2,
+            "b": 4,
+            "c": 2,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "lines": [
+          {
+            "slope": 4,
+            "intercept": 2,
+            "color": "#FBBF24",
+            "label": "m = 2: f(x) = 4x + 2"
+          }
+        ],
+        "points": [
+          {
+            "x": -1,
+            "y": 0,
+            "label": "P(-1, 0)"
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "label": "(0, 2)"
+          }
+        ]
+      }
+    },
+    "dm_k0_b0": {
+      "slot_id": "dm_k0_b0",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><text x='120' y='14' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>Identitas Simetris Akar: x^2 - 5x + 3 = 0</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='28' y='103.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><line x1='34' y1='73.3' x2='222' y2='73.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='77.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>10</text><line x1='34' y1='47.7' x2='222' y2='47.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='51.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>20</text><line x1='34' y1='22.0' x2='222' y2='22.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='28' y='26.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>30</text><line x1='34' y1='99' x2='222' y2='99' stroke='#94A3B8' stroke-width='1.5'/><line x1='34' y1='99' x2='34' y2='22' stroke='#94A3B8' stroke-width='1.5'/><text x='65.3' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'>(x1 + x2)^2</text><rect x='46.5' y='34.8' width='35.6' height='64.2' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='64.3' y='30.8' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>25</text><text x='128.0' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='10' text-anchor='middle'>2(x1·x2)</text><rect x='109.2' y='83.6' width='35.6' height='15.4' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='127.0' y='79.6' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>6</text><text x='190.7' y='113' fill='#E2E8F0' font-family='sans-serif' font-size='9' text-anchor='middle'>x1^2 + x2^2</text><rect x='171.9' y='50.2' width='35.6' height='48.8' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='189.7' y='46.2' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>19</text></svg>",
+      "caption": "Dekomposisi nilai x1^2 + x2^2 = 19 dari selisih (x1 + x2)^2 = 25 dikurangi 2(x1·x2) = 6 pada x^2 - 5x + 3 = 0.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Identitas Simetris Akar: x^2 - 5x + 3 = 0",
+        "items": [
+          {
+            "label": "(x1 + x2)^2",
+            "value": 25,
+            "highlight": false
+          },
+          {
+            "label": "2(x1·x2)",
+            "value": 6,
+            "highlight": false
+          },
+          {
+            "label": "x1^2 + x2^2",
+            "value": 19,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    "dm_k0_b1": {
+      "slot_id": "dm_k0_b1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='120' y='5' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'><tspan x='120' dy='0'>Selisih Akar |x1 - x2| =</tspan><tspan x='120' dy='12'>5/2 pada 2x^2 - 7x + 3 = 0</tspan></text><line x1='35.0' y1='25' x2='35.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='65.0' y1='25' x2='65.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='95.0' y1='25' x2='95.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='125.0' y1='25' x2='125.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='155.0' y1='25' x2='155.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='185.0' y1='25' x2='185.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='215.0' y1='25' x2='215.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='105.0' x2='215' y2='105.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='97.0' x2='215' y2='97.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='89.0' x2='215' y2='89.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='81.0' x2='215' y2='81.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='73.0' x2='215' y2='73.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='65.0' x2='215' y2='65.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='57.0' x2='215' y2='57.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='49.0' x2='215' y2='49.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='41.0' x2='215' y2='41.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='33.0' x2='215' y2='33.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='215' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='73.0' x2='227' y2='73.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='233' y='77.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>x</text><line x1='65.0' y1='113' x2='65.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='57.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>y</text><text x='35.0' y='86.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='95.0' y='86.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='125.0' y='86.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='155.0' y='86.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='185.0' y='86.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='215.0' y='86.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='60.0' y='108.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='60.0' y='100.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='60.0' y='92.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='60.0' y='84.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='60.0' y='68.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='60.0' y='60.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='60.0' y='52.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='60.0' y='44.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='60.0' y='36.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='60.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><polyline points='35.0,-23.0 37.2,-16.5 39.5,-10.2 41.8,-4.0 44.0,2.0 46.2,7.8 48.5,13.4 50.8,18.8 53.0,24.0 55.2,29.1 57.5,34.0 59.8,38.7 62.0,43.2 64.2,47.6 66.5,51.8 68.8,55.8 71.0,59.6 73.2,63.2 75.5,66.6 77.8,69.9 80.0,73.0 82.2,75.9 84.5,78.6 86.8,81.2 89.0,83.6 91.2,85.8 93.5,87.8 95.8,89.6 98.0,91.2 100.2,92.7 102.5,94.0 104.7,95.1 107.0,96.0 109.2,96.8 111.5,97.4 113.8,97.8 116.0,98.0 118.2,98.0 120.5,97.8 122.8,97.5 125.0,97.0 127.2,96.3 129.5,95.4 131.8,94.4 134.0,93.2 136.2,91.8 138.5,90.2 140.8,88.4 143.0,86.4 145.2,84.3 147.5,82.0 149.8,79.5 152.0,76.8 154.2,74.0 156.5,71.0 158.8,67.8 161.0,64.4 163.2,60.8 165.5,57.0 167.8,53.1 170.0,49.0 172.2,44.7 174.5,40.2 176.8,35.6 179.0,30.8 181.2,25.8 183.5,20.6 185.7,15.2 188.0,9.6 190.2,3.9 192.5,-2.0 194.8,-8.1 197.0,-14.4 199.2,-20.8 201.5,-27.4 203.8,-34.2 206.0,-41.2 208.2,-48.4' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='117.5' cy='98.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='125.5' y='102.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(1.75, -3.12)</text><line x1='117.5' y1='105.0' x2='117.5' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='80.0' cy='73.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='86.0' y='67.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x1 = 0.5</text><circle cx='155.0' cy='73.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='161.0' y='67.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x2 = 3</text></svg>",
+      "caption": "Visualisasi selisih mutlak dua akar |x1 - x2| = 5/2 sebagai jarak horizontal antara titik potong sumbu-x pada 2x^2 - 7x + 3 = 0.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Selisih Akar |x1 - x2| = 5/2 pada 2x^2 - 7x + 3 = 0",
+        "x_range": [
+          -1,
+          5
+        ],
+        "y_range": [
+          -4,
+          6
+        ],
+        "parabolas": [
+          {
+            "a": 2,
+            "b": -7,
+            "c": 3,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "points": [
+          {
+            "x": 0.5,
+            "y": 0,
+            "label": "x1 = 0.5"
+          },
+          {
+            "x": 3,
+            "y": 0,
+            "label": "x2 = 3"
+          }
+        ]
+      }
+    },
+    "dm_k0_b2": {
+      "slot_id": "dm_k0_b2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='120' y='5' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'><tspan x='120' dy='0'>Persamaan Awal vs Baru</tspan><tspan x='120' dy='12'>(Pengali Akar k = 2)</tspan></text><line x1='35.0' y1='25' x2='35.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='55.0' y1='25' x2='55.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='75.0' y1='25' x2='75.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='95.0' y1='25' x2='95.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='115.0' y1='25' x2='115.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='135.0' y1='25' x2='135.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='155.0' y1='25' x2='155.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='175.0' y1='25' x2='175.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='195.0' y1='25' x2='195.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='215.0' y1='25' x2='215.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='105.0' x2='215' y2='105.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='97.7' x2='215' y2='97.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='90.5' x2='215' y2='90.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='83.2' x2='215' y2='83.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='75.9' x2='215' y2='75.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='68.6' x2='215' y2='68.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='61.4' x2='215' y2='61.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='54.1' x2='215' y2='54.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='46.8' x2='215' y2='46.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='39.5' x2='215' y2='39.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='32.3' x2='215' y2='32.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='215' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='97.7' x2='227' y2='97.7' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='233' y='101.7' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>x</text><line x1='75.0' y1='113' x2='75.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='67.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>y</text><text x='35.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='55.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='95.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='115.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='135.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='155.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='175.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='195.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='215.0' y='110.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>7</text><text x='70.0' y='108.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='70.0' y='93.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='70.0' y='86.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='70.0' y='78.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='70.0' y='71.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>8</text><text x='70.0' y='64.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>10</text><text x='70.0' y='57.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>12</text><text x='70.0' y='49.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>14</text><text x='70.0' y='42.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>16</text><text x='70.0' y='35.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>18</text><text x='70.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>20</text><polyline points='35.0,46.8 37.2,49.6 39.5,52.4 41.8,55.0 44.0,57.5 46.2,60.0 48.5,62.3 50.8,64.6 53.0,66.8 55.2,68.9 57.5,70.9 59.8,72.7 62.0,74.6 64.2,76.3 66.5,77.9 68.8,79.4 71.0,80.9 73.2,82.2 75.5,83.5 77.8,84.6 80.0,85.7 82.2,86.7 84.5,87.5 86.8,88.3 89.0,89.0 91.2,89.6 93.5,90.2 95.8,90.6 98.0,90.9 100.3,91.2 102.5,91.3 104.8,91.4 107.0,91.3 109.2,91.2 111.5,91.0 113.8,90.7 116.0,90.3 118.3,89.8 120.5,89.2 122.8,88.5 125.0,87.7 127.2,86.9 129.5,85.9 131.8,84.9 134.0,83.7 136.2,82.5 138.5,81.2 140.8,79.7 143.0,78.2 145.2,76.6 147.5,74.9 149.8,73.2 152.0,71.3 154.2,69.3 156.5,67.3 158.8,65.1 161.0,62.9 163.2,60.5 165.5,58.1 167.8,55.6 170.0,53.0 172.2,50.2 174.5,47.5 176.8,44.6 179.0,41.6 181.2,38.5 183.5,35.3 185.8,32.1 188.0,28.7 190.2,25.3 192.5,21.8 194.8,18.1 197.0,14.4 199.3,10.6 201.5,6.7 203.8,2.7 206.0,-1.4 208.2,-5.6 210.5,-9.8' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='105.0' cy='91.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='113.0' y='95.4' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(1.5, 1.75)</text><line x1='105.0' y1='105.0' x2='105.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><polyline points='39.5,-10.6 41.8,-6.8 44.0,-3.0 46.2,0.7 48.5,4.3 50.8,7.7 53.0,11.1 55.2,14.5 57.5,17.7 59.8,20.8 62.0,23.8 64.2,26.8 66.5,29.6 68.8,32.4 71.0,35.0 73.2,37.6 75.5,40.1 77.8,42.5 80.0,44.8 82.2,47.0 84.5,49.1 86.8,51.1 89.0,53.0 91.2,54.9 93.5,56.6 95.8,58.3 98.0,59.8 100.3,61.3 102.5,62.7 104.8,64.0 107.0,65.1 109.2,66.2 111.5,67.3 113.8,68.2 116.0,69.0 118.3,69.7 120.5,70.4 122.8,70.9 125.0,71.4 127.2,71.7 129.5,72.0 131.8,72.2 134.0,72.3 136.2,72.3 138.5,72.2 140.8,72.0 143.0,71.7 145.2,71.3 147.5,70.9 149.8,70.3 152.0,69.6 154.2,68.9 156.5,68.1 158.8,67.1 161.0,66.1 163.2,65.0 165.5,63.8 167.8,62.5 170.0,61.1 172.2,59.7 174.5,58.1 176.8,56.4 179.0,54.7 181.2,52.8 183.5,50.9 185.8,48.9 188.0,46.7 190.2,44.5 192.5,42.2 194.8,39.8 197.0,37.3 199.3,34.7 201.5,32.1 203.8,29.3 206.0,26.4 208.2,23.5 210.5,20.5 212.8,17.3 215.0,14.1' fill='none' stroke='#34D399' stroke-width='2.5'/><circle cx='135.0' cy='72.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='143.0' y='76.3' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(3, 7)</text><line x1='135.0' y1='105.0' x2='135.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='75.0' cy='83.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='81.0' y='77.2' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>c = 4</text><circle cx='75.0' cy='39.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='81.0' y='33.5' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>c = 16</text></svg>",
+      "caption": "Transformasi grafik x^2 - 3x + 4 = 0 menjadi x^2 - 6x + 16 = 0 dengan pengali akar k = 2 yang menggeser sumbu simetri dan mengalikan titik potong sumbu-y dengan k^2.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Persamaan Awal vs Baru (Pengali Akar k = 2)",
+        "x_range": [
+          -2,
+          7
+        ],
+        "y_range": [
+          -2,
+          20
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": -3,
+            "c": 4,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          },
+          {
+            "a": 1,
+            "b": -6,
+            "c": 16,
+            "color": "#34D399",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "points": [
+          {
+            "x": 0,
+            "y": 4,
+            "label": "c = 4"
+          },
+          {
+            "x": 0,
+            "y": 16,
+            "label": "c = 16"
+          }
+        ]
+      }
+    },
+    "dm_k0_b3": {
+      "slot_id": "dm_k0_b3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='120' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>Transformasi Grafik Akar Baru (x1 + 2)</text><line x1='35.0' y1='25' x2='35.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='55.0' y1='25' x2='55.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='75.0' y1='25' x2='75.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='95.0' y1='25' x2='95.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='115.0' y1='25' x2='115.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='135.0' y1='25' x2='135.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='155.0' y1='25' x2='155.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='175.0' y1='25' x2='175.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='195.0' y1='25' x2='195.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='215.0' y1='25' x2='215.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='105.0' x2='215' y2='105.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='98.3' x2='215' y2='98.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='91.7' x2='215' y2='91.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='85.0' x2='215' y2='85.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='78.3' x2='215' y2='78.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='71.7' x2='215' y2='71.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='65.0' x2='215' y2='65.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='58.3' x2='215' y2='58.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='51.7' x2='215' y2='51.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='45.0' x2='215' y2='45.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='38.3' x2='215' y2='38.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='31.7' x2='215' y2='31.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='215' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='65.0' x2='227' y2='65.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='233' y='69.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>x</text><line x1='55.0' y1='113' x2='55.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='47.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>y</text><text x='35.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='75.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='95.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='115.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='135.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='155.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='175.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='195.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>7</text><text x='215.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>8</text><text x='50.0' y='108.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-6</text><text x='50.0' y='101.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-5</text><text x='50.0' y='94.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='50.0' y='88.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='50.0' y='81.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='50.0' y='74.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='50.0' y='61.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='50.0' y='54.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='50.0' y='48.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='50.0' y='41.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='50.0' y='34.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='50.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><polyline points='35.0,18.3 37.2,23.5 39.5,28.5 41.8,33.3 44.0,38.0 46.2,42.5 48.5,46.8 50.8,50.9 53.0,54.9 55.2,58.7 57.5,62.4 59.8,65.9 62.0,69.2 64.2,72.3 66.5,75.3 68.8,78.1 71.0,80.7 73.2,83.2 75.5,85.5 77.8,87.6 80.0,89.6 82.2,91.4 84.5,93.0 86.8,94.4 89.0,95.7 91.2,96.8 93.5,97.8 95.8,98.6 98.0,99.2 100.3,99.6 102.5,99.9 104.8,100.0 107.0,99.9 109.2,99.7 111.5,99.3 113.8,98.7 116.0,98.0 118.3,97.1 120.5,96.0 122.8,94.7 125.0,93.3 127.2,91.7 129.5,90.0 131.8,88.1 134.0,86.0 136.2,83.7 138.5,81.3 140.8,78.7 143.0,75.9 145.2,73.0 147.5,69.9 149.8,66.6 152.0,63.2 154.2,59.6 156.5,55.8 158.8,51.8 161.0,47.7 163.2,43.4 165.5,39.0 167.8,34.4 170.0,29.6 172.2,24.6 174.5,19.5 176.8,14.2 179.0,8.7 181.2,3.1 183.5,-2.7 185.8,-8.7 188.0,-14.8 190.2,-21.1 192.5,-27.6 194.8,-34.3 197.0,-41.1' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='105.0' cy='100.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='113.0' y='104.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(2.5, -5.25)</text><polyline points='53.0,-41.1 55.2,-34.3 57.5,-27.6 59.8,-21.1 62.0,-14.8 64.2,-8.7 66.5,-2.7 68.8,3.1 71.0,8.7 73.2,14.2 75.5,19.5 77.8,24.6 80.0,29.6 82.2,34.4 84.5,39.0 86.8,43.4 89.0,47.7 91.2,51.8 93.5,55.8 95.8,59.6 98.0,63.2 100.3,66.6 102.5,69.9 104.8,73.0 107.0,75.9 109.2,78.7 111.5,81.3 113.8,83.7 116.0,86.0 118.3,88.1 120.5,90.0 122.8,91.7 125.0,93.3 127.2,94.7 129.5,96.0 131.8,97.1 134.0,98.0 136.2,98.7 138.5,99.3 140.8,99.7 143.0,99.9 145.2,100.0 147.5,99.9 149.8,99.6 152.0,99.2 154.2,98.6 156.5,97.8 158.8,96.8 161.0,95.7 163.2,94.4 165.5,93.0 167.8,91.4 170.0,89.6 172.2,87.6 174.5,85.5 176.8,83.2 179.0,80.7 181.2,78.1 183.5,75.3 185.8,72.3 188.0,69.2 190.2,65.9 192.5,62.4 194.8,58.7 197.0,54.9 199.3,50.9 201.5,46.8 203.8,42.5 206.0,38.0 208.2,33.3 210.5,28.5 212.8,23.5 215.0,18.3' fill='none' stroke='#34D399' stroke-width='2.5'/><circle cx='145.0' cy='100.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='153.0' y='104.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(4.5, -5.25)</text></svg>",
+      "caption": "Pergeseran parabola y = x^2 - 5x + 1 menjadi y = x^2 - 9x + 15 melalui substitusi invers x = y - 2 untuk akar baru (x1 + 2).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Transformasi Grafik Akar Baru (x1 + 2)",
+        "x_range": [
+          -1,
+          8
+        ],
+        "y_range": [
+          -6,
+          6
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": -5,
+            "c": 1,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": false
+          },
+          {
+            "a": 1,
+            "b": -9,
+            "c": 15,
+            "color": "#34D399",
+            "show_vertex": true,
+            "show_axis_of_symmetry": false
+          }
+        ]
+      }
+    },
+    "dm_k1_b0": {
+      "slot_id": "dm_k1_b0",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='120' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>Grafik Akar Kembar (D = 0) untuk k = ±6</text><line x1='35.0' y1='25' x2='35.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='50.0' y1='25' x2='50.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='65.0' y1='25' x2='65.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='80.0' y1='25' x2='80.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='95.0' y1='25' x2='95.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='110.0' y1='25' x2='110.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='125.0' y1='25' x2='125.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='140.0' y1='25' x2='140.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='155.0' y1='25' x2='155.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='170.0' y1='25' x2='170.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='185.0' y1='25' x2='185.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='200.0' y1='25' x2='200.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='215.0' y1='25' x2='215.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='105.0' x2='215' y2='105.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='98.3' x2='215' y2='98.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='91.7' x2='215' y2='91.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='85.0' x2='215' y2='85.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='78.3' x2='215' y2='78.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='71.7' x2='215' y2='71.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='65.0' x2='215' y2='65.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='58.3' x2='215' y2='58.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='51.7' x2='215' y2='51.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='45.0' x2='215' y2='45.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='38.3' x2='215' y2='38.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='31.7' x2='215' y2='31.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='215' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='91.7' x2='227' y2='91.7' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='233' y='95.7' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>x</text><line x1='125.0' y1='113' x2='125.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='117.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>y</text><text x='35.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-6</text><text x='50.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-5</text><text x='65.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-4</text><text x='80.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='95.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='110.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='140.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='155.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='170.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='185.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='200.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='215.0' y='104.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='120.0' y='108.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='120.0' y='101.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='120.0' y='88.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='120.0' y='81.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='120.0' y='74.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='120.0' y='68.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='120.0' y='61.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='120.0' y='54.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='120.0' y='48.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>7</text><text x='120.0' y='41.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>8</text><text x='120.0' y='34.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>9</text><text x='120.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>10</text><polyline points='35.0,31.7 37.3,37.5 39.5,43.1 41.8,48.3 44.0,53.3 46.2,57.9 48.5,62.3 50.8,66.3 53.0,70.1 55.2,73.5 57.5,76.7 59.8,79.5 62.0,82.1 64.2,84.3 66.5,86.3 68.8,87.9 71.0,89.3 73.2,90.3 75.5,91.1 77.8,91.5 80.0,91.7 82.2,91.5 84.5,91.1 86.8,90.3 89.0,89.3 91.2,87.9 93.5,86.3 95.8,84.3 98.0,82.1 100.2,79.5 102.5,76.7 104.7,73.5 107.0,70.1 109.2,66.3 111.5,62.3 113.8,57.9 116.0,53.3 118.2,48.3 120.5,43.1 122.8,37.5 125.0,31.7 127.2,25.5 129.5,19.1 131.8,12.3 134.0,5.3 136.2,-2.1 138.5,-9.7 140.8,-17.7 143.0,-25.9 145.2,-34.5' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='80.0' cy='91.7' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='88.0' y='95.7' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(-3, 0)</text><line x1='80.0' y1='105.0' x2='80.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><polyline points='104.7,-34.5 107.0,-25.9 109.2,-17.7 111.5,-9.7 113.8,-2.1 116.0,5.3 118.2,12.3 120.5,19.1 122.8,25.5 125.0,31.7 127.2,37.5 129.5,43.1 131.8,48.3 134.0,53.3 136.2,57.9 138.5,62.3 140.8,66.3 143.0,70.1 145.2,73.5 147.5,76.7 149.8,79.5 152.0,82.1 154.2,84.3 156.5,86.3 158.8,87.9 161.0,89.3 163.2,90.3 165.5,91.1 167.8,91.5 170.0,91.7 172.2,91.5 174.5,91.1 176.8,90.3 179.0,89.3 181.2,87.9 183.5,86.3 185.7,84.3 188.0,82.1 190.2,79.5 192.5,76.7 194.8,73.5 197.0,70.1 199.2,66.3 201.5,62.3 203.8,57.9 206.0,53.3 208.2,48.3 210.5,43.1 212.8,37.5 215.0,31.7' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='170.0' cy='91.7' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='178.0' y='95.7' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(3, 0)</text><line x1='170.0' y1='105.0' x2='170.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/></svg>",
+      "caption": "Parabola y = x^2 + 6x + 9 dan y = x^2 - 6x + 9 menyinggung sumbu-x (akar kembar) saat D = k^2 - 36 = 0 untuk k = ±6.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Grafik Akar Kembar (D = 0) untuk k = ±6",
+        "x_range": [
+          -6,
+          6
+        ],
+        "y_range": [
+          -2,
+          10
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": 6,
+            "c": 9,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          },
+          {
+            "a": 1,
+            "b": -6,
+            "c": 9,
+            "color": "#FBBF24",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ]
+      }
+    },
+    "dm_k1_b1": {
+      "slot_id": "dm_k1_b1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='120' y='4' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'><tspan x='120' dy='0'>Syarat Definit Positif:</tspan><tspan x='120' dy='12'>D = 16 - 8c &lt; 0 (c &gt; 2)</tspan></text><line x1='120.0' y1='71.7' x2='204.0' y2='71.7' stroke='#38BDF8' stroke-width='3.5'/><line x1='21' y1='83.7' x2='219' y2='83.7' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='36.0' y1='79.7' x2='36.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='36.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><line x1='64.0' y1='79.7' x2='64.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='64.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>0</text><line x1='92.0' y1='79.7' x2='92.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='92.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><line x1='120.0' y1='79.7' x2='120.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='120.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><line x1='148.0' y1='79.7' x2='148.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='148.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><line x1='176.0' y1='79.7' x2='176.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='176.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><line x1='204.0' y1='79.7' x2='204.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='204.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='64.0' y='59.7' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><text x='176.0' y='59.7' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>-</text><circle cx='120.0' cy='83.7' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='120.0' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>2</text></svg>",
+      "caption": "Garis bilangan pertidaksamaan D = 16 - 8c < 0 menunjukkan interval c > 2 agar f(x) = 2x^2 - 4x + c definit positif.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Syarat Definit Positif: D = 16 - 8c < 0 (c > 2)",
+        "x_range": [
+          -1,
+          5
+        ],
+        "boundary_points": [
+          {
+            "value": 2,
+            "open": true,
+            "label": "2"
+          }
+        ],
+        "shading": [
+          {
+            "from": 2,
+            "to": 5,
+            "type": "interval"
+          }
+        ],
+        "signs": [
+          {
+            "x": 0,
+            "sign": "+"
+          },
+          {
+            "x": 4,
+            "sign": "-"
+          }
+        ]
+      }
+    },
+    "dm_k1_b2": {
+      "slot_id": "dm_k1_b2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='120' y='4' fill='#E2E8F0' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'><tspan x='120' dy='0'>Syarat Akar Berlainan</tspan><tspan x='120' dy='12'>Tanda: m - 1 &lt; 0 (m &lt; 1)</tspan></text><line x1='36.0' y1='71.7' x2='132.0' y2='71.7' stroke='#38BDF8' stroke-width='3.5'/><line x1='21' y1='83.7' x2='219' y2='83.7' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='36.0' y1='79.7' x2='36.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='36.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><line x1='60.0' y1='79.7' x2='60.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='60.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><line x1='84.0' y1='79.7' x2='84.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='84.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><line x1='108.0' y1='79.7' x2='108.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='108.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>0</text><line x1='132.0' y1='79.7' x2='132.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='132.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><line x1='156.0' y1='79.7' x2='156.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='156.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><line x1='180.0' y1='79.7' x2='180.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='180.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><line x1='204.0' y1='79.7' x2='204.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='204.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='84.0' y='59.7' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>-</text><text x='180.0' y='59.7' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><circle cx='132.0' cy='83.7' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='132.0' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>1</text></svg>",
+      "caption": "Garis bilangan syarat akar berlainan tanda x1·x2 = m - 1 < 0 pada persamaan x^2 - 4x + (m - 1) = 0 menghasilkan interval m < 1.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Syarat Akar Berlainan Tanda: m - 1 < 0 (m < 1)",
+        "x_range": [
+          -3,
+          4
+        ],
+        "boundary_points": [
+          {
+            "value": 1,
+            "open": true,
+            "label": "1"
+          }
+        ],
+        "shading": [
+          {
+            "from": -3,
+            "to": 1,
+            "type": "interval"
+          }
+        ],
+        "signs": [
+          {
+            "x": -1,
+            "sign": "-"
+          },
+          {
+            "x": 3,
+            "sign": "+"
+          }
+        ]
+      }
+    },
+    "dm_k1_b3": {
+      "slot_id": "dm_k1_b3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='120' y='16' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Uji Tanda x² - x - 6 ≤ 0</text><line x1='73.3' y1='71.7' x2='166.7' y2='71.7' stroke='#38BDF8' stroke-width='3.5'/><line x1='21' y1='83.7' x2='219' y2='83.7' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='36.0' y1='79.7' x2='36.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='36.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-4</text><line x1='54.7' y1='79.7' x2='54.7' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='54.7' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><line x1='73.3' y1='79.7' x2='73.3' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='73.3' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><line x1='92.0' y1='79.7' x2='92.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='92.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><line x1='110.7' y1='79.7' x2='110.7' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='110.7' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>0</text><line x1='129.3' y1='79.7' x2='129.3' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='129.3' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><line x1='148.0' y1='79.7' x2='148.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='148.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><line x1='166.7' y1='79.7' x2='166.7' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='166.7' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><line x1='185.3' y1='79.7' x2='185.3' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='185.3' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><line x1='204.0' y1='79.7' x2='204.0' y2='87.7' stroke='#94A3B8' stroke-width='1.5'/><text x='204.0' y='98.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='54.7' y='59.7' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><text x='120.0' y='59.7' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>-</text><text x='185.3' y='59.7' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><circle cx='73.3' cy='83.7' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='73.3' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-2</text><circle cx='166.7' cy='83.7' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='166.7' y='65.7' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>3</text></svg>",
+      "caption": "Garis bilangan uji tanda interval pertidaksamaan x² - x - 6 ≤ 0 dengan penyelesaian -2 ≤ x ≤ 3.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Uji Tanda x² - x - 6 ≤ 0",
+        "x_range": [
+          -4,
+          5
+        ],
+        "boundary_points": [
+          {
+            "value": -2,
+            "closed": true,
+            "label": "-2"
+          },
+          {
+            "value": 3,
+            "closed": true,
+            "label": "3"
+          }
+        ],
+        "shading": [
+          {
+            "from": -2,
+            "to": 3,
+            "type": "interval"
+          }
+        ],
+        "signs": [
+          {
+            "x": -3,
+            "sign": "+"
+          },
+          {
+            "x": 0.5,
+            "sign": "-"
+          },
+          {
+            "x": 4,
+            "sign": "+"
+          }
+        ]
+      }
+    },
+    "dm_k2_b0": {
+      "slot_id": "dm_k2_b0",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='120' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>f(x) = x² - 2x - 3</text><line x1='35.0' y1='25' x2='35.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='57.5' y1='25' x2='57.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='80.0' y1='25' x2='80.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='102.5' y1='25' x2='102.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='125.0' y1='25' x2='125.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='147.5' y1='25' x2='147.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='170.0' y1='25' x2='170.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='192.5' y1='25' x2='192.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='215.0' y1='25' x2='215.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='105.0' x2='215' y2='105.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='97.0' x2='215' y2='97.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='89.0' x2='215' y2='89.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='81.0' x2='215' y2='81.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='73.0' x2='215' y2='73.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='65.0' x2='215' y2='65.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='57.0' x2='215' y2='57.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='49.0' x2='215' y2='49.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='41.0' x2='215' y2='41.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='33.0' x2='215' y2='33.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='215' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='65.0' x2='227' y2='65.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='233' y='69.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>x</text><line x1='102.5' y1='113' x2='102.5' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='94.5' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>y</text><text x='35.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='57.5' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='80.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='125.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='147.5' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='170.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='192.5' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='215.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='97.5' y='108.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-5</text><text x='97.5' y='100.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='97.5' y='92.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='97.5' y='84.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='97.5' y='76.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='97.5' y='60.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='97.5' y='52.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='97.5' y='44.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='97.5' y='36.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='97.5' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><polyline points='35.0,-31.0 37.2,-24.7 39.5,-18.5 41.8,-12.5 44.0,-6.7 46.2,-1.0 48.5,4.5 50.8,9.9 53.0,15.1 55.2,20.1 57.5,25.0 59.8,29.7 62.0,34.3 64.2,38.7 66.5,42.9 68.8,47.0 71.0,50.9 73.2,54.7 75.5,58.3 77.8,61.7 80.0,65.0 82.2,68.1 84.5,71.1 86.8,73.9 89.0,76.5 91.2,79.0 93.5,81.3 95.8,83.5 98.0,85.5 100.3,87.3 102.5,89.0 104.8,90.5 107.0,91.9 109.2,93.1 111.5,94.1 113.8,95.0 116.0,95.7 118.2,96.3 120.5,96.7 122.8,96.9 125.0,97.0 127.3,96.9 129.5,96.7 131.8,96.3 134.0,95.7 136.2,95.0 138.5,94.1 140.8,93.1 143.0,91.9 145.2,90.5 147.5,89.0 149.8,87.3 152.0,85.5 154.2,83.5 156.5,81.3 158.8,79.0 161.0,76.5 163.2,73.9 165.5,71.1 167.8,68.1 170.0,65.0 172.2,61.7 174.5,58.3 176.8,54.7 179.0,50.9 181.2,47.0 183.5,42.9 185.8,38.7 188.0,34.3 190.2,29.7 192.5,25.0 194.8,20.1 197.0,15.1 199.3,9.9 201.5,4.5 203.8,-1.0 206.0,-6.7 208.2,-12.5 210.5,-18.5 212.8,-24.7 215.0,-31.0' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='125.0' cy='97.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='133.0' y='101.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(1, -4)</text><line x1='125.0' y1='105.0' x2='125.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='125.0' cy='97.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='131.0' y='91.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>Puncak (1, -4)</text><circle cx='102.5' cy='89.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='108.5' y='83.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, -3)</text></svg>",
+      "caption": "Grafik parabola f(x) = x² - 2x - 3 dengan titik puncak (1, -4) yang melalui titik (0, -3).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "f(x) = x² - 2x - 3",
+        "x_range": [
+          -3,
+          5
+        ],
+        "y_range": [
+          -5,
+          5
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": -2,
+            "c": -3,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "points": [
+          {
+            "x": 1,
+            "y": -4,
+            "label": "Puncak (1, -4)"
+          },
+          {
+            "x": 0,
+            "y": -3,
+            "label": "(0, -3)"
+          }
+        ]
+      }
+    },
+    "dm_k2_b1": {
+      "slot_id": "dm_k2_b1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='120' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>Tanda Koefisien: a &lt; 0, xp &gt; 0, b &gt; 0</text><line x1='35.0' y1='25' x2='35.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='57.5' y1='25' x2='57.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='80.0' y1='25' x2='80.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='102.5' y1='25' x2='102.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='125.0' y1='25' x2='125.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='147.5' y1='25' x2='147.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='170.0' y1='25' x2='170.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='192.5' y1='25' x2='192.5' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='215.0' y1='25' x2='215.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='105.0' x2='215' y2='105.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='95.0' x2='215' y2='95.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='85.0' x2='215' y2='85.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='75.0' x2='215' y2='75.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='65.0' x2='215' y2='65.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='55.0' x2='215' y2='55.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='45.0' x2='215' y2='45.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='35.0' x2='215' y2='35.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='215' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='65.0' x2='227' y2='65.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='233' y='69.0' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>x</text><line x1='102.5' y1='113' x2='102.5' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='94.5' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>y</text><text x='35.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='57.5' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='80.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='125.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='147.5' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='170.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='192.5' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='215.0' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='97.5' y='108.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='97.5' y='98.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='97.5' y='88.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='97.5' y='78.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='97.5' y='58.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='97.5' y='48.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='97.5' y='38.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='97.5' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><polyline points='35.0,205.0 37.2,197.1 39.5,189.4 41.8,181.9 44.0,174.6 46.2,167.5 48.5,160.6 50.8,153.9 53.0,147.4 55.2,141.1 57.5,135.0 59.8,129.1 62.0,123.4 64.2,117.9 66.5,112.6 68.8,107.5 71.0,102.6 73.2,97.9 75.5,93.4 77.8,89.1 80.0,85.0 82.2,81.1 84.5,77.4 86.8,73.9 89.0,70.6 91.2,67.5 93.5,64.6 95.8,61.9 98.0,59.4 100.3,57.1 102.5,55.0 104.8,53.1 107.0,51.4 109.2,49.9 111.5,48.6 113.8,47.5 116.0,46.6 118.2,45.9 120.5,45.4 122.8,45.1 125.0,45.0 127.3,45.1 129.5,45.4 131.8,45.9 134.0,46.6 136.2,47.5 138.5,48.6 140.8,49.9 143.0,51.4 145.2,53.1 147.5,55.0 149.8,57.1 152.0,59.4 154.2,61.9 156.5,64.6 158.8,67.5 161.0,70.6 163.2,73.9 165.5,77.4 167.8,81.1 170.0,85.0 172.2,89.1 174.5,93.4 176.8,97.9 179.0,102.6 181.2,107.5 183.5,112.6 185.8,117.9 188.0,123.4 190.2,129.1 192.5,135.0 194.8,141.1 197.0,147.4 199.3,153.9 201.5,160.6 203.8,167.5 206.0,174.6 208.2,181.9 210.5,189.4 212.8,197.1 215.0,205.0' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='125.0' cy='45.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='133.0' y='49.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(1, 2)</text><line x1='125.0' y1='105.0' x2='125.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='125.0' cy='45.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='131.0' y='39.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>Puncak (xp &gt; 0)</text></svg>",
+      "caption": "Grafik parabola terbuka ke bawah (a < 0) dengan puncak di kanan sumbu-y (xp > 0) sehingga b > 0.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Tanda Koefisien: a < 0, xp > 0, b > 0",
+        "x_range": [
+          -3,
+          5
+        ],
+        "y_range": [
+          -4,
+          4
+        ],
+        "parabolas": [
+          {
+            "a": -1,
+            "b": 2,
+            "c": 1,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "points": [
+          {
+            "x": 1,
+            "y": 2,
+            "label": "Puncak (xp > 0)"
+          }
+        ]
+      }
+    },
+    "dm_k2_b2": {
+      "slot_id": "dm_k2_b2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 240 135' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='8'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='120' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Garis y = 2x - 1 Menyinggung y = x²</text><line x1='35.0' y1='25' x2='35.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='60.7' y1='25' x2='60.7' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='86.4' y1='25' x2='86.4' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='112.1' y1='25' x2='112.1' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='137.9' y1='25' x2='137.9' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='163.6' y1='25' x2='163.6' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='189.3' y1='25' x2='189.3' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='215.0' y1='25' x2='215.0' y2='105' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='105.0' x2='215' y2='105.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='96.1' x2='215' y2='96.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='87.2' x2='215' y2='87.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='78.3' x2='215' y2='78.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='69.4' x2='215' y2='69.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='60.6' x2='215' y2='60.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='51.7' x2='215' y2='51.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='42.8' x2='215' y2='42.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='33.9' x2='215' y2='33.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='215' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='78.3' x2='227' y2='78.3' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='233' y='82.3' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>x</text><line x1='112.1' y1='113' x2='112.1' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='104.14285714285714' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold'>y</text><text x='35.0' y='91.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='60.7' y='91.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='86.4' y='91.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='137.9' y='91.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='163.6' y='91.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='189.3' y='91.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='215.0' y='91.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='107.1' y='108.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='107.1' y='99.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='107.1' y='90.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='107.1' y='72.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='107.1' y='63.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='107.1' y='54.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='107.1' y='45.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='107.1' y='36.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='107.1' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><line x1='35.0' y1='140.6' x2='215.0' y2='16.1' stroke='#34D399' stroke-width='2' /><text x='189.3' y='27.9' fill='#34D399' font-family='sans-serif' font-size='11' font-weight='bold'>y = 2x - 1</text><polyline points='35.0,-1.7 37.2,2.9 39.5,7.4 41.8,11.7 44.0,15.9 46.2,20.0 48.5,23.9 50.8,27.7 53.0,31.3 55.2,34.8 57.5,38.2 59.8,41.4 62.0,44.5 64.2,47.5 66.5,50.3 68.8,53.0 71.0,55.6 73.2,58.0 75.5,60.3 77.8,62.4 80.0,64.4 82.2,66.3 84.5,68.1 86.8,69.7 89.0,71.1 91.2,72.5 93.5,73.7 95.8,74.7 98.0,75.6 100.2,76.4 102.5,77.1 104.8,77.6 107.0,78.0 109.2,78.2 111.5,78.3 113.8,78.3 116.0,78.1 118.2,77.8 120.5,77.4 122.7,76.8 125.0,76.1 127.2,75.3 129.5,74.3 131.8,73.2 134.0,71.9 136.2,70.5 138.5,69.0 140.8,67.3 143.0,65.5 145.2,63.6 147.5,61.5 149.8,59.3 152.0,57.0 154.2,54.5 156.5,51.9 158.8,49.1 161.0,46.2 163.2,43.2 165.5,40.1 167.8,36.8 170.0,33.3 172.2,29.8 174.5,26.1 176.7,22.2 179.0,18.2 181.2,14.1 183.5,9.9 185.8,5.5 188.0,1.0 190.2,-3.7 192.5,-8.5 194.8,-13.4 197.0,-18.5 199.2,-23.7 201.5,-29.0 203.8,-34.5 206.0,-40.1 208.2,-45.8 210.5,-51.7 212.8,-57.7 215.0,-63.9' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='112.1' cy='78.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='120.1' y='82.3' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(0, 0)</text><circle cx='137.9' cy='69.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='143.9' y='63.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>Titik Singgung (1, 1)</text></svg>",
+      "caption": "Garis y = 2x + k dengan nilai k = -1 menyinggung kurva parabola y = x² pada satu titik (Dg = 0).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Garis y = 2x - 1 Menyinggung y = x²",
+        "x_range": [
+          -3,
+          4
+        ],
+        "y_range": [
+          -3,
+          6
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": 0,
+            "c": 0,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": false
+          }
+        ],
+        "lines": [
+          {
+            "slope": 2,
+            "intercept": -1,
+            "color": "#34D399",
+            "label": "y = 2x - 1"
+          }
+        ],
+        "points": [
+          {
+            "x": 1,
+            "y": 1,
+            "label": "Titik Singgung (1, 1)"
+          }
+        ]
+      }
+    },
+    "z2_v1": {
+      "slot_id": "z2_v1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='200' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Simetri Akar f(x) = 2x^2 - 6x + 3</text><line x1='35.0' y1='25' x2='35.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='103.0' y1='25' x2='103.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='171.0' y1='25' x2='171.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='239.0' y1='25' x2='239.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='307.0' y1='25' x2='307.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='375.0' y1='25' x2='375.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='197.7' x2='375' y2='197.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='173.0' x2='375' y2='173.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='148.3' x2='375' y2='148.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='123.7' x2='375' y2='123.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='99.0' x2='375' y2='99.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='74.3' x2='375' y2='74.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='49.7' x2='375' y2='49.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='375' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='148.3' x2='387' y2='148.3' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='393' y='152.3' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='103.0' y1='218' x2='103.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='95.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='171.0' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='239.0' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='307.0' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='375.0' y='162.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='98.0' y='200.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='98.0' y='176.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='98.0' y='126.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='98.0' y='102.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='98.0' y='77.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='98.0' y='52.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='98.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><polyline points='35.0,-123.0 39.2,-107.8 43.5,-92.9 47.8,-78.5 52.0,-64.4 56.2,-50.7 60.5,-37.4 64.8,-24.5 69.0,-12.0 73.2,0.1 77.5,11.9 81.8,23.3 86.0,34.2 90.2,44.8 94.5,55.1 98.8,64.9 103.0,74.3 107.2,83.4 111.5,92.1 115.8,100.3 120.0,108.2 124.2,115.8 128.5,122.9 132.8,129.6 137.0,136.0 141.2,142.0 145.5,147.6 149.8,152.8 154.0,157.6 158.2,162.0 162.5,166.1 166.8,169.7 171.0,173.0 175.2,175.9 179.5,178.4 183.8,180.5 188.0,182.2 192.2,183.6 196.5,184.6 200.8,185.1 205.0,185.3 209.2,185.1 213.5,184.6 217.8,183.6 222.0,182.2 226.2,180.5 230.5,178.4 234.8,175.9 239.0,173.0 243.3,169.7 247.5,166.1 251.7,162.0 256.0,157.6 260.2,152.8 264.5,147.6 268.8,142.0 273.0,136.0 277.2,129.6 281.5,122.9 285.8,115.8 290.0,108.2 294.2,100.3 298.5,92.1 302.8,83.4 307.0,74.3 311.2,64.9 315.5,55.1 319.8,44.8 324.0,34.2 328.2,23.3 332.5,11.9 336.8,0.1 341.0,-12.0 345.2,-24.5 349.5,-37.4 353.8,-50.7 358.0,-64.4 362.2,-78.5 366.5,-92.9 370.8,-107.8 375.0,-123.0' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='205.0' cy='185.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='213.0' y='189.3' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(1.5, -1.5)</text><line x1='205.0' y1='210.0' x2='205.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='146.1' cy='148.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='152.1' y='142.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x1</text><circle cx='263.9' cy='148.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='269.9' y='142.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x2</text><circle cx='205.0' cy='185.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='211.0' y='179.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>P(1.5, -1.5)</text><circle cx='103.0' cy='74.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='109.0' y='68.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, 3)</text></svg>",
+      "caption": "Grafik f(x) = 2x^2 - 6x + 3 menunjukkan sumbu simetri x = 1.5 di tengah akar x1 dan x2 dengan jarak antar-akar |x1 - x2| = akar(3).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Simetri Akar f(x) = 2x^2 - 6x + 3",
+        "x_range": [
+          -1,
+          4
+        ],
+        "y_range": [
+          -2.5,
+          5
+        ],
+        "parabolas": [
+          {
+            "a": 2,
+            "b": -6,
+            "c": 3,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "points": [
+          {
+            "x": 0.634,
+            "y": 0,
+            "label": "x1"
+          },
+          {
+            "x": 2.366,
+            "y": 0,
+            "label": "x2"
+          },
+          {
+            "x": 1.5,
+            "y": -1.5,
+            "label": "P(1.5, -1.5)"
+          },
+          {
+            "x": 0,
+            "y": 3,
+            "label": "(0, 3)"
+          }
+        ]
+      }
+    },
+    "z2_v2": {
+      "slot_id": "z2_v2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='200' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Irisan Syarat Definit Negatif (p &lt; 0 dan p &lt; -1)</text><line x1='42.0' y1='136.8' x2='200.0' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='148.8' x2='373' y2='148.8' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='144.8' x2='42.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-4</text><line x1='94.7' y1='144.8' x2='94.7' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='94.7' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-3</text><line x1='147.3' y1='144.8' x2='147.3' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='147.3' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-2</text><line x1='200.0' y1='144.8' x2='200.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='200.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-1</text><line x1='252.7' y1='144.8' x2='252.7' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='252.7' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>0</text><line x1='305.3' y1='144.8' x2='305.3' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='305.3' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>1</text><line x1='358.0' y1='144.8' x2='358.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='358.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>2</text><circle cx='200.0' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='200.0' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-1</text><circle cx='252.7' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='252.7' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>0</text></svg>",
+      "caption": "Garis bilangan irisan syarat definit negatif a < 0 (p < 0) dan D < 0 (p < -1) menghasilkan daerah penyelesaian p < -1.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Irisan Syarat Definit Negatif (p < 0 dan p < -1)",
+        "x_range": [
+          -4,
+          2
+        ],
+        "boundary_points": [
+          {
+            "value": -1,
+            "open": true,
+            "label": "-1"
+          },
+          {
+            "value": 0,
+            "open": true,
+            "label": "0"
+          }
+        ],
+        "shading": [
+          {
+            "from": -4,
+            "to": -1,
+            "type": "interval"
+          }
+        ]
+      }
+    },
+    "z2_v3": {
+      "slot_id": "z2_v3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='200' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Transformasi Parabola Awal ke Persamaan Baru</text><line x1='35.0' y1='25' x2='35.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='63.3' y1='25' x2='63.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='91.7' y1='25' x2='91.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='120.0' y1='25' x2='120.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='148.3' y1='25' x2='148.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='176.7' y1='25' x2='176.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='205.0' y1='25' x2='205.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='233.3' y1='25' x2='233.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='261.7' y1='25' x2='261.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='290.0' y1='25' x2='290.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='318.3' y1='25' x2='318.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='346.7' y1='25' x2='346.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='375.0' y1='25' x2='375.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='210.0' x2='375' y2='210.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='194.6' x2='375' y2='194.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='179.2' x2='375' y2='179.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='163.8' x2='375' y2='163.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='148.3' x2='375' y2='148.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='132.9' x2='375' y2='132.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='117.5' x2='375' y2='117.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='102.1' x2='375' y2='102.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='86.7' x2='375' y2='86.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='71.2' x2='375' y2='71.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='55.8' x2='375' y2='55.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='40.4' x2='375' y2='40.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='375' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='71.2' x2='387' y2='71.2' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='393' y='75.2' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='91.7' y1='218' x2='91.7' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='83.66666666666666' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='63.3' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='120.0' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='148.3' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='176.7' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='205.0' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='233.3' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='261.7' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='290.0' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>7</text><text x='318.3' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>8</text><text x='346.7' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>9</text><text x='375.0' y='85.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>10</text><text x='86.7' y='213.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-18</text><text x='86.7' y='197.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-16</text><text x='86.7' y='182.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-14</text><text x='86.7' y='166.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-12</text><text x='86.7' y='151.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-10</text><text x='86.7' y='135.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-8</text><text x='86.7' y='120.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-6</text><text x='86.7' y='105.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='86.7' y='89.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='86.7' y='58.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='86.7' y='43.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='86.7' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><polyline points='35.0,-52.1 39.2,-41.9 43.5,-32.0 47.8,-22.4 52.0,-13.2 56.2,-4.4 60.5,4.1 64.8,12.3 69.0,20.1 73.2,27.5 77.5,34.6 81.8,41.4 86.0,47.8 90.2,53.9 94.5,59.6 98.8,65.0 103.0,70.0 107.2,74.7 111.5,79.0 115.8,83.0 120.0,86.7 124.2,90.0 128.5,92.9 132.8,95.5 137.0,97.8 141.2,99.7 145.5,101.2 149.8,102.4 154.0,103.3 158.2,103.8 162.5,104.0 166.7,103.8 171.0,103.3 175.2,102.4 179.5,101.2 183.8,99.7 188.0,97.8 192.2,95.5 196.5,92.9 200.8,90.0 205.0,86.7 209.2,83.0 213.5,79.0 217.8,74.7 222.0,70.0 226.2,65.0 230.5,59.6 234.8,53.9 239.0,47.8 243.2,41.4 247.5,34.6 251.7,27.5 256.0,20.1 260.2,12.3 264.5,4.1 268.8,-4.4 273.0,-13.2 277.2,-22.4 281.5,-32.0 285.8,-41.9 290.0,-52.1' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='162.5' cy='104.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='170.5' y='108.0' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(2.5, -4.25)</text><polyline points='43.5,-48.2 47.8,-35.1 52.0,-22.5 56.2,-10.2 60.5,1.8 64.8,13.4 69.0,24.7 73.2,35.6 77.5,46.2 81.8,56.4 86.0,66.3 90.2,75.9 94.5,85.0 98.8,93.9 103.0,102.4 107.2,110.5 111.5,118.3 115.8,125.8 120.0,132.9 124.2,139.7 128.5,146.1 132.8,152.2 137.0,157.9 141.2,163.3 145.5,168.3 149.8,173.0 154.0,177.3 158.2,181.3 162.5,184.9 166.7,188.2 171.0,191.2 175.2,193.8 179.5,196.0 183.8,198.0 188.0,199.5 192.2,200.7 196.5,201.6 200.8,202.1 205.0,202.3 209.2,202.1 213.5,201.6 217.8,200.7 222.0,199.5 226.2,198.0 230.5,196.0 234.8,193.8 239.0,191.2 243.2,188.2 247.5,184.9 251.7,181.3 256.0,177.3 260.2,173.0 264.5,168.3 268.8,163.3 273.0,157.9 277.2,152.2 281.5,146.1 285.8,139.7 290.0,132.9 294.2,125.8 298.5,118.3 302.8,110.5 307.0,102.4 311.2,93.9 315.5,85.0 319.7,75.9 324.0,66.3 328.2,56.4 332.5,46.2 336.8,35.6 341.0,24.7 345.2,13.4 349.5,1.8 353.8,-10.2 358.0,-22.5 362.2,-35.1 366.5,-48.2' fill='none' stroke='#34D399' stroke-width='2.5'/><circle cx='205.0' cy='202.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='213.0' y='206.3' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(4, -17)</text><circle cx='162.5' cy='104.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='168.5' y='98.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>P1(2.5, -4.25)</text><circle cx='205.0' cy='202.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='211.0' y='196.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>P2(4, -17)</text><circle cx='91.7' cy='55.8' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='97.7' y='49.8' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, 2)</text><circle cx='91.7' cy='79.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='97.7' y='73.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, -1)</text></svg>",
+      "caption": "Perbandingan grafik parabola awal y = x^2 - 5x + 2 dengan parabola hasil transformasi akar (2x - 1) yaitu y = x^2 - 8x - 1.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Transformasi Parabola Awal ke Persamaan Baru",
+        "x_range": [
+          -2,
+          10
+        ],
+        "y_range": [
+          -18,
+          6
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": -5,
+            "c": 2,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": false
+          },
+          {
+            "a": 1,
+            "b": -8,
+            "c": -1,
+            "color": "#34D399",
+            "show_vertex": true,
+            "show_axis_of_symmetry": false
+          }
+        ],
+        "points": [
+          {
+            "x": 2.5,
+            "y": -4.25,
+            "label": "P1(2.5, -4.25)"
+          },
+          {
+            "x": 4,
+            "y": -17,
+            "label": "P2(4, -17)"
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "label": "(0, 2)"
+          },
+          {
+            "x": 0,
+            "y": -1,
+            "label": "(0, -1)"
+          }
+        ]
+      }
+    },
+    "z2_v4": {
+      "slot_id": "z2_v4",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='200' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Grafik f(x) = 2x^2 - 8x + 5 dan Titik Kunci</text><line x1='35.0' y1='25' x2='35.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='91.7' y1='25' x2='91.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='148.3' y1='25' x2='148.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='205.0' y1='25' x2='205.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='261.7' y1='25' x2='261.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='318.3' y1='25' x2='318.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='375.0' y1='25' x2='375.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='210.0' x2='375' y2='210.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='193.2' x2='375' y2='193.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='176.4' x2='375' y2='176.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='159.5' x2='375' y2='159.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='142.7' x2='375' y2='142.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='125.9' x2='375' y2='125.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='109.1' x2='375' y2='109.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='92.3' x2='375' y2='92.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='75.5' x2='375' y2='75.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='58.6' x2='375' y2='58.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='41.8' x2='375' y2='41.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='375' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='142.7' x2='387' y2='142.7' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='393' y='146.7' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='91.7' y1='218' x2='91.7' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='83.66666666666666' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='156.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='148.3' y='156.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='205.0' y='156.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='261.7' y='156.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='318.3' y='156.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='375.0' y='156.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='86.7' y='213.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='86.7' y='196.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='86.7' y='179.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='86.7' y='162.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='86.7' y='128.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='86.7' y='112.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='86.7' y='95.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='86.7' y='78.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='86.7' y='61.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='86.7' y='44.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='86.7' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>7</text><polyline points='35.0,-109.5 39.2,-94.6 43.5,-80.0 47.8,-65.8 52.0,-52.0 56.2,-38.6 60.5,-25.5 64.8,-12.9 69.0,-0.6 73.2,11.4 77.5,22.9 81.8,34.1 86.0,44.8 90.2,55.3 94.5,65.3 98.8,74.9 103.0,84.2 107.2,93.1 111.5,101.6 115.8,109.7 120.0,117.5 124.2,124.9 128.5,131.9 132.8,138.5 137.0,144.7 141.2,150.6 145.5,156.1 149.8,161.2 154.0,165.9 158.2,170.3 162.5,174.3 166.7,177.9 171.0,181.1 175.2,183.9 179.5,186.4 183.8,188.5 188.0,190.2 192.2,191.5 196.5,192.4 200.8,193.0 205.0,193.2 209.2,193.0 213.5,192.4 217.8,191.5 222.0,190.2 226.2,188.5 230.5,186.4 234.8,183.9 239.0,181.1 243.2,177.9 247.5,174.3 251.7,170.3 256.0,165.9 260.2,161.2 264.5,156.1 268.8,150.6 273.0,144.7 277.2,138.5 281.5,131.9 285.8,124.9 290.0,117.5 294.2,109.7 298.5,101.6 302.8,93.1 307.0,84.2 311.2,74.9 315.5,65.3 319.7,55.3 324.0,44.8 328.2,34.1 332.5,22.9 336.8,11.4 341.0,-0.6 345.2,-12.9 349.5,-25.5 353.8,-38.6 358.0,-52.0 362.2,-65.8 366.5,-80.0 370.8,-94.6 375.0,-109.5' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='205.0' cy='193.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='213.0' y='197.2' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(2, -3)</text><line x1='205.0' y1='210.0' x2='205.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='205.0' cy='193.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='211.0' y='187.2' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>Puncak (2, -3)</text><circle cx='91.7' cy='58.6' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='97.7' y='52.6' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, 5)</text><circle cx='148.3' cy='159.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='154.3' y='153.5' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>f(1) = -1</text></svg>",
+      "caption": "Grafik f(x) = 2x^2 - 8x + 5 dengan titik puncak (2, -3), titik potong sumbu-y (0, 5), dan titik evaluasi f(1) = a + b + c = -1.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Grafik f(x) = 2x^2 - 8x + 5 dan Titik Kunci",
+        "x_range": [
+          -1,
+          5
+        ],
+        "y_range": [
+          -4,
+          7
+        ],
+        "parabolas": [
+          {
+            "a": 2,
+            "b": -8,
+            "c": 5,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "points": [
+          {
+            "x": 2,
+            "y": -3,
+            "label": "Puncak (2, -3)"
+          },
+          {
+            "x": 0,
+            "y": 5,
+            "label": "(0, 5)"
+          },
+          {
+            "x": 1,
+            "y": -1,
+            "label": "f(1) = -1"
+          }
+        ]
+      }
+    },
+    "z2_v5": {
+      "slot_id": "z2_v5",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='200' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Garis Singgung Parabola y = x² - 2x + 5</text><line x1='35.0' y1='25' x2='35.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='63.3' y1='25' x2='63.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='91.7' y1='25' x2='91.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='120.0' y1='25' x2='120.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='148.3' y1='25' x2='148.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='176.7' y1='25' x2='176.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='205.0' y1='25' x2='205.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='233.3' y1='25' x2='233.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='261.7' y1='25' x2='261.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='290.0' y1='25' x2='290.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='318.3' y1='25' x2='318.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='346.7' y1='25' x2='346.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='375.0' y1='25' x2='375.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='210.0' x2='375' y2='210.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='196.8' x2='375' y2='196.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='183.6' x2='375' y2='183.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='170.4' x2='375' y2='170.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='157.1' x2='375' y2='157.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='143.9' x2='375' y2='143.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='130.7' x2='375' y2='130.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='117.5' x2='375' y2='117.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='104.3' x2='375' y2='104.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='91.1' x2='375' y2='91.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='77.9' x2='375' y2='77.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='64.6' x2='375' y2='64.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='51.4' x2='375' y2='51.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='38.2' x2='375' y2='38.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='375' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='170.4' x2='387' y2='170.4' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='393' y='174.4' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='205.0' y1='218' x2='205.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='197.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-6</text><text x='63.3' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-5</text><text x='91.7' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-4</text><text x='120.0' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='148.3' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='176.7' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='233.3' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='261.7' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='290.0' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='318.3' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='346.7' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='375.0' y='184.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='200.0' y='213.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-6</text><text x='200.0' y='199.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='200.0' y='186.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='200.0' y='160.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='200.0' y='146.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='200.0' y='133.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='200.0' y='120.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>8</text><text x='200.0' y='107.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>10</text><text x='200.0' y='94.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>12</text><text x='200.0' y='80.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>14</text><text x='200.0' y='67.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>16</text><text x='200.0' y='54.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>18</text><text x='200.0' y='41.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>20</text><text x='200.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>22</text><line x1='35.0' y1='355.4' x2='375.0' y2='38.2' stroke='#34D399' stroke-width='2' /><text x='346.7' y='58.6' fill='#34D399' font-family='sans-serif' font-size='11' font-weight='bold'>y = 4x - 4</text><line x1='35.0' y1='-120.4' x2='375.0' y2='513.9' stroke='#FBBF24' stroke-width='2' /><text x='346.7' y='455.1' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold'>y = -8x - 4</text><polyline points='86.0,-34.7 90.2,-24.6 94.5,-14.7 98.8,-5.1 103.0,4.1 107.2,13.1 111.5,21.8 115.8,30.1 120.0,38.2 124.2,46.0 128.5,53.5 132.8,60.7 137.0,67.5 141.2,74.1 145.5,80.4 149.8,86.4 154.0,92.1 158.2,97.5 162.5,102.6 166.7,107.4 171.0,111.9 175.2,116.2 179.5,120.1 183.8,123.7 188.0,127.0 192.2,130.0 196.5,132.8 200.8,135.2 205.0,137.3 209.2,139.2 213.5,140.7 217.8,141.9 222.0,142.9 226.2,143.5 230.5,143.9 234.8,143.9 239.0,143.7 243.2,143.1 247.5,142.3 251.7,141.1 256.0,139.7 260.2,138.0 264.5,135.9 268.8,133.6 273.0,131.0 277.2,128.1 281.5,124.8 285.8,121.3 290.0,117.5 294.2,113.4 298.5,109.0 302.8,104.3 307.0,99.3 311.2,94.0 315.5,88.4 319.7,82.5 324.0,76.3 328.2,69.8 332.5,63.0 336.8,55.9 341.0,48.5 345.2,40.8 349.5,32.9 353.8,24.6 358.0,16.0 362.2,7.1 366.5,-2.0 370.8,-11.5 375.0,-21.2' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='233.3' cy='143.9' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='241.3' y='147.9' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(1, 4)</text><circle cx='290.0' cy='117.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='296.0' y='111.5' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(3, 8)</text><circle cx='120.0' cy='38.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='126.0' y='32.2' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(-3, 20)</text><circle cx='205.0' cy='196.8' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='211.0' y='190.8' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, -4)</text></svg>",
+      "caption": "Visualisasi kedudukan dua garis singgung y = 4x - 4 dan y = -8x - 4 terhadap parabola y = x² - 2x + 5.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Garis Singgung Parabola y = x² - 2x + 5",
+        "x_range": [
+          -6,
+          6
+        ],
+        "y_range": [
+          -6,
+          22
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": -2,
+            "c": 5,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": false
+          }
+        ],
+        "lines": [
+          {
+            "slope": 4,
+            "intercept": -4,
+            "color": "#34D399",
+            "label": "y = 4x - 4"
+          },
+          {
+            "slope": -8,
+            "intercept": -4,
+            "color": "#FBBF24",
+            "label": "y = -8x - 4"
+          }
+        ],
+        "points": [
+          {
+            "x": 3,
+            "y": 8,
+            "label": "(3, 8)"
+          },
+          {
+            "x": -3,
+            "y": 20,
+            "label": "(-3, 20)"
+          },
+          {
+            "x": 0,
+            "y": -4,
+            "label": "(0, -4)"
+          }
+        ]
+      }
+    },
+    "z2_v6": {
+      "slot_id": "z2_v6",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='200' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Irisan Batas Nilai k (k &gt; 1/2)</text><line x1='219.8' y1='136.8' x2='358.0' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='148.8' x2='373' y2='148.8' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='144.8' x2='42.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-4</text><line x1='81.5' y1='144.8' x2='81.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='81.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-3</text><line x1='121.0' y1='144.8' x2='121.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='121.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-2</text><line x1='160.5' y1='144.8' x2='160.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='160.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-1</text><line x1='200.0' y1='144.8' x2='200.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='200.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>0</text><line x1='239.5' y1='144.8' x2='239.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='239.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>1</text><line x1='279.0' y1='144.8' x2='279.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='279.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>2</text><line x1='318.5' y1='144.8' x2='318.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='318.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>3</text><line x1='358.0' y1='144.8' x2='358.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='358.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>4</text><circle cx='121.0' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='121.0' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-2</text><circle cx='219.8' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='219.8' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>1/2</text></svg>",
+      "caption": "Garis bilangan irisan syarat k > -2 dan k > 1/2 yang menghasilkan daerah penyelesaian k > 1/2.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Irisan Batas Nilai k (k > 1/2)",
+        "x_range": [
+          -4,
+          4
+        ],
+        "boundary_points": [
+          {
+            "value": -2,
+            "closed": false,
+            "open": true,
+            "label": "-2"
+          },
+          {
+            "value": 0.5,
+            "closed": false,
+            "open": true,
+            "label": "1/2"
+          }
+        ],
+        "shading": [
+          {
+            "from": 0.5,
+            "to": 4,
+            "type": "interval"
+          }
+        ]
+      }
+    },
+    "z3_s1": {
+      "slot_id": "z3_s1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='190' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Kurva y = x² - 4x + 1</text><line x1='35.0' y1='25' x2='35.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='88.3' y1='25' x2='88.3' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='141.7' y1='25' x2='141.7' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='195.0' y1='25' x2='195.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='248.3' y1='25' x2='248.3' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='301.7' y1='25' x2='301.7' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='355.0' y1='25' x2='355.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='200.0' x2='355' y2='200.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='182.5' x2='355' y2='182.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='165.0' x2='355' y2='165.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='147.5' x2='355' y2='147.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='130.0' x2='355' y2='130.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='112.5' x2='355' y2='112.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='95.0' x2='355' y2='95.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='77.5' x2='355' y2='77.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='60.0' x2='355' y2='60.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='42.5' x2='355' y2='42.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='355' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='130.0' x2='367' y2='130.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='373' y='134.0' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='88.3' y1='208' x2='88.3' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='80.33333333333333' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='141.7' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='195.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='248.3' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='301.7' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='355.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='83.3' y='203.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='83.3' y='185.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='83.3' y='168.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='83.3' y='150.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='83.3' y='115.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='83.3' y='98.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='83.3' y='80.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='83.3' y='63.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='83.3' y='45.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='83.3' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><polyline points='35.0,25.0 39.0,32.8 43.0,40.4 47.0,47.7 51.0,54.9 55.0,61.9 59.0,68.7 63.0,75.3 67.0,81.7 71.0,87.9 75.0,93.9 79.0,99.7 83.0,105.3 87.0,110.7 91.0,116.0 95.0,121.0 99.0,125.8 103.0,130.4 107.0,134.9 111.0,139.1 115.0,143.1 119.0,147.0 123.0,150.6 127.0,154.1 131.0,157.3 135.0,160.4 139.0,163.2 143.0,165.9 147.0,168.3 151.0,170.6 155.0,172.7 159.0,174.5 163.0,176.2 167.0,177.7 171.0,179.0 175.0,180.0 179.0,180.9 183.0,181.6 187.0,182.1 191.0,182.4 195.0,182.5 199.0,182.4 203.0,182.1 207.0,181.6 211.0,180.9 215.0,180.0 219.0,179.0 223.0,177.7 227.0,176.2 231.0,174.5 235.0,172.7 239.0,170.6 243.0,168.3 247.0,165.9 251.0,163.2 255.0,160.4 259.0,157.3 263.0,154.1 267.0,150.6 271.0,147.0 275.0,143.1 279.0,139.1 283.0,134.9 287.0,130.4 291.0,125.8 295.0,121.0 299.0,116.0 303.0,110.7 307.0,105.3 311.0,99.7 315.0,93.9 319.0,87.9 323.0,81.7 327.0,75.3 331.0,68.7 335.0,61.9 339.0,54.9 343.0,47.7 347.0,40.4 351.0,32.8 355.0,25.0' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='102.6' cy='130.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='108.6' y='124.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x₂</text><circle cx='287.4' cy='130.0' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='293.4' y='124.0' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x₁</text></svg>",
+      "caption": "Ilustrasi letak akar-akar x₁ dan x₂ (dengan x₁ > x₂) dari persamaan kuadrat x² - 4x + 1 = 0 pada sumbu-x.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Kurva y = x² - 4x + 1",
+        "x_range": [
+          -1,
+          5
+        ],
+        "y_range": [
+          -4,
+          6
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": -4,
+            "c": 1,
+            "color": "#38BDF8",
+            "show_vertex": false,
+            "show_axis_of_symmetry": false
+          }
+        ],
+        "points": [
+          {
+            "x": 0.268,
+            "y": 0,
+            "label": "x₂"
+          },
+          {
+            "x": 3.732,
+            "y": 0,
+            "label": "x₁"
+          }
+        ]
+      }
+    },
+    "z3_s2": {
+      "slot_id": "z3_s2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='190' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Grafik Fungsi Kuadrat f(x)</text><line x1='35.0' y1='25' x2='35.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='67.0' y1='25' x2='67.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='99.0' y1='25' x2='99.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='131.0' y1='25' x2='131.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='163.0' y1='25' x2='163.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='195.0' y1='25' x2='195.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='227.0' y1='25' x2='227.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='259.0' y1='25' x2='259.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='291.0' y1='25' x2='291.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='323.0' y1='25' x2='323.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='355.0' y1='25' x2='355.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='200.0' x2='355' y2='200.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='184.1' x2='355' y2='184.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='168.2' x2='355' y2='168.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='152.3' x2='355' y2='152.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='136.4' x2='355' y2='136.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='120.5' x2='355' y2='120.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='104.5' x2='355' y2='104.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='88.6' x2='355' y2='88.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='72.7' x2='355' y2='72.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='56.8' x2='355' y2='56.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='40.9' x2='355' y2='40.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='355' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='136.4' x2='367' y2='136.4' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='373' y='140.4' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='131.0' y1='208' x2='131.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='123.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='67.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='99.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='163.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='195.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='227.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='259.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='291.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='323.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='355.0' y='150.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>7</text><text x='126.0' y='203.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='126.0' y='187.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='126.0' y='171.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='126.0' y='155.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='126.0' y='123.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='126.0' y='107.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='126.0' y='91.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='126.0' y='75.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='126.0' y='59.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='126.0' y='43.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='126.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>7</text><polyline points='35.0,255.7 39.0,245.9 43.0,236.3 47.0,227.0 51.0,217.9 55.0,209.1 59.0,200.5 63.0,192.2 67.0,184.1 71.0,176.3 75.0,168.7 79.0,161.3 83.0,154.3 87.0,147.4 91.0,140.8 95.0,134.5 99.0,128.4 103.0,122.6 107.0,117.0 111.0,111.6 115.0,106.5 119.0,101.7 123.0,97.1 127.0,92.7 131.0,88.6 135.0,84.8 139.0,81.2 143.0,77.8 147.0,74.7 151.0,71.9 155.0,69.2 159.0,66.9 163.0,64.8 167.0,62.9 171.0,61.3 175.0,59.9 179.0,58.8 183.0,57.9 187.0,57.3 191.0,56.9 195.0,56.8 199.0,56.9 203.0,57.3 207.0,57.9 211.0,58.8 215.0,59.9 219.0,61.3 223.0,62.9 227.0,64.8 231.0,66.9 235.0,69.2 239.0,71.9 243.0,74.7 247.0,77.8 251.0,81.2 255.0,84.8 259.0,88.6 263.0,92.7 267.0,97.1 271.0,101.7 275.0,106.5 279.0,111.6 283.0,117.0 287.0,122.6 291.0,128.4 295.0,134.5 299.0,140.8 303.0,147.4 307.0,154.3 311.0,161.3 315.0,168.7 319.0,176.3 323.0,184.1 327.0,192.2 331.0,200.5 335.0,209.1 339.0,217.9 343.0,227.0 347.0,236.3 351.0,245.9 355.0,255.7' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='195.0' cy='56.8' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='203.0' y='60.8' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(2, 5)</text><circle cx='131.0' cy='88.6' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='137.0' y='82.6' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, 3)</text><circle cx='195.0' cy='56.8' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='201.0' y='50.8' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(2, 5)</text></svg>",
+      "caption": "Grafik fungsi kuadrat f(x) = ax² + bx + c yang memotong sumbu-y di (0, 3) dan berpuncak di (2, 5).",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Grafik Fungsi Kuadrat f(x)",
+        "x_range": [
+          -3,
+          7
+        ],
+        "y_range": [
+          -4,
+          7
+        ],
+        "parabolas": [
+          {
+            "a": -0.5,
+            "b": 2,
+            "c": 3,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": false
+          }
+        ],
+        "points": [
+          {
+            "x": 0,
+            "y": 3,
+            "label": "(0, 3)"
+          },
+          {
+            "x": 2,
+            "y": 5,
+            "label": "(2, 5)"
+          }
+        ]
+      }
+    },
+    "z3_s3": {
+      "slot_id": "z3_s3",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='190' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Ilustrasi f(x) = x² - (m + 3)x + (3m + 1)</text><line x1='35.0' y1='25' x2='35.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='80.7' y1='25' x2='80.7' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='126.4' y1='25' x2='126.4' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='172.1' y1='25' x2='172.1' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='217.9' y1='25' x2='217.9' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='263.6' y1='25' x2='263.6' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='309.3' y1='25' x2='309.3' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='355.0' y1='25' x2='355.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='200.0' x2='355' y2='200.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='178.1' x2='355' y2='178.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='156.2' x2='355' y2='156.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='134.4' x2='355' y2='134.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='112.5' x2='355' y2='112.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='90.6' x2='355' y2='90.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='68.8' x2='355' y2='68.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='46.9' x2='355' y2='46.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='355' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='134.4' x2='367' y2='134.4' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='373' y='138.4' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='80.7' y1='208' x2='80.7' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='72.71428571428571' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='148.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='126.4' y='148.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='172.1' y='148.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='217.9' y='148.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='263.6' y='148.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='309.3' y='148.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='355.0' y='148.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='75.7' y='203.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='75.7' y='181.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='75.7' y='159.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='75.7' y='115.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='75.7' y='93.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='75.7' y='71.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='75.7' y='49.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='75.7' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><polyline points='35.0,-84.4 39.0,-71.1 43.0,-58.2 47.0,-45.7 51.0,-33.5 55.0,-21.6 59.0,-10.0 63.0,1.2 67.0,12.1 71.0,22.6 75.0,32.9 79.0,42.7 83.0,52.3 87.0,61.5 91.0,70.4 95.0,78.9 99.0,87.1 103.0,95.0 107.0,102.5 111.0,109.7 115.0,116.6 119.0,123.1 123.0,129.3 127.0,135.2 131.0,140.7 135.0,145.9 139.0,150.8 143.0,155.3 147.0,159.5 151.0,163.3 155.0,166.8 159.0,170.0 163.0,172.9 167.0,175.4 171.0,177.6 175.0,179.4 179.0,180.9 183.0,182.1 187.0,182.9 191.0,183.4 195.0,183.6 199.0,183.4 203.0,182.9 207.0,182.1 211.0,180.9 215.0,179.4 219.0,177.6 223.0,175.4 227.0,172.9 231.0,170.0 235.0,166.8 239.0,163.3 243.0,159.5 247.0,155.3 251.0,150.8 255.0,145.9 259.0,140.7 263.0,135.2 267.0,129.3 271.0,123.1 275.0,116.6 279.0,109.7 283.0,102.5 287.0,95.0 291.0,87.1 295.0,78.9 299.0,70.4 303.0,61.5 307.0,52.3 311.0,42.7 315.0,32.9 319.0,22.6 323.0,12.1 327.0,1.2 331.0,-10.0 335.0,-21.6 339.0,-33.5 343.0,-45.7 347.0,-58.2 351.0,-71.1 355.0,-84.4' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='195.0' cy='183.6' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='203.0' y='187.6' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(2.5, -2.25)</text><line x1='195.0' y1='200.0' x2='195.0' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='126.4' cy='134.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='132.4' y='128.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x₁ &gt; 0</text><circle cx='263.6' cy='134.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='269.6' y='128.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x₂ &gt; 0</text><circle cx='80.7' cy='46.9' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='86.7' y='40.9' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>f(0) = 3m + 1</text></svg>",
+      "caption": "Ilustrasi grafik fungsi kuadrat f(x) = x² - (m + 3)x + (3m + 1) yang memotong sumbu-x di dua titik positif berbeda.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Ilustrasi f(x) = x² - (m + 3)x + (3m + 1)",
+        "x_range": [
+          -1,
+          6
+        ],
+        "y_range": [
+          -3,
+          5
+        ],
+        "parabolas": [
+          {
+            "a": 1,
+            "b": -5,
+            "c": 4,
+            "color": "#38BDF8",
+            "show_vertex": true,
+            "show_axis_of_symmetry": true
+          }
+        ],
+        "points": [
+          {
+            "x": 1,
+            "y": 0,
+            "label": "x₁ > 0"
+          },
+          {
+            "x": 4,
+            "y": 0,
+            "label": "x₂ > 0"
+          },
+          {
+            "x": 0,
+            "y": 4,
+            "label": "f(0) = 3m + 1"
+          }
+        ]
+      }
+    }
+  },
+  "total_slots": 21
+}

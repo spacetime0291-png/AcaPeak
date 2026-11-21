@@ -1,0 +1,127 @@
+{
+  "kode_subbab": "pbm-01-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Kaidah Penulisan Kata Serapan dan Kata Baku (EYD V)",
+    "subjudul_ringkas": "Panduan sistematis aturan penyerapan istilah asing, peluluhan imbuhan, dan ejaan kata baku sesuai pedoman EYD V.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "1. Penyesuaian Vokal & Konsonan (Jebakan Fonologis)",
+        "ringkasan_kelompok": "Aturan mempertahankan huruf asli kata serapan agar tidak terkecoh pelafalan lisan.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Pertahanan Vokal Asli /i/ dan /a/ pada Kata Baku",
+            "penjelasan_singkat": "Kata serapan mempertahankan huruf vokal etimologisnya dan tidak mengikuti perubahan bunyi vokal akibat pelafalan lisan sehari-hari.",
+            "contoh_penerapan": "Keputusan investasi tersebut memiliki **risiko** finansial tinggi sehingga **hakikat** analisis mendalam sangat diperlukan sebelum memberikan **nasihat** bisnis.",
+            "jebakan_atau_catatan": "Bentuk salah yang sering mengecoh di UTBK: *resiko*, *hakekat*, *nasehat*, *sistim* (baku: *sistem*), dan *apotik* (baku: *apotek*)."
+          },
+          {
+            "judul_poin": "Penulisan Vokal /a/ dan /u/ Tanpa Sisipan Huruf",
+            "penjelasan_singkat": "Penulisan baku mempertahankan vokal tunggal tanpa mengubahnya menjadi vokal lain atau menyisipkan huruf *w* di tengah kata.",
+            "contoh_penerapan": "Mahasiswa kedokteran wajib mengikuti **praktik** klinis dan menyerahkan **kuitansi** pembayaran administrasi laboratorium sebelum ujian akhir dimulai.",
+            "jebakan_atau_catatan": "Bentuk salah umum: *praktek*, *kwitansi*, *sekedar* (baku: *sekadar*), *lobang* (baku: *lubang*), dan *kaedah* (baku: *kaidah*)."
+          },
+          {
+            "judul_poin": "Keutuhan Vokal Rangkap dan Gugus Konsonan Akhir",
+            "penjelasan_singkat": "Vokal rangkap seperti *ie* serta gugus konsonan akhir seperti *ks* ditulis utuh sesuai bentuk asal kata serapan.",
+            "contoh_penerapan": "Perusahaan multinasional itu merombak **hierarki** manajerial demi mendukung jenjang **karier** karyawan secara lebih transparan dan **kompleks**.",
+            "jebakan_atau_catatan": "Bentuk salah: *hirarki*, *karir*, *komplek*, serta *standarisasi* (bentuk baku adalah *standardisasi* karena berasal dari kata dasar *standard*)."
+          },
+          {
+            "judul_poin": "Konsistensi Konsonan Serapan /f/, /z/, dan /s/",
+            "penjelasan_singkat": "Fonem serapan *f*, *z*, dan *s* dipertahankan secara konsisten dan tidak dileburkan menjadi bunyi *p* atau *j*.",
+            "contoh_penerapan": "Dokter menegakkan **diagnosis** awal secara **aktif** berdasarkan **asas** kehati-hatian medis setelah pasien mendapatkan **izin** rawat inap.",
+            "jebakan_atau_catatan": "Bentuk salah: *diagnosa*, *aktip*, *azas*, *ijin*. Pengecualian kata terserap lama: *napas* (bukan *nafas*) dan *paham* (bukan *faham*)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "2. Kaidah Penyerapan Afiks dan Akhiran Asing (EYD V)",
+        "ringkasan_kelompok": "Pola konversi akhiran kata serapan bahasa Inggris dan Belanda ke bahasa Indonesia.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Konversi Akhiran -ic $\\rightarrow$ -ik dan -ical $\\rightarrow$ -is",
+            "penjelasan_singkat": "Akhiran *-ic* diserap menjadi *-ik*, sedangkan akhiran *-ical* yang berfungsi sebagai kata sifat diserap menjadi *-is*.",
+            "contoh_penerapan": "Pendekatan **logis** sangat dibutuhkan untuk memecahkan masalah **logistik** distribusi pangan ke wilayah terpencil selama musim kemarau.",
+            "jebakan_atau_catatan": "Bentuk salah: *logistis*, *analisa* (baku: *analisis*), *hipotesa* (baku: *hipotesis*), dan *sintesa* (baku: *sintesis*)."
+          },
+          {
+            "judul_poin": "Konversi Akhiran -ity $\\rightarrow$ -itas",
+            "penjelasan_singkat": "Akhiran pembentuk nomina abstrak *-ity* diserap menjadi *-itas*, dengan mengembalikan huruf *f* pada kata dasar menjadi *v*.",
+            "contoh_penerapan": "Peningkatan **produktivitas** kerja karyawan berbanding lurus dengan **kualitas** serta **aktivitas** pelatihan rutin yang diselenggarakan perusahaan.",
+            "jebakan_atau_catatan": "Bentuk salah: *produktifitas*, *aktifitas*, *kwalitas*, *kreatifitas* (baku: *kreativitas*), dan *sportifitas* (baku: *sportivitas*)."
+          },
+          {
+            "judul_poin": "Konversi Akhiran -ization $\\rightarrow$ -isasi",
+            "penjelasan_singkat": "Akhiran *-ization* diserap menjadi *-isasi* apabila diserap secara utuh bersama kata dasarnya dari bahasa asing.",
+            "contoh_penerapan": "Program **modernisasi** alat pertanian mempercepat proses **komersialisasi** hasil panen petani lokal menuju pasar ekspor internasional.",
+            "jebakan_atau_catatan": "Jangan melekatkan *-isasi* pada kata dasar asli Indonesia seperti *turinisasi*, *lelenisasi*, atau *swastanisasi* (baku: *penswastaan*)."
+          },
+          {
+            "judul_poin": "Konversi Akhiran -ive $\\rightarrow$ -if",
+            "penjelasan_singkat": "Akhiran pembentuk adjektiva *-ive* selalu diserap menjadi *-if* menggunakan huruf *f* di akhir kata.",
+            "contoh_penerapan": "Kebijakan fiskal yang **inovatif** dan **objektif** mampu mendorong pertumbuhan sektor usaha mikro menjadi lebih **produktif**.",
+            "jebakan_atau_catatan": "Bentuk salah: *inovativ*, *inopatip*, *obyektif* (baku: *objektif*), dan *subyektif* (baku: *subjektif*)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "3. Morfologi Verba & Peluluhan Konsonan K-T-S-P",
+        "ringkasan_kelompok": "Aturan peluluhan huruf awal kata dasar saat mendapat imbuhan meng- dan peng-.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Peluluhan Konsonan Tunggal K, T, S, P",
+            "penjelasan_singkat": "Awalan *meN-* dan *peN-* meluluhkan huruf pertama kata dasar berupa konsonan tunggal **k, t, s, p** yang diikuti vokal.",
+            "contoh_penerapan": "Kebijakan moneter baru tersebut **memengaruhi** daya beli masyarakat dan **memesona** para investor asing untuk menanamkan modal.",
+            "jebakan_atau_catatan": "Bentuk salah: *mempengaruhi*, *mempesona*, *menterjemahkan* (baku: *menerjemahkan*), *mensukseskan* (baku: *menyukseskan*), dan *mengkonsumsi* (baku: *mengonsumsi*)."
+          },
+          {
+            "judul_poin": "Pengecualian Peluluhan pada Gugus Konsonan (Kluster)",
+            "penjelasan_singkat": "Konsonan **k, t, s, p** di awal kata dasar tidak luluh jika diikuti konsonan kedua atau sudah berimbuhan.",
+            "contoh_penerapan": "Pemerintah terus **memproduksi** vaksin mandiri dan **mengkritik** praktik monopoli distribusi obat-obatan yang merugikan masyarakat luas.",
+            "jebakan_atau_catatan": "Bentuk salah: *memroduksi*, *mengritik*, dan *memperhatikan* (baku: *memerhatikan*, karena kata dasar *hati* + imbuhan *per-*, bukan kluster)."
+          },
+          {
+            "judul_poin": "Pasangan Kata Mirip: Mengubah vs. Merubah",
+            "penjelasan_singkat": "Kata dasar *ubah* berawalan *meng-* menjadi *mengubah*, sedangkan *merubah* bermakna menjadi seperti hewan rubah.",
+            "contoh_penerapan": "Inovasi teknologi digital secara fundamental telah **mengubah** pola transaksi perbankan konvensional menjadi layanan berbasis aplikasi seluler.",
+            "jebakan_atau_catatan": "Bentuk salah: *merubah*, *perobahan* (baku: *perubahan*), serta *menyontek* (baku: *mencontek*, karena berasal dari kata dasar *contek*)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "4. Ejaan Istilah Teknis Sains, Ekonomi, dan Teknologi",
+        "ringkasan_kelompok": "Penyesuaian gabungan konsonan dan istilah bidang keilmuan sesuai pedoman EYD V.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penyesuaian Gugus Konsonan Istilah Sains dan Medis",
+            "penjelasan_singkat": "Gabungan konsonan asing pada istilah sains disesuaikan: *ph* menjadi *f*, *th* menjadi *t*, dan *ch* menjadi *k*.",
+            "contoh_penerapan": "Proses **fotosintesis** pada tumbuhan hijau membutuhkan **klorofil** dan cahaya matahari untuk menghasilkan oksigen bagi ekosistem **atmosfer**.",
+            "jebakan_atau_catatan": "Bentuk salah: *photosintesis*, *khlorofil*, *atmosfir*, *metoda* (baku: *metode*), dan *analisa* (baku: *analisis*)."
+          },
+          {
+            "judul_poin": "Penulisan Istilah Ekonomi dan Keuangan Terserap",
+            "penjelasan_singkat": "Istilah ekonomi yang telah diserap ke dalam KBBI VI ditulis tegak mengikuti aturan bunyi dan huruf Indonesia.",
+            "contoh_penerapan": "Fluktuasi nilai tukar memicu **inflasi** ringan sehingga bank sentral menyesuaikan suku bunga **kredit** dan neraca **ekspor**.",
+            "jebakan_atau_catatan": "Bentuk salah: *eksport*, *import*, *debet* (baku: *debit*), *managemen* (baku: *manajemen*), dan *akuntan* ditulis *akountan*."
+          },
+          {
+            "judul_poin": "Penyesuaian Ejaan Istilah Teknologi dan Komputasi",
+            "penjelasan_singkat": "Istilah teknologi dan fisika diserap dengan menghilangkan huruf *h* setelah *k* serta menyesuaikan gugus *qu* menjadi *ku*.",
+            "contoh_penerapan": "Perkembangan **teknologi** jaringan nirkabel memaksimalkan penggunaan **frekuensi** radio tinggi untuk menjaga keamanan sistem **siber** nasional.",
+            "jebakan_atau_catatan": "Bentuk salah: *tekhnologi*, *frekwensi*, *cyber* (dicetak tegak tanpa diserap), dan *canggih* ditulis *changih*."
+          }
+        ]
+      }
+    ]
+  }
+}

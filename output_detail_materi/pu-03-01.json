@@ -1,0 +1,121 @@
+{
+  "kode_subbab": "pu-03-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Pola Bilangan, Rumus Barisan, dan Trik Cepat UTBK",
+    "subjudul_ringkas": "Katalog lengkap sifat, rumus, variasi pola bilangan, contoh hitung mini, serta trik cepat eliminasi UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Barisan Selisih & Larik Ganda (Paling Sering Muncul)",
+        "ringkasan_kelompok": "Pola dasar selisih konstan, bertingkat, rasio tetap, dan barisan selang-seling.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Barisan Aritmetika Tingkat Satu",
+            "penjelasan_singkat": "Selisih antarsuku berdekatan konstan ($b = U_n - U_{n-1}$); berlaku rumus umum $U_n = a + (n-1)b$ untuk bilangan asli $n$.",
+            "contoh_penerapan": "Barisan $7, 11, 15, 19, \\dots$ memiliki beda tetap **$+4$**, sehingga suku ke-6 adalah $19 + 4 + 4 = \\mathbf{27}$.",
+            "jebakan_atau_catatan": "Hindari rumus $U_n$ jika suku ditanya berjarak dekat; cukup tambah manual di bawah 15 detik."
+          },
+          {
+            "judul_poin": "Barisan Bertingkat Dua (Selisih Tingkat Dua Tetap)",
+            "penjelasan_singkat": "Selisih tingkat pertama membentuk barisan aritmetika dengan beda tingkat kedua ($c$) konstan; dirumuskan $U_n = an^2 + bn + c$.",
+            "contoh_penerapan": "Pada $2, 5, 10, 17, \\dots$, selisih tingkat satu $+3, +5, +7$ berselisih tetap **$+2$**, maka suku berikutnya $17 + 9 = \\mathbf{26}$.",
+            "jebakan_atau_catatan": "Peserta sering mengira selisih $+3, +5, +7$ sebagai bilangan prima sehingga keliru menambah $+11$ bukan $+9$."
+          },
+          {
+            "judul_poin": "Barisan Geometri Rasio Tetap",
+            "penjelasan_singkat": "Perbandingan antarsuku berurutan konstan ($r = \\frac{U_n}{U_{n-1}}$); berlaku rumus $U_n = a \\cdot r^{n-1}$ dengan syarat rasio $r \\neq 0$.",
+            "contoh_penerapan": "Barisan $81, 27, 9, 3, \\dots$ memiliki rasio pengali **$\\times \\frac{1}{3}$**, sehingga dua suku berikutnya adalah **$\\mathbf{1}$ dan $\\mathbf{\\frac{1}{3}}$**.",
+            "jebakan_atau_catatan": "Waspadai rasio negatif (tanda positif-negatif bergantian) dan rasio pecahan mengecil yang sering mengecoh saat mencari suku awal."
+          },
+          {
+            "judul_poin": "Pola Larik Ganda (Selang-Seling Dua Sub-Barisan)",
+            "penjelasan_singkat": "Satu barisan memuat dua pola independen bergantian: sub-barisan suku ganjil ($U_1, U_3, U_5$) dan genap ($U_2, U_4, U_6$).",
+            "contoh_penerapan": "Pada $4, 20, 7, 17, 10, 14, \\dots$, larik ganjil bertambah **$+3$** dan genap berkurang **$-3$**, menghasilkan **$\\mathbf{13}$ dan $\\mathbf{11}$**.",
+            "jebakan_atau_catatan": "Ciri utama larik ganda adalah grafik angka naik-turun tajam; selalu pisahkan suku ganjil dan genap terlebih dahulu."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Operasi Campuran & Rekursif (Fibonacci)",
+        "ringkasan_kelompok": "Kombinasi operasi aritmetika berulang, penjumlahan rekursif, dan pola berpasangan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Siklus Operasi Campuran Berulang",
+            "penjelasan_singkat": "Aturan perubahan menggabungkan dua atau tiga operasi aritmetika berurutan (misal $\\times a$, lalu $+b$, lalu $-c$) yang berulang periodik.",
+            "contoh_penerapan": "Pola $3, 6, 8, 16, 18, \\dots$ menerapkan siklus **$\\times 2$, lalu $+2$** bergantian, sehingga suku keenam adalah $18 \\times 2 = \\mathbf{36}$.",
+            "jebakan_atau_catatan": "Uji minimal dua siklus penuh (4–5 suku) untuk memastikan urutan operasi tidak tertukar antara penjumlahan atau perkalian dulu."
+          },
+          {
+            "judul_poin": "Barisan Fibonacci Standar dan Modifikasi",
+            "penjelasan_singkat": "Suku ke-$n$ dibentuk dari penjumlahan dua atau tiga suku sebelumnya ($U_n = U_{n-1} + U_{n-2}$ atau ditambah konstanta $k$).",
+            "contoh_penerapan": "Pada $2, 3, 5, 8, 13, \\dots$, setiap suku adalah **jumlah dua suku sebelumnya**, maka suku berikutnya $8 + 13 = \\mathbf{21}$.",
+            "jebakan_atau_catatan": "Jika terdapat dua angka kembar berurutan di awal (misal $4, 4, 8, 12$), hampir pasti menggunakan pola Fibonacci."
+          },
+          {
+            "judul_poin": "Pola Berpasangan (Blok Dua Suku)",
+            "penjelasan_singkat": "Suku dikelompokkan per dua angka berdekatan yang terhubung oleh satu operasi spesifik (perkalian, pembagian, atau selisih) di tiap blok.",
+            "contoh_penerapan": "Pada $(2, 6), (5, 15), (9, \\dots)$, tiap pasangan memiliki hubungan **$\\times 3$**, sehingga angka pelengkap pasangan ketiga adalah $9 \\times 3 = \\mathbf{27}$.",
+            "jebakan_atau_catatan": "Jika barisan berjumlah genap (6 atau 8 suku) dan selisih antarblok acak, uji hubungan internal per pasangan."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Pecahan, Desimal, & Eksponen",
+        "ringkasan_kelompok": "Variasi barisan bilangan non-bulat serta pola pangkat kuadrat dan kubik.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pola Pecahan Terpisah (Pembilang dan Penyebut)",
+            "penjelasan_singkat": "Pembilang dan penyebut masing-masing membentuk barisan independen yang wajib dianalisis terpisah sebelum disederhanakan.",
+            "contoh_penerapan": "Pada $\\frac{1}{2}, \\frac{3}{5}, \\frac{5}{8}, \\frac{7}{11}, \\dots$, pembilang bertambah **$+2$** dan penyebut **$+3$**, menghasilkan suku kelima **$\\mathbf{\\frac{9}{14}}$**.",
+            "jebakan_atau_catatan": "Ubah bentuk pecahan yang sudah disederhanakan (misal $\\frac{1}{2}$ menjadi $\\frac{2}{4}$) agar pola pembilang dan penyebut terlihat konsisten."
+          },
+          {
+            "judul_poin": "Pola Desimal dan Persentase Bertahap",
+            "penjelasan_singkat": "Perubahan konstan atau kelipatan dalam bentuk desimal maupun persen; konversikan sementara ke bilangan bulat agar lebih cepat dihitung.",
+            "contoh_penerapan": "Pada $0,25; 0,5; 1; 2; \\dots$, setiap suku dikalikan **$2$** (naik **$100\\%$**), sehingga suku kelima adalah $2 \\times 2 = \\mathbf{4}$.",
+            "jebakan_atau_catatan": "Samakan jumlah digit di belakang koma (misal $0,5$ ditulis $0,50$) agar tidak keliru membaca selisih antarsuku desimal."
+          },
+          {
+            "judul_poin": "Pola Bilangan Kuadrat dan Kubik Modifikasi",
+            "penjelasan_singkat": "Suku barisan mengikuti bentuk pangkat $n^2$, $n^3$, atau $a^n$ yang sering ditambah maupun dikurangi konstanta kecil ($n^2 \\pm k$).",
+            "contoh_penerapan": "Barisan $0, 3, 8, 15, 24, \\dots$ mengikuti pola **$n^2 - 1$**, sehingga suku keenam adalah $6^2 - 1 = \\mathbf{35}$.",
+            "jebakan_atau_catatan": "Hafalkan bilangan kuadrat ($1$–$20$) dan kubik ($1$–$10$) agar langsung mengenali angka dekat seperti $26$ ($3^3-1$) atau $65$ ($4^3+1$)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Aplikasi Kontekstual & Strategi Eliminasi",
+        "ringkasan_kelompok": "Penerapan soal cerita periode ke-n dan teknik eliminasi opsi cepat.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pemodelan Pertumbuhan Linier (Produksi dan Tabungan)",
+            "penjelasan_singkat": "Kenaikan jumlah tetap tiap periode waktu dimodelkan sebagai barisan aritmetika $U_n = U_1 + (n-1)b$ untuk $n \\ge 1$.",
+            "contoh_penerapan": "Produksi awal $120$ unit naik **$15$ unit/bulan**, maka produksi bulan ke-5 adalah $120 + 4(15) = \\mathbf{180\\text{ unit}}$.",
+            "jebakan_atau_catatan": "Bedakan frasa 'setelah $n$ bulan' dengan 'pada bulan ke-$n$'; setelah 4 bulan berarti menghitung suku ke-5 ($U_5$)."
+          },
+          {
+            "judul_poin": "Pemodelan Pertumbuhan Eksponensial (Populasi dan Peluruhan)",
+            "penjelasan_singkat": "Pertumbuhan berlipat ganda tiap interval waktu $T$ mengikuti rumus $N_t = N_0 \\cdot r^{\\frac{t}{T}}$ dengan $r$ sebagai rasio kelipatan.",
+            "contoh_penerapan": "Bakteri awal $50$ membelah **dua kali lipat** tiap $20$ menit; setelah $1$ jam ($3$ periode) jumlahnya $50 \\times 2^3 = \\mathbf{400}$.",
+            "jebakan_atau_catatan": "Jangan mengalikan jumlah awal dengan banyaknya periode secara linier ($50 \\times 3$); gunakan perpangkatan rasio sesuai jumlah periode."
+          },
+          {
+            "judul_poin": "Eliminasi Opsi Berbasis Digit Satuan dan Paritas",
+            "penjelasan_singkat": "Menentukan sifat ganjil-genap (paritas) atau angka satuan operasi terakhir untuk mengeliminasi opsi salah tanpa menghitung angka penuh.",
+            "contoh_penerapan": "Jika suku terakhir $137$ harus dikali **$4$** lalu ditambah **$3$**, digit satuannya pasti $(7 \\times 4) + 3 \\rightarrow \\mathbf{1}$.",
+            "jebakan_atau_catatan": "Gunakan trik digit satuan hanya jika opsi jawaban memiliki angka akhir berbeda; jika kembar, cek dua digit terakhir."
+          }
+        ]
+      }
+    ]
+  }
+}

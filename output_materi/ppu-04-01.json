@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam paragraf yang diawali data rincian survei lalu diakhiri pernyataan umum yang diawali konjungsi 'dengan demikian', di manakah letak gagasan utamanya?",
@@ -23,7 +23,131 @@
       "Memilih pernyataan yang terlalu sempit (hanya mewakili satu paragraf) atau terlalu luas (melampaui cakupan teks) saat merangkum topik utama dua paragraf."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Sinyal dan Pola Ide Pokok Wacana UTBK",
+      "subjudul_ringkas": "Panduan taktis mengenali penanda kalimat utama, rincian penjelas, topik lintas paragraf, dan transisi wacana.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Penanda Letak Gagasan Utama Paragraf",
+          "ringkasan_kelompok": "Mengidentifikasi posisi inti paragraf melalui struktur kalimat umum dan penanda simpulan.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Pola Deduktif (Pernyataan Umum di Awal)",
+              "penjelasan_singkat": "Kalimat pertama memuat pernyataan payung yang bersifat umum dan langsung dirinci oleh kalimat-kalimat berikutnya.",
+              "contoh_penerapan": "**Perubahan iklim mengancam ketahanan pangan nasional.** Tahun lalu, gagal panen padi meningkat 15 persen akibat kekeringan ekstrem.",
+              "jebakan_atau_catatan": "Jebakan UTBK sering menjadikan rincian data pada kalimat kedua sebagai opsi jawaban ide pokok.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pola Induktif (Penanda Simpulan di Akhir)",
+              "penjelasan_singkat": "Kalimat terakhir diawali konjungsi antarkalimat penyimpul yang merangkum seluruh fakta khusus di bagian awal.",
+              "contoh_penerapan": "Suhu laut naik, terumbu karang memutih, dan populasi ikan menurun. **Dengan demikian, ekosistem pesisir mengalami degradasi serius.**",
+              "jebakan_atau_catatan": "Waspadai kata sinyal **jadi**, **oleh karena itu**, **dengan demikian**, dan **pada akhirnya** di kalimat terakhir.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pola Campuran (Penegasan Ulang di Akhir)",
+              "penjelasan_singkat": "Gagasan di kalimat pertama diulang kembali pada kalimat terakhir menggunakan variasi diksi atau struktur berbeda.",
+              "contoh_penerapan": "**Literasi digital wajib dikuasai pelajar.** Tanpa kemampuan memilah informasi, siswa rentan terpapar hoaks. **Penguasaan kecakapan digital menjadi keharusan.**",
+              "jebakan_atau_catatan": "Jangan memilih opsi yang hanya mengambil satu sisi; gabungkan makna inti kalimat awal dan akhir.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pola Ineratif (Gagasan Utama di Tengah)",
+              "penjelasan_singkat": "Kalimat awal berupa pengantar khusus, lalu kalimat tengah memuat inti umum sebelum dijelaskan kembali.",
+              "contoh_penerapan": "Banyak warga mengeluhkan kemacetan pagi hari. **Integrasi transportasi publik menjadi solusi utama kepadatan kota.** Bus listrik mulai ditambah.",
+              "jebakan_atau_catatan": "Kalimat pertama biasanya hanya berisi latar belakang ringan atau fenomena pembuka, bukan pernyataan umum.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sinyal Pemisah Kalimat Penjelas Spesifik",
+          "ringkasan_kelompok": "Menyaring informasi rinci agar tidak tertukar dengan gagasan utama paragraf.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Penanda Contoh dan Ilustrasi Konkret",
+              "penjelasan_singkat": "Kalimat yang mengandung frasa percontohan hanya berfungsi memperjelas konsep dan tidak pernah menjadi kalimat utama.",
+              "contoh_penerapan": "Transportasi ramah lingkungan terus dikembangkan, **misalnya** bus listrik, kereta ringan, dan sepeda sewa berbasis aplikasi.",
+              "jebakan_atau_catatan": "Coret opsi jawaban yang memuat contoh spesifik setelah kata **seperti**, **misalnya**, **contohnya**, atau **antara lain**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Data Angka dan Kutipan Ahli",
+              "penjelasan_singkat": "Rincian persentase, tahun, nama lembaga, atau kutipan tokoh merupakan bukti pendukung bagi argumen utama.",
+              "contoh_penerapan": "**Menurut laporan BPS tahun 2025**, tingkat pengangguran terbuka turun sebesar 0,4 persen dibandingkan periode sebelumnya.",
+              "jebakan_atau_catatan": "Opsi ide pokok yang benar jarang mencantumkan angka rinci, kecuali seluruh paragraf memang membahas statistik tersebut.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Rincian Sebab atau Proses",
+              "penjelasan_singkat": "Kalimat yang menjawab pertanyaan 'mengapa' atau 'bagaimana' atas kalimat sebelumnya berstatus sebagai gagasan pendukung.",
+              "contoh_penerapan": "Kualitas udara memburuk. **Hal ini disebabkan oleh** tingginya emisi kendaraan bermotor serta pembakaran sampah terbuka.",
+              "jebakan_atau_catatan": "Frasa **hal ini**, **kondisi tersebut**, atau **fenomena itu** merujuk pada kalimat sebelumnya sebagai induk gagasan.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Penanda Topik Utama Lintas Dua Paragraf",
+          "ringkasan_kelompok": "Menemukan irisan gagasan yang merangkum dua paragraf berurutan secara utuh.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Repetisi Kata Kunci di Kedua Paragraf",
+              "penjelasan_singkat": "Topik utama wajib memuat subjek atau kata kunci yang muncul berulang pada kedua paragraf sekaligus.",
+              "contoh_penerapan": "Paragraf 1 membahas manfaat **mikroalga** untuk pangan; Paragraf 2 mengulas potensi **mikroalga** sebagai bahan bakar hayati.",
+              "jebakan_atau_catatan": "Opsi pengecoh biasanya terlalu sempit karena hanya mewakili isi salah satu paragraf saja.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pola Hubungan Masalah dan Solusi",
+              "penjelasan_singkat": "Paragraf pertama memaparkan dampak negatif suatu fenomena, sedangkan paragraf kedua menyajikan langkah penanganannya.",
+              "contoh_penerapan": "Paragraf 1: **Krisis air bersih** melanda kota pesisir. Paragraf 2: **Teknologi desalinasi** diterapkan untuk mengatasi krisis tersebut.",
+              "jebakan_atau_catatan": "Topik utamanya mencakup kedua kutub tersebut, misalnya 'penanganan krisis air bersih melalui teknologi desalinasi'.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sinyal Prediksi Paragraf Sebelum dan Sesudah",
+          "ringkasan_kelompok": "Membaca kata transisi batas paragraf untuk menebak arah kelanjutan wacana.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Konjungsi Pertentangan Awal Paragraf (Prediksi Sebelumnya)",
+              "penjelasan_singkat": "Konjungsi pertentangan di kalimat pertama menandakan paragraf sebelumnya membahas kondisi atau argumen yang berlawanan.",
+              "contoh_penerapan": "**Namun**, penerapan energi surya di wilayah beriklim tropis masih terkendala tingginya biaya penyimpanan baterai.",
+              "jebakan_atau_catatan": "Sinyal **namun** atau **akan tetapi** menunjukkan paragraf sebelumnya pasti membahas keunggulan atau potensi energi surya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Frasa Penambahan di Awal (Prediksi Sebelumnya)",
+              "penjelasan_singkat": "Penanda penambahan di awal paragraf mengisyaratkan paragraf sebelumnya membahas faktor atau aspek lain yang setara.",
+              "contoh_penerapan": "**Selain faktor genetik**, pola makan tinggi gula turut memicu meningkatnya risiko diabetes pada usia muda.",
+              "jebakan_atau_catatan": "Frasa **selain...** atau **di samping itu** membuktikan paragraf sebelumnya membahas peran faktor genetik secara khusus.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pengenalan Istilah Baru di Akhir (Prediksi Berikutnya)",
+              "penjelasan_singkat": "Konsep atau solusi baru yang muncul di kalimat penutup tanpa penjelasan rinci akan dibahas pada paragraf berikutnya.",
+              "contoh_penerapan": "Upaya konservasi hutan konvensional mulai menemui batas, sehingga para peneliti kini beralih pada metode **rewilding**.",
+              "jebakan_atau_catatan": "Jangan memilih topik yang sudah selesai dijelaskan di tengah paragraf; fokuslah pada istilah menggantung di akhir.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

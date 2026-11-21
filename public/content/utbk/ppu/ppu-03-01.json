@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 6,
+    "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam kalimat 'Di kawasan pesisir utara terjadi abrasi cukup parah', apakah frasa 'Di kawasan pesisir utara' merupakan subjek kalimat tersebut?",
@@ -23,7 +23,117 @@
       "Menyamakan Pelengkap di belakang predikat berimbuhan 'ber-' atau 'merupakan' sebagai Objek, padahal unsur tersebut tidak dapat dipindahkan menjadi Subjek kalimat pasif."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Kaidah Lengkap Pola Dasar Kalimat (S-P-O-K-Pel) EYD V",
+      "subjudul_ringkas": "Panduan sistematis identifikasi jabatan fungsi kata, pembedaan Objek-Pelengkap, pola inversi, hingga penyederhanaan kalimat kompleks.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Fondasi Inti Kalimat & Pola Inversi",
+          "ringkasan_kelompok": "Aturan wajib unsur inti kalimat, posisi inversi, dan identifikasi kesetaraan pola dasar.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Syarat Wajib Subjek Bebas Preposisi",
+              "penjelasan_singkat": "Subjek mengisi fungsi pelaku atau topik utama dan tidak boleh diawali kata depan seperti di, ke, dari, bagi, atau dalam.",
+              "contoh_penerapan": "**Penelitian terbaru** [S] membuktikan [P] efektivitas vaksin tersebut [O] secara klinis [K].",
+              "jebakan_atau_catatan": "Salah: *Dalam penelitian terbaru membuktikan efektivitas vaksin.* Preposisi *dalam* mengubah Subjek menjadi Keterangan sehingga kalimat kehilangan Subjek.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Predikat Berupa Frasa Nonverba",
+              "penjelasan_singkat": "Predikat tidak harus berupa verba; nomina, adjektiva, numeralia, maupun frasa preposisional sah menduduki fungsi Predikat setelah Subjek.",
+              "contoh_penerapan": "Ayahnya [S] **seorang dosen teknik** [P] di kampus negeri [K].",
+              "jebakan_atau_catatan": "Jebakan: Menganggap kalimat tanpa kata kerja tidak memiliki Predikat, padahal nomina atau adjektiva setelah Subjek sah menjadi Predikat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pola Kalimat Inversi (Predikat-Subjek)",
+              "penjelasan_singkat": "Pola terbalik menempatkan Predikat di awal kalimat untuk penekanan makna, sering ditandai partikel *-lah* atau verba eksistensial.",
+              "contoh_penerapan": "**Terdapat** [P] **tiga kendala utama** [S] dalam distribusi logistik [K].",
+              "jebakan_atau_catatan": "Jebakan: Mengira frasa setelah kata *terdapat* atau *ada* adalah Objek, padahal frasa tersebut merupakan Subjek berpola inversi.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kesetaraan Pola dan Pergeseran Keterangan",
+              "penjelasan_singkat": "Dua kalimat berpola identik jika urutan seluruh fungsinya sama; perpindahan posisi Keterangan mengubah urutan rumus pola dasar.",
+              "contoh_penerapan": "**Kemarin** [K] **tim peneliti** [S] **menemukan** [P] **spesies baru** [O] (berpola K-S-P-O).",
+              "jebakan_atau_catatan": "Jebakan: Pola *K-S-P-O* tidak identik dengan *S-P-O-K* meskipun unsurnya sama; perhatikan letak Keterangan di awal atau akhir.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pembedaan Objek (O) dan Pelengkap (Pel)",
+          "ringkasan_kelompok": "Kriteria teknis membedakan Objek dan Pelengkap berdasarkan imbuhan verba serta uji pasif.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Objek Setelah Verba Aktif Transitif",
+              "penjelasan_singkat": "Objek hadir langsung di belakang verba transitif aktif dan dapat berpindah menjadi Subjek apabila kalimat diubah menjadi pasif.",
+              "contoh_penerapan": "Pemerintah [S] meresmikan [P] **jembatan layang baru** [O] (Pasif: *Jembatan layang baru diresmikan pemerintah*).",
+              "jebakan_atau_catatan": "Salah: *Rapat itu membahas tentang anggaran.* Verba transitif tidak boleh disisipi preposisi; bentuk bakunya *membahas anggaran*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pelengkap Setelah Verba Berimbuhan ber-, ter-, ke-an",
+              "penjelasan_singkat": "Frasa di belakang verba berimbuhan *ber-*, *ter-*, atau *ke-an* berfungsi sebagai Pelengkap karena kalimatnya tidak dapat dipasifkan.",
+              "contoh_penerapan": "Negara Indonesia [S] berlandaskan [P] **Pancasila dan UUD 1945** [Pel].",
+              "jebakan_atau_catatan": "Jebakan: Menganggap *Pancasila* adalah Objek; bentuk pasif **Pancasila diberlandaskan* tidak gramatikal sehingga fungsinya wajib Pelengkap.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pelengkap Setelah Verba Kopula",
+              "penjelasan_singkat": "Unsur di sebelah kanan verba penghubung seperti *adalah*, *merupakan*, dan *menjadi* selalu menduduki fungsi Pelengkap, bukan Objek.",
+              "contoh_penerapan": "Pendidikan karakter [S] merupakan [P] **fondasi kemajuan bangsa** [Pel].",
+              "jebakan_atau_catatan": "Jebakan: Kalimat berpredikat *adalah* atau *merupakan* tidak dapat dipasifkan, sehingga nomina setelahnya pasti berjabatan Pelengkap.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pola Kalimat Dwitransitif (S-P-O-Pel)",
+              "penjelasan_singkat": "Verba berimbuhan *meN-kan* atau *meN-i* tertentu mengikat dua nomina berurutan: nomina pertama sebagai Objek, nomina kedua sebagai Pelengkap.",
+              "contoh_penerapan": "Ibu [S] membelikan [P] **adik** [O] **sepatu sekolah baru** [Pel].",
+              "jebakan_atau_catatan": "Jebakan: Saat dipasifkan, hanya Objek (*adik*) yang menjadi Subjek (*Adik dibelikan sepatu oleh ibu*), sedangkan Pelengkap tetap.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Perluasan Fungsi & Penyederhanaan Kalimat Kompleks",
+          "ringkasan_kelompok": "Analisis fungsi klausa bawahan dan teknik mereduksi kalimat panjang menjadi inti kalimat.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Anak Kalimat Pengganti Subjek atau Objek",
+              "penjelasan_singkat": "Klausa berkonjungsi *bahwa* dapat menduduki jabatan tunggal sebagai Subjek atau Objek dalam struktur kalimat majemuk bertingkat.",
+              "contoh_penerapan": "Hasil survei [S] membuktikan [P] **bahwa literasi digital meningkat** [O].",
+              "jebakan_atau_catatan": "Salah: *Bahwa literasi meningkat membuktikan keberhasilan.* Klausa *bahwa* di awal lebih baku menjadi Objek melalui pemasifan (*Dibuktikan bahwa...*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Anak Kalimat Pengganti Keterangan",
+              "penjelasan_singkat": "Klausa yang diawali konjungsi subordinatif seperti *ketika*, *karena*, atau *meskipun* menduduki fungsi Keterangan dan bersifat manasuka.",
+              "contoh_penerapan": "**Meskipun hujan turun deras** [K], pertandingan [S] tetap berlangsung [P].",
+              "jebakan_atau_catatan": "Salah: *Meskipun hujan deras, tetapi pertandingan berlangsung.* Pemakaian konjungsi ganda merusak struktur induk kalimat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penyederhanaan Kalimat Panjang ke Inti Kalimat",
+              "penjelasan_singkat": "Inti kalimat diperoleh dengan membuang seluruh Keterangan dan perluasan atributif berkonjungsi *yang*, menyisakan unsur wajib S-P-(O/Pel).",
+              "contoh_penerapan": "**Ilmuwan** asal Jepang itu **menemukan metode baru** (Inti: **Ilmuwan menemukan metode baru** [S-P-O]).",
+              "jebakan_atau_catatan": "Jebakan: Mengambil verba di dalam klausa perluasan *yang* sebagai Predikat utama, padahal klausa tersebut hanya penjelas Subjek.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pk-03-02",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Rumus Kaidah Pencacahan, Permutasi, dan Kombinasi",
+    "subjudul_ringkas": "Katalog lengkap rumus pencacahan, aturan pengisian slot, permutasi khusus, kombinasi panitia, hingga geometri untuk UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Aturan Perkalian & Pengisian Slot (Filling Slots)",
+        "ringkasan_kelompok": "Menyusun bilangan atau kode dengan mengisi kotak mulai dari syarat terketat.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Penyusunan Angka Tanpa dan Dengan Pengulangan",
+            "penjelasan_singkat": "Isi slot terketat dahulu; kurangi opsi sebanyak $1$ tiap langkah jika tanpa pengulangan, tetap jika boleh berulang.",
+            "contoh_penerapan": "Dari angka $1,2,3,4,5$, bilangan $3$ digit beda adalah **$5 \\times 4 \\times 3 = 60$**, sedangkan boleh berulang **$5 \\times 5 \\times 5 = 125$**.",
+            "jebakan_atau_catatan": "Jangan mengurutkan pengisian dari depan jika syarat ganjil atau genap berada di digit satuan."
+          },
+          {
+            "judul_poin": "Bilangan Genap Memuat Angka Nol",
+            "penjelasan_singkat": "Pecah menjadi dua kasus terpisah: satuan diisi angka $0$ dan satuan diisi angka genap bukan $0$.",
+            "contoh_penerapan": "Bilangan $3$ digit genap beda dari $0,1,2,3$: akhir $0$ ada **$3 \\times 2 \\times 1 = 6$**, akhir $2$ ada **$2 \\times 2 \\times 1 = 4$**, total **$10$**.",
+            "jebakan_atau_catatan": "Menggabung angka $0$ dan genap lain dalam satu kotak menyebabkan salah hitung karena $0$ dilarang di posisi ratusan."
+          },
+          {
+            "judul_poin": "Bilangan Lebih Besar atau Kecil dari Batas $K$",
+            "penjelasan_singkat": "Kelompokkan berdasarkan digit terdepan yang pasti memenuhi batas, lalu tambahkan kasus digit terdepan sama dengan batas.",
+            "contoh_penerapan": "Bilangan $3$ digit beda dari $1,2,3,4$ lebih dari $230$: awalan $3,4$ ada **$2 \\times 3 \\times 2 = 12$**, awalan $2$ ada **$1 \\times 1 \\times 2 = 2$**, total **$14$**.",
+            "jebakan_atau_catatan": "Periksa apakah bilangan tepat sama dengan $K$ ikut dihitung; kata \"lebih dari\" berarti $K$ tidak termasuk."
+          },
+          {
+            "judul_poin": "Aturan Penjumlahan pada Kasus Saling Lepas",
+            "penjelasan_singkat": "Jumlahkan hasil tiap skenario jika pilihan rute atau kategori tidak dapat terjadi bersamaan ($n_1 + n_2$).",
+            "contoh_penerapan": "Memilih $1$ ketua dari $4$ siswa pria atau $3$ siswa wanita menghasilkan **$4 + 3 = 7$** kemungkinan pilihan.",
+            "jebakan_atau_catatan": "Bedakan kata \"dan\" (kejadian berurutan, dikali) dengan kata \"atau\" (pilihan alternatif saling lepas, dijumlah)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Variasi Permutasi Khusus",
+        "ringkasan_kelompok": "Pengaturan susunan terurut dengan batasan posisi berdampingan, unsur kembar, dan melingkar.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Permutasi dengan Syarat Objek Harus Berdampingan",
+            "penjelasan_singkat": "Ikat $k$ objek wajib berdampingan menjadi $1$ kesatuan blok, lalu kalikan permutasi luar dengan permutasi internal blok ($k!$).",
+            "contoh_penerapan": "Susunan $5$ orang dengan $2$ sahabat selalu berdampingan adalah **$4! \\times 2! = 24 \\times 2 = 48$** cara.",
+            "jebakan_atau_catatan": "Peserta sering lupa mengalikan dengan $k!$ untuk pertukaran posisi di dalam kelompok yang diikat tersebut."
+          },
+          {
+            "judul_poin": "Permutasi dengan Syarat Tidak Boleh Berdampingan",
+            "penjelasan_singkat": "Susun $m$ objek bebas dahulu ($m!$), lalu sisipkan $k$ objek terlarang ke dalam $m+1$ celah yang tersedia.",
+            "contoh_penerapan": "Susunan $3$ pria dan $2$ wanita tanpa wanita berdampingan: susun pria **$3!$**, pilih celah **$P(4,2)$**, hasil **$6 \\times 12 = 72$** cara.",
+            "jebakan_atau_catatan": "Rumus komplemen (total dikurangi berdampingan) hanya valid jika objek yang dilarang berdampingan berjumlah tepat $2$ orang."
+          },
+          {
+            "judul_poin": "Permutasi Memuat Beberapa Unsur Identik",
+            "penjelasan_singkat": "Bagi faktorial total unsur dengan hasil kali faktorial masing-masing unsur yang sama: $P = \\frac{n!}{k_1! \\cdot k_2! \\cdots}$.",
+            "contoh_penerapan": "Banyak susunan kata \"KATAK\" ($5$ huruf, $2$ K, $2$ A) adalah **$\\frac{5!}{2! \\cdot 2!} = \\frac{120}{4} = 30$** susunan.",
+            "jebakan_atau_catatan": "Berlaku juga untuk jalur terpendek pada grid peta dengan langkah kanan ($K$) dan atas ($A$) yang identik."
+          },
+          {
+            "judul_poin": "Permutasi Melingkar (Siklis) dan Kombinasi Blok",
+            "penjelasan_singkat": "Susunan melingkar $n$ objek adalah $(n-1)!$; jika $k$ objek berdampingan, ikat jadi $1$ sehingga menjadi $((n-k+1)-1)! \\times k!$.",
+            "contoh_penerapan": "Duduk melingkar $6$ orang dengan ketua-sekretaris berdampingan: anggap $5$ unsur siklis dikali internal, yaitu **$(5-1)! \\times 2! = 48$** cara.",
+            "jebakan_atau_catatan": "Pada siklis dengan pembatasan berdampingan, kurangi $1$ hanya pada jumlah blok luar, jangan pada faktorial internal blok."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kombinasi Terapan & Geometri",
+        "ringkasan_kelompok": "Pemilihan kelompok tanpa urutan untuk panitia bersyarat dan pembentukan bangun datar.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Kombinasi Pemilihan Tim dengan Syarat Kuota",
+            "penjelasan_singkat": "Pilih anggota tiap kategori secara terpisah menggunakan kombinasi, lalu kalikan hasilnya: $C(n_1, r_1) \\times C(n_2, r_2)$.",
+            "contoh_penerapan": "Memilih $2$ pria dari $5$ dan $2$ wanita dari $4$ menghasilkan **$C(5,2) \\times C(4,2) = 10 \\times 6 = 60$** tim.",
+            "jebakan_atau_catatan": "Jika panitia memiliki jabatan berbeda (ketua, wakil), gunakan permutasi atau kalikan kombinasi dengan faktorial jabatan."
+          },
+          {
+            "judul_poin": "Kombinasi Syarat Minimal atau Konflik Anggota",
+            "penjelasan_singkat": "Gunakan prinsip komplemen: kurangi total kombinasi tanpa syarat dengan kombinasi kasus yang dilarang atau konflik.",
+            "contoh_penerapan": "Pilih $3$ dari $6$ orang tanpa dua musuh (A dan B) bersama: **$C(6,3) - C(4,1) = 20 - 4 = 16$** tim.",
+            "jebakan_atau_catatan": "Saat menghitung kasus A dan B terpilih bersama, sisa anggota yang dipilih berkurang $2$ dari kuota tim."
+          },
+          {
+            "judul_poin": "Pembentukan Garis dan Segitiga dari Titik",
+            "penjelasan_singkat": "Dari $n$ titik dengan $k$ titik segaris (kolinear): garis $= C(n,2) - C(k,2) + 1$, segitiga $= C(n,3) - C(k,3)$.",
+            "contoh_penerapan": "Dari $8$ titik dengan $3$ titik segaris, terbentuk **$C(8,3) - C(3,3) = 56 - 1 = 55$** segitiga.",
+            "jebakan_atau_catatan": "Pada pembentukan garis, wajib tambahkan $+1$ karena $k$ titik kolinear tetap membentuk tepat $1$ garis lurus."
+          },
+          {
+            "judul_poin": "Jajar Genjang dari Garis Sejajar dan Diagonal",
+            "penjelasan_singkat": "Jajar genjang terbentuk dari $2$ garis sejajar arah pertama dan $2$ arah kedua: $C(m,2) \\times C(n,2)$; diagonal segi-$n$: $C(n,2) - n$.",
+            "contoh_penerapan": "Perpotongan $4$ garis horizontal dan $5$ garis vertikal membentuk **$C(4,2) \\times C(5,2) = 6 \\times 10 = 60$** jajar genjang.",
+            "jebakan_atau_catatan": "Rumus $C(n,2)$ pada titik sudut segi-$n$ menghitung sisi luar sekaligus diagonal, sehingga wajib dikurangi $n$ sisi."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "kode_subbab": "pm-02-04",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus dan Sifat Barisan serta Eksponensial UTBK",
+    "subjudul_ringkas": "Panduan lengkap pemodelan pola aditif, multiplikatif, deret tak hingga, hingga pertumbuhan dan peluruhan eksponensial.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Barisan dan Deret Aritmetika Kontekstual",
+        "ringkasan_kelompok": "Pemodelan pola pertambahan atau pengurangan konstan pada susunan objek dan produksi.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Suku ke-$n$ Barisan Aritmetika ($U_n$)",
+            "penjelasan_singkat": "Menentukan nilai suku pada urutan ke-$n$ dengan beda tetap $b$ menggunakan rumus $U_n = a + (n-1)b$.",
+            "contoh_penerapan": "Baris pertama berisi $12$ kursi dan bertambah $3$ kursi tiap baris; baris ke-$10$ memuat **$12 + 9(3) = 39$ kursi**.",
+            "jebakan_atau_catatan": "Peserta sering mengalikan $b$ dengan $n$, padahal pengalinya harus **$(n-1)$** karena suku pertama tidak ditambah beda."
+          },
+          {
+            "judul_poin": "Jumlah $n$ Suku Pertama ($S_n$)",
+            "penjelasan_singkat": "Menghitung akumulasi total dari suku pertama hingga ke-$n$ memakai $S_n = \\frac{n}{2}(a + U_n)$ atau $S_n = \\frac{n}{2}(2a + (n-1)b)$.",
+            "contoh_penerapan": "Produksi bulan pertama $100$ unit dan naik $20$ unit per bulan; total $6$ bulan adalah **$\\frac{6}{2}(200 + 5 \\times 20) = 900$ unit**.",
+            "jebakan_atau_catatan": "Bedakan pertanyaan jumlah pada bulan ke-$n$ ($U_n$) dengan total produksi **selama** $n$ bulan ($S_n$)."
+          },
+          {
+            "judul_poin": "Trik Beda Tanpa Suku Pertama ($b$)",
+            "penjelasan_singkat": "Mencari beda konstan langsung dari dua suku sembarang $U_p$ dan $U_q$ dengan rumus $b = \\frac{U_q - U_p}{q - p}$.",
+            "contoh_penerapan": "Jika tumpukan pipa tingkat ke-$3$ ada $18$ pipa dan tingkat ke-$7$ ada $10$ pipa, bedanya **$\\frac{10 - 18}{7 - 3} = -2$**.",
+            "jebakan_atau_catatan": "Tidak perlu mencari $a$ dahulu; lompat suku langsung pakai **$U_q = U_p + (q - p)b$** agar hemat waktu."
+          },
+          {
+            "judul_poin": "Suku Tengah ($U_t$) dan Hubungan $U_n$ dengan $S_n$",
+            "penjelasan_singkat": "Untuk $n$ ganjil berlaku $U_t = \\frac{a + U_n}{2}$ dan $S_n = n \\cdot U_t$, serta $U_n = S_n - S_{n-1}$ untuk $n \\ge 2$.",
+            "contoh_penerapan": "Jika jumlah $9$ suku pertama adalah $180$, maka suku tengah ($U_5$) bernilai **$\\frac{180}{9} = 20$** tanpa mencari $a$ maupun $b$.",
+            "jebakan_atau_catatan": "Rumus $U_n = S_n - S_{n-1}$ berlaku mulai $n = 2$; khusus suku pertama wajib gunakan **$U_1 = S_1$**."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Barisan Geometri dan Deret Tak Hingga",
+        "ringkasan_kelompok": "Pemodelan perubahan dengan rasio pengali tetap serta total lintasan hingga berhenti.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Suku ke-$n$ dan Rasio Geometri ($U_n$)",
+            "penjelasan_singkat": "Menentukan suku ke-$n$ dengan rasio konstan $r = \\frac{U_n}{U_{n-1}}$ memakai rumus $U_n = a \\cdot r^{n-1}$ dan $r^{q-p} = \\frac{U_q}{U_p}$.",
+            "contoh_penerapan": "Jika $U_2 = 6$ dan $U_5 = 48$, maka $r^3 = \\frac{48}{6} = 8$ sehingga rasio **$r = 2$** dan **$U_1 = 3$**.",
+            "jebakan_atau_catatan": "Hati-hati saat pangkat genap ($r^2 = 9$); periksa konteks soal apakah rasio harus **positif** atau bisa **negatif**."
+          },
+          {
+            "judul_poin": "Jumlah $n$ Suku Pertama Geometri ($S_n$)",
+            "penjelasan_singkat": "Menjumlahkan $n$ suku memakai $S_n = \\frac{a(r^n - 1)}{r - 1}$ ($r > 1$) atau $S_n = \\frac{a(1 - r^n)}{1 - r}$ ($r < 1$).",
+            "contoh_penerapan": "Tabungan awal $\\text{Rp}100.000$ berlipat $2$ tiap tahun; total akumulasi setelah $4$ tahun adalah **$100.000 \\times \\frac{2^4 - 1}{2 - 1} = \\text{Rp}1.500.000$**.",
+            "jebakan_atau_catatan": "Pastikan membedakan nilai tabungan **pada** tahun ke-$n$ ($U_n$) dengan total seluruh setoran **selama** $n$ tahun ($S_n$)."
+          },
+          {
+            "judul_poin": "Deret Geometri Tak Hingga Konvergen ($S_\\infty$)",
+            "penjelasan_singkat": "Menghitung total tak hingga suku dengan syarat konvergen $-1 < r < 1$ menggunakan rumus $S_\\infty = \\frac{a}{1 - r}$.",
+            "contoh_penerapan": "Ayunan bandul pertama sejauh $40\\text{ cm}$ dan menyusut menjadi $\\frac{3}{4}$ kali sebelumnya; total panjang busur adalah **$\\frac{40}{1 - 3/4} = 160\\text{ cm}$**.",
+            "jebakan_atau_catatan": "Deret tak hingga **tidak memiliki nilai** jika $|r| \\ge 1$; selalu cek syarat $-1 < r < 1$ sebelum menghitung."
+          },
+          {
+            "judul_poin": "Panjang Lintasan Total Bola Memantul ($L$)",
+            "penjelasan_singkat": "Bola dijatuhkan dari ketinggian $h_0$ dengan rasio pantul $r = \\frac{p}{q}$ menempuh lintasan $L = h_0 + 2S_\\infty = h_0\\left(\\frac{q+p}{q-p}\\right)$.",
+            "contoh_penerapan": "Bola dijatuhkan dari $10\\text{ m}$ dan memantul $\\frac{3}{5}$ tinggi sebelumnya; total lintasan hingga berhenti adalah **$10 \\times \\frac{5+3}{5-3} = 40\\text{ m}$**.",
+            "jebakan_atau_catatan": "Trik $\\frac{q+p}{q-p}$ hanya jika bola **dijatuhkan**; jika bola **dilempar dari tanah** lalu memantul, rumusnya menjadi **$2S_\\infty$** tanpa $h_0$ tunggal."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Pertumbuhan dan Peluruhan Eksponensial Periodik",
+        "ringkasan_kelompok": "Pemodelan perubahan kuantitas kontinu berbasis waktu $t$ dan periode pembaruan $T$.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pertumbuhan Eksponensial Persentase ($N(t)$)",
+            "penjelasan_singkat": "Kuantitas awal $N_0$ tumbuh sebesar $p\\%$ setiap periode $T$ dimodelkan dengan fungsi $N(t) = N_0(1 + p)^{\\frac{t}{T}}$.",
+            "contoh_penerapan": "Modal $\\text{Rp}2.000.000$ tumbuh $10\\%$ per tahun; setelah $2$ tahun nilainya menjadi **$2.000.000(1 + 0,1)^2 = \\text{Rp}2.420.000$**.",
+            "jebakan_atau_catatan": "Satuan waktu $t$ dan periode $T$ wajib sama; jika $t$ dalam bulan dan $T$ dalam tahun, samakan dulu."
+          },
+          {
+            "judul_poin": "Pertumbuhan Faktor Pengali ($k$-Lipat)",
+            "penjelasan_singkat": "Jika populasi awal $N_0$ membelah atau berlipat menjadi $k$ kali setiap periode $T$, gunakan rumus $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$.",
+            "contoh_penerapan": "$50$ bakteri membelah menjadi $2$ setiap $15$ menit; setelah $1$ jam ($60$ menit) jumlahnya **$50 \\times 2^{\\frac{60}{15}} = 800$ bakteri**.",
+            "jebakan_atau_catatan": "Jangan kurangi pangkat dengan $1$ seperti $U_n$ biasa; saat $t = 0$, pangkat harus nol agar **$N(0) = N_0$**."
+          },
+          {
+            "judul_poin": "Peluruhan Eksponensial Persentase ($N(t)$)",
+            "penjelasan_singkat": "Kuantitas awal $N_0$ menyusut sebesar $p\\%$ setiap periode $T$ dimodelkan dengan rumus $N(t) = N_0(1 - p)^{\\frac{t}{T}}$.",
+            "contoh_penerapan": "Kadar obat $200\\text{ mg}$ meluruh $20\\%$ tiap jam; sisa kadar setelah $2$ jam adalah **$200(1 - 0,2)^2 = 128\\text{ mg}$**.",
+            "jebakan_atau_catatan": "Bilangan pokok dalam kurung adalah **persentase tersisa $(1 - p)$**, bukan persentase peluruhan $p$ yang hilang."
+          },
+          {
+            "judul_poin": "Peluruhan Waktu Paruh ($T_{1/2}$)",
+            "penjelasan_singkat": "Zat awal $N_0$ berkurang menjadi setengahnya setiap waktu paruh $T_{1/2}$ mengikuti rumus $N(t) = N_0 \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$.",
+            "contoh_penerapan": "Zat radioaktif $64\\text{ gram}$ memiliki waktu paruh $4$ hari; setelah $12$ hari massanya tersisa **$64 \\times \\left(\\frac{1}{2}\\right)^{\\frac{12}{4}} = 8\\text{ gram}$**.",
+            "jebakan_atau_catatan": "Perhatikan pertanyaan soal: mencari **sisa zat** gunakan $N(t)$, sedangkan mencari **zat yang meluruh** hitung **$N_0 - N(t)$**."
+          }
+        ]
+      }
+    ]
+  }
+}

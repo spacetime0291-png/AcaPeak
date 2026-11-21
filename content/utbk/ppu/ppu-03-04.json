@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam kalimat 'Laporan audit keuangan tersebut kami sudah serahkan kepada dewan pengawas kemarin', apakah susunan frasa kerja pasif 'kami sudah serahkan' sudah baku?",
@@ -23,7 +23,110 @@
       "Mengubah sudut pandang pelaku secara tiba-tiba dari aktif ke pasif di tengah paragraf atau menyisipkan kata 'sudah/akan/tidak' di antara pronomina pelaku dan kata kerja dasar."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Kaidah Lengkap Kalimat Aktif dan Pasif (EYD V & KBBI VI)",
+      "subjudul_ringkas": "Aturan baku transformasi aktif-pasif, makna afiks pasif, serta konsistensi sudut pandang wacana.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Transformasi Aktif Transitif ke Pasif Kanonik dan Persona",
+          "ringkasan_kelompok": "Aturan perubahan struktur aktif berobjek menjadi pasif kanonik dan pasif persona.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Pasif Kanonik dengan Pelaku Orang Ketiga",
+              "penjelasan_singkat": "Objek kalimat aktif transitif menjadi subjek; predikat meN- berubah menjadi di- apabila pelakunya orang ketiga atau nomina.",
+              "contoh_penerapan": "Proposal penelitian tersebut **dievaluasi oleh tim pakar** sebelum mendapatkan pendanaan resmi dari kementerian.",
+              "jebakan_atau_catatan": "Bentuk *proposal itu dievaluasi oleh saya* salah karena pelaku orang pertama wajib memakai pola pasif persona.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pasif Persona dengan Pelaku Orang Pertama dan Kedua",
+              "penjelasan_singkat": "Objek menjadi subjek, diikuti langsung oleh pronomina pelaku orang pertama atau kedua dan verba dasar tanpa awalan.",
+              "contoh_penerapan": "Laporan keuangan bulanan ini sudah **kami serahkan** kepada direktur utama sejak kemarin pagi.",
+              "jebakan_atau_catatan": "Jangan menyisipkan kata tugas di antara pelaku dan verba, seperti bentuk tidak baku *kami telah serahkan*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penulisan Bentuk Terikat ku- dan kau- pada Pasif Persona",
+              "penjelasan_singkat": "Pronomina persona tunggal ku- dan kau- ditulis serangkai dengan verba dasar tanpa awalan sesuai kaidah EYD V.",
+              "contoh_penerapan": "Buku referensi langka itu akhirnya **kutemukan** di sudut rak paling atas perpustakaan fakultas.",
+              "jebakan_atau_catatan": "Penulisan terpisah seperti *ku temukan* atau *kau baca* melanggar kaidah penulisan bentuk terikat dalam EYD V.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Syarat Transitivitas Pemasifan Kalimat Aktif",
+              "penjelasan_singkat": "Hanya kalimat aktif transitif berobjek yang dapat dipasifkan; kalimat aktif intransitif berpelengkap tidak memiliki bentuk pasif.",
+              "contoh_penerapan": "Para mahasiswa **mendiskusikan isu krisis iklim** berubah menjadi **Isu krisis iklim didiskusikan** oleh para mahasiswa.",
+              "jebakan_atau_catatan": "Kalimat berpelengkap seperti *Dia menjadi dokter* atau *Adik menangis tersedu-sedu* tidak bisa diubah menjadi kalimat pasif.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Identifikasi Makna Pasif Berimbuhan ter- dan ke-...-an",
+          "ringkasan_kelompok": "Perbedaan nuansa makna verba pasif berafiks ter- dan ke-...-an dalam konteks kalimat.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Pasif Berawalan ter- Bermakna Ketidaksengajaan",
+              "penjelasan_singkat": "Awalan ter- pada verba transitif menyatakan perbuatan pasif yang dialami subjek secara tidak sengaja atau tiba-tiba.",
+              "contoh_penerapan": "Dokumen penting di atas meja kerja **terbawa** oleh rekan kerjaku saat rapat selesai.",
+              "jebakan_atau_catatan": "Bedakan dengan makna statif (keadaan sudah terjadi), misalnya pada kalimat *Pintu ruang rapat itu sudah terkunci*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pasif Berawalan ter- Bermakna Kemampuan",
+              "penjelasan_singkat": "Awalan ter- menyatakan kesanggupan atau ketidaksanggupan subjek untuk dikenai tindakan, umumnya didahului kata ingkar tidak atau belum.",
+              "contoh_penerapan": "Suara narasumber di bagian belakang aula **tidak terdengar** dengan jelas karena gangguan pelantang.",
+              "jebakan_atau_catatan": "Frasa *tidak terdengar* bermakna 'tidak dapat didengar', berbeda fungsi dengan *terdengar* yang bermakna 'tidak sengaja didengar'.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pasif Berkonfiks ke-...-an Bermakna Terkena Dampak",
+              "penjelasan_singkat": "Konfiks ke-...-an membentuk verba pasif yang menyatakan subjek menderita atau tertimpa peristiwa yang tidak diinginkan.",
+              "contoh_penerapan": "Ribuan warga di kawasan pesisir utara **kebanjiran** akibat gelombang pasang air laut semalam.",
+              "jebakan_atau_catatan": "Jangan samakan dengan nomina berkonfiks ke-...-an (seperti *kebersihan* atau *kemakmuran*) yang menduduki fungsi subjek atau objek.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Konsistensi Sudut Pandang dan Kesetaraan Kalimat Majemuk",
+          "ringkasan_kelompok": "Penerapan diatesis aktif-pasif untuk menjaga kepaduan wacana dan kesetaraan makna majemuk.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Konsistensi Sudut Pandang dalam Kalimat Majemuk Setara",
+              "penjelasan_singkat": "Klausa-klausa dalam kalimat majemuk setara yang berpelaku sama wajib mempertahankan bentuk aktif atau pasif secara konsisten.",
+              "contoh_penerapan": "**Data dikumpulkan** oleh tim survei, lalu **diolah** menggunakan perangkat lunak statistik sebelum dipublikasikan.",
+              "jebakan_atau_catatan": "Kalimat menjadi tidak efektif apabila mencampur diatesis, misalnya *Data dikumpulkan tim survei, lalu mereka mengolahnya*.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kesatuan Fokus Subjek Antar-kalimat dalam Paragraf",
+              "penjelasan_singkat": "Pertahankan topik yang sama sebagai subjek melalui transformasi aktif-pasif agar kepaduan informasi antar-kalimat tetap terjaga.",
+              "contoh_penerapan": "**Vaksin baru ini** telah lolos uji klinis; **vaksin tersebut kini didistribusikan** ke seluruh puskesmas daerah.",
+              "jebakan_atau_catatan": "Mengganti subjek secara mendadak tanpa tujuan retoris membuat alur informasi dalam paragraf terasa melompat dan terputus.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kesetaraan Makna Pemasifan Kalimat Majemuk Bertingkat",
+              "penjelasan_singkat": "Pemasifan kalimat majemuk bertingkat mengubah objek klausa utama menjadi subjek tanpa mengubah hubungan logis anak kalimatnya.",
+              "contoh_penerapan": "**Kebijakan baru itu ditolak serikat pekerja** karena dinilai merugikan kesejahteraan buruh kontrak di perusahaan.",
+              "jebakan_atau_catatan": "Jebakan UTBK sering mengubah konjungsi atau membalik arah hubungan sebab-akibat saat memodifikasi bentuk aktif ke pasif.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Diketahui aturan $a \\diamond b = a^2 - b$. Berapakah nilai dari $3 \\diamond (2 \\diamond 1)$ jika dihitung sesuai kaidah aljabar UTBK?",
@@ -23,7 +23,124 @@
       "Mengabaikan tanda kurung saat mensubstitusi bilangan negatif ke bentuk kuadrat, misalnya menulis $-2^2 = -4$ alih-alih $(-2)^2 = 4$."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Rumus dan Sifat Operasi Fungsi Baru (Simbol Khusus)",
+      "subjudul_ringkas": "Panduan lengkap aturan substitusi, operasi bersyarat, persamaan variabel, hingga pengujian sifat struktur aljabar pada soal UTBK.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_2": "Contoh Hitung Mini",
+        "kolom_3": "Jebakan / Trik Cepat"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Evaluasi Langsung dan Operasi Bersarang",
+          "ringkasan_kelompok": "Aturan dasar pemetaan variabel, prioritas kurung, serta kombinasi beberapa simbol operasi khusus.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Substitusi Posisi Variabel Depan dan Belakang",
+              "penjelasan_singkat": "Masukkan bilangan kiri sebagai variabel pertama ($a$) dan bilangan kanan sebagai variabel kedua ($b$) ke rumus definisi.",
+              "contoh_penerapan": "Jika $a \\otimes b = 2a - b^2$, maka $3 \\otimes 4 = 2(3) - 4^2 = 6 - 16 =$ **$-10$**.",
+              "jebakan_atau_catatan": "Jangan menukar posisi $a$ dan $b$; $4 \\otimes 3 = 2(4) - 3^2 = -1$, hasilnya berbeda.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Evaluasi Operasi Bersarang (Prioritas Dalam Kurung)",
+              "penjelasan_singkat": "Hitung hasil operasi di dalam tanda kurung terlebih dahulu sebelum mengoperasikannya dengan bilangan di luar kurung.",
+              "contoh_penerapan": "Untuk $a \\star b = a + 2b$, hitung $(2 \\star 1) \\star 3$: $(2 + 2) \\star 3 = 4 \\star 3 =$ **$10$**.",
+              "jebakan_atau_catatan": "Jangan mengalikan distribusi seperti aljabar biasa; operasi khusus tidak selalu memenuhi sifat distributif.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kombinasi Dua Simbol Operasi Berbeda",
+              "penjelasan_singkat": "Evaluasi masing-masing simbol sesuai definisi spesifiknya secara terpisah, lalu gabungkan hasilnya mengikuti hierarki kurung atau aritmetika standar.",
+              "contoh_penerapan": "Jika $a \\oplus b = ab$ dan $a \\ominus b = a - b$, maka $(3 \\oplus 2) \\ominus 4 = 6 \\ominus 4 =$ **$2$**.",
+              "jebakan_atau_catatan": "Pastikan tidak tertukar memakai rumus simbol pertama saat menghitung simbol kedua pada langkah lanjutan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Operasi Tunggal (Uner) dan Ekspresi Gabungan",
+              "penjelasan_singkat": "Simbol satu variabel seperti $a^{\\triangle}$ memetakan satu input langsung ke rumus tunggal sebelum digabung operasi lain.",
+              "contoh_penerapan": "Jika $x^{\\triangle} = x^2 + 1$ dan $a \\odot b = a + b$, maka $2^{\\triangle} \\odot 3 = 5 \\odot 3 =$ **$8$**.",
+              "jebakan_atau_catatan": "Kerjakan simbol uner pada masing-masing bilangan terlebih dahulu sebelum menjalankan operasi biner di antaranya.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Operasi Bersyarat dan Persamaan Variabel",
+          "ringkasan_kelompok": "Pemilihan cabang rumus berdasarkan syarat pertidaksamaan atau paritas serta pencarian nilai variabel $x$.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Operasi Bersyarat Pertidaksamaan ($a > b$ vs $a \\le b$)",
+              "penjelasan_singkat": "Bandingkan nilai numerik $a$ dan $b$ terlebih dahulu untuk memilih cabang rumus pertidaksamaan yang tepat.",
+              "contoh_penerapan": "Jika $a \\diamond b = a + b$ ($a > b$) dan $ab$ ($a \\le b$), maka $3 \\diamond 3 = 3 \\times 3 =$ **$9$**.",
+              "jebakan_atau_catatan": "Perhatikan tanda sama dengan pada $\\le$ atau $\\ge$ saat nilai kedua variabel kembar ($a = b$).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Operasi Bersyarat Paritas (Ganjil vs Genap)",
+              "penjelasan_singkat": "Periksa status ganjil atau genap dari input atau hasil gabungan untuk menentukan aturan substitusi yang berlaku.",
+              "contoh_penerapan": "Jika $a \\ast b = \\frac{a+b}{2}$ ($a+b$ genap) dan $a-b$ ($a+b$ ganjil), maka $5 \\ast 3 = \\frac{5+3}{2} =$ **$4$**.",
+              "jebakan_atau_catatan": "Nol ($0$) dan bilangan bulat negatif kelipatan dua termasuk bilangan genap; jangan hanya memeriksa bilangan positif.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Mencari Variabel $x$ pada Persamaan Simbol",
+              "penjelasan_singkat": "Ubah ruas bersimbol menjadi bentuk aljabar dalam variabel $x$, lalu selesaikan persamaan linear atau kuadratnya.",
+              "contoh_penerapan": "Jika $a \\star b = 3a + b$ dan $x \\star 3 = 15$, maka $3x + 3 = 15 \\rightarrow$ **$x = 4$**.",
+              "jebakan_atau_catatan": "Jika menghasilkan persamaan kuadrat, uji semua akar ke syarat domain jika operasi memiliki batasan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Mencari Variabel $x$ pada Operasi Bersyarat",
+              "penjelasan_singkat": "Uji semua cabang rumus yang mungkin, lalu verifikasi apakah nilai $x$ memenuhi syarat cabang tersebut.",
+              "contoh_penerapan": "Jika $a \\bullet b = 2a$ ($a > b$) dan $a + b$ ($a \\le b$), solusi $x \\bullet 4 = 6$ adalah **$x = 2$**.",
+              "jebakan_atau_catatan": "Cabang $2x = 6 \\rightarrow x = 3$ gugur karena $3 > 4$ salah; selalu cek ulang syarat akhir.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pengujian Sifat Struktur Aljabar",
+          "ringkasan_kelompok": "Verifikasi sifat komutatif, asosiatif, elemen identitas, dan elemen invers pada operasi biner baru.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Pengujian Sifat Komutatif ($a \\otimes b = b \\otimes a$)",
+              "penjelasan_singkat": "Operasi bersifat komutatif jika penukaran posisi $a$ dan $b$ menghasilkan ekspresi aljabar yang identik untuk semua bilangan.",
+              "contoh_penerapan": "Pada $a \\otimes b = a + b - 2ab$, bentuk $b \\otimes a = b + a - 2ba$, sehingga **komutatif berlaku**.",
+              "jebakan_atau_catatan": "Satu contoh penyangkal ($2 \\otimes 3 \\neq 3 \\otimes 2$) sudah cukup membuktikan operasi tidak komutatif.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pengujian Sifat Asosiatif ($(a \\otimes b) \\otimes c = a \\otimes (b \\otimes c)$)",
+              "penjelasan_singkat": "Operasi bersifat asosiatif jika pengelompokan kurung kiri dan kurung kanan menghasilkan ekspresi akhir yang sama persis.",
+              "contoh_penerapan": "Untuk $a \\otimes b = a - b$, $(5 \\otimes 3) \\otimes 1 = 1$ sedangkan $5 \\otimes (3 \\otimes 1) = 3$, jadi **tidak asosiatif**.",
+              "jebakan_atau_catatan": "Operasi komutatif belum tentu asosiatif; selalu jabarkan kedua ruas secara aljabar atau pakai contoh penyangkal.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Menentukan Elemen Identitas ($a \\otimes e = a$)",
+              "penjelasan_singkat": "Elemen identitas $e$ adalah konstanta tunggal (bebas dari variabel $a$) yang memenuhi $a \\otimes e = e \\otimes a = a$.",
+              "contoh_penerapan": "Jika $a \\otimes b = a + b - 4$, selesaikan $a + e - 4 = a \\rightarrow$ **$e = 4$**.",
+              "jebakan_atau_catatan": "Jika hasil $e$ masih memuat variabel $a$ (misal $e = \\frac{a}{2}$), maka operasi tidak memiliki identitas.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Menentukan Elemen Invers ($a \\otimes a^{-1} = e$)",
+              "penjelasan_singkat": "Cari elemen identitas $e$ terlebih dahulu, lalu selesaikan persamaan $a \\otimes x = e$ untuk menyatakan $x$ dalam $a$.",
+              "contoh_penerapan": "Pada $a \\otimes b = a + b - 4$ dengan $e = 4$, selesaikan $a + x - 4 = 4 \\rightarrow$ **$x = 8 - a$**.",
+              "jebakan_atau_catatan": "Peserta sering menyamakan $a \\otimes x = 0$ atau $1$; nilai ruas kanan wajib elemen identitas $e$.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

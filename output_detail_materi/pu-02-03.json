@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "pu-02-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Kaidah Penarikan Kesimpulan Deduktif UTBK",
+    "subjudul_ringkas": "Panduan kaidah logika sah, sesat pikir formal, serta kombinasi implikasi dan kuantor untuk subtes Penalaran Umum.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Kaidah Penarikan Kesimpulan Sah (Valid)",
+        "ringkasan_kelompok": "Empat pola penarikan kesimpulan deduktif dasar yang selalu bernilai valid di UTBK.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Modus Ponens ($p \\rightarrow q, p \\therefore q$)",
+            "penjelasan_singkat": "Jika premis implikasi benar dan syarat awal ($p$) terpenuhi, maka akibat ($q$) sah disimpulkan.",
+            "contoh_penerapan": "Jika inflasi naik, suku bunga dinaikkan; bulan ini inflasi naik, **maka suku bunga dinaikkan**.",
+            "jebakan_atau_catatan": "Salah jika menyimpulkan *suku bunga tetap* atau menambah syarat baru yang tidak tercantum di premis."
+          },
+          {
+            "judul_poin": "Modus Tollens ($p \\rightarrow q, \\sim q \\therefore \\sim p$)",
+            "penjelasan_singkat": "Jika premis implikasi benar dan akibatnya tidak terjadi ($\\sim q$), maka syarat awal pasti tidak terjadi ($\\sim p$).",
+            "contoh_penerapan": "Jika vaksin efektif, angka rawat inap turun; nyatanya angka rawat inap tidak turun, **berarti vaksin tidak efektif**.",
+            "jebakan_atau_catatan": "Jebakan UTBK sering menghilangkan kata ingkaran *tidak* pada simpulan sehingga menghasilkan kalimat positif yang keliru."
+          },
+          {
+            "judul_poin": "Silogisme Hipotetis Berantai ($p \\rightarrow q, q \\rightarrow r, r \\rightarrow s$)",
+            "penjelasan_singkat": "Beberapa premis implikasi yang saling menyambung dapat diringkas langsung dari anteseden pertama ke konsekuen terakhir ($p \\rightarrow s$).",
+            "contoh_penerapan": "Jika hutan gundul, serapan air berkurang; jika serapan berkurang, banjir terjadi; **jadi, jika hutan gundul, banjir terjadi**.",
+            "jebakan_atau_catatan": "Salah jika membalik arah panah menjadi *jika banjir terjadi, maka hutan gundul* ($s \\rightarrow p$)."
+          },
+          {
+            "judul_poin": "Silogisme Disjungtif ($p \\lor q, \\sim p \\therefore q$)",
+            "penjelasan_singkat": "Pada premis pilihan *atau* ($\\lor$), pengingkaran terhadap satu opsi memastikan opsi lainnya sah sebagai simpulan.",
+            "contoh_penerapan": "Rapat digelar secara daring atau luring; panitia membatalkan agenda daring, **sehingga rapat digelar secara luring**.",
+            "jebakan_atau_catatan": "Dalam logika formal, disjungsi inklusif ($\\lor$) tidak otomatis menyalahkan opsi kedua saat opsi pertama sudah terjadi."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Sesat Pikir Formal & Variasi Bahasa Implikasi",
+        "ringkasan_kelompok": "Mengenali pola argumen tidak sah serta bentuk kalimat bersyarat yang sering mengecoh.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Sesat Pikir: Affirming the Consequent ($p \\rightarrow q, q \\therefore p$)",
+            "penjelasan_singkat": "Terjadinya akibat ($q$) tidak menjamin sebab ($p$) pasti terjadi karena akibat bisa dipicu faktor lain.",
+            "contoh_penerapan": "Jika hujan turun, jalanan basah; sekarang jalanan basah, **maka tidak dapat disimpulkan bahwa hujan pasti turun**.",
+            "jebakan_atau_catatan": "Bentuk salah populer: langsung menyimpulkan *pasti hujan turun*, padahal jalanan basah bisa akibat disiram air."
+          },
+          {
+            "judul_poin": "Sesat Pikir: Denying the Antecedent ($p \\rightarrow q, \\sim p \\therefore \\sim q$)",
+            "penjelasan_singkat": "Tidak terjadinya syarat awal ($\\sim p$) tidak otomatis membatalkan akibat ($q$); simpulan tetap tidak dapat ditentukan.",
+            "contoh_penerapan": "Jika lolos seleksi berkas, peserta ikut wawancara; Andi tidak lolos berkas, **namun nasib wawancaranya tidak bisa disimpulkan**.",
+            "jebakan_atau_catatan": "Bentuk salah populer: menyimpulkan *Andi pasti tidak ikut wawancara*, padahal premis tidak mengatur jalur nonberkas."
+          },
+          {
+            "judul_poin": "Kontraposisi Ekuivalen ($p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$)",
+            "penjelasan_singkat": "Pernyataan implikasi memiliki nilai kebenaran identik dengan bentuk kontraposisinya, yaitu membalik posisi sekaligus mengingkari keduanya.",
+            "contoh_penerapan": "Pernyataan *jika rajin berlatih, tim menang* ekuivalen dengan **jika tim tidak menang, berarti tidak rajin berlatih**.",
+            "jebakan_atau_catatan": "Salah jika hanya membalik posisi tanpa ingkaran ($q \\rightarrow p$) atau hanya mengingkari tanpa membalik ($\\sim p \\rightarrow \\sim q$)."
+          },
+          {
+            "judul_poin": "Variasi Kata Bersyarat: Hanya Jika dan Kecuali",
+            "penjelasan_singkat": "Pola *$p$ hanya jika $q$* bermakna $p \\rightarrow q$, sedangkan pola *$p$ kecuali $q$* bermakna $\\sim q \\rightarrow p$.",
+            "contoh_penerapan": "Kalimat *siswa lulus hanya jika nilai tuntas* bermakna **jika siswa lulus, maka nilainya pasti sudah tuntas**.",
+            "jebakan_atau_catatan": "Peserta sering tertukar mengubah *hanya jika* menjadi $q \\rightarrow p$, sehingga arah penarikan kesimpulannya terbalik."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Gabungan Implikasi dan Logika Kuantor",
+        "ringkasan_kelompok": "Aturan penarikan kesimpulan yang memadukan kuantor semua atau sebagian dengan premis implikasi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Silogisme Kuantor Universal (Semua)",
+            "penjelasan_singkat": "Dua premis berkuantor universal (*semua/setiap*) yang saling terhubung menghasilkan simpulan universal yang berlaku bagi seluruh anggota.",
+            "contoh_penerapan": "Semua mamalia bernapas dengan paru-paru; semua paus adalah mamalia; **jadi, semua paus bernapas dengan paru-paru**.",
+            "jebakan_atau_catatan": "Salah jika mengubah simpulan universal menjadi *sebagian paus* atau membalik subjek menjadi *semua yang berparu-paru paus*."
+          },
+          {
+            "judul_poin": "Aturan Kuantor Partikular (Sebagian / Ada)",
+            "penjelasan_singkat": "Jika salah satu premis memuat kuantor partikular (*sebagian/ada/beberapa*), maka simpulan sah wajib bersifat partikular pula.",
+            "contoh_penerapan": "Semua peneliti wajib menulis jurnal; sebagian dosen adalah peneliti; **maka sebagian dosen wajib menulis jurnal**.",
+            "jebakan_atau_catatan": "Bentuk salah paling sering: menarik simpulan *semua dosen wajib menulis jurnal* dari premis yang hanya partikular."
+          },
+          {
+            "judul_poin": "Gabungan Implikasi dan Kuantor dengan Subjek Spesifik",
+            "penjelasan_singkat": "Aturan umum *semua $P$ adalah $Q$* berfungsi sebagai implikasi $P \\rightarrow Q$ bagi individu spesifik yang masuk kategori.",
+            "contoh_penerapan": "Semua peserta yang terlambat tidak boleh ujian; Budi datang terlambat, **sehingga Budi tidak boleh mengikuti ujian**.",
+            "jebakan_atau_catatan": "Jika diketahui *Budi boleh mengikuti ujian*, terapkan Modus Tollens sehingga simpulannya *Budi tidak datang terlambat*."
+          }
+        ]
+      }
+    ]
+  }
+}

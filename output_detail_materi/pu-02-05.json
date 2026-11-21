@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "pu-02-05",
+  "detail_materi_lengkap": {
+    "judul_blok": "Kaidah Lengkap Penalaran Analitik: Urutan & Kombinasi Posisi",
+    "subjudul_ringkas": "Panduan sistematis pemetaan syarat urutan linear, jadwal, susunan melingkar, kombinasi tim, hingga matriks atribut UTBK.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Pengurutan Linear & Penjadwalan Sekuensial (Inti UTBK)",
+        "ringkasan_kelompok": "Memetakan syarat posisi mutlak, blok bersebelahan, rantai perbandingan, dan jeda jadwal.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Jangkar Posisi Mutlak pada Urutan",
+            "penjelasan_singkat": "Isi slot yang memiliki syarat nomor urut atau hari pasti terlebih dahulu sebelum memetakan elemen bebas.",
+            "contoh_penerapan": "Jika rapat C wajib hari Rabu pada jadwal Senin–Jumat, kunci posisi **Rabu = C** sebagai titik patokan utama.",
+            "jebakan_atau_catatan": "Jebakan: Menyusun syarat relatif ($A$ sebelum $B$) lebih dulu tanpa mengunci slot pasti membuat cabang skenario terlalu banyak."
+          },
+          {
+            "judul_poin": "Pengikatan Blok Elemen Berdampingan",
+            "penjelasan_singkat": "Gabungkan dua elemen yang wajib bersebelahan menjadi satu unit kesatuan, lalu perhitungkan permutasi internalnya jika urutan bebas.",
+            "contoh_penerapan": "Syarat Andi dan Budi duduk berdampingan ditulis sebagai blok fleksibel **[AB] atau [BA]** saat mengisi kursi antrean.",
+            "jebakan_atau_catatan": "Bentuk salah: Mengunci urutan hanya menjadi $AB$ padahal soal tidak menyebut siapa duduk di kiri atau kanan."
+          },
+          {
+            "judul_poin": "Penggabungan Rantai Skor dan Kedatangan",
+            "penjelasan_singkat": "Satukan syarat perbandingan terpisah menggunakan tanda panah satu arah ($A \\rightarrow B$) untuk membaca hierarki dari tertinggi ke terendah.",
+            "contoh_penerapan": "Skor Rani di atas Sinta dan Sinta di atas Tono diringkas menjadi rantai **Rani $\\rightarrow$ Sinta $\\rightarrow$ Tono**.",
+            "jebakan_atau_catatan": "Jebakan: Menganggap $A$ lebih tinggi dari $B$ berarti $A$ tepat satu peringkat di atas $B$ tanpa jeda."
+          },
+          {
+            "judul_poin": "Aturan Jeda Eksak dan Blokir Hari",
+            "penjelasan_singkat": "Hitung selisih indeks hari secara eksak untuk syarat jeda, lalu coret slot terlarang dari kandidat posisi.",
+            "contoh_penerapan": "Jeda 2 hari antara jadwal $P$ dan $Q$ berarti jika $P$ Senin (hari 1), maka **$Q$ wajib Kamis (hari 4)**.",
+            "jebakan_atau_catatan": "Bentuk salah: Jeda 2 hari diartikan selisih indeks $1 + 2 = 3$ (Rabu), padahal antara Senin dan Rabu hanya 1 hari."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Susunan Melingkar & Kombinasi Tim (Pengayaan)",
+        "ringkasan_kelompok": "Menentukan orientasi meja bundar serta menyeleksi anggota tim berdasarkan implikasi logis.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Simetri Berhadapan pada Susunan Melingkar",
+            "penjelasan_singkat": "Pada meja bundar berjumlah genap ($2n$), dua posisi saling berhadapan jika terpisah tepat $n$ langkah di kedua arah.",
+            "contoh_penerapan": "Pada meja 6 kursi bernomor 1–6, peserta di kursi 1 **berhadapan langsung dengan kursi 4** (selisih 3 kursi).",
+            "jebakan_atau_catatan": "Jebakan: Menerapkan aturan berhadapan pada meja berjumlah ganjil (misal 5 kursi), padahal posisi berhadapan simetris butuh jumlah genap."
+          },
+          {
+            "judul_poin": "Orientasi Kiri dan Kanan Menghadap Pusat",
+            "penjelasan_singkat": "Tentukan arah kiri dan kanan berdasarkan sudut pandang peserta yang menghadap pusat lingkaran, bukan sudut pandang pembaca.",
+            "contoh_penerapan": "Jika Dina di posisi jam 6 menghadap pusat meja, maka **sebelah kanan Dina berada di posisi jam 3**.",
+            "jebakan_atau_catatan": "Bentuk salah: Memakai kanan layar (jam 3) sebagai kanan tokoh di posisi jam 12 (seharusnya posisi jam 9)."
+          },
+          {
+            "judul_poin": "Syarat Inklusi Tim dan Kontraposisinya",
+            "penjelasan_singkat": "Syarat $A \\rightarrow B$ mewajibkan $B$ ikut jika $A$ terpilih, sekaligus menggugurkan $A$ jika $B$ absen ($\\sim B \\rightarrow \\sim A$).",
+            "contoh_penerapan": "Aturan jika Aris masuk tim maka Bima ikut berarti **jika Bima tidak terpilih, Aris otomatis tidak masuk tim**.",
+            "jebakan_atau_catatan": "Bentuk salah: Membalik arah implikasi menjadi jika Bima terpilih maka Aris pasti ikut ($B \\rightarrow A$ tidak sah)."
+          },
+          {
+            "judul_poin": "Syarat Eksklusi Saling Menolak ($C \\rightarrow \\sim D$)",
+            "penjelasan_singkat": "Syarat $C \\rightarrow \\sim D$ melarang $C$ dan $D$ terpilih bersamaan, sehingga maksimal hanya satu yang masuk komposisi.",
+            "contoh_penerapan": "Jika menu Pedas dan Manis saling eksklusif, paket 3 menu yang memuat **Pedas wajib menggugurkan opsi Manis**.",
+            "jebakan_atau_catatan": "Jebakan: Menganggap $C$ dan $D$ saling eksklusif berarti salah satunya wajib terpilih, padahal keduanya boleh sama-sama absen."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Pemetaan Matriks Atribut & Validasi Kepastian (Pengayaan)",
+        "ringkasan_kelompok": "Mencocokkan beberapa atribut sekaligus dan menguji kebenaran mutlak lintas skenario.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Eliminasi Silang pada Matriks Atribut",
+            "penjelasan_singkat": "Pada pencocokan satu-ke-satu, setiap tanda pasti (Ya) otomatis mencoret ($\\times$) seluruh sel lain di baris dan kolomnya.",
+            "contoh_penerapan": "Jika Budi dipastikan berprofesi Dokter, coret opsi **Dokter untuk semua orang lain** serta profesi lain untuk Budi.",
+            "jebakan_atau_catatan": "Catatan cepat: Buat matriks $N \\times N$ terpisah untuk tiap pasangan kategori (Orang–Profesi dan Orang–Kota) agar rapi."
+          },
+          {
+            "judul_poin": "Penghubung Transitif Lintas Kategori Atribut",
+            "penjelasan_singkat": "Hubungkan dua fakta berbeda kategori melalui entitas perantara yang sama untuk menemukan pasangan atribut tak langsung.",
+            "contoh_penerapan": "Jika Rina tinggal di Bandung dan warga Bandung hobi melukis, maka **Rina dipastikan memiliki hobi melukis**.",
+            "jebakan_atau_catatan": "Jebakan: Melakukan lompatan transitif pada atribut non-unik (misal lebih dari satu orang boleh memiliki hobi yang sama)."
+          },
+          {
+            "judul_poin": "Prinsip Kepastian Lintas Skenario Sah",
+            "penjelasan_singkat": "Pernyataan bernilai pasti benar hanya jika terbukti konsisten di seluruh kemungkinan percabangan skenario yang memenuhi aturan.",
+            "contoh_penerapan": "Jika urutan sah hanya $[A,B,C]$ atau $[A,C,B]$, pernyataan yang pasti benar adalah **$A$ berada di urutan pertama**.",
+            "jebakan_atau_catatan": "Bentuk salah: Memilih opsi '$B$ di urutan kedua' karena benar di skenario pertama, padahal salah di skenario kedua."
+          }
+        ]
+      }
+    ]
+  }
+}

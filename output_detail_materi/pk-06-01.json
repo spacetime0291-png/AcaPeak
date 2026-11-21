@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "pk-06-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus dan Sifat Transformasi Geometri Dasar",
+    "subjudul_ringkas": "Rangkuman rumus translasi, refleksi, rotasi, dan dilatasi beserta contoh hitung dan trik cepat UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Translasi (Pergeseran) Titik dan Kurva",
+        "ringkasan_kelompok": "Menggeser posisi objek tanpa mengubah bentuk, ukuran, maupun orientasi.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Translasi Titik dan Ruas Garis",
+            "penjelasan_singkat": "Titik $A(x,y)$ digeser vektor $T(a,b)$ menjadi $A'(x+a, y+b)$; panjang ruas garis tidak berubah.",
+            "contoh_penerapan": "Titik $A(2,-3)$ ditranslasi $T(-4,5)$ menghasilkan **$A'(2+(-4), -3+5) = A'(-2,2)$**.",
+            "jebakan_atau_catatan": "Jangan tertukar urutan penjumlahan; $a$ selalu dijumlahkan ke absis $x$, $b$ ke ordinat $y$."
+          },
+          {
+            "judul_poin": "Translasi Persamaan Garis Lurus",
+            "penjelasan_singkat": "Bayangan garis oleh $T(a,b)$ diperoleh dengan menyubstitusi $x \\rightarrow (x-a)$ dan $y \\rightarrow (y-b)$.",
+            "contoh_penerapan": "Garis $2x - y = 4$ digeser $T(1,3)$ menjadi **$2(x-1) - (y-3) = 4 \\Leftrightarrow 2x - y = 3$**.",
+            "jebakan_atau_catatan": "Jebakan umum: peserta sering menjumlahkan $(x+a)$ pada persamaan kurva; ingat kurva memakai tanda kurang."
+          },
+          {
+            "judul_poin": "Translasi Persamaan Parabola Sederhana",
+            "penjelasan_singkat": "Pergeseran parabola oleh $T(a,b)$ menggeser titik puncak dan mengganti $x \\rightarrow (x-a)$ serta $y \\rightarrow (y-b)$.",
+            "contoh_penerapan": "Parabola $y = x^2$ digeser $T(2,-1)$ menjadi **$y - (-1) = (x-2)^2 \\Leftrightarrow y = (x-2)^2 - 1$**.",
+            "jebakan_atau_catatan": "Trik cepat UTBK: cukup geser koordinat puncak parabola, lalu susun ulang bentuk $y = k(x-x_p)^2 + y_p$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Refleksi (Pencerminan) pada Bidang Kartesius",
+        "ringkasan_kelompok": "Mencerminkan titik terhadap sumbu atau garis dengan jarak tegak lurus sama.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Refleksi terhadap Sumbu $X$ dan Sumbu $Y$",
+            "penjelasan_singkat": "Cermin sumbu $X$ mengubah tanda $y$ menjadi $(x,-y)$; cermin sumbu $Y$ mengubah $x$ menjadi $(-x,y)$.",
+            "contoh_penerapan": "Titik $B(-3,4)$ dicerminkan terhadap sumbu $X$ menjadi **$B'(-3,-4)$**, sedangkan terhadap sumbu $Y$ menjadi **$B''(3,4)$**.",
+            "jebakan_atau_catatan": "Trik cepat: koordinat yang nama sumbunya disebut sebagai cermin nilainya selalu tetap (tidak berubah tanda)."
+          },
+          {
+            "judul_poin": "Refleksi terhadap Titik Asal $O(0,0)$",
+            "penjelasan_singkat": "Pencerminan terhadap pusat koordinat $O(0,0)$ membalik tanda kedua koordinat: $A(x,y) \\rightarrow A'(-x,-y)$.",
+            "contoh_penerapan": "Titik $C(5,-2)$ dicerminkan terhadap titik asal $(0,0)$ menghasilkan bayangan **$C'(-5,2)$**.",
+            "jebakan_atau_catatan": "Refleksi terhadap $(0,0)$ ekuivalen dengan komposisi refleksi sumbu $X$ dan sumbu $Y$ secara berurutan."
+          },
+          {
+            "judul_poin": "Refleksi terhadap Garis $y = x$ dan $y = -x$",
+            "penjelasan_singkat": "Garis $y=x$ menukar posisi menjadi $(y,x)$; garis $y=-x$ menukar sekaligus membalik tanda menjadi $(-y,-x)$.",
+            "contoh_penerapan": "Titik $D(2,-7)$ dicerminkan ke garis $y = -x$ menjadi **$D'(-(-7), -2) = D'(7,-2)$**.",
+            "jebakan_atau_catatan": "Pada garis $y=-x$, peserta sering lupa menukar posisi $x$ dan $y$ setelah mengalikan dengan negatif."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Rotasi (Perputaran) Sudut Istimewa",
+        "ringkasan_kelompok": "Memutar titik sebesar sudut tertentu berpusat di titik asal atau $(a,b)$.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Rotasi $90^\\circ$ dan $-90^\\circ$ Pusat $O(0,0)$",
+            "penjelasan_singkat": "Rotasi $+90^\\circ$ (berlawanan jarum jam) memetakan $(x,y) \\rightarrow (-y,x)$; rotasi $-90^\\circ$ (searah) memetakan $(x,y) \\rightarrow (y,-x)$.",
+            "contoh_penerapan": "Titik $E(3,4)$ diputar $+90^\\circ$ pusat $(0,0)$ menjadi **$E'(-4,3)$**; jika diputar $-90^\\circ$ menjadi **$E''(4,-3)$**.",
+            "jebakan_atau_catatan": "Arah positif ($+$) selalu berlawanan arah jarum jam; rotasi $-90^\\circ$ sama hasilnya dengan rotasi $+270^\\circ$."
+          },
+          {
+            "judul_poin": "Rotasi $180^\\circ$ Pusat $O(0,0)$",
+            "penjelasan_singkat": "Putaran setengah lingkaran ($\\pm 180^\\circ$) di pusat $(0,0)$ memetakan titik $A(x,y) \\rightarrow A'(-x,-y)$.",
+            "contoh_penerapan": "Titik $F(-6,1)$ dirotasi $180^\\circ$ berpusat di $(0,0)$ menghasilkan **$F'(6,-1)$**.",
+            "jebakan_atau_catatan": "Pada rotasi $180^\\circ$, arah searah maupun berlawanan jarum jam menghasilkan bayangan akhir yang sama persis."
+          },
+          {
+            "judul_poin": "Rotasi Sudut Istimewa Berpusat di Titik $(a,b)$",
+            "penjelasan_singkat": "Kurangi titik dengan pusat $(x-a, y-b)$, terapkan rumus rotasi pusat $(0,0)$, lalu tambahkan kembali $(a,b)$.",
+            "contoh_penerapan": "Titik $G(4,5)$ diputar $+90^\\circ$ pusat $P(1,2)$: relatif $(3,3) \\rightarrow (-3,3)$, lalu $+P(1,2)$ menjadi **$G'(-2,5)$**.",
+            "jebakan_atau_catatan": "Kesalahan fatal: langsung memakai rumus rotasi $(0,0)$ tanpa menggeser titik ke pusat $P(a,b)$ terlebih dahulu."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Dilatasi (Perkalian Skala) dan Dampak Luas",
+        "ringkasan_kelompok": "Memperbesar atau memperkecil ukuran bangun datar dengan faktor skala $k$.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Dilatasi Pusat $O(0,0)$ dengan Faktor Skala $k$",
+            "penjelasan_singkat": "Dilatasi $[O,k]$ mengalikan setiap komponen koordinat dengan skala $k \\neq 0$: $A(x,y) \\rightarrow A'(kx, ky)$.",
+            "contoh_penerapan": "Titik $H(-2,5)$ didilatasi pusat $(0,0)$ dengan skala $k = -3$ menghasilkan **$H'((-3)(-2), (-3)(5)) = H'(6,-15)$**.",
+            "jebakan_atau_catatan": "Skala negatif ($k$ bernilai negatif) membalik posisi bayangan ke kuadran berlawanan melewati titik pusat dilatasi."
+          },
+          {
+            "judul_poin": "Dilatasi Persamaan Garis dan Kurva Pusat $O(0,0)$",
+            "penjelasan_singkat": "Bayangan kurva oleh dilatasi $[O,k]$ diperoleh dengan menyubstitusi $x \\rightarrow \\frac{x}{k}$ dan $y \\rightarrow \\frac{y}{k}$.",
+            "contoh_penerapan": "Garis $x + 2y = 3$ didilatasi $[O,2]$ menjadi **$\\frac{x}{2} + 2(\\frac{y}{2}) = 3 \\Leftrightarrow x + 2y = 6$**.",
+            "jebakan_atau_catatan": "Jangan mengalikan variabel kurva dengan $k$; untuk persamaan kurva, selalu bagi variabel dengan faktor skala $k$."
+          },
+          {
+            "judul_poin": "Dampak Dilatasi terhadap Panjang dan Luas Bangun",
+            "penjelasan_singkat": "Dilatasi skala $k$ mengubah panjang sisi menjadi $|k| \\times \\text{awal}$ dan luas menjadi $k^2 \\times \\text{awal}$.",
+            "contoh_penerapan": "Segitiga luas $12\\text{ cm}^2$ didilatasi skala $k = -3$ memiliki luas bayangan **$(-3)^2 \\times 12 = 108\\text{ cm}^2$**.",
+            "jebakan_atau_catatan": "Jebakan UTBK: luas dikali $k^2$ (bukan $k$), dan nilai luas bayangan selalu positif meski $k$ negatif."
+          }
+        ]
+      }
+    ]
+  }
+}

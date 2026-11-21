@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam kalimat 'Tim peneliti menemukan berbagai jenis tanaman anggrek bulan, melati putih, dan mawar merah di kawasan konservasi', apakah frasa 'berbagai jenis tanaman' sudah efektif?",
@@ -23,7 +23,110 @@
       "Memilih kata umum yang terlalu luas atau terlalu sempit sehingga gagal merangkum seluruh rincian anggota kata khusus pada kalimat sebelumnya."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Kaidah Relasi Hipernim–Hiponim dalam Kepaduan dan Kehematan Wacana",
+      "subjudul_ringkas": "Panduan lengkap penggunaan kata umum dan kata khusus untuk kohesi serta keefektifan kalimat baku.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Kaidah Hipernim (Kata Umum) sebagai Pengikat Kohesi",
+          "ringkasan_kelompok": "Aturan pemakaian kata umum untuk merangkum rincian dan menjaga kepaduan antarkalimat.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Hipernim Perangkum Rincian (Kohesi Anaforis)",
+              "penjelasan_singkat": "Kata umum merujuk kembali pada deretan kata khusus sebelumnya agar kalimat berikutnya padu tanpa pengulangan.",
+              "contoh_penerapan": "Beras, jagung, dan sagu mengalami kenaikan harga; **komoditas** tersebut kini menjadi fokus operasi pasar pemerintah.",
+              "jebakan_atau_catatan": "Jebakan: memilih hipernim terlalu luas seperti **benda** atau **hal** alih-alih kata berlingkup makna tepat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hipernim Pengantar Rincian (Kohesi Kataforis)",
+              "penjelasan_singkat": "Kata umum ditempatkan di awal kalimat sebagai payung klasifikasi sebelum menjabarkan anggota-anggota spesifiknya.",
+              "contoh_penerapan": "Pemerintah memperketat pengawasan terhadap tiga **instrumen keuangan**, yakni saham, obligasi, dan reksa dana.",
+              "jebakan_atau_catatan": "Catatan: tanda titik dua digunakan setelah hipernim jika diikuti pemerian lengkap di akhir kalimat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Hierarki Hipernim Bertingkat (Relasi Superordinat)",
+              "penjelasan_singkat": "Satu kata dapat berstatus sebagai hiponim bagi kata di atasnya sekaligus hipernim bagi kata di bawahnya.",
+              "contoh_penerapan": "Dalam taksonomi, **unggas** merupakan hiponim dari hewan, tetapi sekaligus menjadi hipernim bagi ayam dan bebek.",
+              "jebakan_atau_catatan": "Jebakan: menganggap relasi hipernim-hiponim bersifat mutlak hanya dua tingkat tanpa melihat jenjang klasifikasinya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Ketepatan Cakupan Payung Makna Hipernim",
+              "penjelasan_singkat": "Hipernim perangkum harus menaungi seluruh rincian dalam teks tanpa mengecualikan satu anggota pun.",
+              "contoh_penerapan": "Palu, gergaji, dan obeng disimpan rapi di kotak **perkakas** agar mudah ditemukan saat perbaikan.",
+              "jebakan_atau_catatan": "Salah: merangkum palu, gergaji, dan obeng dengan kata **mesin**, karena ketiganya bukan alat bermesin.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kaidah Pemilihan Hiponim (Kata Khusus) untuk Presisi Gagasan",
+          "ringkasan_kelompok": "Aturan pemilihan kata khusus agar makna kalimat spesifik, sejajar, dan tidak multitafsir.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Keselarasan Hiponim dengan Konteks Kalimat",
+              "penjelasan_singkat": "Pemilihan kata khusus wajib menyesuaikan medan makna, kolokasi kata, dan ragam laras teks yang dibahas.",
+              "contoh_penerapan": "Petani mulai **menyiangi** gulma di sela tanaman padi agar penyerapan unsur hara berjalan optimal.",
+              "jebakan_atau_catatan": "Salah: menggunakan hipernim **membersihkan** yang kurang presisi untuk aktivitas mencabut rumput liar di lahan pertanian.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kesejajaran Antaranggota Hiponim (Kohiponim)",
+              "penjelasan_singkat": "Seluruh rincian dalam satu deretan wajib merupakan sesama hiponim (kohiponim) yang setara dari satu hipernim.",
+              "contoh_penerapan": "Perpustakaan daerah itu mengoleksi **novel, cerpen, dan antologi puisi** karya sastrawan angkatan Balai Pustaka.",
+              "jebakan_atau_catatan": "Salah: menulis **novel, cerpen, dan karya sastra** karena mencampur hiponim dengan hipernimnya dalam satu perincian.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penggantian Hipernim Abstrak dengan Hiponim Konkret",
+              "penjelasan_singkat": "Kata umum yang terlalu luas diganti dengan kata khusus untuk mencegah ketaksaan (ambiguitas) informasi.",
+              "contoh_penerapan": "Peneliti **memangkas** anggaran perjalanan dinas sebesar dua puluh persen demi efisiensi dana riset lapangan.",
+              "jebakan_atau_catatan": "Jebakan: memakai kata **mengubah** yang ambigu karena tidak menjelaskan apakah anggaran dinaikkan atau diturunkan.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kaidah Kehematan dan Pemborosan Makna (Pleonasme)",
+          "ringkasan_kelompok": "Aturan menghindari penggabungan kata umum dan kata khusus yang menyebabkan pleonasme.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Larangan Hipernim dan Hiponim Berdampingan Langsung",
+              "penjelasan_singkat": "Kata umum tidak boleh diletakkan langsung di depan kata khususnya karena makna hiponim sudah mencakupi hipernim.",
+              "contoh_penerapan": "Para pendaki gunung dilarang memetik **edelweis** yang tumbuh di kawasan taman nasional tersebut.",
+              "jebakan_atau_catatan": "Salah: menulis **bunga edelweis** karena kata edelweis secara leksikal sudah bermakna jenis bunga.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penghilangan Kata Kategori pada Nama Unsur Baku",
+              "penjelasan_singkat": "Hipernim kategori seperti warna, hari, bulan, atau huruf dihilangkan apabila langsung diikuti nama spesifiknya.",
+              "contoh_penerapan": "Sidang pleno penetapan jadwal ujian nasional akan dilaksanakan pada **Senin** pekan depan.",
+              "jebakan_atau_catatan": "Salah: menulis **hari Senin**, **bulan Agustus**, atau **warna merah** dalam kalimat efektif bahasa Indonesia.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Pengecualian Hipernim untuk Istilah Teknis atau Asing",
+              "penjelasan_singkat": "Hipernim boleh mendahului hiponim jika kata khusus tersebut berupa istilah asing, ilmiah, atau nama entitas baru.",
+              "contoh_penerapan": "Tim ekspedisi menemukan **ikan coelacanth** yang sempat dianggap punah di perairan Sulawesi Utara.",
+              "jebakan_atau_catatan": "Catatan: kata **ikan** tetap dipertahankan sebagai penjelas kategori karena coelacanth belum lazim bagi pembaca umum.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

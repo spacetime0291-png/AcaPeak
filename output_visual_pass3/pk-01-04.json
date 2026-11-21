@@ -1,0 +1,153 @@
+{
+  "kode_subbab": "pk-01-04",
+  "updated_at": "2026-11-21T09:44:18.363893",
+  "slots": {
+    "z2_v2": {
+      "slot_id": "z2_v2",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='200' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Garis Bilangan (x - 4)/(x + 3) &gt;= 0</text><line x1='42.0' y1='136.8' x2='114.9' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='285.1' y1='136.8' x2='358.0' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='148.8' x2='373' y2='148.8' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='144.8' x2='42.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-6</text><line x1='90.6' y1='144.8' x2='90.6' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='90.6' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-4</text><line x1='139.2' y1='144.8' x2='139.2' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='139.2' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-2</text><line x1='187.8' y1='144.8' x2='187.8' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='187.8' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>0</text><line x1='236.5' y1='144.8' x2='236.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='236.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>2</text><line x1='285.1' y1='144.8' x2='285.1' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='285.1' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>4</text><line x1='333.7' y1='144.8' x2='333.7' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='333.7' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>6</text><text x='78.5' y='124.8' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><text x='187.8' y='124.8' fill='#FB7185' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>-</text><text x='321.5' y='124.8' fill='#34D399' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><circle cx='114.9' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='114.9' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-3</text><circle cx='285.1' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='285.1' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>4</text></svg>",
+      "caption": "Garis bilangan bertanda (+ - +) untuk pertidaksamaan rasional (x - 4)/(x + 3) >= 0 dengan x = -3 terbuka dan x = 4 tertutup.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Garis Bilangan (x - 4)/(x + 3) >= 0",
+        "x_range": [
+          -6,
+          7
+        ],
+        "boundary_points": [
+          {
+            "value": -3,
+            "closed": false,
+            "label": "-3"
+          },
+          {
+            "value": 4,
+            "closed": true,
+            "label": "4"
+          }
+        ],
+        "shading": [
+          {
+            "from": -6,
+            "to": -3,
+            "type": "ray_left"
+          },
+          {
+            "from": 4,
+            "to": 7,
+            "type": "ray_right"
+          }
+        ],
+        "signs": [
+          {
+            "x": -4.5,
+            "sign": "+"
+          },
+          {
+            "x": 0,
+            "sign": "-"
+          },
+          {
+            "x": 5.5,
+            "sign": "+"
+          }
+        ]
+      }
+    },
+    "z2_v5": {
+      "slot_id": "z2_v5",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='nl-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#E2E8F0'/></marker><marker id='sol-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#38BDF8'/></marker></defs><text x='200' y='22' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Garis Bilangan 3 &lt; |2x - 1| &lt;= 7</text><line x1='99.5' y1='136.8' x2='156.9' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='243.1' y1='136.8' x2='300.5' y2='136.8' stroke='#38BDF8' stroke-width='3.5'/><line x1='27' y1='148.8' x2='373' y2='148.8' stroke='#E2E8F0' stroke-width='2' marker-start='url(#nl-arrow)' marker-end='url(#nl-arrow)'/><line x1='42.0' y1='144.8' x2='42.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='42.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-5</text><line x1='70.7' y1='144.8' x2='70.7' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='70.7' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-4</text><line x1='99.5' y1='144.8' x2='99.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='99.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-3</text><line x1='128.2' y1='144.8' x2='128.2' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='128.2' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-2</text><line x1='156.9' y1='144.8' x2='156.9' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='156.9' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>-1</text><line x1='185.6' y1='144.8' x2='185.6' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='185.6' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>0</text><line x1='214.4' y1='144.8' x2='214.4' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='214.4' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>1</text><line x1='243.1' y1='144.8' x2='243.1' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='243.1' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>2</text><line x1='271.8' y1='144.8' x2='271.8' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='271.8' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>3</text><line x1='300.5' y1='144.8' x2='300.5' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='300.5' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>4</text><line x1='329.3' y1='144.8' x2='329.3' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='329.3' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>5</text><line x1='358.0' y1='144.8' x2='358.0' y2='152.8' stroke='#94A3B8' stroke-width='1.5'/><text x='358.0' y='164.8' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>6</text><circle cx='99.5' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='99.5' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-3</text><circle cx='156.9' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='156.9' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>-1</text><circle cx='200.0' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='200.0' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>0,5</text><circle cx='243.1' cy='148.8' r='5.5' fill='#0B1120' stroke='#38BDF8' stroke-width='2.5'/><text x='243.1' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>2</text><circle cx='300.5' cy='148.8' r='5.5' fill='#38BDF8' stroke='#E2E8F0' stroke-width='1.5'/><text x='300.5' y='130.8' fill='#FBBF24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>4</text></svg>",
+      "caption": "Interpretasi jarak nilai mutlak 1,5 < |x - 0,5| <= 3,5 dari titik pusat 0,5 pada garis bilangan.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "number_line",
+        "title": "Garis Bilangan 3 < |2x - 1| <= 7",
+        "x_range": [
+          -5,
+          6
+        ],
+        "boundary_points": [
+          {
+            "value": -3,
+            "closed": true,
+            "label": "-3"
+          },
+          {
+            "value": -1,
+            "closed": false,
+            "label": "-1"
+          },
+          {
+            "value": 0.5,
+            "closed": true,
+            "label": "0,5"
+          },
+          {
+            "value": 2,
+            "closed": false,
+            "label": "2"
+          },
+          {
+            "value": 4,
+            "closed": true,
+            "label": "4"
+          }
+        ],
+        "shading": [
+          {
+            "from": -3,
+            "to": -1,
+            "type": "interval"
+          },
+          {
+            "from": 2,
+            "to": 4,
+            "type": "interval"
+          }
+        ],
+        "signs": []
+      }
+    },
+    "z3_s1": {
+      "slot_id": "z3_s1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='190' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Sistem Persamaan Linear Tanpa Solusi (Garis Sejajar)</text><line x1='35.0' y1='25' x2='35.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='67.0' y1='25' x2='67.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='99.0' y1='25' x2='99.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='131.0' y1='25' x2='131.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='163.0' y1='25' x2='163.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='195.0' y1='25' x2='195.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='227.0' y1='25' x2='227.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='259.0' y1='25' x2='259.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='291.0' y1='25' x2='291.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='323.0' y1='25' x2='323.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='355.0' y1='25' x2='355.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='200.0' x2='355' y2='200.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='182.5' x2='355' y2='182.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='165.0' x2='355' y2='165.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='147.5' x2='355' y2='147.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='130.0' x2='355' y2='130.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='112.5' x2='355' y2='112.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='95.0' x2='355' y2='95.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='77.5' x2='355' y2='77.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='60.0' x2='355' y2='60.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='42.5' x2='355' y2='42.5' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='355' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='130.0' x2='367' y2='130.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='373' y='134.0' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='163.0' y1='208' x2='163.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='155.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-4</text><text x='67.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='99.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='131.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='195.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='227.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='259.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='291.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='323.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='355.0' y='144.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='158.0' y='203.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-4</text><text x='158.0' y='185.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='158.0' y='168.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='158.0' y='150.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='158.0' y='115.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='158.0' y='98.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='158.0' y='80.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='158.0' y='63.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='158.0' y='45.5' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='158.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><line x1='35.0' y1='147.5' x2='355.0' y2='-27.5' stroke='#38BDF8' stroke-width='2' /><text x='323.0' y='-16.0' fill='#38BDF8' font-family='sans-serif' font-size='11' font-weight='bold'>mx + 2y = 6</text><line x1='35.0' y1='235.0' x2='355.0' y2='60.0' stroke='#34D399' stroke-width='2' /><text x='323.0' y='71.5' fill='#34D399' font-family='sans-serif' font-size='11' font-weight='bold'>3x + (m - 1)y = 6</text></svg>",
+      "caption": "Ilustrasi kondisi geometris dua garis sejajar pada sistem persamaan linear yang tidak memiliki penyelesaian.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "cartesian",
+        "title": "Sistem Persamaan Linear Tanpa Solusi (Garis Sejajar)",
+        "x_range": [
+          -4,
+          6
+        ],
+        "y_range": [
+          -4,
+          6
+        ],
+        "parabolas": [],
+        "lines": [
+          {
+            "slope": 1,
+            "intercept": 3,
+            "color": "#38BDF8",
+            "label": "mx + 2y = 6"
+          },
+          {
+            "slope": 1,
+            "intercept": -2,
+            "color": "#34D399",
+            "label": "3x + (m - 1)y = 6"
+          }
+        ],
+        "points": [],
+        "polygons": [],
+        "transformations": [],
+        "dhp": []
+      }
+    }
+  },
+  "total_slots": 3
+}

@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Teks menyebutkan: 'Solar panels reduce household electricity bills by 40% in sunny regions.' Simpulan mana yang paling valid menurut standar UTBK?",
@@ -23,7 +23,131 @@
       "Lompatan Logika (Out of Scope): Opsi terdengar masuk akal di dunia nyata, tetapi tidak memiliki dasar bukti di dalam stimulus."
     ],
     "stimulus_utama_bersama": "**Text 1: Urban Green Spaces and Heat Mitigation**\nRecent meteorological measurements across twelve metropolitan districts demonstrate that neighborhoods with more than 30% tree canopy coverage experience daytime surface temperatures up to $3.5^{\\circ}\\text{C}$ lower than concrete-dominated zones. Urban trees cool the air not only by providing direct shade, but also through evapotranspiration, a process where water absorbed by roots is released as vapor through leaves. However, municipal planners warn that planting trees alone cannot offset urban heat islands if asphalt expansion continues unchecked, as dark pavement absorbs and re-radiates solar heat long after sunset.\n\n**Table 1: District Canopy Coverage vs. Afternoon Peak Temperature (2024)**\n| District | Tree Canopy (%) | Avg. Peak Temp ($^{\\circ}\\text{C}$) | AC Energy Demand Index |\n| :--- | :---: | :---: | :---: |\n| Northwood | 36% | 29.8 | 78 |\n| Eastgate | 24% | 31.4 | 92 |\n| Southport | 11% | 33.2 | 115 |\n\n**Text 2: Forum Discussion on Urban Forestry**\n* **@EcoPlanner_ID:** Expanding green corridors in Southport is urgent. Without immediate zoning restrictions on commercial parking lots, newly planted saplings will fail to lower nighttime temperatures.\n* **@UrbanBuilder99:** True, but mature canopies take 15 to 20 years to develop. In the short term, coating existing rooftops with high-albedo reflective paint offers faster thermal relief than waiting for saplings to grow.",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Taksonomi Sinyal & Pola Inferensi Logis UTBK-SNBT",
+      "subjudul_ringkas": "Panduan praktis mengenali penanda teks, asumsi tersirat, prediksi kausal, dan sintesis grafik tanpa terjebak pengecoh.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Pola Inferensi Logis Ketat (Strict Inference)",
+          "ringkasan_kelompok": "Menarik kesimpulan pasti dari parafrasa, kontras, dan pembatas kuantitas teks.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Parafrasa Semantik & Sinonim Kontekstual",
+              "penjelasan_singkat": "Simpulan valid menyusun ulang fakta eksplisit memakai sinonim atau struktur berbeda tanpa menambah informasi baru ($A \\equiv A'$).",
+              "contoh_penerapan": "Teks: *\"The species **struggles to survive** in warmer waters.\"* $\\rightarrow$ Inferensi: Spesies tersebut **rentan punah** akibat kenaikan suhu laut.",
+              "jebakan_atau_catatan": "Jebakan: memilih opsi yang menyalin kata persis dari teks tetapi mengubah subjek, objek, atau maknanya.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Kontras & Pengecualian (*Whereas, Unlike*)",
+              "penjelasan_singkat": "Kata hubung kontras membalikkan sifat subjek kedua dibandingkan subjek pertama secara logis ($A = X, B \\neq A \\rightarrow B \\neq X$).",
+              "contoh_penerapan": "Teks: *\"**Unlike** nocturnal owls, eagles hunt exclusively during daylight.\"* $\\rightarrow$ Inferensi: Burung hantu **tidak berburu secara eksklusif** pada siang hari.",
+              "jebakan_atau_catatan": "Jangan menyimpulkan sifat ekstrem; *unlike* hanya membedakan sifat spesifik yang dibandingkan, bukan kebalikan total di semua aspek.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kualifikator Kuantitas & Frekuensi (*Rarely, Few, Mostly*)",
+              "penjelasan_singkat": "Kata pembatas seperti *few*, *seldom*, atau *primarily* membatasi cakupan fakta sehingga menolak generalisasi total ($0\\% < X < 100\\%$).",
+              "contoh_penerapan": "Teks: *\"Early treatments **rarely** eliminate the virus completely.\"* $\\rightarrow$ Inferensi: Sebagian kecil pasien **masih menyimpan virus** setelah terapi awal.",
+              "jebakan_atau_catatan": "Opsi dengan kata mutlak (*never, all, completely, always*) otomatis salah karena melampaui batas kualifikator teks.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Perbandingan Komparatif & Superlatif (*More than, Highest*)",
+              "penjelasan_singkat": "Pernyataan komparatif ($A > B$) secara otomatis menetapkan peringkat relatif kedua entitas tanpa memerlukan angka absolut.",
+              "contoh_penerapan": "Teks: *\"Solar adoption grew **faster than** wind energy in 2024.\"* $\\rightarrow$ Inferensi: Laju pertumbuhan energi angin **lebih rendah** daripada surya.",
+              "jebakan_atau_catatan": "Lebih cepat tumbuh ($\\Delta A > \\Delta B$) tidak berarti total kapasitas terpasang surya sudah melampaui energi angin.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Menggali Asumsi Tersirat (Unstated Assumptions)",
+          "ringkasan_kelompok": "Mengidentifikasi premis tersembunyi yang menopang argumen atau rekomendasi penulis.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Jembatan Premis ke Klaim (*Gap Filler*)",
+              "penjelasan_singkat": "Asumsi tersirat adalah syarat wajib tak tertulis yang menghubungkan bukti teks menuju kesimpulan ($\\text{Premis} + \\text{Asumsi} \\rightarrow \\text{Klaim}$).",
+              "contoh_penerapan": "Teks: *\"The app lacks encryption, **so** users' data is unsafe.\"* $\\rightarrow$ Asumsi: Enkripsi merupakan **syarat mutlak** keamanan data pengguna.",
+              "jebakan_atau_catatan": "Uji dengan teknik negasi: jika asumsi dibalik (enkripsi tidak diperlukan), kesimpulan penulis langsung runtuh.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Presuposisi Keterangan Waktu & Penekanan (*Still, Even*)",
+              "penjelasan_singkat": "Kata keterangan seperti *still* atau *no longer* menyiratkan kondisi latar belakang yang sudah berlangsung sebelumnya ($\\text{Still } X \\rightarrow X \\text{ eksis dulu}$).",
+              "contoh_penerapan": "Teks: *\"The city **still** relies on coal power plants.\"* $\\rightarrow$ Asumsi: Kota tersebut **sudah menggunakan** pembangkit batu bara di masa lalu.",
+              "jebakan_atau_catatan": "Jangan mengasumsikan kota tersebut pasti menghentikan batu bara dalam waktu dekat tanpa petunjuk tambahan dalam teks.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Klaim Normatif & Rekomendasi (*Should, Must, Need to*)",
+              "penjelasan_singkat": "Saran kebijakan mengasumsikan bahwa tindakan tersebut layak dijalankan dan memperbaiki kondisi saat ini ($\\text{Should } X \\rightarrow X \\text{ bermanfaat}$).",
+              "contoh_penerapan": "Teks: *\"Schools **must** delay start times to boost teen grades.\"* $\\rightarrow$ Asumsi: Jadwal masuk sekolah saat ini **terlalu pagi** bagi remaja.",
+              "jebakan_atau_catatan": "Hindari opsi yang menyebut solusi tersebut sebagai satu-satunya faktor penentu nilai siswa (*sole factor trap*).",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Hubungan Sebab-Akibat & Prediksi Kondisi",
+          "ringkasan_kelompok": "Memetakan rantai sebab-akibat implisit dan memproyeksikan dampak perubahan kondisi.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Rantai Sebab-Akibat Implisit (*Trigger, Lead to, Drive*)",
+              "penjelasan_singkat": "Kata kerja kausal menghubungkan variabel pemicu dengan dampak lanjutan secara berantai ($X \\rightarrow Y \\rightarrow Z$, maka $X \\rightarrow Z$).",
+              "contoh_penerapan": "Teks: *\"Deforestation **triggers** soil erosion, which **chokes** river habitats.\"* $\\rightarrow$ Inferensi: Penebangan hutan secara tidak langsung **merusak ekosistem sungai**.",
+              "jebakan_atau_catatan": "Waspadai jebakan pembalikan arah kausalitas ($Z \\rightarrow X$) atau penyamaan korelasi kebetulan sebagai sebab-akibat.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Prediksi Penghapusan Syarat (*If Removed / Without*)",
+              "penjelasan_singkat": "Jika variabel $X$ dibutuhkan agar $Y$ terjadi ($Y \\rightarrow X$), meniadakan $X$ pasti menggagalkan $Y$ ($\\neg X \\rightarrow \\neg Y$).",
+              "contoh_penerapan": "Teks: *\"Coral reefs **depend on** symbiotic algae for nutrients.\"* $\\rightarrow$ Prediksi: Jika alga hilang, terumbu karang **akan kekurangan nutrisi**.",
+              "jebakan_atau_catatan": "Jangan memprediksi dampak sekunder ekstrem di luar teks, seperti kepunahan seluruh spesies laut secara instan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Prediksi Perubahan Tren Variabel (*Increase / Decrease*)",
+              "penjelasan_singkat": "Ekstrapolasi tren memproyeksikan dampak searah atau berlawanan sesuai pola hubungan variabel pada teks ($X \\uparrow \\Rightarrow Y \\downarrow$).",
+              "contoh_penerapan": "Teks: *\"Higher interest rates consistently **dampen** corporate borrowing.\"* $\\rightarrow$ Prediksi: Pemangkasan suku bunga kemungkinan besar **mendorong pinjaman korporasi**.",
+              "jebakan_atau_catatan": "Prediksi valid selalu menggunakan bahasa probabilitas (*likely, probable*), bukan kepastian mutlak di masa depan.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "4. Sintesis Inferensi Teks & Grafik/Tabel",
+          "ringkasan_kelompok": "Menggabungkan bukti angka pada grafik atau tabel dengan klaim paragraf.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Konfirmasi Klaim Teks dengan Tren Grafik",
+              "penjelasan_singkat": "Cocokkan arah perubahan angka pada grafik atau tabel dengan pernyataan kualitatif penulis untuk menarik simpulan gabungan.",
+              "contoh_penerapan": "Grafik: biaya baterai turun $40\\%$; Teks: *\"Falling costs **drive EV adoption**.\"* $\\rightarrow$ Inferensi: Penurunan harga baterai **mempercepat adopsi kendaraan listrik**.",
+              "jebakan_atau_catatan": "Jangan menarik simpulan dari satu titik tahun saja jika klaim teks membahas tren jangka panjang (*overall trend*).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Deteksi Anomali & Pengecualian Tabel-Teks",
+              "penjelasan_singkat": "Ketika data tabel menyimpang dari pola umum teks, inferensi berfokus pada faktor pengecualian yang dijelaskan paragraf pendukung.",
+              "contoh_penerapan": "Tabel: Negara Z naik saat negara lain turun; Teks: *\"**Subsidies shielded Z**.\"* $\\rightarrow$ Inferensi: Subsidi **menahan dampak penurunan** di Negara Z.",
+              "jebakan_atau_catatan": "Jebakan umum: menyimpulkan data grafik bertentangan dengan teks, padahal teks sudah memberi alasan pengecualiannya.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {
@@ -69,7 +193,11 @@
       "stimulus_mini": "Rujukan Table 1 (Baris Southport & Northwood) + Text 1 Kalimat 1.",
       "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Data:** Bandingkan angka pada Table 1: saat *Tree Canopy* turun dari 36% (Northwood) ke 11% (Southport), *Avg. Peak Temp* naik dari $29.8^{\\circ}\\text{C}$ ke $33.2^{\\circ}\\text{C}$ dan *AC Energy Demand Index* melonjak dari 78 ke 115.\n2. **Sintesis Teks + Tabel:** Teks menjelaskan pohon menurunkan suhu; tabel membuktikan suhu rendah berkorelasi dengan turunnya konsumsi listrik AC.\n3. **Parafrasa ke Opsi Benar:** Meningkatkan tutupan kanopi pohon di Southport hingga setara Northwood berpotensi menekan indeks permintaan energi pendingin ruangan.\n\n**Radar Jebakan:**\n* *Salah baca angka:* Mengklaim Eastgate memiliki kebutuhan energi AC tertinggi.\n* *Korelasi palsu:* Menyimpulkan penggunaan AC yang memicu kenaikan suhu udara luar.",
       "kunci_pembeda": "Menggabungkan tren numerik tabel/grafik dengan penjelasan mekanisme kualitatif di dalam paragraf.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='20' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Table 1: Tree Canopy vs. AC Energy Demand Index</text><rect x='44' y='24' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='start'>AC Energy Demand Index</text><line x1='245' y1='29' x2='261' y2='29' stroke='#FBBF24' stroke-width='2.5'/><circle cx='253.0' cy='29' r='3' fill='#FBBF24'/><text x='356' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>Tree Canopy (%)</text><text x='38' y='208.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><text x='362' y='208.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>0</text><line x1='44' y1='152.0' x2='356' y2='152.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='156.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>50</text><text x='362' y='156.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>10</text><line x1='44' y1='100.0' x2='356' y2='100.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='104.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>100</text><text x='362' y='104.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>20</text><line x1='44' y1='48.0' x2='356' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>150</text><text x='362' y='52.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>30</text><line x1='44' y1='204' x2='356' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='48' x2='44' y2='204' stroke='#38BDF8' stroke-width='1.5'/><line x1='356' y1='48' x2='356' y2='204' stroke='#FBBF24' stroke-width='1.5'/><rect x='86.9' y='122.9' width='70.2' height='81.1' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='122.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Northwood</text><text x='122.0' y='118.9' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>78</text><rect x='242.9' y='84.4' width='70.2' height='119.6' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='278.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Southport</text><text x='278.0' y='80.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>115</text><polyline points='122.0,63.6 278.0,161.1' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='122.0' cy='63.6' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='122.0' y='56.6' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>36</text><circle cx='278.0' cy='161.1' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='278.0' y='154.1' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>11</text></svg>",
+        "caption": "Perbandingan Tutupan Kanopi Pohon (%) terhadap Indeks Permintaan Energi AC pada distrik Northwood dan Southport (Table 1)."
+      }
     }
   ],
   "zona_3_uji_pemahaman": [
@@ -91,7 +219,11 @@
       ],
       "kunci_jawaban": "C",
       "bedah_cepat_markdown": "**Kunci: C.** Text 1 menjelaskan bahwa aspal gelap menyerap dan memancarkan kembali panas setelah matahari terbenam (*after sunset*), sementara @EcoPlanner_ID menegaskan bibit pohon gagal menurunkan *nighttime temperatures* tanpa pembatasan lahan parkir aspal. Opsi A, D, dan E salah karena memuat klaim ekstrem/instan (*immediately, within a year, neutralize all*), sedangkan Opsi B bertentangan dengan mekanisme biologis pohon di teks.",
-      "visual": null
+      "visual": {
+        "tipe": "svg",
+        "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='190' y='20' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Baseline Urban Heat &amp; AC Demand (Northwood vs. Southport)</text><rect x='44' y='24' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='start'>AC Energy Demand Index</text><line x1='202' y1='29' x2='218' y2='29' stroke='#FBBF24' stroke-width='2.5'/><circle cx='210.0' cy='29' r='3' fill='#FBBF24'/><text x='336' y='32' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>Avg. Peak Temp (°C)</text><text x='38' y='198.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>0</text><text x='342' y='198.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>0</text><line x1='44' y1='145.3' x2='336' y2='145.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='149.3' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>50</text><text x='342' y='149.3' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>10</text><line x1='44' y1='96.7' x2='336' y2='96.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='100.7' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>100</text><text x='342' y='100.7' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>20</text><line x1='44' y1='48.0' x2='336' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#38BDF8' font-family='sans-serif' font-size='10' text-anchor='end'>150</text><text x='342' y='52.0' fill='#FBBF24' font-family='sans-serif' font-size='10' text-anchor='start'>30</text><line x1='44' y1='194' x2='336' y2='194' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='48' x2='44' y2='194' stroke='#38BDF8' stroke-width='1.5'/><line x1='336' y1='48' x2='336' y2='194' stroke='#FBBF24' stroke-width='1.5'/><rect x='84.2' y='118.1' width='65.7' height='75.9' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='117.0' y='209' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Northwood</text><text x='117.0' y='114.1' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>78</text><rect x='230.2' y='82.1' width='65.7' height='111.9' fill='#38BDF8' rx='3' fill-opacity='0.85'/><text x='263.0' y='209' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Southport</text><text x='263.0' y='78.1' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>115</text><polyline points='117.0,85.2 263.0,72.8' fill='none' stroke='#FBBF24' stroke-width='2.5'/><circle cx='117.0' cy='85.2' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='117.0' y='78.2' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>29.8</text><circle cx='263.0' cy='72.8' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='263.0' y='65.8' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>33.2</text></svg>",
+        "caption": "Data awal Suhu Puncak Rata-rata (°C) dan Indeks Permintaan Energi AC pada Northwood serta Southport sebelum intervensi penanaman pohon."
+      }
     },
     {
       "nomor_soal": 2,

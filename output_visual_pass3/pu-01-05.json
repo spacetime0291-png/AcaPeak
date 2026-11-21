@@ -1,0 +1,61 @@
+{
+  "kode_subbab": "pu-01-05",
+  "updated_at": "2026-11-21T09:42:58.745059",
+  "slots": {
+    "z2_v4": {
+      "slot_id": "z2_v4",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='18' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Kapasitas Tersisa Baterai (%) Setelah 500 Siklus</text><rect x='44' y='20' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='28' fill='#94A3B8' font-family='sans-serif' font-size='10'>Baterai Tipe X (%)</text><rect x='174' y='20' width='10' height='10' fill='#FBBF24' rx='2'/><text x='188' y='28' fill='#94A3B8' font-family='sans-serif' font-size='10'>Baterai Tipe Y (%)</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='38' y='208.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>0</text><line x1='44' y1='165.0' x2='376' y2='165.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='169.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>25</text><line x1='44' y1='126.0' x2='376' y2='126.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='130.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>50</text><line x1='44' y1='87.0' x2='376' y2='87.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='91.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>75</text><line x1='44' y1='48.0' x2='376' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>100</text><line x1='44' y1='204' x2='376' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='204' x2='44' y2='48' stroke='#94A3B8' stroke-width='1.5'/><text x='127.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Suhu 25°C</text><rect x='77.2' y='66.7' width='47.8' height='137.3' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='101.1' y='62.7' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>88</text><rect x='127.0' y='76.1' width='47.8' height='127.9' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='150.9' y='72.1' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>82</text><text x='293.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Suhu 40°C</text><rect x='243.2' y='88.6' width='47.8' height='115.4' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='267.1' y='84.6' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>74</text><rect x='293.0' y='80.8' width='47.8' height='123.2' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='316.9' y='76.8' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>79</text></svg>",
+      "caption": "Perbandingan kapasitas tersisa baterai Tipe X dan Tipe Y setelah 500 siklus pengisian pada suhu 25°C dan 40°C.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "bar",
+        "title": "Kapasitas Tersisa Baterai (%) Setelah 500 Siklus",
+        "categories": [
+          "Suhu 25°C",
+          "Suhu 40°C"
+        ],
+        "series": [
+          {
+            "name": "Baterai Tipe X (%)",
+            "values": [
+              88,
+              74
+            ]
+          },
+          {
+            "name": "Baterai Tipe Y (%)",
+            "values": [
+              82,
+              79
+            ]
+          }
+        ]
+      }
+    },
+    "z3_s1": {
+      "slot_id": "z3_s1",
+      "tipe": "svg",
+      "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='190' y='20' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Status Rehabilitasi Orangutan (Total: 80 Ekor)</text><path d='M 133 124 L 133.00 24.00 A 100 100 0 1 1 52.10 182.78 Z' fill='#34D399' stroke='#0B1120' stroke-width='1.5'/><rect x='243' y='56' width='10' height='10' fill='#34D399' rx='2'/><text x='259' y='64' fill='#E2E8F0' font-family='sans-serif' font-size='11'>Dilepasliarkan (Mampu Cari Pakan Mandiri)</text><text x='259' y='76' fill='#94A3B8' font-family='sans-serif' font-size='10'>65% (234°)</text><path d='M 133 124 L 52.10 182.78 A 100 100 0 0 1 133.00 24.00 Z' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/><rect x='243' y='80' width='10' height='10' fill='#38BDF8' rx='2'/><text x='259' y='88' fill='#E2E8F0' font-family='sans-serif' font-size='11'>Pelatihan Lanjutan di Karantina</text><text x='259' y='100' fill='#94A3B8' font-family='sans-serif' font-size='10'>35% (126°)</text></svg>",
+      "caption": "Distribusi status 80 ekor orangutan hasil rehabilitasi Balai Taman Nasional.",
+      "engine": "python_plot",
+      "plot_spec": {
+        "type": "pie",
+        "title": "Status Rehabilitasi Orangutan (Total: 80 Ekor)",
+        "slices": [
+          {
+            "label": "Dilepasliarkan (Mampu Cari Pakan Mandiri)",
+            "value": 52,
+            "color": "#34D399"
+          },
+          {
+            "label": "Pelatihan Lanjutan di Karantina",
+            "value": 28,
+            "color": "#38BDF8"
+          }
+        ]
+      }
+    }
+  },
+  "total_slots": 2
+}

@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "pu-01-05",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Sinyal dan Pola Evaluasi 5 Skala Kepastian",
+    "subjudul_ringkas": "Panduan taksonomi penanda teks dan data untuk menentukan tingkat kepastian pernyataan secara akurat.",
+    "mode_tampilan": "katalog_sinyal_pola",
+    "label_kolom": {
+      "kolom_1": "Kategori / Penanda Teks",
+      "kolom_2": "Contoh Potongan / Sinyal",
+      "kolom_3": "Cara Bedakan / Jebakan"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "1. Penanda Kepastian Mutlak (Pasti Benar & Pasti Salah)",
+        "ringkasan_kelompok": "Menguji kesesuaian atau pertentangan langsung pernyataan terhadap fakta eksplisit premis.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Parafrasa Sinonim dan Kontraposisi Logis (Pasti Benar)",
+            "penjelasan_singkat": "Pernyataan mengubah diksi premis dengan padanan makna setara atau bentuk ekuivalensi kontraposisi $P \\rightarrow Q \\equiv \\neg Q \\rightarrow \\neg P$.",
+            "contoh_penerapan": "Premis: Jika curah hujan tinggi, debit sungai naik. Pernyataan PB: **Debit sungai tidak naik menandakan curah hujan tidak tinggi**.",
+            "jebakan_atau_catatan": "Jangan terkecoh invers ($\\neg P \\rightarrow \\neg Q$) atau konvers ($Q \\rightarrow P$); keduanya bukan ekuivalensi mutlak sehingga bernilai Mungkin Benar."
+          },
+          {
+            "judul_poin": "Penyempitan Kuantor Universal ke Partikular (Pasti Benar)",
+            "penjelasan_singkat": "Premis berkuantor universal (*semua*, *seluruh*, *setiap*) secara otomatis menjamin kebenaran klaim berkuantor partikular (*sebagian*, *beberapa*).",
+            "contoh_penerapan": "Premis: Seluruh peserta lolos seleksi wajib daftar ulang. Pernyataan PB: **Sebagian peserta yang lolos seleksi wajib melakukan daftar ulang**.",
+            "jebakan_atau_catatan": "Di logika formal UTBK, kata *sebagian* bermakna minimal satu anggota dan tidak menafikan keseluruhan anggota himpunan."
+          },
+          {
+            "judul_poin": "Kontradiksi Langsung dan Pembalikan Kausalitas (Pasti Salah)",
+            "penjelasan_singkat": "Pernyataan menegasi angka, syarat, atau arah hubungan sebab-akibat eksplisit ($A \\rightarrow B$ dibalik menjadi $B \\rightarrow A$) secara bertentangan.",
+            "contoh_penerapan": "Premis: Defisit kalori menurunkan massa lemak tubuh. Pernyataan PS: **Penurunan massa lemak tubuh merupakan penyebab utama terjadinya defisit kalori**.",
+            "jebakan_atau_catatan": "Periksa arah panah kausalitas; klaim yang menukar posisi sebab dan akibat dari fakta eksplisit pasti bernilai Salah."
+          },
+          {
+            "judul_poin": "Generalisasi Mutlak atas Premis Terbatas (Pasti Salah)",
+            "penjelasan_singkat": "Pernyataan memperluas premis berkuantor terbatas (*sebagian*, *hanya*, *umumnya*) menjadi klaim mutlak tanpa pengecualian (*semua*, *selalu*, *pasti*).",
+            "contoh_penerapan": "Premis: Sebagian besar karyawan bekerja dari rumah pada Jumat. Pernyataan PS: **Seluruh karyawan tanpa terkecuali bekerja dari rumah setiap Jumat**.",
+            "jebakan_atau_catatan": "Sinyal *sebagian besar* menyisakan minoritas pengecualian; klaim *seluruh* langsung bertentangan dengan batas kuantitas premis tersebut."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "2. Pembeda Celah Informasi (Mungkin Benar vs. Mungkin Salah)",
+        "ringkasan_kelompok": "Menilai klaim dalam cakupan topik yang belum memiliki bukti konklusif pada premis.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Ekstrapolasi Konsekuensi Searah Premis (Mungkin Benar)",
+            "penjelasan_singkat": "Pernyataan melanjutkan dampak logis atau korelasi positif dari fakta teks, tetapi teks tidak mencantumkan bukti kejadiannya.",
+            "contoh_penerapan": "Premis: Harga pupuk naik $30\\%$ musim ini. Pernyataan MB: **Biaya produksi petani padi berpotensi meningkat pada masa panen mendatang**.",
+            "jebakan_atau_catatan": "Klaim terasa sangat masuk akal, tetapi tetap Mungkin Benar selama belum ada kalimat eksplisit yang mengonfirmasi dampak tersebut."
+          },
+          {
+            "judul_poin": "Peluang Pengecualian atau Kondisi Alternatif (Mungkin Salah)",
+            "penjelasan_singkat": "Pernyataan meragukan kecenderungan umum premis atau mengajukan faktor penghambat yang tidak dibantah maupun dibuktikan oleh teks.",
+            "contoh_penerapan": "Premis: Obat X efektif meredakan demam pada orang dewasa. Pernyataan MS: **Obat X tidak memberikan efek serupa pada pasien lansia**.",
+            "jebakan_atau_catatan": "Jangan pilih Pasti Salah karena premis tidak menutup kemungkinan pengecualian pada subkelompok lain yang belum diuji."
+          },
+          {
+            "judul_poin": "Asumsi Syarat Tambahan di Luar Teks (MB/MS)",
+            "penjelasan_singkat": "Pernyataan menyisipkan mekanisme perantara spesifik untuk menjelaskan fakta premis tanpa dukungan data eksplisit pada bacaan.",
+            "contoh_penerapan": "Premis: Penjualan buku cetak turun selama dua tahun. Pernyataan MB: **Penurunan tersebut dipicu oleh beralihnya pembaca ke buku digital**.",
+            "jebakan_atau_catatan": "Jika mekanisme masih dalam domain topik namun tidak disebutkan di teks, nilainya Mungkin Benar/Salah, bukan Tidak Relevan."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "3. Detektor Pergeseran Lingkup (Tidak Relevan)",
+        "ringkasan_kelompok": "Mengidentifikasi pernyataan yang membawa variabel asing di luar batas pembahasan wacana.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pengenalan Variabel atau Objek Asing (Tidak Relevan)",
+            "penjelasan_singkat": "Pernyataan membandingkan atau membahas entitas, lokasi, maupun parameter baru yang sama sekali tidak disinggung dalam premis.",
+            "contoh_penerapan": "Premis: Konsumsi teh hijau meningkatkan fokus kerja. Pernyataan TR: **Kopi arabika memiliki kandungan kafein lebih tinggi daripada teh hitam**.",
+            "jebakan_atau_catatan": "Bedakan dengan MB/MS: jika objek dan variabelnya terputus total dari topik premis, pilih Tidak Relevan."
+          },
+          {
+            "judul_poin": "Penilaian Normatif atas Fakta Empiris (Tidak Relevan)",
+            "penjelasan_singkat": "Pernyataan memuat opini nilai atau anjuran (*sebaiknya*, *harus*, *lebih bermoral*) terhadap teks yang murni memaparkan fakta deskriptif.",
+            "contoh_penerapan": "Premis: Pembangunan jalan tol memangkas waktu tempuh antarprovinsi. Pernyataan TR: **Pemerintah sebaiknya memprioritaskan subsidi transportasi umum dibandingkan jalan tol**.",
+            "jebakan_atau_catatan": "Sinyal kata *sebaiknya* atau *seharusnya* pada wacana non-persuasif menandakan pergeseran dari ranah fakta ke opini luar teks."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "4. Evaluasi Tingkat Kepastian pada Tabel dan Grafik",
+        "ringkasan_kelompok": "Menentukan skala kepastian klaim kuantitatif berdasarkan batas data tabel atau grafik eksperimen.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Verifikasi Selisih dan Tren Monoton Eksplisit (PB/PS)",
+            "penjelasan_singkat": "Klaim tentang nilai selisih, rasio, atau kenaikan konsisten antarbaris tabel dapat dipastikan langsung melalui perhitungan data tercatat.",
+            "contoh_penerapan": "Tabel mencatat suhu naik dari $25^{\\circ}\\text{C}$ ke $35^{\\circ}\\text{C}$ setiap jam. Pernyataan PB: **Kenaikan suhu konstan sebesar $10^{\\circ}\\text{C}$ per jam**.",
+            "jebakan_atau_catatan": "Periksa satuan sumbu dan loncatan interval waktu; salah baca satuan mengubah status pernyataan dari Pasti Benar menjadi Pasti Salah."
+          },
+          {
+            "judul_poin": "Proyeksi di Luar Rentang Pengukuran Data (MB/MS)",
+            "penjelasan_singkat": "Klaim yang menebak nilai di luar batas waktu atau dosis tertinggi pada tabel hanya bersifat prediktif (*Mungkin Benar/Salah*).",
+            "contoh_penerapan": "Grafik mengukur pertumbuhan tanaman hingga hari ke-$14$. Pernyataan MB: **Tinggi tanaman akan terus bertambah secara linear pada hari ke-$21$**.",
+            "jebakan_atau_catatan": "Tren naik hingga titik akhir grafik tidak menjamin tren berlanjut; titik jenuh atau penurunan tetap mungkin terjadi setelahnya."
+          },
+          {
+            "judul_poin": "Klaim Mekanisme Biologis atau Kimia di Balik Tabel (MB/TR)",
+            "penjelasan_singkat": "Tabel eksperimen hanya merekam variabel terukur; penjelasan penyebab mikroskopis yang tidak ditulis pada keterangan grafik bernilai belum pasti.",
+            "contoh_penerapan": "Tabel menunjukkan laju reaksi meningkat pada $\\text{pH } 7$. Pernyataan MB: **Struktur enzim bekerja paling stabil pada kondisi netral tersebut**.",
+            "jebakan_atau_catatan": "Jika klaim menyebut variabel yang tidak ada di judul, sumbu, maupun catatan tabel, klasifikasikan sebagai Tidak Relevan."
+          }
+        ]
+      }
+    ]
+  }
+}

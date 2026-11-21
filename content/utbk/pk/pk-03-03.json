@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Sebuah koin adil dilempar 3 kali berturut-turut. Jika dua lemparan pertama selalu muncul Gambar, berapakah peluang lemparan ketiga muncul Angka?",
@@ -27,6 +27,116 @@
       "tipe": "svg",
       "kode": "<svg viewBox='0 0 520 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='10'/><g transform='translate(20, 15)'><circle cx='95' cy='95' r='80' fill='#F8FAFC' stroke='#3B82F6' stroke-width='2'/><circle cx='95' cy='95' r='3.5' fill='#1E40AF'/><text x='88' y='90' font-family='sans-serif' font-size='10' font-weight='bold' fill='#1E40AF'>O</text><line x1='95' y1='95' x2='175' y2='95' stroke='#2563EB' stroke-width='2'/><text x='135' y='90' font-family='sans-serif' font-size='10' font-weight='bold' fill='#2563EB'>r (jari-jari)</text><line x1='15' y1='95' x2='175' y2='95' stroke='#94A3B8' stroke-dasharray='3 3' stroke-width='1.2'/><text x='45' y='90' font-family='sans-serif' font-size='9' fill='#64748B'>d = 2r</text><path d='M95 95 L145 35 A80 80 0 0 1 175 95 Z' fill='#FEF3C7' fill-opacity='0.6' stroke='#F59E0B' stroke-width='1.5'/><text x='135' y='72' font-family='sans-serif' font-size='9' font-weight='bold' fill='#B45309'>Juring</text><line x1='95' y1='175' x2='175' y2='95' stroke='#10B981' stroke-width='2'/><text x='140' y='145' font-family='sans-serif' font-size='9' font-weight='bold' fill='#047857'>Tali Busur</text><path d='M95 175 A80 80 0 0 0 175 95 Z' fill='#ECFDF5' fill-opacity='0.6'/><text x='155' y='160' font-family='sans-serif' font-size='8.5' font-weight='bold' fill='#059669'>Tembereng</text></g><g transform='translate(230, 20)'><rect x='0' y='0' width='270' height='180' rx='8' fill='#F8FAFC' stroke='#CBD5E1' stroke-width='1.5'/><text x='135' y='26' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Rumus Kunci Lingkaran UTBK</text><text x='15' y='52' font-family='sans-serif' font-size='10.5' font-weight='bold' fill='#2563EB'>• Keliling &amp; Luas:</text><text x='25' y='70' font-family='sans-serif' font-size='10' fill='#334155'>K = 2πr = πd  |  L = πr² = ¼πd²</text><text x='15' y='95' font-family='sans-serif' font-size='10.5' font-weight='bold' fill='#D97706'>• Hubungan Sudut Pusat &amp; Keliling:</text><text x='25' y='113' font-family='sans-serif' font-size='10' fill='#78350F'>Sudut Pusat = 2 × Sudut Keliling (Busur sama)</text><text x='15' y='138' font-family='sans-serif' font-size='10.5' font-weight='bold' fill='#059669'>• Juring &amp; Busur (Sudut α):</text><text x='25' y='154' font-family='sans-serif' font-size='10' fill='#064E3B'>Panjang Busur = (α/360°) × 2πr</text><text x='25' y='170' font-family='sans-serif' font-size='10' fill='#064E3B'>Luas Juring = (α/360°) × πr²</text></g></svg>",
       "caption": "Anatomi lingkaran, relasi tali busur-tembereng, serta perbandingan sudut pusat dan sudut keliling."
+    },
+    "detail_materi_lengkap": {
+      "judul_blok": "Katalog Lengkap Rumus & Sifat Peluang Kejadian Majemuk dan Bersyarat",
+      "subjudul_ringkas": "Rangkuman sistematis rumus peluang gabungan, saling bebas, komplemen, bersyarat, empiris, dan frekuensi harapan untuk UTBK-SNBT.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_2": "Contoh Hitung Mini",
+        "kolom_3": "Jebakan / Trik Cepat"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Peluang Klasik & Aturan Penjumlahan (ATAU)",
+          "ringkasan_kelompok": "Konsep ruang sampel kombinasi serta gabungan kejadian saling lepas dan tidak saling lepas.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Peluang Klasik Pengambilan Sekaligus dengan Kombinasi",
+              "penjelasan_singkat": "Pengambilan $r$ objek sekaligus tanpa memperhatikan urutan dari $n$ objek menggunakan kombinasi: $P(A) = \\frac{n(A)}{\\binom{n}{r}}$.",
+              "contoh_penerapan": "Ambil 2 bola dari 3 merah dan 2 biru: **$P(\\text{2 merah}) = \\frac{\\binom{3}{2}}{\\binom{5}{2}} = \\frac{3}{10}$**.",
+              "jebakan_atau_catatan": "Jangan gunakan permutasi jika pengambilan dilakukan sekaligus karena urutan terambil tidak memengaruhi ruang sampel.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Peluang Gabungan Dua Kejadian Tidak Saling Lepas",
+              "penjelasan_singkat": "Jika $A$ dan $B$ memiliki irisan ($A \\cap B \\neq \\emptyset$), berlaku $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+              "contoh_penerapan": "Satu dadu dilempar, peluang mata genap atau prima adalah **$P(G \\cup P) = \\frac{3}{6} + \\frac{3}{6} - \\frac{1}{6} = \\frac{5}{6}$**.",
+              "jebakan_atau_catatan": "Peserta sering lupa mengurangkan irisan ($\\{2\\}$ pada dadu), sehingga hasil peluang terhitung ganda.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Peluang Gabungan Dua Kejadian Saling Lepas",
+              "penjelasan_singkat": "Jika $A$ dan $B$ mustahil terjadi bersamaan ($P(A \\cap B) = 0$), maka $P(A \\cup B) = P(A) + P(B)$.",
+              "contoh_penerapan": "Ambil 1 kartu bridge, peluang As atau King adalah **$P(\\text{As} \\cup \\text{King}) = \\frac{4}{52} + \\frac{4}{52} = \\frac{2}{13}$**.",
+              "jebakan_atau_catatan": "Bedakan saling lepas ($P(A \\cap B)=0$) dengan saling bebas ($P(A \\cap B)=P(A)\\cdot P(B)$); keduanya konsep berbeda.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Batas Nilai Peluang & Selisih Dua Kejadian",
+              "penjelasan_singkat": "Nilai peluang memenuhi $0 \\le P(A) \\le 1$, sedangkan peluang hanya $A$ dirumuskan $P(A - B) = P(A) - P(A \\cap B)$.",
+              "contoh_penerapan": "Diketahui $P(A)=0,6$ dan $P(A \\cap B)=0,2$, peluang hanya $A$ terjadi adalah **$P(A \\cap B^c) = 0,6 - 0,2 = 0,4$**.",
+              "jebakan_atau_catatan": "Frasa hanya $A$ berarti $A$ terjadi tanpa $B$, bukan $P(A)$ utuh; wajib kurangi irisannya.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Aturan Perkalian (DAN) & Peluang Komplemen",
+          "ringkasan_kelompok": "Peluang kejadian saling bebas, pengambilan dengan pengembalian, serta trik komplemen minimal satu.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Peluang Dua Kejadian Saling Bebas (Dengan Pengembalian)",
+              "penjelasan_singkat": "Kejadian $A$ tidak memengaruhi peluang $B$, sehingga irisan keduanya berlaku $P(A \\cap B) = P(A) \\times P(B)$.",
+              "contoh_penerapan": "Lempar 1 koin dan 1 dadu bersamaan: **$P(\\text{Angka dan } 6) = \\frac{1}{2} \\times \\frac{1}{6} = \\frac{1}{12}$**.",
+              "jebakan_atau_catatan": "Pengambilan objek dengan pengembalian selalu menghasilkan kejadian saling bebas karena penyebut ruang sampel tetap konstan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sifat Dasar Peluang Kejadian Komplemen ($A^c$)",
+              "penjelasan_singkat": "Peluang kejadian $A$ tidak terjadi dirumuskan $P(A^c) = 1 - P(A)$ dengan $P(A) + P(A^c) = 1$.",
+              "contoh_penerapan": "Jika peluang turun hujan adalah $0,35$, peluang tidak hujan adalah **$P(\\text{tidak hujan}) = 1 - 0,35 = 0,65$**.",
+              "jebakan_atau_catatan": "Gunakan komplemen saat menghitung kasus langsung membutuhkan terlalu banyak penjumlahan kombinasi yang menyita waktu.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Trik Cepat Peluang Kejadian Minimal Satu ($\\ge 1$)",
+              "penjelasan_singkat": "Gunakan komplemen nol kejadian untuk kata kunci minimal satu: $P(\\text{minimal } 1) = 1 - P(\\text{tidak ada sama sekali})$.",
+              "contoh_penerapan": "Lempar 3 koin seimbang, peluang muncul minimal 1 gambar adalah **$1 - P(\\text{3 angka}) = 1 - (\\frac{1}{2})^3 = \\frac{7}{8}$**.",
+              "jebakan_atau_catatan": "Hindari menghitung manual kasus tepat 1, tepat 2, dan tepat 3; komplemen memangkas hitungan drastis.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Peluang Bersyarat, Empiris, & Frekuensi Harapan",
+          "ringkasan_kelompok": "Penyempitan ruang sampel bersyarat, tabel kontingensi dua arah, peluang empiris, dan frekuensi harapan.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Peluang Bersyarat Pengambilan Berurutan Tanpa Pengembalian",
+              "penjelasan_singkat": "Peluang $A$ setelah $B$ terjadi adalah $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$ dengan $P(B) > 0$; sampel berkurang.",
+              "contoh_penerapan": "Kotak berisi 4 merah dan 6 putih diambil berurutan tanpa pengembalian: **$P(M_2 | M_1) = \\frac{3}{9} = \\frac{1}{3}$**.",
+              "jebakan_atau_catatan": "Penyebut dan pembilang sama-sama berkurang 1 jika objek kedua berjenis sama dengan objek pertama terambil.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Peluang Bersyarat pada Tabel Kontingensi Dua Arah",
+              "penjelasan_singkat": "Syarat $|B$ membatasi penyebut hanya pada total baris atau kolom $B$: $P(A|B) = \\frac{n(A \\cap B)}{n(B)}$.",
+              "contoh_penerapan": "Dari 40 siswa (25 IPA, 15 IPS), 10 IPA berkacamata: **$P(\\text{kacamata}|\\text{IPA}) = \\frac{10}{25} = \\frac{2}{5}$**.",
+              "jebakan_atau_catatan": "Jangan membagi dengan total populasi ($40$); perhatikan kata kunci jika diketahui sebagai penentu penyebut baru.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Peluang Empiris Berdasarkan Frekuensi Relatif Percobaan",
+              "penjelasan_singkat": "Peluang hasil observasi nyata dirumuskan $P(A) = \\frac{f(A)}{n}$, dengan $f(A)$ frekuensi munculnya $A$ dari $n$ percobaan.",
+              "contoh_penerapan": "Koin dilempar 50 kali dan muncul angka 28 kali, maka **$P_{\\text{empiris}}(\\text{Angka}) = \\frac{28}{50} = 0,56$**.",
+              "jebakan_atau_catatan": "Peluang empiris bergantung pada data percobaan yang disajikan soal, bukan nilai teoretis ideal ($0,5$).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Frekuensi Harapan ($F_h$) pada Percobaan Berulang",
+              "penjelasan_singkat": "Ekspektasi banyaknya kejadian $A$ muncul dalam $N$ kali percobaan berulang dirumuskan $F_h(A) = N \\times P(A)$.",
+              "contoh_penerapan": "Dua dadu dilempar 180 kali, frekuensi harapan jumlah mata dadu 7 adalah **$F_h = 180 \\times \\frac{6}{36} = 30$ kali**.",
+              "jebakan_atau_catatan": "Frekuensi harapan menyatakan jumlah kemunculan yang diharapkan sehingga nilainya boleh lebih besar dari 1.",
+              "visual": null
+            }
+          ]
+        }
+      ]
     }
   },
   "zona_2_variasi_inti": [

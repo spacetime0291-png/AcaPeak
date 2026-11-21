@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "pu-03-04",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Rumus & Sifat Perbandingan UTBK",
+    "subjudul_ringkas": "Panduan komprehensif proporsi senilai, berbalik nilai, interupsi proyek, gabungan variabel, hingga laju kerja bersama.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Perbandingan Senilai & Aplikasi Skala",
+        "ringkasan_kelompok": "Kaidah hubungan sejalan dua variabel, rasio berantai, pembagian proporsional, serta konversi skala.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Proporsi Senilai Dasar (Rasio Lurus)",
+            "penjelasan_singkat": "Dua besaran berubah sejalan dengan rasio tetap $\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$, berlaku pada nilai positif ($a, b > 0$).",
+            "contoh_penerapan": "Bensin $4\\text{ L}$ menempuh $60\\text{ km}$, maka $10\\text{ L}$ menempuh $\\frac{10}{4} \\times 60 = \\mathbf{150\\text{ km}}$.",
+            "jebakan_atau_catatan": "Jangan menyamakan selisih ($+6\\text{ L}$ bukan berarti $+6\\text{ km}$); gunakan pengali rasio tetap atau perkalian silang."
+          },
+          {
+            "judul_poin": "Proporsi Multi-Tahap & Rasio Berantai",
+            "penjelasan_singkat": "Menyatukan dua perbandingan terpisah ($A:B$ dan $B:C$) dengan menyamakan nilai faktor persekutuan $B$ menggunakan KPK.",
+            "contoh_penerapan": "Jika $A:B = 2:3$ dan $B:C = 4:5$, samakan $B=12$ menjadi **$A:B:C = 8:12:15$**.",
+            "jebakan_atau_catatan": "Dilarang langsung menggabung menjadi $2:3:5$ tanpa menyamakan angka pada variabel penghubung yang sama."
+          },
+          {
+            "judul_poin": "Pembagian Nilai Berdasarkan Rasio",
+            "penjelasan_singkat": "Nilai bagian dicari dengan rumus $\\text{Bagian}_A = \\frac{r_A}{r_{\\text{penentu}}} \\times \\text{Nilai Diketahui}$, disesuaikan dengan jenis total atau selisih.",
+            "contoh_penerapan": "Rasio uang $3:5$ dengan selisih $\\text{Rp}40.000$, maka uang terbesar adalah $\\frac{5}{5-3} \\times 40.000 = \\mathbf{\\text{Rp}100.000}$.",
+            "jebakan_atau_catatan": "Perhatikan penyebut rumus: pakai jumlah rasio ($r_A + r_B$) jika diketahui total, dan selisih ($|r_A - r_B|$) jika selisih."
+          },
+          {
+            "judul_poin": "Skala Jarak, Luas, dan Volume",
+            "penjelasan_singkat": "Jika skala panjang $1:k$, maka perbandingan jarak $1:k$, perbandingan luas $1:k^2$, dan perbandingan volume $1:k^3$.",
+            "contoh_penerapan": "Peta berskala $1:200$ dengan luas gambar $5\\text{ cm}^2$ memiliki luas sebenarnya $5 \\times 200^2 = \\mathbf{200.000\\text{ cm}^2}$ ($20\\text{ m}^2$).",
+            "jebakan_atau_catatan": "Kesalahan fatal: mengalikan luas gambar dengan $k$ saja (bukan $k^2$) dan lupa menyamakan satuan $\\text{cm}^2$ ke $\\text{m}^2$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Perbandingan Berbalik Nilai & Interupsi Proyek",
+        "ringkasan_kelompok": "Kaidah hubungan berlawanan dua variabel serta perhitungan sisa beban kerja saat proyek terhenti.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Proporsi Berbalik Nilai Klasik",
+            "penjelasan_singkat": "Satu besaran naik menyebabkan besaran lain turun dengan hasil kali konstan: $a_1 \\times b_1 = a_2 \\times b_2$ ($a, b > 0$).",
+            "contoh_penerapan": "Proyek selesai oleh $12$ pekerja dalam $20$ hari; jika $15$ pekerja, selesai dalam $\\frac{12 \\times 20}{15} = \\mathbf{16\\text{ hari}}$.",
+            "jebakan_atau_catatan": "Jangan kali silang seperti perbandingan senilai; kalikan lurus sejajar baris ($\\text{pekerja}_1 \\times \\text{hari}_1 = \\text{pekerja}_2 \\times \\text{hari}_2$)."
+          },
+          {
+            "judul_poin": "Kecepatan dan Waktu pada Jarak Tetap",
+            "penjelasan_singkat": "Untuk jarak tempuh konstan ($s$), kecepatan berbanding terbalik dengan waktu tempuh: $v_1 \\times t_1 = v_2 \\times t_2$.",
+            "contoh_penerapan": "Kecepatan $60\\text{ km/jam}$ butuh $4\\text{ jam}$; agar sampai dalam $3\\text{ jam}$, kecepatan menjadi $\\frac{60 \\times 4}{3} = \\mathbf{80\\text{ km/jam}}$.",
+            "jebakan_atau_catatan": "Pastikan satuan waktu seragam (ubah menit ke jam) dan waspadai pertanyaan tambahan kecepatan ($80 - 60 = 20\\text{ km/jam}$)."
+          },
+          {
+            "judul_poin": "Interupsi Proyek: Berhenti di Tengah",
+            "penjelasan_singkat": "Hitung sisa beban kerja setelah dikerjakan lalu terhenti: $P_{\\text{awal}} \\times S_{\\text{rencana}} = P_{\\text{baru}} \\times S_{\\text{aktual}}$.",
+            "contoh_penerapan": "Target $30$ hari oleh $10$ orang, kerja $6$ hari lalu libur $4$ hari; butuh $\\frac{10 \\times 24}{20} = \\mathbf{12\\text{ orang}}$ ($+2$ pekerja).",
+            "jebakan_atau_catatan": "Sisa hari rencana adalah $\\text{Total} - \\text{Sudah Kerja}$, sedangkan sisa hari aktual dikurangi lagi lama libur."
+          },
+          {
+            "judul_poin": "Perubahan Jumlah Pekerja Tanpa Henti",
+            "penjelasan_singkat": "Jika pekerja berkurang atau bertambah di tengah jalan tanpa libur, samakan sisa beban kerja: $P_1 \\times S_1 = P_2 \\times S_2$.",
+            "contoh_penerapan": "Target $20$ hari oleh $15$ orang; setelah $8$ hari, $3$ orang mundur, sisa selesai dalam $\\frac{15 \\times 12}{12} = \\mathbf{15\\text{ hari}}$.",
+            "jebakan_atau_catatan": "Total lama proyek adalah $\\text{hari sudah berjalan} + \\text{sisa hari baru}$ ($8 + 15 = 23$ hari), bukan hanya $15$ hari."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Perbandingan Gabungan & Laju Kerja Bersama",
+        "ringkasan_kelompok": "Rumus pengayaan multi-variabel (subjek-waktu-hasil) dan penggabungan kecepatan kerja individu.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Perbandingan Gabungan 3 Variabel",
+            "penjelasan_singkat": "Menggabungkan subjek ($O$), waktu ($t$), dan hasil kerja ($W$) dalam satu persamaan konstan: $\\frac{O_1 \\cdot t_1}{W_1} = \\frac{O_2 \\cdot t_2}{W_2}$.",
+            "contoh_penerapan": "$4$ mesin cetak $200$ buku dalam $2$ jam; $6$ mesin dalam $3$ jam mencetak $\\frac{6 \\times 3 \\times 200}{4 \\times 2} = \\mathbf{450\\text{ buku}}$.",
+            "jebakan_atau_catatan": "Variabel hasil kerja ($W$) wajib berada di penyebut (bawah), sedangkan subjek ($O$) dan waktu ($t$) dikalikan di pembilang."
+          },
+          {
+            "judul_poin": "Laju Kerja Bersama Dua Objek",
+            "penjelasan_singkat": "Jika $A$ selesai dalam $t_A$ dan $B$ dalam $t_B$, waktu kerja bersama memenuhi $\\frac{1}{t_{\\text{total}}} = \\frac{1}{t_A} + \\frac{1}{t_B}$.",
+            "contoh_penerapan": "$A$ mengecat selesai $6$ jam, $B$ selesai $3$ jam; jika bekerja bersama selesai dalam $\\frac{6 \\times 3}{6 + 3} = \\mathbf{2\\text{ jam}}$.",
+            "jebakan_atau_catatan": "Dilarang merata-ratakan waktu ($\\frac{6+3}{2} = 4,5$ jam salah); gunakan jalan pintas $\\frac{t_A \\times t_B}{t_A + t_B}$ untuk dua objek."
+          },
+          {
+            "judul_poin": "Kerja Bersama dengan Pola Bertahap",
+            "penjelasan_singkat": "Total porsi pekerjaan utuh bernilai $1$; jumlahkan fraksi waktu kerja masing-masing: $\\frac{t_{\\text{aktif},A}}{t_A} + \\frac{t_{\\text{aktif},B}}{t_B} = 1$.",
+            "contoh_penerapan": "$A$ ($10$ hari) kerja sendiri $4$ hari, lalu dibantu $B$ ($15$ hari) selama $x$ hari: $\\frac{4+x}{10} + \\frac{x}{15} = 1 \\rightarrow \\mathbf{x = 3,6\\text{ hari}}$.",
+            "jebakan_atau_catatan": "Pastikan waktu aktif $A$ mencakup durasi saat bekerja sendiri maupun saat bekerja bersama $B$."
+          }
+        ]
+      }
+    ]
+  }
+}

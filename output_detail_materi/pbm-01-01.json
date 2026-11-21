@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "pbm-01-01",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Kaidah Pemakaian Huruf Kapital dan Huruf Miring (EYD V)",
+    "subjudul_ringkas": "Panduan lengkap aturan kapitalisasi nama diri, gelar, identitas, serta huruf miring istilah asing dan judul.",
+    "mode_tampilan": "katalog_kaidah",
+    "label_kolom": {
+      "kolom_1": "Aturan / Kaidah",
+      "kolom_2": "Contoh Benar (1 Kalimat)",
+      "kolom_3": "Bentuk Salah / Jebakan UTBK"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Kapitalisasi Nama Geografi, Gelar, dan Sapaan",
+        "ringkasan_kelompok": "Pembedaan penulisan kapital pada unsur geografis, jabatan, dan kata sapaan.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Nama Diri Geografi vs. Geografi Umum",
+            "penjelasan_singkat": "Huruf kapital dipakai pada nama geografi yang diikuti nama diri, sedangkan geografi tanpa nama diri ditulis nonkapital.",
+            "contoh_penerapan": "Kapal feri itu menyeberangi **Selat Sunda** sebelum akhirnya berlabuh di **pelabuhan** kecil dekat muara **sungai**.",
+            "jebakan_atau_catatan": "Salah: menyeberangi selat Sunda atau berlayar di Sungai (tanpa nama). Kata jenis geografi wajib kapital jika diikuti nama diri."
+          },
+          {
+            "judul_poin": "Nama Jenis vs. Khas Asal Daerah",
+            "penjelasan_singkat": "Nama geografi sebagai nama jenis ditulis nonkapital, sedangkan nama produk khas asal daerah tetap ditulis kapital.",
+            "contoh_penerapan": "Ibu membeli **jeruk bali** dan **gula jawa** di pasar, lalu menyantap **pempek Palembang** serta **batik Pekalongan**.",
+            "jebakan_atau_catatan": "Jebakan: jeruk Bali (salah, karena hanya nama jenis varietas) vs. batik pekalongan (salah, karena merujuk kekhasan asal daerah)."
+          },
+          {
+            "judul_poin": "Gelar, Jabatan, dan Pangkat",
+            "penjelasan_singkat": "Huruf kapital dipakai jika gelar, jabatan, atau pangkat diikuti nama orang, nama instansi, atau nama tempat.",
+            "contoh_penerapan": "Rapat terbatas tersebut dipimpin langsung oleh **Gubernur Jawa Barat** bersama **Profesor** Hendra selaku **dekan** baru.",
+            "jebakan_atau_catatan": "Salah: Ia bercita-cita menjadi Gubernur (tanpa nama daerah/orang). Jabatan tanpa pengikut nama diri wajib ditulis huruf nonkapital."
+          },
+          {
+            "judul_poin": "Kata Kekerabatan dan Sapaan",
+            "penjelasan_singkat": "Kata kekerabatan seperti Bapak, Ibu, atau Saudara ditulis kapital hanya saat dipakai dalam penyapaan atau pengacuan.",
+            "contoh_penerapan": "\"Kapan **Bapak** berangkat ke Jakarta?\" tanya Andi kepada ayahnya sebelum menyerahkan surat untuk **Saudara** Rina.",
+            "jebakan_atau_catatan": "Salah: Semua anak wajib menghormati Bapak dan Ibu kandungnya (bukan sapaan/pengacuan langsung)."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Kapitalisasi Identitas, Peristiwa Sejarah, dan Dokumen",
+        "ringkasan_kelompok": "Aturan kapitalisasi pada nama bangsa, kata turunan, sejarah, dan dokumen resmi.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Nama Bangsa, Suku, dan Bahasa",
+            "penjelasan_singkat": "Huruf kapital dipakai pada nama bangsa, suku, dan bahasa, sementara kata bangsa, suku, dan bahasa tetap nonkapital.",
+            "contoh_penerapan": "Masyarakat **suku Dani** di Papua fasih bertutur menggunakan **bahasa Indonesia** selain bahasa daerah mereka sendiri.",
+            "jebakan_atau_catatan": "Salah: Bahasa Indonesia atau Suku Dani. Kata penjelas seperti bahasa, suku, dan bangsa selalu diawali huruf nonkapital."
+          },
+          {
+            "judul_poin": "Bentuk Turunan Nama Bangsa dan Bahasa",
+            "penjelasan_singkat": "Nama bangsa, suku, atau bahasa yang mendapat imbuhan (bentuk turunan) wajib ditulis dengan huruf nonkapital.",
+            "contoh_penerapan": "Nilai **keindonesiaan** harus terus dijaga agar generasi muda tidak bersikap **keinggris-inggrisan** dalam berkomunikasi sehari-hari.",
+            "jebakan_atau_catatan": "Salah: ke-Indonesia-an atau mengIndonesiakan. Imbuhan meleburkan status nama diri sehingga seluruh kata ditulis nonkapital."
+          },
+          {
+            "judul_poin": "Peristiwa Sejarah dan Dokumen Resmi",
+            "penjelasan_singkat": "Huruf kapital dipakai pada setiap unsur nama peristiwa sejarah dan dokumen resmi negara, kecuali kata tugas.",
+            "contoh_penerapan": "Hasil **Konferensi Meja Bundar** selaras dengan amanat **Undang-Undang Dasar Negara Republik Indonesia Tahun 1945** tentang kedaulatan.",
+            "jebakan_atau_catatan": "Salah: Menurut Undang-Undang yang berlaku (tidak merujuk nama dokumen spesifik). Jika umum, undang-undang dan perang ditulis nonkapital."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Huruf Miring dan Kapitalisasi Judul serta Istilah Asing",
+        "ringkasan_kelompok": "Kaidah penggunaan huruf miring dan kapital pada istilah asing serta judul karya.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Istilah Asing dan Daerah Belum Baku",
+            "penjelasan_singkat": "Kata atau ungkapan bahasa asing dan daerah yang belum diserap baku ke dalam KBBI wajib ditulis miring.",
+            "contoh_penerapan": "Masyarakat adat Aceh melaksanakan tradisi ***peusijuek*** sebagai bentuk syukur atas tercapainya kondisi ***status quo*** yang damai.",
+            "jebakan_atau_catatan": "Salah: memiringkan kata serapan baku seperti riset, sistem, atau unggah. Kata baku KBBI wajib ditulis tegak."
+          },
+          {
+            "judul_poin": "Nama Diri Lembaga dan Organisasi Asing",
+            "penjelasan_singkat": "Nama diri dalam bahasa asing seperti nama lembaga, organisasi, badan hukum, atau merek ditulis tegak dan kapital.",
+            "contoh_penerapan": "Indonesia bekerja sama dengan **World Health Organization** dan **United Nations** dalam penanganan wabah penyakit menular.",
+            "jebakan_atau_catatan": "Salah: World Health Organization ditulis miring. Semua nama diri lembaga atau merek asing wajib ditulis huruf tegak."
+          },
+          {
+            "judul_poin": "Kapitalisasi Judul Buku, Artikel, dan Media",
+            "penjelasan_singkat": "Semua kata pada judul karya diawali kapital, kecuali kata tugas (di, ke, dari, dan, yang, untuk) di tengah.",
+            "contoh_penerapan": "Novel klasik berjudul ***Dari Ave Maria ke Jalan Lain ke Roma*** karya Idrus masih relevan dikaji.",
+            "jebakan_atau_catatan": "Salah: ke dan Ke ditulis kapital di tengah judul. Kata tugas hanya kapital jika berada di awal judul."
+          },
+          {
+            "judul_poin": "Huruf Miring Judul Buku vs. Judul Artikel",
+            "penjelasan_singkat": "Judul buku dan nama media massa ditulis miring, sedangkan judul artikel, cerpen, atau bab ditulis tegak bertanda petik.",
+            "contoh_penerapan": "Saya membaca artikel **\"Dinamika Bahasa Milenial\"** yang dimuat dalam surat kabar ***Kompas*** edisi Minggu lalu.",
+            "jebakan_atau_catatan": "Salah: memiringkan judul artikel atau puisi dalam koran. Bagian dari terbitan wajib ditulis tegak diapit tanda petik."
+          }
+        ]
+      }
+    ]
+  }
+}

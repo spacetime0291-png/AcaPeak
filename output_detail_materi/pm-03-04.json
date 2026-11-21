@@ -1,0 +1,121 @@
+{
+  "kode_subbab": "pm-03-04",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus dan Sifat Pengukuran Waktu, Zona Waktu, Jadwal Siklik, serta Rute",
+    "subjudul_ringkas": "Katalog lengkap rumus konversi zona waktu, durasi multi-transit, jadwal siklik KPK-modulo, dan optimasi rute berbatas waktu.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Konversi Zona Waktu Nasional dan Internasional",
+        "ringkasan_kelompok": "Rumus pergeseran waktu lokal antarwilayah Indonesia dan lintas zona UTC dunia.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Pergeseran Zona Waktu Indonesia ($\\text{WIB}, \\text{WITA}, \\text{WIT}$)",
+            "penjelasan_singkat": "Selisih antarzona berturut-turut $1\\text{ jam}$; bergerak ke timur ditambah ($+$), sedangkan ke barat dikurangi ($-$).",
+            "contoh_penerapan": "Rapat daring pukul $09.00\\text{ WIB}$ dimulai serentak pada **$10.00\\text{ WITA}$** dan **$11.00\\text{ WIT}$** karena bergeser ke timur.",
+            "jebakan_atau_catatan": "Jangan menambah jam saat terbang dari Jayapura ($\\text{WIT}$) ke Jakarta ($\\text{WIB}$); arah barat wajib dikurangi $2\\text{ jam}$."
+          },
+          {
+            "judul_poin": "Rumus Umum Konversi Lintas $\\text{UTC}$",
+            "penjelasan_singkat": "Gunakan $T_{\\text{tujuan}} = T_{\\text{asal}} + \\Delta t_{\\text{tempuh}} + (\\text{UTC}_{\\text{tujuan}} - \\text{UTC}_{\\text{asal}})$ dengan tanda $\\text{UTC}$ barat bernilai negatif ($-$).",
+            "contoh_penerapan": "Terbang dari Jakarta ($\\text{UTC}+7$) pukul $10.00$ selama $14\\text{ jam}$ ke London ($\\text{UTC}+0$) tiba pukul **$17.00\\text{ waktu London}$**.",
+            "jebakan_atau_catatan": "Perhatikan zona barat ($\\text{UTC}-5$); selisih dengan $\\text{UTC}+7$ adalah $-5 - 7 = -12\\text{ jam}$, bukan selisih mutlaknya."
+          },
+          {
+            "judul_poin": "Pergantian Tanggal dan Batas Pukul $24.00$",
+            "penjelasan_singkat": "Jika waktu $\\ge 24.00$, kurangi $24\\text{ jam}$ dan tambah $1\\text{ hari}$; jika $< 00.00$, tambah $24\\text{ jam}$ dan mundur $1\\text{ hari}$.",
+            "contoh_penerapan": "Pukul $02.00\\text{ WIB}$ hari Selasa dikonversi ke New York ($\\text{UTC}-5$, selisih $-12\\text{ jam}$) menjadi **$14.00\\text{ hari Senin}$**.",
+            "jebakan_atau_catatan": "Soal sering menanyakan hari kedatangan, bukan sekadar jam; selalu cek apakah operasi melewati batas pukul $00.00$ atau $24.00$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Durasi Perjalanan Multi-Transit",
+        "ringkasan_kelompok": "Menghitung total waktu tempuh dan jeda transit lintas zona waktu secara akurat.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Total Durasi dengan Standardisasi Zona Acuan",
+            "penjelasan_singkat": "Konversikan waktu berangkat dan tiba final ke satu zona $\\text{UTC}$ yang sama sebelum menghitung selisih waktu totalnya.",
+            "contoh_penerapan": "Berangkat $08.00\\text{ WIB}$ ($\\text{UTC}+7$) dan tiba $15.00\\text{ WIT}$ ($\\text{UTC}+9$ atau $13.00\\text{ WIB}$) menghasilkan durasi total **$5\\text{ jam}$**.",
+            "jebakan_atau_catatan": "Mengurangkan langsung $15.00 - 08.00 = 7\\text{ jam}$ tanpa menyamakan zona $\\text{UTC}$ adalah kesalahan paling fatal."
+          },
+          {
+            "judul_poin": "Dekomposisi Waktu Terbang dan Jeda Transit",
+            "penjelasan_singkat": "Total perjalanan memenuhi $T_{\\text{total}} = \\sum t_{\\text{terbang}} + \\sum t_{\\text{transit}}$, dengan jeda transit dihitung dari selisih tiba dan berangkat lokal.",
+            "contoh_penerapan": "Terbang $2\\text{ jam}$, transit $1\\text{ jam } 30\\text{ menit}$, lalu terbang $3\\text{ jam}$ menghasilkan durasi perjalanan **$6\\text{ jam } 30\\text{ menit}$**.",
+            "jebakan_atau_catatan": "Waktu transit terjadi di satu bandara yang sama, sehingga tidak ada perubahan zona waktu selama masa tunggu transit."
+          },
+          {
+            "judul_poin": "Hitung Mundur Jadwal dari Batas Waktu Tiba",
+            "penjelasan_singkat": "Gunakan $T_{\\text{berangkat}} = T_{\\text{tiba}} - T_{\\text{total}} - (\\text{UTC}_{\\text{tujuan}} - \\text{UTC}_{\\text{asal}})$ untuk mengejar tenggat acara di kota tujuan.",
+            "contoh_penerapan": "Rapat di Makassar pukul $13.00\\text{ WITA}$ dengan durasi terbang $2\\text{ jam } 30\\text{ menit}$ dari Jakarta mewajibkan berangkat maksimal **$09.30\\text{ WIB}$**.",
+            "jebakan_atau_catatan": "Tambahkan waktu persiapan bandara ke dalam $T_{\\text{total}}$ jika soal mencantumkan syarat lapor diri sebelum keberangkatan."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Jadwal Siklik, KPK, dan Aritmetika Modulo",
+        "ringkasan_kelompok": "Menentukan jadwal pertemuan berulang berdasarkan kelipatan periode dan sisa pembagian waktu.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Pertemuan Ulang Dua atau Lebih Siklus ($\\text{KPK}$)",
+            "penjelasan_singkat": "Kejadian dengan periode berbeda $p_1, p_2, \\dots, p_n$ berulang bersamaan setiap kelipatan persekutuan terkecilnya, yaitu $\\text{KPK}(p_1, p_2, \\dots, p_n)$.",
+            "contoh_penerapan": "Bus A berangkat tiap $15\\text{ menit}$ dan Bus B tiap $20\\text{ menit}$ mulai $06.00$; keduanya bertemu lagi pukul **$07.00$** ($\\text{KPK} = 60$).",
+            "jebakan_atau_catatan": "Pastikan satuan seluruh periode sama (semua dalam menit, jam, atau hari) sebelum mencari nilai $\\text{KPK}$-nya."
+          },
+          {
+            "judul_poin": "Penentuan Hari Pertemuan dengan Modulo $7$",
+            "penjelasan_singkat": "Jika bertemu pada hari ke-$H$, pertemuan berikutnya jatuh pada hari $(H + \\text{KPK}) \\pmod{7}$ dengan maju sesuai sisa bagi.",
+            "contoh_penerapan": "Patroli bersama hari Rabu dengan $\\text{KPK} = 24\\text{ hari}$ bersisa $24 \\equiv 3 \\pmod{7}$, sehingga bertemu lagi hari **Sabtu**.",
+            "jebakan_atau_catatan": "Untuk jadwal mundur ke masa lalu, kurangi hari awal dengan sisa pembagian $\\text{KPK} \\pmod{7}$, bukan ditambah."
+          },
+          {
+            "judul_poin": "Penentuan Jam Pertemuan dengan Modulo $24$",
+            "penjelasan_singkat": "Untuk siklus jam, jam temu berikutnya adalah $(J_{\\text{awal}} + \\text{KPK}) \\pmod{24}$, dengan tambahan hari $\\lfloor \\frac{J_{\\text{awal}} + \\text{KPK}}{24} \\rfloor$.",
+            "contoh_penerapan": "Mesin dicek bersama pukul $14.00$ dengan $\\text{KPK} = 30\\text{ jam}$; karena $14 + 30 = 44 \\equiv 20 \\pmod{24}$, bertemu pukul **$20.00$ esoknya**.",
+            "jebakan_atau_catatan": "Sisa pembagian $0 \\pmod{24}$ berarti tepat pukul $00.00$ (tengah malam) pergantian hari, bukan pukul $24.00$ hari sebelumnya."
+          },
+          {
+            "judul_poin": "Siklus dengan Waktu Mulai Berbeda (*Offset*)",
+            "penjelasan_singkat": "Jika dua aktivitas mulai pada waktu berbeda, daftar kelipatan masing-masing dari titik mulainya hingga menemukan titik temu pertama.",
+            "contoh_penerapan": "Lampu A nyala tiap $4\\text{ menit}$ mulai $08.00$, lampu B tiap $6\\text{ menit}$ mulai $08.02$; keduanya menyala bersamaan pukul **$08.08$**.",
+            "jebakan_atau_catatan": "Jangan langsung memakai $\\text{KPK}(4,6) = 12$ dari $08.00$ karena waktu mulai kedua lampu tidak serentak."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Optimasi Rute dan Kendala Waktu Operasional",
+        "ringkasan_kelompok": "Strategi penyusunan urutan kunjungan multi-titik agar memenuhi jam buka dan batas waktu.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Prioritas Batas Jam Tutup (*Time Window*)",
+            "penjelasan_singkat": "Kunjungi lokasi dengan jam tutup paling awal terlebih dahulu selama waktu tempuh mencukupi sebelum mencari rute terpendek.",
+            "contoh_penerapan": "Kurir pukul $15.00$ wajib mendahulukan **Kantor Pos (tutup $16.00$)** daripada Gudang (tutup $20.00$) meski jarak Gudang lebih dekat.",
+            "jebakan_atau_catatan": "Memilih rute terdekat tanpa mengecek jam tutup menyebabkan titik berikutnya gagal dikunjungi karena sudah tutup."
+          },
+          {
+            "judul_poin": "Perhitungan Waktu Tunggu Sebelum Jam Buka",
+            "penjelasan_singkat": "Jika tiba di lokasi $i$ sebelum jam buka $B_i$, waktu selesai layanan dihitung dari $B_i + t_{\\text{layanan}}$, bukan waktu tiba.",
+            "contoh_penerapan": "Tiba di bank pukul $07.45$, bank buka pukul $08.00$ dengan layanan $15\\text{ menit}$, maka kurir baru berangkat pukul **$08.15$**.",
+            "jebakan_atau_catatan": "Jangan langsung menjumlahkan durasi perjalanan dan layanan tanpa menambahkan jeda menunggu jika tiba terlalu pagi."
+          },
+          {
+            "judul_poin": "Evaluasi Kelayakan Rute dan Batas Waktu Total",
+            "penjelasan_singkat": "Rute layak jika $T_{\\text{tiba}, i} \\le T_{\\text{tutup}, i}$ di setiap titik dan total waktu tempuh, layanan, serta tunggu $\\le T_{\\text{maks}}$.",
+            "contoh_penerapan": "Dari dua rute valid A–B–C ($95\\text{ menit}$) dan B–A–C ($85\\text{ menit}$), rute **B–A–C** optimal karena menghemat **$10\\text{ menit}$**.",
+            "jebakan_atau_catatan": "Periksa aturan soal apakah perjalanan wajib kembali ke titik awal (rute tertutup) atau berhenti di titik terakhir."
+          }
+        ]
+      }
+    ]
+  }
+}

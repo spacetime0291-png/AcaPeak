@@ -6,7 +6,7 @@
   "klasifikasi_materi": "PENGAYAAN",
   "indikator_klasifikasi_web": "Pengayaan (Pendalaman Skor 700+)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Manakah penulisan yang baku menurut EYD Edisi V: 'Ia membaca puisi \"Aku\" karya Chairil Anwar.' atau 'Ia membaca puisi 'Aku' karya Chairil Anwar.'?",
@@ -23,7 +23,117 @@
       "Meletakkan tanda baca penutup kalimat (titik/koma) di luar tanda petik dua pada petikan langsung, atau salah menempatkan titik di dalam tanda kurung penjelas akhir kalimat."
     ],
     "stimulus_utama_bersama": null,
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Kaidah Lengkap Tanda Petik dan Tanda Kurung (EYD V)",
+      "subjudul_ringkas": "Panduan sistematis pemakaian tanda petik dua, petik tunggal, dan tanda kurung sesuai kaidah EYD V.",
+      "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Kaidah",
+        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Tanda Petik Dua (\"...\")",
+          "ringkasan_kelompok": "Mengapit petikan langsung, judul bagian karya, dan istilah bermakna khusus.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Petikan Langsung Pembicaraan atau Naskah",
+              "penjelasan_singkat": "Mengapit petikan langsung yang berasal dari pembicaraan, naskah, atau bahan tertulis lain.",
+              "contoh_penerapan": "Ibu berpesan, **\"Jangan lupa mengunci pintu sebelum berangkat ke sekolah.\"**",
+              "jebakan_atau_catatan": "Salah: Ibu berpesan, **\"Jangan lupa mengunci pintu\"**. Tanda titik akhir kalimat wajib berada di dalam petik tutup.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Judul Puisi, Lagu, Artikel, atau Bab Buku",
+              "penjelasan_singkat": "Mengapit judul puisi, lagu, artikel, makalah, bab buku, pidato, atau tema dalam kalimat.",
+              "contoh_penerapan": "Peserta sedang membaca makalah **\"Dampak Perubahan Iklim terhadap Ketahanan Pangan\"** di perpustakaan.",
+              "jebakan_atau_catatan": "Salah: Peserta membaca makalah *Dampak Perubahan Iklim*. Judul bagian karya diapit petik dua, bukan dicetak miring.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Istilah Ilmiah Kurang Dikenal atau Bermakna Khusus",
+              "penjelasan_singkat": "Mengapit istilah ilmiah yang kurang dikenal atau kata yang mempunyai arti khusus dan konotatif.",
+              "contoh_penerapan": "Ia dikenal sebagai **\"tangan kanan\"** direktur utama di perusahaan multinasional tersebut.",
+              "jebakan_atau_catatan": "Salah: Ia dikenal sebagai *tangan kanan* direktur. Ungkapan bermakna kiasan atau khusus diapit petik dua, bukan miring.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Posisi Tanda Baca Penutup pada Petikan Langsung",
+              "penjelasan_singkat": "Tanda baca penutup kalimat atau bagian kalimat ditempatkan di dalam tanda petik penutup.",
+              "contoh_penerapan": "**\"Apakah seluruh berkas pendaftaran sudah lengkap?\"** tanya petugas administrasi kepada peserta ujian.",
+              "jebakan_atau_catatan": "Salah: **\"Apakah berkas pendaftaran sudah lengkap\"?** tanya petugas. Tanda tanya milik kutipan wajib di dalam petik.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Petik Tunggal ('...')",
+          "ringkasan_kelompok": "Mengapit petikan di dalam petikan lain serta makna atau terjemahan kata.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Petikan yang Tersusun di Dalam Petikan Lain",
+              "penjelasan_singkat": "Mengapit kutipan langsung yang terdapat di dalam petikan langsung lainnya.",
+              "contoh_penerapan": "Tanya dia, **\"Kau dengar bunyi 'kring-kring' tadi?\"** sambil menoleh ke arah pintu.",
+              "jebakan_atau_catatan": "Salah: Tanya dia, **\"Kau dengar bunyi \"kring-kring\" tadi?\"** Petik di dalam petik tidak boleh memakai petik dua.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Makna, Terjemahan, atau Padanan Ungkapan Asing",
+              "penjelasan_singkat": "Mengapit makna, terjemahan, atau penjelasan kata serta ungkapan bahasa daerah dan asing.",
+              "contoh_penerapan": "Kata *tetirah* dalam bahasa Indonesia bermakna **'pergi ke tempat lain untuk memulihkan kesehatan'**.",
+              "jebakan_atau_catatan": "Salah: Kata *tetirah* bermakna **\"pergi memulihkan kesehatan\"**. Penjelasan makna kata wajib memakai petik tunggal, bukan petik dua.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Kurung ((...)) dan Kurung Siku ([...])",
+          "ringkasan_kelompok": "Mengapit keterangan tambahan, singkatan, perincian, serta keterangan di dalam tanda kurung.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Tambahan Keterangan Singkatan atau Kepanjangan",
+              "penjelasan_singkat": "Mengapit tambahan keterangan berupa singkatan atau kepanjangan yang baru diperkenalkan dalam kalimat.",
+              "contoh_penerapan": "Badan Riset dan Inovasi Nasional **(BRIN)** menyelenggarakan seminar nasional tentang teknologi energi terbarukan.",
+              "jebakan_atau_catatan": "Salah: Badan Riset dan Inovasi Nasional **(\"BRIN\")** menyelenggarakan seminar. Singkatan di dalam kurung tidak diapit tanda petik.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Keterangan Penjelas yang Bukan Bagian Utama Kalimat",
+              "penjelasan_singkat": "Mengapit penjelasan tambahan yang bukan bagian utama kalimat sehingga dapat dihilangkan tanpa merusak struktur.",
+              "contoh_penerapan": "Keterangan saksi ahli itu **(lihat halaman 45)** memperkuat bukti dugaan pelanggaran kontrak kerja.",
+              "jebakan_atau_catatan": "Salah: Keterangan saksi itu, **(lihat halaman 45),** memperkuat bukti. Jangan mengapit tanda kurung dengan tanda koma ganda.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Huruf atau Kata Opsional dalam Kalimat",
+              "penjelasan_singkat": "Mengapit huruf atau kata yang keberadaannya di dalam teks dapat dimunculkan atau dihilangkan.",
+              "contoh_penerapan": "Dia berangkat ke kantor selalu menaiki **(bus)** Transjakarta setiap pagi hari.",
+              "jebakan_atau_catatan": "Salah: Dia menaiki **bus/Transjakarta** setiap pagi. Garis miring bermakna pilihan 'atau', sedangkan kurung menandakan unsur opsional.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Huruf atau Angka Penanda Perincian Horizontal",
+              "penjelasan_singkat": "Mengapit huruf atau angka yang digunakan sebagai penanda perincian yang ditulis berderet dalam kalimat.",
+              "contoh_penerapan": "Faktor penghambat produksi meliputi **(a)** bahan baku, **(b)** tenaga kerja, dan **(c)** modal usaha.",
+              "jebakan_atau_catatan": "Salah: Faktor produksi meliputi **a)** bahan baku, **b)** tenaga kerja. Perincian dalam kalimat wajib memakai kurung lengkap.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Kurung Siku untuk Kurung Bertingkat atau Koreksi",
+              "penjelasan_singkat": "Mengapit keterangan di dalam kalimat penjelas yang sudah bertanda kurung atau koreksi naskah asli.",
+              "contoh_penerapan": "Persamaan kedua proses itu **(perbedaannya dibahas pada Bab II [lihat halaman 35])** perlu dicermati.",
+              "jebakan_atau_catatan": "Salah: Persamaan itu **(perbedaannya dibahas pada Bab II (lihat halaman 35))**. Kurung di dalam kurung wajib memakai kurung siku.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

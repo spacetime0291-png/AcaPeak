@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "lbi-03-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Pola Teks Saintek, Desain Eksperimen, dan Validitas Bukti Ilmiah",
+    "subjudul_ringkas": "Taksonomi penanda mekanisme sains, variabel uji, batasan riset, dan verifikasi klaim untuk membedah wacana ilmiah.",
+    "mode_tampilan": "katalog_sinyal_pola",
+    "label_kolom": {
+      "kolom_1": "Kategori / Penanda Teks",
+      "kolom_2": "Contoh Potongan / Sinyal",
+      "kolom_3": "Cara Bedakan / Jebakan"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Penanda Mekanisme & Alur Proses Ilmiah",
+        "ringkasan_kelompok": "Mengidentifikasi urutan sebab-akibat, peran agen, dan fungsi komponen dalam sistem sains.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Rantai Kausalitas Berjenjang ($A \\rightarrow B \\rightarrow C$)",
+            "penjelasan_singkat": "Menunjukkan tahapan berurutan ketika satu reaksi memicu reaksi berikutnya hingga menghasilkan dampak akhir.",
+            "contoh_penerapan": "Paparan sinar UV **merusak DNA sel kulit**, yang **memicu mutasi gen**, sehingga **meningkatkan risiko melanoma**.",
+            "jebakan_atau_catatan": "Pengecoh sering membalik urutan sebab-akibat atau melompati tahapan perantara seolah $A$ langsung menyebabkan $C$."
+          },
+          {
+            "judul_poin": "Penanda Peran Agen & Katalisator",
+            "penjelasan_singkat": "Menandai zat, mikroorganisme, atau komponen teknologi yang mempercepat, menghambat, atau menggerakkan suatu proses.",
+            "contoh_penerapan": "Enzim amilase **berperan memecah** pati menjadi maltosa, sedangkan inhibitor **menghambat laju** reaksi tersebut.",
+            "jebakan_atau_catatan": "Waspadai opsi yang menukar fungsi penghambat (inhibitor) menjadi pemicu (aktivator) atau sebaliknya."
+          },
+          {
+            "judul_poin": "Sinyal Syarat & Kondisi Pemicu",
+            "penjelasan_singkat": "Menunjukkan kondisi lingkungan atau ambang batas spesifik yang wajib terpenuhi agar mekanisme bekerja.",
+            "contoh_penerapan": "Reaksi fusi nuklir **hanya terjadi apabila** suhu plasma mencapai **lebih dari $100$ juta derajat Celsius**.",
+            "jebakan_atau_catatan": "Jebakan UTBK kerap menghilangkan syarat mutlak ini sehingga proses diklaim terjadi dalam kondisi normal."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Pola Desain Eksperimen & Variabel Riset",
+        "ringkasan_kelompok": "Memetakan perlakuan peneliti, hasil pengukuran, kelompok pembanding, dan simpulan data uji.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penanda Variabel Bebas (Perlakuan)",
+            "penjelasan_singkat": "Menunjukkan faktor yang sengaja diubah, diberikan, atau dimanipulasi peneliti untuk menguji pengaruhnya.",
+            "contoh_penerapan": "Kelompok tikus uji **diberi suplementasi ekstrak daun kelor** dosis $200\\text{ mg/kg}$ selama empat minggu.",
+            "jebakan_atau_catatan": "Jangan tertukar dengan variabel terikat; variabel bebas adalah penyebab yang diatur sebelum hasil diukur."
+          },
+          {
+            "judul_poin": "Penanda Variabel Terikat (Hasil Ukur)",
+            "penjelasan_singkat": "Menunjukkan indikator biologis, fisik, atau teknis yang diukur perubahannya akibat pemberian perlakuan.",
+            "contoh_penerapan": "Setelah intervensi, peneliti **mengukur penurunan kadar glukosa darah** dan **peningkatan sensitivitas insulin** subjek.",
+            "jebakan_atau_catatan": "Opsi salah sering mengklaim variabel terikat sebagai penyebab perubahan, padahal ia merupakan dampak terukur."
+          },
+          {
+            "judul_poin": "Sinyal Kelompok Kontrol vs Perlakuan",
+            "penjelasan_singkat": "Membedakan kelompok pembanding tanpa intervensi (plasebo) dari kelompok yang menerima perlakuan eksperimen.",
+            "contoh_penerapan": "Kelompok perlakuan menerima vaksin kandidat, **sementara kelompok kontrol hanya diberi larutan salin** tanpa zat aktif.",
+            "jebakan_atau_catatan": "Perubahan pada kelompok kontrol menjadi tolok ukur dasar; pastikan membandingkan selisih kedua kelompok."
+          },
+          {
+            "judul_poin": "Penanda Signifikansi Statistik & Komparasi Data",
+            "penjelasan_singkat": "Menunjukkan perbedaan hasil yang bermakna secara ilmiah versus perbedaan yang tidak signifikan.",
+            "contoh_penerapan": "Baterai litium-sulfur **menunjukkan peningkatan kapasitas sebesar $35\\%$** dibandingkan baterai konvensional secara signifikan.",
+            "jebakan_atau_catatan": "Jika teks menyebut perbedaan tidak signifikan, klaim bahwa perlakuan terbukti efektif adalah salah."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Sinyal Validitas, Limitasi Riset, & Verifikasi Klaim",
+        "ringkasan_kelompok": "Mendeteksi batas generalisasi temuan, perbedaan korelasi-kausalitas, serta syarat penerapan di masyarakat.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penanda Korelasi (Bukan Kausalitas Mutlak)",
+            "penjelasan_singkat": "Menunjukkan keterkaitan dua fenomena secara bersamaan tanpa membuktikan bahwa satu menyebabkan yang lain.",
+            "contoh_penerapan": "Konsumsi kopi rutin **berkorelasi positif dengan** rendahnya risiko diabetes tipe 2 pada populasi dewasa.",
+            "jebakan_atau_catatan": "Pengecoh mengubah kata berkorelasi atau berasosiasi menjadi menyebabkan secara langsung; ini merupakan overklaim kausal."
+          },
+          {
+            "judul_poin": "Sinyal Batasan Sampel & Tahap Uji",
+            "penjelasan_singkat": "Menandai ruang lingkup penelitian (in vitro, hewan coba, atau skala kecil) yang membatasi generalisasi.",
+            "contoh_penerapan": "Uji efektivitas senyawa ini **baru dilakukan pada kultur sel (in vitro)** dengan sampel terbatas.",
+            "jebakan_atau_catatan": "Hasil uji laboratorium (in vitro) atau hewan belum dapat diklaim aman dan manjur bagi manusia."
+          },
+          {
+            "judul_poin": "Penanda Kehati-hatian Ilmiah (Hedging)",
+            "penjelasan_singkat": "Kata modalitas yang menunjukkan peluang, dugaan sementara, atau perlunya penelitian lanjutan sebelum diterapkan.",
+            "contoh_penerapan": "Terapi gen ini **berpotensi menekan** pertumbuhan tumor, **namun masih memerlukan uji klinis fase ketiga**.",
+            "jebakan_atau_catatan": "Opsi benar mempertahankan nuansa kehati-hatian (berpotensi), sedangkan pengecoh mengubahnya menjadi kepastian mutlak (pasti sembuh)."
+          },
+          {
+            "judul_poin": "Sinyal Syarat Aplikasi Praktis",
+            "penjelasan_singkat": "Menunjukkan kendala teknis, biaya, atau infrastruktur yang harus diatasi sebelum teknologi digunakan masyarakat.",
+            "contoh_penerapan": "Desalinasi air laut bertenaga surya ini **siap diterapkan di wilayah pesisir asalkan** biaya membran ditekan.",
+            "jebakan_atau_catatan": "Periksa syarat penerapannya; teknologi yang efektif secara teknis belum tentu langsung layak secara ekonomis."
+          }
+        ]
+      }
+    ]
+  }
+}

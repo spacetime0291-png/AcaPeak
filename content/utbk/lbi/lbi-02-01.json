@@ -6,7 +6,7 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 5,
+    "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
       "pertanyaan_pemantik": "Dalam bacaan tertulis: *\"Sebagian besar rumah tangga pesisir masih menggunakan sumur bor karena jaringan pipa air belum merata.\"* Jika opsi jawaban menyebut *\"Seluruh warga pesisir tidak memiliki akses air bersih\"*, apakah simpulan tersebut sah secara logika UTBK?",
@@ -23,7 +23,117 @@
       "Jebakan Asumsi Eksternal & Gejala Permukaan: Memilih opsi yang terdengar masuk akal di dunia nyata tetapi tanpa pijakan premis teks, atau solusi yang sekadar mengobati gejala luar tanpa menyentuh akar penyebab."
     ],
     "stimulus_utama_bersama": "Fenomena penurunan muka tanah (*land subsidence*) di kawasan pesisir utara Jawa telah mencapai laju kritis antara 8 hingga 12 sentimeter per tahun dalam satu dekade terakhir. Kajian hidrogeologi menunjukkan bahwa penyebab utama kondisi ini bukanlah kenaikan permukaan air laut global semata, melainkan eksploitasi air tanah dalam secara masif oleh kawasan industri dan permukiman padat penduduk. Ketika akuifer bawah tanah terus dikuras tanpa diimbangi sistem resapan air hujan maupun pasokan air perpipaan yang memadai, lapisan sedimen aluvial mengalami pemadatan permanen yang memicu banjir rob semakin sering merendam wilayah daratan.\n\nDi sisi lain, benteng alami pesisir berupa sabuk hijau hutan mangrove mengalami penyusutan luas hingga 42 persen akibat alih fungsi lahan menjadi tambak intensif dan kawasan pergudangan. Padahal, struktur perakaran mangrove mampu meredam energi gelombang pasang hingga 60 persen sekaligus memerangkap sedimen lumpur untuk mempertahankan elevasi pantai. Hilangnya sabuk hijau ini membuat gelombang laut menghantam langsung tanggul beton darurat yang dibangun pemerintah daerah, sehingga biaya pemeliharaan infrastruktur pesisir melonjak tiga kali lipat dalam lima tahun terakhir.\n\nMenanggapi situasi tersebut, pakar tata ruang pesisir dari Institut Teknologi Bandung, Dr. Ardiansyah, menyatakan, \"Meninggikan tanggul beton setiap dua tahun tanpa menyetop penyedotan air tanah ibarat menambal ember bocor dari sisi luar sementara keran di dalamnya terus dibuka penuh.\" Pernyataan ini menggarisbawahi ketimpangan alokasi anggaran daerah yang masih menempatkan proyek konstruksi fisik sebagai prioritas utama, sementara penyediaan jaringan air bersih perpipaan baru menjangkau 38 persen kebutuhan industri dan rumah tangga pesisir.\n\nData Dinas Lingkungan Hidup mencatat bahwa wilayah pesisir yang mempertahankan kawasan mangrove minimal selebar 200 meter dari garis pantai mengalami kerugian ekonomi akibat rob 70 persen lebih rendah dibandingkan wilayah yang mengandalkan tanggul beton semata. Sayangnya, ketiadaan insentif ekonomi bagi petambak tradisional untuk beralih ke pola silvofishery—budidaya perikanan ramah mangrove—membuat laju konversi lahan pesisir sulit dibendung.",
-    "visual": null
+    "visual": null,
+    "detail_materi_lengkap": {
+      "judul_blok": "Taksonomi Pola Inferensi, Prediksi, dan Maksud Tersirat Teks",
+      "subjudul_ringkas": "Panduan sinyal logika dan pola sintesis untuk menarik simpulan implisit serta memprediksi isi bacaan UTBK.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Kategori / Penanda Teks",
+        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_3": "Cara Bedakan / Jebakan"
+      },
+      "kelompok": [
+        {
+          "nama_kelompok": "Pola Inferensi Deduktif dan Sintesis Lintas Paragraf",
+          "ringkasan_kelompok": "Menarik simpulan pasti benar dari premis eksplisit maupun gabungan informasi antarparagraf.",
+          "buka_default": true,
+          "butir": [
+            {
+              "judul_poin": "Silogisme Kategoris dan Kondisional Premis Teks",
+              "penjelasan_singkat": "Gabungkan premis umum dan khusus bacaan untuk menarik simpulan mutlak berpola $\\text{Jika } A \\rightarrow B \\text{ dan } A, \\text{ maka } B$.",
+              "contoh_penerapan": "Teks menyebut **semua mamalia menyusui anaknya** dan **paus termasuk mamalia**, sehingga simpulan deduktif yang pasti benar adalah paus menyusui anaknya.",
+              "jebakan_atau_catatan": "Pengecoh sering membalik premis menjadi **semua hewan yang menyusui adalah paus** (konversi tidak sah dalam logika deduktif).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sintesis Rantai Sebab-Akibat Lintas Paragraf",
+              "penjelasan_singkat": "Hubungkan penyebab di paragraf awal dengan akibat di paragraf berikutnya menggunakan alur $\\text{P}_1(X \\rightarrow Y) + \\text{P}_2(Y \\rightarrow Z) \\rightarrow (X \\rightarrow Z)$.",
+              "contoh_penerapan": "Paragraf 1 memuat **alih fungsi hutan memicu erosi**, Paragraf 2 menyebut **erosi mendangkalkan sungai**, sehingga alih fungsi hutan menyebabkan pendangkalan sungai.",
+              "jebakan_atau_catatan": "Hindari opsi yang hanya mengulang fakta satu paragraf tanpa menggabungkan mata rantai kausal kedua paragraf tersebut.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Inferensi dari Penanda Kontras dan Pertentangan",
+              "penjelasan_singkat": "Konjungsi pertentangan (*namun, sebaliknya, padahal*) menyiratkan bahwa realitas di lapangan bertolak belakang dengan ekspektasi awal.",
+              "contoh_penerapan": "Anggaran pendidikan naik 20%, **namun** skor literasi stagnan; simpulannya adalah kenaikan anggaran belum berbanding lurus dengan efektivitas pembelajaran.",
+              "jebakan_atau_catatan": "Opsi pengecoh biasanya menyimpulkan anggaran pendidikan **tidak berguna sama sekali** (generalisasi ekstrem di luar cakupan teks).",
+              "visual": null
+            },
+            {
+              "judul_poin": "Inferensi Perbandingan dan Tren Kuantitatif",
+              "penjelasan_singkat": "Kata sinyal komparatif (*lebih rendah, melampaui, ketimpangan*) mengarahkan pada simpulan selisih performa atau dominasi satu variabel.",
+              "contoh_penerapan": "Ekspor nikel olahan **melonjak tiga kali lipat** dibanding bijih mentah, artinya hilirisasi mendominasi struktur pendapatan ekspor komoditas tersebut.",
+              "jebakan_atau_catatan": "Jangan memilih opsi yang mencantumkan angka pasti proyeksi masa depan jika teks hanya menyajikan perbandingan rasio.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sinyal Prediksi Dampak dan Rekomendasi Solusi",
+          "ringkasan_kelompok": "Memproyeksikan konsekuensi jangka panjang serta merumuskan solusi yang menyasar akar masalah.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Ekstrapolasi Tren Kausal Jangka Panjang",
+              "penjelasan_singkat": "Proyeksikan dampak lanjutan jika fenomena negatif dibiarkan tanpa intervensi dengan alur $\\text{Tren Berlanjut} \\rightarrow \\text{Eskalasi Dampak}$.",
+              "contoh_penerapan": "Jika **eksploitasi air tanah masif terus berlangsung**, prediksi logis jangka panjangnya adalah penurunan muka tanah dan intrusi air laut.",
+              "jebakan_atau_catatan": "Coret prediksi yang melibatkan bencana atau variabel eksternal tanpa pemicu kausal eksplisit di dalam bacaan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Penanda Syarat Hipotetis (*Jika–Maka*)",
+              "penjelasan_singkat": "Klausa kondisional (*apabila, selama, tanpa adanya*) menjadi jangkar untuk memprediksi skenario keberhasilan atau kegagalan suatu program.",
+              "contoh_penerapan": "**Tanpa pengawasan distribusi yang ketat**, subsidi pupuk berisiko kembali dinikmati petani besar daripada petani gurem sebagai target utama.",
+              "jebakan_atau_catatan": "Pengecoh sering mengubah probabilitas **berisiko terjadi** menjadi kepastian mutlak dengan menambahkan kata **pasti gagal total**.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Perumusan Solusi Berbasis Akar Masalah",
+              "penjelasan_singkat": "Identifikasi penyebab primer masalah dalam teks, lalu pilih rekomendasi kebijakan yang langsung memutus sumber penyebab tersebut.",
+              "contoh_penerapan": "Tingginya impor gandum dipicu **minimnya diversifikasi pangan lokal**, sehingga solusi paling relevan adalah insentif hilirisasi pangan nonberas.",
+              "jebakan_atau_catatan": "Tolak solusi yang hanya meredam gejala permukaan, seperti **membatasi konsumsi roti** tanpa membenahi alternatif pangan.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Rekomendasi Evaluatif dari Hambatan Implementasi",
+              "penjelasan_singkat": "Kata sinyal kendala (*terhambat oleh, kurangnya, tumpang tindih*) menunjukkan celah spesifik yang wajib diperbaiki dalam tindak lanjut.",
+              "contoh_penerapan": "Digitalisasi UMKM **terkendala rendahnya literasi keamanan siber**, maka langkah prioritas adalah pendampingan proteksi data sebelum ekspansi pasar.",
+              "jebakan_atau_catatan": "Hindari rekomendasi yang menyarankan **penghentian total program** jika teks hanya menyoroti kendala teknis pelaksanaan.",
+              "visual": null
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Dekode Maksud Kutipan Tokoh dan Filter Pengecoh",
+          "ringkasan_kelompok": "Menangkap maksud tersirat pernyataan narasumber serta mengeliminasi opsi pengecoh yang melampaui teks.",
+          "buka_default": false,
+          "butir": [
+            {
+              "judul_poin": "Kritik Terselubung dalam Metafora Pakar",
+              "penjelasan_singkat": "Ungkapan ironis atau metafora narasumber menyiratkan kritik tajam terhadap efektivitas kebijakan maupun fenomena yang sedang dibahas.",
+              "contoh_penerapan": "Pakar menyebut aturan baru itu **\"macan kertas yang indah di atas meja\"**, bermaksud mengkritik lemahnya penegakan hukum di lapangan.",
+              "jebakan_atau_catatan": "Jangan memaknai kutipan metaforis secara harfiah sebagai pujian terhadap kualitas penyusunan naskah regulasi.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Sinyal Urgensi dan Peringatan Narasumber",
+              "penjelasan_singkat": "Diksi modalitas keharusan (*mendesak, tidak bisa ditawar, alarm keras*) menandakan maksud tokoh untuk mendorong tindakan segera.",
+              "contoh_penerapan": "Pernyataan **\"kita berpacu dengan waktu sebelum daya dukung lingkungan runtuh\"** menyiratkan perlunya moratorium izin eksploitasi sesegera mungkin.",
+              "jebakan_atau_catatan": "Pengecoh kerap melunakkan urgensi tokoh menjadi sekadar **imbauan jangka panjang** yang bersifat opsional.",
+              "visual": null
+            },
+            {
+              "judul_poin": "Eliminasi Pengecoh Kuantor Mutlak",
+              "penjelasan_singkat": "Opsi simpulan yang memakai kata mutlak (*semua, selalu, pasti, tidak pernah*) hampir selalu salah jika teks bersifat kasuistis.",
+              "contoh_penerapan": "Teks menyebut **sebagian besar pekerja jarak jauh lebih produktif**, maka opsi berbunyi **semua pekerja wajib bekerja dari rumah** wajib dicoret.",
+              "jebakan_atau_catatan": "Kuantor mutlak hanya valid jika premis eksplisit di dalam bacaan juga menggunakan kuantor universal yang setara.",
+              "visual": null
+            }
+          ]
+        }
+      ]
+    }
   },
   "zona_2_variasi_inti": [
     {

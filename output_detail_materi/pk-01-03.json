@@ -1,0 +1,115 @@
+{
+  "kode_subbab": "pk-01-03",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Lengkap Rumus, Pemfaktoran, dan Manipulasi Aljabar UTBK",
+    "subjudul_ringkas": "Panduan sistematis identitas aljabar, bentuk resiprokal, pecahan rasional, sistem non-linear, dan optimasi kuadrat.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Identitas Kuadrat, Kubik, dan Pemfaktoran",
+        "ringkasan_kelompok": "Rumus ekspansi dan pemfaktoran dasar yang paling sering muncul di UTBK.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Selisih Dua Kuadrat",
+            "penjelasan_singkat": "Perkalian jumlah dan selisih dua suku menghasilkan selisih kuadratnya: $a^2 - b^2 = (a+b)(a-b)$.",
+            "contoh_penerapan": "Hitung $2026^2 - 2024^2 = (2026+2024)(2026-2024) = 4050 \\times 2 =$ **$8100$**.",
+            "jebakan_atau_catatan": "Jebakan: $a^2 + b^2$ tidak dapat difaktorkan menjadi $(a+b)(a+b)$ pada himpunan bilangan real."
+          },
+          {
+            "judul_poin": "Jumlah Kuadrat dari Jumlah dan Hasil Kali",
+            "penjelasan_singkat": "Nyatakan $x^2 + y^2$ menggunakan identitas $(x+y)^2 - 2xy$ atau $(x-y)^2 + 2xy$.",
+            "contoh_penerapan": "Jika $x+y=7$ dan $xy=10$, maka $x^2+y^2 = 7^2 - 2(10) =$ **$29$**.",
+            "jebakan_atau_catatan": "Kesalahan fatal UTBK: menganggap $(x+y)^2 = x^2 + y^2$ tanpa menyertakan suku tengah $2xy$."
+          },
+          {
+            "judul_poin": "Jumlah dan Selisih Dua Kubik",
+            "penjelasan_singkat": "Bentuk faktor: $x^3 \\pm y^3 = (x \\pm y)(x^2 \\mp xy + y^2)$ atau bentuk simetris $(x+y)^3 - 3xy(x+y)$.",
+            "contoh_penerapan": "Jika $x+y=4$ dan $xy=3$, maka $x^3+y^3 = 4^3 - 3(3)(4) =$ **$28$**.",
+            "jebakan_atau_catatan": "Perhatikan tanda berlawanan pada faktor kuadrat: $x^3 - y^3$ memuat $+xy$, bukan $-xy$."
+          },
+          {
+            "judul_poin": "Pemfaktoran Bentuk Kuadrat Umum",
+            "penjelasan_singkat": "Faktorkan $ax^2 + bx + c = \\frac{1}{a}(ax + p)(ax + q)$ dengan $p+q=b$ dan $pq=ac$.",
+            "contoh_penerapan": "Faktorkan $2x^2 + 5x - 3$: cari $p=6, q=-1$, hasil **$(x+3)(2x-1)$**.",
+            "jebakan_atau_catatan": "Wajib membagi kembali salah satu faktor dengan $a$ jika koefisien $x^2$ bukan $1$."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Bentuk Aljabar Simetris Resiprokal",
+        "ringkasan_kelompok": "Manipulasi pangkat tinggi bentuk kebalikan tanpa mencari nilai $x$.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Kuadrat Bentuk Resiprokal",
+            "penjelasan_singkat": "Untuk $x \\neq 0$, berlaku $x^2 + \\frac{1}{x^2} = \\left(x + \\frac{1}{x}\\right)^2 - 2 = \\left(x - \\frac{1}{x}\\right)^2 + 2$.",
+            "contoh_penerapan": "Diketahui $x + \\frac{1}{x} = 5$, maka $x^2 + \\frac{1}{x^2} = 5^2 - 2 =$ **$23$**.",
+            "jebakan_atau_catatan": "Suku tengah $2 \\cdot x \\cdot \\frac{1}{x}$ selalu bernilai $2$, jangan dikalikan variabel lagi."
+          },
+          {
+            "judul_poin": "Kubik Bentuk Resiprokal",
+            "penjelasan_singkat": "Untuk $x \\neq 0$, gunakan $x^3 + \\frac{1}{x^3} = \\left(x + \\frac{1}{x}\\right)^3 - 3\\left(x + \\frac{1}{x}\\right)$.",
+            "contoh_penerapan": "Jika $x + \\frac{1}{x} = 3$, maka $x^3 + \\frac{1}{x^3} = 3^3 - 3(3) =$ **$18$**.",
+            "jebakan_atau_catatan": "Untuk selisih kubik $x^3 - \\frac{1}{x^3}$, tandanya menjadi $+3\\left(x - \\frac{1}{x}\\right)$, bukan minus."
+          },
+          {
+            "judul_poin": "Konversi Tanda Bentuk Resiprokal",
+            "penjelasan_singkat": "Hubungan jumlah dan selisih: $\\left(x - \\frac{1}{x}\\right)^2 = \\left(x + \\frac{1}{x}\\right)^2 - 4$ untuk $x \\neq 0$.",
+            "contoh_penerapan": "Jika $x + \\frac{1}{x} = 4$ dan $x > 1$, maka $x - \\frac{1}{x} = \\sqrt{4^2 - 4} =$ **$2\\sqrt{3}$**.",
+            "jebakan_atau_catatan": "Cek syarat domain $x > 1$ atau $0 < x < 1$ untuk menentukan tanda $\\pm$ akar."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Pecahan Rasional dan Sistem Non-Linear",
+        "ringkasan_kelompok": "Penyederhanaan bentuk rasional dan penyelesaian ekspresi majemuk tanpa variabel tunggal.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Penyederhanaan Pecahan Aljabar Rasional",
+            "penjelasan_singkat": "Faktorkan pembilang dan penyebut terlebih dahulu sebelum mencoret faktor persekutuan yang sama.",
+            "contoh_penerapan": "Sederhanakan $\\frac{x^2 - 9}{x^2 - 5x + 6} = \\frac{(x+3)(x-3)}{(x-2)(x-3)} =$ **$\\frac{x+3}{x-2}$**, dengan $x \\neq 2, 3$.",
+            "jebakan_atau_catatan": "Dilarang mencoret suku penjumlahan; syarat penyebut $\\neq 0$ wajib dipertahankan saat analisis kuantitas."
+          },
+          {
+            "judul_poin": "Pembagian Polinomial Derajat Dua",
+            "penjelasan_singkat": "Polinomial $P(x)$ dibagi $(x-a)(x-b)$ bersisa $S(x) = mx + n$ dengan $P(a)=S(a)$ dan $P(b)=S(b)$.",
+            "contoh_penerapan": "Jika $P(1)=4$ dan $P(3)=10$, sisa pembagian $P(x)$ oleh $(x-1)(x-3)$ adalah **$3x+1$**.",
+            "jebakan_atau_catatan": "Derajat sisa pembagian selalu maksimal satu tingkat lebih rendah daripada derajat pembaginya."
+          },
+          {
+            "judul_poin": "Manipulasi Sistem Non-Linear Simetris",
+            "penjelasan_singkat": "Jumlahkan, kurangkan, atau kalikan antarpersamaan untuk membentuk target ekspresi secara langsung.",
+            "contoh_penerapan": "Jika $x+y=6$ dan $\\frac{1}{x}+\\frac{1}{y}=\\frac{2}{3}$, maka $\\frac{x+y}{xy}=\\frac{2}{3} \\Rightarrow xy =$ **$9$**.",
+            "jebakan_atau_catatan": "Jangan mencari akar $x$ dan $y$ satu per satu karena sering menghasilkan bilangan irasional."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Optimasi dengan Melengkapkan Kuadrat Sempurna",
+        "ringkasan_kelompok": "Penentuan nilai maksimum atau minimum ekspresi aljabar tanpa turunan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Nilai Ekstrem Bentuk Kuadrat Satu Variabel",
+            "penjelasan_singkat": "Ubah $ax^2 + bx + c = a\\left(x + \\frac{b}{2a}\\right)^2 + k$; ekstrem di $k$ saat $x = -\\frac{b}{2a}$.",
+            "contoh_penerapan": "Bentuk $x^2 - 6x + 14 = (x-3)^2 + 5$ memiliki nilai minimum **$5$** saat $x=3$.",
+            "jebakan_atau_catatan": "Jika $a > 0$ hasilnya nilai minimum; jika $a < 0$ hasilnya nilai maksimum."
+          },
+          {
+            "judul_poin": "Nilai Minimum Jumlah Kuadrat Dua Variabel",
+            "penjelasan_singkat": "Karena $u^2 \\ge 0$ untuk $u \\in \\mathbb{R}$, nilai minimum $u^2 + v^2 + c$ adalah $c$.",
+            "contoh_penerapan": "Ekspresi $(x-2)^2 + (y+1)^2 + 7$ mencapai nilai minimum **$7$** saat $x=2, y=-1$.",
+            "jebakan_atau_catatan": "Pastikan nilai variabel pembuat nol $(u=0, v=0)$ memenuhi batas domain yang diminta soal."
+          }
+        ]
+      }
+    ]
+  }
+}

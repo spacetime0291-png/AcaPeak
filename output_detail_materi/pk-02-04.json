@@ -1,0 +1,102 @@
+{
+  "kode_subbab": "pk-02-04",
+  "detail_materi_lengkap": {
+    "judul_blok": "Katalog Rumus & Sifat Barisan dan Deret Aritmetika-Geometri",
+    "subjudul_ringkas": "Rangkuman sifat turunan, syarat batas, hasil kali simetris, deret tak hingga, dan rekurensi untuk UTBK.",
+    "mode_tampilan": "katalog_rumus_sifat",
+    "label_kolom": {
+      "kolom_1": "Sifat / Rumus & Syarat",
+      "kolom_2": "Contoh Hitung Mini",
+      "kolom_3": "Jebakan / Trik Cepat"
+    },
+    "kelompok": [
+      {
+        "nama_kelompok": "Sifat & Rumus Cepat Barisan Aritmetika",
+        "ringkasan_kelompok": "Relasi suku ke-n, jumlah parsial kuadratik, suku tengah, dan sisipan aritmetika.",
+        "buka_default": true,
+        "butir": [
+          {
+            "judul_poin": "Relasi Suku ke-$n$ dari Rumus Kuadrat $S_n$",
+            "penjelasan_singkat": "Jika $S_n = An^2 + Bn$ tanpa konstanta, barisannya aritmetika dengan beda $b = 2A$ dan rumus $U_n = 2An + (B - A)$.",
+            "contoh_penerapan": "Diketahui $S_n = 3n^2 - 2n$, maka beda **$b = 2(3) = 6$** dan suku ke-$4$ adalah **$U_4 = 6(4) - 5 = 19$**.",
+            "jebakan_atau_catatan": "Jika $S_n$ memuat konstanta $C \\neq 0$, rumus cepat tidak berlaku untuk suku pertama; wajib hitung $U_1 = S_1$ secara manual."
+          },
+          {
+            "judul_poin": "Selisih Antarsuku dan Suku Tengah Barisan Aritmetika",
+            "penjelasan_singkat": "Beda memenuhi $b = \\frac{U_p - U_q}{p - q}$, sedangkan suku tengah ($n$ ganjil) memenuhi hubungan rata-rata $2U_t = U_1 + U_n$.",
+            "contoh_penerapan": "Jika $U_3 = 10$ dan $U_7 = 26$, maka **$b = \\frac{26-10}{7-3} = 4$** dan suku tengahnya **$U_5 = \\frac{10+26}{2} = 18$**.",
+            "jebakan_atau_catatan": "Suku tengah $U_t$ hanya ada jika banyak suku $n$ ganjil dengan posisi indeks tengah tepat di $t = \\frac{n+1}{2}$."
+          },
+          {
+            "judul_poin": "Sisipan Bilangan pada Barisan Aritmetika",
+            "penjelasan_singkat": "Menyisipkan $k$ bilangan di antara dua suku berurutan menghasilkan beda baru $b' = \\frac{b}{k + 1}$ dan banyak suku $n' = n + (n-1)k$.",
+            "contoh_penerapan": "Di antara $4$ dan $28$ ($b = 24$) disisipkan $3$ bilangan, maka beda barunya menjadi **$b' = \\frac{24}{3+1} = 6$**.",
+            "jebakan_atau_catatan": "Pembagi rumus sisipan adalah $k + 1$, bukan $k$; kesalahan umum peserta adalah membagi beda lama langsung dengan $k$."
+          },
+          {
+            "judul_poin": "Pemisalan Simetris Tiga Suku Aritmetika",
+            "penjelasan_singkat": "Tiga bilangan aritmetika dengan jumlah diketahui paling efisien dimisalkan sebagai $a - b, a, a + b$ untuk langsung mengeliminasi variabel $b$.",
+            "contoh_penerapan": "Tiga bilangan aritmetika berjumlah $24$ dimisalkan $a-b, a, a+b$, sehingga $3a = 24$ langsung menghasilkan suku tengah **$a = 8$**.",
+            "jebakan_atau_catatan": "Hindari memisalkan $a, a+b, a+2b$ saat jumlah diketahui karena menghasilkan persamaan dua variabel yang memperlambat perhitungan."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Sifat & Hasil Kali Barisan Geometri",
+        "ringkasan_kelompok": "Rasio antarsuku, simetri hasil kali, sisipan geometri, dan transformasi antarbarisan.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Rasio Antarsuku dan Suku Tengah Barisan Geometri",
+            "penjelasan_singkat": "Rasio memenuhi $r^{p-q} = \\frac{U_p}{U_q}$, sedangkan suku tengah ($n$ ganjil) memenuhi hubungan perkalian ujung $U_t^2 = U_1 \\cdot U_n$.",
+            "contoh_penerapan": "Diketahui $U_2 = 6$ dan $U_5 = 48$, maka $r^3 = \\frac{48}{6} = 8$ sehingga diperoleh rasio **$r = 2$**.",
+            "jebakan_atau_catatan": "Jika pangkat $p - q$ genap, rasio $r$ memiliki dua nilai ($+$ dan $-$) kecuali dibatasi syarat suku positif."
+          },
+          {
+            "judul_poin": "Simetri Hasil Kali Suku-Suku Barisan Geometri",
+            "penjelasan_singkat": "Hasil kali pasangan suku yang berjarak sama dari kedua ujung selalu konstan: $U_1 \\cdot U_n = U_2 \\cdot U_{n-1} = U_t^2$.",
+            "contoh_penerapan": "Pada $5$ suku geometri dengan $U_3 = 4$, hasil kali kelima sukunya adalah **$U_1 \\cdot U_2 \\cdot U_3 \\cdot U_4 \\cdot U_5 = U_3^5 = 1024$**.",
+            "jebakan_atau_catatan": "Jangan mencari $a$ dan $r$ satu per satu; gunakan pasangan $U_k \\cdot U_{n+1-k} = U_t^2$ agar hitungan jauh lebih singkat."
+          },
+          {
+            "judul_poin": "Sisipan Bilangan pada Barisan Geometri",
+            "penjelasan_singkat": "Menyisipkan $k$ bilangan di antara dua suku berurutan mengubah rasio lama $r$ menjadi rasio baru $r' = \\sqrt[k+1]{r}$.",
+            "contoh_penerapan": "Di antara $2$ dan $162$ ($r = 81$) disisipkan $3$ bilangan positif, didapat rasio baru **$r' = \\sqrt[3+1]{81} = 3$**.",
+            "jebakan_atau_catatan": "Jika $k + 1$ genap dan rasio lama positif, rasio baru $r'$ bisa bernilai negatif apabila suku berganti tanda diizinkan."
+          },
+          {
+            "judul_poin": "Transformasi Tiga Suku Aritmetika ke Geometri",
+            "penjelasan_singkat": "Gabungkan pemisalan aritmetika $a-b, a, a+b$ dengan syarat rasio geometri konstan $U_2^2 = U_1 \\cdot U_3$ setelah sukunya diubah.",
+            "contoh_penerapan": "Suku $4-b, 4, 4+b$ jika suku ketiga ditambah $2$ menjadi geometri, maka **$4^2 = (4-b)(6+b)$** sehingga diperoleh **$b = 2$**.",
+            "jebakan_atau_catatan": "Pastikan rasio geometri yang terbentuk memenuhi $r \\neq 1$ agar barisan bukan barisan konstan yang trivial."
+          }
+        ]
+      },
+      {
+        "nama_kelompok": "Deret Tak Hingga & Pola Rekurensi",
+        "ringkasan_kelompok": "Syarat konvergensi deret tak hingga, partisi ganjil-genap, dan siklus barisan rekursif.",
+        "buka_default": false,
+        "butir": [
+          {
+            "judul_poin": "Konvergensi dan Partisi Ganjil-Genap Deret Tak Hingga",
+            "penjelasan_singkat": "Konvergen saat $-1 < r < 1$, dengan jumlah suku ganjil $S_{\\text{ganjil}} = \\frac{a}{1 - r^2}$ dan rasio $r = \\frac{S_{\\text{genap}}}{S_{\\text{ganjil}}}$.",
+            "contoh_penerapan": "Jika jumlah suku ganjil $12$ dan suku genap $4$, maka rasio **$r = \\frac{4}{12} = \\frac{1}{3}$** dan **$S_{\\infty} = 16$**.",
+            "jebakan_atau_catatan": "Deret divergen jika $|r| \\ge 1$ ($r = 1$ dan $r = -1$ tidak konvergen); selalu periksa syarat batas $-1 < r < 1$."
+          },
+          {
+            "judul_poin": "Rekurensi Linear Sederhana Maju dan Mundur",
+            "penjelasan_singkat": "Substitusi berurutan indeks $n$ pada relasi $a_{n+1} = f(a_n, a_{n-1})$ untuk menemukan suku target atau melacak mundur suku awal.",
+            "contoh_penerapan": "Jika $a_{n+2} = 2a_{n+1} - a_n$ dengan $a_1 = 3$ dan $a_2 = 5$, maka **$a_3 = 7$** dan **$a_4 = 9$**.",
+            "jebakan_atau_catatan": "Perhatikan indeks awal barisan ($a_0$ atau $a_1$) saat menyubstitusi nilai $n$ agar tidak meleset satu langkah perhitungan."
+          },
+          {
+            "judul_poin": "Pola Siklik Berulang pada Barisan Rekurensi",
+            "penjelasan_singkat": "Hitung suku awal hingga muncul pola identik berulang; gunakan sisa pembagian indeks dengan panjang periode $P$ untuk suku besar.",
+            "contoh_penerapan": "Jika barisan berulang tiap $4$ suku ($2, 5, 3, -2$), karena $2026$ bersisa $2$ dibagi $4$, maka **$a_{2026} = a_2 = 5$**.",
+            "jebakan_atau_catatan": "Jika sisa pembagian indeks $n$ dengan periode $P$ adalah $0$, suku ke-$n$ sama dengan $a_P$, bukan $a_0$."
+          }
+        ]
+      }
+    ]
+  }
+}
