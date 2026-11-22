@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, BookOpen, AlertCircle } from 'lucide-react';
+import { ChevronDown, BookOpen, AlertCircle } from 'lucide-react';
 import type { DetailMateriLengkap, VisualData } from '../../types/material';
 import { VisualRenderer } from './VisualRenderer';
 
@@ -55,7 +55,7 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
   const { label_kolom } = data;
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 border-l-4 border-l-sky-500 dark:border-l-sky-400 shadow-xs overflow-hidden max-w-full transition-all">
+    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 border-l-4 border-l-slate-300 dark:border-l-slate-800 shadow-xs overflow-hidden max-w-full transition-all">
       {/* Header Blok Detail Materi (Zona 1B) - High Contrast & Distinct */}
       <div className="p-5 sm:p-6 space-y-2 border-b border-slate-200 dark:border-slate-800 bg-gradient-to-r from-sky-50/70 via-white to-white dark:from-sky-950/30 dark:via-slate-900 dark:to-slate-900">
         <div className="flex items-center gap-2">
@@ -67,11 +67,6 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
         <h2 className="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white leading-snug tracking-tight">
           {data.judul_blok}
         </h2>
-        {data.subjudul_ringkas && (
-          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            {data.subjudul_ringkas}
-          </p>
-        )}
       </div>
 
       {/* Accordion List Kelompok */}
@@ -89,7 +84,7 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                 onClick={() => toggleGroup(kIdx)}
                 className={`w-full px-5 py-4 sm:px-6 sm:py-4.5 flex items-center justify-between gap-3 text-left transition-all cursor-pointer ${
                   isOpen
-                    ? 'bg-sky-50/90 dark:bg-slate-800/95 text-slate-950 dark:text-white border-b border-sky-200 dark:border-slate-700 shadow-2xs border-l-4 border-l-sky-600 dark:border-l-sky-400'
+                    ? 'bg-sky-50/90 dark:bg-slate-800/95 text-slate-950 dark:text-white border-b border-sky-200 dark:border-slate-700 shadow-2xs border-l-4 border-l-slate-400 dark:border-l-slate-700'
                     : 'bg-slate-50/80 dark:bg-slate-900/90 hover:bg-slate-100 dark:hover:bg-slate-800/80 text-slate-900 dark:text-slate-100 border-l-4 border-l-transparent'
                 }`}
                 aria-expanded={isOpen}
@@ -116,10 +111,18 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                     </span>
                   </div>
                   {/* Penjelasan hanya tampil saat tab ditutup, hilang saat tab dibuka */}
-                  {!isOpen && kelompok.ringkasan_kelompok && (
-                    <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-1 line-clamp-2 leading-relaxed">
-                      {kelompok.ringkasan_kelompok}
-                    </p>
+                  {kelompok.ringkasan_kelompok && (
+                    <div
+                      className={`grid transition-[grid-template-rows,opacity] duration-200 ease-in-out ${
+                        !isOpen ? 'grid-rows-[1fr] opacity-100 mt-1' : 'grid-rows-[0fr] opacity-0 mt-0 pointer-events-none'
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
+                          {kelompok.ringkasan_kelompok}
+                        </p>
+                      </div>
+                    </div>
                   )}
                 </div>
 
@@ -130,17 +133,22 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                       : 'bg-slate-200/80 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                   }`}
                 >
-                  {isOpen ? (
-                    <ChevronUp className="w-5 h-5 text-current" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-current" />
-                  )}
+                  <ChevronDown
+                    className={`w-5 h-5 text-current transition-transform duration-300 ease-in-out ${
+                      isOpen ? 'rotate-180' : 'rotate-0'
+                    }`}
+                  />
                 </div>
               </button>
 
-              {/* Accordion Content */}
-              {isOpen && (
-                <div className="bg-white dark:bg-[#070b16] fade-in">
+              {/* Accordion Content dengan Animasi Menggeser (Smooth Slide Transition) */}
+              <div
+                className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
+                  isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <div className="bg-white dark:bg-[#070b16]">
                   {/* =========================================================
                       DESKTOP VIEW: Tabel 3 Kolom Rapi
                       ========================================================= */}
@@ -268,8 +276,9 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                       </div>
                     ))}
                   </div>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           );
         })}

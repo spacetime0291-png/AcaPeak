@@ -437,7 +437,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
         {/* 2. KARTU KONSEP INTI (Box Biru: #EFF6FF / border #3B82F6) */}
         {zona1?.konsep_inti_markdown && (
-          <div className="rounded-2xl bg-[#EFF6FF] dark:bg-blue-950/25 border border-[#3B82F6]/50 border-l-4 border-l-[#3B82F6] p-5 sm:p-6 space-y-4 max-w-full overflow-hidden shadow-xs">
+          <div className="rounded-2xl bg-[#EFF6FF] dark:bg-blue-950/25 border border-[#3B82F6]/50 border-l-4 border-l-blue-600 dark:border-l-blue-900 p-5 sm:p-6 space-y-4 max-w-full overflow-hidden shadow-xs">
             <div className="flex items-center gap-2.5">
               <span className="text-xl" aria-hidden="true">📘</span>
               <h2 className="text-lg sm:text-xl font-extrabold text-blue-950 dark:text-blue-100">
@@ -563,7 +563,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           {activeVariasi && (
             <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 shadow-xs overflow-hidden max-w-full">
               {/* Area Isi Variasi Aktif */}
-              <div role="tabpanel" className="p-5 sm:p-7 space-y-6 fade-in max-w-full overflow-hidden">
+              <div key={activeVariasiIndex} role="tabpanel" className="p-5 sm:p-7 space-y-6 animate-tab-slide max-w-full overflow-hidden">
                 {/* Header Variasi */}
                 <div className="space-y-1.5 border-b border-slate-200 dark:border-slate-800 pb-4">
                   <div className="flex items-center gap-2">
