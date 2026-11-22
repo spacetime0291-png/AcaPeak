@@ -304,7 +304,7 @@ function MaterialRouteView({
 
   return (
     <>
-      <main className="flex-1 w-full px-0 sm:px-3 md:px-6 py-1 sm:py-3">
+      <main className="flex-1 w-full">
         {isLoading || !activeMaterial ? (
           <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto my-6">
             <div className="inline-block w-9 h-9 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3"></div>
@@ -457,7 +457,7 @@ export default function App({ initialMaterial }: AppProps) {
   const isDark = theme === 'dark';
 
   return (
-    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-hidden bg-[#fdfbf7] dark:bg-[#070913]">
+    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-clip bg-[#fdfbf7] dark:bg-[#070913]">
       <LegacyQueryRedirect />
 
       {/* Visual Ambient Backgrounds */}

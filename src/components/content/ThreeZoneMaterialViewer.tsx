@@ -533,10 +533,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                     role="tab"
                     aria-selected={isActive}
                     onClick={() => handleSelectTab(idx)}
-                    className={`shrink-0 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer flex items-center gap-2 ${
+                    className={`shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 ${
                       isActive
-                        ? 'bg-slate-800 text-white shadow-xs'
-                        : 'bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+                        ? 'bg-sky-600 text-white shadow-md ring-2 ring-sky-500/30'
+                        : 'bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700'
                     }`}
                   >
                     {isRead && (
