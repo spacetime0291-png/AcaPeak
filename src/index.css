@@ -215,6 +215,12 @@ body:not(.dark) .pastel-card-cream {
   line-height: 1.2 !important; /* CRITICAL: KaTeX expects line-height 1.2 for internal strut math */
   white-space: nowrap;
   max-width: 100%;
+  display: inline-block;
+  vertical-align: -0.15em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 /* Display / Block Math formulas: horizontal scroll if too wide on mobile, never clipping vertically */
@@ -351,22 +357,26 @@ article {
   max-width: 100%;
 }
 
+.katex::-webkit-scrollbar,
 .katex-display::-webkit-scrollbar,
 .overflow-x-auto::-webkit-scrollbar {
-  height: 5px;
+  height: 4px;
 }
 
+.katex::-webkit-scrollbar-track,
 .katex-display::-webkit-scrollbar-track,
 .overflow-x-auto::-webkit-scrollbar-track {
   background: transparent;
 }
 
+.katex::-webkit-scrollbar-thumb,
 .katex-display::-webkit-scrollbar-thumb,
 .overflow-x-auto::-webkit-scrollbar-thumb {
   background-color: #cbd5e1;
   border-radius: 9999px;
 }
 
+.dark .katex::-webkit-scrollbar-thumb,
 .dark .katex-display::-webkit-scrollbar-thumb,
 .dark .overflow-x-auto::-webkit-scrollbar-thumb {
   background-color: #334155;

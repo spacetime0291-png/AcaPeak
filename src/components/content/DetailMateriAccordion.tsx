@@ -55,18 +55,23 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
   const { label_kolom } = data;
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 shadow-xs overflow-hidden transition-all">
-      {/* Header Blok Detail Materi (Zona 1B) */}
-      <div className="p-5 sm:p-6 space-y-1.5 border-b border-slate-100 dark:border-slate-800">
+    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 border-l-4 border-l-sky-500 dark:border-l-sky-400 shadow-xs overflow-hidden max-w-full transition-all">
+      {/* Header Blok Detail Materi (Zona 1B) - High Contrast & Distinct */}
+      <div className="p-5 sm:p-6 space-y-2 border-b border-slate-200 dark:border-slate-800 bg-gradient-to-r from-sky-50/70 via-white to-white dark:from-sky-950/30 dark:via-slate-900 dark:to-slate-900">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold uppercase tracking-wider text-sky-700 dark:text-sky-300 bg-sky-50 dark:bg-sky-950/60 px-2.5 py-1 rounded-md">
-            <BookOpen className="w-3.5 h-3.5 text-sky-500" />
+          <span className="inline-flex items-center gap-1.5 text-xs font-mono font-extrabold uppercase tracking-wider text-sky-900 dark:text-sky-200 bg-sky-100 dark:bg-sky-900/60 border border-sky-300/80 dark:border-sky-700/80 px-2.5 py-1 rounded-md shadow-2xs">
+            <BookOpen className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400 shrink-0" />
             <span>Zona 1B • Detail Materi Lengkap</span>
           </span>
         </div>
-        <h2 className="text-lg sm:text-xl font-bold text-[#1E293B] dark:text-white leading-snug">
+        <h2 className="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white leading-snug tracking-tight">
           {data.judul_blok}
         </h2>
+        {data.subjudul_ringkas && (
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            {data.subjudul_ringkas}
+          </p>
+        )}
       </div>
 
       {/* Accordion List Kelompok */}
@@ -78,27 +83,33 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
 
           return (
             <div key={kIdx} className="transition-all">
-              {/* Accordion Header / Trigger Button */}
+              {/* Accordion Header / Trigger Button - High Contrast */}
               <button
                 type="button"
                 onClick={() => toggleGroup(kIdx)}
                 className={`w-full px-5 py-4 sm:px-6 sm:py-4.5 flex items-center justify-between gap-3 text-left transition-all cursor-pointer ${
                   isOpen
-                    ? 'bg-slate-100/90 dark:bg-slate-800 text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-700/80 shadow-2xs'
-                    : 'bg-slate-50/50 dark:bg-slate-900/80 hover:bg-slate-100/70 dark:hover:bg-slate-800/60 text-slate-800 dark:text-slate-200'
+                    ? 'bg-sky-50/90 dark:bg-slate-800/95 text-slate-950 dark:text-white border-b border-sky-200 dark:border-slate-700 shadow-2xs border-l-4 border-l-sky-600 dark:border-l-sky-400'
+                    : 'bg-slate-50/80 dark:bg-slate-900/90 hover:bg-slate-100 dark:hover:bg-slate-800/80 text-slate-900 dark:text-slate-100 border-l-4 border-l-transparent'
                 }`}
                 aria-expanded={isOpen}
               >
                 <div className="flex-1 min-w-0 pr-2">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-bold text-sm sm:text-base text-slate-900 dark:text-white leading-snug">
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    <span
+                      className={`text-sm sm:text-base leading-snug tracking-tight ${
+                        isOpen
+                          ? 'font-black text-sky-950 dark:text-white'
+                          : 'font-extrabold text-slate-900 dark:text-slate-100'
+                      }`}
+                    >
                       {kelompok.nama_kelompok}
                     </span>
                     <span
-                      className={`inline-flex items-center font-mono text-xs font-semibold px-2 py-0.5 rounded-full ${
+                      className={`inline-flex items-center font-mono text-xs px-2.5 py-0.5 rounded-full ${
                         isOpen
-                          ? 'bg-sky-100 dark:bg-sky-950/80 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800/60'
-                          : 'bg-slate-200/70 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
+                          ? 'bg-sky-600 text-white dark:bg-sky-500 dark:text-slate-950 font-bold shadow-2xs'
+                          : 'bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 font-semibold'
                       }`}
                     >
                       {badgeText}
@@ -106,7 +117,7 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                   </div>
                   {/* Penjelasan hanya tampil saat tab ditutup, hilang saat tab dibuka */}
                   {!isOpen && kelompok.ringkasan_kelompok && (
-                    <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1 line-clamp-2 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-1 line-clamp-2 leading-relaxed">
                       {kelompok.ringkasan_kelompok}
                     </p>
                   )}
@@ -115,14 +126,14 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                 <div
                   className={`shrink-0 p-1.5 rounded-lg transition-colors ${
                     isOpen
-                      ? 'bg-sky-100 dark:bg-sky-900/40 text-sky-600 dark:text-sky-400'
-                      : 'text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
+                      ? 'bg-sky-600 text-white dark:bg-sky-500 dark:text-slate-950 shadow-2xs'
+                      : 'bg-slate-200/80 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                   }`}
                 >
                   {isOpen ? (
-                    <ChevronUp className="w-5 h-5 text-sky-600 dark:text-sky-400" />
+                    <ChevronUp className="w-5 h-5 text-current" />
                   ) : (
-                    <ChevronDown className="w-5 h-5" />
+                    <ChevronDown className="w-5 h-5 text-current" />
                   )}
                 </div>
               </button>
@@ -133,10 +144,10 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                   {/* =========================================================
                       DESKTOP VIEW: Tabel 3 Kolom Rapi
                       ========================================================= */}
-                  <div className="hidden md:block p-5 sm:p-6 overflow-x-auto">
+                  <div className="hidden md:block p-5 sm:p-6 overflow-x-auto max-w-full">
                     <table className="w-full text-left border-collapse">
                       <thead>
-                        <tr className="border-b border-slate-200 dark:border-slate-700 bg-slate-100/80 dark:bg-slate-800/80 text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300">
+                        <tr className="border-b border-slate-200 dark:border-slate-700 bg-slate-100/90 dark:bg-slate-800 text-xs font-mono uppercase tracking-wider text-slate-900 dark:text-slate-100 font-extrabold">
                           <th className="py-3 px-3.5 rounded-tl-lg w-[38%]">
                             {label_kolom?.kolom_1 || 'Sifat / Rumus / Konsep'}
                           </th>
@@ -155,16 +166,16 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                             className="hover:bg-slate-50/70 dark:hover:bg-slate-800/30 transition-colors align-top"
                           >
                             {/* Kolom 1: Judul Poin + Penjelasan Singkat + Mini-SVG */}
-                            <td className="py-3.5 px-3.5">
-                              <div className="font-bold text-slate-900 dark:text-slate-100 mb-1 text-[15px] leading-snug">
+                            <td className="py-3.5 px-3.5 max-w-xs overflow-x-auto">
+                              <div className="font-extrabold text-slate-950 dark:text-white mb-1.5 text-[15px] leading-snug">
                                 {b.judul_poin}
                               </div>
-                              <div className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
+                              <div className="text-slate-700 dark:text-slate-200 leading-relaxed text-sm max-w-full overflow-x-auto">
                                 {renderMarkdown(b.penjelasan_singkat)}
                               </div>
                               {/* Mini-SVG jika ada */}
                               {b.visual && (
-                                <div className="mt-2.5">
+                                <div className="mt-2.5 max-w-full overflow-x-auto">
                                   <VisualRenderer
                                     visual={b.visual}
                                     isMini={true}
@@ -175,20 +186,20 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                             </td>
 
                             {/* Kolom 2: Contoh Penerapan */}
-                            <td className="py-3.5 px-3.5">
-                              <div className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
+                            <td className="py-3.5 px-3.5 max-w-xs overflow-x-auto">
+                              <div className="text-slate-700 dark:text-slate-200 leading-relaxed text-sm max-w-full overflow-x-auto">
                                 {renderMarkdown(b.contoh_penerapan)}
                               </div>
                             </td>
 
                             {/* Kolom 3: Jebakan atau Catatan */}
-                            <td className="py-3.5 px-3.5">
-                              <div className="p-3 rounded-xl bg-amber-50/70 dark:bg-amber-950/25 border border-amber-200/60 dark:border-amber-800/40 text-amber-950 dark:text-amber-200 text-xs sm:text-sm leading-relaxed space-y-1">
-                                <div className="font-bold flex items-center gap-1 text-amber-700 dark:text-amber-400 font-mono text-xs">
+                            <td className="py-3.5 px-3.5 max-w-xs overflow-x-auto">
+                              <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/35 border border-amber-300 dark:border-amber-700/60 text-amber-950 dark:text-amber-100 text-xs sm:text-sm leading-relaxed space-y-1.5 max-w-full overflow-hidden">
+                                <div className="font-bold flex items-center gap-1.5 text-amber-800 dark:text-amber-300 font-mono text-xs">
                                   <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                                   <span>Catatan UTBK</span>
                                 </div>
-                                <div>{renderMarkdown(b.jebakan_atau_catatan)}</div>
+                                <div className="max-w-full overflow-x-auto">{renderMarkdown(b.jebakan_atau_catatan)}</div>
                               </div>
                             </td>
                           </tr>
@@ -204,29 +215,29 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                     {butirList.map((b, bIdx) => (
                       <div
                         key={bIdx}
-                        className="py-4.5 first:pt-2.5 last:pb-3 space-y-3"
+                        className="py-4.5 first:pt-2.5 last:pb-3 space-y-3.5 max-w-full overflow-hidden"
                       >
-                        {/* Judul Butir */}
-                        <div className="flex items-start gap-2 border-b border-slate-100 dark:border-slate-800/80 pb-2">
-                          <span className="font-mono text-xs font-bold px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950/80 text-sky-800 dark:text-sky-300 shrink-0 mt-0.5">
+                        {/* Judul Butir - High Contrast */}
+                        <div className="flex items-start gap-2.5 border-b border-slate-200 dark:border-slate-800 pb-2.5">
+                          <span className="font-mono text-xs font-black px-2 py-0.5 rounded bg-sky-600 text-white dark:bg-sky-500 dark:text-slate-950 shrink-0 mt-0.5 shadow-2xs">
                             {bIdx + 1}
                           </span>
-                          <h4 className="font-bold text-slate-900 dark:text-white text-base leading-snug">
+                          <h4 className="font-extrabold text-slate-950 dark:text-white text-base leading-snug">
                             {b.judul_poin}
                           </h4>
                         </div>
 
                         {/* Kolom 1: Penjelasan Singkat */}
-                        <div className="space-y-1">
-                          <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-sky-600 dark:text-sky-400">
+                        <div className="space-y-1.5 max-w-full">
+                          <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-sky-700 dark:text-sky-300">
                             {label_kolom?.kolom_1 || 'Konsep / Rumus'}
                           </div>
-                          <div className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
+                          <div className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed max-w-full overflow-x-auto">
                             {renderMarkdown(b.penjelasan_singkat)}
                           </div>
                           {/* Mini-SVG jika ada */}
                           {b.visual && (
-                            <div className="pt-1">
+                            <div className="pt-1 max-w-full overflow-x-auto">
                               <VisualRenderer
                                 visual={b.visual}
                                 isMini={true}
@@ -237,22 +248,22 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = ({
                         </div>
 
                         {/* Kolom 2: Contoh Penerapan */}
-                        <div className="space-y-1 pt-1 border-t border-dashed border-slate-200 dark:border-slate-800">
-                          <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                        <div className="space-y-1.5 pt-1.5 border-t border-dashed border-slate-200 dark:border-slate-800 max-w-full">
+                          <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
                             {label_kolom?.kolom_2 || 'Contoh Penerapan'}
                           </div>
-                          <div className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
+                          <div className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed max-w-full overflow-x-auto">
                             {renderMarkdown(b.contoh_penerapan)}
                           </div>
                         </div>
 
                         {/* Kolom 3: Jebakan atau Catatan */}
-                        <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-800/40 text-amber-950 dark:text-amber-200 text-xs sm:text-sm leading-relaxed space-y-1">
-                          <div className="font-bold flex items-center gap-1 text-amber-700 dark:text-amber-400 font-mono text-[11px] uppercase tracking-wider">
+                        <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/35 border border-amber-300 dark:border-amber-700/60 text-amber-950 dark:text-amber-100 text-xs sm:text-sm leading-relaxed space-y-1.5 max-w-full overflow-hidden">
+                          <div className="font-bold flex items-center gap-1.5 text-amber-800 dark:text-amber-300 font-mono text-[11px] uppercase tracking-wider">
                             <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                             <span>{label_kolom?.kolom_3 || 'Catatan / Jebakan UTBK'}</span>
                           </div>
-                          <div>{renderMarkdown(b.jebakan_atau_catatan)}</div>
+                          <div className="max-w-full overflow-x-auto">{renderMarkdown(b.jebakan_atau_catatan)}</div>
                         </div>
                       </div>
                     ))}
