@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Bola dijatuhkan dari ketinggian 8 meter dan memantul kembali 3/4 kali tinggi sebelumnya hingga berhenti. Apakah total panjang lintasannya 32 meter?",
+      "pertanyaan_pemantik": "Bola dijatuhkan dari ketinggian 8 meter dan selalu memantul 3/4 kali tinggi sebelumnya hingga berhenti. Apakah total lintasannya 32 meter?",
       "opsi_cepat": [
-        "Ya, langsung pakai rumus S tak hingga = 8 / (1 - 3/4) = 32 m",
-        "Salah, lintasan pantulan terjadi dua kali (naik dan turun) sehingga 56 m"
+        "Benar, langsung pakai rumus S tak hingga = 8 / (1 - 3/4) = 32 m",
+        "Salah, setiap pantulan dihitung naik-turun sehingga totalnya 56 m"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Lintasan jatuh awal terjadi satu kali (8 m), sedangkan setiap pantulan berikutnya menempuh jarak naik dan turun yang sama sehingga total lintasan = 2(32) - 8 = 56 meter."
+      "penjelasan_kilat": "Jatuh pertama cuma terjadi sekali (8 m), sedangkan setiap pantulan menempuh jarak naik dan turun yang sama. Jadi, total lintasannya adalah 2(32) - 8 = 56 meter."
     },
-    "konsep_inti_markdown": "Pemodelan perubahan kuantitas terbagi menjadi pola aditif (selisih tetap) dan multiplikatif (rasio tetap).\n\n- **Aritmetika (Beda $b$ konstan):** $U_n = a + (n-1)b$ dan $S_n = \\frac{n}{2}(2a + (n-1)b)$.\n- **Geometri (Rasio $r$ konstan):** $U_n = a \\cdot r^{n-1}$, $S_n = \\frac{a(r^n - 1)}{r - 1}$, dan $S_\\infty = \\frac{a}{1 - r}$ untuk $|r| < 1$.\n- **Pertumbuhan & Peluruhan:** $N(t) = N_0 \\cdot (1 \\pm p)^{\\frac{t}{T}}$ atau $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$ dengan $T$ periode waktu.",
+    "konsep_inti_markdown": "Semua soal pola bilangan di UTBK terbagi menjadi dua jalur: **pola tambah-kurang tetap** (aritmetika) dan **pola kali-bagi tetap** (geometri & eksponensial).\n\n- **Aritmetika (beda $b$ tetap):** $U_n = a + (n-1)b$ dan $S_n = \\frac{n}{2}(2a + (n-1)b)$.\n- **Geometri (rasio $r$ tetap):** $U_n = a \\cdot r^{n-1}$, $S_n = \\frac{a(r^n - 1)}{r - 1}$, serta $S_\\infty = \\frac{a}{1 - r}$ syarat $|r| < 1$.\n- **Pertumbuhan & Peluruhan:** $N(t) = N_0 \\cdot (1 \\pm p)^{\\frac{t}{T}}$ atau $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$ dengan $T$ sebagai satu siklus waktu.",
     "radar_jebakan_utbk": [
-      "Lupa mengalikan 2 atau mengurangi tinggi awal ($h_0$) pada lintasan bola memantul: rumus cepat $S_{\\text{total}} = h_0 \\cdot \\frac{q + p}{q - p}$ untuk rasio $\\frac{p}{q}$, bukan sekadar $\\frac{h_0}{1 - r}$.",
-      "Salah menghitung pangkat siklus waktu ($\\frac{t}{T}$): bakteri membelah tiap 3 jam selama 18 jam berarti terjadi $\\frac{18}{3} = 6$ kali pembelahan, bukan 18 kali."
+      "Lupa menghitung gerak naik-turun pada bola memantul: jangan cuma pakai $\\frac{h_0}{1 - r}$. Gunakan rumus cepat $S_{\\text{total}} = h_0 \\cdot \\frac{q + p}{q - p}$ untuk rasio $\\frac{p}{q}$.",
+      "Salah memasukkan pangkat waktu ($\\frac{t}{T}$): bakteri membelah tiap 3 jam selama 18 jam berarti terjadi $\\frac{18}{3} = 6$ siklus pembelahan, bukan 18 kali."
     ],
-    "stimulus_utama_bersama": "Pusat Riset Bio-Energi dan Edukasi Sains Nusantara mengoperasikan fasilitas terpadu dengan spesifikasi teknis berikut:\n1. **Auditorium & Gudang Logistik:** Ruang kuliah umum memiliki 15 baris kursi dengan 20 kursi pada baris terdepan, dan setiap baris berikutnya bertambah 4 kursi. Di gudang pipa, pipa saluran air ditumpuk secara horizontal dengan 18 pipa pada lapisan paling bawah, berkurang 2 pipa pada setiap lapisan di atasnya hingga tersusun 6 lapisan.\n2. **Laboratorium Uji Material:** Pengujian koefisien restitusi dilakukan dengan menjatuhkan bola polimer dari ketinggian 8 meter di atas lantai datar. Bola memantul vertikal dan mencapai ketinggian $\\frac{3}{4}$ dari ketinggian sebelumnya secara berulang hingga berhenti.\n3. **Unit Bioreaktor Mikroalga:** Tangki kultur diisi larutan starter berisi 500 sel mikroalga per mililiter. Pada suhu optimal, populasi mikroalga membelah menjadi dua kali lipat setiap 3 jam.\n4. **Unit Pelacak Isotop:** Untuk memetakan laju serapan nutrisi, disuntikkan isotop pelacak bermassa awal 160 miligram yang meluruh dengan waktu paruh selama 6 jam.",
+    "stimulus_utama_bersama": "Pusat Riset Bio-Energi dan Edukasi Sains Nusantara mengoperasikan empat fasilitas dengan spesifikasi berikut:\n1. **Auditorium & Gudang Logistik:** Auditorium memiliki 15 baris kursi. Baris terdepan berisi 20 kursi, lalu bertambah 4 kursi di setiap baris berikutnya. Di gudang, pipa air ditumpuk horizontal sebanyak 6 lapisan: lapisan paling bawah berisi 18 pipa dan selalu berkurang 2 pipa di setiap lapisan atasnya.\n2. **Laboratorium Uji Material:** Bola polimer dijatuhkan dari ketinggian 8 meter di atas lantai datar. Bola memantul vertikal setinggi $\\frac{3}{4}$ dari tinggi sebelumnya secara berulang hingga berhenti.\n3. **Unit Bioreaktor Mikroalga:** Tangki kultur diisi starter berisi 500 sel mikroalga per mililiter. Pada suhu optimal, populasi mikroalga membelah menjadi dua kali lipat setiap 3 jam.\n4. **Unit Pelacak Isotop:** Untuk memetakan laju serapan nutrisi, disuntikkan isotop pelacak bermassa awal 160 miligram dengan waktu paruh 6 jam.",
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Rumus dan Sifat Barisan serta Eksponensial UTBK",
-      "subjudul_ringkas": "Panduan lengkap pemodelan pola aditif, multiplikatif, deret tak hingga, hingga pertumbuhan dan peluruhan eksponensial.",
+      "subjudul_ringkas": "Panduan praktis membedakan pola tambah-kurang tetap, rasio pengali, deret tak hingga, hingga pertumbuhan dan peluruhan berbasis waktu.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -36,105 +36,105 @@
       "kelompok": [
         {
           "nama_kelompok": "Barisan dan Deret Aritmetika Kontekstual",
-          "ringkasan_kelompok": "Pemodelan pola pertambahan atau pengurangan konstan pada susunan objek dan produksi.",
+          "ringkasan_kelompok": "Pola dengan penambahan atau pengurangan tetap, biasa muncul di soal susunan kursi, tumpukan barang, atau target produksi.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Suku ke-$n$ Barisan Aritmetika ($U_n$)",
-              "penjelasan_singkat": "Menentukan nilai suku pada urutan ke-$n$ dengan beda tetap $b$ menggunakan rumus $U_n = a + (n-1)b$.",
-              "contoh_penerapan": "Baris pertama berisi $12$ kursi dan bertambah $3$ kursi tiap baris; baris ke-$10$ memuat **$12 + 9(3) = 39$ kursi**.",
-              "jebakan_atau_catatan": "Peserta sering mengalikan $b$ dengan $n$, padahal pengalinya harus **$(n-1)$** karena suku pertama tidak ditambah beda.",
+              "penjelasan_singkat": "Cari nilai pada urutan ke-$n$ yang selisihnya selalu tetap ($b$) dengan rumus $U_n = a + (n-1)b$.",
+              "contoh_penerapan": "Baris pertama berisi $12$ kursi dan bertambah $3$ kursi tiap baris. Baris ke-$10$ memuat **$12 + 9(3) = 39$ kursi**.",
+              "jebakan_atau_catatan": "Jangan langsung kalikan $b$ dengan $n$. Pengalinya wajib **$(n-1)$** karena suku pertama tidak ditambah beda.",
               "visual": null
             },
             {
               "judul_poin": "Jumlah $n$ Suku Pertama ($S_n$)",
-              "penjelasan_singkat": "Menghitung akumulasi total dari suku pertama hingga ke-$n$ memakai $S_n = \\frac{n}{2}(a + U_n)$ atau $S_n = \\frac{n}{2}(2a + (n-1)b)$.",
-              "contoh_penerapan": "Produksi bulan pertama $100$ unit dan naik $20$ unit per bulan; total $6$ bulan adalah **$\\frac{6}{2}(200 + 5 \\times 20) = 900$ unit**.",
-              "jebakan_atau_catatan": "Bedakan pertanyaan jumlah pada bulan ke-$n$ ($U_n$) dengan total produksi **selama** $n$ bulan ($S_n$).",
+              "penjelasan_singkat": "Hitung total gabungan dari suku pertama sampai ke-$n$ memakai $S_n = \\frac{n}{2}(a + U_n)$ atau $S_n = \\frac{n}{2}(2a + (n-1)b)$.",
+              "contoh_penerapan": "Produksi bulan pertama $100$ unit dan naik $20$ unit tiap bulan. Total $6$ bulan pertama adalah **$\\frac{6}{2}(200 + 5 \\times 20) = 900$ unit**.",
+              "jebakan_atau_catatan": "Cek kata kuncinya: hasil **pada** bulan ke-$n$ itu $U_n$, sedangkan total **selama** $n$ bulan itu $S_n$.",
               "visual": null
             },
             {
-              "judul_poin": "Trik Beda Tanpa Suku Pertama ($b$)",
-              "penjelasan_singkat": "Mencari beda konstan langsung dari dua suku sembarang $U_p$ dan $U_q$ dengan rumus $b = \\frac{U_q - U_p}{q - p}$.",
-              "contoh_penerapan": "Jika tumpukan pipa tingkat ke-$3$ ada $18$ pipa dan tingkat ke-$7$ ada $10$ pipa, bedanya **$\\frac{10 - 18}{7 - 3} = -2$**.",
-              "jebakan_atau_catatan": "Tidak perlu mencari $a$ dahulu; lompat suku langsung pakai **$U_q = U_p + (q - p)b$** agar hemat waktu.",
+              "judul_poin": "Trik Cari Beda Tanpa Suku Pertama ($b$)",
+              "penjelasan_singkat": "Cari beda $b$ langsung dari dua suku mana saja ($U_p$ dan $U_q$) memakai $b = \\frac{U_q - U_p}{q - p}$.",
+              "contoh_penerapan": "Tumpukan pipa lapis ke-$3$ ada $18$ pipa dan lapis ke-$7$ ada $10$ pipa. Bedanya langsung ketemu: **$\\frac{10 - 18}{7 - 3} = -2$**.",
+              "jebakan_atau_catatan": "Hemat waktu tanpa mencari $a$ dulu—langsung lompat antar-suku pakai **$U_q = U_p + (q - p)b$**.",
               "visual": null
             },
             {
               "judul_poin": "Suku Tengah ($U_t$) dan Hubungan $U_n$ dengan $S_n$",
-              "penjelasan_singkat": "Untuk $n$ ganjil berlaku $U_t = \\frac{a + U_n}{2}$ dan $S_n = n \\cdot U_t$, serta $U_n = S_n - S_{n-1}$ untuk $n \\ge 2$.",
-              "contoh_penerapan": "Jika jumlah $9$ suku pertama adalah $180$, maka suku tengah ($U_5$) bernilai **$\\frac{180}{9} = 20$** tanpa mencari $a$ maupun $b$.",
-              "jebakan_atau_catatan": "Rumus $U_n = S_n - S_{n-1}$ berlaku mulai $n = 2$; khusus suku pertama wajib gunakan **$U_1 = S_1$**.",
+              "penjelasan_singkat": "Jika banyak suku ($n$) ganjil, berlaku $U_t = \\frac{a + U_n}{2}$ dan $S_n = n \\cdot U_t$. Selain itu, $U_n = S_n - S_{n-1}$ untuk $n \\ge 2$.",
+              "contoh_penerapan": "Jumlah $9$ suku pertama adalah $180$. Suku tengahnya ($U_5$) langsung ketemu **$\\frac{180}{9} = 20$** tanpa cari $a$ atau $b$.",
+              "jebakan_atau_catatan": "Rumus $U_n = S_n - S_{n-1}$ baru berlaku mulai $n = 2$. Khusus suku pertama, selalu pakai **$U_1 = S_1$**.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Barisan Geometri dan Deret Tak Hingga",
-          "ringkasan_kelompok": "Pemodelan perubahan dengan rasio pengali tetap serta total lintasan hingga berhenti.",
+          "ringkasan_kelompok": "Pola dengan pengali (rasio) tetap, sering dipakai di soal setoran berlipat, ayunan bandul, dan pantulan bola.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Suku ke-$n$ dan Rasio Geometri ($U_n$)",
-              "penjelasan_singkat": "Menentukan suku ke-$n$ dengan rasio konstan $r = \\frac{U_n}{U_{n-1}}$ memakai rumus $U_n = a \\cdot r^{n-1}$ dan $r^{q-p} = \\frac{U_q}{U_p}$.",
-              "contoh_penerapan": "Jika $U_2 = 6$ dan $U_5 = 48$, maka $r^3 = \\frac{48}{6} = 8$ sehingga rasio **$r = 2$** dan **$U_1 = 3$**.",
-              "jebakan_atau_catatan": "Hati-hati saat pangkat genap ($r^2 = 9$); periksa konteks soal apakah rasio harus **positif** atau bisa **negatif**.",
+              "penjelasan_singkat": "Cari suku ke-$n$ dengan pengali tetap $r = \\frac{U_n}{U_{n-1}}$ lewat rumus $U_n = a \\cdot r^{n-1}$ dan $r^{q-p} = \\frac{U_q}{U_p}$.",
+              "contoh_penerapan": "Diketahui $U_2 = 6$ dan $U_5 = 48$. Maka $r^3 = \\frac{48}{6} = 8$, sehingga rasio **$r = 2$** dan **$U_1 = 3$**.",
+              "jebakan_atau_catatan": "Waspada saat pangkat genap (misal $r^2 = 9$). Cek konteks soal apakah rasio wajib **positif** atau boleh **negatif**.",
               "visual": null
             },
             {
               "judul_poin": "Jumlah $n$ Suku Pertama Geometri ($S_n$)",
-              "penjelasan_singkat": "Menjumlahkan $n$ suku memakai $S_n = \\frac{a(r^n - 1)}{r - 1}$ ($r > 1$) atau $S_n = \\frac{a(1 - r^n)}{1 - r}$ ($r < 1$).",
-              "contoh_penerapan": "Tabungan awal $\\text{Rp}100.000$ berlipat $2$ tiap tahun; total akumulasi setelah $4$ tahun adalah **$100.000 \\times \\frac{2^4 - 1}{2 - 1} = \\text{Rp}1.500.000$**.",
-              "jebakan_atau_catatan": "Pastikan membedakan nilai tabungan **pada** tahun ke-$n$ ($U_n$) dengan total seluruh setoran **selama** $n$ tahun ($S_n$).",
+              "penjelasan_singkat": "Jumlahkan $n$ suku memakai $S_n = \\frac{a(r^n - 1)}{r - 1}$ jika $r > 1$, atau $S_n = \\frac{a(1 - r^n)}{1 - r}$ jika $r < 1$.",
+              "contoh_penerapan": "Setoran tahun pertama $\\text{Rp}100.000$ dan tiap tahun setorannya berlipat $2$. Total setoran selama $4$ tahun adalah **$100.000 \\times \\frac{2^4 - 1}{2 - 1} = \\text{Rp}1.500.000$**.",
+              "jebakan_atau_catatan": "Bedakan nominal setoran **pada** tahun ke-$n$ ($U_n$) dengan total seluruh uang yang disetor **selama** $n$ tahun ($S_n$).",
               "visual": null
             },
             {
               "judul_poin": "Deret Geometri Tak Hingga Konvergen ($S_\\infty$)",
-              "penjelasan_singkat": "Menghitung total tak hingga suku dengan syarat konvergen $-1 < r < 1$ menggunakan rumus $S_\\infty = \\frac{a}{1 - r}$.",
-              "contoh_penerapan": "Ayunan bandul pertama sejauh $40\\text{ cm}$ dan menyusut menjadi $\\frac{3}{4}$ kali sebelumnya; total panjang busur adalah **$\\frac{40}{1 - 3/4} = 160\\text{ cm}$**.",
-              "jebakan_atau_catatan": "Deret tak hingga **tidak memiliki nilai** jika $|r| \\ge 1$; selalu cek syarat $-1 < r < 1$ sebelum menghitung.",
+              "penjelasan_singkat": "Hitung total deret yang terus mengecil sampai berhenti dengan syarat $-1 < r < 1$ memakai rumus $S_\\infty = \\frac{a}{1 - r}$.",
+              "contoh_penerapan": "Ayunan bandul pertama sepanjang $40\\text{ cm}$, lalu menyusut menjadi $\\frac{3}{4}$ kali sebelumnya. Total lintasannya **$\\frac{40}{1 - 3/4} = 160\\text{ cm}$**.",
+              "jebakan_atau_catatan": "Jika $|r| \\ge 1$, deret membesar terus dan **tidak punya nilai total**. Selalu pastikan $-1 < r < 1$ sebelum menghitung.",
               "visual": null
             },
             {
               "judul_poin": "Panjang Lintasan Total Bola Memantul ($L$)",
-              "penjelasan_singkat": "Bola dijatuhkan dari ketinggian $h_0$ dengan rasio pantul $r = \\frac{p}{q}$ menempuh lintasan $L = h_0 + 2S_\\infty = h_0\\left(\\frac{q+p}{q-p}\\right)$.",
-              "contoh_penerapan": "Bola dijatuhkan dari $10\\text{ m}$ dan memantul $\\frac{3}{5}$ tinggi sebelumnya; total lintasan hingga berhenti adalah **$10 \\times \\frac{5+3}{5-3} = 40\\text{ m}$**.",
-              "jebakan_atau_catatan": "Trik $\\frac{q+p}{q-p}$ hanya jika bola **dijatuhkan**; jika bola **dilempar dari tanah** lalu memantul, rumusnya menjadi **$2S_\\infty$** tanpa $h_0$ tunggal.",
+              "penjelasan_singkat": "Bola dijatuhkan dari tinggi $h_0$ dengan rasio pantul $r = \\frac{p}{q}$ menempuh total jarak $L = h_0 + 2S_\\infty = h_0\\left(\\frac{q+p}{q-p}\\right)$.",
+              "contoh_penerapan": "Bola dijatuhkan dari $10\\text{ m}$ dan memantul $\\frac{3}{5}$ tinggi sebelumnya. Total lintasannya adalah **$10 \\times \\frac{5+3}{5-3} = 40\\text{ m}$**.",
+              "jebakan_atau_catatan": "Trik $\\frac{q+p}{q-p}$ khusus untuk bola yang **dijatuhkan**. Jika bola **dilempar dari tanah** lalu memantul, rumusnya langsung **$2S_\\infty$**.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Pertumbuhan dan Peluruhan Eksponensial Periodik",
-          "ringkasan_kelompok": "Pemodelan perubahan kuantitas kontinu berbasis waktu $t$ dan periode pembaruan $T$.",
+          "ringkasan_kelompok": "Pola kenaikan atau penyusutan yang berulang terus setiap selang waktu $T$, seperti bunga majemuk, bakteri, dan zat radioaktif.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Pertumbuhan Eksponensial Persentase ($N(t)$)",
-              "penjelasan_singkat": "Kuantitas awal $N_0$ tumbuh sebesar $p\\%$ setiap periode $T$ dimodelkan dengan fungsi $N(t) = N_0(1 + p)^{\\frac{t}{T}}$.",
-              "contoh_penerapan": "Modal $\\text{Rp}2.000.000$ tumbuh $10\\%$ per tahun; setelah $2$ tahun nilainya menjadi **$2.000.000(1 + 0,1)^2 = \\text{Rp}2.420.000$**.",
-              "jebakan_atau_catatan": "Satuan waktu $t$ dan periode $T$ wajib sama; jika $t$ dalam bulan dan $T$ dalam tahun, samakan dulu.",
+              "penjelasan_singkat": "Nilai awal $N_0$ yang naik $p\\%$ setiap selang waktu $T$ dihitung memakai $N(t) = N_0(1 + p)^{\\frac{t}{T}}$.",
+              "contoh_penerapan": "Modal $\\text{Rp}2.000.000$ tumbuh $10\\%$ per tahun. Setelah $2$ tahun, nilainya menjadi **$2.000.000(1 + 0,1)^2 = \\text{Rp}2.420.000$**.",
+              "jebakan_atau_catatan": "Satuan waktu $t$ dan periode $T$ wajib seragam. Jika $t$ dalam bulan dan $T$ dalam tahun, ubah dulu ke satuan yang sama.",
               "visual": null
             },
             {
               "judul_poin": "Pertumbuhan Faktor Pengali ($k$-Lipat)",
-              "penjelasan_singkat": "Jika populasi awal $N_0$ membelah atau berlipat menjadi $k$ kali setiap periode $T$, gunakan rumus $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$.",
-              "contoh_penerapan": "$50$ bakteri membelah menjadi $2$ setiap $15$ menit; setelah $1$ jam ($60$ menit) jumlahnya **$50 \\times 2^{\\frac{60}{15}} = 800$ bakteri**.",
-              "jebakan_atau_catatan": "Jangan kurangi pangkat dengan $1$ seperti $U_n$ biasa; saat $t = 0$, pangkat harus nol agar **$N(0) = N_0$**.",
+              "penjelasan_singkat": "Jika populasi awal $N_0$ membelah atau berlipat menjadi $k$ kali tiap periode $T$, pakai rumus $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$.",
+              "contoh_penerapan": "$50$ bakteri membelah jadi $2$ setiap $15$ menit. Setelah $1$ jam ($60$ menit), jumlahnya **$50 \\times 2^{\\frac{60}{15}} = 800$ bakteri**.",
+              "jebakan_atau_catatan": "Jangan kurangi pangkat dengan $1$ seperti rumus $U_n$. Saat $t = 0$, pangkat harus $0$ agar hasilnya tepat **$N(0) = N_0$**.",
               "visual": null
             },
             {
               "judul_poin": "Peluruhan Eksponensial Persentase ($N(t)$)",
-              "penjelasan_singkat": "Kuantitas awal $N_0$ menyusut sebesar $p\\%$ setiap periode $T$ dimodelkan dengan rumus $N(t) = N_0(1 - p)^{\\frac{t}{T}}$.",
-              "contoh_penerapan": "Kadar obat $200\\text{ mg}$ meluruh $20\\%$ tiap jam; sisa kadar setelah $2$ jam adalah **$200(1 - 0,2)^2 = 128\\text{ mg}$**.",
-              "jebakan_atau_catatan": "Bilangan pokok dalam kurung adalah **persentase tersisa $(1 - p)$**, bukan persentase peluruhan $p$ yang hilang.",
+              "penjelasan_singkat": "Nilai awal $N_0$ yang menyusut $p\\%$ setiap periode $T$ dihitung memakai $N(t) = N_0(1 - p)^{\\frac{t}{T}}$.",
+              "contoh_penerapan": "Kadar obat $200\\text{ mg}$ meluruh $20\\%$ tiap jam. Sisa kadarnya setelah $2$ jam adalah **$200(1 - 0,2)^2 = 128\\text{ mg}$**.",
+              "jebakan_atau_catatan": "Angka di dalam kurung adalah **persentase sisa $(1 - p)$**, bukan persentase bagian yang hilang ($p$).",
               "visual": null
             },
             {
               "judul_poin": "Peluruhan Waktu Paruh ($T_{1/2}$)",
-              "penjelasan_singkat": "Zat awal $N_0$ berkurang menjadi setengahnya setiap waktu paruh $T_{1/2}$ mengikuti rumus $N(t) = N_0 \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$.",
-              "contoh_penerapan": "Zat radioaktif $64\\text{ gram}$ memiliki waktu paruh $4$ hari; setelah $12$ hari massanya tersisa **$64 \\times \\left(\\frac{1}{2}\\right)^{\\frac{12}{4}} = 8\\text{ gram}$**.",
-              "jebakan_atau_catatan": "Perhatikan pertanyaan soal: mencari **sisa zat** gunakan $N(t)$, sedangkan mencari **zat yang meluruh** hitung **$N_0 - N(t)$**.",
+              "penjelasan_singkat": "Zat awal $N_0$ menyusut jadi setengahnya tiap waktu paruh $T_{1/2}$ dengan rumus $N(t) = N_0 \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$.",
+              "contoh_penerapan": "Zat radioaktif $64\\text{ gram}$ punya waktu paruh $4$ hari. Setelah $12$ hari, sisanya **$64 \\times \\left(\\frac{1}{2}\\right)^{\\frac{12}{4}} = 8\\text{ gram}$**.",
+              "jebakan_atau_catatan": "Baca pertanyaan dengan teliti: mencari **sisa zat** pakai $N(t)$, sedangkan mencari **zat yang meluruh** hitung **$N_0 - N(t)$**.",
               "visual": null
             }
           ]
@@ -147,36 +147,36 @@
       "nomor_variasi": 1,
       "nama_variasi": "Barisan Aritmetika Kontekstual",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Merujuk bagian 1 stimulus utama: susunan kursi auditorium (baris pertama 20 kursi, beda +4, total 15 baris) serta tumpukan pipa logistik (lapisan bawah 18 pipa, beda -2, total 6 lapisan).",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nIdentifikasi apakah pertanyaan menanyakan kapasitas posisi tertentu ($U_n$) atau total keseluruhan ($S_n$). Pada auditorium, suku awal $a = 20$, beda $b = 4$, dan banyak suku $n = 15$. Pada tumpukan pipa, $a = 18$, $b = -2$ (berkurang ke atas), dan $n = 6$.\n\n**2. Model Matematika (Employing)**\nGunakan $U_n = a + (n-1)b$ untuk isi baris ke-$n$, dan $S_n = \\frac{n}{2}(2a + (n-1)b)$ untuk total kapasitas.\n- Kursi baris ke-15: $U_{15} = 20 + 14(4) = 76$ kursi.\n- Total kursi: $S_{15} = \\frac{15}{2}(20 + 76) = 720$ kursi.\n- Total pipa: $S_6 = \\frac{6}{2}(2(18) + 5(-2)) = 3(26) = 78$ pipa.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nPeriksa syarat batas fisik: pada tumpukan pipa, lapisan teratas ($U_6 = 18 + 5(-2) = 8$) wajib bernilai bulat positif agar susunan logis dan stabil.",
-      "kunci_pembeda": "Gunakan model aritmetika jika selisih antarsuku berupa penjumlahan atau pengurangan bilangan konstan ($b$), bukan persentase atau kelipatan.",
+      "stimulus_mini": "Data bagian 1 stimulus utama: kursi auditorium terdiri dari 15 baris (baris pertama 20 kursi, bertambah 4 kursi tiap baris) dan tumpukan pipa berisi 6 lapisan (lapisan bawah 18 pipa, berkurang 2 pipa tiap naik lapisan).",
+      "bedah_pola_markdown": "**1. Bedah Cerita**\nCek dulu apa yang ditanya: isi pada baris tertentu ($U_n$) atau total seluruhnya ($S_n$). Untuk auditorium, kita punya $a = 20$, beda $b = 4$, dan $n = 15$. Untuk tumpukan pipa, polanya mengecil ke atas sehingga $a = 18$, $b = -2$, dan $n = 6$.\n\n**2. Pasang Rumus & Hitung**\nPakai $U_n = a + (n-1)b$ untuk mencari isi satu baris, lalu $S_n = \\frac{n}{2}(a + U_n)$ agar hitungan lebih singkat.\n- Kursi baris ke-15: $U_{15} = 20 + 14(4) = 76$ kursi.\n- Total kursi auditorium: $S_{15} = \\frac{15}{2}(20 + 76) = 15 \\times 48 = 720$ kursi.\n- Total pipa di gudang: $S_6 = \\frac{6}{2}(2(18) + 5(-2)) = 3(26) = 78$ pipa.\n\n**3. Cek Logika Nyata**\nSelalu pastikan suku terakhir masuk akal secara fisik. Pada tumpukan pipa, lapisan paling atas berisi $U_6 = 18 + 5(-2) = 8$ pipa—bilangan bulat positif, jadi tumpukannya valid dan stabil.",
+      "kunci_pembeda": "Pilih model aritmetika jika perubahan antarsuku selalu berupa tambahan atau pengurangan angka tetap ($b$), bukan persen atau kelipatan.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
       "nama_variasi": "Barisan Geometri & Deret Tak Hingga Kontekstual",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Merujuk bagian 2 stimulus utama: bola polimer dijatuhkan dari ketinggian awal $h_0 = 8$ meter dengan rasio pantulan $r = \\frac{3}{4}$ hingga berhenti.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPisahkan gerakan jatuh pertama ($h_0 = 8$ m) yang terjadi satu kali dari gerakan pantulan berikutnya. Setiap pantulan ke-$k$ menghasilkan lintasan naik setinggi $h_k = 8 \\cdot (\\frac{3}{4})^k$ dan lintasan turun dengan panjang identik hingga bola berhenti ($n \\rightarrow \\infty$).\n\n**2. Model Matematika (Employing)**\nDeret pantulan memiliki suku awal $a = h_1 = 8 \\times \\frac{3}{4} = 6$ m dan rasio $r = \\frac{3}{4}$. Karena setiap pantulan terjadi naik-turun, total lintasan adalah:\n$$S_{\\text{total}} = h_0 + 2 \\cdot S_\\infty = 8 + 2\\left(\\frac{6}{1 - \\frac{3}{4}}\\right) = 8 + 2(24) = 56\\text{ meter}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nGunakan rumus cepat rasio $r = \\frac{p}{q}$ yaitu $S_{\\text{total}} = h_0 \\cdot \\frac{q + p}{q - p} = 8 \\cdot \\frac{4 + 3}{4 - 3} = 56$ m. Jika dihitung sejak pantulan pertama, kurangi $h_0$ sehingga menjadi $48$ m.",
-      "kunci_pembeda": "Pada bola memantul vertikal, hitung lintasan naik-turun dua kali lipat dari deret tak hingga pantulan, lalu tambahkan tinggi jatuh awal.",
+      "stimulus_mini": "Data bagian 2 stimulus utama: bola polimer dijatuhkan dari ketinggian $h_0 = 8$ meter dan selalu memantul $\\frac{3}{4}$ kali tinggi sebelumnya hingga berhenti.",
+      "bedah_pola_markdown": "**1. Bedah Cerita**\nPisahkan gerak jatuh pertama ($h_0 = 8\\text{ m}$) karena bagian ini cuma terjadi sekali. Setelah itu, setiap pantulan ke-$k$ naik setinggi $h_k = 8 \\cdot (\\frac{3}{4})^k$ lalu turun dengan jarak yang sama persis sampai bola berhenti.\n\n**2. Pasang Rumus & Hitung**\nTinggi pantulan pertama menjadi suku awal deret pantulan, yaitu $a = h_1 = 8 \\times \\frac{3}{4} = 6\\text{ m}$ dengan rasio $r = \\frac{3}{4}$. Karena tiap pantulan menempuh jalan naik dan turun, kalikan deret tak hingganya dengan $2$:\n$$S_{\\text{total}} = h_0 + 2 \\cdot S_\\infty = 8 + 2\\left(\\frac{6}{1 - \\frac{3}{4}}\\right) = 8 + 2(24) = 56\\text{ meter}$$\n\n**3. Trik Cepat & Cek Kondisi**\nUntuk rasio berbentuk pecahan $r = \\frac{p}{q}$, langsung pakai $S_{\\text{total}} = h_0 \\cdot \\frac{q + p}{q - p} = 8 \\cdot \\frac{4 + 3}{4 - 3} = 56\\text{ m}$. Jika soal mulai menghitung tepat setelah tumbukan pertama di lantai, cukup kurangi tinggi awal: $56 - 8 = 48\\text{ m}$.",
+      "kunci_pembeda": "Pada bola yang dijatuhkan vertikal, deret tak hingga pantulan wajib dikali dua (naik-turun), lalu ditambah satu kali tinggi jatuh awal.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
       "nama_variasi": "Pertumbuhan Eksponensial dengan Periode Waktu Tertentu",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Merujuk bagian 3 stimulus utama: populasi awal $N_0 = 500$ sel mikroalga/mL membelah menjadi $k = 2$ kali lipat setiap periode $T = 3$ jam.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nTentukan populasi awal ($N_0 = 500$), faktor pengali pertumbuhan ($k = 2$, atau $1 + p$ jika diketahui persentase kenaikan $p$), periode waktu satu kali pembelahan ($T = 3$ jam), serta total durasi pengamatan ($t$). Banyak siklus pertumbuhan adalah $n = \\frac{t}{T}$.\n\n**2. Model Matematika (Employing)**\nGunakan fungsi eksponensial $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$. Jika diamati selama $t = 15$ jam, terjadi $n = \\frac{15}{3} = 5$ kali pembelahan:\n$$N(15) = 500 \\cdot 2^{\\frac{15}{3}} = 500 \\cdot 2^5 = 500 \\times 32 = 16.000\\text{ sel/mL}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nBedakan apakah soal menanyakan *jumlah akhir* ($N(t)$) atau *pertambahan populasi* ($\\Delta N = N(t) - N_0 = 15.500$ sel/mL). Jika $t$ bukan kelipatan $T$, pertahankan bentuk pangkat rasional atau gunakan nilai pendekatan yang disediakan.",
-      "kunci_pembeda": "Berbeda dengan suku ke-$n$ barisan geometri yang berpangkat $n-1$, pertumbuhan eksponensial berbasis waktu menggunakan pangkat penuh $\\frac{t}{T}$.",
+      "stimulus_mini": "Data bagian 3 stimulus utama: populasi awal $N_0 = 500$ sel mikroalga/mL membelah menjadi $k = 2$ kali lipat setiap periode $T = 3$ jam.",
+      "bedah_pola_markdown": "**1. Bedah Cerita**\nCatat tiga modal utama: jumlah awal $N_0 = 500$, pengali $k = 2$ (atau $1 + p$ jika bentuknya kenaikan persen), dan waktu satu siklus $T = 3$ jam. Langkah terpentingnya adalah membagi total waktu $t$ dengan $T$ untuk tahu berapa kali pembelahan terjadi.\n\n**2. Pasang Rumus & Hitung**\nMasukkan ke rumus $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$. Misalkan kultur diamati selama $t = 15$ jam, maka terjadi $\\frac{15}{3} = 5$ siklus pembelahan:\n$$N(15) = 500 \\cdot 2^{\\frac{15}{3}} = 500 \\cdot 2^5 = 500 \\times 32 = 16.000\\text{ sel/mL}$$\n\n**3. Cek Jebakan Pertanyaan**\nJangan buru-buru pilih jawaban! Cek apakah soal meminta **jumlah akhir** ($16.000$ sel/mL) atau **pertambahan populasi** ($16.000 - 500 = 15.500$ sel/mL). Jika $t$ tidak habis dibagi $T$, biarkan dalam bentuk pangkat pecahan atau gunakan angka pendekatan yang diberikan di soal.",
+      "kunci_pembeda": "Berbeda dengan rumus $U_n$ barisan geometri yang berpangkat $n-1$, pertumbuhan berbasis waktu selalu memakai pangkat penuh $\\frac{t}{T}$.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
       "nama_variasi": "Peluruhan Eksponensial",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "Merujuk bagian 4 stimulus utama: massa awal isotop pelacak $M_0 = 160$ mg dengan waktu paruh $T_{1/2} = 6$ jam.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nIdentifikasi massa awal zat ($M_0 = 160$ mg), waktu paruh ($T_{1/2} = 6$ jam, artinya massa tersisa $\\frac{1}{2}$ kali semula tiap 6 jam), serta durasi peluruhan ($t$). Jika dinyatakan dalam persentase penyusutan $p\\%$, rasio sisa menjadi $(1 - p\\%)$.\n\n**2. Model Matematika (Employing)**\nRumus sisa massa setelah $t$ jam adalah $M(t) = M_0 \\cdot \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$. Setelah $t = 24$ jam, terjadi $\\frac{24}{6} = 4$ kali periode paruh:\n$$M(24) = 160 \\cdot \\left(\\frac{1}{2}\\right)^4 = \\frac{160}{16} = 10\\text{ mg}$$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nBedakan secara teliti antara **massa tersisa** ($10$ mg) dan **massa yang telah meluruh** ($160 - 10 = 150$ mg). Dalam konteks medis atau lingkungan, evaluasi apakah sisa konsentrasi sudah berada di bawah ambang batas aman yang ditetapkan.",
-      "kunci_pembeda": "Peluruhan selalu memiliki rasio sisa antara $0$ dan $1$ (seperti $\\frac{1}{2}$ pada waktu paruh atau $1 - p$ pada penyusutan persen).",
+      "stimulus_mini": "Data bagian 4 stimulus utama: massa awal isotop pelacak $M_0 = 160$ mg menyusut dengan waktu paruh $T_{1/2} = 6$ jam.",
+      "bedah_pola_markdown": "**1. Bedah Cerita**\nWaktu paruh $T_{1/2} = 6$ jam artinya setiap lewat $6$ jam, massa isotop tinggal setengah ($\\frac{1}{2}$) dari sebelumnya. Jika soal menyebut penyusutan sebesar $p\\%$, berarti rasio yang tersisa setiap siklus adalah $(1 - p\\%)$.\n\n**2. Pasang Rumus & Hitung**\nGunakan $M(t) = M_0 \\cdot \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$. Setelah $t = 24$ jam, isotop melewati $\\frac{24}{6} = 4$ kali waktu paruh:\n$$M(24) = 160 \\cdot \\left(\\frac{1}{2}\\right)^4 = \\frac{160}{16} = 10\\text{ mg}$$\n\n**3. Cek Logika & Konteks**\nBedakan tegas antara **massa tersisa** ($10\\text{ mg}$) dan **massa yang sudah meluruh** ($160 - 10 = 150\\text{ mg}$). Pada soal medis atau lingkungan, hasil sisa ini biasanya dibandingkan lagi dengan ambang batas aman.",
+      "kunci_pembeda": "Peluruhan selalu punya pengali (rasio sisa) di antara $0$ dan $1$, seperti $\\frac{1}{2}$ pada waktu paruh atau $1 - p$ pada penyusutan persen.",
       "visual": null
     }
   ],
@@ -187,7 +187,7 @@
         1
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Berdasarkan data Auditorium & Gudang Logistik, panitia seminar hanya membuka 10 baris kursi terdepan untuk peserta dan menyisakan 5 baris terakhir untuk staf teknis. Selisih kapasitas kursi antara area peserta dan area staf teknis adalah ....",
+      "pertanyaan_markdown": "Auditorium pusat riset memiliki 15 baris kursi dengan 20 kursi pada baris terdepan, dan setiap baris berikutnya bertambah 4 kursi. Panitia seminar membuka 10 baris terdepan untuk peserta, lalu menyisakan 5 baris terakhir untuk staf teknis. Selisih kapasitas kursi antara area peserta dan area staf teknis adalah ....",
       "opsi_jawaban": [
         "A. 20 kursi",
         "B. 40 kursi",
@@ -196,7 +196,7 @@
         "E. 380 kursi"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kapasitas area peserta mencakup 10 baris pertama ($a = 20, b = 4$):\n$$S_{10} = \\frac{10}{2}(2(20) + 9(4)) = 5(76) = 380\\text{ kursi}$$\n\nKapasitas 5 baris terakhir (baris ke-11 hingga ke-15, dengan $U_{11} = 60$ dan $U_{15} = 76$):\n$$S_{\\text{staf}} = \\frac{5}{2}(60 + 76) = 340\\text{ kursi}$$\n\nSelisih kapasitasnya adalah $380 - 340 = 40$ kursi. Opsi A keliru karena hanya mengalikan $5 \\times 4$, sedangkan D dan E merupakan kapasitas masing-masing area.",
+      "bedah_cepat_markdown": "Hitung kapasitas area peserta (10 baris pertama) dengan $a = 20$ dan $b = 4$:\n$$S_{10} = \\frac{10}{2}(2(20) + 9(4)) = 5(40 + 36) = 380\\text{ kursi}$$\n\nSekarang hitung 5 baris terakhir (baris ke-11 sampai ke-15). Kita cari dulu ujung-ujungnya: $U_{11} = 20 + 10(4) = 60$ dan $U_{15} = 20 + 14(4) = 76$.\n$$S_{\\text{staf}} = \\frac{5}{2}(60 + 76) = \\frac{5}{2}(136) = 340\\text{ kursi}$$\n\nJadi, selisih kapasitasnya adalah $380 - 340 = 40$ kursi. Opsi D dan E adalah jebakan kapasitas masing-masing area, sedangkan opsi A keliru karena hanya menghitung $5 \\times 4$.",
       "visual": null
     },
     {
@@ -205,10 +205,10 @@
         2
       ],
       "tipe_soal_utbk": "Isian Singkat",
-      "pertanyaan_markdown": "Pada pengujian di Laboratorium Uji Material, sensor gerak baru diaktifkan tepat saat bola polimer menyentuh lantai pada pantulan pertama dan memantau gerakan bola hingga berhenti total. Total panjang lintasan yang direkam oleh sensor tersebut adalah ... meter. *(Tuliskan jawaban dalam bilangan bulat saja)*",
+      "pertanyaan_markdown": "Di Laboratorium Uji Material, bola polimer dijatuhkan dari ketinggian 8 meter dan selalu memantul setinggi $\\frac{3}{4}$ dari tinggi sebelumnya hingga berhenti. Sensor gerak baru aktif tepat saat bola menyentuh lantai pada tumbukan pertama dan terus merekam hingga bola berhenti total. Total panjang lintasan yang terekam sensor adalah ... meter. *(Tuliskan jawaban dalam bilangan bulat saja)*",
       "opsi_jawaban": [],
       "kunci_jawaban": "48",
-      "bedah_cepat_markdown": "Karena sensor aktif tepat saat tumbukan pertama di lantai, lintasan jatuh awal sepanjang $8$ meter tidak ikut terhitung. Tinggi pantulan pertama adalah $h_1 = 8 \\times \\frac{3}{4} = 6$ meter dengan rasio $r = \\frac{3}{4}$. Setiap pantulan menempuh jarak naik dan turun yang sama sehingga:\n$$S_{\\text{sensor}} = 2 \\cdot \\frac{h_1}{1 - r} = 2 \\left(\\frac{6}{1 - \\frac{3}{4}}\\right) = 2(24) = 48\\text{ meter}$$",
+      "bedah_cepat_markdown": "Perhatikan kapan sensor mulai aktif: tepat saat bola mendarat pertama kali di lantai. Artinya, lintasan jatuh awal sepanjang $8$ meter **tidak ikut terekam**.\n\nTinggi pantulan pertama adalah $h_1 = 8 \\times \\frac{3}{4} = 6$ meter dengan rasio $r = \\frac{3}{4}$. Karena setiap pantulan bergerak naik lalu turun dengan jarak sama, panjang lintasan yang terekam adalah:\n$$S_{\\text{sensor}} = 2 \\cdot \\frac{h_1}{1 - r} = 2 \\left(\\frac{6}{1 - \\frac{3}{4}}\\right) = 2(24) = 48\\text{ meter}$$",
       "visual": null
     },
     {
@@ -218,7 +218,7 @@
         4
       ],
       "tipe_soal_utbk": "Pernyataan 1-2-3-4",
-      "pertanyaan_markdown": "Unit Bioreaktor Mikroalga dan Unit Pelacak Isotop dijalankan bersamaan pada pukul $06.00$ WIB menggunakan sampel standar sesuai spesifikasi fasilitas. Diberikan empat pernyataan kondisi pada pukul $24.00$ WIB di hari yang sama:\n\n(1) Konsentrasi mikroalga mencapai $32.000$ sel per mililiter.\n(2) Pertambahan populasi mikroalga sejak awal pengamatan adalah $31.500$ sel per mililiter.\n(3) Massa isotop pelacak yang tersisa di dalam tangki adalah $20$ miligram.\n(4) Massa isotop pelacak yang telah meluruh sebesar $20$ miligram.\n\nPernyataan yang benar adalah ....",
+      "pertanyaan_markdown": "Pada pukul $06.00$ WIB, Unit Bioreaktor Mikroalga (starter $500$ sel/mL, membelah menjadi 2 kali lipat setiap 3 jam) dan Unit Pelacak Isotop (massa awal $160$ mg, waktu paruh 6 jam) dijalankan bersamaan. Cek empat pernyataan kondisi pada pukul $24.00$ WIB di hari yang sama:\n\n(1) Konsentrasi mikroalga mencapai $32.000$ sel per mililiter.\n(2) Pertambahan populasi mikroalga sejak awal pengamatan adalah $31.500$ sel per mililiter.\n(3) Massa isotop pelacak yang tersisa di dalam tangki adalah $20$ miligram.\n(4) Massa isotop pelacak yang telah meluruh sebesar $20$ miligram.\n\nPernyataan yang benar adalah ....",
       "opsi_jawaban": [
         "A. (1), (2), dan (3) SAJA yang benar",
         "B. (1) dan (3) SAJA yang benar",
@@ -227,7 +227,7 @@
         "E. SEMUA pernyataan benar"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Durasi pengamatan pukul $06.00$–$24.00$ WIB adalah $t = 18$ jam.\n- **Mikroalga ($T = 3$ jam):** Terjadi $\\frac{18}{3} = 6$ kali pembelahan sehingga $N(18) = 500 \\cdot 2^6 = 32.000$ sel/mL **(1 Benar)**, dengan pertambahan $32.000 - 500 = 31.500$ sel/mL **(2 Benar)**.\n- **Isotop ($T_{1/2} = 6$ jam):** Terjadi $\\frac{18}{6} = 3$ kali paruh sehingga sisa massa $M(18) = 160 \\cdot (\\frac{1}{2})^3 = 20$ mg **(3 Benar)**.\n\nPernyataan **(4) Salah** karena $20$ mg adalah massa tersisa, sedangkan massa meluruh $160 - 20 = 140$ mg.",
+      "bedah_cepat_markdown": "Pertama, hitung total durasi dari pukul $06.00$ hingga $24.00$ WIB, yaitu $t = 18$ jam.\n- **Mikroalga ($T = 3$ jam):** Terjadi $\\frac{18}{3} = 6$ kali pembelahan, sehingga jumlah akhirnya $N(18) = 500 \\cdot 2^6 = 500 \\times 64 = 32.000$ sel/mL **(1 Benar)**. Pertambahannya adalah $32.000 - 500 = 31.500$ sel/mL **(2 Benar)**.\n- **Isotop ($T_{1/2} = 6$ jam):** Terjadi $\\frac{18}{6} = 3$ kali waktu paruh, sehingga sisa massanya $M(18) = 160 \\cdot \\left(\\frac{1}{2}\\right)^3 = \\frac{160}{8} = 20$ mg **(3 Benar)**.\n\nPernyataan **(4) Salah** karena $20$ mg adalah sisa massa, bukan yang meluruh. Massa yang telah meluruh seharusnya $160 - 20 = 140$ mg.",
       "visual": null
     }
   ]

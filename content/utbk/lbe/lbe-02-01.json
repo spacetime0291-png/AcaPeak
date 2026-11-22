@@ -15,18 +15,18 @@
         "Electricity expenses restrict what crops vertical farms currently cultivate."
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Opsi pertama salah karena menambahkan kata mutlak 'completely unable' (False/Not Given), sedangkan opsi kedua merupakan parafrasa persis dari 'high energy costs currently limit them to leafy greens'."
+      "penjelasan_kilat": "Opsi pertama salah karena menyelipkan kata mutlak 'completely unable' yang tidak ada di teks. Opsi kedua tepat karena memparafrasakan 'high energy costs currently limit them to leafy greens' secara akurat."
     },
-    "konsep_inti_markdown": "* **Prinsip Utama:** Jawaban benar **100% eksplisit** dalam bacaan, hanya diubah struktur kalimatnya (**parafrasa sinonim/aktif-pasif**).\n* **Alur Taktis:** Pindai kata kunci soal $\\rightarrow$ Baca 1 kalimat sebelum dan sesudah kata kunci $\\rightarrow$ Eliminasi opsi ekstrem.\n* **Klasifikasi Logika:**\n  * **TRUE:** Fakta sesuai makna teks.\n  * **FALSE:** Kontradiksi langsung dengan fakta teks.\n  * **NOT GIVEN:** Informasi tidak pernah dibahas atau tidak ada pembandingnya di teks.",
+    "konsep_inti_markdown": "* **Prinsip Utama:** Jawaban benar selalu tertulis **jelas (eksplisit)** di dalam bacaan, hanya susunan katanya diubah (**parafrasa**).\n* **Langkah Cepat:** Cari kata kunci soal di teks $\\rightarrow$ Baca 1 kalimat sebelum dan sesudah kata kunci $\\rightarrow$ Coret opsi yang maknanya melenceng.\n* **Tiga Status Pernyataan:**\n  * **TRUE:** Fakta pada opsi sejalan 100% dengan isi teks.\n  * **FALSE:** Fakta pada opsi bertentangan langsung dengan isi teks.\n  * **NOT GIVEN:** Informasi tidak pernah dibahas atau tidak ada pembandingnya di teks.",
     "radar_jebakan_utbk": [
-      "Opsi 'Copy-Paste' Kata Kunci: Mengulang persis kata-kata di teks namun menyelipkan kata ekstrem (always, never, only, completely) yang mengubah makna.",
-      "Asumsi Logis Eksternal (Not Given Trap): Pernyataan terdengar masuk akal secara pengetahuan umum, tetapi tidak pernah dinyatakan oleh penulis maupun narasumber di teks."
+      "Jebakan 'Copy-Paste' Kata: Opsi memakai kata persis dari teks, tetapi menyelipkan kata mutlak (always, never, only, completely) sehingga maknanya berubah.",
+      "Jebakan Logika Umum (Not Given): Pernyataan terdengar masuk akal di dunia nyata, padahal penulis maupun narasumber di teks tidak pernah menyebutnya."
     ],
     "stimulus_utama_bersama": "Urban vertical farming—the practice of cultivating crops in vertically stacked layers indoors—has gained traction as cities seek resilient food supply chains. By utilizing hydroponic and aeroponic systems, these facilities recycle nutrient-rich water, slashing agricultural water consumption by up to 95 percent compared to conventional open-field farming. Furthermore, controlled indoor environments eliminate the need for chemical pesticides and shield crops from erratic weather events.\n\nDespite these ecological advantages, widespread commercial adoption remains constrained by substantial capital expenditure and steep electricity demands. Artificial LED lighting and climate-control systems account for nearly 60 percent of operational overhead, making calorie-dense staple crops like wheat or corn economically unviable indoors. Consequently, most commercial vertical farms focus on fast-growing, high-margin produce such as lettuce, herbs, and microgreens.\n\n**Online Policy Forum Discussion: Subsidizing Urban Vertical Farms**\n* **Dr. Aris Thorne (Agronomist):** \"Direct government energy subsidies for vertical farms are premature. Until facilities transition to dedicated renewable microgrids, subsidizing their power bills merely shifts fossil-fuel emissions from rural tractors to urban power plants.\"\n* **Elena Rostova (Urban Planner):** \"Rather than subsidizing electricity, municipalities should offer zoning tax exemptions to developers who integrate vertical farms into abandoned industrial warehouses, reducing food transport miles.\"\n* **Marcus Vance (Agri-Tech Investor):** \"Initial hardware costs are the real bottleneck. Public-private co-investment grants for automated robotics would lower labor expenses and allow farms to diversify beyond leafy greens.\"",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Sinyal dan Pola Parafrasa Stated Detail",
-      "subjudul_ringkas": "Taksonomi penanda teks, pola parafrasa akurat, dan jebakan distorsi fakta untuk soal Stated Detail UTBK.",
+      "judul_blok": "Panduan Sinyal Teks dan Pola Parafrasa Stated Detail",
+      "subjudul_ringkas": "Cara mengenali sinyal bacaan, pola parafrasa yang akurat, dan jebakan distorsi fakta pada soal Stated Detail UTBK.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Pola & Sinyal Teks",
@@ -36,98 +36,98 @@
       "kelompok": [
         {
           "nama_kelompok": "Pola Parafrasa Fakta Eksplisit (Kunci Jawaban TRUE)",
-          "ringkasan_kelompok": "Mengenali perubahan struktur kalimat yang tetap mempertahankan 100% makna asli bacaan.",
+          "ringkasan_kelompok": "Mengenali perubahan bentuk kalimat yang tetap menjaga 100% makna asli bacaan.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Sinonim Kontekstual & Padanan Frasa",
-              "penjelasan_singkat": "Kata kerja atau sifat kunci diganti sinonimnya tanpa memperluas maupun menyempitkan makna asli.",
+              "penjelasan_singkat": "Kata kerja atau kata sifat kunci diganti dengan sinonimnya tanpa memperluas atau menyempitkan makna.",
               "contoh_penerapan": "Teks: \"Coastal erosion **accelerates** during winter storms.\" $\\rightarrow$ Opsi: \"Shoreline degradation **speeds up** amid severe winter weather.\"",
-              "jebakan_atau_catatan": "Jebakan memakai kata persis sama dari teks, tetapi menyelipkan satu kata pengubah makna.",
+              "jebakan_atau_catatan": "Hati-hati pada opsi yang menyalin kata persis dari teks, lalu menyelipkan satu kata pengubah makna.",
               "visual": null
             },
             {
-              "judul_poin": "Transformasi Struktur Aktif dan Pasif",
-              "penjelasan_singkat": "Subjek pelaku dan objek penderita bertukar posisi gramatikal dengan hubungan tindakan tetap identik.",
+              "judul_poin": "Perubahan Kalimat Aktif dan Pasif",
+              "penjelasan_singkat": "Posisi pelaku (subjek) dan objek bertukar tempat, tetapi hubungan kejadiannya tetap sama persis.",
               "contoh_penerapan": "Teks: \"**Microplastics disrupt** marine food chains.\" $\\rightarrow$ Opsi: \"Marine food chains **are disrupted by microplastics**.\"",
-              "jebakan_atau_catatan": "Waspadai opsi pasif yang menukar pelaku dan korban sehingga objek justru menjadi penyebab.",
+              "jebakan_atau_catatan": "Cek arah tindakannya; jangan sampai objek justru dibalik menjadi pihak penyebab.",
               "visual": null
             },
             {
-              "judul_poin": "Konversi Angka dan Proporsi Kuantitas",
-              "penjelasan_singkat": "Data persentase atau pecahan eksplisit diparafrasakan menjadi deskripsi proporsi yang setara secara matematis.",
+              "judul_poin": "Konversi Angka dan Pecahan",
+              "penjelasan_singkat": "Data persen atau pecahan di teks diubah menjadi deskripsi jumlah yang nilainya setara.",
               "contoh_penerapan": "Teks: \"**Over $75\\%$** of respondents favored remote work.\" $\\rightarrow$ Opsi: \"**More than three-quarters** of participants preferred working from home.\"",
-              "jebakan_atau_catatan": "Jika teks menyebut angka pasti tanpa pembanding, klaim 'terbanyak' atau 'mayoritas mutlak' bisa salah.",
+              "jebakan_atau_catatan": "Jika teks hanya menyebut angka tanpa pembanding, klaim 'terbanyak' atau 'paling tinggi' bisa salah.",
               "visual": null
             },
             {
-              "judul_poin": "Parafrasa Negasi Ganda (Litotes)",
-              "penjelasan_singkat": "Pernyataan afirmatif diubah menjadi bentuk penyangkalan lawan katanya tanpa mengubah nilai kebenaran fakta.",
+              "judul_poin": "Parafrasa Penyangkalan Ganda",
+              "penjelasan_singkat": "Kalimat positif diubah menjadi penyangkalan dari lawan katanya tanpa mengubah kebenaran fakta.",
               "contoh_penerapan": "Teks: \"The new vaccine proved **effective** in trials.\" $\\rightarrow$ Opsi: \"The new vaccine was **not ineffective** during clinical testing.\"",
-              "jebakan_atau_catatan": "Hitung jumlah kata negatif (not, fail, lack, un-); negasi ganjil membalikkan fakta menjadi FALSE.",
+              "jebakan_atau_catatan": "Hitung jumlah kata negatif (not, fail, lack, un-); jumlah negatif ganjil membalikkan fakta menjadi FALSE.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Sinyal Kausal, Prosedural, dan Atribusi Opini",
-          "ringkasan_kelompok": "Melacak pemicu sebab-akibat, syarat proses, serta mencocokkan pendapat pakar atau komentator.",
+          "nama_kelompok": "Sinyal Sebab-Akibat, Syarat Proses, dan Atribusi Opini",
+          "ringkasan_kelompok": "Melacak pemicu kejadian, syarat proses, serta mencocokkan pendapat tokoh atau komentator.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Sinyal Pemicu Sebab-Akibat (Causal Markers)",
-              "penjelasan_singkat": "Penanda kausal menunjukkan faktor pemicu awal (cause) dan hasil langsungnya (effect) secara eksplisit.",
+              "penjelasan_singkat": "Penanda ini menunjukkan faktor pemicu awal (sebab) dan hasil langsungnya (akibat) di dalam teks.",
               "contoh_penerapan": "Sinyal: **trigger, stem from, induce, lead to**. Contoh: \"Sleep deprivation **stems from** excessive blue-light exposure.\"",
-              "jebakan_atau_catatan": "Bedakan arahnya: 'A stems from B' berarti B penyebabnya, bukan A memicu B.",
+              "jebakan_atau_catatan": "Perhatikan arahnya: 'A stems from B' artinya B adalah penyebab A, bukan sebaliknya.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Syarat dan Urutan Prosedural",
-              "penjelasan_singkat": "Kata hubung syarat atau tahapan menandai kondisi wajib sebelum suatu proses dapat berlangsung.",
+              "judul_poin": "Sinyal Syarat dan Urutan Proses",
+              "penjelasan_singkat": "Kata hubung syarat atau urutan menandai kondisi wajib sebelum suatu proses bisa berjalan.",
               "contoh_penerapan": "Sinyal: **provided that, prior to, once, unless**. Contoh: \"Seeds germinate **only once** soil temperature exceeds $15^{\\circ}\\text{C}$.\"",
-              "jebakan_atau_catatan": "Kata 'unless' bermakna 'if not'; mengabaikannya membuat syarat prosedur terbaca terbalik total.",
+              "jebakan_atau_catatan": "Kata 'unless' berarti 'jika tidak'; melewatkan kata ini membuat syarat proses terbaca terbalik.",
               "visual": null
             },
             {
               "judul_poin": "Penanda Atribusi Opini Pakar & Komentator",
-              "penjelasan_singkat": "Kata kerja pelaporan mengikat klaim, saran, atau kritik spesifik kepada nama tokoh atau akun thread.",
+              "penjelasan_singkat": "Kata kerja pelaporan mengikat suatu klaim, saran, atau kritik kepada nama tokoh tertentu.",
               "contoh_penerapan": "Sinyal: **advocates, contends, disputes, proposes**. Contoh: \"Dr. Aris **advocates** taxing carbon emissions, whereas @EcoWatch **disputes** its feasibility.\"",
-              "jebakan_atau_catatan": "Jebakan sering menukar pendapat dua komentator berbeda dalam satu utas diskusi (misattribution).",
+              "jebakan_atau_catatan": "Pembuat soal sering menukar pendapat dua tokoh berbeda dalam satu forum diskusi.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Konsesi dan Batasan Pengecualian",
-              "penjelasan_singkat": "Penanda kontras halus membatasi berlakunya aturan umum pada kondisi atau kelompok tertentu saja.",
+              "judul_poin": "Sinyal Pertentangan Halus & Pengecualian",
+              "penjelasan_singkat": "Penanda kontras ini membatasi berlakunya aturan umum hanya pada kondisi tertentu saja.",
               "contoh_penerapan": "Sinyal: **albeit, notwithstanding, except for, solely**. Contoh: \"The policy succeeded, **albeit** at a high fiscal cost.\"",
-              "jebakan_atau_catatan": "Jangan abaikan anak kalimat setelah 'albeit' atau 'except'; pengecualian sering menjadi kunci jawaban.",
+              "jebakan_atau_catatan": "Jangan lewati bagian setelah kata 'albeit' atau 'except'; pengecualian sering menjadi kunci jawaban.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Pola Distorsi Fakta (Pembeda FALSE vs NOT GIVEN)",
-          "ringkasan_kelompok": "Membedakan informasi yang bertentangan langsung dengan teks dari informasi tanpa dasar bacaan.",
+          "ringkasan_kelompok": "Membedakan pernyataan yang bertentangan dengan teks dari pernyataan yang tidak punya dasar bacaan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Distorsi Pembalikan Arah Kausalitas (FALSE)",
-              "penjelasan_singkat": "Pernyataan menggunakan seluruh kata kunci teks, tetapi membalik hubungan sebab dan akibatnya.",
-              "contoh_penerapan": "Teks: \"Stress **causes** insomnia.\" $\\rightarrow$ Pernyataan: \"Insomnia **triggers** chronic stress.\" (Kontradiksi arah kausal = **FALSE**).",
-              "jebakan_atau_catatan": "Peserta terkecoh karena kedua kata benda ada di teks; cek panah sebab $\\rightarrow$ akibat.",
+              "judul_poin": "Pembalikan Arah Sebab-Akibat (FALSE)",
+              "penjelasan_singkat": "Opsi memakai seluruh kata kunci dari teks, tetapi membalik hubungan sebab dan akibatnya.",
+              "contoh_penerapan": "Teks: \"Stress **causes** insomnia.\" $\\rightarrow$ Pernyataan: \"Insomnia **triggers** chronic stress.\" (Arah terbalik = **FALSE**).",
+              "jebakan_atau_catatan": "Jangan terkecoh hanya karena kedua kata benda ada di teks; pastikan panah sebab $\\rightarrow$ akibat sesuai.",
               "visual": null
             },
             {
-              "judul_poin": "Distorsi Generalisasi Mutlak / Ekstrem (FALSE)",
-              "penjelasan_singkat": "Mengganti penanda frekuensi sebagian (hedging) menjadi klaim absolut tanpa pengecualian.",
+              "judul_poin": "Generalisasi Mutlak / Ekstrem (FALSE)",
+              "penjelasan_singkat": "Mengganti kata peluang atau frekuensi sebagian menjadi klaim mutlak tanpa pengecualian.",
               "contoh_penerapan": "Teks: \"Solar panels **often** reduce bills.\" $\\rightarrow$ Pernyataan: \"Solar panels **invariably** eliminate electricity costs.\" (Mutlak = **FALSE**).",
               "jebakan_atau_catatan": "Kata **always, never, all, solely, exclusively** hampir selalu membuat pernyataan berstatus FALSE.",
               "visual": null
             },
             {
-              "judul_poin": "Komparasi atau Hubungan Tanpa Dasar (NOT GIVEN)",
-              "penjelasan_singkat": "Dua variabel disebut terpisah dalam teks, tetapi hubungan atau perbandingannya tidak pernah dinyatakan.",
+              "judul_poin": "Perbandingan Tanpa Dasar Teks (NOT GIVEN)",
+              "penjelasan_singkat": "Dua hal dibahas terpisah di teks, tetapi perbandingan di antara keduanya tidak pernah dinyatakan.",
               "contoh_penerapan": "Teks membahas biaya kereta dan bus terpisah $\\rightarrow$ Pernyataan: \"Trains are **cheaper than** buses.\" (**NOT GIVEN**).",
-              "jebakan_atau_catatan": "Jangan pakai logika umum luar teks; jika tidak dibandingkan di bacaan, pilih NOT GIVEN.",
+              "jebakan_atau_catatan": "Tahan asumsi pribadimu; jika teks tidak membandingkan keduanya, statusnya adalah NOT GIVEN.",
               "visual": null
             }
           ]
@@ -141,8 +141,8 @@
       "nama_variasi": "According to the Passage, Which Statement is TRUE?",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Paragraf 1: '...slashing agricultural water consumption by up to 95 percent compared to conventional open-field farming. Furthermore, controlled indoor environments eliminate the need for chemical pesticides...'",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Skimming & Scanning:** Ambil kata benda spesifik pada opsi (misal: *pesticides*, *water*, *weather*) lalu lacak lokasinya di paragraf terkait.\n2. **Cocokkan Parafrasa:** Kalimat teks *'eliminate the need for chemical pesticides'* diparafrasa menjadi *'indoor vertical crops are grown without synthetic pest-control chemicals'*.\n3. **Eliminasi Jebakan:**\n   * *Terlalu Ekstrem:* Mengubah *'up to 95 percent'* menjadi *'eliminates all water usage'* (False).\n   * *Tukar Subjek:* Menyebut pertanian konvensional menghemat air 95%.\n   * *Tidak Disebut:* Menyebut rasa sayuran hidroponik lebih enak daripada sayuran ladang.",
-      "kunci_pembeda": "Fokus menguji kesetaraan makna (parafrasa) dari satu klausa faktual secara umum tanpa menanyakan hubungan sebab-akibat spesifik.",
+      "bedah_pola_markdown": "**Cara Mengerjakan:**\n1. **Pindai Kata Kunci:** Ambil kata benda spesifik dari opsi (misalnya *pesticides*, *water*, atau *weather*), lalu cari posisinya di teks.\n2. **Cocokkan Makna Parafrasa:** Kalimat *'eliminate the need for chemical pesticides'* diubah bentuknya menjadi *'indoor vertical crops are grown without synthetic pest-control chemicals'*.\n3. **Coret Tiga Jebakan Utama:**\n   * *Terlalu Ekstrem:* Mengubah *'up to 95 percent'* menjadi *'eliminates all water usage'* (False).\n   * *Tukar Pelaku:* Menyebut pertanian konvensional yang menghemat air 95%.\n   * *Info Tambahan (Not Given):* Menyebut rasa sayuran hidroponik lebih segar daripada sayuran ladang.",
+      "kunci_pembeda": "Menguji kesamaan makna (parafrasa) dari satu informasi faktual secara langsung tanpa menanyakan hubungan sebab-akibat.",
       "visual": null
     },
     {
@@ -150,8 +150,8 @@
       "nama_variasi": "Comprehending Specific Causal/Procedural Details",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Paragraf 2: 'Artificial LED lighting and climate-control systems account for nearly 60 percent of operational overhead, making calorie-dense staple crops like wheat or corn economically unviable indoors.'",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Deteksi Penanda Kausal/Proses:** Cari kata kunci pertanyaan seperti *triggers*, *results in*, *prevents*, atau *by utilizing*.\n2. **Petakan Arah Sebab $\\rightarrow$ Akibat:**\n   * **Sebab:** Biaya listrik LED dan kontrol iklim tinggi (60% biaya operasional).\n   * **Akibat:** Tanaman pokok berkalori tinggi (*wheat/corn*) tidak menguntungkan secara ekonomi di dalam ruangan.\n3. **Identifikasi Jebakan:** UTBK sering membalik arah kausalitas (menyebut tanaman gandum menyebabkan biaya listrik naik) atau mengambil akibat yang salah (menyebut biaya listrik membuat selada gagal panen).",
-      "kunci_pembeda": "Pertanyaan secara eksplisit menanyakan pemicu (*what triggers/causes*), alasan (*why*), atau mekanisme proses (*how*) suatu fenomena terjadi.",
+      "bedah_pola_markdown": "**Cara Mengerjakan:**\n1. **Tandai Kata Kunci Kausal:** Perhatikan kata tanya seperti *triggers*, *results in*, *prevents*, atau *by utilizing*.\n2. **Petakan Panah Sebab $\\rightarrow$ Akibat:**\n   * **Sebab:** Biaya listrik lampu LED dan pengatur suhu sangat tinggi (60% biaya operasional).\n   * **Akibat:** Tanaman pokok berkalori tinggi (*wheat/corn*) tidak menguntungkan jika ditanam di dalam ruangan.\n3. **Hindari Jebakan Terbalik:** Soal sering membalik arah kejadian (menyebut tanaman gandum memicu kenaikan tarif listrik) atau mengaitkannya ke akibat yang salah (biaya listrik membuat selada gagal panen).",
+      "kunci_pembeda": "Pertanyaan secara khusus menanyakan pemicu (*what causes/prevents*), alasan (*why*), atau cara kerja (*how*) suatu kejadian di teks.",
       "visual": null
     },
     {
@@ -159,17 +159,17 @@
       "nama_variasi": "Matching Commenters/Experts to Their Stated Opinions",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Bagian Forum Thread: Perbandingan usulan kebijakan antara Dr. Aris Thorne (Agronomist), Elena Rostova (Urban Planner), dan Marcus Vance (Agri-Tech Investor).",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Buat Peta Entitas-Usulan:** Jangan membaca seluruh forum berulang kali; tandai kata kerja usulan (*should*, *merely*, *would*) milik tiap tokoh:\n   * **Dr. Thorne:** Menolak subsidi listrik langsung sebelum memakai energi terbarukan.\n   * **Elena Rostova:** Mengusulkan insentif pajak zonasi (*zoning tax exemptions*) untuk alih fungsi gudang terbengkalai.\n   * **Marcus Vance:** Mengusulkan hibah investasi bersama (*co-investment grants*) untuk robotika otomatis.\n2. **Waspadai Jebakan Tukar Tokoh:** Opsi pengecoh biasanya mengambil kebijakan valid dari Elena (insentif pajak) tetapi mengatasnamakannya sebagai pendapat Marcus.",
-      "kunci_pembeda": "Berbasis teks multi-sudut pandang (Forum Thread/Paired Texts) yang menguji ketepatan atribusi opini kepada tokoh yang tepat.",
+      "bedah_pola_markdown": "**Cara Mengerjakan:**\n1. **Petakan Tokoh dan Usulannya:** Kamu tidak perlu membaca ulang seluruh forum; cukup tandai kata kerja usulan (*should*, *merely*, *would*) milik tiap tokoh:\n   * **Dr. Thorne:** Menolak subsidi listrik langsung sebelum beralih ke energi terbarukan.\n   * **Elena Rostova:** Mengusulkan keringanan pajak zonasi (*zoning tax exemptions*) untuk alih fungsi gudang terbengkalai.\n   * **Marcus Vance:** Mengusulkan hibah investasi bersama (*co-investment grants*) untuk robotika otomatis.\n2. **Waspadai Jebakan Tukar Tokoh:** Opsi pengecoh biasanya mengambil usulan valid milik Elena (keringanan pajak), lalu menempelkannya pada nama Marcus.",
+      "kunci_pembeda": "Menggunakan teks multi-perspektif (Forum Thread atau Paired Texts) untuk menguji ketepatan mencocokkan opini dengan tokohnya.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
       "nama_variasi": "Evaluating True/False/Not Given Matrix Statements",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan Keseluruhan Teks & Forum: Evaluasi 3–4 pernyataan independen dalam format tabel matriks (True / False atau True / False / Not Given).",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Bedah Per Baris Secara Independen:** Kebenaran baris ke-1 tidak memengaruhi baris ke-2.\n2. **Gunakan Uji Bukti Tekstual:**\n   * **TRUE:** Ada kalimat pendukung eksplisit di teks.\n   * **FALSE:** Ada kalimat di teks yang membantah langsung pernyataan tersebut (misal: teks menyebut LED memakan 60% biaya, pernyataan menyebut kurang dari 20%).\n   * **NOT GIVEN (atau False pada matriks biner UTBK):** Klaim memuat perbandingan atau fakta baru yang absen di teks (misal: membandingkan gaji pekerja pertanian vertikal dengan petani tradisional).",
-      "kunci_pembeda": "Menuntut verifikasi simultan atas beberapa klaim terpisah dari bagian teks yang berbeda dalam satu butir soal.",
+      "stimulus_mini": "Rujukan Keseluruhan Teks & Forum: Evaluasi 3–4 pernyataan terpisah dalam format tabel matriks (True / False atau True / False / Not Given).",
+      "bedah_pola_markdown": "**Cara Mengerjakan:**\n1. **Cek Setiap Baris Secara Terpisah:** Status benar atau salah pada baris ke-1 tidak memengaruhi baris ke-2.\n2. **Gunakan Bukti Kalimat Teks:**\n   * **TRUE:** Ada kalimat di teks yang mendukung penuh pernyataan tersebut.\n   * **FALSE:** Ada kalimat di teks yang membantah langsung (misalnya: teks menyebut LED memakan 60% biaya, pernyataan menyebut kurang dari 20%).\n   * **NOT GIVEN (pada matriks 2 kolom UTBK masuk ke False/Tidak Sesuai):** Pernyataan membawa fakta baru yang tidak ada di teks (misalnya: membandingkan gaji pekerja pertanian vertikal dengan petani tradisional).",
+      "kunci_pembeda": "Menuntut pengecekan beberapa klaim sekaligus dari bagian bacaan yang berbeda dalam satu nomor soal.",
       "visual": null
     }
   ],
@@ -190,7 +190,7 @@
         "E. The lack of automated robotics capable of harvesting fast-growing produce"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "**Langkah Bedah:**\n1. **Kata Kunci:** *prevents*, *staple crops*, *wheat and corn* merujuk ke kalimat kedua Paragraf 2.\n2. **Bukti Teks:** *'Artificial LED lighting and climate-control systems account for nearly 60 percent of operational overhead, making calorie-dense staple crops like wheat or corn economically unviable indoors.'*\n3. **Analisis Opsi:** Opsi **C** memparafrasa biaya operasional tinggi akibat LED dan kontrol iklim (*prohibitive operational costs*). Opsi A, B, dan D adalah *Not Given* (tidak dibahas), sedangkan E keliru karena *fast-growing produce* justru tanaman yang berhasil ditanam.",
+      "bedah_cepat_markdown": "**Alur Berpikir:**\n1. **Lacak Kata Kunci:** Frasa *prevents*, *staple crops*, dan *wheat and corn* mengarah langsung ke kalimat kedua Paragraf 2.\n2. **Cek Bukti Teks:** *'Artificial LED lighting and climate-control systems account for nearly 60 percent of operational overhead, making calorie-dense staple crops like wheat or corn economically unviable indoors.'*\n3. **Evaluasi Opsi:**\n   * **C tepat** karena *prohibitive operational costs driven by artificial lighting and climate regulation* adalah parafrasa langsung dari biaya tinggi lampu LED dan sistem pengatur suhu.\n   * **A, B, dan D salah (Not Given)** karena nutrisi biji-bijian, larangan zonasi, dan pembusukan saat distribusi tidak pernah dibahas.\n   * **E salah (False)** karena *fast-growing produce* justru jenis tanaman yang berhasil dibudidayakan secara komersial.",
       "visual": null
     },
     {
@@ -208,7 +208,7 @@
         "E. Both Elena Rostova and Marcus Vance"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Langkah Bedah:**\n1. **Kata Kunci:** *repurposed urban buildings*, *tax incentives*, *shorten supply chains*.\n2. **Bukti Teks:** Elena Rostova menyatakan: *'...offer zoning tax exemptions to developers who integrate vertical farms into abandoned industrial warehouses, reducing food transport miles.'*\n3. **Analisis Opsi:** Frasa *abandoned industrial warehouses* diparafrasa menjadi *repurposed urban buildings*, dan *reducing food transport miles* menjadi *shorten supply chains*. Dr. Thorne membahas emisi energi, sementara Marcus membahas hibah robotika.",
+      "bedah_cepat_markdown": "**Alur Berpikir:**\n1. **Lacak Kata Kunci:** Cari tokoh yang membahas *repurposed urban buildings* (gedung kota yang dialihfungsikan), *tax incentives* (insentif pajak), dan *shorten supply chains* (memperpendek rantai pasok).\n2. **Cek Bukti Teks:** Pada bagian forum, **Elena Rostova** mengusulkan: *'...offer zoning tax exemptions to developers who integrate vertical farms into abandoned industrial warehouses, reducing food transport miles.'*\n3. **Cocokkan Parafrasa:** Frasa *abandoned industrial warehouses* setara dengan *repurposed urban buildings*, *zoning tax exemptions* setara dengan *tax incentives*, dan *reducing food transport miles* bermakna memperpendek rantai pasok. Sementara itu, Dr. Thorne fokus pada emisi listrik dan Marcus fokus pada hibah robotika. Jadi, jawabannya **B**.",
       "visual": null
     },
     {
@@ -227,7 +227,7 @@
         "E. True - False - False"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Langkah Bedah:**\n* **Pernyataan 1 (TRUE):** Paragraf 1 menyatakan *'controlled indoor environments eliminate the need for chemical pesticides'* (sesuai dengan *requires zero chemical pesticides*).\n* **Pernyataan 2 (FALSE):** Kontradiksi dengan Dr. Thorne yang menyebut subsidi listrik saat ini bersifat *'premature'* dan hanya memindahkan emisi bahan bakar fosil.\n* **Pernyataan 3 (TRUE):** Marcus Vance menyebut *'co-investment grants for automated robotics... allow farms to diversify beyond leafy greens'*.",
+      "bedah_cepat_markdown": "**Alur Berpikir Per Baris:**\n* **Pernyataan 1 (TRUE):** Paragraf 1 menegaskan bahwa *'controlled indoor environments eliminate the need for chemical pesticides'*. Ini sejalan dengan *requires zero chemical pesticides*.\n* **Pernyataan 2 (FALSE):** Bertentangan dengan pendapat Dr. Aris Thorne yang menyebut subsidi listrik langsung bersifat *'premature'* (terlalu dini) dan hanya memindahkan emisi bahan bakar fosil ke pembangkit kota.\n* **Pernyataan 3 (TRUE):** Marcus Vance secara eksplisit menyatakan bahwa *'co-investment grants for automated robotics... allow farms to diversify beyond leafy greens'* (memungkinkan kebun menanam variasi tanaman lebih luas).\n\nUrutan yang tepat adalah **True - False - True (B)**.",
       "visual": null
     }
   ]

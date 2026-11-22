@@ -9,153 +9,153 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam paragraf yang memaparkan lonjakan utang rumah tangga disertai diksi 'mengkhawatirkan' dan 'rapuh', apakah penulis bersikap netral?",
+      "pertanyaan_pemantik": "Jika sebuah paragraf memaparkan data lonjakan utang rumah tangga lalu menyisipkan kata 'mengkhawatirkan' dan 'rapuh', apakah penulis bersikap netral?",
       "opsi_cepat": [
-        "Ya, karena hanya memaparkan data ekonomi",
-        "Tidak, pilihan kata evaluatif menunjukkan sikap khawatir"
+        "Ya, karena teks tersebut menyajikan data ekonomi.",
+        "Tidak, kata berasa nilai membuktikan penulis sedang cemas."
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Pada subtes PPU UTBK, sikap dan nada penulis tidak selalu dinyatakan secara gamblang. Kehadiran kata sifat atau kata kerja bermuatan nilai ('rapuh', 'mengkhawatirkan') menjadi bukti keberpihakan maupun kecemasan penulis terhadap isu."
+      "penjelasan_kilat": "Di subtes PPU UTBK, penulis jarang menulis 'saya tidak setuju' secara gamblang. Petunjuk sikap dan nada justru bersembunyi di balik kata sifat atau kata kerja yang punya muatan rasa, seperti 'rapuh' dan 'mengkhawatirkan'."
     },
-    "konsep_inti_markdown": "**Sikap, nada, dan tujuan penulis** membedah maksud tersembunyi di balik pilihan kata wacana baku sesuai EYD V dan KBBI VI:\n\n* **Sikap (Keberpihakan):** Posisi penulis terhadap isu (*mendukung, menentang, netral, kritis,* atau *khawatir*).\n* **Tujuan Komunikatif:** Maksud utama teks (*ekspositoris* memaparkan, *argumentatif* meyakinkan bukti, *persuasif* mengajak, *deskriptif* melukiskan).\n* **Nada & Sasaran:** Nuansa emosi diksi evaluatif serta penyesuaian laras bahasa bagi pembaca spesifik.",
+    "konsep_inti_markdown": "Membaca **sikap, nada, dan tujuan penulis** berarti menangkap maksud di balik pilihan kata (diksi) sebuah bacaan:\n\n* **Sikap Penulis:** Posisi penulis terhadap topik—apakah *mendukung, menentang, netral, kritis,* atau *khawatir*.\n* **Tujuan Penulisan:** Maksud utama bacaan dibuat—apakah sekadar *menjelaskan fakta*, *membuktikan pendapat*, *mengajak bertindak*, atau *melukiskan suasana*.\n* **Nada & Sasaran Pembaca:** Suasana emosi yang terasa dari pilihan kata sekaligus kecocokan gaya bahasa dengan pembacanya.",
     "radar_jebakan_utbk": [
-      "Menganggap teks yang memuat angka statistik pasti bersikap netral, padahal penulis menyisipkan adjektiva evaluatif yang memihak atau mengkritik.",
-      "Tertukar antara tujuan ekspositoris (sekadar menjelaskan informasi secara objektif) dengan tujuan persuasif (mengajak pembaca mengubah tindakan)."
+      "Mengira bacaan yang penuh angka statistik pasti bersikap netral, padahal penulis menyelipkan kata sifat yang memihak atau mengkritik.",
+      "Tertukar antara tujuan memaparkan informasi (ekspositoris) dengan mengajak pembaca mengubah kebiasaan (persuasif)."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Sinyal Sikap, Tujuan, Nada, dan Sasaran Penulis",
-      "subjudul_ringkas": "Panduan praktis mengenali penanda leksikal maksud, emosi, dan target pembaca dalam wacana baku UTBK.",
+      "judul_blok": "Peta Sinyal Sikap, Tujuan, Nada, dan Sasaran Pembaca",
+      "subjudul_ringkas": "Panduan cepat mengenali petunjuk kata untuk menebak maksud, emosi, dan target pembaca dalam bacaan UTBK.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori & Penanda",
-        "kolom_2": "Sinyal Diksi / Potongan Teks",
+        "kolom_2": "Petunjuk Kata / Potongan Berita",
         "kolom_3": "Pembeda & Jebakan UTBK"
       },
       "kelompok": [
         {
           "nama_kelompok": "1. Sinyal Sikap dan Keberpihakan Penulis",
-          "ringkasan_kelompok": "Mengidentifikasi posisi penulis terhadap topik melalui kata kerja dan adjektiva evaluatif.",
+          "ringkasan_kelompok": "Menebak posisi penulis lewat kata sifat dan kata kerja yang memuat penilaian.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Sikap Mendukung (Pro/Apresiatif)",
-              "penjelasan_singkat": "Penulis membenarkan, mengunggulkan, atau menyetujui gagasan menggunakan diksi bermakna positif dan konstruktif.",
-              "contoh_penerapan": "Kebijakan hilirisasi terbukti **mampu mendongkrak** nilai tambah ekspor dan **memperkuat** ketahanan ekonomi nasional.",
-              "jebakan_atau_catatan": "Bedakan dari sekadar memaparkan data positif; sikap mendukung memuat penilaian keunggulan dari penulis.",
+              "judul_poin": "Sikap Mendukung (Pro / Apresiatif)",
+              "penjelasan_singkat": "Penulis membenarkan atau mengunggulkan suatu gagasan memakai kata bermakna positif.",
+              "contoh_penerapan": "Program hilirisasi terbukti **mampu mendongkrak** nilai ekspor dan **memperkuat** ketahanan ekonomi dalam negeri.",
+              "jebakan_atau_catatan": "Bedakan dari sekadar melapor data naik; sikap mendukung selalu memuat pujian atas keunggulan sesuatu.",
               "visual": null
             },
             {
-              "judul_poin": "Sikap Menentang (Kontra/Menolak)",
-              "penjelasan_singkat": "Penulis menolak gagasan atau kebijakan secara tegas lewat konjungsi pertentangan dan diksi peyoratif.",
-              "contoh_penerapan": "Regulasi baru tersebut **justru kontraproduktif** dan **menghambat** laju inovasi pelaku usaha rintisan lokal.",
-              "jebakan_atau_catatan": "Jangan tertukar dengan sikap kritis; menentang bersifat menolak total tanpa menawarkan jalan tengah.",
+              "judul_poin": "Sikap Menentang (Kontra / Menolak)",
+              "penjelasan_singkat": "Penulis menolak gagasan atau aturan secara tegas lewat kata pertentangan dan diksi bernada negatif.",
+              "contoh_penerapan": "Aturan baru tersebut **justru kontraproduktif** dan **menghambat** laju inovasi pelaku usaha rintisan lokal.",
+              "jebakan_atau_catatan": "Jangan tertukar dengan sikap kritis; menentang berarti menolak total tanpa menawarkan jalan tengah.",
               "visual": null
             },
             {
-              "judul_poin": "Sikap Kritis (Analitis-Evaluatif)",
-              "penjelasan_singkat": "Penulis menyoroti celah, ketimpangan, atau kelemahan suatu kebijakan secara objektif disertai tuntutan perbaikan.",
-              "contoh_penerapan": "Anggaran pendidikan terus meningkat, **namun distribusi fasilitas** di daerah tertinggal **masih jauh dari memadai**.",
-              "jebakan_atau_catatan": "Sikap kritis tidak selalu menolak penuh, melainkan menguji konsistensi antara klaim dan fakta lapangan.",
+              "judul_poin": "Sikap Kritis (Menguji & Mengevaluasi)",
+              "penjelasan_singkat": "Penulis menyoroti celah, ketimpangan, atau kelemahan suatu kebijakan sambil menuntut perbaikan.",
+              "contoh_penerapan": "Anggaran pendidikan terus naik, **namun sebaran fasilitas** di daerah tertinggal **masih jauh dari memadai**.",
+              "jebakan_atau_catatan": "Sikap kritis tidak selalu menolak penuh, melainkan membandingkan janji aturan dengan kenyataan lapangan.",
               "visual": null
             },
             {
-              "judul_poin": "Sikap Khawatir (Cemas/Waspada)",
-              "penjelasan_singkat": "Penulis mengekspresikan kecemasan terhadap dampak buruk atau risiko di masa depan dengan kata modalitas.",
-              "contoh_penerapan": "Eksploitasi air tanah berlebihan **dikhawatirkan memicu** penurunan muka tanah permanen di pesisir utara.",
-              "jebakan_atau_catatan": "Ditandai verba pasif atau modalitas seperti berpotensi, terancam, dan dikhawatirkan, bukan kemarahan.",
+              "judul_poin": "Sikap Khawatir (Cemas / Waspada)",
+              "penjelasan_singkat": "Penulis menunjukkan rasa cemas terhadap risiko buruk di masa depan memakai kata peluang bahaya.",
+              "contoh_penerapan": "Peny sedotan air tanah berlebihan **dikhawatirkan memicu** penurunan muka tanah permanen di pesisir utara.",
+              "jebakan_atau_catatan": "Ditandai kata seperti *berpotensi, terancam,* dan *dikhawatirkan*—bukan rasa marah atau benci.",
               "visual": null
             },
             {
-              "judul_poin": "Sikap Netral (Objektif-Imparsial)",
-              "penjelasan_singkat": "Penulis menyajikan fakta atau dua sudut pandang berimbang tanpa menyisipkan kata sifat bermuatan emosi.",
-              "contoh_penerapan": "Berdasarkan data BPS, tingkat inflasi tahunan **tercatat sebesar** 2,8 persen pada kuartal ketiga.",
-              "jebakan_atau_catatan": "Waspadai kalimat kutipan; jika penulis mengutip pihak kontra tanpa komentar, sikap penulis tetap netral.",
+              "judul_poin": "Sikap Netral (Objektif / Berimbang)",
+              "penjelasan_singkat": "Penulis menyajikan fakta atau dua sisi pendapat secara seimbang tanpa menyisipkan kata bermuatan emosi.",
+              "contoh_penerapan": "Berdasarkan laporan BPS, tingkat inflasi tahunan **tercatat sebesar** 2,8 persen pada kuartal ketiga.",
+              "jebakan_atau_catatan": "Cek tanda kutip; jika penulis mengutip pihak kontra tanpa memberi komentar, sikap penulis tetap netral.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "2. Pola Tujuan Komunikatif Penulis",
-          "ringkasan_kelompok": "Menentukan maksud utama penulisan wacana berdasarkan struktur gagasan dan modus kalimat.",
+          "nama_kelompok": "2. Pola Tujuan Utama Penulisan",
+          "ringkasan_kelompok": "Menentukan maksud utama teks dari susunan gagasan dan jenis kalimat penutupnya.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Tujuan Ekspositoris (Memaparkan Informasi)",
-              "penjelasan_singkat": "Menjelaskan proses, definisi, atau fakta secara lugas agar pengetahuan pembaca bertambah tanpa paksaan.",
+              "judul_poin": "Memaparkan Informasi (Ekspositoris)",
+              "penjelasan_singkat": "Menjelaskan proses, pengertian, atau fakta secara lugas agar wawasan pembaca bertambah tanpa paksaan.",
               "contoh_penerapan": "Fotosintesis **merupakan proses biokimia** tumbuhan hijau dalam mengubah energi cahaya menjadi energi kimia.",
-              "jebakan_atau_catatan": "Ciri khasnya memakai verba kopula (adalah, merupakan) dan bebas dari kalimat ajakan.",
+              "jebakan_atau_catatan": "Ciri khasnya memakai kata definisi (*adalah, merupakan*) dan bersih dari kalimat ajakan.",
               "visual": null
             },
             {
-              "judul_poin": "Tujuan Argumentatif (Membuktikan Pendapat)",
-              "penjelasan_singkat": "Meyakinkan pembaca akan kebenaran tesis penulis dengan menyertakan data, riset, dan penalaran logis.",
-              "contoh_penerapan": "Data empiris **membuktikan bahwa** transportasi massal **secara signifikan menekan** emisi karbon perkotaan.",
-              "jebakan_atau_catatan": "Bedakan dari persuasif: argumentatif berhenti pada pembuktian logis tanpa menyuruh pembaca bertindak.",
+              "judul_poin": "Membuktikan Pendapat (Argumentatif)",
+              "penjelasan_singkat": "Meyakinkan pembaca atas kebenaran pendapat penulis dengan menyodorkan data, riset, dan alasan logis.",
+              "contoh_penerapan": "Data lapangan **membuktikan bahwa** angkutan massal **secara nyata menekan** emisi karbon di kota besar.",
+              "jebakan_atau_catatan": "Bedakan dari ajakan: teks ini berhenti pada pembuktian logis tanpa menyuruh pembaca melakukan sesuatu.",
               "visual": null
             },
             {
-              "judul_poin": "Tujuan Persuasif (Mengajak Bertindak)",
-              "penjelasan_singkat": "Memengaruhi pembaca agar mengikuti saran atau melakukan tindakan tertentu melalui kata ajakan dan keharusan.",
-              "contoh_penerapan": "Pemerintah dan masyarakat **perlu segera beralih** ke energi terbarukan demi mencegah krisis iklim.",
-              "jebakan_atau_catatan": "Kunci utamanya adalah modalitas deontik seperti harus, perlu, hendaknya, atau mari di akhir paragraf.",
+              "judul_poin": "Mengajak Bertindak (Persuasif)",
+              "penjelasan_singkat": "Memengaruhi pembaca agar mengikuti saran atau melakukan tindakan tertentu lewat kata keharusan dan ajakan.",
+              "contoh_penerapan": "Pemerintah dan masyarakat **perlu segera beralih** ke energi bersih demi mencegah krisis iklim.",
+              "jebakan_atau_catatan": "Kunci utamanya ada pada kata desakan seperti *harus, perlu, hendaknya,* atau *mari* di akhir paragraf.",
               "visual": null
             },
             {
-              "judul_poin": "Tujuan Deskriptif (Melukiskan Objek)",
-              "penjelasan_singkat": "Menggambarkan ciri fisik, suasana, atau kondisi suatu objek secara rinci sehingga seolah terindra pembaca.",
-              "contoh_penerapan": "Kabut tipis **menyelimuti lembah hijau**, sementara aroma tanah basah **menguar lembut** usai hujan.",
-              "jebakan_atau_catatan": "Jarang berdiri penuh dalam soal PPU; biasanya hadir sebagai paragraf pembuka latar masalah.",
+              "judul_poin": "Melukiskan Objek (Deskriptif)",
+              "penjelasan_singkat": "Menggambarkan ciri fisik, suasana, atau kondisi suatu tempat secara rinci agar seolah terlihat pembaca.",
+              "contoh_penerapan": "Kabut tipis **menyelimuti lembah hijau**, sementara aroma tanah basah **menguar lembut** seusai hujan.",
+              "jebakan_atau_catatan": "Jarang berdiri penuh dalam soal PPU; biasanya muncul sebagai paragraf pembuka latar masalah.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "3. Penanda Diksi Evaluatif dan Nada (Tone)",
-          "ringkasan_kelompok": "Membaca nuansa emosi dan keseriusan penulis lewat konotasi pilihan kata baku.",
+          "nama_kelompok": "3. Penanda Pilihan Kata dan Nada (Tone)",
+          "ringkasan_kelompok": "Membaca suasana hati dan tingkat keseriusan penulis lewat nuansa makna kata.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Nada Objektif-Akademis",
-              "penjelasan_singkat": "Nuansa datar, formal, dan berjarak menggunakan istilah teknis serta menghindari kata bermakna kias.",
-              "contoh_penerapan": "Penelitian ini **menggunakan metode kuantitatif** untuk **mengukur korelasi** antara literasi digital dan produktivitas.",
-              "jebakan_atau_catatan": "Paling dominan dalam bacaan UTBK; jangan memilih jawaban bernada emosional jika diksinya denotatif.",
+              "judul_poin": "Nada Objektif-Ilmiah",
+              "penjelasan_singkat": "Suasana datar, resmi, dan berjarak memakai istilah teknis serta menghindari kata bermakna kias.",
+              "contoh_penerapan": "Riset ini **memakai metode kuantitatif** untuk **mengukur hubungan** antara literasi digital dan produktivitas kerja.",
+              "jebakan_atau_catatan": "Paling sering muncul di bacaan UTBK; jangan pilih jawaban bernada emosional jika pilihan katanya datar.",
               "visual": null
             },
             {
               "judul_poin": "Nada Pesimistis atau Skeptis",
-              "penjelasan_singkat": "Nuansa ragu-ragu atau suram terhadap keberhasilan suatu upaya melalui diksi yang meremehkan peluang.",
-              "contoh_penerapan": "Target swasembada pangan **tampaknya sulit terwujud** jika alih fungsi lahan pertanian **terus dibiarkan**.",
-              "jebakan_atau_catatan": "Skeptis berarti meragukan klaim dengan dasar logis, bukan sekadar bersikap sinis atau mengejek.",
+              "penjelasan_singkat": "Suasana ragu atau suram terhadap keberhasilan suatu upaya lewat kata yang meragukan peluang.",
+              "contoh_penerapan": "Target swasembada pangan **tampaknya sulit terwujud** jika alih fungsi sawah **terus dibiarkan**.",
+              "jebakan_atau_catatan": "Skeptis berarti meragukan klaim memakai alasan masuk akal, bukan sekadar mengejek.",
               "visual": null
             },
             {
               "judul_poin": "Nada Optimistis atau Antusias",
-              "penjelasan_singkat": "Nuansa penuh harapan dan keyakinan positif terhadap prospek masa depan melalui diksi progresif.",
-              "contoh_penerapan": "Kehadiran kecerdasan buatan **membuka peluang emas** bagi akselerasi riset kesehatan di masa depan.",
-              "jebakan_atau_catatan": "Pastikan harapan tersebut milik penulis, bukan sekadar harapan pihak yang sedang diwawancarai.",
+              "penjelasan_singkat": "Suasana penuh harapan dan keyakinan cerah terhadap masa depan lewat kata bermakna kemajuan.",
+              "contoh_penerapan": "Kehadiran kecerdasan buatan **membuka peluang emas** bagi percepatan riset kesehatan pada masa depan.",
+              "jebakan_atau_catatan": "Pastikan harapan cerah itu milik penulis, bukan sekadar kutipan harapan narasumber.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "4. Sasaran Pembaca Berdasarkan Laras Bahasa",
-          "ringkasan_kelompok": "Menentukan kelompok pembaca yang dituju berdasarkan tingkat kerumitan istilah dan register teks.",
+          "nama_kelompok": "4. Sasaran Pembaca Berdasarkan Gaya Bahasa",
+          "ringkasan_kelompok": "Menebak kelompok pembaca yang dituju dari tingkat kerumitan istilah di dalam bacaan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pembaca Umum (Laras Bahasa Populer)",
-              "penjelasan_singkat": "Menggunakan kosakata keseharian yang komunikatif dan menyertakan penjelasan setiap kali istilah khusus muncul.",
+              "judul_poin": "Pembaca Umum (Gaya Bahasa Populer)",
+              "penjelasan_singkat": "Memakai kosakata sehari-hari yang mudah dipahami dan selalu memberi arti setiap kali istilah khusus muncul.",
               "contoh_penerapan": "Hipertensi, **atau tekanan darah tinggi yang melebihi batas normal**, sering muncul tanpa gejala awal.",
-              "jebakan_atau_catatan": "Adanya aposisi penjelas istilah teknis menjadi bukti kuat bahwa teks ditujukan bagi masyarakat awam.",
+              "jebakan_atau_catatan": "Adanya keterangan penjelas di antara dua koma menjadi bukti kuat teks ini ditulis untuk masyarakat awam.",
               "visual": null
             },
             {
-              "judul_poin": "Pembaca Khusus/Akademisi (Laras Ilmiah)",
-              "penjelasan_singkat": "Memakai jargon bidang keilmuan tertentu secara langsung tanpa definisi dasar karena pembaca dianggap paham.",
-              "contoh_penerapan": "Degradasi **ekosistem mangrove** mempercepat **intrusi air laut** ke dalam **akuifer dangkal** pesisir.",
-              "jebakan_atau_catatan": "Cocokkan dominasi istilah dengan bidangnya (misal: praktisi medis, ekonom, atau pembuat kebijakan).",
+              "judul_poin": "Pembaca Khusus / Ahli (Gaya Ilmiah)",
+              "penjelasan_singkat": "Memakai istilah bidang ilmu tertentu secara langsung tanpa definisi dasar karena pembaca dianggap sudah paham.",
+              "contoh_penerapan": "Kerusakan **ekosistem mangrove** mempercepat **intrusi air laut** ke dalam **akuifer dangkal** pesisir.",
+              "jebakan_atau_catatan": "Cocokkan istilah dominan dengan profesinya (misalnya: dokter, ekonom, atau pembuat kebijakan).",
               "visual": null
             }
           ]
@@ -166,38 +166,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Identifikasi Sikap atau Keberpihakan Penulis (Mendukung, Menentang, Netral, Kritis, Khawatir)",
+      "nama_variasi": "Menentukan Sikap Penulis (Mendukung, Menentang, Netral, Kritis, Khawatir)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Kebijakan pembatasan kendaraan bermotor di pusat kota dinilai **terburu-buru** dan **mengabaikan** kesiapan armada angkutan pengumpan bagi pekerja komuter.",
-      "bedah_pola_markdown": "**Bedah Pola Sikap & Fungsi:**\nPerhatikan muatan makna pada unsur predikat dan pelengkap: [S] *Kebijakan pembatasan kendaraan* + [P] *dinilai **terburu-buru** dan **mengabaikan*** + [O] *kesiapan armada angkutan* + [K] *bagi pekerja komuter*. Diksi evaluatif *terburu-buru* dan *mengabaikan* menunjukkan sikap **kritis** sekaligus **menentang** kesiapan eksekusi kebijakan sesuai standar EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyimpulkan sikap **netral** karena membahas aturan transportasi publik. | Menyimpulkan sikap **kritis** karena memuat evaluasi negatif *terburu-buru*. |\n| Penulisan kata tidak baku: kebijakan dinilai ***tergesa2*** dan ***mengabaikan*** warga. | Penulisan kata ulang baku EYD V: kebijakan dinilai ***tergesa-gesa*** dan ***mengabaikan*** warga. |\n\n**Strategi Eksekusi:** Tandai seluruh adjektiva dan verba bernilai rasa di posisi [P] atau [Pel], lalu tentukan apakah arah penilaiannya positif, negatif, cemas, atau berimbang.",
-      "kunci_pembeda": "Menilai kecenderungan positif, negatif, cemas, atau berimbang dari kata-kata evaluatif pada predikat dan keterangan kalimat.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\nLihat kata kerja dan kata sifat di bagian tengah kalimat: *dinilai **terburu-buru** dan **mengabaikan** kesiapan armada*. Dua kata bercetak tebal itu bukan laporan netral, melainkan penilaian negatif atas kesiapan aturan. Artinya, penulis bersikap **kritis** terhadap pelaksanaan kebijakan tersebut.\n\n| Jebakan Umum | Cara Tepat (Patuh EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengira sikap penulis **netral** karena topiknya soal aturan transportasi publik. | Menyimpulkan sikap **kritis** karena penulis menyisipkan penilaian negatif *terburu-buru*. |\n| Menulis kata ulang dengan angka: dinilai ***tergesa2*** dan ***mengabaikan*** warga. | Menulis kata ulang memakai tanda hubung baku EYD V: dinilai ***tergesa-gesa*** dan ***mengabaikan*** warga. |\n\n**Trik Cepat:** Lingkari semua kata sifat dan kata kerja yang terasa memuji, menyalahkan, atau mencemaskan sesuatu—dari situlah arah sikap penulis terbaca.",
+      "kunci_pembeda": "Menilai kecenderungan positif, negatif, cemas, atau berimbang lewat kata bermuatan nilai pada predikat kalimat.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Penentuan Tujuan Komunikatif Penulis (Persuasif, Ekspositoris, Argumentatif, Deskriptif)",
+      "nama_variasi": "Menentukan Tujuan Utama Penulis (Mengajak, Memaparkan, Membuktikan, Melukiskan)",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Berdasarkan data Badan Pusat Statistik, kontribusi ekonomi kreatif terhadap produk domestik bruto tumbuh tujuh persen melalui subsektor kuliner, kriya, dan aplikasi digital.",
-      "bedah_pola_markdown": "**Bedah Pola Tujuan & Fungsi:**\nPerhatikan konstruksi kalimat informatif berikut: [K] *Berdasarkan data BPS*, [S] *kontribusi ekonomi kreatif* + [P] *tumbuh* + [Pel] *tujuh persen* + [K] *melalui subsektor kuliner, kriya, dan aplikasi*. Kalimat memaparkan fakta terukur tanpa ajakan maupun perdebatan opini sehingga bertujuan **ekspositoris** sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyebut teks berdata statistik bertujuan **persuasif** (*mengajak pembaca*). | Menyebut teks berdata tanpa ajakan bertujuan **ekspositoris** (*memaparkan informasi*). |\n| Penulisan singkatan dan persen keliru: tumbuh **7%** menurut data **B.P.S.** | Penulisan bilangan dan singkatan lembaga baku EYD V: tumbuh **tujuh persen** menurut **BPS**. |\n\n**Strategi Eksekusi:** Periksa bagian penutup teks; jika berisi ajakan (*hendaknya, mari*) pilih persuasif, jika membuktikan klaim opini pilih argumentatif, dan jika sekadar memaparkan data pilih ekspositoris.",
-      "kunci_pembeda": "Membedakan maksud utama wacana dari ada tidaknya ajakan bertindak (persuasif), pembuktian klaim (argumentatif), pelukisan objek (deskriptif), atau pemaparan fakta (ekspositoris).",
+      "stimulus_mini": "Berdasarkan data Badan Pusat Statistik, sumbangan ekonomi kreatif terhadap produk domestik bruto tumbuh tujuh persen melalui subsektor kuliner, kriya, dan aplikasi digital.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\nCermati isi seluruh kalimat: penulis hanya melaporkan angka pertumbuhan ekonomi kreatif beserta tiga subsektor penyumbangnya. Tidak ada kata ajakan (*mari, harus*) maupun perdebatan opini. Karena murni menyampaikan informasi terukur, tujuan penulis adalah **memaparkan fakta (ekspositoris)**.\n\n| Jebakan Umum | Cara Tepat (Patuh EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengira teks berdata statistik bertujuan **mengajak pembaca (persuasif)**. | Menyimpulkan teks berdata tanpa kata ajakan bertujuan **memaparkan informasi (ekspositoris)**. |\n| Menulis singkatan lembaga memakai titik: tumbuh **7%** menurut data **B.P.S.** | Menulis singkatan lembaga tanpa titik dan bilangan satu kata dengan huruf: tumbuh **tujuh persen** menurut **BPS**. |\n\n**Trik Cepat:** Langsung cek kalimat terakhir bacaan; jika ada kata *harus/perlu/mari* pilih mengajak, jika membuktikan klaim pilih membuktikan, dan jika murni info pilih memaparkan.",
+      "kunci_pembeda": "Membedakan maksud utama teks dari ada tidaknya ajakan bertindak, pembuktian klaim, pelukisan objek, atau pemaparan fakta.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Analisis Pilihan Kata Evaluatif yang Mencerminkan Nada Teks",
+      "nama_variasi": "Membaca Nada Teks Lewat Pilihan Kata Bernuansa Emosi",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Eksploitasi air tanah secara **masif** tanpa pengawasan ketat kian **mengancam** ketahanan infrastruktur pesisir yang kini berada di ambang **kerusakan parah**.",
-      "bedah_pola_markdown": "**Bedah Pola Nada & Fungsi:**\nPerhatikan diksi bermuatan emosi pada struktur kalimat: [S] *Eksploitasi air tanah secara **masif*** + [P] *kian **mengancam*** + [O] *ketahanan infrastruktur pesisir* + [K] *di ambang **kerusakan parah***. Rangkaian kata *masif*, *mengancam*, dan *kerusakan parah* membangun **nada peringatan serius dan cemas** (alarmis) sesuai makna baku KBBI VI dan ejaan EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menafsirkan nada teks bersifat **optimistis** atau **antusias** terhadap pembangunan pesisir. | Menafsirkan nada teks bersifat **cemas** dan **memperingatkan** risiko kerusakan lingkungan. |\n| Penulisan bentuk terikat tidak baku: kerusakan **pasca banjir** rob di pesisir. | Penulisan bentuk terikat serangkai baku EYD V: kerusakan **pascabanjir** rob di pesisir. |\n\n**Strategi Eksekusi:** Kelompokkan kata sifat dan kata kerja berkonotasi kuat dalam paragraf, lalu simpulkan suasana hati dominan yang dipancarkan penulis kepada pembaca.",
-      "kunci_pembeda": "Mengidentifikasi suasana emosi dominan (objektif, cemas, sarkastis, optimistis) yang terbentuk dari akumulasi pilihan kata berkonotasi kuat.",
+      "stimulus_mini": "Penyedotan air tanah secara **masif** tanpa pengawasan ketat kian **mengancam** ketahanan bangunan pesisir yang kini berada di ambang **kerusakan parah**.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\nKumpulkan kata-kata yang memancing rasa waspada: **masif**, **mengancam**, dan **kerusakan parah**. Pilihan kata yang berat ini sengaja dipakai penulis untuk membunyikan alarm bahaya. Jadi, teks ini membawa **nada peringatan serius dan cemas**.\n\n| Jebakan Umum | Cara Tepat (Patuh EYD V & KBBI VI) |\n| :--- | :--- |\n| Menafsirkan nada teks bersifat **optimistis** karena membahas bangunan pesisir. | Menafsirkan nada teks bersifat **cemas** dan **memperingatkan** risiko kerusakan lingkungan. |\n| Memisah bentuk terikat *pasca*: kerusakan **pasca banjir** rob di pesisir. | Merangkai bentuk terikat *pasca-* sesuai EYD V: kerusakan **pascabanjir** rob di pesisir. |\n\n**Trik Cepat:** Gabungkan dua sampai tiga kata berkonotasi paling kuat dalam paragraf, lalu tebak suasana hati penulis saat menulisnya.",
+      "kunci_pembeda": "Menangkap suasana emosi dominan (datar, cemas, ragu, atau penuh harap) dari kumpulan pilihan kata berkonotasi kuat.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Identifikasi Sasaran Pembaca Berdasarkan Laras Bahasa Teks",
+      "nama_variasi": "Menebak Sasaran Pembaca Berdasarkan Tingkat Kerumitan Istilah",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Otoritas moneter perlu menjaga transmisi **suku bunga acuan** agar **likuiditas perbankan** tetap memadai guna menopang **ekspansi kredit** sektor riil.",
-      "bedah_pola_markdown": "**Bedah Pola Laras Bahasa & Fungsi:**\nPerhatikan kepadatan istilah teknis dalam struktur kalimat: [S] *Otoritas moneter* + [P] *perlu menjaga* + [O] *transmisi **suku bunga acuan*** + [K] *agar **likuiditas perbankan** menopang **ekspansi kredit***. Penggunaan istilah spesifik perbankan tanpa definisi populer menandakan laras ilmiah-ekonomi yang ditujukan bagi **pelaku pasar atau pengambil kebijakan** sesuai KBBI VI dan EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyimpulkan sasaran bacaan adalah **siswa sekolah dasar** atau **masyarakat awam**. | Menyimpulkan sasaran bacaan adalah **praktisi keuangan** atau **pembuat kebijakan ekonomi**. |\n| Penulisan istilah serapan tidak baku: menjaga **likwiditas** dan **expansi** kredit. | Penulisan istilah serapan baku KBBI VI: menjaga **likuiditas** dan **ekspansi** kredit. |\n\n**Strategi Eksekusi:** Amati tingkat kerumitan istilah bidang ilmu serta ada tidaknya penjelasan awam untuk menentukan kelompok pembaca yang paling relevan.",
-      "kunci_pembeda": "Menentukan profil kelompok pembaca utama berdasarkan tingkat keformalan, istilah teknis bidang ilmu, dan cara penulis menyajikan informasi.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\nPerhatikan deretan istilah ekonomi dalam satu kalimat pendek: **suku bunga acuan**, **likuiditas perbankan**, dan **ekspansi kredit**. Penulis tidak repot-repot menjelaskan arti istilah tersebut karena menganggap pembacanya sudah paham. Artinya, bacaan ini menyasar **pelaku pasar keuangan atau pembuat kebijakan ekonomi**.\n\n| Jebakan Umum | Cara Tepat (Patuh EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyimpulkan sasaran bacaan adalah **pelajar sekolah** atau **masyarakat umum**. | Menyimpulkan sasaran bacaan adalah **praktisi keuangan** atau **pembuat kebijakan ekonomi**. |\n| Menulis kata serapan tidak baku: menjaga **likwiditas** dan **expansi** kredit. | Menulis kata serapan baku sesuai KBBI VI: menjaga **likuiditas** dan **ekspansi** kredit. |\n\n**Trik Cepat:** Lihat apakah istilah teknis dijelaskan artinya dalam teks; jika dibiarkan tanpa penjelasan, pembacanya pasti kalangan ahli atau praktisi bidang itu.",
+      "kunci_pembeda": "Menentukan kelompok pembaca utama berdasarkan tingkat kerumitan istilah bidang ilmu serta ada tidaknya penjelasan awam.",
       "visual": null
     }
   ],
@@ -209,16 +209,16 @@
         3
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n> (1) Ketergantungan industri pengolahan pangan terhadap bahan baku impor kian **mengkhawatirkan** di tengah fluktuasi nilai tukar global. (2) Tanpa percepatan hilirisasi komoditas lokal, margin keuntungan pelaku usaha domestik akan terus **tergerus** dan memicu lonjakan harga di tingkat konsumen.\n\nSikap dan nada penulis yang paling tercermin melalui pilihan kata bercetak tebal dalam paragraf tersebut adalah ....",
+      "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n> (1) Ketergantungan industri pengolahan pangan terhadap bahan baku impor kian **mengkhawatirkan** di tengah gejolak nilai tukar global. (2) Tanpa percepatan hilirisasi komoditas lokal, margin keuntungan pelaku usaha dalam negeri akan terus **tergerus** dan memicu lonjakan harga di tingkat konsumen.\n\nSikap dan nada penulis yang paling tergambar melalui pilihan kata bercetak tebal dalam paragraf tersebut adalah ....",
       "opsi_jawaban": [
-        "A. mendukung kebijakan impor pangan dengan nada optimistis",
-        "B. bersikap netral terhadap dinamika pasar dengan nada objektif",
+        "A. mendukung kebijakan impor pangan dengan nada penuh harap",
+        "B. bersikap netral terhadap gejolak pasar dengan nada datar",
         "C. merasa khawatir terhadap kerentanan pasokan dengan nada memperingatkan",
-        "D. menolak pengembangan komoditas lokal dengan nada pesimistis",
-        "E. mengapresiasi ketahanan pelaku usaha domestik dengan nada antusias"
+        "D. menolak pengembangan komoditas lokal dengan nada suram",
+        "E. mengapresiasi ketahanan pelaku usaha lokal dengan nada antusias"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Kata **mengkhawatirkan** pada kalimat (1) dan **tergerus** pada kalimat (2) merupakan diksi evaluatif bermuatan negatif yang menandakan kecemasan penulis terhadap kerentanan pasokan bahan baku impor. Rangkaian diksi peringatan tersebut membentuk nada serius yang mengingatkan risiko kenaikan harga konsumen (**opsi C**). **Opsi A** dan **E** keliru karena teks tidak memuat dukungan maupun pujian. **Opsi B** salah karena kehadiran kata bermuatan nilai meniadakan kenetralan, sedangkan **opsi D** bertentangan dengan dorongan hilirisasi komoditas lokal.",
+      "bedah_cepat_markdown": "Kata **mengkhawatirkan** pada kalimat (1) dan **tergerus** pada kalimat (2) jelas memuat rasa cemas penulis terhadap rapuhnya pasokan bahan baku impor. Pilihan kata tersebut membentuk nada peringatan serius soal risiko naiknya harga di tingkat konsumen (**opsi C**). **Opsi A** dan **E** salah karena bacaan tidak memuji atau mendukung impor. **Opsi B** keliru karena kata bermuatan nilai menggugurkan sikap netral, sedangkan **opsi D** bertolak belakang dengan dorongan hilirisasi komoditas lokal.",
       "visual": null
     },
     {
@@ -227,16 +227,16 @@
         2
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Sistem pertanian vertikal memanfaatkan rak bertingkat di dalam ruangan tertutup dengan pencahayaan lampu dioda pemancar cahaya. (2) Metode ini mengatur suhu, kelembapan, serta nutrisi tanaman secara otomatis melalui sensor digital sehingga mampu memanen sayuran sepanjang tahun tanpa bergantung pada musim.\n\nTujuan utama penulis menyajikan kutipan teks tersebut adalah ....",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Sistem pertanian vertikal memanfaatkan rak bertingkat di dalam ruangan tertutup dengan pencahayaan lampu dioda pemancar cahaya. (2) Metode ini mengatur suhu, kelembapan, serta nutrisi tanaman secara otomatis lewat sensor digital sehingga mampu memanen sayuran sepanjang tahun tanpa bergantung pada musim.\n\nTujuan utama penulis menyajikan kutipan teks tersebut adalah ....",
       "opsi_jawaban": [
-        "A. mengajak petani konvensional segera meninggalkan lahan terbuka",
+        "A. mengajak petani tradisional segera meninggalkan lahan terbuka",
         "B. memaparkan cara kerja dan keunggulan sistem pertanian vertikal",
-        "C. membantah anggapan bahwa pertanian modern membutuhkan biaya besar",
-        "D. mengkritik keterbatasan pasokan sayuran pada musim kemarau",
+        "C. membantah anggapan bahwa pertanian modern butuh biaya besar",
+        "D. mengkritik terbatasnya pasokan sayuran pada musim kemarau",
         "E. membuktikan bahwa lampu buatan lebih baik daripada sinar matahari"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat (1) menjelaskan definisi dan komponen fisik pertanian vertikal, sedangkan kalimat (2) menguraikan mekanisme pengaturan otomatis serta hasil panennya secara faktual. Seluruh kalimat menyajikan informasi penjelas secara objektif tanpa ajakan bertindak maupun perdebatan opini, sehingga bertujuan ekspositoris untuk **memaparkan cara kerja dan keunggulan sistem pertanian vertikal** (**opsi B**). **Opsi A** keliru karena tidak ada seruan persuasif, sedangkan **opsi C**, **D**, dan **E** memuat klaim bantahan serta kritik yang tidak tercantum dalam teks.",
+      "bedah_cepat_markdown": "Kalimat (1) mengenalkan bentuk fisik pertanian vertikal, lalu kalimat (2) merinci cara kerja sensor otomatis serta hasil panennya secara faktual. Seluruh kalimat menyampaikan informasi penjelas secara lugas tanpa seruan ajakan maupun perdebatan opini, sehingga tujuannya murni untuk **memaparkan cara kerja dan keunggulan sistem pertanian vertikal** (**opsi B**). **Opsi A** salah karena tidak ada kalimat ajakan, sedangkan **opsi C**, **D**, dan **E** mengarang bantahan dan kritik yang tidak ada di dalam teks.",
       "visual": null
     },
     {
@@ -246,16 +246,16 @@
         4
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Perhatikan kutipan teks berikut!\n\n> \"Integrasi rekam medis elektronik antarfaskes menuntut standardisasi **interoperabilitas data** serta penerapan **enkripsi berlapis** guna mencegah kebocoran informasi klinis pasien. Oleh karena itu, pengelola rumah sakit wajib memperbarui protokol keamanan siber sebelum menghubungkan basis data internal ke jaringan nasional.\"\n\nBerdasarkan laras bahasa dan pilihan istilahnya, sasaran pembaca yang paling dituju oleh penulis teks tersebut adalah ....",
+      "pertanyaan_markdown": "Perhatikan kutipan teks berikut!\n\n> \"Integrasi rekam medis elektronik antarfaskes menuntut standardisasi **interoperabilitas data** serta penerapan **enkripsi berlapis** guna mencegah kebocoran informasi klinis pasien. Oleh karena itu, pengelola rumah sakit wajib memperbarui protokol keamanan siber sebelum menghubungkan basis data internal ke jaringan nasional.\"\n\nBerdasarkan gaya bahasa dan pilihan istilahnya, sasaran pembaca yang paling dituju oleh penulis teks tersebut adalah ....",
       "opsi_jawaban": [
         "A. pasien rawat jalan yang hendak mendaftar layanan kesehatan daring",
         "B. pengelola fasilitas kesehatan dan praktisi teknologi informasi medis",
         "C. pelajar sekolah menengah yang mempelajari dasar biologi manusia",
-        "D. masyarakat umum yang mencari informasi pencegahan penyakit menular",
+        "D. masyarakat umum yang mencari cara pencegahan penyakit menular",
         "E. produsen peralatan farmasi yang memasarkan obat-obatan baru"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Teks tersebut menggunakan istilah teknis tata kelola sistem kesehatan dan keamanan informasi, seperti **interoperabilitas data**, **enkripsi berlapis**, dan **protokol keamanan siber**, tanpa disertai penjelasan awam. Selain itu, kalimat kedua secara langsung merujuk kewajiban teknis bagi **pengelola rumah sakit**. Dengan demikian, sasaran pembaca utamanya adalah **pengelola fasilitas kesehatan dan praktisi teknologi informasi medis** (**opsi B**). **Opsi A**, **C**, **D**, dan **E** tidak selaras dengan laras teknis maupun konteks kewajiban manajemen rumah sakit dalam teks.",
+      "bedah_cepat_markdown": "Bacaan tersebut memakai istilah teknis tata kelola data kesehatan, seperti **interoperabilitas data**, **enkripsi berlapis**, dan **protokol keamanan siber**, tanpa memberi penjelasan arti bagi orang awam. Kalimat kedua juga langsung menyebut kewajiban teknis **pengelola rumah sakit**. Jadi, target pembaca utamanya adalah **pengelola fasilitas kesehatan dan praktisi teknologi informasi medis** (**opsi B**). **Opsi A**, **C**, **D**, dan **E** tidak nyambung dengan istilah teknis maupun kewajiban manajemen rumah sakit dalam kutipan.",
       "visual": null
     }
   ]

@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Diketahui $f(x) = \\frac{x^2 - 4}{x - 2}$ dan $g(x) = x + 2$. Apakah kedua fungsi ini identik pada seluruh bilangan real?",
+      "pertanyaan_pemantik": "Diketahui $f(x) = \\frac{x^2 - 4}{x - 2}$ dan $g(x) = x + 2$. Apakah kedua fungsi ini sama persis untuk semua bilangan real?",
       "opsi_cepat": [
         "Ya, karena bentuk aljabarnya sama",
         "Tidak, karena domain keduanya berbeda"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Penyederhanaan aljabar tidak menghapus syarat domain awal. Fungsi $f(x)$ tidak terdefinisi di $x = 2$, sedangkan $g(x)$ terdefinisi di seluruh bilangan real."
+      "penjelasan_kilat": "Mencoret bentuk aljabar tidak menghapus syarat domain awal. Fungsi $f(x)$ bolong (tidak terdefinisi) di $x = 2$, sedangkan $g(x)$ aman di semua bilangan real."
     },
-    "konsep_inti_markdown": "Fungsi $f: A \\rightarrow B$ memetakan setiap anggota domain $A$ ke tepat satu anggota kodomain $B$.\n- **Domain Alami ($D_f$):** Himpunan input $x \\in \\mathbb{R}$ agar $f(x)$ terdefinisi real.\n- **Range ($R_f$):** Himpunan semua output $y = f(x)$ dari anggota $D_f$.\n- **Syarat Kritis:** Penyebut $\\neq 0$ dan ekspresi di dalam akar genap $\\ge 0$.\n- **Simetri & Invers:** Genap jika $f(-x) = f(x)$, ganjil jika $f(-x) = -f(x)$, serta punya invers jika satu-satu.",
+    "konsep_inti_markdown": "Fungsi $f: A \\rightarrow B$ memasangkan setiap anggota domain $A$ ke tepat satu anggota kodomain $B$.\n- **Domain Alami ($D_f$):** Semua nilai input $x \\in \\mathbb{R}$ yang membuat $f(x)$ menghasilkan bilangan real.\n- **Range ($R_f$):** Semua nilai output $y = f(x)$ yang dihasilkan dari anggota $D_f$.\n- **Syarat Kritis:** Penyebut $\\neq 0$ dan bentuk di dalam akar genap $\\ge 0$.\n- **Simetri & Invers:** Fungsi genap jika $f(-x) = f(x)$, ganjil jika $f(-x) = -f(x)$, dan punya invers jika bersifat satu-satu.",
     "radar_jebakan_utbk": [
-      "Mencoret faktor pembuat nol pada pembilang dan penyebut sebelum menentukan syarat domain awal ($g(x) \\neq 0$).",
-      "Menghitung range fungsi kuadrat pada domain terbatas hanya dengan mensubstitusi kedua ujung interval tanpa mengecek letak titik puncak ($x_p$)."
+      "Mencoret faktor pembuat nol di pembilang dan penyebut sebelum mencatat syarat domain awal ($q(x) \\neq 0$).",
+      "Mencari range fungsi kuadrat pada interval terbatas hanya dengan memasukkan ujung interval, tanpa mengecek posisi titik puncak ($x_p$)."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Lengkap Relasi, Domain, Range, dan Sifat Fungsi",
-      "subjudul_ringkas": "Panduan praktis menentukan syarat terdefinisi, daerah hasil, evaluasi fungsi implisit, serta sifat simetri UTBK.",
+      "subjudul_ringkas": "Panduan cepat menentukan syarat domain, batas range, fungsi bersyarat, dan sifat simetri di UTBK.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -36,112 +36,112 @@
       "kelompok": [
         {
           "nama_kelompok": "1. Identifikasi Fungsi & Syarat Domain Alami",
-          "ringkasan_kelompok": "Menentukan keabsahan relasi sebagai fungsi serta batas input real agar terdefinisi.",
+          "ringkasan_kelompok": "Cara membedakan fungsi dari relasi biasa serta menentukan batas input $x$ agar valid.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Syarat Fungsi & Uji Garis Vertikal",
-              "penjelasan_singkat": "Setiap anggota domain $x$ wajib memiliki tepat satu pasangan $y$; garis vertikal memotong grafik maksimal di satu titik.",
-              "contoh_penerapan": "Relasi $\\{(1,2), (1,3)\\}$ **bukan fungsi** karena $x=1$ bercabang; persamaan $x^2 + y^2 = 4$ juga **bukan fungsi**.",
-              "jebakan_atau_catatan": "Anggota kodomain boleh memiliki lebih dari satu pasangan di domain atau tidak memiliki pasangan sama sekali.",
+              "penjelasan_singkat": "Setiap input $x$ wajib punya tepat satu pasangan $y$. Pada grafik, garis vertikal maksimal memotong kurva di satu titik.",
+              "contoh_penerapan": "Relasi $\\{(1,2), (1,3)\\}$ **bukan fungsi** karena $x = 1$ bercabang. Persamaan lingkaran $x^2 + y^2 = 4$ juga **bukan fungsi**.",
+              "jebakan_atau_catatan": "Anggota kodomain ($y$) boleh punya lebih dari satu pasangan $x$, atau bahkan tidak punya pasangan sama sekali.",
               "visual": null
             },
             {
               "judul_poin": "Domain Alami Fungsi Pecahan (Rasional)",
-              "penjelasan_singkat": "Fungsi $f(x) = \\frac{p(x)}{q(x)}$ terdefinisi untuk semua $x \\in \\mathbb{R}$ dengan syarat mutlak penyebut $q(x) \\neq 0$.",
-              "contoh_penerapan": "Untuk $f(x) = \\frac{x-2}{x^2-9}$, syarat $x^2-9 \\neq 0$ menghasilkan **domain alami $D_f = \\{x \\in \\mathbb{R} \\mid x \\neq \\pm 3\\}$**.",
-              "jebakan_atau_catatan": "Jangan mencoret faktor sama di pembilang dan penyebut sebelum mencari syarat penyebut tidak sama dengan nol.",
+              "penjelasan_singkat": "Fungsi $f(x) = \\frac{p(x)}{q(x)}$ berlaku untuk semua $x \\in \\mathbb{R}$ dengan syarat mutlak penyebut $q(x) \\neq 0$.",
+              "contoh_penerapan": "Pada $f(x) = \\frac{x - 2}{x^2 - 9}$, syarat $x^2 - 9 \\neq 0$ menghasilkan **domain alami $D_f = \\{x \\in \\mathbb{R} \\mid x \\neq \\pm 3\\}$**.",
+              "jebakan_atau_catatan": "Jangan pernah mencoret faktor yang sama di atas dan bawah sebelum menuliskan syarat penyebut $\\neq 0$.",
               "visual": null
             },
             {
               "judul_poin": "Domain Alami Fungsi Akar Pangkat Genap",
-              "penjelasan_singkat": "Bentuk $\\sqrt[2n]{g(x)}$ terdefinisi real jika ekspresi di dalam akar bernilai tak negatif, yaitu $g(x) \\ge 0$.",
-              "contoh_penerapan": "Pada $f(x) = \\sqrt{6 - 2x}$, syarat $6 - 2x \\ge 0$ memberikan **domain alami $x \\le 3$**.",
-              "jebakan_atau_catatan": "Akar pangkat ganjil seperti $\\sqrt[3]{x}$ berlaku untuk semua $x \\in \\mathbb{R}$ tanpa syarat $\\ge 0$.",
+              "penjelasan_singkat": "Bentuk $\\sqrt[2n]{g(x)}$ menghasilkan bilangan real hanya jika bentuk di dalam akar tidak negatif, yaitu $g(x) \\ge 0$.",
+              "contoh_penerapan": "Pada $f(x) = \\sqrt{6 - 2x}$, syarat $6 - 2x \\ge 0$ menghasilkan **domain alami $x \\le 3$**.",
+              "jebakan_atau_catatan": "Akar pangkat ganjil seperti $\\sqrt[3]{x}$ tetap aman untuk bilangan negatif, jadi domainnya semua $x \\in \\mathbb{R}$.",
               "visual": null
             },
             {
-              "judul_poin": "Domain Irisan Akar di Posisi Penyebut",
-              "penjelasan_singkat": "Jika akar genap menjadi penyebut $\\frac{1}{\\sqrt{g(x)}}$, syaratnya diperketat menjadi $g(x) > 0$ karena penyebut dilarang nol.",
+              "judul_poin": "Domain Akar Genap di Posisi Penyebut",
+              "penjelasan_singkat": "Jika akar genap berada di bawah $\\frac{1}{\\sqrt{g(x)}}$, syaratnya menjadi ketat: $g(x) > 0$, karena penyebut tidak boleh nol.",
               "contoh_penerapan": "Pada $f(x) = \\frac{1}{\\sqrt{x^2 - 4}}$, syarat $x^2 - 4 > 0$ menghasilkan **$x < -2$ atau $x > 2$**.",
-              "jebakan_atau_catatan": "Peserta sering memakai tanda $\\ge 0$ sehingga angka pembuat nol penyebut ikut terbawa ke himpunan penyelesaian.",
+              "jebakan_atau_catatan": "Jebakan klasik: memakai tanda $\\ge 0$ sehingga angka pembuat nol penyebut ikut terbawa ke jawaban.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "2. Penentuan Daerah Hasil (Range) Terbatas",
-          "ringkasan_kelompok": "Mencari batas nilai output $y$ dari fungsi linear, kuadrat, dan rasional.",
+          "ringkasan_kelompok": "Mencari batas nilai output $y$ pada fungsi linear, kuadrat, dan rasional.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Range Fungsi Linear pada Interval Terbatas",
-              "penjelasan_singkat": "Karena monoton naik atau turun, range $f(x) = ax + b$ cukup dihitung dengan mensubstitusi kedua ujung domain.",
-              "contoh_penerapan": "Jika $f(x) = 3 - 2x$ pada $-1 \\le x < 4$, ujungnya $f(-1)=5$ dan $f(4)=-5$, maka **$-5 < y \\le 5$**.",
-              "jebakan_atau_catatan": "Perhatikan tanda pertidaksamaan ketat ($<$) atau tak ketat ($\\le$) yang mengikuti masing-masing titik ujung domainnya.",
+              "penjelasan_singkat": "Fungsi $f(x) = ax + b$ selalu naik atau turun konsisten. Cukup masukkan kedua ujung domain untuk mendapat batas range.",
+              "contoh_penerapan": "Untuk $f(x) = 3 - 2x$ pada $-1 \\le x < 4$, ujungnya $f(-1) = 5$ dan $f(4) = -5$, sehingga **$-5 < y \\le 5$**.",
+              "jebakan_atau_catatan": "Cek tanda pertidaksamaan ($<$ atau $\\le$) agar tetap menempel pada nilai hasil ujung domain pasangannya.",
               "visual": null
             },
             {
               "judul_poin": "Range Fungsi Kuadrat pada Domain Terbatas",
-              "penjelasan_singkat": "Hitung nilai ujung domain dan nilai puncak $y_p = f\\left(-\\frac{b}{2a}\\right)$ hanya jika $x_p = -\\frac{b}{2a}$ masuk dalam domain.",
-              "contoh_penerapan": "Untuk $f(x) = x^2 - 4x + 5$ pada $0 \\le x \\le 3$, puncak $x_p=2$ masuk interval, sehingga **$1 \\le y \\le 5$**.",
-              "jebakan_atau_catatan": "Kesalahan fatal: langsung memasukkan dua ujung domain tanpa mengecek apakah titik balik $x_p$ berada di dalamnya.",
+              "penjelasan_singkat": "Hitung nilai ujung domain dan nilai puncak $y_p = f\\left(-\\frac{b}{2a}\\right)$, dengan catatan $x_p = -\\frac{b}{2a}$ masuk di dalam domain.",
+              "contoh_penerapan": "Pada $f(x) = x^2 - 4x + 5$ untuk $0 \\le x \\le 3$, puncak $x_p = 2$ masuk interval, sehingga **$1 \\le y \\le 5$**.",
+              "jebakan_atau_catatan": "Kesalahan fatal: langsung memasukkan kedua ujung interval tanpa mengecek apakah titik puncak $x_p$ ada di dalamnya.",
               "visual": null
             },
             {
               "judul_poin": "Range Fungsi Rasional Linear (Asimtot Datar)",
-              "penjelasan_singkat": "Untuk $f(x) = \\frac{ax+b}{cx+d}$ pada domain alami, range mencakup seluruh $\\mathbb{R}$ kecuali asimtot datar $y \\neq \\frac{a}{c}$.",
-              "contoh_penerapan": "Fungsi $f(x) = \\frac{2x+1}{x-3}$ memiliki asimtot datar $y = \\frac{2}{1}$, maka **range $R_f = \\{y \\in \\mathbb{R} \\mid y \\neq 2\\}$**.",
-              "jebakan_atau_catatan": "Trik cepat: range $f(x)$ sama persis dengan domain fungsi inversnya $f^{-1}(x)$, cukup cari syarat penyebut invers.",
+              "penjelasan_singkat": "Untuk $f(x) = \\frac{ax + b}{cx + d}$ (dengan $c \\neq 0$ dan $ad - bc \\neq 0$), rangenya mencakup semua $\\mathbb{R}$ kecuali asimtot datar $y \\neq \\frac{a}{c}$.",
+              "contoh_penerapan": "Fungsi $f(x) = \\frac{2x + 1}{x - 3}$ punya asimtot datar $y = \\frac{2}{1}$, maka **range $R_f = \\{y \\in \\mathbb{R} \\mid y \\neq 2\\}$**.",
+              "jebakan_atau_catatan": "Trik cepat: range $f(x)$ sama persis dengan domain inversnya $f^{-1}(x)$. Cukup cari syarat penyebut inversnya.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "3. Evaluasi Fungsi Piecewise & Fungsi Implisit",
-          "ringkasan_kelompok": "Menghitung nilai fungsi bersyarat cabang dan persamaan fungsi dengan argumen majemuk.",
+          "ringkasan_kelompok": "Menghitung nilai fungsi bercabang (bersyarat) dan fungsi yang argumennya bukan sekadar $x$.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Evaluasi Fungsi Sepotong-Sepotong (Piecewise Function)",
-              "penjelasan_singkat": "Pilih satu cabang rumus yang syarat intervalnya dipenuhi oleh nilai input $x$ sebelum melakukan substitusi angka.",
-              "contoh_penerapan": "Jika $f(x) = x^2$ ($x < 1$) dan $f(x) = 2x+1$ ($x \\ge 1$), maka **$f(1) = 2(1)+1 = 3$**.",
-              "jebakan_atau_catatan": "Jangan mensubstitusi nilai $x$ ke semua cabang lalu menjumlahkannya; setiap input hanya masuk ke satu cabang.",
+              "judul_poin": "Evaluasi Fungsi Bercabang (Piecewise Function)",
+              "penjelasan_singkat": "Cocokkan nilai input $x$ dengan syarat interval yang berlaku, lalu masukkan ke satu cabang rumus yang sesuai saja.",
+              "contoh_penerapan": "Jika $f(x) = x^2$ ($x < 1$) dan $f(x) = 2x + 1$ ($x \\ge 1$), maka **$f(1) = 2(1) + 1 = 3$**.",
+              "jebakan_atau_catatan": "Jangan masukkan $x$ ke semua cabang lalu dijumlahkan. Satu nilai input hanya boleh masuk ke satu cabang.",
               "visual": null
             },
             {
               "judul_poin": "Evaluasi Fungsi Implisit $f(g(x)) = h(x)$",
-              "penjelasan_singkat": "Untuk mencari $f(k)$ dari $f(g(x)) = h(x)$, samakan argumen $g(x) = k$ untuk memperoleh nilai $x$ pengganti.",
-              "contoh_penerapan": "Diketahui $f(2x - 1) = 4x + 3$. Setarakan $2x - 1 = 5 \\implies x = 3$, maka **$f(5) = 4(3)+3 = 15$**.",
-              "jebakan_atau_catatan": "Jebakan umum: langsung mengganti variabel $x$ dengan $5$ sehingga keliru menghitung $4(5)+3 = 23$.",
+              "penjelasan_singkat": "Untuk mencari $f(k)$ dari $f(g(x)) = h(x)$, samakan isi kurung $g(x) = k$ terlebih dahulu agar dapat nilai $x$ penggantinya.",
+              "contoh_penerapan": "Diketahui $f(2x - 1) = 4x + 3$. Samakan $2x - 1 = 5 \\implies x = 3$, maka **$f(5) = 4(3) + 3 = 15$**.",
+              "jebakan_atau_catatan": "Jebakan umum: langsung mengganti $x$ dengan $5$ sehingga keliru menghitung $4(5) + 3 = 23$.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "4. Fungsi Satu-Satu, Genap, & Ganjil",
-          "ringkasan_kelompok": "Menguji syarat keberadaan invers serta mengidentifikasi pola simetri grafik fungsi.",
+          "ringkasan_kelompok": "Menguji syarat fungsi punya invers serta mengenali pola simetri grafik fungsi.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Fungsi Satu-Satu (Injektif) & Syarat Invers",
-              "penjelasan_singkat": "Fungsi punya invers jika setiap $y$ berasal dari tepat satu $x$; garis horizontal memotong grafik maksimal sekali.",
-              "contoh_penerapan": "Fungsi $f(x) = x^3$ adalah **satu-satu (punya invers)**, sedangkan $f(x) = x^2$ pada $\\mathbb{R}$ **tidak satu-satu** karena $f(-2)=f(2)$.",
-              "jebakan_atau_catatan": "Fungsi kuadrat tetap bisa punya invers jika domainnya dibatasi hanya pada satu sisi sumbu simetrinya.",
+              "penjelasan_singkat": "Fungsi punya invers jika setiap $y$ berasal dari tepat satu $x$. Pada grafik, garis horizontal maksimal memotong kurva sekali.",
+              "contoh_penerapan": "Fungsi $f(x) = x^3$ bersifat **satu-satu (punya invers)**, sedangkan $f(x) = x^2$ pada $\\mathbb{R}$ **tidak satu-satu** karena $f(-2) = f(2)$.",
+              "jebakan_atau_catatan": "Fungsi kuadrat tetap bisa punya invers asalkan domainnya dibatasi hanya di satu sisi sumbu simetri.",
               "visual": null
             },
             {
               "judul_poin": "Sifat Fungsi Genap ($f(-x) = f(x)$)",
-              "penjelasan_singkat": "Fungsi disebut genap jika $f(-x) = f(x)$ untuk setiap $x \\in D_f$; grafiknya selalu simetris terhadap sumbu-$Y$.",
-              "contoh_penerapan": "Uji $f(x) = x^4 - 3x^2 + 1$: substitusi $-x$ menghasilkan $f(-x) = (-x)^4 - 3(-x)^2 + 1 = f(x)$ (**fungsi genap**).",
-              "jebakan_atau_catatan": "Penjumlahan suku berpangkat genap dan konstanta selalu menghasilkan fungsi genap karena $c(-x)^0 = c$.",
+              "penjelasan_singkat": "Fungsi disebut genap jika $f(-x) = f(x)$ untuk setiap $x \\in D_f$. Grafiknya selalu simetris terhadap sumbu-$Y$.",
+              "contoh_penerapan": "Uji $f(x) = x^4 - 3x^2 + 1$: ganti $x$ dengan $-x$, hasil $f(-x) = (-x)^4 - 3(-x)^2 + 1 = f(x)$ (**fungsi genap**).",
+              "jebakan_atau_catatan": "Penjumlahan suku berpangkat genap dan konstanta selalu menghasilkan fungsi genap karena konstanta setara $c \\cdot x^0$.",
               "visual": null
             },
             {
               "judul_poin": "Sifat Fungsi Ganjil ($f(-x) = -f(x)$)",
-              "penjelasan_singkat": "Fungsi disebut ganjil jika $f(-x) = -f(x)$ untuk setiap $x \\in D_f$; grafiknya simetris putar terhadap titik asal $(0,0)$.",
-              "contoh_penerapan": "Uji $f(x) = x^3 - 5x$: substitusi $-x$ menghasilkan $f(-x) = -x^3 + 5x = -(x^3 - 5x) = -f(x)$ (**fungsi ganjil**).",
-              "jebakan_atau_catatan": "Penambahan konstanta tak nol seperti $f(x) = x^3 + 2$ merusak sifat ganjil menjadi bukan genap maupun ganjil.",
+              "penjelasan_singkat": "Fungsi disebut ganjil jika $f(-x) = -f(x)$ untuk setiap $x \\in D_f$. Grafiknya simetris putar terhadap titik asal $(0,0)$.",
+              "contoh_penerapan": "Uji $f(x) = x^3 - 5x$: hasil $f(-x) = -x^3 + 5x = -(x^3 - 5x) = -f(x)$ (**fungsi ganjil**).",
+              "jebakan_atau_catatan": "Menambah konstanta tak nol seperti $f(x) = x^3 + 2$ langsung merusak sifat ganjil (jadi bukan genap maupun ganjil).",
               "visual": null
             }
           ]
@@ -155,8 +155,8 @@
       "nama_variasi": "Syarat Domain Alami Fungsi Akar dan Fungsi Pecahan",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Tentukan daerah asal alami (domain) dari fungsi $f(x) = \\frac{\\sqrt{x + 3}}{x^2 - 4}$.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nAgar $f(x)$ bernilai real, dua syarat harus terpenuhi secara bersamaan (irisan): pembilang dalam akar tidak boleh negatif ($x + 3 \\ge 0 \\implies x \\ge -3$) dan penyebut pecahan tidak boleh nol ($x^2 - 4 \\neq 0 \\implies x \\neq 2$ dan $x \\neq -2$). Dengan mengiriskan kedua syarat tersebut pada garis bilangan, diperoleh domain alami $D_f = \\{x \\in \\mathbb{R} \\mid x \\ge -3, x \\neq -2, x \\neq 2\\}$.\n\n**(2) Jalur Taktis UTBK**\nGunakan metode eliminasi opsi dengan uji titik ekstrem dan pembuat nol penyebut dalam kurang dari 30 detik. Cek pembuat nol penyebut terlebih dahulu: substitusi $x = 2$ dan $x = -2$ menghasilkan penyebut nol, sehingga opsi yang memuat kedua angka ini langsung gugur. Selanjutnya uji batas akar dengan memasukkan $x = -4$ (menghasilkan $\\sqrt{-1}$, tidak real), maka opsi yang mencakup $x < -3$ otomatis salah.",
-      "kunci_pembeda": "Jika akar genap berada di posisi penyebut ($\\frac{1}{\\sqrt{g(x)}}$), syaratnya berubah ketat menjadi $g(x) > 0$ tanpa tanda sama dengan.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nAgar $f(x)$ bernilai real, dua syarat harus terpenuhi sekaligus (cari irisannya). Pertama, angka di dalam akar tidak boleh negatif: $x + 3 \\ge 0 \\implies x \\ge -3$. Kedua, penyebut pecahan tidak boleh nol: $x^2 - 4 \\neq 0 \\implies x \\neq -2$ dan $x \\neq 2$. Karena $-2$ dan $2$ berada di daerah $x \\ge -3$, keduanya wajib dibuang. Jadi, domain alaminya adalah $D_f = \\{x \\in \\mathbb{R} \\mid x \\ge -3, x \\neq -2, x \\neq 2\\}$.\n\n**(2) Jalur Taktis UTBK**\nEliminasi opsi dalam kurang dari 30 detik dengan menguji angka kunci. Pertama, cek pembuat nol penyebut ($x = 2$ dan $x = -2$): opsi yang masih memasukkan salah satu angka ini langsung coret. Kedua, uji batas akar dengan memasukkan $x = -4$ (muncul $\\sqrt{-1}$, tidak real), maka opsi yang mencakup $x < -3$ otomatis gugur.",
+      "kunci_pembeda": "Jika akar genap pindah ke penyebut ($\\frac{1}{\\sqrt{g(x)}}$), syaratnya berubah ketat menjadi $g(x) > 0$ tanpa tanda sama dengan.",
       "visual": null
     },
     {
@@ -164,8 +164,8 @@
       "nama_variasi": "Penentuan Daerah Hasil (Range) Fungsi Kuadrat dan Fungsi Rasional pada Domain Terbatas",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Diketahui fungsi kuadrat $f(x) = x^2 - 4x + 7$ dengan daerah asal $D_f = \\{x \\mid 0 \\le x \\le 5\\}$. Tentukan daerah hasil ($R_f$) fungsi tersebut.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUntuk fungsi kuadrat $f(x) = ax^2 + bx + c$ pada interval tertutup $[p, q]$, tentukan absis titik puncak $x_p = -\\frac{b}{2a} = -\\frac{-4}{2(1)} = 2$. Karena $x_p = 2$ berada di dalam interval $[0, 5]$ dan koefisien $a = 1 > 0$ (parabola terbuka ke atas), nilai minimum absolut terjadi di puncak: $y_{\\min} = f(2) = 2^2 - 4(2) + 7 = 3$. Nilai maksimum diperoleh dari salah satu ujung interval: $f(0) = 7$ dan $f(5) = 12$. Jadi, $R_f = \\{y \\mid 3 \\le y \\le 12\\}$.\n\n**(2) Jalur Taktis UTBK**\nJangan langsung memasukkan ujung interval $x = 0$ dan $x = 5$! Cek posisi $x_p = -\\frac{b}{2a}$ terlebih dahulu. Jika $x_p$ masuk dalam domain, nilai $f(x_p)$ wajib menjadi salah satu batas range. Bandingkan jarak ujung interval ke $x_p$: karena $5$ lebih jauh dari $2$ dibanding $0$, $f(5)$ pasti menjadi batas maksimum tanpa perlu menghitung $f(0)$.",
-      "kunci_pembeda": "Untuk fungsi rasional linear $f(x) = \\frac{ax + b}{cx + d}$ pada domain terbatas yang tidak memuat asimtot tegak, fungsi bersifat monoton sehingga range cukup dicari dengan mensubstitusi kedua ujung domain.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUntuk fungsi kuadrat pada interval tertutup $[0, 5]$, langkah pertama wajib mencari posisi puncak $x_p = -\\frac{b}{2a} = -\\frac{-4}{2(1)} = 2$. Karena $x_p = 2$ masuk di dalam interval $[0, 5]$ dan $a = 1 > 0$ (kurva terbuka ke atas), nilai minimumnya jatuh di puncak: $y_{\\min} = f(2) = 2^2 - 4(2) + 7 = 3$. Untuk nilai maksimum, cek kedua ujung interval: $f(0) = 7$ dan $f(5) = 25 - 20 + 7 = 12$. Jadi, rangenya $R_f = \\{y \\mid 3 \\le y \\le 12\\}$.\n\n**(2) Jalur Taktis UTBK**\nJangan langsung memasukkan ujung $x = 0$ dan $x = 5$ sebelum mengecek $x_p = 2$. Begitu tahu $x_p = 2$ ada di dalam $[0, 5]$, langsung hitung $f(2) = 3$ sebagai batas bawah. Untuk batas atas, bandingkan jarak ujung ke puncak: $5$ lebih jauh dari $2$ dibanding $0$, jadi $f(5) = 12$ pasti lebih besar tanpa perlu menghitung $f(0)$.",
+      "kunci_pembeda": "Pada fungsi rasional linear $f(x) = \\frac{ax + b}{cx + d}$ yang domain terbatasnya tidak memuat asimtot tegak, fungsi bersifat monoton sehingga range cukup dicari dari kedua ujung domain.",
       "visual": {
         "tipe": "svg",
         "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='200' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Range f(x) = x^2 - 4x + 7 pada 0 &lt;= x &lt;= 5</text><line x1='35.0' y1='25' x2='35.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='83.6' y1='25' x2='83.6' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='132.1' y1='25' x2='132.1' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='180.7' y1='25' x2='180.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='229.3' y1='25' x2='229.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='277.9' y1='25' x2='277.9' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='326.4' y1='25' x2='326.4' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='375.0' y1='25' x2='375.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='210.0' x2='375' y2='210.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='183.6' x2='375' y2='183.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='157.1' x2='375' y2='157.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='130.7' x2='375' y2='130.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='104.3' x2='375' y2='104.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='77.9' x2='375' y2='77.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='51.4' x2='375' y2='51.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='375' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='210.0' x2='387' y2='210.0' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='393' y='214.0' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='83.6' y1='218' x2='83.6' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='75.57142857142857' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='224.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='132.1' y='224.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='180.7' y='224.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='229.3' y='224.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='277.9' y='224.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='326.4' y='224.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='375.0' y='224.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='78.6' y='186.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='78.6' y='160.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='78.6' y='133.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='78.6' y='107.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>8</text><text x='78.6' y='80.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>10</text><text x='78.6' y='54.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>12</text><text x='78.6' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>14</text><polyline points='35.0,51.4 39.2,58.3 43.5,64.9 47.8,71.3 52.0,77.6 56.2,83.6 60.5,89.4 64.8,95.0 69.0,100.5 73.2,105.7 77.5,110.7 81.8,115.5 86.0,120.1 90.2,124.5 94.5,128.7 98.8,132.7 103.0,136.5 107.2,140.1 111.5,143.5 115.8,146.7 120.0,149.7 124.2,152.5 128.5,155.1 132.8,157.5 137.0,159.7 141.2,161.6 145.5,163.4 149.8,165.0 154.0,166.4 158.2,167.5 162.5,168.5 166.8,169.3 171.0,169.8 175.2,170.2 179.5,170.3 183.8,170.3 188.0,170.1 192.2,169.6 196.5,169.0 200.7,168.1 205.0,167.1 209.2,165.8 213.5,164.3 217.8,162.7 222.0,160.8 226.2,158.7 230.5,156.5 234.8,154.0 239.0,151.3 243.2,148.5 247.5,145.4 251.7,142.1 256.0,138.6 260.2,134.9 264.5,131.0 268.8,126.9 273.0,122.7 277.2,118.2 281.5,113.5 285.8,108.6 290.0,103.5 294.2,98.2 298.5,92.6 302.7,86.9 307.0,81.0 311.2,74.9 315.5,68.6 319.8,62.1 324.0,55.4 328.2,48.4 332.5,41.3 336.8,34.0 341.0,26.5 345.2,18.7 349.5,10.8 353.8,2.6 358.0,-5.7 362.2,-14.2 366.5,-23.0 370.8,-31.9 375.0,-41.1' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='180.7' cy='170.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='188.7' y='174.4' fill='#FBBF24' font-family='sans-serif' font-size='10' font-weight='bold'>P(2, 3)</text><line x1='180.7' y1='210.0' x2='180.7' y2='25.0' stroke='#94A3B8' stroke-dasharray='4 4' stroke-width='1.2'/><circle cx='83.6' cy='117.5' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='89.6' y='111.5' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>f(0) = 7</text><circle cx='180.7' cy='170.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='186.7' y='164.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>P(2, 3) [y_min]</text><circle cx='326.4' cy='51.4' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='332.4' y='45.4' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>f(5) = 12 [y_max]</text></svg>",
@@ -177,8 +177,8 @@
       "nama_variasi": "Evaluasi Nilai Fungsi Sepotong-Sepotong (Piecewise Function) dan Fungsi Implisit",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Diketahui $f(2x - 1) = x^2 + 3x - 2$ untuk $x \\le 2$, dan $f(2x - 1) = 4x - 1$ untuk $x > 2$. Tentukan nilai $f(3) + f(5)$.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nPada fungsi implisit berbentuk $f(g(x)) = h(x)$, samakan ekspresi di dalam kurung dengan nilai input yang diminta untuk menemukan nilai variabel $x$ yang bersesuaian. Untuk mencari $f(3)$, selesaikan $2x - 1 = 3 \\implies 2x = 4 \\implies x = 2$. Karena $x = 2$ memenuhi syarat cabang pertama ($x \\le 2$), gunakan rumus pertama: $f(3) = 2^2 + 3(2) - 2 = 8$. Untuk mencari $f(5)$, selesaikan $2x - 1 = 5 \\implies x = 3$. Karena $x = 3 > 2$, gunakan rumus kedua: $f(5) = 4(3) - 1 = 11$. Maka $f(3) + f(5) = 19$.\n\n**(2) Jalur Taktis UTBK**\nHindari mencari rumus eksplisit $f(x)$ dengan invers karena membuang waktu dan rawan salah tanda. Langsung cari nilai $x$ pemicu untuk masing-masing target input, lalu cocokan nilai $x$ tersebut (bukan nilai inputnya) ke syarat pertidaksamaan cabang fungsi.",
-      "kunci_pembeda": "Syarat pertidaksamaan pada fungsi sepotong-sepotong mengikat variabel parameter $x$ pada definisi fungsi, bukan nilai akhir di dalam kurung $f(\\dots)$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nJangan langsung memasukkan $3$ dan $5$ ke variabel $x$. Samakan dulu isi kurung $2x - 1$ dengan angka yang diminta. Untuk mencari $f(3)$, hitung $2x - 1 = 3 \\implies 2x = 4 \\implies x = 2$. Karena $x = 2$ masuk syarat cabang pertama ($x \\le 2$), pakai rumus pertama: $f(3) = 2^2 + 3(2) - 2 = 8$. Untuk mencari $f(5)$, hitung $2x - 1 = 5 \\implies x = 3$. Karena $x = 3 > 2$, pakai rumus kedua: $f(5) = 4(3) - 1 = 11$. Hasil akhirnya $f(3) + f(5) = 8 + 11 = 19$.\n\n**(2) Jalur Taktis UTBK**\nHindari mencari rumus eksplisit $f(x)$ pakai invers karena membuang waktu dan rawan salah tanda. Langsung cari nilai $x$ pemicu untuk masing-masing target, lalu cocokkan nilai $x$ itu ke syarat cabang fungsinya.",
+      "kunci_pembeda": "Cek syarat pertidaksamaan cabang menggunakan nilai $x$ yang kamu peroleh, bukan angka target di dalam kurung $f(\\dots)$.",
       "visual": null
     },
     {
@@ -186,12 +186,12 @@
       "nama_variasi": "Sifat Fungsi Satu-Satu (Syarat Punya Invers), Fungsi Genap, dan Fungsi Ganjil dari Grafik atau Rumus",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Diberikan empat fungsi: (1) $f(x) = x^3 + 2x$, (2) $g(x) = x^4 - 3x^2$, (3) $h(x) = x^2 + 1$ untuk $x \\ge 0$, dan (4) $k(x) = |x|$. Manakah fungsi yang memiliki invers pada domainnya?",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nSuatu fungsi memiliki invers jika dan hanya jika bersifat satu-satu (bijektif pada rangenya), artinya setiap nilai $y$ berasal dari tepat satu nilai $x$ (lolos uji garis horizontal). Fungsi $f(x) = x^3 + 2x$ selalu naik karena turunannya $f'(x) = 3x^2 + 2 > 0$, sehingga satu-satu. Fungsi $g(x) = x^4 - 3x^2$ dan $k(x) = |x|$ adalah fungsi genap ($f(-x) = f(x)$) yang simetris terhadap sumbu-$y$, sehingga dua input berlawanan tanda menghasilkan output sama (bukan satu-satu). Namun, $h(x) = x^2 + 1$ dibatasi pada $x \\ge 0$ sehingga monoton naik dan memiliki invers.\n\n**(2) Jalur Taktis UTBK**\nSetiap fungsi genap pada domain simetris $(-a, a)$ pasti tidak memiliki invers karena $f(-c) = f(c)$. Uji cepat ke-satu-satuan cukup dengan memasukkan dua bilangan berlawanan seperti $x = 1$ dan $x = -1$: jika hasilnya sama, fungsi langsung gugur.",
-      "kunci_pembeda": "Fungsi genap simetris terhadap sumbu-$y$ dan tidak pernah satu-satu pada domain simetris, sedangkan fungsi ganjil simetris terhadap titik asal $(0,0)$ dan sering kali satu-satu.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nFungsi punya invers jika bersifat satu-satu (lolos uji garis horizontal). Cek satu per satu: fungsi (1) $f(x) = x^3 + 2x$ selalu naik karena turunannya $f'(x) = 3x^2 + 2 > 0$, jadi **satu-satu**. Fungsi (2) $g(x) = x^4 - 3x^2$ dan (4) $k(x) = |x|$ adalah fungsi genap yang simetris terhadap sumbu-$Y$, sehingga dua input berlawanan tanda menghasilkan output sama (gagal). Sementara fungsi (3) $h(x) = x^2 + 1$ sudah dibatasi pada $x \\ge 0$ sehingga selalu naik dan **satu-satu**. Jadi, fungsi yang punya invers adalah **(1) dan (3)**.\n\n**(2) Jalur Taktis UTBK**\nFungsi genap pada domain simetris pasti tidak punya invers karena $f(-c) = f(c)$. Uji cepat cukup dengan memasukkan $x = 1$ dan $x = -1$: pada (2) hasilnya sama-sama $-2$ dan pada (4) sama-sama $1$, jadi keduanya langsung gugur.",
+      "kunci_pembeda": "Fungsi genap pada domain simetris tidak pernah satu-satu, sedangkan fungsi ganjil belum tentu satu-satu (contoh: $x^3 - x$), kecuali jika selalu naik atau selalu turun.",
       "visual": {
         "tipe": "svg",
-        "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='200' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Uji Garis Horizontal: Fungsi Genap vs Satu-Satu</text><line x1='35.0' y1='25' x2='35.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='91.7' y1='25' x2='91.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='148.3' y1='25' x2='148.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='205.0' y1='25' x2='205.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='261.7' y1='25' x2='261.7' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='318.3' y1='25' x2='318.3' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='375.0' y1='25' x2='375.0' y2='210' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='210.0' x2='375' y2='210.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='183.6' x2='375' y2='183.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='157.1' x2='375' y2='157.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='130.7' x2='375' y2='130.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='104.3' x2='375' y2='104.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='77.9' x2='375' y2='77.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='51.4' x2='375' y2='51.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='375' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='130.7' x2='387' y2='130.7' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='393' y='134.7' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='205.0' y1='218' x2='205.0' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='197.0' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='144.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-3</text><text x='91.7' y='144.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-2</text><text x='148.3' y='144.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='261.7' y='144.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='318.3' y='144.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='375.0' y='144.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='200.0' y='213.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-3</text><text x='200.0' y='186.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-2</text><text x='200.0' y='160.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='200.0' y='107.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='200.0' y='80.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='200.0' y='54.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='200.0' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><polygon points='35.0,51.4 205.0,130.7 375.0,51.4' fill='none' fill-opacity='0.25' stroke='#38BDF8' stroke-width='2' /><circle cx='35.0' cy='51.4' r='3' fill='#38BDF8'/><circle cx='205.0' cy='130.7' r='3' fill='#38BDF8'/><circle cx='375.0' cy='51.4' r='3' fill='#38BDF8'/><line x1='35.0' y1='104.3' x2='375.0' y2='104.3' stroke='#F87171' stroke-width='2' /><text x='318.3' y='98.3' fill='#F87171' font-family='sans-serif' font-size='11' font-weight='bold'>y = 1 (Uji Garis Horizontal)</text><circle cx='148.3' cy='104.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='154.3' y='98.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(-1, 1)</text><circle cx='261.7' cy='104.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='267.7' y='98.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(1, 1)</text><circle cx='205.0' cy='130.7' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='211.0' y='124.7' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>(0, 0)</text></svg>",
-        "caption": "Visualisasi uji garis horizontal pada fungsi genap k(x) = |x| dan g(x) = x^4 - 3x^2 yang memotong kurva di dua titik simetris (-1, 1) dan (1, 1)."
+        "kode": "<svg viewBox='0 0 420 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='arrow2' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M 0 1.5 L 8 5 L 0 8.5 z' fill='#64748B'/></marker></defs><text x='210' y='20' fill='#E2E8F0' font-family='system-ui, sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Uji Garis Horizontal pada Fungsi Genap (Gagal Uji Satu-Satu)</text><g transform='translate(20, 32)'><rect width='185' height='160' rx='8' fill='#0F172A' stroke='#334155' stroke-width='1'/><text x='92' y='20' fill='#38BDF8' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>k(x) = |x|</text><line x1='15' y1='115' x2='170' y2='115' stroke='#475569' stroke-width='1' marker-end='url(#arrow2)'/><line x1='92' y1='145' x2='92' y2='30' stroke='#475569' stroke-width='1' marker-end='url(#arrow2)'/><polyline points='30,53 92,115 154,53' fill='none' stroke='#38BDF8' stroke-width='2.2'/><line x1='20' y1='80' x2='165' y2='80' stroke='#F87171' stroke-width='1.5' stroke-dasharray='3 3'/><text x='165' y='76' fill='#F87171' font-family='sans-serif' font-size='9' text-anchor='end'>y = 1</text><circle cx='57' cy='80' r='3.5' fill='#FBBF24'/><text x='52' y='93' fill='#FBBF24' font-family='sans-serif' font-size='8.5' text-anchor='end'>(-1, 1)</text><circle cx='127' cy='80' r='3.5' fill='#FBBF24'/><text x='132' y='93' fill='#FBBF24' font-family='sans-serif' font-size='8.5' text-anchor='start'>(1, 1)</text><text x='92' y='142' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='middle'>2 titik potong ⇒ Bukan 1-ke-1</text></g><g transform='translate(215, 32)'><rect width='185' height='160' rx='8' fill='#0F172A' stroke='#334155' stroke-width='1'/><text x='92' y='20' fill='#A78BFA' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>g(x) = x⁴ - 3x²</text><line x1='15' y1='80' x2='170' y2='80' stroke='#475569' stroke-width='1' marker-end='url(#arrow2)'/><line x1='92' y1='145' x2='92' y2='30' stroke='#475569' stroke-width='1' marker-end='url(#arrow2)'/><path d='M 35 35 C 55 145, 75 140, 92 80 C 109 140, 129 145, 149 35' fill='none' stroke='#A78BFA' stroke-width='2.2'/><line x1='20' y1='120' x2='165' y2='120' stroke='#F87171' stroke-width='1.5' stroke-dasharray='3 3'/><text x='165' y='116' fill='#F87171' font-family='sans-serif' font-size='9' text-anchor='end'>y = -2</text><circle cx='67' cy='120' r='3.5' fill='#FBBF24'/><text x='62' y='133' fill='#FBBF24' font-family='sans-serif' font-size='8.5' text-anchor='end'>(-1, -2)</text><circle cx='117' cy='120' r='3.5' fill='#FBBF24'/><text x='122' y='133' fill='#FBBF24' font-family='sans-serif' font-size='8.5' text-anchor='start'>(1, -2)</text><text x='92' y='142' fill='#94A3B8' font-family='sans-serif' font-size='9' text-anchor='middle'>Simetris sumbu-Y ⇒ Invers tidak ada</text></g><text x='210' y='218' fill='#CBD5E1' font-family='sans-serif' font-size='9.5' text-anchor='middle'>• Kesimpulan: Semua fungsi genap pada domain simetris selalu memotong garis horizontal di ≥ 2 titik.</text></svg>",
+        "caption": "Visualisasi uji garis horizontal pada fungsi genap k(x) = |x| (memotong di (-1, 1) dan (1, 1)) serta g(x) = x^4 - 3x^2 (memotong di dua titik simetris pada nilai y yang sama)."
       }
     }
   ],
@@ -212,7 +212,7 @@
         "E. SEMUA pilihan benar."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Syarat domain $f$: $6 - 2x \\ge 0 \\implies x \\le 3$ **(1 Benar)**, sehingga $R_f = [0, \\infty)$ yang memuat $3$ saat $x = -1,5$ **(2 Benar)**. Pada $g(x)$, absis puncak $x_p = -\\frac{-4}{2} = 2$ berada dalam domain $[1, 4]$, sehingga nilai minimumnya $g(2) = 2^2 - 4(2) + 5 = 1$ **(3 Benar)**. Nilai maksimum di $g(4) = 5$, maka $R_g = [1, 5]$; pernyataan **(4) Salah** karena hanya memakai ujung interval $g(1) = 2$.",
+      "bedah_cepat_markdown": "Cek syarat domain $f$: $6 - 2x \\ge 0 \\implies x \\le 3$, jadi **(1) Benar**. Karena hasil akar kuadrat mulai dari $0$ ke atas, $R_f = [0, \\infty)$ pasti memuat $3$ (tepatnya saat $x = -1,5$), jadi **(2) Benar**. Untuk $g(x)$, puncak $x_p = -\\frac{-4}{2} = 2$ masuk di dalam $[1, 4]$, sehingga nilai minimumnya $g(2) = 2^2 - 4(2) + 5 = 1$, maka **(3) Benar**. Nilai maksimum ada di $g(4) = 5$, sehingga $R_g = [1, 5]$. Pernyataan **(4) Salah** karena hanya memakai ujung $g(1) = 2$ tanpa puncak. Jawaban benar adalah **A**.",
       "visual": {
         "tipe": "svg",
         "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><marker id='c-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker><marker id='trans-arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#FBBF24'/></marker></defs><text x='190' y='17' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Stimulus Fungsi g(x) = x^2 - 4x + 5</text><line x1='35.0' y1='25' x2='35.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='80.7' y1='25' x2='80.7' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='126.4' y1='25' x2='126.4' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='172.1' y1='25' x2='172.1' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='217.9' y1='25' x2='217.9' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='263.6' y1='25' x2='263.6' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='309.3' y1='25' x2='309.3' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='355.0' y1='25' x2='355.0' y2='200' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='200.0' x2='355' y2='200.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='180.6' x2='355' y2='180.6' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='161.1' x2='355' y2='161.1' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='141.7' x2='355' y2='141.7' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='122.2' x2='355' y2='122.2' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='102.8' x2='355' y2='102.8' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='83.3' x2='355' y2='83.3' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='63.9' x2='355' y2='63.9' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='44.4' x2='355' y2='44.4' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='35' y1='25.0' x2='355' y2='25.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><line x1='27' y1='180.6' x2='367' y2='180.6' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='373' y='184.6' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>x</text><line x1='80.7' y1='208' x2='80.7' y2='13' stroke='#94A3B8' stroke-width='1.5' marker-end='url(#c-arrow)'/><text x='72.71428571428571' y='11' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold'>y</text><text x='35.0' y='194.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>-1</text><text x='126.4' y='194.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>1</text><text x='172.1' y='194.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>2</text><text x='217.9' y='194.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>3</text><text x='263.6' y='194.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>4</text><text x='309.3' y='194.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>5</text><text x='355.0' y='194.6' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='middle'>6</text><text x='75.7' y='203.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>-1</text><text x='75.7' y='164.1' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>1</text><text x='75.7' y='144.7' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>2</text><text x='75.7' y='125.2' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>3</text><text x='75.7' y='105.8' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>4</text><text x='75.7' y='86.3' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>5</text><text x='75.7' y='66.9' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>6</text><text x='75.7' y='47.4' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>7</text><text x='75.7' y='28.0' fill='#94A3B8' font-family='sans-serif' font-size='10' text-anchor='end'>8</text><polyline points='35.0,-13.9 39.0,-3.8 43.0,5.9 47.0,15.4 51.0,24.6 55.0,33.4 59.0,42.0 63.0,50.3 67.0,58.2 71.0,65.9 75.0,73.3 79.0,80.4 83.0,87.2 87.0,93.7 91.0,99.8 95.0,105.7 99.0,111.3 103.0,116.6 107.0,121.6 111.0,126.3 115.0,130.7 119.0,134.8 123.0,138.6 127.0,142.1 131.0,145.4 135.0,148.3 139.0,150.9 143.0,153.2 147.0,155.2 151.0,157.0 155.0,158.4 159.0,159.5 163.0,160.3 167.0,160.9 171.0,161.1 175.0,161.0 179.0,160.7 183.0,160.0 187.0,159.1 191.0,157.8 195.0,156.2 199.0,154.4 203.0,152.3 207.0,149.8 211.0,147.1 215.0,144.0 219.0,140.7 223.0,137.0 227.0,133.1 231.0,128.9 235.0,124.3 239.0,119.5 243.0,114.4 247.0,109.0 251.0,103.3 255.0,97.2 259.0,90.9 263.0,84.3 267.0,77.4 271.0,70.2 275.0,62.7 279.0,54.9 283.0,46.8 287.0,38.4 291.0,29.7 295.0,20.7 299.0,11.4 303.0,1.8 307.0,-8.1 311.0,-18.3 315.0,-28.8 319.0,-39.6 323.0,-50.6 327.0,-62.0 331.0,-73.7 335.0,-85.7 339.0,-97.9 343.0,-110.5 347.0,-123.4 351.0,-136.5 355.0,-150.0' fill='none' stroke='#38BDF8' stroke-width='2.5'/><circle cx='126.4' cy='141.7' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='132.4' y='135.7' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x = 1</text><circle cx='263.6' cy='83.3' r='4' fill='#FBBF24' stroke='#0B1120' stroke-width='1.5'/><text x='269.6' y='77.3' fill='#E2E8F0' font-family='sans-serif' font-size='10' font-weight='bold'>x = 4</text></svg>",
@@ -234,7 +234,7 @@
         "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "Fungsi $f$ ganjil jika $f(-x) = -f(x)$, yang berarti $-ax^3 + bx^2 - cx = -ax^3 - bx^2 - cx \\iff b = 0$. Dari **(1)**, diketahui langsung $b = 0$ sehingga $f$ pasti fungsi ganjil (cukup). Dari **(2)**, $f(2) + f(-2) = (8a + 4b + 2c) + (-8a + 4b - 2c) = 8b = 0$, yang juga memaksa $b = 0$ sehingga $f$ pasti ganjil (cukup). Masing-masing pernyataan saja cukup.",
+      "bedah_cepat_markdown": "Syarat fungsi ganjil adalah $f(-x) = -f(x)$ untuk semua $x \\in \\mathbb{R}$. Bandingkan kedua ruas: $-ax^3 + bx^2 - cx = -ax^3 - bx^2 - cx \\iff 2bx^2 = 0$, yang hanya mungkin jika $b = 0$. Dari **(1)**, langsung diketahui $b = 0$, sehingga $f$ pasti ganjil (cukup). Dari **(2)**, $f(2) + f(-2) = (8a + 4b + 2c) + (-8a + 4b - 2c) = 8b = 0$, yang juga memaksa $b = 0$ sehingga $f$ pasti ganjil (cukup). Jadi, masing-masing pernyataan saja cukup (**D**).",
       "visual": null
     },
     {
@@ -247,7 +247,7 @@
       "pertanyaan_markdown": "Diketahui fungsi $f$ didefinisikan sebagai $f(x - 2) = x^2 - 6x + 14$ untuk $x \\le 4$, dan $f(x - 2) = 3x - 5$ untuk $x > 4$. Jika $m$ adalah nilai minimum dari $f(x - 2)$ pada interval $1 \\le x \\le 4$, tentukan nilai dari $m + f(3)$.",
       "opsi_jawaban": [],
       "kunci_jawaban": "15",
-      "bedah_cepat_markdown": "Pada interval $1 \\le x \\le 4$, berlaku cabang pertama $x^2 - 6x + 14$. Absis titik puncak $x_p = -\\frac{-6}{2} = 3$ berada dalam interval tersebut, sehingga nilai minimum $m = 3^2 - 6(3) + 14 = 5$. Untuk mencari $f(3)$, samakan $x - 2 = 3 \\implies x = 5$. Karena $x = 5 > 4$, gunakan cabang kedua sehingga $f(3) = 3(5) - 5 = 10$. Jadi, $m + f(3) = 5 + 10 = 15$.",
+      "bedah_cepat_markdown": "Pada interval $1 \\le x \\le 4$, seluruh nilai $x$ memenuhi cabang pertama $x^2 - 6x + 14$. Cari posisi puncaknya: $x_p = -\\frac{-6}{2} = 3$. Karena $x_p = 3$ berada di dalam $[1, 4]$ dan koefisien $x^2$ positif, nilai minimumnya $m = 3^2 - 6(3) + 14 = 5$. Berikutnya, untuk mencari $f(3)$, samakan $x - 2 = 3 \\implies x = 5$. Karena $x = 5 > 4$, gunakan cabang kedua: $f(3) = 3(5) - 5 = 10$. Jadi, $m + f(3) = 5 + 10 = 15$.",
       "visual": null
     }
   ]

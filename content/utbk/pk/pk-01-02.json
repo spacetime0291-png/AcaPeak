@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Jika diketahui $x^2 = 9$, apakah nilai dari $\\sqrt{x^2}$ selalu sama dengan $x$? Banyak peserta UTBK langsung menjawab Ya tanpa memeriksa tanda bilangan.",
+      "pertanyaan_pemantik": "Jika diketahui $x^2 = 9$, apakah hasil $\\sqrt{x^2}$ selalu sama dengan $x$? Hati-hati, banyak peserta UTBK langsung menjawab Ya tanpa mengecek tanda bilangannya.",
       "opsi_cepat": [
         "Ya, selalu sama dengan x",
         "Tidak, hasilnya adalah |x|"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Secara definisi, akar kuadrat utama ($\\sqrt{a}$) selalu bernilai tak negatif, sehingga $\\sqrt{(-3)^2} = \\sqrt{9} = 3 = |-3|$. Mengabaikan nilai mutlak ini adalah jebakan paling klasik di PK UTBK."
+      "penjelasan_kilat": "Hasil akar kuadrat ($\\sqrt{a}$) tidak pernah negatif. Jadi saat $x = -3$, nilai $\\sqrt{(-3)^2} = \\sqrt{9} = 3 = |-3|$. Lupa memasang tanda mutlak adalah jebakan paling klasik di PK UTBK."
     },
-    "konsep_inti_markdown": "- **Sifat Eksponen:** $a^m \\cdot a^n = a^{m+n}$, $\\frac{a^m}{a^n} = a^{m-n}$, $(a^m)^n = a^{mn}$, $a^{-n} = \\frac{1}{a^n}$, dan $a^0 = 1$ ($a \\neq 0$).\n- **Sifat Akar:** $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$ serta $\\sqrt{x^2} = |x|$.\n- **Akar Bersusun:** $\\sqrt{(a+b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b}$ dengan syarat $a > b > 0$.\n- **Strategi PK:** Samakan basis pangkat, faktorkan pangkat terkecil pada penjumlahan, dan gunakan pemisalan variabel untuk persamaan eksponen kuadrat.",
+    "konsep_inti_markdown": "- **Sifat Eksponen:** $a^m \\cdot a^n = a^{m+n}$, $\\frac{a^m}{a^n} = a^{m-n}$, $(a^m)^n = a^{mn}$, $a^{-n} = \\frac{1}{a^n}$, dan $a^0 = 1$ (untuk $a \\neq 0$).\n- **Sifat Akar:** $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$ dan selalu ingat $\\sqrt{x^2} = |x|$.\n- **Akar Bersusun:** $\\sqrt{(a+b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b}$ dengan syarat $a > b > 0$.\n- **Strategi PK:** Samakan basis atau pangkatnya, keluarkan pangkat terkecil saat bertemu penjumlahan, lalu pakai pemisalan variabel untuk bentuk kuadrat.",
     "radar_jebakan_utbk": [
-      "Menganggap $\\sqrt{x^2} = x$ untuk semua bilangan real, padahal seharusnya $\\sqrt{x^2} = |x|$ (bernilai positif saat $x < 0$).",
-      "Salah memfaktorkan penjumlahan pangkat seperti $2^{x+2} + 2^x$ menjadi $2^{2x+2}$, padahal seharusnya dikeluarkan pangkat terkecil: $2^x(2^2 + 1) = 5 \\cdot 2^x$."
+      "Langsung mencoret akar dan kuadrat sehingga menulis $\\sqrt{x^2} = x$. Padahal jika $x$ negatif, hasilnya wajib positif: $\\sqrt{x^2} = |x|$.",
+      "Menjumlahkan pangkat pada penjumlahan basis sama, misal mengubah $2^{x+2} + 2^x$ menjadi $2^{2x+2}$. Cara benarnya adalah mengeluarkan pangkat terkecil: $2^x(2^2 + 1) = 5 \\cdot 2^x$."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Sifat, Rumus, dan Pola Eksponen serta Bentuk Akar",
-      "subjudul_ringkas": "Panduan lengkap sifat aljabar pangkat, manipulasi bentuk akar, perbandingan eksponen besar, hingga persamaan eksponen kuadrat UTBK.",
+      "subjudul_ringkas": "Ringkasan aturan pangkat, trik bentuk akar, cara membandingkan pangkat raksasa, hingga persamaan eksponen kuadrat yang sering keluar di UTBK.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -36,91 +36,91 @@
       "kelompok": [
         {
           "nama_kelompok": "Sifat Dasar & Manipulasi Eksponen",
-          "ringkasan_kelompok": "Aturan operasi pangkat, pemfaktoran suku sejenis, dan perbandingan bilangan berpangkat besar.",
+          "ringkasan_kelompok": "Aturan hitung pangkat, teknik mengeluarkan faktor terkecil, dan cara cepat membandingkan pangkat besar.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Operasi Perkalian, Pembagian, dan Pangkat Berpangkat",
-              "penjelasan_singkat": "Untuk basis sama ($a \\neq 0$), berlaku $a^m \\cdot a^n = a^{m+n}$, $\\frac{a^m}{a^n} = a^{m-n}$, dan $(a^m)^n = a^{mn}$.",
-              "contoh_penerapan": "Sederhanakan $\\frac{(2^3)^4 \\cdot 2^{-2}}{2^5} = \\frac{2^{12} \\cdot 2^{-2}}{2^5} = 2^{12-2-5} =$ **$2^5 = 32$**.",
-              "jebakan_atau_catatan": "Jebakan: $(a^2)^3 = a^6$, bukan $a^5$. Pangkat luar dikalikan ke pangkat dalam, bukan dijumlahkan.",
+              "judul_poin": "Perkalian, Pembagian, dan Pangkat Berpangkat",
+              "penjelasan_singkat": "Saat basisnya sama ($a \\neq 0$), berlaku $a^m \\cdot a^n = a^{m+n}$, $\\frac{a^m}{a^n} = a^{m-n}$, dan $(a^m)^n = a^{mn}$.",
+              "contoh_penerapan": "Hitung $\\frac{(2^3)^4 \\cdot 2^{-2}}{2^5} = \\frac{2^{12} \\cdot 2^{-2}}{2^5} = 2^{12-2-5} =$ **$2^5 = 32$**.",
+              "jebakan_atau_catatan": "Hati-hati: $(a^2)^3 = a^6$, bukan $a^5$. Pangkat di luar kurung dikali dengan pangkat di dalam, bukan ditambah.",
               "visual": null
             },
             {
               "judul_poin": "Pangkat Nol, Pangkat Negatif, dan Pangkat Pecahan",
-              "penjelasan_singkat": "Definisi perluasan pangkat: $a^0 = 1$ ($a \\neq 0$), $a^{-n} = \\frac{1}{a^n}$, serta $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$.",
+              "penjelasan_singkat": "Aturan pangkat khusus: $a^0 = 1$ ($a \\neq 0$), $a^{-n} = \\frac{1}{a^n}$, dan $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$.",
               "contoh_penerapan": "Hitung $8^{-\\frac{2}{3}} = \\frac{1}{(\\sqrt[3]{8})^2} = \\frac{1}{2^2} =$ **$\\frac{1}{4}$**.",
-              "jebakan_atau_catatan": "Pangkat negatif mengubah posisi pembilang-penyebut menjadi pecahan positif, tidak mengubah tanda bilangan menjadi negatif.",
+              "jebakan_atau_catatan": "Pangkat negatif cuma membalik posisi ke bawah jadi pecahan. Tandanya tidak berubah jadi bilangan negatif.",
               "visual": null
             },
             {
-              "judul_poin": "Pemfaktoran Penjumlahan dan Pengurangan Eksponen Berbasis Sama",
-              "penjelasan_singkat": "Keluarkan faktor dengan pangkat terkecil untuk menyederhanakan penjumlahan atau pengurangan: $a^{x+k} \\pm a^x = a^x(a^k \\pm 1)$.",
-              "contoh_penerapan": "Jika $3^{x+2} - 3^x = 72$, faktorkan menjadi $3^x(3^2 - 1) = 72 \\rightarrow 8 \\cdot 3^x = 72 \\rightarrow$ **$3^x = 9 \\Rightarrow x = 2$**.",
-              "jebakan_atau_catatan": "Dilarang menjumlahkan eksponen pada penjumlahan ($2^x + 2^x \\neq 2^{2x}$); hasil benarnya adalah $2 \\cdot 2^x = 2^{x+1}$.",
+              "judul_poin": "Memfaktorkan Penjumlahan dan Pengurangan Eksponen",
+              "penjelasan_singkat": "Keluarkan suku dengan pangkat paling kecil untuk menyederhanakan: $a^{x+k} \\pm a^x = a^x(a^k \\pm 1)$.",
+              "contoh_penerapan": "Jika $3^{x+2} - 3^x = 72$, keluarkan $3^x$: $3^x(3^2 - 1) = 72 \\rightarrow 8 \\cdot 3^x = 72 \\rightarrow$ **$3^x = 9 \\Rightarrow x = 2$**.",
+              "jebakan_atau_catatan": "Jangan pernah menjumlahkan pangkat pada operasi tambah ($2^x + 2^x \\neq 2^{2x}$). Hasil benarnya adalah $2 \\cdot 2^x = 2^{x+1}$.",
               "visual": null
             },
             {
-              "judul_poin": "Perbandingan Nilai Bilangan Berpangkat Besar",
-              "penjelasan_singkat": "Samakan pangkat luar menggunakan FPB kedua eksponen: ubah $a^{mk}$ dan $b^{nk}$ menjadi $(a^m)^k$ dan $(b^n)^k$.",
-              "contoh_penerapan": "Bandingkan $2^{300}$ dan $3^{200}$: tulis ulang menjadi $(2^3)^{100} = 8^{100}$ dan $(3^2)^{100} = 9^{100}$, sehingga **$2^{300} < 3^{200}$**.",
-              "jebakan_atau_catatan": "Untuk basis pecahan positif ($0 < a < 1$), semakin besar pangkatnya maka nilainya justru semakin kecil.",
+              "judul_poin": "Membandingkan Bilangan Berpangkat Besar",
+              "penjelasan_singkat": "Samakan pangkat luarnya memakai FPB kedua eksponen: ubah $a^{mk}$ dan $b^{nk}$ menjadi $(a^m)^k$ dan $(b^n)^k$.",
+              "contoh_penerapan": "Bandingkan $2^{300}$ dan $3^{200}$: ubah jadi $(2^3)^{100} = 8^{100}$ dan $(3^2)^{100} = 9^{100}$, jelas **$2^{300} < 3^{200}$**.",
+              "jebakan_atau_catatan": "Khusus basis pecahan positif ($0 < a < 1$), makin besar pangkatnya justru makin kecil nilainya.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Bentuk Akar, Rasionalisasi, & Akar Bersusun",
-          "ringkasan_kelompok": "Sifat nilai mutlak akar, teknik merasionalkan penyebut, dan penyederhanaan akar bertingkat.",
+          "ringkasan_kelompok": "Aturan nilai mutlak akar, cara merasionalkan penyebut, dan penyederhanaan akar bertingkat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Identitas Nilai Mutlak pada Akar Kuadrat",
-              "penjelasan_singkat": "Akar kuadrat dari bilangan kuadrat selalu bernilai non-negatif: $\\sqrt{x^2} = |x|$, bernilai $x$ jika $x \\ge 0$.",
-              "contoh_penerapan": "Jika $x < 2$, maka $\\sqrt{(x - 2)^2} = |x - 2| =$ **$2 - x$**.",
-              "jebakan_atau_catatan": "Jebakan UTBK: $\\sqrt{(-5)^2} = 5$, bukan $-5$. Selalu pasang tanda mutlak sebelum membuka akar kuadrat variabel.",
+              "judul_poin": "Aturan Nilai Mutlak pada Akar Kuadrat",
+              "penjelasan_singkat": "Hasil akar kuadrat selalu tak negatif: $\\sqrt{x^2} = |x|$. Nilainya $x$ jika $x \\ge 0$, dan $-x$ jika $x < 0$.",
+              "contoh_penerapan": "Jika $x < 2$, maka $x - 2$ bernilai negatif, sehingga $\\sqrt{(x - 2)^2} = |x - 2| =$ **$2 - x$**.",
+              "jebakan_atau_catatan": "Jebakan klasik: $\\sqrt{(-5)^2} = 5$, bukan $-5$. Biasakan selalu menulis tanda mutlak saat membuka akar kuadrat variabel.",
               "visual": null
             },
             {
-              "judul_poin": "Merasionalkan Penyebut Bentuk Akar Sekawan",
-              "penjelasan_singkat": "Kalikan pembilang dan penyebut dengan akar sekawan: $\\frac{c}{\\sqrt{a} \\pm \\sqrt{b}} \\times \\frac{\\sqrt{a} \\mp \\sqrt{b}}{\\sqrt{a} \\mp \\sqrt{b}} = \\frac{c(\\sqrt{a} \\mp \\sqrt{b})}{a - b}$.",
+              "judul_poin": "Merasionalkan Penyebut dengan Akar Sekawan",
+              "penjelasan_singkat": "Kalikan atas dan bawah dengan akar sekawannya: $\\frac{c}{\\sqrt{a} \\pm \\sqrt{b}} \\times \\frac{\\sqrt{a} \\mp \\sqrt{b}}{\\sqrt{a} \\mp \\sqrt{b}} = \\frac{c(\\sqrt{a} \\mp \\sqrt{b})}{a - b}$.",
               "contoh_penerapan": "Rasionalkan $\\frac{6}{\\sqrt{5} - \\sqrt{2}} \\times \\frac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} + \\sqrt{2}} = \\frac{6(\\sqrt{5} + \\sqrt{2})}{5 - 2} =$ **$2(\\sqrt{5} + \\sqrt{2})$**.",
-              "jebakan_atau_catatan": "Pastikan tanda pada faktor sekawan berlawanan dari penyebut awal agar membentuk selisih kuadrat $(a - b)$.",
+              "jebakan_atau_catatan": "Pastikan tanda pada sekawan berlawanan dari penyebutnya supaya langsung jadi selisih kuadrat $(a - b)$.",
               "visual": null
             },
             {
-              "judul_poin": "Penyederhanaan Bentuk Akar Bersusun",
-              "penjelasan_singkat": "Bentuk $\\sqrt{(a+b) \\pm 2\\sqrt{ab}}$ disederhanakan menjadi $\\sqrt{a} \\pm \\sqrt{b}$ dengan syarat wajib $a > b > 0$.",
+              "judul_poin": "Menyederhanakan Bentuk Akar Bersusun",
+              "penjelasan_singkat": "Bentuk $\\sqrt{(a+b) \\pm 2\\sqrt{ab}}$ bisa langsung dipecah jadi $\\sqrt{a} \\pm \\sqrt{b}$ dengan syarat wajib $a > b > 0$.",
               "contoh_penerapan": "Sederhanakan $\\sqrt{8 - \\sqrt{60}} = \\sqrt{8 - 2\\sqrt{15}} = \\sqrt{(5+3) - 2\\sqrt{5 \\cdot 3}} =$ **$\\sqrt{5} - \\sqrt{3}$**.",
-              "jebakan_atau_catatan": "Wajib munculkan koefisien $2$ tepat di depan akar dalam sebelum mencari pasangan bilangan penjumlah dan pengali.",
+              "jebakan_atau_catatan": "Angka tepat di depan akar bagian dalam wajib bernilai $2$. Jika belum $2$, ubah dulu sebelum mencari pasangan angkanya.",
               "visual": null
             },
             {
-              "judul_poin": "Evaluasi Bentuk Akar Bersarang Tak Hingga",
-              "penjelasan_singkat": "Misalkan $x = \\sqrt{a + \\sqrt{a + \\dots}}$ ($a > 0$), kuadratkan kedua ruas menjadi $x^2 - x - a = 0$.",
-              "contoh_penerapan": "Untuk $x = \\sqrt{6 + \\sqrt{6 + \\dots}}$, didapat $x^2 = 6 + x \\rightarrow (x-3)(x+2) = 0$, ambil nilai positif **$x = 3$**.",
-              "jebakan_atau_catatan": "Trik cepat: jika $a = n(n+1)$, hasil akar tak hingga bertanda tambah adalah $n+1$, bertanda kurang adalah $n$.",
+              "judul_poin": "Menghitung Akar Bersarang Tak Hingga",
+              "penjelasan_singkat": "Misalkan $x = \\sqrt{a + \\sqrt{a + \\dots}}$ ($a > 0$), lalu kuadratkan kedua ruas hingga terbentuk $x^2 - x - a = 0$.",
+              "contoh_penerapan": "Untuk $x = \\sqrt{6 + \\sqrt{6 + \\dots}}$, didapat $x^2 = 6 + x \\rightarrow (x-3)(x+2) = 0$. Ambil yang positif: **$x = 3$**.",
+              "jebakan_atau_catatan": "Trik cepat: jika $a = n(n+1)$, tanda tambah ($+$) ambil faktor besar ($n+1$), tanda kurang ($-$) ambil faktor kecil ($n$).",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Persamaan Eksponen & Bentuk Kuadrat",
-          "ringkasan_kelompok": "Penyelesaian persamaan eksponen dasar hingga transformasi persamaan ke bentuk kuadrat.",
+          "ringkasan_kelompok": "Cara menyelesaikan persamaan eksponen dasar hingga yang harus diubah ke persamaan kuadrat.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Persamaan Eksponen Basis Sama dan Basis Berbeda",
-              "penjelasan_singkat": "Jika $a^{f(x)} = a^{g(x)}$ ($a > 0, a \\neq 1$), maka $f(x) = g(x)$. Jika $a^{f(x)} = b^{f(x)}$, maka $f(x) = 0$.",
-              "contoh_penerapan": "Selesaikan $5^{2x-6} = 7^{2x-6}$: karena basis berbeda dan pangkat sama, maka $2x - 6 = 0 \\rightarrow$ **$x = 3$**.",
-              "jebakan_atau_catatan": "Untuk basis mengandung variabel $h(x)^{f(x)} = h(x)^{g(x)}$, periksa pula kemungkinan $h(x) = 1$, $h(x) = 0$, dan $h(x) = -1$.",
+              "penjelasan_singkat": "Jika $a^{f(x)} = a^{g(x)}$ ($a > 0, a \\neq 1$), samakan pangkatnya: $f(x) = g(x)$. Jika $a^{f(x)} = b^{f(x)}$ ($a, b > 0, a \\neq b$), maka $f(x) = 0$.",
+              "contoh_penerapan": "Selesaikan $5^{2x-6} = 7^{2x-6}$. Karena basis beda tapi pangkat sama, pangkatnya pasti nol: $2x - 6 = 0 \\rightarrow$ **$x = 3$**.",
+              "jebakan_atau_catatan": "Jika basisnya mengandung variabel $h(x)^{f(x)} = h(x)^{g(x)}$, jangan lupa uji kasus khusus $h(x) = 1$, $h(x) = 0$, dan $h(x) = -1$.",
               "visual": null
             },
             {
-              "judul_poin": "Persamaan Eksponen yang Diubah ke Bentuk Kuadrat",
-              "penjelasan_singkat": "Gunakan pemisalan $y = a^x > 0$ untuk mengubah $p \\cdot a^{2x} + q \\cdot a^x + r = 0$ menjadi persamaan kuadrat.",
-              "contoh_penerapan": "Selesaikan $2^{2x} - 6 \\cdot 2^x + 8 = 0$: misal $y = 2^x$, didapat $(y-2)(y-4)=0 \\rightarrow y=2, 4$, maka **$x = 1$ atau $x = 2$**.",
-              "jebakan_atau_catatan": "Syarat mutlak: nilai $y = a^x$ selalu positif ($y > 0$); akar persamaan kuadrat yang negatif atau nol wajib ditolak.",
+              "judul_poin": "Persamaan Eksponen Bentuk Kuadrat",
+              "penjelasan_singkat": "Ubah $p \\cdot a^{2x} + q \\cdot a^x + r = 0$ jadi persamaan kuadrat dengan memisalkan $y = a^x$ (syarat wajib $y > 0$).",
+              "contoh_penerapan": "Selesaikan $2^{2x} - 6 \\cdot 2^x + 8 = 0$. Misal $y = 2^x$, didapat $(y-2)(y-4)=0 \\rightarrow y=2$ atau $4$, maka **$x = 1$ atau $x = 2$**.",
+              "jebakan_atau_catatan": "Ingat, nilai $y = a^x$ selalu positif ($y > 0$). Jika nanti ketemu akar $y$ yang negatif atau nol, langsung buang.",
               "visual": null
             }
           ]
@@ -131,11 +131,11 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Penyederhanaan dan Perbandingan Nilai Bilangan Berpangkat Besar",
+      "nama_variasi": "Membandingkan Nilai Bilangan Berpangkat Besar",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Urutkan bilangan $A = 2^{300}$, $B = 3^{200}$, dan $C = 5^{100}$ dari yang terkecil hingga yang terbesar.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nUntuk membandingkan bilangan berpangkat besar dengan basis dan eksponen berbeda, gunakan sifat $(a^m)^n = a^{mn}$ untuk menyamakan salah satu komponennya. Karena basis $2$, $3$, dan $5$ merupakan bilangan prima yang tidak dapat disamakan, samakan eksponennya memakai Faktor Persekutuan Terbesar (FPB) dari $300$, $200$, dan $100$, yakni $100$. Ubah masing-masing bentuk menjadi berpangkat $100$: $A = (2^3)^{100} = 8^{100}$, $B = (3^2)^{100} = 9^{100}$, serta $C = (5^1)^{100} = 5^{100}$. Setelah pangkatnya identik, urutan nilai bergantung langsung pada besar basis bilangan.\n\n**2. Jalur Taktis UTBK**\nLangsung bagi semua pangkat dengan FPB-nya ($100$) atau coret dua nol di belakang setiap eksponen. Tersisa perbandingan angka kecil yang mudah dihitung mental: $2^3 = 8$, $3^2 = 9$, dan $5^1 = 5$. Karena $5 < 8 < 9$, urutan dari yang terkecil pasti $C < A < B$. Trik ini menghemat waktu di bawah $15$ detik.",
-      "kunci_pembeda": "Gunakan FPB dari seluruh eksponen untuk mengecilkan pangkat menjadi angka satuan yang mudah dibandingkan secara langsung.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nKamu tentu tidak mungkin menghitung $2^{300}$ secara manual. Kuncinya adalah menyamakan basis atau pangkatnya memakai sifat $(a^m)^n = a^{mn}$. Karena basis $2$, $3$, dan $5$ adalah bilangan prima yang tidak bisa disamakan, kita samakan saja pangkat luarnya.\n\nCari FPB dari $300$, $200$, dan $100$, yaitu $100$. Ubah semua bilangan agar punya pangkat luar $100$: $A = (2^3)^{100} = 8^{100}$, $B = (3^2)^{100} = 9^{100}$, dan $C = (5^1)^{100} = 5^{100}$. Karena pangkatnya sudah kembar, tinggal bandingkan angka basisnya saja.\n\n**2. Jalur Taktis UTBK**\nLangsung coret dua angka nol di belakang tiap pangkat (alias bagi semua pangkat dengan $100$). Kamu tinggal menghitung angka kecil di luar kepala: $2^3 = 8$, $3^2 = 9$, dan $5^1 = 5$. Karena $5 < 8 < 9$, urutannya pasti $C < A < B$. Selesai dalam hitungan detik.",
+      "kunci_pembeda": "Bagi semua pangkat dengan FPB-nya supaya berubah jadi angka kecil yang bisa langsung kamu bandingkan.",
       "visual": null
     },
     {
@@ -143,35 +143,35 @@
       "nama_variasi": "Manipulasi Penjumlahan dan Pengurangan Eksponen Berbasis Sama",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Diketahui $3^{x+2} - 3^x = 72$. Tentukan nilai dari $2x + 1$.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nOperasi penjumlahan atau pengurangan pada eksponen tidak memiliki rumus penggabungan pangkat secara langsung. Langkah pertama adalah memecah pangkat penjumlahan menggunakan sifat $a^{m+n} = a^m \\cdot a^n$, sehingga $3^{x+2}$ ditulis sebagai $3^x \\cdot 3^2$. Selanjutnya, gunakan sifat distributif aljabar untuk memfaktorkan suku dengan pangkat terkecil ($3^x$): $3^x(3^2 - 1) = 72$. Sederhanakan operasi dalam kurung menjadi $3^x(9 - 1) = 72$, lalu $8 \\cdot 3^x = 72$. Bagi kedua ruas dengan $8$ untuk memperoleh $3^x = 9 = 3^2$, sehingga didapat $x = 2$ dan $2x + 1 = 5$.\n\n**2. Jalur Taktis UTBK**\nKeluarkan koefisien pangkat dari selisih eksponennya: selisih pangkat $x+2$ dan $x$ adalah $2$, maka faktor pengalinya langsung $(3^2 - 1) = 8$. Bagi konstanta ruas kanan dengan faktor tersebut ($72 : 8 = 9$), lalu tebak pangkat basis $3$ yang menghasilkan $9$, yakni $x = 2$.",
-      "kunci_pembeda": "Selalu faktorkan suku berpangkat terkecil menggunakan sifat distributif aljabar, jangan pernah menjumlahkan atau mengurangkan pangkatnya.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nJangan terjebak mengurangkan pangkatnya! Operasi tambah atau kurang pada eksponen tidak punya rumus penggabungan pangkat. Langkah aman yang harus kamu lakukan adalah memecah $3^{x+2}$ menjadi $3^x \\cdot 3^2$.\n\nSekarang kedua suku sama-sama punya $3^x$, jadi keluarkan pangkat terkecilnya: $3^x(3^2 - 1) = 72$. Hitung bagian dalam kurung menjadi $3^x(9 - 1) = 72$, lalu $8 \\cdot 3^x = 72$. Bagi kedua ruas dengan $8$ agar dapat $3^x = 9 = 3^2$. Ketemu $x = 2$, sehingga nilai $2x + 1 = 2(2) + 1 = 5$.\n\n**2. Jalur Taktis UTBK**\nLihat selisih pangkatnya: $(x+2)$ dan $x$ berselisih $2$, jadi pengali di depan $3^x$ langsung $(3^2 - 1) = 8$. Bagi angka kanan dengan pengali itu ($72 : 8 = 9$). Karena $3^2 = 9$, kamu langsung tahu $x = 2$ dan $2x + 1 = 5$.",
+      "kunci_pembeda": "Selalu keluarkan suku berpangkat paling kecil saat bertemu penjumlahan atau pengurangan eksponen.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Merasionalkan Penyebut Bentuk Akar dan Bentuk Akar Bersusun",
+      "nama_variasi": "Merasionalkan Penyebut dan Menyederhanakan Akar Bersusun",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Sederhanakan bentuk $\\frac{4}{\\sqrt{7 + 2\\sqrt{10}} - \\sqrt{2}}$ ke dalam bentuk paling sederhana.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPertama, sederhanakan bentuk akar bersusun $\\sqrt{7 + 2\\sqrt{10}}$ menggunakan identitas $\\sqrt{(a+b) + 2\\sqrt{ab}} = \\sqrt{a} + \\sqrt{b}$. Cari dua bilangan yang jumlahnya $7$ dan hasil kalinya $10$, yaitu $5$ dan $2$, sehingga $\\sqrt{7 + 2\\sqrt{10}} = \\sqrt{5} + \\sqrt{2}$. Substitusikan kembali ke penyebut pecahan awal: $(\\sqrt{5} + \\sqrt{2}) - \\sqrt{2} = \\sqrt{5}$. Setelah penyebut menjadi bentuk akar tunggal $\\frac{4}{\\sqrt{5}}$, rasionalkan penyebut dengan mengalikan pembilang dan penyebut menggunakan $\\frac{\\sqrt{5}}{\\sqrt{5}}$ sehingga diperoleh hasil akhir $\\frac{4}{5}\\sqrt{5}$.\n\n**2. Jalur Taktis UTBK**\nPastikan angka di depan akar dalam selalu bernilai $2$ sebelum mencari faktor jumlah dan kali. Cari dua faktor dari $10$ yang berjumlah $7$ ($5$ dan $2$), lalu langsung coret suku kembar $+\\sqrt{2}$ dan $-\\sqrt{2}$ di penyebut agar tidak perlu mengalikan akar sekawan.",
-      "kunci_pembeda": "Wajib munculkan koefisien $2$ tepat di depan akar bagian dalam sebelum mencari dua bilangan dengan pola jumlah dan kali.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nJangan buru-buru merasionalkan penyebut sebelum bentuk akar bersusunnya beres. Fokus dulu ke $\\sqrt{7 + 2\\sqrt{10}}$ dan pakai pola $\\sqrt{(a+b) + 2\\sqrt{ab}} = \\sqrt{a} + \\sqrt{b}$. Cari dua bilangan yang kalau ditambah hasilnya $7$ dan kalau dikali hasilnya $10$. Pasangannya adalah $5$ dan $2$, jadi $\\sqrt{7 + 2\\sqrt{10}} = \\sqrt{5} + \\sqrt{2}$.\n\nMasukkan kembali ke penyebut awal: $(\\sqrt{5} + \\sqrt{2}) - \\sqrt{2} = \\sqrt{5}$. Nah, bentuknya jadi jauh lebih ramah, tinggal $\\frac{4}{\\sqrt{5}}$. Terakhir, rasionalkan dengan mengalikan $\\frac{\\sqrt{5}}{\\sqrt{5}}$ sehingga hasilnya $\\frac{4}{5}\\sqrt{5}$.\n\n**2. Jalur Taktis UTBK**\nCek dulu angka di depan akar dalam—di sini sudah pas angka $2$. Langsung cari dua faktor dari $10$ yang berjumlah $7$ ($5$ dan $2$). Begitu ditulis $\\sqrt{5} + \\sqrt{2}$, langsung coret $+\\sqrt{2}$ dengan $-\\sqrt{2}$ di penyebut supaya kamu tidak perlu capek-capek mengalikan akar sekawan.",
+      "kunci_pembeda": "Pastikan koefisien di depan akar bagian dalam sudah bernilai $2$, lalu pecah jadi dua angka dengan pola jumlah dan kali.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Persamaan Eksponen yang Dapat Diubah ke Bentuk Kuadrat",
+      "nama_variasi": "Persamaan Eksponen yang Diubah ke Bentuk Kuadrat",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Jika $x_1$ dan $x_2$ adalah akar-akar persamaan $2^{2x+1} - 9 \\cdot 2^x + 4 = 0$, tentukan nilai $x_1 + x_2$.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nUbah suku pertama menggunakan sifat eksponen: $2^{2x+1} = 2^1 \\cdot (2^x)^2 = 2(2^x)^2$. Lakukan pemisalan variabel baru, misalnya $y = 2^x$ dengan syarat mutlak $y > 0$ karena bilangan pokok positif berpangkat real selalu positif. Persamaan berubah menjadi bentuk kuadrat $2y^2 - 9y + 4 = 0$. Faktorkan menjadi $(2y - 1)(y - 4) = 0$, sehingga diperoleh $y_1 = \\frac{1}{2}$ atau $y_2 = 4$. Kembalikan ke variabel asal: $2^{x_1} = 2^{-1} \\Rightarrow x_1 = -1$ dan $2^{x_2} = 2^2 \\Rightarrow x_2 = 2$, maka $x_1 + x_2 = 1$.\n\n**2. Jalur Taktis UTBK**\nUntuk mencari jumlah akar $x_1 + x_2$ tanpa memfaktorkan, gunakan rumus hasil kali akar kuadrat $y_1 \\cdot y_2 = \\frac{c}{a}$. Karena $y_1 \\cdot y_2 = 2^{x_1} \\cdot 2^{x_2} = 2^{x_1 + x_2}$, langsung hitung $2^{x_1 + x_2} = \\frac{4}{2} = 2^1$, sehingga $x_1 + x_2 = 1$.",
-      "kunci_pembeda": "Gunakan sifat $y_1 \\cdot y_2 = a^{x_1 + x_2} = \\frac{c}{a}$ untuk mencari jumlah akar secara instan tanpa memfaktorkan persamaan kuadrat.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPecah dulu suku pertama agar bentuk $2^x$ terlihat jelas: $2^{2x+1} = 2^1 \\cdot (2^x)^2 = 2(2^x)^2$. Sekarang buat pemisalan $y = 2^x$ dengan syarat wajib $y > 0$ (karena pangkat dari bilangan positif tidak mungkin negatif atau nol).\n\nPersamaannya berubah rapi menjadi $2y^2 - 9y + 4 = 0$. Faktorkan jadi $(2y - 1)(y - 4) = 0$, sehingga $y_1 = \\frac{1}{2}$ dan $y_2 = 4$ (keduanya positif, jadi aman). Kembalikan ke $2^x$: $2^{x_1} = 2^{-1} \\Rightarrow x_1 = -1$ dan $2^{x_2} = 2^2 \\Rightarrow x_2 = 2$. Jadi, $x_1 + x_2 = -1 + 2 = 1$.\n\n**2. Jalur Taktis UTBK**\nKalau soal cuma menanyakan $x_1 + x_2$, kamu tidak wajib memfaktorkan. Pakai rumus hasil kali akar $y_1 \\cdot y_2 = \\frac{c}{a}$ (pastikan dulu kedua akar $y$ real dan positif). Karena $y_1 \\cdot y_2 = 2^{x_1} \\cdot 2^{x_2} = 2^{x_1 + x_2}$, langsung tulis $2^{x_1 + x_2} = \\frac{4}{2} = 2^1$, otomatis $x_1 + x_2 = 1$.",
+      "kunci_pembeda": "Gunakan rumus $y_1 \\cdot y_2 = a^{x_1 + x_2} = \\frac{c}{a}$ untuk mencari $x_1 + x_2$ secara instan (syarat: kedua akar $y$ positif).",
       "visual": null
     },
     {
       "nomor_variasi": 5,
-      "nama_variasi": "Evaluasi Bentuk Akar Bersarang Tak Hingga Sederhana",
+      "nama_variasi": "Menghitung Bentuk Akar Bersarang Tak Hingga",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Tentukan nilai bilangan real positif $x$ yang memenuhi persamaan $x = \\sqrt{12 + \\sqrt{12 + \\sqrt{12 + \\dots}}}$.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nKarena pola akar bersarang berulang tanpa batas, bagian di dalam akar pertama setelah tanda tambah bernilai identik dengan keseluruhan bentuk awal, yaitu $x$. Substitusikan kembali sehingga diperoleh persamaan aljabar $x = \\sqrt{12 + x}$. Kuadratkan kedua ruas untuk menghilangkan tanda akar menjadi $x^2 = 12 + x$, lalu pindahkan seluruh suku ke ruas kiri menjadi persamaan kuadrat $x^2 - x - 12 = 0$. Faktorkan persamaan tersebut menjadi $(x - 4)(x + 3) = 0$, sehingga didapat $x = 4$ atau $x = -3$. Karena hasil akar kuadrat utama selalu tak negatif ($x \\ge 0$), nilai yang memenuhi adalah $x = 4$.\n\n**2. Jalur Taktis UTBK**\nPecah angka $12$ menjadi perkalian dua bilangan berurutan: $12 = 4 \\times 3$. Jika operasi di dalam akar adalah penjumlahan ($+$), ambil faktor yang lebih besar ($4$). Jika pengurangan ($-$), ambil faktor yang lebih kecil ($3$).",
-      "kunci_pembeda": "Faktorkan bilangan di dalam akar menjadi perkalian dua bilangan bulat berurutan, lalu pilih faktor terbesar untuk operasi tambah.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nKarena akar ini berulang terus tanpa ujung, seluruh bagian di belakang tanda tambah pertama sebenarnya sama persis dengan $x$ itu sendiri. Jadi kita bisa meringkasnya menjadi persamaan sederhana: $x = \\sqrt{12 + x}$.\n\nKuadratkan kedua ruas untuk membuang akar menjadi $x^2 = 12 + x$, lalu kumpulkan di ruas kiri: $x^2 - x - 12 = 0$. Faktorkan jadi $(x - 4)(x + 3) = 0$, sehingga $x = 4$ atau $x = -3$. Karena hasil akar kuadrat tidak pernah negatif, jawaban yang sah adalah $x = 4$.\n\n**2. Jalur Taktis UTBK**\nPecah angka $12$ menjadi perkalian dua angka berurutan: $12 = 4 \\times 3$. Kalau tandanya tambah ($+$), langsung ambil angka yang lebih besar ($4$). Kalau tandanya kurang ($-$), ambil angka yang lebih kecil ($3$).",
+      "kunci_pembeda": "Pecah angka di dalam akar jadi perkalian dua bilangan bulat berurutan, lalu pilih faktor terbesar untuk operasi tambah.",
       "visual": null
     }
   ],
@@ -191,7 +191,7 @@
         "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Faktorkan suku pangkat terkecil pada persamaan: $4^x(4^1 - 1) = 192 \\Rightarrow 3 \\cdot 4^x = 192 \\Rightarrow 4^x = 64 = 4^3$, sehingga $x = 3$. Substitusikan ke kuantitas $P$ menjadi $P = 3^{200}$. Samakan eksponen menggunakan FPB($200, 300$) $= 100$: $P = (3^2)^{100} = 9^{100}$ dan $Q = (2^3)^{100} = 8^{100}$. Karena $9^{100} > 8^{100}$, maka $P > Q$ (Opsi A). Opsi B dan C salah karena keliru membandingkan basis $3$ dan $2$ tanpa menyamakan pangkat; opsi D salah karena nilai $x$ tunggal dan pasti.",
+      "bedah_cepat_markdown": "Mulai dengan mencari nilai $x$ lewat pemfaktoran pangkat terkecil: $4^x(4^1 - 1) = 192 \\Rightarrow 3 \\cdot 4^x = 192$. Bagi kedua ruas dengan $3$, didapat $4^x = 64 = 4^3$, sehingga $x = 3$.\n\nMasukkan $x = 3$ ke kuantitas $P$ sehingga kita membandingkan $P = 3^{200}$ dan $Q = 2^{300}$. Coret dua nol di belakang pangkat (bagi dengan FPB $= 100$): $P = (3^2)^{100} = 9^{100}$ dan $Q = (2^3)^{100} = 8^{100}$. Karena $9^{100} > 8^{100}$, jelas $P > Q$ (**Opsi A**). Opsi B dan C salah karena membandingkan basis tanpa menyamakan pangkat, sedangkan opsi D salah karena nilai $x$ tunggal dan pasti.",
       "visual": null
     },
     {
@@ -209,7 +209,7 @@
         "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Bentuk $\\sqrt{(a+b) - 2\\sqrt{ab}}$ hanya bergantung pada nilai $(a+b)$ dan $(ab)$. Dari pernyataan (1), substitusi $a+b = 9$ dan $ab = 20$ menghasilkan $\\sqrt{9 - 2\\sqrt{20}} = \\sqrt{9 - 2\\sqrt{4 \\cdot 5}} = \\sqrt{5} - 2$ (tunggal dan pasti, sehingga (1) saja cukup). Dari pernyataan (2), $a - b = 1$ memiliki banyak pasangan bulat positif seperti $(2,1)$ dan $(3,2)$ yang menghasilkan nilai akar berbeda, sehingga (2) saja tidak cukup. Jawaban tepat adalah A.",
+      "bedah_cepat_markdown": "Perhatikan bentuk yang ditanya: $\\sqrt{(a+b) - 2\\sqrt{ab}}$. Nilainya otomatis ketemu selama kita tahu nilai $(a+b)$ dan $(a \\cdot b)$, tanpa perlu tahu mana yang lebih besar antara $a$ atau $b$ (karena hasil akar kuadrat selalu positif).\n\n- **Uji Pernyataan (1):** Substitusi $a+b = 9$ dan $ab = 20$ langsung memberi $\\sqrt{9 - 2\\sqrt{20}} = \\sqrt{(5+4) - 2\\sqrt{5 \\cdot 4}} = \\sqrt{5} - \\sqrt{4} = \\sqrt{5} - 2$. Hasilnya tunggal dan pasti, jadi **(1) SAJA cukup**.\n- **Uji Pernyataan (2):** Pasangan bulat positif dengan $a - b = 1$ ada banyak sekali. Jika $(a, b) = (2, 1)$, hasilnya $\\sqrt{2} - 1$; jika $(a, b) = (5, 4)$, hasilnya $\\sqrt{5} - 2$. Karena hasilnya berubah-ubah, **(2) SAJA tidak cukup**.\n\nJadi, jawaban yang tepat adalah **A**.",
       "visual": null
     },
     {
@@ -222,7 +222,7 @@
       "pertanyaan_markdown": "Diketahui $k = \\sqrt{6 + \\sqrt{6 + \\sqrt{6 + \\dots}}}$. Jika $x_1$ dan $x_2$ adalah akar-akar persamaan eksponen $k^{2x} - 10 \\cdot k^x + 9 = 0$, tentukan nilai dari $x_1 + x_2$.",
       "opsi_jawaban": [],
       "kunci_jawaban": "2",
-      "bedah_cepat_markdown": "Pertama, evaluasi akar bersarang tak hingga $k = \\sqrt{6 + \\sqrt{6 + \\dots}}$. Faktorkan $6 = 3 \\times 2$; karena operasinya penjumlahan, ambil faktor terbesar sehingga $k = 3$. Substitusikan $k = 3$ ke persamaan eksponen menjadi $3^{2x} - 10 \\cdot 3^x + 9 = 0$. Misalkan $y = 3^x$ ($y > 0$), diperoleh $y^2 - 10y + 9 = 0$ dengan kedua akar positif ($y_1 = 9, y_2 = 1$). Menggunakan sifat $y_1 \\cdot y_2 = 3^{x_1 + x_2} = \\frac{9}{1} = 3^2$, didapat $x_1 + x_2 = 2$.",
+      "bedah_cepat_markdown": "Selesaikan dulu akar tak hingganya: pecah $6 = 3 \\times 2$. Karena tandanya tambah ($+$), ambil faktor yang lebih besar sehingga $k = 3$.\n\nMasukkan $k = 3$ ke persamaan eksponen menjadi $3^{2x} - 10 \\cdot 3^x + 9 = 0$. Misalkan $y = 3^x$ ($y > 0$), sehingga $y^2 - 10y + 9 = 0$. Jika difaktorkan menjadi $(y - 9)(y - 1) = 0$, kedua akarnya positif ($y_1 = 9$ dan $y_2 = 1$). Pakai trik hasil kali akar: $y_1 \\cdot y_2 = 3^{x_1 + x_2} = \\frac{9}{1} = 3^2$, sehingga langsung didapat $x_1 + x_2 = 2$.",
       "visual": null
     }
   ]

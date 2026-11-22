@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Sebuah polis asuransi truk mengenakan premi Rp12 juta/tahun untuk perlindungan aset Rp400 juta dengan peluang kecelakaan berat 1% dan kerusakan sedang 15%. Secara matematis, apakah perusahaan logistik untung atau justru rugi secara ekspektasi finansial jika membeli polis ini?",
+      "pertanyaan_pemantik": "Sebuah polis asuransi truk mematok premi Rp12 juta/tahun. Asuransi ini menanggung kecelakaan berat sebesar Rp400 juta (peluang 1%) dan kerusakan sedang Rp50 juta (peluang 15%). Secara matematis, apakah perusahaan logistik untung atau justru rugi secara ekspektasi jika membeli polis ini?",
       "opsi_cepat": [
-        "Untung karena nilai klaim jauh lebih besar daripada premi",
-        "Rugi secara ekspektasi karena nilai harapan klaim di bawah premi"
+        "Untung, karena nilai klaim jauh lebih besar daripada preminya",
+        "Rugi secara ekspektasi, karena rata-rata nilai klaim di bawah premi"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Nilai harapan manfaat klaim hanya $(0,01 \\times 400) + (0,15 \\times 50) = \\text{Rp}11,5\\text{ juta}$, lebih kecil daripada premi Rp12 juta sehingga ekspektasi bersih perusahaan adalah $-\\text{Rp}0,5\\text{ juta}$ per truk."
+      "penjelasan_kilat": "Rata-rata klaim yang diharapkan hanya $(0,01 \\times 400) + (0,15 \\times 50) = 4 + 7,5 = \\text{Rp}11,5\\text{ juta}$. Karena preminya Rp12 juta, perusahaan secara rata-rata jangka panjang \"rugi\" $-\\text{Rp}0,5\\text{ juta}$ per truk sebagai biaya pengalihan risiko."
     },
-    "konsep_inti_markdown": "- **Nilai Harapan ($E(X)$):** Rata-rata tertimbang jangka panjang dari seluruh kemungkinan hasil acak, dirumuskan $E(X) = \\sum x_i P(x_i)$ dengan $\\sum P(x_i) = 1$.\n- **Keputusan Rasional:** Bandingkan $E(X)$ tiap opsi; pilih strategi dengan $E(X)$ maksimum (keuntungan) atau minimum (biaya/risiko).\n- **Kaidah Pencacahan:** Gunakan **Aturan Perkalian** jika tahap berurutan/bergantung posisi (PIN, pelat, kursi), dan **Kombinasi** $\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$ jika urutan pemilihan diabaikan (jadwal *round-robin*, paket).",
+    "konsep_inti_markdown": "- **Nilai Harapan ($E(X)$):** Rata-rata hasil jangka panjang dari sebuah kejadian acak. Rumusnya $E(X) = \\sum x_i P(x_i)$ dengan total semua peluang $\\sum P(x_i) = 1$.\n- **Keputusan Rasional:** Hitung $E(X)$ dari tiap pilihan. Pilih $E(X)$ terbesar jika bicara keuntungan, atau $E(X)$ terkecil jika bicara biaya dan risiko.\n- **Kaidah Pencacahan:** Pakai **Aturan Perkalian** kalau urutan posisi itu penting (seperti PIN, pelat nomor, atau posisi kursi). Pakai **Kombinasi** $\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$ kalau urutan tidak berpengaruh (seperti jadwal pertandingan atau paket menu).",
     "radar_jebakan_utbk": [
-      "Mengabaikan kejadian gagal/rugi saat menghitung nilai harapan atau lupa mengurangkan biaya modal/premi tetap dari nilai klaim/pendapatan.",
-      "Langsung mengalikan pilihan digit pada syarat tidak berulang dan digit pertama bukan nol tanpa memecah kasus angka 0 di posisi terakhir genap."
+      "Lupa memasukkan nilai rugi (bertanda negatif) atau lupa mengurangkan biaya modal/premi tetap saat menghitung ekspektasi bersih.",
+      "Langsung mengalikan slot digit pada soal PIN tanpa pengulangan, padahal syarat digit awal bukan 0 dan digit akhir genap saling bertabrakan di angka 0."
     ],
-    "stimulus_utama_bersama": "**Evaluasi Operasional dan Program Akhir Tahun PT Nusantara TransLogistik (NTL)**\n\nMenjelang penutupan tahun buku, manajemen PT Nusantara TransLogistik (NTL) melakukan kajian risiko armada, efisiensi rute pengiriman, keamanan sistem digital, serta kegiatan internal karyawan berdasarkan data operasional berikut:\n\n1. **Proteksi Asuransi Armada:** Setiap unit truk kargo NTL bernilai Rp400.000.000. Perusahaan asuransi menawarkan polis tahunan dengan premi tetap Rp12.000.000 per unit. Berdasarkan catatan klaim Dinas Perhubungan, peluang sebuah truk mengalami kerusakan sedang (ganti rugi Rp50.000.000) adalah $0,15$, peluang kecelakaan berat (ganti rugi penuh Rp400.000.000) adalah $0,01$, dan peluang nihil klaim adalah $0,84$.\n2. **Strategi Pengiriman Prioritas (Surabaya–Makassar):** Tersedia dua opsi moda pengiriman. **Strategi A (Kargo Laut)** menghasilkan laba bersih Rp20.000.000 jika cuaca cerah (peluang $0,75$), tetapi mengalami rugi bersih Rp4.000.000 jika gelombang tinggi (peluang $0,25$). **Strategi B (Kargo Udara)** menghasilkan laba bersih Rp18.000.000 jika cuaca cerah (peluang $0,90$), tetapi mengalami rugi bersih Rp10.000.000 jika cuaca buruk (peluang $0,10$).\n3. **Keamanan PIN dan Konfigurasi Kursi Shuttle:** Setiap kepala gudang wajib membuat PIN 4 digit dari angka $0$–$9$ dengan syarat digit pertama bukan $0$, digit terakhir bilangan genap, dan tidak ada digit berulang. Sementara itu, untuk perjalanan dinas, 4 manajer (Andi, Budi, Citra, Dedi) menempati 4 kursi bernomor 1–4 yang berjajar satu baris di mobil *shuttle*.\n4. **Turnamen Futsal dan Paket Konsumsi:** NTL menggelar turnamen futsal antar-8 divisi menggunakan sistem *round-robin* tunggal (setiap tim bertemu tim lain tepat satu kali), dilanjutkan babak semifinal dan final sistem gugur (4 tim terbaik, tanpa perebutan juara 3). Setiap tim juga wajib memilih paket perjalanan yang terdiri atas 2 rute transit berbeda dari 5 rute tersedia dan 1 paket katering dari 4 menu tersedia.",
+    "stimulus_utama_bersama": "**Evaluasi Operasional dan Program Akhir Tahun PT Nusantara TransLogistik (NTL)**\n\nMenjelang akhir tahun, manajemen PT Nusantara TransLogistik (NTL) mengevaluasi risiko armada, jalur pengiriman, keamanan sistem, dan agenda karyawan berdasarkan data berikut:\n\n1. **Asuransi Armada Truk:** Setiap truk kargo NTL bernilai Rp400.000.000. Perusahaan asuransi menawarkan polis tahunan dengan premi Rp12.000.000 per truk. Data historis menunjukkan peluang truk mengalami kerusakan sedang (ganti rugi Rp50.000.000) sebesar $0,15$, kecelakaan berat (ganti rugi penuh Rp400.000.000) sebesar $0,01$, dan aman tanpa klaim sebesar $0,84$.\n2. **Pilihan Pengiriman Prioritas (Surabaya–Makassar):** Ada dua opsi pengiriman. **Strategi A (Kargo Laut)** memberi laba bersih Rp20.000.000 saat cuaca cerah (peluang $0,75$), tetapi rugi bersih Rp4.000.000 saat gelombang tinggi (peluang $0,25$). **Strategi B (Kargo Udara)** memberi laba bersih Rp18.000.000 saat cuaca cerah (peluang $0,90$), tetapi rugi bersih Rp10.000.000 saat cuaca buruk (peluang $0,10$).\n3. **PIN Gudang dan Kursi Shuttle:** Setiap kepala gudang wajib membuat PIN 4 digit dari angka $0$–$9$. Aturannya: digit pertama bukan $0$, digit terakhir bilangan genap, dan tidak boleh ada angka berulang. Sementara itu, untuk perjalanan dinas, 4 manajer (Andi, Budi, Citra, Dedi) akan duduk di 4 kursi berjajar bernomor 1–4 di dalam mobil *shuttle*.\n4. **Turnamen Futsal dan Paket Perjalanan:** NTL mengadakan turnamen futsal antar-8 divisi. Babak penyisihan memakai sistem *round-robin* tunggal (setiap tim bertemu tim lain tepat satu kali). Empat tim terbaik lalu maju ke semifinal dan final dengan sistem gugur (tanpa perebutan juara 3). Selain itu, tiap tim wajib memilih paket perjalanan berisi 2 rute transit berbeda dari 5 rute yang ada, serta 1 paket katering dari 4 pilihan menu.",
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Rumus & Kaidah Nilai Harapan serta Kombinatorika Terapan",
-      "subjudul_ringkas": "Panduan padat kaidah pencacahan posisi, kombinasi jadwal/paket, dan analisis nilai harapan keputusan UTBK.",
+      "subjudul_ringkas": "Ringkasan praktis aturan posisi, kombinasi jadwal/paket, dan hitung cepat nilai harapan di UTBK.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -35,106 +35,106 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "1. Kaidah Pencacahan Posisi (Sandi, Pelat, & Kursi)",
-          "ringkasan_kelompok": "Menghitung susunan objek ketika urutan atau posisi tiap elemen berpengaruh.",
+          "nama_kelompok": "1. Aturan Posisi (PIN, Pelat Nomor, & Kursi)",
+          "ringkasan_kelompok": "Dipakai saat urutan atau letak setiap elemen mengubah hasil susunan.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Sandi/PIN dengan Pengulangan Karakter",
-              "penjelasan_singkat": "Jika tiap posisi dapat diisi berulang dari $n$ pilihan sebanyak $k$ digit, total susunan adalah $n^k$.",
-              "contoh_penerapan": "PIN $4$ angka dari digit $0$–$9$ boleh berulang menghasilkan **$10^4 = 10.000$** kombinasi sandi.",
-              "jebakan_atau_catatan": "Periksa apakah digit $0$ diizinkan pada posisi pertama; jika dilarang, posisi awal hanya $9$ pilihan.",
+              "judul_poin": "PIN atau Sandi Boleh Berulang",
+              "penjelasan_singkat": "Jika ada $k$ posisi dan tiap posisi bebas diisi ulang dari $n$ pilihan, total susunannya adalah $n^k$.",
+              "contoh_penerapan": "PIN $4$ angka dari digit $0$–$9$ yang boleh berulang menghasilkan **$10^4 = 10.000$** sandi.",
+              "jebakan_atau_catatan": "Cek apakah angka $0$ boleh di depan. Jika dilarang, slot pertama tinggal $9$ pilihan.",
               "visual": null
             },
             {
-              "judul_poin": "Sandi/PIN Tanpa Pengulangan (Digit Berbeda)",
-              "penjelasan_singkat": "Untuk $k$ posisi dengan syarat semua elemen berbeda dari $n$ pilihan, gunakan permutasi $P(n,k) = \\frac{n!}{(n-k)!}$.",
-              "contoh_penerapan": "Kode $3$ huruf berbeda dari $5$ vokal (A,I,U,E,O) berjumlah **$5 \\times 4 \\times 3 = 60$** kode.",
-              "jebakan_atau_catatan": "Jangan memakai $n^k$ jika soal mencantumkan kata 'berbeda', 'unik', atau 'tidak boleh berulang'.",
+              "judul_poin": "PIN atau Sandi Tanpa Pengulangan",
+              "penjelasan_singkat": "Untuk $k$ posisi dengan semua angka/huruf harus berbeda dari $n$ pilihan, pakai permutasi $P(n,k) = \\frac{n!}{(n-k)!}$.",
+              "contoh_penerapan": "Kode $3$ huruf berbeda dari $5$ vokal (A, I, U, E, O) berjumlah **$5 \\times 4 \\times 3 = 60$** kode.",
+              "jebakan_atau_catatan": "Jangan pakai $n^k$ jika soal menyebut kata \"berbeda\", \"unik\", atau \"tidak boleh berulang\".",
               "visual": null
             },
             {
-              "judul_poin": "Penomoran Pelat Kendaraan Bersyarat Khusus",
-              "penjelasan_singkat": "Isi slot yang memiliki syarat paling ketat terlebih dahulu (misal ganjil/genap), lalu kalikan sisa slot bebas.",
+              "judul_poin": "Pelat Nomor dengan Syarat Khusus",
+              "penjelasan_singkat": "Isi dulu kotak yang punya syarat paling ketat (misalnya genap/ganjil), baru kalikan kotak lainnya.",
               "contoh_penerapan": "Pelat $4$ angka ganjil dari digit $1$–$5$ (boleh berulang): isi satuan dulu ($3$ cara), total **$5 \\times 5 \\times 5 \\times 3 = 375$**.",
-              "jebakan_atau_catatan": "Mengisi dari depan ke belakang saat syarat ada di digit terakhir sering memicu salah hitung.",
+              "jebakan_atau_catatan": "Mengisi dari depan padahal syarat ada di belakang sering membuat salah hitung saat angka tidak boleh berulang.",
               "visual": null
             },
             {
-              "judul_poin": "Konfigurasi Kursi Berdampingan (Blok Elemen)",
-              "penjelasan_singkat": "Ikat $m$ orang yang wajib duduk berdampingan menjadi $1$ blok: total susunan $(n - m + 1)! \\times m!$.",
-              "contoh_penerapan": "$5$ penumpang sebaris dengan $2$ orang wajib berdampingan memiliki **$(5 - 2 + 1)! \\times 2! = 24 \\times 2 = 48$** formasi.",
-              "jebakan_atau_catatan": "Peserta sering lupa mengalikan dengan $m!$ untuk pertukaran posisi internal di dalam kelompok yang diikat.",
+              "judul_poin": "Posisi Kursi Wajib Berdampingan",
+              "penjelasan_singkat": "Ikat $m$ orang yang harus bersebelahan menjadi $1$ paket: total cara $(n - m + 1)! \\times m!$.",
+              "contoh_penerapan": "$5$ orang duduk sebaris, $2$ orang wajib berdampingan: **$(5 - 2 + 1)! \\times 2! = 24 \\times 2 = 48$** cara.",
+              "jebakan_atau_catatan": "Jangan lupa mengalikan dengan $m!$ karena orang-orang di dalam paket tetap bisa bertukar tempat.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "2. Kombinasi Terapan (Turnamen, Paket, & Rute)",
-          "ringkasan_kelompok": "Menghitung pemilihan himpunan bagian ketika urutan pemilihan tidak mengubah hasil.",
+          "ringkasan_kelompok": "Dipakai saat kita hanya memilih kelompok atau pasangan tanpa peduli urutannya.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Jadwal Turnamen Round-Robin Satu Putaran",
-              "penjelasan_singkat": "Setiap pasangan dari $n$ tim bertanding tepat satu kali tanpa membedakan kandang-tandang: $N = \\binom{n}{2} = \\frac{n(n-1)}{2}$.",
-              "contoh_penerapan": "Liga dengan $8$ tim sistem setengah kompetisi membutuhkan **$\\binom{8}{2} = \\frac{8 \\times 7}{2} = 28$** pertandingan.",
-              "jebakan_atau_catatan": "Jika diketahui total $M$ laga dan ditanya jumlah tim $n$, selesaikan $n(n-1) = 2M$, bukan $n^2 = 2M$.",
+              "judul_poin": "Jadwal Turnamen Satu Putaran (Round-Robin)",
+              "penjelasan_singkat": "Setiap pasang dari $n$ tim bertemu tepat sekali: total laga $N = \\binom{n}{2} = \\frac{n(n-1)}{2}$.",
+              "contoh_penerapan": "Liga $8$ tim setengah kompetisi butuh **$\\binom{8}{2} = \\frac{8 \\times 7}{2} = 28$** pertandingan.",
+              "jebakan_atau_catatan": "Jika total laga $M$ diketahui dan ditanya jumlah tim $n$, cari dua bilangan berurutan yang hasil kalinya $2M$.",
               "visual": null
             },
             {
-              "judul_poin": "Jadwal Round-Robin Kandang-Tandang (Dua Putaran)",
-              "penjelasan_singkat": "Jika tiap pasangan tim bertemu dua kali (kandang dan tandang), total pertandingan adalah $N = 2 \\times \\binom{n}{2} = n(n-1)$.",
-              "contoh_penerapan": "Turnamen kandang-tandang $6$ tim menghasilkan **$6 \\times (6 - 1) = 30$** laga keseluruhan.",
-              "jebakan_atau_catatan": "Cermati frasa 'saling berhadapan sekali' vs 'sistem kandang-tandang' agar tidak keliru faktor pengali $2$.",
+              "judul_poin": "Jadwal Turnamen Kandang-Tandang (Dua Putaran)",
+              "penjelasan_singkat": "Tiap pasang tim bertemu dua kali (kandang dan tandang), sehingga total laganya $N = 2 \\times \\binom{n}{2} = n(n-1)$.",
+              "contoh_penerapan": "Turnamen kandang-tandang $6$ tim menghasilkan **$6 \\times 5 = 30$** pertandingan.",
+              "jebakan_atau_catatan": "Baca teliti frasa \"bertemu sekali\" vs \"kandang-tandang\" agar tidak salah kali $2$.",
               "visual": null
             },
             {
-              "judul_poin": "Kombinasi Paket Menu atau Tim Campuran",
-              "penjelasan_singkat": "Pilih $r_1$ dari $n_1$ kategori A dan $r_2$ dari $n_2$ kategori B secara bersamaan: $\\binom{n_1}{r_1} \\times \\binom{n_2}{r_2}$.",
-              "contoh_penerapan": "Paket berisi $2$ dari $4$ lauk dan $1$ dari $3$ minuman memiliki **$\\binom{4}{2} \\times \\binom{3}{1} = 6 \\times 3 = 18$** pilihan.",
-              "jebakan_atau_catatan": "Kata hubung 'dan' (dipilih bersama) berarti dikali, sedangkan 'atau' (saling lepas) berarti dijumlah.",
+              "judul_poin": "Memilih Paket Menu atau Tim Campuran",
+              "penjelasan_singkat": "Pilih $r_1$ dari $n_1$ kategori A dan $r_2$ dari $n_2$ kategori B sekaligus: $\\binom{n_1}{r_1} \\times \\binom{n_2}{r_2}$.",
+              "contoh_penerapan": "Memilih $2$ dari $4$ lauk dan $1$ dari $3$ minuman menghasilkan **$\\binom{4}{2} \\times \\binom{3}{1} = 6 \\times 3 = 18$** paket.",
+              "jebakan_atau_catatan": "Kata \"dan\" (dipilih bersamaan) berarti dikali; kata \"atau\" (pilihan terpisah) berarti dijumlah.",
               "visual": null
             },
             {
-              "judul_poin": "Kombinasi Rute Perjalanan Transit & Pulang-Pergi",
-              "penjelasan_singkat": "Rute transit berurutan dikalikan; untuk perjalanan pulang-pergi dengan syarat tidak melewati jalur sama, kurangi $1$ opsi saat pulang.",
-              "contoh_penerapan": "Kota A–B ($3$ jalur) dan B–C ($4$ jalur); pulang-pergi jalur berbeda berjumlah **$(3 \\times 4) \\times (3 \\times 2) = 72$** rute.",
-              "jebakan_atau_catatan": "Jangan hanya mengurangi $1$ dari total rute pergi ($12 - 1 = 11$); pengurangan berlaku pada tiap segmen jalan.",
+              "judul_poin": "Rute Perjalanan Transit Pulang-Pergi",
+              "penjelasan_singkat": "Kalikan jumlah jalur tiap tahap. Jika pulang dilarang melewati jalan yang sama, kurangi $1$ pilihan di tiap segmen saat pulang.",
+              "contoh_penerapan": "A–B ($3$ jalan) dan B–C ($4$ jalan). Pergi $3 \\times 4$, pulang C–B sisa $3$ dan B–A sisa $2$: total **$12 \\times 6 = 72$** rute.",
+              "jebakan_atau_catatan": "Pengurangan $1$ berlaku pada masing-masing segmen jalan, bukan cuma mengurangi $1$ dari total rute pergi ($12 - 1$).",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "3. Nilai Harapan (Ekspektasi) & Keputusan Rasional",
-          "ringkasan_kelompok": "Mengukur rata-rata keuntungan atau risiko finansial jangka panjang di bawah ketidakpastian.",
+          "ringkasan_kelompok": "Menghitung rata-rata untung atau rugi jangka panjang saat hasilnya tidak pasti.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Nilai Harapan Variabel Acak Diskrit",
-              "penjelasan_singkat": "Jumlah hasil kali tiap nilai kejadian $x_i$ dengan peluangnya $P(x_i)$: $E(X) = \\sum x_i P(x_i)$, syarat $\\sum P(x_i) = 1$.",
-              "contoh_penerapan": "Hadiah $\\text{Rp}100.000$ (peluang $0,2$) dan $\\text{Rp}20.000$ (peluang $0,8$) memberi **$E(X) = 100.000(0,2) + 20.000(0,8) = \\text{Rp}36.000$**.",
-              "jebakan_atau_catatan": "Pastikan total seluruh peluang kejadian sama dengan $1$; jika kurang, sisanya adalah kejadian bernilai $0$.",
+              "judul_poin": "Rumus Dasar Nilai Harapan",
+              "penjelasan_singkat": "Kalikan setiap nilai hasil $x_i$ dengan peluangnya $P(x_i)$, lalu jumlahkan: $E(X) = \\sum x_i P(x_i)$.",
+              "contoh_penerapan": "Hadiah $\\text{Rp}100.000$ (peluang $0,2$) dan $\\text{Rp}20.000$ (peluang $0,8$) memberi **$E(X) = 20.000 + 16.000 = \\text{Rp}36.000$**.",
+              "jebakan_atau_catatan": "Pastikan jumlah semua peluang sama dengan $1$. Jika masih kurang, sisanya dianggap berhadiah $0$.",
               "visual": null
             },
             {
-              "judul_poin": "Nilai Harapan Bersih Permainan Berbayar",
-              "penjelasan_singkat": "Kurangkan biaya tiket/modal $C$ dari ekspektasi hadiah kotor: $E_{\\text{bersih}} = \\sum (\\text{Hadiah}_i - C)P_i = E(\\text{Hadiah}) - C$.",
-              "contoh_penerapan": "Tiket $\\text{Rp}10.000$, peluang menang $\\text{Rp}50.000$ sebesar $0,1$: **$E_{\\text{bersih}} = 50.000(0,1) - 10.000 = -\\text{Rp}5.000$** (rugi rata-rata).",
-              "jebakan_atau_catatan": "Lupa mengurangkan harga tiket pada skenario menang membuat keuntungan bersih tampak lebih besar dari sebenarnya.",
+              "judul_poin": "Ekspektasi Bersih Permainan Berbayar",
+              "penjelasan_singkat": "Hitung dulu rata-rata hadiah kotornya, lalu langsung kurangi biaya tiket/modal $C$: $E_{\\text{bersih}} = E(\\text{Hadiah}) - C$.",
+              "contoh_penerapan": "Tiket $\\text{Rp}10.000$, peluang menang $\\text{Rp}50.000$ sebesar $0,1$: **$E_{\\text{bersih}} = 5.000 - 10.000 = -\\text{Rp}5.000$**.",
+              "jebakan_atau_catatan": "Cara $E(\\text{Hadiah}) - C$ jauh lebih cepat dan aman daripada mengurangkan $C$ satu per satu di tiap cabang.",
               "visual": null
             },
             {
-              "judul_poin": "Ekspektasi Keuangan Premi & Klaim Asuransi",
-              "penjelasan_singkat": "Bagi perusahaan asuransi, $E(\\text{Laba}) = \\text{Premi} - \\sum (\\text{Klaim}_i \\times P_{\\text{risiko},i})$; asuransi adil secara matematis jika $E(\\text{Laba}) = 0$.",
-              "contoh_penerapan": "Premi $\\text{Rp}500.000$, risiko klaim $\\text{Rp}20.000.000$ berpeluang $0,02$: **$E(\\text{Laba}) = 500.000 - (20.000.000 \\times 0,02) = \\text{Rp}100.000$**.",
-              "jebakan_atau_catatan": "Perhatikan sudut pandang soal (nasabah vs perusahaan asuransi) karena tanda positif/negatif arus kas saling berkebalikan.",
+              "judul_poin": "Ekspektasi Premi dan Klaim Asuransi",
+              "penjelasan_singkat": "Bagi perusahaan asuransi, $E(\\text{Laba}) = \\text{Premi} - \\sum (\\text{Klaim}_i \\times P_i)$. Asuransi disebut adil secara matematis jika $E(\\text{Laba}) = 0$.",
+              "contoh_penerapan": "Premi $\\text{Rp}500.000$, risiko klaim $\\text{Rp}20.000.000$ berpeluang $0,02$: **$E(\\text{Laba}) = 500.000 - 400.000 = \\text{Rp}100.000$**.",
+              "jebakan_atau_catatan": "Cek sudut pandang soal (nasabah atau perusahaan asuransi) karena tanda positif dan negatifnya saling berkebalikan.",
               "visual": null
             },
             {
-              "judul_poin": "Pemilihan Strategi Rasional Berdasarkan Ekspektasi",
-              "penjelasan_singkat": "Hitung $E(X)$ masing-masing opsi lalu pilih $E(X)$ terbesar untuk memaksimalkan laba atau terkecil untuk meminimalkan kerugian.",
+              "judul_poin": "Memilih Strategi Paling Rasional",
+              "penjelasan_singkat": "Hitung $E(X)$ untuk tiap strategi. Pilih $E(X)$ tertinggi untuk keuntungan, atau terendah untuk biaya.",
               "contoh_penerapan": "Opsi A ($E = \\text{Rp}4\\text{ jt}$) vs Opsi B ($0,5 \\times 10\\text{ jt} + 0,5 \\times (-1\\text{ jt}) = \\text{Rp}4,5\\text{ jt}$): pilih **Opsi B**.",
-              "jebakan_atau_catatan": "Jangan memilih opsi hanya karena hadiah maksimalnya terbesar jika peluang gagalnya membuat $E(X)$ lebih rendah.",
+              "jebakan_atau_catatan": "Jangan tergoda hadiah maksimal yang besar kalau peluang gagalnya bikin rata-rata ekspektasinya kalah.",
               "visual": null
             }
           ]
@@ -145,38 +145,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Nilai Harapan Keuntungan atau Kerugian Finansial dalam Asuransi, Investasi, atau Permainan Berbayar",
+      "nama_variasi": "Menghitung Nilai Harapan Bersih pada Asuransi atau Permainan Berbayar",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Merujuk Poin 1 stimulus NTL: hitung nilai harapan selisih bersih (manfaat klaim dikurangi premi) per truk per tahun dari sudut pandang NTL.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nIdentifikasi seluruh kejadian acak dalam satu periode polis beserta dampak finansial bersih bagi pemegang polis (manfaat klaim dikurangi premi tetap Rp12 juta).\n\n**2. Model Matematika (Employing)**\nGunakan rumus nilai harapan diskrit $E(X) = \\sum x_i P(x_i)$ dengan tiga skenario:\n- Nihil klaim ($P_1 = 0,84$): $x_1 = 0 - 12 = -12$ juta.\n- Kerusakan sedang ($P_2 = 0,15$): $x_2 = 50 - 12 = +38$ juta.\n- Kecelakaan berat ($P_3 = 0,01$): $x_3 = 400 - 12 = +388$ juta.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nHitung perkalian tiap cabang: $E(X) = (-12)(0,84) + (38)(0,15) + (388)(0,01) = -10,08 + 5,70 + 3,88 = -0,50$ juta rupiah. Secara rata-rata jangka panjang, NTL menanggung selisih ekspektasi $-\\text{Rp}500.000$ per truk per tahun sebagai biaya transfer risiko bencana besar.",
-      "kunci_pembeda": "Fokus pada satu skema finansial tunggal untuk mengukur kelayakan atau margin rata-rata jangka panjang setelah memperhitungkan biaya tetap.",
+      "bedah_pola_markdown": "**1. Pahami Masalahnya**\nKita ingin tahu berapa rata-rata selisih bersih yang diterima NTL per truk dalam setahun. Karena premi Rp12 juta pasti dibayar apa pun yang terjadi, kita tidak perlu repot menguranginya di tiap cabang peluang.\n\n**2. Susun Strategi Hitungnya**\nPakai jalan pintas yang ramah tanpa kalkulator: hitung dulu rata-rata klaim kotornya, baru kurangi premi tetap Rp12 juta.\n- $E(\\text{Klaim}) = (0 \\times 0,84) + (50 \\times 0,15) + (400 \\times 0,01)$ (dalam juta rupiah).\n- $E(\\text{Bersih}) = E(\\text{Klaim}) - \\text{Premi}$.\n\n**3. Eksekusi & Tarik Kesimpulan**\nHitung perlahan: $E(\\text{Klaim}) = 0 + 7,5 + 4 = 11,5$ juta rupiah. Sekarang kurangi premi: $E(\\text{Bersih}) = 11,5 - 12 = -0,5$ juta rupiah. Artinya, secara rata-rata jangka panjang, NTL menanggung selisih $-\\text{Rp}500.000$ per truk per tahun sebagai biaya pengalihan risiko kecelakaan besar.",
+      "kunci_pembeda": "Fokus pada satu skema finansial untuk melihat untung-rugi rata-rata setelah dikurangi biaya tetap.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Penentuan Keputusan Rasional Berdasarkan Nilai Harapan Tertinggi di Antara Beberapa Pilihan Strategi di Bawah Ketidakpastian",
+      "nama_variasi": "Memilih Strategi Paling Rasional dari Beberapa Pilihan Berisiko",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Merujuk Poin 2 stimulus NTL: tentukan strategi pengiriman prioritas yang paling rasional secara matematis antara Strategi A dan Strategi B.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nBandingkan dua alternatif keputusan (Strategi A vs Strategi B) yang masing-masing memiliki skenario untung dan rugi dengan distribusi peluang berbeda. Tanda negatif wajib diberikan pada nilai kerugian.\n\n**2. Model Matematika (Employing)**\nSusun fungsi nilai harapan laba bersih (dalam juta rupiah) untuk kedua strategi:\n- $E(A) = (20 \\times 0,75) + (-4 \\times 0,25)$\n- $E(B) = (18 \\times 0,90) + (-10 \\times 0,10)$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nEksekusi perhitungan: $E(A) = 15,0 - 1,0 = 14,0$ juta rupiah, sedangkan $E(B) = 16,2 - 1,0 = 15,2$ juta rupiah. Meskipun Strategi B memiliki potensi kerugian ekstrem lebih besar ($-\\text{Rp}10\\text{ juta}$) dan laba maksimum lebih kecil, pembuat keputusan rasional memilih **Strategi B** karena menghasilkan ekspektasi laba lebih tinggi sebesar Rp1,2 juta per pengiriman.",
-      "kunci_pembeda": "Membandingkan dua atau lebih opsi tindakan alternatif dan memilih opsi dengan nilai harapan ($E(X)$) paling optimal.",
+      "bedah_pola_markdown": "**1. Pahami Masalahnya**\nKita diminta membandingkan dua strategi yang sama-sama punya risiko rugi. Ingat, nilai kerugian wajib ditulis dengan tanda negatif agar tidak salah jumlah.\n\n**2. Susun Strategi Hitungnya**\nHitung nilai harapan laba bersih masing-masing strategi dalam satuan juta rupiah:\n- $E(A) = (20 \\times 0,75) + (-4 \\times 0,25)$\n- $E(B) = (18 \\times 0,90) + (-10 \\times 0,10)$\n\n**3. Eksekusi & Tarik Kesimpulan**\nUntuk Strategi A: $E(A) = 15 - 1 = 14$ juta rupiah. Untuk Strategi B: $E(B) = 16,2 - 1 = 15,2$ juta rupiah. Meski Strategi B berisiko rugi lebih besar saat cuaca buruk, secara rasional NTL sebaiknya memilih **Strategi B** karena rata-rata labanya lebih unggul Rp1,2 juta per pengiriman.",
+      "kunci_pembeda": "Membandingkan dua atau lebih opsi strategi, lalu memilih opsi dengan nilai harapan ($E(X)$) paling menguntungkan.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Kombinatorika Terapan pada Keamanan Sandi/PIN, Penomoran Pelat Kendaraan, dan Konfigurasi Kursi Penumpang Pesawat/Kereta",
+      "nama_variasi": "Aturan Pencacahan untuk PIN Bersyarat dan Posisi Duduk",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Merujuk Poin 3 stimulus NTL: tentukan banyak kombinasi PIN 4 digit kepala gudang dan banyak susunan duduk 4 manajer jika Andi dan Budi harus berdampingan.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nUntuk PIN 4 digit ($D_1 D_2 D_3 D_4$), syarat $D_1 \\neq 0$ dan $D_4$ genap saling beririsan pada angka $0$ sehingga wajib dipecah menjadi dua kasus terpisah. Untuk kursi, posisi duduk memperhatikan urutan dan syarat berdampingan.\n\n**2. Model Matematika (Employing)**\n- **PIN:** Kasus 1 ($D_4 = 0$): $9 \\times 8 \\times 7 \\times 1$. Kasus 2 ($D_4 \\in \\{2,4,6,8\\}$): $8 \\times 8 \\times 7 \\times 4$.\n- **Kursi:** Ikat (Andi, Budi) menjadi 1 blok sehingga ada 3 objek diatur berjajar, lalu kalikan permutasi internal blok: $3! \\times 2!$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nTotal PIN adalah $504 + 1.792 = 2.296$ kode unik. Susunan kursi adalah $6 \\times 2 = 12$ cara. Dalam audit keamanan, pembatasan tanpa pengulangan memangkas ruang tebakan dari $9.000$ menjadi $2.296$ kombinasi.",
-      "kunci_pembeda": "Urutan posisi sangat menentukan hasil sehingga menggunakan kaidah pengisian tempat (aturan perkalian) dan permutasi dengan syarat khusus.",
+      "bedah_pola_markdown": "**1. Pahami Masalahnya**\nPada PIN 4 digit ($D_1 D_2 D_3 D_4$), digit pertama tidak boleh $0$ dan digit terakhir harus genap. Karena angka $0$ juga termasuk genap, kedua syarat ini saling memengaruhi. Solusinya: pecah menjadi 2 kasus terpisah berdasarkan isi digit terakhir.\n\n**2. Susun Strategi Hitungnya**\n- **Kasus 1 ($D_4 = 0$, 1 pilihan):** Karena $0$ sudah terpakai di belakang, $D_1$ aman diisi $9$ angka lain ($1$–$9$). Sisa digit untuk $D_2$ adalah $8$ dan $D_3$ adalah $7$. Total: $9 \\times 8 \\times 7 \\times 1$.\n- **Kasus 2 ($D_4 \\in \\{2,4,6,8\\}$, 4 pilihan):** $D_1$ tidak boleh $0$ dan tidak boleh sama dengan $D_4$, jadi sisa $8$ pilihan. Masuk ke $D_2$, angka $0$ sudah boleh dipakai sehingga pilihan kembali $8$, lalu $D_3$ sisa $7$. Total: $8 \\times 8 \\times 7 \\times 4$.\n- **Kursi Shuttle:** Ikat (Andi, Budi) jadi 1 paket. Kini ada 3 objek (Paket AB, Citra, Dedi) yang diatur berjajar, lalu kalikan tukar posisi Andi-Budi: $3! \\times 2!$.\n\n**3. Eksekusi & Tarik Kesimpulan**\nTotal PIN adalah $504 + 1.792 = 2.296$ kombinasi. Sementara itu, susunan duduk kursi ada $6 \\times 2 = 12$ cara.",
+      "kunci_pembeda": "Urutan posisi sangat menentukan hasil, sehingga wajib memakai aturan pengisian kotak dan pemecahan kasus bila syarat saling beririsan.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Penjadwalan Pertandingan Round-Robin dan Kombinasi Paket Menu/Rute Perjalanan",
+      "nama_variasi": "Jadwal Turnamen Round-Robin dan Kombinasi Paket",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Merujuk Poin 4 stimulus NTL: hitung total seluruh pertandingan turnamen futsal dari penyisihan hingga final serta banyak pilihan paket perjalanan tim.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nPertandingan *round-robin* mempertemukan setiap pasang tim tanpa memperhatikan urutan kandang-tandang. Babak gugur mengurangi 1 tim setiap laga hingga tersisa 1 juara. Pemilihan rute transit juga mengabaikan urutan pilihan.\n\n**2. Model Matematika (Employing)**\n- **Total Laga:** Gabungkan kombinasi penyisihan $\\binom{8}{2}$ dengan laga sistem gugur (2 semifinal + 1 final).\n- **Paket Tim:** Kalikan kombinasi pemilihan 2 rute dari 5 opsi dengan 1 menu dari 4 opsi: $\\binom{5}{2} \\times \\binom{4}{1}$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nPenyisihan memerlukan $\\frac{8 \\times 7}{2} = 28$ laga, ditambah $3$ laga babak gugur menjadi $31$ pertandingan total. Sementara itu, variasi paket perjalanan tim berjumlah $\\frac{5 \\times 4}{2} \\times 4 = 10 \\times 4 = 40$ kombinasi paket.",
-      "kunci_pembeda": "Pemilihan anggota pasangan atau elemen paket mengabaikan urutan sehingga wajib menggunakan rumus kombinasi $\\binom{n}{r}$.",
+      "bedah_pola_markdown": "**1. Pahami Masalahnya**\nDi turnamen *round-robin* tunggal, tim A melawan tim B dianggap sama dengan tim B melawan tim A (urutan tidak penting). Begitu pula saat memilih 2 rute transit sekaligus dari 5 rute—urutan memilih tidak mengubah isi paket.\n\n**2. Susun Strategi Hitungnya**\n- **Total Laga:** Gabungkan laga penyisihan $\\binom{8}{2}$ dengan laga sistem gugur untuk 4 tim terbaik (2 laga semifinal + 1 laga final).\n- **Paket Perjalanan:** Karena memilih rute **dan** katering secara bersamaan, kalikan kombinasinya: $\\binom{5}{2} \\times \\binom{4}{1}$.\n\n**3. Eksekusi & Tarik Kesimpulan**\nLaga penyisihan butuh $\\frac{8 \\times 7}{2} = 28$ pertandingan. Ditambah $3$ pertandingan babak gugur, totalnya menjadi $31$ laga. Untuk paket perjalanan, tersedia $\\frac{5 \\times 4}{2} \\times 4 = 10 \\times 4 = 40$ pilihan paket.",
+      "kunci_pembeda": "Urutan pemilihan tidak berpengaruh, sehingga langsung memakai rumus kombinasi $\\binom{n}{r}$.",
       "visual": null
     }
   ],
@@ -188,7 +188,7 @@
         2
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Berdasarkan data Poin 1 pada stimulus PT Nusantara TransLogistik, perusahaan asuransi menawarkan paket polis alternatif (Polis VIP) dengan premi Rp15.000.000 per truk per tahun. Pada Polis VIP, ganti rugi kerusakan sedang naik menjadi Rp80.000.000 (peluang tetap $0,15$), ganti rugi kecelakaan berat tetap Rp400.000.000 (peluang tetap $0,01$), dan peluang nihil klaim tetap $0,84$. Dibandingkan polis awal (premi Rp12.000.000), selisih nilai harapan finansial bersih bagi NTL jika beralih ke Polis VIP adalah ....",
+      "pertanyaan_markdown": "Merujuk data asuransi PT Nusantara TransLogistik, polis awal mengenakan premi Rp12.000.000/tahun dengan ganti rugi kerusakan sedang Rp50.000.000 (peluang $0,15$), kecelakaan berat Rp400.000.000 (peluang $0,01$), dan nihil klaim (peluang $0,84$). Kini ditawarkan **Polis VIP** berpremi Rp15.000.000/tahun yang menaikkan ganti rugi kerusakan sedang menjadi Rp80.000.000, sementara ganti rugi kecelakaan berat dan seluruh peluangnya tetap sama. Dibandingkan polis awal, bagaimana perubahan nilai harapan finansial bersih bagi NTL jika beralih ke Polis VIP?",
       "opsi_jawaban": [
         "A. Meningkat sebesar Rp1.000.000 per truk per tahun",
         "B. Meningkat sebesar Rp1.500.000 per truk per tahun",
@@ -197,7 +197,7 @@
         "E. Menurun sebesar Rp3.000.000 per truk per tahun"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Gunakan pendekatan inkremental (selisih): kenaikan manfaat klaim harapan adalah $(80 - 50) \\times 0,15 = +\\text{Rp}4,5\\text{ juta}$, sedangkan tambahan biaya premi tetap adalah $\\text{Rp}15\\text{ juta} - \\text{Rp}12\\text{ juta} = \\text{Rp}3\\text{ juta}$. Dengan demikian, nilai harapan bersih NTL meningkat sebesar $\\text{Rp}4,5\\text{ juta} - \\text{Rp}3\\text{ juta} = \\text{Rp}1.500.000$ per truk (dari $-\\text{Rp}500.000$ menjadi $+\\text{Rp}1.000.000$). Opsi A adalah nilai akhir $E(X_{\\text{VIP}})$, bukan selisihnya; opsi C hanya menghitung selisih premi.",
+      "bedah_cepat_markdown": "Kamu tidak perlu menghitung ulang semuanya dari nol—cukup hitung **selisihnya** saja. Kenaikan ganti rugi kerusakan sedang adalah $80 - 50 = \\text{Rp}30\\text{ juta}$ dengan peluang $0,15$, sehingga tambahan ekspektasi klaimnya adalah $30 \\times 0,15 = +\\text{Rp}4,5\\text{ juta}$. Di sisi lain, premi naik sebesar $15 - 12 = \\text{Rp}3\\text{ juta}$. Jadi, nilai harapan bersih NTL meningkat sebesar $\\text{Rp}4,5\\text{ juta} - \\text{Rp}3\\text{ juta} = \\text{Rp}1.500.000$ per truk per tahun (bergeser dari $-\\text{Rp}500.000$ menjadi $+\\text{Rp}1.000.000$). Opsi A menjebak karena itu adalah nilai akhir Polis VIP, bukan selisih perubahannya.",
       "visual": null
     },
     {
@@ -206,10 +206,10 @@
         3
       ],
       "tipe_soal_utbk": "Isian Singkat",
-      "pertanyaan_markdown": "Merujuk Poin 3 pada stimulus PT Nusantara TransLogistik, apabila aturan pembuatan PIN 4 digit kepala gudang diperketat sehingga digit pertama harus angka ganjil, digit terakhir harus angka genap, dan tidak boleh ada digit berulang, berapa banyak kombinasi PIN valid yang dapat dibuat? *(Tuliskan jawaban berupa bilangan bulat saja)*",
+      "pertanyaan_markdown": "Setiap kepala gudang PT Nusantara TransLogistik wajib membuat PIN 4 digit dari angka $0$–$9$. Apabila aturannya diubah sehingga digit pertama harus angka ganjil, digit terakhir harus angka genap, dan tidak boleh ada digit yang berulang, berapa banyak kombinasi PIN valid yang dapat dibuat? *(Tuliskan jawaban berupa bilangan bulat saja)*",
       "opsi_jawaban": [],
       "kunci_jawaban": "1400",
-      "bedah_cepat_markdown": "Himpunan angka ganjil untuk digit pertama $\\{1,3,5,7,9\\}$ (5 pilihan) dan himpunan angka genap untuk digit terakhir $\\{0,2,4,6,8\\}$ (5 pilihan) saling lepas sehingga tidak saling mengurangi pilihan. Sisa digit untuk posisi kedua adalah $10 - 2 = 8$ angka, dan posisi ketiga adalah $7$ angka. Total kombinasi PIN valid adalah $5 \\times 8 \\times 7 \\times 5 = 1.400$.",
+      "bedah_cepat_markdown": "Kabar baik: syarat digit pertama ganjil $\\{1,3,5,7,9\\}$ (5 pilihan) dan digit terakhir genap $\\{0,2,4,6,8\\}$ (5 pilihan) sama sekali tidak punya angka yang sama. Artinya, kita tidak perlu memecah kasus! Setelah 2 angka dipakai di depan dan belakang, tersisa $10 - 2 = 8$ angka untuk digit kedua, lalu $7$ angka untuk digit ketiga. Total PIN valid adalah $5 \\times 8 \\times 7 \\times 5 = 1.400$.",
       "visual": null
     },
     {
@@ -219,7 +219,7 @@
         4
       ],
       "tipe_soal_utbk": "Kuantitas P vs Q",
-      "pertanyaan_markdown": "Berdasarkan Poin 3 dan Poin 4 pada stimulus PT Nusantara TransLogistik, perhatikan informasi kuantitas $P$ dan $Q$ berikut:\n\n- **$P$**: Banyak susunan duduk 4 manajer pada 4 kursi berjajar apabila Andi dan Budi **tidak boleh** duduk berdampingan.\n- **$Q$**: Total seluruh pertandingan turnamen futsal jika babak penyisihan tetap diikuti 8 divisi dengan sistem *round-robin* tunggal, tetapi babak gugur diperluas menjadi perempat final (8 tim), semifinal, dan final (tanpa perebutan juara 3).\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$?",
+      "pertanyaan_markdown": "Merujuk kegiatan PT Nusantara TransLogistik, perhatikan dua kuantitas $P$ dan $Q$ berikut:\n\n- **$P$**: Banyak susunan duduk 4 manajer (Andi, Budi, Citra, Dedi) pada 4 kursi berjajar apabila Andi dan Budi **tidak boleh** duduk berdampingan.\n- **$Q$**: Total seluruh pertandingan turnamen futsal jika 8 divisi bertanding pada babak penyisihan *round-robin* tunggal (setiap tim bertemu sekali) untuk menentukan peringkat unggulan, lalu seluruh 8 tim masuk ke babak gugur mulai perempat final, semifinal, hingga final (tanpa perebutan juara 3).\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$?",
       "opsi_jawaban": [
         "A. Kuantitas P lebih besar daripada Q",
         "B. Kuantitas Q lebih besar daripada P",
@@ -228,7 +228,7 @@
         "E. Informasi yang diberikan tidak cukup untuk menentukan hubungan P dan Q"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Untuk kuantitas $P$, total susunan tanpa syarat adalah $4! = 24$, dikurangi susunan saat Andi dan Budi berdampingan ($3! \\times 2! = 12$), sehingga $P = 24 - 12 = 12$. Untuk kuantitas $Q$, penyisihan *round-robin* membutuhkan $\\binom{8}{2} = 28$ laga, ditambah babak gugur 8 tim ($4 + 2 + 1 = 7$ laga), sehingga $Q = 28 + 7 = 35$. Jadi, kuantitas $Q$ lebih besar daripada $P$.",
+      "bedah_cepat_markdown": "Untuk menghitung **$P$**, gunakan cara komplemen (total semua cara dikurangi cara yang dilarang). Total susunan bebas 4 orang adalah $4! = 24$, sedangkan susunan saat Andi dan Budi berdampingan adalah $3! \\times 2! = 12$. Maka, $P = 24 - 12 = 12$. Untuk **$Q$**, babak penyisihan 8 tim butuh $\\binom{8}{2} = \\frac{8 \\times 7}{2} = 28$ laga. Lalu babak gugur 8 tim terdiri dari 4 laga perempat final, 2 laga semifinal, dan 1 laga final (total $7$ laga). Jadi, $Q = 28 + 7 = 35$. Karena $35 > 12$, kuantitas **$Q$ lebih besar daripada $P$** (selisihnya 23, bukan 16).",
       "visual": null
     }
   ]

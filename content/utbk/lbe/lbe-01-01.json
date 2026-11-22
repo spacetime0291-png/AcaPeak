@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Sebuah teks 3 paragraf membahas dampak mikroplastik pada terumbu karang, namun paragraf pertama dibuka dengan anekdot penemuan botol plastik di Palung Mariana. Banyak siswa memilih 'Penemuan Sampah di Palung Mariana' sebagai topik utama—apakah pilihan ini tepat?",
+      "pertanyaan_pemantik": "Bayangkan teks 3 paragraf membahas bahaya mikroplastik bagi terumbu karang, tapi paragraf pertamanya dibuka dengan cerita penemuan botol plastik di Palung Mariana. Banyak siswa langsung memilih 'Penemuan Sampah di Palung Mariana' sebagai topik utama—menurutmu, tepat tidak?",
       "opsi_cepat": [
-        "Tepat, karena selalu berada di kalimat pertama",
-        "Salah, karena hanya berfungsi sebagai pengait (hook)"
+        "Tepat, karena topik utama selalu ada di kalimat pertama",
+        "Salah, cerita itu cuma pancingan pembuka (hook)"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Kalimat pembuka sering berupa hook naratif; tesis utama (thesis statement) biasanya muncul di akhir paragraf pertama atau berulang di setiap kalimat topik paragraf berikutnya."
+      "penjelasan_kilat": "Kalimat pertama sering kali cuma pancingan (*hook*) agar pembaca tertarik. Gagasan utama (*thesis statement*) biasanya justru muncul di akhir paragraf pertama atau diulang di awal paragraf berikutnya."
     },
-    "konsep_inti_markdown": "* **Topic:** Subjek umum teks berupa frasa benda (noun phrase) tanpa predikat.\n* **Main Idea:** Gagasan utama berupa kalimat lengkap ($\\text{Topic} + \\text{Controlling Idea}$).\n* **Formula Skimming:** Baca **kalimat pertama & terakhir Paragraf 1** (tesis) + **kalimat pertama tiap paragraf isi** (poin pendukung).\n* **Goldilocks Rule:** Opsi benar harus mencakup seluruh paragraf—tidak terlalu sempit (*too narrow*) dan tidak melebihi batas teks (*too broad*).",
+    "konsep_inti_markdown": "* **Topic:** Subjek umum yang dibahas bacaan. Bentuknya berupa frasa benda (*noun phrase*) pendek tanpa kata kerja.\n* **Main Idea:** Pesan utama penulis tentang topik tersebut. Bentuknya kalimat lengkap ($\\text{Topic} + \\text{Controlling Idea}$).\n* **Rumus Skimming Cepat:** Baca **kalimat pertama & terakhir Paragraf 1** untuk menangkap ide utama, lalu cek **kalimat pertama tiap paragraf berikutnya** untuk melihat poin pendukungnya.\n* **Aturan Goldilocks:** Jawaban yang benar harus pas merangkum semua paragraf—tidak terlalu sempit (*too narrow*) dan tidak melebar keluar dari isi teks (*too broad*).",
     "radar_jebakan_utbk": [
-      "Too Narrow (Terlalu Sempit): Opsi menyalin fakta detail atau contoh spesifik dari satu paragraf saja lalu diklaim sebagai gagasan seluruh wacana.",
-      "Too Broad & Extreme: Opsi menggunakan kata mutlak (always, completely, only) atau memperluas cakupan ke topik global yang tidak dibahas penulis."
+      "Jebakan Terlalu Sempit (Too Narrow): Opsi cuma mengambil satu contoh atau detail kecil dari satu paragraf, lalu mengklaimnya sebagai inti seluruh bacaan.",
+      "Jebakan Terlalu Luas & Ekstrem (Too Broad): Opsi memakai kata mutlak (always, completely, only) atau melebar membahas isu global yang tidak disentuh penulis."
     ],
     "stimulus_utama_bersama": "The rapid expansion of urban areas has transformed local microclimates, creating what environmental scientists call the Urban Heat Island (UHI) effect. In densely built cities, natural vegetation is replaced by asphalt, concrete, and steel, which absorb and re-emit significantly more solar radiation than forests or grasslands. Compounded by waste heat from vehicles and air-conditioning systems, metropolitan centers often record temperatures 2°C to 5°C higher than surrounding rural areas, particularly during nocturnal hours when concrete structures slowly release stored thermal energy.\n\nThis persistent thermal elevation triggers cascading ecological and public health consequences. Elevated nighttime temperatures prevent the human body from cooling adequately, sharply increasing incidences of heat exhaustion and cardiovascular stress among vulnerable populations, such as the elderly and outdoor workers. Simultaneously, warmer urban air accelerates ground-level ozone formation, degrading air quality and exacerbating respiratory illnesses. Energy demand also surges during summer peaks, straining electrical grids and paradoxically intensifying greenhouse gas emissions through heightened fossil-fuel power generation.\n\nTo counteract these vulnerabilities, urban planners are increasingly integrating green infrastructure into municipal zoning laws. Strategies such as reflective 'cool roofs,' permeable pavements, and vertical forests help lower surface temperatures by increasing evapotranspiration and solar albedo. For instance, cities that mandate rooftop gardens on new commercial buildings have observed measurable reductions in ambient neighborhood heat alongside improved stormwater retention. Ultimately, mitigating the UHI effect requires shifting from reactive cooling technologies toward regenerative urban design that restores ecological balance within city boundaries.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Sinyal Letak Gagasan Utama, Cakupan Judul, dan Pertanyaan Teks",
-      "subjudul_ringkas": "Taksonomi penanda struktur wacana untuk menentukan tesis utama, gagasan paragraf, judul tepat, dan pertanyaan riset.",
+      "judul_blok": "Peta Sinyal Gagasan Utama, Judul, dan Pertanyaan Teks",
+      "subjudul_ringkas": "Panduan membaca sinyal teks untuk mengunci ide pokok, judul yang pas, dan pertanyaan utama bacaan.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
@@ -35,62 +35,62 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Sinyal Tesis Utama Seluruh Wacana",
-          "ringkasan_kelompok": "Penanda posisi gagasan sentral untuk menjawab soal topik dan main idea.",
+          "nama_kelompok": "Sinyal Gagasan Utama Seluruh Wacana",
+          "ringkasan_kelompok": "Petunjuk posisi ide sentral untuk menjawab soal topik dan main idea.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Pola Deduktif di Kalimat Awal",
-              "penjelasan_singkat": "Tesis muncul langsung di kalimat pertama paragraf pembuka, lalu diikuti bukti atau contoh spesifik.",
+              "penjelasan_singkat": "Ide pokok muncul langsung di kalimat pertama paragraf pembuka, lalu diikuti bukti atau contoh spesifik.",
               "contoh_penerapan": "\"**Urban vertical farming reduces water consumption by 90 percent** compared to traditional agriculture. For instance, aeroponic towers in Singapore...\"",
-              "jebakan_atau_catatan": "Jangan pilih opsi tentang aeroponik Singapura karena itu sekadar bukti pendukung (*too narrow*).",
+              "jebakan_atau_catatan": "Jangan pilih opsi tentang menara aeroponik Singapura karena itu cuma contoh pendukung (*too narrow*).",
               "visual": null
             },
             {
               "judul_poin": "Pola Hook-to-Thesis di Akhir Paragraf 1",
-              "penjelasan_singkat": "Paragraf dibuka fakta umum atau anekdot, lalu tesis sebenarnya diletakkan pada kalimat terakhir paragraf pertama.",
+              "penjelasan_singkat": "Paragraf dibuka fakta umum atau cerita ringan, lalu gagasan utamanya ditaruh di kalimat terakhir paragraf pertama.",
               "contoh_penerapan": "\"Coffee is traded globally every day. **Yet, rising temperatures threaten to halve suitable Arabica farmland by 2050.**\"",
-              "jebakan_atau_catatan": "Kalimat pertama hanyalah pancingan konteks (*hook*); ide pokok selalu memuat klaim spesifik setelahnya.",
+              "jebakan_atau_catatan": "Kalimat pertama cuma pemanasan (*hook*); ide pokok selalu memuat klaim spesifik setelahnya.",
               "visual": null
             },
             {
-              "judul_poin": "Pivot Kontras Pembantah Asumsi Umum",
-              "penjelasan_singkat": "Penulis mengutip anggapan lama, lalu membaliknya dengan kata sinyal kontras untuk menyatakan tesis utama.",
+              "judul_poin": "Pola Bantahan (Membalik Asumsi Umum)",
+              "penjelasan_singkat": "Penulis mengutip anggapan lama, lalu membaliknya dengan kata sinyal kontras untuk menyatakan pendapat aslinya.",
               "contoh_penerapan": "\"Many assume multitasking boosts productivity. **However, neuroscientific studies reveal it actually fragments attention and slows cognitive processing.**\"",
-              "jebakan_atau_catatan": "Opsi pengecoh sering mengutip asumsi awal sebelum kata *however* seolah-olah itu pendapat penulis.",
+              "jebakan_atau_catatan": "Opsi pengecoh sering mengutip anggapan lama sebelum kata *however* seolah-olah itu kesimpulan penulis.",
               "visual": null
             },
             {
-              "judul_poin": "Sintesis Kalimat Topik Antarparagraf",
-              "penjelasan_singkat": "Jika tesis tunggal absen, gabungkan subjek berulang dari kalimat pertama setiap paragraf isi ($\\text{P2} + \\text{P3} + \\text{P4}$).",
+              "judul_poin": "Gabungan Kalimat Topik Tiap Paragraf",
+              "penjelasan_singkat": "Kalau tidak ada satu kalimat tesis tunggal, gabungkan subjek yang berulang di awal tiap paragraf isi ($\\text{P2} + \\text{P3} + \\text{P4}$).",
               "contoh_penerapan": "P2: \"**Solar microgrids** cut rural energy costs.\" P3: \"**Solar microgrids** also prevent grid blackouts during storms.\"",
-              "jebakan_atau_catatan": "Hindari opsi yang hanya merangkum P2 tanpa mencakup aspek keandalan jaringan di P3.",
+              "jebakan_atau_catatan": "Hindari opsi yang cuma merangkum P2 tanpa memasukkan poin keandalan jaringan listrik di P3.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Penanda Gagasan Pokok Paragraf Spesifik",
-          "ringkasan_kelompok": "Sinyal transisi untuk mengunci inti satu paragraf tanpa melebar ke paragraf lain.",
+          "ringkasan_kelompok": "Kata penghubung untuk mengunci inti satu paragraf tanpa melebar ke paragraf lain.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Sinyal Ekspansi Argumen (Furthermore / Moreover)",
-              "penjelasan_singkat": "Menandakan paragraf tersebut menambahkan alasan baru atau dimensi berbeda yang masih mendukung tesis utama.",
+              "judul_poin": "Sinyal Penambah Argumen (Furthermore / Moreover)",
+              "penjelasan_singkat": "Menandakan paragraf tersebut menambahkan alasan baru atau sudut pandang berbeda yang masih mendukung ide utama.",
               "contoh_penerapan": "\"**Beyond economic savings, remote work significantly lowers corporate carbon emissions** by eliminating daily commuter traffic.\"",
-              "jebakan_atau_catatan": "Fokus pada variabel baru setelah sinyal (*carbon emissions*), bukan mengulang topik paragraf sebelumnya (*economic savings*).",
+              "jebakan_atau_catatan": "Fokus pada variabel baru setelah sinyal (*carbon emissions*), bukan mengulang bahasan paragraf sebelumnya (*economic savings*).",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Kontras atau Limitasi (Conversely / Nonetheless)",
-              "penjelasan_singkat": "Paragraf berfokus pada pengecualian, keterbatasan, atau sudut pandang berlawanan terhadap klaim paragraf sebelumnya.",
+              "judul_poin": "Sinyal Pertentangan atau Batasan (Conversely / Nonetheless)",
+              "penjelasan_singkat": "Paragraf berfokus pada pengecualian, keterbatasan, atau kritik terhadap klaim di paragraf sebelumnya.",
               "contoh_penerapan": "\"**Conversely, critics argue that algorithmic grading reinforces historical biases** embedded in training datasets.\"",
-              "jebakan_atau_catatan": "Pastikan opsi jawaban mengandung unsur pertentangan atau kritik, bukan dukungan terhadap sistem penilaian tersebut.",
+              "jebakan_atau_catatan": "Pastikan opsi jawaban memuat unsur kritik atau pertentangan, bukan dukungan terhadap sistem penilaian tersebut.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Kausalitas dan Solusi (Consequently / To mitigate)",
-              "penjelasan_singkat": "Menunjukkan bahwa inti paragraf adalah dampak lanjutan suatu fenomena atau langkah penyelesaian masalah.",
+              "judul_poin": "Sinyal Dampak dan Solusi (Consequently / To mitigate)",
+              "penjelasan_singkat": "Menunjukkan bahwa inti paragraf adalah akibat lanjutan suatu masalah atau langkah penyelesaiannya.",
               "contoh_penerapan": "\"**To mitigate coastal erosion, engineers are restoring mangrove forests** along vulnerable tropical shorelines.\"",
               "jebakan_atau_catatan": "Jangan tertukar antara penyebab masalah di paragraf sebelumnya dengan aksi solusi di paragraf ini.",
               "visual": null
@@ -99,28 +99,28 @@
         },
         {
           "nama_kelompok": "Pola Cakupan Judul & Pertanyaan Sentral",
-          "ringkasan_kelompok": "Formula mencocokkan ruang lingkup judul dan pertanyaan riset dengan keseluruhan isi wacana.",
+          "ringkasan_kelompok": "Cara mencocokkan ruang lingkup judul dan pertanyaan dengan isi seluruh teks.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Struktur Judul Tepat (Topik + Sudut Pandang)",
-              "penjelasan_singkat": "Judul terbaik berbentuk frasa benda yang mengikat subjek utama dan fokus spesifik teks secara proporsional.",
+              "penjelasan_singkat": "Judul terbaik berbentuk frasa benda ringkas yang mengikat subjek utama dan fokus pembahasan teks secara seimbang.",
               "contoh_penerapan": "Teks dampak mikroplastik pada rantai makanan laut $\\rightarrow$ \"**Microplastics in Marine Food Webs: Ecological Consequences**\".",
-              "jebakan_atau_catatan": "Tolak judul terlalu umum (\"*Ocean Pollution*\") atau terlalu sempit hanya membahas satu spesies ikan.",
+              "jebakan_atau_catatan": "Tolak judul terlalu umum (\"*Ocean Pollution*\") atau terlalu sempit karena cuma menyebut satu spesies ikan.",
               "visual": null
             },
             {
-              "judul_poin": "Pertanyaan Mekanisme & Kausalitas (How / Why)",
-              "penjelasan_singkat": "Teks eksplanasi proses atau alasan fenomena selalu menjawab pertanyaan terbuka *How* atau *Why*.",
+              "judul_poin": "Pertanyaan Proses & Alasan (How / Why)",
+              "penjelasan_singkat": "Teks yang menjelaskan cara kerja atau penyebab suatu fenomena selalu menjawab pertanyaan terbuka *How* atau *Why*.",
               "contoh_penerapan": "Teks menjelaskan proses tidur membersihkan racun otak $\\rightarrow$ \"**How does sleep clear metabolic waste from the brain?**\"",
-              "jebakan_atau_catatan": "Hindari opsi pertanyaan *Yes/No* (*Does sleep...*) karena teks menguraikan mekanisme, bukan sekadar konfirmasi.",
+              "jebakan_atau_catatan": "Hindari opsi pertanyaan *Yes/No* (*Does sleep...*) karena bacaan menguraikan prosesnya, bukan sekadar ya atau tidak.",
               "visual": null
             },
             {
-              "judul_poin": "Pertanyaan Komparatif & Evaluatif (To what extent)",
-              "penjelasan_singkat": "Teks yang membandingkan dua metode atau menimbang efektivitas kebijakan menjawab pertanyaan komparatif atau tingkat pengaruh.",
+              "judul_poin": "Pertanyaan Perbandingan & Sejauh Mana (To what extent)",
+              "penjelasan_singkat": "Teks yang membandingkan dua metode atau menilai efektivitas kebijakan menjawab pertanyaan komparatif atau tingkat pengaruh.",
               "contoh_penerapan": "Teks membandingkan baterai litium dan natrium $\\rightarrow$ \"**How do sodium-ion batteries compare to lithium-ion alternatives?**\"",
-              "jebakan_atau_catatan": "Opsi benar wajib menyebut kedua variabel pembanding, bukan hanya menanyakan keunggulan satu jenis baterai.",
+              "jebakan_atau_catatan": "Opsi benar wajib menyebut kedua hal yang dibandingkan, bukan hanya menanyakan keunggulan satu jenis baterai.",
               "visual": null
             }
           ]
@@ -134,8 +134,8 @@
       "nama_variasi": "Primary Topic / Main Idea of the Entire Passage",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk kalimat pertama & terakhir Paragraf 1 ('Urban Heat Island effect'), kalimat pertama Paragraf 2 ('consequences'), dan kalimat pertama Paragraf 3 ('counteract these vulnerabilities').",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Skimming Struktur:** Identifikasi pola alur teks: Paragraf 1 mendefinisikan *Urban Heat Island (UHI)* dan penyebabnya; Paragraf 2 memaparkan dampak kesehatan/ekologi; Paragraf 3 menjelaskan solusi *green infrastructure*.\n2. **Sintesis Tesis:** Gabungkan benang merah ketiga paragraf menjadi satu pernyataan utuh: *causes, impacts, and mitigation strategies of the Urban Heat Island effect*.\n3. **Parafrasa ke Opsi:** Cari opsi yang menggunakan sinonim akademis (misal: *mitigate* $\\rightarrow$ *alleviate*, *consequences* $\\rightarrow$ *adverse effects*).\n\n**Deteksi Jebakan:**\n* *Jebakan Sempit:* Hanya menyebut *reflective cool roofs* (hanya detail Paragraf 3).\n* *Jebakan Ekstrem:* Menyatakan *green infrastructure completely eliminates global warming* (tidak sesuai teks).",
-      "kunci_pembeda": "Main idea seluruh teks wajib merangkum seluruh fungsi paragraf (definisi, dampak, solusi), bukan hanya menonjolkan satu aspek.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Petakan Alur Paragraf:** Baca kalimat pertama tiap paragraf untuk melihat kerangka besarnya. Paragraf 1 mengenalkan *Urban Heat Island (UHI)* dan penyebabnya. Paragraf 2 memaparkan dampaknya bagi kesehatan dan lingkungan. Paragraf 3 membahas solusinya lewat *green infrastructure*.\n2. **Jahit Benang Merahnya:** Gabungkan ketiga bagian tadi menjadi satu ide utuh: penyebab, dampak, dan cara mengatasi efek UHI (*causes, impacts, and mitigation strategies of the Urban Heat Island effect*).\n3. **Cari Parafrasa di Opsi:** Pembuat soal jarang menyalin kata persis dari teks. Cari padanan katanya (misalnya *mitigate* $\\rightarrow$ *alleviate*, atau *consequences* $\\rightarrow$ *adverse effects*).\n\n**Cek Jebakan:**\n* *Terlalu Sempit:* Cuma menyebut *reflective cool roofs* (ini cuma salah satu contoh di Paragraf 3).\n* *Terlalu Ekstrem:* Mengklaim *green infrastructure completely eliminates global warming* (berlebihan dan melenceng dari teks).",
+      "kunci_pembeda": "Main idea seluruh bacaan wajib merangkum peran semua paragraf (definisi, dampak, solusi), bukan menonjolkan satu bagian saja.",
       "visual": null
     },
     {
@@ -143,8 +143,8 @@
       "nama_variasi": "Main Idea of a Specific Paragraph",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Fokus pada Paragraf 2: 'This persistent thermal elevation triggers cascading ecological and public health consequences...' diikuti detail gangguan kardiovaskular, ozon, dan lonjakan energi.",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Isolasi Zona Baca:** Abaikan Paragraf 1 dan 3; fokus penuh pada Paragraf 2.\n2. **Temukan Topic Sentence:** Kalimat pertama Paragraf 2 berfungsi sebagai kalimat topik (*triggers cascading ecological and public health consequences*).\n3. **Cek Kalimat Penjelas:** Kalimat 2–4 merinci bukti konkret dari kalimat topik tersebut: stres kardiovaskular (kesehatan), pembentukan ozon (ekologi/udara), dan lonjakan beban listrik (infrastruktur/emisi).\n4. **Eliminasi Opsi:** Pilih opsi yang memayungi seluruh detail tersebut secara kolektif.\n\n**Deteksi Jebakan:**\n* *Jebakan Detail:* Opsi yang hanya menyebut *cardiovascular stress among the elderly* (ini adalah *supporting detail*, bukan *main idea* paragraf).\n* *Jebakan Lintas Paragraf:* Opsi yang memasukkan *municipal zoning laws* (milik Paragraf 3).",
-      "kunci_pembeda": "Gagasan inti paragraf adalah payung konseptual yang membawahi seluruh contoh spesifik di dalam paragraf tersebut saja.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Pasang Kacamata Kuda:** Tutup dulu Paragraf 1 dan 3 dari fokusmu, lalu konsentrasi penuh pada Paragraf 2.\n2. **Kunci Kalimat Topik:** Kalimat pertama Paragraf 2 langsung membuka inti paragraf ini (*triggers cascading ecological and public health consequences*).\n3. **Cek Fungsi Kalimat Berikutnya:** Kalimat 2 sampai 4 cuma menjabarkan bukti dari kalimat pertama: stres jantung (kesehatan), pembentukan ozon (kualitas udara), dan lonjakan beban listrik (energi).\n4. **Pilih Payung Besarnya:** Cari opsi yang membawahi semua contoh tadi secara bersamaan.\n\n**Cek Jebakan:**\n* *Jebakan Detail:* Opsi yang cuma menyebut *cardiovascular stress among the elderly* (ini sekadar contoh pendukung, bukan inti paragraf).\n* *Jebakan Lintas Paragraf:* Opsi yang menyelipkan *municipal zoning laws* (ini baru dibahas di Paragraf 3).",
+      "kunci_pembeda": "Gagasan inti paragraf adalah payung besar yang membawahi seluruh contoh spesifik di dalam paragraf itu saja.",
       "visual": null
     },
     {
@@ -152,8 +152,8 @@
       "nama_variasi": "Best Title for the Passage",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk keseluruhan 3 paragraf stimulus mengenai fenomena Urban Heat Island, dampaknya pada warga kota, dan pendekatan desain perkotaan regeneratif.",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Identifikasi Kata Kunci Dominan:** Frasa *Urban Heat Island (UHI)*, *impacts/consequences*, dan *green infrastructure/urban design* mendominasi teks.\n2. **Terapkan Uji Cakupan (Scope Test):** Judul ideal berbentuk frasa benda ringkas yang mencerminkan keseluruhan isi wacana.\n3. **Bandingkan Kandidat Judul:**\n   * *Urban Heat Islands: Causes, Impacts, and Green Mitigation* (Tepat — mencakup Paragraf 1, 2, dan 3).\n   * *The History of Asphalt and Concrete in Modern Cities* (Salah — terlalu luas dan melenceng).\n   * *Mandating Rooftop Gardens on Commercial Buildings* (Salah — terlalu sempit, hanya 1 contoh di Paragraf 3).",
-      "kunci_pembeda": "Judul terbaik berfungsi seperti label kemasan yang akurat: tidak boleh lebih kecil dari isi teks maupun menjanjikan materi di luar teks.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Tangkap Kata Kunci yang Berulang:** Frasa *Urban Heat Island (UHI)*, *impacts/consequences*, dan *green infrastructure/urban design* muncul sebagai tulang punggung teks.\n2. **Uji Layak Judul:** Anggap judul seperti label kemasan produk—isinya harus pas mewakili seluruh bacaan tanpa melebih-lebihkan.\n3. **Bandingkan Tiga Kandidat Ini:**\n   * *Urban Heat Islands: Causes, Impacts, and Green Mitigation* (Tepat — merangkum Paragraf 1, 2, dan 3 secara seimbang).\n   * *The History of Asphalt and Concrete in Modern Cities* (Salah — melebar jauh dari fokus teks).\n   * *Mandating Rooftop Gardens on Commercial Buildings* (Salah — terlalu sempit karena cuma mengambil satu contoh di Paragraf 3).",
+      "kunci_pembeda": "Judul terbaik bekerja seperti label kemasan yang akurat: tidak boleh lebih kecil dari isi teks maupun menjanjikan bahasan di luar teks.",
       "visual": null
     },
     {
@@ -161,8 +161,8 @@
       "nama_variasi": "Central Question Answered by the Text",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Tinjau transisi antarparagraf: Mengapa kota lebih panas (P1) $\\rightarrow$ Apa akibatnya bagi kesehatan dan energi (P2) $\\rightarrow$ Bagaimana perencana kota mengatasinya (P3).",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Ubah Tesis Jadi Pertanyaan:** Konversikan struktur *Phenomenon + Consequences + Solutions* menjadi kalimat tanya (*Wh-question*).\n2. **Cocokkan dengan Bukti Teks:** Pastikan setiap bagian pertanyaan dijawab secara eksplisit di dalam wacana.\n   * *Pertanyaan Tepat:* *What drives the Urban Heat Island effect, and how can cities mitigate its impacts?* (Dijawab tuntas oleh P1, P2, dan P3).\n3. **Eliminasi Pertanyaan Tak Terjawab:** Singkirkan opsi pertanyaan yang menanyakan hal absen dari teks.\n\n**Deteksi Jebakan:**\n* *Unanswered Question:* *How much does it cost to install cool roofs globally?* (Biaya finansial tidak pernah dibahas di teks).\n* *Partial Question:* *Why do vehicles emit waste heat?* (Terlalu mikro).",
-      "kunci_pembeda": "Pertanyaan utama yang tepat harus memiliki jawaban lengkap yang tersebar merata di seluruh paragraf wacana.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Ubah Alur Teks Jadi Pertanyaan:** Ubah pola *Fenomena + Dampak + Solusi* menjadi kalimat tanya terbuka (*Wh-question*).\n2. **Cocokkan dengan Bukti Teks:** Pastikan setiap bagian dari pertanyaan itu benar-benar dijawab tuntas oleh bacaan.\n   * *Pertanyaan Tepat:* *What drives the Urban Heat Island effect, and how can cities mitigate its impacts?* (Penyebabnya dijawab di P1, dampaknya di P2, dan solusinya di P3).\n3. **Coret Pertanyaan yang Tak Terjawab:** Langsung eliminasi opsi yang menanyakan hal yang absen dari teks.\n\n**Cek Jebakan:**\n* *Tidak Ada di Teks:* *How much does it cost to install cool roofs globally?* (Biaya pemasangan tidak pernah disinggung penulis).\n* *Terlalu Mikro:* *Why do vehicles emit waste heat?* (Cuma detail kecil di Paragraf 1).",
+      "kunci_pembeda": "Pertanyaan utama yang tepat harus punya jawaban lengkap yang tersebar merata di seluruh paragraf bacaan.",
       "visual": null
     }
   ],
@@ -183,7 +183,7 @@
         "E. Ground-level ozone formation is the most dangerous consequence of urban expansion for elderly residents and outdoor workers."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "**Kunci: C.** Opsi C menyintesis seluruh alur wacana: fenomena UHI (Paragraf 1), risiko kesehatan dan ekologi (Paragraf 2), serta solusi infrastruktur hijau (Paragraf 3).\n* **A salah:** Kata ekstrem *sole reason* (mengabaikan panas limbah kendaraan dan AC).\n* **B & E salah:** *Too narrow*, hanya mengambil satu detail kecil dari Paragraf 2.\n* **D salah:** *Too narrow* dan mengandung klaim keharusan (*strictly ban*) yang tidak disebutkan teks.",
+      "bedah_cepat_markdown": "**Kunci: C.** Opsi C menjahit seluruh alur bacaan dengan rapi: fenomena UHI (Paragraf 1), risiko kesehatan dan ekologi (Paragraf 2), serta solusi infrastruktur hijau (Paragraf 3).\n* **A salah:** Ada kata mutlak *sole reason* (satu-satunya alasan), padahal teks juga menyebut hilangnya vegetasi serta panas limbah kendaraan dan AC.\n* **B & E salah:** Terlalu sempit (*too narrow*) karena cuma comot satu detail kecil dari Paragraf 2.\n* **D salah:** Terlalu sempit dan memaksakan larangan keras (*strictly ban*) yang tidak pernah dinyatakan penulis.",
       "visual": null
     },
     {
@@ -201,7 +201,7 @@
         "E. Evaluating the effectiveness of permeable pavements in reducing summer peak energy demand"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Kunci: B.** Kalimat pertama Paragraf 2 (*triggers cascading ecological and public health consequences*) langsung dirinci melalui gangguan kardiovaskular (*human health*), pembentukan ozon (*air quality*), dan lonjakan beban listrik (*energy systems*).\n* **A salah:** Membahas isi Paragraf 1.\n* **C salah:** Teks tidak membandingkan angka statistik antara kota dan desa.\n* **D & E salah:** Membahas solusi kebijakan dan teknologi yang baru muncul di Paragraf 3.",
+      "bedah_cepat_markdown": "**Kunci: B.** Kalimat pembuka Paragraf 2 (*triggers cascading ecological and public health consequences*) langsung dijabarkan lewat tiga bukti: gangguan kardiovaskular (*human health*), pembentukan ozon (*air quality*), dan lonjakan beban listrik (*energy systems*).\n* **A salah:** Ini bahasan Paragraf 1 tentang cara beton menyerap panas.\n* **C salah:** Teks sama sekali tidak membandingkan angka penyakit antara lansia kota dan pekerja desa.\n* **D & E salah:** Solusi kebijakan dan teknologi (*permeable pavements*) baru muncul di Paragraf 3.",
       "visual": null
     },
     {
@@ -220,7 +220,7 @@
         "E. No - No - Yes"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Kunci: B (Yes - No - Yes).**\n* **Pernyataan 1 (Yes):** Judul mencakup fenomena UHI, risiko kesehatan (Paragraf 2), dan desain kota hijau (Paragraf 3) secara proporsional.\n* **Pernyataan 2 (No):** Biaya finansial bagi pengembang komersial (*cost*) tidak pernah dibahas di dalam teks.\n* **Pernyataan 3 (Yes):** Pertanyaan penyebab UHI (Paragraf 1) dan cara mengatasinya (Paragraf 3) dijawab langsung oleh struktur wacana.",
+      "bedah_cepat_markdown": "**Kunci: B (Yes - No - Yes).**\n* **Pernyataan 1 (Yes):** Judul ini merangkum fenomena UHI, risiko kesehatan (Paragraf 2), dan desain kota hijau (Paragraf 3) secara proporsional.\n* **Pernyataan 2 (No):** Soal biaya bagi pengembang komersial (*cost*) tidak pernah dibahas di bagian mana pun dalam bacaan.\n* **Pernyataan 3 (Yes):** Pertanyaan tentang penyebab UHI (Paragraf 1) dan cara mengatasinya (Paragraf 3) dijawab langsung oleh struktur bacaan.",
       "visual": null
     }
   ]

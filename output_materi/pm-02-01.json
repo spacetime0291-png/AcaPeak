@@ -9,139 +9,139 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Harga 2 kopi dan 1 roti adalah Rp50.000, sedangkan 1 kopi dan 2 roti Rp40.000. Jika Anda hanya ingin membeli 1 kopi dan 1 roti, apakah Anda wajib menghitung harga masing-masing barang terlebih dahulu?",
+      "pertanyaan_pemantik": "Harga 2 kopi dan 1 roti adalah Rp50.000, sedangkan 1 kopi dan 2 roti Rp40.000. Kalau kamu cuma mau beli 1 kopi dan 1 roti, haruskah cari harga satuannya dulu?",
       "opsi_cepat": [
         "Wajib eliminasi satu per satu",
         "Tidak perlu, langsung jumlahkan keduanya lalu bagi 3"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Menjumlahkan kedua persamaan langsung menghasilkan $3(\\text{kopi} + \\text{roti}) = \\text{Rp}90.000$, sehingga paket $(1\\text{ kopi} + 1\\text{ roti})$ langsung ketemu Rp30.000 dalam 5 detik."
+      "penjelasan_kilat": "Jumlahkan saja kedua persamaan: $3(\\text{kopi} + \\text{roti}) = \\text{Rp}90.000$. Bagi $3$, harga paket $(1\\text{ kopi} + 1\\text{ roti})$ langsung ketemu Rp30.000 dalam 5 detik."
     },
-    "konsep_inti_markdown": "- **Formulating**: Tetapkan variabel eksplisit untuk besaran yang belum diketahui beserta satuannya (misal: harga satuan dalam ribuan rupiah).\n- **Employing**: Ubah setiap syarat cerita menjadi persamaan linear; gunakan kombinasi aljabar (penjumlahan/pengurangan antarpersamaan) sebelum melakukan eliminasi penuh.\n- **Interpreting**: Uji kembali nilai variabel terhadap syarat dunia nyata (wajib bilangan bulat positif untuk jumlah unit/orang atau pembulatan praktis).",
+    "konsep_inti_markdown": "- **Terjemahkan ke Variabel (Formulating)**: Tentukan huruf untuk hal yang belum diketahui beserta satuannya (misalnya harga dalam ribuan rupiah).\n- **Olah dengan Cerdas (Employing)**: Ubah tiap info cerita jadi persamaan. Cek dulu apakah persamaan bisa langsung dijumlah atau dikurang sebelum eliminasi panjang.\n- **Cek Akal Sehat (Interpreting)**: Pastikan hasil akhir masuk akal di dunia nyata. Jumlah orang, tiket, atau mobil wajib bilangan bulat positif.",
     "radar_jebakan_utbk": [
-      "Tertukar mendefinisikan variabel antara harga satuan barang dengan kuantitas unit barang yang dibeli.",
-      "Mengabaikan syarat bilangan bulat non-negatif pada variabel jumlah objek (orang, kendaraan, tiket) sehingga memilih solusi pecahan atau nol."
+      "Tertukar saat menulis variabel: harga satuan malah dijadikan koefisien, bukan jumlah barangnya.",
+      "Lupa syarat bilangan bulat untuk benda utuh (orang, kendaraan, tiket), lalu tetap memilih jawaban pecahan atau nol."
     ],
-    "stimulus_utama_bersama": "Pengelola Taman Sains dan Edukasi **NusaTech Park** merilis rincian tarif layanan dan sistem penukaran poin bagi pengunjung pada tahun 2026 sebagai berikut:\n\n1. **Paket Tiket Wahana**: Terdapat tiga zona wahana utama, yakni Robotika ($x$), Antariksa ($y$), dan Energi ($z$). Pengunjung dapat membeli paket bundling: **Paket Eksplorasi** (2 tiket Robotika dan 1 tiket Antariksa) seharga Rp110.000; **Paket Inovasi** (1 tiket Robotika dan 2 tiket Energi) seharga Rp125.000; serta **Paket Lengkap** (1 tiket untuk masing-masing ketiga zona) seharga Rp120.000.\n2. **Konversi Token Permainan**: Permainan simulasi memberikan tiga jenis token logam. Nilai 1 Token Emas ($E$) setara dengan gabungan 2 Token Perak ($P$) dan 1 Token Perunggu ($G$). Sementara itu, 3 Token Perak setara dengan 5 Token Perunggu, dengan nilai dasar 1 Token Perunggu sebesar 15 poin.\n3. **Sewa Fasilitas Rombongan**: Data transaksi tiga rombongan sekolah untuk sewa loker kecil ($a$), loker sedang ($b$), dan perangkat *audio-guide* ($c$) tercatat: Rombongan A (2 loker kecil, 3 loker sedang, 1 *audio-guide*) membayar Rp170.000; Rombongan B (3 loker kecil, 1 loker sedang, 2 *audio-guide*) membayar Rp170.000; dan Rombongan C (1 loker kecil, 2 loker sedang, 3 *audio-guide*) membayar Rp200.000.\n4. **Subsidi Armada Antar-Jemput**: Panitia mengalokasikan dana subsidi tepat Rp540.000 untuk menyewa mobil listrik berkapasitas 4 penumpang (tarif Rp60.000/unit) dan minibus listrik berkapasitas 7 penumpang (tarif Rp90.000/unit), dengan syarat minimal menyewa 1 unit dari setiap jenis armada.",
+    "stimulus_utama_bersama": "Pengelola Taman Sains dan Edukasi **NusaTech Park** merilis rincian tarif layanan dan sistem penukaran poin tahun 2026 berikut ini:\n\n1. **Paket Tiket Wahana**: Ada tiga zona wahana, yaitu Robotika ($x$), Antariksa ($y$), dan Energi ($z$). Harga tiap paket adalah jumlah harga satuan tiket di dalamnya: **Paket Eksplorasi** (2 Robotika, 1 Antariksa) Rp110.000; **Paket Inovasi** (1 Robotika, 2 Energi) Rp125.000; dan **Paket Lengkap** (1 tiket tiap zona) Rp120.000.\n2. **Konversi Token Permainan**: Permainan simulasi memberi tiga jenis token. Nilai 1 Token Emas ($E$) sama dengan 2 Token Perak ($P$) ditambah 1 Token Perunggu ($G$). Selain itu, 3 Token Perak sama dengan 5 Token Perunggu, dengan 1 Token Perunggu bernilai 15 poin.\n3. **Sewa Fasilitas Rombongan**: Data sewa loker kecil ($a$), loker sedang ($b$), dan *audio-guide* ($c$) dari tiga sekolah tercatat sebagai berikut: Rombongan A (2 loker kecil, 3 loker sedang, 1 *audio-guide*) membayar Rp170.000; Rombongan B (3 loker kecil, 1 loker sedang, 2 *audio-guide*) Rp170.000; dan Rombongan C (1 loker kecil, 2 loker sedang, 3 *audio-guide*) Rp200.000.\n4. **Subsidi Armada Antar-Jemput**: Panitia menyiapkan dana subsidi tepat Rp540.000 untuk menyewa mobil listrik (kapasitas 4 penumpang, tarif Rp60.000/unit) dan minibus listrik (kapasitas 7 penumpang, tarif Rp90.000/unit). Panitia wajib menyewa minimal 1 unit dari setiap jenis armada.",
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Pemodelan dan Sifat SPLDV-SPLTV Kontekstual UTBK",
-      "subjudul_ringkas": "Panduan formula pemodelan aljabar, kombinasi cepat antarpersamaan, dan syarat bilangan bulat kontekstual pada Penalaran Matematika.",
+      "subjudul_ringkas": "Panduan cepat mengubah soal cerita jadi persamaan, trik kombinasi langsung, dan syarat bilangan bulat di Penalaran Matematika.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
-        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_1": "Konsep & Syarat",
         "kolom_2": "Contoh Hitung Mini",
         "kolom_3": "Jebakan / Trik Cepat"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Pemodelan Transaksi, Paket Bundling, dan Komposisi",
-          "ringkasan_kelompok": "Mengubah narasi transaksi, harga paket, dan kadar campuran menjadi sistem persamaan linear.",
+          "nama_kelompok": "Pemodelan Transaksi, Paket Bundling, dan Campuran",
+          "ringkasan_kelompok": "Cara cepat mengubah cerita belanja, paket tiket, dan kadar campuran jadi persamaan linear.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Definisi Variabel dan Penyeragaman Satuan",
-              "penjelasan_singkat": "Tetapkan variabel untuk besaran tak diketahui dan samakan seluruh satuan (ribuan rupiah, gram, menit) sebelum menyusun persamaan linear.",
-              "contoh_penerapan": "Misal harga kopi $x$ ribu dan roti $y$ ribu; transaksi Rp25.000 untuk dua kopi dan satu roti ditulis **$2x + y = 25$**.",
-              "jebakan_atau_catatan": "Mencampur satuan rupiah dan ribuan rupiah dalam satu sistem menyebabkan hasil kali lipat seribu yang keliru.",
+              "judul_poin": "Tentukan Variabel & Samakan Satuan",
+              "penjelasan_singkat": "Beri nama variabel untuk nilai yang dicari. Samakan semua satuan (misalnya ribuan rupiah atau gram) sebelum menghitung.",
+              "contoh_penerapan": "Misal harga kopi $x$ ribu dan roti $y$ ribu. Belanja Rp25.000 untuk 2 kopi dan 1 roti ditulis **$2x + y = 25$**.",
+              "jebakan_atau_catatan": "Jangan campur satuan rupiah dan ribuan rupiah dalam satu persamaan. Salah satuan bikin hasil meleset seribu kali lipat.",
               "visual": null
             },
             {
-              "judul_poin": "Pemodelan Transaksi Tiket dan Paket Bundling",
-              "penjelasan_singkat": "Ubah setiap paket pembelian menjadi persamaan $\\sum a_i x_i = C$ dengan $a_i$ kuantitas item dan $x_i$ harga satuan.",
-              "contoh_penerapan": "Paket A ($2$ dewasa, $1$ anak) Rp110 ribu dan Paket B ($1$ dewasa, $2$ anak) Rp100 ribu: **$2x + y = 110$** dan **$x + 2y = 100$**.",
-              "jebakan_atau_catatan": "Tertukar menempatkan harga satuan sebagai koefisien; koefisien wajib berupa jumlah unit, sedangkan variabel menyatakan harga per unit.",
+              "judul_poin": "Ubah Paket Bundling Jadi Persamaan",
+              "penjelasan_singkat": "Tiap paket belanja jadi satu persamaan $\\sum a_i x_i = C$, dengan $a_i$ adalah jumlah barang dan $x_i$ adalah harga satuannya.",
+              "contoh_penerapan": "Paket A (2 dewasa, 1 anak) Rp110 ribu dan Paket B (1 dewasa, 2 anak) Rp100 ribu ditulis **$2x + y = 110$** dan **$x + 2y = 100$**.",
+              "jebakan_atau_catatan": "Jangan tertukar menaruh harga di depan variabel. Angka di depan huruf selalu jumlah barang, sedangkan hurufnya adalah harga per unit.",
               "visual": null
             },
             {
-              "judul_poin": "Pemodelan Komposisi Nutrisi dan Kadar Campuran",
-              "penjelasan_singkat": "Susun dua persamaan terpisah: total massa ($x+y=M$) dan total kandungan zat aktif ($p_1x+p_2y=K$).",
-              "contoh_penerapan": "Campuran $x$ gram larutan $10\\%$ dan $y$ gram larutan $30\\%$ menjadi $200$ gram berkadar $18\\%$: **$x+y=200$** dan **$0,1x+0,3y=36$**.",
-              "jebakan_atau_catatan": "Mengalikan persentase tanpa total massa akhir ($0,1x+0,3y=18$) adalah jebakan umum; kalikan kadar akhir dengan total massa ($0,18 \\times 200 = 36$).",
+              "judul_poin": "Model Campuran & Kadar Persentase",
+              "penjelasan_singkat": "Buat dua persamaan terpisah: total berat ($x+y=M$) dan total isi zat aktif ($p_1x+p_2y=K$).",
+              "contoh_penerapan": "Campur $x$ gram larutan $10\\%$ dan $y$ gram larutan $30\\%$ jadi $200$ gram berkadar $18\\%$: **$x+y=200$** dan **$0,1x+0,3y=36$**.",
+              "jebakan_atau_catatan": "Jangan langsung menulis $0,1x+0,3y=18$. Kalikan dulu kadar akhir dengan total massa campuran: $0,18 \\times 200 = 36$.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Keseimbangan Timbangan, Logam Paduan, dan Konversi Poin",
-          "ringkasan_kelompok": "Menerapkan prinsip kesetimbangan massa, rata-rata tertimbang, dan skor pertandingan ke bentuk linear.",
+          "nama_kelompok": "Timbangan Setimbang, Logam Paduan, dan Konversi Poin",
+          "ringkasan_kelompok": "Menerapkan prinsip berat seimbang, rata-rata berbobot, dan sistem skor pertandingan ke bentuk linear.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Prinsip Kesetimbangan Massa pada Timbangan",
-              "penjelasan_singkat": "Pada posisi setimbang, jumlah massa seluruh benda di lengan kiri sama dengan lengan kanan: $\\sum m_{\\text{kiri}} = \\sum m_{\\text{kanan}}$.",
-              "contoh_penerapan": "Dua bola bermassa $a$ dan satu kubus $b$ yang setimbang dengan tiga silinder $c$ dimodelkan menjadi **$2a+b=3c$**.",
-              "jebakan_atau_catatan": "Abaikan massa wadah hanya jika kedua lengan memakai wadah identik; jika berbeda, masukkan massa wadah sebagai konstanta tambahan.",
+              "judul_poin": "Timbangan Setimbang (Kiri = Kanan)",
+              "penjelasan_singkat": "Saat timbangan sejajar, total massa di sisi kiri persis sama dengan sisi kanan: $\\sum m_{\\text{kiri}} = \\sum m_{\\text{kanan}}$.",
+              "contoh_penerapan": "Dua bola ($a$) dan satu kubus ($b$) setimbang dengan tiga silinder ($c$). Persamaannya: **$2a+b=3c$**.",
+              "jebakan_atau_catatan": "Berat wadah hanya boleh diabaikan jika wadah kiri dan kanan sama persis. Jika beda, ikutkan berat wadah ke dalam persamaan.",
               "visual": null
             },
             {
               "judul_poin": "Model Skor Menang, Seri, dan Kalah",
-              "penjelasan_singkat": "Nyatakan total pertandingan sebagai $m+s+k=N$ dan akumulasi skor sebagai $p_m m + p_s s - p_k k = S$.",
-              "contoh_penerapan": "Dari $10$ laga (menang $+3$, seri $+1$, kalah $-1$) diraih $18$ poin, sehingga diperoleh **$m+s+k=10$** dan **$3m+s-k=18$**.",
-              "jebakan_atau_catatan": "Skor penalti wajib bertanda negatif ($-p_k k$), bukan dijumlahkan; pastikan juga nilai $m, s, k$ berupa bilangan bulat non-negatif.",
+              "penjelasan_singkat": "Tulis total laga sebagai $m+s+k=N$ dan total poin sebagai $p_m m + p_s s - p_k k = S$.",
+              "contoh_penerapan": "Dari $10$ laga (menang $+3$, seri $+1$, kalah $-1$) diraih $18$ poin. Modelnya: **$m+s+k=10$** dan **$3m+s-k=18$**.",
+              "jebakan_atau_catatan": "Poin pengurangan (kalah) wajib bertanda minus ($-p_k k$). Pastikan juga nilai $m, s, k$ berupa bilangan bulat non-negatif.",
               "visual": null
             },
             {
-              "judul_poin": "Campuran Logam dan Rata-Rata Tertimbang",
-              "penjelasan_singkat": "Gabungan beberapa komponen berkadar berbeda memenuhi $\\sum w_i x_i = W_{\\text{total}}\\bar{x}$ dengan $w_i$ menyatakan massa tiap bagian.",
-              "contoh_penerapan": "Emas $18$ karat ($x$ gram) dan $24$ karat ($y$ gram) dilebur menjadi $60$ gram emas $20$ karat: **$18x+24y=1200$**.",
-              "jebakan_atau_catatan": "Kadar campuran tidak boleh dirata-ratakan langsung menjadi $\\frac{18+24}{2}$ kecuali massa kedua logam diketahui sama besar ($x=y$).",
+              "judul_poin": "Campuran Logam & Rata-Rata Berbobot",
+              "penjelasan_singkat": "Gabungan beberapa bahan berkadar beda memenuhi $\\sum w_i x_i = W_{\\text{total}}\\bar{x}$, dengan $w_i$ adalah massa tiap bahan.",
+              "contoh_penerapan": "Emas $18$ karat ($x$ gram) dan $24$ karat ($y$ gram) dilebur jadi $60$ gram emas $20$ karat: **$18x+24y=1200$**.",
+              "jebakan_atau_catatan": "Kadar campuran tidak bisa langsung dirata-rata jadi $\\frac{18+24}{2}$, kecuali berat kedua logam memang sama ($x=y$).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Kombinasi Aljabar Langsung dan Kecukupan Solusi",
-          "ringkasan_kelompok": "Menemukan nilai ekspresi target secara langsung tanpa mencari nilai variabel satu per satu.",
+          "nama_kelompok": "Trik Kombinasi Langsung dan Kecukupan Data",
+          "ringkasan_kelompok": "Mencari nilai paket yang ditanyakan secara langsung tanpa repot mencari nilai tiap variabel.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Penjumlahan Simetris untuk Nilai $x+y+z$",
-              "penjelasan_singkat": "Jika koefisien variabel bersiklus simetris, jumlahkan semua persamaan lalu bagi hasilnya dengan faktor persekutuan koefisien tersebut.",
-              "contoh_penerapan": "Dari $2x+y+z=14$, $x+2y+z=15$, dan $x+y+2z=11$, penjumlahan langsung memberi $4(x+y+z)=40$, sehingga **$x+y+z=10$**.",
-              "jebakan_atau_catatan": "Menghitung nilai $x, y, z$ terpisah membuang waktu; selalu cek koefisien ekspresi yang ditanyakan sebelum melakukan eliminasi penuh.",
+              "judul_poin": "Trik Jumlah Langsung untuk $x+y+z$",
+              "penjelasan_singkat": "Jika angka di depan $x, y, z$ berpola simetris, langsung jumlahkan semua persamaan lalu bagi dengan angka kembarnya.",
+              "contoh_penerapan": "Dari $2x+y+z=14$, $x+2y+z=15$, dan $x+y+2z=11$, jumlahkan semuanya: $4(x+y+z)=40$, jadi **$x+y+z=10$**.",
+              "jebakan_atau_catatan": "Mencari $x, y, z$ satu per satu hanya membuang waktu. Selalu intip bentuk yang ditanyakan sebelum mulai eliminasi.",
               "visual": null
             },
             {
-              "judul_poin": "Membentuk Ekspresi Target via Kombinasi Linear",
-              "penjelasan_singkat": "Cari pengali $k_1, k_2$ agar $k_1(\\text{Pers. 1}) + k_2(\\text{Pers. 2})$ menghasilkan koefisien yang persis sama dengan bentuk pertanyaan.",
-              "contoh_penerapan": "Diketahui $3x+2y+z=20$ dan $x+2y+3z=16$; jumlahkan kedua persamaan lalu bagi dua untuk memperoleh **$2x+2y+2z=18$**.",
-              "jebakan_atau_catatan": "Pada SPLTV dengan hanya dua persamaan, nilai $x, y, z$ tak tentu, tetapi kombinasi linear tertentu tetap bernilai tunggal.",
+              "judul_poin": "Cari Paket Target Tanpa Cari Variabel Satu-Satu",
+              "penjelasan_singkat": "Cari pengali $k_1, k_2$ agar gabungan $k_1(\\text{Pers. 1}) + k_2(\\text{Pers. 2})$ pas membentuk ekspresi yang ditanyakan.",
+              "contoh_penerapan": "Diketahui $3x+2y+z=20$ dan $x+2y+3z=16$. Jumlahkan keduanya lalu bagi dua untuk dapat **$2x+2y+2z=18$**.",
+              "jebakan_atau_catatan": "Meski 3 variabel cuma punya 2 persamaan (nilai $x, y, z$ tidak bisa dicari sendiri-sendiri), nilai kombinasi tertentu tetap bisa ketemu.",
               "visual": null
             },
             {
-              "judul_poin": "Syarat Solusi Tunggal dan Kecukupan Data",
-              "penjelasan_singkat": "SPLDV memiliki solusi tunggal jika dan hanya jika rasio koefisien antarvariabel tidak sebanding: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.",
-              "contoh_penerapan": "Persamaan $2x+4y=10$ dan $x+2y=5$ berkelipatan ($\\frac{2}{1}=\\frac{4}{2}=\\frac{10}{5}$), sehingga **tidak cukup menentukan nilai $x$ maupun $y$**.",
-              "jebakan_atau_catatan": "Pada soal Kecukupan Data UTBK, dua persamaan yang saling berkelipatan hanya terhitung satu persamaan independen.",
+              "judul_poin": "Cek Solusi Tunggal di Soal Kecukupan Data",
+              "penjelasan_singkat": "SPLDV punya satu jawaban pasti jika dan hanya jika perbandingan koefisiennya tidak sama: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.",
+              "contoh_penerapan": "Persamaan $2x+4y=10$ dan $x+2y=5$ saling berkelipatan ($\\frac{2}{1}=\\frac{4}{2}=\\frac{10}{5}$), jadi **tidak cukup untuk mencari $x$ maupun $y$**.",
+              "jebakan_atau_catatan": "Di soal Kecukupan Data UTBK, dua persamaan yang saling berkelipatan sebenarnya hanya terhitung satu informasi.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Kendala Bilangan Bulat Non-Negatif (Diophantine Kontekstual)",
-          "ringkasan_kelompok": "Menyelesaikan sistem persamaan tak tentu menggunakan syarat keterbagian dan batas bilangan bulat.",
+          "nama_kelompok": "Syarat Bilangan Bulat Positif (Diophantine Kontekstual)",
+          "ringkasan_kelompok": "Menyelesaikan persamaan dengan jumlah variabel lebih banyak lewat syarat keterbagian dan batas bilangan bulat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Syarat Keterbagian pada Persamaan Diophantine Linear",
-              "penjelasan_singkat": "Persamaan $ax+by=c$ memiliki solusi bilangan bulat jika dan hanya jika $\\text{FPB}(a,b)$ habis membagi konstanta $c$.",
-              "contoh_penerapan": "Pada $6x+9y=40$, nilai $\\text{FPB}(6,9)=3$ tidak habis membagi $40$, sehingga **tidak ada kombinasi unit bulat yang memenuhi**.",
-              "jebakan_atau_catatan": "Jangan memakai solusi pecahan jika variabel menyatakan jumlah orang, tiket, atau kemasan utuh; cek keterbagian konstanta terlebih dahulu.",
+              "judul_poin": "Cek Kelipatan FPB untuk Solusi Bulat",
+              "penjelasan_singkat": "Persamaan $ax+by=c$ hanya punya jawaban bilangan bulat jika $\\text{FPB}(a,b)$ habis membagi $c$.",
+              "contoh_penerapan": "Pada $6x+9y=40$, $\\text{FPB}(6,9)=3$ tidak habis membagi $40$. Artinya, **tidak ada kombinasi unit bulat yang memenuhi**.",
+              "jebakan_atau_catatan": "Jangan paksakan jawaban pecahan untuk jumlah orang, tiket, atau kemasan utuh. Cek dulu apakah konstantanya habis dibagi FPB.",
               "visual": null
             },
             {
-              "judul_poin": "Pencacahan Solusi Bulat Non-Negatif ($x,y \\ge 0$)",
-              "penjelasan_singkat": "Isolasi variabel dengan koefisien lebih besar, lalu uji nilai bulat dari $0$ hingga batas $\\lfloor \\frac{c}{a} \\rfloor$.",
-              "contoh_penerapan": "Untuk $5x+2y=24$ dengan $x,y \\in \\mathbb{Z}_{\\ge 0}$, uji $x \\in \\{0,2,4\\}$ menghasilkan **tiga pasangan: $(0,12)$, $(2,7)$, dan $(4,2)$**.",
-              "jebakan_atau_catatan": "Cermati frasa soal: syarat 'minimal membeli satu' berarti $x,y \\ge 1$, sehingga solusi bernilai nol seperti $(0,12)$ gugur.",
+              "judul_poin": "Cacah Kombinasi Bulat Positif & Nol ($x,y \\ge 0$)",
+              "penjelasan_singkat": "Pilih variabel berkoefisien paling besar, lalu uji angka bulatnya dari $0$ sampai batas $\\lfloor \\frac{c}{a} \\rfloor$.",
+              "contoh_penerapan": "Untuk $5x+2y=24$ ($x,y \\in \\mathbb{Z}_{\\ge 0}$), uji $x \\in \\{0,2,4\\}$ memberi **tiga pasangan: $(0,12)$, $(2,7)$, dan $(4,2)$**.",
+              "jebakan_atau_catatan": "Baca syarat soal dengan teliti. Kalimat 'minimal beli satu' berarti $x,y \\ge 1$, jadi pasangan yang memuat nol seperti $(0,12)$ gugur.",
               "visual": null
             },
             {
-              "judul_poin": "Reduksi SPLTV Dua Persamaan ke Diophantine",
-              "penjelasan_singkat": "Eliminasi satu variabel dari dua persamaan tiga variabel untuk membentuk persamaan Diophantine dua variabel, lalu terapkan batas bulat.",
-              "contoh_penerapan": "Dari $x+y+z=12$ dan $5x+2y+z=30$, eliminasi $z$ menghasilkan **$4x+y=18$** dengan batas bulat positif $1 \\le x \\le 4$.",
-              "jebakan_atau_catatan": "Setelah mendapat pasangan $(x,y)$, wajib substitusi balik untuk memastikan variabel ketiga ($z$) ikut bernilai bulat positif ($z \\ge 1$).",
+              "judul_poin": "3 Variabel tapi Cuma 2 Persamaan",
+              "penjelasan_singkat": "Eliminasi satu variabel dulu agar sisa dua variabel, lalu uji nilai bilangan bulat yang masih masuk akal.",
+              "contoh_penerapan": "Dari $x+y+z=12$ dan $5x+2y+z=30$, eliminasi $z$ memberi **$4x+y=18$**. Jika $x,y,z \\ge 1$, hanya **$x=3$** ($y=6, z=3$) dan **$x=4$** ($y=2, z=6$) yang memenuhi.",
+              "jebakan_atau_catatan": "Jangan berhenti di $(x,y)$ saja! Masukkan balik ke persamaan awal untuk memastikan $z$ juga bulat positif ($x=1$ dan $x=2$ gugur karena $z \\le 0$).",
               "visual": null
             }
           ]
@@ -155,8 +155,8 @@
       "nama_variasi": "Pemodelan Transaksi Tiket, Paket Bundling Produk, atau Komposisi Nutrisi ke dalam SPLDV/SPLTV",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Merujuk bagian (1) stimulus NusaTech Park, tentukan harga satuan tiket wahana Robotika ($x$), Antariksa ($y$), dan Energi ($z$).",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nMisalkan $x, y, z$ berturut-turut adalah harga satuan tiket wahana Robotika, Antariksa, dan Energi dalam satuan ribuan rupiah.\n\n**2. Model Matematika (Employing)**\nBerdasarkan rincian paket bundling pada bagian (1) stimulus, diperoleh sistem persamaan linear tiga variabel:\n- Paket Eksplorasi: $2x + y = 110$\n- Paket Inovasi: $x + 2z = 125$\n- Paket Lengkap: $x + y + z = 120$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nSubstitusi $y = 110 - 2x$ dari persamaan pertama ke persamaan ketiga menghasilkan $x + (110 - 2x) + z = 120$, sehingga $z = x + 10$. Masukkan $z = x + 10$ ke persamaan kedua: $x + 2(x + 10) = 125 \\rightarrow 3x = 105$, diperoleh $x = 35$. Akibatnya, $z = 45$ dan $y = 40$. Dalam konteks nyata, tarif satuan tiket berturut-turut Rp35.000, Rp40.000, dan Rp45.000.",
-      "kunci_pembeda": "Setiap paket bundling diterjemahkan menjadi satu persamaan linear dengan koefisien berupa kuantitas item di dalam paket tersebut.",
+      "bedah_pola_markdown": "**1. Terjemahkan Cerita (Formulating)**\nMisalkan $x, y, z$ adalah harga satuan tiket Robotika, Antariksa, dan Energi dalam ribuan rupiah agar angkanya ringkas.\n\n**2. Model Matematika (Employing)**\nDari rincian tiga paket di bagian (1), kita susun persamaannya:\n- Paket Eksplorasi: $2x + y = 110$\n- Paket Inovasi: $x + 2z = 125$\n- Paket Lengkap: $x + y + z = 120$\n\n**3. Hitung Taktis & Cek Konteks (Interpreting & Evaluating)**\nStrategi tercepat adalah mengubah $y$ dan $z$ ke dalam $x$. Dari persamaan pertama, $y = 110 - 2x$. Masukkan ke persamaan ketiga: $x + (110 - 2x) + z = 120$, kita dapat $z = x + 10$. Sekarang masukkan $z = x + 10$ ke persamaan kedua:\n$x + 2(x + 10) = 125 \\rightarrow 3x = 105 \\rightarrow x = 35$.\nDari sini langsung ketemu $z = 35 + 10 = 45$ dan $y = 110 - 2(35) = 40$. Jadi, harga satuan tiketnya adalah Rp35.000 (Robotika), Rp40.000 (Antariksa), dan Rp45.000 (Energi).",
+      "kunci_pembeda": "Tiap paket bundling diubah jadi satu persamaan linear dengan koefisien berupa jumlah item di dalam paket tersebut.",
       "visual": null
     },
     {
@@ -164,17 +164,17 @@
       "nama_variasi": "Masalah Keseimbangan Timbangan, Campuran Logam, atau Konversi Poin Permainan",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Merujuk bagian (2) stimulus NusaTech Park, tentukan selisih nilai poin antara 1 Token Emas ($E$) dan 1 Token Perak ($P$).",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nNyatakan variabel $E, P, G$ sebagai nilai poin untuk masing-masing satu keping Token Emas, Token Perak, dan Token Perunggu.\n\n**2. Model Matematika (Employing)**\nDari relasi kesetaraan nilai tukar pada bagian (2) stimulus, susun sistem persamaan substitusi berantai:\n- Kesetaraan pertama: $E = 2P + G$\n- Kesetaraan kedua: $3P = 5G$\n- Nilai patokan dasar: $G = 15$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nMulai dari variabel yang diketahui nilainya secara eksplisit, yakni $G = 15$. Substitusikan ke persamaan kedua: $3P = 5(15) = 75$, sehingga diperoleh $P = 25$ poin. Selanjutnya, masukkan nilai $P = 25$ dan $G = 15$ ke persamaan pertama: $E = 2(25) + 15 = 65$ poin. Evaluasi pertanyaan meminta selisih nilai poin antara satu Token Emas dan satu Token Perak, yaitu $E - P = 65 - 25 = 40$ poin.",
-      "kunci_pembeda": "Hubungan kesetaraan bobot atau nilai tukar membentuk persamaan tanpa konstanta bebas yang diselesaikan lewat substitusi berantai dari satuan terkecil.",
+      "bedah_pola_markdown": "**1. Terjemahkan Cerita (Formulating)**\nGunakan $E, P, G$ sebagai nilai poin untuk 1 keping Token Emas, Perak, dan Perunggu.\n\n**2. Model Matematika (Employing)**\nAturan tukar di bagian (2) membentuk rantai persamaan substitusi:\n- Kesetaraan 1: $E = 2P + G$\n- Kesetaraan 2: $3P = 5G$\n- Nilai dasar: $G = 15$\n\n**3. Hitung Taktis & Cek Konteks (Interpreting & Evaluating)**\nSelalu mulai dari variabel yang nilainya sudah pasti, yaitu $G = 15$. Masukkan ke persamaan kedua: $3P = 5(15) = 75$, jadi $P = 25$ poin. Lanjut ke persamaan pertama: $E = 2(25) + 15 = 65$ poin. Cek lagi yang ditanyakan soal, yaitu selisih 1 Token Emas dan 1 Token Perak: $E - P = 65 - 25 = 40$ poin.",
+      "kunci_pembeda": "Hubungan nilai tukar atau timbangan diselesaikan lewat substitusi berantai mulai dari satuan yang nilainya sudah diketahui.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
       "nama_variasi": "SPLTV Kontekstual yang Tidak Membutuhkan Solusi Tiap Variabel, Melainkan Kombinasi Langsung ($x + y + z$)",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Merujuk bagian (3) stimulus NusaTech Park, tentukan total biaya sewa untuk 1 loker kecil ($a$), 1 loker sedang ($b$), dan 1 perangkat audio-guide ($c$).",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nMisalkan $a, b, c$ berturut-turut menyatakan tarif sewa satuan loker kecil, loker sedang, dan perangkat *audio-guide* dalam ribuan rupiah.\n\n**2. Model Matematika (Employing)**\nCatatan transaksi tiga rombongan sekolah pada bagian (3) membentuk sistem persamaan linear siklik:\n- Rombongan A: $2a + 3b + c = 170$\n- Rombongan B: $3a + b + 2c = 170$\n- Rombongan C: $a + 2b + 3c = 200$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nPerhatikan simetri koefisien pada ketiga variabel. Jangan melakukan eliminasi satu per satu karena membuang waktu. Jumlahkan ketiga persamaan secara langsung untuk memperoleh $(2+3+1)a + (3+1+2)b + (1+2+3)c = 170 + 170 + 200$, yang disederhanakan menjadi $6(a + b + c) = 540$. Bagi kedua ruas dengan $6$, didapat $a + b + c = 90$. Jadi, biaya paket gabungan satu unit tiap fasilitas adalah Rp90.000.",
-      "kunci_pembeda": "Koefisien seluruh persamaan memiliki pola jumlah yang simetris sehingga operasi penjumlahan antarpersamaan langsung menghasilkan kombinasi target.",
+      "stimulus_mini": "Merujuk bagian (3) stimulus NusaTech Park, tentukan total biaya sewa untuk 1 loker kecil ($a$), 1 loker sedang ($b$), dan 1 audio-guide ($c$).",
+      "bedah_pola_markdown": "**1. Terjemahkan Cerita (Formulating)**\nMisalkan $a, b, c$ adalah tarif sewa satuan loker kecil, loker sedang, dan *audio-guide* dalam ribuan rupiah.\n\n**2. Model Matematika (Employing)**\nTransaksi tiga rombongan di bagian (3) membentuk sistem berikut:\n- Rombongan A: $2a + 3b + c = 170$\n- Rombongan B: $3a + b + 2c = 170$\n- Rombongan C: $a + 2b + 3c = 200$\n\n**3. Hitung Taktis & Cek Konteks (Interpreting & Evaluating)**\nTahan dulu, jangan eliminasi satu per satu! Lihat angka di depan $a, b,$ dan $c$: tiap variabel muncul dengan koefisien $1, 2,$ dan $3$. Jika ketiga persamaan langsung dijumlahkan, hasilnya seragam:\n$(2+3+1)a + (3+1+2)b + (1+2+3)c = 170 + 170 + 200$\n$6(a + b + c) = 540$\nBagi kedua ruas dengan $6$, langsung ketemu $a + b + c = 90$. Jadi, biaya sewa 1 unit tiap fasilitas adalah Rp90.000.",
+      "kunci_pembeda": "Jumlah koefisien tiap variabel sama persis, sehingga menjumlahkan semua persamaan langsung memberi paket target.",
       "visual": null
     },
     {
@@ -182,8 +182,8 @@
       "nama_variasi": "Sistem Persamaan Linear dengan Kendala Bilangan Bulat Non-Negatif (Diophantine Kontekstual)",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Merujuk bagian (4) stimulus NusaTech Park, tentukan kapasitas penumpang maksimal yang dapat diangkut dengan dana subsidi Rp540.000.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating)**\nMisalkan $m$ adalah banyak unit mobil listrik dan $n$ adalah banyak unit minibus listrik yang disewa panitia, dengan syarat kendala $m, n \\ge 1$ dan $m, n \\in \\mathbb{Z}$.\n\n**2. Model Matematika (Employing)**\nAlokasi anggaran subsidi Rp540.000 membentuk satu persamaan linear dua variabel dengan domain bilangan bulat positif:\n- Persamaan anggaran: $60.000m + 90.000n = 540.000 \\rightarrow 2m + 3n = 18$\n- Fungsi kapasitas: $K = 4m + 7n$\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating)**\nKarena $2m = 18 - 3n$ harus genap dan positif, maka $n$ wajib bilangan genap positif kurang dari $6$. Uji nilai $n = 2$ menghasilkan $m = 6$ dengan kapasitas $K = 4(6) + 7(2) = 38$ penumpang. Uji nilai $n = 4$ menghasilkan $m = 3$ dengan kapasitas $K = 4(3) + 7(4) = 40$ penumpang. Maka, kapasitas maksimal yang terangkut adalah $40$ penumpang.",
-      "kunci_pembeda": "Jumlah persamaan lebih sedikit daripada jumlah variabel, sehingga himpunan penyelesaian dibatasi oleh syarat bilangan bulat non-negatif dan paritas kelipatan.",
+      "bedah_pola_markdown": "**1. Terjemahkan Cerita (Formulating)**\nMisalkan $m$ adalah jumlah mobil listrik dan $n$ adalah jumlah minibus listrik yang disewa. Karena minimal 1 unit tiap jenis, maka $m, n \\ge 1$ dan wajib bilangan bulat.\n\n**2. Model Matematika (Employing)**\nSederhanakan persamaan anggaran dengan membagi kedua ruas oleh $30.000$ agar mudah dihitung:\n- Anggaran: $60.000m + 90.000n = 540.000 \\rightarrow 2m + 3n = 18$\n- Kapasitas penumpang: $K = 4m + 7n$\n\n**3. Hitung Taktis & Cek Konteks (Interpreting & Evaluating)**\nUbah ke bentuk $2m = 18 - 3n$. Karena $2m$ dan $18$ sama-sama genap, $3n$ wajib genap—artinya $n$ harus bilangan genap positif kurang dari $6$. Cuma ada dua kandidat:\n- Jika $n = 2$, maka $2m = 12 \\rightarrow m = 6$. Kapasitasnya $K = 4(6) + 7(2) = 38$ orang.\n- Jika $n = 4$, maka $2m = 6 \\rightarrow m = 3$. Kapasitasnya $K = 4(3) + 7(4) = 40$ orang.\nJadi, kapasitas maksimal yang bisa diangkut adalah $40$ penumpang.",
+      "kunci_pembeda": "Jumlah persamaan lebih sedikit dari variabel, sehingga solusinya disaring lewat syarat bilangan bulat positif dan pola ganjil-genap.",
       "visual": null
     }
   ],
@@ -195,7 +195,7 @@
         2
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Merujuk informasi pada stimulus **NusaTech Park**, sebuah keluarga membeli 3 tiket wahana Robotika, 2 tiket wahana Antariksa, dan 1 tiket wahana Energi secara satuan. Jika mereka menukarkan 4 Token Emas dan 2 Token Perak untuk potongan harga—dengan ketentuan setiap 10 poin bernilai diskon Rp1.000—total biaya bersih yang harus dibayar adalah ....",
+      "pertanyaan_markdown": "Merujuk data **NusaTech Park** (Paket Eksplorasi: 2 Robotika + 1 Antariksa = Rp110.000; Paket Inovasi: 1 Robotika + 2 Energi = Rp125.000; Paket Lengkap: 1 tiket tiap zona = Rp120.000; serta 1 Emas = 2 Perak + 1 Perunggu, 3 Perak = 5 Perunggu, 1 Perunggu = 15 poin), sebuah keluarga membeli 3 tiket Robotika, 2 tiket Antariksa, dan 1 tiket Energi secara satuan. Mereka menukarkan 4 Token Emas dan 2 Token Perak untuk diskon—dengan aturan tiap 10 poin bernilai diskon Rp1.000. Total biaya bersih yang harus dibayar adalah ....",
       "opsi_jawaban": [
         "A. Rp189.000",
         "B. Rp199.000",
@@ -204,7 +204,7 @@
         "E. Rp230.000"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Dari SPLTV bagian (1), diperoleh tarif satuan $x = \\text{Rp}35.000$, $y = \\text{Rp}40.000$, dan $z = \\text{Rp}45.000$, sehingga harga tiket awal adalah $3(35.000) + 2(40.000) + 45.000 = \\text{Rp}230.000$. Dari bagian (2), $P = 25$ poin dan $E = 65$ poin, sehingga $4E + 2P = 310$ poin atau diskon Rp31.000. Biaya bersih adalah $\\text{Rp}230.000 - \\text{Rp}31.000 = \\text{Rp}199.000$. Opsi E salah karena belum dikurangi diskon, sedangkan opsi C keliru menghitung nilai Token Emas.",
+      "bedah_cepat_markdown": "Langkah 1, hitung total harga tiket dari nilai satuan bagian (1): $x = \\text{Rp}35.000$, $y = \\text{Rp}40.000$, dan $z = \\text{Rp}45.000$. Harga awal tiketnya adalah $3(35.000) + 2(40.000) + 45.000 = \\text{Rp}230.000$. Langkah 2, hitung diskon dari bagian (2): $P = 25$ poin dan $E = 65$ poin, sehingga $4E + 2P = 260 + 50 = 310$ poin. Karena 10 poin bernilai Rp1.000, diskonnya Rp31.000. Jadi, biaya bersihnya adalah $\\text{Rp}230.000 - \\text{Rp}31.000 = \\text{Rp}199.000$. Opsi E salah karena lupa potong diskon, sedangkan opsi C keliru menghitung poin Emas.",
       "visual": null
     },
     {
@@ -213,7 +213,7 @@
         3
       ],
       "tipe_soal_utbk": "Kuantitas P vs Q",
-      "pertanyaan_markdown": "Merujuk bagian (3) stimulus **NusaTech Park**, Rombongan D berencana menyewa masing-masing 4 unit loker kecil ($a$), 4 unit loker sedang ($b$), dan 4 unit perangkat *audio-guide* ($c$).\n\n| Kuantitas $P$ | Kuantitas $Q$ |\n| :--- | :--- |\n| Total biaya sewa fasilitas Rombongan D | Rp350.000 |\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$ berdasarkan informasi yang diberikan?",
+      "pertanyaan_markdown": "Merujuk data sewa fasilitas **NusaTech Park** (Rombongan A: $2a+3b+c=\\text{Rp}170.000$; Rombongan B: $3a+b+2c=\\text{Rp}170.000$; Rombongan C: $a+2b+3c=\\text{Rp}200.000$), Rombongan D berencana menyewa masing-masing 4 loker kecil ($a$), 4 loker sedang ($b$), dan 4 *audio-guide* ($c$).\n\n| Kuantitas $P$ | Kuantitas $Q$ |\n| :--- | :--- |\n| Total biaya sewa fasilitas Rombongan D | Rp350.000 |\n\nManakah hubungan yang benar antara kuantitas $P$ dan $Q$ berdasarkan informasi tersebut?",
       "opsi_jawaban": [
         "A. Kuantitas P lebih besar daripada Q",
         "B. Kuantitas P lebih kecil daripada Q",
@@ -222,7 +222,7 @@
         "E. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari pilihan di atas"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Jumlahkan ketiga persamaan transaksi pada bagian (3) sehingga diperoleh $6a + 6b + 6c = \\text{Rp}540.000$, atau $a + b + c = \\text{Rp}90.000$. Biaya sewa Rombongan D adalah $P = 4(a + b + c) = 4 \\times \\text{Rp}90.000 = \\text{Rp}360.000$. Dibandingkan dengan $Q = \\text{Rp}350.000$, jelas bahwa $P > Q$. Opsi E salah karena kombinasi $(a+b+c)$ dapat ditentukan secara tunggal tanpa mencari tarif tiap barang.",
+      "bedah_cepat_markdown": "Tidak perlu mencari harga $a, b, c$ satu per satu. Langsung jumlahkan ketiga persamaan: $6(a + b + c) = \\text{Rp}540.000$, sehingga $a + b + c = \\text{Rp}90.000$. Maka, biaya sewa Rombongan D adalah $P = 4(a + b + c) = 4 \\times \\text{Rp}90.000 = \\text{Rp}360.000$. Dibandingkan $Q = \\text{Rp}350.000$, jelas $P > Q$. Opsi D salah karena selisihnya Rp10.000 (bukan Rp20.000), dan opsi E salah karena nilai $P$ bisa dihitung pasti.",
       "visual": null
     },
     {
@@ -231,10 +231,10 @@
         4
       ],
       "tipe_soal_utbk": "Isian Singkat",
-      "pertanyaan_markdown": "Merujuk bagian (4) stimulus **NusaTech Park**, apabila jumlah peserta rombongan yang wajib diangkut ke lokasi pameran adalah **39 orang** dan seluruh dana subsidi tepat Rp540.000 harus terpakai habis, berapa **minimal** total unit kendaraan gabungan (mobil listrik dan minibus listrik) yang harus disewa panitia agar seluruh peserta terangkut? *(Tuliskan jawaban dalam bilangan bulat saja)*",
+      "pertanyaan_markdown": "Merujuk data subsidi armada **NusaTech Park** (dana tepat Rp540.000 habis terpakai; mobil listrik berkapasitas 4 orang seharga Rp60.000/unit; minibus listrik berkapasitas 7 orang seharga Rp90.000/unit; minimal sewa 1 unit tiap jenis), ada **39 peserta** yang wajib diangkut ke lokasi pameran. Berapa total unit kendaraan gabungan (mobil listrik dan minibus listrik) yang harus disewa panitia agar semua peserta terangkut? *(Tuliskan jawaban dalam bilangan bulat saja)*",
       "opsi_jawaban": [],
       "kunci_jawaban": "7",
-      "bedah_cepat_markdown": "Persamaan anggaran $60.000m + 90.000n = 540.000$ disederhanakan menjadi $2m + 3n = 18$ dengan syarat $m, n \\ge 1$. Hanya terdapat dua pasangan bilangan bulat positif: $(m, n) = (6, 2)$ berkapasitas $4(6) + 7(2) = 38$ penumpang (kurang dari $39$ orang) dan $(m, n) = (3, 4)$ berkapasitas $4(3) + 7(4) = 40$ penumpang. Agar $39$ peserta terangkut seluruhnya, panitia wajib memilih kombinasi kedua dengan total $3 + 4 = 7$ unit kendaraan.",
+      "bedah_cepat_markdown": "Persamaan anggaran $60.000m + 90.000n = 540.000$ kita sederhanakan jadi $2m + 3n = 18$ dengan syarat $m, n \\ge 1$. Hanya ada dua pasangan bulat positif yang mungkin: $(m, n) = (6, 2)$ yang hanya muat $4(6) + 7(2) = 38$ orang (kurang 1 orang), dan $(m, n) = (3, 4)$ yang muat $4(3) + 7(4) = 40$ orang. Agar 39 peserta terangkut semua, panitia wajib pilih kombinasi $(3, 4)$ dengan total $3 + 4 = 7$ unit kendaraan.",
       "visual": null
     }
   ]

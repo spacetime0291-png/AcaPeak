@@ -15,18 +15,18 @@
         "B. Menghentikan atau menahan laju"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Dalam konteks saintek/lingkungan, 'arrest' bermakna 'stop' atau 'halt' (menghentikan proses), bukan arti literal hukum yang paling umum."
+      "penjelasan_kilat": "Dalam konteks lingkungan dan sains, *arrest* berarti menghentikan atau menahan laju (*stop* atau *halt*), bukan menangkap penjahat seperti di berita kriminal."
     },
-    "konsep_inti_markdown": "* **Context Over Dictionary:** Makna kata polisemi, idiom, dan *phrasal verb* ditentukan oleh kolokasi kalimat, bukan arti kamus paling umum.\n* **Backward-Forward Substitution:** Pronomina (*they, it, this phenomenon*) wajib diuji dengan menggantinya langsung menggunakan anteseden terdekat yang selaras jumlah dan maknanya.\n* **Pragmatic & Modal Precision:** Sinonim pengganti dan *modal verbs* (*must, might, should*) harus mempertahankan tingkat kepastian serta nada penulis tanpa distorsi ekstrem.",
+    "konsep_inti_markdown": "* **Konteks Mengalahkan Kamus:** Kata punya banyak arti (*polysemy*), ditambah *idiom* dan *phrasal verb*. Arti aslinya selalu dikunci oleh kata-kata di sekitarnya, bukan arti kamus yang paling populer.\n* **Uji Ganti Kata Ganti (*Pronoun*):** Saat bertemu *they*, *it*, atau *this phenomenon*, langsung ganti kata itu dengan frasa rujukan sebelumnya. Pastikan jumlah (tunggal atau jamak) dan logikanya nyambung.\n* **Jaga Nada & Tingkat Kepastian:** Sinonim pengganti dan *modal verbs* (*must, might, should*) wajib menjaga derajat keyakinan penulis—jangan mengubah dugaan menjadi fakta pasti.",
     "radar_jebakan_utbk": [
-      "Memilih arti primer/literal kamus (misal: 'harbor' sebagai pelabuhan, padahal di konteks medis bermakna 'menyimpan/mengandung').",
-      "Menunjuk kata benda terdekat sebagai rujukan 'this/these', padahal merujuk pada keseluruhan klausa atau fenomena di kalimat sebelumnya."
+      "Terjebak arti kamus paling umum—misalnya mengartikan *harbor* sebagai 'pelabuhan', padahal di teks biologi atau medis artinya 'menyimpan/menampung'.",
+      "Asal tunjuk satu kata benda terdekat sebagai rujukan *this/these*, padahal kata itu merangkum seluruh kejadian di kalimat sebelumnya."
     ],
     "stimulus_utama_bersama": "**Forum Thread: Urban Microclimate & Green Roof Initiatives**\n\n**@Dr_Aris (Urban Ecologist):** Recent telemetry from Jakarta's central business district confirms that conventional asphalt roofs exacerbate the urban heat island effect. Deploying extensive green roofs can **arrest** daytime thermal spikes by up to $4^\\circ\\text{C}$. However, critics argue that structural retrofitting costs **put a damper on** widespread municipal adoption. If cities subsidize initial installation, developers **must** recognize the long-term cooling dividends.\n\n**@Siska_Arch (Sustainable Architect):** Valid point, Aris. In our pilot project, retrofitting older warehouses initially seemed prohibitive, yet **this hurdle** was overcome using lightweight modular substrates. Moreover, native drought-tolerant sedums **harbor** local pollinators without requiring intensive irrigation. Municipalities **might** mandate green roofs for commercial buildings exceeding $5,000\\text{ m}^2$, though voluntary tax incentives currently **hold more water** among private stakeholders.\n\n**@Bima_Econ (Policy Analyst):** While ecological benefits are indisputable, financial feasibility remains pivotal. A poorly maintained green roof **can** turn into a costly liability if drainage membranes fail. Therefore, policymakers **should** pair installation grants with mandatory maintenance audits rather than relying solely on upfront subsidies.",
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Pola Kosakata Kontekstual, Rujukan Pronomina, dan Nuansa Pragmatik",
-      "subjudul_ringkas": "Panduan taksonomi sinyal teks untuk menaklukkan soal kosakata, rujukan kata ganti, sinonim pragmatis, dan modal verbs.",
+      "subjudul_ringkas": "Panduan praktis membaca sinyal konteks untuk menaklukkan soal kosakata, rujukan kata ganti, sinonim bernuansa, dan modal verbs.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
@@ -36,98 +36,98 @@
       "kelompok": [
         {
           "nama_kelompok": "Katalog Konteks Kosakata, Polisemi & Idiom",
-          "ringkasan_kelompok": "Pola menentukan makna kata polisemi, phrasal verb, dan idiom berdasarkan konteks kalimat.",
+          "ringkasan_kelompok": "Cara menentukan arti kata bermakna ganda, phrasal verb, dan idiom lewat petunjuk di sekitar kalimat.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Kata Polisemi Akademik (Makna Sekunder)",
-              "penjelasan_singkat": "Kata umum sering memakai makna sekunder akademis; tentukan artinya lewat objek atau bidang ilmu di sekitarnya.",
-              "contoh_penerapan": "Early intervention can **arrest** the progression of the disease. Kata *arrest* bermakna menghentikan (*halt*), bukan menangkap.",
-              "jebakan_atau_catatan": "Pengecoh memakai arti kamus paling populer (*capture*) yang tidak cocok dengan konteks medis atau konsep abstrak.",
+              "judul_poin": "Kata Bermakna Ganda (Polysemy) di Teks Akademik",
+              "penjelasan_singkat": "Kata umum sering punya arti khusus di bidang sains atau sosial. Cek kata benda pasangannya untuk mengunci arti yang tepat.",
+              "contoh_penerapan": "Early intervention can **arrest** the progression of the disease. Di sini *arrest* berarti menghentikan (*halt*), bukan menangkap.",
+              "jebakan_atau_catatan": "Opsi pengecoh selalu memasang arti kamus paling populer (*capture*) yang tidak nyambung dengan konteks penyakit.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Definisi dan Kontras Intra-Kalimat",
-              "penjelasan_singkat": "Perhatikan konjungsi kontras (*yet, unlike*) atau tanda baca (*em-dash*, koma) yang langsung menjelaskan kata sulit.",
-              "contoh_penerapan": "The policy proved **ubiquitous**—appearing in virtually every district. Frasa setelah tanda pisah menjelaskan arti *widespread*.",
-              "jebakan_atau_catatan": "Jangan menebak dari kemiripan bunyi kata; baca klausa penjelas tepat sebelum atau sesudah kata target.",
+              "judul_poin": "Petunjuk Definisi dan Kontras dalam Satu Kalimat",
+              "penjelasan_singkat": "Cari kata sambung berlawanan (*yet, unlike*) atau tanda baca (*em-dash*, koma) yang langsung menerjemahkan kata sulit.",
+              "contoh_penerapan": "The policy proved **ubiquitous**—appearing in virtually every district. Penjelasan setelah tanda pisah membocorkan artinya: tersebar luas (*widespread*).",
+              "jebakan_atau_catatan": "Jangan menebak arti cuma dari kemiripan bunyi kata. Baca klausa penjelas tepat sebelum atau sesudah kata target.",
               "visual": null
             },
             {
               "judul_poin": "Phrasal Verbs dalam Diskusi dan Forum",
-              "penjelasan_singkat": "Gabungan kata kerja dan preposisi membentuk makna baru yang berbeda total dari arti kata dasarnya.",
-              "contoh_penerapan": "User12: Don't **write off** solar panels yet; costs are dropping. Frasa *write off* berarti meremehkan (*dismiss*).",
-              "jebakan_atau_catatan": "Pengecoh memaknai kata secara harfiah (*write* = menulis); uji substitusi sinonim satu kata ke dalam kalimat.",
+              "penjelasan_singkat": "Gabungan kata kerja dan preposisi melahirkan arti baru yang jauh berbeda dari makna kata dasarnya.",
+              "contoh_penerapan": "User12: Don't **write off** solar panels yet; costs are dropping. Frasa *write off* di sini berarti meremehkan (*dismiss*).",
+              "jebakan_atau_catatan": "Pengecoh menerjemahkan kata secara harfiah (*write* = menulis). Uji dengan mengganti frasa itu memakai satu kata kerja sinonim.",
               "visual": null
             },
             {
-              "judul_poin": "Idiom dan Ekspresi Figuratif Forum Thread",
-              "penjelasan_singkat": "Ungkapan kiasan dalam *forum thread* mencerminkan sikap penutur; baca nada komentar sebelumnya untuk menangkap maksud tersirat.",
+              "judul_poin": "Idiom dan Ungkapan Kiasan di Forum Thread",
+              "penjelasan_singkat": "Ungkapan kiasan menunjukkan sikap penulis setuju atau menolak. Baca nada komentar sebelumnya agar arah maknanya tidak meleset.",
               "contoh_penerapan": "Opponents argue the new tax **misses the mark** on inflation. Idiom ini berarti gagal mencapai sasaran.",
-              "jebakan_atau_catatan": "Terjemahan kata per kata menyesatkan; tentukan lebih dulu polaritas positif atau negatif ungkapan dalam argumen.",
+              "jebakan_atau_catatan": "Menerjemahkan kata per kata pasti menjebak. Tentukan dulu apakah ungkapan itu bernada positif atau negatif dalam argumen.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Pola Rujukan Pronomina & Demonstrativa",
-          "ringkasan_kelompok": "Strategi melacak anteseden pronomina personal, demonstrativa, dan klausa abstrak secara presisi.",
+          "ringkasan_kelompok": "Strategi melacak benda, orang, atau seluruh gagasan yang dirujuk oleh kata ganti secara tepat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pronomina Personal dan Kesesuaian Jumlah",
-              "penjelasan_singkat": "Rujukan *they, them, their* wajib merujuk nomina jamak sebelumnya, sedangkan *it, its* merujuk nomina tunggal.",
-              "contoh_penerapan": "Researchers tested three **vaccines**, but **they** showed uneven efficacy. Kata *they* merujuk *three vaccines*, bukan *researchers*.",
-              "jebakan_atau_catatan": "Subjek awal sering menjadi pengecoh; masukkan kandidat anteseden ke posisi pronomina untuk menguji kelogisan makna.",
+              "judul_poin": "Kata Ganti Personal dan Kecocokan Jumlah",
+              "penjelasan_singkat": "Kata *they, them, their* wajib merujuk benda jamak sebelumnya, sedangkan *it, its* khusus untuk benda tunggal.",
+              "contoh_penerapan": "Researchers tested three **vaccines**, but **they** showed uneven efficacy. Kata *they* merujuk pada *three vaccines*, bukan *researchers*.",
+              "jebakan_atau_catatan": "Subjek di awal kalimat sering dipakai sebagai pengecoh. Masukkan kandidat rujukan ke posisi *they* untuk menguji kelogisannya.",
               "visual": null
             },
             {
-              "judul_poin": "Demonstrativa Perangkum Gagasan (This / These + Noun)",
-              "penjelasan_singkat": "Frasa seperti *this phenomenon* atau *such measures* merangkum seluruh peristiwa di kalimat sebelumnya, bukan satu nomina.",
-              "contoh_penerapan": "Coral reefs bleach when oceans warm. **This phenomenon** threatens biodiversity. *This phenomenon* merujuk pemutihan karang akibat pemanasan laut.",
-              "jebakan_atau_catatan": "Pengecoh hanya mengambil satu kata benda terakhir (*oceans*), padahal rujukannya adalah keseluruhan proses kalimat sebelumnya.",
+              "judul_poin": "Kata Tunjuk Perangkum Gagasan (This / These + Noun)",
+              "penjelasan_singkat": "Frasa seperti *this phenomenon* atau *such measures* merangkum seluruh kejadian di kalimat sebelumnya, bukan satu kata benda saja.",
+              "contoh_penerapan": "Coral reefs bleach when oceans warm. **This phenomenon** threatens biodiversity. *This phenomenon* merujuk pada peristiwa memutihnya karang akibat laut memanas.",
+              "jebakan_atau_catatan": "Pengecoh cuma mengambil satu kata benda terakhir (*oceans*), padahal rujukannya adalah keseluruhan proses pada kalimat sebelumnya.",
               "visual": null
             },
             {
-              "judul_poin": "Rujukan Kontras (The Former vs. The Latter)",
-              "penjelasan_singkat": "Saat dua entitas dibandingkan, *the former* merujuk entitas pertama yang disebut, sedangkan *the latter* merujuk entitas kedua.",
+              "judul_poin": "Rujukan Perbandingan (The Former vs. The Latter)",
+              "penjelasan_singkat": "Saat membandingkan dua hal, *the former* merujuk hal pertama yang disebut, sedangkan *the latter* merujuk hal kedua.",
               "contoh_penerapan": "Between wind and **solar energy**, **the latter** is easier to install. *The latter* merujuk pada *solar energy*.",
-              "jebakan_atau_catatan": "Peserta sering tertukar urutan; selalu beri nomor 1 dan 2 pada dua nomina pembanding sebelum memilih.",
+              "jebakan_atau_catatan": "Siswa sering tertukar urutannya. Biasakan memberi label angka 1 dan 2 pada dua hal yang dibandingkan sebelum memilih.",
               "visual": null
             },
             {
-              "judul_poin": "Pronomina Relatif (Which / That / Where)",
-              "penjelasan_singkat": "Kata *which* tanpa koma merujuk nomina tepat di depannya, tetapi *which* setelah koma merujuk seluruh klausa.",
+              "judul_poin": "Kata Ganti Penghubung (Which / That / Where)",
+              "penjelasan_singkat": "Kata *which* tanpa koma merujuk benda tepat di depannya, tetapi *which* setelah koma merujuk seluruh kejadian sebelumnya.",
               "contoh_penerapan": "Emissions fell by 10%, **which** surprised many economists. Kata *which* merujuk fakta turunnya emisi sebesar 10%.",
-              "jebakan_atau_catatan": "Perhatikan tanda koma; tanpa koma rujukannya spesifik pada objek terdekat, dengan koma rujukannya keseluruhan kejadian.",
+              "jebakan_atau_catatan": "Perhatikan tanda koma! Tanpa koma rujukannya cuma objek terdekat, sedangkan dengan koma rujukannya adalah satu peristiwa utuh.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Presisi Pragmatik Sinonim & Modal Verbs",
-          "ringkasan_kelompok": "Menjaga tingkat kepastian, nada penulis, dan fungsi pragmatis modal dalam parafrase.",
+          "ringkasan_kelompok": "Menjaga tingkat kepastian, nada penulis, dan maksud tersembunyi di balik pemilihan kata.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Intensitas dan Register Sinonim Pengganti",
-              "penjelasan_singkat": "Kata pengganti harus memiliki derajat kekuatan dan tingkat formalitas yang setara dengan kata asli dalam wacana.",
-              "contoh_penerapan": "The study **suggests** a link between diet and sleep. Padanan tepat adalah *indicates*, bukan *proves* yang absolut.",
-              "jebakan_atau_catatan": "Pengecoh sering menaikkan intensitas klaim (mengganti *suggests* menjadi *guarantees*) atau memakai kata slang tidak formal.",
+              "judul_poin": "Kekuatan Makna dan Gaya Bahasa Sinonim",
+              "penjelasan_singkat": "Kata pengganti harus punya tingkat keyakinan dan gaya bahasa formal yang setara dengan kata asli di teks.",
+              "contoh_penerapan": "The study **suggests** a link between diet and sleep. Padanan yang pas adalah *indicates*, bukan *proves* yang terlalu mutlak.",
+              "jebakan_atau_catatan": "Pengecoh sering menaikkan level klaim (mengganti *suggests* menjadi *guarantees*) atau memakai bahasa gaul yang tidak nyambung.",
               "visual": null
             },
             {
-              "judul_poin": "Modal Epistemik: Kepastian vs. Spekulasi",
-              "penjelasan_singkat": "*Must* menunjukkan simpulan logis kuat, sedangkan *may, might, could* menandakan kemungkinan tentatif atau hipotesis belum pasti.",
-              "contoh_penerapan": "The city had no walls, so it **must** have been peaceful. *Must* berfungsi sebagai deduksi logis penulis.",
-              "jebakan_atau_catatan": "Bedakan *must* deduksi dengan keharusan aturan; opsi jawaban memakai *logically concluded* untuk *must* dan *possibly* untuk *might*.",
+              "judul_poin": "Modal Verbs Dugaan: Yakin vs. Ragu-Ragu",
+              "penjelasan_singkat": "Kata *must* menandakan kesimpulan logis yang kuat, sedangkan *may, might, could* menunjukkan kemungkinan yang belum pasti.",
+              "contoh_penerapan": "The city had no walls, so it **must** have been peaceful. Di sini *must* adalah tebakan logis penulis berdasarkan bukti.",
+              "jebakan_atau_catatan": "Bedakan *must* untuk tebakan logis dengan aturan wajib. Di opsi jawaban, *must* dugaan diparafrasa menjadi *logically concluded*, sedangkan *might* menjadi *possibly*.",
               "visual": null
             },
             {
-              "judul_poin": "Modal Deontik: Keharusan, Saran dan Kemampuan",
-              "penjelasan_singkat": "*Should/ought to* menyatakan rekomendasi normatif, *have to/must* menyatakan kewajiban mutlak, dan *can* menyatakan kapabilitas objektif.",
+              "judul_poin": "Modal Verbs Tindakan: Saran, Wajib dan Kemampuan",
+              "penjelasan_singkat": "*Should/ought to* berisi saran, *have to/must* menyatakan kewajiban mutlak, dan *can* menunjukkan kemampuan atau potensi nyata.",
               "contoh_penerapan": "Governments **should** subsidize public transit to cut congestion. Kata *should* menunjukkan saran kebijakan (*recommendation*), bukan fakta.",
-              "jebakan_atau_catatan": "Pengecoh mengubah saran (*should*) menjadi kewajiban hukum (*mandatory*) atau klaim yang sudah terjadi di lapangan.",
+              "jebakan_atau_catatan": "Pengecoh sering mengubah saran (*should*) menjadi aturan hukum wajib (*mandatory*) atau menganggapnya sudah terjadi di lapangan.",
               "visual": null
             }
           ]
@@ -141,8 +141,8 @@
       "nama_variasi": "Contextual Synonym of Academic/Polysemous Words",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Post 1 (@Dr_Aris): \"Deploying extensive green roofs can **arrest** daytime thermal spikes by up to $4^\\circ\\text{C}$.\"",
-      "bedah_pola_markdown": "**Teknik Scanning & Substitusi:**\n1. **Temukan Kalimat Kunci:** Pindai kata target (*arrest* / *harbor*) dan baca satu kalimat penuh sebelum-sesudahnya untuk menangkap topik (mitigasi panas perkotaan).\n2. **Identifikasi Kelas Kata & Objek:** *Arrest* berfungsi sebagai kata kerja transitif dengan objek *daytime thermal spikes* (lonjakan suhu siang hari).\n3. **Uji Substitusi & Parafrasa:** Ganti *arrest* dengan kandidat sinonim. Kata *halt* atau *curb* (menghentikan/menahan) selaras secara logis dengan penurunan suhu $4^\\circ\\text{C}$.\n\n**Ciri Opsi Jebakan UTBK:**\n* **Arti Literal Populer:** *Detain* atau *apprehend* (menangkap tersangka) — hanya berlaku di konteks hukum.\n* **Berlawanan Arah:** *Accelerate* (mempercepat) — bertentangan dengan konteks pendinginan atap hijau.",
-      "kunci_pembeda": "Selalu uji kecocokan kolokasi antara opsi pengganti dengan kata benda objek di sebelah kanannya.",
+      "bedah_pola_markdown": "**Cara Mikir Cepat:**\n1. **Baca Konteks Satu Kalimat Penuh:** Cari kata target (*arrest*) lalu baca kalimatnya dari awal sampai akhir. Topiknya tentang atap hijau yang menurunkan suhu panas kota.\n2. **Cek Pasangan Kata Benda (*Object*):** Kata kerja *arrest* menempel pada objek *daytime thermal spikes* (lonjakan suhu siang hari). Masuk akal tidak kalau suhu \"ditangkap polisi\"? Tentu tidak.\n3. **Uji Ganti Kata:** Ganti *arrest* dengan kata lain yang cocok untuk suhu, misalnya *halt* atau *curb* (menahan atau menghentikan). Kalimatnya langsung klop dengan penurunan suhu $4^\\circ\\text{C}$.\n\n**Waspada Opsi Jebakan UTBK:**\n* **Arti Kamus Paling Umum:** *Detain* atau *apprehend* (menangkap tersangka) — jebakan klasik bagi yang cuma hafal arti dasar.\n* **Makna Berlawanan:** *Accelerate* (mempercepat) — bertolak belakang dengan fungsi pendinginan atap hijau.",
+      "kunci_pembeda": "Selalu pasangkan kandidat sinonim dengan kata benda di sebelah kanannya untuk menguji apakah maknanya logis.",
       "visual": null
     },
     {
@@ -150,8 +150,8 @@
       "nama_variasi": "Interpreting Idiomatic Expressions and Phrasal Verbs in Context",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Post 1 & 2: \"...retrofitting costs **put a damper on** widespread municipal adoption\" dan \"...tax incentives currently **hold more water** among private stakeholders.\"",
-      "bedah_pola_markdown": "**Teknik Scanning & Pembacaan Nada (Tone):**\n1. **Deteksi Penanda Kontras:** Pada Post 1, kata *However* menandakan pergeseran dari manfaat positif ke hambatan biaya (*put a damper on* = menghambat/mengurangi antusiasme). Pada Post 2, kata *though* mengontraskan mandat wajib dengan insentif pajak yang lebih masuk akal/meyakinkan (*hold more water* = lebih valid/dapat diterima).\n2. **Parafrasa Non-Idiom:** Ubah ungkapan figuratif menjadi bahasa akademik lugas sebelum melihat opsi (*discourage* untuk *put a damper on*; *seem more plausible* untuk *hold more water*).\n\n**Ciri Opsi Jebakan UTBK:**\n* **Terjemahan Kata per Kata:** Mengartikan *damper* sebagai peredam fisik/air atau *hold water* sebagai menampung air hujan di atap hijau.",
-      "kunci_pembeda": "Gunakan konjungsi kontras (*however, though, yet*) di sekitar idiom untuk menentukan apakah maknanya positif atau negatif.",
+      "bedah_pola_markdown": "**Cara Mikir Cepat:**\n1. **Deteksi Kata Sambung Kontras:** Di Post 1, kata *However* membalikkan suasana dari manfaat atap hijau ke masalah biaya. Jadi, *put a damper on* pasti bernada negatif (menghambat atau meredam antusiasme). Di Post 2, kata *though* mengontraskan aturan wajib dengan insentif pajak yang lebih masuk akal (*hold more water* = lebih meyakinkan atau valid).\n2. **Terjemahkan ke Bahasa Lugas:** Sebelum melirik opsi, ubah dulu idiom itu menjadi kata kerja biasa: *put a damper on* berarti *discourage* (menghambat), sedangkan *hold more water* berarti *seem more convincing* (lebih masuk akal).\n\n**Waspada Opsi Jebakan UTBK:**\n* **Terjemahan Kata per Kata:** Mengartikan *damper* sebagai alat peredam fisik atau *hold water* sebagai atap hijau yang menampung air hujan.",
+      "kunci_pembeda": "Gunakan kata sambung seperti *however*, *though*, atau *yet* di sekitar idiom untuk menebak apakah nadanya positif atau negatif.",
       "visual": null
     },
     {
@@ -159,8 +159,8 @@
       "nama_variasi": "Pronoun & Demonstrative Reference",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Post 2 (@Siska_Arch): \"In our pilot project, retrofitting older warehouses initially seemed prohibitive, yet **this hurdle** was overcome using lightweight modular substrates.\"",
-      "bedah_pola_markdown": "**Teknik Scanning Mundur (Backward Tracking):**\n1. **Cek Kesesuaian Jumlah & Kategori:** Frasa demonstratif tunggal *this hurdle* (rintangan ini) wajib merujuk pada satu masalah spesifik yang baru saja disebut sebelumnya.\n2. **Lacak Anteseden Terdekat:** Baca klausa sebelum *yet*: *retrofitting older warehouses initially seemed prohibitive* (biaya/kesulitan merenovasi gudang tua yang awalnya terasa terlalu mahal/sulit).\n3. **Uji Penggantian:** Masukkan anteseden ke posisi *this hurdle* untuk memverifikasi kelogisan kalimat.\n\n**Ciri Opsi Jebakan UTBK:**\n* **Terlalu Sempit:** Hanya menyebut *older warehouses* (gudang tuanya saja, bukan tantangan renovasinya).\n* **Lintas Pembicara:** Mengambil isu dari Post 1 padahal *this* merujuk konteks internal Post 2.",
-      "kunci_pembeda": "Frasa *this/these + kata benda abstrak* (*this hurdle, these findings*) merangkum keseluruhan situasi pada klausa sebelumnya, bukan sekadar satu kata benda.",
+      "bedah_pola_markdown": "**Cara Mikir Cepat:**\n1. **Cek Tunggal atau Jamak:** Frasa *this hurdle* (rintangan ini) berbentuk tunggal. Artinya, ia merujuk pada satu masalah spesifik yang baru saja diceritakan.\n2. **Tarik Garis Mundur ke Klausa Sebelumnya:** Baca bagian sebelum kata *yet*: *retrofitting older warehouses initially seemed prohibitive*. Masalahnya bukan cuma gudang tuanya, melainkan biaya dan kerumitan merenovasi gudang tua yang awalnya terasa memberatkan.\n3. **Uji Tempel Ulang:** Ganti *this hurdle* dengan frasa \"kerumitan merenovasi gudang tua\" lalu baca ulang kalimatnya. Alurnya langsung nyambung!\n\n**Waspada Opsi Jebakan UTBK:**\n* **Terlalu Sempit:** Opsi cuma menyebut *older warehouses* (gudang tuanya saja, padahal gudang tua bukan rintangan kalau tidak direnovasi).\n* **Lintas Komentar:** Mengambil masalah dari Post 1 milik @Dr_Aris, padahal kata *this* merujuk konteks internal Post 2.",
+      "kunci_pembeda": "Frasa *this/these + kata benda umum* (*this hurdle, these findings*) merangkum keseluruhan situasi sebelumnya, bukan cuma satu kata benda terdekat.",
       "visual": null
     },
     {
@@ -168,8 +168,8 @@
       "nama_variasi": "Word Replacement Without Altering the Pragmatic Nuance of the Sentence",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Post 1 (@Dr_Aris): \"...conventional asphalt roofs **exacerbate** the urban heat island effect.\"",
-      "bedah_pola_markdown": "**Teknik Analisis Nuansa & Intensitas:**\n1. **Bedah Arah & Derajat Makna:** Kata *exacerbate* tidak sekadar bermakna 'menyebabkan' (*cause*), melainkan 'memperburuk kondisi buruk yang sudah ada' (*aggravate/worsen*).\n2. **Cocokkan Register Akademik:** Pilih opsi yang mempertahankan intensitas negatif dan gaya bahasa formal teks.\n3. **Verifikasi Pragmatis:** Jika diganti *aggravate*, makna bahwa efek pulau panas sudah ada lalu diperparah oleh atap aspal tetap utuh 100%.\n\n**Ciri Opsi Jebakan UTBK:**\n* **Pergeseran Kausalitas:** *Initiate* atau *trigger* (memulai dari nol), yang menghilangkan nuansa bahwa masalahnya sudah eksis sebelumnya.\n* **Terlalu Ekstrem:** *Eradicate* (memusnahkan) atau *maximize* (memaksimalkan secara mutlak).",
-      "kunci_pembeda": "Periksa apakah kata target bermakna 'memulai sesuatu' atau 'mengubah intensitas sesuatu yang sudah ada'.",
+      "bedah_pola_markdown": "**Cara Mikir Cepat:**\n1. **Bedah Arah & Kekuatan Makna:** Kata *exacerbate* bukan sekadar \"menyebabkan\" (*cause*), melainkan \"memperparah kondisi buruk yang sudah ada\" (*aggravate* atau *worsen*).\n2. **Cocokkan Gaya Bahasa:** Pilih sinonim yang sama-sama formal dan mempertahankan bobot negatifnya.\n3. **Cek Ulang Nuansa Kalimat:** Jika *exacerbate* diganti *aggravate*, pesan bahwa efek pulau panas sudah terjadi lalu makin parah akibat atap aspal tetap utuh 100%.\n\n**Waspada Opsi Jebakan UTBK:**\n* **Menggeser Sebab-Akibat:** Opsi *initiate* atau *trigger* (memicu dari nol), yang menghilangkan fakta bahwa masalah panas kota sudah ada sebelumnya.\n* **Terlalu Ekstrem:** Opsi *eradicate* (memusnahkan) atau *maximize* (memaksimalkan secara mutlak).",
+      "kunci_pembeda": "Cek apakah kata target bermakna 'memulai dari nol' atau 'mengubah tingkat keparahan sesuatu yang sudah ada'.",
       "visual": null
     },
     {
@@ -177,8 +177,8 @@
       "nama_variasi": "Pragmatic Function of Modal Verbs in Context",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Post 2 & 3: \"Municipalities **might** mandate green roofs...\" (Post 2) vs \"...policymakers **should** pair installation grants with mandatory maintenance audits...\" (Post 3).",
-      "bedah_pola_markdown": "**Teknik Pemetaan Skala Epistemik & Deontik:**\n1. **Identifikasi Subjek & Konteks:** Pada Post 2, *might* berada dalam kalimat konsesif (*though...*) yang menyatakan kemungkinan kebijakan yang belum pasti terjadi (*tentative possibility*).\n2. **Bedakan Fungsi Saran vs Keharusan:** Pada Post 3, diawali penanda simpulan *Therefore*, kata *should* berfungsi sebagai rekomendasi kebijakan optimal (*advisability/recommendation*), sedangkan *can* di kalimat sebelumnya menyatakan potensi risiko (*theoretical possibility*).\n\n**Ciri Opsi Jebakan UTBK:**\n* **Menaikkan Tingkat Kepastian:** Mengartikan *might* atau *can* sebagai kepastian mutlak (*certainty*) atau kewajiban hukum (*strict obligation*).",
-      "kunci_pembeda": "Cocokkan *modal verb* dengan penanda wacana di sekitarnya: *Therefore* memicu fungsi saran (*should*), sedangkan *though* memicu fungsi kemungkinan tentatif (*might*).",
+      "bedah_pola_markdown": "**Cara Mikir Cepat:**\n1. **Lihat Konteks & Kata Sambung:** Pada Post 2, kata *might* muncul dalam kalimat perbandingan (*though...*). Ini menunjukkan rencana kebijakan yang masih berupa kemungkinan belum pasti (*tentative possibility*).\n2. **Bedakan Saran vs. Kewajiban:** Pada Post 3, kalimat diawali kata *Therefore* (oleh karena itu). Kata *should* di sini berfungsi sebagai saran kebijakan terbaik (*recommendation*), sedangkan *can* di kalimat sebelumnya menyatakan potensi risiko (*theoretical possibility*).\n\n**Waspada Opsi Jebakan UTBK:**\n* **Melebih-lebihkan Kepastian:** Mengartikan *might* atau *can* sebagai kepastian mutlak (*certainty*) atau aturan hukum yang sudah wajib dijalankan (*strict obligation*).",
+      "kunci_pembeda": "Cocokkan *modal verb* dengan sinyal kalimatnya: *Therefore* memicu fungsi saran (*should*), sedangkan *though* memicu kemungkinan tentatif (*might*).",
       "visual": null
     }
   ],
@@ -199,7 +199,7 @@
         "E. Eliminate"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Konteks kalimat membahas kemampuan atap hijau menahan atau menekan lonjakan suhu siang hari hingga $4^\\circ\\text{C}$. Kata **Curb** (menahan/mengendalikan laju) mempertahankan makna dan derajat penurunan terbatas (*up to $4^\\circ\\text{C}$*). **A** adalah arti literal hukum; **C** dan **D** berlawanan arah (memicu/meningkatkan); **E** terlalu ekstrem karena suhu hanya turun hingga $4^\\circ\\text{C}$, bukan hilang total.",
+      "bedah_cepat_markdown": "Kalimat ini membahas kemampuan atap hijau menekan lonjakan suhu siang hari hingga $4^\\circ\\text{C}$. Kata **Curb** (menahan atau mengendalikan laju) paling pas karena menjaga makna sekaligus batas penurunannya (*up to $4^\\circ\\text{C}$*). Opsi **A** adalah jebakan arti hukum (menangkap pelaku); **C** dan **D** justru berlawanan arah (memicu atau menaikkan); sedangkan **E** terlalu ekstrem karena suhu hanya turun hingga $4^\\circ\\text{C}$, bukan hilang total.",
       "visual": null
     },
     {
@@ -218,7 +218,7 @@
         "E. The urban heat island effect; tax incentives completely replace modular substrates."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Frasa **\"this hurdle\"** merujuk pada klausa sebelumnya: *retrofitting older warehouses initially seemed prohibitive* (biaya/kesulitan renovasi gudang tua yang awalnya terasa memberatkan). Sementara idiom **\"hold more water\"** bermakna lebih masuk akal, valid, atau meyakinkan (*more persuasive/plausible*) dibandingkan mandat wajib. Opsi **A** dan **D** menjebak dengan arti literal kata *water*.",
+      "bedah_cepat_markdown": "Frasa **\"this hurdle\"** merujuk pada masalah tepat di klausa sebelumnya: *retrofitting older warehouses initially seemed prohibitive* (biaya renovasi gudang tua yang awalnya terasa terlalu mahal atau memberatkan). Sementara itu, idiom **\"hold more water\"** berarti lebih masuk akal atau lebih meyakinkan (*more persuasive*) di mata pemilik gedung swasta dibanding aturan wajib. Opsi **A** dan **D** adalah jebakan klasik yang mengartikan kata *water* secara harfiah.",
       "visual": null
     },
     {
@@ -236,7 +236,7 @@
         "E. FALSE - TRUE - FALSE"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "* **Pernyataan 1 (FALSE):** Kata *might* menyatakan kemungkinan yang belum pasti (*tentative possibility*), bukan kewajiban hukum yang sudah berlaku.\n* **Pernyataan 2 (TRUE):** Kata *can* dalam *\"can turn into a costly liability\"* menyatakan potensi risiko finansial.\n* **Pernyataan 3 (TRUE):** Diawali *Therefore*, kata *should* berfungsi sebagai saran/rekomendasi kebijakan yang logis.",
+      "bedah_cepat_markdown": "* **Pernyataan 1 (FALSE):** Kata *might* menunjukkan kemungkinan yang belum pasti terjadi (*tentative possibility*), bukan kewajiban hukum yang sudah berlaku.\n* **Pernyataan 2 (TRUE):** Kata *can* pada frasa *\"can turn into a costly liability\"* menyatakan potensi kerugian finansial jika saluran air rusak.\n* **Pernyataan 3 (TRUE):** Diawali kata *Therefore*, *should* berfungsi sebagai saran kebijakan (*policy recommendation*) untuk mencegah risiko kerugian tadi.",
       "visual": null
     }
   ]

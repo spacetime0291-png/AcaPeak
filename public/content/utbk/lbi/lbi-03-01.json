@@ -9,125 +9,125 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam kutipan cerpen, pengarang jarang menuliskan pesan moral secara langsung. Jika soal menanyakan amanat kutipan sastra, manakah strategi paling akurat?",
+      "pertanyaan_pemantik": "Dalam kutipan cerpen, pengarang jarang menulis pesan moral secara terang-terangan. Jika soal menanyakan amanat kutipan sastra, strategi mana yang paling tepat?",
       "opsi_cepat": [
         "Memilih nasihat moral umum yang terdengar paling bijak",
-        "Menyimpulkan konsekuensi dari konflik batin dan tindakan tokoh"
+        "Menyimpulkan akibat dari konflik batin dan tindakan tokoh"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "UTBK menguji penalaran berbasis bukti tekstual, bukan hafalan pepatah. Opsi yang terdengar bijak tetapi tidak berakar pada dilema tokoh dalam kutipan adalah jebakan klasik."
+      "penjelasan_kilat": "UTBK menguji penalaran berdasarkan bukti di dalam teks, bukan hafalan pepatah. Opsi yang terdengar bijak tetapi tidak nyambung dengan dilema tokoh adalah jebakan klasik."
     },
-    "konsep_inti_markdown": "- **Tema & Konflik:** Tema lahir dari benturan konflik batin (dilema internal) dan konflik sosial (tekanan norma/lingkungan).\n- **Amanat Tersirat:** Simpulan nilai yang dapat dipertanggungjawabkan melalui sebab-akibat tindakan tokoh.\n- **POV & Suasana:** Kata ganti (*aku*/*dia*) dan diksi alam/gestur membangun sudut pandang serta atmosfer psikologis.\n- **Makna Kias & Nilai:** Simbol/idiom ditafsirkan lewat konteks situasi; nilai moral-budaya dievaluasi dari pilihan etis tokoh.",
+    "konsep_inti_markdown": "- **Tema & Konflik:** Tema lahir dari benturan konflik batin (perang dalam hati tokoh) dan konflik sosial (tekanan lingkungan atau aturan masyarakat).\n- **Amanat Tersirat:** Pesan cerita yang kamu simpulkan dari sebab-akibat pilihan tindakan tokoh.\n- **Sudut Pandang & Suasana:** Kata ganti (*aku*/*dia*) menunjukkan posisi pencerita, sedangkan latar alam dan gerak tubuh membangun suasana hati cerita.\n- **Makna Kias & Nilai:** Simbol atau ungkapan ditafsirkan lewat konteks kalimatnya; nilai moral dan budaya dilihat dari alasan di balik sikap tokoh.",
     "radar_jebakan_utbk": [
-      "Menganggap narator orang ketiga yang menyelami pikiran satu tokoh sebagai 'serbatahu', padahal sudut pandangnya terbatas pada satu tokoh saja.",
-      "Menafsirkan ungkapan simbolik secara harfiah atau memilih amanat klise yang tidak berkaitan langsung dengan dilema tokoh."
+      "Menganggap narator orang ketiga yang hanya tahu isi pikiran satu tokoh sebagai 'serbatahu', padahal sudut pandangnya terbatas pada satu tokoh saja.",
+      "Mengartikan ungkapan kiasan secara harfiah atau memilih amanat klise yang tidak berkaitan langsung dengan dilema tokoh."
     ],
-    "stimulus_utama_bersama": "Laras memandangi tungku pembakaran gerabah di halaman belakang yang kini dingin dan berdebu. Sejak pabrik plastik dari kota membuka agen distribusi di ujung desa, pesanan tempayan tanah liat milik mendiang ayahnya menyusut drastis. Pagi itu, Pak Karta, ketua koperasi desa, kembali datang membawa map cokelat berisi draf perjanjian jual beli lahan.\n\n\"Pikirkan baik-baik, Ras. Uang ganti ruginya cukup untuk melunasi utang berobat ibumu dan membuka toko kelontong di jalan raya. Buat apa mempertahankan tungku tua yang hanya mengundang asap dan kemiskinan?\" ujar Pak Karta sambil mengetukkan ujung sepatunya ke lantai tanah.\n\nLaras terdiam, jemarinya meremas ujung kebaya lusuh yang dikenakannya. Di satu sisi, tagihan rumah sakit ibunya terus menumpuk bagai air bah yang siap menenggelamkan mereka kapan saja. Namun, di sisi lain, tungku batu bata itu bukan sekadar tumpukan tanah; di sanalah ayahnya menanamkan harga diri keluarga dan napas tradisi leluhur selama empat dekade. Menjual tanah itu sama saja dengan memadamkan pelita terakhir yang diwariskan ayahnya. Sementara itu, sebagian tetangga mulai mencibirnya sebagai perempuan keras kepala yang menolak kemajuan zaman.\n\n\"Beri saya waktu dua hari, Pak,\" ucap Laras pelan, suaranya bergetar menahan sesak di dada.\n\nPak Karta menghela napas panjang, lalu melangkah pergi tanpa menoleh. Sepeninggal tamu itu, angin kemarau berembus kencang, menerbangkan abu dingin dari mulut tungku hingga menempel di pelupuk mata Laras. Ia menatap langit kelabu yang menggantung rendah di atas atap rumbia. Di balik dinding kamar, batuk kering ibunya kembali terdengar, memecah kesunyian siang yang terasa kian menghimpit. Laras tahu, keputusan yang akan diambilnya esok hari tidak hanya menentukan nasib perut mereka, tetapi juga martabat yang selama ini dijaga keluarganya.",
+    "stimulus_utama_bersama": "Laras memandangi tungku pembakaran gerabah di halaman belakang yang kini dingin dan berdebu. Sejak pabrik plastik dari kota membuka agen distribusi di ujung desa, pesanan tempayan tanah liat milik mendiang ayahnya menyusut drastis. Pagi itu, Pak Karta, ketua koperasi desa, kembali datang membawa map cokelat berisi draf perjanjian jual beli lahan.\n\n\"Pikirkan baik-baik, Ras. Uang ganti ruginya cukup untuk melunasi utang berobat ibumu dan membuka toko kelontong di jalan raya. Buat apa mempertahankan tungku tua yang hanya mengundang asap dan kemiskinan?\" ujar Pak Karta sambil mengetukkan ujung sepatunya ke lantai tanah.\n\nLaras terdiam, jemarinya meremas ujung kebaya lusuh yang dikenakannya. Di satu sisi, tagihan rumah sakit ibunya terus menumpuk bagai air bah yang siap menenggelamkan mereka kapan saja. Namun, di sisi lain, tungku batu bata itu bukan sekadar tumpukan tanah; di sanalah ayahnya menanamkan harga diri keluarga dan napas tradisi leluhur selama empat dekade. Menjual tanah itu sama saja dengan memadamkan pelita terakhir yang diwariskan ayahnya. Sementara itu, sebagian tetangga mulai mencibirnya sebagai perempuan keras kepala yang menolak kemajuan zaman.\n\n\"Beri saya waktu dua hari, Pak,\" ucap Laras pelan, suaranya bergetar menahan sesak di dada.\n\nPak Karta menghela napas panjang, lalu melangkah pergi tanpa menoleh. Sepeninggal tamu itu, angin kemarau berembus kencang, menerbangkan abu dingin dari mulut tungku hingga menempel di pelupuk mata Laras. Ia menatap langit kelabu yang menggantung rendah di atas atap rumbia. Di balik dinding kamar, batuk kering ibunya kembali terdengar, memecah kesunyian siang yang terasa kian menghimpit. Laras tahu, keputusan yang harus ia ambil dalam dua hari ke depan tidak hanya menentukan nasib perut mereka, tetapi juga martabat yang selama ini dijaga keluarganya.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Sinyal Unsur Intrinsik, Konflik, dan Pesan Sastra",
-      "subjudul_ringkas": "Panduan taksonomi sinyal teks sastra untuk membedah konflik, makna kias, nilai, dan sudut pandang.",
+      "judul_blok": "Panduan Petunjuk Unsur Intrinsik, Konflik, dan Pesan Sastra",
+      "subjudul_ringkas": "Cara cepat membaca petunjuk teks sastra untuk menemukan konflik, makna kias, nilai, dan sudut pandang.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
-        "kolom_1": "Kategori / Penanda Teks",
-        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_1": "Kategori / Petunjuk Teks",
+        "kolom_2": "Contoh Potongan / Tanda",
         "kolom_3": "Cara Bedakan / Jebakan"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Sinyal Tema, Jenis Konflik, dan Amanat Tersirat",
-          "ringkasan_kelompok": "Pemetaan sumber pertentangan tokoh untuk merumuskan inti cerita dan pesan tersirat.",
+          "nama_kelompok": "Petunjuk Tema, Jenis Konflik, dan Amanat Tersirat",
+          "ringkasan_kelompok": "Cara memetakan sumber pertentangan tokoh untuk merumuskan inti cerita dan pesan tersiratnya.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Konflik Batin (Internal)",
-              "penjelasan_singkat": "Pergulatan dua keinginan bertentangan di dalam pikiran atau perasaan satu tokoh utama.",
+              "penjelasan_singkat": "Pergulatan dua keinginan yang saling bertentangan di dalam pikiran atau hati satu tokoh utama.",
               "contoh_penerapan": "**Dada Raka berdegup kencang**; ia ingin **jujur mengakui kesalahannya**, tetapi **takut mengecewakan ibunya**.",
-              "jebakan_atau_catatan": "Bukan konflik fisik; pengecoh sering menyebut pertengkaran antartokoh padahal pergulatan terjadi murni di benak tokoh.",
+              "jebakan_atau_catatan": "Bukan pertengkaran antartokoh; pengecoh sering menyebut perdebatan dengan orang lain padahal perangnya terjadi di batin tokoh.",
               "visual": null
             },
             {
               "judul_poin": "Konflik Sosial (Eksternal)",
-              "penjelasan_singkat": "Pertentangan tokoh melawan norma adat, tekanan keluarga, ketidakadilan struktur masyarakat, atau tokoh lain.",
-              "contoh_penerapan": "**Tetua adat menolak lamaran Bima** semata-mata karena **perbedaan kasta** yang telah diwariskan turun-temurun.",
-              "jebakan_atau_catatan": "Bedakan dari konflik fisik biasa; konflik sosial selalu melibatkan benturan nilai, status, atau aturan kolektif.",
+              "penjelasan_singkat": "Pertentangan tokoh melawan norma adat, tekanan keluarga, aturan masyarakat, atau tokoh lain.",
+              "contoh_penerapan": "**Tetua adat menolak lamaran Bima** semata-mata karena **perbedaan status keluarga** yang dipegang turun-temurun.",
+              "jebakan_atau_catatan": "Bedakan dari benturan fisik biasa; konflik sosial selalu melibatkan perbedaan nilai, status, atau aturan bersama.",
               "visual": null
             },
             {
               "judul_poin": "Rumusan Tema Sentral",
               "penjelasan_singkat": "Inti persoalan utama yang mengikat seluruh rangkaian konflik dari awal hingga akhir kutipan.",
-              "contoh_penerapan": "Kutipan tentang perjuangan guru honorer di pedalaman merujuk pada tema **pengabdian di tengah keterbatasan**.",
-              "jebakan_atau_catatan": "Jangan tertukar dengan topik sempit atau judul; tema harus mencakup keseluruhan konflik, bukan satu adegan.",
+              "contoh_penerapan": "Kisah perjuangan guru honorer di pedalaman merujuk pada tema **pengabdian di tengah keterbatasan**.",
+              "jebakan_atau_catatan": "Jangan tertukar dengan judul atau satu kejadian kecil; tema harus merangkum keseluruhan konflik cerita.",
               "visual": null
             },
             {
               "judul_poin": "Amanat Tersirat (Sebab-Akibat)",
-              "penjelasan_singkat": "Pesan moral yang disimpulkan dari konsekuensi akhir atas pilihan atau tindakan tokoh.",
+              "penjelasan_singkat": "Pesan moral yang disimpulkan dari akibat langsung atas pilihan atau tindakan tokoh.",
               "contoh_penerapan": "**Keserakahan Juragan Karta** menimbun beras berujung pada **kebangkrutan dan pengucilan warga** di akhir cerita.",
-              "jebakan_atau_catatan": "Hindari opsi nasihat klise yang tidak terbukti oleh akibat peristiwa di dalam teks bacaan.",
+              "jebakan_atau_catatan": "Hindari opsi nasihat klise yang tidak terbukti oleh akibat peristiwa di dalam bacaan.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Penanda Makna Kias, Simbol, dan Nilai Kehidupan",
-          "ringkasan_kelompok": "Teknik menafsirkan bahasa figuratif sastra serta menguji nilai etis dari tindakan tokoh.",
+          "nama_kelompok": "Petunjuk Makna Kias, Simbol, dan Nilai Kehidupan",
+          "ringkasan_kelompok": "Teknik menafsirkan bahasa kiasan sastra serta menilai sikap tokoh secara objektif.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Ungkapan Idiomatis & Konotasi",
-              "penjelasan_singkat": "Gabungan kata yang membentuk makna baru di luar arti harfiah kata penyusunnya.",
+              "penjelasan_singkat": "Gabungan kata yang membentuk makna baru di luar arti kamus kata penyusunnya.",
               "contoh_penerapan": "Setelah proyeknya gagal total, pejabat itu memilih **cuci tangan** dari tanggung jawab anggaran.",
-              "jebakan_atau_catatan": "Pengecoh UTBK sering memakai makna harfiah; selalu ganti idiom dengan padanan kontekstualnya untuk menguji logika.",
+              "jebakan_atau_catatan": "Pengecoh UTBK sering memakai arti harfiah; ganti ungkapan dengan makna konteksnya untuk menguji logika kalimat.",
               "visual": null
             },
             {
               "judul_poin": "Simbolisme Benda & Alam",
-              "penjelasan_singkat": "Objek konkret yang mewakili gagasan abstrak seperti harapan, kekuasaan, atau kehancuran batin.",
+              "penjelasan_singkat": "Benda atau keadaan alam yang dipakai untuk mewakili perasaan atau gagasan tertentu.",
               "contoh_penerapan": "**Lampu teplok yang meredup di ambang fajar** menandai **habisnya sisa harapan** sang ibu menunggu anaknya.",
-              "jebakan_atau_catatan": "Jangan menafsirkan simbol secara lepas; pastikan maknanya selaras dengan emosi tokoh pada kalimat sekitarnya.",
+              "jebakan_atau_catatan": "Jangan menafsirkan simbol secara lepas; pastikan maknanya selaras dengan emosi tokoh pada kalimat di sekitarnya.",
               "visual": null
             },
             {
               "judul_poin": "Evaluasi Nilai Moral",
-              "penjelasan_singkat": "Penilaian baik-buruk perilaku individu terkait kejujuran, empati, tanggung jawab, dan integritas pribadi.",
+              "penjelasan_singkat": "Penilaian baik-buruk perilaku pribadi tokoh terkait kejujuran, empati, dan tanggung jawab.",
               "contoh_penerapan": "Meski dompet itu tebal, **Sari tetap mengembalikannya utuh** kepada pemiliknya di pos keamanan.",
-              "jebakan_atau_catatan": "Nilai moral berfokus pada etika pribadi tokoh, berbeda dengan nilai sosial yang menyangkut hubungan antarkelompok.",
+              "jebakan_atau_catatan": "Nilai moral berfokus pada sikap pribadi tokoh, berbeda dengan nilai sosial yang menyangkut hubungan antarkelompok.",
               "visual": null
             },
             {
               "judul_poin": "Evaluasi Nilai Sosial & Budaya",
-              "penjelasan_singkat": "Cerminan kepedulian kolektif (sosial) atau tradisi, adat, dan kepercayaan turun-temurun masyarakat (budaya).",
+              "penjelasan_singkat": "Cerminan kepedulian antarwarga (sosial) atau tradisi dan adat turun-temurun masyarakat (budaya).",
               "contoh_penerapan": "**Seluruh warga bergotong royong mendirikan rumah** Pak Tono (sosial) setelah **ritual selamatan adat** digelar (budaya).",
-              "jebakan_atau_catatan": "Pengecoh kerap menukar label sosial dan budaya; cek apakah fokusnya interaksi bantuan atau tradisi warisan.",
+              "jebakan_atau_catatan": "Pengecoh kerap menukar label sosial dan budaya; cek apakah fokusnya bantuan antarwarga atau tradisi warisan.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Penanda Sudut Pandang (POV) dan Suasana Psikologis",
-          "ringkasan_kelompok": "Identifikasi posisi pencerita dan atmosfer emosi melalui kata ganti serta diksi latar.",
+          "nama_kelompok": "Petunjuk Sudut Pandang (POV) dan Suasana Cerita",
+          "ringkasan_kelompok": "Cara mengenali posisi pencerita dan suasana hati cerita lewat kata ganti serta gambaran latar.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Orang Pertama Pelaku Utama",
-              "penjelasan_singkat": "Pencerita menggunakan kata ganti aku atau saya dan menjadi pusat seluruh peristiwa cerita.",
+              "penjelasan_singkat": "Pencerita memakai kata ganti *aku* atau *saya* dan menjadi pusat seluruh peristiwa cerita.",
               "contoh_penerapan": "**Aku** mengepalkan tangan, menahan amarah saat **namaku** dicoret dari daftar penerima beasiswa.",
-              "jebakan_atau_catatan": "Jika kata aku hanya mengamati nasib orang lain tanpa menjadi pusat konflik, itu pelaku sampingan.",
+              "jebakan_atau_catatan": "Jika tokoh *aku* hanya mengamati nasib orang lain tanpa menjadi pusat konflik, itu orang pertama pelaku sampingan.",
               "visual": null
             },
             {
-              "judul_poin": "Orang Ketiga Serba Tahu",
-              "penjelasan_singkat": "Pencerita menyebut nama tokoh atau kata ia serta mampu menembus isi pikiran batin tokoh.",
+              "judul_poin": "Orang Ketiga (Serbatahu vs Terbatas)",
+              "penjelasan_singkat": "Pencerita menyebut nama tokoh atau kata *ia*; disebut **serbatahu** jika tahu pikiran semua tokoh, dan **terbatas** jika hanya tahu pikiran satu tokoh.",
               "contoh_penerapan": "**Nadia** tersenyum ramah, padahal **dalam hatinya tersimpan dendam** yang telah lama ia pendam.",
-              "jebakan_atau_catatan": "Berbeda dari orang ketiga pengamat yang hanya merekam tindakan fisik tanpa mengetahui isi hati tokoh.",
+              "jebakan_atau_catatan": "Cek apakah pencerita bisa membaca isi pikiran tokoh lain juga; jika hanya satu tokoh saja, pilih orang ketiga terbatas (terarah).",
               "visual": null
             },
             {
-              "judul_poin": "Latar Suasana Psikologis",
-              "penjelasan_singkat": "Atmosfer batin (mencekam, getir, sunyi) yang dibangun lewat pilihan kata indrawi dan gestur.",
+              "judul_poin": "Latar Suasana Cerita",
+              "penjelasan_singkat": "Nuansa perasaan (mencekam, getir, sunyi) yang dibangun lewat pilihan kata indrawi dan gerak tubuh tokoh.",
               "contoh_penerapan": "**Detak jam dinding terdengar nyaring** di ruang tunggu yang **dingin dan membisu** itu.",
-              "jebakan_atau_catatan": "Jangan tertukar dengan latar tempat atau waktu; suasana merujuk pada nuansa perasaan yang terbangun.",
+              "jebakan_atau_catatan": "Jangan tertukar dengan latar tempat atau waktu; suasana merujuk pada nuansa emosi yang terasa dalam adegan.",
               "visual": null
             }
           ]
@@ -141,7 +141,7 @@
       "nama_variasi": "Menentukan Tema Sentral, Konflik Batin/Sosial Tokoh, dan Amanat Tersirat dari Kutipan Prosa",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk paragraf 1–3 stimulus utama: dilema Laras mempertahankan tungku gerabah warisan ayah di tengah desakan biaya berobat ibu, tawaran Pak Karta, dan cibiran tetangga.",
-      "bedah_pola_markdown": "**1. Teknik Scanning & Skimming:**\nPindai penanda pertentangan (*di satu sisi*, *namun*) yang mempertemukan dua kepentingan. Pada paragraf ketiga, pertentangan antara tagihan rumah sakit ibu dan harga diri tradisi ayah menandai **konflik batin**, sedangkan cibiran tetangga dan bujukan Pak Karta menunjukkan **konflik sosial**.\n\n**2. Parafrasa ke Opsi Benar:**\nGabungkan inti dilema menjadi gagasan abstrak (tema): pergulatan mempertahankan warisan tradisi keluarga di tengah himpitan ekonomi modern. Amanat tersiratnya adalah pentingnya mempertimbangkan aspek martabat dan tradisi secara matang saat menghadapi tekanan ekonomi.\n\n**3. Ciri Opsi Jebakan:**\n- **Terlalu sempit:** Hanya menyebut Laras ingin melunasi utang berobat ibu.\n- **Ekstrem:** Menyatakan modernisasi selalu menghancurkan kehidupan masyarakat desa.\n- **Tidak disebut:** Menyimpulkan Laras akhirnya menjual lahan atau Pak Karta memaksa secara kasar.",
+      "bedah_pola_markdown": "**1. Cara Cepat Membaca Petunjuk Teks:**\nCari kata penghubung pertentangan (*di satu sisi*, *namun*) yang mempertemukan dua kepentingan. Pada paragraf ketiga, benturan antara tagihan rumah sakit ibu dan harga diri tradisi ayah menunjukkan **konflik batin**. Sementara itu, cibiran tetangga dan bujukan Pak Karta menunjukkan **konflik sosial**.\n\n**2. Merumuskan Opsi Benar:**\nGabungkan kedua sisi dilema menjadi satu gagasan utama (tema): pergulatan mempertahankan warisan tradisi keluarga di tengah himpitan ekonomi modern. Dari sini, amanat tersiratnya jelas: keputusan besar yang menyangkut martabat dan tanggung jawab keluarga harus dipertimbangkan secara matang.\n\n**3. Kenali Ciri Opsi Jebakan:**\n- **Terlalu sempit:** Hanya menyebut Laras ingin melunasi utang berobat ibu tanpa menyinggung warisan ayah.\n- **Terlalu ekstrem:** Menyatakan modernisasi pasti menghancurkan kehidupan warga desa.\n- **Mengarang isi cerita:** Menyimpulkan Laras akhirnya menjual lahan atau Pak Karta memaksa secara kasar.",
       "kunci_pembeda": "Tema dan amanat yang sah harus merangkum kedua sisi konflik dalam teks, bukan memihak satu potongan peristiwa saja.",
       "visual": null
     },
@@ -150,7 +150,7 @@
       "nama_variasi": "Mengidentifikasi Sudut Pandang Penceritaan (Point of View) dan Latar Suasana Psikologis",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Rujuk paragraf 3–5 stimulus utama: penggunaan nama tokoh 'Laras', kata ganti 'ia', akses batin Laras, serta deskripsi 'angin kemarau', 'langit kelabu', dan 'kesunyian siang'.",
-      "bedah_pola_markdown": "**1. Teknik Scanning & Skimming:**\nCek pronomina utama dan batas akses pikiran tokoh. Penyebutan nama *Laras* dan pronomina *ia* tanpa *aku* menandakan orang ketiga. Narator hanya menyelami kegelisahan Laras (*\"menahan sesak di dada\"*, *\"Laras tahu\"*), tetapi tidak mengakses isi pikiran Pak Karta. Latar suasana dipindai lewat diksi alam dan gestur: *\"tungku dingin\"*, *\"langit kelabu\"*, serta *\"kesunyian siang yang kian menghimpit\"*.\n\n**2. Parafrasa ke Opsi Benar:**\nPola ini diparafrasakan sebagai sudut pandang **orang ketiga terarah (terbatas)** dengan latar suasana psikologis yang **muram, tertekan, dan penuh kebimbangan**.\n\n**3. Ciri Opsi Jebakan:**\n- **Keliru jenis POV:** Menyebut *orang ketiga serbatahu* (padahal pikiran Pak Karta tertutup) atau *orang pertama pelaku sampingan*.\n- **Terlalu ekstrem:** Mengartikan suasana sebagai *kemarahan yang meledak-ledak*.\n- **Terlalu sempit:** Menganggap latar hanya berfungsi menunjukkan waktu siang hari.",
+      "bedah_pola_markdown": "**1. Cara Cepat Membaca Petunjuk Teks:**\nPerhatikan kata ganti utama dan batas pengetahuan pencerita. Pemakaian nama *Laras* dan kata *ia* tanpa kata *aku* menandakan orang ketiga. Pencerita hanya masuk ke isi hati Laras (*\"menahan sesak di dada\"*, *\"Laras tahu\"*), tetapi tidak pernah menembus pikiran Pak Karta. Untuk suasana, lihat gambaran alam dan gerak tubuh: *\"tungku dingin\"*, *\"langit kelabu\"*, serta *\"kesunyian siang yang kian menghimpit\"*.\n\n**2. Merumuskan Opsi Benar:**\nGabungkan kedua temuan itu: kutipan memakai sudut pandang **orang ketiga terbatas (terarah)** dengan suasana cerita yang **muram, tertekan, dan penuh kebimbangan**.\n\n**3. Kenali Ciri Opsi Jebakan:**\n- **Salah jenis sudut pandang:** Menyebut *orang ketiga serbatahu* (padahal isi pikiran Pak Karta tertutup) atau *orang pertama pelaku sampingan*.\n- **Emosi berlebihan:** Mengartikan suasana sebagai *kemarahan yang meledak-ledak*.\n- **Terlalu sempit:** Menganggap gambaran *langit kelabu* dan *kesunyian siang* hanya menjelaskan waktu siang hari.",
       "kunci_pembeda": "Periksa apakah narator bisa membaca batin semua tokoh (serbatahu) atau hanya terpusat pada satu tokoh utama (terarah).",
       "visual": null
     },
@@ -159,7 +159,7 @@
       "nama_variasi": "Menafsirkan Makna Kias, Simbolik, atau Ungkapan Idiomatis dalam Dialog/Narasi Sastra",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk paragraf 3 & 5 stimulus utama: ungkapan 'bagai air bah yang siap menenggelamkan', 'memadamkan pelita terakhir yang diwariskan ayahnya', dan simbol 'tungku dingin dan berdebu'.",
-      "bedah_pola_markdown": "**1. Teknik Scanning & Skimming:**\nTemukan frasa nonharfiah yang terhubung langsung dengan objek konkret di sekitarnya. Ungkapan *\"memadamkan pelita terakhir yang diwariskan ayahnya\"* merujuk pada tindakan menjual tungku gerabah. Sementara itu, frasa *\"bagai air bah yang siap menenggelamkan\"* berpasangan dengan subjek *tagihan rumah sakit*.\n\n**2. Parafrasa ke Opsi Benar:**\nTerjemahkan simbol ke makna kontekstualnya: *pelita terakhir* bermakna simbol keberlangsungan warisan dan kehormatan keluarga, sedangkan *air bah* melambangkan beban finansial yang terus membesar dan mengancam kehidupan mereka.\n\n**3. Ciri Opsi Jebakan:**\n- **Makna harfiah:** Mengartikan *pelita* sebagai lampu minyak penerang halaman atau *air bah* sebagai bencana banjir di desa.\n- **Tidak kontekstual:** Menafsirkan *tungku dingin* sebagai tanda Laras malas bekerja.\n- **Ekstrem:** Menyimpulkan keluarga Laras pasti bangkrut total tanpa harapan.",
+      "bedah_pola_markdown": "**1. Cara Cepat Membaca Petunjuk Teks:**\nTemukan frasa bermakna kias, lalu cocokkan dengan benda atau peristiwa nyata di kalimat sekitarnya. Ungkapan *\"memadamkan pelita terakhir yang diwariskan ayahnya\"* merujuk langsung pada tindakan menjual tungku gerabah. Sementara itu, frasa *\"bagai air bah yang siap menenggelamkan\"* menempel pada subjek *tagihan rumah sakit*.\n\n**2. Merumuskan Opsi Benar:**\nTerjemahkan kiasan ke makna konteksnya: *pelita terakhir* melambangkan keberlangsungan tradisi dan kehormatan keluarga, sedangkan *air bah* menggambarkan beban utang yang terus membesar dan mengancam hidup mereka.\n\n**3. Kenali Ciri Opsi Jebakan:**\n- **Arti harfiah:** Mengartikan *pelita* sebagai lampu minyak penerang halaman atau *air bah* sebagai banjir bandang di desa.\n- **Lepas dari konteks:** Menafsirkan *tungku dingin* sebagai bukti Laras malas bekerja.\n- **Terlalu ekstrem:** Menyimpulkan keluarga Laras pasti bangkrut total tanpa jalan keluar.",
       "kunci_pembeda": "Makna kias selalu terikat pada kalimat sebelum atau sesudahnya sebagai penjelas rujukan konkret.",
       "visual": null
     },
@@ -168,7 +168,7 @@
       "nama_variasi": "Mengevaluasi Nilai Moral, Sosial, dan Budaya yang Terefleksi pada Tindakan Tokoh",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk seluruh kutipan stimulus utama: sikap bakti Laras terhadap ibunya, penghormatan pada warisan tradisi ayah, serta orientasi pragmatis Pak Karta dan warga sekitar.",
-      "bedah_pola_markdown": "**1. Teknik Scanning & Skimming:**\nIdentifikasi motivasi di balik sikap dan dialog tiap tokoh. Pada Laras, terlihat kepedulian terhadap pengobatan ibu (**nilai moral/bakti**) sekaligus upaya menjaga kriya warisan empat dekade (**nilai budaya**). Pada Pak Karta dan tetangga, terlihat pergeseran orientasi masyarakat ke arah efisiensi ekonomi dan cibiran sosial (**nilai sosial**).\n\n**2. Parafrasa ke Opsi Benar:**\nEvaluasi nilai dirumuskan secara objektif: kutipan merefleksikan benturan antara pelestarian warisan budaya lokal dan tanggung jawab bakti keluarga melawan pragmatisme ekonomi masyarakat modern.\n\n**3. Ciri Opsi Jebakan:**\n- **Menghakimi ekstrem:** Melabeli Pak Karta sebagai tokoh antagonis yang jahat dan serakah (padahal ia menawarkan solusi ekonomi).\n- **Tidak disebut:** Menyatakan budaya gerabah telah punah di seluruh negeri.\n- **Terlalu sempit:** Menganggap cerita hanya berisi nilai kesabaran menghadapi tetangga.",
+      "bedah_pola_markdown": "**1. Cara Cepat Membaca Petunjuk Teks:**\nLihat alasan di balik ucapan dan tindakan tiap tokoh. Laras memikirkan biaya berobat ibunya (**nilai moral/bakti**) sekaligus menjaga kerajinan warisan empat dekade (**nilai budaya**). Sebaliknya, Pak Karta dan sebagian tetangga lebih mengutamakan keuntungan praktis dan mencibir Laras (**nilai sosial**).\n\n**2. Merumuskan Opsi Benar:**\nRumuskan nilai secara objektif: kutipan menggambarkan benturan antara pelestarian warisan budaya dan bakti keluarga melawan cara pandang praktis masyarakat modern.\n\n**3. Kenali Ciri Opsi Jebakan:**\n- **Menghakimi tokoh:** Melabeli Pak Karta sebagai tokoh jahat yang serakah, padahal ia datang menawarkan jalan keluar ekonomi.\n- **Mengarang fakta luar:** Menyatakan kerajinan gerabah sudah punah di seluruh Indonesia.\n- **Terlalu sempit:** Menganggap cerita hanya mengajarkan kesabaran menghadapi tetangga yang julid.",
       "kunci_pembeda": "Nilai sastra dinilai dari alasan di balik pilihan tokoh, bukan sekadar menghakimi tokoh sebagai baik atau jahat.",
       "visual": null
     }
@@ -190,7 +190,7 @@
         "E. menyerah pada tekanan sosial warga desa yang menganggap usaha gerabah sebagai sumber kemiskinan"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Pada paragraf ketiga, *pelita terakhir* merujuk langsung pada tungku batu bata tempat ayah Laras menanamkan harga diri dan tradisi selama empat dekade. Menjual lahan berarti mengorbankan nilai tradisi dan martabat keluarga demi melunasi biaya berobat ibu (**B**). Opsi A terlalu ekstrem (*seluruh aktivitas ekonomi*). Opsi C dan E menyempitkan konflik hanya pada reaksi terhadap orang lain, sedangkan Opsi D tidak sesuai karena menjual lahan belum tentu langsung mengakhiri sakit ibunya.",
+      "bedah_cepat_markdown": "Cek rujukan langsung frasa *\"pelita terakhir\"* pada paragraf ketiga. Di kalimat sebelumnya, tungku batu bata dijelaskan sebagai tempat ayah Laras menanamkan harga diri keluarga dan napas tradisi selama empat dekade.\n\nArtinya, menjual lahan tungku sama saja dengan **menghilangkan simbol kehormatan dan kesinambungan tradisi keluarga demi menyelamatkan kondisi finansial (B)**.\n\n- **Opsi A salah:** Terlalu ekstrem karena menyebut *seluruh* aktivitas ekonomi berhenti.\n- **Opsi C dan E salah:** Menyempitkan konflik hanya pada reaksi terhadap Pak Karta atau tetangga.\n- **Opsi D salah:** Menjual lahan tidak otomatis mengakhiri penderitaan fisik ibunya.",
       "visual": null
     },
     {
@@ -209,7 +209,7 @@
         "E. Salah - Salah - Benar"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "1. **Benar:** Narator memakai nama *Laras*/*ia* dan hanya mengakses isi pikiran serta perasaan Laras, bukan Pak Karta.\n2. **Benar:** Diksi alam (*langit kelabu*, *abu dingin*) dan gestur (*meremas ujung kebaya*, *suara bergetar*) memperkuat atmosfer batin yang terhimpit.\n3. **Salah:** Tawaran Pak Karta justru mengarah pada alih fungsi lahan menjadi toko kelontong (pragmatisme ekonomi), bukan pelestarian budaya gerabah.\nUrutan tepat adalah **Benar - Benar - Salah (B)**.",
+      "bedah_cepat_markdown": "Mari kita uji setiap pernyataan langsung dengan bukti di dalam kutipan:\n\n1. **Benar:** Pencerita menyebut nama *Laras* dan kata *ia*, serta hanya masuk ke pikiran dan perasaan Laras tanpa pernah membaca isi hati Pak Karta. Ini ciri sudut pandang orang ketiga terarah (terbatas).\n2. **Benar:** Gambaran alam (*langit kelabu*, *abu dingin*) berpadu dengan gerak tubuh gugup (*meremas ujung kebaya*, *suara bergetar*) untuk membangun suasana batin yang tertekan.\n3. **Salah:** Pak Karta justru membujuk Laras menjual lahan tungku agar diubah menjadi toko kelontong, bukan melestarikan kerajinan gerabah.\n\nJadi, urutan yang tepat adalah **Benar - Benar - Salah (B)**.",
       "visual": null
     },
     {
@@ -228,7 +228,7 @@
         "E. bakti seorang anak kepada orang tua hanya dapat dibuktikan dengan mempertahankan benda peninggalan keluarga"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Laras tidak langsung menolak maupun mengiyakan tawaran Pak Karta; ia meminta waktu dua hari karena menimbang dua nilai penting sekaligus, yakni keselamatan ibunya dan martabat warisan ayahnya (**B**). Opsi A bertentangan dengan pergolakan batin Laras yang menghargai tradisi. Opsi C dan E bersifat ekstrem (*mengabaikan keselamatan*, *hanya dapat dibuktikan*), sedangkan Opsi D keliru karena Laras belum menolak tawaran tersebut.",
+      "bedah_cepat_markdown": "Perhatikan sikap Laras pada paragraf keempat dan kelima: ia tidak langsung menolak ataupun menyetujui tawaran Pak Karta, melainkan meminta waktu dua hari.\n\nAlasan di balik sikap itu jelas tertulis di akhir cerita—Laras harus menimbang dua tanggung jawab besar sekaligus, yakni biaya hidup serta pengobatan ibunya dan martabat warisan ayahnya. Oleh karena itu, pesan tersirat yang paling tepat adalah **keputusan besar yang menyangkut tanggung jawab keluarga dan nilai luhur perlu dipertimbangkan secara cermat tanpa tergesa-gesa (B)**.\n\n- **Opsi A salah:** Bertentangan dengan batin Laras yang tetap menghargai tradisi ayahnya.\n- **Opsi C dan E salah:** Bersifat ekstrem karena memakai kata *mengabaikan keselamatan* dan *hanya dapat dibuktikan*.\n- **Opsi D salah:** Keliru karena Laras belum menolak tawaran Pak Karta.",
       "visual": null
     }
   ]

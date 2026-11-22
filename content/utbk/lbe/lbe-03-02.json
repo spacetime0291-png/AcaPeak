@@ -15,18 +15,18 @@
         "Cautious and concerned (Waspada dan prihatin)"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Banyak peserta terkecoh kata 'promises faster boarding' di awal klausa. Konjungsi 'While' berfungsi mengontraskan manfaat awal dengan kekhawatiran utama ('unchecked deployment threatens') di klausa inti."
+      "penjelasan_kilat": "Jangan tertipu frasa 'promises faster boarding' di bagian depan. Kata 'While' (meskipun) dipakai penulis untuk mengakui manfaatnya sebentar, lalu menghantamnya dengan kekhawatiran utama: 'unchecked deployment threatens'."
     },
-    "konsep_inti_markdown": "**Peta Taktis Tone, Attitude, & Bias:**\n- **Tone (Nada Penulis):** Sikap emosional/intelektual penulis yang tergambar lewat diksi (*adjectives/adverbs*) dan konjungsi kontras (*however, yet, while*).\n- **Attitude (Sikap Komentator):** Respons spesifik pemberi komentar terhadap *Original Post* dalam forum diskusi.\n- **Bias (Keberpihakan):** Penggunaan kata bermuatan nilai (*loaded words*) secara sepihak.\n- **Perspective (Sudut Pandang):** Posisi atau argumen inti yang paling selaras dengan klaim utama teks.",
+    "konsep_inti_markdown": "**Peta Taktis Tone, Attitude, & Bias:**\n- **Tone (Nada Penulis):** Rasa atau sikap penulis terhadap topik. Cek pilihan kata sifat/keterangan (*adjectives/adverbs*) dan kata hubung kontras (*however, yet, while*).\n- **Attitude (Sikap Komentator):** Reaksi spesifik tiap komentator terhadap unggahan utama (*Original Post*) di thread diskusi.\n- **Bias (Keberpihakan):** Kecenderungan penulis memihak satu kubu lewat kata emosional (*loaded words*) atau bukti sepihak.\n- **Perspective (Sudut Pandang):** Posisi atau kesimpulan utama yang paling cocok dengan argumen inti penulis.",
     "radar_jebakan_utbk": [
-      "Opsi bermakna ekstrem (furious, ecstatic, completely hopeless) padahal teks akademik UTBK cenderung bernada moderat (cautious, skeptical, concerned, ambivalent).",
-      "Terjebak pada klausa konsesif (klausa setelah 'Although/While') yang sebenarnya hanya berfungsi mengakui argumen lawan sebelum disanggah penulis."
+      "Memilih kata bernada ekstrem (*furious, ecstatic, completely hopeless*). Teks UTBK hampir selalu memakai nada moderat seperti *cautious, skeptical, concerned,* atau *ambivalent*.",
+      "Terkecoh kalimat pengakuan di awal (*Although/While...*). Bagian itu cuma dipakai penulis untuk mengakui argumen lawan sebentar sebelum membantahnya."
     ],
     "stimulus_utama_bersama": "**Urban Micro-Mobility Thread: Are E-Scooters Solving Congestion?**\n\n**Original Post — Dr. Aris Thorne (Urban Mobility Researcher)**\nOver the past three years, municipal authorities have aggressively promoted dockless electric scooters as a sustainable cure-all for urban gridlock. Undoubtedly, these compact vehicles offer convenient first- and last-mile connectivity, reducing short car trips in dense commercial districts. However, the uncritical enthusiasm surrounding micro-mobility often masks severe infrastructural deficits. Without dedicated bike lanes, riders frequently encroach upon pedestrian sidewalks, resulting in a documented spike in emergency room admissions. Furthermore, lifecycle assessments reveal that the rapid turnover of cheaply manufactured scooters, coupled with daily van collections for battery charging, substantially erodes their purported carbon savings. Until cities enforce rigorous fleet caps and establish protected transit corridors, treating e-scooters as an environmental panacea remains premature.\n\n**Comment 1 — Maya Lin (City Council Transport Advisor)**\nDr. Thorne raises a vital point regarding sidewalk safety, yet dismissing the entire sector as 'premature' overlooks measurable successes in cities like Oslo and Paris. Where municipalities paired fleet regulations with congestion pricing, private car dependency dropped noticeably. The technology itself is not flawed; rather, fragmented urban governance is to blame.\n\n**Comment 2 — Kevin Vance (Tech Venture Analyst)**\nOh, brilliant—let's drown promising green startups in endless bureaucratic red tape before they even turn a profit. Every transformative transit shift, from bicycles to subways, faced initial growing pains and naysayers predicting doom.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Taksonomi Sinyal Tone, Attitude Komentator, Bias, dan Perspective",
-      "subjudul_ringkas": "Katalog penanda diksi, nada tulisan, respons forum diskusi, dan jebakan pengecoh soal LBE UTBK.",
+      "judul_blok": "Peta Sinyal Tone, Attitude Komentator, Bias, dan Perspective",
+      "subjudul_ringkas": "Panduan membaca pilihan kata, nada tulisan, reaksi komentator, dan jebakan soal LBE UTBK.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
@@ -43,112 +43,112 @@
               "judul_poin": "Objective (Netral & Berbasis Fakta)",
               "penjelasan_singkat": "Menyajikan data, statistik, atau temuan riset secara lugas tanpa menyisipkan opini pribadi maupun kata sifat emosional.",
               "contoh_penerapan": "According to the 2024 WHO report, global temperatures **rose by 1.2 degrees Celsius** over the past century.",
-              "jebakan_atau_catatan": "Jebakan: memilih 'Indifferent' (acuh tak acuh); teks ilmiah tetap peduli akurasi meski tanpa emosi.",
+              "jebakan_atau_catatan": "Jebakan: memilih *Indifferent* (acuh tak acuh). Penulis netral tetap peduli pada akurasi data, bukan cuek.",
               "visual": null
             },
             {
               "judul_poin": "Skeptical (Ragu & Mempertanyakan Klaim)",
-              "penjelasan_singkat": "Meragukan validitas klaim, metode, atau efektivitas suatu solusi karena bukti dianggap belum memadai.",
+              "penjelasan_singkat": "Meragukan suatu klaim atau solusi karena bukti pendukungnya dinilai masih lemah atau belum cukup.",
               "contoh_penerapan": "While proponents hail the pill as a miracle, **little clinical evidence supports** its long-term efficacy.",
-              "jebakan_atau_catatan": "Bedakan dengan 'Cynical' (sinis/menyerang motif); 'Skeptical' fokus pada kurangnya bukti objektif.",
+              "jebakan_atau_catatan": "Bedakan dengan *Cynical* (sinis/menyerang niat buruk). *Skeptical* murni menuntut bukti yang kuat.",
               "visual": null
             },
             {
               "judul_poin": "Optimistic (Penuh Harapan & Positif)",
-              "penjelasan_singkat": "Menyoroti peluang keberhasilan, kemajuan teknologi, atau solusi masa depan dengan kata bermakna positif.",
+              "penjelasan_singkat": "Menyoroti peluang keberhasilan, kemajuan teknologi, atau solusi masa depan dengan pilihan kata positif yang terukur.",
               "contoh_penerapan": "Recent breakthroughs in battery storage **pave the way for a cleaner, more sustainable** energy grid.",
-              "jebakan_atau_catatan": "Jebakan: memilih 'Euphoric' (luapan kegembiraan berlebihan); teks akademik tetap terukur meski positif.",
+              "jebakan_atau_catatan": "Jebakan: memilih *Euphoric* (girang berlebihan). Teks akademik tetap tenang dan terukur meski bernada positif.",
               "visual": null
             },
             {
               "judul_poin": "Cautious (Hati-Hati & Bersyarat)",
-              "penjelasan_singkat": "Mengakui potensi manfaat suatu hal, tetapi menekankan perlunya kewaspadaan, regulasi, atau riset lanjutan.",
+              "penjelasan_singkat": "Mengakui potensi manfaat suatu hal, tapi mengingatkan perlunya kehati-hatian, aturan, atau uji lanjutan.",
               "contoh_penerapan": "AI diagnostics show promise, **yet clinicians must carefully verify** outputs before making final decisions.",
-              "jebakan_atau_catatan": "Tandai modal verbs seperti 'may', 'might', atau 'should' yang membatasi klaim mutlak.",
+              "jebakan_atau_catatan": "Perhatikan kata bantu seperti *may*, *might*, atau *should* yang membatasi klaim agar tidak mutlak.",
               "visual": null
             },
             {
               "judul_poin": "Critical (Kritis & Menunjukkan Kelemahan)",
-              "penjelasan_singkat": "Mengevaluasi dan mengupas kesalahan logika, dampak buruk, atau kegagalan suatu kebijakan secara tajam.",
+              "penjelasan_singkat": "Menyoroti celah logika, dampak buruk, atau kegagalan suatu kebijakan secara tajam dan terarah.",
               "contoh_penerapan": "The new zoning policy **fails to address** housing shortages and **exacerbates** urban inequality.",
-              "jebakan_atau_catatan": "Bedakan dengan 'Hostile' (bermusuhan); 'Critical' mengkritik substansi atau kebijakan, bukan menyerang personal.",
+              "jebakan_atau_catatan": "Bedakan dengan *Hostile* (bermusuhan). *Critical* mengkritik kebijakan atau ide, bukan menyerang pribadi.",
               "visual": null
             },
             {
               "judul_poin": "Concerned (Prihatin & Cemas)",
-              "penjelasan_singkat": "Mengungkapkan kekhawatiran atas ancaman serius, tren memburuk, atau risiko yang mendesak untuk ditangani.",
+              "penjelasan_singkat": "Mengungkapkan kekhawatiran atas ancaman serius atau risiko yang butuh penanganan segera.",
               "contoh_penerapan": "If deforestation continues at this **alarming rate**, thousands of endemic species **face imminent extinction**.",
-              "jebakan_atau_catatan": "Jebakan: memilih 'Panicked' atau 'Desperate'; 'Concerned' menunjukkan kepedulian rasional terhadap risiko nyata.",
+              "jebakan_atau_catatan": "Jebakan: memilih *Panicked* atau *Desperate*. *Concerned* menunjukkan kepedulian rasional terhadap risiko nyata.",
               "visual": null
             },
             {
               "judul_poin": "Ambivalent (Mendua & Berimbang)",
-              "penjelasan_singkat": "Menampilkan argumen pro dan kontra dengan bobot seimbang tanpa memihak salah satu sisi.",
+              "penjelasan_singkat": "Menampilkan sisi positif dan negatif dengan bobot seimbang tanpa memihak salah satu kubu.",
               "contoh_penerapan": "Remote work **boosts employee autonomy**, **on the other hand**, it **erodes** spontaneous team collaboration.",
-              "jebakan_atau_catatan": "Jangan tertukar dengan 'Confused' (bingung); 'Ambivalent' berarti penulis sadar penuh akan dua sisi.",
+              "jebakan_atau_catatan": "Jangan tertukar dengan *Confused* (bingung). *Ambivalent* berarti penulis paham penuh akan dua sisi masalah.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Sikap Komentator Thread Diskusi (Commenter's Attitude)",
-          "ringkasan_kelompok": "Pola respons komentator terhadap argumen Original Post (OP) pada soal multi-teks forum.",
+          "ringkasan_kelompok": "Pola respons komentator terhadap unggahan utama (Original Post) pada soal multi-teks forum.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Supportive (Mendukung & Memperkuat OP)",
-              "penjelasan_singkat": "Menyetujui premis Original Post lalu menambahkan bukti baru, pengalaman pribadi, atau argumen penguat.",
+              "penjelasan_singkat": "Menyetujui argumen Original Post lalu menambahkan bukti baru, contoh nyata, atau alasan penguat.",
               "contoh_penerapan": "**Spot on!** Your point about sleep debt **aligns directly with** our hospital's latest shift data.",
-              "jebakan_atau_catatan": "Pastikan dukungan ditujukan ke OP, bukan ke komentator lain yang justru mengkritik OP.",
+              "jebakan_atau_catatan": "Pastikan dukungannya ditujukan ke OP, bukan ke komentator lain yang justru mengkritik OP.",
               "visual": null
             },
             {
               "judul_poin": "Dismissive (Meremehkan & Menolak Mentah-Mentah)",
               "penjelasan_singkat": "Menolak argumen Original Post secara singkat sebagai hal sepele, usang, atau tidak layak dibahas.",
               "contoh_penerapan": "That theory was **debunked years ago**; bringing it up now is **a complete waste of time**.",
-              "jebakan_atau_catatan": "Bedakan dengan 'Constructive Criticism'; 'Dismissive' menolak tanpa menawarkan argumen tandingan yang mendalam.",
+              "jebakan_atau_catatan": "Bedakan dengan *Constructive Criticism*. *Dismissive* langsung meremehkan tanpa memberi argumen tandingan yang serius.",
               "visual": null
             },
             {
               "judul_poin": "Sarcastic (Sarkastis & Menyindir Terbalik)",
               "penjelasan_singkat": "Memakai pujian berlebihan atau ironi untuk menyindir kelemahan logika pada pernyataan Original Post.",
               "contoh_penerapan": "Oh **brilliant idea**—let's solve traffic congestion by **building even more highways** through downtown!",
-              "jebakan_atau_catatan": "Jebakan fatal: membaca secara harfiah dan memilih 'Supportive' atau 'Admiring' karena kata 'brilliant'.",
+              "jebakan_atau_catatan": "Jebakan fatal: mengartikannya secara harfiah lalu memilih *Supportive* atau *Admiring* gara-gara kata *brilliant*.",
               "visual": null
             },
             {
               "judul_poin": "Nuanced (Bernuansa & Memperhalus Konteks)",
-              "penjelasan_singkat": "Setuju sebagian dengan Original Post, namun menambahkan syarat, pengecualian, atau sudut pandang lebih kompleks.",
+              "penjelasan_singkat": "Setuju sebagian dengan Original Post, tapi memberi catatan syarat, pengecualian, atau sudut pandang lebih luas.",
               "contoh_penerapan": "**While I agree** carbon taxes help, their impact **depends heavily on** local public transit availability.",
-              "jebakan_atau_catatan": "Ciri khasnya ada konsesi ('While I agree...') diikuti batasan konteks ('depends on...').",
+              "jebakan_atau_catatan": "Ciri khasnya ada pengakuan awal (*While I agree...*) lalu diikuti batasan syarat (*depends on...*).",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Deteksi Bias Penulis & Perspektif Utama",
-          "ringkasan_kelompok": "Cara mengenali keberpihakan diksi dan menyimpulkan posisi inti penulis terhadap isu teks.",
+          "ringkasan_kelompok": "Cara mengenali keberpihakan kata dan menyimpulkan posisi inti penulis terhadap isu teks.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Loaded Words & Emotive Diction (Bias Diksi)",
-              "penjelasan_singkat": "Pemilihan kata sifat atau kata kerja bermuatan emosi ekstrem untuk menggiring opini pembaca.",
+              "penjelasan_singkat": "Pemilihan kata sifat atau kata kerja yang memancing emosi ekstrem untuk menggiring opini pembaca.",
               "contoh_penerapan": "Critics call the regulation a **draconian** measure that **strangles** small businesses instead of 'strict rule'.",
-              "jebakan_atau_catatan": "Bandingkan diksi netral ('strict') vs bermuatan ('draconian'); teks berbias jarang menyajikan argumen lawan.",
+              "jebakan_atau_catatan": "Bandingkan kata netral (*strict*) vs kata emosional (*draconian*). Teks berbias juga jarang memuat argumen lawan.",
               "visual": null
             },
             {
               "judul_poin": "One-Sided Framing & Sweeping Generalization",
-              "penjelasan_singkat": "Hanya menampilkan bukti yang menguntungkan satu kubu serta memakai kata mutlak tanpa pengecualian.",
+              "penjelasan_singkat": "Hanya menyajikan bukti yang menguntungkan satu pihak dan memakai kata mutlak tanpa pengecualian.",
               "contoh_penerapan": "**Every single** traditional retailer **will inevitably collapse** unless they adopt crypto payments immediately.",
-              "jebakan_atau_catatan": "Waspadai kata mutlak ('every', 'always', 'undeniably') yang menandakan klaim sepihak atau berlebihan.",
+              "jebakan_atau_catatan": "Waspadai kata mutlak (*every, always, undeniably*) yang menandakan klaim sepihak atau terlalu menyamaratakan.",
               "visual": null
             },
             {
               "judul_poin": "Author's Perspective (Posisi Inti setelah Kontras)",
-              "penjelasan_singkat": "Pandangan sejati penulis yang biasanya muncul tepat setelah mengutip pendapat orang lain atau konjungsi kontras.",
+              "penjelasan_singkat": "Pandangan asli penulis yang biasanya muncul tepat setelah mengutip pendapat umum atau kata hubung kontras.",
               "contoh_penerapan": "Many assume nuclear power is unsafe; **however, modern reactors offer** our most reliable clean baseload.",
-              "jebakan_atau_catatan": "Jebakan terklasik: memilih opini pihak lain ('Many assume...') yang justru dibantah penulis setelah 'however'.",
+              "jebakan_atau_catatan": "Jebakan klasik: memilih pendapat umum (*Many assume...*) yang justru dibantah penulis setelah kata *however*.",
               "visual": null
             }
           ]
@@ -162,8 +162,8 @@
       "nama_variasi": "Identifying the Author's Tone",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk Original Post (Dr. Aris Thorne): 'Undoubtedly, these compact vehicles offer convenient... However, the uncritical enthusiasm... masks severe infrastructural deficits... treating e-scooters as an environmental panacea remains premature.'",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Konjungsi Kontras:** Temukan kata *However* di kalimat ketiga. Semua pernyataan positif sebelum *However* hanyalah pengakuan awal (*concession*), bukan posisi utama penulis.\n2. **Inventarisasi Diksi (Word Choice):** Soroti frasa bermuatan penilaian: *uncritical enthusiasm*, *severe infrastructural deficits*, *substantially erodes*, dan *remains premature*.\n3. **Parafrasa ke Opsi Benar:** Gabungan antara pengakuan manfaat terbatas dan kritik berbasis bukti menghasilkan nada **cautious** (waspada/hati-hati) atau **skeptical** (skeptis terhadap klaim berlebihan).\n4. **Eliminasi Jebakan:** Singkirkan opsi ekstrem seperti *hostile* atau *dismissive* karena penulis tetap mengakui fungsi *first- and last-mile connectivity* serta memberi syarat solusi (*Until cities enforce...*).",
-      "kunci_pembeda": "Variasi ini fokus pada nuansa emosi/sikap penulis secara keseluruhan dalam teks tunggal, bukan reaksi antar-penulis.",
+      "bedah_pola_markdown": "**Cara Berpikir di Depan Soal:**\n1. **Lompati pujian pembuka setelah melihat *However*:** Di awal, Dr. Thorne memang memuji e-scooter sebagai transportasi praktis (*convenient*). Tapi begitu muncul kata *However*, fokus kamu harus langsung pindah—kalimat sebelum *However* cuma basa-basi pembuka.\n2. **Kumpulkan kata kunci bernada penilaian:** Tandai frasa seperti *uncritical enthusiasm*, *severe infrastructural deficits*, dan *remains premature*. Pilihan kata ini menunjukkan penulis tidak asal menolak, melainkan menilai klaim ramah lingkungannya terlalu terburu-buru.\n3. **Tarik kesimpulan nada yang pas:** Penulis mengakui manfaatnya, tapi menuntut bukti dan regulasi sebelum percaya penuh. Kombinasi ini paling pas disebut **cautious** (waspada) atau **skeptical** (skeptis terhadap klaim berlebihan).\n4. **Coret opsi yang terlalu ekstrem:** Singkirkan kata seperti *hostile* (bermusuhan) atau *dismissive* (meremehkan). Penulis tetap mengakui manfaat jarak pendek e-scooter dan masih memberi jalan keluar (*Until cities enforce...*).",
+      "kunci_pembeda": "Fokus membedah sikap keseluruhan penulis dalam satu teks utama, bukan adu argumen antar-komentator.",
       "visual": null
     },
     {
@@ -171,8 +171,8 @@
       "nama_variasi": "Determining a Commenter's Attitude Toward the Original Post in a Discussion Thread",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk Comment 1 (Maya Lin): '...raises a vital point... yet dismissing the entire sector... overlooks measurable successes...' vs Comment 2 (Kevin Vance): 'Oh, brilliant—let's drown promising green startups in endless bureaucratic red tape...'",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Skimming Kalimat Pembuka Komentar:** Komentator UTBK selalu meletakkan sinyal sikap pada 1–2 kalimat pertama.\n2. **Identifikasi Tipe Respons:**\n   - **Maya Lin:** Memuji sebagian argumen (*raises a vital point*) lalu mengoreksi generalisasi penulis (*yet... overlooks measurable successes*). Ini adalah pola khas sikap **nuanced** (berimbang/mempertimbangkan dua sisi).\n   - **Kevin Vance:** Menggunakan pujian palsu (*Oh, brilliant*) diikuti hiperbola negatif (*drown... in endless bureaucratic red tape*). Ini adalah indikator mutlak sikap **sarcastic** dan **dismissive** (meremehkan).\n3. **Parafrasa & Jebakan:** Untuk Maya Lin, hindari opsi *entirely supportive* (terlalu sempit) atau *antagonistic* (terlalu ekstrem); pilih *partially supportive yet critical* / *nuanced*.",
-      "kunci_pembeda": "Variasi ini wajib membandingkan titik temu atau titik bentrok antara klaim komentator dengan premis Original Post.",
+      "bedah_pola_markdown": "**Cara Berpikir di Depan Soal:**\n1. **Baca 1–2 kalimat pertama tiap komentar:** Di soal forum diskusi UTBK, sinyal sikap komentator hampir selalu ditaruh di kalimat pembuka.\n2. **Bandingkan respons Maya Lin dan Kevin Vance:**\n   - **Maya Lin:** Ia memuji poin keselamatan OP (*raises a vital point*), lalu mengoreksi kesimpulan OP dengan contoh Oslo dan Paris (*yet... overlooks measurable successes*). Sikap seperti ini disebut **nuanced** (berimbang dan mempertimbangkan konteks).\n   - **Kevin Vance:** Ia membuka komentar dengan pujian palsu (*Oh, brilliant*) lalu menyambungnya dengan hiperbola negatif (*drown... in endless bureaucratic red tape*). Ini jelas sikap **sarcastic** (menyindir) sekaligus **dismissive** (meremehkan).\n3. **Hindari opsi yang cuma melihat setengah kalimat:** Untuk Maya Lin, jangan pilih *entirely supportive* karena ia mengkritik OP. Jangan juga pilih *antagonistic* karena ia tetap memuji argumen keselamatan OP.",
+      "kunci_pembeda": "Wajib mencocokkan klaim komentator dengan isi Original Post—apakah ia mendukung, menyindir, atau memberi catatan tambahan.",
       "visual": null
     },
     {
@@ -180,8 +180,8 @@
       "nama_variasi": "Detecting Authorial Bias or One-Sided Argumentation Through Word Choice (Diction)",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Rujuk Comment 2 (Kevin Vance): '...drown promising green startups in endless bureaucratic red tape... naysayers predicting doom.'",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Loaded Words (Diksi Emotif):** Bedakan fakta netral (*government regulations*) dengan diksi bias (*endless bureaucratic red tape*). Kata *drown*, *endless*, dan *naysayers* memuat penilaian subjektif tanpa didukung data empiris.\n2. **Cek Keseimbangan Bukti:** Periksa apakah penulis menyertakan kontra-argumen atau batasan risiko. Pada Comment 2, Kevin Vance mengabaikan fakta cedera pejalan kaki dan emisi van pengisi daya dari OP.\n3. **Parafrasa ke Opsi Benar:** Bias terdeteksi ketika penulis melabeli pihak yang berbeda pendapat dengan istilah merendahkan (*naysayers*) sekaligus mengidealkan objek dukungannya (*promising green startups*).\n4. **Eliminasi Jebakan:** Jangan memilih opsi yang menyatakan penulis menggunakan data statistik valid jika argumennya murni retorika.",
-      "kunci_pembeda": "Variasi ini menguji kemampuan membongkar manipulasi diksi dan ketimpangan bukti, bukan sekadar merangkum isi teks.",
+      "bedah_pola_markdown": "**Cara Berpikir di Depan Soal:**\n1. **Bedakan kata netral dan kata bermuatan emosi:** Kalau mau netral, penulis cukup memakai frasa *government regulations*. Kevin Vance justru memilih *endless bureaucratic red tape* dan kata kerja *drown* (menenggelamkan) untuk memancing emosi pembaca.\n2. **Cek apakah ada sisi lawan yang dibahas:** Tulisan yang berbias cenderung menutup mata dari fakta yang merugikan kubunya. Di sini, Kevin sama sekali tidak menjawab data kecelakaan pejalan kaki atau emisi van pengisi daya yang dibahas OP.\n3. **Tandai pelabelan merendahkan:** Penulis memuji kubunya sebagai *promising green startups*, tapi melabeli pengkritiknya sebagai *naysayers* (orang yang selalu pesimis). Ketimpangan label ini adalah bukti kuat adanya **bias**.\n4. **Coret opsi yang menyebut argumennya objektif:** Jangan terkecoh oleh contoh umum seperti sepeda dan kereta bawah tanah; kalimat itu cuma retorika tanpa data empiris.",
+      "kunci_pembeda": "Menguji kepekaanmu menangkap manipulasi pilihan kata (*loaded words*) dan ketimpangan bukti, bukan sekadar merangkum isi bacaan.",
       "visual": null
     },
     {
@@ -189,8 +189,8 @@
       "nama_variasi": "Identifying Which Statement Best Reflects the Author's Perspective on Issue X",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujuk Kalimat Akhir Original Post: 'Until cities enforce rigorous fleet caps and establish protected transit corridors, treating e-scooters as an environmental panacea remains premature.'",
-      "bedah_pola_markdown": "**Langkah Eksekusi:**\n1. **Scanning Kalimat Tesis/Simpulan:** Posisi final penulis dalam teks argumentatif UTBK hampir selalu terkunci di kalimat pembuka atau kalimat penutup paragraf.\n2. **Pecah Syarat Logika (Conditional Logic):** Kalimat *Until X happens, Y remains premature* bermakna: Y (e-scooter sebagai solusi lingkungan) baru layak diklaim JIKA X (pembatasan armada & jalur khusus) telah terpenuhi.\n3. **Parafrasa ke Opsi Benar:** Cari opsi yang menyatakan bahwa manfaat lingkungan dan keselamatan e-scooter bergantung pada regulasi serta infrastruktur pendukung yang ketat.\n4. **Eliminasi Jebakan:** Waspadai opsi yang melarang total e-scooter (*should be permanently banned*) karena bertentangan dengan syarat kondisional (*Until cities enforce...*) di teks.",
-      "kunci_pembeda": "Variasi ini menuntut sintesis logis atas syarat/posisi penulis terhadap isu spesifik, bukan sekadar label kata sifat tunggal.",
+      "bedah_pola_markdown": "**Cara Berpikir di Depan Soal:**\n1. **Langsung bidik kalimat penutup paragraf:** Dalam teks argumentatif UTBK, kesimpulan sikap penulis paling sering dikunci di kalimat paling akhir.\n2. **Pecah logika syarat (*Until X, Y remains premature*):** Kalimat ini artinya: e-scooter baru layak disebut solusi lingkungan (Y) **jika** kota sudah membatasi jumlah armada dan membangun jalur khusus (X).\n3. **Cari opsi yang menjaga syarat tersebut:** Jawaban yang tepat harus memuat dua unsur: manfaat lingkungan e-scooter belum terbukti sekarang, **dan** keberhasilannya bergantung pada regulasi serta infrastruktur yang ketat.\n4. **Singkirkan opsi larangan total:** Hati-hati dengan pengecoh seperti *should be permanently banned*. Penulis tidak minta e-scooter dihapus total, melainkan ditertibkan dulu aturannya.",
+      "kunci_pembeda": "Menuntut kamu merangkum syarat atau posisi final penulis terhadap sebuah isu, bukan sekadar memilih satu kata sifat.",
       "visual": null
     }
   ],
@@ -211,7 +211,7 @@
         "E. Optimistic that current municipal policies have already resolved most sidewalk safety hazards."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "**Langkah Eksekusi:**\n- Kalimat penutup OP (*Until cities enforce rigorous fleet caps... treating e-scooters as an environmental panacea remains premature*) menunjukkan nada **skeptis** terhadap klaim solusi lingkungan (*exaggerated environmental claims*) sekaligus menetapkan syarat regulasi dan infrastruktur.\n- **Opsi A & E salah** karena mengandung distorsi ekstrem (*immediate nationwide ban*, *already resolved*). **Opsi B & D salah** karena bertentangan langsung dengan kritik penulis terhadap emisi van dan defisit infrastruktur.",
+      "bedah_cepat_markdown": "**Alur Jawab Cepat:**\n- Lihat kalimat kunci di akhir *Original Post*: *\"Until cities enforce rigorous fleet caps... treating e-scooters as an environmental panacea remains premature.\"* Dari sini terlihat jelas bahwa Dr. Thorne **skeptis** terhadap klaim ramah lingkungan yang berlebihan (*exaggerated environmental claims*), sekaligus memberi syarat regulasi dan jalur khusus.\n- **Kenapa opsi lain gugur?** **A** dan **E** terlalu ekstrem dan bertentangan dengan teks (tidak ada tuntutan larangan nasional, dan masalah trotoar belum selesai). **B** salah karena penulis justru menyoroti emisi van pengisi daya, sedangkan **D** salah karena penulis jelas peduli pada kemacetan dan keselamatan kota.",
       "visual": null
     },
     {
@@ -230,7 +230,7 @@
         "E. False - False - True"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Evaluasi Pernyataan:**\n- **Pernyataan 1 (True):** Maya Lin memuji poin keselamatan OP (*raises a vital point*) namun menyalahkan tata kelola kota (*fragmented urban governance is to blame*), mencerminkan sikap *nuanced*.\n- **Pernyataan 2 (False):** Kevin Vance hanya memakai retorika sarkastis tanpa menyajikan bukti empiris untuk membantah *lifecycle assessment* OP.\n- **Pernyataan 3 (True):** Frasa *endless bureaucratic red tape* dan *naysayers* adalah diksi bermuatan bias untuk mendiskreditkan regulasi.",
+      "bedah_cepat_markdown": "**Cek Tiap Pernyataan:**\n- **Pernyataan 1 (True):** Di kalimat awal, Maya Lin mengakui kekhawatiran OP soal keselamatan trotoar (*raises a vital point*). Namun di akhir, ia menegaskan bahwa masalahnya ada di tata kelola kota (*fragmented urban governance is to blame*), bukan teknologinya. Sikap dua arah seperti ini tepat disebut *nuanced*.\n- **Pernyataan 2 (False):** Kevin Vance sama sekali tidak menyajikan data empiris untuk membantah hitungan emisi (*lifecycle assessment*) milik OP. Ia hanya melempar sindiran dan perbandingan umum soal sepeda dan kereta bawah tanah.\n- **Pernyataan 3 (True):** Pilihan kata seperti *endless bureaucratic red tape* (birokrasi berbelit tanpa ujung) dan *naysayers* (tukang pesimis) jelas merupakan diksi emosional (*loaded diction*) untuk memojokkan aturan pemerintah.",
       "visual": null
     }
   ]

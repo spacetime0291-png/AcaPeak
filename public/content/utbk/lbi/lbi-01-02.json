@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Teks menyebut 'sebagian besar studi saat ini melibatkan sampel populasi yang homogen'. Jika opsi jawaban menyatakan 'seluruh studi psikobiotik menggunakan sampel populasi seragam', apakah pernyataan tersebut sesuai?",
+      "pertanyaan_pemantik": "Teks menyebut 'sebagian besar studi saat ini melibatkan sampel populasi yang homogen'. Jika opsi jawaban menulis 'seluruh studi psikobiotik memakai sampel populasi seragam', apakah pernyataan itu sesuai?",
       "opsi_cepat": [
-        "Sesuai, karena homogen bermakna seragam",
-        "Tidak sesuai, karena mengubah kuantor sebagian menjadi seluruh"
+        "Sesuai, karena kata homogen artinya memang seragam",
+        "Tidak sesuai, karena kata 'sebagian besar' diubah menjadi 'seluruh'"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Meskipun 'homogen' bersinonim dengan 'seragam', pengubahan kata 'sebagian besar' menjadi 'seluruh' melanggar fakta eksplisit teks. Di UTBK, pergeseran kuantor adalah jebakan paling klasik."
+      "penjelasan_kilat": "Meski 'homogen' bersinonim dengan 'seragam', mengubah kata 'sebagian besar' menjadi 'seluruh' sudah menyalahi fakta teks. Di UTBK, pengubahan kata penunjuk jumlah seperti ini adalah jebakan paling klasik."
     },
-    "konsep_inti_markdown": "Verifikasi pernyataan menguji ketelitian membandingkan klaim opsi dengan fakta tersurat (*explicit*) pada bacaan.\n\n* **Pernyataan Sesuai:** Merupakan parafrasa (pengungkapan ulang dengan sinonim atau struktur kalimat berbeda) yang makna dan cakupannya 100% identik dengan teks.\n* **Pernyataan Tidak Sesuai:** Mengandung kontradiksi langsung, pembalikan sebab-akibat, atau pergeseran kuantor (*semua* vs *sebagian*).\n* **Informasi Tidak Disebut (Asumsi Luar):** Klaim yang mungkin masuk akal secara umum, tetapi tidak memiliki dasar kalimat eksplisit dalam bacaan.",
+    "konsep_inti_markdown": "Soal verifikasi pernyataan menguji ketelitianmu membandingkan klaim pada opsi jawaban dengan fakta tersurat (*explicit*) di dalam bacaan.\n\n* **Pernyataan Sesuai:** Kalimat diungkapkan ulang memakai sinonim atau susunan berbeda (parafrasa), tetapi makna dan cakupannya tetap 100% sama dengan teks.\n* **Pernyataan Tidak Sesuai:** Isinya bertentangan langsung dengan teks, membalik arah sebab-akibat, atau mengubah cakupan jumlah (*semua* vs *sebagian*).\n* **Informasi Tidak Disebut (Asumsi Luar):** Pernyataannya terasa masuk akal secara logika umum, tetapi sama sekali tidak punya dasar kalimat di dalam teks.",
     "radar_jebakan_utbk": [
-      "Mengganti kuantor moderat (*sebagian besar*, *cenderung*, *dapat*) menjadi kuantor ekstrem (*seluruh*, *pasti*, *selalu*).",
-      "Menyisipkan informasi benar berdasarkan pengetahuan umum pembaca, padahal sama sekali tidak tertulis di dalam teks."
+      "Mengganti kata cakupan terbatas (*sebagian besar*, *cenderung*, *dapat*) menjadi kata mutlak (*seluruh*, *pasti*, *selalu*).",
+      "Menyelipkan fakta yang benar menurut pengetahuan umum pembaca, padahal topik itu tidak pernah dibahas di bacaan."
     ],
-    "stimulus_utama_bersama": "Penelitian neurologi dalam satu dekade terakhir mengungkap adanya jalur komunikasi dua arah yang kompleks antara saluran pencernaan dan sistem saraf pusat, yang dikenal sebagai poros usus-otak (*gut-brain axis*). Komunikasi ini dimediasi oleh saraf vagus, sistem imun, serta berbagai metabolit yang dihasilkan oleh triliunan mikroorganisme penghuni usus atau mikrobiota. Secara mengejutkan, sekitar 90 persen serotonin tubuh—neurotransmiter yang berperan krusial dalam mengatur suasana hati, tidur, dan nafsu makan—ternyata diproduksi di saluran pencernaan, bukan di otak. Ketidakseimbangan komposisi mikrobiota usus, atau disbiosis, terbukti memicu peradangan sistemik tingkat rendah yang dapat mengganggu produksi neurotransmiter tersebut dan meningkatkan kerentanan seseorang terhadap gangguan kecemasan serta depresi klinis.\n\nFenomena ini melahirkan konsep psikobiotik, yakni konsumsi probiotik dan prebiotik spesifik yang bertujuan memulihkan keseimbangan mikrobiota demi menunjang kesehatan mental. Dalam sebuah uji klinis acak terkontrol terhadap 120 pasien dewasa dengan gejala depresi ringan hingga sedang, kelompok yang menerima suplemen galakto-oligosakarida (prebiotik) selama empat minggu menunjukkan penurunan kadar hormon kortisol pagi hari secara signifikan dibandingkan kelompok plasebo. Penurunan kortisol ini berkorelasi positif dengan berkurangnya bias perhatian terhadap stimulus emosional negatif. Meskipun demikian, efek perbaikan psikologis tersebut hanya teramati pada partisipan yang tidak sedang mengonsumsi obat antidepresan konvensional secara bersamaan.\n\nPara peneliti menegaskan bahwa intervensi diet berbasis serat pangan, makanan fermentasi, dan prebiotik bukan merupakan pengganti mutlak bagi terapi farmakologis maupun psikoterapi pada kasus gangguan jiwa berat. Sebagian besar studi saat ini masih terbatas pada durasi pemantauan jangka pendek dan melibatkan sampel populasi yang homogen. Oleh karena itu, penerapan psikobiotik dalam praktik psikiatri klinis masih memerlukan protokol standar yang disesuaikan dengan profil mikrobioma masing-masing individu. Selain faktor genetik dan pola makan, penggunaan antibiotik spektrum luas tanpa pengawasan medis juga dicatat sebagai pemicu utama musnahnya bakteri menguntungkan yang mempercepat terjadinya disbiosis usus.",
+    "stimulus_utama_bersama": "Penelitian neurologi dalam satu dekade terakhir mengungkap adanya jalur komunikasi dua arah yang kompleks antara saluran pencernaan dan sistem saraf pusat. Jalur ini dikenal sebagai poros usus-otak (*gut-brain axis*). Komunikasi tersebut dijembatani oleh saraf vagus, sistem imun, serta berbagai senyawa metabolit hasil produksi triliunan mikroorganisme penghuni usus atau mikrobiota. Menariknya, sekitar 90 persen serotonin tubuh—senyawa pembawa pesan saraf yang mengatur suasana hati, tidur, dan nafsu makan—ternyata diproduksi di saluran pencernaan, bukan di otak. Ketika komposisi mikrobiota usus tidak seimbang (disbiosis), tubuh memicu peradangan sistemik tingkat rendah. Peradangan inilah yang dapat mengganggu produksi serotonin dan membuat seseorang lebih rentan mengalami gangguan kecemasan maupun depresi klinis.\n\nTemuan tersebut melahirkan konsep psikobiotik, yakni konsumsi probiotik dan prebiotik spesifik untuk memulihkan keseimbangan mikrobiota demi menjaga kesehatan mental. Dalam sebuah uji klinis acak terkontrol terhadap 120 pasien dewasa bergejala depresi ringan hingga sedang, kelompok yang diberi suplemen galakto-oligosakarida (prebiotik) selama empat minggu menunjukkan penurunan kadar hormon kortisol pagi hari secara signifikan dibandingkan kelompok plasebo. Penurunan kortisol ini berjalan seiring (berkorelasi positif) dengan berkurangnya kecenderungan otak untuk fokus pada pemicu emosi negatif. Namun, efek perbaikan psikologis tersebut hanya muncul pada peserta yang tidak sedang mengonsumsi obat antidepresan konvensional secara bersamaan.\n\nPara peneliti menegaskan bahwa pengaturan pola makan berbasis serat pangan, makanan fermentasi, dan prebiotik bukanlah pengganti mutlak bagi obat-obatan maupun psikoterapi pada kasus gangguan jiwa berat. Sebagian besar studi saat ini masih terbatas pada pemantauan jangka pendek dan melibatkan sampel populasi yang homogen. Oleh karena itu, penerapan psikobiotik dalam praktik klinis tetap membutuhkan protokol standar yang disesuaikan dengan profil mikrobioma tiap individu. Selain faktor genetik dan pola makan, penggunaan antibiotik spektrum luas tanpa pengawasan dokter juga dicatat sebagai pemicu utama musnahnya bakteri baik yang mempercepat terjadinya disbiosis usus.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Taksonomi Pola dan Sinyal Verifikasi Pernyataan Teks",
-      "subjudul_ringkas": "Panduan mendeteksi parafrasa benar, jebakan logika salah, dan asumsi luar pada bacaan UTBK.",
+      "judul_blok": "Pola Kalimat & Sinyal Jebakan Verifikasi Teks",
+      "subjudul_ringkas": "Panduan praktis membedakan parafrasa yang sah, logika yang dibelokkan, dan asumsi luar pada soal UTBK.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
@@ -35,92 +35,92 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Pola Pernyataan Sesuai (Parafrasa & Ekuivalensi Makna)",
-          "ringkasan_kelompok": "Mengenali bentuk pengubahan redaksi yang tetap mempertahankan seratus persen makna asli teks.",
+          "nama_kelompok": "Pola Pernyataan Sesuai (Makna Sama, Beda Kalimat)",
+          "ringkasan_kelompok": "Mengenali cara pembuat soal menyusun ulang kalimat tanpa mengubah isi pesan aslinya.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Parafrasa Sinonim dan Padanan Kata",
-              "penjelasan_singkat": "Mengganti kata kunci bacaan dengan sinonim baku KBBI tanpa mengubah konteks maupun intensitas makna aslinya.",
-              "contoh_penerapan": "Teks: \"Inflasi **menggerus** daya beli.\" Opsi: \"Kenaikan harga **menurunkan** kemampuan belanja masyarakat.\"",
-              "jebakan_atau_catatan": "Hati-hati terhadap sinonim yang memiliki gradasi makna lebih ekstrem, misalnya *menurunkan* diubah menjadi *menghapus*.",
+              "judul_poin": "Ganti Kata dengan Sinonimnya",
+              "penjelasan_singkat": "Kata kunci di bacaan diganti dengan padanan katanya di KBBI tanpa mengubah konteks maupun tingkat kekuatannya.",
+              "contoh_penerapan": "Teks: 'Inflasi **menggerus** daya beli.' Opsi: 'Kenaikan harga **menurunkan** kemampuan belanja masyarakat.'",
+              "jebakan_atau_catatan": "Waspadai sinonim yang maknanya jauh lebih ekstrem, misalnya kata *menurunkan* diganti menjadi *menghapus*.",
               "visual": null
             },
             {
-              "judul_poin": "Transformasi Struktur Aktif-Pasif dan Nominalisasi",
-              "penjelasan_singkat": "Mengubah kalimat aktif menjadi pasif atau kata kerja menjadi nomina tanpa membalik pelaku dan sasaran tindakan.",
-              "contoh_penerapan": "Teks: \"Bakteri **menguraikan** limbah organik.\" Opsi: \"Terjadi **penguraian** limbah organik oleh bakteri.\"",
-              "jebakan_atau_catatan": "Jebakan UTBK sering menukar posisi subjek dan objek saat mengubah kalimat aktif ke bentuk pasif.",
+              "judul_poin": "Ubah Kalimat Aktif-Pasif & Bentuk Kata",
+              "penjelasan_singkat": "Kalimat aktif diubah menjadi pasif (atau kata kerja diubah menjadi kata benda) tanpa menukar pelaku dan objeknya.",
+              "contoh_penerapan": "Teks: 'Bakteri **menguraikan** limbah organik.' Opsi: 'Terjadi **penguraian** limbah organik oleh bakteri.'",
+              "jebakan_atau_catatan": "Pembuat soal sering menukar posisi pelaku dan sasaran saat mengubah kalimat aktif ke bentuk pasif.",
               "visual": null
             },
             {
-              "judul_poin": "Sintesis Dua Kalimat Berdekatan",
-              "penjelasan_singkat": "Menggabungkan dua informasi eksplisit yang tersebar dalam satu paragraf menjadi satu pernyataan kesimpulan yang utuh.",
-              "contoh_penerapan": "Teks: \"Emas **tahan korosi**. Logam ini dipakai di **komponen satelit**.\" Opsi: \"Ketahanan korosi membuat emas digunakan pada satelit.\"",
-              "jebakan_atau_catatan": "Pastikan hubungan penggabungan memang tertulis eksplisit, bukan kesimpulan lompat yang menambahkan fakta baru.",
+              "judul_poin": "Gabungkan Dua Kalimat yang Nyambung",
+              "penjelasan_singkat": "Dua informasi tersurat yang berdekatan dalam satu paragraf dirangkum menjadi satu kalimat utuh.",
+              "contoh_penerapan": "Teks: 'Emas **tahan korosi**. Logam ini dipakai di **komponen satelit**.' Opsi: 'Ketahanan korosi membuat emas dipakai pada satelit.'",
+              "jebakan_atau_catatan": "Pastikan hubungan kedua kalimat memang tertulis jelas di teks, bukan kesimpulan lompat yang menambah fakta baru.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pola Pernyataan Tidak Sesuai (Distorsi Fakta & Logika)",
-          "ringkasan_kelompok": "Mendeteksi pergeseran cakupan, pembalikan arah logika, dan kontradiksi tersembunyi pada opsi pengecoh.",
+          "nama_kelompok": "Pola Pernyataan Tidak Sesuai (Fakta Dibelokkan)",
+          "ringkasan_kelompok": "Mendeteksi pergeseran jumlah, arah sebab-akibat yang terbalik, dan penyangkalan tersembunyi pada opsi pengecoh.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pergeseran Kuantor Universal dan Partikular",
-              "penjelasan_singkat": "Mengubah kata penunjuk jumlah seperti *sebagian* atau *umumnya* menjadi kata bermakna mutlak seperti *semua* atau *selalu*.",
-              "contoh_penerapan": "Teks: \"**Sebagian besar** pesisir terancam abrasi.\" Opsi: \"**Seluruh** wilayah pesisir dipastikan mengalami abrasi.\"",
-              "jebakan_atau_catatan": "Kata mutlak seperti *hanya*, *satu-satunya*, dan *tidak pernah* hampir selalu salah jika teks memakai kata tentatif.",
+              "judul_poin": "Ubah Kata Jumlah ('Sebagian' Jadi 'Semua')",
+              "penjelasan_singkat": "Kata penunjuk jumlah terbatas seperti *sebagian* atau *umumnya* diganti menjadi kata mutlak seperti *semua* atau *selalu*.",
+              "contoh_penerapan": "Teks: '**Sebagian besar** pesisir terancam abrasi.' Opsi: '**Seluruh** wilayah pesisir dipastikan mengalami abrasi.'",
+              "jebakan_atau_catatan": "Kata mutlak seperti *hanya*, *satu-satunya*, dan *tidak pernah* hampir selalu salah jika teks memakai kata yang masih tentatif.",
               "visual": null
             },
             {
-              "judul_poin": "Pembalikan Hubungan Sebab-Akibat ($P \\rightarrow Q$)",
-              "penjelasan_singkat": "Menukar posisi penyebab dan dampak sehingga hubungan kausalitasnya menjadi terbalik dari pernyataan eksplisit dalam bacaan.",
-              "contoh_penerapan": "Teks: \"**Kurang tidur** memicu **stres**.\" Opsi: \"**Stres** berkepanjangan menjadi penyebab utama seseorang **kurang tidur**.\"",
-              "jebakan_atau_catatan": "Perhatikan penanda kausalitas terbalik seperti *disebabkan oleh* atau *bermuara pada* saat memverifikasi arah hubungan.",
+              "judul_poin": "Membalik Arah Sebab-Akibat ($P \\rightarrow Q$)",
+              "penjelasan_singkat": "Posisi penyebab dan akibat ditukar sehingga alur kejadiannya berlawanan dengan isi bacaan.",
+              "contoh_penerapan": "Teks: '**Kurang tidur** memicu **stres**.' Opsi: '**Stres** berkepanjangan menjadi penyebab utama seseorang **kurang tidur**.'",
+              "jebakan_atau_catatan": "Cek kata penghubung seperti *disebabkan oleh* atau *bermuara pada* untuk memastikan siapa penyebab dan siapa akibatnya.",
               "visual": null
             },
             {
-              "judul_poin": "Kontradiksi Negasi dan Antonim Terselubung",
-              "penjelasan_singkat": "Menyisipkan kata ingkar (*tidak*, *bukan*, *tanpa*) atau mengganti kata kunci dengan lawan katanya secara halus.",
-              "contoh_penerapan": "Teks: \"Vaksin ini **efektif mencegah** penularan.\" Opsi: \"Vaksin tersebut **belum mampu menghambat** laju penularan virus.\"",
-              "jebakan_atau_catatan": "Penambahan awalan *non-*, *nir-*, atau *anti-* pada opsi sering terlewat saat peserta membaca cepat di bawah tekanan.",
+              "judul_poin": "Sisipan Kata Ingkar & Lawan Kata Halus",
+              "penjelasan_singkat": "Opsi menyelipkan kata penyangkal (*tidak*, *bukan*, *tanpa*) atau mengganti kata kunci dengan lawan katanya.",
+              "contoh_penerapan": "Teks: 'Vaksin ini **efektif mencegah** penularan.' Opsi: 'Vaksin tersebut **belum mampu menghambat** laju penularan virus.'",
+              "jebakan_atau_catatan": "Awalan pengingkar seperti *non-*, *nir-*, atau *anti-* sering luput terbaca saat kamu mengejar waktu ujian.",
               "visual": null
             },
             {
-              "judul_poin": "Distorsi Derajat Perbandingan dan Data Angka",
-              "penjelasan_singkat": "Mengubah komparasi (*lebih tinggi*) menjadi superlatif (*paling tinggi*) atau memanipulasi angka statistik dan tahun kejadian.",
-              "contoh_penerapan": "Teks: \"Sektor jasa tumbuh **lebih cepat** dari industri.\" Opsi: \"Sektor jasa mencatat pertumbuhan **tertinggi** di antara semua sektor.\"",
-              "jebakan_atau_catatan": "Pengecoh kerap menukar satuan angka (persen menjadi poin) atau menggeser batas bawah dan batas atas rentang data.",
+              "judul_poin": "Geser Tingkat Perbandingan & Data Angka",
+              "penjelasan_singkat": "Perbandingan 'lebih' diubah menjadi 'paling', atau angka statistik dan tahun kejadian digeser sedikit.",
+              "contoh_penerapan": "Teks: 'Sektor jasa tumbuh **lebih cepat** dari industri.' Opsi: 'Sektor jasa mencatat pertumbuhan **tertinggi** di antara semua sektor.'",
+              "jebakan_atau_catatan": "Perhatikan juga satuan angka (misalnya persen diubah menjadi poin) serta batas bawah dan batas atas rentang data.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pemisahan Asumsi Luar & Verifikasi Matriks",
-          "ringkasan_kelompok": "Membedakan klaim tanpa dasar teks serta strategi memverifikasi tabel Benar-Salah secara efisien.",
+          "nama_kelompok": "Bedakan Asumsi Luar & Trik Tabel Benar-Salah",
+          "ringkasan_kelompok": "Menyingkirkan klaim tanpa bukti teks serta cara cepat memverifikasi tabel pernyataan majemuk.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Deteksi Informasi Tidak Disebut (Asumsi Luar)",
-              "penjelasan_singkat": "Klaim yang terasa masuk akal secara umum, tetapi topik atau rinciannya sama sekali tidak dibahas dalam teks.",
-              "contoh_penerapan": "Teks: \"Kereta cepat **memangkas waktu tempuh**.\" Opsi: \"Kereta cepat **meningkatkan pendapatan UMKM** di sekitar stasiun.\"",
-              "jebakan_atau_catatan": "Pada soal matriks Benar-Salah, pernyataan yang informasinya tidak disebut di teks wajib dikategorikan sebagai **Salah**.",
+              "judul_poin": "Klaim Masuk Akal tapi Tidak Ada di Teks",
+              "penjelasan_singkat": "Pernyataan terasa benar menurut wawasan umum, tetapi rincian atau topiknya sama sekali tidak dibahas penulis.",
+              "contoh_penerapan": "Teks: 'Kereta cepat **memangkas waktu tempuh**.' Opsi: 'Kereta cepat **meningkatkan omzet UMKM** di sekitar stasiun.'",
+              "jebakan_atau_catatan": "Di soal tabel Benar-Salah, informasi yang tidak disebut di bacaan wajib kamu tandai sebagai **Salah**.",
               "visual": null
             },
             {
-              "judul_poin": "Ekstrapolasi Masa Depan dan Opini Penulis",
-              "penjelasan_singkat": "Mengubah prediksi, harapan, atau opini narasumber dalam teks menjadi fakta pasti yang sudah terjadi di lapangan.",
-              "contoh_penerapan": "Teks: \"Pemerintah **berencana memperluas** jalur sepeda.\" Opsi: \"Jalur sepeda **telah diperluas** ke seluruh ruas jalan protokol.\"",
-              "jebakan_atau_catatan": "Waspadai perubahan modalitas *akan*, *diharapkan*, atau *berpotensi* menjadi kata kerja lampau seperti *telah* atau *berhasil*.",
+              "judul_poin": "Ubah Rencana atau Prediksi Jadi Fakta Terjadi",
+              "penjelasan_singkat": "Harapan, rencana, atau prediksi narasumber di teks ditulis seolah-olah sudah berhasil terlaksana.",
+              "contoh_penerapan": "Teks: 'Pemerintah **berencana memperluas** jalur sepeda.' Opsi: 'Jalur sepeda **telah diperluas** ke seluruh jalan protokol.'",
+              "jebakan_atau_catatan": "Cermati perubahan kata *akan*, *diharapkan*, atau *berpotensi* menjadi kata yang bermakna sudah selesai seperti *telah* atau *terbukti*.",
               "visual": null
             },
             {
-              "judul_poin": "Teknik Eliminasi Matriks Pernyataan Majemuk",
-              "penjelasan_singkat": "Memecah satu pernyataan panjang pada tabel Benar-Salah menjadi dua klausa terpisah untuk menguji kebenaran masing-masing bagian.",
-              "contoh_penerapan": "Opsi: \"Padi tumbuh subur di lahan basah **dan** **tahan hama wereng**.\" (Klausa kedua tidak ada di teks).",
-              "jebakan_atau_catatan": "Jika klausa pertama benar tetapi klausa kedua salah atau tidak disebut, keseluruhan pernyataan bernilai **Salah**.",
+              "judul_poin": "Pecah Kalimat Panjang di Tabel Benar-Salah",
+              "penjelasan_singkat": "Satu pernyataan panjang di tabel sering berisi dua klaim sekaligus; uji kebenaran tiap bagiannya secara terpisah.",
+              "contoh_penerapan": "Opsi: 'Padi tumbuh subur di lahan basah **dan** **tahan hama wereng**.' (Bagian kedua tidak ada di teks).",
+              "jebakan_atau_catatan": "Jika bagian pertama benar tetapi bagian kedua salah atau tidak disebut, seluruh baris pernyataan bernilai **Salah**.",
               "visual": null
             }
           ]
@@ -131,47 +131,47 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Menentukan Pernyataan yang BENAR/SESUAI dengan Isi Bacaan (Parafrasa Fakta Eksplisit)",
+      "nama_variasi": "Mencari Pernyataan yang SESUAI dengan Isi Bacaan (Parafrasa Fakta)",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan Paragraf 1: 'Secara mengejutkan, sekitar 90 persen serotonin tubuh ... ternyata diproduksi di saluran pencernaan, bukan di otak.'",
-      "bedah_pola_markdown": "**Teknik Eksekusi (*Scanning* Kata Kunci):**\n1. **Kunci Entitas Spesifik:** Tandai angka, istilah teknis, atau nama pada opsi (misal: *90 persen*, *serotonin*, *pencernaan*), lalu pindai cepat lokasi kalimatnya di paragraf pertama.\n2. **Cocokkan Parafrasa:** Opsi benar jarang menyalin teks mentah. Kalimat asli *'sekitar 90 persen serotonin tubuh ... diproduksi di saluran pencernaan'* diparafrasakan menjadi: *'Mayoritas hormon pengatur suasana hati diproduksi di sistem pencernaan daripada di otak.'* Makna *sekitar 90%* setara dengan *mayoritas*, dan *serotonin* dijelaskan fungsinya sebagai *pengatur suasana hati*.\n3. **Eliminasi Jebakan:**\n   * **Terlalu Ekstrem:** Mengubah *'sekitar 90%'* menjadi *'tepat 90%'* atau *'seluruh serotonin'*.\n   * **Distorsi Fakta:** Menyebut otak memproduksi 90% serotonin (kebalikan fakta eksplisit teks).\n   * **Tidak Disebut:** Menambahkan klaim bahwa serotonin usus diproduksi khusus oleh saraf vagus.",
-      "kunci_pembeda": "Opsi benar mengubah bentuk kata (sinonim atau struktur aktif-pasif) tanpa mengubah ruang lingkup maupun fakta utama kalimat rujukan.",
+      "stimulus_mini": "Rujukan Paragraf 1: 'Menariknya, sekitar 90 persen serotonin tubuh—senyawa pembawa pesan saraf yang mengatur suasana hati, tidur, dan nafsu makan—ternyata diproduksi di saluran pencernaan, bukan di otak.'",
+      "bedah_pola_markdown": "**Langkah Berpikir di Ruang Ujian:**\n1. **Kunci Kata Khas di Opsi:** Tandai angka, istilah medis, atau nama khusus pada opsi (misalnya: *90 persen*, *serotonin*, *pencernaan*). Gunakan kata itu sebagai jangkar untuk memindai lokasi kalimatnya di paragraf pertama.\n2. **Cocokkan Makna Parafrasanya:** Opsi benar hampir tidak pernah menyalin teks kata per kata. Kalimat asli *'sekitar 90 persen serotonin tubuh ... diproduksi di saluran pencernaan'* bisa ditulis ulang menjadi: *'Mayoritas senyawa pengatur suasana hati diproduksi di sistem pencernaan daripada di otak.'* Perhatikan bahwa *sekitar 90%* setara dengan *mayoritas*, dan *serotonin* dijabarkan fungsinya sebagai *pengatur suasana hati*.\n3. **Coret Tiga Jebakan Klasik:**\n   * **Dibuat Terlalu Mutlak:** Mengubah *'sekitar 90%'* menjadi *'tepat 90%'* atau *'seluruh serotonin'*.\n   * **Fakta Dibalik:** Menyebut otak memproduksi 90% serotonin (kebalikan dari teks).\n   * **Ditambah-tambahi:** Mengklaim serotonin usus diproduksi khusus oleh saraf vagus (teks hanya menyebut saraf vagus sebagai jembatan komunikasi).",
+      "kunci_pembeda": "Opsi yang benar hanya mengganti baju kalimat (sinonim atau pola aktif-pasif) tanpa mengubah batas jumlah maupun fakta utama kalimat rujukan.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Menentukan Pernyataan yang TIDAK SESUAI/BERTENTANGAN dengan Isi Bacaan (Exception Question)",
+      "nama_variasi": "Mencari Pernyataan yang TIDAK SESUAI / BERTENTANGAN dengan Teks",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan Paragraf 2: '...efek perbaikan psikologis tersebut hanya teramati pada partisipan yang tidak sedang mengonsumsi obat antidepresan konvensional secara bersamaan.'",
-      "bedah_pola_markdown": "**Teknik Eksekusi (*Negation & Exception Check*):**\n1. **Waspadai Kata Kunci Pengecualian:** Soal jenis ini memakai frasa *tidak sesuai*, *bertentangan*, atau *kecuali*. Artinya, empat opsi bernilai benar sesuai teks, dan satu opsi menyalahi teks.\n2. **Bandingkan Syarat & Batasan:** Pindai kata pembatas seperti *hanya*, *bukan*, atau *tidak* pada paragraf kedua. Teks menyatakan perbaikan psikologis **hanya** muncul pada partisipan yang **tidak** mengonsumsi obat antidepresan konvensional.\n3. **Deteksi Opsi Kontradiktif:**\n   * **Opsi Jebakan (Kunci Jawaban):** *'Suplemen galakto-oligosakarida terbukti memperbaiki kondisi psikologis pasien yang mengonsumsi obat antidepresan konvensional.'* Pernyataan ini bertentangan langsung dengan syarat negatif pada teks.\n   * **Pengecoh Lain:** Mengubah durasi uji klinis dari *empat minggu* menjadi *empat bulan* atau mengganti *prebiotik* menjadi *antibiotik*.",
-      "kunci_pembeda": "Fokus mencari satu pernyataan yang memiliki kontradiksi langsung dengan fakta tersurat, sementara empat opsi lainnya adalah parafrasa valid.",
+      "stimulus_mini": "Rujukan Paragraf 2: 'Namun, efek perbaikan psikologis tersebut hanya muncul pada peserta yang tidak sedang mengonsumsi obat antidepresan konvensional secara bersamaan.'",
+      "bedah_pola_markdown": "**Langkah Berpikir di Ruang Ujian:**\n1. **Tandai Perintah Pengecualian:** Soal model ini menggunakan frasa *tidak sesuai*, *bertentangan*, atau *kecuali*. Artinya, empat opsi bernilai benar sesuai teks, dan tugasmu mencari satu opsi yang menyimpang.\n2. **Cek Kata Syarat dan Batasan:** Pindai kata pembatas seperti *hanya*, *bukan*, atau *tidak* pada paragraf kedua. Teks menegaskan perbaikan psikologis **hanya** muncul pada peserta yang **tidak** minum obat antidepresan konvensional.\n3. **Temukan Titik Tabrakannya:**\n   * **Opsi Salah Teks (Kunci Jawaban):** *'Suplemen galakto-oligosakarida terbukti memperbaiki kondisi psikologis pasien yang mengonsumsi obat antidepresan konvensional.'* Kalimat ini menabrak langsung syarat negatif di bacaan.\n   * **Variasi Pengecoh Lain:** Mengubah durasi uji klinis dari *empat minggu* menjadi *empat bulan*, atau mengganti *prebiotik* menjadi *antibiotik*.",
+      "kunci_pembeda": "Fokus berburu satu pernyataan yang berlawanan langsung dengan fakta tersurat, karena empat opsi lainnya hanyalah parafrasa yang sah.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Format Tabel Matriks Benar – Salah (4–5 Pernyataan Sekaligus untuk Diverifikasi terhadap Wacana)",
+      "nama_variasi": "Menilai Tabel Benar – Salah (4–5 Pernyataan Sekaligus)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Verifikasi 4 pernyataan sekaligus dari Paragraf 1–3 (disbiosis, uji klinis prebiotik, pengganti terapi, dan protokol standar).",
-      "bedah_pola_markdown": "**Teknik Eksekusi (*Sequential Paragraph Mapping*):**\n1. **Baca Pernyataan Berurutan:** Soal matriks umumnya menyusun 4–5 pernyataan secara kronologis mengikuti alur paragraf 1 hingga paragraf akhir.\n2. **Audit Satu per Satu:**\n   * *Pernyataan 1 (Paragraf 1):* 'Disbiosis memicu peradangan sistemik tingkat rendah.' $\\rightarrow$ **BENAR** (sesuai kalimat keempat).\n   * *Pernyataan 2 (Paragraf 2):* 'Uji klinis prebiotik dilakukan pada pasien depresi berat.' $\\rightarrow$ **SALAH** (teks menyebut *depresi ringan hingga sedang*).\n   * *Pernyataan 3 (Paragraf 3):* 'Prebiotik dapat menggantikan psikoterapi secara mutlak.' $\\rightarrow$ **SALAH** (teks menegaskan *bukan pengganti mutlak*).\n   * *Pernyataan 4 (Paragraf 3):* 'Psikobiotik klinis butuh protokol standar sesuai profil mikrobioma individu.' $\\rightarrow$ **BENAR** (sesuai kalimat ketiga).\n3. **Ciri Jebakan Matriks:** Penyisipan satu kata pengubah nilai kebenaran (*ringan-sedang* menjadi *berat*, *bukan* dihilangkan) di tengah kalimat yang tampak familiar.",
-      "kunci_pembeda": "Setiap baris pernyataan harus divalidasi secara independen terhadap lokasi paragraf spesifiknya karena satu kata keliru membuat baris tersebut bernilai Salah.",
+      "bedah_pola_markdown": "**Langkah Berpikir di Ruang Ujian:**\n1. **Ikuti Alur Paragraf:** Soal tabel umumnya menyusun 4–5 pernyataan secara berurutan dari paragraf awal hingga paragraf akhir.\n2. **Uji Baris demi Baris:**\n   * *Baris 1 (Paragraf 1):* 'Disbiosis memicu peradangan sistemik tingkat rendah.' $\\rightarrow$ **BENAR** (cocok dengan kalimat kelima paragraf 1).\n   * *Baris 2 (Paragraf 2):* 'Uji klinis prebiotik dilakukan pada pasien depresi berat.' $\\rightarrow$ **SALAH** (teks menyebut *depresi ringan hingga sedang*).\n   * *Baris 3 (Paragraf 3):* 'Prebiotik dapat menggantikan psikoterapi secara mutlak.' $\\rightarrow$ **SALAH** (teks menegaskan *bukanlah pengganti mutlak*).\n   * *Baris 4 (Paragraf 3):* 'Psikobiotik klinis butuh protokol standar sesuai profil mikrobioma tiap individu.' $\\rightarrow$ **BENAR** (cocok dengan kalimat ketiga paragraf 3).\n3. **Waspadai Jebakan Satu Kata:** Pembuat soal sering menyisipkan satu kata pengubah makna (*ringan-sedang* diganti *berat*, atau kata *bukan* dihapus) di tengah kalimat yang terlihat mirip teks.",
+      "kunci_pembeda": "Validasi setiap baris tabel secara mandiri ke paragraf asalnya, sebab satu kata meleset saja membuat seluruh baris bernilai Salah.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Membedakan Informasi yang Tersurat di Teks vs Informasi Asumsi Luar yang Tidak Disebutkan",
+      "nama_variasi": "Memisahkan Fakta Tersurat vs Asumsi Luar yang Tidak Disebut",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan Paragraf 3: 'Selain faktor genetik dan pola makan, penggunaan antibiotik spektrum luas tanpa pengawasan medis juga dicatat sebagai pemicu utama musnahnya bakteri menguntungkan...'",
-      "bedah_pola_markdown": "**Teknik Eksekusi (*Strict Text-Boundary Rule*):**\n1. **Terapkan Prinsip Kacamata Kuda:** Dalam LBI UTBK, pernyataan yang benar secara medis atau logis di dunia nyata tetap dianggap **tidak sesuai** jika tidak tertulis di wacana.\n2. **Uji Bukti Tekstual:** Bandingkan kalimat terakhir paragraf ketiga dengan opsi berikut:\n   * *Opsi Asumsi Luar (Salah):* 'Harga antibiotik spektrum luas yang murah membuat masyarakat sering mengonsumsinya tanpa resep dokter.' Meskipun masuk akal secara sosial-ekonomi, teks sama sekali tidak membahas *harga obat* maupun *alasan pembelian tanpa resep*.\n   * *Opsi Tersurat (Benar):* 'Konsumsi antibiotik spektrum luas tanpa pengawasan dokter berpotensi memusnahkan bakteri baik di usus.'\n3. **Ciri Jebakan Asumsi:** Menggunakan istilah teknis dari teks (*antibiotik spektrum luas*, *bakteri menguntungkan*) sebagai umpan, lalu menyambungkannya dengan latar belakang atau dampak baru yang fiktif.",
-      "kunci_pembeda": "Jangan pernah memakai pengetahuan pribadi di luar teks; setiap klaim wajib memiliki 'jangkar' kalimat eksplisit dalam bacaan.",
+      "stimulus_mini": "Rujukan Paragraf 3: 'Selain faktor genetik dan pola makan, penggunaan antibiotik spektrum luas tanpa pengawasan dokter juga dicatat sebagai pemicu utama musnahnya bakteri baik...'",
+      "bedah_pola_markdown": "**Langkah Berpikir di Ruang Ujian:**\n1. **Pasang Kacamata Kuda:** Di subtes LBI UTBK, pernyataan yang benar secara medis atau logika sehari-hari tetap dianggap **tidak sesuai** jika tidak ada bukti kalimatnya di bacaan.\n2. **Bandingkan Bukti Tekstualnya:** Lihat perbedaan dua opsi berikut terhadap kalimat terakhir paragraf ketiga:\n   * *Opsi Asumsi Luar (Salah):* 'Harga antibiotik spektrum luas yang murah membuat masyarakat sering membelinya tanpa resep dokter.' Meski masuk akal di dunia nyata, teks sama sekali tidak menyinggung *harga obat* maupun *alasan pembelian tanpa resep*.\n   * *Opsi Tersurat (Benar):* 'Konsumsi antibiotik spektrum luas tanpa pengawasan dokter berpotensi memusnahkan bakteri baik di usus.'\n3. **Kenali Umpannya:** Pengecoh sengaja memakai istilah teknis dari bacaan (*antibiotik spektrum luas*, *bakteri baik*) agar terlihat meyakinkan, lalu menyambungnya dengan cerita baru yang fiktif.",
+      "kunci_pembeda": "Jangan bawa pengetahuan luar ke dalam soal; setiap klaim pada opsi wajib memiliki 'jangkar' kalimat eksplisit di dalam wacana.",
       "visual": null
     },
     {
       "nomor_variasi": 5,
-      "nama_variasi": "Verifikasi Akurasi Kuantor dan Hubungan Sebab-Akibat pada Pernyataan Opsi",
+      "nama_variasi": "Mengecek Ketepatan Kata Jumlah dan Arah Sebab-Akibat",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan Paragraf 1 & 2: '...disbiosis, terbukti memicu peradangan sistemik... yang dapat mengganggu produksi neurotransmiter...' serta '...penurunan kortisol ini berkorelasi positif dengan berkurangnya bias perhatian...'",
-      "bedah_pola_markdown": "**Teknik Eksekusi (*Quantifier & Causal Audit*):**\n1. **Periksa Kata Kuantor (Cakupan):** Tandai kata pembatas jumlah/frekuensi seperti *sebagian besar*, *sekitar*, *dapat*, *hanya*, dan *mutlak*. Bandingkan dengan kuantor di opsi.\n   * *Teks:* 'Sebagian besar studi saat ini masih terbatas...' $\\rightarrow$ Jika opsi menulis *'Semua studi psikobiotik terbatas...'*, langsung eliminasi.\n2. **Audit Arah Sebab-Akibat vs Korelasi:**\n   * *Sebab-Akibat ($A \\rightarrow B$):* Disbiosis memicu peradangan sistemik, lalu peradangan mengganggu produksi neurotransmiter. Jebakan sering membalik urutan menjadi *gangguan neurotransmiter menyebabkan disbiosis*.\n   * *Korelasi vs Kausalitas:* Paragraf kedua menyebut penurunan kortisol **berkorelasi positif** dengan berkurangnya bias perhatian negatif. Mengubah kata *berkorelasi* menjadi *satu-satunya penyebab* adalah distorsi logika.\n3. **Ciri Jebakan:** Menaikkan derajat kepastian (*dapat mengganggu* menjadi *pasti merusak*) atau menyamakan hubungan korelatif dengan kausalitas mutlak.",
-      "kunci_pembeda": "Kebenaran kalimat tidak hanya bergantung pada topik pembicaraan, tetapi juga pada ketepatan derajat kuantor dan arah hubungan kausalitasnya.",
+      "stimulus_mini": "Rujukan Paragraf 1 & 2: '...tubuh memicu peradangan sistemik tingkat rendah. Peradangan inilah yang dapat mengganggu produksi serotonin...' serta 'Penurunan kortisol ini berjalan seiring (berkorelasi positif) dengan berkurangnya kecenderungan otak...'",
+      "bedah_pola_markdown": "**Langkah Berpikir di Ruang Ujian:**\n1. **Lingkari Kata Cakupan Jumlah:** Periksa kata pembatas seperti *sebagian besar*, *sekitar*, *dapat*, *hanya*, dan *mutlak*. Cocokkan apakah opsi mempertahankan batasan itu.\n   * *Teks:* 'Sebagian besar studi saat ini masih terbatas...' $\\rightarrow$ Jika opsi menulis *'Semua studi psikobiotik terbatas...'*, langsung coret.\n2. **Bedakan Sebab-Akibat vs Korelasi:**\n   * *Sebab-Akibat ($A \\rightarrow B$):* Disbiosis memicu peradangan sistemik, lalu peradangan mengganggu produksi serotonin. Jebakan sering membalik alurnya menjadi *gangguan serotonin menyebabkan disbiosis*.\n   * *Korelasi Bukan Kausalitas:* Paragraf kedua menyebut penurunan kortisol **berkorelasi positif** (berjalan seiring) dengan berkurangnya fokus pada pemicu emosi negatif. Mengubah kata *berkorelasi* menjadi *satu-satunya penyebab* adalah kesimpulan yang keliru.\n3. **Deteksi Pergeseran Kepastian:** Waspadai kata *dapat mengganggu* yang dinaikkan derajatnya menjadi *pasti merusak*.",
+      "kunci_pembeda": "Kebenaran suatu opsi tidak cukup dilihat dari kesamaan topiknya saja, tetapi juga dari ketepatan kata jumlah dan arah hubungan sebab-akibatnya.",
       "visual": null
     }
   ],
@@ -183,16 +183,16 @@
         5
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Berdasarkan bacaan di atas, manakah pernyataan yang **paling sesuai** dengan informasi eksplisit mengenai mekanisme poros usus-otak dan disbiosis?",
+      "pertanyaan_markdown": "Berdasarkan bacaan di atas, manakah pernyataan yang **paling sesuai** dengan informasi eksplisit mengenai poros usus-otak dan disbiosis?",
       "opsi_jawaban": [
         "A. Seluruh serotonin yang mengatur suasana hati diproduksi secara eksklusif di saluran pencernaan tanpa melibatkan otak.",
         "B. Gangguan kecemasan dan depresi klinis secara langsung memicu terjadinya peradangan sistemik tingkat rendah di usus.",
         "C. Komunikasi antara usus dan sistem saraf pusat berlangsung satu arah melalui perantaraan saraf vagus dan sistem imun.",
-        "D. Ketidakseimbangan mikrobiota usus berpotensi menghambat produksi neurotransmiter akibat munculnya peradangan sistemik tingkat rendah.",
-        "E. Penggunaan antibiotik spektrum luas merupakan satu-satunya faktor yang menyebabkan musnahnya bakteri menguntungkan di usus."
+        "D. Ketidakseimbangan mikrobiota usus berpotensi menghambat produksi serotonin akibat munculnya peradangan sistemik tingkat rendah.",
+        "E. Penggunaan antibiotik spektrum luas merupakan satu-satunya faktor yang menyebabkan musnahnya bakteri baik di usus."
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "Paragraf 1 menyatakan disbiosis memicu peradangan sistemik tingkat rendah yang dapat mengganggu produksi neurotransmiter. Opsi D memarafrasakan hubungan sebab-akibat tersebut secara tepat.\n\n* **A salah:** Teks menyebut *sekitar 90 persen*, bukan *seluruh*.\n* **B salah:** Membalik hubungan sebab-akibat (seharusnya peradangan meningkatkan kerentanan depresi).\n* **C salah:** Komunikasi bersifat *dua arah*, bukan *satu arah*.\n* **E salah:** Teks juga menyebut faktor genetik dan pola makan, bukan *satu-satunya*.",
+      "bedah_cepat_markdown": "Mari kita lacak langsung ke paragraf pertama. Teks menjelaskan bahwa ketidakseimbangan mikrobiota usus (disbiosis) memicu peradangan sistemik tingkat rendah, dan peradangan ini dapat mengganggu produksi serotonin. Opsi **D** merangkum hubungan sebab-akibat tersebut secara tepat tanpa mengubah maknanya.\n\n* **A salah:** Teks menyebut *sekitar 90 persen*, bukan *seluruh* serotonin.\n* **B salah:** Arah sebab-akibatnya terbalik; peradangan akibat disbiosis justru meningkatkan kerentanan terhadap kecemasan dan depresi.\n* **C salah:** Paragraf pertama menyebut jalur komunikasi *dua arah*, bukan *satu arah*.\n* **E salah:** Paragraf ketiga juga mencantumkan faktor genetik dan pola makan, sehingga antibiotik bukan *satu-satunya* faktor.",
       "visual": null
     },
     {
@@ -205,13 +205,13 @@
       "pertanyaan_markdown": "Manakah pernyataan berikut yang **tidak sesuai** dengan hasil uji klinis dan simpulan peneliti pada paragraf kedua dan ketiga?",
       "opsi_jawaban": [
         "A. Suplemen galakto-oligosakarida menurunkan kadar kortisol pagi hari secara signifikan pada kelompok perlakuan dibanding kelompok plasebo.",
-        "B. Perbaikan gejala psikologis tidak teramati pada partisipan uji klinis yang sedang mengonsumsi obat antidepresan konvensional.",
+        "B. Perbaikan gejala psikologis tidak teramati pada peserta uji klinis yang sedang mengonsumsi obat antidepresan konvensional.",
         "C. Intervensi makanan fermentasi dan serat pangan belum dapat menggantikan psikoterapi secara mutlak bagi penderita gangguan jiwa berat.",
         "D. Mayoritas penelitian psikobiotik saat ini masih memiliki keterbatasan pada durasi pemantauan jangka pendek serta sampel yang homogen.",
         "E. Pemberian suplemen prebiotik selama empat minggu terbukti menyembuhkan pasien depresi berat secara permanen dalam praktik psikiatri klinis."
       ],
       "kunci_jawaban": "E",
-      "bedah_cepat_markdown": "Uji klinis pada paragraf 2 hanya melibatkan pasien *depresi ringan hingga sedang* selama empat minggu dan menurunkan kadar kortisol, bukan menyembuhkan *depresi berat secara permanen* (Opsi E bertentangan dengan fakta eksplisit sekaligus menambahkan klaim berlebih).\n\n* **A, B, C, dan D benar:** Keempatnya merupakan parafrasa akurat dari kalimat-kalimat eksplisit pada paragraf kedua dan ketiga.",
+      "bedah_cepat_markdown": "Soal meminta pernyataan yang **tidak sesuai**, jadi kita cari opsi yang menabrak isi paragraf kedua atau ketiga. Opsi **E** keliru karena uji klinis hanya dilakukan pada pasien *depresi ringan hingga sedang* dan hasilnya berupa penurunan kadar kortisol, bukan menyembuhkan *depresi berat secara permanen*.\n\n* **A sesuai:** Cocok dengan kalimat kedua paragraf 2 mengenai penurunan kortisol pagi hari secara signifikan.\n* **B sesuai:** Parafrasa dari kalimat terakhir paragraf 2 (perbaikan hanya muncul pada peserta yang *tidak* minum antidepresan konvensional).\n* **C sesuai:** Cocok dengan kalimat pertama paragraf 3 (bukan pengganti mutlak psikoterapi pada kasus gangguan jiwa berat).\n* **D sesuai:** Cocok dengan kalimat kedua paragraf 3 mengenai keterbatasan durasi pendek dan sampel homogen.",
       "visual": null
     },
     {
@@ -221,7 +221,7 @@
         5
       ],
       "tipe_soal_utbk": "Benar-Salah",
-      "pertanyaan_markdown": "Tentukan status kebenaran setiap pernyataan berikut berdasarkan bacaan!\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Berkurangnya bias perhatian terhadap stimulus emosional negatif berkorelasi positif dengan penurunan kadar kortisol pagi hari. | | |\n| 2 | Psikobiotik mencakup konsumsi probiotik dan prebiotik spesifik yang bertujuan memulihkan keseimbangan mikrobiota usus. | | |\n| 3 | Protokol standar penerapan psikobiotik klinis saat ini sudah seragam dan tidak bergantung pada profil mikrobioma individu. | | |\n| 4 | Studi psikobiotik yang ada sekarang sebagian besar menggunakan sampel populasi yang beragam secara demografis. | | |",
+      "pertanyaan_markdown": "Tentukan status kebenaran setiap pernyataan berikut berdasarkan bacaan!\n\n| No | Pernyataan | Benar | Salah |\n|---|---|---|---|\n| 1 | Berkurangnya kecenderungan otak untuk fokus pada pemicu emosi negatif berkorelasi positif dengan penurunan kadar kortisol pagi hari. | | |\n| 2 | Psikobiotik mencakup konsumsi probiotik dan prebiotik spesifik yang bertujuan memulihkan keseimbangan mikrobiota usus. | | |\n| 3 | Protokol standar penerapan psikobiotik klinis saat ini sudah seragam dan tidak bergantung pada profil mikrobioma tiap individu. | | |\n| 4 | Studi psikobiotik yang ada sekarang sebagian besar menggunakan sampel populasi yang beragam secara demografis. | | |",
       "opsi_jawaban": [
         "A. Benar - Benar - Salah - Salah",
         "B. Benar - Salah - Benar - Salah",
@@ -230,7 +230,7 @@
         "E. Salah - Salah - Benar - Benar"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "* **Pernyataan 1 (Benar):** Sesuai kalimat ketiga paragraf 2 mengenai korelasi positif penurunan kortisol dengan berkurangnya bias perhatian negatif.\n* **Pernyataan 2 (Benar):** Sesuai definisi psikobiotik pada kalimat pertama paragraf 2.\n* **Pernyataan 3 (Salah):** Bertentangan dengan kalimat ketiga paragraf 3; protokol standar masih diperlukan dan harus disesuaikan dengan profil mikrobioma individu.\n* **Pernyataan 4 (Salah):** Bertentangan dengan kalimat kedua paragraf 3; sampel populasi bersifat *homogen* (seragam), bukan beragam.",
+      "bedah_cepat_markdown": "Kita cek setiap baris tabel secara berurutan ke paragraf asalnya:\n\n* **Pernyataan 1 (Benar):** Paragraf 2 kalimat ketiga menyatakan penurunan kortisol berjalan seiring (berkorelasi positif) dengan berkurangnya kecenderungan otak fokus pada pemicu emosi negatif.\n* **Pernyataan 2 (Benar):** Sesuai persis dengan definisi psikobiotik di kalimat pertama paragraf 2.\n* **Pernyataan 3 (Salah):** Bertentangan dengan kalimat ketiga paragraf 3; protokol standar justru *masih dibutuhkan* dan *harus disesuaikan* dengan profil mikrobioma tiap individu.\n* **Pernyataan 4 (Salah):** Bertentangan dengan kalimat kedua paragraf 3; sampel penelitian bersifat *homogen* (seragam), bukan beragam.",
       "visual": null
     }
   ]

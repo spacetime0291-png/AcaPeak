@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam kalimat 'Kebijakan fiskal itu memukul daya beli masyarakat kelas menengah', apakah kata 'memukul' bermakna menghantam dengan benda keras seperti di kamus?",
+      "pertanyaan_pemantik": "Dalam kalimat berita, 'Kenaikan harga pangan mulai memukul daya beli kelas menengah', apakah kata 'memukul' berarti menghantam benda secara fisik seperti di kamus?",
       "opsi_cepat": [
-        "Ya, sesuai arti dasar kamus",
-        "Tidak, bergeser menjadi berdampak buruk secara kontekstual"
+        "Ya, artinya tetap sama seperti di kamus",
+        "Tidak, artinya bergeser menjadi berdampak buruk"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Di UTBK PPU, arti kamus (leksikal) sering kali gugur oleh konteks kalimat. Peserta yang terpaku pada makna dasar akan terjebak opsi literal yang tidak selaras dengan logika wacana."
+      "penjelasan_kilat": "Di soal UTBK PPU, arti dasar kamus sering kalah oleh konteks kalimat. Kalau kamu cuma terpaku pada arti harfiah, kamu bakal mudah terjebak opsi jawaban yang tidak nyambung dengan isi bacaan."
     },
-    "konsep_inti_markdown": "**Pemahaman makna kata UTBK** menguji ketepatan menafsirkan kata atau frasa sesuai konteks wacana dan kaidah KBBI VI:\n\n* **Makna Leksikal:** Arti dasar kata sesuai kamus sebelum mengalami pengimbuhan atau masuk ke kalimat.\n* **Makna Gramatikal & Kontekstual:** Perubahan arti akibat afiksasi, pengulangan, atau hubungan antarkata dalam kalimat.\n* **Denotatif vs Konotatif:** Makna lugas (apa adanya) berlawanan dengan makna kias (asosiatif/emosional).\n* **Idiom & Kolokasi:** Gabungan kata tetap yang membentuk makna baru atau pasangan kata baku yang lazim.",
+    "konsep_inti_markdown": "**Soal makna kata di UTBK** menguji kejelianmu menafsirkan arti kata sesuai konteks kalimat dan kaidah **KBBI VI**:\n\n* **Makna Leksikal (Arti Kamus):** Arti asli sebuah kata yang berdiri sendiri sebelum mendapat imbuhan atau masuk ke kalimat.\n* **Makna Gramatikal & Kontekstual:** Perubahan arti karena proses pengimbuhan, pengulangan kata, atau pengaruh situasi kalimat.\n* **Denotatif vs. Konotatif:** Arti lugas yang apa adanya berlawanan dengan arti kias yang punya nilai rasa tertentu.\n* **Idiom & Kolokasi:** Gabungan kata tetap yang melahirkan arti baru (idiom) atau pasangan kata yang sudah lazim dipakai bersama (kolokasi).",
     "radar_jebakan_utbk": [
-      "Memilih sinonim kamus yang benar secara umum, tetapi merusak kepaduan makna dan struktur [S]-[P]-[O]-[K] saat disubstitusikan ke kalimat soal.",
-      "Menggunakan pasangan kolokasi atau penulisan kata serapan tidak baku (misal: merubah, resiko, mengenyampingkan) karena terbiasa dengan ragam percakapan."
+      "Asal memilih sinonim kamus yang mirip, tetapi kalimatnya langsung terasa janggal atau tidak logis saat kata itu dimasukkan.",
+      "Terkecoh pasangan kata atau ejaan tidak baku yang sering muncul di obrolan sehari-hari, seperti merubah, resiko, atau mengenyampingkan."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Kaidah Makna Leksikal, Gramatikal, dan Kontekstual",
-      "subjudul_ringkas": "Panduan lengkap jenis makna kata, pergeseran semantis, denotasi-konotasi, serta idiom dan kolokasi baku UTBK.",
+      "subjudul_ringkas": "Panduan praktis membedakan arti kamus, perubahan makna karena imbuhan, makna lugas-kias, serta pasangan kata baku di UTBK.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -35,99 +35,99 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Makna Leksikal, Istilah Serapan, & Pergeseran Gramatikal",
-          "ringkasan_kelompok": "Mengurai makna dasar kamus, istilah serapan, dan perubahan makna akibat proses morfologis.",
+          "nama_kelompok": "Makna Leksikal, Istilah Serapan, & Perubahan karena Imbuhan",
+          "ringkasan_kelompok": "Memahami arti dasar kamus, istilah khusus dalam berita, dan pergeseran arti akibat imbuhan atau pengulangan.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Makna Leksikal (Arti Kamus Dasar)",
-              "penjelasan_singkat": "Makna asli kata sesuai entri dasar KBBI VI sebelum mengalami pengimbuhan, pengulangan, atau penggabungan kata.",
-              "contoh_penerapan": "Petani menanam **padi** di sawah tadah hujan menggunakan bibit unggul varietas lokal.",
-              "jebakan_atau_catatan": "Jebakan: Mengartikan kata berimbuhan hanya berdasarkan makna dasar kamusnya tanpa melihat konteks kalimat.",
+              "judul_poin": "Makna Leksikal (Arti Dasar Kamus)",
+              "penjelasan_singkat": "Arti asli sebuah kata sesuai entri dasar KBBI VI sebelum diberi imbuhan atau digabung dengan kata lain.",
+              "contoh_penerapan": "Petani mulai menanam **padi** varietas unggul di sawah tadah hujan menjelang awal musim hujan.",
+              "jebakan_atau_catatan": "Jebakan: Mengartikan kata berimbuhan cuma lewat kata dasarnya tanpa mengecek arah kalimat.",
               "visual": null
             },
             {
               "judul_poin": "Istilah Teknis dan Kata Serapan Kontekstual",
-              "penjelasan_singkat": "Penentuan makna kata serapan atau istilah bidang ilmu berdasarkan petunjuk semantis di dalam kalimat.",
-              "contoh_penerapan": "Kebijakan **mitigasi** bencana dilakukan pemerintah daerah untuk mengurangi risiko korban jiwa akibat banjir bandang.",
-              "jebakan_atau_catatan": "Salah kaprah: Menyamakan mitigasi (pengurangan risiko) dengan evakuasi (pemindahan korban saat bencana terjadi).",
+              "penjelasan_singkat": "Menebak arti istilah bidang ilmu atau kata serapan dengan memanfaatkan petunjuk kata-kata di sekitarnya.",
+              "contoh_penerapan": "Pemerintah daerah mempercepat langkah **mitigasi** bencana untuk menekan risiko korban jiwa akibat banjir bandang.",
+              "jebakan_atau_catatan": "Salah kaprah: Menyamakan mitigasi (upaya mengurangi risiko sebelum/saat bencana) dengan evakuasi (pemindahan warga ke tempat aman).",
               "visual": null
             },
             {
-              "judul_poin": "Makna Gramatikal akibat Afiksasi (Pengimbuhan)",
-              "penjelasan_singkat": "Perubahan makna dasar kata setelah mendapat imbuhan (prefiks, sufiks, konfiks) sesuai fungsi sintaksisnya.",
-              "contoh_penerapan": "Rapat koordinasi itu **menghasilkan** keputusan strategis bagi pengembangan ekonomi kreatif nasional.",
-              "jebakan_atau_catatan": "Jebakan: Mengira imbuhan meN-kan dan meN-i selalu bermakna sama dalam berbagai konteks verba.",
+              "judul_poin": "Makna Gramatikal akibat Pengimbuhan",
+              "penjelasan_singkat": "Perubahan arti kata dasar setelah mendapat imbuhan (awalan, akhiran, atau gabungan keduanya) di dalam kalimat.",
+              "contoh_penerapan": "Rapat koordinasi lintas kementerian itu **menghasilkan** kebijakan baru untuk mendorong ekspor produk UMKM.",
+              "jebakan_atau_catatan": "Jebakan: Mengira imbuhan meN-kan dan meN-i selalu punya arti yang sama pada setiap kata kerja.",
               "visual": null
             },
             {
-              "judul_poin": "Makna Gramatikal akibat Reduplikasi (Pengulangan)",
-              "penjelasan_singkat": "Pengulangan bentuk dasar yang memunculkan makna baru seperti jamak, saling, menyerupai, atau intensitas.",
-              "contoh_penerapan": "Kedua negara tetangga itu sepakat **bantu-membantu** dalam menangani krisis pangan lintas perbatasan.",
-              "jebakan_atau_catatan": "Salah: Mengartikan semua kata ulang sebagai bentuk jamak, padahal bantu-membantu bermakna resiprokal (saling).",
+              "judul_poin": "Makna Gramatikal akibat Pengulangan Kata",
+              "penjelasan_singkat": "Pengulangan kata dasar yang memunculkan arti baru, seperti banyak (jamak), saling berbalasan, atau menyerupai.",
+              "contoh_penerapan": "Kedua negara bertetangga itu sepakat **bantu-membantu** dalam menjaga stabilitas pasokan pangan di wilayah perbatasan.",
+              "jebakan_atau_catatan": "Salah: Mengira semua kata ulang berarti 'banyak', padahal bantu-membantu berarti saling menolong.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Makna Denotatif, Konotatif, & Pergeseran Kontekstual",
-          "ringkasan_kelompok": "Membedakan makna lugas, makna kias, serta pergeseran cakupan arti kata dalam wacana.",
+          "nama_kelompok": "Makna Lugas (Denotatif), Kias (Konotatif), & Pergeseran Arti",
+          "ringkasan_kelompok": "Membedakan arti apa adanya dengan arti kias, serta melihat bagaimana cakupan arti kata bisa meluas atau menyempit.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Makna Denotatif (Lugas dan Objektif)",
-              "penjelasan_singkat": "Makna kata yang merujuk langsung pada konsep fisik atau fakta objektif tanpa nilai rasa tambahan.",
-              "contoh_penerapan": "Dokter bedah itu memeriksa **tangan** pasien yang mengalami patah tulang akibat kecelakaan lalu lintas.",
-              "jebakan_atau_catatan": "Catatan: Teks ilmiah dan berita utama di UTBK selalu mengutamakan diksi bermakna denotatif.",
+              "judul_poin": "Makna Denotatif (Lugas dan Apa Adanya)",
+              "penjelasan_singkat": "Arti kata yang merujuk langsung pada benda fisik atau fakta nyata tanpa tambahan nilai rasa tertentu.",
+              "contoh_penerapan": "Dokter spesialis ortopedi memeriksa **tangan** kanan pasien yang mengalami retak tulang akibat kecelakaan lalu lintas.",
+              "jebakan_atau_catatan": "Catatan: Artikel ilmiah dan berita utama di UTBK umumnya memakai kata bermakna lugas agar tidak multitafsir.",
               "visual": null
             },
             {
-              "judul_poin": "Makna Konotatif (Kias dan Emosional)",
-              "penjelasan_singkat": "Makna tambahan berupa nilai rasa positif, negatif, atau kiasan yang muncul akibat konteks sosial budaya.",
-              "contoh_penerapan": "Pejabat itu terbukti menjadi **tangan kanan** sindikat penggelapan dana bantuan sosial daerah.",
-              "jebakan_atau_catatan": "Jebakan: Menafsirkan frasa konotatif secara harfiah sehingga gagal menangkap maksud kiasan penulis wacana.",
+              "judul_poin": "Makna Konotatif (Kias dan Bernilai Rasa)",
+              "penjelasan_singkat": "Arti tambahan berupa kiasan atau nilai rasa (positif maupun negatif) yang lahir dari kebiasaan pemakaian di masyarakat.",
+              "contoh_penerapan": "Mantan staf ahli itu diduga menjadi **tangan kanan** sindikat pengaturan proyek pengadaan barang di daerah.",
+              "jebakan_atau_catatan": "Jebakan: Mengartikan ungkapan kias secara harfiah sehingga gagal menangkap sindiran atau maksud penulis.",
               "visual": null
             },
             {
               "judul_poin": "Pergeseran Makna Meluas dan Menyempit",
-              "penjelasan_singkat": "Perubahan cakupan makna kata saat ini menjadi lebih luas (generalisasi) atau lebih sempit (spesialisasi) daripada asalnya.",
-              "contoh_penerapan": "Para **sarjana** ilmu lingkungan mempresentasikan hasil riset perubahan iklim dalam simposium internasional.",
-              "jebakan_atau_catatan": "Catatan: Kata sarjana mengalami penyempitan makna (dulu berarti orang pandai, kini lulusan perguruan tinggi).",
+              "penjelasan_singkat": "Perubahan cakupan arti kata masa kini menjadi lebih luas atau lebih sempit dibandingkan arti awalnya dulu.",
+              "contoh_penerapan": "Para **sarjana** teknik lingkungan memaparkan hasil riset pengelolaan limbah industri dalam forum ilmiah nasional.",
+              "jebakan_atau_catatan": "Catatan: Kata sarjana mengalami penyempitan makna—dulu berarti 'orang pandai secara umum', kini khusus 'lulusan perguruan tinggi'.",
               "visual": null
             },
             {
-              "judul_poin": "Sinestesia dan Asosiasi Makna",
-              "penjelasan_singkat": "Pertukaran tanggapan dua indra berbeda (sinestesia) atau pemindahan makna karena kesamaan sifat (asosiasi).",
-              "contoh_penerapan": "Kritik **pedas** dari pengamat ekonomi memicu perdebatan sengit dalam forum diskusi publik tersebut.",
-              "jebakan_atau_catatan": "Jebakan: Menganggap kata pedas pada kritik bermakna indra pengecap, padahal bermakna indra pendengaran (menyakitkan).",
+              "judul_poin": "Pertukaran Indra (Sinestesia) dan Asosiasi",
+              "penjelasan_singkat": "Pertukaran tanggapan dua indra yang berbeda atau pemindahan arti karena adanya kesamaan sifat.",
+              "contoh_penerapan": "Kritik **pedas** dari pengamat kebijakan publik memicu perdebatan hangat dalam diskusi panel tersebut.",
+              "jebakan_atau_catatan": "Jebakan: Kata pedas tidak lagi berkaitan dengan lidah (pengecap), melainkan perasaan saat mendengar ucapan yang tajam.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Idiom dan Kolokasi Baku (Kata Berpasangan Tetap)",
-          "ringkasan_kelompok": "Mengidentifikasi pasangan kata tetap dan ungkapan bermakna kias sesuai kelaziman bahasa Indonesia.",
+          "nama_kelompok": "Idiom dan Kolokasi (Pasangan Kata Tetap)",
+          "ringkasan_kelompok": "Mengenali ungkapan kias yang tidak bisa diartikan per kata dan pasangan kata baku yang lazim dalam bahasa Indonesia.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Idiom Penuh dan Idiom Sebagian",
-              "penjelasan_singkat": "Gabungan kata yang membentuk makna baru yang tidak dapat ditelusuri dari makna masing-masing unsurnya.",
-              "contoh_penerapan": "Perusahaan rintisan itu terpaksa **gulung tikar** akibat gagal bersaing di tengah krisis likuiditas global.",
-              "jebakan_atau_catatan": "Salah: Mengganti unsur idiom dengan sinonimnya, seperti mengubah gulung tikar menjadi melipat karpet.",
+              "judul_poin": "Idiom (Ungkapan Bermakna Baru)",
+              "penjelasan_singkat": "Gabungan kata yang membentuk satu arti baru dan tidak bisa ditebak hanya dari arti masing-masing katanya.",
+              "contoh_penerapan": "Perusahaan rintisan itu terpaksa **gulung tikar** setelah gagal bertahan di tengah ketatnya persaingan pasar digital.",
+              "jebakan_atau_catatan": "Salah: Mengganti bagian idiom dengan sinonimnya, misalnya mengubah gulung tikar menjadi melipat karpet.",
               "visual": null
             },
             {
-              "judul_poin": "Kolokasi Baku dalam Ragam Resmi",
-              "penjelasan_singkat": "Pasangan kata yang lazim dan berterima secara semantis dalam struktur kalimat baku bahasa Indonesia.",
-              "contoh_penerapan": "Setiap warga negara wajib **mematuhi peraturan** lalu lintas demi keselamatan bersama di jalan raya.",
-              "jebakan_atau_catatan": "Bentuk salah: Menggunakan pasangan tidak lazim seperti menghormati rambu atau menyetujui hukuman pada konteks kepatuhan.",
+              "judul_poin": "Kolokasi Baku (Pasangan Kata Lazim)",
+              "penjelasan_singkat": "Pasangan kata yang sudah terbiasa dipakai berdampingan sehingga terdengar alami dalam kalimat baku.",
+              "contoh_penerapan": "Setiap pengendara wajib **mematuhi peraturan** lalu lintas demi menjaga keselamatan bersama di jalan raya.",
+              "jebakan_atau_catatan": "Bentuk salah: Memakai pasangan yang janggal seperti menghormati rambu atau menyetujui aturan saat konteksnya kepatuhan hukum.",
               "visual": null
             },
             {
-              "judul_poin": "Ungkapan Idiomatik Preposisional",
-              "penjelasan_singkat": "Pasangan verba atau adjektiva tertentu yang wajib diikuti preposisi tetap sesuai kaidah tata bahasa baku.",
-              "contoh_penerapan": "Keberhasilan program literasi digital **bergantung pada** kesiapan infrastruktur internet di wilayah tertinggal.",
-              "jebakan_atau_catatan": "Bentuk salah: Menulis tergantung dari atau bergantung dengan yang menyalahi pasangan preposisi baku.",
+              "judul_poin": "Pasangan Kata Kerja/Sifat dengan Kata Depan Tetap",
+              "penjelasan_singkat": "Kata kerja atau kata sifat tertentu wajib berpasangan dengan kata depan (preposisi) yang tepat sesuai kaidah baku.",
+              "contoh_penerapan": "Keberhasilan program literasi digital **bergantung pada** kesiapan jaringan internet di wilayah tertinggal.",
+              "jebakan_atau_catatan": "Bentuk salah: Menulis tergantung dari atau bergantung dengan karena pasangan kata depannya tidak baku.",
               "visual": null
             }
           ]
@@ -138,38 +138,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Penentuan Makna Kata Spesifik atau Istilah Serapan Berdasarkan Konteks Kalimat",
+      "nama_variasi": "Menentukan Arti Kata Khusus atau Serapan Berdasarkan Konteks",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Otoritas moneter melakukan **intervensi** terukur untuk meredam **volatilitas** nilai tukar rupiah akibat tekanan eksternal.",
-      "bedah_pola_markdown": "**Bedah Pola Sintaksis & Substitusi:**\nPerhatikan struktur fungsi kalimat: [S] *Otoritas moneter* + [P] *melakukan* + [O] ***intervensi*** *terukur* + [K] *untuk meredam **volatilitas** nilai tukar*. Istilah **intervensi** (KBBI VI: campur tangan) di sini bermakna *tindakan pengendalian pasar*, sedangkan **volatilitas** bermakna *kecenderungan fluktuasi harga secara cepat*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Bank sentral melakukan **intervensi** (diartikan *penyerangan*) terhadap pasar valas. | Bank sentral melakukan **intervensi** (*campur tangan pengendalian*) terhadap pasar valas. |\n| **Volatilitas** (*kestabilan tetap*) kurs rupiah memicu kekhawatiran investor asing. | **Volatilitas** (*gejolak naik-turun*) kurs rupiah memicu kekhawatiran investor asing. |\n\n**Strategi Eksekusi:** Uji setiap opsi jawaban dengan menyubstitusikannya langsung ke slot [O] atau [K] kalimat tanpa merusak kelogisan wacana, sekaligus pastikan ejaan kata serapan sesuai kaidah baku KBBI VI.",
-      "kunci_pembeda": "Menguji makna istilah spesifik atau kata serapan dengan menyubstitusikannya ke posisi fungsi kalimat tanpa mengubah logika wacana.",
+      "stimulus_mini": "Otoritas moneter melakukan **intervensi** terukur untuk meredam **volatilitas** nilai tukar rupiah akibat tekanan ekonomi global.",
+      "bedah_pola_markdown": "**Cara Bedah Kalimat & Uji Substitusi:**\nCoba lihat alur kalimatnya: [S] *Otoritas moneter* + [P] *melakukan* + [O] ***intervensi*** *terukur* + [K] *untuk meredam **volatilitas** nilai tukar*. Menurut **KBBI VI**, **intervensi** berarti *campur tangan*, yang di konteks ekonomi berarti *tindakan pengendalian pasar*. Sementara itu, **volatilitas** berarti *kecenderungan harga atau nilai yang naik-turun dengan cepat*.\n\n| Pemahaman Keliru | Pemahaman Tepat (Sesuai Konteks & KBBI VI) |\n| :--- | :--- |\n| Bank sentral melakukan **intervensi** (diartikan *penyerangan*) di pasar valas. | Bank sentral melakukan **intervensi** (*campur tangan pengendalian*) di pasar valas. |\n| **Volatilitas** (*kestabilan*) kurs rupiah memicu kekhawatiran investor. | **Volatilitas** (*gejolak naik-turun*) kurs rupiah memicu kekhawatiran investor. |\n\n**Trik Cepat:** Masukkan langsung arti dari pilihan jawaban ke posisi kata dalam kalimat. Kalau kalimatnya tetap logis dan ejaan kata serapannya sesuai **KBBI VI**, itulah jawabannya.",
+      "kunci_pembeda": "Menguji arti istilah khusus atau kata serapan dengan memasukkannya langsung ke posisi kata dalam kalimat tanpa merusak alur logika.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Pergeseran Makna Kamus Menjadi Makna Kontekstual akibat Proses Pengimbuhan atau Kalimat",
+      "nama_variasi": "Pergeseran Arti Kamus akibat Imbuhan atau Konteks Kalimat",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Kementerian Lingkungan Hidup **menghijaukan** kembali kawasan bekas tambang dan **membekukan** izin operasional perusahaan pelanggar aturan.",
-      "bedah_pola_markdown": "**Bedah Pola Afiksasi & Fungsi:**\nKata dasar *hijau* (warna) dan *beku* (padat) mengalami pergeseran makna gramatikal akibat imbuhan *meN-kan* pada struktur: [S] *Kementerian* + [P1] ***menghijaukan*** + [O1] *kawasan tambang* + [P2] ***membekukan*** + [O2] *izin operasional*. Dalam konteks ini, *menghijaukan* berarti *menanami kembali dengan tumbuhan*, sedangkan *membekukan* berarti *menghentikan sementara*. Perhatikan pula peluluhan huruf awal kata dasar berimbuhan *meN-* sesuai EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemerintah **mensukseskan** program penghijauan dan **membekukan** (*mendinginkan*) izin. | Pemerintah **menyukseskan** program penghijauan dan **membekukan** (*menangguhkan*) izin. |\n| Tim peneliti **merubah** metode pengamatan dan **menterjemahkan** data lapangan. | Tim peneliti **mengubah** metode pengamatan dan **menerjemahkan** data lapangan. |\n\n**Strategi Eksekusi:** Identifikasi bentuk dasar dan imbuhannya, lalu selaraskan perubahan arti dengan objek [O] yang mengikutinya.",
-      "kunci_pembeda": "Melacak perubahan arti kata dasar akibat proses pengimbuhan (afiksasi) atau pengulangan yang terikat pada jenis objek kalimat.",
+      "stimulus_mini": "Kementerian Lingkungan Hidup **menghijaukan** kembali lahan bekas tambang dan **membekukan** izin operasi perusahaan pelanggar aturan.",
+      "bedah_pola_markdown": "**Cara Melacak Perubahan Arti Imbuhan:**\nKata dasar *hijau* (warna) dan *beku* (padat) berubah arti setelah mendapat imbuhan *meN-kan*: [S] *Kementerian* + [P1] ***menghijaukan*** + [O1] *lahan tambang* + [P2] ***membekukan*** + [O2] *izin operasi*. Karena objeknya *lahan* dan *izin*, **menghijaukan** bergeser arti menjadi *menanami kembali dengan tumbuhan*, sedangkan **membekukan** berarti *menghentikan sementara*. Jangan lupa cek aturan peluluhan huruf awal **K-T-S-P** saat mendapat awalan *meN-* sesuai **EYD V**.\n\n| Penulisan & Arti Salah | Penulisan & Arti Baku (EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemerintah **mensukseskan** program dan **membekukan** (*mendinginkan*) izin. | Pemerintah **menyukseskan** program dan **membekukan** (*menangguhkan*) izin. |\n| Tim riset **merubah** metode dan **menterjemahkan** laporan lapangan. | Tim riset **mengubah** metode dan **menerjemahkan** laporan lapangan. |\n\n**Trik Cepat:** Cek kata dasarnya, lihat imbuhannya, lalu cocokkan perubahan artinya dengan objek yang mengikuti di belakang kata kerja tersebut.",
+      "kunci_pembeda": "Melacak pergeseran arti kata dasar setelah mendapat imbuhan atau pengulangan dengan melihat objek yang mengikutinya.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Identifikasi Makna Lugas (Denotatif) dan Makna Kias (Konotatif) dalam Wacana",
+      "nama_variasi": "Membedakan Makna Lugas (Denotatif) dan Makna Kias (Konotatif)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Meski sempat menjadi **anak emas** investor asing, perusahaan rintisan itu kini **gulung tikar** akibat beban utang yang membengkak.",
-      "bedah_pola_markdown": "**Bedah Pola Kontras Makna:**\nDalam struktur kalimat: [K] *Meski sempat menjadi **anak emas** investor asing*, [S] *perusahaan rintisan itu* + [K] *kini* + [P] ***gulung tikar*** + [K] *akibat beban utang*. Frasa **anak emas** (orang/pihak kesayangan) dan **gulung tikar** (bangkrut) bermakna kias (konotatif), bukan arti fisik sebenarnya. Teks akademik UTBK sering menyisipkan makna kias untuk menghaluskan atau menekankan situasi.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pedagang itu **gulung tikar** (diartikan *melipat alas duduk*) karena sepi pembeli. | Pedagang itu **gulung tikar** (*mengalami kebangkrutan*) karena sepi pembeli. |\n| Pejabat tersebut menolak **amplop** (*sampul surat kertas*) dari rekanan proyek. | Pejabat tersebut menolak **amplop** (*uang suap*) dari rekanan proyek. |\n\n**Strategi Eksekusi:** Uji apakah arti harfiah kata masuk akal secara fisik dalam kalimat; jika janggal, tafsirkan nilai rasa dan asosiasi situasinya.",
-      "kunci_pembeda": "Membedakan arti objektif yang sesuai referensi fisik (denotatif) dengan arti kias yang mengandung nilai rasa atau asosiasi (konotatif).",
+      "bedah_pola_markdown": "**Cara Menguji Arti Lugas vs. Kias:**\nPerhatikan dua frasa bercetak tebal dalam kalimat: *menjadi **anak emas** investor* dan *kini **gulung tikar***. Secara fisik, perusahaan tidak mungkin menjadi anak berbahan emas atau menggulung tikar sungguhan. Di sini, **anak emas** bermakna kias *pihak kesayangan/andalan*, sedangkan **gulung tikar** berarti *bangkrut*. Penulis berita sering memakai makna kias agar kalimat lebih hidup dan tidak kaku.\n\n| Tafsir Harfiah (Keliru) | Tafsir Kontekstual (Tepat) |\n| :--- | :--- |\n| Pedagang itu **gulung tikar** (diartikan *melipat alas duduk*) karena sepi pembeli. | Pedagang itu **gulung tikar** (*mengalami kebangkrutan*) karena sepi pembeli. |\n| Pejabat itu menolak **amplop** (*sampul surat kertas*) dari rekanan proyek. | Pejabat itu menolak **amplop** (*uang suap*) dari rekanan proyek. |\n\n**Trik Cepat:** Coba bayangkan arti fisiknya di dalam kalimat. Jika terasa mustahil atau aneh secara logika, berarti kata itu sedang dipakai dalam makna kias.",
+      "kunci_pembeda": "Membedakan arti nyata yang sesuai benda fisik (denotatif) dengan arti kias yang membawa nilai rasa atau perumpamaan (konotatif).",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Pemasangan Kata Berpasangan Tetap (Idiom atau Kolokasi) dalam Konteks Bacaan",
+      "nama_variasi": "Menjaga Pasangan Kata Tetap (Idiom dan Kolokasi Baku)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Kejaksaan Agung **mengambil langkah** tegas untuk **mengusut tuntas** dugaan **tindak pidana** korupsi yang merugikan keuangan negara.",
-      "bedah_pola_markdown": "**Bedah Pola Pasangan Kata Baku:**\nPerhatikan kepaduan frasa pada struktur: [S] *Kejaksaan Agung* + [P] ***mengambil langkah*** *tegas* + [K] *untuk **mengusut tuntas** dugaan **tindak pidana** korupsi*. Kata tertentu memiliki pasangan lazim (kolokasi) atau membentuk kesatuan makna baru (idiom) yang tidak dapat dipertukarkan secara sembarangan dengan sinonimnya meskipun maknanya mirip.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Polisi **memungut langkah** untuk **mencari tuntas** kasus **perbuatan pidana** itu. | Polisi **mengambil langkah** untuk **mengusut tuntas** kasus **tindak pidana** itu. |\n| Panelis **membuat kesimpulan** dan **mengenyampingkan** (*tidak baku*) asumsi liar. | Panelis **menarik simpulan** dan **mengesampingkan** (*baku KBBI VI*) asumsi liar. |\n\n**Strategi Eksekusi:** Hafalkan kolokasi baku bahasa Indonesia formal (*mengambil alih*, *menjatuhkan sanksi*, *mengajukan banding*) dan hindari substitusi sinonim harfiah yang terdengar janggal.",
-      "kunci_pembeda": "Mempertahankan keutuhan pasangan kata tetap (kolokasi dan idiom) agar selaras dengan kelaziman berbahasa baku tanpa mengganti salah satu unsurnya.",
+      "bedah_pola_markdown": "**Cara Mengenali Pasangan Kata Baku:**\nLihat paduan kata dalam kalimat ini: ***mengambil langkah*** *tegas*, ***mengusut tuntas***, dan ***tindak pidana***. Dalam bahasa Indonesia, beberapa kata sudah punya pasangan tetap (kolokasi) atau membentuk arti baru (idiom). Kamu tidak bisa sembarangan mengganti salah satu katanya dengan sinonim kamus karena akan merusak kelaziman kalimat.\n\n| Pasangan Janggal / Tidak Baku | Pasangan Baku (EYD V & KBBI VI) |\n| :--- | :--- |\n| Polisi **memungut langkah** untuk **mencari tuntas** kasus **perbuatan pidana** itu. | Polisi **mengambil langkah** untuk **mengusut tuntas** kasus **tindak pidana** itu. |\n| Panelis **membuat kesimpulan** dan **mengenyampingkan** (*tidak baku*) rumor liar. | Panelis **menarik simpulan** dan **mengesampingkan** (*baku KBBI VI*) rumor liar. |\n\n**Trik Cepat:** Biasakan membaca berita resmi untuk menangkap pasangan kata yang alami (*mengambil alih*, *menjatuhkan sanksi*, *mengajukan banding*), dan coret opsi yang terdengar seperti terjemahan kaku.",
+      "kunci_pembeda": "Mempertahankan keutuhan pasangan kata tetap (kolokasi dan idiom) agar sesuai kelaziman bahasa Indonesia baku tanpa menukar unsurnya dengan sinonim sembarangan.",
       "visual": null
     }
   ],
@@ -190,7 +190,7 @@
         "E. menyederhanakan prosedur; kemacetan arus barang"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Berdasarkan KBBI VI dan konteks jaringan pelabuhan, **mengonsolidasikan** (kata dasar *konsolidasi* + *meN-kan*) berarti *memperteguh atau menggabungkan berbagai jaringan menjadi satu kesatuan yang lebih kuat* (opsi **A** berlawanan makna). Sementara itu, **disparitas** pada frasa *disparitas biaya pengiriman antarpulau* bermakna *perbedaan atau ketimpangan yang mencolok* antardaerah. Jika disubstitusikan ke kalimat, hanya opsi **B** yang menjaga kelogisan hubungan sebab-akibat antarkalimat secara utuh.",
+      "bedah_cepat_markdown": "Mari kita bedah satu per satu sesuai konteks kalimatnya:\n1. **Mengonsolidasikan** berasal dari kata dasar *konsolidasi* + imbuhan *meN-kan*. Menurut **KBBI VI**, kata ini berarti *memperteguh atau menggabungkan berbagai jaringan menjadi satu kesatuan yang lebih kuat*. Jadi, opsi **A** (*memisahkan*) langsung gugur karena berlawanan arah.\n2. **Disparitas** pada frasa *disparitas biaya pengiriman antarpulau* bermakna *perbedaan atau ketimpangan yang mencolok* antardaerah.\n\nSaat kedua arti pada **opsi B** dimasukkan kembali ke kalimat, alur sebab-akibatnya langsung klop dan logis.",
       "visual": null
     },
     {
@@ -202,14 +202,14 @@
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
       "pertanyaan_markdown": "Bacalah kalimat berikut dengan saksama!\n\n> \"Kebijakan pengetatan kredit properti tahun ini mulai **mendinginkan** pasar perumahan mewah yang sempat mengalami lonjakan harga spekulatif.\"\n\nKata **mendinginkan** dalam kalimat tersebut memiliki pergeseran makna yang SEPOLA dengan kata bercetak tebal pada kalimat ....",
       "opsi_jawaban": [
-        "A. Petugas laboratorium **mendinginkan** sampel vaksin di dalam lemari pendingin bersuhu minus dua puluh derajat.",
+        "A. Petugas laboratorium **mendinginkan** sampel vaksin di dalam lemari pendingin bersuhu rendah.",
         "B. Hujan deras yang mengguyur sejak sore berhasil **mendinginkan** suhu udara perkotaan yang terasa pengap.",
         "C. Klarifikasi resmi manajemen akhirnya **mendinginkan** ketegangan antara serikat pekerja dan direksi perusahaan.",
         "D. Koki restoran itu **mendinginkan** adonan kue di atas rak kawat sebelum mengolesinya dengan krim.",
         "E. Sistem sirkulasi air otomatis bertugas **mendinginkan** mesin turbin pembangkit listrik agar tidak panas berlebih."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Pada kalimat stimulus, kata **mendinginkan** tidak bermakna lugas menurunkan suhu fisik benda, melainkan bergeser secara kontekstual dan kias menjadi *meredakan atau mengurangi gejolak* aktivitas pasar. Pola makna kias serupa terdapat pada **opsi C**, di mana kata **mendinginkan** bermakna *meredakan ketegangan* konflik antarpihak. Sebaliknya, **opsi A**, **B**, **D**, dan **E** seluruhnya mempertahankan makna lugas (denotatif) berupa penurunan temperatur fisik pada sampel vaksin, udara, adonan kue, dan mesin.",
+      "bedah_cepat_markdown": "Pada kalimat soal, kata **mendinginkan** jelas bukan berarti menurunkan suhu ruangan atau benda fisik. Karena objeknya adalah *pasar perumahan mewah*, maknanya bergeser menjadi arti kias: *meredakan atau menahan laju gejolak pasar*.\n\nSekarang kita cari kalimat lain yang juga memakai kata **mendinginkan** secara kias:\n* **Opsi C** tepat karena objeknya adalah *ketegangan* (bukan benda fisik), sehingga artinya sama-sama *meredakan situasi panas/konflik*.\n* **Opsi A, B, D, dan E** semuanya masih memakai arti lugas (denotatif), yaitu menurunkan suhu fisik vaksin, udara, adonan kue, dan mesin.",
       "visual": null
     },
     {
@@ -219,16 +219,16 @@
         4
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Perhatikan paragraf berikut!\n\n> Dalam sidang komite etik, beberapa anggota berusaha **mencuci tangan** atas kegagalan proyek infrastruktur daerah tersebut. Namun, ketua tim auditor tetap **mengambil langkah** objektif dengan **mengesampingkan** tekanan politik dan menjadikan temuan lapangan sebagai **batu pijakan** penyusunan rekomendasi sanksi.\n\nMakna ungkapan **mencuci tangan** dan ketepatan pasangan kata pada paragraf di atas yang PALING TEPAT adalah ....",
+      "pertanyaan_markdown": "Perhatikan paragraf berikut!\n\n> Dalam sidang komite etik, beberapa anggota berusaha **mencuci tangan** atas kegagalan proyek infrastruktur daerah tersebut. Namun, ketua tim auditor tetap **mengambil langkah** objektif dengan **mengesampingkan** tekanan politik dan menjadikan temuan lapangan sebagai **batu pijakan** penyusunan rekomendasi sanksi.\n\nMakna ungkapan **mencuci tangan** dan **batu pijakan** dalam paragraf tersebut secara berurutan yang PALING TEPAT adalah ....",
       "opsi_jawaban": [
-        "A. membersihkan diri sebelum rapat dimulai; frasa *mengambil langkah* seharusnya diganti menjadi *memungut langkah*",
-        "B. menghindar dari tanggung jawab atas kesalahan; seluruh pasangan kata dan bentuk *mengesampingkan* sudah baku",
-        "C. menolak menerima bantuan dana proyek; kata *mengesampingkan* tidak baku dan seharusnya ditulis *mengenyampingkan*",
-        "D. menyerahkan wewenang kepada pihak lain; frasa *batu pijakan* bermakna lugas sebagai pijakan kaki di proyek",
-        "E. menghentikan penyelidikan secara sepihak; frasa *mengambil langkah* tidak efektif dalam kalimat formal"
+        "A. membersihkan diri dari kesalahan; hambatan utama dalam bekerja",
+        "B. menghindar dari tanggung jawab; dasar untuk bertindak lebih lanjut",
+        "C. menolak terlibat dalam rapat; tujuan akhir yang ingin dicapai",
+        "D. menyerahkan tugas kepada orang lain; bukti pelanggaran hukum",
+        "E. menghentikan penyelidikan secara sepihak; syarat mutlak pengambilan keputusan"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Ungkapan **mencuci tangan** dalam konteks sidang etik bermakna kias *tidak mau ikut campur atau menghindar dari tanggung jawab atas suatu kesalahan* (**opsi B**). Selain itu, pasangan kolokasi **mengambil langkah** dan **batu pijakan** (dasar tindakan) sudah tepat secara idiomatis. Kata berimbuhan **mengesampingkan** (dari gabungan kata *ke samping* + *meN-kan*) juga telah ditulis baku sesuai kaidah EYD V dan KBBI VI, sehingga **opsi C** salah.",
+      "bedah_cepat_markdown": "Kedua frasa bercetak tebal dalam paragraf tersebut merupakan ungkapan tetap (idiom) yang tidak bisa diartikan kata per kata:\n1. **Mencuci tangan** dalam konteks sidang etik berarti *tidak mau ikut campur atau menghindar dari tanggung jawab atas suatu kesalahan*.\n2. **Batu pijakan** dalam konteks penyusunan rekomendasi berarti *dasar atau landasan awal untuk melangkah/bertindak lebih lanjut*.\n\nSelain itu, perhatikan juga pasangan kata **mengambil langkah** dan kata baku **mengesampingkan** (dari *ke samping* + *meN-kan*) di dalam teks yang sudah sesuai kaidah **EYD V** dan **KBBI VI**. Hanya **opsi B** yang memuat kedua makna ungkapan secara akurat.",
       "visual": null
     }
   ]

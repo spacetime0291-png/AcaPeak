@@ -9,18 +9,18 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Sebuah diagram alir memproses bilangan bulat $x$: jika $x$ ganjil, hitung $3x + 1$; jika genap, hitung $\\frac{x}{2}$. Jika nilai output akhir adalah $10$, apakah nilai input $x$ yang memenuhi hanya satu bilangan?",
+      "pertanyaan_pemantik": "Sebuah diagram alir memproses bilangan bulat $x$: jika $x$ ganjil, hitung $3x + 1$; jika genap, hitung $\\frac{x}{2}$. Jika hasil akhirnya $10$, apakah hanya ada satu input $x$ yang memenuhi?",
       "opsi_cepat": [
         "Ya, hanya x = 20",
         "Tidak, ada dua input: x = 3 dan x = 20"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Saat melakukan penelusuran mundur (backtracking), kedua cabang syarat harus diuji. Baik $x = 20$ (jalur genap: $20 \\div 2 = 10$) maupun $x = 3$ (jalur ganjil: $3(3) + 1 = 10$) sama-sama valid karena memenuhi syarat cabang masing-masing."
+      "penjelasan_kilat": "Saat menelusuri mundur dari output, kamu wajib menguji semua cabang. Baik $x = 20$ (jalur genap: $20 \\div 2 = 10$) maupun $x = 3$ (jalur ganjil: $3(3) + 1 = 10$) sama-sama memenuhi syarat cabangnya."
     },
-    "konsep_inti_markdown": "**Flowchart bilangan PK UTBK** memodelkan fungsi komposisi dan barisan rekursif melalui alur logika tanpa kalkulator.\n\n* **Alur Maju (*Forward*):** Substitusikan input $x$ secara berurutan mengikuti panah dan syarat keputusan (`Ya`/`Tidak`).\n* **Alur Berulang (*Looping*):** Catat nilai variabel tiap iterasi dalam tabel mini hingga kondisi berhenti terpenuhi.\n* **Alur Mundur (*Backtracking*):** Balikkan operasi aritmetika dari output, lalu **wajib uji ulang** hasil input ke syarat cabang awal.",
+    "konsep_inti_markdown": "**Flowchart bilangan PK UTBK** adalah cara visual menyajikan hitungan berantai dan pola berulang yang bisa diselesaikan tanpa kalkulator.\n\n* **Alur Maju (*Forward*):** Masukkan input $x$, lalu ikuti panah dan cabang syarat (`Ya`/`Tidak`) langkah demi langkah.\n* **Alur Berulang (*Looping*):** Buat tabel kecil untuk mencatat perubahan nilai di tiap putaran sampai syarat berhenti terpenuhi.\n* **Alur Mundur (*Backtracking*):** Balikkan operasi hitung dari output ke input, lalu **wajib uji ulang** hasilnya ke syarat cabang awal.",
     "radar_jebakan_utbk": [
-      "Lupa menguji kecocokan nilai input hasil penelusuran mundur (backtracking) terhadap syarat ganjil/genap pada kotak keputusan awal.",
-      "Salah menghitung jumlah iterasi pada alur berulang (looping) akibat tertukar posisi pengecekan syarat berhenti sebelum atau sesudah operasi."
+      "Lupa menguji ulang input hasil hitungan mundur (backtracking) ke syarat ganjil/genap di kotak keputusan awal.",
+      "Salah hitung jumlah putaran (looping) karena tidak teliti melihat posisi cek syarat berhenti—apakah sebelum atau sesudah operasi."
     ],
     "stimulus_utama_bersama": null,
     "visual": {
@@ -30,7 +30,7 @@
     },
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Sifat & Pola Algoritma Diagram Alir (Flowchart) Bilangan",
-      "subjudul_ringkas": "Katalog sifat, pola iterasi, dan teknik penelusuran maju-mundur diagram alir bilangan untuk Pengetahuan Kuantitatif.",
+      "subjudul_ringkas": "Ringkasan pola hitungan maju, perulangan, dan teknik menelusuri mundur diagram alir bilangan untuk UTBK PK.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -39,92 +39,92 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Alur Tunggal & Percabangan Bersyarat (Forward)",
-          "ringkasan_kelompok": "Penelusuran nilai input secara maju melalui operasi berurutan dan syarat keputusan.",
+          "nama_kelompok": "Alur Lurus & Percabangan Bersyarat (Forward)",
+          "ringkasan_kelompok": "Menghitung output secara maju dengan mengikuti urutan kotak dan cabang keputusan.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Komposisi Alur Tunggal (*Single-Pass*)",
-              "penjelasan_singkat": "Proses berurutan tanpa cabang memodelkan komposisi fungsi $f(g(x))$ dengan mengeksekusi operasi dari atas ke bawah.",
-              "contoh_penerapan": "Input $x = 3$ masuk kotak $x \\leftarrow 2x + 1$, lalu $x \\leftarrow x^2$, menghasilkan **$x = 49$**.",
-              "jebakan_atau_catatan": "Jangan menukar urutan kotak operasi; sifat komposisi tidak komutatif sehingga $(2x+1)^2 \\neq 2x^2+1$.",
+              "judul_poin": "Alur Lurus Tanpa Cabang (*Single-Pass*)",
+              "penjelasan_singkat": "Setiap kotak operasi dikerjakan berurutan dari atas ke bawah, persis seperti fungsi komposisi $f(g(x))$.",
+              "contoh_penerapan": "Input $x = 3$ masuk kotak $x \\leftarrow 2x + 1$ (jadi $7$), lalu $x \\leftarrow x^2$, hasilnya **$x = 49$**.",
+              "jebakan_atau_catatan": "Jangan pernah menukar urutan kotak. Hasil $(2x + 1)^2$ jelas berbeda dengan $2x^2 + 1$.",
               "visual": null
             },
             {
-              "judul_poin": "Percabangan Paritas (Ganjil atau Genap)",
-              "penjelasan_singkat": "Belah ketupat mengecek sisa pembagian 2 ($x \\bmod 2$) untuk memisahkan jalur bilangan ganjil dan genap.",
-              "contoh_penerapan": "Input $x = 5$ (ganjil) masuk jalur Ya ($x + 3$), menjadi **$8$** (genap) pada tahap berikutnya.",
-              "jebakan_atau_catatan": "Nilai variabel langsung berubah; cek ulang paritas terbaru jika ada belah ketupat kedua setelahnya.",
+              "judul_poin": "Percabangan Ganjil vs Genap",
+              "penjelasan_singkat": "Kotak belah ketupat mengecek apakah $x$ habis dibagi 2 untuk menentukan jalur ganjil atau genap.",
+              "contoh_penerapan": "Input $x = 5$ (ganjil) masuk jalur Ya ($x + 3$), nilainya langsung berubah menjadi **$8$** (genap).",
+              "jebakan_atau_catatan": "Ingat, nilai $x$ terus diperbarui. Jika ada belah ketupat kedua, cek ganjil/genap dari nilai terbaru, bukan input awal.",
               "visual": null
             },
             {
-              "judul_poin": "Percabangan Pertidaksamaan dan Batas Interval",
-              "penjelasan_singkat": "Syarat perbandingan ($x > k$, $x \\le k$) menentukan jalur operasi sesuai domain nilai variabel saat itu.",
-              "contoh_penerapan": "Syarat $x \\ge 4$: jika $x = 4$, jalur Ya ($x - 2$) menghasilkan **$2$**; jika $x = 3$, jalur Tidak.",
-              "jebakan_atau_catatan": "Perhatikan tanda sama dengan pada $\\ge$ atau $\\le$; nilai batas tepat selalu masuk cabang Ya.",
+              "judul_poin": "Percabangan Tanda Perbandingan ($>, <, \\ge, \\le$)",
+              "penjelasan_singkat": "Syarat perbandingan menentukan arah panah berdasarkan besar-kecilnya nilai variabel saat itu.",
+              "contoh_penerapan": "Syarat $x \\ge 4$: jika $x = 4$, masuk jalur Ya ($x - 2$) jadi **$2$**; jika $x = 3$, masuk jalur Tidak.",
+              "jebakan_atau_catatan": "Cek teliti ada tidaknya tanda sama dengan ($\\ge$ vs $>$). Nilai pas di batas masuk cabang Ya hanya jika ada tanda sama dengan.",
               "visual": null
             },
             {
-              "judul_poin": "Percabangan Keterbagian dan Sifat Bilangan",
-              "penjelasan_singkat": "Syarat kelipatan atau bilangan prima menguji faktor pembagi $x$ sebelum menentukan arah panah keluar.",
+              "judul_poin": "Percabangan Kelipatan & Bilangan Prima",
+              "penjelasan_singkat": "Kotak keputusan menguji sifat khusus bilangan—seperti kelipatan $3$ atau bilangan prima—sebelum lanjut ke operasi berikutnya.",
               "contoh_penerapan": "Syarat kelipatan 3: input $x = 12$ masuk cabang Ya ($x \\div 3$), menghasilkan output akhir **$4$**.",
-              "jebakan_atau_catatan": "Angka $1$ bukan bilangan prima, sedangkan $0$ adalah bilangan genap kelipatan semua bilangan bulat tak nol.",
+              "jebakan_atau_catatan": "Ingat dua fakta klasik UTBK: angka $1$ **bukan** bilangan prima, sedangkan $0$ adalah bilangan genap.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Perulangan Terbatas & Variabel Akumulator (Looping)",
-          "ringkasan_kelompok": "Pencatatan perubahan variabel berulang kali menggunakan tabel mini hingga syarat berhenti tercapai.",
+          "nama_kelompok": "Alur Berulang & Penyimpan Total (Looping)",
+          "ringkasan_kelompok": "Mencatat perubahan nilai di tiap putaran dengan tabel mini sampai syarat berhenti tercapai.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Variabel Pencacah (*Counter*) dan Batas Iterasi",
-              "penjelasan_singkat": "Variabel $n$ bertambah konstan ($n \\leftarrow n + 1$) untuk membatasi jumlah pengulangan siklus dalam diagram.",
-              "contoh_penerapan": "Mulai $n = 1$ dengan syarat berhenti $n > 3$: siklus berjalan tepat **3 kali** ($n = 1, 2, 3$).",
-              "jebakan_atau_catatan": "Bedakan syarat berhenti $n > 3$ (3 iterasi) dengan $n \\ge 3$ (2 iterasi jika mulai $n = 1$).",
+              "judul_poin": "Penghitung Putaran (*Counter*) dan Batas Berhenti",
+              "penjelasan_singkat": "Variabel $n$ biasanya bertambah $1$ tiap putaran ($n \\leftarrow n + 1$) untuk membatasi berapa kali siklus berjalan.",
+              "contoh_penerapan": "Mulai $n = 1$, cek syarat $n > 3$ di akhir putaran: siklus berjalan tepat **3 kali** ($n = 1, 2, 3$).",
+              "jebakan_atau_catatan": "Hati-hati membedakan $n > 3$ (3 putaran) dengan $n \\ge 3$ (cuma 2 putaran jika mulai $n = 1$ dan dicek di akhir).",
               "visual": null
             },
             {
-              "judul_poin": "Variabel Akumulator Penjumlahan dan Perkalian",
-              "penjelasan_singkat": "Variabel penyimpan total ($S \\leftarrow S + x$ atau $P \\leftarrow P \\times x$) mengakumulasi nilai pada setiap siklus.",
-              "contoh_penerapan": "Awal $S = 0$, $x = 2$: iterasi 1 ($S = 2$), iterasi 2 ($S = 4$), akhir **$S = 6$**.",
-              "jebakan_atau_catatan": "Periksa inisialisasi akumulator; nilai awal biasanya $0$ untuk penjumlahan dan $1$ untuk perkalian berulang.",
+              "judul_poin": "Penyimpan Total (Akumulator)",
+              "penjelasan_singkat": "Variabel seperti $S \\leftarrow S + x$ atau $P \\leftarrow P \\times x$ bertugas menampung jumlah atau hasil kali di tiap putaran.",
+              "contoh_penerapan": "Awal $S = 0, x = 2$, aturan $S \\leftarrow S + x$: putaran 1 ($S = 2$), putaran 2 ($S = 4$), putaran 3 (**$S = 6$**).",
+              "jebakan_atau_catatan": "Selalu cek nilai awal di kotak paling atas. Biasanya $0$ untuk penjumlahan dan $1$ untuk perkalian berulang.",
               "visual": null
             },
             {
-              "judul_poin": "Pola Barisan Rekursif dalam Siklus",
-              "penjelasan_singkat": "Setiap putaran menghitung suku berikutnya $U_{n+1}$ dari $U_n$ hingga mencapai indeks target atau batas nilai.",
-              "contoh_penerapan": "Awal $x = 2$, aturan $x \\leftarrow 2x - 1$: iterasi 1 ($3$), iterasi 2 (**$5$**), iterasi 3 (**$9$**).",
-              "jebakan_atau_catatan": "Catat nilai variabel per kolom dalam tabel coretan; menghitung di kepala rawan meleset satu iterasi.",
+              "judul_poin": "Pola Berulang (Rekursif) dalam Siklus",
+              "penjelasan_singkat": "Nilai baru dihitung langsung dari nilai putaran sebelumnya sampai target putaran atau batas nilai tercapai.",
+              "contoh_penerapan": "Awal $x = 2$, aturan $x \\leftarrow 2x - 1$: putaran 1 ($3$), putaran 2 (**$5$**), putaran 3 (**$9$**).",
+              "jebakan_atau_catatan": "Jangan nekat menghitung di kepala. Buat tabel coretan cepat agar tidak meleset satu putaran.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Penelusuran Mundur & Uji Validasi (Backtracking)",
-          "ringkasan_kelompok": "Pembalikan operasi aritmetika dari output menuju input disertai verifikasi syarat percabangan.",
+          "ringkasan_kelompok": "Membalikkan operasi hitung dari output ke input, lalu memastikan hasilnya cocok dengan syarat cabang.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Invers Operasi Aritmetika Linier",
-              "penjelasan_singkat": "Balikkan arah panah dan gunakan operasi kebalikan ($+$ jadi $-$, $\\times$ jadi $\\div$) berurutan dari bawah.",
-              "contoh_penerapan": "Output $17$ dari alur $x \\rightarrow 3x \\rightarrow +2$: balikkan menjadi $(17 - 2) \\div 3 =$ **$x = 5$**.",
-              "jebakan_atau_catatan": "Urutan pembalikan wajib dari operasi terakhir ke pertama, bukan dari operasi pertama ke terakhir.",
+              "judul_poin": "Membalikkan Operasi Hitung Dasar",
+              "penjelasan_singkat": "Ikuti panah dari bawah ke atas, lalu balik setiap operasinya: $+$ jadi $-$, dan $\\times$ jadi $\\div$.",
+              "contoh_penerapan": "Output $17$ dari alur $x \\rightarrow 3x \\rightarrow +2$: balikkan dari belakang, $(17 - 2) \\div 3 =$ **$x = 5$**.",
+              "jebakan_atau_catatan": "Urutan membalik wajib dari operasi paling akhir ke paling awal, jangan sampai terbalik.",
               "visual": null
             },
             {
-              "judul_poin": "Percabangan Mundur dan Uji Syarat Wajib",
-              "penjelasan_singkat": "Jika output bisa berasal dari dua cabang, hitung kedua kandidat input lalu uji ke syarat awal.",
-              "contoh_penerapan": "Output $10$ dari cabang $x > 5$ ($x+2$) atau $x \\le 5$ ($2x$): didapat **$x = 8$** dan **$x = 5$**.",
-              "jebakan_atau_catatan": "Kandidat input yang melanggar syarat cabang asalnya saat diuji maju wajib langsung dicoret (tidak memenuhi).",
+              "judul_poin": "Cabang Mundur dan Uji Syarat Wajib",
+              "penjelasan_singkat": "Jika output bisa datang dari dua cabang, hitung kedua calon inputnya lalu uji kembali ke syarat awal.",
+              "contoh_penerapan": "Output $10$ dari cabang $x > 5$ ($x + 2$) atau $x \\le 5$ ($2x$): didapat **$x = 8$** dan **$x = 5$** (keduanya valid).",
+              "jebakan_atau_catatan": "Calon input yang melanggar syarat cabangnya saat diuji maju wajib langsung dicoret karena tidak memenuhi.",
               "visual": null
             },
             {
-              "judul_poin": "Invers Operasi Kuadrat dan Akar",
-              "penjelasan_singkat": "Operasi kuadrat ($x^2 = k$) saat ditelusuri mundur menghasilkan dua kandidat nilai, yaitu $+\\sqrt{k}$ dan $-\\sqrt{k}$.",
-              "contoh_penerapan": "Output $25$ dari proses $x \\leftarrow x^2$ menghasilkan kandidat **$x = 5$** atau **$x = -5$** sebelum uji syarat.",
-              "jebakan_atau_catatan": "Jangan mengabaikan akar negatif kecuali flowchart menetapkan syarat domain bilangan asli atau $x > 0$.",
+              "judul_poin": "Membalikkan Operasi Kuadrat",
+              "penjelasan_singkat": "Saat membalik kotak kuadrat ($x^2 = k$), selalu muncul dua kemungkinan calon input: $+\\sqrt{k}$ dan $-\\sqrt{k}$.",
+              "contoh_penerapan": "Output $25$ dari proses $x \\leftarrow x^2$ menghasilkan dua calon: **$x = 5$** atau **$x = -5$** sebelum uji syarat.",
+              "jebakan_atau_catatan": "Jangan langsung melupakan nilai negatif, kecuali soal memang membatasi $x$ harus positif atau bilangan asli.",
               "visual": null
             }
           ]
@@ -135,11 +135,11 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Penelusuran Alur Tunggal (Single-Pass) untuk Menentukan Output dari Input x",
+      "nama_variasi": "Alur Lurus (Single-Pass): Mencari Output dari Input x",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Sebuah diagram alir tunggal menerima input bilangan bulat $x$, lalu menjalankan instruksi berurutan: (1) kalikan $x$ dengan $3$, (2) kurangi hasilnya dengan $4$, (3) kuadratkan hasil tersebut, dan (4) bagi dengan $2$ untuk menghasilkan output $y$. Jika input $x = 4$, tentukan nilai output $y$.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDiagram alir tunggal (*single-pass*) tanpa percabangan bekerja layaknya komposisi fungsi berantai $y = (f_4 \\circ f_3 \\circ f_2 \\circ f_1)(x)$ yang dieksekusi dari atas ke bawah. Dengan input $x = 4$:\n* Langkah 1: $3(4) = 12$\n* Langkah 2: $12 - 4 = 8$\n* Langkah 3: $8^2 = 64$\n* Langkah 4: $\\frac{64}{2} = 32$\nJadi, nilai output $y$ adalah $32$.\n\n**2. Jalur Taktis UTBK**\nSusun ekspresi aljabar satu baris sekaligus untuk mencegah kesalahan tulis antar-kotak: $y = \\frac{(3x - 4)^2}{2}$. Substitusi langsung $x = 4$ menghasilkan $\\frac{(12 - 4)^2}{2} = \\frac{8 \\times 8}{2} = 8 \\times 4 = 32$. Coret pembagi $2$ dengan salah satu faktor $8$ tanpa perlu menghitung $64$ terlebih dahulu agar eksekusi tuntas di bawah 20 detik.",
-      "kunci_pembeda": "Eksekusi setiap instruksi secara linear dari atas ke bawah tanpa ada cabang keputusan ataupun pengulangan.",
+      "stimulus_mini": "Sebuah diagram alir lurus menerima input bilangan bulat $x$, lalu menjalankan empat perintah berurutan: (1) kalikan $x$ dengan $3$, (2) kurangi hasilnya dengan $4$, (3) kuadratkan hasil tersebut, dan (4) bagi dengan $2$ untuk menghasilkan output $y$. Jika input $x = 4$, tentukan nilai output $y$.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nKarena tidak ada cabang atau pengulangan, kamu cukup menjalankan perintahnya satu per satu dari atas ke bawah dengan $x = 4$:\n* Langkah 1: $3(4) = 12$\n* Langkah 2: $12 - 4 = 8$\n* Langkah 3: $8^2 = 64$\n* Langkah 4: $\\frac{64}{2} = 32$\nJadi, nilai output $y$ adalah **$32$**.\n\n**2. Jalur Taktis UTBK**\nBiar tidak salah salin angka antar-kotak, langsung gabungkan semua operasi jadi satu rumus: $y = \\frac{(3x - 4)^2}{2}$. Masukkan $x = 4$ sehingga didapat $\\frac{(12 - 4)^2}{2} = \\frac{8 \\times 8}{2}$. Coret $2$ dengan salah satu $8$ agar langsung ketemu $8 \\times 4 = 32$—tidak perlu repot menghitung $64$ dulu.",
+      "kunci_pembeda": "Semua kotak dikerjakan lurus dari atas ke bawah tanpa belah ketupat syarat atau panah balik.",
       "visual": {
         "tipe": "mermaid",
         "kode": "graph TD\n    A([\"Mulai: Input x\"]) --> B[\"1. Kalikan x dengan 3\"]\n    B --> C[\"2. Kurangi hasil dengan 4\"]\n    C --> D[\"3. Kuadratkan hasil\"]\n    D --> E[\"4. Bagi hasil dengan 2\"]\n    E --> F([\"Selesai: Output y\"])",
@@ -148,11 +148,11 @@
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Penelusuran Alur dengan Percabangan Bersyarat (If–Else Ganjil/Genap atau Perbandingan Nilai)",
+      "nama_variasi": "Alur Percabangan Bersyarat (If–Else Ganjil/Genap atau Perbandingan)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Diberikan bilangan bulat $x = 7$. Alur pertama menguji apakah $x$ habis dibagi $3$: jika Ya, hitung $a = 2x + 1$; jika Tidak, hitung $a = x + 5$. Alur kedua menguji apakah $a > 10$: jika Ya, output $z = a - 4$; jika Tidak, output $z = 2a$. Tentukan nilai $z$.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPercabangan bersyarat (*if–else*) membagi domain fungsi menjadi beberapa aturan terpisah (*piecewise function*) berdasarkan nilai kebenaran pada belah ketupat keputusan:\n* Uji syarat 1 pada $x = 7$: Apakah $7$ habis dibagi $3$? **Tidak** ($7 = 3(2) + 1$). Maka ikuti cabang Tidak: $a = 7 + 5 = 12$.\n* Uji syarat 2 pada $a = 12$: Apakah $12 > 10$? **Ya**. Maka ikuti cabang Ya: $z = 12 - 4 = 8$.\nJadi, nilai output akhir $z$ adalah $8$.\n\n**2. Jalur Taktis UTBK**\nJangan menghitung rumus pada cabang yang tidak terpilih! Pada setiap belah ketupat keputusan, langsung beri tanda centang mental pada panah `Ya` atau `Tidak`, lalu coret jalur lawannya agar mata tidak salah membaca operasi. Perhatikan tanda ketaksamaan ketat ($>$ vs $\\ge$) pada nilai batas.",
-      "kunci_pembeda": "Pilih hanya satu jalur operasi (Ya atau Tidak) pada setiap simbol keputusan berdasarkan kondisi nilai saat itu.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDi tiap belah ketupat keputusan, kita cuma boleh memilih satu panah (`Ya` atau `Tidak`) sesuai nilai angka saat itu:\n* **Cek syarat 1 ($x = 7$):** Apakah $7$ habis dibagi $3$? **Tidak** (karena bersisa $1$). Ikuti jalur Tidak: $a = 7 + 5 = 12$.\n* **Cek syarat 2 ($a = 12$):** Apakah $12 > 10$? **Ya**. Ikuti jalur Ya: $z = 12 - 4 = 8$.\nJadi, nilai output akhir $z$ adalah **$8$**.\n\n**2. Jalur Taktis UTBK**\nJangan pernah melirik rumus di cabang yang tidak terpilih! Begitu jawaban syaratnya ketahuan, langsung abaikan jalur lawannya agar matamu tidak tertukar rumus. Selalu waspada juga pada tanda batas ($>$ vs $\\ge$).",
+      "kunci_pembeda": "Hanya satu jalur operasi (Ya atau Tidak) yang diambil pada setiap belah ketupat syarat.",
       "visual": {
         "tipe": "mermaid",
         "kode": "graph TD\n    A([\"Mulai: Input x\"]) --> B{\"x habis dibagi 3?\"}\n    B -->|Ya| C[\"a = 2x + 1\"]\n    B -->|Tidak| D[\"a = x + 5\"]\n    C --> E{\"a > 10?\"}\n    D --> E\n    E -->|Ya| F[\"z = a - 4\"]\n    E -->|Tidak| G[\"z = 2a\"]\n    F --> H([\"Selesai: Output z\"])\n    G --> H",
@@ -161,11 +161,11 @@
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Penelusuran Alur Berulang (Looping Terbatas 3–5 Iterasi) untuk Mencari Nilai Akhir",
+      "nama_variasi": "Alur Berulang (Looping Terbatas 3–5 Putaran)",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Perhatikan diagram alir berulang di samping dengan input awal $x = 2$ dan pencacah $n = 1$. Pada setiap putaran, nilai $x$ diperbarui menjadi $2x + 1$ dan $n$ bertambah $1$ hingga syarat $n > 3$ terpenuhi. Tentukan nilai akhir $x$ saat program berhenti.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nAlur berulang (*looping*) membentuk barisan rekursif hingga kondisi berhenti tercapai. Lacak perubahan nilai $(x, n)$ secara sistematis:\n* Awal: $x = 2, n = 1$\n* Putaran 1: $x = 2(2) + 1 = 5$, $n = 1 + 1 = 2$. Cek $n > 3$ ($2 > 3$? **Tidak**, ulangi).\n* Putaran 2: $x = 2(5) + 1 = 11$, $n = 2 + 1 = 3$. Cek $n > 3$ ($3 > 3$? **Tidak**, ulangi).\n* Putaran 3: $x = 2(11) + 1 = 23$, $n = 3 + 1 = 4$. Cek $n > 3$ ($4 > 3$? **Ya**, berhenti).\nOutput akhir $x = 23$.\n\n**2. Jalur Taktis UTBK**\nBuat tabel kolom kecil `Iterasi | x | n` di kertas buram dan periksa posisi pengecekan syarat (`n > 3` vs `n >= 3`) untuk menghindari jebakan meleset satu putaran (*off-by-one error*).",
-      "kunci_pembeda": "Terdapat panah umpan balik ke kotak proses sebelumnya yang berulang hingga syarat berhenti terpenuhi.",
+      "stimulus_mini": "Perhatikan diagram alir berulang di samping dengan input awal $x = 2$ dan penghitung putaran $n = 1$. Di setiap putaran, nilai $x$ diubah menjadi $2x + 1$ dan $n$ bertambah $1$ sampai syarat $n > 3$ terpenuhi. Tentukan nilai akhir $x$ saat program berhenti.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nAgar tidak bingung di tengah jalan, catat perubahan pasangan $(x, n)$ di setiap putaran sampai syarat $n > 3$ bernilai Ya:\n* **Awal:** $x = 2,\\ n = 1$\n* **Putaran 1:** $x = 2(2) + 1 = 5$, lalu $n = 1 + 1 = 2$. Cek $2 > 3$? **Tidak**, lanjut putaran berikutnya.\n* **Putaran 2:** $x = 2(5) + 1 = 11$, lalu $n = 2 + 1 = 3$. Cek $3 > 3$? **Tidak**, lanjut lagi.\n* **Putaran 3:** $x = 2(11) + 1 = 23$, lalu $n = 3 + 1 = 4$. Cek $4 > 3$? **Ya**, berhenti.\nJadi, nilai akhir $x$ adalah **$23$**.\n\n**2. Jalur Taktis UTBK**\nBiasakan bikin tabel mini tiga kolom `Putaran | x | n` di kertas buram. Kunci anti-salah di soal *looping* cuma satu: perhatikan tanda syarat berhenti (`n > 3` vs `n >= 3`) supaya tidak kelebihan atau kekurangan satu putaran.",
+      "kunci_pembeda": "Ada panah balik ke kotak sebelumnya yang terus berulang sampai syarat berhenti terpenuhi.",
       "visual": {
         "tipe": "mermaid",
         "kode": "graph TD\n    A([\"Mulai\"]) --> B[/\"Input x = 2, n = 1\"/]\n    B --> C[\"x = 2x + 1<br/>n = n + 1\"]\n    C --> D{\"n > 3?\"}\n    D -->|\"Tidak\"| C\n    D -->|\"Ya\"| E[/\"Output x\"/]\n    E --> F([\"Selesai\"])",
@@ -174,11 +174,11 @@
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Penelusuran Mundur (Backtracking) untuk Menentukan Nilai Input dari Output yang Diketahui",
+      "nama_variasi": "Penelusuran Mundur (Backtracking): Mencari Input dari Output",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Suatu algoritma menguji bilangan bulat $x$: jika $x$ genap, hitung $y = \\frac{x}{2} + 3$; jika $x$ ganjil, hitung $y = 2x - 1$. Diketahui output akhir algoritma adalah $y = 9$. Tentukan semua nilai input bilangan bulat $x$ yang memenuhi.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPenelusuran mundur (*backtracking*) mencari invers fungsi dari output $y = 9$ pada setiap cabang keputusan, lalu memverifikasi apakah nilai $x$ yang diperoleh memenuhi syarat awal cabang tersebut:\n* **Cabang Genap:** $\\frac{x}{2} + 3 = 9 \\implies \\frac{x}{2} = 6 \\implies x = 12$. Uji syarat: Apakah $12$ bilangan genap? **Ya (Valid)**.\n* **Cabang Ganjil:** $2x - 1 = 9 \\implies 2x = 10 \\implies x = 5$. Uji syarat: Apakah $5$ bilangan ganjil? **Ya (Valid)**.\nJadi, input yang memenuhi adalah $x = 5$ atau $x = 12$.\n\n**2. Jalur Taktis UTBK**\nTerapkan prinsip **Invers + Uji Syarat**: balikkan urutan operasi ($+$ menjadi $-$, $\\times$ menjadi $\\div$), lalu wajib masukkan kembali kandidat $x$ ke kotak syarat paling atas. Jika kandidat $x$ melanggar syarat paritas (misal cabang genap menghasilkan angka ganjil atau pecahan), segera eliminasi kandidat tersebut!",
-      "kunci_pembeda": "Membalikkan operasi dari output menuju input dan wajib memverifikasi kecocokan kandidat terhadap syarat cabang awal.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nKarena kita tahu hasil akhirnya $y = 9$, kita cari calon $x$ dari kedua cabang, lalu uji kecocokannya dengan syarat awal:\n* **Cabang Genap:** $\\frac{x}{2} + 3 = 9 \\implies \\frac{x}{2} = 6 \\implies x = 12$. Cek syarat: apakah $12$ genap? **Ya (Valid)**.\n* **Cabang Ganjil:** $2x - 1 = 9 \\implies 2x = 10 \\implies x = 5$. Cek syarat: apakah $5$ ganjil? **Ya (Valid)**.\nJadi, input yang memenuhi adalah **$x = 5$ atau $x = 12$**.\n\n**2. Jalur Taktis UTBK**\nPegang rumus **Balikkan + Uji Ulang**. Setelah membalik operasi hitung, wajib masukkan lagi calon $x$ ke kotak syarat paling atas. Jika cabang genap malah menghasilkan angka ganjil atau pecahan, langsung coret kandidat itu!",
+      "kunci_pembeda": "Operasi dibalik dari output ke input, lalu setiap calon input wajib diuji ulang ke syarat cabangnya.",
       "visual": {
         "tipe": "mermaid",
         "kode": "graph TD\n    A([\"Mulai\"]) --> B[/\"Input bilangan bulat x\"/]\n    B --> C{\"x genap?\"}\n    C -->|\"Ya\"| D[\"y = (x / 2) + 3\"]\n    C -->|\"Tidak\"| E[\"y = 2x - 1\"]\n    D --> F[/\"Output y = 9\"/]\n    E --> F\n    F --> G([\"Selesai\"])",
@@ -204,7 +204,7 @@
         "E. SEMUA pilihan benar"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Uji tiap pernyataan pada diagram alir: **(1) Benar**, karena $x = 6$ (genap) masuk jalur `Tidak`, menghasilkan $y = \\frac{6}{2} + 4 = 7$ dan $z = 7 + 4 = 11$. **(2) Salah**, karena $x = -3$ (ganjil) masuk jalur `Ya`, menghasilkan $y = -3$ dan $z = -3 + 4 = 1$. **(3) Benar**, penelusuran mundur $z = 15 \\implies y = 11$ memberi $x = 4$ (gugur karena genap) pada jalur ganjil dan $x = 14$ (valid) pada jalur genap. **(4) Salah**, untuk $x = 4$ diperoleh $z = 10$ (genap). Jadi, **(1) dan (3) SAJA** benar (**B**).",
+      "bedah_cepat_markdown": "Mari uji satu per satu sesuai diagram alir:\n* **(1) Benar:** $x = 6$ (genap) masuk jalur `Tidak`, didapat $y = \\frac{6}{2} + 4 = 7$, lalu $z = 7 + 4 = 11$.\n* **(2) Salah:** $x = -3$ (ganjil) masuk jalur `Ya`, didapat $y = 2(-3) + 3 = -3$, lalu $z = -3 + 4 = 1$ (bukan $-3$).\n* **(3) Benar:** Telusuri mundur dari $z = 15 \\implies y = 11$. Di jalur ganjil, $2x + 3 = 11 \\implies x = 4$ (gugur karena genap). Di jalur genap, $\\frac{x}{2} + 4 = 11 \\implies x = 14$ (valid karena genap). Jadi, inputnya memang tunggal, $x = 14$.\n* **(4) Salah:** Cukup cari satu contoh penyangkal. Untuk $x = 4$ (genap), didapat $y = \\frac{4}{2} + 4 = 6$ dan $z = 6 + 4 = 10$ (genap).\n\nJadi, pernyataan yang benar adalah **(1) dan (3) SAJA** (**B**).",
       "visual": {
         "tipe": "mermaid",
         "kode": "graph TD\n    A([\"Mulai\"]) --> B[/\"Input bilangan bulat x\"/]\n    B --> C{\"x genap?\"}\n    C -->|\"Ya\"| D[\"z = (x / 2) + 8\"]\n    C -->|\"Tidak\"| E[\"z = 2x + 3\"]\n    D --> F[/\"Output z\"/]\n    E --> F\n    F --> G([\"Selesai\"])",
@@ -227,7 +227,7 @@
         "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "**Pernyataan (1) saja** hanya memberikan batas keputusan $k = 5$ tanpa informasi nilai input $x$, sehingga output $y$ belum dapat ditentukan (tidak cukup). **Pernyataan (2) saja** menentukan input bilangan prima terkecil yaitu $x = 2$, tetapi tanpa nilai batas $k$, jalur cabang yang dipilih belum pasti: jika $k = 3$ maka $y = 4$, sedangkan jika $k = 2$ maka $y = 8$ (tidak cukup). **Jika kedua pernyataan digabungkan**, syarat $2 < 5$ terpenuhi sehingga $y = 3(2) - 2 = 4$ (tunggal). Jadi, **dua pernyataan bersama-sama cukup** (**C**).",
+      "bedah_cepat_markdown": "* **Cek (1) saja:** Kita cuma tahu batas $k = 5$, tapi nilai input $x$ tidak diketahui. Output $y$ bisa berubah-ubah (tidak cukup).\n* **Cek (2) saja:** Bilangan prima terkecil adalah $x = 2$. Namun, tanpa tahu nilai $k$, kita tidak tahu jalur mana yang dipakai. Jika $k = 3$, didapat $y = 3(2) - 2 = 4$; jika $k = 2$, didapat $y = 2 + 6 = 8$. Karena ada lebih dari satu kemungkinan, (2) saja tidak cukup.\n* **Gabungkan (1) dan (2):** Dengan $x = 2$ dan $k = 5$, syarat $2 < 5$ pasti terpenuhi. Maka $y = 3(2) - 2 = 4$ (tunggal).\n\nJadi, **dua pernyataan bersama-sama cukup**, tetapi satu pernyataan saja tidak cukup (**C**).",
       "visual": {
         "tipe": "mermaid",
         "kode": "graph TD\n    A([Mulai]) --> B[/Input bilangan bulat positif x/]\n    B --> C{\"x < k?\"}\n    C -->|Ya| D[y = 3x - 2]\n    C -->|Tidak| E[y = x + 6]\n    D --> F[/Cetak y = ?/]\n    E --> F\n    F --> G([Selesai])",
@@ -241,10 +241,10 @@
         3
       ],
       "tipe_soal_utbk": "Isian Singkat",
-      "pertanyaan_markdown": "Sebuah diagram alir berulang menerima input awal $x = 13$ dengan pencacah putaran $i = 1$. Pada setiap putaran: jika $x$ bilangan ganjil, ubah $x$ menjadi $x + 5$; jika $x$ bilangan genap, ubah $x$ menjadi $\\frac{x}{2}$. Setelah nilai $x$ diperbarui, nilai $i$ bertambah $1$. Pengulangan berhenti tepat setelah putaran ke-$4$ selesai ($i > 4$). Berapakah nilai akhir $x$ yang keluar dari algoritma tersebut? *(Tuliskan bilangan bulat saja)*",
+      "pertanyaan_markdown": "Sebuah diagram alir berulang menerima input awal $x = 13$ dengan penghitung putaran $i = 1$. Pada setiap putaran: jika $x$ bilangan ganjil, ubah $x$ menjadi $x + 5$; jika $x$ bilangan genap, ubah $x$ menjadi $\\frac{x}{2}$. Setelah nilai $x$ diperbarui, nilai $i$ bertambah $1$. Pengulangan berhenti tepat setelah putaran ke-$4$ selesai ($i > 4$). Berapakah nilai akhir $x$ yang keluar dari algoritma tersebut? *(Tuliskan bilangan bulat saja)*",
       "opsi_jawaban": [],
       "kunci_jawaban": "7",
-      "bedah_cepat_markdown": "Lacak perubahan nilai $x$ pada setiap putaran hingga $i > 4$: **Putaran 1 ($i=1$):** $13$ ganjil $\\implies x = 13 + 5 = 18$, $i$ menjadi $2$. **Putaran 2 ($i=2$):** $18$ genap $\\implies x = \\frac{18}{2} = 9$, $i$ menjadi $3$. **Putaran 3 ($i=3$):** $9$ ganjil $\\implies x = 9 + 5 = 14$, $i$ menjadi $4$. **Putaran 4 ($i=4$):** $14$ genap $\\implies x = \\frac{14}{2} = 7$, $i$ menjadi $5$. Karena $5 > 4$, pengulangan berhenti dan menghasilkan output **7**.",
+      "bedah_cepat_markdown": "Lacak nilai $x$ di tiap putaran sampai $i > 4$:\n* **Putaran 1 ($i = 1$):** $13$ ganjil $\\implies x = 13 + 5 = 18$, lalu $i = 2$.\n* **Putaran 2 ($i = 2$):** $18$ genap $\\implies x = \\frac{18}{2} = 9$, lalu $i = 3$.\n* **Putaran 3 ($i = 3$):** $9$ ganjil $\\implies x = 9 + 5 = 14$, lalu $i = 4$.\n* **Putaran 4 ($i = 4$):** $14$ genap $\\implies x = \\frac{14}{2} = 7$, lalu $i = 5$.\n\nKarena $5 > 4$, perulangan berhenti dan output akhirnya adalah **7**.",
       "visual": {
         "tipe": "mermaid",
         "kode": "graph TD\n    A([Mulai]) --> B[\"Inisialisasi: x = 13, i = 1\"]\n    B --> C{\"i > 4?\"}\n    C -->|Ya| H[/Cetak x = ?/]\n    C -->|Tidak| D{\"x ganjil?\"}\n    D -->|Ya| E[x = x + 5]\n    D -->|Tidak| F[x = x / 2]\n    E --> G[i = i + 1]\n    F --> G\n    G --> C\n    H --> I([Selesai])",

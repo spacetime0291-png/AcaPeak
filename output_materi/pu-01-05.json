@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Data perpustakaan kota mencatat $80\\%$ pengunjung hari Senin adalah mahasiswa yang meminjam buku referensi. Jika seseorang menyatakan 'Tidak ada pelajar SMA yang mengunjungi perpustakaan pada hari Senin', apa status kepastian pernyataan tersebut?",
+      "pertanyaan_pemantik": "Data perpustakaan kota mencatat $80\\%$ pengunjung hari Senin adalah mahasiswa yang meminjam buku referensi. Jika seseorang mengklaim, 'Tidak ada pelajar SMA yang mengunjungi perpustakaan pada hari Senin,' apa status pernyataan tersebut?",
       "opsi_cepat": [
         "Pasti Salah",
         "Mungkin Salah"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Sisa $20\\%$ pengunjung bisa saja masyarakat umum, dosen, atau pelajar SMA. Karena keberadaan pelajar SMA tidak disebut maupun dilarang secara eksplisit di premis, klaim tersebut belum tentu salah secara mutlak (Mungkin Salah)."
+      "penjelasan_kilat": "Sisa $20\\%$ pengunjung belum dirinci—bisa saja masyarakat umum, dosen, atau justru pelajar SMA. Karena teks tidak melarang maupun memastikan adanya pelajar SMA, klaim ini belum tentu salah mutlak (**Mungkin Salah**)."
     },
-    "konsep_inti_markdown": "**Evaluasi Kesesuaian Pernyataan** menguji derajat kebenaran klaim terhadap premis teks atau data menggunakan **5 Skala Kepastian**.\n\n* **Pasti Benar (PB):** Selaras mutlak atau parafrasa logis fakta eksplisit.\n* **Pasti Salah (PS):** Bertentangan langsung dengan fakta eksplisit.\n* **Mungkin Benar (MB) / Mungkin Salah (MS):** Masih dalam cakupan topik, tetapi tidak cukup bukti memastikan.\n* **Tidak Relevan (TR):** Membahas variabel di luar ruang lingkup premis.",
+    "konsep_inti_markdown": "**Evaluasi Kesesuaian Pernyataan** menguji seberapa kuat suatu klaim didukung oleh teks atau data menggunakan **5 Skala Kepastian**.\n\n* **Pasti Benar (PB):** Maknanya selaras mutlak atau merupakan ungkapan ulang yang persis sama dengan fakta di teks.\n* **Pasti Salah (PS):** Isinya menabrak atau bertentangan langsung dengan fakta yang tertulis jelas.\n* **Mungkin Benar (MB) / Mungkin Salah (MS):** Topiknya masih nyambung, tetapi buktinya di teks belum cukup untuk memastikan.\n* **Tidak Relevan (TR):** Membahas hal atau variabel baru yang sama sekali tidak disinggung di teks.",
     "radar_jebakan_utbk": [
-      "Menganggap pernyataan yang tidak disebutkan di teks otomatis bernilai Pasti Salah, padahal seharusnya Mungkin Salah atau Tidak Relevan.",
-      "Tertukar antara Mungkin Benar/Salah (topik masih nyambung dengan celah premis) dengan Tidak Relevan (membawa variabel atau objek asing)."
+      "Menganggap informasi yang tidak disebut di teks otomatis bernilai Pasti Salah, padahal seharusnya Mungkin Salah atau Tidak Relevan.",
+      "Tertukar antara Mungkin Benar/Salah (masih membahas celah informasi dari topik teks) dengan Tidak Relevan (membawa objek atau variabel asing)."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Sinyal dan Pola Evaluasi 5 Skala Kepastian",
-      "subjudul_ringkas": "Panduan taksonomi penanda teks dan data untuk menentukan tingkat kepastian pernyataan secara akurat.",
+      "judul_blok": "Katalog Sinyal dan Pola 5 Skala Kepastian",
+      "subjudul_ringkas": "Panduan cepat membaca petunjuk teks dan data untuk menentukan tingkat kepastian pernyataan.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
@@ -36,112 +36,112 @@
       "kelompok": [
         {
           "nama_kelompok": "1. Penanda Kepastian Mutlak (Pasti Benar & Pasti Salah)",
-          "ringkasan_kelompok": "Menguji kesesuaian atau pertentangan langsung pernyataan terhadap fakta eksplisit premis.",
+          "ringkasan_kelompok": "Menguji kesesuaian atau pertentangan langsung pernyataan terhadap fakta yang tertulis jelas di teks.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Parafrasa Sinonim dan Kontraposisi Logis (Pasti Benar)",
-              "penjelasan_singkat": "Pernyataan mengubah diksi premis dengan padanan makna setara atau bentuk ekuivalensi kontraposisi $P \\rightarrow Q \\equiv \\neg Q \\rightarrow \\neg P$.",
+              "judul_poin": "Ungkapan Makna Setara & Kebalikan Syarat (Pasti Benar)",
+              "penjelasan_singkat": "Pernyataan hanya mengganti kata dengan sinonim yang sama persis, atau membalik syarat sekaligus menegasikannya ($P \\rightarrow Q$ setara dengan $\\neg Q \\rightarrow \\neg P$).",
               "contoh_penerapan": "Premis: Jika curah hujan tinggi, debit sungai naik. Pernyataan PB: **Debit sungai tidak naik menandakan curah hujan tidak tinggi**.",
-              "jebakan_atau_catatan": "Jangan terkecoh invers ($\\neg P \\rightarrow \\neg Q$) atau konvers ($Q \\rightarrow P$); keduanya bukan ekuivalensi mutlak sehingga bernilai Mungkin Benar.",
+              "jebakan_atau_catatan": "Hati-hati dengan bentuk $\\neg P \\rightarrow \\neg Q$ atau $Q \\rightarrow P$. Keduanya tidak selalu sama dengan syarat awal, jadi nilainya hanya Mungkin Benar.",
               "visual": null
             },
             {
-              "judul_poin": "Penyempitan Kuantor Universal ke Partikular (Pasti Benar)",
-              "penjelasan_singkat": "Premis berkuantor universal (*semua*, *seluruh*, *setiap*) secara otomatis menjamin kebenaran klaim berkuantor partikular (*sebagian*, *beberapa*).",
+              "judul_poin": "Menurunkan Kata 'Semua' ke 'Sebagian' (Pasti Benar)",
+              "penjelasan_singkat": "Jika teks menyebut **semua** atau **seluruh** anggota punya sifat tertentu, klaim tentang **sebagian** anggota otomatis ikut benar.",
               "contoh_penerapan": "Premis: Seluruh peserta lolos seleksi wajib daftar ulang. Pernyataan PB: **Sebagian peserta yang lolos seleksi wajib melakukan daftar ulang**.",
-              "jebakan_atau_catatan": "Di logika formal UTBK, kata *sebagian* bermakna minimal satu anggota dan tidak menafikan keseluruhan anggota himpunan.",
+              "jebakan_atau_catatan": "Dalam logika UTBK, kata *sebagian* berarti minimal satu anggota dan tidak membantah pernyataan *semua*.",
               "visual": null
             },
             {
-              "judul_poin": "Kontradiksi Langsung dan Pembalikan Kausalitas (Pasti Salah)",
-              "penjelasan_singkat": "Pernyataan menegasi angka, syarat, atau arah hubungan sebab-akibat eksplisit ($A \\rightarrow B$ dibalik menjadi $B \\rightarrow A$) secara bertentangan.",
+              "judul_poin": "Menabrak Fakta atau Menukar Sebab-Akibat (Pasti Salah)",
+              "penjelasan_singkat": "Pernyataan memelintir angka, menyangkal syarat, atau menukar posisi sebab dan akibat yang tertulis jelas ($A \\rightarrow B$ dibalik menjadi $B \\rightarrow A$).",
               "contoh_penerapan": "Premis: Defisit kalori menurunkan massa lemak tubuh. Pernyataan PS: **Penurunan massa lemak tubuh merupakan penyebab utama terjadinya defisit kalori**.",
-              "jebakan_atau_catatan": "Periksa arah panah kausalitas; klaim yang menukar posisi sebab dan akibat dari fakta eksplisit pasti bernilai Salah.",
+              "jebakan_atau_catatan": "Cek arah panah sebab-akibatnya. Jika posisi sebab dan akibat ditukar dari fakta eksplisit, pernyataan itu pasti salah.",
               "visual": null
             },
             {
-              "judul_poin": "Generalisasi Mutlak atas Premis Terbatas (Pasti Salah)",
-              "penjelasan_singkat": "Pernyataan memperluas premis berkuantor terbatas (*sebagian*, *hanya*, *umumnya*) menjadi klaim mutlak tanpa pengecualian (*semua*, *selalu*, *pasti*).",
+              "judul_poin": "Memaksakan Kata 'Semua' dari Fakta 'Sebagian' (Pasti Salah)",
+              "penjelasan_singkat": "Pernyataan melebih-lebihkan fakta terbatas (*sebagian*, *umumnya*) menjadi klaim mutlak tanpa pengecualian (*semua*, *selalu*, *pasti*).",
               "contoh_penerapan": "Premis: Sebagian besar karyawan bekerja dari rumah pada Jumat. Pernyataan PS: **Seluruh karyawan tanpa terkecuali bekerja dari rumah setiap Jumat**.",
-              "jebakan_atau_catatan": "Sinyal *sebagian besar* menyisakan minoritas pengecualian; klaim *seluruh* langsung bertentangan dengan batas kuantitas premis tersebut.",
+              "jebakan_atau_catatan": "Kata *sebagian besar* artinya masih ada sisa yang tidak melakukannya. Jadi, klaim *seluruh* langsung bertentangan dengan batas jumlah di teks.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "2. Pembeda Celah Informasi (Mungkin Benar vs. Mungkin Salah)",
-          "ringkasan_kelompok": "Menilai klaim dalam cakupan topik yang belum memiliki bukti konklusif pada premis.",
+          "ringkasan_kelompok": "Menilai pernyataan yang masih satu topik, tetapi belum punya bukti pasti di dalam teks.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Ekstrapolasi Konsekuensi Searah Premis (Mungkin Benar)",
-              "penjelasan_singkat": "Pernyataan melanjutkan dampak logis atau korelasi positif dari fakta teks, tetapi teks tidak mencantumkan bukti kejadiannya.",
+              "judul_poin": "Tebakan Dampak Lanjutan yang Searah (Mungkin Benar)",
+              "penjelasan_singkat": "Pernyataan menebak dampak lanjutan yang masuk akal dan searah dengan fakta teks, meski kejadiannya belum diceritakan.",
               "contoh_penerapan": "Premis: Harga pupuk naik $30\\%$ musim ini. Pernyataan MB: **Biaya produksi petani padi berpotensi meningkat pada masa panen mendatang**.",
-              "jebakan_atau_catatan": "Klaim terasa sangat masuk akal, tetapi tetap Mungkin Benar selama belum ada kalimat eksplisit yang mengonfirmasi dampak tersebut.",
+              "jebakan_atau_catatan": "Walau terdengar sangat logis, statusnya tetap Mungkin Benar selama teks belum mengonfirmasi dampak tersebut secara langsung.",
               "visual": null
             },
             {
-              "judul_poin": "Peluang Pengecualian atau Kondisi Alternatif (Mungkin Salah)",
-              "penjelasan_singkat": "Pernyataan meragukan kecenderungan umum premis atau mengajukan faktor penghambat yang tidak dibantah maupun dibuktikan oleh teks.",
+              "judul_poin": "Dugaan Pengecualian di Luar Kelompok Uji (Mungkin Salah)",
+              "penjelasan_singkat": "Pernyataan meragukan hasil umum teks atau menyebut pengecualian pada kelompok lain yang belum dibahas oleh teks.",
               "contoh_penerapan": "Premis: Obat X efektif meredakan demam pada orang dewasa. Pernyataan MS: **Obat X tidak memberikan efek serupa pada pasien lansia**.",
-              "jebakan_atau_catatan": "Jangan pilih Pasti Salah karena premis tidak menutup kemungkinan pengecualian pada subkelompok lain yang belum diuji.",
+              "jebakan_atau_catatan": "Jangan pilih Pasti Salah karena teks hanya menguji orang dewasa dan tidak menutup kemungkinan hasil berbeda pada lansia.",
               "visual": null
             },
             {
-              "judul_poin": "Asumsi Syarat Tambahan di Luar Teks (MB/MS)",
-              "penjelasan_singkat": "Pernyataan menyisipkan mekanisme perantara spesifik untuk menjelaskan fakta premis tanpa dukungan data eksplisit pada bacaan.",
+              "judul_poin": "Menambah Alasan atau Penyebab yang Tidak Ditulis (MB/MS)",
+              "penjelasan_singkat": "Pernyataan menyisipkan alasan spesifik di balik suatu kejadian, padahal teks tidak pernah menyebutkan penyebabnya.",
               "contoh_penerapan": "Premis: Penjualan buku cetak turun selama dua tahun. Pernyataan MB: **Penurunan tersebut dipicu oleh beralihnya pembaca ke buku digital**.",
-              "jebakan_atau_catatan": "Jika mekanisme masih dalam domain topik namun tidak disebutkan di teks, nilainya Mungkin Benar/Salah, bukan Tidak Relevan.",
+              "jebakan_atau_catatan": "Selama alasannya masih nyambung dengan topik buku, statusnya Mungkin Benar/Salah, bukan Tidak Relevan.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "3. Detektor Pergeseran Lingkup (Tidak Relevan)",
-          "ringkasan_kelompok": "Mengidentifikasi pernyataan yang membawa variabel asing di luar batas pembahasan wacana.",
+          "ringkasan_kelompok": "Menangkap pernyataan yang membawa topik atau variabel asing di luar batas pembahasan teks.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pengenalan Variabel atau Objek Asing (Tidak Relevan)",
-              "penjelasan_singkat": "Pernyataan membandingkan atau membahas entitas, lokasi, maupun parameter baru yang sama sekali tidak disinggung dalam premis.",
+              "judul_poin": "Membahas Topik atau Objek Baru yang Asing (Tidak Relevan)",
+              "penjelasan_singkat": "Pernyataan membandingkan atau membahas benda, tempat, maupun ukuran baru yang sama sekali tidak disinggung di teks.",
               "contoh_penerapan": "Premis: Konsumsi teh hijau meningkatkan fokus kerja. Pernyataan TR: **Kopi arabika memiliki kandungan kafein lebih tinggi daripada teh hitam**.",
-              "jebakan_atau_catatan": "Bedakan dengan MB/MS: jika objek dan variabelnya terputus total dari topik premis, pilih Tidak Relevan.",
+              "jebakan_atau_catatan": "Bedakan dengan MB/MS: jika objek dan topiknya terputus total dari pembahasan utama teks, pilih Tidak Relevan.",
               "visual": null
             },
             {
-              "judul_poin": "Penilaian Normatif atas Fakta Empiris (Tidak Relevan)",
-              "penjelasan_singkat": "Pernyataan memuat opini nilai atau anjuran (*sebaiknya*, *harus*, *lebih bermoral*) terhadap teks yang murni memaparkan fakta deskriptif.",
+              "judul_poin": "Menyelipkan Opini atau Saran pada Teks Fakta (Tidak Relevan)",
+              "penjelasan_singkat": "Pernyataan berisi saran, penilaian moral, atau anjuran (*sebaiknya*, *harus*) terhadap teks yang murni memaparkan fakta.",
               "contoh_penerapan": "Premis: Pembangunan jalan tol memangkas waktu tempuh antarprovinsi. Pernyataan TR: **Pemerintah sebaiknya memprioritaskan subsidi transportasi umum dibandingkan jalan tol**.",
-              "jebakan_atau_catatan": "Sinyal kata *sebaiknya* atau *seharusnya* pada wacana non-persuasif menandakan pergeseran dari ranah fakta ke opini luar teks.",
+              "jebakan_atau_catatan": "Munculnya kata *sebaiknya* atau *seharusnya* menandakan pergeseran dari fakta objektif ke opini di luar teks.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "4. Evaluasi Tingkat Kepastian pada Tabel dan Grafik",
-          "ringkasan_kelompok": "Menentukan skala kepastian klaim kuantitatif berdasarkan batas data tabel atau grafik eksperimen.",
+          "ringkasan_kelompok": "Menentukan skala kepastian klaim angka berdasarkan batas data yang tercatat pada tabel atau grafik.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Verifikasi Selisih dan Tren Monoton Eksplisit (PB/PS)",
-              "penjelasan_singkat": "Klaim tentang nilai selisih, rasio, atau kenaikan konsisten antarbaris tabel dapat dipastikan langsung melalui perhitungan data tercatat.",
+              "judul_poin": "Hitung Selisih dan Pola Naik-Turun Langsung di Tabel (PB/PS)",
+              "penjelasan_singkat": "Klaim soal selisih, perbandingan, atau pola kenaikan antarbaris tabel bisa dipastikan langsung lewat hitungan angka yang tercatat.",
               "contoh_penerapan": "Tabel mencatat suhu naik dari $25^{\\circ}\\text{C}$ ke $35^{\\circ}\\text{C}$ setiap jam. Pernyataan PB: **Kenaikan suhu konstan sebesar $10^{\\circ}\\text{C}$ per jam**.",
-              "jebakan_atau_catatan": "Periksa satuan sumbu dan loncatan interval waktu; salah baca satuan mengubah status pernyataan dari Pasti Benar menjadi Pasti Salah.",
+              "jebakan_atau_catatan": "Cek teliti satuan sumbu dan jarak waktunya. Salah baca satuan bisa mengubah status dari Pasti Benar menjadi Pasti Salah.",
               "visual": null
             },
             {
-              "judul_poin": "Proyeksi di Luar Rentang Pengukuran Data (MB/MS)",
-              "penjelasan_singkat": "Klaim yang menebak nilai di luar batas waktu atau dosis tertinggi pada tabel hanya bersifat prediktif (*Mungkin Benar/Salah*).",
+              "judul_poin": "Menebak Angka di Luar Batas Waktu/Uji Tabel (MB/MS)",
+              "penjelasan_singkat": "Klaim yang meramal angka di luar batas waktu atau dosis tertinggi pada tabel hanyalah prediksi (**Mungkin Benar/Salah**).",
               "contoh_penerapan": "Grafik mengukur pertumbuhan tanaman hingga hari ke-$14$. Pernyataan MB: **Tinggi tanaman akan terus bertambah secara linear pada hari ke-$21$**.",
-              "jebakan_atau_catatan": "Tren naik hingga titik akhir grafik tidak menjamin tren berlanjut; titik jenuh atau penurunan tetap mungkin terjadi setelahnya.",
+              "jebakan_atau_catatan": "Grafik yang terus naik sampai hari ke-$14$ tidak menjamin akan naik terus. Setelahnya bisa saja melambat atau berhenti.",
               "visual": null
             },
             {
-              "judul_poin": "Klaim Mekanisme Biologis atau Kimia di Balik Tabel (MB/TR)",
-              "penjelasan_singkat": "Tabel eksperimen hanya merekam variabel terukur; penjelasan penyebab mikroskopis yang tidak ditulis pada keterangan grafik bernilai belum pasti.",
+              "judul_poin": "Menebak Proses Ilmiah Tersembunyi di Balik Angka (MB/TR)",
+              "penjelasan_singkat": "Tabel hanya mencatat hasil ukur luar. Penjelasan proses kimia atau biologis yang tidak ditulis di keterangan tabel bernilai belum pasti.",
               "contoh_penerapan": "Tabel menunjukkan laju reaksi meningkat pada $\\text{pH } 7$. Pernyataan MB: **Struktur enzim bekerja paling stabil pada kondisi netral tersebut**.",
-              "jebakan_atau_catatan": "Jika klaim menyebut variabel yang tidak ada di judul, sumbu, maupun catatan tabel, klasifikasikan sebagai Tidak Relevan.",
+              "jebakan_atau_catatan": "Jika klaim menyebut istilah asing yang tidak ada di judul, sumbu, maupun catatan tabel, masukkan ke Tidak Relevan.",
               "visual": null
             }
           ]
@@ -152,38 +152,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Identifikasi Pernyataan Pasti Benar dan Pasti Salah Berdasarkan Fakta Eksplisit Teks/Data",
+      "nama_variasi": "Identifikasi Pernyataan Pasti Benar dan Pasti Salah dari Fakta Eksplisit",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Berdasarkan laporan Dinas Lingkungan Hidup, seluruh industri tekstil di Kecamatan Sukamaju wajib mengolah limbah cair sebelum dibuang ke sungai. Pada inspeksi bulan lalu, ditemukan tiga dari dua belas pabrik tekstil di kecamatan tersebut membuang limbah tanpa pengolahan.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Seluruh industri tekstil Sukamaju wajib mengolah limbah; 3 dari 12 pabrik melanggar aturan) $\\rightarrow$ Asumsi Jembatan (Kesesuaian logis atau kontradiksi langsung terhadap data eksplisit menentukan kepastian mutlak) $\\rightarrow$ Evaluasi Pernyataan (9 pabrik lainnya mematuhi kewajiban adalah **Pasti Benar**; semua pabrik mematuhi aturan adalah **Pasti Salah**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| 3 dari 12 pabrik membuang limbah mentah | Semua pabrik tekstil di Sukamaju melanggar aturan |\n| Kewajiban berlaku bagi industri tekstil Sukamaju | Industri makanan di Sukamaju juga melanggar aturan |\n\n**Uji Kepastian:** Untuk status **Pasti Benar**, cari parafrasa sinonim atau operasi hitung sederhana ($12 - 3 = 9$ pabrik patuh) tanpa menambah informasi baru. Untuk status **Pasti Salah**, temukan benturan langsung dengan angka atau kuantor premis (klaim *semua patuh* menabrak fakta *3 melanggar*).",
-      "kunci_pembeda": "Status Pasti Benar dan Pasti Salah hanya sah apabila pernyataan dapat diverifikasi atau dibantah secara mutlak oleh angka dan fakta tersurat dalam premis.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Utama (Semua industri tekstil Sukamaju wajib olah limbah; 3 dari 12 pabrik melanggar) $\\rightarrow$ Logika Penghubung (Cocokkan atau benturkan langsung klaim dengan angka dan aturan di teks) $\\rightarrow$ Kesimpulan (9 pabrik lainnya patuh aturan adalah **Pasti Benar**; semua pabrik patuh aturan adalah **Pasti Salah**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| 3 dari 12 pabrik membuang limbah mentah | Semua pabrik tekstil di Sukamaju melanggar aturan |\n| Kewajiban berlaku bagi industri tekstil Sukamaju | Industri makanan di Sukamaju juga melanggar aturan |\n\n**Uji Kepastian:** Untuk mencari **Pasti Benar**, pakai ungkapan makna setara atau hitung sederhana ($12 - 3 = 9$ pabrik patuh) tanpa menambah info baru. Untuk mencari **Pasti Salah**, temukan klaim yang menabrak angka atau kata jumlah di teks (klaim *semua patuh* langsung menabrak fakta *3 melanggar*).",
+      "kunci_pembeda": "Status Pasti Benar dan Pasti Salah hanya sah jika pernyataan bisa dibuktikan atau dibantah secara mutlak oleh angka dan fakta yang tertulis di teks.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Membedakan Pernyataan Mungkin Benar vs Mungkin Salah Berdasarkan Celah Informasi Premis",
+      "nama_variasi": "Membedakan Mungkin Benar vs Mungkin Salah pada Celah Informasi",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Hasil survei Kementerian Perhubungan menunjukkan bahwa $65\\%$ penumpang kereta jarak jauh memilih membeli tiket melalui aplikasi resmi karena tersedia fitur pemilihan kursi. Sisanya membeli tiket melalui loket stasiun atau agen perjalanan mitra.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik ($65\\%$ penumpang memilih aplikasi demi fitur pilih kursi; $35\\%$ lewat loket atau agen) $\\rightarrow$ Asumsi Jembatan (Celah informasi pada kelompok $35\\%$ membuka peluang kemungkinan tanpa kepastian mutlak) $\\rightarrow$ Evaluasi Pernyataan (Sebagian pembeli di loket tidak mementingkan pemilihan kursi adalah **Mungkin Benar**; tidak ada pembeli di agen yang memilih kursi adalah **Mungkin Salah**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| $65\\%$ pembeli memakai aplikasi resmi | Seluruh pembeli aplikasi hanya mengincar fitur kursi |\n| $35\\%$ membeli lewat loket atau agen | Pembeli di loket pasti tidak bisa memilih kursi |\n\n**Uji Kepastian:** Kedua skala ini muncul ketika pernyataan masih membahas objek dan variabel premis, tetapi berada di area abu-abu yang belum dirinci. Gunakan **Mungkin Benar** untuk klaim yang sejalan dengan kecenderungan pola data, dan **Mungkin Salah** untuk klaim ekstrem atau pengecualian yang belum terbukti keliru secara eksplisit.",
-      "kunci_pembeda": "Perbedaan Mungkin Benar dan Mungkin Salah terletak pada arah kecenderungan klaim di celah informasi premis yang sama-sama tidak memiliki bukti penyangkal mutlak.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Utama ($65\\%$ penumpang pilih aplikasi demi fitur pilih kursi; $35\\%$ sisanya lewat loket atau agen) $\\rightarrow$ Logika Penghubung (Detail alasan kelompok $35\\%$ belum diceritakan, sehingga membuka ruang kemungkinan) $\\rightarrow$ Kesimpulan (Sebagian pembeli di loket tidak mementingkan fitur pilih kursi adalah **Mungkin Benar**; tidak ada pembeli di agen yang bisa memilih kursi adalah **Mungkin Salah**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| $65\\%$ pembeli memakai aplikasi resmi | Seluruh pembeli aplikasi hanya mengincar fitur kursi |\n| $35\\%$ membeli lewat loket atau agen | Pembeli di loket pasti tidak bisa memilih kursi |\n\n**Uji Kepastian:** Kedua skala ini muncul saat pernyataan masih membahas topik yang sama, tetapi masuk ke area abu-abu yang belum dirinci teks. Pilih **Mungkin Benar** untuk tebakan yang searah dengan pola data, dan pilih **Mungkin Salah** untuk klaim ekstrem atau pengecualian yang belum terbukti salah.",
+      "kunci_pembeda": "Beda Mungkin Benar dan Mungkin Salah terletak pada arah tebakan di area abu-abu teks yang sama-sama tidak punya bukti penyangkal mutlak.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Identifikasi Pernyataan Tidak Relevan / Informasi Tidak Cukup di Luar Ruang Lingkup Wacana",
+      "nama_variasi": "Menangkap Pernyataan Tidak Relevan di Luar Ruang Lingkup Teks",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Penelitian agronomi mencatat bahwa penggunaan pupuk organik cair pada tanaman tomat hidroponik meningkatkan bobot rata-rata buah sebesar $25\\%$ dibandingkan pupuk anorganik standar dalam masa tanam 60 hari.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pupuk organik cair menaikkan bobot buah tomat hidroponik $25\\%$ dalam 60 hari) $\\rightarrow$ Asumsi Jembatan (Keterputusan variabel atau objek membuat kebenaran pernyataan mustahil dinilai dari premis) $\\rightarrow$ Evaluasi Pernyataan (Harga jual tomat organik lebih mahal di pasar swalayan berstatus **Tidak Relevan**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Bobot buah tomat hidroponik naik $25\\%$ | Rasa tomat organik pasti jauh lebih manis |\n| Pengamatan dilakukan selama 60 hari | Tanaman cabai juga mengalami kenaikan bobot $25\\%$ |\n\n**Uji Kepastian:** Deteksi status **Tidak Relevan** (sering disebut *Informasi Tidak Cukup*) dengan memeriksa kemunculan variabel baru (misalnya harga, rasa, biaya produksi) atau perpindahan objek/spesies baru (misalnya tanaman cabai, lahan sawah konvensional). Jika premis sama sekali tidak menyediakan pijakan data untuk menguji variabel tersebut, jangan pilih *Mungkin Salah*, melainkan tetapkan sebagai **Tidak Relevan**.",
-      "kunci_pembeda": "Pernyataan berstatus Tidak Relevan apabila memperkenalkan variabel atau entitas baru yang sama sekali terputus dari informasi premis.",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Utama (Pupuk organik cair menaikkan bobot buah tomat hidroponik $25\\%$ dalam 60 hari) $\\rightarrow$ Logika Penghubung (Muncul topik atau objek baru yang putus total dari pembahasan membuat pernyataan mustahil dinilai) $\\rightarrow$ Kesimpulan (Harga jual tomat organik lebih mahal di pasar swalayan berstatus **Tidak Relevan**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Bobot buah tomat hidroponik naik $25\\%$ | Rasa tomat organik pasti jauh lebih manis |\n| Pengamatan dilakukan selama 60 hari | Tanaman cabai juga mengalami kenaikan bobot $25\\%$ |\n\n**Uji Kepastian:** Tangkap status **Tidak Relevan** (sering disebut *Informasi Tidak Cukup*) dengan mengecek munculnya variabel baru (misalnya harga, rasa, biaya) atau objek baru (misalnya tanaman cabai, lahan sawah biasa). Jika teks sama sekali tidak memberi pijakan data untuk mengujinya, jangan pilih *Mungkin Salah*, langsung tetapkan sebagai **Tidak Relevan**.",
+      "kunci_pembeda": "Pernyataan berstatus Tidak Relevan jika membawa topik, variabel, atau objek baru yang sama sekali terputus dari isi teks.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Evaluasi Tingkat Kepastian Pernyataan Berbasis Tabel/Grafik Eksperimen Sederhana",
+      "nama_variasi": "Evaluasi Kepastian Pernyataan Berbasis Tabel dan Grafik Sederhana",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Tabel uji ketahanan baterai ponsel mencatat kapasitas tersisa setelah 500 siklus pengisian: Tipe X tersisa $88\\%$ (suhu $25^{\\circ}\\text{C}$) dan $74\\%$ (suhu $40^{\\circ}\\text{C}$); Tipe Y tersisa $82\\%$ (suhu $25^{\\circ}\\text{C}$) dan $79\\%$ (suhu $40^{\\circ}\\text{C}$).",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pada $25^{\\circ}\\text{C}$, Tipe X unggul $88\\% > 82\\%$; pada $40^{\\circ}\\text{C}$, Tipe Y lebih stabil $79\\% > 74\\%$) $\\rightarrow$ Asumsi Jembatan (Perbandingan baris dan kolom tabel membatasi validitas klaim pada kondisi eksperimen) $\\rightarrow$ Evaluasi Pernyataan (Tipe Y lebih tahan suhu panas daripada Tipe X adalah **Pasti Benar**; pada $50^{\\circ}\\text{C}$ Tipe Y tersisa $75\\%$ adalah **Mungkin Benar**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Penurunan kapasitas Tipe X lebih besar saat panas | Tipe X pasti rusak total pada suhu $45^{\\circ}\\text{C}$ |\n| Pengujian hanya dilakukan hingga 500 siklus | Harga baterai Tipe Y lebih mahal dari Tipe X |\n\n**Uji Kepastian:** Kunci evaluasi data tabel adalah mencocokkan dua sumbu (baris entitas dan kolom kondisi). Klaim perbandingan langsung antarsel tabel menghasilkan **Pasti Benar** atau **Pasti Salah**, ekstrapolasi di luar rentang suhu uji menghasilkan **Mungkin Benar/Salah**, sedangkan variabel di luar tabel seperti harga bernilai **Tidak Relevan**.",
-      "kunci_pembeda": "Evaluasi berbasis tabel menuntut pencocokan presisi antara sel data tersurat (pasti), ekstrapolasi tren (mungkin), dan variabel di luar kolom (tidak relevan).",
+      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Utama (Pada $25^{\\circ}\\text{C}$, Tipe X unggul $88\\% > 82\\%$; pada $40^{\\circ}\\text{C}$, sisa kapasitas Tipe Y lebih tinggi $79\\% > 74\\%$) $\\rightarrow$ Logika Penghubung (Batas baris dan kolom tabel membatasi kebenaran klaim hanya pada kondisi yang diuji) $\\rightarrow$ Kesimpulan (Pada suhu $40^{\\circ}\\text{C}$, sisa kapasitas Tipe Y lebih besar daripada Tipe X adalah **Pasti Benar**; pada suhu $50^{\\circ}\\text{C}$ Tipe Y tersisa $75\\%$ adalah **Mungkin Benar**).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Penurunan kapasitas Tipe X lebih besar saat panas | Tipe X pasti rusak total pada suhu $45^{\\circ}\\text{C}$ |\n| Pengujian hanya dilakukan hingga 500 siklus | Harga baterai Tipe Y lebih mahal dari Tipe X |\n\n**Uji Kepastian:** Kunci membaca tabel adalah mencocokkan dua sumbu (baris produk dan kolom suhu). Perbandingan langsung antarsel tabel menghasilkan **Pasti Benar** atau **Pasti Salah**, tebakan di luar rentang suhu uji menghasilkan **Mungkin Benar/Salah**, sedangkan topik di luar tabel seperti harga bernilai **Tidak Relevan**.",
+      "kunci_pembeda": "Evaluasi berbasis tabel menuntut ketelitian mencocokkan sel data tersurat (pasti), tebakan di luar rentang uji (mungkin), dan topik di luar kolom (tidak relevan).",
       "visual": {
         "tipe": "svg",
         "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='200' y='18' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Kapasitas Tersisa Baterai (%) Setelah 500 Siklus</text><rect x='44' y='20' width='10' height='10' fill='#38BDF8' rx='2'/><text x='58' y='28' fill='#94A3B8' font-family='sans-serif' font-size='10'>Baterai Tipe X (%)</text><rect x='174' y='20' width='10' height='10' fill='#FBBF24' rx='2'/><text x='188' y='28' fill='#94A3B8' font-family='sans-serif' font-size='10'>Baterai Tipe Y (%)</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='6' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 1 L 10 5 L 0 9 z' fill='#94A3B8'/></marker></defs><text x='38' y='208.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>0</text><line x1='44' y1='165.0' x2='376' y2='165.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='169.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>25</text><line x1='44' y1='126.0' x2='376' y2='126.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='130.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>50</text><line x1='44' y1='87.0' x2='376' y2='87.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='91.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>75</text><line x1='44' y1='48.0' x2='376' y2='48.0' stroke='#1E293B' stroke-dasharray='3 3' stroke-width='1'/><text x='38' y='52.0' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='end'>100</text><line x1='44' y1='204' x2='376' y2='204' stroke='#94A3B8' stroke-width='1.5'/><line x1='44' y1='204' x2='44' y2='48' stroke='#94A3B8' stroke-width='1.5'/><text x='127.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Suhu 25°C</text><rect x='77.2' y='66.7' width='47.8' height='137.3' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='101.1' y='62.7' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>88</text><rect x='127.0' y='76.1' width='47.8' height='127.9' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='150.9' y='72.1' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>82</text><text x='293.0' y='219' fill='#E2E8F0' font-family='sans-serif' font-size='11' text-anchor='middle'>Suhu 40°C</text><rect x='243.2' y='88.6' width='47.8' height='115.4' fill='#38BDF8' rx='3' fill-opacity='0.9'/><text x='267.1' y='84.6' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>74</text><rect x='293.0' y='80.8' width='47.8' height='123.2' fill='#FBBF24' rx='3' fill-opacity='0.9'/><text x='316.9' y='76.8' fill='#E2E8F0' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>79</text></svg>",
@@ -208,7 +208,7 @@
         "E. Tidak Relevan"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Premis hanya menjelaskan bahwa 52 ekor dilepasliarkan karena mandiri mencari pakan, sedangkan alasan mengapa 28 ekor sisanya masih di karantina tidak dirinci secara eksklusif. Karena pernyataan masih membahas kelompok 28 orangutan dalam wacana dan membuka alasan tambahan yang tidak bertentangan dengan fakta eksplisit, status kepastiannya adalah **Mungkin Benar** (**Opsi B**). **Opsi A** salah karena tidak ada bukti tersurat, sedangkan **Opsi C** keliru karena premis tidak menyatakan semua yang di karantina gagal mencari pakan.",
+      "bedah_cepat_markdown": "Mari kita bedah posisi tiap kelompok di teks. Teks hanya menyebut 52 orangutan dilepasliarkan karena sudah mandiri mencari pakan, sedangkan alasan 28 orangutan lainnya masih di karantina tidak dirinci satu per satu. Karena pernyataan masih membahas kelompok 28 orangutan tersebut dan membuka alasan tambahan (faktor kesehatan) yang tidak bertentangan dengan isi teks, statusnya adalah **Mungkin Benar** (**Opsi B**). **Opsi A** salah karena tidak ada bukti tertulis soal kesehatan, sedangkan **Opsi C** keliru karena teks tidak pernah bilang semua yang di karantina gagal mencari pakan.",
       "visual": {
         "tipe": "svg",
         "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='190' y='20' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Status Rehabilitasi Orangutan (Total: 80 Ekor)</text><path d='M 133 124 L 133.00 24.00 A 100 100 0 1 1 52.10 182.78 Z' fill='#34D399' stroke='#0B1120' stroke-width='1.5'/><rect x='243' y='56' width='10' height='10' fill='#34D399' rx='2'/><text x='259' y='64' fill='#E2E8F0' font-family='sans-serif' font-size='11'>Dilepasliarkan (Mampu Cari Pakan Mandiri)</text><text x='259' y='76' fill='#94A3B8' font-family='sans-serif' font-size='10'>65% (234°)</text><path d='M 133 124 L 52.10 182.78 A 100 100 0 0 1 133.00 24.00 Z' fill='#38BDF8' stroke='#0B1120' stroke-width='1.5'/><rect x='243' y='80' width='10' height='10' fill='#38BDF8' rx='2'/><text x='259' y='88' fill='#E2E8F0' font-family='sans-serif' font-size='11'>Pelatihan Lanjutan di Karantina</text><text x='259' y='100' fill='#94A3B8' font-family='sans-serif' font-size='10'>35% (126°)</text></svg>",
@@ -228,10 +228,10 @@
         "B. Seluruh responden yang berbelanja ke toko fisik melakukannya demi mendapatkan potongan ongkos kirim.",
         "C. Sebagian konsumen yang berbelanja daring juga tetap memeriksa kesegaran produk sebelum membeli.",
         "D. Keuntungan bersih perusahaan ritel modern meningkat tajam sejak layanan belanja daring diluncurkan.",
-        "E. Tidak ada responden dalam survei tersebut yang berbelanja daring tanpa mempertimbangkan ongkos kirim."
+        "E. Mayoritas responden dalam survei tersebut lebih memilih berbelanja langsung ke toko fisik daripada secara daring."
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "Pernyataan **Tidak Relevan** mengangkat variabel baru di luar ruang lingkup premis. Premis hanya membahas alasan preferensi belanja konsumen ($70\\%$ daring dan $30\\%$ toko fisik), tanpa menyinggung kinerja keuangan atau keuntungan bersih perusahaan ritel (**Opsi D** benar). **Opsi A** berstatus *Pasti Benar* ($70\\% \\times 1.200 = 840$), **Opsi B** dan **E** berstatus *Pasti Salah* karena bertentangan langsung dengan alasan kelompok responden di teks, sedangkan **Opsi C** berstatus *Mungkin Benar*.",
+      "bedah_cepat_markdown": "Untuk mencari pernyataan yang **Tidak Relevan**, temukan opsi yang membawa variabel baru di luar topik teks. Teks hanya membahas alasan konsumen memilih cara belanja ($70\\%$ daring dan $30\\%$ toko fisik), tanpa menyinggung laporan keuangan atau laba perusahaan ritel (**Opsi D** tepat). Mari cek opsi lainnya: **Opsi A** bernilai *Pasti Benar* ($70\\% \\times 1.200 = 840$), **Opsi B** dan **Opsi E** bernilai *Pasti Salah* karena langsung menabrak data alasan dan jumlah kelompok di teks, sedangkan **Opsi C** bernilai *Mungkin Benar*.",
       "visual": null
     },
     {
@@ -250,7 +250,7 @@
         "E. Tidak Relevan"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Periksa kolom **Kadar Garam $5\\%$** pada tabel secara langsung: laju korosi Baja Tahan Karat adalah $0,07\\text{ mm/tahun}$, Paduan Aluminium adalah $0,21\\text{ mm/tahun}$, dan Baja Karbon adalah $0,64\\text{ mm/tahun}$. Urutan ketiganya memenuhi pertidaksamaan $0,07 < 0,21 < 0,64$. Karena pernyataan sesuai secara mutlak dengan data angka eksplisit pada tabel tanpa menambah asumsi apa pun, nilai kepastiannya adalah **Pasti Benar** (**Opsi A**).",
+      "bedah_cepat_markdown": "Langsung arahkan fokusmu ke kolom **Kadar Garam $5\\%$** pada tabel. Di sana tercatat laju korosi Baja Tahan Karat sebesar $0,07\\text{ mm/tahun}$, Paduan Aluminium sebesar $0,21\\text{ mm/tahun}$, dan Baja Karbon sebesar $0,64\\text{ mm/tahun}$. Jika diurutkan dari yang paling kecil, hasilnya pas mengikuti pola $0,07 < 0,21 < 0,64$. Karena pernyataan cocok $100\\%$ dengan angka yang tertera di tabel tanpa menambah asumsi apa pun, status kepastiannya adalah **Pasti Benar** (**Opsi A**).",
       "visual": null
     }
   ]

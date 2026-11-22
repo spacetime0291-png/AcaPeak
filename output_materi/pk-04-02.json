@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Semua anggota pada himpunan data $A = \\{2, 5, 8, 11\\}$ dikalikan $3$ lalu dikurangi $4$. Bagaimana perubahan nilai simpangan bakunya?",
+      "pertanyaan_pemantik": "Semua angka pada data $A = \\{2, 5, 8, 11\\}$ dikalikan $3$, lalu dikurangi $4$. Bagaimana nilai simpangan baku ($s$) yang baru?",
       "opsi_cepat": [
         "Berubah menjadi $3s - 4$",
         "Berubah menjadi $3s$"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Ukuran penyebaran hanya dipengaruhi operasi perkalian atau pembagian, sedangkan penjumlahan atau pengurangan menggeser seluruh data secara seragam sehingga jarak antardata tetap."
+      "penjelasan_kilat": "Simpangan baku hanya terpengaruh perkalian atau pembagian. Pengurangan $4$ cuma menggeser semua data secara seragam, jadi jarak antardata tidak berubah."
     },
-    "konsep_inti_markdown": "- **Jangkauan ($R$):** $x_{\\max} - x_{\\min}$.\n- **Kuartil & Hamparan ($H$):** Urutkan data; $Q_2$ (median), $Q_1$ (median paruh bawah), $Q_3$ (median paruh atas), dan $H = Q_3 - Q_1$.\n- **Simpangan Rata-rata ($SR$), Ragam ($s^2$), Simpangan Baku ($s$):**\n$$SR = \\frac{\\sum |x_i - \\bar{x}|}{n}, \\quad s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}, \\quad s = \\sqrt{s^2}$$\n- **Transformasi Linear ($y = ax + b$):** Ukuran sebaran baru $= |a| \\times$ ukuran sebaran lama (konstanta $b$ diabaikan).",
+    "konsep_inti_markdown": "- **Jangkauan ($R$):** Selisih data terbesar dan terkecil, $R = x_{\\max} - x_{\\min}$.\n- **Kuartil & Hamparan ($H$):** Urutkan data dulu. $Q_2$ adalah median, $Q_1$ median paruh bawah, $Q_3$ median paruh atas, dan $H = Q_3 - Q_1$.\n- **Simpangan Rata-rata ($SR$), Ragam ($s^2$), dan Simpangan Baku ($s$):**\n$$SR = \\frac{\\sum |x_i - \\bar{x}|}{n}, \\quad s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}, \\quad s = \\sqrt{s^2}$$\n- **Efek Operasi $y = ax + b$:** Konstanta $b$ selalu diabaikan. Untuk $R, H, Q_d, SR,$ dan $s$, nilainya dikali $|a|$. Khusus **ragam ($s^2$)**, nilainya dikali $a^2$.",
     "radar_jebakan_utbk": [
-      "Lupa mengurutkan data dari terkecil ke terbesar sebelum menentukan posisi kuartil ($Q_1, Q_2, Q_3$) dan median.",
-      "Ikut mengurangkan atau menjumlahkan konstanta $b$ pada jangkauan atau simpangan baku saat data ditransformasi menjadi $ax + b$."
+      "Lupa mengurutkan data dari terkecil ke terbesar sebelum mencari kuartil ($Q_1, Q_2, Q_3$) dan median.",
+      "Ikut menambah atau mengurangi konstanta $b$ saat data diubah menjadi $ax + b$, atau lupa mengkuadratkan $a$ khusus untuk ragam ($s^2$)."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Rumus & Sifat Ukuran Penyebaran Data UTBK",
-      "subjudul_ringkas": "Panduan lengkap rumus jangkauan, kuartil, simpangan, transformasi linear, dan trik membandingkan sebaran data.",
+      "subjudul_ringkas": "Ringkasan rumus jangkauan, kuartil, simpangan, efek kali-tambah data, serta trik bandingkan sebaran tanpa hitung manual.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -35,106 +35,106 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Jangkauan, Kuartil, dan Rekonstruksi Data",
-          "ringkasan_kelompok": "Menentukan ukuran letak sebaran dan mencari nilai datum yang belum diketahui.",
+          "nama_kelompok": "Jangkauan, Kuartil, dan Mencari Data yang Hilang",
+          "ringkasan_kelompok": "Menghitung sebaran letak data dan menebak nilai data yang belum diketahui.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Jangkauan Data Tunggal ($R$)",
-              "penjelasan_singkat": "Selisih datum terbesar dan terkecil setelah data diurutkan: $R = x_{\\max} - x_{\\min}$ dengan syarat $R \\ge 0$.",
-              "contoh_penerapan": "Data terurut $4, 6, 7, 10, 15$ memiliki jangkauan **$R = 15 - 4 = 11$**.",
-              "jebakan_atau_catatan": "Wajib urutkan data dulu; jangkauan bernilai $0$ hanya jika semua datum bernilai sama.",
+              "penjelasan_singkat": "Selisih nilai terbesar dan terkecil setelah data diurutkan: $R = x_{\\max} - x_{\\min}$, dengan syarat $R \\ge 0$.",
+              "contoh_penerapan": "Data terurut $4, 6, 7, 10, 15$ punya jangkauan **$R = 15 - 4 = 11$**.",
+              "jebakan_atau_catatan": "Urutkan data dulu agar tidak salah ambil ujung. Nilai $R = 0$ hanya terjadi jika semua angka sama persis.",
               "visual": null
             },
             {
-              "judul_poin": "Kombinasi Jangkauan, Mean, dan Median",
-              "penjelasan_singkat": "Gunakan total data $\\sum x_i = n\\bar{x}$, selisih ujung $x_n - x_1 = R$, dan nilai tengah median.",
-              "contoh_penerapan": "Tiga bilangan berjangkauan $9$, median $6$, dan mean $7$ menghasilkan urutan tepat **$3, 6, 12$**.",
-              "jebakan_atau_catatan": "Perhatikan syarat bilangan bulat positif atau modus unik agar kombinasi persamaan tidak menghasilkan jawaban ganda.",
+              "judul_poin": "Gabungan Jangkauan, Mean, dan Median",
+              "penjelasan_singkat": "Padukan tiga kunci: total data $\\sum x_i = n\\bar{x}$, selisih ujung $x_n - x_1 = R$, dan posisi tengah median.",
+              "contoh_penerapan": "Tiga bilangan berjangkauan $9$, median $6$, dan mean $7$ pasti berurutan **$3, 6, 12$**.",
+              "jebakan_atau_catatan": "Cek syarat tambahan di soal (seperti bilangan bulat positif atau modus tunggal) supaya hasilnya tunggal.",
               "visual": null
             },
             {
-              "judul_poin": "Penentuan Kuartil ($Q_1, Q_2, Q_3$) Data Tunggal",
-              "penjelasan_singkat": "Urutkan data, tentukan $Q_2$ sebagai median total, lalu ambil median paruh bawah ($Q_1$) dan atas ($Q_3$).",
-              "contoh_penerapan": "Data $2, 4, 5, 7, 8, 10, 12$ memiliki $Q_2 = 7$, **$Q_1 = 4$**, dan **$Q_3 = 10$**.",
-              "jebakan_atau_catatan": "Saat $n$ ganjil, datum posisi $Q_2$ tidak diikutkan lagi saat menghitung median paruh bawah maupun atas.",
+              "judul_poin": "Menentukan Kuartil ($Q_1, Q_2, Q_3$) Data Tunggal",
+              "penjelasan_singkat": "Urutkan data lalu cari $Q_2$ (median). Setelah itu, cari median paruh bawah ($Q_1$) dan median paruh atas ($Q_3$).",
+              "contoh_penerapan": "Data $2, 4, 5, 7, 8, 10, 12$ punya $Q_2 = 7$, **$Q_1 = 4$**, dan **$Q_3 = 10$**.",
+              "jebakan_atau_catatan": "Jika jumlah data ($n$) ganjil, angka di posisi $Q_2$ jangan diikutkan lagi saat mencari $Q_1$ dan $Q_3$.",
               "visual": null
             },
             {
-              "judul_poin": "Jangkauan Antarkuartil ($H$) dan Simpangan Kuartil ($Q_d$)",
-              "penjelasan_singkat": "Hamparan adalah $H = Q_3 - Q_1$, sedangkan simpangan kuartil dirumuskan $Q_d = \\frac{1}{2}(Q_3 - Q_1)$.",
+              "judul_poin": "Hamparan ($H$) dan Simpangan Kuartil ($Q_d$)",
+              "penjelasan_singkat": "Jangkauan antarkuartil (hamparan) adalah $H = Q_3 - Q_1$, sedangkan simpangan kuartilnya $Q_d = \\frac{1}{2}(Q_3 - Q_1)$.",
               "contoh_penerapan": "Jika $Q_1 = 4$ dan $Q_3 = 10$, maka hamparan **$H = 6$** dan **$Q_d = 3$**.",
-              "jebakan_atau_catatan": "Jangkauan antarkuartil selalu dua kali simpangan kuartil; keduanya kebal terhadap pencilan (outlier) di ujung data.",
+              "jebakan_atau_catatan": "Ingat bahwa $H$ selalu dua kali $Q_d$. Keduanya kebal terhadap angka ekstrem (pencilan) di ujung data.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Simpangan Rata-Rata, Ragam, dan Simpangan Baku",
-          "ringkasan_kelompok": "Mengukur rata-rata penyimpangan tiap datum terhadap nilai rata-rata (mean) kelompoknya.",
+          "ringkasan_kelompok": "Mengukur seberapa jauh rata-rata penyimpangan tiap angka dari nilai rata-ratanya (mean).",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Simpangan Rata-Rata ($SR$)",
-              "penjelasan_singkat": "Rata-rata jarak mutlak tiap datum ke mean: $SR = \\frac{\\sum |x_i - \\bar{x}|}{n}$ untuk $n \\ge 1$.",
-              "contoh_penerapan": "Data $2, 4, 6$ ($\\bar{x} = 4$) memiliki **$SR = \\frac{|2-4|+|4-4|+|6-4|}{3} = \\frac{4}{3}$**.",
-              "jebakan_atau_catatan": "Tanda mutlak wajib diterapkan; tanpa tanda mutlak, jumlah selisih $\\sum (x_i - \\bar{x})$ selalu bernilai $0$.",
+              "penjelasan_singkat": "Rata-rata jarak mutlak tiap data ke meannya: $SR = \\frac{\\sum |x_i - \\bar{x}|}{n}$ untuk $n \\ge 1$.",
+              "contoh_penerapan": "Data $2, 4, 6$ ($\\bar{x} = 4$) punya **$SR = \\frac{|2-4|+|4-4|+|6-4|}{3} = \\frac{4}{3}$**.",
+              "jebakan_atau_catatan": "Wajib pakai tanda mutlak! Tanpa mutlak, jumlah selisih $\\sum (x_i - \\bar{x})$ akan selalu jadi $0$.",
               "visual": null
             },
             {
               "judul_poin": "Ragam ($s^2$) dan Simpangan Baku ($s$)",
-              "penjelasan_singkat": "Ragam adalah rata-rata kuadrat deviasi $s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}$, dan simpangan baku $s = \\sqrt{s^2}$.",
-              "contoh_penerapan": "Data $2, 4, 6$ ($\\bar{x} = 4$) menghasilkan ragam **$s^2 = \\frac{4+0+4}{3} = \\frac{8}{3}$** dan **$s = \\frac{2}{3}\\sqrt{6}$**.",
-              "jebakan_atau_catatan": "Di UTBK gunakan pembagi $n$ (ragam populasi), bukan $n - 1$, serta jangan lupa menarik akar untuk $s$.",
+              "penjelasan_singkat": "Ragam adalah rata-rata kuadrat selisih $s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}$, lalu simpangan bakunya $s = \\sqrt{s^2}$.",
+              "contoh_penerapan": "Data $2, 4, 6$ ($\\bar{x} = 4$) punya ragam **$s^2 = \\frac{4+0+4}{3} = \\frac{8}{3}$** dan **$s = \\frac{2}{3}\\sqrt{6}$**.",
+              "jebakan_atau_catatan": "Di UTBK, selalu bagi dengan $n$ (bukan $n - 1$). Cek juga apakah soal menanyakan ragam ($s^2$) atau simpangan baku ($s$).",
               "visual": null
             },
             {
-              "judul_poin": "Rumus Alternatif Komputasi Ragam",
-              "penjelasan_singkat": "Gunakan identitas $s^2 = \\frac{\\sum x_i^2}{n} - (\\bar{x})^2$ saat nilai mean berupa bilangan pecahan.",
-              "contoh_penerapan": "Data $1, 2, 4$ memiliki $\\sum x_i^2 = 21$ dan $\\bar{x} = \\frac{7}{3}$, sehingga **$s^2 = \\frac{21}{3} - \\frac{49}{9} = \\frac{14}{9}$**.",
-              "jebakan_atau_catatan": "Jangan tertukar antara rata-rata kuadrat $\\frac{\\sum x_i^2}{n}$ dengan kuadrat dari rata-rata $(\\bar{x})^2$.",
+              "judul_poin": "Rumus Alternatif Ragam (Untuk Mean Pecahan)",
+              "penjelasan_singkat": "Pakai rumus $s^2 = \\frac{\\sum x_i^2}{n} - (\\bar{x})^2$ jika nilai meannya berupa pecahan agar tidak repot mengkuadratkan selisih pecahan.",
+              "contoh_penerapan": "Data $1, 2, 4$ punya $\\sum x_i^2 = 21$ dan $\\bar{x} = \\frac{7}{3}$, maka **$s^2 = \\frac{21}{3} - \\frac{49}{9} = \\frac{14}{9}$**.",
+              "jebakan_atau_catatan": "Jangan tertukar antara rata-rata kuadrat ($\\frac{\\sum x_i^2}{n}$) dengan kuadrat dari rata-rata ($(\\bar{x})^2$).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Transformasi Linear & Perbandingan Sebaran Cepat",
-          "ringkasan_kelompok": "Menentukan perubahan ukuran sebaran dan membandingkan simpangan baku tanpa menghitung manual.",
+          "nama_kelompok": "Efek Ubah Data ($y = ax + b$) & Bandingkan Sebaran Cepat",
+          "ringkasan_kelompok": "Menghitung perubahan ukuran sebaran dan membandingkan simpangan baku tanpa hitungan panjang.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Transformasi Linear ($y = ax + b$) pada Sebaran Linear",
-              "penjelasan_singkat": "Ukuran sebaran berdimensi satu ($R, H, Q_d, SR, s$) dikalikan $|a|$, sedangkan konstanta $b$ diabaikan.",
-              "contoh_penerapan": "Jika $s_x = 4$ dan data diubah menjadi $y = -3x + 10$, maka **$s_y = |-3| \\times 4 = 12$**.",
-              "jebakan_atau_catatan": "Pengali negatif tetap menghasilkan simpangan positif karena berlaku nilai mutlak $|a|$; konstanta $+10$ tidak berpengaruh.",
+              "judul_poin": "Efek $y = ax + b$ pada $R, H, Q_d, SR,$ dan $s$",
+              "penjelasan_singkat": "Semua ukuran sebaran non-kuadrat ($R, H, Q_d, SR, s$) cukup dikalikan $|a|$, sedangkan konstanta $b$ diabaikan.",
+              "contoh_penerapan": "Jika $s_x = 4$ dan data diubah jadi $y = -3x + 10$, maka **$s_y = |-3| \\times 4 = 12$**.",
+              "jebakan_atau_catatan": "Pengali negatif tetap menghasilkan simpangan positif karena ada tanda mutlak $|a|$. Angka $+10$ tidak berpengaruh.",
               "visual": null
             },
             {
-              "judul_poin": "Transformasi Linear ($y = ax + b$) pada Ragam",
-              "penjelasan_singkat": "Karena ragam berdimensi kuadrat, skala pengali dikuadratkan menjadi $s_y^2 = a^2 s_x^2$ tanpa dipengaruhi $b$.",
-              "contoh_penerapan": "Jika $s_x^2 = 5$ dan $y = 2x - 7$, maka ragam barunya adalah **$s_y^2 = 2^2 \\times 5 = 20$**.",
-              "jebakan_atau_catatan": "Jebakan tersering UTBK: mengalikan ragam dengan $|a|$ saja tanpa mengkuadratkannya menjadi $a^2$.",
+              "judul_poin": "Efek $y = ax + b$ pada Ragam ($s^2$)",
+              "penjelasan_singkat": "Karena ragam adalah hasil kuadrat, faktor pengalinya ikut dikuadratkan menjadi $s_y^2 = a^2 s_x^2$ (konstanta $b$ tetap diabaikan).",
+              "contoh_penerapan": "Jika $s_x^2 = 5$ dan $y = 2x - 7$, maka ragam barunya **$s_y^2 = 2^2 \\times 5 = 20$**.",
+              "jebakan_atau_catatan": "Jebakan klasik UTBK: mengalikan ragam dengan $|a|$ saja tanpa mengkuadratkannya menjadi $a^2$.",
               "visual": null
             },
             {
-              "judul_poin": "Invariansi Translasi (Penjumlahan/Pengurangan Konstanta)",
-              "penjelasan_singkat": "Menambah atau mengurangi setiap datum dengan konstanta $k$ tidak mengubah nilai $R, H, SR, s^2,$ dan $s$.",
-              "contoh_penerapan": "Simpangan baku himpunan $102, 105, 108$ **sama persis** dengan simpangan baku himpunan $2, 5, 8$.",
-              "jebakan_atau_catatan": "Gunakan trik kurangi semua datum dengan bilangan acuan agar perhitungan ragam angka besar jauh lebih ringan.",
+              "judul_poin": "Efek Tambah atau Kurang Konstanta (Data Bergeser)",
+              "penjelasan_singkat": "Menambah atau mengurangi semua data dengan angka tetap $k$ tidak mengubah nilai $R, H, SR, s^2,$ maupun $s$.",
+              "contoh_penerapan": "Simpangan baku dari $102, 105, 108$ **sama persis** dengan simpangan baku dari $2, 5, 8$.",
+              "jebakan_atau_catatan": "Trik cepat: jika bertemu angka ratusan, kurangi semua data dengan bilangan bulat terdekat agar hitungannya jauh lebih ringan.",
               "visual": null
             },
             {
-              "judul_poin": "Deteksi Simpangan Baku Terkecil Tanpa Menghitung",
-              "penjelasan_singkat": "Simpangan baku bernilai minimum ($s = 0$) jika semua datum identik, dan mengecil saat datum mengumpul dekat mean.",
-              "contoh_penerapan": "Antara $A = \\{4, 5, 6\\}$ dan $B = \\{1, 5, 9\\}$, simpangan baku terkecil dimiliki **$A$ karena jaraknya lebih rapat**.",
-              "jebakan_atau_catatan": "Besaran angka tidak menentukan sebaran; himpunan $\\{99, 100, 101\\}$ jauh lebih kecil simpangannya daripada $\\{1, 5, 9\\}$.",
+              "judul_poin": "Tebak Simpangan Baku Terkecil Tanpa Menghitung",
+              "penjelasan_singkat": "Simpangan baku bernilai nol ($s = 0$) jika semua data sama, dan makin kecil saat angka-angkanya rapat di dekat mean.",
+              "contoh_penerapan": "Antara $A = \\{4, 5, 6\\}$ dan $B = \\{1, 5, 9\\}$, simpangan baku terkecil milik **$A$ karena jaraknya lebih rapat**.",
+              "jebakan_atau_catatan": "Besar nominal angka tidak menentukan sebaran. Data $\\{99, 100, 101\\}$ jauh lebih rapat daripada $\\{1, 5, 9\\}$.",
               "visual": null
             },
             {
-              "judul_poin": "Deteksi Simpangan Baku Terbesar (Efek Polarisasi)",
-              "penjelasan_singkat": "Untuk ukuran $n$ dan jangkauan sama, simpangan baku terbesar terjadi saat datum mengumpul di kedua ujung ekstrem.",
-              "contoh_penerapan": "Antara $P = \\{1, 5, 5, 9\\}$ dan $Q = \\{1, 1, 9, 9\\}$, simpangan baku terbesar dimiliki **$Q$ karena terpolarisasi di ujung**.",
-              "jebakan_atau_catatan": "Jangan hanya melihat jangkauan; dua himpunan berjangkauan sama memiliki $s$ berbeda tergantung seberapa jauh datum dari pusat.",
+              "judul_poin": "Tebak Simpangan Baku Terbesar (Menumpuk di Ujung)",
+              "penjelasan_singkat": "Untuk banyak data dan jangkauan yang sama, simpangan baku terbesar muncul saat data menumpuk di dua ujung ekstrem.",
+              "contoh_penerapan": "Antara $P = \\{1, 5, 5, 9\\}$ dan $Q = \\{1, 1, 9, 9\\}$, simpangan baku terbesar milik **$Q$ karena menumpuk di ujung**.",
+              "jebakan_atau_catatan": "Jangan hanya melihat jangkauannya. Dua data berjangkauan sama bisa punya $s$ berbeda tergantung jarak tiap angka ke pusatnya.",
               "visual": null
             }
           ]
@@ -145,38 +145,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Kombinasi Syarat Jangkauan ($R = x_{\\max} - x_{\\min}$), Mean, dan Median untuk Menentukan Data Lengkap",
+      "nama_variasi": "Kombinasi Jangkauan ($R$), Mean, dan Median untuk Mencari Nilai Data",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Empat bilangan asli terurut $a \\le b \\le c \\le d$ memiliki mean $7,5$, median $7$, dan jangkauan $6$. Tentukan nilai $d$ jika modus data tersebut tunggal dan bernilai $7$.",
-      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nMisalkan data terurut adalah $a \\le b \\le c \\le d$. Dari median $7$, diperoleh $\\frac{b+c}{2} = 7 \\Rightarrow b+c = 14$. Karena modus tunggal bernilai $7$, dua data tengah harus bernilai sama, yaitu $b = 7$ dan $c = 7$. Selanjutnya, dari mean $7,5$ untuk $4$ data, jumlah seluruh data adalah $a + 7 + 7 + d = 4 \\times 7,5 = 30$, sehingga $a + d = 16$. Gunakan syarat jangkauan $d - a = 6$. Jumlahkan kedua persamaan tersebut: $(a + d) + (d - a) = 16 + 6 \\Rightarrow 2d = 22$, maka diperoleh $d = 11$ dan $a = 5$.\n\n**Jalur Taktis UTBK**\nKunci langsung bagian tengah menggunakan kombinasi median dan modus tunggal: jika median sama dengan modus tunggal pada data genap, dua suku tengah pasti bernilai sama ($b = c = 7$). Hitung cepat nilai ujung terbesar: $d = \\frac{\\text{sisa jumlah} + R}{2} = \\frac{(30 - 14) + 6}{2} = 11$.",
-      "kunci_pembeda": "Gunakan modus dan median untuk mengunci nilai data tengah terlebih dahulu sebelum membagi sisa jumlah dengan persamaan jangkauan $x_{\\max} - x_{\\min}$.",
+      "bedah_pola_markdown": "**Langkah Berpikir (Konsep Dasar)**\nMulai dari bagian tengah karena informasi median dan modus paling cepat mengunci angka. Mediannya $7$, artinya $\\frac{b+c}{2} = 7 \\Rightarrow b+c = 14$. Karena modus tunggalnya $7$, angka $7$ harus muncul minimal dua kali. Supaya jumlah $b+c=14$ terpenuhi, mau tidak mau $b = 7$ dan $c = 7$.\n\nSekarang cari kedua ujungnya ($a$ dan $d$). Mean $7,5$ untuk $4$ data memberi total $4 \\times 7,5 = 30$. Karena $b + c = 14$, sisa jumlah ujungnya adalah $a + d = 30 - 14 = 16$. Gabungkan dengan syarat jangkauan $d - a = 6$. Jumlahkan kedua persamaan: $(a + d) + (d - a) = 16 + 6 \\Rightarrow 2d = 22$. Jadi, $d = 11$ dan $a = 5$ (urutannya $5, 7, 7, 11$).\n\n**Jalur Taktis UTBK**\nJika median sama dengan modus tunggal pada data genap, langsung kunci dua suku tengahnya sama ($b = c = 7$). Lalu hitung ujung terbesar secara instan: $d = \\frac{\\text{sisa jumlah} + R}{2} = \\frac{(30 - 14) + 6}{2} = 11$.",
+      "kunci_pembeda": "Kunci dulu bagian tengah memakai median dan modus, baru eliminasi dua ujungnya menggunakan total data dan jangkauan.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Penentuan Kuartil Bawah ($Q_1$), Kuartil Tengah ($Q_2$), Kuartil Atas ($Q_3$), dan Jangkauan Antarkuartil ($H = Q_3 - Q_1$)",
+      "nama_variasi": "Menentukan Kuartil ($Q_1, Q_2, Q_3$) dan Jangkauan Antarkuartil ($H$)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Diketahui data skor kuis $7$ siswa adalah $14, 10, 18, 12, 20, 15, 11$. Tentukan nilai jangkauan antarkuartil ($H$) dari kumpulan data tersebut.",
-      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nLangkah pertama adalah mengurutkan ketujuh data dari nilai terkecil hingga terbesar: $10, 11, 12, 14, 15, 18, 20$. Karena banyak data $n = 7$ (ganjil), kuartil tengah ($Q_2$) tepat berada pada suku ke-$\\frac{7+1}{2} = 4$, yaitu $Q_2 = 14$. Selanjutnya, bagi data menjadi dua kelompok simetris tanpa menyertakan $Q_2$. Kelompok bawah berisi tiga data pertama ($10, 11, 12$), sehingga kuartil bawah ($Q_1$) adalah nilai tengahnya, yakni $11$. Kelompok atas berisi tiga data terakhir ($15, 18, 20$), sehingga kuartil atas ($Q_3$) adalah $18$. Terakhir, hitung jangkauan antarkuartil atau hamparan dengan rumus $H = Q_3 - Q_1 = 18 - 11 = 7$.\n\n**Jalur Taktis UTBK**\nUntuk $n = 7$, langsung lingkari posisi ke-$2$, ke-$4$, dan ke-$6$ setelah data terurut sebagai $Q_1, Q_2, Q_3$. Tanpa menulis rumus indeks, cukup kurangkan urutan ke-$6$ dengan urutan ke-$2$: $H = x_6 - x_2 = 18 - 11 = 7$.",
-      "kunci_pembeda": "Kuartil membagi data terurut menjadi empat bagian sama banyak sehingga $H = Q_3 - Q_1$ mengukur sebaran $50\\%$ data tengah tanpa terpengaruh pencilan ekstrem.",
+      "bedah_pola_markdown": "**Langkah Berpikir (Konsep Dasar)**\nAturan wajib sebelum mencari kuartil: urutkan datanya dulu dari kecil ke besar. Hasilnya: $10, 11, 12, 14, 15, 18, 20$.\n\nKarena ada $7$ data (ganjil), nilai tengah ($Q_2$) tepat berada di urutan ke-$4$, yaitu $14$. Sekarang coret angka $14$ tersebut agar data terbelah menjadi dua kelompok yang seimbang. Kelompok bawah berisi $10, 11, 12$, sehingga nilai tengahnya $Q_1 = 11$. Kelompok atas berisi $15, 18, 20$, sehingga nilai tengahnya $Q_3 = 18$. Terakhir, tinggal kurangkan: $H = Q_3 - Q_1 = 18 - 11 = 7$.\n\n**Jalur Taktis UTBK**\nUntuk $n = 7$, posisi kuartil selalu jatuh tepat di urutan ke-$2$, ke-$4$, dan ke-$6$ setelah diurutkan. Jadi, kamu tinggal hitung $H = x_6 - x_2 = 18 - 11 = 7$.",
+      "kunci_pembeda": "Selalu urutkan data terlebih dahulu; saat jumlah data ganjil, pisahkan $Q_2$ sebelum mencari $Q_1$ dan $Q_3$.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Simpangan Rata-rata, Ragam (Variansi), dan Simpangan Baku untuk Data Kecil",
+      "nama_variasi": "Menghitung Simpangan Rata-rata, Ragam, dan Simpangan Baku Data Kecil",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Diberikan himpunan data $S = \\{4, 6, 8, 10, 12\\}$. Tentukan nilai simpangan rata-rata ($SR$), ragam ($s^2$), dan simpangan baku ($s$) dari himpunan tersebut.",
-      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nHitung rata-rata terlebih dahulu: $\\bar{x} = \\frac{4+6+8+10+12}{5} = 8$. Selanjutnya, tentukan selisih setiap data terhadap rata-rata, yaitu $-4, -2, 0, 2, 4$. Simpangan rata-rata diperoleh dari rata-rata nilai mutlak selisih tersebut: $SR = \\frac{|-4|+|-2|+|0|+|2|+|4|}{5} = \\frac{12}{5} = 2,4$. Untuk ragam ($s^2$), kuadratkan setiap selisih lalu bagi dengan banyak data: $s^2 = \\frac{(-4)^2+(-2)^2+0^2+2^2+4^2}{5} = \\frac{16+4+0+4+16}{5} = \\frac{40}{5} = 8$. Simpangan baku merupakan akar kuadrat dari ragam, sehingga $s = \\sqrt{8} = 2\\sqrt{2}$. Pastikan tidak tertukar antara ragam ($s^2$) yang masih berbentuk kuadrat dan simpangan baku ($s$) yang sudah ditarik akarnya.\n\n**Jalur Taktis UTBK**\nPerhatikan bahwa $4, 6, 8, 10, 12$ membentuk barisan aritmetika dengan beda $b = 2$ dan $n = 5$. Gunakan rumus khusus $5$ suku berjarak sama: $s^2 = 2b^2 = 2(2^2) = 8$, sehingga $s = 2\\sqrt{2}$ dan $SR = 1,2b = 2,4$ dalam hitungan detik.",
-      "kunci_pembeda": "Simpangan rata-rata menggunakan nilai mutlak selisih $|x_i - \\bar{x}|$, sedangkan ragam mengkuadratkan selisih tersebut sebelum ditarik akar menjadi simpangan baku.",
+      "bedah_pola_markdown": "**Langkah Berpikir (Konsep Dasar)**\nSemua ukuran simpangan butuh rata-rata ($\\bar{x}$) sebagai patokan. Karena datanya simetris dengan jarak sama, rata-ratanya langsung ketemu di tengah, yaitu $\\bar{x} = 8$. Hitung selisih tiap angka terhadap $8$: hasilnya $-4, -2, 0, 2, 4$.\n\nUntuk **simpangan rata-rata ($SR$)**, ambil nilai positif (mutlak) dari tiap selisih lalu bagi $5$: $SR = \\frac{4+2+0+2+4}{5} = \\frac{12}{5} = 2,4$. Untuk **ragam ($s^2$)**, kuadratkan tiap selisihnya dulu baru bagi $5$: $s^2 = \\frac{16+4+0+4+16}{5} = \\frac{40}{5} = 8$. Terakhir, tarik akar dari ragam untuk mendapat **simpangan baku**: $s = \\sqrt{8} = 2\\sqrt{2}$.\n\n**Jalur Taktis UTBK**\nData $4, 6, 8, 10, 12$ adalah barisan aritmetika $5$ suku dengan beda $b = 2$. Khusus pola $5$ suku berjarak sama, berlaku rumus instan $s^2 = 2b^2 = 2(2^2) = 8$, sehingga $s = 2\\sqrt{2}$ dan $SR = 1,2b = 2,4$.",
+      "kunci_pembeda": "Simpangan rata-rata memutlakkan selisih $|x_i - \\bar{x}|$, sedangkan ragam mengkuadratkannya sebelum ditarik akar menjadi simpangan baku.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Identifikasi Himpunan Data yang Memiliki Simpangan Baku Terbesar/Terkecil Tanpa Menghitung Penuh",
+      "nama_variasi": "Menebak Simpangan Baku Terkecil dan Terbesar Tanpa Menghitung Penuh",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Manakah di antara keempat himpunan berikut yang memiliki simpangan baku terkecil: $P = \\{10, 10, 10, 10\\}$, $Q = \\{1, 5, 5, 9\\}$, $R = \\{1, 1, 9, 9\\}$, atau $S = \\{50, 51, 51, 52\\}$?",
-      "bedah_pola_markdown": "**Jalur Konsep Dasar**\nSimpangan baku mengukur seberapa jauh sebaran tiap anggota data terhadap nilai rata-ratanya ($\\bar{x}$). Pada himpunan $P = \\{10, 10, 10, 10\\}$, seluruh data bernilai identik sehingga $\\bar{x} = 10$ dan selisih setiap elemen terhadap rata-rata adalah nol; akibatnya simpangan baku $s_P = 0$. Pada himpunan $S = \\{50, 51, 51, 52\\}$, meski angkanya besar, jaraknya terhadap $\\bar{x} = 51$ hanya $-1, 0, 0, 1$ sehingga ragamnya kecil ($s_S^2 = 0,5$). Sebaliknya, pada $Q = \\{1, 5, 5, 9\\}$ dan $R = \\{1, 1, 9, 9\\}$, data menyebar jauh dari $\\bar{x} = 5$, dengan $R$ memiliki simpangan baku terbesar karena seluruh datanya menumpuk di dua titik ekstrem ($1$ dan $9$).\n\n**Jalur Taktis UTBK**\nAbaikan besar kecilnya angka satuan seperti puluhan atau ratusan pada $S$; fokus murni pada kerapatan antardata. Data kembar seluruhnya otomatis memiliki $s = 0$ (terkecil mutlak), sedangkan data yang terkonsentrasi di ujung-ujung ekstrem menghasilkan $s$ terbesar.",
-      "kunci_pembeda": "Besarnya simpangan baku ditentukan oleh kerapatan jarak data terhadap rata-ratanya (konsentrasi di ujung ekstrem memperbesar $s$), bukan oleh besar kecilnya nominal angka.",
+      "bedah_pola_markdown": "**Langkah Berpikir (Konsep Dasar)**\nJangan langsung menghitung rumus satu per satu. Ingat arti simpangan baku: seberapa jauh angka-angka menyebar dari rata-ratanya. Cek himpunan $P = \\{10, 10, 10, 10\\}$. Karena semua angkanya kembar, jarak tiap angka ke rata-ratanya adalah nol. Artinya $s_P = 0$, yang otomatis paling kecil (simpangan tidak pernah negatif).\n\nSebagai perbandingan, lihat $S = \\{50, 51, 51, 52\\}$. Meski angkanya puluhan, jaraknya ke rata-rata ($51$) cuma $-1, 0, 0, 1$, jadi sebarannya sangat rapat ($s_S^2 = 0,5$). Sementara itu, $Q$ dan $R$ menyebar jauh dari rata-rata $5$. Di antara keduanya, $R = \\{1, 1, 9, 9\\}$ punya simpangan baku terbesar karena seluruh angkanya menumpuk di dua ujung ekstrem.\n\n**Jalur Taktis UTBK**\nAbaikan besar kecilnya angka puluhan atau ratusan. Fokus saja pada seberapa rapat jarak antardatanya: data kembar semua pasti $s = 0$ (terkecil), sedangkan data yang menumpuk di dua ujung pasti paling besar.",
+      "kunci_pembeda": "Simpangan baku ditentukan oleh kerapatan jarak data ke rata-ratanya, bukan oleh besar kecilnya nominal angka.",
       "visual": null
     }
   ],
@@ -197,7 +197,7 @@
         "E. SEMUA pilihan benar."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Dari urutan $6, a, b, 12, c$, median $b = 9$. Jangkauan $c - 6 = 8 \\Rightarrow c = 14$, sehingga **(1) benar**. Kuartil atas adalah $Q_3 = \\frac{12+14}{2} = 13$, maka **(4) salah**. Dari $H = Q_3 - Q_1 = 6$, didapat $Q_1 = 7$. Karena $Q_1 = \\frac{6+a}{2} = 7$, diperoleh $a = 8$, sehingga **(2) benar**. Rata-rata data adalah $\\frac{6+8+9+12+14}{5} = \\frac{49}{5} = 9,8$, sehingga **(3) benar**.",
+      "bedah_cepat_markdown": "Data sudah urut: $6, a, b, 12, c$. Karena ada $5$ data, mediannya langsung mengunci $b = 9$. Dari jangkauan $c - 6 = 8$, kita dapat $c = 14$, jadi **(1) benar**.\n\nSekarang pisahkan median $b$ untuk mencari kuartil. Paruh atas berisi $12$ dan $14$, sehingga $Q_3 = \\frac{12+14}{2} = 13$. Artinya **(4) salah**. Selanjutnya, dari hamparan $Q_3 - Q_1 = 6$, kita dapat $Q_1 = 13 - 6 = 7$. Karena $Q_1$ adalah rata-rata paruh bawah ($6$ dan $a$), maka $\\frac{6+a}{2} = 7 \\Rightarrow a = 8$, jadi **(2) benar**. Terakhir, hitung rata-ratanya: $\\frac{6+8+9+12+14}{5} = \\frac{49}{5} = 9,8$, sehingga **(3) benar**.",
       "visual": null
     },
     {
@@ -215,7 +215,7 @@
         "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kedua himpunan sama-sama memiliki $5$ data dengan jangkauan $8$. Namun, simpangan terhadap rata-rata pada $A$ ($\\bar{x}_A = 16$) tersebar merata: $-4, -2, 0, 2, 4$, menghasilkan $P = \\frac{16+4+0+4+16}{5} = 8$. Sementara pada $B$ ($\\bar{x}_B = 106$), data menumpuk di titik ekstrem dengan simpangan $-4, -4, 0, 4, 4$, menghasilkan $Q = \\frac{16+16+0+16+16}{5} = 12,8$. Jadi, $Q > P$ (opsi C terjebak karena mengira jangkauan sama pasti ragam sama).",
+      "bedah_cepat_markdown": "Jangan terkecoh dengan angka ratusan pada $B$ atau jangkauan keduanya yang sama-sama $8$. Cukup lihat jarak tiap data ke rata-ratanya. Pada $A$ ($\\bar{x}_A = 16$), jaraknya tersebar merata: $-4, -2, 0, 2, 4$, menghasilkan $P = \\frac{16+4+0+4+16}{5} = 8$. Pada $B$ ($\\bar{x}_B = 106$), angkanya menumpuk di dua ujung dengan jarak $-4, -4, 0, 4, 4$, menghasilkan $Q = \\frac{16+16+0+16+16}{5} = 12,8$. Jadi, $Q > P$ (opsi B).",
       "visual": null
     },
     {
@@ -228,7 +228,7 @@
       "pertanyaan_markdown": "Empat data bilangan bulat memiliki rata-rata $10$ dan simpangan rata-rata $3$. Jika setiap nilai pada data tersebut dikalikan $2$ kemudian dikurangi $5$, tentukan nilai simpangan rata-rata dari data yang baru!",
       "opsi_jawaban": [],
       "kunci_jawaban": "6",
-      "bedah_cepat_markdown": "Pada transformasi linear $y = ax + b$, seluruh ukuran penyebaran (termasuk jangkauan, hamparan, simpangan rata-rata, dan simpangan baku) hanya berubah sebesar faktor pengali $|a|$, sedangkan pengurangan konstanta $b$ tidak mengubah jarak antardata. Dengan $a = 2$ dan $SR_{\\text{lama}} = 3$, diperoleh $SR_{\\text{baru}} = |2| \\times 3 = 6$.",
+      "bedah_cepat_markdown": "Saat semua data diubah dengan pola $y = ax + b$, simpangan rata-rata hanya terpengaruh perkalian $|a|$, sedangkan pengurangan $5$ tidak mengubah jarak antardata. Jadi, kamu tidak perlu mencari keempat datanya—cukup kalikan $SR_{\\text{baru}} = |2| \\times 3 = 6$.",
       "visual": null
     }
   ]

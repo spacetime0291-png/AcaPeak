@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam kalimat 'Laporan audit keuangan tersebut kami sudah serahkan kepada dewan pengawas kemarin', apakah susunan frasa kerja pasif 'kami sudah serahkan' sudah baku?",
+      "pertanyaan_pemantik": "Perhatikan kalimat berita ini: 'Laporan audit keuangan tersebut kami sudah serahkan kepada dewan pengawas kemarin.' Apakah susunan 'kami sudah serahkan' sudah baku?",
       "opsi_cepat": [
         "Ya, karena pelaku berada sebelum kata kerja",
-        "Tidak, penanda waktu 'sudah' wajib mendahului pelaku"
+        "Tidak, kata 'sudah' wajib diletakkan sebelum pelaku"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Pada konstruksi pasif berpelaku kata ganti orang pertama atau kedua, kata keterangan aspek ('sudah', 'akan', 'telah') tidak boleh menyisip di antara pelaku dan kata kerja dasar. Bentuk bakunya adalah 'sudah kami serahkan' tanpa awalan 'di-'."
+      "penjelasan_kilat": "Kalau pelakunya kata ganti orang pertama atau kedua (*saya, kami, kita, kamu, Anda*), kata penanda waktu seperti *sudah*, *akan*, atau *telah* tidak boleh menyelip di tengah. Taruh kata itu sebelum pelaku menjadi **sudah kami serahkan**, tanpa awalan *di-*."
     },
-    "konsep_inti_markdown": "**Kalimat aktif dan pasif** menguji ketepatan pertukaran sudut pandang pelaku–sasaran serta kepaduan wacana baku sesuai EYD V dan KBBI VI:\n\n* **Pasif Kanonik vs Persona:** Pelaku orang ketiga memakai awalan *di-* (*dievaluasi peneliti*), sedangkan pelaku orang pertama/kedua memakai verba tanpa awalan (*kami evaluasi*).\n* **Makna Pasif *ter-* & *ke-...-an*:** Menyatakan ketidaksengajaan, kemampuan, atau terkena dampak.\n* **Konsistensi & Kesetaraan:** Menjaga kesatuan fokus subjek antarkalimat dan mempertahankan makna utuh kalimat majemuk.",
+    "konsep_inti_markdown": "**Kalimat aktif dan pasif** di UTBK menguji ketepatan mengubah posisi pelaku–sasaran sekaligus menjaga alur paragraf tetap padu sesuai EYD V dan KBBI VI:\n\n* **Pasif Awalan *di-* vs Kata Ganti Orang:** Pelaku orang ketiga memakai awalan *di-* (*dievaluasi peneliti*). Sebaliknya, pelaku orang pertama atau kedua memakai kata kerja dasar tanpa awalan (*kami evaluasi*).\n* **Makna Imbuhan Pasif *ter-* & *ke-...-an*:** Menyatakan kejadian tidak sengaja, kemampuan, atau tertimpa musibah.\n* **Konsistensi Sudut Pandang:** Menjaga fokus subjek tetap seragam antarkalimat serta mempertahankan makna utuh kalimat majemuk.",
     "radar_jebakan_utbk": [
-      "Menggunakan awalan 'di-' pada pelaku kata ganti orang pertama atau kedua (misal: 'dikaji oleh saya' atau 'dibahas oleh kita'), padahal kaidah baku mewajibkan bentuk pasif tanpa awalan ('saya kaji' atau 'kita bahas').",
-      "Mengubah sudut pandang pelaku secara tiba-tiba dari aktif ke pasif di tengah paragraf atau menyisipkan kata 'sudah/akan/tidak' di antara pronomina pelaku dan kata kerja dasar."
+      "Memakai awalan *di-* untuk pelaku kata ganti orang pertama atau kedua (misalnya *dikaji oleh saya* atau *dibahas oleh kita*). Bentuk bakunya wajib tanpa awalan: **saya kaji** atau **kita bahas**.",
+      "Mengubah sudut pandang secara mendadak dari aktif ke pasif di tengah paragraf, atau menyelipkan kata *sudah*, *akan*, dan *tidak* di antara pelaku dan kata kerja dasar."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Kaidah Lengkap Kalimat Aktif dan Pasif (EYD V & KBBI VI)",
-      "subjudul_ringkas": "Aturan baku transformasi aktif-pasif, makna afiks pasif, serta konsistensi sudut pandang wacana.",
+      "subjudul_ringkas": "Aturan baku mengubah kalimat aktif ke pasif, makna imbuhan pasif, dan cara menjaga alur paragraf tetap padu.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -35,92 +35,92 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Transformasi Aktif Transitif ke Pasif Kanonik dan Persona",
-          "ringkasan_kelompok": "Aturan perubahan struktur aktif berobjek menjadi pasif kanonik dan pasif persona.",
+          "nama_kelompok": "Mengubah Kalimat Aktif Berobjek ke Bentuk Pasif",
+          "ringkasan_kelompok": "Aturan menukar posisi subjek dan objek sesuai jenis pelakunya.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Pasif Kanonik dengan Pelaku Orang Ketiga",
-              "penjelasan_singkat": "Objek kalimat aktif transitif menjadi subjek; predikat meN- berubah menjadi di- apabila pelakunya orang ketiga atau nomina.",
-              "contoh_penerapan": "Proposal penelitian tersebut **dievaluasi oleh tim pakar** sebelum mendapatkan pendanaan resmi dari kementerian.",
-              "jebakan_atau_catatan": "Bentuk *proposal itu dievaluasi oleh saya* salah karena pelaku orang pertama wajib memakai pola pasif persona.",
+              "judul_poin": "Pasif Awalan di- untuk Pelaku Orang Ketiga",
+              "penjelasan_singkat": "Objek kalimat aktif pindah menjadi subjek. Kata kerja berawalan meN- berubah menjadi di- jika pelakunya orang ketiga atau kata benda.",
+              "contoh_penerapan": "Proposal riset energi terbarukan itu **dievaluasi oleh tim pakar** sebelum mendapat dana hibah dari kementerian.",
+              "jebakan_atau_catatan": "Bentuk *proposal itu dievaluasi oleh saya* tidak baku karena pelaku orang pertama wajib memakai pola pasif tanpa awalan.",
               "visual": null
             },
             {
-              "judul_poin": "Pasif Persona dengan Pelaku Orang Pertama dan Kedua",
-              "penjelasan_singkat": "Objek menjadi subjek, diikuti langsung oleh pronomina pelaku orang pertama atau kedua dan verba dasar tanpa awalan.",
-              "contoh_penerapan": "Laporan keuangan bulanan ini sudah **kami serahkan** kepada direktur utama sejak kemarin pagi.",
-              "jebakan_atau_catatan": "Jangan menyisipkan kata tugas di antara pelaku dan verba, seperti bentuk tidak baku *kami telah serahkan*.",
+              "judul_poin": "Pasif Tanpa Awalan untuk Pelaku Orang Pertama dan Kedua",
+              "penjelasan_singkat": "Objek pindah menjadi subjek, lalu diikuti langsung oleh kata ganti orang pertama atau kedua dan kata kerja dasar tanpa awalan.",
+              "contoh_penerapan": "Laporan realisasi anggaran kuartal ini sudah **kami serahkan** kepada inspektorat sejak kemarin pagi.",
+              "jebakan_atau_catatan": "Jangan menyelipkan kata keterangan di antara pelaku dan kata kerja, seperti bentuk keliru *kami telah serahkan*.",
               "visual": null
             },
             {
-              "judul_poin": "Penulisan Bentuk Terikat ku- dan kau- pada Pasif Persona",
-              "penjelasan_singkat": "Pronomina persona tunggal ku- dan kau- ditulis serangkai dengan verba dasar tanpa awalan sesuai kaidah EYD V.",
-              "contoh_penerapan": "Buku referensi langka itu akhirnya **kutemukan** di sudut rak paling atas perpustakaan fakultas.",
-              "jebakan_atau_catatan": "Penulisan terpisah seperti *ku temukan* atau *kau baca* melanggar kaidah penulisan bentuk terikat dalam EYD V.",
+              "judul_poin": "Penulisan Serangkai ku- dan kau- pada Kalimat Pasif",
+              "penjelasan_singkat": "Kata ganti orang tunggal *ku-* dan *kau-* wajib ditulis serangkai dengan kata kerja dasar tanpa awalan sesuai kaidah EYD V.",
+              "contoh_penerapan": "Arsip sejarah kota tua itu akhirnya **kutemukan** di laci paling bawah ruang dokumentasi.",
+              "jebakan_atau_catatan": "Penulisan terpisah seperti *ku temukan* atau *kau baca* menyalahi aturan penulisan bentuk terikat dalam EYD V.",
               "visual": null
             },
             {
-              "judul_poin": "Syarat Transitivitas Pemasifan Kalimat Aktif",
-              "penjelasan_singkat": "Hanya kalimat aktif transitif berobjek yang dapat dipasifkan; kalimat aktif intransitif berpelengkap tidak memiliki bentuk pasif.",
-              "contoh_penerapan": "Para mahasiswa **mendiskusikan isu krisis iklim** berubah menjadi **Isu krisis iklim didiskusikan** oleh para mahasiswa.",
-              "jebakan_atau_catatan": "Kalimat berpelengkap seperti *Dia menjadi dokter* atau *Adik menangis tersedu-sedu* tidak bisa diubah menjadi kalimat pasif.",
+              "judul_poin": "Syarat Utama: Kalimat Aktif Wajib Punya Objek",
+              "penjelasan_singkat": "Hanya kalimat aktif berobjek yang bisa diubah ke bentuk pasif. Kalimat aktif tanpa objek tidak memiliki bentuk pasif.",
+              "contoh_penerapan": "Para delegasi **membahas krisis pangan global** bisa diubah menjadi **Krisis pangan global dibahas** oleh para delegasi.",
+              "jebakan_atau_catatan": "Kalimat tanpa objek seperti *Ia menjadi diplomat* atau *Warga mengungsi ke dataran tinggi* tidak bisa dipasifkan.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Identifikasi Makna Pasif Berimbuhan ter- dan ke-...-an",
-          "ringkasan_kelompok": "Perbedaan nuansa makna verba pasif berafiks ter- dan ke-...-an dalam konteks kalimat.",
+          "nama_kelompok": "Membedakan Makna Pasif Imbuhan ter- dan ke-...-an",
+          "ringkasan_kelompok": "Cara cepat mengenali nuansa makna kata kerja pasif berimbuhan ter- dan ke-...-an dalam kalimat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pasif Berawalan ter- Bermakna Ketidaksengajaan",
-              "penjelasan_singkat": "Awalan ter- pada verba transitif menyatakan perbuatan pasif yang dialami subjek secara tidak sengaja atau tiba-tiba.",
-              "contoh_penerapan": "Dokumen penting di atas meja kerja **terbawa** oleh rekan kerjaku saat rapat selesai.",
-              "jebakan_atau_catatan": "Bedakan dengan makna statif (keadaan sudah terjadi), misalnya pada kalimat *Pintu ruang rapat itu sudah terkunci*.",
+              "judul_poin": "Awalan ter- Bermakna Tidak Sengaja",
+              "penjelasan_singkat": "Awalan *ter-* pada kata kerja pasif menunjukkan tindakan yang dialami subjek secara tidak sengaja atau tiba-tiba.",
+              "contoh_penerapan": "Berkas kontrak kerja sama di atas meja **terbawa** oleh staf bagian umum saat rapat berakhir.",
+              "jebakan_atau_catatan": "Bedakan dengan makna keadaan yang sudah selesai, misalnya pada kalimat *Gerbang utama pelabuhan sudah terkunci*.",
               "visual": null
             },
             {
-              "judul_poin": "Pasif Berawalan ter- Bermakna Kemampuan",
-              "penjelasan_singkat": "Awalan ter- menyatakan kesanggupan atau ketidaksanggupan subjek untuk dikenai tindakan, umumnya didahului kata ingkar tidak atau belum.",
-              "contoh_penerapan": "Suara narasumber di bagian belakang aula **tidak terdengar** dengan jelas karena gangguan pelantang.",
-              "jebakan_atau_catatan": "Frasa *tidak terdengar* bermakna 'tidak dapat didengar', berbeda fungsi dengan *terdengar* yang bermakna 'tidak sengaja didengar'.",
+              "judul_poin": "Awalan ter- Bermakna Kemampuan",
+              "penjelasan_singkat": "Awalan *ter-* menyatakan kesanggupan subjek untuk dikenai tindakan, biasanya didahului kata ingkar *tidak* atau *belum*.",
+              "contoh_penerapan": "Penjelasan narasumber di bagian belakang auditorium **tidak terdengar** jelas akibat gangguan pengeras suara.",
+              "jebakan_atau_catatan": "Frasa *tidak terdengar* berarti 'tidak dapat didengar', berbeda dengan *terdengar* yang berarti 'tidak sengaja didengar'.",
               "visual": null
             },
             {
-              "judul_poin": "Pasif Berkonfiks ke-...-an Bermakna Terkena Dampak",
-              "penjelasan_singkat": "Konfiks ke-...-an membentuk verba pasif yang menyatakan subjek menderita atau tertimpa peristiwa yang tidak diinginkan.",
-              "contoh_penerapan": "Ribuan warga di kawasan pesisir utara **kebanjiran** akibat gelombang pasang air laut semalam.",
-              "jebakan_atau_catatan": "Jangan samakan dengan nomina berkonfiks ke-...-an (seperti *kebersihan* atau *kemakmuran*) yang menduduki fungsi subjek atau objek.",
+              "judul_poin": "Konfiks ke-...-an Bermakna Terkena Dampak",
+              "penjelasan_singkat": "Imbuhan *ke-...-an* membentuk kata kerja pasif yang bermakna subjek menderita atau tertimpa kejadian yang tidak diinginkan.",
+              "contoh_penerapan": "Ratusan rumah warga di pesisir utara **kebanjiran** akibat gelombang pasang air laut dini hari tadi.",
+              "jebakan_atau_catatan": "Jangan tertukar dengan kata benda berimbuhan *ke-...-an* (seperti *kebersihan* atau *kemakmuran*) yang berperan sebagai subjek atau objek.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Konsistensi Sudut Pandang dan Kesetaraan Kalimat Majemuk",
-          "ringkasan_kelompok": "Penerapan diatesis aktif-pasif untuk menjaga kepaduan wacana dan kesetaraan makna majemuk.",
+          "nama_kelompok": "Menjaga Konsistensi Sudut Pandang dan Kesetaraan Makna",
+          "ringkasan_kelompok": "Penerapan bentuk aktif-pasif agar alur paragraf tetap mulus dan makna kalimat majemuk tidak bergeser.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Konsistensi Sudut Pandang dalam Kalimat Majemuk Setara",
-              "penjelasan_singkat": "Klausa-klausa dalam kalimat majemuk setara yang berpelaku sama wajib mempertahankan bentuk aktif atau pasif secara konsisten.",
-              "contoh_penerapan": "**Data dikumpulkan** oleh tim survei, lalu **diolah** menggunakan perangkat lunak statistik sebelum dipublikasikan.",
-              "jebakan_atau_catatan": "Kalimat menjadi tidak efektif apabila mencampur diatesis, misalnya *Data dikumpulkan tim survei, lalu mereka mengolahnya*.",
+              "judul_poin": "Konsistensi Bentuk Aktif-Pasif dalam Kalimat Majemuk Setara",
+              "penjelasan_singkat": "Klausa-klausa dalam kalimat majemuk setara yang pelakunya sama wajib mempertahankan bentuk aktif atau pasif secara konsisten.",
+              "contoh_penerapan": "**Data lapangan dikumpulkan** oleh tim survei, lalu **diolah** menggunakan perangkat lunak statistik sebelum dipublikasikan.",
+              "jebakan_atau_catatan": "Kalimat menjadi tidak efektif jika mencampur sudut pandang, seperti *Data dikumpulkan tim survei, lalu mereka mengolahnya*.",
               "visual": null
             },
             {
-              "judul_poin": "Kesatuan Fokus Subjek Antar-kalimat dalam Paragraf",
-              "penjelasan_singkat": "Pertahankan topik yang sama sebagai subjek melalui transformasi aktif-pasif agar kepaduan informasi antar-kalimat tetap terjaga.",
-              "contoh_penerapan": "**Vaksin baru ini** telah lolos uji klinis; **vaksin tersebut kini didistribusikan** ke seluruh puskesmas daerah.",
-              "jebakan_atau_catatan": "Mengganti subjek secara mendadak tanpa tujuan retoris membuat alur informasi dalam paragraf terasa melompat dan terputus.",
+              "judul_poin": "Kesatuan Fokus Subjek Antarkalimat dalam Paragraf",
+              "penjelasan_singkat": "Pertahankan topik yang sama sebagai subjek lewat perubahan aktif-pasif agar perpindahan informasi antarkalimat terasa mulus.",
+              "contoh_penerapan": "**Vaksin generasi baru ini** telah lolos uji klinis; **vaksin tersebut kini didistribusikan** ke seluruh puskesmas daerah.",
+              "jebakan_atau_catatan": "Mengganti fokus subjek secara mendadak membuat alur gagasan dalam paragraf terasa melompat dan terputus.",
               "visual": null
             },
             {
-              "judul_poin": "Kesetaraan Makna Pemasifan Kalimat Majemuk Bertingkat",
-              "penjelasan_singkat": "Pemasifan kalimat majemuk bertingkat mengubah objek klausa utama menjadi subjek tanpa mengubah hubungan logis anak kalimatnya.",
-              "contoh_penerapan": "**Kebijakan baru itu ditolak serikat pekerja** karena dinilai merugikan kesejahteraan buruh kontrak di perusahaan.",
-              "jebakan_atau_catatan": "Jebakan UTBK sering mengubah konjungsi atau membalik arah hubungan sebab-akibat saat memodifikasi bentuk aktif ke pasif.",
+              "judul_poin": "Kesetaraan Makna saat Memasifkan Kalimat Majemuk Bertingkat",
+              "penjelasan_singkat": "Mengubah kalimat majemuk bertingkat menjadi pasif cukup menukar objek induk kalimat menjadi subjek tanpa mengubah hubungan logis anak kalimat.",
+              "contoh_penerapan": "**Kebijakan baru itu ditolak serikat pekerja** karena dinilai merugikan kesejahteraan pekerja kontrak di pabrik.",
+              "jebakan_atau_catatan": "Soal UTBK sering menjebak dengan mengganti kata hubung atau membalik hubungan sebab-akibat saat mengubah kalimat ke bentuk pasif.",
               "visual": null
             }
           ]
@@ -131,38 +131,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Transformasi Aktif Transitif ke Pasif Kanonik (di-) dan Pasif Persona (S + Kau-/Ku-/Pronomina + Verba Tanpa Awalan)",
+      "nama_variasi": "Mengubah Kalimat Aktif Berobjek ke Pasif Awalan di- dan Pasif Kata Ganti Orang",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Aktif: Tim peneliti **mengevaluasi** data emisi karbon. Pasif: Data emisi karbon **dievaluasi** tim peneliti / Data emisi karbon **sudah kami evaluasi**.",
-      "bedah_pola_markdown": "**Bedah Pola Transformasi & Fungsi:**\nPerhatikan pertukaran jabatan fungsi berikut: [S-pelaku] *Tim peneliti* + [P-aktif] *mengevaluasi* + [O-sasaran] *data emisi karbon* berubah menjadi [S-sasaran] *Data emisi karbon* + [P-pasif] *dievaluasi* + [Pel-pelaku] *tim peneliti*. Jika pelaku berupa kata ganti orang pertama atau kedua (*saya, kami, kita, Anda, ku-, kau-*), gunakan bentuk tanpa awalan *di-* serta letakkan penanda waktu (*sudah, akan*) sebelum pelaku sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Kebijakan fiskal itu **dibahas oleh kita** (*awalan di- pada pronomina*). | Kebijakan fiskal itu **kita bahas** (*pasif persona tanpa awalan*). |\n| Berkas perizinan **kami telah periksa** (*aspek menyisip di tengah*). | Berkas perizinan **telah kami periksa** (*aspek sebelum pelaku*). |\n\n**Strategi Eksekusi:** Tukar posisi [S] dan [O], lalu pilih awalan *di-* untuk pelaku orang ketiga atau bentuk dasar berpronomina untuk orang pertama dan kedua.",
-      "kunci_pembeda": "Membedakan pembentukan pasif berawalan di- untuk pelaku orang ketiga dengan pasif tanpa awalan yang didahului pronomina pelaku orang pertama atau kedua.",
+      "bedah_pola_markdown": "**Cara Berpikir & Langkah Ubah:**\nBayangkan kamu sedang menukar posisi sorotan kamera. Pada kalimat aktif, sorotan ada di pelaku: [Subjek-pelaku] *Tim peneliti* + [Predikat] *mengevaluasi* + [Objek-sasaran] *data emisi karbon*. Saat diubah ke pasif, sasaran maju ke depan menjadi subjek: [Subjek-sasaran] *Data emisi karbon* + [Predikat] *dievaluasi* + [Pelaku] *tim peneliti*.\n\nPerhatikan siapa pelakunya! Jika pelakunya kata ganti orang pertama atau kedua (*saya, kami, kita, Anda, ku-, kau-*), buang awalan *di-*. Taruh juga kata penanda waktu (*sudah, akan, telah*) sebelum pelaku agar sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Kebijakan fiskal itu **dibahas oleh kita** (*memakai awalan di-*). | Kebijakan fiskal itu **kita bahas** (*tanpa awalan di-*). |\n| Berkas perizinan **kami telah periksa** (*kata 'telah' menyelip di tengah*). | Berkas perizinan **telah kami periksa** (*kata 'telah' sebelum pelaku*). |\n\n**Langkah Cepat:** Tukar posisi subjek dan objek, lalu cek pelakunya—pakai awalan *di-* untuk orang ketiga, atau pakai bentuk dasar tanpa awalan untuk orang pertama dan kedua.",
+      "kunci_pembeda": "Membedakan pasif berawalan di- untuk pelaku orang ketiga dengan pasif tanpa awalan yang didahului pelaku orang pertama atau kedua.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Identifikasi Makna Bentuk Pasif ter- dan ke-...-an (Ketidaksengajaan, Kemampuan, Terkena Dampak)",
+      "nama_variasi": "Menentukan Makna Pasif Imbuhan ter- dan ke-...-an Sesuai Konteks",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Permukiman pesisir **terendam** banjir rob akibat tanggul laut tidak **terbendung** arus pasang, sehingga warga **kehilangan** akses jalan utama.",
-      "bedah_pola_markdown": "**Bedah Pola Makna Pasif & Fungsi:**\nPerhatikan variasi makna predikat pasif dalam struktur berikut: [S] *Permukiman pesisir* + [P] ***terendam*** *banjir rob* (*ketidaksengajaan/keadaan*), [S] *tanggul laut* + [P] *tidak **terbendung*** (*kemampuan: dapat dibendung*), dan [S] *warga* + [P] ***kehilangan*** *akses jalan* (*terkena dampak/menderita*). Dalam soal UTBK, imbuhan pasif *ter-* dan konfiks *ke-...-an* diuji kesamaan nuansa maknanya berdasarkan konteks pelaku dan sasaran sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Terangkat** (*kemampuan*) disamakan dengan **terjatuh** (*ketidaksengajaan*). | **Terangkat** (*dapat diangkat*) sejajar dengan **terbaca** (*dapat dibaca*). |\n| **Kebanjiran** (*tertimpa*) disamakan dengan **kedinginan** (*merasakan*). | **Kebanjiran** (*terkena dampak*) sejajar dengan **kecurian** (*terkena musibah*). |\n\n**Strategi Eksekusi:** Ubah kata berimbuhan *ter-* atau *ke-...-an* menjadi frasa uji (*tidak sengaja di-*, *dapat di-*, atau *tertimpa*), lalu cocokkan pola definisinya dengan opsi jawaban.",
-      "kunci_pembeda": "Menguji bentuk pasif ter- dan ke-...-an menggunakan frasa parafrasa 'tidak sengaja', 'dapat', atau 'tertimpa' untuk memastikan kesamaan makna kontekstual.",
+      "bedah_pola_markdown": "**Cara Berpikir & Uji Makna:**\nJangan menebak arti kata hanya dari bentuk imbuhannya, tetapi uji lewat konteks kalimatnya. Pada contoh di atas, kata ***terendam*** bermakna keadaan yang terjadi secara tidak sengaja. Kata *tidak **terbendung*** bermakna kemampuan (*tidak dapat dibendung*), sedangkan kata ***kehilangan*** bermakna terkena dampak atau mengalami musibah.\n\nDi soal UTBK, kamu biasanya diminta mencari pasangan kata berimbuhan *ter-* atau *ke-...-an* yang punya nuansa makna persis sama sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Terangkat** (*dapat diangkat*) disamakan dengan **terjatuh** (*tidak sengaja jatuh*). | **Terangkat** (*dapat diangkat*) sejajar dengan **terbaca** (*dapat dibaca*). |\n| **Kebanjiran** (*tertimpa banjir*) disamakan dengan **kedinginan** (*merasakan dingin*). | **Kebanjiran** (*terkena dampak*) sejajar dengan **kecurian** (*terkena musibah*). |\n\n**Langkah Cepat:** Ganti kata berimbuhan *ter-* atau *ke-...-an* dengan frasa uji (**tidak sengaja di-**, **dapat di-**, atau **tertimpa**), lalu cari opsi jawaban yang cocok dengan frasa uji tersebut.",
+      "kunci_pembeda": "Menguji bentuk pasif ter- dan ke-...-an dengan frasa pengganti 'tidak sengaja', 'dapat', atau 'tertimpa' agar makna kontekstualnya tepat.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Menjaga Konsistensi Sudut Pandang Pelaku (Aktif–Pasif) dalam Satu Paragraf",
+      "nama_variasi": "Menjaga Konsistensi Sudut Pandang Pelaku dalam Satu Paragraf",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "(1) Tim geologi memetakan zona patahan aktif di wilayah selatan. (2) Selanjutnya, sampel batuan **dianalisis** di laboratorium untuk mengukur potensi gempa.",
-      "bedah_pola_markdown": "**Bedah Pola Kepaduan Sudut Pandang:**\nBandingkan fokus subjek antarkalimat berikut: Kalimat (1) berpola aktif [S-pelaku] *Tim geologi* + [P] *memetakan* + [O] *zona patahan*, sedangkan kalimat (2) melompat ke pola pasif [S-sasaran] *sampel batuan* + [P] *dianalisis*. Pergeseran mendadak dari pelaku ke sasaran tanpa penanda transisi memecah kesatuan sudut pandang paragraf sesuai kaidah kohesi EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Peneliti mengumpulkan data lapangan, lalu **laporan disusun** (*melompat pasif*). | Peneliti mengumpulkan data lapangan, lalu **menyusun laporan** (*konsisten aktif*). |\n| Sistem sensor dipasang di hulu, kemudian **petugas memantau** debit air (*melompat aktif*). | Sistem sensor dipasang di hulu, kemudian **debit air dipantau** petugas (*konsisten pasif*). |\n\n**Strategi Eksekusi:** Identifikasi subjek utama kalimat pertama (pelaku atau sasaran), lalu selaraskan bentuk predikat kalimat berikutnya agar tetap bertumpu pada sudut pandang subjek yang sama.",
-      "kunci_pembeda": "Mempertahankan keseragaman fokus subjek (tetap pelaku aktif atau tetap sasaran pasif) pada rangkaian klausa setara maupun kalimat berurutan dalam satu paragraf.",
+      "bedah_pola_markdown": "**Cara Berpikir & Alur Paragraf:**\nCoba baca dua kalimat di atas secara berurutan. Kalimat (1) memakai sudut pandang aktif dengan pelaku sebagai subjek (*Tim geologi memetakan...*). Tiba-tiba, kalimat (2) melompat ke sudut pandang pasif dengan sasaran sebagai subjek (*sampel batuan dianalisis...*). Perubahan mendadak tanpa alasan ini membuat alur bacaan terasa tersendat.\n\nAgar paragraf tetap padu dan enak dibaca sesuai kaidah kalimat efektif, pertahankan fokus subjek yang konsisten dari awal hingga akhir.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Peneliti mengumpulkan data lapangan, lalu **laporan disusun** (*melompat ke pasif*). | Peneliti mengumpulkan data lapangan, lalu **menyusun laporan** (*tetap aktif*). |\n| Sistem sensor dipasang di hulu, kemudian **petugas memantau** debit air (*melompat ke aktif*). | Sistem sensor dipasang di hulu, kemudian **debit air dipantau** petugas (*tetap pasif*). |\n\n**Langkah Cepat:** Lihat subjek kalimat pertama (fokus ke pelaku aktif atau sasaran pasif), lalu selaraskan bentuk kata kerja kalimat berikutnya agar tetap bertumpu pada fokus yang sama.",
+      "kunci_pembeda": "Mempertahankan fokus subjek yang seragam (tetap pelaku aktif atau tetap sasaran pasif) pada klausa setara maupun kalimat berurutan dalam paragraf.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Kesetaraan Makna Kalimat Pasif dari Kalimat Aktif Majemuk Kompleks",
+      "nama_variasi": "Mempertahankan Kesetaraan Makna Kalimat Majemuk saat Dipasifkan",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Aktif: Otoritas moneter menaikkan suku bunga acuan ketika laju inflasi melampaui target tahunan. Pasif: Suku bunga acuan dinaikkan otoritas moneter ketika laju inflasi melampaui target tahunan.",
-      "bedah_pola_markdown": "**Bedah Pola Kesetaraan Kalimat Kompleks:**\nPerhatikan transformasi kalimat majemuk bertingkat: [S1] *Otoritas moneter* + [P1] *menaikkan* + [O1] *suku bunga acuan* + [K-klausa] *ketika [S2] laju inflasi [P2] melampaui [O2] target tahunan*. Saat dipasifkan, hanya induk kalimat transitif yang bertukar posisi [S1]–[O1], sedangkan anak kalimat keterangan tetap mempertahankan konjungsi (*ketika, agar, karena*) serta hubungan logis aslinya sesuai kaidah EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Suku bunga dinaikkan **sehingga** inflasi melampaui target (*konjungsi berubah*). | Suku bunga dinaikkan **ketika** inflasi melampaui target (*konjungsi tetap*). |\n| Target tahunan **dilampaui** suku bunga acuan (*menukar pelaku anak kalimat*). | Target tahunan **dilampaui** laju inflasi ketika suku bunga dinaikkan (*pelaku akurat*). |\n\n**Strategi Eksekusi:** Pisahkan induk kalimat dari anak kalimat, tukar posisi [S] dan [O] pada klausa transitif tanpa mengubah kata penghubung, lalu periksa kembali siapa pelaku tiap tindakan.",
-      "kunci_pembeda": "Membalik posisi subjek dan objek pada klausa transitif tanpa mengubah kata penghubung logis maupun menukar peran pelaku antarklausa.",
+      "bedah_pola_markdown": "**Cara Berpikir & Bedah Klausa:**\nSaat menghadapi kalimat panjang bertingkat, pecah dulu menjadi dua bagian: induk kalimat (*Otoritas moneter menaikkan suku bunga acuan*) dan anak kalimat keterangan waktu (*ketika laju inflasi melampaui target tahunan*). Ketika dipasifkan, cukup tukar posisi subjek dan objek pada bagian yang ingin difokuskan, tanpa mengubah kata hubung (*ketika, agar, karena*).\n\nPembuat soal sering menjebak dengan mengganti kata hubung atau menukar pelaku antarklausa sehingga makna logis kalimatnya berubah total.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Suku bunga dinaikkan **sehingga** inflasi melampaui target (*kata hubung berubah*). | Suku bunga dinaikkan **ketika** inflasi melampaui target (*kata hubung tetap*). |\n| Target tahunan **dilampaui** suku bunga acuan (*pelaku tertukar antarklausa*). | Target tahunan **dilampaui** laju inflasi ketika suku bunga dinaikkan (*pelaku tetap tepat*). |\n\n**Langkah Cepat:** Pisahkan induk kalimat dari anak kalimatnya, tukar subjek–objek tanpa mengganti kata hubung, lalu pastikan pelaku tiap tindakan tidak tertukar.",
+      "kunci_pembeda": "Menukar posisi subjek dan objek pada kalimat majemuk tanpa mengubah kata hubung logis maupun menukar peran pelaku antarklausa.",
       "visual": null
     }
   ],
@@ -174,7 +174,7 @@
         2
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Bacalah kutipan teks berikut dengan saksama!\n\n> (1) Seluruh data hasil pemantauan kualitas udara di kawasan industri **kami sudah kumpulkan** sejak awal kuartal ini. (2) Namun, sebagian sampel gas emisi belum **teranalisis** secara menyeluruh akibat keterbatasan kapasitas alat uji di laboratorium daerah.\n\nPerbaikan penulisan struktur pada kalimat (1) dan makna kata bercetak tebal pada kalimat (2) secara berurutan adalah ....",
+      "pertanyaan_markdown": "Bacalah kutipan laporan berikut dengan saksama!\n\n> (1) Seluruh data hasil pemantauan kualitas udara di kawasan industri **kami sudah kumpulkan** sejak awal kuartal ini. (2) Namun, sebagian sampel gas emisi belum **teranalisis** secara menyeluruh akibat keterbatasan alat uji di laboratorium daerah.\n\nPerbaikan susunan kata bercetak tebal pada kalimat (1) dan makna kata bercetak tebal pada kalimat (2) secara berurutan adalah ....",
       "opsi_jawaban": [
         "A. *sudah kami kumpulkan*; tidak sengaja dianalisis",
         "B. *sudah dikumpulkan oleh kami*; dapat dianalisis",
@@ -183,7 +183,7 @@
         "E. *telah dikumpulkan kami*; tidak mampu dianalisis"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Pada kalimat (1), pelaku berupa kata ganti orang pertama (*kami*) wajib menggunakan bentuk pasif tanpa awalan *di-* dengan penanda waktu (*sudah*) diletakkan sebelum pelaku menjadi **sudah kami kumpulkan**. Sementara itu, kata **teranalisis** yang didahului kata *belum* pada kalimat (2) menyatakan makna kemampuan, yakni **dapat dianalisis** (**opsi C**). **Opsi A** keliru memaknai *teranalisis* sebagai ketidaksengajaan, sedangkan **opsi B**, **D**, dan **E** melanggar susunan baku pasif berpelaku kata ganti orang.",
+      "bedah_cepat_markdown": "Kita cek satu per satu. Pada kalimat (1), pelakunya adalah kata ganti orang pertama (*kami*), sehingga bentuk pasifnya wajib membuang awalan *di-* dan meletakkan kata penanda waktu (*sudah*) sebelum pelaku menjadi **sudah kami kumpulkan**. Berikutnya, pada kalimat (2), kata **teranalisis** yang didahului kata ingkar *belum* menyatakan makna kemampuan, yaitu **dapat dianalisis** (**opsi C**). **Opsi A** keliru mengartikan *teranalisis* sebagai ketidaksengajaan, sedangkan **opsi B**, **D**, dan **E** menyalahi susunan baku pasif berpelaku kata ganti orang.",
       "visual": null
     },
     {
@@ -192,7 +192,7 @@
         3
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Perhatikan paragraf berikut!\n\n> (1) Kementerian Kelautan memperluas zona konservasi terumbu karang di perairan timur Indonesia. (2) Langkah strategis ini ditempuh untuk memulihkan populasi ikan karang yang menurun drastis. (3) Selain itu, **pengawasan patroli laut diperketat oleh petugas** guna mencegah praktik penangkapan ikan secara ilegal.\n\nPerbaikan kalimat (3) agar konsisten dengan sudut pandang pelaku pada kalimat (1) adalah ....",
+      "pertanyaan_markdown": "Perhatikan kutipan artikel berikut!\n\n> (1) Kementerian Kelautan memperluas zona konservasi terumbu karang di perairan timur Indonesia. (2) Langkah strategis ini ditempuh untuk memulihkan populasi ikan karang yang menurun drastis. (3) Selain itu, **pengawasan patroli laut diperketat oleh petugas** guna mencegah penangkapan ikan secara ilegal.\n\nPerbaikan kalimat (3) agar konsisten dengan sudut pandang pelaku pada kalimat (1) adalah ....",
       "opsi_jawaban": [
         "A. Selain itu, praktik penangkapan ikan ilegal dicegah melalui patroli laut oleh petugas.",
         "B. Selain itu, petugas memperketat pengawasan patroli laut guna mencegah penangkapan ikan secara ilegal.",
@@ -201,7 +201,7 @@
         "E. Selain itu, pengawasan patroli laut akan diperketat petugas demi mencegah penangkapan ilegal."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat (1) berfokus pada pelaku aktif (*Kementerian Kelautan memperluas...*), sedangkan kalimat (3) bergeser menjadi pasif (*pengawasan patroli laut diperketat...*). Untuk menjaga konsistensi sudut pandang pelaku aktif dalam paragraf, kalimat (3) perlu diubah menjadi konstruksi aktif dengan menempatkan **petugas** sebagai subjek pelaku dan **memperketat** sebagai predikat (**opsi B**). **Opsi A**, **C**, **D**, dan **E** tetap mempertahankan fokus sasaran pasif sehingga sudut pandang paragraf terpecah.",
+      "bedah_cepat_markdown": "Perhatikan subjek kalimat (1): fokusnya ada pada pelaku aktif (*Kementerian Kelautan memperluas...*). Sebaliknya, kalimat (3) mendadak bergeser menjadi pasif karena menjadikan sasaran sebagai subjek (*pengawasan patroli laut diperketat...*). Supaya sudut pandang paragraf tetap konsisten aktif, jadikan **petugas** sebagai subjek pelaku dan **memperketat** sebagai kata kerjanya (**opsi B**). **Opsi A**, **C**, **D**, dan **E** masih mempertahankan pola pasif sehingga alur sudut pandangnya terpecah.",
       "visual": null
     },
     {
@@ -211,16 +211,16 @@
         4
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Tim auditor independen menemukan ketidaksesuaian laporan anggaran setelah mereka memeriksa seluruh bukti transaksi proyek infrastruktur.\"\n\nBentuk kalimat pasif yang memiliki kesetaraan makna PALING TEPAT dengan kalimat di atas adalah ....",
+      "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Tim auditor independen menemukan selisih anggaran proyek setelah kami menyerahkan seluruh bukti transaksi bulan lalu.\"\n\nBentuk kalimat pasif yang memiliki kesetaraan makna PALING TEPAT dengan kalimat di atas adalah ....",
       "opsi_jawaban": [
-        "A. Ketidaksesuaian laporan anggaran ditemukan tim auditor independen setelah seluruh bukti transaksi proyek infrastruktur mereka periksa.",
-        "B. Ketidaksesuaian laporan anggaran ditemukan tim auditor independen sebelum seluruh bukti transaksi proyek infrastruktur diperiksa.",
-        "C. Seluruh bukti transaksi proyek infrastruktur ditemukan tim auditor independen setelah ketidaksesuaian laporan anggaran diperiksa.",
-        "D. Ketidaksesuaian laporan anggaran menemukan tim auditor independen setelah seluruh bukti transaksi proyek infrastruktur diperiksa.",
-        "E. Ketidaksesuaian laporan anggaran ditemukan tim auditor independen setelah seluruh bukti transaksi proyek infrastruktur diperiksa oleh mereka."
+        "A. Selisih anggaran proyek ditemukan tim auditor independen setelah seluruh bukti transaksi bulan lalu kami serahkan.",
+        "B. Selisih anggaran proyek ditemukan tim auditor independen sebelum seluruh bukti transaksi bulan lalu kami serahkan.",
+        "C. Seluruh bukti transaksi bulan lalu ditemukan tim auditor independen setelah selisih anggaran proyek kami serahkan.",
+        "D. Selisih anggaran proyek menemukan tim auditor independen setelah seluruh bukti transaksi bulan lalu kami serahkan.",
+        "E. Selisih anggaran proyek ditemukan tim auditor independen setelah seluruh bukti transaksi bulan lalu diserahkan oleh kami."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Pada induk kalimat, objek *ketidaksesuaian laporan anggaran* berubah menjadi subjek pasif dengan predikat **ditemukan tim auditor independen**. Pada anak kalimat keterangan waktu (*setelah...*), pelaku berupa kata ganti orang ketiga jamak (*mereka*) secara baku menggunakan konstruksi pasif tanpa awalan *di-* menjadi **mereka periksa** tanpa mengubah konjungsi *setelah* (**opsi A**). **Opsi B** mengubah konjungsi waktu, **opsi C** dan **D** menukar pelaku–sasaran, sedangkan **opsi E** memakai bentuk tidak baku *diperiksa oleh mereka*.",
+      "bedah_cepat_markdown": "Pecah dulu kalimat majemuk ini menjadi dua bagian. Pada induk kalimat, objek *selisih anggaran proyek* maju menjadi subjek dengan predikat **ditemukan tim auditor independen**. Pada anak kalimat keterangan waktu (*setelah...*), pelakunya adalah kata ganti orang pertama (*kami*), sehingga bentuk pasif bakunya wajib membuang awalan *di-* menjadi **kami serahkan** tanpa mengubah kata hubung *setelah* (**opsi A**). **Opsi B** mengubah urutan waktu menjadi *sebelum*, **opsi C** dan **D** menukar pelaku dengan sasaran, sedangkan **opsi E** memakai bentuk tidak baku *diserahkan oleh kami*.",
       "visual": null
     }
   ]

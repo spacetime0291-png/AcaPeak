@@ -9,132 +9,132 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Survei mencatat penjualan payung meningkat tajam di Kota X bersamaan dengan lonjakan kasus demam berdarah. Seorang pengamat menyimpulkan penggunaan payung memicu demam berdarah; manakah pernyataan yang paling memperlemah argumen tersebut?",
+      "pertanyaan_pemantik": "Penjualan payung di Kota X melonjak tajam bersamaan dengan naiknya kasus demam berdarah. Seorang pengamat menyimpulkan bahwa memakai payung memicu demam berdarah; manakah pernyataan yang paling melemahkan pendapat tersebut?",
       "opsi_cepat": [
         "Harga payung lipat sedang didiskon",
-        "Curah hujan tinggi memicu pembelian payung dan sarang nyamuk"
+        "Hujan lebat membuat warga membeli payung sekaligus memicu genangan sarang nyamuk"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Banyak peserta terjebak pada detail produk seperti harga payung, padahal untuk memperlemah argumen kausal cukup hadirkan faktor ketiga (curah hujan tinggi) yang meruntuhkan asumsi hubungan langsung."
+      "penjelasan_kilat": "Jangan terkecoh detail produk seperti harga payung. Untuk meruntuhkan hubungan sebab-akibat yang keliru, cukup hadirkan penyebab ketiga (hujan lebat) yang memicu kedua kejadian tersebut sekaligus."
     },
-    "konsep_inti_markdown": "**Evaluasi argumen** menguji ketahanan logika antara bukti dengan klaim penulis melalui celah asumsi tersembunyi.\n\n* **Struktur Argumen:** $\\text{Premis (Fakta)} + \\text{Asumsi Jembatan} \\rightarrow \\text{Simpulan (Klaim)}$\n* **Memperkuat (*Strengthen*):** Menutup celah asumsi dengan bukti baru atau menyingkirkan faktor alternatif.\n* **Memperlemah (*Weaken*):** Menyerang asumsi jembatan dengan bukti penyangkal atau penyebab lain.\n* **Tidak Relevan:** Informasi di luar lingkup simpulan (biaya, opini umum, atau objek berbeda).",
+    "konsep_inti_markdown": "**Evaluasi argumen** menguji seberapa kuat hubungan antara bukti (fakta) dan kesimpulan penulis lewat celah anggapan tersembunyi.\n\n* **Alur Argumen:** $\\text{Fakta (Premis)} + \\text{Anggapan Jembatan} \\rightarrow \\text{Kesimpulan (Klaim)}$\n* **Memperkuat (*Strengthen*):** Menutup celah keraguan dengan bukti baru atau menyingkirkan penyebab lain.\n* **Memperlemah (*Weaken*):** Menyerang anggapan jembatan dengan bukti penyangkal atau memunculkan faktor pemicu lain.\n* **Tidak Relevan:** Informasi di luar topik kesimpulan (seperti biaya, saran, atau objek berbeda) yang tidak mengubah kekuatan argumen.",
     "radar_jebakan_utbk": [
-      "Memilih opsi yang terdengar benar secara umum di dunia nyata, tetapi tidak menyentuh asumsi penghubung antara premis dan simpulan teks.",
-      "Tertukar membedakan pernyataan yang memperlemah argumen dengan pernyataan yang tidak relevan (tidak berdampak pada klaim utama)."
+      "Memilih opsi yang terdengar masuk akal di dunia nyata, tetapi tidak menyentuh jembatan penghubung antara fakta dan kesimpulan di teks.",
+      "Tertukar membedakan pernyataan yang melemahkan argumen dengan informasi yang tidak relevan (sama sekali tidak memengaruhi kesimpulan)."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Taksonomi Pola Evaluasi Argumen dan Sinyal Penalaran Induktif",
-      "subjudul_ringkas": "Panduan praktis membedah pola penguat, pelemah, asumsi tersembunyi, resolusi paradoks, dan pengecoh tidak relevan pada UTBK.",
+      "judul_blok": "Peta Pola Evaluasi Argumen di UTBK",
+      "subjudul_ringkas": "Panduan cepat membedah pola penguat, pelemah, anggapan tersembunyi, pemecah paradoks, dan pengecoh tidak relevan.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
-        "kolom_1": "Pola & Sinyal Argumen",
-        "kolom_2": "Contoh Penerapan Konkret",
+        "kolom_1": "Pola & Ciri Argumen",
+        "kolom_2": "Contoh Kasus Sehari-hari",
         "kolom_3": "Cara Bedakan & Jebakan"
       },
       "kelompok": [
         {
           "nama_kelompok": "Pola Memperlemah Argumen (Weaken)",
-          "ringkasan_kelompok": "Menyerang celah logika antara bukti dengan simpulan agar klaim penulis gugur.",
+          "ringkasan_kelompok": "Menyerang celah logika antara bukti dan kesimpulan agar klaim penulis gugur.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Penyebab Alternatif (Alternative Cause)",
-              "penjelasan_singkat": "Menunjukkan faktor lain di luar klaim penulis yang memicu akibat serupa ($X \\rightarrow Y$ diganti $Z \\rightarrow Y$).",
-              "contoh_penerapan": "Klaim: kopi tingkatkan fokus. Pelemah: **peserta penelitian juga tidur delapan jam** sebelum tes konsentrasi berlangsung.",
-              "jebakan_atau_catatan": "Jangan pilih opsi yang sekadar menyebut kopi mahal; fokuslah pada pemicu lain dari akibat yang sama.",
+              "judul_poin": "Ada Penyebab Lain (Alternative Cause)",
+              "penjelasan_singkat": "Menunjukkan faktor lain di luar dugaan penulis yang sebenarnya memicu hasil tersebut ($X \\rightarrow Y$ diganti $Z \\rightarrow Y$).",
+              "contoh_penerapan": "Klaim: kopi bikin fokus. Pelemah: **peserta tes ternyata juga tidur delapan jam** sebelum ujian berlangsung.",
+              "jebakan_atau_catatan": "Abaikan opsi yang cuma bilang kopi mahal; cari pemicu lain yang menghasilkan akibat yang sama.",
               "visual": null
             },
             {
-              "judul_poin": "Korelasi Terbalik (Reverse Causality)",
-              "penjelasan_singkat": "Membalik arah hubungan sebab-akibat sehingga variabel akibat justru menjadi penyebab utama ($Y \\rightarrow X$).",
-              "contoh_penerapan": "Klaim: olahraga kurangi stres. Pelemah: **orang dengan tingkat stres rendah lebih berenergi** untuk rutin berolahraga.",
-              "jebakan_atau_catatan": "Pengecoh sering menyangkal data premis; pelemah sejati menerima fakta premis tetapi membalik arah hubungan kausalitasnya.",
+              "judul_poin": "Sebab-Akibat Terbalik (Reverse Causality)",
+              "penjelasan_singkat": "Membalik arah hubungan sehingga hal yang dikira akibat justru menjadi penyebab utamanya ($Y \\rightarrow X$).",
+              "contoh_penerapan": "Klaim: olahraga meredakan stres. Pelemah: **orang yang tidak stres memang punya lebih banyak energi** untuk rutin olahraga.",
+              "jebakan_atau_catatan": "Pengecoh sering membantah data di teks. Pelemah yang tepat menerima data teks, lalu membalik arah hubungannya.",
               "visual": null
             },
             {
-              "judul_poin": "Kasus Tandingan (Counterexample)",
-              "penjelasan_singkat": "Menghadirkan bukti nyata ketika variabel penyebab terjadi ($X$), tetapi akibat yang diklaim ($Y$) tidak muncul.",
-              "contoh_penerapan": "Klaim: diskon naikkan omzet. Pelemah: **toko cabang A memberi diskon besar, tetapi penjualannya tetap stagnan**.",
-              "jebakan_atau_catatan": "Hindari opsi berskala anekdot ekstrem; pilih kasus tandingan yang konteks subjek dan waktunya setara dengan premis.",
+              "judul_poin": "Bukti Pengecualian (Counterexample)",
+              "penjelasan_singkat": "Memberikan bukti nyata ketika penyebab terjadi ($X$), tetapi akibat yang dijanjikan ($Y$) malah tidak muncul.",
+              "contoh_penerapan": "Klaim: diskon menaikkan penjualan. Pelemah: **cabang toko A memberi diskon besar, tetapi penjualannya tetap sepi**.",
+              "jebakan_atau_catatan": "Hindari contoh kasus yang terlalu ekstrem atau beda konteks; pilih kejadian yang kondisinya setara dengan teks.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Pola Memperkuat Argumen (Strengthen)",
-          "ringkasan_kelompok": "Menutup celah asumsi dan menyingkirkan faktor luar agar simpulan semakin valid.",
+          "ringkasan_kelompok": "Menutup celah keraguan dan menyingkirkan faktor luar agar kesimpulan makin kokoh.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Eliminasi Penyebab Alternatif",
-              "penjelasan_singkat": "Membuktikan tidak ada faktor luar ($\\neg Z$) yang ikut memengaruhi hasil selain variabel utama penulis.",
-              "contoh_penerapan": "Klaim: pupuk organik suburkan padi. Penguat: **lahan uji bebas hama dan mendapat irigasi identik** dengan kontrol.",
-              "jebakan_atau_catatan": "Pengecoh hanya mengulang kalimat premis dengan kata berbeda; penguat wajib membawa bukti baru di luar teks.",
+              "judul_poin": "Menyingkirkan Penyebab Lain",
+              "penjelasan_singkat": "Membuktikan tidak ada faktor luar ($\\neg Z$) yang ikut campur memengaruhi hasil selain faktor pilihan penulis.",
+              "contoh_penerapan": "Klaim: pupuk organik menyuburkan padi. Penguat: **lahan uji bebas hama dan mendapat air yang sama persis** dengan lahan pembanding.",
+              "jebakan_atau_catatan": "Hati-hati dengan opsi yang cuma mengulang kalimat teks dengan kata berbeda; penguat wajib membawa info baru.",
               "visual": null
             },
             {
-              "judul_poin": "Bukti Korelasi Positif Konsisten",
-              "penjelasan_singkat": "Menambah data pembanding yang menunjukkan peningkatan variabel penyebab selalu diikuti peningkatan akibat ($X\\uparrow \\rightarrow Y\\uparrow$).",
-              "contoh_penerapan": "Klaim: literasi digital cegah hoaks. Penguat: **daerah dengan kurikulum literasi tinggi mencatat penurunan laporan penipuan daring**.",
-              "jebakan_atau_catatan": "Pastikan arah data searah dengan simpulan; jika klaim membahas pencegahan, bukti penguat harus menunjukkan penurunan masalah.",
+              "judul_poin": "Data Tambahan yang Searah",
+              "penjelasan_singkat": "Menambah bukti pembanding bahwa setiap kali penyebab bertambah, akibatnya juga ikut meningkat ($X\\uparrow \\rightarrow Y\\uparrow$).",
+              "contoh_penerapan": "Klaim: literasi digital mencegah hoaks. Penguat: **daerah dengan kelas literasi rutin mencatat penurunan laporan penipuan daring**.",
+              "jebakan_atau_catatan": "Pastikan arah datanya sesuai kesimpulan; jika teks membahas pencegahan, datanya harus menunjukkan penurunan masalah.",
               "visual": null
             },
             {
-              "judul_poin": "Validasi Mekanisme Jembatan",
-              "penjelasan_singkat": "Menjelaskan proses teknis mengapa premis mampu menghasilkan simpulan ($\\text{Premis} \\rightarrow \\text{Mekanisme} \\rightarrow \\text{Simpulan}$).",
-              "contoh_penerapan": "Klaim: teh hijau bakar lemak. Penguat: **senyawa katekin terbukti mempercepat laju oksidasi asam lemak** di hati.",
-              "jebakan_atau_catatan": "Waspadai klaim populer tanpa dasar proses; opsi penguat sejati menjembatani celah hubungan antara fakta dan klaim.",
+              "judul_poin": "Menjelaskan Cara Kerja (Mekanisme)",
+              "penjelasan_singkat": "Menjabarkan proses masuk akal tentang bagaimana fakta bisa menghasilkan kesimpulan ($\\text{Fakta} \\rightarrow \\text{Proses} \\rightarrow \\text{Hasil}$).",
+              "contoh_penerapan": "Klaim: teh hijau membakar lemak. Penguat: **zat katekin di dalamnya mempercepat pemecahan cadangan lemak** di hati.",
+              "jebakan_atau_catatan": "Waspadai mitos populer tanpa penjelasan; penguat sejati menjembatani alasan teknis di balik kesimpulan.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Asumsi Implisit & Resolusi Paradoks",
-          "ringkasan_kelompok": "Menemukan syarat tersembunyi penulis dan mendamaikan dua fakta yang tampak bertentangan.",
+          "nama_kelompok": "Anggapan Tersembunyi & Pemecah Paradoks",
+          "ringkasan_kelompok": "Menemukan syarat tak tertulis penulis dan mendamaikan dua fakta yang tampak bertentangan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Asumsi Jembatan (Uncovered Assumption)",
-              "penjelasan_singkat": "Pernyataan tak tertulis yang wajib benar agar lompatan dari premis ke simpulan sah secara logika.",
-              "contoh_penerapan": "Premis: nilai ujian naik. Simpulan: metode baru berhasil. Asumsi: **tingkat kesulitan soal ujian tahun ini setara**.",
-              "jebakan_atau_catatan": "Uji dengan teknik negasi: jika kalimat opsi diingkari dan simpulan langsung runtuh, itulah asumsi benarnya.",
+              "judul_poin": "Anggapan Jembatan (Asumsi Implisit)",
+              "penjelasan_singkat": "Syarat tak tertulis yang wajib benar agar lompatan dari fakta menuju kesimpulan tetap sah.",
+              "contoh_penerapan": "Fakta: nilai ujian naik. Kesimpulan: cara belajar baru berhasil. Anggapan: **tingkat kesulitan soal tahun ini sama dengan tahun lalu**.",
+              "jebakan_atau_catatan": "Gunakan jurus lawan kalimat: jika opsi dibalik maknanya lalu kesimpulan langsung hancur, itulah jawabannya.",
               "visual": null
             },
             {
-              "judul_poin": "Resolusi Paradoks (Faktor Pembeda)",
-              "penjelasan_singkat": "Menjelaskan dua fakta bertolak belakang dengan memunculkan variabel ketiga yang mendamaikan keduanya ($A \\land B$ konsisten).",
-              "contoh_penerapan": "Paradoks: panen beras naik, tetapi impor tetap tinggi. Resolusi: **lonjakan ekspor beras premium menguras stok domestik**.",
-              "jebakan_atau_catatan": "Jangan memilih opsi yang hanya menjelaskan satu fakta saja atau menyangkal salah satu fakta dalam paradoks.",
+              "judul_poin": "Penjelas Paradoks (Faktor Pembeda)",
+              "penjelasan_singkat": "Mendamaikan dua fakta yang bertolak belakang dengan memunculkan faktor ketiga yang membuat keduanya masuk akal ($A \\land B$ selaras).",
+              "contoh_penerapan": "Paradoks: panen beras naik, tetapi impor tetap tinggi. Penjelas: **ekspor beras premium melonjak tajam sehingga stok dalam negeri menipis**.",
+              "jebakan_atau_catatan": "Jangan pilih opsi yang hanya menjelaskan satu fakta saja atau malah menyangkal salah satu fakta di teks.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Evaluasi Relevansi & Kualitas Bukti (A-B)",
-          "ringkasan_kelompok": "Menyaring pengecoh di luar lingkup dan menilai hubungan dua pernyataan terpisah.",
+          "nama_kelompok": "Uji Relevansi & Kualitas Bukti (A-B)",
+          "ringkasan_kelompok": "Menyaring pengecoh di luar topik dan menilai dampak dua pernyataan terpisah.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Tidak Relevan: Beda Objek atau Lingkup",
-              "penjelasan_singkat": "Pernyataan membahas subjek, lokasi, waktu, atau aspek biaya yang tidak berkaitan langsung dengan klaim utama.",
-              "contoh_penerapan": "Klaim: mobil listrik kurangi emisi kota. Tidak relevan: **harga baterai litium diprediksi turun tahun depan**.",
-              "jebakan_atau_catatan": "Pengecoh sering memakai kata kunci mirip wacana (sama-sama mobil listrik), tetapi fokusnya bergeser ke aspek ekonomi.",
+              "judul_poin": "Tidak Relevan: Beda Topik atau Objek",
+              "penjelasan_singkat": "Pernyataan membahas subjek, tempat, waktu, atau urusan biaya yang tidak menyentuh inti kesimpulan.",
+              "contoh_penerapan": "Klaim: mobil listrik mengurangi polusi kota. Tidak relevan: **harga baterai mobil listrik diperkirakan turun tahun depan**.",
+              "jebakan_atau_catatan": "Pengecoh sering memakai kata yang mirip teks (sama-sama mobil listrik), tetapi fokusnya melenceng ke soal harga.",
               "visual": null
             },
             {
-              "judul_poin": "Tidak Relevan: Opini Normatif Tanpa Data",
-              "penjelasan_singkat": "Mengandung kata sinyal seperti *sebaiknya*, *harus*, atau penilaian subjektif tanpa bukti kausalitas empiris.",
-              "contoh_penerapan": "Klaim: kerja jarak jauh tingkatkan produktivitas. Tidak relevan: **perusahaan sebaiknya menyediakan tunjangan internet bagi seluruh karyawan**.",
-              "jebakan_atau_catatan": "Kalimat saran atau harapan normatif tidak pernah memperkuat maupun memperlemah klaim faktual dalam evaluasi argumen UTBK.",
+              "judul_poin": "Tidak Relevan: Sekadar Saran atau Opini",
+              "penjelasan_singkat": "Berisi kata anjuran seperti *sebaiknya*, *harus*, atau pendapat pribadi tanpa bukti kejadian nyata.",
+              "contoh_penerapan": "Klaim: kerja dari rumah menaikkan produktivitas. Tidak relevan: **perusahaan sebaiknya memberi tunjangan internet untuk semua karyawan**.",
+              "jebakan_atau_catatan": "Kalimat saran atau harapan tidak pernah memperkuat maupun memperlemah klaim fakta dalam soal UTBK.",
               "visual": null
             },
             {
-              "judul_poin": "Kualitas Bukti Pernyataan A dan B",
-              "penjelasan_singkat": "Menguji pernyataan A dan B secara terpisah terhadap simpulan utama (memperkuat, memperlemah, atau tidak relevan).",
-              "contoh_penerapan": "Simpulan: kota X macet karena parkir liar. **Pernyataan A (data razia turunkan macet) memperkuat**; B (tarif parkir) netral.",
-              "jebakan_atau_catatan": "Nilai A dan B secara independen terhadap simpulan teks, bukan membandingkan hubungan antara A dan B.",
+              "judul_poin": "Menilai Kualitas Pernyataan A dan B",
+              "penjelasan_singkat": "Menguji pernyataan A dan B satu per satu terhadap kesimpulan utama (apakah memperkuat, memperlemah, atau tidak relevan).",
+              "contoh_penerapan": "Kesimpulan: jalan macet karena parkir liar. **Pernyataan A (razia parkir kurangi macet) memperkuat**; B (warna marka jalan) tidak relevan.",
+              "jebakan_atau_catatan": "Bandingkan A dan B masing-masing ke kesimpulan teks, jangan membandingkan hubungan antara A dengan B.",
               "visual": null
             }
           ]
@@ -145,56 +145,56 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Memperkuat Argumen (Strengthen) melalui Data Bukti Baru atau Eliminasi Alternatif",
+      "nama_variasi": "Memperkuat Argumen dengan Bukti Baru atau Menyingkirkan Penyebab Lain",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Setelah Pemerintah Kota menerapkan jalur khusus sepeda sepanjang koridor utama, volume kemacetan kendaraan bermotor turun sebesar $18\\%$. Kepala Dinas Perhubungan menyimpulkan bahwa keberadaan jalur sepeda berhasil mengalihkan pengguna mobil pribadi ke sepeda.",
-      "bedah_pola_markdown": "**Struktur:** Premis (Jalur sepeda dibangun dan kemacetan turun $18\\%$) $\\rightarrow$ Asumsi Jembatan (Penurunan macet dipicu perpindahan pengguna mobil pribadi ke sepeda) $\\rightarrow$ Simpulan (Jalur sepeda efektif mengalihkan pengguna mobil pribadi).\n\n| Bukti Baru | Dampak Logis |\n| :--- | :--- |\n| Sebanyak $70\\%$ pesepeda baru adalah mantan pengemudi mobil | **Memperkuat** (bukti alih moda langsung) |\n| Tarif parkir dan harga bahan bakar tidak mengalami perubahan | **Memperkuat** (eliminasi faktor alternatif) |\n| Biaya pengecatan jalur sepeda dinilai cukup tinggi oleh warga | **Tidak Relevan** (di luar klaim efektivitas) |\n\n**Langkah Eliminasi:** Kunci simpulan penulis dan temukan celah asumsi penghubungnya. Eliminasi opsi yang membahas anggaran, opini normatif, atau wilayah lain. Pilih pernyataan yang membuktikan mekanisme klaim secara langsung atau menyingkirkan variabel penyebab tandingan.",
-      "kunci_pembeda": "Fokus mencari informasi tambahan yang menutup celah keraguan antara premis dan simpulan atau menyingkirkan penyebab alternatif.",
+      "stimulus_mini": "Setelah Pemerintah Kota membuat jalur khusus sepeda di jalan utama, kemacetan kendaraan bermotor turun sebesar $20\\%$. Kepala Dinas Perhubungan menyimpulkan bahwa jalur sepeda berhasil membuat pengguna mobil pribadi beralih naik sepeda.",
+      "bedah_pola_markdown": "**Bedah Alur:** Fakta (Jalur sepeda dibuat dan macet turun $20\\%$) $\\rightarrow$ Anggapan Jembatan (Penurunan macet terjadi karena pengguna mobil pindah ke sepeda) $\\rightarrow$ Kesimpulan (Jalur sepeda efektif mengalihkan pengguna mobil pribadi).\n\n| Bukti Baru | Dampak ke Argumen |\n| :--- | :--- |\n| Sebanyak $70\\%$ pesepeda baru adalah mantan pengemudi mobil | **Memperkuat** (membuktikan perpindahan langsung) |\n| Tarif parkir dan harga bensin tidak berubah sama sekali | **Memperkuat** (menyingkirkan penyebab lain) |\n| Biaya pengecatan jalur sepeda dinilai mahal oleh warga | **Tidak Relevan** (membahas biaya, bukan efektivitas) |\n\n**Cara Eksekusi:** Kunci kesimpulan penulis, lalu cari celah keraguannya. Coret opsi yang membahas anggaran, saran, atau kota lain. Pilih pernyataan yang membuktikan proses klaim secara langsung atau menyingkirkan faktor pemicu tandingan.",
+      "kunci_pembeda": "Mencari informasi tambahan yang menutup celah keraguan antara fakta dan kesimpulan atau menyingkirkan penyebab lain.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Memperlemah Argumen (Weaken) dengan Menyerang Asumsi Jembatan",
+      "nama_variasi": "Memperlemah Argumen dengan Menyerang Anggapan Jembatan",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Perusahaan logistik X mengganti seluruh armada truk diesel dengan truk listrik dan mencatat penurunan biaya operasional sebesar $25\\%$ dalam setahun. Manajemen menyimpulkan bahwa penggunaan truk listrik jauh lebih hemat biaya dibandingkan truk diesel.",
-      "bedah_pola_markdown": "**Struktur:** Premis (Penggantian ke truk listrik diikuti turunnya biaya operasional $25\\%$) $\\rightarrow$ Asumsi Jembatan (Tidak ada faktor lain yang menurunkan biaya serta biaya awal tidak dihitung) $\\rightarrow$ Simpulan (Truk listrik lebih hemat biaya daripada truk diesel).\n\n| Bukti Pembanding | Dampak Logis |\n| :--- | :--- |\n| Rute pengiriman dipangkas $40\\%$ pada tahun yang sama | **Memperlemah** (menghadirkan penyebab lain) |\n| Biaya penggantian baterai truk listrik melebihi penghematan tahunan | **Memperlemah** (menyerang asumsi total biaya) |\n| Truk listrik menghasilkan emisi karbon nol di jalan raya | **Tidak Relevan** (membahas lingkungan, bukan biaya) |\n\n**Langkah Eliminasi:** Temukan anggapan tak tertulis yang wajib benar agar simpulan berlaku. Singkirkan opsi yang memuji aspek lain (seperti ramah lingkungan). Pilih bukti yang memunculkan faktor perancu atau data biaya tersembunyi yang membatalkan simpulan.",
-      "kunci_pembeda": "Menyerang titik terlemah pada asumsi penghubung dengan menghadirkan faktor perancu atau bukti penyangkal langsung.",
+      "stimulus_mini": "Perusahaan logistik X mengganti seluruh truk diesel menjadi truk listrik dan mencatat biaya operasional turun $25\\%$ dalam setahun. Manajemen menyimpulkan bahwa truk listrik jauh lebih hemat biaya dibandingkan truk diesel.",
+      "bedah_pola_markdown": "**Bedah Alur:** Fakta (Pakai truk listrik diikuti turunnya biaya operasional $25\\%$) $\\rightarrow$ Anggapan Jembatan (Tidak ada faktor lain yang menurunkan biaya dan tidak ada biaya tersembunyi) $\\rightarrow$ Kesimpulan (Truk listrik lebih hemat biaya daripada truk diesel).\n\n| Bukti Pembanding | Dampak ke Argumen |\n| :--- | :--- |\n| Jarak rute pengiriman dipangkas $40\\%$ pada tahun yang sama | **Memperlemah** (memunculkan penyebab lain) |\n| Biaya ganti baterai truk listrik lebih besar dari penghematan tahunan | **Memperkuat**? Bukan, **Memperlemah** (menyerang total biaya) |\n| Truk listrik tidak mengeluarkan asap polusi di jalan raya | **Tidak Relevan** (membahas polusi, bukan biaya) |\n\n**Cara Eksekusi:** Cari anggapan tak tertulis yang wajib benar agar kesimpulan masuk akal. Buang opsi yang memuji keunggulan lain (seperti bebas polusi). Pilih bukti yang memunculkan faktor pengganggu atau biaya tersembunyi yang membatalkan klaim hemat.",
+      "kunci_pembeda": "Menyerang titik terlemah pada anggapan penghubung dengan memunculkan faktor pengganggu atau bukti penyangkal.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Identifikasi Asumsi Implisit (Uncovered Assumption) yang Mendasari Klaim Penulis",
+      "nama_variasi": "Menemukan Anggapan Tersembunyi (Asumsi Implisit) Penulis",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Kementerian Kesehatan mewajibkan pencantuman label peringatan kadar gula tinggi pada seluruh kemasan minuman ringan. Kebijakan ini dipastikan akan menurunkan angka penderita diabetes di kalangan remaja dalam dua tahun mendatang.",
-      "bedah_pola_markdown": "**Struktur:** Premis (Label peringatan kadar gula tinggi diwajibkan pada minuman ringan) $\\rightarrow$ Asumsi Implisit (Remaja membaca label tersebut dan mengurangi konsumsi gula) $\\rightarrow$ Simpulan (Angka diabetes remaja pasti menurun dalam dua tahun).\n\n| Kandidat Pernyataan | Uji Negasi (*Negation Test*) |\n| :--- | :--- |\n| Remaja memperhatikan label gizi sebelum membeli minuman | Jika dinegasikan (remaja mengabaikan label), simpulan **runtuh** (**Asumsi Sah**) |\n| Minuman ringan tanpa gula memiliki rasa lebih enak | Jika dinegasikan, simpulan **tetap berjalan** (**Bukan Asumsi**) |\n| Industri minuman mendukung regulasi pencantuman label | Hanya opini sikap, **tidak menopang** alur kausal |\n\n**Langkah Eliminasi:** Gunakan teknik **Uji Negasi**: balikkan makna opsi menjadi kalimat negatif. Jika simpulan penulis langsung hancur akibat negasi tersebut, itulah asumsi implisit yang dicari.",
-      "kunci_pembeda": "Mengungkap premis tersembunyi yang tidak tertulis di teks tetapi wajib bernilai benar agar simpulan tetap masuk akal.",
+      "stimulus_mini": "Kementerian Kesehatan mewajibkan label peringatan kadar gula tinggi pada semua kemasan minuman ringan. Kebijakan ini diyakini akan menurunkan angka diabetes pada remaja dalam dua tahun ke depan.",
+      "bedah_pola_markdown": "**Bedah Alur:** Fakta (Label peringatan gula tinggi diwajibkan pada minuman ringan) $\\rightarrow$ Anggapan Tersembunyi (Remaja membaca label tersebut dan mengurangi minum manis) $\\rightarrow$ Kesimpulan (Angka diabetes remaja menurun dalam dua tahun).\n\n| Pilihan Pernyataan | Uji Lawan Kalimat (*Negation Test*) |\n| :--- | :--- |\n| Remaja membaca label gizi sebelum membeli minuman | Jika dibalik (remaja cuek pada label), kesimpulan **hancur** (**Anggapan Sah**) |\n| Minuman tanpa gula punya rasa yang lebih segar | Jika dibalik, kesimpulan **tetap jalan** (**Bukan Anggapan**) |\n| Produsen minuman mendukung aturan pemasangan label | Hanya sikap dukungan, **tidak menjamin** diabetes turun |\n\n**Cara Eksekusi:** Gunakan trik **Uji Lawan Kalimat**: ubah opsi menjadi kalimat penyangkalan (tambahkan kata *tidak*). Jika kesimpulan penulis langsung runtuh setelah opsi itu dibalik, berarti itulah anggapan tersembunyinya.",
+      "kunci_pembeda": "Mengungkap syarat tersembunyi yang tidak tertulis di teks, tetapi wajib benar agar kesimpulan tetap masuk akal.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Evaluasi Relevansi Argumen (Membedakan Fakta Pendukung vs Opini Tidak Relevan)",
+      "nama_variasi": "Membedakan Fakta Pendukung vs Opini Tidak Relevan",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Berdasarkan uji klinis terhadap 300 pasien hipertensi, konsumsi ekstrak daun seledri selama delapan minggu menurunkan tekanan darah sistolik rata-rata $12\\text{ mmHg}$. Peneliti merekomendasikan ekstrak ini sebagai terapi pendamping hipertensi ringan.",
-      "bedah_pola_markdown": "**Struktur:** Premis (Uji klinis 300 pasien mencatat penurunan sistolik $12\\text{ mmHg}$) $\\rightarrow$ Asumsi Jembatan (Ekstrak aman dikonsumsi bersama obat utama tanpa efek samping berat) $\\rightarrow$ Simpulan (Ekstrak layak direkomendasikan sebagai terapi pendamping).\n\n| Pernyataan Evaluasi | Klasifikasi Relevansi |\n| :--- | :--- |\n| Tidak ditemukan interaksi negatif antara ekstrak seledri dan obat hipertensi | **Fakta Pendukung Relevan** (menjaga syarat keamanan) |\n| Daun seledri mudah ditanam di pekarangan rumah warga | **Fakta Tidak Relevan** (tidak menguji efektivitas klinis) |\n| Masyarakat sebaiknya lebih menyukai obat herbal tradisional | **Opini Normatif Tidak Relevan** (bukan bukti medis) |\n\n**Langkah Eliminasi:** Pisahkan pernyataan berbasis bukti objektif dari penilaian subjektif (*sebaiknya*, *harus*). Kemudian uji apakah fakta tersebut menyentuh variabel simpulan (efektivitas dan keamanan terapi) atau sekadar informasi latar belakang yang tidak berdampak.",
-      "kunci_pembeda": "Menyaring informasi agar tidak tertipu oleh fakta benar atau opini populer yang sama sekali tidak memengaruhi validitas simpulan.",
+      "stimulus_mini": "Berdasarkan uji coba terhadap 300 pasien tekanan darah tinggi, konsumsi ekstrak daun seledri selama delapan minggu menurunkan tekanan darah rata-rata $10\\text{ mmHg}$. Peneliti menyarankan ekstrak ini sebagai pendamping obat hipertensi ringan.",
+      "bedah_pola_markdown": "**Bedah Alur:** Fakta (Uji coba 300 pasien menurunkan tekanan darah $10\\text{ mmHg}$) $\\rightarrow$ Anggapan Jembatan (Ekstrak aman diminum bersama obat utama tanpa efek samping berat) $\\rightarrow$ Kesimpulan (Ekstrak layak jadi pendamping obat hipertensi).\n\n| Pernyataan Evaluasi | Status Relevansi |\n| :--- | :--- |\n| Tidak ada efek samping saat ekstrak seledri diminum bersama obat dokter | **Fakta Pendukung Relevan** (menjaga syarat keamanan) |\n| Tanaman seledri mudah ditanam di pot halaman rumah | **Fakta Tidak Relevan** (tidak membahas khasiat medis) |\n| Masyarakat sebaiknya lebih memilih obat herbal daripada obat kimia | **Opini Tidak Relevan** (sekadar saran, bukan bukti uji coba) |\n\n**Cara Eksekusi:** Pisahkan pernyataan yang berisi data nyata dari kalimat saran (*sebaiknya*, *harus*). Setelah itu, cek apakah data tersebut menyentuh inti kesimpulan (khasiat dan keamanan) atau cuma info tambahan yang tidak berdampak.",
+      "kunci_pembeda": "Menyaring informasi agar tidak terjebak fakta benar atau opini populer yang sama sekali tidak memengaruhi kesimpulan.",
       "visual": null
     },
     {
       "nomor_variasi": 5,
-      "nama_variasi": "Resolusi Paradoks (Menjelaskan Dua Fakta yang Tampak Bertolak Belakang)",
+      "nama_variasi": "Memecahkan Paradoks (Dua Fakta yang Tampak Bertentangan)",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "Dalam lima tahun terakhir, jumlah gerai toko buku fisik di kota besar menurun hingga $30\\%$. Namun, data asosiasi penerbit pada periode yang sama justru menunjukkan total penjualan buku cetak meningkat sebesar $22\\%$.",
-      "bedah_pola_markdown": "**Struktur Paradoks:** Fakta A (Gerai toko buku fisik menyusut $30\\%$) bertolak belakang dengan Fakta B (Penjualan buku cetak naik $22\\%$) $\\rightarrow$ Asumsi Jembatan (Terdapat saluran distribusi alternatif yang menyerap lonjakan permintaan).\n\n| Kandidat Penjelasan | Kemampuan Menjelaskan Paradoks |\n| :--- | :--- |\n| Penjualan buku cetak melalui lokapasar daring melonjak empat kali lipat | **Menyelesaikan Paradoks** (menjelaskan A dan B sekaligus) |\n| Minat baca buku digital masyarakat mengalami peningkatan pesat | **Gagal** (tidak menjelaskan kenaikan buku cetak) |\n| Biaya sewa ruang ritel di pusat perbelanjaan terus naik | **Parsial** (hanya menjelaskan Fakta A, mengabaikan B) |\n\n**Langkah Eliminasi:** Cari satu pernyataan yang membuat **Fakta A dan Fakta B sama-sama masuk akal secara bersamaan**. Singkirkan opsi yang hanya menjelaskan salah satu sisi fakta atau justru memperparah pertentangan antar-kedua data.",
-      "kunci_pembeda": "Menemukan jembatan logika tunggal yang membuat dua fenomena tampak kontradiktif dapat terjadi secara bersamaan.",
+      "stimulus_mini": "Dalam lima tahun terakhir, jumlah toko buku fisik di kota besar tutup hingga $30\\%$. Anehnya, data asosiasi penerbit pada waktu yang sama justru mencatat penjualan buku cetak naik sebesar $20\\%$.",
+      "bedah_pola_markdown": "**Bedah Paradoks:** Fakta A (Toko buku fisik menyusut $30\\%$) bertabrakan dengan Fakta B (Penjualan buku cetak naik $20\\%$) $\\rightarrow$ Jembatan Penjelas (Ada jalur jualan lain yang menampung lonjakan pembeli buku cetak).\n\n| Pilihan Penjelasan | Kemampuan Memecahkan Paradoks |\n| :--- | :--- |\n| Penjualan buku cetak lewat toko daring (*online*) melonjak empat kali lipat | **Tepat** (menjelaskan toko tutup sekaligus penjualan naik) |\n| Minat masyarakat membaca buku digital (*e-book*) meningkat pesat | **Salah** (tidak menjelaskan kenaikan buku cetak) |\n| Biaya sewa ruko di pusat perbelanjaan terus naik tiap tahun | **Setengah Jalan** (cuma menjelaskan toko tutup, mengabaikan buku laris) |\n\n**Cara Eksekusi:** Cari satu alasan yang membuat **Fakta A dan Fakta B bisa terjadi bersamaan tanpa saling bertentangan**. Coret opsi yang cuma menjelaskan satu sisi kejadian atau malah memperparah keanehan data.",
+      "kunci_pembeda": "Menemukan satu alasan penghubung yang membuat dua kejadian tampak kontradiktif bisa berjalan beriringan.",
       "visual": null
     },
     {
       "nomor_variasi": 6,
-      "nama_variasi": "Kualitas Bukti berdasarkan Pernyataan A dan B (Memperkuat, Memperlemah, Tidak Relevan)",
+      "nama_variasi": "Menilai Kualitas Bukti Pernyataan A dan B",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Argumen Utama: Penerapan sistem kerja empat hari seminggu meningkatkan produktivitas karyawan kantor. Pernyataan A: Tingkat penyelesaian proyek tepat waktu naik $20\\%$ sejak aturan berlaku. Pernyataan B: Warna seragam kantor diganti menjadi biru muda pada bulan yang sama.",
-      "bedah_pola_markdown": "**Struktur Evaluasi:** Klaim Utama (Kerja empat hari meningkatkan produktivitas) diuji secara terpisah terhadap **Pernyataan A** dan **Pernyataan B** menggunakan matriks hubungan logis khas UTBK.\n\n| Pernyataan Uji | Hubungan terhadap Klaim Utama | Status |\n| :--- | :--- | :--- |\n| **Pernyataan A** (Penyelesaian proyek tepat waktu naik $20\\%$) | Mengonfirmasi indikator kinerja kerja | **Memperkuat** |\n| **Pernyataan B** (Perubahan warna seragam kantor) | Tidak berkaitan dengan jam kerja maupun kinerja | **Tidak Relevan** |\n\n**Langkah Eliminasi:** Evaluasi masing-masing pernyataan secara **independen** terhadap klaim utama, jangan membandingkan A dengan B secara langsung. Tentukan apakah tiap pernyataan menopang asumsi (**Memperkuat**), meruntuhkan asumsi (**Memperlemah**), atau berada di luar lingkup argumen (**Tidak Relevan**), lalu cocokan dengan kombinasi opsi.",
-      "kunci_pembeda": "Menilai dampak logis dua pernyataan secara terpisah terhadap argumen utama sebelum menggabungkannya ke dalam format pilihan ganda.",
+      "stimulus_mini": "Argumen Utama: Sistem kerja empat hari seminggu meningkatkan produktivitas karyawan kantor. Pernyataan A: Jumlah proyek yang selesai tepat waktu naik $20\\%$ sejak aturan berlaku. Pernyataan B: Warna seragam kantor diganti menjadi biru muda pada bulan yang sama.",
+      "bedah_pola_markdown": "**Bedah Evaluasi:** Klaim Utama (Kerja empat hari menaikkan produktivitas) diuji satu per satu memakai **Pernyataan A** dan **Pernyataan B**.\n\n| Pernyataan Uji | Hubungan ke Klaim Utama | Status |\n| :--- | :--- | :--- |\n| **Pernyataan A** (Proyek selesai tepat waktu naik $20\\%$) | Membuktikan hasil kerja meningkat | **Memperkuat** |\n| **Pernyataan B** (Perubahan warna seragam kantor) | Tidak berkaitan dengan sistem kerja maupun hasil kerja | **Tidak Relevan** |\n\n**Cara Eksekusi:** Nilai tiap pernyataan secara **terpisah** terhadap klaim utama—jangan bandingkan A dengan B. Tentukan apakah masing-masing pernyataan menopang klaim (**Memperkuat**), meruntuhkan klaim (**Memperlemah**), atau di luar topik (**Tidak Relevan**).",
+      "kunci_pembeda": "Menilai dampak dua pernyataan secara terpisah terhadap argumen utama sebelum mencocokkannya ke pilihan ganda.",
       "visual": null
     }
   ],
@@ -206,16 +206,16 @@
         2
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Dinas Pariwisata mencatat bahwa setelah festival kuliner malam rutin digelar setiap akhir pekan di kawasan kota lama, tingkat hunian hotel di sekitar kawasan tersebut meningkat sebesar $35\\%$. Kepala Dinas menyimpulkan bahwa festival kuliner malam merupakan daya tarik utama yang mendorong wisatawan menginap di kawasan kota lama. Manakah pernyataan berikut yang PALING MEMPERLEMAH simpulan tersebut?",
+      "pertanyaan_markdown": "Dinas Pariwisata mencatat bahwa setelah festival kuliner malam rutin diadakan setiap akhir pekan di kawasan kota lama, tingkat hunian hotel di sekitar kawasan itu naik $30\\%$. Kepala Dinas menyimpulkan bahwa festival kuliner malam menjadi daya tarik utama yang membuat wisatawan menginap di kota lama. Manakah pernyataan berikut yang PALING MEMPERLEMAH kesimpulan tersebut?",
       "opsi_jawaban": [
-        "A. Sebagian besar pedagang di festival kuliner malam merupakan pelaku usaha mikro lokal.",
-        "B. Pada periode yang sama, maskapai penerbangan membuka rute langsung baru menuju bandara kota tersebut dengan tarif promo besar-besaran.",
-        "C. Harga kamar hotel di kawasan kota lama relatif lebih terjangkau dibandingkan hotel di pusat bisnis.",
-        "D. Pengunjung lokal dari dalam kota juga ramai mendatangi festival kuliner malam untuk bersantai.",
+        "A. Sebagian besar pedagang di festival kuliner malam adalah pelaku usaha kecil lokal.",
+        "B. Pada waktu yang sama, maskapai penerbangan membuka rute langsung baru ke kota tersebut dengan tiket promo besar-besaran.",
+        "C. Tarif kamar hotel di kawasan kota lama lebih murah dibandingkan hotel di pusat bisnis.",
+        "D. Warga lokal dari dalam kota juga ramai datang ke festival kuliner malam untuk bersantai.",
         "E. Pemerintah daerah berencana memperluas area parkir di sekitar kawasan kota lama tahun depan."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Simpulan Kepala Dinas mengasumsikan festival kuliner adalah penyebab tunggal lonjakan hunian hotel. **Opsi B** paling memperlemah argumen dengan menghadirkan penyebab alternatif kuat: pembukaan rute penerbangan baru bertarif promo pada waktu bersamaan yang mendatangkan wisatawan luar kota. **Opsi A**, **C**, dan **E** tidak relevan dengan lonjakan kunjungan, sedangkan **Opsi D** hanya menjelaskan keramaian pengunjung lokal yang tidak menginap di hotel.",
+      "bedah_cepat_markdown": "Kepala Dinas mengira festival kuliner adalah satu-satunya penyebab hotel penuh. Untuk meruntuhkannya, kita cari penyebab lain yang terjadi bersamaan.\n\n* **Opsi B (Benar):** Pembukaan rute penerbangan baru bertarif promo di waktu yang sama mendatangkan banyak wisatawan luar kota, sehingga menjelaskan lonjakan hunian hotel tanpa perlu festival kuliner.\n* **Opsi A, C, dan E (Salah):** Membahas asal pedagang, perbandingan harga lama, dan rencana parkir tahun depan—semuanya tidak menjelaskan lonjakan tamu hotel saat ini.\n* **Opsi D (Salah):** Warga lokal yang datang jajan pulang ke rumah masing-masing dan tidak menginap di hotel.",
       "visual": null
     },
     {
@@ -225,16 +225,16 @@
         5
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Meskipun tarif tol antarkota dinaikkan sebesar $15\\%$ sejak awal tahun, volume kendaraan pribadi yang melintasi ruas tol tersebut justru meningkat $10\\%$ dibandingkan tahun sebelumnya. Manakah pernyataan berikut yang PALING TEPAT menjelaskan kondisi yang tampak bertolak belakang tersebut?",
+      "pertanyaan_markdown": "Meskipun tarif tol antarkota naik sebesar $15\\%$ sejak awal tahun, jumlah mobil pribadi yang melintasi tol tersebut justru meningkat $10\\%$ dibandingkan tahun lalu. Manakah pernyataan berikut yang PALING TEPAT menjelaskan kondisi yang tampak bertolak belakang tersebut?",
       "opsi_jawaban": [
-        "A. Biaya pemeliharaan jalan tol memang membutuhkan penyesuaian tarif secara berkala setiap dua tahun.",
-        "B. Sebagian pengemudi truk logistik beralih menggunakan jalur arteri nontol untuk menghemat biaya operasional.",
-        "C. Perbaikan besar-besaran pada jalur arteri nontol menyebabkan kemacetan parah sehingga pengendara memilih tetap lewat tol.",
-        "D. Pendapatan pengelola jalan tol meningkat signifikan akibat kenaikan tarif dan jumlah kendaraan.",
-        "E. Pemerintah memberikan potongan tarif tol khusus selama tiga hari pada libur nasional."
+        "A. Biaya perawatan jalan tol memang membutuhkan penyesuaian tarif setiap dua tahun.",
+        "B. Sebagian sopir truk logistik pindah ke jalur arteri nontol untuk menghemat ongkos jalan.",
+        "C. Perbaikan besar-besaran di jalur arteri nontol memicu kemacetan parah sehingga pengendara mobil tetap memilih lewat tol.",
+        "D. Pendapatan pengelola jalan tol naik tajam akibat kenaikan tarif dan jumlah kendaraan.",
+        "E. Pemerintah memberi diskon tarif tol khusus selama tiga hari saat libur nasional."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Paradoks terjadi karena kenaikan tarif ($+15\\%$) seharusnya menurunkan minat pengguna, tetapi volume kendaraan pribadi justru naik ($+10\\%$). **Opsi C** menyelesaikan paradoks ini dengan menjelaskan bahwa jalur alternatif (arteri nontol) mengalami kemacetan parah akibat perbaikan sehingga pengendara terpaksa memilih tol meski lebih mahal. **Opsi A** dan **D** tidak menjelaskan alasan perilaku pengendara, **Opsi B** membahas truk, dan **Opsi E** hanya berlaku tiga hari.",
+      "bedah_cepat_markdown": "Keanehan di soal ini: tarif tol naik ($+15\\%$), tetapi jumlah mobil pribadi yang lewat malah bertambah ($+10\\%$). Kita butuh satu alasan yang membuat dua hal ini masuk akal.\n\n* **Opsi C (Benar):** Jalur alternatif (arteri nontol) sedang diperbaiki dan macet parah, sehingga pengendara terpaksa tetap lewat tol meski tarifnya naik.\n* **Opsi A dan D (Salah):** Hanya membahas alasan kenaikan tarif dan keuntungan pengelola, bukan perilaku pengendara.\n* **Opsi B (Salah):** Membahas truk logistik, padahal teks menyoroti mobil pribadi.\n* **Opsi E (Salah):** Diskon cuma berlaku tiga hari, tidak cukup menjelaskan kenaikan jumlah mobil sepanjang tahun.",
       "visual": null
     },
     {
@@ -244,7 +244,7 @@
         6
       ],
       "tipe_soal_utbk": "Kualitas Bukti Pernyataan A dan B",
-      "pertanyaan_markdown": "Perhatikan argumen berikut!\n\n* **Argumen:** Penggunaan aplikasi belajar berbasis permainan interaktif efektif meningkatkan pemahaman konsep matematika siswa sekolah dasar.\n* **Pernyataan A:** Nilai rata-rata ujian pemahaman konsep pada kelas yang menggunakan aplikasi tersebut naik $24\\%$ dibandingkan kelas konvensional.\n* **Pernyataan B:** Antarmuka aplikasi tersebut dirancang dengan ilustrasi karakter hewan yang disukai anak-anak.\n\nManakah penilaian yang PALING TEPAT mengenai kualitas Pernyataan A dan Pernyataan B terhadap argumen di atas?",
+      "pertanyaan_markdown": "Perhatikan argumen berikut!\n\n* **Argumen:** Penggunaan aplikasi belajar berbasis permainan interaktif efektif meningkatkan pemahaman konsep matematika siswa SD.\n* **Pernyataan A:** Nilai rata-rata ujian pemahaman konsep di kelas yang memakai aplikasi tersebut naik $25\\%$ dibandingkan kelas biasa.\n* **Pernyataan B:** Tampilan aplikasi tersebut dilengkapi gambar karakter hewan lucu yang disukai anak-anak.\n\nManakah penilaian yang PALING TEPAT mengenai kualitas Pernyataan A dan Pernyataan B terhadap argumen di atas?",
       "opsi_jawaban": [
         "A. Pernyataan A memperlemah argumen dan Pernyataan B memperlemah argumen.",
         "B. Pernyataan A memperkuat argumen dan Pernyataan B memperlemah argumen.",
@@ -253,7 +253,7 @@
         "E. Pernyataan A memperlemah argumen dan Pernyataan B tidak relevan."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "**Pernyataan A** menyajikan bukti empiris bahwa kelas pengguna aplikasi mengalami kenaikan nilai pemahaman konsep sebesar $24\\%$, sehingga secara langsung **memperkuat** klaim efektivitas pembelajaran. Sebaliknya, **Pernyataan B** hanya menjelaskan aspek visual ilustrasi karakter yang disukai anak tanpa membuktikan dampak pada pemahaman konsep matematika, sehingga berstatus **tidak relevan**. Jadi, jawaban yang tepat adalah **Opsi C**.",
+      "bedah_cepat_markdown": "Kita uji Pernyataan A dan B secara terpisah terhadap klaim utama (aplikasi meningkatkan pemahaman matematika siswa SD).\n\n* **Pernyataan A:** Memberikan bukti angka nyata bahwa nilai ujian pemahaman konsep naik $25\\%$. Ini langsung menopang klaim penulis, sehingga berstatus **memperkuat argumen**.\n* **Pernyataan B:** Hanya menceritakan gambar karakter hewan yang disukai anak. Suka gambarnya belum tentu paham matematikanya, sehingga info ini berstatus **tidak relevan**.\n\nJadi, kombinasi yang tepat adalah **Opsi C**.",
       "visual": null
     }
   ]

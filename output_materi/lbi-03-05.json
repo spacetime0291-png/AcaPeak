@@ -9,132 +9,132 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Pengulas menulis: 'Alur novel ini melambat pada bab tengah akibat deskripsi arsip yang bertele-tele, meski riset sejarahnya patut dipuji.' Apakah pengulas menyimpulkan novel tersebut gagal total secara kualitas?",
+      "pertanyaan_pemantik": "Seorang pengulas menulis: 'Alur novel ini melambat di bab tengah karena deskripsi arsip yang bertele-tele, meski riset sejarahnya patut dipuji.' Apakah pengulas menganggap novel ini gagal total?",
       "opsi_cepat": [
-        "Ya, karena alur yang lambat merusak keseluruhan struktur narasi.",
-        "Tidak, kelemahan tempo narasi diakui berdampingan dengan keunggulan riset."
+        "Ya, alur yang lambat merusak seluruh kualitas novel.",
+        "Tidak, pengulas hanya mengkritik alurnya sambil tetap memuji risetnya."
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Banyak peserta terjebak menyamaratakan kritik parsial menjadi penolakan total. Dalam teks ulasan UTBK, evaluasi bersifat seimbang antara aspek teknis yang lemah dan substansi yang kuat."
+      "penjelasan_kilat": "Banyak peserta UTBK terjebak menganggap kritik pada satu bagian sebagai penolakan total. Padahal, teks ulasan selalu menimbang sisi lemah dan sisi kuat karya secara proporsional."
     },
-    "konsep_inti_markdown": "- **Teks Ulasan**: Teks evaluatif yang menimbang kualitas, kelebihan, dan kelemahan karya/produk berdasarkan bukti objektif.\n- **Struktur Kunci**: Identitas/Orientasi $\\rightarrow$ Tafsiran Isi/Fitur $\\rightarrow$ Evaluasi (Plus-Minus) $\\rightarrow$ Rangkuman/Rekomendasi.\n- **Prinsip Baca UTBK**: Pisahkan secara tegas antara **fakta deskriptif objek** (data/spesifikasi/alur) dan **klaim evaluatif pengulas** (opini nilai beserta bukti pendukungnya).",
+    "konsep_inti_markdown": "- **Teks Ulasan**: Tulisan yang menilai kualitas, kelebihan, dan kekurangan suatu karya atau produk berdasarkan bukti.\n- **Alur Struktur**: Identitas Karya $\\rightarrow$ Gambaran Isi $\\rightarrow$ Penilaian (Plus-Minus) $\\rightarrow$ Simpulan & Rekomendasi.\n- **Kunci Utama UTBK**: Pisahkan dengan tegas antara **fakta karya** (data, durasi, alur cerita) dan **opini pengulas** (penilaian bagus/buruk beserta alasannya).",
     "radar_jebakan_utbk": [
-      "Menganggap opini pengulas sebagai fakta mutlak atau menyamaratakan kritik pada satu bagian menjadi cacat keseluruhan karya.",
-      "Tertukar antara sudut pandang Pengulas 1 dan Pengulas 2 saat menyimpulkan kesepakatan atau pertentangan penilaian."
+      "Menganggap opini pengulas sebagai fakta mutlak, atau menyamaratakan kritik pada satu bagian menjadi cacat seluruh karya.",
+      "Tertukar antara pendapat Pengulas 1 dan Pengulas 2 saat menarik kesimpulan persamaan atau perbedaan penilaian."
     ],
-    "stimulus_utama_bersama": "Ulasan 1 (Raka Pratama, Kritikus Budaya):\nFilm dokumenter *Jejak Air di Hulu* (2024) garapan sutradara Larasati merekam krisis penyusutan mata air di pegunungan Jawa Tengah selama tiga tahun. Secara sinematografi, pengambilan gambar udara dengan kamera resolusi tinggi berhasil menangkap kontras menyakitkan antara hutan lindung yang tersisa dan ekspansi lahan pertanian intensif. Kekuatan utama film berdurasi 95 menit ini terletak pada keberaniannya menghadirkan kesaksian warga adat tanpa narasi pengantar yang menggurui. Namun, pada paruh kedua, transisi antarbabak terasa melompat karena absennya peta kronologi perubahan tata ruang yang jelas. Akibatnya, penonton awam berisiko kehilangan konteks keterkaitan antara kebijakan izin tambang pasir pada 2018 dan kekeringan sumur warga pada 2023. Meski memiliki celah struktur penyuntingan, dokumenter ini tetap wajib ditonton sebagai rujukan penting diskusi ekologi.\n\nUlasan 2 (Dina Maharani, Peneliti Kebijakan Lingkungan):\nSebagai dokumentasi visual lapangan, *Jejak Air di Hulu* menyajikan rekaman empiris yang kuat mengenai degradasi daerah tangkapan air. Pilihan sutradara meniadakan narator tunggal memang memberi ruang autentik bagi suara petani lokal, tetapi keputusan artistik tersebut justru menjadi titik lemah dari sisi edukasi kebijakan. Tanpa penjelasan teknis mengenai mekanisme hidrologi dan data debit air tahunan, film ini lebih dominan menggugah emosi ketimbang membedah akar persoalan regulasi. Selain itu, wawancara dengan pihak regulator daerah hanya mendapat porsi kurang dari tiga menit sehingga keberimbangan perspektif belum tercapai optimal. Film ini layak diapresiasi sebagai pemantik empati publik, tetapi belum memadai jika dijadikan bahan kajian akademik.",
+    "stimulus_utama_bersama": "Ulasan 1 (Raka Pratama, Kritikus Budaya):\nFilm dokumenter *Jejak Air di Hulu* (2024) garapan sutradara Larasati merekam krisis penyusutan mata air di pegunungan Jawa Tengah selama tiga tahun. Secara sinematografi, pengambilan gambar udara dengan kamera resolusi tinggi berhasil menangkap kontras menyakitkan antara hutan lindung yang tersisa dan ekspansi lahan pertanian intensif. Kekuatan utama film berdurasi 95 menit ini terletak pada keberaniannya menghadirkan kesaksian warga adat tanpa narasi pengantar yang menggurui. Namun, pada paruh kedua, transisi antarbabak terasa melompat karena absennya peta kronologi perubahan tata ruang yang jelas. Akibatnya, penonton awam berisiko kehilangan konteks keterkaitan antara kebijakan izin tambang pasir pada 2018 dan kekeringan sumur warga pada 2023. Meski memiliki celah struktur penyuntingan, dokumenter ini tetap wajib ditonton sebagai rujukan penting diskusi ekologi.\n\nUlasan 2 (Dina Maharani, Peneliti Kebijakan Lingkungan):\nSebagai dokumentasi visual lapangan, *Jejak Air di Hulu* menyajikan rekaman empiris yang kuat tentang kerusakan daerah tangkapan air. Pilihan sutradara meniadakan narator tunggal memang memberi ruang autentik bagi suara petani lokal, tetapi keputusan artistik tersebut justru menjadi titik lemah dari sisi edukasi kebijakan. Tanpa penjelasan teknis mengenai mekanisme hidrologi dan data debit air tahunan, film ini lebih dominan menggugah emosi ketimbang membedah akar persoalan regulasi. Selain itu, wawancara dengan pihak regulator daerah hanya mendapat porsi kurang dari tiga menit sehingga sudut pandang kedua pihak belum berimbang. Film ini layak diapresiasi sebagai pemantik empati publik, tetapi belum memadai jika dijadikan bahan kajian akademik.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Taksonomi Sinyal Baca dan Evaluasi Teks Ulasan",
-      "subjudul_ringkas": "Panduan praktis memilah fakta objek, bukti evaluasi, kelayakan rekomendasi, dan perbandingan sudut pandang pengulas.",
+      "judul_blok": "Peta Sinyal Baca Teks Ulasan",
+      "subjudul_ringkas": "Panduan praktis membedakan fakta karya, opini pengulas, target rekomendasi, dan perbandingan dua ulasan.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
-        "kolom_1": "Kategori / Penanda Teks",
-        "kolom_2": "Contoh Potongan / Sinyal",
-        "kolom_3": "Cara Bedakan / Jebakan"
+        "kolom_1": "Fokus & Sinyal Teks",
+        "kolom_2": "Contoh Kalimat",
+        "kolom_3": "Trik & Jebakan UTBK"
       },
       "kelompok": [
         {
-          "nama_kelompok": "1. Pemilah Fakta Objek vs. Klaim Evaluatif",
-          "ringkasan_kelompok": "Membedakan informasi objektif karya dari penilaian subjektif pengulas dalam wacana.",
+          "nama_kelompok": "1. Memilah Fakta Karya vs. Opini Pengulas",
+          "ringkasan_kelompok": "Membedakan informasi objektif tentang karya dari penilaian subjektif pengulas.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Penanda Fakta Deskriptif Objek (Identitas dan Sinopsis)",
-              "penjelasan_singkat": "Menyajikan data fisik, spesifikasi, alur, atau identitas karya secara objektif tanpa memuat kata sifat penilaian subjektif pengulas.",
+              "judul_poin": "Fakta Deskriptif Karya (Identitas & Sinopsis)",
+              "penjelasan_singkat": "Menyampaikan data fisik, spesifikasi, atau alur cerita secara apa adanya tanpa kata sifat penilaian.",
               "contoh_penerapan": "Novel setebal **412 halaman** terbitan Pustaka Jaya ini berlatar **pedesaan Jawa tahun 1965** dengan sudut pandang orang pertama.",
-              "jebakan_atau_catatan": "Opsi pengecoh sering mencampur data sinopsis dengan opini pujian; pastikan pernyataan dapat diverifikasi langsung pada karya tanpa tafsir nilai.",
+              "jebakan_atau_catatan": "Pengecoh sering mencampur sinopsis dengan kalimat pujian. Pastikan informasi bisa dicek langsung di dalam karya tanpa penafsiran.",
               "visual": null
             },
             {
-              "judul_poin": "Adjektiva Evaluatif Subjektif (Penanda Klaim Nilai)",
-              "penjelasan_singkat": "Menggunakan kata sifat bermuatan nilai kualitas untuk menyatakan penilaian pribadi pengulas terhadap unsur karya atau performa produk.",
-              "contoh_penerapan": "Alur cerita pada paruh kedua terasa **sangat lambat dan bertele-tele**, sehingga **menurunkan ketegangan** konflik utama yang sudah dibangun.",
-              "jebakan_atau_catatan": "Jangan terkecoh menganggap opini dominan pengulas sebagai fakta mutlak objek, meskipun ditulis dengan gaya bahasa yang sangat meyakinkan.",
+              "judul_poin": "Kata Sifat Penilai (Sinyal Opini Pengulas)",
+              "penjelasan_singkat": "Memakai kata sifat bermuatan nilai untuk menunjukkan kesan pribadi pengulas terhadap kualitas karya.",
+              "contoh_penerapan": "Alur cerita pada paruh kedua terasa **sangat lambat dan bertele-tele**, sehingga **menurunkan ketegangan** konflik utama.",
+              "jebakan_atau_catatan": "Jangan anggap opini pengulas sebagai fakta mutlak, meskipun kalimatnya ditulis dengan nada sangat yakin.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Cakupan dan Kelengkapan Paparan Unsur",
-              "penjelasan_singkat": "Menunjukkan aspek karya yang dibedah pengulas, mulai dari unsur intrinsik, teknis produksi, hingga relevansi kontekstual objek.",
-              "contoh_penerapan": "Selain membedah **penokohan dan dialog**, pengulas turut menyoroti **tata sinematografi** serta **akurasi riset sejarah** dalam film tersebut.",
-              "jebakan_atau_catatan": "Soal kelengkapan menanyakan aspek yang absen; periksa kembali apakah unsur tersebut sekadar disebut sepintas atau benar-benar diulas.",
+              "judul_poin": "Cakupan Aspek yang Diulas",
+              "penjelasan_singkat": "Menunjukkan bagian karya yang dibahas pengulas, mulai dari isi cerita, teknis produksi, hingga latar sejarahnya.",
+              "contoh_penerapan": "Selain membedah **penokohan dan dialog**, pengulas juga menyoroti **tata sinematografi** serta **akurasi riset sejarah** film itu.",
+              "jebakan_atau_catatan": "Jika soal menanyakan aspek yang belum dibahas, cek lagi apakah bagian itu benar-benar diulas atau cuma disebut sekilas.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "2. Sinyal Kelebihan, Kekurangan, dan Bukti Teks",
-          "ringkasan_kelompok": "Mengidentifikasi struktur argumen plus-minus karya beserta validitas bukti pendukungnya.",
+          "nama_kelompok": "2. Sinyal Kelebihan, Kekurangan, dan Bukti",
+          "ringkasan_kelompok": "Menangkap argumen plus-minus karya beserta bukti pendukung yang dipakai pengulas.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Penanda Keunggulan Berbasis Bukti Konkret",
-              "penjelasan_singkat": "Mengaitkan pujian kualitas dengan bukti spesifik dari isi karya, data uji, atau kutipan adegan agar klaim sahih.",
+              "judul_poin": "Pujian yang Didukung Bukti Nyata",
+              "penjelasan_singkat": "Mengaitkan pujian kualitas dengan bukti spesifik dari isi karya, data uji, atau cuplikan adegan.",
               "contoh_penerapan": "Keunggulan utama gawai ini terletak pada **daya tahan baterai 18 jam** yang **terbukti dalam uji pemutaran video nonstop**.",
-              "jebakan_atau_catatan": "Pujian kosong tanpa rujukan bagian karya dianggap argumen lemah saat soal menguji keakuratan bukti evaluasi pengulas.",
+              "jebakan_atau_catatan": "Pujian tanpa bukti spesifik dianggap argumen lemah saat soal menguji ketepatan alasan penilaian pengulas.",
               "visual": null
             },
             {
-              "judul_poin": "Konjungsi Pertentangan (Peralihan Plus ke Minus)",
-              "penjelasan_singkat": "Menandai pergeseran fokus ulasan dari paparan kelebihan menuju kelemahan objek menggunakan konjungsi antarkalimat atau intrakalimat kontras.",
-              "contoh_penerapan": "Visualisasi animasinya memukau mata; **namun**, kedalaman karakter pendukung **kurang tergali** akibat durasi tayang yang terlalu padat.",
-              "jebakan_atau_catatan": "Klausa sebelum konjungsi kontras biasanya konsesi kelebihan, sedangkan fokus kritik utama pengulas berada tepat setelah kata namun.",
+              "judul_poin": "Kata Hubung Kontras (Peralihan Plus ke Minus)",
+              "penjelasan_singkat": "Menandai perubahan fokus ulasan dari kelebihan menuju kekurangan karya lewat kata hubung pertentangan.",
+              "contoh_penerapan": "Visualisasi animasinya memukau mata; **namun**, kedalaman karakter pendukung **kurang tergali** akibat durasi yang padat.",
+              "jebakan_atau_catatan": "Bagian sebelum kata *namun* biasanya berisi pengakuan kelebihan, sedangkan kritik utama pengulas terletak tepat setelahnya.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Kekurangan Bersyarat (Kritik Proporsional)",
-              "penjelasan_singkat": "Mengungkapkan kelemahan karya secara proporsional dengan membatasi dampak kekurangannya agar tidak meniadakan nilai positif keseluruhan.",
-              "contoh_penerapan": "**Terlepas dari** beberapa istilah teknis yang **kurang dijelaskan**, buku panduan ini tetap mudah dipahami oleh pembaca pemula.",
-              "jebakan_atau_catatan": "Pengulas tidak menolak karya secara total; hindari opsi simpulan yang menyebut karya tersebut gagal atau tidak layak baca.",
+              "judul_poin": "Kritik Terbatas (Tidak Menolak Total)",
+              "penjelasan_singkat": "Menyampaikan kekurangan karya secara terukur tanpa menghapus nilai positif karya secara keseluruhan.",
+              "contoh_penerapan": "**Terlepas dari** beberapa istilah teknis yang **kurang dijelaskan**, buku panduan ini tetap mudah dipahami pembaca pemula.",
+              "jebakan_atau_catatan": "Pengulas tidak menolak karya secara total. Hindari opsi jawaban yang menyebut karya itu gagal atau tidak layak baca.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "3. Pola Argumen Evaluatif dan Simpulan Rekomendasi",
-          "ringkasan_kelompok": "Menilai ketepatan logika penilaian akhir serta kesesuaian target rekomendasi pengulas.",
+          "nama_kelompok": "3. Logika Penilaian dan Target Rekomendasi",
+          "ringkasan_kelompok": "Menilai apakah simpulan akhir dan target audiens yang disarankan pengulas sudah masuk akal.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Penanda Kesesuaian Rekomendasi dengan Segmen Audiens",
-              "penjelasan_singkat": "Mengarahkan kelayakan konsumsi objek kepada kelompok pembaca, penonton, atau pengguna tertentu berdasarkan karakteristik spesifik karya.",
+              "judul_poin": "Rekomendasi Sesuai Segmen Audiens",
+              "penjelasan_singkat": "Mengarahkan kelayakan karya kepada kelompok pembaca atau penonton tertentu sesuai karakter karyanya.",
               "contoh_penerapan": "Dengan pendekatan matematis yang ketat, buku ini **sangat direkomendasikan bagi mahasiswa tingkat lanjut**, bukan pembaca awam.",
-              "jebakan_atau_catatan": "Rekomendasi dianggap tepat jika selaras dengan paparan plus-minus sebelumnya, bukan simpulan umum yang bertentangan dengan isi evaluasi.",
+              "jebakan_atau_catatan": "Rekomendasi dianggap tepat jika sejalan dengan uraian plus-minus sebelumnya, bukan tiba-tiba bertentangan.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Simpulan Nilai Akhir (Verdict Pengulas)",
-              "penjelasan_singkat": "Merangkum bobot keseluruhan plus-minus karya menjadi keputusan akhir layak-tidaknya objek tersebut dikonsumsi atau diapresiasi.",
-              "contoh_penerapan": "**Secara keseluruhan**, kekuatan akting pemeran utama **berhasil menutupi** lubang plot minor, menjadikan film ini layak tonton.",
-              "jebakan_atau_catatan": "Simpulan sahih wajib mencerminkan proporsi evaluasi; jika mayoritas teks berisi kritik tajam, simpulan tidak mungkin memuji tanpa syarat.",
+              "judul_poin": "Simpulan Akhir Pengulas (Verdict)",
+              "penjelasan_singkat": "Merangkum seluruh pertimbangan plus-minus menjadi keputusan akhir layak atau tidaknya karya diapresiasi.",
+              "contoh_penerapan": "**Secara keseluruhan**, kekuatan akting pemeran utama **berhasil menutupi** lubang plot minor, sehingga film ini layak tonton.",
+              "jebakan_atau_catatan": "Simpulan harus sesuai porsi penilaian. Jika isi ulasan penuh kritik tajam, simpulannya mustahil memuji tanpa syarat.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Bias Evaluasi dan Ketidaktepatan Tolok Ukur",
-              "penjelasan_singkat": "Mendeteksi kelemahan logika pengulas saat menilai karya akibat standar pembanding yang tidak relevan atau generalisasi berlebihan.",
-              "contoh_penerapan": "Pengulas menilai novel fiksi ilmiah ini buruk **hanya karena** tidak menyajikan **data statistik layaknya jurnal akademik**.",
-              "jebakan_atau_catatan": "Soal evaluasi argumen menguji ketepatan kriteria penilaian; membandingkan dua genre berbeda merupakan kesalahan tolok ukur evaluasi.",
+              "judul_poin": "Standar Penilaian yang Salah Sasaran",
+              "penjelasan_singkat": "Mendeteksi kelemahan argumen pengulas saat memakai standar pembanding yang tidak cocok dengan jenis karyanya.",
+              "contoh_penerapan": "Pengulas menilai novel fiksi ilmiah ini buruk **hanya karena** tidak memuat **data statistik layaknya jurnal akademik**.",
+              "jebakan_atau_catatan": "Menilai karya fiksi dengan standar jurnal ilmiah adalah kesalahan tolok ukur yang sering diuji pada soal evaluasi argumen.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "4. Pola Perbandingan Dua Pengulas (Sintesis Multi-Teks)",
-          "ringkasan_kelompok": "Memetakan persamaan fakta dan perbedaan fokus penilaian dua pengulas pada satu objek.",
+          "nama_kelompok": "4. Membandingkan Dua Pengulas",
+          "ringkasan_kelompok": "Memetakan persamaan fakta dan perbedaan sudut pandang dua pengulas pada satu karya.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Titik Temu Fakta vs. Divergensi Penilaian",
-              "penjelasan_singkat": "Memetakan kesamaan data objek yang dirujuk kedua pengulas sebelum mengidentifikasi perbedaan sudut pandang penilaian mereka.",
+              "judul_poin": "Fakta Sama, Penilaian Berbeda",
+              "penjelasan_singkat": "Melihat kesamaan data karya yang dirujuk kedua pengulas sebelum mencari perbedaan pendapat mereka.",
               "contoh_penerapan": "Kedua pengulas mencatat **durasi film 150 menit**, tetapi Pengulas A menilainya **epik**, sedangkan Pengulas B menyebutnya **melelahkan**.",
-              "jebakan_atau_catatan": "Perbedaan penilaian bersumber dari kriteria atau selera berbeda, bukan berarti salah satu pengulas keliru membaca fakta objek.",
+              "jebakan_atau_catatan": "Perbedaan pendapat muncul karena selera atau kriteria yang beda, bukan berarti salah satu pengulas salah membaca data karya.",
               "visual": null
             },
             {
-              "judul_poin": "Perbedaan Fokus Aspek Tinjauan (Sudut Pandang)",
-              "penjelasan_singkat": "Menunjukkan bagaimana dua pengulas menghasilkan simpulan berbeda karena membedah dimensi objek yang tidak sama.",
+              "judul_poin": "Beda Aspek yang Disorot",
+              "penjelasan_singkat": "Menunjukkan bagaimana dua pengulas punya simpulan berbeda karena membedah sisi karya yang tidak sama.",
               "contoh_penerapan": "Pengulas 1 memuji **pesan moral cerita**, sementara Pengulas 2 mengkritik **kualitas terjemahan dan penyuntingan naskah**.",
-              "jebakan_atau_catatan": "Kedua ulasan tidak saling membantah secara langsung; pilih opsi yang menyatakan keduanya menyoroti aspek berbeda dari karya.",
+              "jebakan_atau_catatan": "Kedua ulasan tidak saling membantah. Pilih opsi yang menyebut keduanya menyoroti aspek berbeda dari karya yang sama.",
               "visual": null
             }
           ]
@@ -145,38 +145,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Identifikasi Kekhasan dan Kelengkapan Paparan Objek Bahasan",
+      "nama_variasi": "Menemukan Kekhasan dan Kelengkapan Info Karya",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Ulasan 1 kalimat 1–3: identitas film *Jejak Air di Hulu* (2024), sutradara Larasati, durasi 95 menit, serta metode perekaman tiga tahun tanpa narator pengantar.",
-      "bedah_pola_markdown": "- **Teknik Scanning**: Pindai kata kunci identitas (judul, tahun, pembuat, durasi, metode, atau ciri khas format) yang umumnya berada di awal paragraf pertama.\n- **Parafrasa ke Opsi Benar**: Gabungkan atribut faktual objek secara akurat—misalnya, dokumenter berdurasi 95 menit ini direkam selama tiga tahun dengan menonjolkan tuturan langsung warga tanpa narasi pengantar.\n- **Ciri Opsi Jebakan**:\n  1. *Terlalu Ekstrem*: Mengklaim film ini merupakan satu-satunya dokumenter lingkungan di Jawa Tengah.\n  2. *Distorsi Fakta*: Menyebut film menggunakan wawancara pejabat sebagai fokus utama (padahal Ulasan 2 menyebut porsinya kurang dari tiga menit).\n  3. *Tidak Disebut*: Menambahkan data anggaran produksi atau penghargaan festival yang tidak tercantum di teks.",
-      "kunci_pembeda": "Fokus murni pada atribut objektif dan keunikan format karya sebelum masuk ke penilaian baik atau buruk.",
+      "bedah_pola_markdown": "- **Langkah Pindai (Scanning)**: Langsung cari info identitas di awal paragraf pertama, seperti judul, tahun rilis, pembuat, durasi, atau ciri khas format karya. Informasi faktual hampir selalu diletakkan di bagian pembuka sebelum masuk ke penilaian.\n- **Cara Menyusun Jawaban Benar**: Gabungkan fakta-fakta objektif tersebut tanpa menambah opini baru. Contohnya, dokumenter berdurasi 95 menit ini direkam selama tiga tahun dan menampilkan kesaksian langsung warga tanpa narator.\n- **Waspadai 3 Jebakan Opsi**:\n  1. *Klaim Berlebihan*: Menyebut film ini satu-satunya dokumenter lingkungan di Jawa Tengah.\n  2. *Memutarbalikkan Fakta*: Menyebut wawancara pejabat sebagai fokus utama, padahal Ulasan 2 menyebut porsinya kurang dari tiga menit.\n  3. *Info Tambahan di Luar Teks*: Menyelipkan data biaya produksi atau penghargaan festival yang tidak pernah disebut di wacana.",
+      "kunci_pembeda": "Fokus murni pada data objektif dan keunikan format karya sebelum masuk ke penilaian bagus atau buruk.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Evaluasi Keakuratan Paparan Kelebihan dan Kekurangan Objek Berdasarkan Bukti Teks",
+      "nama_variasi": "Mengecek Keakuratan Kelebihan dan Kekurangan Karya",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Ulasan 1 kalimat 2–5 dan Ulasan 2 kalimat 2–4: penanda kontras 'Namun', 'tetapi', 'titik lemah', serta bukti visual kamera resolusi tinggi vs absennya peta kronologi.",
-      "bedah_pola_markdown": "- **Teknik Scanning**: Cari konjungsi pertentangan (*namun*, *tetapi*, *meski*) dan frasa penilai (*kekuatan utama*, *titik lemah*, *belum tercapai optimal*) lalu ikat dengan bukti konkret di kalimat sebelum/sesudahnya.\n- **Parafrasa ke Opsi Benar**: Pastikan hubungan sebab-akibat bukti terjaga—contoh: loncatan transisi antarbabak (kelemahan) terjadi karena ketiadaan peta kronologi perubahan tata ruang (bukti teks).\n- **Ciri Opsi Jebakan**:\n  1. *Tukar Sebab-Akibat*: Menganggap sinematografi buruk menjadi penyebab kebingungan penonton awam.\n  2. *Generalisasi Berlebihan*: Menyimpulkan seluruh aspek visual gagal hanya karena absennya data debit air.\n  3. *Tertukar Sumber*: Mengatribusikan kritik durasi wawancara regulator (< 3 menit) sebagai temuan Raka Pratama.",
-      "kunci_pembeda": "Setiap klaim keunggulan atau kelemahan dalam opsi wajib tertaut langsung pada bukti spesifik dalam teks.",
+      "bedah_pola_markdown": "- **Langkah Pindai (Scanning)**: Tangkap kata hubung kontras (*namun*, *tetapi*, *meski*) dan frasa penilai (*kekuatan utama*, *titik lemah*). Setelah itu, ikat penilaian tersebut dengan bukti konkret di kalimat sebelum atau sesudahnya.\n- **Cara Menyusun Jawaban Benar**: Pastikan hubungan sebab-akibat antara penilaian dan buktinya cocok persis dengan teks. Misalnya, transisi paruh kedua terasa melompat (kekurangan) karena tidak ada peta kronologi perubahan tata ruang (bukti teks).\n- **Waspadai 3 Jebakan Opsi**:\n  1. *Menukar Sebab-Akibat*: Menganggap gambar yang buruk membuat penonton awam bingung.\n  2. *Menyamaratakan Kritik*: Menyimpulkan seluruh tampilan visual gagal hanya karena tidak ada data debit air.\n  3. *Salah Mengutip Pengulas*: Mengklaim kritik durasi wawancara regulator (< 3 menit) berasal dari Raka Pratama.",
+      "kunci_pembeda": "Setiap klaim kelebihan atau kekurangan pada opsi jawaban wajib terhubung langsung ke bukti spesifik di teks.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Penilaian Ketepatan Opini, Argumen Evaluatif, dan Rekomendasi Penulis Ulasan",
+      "nama_variasi": "Menilai Ketepatan Simpulan dan Rekomendasi Pengulas",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan kalimat penutup Ulasan 1 ('dokumenter ini tetap wajib ditonton sebagai rujukan penting diskusi ekologi') dan Ulasan 2 ('layak diapresiasi sebagai pemantik empati publik, tetapi belum memadai jika dijadikan bahan kajian akademik').",
-      "bedah_pola_markdown": "- **Teknik Skimming**: Lompat ke bagian akhir tiap ulasan untuk menangkap simpulan sikap penulis, syarat kelayakan objek, dan target audiens yang direkomendasikan.\n- **Parafrasa ke Opsi Benar**: Identifikasi rekomendasi bersyarat—Dina Maharani merekomendasikan film untuk membangkitkan empati masyarakat umum, bukan untuk rujukan ilmiah/akademik.\n- **Ciri Opsi Jebakan**:\n  1. *Menghilangkan Syarat*: Menyatakan Dina melarang keras publik menonton film tersebut.\n  2. *Mencampur Fakta dan Opini*: Menganggap pernyataan 'wajib ditonton' sebagai fakta objektif, bukan opini evaluatif pengulas.\n  3. *Salah Sasaran Audiens*: Menyebut Raka menyarankan film ini khusus bagi akademisi hidrologi.",
-      "kunci_pembeda": "Menilai kelogisan simpulan sikap dan batasan rekomendasi pengulas berdasarkan premis kritik yang dibangun sebelumnya.",
+      "bedah_pola_markdown": "- **Langkah Baca Cepat (Skimming)**: Langsung lompat ke kalimat penutup tiap ulasan untuk melihat sikap akhir pengulas. Biasanya di sinilah pengulas memberi syarat kelayakan dan menentukan siapa target penonton yang cocok.\n- **Cara Menyusun Jawaban Benar**: Pertahankan syarat atau batasan yang ditulis pengulas. Contohnya, Dina Maharani merekomendasikan film ini untuk menggugah empati publik, bukan untuk bahan kajian akademik.\n- **Waspadai 3 Jebakan Opsi**:\n  1. *Menghapus Syarat*: Mengklaim Dina melarang masyarakat menonton film tersebut.\n  2. *Mencampur Fakta dan Opini*: Menganggap frasa 'wajib ditonton' sebagai fakta objektif, padahal itu opini pengulas.\n  3. *Salah Target Audiens*: Menyebut Raka menyarankan film ini khusus bagi akademisi hidrologi.",
+      "kunci_pembeda": "Menguji kesesuaian sikap akhir dan sasaran rekomendasi pengulas dengan kritik yang disampaikan sebelumnya.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Perbandingan Penilaian Dua Pengulas Berbeda terhadap Satu Objek yang Sama",
+      "nama_variasi": "Membandingkan Penilaian Dua Pengulas Berbeda",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Sintesis Ulasan 1 (Raka Pratama) vs Ulasan 2 (Dina Maharani) terhadap keputusan sutradara meniadakan narator dan nilai guna film.",
-      "bedah_pola_markdown": "- **Teknik Scanning Komparatif**: Petakan irisan (persamaan) dan titik pisah (perbedaan) kedua pengulas pada variabel yang sama: kekuatan visual, efek ketiadaan narator, dan kelayakan rujukan.\n- **Parafrasa ke Opsi Benar**: Kedua pengulas sepakat bahwa dokumentasi visual lapangan film ini kuat, tetapi berbeda dalam menilai ketiadaan narator (Raka: autentik; Dina: menghambat edukasi kebijakan).\n- **Ciri Opsi Jebakan**:\n  1. *Kontradiksi Palsu*: Mengklaim kedua pengulas bertentangan dalam menilai kualitas sinematografi.\n  2. *Kesepakatan Palsu*: Menyatakan keduanya sepakat film layak menjadi rujukan kajian akademik.\n  3. *Mengabaikan Latar Pengulas*: Tidak menangkap bahwa fokus kritik Raka pada struktur penyuntingan, sedangkan Dina pada substansi regulasi dan data hidrologi.",
-      "kunci_pembeda": "Memetakan titik temu (irisan penilaian) dan titik bentur (perbedaan sudut pandang) dua pengulas pada aspek spesifik karya.",
+      "bedah_pola_markdown": "- **Langkah Pindai Perbandingan**: Buat peta kecil di kepalamu tentang persamaan dan perbedaan kedua pengulas pada aspek yang sama. Cek pandangan mereka soal kualitas visual, efek ketiadaan narator, dan kelayakan film sebagai rujukan.\n- **Cara Menyusun Jawaban Benar**: Gabungkan titik temu dan titik pisah mereka secara adil. Keduanya sepakat visual lapangan film ini kuat, tetapi berbeda soal ketiadaan narator (Raka menilai autentik, Dina menilai menghambat edukasi kebijakan).\n- **Waspadai 3 Jebakan Opsi**:\n  1. *Pertentangan Palsu*: Mengklaim kedua pengulas berbeda pendapat soal kualitas sinematografi.\n  2. *Kesepakatan Palsu*: Menyebut keduanya setuju film ini layak jadi bahan kajian akademik.\n  3. *Melupakan Latar Pengulas*: Gagal melihat bahwa Raka fokus pada alur penyuntingan, sedangkan Dina menyoroti data hidrologi dan regulasi.",
+      "kunci_pembeda": "Memetakan persamaan penilaian dan perbedaan sudut pandang dua pengulas pada bagian karya yang spesifik.",
       "visual": null
     }
   ],
@@ -188,7 +188,7 @@
         2
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Berdasarkan Ulasan 1, manakah hubungan evaluasi dan bukti tekstual yang paling akurat mengenai film dokumenter *Jejak Air di Hulu*?",
+      "pertanyaan_markdown": "Berdasarkan Ulasan 1, manakah hubungan penilaian dan bukti teks yang paling tepat mengenai film dokumenter *Jejak Air di Hulu*?",
       "opsi_jawaban": [
         "A. Kualitas sinematografi dinilai kurang maksimal karena pengambilan gambar udara hanya berfokus pada ekspansi lahan pertanian.",
         "B. Penyuntingan paruh kedua film dinilai melompat karena tidak didukung peta kronologi perubahan tata ruang yang memadai.",
@@ -197,7 +197,7 @@
         "E. Durasi film selama 95 menit dianggap terlalu panjang sehingga mengaburkan pesan utama krisis penyusutan mata air."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "- **Kunci B**: Kalimat 4–5 Ulasan 1 secara eksplisit menyatakan transisi antarbabak pada paruh kedua terasa melompat akibat absennya peta kronologi perubahan tata ruang.\n- **A salah**: Sinematografi justru dipuji berhasil menangkap kontras hutan lindung dan lahan pertanian.\n- **C salah**: Ketiadaan narasi pengantar dinilai Raka sebagai kekuatan, bukan kritik.\n- **D salah**: Wawancara regulator minim hanya dibahas di Ulasan 2 (< 3 menit) dan bukan menjelaskan izin tambang secara rinci.\n- **E salah**: Tidak ada kritik terhadap durasi 95 menit.",
+      "bedah_cepat_markdown": "- **Cara Coret-Coret Cepat**: Soal meminta pasangan penilaian dan bukti yang sesuai **Ulasan 1**, jadi fokuskan matamu hanya ke paragraf Raka Pratama.\n- **Mengapa B Benar**: Pada kalimat keempat Ulasan 1, Raka mengkritik transisi antarbabak di paruh kedua yang terasa melompat, lalu langsung menyertakan buktinya: absennya peta kronologi perubahan tata ruang.\n- **Mengapa Opsi Lain Gugur**:\n  - **Opsi A**: Membalikkan fakta. Sinematografi gambar udara justru dipuji karena berhasil menangkap kontras hutan lindung dan lahan pertanian.\n  - **Opsi C**: Salah kutip sikap. Ketiadaan narasi pengantar dianggap Raka sebagai kekuatan utama, bukan bahan kritik.\n  - **Opsi D**: Menjebak lintas ulasan. Wawancara regulator daerah hanya muncul di Ulasan 2 dengan durasi kurang dari tiga menit.\n  - **Opsi E**: Mengarang kritik. Angka durasi 95 menit hanya fakta pembuka tanpa keluhan soal durasi.",
       "visual": null
     },
     {
@@ -216,7 +216,7 @@
         "E. Salah - Salah - Benar"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "- **Pernyataan 1 (Benar)**: Raka memuji sinematografi kamera resolusi tinggi; Dina mengakui sajian rekaman empiris visual lapangan yang kuat.\n- **Pernyataan 2 (Benar)**: Raka menilai ketiadaan narator sebagai kekuatan autentik, sedangkan Dina menilainya sebagai titik lemah edukasi kebijakan.\n- **Pernyataan 3 (Salah)**: Raka merekomendasikannya untuk diskusi ekologi, sedangkan Dina tegas menyatakan film belum memadai untuk bahan kajian akademik.\n- Susunan tepat adalah **Benar - Benar - Salah (A)**.",
+      "bedah_cepat_markdown": "- **Pernyataan 1 (Benar)**: Cek bagian awal kedua ulasan. Raka memuji sinematografi kamera resolusi tinggi, dan Dina pun mengakui rekaman visual lapangan film ini kuat.\n- **Pernyataan 2 (Benar)**: Bandingkan sikap keduanya soal absennya narator. Raka menganggapnya kekuatan yang autentik, sedangkan Dina menilainya sebagai titik lemah untuk edukasi kebijakan.\n- **Pernyataan 3 (Salah)**: Lihat kalimat penutup masing-masing ulasan. Raka merekomendasikannya untuk diskusi ekologi, tetapi Dina tegas menyebut film ini belum memadai untuk bahan kajian akademik.\n- Jadi, urutan yang tepat adalah **Benar - Benar - Salah (A)**.",
       "visual": null
     }
   ]

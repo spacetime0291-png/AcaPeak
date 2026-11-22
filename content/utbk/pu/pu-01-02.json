@@ -6,21 +6,21 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 7,
+    "estimasi_menit_baca": 6,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Sistem saraf manusia memprioritaskan sinyal rasa sakit mendesak agar tubuh segera merespons bahaya. Oleh karena itu, jaringan sensor lalu lintas kota yang meniru mekanisme saraf tersebut dipastikan mampu mencegah seluruh kecelakaan jalan raya. Tepatkah simpulan ini?",
+      "pertanyaan_pemantik": "Sistem saraf manusia memprioritaskan sinyal rasa sakit mendesak agar tubuh segera merespons bahaya. Karena meniru cara kerja saraf ini, jaringan sensor lalu lintas kota dipastikan mampu mencegah seluruh kecelakaan jalan raya. Tepatkah kesimpulan ini?",
       "opsi_cepat": [
-        "Tepat, mekanismenya serupa",
-        "Kurang tepat, simpulan terlalu mutlak"
+        "Tepat, cara kerjanya serupa",
+        "Kurang tepat, kesimpulannya terlalu mutlak"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Penalaran analogi bersifat induktif sehingga simpulannya hanya bernilai probabilistik (Mungkin Benar), bukan kepastian mutlak. Kemiripan mekanisme deteksi darurat tidak menjamin hilangnya seluruh kecelakaan yang dipicu faktor lain."
+      "penjelasan_kilat": "Kesimpulan dari perbandingan (analogi) tidak pernah pasti 100%, melainkan maksimal **Mungkin Benar**. Kemiripan cara mendeteksi bahaya tidak menjamin hilangnya seluruh kecelakaan yang dipicu faktor lain, seperti kelalaian pengemudi."
     },
-    "konsep_inti_markdown": "**Analogi induktif** menarik simpulan pada kasus target ($B$) berdasarkan kemiripan struktur atau mekanisme dengan kasus sumber ($A$).\n\n* **Alur Logika:** $\\text{Kesamaan Struktur } (A \\approx B) \\rightarrow \\text{Asumsi Relevansi Kausal} \\rightarrow \\text{Simpulan Target } (B)$\n* **Syarat Validitas:** Kemiripan harus menyentuh **prinsip kerja inti**, bukan sekadar kesamaan permukaan (*False Analogy*).\n* **Skala Kepastian:** Simpulan analogi maksimal berstatus **Mungkin Benar**, tidak pernah **Pasti Benar**.",
+    "konsep_inti_markdown": "**Analogi induktif** menarik kesimpulan pada kasus baru ($B$) berdasarkan kemiripan cara kerja dengan kasus yang sudah terbukti ($A$).\n\n* **Alur Berpikir:** $\\text{Mirip Cara Kerja } (A \\approx B) \\rightarrow \\text{Asumsi Sama-Sama Berlaku} \\rightarrow \\text{Kesimpulan Kasus } (B)$\n* **Syarat Sah:** Kemiripan harus menyentuh **prinsip kerja utama**, bukan cuma mirip tampilan luar (*False Analogy*).\n* **Batas Kepastian:** Kesimpulan analogi maksimal berstatus **Mungkin Benar**, tidak pernah **Pasti Benar**.",
     "radar_jebakan_utbk": [
-      "Terjebak False Analogy dengan menyamakan dua kasus yang hanya mirip di permukaan tetapi berbeda parameter kuncinya.",
-      "Memilih opsi berskala 'Pasti Benar' atau kata mutlak ('selalu', 'seluruh') untuk simpulan yang ditarik dari perbandingan analog."
+      "Terjebak False Analogy: menyamakan dua hal yang cuma mirip di permukaan, padahal faktor penentunya berbeda jauh.",
+      "Memilih opsi bermakna mutlak ('pasti', 'selalu', 'seluruh') untuk kesimpulan yang ditarik dari perbandingan dua kasus."
     ],
     "stimulus_utama_bersama": null,
     "visual": {
@@ -29,95 +29,95 @@
       "caption": "Prinsip pemetaan relasi analogi induktif: memastikan kesejajaran fungsi, hierarki, dan arah relasi antarentitas."
     },
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Pola, Penanda Teks, dan Jebakan Analogi Induktif",
-      "subjudul_ringkas": "Taksonomi sinyal mekanisme analogi, kesetaraan sebab-akibat, serta teknik mendeteksi sesat pikir dalam wacana UTBK.",
+      "judul_blok": "Pola Sinyal Teks dan Jebakan Analogi di UTBK",
+      "subjudul_ringkas": "Cara mengenali perbandingan sebab-akibat yang setara sekaligus mendeteksi perbandingan yang cacat logika.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Pola & Sinyal Teks",
-        "kolom_2": "Contoh Potongan Wacana",
+        "kolom_2": "Contoh Potongan Teks",
         "kolom_3": "Cara Bedakan & Jebakan"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Pola Analogi Mekanisme Fungsional & Transfer Solusi",
-          "ringkasan_kelompok": "Mengidentifikasi pemetaan prinsip kerja antarsistem berbeda untuk memprediksi solusi masalah baru.",
+          "nama_kelompok": "Pola Meniru Cara Kerja & Solusi",
+          "ringkasan_kelompok": "Memindahkan prinsip kerja dari satu sistem ke sistem lain untuk memecahkan masalah baru.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Sinyal Pemetaan Sistem Biologis ke Teknis",
-              "penjelasan_singkat": "Menghubungkan cara kerja organ makhluk hidup ($A$) dengan arsitektur teknologi ($B$) melalui penanda perbandingan fungsional.",
-              "contoh_penerapan": "**Sebagaimana** sel darah putih mengisolasi patogen sebelum menyebar, sistem *firewall* jaringan **bekerja menyaring** paket data mencurigakan.",
-              "jebakan_atau_catatan": "Jebakan: memilih opsi yang menyamakan bentuk fisik ($A$ dan $B$ sama-sama bulat), bukan fungsi perlindungannya.",
+              "judul_poin": "Meniru Cara Kerja Alam ke Teknologi",
+              "penjelasan_singkat": "Menghubungkan cara kerja organ makhluk hidup ($A$) dengan rancangan teknologi ($B$) lewat kata hubung perbandingan.",
+              "contoh_penerapan": "**Sebagaimana** sel darah putih mengisolasi kuman sebelum menyebar, sistem *firewall* jaringan **bekerja menyaring** data mencurigakan.",
+              "jebakan_atau_catatan": "Jebakan: memilih opsi yang menyamakan bentuk fisiknya ($A$ dan $B$ sama-sama bulat), bukan fungsi perlindungannya.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Pemetaan Sistem Sosial ke Organisasi",
-              "penjelasan_singkat": "Menerapkan dinamika interaksi masyarakat ($A$) untuk menjelaskan tata kelola institusi atau ekonomi ($B$).",
-              "contoh_penerapan": "**Layaknya** ekosistem hutan yang runtuh tanpa predator puncak, pasar bebas **akan mengalami monopoli** tanpa regulasi pengawas.",
-              "jebakan_atau_catatan": "Pastikan hubungan peran ($\\text{pengawas} \\rightarrow \\text{keseimbangan}$) sejajar; abaikan pengecoh yang membahas isu lingkungan hutan.",
+              "judul_poin": "Meniru Pola Alam ke Aturan Sosial",
+              "penjelasan_singkat": "Memakai pola keseimbangan alam ($A$) untuk menjelaskan aturan main dalam masyarakat atau ekonomi ($B$).",
+              "contoh_penerapan": "**Layaknya** ekosistem hutan yang kacau tanpa predator puncak, pasar bebas **akan dikuasai monopoli** tanpa aturan pengawas.",
+              "jebakan_atau_catatan": "Pastikan hubungan perannya sejajar ($\\text{pengawas} \\rightarrow \\text{seimbang}$); abaikan opsi pengecoh yang malah membahas pelestarian hutan.",
               "visual": null
             },
             {
-              "judul_poin": "Prediksi Solusi Masalah Baru dari Kasus Analog",
-              "penjelasan_singkat": "Memproyeksikan intervensi berhasil pada kasus sumber ($A$) ke masalah target ($B$) yang memiliki akar kendala identik.",
-              "contoh_penerapan": "**Mengadopsi mekanisme** pajak karbon Swedia yang sukses menekan emisi, penerapan tarif serupa **berpotensi menurunkan** limbah industri.",
-              "jebakan_atau_catatan": "Simpulan wajib bersifat **mungkin efektif**, bukan pasti berhasil 100% seperti pada negara sumber ($A$).",
+              "judul_poin": "Memprediksi Solusi dari Kasus Serupa",
+              "penjelasan_singkat": "Menerapkan cara yang sudah sukses di kasus lama ($A$) ke masalah baru ($B$) yang punya akar masalah serupa.",
+              "contoh_penerapan": "**Mengadopsi aturan** pajak karbon Swedia yang sukses menekan emisi, tarif serupa **berpotensi menurunkan** limbah pabrik.",
+              "jebakan_atau_catatan": "Kesimpulannya wajib bersifat **berpeluang berhasil**, bukan pasti sukses 100% seperti di negara asalnya ($A$).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pola Analogi Proporsional Sebab-Akibat Setara",
-          "ringkasan_kelompok": "Mendeteksi kesetaraan rasio hubungan kausal ($A : B :: C : D$) dalam argumen kuantitatif maupun kualitatif.",
+          "nama_kelompok": "Pola Sebab-Akibat yang Sebanding",
+          "ringkasan_kelompok": "Mencocokkan kesetaraan hubungan sebab-akibat ($A : B :: C : D$) pada dua kejadian berbeda.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Penanda Kesetaraan Rasio Dampak ($A : B :: C : D$)",
-              "penjelasan_singkat": "Menunjukkan bahwa perubahan variabel pada kasus $A$ menghasilkan rasio akibat yang sebanding pada kasus $B$.",
-              "contoh_penerapan": "**Sebanding dengan** kenaikan suku bunga yang mengerem inflasi, pengetatan kuota kredit **akan memperlambat** laju konsumsi.",
-              "jebakan_atau_catatan": "Waspadai pengecoh dengan arah kausal terbalik (misal: konsumsi memicu kenaikan suku bunga).",
+              "judul_poin": "Sinyal Hubungan Sebab-Akibat Setara ($A : B :: C : D$)",
+              "penjelasan_singkat": "Menunjukkan bahwa perubahan pada kasus $A$ memicu akibat yang sebanding pada kasus $B$.",
+              "contoh_penerapan": "**Sebanding dengan** kenaikan suku bunga yang mengerem inflasi, pengetatan syarat kredit **akan memperlambat** laju belanja.",
+              "jebakan_atau_catatan": "Hati-hati dengan opsi pengecoh yang membalik arah sebab-akibatnya (misalnya: belanja memicu suku bunga naik).",
               "visual": null
             },
             {
-              "judul_poin": "Analogi Ambang Batas dan Titik Jenuh Sistem",
-              "penjelasan_singkat": "Membandingkan keruntuhan sistem akibat beban berlebih melewati batas toleransi struktural antara dua fenomena berbeda.",
-              "contoh_penerapan": "**Ibarat** jembatan yang patah saat tonase melampaui kapasitas baja, server **akan lumpuh** ketika trafik melampaui *bandwidth*.",
-              "jebakan_atau_catatan": "Bedakan kerusakan akibat **beban berlebih** dengan kerusakan akibat usia pemakaian yang tidak dibahas di premis.",
+              "judul_poin": "Analogi Batas Maksimal Beban Sistem",
+              "penjelasan_singkat": "Membandingkan rusaknya dua sistem berbeda akibat menerima beban yang melewati batas maksimalnya.",
+              "contoh_penerapan": "**Ibarat** jembatan yang patah saat muatan truk melebihi kekuatan baja, server **akan lumpuh** saat pengunjung melebihi kapasitas.",
+              "jebakan_atau_catatan": "Bedakan kerusakan akibat **kelebihan beban** dengan kerusakan karena usia tua yang tidak dibahas di teks.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Prediksi Konsekuensi Lanjutan Berantai",
-              "penjelasan_singkat": "Menarik dampak tahap kedua pada kasus $B$ berdasarkan rantai sebab-akibat yang sudah terbukti pada kasus $A$.",
-              "contoh_penerapan": "**Sebagaimana** hilangnya lebah memicu gagal panen buah, berkurangnya agen literasi **akan menurunkan** minat baca pelajar.",
-              "jebakan_atau_catatan": "Jangan menyimpulkan penyebab hilangnya lebah atau agen literasi; fokus hanya pada **dampak lanjutan** setelahnya.",
+              "judul_poin": "Sinyal Dampak Lanjutan yang Berantai",
+              "penjelasan_singkat": "Memprediksi akibat tahap kedua pada kasus $B$ berdasarkan rantai kejadian yang sudah terbukti pada kasus $A$.",
+              "contoh_penerapan": "**Sebagaimana** hilangnya lebah memicu gagal panen buah, berkurangnya taman bacaan **akan menurunkan** minat baca pelajar.",
+              "jebakan_atau_catatan": "Jangan menyimpulkan penyebab hilangnya lebah atau taman bacaan; fokus saja pada **dampak setelahnya**.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Sinyal Evaluasi Kekuatan Argumen & Sesat Pikir Analogi",
-          "ringkasan_kelompok": "Menguji validitas argumen analogi melalui relevansi parameter kunci dan menghindari jebakan kepastian logika.",
+          "nama_kelompok": "Menguji Kekuatan & Cacat Logika Analogi",
+          "ringkasan_kelompok": "Menilai apakah dua hal memang pantas dibandingkan dengan mengecek faktor penentu utamanya.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Sinyal False Analogy (Kesamaan Permukaan Semu)",
-              "penjelasan_singkat": "Menyimpulkan kesamaan nasib atau fungsi hanya karena kemiripan atribut luar tanpa kesamaan mekanisme kausal.",
-              "contoh_penerapan": "Karena sama-sama memiliki **sayap dan mesin**, pesawat latih baling-baling dianggap **mampu menembus** atmosfer seperti roket.",
-              "jebakan_atau_catatan": "Ciri khas soal evaluasi: cari opsi yang membuktikan kemiripan tersebut **tidak relevan** terhadap hasil akhir.",
+              "judul_poin": "False Analogy (Mirip Tampilan, Beda Cara Kerja)",
+              "penjelasan_singkat": "Menyimpulkan dua hal punya kemampuan sama hanya karena tampilan luarnya mirip, padahal cara kerjanya berbeda.",
+              "contoh_penerapan": "Karena sama-sama punya **sayap dan mesin**, pesawat baling-baling dianggap **mampu menembus** luar angkasa seperti roket.",
+              "jebakan_atau_catatan": "Ciri soal evaluasi: cari opsi yang membuktikan kemiripan luar tersebut **tidak berpengaruh** pada hasil akhir.",
               "visual": null
             },
             {
-              "judul_poin": "Pelemahan Argumen via Perbedaan Parameter Kunci",
-              "penjelasan_singkat": "Melemahkan simpulan analogi dengan menunjukkan adanya variabel pembeda krusial yang membatalkan transfer mekanisme $A \\rightarrow B$.",
-              "contoh_penerapan": "Argumen adopsi model transportasi Singapura ke Jakarta **melemah jika** luas wilayah dan kepadatan komuter **berbeda drastis**.",
-              "jebakan_atau_catatan": "Untuk **memperkuat** argumen, pilih opsi yang menegaskan kesamaan parameter kunci; untuk **melemahkan**, pilih perbedaannya.",
+              "judul_poin": "Melemahkan Argumen Lewat Faktor Pembeda",
+              "penjelasan_singkat": "Meruntuhkan perbandingan dengan menunjukkan adanya perbedaan krusial yang membuat cara $A$ gagal jika dipakai di $B$.",
+              "contoh_penerapan": "Rencana meniru sistem transportasi Singapura di Jakarta **melemah jika** luas wilayah dan jumlah penumpang **berbeda jauh**.",
+              "jebakan_atau_catatan": "Untuk **memperkuat** argumen, pilih opsi yang menegaskan kesamaan faktor kunci; untuk **melemahkan**, pilih perbedaannya.",
               "visual": null
             },
             {
-              "judul_poin": "Jebakan Kepastian Mutlak pada Simpulan Analogi",
-              "penjelasan_singkat": "Penalaran induktif berbasis analogi hanya menghasilkan probabilitas, sehingga klaim absolut otomatis bernilai salah.",
-              "contoh_penerapan": "Opsi menyatakan kebijakan $B$ **pasti berhasil 100%** karena kebijakan $A$ sukses di kota lain adalah **tidak valid**.",
-              "jebakan_atau_catatan": "Selalu prioritaskan opsi bermodalitas **cenderung, berpotensi, atau mungkin benar** dibanding kata pasti atau mutlak.",
+              "judul_poin": "Jebakan Kata Pasti pada Kesimpulan Analogi",
+              "penjelasan_singkat": "Karena berbasis perbandingan, kesimpulan analogi hanya berupa peluang sehingga klaim mutlak pasti keliru.",
+              "contoh_penerapan": "Opsi yang menyebut kebijakan $B$ **pasti berhasil 100%** karena sukses di kota $A$ adalah **kesimpulan cacat**.",
+              "jebakan_atau_catatan": "Selalu utamakan opsi dengan kata **cenderung, berpotensi, atau mungkin benar** dibanding kata pasti atau mutlak.",
               "visual": null
             }
           ]
@@ -128,38 +128,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Analogi Mekanisme Fungsional (Sistem Biologis/Sosial ke Sistem Teknis)",
+      "nama_variasi": "Analogi Cara Kerja (Meniru Sistem Alam ke Teknologi)",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Akar tanaman bakau memiliki struktur jalinan rapat yang memecah energi gelombang laut sehingga mencegah abrasi pantai. Insinyur kelautan merancang pemecah ombak beton berstruktur rongga saling mengunci yang meniru jalinan akar bakau untuk melindungi kawasan pelabuhan dari erosi.",
-      "bedah_pola_markdown": "**Alur:** Fakta Spesifik (Struktur jalinan akar bakau meredam energi gelombang; pemecah ombak beton meniru arsitektur rongga saling mengunci tersebut) $\\rightarrow$ Asumsi Jembatan (Prinsip peredaman energi fluida pada sistem biologis tetap efektif ketika diterapkan pada material teknis) $\\rightarrow$ Simpulan (Pemecah ombak beton berpeluang menekan erosi pelabuhan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Pemecah ombak meniru struktur jalinan akar bakau | Kawasan pelabuhan dipastikan kebal terhadap tsunami besar |\n| Rancangan ditujukan untuk meredam energi gelombang | Seluruh ekosistem laut di sekitar pelabuhan otomatis pulih |\n\n**Uji Kepastian:** Uji kesesuaian **fungsi kerja inti**, bukan kemiripan wujud fisik. Karena efektivitas struktur buatan tetap dipengaruhi kekuatan material beton dan kedalaman perairan, simpulan berkurangnya erosi berstatus **Mungkin Benar**. Klaim mengenai ketahanan terhadap tsunami besar bernilai **Mungkin Salah**, sedangkan pemulihan ekosistem laut bernilai **Tidak Relevan**.",
-      "kunci_pembeda": "Memindahkan cara kerja atau prinsip operasional dari sistem alami maupun sosial ke dalam rancangan teknologi buatan.",
+      "stimulus_mini": "Akar tanaman bakau memiliki struktur jalinan rapat yang memecah energi gelombang laut sehingga mencegah pengikisan pantai. Insinyur kelautan merancang pemecah ombak beton berongga yang meniru jalinan akar bakau untuk melindungi kawasan pelabuhan dari erosi.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Tangkap Fakta Inti:** Jalinan akar bakau meredam gelombang laut $\\rightarrow$ beton pemecah ombak meniru struktur rongga tersebut.\n2. **Cek Asumsi Penghubung:** Cara kerja peredam gelombang pada akar alami dianggap tetap ampuh saat diterapkan pada beton buatan.\n3. **Tarik Kesimpulan Aman:** Pemecah ombak beton **berpeluang mengurangi** erosi di area pelabuhan.\n\n| Fakta Teks | Asumsi Berlebihan (Salah) |\n| :--- | :--- |\n| Pemecah ombak meniru struktur jalinan akar bakau | Kawasan pelabuhan dipastikan kebal terhadap tsunami besar |\n| Rancangan dibuat untuk meredam energi gelombang | Seluruh ekosistem laut di sekitar pelabuhan otomatis pulih |\n\n**Uji Kepastian:** Fokus pada kesamaan **fungsi kerjanya**, bukan bentuk fisiknya. Karena kekuatan beton dan kedalaman laut ikut memengaruhi hasil, kesimpulan berkurangnya erosi berstatus **Mungkin Benar**. Klaim kebal tsunami bernilai **Mungkin Salah**, sedangkan pemulihan ekosistem laut bernilai **Tidak Relevan**.",
+      "kunci_pembeda": "Memindahkan prinsip kerja utama dari sistem alami atau sosial ke dalam rancangan teknologi buatan.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Analogi Proporsional Sebab-Akibat Setara",
+      "nama_variasi": "Analogi Sebab-Akibat yang Sebanding",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Sebagaimana penyaringan bertingkat pada instalasi air bersih mampu menahan partikel lumpur sebelum menyumbat pipa distribusi, verifikasi berlapis pada tahap pendaftaran beasiswa diharapkan mampu menyaring berkas tidak valid sebelum membebani proses seleksi akhir.",
-      "bedah_pola_markdown": "**Alur:** Fakta Spesifik (Penyaringan bertingkat mencegah penyumbatan pipa air; verifikasi berlapis diterapkan pada seleksi administrasi beasiswa) $\\rightarrow$ Asumsi Jembatan (Hubungan proporsional antara eliminasi hambatan di tahap awal dan kelancaran proses hilir pada sistem air setara dengan tata kelola seleksi) $\\rightarrow$ Simpulan (Beban pemeriksaan pada tahap seleksi akhir berpeluang berkurang).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Verifikasi berlapis menyaring berkas tidak valid sejak awal | Seluruh peserta yang lolos tahap awal pasti menerima beasiswa |\n| Struktur hubungan sebab-akibat bersifat paralel ($A:B \\approx C:D$) | Waktu pengumuman hasil seleksi otomatis menjadi lebih cepat |\n\n**Uji Kepastian:** Periksa kesejajaran rasio hubungan sebab-akibat antar-variabel yang dipasangkan (*partikel lumpur $\\leftrightarrow$ berkas tidak valid*, *pipa lancar $\\leftrightarrow$ seleksi akhir ringan*). Simpulan pengurangan beban seleksi akhir berstatus **Mungkin Benar**. Klaim bahwa seluruh pendaftar lolos awal pasti diterima bernilai **Mungkin Salah** karena seleksi akhir memiliki kriteria penilaian berbeda.",
-      "kunci_pembeda": "Menuntut kesetaraan rasio hubungan sebab-akibat ($A:B \\approx C:D$) di antara dua pasangan fenomena lintas bidang.",
+      "stimulus_mini": "Sebagaimana penyaringan bertingkat pada instalasi air bersih mampu menahan lumpur sebelum menyumbat pipa distribusi, pemeriksaan berlapis pada pendaftaran beasiswa diharapkan mampu menyaring berkas tidak valid sebelum membebani tahap seleksi akhir.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Pasangkan Hubungannya:** Saringan bertingkat mencegah pipa mampet ($A : B$) $\\approx$ pemeriksaan berkas mencegah seleksi akhir menumpuk ($C : D$).\n2. **Cek Asumsi Penghubung:** Menyaring gangguan di tahap awal diyakini memberi dampak kelancaran yang sebanding pada proses berikutnya.\n3. **Tarik Kesimpulan Aman:** Beban pemeriksaan pada tahap seleksi akhir **berpeluang berkurang**.\n\n| Fakta Teks | Asumsi Berlebihan (Salah) |\n| :--- | :--- |\n| Pemeriksaan berlapis menyaring berkas tidak valid sejak awal | Seluruh peserta yang lolos berkas pasti menerima beasiswa |\n| Pola sebab-akibatnya sejajar ($A:B \\approx C:D$) | Jadwal pengumuman kelulusan otomatis maju lebih cepat |\n\n**Uji Kepastian:** Pastikan kedua pasangan punya pola hubungan yang sejajar (*lumpur $\\leftrightarrow$ berkas cacat*, *pipa lancar $\\leftrightarrow$ seleksi akhir ringan*). Kesimpulan berkurangnya beban seleksi akhir bernilai **Mungkin Benar**. Sebaliknya, klaim bahwa semua peserta lolos berkas pasti dapat beasiswa bernilai **Mungkin Salah** karena tahap akhir punya kriteria tes tersendiri.",
+      "kunci_pembeda": "Menyamakan pola hubungan sebab-akibat ($A:B \\approx C:D$) di antara dua peristiwa dari bidang yang berbeda.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Evaluasi Kelemahan Argumen Analogi (False Analogy / Perbedaan Parameter Kunci)",
+      "nama_variasi": "Membongkar Perbandingan Cacat (False Analogy)",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "Sekolah Menengah A berhasil menaikkan nilai rata-rata literasi siswa sebesar 25% setelah mewajibkan program membaca buku cetak 30 menit setiap pagi. Dinas Pendidikan menyimpulkan bahwa penerapan program serupa di Sekolah Menengah B akan menghasilkan lonjakan nilai literasi yang sama.",
-      "bedah_pola_markdown": "**Alur:** Fakta Spesifik (Program membaca buku cetak 30 menit menaikkan nilai literasi Sekolah A sebesar 25%; Sekolah B akan menerapkan aturan serupa) $\\rightarrow$ Asumsi Jembatan (Kesiapan fasilitas dan kondisi awal siswa Sekolah B setara dengan Sekolah A) $\\rightarrow$ Simpulan Cacat (Nilai literasi Sekolah B pasti melonjak 25%).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Program membaca buku cetak berhasil di Sekolah A | Koleksi buku bacaan di Sekolah B sama lengkapnya |\n| Durasi kegiatan membaca ditetapkan 30 menit per pagi | Kemampuan dasar membaca siswa kedua sekolah identik |\n\n**Uji Kepastian:** Bongkar cacat *False Analogy* dengan mencari **perbedaan parameter kunci** yang menopang keberhasilan intervensi. Argumen ini **diperlemah** secara telak jika perpustakaan Sekolah B kekurangan koleksi buku bacaan yang sesuai jenjang usia siswa. Ketika parameter pendukungnya timpang, klaim keberhasilan setara berstatus **Mungkin Salah** dan kesimpulan analogi gugur.",
-      "kunci_pembeda": "Menggugurkan validitas perbandingan dengan menemukan variabel penentu penting yang timpang antara kasus sumber dan target.",
+      "stimulus_mini": "SMA A berhasil menaikkan nilai rata-rata literasi siswa sebesar 25% setelah mewajibkan program membaca buku cetak 30 menit setiap pagi. Dinas Pendidikan menyimpulkan bahwa penerapan program serupa di SMA B akan menghasilkan lonjakan nilai literasi yang sama.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Tangkap Fakta Inti:** Wajib baca 30 menit menaikkan skor literasi SMA A sebesar 25% $\\rightarrow$ aturan ini akan diterapkan di SMA B.\n2. **Temukan Titik Lemahnya:** Kesimpulan ini menganggap fasilitas dan kondisi awal siswa SMA B sama persis dengan SMA A.\n3. **Tarik Kesimpulan Aman:** Kesimpulan Dinas Pendidikan **gugur/melemah** jika ada faktor pendukung penting yang berbeda.\n\n| Fakta Teks | Asumsi Tersembunyi (Rawan Salah) |\n| :--- | :--- |\n| Program membaca buku cetak berhasil di SMA A | Koleksi buku bacaan di SMA B sama lengkapnya |\n| Durasi membaca ditetapkan 30 menit setiap pagi | Kemampuan dasar membaca siswa kedua sekolah setara |\n\n**Uji Kepastian:** Cara tercepat membongkar *False Analogy* adalah mencari **perbedaan faktor kunci** yang menopang keberhasilan program. Argumen ini langsung **melemah** jika perpustakaan SMA B ternyata kekurangan buku bacaan yang sesuai minat siswa. Jika syarat utamanya timpang, klaim kenaikan nilai 25% berstatus **Mungkin Salah**.",
+      "kunci_pembeda": "Mematahkan perbandingan dengan menemukan faktor penentu penting yang timpang antara kasus lama dan kasus baru.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Prediksi Solusi Masalah Baru Berdasarkan Keberhasilan Kasus Analog",
+      "nama_variasi": "Memprediksi Solusi Masalah Baru dari Kasus Serupa",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "Klinik Gigi Utama berhasil menurunkan tingkat pembatalan janji pasien hingga 50% setelah menerapkan pengingat otomatis melalui pesan singkat 24 jam sebelum jadwal kunjungan. Pengelola bengkel resmi mobil menghadapi masalah serupa berupa tingginya pembatalan jadwal servis berkala oleh pelanggan.",
-      "bedah_pola_markdown": "**Alur:** Fakta Spesifik (Pengingat otomatis H-1 menekan pembatalan janji di klinik gigi sebesar 50%; bengkel mobil mengalami tingginya pembatalan jadwal servis) $\\rightarrow$ Asumsi Jembatan (Perilaku lupa jadwal pada layanan reservasi kesehatan serupa dengan layanan perawatan kendaraan) $\\rightarrow$ Simpulan Prediktif (Pengiriman pengingat otomatis H-1 berpeluang menekan pembatalan servis bengkel).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Masalah inti berupa pembatalan jadwal layanan reservasi | Tingkat pembatalan bengkel pasti turun tepat 50% |\n| Pengingat dikirim 24 jam sebelum waktu kunjungan | Seluruh pelanggan bengkel otomatis datang tepat waktu |\n\n**Uji Kepastian:** Dalam soal prediksi solusi analog, pilih opsi yang mempertahankan **mekanisme intervensi inti** dengan nada probabilistik (*berpeluang/mungkin*). Prediksi penerapan pengingat H-1 pada bengkel berstatus **Mungkin Benar**. Argumen ini **diperkuat** apabila mayoritas pembatalan servis di bengkel memang disebabkan pelanggan lupa jadwal, bukan karena kendala biaya perbaikan.",
-      "kunci_pembeda": "Mentransfer intervensi yang sukses pada kasus terdahulu untuk memproyeksikan solusi bagi masalah baru yang sepola.",
+      "stimulus_mini": "Klinik Gigi Utama berhasil menekan angka pembatalan janji pasien hingga 50% setelah memakai pengingat otomatis lewat pesan singkat 24 jam sebelum jadwal kunjungan. Pengelola bengkel mobil resmi mengalami masalah serupa, yaitu tingginya pembatalan jadwal servis berkala oleh pelanggan.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n1. **Tangkap Fakta Inti:** Pengingat H-1 memangkas pembatalan janji di klinik gigi sebesar 50% $\\rightarrow$ bengkel mobil juga sering dibatalkan pelanggannya.\n2. **Cek Asumsi Penghubung:** Penyebab pelanggan membatalkan jadwal di klinik gigi dianggap sama dengan di bengkel mobil (yakni karena lupa).\n3. **Tarik Kesimpulan Aman:** Mengirim pengingat H-1 **berpeluang mengurangi** pembatalan servis di bengkel mobil.\n\n| Fakta Teks | Asumsi Berlebihan (Salah) |\n| :--- | :--- |\n| Masalah utamanya sama-sama pembatalan jadwal reservasi | Angka pembatalan bengkel pasti turun tepat 50% |\n| Pengingat dikirim 24 jam sebelum jadwal kunjungan | Seluruh pelanggan bengkel otomatis datang tepat waktu |\n\n**Uji Kepastian:** Untuk soal prediksi solusi, pilih opsi yang mempertahankan **langkah intervensi utamanya** dengan bahasa peluang (*berpeluang/mungkin*). Prediksi turunnya pembatalan servis bernilai **Mungkin Benar**. Argumen ini makin **diperkuat** jika mayoritas pembatalan servis di bengkel memang terjadi karena pelanggan lupa jadwal, bukan karena kendala biaya.",
+      "kunci_pembeda": "Meminjam cara yang terbukti sukses pada masalah lama untuk memprediksi solusi bagi masalah baru yang sepola.",
       "visual": null
     }
   ],
@@ -171,16 +171,16 @@
         4
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Burung pelatuk memiliki struktur jaringan spons di sekitar tengkoraknya yang berfungsi menyerap getaran benturan berulang sehingga otaknya terlindungi dari gegar. Berdasarkan mekanisme fungsional tersebut, penerapan lapisan peredam berstruktur spons serupa pada bagian dalam helm pekerja konstruksi PALING MUNGKIN menghasilkan manfaat berupa ....",
+      "pertanyaan_markdown": "Burung pelatuk memiliki struktur jaringan spons di sekitar tengkoraknya yang berfungsi menyerap getaran benturan berulang sehingga otaknya terlindungi dari gegar. Berdasarkan cara kerja tersebut, pemasangan lapisan peredam berstruktur spons serupa di bagian dalam helm pekerja proyek PALING MUNGKIN memberikan manfaat berupa ....",
       "opsi_jawaban": [
-        "A. hilangnya seluruh risiko kecelakaan jatuh dari ketinggian di lokasi konstruksi",
+        "A. hilangnya seluruh risiko kecelakaan jatuh dari ketinggian di lokasi proyek",
         "B. berkurangnya dampak getaran benturan benda keras terhadap kepala pekerja",
         "C. berubahnya bobot helm pekerja menjadi jauh lebih ringan daripada helm standar",
-        "D. meningkatnya ketahanan permukaan luar helm terhadap paparan suhu ekstrem",
+        "D. meningkatnya ketahanan permukaan luar helm terhadap paparan cuaca panas",
         "E. terhentinya seluruh getaran mesin berat di sekitar area proyek pembangunan"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Analogi mekanisme fungsional memindahkan prinsip kerja inti: **jaringan spons menyerap getaran benturan** untuk melindungi organ vital di dalamnya (**Opsi B** benar). **Opsi A** salah karena memakai kata mutlak *seluruh* dan mencegah jatuh berada di luar fungsi helm. **Opsi C** dan **D** membahas bobot serta ketahanan suhu yang tidak dianalogikan pada tengkorak pelatuk, sedangkan **Opsi E** keliru mengasumsikan peredam di dalam helm mampu menghentikan getaran mesin di lingkungan luar.",
+      "bedah_cepat_markdown": "Analogi cara kerja memindahkan fungsi utamanya: **jaringan spons menyerap getaran benturan** untuk melindungi organ vital di dalamnya (**Opsi B** tepat). **Opsi A** salah karena memakai kata mutlak *seluruh* dan mencegah jatuh bukan fungsi bantalan helm. **Opsi C** dan **D** membahas berat serta ketahanan cuaca yang tidak disinggung pada tengkorak pelatuk, sedangkan **Opsi E** keliru mengira bantalan di dalam helm bisa menghentikan getaran mesin di luar.",
       "visual": null
     },
     {
@@ -189,16 +189,16 @@
         3
       ],
       "tipe_soal_utbk": "Evaluasi Argumen (Memperlemah / Memperkuat)",
-      "pertanyaan_markdown": "Platform lokapasar buku bekas X berhasil meningkatkan volume transaksi bulanan sebesar $35\\%$ setelah menerapkan fitur pemeriksaan keaslian buku secara otomatis berbasis foto sampul. Manajemen platform lokapasar barang elektronik bekas Y menyimpulkan bahwa penerapan fitur verifikasi foto serupa akan mendongkrak transaksi bulanan mereka secara setara. Manakah pernyataan berikut yang PALING MEMPERLEMAH simpulan manajemen platform Y?",
+      "pertanyaan_markdown": "Aplikasi jual beli buku bekas X berhasil menaikkan jumlah transaksi bulanan sebesar $35\\%$ setelah merilis fitur cek keaslian buku otomatis lewat foto sampul. Manajemen aplikasi jual beli barang elektronik bekas Y menyimpulkan bahwa pemasangan fitur verifikasi foto serupa akan mendongkrak transaksi bulanan mereka secara setara. Manakah pernyataan berikut yang PALING MEMPERLEMAH kesimpulan manajemen aplikasi Y?",
       "opsi_jawaban": [
-        "A. Sebagian pembeli di platform X tetap membaca ulasan penjual sebelum membeli buku bekas.",
-        "B. Kerusakan fungsi komponen internal barang elektronik bekas tidak dapat dideteksi hanya melalui foto luar.",
-        "C. Platform lokapasar buku bekas X memiliki jumlah pengguna aktif harian yang lebih besar daripada platform Y.",
-        "D. Sebagian penjual barang elektronik bekas di platform Y menawarkan garansi pengembalian dana selama tiga hari.",
-        "E. Biaya pengembangan sistem pemindai foto otomatis membutuhkan investasi teknologi yang cukup besar."
+        "A. Sebagian pembeli di aplikasi X tetap membaca ulasan penjual sebelum membeli buku bekas.",
+        "B. Kerusakan fungsi komponen dalam barang elektronik bekas tidak bisa dideteksi hanya lewat foto luar.",
+        "C. Aplikasi jual beli buku bekas X memiliki jumlah pengguna aktif harian yang lebih banyak daripada aplikasi Y.",
+        "D. Sebagian penjual barang elektronik bekas di aplikasi Y memberikan garansi pengembalian dana selama tiga hari.",
+        "E. Biaya pembuatan sistem pemindai foto otomatis membutuhkan anggaran teknologi yang cukup besar."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kelemahan argumen analogi (*False Analogy*) muncul ketika terdapat **perbedaan parameter kunci** antara objek sumber dan target. **Opsi B** mengungkap perbedaan krusial: kelayakan buku bekas cukup dinilai dari tampilan fisik sampul, sedangkan fungsi komponen internal barang elektronik tidak terlihat lewat foto luar sehingga kepercayaan pembeli tidak otomatis naik. **Opsi A** dan **D** tidak membatalkan efek fitur verifikasi, **Opsi C** hanya membandingkan skala pengguna, dan **Opsi E** membahas biaya internal, bukan volume transaksi.",
+      "bedah_cepat_markdown": "Perbandingan dua kasus menjadi cacat (*False Analogy*) jika ada **perbedaan faktor penentu** yang membuat solusinya tidak bekerja. **Opsi B** mematahkan argumen tersebut: kelayakan buku bekas cukup dilihat dari foto fisik sampulnya, sedangkan fungsi mesin atau komponen dalam barang elektronik tidak terlihat lewat foto luar sehingga pembeli tetap ragu bertransaksi. **Opsi A** dan **D** tidak membatalkan efek fitur foto, **Opsi C** hanya membandingkan ukuran pengguna, dan **Opsi E** membahas biaya internal, bukan jumlah transaksi.",
       "visual": null
     },
     {
@@ -208,7 +208,7 @@
         3
       ],
       "tipe_soal_utbk": "5 Skala Kepastian",
-      "pertanyaan_markdown": "Sebagaimana pemangkasan cabang pohon yang terlalu rimbun melancarkan sirkulasi cahaya sehingga mengurangi serangan jamur daun, penyederhanaan prosedur birokrasi perizinan usaha diharapkan memperlancar alur verifikasi berkas sehingga menekan praktik pungutan liar. Berdasarkan analogi tersebut, pernyataan: *'Penyederhanaan prosedur birokrasi perizinan usaha dipastikan menghapus seluruh praktik pungutan liar di setiap instansi'* bernilai ....",
+      "pertanyaan_markdown": "Sebagaimana pemangkasan dahan pohon yang terlalu rimbun melancarkan sirkulasi cahaya sehingga mengurangi serangan jamur daun, penyederhanaan prosedur perizinan usaha diharapkan memperlancar alur pemeriksaan berkas sehingga menekan praktik pungutan liar. Berdasarkan perbandingan tersebut, pernyataan: *'Penyederhanaan prosedur perizinan usaha dipastikan menghapus seluruh praktik pungutan liar di setiap instansi'* bernilai ....",
       "opsi_jawaban": [
         "A. Pasti Benar",
         "B. Mungkin Benar",
@@ -217,7 +217,7 @@
         "E. Tidak Relevan"
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "Simpulan analogi proporsional hanya bersifat **probabilistik** (*diharapkan menekan*), bukan kepastian mutlak. Klaim bahwa penyederhanaan prosedur *dipastikan menghapus seluruh* pungutan liar di *setiap instansi* melampaui batas bukti premis dan mengabaikan faktor pengawasan maupun integritas petugas di lapangan. Karena pernyataan tersebut tidak bertentangan langsung dengan fakta eksplisit premis namun terlalu ekstrem sehingga berpeluang keliru, nilainya adalah **Mungkin Salah** (**Opsi D**).",
+      "bedah_cepat_markdown": "Kesimpulan dari perbandingan dua kejadian hanya bersifat **peluang** (*diharapkan menekan*), bukan jaminan mutlak. Klaim bahwa penyederhanaan prosedur *dipastikan menghapus seluruh* pungutan liar di *setiap instansi* melampaui bukti bacaan dan mengabaikan faktor lain, seperti pengawasan dan integritas petugas. Karena tidak bertentangan langsung dengan fakta teks tetapi terlalu mutlak sehingga berpeluang besar keliru, nilainya adalah **Mungkin Salah** (**Opsi D**).",
       "visual": null
     }
   ]

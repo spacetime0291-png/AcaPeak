@@ -15,18 +15,18 @@
         "Pemerintah menekan laju inflasi untuk menjaga daya beli masyarakat."
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Pengulangan subjek yang sama pada anak kalimat membuat struktur mubazir; subjek kedua wajib dilesapkan."
+      "penjelasan_kilat": "Subjek 'pemerintah' sudah disebut di awal, jadi kemunculan keduanya wajib dihapus agar kalimat tidak boros."
     },
-    "konsep_inti_markdown": "- **Penggabungan Setara (Koordinatif):** Gunakan konjungsi *dan, serta, tetapi, sedangkan* untuk klausa sederajat.\n- **Penggabungan Bertingkat (Subordinatif):** Gunakan konjungsi *karena, sehingga, agar, ketika*. Jika subjek induk dan anak kalimat sama, **subjek anak kalimat wajib dilesapkan**.\n- **Pemisahan Kalimat (*Run-on*):** Kalimat majemuk bertumpuk lebih dari dua klausa tanpa jeda logis harus dipenggal menggunakan tanda titik (`.`) dan diawali konjungsi antarkalimat (*Oleh karena itu, Selain itu, Namun*).",
+    "konsep_inti_markdown": "- **Gabung Setara:** Gunakan kata hubung *dan, serta, tetapi, sedangkan* untuk menghubungkan dua ide yang sejajar.\n- **Gabung Bertingkat:** Gunakan kata hubung *karena, sehingga, agar, ketika*. Jika pelakunya sama, **hapus pelaku di bagian kedua** agar ringkas.\n- **Pecah Kalimat Panjang:** Kalimat yang menumpuk banyak ide tanpa jeda wajib dipotong dengan tanda titik (`.`). Sambung kalimat barunya memakai kata hubung antarkalimat (*Oleh karena itu, Selain itu, Namun*).",
     "radar_jebakan_utbk": [
-      "Mempertahankan subjek ganda setelah konjungsi subordinatif (misal: *...sehingga ia berhasil...* padahal subjek sudah disebut di awal).",
-      "Menukar konjungsi intrakalimat (*sehingga, tetapi*) menjadi konjungsi antarkalimat di awal kalimat baru, atau sebaliknya."
+      "Menulis ulang subjek yang sama di bagian kedua kalimat (contoh: *...sehingga ia berhasil...* padahal pelakunya sudah disebut di awal).",
+      "Menaruh kata hubung tengah kalimat (*sehingga, tetapi*) di awal kalimat baru, atau memakai kata hubung antarkalimat (*namun, oleh karena itu*) di tengah kalimat."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Kaidah Lengkap Penggabungan dan Pemisahan Kalimat (EYD V)",
-      "subjudul_ringkas": "Panduan kaidah penggabungan setara, bertingkat, variasi struktur klausa, serta pemecahan kalimat efektif.",
+      "judul_blok": "Aturan Praktis Penggabungan dan Pemisahan Kalimat (EYD V)",
+      "subjudul_ringkas": "Panduan menggabungkan kalimat setara maupun bertingkat, membalik urutan ide, dan memecah kalimat kepanjangan.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -35,92 +35,92 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Penggabungan Kalimat Setara (Koordinatif) dan Pelesapan",
-          "ringkasan_kelompok": "Menggabungkan klausa berkedudukan sejajar beserta aturan pelesapan unsur dan tanda baca koma.",
+          "nama_kelompok": "Menggabungkan Kalimat Setara dan Menghapus Kata Kembar",
+          "ringkasan_kelompok": "Cara menyambung dua ide sejajar, menghapus pelaku yang sama, dan menempatkan tanda koma.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Pelesapan Subjek Sama pada Konjungsi Penjumlahan",
-              "penjelasan_singkat": "Jika dua klausa memiliki subjek identik, lesapkan subjek pada klausa kedua setelah konjungsi *dan* atau *serta*.",
+              "judul_poin": "Hapus Subjek Kembar Setelah Kata 'dan' atau 'serta'",
+              "penjelasan_singkat": "Jika dua kalimat punya pelaku yang sama, hapus pelaku di bagian kedua tepat setelah kata *dan* atau *serta*.",
               "contoh_penerapan": "Peneliti mengumpulkan sampel tanah **dan** menganalisis kandungan mineralnya di laboratorium.",
-              "jebakan_atau_catatan": "Salah jika subjek diulang: *Peneliti mengumpulkan sampel tanah dan peneliti menganalisis kandungan mineralnya.*",
+              "jebakan_atau_catatan": "Boros jika pelakunya diulang: *Peneliti mengumpulkan sampel tanah dan peneliti menganalisis kandungan mineralnya.*",
               "visual": null
             },
             {
-              "judul_poin": "Tanda Koma Sebelum Konjungsi Pertentangan Setara",
-              "penjelasan_singkat": "Gunakan tanda koma tepat sebelum konjungsi intrakalimat pertentangan (*tetapi, sedangkan, melainkan*) yang menghubungkan dua klausa setara.",
+              "judul_poin": "Tanda Koma Sebelum Kata Pertentangan",
+              "penjelasan_singkat": "Beri tanda koma tepat sebelum kata hubung pertentangan di tengah kalimat (*tetapi, sedangkan, melainkan*).",
               "contoh_penerapan": "Produksi padi meningkat tajam pada kuartal pertama**, sedangkan** harga gabah di tingkat petani justru menurun.",
-              "jebakan_atau_catatan": "Jangan memakai *namun* di tengah kalimat; *namun* merupakan konjungsi antarkalimat yang diletakkan setelah tanda titik.",
+              "jebakan_atau_catatan": "Jangan taruh kata *namun* di tengah kalimat; *namun* hanya boleh muncul di awal kalimat baru setelah tanda titik.",
               "visual": null
             },
             {
-              "judul_poin": "Konjungsi Pemilihan dan Tanda Koma Rincian Setara",
-              "penjelasan_singkat": "Gunakan *atau* untuk hubungan alternatif setara; beri koma sebelum konjungsi akhir jika rincian berjumlah lebih dari dua.",
-              "contoh_penerapan": "Peserta ujian wajib membawa kartu identitas, pensil kayu**, atau** dokumen pendukung lain yang dipersyaratkan panitia.",
-              "jebakan_atau_catatan": "Jangan gunakan tanda koma sebelum *dan* atau *atau* jika unsur yang dihubungkan hanya berjumlah dua.",
+              "judul_poin": "Tanda Koma pada Rincian Lebih dari Dua",
+              "penjelasan_singkat": "Gunakan *atau* untuk pilihan setara. Beri koma sebelum kata hubung terakhir hanya jika rinciannya lebih dari dua.",
+              "contoh_penerapan": "Peserta ujian wajib membawa kartu identitas, pensil kayu**, atau** dokumen pendukung lain yang diminta panitia.",
+              "jebakan_atau_catatan": "Jangan beri tanda koma sebelum *dan* atau *atau* kalau yang dirinci cuma dua hal.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Penggabungan Kalimat Bertingkat (Subordinatif) dan Variasi Struktur",
-          "ringkasan_kelompok": "Menggabungkan induk dan anak kalimat tanpa merusak hubungan logika maupun fungsi subjek.",
+          "nama_kelompok": "Menggabungkan Kalimat Bertingkat dan Membalik Urutan",
+          "ringkasan_kelompok": "Cara menyambung ide utama dan penjelasnya tanpa merusak hubungan sebab-akibat atau pelaku.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pelesapan Subjek Anak Kalimat yang Sama",
-              "penjelasan_singkat": "Apabila subjek induk kalimat dan anak kalimat sama, subjek pada anak kalimat wajib dilesapkan demi kehematan.",
+              "judul_poin": "Hapus Subjek yang Sama pada Anak Kalimat",
+              "penjelasan_singkat": "Kalau pelaku di bagian penjelas dan bagian utama sama, hapus pelaku pada bagian penjelas agar efektif.",
               "contoh_penerapan": "**Setelah mempresentasikan** hasil risetnya, mahasiswa tersebut langsung menjawab seluruh pertanyaan dewan penguji.",
-              "jebakan_atau_catatan": "Salah jika subjek muncul ganda: *Setelah dia mempresentasikan hasil risetnya, mahasiswa tersebut langsung menjawab pertanyaan.*",
+              "jebakan_atau_catatan": "Salah kalau pelakunya ditulis dua kali: *Setelah dia mempresentasikan hasil risetnya, mahasiswa tersebut langsung menjawab pertanyaan.*",
               "visual": null
             },
             {
-              "judul_poin": "Tanda Koma pada Anak Kalimat di Awal",
-              "penjelasan_singkat": "Beri tanda koma di akhir anak kalimat jika posisinya mendahului induk kalimat; hilangkan tanda koma jika urutannya dibalik.",
+              "judul_poin": "Tanda Koma Saat Anak Kalimat di Depan",
+              "penjelasan_singkat": "Pasang tanda koma di akhir bagian penjelas jika ditaruh di awal kalimat. Hapus komanya jika posisinya dibalik ke belakang.",
               "contoh_penerapan": "**Karena curah hujan sangat tinggi**, beberapa ruas jalan protokol di pusat kota tergenang banjir.",
-              "jebakan_atau_catatan": "Jangan beri koma jika induk kalimat di depan: *Jalan protokol tergenang banjir, karena curah hujan tinggi* (salah).",
+              "jebakan_atau_catatan": "Jangan pakai koma kalau ide utamanya di depan: *Jalan protokol tergenang banjir, karena curah hujan tinggi* (salah).",
               "visual": null
             },
             {
-              "judul_poin": "Variasi Struktur Kausalitas Tanpa Ubah Makna",
-              "penjelasan_singkat": "Pembalikan urutan sebab-akibat wajib diikuti pergantian konjungsi dari *karena* (sebab) menjadi *sehingga* (akibat) atau sebaliknya.",
+              "judul_poin": "Membalik Sebab-Akibat Tanpa Mengubah Makna",
+              "penjelasan_singkat": "Saat posisi sebab dan akibat ditukar, wajib ganti kata hubungnya dari *karena* (sebab) menjadi *sehingga* (akibat) atau sebaliknya.",
               "contoh_penerapan": "Suhu permukaan laut meningkat drastis **sehingga** terumbu karang di perairan dangkal mengalami pemutihan massal.",
-              "jebakan_atau_catatan": "Jebakan UTBK sering menukar posisi klausa tanpa mengganti *karena* menjadi *sehingga*, sehingga hubungan sebab-akibat menjadi terbalik.",
+              "jebakan_atau_catatan": "Jebakan UTBK sering menukar posisi kalimat tanpa mengganti *karena* menjadi *sehingga*, akibatnya logika sebab-akibat terbalik.",
               "visual": null
             },
             {
-              "judul_poin": "Variasi Struktur Kronologis dan Hubungan Tujuan",
-              "penjelasan_singkat": "Perubahan urutan waktu mengharuskan penyesuaian konjungsi *sebelum* dan *setelah*, sedangkan hubungan maksud memakai *agar* atau *supaya*.",
+              "judul_poin": "Menjaga Urutan Waktu dan Hubungan Tujuan",
+              "penjelasan_singkat": "Tukar kata *sebelum* dan *setelah* jika urutan kejadian dibalik. Untuk tujuan, cukup pakai *agar* atau *supaya*.",
               "contoh_penerapan": "Pemerintah memperketat pengawasan distribusi pupuk **agar** alokasi subsidi tepat sasaran kepada petani kecil.",
-              "jebakan_atau_catatan": "Hindari penggabungan dua konjungsi bermakna sama sekaligus dalam satu klausa, seperti *agar supaya* atau *sehingga mengakibatkan*.",
+              "jebakan_atau_catatan": "Jangan menumpuk dua kata hubung bermakna sama sekaligus, seperti *agar supaya* atau *sehingga mengakibatkan*.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pemisahan Kalimat Kompleks (Run-on Sentence) dan Konjungsi Antarkalimat",
-          "ringkasan_kelompok": "Memecah kalimat bertumpuk menjadi kalimat efektif dengan pemenggalan titik dan konjungsi antarkalimat.",
+          "nama_kelompok": "Memecah Kalimat Kepanjangan dan Kata Hubung Antarkalimat",
+          "ringkasan_kelompok": "Cara memotong kalimat bertele-tele menjadi dua kalimat utuh dengan tanda titik dan kata hubung baru.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pemenggalan Kalimat Bertumpuk dengan Tanda Titik",
-              "penjelasan_singkat": "Kalimat majemuk yang menumpuk lebih dari dua gagasan utama wajib dipenggal menjadi dua kalimat efektif dengan tanda titik.",
+              "judul_poin": "Potong Kalimat Bertumpuk dengan Tanda Titik",
+              "penjelasan_singkat": "Kalimat yang menumpuk terlalu banyak ide utama wajib dipotong menjadi dua kalimat terpisah dengan tanda titik.",
               "contoh_penerapan": "Inflasi pangan menekan daya beli masyarakat kelas menengah**. Oleh karena itu,** bank sentral menahan suku bunga acuan.",
-              "jebakan_atau_catatan": "Menghubungkan dua kalimat mandiri hanya dengan tanda koma (*comma splice*) tanpa konjungsi adalah kesalahan fatal di UTBK.",
+              "jebakan_atau_catatan": "Menyambung dua kalimat lengkap hanya dengan tanda koma tanpa kata hubung adalah jebakan fatal di UTBK.",
               "visual": null
             },
             {
-              "judul_poin": "Tanda Koma Wajib Setelah Konjungsi Antarkalimat",
-              "penjelasan_singkat": "Konjungsi antarkalimat di awal kalimat baru (*Oleh karena itu, Selain itu, Namun, Dengan demikian*) wajib diikuti tanda koma.",
-              "contoh_penerapan": "Anggaran riset tahun ini dipangkas cukup signifikan**. Namun,** tim peneliti tetap berhasil mempublikasikan tiga jurnal internasional.",
-              "jebakan_atau_catatan": "Penulisan *Namun* tanpa tanda koma atau penggunaan *Sedangkan* sebagai konjungsi antarkalimat di awal kalimat tergolong tidak baku.",
+              "judul_poin": "Wajib Koma Setelah Kata Hubung Antarkalimat",
+              "penjelasan_singkat": "Kata hubung di awal kalimat baru (*Oleh karena itu, Selain itu, Namun, Dengan demikian*) wajib diikuti tanda koma.",
+              "contoh_penerapan": "Anggaran riset tahun ini dipangkas cukup signifikan**. Namun,** tim peneliti tetap berhasil menerbitkan tiga jurnal internasional.",
+              "jebakan_atau_catatan": "Menulis *Namun* tanpa koma atau menaruh *Sedangkan* di awal kalimat tergolong tidak baku.",
               "visual": null
             },
             {
-              "judul_poin": "Pencegahan Kalimat Buntung Saat Pemisahan Kalimat",
-              "penjelasan_singkat": "Saat memecah kalimat panjang, pastikan setiap kalimat pecahan memiliki subjek dan predikat mandiri, bukan diawali konjungsi subordinatif.",
+              "judul_poin": "Hindari Kalimat Buntung Saat Memecah Kalimat",
+              "penjelasan_singkat": "Pastikan setiap pecahan kalimat punya subjek dan predikat sendiri. Jangan awali kalimat baru dengan kata hubung tengah kalimat.",
               "contoh_penerapan": "Proyek pembangunan bendungan itu tertunda selama enam bulan**. Hal ini terjadi** karena pembebasan lahan belum tuntas.",
-              "jebakan_atau_catatan": "Salah jika langsung dipenggal menjadi kalimat buntung tanpa induk kalimat: *Proyek bendungan itu tertunda. Karena pembebasan lahan belum tuntas.*",
+              "jebakan_atau_catatan": "Salah jika langsung dipotong tanpa subjek baru: *Proyek bendungan itu tertunda. Karena pembebasan lahan belum tuntas.*",
               "visual": null
             }
           ]
@@ -131,29 +131,29 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Menggabungkan Dua Kalimat Tunggal dengan Konjungsi dan Pelesapan Subjek yang Tepat",
+      "nama_variasi": "Menggabungkan Dua Kalimat Tunggal dan Menghapus Subjek yang Sama",
       "kategori_variasi": "Inti",
       "stimulus_mini": "(1) Bank sentral menaikkan suku bunga acuan. (2) Bank sentral meredam tekanan pelemahan nilai tukar rupiah.",
-      "bedah_pola_markdown": "Penggabungan dua kalimat tunggal bersubjek sama menjadi kalimat majemuk bertingkat menuntut penghapusan subjek kedua setelah konjungsi subordinatif (*untuk, agar, sehingga, karena*) demi kehematan struktural.\n\n| Aspek | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Kalimat** | Bank sentral [S] menaikkan [P] suku bunga acuan [O] untuk **bank sentral [S]** meredam [P] tekanan pelemahan nilai tukar rupiah [O]. | Bank sentral [S] menaikkan [P] suku bunga acuan [O] **untuk** meredam [P] tekanan pelemahan nilai tukar rupiah [O] [K. Tujuan]. |\n| **Analisis** | Subjek kedua (**bank sentral**) diulang setelah konjungsi *untuk* sehingga kalimat tidak efektif. | Subjek kedua dilesapkan; klausa kedua berubah menjadi keterangan tujuan yang padu. |\n\n**Langkah Eksekusi:**\n1. Identifikasi kesamaan unsur [S] pada kedua kalimat.\n2. Tentukan relasi logis (tujuan, sebab, akibat).\n3. Sisipkan konjungsi intrakalimat tanpa tanda koma sebelumnya dan hapus [S] pada klausa kedua.",
-      "kunci_pembeda": "Fokus variasi ini terletak pada pelesapan subjek identik di klausa kedua tepat setelah konjungsi subordinatif.",
+      "bedah_pola_markdown": "Saat kamu menggabungkan dua kalimat yang pelakunya sama, **hapus pelaku di bagian kedua** tepat setelah kata hubung (*untuk, agar, sehingga, karena*) agar kalimatnya ringkas.\n\n| Aspek | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Kalimat** | Bank sentral [S] menaikkan [P] suku bunga acuan [O] untuk **bank sentral [S]** meredam [P] tekanan pelemahan nilai tukar rupiah [O]. | Bank sentral [S] menaikkan [P] suku bunga acuan [O] **untuk** meredam [P] tekanan pelemahan nilai tukar rupiah [O] [K. Tujuan]. |\n| **Analisis** | Pelaku kedua (**bank sentral**) ditulis ulang setelah kata *untuk* sehingga kalimat terasa boros. | Pelaku kedua dihapus; bagian kedua langsung berubah menjadi keterangan tujuan yang padu. |\n\n**Langkah Cepat:**\n1. Cek apakah pelaku [S] di kedua kalimat sama persis.\n2. Tentukan hubungan logikanya (tujuan, sebab, atau akibat).\n3. Masukkan kata hubung tengah kalimat tanpa tanda koma sebelumnya, lalu buang pelaku [S] di bagian kedua.",
+      "kunci_pembeda": "Fokus utamanya adalah membuang pelaku yang kembar di bagian kedua setelah kata hubung.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Variasi Struktur Penggabungan Kalimat Tanpa Mengubah Hubungan Kausalitas/Kronologis",
+      "nama_variasi": "Membalik Urutan Kalimat Tanpa Merusak Logika Sebab-Akibat",
       "kategori_variasi": "Inti",
       "stimulus_mini": "(1) Curah hujan ekstrem mengguyur wilayah hulu selama tiga hari. (2) Debit air sungai meluap hingga merendam permukiman warga.",
-      "bedah_pola_markdown": "Mengubah susunan klausa (inversi anak kalimat ke awal) diperbolehkan selama relasi sebab-akibat atau urutan waktu tetap utuh dan diberi tanda koma sebelum induk kalimat.\n\n| Aspek | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Kalimat** | Curah hujan ekstrem [S] mengguyur [P] wilayah hulu [O] **karena** debit air sungai [S] meluap [P]. | **Karena** curah hujan ekstrem [S] mengguyur [P] wilayah hulu [O] selama tiga hari [K], debit air sungai [S] meluap [P] hingga merendam permukiman warga [K]. |\n| **Analisis** | Konjungsi *karena* salah tempat sehingga membalik logika sebab menjadi akibat. | Anak kalimat sebab diletakkan di awal diikuti koma; hubungan kausalitas tetap akurat. |\n\n**Langkah Eksekusi:**\n1. Tandai klausa penyebab/peristiwa awal dan klausa akibat/peristiwa lanjutan.\n2. Gunakan *karena/sejak/setelah* di depan klausa penyebab (beri koma) atau *sehingga/lalu* di tengah kalimat (tanpa koma).",
-      "kunci_pembeda": "Variasi ini menguji ketepatan posisi konjungsi dan tanda koma saat posisi induk dan anak kalimat dibalik.",
+      "bedah_pola_markdown": "Kamu boleh menaruh bagian penjelas (anak kalimat) di awal kalimat, asalkan hubungan sebab-akibatnya tidak terbalik dan kamu memberi tanda koma sebelum bagian utama.\n\n| Aspek | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Kalimat** | Curah hujan ekstrem [S] mengguyur [P] wilayah hulu [O] **karena** debit air sungai [S] meluap [P]. | **Karena** curah hujan ekstrem [S] mengguyur [P] wilayah hulu [O] selama tiga hari [K], debit air sungai [S] meluap [P] hingga merendam permukiman warga [K]. |\n| **Analisis** | Kata *karena* salah tempat sehingga logikanya terbalik (hujan terjadi akibat sungai meluap). | Bagian sebab ditaruh di depan diikuti koma; logika sebab-akibat tetap akurat. |\n\n**Langkah Cepat:**\n1. Tandai mana kalimat penyebab (peristiwa awal) dan mana kalimat akibat.\n2. Pasang *karena/sejak/setelah* di depan bagian penyebab (wajib pakai koma) atau *sehingga/lalu* di tengah kalimat (tanpa koma).",
+      "kunci_pembeda": "Variasi ini menguji ketepatan posisi kata hubung dan tanda koma saat urutan kalimat dibalik.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Memecah Kalimat Majemuk Kompleks yang Terlalu Panjang (Run-on Sentence) Menjadi Dua Kalimat Efektif",
+      "nama_variasi": "Memecah Kalimat Kepanjangan Menjadi Dua Kalimat Efektif",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Transisi energi terbarukan memerlukan investasi infrastruktur jaringan listrik pintar yang sangat besar, namun keterbatasan anggaran negara membuat pemerintah harus menggandeng sektor swasta melalui skema kerja sama pendanaan hijau.",
-      "bedah_pola_markdown": "Kalimat beruntun (*run-on*) yang menumpuk lebih dari dua gagasan dengan konjungsi intrakalimat di tengah harus dipenggal menggunakan tanda titik dan disambung konjungsi antarkalimat sesuai EYD V.\n\n| Aspek | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Kalimat** | Transisi energi [S] memerlukan [P] investasi besar [O], **namun** keterbatasan anggaran [S] membuat [P] pemerintah menggandeng swasta [O]. | Transisi energi terbarukan [S] memerlukan [P] investasi infrastruktur jaringan listrik pintar yang sangat besar [O]. **Namun,** keterbatasan anggaran negara [S] membuat [P] pemerintah harus menggandeng sektor swasta [O]. |\n| **Analisis** | Kata *namun* adalah konjungsi antarkalimat; penggunaannya setelah koma menyebabkan kalimat menyatu secara keliru. | Pemenggalan dengan titik dan konjungsi antarkalimat **Namun,** menjaga kepaduan sekaligus kejelasan struktur tiap kalimat. |\n\n**Langkah Eksekusi:**\n1. Temukan batas gagasan utama pertama yang sudah berpola [S]-[P] lengkap.\n2. Ganti konjungsi intrakalimat/koma penyambung dengan tanda titik (`.`).\n3. Awali kalimat kedua dengan konjungsi antarkalimat (*Namun, Oleh karena itu, Selain itu*) diikuti koma.",
-      "kunci_pembeda": "Fokus variasi ini adalah memenggal satu kalimat terlalu panjang menjadi dua kalimat baku dengan konjungsi antarkalimat.",
+      "bedah_pola_markdown": "Kalimat yang menumpuk banyak ide dan memakai kata hubung antarkalimat (*namun, oleh karena itu*) di tengah wajib dipotong pakai tanda titik sesuai EYD V.\n\n| Aspek | Salah (Before) | Benar (After) |\n| :--- | :--- | :--- |\n| **Kalimat** | Transisi energi [S] memerlukan [P] investasi besar [O], **namun** keterbatasan anggaran [S] membuat [P] pemerintah menggandeng swasta [O]. | Transisi energi terbarukan [S] memerlukan [P] investasi infrastruktur jaringan listrik pintar yang sangat besar [O]. **Namun,** keterbatasan anggaran negara [S] membuat [P] pemerintah harus menggandeng sektor swasta [O]. |\n| **Analisis** | Kata *namun* tidak boleh ditaruh setelah tanda koma di tengah kalimat. | Pemotongan dengan tanda titik dan kata hubung **Namun,** membuat kedua kalimat utuh dan baku. |\n\n**Langkah Cepat:**\n1. Cari batas ide utama pertama yang sudah punya subjek dan predikat lengkap.\n2. Ganti tanda koma penyambung menjadi tanda titik (`.`).\n3. Mulai kalimat kedua dengan kata hubung antarkalimat (*Namun, Oleh karena itu, Selain itu*) dan ikuti dengan tanda koma.",
+      "kunci_pembeda": "Fokus utamanya adalah memotong satu kalimat bertele-tele menjadi dua kalimat utuh dengan kata hubung antarkalimat.",
       "visual": null
     }
   ],
@@ -174,7 +174,7 @@
         "E. Lembaga riset kelautan memetakan sebaran mikroplastik di pesisir utara dan lembaga riset kelautan menyusun rekomendasi kebijakan pengendalian limbah industri."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat (1) merupakan cara/sarana untuk mencapai tujuan pada kalimat (2). Opsi B tepat karena meletakkan anak kalimat tujuan (*Untuk menyusun...*) di awal diikuti tanda koma, serta melesapkan subjek kedua yang identik. Opsi A dan E mubazir karena mengulang subjek. Opsi C salah memakai koma sebelum *sehingga* dan keliru relasi logisnya. Opsi D mengandung konjungsi ganda (*Karena ... maka*).",
+      "bedah_cepat_markdown": "Perhatikan hubungan kedua kalimat: pemetaan dilakukan sebagai cara untuk mencapai tujuan pada kalimat (2).\n- **Opsi B benar** karena menaruh anak kalimat tujuan (*Untuk menyusun...*) di awal diikuti tanda koma, serta menghapus pelaku kedua yang kembar.\n- **Opsi A & E salah** karena boros mengulang pelaku (*lembaga tersebut* / *lembaga riset kelautan*).\n- **Opsi C salah** karena memakai koma sebelum *sehingga* dan hubungan sebab-akibatnya kurang pas.\n- **Opsi D salah** karena menumpuk dua kata hubung sekaligus (*Karena ... maka*).",
       "visual": null
     },
     {
@@ -192,7 +192,7 @@
         "E. Peningkatan suhu permukaan laut secara berkala memicu pemutihan terumbu karang secara masif. Di kawasan konservasi perairan timur, oleh karena itu para peneliti mendesak penerapan zona larang tangkap sementara."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Kalimat asal adalah *run-on sentence* karena memakai konjungsi antarkalimat (*oleh karena itu*) setelah tanda koma. Pemecahan yang benar mengakhiri klausa pertama dengan tanda titik, lalu memulai kalimat kedua dengan konjungsi antarkalimat *Oleh karena itu,* diikuti tanda koma (Opsi C). Opsi A kehilangan koma setelah *Oleh karena itu*. Opsi B memakai konjungsi intrakalimat (*Sehingga*) di awal kalimat. Opsi D dan E memenggal frasa objek/keterangan secara tidak bersubjek.",
+      "bedah_cepat_markdown": "Kalimat di soal salah karena menaruh kata hubung antarkalimat (*oleh karena itu*) setelah tanda koma. Cara memperbaikinya adalah memotong kalimat pertama dengan titik, lalu membuka kalimat kedua dengan *Oleh karena itu,*.\n- **Opsi C benar** karena tanda titik dan tanda koma setelah *Oleh karena itu* terpasang tepat.\n- **Opsi A salah** karena lupa tanda koma setelah *Oleh karena itu*.\n- **Opsi B salah** karena memakai kata hubung tengah kalimat (*Sehingga*) di awal kalimat.\n- **Opsi D & E salah** karena memotong bagian kalimat secara sembarangan hingga tidak punya subjek dan predikat.",
       "visual": null
     },
     {
@@ -205,7 +205,7 @@
       "pertanyaan_markdown": "Cermati paragraf berikut!\n\n(1) Ketersediaan ruang terbuka hijau di kawasan perkotaan berperan vital dalam menekan efek pulau bahang. (2) Banyak pemerintah daerah menghadapi keterbatasan lahan akibat tingginya laju alih fungsi kawasan permukiman. (3) Pemerintah daerah mulai mengadopsi konsep taman vertikal pada fasad gedung bertingkat. (4) Langkah tersebut terbukti mampu menurunkan suhu mikro di sekitar bangunan hingga dua derajat Celsius.\n\nJika kalimat (2) dan (3) digabungkan menjadi satu kalimat majemuk bertingkat tanpa mengubah makna sebab-akibat dan dengan melesapkan subjek kedua, kata penghubung (konjungsi) paling tepat yang diletakkan di antara kedua klausa tersebut adalah .... *(Tuliskan satu kata saja dengan huruf kecil)*",
       "opsi_jawaban": [],
       "kunci_jawaban": "sehingga",
-      "bedah_cepat_markdown": "Kalimat (2) menyatakan sebab (*menghadapi keterbatasan lahan*), sedangkan kalimat (3) menyatakan akibat (*mengadopsi konsep taman vertikal*). Karena kedua kalimat memiliki subjek yang sama (*pemerintah daerah*), penggabungan sebab-akibat di tengah kalimat menggunakan konjungsi intrakalimat **sehingga** (tanpa tanda koma sebelumnya) disertai pelesapan subjek *pemerintah daerah* pada klausa kedua.",
+      "bedah_cepat_markdown": "Cek dulu arah logikanya: kalimat (2) adalah **sebab** (*keterbatasan lahan*), sedangkan kalimat (3) adalah **akibat** (*mengadopsi taman vertikal*). Karena kedua kalimat punya pelaku yang sama (*pemerintah daerah*), kita gabungkan dari sebab ke akibat memakai kata hubung **sehingga** di tengah kalimat (tanpa koma) dan membuang pelaku kedua.",
       "visual": null
     }
   ]

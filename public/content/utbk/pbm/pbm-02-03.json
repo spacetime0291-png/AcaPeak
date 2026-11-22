@@ -9,61 +9,61 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Manakah penulisan yang baku menurut EYD Edisi V: 'Ia membaca puisi \"Aku\" karya Chairil Anwar.' atau 'Ia membaca puisi 'Aku' karya Chairil Anwar.'?",
+      "pertanyaan_pemantik": "Manakah penulisan judul puisi yang tepat menurut EYD V: 'Ia membaca puisi \"Aku\" karya Chairil Anwar.' atau 'Ia membaca puisi 'Aku' karya Chairil Anwar.'?",
       "opsi_cepat": [
         "Menggunakan petik tunggal ('Aku')",
         "Menggunakan petik dua (\"Aku\")"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Judul puisi, artikel, dan bab buku wajib diapit tanda petik dua (\"...\"), sedangkan petik tunggal ('...') khusus untuk makna kata atau petikan di dalam petikan."
+      "penjelasan_kilat": "Judul bagian karya tulis (puisi, artikel, bab buku, lagu) wajib diapit petik dua (\"...\"). Petik tunggal ('...') khusus untuk makna kata atau kutipan di dalam kutipan."
     },
-    "konsep_inti_markdown": "* **Petik Dua (`\"...\"`)**: Mengapit petikan langsung, judul bagian karya (puisi, artikel, bab, lagu), serta istilah ilmiah yang kurang dikenal atau bermakna khusus.\n* **Petik Tunggal (`'...'`)**: Mengapit petikan yang tersusun di dalam petikan lain serta makna, terjemahan, atau padanan kata/ungkapan asing.\n* **Tanda Kurung (`(...)`)**: Mengapit tambahan keterangan/penjelasan, singkatan/kepanjangan, serta huruf atau angka perincian yang berada di dalam kalimat.",
+    "konsep_inti_markdown": "* **Petik Dua (`\"...\"`)**: Mengapit ucapan langsung, judul bagian karya (puisi, artikel, bab, lagu), dan istilah khusus/kiasan.\n* **Petik Tunggal (`'...'`)**: Mengapit kutipan di dalam kutipan lain serta makna atau terjemahan kata.\n* **Tanda Kurung (`(...)`)**: Mengapit penjelasan tambahan, singkatan/kepanjangan, dan huruf/angka rincian di dalam kalimat.",
     "radar_jebakan_utbk": [
-      "Menukar fungsi petik dua dan petik tunggal untuk makna terjemahan atau judul karya tulis yang belum diterbitkan sebagai buku mandiri.",
-      "Meletakkan tanda baca penutup kalimat (titik/koma) di luar tanda petik dua pada petikan langsung, atau salah menempatkan titik di dalam tanda kurung penjelas akhir kalimat."
+      "Menukar fungsi petik dua dan petik tunggal untuk terjemahan kata atau judul bagian karya tulis.",
+      "Meletakkan tanda titik atau tanda tanya di luar petik penutup pada kalimat langsung, atau menaruh titik di dalam tanda kurung penjelas akhir kalimat."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Kaidah Lengkap Tanda Petik dan Tanda Kurung (EYD V)",
-      "subjudul_ringkas": "Panduan sistematis pemakaian tanda petik dua, petik tunggal, dan tanda kurung sesuai kaidah EYD V.",
+      "judul_blok": "Aturan Lengkap Tanda Petik dan Tanda Kurung (EYD V)",
+      "subjudul_ringkas": "Panduan praktis pemakaian tanda petik dua, petik tunggal, dan tanda kurung sesuai EYD V.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
-        "kolom_1": "Aturan / Kaidah",
-        "kolom_2": "Contoh Benar (1 Kalimat)",
+        "kolom_1": "Aturan Pakai",
+        "kolom_2": "Contoh Benar",
         "kolom_3": "Bentuk Salah / Jebakan UTBK"
       },
       "kelompok": [
         {
           "nama_kelompok": "Tanda Petik Dua (\"...\")",
-          "ringkasan_kelompok": "Mengapit petikan langsung, judul bagian karya, dan istilah bermakna khusus.",
+          "ringkasan_kelompok": "Mengapit kutipan langsung, judul bagian karya, dan istilah khusus.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Petikan Langsung Pembicaraan atau Naskah",
-              "penjelasan_singkat": "Mengapit petikan langsung yang berasal dari pembicaraan, naskah, atau bahan tertulis lain.",
+              "judul_poin": "Kutipan Langsung dari Pembicaraan atau Naskah",
+              "penjelasan_singkat": "Mengapit ucapan langsung atau kutipan dari naskah dan bahan tertulis lain.",
               "contoh_penerapan": "Ibu berpesan, **\"Jangan lupa mengunci pintu sebelum berangkat ke sekolah.\"**",
-              "jebakan_atau_catatan": "Salah: Ibu berpesan, **\"Jangan lupa mengunci pintu\"**. Tanda titik akhir kalimat wajib berada di dalam petik tutup.",
+              "jebakan_atau_catatan": "Salah: Ibu berpesan, **\"Jangan lupa mengunci pintu\"**. Tanda titik akhir kalimat wajib masuk ke dalam petik tutup.",
               "visual": null
             },
             {
               "judul_poin": "Judul Puisi, Lagu, Artikel, atau Bab Buku",
-              "penjelasan_singkat": "Mengapit judul puisi, lagu, artikel, makalah, bab buku, pidato, atau tema dalam kalimat.",
-              "contoh_penerapan": "Peserta sedang membaca makalah **\"Dampak Perubahan Iklim terhadap Ketahanan Pangan\"** di perpustakaan.",
+              "penjelasan_singkat": "Mengapit judul bagian karya yang belum terbit sebagai buku mandiri di dalam kalimat.",
+              "contoh_penerapan": "Peserta membaca makalah **\"Dampak Perubahan Iklim terhadap Ketahanan Pangan\"** di perpustakaan.",
               "jebakan_atau_catatan": "Salah: Peserta membaca makalah *Dampak Perubahan Iklim*. Judul bagian karya diapit petik dua, bukan dicetak miring.",
               "visual": null
             },
             {
               "judul_poin": "Istilah Ilmiah Kurang Dikenal atau Bermakna Khusus",
-              "penjelasan_singkat": "Mengapit istilah ilmiah yang kurang dikenal atau kata yang mempunyai arti khusus dan konotatif.",
-              "contoh_penerapan": "Ia dikenal sebagai **\"tangan kanan\"** direktur utama di perusahaan multinasional tersebut.",
-              "jebakan_atau_catatan": "Salah: Ia dikenal sebagai *tangan kanan* direktur. Ungkapan bermakna kiasan atau khusus diapit petik dua, bukan miring.",
+              "penjelasan_singkat": "Mengapit istilah teknis yang belum umum atau kata yang punya arti kiasan.",
+              "contoh_penerapan": "Ia dikenal sebagai **\"tangan kanan\"** direktur utama di perusahaan teknologi tersebut.",
+              "jebakan_atau_catatan": "Salah: Ia dikenal sebagai *tangan kanan* direktur. Ungkapan kiasan atau bermakna khusus diapit petik dua, bukan miring.",
               "visual": null
             },
             {
-              "judul_poin": "Posisi Tanda Baca Penutup pada Petikan Langsung",
-              "penjelasan_singkat": "Tanda baca penutup kalimat atau bagian kalimat ditempatkan di dalam tanda petik penutup.",
-              "contoh_penerapan": "**\"Apakah seluruh berkas pendaftaran sudah lengkap?\"** tanya petugas administrasi kepada peserta ujian.",
+              "judul_poin": "Posisi Tanda Baca Penutup pada Kutipan Langsung",
+              "penjelasan_singkat": "Tanda baca penutup milik kutipan diletakkan di dalam tanda petik tutup.",
+              "contoh_penerapan": "**\"Apakah seluruh berkas pendaftaran sudah lengkap?\"** tanya petugas kepada peserta ujian.",
               "jebakan_atau_catatan": "Salah: **\"Apakah berkas pendaftaran sudah lengkap\"?** tanya petugas. Tanda tanya milik kutipan wajib di dalam petik.",
               "visual": null
             }
@@ -71,61 +71,61 @@
         },
         {
           "nama_kelompok": "Tanda Petik Tunggal ('...')",
-          "ringkasan_kelompok": "Mengapit petikan di dalam petikan lain serta makna atau terjemahan kata.",
+          "ringkasan_kelompok": "Mengapit kutipan di dalam kutipan serta makna atau terjemahan kata.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Petikan yang Tersusun di Dalam Petikan Lain",
-              "penjelasan_singkat": "Mengapit kutipan langsung yang terdapat di dalam petikan langsung lainnya.",
+              "judul_poin": "Kutipan yang Tersusun di Dalam Kutipan Lain",
+              "penjelasan_singkat": "Mengapit kutipan langsung yang muncul di dalam kutipan langsung lainnya.",
               "contoh_penerapan": "Tanya dia, **\"Kau dengar bunyi 'kring-kring' tadi?\"** sambil menoleh ke arah pintu.",
-              "jebakan_atau_catatan": "Salah: Tanya dia, **\"Kau dengar bunyi \"kring-kring\" tadi?\"** Petik di dalam petik tidak boleh memakai petik dua.",
+              "jebakan_atau_catatan": "Salah: Tanya dia, **\"Kau dengar bunyi \"kring-kring\" tadi?\"** Kutipan di dalam kutipan tidak boleh memakai petik dua.",
               "visual": null
             },
             {
               "judul_poin": "Makna, Terjemahan, atau Padanan Ungkapan Asing",
-              "penjelasan_singkat": "Mengapit makna, terjemahan, atau penjelasan kata serta ungkapan bahasa daerah dan asing.",
+              "penjelasan_singkat": "Mengapit arti, terjemahan, atau penjelasan kata daerah dan kata asing.",
               "contoh_penerapan": "Kata *tetirah* dalam bahasa Indonesia bermakna **'pergi ke tempat lain untuk memulihkan kesehatan'**.",
-              "jebakan_atau_catatan": "Salah: Kata *tetirah* bermakna **\"pergi memulihkan kesehatan\"**. Penjelasan makna kata wajib memakai petik tunggal, bukan petik dua.",
+              "jebakan_atau_catatan": "Salah: Kata *tetirah* bermakna **\"pergi memulihkan kesehatan\"**. Penjelasan arti kata wajib memakai petik tunggal, bukan petik dua.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Tanda Kurung ((...)) dan Kurung Siku ([...])",
-          "ringkasan_kelompok": "Mengapit keterangan tambahan, singkatan, perincian, serta keterangan di dalam tanda kurung.",
+          "ringkasan_kelompok": "Mengapit keterangan tambahan, singkatan, rincian, dan kurung bertingkat.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Tambahan Keterangan Singkatan atau Kepanjangan",
-              "penjelasan_singkat": "Mengapit tambahan keterangan berupa singkatan atau kepanjangan yang baru diperkenalkan dalam kalimat.",
-              "contoh_penerapan": "Badan Riset dan Inovasi Nasional **(BRIN)** menyelenggarakan seminar nasional tentang teknologi energi terbarukan.",
-              "jebakan_atau_catatan": "Salah: Badan Riset dan Inovasi Nasional **(\"BRIN\")** menyelenggarakan seminar. Singkatan di dalam kurung tidak diapit tanda petik.",
+              "penjelasan_singkat": "Mengapit singkatan atau kepanjangan yang baru diperkenalkan dalam teks.",
+              "contoh_penerapan": "Badan Riset dan Inovasi Nasional **(BRIN)** menggelar seminar teknologi energi terbarukan.",
+              "jebakan_atau_catatan": "Salah: Badan Riset dan Inovasi Nasional **(\"BRIN\")** menggelar seminar. Singkatan di dalam kurung tidak perlu tanda petik.",
               "visual": null
             },
             {
-              "judul_poin": "Keterangan Penjelas yang Bukan Bagian Utama Kalimat",
-              "penjelasan_singkat": "Mengapit penjelasan tambahan yang bukan bagian utama kalimat sehingga dapat dihilangkan tanpa merusak struktur.",
-              "contoh_penerapan": "Keterangan saksi ahli itu **(lihat halaman 45)** memperkuat bukti dugaan pelanggaran kontrak kerja.",
-              "jebakan_atau_catatan": "Salah: Keterangan saksi itu, **(lihat halaman 45),** memperkuat bukti. Jangan mengapit tanda kurung dengan tanda koma ganda.",
+              "judul_poin": "Keterangan Penjelas di Luar Inti Kalimat",
+              "penjelasan_singkat": "Mengapit info tambahan yang bisa dihapus tanpa merusak struktur inti kalimat.",
+              "contoh_penerapan": "Keterangan saksi ahli itu **(lihat halaman 45)** memperkuat bukti dugaan pelanggaran kontrak.",
+              "jebakan_atau_catatan": "Salah: Keterangan saksi itu, **(lihat halaman 45),** memperkuat bukti. Jangan mengapit tanda kurung dengan dua tanda koma.",
               "visual": null
             },
             {
               "judul_poin": "Huruf atau Kata Opsional dalam Kalimat",
-              "penjelasan_singkat": "Mengapit huruf atau kata yang keberadaannya di dalam teks dapat dimunculkan atau dihilangkan.",
-              "contoh_penerapan": "Dia berangkat ke kantor selalu menaiki **(bus)** Transjakarta setiap pagi hari.",
-              "jebakan_atau_catatan": "Salah: Dia menaiki **bus/Transjakarta** setiap pagi. Garis miring bermakna pilihan 'atau', sedangkan kurung menandakan unsur opsional.",
+              "penjelasan_singkat": "Mengapit huruf atau kata yang boleh dimunculkan atau dihilangkan dalam kalimat.",
+              "contoh_penerapan": "Dia berangkat ke kantor selalu menaiki **(bus)** Transjakarta setiap pagi.",
+              "jebakan_atau_catatan": "Salah: Dia menaiki **bus/Transjakarta** setiap pagi. Garis miring berarti pilihan 'atau', sedangkan kurung menandakan kata opsional.",
               "visual": null
             },
             {
-              "judul_poin": "Huruf atau Angka Penanda Perincian Horizontal",
-              "penjelasan_singkat": "Mengapit huruf atau angka yang digunakan sebagai penanda perincian yang ditulis berderet dalam kalimat.",
-              "contoh_penerapan": "Faktor penghambat produksi meliputi **(a)** bahan baku, **(b)** tenaga kerja, dan **(c)** modal usaha.",
-              "jebakan_atau_catatan": "Salah: Faktor produksi meliputi **a)** bahan baku, **b)** tenaga kerja. Perincian dalam kalimat wajib memakai kurung lengkap.",
+              "judul_poin": "Huruf atau Angka Penanda Rincian Mendatar",
+              "penjelasan_singkat": "Mengapit huruf atau angka rincian yang ditulis berderet dalam satu kalimat.",
+              "contoh_penerapan": "Faktor penghambat produksi meliputi **(a)** bahan baku, **(b)** tenaga kerja, dan **(c)** modal.",
+              "jebakan_atau_catatan": "Salah: Faktor produksi meliputi **a)** bahan baku, **b)** tenaga kerja. Rincian dalam kalimat wajib memakai kurung lengkap.",
               "visual": null
             },
             {
               "judul_poin": "Kurung Siku untuk Kurung Bertingkat atau Koreksi",
-              "penjelasan_singkat": "Mengapit keterangan di dalam kalimat penjelas yang sudah bertanda kurung atau koreksi naskah asli.",
+              "penjelasan_singkat": "Mengapit keterangan tambahan di dalam bagian yang sudah bertanda kurung.",
               "contoh_penerapan": "Persamaan kedua proses itu **(perbedaannya dibahas pada Bab II [lihat halaman 35])** perlu dicermati.",
               "jebakan_atau_catatan": "Salah: Persamaan itu **(perbedaannya dibahas pada Bab II (lihat halaman 35))**. Kurung di dalam kurung wajib memakai kurung siku.",
               "visual": null
@@ -138,20 +138,20 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Tanda Petik Dua (\"...\") untuk Kutipan Langsung, Judul Bagian Karya, dan Istilah Bermakna Khusus",
+      "nama_variasi": "Tanda Petik Dua (\"...\") untuk Kutipan Langsung, Judul Bagian Karya, dan Istilah Khusus",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Dalam jurnal lingkungannya, peneliti itu menulis artikel berjudul Ekosistem Karbon Biru dan menyoroti fenomena pencucian hijau pada industri energi.",
-      "bedah_pola_markdown": "Berdasarkan kaidah EYD Edisi V, tanda petik dua (`\"...\"`) mengapit tiga elemen utama: (1) petikan langsung pembicaraan/naskah dengan tanda baca penutup kalimat berada **di dalam** petik penutup; (2) judul artikel, puisi, bab buku, atau makalah yang dipakai dalam kalimat; serta (3) istilah ilmiah yang kurang dikenal atau kata bermakna konotatif/khusus.\n\n| Salah (Before) | Benar (After) |\n| :--- | :--- |\n| Peneliti [S] menulis [P] artikel **'Ekosistem Karbon Biru'** [O]. | Peneliti [S] menulis [P] artikel **\"Ekosistem Karbon Biru\"** [O]. |\n| Industri [S] melakukan [P] praktik **pencucian hijau** [O]. | Industri [S] melakukan [P] praktik **\"pencucian hijau\"** [O]. |\n| Ia berkata, **\"Proyek ini selesai\".** | Ia berkata, **\"Proyek ini selesai.\"** |\n\nPerhatikan struktur sintaksisnya: frasa judul artikel menjadi pelengkap objek (`[O]`) yang tidak dicetak miring seperti judul buku, sedangkan titik akhir kalimat masuk ke dalam tanda petik penutup.",
-      "kunci_pembeda": "Gunakan tanda petik dua untuk judul bagian karya tulis (artikel, puisi, bab) dan letakkan tanda titik penutup di dalam petik langsung.",
+      "bedah_pola_markdown": "Cek tiga fungsi utama petik dua (`\"...\"`) berikut:\n1. **Kutipan langsung**: Tanda titik atau tanda tanya akhir kalimat wajib masuk **di dalam** petik tutup.\n2. **Judul bagian karya**: Judul artikel, puisi, makalah, atau bab buku diapit petik dua (bukan dicetak miring seperti judul buku utuh).\n3. **Istilah khusus/kiasan**: Kata bermakna kiasan atau istilah yang belum dikenal luas diapit petik dua.\n\n| Salah (Before) | Benar (After) |\n| :--- | :--- |\n| Peneliti menulis artikel **'Ekosistem Karbon Biru'**. | Peneliti menulis artikel **\"Ekosistem Karbon Biru\"**. |\n| Industri melakukan praktik **pencucian hijau**. | Industri melakukan praktik **\"pencucian hijau\"**. |\n| Ia berkata, **\"Proyek ini selesai\".** | Ia berkata, **\"Proyek ini selesai.\"** |\n\n**Intinya**: Jangan tertukar antara judul buku (cetak miring) dan judul artikel/bab (petik dua). Pastikan juga titik penutup kalimat langsung tidak tertinggal di luar petik.",
+      "kunci_pembeda": "Gunakan petik dua untuk judul artikel/puisi/bab buku, dan taruh tanda baca penutup di dalam petik langsung.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Tanda Petik Tunggal ('...') untuk Makna Kata dan Petikan di Dalam Petikan",
+      "nama_variasi": "Tanda Petik Tunggal ('...') untuk Makna Kata dan Kutipan di Dalam Kutipan",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Dalam sidang linguistik, narasumber menjelaskan bahwa istilah mangkus bermakna 'berhasil guna' dan mengutip ucapan rekannya di tengah paparan.",
-      "bedah_pola_markdown": "Sesuai EYD Edisi V, tanda petik tunggal (`'...'`) memiliki dua fungsi spesifik yang kerap diujikan pada soal skor tinggi: (1) mengapit makna, terjemahan, atau penjelasan ungkapan asing/daerah tanpa didahului kata *berarti* secara berlebihan; serta (2) mengapit petikan langsung yang berada di dalam petikan langsung lainnya.\n\n| Salah (Before) | Benar (After) |\n| :--- | :--- |\n| Istilah *mangkus* [S] bermakna [P] **\"berhasil guna\"** [Pel]. | Istilah *mangkus* [S] bermakna [P] **'berhasil guna'** [Pel]. |\n| Kata *feedback* [S] dipadankan [P] dengan **(\"umpan balik\")** [K]. | Kata *feedback* [S] dipadankan [P] dengan **'umpan balik'** [K]. |\n| \"Ia bertanya, **\"Kapan data rilis?\"**\" | \"Ia bertanya, **'Kapan data rilis?'**\" |\n\nPada pola pertama, unsur serapan asing dicetak miring, sedangkan padanan maknanya diapit petik tunggal tegak tanpa tanda kurung tambahan sehingga struktur predikat-keterangan tetap efektif.",
-      "kunci_pembeda": "Gunakan tanda petik tunggal khusus untuk mengapit terjemahan/makna kata serta kutipan yang bersarang di dalam kutipan petik dua.",
+      "bedah_pola_markdown": "Tanda petik tunggal (`'...'`) punya dua tugas spesifik yang sering muncul di soal jebakan:\n1. **Mengapit makna atau terjemahan**: Arti kata daerah atau istilah asing ditulis dengan petik tunggal, bukan petik dua atau tanda kurung.\n2. **Kutipan bersarang**: Jika ada ucapan langsung di dalam kutipan petik dua, ucapan di dalamnya wajib memakai petik tunggal.\n\n| Salah (Before) | Benar (After) |\n| :--- | :--- |\n| Istilah *mangkus* bermakna **\"berhasil guna\"**. | Istilah *mangkus* bermakna **'berhasil guna'**. |\n| Kata *feedback* dipadankan dengan **(\"umpan balik\")**. | Kata *feedback* dipadankan dengan **'umpan balik'**. |\n| \"Ia bertanya, **\"Kapan data rilis?\"**\" | \"Ia bertanya, **'Kapan data rilis?'**\" |\n\n**Catatan penting**: Kata asingnya tetap dicetak miring (*feedback*), sedangkan terjemahannya tegak di dalam petik tunggal (`'umpan balik'`).",
+      "kunci_pembeda": "Gunakan petik tunggal khusus untuk arti/terjemahan kata serta kutipan yang berada di dalam petik dua.",
       "visual": null
     },
     {
@@ -159,8 +159,8 @@
       "nama_variasi": "Tanda Kurung ((...)) untuk Singkatan, Keterangan Tambahan, dan Angka Rincian",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Badan Riset dan Inovasi Nasional (BRIN) menyusun pedoman riset yang mencakup: (1) validasi data, (2) uji sampel, dan (3) publikasi ilmiah.",
-      "bedah_pola_markdown": "Menurut EYD Edisi V, tanda kurung (`(...)`) berfungsi mengapit tambahan keterangan/penjelasan, mengapit huruf atau kata yang keberadaannya dapat dimunculkan atau dihilangkan, serta mengapit angka/huruf perincian dalam satu kalimat. Perhatikan posisi tanda titik penutup kalimat terhadap tanda kurung penjelas.\n\n| Salah (Before) | Benar (After) |\n| :--- | :--- |\n| **BRIN (Badan Riset dan Inovasi Nasional)** [S] merilis [P] data [O]. | **Badan Riset dan Inovasi Nasional (BRIN)** [S] merilis [P] data [O]. |\n| Sistem itu [S] memakai [P] metode *(random sampling).* [O] | Sistem itu [S] memakai [P] metode **(random sampling)** [O]. |\n| Syaratnya meliputi **1)** KTP **2)** kartu pelajar. | Syaratnya meliputi **(1)** KTP dan **(2)** kartu pelajar. |\n\nBentuk lengkap kepanjangan ditulis lebih dahulu sebelum singkatannya di dalam kurung pada subjek (`[S]`), sedangkan titik akhir kalimat diletakkan di luar tanda kurung penjelas yang bukan kalimat utuh.",
-      "kunci_pembeda": "Tuliskan kepanjangan terlebih dahulu sebelum singkatan di dalam tanda kurung, dan gunakan kurung penuh ((1)) untuk perincian di dalam kalimat.",
+      "bedah_pola_markdown": "Perhatikan tiga aturan pemakaian tanda kurung (`(...)`) agar kalimatmu bebas dari cacat EYD:\n1. **Urutan singkatan**: Tulis kepanjangannya dulu, baru singkatannya di dalam kurung—jangan dibalik.\n2. **Posisi titik akhir**: Jika kurung hanya berisi frasa penjelas di akhir kalimat, tanda titik diletakkan **di luar** kurung tutup.\n3. **Rincian mendatar**: Angka atau huruf rincian di dalam satu kalimat wajib memakai kurung lengkap `(1)`, bukan kurung tutup saja `1)`.\n\n| Salah (Before) | Benar (After) |\n| :--- | :--- |\n| **BRIN (Badan Riset dan Inovasi Nasional)** merilis data. | **Badan Riset dan Inovasi Nasional (BRIN)** merilis data. |\n| Sistem itu memakai metode *(random sampling).* | Sistem itu memakai metode **(random sampling)**. |\n| Syaratnya meliputi **1)** KTP **2)** kartu pelajar. | Syaratnya meliputi **(1)** KTP dan **(2)** kartu pelajar. |\n\n**Trik cepat**: Coba hapus bagian di dalam tanda kurung. Jika kalimat utamanya masih utuh dan logis, berarti tanda kurungmu sudah tepat.",
+      "kunci_pembeda": "Tulis kepanjangan sebelum singkatan di dalam kurung, taruh titik di luar kurung penjelas, dan pakai kurung penuh ((1)) untuk rincian.",
       "visual": null
     }
   ],
@@ -181,7 +181,7 @@
         "E. mengganti tanda petik dua pada makna istilah menjadi cetak miring dan menghapus tanda koma setelah judul artikel"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Judul artikel yang digunakan di dalam kalimat harus diapit tanda petik dua (`\"Jejak Karbon Maritim\"`), bukan dicetak miring seperti judul buku. Selain itu, makna atau terjemahan istilah asing (*blue carbon*) wajib diapit tanda petik tunggal (`'karbon yang diserap oleh ekosistem pesisir dan laut'`), bukan petik dua atau tanda kurung. Opsi B keliru karena judul artikel memakai petik dua. Opsi C, D, dan E melanggar kaidah penulisan judul artikel serta padanan makna kata asing dalam EYD V.",
+      "bedah_cepat_markdown": "Mari kita bedah dua kesalahan tanda baca pada kalimat soal:\n1. **Judul artikel**: *Jejak Karbon Maritim* adalah judul artikel (bagian karya), bukan judul buku mandiri. Jadi, penulisannya harus diapit **petik dua** (`\"Jejak Karbon Maritim\"`), bukan dicetak miring.\n2. **Makna istilah**: Arti dari istilah asing *blue carbon* wajib diapit **petik tunggal** (`'karbon yang diserap oleh ekosistem pesisir dan laut'`), bukan petik dua atau tanda kurung.\n\nOpsi B salah karena judul artikel memakai petik dua. Opsi C, D, dan E keliru karena mempertahankan cetak miring pada artikel atau salah mengapit arti kata. Jadi, jawabannya **A**.",
       "visual": null
     },
     {
@@ -200,7 +200,7 @@
         "E. Pakar bahasa itu berujar, \"Kakek saya sering berpesan, 'Hemat pangkal kaya,' sejak saya masih kecil.\""
       ],
       "kunci_jawaban": "E",
-      "bedah_cepat_markdown": "Opsi E tepat karena mengapit petikan di dalam petikan menggunakan tanda petik tunggal (`'...'`) di dalam petik dua (`\"...\"`) secara konsisten. Opsi A keliru karena memakai petik dua di dalam petik dua. Opsi B salah karena perincian dalam kalimat wajib memakai kurung penuh (`(1)` dan `(2)`). Opsi C keliru mengapit makna istilah dengan tanda kurung (seharusnya petik tunggal). Opsi D terbalik menempatkan singkatan sebelum kepanjangannya.",
+      "bedah_cepat_markdown": "Kita cek satu per satu opsi yang tersedia:\n* **Opsi A salah**: Kutipan di dalam kutipan memakai petik dua pada `\"OTP\"` (seharusnya petik tunggal `'OTP'`).\n* **Opsi B salah**: Rincian di dalam kalimat memakai kurung tutup saja `1)` dan `2)` (seharusnya kurung penuh `(1)` dan `(2)`).\n* **Opsi C salah**: Makna kata *resilience* diapit tanda kurung (seharusnya petik tunggal `'ketahanan mental'`).\n* **Opsi D salah**: Urutan singkatan terbalik; kepanjangan harus ditulis lebih dulu sebelum singkatan di dalam kurung.\n* **Opsi E benar**: Kutipan langsung diapit petik dua (`\"...\"`), sedangkan kutipan di dalamnya memakai petik tunggal (`'Hemat pangkal kaya,'`) dengan posisi koma yang tepat.\n\nJadi, jawabannya **E**.",
       "visual": null
     },
     {
@@ -213,7 +213,7 @@
       "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n(1) Kementerian Kesehatan (Kemenkes) meluncurkan program deteksi dini penyakit metabolik pada remaja. (2) Program tersebut mencakup tiga tahapan utama, yakni: (1) skrining tekanan darah, (2) pemeriksaan kadar gula, dan (3) konsultasi gizi. (3) Dalam panduan resminya, tim penyusun menyisipkan bab berjudul *Pola Makan Seimbang* sebagai rujukan praktis bagi sekolah. (4) Selain itu, istilah \"stunting\" dijelaskan secara rinci agar mudah dipahami oleh orang tua.\n\nTulislah nomor kalimat yang mengandung kesalahan penggunaan tanda baca berdasarkan kaidah EYD Edisi V! *(Ketik angka saja, misalnya: 1)*",
       "opsi_jawaban": [],
       "kunci_jawaban": "3",
-      "bedah_cepat_markdown": "Kalimat (3) salah karena judul bab buku (*Pola Makan Seimbang*) yang digunakan di dalam kalimat seharusnya diapit tanda petik dua (`\"Pola Makan Seimbang\"`), bukan dicetak miring. Kalimat (1) sudah tepat mendahulukan kepanjangan sebelum singkatan `(Kemenkes)`. Kalimat (2) benar memakai kurung penuh `(1)`, `(2)`, `(3)` untuk perincian. Kalimat (4) tepat mengapit istilah bermakna khusus/kurang dikenal (`\"stunting\"`) dengan tanda petik dua.",
+      "bedah_cepat_markdown": "Mari kita periksa tanda baca pada setiap kalimat:\n* **Kalimat (1) benar**: Kepanjangan ditulis lebih dulu sebelum singkatan `(Kemenkes)`.\n* **Kalimat (2) benar**: Rincian mendatar memakai tanda kurung penuh `(1)`, `(2)`, dan `(3)`.\n* **Kalimat (3) salah**: Judul bab buku (*Pola Makan Seimbang*) merupakan bagian karya tulis, sehingga wajib diapit tanda petik dua (`\"Pola Makan Seimbang\"`), bukan dicetak miring.\n* **Kalimat (4) benar**: Istilah khusus/teknis (`\"stunting\"`) yang diperkenalkan dalam teks tepat diapit tanda petik dua.\n\nJadi, nomor kalimat yang salah adalah **3**.",
       "visual": null
     }
   ]

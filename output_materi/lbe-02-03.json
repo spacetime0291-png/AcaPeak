@@ -9,125 +9,125 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Kalimat asli: 'Unless cities expand green corridors, urban heat islands will intensify.' Manakah parafrasa yang tepat?",
+      "pertanyaan_pemantik": "Kalimat asli: 'Unless cities expand green corridors, urban heat islands will intensify.' Manakah parafrasa yang maknanya paling tepat?",
       "opsi_cepat": [
         "Expanding green corridors guarantees the elimination of urban heat.",
         "Urban heat islands will worsen if cities fail to enlarge green corridors."
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Banyak peserta memilih opsi pertama karena kata kuncinya mirip, padahal kata 'guarantees elimination' mengubah syarat negatif menjadi kepastian ekstrem."
+      "penjelasan_kilat": "Hati-hati terkecoh kata yang mirip! Opsi pertama memakai kata ekstrem 'guarantees elimination' (menjamin hilang total). Padahal, kalimat aslinya cuma bilang suhu panas bakal makin parah kalau jalur hijau tidak diperluas (unless = if not)."
     },
-    "konsep_inti_markdown": "* **Prinsip Ekuivalensi ($A \\equiv B$):** Parafrasa wajib mempertahankan subjek, tindakan, dan hubungan logis (sebab-akibat, syarat, kontras) tanpa menambah/mengurangi cakupan.\n* **Teknik Bedah:**\n  1. Isolasi **Main Clause** (S + V + O).\n  2. Kunci **Logical Connector** (*although, unless, thereby*).\n  3. Uji kesetaraan makna menggunakan sinonim dan transformasi struktur aktif-pasif.",
+    "konsep_inti_markdown": "* **Aturan Main Parafrasa ($A \\equiv B$):** Kalimat baru wajib menjaga pelaku, aksi, dan hubungan logikanya tetap sama. Jangan menambah atau mengurangi informasi aslinya.\n* **3 Langkah Cepat Membedah Kalimat:**\n  1. **Cari Inti Kalimat:** Temukan siapa pelakunya dan apa aksinya (Subjek + Kata Kerja + Objek).\n  2. **Kunci Kata Penghubung:** Tandai sinyal logika seperti *although* (kontras), *unless* (syarat), atau *thereby* (akibat).\n  3. **Cek Kesetaraan Makna:** Pastikan sinonim dan perubahan bentuk aktif-pasifnya tidak membalik makna awal.",
     "radar_jebakan_utbk": [
-      "Reversal of Logic: Membalik posisi sebab dan akibat (A menyebabkan B diubah menjadi B menyebabkan A).",
-      "Scope Distortion & Extremes: Menambahkan kata absolut (always, solely, completely) atau informasi baru yang tidak ada di kalimat asal."
+      "Logika Terbalik (Reversal): Posisi sebab dan akibat ditukar seenaknya. Misalnya, 'A menyebabkan B' dipelintir menjadi 'B menyebabkan A'.",
+      "Makna Lebay & Melenceng (Extreme Words): Opsi menyelipkan kata mutlak seperti always, solely, atau completely yang tidak pernah disebut di teks."
     ],
     "stimulus_utama_bersama": "**Forum Thread: Urban Rewilding & Micro-Forests**\n\n**@Dr_Aris (Urban Ecologist):** While conventional city parks offer recreational value, they often lack the biodiversity required to mitigate extreme urban heat; conversely, dense native micro-forests—planted using the Miyawaki method—accelerate canopy growth tenfold and lower ambient temperatures significantly. Unless municipalities prioritize these compact ecological zones over purely ornamental landscaping, metropolitan areas will remain dangerously vulnerable to summer heatwaves.\n\n**@Maya_Planner (City Architect):** I appreciate the ecological metrics, yet implementing Miyawaki plots across high-density business districts presents severe spatial and financial constraints. Had city councils integrated soil-depth mandates into zoning laws a decade ago, retrofitting concrete plazas today would not require such prohibitive excavation budgets. Therefore, I advocate for a hybrid approach: deploying modular rooftop gardens on existing skyscrapers while reserving ground-level micro-forests for suburban schoolyards.\n\n**@Leo_Civic (Resident Advocate):** Both perspectives overlook community maintenance. Even when municipal grants fund initial planting, micro-forests frequently deteriorate within three years because local neighborhoods are excluded from stewardship planning. True urban resilience depends less on botanical density and more on sustained civic participation.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Pola Parafrasa & Ekuivalensi Kalimat UTBK (LBE)",
-      "subjudul_ringkas": "Taksonomi transformasi gramatikal, sinyal logika, dan jebakan makna untuk membedah soal parafrasa wacana.",
+      "judul_blok": "Peta Pola Parafrasa & Kesetaraan Makna UTBK (LBE)",
+      "subjudul_ringkas": "Panduan praktis mengenali perubahan struktur kalimat, kata penghubung logis, dan jebakan makna yang sering mengecoh di soal LBE.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
-        "kolom_1": "Kategori / Penanda Teks",
-        "kolom_2": "Contoh Potongan / Sinyal",
-        "kolom_3": "Cara Bedakan / Jebakan"
+        "kolom_1": "Jenis Perubahan & Sinyal",
+        "kolom_2": "Contoh Kalimat Asli vs Parafrasa",
+        "kolom_3": "Cara Cek & Jebakan UTBK"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Transformasi Struktur Sintaksis (Perubahan Bentuk Kalimat)",
-          "ringkasan_kelompok": "Mengubah susunan tata bahasa tanpa menggeser pelaku, objek, maupun arah tindakan utama.",
+          "nama_kelompok": "1. Mengubah Susunan Kalimat (Aktif-Pasif & Ringkasan Frasa)",
+          "ringkasan_kelompok": "Bentuk tata bahasanya berubah total, tetapi pelaku dan tindakan utamanya tetap sama persis.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Pembalikan Aktif ke Pasif (Active-Passive Shift)",
-              "penjelasan_singkat": "Menukar posisi subjek dan objek dengan menyesuaikan bentuk kata kerja tanpa mengubah pelaku tindakan.",
+              "judul_poin": "Tukar Aktif ke Pasif (Active-Passive Shift)",
+              "penjelasan_singkat": "Posisi subjek dan objek ditukar dengan menyesuaikan kata kerjanya, tanpa mengubah siapa pelaku aslinya.",
               "contoh_penerapan": "Asli: *Researchers **found** microplastics in rainwater.* Parafrasa: ***Microplastics were detected** in rainwater by scientists.*",
-              "jebakan_atau_catatan": "Jebakan: membalik pelaku sehingga makna berlawanan (*Microplastics found researchers*) atau mengubah tensis utama kalimat.",
+              "jebakan_atau_catatan": "Awas pelaku terbalik! Jangan sampai memilih *'Microplastics found researchers'* atau opsi yang mengubah waktu kejadian (*tense*).",
               "visual": null
             },
             {
-              "judul_poin": "Reduksi Klausa ke Frasa Partisipial (Clause Reduction)",
-              "penjelasan_singkat": "Memadatkan anak kalimat penjelas menjadi frasa *V-ing* atau *V3* untuk meringkas struktur kalimat kompleks.",
+              "judul_poin": "Memadatkan Anak Kalimat (Clause Reduction)",
+              "penjelasan_singkat": "Anak kalimat penjelas (*that/which + verb*) diringkas menjadi frasa *V-ing* atau *V3* agar kalimat lebih padat.",
               "contoh_penerapan": "Asli: *Policies **that limit** emissions help cities.* Parafrasa: *Policies **restricting** emissions benefit urban areas.*",
-              "jebakan_atau_catatan": "Pastikan subjek frasa partisipial merujuk pada nomina yang sama dengan klausa utama (*dangling modifier*).",
+              "jebakan_atau_catatan": "Pastikan subjek yang melakukan aksi di frasa *V-ing* tetap merujuk ke benda yang sama dengan kalimat utamanya.",
               "visual": null
             },
             {
-              "judul_poin": "Nominalisasi Kata Kerja ke Frasa Benda",
-              "penjelasan_singkat": "Mengubah predikat tindakan (*verb*) menjadi kata benda abstrak (*noun*) yang disertai kata kerja pendukung.",
+              "judul_poin": "Mengubah Kata Kerja Jadi Kata Benda (Nominalisasi)",
+              "penjelasan_singkat": "Kata kerja aksi (*verb*) diubah menjadi kata benda (*noun*) tanpa menghilangkan keterangan sifat atau kecepatannya.",
               "contoh_penerapan": "Asli: *The government **rapidly expanded** solar grids.* Parafrasa: *There was a **rapid expansion** of solar grids.*",
-              "jebakan_atau_catatan": "Waspadai hilangnya keterangan derajat/kecepatan (*rapidly* $\\rightarrow$ *rapid*) yang membuat pernyataan menjadi terlalu umum.",
+              "jebakan_atau_catatan": "Cek kata keterangannya! Jika kata *rapidly* (secara cepat) hilang di parafrasa, maknanya jadi terlalu umum dan kurang akurat.",
               "visual": null
             },
             {
-              "judul_poin": "Negasi Ganda ke Pernyataan Positif ($\\neg(\\neg P) \\equiv P$)",
-              "penjelasan_singkat": "Mengganti kombinasi kata negatif dan antonim menjadi satu pernyataan positif bermakna setara.",
+              "judul_poin": "Dua Negasi Jadi Kalimat Positif ($\\neg(\\neg P) \\equiv P$)",
+              "penjelasan_singkat": "Gabungan kata negatif (*not*) dan lawan kata (*uncommon*) dilebur menjadi satu pernyataan positif yang setara.",
               "contoh_penerapan": "Asli: *The new policy is **not uncommon**.* Parafrasa: *The new regulation occurs **frequently** in practice.*",
-              "jebakan_atau_catatan": "Jebakan: mengecoh dengan makna ekstrem (*always occurs*); *not uncommon* berarti cukup sering, bukan mutlak.",
+              "jebakan_atau_catatan": "Jangan tertipu kata ekstrem seperti *always*. *Not uncommon* (tidak jarang) artinya cukup sering, bukan selalu terjadi 100%.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Ekuivalensi Sinyal Kausalitas, Kontras, & Perbandingan",
-          "ringkasan_kelompok": "Mempertahankan arah hubungan logis antarklausa meskipun konjungsi dan urutan klausa ditukar.",
+          "nama_kelompok": "2. Menukar Arah Sebab-Akibat, Kontras, & Perbandingan",
+          "ringkasan_kelompok": "Urutan klausa dan kata penghubungnya dibalik, tetapi arah hubungan logisnya tetap terkunci.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pembalikan Arah Sebab-Akibat ($A \\rightarrow B \\equiv B \\leftarrow A$)",
-              "penjelasan_singkat": "Menukar posisi sebab dan akibat dengan mengganti konektor *because/due to* menjadi *thereby/trigger/result in*.",
+              "judul_poin": "Balik Posisi Sebab dan Akibat ($A \\rightarrow B \\equiv B \\leftarrow A$)",
+              "penjelasan_singkat": "Sebab dan akibat ditukar tempatnya dengan mengganti kata hubung *because/due to* menjadi *trigger* atau *result in*.",
               "contoh_penerapan": "Asli: *Deforestation **triggered** severe flooding.* Parafrasa: *Severe flooding occurred **primarily due to** forest clearance.*",
-              "jebakan_atau_catatan": "Jebakan paling fatal: menukar posisi sebab menjadi akibat (*Flooding triggered deforestation*).",
+              "jebakan_atau_catatan": "Ini jebakan paling sering keluar: sebab dan akibat tertukar posisi (*'Flooding triggered deforestation'*).",
               "visual": null
             },
             {
-              "judul_poin": "Pergeseran Penanda Kontras & Konsesi (Concession Signals)",
-              "penjelasan_singkat": "Mengubah *although/despite* menjadi *yet/nevertheless/nonetheless* sambil mempertahankan fakta yang bertentangan secara logis.",
+              "judul_poin": "Ganti Kata Penghubung Kontras (Although vs Nevertheless)",
+              "penjelasan_singkat": "Penanda pertentangan seperti *although/despite* diganti menjadi *yet* atau *nevertheless* dengan mempertahankan dua fakta yang bertolak belakang.",
               "contoh_penerapan": "Asli: ***Despite** high costs, adoption grew.* Parafrasa: *Expenses were high; **nevertheless**, usage increased steadily.*",
-              "jebakan_atau_catatan": "Jangan memilih opsi yang mengubah hubungan kontras menjadi hubungan sebab-akibat (*Because costs were high...*).",
+              "jebakan_atau_catatan": "Jangan pilih opsi yang mengubah hubungan pertentangan menjadi sebab-akibat (*'Because costs were high...'*).",
               "visual": null
             },
             {
-              "judul_poin": "Pembalikan Struktur Perbandingan (Comparative Reversal)",
-              "penjelasan_singkat": "Membalik urutan objek perbandingan dengan mengubah *more... than* menjadi *less... than* atau *not as... as*.",
+              "judul_poin": "Balik Urutan Perbandingan (More Than vs Less Than)",
+              "penjelasan_singkat": "Dua objek yang dibandingkan ditukar posisinya dengan membalik *more... than* menjadi *less... than* atau *not as... as*.",
               "contoh_penerapan": "Asli: *Wind power is **cheaper than** coal.* Parafrasa: *Coal is **not as affordable as** wind energy.*",
-              "jebakan_atau_catatan": "Perhatikan batas ekuivalensi: *cheaper than* tidak sama dengan *free* atau *the cheapest of all*.",
+              "jebakan_atau_catatan": "Ingat batas maknanya: lebih murah (*cheaper than*) bukan berarti gratis (*free*) atau paling murah sedunia (*the cheapest*).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Ekuivalensi Pengandaian, Modalitas, & Argumen Inti",
-          "ringkasan_kelompok": "Menguji syarat logis, tingkat kepastian modal, serta intisari sikap penulis/komentator.",
+          "nama_kelompok": "3. Membongkar Kalimat Pengandaian, Kepastian, & Inti Opini",
+          "ringkasan_kelompok": "Menguji syarat logis, tingkat keyakinan penulis, serta kesimpulan utama dari argumen komentator.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Ekuivalensi Syarat Negatif (*Unless* $\\equiv$ *If Not*)",
-              "penjelasan_singkat": "Mengonversi *unless* menjadi *if... not* atau *only if* dengan menjaga kondisi syarat dan konsekuensinya.",
+              "judul_poin": "Ubah Syarat Negatif (*Unless* $\\equiv$ *If Not*)",
+              "penjelasan_singkat": "Kata *unless* (kecuali jika) diterjemahkan menjadi *if... not* (jika tidak) atau *only if* agar syarat dan akibatnya tetap sejalan.",
               "contoh_penerapan": "Asli: *Crops fail **unless** irrigated.* Parafrasa: *Crops survive **only if** they receive adequate water.*",
-              "jebakan_atau_catatan": "Jebakan: menghilangkan negasi (*If irrigated, crops fail*), yang membalik logika syarat menjadi berlawanan.",
+              "jebakan_atau_catatan": "Hati-hati jika negasinya hilang (*'If irrigated, crops fail'*), karena artinya langsung berbalik 180 derajat.",
               "visual": null
             },
             {
-              "judul_poin": "Inversi Pengandaian Tanpa *If* (*Had/Should/Were*)",
-              "penjelasan_singkat": "Mengenali struktur inversi formal di awal kalimat sebagai bentuk setara dari klausa syarat *if*.",
+              "judul_poin": "Bongkar Pengandaian Terbalik Tanpa *If* (*Had/Should/Were*)",
+              "penjelasan_singkat": "Struktur formal *Had + S + V3* di awal kalimat adalah bentuk lain dari pengandaian masa lampau (*If + S + had + V3*).",
               "contoh_penerapan": "Asli: ***Had** funding arrived, trials would proceed.* Parafrasa: *Trials did not proceed **because funding was absent**.*",
-              "jebakan_atau_catatan": "Pengandaian tipe 3 (*Had + S + V3*) selalu menyiratkan fakta berlawanan di masa lampau.",
+              "jebakan_atau_catatan": "Pengandaian tipe 3 (*Had + S + V3*) selalu menyimpan fakta kebalikan di masa lalu: dananya dulu **tidak** datang.",
               "visual": null
             },
             {
-              "judul_poin": "Kesetaraan Tingkat Kepastian & Kuantor (Modals & Quantifiers)",
-              "penjelasan_singkat": "Memadankan kata kerja bantu (*may, might*) atau kuantor (*few, rarely*) dengan sinonim tingkat probabilitas setara.",
+              "judul_poin": "Samakan Tingkat Kepastian & Jumlah (Modals & Quantifiers)",
+              "penjelasan_singkat": "Kata bantu peluang (*may, might*) atau penanda jumlah (*few, rarely*) dipasangkan dengan sinonim yang kadarnya setara.",
               "contoh_penerapan": "Asli: ***Few** experts endorse the claim.* Parafrasa: *The claim receives **scant support** from specialists.*",
-              "jebakan_atau_catatan": "Bedakan *few* (hampir tidak ada/negatif) dengan *a few* (beberapa/positif), serta *may* (mungkin) dengan *must* (pasti).",
+              "jebakan_atau_catatan": "Bedakan *few* (hampir tidak ada/bermakna negatif) dengan *a few* (ada beberapa/positif), serta *may* (mungkin) dengan *must* (pasti).",
               "visual": null
             },
             {
-              "judul_poin": "Distilasi Argumen Utama Komentator (Core Stance + Reason)",
-              "penjelasan_singkat": "Menggabungkan sikap inti (*support/oppose*) dan alasan paling fundamental komentator ke dalam satu kalimat ringkas.",
+              "judul_poin": "Gabungkan Sikap Inti & Alasan Komentator (Core Stance)",
+              "penjelasan_singkat": "Tangkap posisi utama komentator (setuju atau menolak) beserta alasan paling mendasarnya dalam satu kalimat ringkas.",
               "contoh_penerapan": "Komentar: *AI speeds coding, yet threatens entry-level jobs.* Parafrasa: *The commenter **acknowledges AI's efficiency** while **warning of job losses**.*",
-              "jebakan_atau_catatan": "Jebakan: memilih opsi yang hanya menangkap satu sisi argumen atau menambahkan opini di luar teks.",
+              "jebakan_atau_catatan": "Jebakan klasik: opsi hanya mengambil separuh argumen komentator atau menyelipkan opini baru di luar teks.",
               "visual": null
             }
           ]
@@ -138,29 +138,29 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Best Restatement of a Highlighted Complex Sentence",
+      "nama_variasi": "Memparafrasa Satu Kalimat Kompleks yang Disorot",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan @Dr_Aris (Kalimat 1): 'While conventional city parks offer recreational value, they often lack the biodiversity required to mitigate extreme urban heat; conversely, dense native micro-forests... accelerate canopy growth tenfold and lower ambient temperatures significantly.'",
-      "bedah_pola_markdown": "* **Scanning Kalimat Kunci:** Temukan struktur kontras `While [A], [B]; conversely, [C]`. Subjek utama terbagi dua: *conventional parks* (kurang biodiversitas) vs *micro-forests* (mempercepat kanopi & menurunkan suhu).\n* **Transformasi Parafrasa:** Ubah *While/conversely* menjadi *Unlike* atau *In contrast to*. Ganti *lack the biodiversity required to mitigate* menjadi *insufficient biodiversity to reduce*, dan *lower ambient temperatures* menjadi *cool surrounding areas*.\n* **Deteksi Jebakan:**\n  * *Terlalu Ekstrem:* Menyatakan taman konvensional sama sekali tidak bermanfaat (padahal punya *recreational value*).\n  * *Salah Hubungan:* Menyatakan taman konvensional menurunkan suhu sepuluh kali lipat (tertukar subjek dengan *micro-forests*).",
-      "kunci_pembeda": "Fokus menjaga akurasi perbandingan dua subjek dan mempertahankan kata penghubung kontras tanpa membalik atribut masing-masing.",
+      "bedah_pola_markdown": "* **Langkah 1 — Pecah Dua Kubu:** Lihat pola kontras `While [A], [B]; conversely, [C]`. Di sini ada dua subjek yang diadu: *conventional parks* (kurang keanekaragaman hayati) melawan *micro-forests* (mempercepat pertumbuhan kanopi & menurunkan suhu).\n* **Langkah 2 — Ganti Baju Tanpa Ubah Isi:** Ubah kata hubung *While/conversely* menjadi *Unlike* atau *In contrast to*. Lalu ganti frasa *lack the biodiversity required to mitigate* menjadi *insufficient biodiversity to reduce*, dan *lower ambient temperatures* menjadi *cool surrounding areas*.\n* **Langkah 3 — Coret Jebakan UTBK:**\n  * *Jebakan Ekstrem:* Opsi bilang taman kota biasa sama sekali tidak berguna. Salah, karena teks menyebut taman biasa tetap punya *recreational value*.\n  * *Jebakan Tertukar Subjek:* Opsi menyebut taman kota biasa menurunkan suhu sepuluh kali lipat—padahal itu keunggulan *micro-forests*.",
+      "kunci_pembeda": "Kunci kedua subjek yang dibandingkan dan jaga sinyal kontrasnya agar atribut masing-masing tidak tertukar.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Identifying Equivalent Conditional or Causal Meaning in Different Grammatical Structures",
+      "nama_variasi": "Mengubah Kalimat Pengandaian Menjadi Fakta Sebab-Akibat",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Rujukan @Maya_Planner (Kalimat 2): 'Had city councils integrated soil-depth mandates into zoning laws a decade ago, retrofitting concrete plazas today would not require such prohibitive excavation budgets.'",
-      "bedah_pola_markdown": "* **Scanning Struktur Gramatikal:** Identifikasi *Mixed Conditional* bentuk inversi: `Had + S + V3` (kondisi lampau yang tidak terjadi) $\\rightarrow$ `S + would not + V1` (akibat di masa kini).\n* **Transformasi Parafrasa:** Ubah pengandaian tak nyata (*counterfactual*) menjadi pernyataan fakta sebab-akibat (*causal*): `Because city councils failed to include soil-depth rules ten years ago, converting concrete plazas now demands excessive excavation costs.`\n* **Deteksi Jebakan:**\n  * *Salah Kala (Tense):* Menganggap dewan kota *sudah* menerapkan aturan tersebut sepuluh tahun lalu.\n  * *Sebab-Akibat Terbalik:* Menyatakan biaya penggalian yang mahal menyebabkan dewan kota gagal membuat aturan zonasi.",
-      "kunci_pembeda": "Wajib mengonversi kalimat pengandaian (conditional) menjadi fakta realitas yang berlawanan polaritasnya (positif menjadi negatif, atau sebaliknya).",
+      "bedah_pola_markdown": "* **Langkah 1 — Baca Sinyal Pengandaian:** Kalimat dibuka dengan pola inversi `Had + S + V3` (*Had city councils integrated...*) lalu diikuti `would not + V1`. Ini adalah pengandaian tak nyata (*Mixed Conditional*): kejadian masa lalu yang tidak terlaksana berdampak ke kondisi sekarang.\n* **Langkah 2 — Balik Polaritas Jadi Fakta:** Karena kalimatnya berandai-andai, fakta aslinya justru kebalikannya (positif jadi negatif). Kita ubah menjadi hubungan sebab-akibat: `Because city councils failed to include soil-depth rules ten years ago, converting concrete plazas now demands excessive excavation costs.`\n* **Langkah 3 — Coret Jebakan UTBK:**\n  * *Jebakan Salah Waktu:* Opsi menganggap dewan kota *sudah* menerapkan aturan kedalaman tanah sepuluh tahun lalu.\n  * *Jebakan Logika Terbalik:* Opsi menyebut biaya galian yang mahal membuat dewan kota gagal bikin aturan—padahal aturannya yang tidak ada sejak dulu.",
+      "kunci_pembeda": "Ubah kalimat pengandaian (*conditional*) menjadi fakta nyata dengan membalik makna positif-negatifnya secara konsisten.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Summarizing a Commenter's Core Argument in One Paraphrased Sentence",
+      "nama_variasi": "Merangkum Argumen Inti Satu Komentator dalam Satu Kalimat",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan @Leo_Civic (Seluruh Postingan): Membahas kegagalan perawatan hutan mikro meski didanai hibah karena warga lokal tidak dilibatkan, sehingga ketahanan kota bergantung pada partisipasi warga.",
-      "bedah_pola_markdown": "* **Skimming Klausa Inti:** Abaikan detail contoh (`three years`, `municipal grants`), lalu gabungkan premis masalah (`excluded from stewardship`) dengan tesis penutup (`depends less on botanical density and more on sustained civic participation`).\n* **Transformasi Parafrasa:** Sintesis menjadi satu kalimat tunggal: `Long-term urban ecological success relies primarily on ongoing local community involvement rather than mere planting density or initial funding.`\n* **Deteksi Jebakan:**\n  * *Terlalu Sempit:* Hanya membahas hibah pemerintah kota (mengabaikan peran warga sebagai poin utama).\n  * *Tidak Disebut:* Menyatakan warga menolak pendanaan hutan mikro.",
-      "kunci_pembeda": "Merangkum keseluruhan posisi/tesis satu komentator menjadi satu pernyataan makro dengan membuang detail teknis.",
+      "bedah_pola_markdown": "* **Langkah 1 — Buang Detail Angka & Contoh:** Abaikan rincian pendukung seperti *three years* atau *municipal grants*. Fokus pada dua titik kunci: akar masalah (*excluded from stewardship*) dan kesimpulan penutup (*depends less on botanical density and more on sustained civic participation*).\n* **Langkah 2 — Rakit Jadi Satu Kalimat Makro:** Gabungkan masalah dan solusinya ke dalam satu pernyataan utuh: `Long-term urban ecological success relies primarily on ongoing local community involvement rather than mere planting density or initial funding.`\n* **Langkah 3 — Coret Jebakan UTBK:**\n  * *Jebakan Terlalu Sempit:* Opsi cuma membahas dana hibah pemerintah kota dan melupakan peran warga sebagai inti pesan.\n  * *Jebakan Asumsi Liar:* Opsi mengarang cerita bahwa warga lokal menolak bantuan dana pemerintah.",
+      "kunci_pembeda": "Saring detail teknisnya dan gabungkan masalah utama plus solusi inti komentator ke dalam satu pernyataan makro.",
       "visual": null
     }
   ],
@@ -180,7 +180,7 @@
         "E. Unless ornamental landscaping is entirely banned, compact ecological zones cannot reduce urban vulnerability to heatwaves."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Struktur *Unless [X], [Y]* ekuivalen dengan *If not [X], [Y]*. Opsi C tepat memparafrasa *unless municipalities prioritize* menjadi *if local governments fail to favor*, dan *dangerously vulnerable* menjadi *severe risks*. Opsi A dan E salah karena mengandung kata ekstrem (*completely*, *entirely banned*). Opsi B salah hubungan sebab-akibat, sedangkan D salah kala waktu (*have already prioritized*).",
+      "bedah_cepat_markdown": "Mari kita bedah pola kalimat aslinya: *Unless [X], [Y]*. Kata *unless* artinya sama dengan *if... not* (jika tidak).\n\n1. **Cek Opsi C (Benar):** Klausa *unless municipalities prioritize* diubah dengan rapi menjadi *if local governments fail to favor* (jika pemerintah daerah gagal memprioritaskan). Bagian *dangerously vulnerable* juga diparafrasa akurat menjadi *severe risks*.\n2. **Cek Opsi A & E (Salah — Kata Ekstrem):** Muncul kata mutlak seperti *completely eliminate* dan *entirely banned* yang berlebihan dan tidak ada di teks.\n3. **Cek Opsi B (Salah — Logika Melenceng):** Teks tidak pernah menuduh taman hias sebagai penyebab utama gelombang panas.\n4. **Cek Opsi D (Salah — Salah Waktu):** Frasa *have already prioritized* menganggap pemerintah sudah melakukannya, padahal kalimat asli masih berupa peringatan.",
       "visual": null
     },
     {
@@ -198,7 +198,7 @@
         "E. Retrofitting concrete plazas requires low budgets despite the absence of soil-depth mandates in past zoning laws."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Kalimat menggunakan *Mixed Conditional* (*Had city councils integrated... would not require...*) yang bermakna fakta kebalikan: dewan kota **tidak** memasukkan aturan kedalaman tanah 10 tahun lalu, sehingga biaya penggalian saat ini **sangat mahal** (*prohibitive*). Opsi A mempertahankan hubungan sebab-akibat faktual ini secara akurat. Opsi B bertentangan fakta, C membalik sebab-akibat, D mengubah kala menjadi masa depan (*First Conditional*), dan E berlawanan makna.",
+      "bedah_cepat_markdown": "Kalimat @Maya_Planner memakai bentuk pengandaian *Mixed Conditional* (*Had city councils integrated... would not require...*). Artinya, kenyataan yang terjadi justru kebalikannya: dewan kota **tidak** memasukkan aturan kedalaman tanah 10 tahun lalu, sehingga biaya penggalian saat ini **sangat mahal** (*prohibitive*).\n\n1. **Cek Opsi A (Benar):** Mengubah pengandaian tadi menjadi fakta sebab-akibat yang pas—biaya penggalian sekarang membengkak karena aturan zonasi 10 tahun lalu tidak mewajibkan kedalaman tanah.\n2. **Cek Opsi B & E (Salah — Bertentangan Fakta):** Opsi B mengira aturannya sudah dijalankan, sedangkan E menyebut biayanya murah.\n3. **Cek Opsi C (Salah — Sebab-Akibat Terbalik):** Biaya mahal adalah akibat saat ini, bukan penyebab dewan kota gagal bikin aturan 10 tahun lalu.\n4. **Cek Opsi D (Salah — Salah Konteks Waktu):** Mengubah pengandaian masa lalu menjadi rencana masa depan.",
       "visual": null
     },
     {
@@ -216,7 +216,7 @@
         "E. False - False - True"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "* **Pernyataan 1 (True):** Parafrasa tepat dari kalimat terakhir @Leo_Civic (*depends less on botanical density and more on sustained civic participation*).\n* **Pernyataan 2 (False):** Kontradiksi dengan teks; @Maya_Planner justru menyarankan pendekatan hibrida (*hybrid approach*) yang menggabungkan keduanya.\n* **Pernyataan 3 (True):** Parafrasa tepat dari kontras @Dr_Aris bahwa hutan mikro menurunkan suhu secara signifikan dibanding taman konvensional.",
+      "bedah_cepat_markdown": "Kita uji satu per satu pernyataan di tabel dengan inti argumen tiap komentator:\n\n* **Pernyataan 1 (True):** Tepat sasaran. Kalimat terakhir @Leo_Civic menegaskan ketahanan kota lebih bergantung pada partisipasi warga berkelanjutan (*sustained civic participation*) daripada sekadar kerapatan tanaman (*botanical density*).\n* **Pernyataan 2 (False):** Berlawanan dengan teks. @Maya_Planner tidak menyuruh menghapus taman atap, melainkan mengusulkan solusi gabungan (*hybrid approach*) antara taman atap di gedung tinggi dan hutan mikro di halaman sekolah.\n* **Pernyataan 3 (True):** Sesuai teks. @Dr_Aris membandingkan bahwa hutan mikro menurunkan suhu lingkungan secara signifikan dibanding taman kota konvensional.\n\nJadi, urutan yang benar adalah **True - False - True (Opsi B)**.",
       "visual": null
     }
   ]

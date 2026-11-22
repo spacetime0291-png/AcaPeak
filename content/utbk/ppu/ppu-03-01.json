@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam kalimat 'Di kawasan pesisir utara terjadi abrasi cukup parah', apakah frasa 'Di kawasan pesisir utara' merupakan subjek kalimat tersebut?",
+      "pertanyaan_pemantik": "Dalam kalimat 'Di kawasan pesisir utara terjadi abrasi cukup parah', apakah frasa 'Di kawasan pesisir utara' berperan sebagai Subjek?",
       "opsi_cepat": [
         "Ya, karena berada di awal kalimat",
         "Tidak, itu keterangan dan subjeknya di belakang"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Unsur yang diawali kata depan ('di', 'ke', 'dari', 'dalam') tidak pernah bisa menjadi Subjek, melainkan Keterangan. Kalimat tersebut berpola inversi K-P-S dengan 'abrasi cukup parah' sebagai Subjek."
+      "penjelasan_kilat": "Kata depan ('di', 'ke', 'dari', 'dalam') otomatis mengubah frasa di belakangnya menjadi Keterangan, bukan Subjek. Karena Predikat ('terjadi') muncul lebih dulu daripada Subjek ('abrasi cukup parah'), kalimat ini memakai pola terbalik K-P-S."
     },
-    "konsep_inti_markdown": "**Pola dasar kalimat** membedah jabatan fungsi kata agar kalimat efektif dan baku sesuai EYD V serta KBBI VI:\n\n* **Subjek [S] & Predikat [P]:** Inti wajib kalimat; [S] tidak boleh diawali preposisi.\n* **Objek [O] vs Pelengkap [Pel]:** [O] berada di belakang verba aktif transitif dan dapat dipasifkan, sedangkan [Pel] tidak dapat dipasifkan.\n* **Keterangan [K]:** Bersifat manasuka dan posisinya dapat berpindah tanpa merusak makna.",
+    "konsep_inti_markdown": "**Pola dasar kalimat** membantu kamu memetakan peran tiap kata agar kalimatmu efektif dan lolos standar EYD V:\n\n* **Subjek [S] & Predikat [P]:** Inti wajib sebuah kalimat. Ingat, [S] tidak boleh diawali kata depan.\n* **Objek [O] vs Pelengkap [Pel]:** [O] muncul setelah kata kerja aktif dan bisa dipasifkan, sedangkan [Pel] tidak bisa dipasifkan.\n* **Keterangan [K]:** Informasi tambahan (waktu, tempat, cara) yang posisinya bebas berpindah tanpa merusak makna.",
     "radar_jebakan_utbk": [
-      "Menganggap frasa berpreposisi di awal kalimat (seperti 'Bagi para peneliti...' atau 'Dalam laporan itu...') sebagai Subjek, sehingga kalimat kehilangan unsur Subjek inti.",
-      "Menyamakan Pelengkap di belakang predikat berimbuhan 'ber-' atau 'merupakan' sebagai Objek, padahal unsur tersebut tidak dapat dipindahkan menjadi Subjek kalimat pasif."
+      "Tertipu frasa berkatar depan di awal kalimat (seperti 'Bagi para peneliti...' atau 'Dalam laporan itu...') dan menganggapnya Subjek, padahal kalimat tersebut justru kehilangan Subjek.",
+      "Menyamakan Pelengkap di belakang kata kerja berimbuhan 'ber-' atau 'merupakan' sebagai Objek, padahal posisi keduanya tidak bisa ditukar menjadi kalimat pasif."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Kaidah Lengkap Pola Dasar Kalimat (S-P-O-K-Pel) EYD V",
-      "subjudul_ringkas": "Panduan sistematis identifikasi jabatan fungsi kata, pembedaan Objek-Pelengkap, pola inversi, hingga penyederhanaan kalimat kompleks.",
+      "subjudul_ringkas": "Panduan praktis memetakan peran kata (S-P-O-K-Pel), membedakan Objek vs Pelengkap, pola terbalik, hingga memangkas kalimat panjang.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -36,98 +36,98 @@
       "kelompok": [
         {
           "nama_kelompok": "Fondasi Inti Kalimat & Pola Inversi",
-          "ringkasan_kelompok": "Aturan wajib unsur inti kalimat, posisi inversi, dan identifikasi kesetaraan pola dasar.",
+          "ringkasan_kelompok": "Aturan dasar unsur wajib kalimat, posisi terbalik (inversi), dan cara mengecek kesamaan pola.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Syarat Wajib Subjek Bebas Preposisi",
-              "penjelasan_singkat": "Subjek mengisi fungsi pelaku atau topik utama dan tidak boleh diawali kata depan seperti di, ke, dari, bagi, atau dalam.",
+              "judul_poin": "Subjek Wajib Bebas Kata Depan (Preposisi)",
+              "penjelasan_singkat": "Subjek berisi pelaku atau topik utama yang dibahas, dan tidak boleh diawali kata depan seperti di, ke, dari, bagi, atau dalam.",
               "contoh_penerapan": "**Penelitian terbaru** [S] membuktikan [P] efektivitas vaksin tersebut [O] secara klinis [K].",
-              "jebakan_atau_catatan": "Salah: *Dalam penelitian terbaru membuktikan efektivitas vaksin.* Preposisi *dalam* mengubah Subjek menjadi Keterangan sehingga kalimat kehilangan Subjek.",
+              "jebakan_atau_catatan": "Salah: *Dalam penelitian terbaru membuktikan efektivitas vaksin.* Kata depan *dalam* mengubah Subjek menjadi Keterangan sehingga kalimat ini kehilangan Subjek.",
               "visual": null
             },
             {
-              "judul_poin": "Predikat Berupa Frasa Nonverba",
-              "penjelasan_singkat": "Predikat tidak harus berupa verba; nomina, adjektiva, numeralia, maupun frasa preposisional sah menduduki fungsi Predikat setelah Subjek.",
+              "judul_poin": "Predikat Tidak Harus Kata Kerja",
+              "penjelasan_singkat": "Selain kata kerja (verba), posisi Predikat setelah Subjek sah diisi oleh kata benda, kata sifat, bilangan, maupun frasa berkatar depan.",
               "contoh_penerapan": "Ayahnya [S] **seorang dosen teknik** [P] di kampus negeri [K].",
-              "jebakan_atau_catatan": "Jebakan: Menganggap kalimat tanpa kata kerja tidak memiliki Predikat, padahal nomina atau adjektiva setelah Subjek sah menjadi Predikat.",
+              "jebakan_atau_catatan": "Jebakan: Mengira kalimat tanpa kata kerja pasti tidak punya Predikat, padahal kata benda atau sifat setelah Subjek sah menjadi Predikat.",
               "visual": null
             },
             {
-              "judul_poin": "Pola Kalimat Inversi (Predikat-Subjek)",
-              "penjelasan_singkat": "Pola terbalik menempatkan Predikat di awal kalimat untuk penekanan makna, sering ditandai partikel *-lah* atau verba eksistensial.",
+              "judul_poin": "Pola Kalimat Terbalik / Inversi (P-S)",
+              "penjelasan_singkat": "Pola inversi menaruh Predikat sebelum Subjek untuk menonjolkan peristiwa atau keberadaan, sering memakai kata *ada*, *terdapat*, atau partikel *-lah*.",
               "contoh_penerapan": "**Terdapat** [P] **tiga kendala utama** [S] dalam distribusi logistik [K].",
-              "jebakan_atau_catatan": "Jebakan: Mengira frasa setelah kata *terdapat* atau *ada* adalah Objek, padahal frasa tersebut merupakan Subjek berpola inversi.",
+              "jebakan_atau_catatan": "Jebakan: Mengira frasa setelah kata *terdapat* atau *ada* adalah Objek, padahal frasa itulah Subjek yang posisinya digeser ke belakang.",
               "visual": null
             },
             {
-              "judul_poin": "Kesetaraan Pola dan Pergeseran Keterangan",
-              "penjelasan_singkat": "Dua kalimat berpola identik jika urutan seluruh fungsinya sama; perpindahan posisi Keterangan mengubah urutan rumus pola dasar.",
-              "contoh_penerapan": "**Kemarin** [K] **tim peneliti** [S] **menemukan** [P] **spesies baru** [O] (berpola K-S-P-O).",
-              "jebakan_atau_catatan": "Jebakan: Pola *K-S-P-O* tidak identik dengan *S-P-O-K* meskipun unsurnya sama; perhatikan letak Keterangan di awal atau akhir.",
+              "judul_poin": "Kesamaan Pola & Posisi Keterangan",
+              "penjelasan_singkat": "Dua kalimat punya pola sama hanya jika urutan perannya identik. Menggeser posisi Keterangan otomatis mengubah urutan rumus polanya.",
+              "contoh_penerapan": "**Kemarin** [K], **tim peneliti** [S] **menemukan** [P] **spesies baru** [O] (berpola K-S-P-O).",
+              "jebakan_atau_catatan": "Jebakan: Pola *K-S-P-O* tidak sama dengan *S-P-O-K* meski isinya mirip; selalu cek posisi Keterangan di awal atau akhir.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Pembedaan Objek (O) dan Pelengkap (Pel)",
-          "ringkasan_kelompok": "Kriteria teknis membedakan Objek dan Pelengkap berdasarkan imbuhan verba serta uji pasif.",
+          "ringkasan_kelompok": "Cara cepat membedakan Objek dan Pelengkap lewat imbuhan kata kerja dan uji kalimat pasif.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Objek Setelah Verba Aktif Transitif",
-              "penjelasan_singkat": "Objek hadir langsung di belakang verba transitif aktif dan dapat berpindah menjadi Subjek apabila kalimat diubah menjadi pasif.",
+              "judul_poin": "Objek Muncul Setelah Kata Kerja Aktif Transitif",
+              "penjelasan_singkat": "Objek menempel langsung di belakang kata kerja aktif (*meN-*) dan bisa pindah ke depan menjadi Subjek saat kalimat dipasifkan.",
               "contoh_penerapan": "Pemerintah [S] meresmikan [P] **jembatan layang baru** [O] (Pasif: *Jembatan layang baru diresmikan pemerintah*).",
-              "jebakan_atau_catatan": "Salah: *Rapat itu membahas tentang anggaran.* Verba transitif tidak boleh disisipi preposisi; bentuk bakunya *membahas anggaran*.",
+              "jebakan_atau_catatan": "Salah: *Rapat itu membahas tentang anggaran.* Kata kerja transitif tidak boleh disisipi kata depan; bentuk bakunya *membahas anggaran*.",
               "visual": null
             },
             {
-              "judul_poin": "Pelengkap Setelah Verba Berimbuhan ber-, ter-, ke-an",
-              "penjelasan_singkat": "Frasa di belakang verba berimbuhan *ber-*, *ter-*, atau *ke-an* berfungsi sebagai Pelengkap karena kalimatnya tidak dapat dipasifkan.",
+              "judul_poin": "Pelengkap Setelah Kata Kerja ber-, ter-, atau ke-an",
+              "penjelasan_singkat": "Frasa di belakang kata kerja berimbuhan *ber-*, *ter-*, atau *ke-an* berperan sebagai Pelengkap karena kalimatnya mustahil dipasifkan.",
               "contoh_penerapan": "Negara Indonesia [S] berlandaskan [P] **Pancasila dan UUD 1945** [Pel].",
-              "jebakan_atau_catatan": "Jebakan: Menganggap *Pancasila* adalah Objek; bentuk pasif **Pancasila diberlandaskan* tidak gramatikal sehingga fungsinya wajib Pelengkap.",
+              "jebakan_atau_catatan": "Jebakan: Mengira *Pancasila* adalah Objek; bentuk pasif **Pancasila diberlandaskan* tidak berterima sehingga fungsinya wajib Pelengkap.",
               "visual": null
             },
             {
-              "judul_poin": "Pelengkap Setelah Verba Kopula",
-              "penjelasan_singkat": "Unsur di sebelah kanan verba penghubung seperti *adalah*, *merupakan*, dan *menjadi* selalu menduduki fungsi Pelengkap, bukan Objek.",
+              "judul_poin": "Pelengkap Setelah Kata Kerja Penghubung (Kopula)",
+              "penjelasan_singkat": "Unsur di sebelah kanan kata penghubung seperti *adalah*, *merupakan*, dan *menjadi* selalu berperan sebagai Pelengkap, bukan Objek.",
               "contoh_penerapan": "Pendidikan karakter [S] merupakan [P] **fondasi kemajuan bangsa** [Pel].",
-              "jebakan_atau_catatan": "Jebakan: Kalimat berpredikat *adalah* atau *merupakan* tidak dapat dipasifkan, sehingga nomina setelahnya pasti berjabatan Pelengkap.",
+              "jebakan_atau_catatan": "Jebakan: Kalimat berpredikat *adalah* atau *merupakan* tidak bisa dipasifkan, jadi kata benda setelahnya pasti Pelengkap.",
               "visual": null
             },
             {
-              "judul_poin": "Pola Kalimat Dwitransitif (S-P-O-Pel)",
-              "penjelasan_singkat": "Verba berimbuhan *meN-kan* atau *meN-i* tertentu mengikat dua nomina berurutan: nomina pertama sebagai Objek, nomina kedua sebagai Pelengkap.",
+              "judul_poin": "Kalimat Berobjek Ganda / Dwitransitif (S-P-O-Pel)",
+              "penjelasan_singkat": "Kata kerja berimbuhan *meN-kan* atau *meN-i* tertentu mengikat dua kata benda berurutan: yang pertama Objek, yang kedua Pelengkap.",
               "contoh_penerapan": "Ibu [S] membelikan [P] **adik** [O] **sepatu sekolah baru** [Pel].",
-              "jebakan_atau_catatan": "Jebakan: Saat dipasifkan, hanya Objek (*adik*) yang menjadi Subjek (*Adik dibelikan sepatu oleh ibu*), sedangkan Pelengkap tetap.",
+              "jebakan_atau_catatan": "Jebakan: Saat dipasifkan, hanya Objek (*adik*) yang maju menjadi Subjek (*Adik dibelikan sepatu oleh ibu*), sedangkan Pelengkap tetap di belakang.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Perluasan Fungsi & Penyederhanaan Kalimat Kompleks",
-          "ringkasan_kelompok": "Analisis fungsi klausa bawahan dan teknik mereduksi kalimat panjang menjadi inti kalimat.",
+          "ringkasan_kelompok": "Cara membaca peran anak kalimat dan teknik memangkas kalimat superpanjang menjadi inti kalimat.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Anak Kalimat Pengganti Subjek atau Objek",
-              "penjelasan_singkat": "Klausa berkonjungsi *bahwa* dapat menduduki jabatan tunggal sebagai Subjek atau Objek dalam struktur kalimat majemuk bertingkat.",
+              "penjelasan_singkat": "Anak kalimat yang diawali kata *bahwa* bisa mengisi satu peran utuh sebagai Subjek atau Objek dalam kalimat majemuk.",
               "contoh_penerapan": "Hasil survei [S] membuktikan [P] **bahwa literasi digital meningkat** [O].",
-              "jebakan_atau_catatan": "Salah: *Bahwa literasi meningkat membuktikan keberhasilan.* Klausa *bahwa* di awal lebih baku menjadi Objek melalui pemasifan (*Dibuktikan bahwa...*).",
+              "jebakan_atau_catatan": "Salah: *Bahwa literasi meningkat membuktikan keberhasilan.* Klausa *bahwa* di awal lebih baku jika predikatnya dipasifkan (*Dibuktikan bahwa...*).",
               "visual": null
             },
             {
               "judul_poin": "Anak Kalimat Pengganti Keterangan",
-              "penjelasan_singkat": "Klausa yang diawali konjungsi subordinatif seperti *ketika*, *karena*, atau *meskipun* menduduki fungsi Keterangan dan bersifat manasuka.",
+              "penjelasan_singkat": "Anak kalimat yang diawali kata penghubung seperti *ketika*, *karena*, atau *meskipun* berperan sebagai Keterangan dan bisa dipindah posisinya.",
               "contoh_penerapan": "**Meskipun hujan turun deras** [K], pertandingan [S] tetap berlangsung [P].",
-              "jebakan_atau_catatan": "Salah: *Meskipun hujan deras, tetapi pertandingan berlangsung.* Pemakaian konjungsi ganda merusak struktur induk kalimat.",
+              "jebakan_atau_catatan": "Salah: *Meskipun hujan deras, tetapi pertandingan berlangsung.* Pemakaian dua kata penghubung sekaligus membuat kalimat kehilangan induknya.",
               "visual": null
             },
             {
-              "judul_poin": "Penyederhanaan Kalimat Panjang ke Inti Kalimat",
-              "penjelasan_singkat": "Inti kalimat diperoleh dengan membuang seluruh Keterangan dan perluasan atributif berkonjungsi *yang*, menyisakan unsur wajib S-P-(O/Pel).",
+              "judul_poin": "Memangkas Kalimat Panjang Menjadi Inti Kalimat",
+              "penjelasan_singkat": "Inti kalimat didapat dengan membuang semua Keterangan dan perluasan berpenanda *yang*, sehingga tersisa unsur wajib S-P-(O/Pel).",
               "contoh_penerapan": "**Ilmuwan** asal Jepang itu **menemukan metode baru** (Inti: **Ilmuwan menemukan metode baru** [S-P-O]).",
-              "jebakan_atau_catatan": "Jebakan: Mengambil verba di dalam klausa perluasan *yang* sebagai Predikat utama, padahal klausa tersebut hanya penjelas Subjek.",
+              "jebakan_atau_catatan": "Jebakan: Terkecoh mengambil kata kerja di dalam anak kalimat *yang* sebagai Predikat utama, padahal bagian itu cuma penjelas Subjek.",
               "visual": null
             }
           ]
@@ -141,8 +141,8 @@
       "nama_variasi": "Mencari Kalimat di Opsi yang Memiliki Pola Dasar Identik dengan Kalimat Acuan",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Pada kuartal ketiga tahun ini, bank sentral menurunkan suku bunga acuan demi menjaga stabilitas pertumbuhan ekonomi.",
-      "bedah_pola_markdown": "**Bedah Pola Sintaksis & Fungsi:**\nPerhatikan pemenggalan jabatan fungsi kalimat acuan: [K] *Pada kuartal ketiga*, [S] *bank sentral* + [P] *menurunkan* + [O] *suku bunga acuan* + [K] *demi stabilitas ekonomi*. Kalimat tersebut berpola **K-S-P-O-K**. Pada soal UTBK, kesamaan pola ditentukan oleh urutan jabatan fungsi utama, bukan kemiripan topik maupun panjang frasa sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pola `K-S-P-O` disamakan dengan `K-S-P-Pel` (*menjadi ketua*). | Pola `K-S-P-O` sejajar dengan `K-S-P-O` (*memperluas pasar*). |\n| Keterangan awal tanpa koma: *Kemarin tim merilis laporan*. | Keterangan awal berkoma baku: *Kemarin, tim merilis laporan*. |\n\n**Strategi Eksekusi:** Penggal batas fungsi kalimat acuan, tandai inti [S]-[P]-[O]/[Pel], lalu eliminasi opsi yang memiliki jenis predikat atau urutan fungsi berbeda.",
-      "kunci_pembeda": "Memetakan urutan jabatan fungsi inti [S]-[P]-[O]/[Pel] pada kalimat acuan untuk mencocokkan struktur sintaksis yang identik di opsi jawaban.",
+      "bedah_pola_markdown": "**Cara Membedah Pola Kalimat:**\nCoba penggal kalimat di atas berdasarkan perannya:\n* [K] *Pada kuartal ketiga tahun ini*,\n* [S] *bank sentral*\n* [P] *menurunkan*\n* [O] *suku bunga acuan*\n* [K] *demi menjaga stabilitas pertumbuhan ekonomi*\n\nJadi, polanya adalah **K-S-P-O-K**. Di soal UTBK, dua kalimat disebut berpola sama jika urutan perannya persis sama—bukan karena topiknya mirip atau kalimatnya sama panjang.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pola `K-S-P-O` disamakan dengan `K-S-P-Pel` (*menjadi ketua*). | Pola `K-S-P-O` sejajar dengan `K-S-P-O` (*memperluas pasar*). |\n| Keterangan awal tanpa koma: *Kemarin tim merilis laporan*. | Keterangan awal berkoma baku: *Kemarin, tim merilis laporan*. |\n\n**Langkah Cepat:** Tandai dulu batas [S]-[P]-[O]/[Pel] pada kalimat soal, lalu coret opsi yang jenis predikat atau urutan perannya berbeda.",
+      "kunci_pembeda": "Memetakan urutan peran inti [S]-[P]-[O]/[Pel] pada kalimat acuan untuk mencari struktur yang persis sama di opsi jawaban.",
       "visual": null
     },
     {
@@ -150,8 +150,8 @@
       "nama_variasi": "Membedakan Objek (O) dan Pelengkap (Pel) setelah Predikat Berimbuhan ber-, meN-, atau ter-",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Kalimat (1): Pemerintah **menerapkan** regulasi emisi karbon. Kalimat (2): Kebijakan baru tersebut **berlandaskan** prinsip keberlanjutan lingkungan.",
-      "bedah_pola_markdown": "**Bedah Pola Objek vs Pelengkap:**\nBandingkan struktur kedua kalimat: [S] *Pemerintah* + [P] *menerapkan* + [O] *regulasi emisi karbon* (dapat dipasifkan menjadi *Regulasi emisi karbon diterapkan pemerintah*), sedangkan [S] *Kebijakan baru tersebut* + [P] *berlandaskan* + [Pel] *prinsip keberlanjutan lingkungan* (tidak dapat dipasifkan). Unsur di belakang predikat berimbuhan *ber-*, *ter-*, atau verba kopula merupakan Pelengkap [Pel] sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Berdiskusi masalah anggaran* dianggap berpola `S-P-O`. | *Berdiskusi masalah anggaran* berpola `S-P-Pel` (*tak dapat dipasifkan*). |\n| *Regulasi itu berdasarkan pada undang-undang* (*preposisi mubazir*). | *Regulasi itu berdasarkan undang-undang* (`S-P-Pel` baku). |\n\n**Strategi Eksekusi:** Uji unsur di belakang predikat dengan memindahkannya ke posisi awal sebagai subjek kalimat pasif; jika tidak berterima, unsur tersebut adalah Pelengkap [Pel].",
-      "kunci_pembeda": "Menguji keterpasifan unsur di belakang predikat untuk membedakan Objek yang dapat menjadi subjek pasif dari Pelengkap yang tetap terikat.",
+      "bedah_pola_markdown": "**Cara Membedakan Objek vs Pelengkap:**\nBandingkan kedua kalimat ini dengan uji kalimat pasif:\n* Kalimat (1): [S] *Pemerintah* + [P] *menerapkan* + [O] *regulasi emisi karbon*. Bisa dipasifkan menjadi *Regulasi emisi karbon diterapkan pemerintah*, jadi frasa di belakang predikat adalah **Objek [O]**.\n* Kalimat (2): [S] *Kebijakan baru tersebut* + [P] *berlandaskan* + [Pel] *prinsip keberlanjutan lingkungan*. Tidak bisa dipasifkan (*Prinsip keberlanjutan diberlandaskan* terdengar janggal), jadi frasa di belakangnya adalah **Pelengkap [Pel]**.\n\nAturan praktisnya: unsur di belakang kata kerja berimbuhan *ber-*, *ter-*, atau kata penghubung (*adalah, merupakan*) selalu berperan sebagai Pelengkap.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Berdiskusi masalah anggaran* dianggap berpola `S-P-O`. | *Berdiskusi masalah anggaran* berpola `S-P-Pel` (*tak bisa dipasifkan*). |\n| *Regulasi itu berdasarkan pada undang-undang* (*kata depan mubazir*). | *Regulasi itu berdasarkan undang-undang* (`S-P-Pel` baku). |\n\n**Langkah Cepat:** Coba tarik frasa di belakang predikat ke depan untuk membuat kalimat pasif. Jika tidak masuk akal, berarti itu Pelengkap [Pel].",
+      "kunci_pembeda": "Menguji apakah unsur di belakang predikat bisa dipindahkan ke depan menjadi subjek kalimat pasif (Objek) atau tetap terkunci di belakang (Pelengkap).",
       "visual": null
     },
     {
@@ -159,8 +159,8 @@
       "nama_variasi": "Identifikasi Subjek dan Predikat pada Kalimat Berpola Terbalik atau Inversi (P-S)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Di kawasan lereng gunung api aktif itu **terdapat** puluhan titik pemantauan aktivitas seismik secara waktu nyata.",
-      "bedah_pola_markdown": "**Bedah Pola Inversi & Fungsi:**\nPerhatikan susunan terbalik pada kalimat berikut: [K] *Di kawasan lereng gunung api aktif itu* + [P] *terdapat* + [S] *puluhan titik pemantauan aktivitas seismik* + [K] *secara waktu nyata*. Kalimat inversi menempatkan Predikat [P] sebelum Subjek [S] guna menonjolkan peristiwa atau keberadaan. Frasa berpreposisi *di kawasan...* tetap menjabat sebagai Keterangan [K], bukan Subjek, sesuai kaidah sintaksis EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Dalam rapat itu membahas* (*tanpa subjek karena berpreposisi*). | *Dalam rapat itu dibahas* [P] *anggaran riset* [S] (`K-P-S`). |\n| *Telah diterbitkan* [P] *kebijakan baru oleh kementerian* (`P-S-O`). | *Telah diterbitkan* [P] *kebijakan baru* [S] *oleh kementerian* [K] (`P-S-K`). |\n\n**Strategi Eksekusi:** Ajukan pertanyaan *apa* atau *siapa* terhadap kata kerja predikat di awal klausa inti untuk menemukan Subjek yang bergeser ke belakang.",
-      "kunci_pembeda": "Mengenali pergeseran posisi Predikat mendahului Subjek (P-S) dan memastikan frasa berpreposisi di awal kalimat tetap dianalisis sebagai Keterangan.",
+      "bedah_pola_markdown": "**Cara Membaca Pola Terbalik (Inversi):**\nJangan terkecoh melihat frasa panjang di awal kalimat! Mari kita bedah satu per satu:\n* [K] *Di kawasan lereng gunung api aktif itu* (diawali kata depan *di*, otomatis jadi Keterangan)\n* [P] *terdapat* (kata kerja yang muncul lebih dulu)\n* [S] *puluhan titik pemantauan aktivitas seismik* (Subjek yang posisinya digeser ke belakang)\n* [K] *secara waktu nyata*\n\nKalimat inversi sengaja menaruh Predikat [P] sebelum Subjek [S] untuk menonjolkan keberadaan atau peristiwa.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Dalam rapat itu membahas* (*tanpa subjek karena berpreposisi*). | *Dalam rapat itu dibahas* [P] *anggaran riset* [S] (`K-P-S`). |\n| *Telah diterbitkan* [P] *kebijakan baru oleh kementerian* (`P-S-O`). | *Telah diterbitkan* [P] *kebijakan baru* [S] *oleh kementerian* [K] (`P-S-K`). |\n\n**Langkah Cepat:** Ajukan pertanyaan *apa* atau *siapa* pada kata kerja di awal kalimat untuk menemukan Subjek yang bersembunyi di belakang.",
+      "kunci_pembeda": "Menyadari posisi Predikat yang mendahului Subjek (P-S) dan memastikan frasa berkatar depan di awal kalimat tetap dihitung sebagai Keterangan.",
       "visual": null
     },
     {
@@ -168,8 +168,8 @@
       "nama_variasi": "Analisis Fungsi Anak Kalimat (Sebagai Pengganti Subjek, Objek, atau Keterangan)",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Tim peneliti menyimpulkan **bahwa kenaikan suhu permukaan laut memicu pemutihan terumbu karang secara massal**.",
-      "bedah_pola_markdown": "**Bedah Pola Klausa Bawahan & Fungsi:**\nPerhatikan perluasan jabatan fungsi pada kalimat majemuk bertingkat berikut: [S] *Tim peneliti* + [P] *menyimpulkan* + [O-anak kalimat] *bahwa kenaikan suhu permukaan laut memicu pemutihan terumbu karang secara massal*. Anak kalimat yang diawali konjungsi *bahwa* tersebut menduduki satu jabatan tunggal sebagai Objek [O] karena dapat digantikan oleh kata benda *hal itu* sesuai EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Bahwa riset ini berhasil* [S] *membuktikan* [P] (*tanpa objek*). | *Bahwa riset ini berhasil* [S] *terbukti* [P] *secara empiris* [K]. |\n| *Karena hujan deras, sehingga banjir* (*konjungsi ganda mubazir*). | *Karena hujan deras* [K], *permukiman terendam banjir* [S-P]. |\n\n**Strategi Eksekusi:** Ganti seluruh klausa anak kalimat dengan satu kata ganti (*hal itu* untuk S/O atau *saat itu* untuk K) guna melihat pola induknya.",
-      "kunci_pembeda": "Meringkas seluruh klausa anak kalimat menjadi satu kata ganti tunggal ('hal itu') untuk menentukan jabatan Subjek, Objek, atau Keterangan induknya.",
+      "bedah_pola_markdown": "**Cara Membaca Peran Anak Kalimat:**\nKalimat panjang di atas sebenarnya cuma punya satu pola inti:\n* [S] *Tim peneliti*\n* [P] *menyimpulkan*\n* [O] *bahwa kenaikan suhu permukaan laut memicu pemutihan terumbu karang secara massal*\n\nSeluruh anak kalimat yang diawali kata *bahwa* di atas mengisi satu kotak peran utuh sebagai **Objek [O]**. Buktinya, seluruh bagian yang dicetak tebal itu bisa kamu ganti dengan satu frasa benda: *hal itu* (*Tim peneliti menyimpulkan hal itu*).\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Bahwa riset ini berhasil* [S] *membuktikan* [P] (*tanpa objek*). | *Bahwa riset ini berhasil* [S] *terbukti* [P] *secara empiris* [K]. |\n| *Karena hujan deras, sehingga banjir* (*dua konjungsi sekaligus*). | *Karena hujan deras* [K], *permukiman terendam banjir* [S-P]. |\n\n**Langkah Cepat:** Ganti seluruh anak kalimat dengan satu kata ganti (*hal itu* untuk S/O atau *saat itu* untuk K) agar pola induknya langsung kelihatan.",
+      "kunci_pembeda": "Meringkas seluruh anak kalimat menjadi satu kata ganti tunggal ('hal itu') untuk melihat apakah perannya sebagai Subjek, Objek, atau Keterangan.",
       "visual": null
     },
     {
@@ -177,8 +177,8 @@
       "nama_variasi": "Penyederhanaan Kalimat Panjang Beranak-pinak ke dalam Pola Fungsi Utamanya",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Lembaga meteorologi nasional yang memantau dinamika atmosfer di wilayah khatulistiwa **merilis** peringatan dini cuaca ekstrem sejak kemarin sore.",
-      "bedah_pola_markdown": "**Bedah Pola Inti Kalimat Luas:**\nKalimat panjang UTBK sering disisipi perluasan keterangan penjelas (*yang...*) pada Subjek maupun Objek. Perhatikan pemangkasannya: [S] *Lembaga meteorologi nasional (yang memantau dinamika atmosfer...)* + [P] *merilis* + [O] *peringatan dini cuaca ekstrem* + [K] *sejak kemarin sore*. Dengan memangkas klausa perluasan, terlihat pola dasarnya adalah **S-P-O-K** dengan inti kalimat *Lembaga merilis peringatan* sesuai EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Peneliti yang mengkaji sampel tanah itu* (*kalimat buntung tanpa predikat*). | *Peneliti yang mengkaji sampel tanah itu* [S] *menemukan mikroplastik* [P-O]. |\n| Menganggap klausa *yang memantau atmosfer* sebagai predikat utama kalimat. | Menempatkan *merilis* sebagai predikat utama di luar perluasan *yang*. |\n\n**Strategi Eksekusi:** Kurung seluruh bagian setelah kata *yang* hingga menemukan kata kerja utama di luar perluasan untuk mengunci pasangan [S] dan [P] inti.",
-      "kunci_pembeda": "Mengisolasi klausa perluasan berpenanda 'yang' dan keterangan tambahan agar pasangan inti Subjek-Predikat utama langsung terlihat jelas.",
+      "bedah_pola_markdown": "**Cara Memangkas Kalimat Superpanjang:**\nSoal UTBK suka menyisipkan penjelas panjang (*yang...*) di tengah kalimat agar kamu lupa mana Predikat utamanya. Mari kita coret penjelasnya:\n* [S] *Lembaga meteorologi nasional ~~(yang memantau dinamika atmosfer di wilayah khatulistiwa)~~*\n* [P] *merilis*\n* [O] *peringatan dini cuaca ekstrem*\n* [K] *sejak kemarin sore*\n\nBegitu penjelasnya dibuang, langsung terlihat pola dasarnya **S-P-O-K** dengan inti kalimat: *Lembaga meteorologi nasional merilis peringatan dini cuaca ekstrem*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| *Peneliti yang mengkaji sampel tanah itu* (*kalimat buntung tanpa predikat*). | *Peneliti yang mengkaji sampel tanah itu* [S] *menemukan mikroplastik* [P-O]. |\n| Menganggap kata *memantau* (di dalam *yang*) sebagai predikat utama. | Menetapkan *merilis* sebagai predikat utama di luar perluasan *yang*. |\n\n**Langkah Cepat:** Kurung semua kata setelah *yang* sampai kamu menemukan kata kerja utama di luar kurungan untuk mengunci pasangan [S] dan [P].",
+      "kunci_pembeda": "Mengurung anak kalimat penjelas berpenanda 'yang' dan keterangan tambahan agar pasangan inti Subjek-Predikat langsung terbaca.",
       "visual": null
     }
   ],
@@ -199,7 +199,7 @@
         "E. Seluruh peserta simposium nasional mendiskusikan strategi mitigasi perubahan iklim global."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat acuan berpola **K-S-P-O**: [K] *Sejak awal tahun ini*, [S] *perusahaan manufaktur tersebut* + [P] *menerapkan* + [O] *sistem otomasi berbasis kecerdasan buatan*. Pola **K-S-P-O** yang identik terdapat pada **opsi B**: [K] *Dalam rapat koordinasi kemarin*, [S] *tim peneliti* + [P] *memaparkan* + [O] *temuan lapangan terbaru*. Sebaliknya, **opsi A** berpola K-S-P-Pel karena berpredikat *beranggotakan*, **opsi C** berpola inversi K-P-S, **opsi D** berpola S-P-O-K, dan **opsi E** berpola S-P-O. Jadi, jawaban yang tepat adalah **B**.",
+      "bedah_cepat_markdown": "Mari kita bedah pola kalimat soal terlebih dahulu:\n* [K] *Sejak awal tahun ini*,\n* [S] *perusahaan manufaktur tersebut*\n* [P] *menerapkan*\n* [O] *sistem otomasi berbasis kecerdasan buatan* (bisa dipasifkan)\n\nKalimat soal berpola **K-S-P-O**. Pola yang sama persis ada pada **opsi B**: [K] *Dalam rapat koordinasi kemarin*, [S] *tim peneliti* + [P] *memaparkan* + [O] *temuan lapangan terbaru*.\n\nKenapa opsi lain salah?\n* **Opsi A:** Berpola K-S-P-Pel karena predikat berimbuhan *ber-* (*beranggotakan*) diikuti Pelengkap, bukan Objek.\n* **Opsi C:** Berpola terbalik (K-P-S) dengan Subjek di belakang.\n* **Opsi D:** Berpola S-P-O-K (Keterangan di akhir).\n* **Opsi E:** Berpola S-P-O (tanpa Keterangan).\n\nJadi, jawaban yang tepat adalah **B**.",
       "visual": null
     },
     {
@@ -218,7 +218,7 @@
         "E. Kalimat (1) tidak memiliki unsur Predikat karena diawali oleh kata depan 'di'."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat (1) memiliki susunan terbalik (**K-P-S**): [K] *Di balik meningkatnya ekspor komoditas olahan mineral* + [P] *terdapat* + [S] *tantangan besar terkait efisiensi energi industri* (**opsi B**). **Opsi A** dan **E** keliru karena frasa berpreposisi *di balik...* merupakan Keterangan, bukan Subjek, sedangkan predikatnya adalah *terdapat*. Pada kalimat (2), predikat utamanya adalah *menilai* (**opsi D** salah) dan klausa berkonjungsi *bahwa* berfungsi sebagai Objek (**opsi C** salah). Jadi, jawaban tepat adalah **B**.",
+      "bedah_cepat_markdown": "Mari kita cek struktur kedua kalimat pada kutipan:\n* **Kalimat (1):** Diawali kata depan *Di balik...*, sehingga frasa awal ini berperan sebagai **Keterangan [K]**. Kata kerja *terdapat* menjadi **Predikat [P]**, diikuti **Subjek [S]** *tantangan besar terkait efisiensi energi industri*. Susunan terbalik **K-P-S** ini sesuai dengan **opsi B**.\n* **Kalimat (2):** Subjeknya adalah *Para analis ekonomi*, Predikat utamanya *menilai*, dan seluruh anak kalimat berkonjungsi *bahwa* berperan sebagai **Objek [O]**.\n\nKenapa opsi lain keliru?\n* **Opsi A & E:** Frasa yang diawali kata depan (*di balik*) selalu menjadi Keterangan, bukan Subjek, dan kalimat (1) tetap punya Predikat (*terdapat*).\n* **Opsi C:** Anak kalimat berkonjungsi *bahwa* setelah verba transitif *menilai* mengisi posisi Objek, bukan Keterangan cara.\n* **Opsi D:** Frasa *dapat menekan* hanyalah predikat di dalam anak kalimat, bukan predikat utama induk kalimat.\n\nJadi, jawaban yang tepat adalah **B**.",
       "visual": null
     },
     {
@@ -237,7 +237,7 @@
         "E. Pelestarian ekosistem pesisir dilakukan selama enam bulan."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Untuk menemukan inti kalimat panjang, pangkas seluruh perluasan berpenanda *yang* serta keterangan waktu. Subjek inti kalimat tersebut adalah **Kajian komprehensif** (klausa *yang dilakukan oleh lembaga riset independen selama enam bulan terakhir* hanyalah perluasan subjek), Predikat intinya **menghasilkan**, dan Objek intinya **rekomendasi kebijakan** (klausa *yang berorientasi pada pelestarian ekosistem pesisir* adalah perluasan objek). Dengan demikian, inti kalimatnya adalah **Kajian komprehensif menghasilkan rekomendasi kebijakan** (**opsi C**). **Opsi A**, **B**, **D**, dan **E** tertipu oleh unsur perluasan.",
+      "bedah_cepat_markdown": "Untuk menemukan inti kalimat panjang, coret semua perluasan yang diawali kata *yang* beserta keterangan waktunya:\n* **Subjek [S]:** *Kajian komprehensif* ~~(yang dilakukan oleh lembaga riset independen selama enam bulan terakhir)~~\n* **Predikat [P]:** *menghasilkan*\n* **Objek [O]:** *rekomendasi kebijakan* ~~(yang berorientasi pada pelestarian ekosistem pesisir)~~\n\nJika digabungkan, inti kalimatnya adalah **Kajian komprehensif menghasilkan rekomendasi kebijakan** (**opsi C**). Opsi **A**, **B**, **D**, dan **E** salah karena mengambil kata kerja atau pelaku dari dalam anak kalimat penjelas (*yang*), bukan dari induk kalimat.\n\nJadi, jawaban yang tepat adalah **C**.",
       "visual": null
     }
   ]

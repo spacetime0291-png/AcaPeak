@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Denah lahan agrowisata berskala $1 : 2.000$ memiliki luas gambar $10\\text{ cm}^2$. Banyak peserta langsung mengalikan $10\\text{ cm}^2 \\times 2.000 = 2\\text{ m}^2$, padahal luas riilnya jauh lebih besar. Berapa luas lahan sebenarnya?",
+      "pertanyaan_pemantik": "Denah lahan agrowisata berskala $1 : 2.000$ punya luas gambar $10\\text{ cm}^2$. Banyak peserta langsung mengalikan $10\\text{ cm}^2 \\times 2.000 = 20.000\\text{ cm}^2 = 2\\text{ m}^2$, padahal luas aslinya jauh lebih besar. Berapa luas lahan sebenarnya?",
       "opsi_cepat": [
         "200 m²",
         "4.000 m²"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Faktor pengali luas adalah kuadrat dari skala panjang ($k^2 = 2.000^2 = 4.000.000$), bukan dikali $2.000$ secara linear. Setelah dikalikan $10\\text{ cm}^2$ lalu dibagi $10.000$ untuk konversi ke $\\text{m}^2$, diperoleh $4.000\\text{ m}^2$."
+      "penjelasan_kilat": "Skala luas adalah kuadrat dari skala panjang. Karena $1\\text{ cm} = 20\\text{ m}$, maka $1\\text{ cm}^2 = 20^2 = 400\\text{ m}^2$. Tinggal kalikan $10 \\times 400\\text{ m}^2 = 4.000\\text{ m}^2$."
     },
-    "konsep_inti_markdown": "- **Perbandingan Senilai & Berbalik Nilai:** Senilai ($\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$); berbalik nilai ($a_1 \\cdot b_1 = a_2 \\cdot b_2$, misal roda gigi).\n- **Skala Peta & Luas:** Panjang $J_s = J_p \\times k$; Luas $L_s = L_p \\times k^2$ ($1\\text{ m}^2 = 10^4\\text{ cm}^2$, $1\\text{ ha} = 10^4\\text{ m}^2$).\n- **Pencampuran & Dividen:** Kekekalan zat murni $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$; proporsi dividen $\\propto \\text{Modal} \\times \\text{Durasi}$.\n- **Kurs Valas:** Selalu gunakan sudut pandang bank—beli valas pakai **Kurs Jual**, jual valas pakai **Kurs Beli**.",
+    "konsep_inti_markdown": "- **Perbandingan Senilai vs Berbalik Nilai:** Senilai jika keduanya naik bareng ($\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$); berbalik nilai jika satu naik, satunya turun ($a_1 \\cdot b_1 = a_2 \\cdot b_2$, contohnya pekerja-waktu dan roda gigi).\n- **Skala Panjang & Luas:** Panjang dikali $k$ ($J_s = J_p \\times k$), sedangkan luas wajib dikali $k^2$ ($L_s = L_p \\times k^2$). Ingat konversi: $1\\text{ m}^2 = 10.000\\text{ cm}^2$ dan $1\\text{ ha} = 10.000\\text{ m}^2$.\n- **Campuran & Bagi Hasil:** Total zat murni sebelum dan sesudah dicampur selalu sama: $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$. Sementara bagian laba (dividen) sebanding dengan $\\text{Modal} \\times \\text{Lama Aktif}$.\n- **Kurs Valas:** Selalu pakai sudut pandang bank. Kamu beli mata uang asing (bank menjual) pakai **Kurs Jual**; kamu tukar mata uang asing ke rupiah (bank membeli) pakai **Kurs Beli**.",
     "radar_jebakan_utbk": [
-      "Mengalikan luas pada peta secara linear dengan faktor skala $k$ alih-alih $k^2$, serta keliru mengonversi $\\text{cm}^2$ ke $\\text{m}^2$ (seharusnya dibagi $10.000$, bukan $100$).",
-      "Terbalik memakai Kurs Beli dan Kurs Jual valas karena menggunakan sudut pandang nasabah, serta salah menghitung durasi bulan mitra baru (bulan masuk harus ikut dihitung)."
+      "Mengalikan luas pada denah dengan skala $k$ saja (seharusnya $k^2$), lalu salah mengubah $\\text{cm}^2$ ke $\\text{m}^2$ karena cuma dibagi $100$ alih-alih $10.000$.",
+      "Tertukar memakai Kurs Beli dan Kurs Jual karena memakai sudut pandang nasabah, serta lupa menghitung bulan masuk saat mencari durasi modal mitra."
     ],
-    "stimulus_utama_bersama": "Koperasi Agrowisata **Nusantara Agro Mandiri** mengembangkan kawasan perkebunan dan pabrik pengolahan konsentrat sari jeruk terpadu di Garut. Pada denah *masterplan* berskala $1 : 2.500$, area kebun produksi digambarkan berbentuk persegi panjang berukuran $8\\text{ cm} \\times 6\\text{ cm}$, sedangkan area pabrik pengolahan memiliki luas $12\\text{ cm}^2$.\n\nDi unit produksi, tersedia $120\\text{ liter}$ larutan konsentrat awal dengan kadar sari jeruk murni $25\\%$. Untuk memenuhi standar mutu, kadar sari murni dinaikkan menjadi $40\\%$ dengan menambahkan sari jeruk murni ($100\\%$). Produk minuman siap saji koperasi mengandung $120\\text{ kkal}$ energi dan $15\\text{ mg}$ vitamin C pada setiap takaran $250\\text{ mL}$.\n\nUntuk ekspansi mesin, koperasi membeli mesin pemeras seharga $\\text{USD } 4.000$ dan menukarkan kas hasil ekspor sebesar $\\text{EUR } 2.500$ melalui bank dengan ketentuan kurs berikut:\n\n| Mata Uang | Kurs Beli | Kurs Jual |\n| :--- | :--- | :--- |\n| USD | Rp15.800 | Rp16.000 |\n| EUR | Rp17.200 | Rp17.500 |\n\nSementara itu, modal awal proyek dihimpun tiga mitra dengan komitmen pembagian laba tahunan proporsional terhadap besar modal dan lama penyertaan: Pak Andi menyetor Rp200.000.000 sejak awal bulan ke-1, Bu Rina menyetor Rp300.000.000 sejak awal bulan ke-1, dan Pak Dedi bergabung pada awal bulan ke-5 dengan modal Rp300.000.000. Pada lini pengemasan pabrik, konveyor digerakkan motor listrik berkecepatan $600\\text{ rpm}$ melalui tautan tiga roda gigi seri: Roda Gigi A (penggerak) memiliki $20$ gigi, Roda Gigi B (perantara) memiliki $50$ gigi, dan Roda Gigi C (poros konveyor) memiliki $30$ gigi.",
+    "stimulus_utama_bersama": "Koperasi Agrowisata **Nusantara Agro Mandiri** mengembangkan kebun dan pabrik konsentrat sari jeruk terpadu di Garut. Pada denah *masterplan* berskala $1 : 2.500$, area kebun produksi berbentuk persegi panjang berukuran $8\\text{ cm} \\times 6\\text{ cm}$, sedangkan area pabrik pengolahan seluas $12\\text{ cm}^2$.\n\nDi unit produksi, tersedia $120\\text{ liter}$ larutan konsentrat awal berkadar sari jeruk murni $25\\%$. Agar memenuhi standar mutu, kadarnya dinaikkan menjadi $40\\%$ dengan menambahkan sari jeruk murni ($100\\%$). Produk minuman siap saji koperasi ini mengandung $120\\text{ kkal}$ energi dan $15\\text{ mg}$ vitamin C per takaran $250\\text{ mL}$.\n\nUntuk ekspansi mesin, koperasi membeli mesin pemeras seharga $\\text{USD } 4.000$ dan menukarkan kas hasil ekspor sebesar $\\text{EUR } 2.500$ ke rupiah melalui bank dengan daftar kurs berikut:\n\n| Mata Uang | Kurs Beli | Kurs Jual |\n| :--- | :--- | :--- |\n| USD | Rp15.800 | Rp16.000 |\n| EUR | Rp17.200 | Rp17.500 |\n\nSementara itu, modal awal proyek dihimpun tiga mitra dengan pembagian laba tahunan sebanding dengan besar modal dan lama penyertaan: Pak Andi menyetor Rp200.000.000 sejak awal bulan ke-1, Bu Rina menyetor Rp300.000.000 sejak awal bulan ke-1, dan Pak Dedi bergabung pada awal bulan ke-5 dengan modal Rp300.000.000. Pada lini pengemasan pabrik, konveyor digerakkan motor listrik berkecepatan $600\\text{ rpm}$ melalui tautan tiga roda gigi seri: Roda Gigi A (penggerak) bergigi $20$, Roda Gigi B (perantara) bergigi $50$, dan Roda Gigi C (poros konveyor) bergigi $30$.",
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Rumus & Sifat Rasio, Proporsi, dan Skala",
-      "subjudul_ringkas": "Panduan lengkap sifat proporsi, skala peta, pencampuran larutan, kurs valas, dan transmisi mekanis UTBK.",
+      "subjudul_ringkas": "Ringkasan rumus praktis proporsi, skala peta, campuran larutan, kurs valas, dan roda gigi untuk UTBK.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -36,105 +36,105 @@
       "kelompok": [
         {
           "nama_kelompok": "Proporsi Senilai, Berbalik Nilai, Dividen, dan Roda Gigi",
-          "ringkasan_kelompok": "Rumus dasar proporsi, pembagian dividen usaha, dan transmisi putaran roda gigi.",
+          "ringkasan_kelompok": "Aturan dasar perbandingan, bagi hasil usaha, dan putaran roda gigi.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Proporsi Senilai dan Penggabungan Tiga Variabel",
-              "penjelasan_singkat": "Jika $\\frac{a}{b} = \\frac{c}{d}$, samakan nilai variabel perantara memakai KPK untuk menggabungkan dua rasio ($A:B$ dan $B:C$).",
-              "contoh_penerapan": "Diketahui $A:B = 2:3$ dan $B:C = 4:5$, samakan $B=12$ sehingga diperoleh rasio gabungan **$A:B:C = 8:12:15$**.",
-              "jebakan_atau_catatan": "Jangan langsung menjumlahkan angka rasio sebelum nilai variabel penghubung ($B$) disamakan terlebih dahulu.",
+              "judul_poin": "Menggabungkan Dua Rasio (Tiga Variabel)",
+              "penjelasan_singkat": "Untuk menggabungkan rasio $A:B$ dan $B:C$, samakan dulu angka pada huruf penghubungnya ($B$) memakai KPK.",
+              "contoh_penerapan": "Jika $A:B = 2:3$ dan $B:C = 4:5$, samakan $B$ menjadi $12$. Hasil rasio gabungannya adalah **$A:B:C = 8:12:15$**.",
+              "jebakan_atau_catatan": "Jangan langsung menjumlahkan angka rasio sebelum nilai variabel penghubung ($B$) dibuat sama.",
               "visual": null
             },
             {
-              "judul_poin": "Perbandingan Berbalik Nilai pada Pekerja dan Waktu",
-              "penjelasan_singkat": "Beban kerja konstan ($P_1 \\cdot t_1 = P_2 \\cdot t_2$) untuk pekerja $P > 0$ dan waktu $t > 0$.",
-              "contoh_penerapan": "Proyek $12$ orang selesai $20$ hari; setelah jalan $8$ hari lalu libur $5$ hari, sisa $7$ hari butuh **$21$ pekerja**.",
-              "jebakan_atau_catatan": "Hitung sisa beban kerja dari hari yang belum dikerjakan, bukan dari total hari awal proyek.",
+              "judul_poin": "Perbandingan Berbalik Nilai (Pekerja & Waktu)",
+              "penjelasan_singkat": "Total beban kerja selalu tetap ($P_1 \\cdot t_1 = P_2 \\cdot t_2$). Jika waktu sisa makin sempit, jumlah pekerja harus ditambah.",
+              "contoh_penerapan": "Proyek $12$ orang selesai $20$ hari. Setelah jalan $8$ hari lalu libur $4$ hari, sisa $8$ hari butuh $\\frac{12 \\times 12}{8} =$ **$18$ pekerja**.",
+              "jebakan_atau_catatan": "Hitung sisa beban kerja dari sisa hari yang belum dikerjakan. Jika hasil pekerja berupa desimal, selalu bulatkan ke atas.",
               "visual": null
             },
             {
-              "judul_poin": "Proporsi Pembagian Dividen Berdasarkan Modal dan Durasi",
-              "penjelasan_singkat": "Bagian laba tiap sekutu sebanding dengan hasil kali modal dan lama penyertaan modal ($L_i \\propto M_i \\times t_i$).",
-              "contoh_penerapan": "A setor $\\text{Rp}20\\text{ jt}$ ($12$ bln) dan B $\\text{Rp}30\\text{ jt}$ ($6$ bln); rasio laba A:B adalah $240:180 =$ **$4:3$**.",
-              "jebakan_atau_catatan": "Peserta sering membagi laba hanya berdasarkan rasio modal tanpa mengalikan durasi investasi tiap pihak.",
+              "judul_poin": "Pembagian Laba (Dividen) Berdasarkan Modal & Durasi",
+              "penjelasan_singkat": "Porsi laba tiap mitra sebanding dengan hasil kali modal dan lama bulan aktifnya ($L_i \\propto M_i \\times t_i$).",
+              "contoh_penerapan": "A setor $\\text{Rp}20\\text{ jt}$ ($12$ bln) dan B $\\text{Rp}30\\text{ jt}$ ($6$ bln). Rasio laba A:B adalah $240:180 =$ **$4:3$**.",
+              "jebakan_atau_catatan": "Jangan membagi laba cuma dari besar modal tanpa mengalikan lama bulan modal tersebut aktif.",
               "visual": null
             },
             {
-              "judul_poin": "Rasio Roda Gigi dan Kecepatan Putaran Mesin",
-              "penjelasan_singkat": "Pada dua gir bersinggungan, jumlah gigi ($Z$) berbanding terbalik dengan kecepatan putar ($N$): $Z_1 \\cdot N_1 = Z_2 \\cdot N_2$.",
-              "contoh_penerapan": "Gir penggerak $20$ gigi berputar $600\\text{ rpm}$ memutar gir $50$ gigi, menghasilkan putaran **$\\frac{20 \\times 600}{50} = 240\\text{ rpm}$**.",
-              "jebakan_atau_catatan": "Dua gir yang dipasang seporos (satu sumbu) memiliki kecepatan putar ($N$) sama besar, bukan berbanding terbalik.",
+              "judul_poin": "Rasio Roda Gigi dan Kecepatan Putar",
+              "penjelasan_singkat": "Pada dua gir yang giginya saling bertautan, makin banyak gigi ($Z$), makin lambat putarannya ($N$): $Z_1 \\cdot N_1 = Z_2 \\cdot N_2$.",
+              "contoh_penerapan": "Gir $20$ gigi berputar $600\\text{ rpm}$ memutar gir $50$ gigi. Putarannya menjadi **$\\frac{20 \\times 600}{50} = 240\\text{ rpm}$**.",
+              "jebakan_atau_catatan": "Hati-hati: dua gir yang dipasang satu poros (seporos) punya kecepatan putar ($N$) yang sama, bukan berbalik nilai.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Skala Peta, Denah Arsitektur, dan Konversi Luas",
-          "ringkasan_kelompok": "Penerapan faktor skala $k$ untuk menghitung panjang, luas lahan, dan perubahan skala.",
+          "ringkasan_kelompok": "Cara cepat memakai faktor skala $k$ untuk jarak, luas lahan, dan ubah skala.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Skala Panjang Peta dan Jarak Sebenarnya",
-              "penjelasan_singkat": "Untuk skala $1:k$ ($k > 0$), jarak sebenarnya dirumuskan $J_s = J_p \\times k$ dengan satuan awal wajib disamakan.",
-              "contoh_penerapan": "Peta berskala $1:250.000$ dengan jarak $4\\text{ cm}$ mewakili jarak sebenarnya $4 \\times 250.000\\text{ cm} =$ **$10\\text{ km}$**.",
-              "jebakan_atau_catatan": "Waspadai konversi tangga satuan panjang: $1\\text{ km} = 10^5\\text{ cm}$ dan $1\\text{ m} = 10^2\\text{ cm}$.",
+              "penjelasan_singkat": "Pada skala $1:k$, jarak asli dihitung dengan $J_s = J_p \\times k$. Pastikan satuan awal sudah sama sebelum menghitung.",
+              "contoh_penerapan": "Jarak $4\\text{ cm}$ pada peta berskala $1:250.000$ setara dengan $4 \\times 250.000\\text{ cm} =$ **$10\\text{ km}$**.",
+              "jebakan_atau_catatan": "Ubah skala ke meter atau kilometer sejak awal: $1\\text{ km} = 100.000\\text{ cm}$ (coret $5$ nol) dan $1\\text{ m} = 100\\text{ cm}$ (coret $2$ nol).",
               "visual": null
             },
             {
-              "judul_poin": "Skala Luas Bidang dan Konversi Satuan Hektare",
-              "penjelasan_singkat": "Faktor pengali luas adalah kuadrat skala panjang: $L_s = L_p \\times k^2$, dengan $1\\text{ ha} = 10^4\\text{ m}^2 = 10^8\\text{ cm}^2$.",
-              "contoh_penerapan": "Denah skala $1:500$ seluas $8\\text{ cm}^2$ memiliki luas lahan sebenarnya $8 \\times 500^2\\text{ cm}^2 =$ **$200\\text{ m}^2$**.",
-              "jebakan_atau_catatan": "Kesalahan fatal UTBK adalah mengalikan luas peta dengan $k$ saja, padahal seharusnya dikalikan $k^2$.",
+              "judul_poin": "Skala Luas Bidang dan Konversi Hektare",
+              "penjelasan_singkat": "Karena luas punya dua sisi (panjang dan lebar), faktor pengalinya dikuadratkan: $L_s = L_p \\times k^2$, dengan $1\\text{ ha} = 10.000\\text{ m}^2$.",
+              "contoh_penerapan": "Denah skala $1:500$ ($1\\text{ cm} = 5\\text{ m}$) seluas $8\\text{ cm}^2$ punya luas asli $8 \\times 5^2\\text{ m}^2 =$ **$200\\text{ m}^2$**.",
+              "jebakan_atau_catatan": "Jebakan paling sering di UTBK: mengalikan luas peta dengan $k$ saja, padahal wajib dikali $k^2$.",
               "visual": null
             },
             {
-              "judul_poin": "Perubahan Skala Denah (Perbesaran atau Pengecilan)",
-              "penjelasan_singkat": "Jika peta berskala $1:k_1$ digambar ulang menjadi $1:k_2$, panjang pada peta baru adalah $J_2 = J_1 \\times \\frac{k_1}{k_2}$.",
-              "contoh_penerapan": "Jalan $6\\text{ cm}$ pada peta $1:100.000$ digambar ulang pada skala $1:25.000$ menjadi $6 \\times \\frac{100.000}{25.000} =$ **$24\\text{ cm}$**.",
-              "jebakan_atau_catatan": "Nilai $k$ mengecil berarti skala peta diperbesar; jangan terbalik membagi $k_2$ dengan $k_1$.",
+              "judul_poin": "Mengubah Skala Denah (Diperbesar atau Diperkecil)",
+              "penjelasan_singkat": "Jika denah skala $1:k_1$ digambar ulang menjadi $1:k_2$, panjang gambar barunya adalah $J_2 = J_1 \\times \\frac{k_1}{k_2}$.",
+              "contoh_penerapan": "Jalan $6\\text{ cm}$ di peta $1:100.000$ digambar ulang ke skala $1:25.000$ menjadi $6 \\times \\frac{100.000}{25.000} =$ **$24\\text{ cm}$**.",
+              "jebakan_atau_catatan": "Angka $k$ makin kecil artinya peta diperbesar (gambar makin panjang). Jangan terbalik membagi $k_2$ dengan $k_1$.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Pencampuran Larutan dan Konsentrasi Zat Murni",
-          "ringkasan_kelompok": "Hukum kekekalan massa zat terlarut pada pencampuran larutan dan pengenceran.",
+          "ringkasan_kelompok": "Prinsip kekekalan zat terlarut saat mencampur atau mengencerkan larutan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pencampuran Dua Larutan Berbeda Konsentrasi",
-              "penjelasan_singkat": "Kekekalan zat murni berlaku: $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$ dengan domain kadar $0\\% \\le C \\le 100\\%$.",
-              "contoh_penerapan": "Campuran $200\\text{ mL}$ alkohol $30\\%$ dan $300\\text{ mL}$ alkohol $80\\%$ menghasilkan kadar akhir $\\frac{60 + 240}{500} =$ **$60\\%$**.",
-              "jebakan_atau_catatan": "Kadar campuran tidak boleh dirata-ratakan langsung secara aritmetika jika volume awal ($V_1$ dan $V_2$) berbeda.",
+              "judul_poin": "Mencampur Dua Larutan Beda Kadar",
+              "penjelasan_singkat": "Jumlah zat murni tidak pernah hilang: $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$, dengan kadar $0\\% \\le C \\le 100\\%$.",
+              "contoh_penerapan": "Campuran $200\\text{ mL}$ alkohol $30\\%$ dan $300\\text{ mL}$ alkohol $80\\%$ berkadar akhir $\\frac{60 + 240}{500} =$ **$60\\%$**.",
+              "jebakan_atau_catatan": "Kadar campuran tidak bisa langsung dirata-ratakan jika volume awal kedua larutan berbeda.",
               "visual": null
             },
             {
-              "judul_poin": "Penambahan Pelarut Murni atau Zat Terlarut Murni",
-              "penjelasan_singkat": "Pelarut murni (air) memiliki kadar zat terlarut $C_2 = 0\\%$, sedangkan zat terlarut murni memiliki kadar $C_2 = 100\\%$.",
+              "judul_poin": "Menambah Air (Pelarut) atau Zat Murni",
+              "penjelasan_singkat": "Air murni punya kadar zat terlarut $C_2 = 0\\%$, sedangkan bahan murni yang ditambahkan punya kadar $C_2 = 100\\%$.",
               "contoh_penerapan": "Larutan garam $400\\text{ g}$ kadar $15\\%$ ditambah $100\\text{ g}$ air ($0\\%$) menjadi berkadar $\\frac{60 + 0}{500} =$ **$12\\%$**.",
-              "jebakan_atau_catatan": "Saat menambah zat murni $x$ gram, penyebut total massa campuran wajib ikut bertambah menjadi $(V_1 + x)$.",
+              "jebakan_atau_catatan": "Saat menambah zat murni sebanyak $x$, jangan lupa total volume/massa di penyebut juga bertambah menjadi $(V_1 + x)$.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Kurs Valuta Asing dan Konversi Satuan Majemuk",
-          "ringkasan_kelompok": "Aturan transaksi kurs bank serta proporsi satuan majemuk dosis obat dan kalori.",
+          "ringkasan_kelompok": "Cara jitu memakai kurs bank dan menghitung takaran dosis atau nutrisi.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Transaksi Valas Menggunakan Kurs Jual dan Kurs Beli",
-              "penjelasan_singkat": "Gunakan sudut pandang bank: nasabah membeli valas memakai **Kurs Jual**, sedangkan menjual valas memakai **Kurs Beli**.",
-              "contoh_penerapan": "Kurs beli $\\text{Rp}15.000$ dan kurs jual $\\text{Rp}15.200$; menukar $\\text{Rp}30,4\\text{ jt}$ ke USD mendapat **$\\text{USD } 2.000$**.",
-              "jebakan_atau_catatan": "Kurs Tengah hanya acuan laporan keuangan dan tidak pernah digunakan dalam transaksi penukaran uang.",
+              "judul_poin": "Transaksi Valas Pakai Kurs Jual dan Kurs Beli",
+              "penjelasan_singkat": "Patokannya selalu bank: nasabah beli valas pakai **Kurs Jual**, nasabah jual valas ke rupiah pakai **Kurs Beli**.",
+              "contoh_penerapan": "Kurs beli $\\text{Rp}15.000$ dan kurs jual $\\text{Rp}15.200$. Menukar $\\text{Rp}30,4\\text{ jt}$ ke USD mendapat **$\\text{USD } 2.000$**.",
+              "jebakan_atau_catatan": "Kurs Tengah cuma dipakai untuk laporan akuntansi, tidak pernah dipakai saat transaksi penukaran uang.",
               "visual": null
             },
             {
-              "judul_poin": "Konversi Satuan Majemuk pada Dosis Obat dan Kalori",
-              "penjelasan_singkat": "Gunakan eliminasi dimensi berantai ($\\frac{\\text{dosis}}{\\text{kg}\\cdot\\text{hari}} \\times \\text{berat} \\div \\text{frekuensi}$) untuk menentukan takaran satuan per konsumsi.",
+              "judul_poin": "Konversi Satuan Majemuk (Dosis Obat & Nutrisi)",
+              "penjelasan_singkat": "Coret satuan secara berantai: $\\frac{\\text{dosis}}{\\text{kg}\\cdot\\text{hari}} \\times \\text{berat badan} \\div \\text{frekuensi minum}$.",
               "contoh_penerapan": "Dosis $15\\text{ mg/kg/hari}$ dibagi $3$ kali minum untuk anak $20\\text{ kg}$ adalah $\\frac{15 \\times 20}{3} =$ **$100\\text{ mg/minum}$**.",
-              "jebakan_atau_catatan": "Periksa teliti apakah satuan dosis pada soal menyatakan takaran total per hari atau per satu kali minum.",
+              "jebakan_atau_catatan": "Baca teliti apakah angka dosis di soal berlaku untuk total satu hari penuh atau untuk sekali minum.",
               "visual": null
             }
           ]
@@ -147,18 +147,18 @@
       "nomor_variasi": 1,
       "nama_variasi": "Pencampuran Larutan atau Bahan Baku dengan Konsentrasi Tertentu",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Merujuk unit produksi pada stimulus utama, tersedia $120\\text{ liter}$ larutan konsentrat dengan kadar sari jeruk murni $25\\%$. Berapa liter sari jeruk murni ($100\\%$) yang harus ditambahkan agar kadar konsentrat meningkat menjadi $40\\%$?",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Diketahui volume awal larutan $V_1 = 120\\text{ liter}$ dengan konsentrasi sari murni $25\\%$. Penambahan sari jeruk murni berkadar $100\\%$ sebanyak $x\\text{ liter}$ akan mengubah total volume campuran menjadi $(120 + x)\\text{ liter}$ dengan target konsentrasi akhir sebesar $40\\%$.\n\n**2. Model Matematika (Employing):** Terapkan prinsip kekekalan massa zat terlarut murni, yaitu $\\text{Zat Murni Awal} + \\text{Zat Murni Ditambah} = \\text{Zat Murni Akhir}$. Persamaan linearnya dirumuskan sebagai $0,25(120) + 1,00x = 0,40(120 + x)$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Jabarkan persamaan menjadi $30 + x = 48 + 0,4x$, lalu pindahkan suku sejenis sehingga $0,6x = 18$ dan diperoleh $x = 30\\text{ liter}$. Secara operasional, kapasitas tangki pencampuran harus menampung minimal $120 + 30 = 150\\text{ liter}$ agar larutan tidak meluap saat proses pengadukan berlangsung.",
-      "kunci_pembeda": "Selalu setarakan volume zat murni sebelum dan sesudah pencampuran dengan memasukkan konsentrasi $100\\%$ ($1,00$) untuk bahan murni murni yang ditambahkan.",
+      "stimulus_mini": "Di unit produksi pada stimulus utama, tersedia $120\\text{ liter}$ larutan konsentrat berkadar sari jeruk murni $25\\%$. Berapa liter sari jeruk murni ($100\\%$) yang harus ditambahkan agar kadar konsentrat naik menjadi $40\\%$?",
+      "bedah_pola_markdown": "**1. Pahami Situasinya:** Awalnya kita punya $120\\text{ liter}$ larutan dengan isi sari jeruk murni $25\\%$. Lalu kita tuang $x\\text{ liter}$ sari jeruk murni ($100\\%$). Akibatnya, total volume ikut naik menjadi $(120 + x)\\text{ liter}$ dan kadar barunya ditargetkan $40\\%$.\n\n**2. Susun Persamaan:** Pakai logika sederhana: jumlah sari murni sebelum dan sesudah dicampur harus sama. Jadi, $\\text{Sari Awal} + \\text{Sari Tambahan} = \\text{Sari Akhir}$. Tulis dalam persamaan: $0,25(120) + 1,00x = 0,40(120 + x)$.\n\n**3. Hitung Cepat & Cek Realita:** Hitung bagian kiri dan kanan menjadi $30 + x = 48 + 0,4x$. Pindahkan suku sejenis agar $0,6x = 18$, lalu bagi keduanya dengan $0,6$ sehingga $x = 30\\text{ liter}$. Di lapangan, pastikan tangki pencampur punya kapasitas minimal $120 + 30 = 150\\text{ liter}$ supaya larutan tidak tumpah.",
+      "kunci_pembeda": "Selalu samakan volume zat murni sebelum dan sesudah pencampuran, dan ingat bahan murni yang ditambahkan berkadar $100\\%$ ($1,00$).",
       "visual": null
     },
     {
       "nomor_variasi": 2,
       "nama_variasi": "Skala Peta, Denah Arsitektur, dan Konversi Luas Lahan Sebenarnya",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Berdasarkan denah masterplan berskala $1 : 2.500$ pada stimulus utama, hitung selisih luas sebenarnya (dalam $\\text{m}^2$) antara area kebun produksi ($8\\text{ cm} \\times 6\\text{ cm}$) dan area pabrik pengolahan ($12\\text{ cm}^2$).",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Skala denah $1 : 2.500$ bermakna $1\\text{ cm}$ pada gambar mewakili $2.500\\text{ cm}$ atau $25\\text{ meter}$ di lapangan. Luas kebun pada denah adalah $8\\text{ cm} \\times 6\\text{ cm} = 48\\text{ cm}^2$, sedangkan luas pabrik $12\\text{ cm}^2$. Dicari selisih luas sebenarnya keduanya dalam satuan $\\text{m}^2$.\n\n**2. Model Matematika (Employing):** Hitung selisih luas pada denah terlebih dahulu agar perhitungan ringkas: $\\Delta L_{\\text{denah}} = 48 - 12 = 36\\text{ cm}^2$. Karena konversi dimensi dua arah (panjang dan lebar), gunakan kuadrat skala: $\\Delta L_{\\text{riil}} = \\Delta L_{\\text{denah}} \\times k^2$, dengan $1\\text{ cm}^2$ pada denah setara $25\\text{ m} \\times 25\\text{ m} = 625\\text{ m}^2$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Kalikan langsung $36 \\times 625\\text{ m}^2 = 22.500\\text{ m}^2$ atau setara $2,25\\text{ hektare}$. Mengubah skala panjang $1\\text{ cm} = 25\\text{ m}$ menjadi skala luas $1\\text{ cm}^2 = 625\\text{ m}^2$ sejak awal jauh lebih cepat serta meminimalkan risiko salah hitung nol.",
-      "kunci_pembeda": "Konversikan skala panjang ke satuan meter terlebih dahulu lalu kuadratkan untuk memperoleh skala luas ($1\\text{ cm}^2 = (k\\text{ dalam meter})^2\\text{ m}^2$).",
+      "stimulus_mini": "Berdasarkan denah *masterplan* berskala $1 : 2.500$ pada stimulus utama, berapa selisih luas sebenarnya (dalam $\\text{m}^2$) antara area kebun produksi ($8\\text{ cm} \\times 6\\text{ cm}$) dan area pabrik pengolahan ($12\\text{ cm}^2$)?",
+      "bedah_pola_markdown": "**1. Pahami Situasinya:** Skala $1 : 2.500$ berarti $1\\text{ cm}$ di gambar sama dengan $2.500\\text{ cm}$ atau $25\\text{ meter}$ di lapangan. Di denah, luas kebun adalah $8 \\times 6 = 48\\text{ cm}^2$, sedangkan luas pabrik $12\\text{ cm}^2$. Kita diminta mencari selisih luas aslinya dalam $\\text{m}^2$.\n\n**2. Susun Persamaan:** Biar tidak menghitung dua kali, cari selisih luas di denah dulu: $\\Delta L_{\\text{denah}} = 48 - 12 = 36\\text{ cm}^2$. Sekarang ubah skala panjang ke skala luas: karena $1\\text{ cm} = 25\\text{ m}$, maka $1\\text{ cm}^2 = 25\\text{ m} \\times 25\\text{ m} = 625\\text{ m}^2$.\n\n**3. Hitung Cepat & Cek Realita:** Tinggal kalikan selisih luas denah dengan pengali luasnya: $36 \\times 625\\text{ m}^2 = 22.500\\text{ m}^2$ (atau $2,25\\text{ hektare}$). Trik mengubah skala panjang ke meter lalu menguadratkannya di awal bikin kamu terhindar dari jebakan salah hitung nol.",
+      "kunci_pembeda": "Ubah skala panjang ke meter dulu, baru kuadratkan untuk mendapat skala luas ($1\\text{ cm}^2 = (k\\text{ dalam meter})^2\\text{ m}^2$).",
       "visual": {
         "tipe": "svg",
         "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><defs><pattern id='grid' width='20' height='20' patternUnits='userSpaceOnUse'><path d='M 20 0 L 0 0 0 20' fill='none' stroke='#1E293B' stroke-width='0.8'/></pattern></defs><rect x='20' y='20' width='360' height='200' fill='url(#grid)' rx='6'/><text x='32' y='38' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold'>SKALA DENAH 1 : 2.500 (1 cm = 25 m)</text><rect x='45' y='62' width='160' height='120' fill='#34D399' fill-opacity='0.18' stroke='#34D399' stroke-width='2' rx='4'/><text x='125' y='118' fill='#E2E8F0' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Kebun Produksi</text><text x='125' y='136' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>L = 48 cm²</text><line x1='45' y1='194' x2='205' y2='194' stroke='#94A3B8' stroke-width='1.5'/><line x1='45' y1='189' x2='45' y2='199' stroke='#94A3B8' stroke-width='1.5'/><line x1='205' y1='189' x2='205' y2='199' stroke='#94A3B8' stroke-width='1.5'/><text x='125' y='210' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>8 cm</text><line x1='33' y1='62' x2='33' y2='182' stroke='#94A3B8' stroke-width='1.5'/><line x1='28' y1='62' x2='38' y2='62' stroke='#94A3B8' stroke-width='1.5'/><line x1='28' y1='182' x2='38' y2='182' stroke='#94A3B8' stroke-width='1.5'/><text x='26' y='122' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle' transform='rotate(-90 26 122)'>6 cm</text><rect x='255' y='92' width='80' height='60' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2' rx='4'/><text x='295' y='118' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Pabrik</text><text x='295' y='135' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='middle'>L = 12 cm²</text><rect x='235' y='170' width='130' height='36' fill='#0F172A' stroke='#FBBF24' stroke-dasharray='5 4' stroke-width='1.5' rx='6'/><text x='300' y='185' fill='#94A3B8' font-family='sans-serif' font-size='11' text-anchor='middle'>Konversi Luas</text><text x='300' y='200' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>1 cm² = 625 m²</text></svg>",
@@ -169,18 +169,18 @@
       "nomor_variasi": 3,
       "nama_variasi": "Konversi Mata Uang Asing dan Konversi Satuan Majemuk",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Merujuk transaksi valas koperasi pada stimulus utama, tentukan selisih rupiah yang dikeluarkan untuk membeli mesin $\\text{USD } 4.000$ dengan rupiah yang diterima dari penukaran $\\text{EUR } 2.500$.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Penentuan kurs valuta asing selalu dilihat dari sudut pandang bank. Membeli mesin $\\text{USD } 4.000$ berarti koperasi membeli dolar dari bank (gunakan Kurs Jual Rp16.000). Menukarkan $\\text{EUR } 2.500$ ke rupiah berarti koperasi menjual euro ke bank (gunakan Kurs Beli Rp17.200).\n\n**2. Model Matematika (Employing):** Biaya pembelian dolar dirumuskan $B = 4.000 \\times 16.000$, sedangkan penerimaan penjualan euro dirumuskan $T = 2.500 \\times 17.200$. Untuk satuan majemuk seperti kandungan vitamin C ($15\\text{ mg}/250\\text{ mL}$), gunakan perbandingan senilai $\\frac{\\text{Kadar}}{\\text{Takaran}} \\times \\text{Volume Konsumsi}$.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Diperoleh pengeluaran $B = \\text{Rp}64.000.000$ dan pemasukan $T = \\text{Rp}43.000.000$. Selisih transaksi tersebut menghasilkan kekurangan kas sebesar $\\text{Rp}21.000.000$ yang wajib ditutup dari saldo rupiah koperasi. Pastikan seluruh nominal sudah dalam rupiah sebelum melakukan pengurangan.",
-      "kunci_pembeda": "Bank selalu menjual valas pada harga lebih tinggi (Kurs Jual) dan membeli kembali valas dari nasabah pada harga lebih rendah (Kurs Beli).",
+      "stimulus_mini": "Merujuk transaksi valas koperasi pada stimulus utama (kurs USD: beli Rp15.800, jual Rp16.000; kurs EUR: beli Rp17.200, jual Rp17.500), tentukan selisih rupiah yang dikeluarkan untuk membeli mesin $\\text{USD } 4.000$ dengan rupiah yang diterima dari penukaran $\\text{EUR } 2.500$.",
+      "bedah_pola_markdown": "**1. Pahami Situasinya:** Ingat aturan emas valas: lihat dari kacamata bank. Koperasi butuh $\\text{USD } 4.000$ untuk beli mesin, artinya bank *menjual* dolar ke koperasi (pakai Kurs Jual Rp16.000). Sebaliknya, koperasi menukar $\\text{EUR } 2.500$ ke rupiah, artinya bank *membeli* euro tersebut (pakai Kurs Beli Rp17.200).\n\n**2. Susun Persamaan:** Hitung masing-masing transaksi dalam rupiah dulu. Biaya beli dolar adalah $B = 4.000 \\times 16.000$, sedangkan uang rupiah yang masuk dari euro adalah $T = 2.500 \\times 17.200$.\n\n**3. Hitung Cepat & Cek Realita:** Pengeluaran koperasi $B = \\text{Rp}64.000.000$, sementara pemasukan dari euro $T = \\text{Rp}43.000.000$. Selisihnya adalah $\\text{Rp}64.000.000 - \\text{Rp}43.000.000 = \\text{Rp}21.000.000$. Artinya, koperasi masih perlu menambah dana Rp21 juta dari kas rupiahnya untuk melunasi mesin.",
+      "kunci_pembeda": "Bank selalu menjual valas di harga lebih tinggi (Kurs Jual) dan membeli valas dari nasabah di harga lebih rendah (Kurs Beli).",
       "visual": null
     },
     {
       "nomor_variasi": 4,
       "nama_variasi": "Pembagian Keuntungan atau Biaya Patungan Berdasarkan Proporsi Kontribusi dan Durasi",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Berdasarkan data kemitraan pada stimulus utama (Andi Rp200 juta dan Rina Rp300 juta sejak bulan ke-1, serta Dedi Rp300 juta sejak awal bulan ke-5), hitung bagian dividen Pak Dedi jika laba bersih akhir tahun (bulan ke-12) sebesar $\\text{Rp}210.000.000$.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Pembagian dividen tahunan bergantung pada dua faktor sekaligus, yakni besar setoran modal dan durasi bulan modal tersebut aktif selama satu tahun ($12$ bulan). Karena Pak Dedi masuk awal bulan ke-5, masa aktif modalnya adalah $12 - 5 + 1 = 8$ bulan, bukan $7$ bulan.\n\n**2. Model Matematika (Employing):** Hitung bobot kontribusi $(\\text{Modal dalam ratusan juta} \\times \\text{Bulan})$: Andi $= 2 \\times 12 = 24$, Rina $= 3 \\times 12 = 36$, dan Dedi $= 3 \\times 8 = 24$. Sederhanakan perbandingan $24 : 36 : 24$ dengan membagi $12$ menjadi $2 : 3 : 2$ (total $7$ bagian).\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Dividen Pak Dedi adalah $\\frac{2}{7} \\times \\text{Rp}210.000.000 = \\text{Rp}60.000.000$. Meskipun nominal modal Pak Dedi sama besar dengan Bu Rina (Rp300 juta), dividennya lebih kecil Rp30 juta karena keterlambatan waktu penyertaan selama empat bulan.",
-      "kunci_pembeda": "Bobot pembagian dividen berbanding lurus dengan hasil kali modal dan durasi aktif ($\\text{Durasi} = \\text{Bulan Akhir} - \\text{Bulan Awal} + 1$).",
+      "stimulus_mini": "Berdasarkan data kemitraan pada stimulus utama (Andi Rp200 juta dan Rina Rp300 juta sejak awal bulan ke-1, serta Dedi Rp300 juta sejak awal bulan ke-5), hitung bagian dividen Pak Dedi jika laba bersih akhir tahun (bulan ke-12) sebesar $\\text{Rp}210.000.000$.",
+      "bedah_pola_markdown": "**1. Pahami Situasinya:** Laba dibagi secara adil berdasarkan dua hal: besar modal dan berapa bulan modal itu bekerja selama $12$ bulan. Hati-hati menghitung durasi Pak Dedi—karena masuk *awal* bulan ke-5, bulan ke-5 ikut dihitung, jadi lama aktifnya $12 - 5 + 1 = 8$ bulan (bukan $7$ bulan).\n\n**2. Susun Persamaan:** Biar angkanya kecil, nyatakan modal dalam ratusan juta lalu kalikan durasi bulannya. Bobot Andi $= 2 \\times 12 = 24$, Rina $= 3 \\times 12 = 36$, dan Dedi $= 3 \\times 8 = 24$. Sederhanakan rasio $24 : 36 : 24$ dengan membagi $12$ sehingga menjadi $2 : 3 : 2$ (total $7$ bagian).\n\n**3. Hitung Cepat & Cek Realita:** Bagian Pak Dedi adalah $\\frac{2}{7} \\times \\text{Rp}210.000.000 = \\text{Rp}60.000.000$. Meski modal Pak Dedi sama besar dengan Bu Rina (Rp300 juta), dividennya lebih kecil Rp30 juta karena ia baru bergabung empat bulan kemudian.",
+      "kunci_pembeda": "Bobot dividen dihitung dari $\\text{Modal} \\times \\text{Durasi Aktif}$, dengan $\\text{Durasi} = \\text{Bulan Akhir} - \\text{Bulan Awal} + 1$.",
       "visual": null
     },
     {
@@ -188,8 +188,8 @@
       "nama_variasi": "Rasio Roda Gigi, Putaran Mesin, dan Transmisi Mekanis",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Merujuk sistem transmisi konveyor pada stimulus utama (Roda Gigi A = $20$ gigi pada motor $600\\text{ rpm}$, bertautan dengan Roda Gigi B = $50$ gigi, lalu ke Roda Gigi C = $30$ gigi), tentukan kecepatan putar poros konveyor (Roda Gigi C) dalam rpm.",
-      "bedah_pola_markdown": "**1. Terjemahan Cerita (Formulating):** Tiga roda gigi bertautan berurutan dari penggerak A ($20$ gigi, $600\\text{ rpm}$), perantara B ($50$ gigi), hingga poros konveyor C ($30$ gigi). Semakin banyak jumlah gigi pada roda, semakin lambat kecepatan putarnya sehingga berlaku prinsip perbandingan berbalik nilai.\n\n**2. Model Matematika (Employing):** Pada rangkaian roda gigi bersinggungan seri, laju perpindahan gigi per menit selalu sama: $Z_A \\cdot N_A = Z_B \\cdot N_B = Z_C \\cdot N_C$. Roda gigi perantara B berfungsi sebagai *idler gear* yang sekadar membalik arah putaran tanpa mengubah besar kecepatan sudut akhir pada C.\n\n**3. Hitung Taktis & Evaluasi Konteks Nyata (Interpreting & Evaluating):** Substitusi langsung roda pertama dan terakhir: $20 \\times 600 = 30 \\times N_C$, sehingga $N_C = \\frac{12.000}{30} = 400\\text{ rpm}$. Karena Roda Gigi C lebih besar dari A, kecepatan putar turun dari $600\\text{ rpm}$ menjadi $400\\text{ rpm}$ untuk menghasilkan torsi angkut konveyor yang lebih kuat.",
-      "kunci_pembeda": "Pada roda gigi bersinggungan tepi, hasil kali jumlah gigi dan rpm selalu konstan ($Z_1 N_1 = Z_2 N_2$), sedangkan roda gigi perantara tidak mengubah rasio kecepatan.",
+      "bedah_pola_markdown": "**1. Pahami Situasinya:** Tiga roda gigi dipasang berurutan dari A ($20$ gigi, $600\\text{ rpm}$) ke B ($50$ gigi), lalu ke C ($30$ gigi). Makin banyak jumlah gigi sebuah roda, makin lambat putarannya—inilah ciri perbandingan berbalik nilai.\n\n**2. Susun Persamaan:** Pada gir yang giginya saling bertautan seri, jumlah gigi yang lewat tiap menit selalu sama: $Z_A \\cdot N_A = Z_B \\cdot N_B = Z_C \\cdot N_C$. Artinya, roda perantara B (*idler gear*) hanya meneruskan gerak dan membalik arah putaran tanpa mengubah kecepatan akhir di C.\n\n**3. Hitung Cepat & Cek Realita:** Kamu boleh langsung loncat membandingkan roda pertama (A) dan terakhir (C): $20 \\times 600 = 30 \\times N_C$. Bagi kedua ruas dengan $30$, maka $N_C = \\frac{12.000}{30} = 400\\text{ rpm}$. Karena C lebih besar dari A, putaran turun ke $400\\text{ rpm}$ agar tenaga dorong (torsi) konveyor lebih kuat.",
+      "kunci_pembeda": "Pada rangkaian roda gigi bertautan tepi, $Z_1 N_1 = Z_2 N_2$ selalu tetap, dan roda perantara (B) tidak memengaruhi kecepatan roda ujung.",
       "visual": {
         "tipe": "svg",
         "kode": "<svg viewBox='0 0 400 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><line x1='80' y1='115' x2='315' y2='115' stroke='#94A3B8' stroke-dasharray='4 3' stroke-width='1.2'/><circle cx='80' cy='115' r='32' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2' stroke-dasharray='6 3'/><circle cx='80' cy='115' r='24' fill='#0B1120' stroke='#38BDF8' stroke-width='1.5'/><circle cx='80' cy='115' r='4' fill='#38BDF8'/><path d='M 64 95 A 25 25 0 0 1 96 95' fill='none' stroke='#FBBF24' stroke-width='1.8'/><polygon points='96,95 90,91 92,98' fill='#FBBF24'/><circle cx='182' cy='115' r='70' fill='#94A3B8' fill-opacity='0.14' stroke='#94A3B8' stroke-width='2' stroke-dasharray='7 3'/><circle cx='182' cy='115' r='60' fill='#0B1120' stroke='#94A3B8' stroke-width='1.5'/><circle cx='182' cy='115' r='5' fill='#94A3B8'/><path d='M 210 72 A 50 50 0 0 0 154 72' fill='none' stroke='#FBBF24' stroke-width='1.8'/><polygon points='154,72 161,70 158,77' fill='#FBBF24'/><circle cx='298' cy='115' r='46' fill='#34D399' fill-opacity='0.18' stroke='#34D399' stroke-width='2' stroke-dasharray='6 3'/><circle cx='298' cy='115' r='37' fill='#0B1120' stroke='#34D399' stroke-width='1.5'/><circle cx='298' cy='115' r='4' fill='#34D399'/><path d='M 278 88 A 34 34 0 0 1 318 88' fill='none' stroke='#FBBF24' stroke-width='1.8'/><polygon points='318,88 311,85 314,92' fill='#FBBF24'/><text x='80' y='34' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Roda A (Motor)</text><text x='80' y='50' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>20 Gigi</text><text x='80' y='172' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>600 rpm</text><text x='182' y='26' fill='#94A3B8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Roda B (Idler)</text><text x='182' y='41' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>50 Gigi</text><text x='182' y='204' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Pembalik Arah</text><text x='298' y='34' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Roda C (Konveyor)</text><text x='298' y='50' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>30 Gigi</text><text x='298' y='182' fill='#34D399' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>400 rpm</text><text x='200' y='225' fill='#E2E8F0' font-family='sans-serif' font-size='12' text-anchor='middle'>Prinsip Transmisi: Z_A × N_A = Z_B × N_B = Z_C × N_C</text></svg>",
@@ -205,7 +205,7 @@
         3
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Berdasarkan stimulus utama, setelah kadar larutan konsentrat dinaikkan dari $25\\%$ menjadi $40\\%$ dengan menambahkan sari jeruk murni ($100\\%$), seluruh larutan akhir tersebut diencerkan menjadi minuman siap saji dengan perbandingan volume $\\text{konsentrat } 40\\% : \\text{air mineral} = 1 : 4$. Berapa botol kemasan $500\\text{ mL}$ minuman siap saji yang dapat diproduksi dari seluruh larutan tersebut?",
+      "pertanyaan_markdown": "Merujuk unit produksi pada stimulus utama, tersedia $120\\text{ liter}$ larutan konsentrat berkadar $25\\%$ yang dinaikkan kadarnya menjadi $40\\%$ dengan menambahkan sari jeruk murni ($100\\%$). Selanjutnya, seluruh konsentrat $40\\%$ tersebut diencerkan menjadi minuman siap saji dengan perbandingan volume $\\text{konsentrat } 40\\% : \\text{air mineral} = 1 : 4$. Berapa botol kemasan $500\\text{ mL}$ minuman siap saji yang dapat diproduksi dari seluruh larutan tersebut?",
       "opsi_jawaban": [
         "A. 750",
         "B. 960",
@@ -214,7 +214,7 @@
         "E. 3.000"
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "Penambahan sari murni menghasilkan $120 + 30 = 150\\text{ liter}$ konsentrat $40\\%$. Dengan rasio pengenceran $\\text{konsentrat} : \\text{air} = 1 : 4$, total volume minuman siap saji menjadi $(1 + 4) \\times 150 = 750\\text{ liter}$. Jumlah kemasan $500\\text{ mL}$ ($0,5\\text{ L}$) adalah $\\frac{750}{0,5} = 1.500$ botol. Opsi A belum dikonversi ke kemasan $0,5\\text{ L}$, B dan C mengabaikan penambahan $30\\text{ L}$ sari murni atau salah menjumlahkan rasio, sedangkan E memakai takaran $250\\text{ mL}$.",
+      "bedah_cepat_markdown": "Langkah 1, cari volume konsentrat $40\\%$: dari $0,25(120) + x = 0,40(120 + x)$, didapat tambahan sari murni $x = 30\\text{ liter}$, sehingga total konsentrat menjadi $120 + 30 = 150\\text{ liter}$. Langkah 2, hitung volume setelah diencerkan dengan rasio $1 : 4$: totalnya adalah $(1 + 4) = 5$ bagian, maka volume minuman siap saji $= 5 \\times 150 = 750\\text{ liter}$. Langkah 3, bagi dengan ukuran botol $500\\text{ mL}$ ($0,5\\text{ liter}$): $\\frac{750}{0,5} = 1.500$ botol. Opsi A belum dibagi $0,5\\text{ L}$, B dan C lupa menambah $30\\text{ L}$ atau salah rasio, sedangkan E memakai botol $250\\text{ mL}$.",
       "visual": {
         "tipe": "svg",
         "kode": "<svg viewBox='0 0 380 230' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='190' y='30' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Rasio Volume Pengenceran Minuman Siap Saji</text><rect x='34' y='54' width='68' height='92' fill='#FBBF24' fill-opacity='0.22' stroke='#FBBF24' stroke-width='2' rx='6'/><text x='68' y='96' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Konsentrat</text><text x='68' y='113' fill='#FBBF24' font-family='sans-serif' font-size='12' text-anchor='middle'>Kadar 40%</text><text x='68' y='165' fill='#FBBF24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>1 Bagian</text><text x='122' y='105' fill='#E2E8F0' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>+</text><rect x='142' y='54' width='96' height='92' fill='#38BDF8' fill-opacity='0.18' stroke='#38BDF8' stroke-width='2' rx='6'/><line x1='166' y1='54' x2='166' y2='146' stroke='#38BDF8' stroke-dasharray='4 3' stroke-width='1'/><line x1='190' y1='54' x2='190' y2='146' stroke='#38BDF8' stroke-dasharray='4 3' stroke-width='1'/><line x1='214' y1='54' x2='214' y2='146' stroke='#38BDF8' stroke-dasharray='4 3' stroke-width='1'/><text x='190' y='96' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Air Mineral</text><text x='190' y='113' fill='#38BDF8' font-family='sans-serif' font-size='12' text-anchor='middle'>(0% Sari)</text><text x='190' y='165' fill='#38BDF8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>4 Bagian</text><line x1='250' y1='100' x2='276' y2='100' stroke='#94A3B8' stroke-width='2'/><polygon points='278,100 271,96 271,104' fill='#94A3B8'/><rect x='288' y='50' width='64' height='100' fill='#34D399' fill-opacity='0.18' stroke='#34D399' stroke-width='2' rx='10'/><rect x='308' y='40' width='24' height='10' fill='#34D399' rx='2'/><text x='320' y='96' fill='#E2E8F0' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>500 mL</text><text x='320' y='114' fill='#34D399' font-family='sans-serif' font-size='12' text-anchor='middle'>/ botol</text><text x='320' y='168' fill='#FB7185' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>? Botol</text><rect x='40' y='186' width='300' height='26' fill='#0F172A' stroke='#1E293B' stroke-width='1' rx='6'/><text x='190' y='203' fill='#94A3B8' font-family='sans-serif' font-size='12' text-anchor='middle'>Rasio Campuran = Konsentrat (40%) : Air = 1 : 4</text></svg>",
@@ -228,7 +228,7 @@
         4
       ],
       "tipe_soal_utbk": "Pernyataan 1-2-3-4",
-      "pertanyaan_markdown": "Merujuk informasi denah *masterplan* dan pembagian laba tahunan sebesar $\\text{Rp}210.000.000$ pada stimulus utama, perhatikan empat pernyataan berikut:\n\n(1) Luas sebenarnya area kebun produksi adalah $3\\text{ hektare}$.\n(2) Rasio luas sebenarnya antara pabrik pengolahan dan kebun produksi adalah $1 : 4$.\n(3) Selisih dividen yang diterima Bu Rina dan Pak Andi adalah $\\text{Rp}30.000.000$.\n(4) Jika Pak Dedi bergabung sejak awal bulan ke-4 dengan modal tetap, bagian dividennya menjadi $\\text{Rp}75.000.000$.\n\nPernyataan yang benar adalah ....",
+      "pertanyaan_markdown": "Merujuk stimulus utama, diketahui denah *masterplan* berskala $1 : 2.500$ (kebun berukuran $8\\text{ cm} \\times 6\\text{ cm}$ dan pabrik seluas $12\\text{ cm}^2$) serta pembagian laba tahunan sebesar $\\text{Rp}210.000.000$ untuk tiga mitra (Andi Rp200 juta dan Rina Rp300 juta sejak awal bulan ke-1; Dedi Rp300 juta sejak awal bulan ke-5). Perhatikan empat pernyataan berikut:\n\n(1) Luas sebenarnya area kebun produksi adalah $3\\text{ hektare}$.\n(2) Rasio luas sebenarnya antara pabrik pengolahan dan kebun produksi adalah $1 : 4$.\n(3) Selisih dividen yang diterima Bu Rina dan Pak Andi adalah $\\text{Rp}30.000.000$.\n(4) Jika Pak Dedi bergabung sejak awal bulan ke-4 dengan modal tetap, bagian dividennya menjadi $\\text{Rp}75.000.000$.\n\nPernyataan yang benar adalah ....",
       "opsi_jawaban": [
         "A. (1), (2), dan (3) SAJA yang benar.",
         "B. (1) dan (3) SAJA yang benar.",
@@ -237,7 +237,7 @@
         "E. SEMUA pilihan benar."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "(1) Benar: luas kebun $48 \\times 25^2 = 30.000\\text{ m}^2 = 3\\text{ ha}$. (2) Benar: rasio luas riil sama dengan rasio luas denah, yakni $12 : 48 = 1 : 4$. (3) Benar: rasio dividen Andi : Rina : Dedi $= 2 : 3 : 2$, sehingga selisih Rina dan Andi adalah $\\frac{3-2}{7} \\times \\text{Rp}210\\text{ juta} = \\text{Rp}30\\text{ juta}$. (4) Salah: masuk awal bulan ke-4 berarti aktif $9$ bulan, menghasilkan bobot $2.400 : 3.600 : 2.700$ sehingga dividen Dedi $\\frac{9}{29} \\times \\text{Rp}210\\text{ juta} \\neq \\text{Rp}75\\text{ juta}$. Jawaban: A.",
+      "bedah_cepat_markdown": "Cek satu per satu secara efisien: **(1) Benar**, karena $1\\text{ cm} = 25\\text{ m} \\implies 1\\text{ cm}^2 = 625\\text{ m}^2$, sehingga luas kebun $= 48 \\times 625 = 30.000\\text{ m}^2 = 3\\text{ ha}$. **(2) Benar**, rasio luas asli sama dengan rasio luas denah, yaitu $12 : 48 = 1 : 4$. **(3) Benar**, rasio bobot Andi : Rina : Dedi $= 24 : 36 : 24 = 2 : 3 : 2$ (total $7$ bagian), maka selisih Rina dan Andi $= \\frac{3 - 2}{7} \\times \\text{Rp}210\\text{ jt} = \\text{Rp}30\\text{ jt}$. **(4) Salah**, masuk awal bulan ke-4 artinya aktif $9$ bulan, sehingga rasio bobot menjadi $24 : 36 : 27 = 8 : 12 : 9$ (total $29$). Bagian Dedi adalah $\\frac{9}{29} \\times \\text{Rp}210\\text{ jt}$. Tanpa menghitung desimal, kita tahu $\\frac{9}{29}$ lebih kecil dari $\\frac{1}{3}$, jadi hasilnya pasti di bawah $\\text{Rp}70\\text{ jt}$ (tidak mungkin $\\text{Rp}75\\text{ jt}$). Jawaban: **A**.",
       "visual": null
     },
     {
@@ -247,10 +247,10 @@
         5
       ],
       "tipe_soal_utbk": "Isian Singkat",
-      "pertanyaan_markdown": "Sebuah konveyor pengisian botol pada stimulus utama memindahkan $1$ botol kemasan $500\\text{ mL}$ minuman siap saji setiap $2$ putaran penuh poros Roda Gigi C. Jika Roda Gigi C diganti menjadi roda gigi berjumlah $40$ gigi sementara kecepatan motor pada Roda Gigi A tetap $600\\text{ rpm}$, berapa miligram ($\\text{mg}$) total kandungan vitamin C dari seluruh minuman yang dipindahkan konveyor tersebut dalam waktu $1$ menit? *(Tuliskan bilangan bulat saja tanpa titik maupun satuan)*.",
+      "pertanyaan_markdown": "Pada lini pengemasan di stimulus utama, konveyor memindahkan $1$ botol kemasan $500\\text{ mL}$ minuman siap saji setiap $2$ putaran penuh poros Roda Gigi C. Diketahui minuman siap saji mengandung $15\\text{ mg}$ vitamin C per $250\\text{ mL}$. Jika Roda Gigi C diganti menjadi roda gigi bergigi $40$, sementara Roda Gigi A tetap bergigi $20$ dengan kecepatan motor $600\\text{ rpm}$, berapa miligram ($\\text{mg}$) total kandungan vitamin C dari seluruh minuman yang dipindahkan konveyor dalam waktu $1$ menit? *(Tuliskan bilangan bulat saja tanpa titik maupun satuan)*.",
       "opsi_jawaban": [],
       "kunci_jawaban": "4500",
-      "bedah_cepat_markdown": "Dengan Roda Gigi C bergigi $40$, kecepatan putar poros konveyor dihitung via perbandingan berbalik nilai: $Z_A \\cdot N_A = Z_C \\cdot N_C \\implies 20 \\times 600 = 40 \\times N_C$, diperoleh $N_C = 300\\text{ rpm}$. Karena $1$ botol bergerak setiap $2$ putaran, dalam $1$ menit konveyor memindahkan $\\frac{300}{2} = 150$ botol kemasan $500\\text{ mL}$. Tiap $500\\text{ mL}$ mengandung $2 \\times 15\\text{ mg} = 30\\text{ mg}$ vitamin C, sehingga totalnya $150 \\times 30 = 4.500\\text{ mg}$.",
+      "bedah_cepat_markdown": "Kita kerjakan bertahap dari gir ke vitamin C. Pertama, cari kecepatan putar Roda Gigi C baru dengan perbandingan berbalik nilai: $Z_A \\cdot N_A = Z_C \\cdot N_C \\implies 20 \\times 600 = 40 \\times N_C$, didapat $N_C = 300\\text{ rpm}$ ($300$ putaran per menit). Kedua, karena $1$ botol bergerak setiap $2$ putaran, dalam $1$ menit konveyor memindahkan $\\frac{300}{2} = 150$ botol ukuran $500\\text{ mL}$. Ketiga, hitung vitamin C per botol: tiap $250\\text{ mL}$ berisi $15\\text{ mg}$, berarti tiap botol $500\\text{ mL}$ berisi $2 \\times 15 = 30\\text{ mg}$. Jadi, total vitamin C dalam $1$ menit adalah $150 \\times 30 = 4.500\\text{ mg}$.",
       "visual": null
     }
   ]

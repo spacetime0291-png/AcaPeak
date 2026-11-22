@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Diketahui $x$ adalah bilangan bulat dan $x^2$ merupakan kelipatan $4$. Apakah $x$ pasti merupakan kelipatan $4$?",
+      "pertanyaan_pemantik": "Jika $x$ bilangan bulat dan $x^2$ adalah kelipatan $4$, apakah $x$ pasti kelipatan $4$?",
       "opsi_cepat": [
         "Pasti kelipatan 4",
         "Belum tentu (bisa kelipatan 2 saja)"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Jika $x = 2$, maka $x^2 = 4$ (kelipatan $4$), padahal $2$ bukan kelipatan $4$. Operasi kuadrat menggandakan pangkat setiap faktor primanya."
+      "penjelasan_kilat": "Coba uji $x = 2$. Hasilnya $x^2 = 4$ (kelipatan $4$), padahal $2$ bukan kelipatan $4$. Menguadratkan bilangan otomatis menggandakan pangkat faktor primanya."
     },
-    "konsep_inti_markdown": "- **Paritas:** $\\text{Ganjil} \\pm \\text{Ganjil} = \\text{Genap}$; $\\text{Genap} \\times \\text{Bulat} = \\text{Genap}$.\n- **Faktorisasi Prima:** Jika $N = p_1^{a} \\cdot p_2^{b}$, banyak faktor positif $= (a+1)(b+1)$.\n- **KPK & FPB:** $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\cdot b$.\n- **Modulo Dasar:** Sisa bagi $(a \\cdot b) \\bmod m = ((a \\bmod m)(b \\bmod m)) \\bmod m$.\n- **Desimal Berulang:** $0,\\overline{ab} = \\frac{ab}{99}$.",
+    "konsep_inti_markdown": "- **Ganjil-Genap (Paritas):** $\\text{Ganjil} \\pm \\text{Ganjil} = \\text{Genap}$; $\\text{Genap} \\times \\text{Bulat} = \\text{Genap}$.\n- **Banyak Faktor Positif:** Jika $N = p_1^{a} \\cdot p_2^{b}$, total faktor positifnya $= (a+1)(b+1)$.\n- **KPK & FPB:** $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\cdot b$ (khusus untuk dua bilangan positif).\n- **Sisa Bagi (Modulo):** Sisa $(a \\cdot b) \\div m$ sama dengan sisa dari $(\\text{sisa } a \\times \\text{sisa } b) \\div m$.\n- **Desimal Berulang:** $0,\\overline{ab} = \\frac{\\overline{ab}}{99}$ (penyebutnya angka $9$ sebanyak jumlah digit yang berulang).",
     "radar_jebakan_utbk": [
-      "Menganggap angka $1$ sebagai bilangan prima dan $0$ sebagai bilangan positif (padahal $2$ adalah prima terkecil dan $0$ bersifat netral).",
-      "Lupa menguji bilangan negatif, pecahan, atau nol pada soal Kecukupan Data dan Kuantitas P vs Q ketika syarat hanya menyebut bilangan real atau bulat."
+      "Mengira $1$ adalah bilangan prima dan $0$ adalah bilangan positif. Faktanya, prima terkecil itu $2$ dan $0$ bersifat netral.",
+      "Lupa menguji bilangan negatif, pecahan ($0 < x < 1$), atau nol pada soal Kecukupan Data dan P vs Q saat syaratnya cuma menyebut bilangan real atau bulat."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Lengkap Sifat Bilangan Bulat, Prima, KPK, FPB, dan Pecahan",
-      "subjudul_ringkas": "Panduan komprehensif sifat bilangan, keterbagian, faktorisasi, hingga representasi digit untuk soal Pengetahuan Kuantitatif.",
+      "subjudul_ringkas": "Ringkasan sifat bilangan, aturan habis dibagi, faktorisasi prima, hingga trik digit untuk soal Pengetahuan Kuantitatif.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -35,106 +35,106 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Paritas, Tanda Aljabar, dan Keterbagian",
-          "ringkasan_kelompok": "Aturan operasi ganjil-genap, tanda pangkat, syarat habis dibagi, dan pola sisa pembagian.",
+          "nama_kelompok": "Ganjil-Genap, Tanda Pangkat, dan Aturan Habis Dibagi",
+          "ringkasan_kelompok": "Aturan cepat operasi ganjil-genap, tanda positif-negatif pada pangkat, dan pola sisa pembagian.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Operasi Penjumlahan dan Perkalian Paritas",
-              "penjelasan_singkat": "Penjumlahan dua paritas sama menghasilkan genap; perkalian menghasilkan genap jika minimal satu faktornya genap ($a, b \\in \\mathbb{Z}$).",
-              "contoh_penerapan": "Jika $n$ ganjil, maka $3n^2 + 5$ bernilai **genap** karena ganjil ditambah ganjil menghasilkan **bilangan genap**.",
-              "jebakan_atau_catatan": "Angka $0$ adalah **bilangan genap**, sedangkan bilangan ganjil dibagi ganjil belum tentu bulat.",
+              "judul_poin": "Penjumlahan & Perkalian Ganjil-Genap",
+              "penjelasan_singkat": "Menjumlahkan dua bilangan sejenis (sama-sama ganjil atau genap) hasilnya genap. Pada perkalian, cukup ada satu angka genap agar hasilnya pasti genap.",
+              "contoh_penerapan": "Jika $n$ ganjil, maka $3n^2 + 5$ pasti **genap** karena ganjil ditambah ganjil menghasilkan **genap**.",
+              "jebakan_atau_catatan": "Ingat, $0$ itu **bilangan genap**. Selain itu, ganjil dibagi ganjil belum tentu menghasilkan bilangan bulat.",
               "visual": null
             },
             {
-              "judul_poin": "Sifat Tanda Positif-Negatif pada Pangkat",
-              "penjelasan_singkat": "Bilangan negatif berpangkat genap bernilai positif ($a^{2k} > 0$ untuk $a \\neq 0$), sedangkan pangkat ganjil mempertahankan tanda asal.",
-              "contoh_penerapan": "Jika $x^3 y^4 < 0$ dengan $y \\neq 0$, maka $x$ pasti **negatif** karena $y^4$ selalu **positif**.",
-              "jebakan_atau_catatan": "Waspadai kasus $y = 0$ pada pertidaksamaan non-ketat ($\\le$ atau $\\ge$) karena membuat hasil nol.",
+              "judul_poin": "Tanda Positif-Negatif pada Pangkat",
+              "penjelasan_singkat": "Pangkat genap selalu mengubah bilangan tak nol jadi positif ($a^{2k} > 0$). Sebaliknya, pangkat ganjil mempertahankan tanda aslinya.",
+              "contoh_penerapan": "Jika $x^3 y^4 < 0$ dengan $y \\neq 0$, maka $x$ wajib **negatif** karena $y^4$ sudah pasti **positif**.",
+              "jebakan_atau_catatan": "Hati-hati dengan tanda $\\le$ atau $\\ge$. Selalu cek kemungkinan $y = 0$ karena bisa membuat seluruh hasil jadi nol.",
               "visual": null
             },
             {
-              "judul_poin": "Aturan Keterbagian Angka Kunci (3, 4, 8, 9, 11)",
-              "penjelasan_singkat": "Habis dibagi $3$ atau $9$ jika jumlah digitnya kelipatan $3$ atau $9$; dibagi $4$ jika dua digit terakhir kelipatan $4$.",
-              "contoh_penerapan": "Bilangan $7128$ habis dibagi $9$ karena $7+1+2+8 = 18$ (**kelipatan 9**) dan dibagi $4$ karena **$28$ habis dibagi 4**.",
+              "judul_poin": "Aturan Habis Dibagi Angka Kunci (3, 4, 8, 9, 11)",
+              "penjelasan_singkat": "Habis dibagi $3$ atau $9$ jika jumlah digitnya kelipatan $3$ atau $9$. Habis dibagi $4$ jika dua digit terakhirnya kelipatan $4$.",
+              "contoh_penerapan": "Angka $7128$ habis dibagi $9$ karena $7+1+2+8 = 18$ (**kelipatan 9**), dan habis dibagi $4$ karena **$28$ habis dibagi 4**.",
               "jebakan_atau_catatan": "Syarat habis dibagi $11$: selisih jumlah digit posisi ganjil dan genap harus **$0$ atau kelipatan $11$**.",
               "visual": null
             },
             {
-              "judul_poin": "Sisa Pembagian (Modulo) dan Pola Digit Satuan",
-              "penjelasan_singkat": "Sisa perkalian atau pangkat sama dengan sisa hasil operasi masing-masing sisanya: $a^n \\bmod m = (a \\bmod m)^n \\bmod m$.",
-              "contoh_penerapan": "Digit satuan $7^{2026}$ dicari via sisa $2026 \\div 4$ yaitu **$2$**, sehingga satuannya sama dengan $7^2 = 49$ yaitu **$9$**.",
-              "jebakan_atau_catatan": "Jika sisa pembagian pangkat dengan $4$ adalah **$0$**, gunakan pangkat ke-$4$ (bukan pangkat $0$).",
+              "judul_poin": "Sisa Pembagian (Modulo) & Pola Digit Satuan",
+              "penjelasan_singkat": "Untuk mencari sisa perkalian atau pangkat, kamu cukup mengoperasikan sisa masing-masing angkanya saja: $a^n \\bmod m = (a \\bmod m)^n \\bmod m$.",
+              "contoh_penerapan": "Digit satuan $7^{2026}$ dicari dari sisa $2026 \\div 4$ yaitu **$2$**. Jadi satuannya sama dengan $7^2 = 49$, yaitu **$9$**.",
+              "jebakan_atau_catatan": "Jika pangkat habis dibagi $4$ (sisa **$0$**), pakai pangkat ke-$4$, jangan pakai pangkat $0$.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Bilangan Prima, Faktorisasi, KPK, dan FPB",
-          "ringkasan_kelompok": "Karakteristik bilangan prima, penghitungan jumlah faktor pembagi, dan relasi KPK-FPB.",
+          "ringkasan_kelompok": "Ciri khas bilangan prima, cara cepat hitung banyak faktor, dan hubungan KPK-FPB.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Sifat Dasar dan Paritas Bilangan Prima",
-              "penjelasan_singkat": "Bilangan prima memiliki tepat dua faktor positif ($1$ dan dirinya sendiri); hanya $2$ yang merupakan prima genap.",
-              "contoh_penerapan": "Jika jumlah dua prima $p + q = 25$ (ganjil), salah satunya wajib **$2$**, sehingga pasangannya **$23$**.",
-              "jebakan_atau_catatan": "Angka **$1$ bukan bilangan prima** karena hanya memiliki satu faktor positif; semua prima selalu positif.",
+              "judul_poin": "Sifat Dasar & Ganjil-Genap Bilangan Prima",
+              "penjelasan_singkat": "Bilangan prima hanya punya tepat dua faktor positif ($1$ dan dirinya sendiri). Angka $2$ adalah satu-satunya bilangan prima yang genap.",
+              "contoh_penerapan": "Jika jumlah dua bilangan prima $p + q = 25$ (ganjil), salah satunya pasti **$2$**, sehingga pasangannya **$23$**.",
+              "jebakan_atau_catatan": "Angka **$1$ bukan bilangan prima** karena faktornya cuma satu. Semua bilangan prima selalu bernilai positif.",
               "visual": null
             },
             {
-              "judul_poin": "Banyaknya Faktor Positif dari Faktorisasi Prima",
-              "penjelasan_singkat": "Untuk $N = p_1^{a} \\times p_2^{b} \\times p_3^{c}$ dengan $p_i$ prima berbeda, banyak faktor positifnya adalah $(a+1)(b+1)(c+1)$.",
-              "contoh_penerapan": "Faktorisasi $72 = 2^3 \\times 3^2$, maka banyak faktor positifnya adalah $(3+1)(2+1) = 4 \\times 3 =$ **$12$ faktor**.",
-              "jebakan_atau_catatan": "Pastikan basis sudah **bilangan prima**; jika ditanya seluruh faktor bulat (positif dan negatif), kalikan hasil dengan **$2$**.",
+              "judul_poin": "Menghitung Banyak Faktor Positif",
+              "penjelasan_singkat": "Ubah bilangan ke faktorisasi prima $N = p_1^{a} \\times p_2^{b} \\times p_3^{c}$. Banyak faktor positifnya adalah $(a+1)(b+1)(c+1)$.",
+              "contoh_penerapan": "Karena $72 = 2^3 \\times 3^2$, banyak faktor positifnya adalah $(3+1)(2+1) = 4 \\times 3 =$ **$12$ faktor**.",
+              "jebakan_atau_catatan": "Pastikan semua basis sudah **bilangan prima**. Jika soal menanyakan seluruh faktor bulat (positif dan negatif), kalikan hasilnya dengan **$2$**.",
               "visual": null
             },
             {
               "judul_poin": "Hubungan Hasil Kali KPK dan FPB",
-              "penjelasan_singkat": "Untuk dua bilangan bulat positif $a$ dan $b$, berlaku $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\times b$.",
+              "penjelasan_singkat": "Untuk dua bilangan bulat positif $a$ dan $b$, hasil kali KPK dan FPB selalu sama dengan hasil kali kedua bilangan itu: $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\times b$.",
               "contoh_penerapan": "Jika $\\text{FPB}(a, 18) = 6$ dan $\\text{KPK}(a, 18) = 90$, maka $a = \\frac{6 \\times 90}{18} =$ **$30$**.",
-              "jebakan_atau_catatan": "Rumus ini **hanya berlaku untuk dua bilangan**, tidak berlaku langsung untuk tiga bilangan sekaligus.",
+              "jebakan_atau_catatan": "Rumus ini **hanya berlaku untuk dua bilangan**. Jangan pernah dipakai langsung untuk tiga bilangan sekaligus.",
               "visual": null
             },
             {
-              "judul_poin": "KPK dan FPB Bilangan Koprima atau Kelipatan",
-              "penjelasan_singkat": "Jika $\\text{FPB}(a,b) = 1$ (koprima), maka $\\text{KPK}(a,b) = a \\times b$; jika $b$ kelipatan $a$, $\\text{FPB} = a$ dan $\\text{KPK} = b$.",
-              "contoh_penerapan": "Dua bilangan berurutan $14$ dan $15$ selalu koprima, sehingga $\\text{FPB} =$ **$1$** dan $\\text{KPK} = 14 \\times 15 =$ **$210$**.",
-              "jebakan_atau_catatan": "Bilangan koprima **tidak harus bilangan prima** (contoh $8$ dan $9$ koprima karena $\\text{FPB} = 1$).",
+              "judul_poin": "KPK & FPB Bilangan Saling Prima (Koprima)",
+              "penjelasan_singkat": "Jika $\\text{FPB}(a,b) = 1$ (saling prima), maka $\\text{KPK}(a,b) = a \\times b$. Jika $b$ kelipatan $a$, langsung saja $\\text{FPB} = a$ dan $\\text{KPK} = b$.",
+              "contoh_penerapan": "Dua bilangan berurutan seperti $14$ dan $15$ pasti saling prima. Jadi $\\text{FPB} =$ **$1$** dan $\\text{KPK} = 14 \\times 15 =$ **$210$**.",
+              "jebakan_atau_catatan": "Saling prima **tidak harus bilangan prima**. Contohnya $8$ dan $9$ saling prima karena $\\text{FPB}$-nya $1$.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Pecahan, Desimal Berulang, dan Struktur Digit",
-          "ringkasan_kelompok": "Konversi desimal berulang, perbandingan pada garis bilangan, serta pemodelan digit.",
+          "ringkasan_kelompok": "Cara mengubah desimal berulang ke pecahan, urutan pecahan di garis bilangan, dan pemodelan digit.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Konversi Bilangan Desimal Berulang ke Pecahan",
-              "penjelasan_singkat": "Desimal berulang murni dengan $n$ digit berulang diubah menjadi pecahan berpenyebut angka $9$ sebanyak $n$ kali ($0,\\overline{ab} = \\frac{ab}{99}$).",
-              "contoh_penerapan": "Nilai $0,363636\\dots = 0,\\overline{36} = \\frac{36}{99}$, disederhanakan dengan membagi $9$ menjadi **$\\frac{4}{11}$**.",
-              "jebakan_atau_catatan": "Jika ada digit tak berulang di depan seperti $0,1\\overline{6}$, hitung $\\frac{16 - 1}{90} = \\frac{15}{90} =$ **$\\frac{1}{6}$**.",
+              "judul_poin": "Mengubah Desimal Berulang ke Pecahan",
+              "penjelasan_singkat": "Desimal berulang murni dengan $n$ digit berulang langsung diubah menjadi pecahan berpenyebut angka $9$ sebanyak $n$ kali ($0,\\overline{ab} = \\frac{\\overline{ab}}{99}$).",
+              "contoh_penerapan": "Nilai $0,363636\\dots = 0,\\overline{36} = \\frac{36}{99}$. Sederhanakan dengan membagi $9$, hasilnya **$\\frac{4}{11}$**.",
+              "jebakan_atau_catatan": "Jika ada digit yang tidak ikut berulang seperti $0,1\\overline{6}$, hitung $\\frac{16 - 1}{90} = \\frac{15}{90} =$ **$\\frac{1}{6}$**.",
               "visual": null
             },
             {
-              "judul_poin": "Urutan Bilangan Pecahan pada Interval (0, 1)",
-              "penjelasan_singkat": "Untuk pecahan murni positif $0 < x < 1$, pemangkatan memperkecil nilai ($x^2 < x$) sedangkan penarikan akar memperbesar ($\\sqrt{x} > x$).",
-              "contoh_penerapan": "Jika $x = \\frac{1}{4}$, maka urutan dari terkecil adalah $x^2 = \\frac{1}{16} < x = \\frac{1}{4} <$ **$\\sqrt{x} = \\frac{1}{2}$**.",
-              "jebakan_atau_catatan": "Jangan mengasumsikan $x^2 > x$; selalu uji domain **$0 < x < 1$** dan **$-1 < x < 0$** pada soal Kecukupan Data.",
+              "judul_poin": "Urutan Pecahan di Antara 0 dan 1",
+              "penjelasan_singkat": "Untuk pecahan $0 < x < 1$, sifatnya terbalik dari bilangan bulat: dipangkatkan makin kecil ($x^2 < x$), diakarkan makin besar ($\\sqrt{x} > x$).",
+              "contoh_penerapan": "Ambil $x = \\frac{1}{4}$. Urutannya dari terkecil adalah $x^2 = \\frac{1}{16} < x = \\frac{1}{4} <$ **$\\sqrt{x} = \\frac{1}{2}$**.",
+              "jebakan_atau_catatan": "Jangan langsung berasumsi $x^2 > x$. Selalu uji angka di rentang **$0 < x < 1$** dan **$-1 < x < 0$** saat mengerjakan Kecukupan Data.",
               "visual": null
             },
             {
-              "judul_poin": "Pemodelan Aljabar Bilangan Bulat Berurutan",
-              "penjelasan_singkat": "Tiga bilangan bulat berurutan dimodelkan sebagai $n-1, n, n+1$; tiga bilangan genap atau ganjil berurutan sebagai $n-2, n, n+2$.",
-              "contoh_penerapan": "Jumlah $3$ ganjil berurutan adalah $57$, maka $(n-2)+n+(n+2) = 3n = 57 \\rightarrow$ nilai tengah **$n = 19$**.",
-              "jebakan_atau_catatan": "Gunakan bentuk simetris ($n-1, n, n+1$) agar konstanta **saling menghilangkan** saat dijumlahkan sehingga lebih cepat.",
+              "judul_poin": "Pemodelan Bilangan Bulat Berurutan",
+              "penjelasan_singkat": "Misalkan tiga bilangan bulat berurutan sebagai $n-1, n, n+1$. Untuk tiga bilangan genap atau ganjil berurutan, gunakan $n-2, n, n+2$.",
+              "contoh_penerapan": "Jumlah $3$ bilangan ganjil berurutan adalah $57$. Maka $(n-2)+n+(n+2) = 3n = 57 \\rightarrow$ nilai tengah **$n = 19$**.",
+              "jebakan_atau_catatan": "Bentuk simetris ($n-1, n, n+1$) membuat angkanya **saling mencoret** saat dijumlahkan. Hitungan jadi jauh lebih cepat.",
               "visual": null
             },
             {
-              "judul_poin": "Representasi Nilai Tempat Digit Bilangan",
-              "penjelasan_singkat": "Bilangan dua digit $\\overline{ab}$ bernilai $10a + b$, dan tiga digit $\\overline{abc}$ bernilai $100a + 10b + c$ ($1 \\le a \\le 9$).",
+              "judul_poin": "Bentuk Aljabar Nilai Tempat Digit",
+              "penjelasan_singkat": "Bilangan dua digit $\\overline{ab}$ bernilai $10a + b$. Bilangan tiga digit $\\overline{abc}$ bernilai $100a + 10b + c$ dengan syarat $1 \\le a \\le 9$.",
               "contoh_penerapan": "Selisih bilangan dua digit $\\overline{ab}$ dengan kebalikannya $\\overline{ba}$ adalah $(10a+b) - (10b+a) =$ **$9(a-b)$**.",
-              "jebakan_atau_catatan": "Dalam aljabar, $\\overline{ab}$ berarti digit puluhan $a$ dan satuan $b$, **bukan perkalian $a \\times b$**.",
+              "jebakan_atau_catatan": "Hati-hati, notasi $\\overline{ab}$ artinya digit puluhan $a$ dan satuan $b$, **bukan perkalian $a \\times b$**.",
               "visual": null
             }
           ]
@@ -145,29 +145,29 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Sifat Paritas (Ganjil-Genap) dan Tanda Positif-Negatif pada Operasi Aljabar",
+      "nama_variasi": "Sifat Ganjil-Genap dan Tanda Positif-Negatif pada Operasi Aljabar",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Jika $a$ dan $b$ adalah bilangan bulat sehingga $3a + 4b = 25$, tentukan paritas dari $a^2 + 2b + 1$.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nAnalisis paritas tiap suku pada persamaan $3a + 4b = 25$. Karena $4b = 2(2b)$ selalu bernilai genap untuk setiap $b$ bulat, dan hasil penjumlahan bernilai ganjil ($25$), maka suku $3a$ wajib ganjil. Perkalian bilangan ganjil ($3$) dengan $a$ menghasilkan ganjil hanya jika $a$ adalah bilangan ganjil. Selanjutnya, substitusikan sifat paritas $a$ ke bentuk yang ditanyakan: $a^2$ (ganjil $\\times$ ganjil = ganjil) ditambah $2b$ (selalu genap) menghasilkan bilangan ganjil. Penambahan konstanta $1$ (ganjil) mengubah hasil akhir menjadi genap.\n\n**(2) Jalur Taktis UTBK**\nGunakan substitusi angka bulat paling sederhana yang memenuhi persamaan awal. Pilih $b = 1$, maka $3a + 4(1) = 25 \\Rightarrow 3a = 21 \\Rightarrow a = 7$ (terbukti $a$ ganjil). Langsung masukkan $a = 7$ dan $b = 1$ ke target: $7^2 + 2(1) + 1 = 49 + 2 + 1 = 52$, yang merupakan bilangan **genap**.",
-      "kunci_pembeda": "Fokus pada koefisien genap yang otomatis menetralkan paritas variabelnya, lalu uji dengan bilangan bulat terkecil.",
+      "stimulus_mini": "Jika $a$ dan $b$ adalah bilangan bulat sehingga $3a + 4b = 25$, tentukan apakah $a^2 + 2b + 1$ bernilai ganjil atau genap.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nCek sifat ganjil-genap dari persamaan $3a + 4b = 25$. Suku $4b$ pasti **genap** apa pun nilai bulat $b$. Karena hasil akhirnya $25$ (ganjil), maka $3a$ wajib **ganjil**. Perkalian $3 \\times a$ baru bisa ganjil kalau $a$ juga **ganjil**. Sekarang masukkan sifat ini ke target: $a^2$ (ganjil $\\times$ ganjil = ganjil) ditambah $2b$ (pasti genap) menghasilkan ganjil. Terakhir, ditambah $1$ (ganjil), maka hasil akhirnya berubah jadi **genap**.\n\n**(2) Jalur Taktis UTBK**\nJangan terlalu lama berteori—langsung pilih angka bulat terkecil yang memenuhi persamaan! Coba $b = 1$, maka $3a + 4(1) = 25 \\Rightarrow 3a = 21 \\Rightarrow a = 7$. Langsung masukkan $a = 7$ dan $b = 1$ ke target: $7^2 + 2(1) + 1 = 49 + 2 + 1 = 52$. Karena $52$ genap, jawabannya pasti **genap**.",
+      "kunci_pembeda": "Perhatikan koefisien genap yang otomatis membuat sukunya genap, lalu uji cepat dengan substitusi angka bulat terkecil.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Keterbagian (Divisibility Rules), Sisa Pembagian (Modulo Dasar), dan Digit Satuan Berpola",
+      "nama_variasi": "Aturan Habis Dibagi, Sisa Pembagian (Modulo), dan Pola Digit Satuan",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Tentukan digit satuan dari hasil penjumlahan $3^{2026} + 7^{2025}$.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nDigit satuan suatu bilangan bulat identik dengan sisa pembagian bilangan tersebut terhadap $10$ (modulo $10$). Perhatikan pola siklus digit satuan perpangkatan basis $3$: $3^1=3$, $3^2=9$, $3^3=27$ (satuan $7$), $3^4=81$ (satuan $1$), dan berulang setiap $4$ pangkat. Pola siklus basis $7$ juga memiliki periode $4$, yakni $7, 9, 3, 1$. Bagi masing-masing pangkat dengan $4$: $2026 = 4(506) + 2$ bersisa $2$, sehingga satuan $3^{2026}$ sama dengan $3^2 = 9$. Sementara $2025 = 4(506) + 1$ bersisa $1$, sehingga satuan $7^{2025}$ sama dengan $7^1 = 7$. Jumlahkan satuannya: $9 + 7 = 16$, berakhiran digit $6$.\n\n**(2) Jalur Taktis UTBK**\nUntuk pembagi $4$, cukup cek **dua digit terakhir** pangkatnya saja. Pangkat $26 \\div 4$ sisa $2 \\rightarrow 3^2 = 9$; pangkat $25 \\div 4$ sisa $1 \\rightarrow 7^1 = 7$. Jumlahkan langsung $9 + 7 = 16$, ambil digit terakhir yaitu **6**.",
-      "kunci_pembeda": "Gunakan aturan keterbagian $4$ (cek 2 digit akhir) untuk menentukan posisi sisa pada siklus digit satuan berperiode $4$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nKita tidak mungkin menghitung pangkat ribuan secara manual, jadi cari pola pengulangan digit satuannya. Untuk basis $3$, satuannya berulang setiap $4$ langkah: $3^1=3, 3^2=9, 3^3=27$ (satuan $7$), $3^4=81$ (satuan $1$). Pola basis $7$ juga berulang setiap $4$ langkah: $7, 9, 3, 1$. Bagi pangkatnya dengan $4$: $2026 = 4(506) + 2$ bersisa $2$, jadi satuan $3^{2026}$ sama dengan $3^2 = 9$. Sementara $2025 = 4(506) + 1$ bersisa $1$, jadi satuan $7^{2025}$ sama dengan $7^1 = 7$. Jumlahkan satuannya: $9 + 7 = 16$, sehingga digit satuannya adalah $6$.\n\n**(2) Jalur Taktis UTBK**\nUntuk mencari sisa bagi $4$, cukup lihat **dua digit terakhir** pangkatnya saja. Pangkat $26 \\div 4$ sisa $2 \\rightarrow 3^2 = 9$. Pangkat $25 \\div 4$ sisa $1 \\rightarrow 7^1 = 7$. Jumlahkan langsung $9 + 7 = 16$, ambil angka belakangnya yaitu **6**.",
+      "kunci_pembeda": "Cukup bagi dua digit terakhir pangkat dengan $4$ untuk menemukan posisi digit satuan pada siklus berperiode $4$.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Sifat Bilangan Prima, Faktorisasi Prima, dan Banyaknya Faktor Positif Suatu Bilangan",
+      "nama_variasi": "Bilangan Prima, Faktorisasi Prima, dan Banyaknya Faktor Positif",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Berapa banyak faktor positif dari bilangan $360$ yang merupakan kelipatan $6$?",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUraikan $360$ ke dalam bentuk faktorisasi prima menggunakan pohon faktor: $360 = 36 \\times 10 = (2^2 \\times 3^2) \\times (2 \\times 5) = 2^3 \\times 3^2 \\times 5^1$. Setiap faktor positif dari $360$ memiliki bentuk umum $2^a \\times 3^b \\times 5^c$ dengan $0 \\le a \\le 3$, $0 \\le b \\le 2$, dan $0 \\le c \\le 1$. Agar faktor tersebut merupakan kelipatan $6 = 2^1 \\times 3^1$, nilai pangkat minimal untuk basis $2$ dan $3$ wajib bernilai $1$. Dengan demikian, pilihan nilai $a \\in \\{1, 2, 3\\}$ ($3$ cara), $b \\in \\{1, 2\\}$ ($2$ cara), dan $c \\in \\{0, 1\\}$ ($2$ cara). Total faktor kelipatan $6$ adalah $3 \\times 2 \\times 2 = 12$.\n\n**(2) Jalur Taktis UTBK**\nBagi langsung bilangan target dengan syarat kelipatannya: $360 \\div 6 = 60$. Cari banyaknya faktor positif dari hasil baginya: $60 = 2^2 \\times 3^1 \\times 5^1$. Kalikan seluruh (pangkat $+ 1$): $(2+1)(1+1)(1+1) = 3 \\times 2 \\times 2 = \\mathbf{12}$.",
-      "kunci_pembeda": "Untuk menghitung banyak faktor kelipatan $k$, bagi bilangan awal dengan $k$ terlebih dahulu lalu hitung total faktor hasil baginya.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUbah dulu $360$ menjadi faktorisasi prima: $360 = 36 \\times 10 = (2^2 \\times 3^2) \\times (2 \\times 5) = 2^3 \\times 3^2 \\times 5^1$. Setiap faktor positif $360$ berbentuk $2^a \\times 3^b \\times 5^c$. Karena kita hanya mencari kelipatan $6 = 2^1 \\times 3^1$, maka pangkat $2$ dan $3$ minimal harus $1$. Artinya, pilihan $a \\in \\{1, 2, 3\\}$ ($3$ pilihan), $b \\in \\{1, 2\\}$ ($2$ pilihan), dan $c \\in \\{0, 1\\}$ ($2$ pilihan). Kalikan semua pilihan: $3 \\times 2 \\times 2 = 12$.\n\n**(2) Jalur Taktis UTBK**\nLangsung bagi bilangan awal dengan syarat kelipatannya: $360 \\div 6 = 60$. Setelah itu, hitung saja total faktor positif dari $60$. Karena $60 = 2^2 \\times 3^1 \\times 5^1$, kalikan semua $(\\text{pangkat} + 1)$: $(2+1)(1+1)(1+1) = 3 \\times 2 \\times 2 = \\mathbf{12}$.",
+      "kunci_pembeda": "Untuk mencari banyak faktor yang merupakan kelipatan $k$, bagi bilangan awal dengan $k$ dulu, lalu hitung total faktor hasil baginya.",
       "visual": null
     },
     {
@@ -175,26 +175,26 @@
       "nama_variasi": "Hubungan KPK, FPB, dan Hasil Kali Dua Bilangan",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Dua bilangan asli $x$ dan $y$ memiliki $\\text{FPB}(x,y) = 12$ dan $\\text{KPK}(x,y) = 180$. Jika selisih kedua bilangan adalah $24$, tentukan nilai $x + y$.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nMisalkan $x = 12a$ dan $y = 12b$ dengan $a$ dan $b$ adalah bilangan asli yang saling prima ($\\text{FPB}(a,b) = 1$). Berdasarkan identitas dasar $\\text{KPK}(x,y) \\times \\text{FPB}(x,y) = x \\cdot y$, diperoleh $180 \\times 12 = (12a)(12b)$, sehingga $a \\cdot b = \\frac{180}{12} = 15$. Pasangan bilangan asli saling prima yang hasil kalinya $15$ adalah $(1, 15)$ dan $(3, 5)$. Syarat tambahan menyatakan $|x - y| = 24 \\Rightarrow 12|a - b| = 24 \\Rightarrow |a - b| = 2$. Pasangan yang memenuhi selisih $2$ adalah $a = 5$ dan $b = 3$, sehingga $x = 60$ dan $y = 36$, lalu $x + y = 96$.\n\n**(2) Jalur Taktis UTBK**\nBagi KPK dan selisih langsung dengan FPB: $a \\cdot b = 180 \\div 12 = 15$ dan $|a - b| = 24 \\div 12 = 2$. Tebak dua faktor $15$ berselisih $2$, yaitu $5$ dan $3$. Kalikan jumlahnya dengan FPB: $(5 + 3) \\times 12 = \\mathbf{96}$.",
-      "kunci_pembeda": "Selalu nyatakan kedua bilangan sebagai kelipatan FPB ($x = d \\cdot a, y = d \\cdot b$) dengan syarat $a$ dan $b$ saling prima.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nKarena FPB-nya $12$, misalkan $x = 12a$ dan $y = 12b$ dengan syarat $a$ dan $b$ saling prima ($\\text{FPB}(a,b) = 1$). Pakai rumus $\\text{KPK} \\times \\text{FPB} = x \\cdot y$, sehingga $180 \\times 12 = (12a)(12b)$. Sederhanakan dengan membagi kedua ruas dengan $144$, diperoleh $a \\cdot b = 15$. Pasangan faktor $15$ yang saling prima adalah $(1, 15)$ dan $(3, 5)$. Cek syarat selisih: $|x - y| = 24 \\Rightarrow 12|a - b| = 24 \\Rightarrow |a - b| = 2$. Pasangan yang cocok adalah $a = 5$ dan $b = 3$. Jadi $x = 60$ dan $y = 36$, maka $x + y = 96$.\n\n**(2) Jalur Taktis UTBK**\nLangsung bagi KPK dan selisihnya dengan FPB: $a \\cdot b = 180 \\div 12 = 15$ dan $|a - b| = 24 \\div 12 = 2$. Cari dua angka yang dikali hasilnya $15$ dan selisihnya $2$, yaitu $5$ dan $3$. Kalikan jumlahnya dengan FPB: $(5 + 3) \\times 12 = \\mathbf{96}$.",
+      "kunci_pembeda": "Selalu misalkan kedua bilangan sebagai kelipatan FPB ($x = d \\cdot a, y = d \\cdot b$) dengan syarat wajib $a$ dan $b$ saling prima.",
       "visual": null
     },
     {
       "nomor_variasi": 5,
-      "nama_variasi": "Operasi Pecahan, Bilangan Desimal Berulang, dan Urutan Garis Bilangan Real",
+      "nama_variasi": "Operasi Pecahan, Desimal Berulang, dan Urutan Garis Bilangan",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Urutkan bilangan berikut dari yang terkecil hingga terbesar: $p = 0,\\overline{45}$, $q = \\frac{4}{9}$, dan $r = \\frac{5}{11}$.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUbah desimal berulang $p = 0,454545\\dots$ menjadi pecahan biasa dengan memisalkan $100p = 45,4545\\dots$ lalu kurangkan dengan $p = 0,4545\\dots$ sehingga $99p = 45 \\Rightarrow p = \\frac{45}{99} = \\frac{5}{11}$. Terlihat bahwa nilai $p$ sama persis dengan $r = \\frac{5}{11}$. Selanjutnya, bandingkan $q = \\frac{4}{9}$ dengan $\\frac{5}{11}$ dengan menyamakan penyebut ke $99$: diperoleh $q = \\frac{44}{99}$ dan $p = r = \\frac{45}{99}$. Karena $44 < 45$, maka urutan dari terkecil adalah $q < p = r$.\n\n**(2) Jalur Taktis UTBK**\nIngat pola cepat: setiap blok $n$ digit berulang setelah koma sama dengan bilangan tersebut dibagi angka $9$ sebanyak $n$ kali. Maka $0,\\overline{45} = \\frac{45}{99} = \\frac{5}{11} = r$. Untuk membandingkan $\\frac{4}{9}$ vs $\\frac{5}{11}$, lakukan **kali silang ke atas**: $4 \\times 11 = 44$ (kiri) vs $5 \\times 9 = 45$ (kanan). Jadi **q < p = r**.",
-      "kunci_pembeda": "Konversi desimal berulang berperiode $n$ digit menjadi pecahan berpenyebut $99\\dots9$ ($n$ digit), lalu gunakan kali silang untuk mengurutkan.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nUbah desimal berulang $p = 0,454545\\dots$ ke bentuk pecahan biasa. Kalikan dengan $100$ menjadi $100p = 45,4545\\dots$, lalu kurangkan dengan $p = 0,4545\\dots$. Hasilnya $99p = 45 \\Rightarrow p = \\frac{45}{99} = \\frac{5}{11}$. Ternyata nilai $p$ sama persis dengan $r$. Sekarang bandingkan $q = \\frac{4}{9}$ dengan $\\frac{5}{11}$ dengan menyamakan penyebut ke $99$: didapat $q = \\frac{44}{99}$ dan $p = r = \\frac{45}{99}$. Karena $44 < 45$, urutannya adalah $q < p = r$.\n\n**(2) Jalur Taktis UTBK**\nPakai pola cepat desimal berulang: $2$ digit berulang berarti dibagi $99$. Jadi $0,\\overline{45} = \\frac{45}{99} = \\frac{5}{11} = r$. Untuk membandingkan $\\frac{4}{9}$ vs $\\frac{5}{11}$, cukup **kali silang ke atas**: $4 \\times 11 = 44$ (kiri) vs $5 \\times 9 = 45$ (kanan). Karena $44 < 45$, urutannya **q < p = r**.",
+      "kunci_pembeda": "Ubah desimal berulang $n$ digit menjadi pecahan berpenyebut $99\\dots9$, lalu bandingkan pecahan dengan trik kali silang ke atas.",
       "visual": null
     },
     {
       "nomor_variasi": 6,
-      "nama_variasi": "Bilangan Berurutan (Consecutive Integers) dan Representasi Digit Bilangan",
+      "nama_variasi": "Bilangan Berurutan dan Representasi Digit Bilangan",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Sebuah bilangan dua digit memiliki jumlah digit sama dengan $11$. Jika posisi kedua digitnya ditukar, bilangan baru bernilai $27$ lebih besar dari bilangan semula. Tentukan bilangan semula.",
-      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nMisalkan bilangan dua digit semula adalah $\\overline{ab} = 10a + b$ dengan $a$ digit puluhan dan $b$ digit satuan. Diketahui $a + b = 11$ (persamaan 1). Setelah digit ditukar, bilangan baru menjadi $\\overline{ba} = 10b + a$. Berdasarkan selisih nilai: $(10b + a) - (10a + b) = 27 \\Rightarrow 9b - 9a = 27 \\Rightarrow b - a = 3$ (persamaan 2). Eliminasi kedua persamaan dengan menjumlahkannya: $(a + b) + (b - a) = 11 + 3 \\Rightarrow 2b = 14 \\Rightarrow b = 7$. Substitusikan $b = 7$ ke persamaan pertama menghasilkan $a = 4$, sehingga bilangan semula adalah $47$.\n\n**(2) Jalur Taktis UTBK**\nSelisih bilangan dua digit dengan kebalikannya selalu kelipatan $9$, dengan rumus cepat $|b - a| = \\text{Selisih} \\div 9$. Di sini $b - a = 27 \\div 9 = 3$ (karena bilangan baru lebih besar, maka $b > a$). Pasangan digit berjumlah $11$ dan berselisih $3$ adalah $4$ dan $7$, sehingga bilangan semula **47**.",
-      "kunci_pembeda": "Selalu nyatakan bilangan dua digit sebagai $10a + b$ (bukan $a \\cdot b$) dan manfaatkan sifat selisih pembalikan digit yang selalu habis dibagi $9$.",
+      "bedah_pola_markdown": "**(1) Jalur Konsep Dasar**\nMisalkan bilangan semula adalah $\\overline{ab} = 10a + b$. Dari soal, kita tahu $a + b = 11$ (persamaan 1). Saat digitnya ditukar, nilainya menjadi $\\overline{ba} = 10b + a$. Karena bilangan baru lebih besar $27$, maka $(10b + a) - (10a + b) = 27 \\Rightarrow 9b - 9a = 27 \\Rightarrow b - a = 3$ (persamaan 2). Jumlahkan kedua persamaan agar $a$ hilang: $(a + b) + (b - a) = 11 + 3 \\Rightarrow 2b = 14 \\Rightarrow b = 7$. Masukkan ke persamaan pertama, didapat $a = 4$. Jadi bilangan semula adalah $47$.\n\n**(2) Jalur Taktis UTBK**\nSelisih bilangan dua digit dengan kebalikannya selalu kelipatan $9$, dengan rumus cepat $|b - a| = \\text{Selisih} \\div 9$. Di sini $b - a = 27 \\div 9 = 3$ (karena bilangan baru lebih besar, pasti $b > a$). Dua angka yang jumlahnya $11$ dan selisihnya $3$ adalah $4$ dan $7$, sehingga bilangan semula **47**.",
+      "kunci_pembeda": "Nyatakan bilangan dua digit sebagai $10a + b$ (bukan $a \\cdot b$) dan manfaatkan sifat selisih pembalikan digit yang selalu habis dibagi $9$.",
       "visual": null
     }
   ],
@@ -215,7 +215,7 @@
         "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Satu-satunya bilangan prima genap adalah $2$.\n- **Cek (1):** $p \\cdot q$ genap artinya minimal satu variabel bernilai $2$. Jika $p=2, q=2$, maka $p+q=4$ (genap). Jika $p=2, q=3$, maka $p+q=5$ (ganjil). Tidak cukup.\n- **Cek (2):** Jika $p=2, q=3$, hasil ganjil; jika $p=3, q=5$, hasil genap. Tidak cukup.\n- **Gabungan (1) & (2):** Karena $2$ prima terkecil dan $p < q$, wajib $p=2$ dan $q$ prima ganjil, sehingga $p+q$ **pasti ganjil**. Jawaban **C**.",
+      "bedah_cepat_markdown": "Ingat kunci utamanya: satu-satunya bilangan prima genap adalah $2$.\n- **Cek (1) saja:** Agar $p \\cdot q$ genap, minimal satu di antaranya harus $2$. Tapi hati-hati, soal tidak bilang $p$ dan $q$ harus berbeda! Jika $p=2, q=2$, maka $p+q=4$ (genap). Jika $p=2, q=3$, maka $p+q=5$ (ganjil). Hasilnya bisa berubah, jadi tidak cukup.\n- **Cek (2) saja:** Jika $p=2, q=3$, hasilnya $5$ (ganjil). Jika $p=3, q=5$, hasilnya $8$ (genap). Tidak cukup.\n- **Gabungkan (1) & (2):** Karena minimal satu angka adalah $2$ (prima terkecil) dan $p < q$, maka wajib $p=2$ dan $q$ prima ganjil. Akibatnya, $p+q$ **pasti ganjil**. Jawaban **C**.",
       "visual": null
     },
     {
@@ -234,7 +234,7 @@
         "E. Informasi yang diberikan tidak cukup untuk membandingkan $P$ dan $Q$"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Misalkan $m = 6a$ dan $n = 6b$ dengan syarat $a$ dan $b$ saling prima ($\\text{FPB}(a,b) = 1$). Gunakan identitas $m \\cdot n = \\text{FPB} \\times \\text{KPK}$:\n$$36ab = 6 \\times 72 \\Rightarrow ab = 12$$\nPasangan faktor $12$ yang saling prima hanyalah $(1, 12)$ dan $(3, 4)$ (pasangan $(2, 6)$ gugur karena FPB-nya $2$). Nilai minimum $m + n$ diperoleh dari $(3, 4)$, yaitu $P = 6(3 + 4) = 42$. Karena $42 < 45$, maka $P < Q$. Opsi A salah karena memakai faktor tidak saling prima. Jawaban **B**.",
+      "bedah_cepat_markdown": "Karena FPB-nya $6$, misalkan $m = 6a$ dan $n = 6b$ dengan syarat $a$ dan $b$ saling prima ($\\text{FPB}(a,b) = 1$). Pakai rumus $m \\cdot n = \\text{FPB} \\times \\text{KPK}$:\n$$36ab = 6 \\times 72 \\Rightarrow ab = 12$$\nCari pasangan faktor $12$ yang saling prima: hanya $(1, 12)$ dan $(3, 4)$. Pasangan $(2, 6)$ gugur karena FPB-nya bukan $1$ (kalau dipakai, FPB $m$ dan $n$ jadi $12$, bukan $6$). Nilai terkecil $m + n$ didapat dari $(3, 4)$, yaitu $P = 6(3 + 4) = 42$. Karena $42 < 45$, maka $P < Q$. Jawaban **B**.",
       "visual": null
     },
     {
@@ -247,7 +247,7 @@
       "pertanyaan_markdown": "Sebuah bilangan bulat positif dua digit $\\overline{ab}$ bersisa $3$ jika dibagi $5$, dan bersisa $2$ jika dibagi $7$. Jika nilai $a + b$ adalah yang terbesar yang mungkin, berapakah nilai dari bilangan $\\overline{ab}$ tersebut?",
       "opsi_jawaban": [],
       "kunci_jawaban": "58",
-      "bedah_cepat_markdown": "Bilangan bersisa $3$ saat dibagi $5$ pasti berdigit satuan $3$ atau $8$. Cari bilangan kelipatan $7$ ditambah $2$ (yaitu $9, 16, 23, 30, 37, 44, 51, 58, 65, 72, 79, 86, 93$) yang berakhiran $3$ atau $8$. Diperoleh tiga kandidat dua digit: $23$, $58$, dan $93$. Hitung jumlah digit ($a + b$) masing-masing: $2+3=5$, $5+8=13$, dan $9+3=12$. Nilai $a + b$ terbesar ($13$) dicapai oleh bilangan **58**.",
+      "bedah_cepat_markdown": "Mulai dari syarat yang paling mudah disaring: bersisa $3$ saat dibagi $5$ artinya digit satuannya pasti $3$ atau $8$. Sekarang daftarkan bilangan dua digit yang bersisa $2$ jika dibagi $7$ (kelipatan $7$ ditambah $2$): $16, 23, 30, 37, 44, 51, 58, 65, 72, 79, 86, 93$. Dari daftar ini, yang berakhiran $3$ atau $8$ cuma ada tiga: $23$, $58$, dan $93$. Hitung jumlah digit ($a + b$) masing-masing: $2+3=5$, $5+8=13$, dan $9+3=12$. Nilai $a + b$ terbesar ($13$) dicapai oleh bilangan **58**.",
       "visual": null
     }
   ]

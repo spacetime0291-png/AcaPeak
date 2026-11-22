@@ -9,132 +9,132 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam paragraf yang membahas teknologi baterai litium kendaraan listrik, tiba-tiba muncul kalimat mengenai sejarah penemuan mesin uap abad ke-18. Mengapa kalimat tersebut merusak keutuhan paragraf?",
+      "pertanyaan_pemantik": "Dalam paragraf yang membahas baterai litium mobil listrik, tiba-tiba muncul kalimat soal sejarah mesin uap abad ke-18. Mengapa kalimat itu langsung merusak keutuhan paragraf?",
       "opsi_cepat": [
-        "Karena menggunakan ejaan tidak baku",
-        "Karena menyimpang dari gagasan utama paragraf"
+        "Karena memakai ejaan yang tidak baku",
+        "Karena melenceng dari gagasan utama paragraf"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Paragraf yang padu wajib mengikat seluruh kalimat penjelas pada satu gagasan utama (koherensi) serta menghubungkannya lewat penanda gramatikal maupun kata kunci (kohesi). Kalimat yang keluar jalur langsung memutus alur logika pembaca."
+      "penjelasan_kilat": "Paragraf yang padu wajib mengikat semua kalimat penjelas ke satu gagasan utama (koherensi) serta menyambungkannya lewat kata rujukan atau penghubung (kohesi). Kalimat yang melenceng langsung memutus alur logika pembaca."
     },
-    "konsep_inti_markdown": "**Kepaduan paragraf** menuntut kesatuan bentuk dan kelogisan hubungan antarkalimat sesuai kaidah EYD V serta KBBI VI:\n\n* **Kohesi (Kepaduan Bentuk):** Pertalian struktur melalui kata rujukan (*hal tersebut*, *-nya*), kata penghubung antarkalimat, dan pengulangan kata kunci.\n* **Koherensi (Kepaduan Makna):** Keselarasan logika seluruh kalimat penjelas dalam mendukung satu gagasan utama tanpa menyisipkan informasi sumbang atau meloncat subtopik.",
+    "konsep_inti_markdown": "**Kepaduan paragraf** menuntut hubungan bentuk dan alur logika antarkalimat yang nyambung sesuai kaidah EYD V serta KBBI VI:\n\n* **Kohesi (Kepaduan Bentuk):** Tali pengikat antarkalimat lewat kata rujukan (*hal tersebut*, *-nya*), kata penghubung antarkalimat, dan pengulangan kata kunci.\n* **Koherensi (Kepaduan Makna):** Alur logika yang nyambung antara kalimat utama dan kalimat penjelas tanpa menyelipkan informasi nyasar atau lompat topik.",
     "radar_jebakan_utbk": [
-      "Mengira kalimat masih padu hanya karena memuat kata yang mirip dengan topik utama, padahal sudut pandang atau fokus pembahasannya sudah melenceng jauh.",
-      "Menentukan rujukan kata ganti ('hal tersebut', 'ini', '-nya') hanya pada kata benda terdekat sebelum titik, bukan pada keseluruhan gagasan klausa sebelumnya."
+      "Mengira kalimat masih nyambung cuma karena memakai kata yang mirip dengan topik utama, padahal sudut pandangnya sudah melenceng jauh.",
+      "Menebak rujukan kata ganti ('hal tersebut', 'ini', '-nya') hanya pada kata benda terdekat sebelum titik, bukan pada seluruh peristiwa di kalimat sebelumnya."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Taksonomi Sinyal Kohesi dan Pola Koherensi Paragraf (EYD V)",
-      "subjudul_ringkas": "Panduan praktis mengidentifikasi rujukan, kepaduan leksikal, kalimat sumbang, urutan logis, dan pemecahan paragraf UTBK.",
+      "judul_blok": "Peta Sinyal Pengikat dan Alur Logika Paragraf (EYD V)",
+      "subjudul_ringkas": "Panduan praktis melacak kata rujukan, padanan kata, kalimat nyasar, urutan kalimat acak, dan pemecahan paragraf UTBK.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
-        "kolom_1": "Kategori / Penanda Teks",
-        "kolom_2": "Contoh Potongan / Sinyal",
-        "kolom_3": "Cara Bedakan / Jebakan"
+        "kolom_1": "Jenis Sinyal Teks",
+        "kolom_2": "Contoh Penerapan",
+        "kolom_3": "Cara Bedakan & Jebakan"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Penanda Kohesi Gramatikal dan Rujukan",
-          "ringkasan_kelompok": "Mengikat struktur antarkalimat melalui kata ganti, konjungsi antarkalimat, dan pelesapan unsur.",
+          "nama_kelompok": "Pengikat Struktur Kalimat dan Kata Rujukan",
+          "ringkasan_kelompok": "Menyambungkan kalimat lewat kata ganti, kata penghubung antarkalimat, dan penghilangan unsur yang sama.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Pronomina Penunjuk Gagasan (Hal Tersebut, Ini, Itu)",
-              "penjelasan_singkat": "Merujuk pada keseluruhan klausa, tindakan, atau fenomena pada kalimat tepat sebelumnya, bukan sekadar satu kata benda.",
-              "contoh_penerapan": "Inflasi pangan meningkat tajam bulan lalu; **hal tersebut** memicu penurunan daya beli masyarakat kelas menengah.",
-              "jebakan_atau_catatan": "Pengecoh sering mengarahkan rujukan ke subjek tunggal (inflasi), padahal frasa merujuk pada keseluruhan peristiwa peningkatan.",
+              "judul_poin": "Kata Tunjuk Gagasan (Hal Tersebut, Ini, Itu)",
+              "penjelasan_singkat": "Merujuk pada seluruh peristiwa atau tindakan pada kalimat tepat sebelumnya, bukan sekadar satu kata benda.",
+              "contoh_penerapan": "Harga beras melonjak bulan lalu; **hal tersebut** menekan daya beli masyarakat kelas menengah.",
+              "jebakan_atau_catatan": "Opsi pengecoh sering mengarahkan rujukan ke satu kata benda saja (*beras*), padahal yang dirujuk adalah seluruh peristiwa kenaikan harganya.",
               "visual": null
             },
             {
-              "judul_poin": "Pronomina Persona dan Klitika (-nya, Mereka, Ia)",
-              "penjelasan_singkat": "Menggantikan nomina insan atau entitas spesifik yang telah disebut sebelumnya sesuai kesesuaian jumlah (tunggal atau jamak).",
+              "judul_poin": "Kata Ganti Orang dan Akhiran (-nya, Mereka, Ia)",
+              "penjelasan_singkat": "Menggantikan orang atau benda tertentu yang sudah disebut sebelumnya sesuai jumlahnya (tunggal atau jamak).",
               "contoh_penerapan": "Para peneliti menguji vaksin baru di laboratorium, lalu **mereka** memublikasikan hasil uji klinis**nya** secara terbuka.",
-              "jebakan_atau_catatan": "Kata *mereka* wajib merujuk pada manusia jamak; benda mati atau hewan jamak tidak boleh dirujuk dengan *mereka*.",
+              "jebakan_atau_catatan": "Kata *mereka* khusus untuk manusia berjumlah banyak; benda mati atau hewan tidak boleh dirujuk memakai kata *mereka*.",
               "visual": null
             },
             {
-              "judul_poin": "Konjungsi Antarkalimat dan Koma Wajib EYD V",
-              "penjelasan_singkat": "Menghubungkan dua kalimat utuh sekaligus menandai relasi logis (pertentangan, akibat, penambahan) di awal kalimat.",
+              "judul_poin": "Kata Penghubung Antarkalimat dan Koma Wajib EYD V",
+              "penjelasan_singkat": "Menyambungkan dua kalimat utuh sekaligus menandai hubungan makna (pertentangan, akibat, atau penambahan) di awal kalimat.",
               "contoh_penerapan": "Curah hujan sangat tinggi sepanjang pekan. **Oleh karena itu,** pemerintah menetapkan status siaga banjir di wilayah hilir.",
-              "jebakan_atau_catatan": "Wajib diikuti tanda koma; konjungsi intrakalimat seperti *sehingga* atau *sedangkan* salah jika diletakkan di awal kalimat.",
+              "jebakan_atau_catatan": "Wajib diikuti tanda koma; kata penghubung dalam kalimat seperti *sehingga* atau *sedangkan* salah jika ditaruh di awal kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Elipsis (Pelesapan Unsur Sama Antarklausa)",
-              "penjelasan_singkat": "Menghilangkan subjek atau predikat yang identik pada kalimat berikutnya agar kalimat efektif tanpa merusak kelengkapan makna.",
-              "contoh_penerapan": "Tim pertama menganalisis sampel air sungai, sedangkan tim kedua **[menganalisis]** sedimen dasar muara secara terpisah.",
-              "jebakan_atau_catatan": "Jangan anggap kalimat tidak lengkap atau sumbang jika unsur yang hilang dapat dipulihkan langsung dari klausa sebelumnya.",
+              "judul_poin": "Pelesapan Unsur yang Sama (Elipsis)",
+              "penjelasan_singkat": "Menghilangkan subjek atau predikat yang kembar pada bagian berikutnya agar kalimat ringkas tanpa merusak makna.",
+              "contoh_penerapan": "Tim pertama menganalisis sampel air sungai, sedangkan tim kedua **[menganalisis]** endapan lumpur muara secara terpisah.",
+              "jebakan_atau_catatan": "Jangan anggap kalimat ini rumpang atau nyasar jika kata yang hilang bisa langsung kamu ambil dari bagian sebelumnya.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Penanda Kepaduan Leksikal dan Relasi Makna",
-          "ringkasan_kelompok": "Menjaga kesatuan topik melalui pengulangan kata kunci dan pertalian makna antarkata.",
+          "nama_kelompok": "Pengikat Makna dan Pilihan Kata",
+          "ringkasan_kelompok": "Menjaga fokus topik lewat pengulangan kata kunci dan hubungan makna antarkata.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Repetisi Kata Kunci dan Sinonim Kontekstual",
-              "penjelasan_singkat": "Mengulang istilah inti atau menggantinya dengan padanan kata searti untuk mempertahankan fokus gagasan di seluruh paragraf.",
-              "contoh_penerapan": "**Stunting** menghambat perkembangan kognitif anak. Kondisi **gagal tumbuh** kronis ini perlu dicegah sejak masa kehamilan.",
-              "jebakan_atau_catatan": "Sinonim harus sepadan secara konteks; pergantian istilah dengan makna berbeda menandakan pergeseran topik atau kalimat sumbang.",
+              "judul_poin": "Pengulangan Kata Kunci dan Padanan Kata (Sinonim)",
+              "penjelasan_singkat": "Mengulang istilah inti atau menggantinya dengan kata searti agar fokus pembicaraan terjaga dari awal sampai akhir.",
+              "contoh_penerapan": "**Stunting** menghambat perkembangan otak anak. Kondisi **gagal tumbuh** kronis ini perlu dicegah sejak masa kehamilan.",
+              "jebakan_atau_catatan": "Padanan kata harus setara dalam konteks kalimat; jika maknanya melenceng, kalimat itu berpotensi nyasar.",
               "visual": null
             },
             {
-              "judul_poin": "Relasi Hipernimi ke Hiponimi (Umum ke Khusus)",
-              "penjelasan_singkat": "Menjabarkan kategori umum (hipernim) pada kalimat utama menjadi rincian anggota spesifik (hiponim) pada kalimat penjelas.",
-              "contoh_penerapan": "Indonesia memiliki kekayaan **energi terbarukan** melimpah. Potensi tersebut mencakup **panas bumi**, **tenaga surya**, dan **arus laut**.",
-              "jebakan_atau_catatan": "Jika kalimat penjelas memuat contoh di luar kategori hipernim utama, kalimat tersebut dipastikan sumbang.",
+              "judul_poin": "Hubungan Umum ke Khusus (Hipernim ke Hiponim)",
+              "penjelasan_singkat": "Menjabarkan kelompok besar (umum) pada kalimat utama menjadi contoh-contoh spesifik (khusus) pada kalimat penjelas.",
+              "contoh_penerapan": "Indonesia memiliki potensi **energi terbarukan** melimpah. Sumber energi itu mencakup **panas bumi**, **tenaga surya**, dan **arus laut**.",
+              "jebakan_atau_catatan": "Jika kalimat penjelas menyebut contoh di luar kelompok utama (misalnya batu bara), kalimat itu pasti merusak kepaduan.",
               "visual": null
             },
             {
-              "judul_poin": "Kolokasi (Asosiasi Kata Satu Medan Makna)",
-              "penjelasan_singkat": "Menggunakan kosakata yang secara alami berdampingan dalam satu bidang ilmu atau topik tertentu untuk membangun kepaduan.",
+              "judul_poin": "Kosakata Satu Bidang Topik (Kolokasi)",
+              "penjelasan_singkat": "Memakai deretan istilah yang memang biasa muncul bersama dalam satu bidang topik agar alur bacaan terasa alami.",
               "contoh_penerapan": "Erupsi gunung api memuntahkan **abu vulkanik**, **awan panas**, dan **lahar dingin** ke kawasan lereng.",
-              "jebakan_atau_catatan": "Munculnya istilah dari medan makna asing secara tiba-tiba menjadi sinyal kuat adanya loncatan topik.",
+              "jebakan_atau_catatan": "Munculnya istilah dari bidang lain secara mendadak adalah tanda kuat adanya lompatan topik.",
               "visual": null
             },
             {
-              "judul_poin": "Antonimi dan Oposisi Makna Antarkalimat",
-              "penjelasan_singkat": "Mengontraskan dua kata atau frasa berlawanan makna untuk mempertegas perbandingan kondisi dalam satu kesatuan ide.",
+              "judul_poin": "Perbandingan Lawan Makna (Antonim)",
+              "penjelasan_singkat": "Mempertentangkan dua kata berlawanan arti untuk memperjelas perbandingan kondisi dalam satu topik yang sama.",
               "contoh_penerapan": "Sektor pariwisata **tumbuh** pesat di wilayah pesisir, berbanding terbalik dengan sektor pertanian yang justru **menyusut**.",
-              "jebakan_atau_catatan": "Kontras makna sah dalam satu paragraf selama masih membandingkan dua sisi dari variabel topik yang sama.",
+              "jebakan_atau_catatan": "Pertentangan makna sah berada dalam satu paragraf selama masih membandingkan dua sisi dari topik yang sama.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pola Koherensi, Urutan Logis, dan Pemecahan Paragraf",
-          "ringkasan_kelompok": "Menguji kelogisan alur gagasan untuk mendeteksi kalimat sumbang, mengurutkan kalimat, dan membagi paragraf.",
+          "nama_kelompok": "Alur Logika, Urutan Kalimat, dan Pemecahan Paragraf",
+          "ringkasan_kelompok": "Menguji kelogisan alur gagasan untuk melacak kalimat nyasar, menyusun kalimat acak, dan membagi paragraf.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Deteksi Kalimat Sumbang (Penyimpangan Fokus Predikat)",
-              "penjelasan_singkat": "Mengidentifikasi kalimat yang keluar dari gagasan utama meskipun masih memakai kata kunci yang sama dengan paragraf.",
+              "judul_poin": "Melacak Kalimat Nyasar (Fokus Predikat Melenceng)",
+              "penjelasan_singkat": "Mencari kalimat yang keluar dari gagasan utama meskipun masih memakai kata kunci yang mirip dengan paragraf.",
               "contoh_penerapan": "(1) Teh hijau kaya antioksidan pencegah kanker. (2) **Teh hijau pertama kali dibudidayakan di Tiongkok kuno.**",
-              "jebakan_atau_catatan": "Jebakan klasik UTBK: kalimat sumbang sengaja mengulang kata kunci subjek (teh hijau), tetapi menggeser fokus bahasan (manfaat vs sejarah).",
+              "jebakan_atau_catatan": "Jebakan klasik UTBK: kalimat nyasar sengaja mengulang subjek (*teh hijau*), tetapi menggeser fokus bahasan dari manfaat ke sejarah.",
               "visual": null
             },
             {
-              "judul_poin": "Pengurutan Kalimat Acak via Kunci Referensial",
-              "penjelasan_singkat": "Menempatkan kalimat pernyataan umum bebas rujukan di posisi awal, diikuti kalimat yang memuat pronomina atau konjungsi.",
-              "contoh_penerapan": "Urutan valid: **(3)** Definisi mikroplastik (tanpa rujukan) → **(1)** Dampaknya (**dampaknya** merujuk ke kalimat 3) → **(4)** Solusi.",
-              "jebakan_atau_catatan": "Kalimat diawali *ini, tersebut, namun,* atau *-nya* mustahil menjadi kalimat pertama dalam susunan paragraf deduktif.",
+              "judul_poin": "Menyusun Kalimat Acak Lewat Jejak Kata Rujukan",
+              "penjelasan_singkat": "Menaruh kalimat pernyataan umum tanpa kata rujukan di posisi pertama, lalu menyambungnya dengan kalimat berpenanda rujukan.",
+              "contoh_penerapan": "Urutan padu: **(3)** Pengertian mikroplastik (tanpa rujukan) $\\rightarrow$ **(1)** Dampaknya (**dampaknya** merujuk ke kalimat 3) $\\rightarrow$ **(4)** Solusi.",
+              "jebakan_atau_catatan": "Kalimat yang diawali *ini, tersebut, namun,* atau *-nya* mustahil menjadi kalimat pembuka paragraf.",
               "visual": null
             },
             {
-              "judul_poin": "Alur Kronologis dan Kausalitas Berantai",
-              "penjelasan_singkat": "Menyusun kalimat berdasarkan urutan waktu peristiwa atau rantai sebab-akibat di mana akibat kalimat pertama menjadi sebab berikutnya.",
-              "contoh_penerapan": "Suhu laut menghangat (**sebab 1**) → terumbu karang memutih (**akibat 1/sebab 2**) → populasi ikan karang menurun (**akibat 2**).",
-              "jebakan_atau_catatan": "Periksa penanda waktu eksplisit (*awalnya, selanjutnya, akhirnya*) dan pastikan tidak ada lompatan logika sebab ke akibat.",
+              "judul_poin": "Urutan Waktu dan Sebab-Akibat Berantai",
+              "penjelasan_singkat": "Menyusun kalimat sesuai urutan kejadian atau rantai sebab-akibat di mana akibat pertama memicu kejadian berikutnya.",
+              "contoh_penerapan": "Suhu laut menghangat (**sebab 1**) $\\rightarrow$ terumbu karang memutih (**akibat 1/sebab 2**) $\\rightarrow$ populasi ikan karang turun (**akibat 2**).",
+              "jebakan_atau_catatan": "Periksa penanda waktu (*awalnya, selanjutnya, akhirnya*) dan pastikan tidak ada urutan sebab-akibat yang terbalik.",
               "visual": null
             },
             {
-              "judul_poin": "Pemecahan Paragraf Berdasarkan Pergeseran Subtopik",
-              "penjelasan_singkat": "Memisahkan satu paragraf panjang tepat pada kalimat yang mulai membahas aspek baru (misal dari dampak ke solusi).",
-              "contoh_penerapan": "(1-3) Dampak kemacetan terhadap emisi karbon. **(4) Untuk mengatasi persoalan tersebut, pemerintah membangun jalur sepeda terpadu.**",
-              "jebakan_atau_catatan": "Kalimat pemecah tetap terhubung lewat kata rujukan transisi, tetapi membuka gagasan utama baru bagi kalimat-kalimat setelahnya.",
+              "judul_poin": "Memecah Paragraf Saat Subtopik Bergeser",
+              "penjelasan_singkat": "Memisahkan satu paragraf panjang tepat pada kalimat yang mulai membahas sudut pandang baru (misalnya dari dampak ke solusi).",
+              "contoh_penerapan": "(1-3) Dampak kemacetan terhadap polusi udara. **(4) Untuk mengatasi persoalan tersebut, pemerintah membangun jalur sepeda terpadu.**",
+              "jebakan_atau_catatan": "Kalimat pemecah tetap menyambung lewat kata transisi, tetapi membuka topik bahasan baru bagi kalimat-kalimat setelahnya.",
               "visual": null
             }
           ]
@@ -145,47 +145,47 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Deteksi Kalimat Sumbang (Out-of-Place Sentence) yang Merusak Kepaduan Paragraf",
+      "nama_variasi": "Mendeteksi Kalimat Nyasar yang Merusak Kepaduan Paragraf",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "(1) Penerapan pertanian presisi berbasis sensor kelembapan mampu menekan pemborosan air irigasi hingga empat puluh persen. (2) Sensor tersebut mengirimkan data kadar air tanah secara otomatis ke perangkat petani. (3) Sementara itu, harga pupuk urea bersubsidi mengalami penyesuaian distribusi pada awal tahun.",
-      "bedah_pola_markdown": "**Bedah Pola Kesatuan Gagasan & Fungsi:**\nPerhatikan inti kalimat (1): [S] *Penerapan pertanian presisi berbasis sensor* + [P] *menekan* + [O] *pemborosan air irigasi*. Kalimat (2) mendukung gagasan tersebut melalui [S] *Sensor tersebut* + [P] *mengirimkan* + [O] *data kadar air*. Sebaliknya, kalimat (3) menyimpang ke topik harga pupuk sehingga merusak kepaduan wacana baku sesuai EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyisipkan informasi **harga pupuk bersubsidi** di tengah pembahasan efisiensi irigasi. | Menghapus kalimat (3) atau menggantinya dengan **dampak penghematan air bagi hasil panen**. |\n| Terkecoh kata *pertanian* sehingga menganggap kalimat (3) masih berkaitan dengan teks. | Menguji keterkaitan predikat dan objek setiap kalimat terhadap gagasan utama paragraf. |\n\n**Strategi Eksekusi:** Tandai kata kunci inti pada kalimat utama, lalu uji apakah setiap kalimat berikutnya menjelaskan penyebab, proses, atau dampak langsung dari inti tersebut.",
-      "kunci_pembeda": "Mendeteksi satu kalimat yang menyimpang dari fokus gagasan utama paragraf meskipun masih mengandung kata kunci bertema mirip.",
+      "stimulus_mini": "(1) Penerapan pertanian presisi berbasis sensor kelembapan mampu menekan pemborosan air irigasi hingga 40 persen. (2) Sensor tersebut mengirimkan data kadar air tanah secara otomatis ke ponsel petani. (3) Sementara itu, harga pupuk urea bersubsidi mengalami penyesuaian distribusi pada awal tahun.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Pola:**\nLihat inti kalimat (1): **[S]** *Penerapan pertanian presisi berbasis sensor* + **[P]** *menekan* + **[O]** *pemborosan air irigasi*. Kalimat (2) langsung mendukung ide itu lewat **[S]** *Sensor tersebut* + **[P]** *mengirimkan* + **[O]** *data kadar air*. Sebaliknya, kalimat (3) tiba-tiba belok membahas harga pupuk sehingga merusak kepaduan paragraf sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Jebakan Umum) | Benar (Sesuai Kaidah EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyelipkan info **harga pupuk bersubsidi** di tengah pembahasan hemat air irigasi. | Menghapus kalimat (3) atau menggantinya dengan **dampak penghematan air bagi hasil panen**. |\n| Terkecoh kata *pertanian* sehingga mengira kalimat (3) masih nyambung dengan teks. | Menguji apakah predikat dan objek tiap kalimat benar-benar menjelaskan gagasan utama. |\n\n**Strategi Eksekusi:** Garis bawahi inti kalimat pertama, lalu cek apakah kalimat berikutnya menjelaskan sebab, cara kerja, atau dampak langsung dari inti tersebut.",
+      "kunci_pembeda": "Menemukan satu kalimat yang melenceng dari gagasan utama paragraf meskipun masih memakai kata kunci bertema mirip.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Penentuan Rujukan Kata Ganti (Pronomina: 'hal tersebut', 'mereka', '-nya')",
+      "nama_variasi": "Menentukan Rujukan Kata Ganti ('hal tersebut', 'mereka', '-nya')",
       "kategori_variasi": "Inti",
       "stimulus_mini": "(1) Otoritas pelabuhan mulai menerapkan sistem antrean digital untuk memangkas waktu tunggu bongkar muat peti kemas. (2) **Hal tersebut** terbukti menurunkan biaya logistik pelayaran secara signifikan. (3) Para operator kapal menyambut baik **penerapannya** karena jadwal sandar menjadi lebih pasti.",
-      "bedah_pola_markdown": "**Bedah Pola Rujukan & Fungsi:**\nPerhatikan kedudukan kata rujukan pada kalimat (2): [S] ***Hal tersebut*** + [P] *terbukti menurunkan* + [O] *biaya logistik pelayaran*. Kata tunjuk **hal tersebut** tidak merujuk pada benda tunggal, melainkan keseluruhan peristiwa [P]-[O] kalimat (1), yakni *penerapan sistem antrean digital*. Sementara itu, klitika ***-nya*** pada kalimat (3) merujuk pada nomina *sistem antrean digital* sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| **Hal tersebut** diartikan merujuk pada frasa akhir *peti kemas*. | **Hal tersebut** merujuk pada gagasan utuh *penerapan sistem antrean digital*. |\n| Kata ganti **mereka** dipakai untuk merujuk pada benda mati (*kapal-kapal*). | Kata ganti **mereka** khusus merujuk pada pelaku insani jamak (*para operator*). |\n\n**Strategi Eksekusi:** Ganti kata rujukan dengan frasa kandidat dari kalimat sebelumnya, lalu baca ulang kalimat untuk menguji kelogisan makna [S]-[P]-[O] secara utuh.",
-      "kunci_pembeda": "Menguji kesesuaian makna dan jumlah rujukan kata ganti ('hal tersebut', 'mereka', '-nya') dengan menyubstitusikannya langsung ke kalimat target.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Pola:**\nCek posisi kata rujukan di kalimat (2): **[S]** ***Hal tersebut*** + **[P]** *terbukti menurunkan* + **[O]** *biaya logistik pelayaran*. Frasa **hal tersebut** tidak merujuk pada satu benda di ujung kalimat, melainkan seluruh tindakan **[P]-[O]** di kalimat (1), yaitu *penerapan sistem antrean digital*. Sementara itu, akhiran ***-nya*** pada kata *penerapannya* di kalimat (3) merujuk pada *sistem antrean digital* sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Jebakan Umum) | Benar (Sesuai Kaidah EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengira **hal tersebut** cuma merujuk pada benda terakhir (*peti kemas*). | **Hal tersebut** merujuk pada keseluruhan gagasan *penerapan sistem antrean digital*. |\n| Memakai kata ganti **mereka** untuk merujuk benda mati (*kapal-kapal*). | Kata ganti **mereka** khusus merujuk pada pelaku manusia jamak (*para operator*). |\n\n**Strategi Eksekusi:** Ganti kata rujukan dengan kandidat frasa dari kalimat sebelumnya, lalu baca ulang kalimatnya untuk memastikan maknanya masuk akal.",
+      "kunci_pembeda": "Menguji ketepatan rujukan kata ganti ('hal tersebut', 'mereka', '-nya') dengan menempelkan langsung frasa rujukannya ke dalam kalimat.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Pengurutan Kalimat Acak Menjadi Paragraf yang Padu dan Kronologis",
+      "nama_variasi": "Mengurutkan Kalimat Acak Menjadi Paragraf yang Padu",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "(1) Data satelit itu kemudian diolah menggunakan model prediksi cuaca untuk memetakan potensi hujan ekstrem. (2) Badan meteorologi mengumpulkan citra atmosfer dari berbagai stasiun pemantau. (3) Hasil pemetaan tersebut selanjutnya dikirimkan kepada pemerintah daerah sebagai peringatan dini.",
-      "bedah_pola_markdown": "**Bedah Pola Urutan & Fungsi:**\nSusun ulang alur proses berdasarkan penanda transisi: kalimat (2) menjadi pembuka umum dengan [S] *Badan meteorologi* + [P] *mengumpulkan* + [O] *citra atmosfer*. Kalimat (1) melanjutkan proses lewat rujukan [S] *Data satelit itu* + [K] *kemudian* + [P] *diolah*, lalu ditutup kalimat (3) berpenanda *selanjutnya*. Urutan padunya adalah **(2)-(1)-(3)** sesuai kaidah kohesi EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Memulai paragraf dengan kalimat berpenanda **itu**, **tersebut**, atau **kemudian**. | Memulai paragraf dengan kalimat pernyataan umum tanpa kata rujukan mundur. |\n| Penulisan konjungsi antarkalimat tanpa koma: *Selanjutnya hasil pemetaan dikirim*. | Penulisan konjungsi antarkalimat baku berkoma: *Selanjutnya, hasil pemetaan dikirim*. |\n\n**Strategi Eksekusi:** Temukan kalimat paling umum tanpa kata tunjuk mundur sebagai pembuka, lalu rangkai kalimat berikutnya dengan memasangkan kata rujukan dan urutan waktu.",
-      "kunci_pembeda": "Menentukan kalimat pembuka mandiri tanpa rujukan mundur lalu merangkai kelanjutannya berdasarkan jejak kata tunjuk dan penanda urutan kronologis.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Pola:**\nRangkai alur prosesnya lewat jejak kata rujukan: kalimat (2) paling pas jadi pembuka karena berdiri sendiri tanpa rujukan mundur (**[S]** *Badan meteorologi* + **[P]** *mengumpulkan* + **[O]** *citra atmosfer*). Kalimat (1) menyambung prosesnya lewat frasa **[S]** *Data satelit itu* + **[K]** *kemudian* + **[P]** *diolah*, lalu ditutup kalimat (3) yang memakai rujukan *Hasil pemetaan tersebut*. Urutan padunya adalah **(2)-(1)-(3)** sesuai kaidah kohesi EYD V dan KBBI VI.\n\n| Salah (Jebakan Umum) | Benar (Sesuai Kaidah EYD V & KBBI VI) |\n| :--- | :--- |\n| Memulai paragraf dengan kalimat yang memuat kata tunjuk **itu**, **tersebut**, atau **kemudian**. | Memulai paragraf dengan kalimat pernyataan umum yang bebas dari kata rujukan mundur. |\n| Menulis kata penghubung antarkalimat tanpa tanda koma: *Selanjutnya hasil pemetaan dikirim*. | Menulis kata penghubung antarkalimat baku dengan koma: *Selanjutnya, hasil pemetaan dikirim*. |\n\n**Strategi Eksekusi:** Cari dulu kalimat paling umum yang tidak punya kata tunjuk mundur sebagai pembuka, lalu sambungkan kalimat berikutnya sesuai urutan rujukan dan waktu.",
+      "kunci_pembeda": "Menemukan kalimat pembuka yang berdiri sendiri tanpa rujukan mundur, lalu merangkai kelanjutannya lewat jejak kata tunjuk dan penanda urutan.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Pemecahan Satu Paragraf Panjang Menjadi Dua Paragraf Berdasarkan Pergeseran Subtopik",
+      "nama_variasi": "Memecah Satu Paragraf Panjang Menjadi Dua Paragraf",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "(1) Ekspor komoditas kopi olahan nasional meningkat dua puluh persen sepanjang semester pertama. (2) Kenaikan permintaan terutama berasal dari pasar Asia Timur dan Eropa. (3) Di sisi lain, pelaku industri pengolahan kopi masih menghadapi kendala tingginya biaya logistik antarpulau. (4) Keterbatasan kontainer pendingin turut memperlambat pengiriman biji kopi ke pelabuhan utama.",
-      "bedah_pola_markdown": "**Bedah Pola Pemisahan & Fungsi:**\nPerhatikan pergeseran fokus antara dua bagian paragraf: kalimat (1)–(2) membahas [S] *Ekspor komoditas kopi* + [P] *meningkat* (*subtopik capaian kinerja*), sedangkan kalimat (3) membuka arah baru lewat konjungsi kontras *Di sisi lain*, [S] *pelaku industri* + [P] *menghadapi* + [O] *kendala biaya logistik* (*subtopik hambatan distribusi*). Pemecahan tepat dimulai pada **kalimat (3)** sesuai aturan kesatuan paragraf EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Memecah paragraf pada kalimat (2) yang masih menjelaskan rincian pasar ekspor. | Memecah paragraf tepat pada kalimat (3) saat muncul gagasan kendala logistik baru. |\n| Menggabungkan **capaian ekspor** dan **hambatan distribusi** dalam satu paragraf padat. | Memisahkan **kinerja ekspor** (paragraf 1) dan **kendala logistik** (paragraf 2). |\n\n**Strategi Eksekusi:** Lacak kalimat yang memuat konjungsi peralihan (*di sisi lain, sementara itu, namun*) serta perubahan fokus objek pembicaraan sebagai batas awal paragraf kedua.",
-      "kunci_pembeda": "Menemukan titik pergeseran subtopik dan konjungsi peralihan sudut pandang untuk membagi satu paragraf panjang menjadi dua kesatuan gagasan yang proporsional.",
+      "stimulus_mini": "(1) Ekspor komoditas kopi olahan nasional meningkat 20 persen sepanjang semester pertama. (2) Kenaikan permintaan terutama berasal dari pasar Asia Timur dan Eropa. (3) Di sisi lain, pelaku industri pengolahan kopi masih menghadapi kendala tingginya biaya logistik antarpulau. (4) Keterbatasan kontainer pendingin turut memperlambat pengiriman biji kopi ke pelabuhan utama.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Pola:**\nPerhatikan titik belok topik di dalam paragraf: kalimat (1) dan (2) membahas **[S]** *Ekspor komoditas kopi* + **[P]** *meningkat* (*topik capaian kinerja*), sedangkan kalimat (3) membuka sudut pandang baru lewat kata penghubung *Di sisi lain*, **[S]** *pelaku industri* + **[P]** *menghadapi* + **[O]** *kendala biaya logistik* (*topik hambatan distribusi*). Pemecahan paling tepat dimulai pada **kalimat (3)** sesuai aturan kesatuan paragraf EYD V dan KBBI VI.\n\n| Salah (Jebakan Umum) | Benar (Sesuai Kaidah EYD V & KBBI VI) |\n| :--- | :--- |\n| Memecah paragraf di kalimat (2) padahal masih menjelaskan rincian pasar ekspor. | Memecah paragraf tepat di kalimat (3) saat muncul topik kendala logistik yang baru. |\n| Menumpuk **capaian ekspor** dan **hambatan distribusi** dalam satu paragraf panjang. | Memisahkan **kinerja ekspor** (paragraf 1) dan **kendala logistik** (paragraf 2). |\n\n**Strategi Eksekusi:** Cari kalimat yang memakai penanda peralihan sudut pandang (*di sisi lain, sementara itu, namun*) sekaligus mengubah fokus pembicaraan sebagai awal paragraf kedua.",
+      "kunci_pembeda": "Melacak titik pergeseran fokus topik dan penanda peralihan arah pembicaraan untuk membagi satu paragraf panjang menjadi dua paragraf yang utuh.",
       "visual": null
     },
     {
       "nomor_variasi": 5,
-      "nama_variasi": "Evaluasi Kepaduan Leksikal (Pengulangan Kata Kunci dan Hubungan Makna Antar-Kalimat)",
+      "nama_variasi": "Menguji Kepaduan Makna Lewat Variasi Kata Kunci",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "(1) Rehabilitasi hutan bakau di pesisir utara terbukti efektif meredam abrasi gelombang pasang. (2) Ekosistem **mangrove** tersebut juga berfungsi sebagai habitat pemijahan berbagai jenis ikan dan udang. (3) Selain itu, **vegetasi pesisir** ini mampu menyerap emisi karbon jauh lebih besar daripada hutan daratan.",
-      "bedah_pola_markdown": "**Bedah Pola Kepaduan Leksikal & Fungsi:**\nPerhatikan ikatan makna antarkalimat melalui variasi kata kunci: subjek kalimat (1) *hutan bakau* diikat kembali pada kalimat (2) menjadi [S] *Ekosistem **mangrove** tersebut* + [P] *berfungsi*, lalu dipadankan pada kalimat (3) menjadi [S] ***vegetasi pesisir** ini* + [P] *menyerap* + [O] *emisi karbon*. Penggunaan sinonim dan kata umum menjaga kepaduan tanpa pengulangan kaku sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengulang frasa *hutan bakau* berulang kali secara kaku di setiap awal kalimat. | Memvariasikan kata kunci setara: *hutan bakau* $\\rightarrow$ *mangrove* $\\rightarrow$ *vegetasi pesisir*. |\n| Penulisan kata serapan tidak baku: *ekosistem **mangroove*** atau ***abrassi*** pantai. | Penulisan kata serapan baku KBBI VI: *ekosistem **mangrove*** dan ***abrasi*** pantai. |\n\n**Strategi Eksekusi:** Identifikasi kata kunci utama pada kalimat pertama, lalu periksa penggunaan sinonim, hiponim, atau pengulangan terukur pada kalimat berikutnya sebagai pengikat makna.",
-      "kunci_pembeda": "Mengikat hubungan makna antarkalimat melalui pengulangan kata kunci terukur serta pemanfaatan sinonim atau kata umum yang sepadan.",
+      "stimulus_mini": "(1) Rehabilitasi hutan bakau di pesisir utara terbukti efektif meredam abrasi gelombang pasang. (2) Ekosistem **mangrove** tersebut juga berfungsi sebagai tempat bertelur berbagai jenis ikan dan udang. (3) Selain itu, **vegetasi pesisir** ini mampu menyerap emisi karbon jauh lebih besar daripada hutan daratan.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Pola:**\nLihat cara penulis mengikat topik tanpa mengulang kata yang membosankan: subjek kalimat (1) *hutan bakau* diikat kembali di kalimat (2) menjadi **[S]** *Ekosistem **mangrove** tersebut* + **[P]** *berfungsi*, lalu dipadankan di kalimat (3) menjadi **[S]** ***vegetasi pesisir** ini* + **[P]** *menyerap* + **[O]** *emisi karbon*. Penggunaan padanan kata yang setara menjaga kepaduan makna sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Jebakan Umum) | Benar (Sesuai Kaidah EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengulang frasa *hutan bakau* secara kaku di setiap awal kalimat. | Memakai variasi istilah yang setara: *hutan bakau* $\\rightarrow$ *mangrove* $\\rightarrow$ *vegetasi pesisir*. |\n| Menulis kata serapan tidak baku: *ekosistem **mangroove*** atau ***abrassi*** pantai. | Menulis kata serapan baku KBBI VI: *ekosistem **mangrove*** dan ***abrasi*** pantai. |\n\n**Strategi Eksekusi:** Tandai kata kunci utama pada kalimat pertama, lalu periksa apakah kalimat berikutnya memakai padanan kata, istilah sekelompok, atau pengulangan wajar yang masih satu topik.",
+      "kunci_pembeda": "Mengikat hubungan makna antarkalimat lewat pengulangan kata kunci terukur serta pemakaian padanan kata yang sepadan.",
       "visual": null
     }
   ],
@@ -206,7 +206,7 @@
         "E. (5)"
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "Paragraf tersebut membahas keunggulan dan prioritas pengembangan energi panas bumi sebagai sumber listrik bersih yang stabil. Kalimat (1), (2), (3), dan (5) terikat padu melalui pengulangan kata kunci *panas bumi* serta *energi terbarukan*. Sebaliknya, **kalimat (4)** membahas rencana pembangunan museum geologi untuk pariwisata sehingga menyimpang dari gagasan utama paragraf (**opsi D**).",
+      "bedah_cepat_markdown": "Paragraf ini fokus membahas keunggulan dan prioritas pengembangan energi panas bumi sebagai sumber listrik bersih yang stabil. Kalimat (1), (2), (3), dan (5) saling mengikat lewat kata kunci *panas bumi* serta *energi terbarukan*. Sebaliknya, **kalimat (4)** tiba-tiba membahas rencana pembangunan museum geologi untuk wisata sehingga keluar dari jalur utama (**opsi D**).",
       "visual": null
     },
     {
@@ -225,7 +225,7 @@
         "E. (2)-(4)-(3)-(1)"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat **(2)** berfungsi sebagai kalimat pembuka mandiri karena memperkenalkan fenomena umum tanpa kata rujukan mundur. Kalimat **(3)** menyusul langsung melalui frasa rujukan *Kondisi tersebut* yang mengacu pada alih fungsi lahan resapan pada kalimat (2). Selanjutnya, kalimat **(1)** menjelaskan dampak langsung aliran air ke drainase melalui penanda *Akibatnya*, lalu ditutup oleh kalimat **(4)** sebagai puncak peristiwa banjir. Jadi, urutan padunya adalah **(2)-(3)-(1)-(4)** (**opsi B**).",
+      "bedah_cepat_markdown": "Kalimat **(2)** paling tepat menjadi kalimat pembuka karena mengenalkan masalah utama tanpa kata rujukan mundur. Kalimat **(3)** langsung menyambung lewat frasa *Kondisi tersebut* yang merujuk pada alih fungsi lahan resapan di kalimat (2). Setelah itu, kalimat **(1)** menjelaskan dampak aliran air ke drainase lewat penanda *Akibatnya*, lalu ditutup kalimat **(4)** sebagai puncak kejadian banjir. Jadi, urutan padunya adalah **(2)-(3)-(1)-(4)** (**opsi B**).",
       "visual": null
     },
     {
@@ -244,7 +244,7 @@
         "E. tidak perlu dipecah"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Kalimat (1) hingga (3) fokus membahas manfaat kemudahan akses jurnal ilmiah melalui digitalisasi layanan perpustakaan. Pergeseran subtopik muncul tepat pada **kalimat (4)** yang ditandai konjungsi pertentangan *Namun*, beralih membahas kendala keterbatasan anggaran dan infrastruktur internet (dilanjutkan pada kalimat (5)). Pemecahan paragraf pada awal kalimat (4) menjaga kesatuan gagasan masing-masing paragraf (**opsi C**).",
+      "bedah_cepat_markdown": "Kalimat (1) sampai (3) kompak membahas manfaat kemudahan akses jurnal ilmiah lewat layanan perpustakaan digital. Arah pembicaraan bergeser tepat di **kalimat (4)** yang diawali kata penghubung pertentangan *Namun*, beralih membahas kendala anggaran dan koneksi internet (dilanjutkan pada kalimat (5)). Memecah paragraf di awal kalimat (4) menjaga kesatuan gagasan tiap paragraf (**opsi C**).",
       "visual": null
     }
   ]

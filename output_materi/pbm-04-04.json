@@ -9,130 +9,130 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Teks membahas dampak mikroplastik pada ekosistem laut dan rantai makanan manusia. Manakah penulisan dan cakupan judul yang sesuai standar EYD V?",
+      "pertanyaan_pemantik": "Sebuah artikel membahas bahaya mikroplastik bagi biota laut sekaligus dampaknya pada tubuh manusia. Judul mana yang paling pas dan sesuai aturan EYD V?",
       "opsi_cepat": [
         "Dampak Mikroplastik Pada Ekosistem Laut Dan Manusia",
         "Ancaman Mikroplastik bagi Ekosistem Laut dan Manusia"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Pada EYD V, preposisi (pada, bagi) dan konjungsi intrakalimat (dan) wajib ditulis huruf kecil di tengah judul, serta cakupan harus mewakili seluruh gagasan teks."
+      "penjelasan_kilat": "Menurut EYD V, kata depan (*pada, bagi*) dan kata hubung (*dan*) wajib ditulis huruf kecil jika berada di tengah judul. Cakupannya juga harus mewakili seluruh isi teks."
     },
-    "konsep_inti_markdown": "- **Judul Tepat:** Mencakup seluruh gagasan pokok (tidak terlalu sempit/luas), berbentuk frasa, dan mengikuti kaidah kapitalisasi EYD V (preposisi & konjungsi ditulis huruf kecil).\n- **Pengurutan Kalimat:** Susun dari pernyataan umum (deduktif) ke khusus, ikuti rantai pronomina (*ini, tersebut*), repetisi kata kunci, dan konjungsi antarkalimat.\n- **Penyisipan & Penutup:** Kalimat sisipan menjembatani kata kunci sebelum dan sesudahnya; kalimat penutup merangkum/menegaskan ide pokok tanpa memicu topik baru.",
+    "konsep_inti_markdown": "- **Judul Ideal:** Merangkum seluruh ide pokok (tidak terlalu sempit atau melebar), berbentuk frasa ringkas, dan taat kapitalisasi EYD V (kata depan & kata hubung di tengah judul ditulis huruf kecil).\n- **Urutan Kalimat:** Mulai dari pernyataan umum yang mandiri, lalu ikuti jejak kata tunjuk (*ini, tersebut*), pengulangan kata kunci, dan kata hubung antarkalimat.\n- **Sisipan & Penutup:** Kalimat sisipan menjembatani kata kunci sebelum dan sesudahnya. Kalimat penutup merangkum inti bacaan tanpa memunculkan topik baru.",
     "radar_jebakan_utbk": [
-      "Judul sudah merangkum isi teks secara akurat, tetapi salah karena mengapitalkan preposisi/konjungsi seperti 'Dalam', 'Bagi', atau 'Dan'.",
-      "Memilih kalimat penutup yang tampak menarik padahal memunculkan gagasan baru yang belum dibahas pada kalimat-kalimat sebelumnya."
+      "Isi judul sudah sangat akurat merangkum bacaan, tetapi keliru karena memakai huruf kapital pada kata depan atau kata hubung seperti *Dalam*, *Bagi*, atau *Dan*.",
+      "Tergoda memilih kalimat penutup yang terdengar inspiratif, padahal kalimat tersebut justru membuka topik baru yang tidak pernah dibahas sebelumnya."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Kaidah Penentuan Judul, Pengurutan, dan Penyisipan Kalimat",
-      "subjudul_ringkas": "Panduan aturan EYD V dan logika kepaduan wacana untuk menyunting judul serta struktur paragraf UTBK.",
+      "judul_blok": "Aturan Judul, Urutan Kalimat, dan Penyisipan Paragraf",
+      "subjudul_ringkas": "Panduan praktis EYD V dan logika alur bacaan untuk menyunting judul serta menyusun paragraf yang padu.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
-        "kolom_1": "Aturan / Kaidah",
-        "kolom_2": "Contoh Benar (1 Kalimat)",
-        "kolom_3": "Bentuk Salah / Jebakan UTBK"
+        "kolom_1": "Aturan Utama",
+        "kolom_2": "Penerapan yang Tepat",
+        "kolom_3": "Jebakan & Bentuk Keliru"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Kaidah Penentuan dan Kapitalisasi Judul (EYD V)",
-          "ringkasan_kelompok": "Aturan kelogisan cakupan isi, struktur frasa, dan penulisan huruf kapital judul.",
+          "nama_kelompok": "Aturan Cakupan dan Kapitalisasi Judul (EYD V)",
+          "ringkasan_kelompok": "Cara memilih judul yang mewakili seluruh isi teks dengan ejaan kapital yang baku.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Cakupan Gagasan Pokok yang Proporsional",
-              "penjelasan_singkat": "Judul harus mewakili keseluruhan ide pokok paragraf secara tepat tanpa menyempitkan atau memperluas makna bacaan.",
-              "contoh_penerapan": "Teks dampak mikroplastik pada ekosistem laut dan kesehatan manusia diberi judul **Dampak Ganda Mikroplastik bagi Laut dan Manusia**.",
+              "judul_poin": "Cakupan Gagasan yang Pas",
+              "penjelasan_singkat": "Judul wajib mewakili seluruh gagasan utama bacaan secara seimbang—tidak terlalu sempit dan tidak terlalu melebar.",
+              "contoh_penerapan": "Teks tentang bahaya mikroplastik bagi biota laut dan kesehatan manusia diberi judul **Dampak Ganda Mikroplastik bagi Laut dan Manusia**.",
               "jebakan_atau_catatan": "Jebakan: memilih **Bahaya Mikroplastik bagi Ikan** (terlalu sempit) atau **Pencemaran Lingkungan Global** (terlalu luas).",
               "visual": null
             },
             {
-              "judul_poin": "Struktur Frasa Nonkalimat yang Efektif",
-              "penjelasan_singkat": "Judul yang baik berbentuk frasa benda yang padat dan menarik, bukan kalimat lengkap berpola subjek-predikat.",
-              "contoh_penerapan": "Gagasan tentang cara kerja kecerdasan buatan dirumuskan menjadi frasa **Mekanisme Kerja Kecerdasan Buatan dalam Pendidikan**.",
-              "jebakan_atau_catatan": "Bentuk salah: **Kecerdasan Buatan Bekerja Membantu Pendidikan di Sekolah** karena berstruktur kalimat lengkap dan tidak ringkas.",
+              "judul_poin": "Berbentuk Frasa Ringkas, Bukan Kalimat",
+              "penjelasan_singkat": "Judul yang baik disusun dalam bentuk gabungan kata (frasa) yang padat, bukan kalimat lengkap berpola subjek-predikat.",
+              "contoh_penerapan": "Penjelasan tentang cara kerja kecerdasan buatan diringkas menjadi frasa **Mekanisme Kerja Kecerdasan Buatan dalam Pendidikan**.",
+              "jebakan_atau_catatan": "Keliru: **Kecerdasan Buatan Bekerja Membantu Pendidikan di Sekolah** karena berbentuk kalimat berita yang terlalu panjang.",
               "visual": null
             },
             {
-              "judul_poin": "Kapitalisasi Preposisi dan Konjungsi EYD V",
-              "penjelasan_singkat": "Semua kata diawali huruf kapital, kecuali preposisi dan konjungsi yang tidak berada pada posisi awal judul.",
-              "contoh_penerapan": "Penulisan judul yang sesuai EYD V adalah **Peran Teknologi Digital dalam Meningkatkan Literasi di Daerah Terpencil**.",
-              "jebakan_atau_catatan": "Salah: **Peran Teknologi Digital Dalam Meningkatkan Literasi Di Daerah Terpencil** (preposisi *dalam* dan *di* dikapitalkan).",
+              "judul_poin": "Huruf Kecil untuk Kata Depan dan Kata Hubung",
+              "penjelasan_singkat": "Semua kata diawali huruf kapital, kecuali kata depan (*di, ke, dari, pada, dalam, bagi, untuk*) dan kata hubung (*dan, atau, yang*) di posisi tengah.",
+              "contoh_penerapan": "Penulisan sesuai EYD V: **Peran Teknologi Digital dalam Meningkatkan Literasi di Daerah Terpencil**.",
+              "jebakan_atau_catatan": "Keliru: **Peran Teknologi Digital Dalam Meningkatkan Literasi Di Daerah Terpencil** (kata *dalam* dan *di* dikapitalkan).",
               "visual": null
             },
             {
-              "judul_poin": "Kapitalisasi Kata Ulang dalam Judul",
-              "penjelasan_singkat": "Kata ulang utuh ditulis kapital pada semua unsurnya, sedangkan kata ulang berimbuhan hanya dikapitalkan unsur pertamanya.",
-              "contoh_penerapan": "Bentuk baku judul meliputi **Kajian Undang-Undang Perlindungan Data** dan **Strategi Berjalan-jalan Sehat bagi Lansia**.",
-              "jebakan_atau_catatan": "Salah: **Kajian Undang-undang** (kurang kapital) atau **Strategi Berjalan-Jalan Sehat** (unsur kedua kata ulang berimbuhan tidak kapital).",
+              "judul_poin": "Kapitalisasi Kata Ulang pada Judul",
+              "penjelasan_singkat": "Kata ulang utuh memakai huruf kapital di semua unsurnya, sedangkan kata ulang berimbuhan hanya kapital pada unsur pertama.",
+              "contoh_penerapan": "Penulisan baku: **Kajian Undang-Undang Perlindungan Data** (utuh) dan **Strategi Berjalan-jalan Sehat bagi Lansia** (berimbuhan).",
+              "jebakan_atau_catatan": "Keliru: **Kajian Undang-undang** (kurang kapital) atau **Strategi Berjalan-Jalan Sehat** (unsur kedua tidak boleh kapital).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Kaidah Kohesi dan Koherensi Pengurutan Kalimat",
-          "ringkasan_kelompok": "Pola penyusunan kalimat acak menjadi paragraf ekspositoris atau argumentatif yang padu.",
+          "nama_kelompok": "Logika Menyusun Urutan Kalimat Acak",
+          "ringkasan_kelompok": "Trik merangkai kalimat acak menjadi satu paragraf yang mengalir mulus dan logis.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Alur Deduktif dari Umum ke Khusus",
-              "penjelasan_singkat": "Kalimat pertama paragraf deduktif berisi pernyataan umum atau definisi topik yang belum mengandung rujukan ke kalimat lain.",
-              "contoh_penerapan": "Urutan diawali kalimat **(1) Literasi finansial merupakan keterampilan dasar pengelolaan keuangan pribadi**, lalu diikuti rincian manfaatnya.",
-              "jebakan_atau_catatan": "Jebakan: meletakkan kalimat berpenanda **Kondisi tersebut membuat masyarakat...** di urutan pertama padahal rujukannya belum muncul.",
+              "judul_poin": "Mulai dari Pernyataan Umum yang Mandiri",
+              "penjelasan_singkat": "Kalimat pembuka paragraf umumnya berisi definisi atau gambaran luas topik dan belum memuat kata rujukan ke kalimat lain.",
+              "contoh_penerapan": "Paragraf diawali **(1) Literasi finansial merupakan keterampilan dasar mengelola keuangan pribadi**, lalu dilanjutkan rincian manfaatnya.",
+              "jebakan_atau_catatan": "Jebakan: menaruh kalimat **Kondisi tersebut membuat masyarakat...** di urutan pertama padahal rujukannya belum disebut.",
               "visual": null
             },
             {
-              "judul_poin": "Rantai Pronomina Penunjuk dan Persona",
-              "penjelasan_singkat": "Kata ganti seperti *ini, itu, tersebut,* dan *mereka* wajib diletakkan langsung setelah kalimat yang memuat antesedennya.",
+              "judul_poin": "Lacak Jejak Kata Ganti Penunjuk",
+              "penjelasan_singkat": "Kata tunjuk seperti *ini, itu, tersebut,* dan *mereka* harus langsung menempel setelah kalimat yang memuat objek rujukannya.",
               "contoh_penerapan": "Kalimat **Inflasi pangan melonjak tajam** langsung diikuti **Kenaikan tersebut menekan daya beli rumah tangga**.",
-              "jebakan_atau_catatan": "Salah urut jika **Kenaikan tersebut** mendahului kalimat yang menjelaskan faktor penyebab kenaikan harga pangan.",
+              "jebakan_atau_catatan": "Keliru jika **Kenaikan tersebut** diletakkan mendahului kalimat yang menjelaskan melonjaknya harga pangan.",
               "visual": null
             },
             {
-              "judul_poin": "Repetisi Kata Kunci Antarkalimat Berurutan",
-              "penjelasan_singkat": "Kepaduan antarkalimat dijaga melalui pengulangan kata kunci atau sinonim dari bagian akhir kalimat ke awal kalimat berikutnya.",
-              "contoh_penerapan": "Kalimat berakhir pada **...menghasilkan energi terbarukan**, lalu kalimat berikutnya dimulai dengan **Energi terbarukan ini mampu menekan emisi**.",
-              "jebakan_atau_catatan": "Jebakan: melompati kalimat yang mengulang kata kunci sehingga alur transisi antaride terasa terputus.",
+              "judul_poin": "Ikuti Pengulangan Kata Kunci",
+              "penjelasan_singkat": "Kepaduan antarkalimat dijaga dengan mengulang kata kunci atau padanan kata dari bagian akhir kalimat ke awal kalimat berikutnya.",
+              "contoh_penerapan": "Kalimat ditutup dengan **...menghasilkan energi terbarukan**, lalu kalimat berikutnya dibuka dengan **Energi terbarukan ini menekan emisi**.",
+              "jebakan_atau_catatan": "Jebakan: melompati kalimat yang mengulang kata kunci sehingga perpindahan ide antar-kalimat terasa patah.",
               "visual": null
             },
             {
-              "judul_poin": "Keselarasan Logika Konjungsi Antarkalimat",
-              "penjelasan_singkat": "Konjungsi antarkalimat menandai hubungan logis spesifik seperti pertentangan (*namun*), akibat (*oleh karena itu*), atau penguatan (*bahkan*).",
-              "contoh_penerapan": "Pernyataan **Curah hujan ekstrem melanda kota** diikuti kalimat **Oleh karena itu, pemerintah menyiagakan pompa banjir**.",
-              "jebakan_atau_catatan": "Salah logika jika menghubungkan dua kalimat sebab-akibat dengan konjungsi pertentangan seperti **Namun** atau **Sebaliknya**.",
+              "judul_poin": "Cocokkan Logika Kata Hubung Antarkalimat",
+              "penjelasan_singkat": "Kata hubung antarkalimat menandai hubungan makna yang tegas, seperti pertentangan (*namun*), akibat (*oleh karena itu*), atau penegasan (*bahkan*).",
+              "contoh_penerapan": "Pernyataan **Curah hujan ekstrem melanda kota** diikuti **Oleh karena itu, pemerintah menyiagakan pompa banjir**.",
+              "jebakan_atau_catatan": "Keliru jika menghubungkan dua kalimat sebab-akibat memakai kata hubung pertentangan seperti **Namun** atau **Sebaliknya**.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Kaidah Penyisipan dan Penutupan Paragraf",
-          "ringkasan_kelompok": "Aturan penentuan posisi kalimat sisipan dan syarat kalimat penutup yang logis.",
+          "nama_kelompok": "Aturan Menyisipkan dan Menutup Paragraf",
+          "ringkasan_kelompok": "Cara menemukan celah yang pas untuk kalimat baru serta memilih penutup yang tepat sasaran.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Jembatan Anteseden pada Penyisipan Kalimat",
-              "penjelasan_singkat": "Kalimat sisipan harus ditempatkan tepat setelah kalimat yang memperkenalkan istilah yang dirujuk oleh kalimat sisipan.",
+              "judul_poin": "Jembatan Istilah pada Kalimat Sisipan",
+              "penjelasan_singkat": "Kalimat sisipan wajib ditempatkan tepat setelah kalimat yang pertama kali memperkenalkan istilah yang dirujuknya.",
               "contoh_penerapan": "Sisipan **Metode ini meminimalkan limbah kimia** diletakkan tepat **setelah kalimat (2)** yang baru mengenalkan istilah **kimia hijau**.",
-              "jebakan_atau_catatan": "Salah: menyisipkan kalimat sebelum istilah rujukannya diperkenalkan atau terlalu jauh dari kalimat sumber rujukan.",
+              "jebakan_atau_catatan": "Keliru: menyisipkan kalimat sebelum istilah rujukannya muncul atau menaruhnya terlalu jauh dari kalimat sumber.",
               "visual": null
             },
             {
-              "judul_poin": "Keutuhan Pasangan Kausal-Kronologis saat Menyisipkan",
-              "penjelasan_singkat": "Penyisipan kalimat baru tidak boleh memisahkan dua kalimat asli yang memiliki hubungan sebab-akibat langsung atau kronologi ketat.",
-              "contoh_penerapan": "Kalimat penjelasan tambahan disisipkan **setelah kalimat (3)** agar tidak memutus kalimat (1) tentang penyebab dan (2) tentang akibatnya.",
-              "jebakan_atau_catatan": "Jebakan: menyisipkan kalimat di tengah pasangan kalimat berkonjungsi **Akibatnya** sehingga hubungan kausal menjadi kabur.",
+              "judul_poin": "Jangan Memutus Pasangan Sebab-Akibat",
+              "penjelasan_singkat": "Penyisipan kalimat baru dilarang membelah dua kalimat asli yang memiliki hubungan sebab-akibat langsung atau urutan waktu ketat.",
+              "contoh_penerapan": "Kalimat tambahan disisipkan **setelah kalimat (3)** agar tidak memisahkan kalimat (1) tentang penyebab dan (2) tentang akibatnya.",
+              "jebakan_atau_catatan": "Jebakan: menyelipkan kalimat di tengah pasangan kalimat berpenanda **Akibatnya** sehingga hubungan kausalnya terputus.",
               "visual": null
             },
             {
-              "judul_poin": "Kalimat Penutup sebagai Penegas Ide Pokok",
-              "penjelasan_singkat": "Kalimat penutup berfungsi merangkum atau menegaskan kembali gagasan utama paragraf secara selaras tanpa mengulang kalimat awal mentah-mentah.",
-              "contoh_penerapan": "Paragraf tentang manfaat transportasi publik ditutup dengan **Dengan demikian, angkutan massal menjadi solusi utama kemacetan kota**.",
-              "jebakan_atau_catatan": "Salah: memilih kalimat penutup yang hanya mengulang satu rincian contoh spesifik tanpa merangkum ide pokok.",
+              "judul_poin": "Kalimat Penutup Menegaskan Gagasan Utama",
+              "penjelasan_singkat": "Kalimat penutup bertugas menyimpulkan atau menegaskan ulang ide pokok paragraf secara selaras tanpa menyalin kalimat pertama mentah-mentah.",
+              "contoh_penerapan": "Paragraf manfaat transportasi publik ditutup dengan **Dengan demikian, angkutan massal menjadi solusi utama kemacetan kota**.",
+              "jebakan_atau_catatan": "Keliru: memilih kalimat penutup yang hanya mengulang satu contoh spesifik tanpa merangkum gagasan pokok.",
               "visual": null
             },
             {
-              "judul_poin": "Larangan Memunculkan Topik Baru di Akhir",
-              "penjelasan_singkat": "Kalimat penutup dilarang memperkenalkan variabel, subtopik, atau permasalahan baru yang sama sekali belum dibahas dalam paragraf.",
+              "judul_poin": "Dilarang Memunculkan Topik Baru di Akhir",
+              "penjelasan_singkat": "Kalimat penutup tidak boleh memperkenalkan pihak, masalah, atau subtopik baru yang sama sekali belum dibahas di kalimat sebelumnya.",
               "contoh_penerapan": "Teks efisiensi panel surya ditutup dengan **Pemanfaatan teknologi surya terbukti menekan biaya listrik rumah tangga**.",
               "jebakan_atau_catatan": "Jebakan: menutup teks panel surya dengan **Selain itu, tenaga angin juga potensial dikembangkan** (memicu topik baru).",
               "visual": null
@@ -145,37 +145,37 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Penentuan Judul Bacaan Paling Tepat Berdasarkan Cakupan Gagasan dan Kaidah Kapitalisasi Judul EYD V",
+      "nama_variasi": "Menentukan Judul Bacaan yang Tepat Cakupan dan Ejaannya (EYD V)",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Teks dua paragraf menguraikan mekanisme fotosintesis buatan untuk menyerap emisi karbon industri sekaligus menghasilkan bahan bakar hidrogen ramah lingkungan.",
-      "bedah_pola_markdown": "Judul yang tepat wajib memenuhi syarat **cakupan gagasan** (mewakili seluruh paragraf, tidak hanya paragraf pertama) dan **kapitalisasi EYD V** (semua kata diawali huruf kapital, kecuali preposisi dan konjungsi seperti *di, ke, dari, pada, dalam, bagi, untuk, dan, atau, yang* di posisi nonawal).\n\n| Aspek | Salah (Before) | Benar (After) | Analisis Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Kapitalisasi** | Fotosintesis Buatan **Untuk** Penyerapan Karbon **Dan** Produksi Hidrogen | Fotosintesis Buatan **untuk** Penyerapan Karbon **dan** Produksi Hidrogen | Preposisi *untuk* dan konjungsi *dan* wajib huruf kecil. |\n| **Cakupan & Pola** | **Cara Kerja** Fotosintesis Buatan [Klausa/Sempit] | **Peran Ganda** Fotosintesis Buatan [Frasa [S] Padat] | Mencakup fungsi penyerapan karbon dan produksi hidrogen. |\n\n**Langkah Eksekusi:**\n1. Temukan kata kunci yang berulang di setiap paragraf.\n2. Eliminasi opsi judul yang terlalu sempit (hanya bahas satu detail) atau terlalu luas.\n3. Pastikan bentuknya frasa nominal dan cek huruf kecil pada partikel/preposisi.",
-      "kunci_pembeda": "Judul berfokus pada penamaan keseluruhan isi teks dalam bentuk frasa baku berkaidah EYD V, bukan kalimat pernyataan simpulan.",
+      "stimulus_mini": "Teks dua paragraf menguraikan cara kerja fotosintesis buatan untuk menyerap emisi karbon industri sekaligus menghasilkan bahan bakar hidrogen ramah lingkungan.",
+      "bedah_pola_markdown": "Anggap saja kamu sedang menjadi editor media yang harus memberi judul artikel. Judul yang lolos seleksi wajib memenuhi dua syarat: **cakupannya pas** (mewakili semua paragraf, bukan paragraf pertama saja) dan **kapitalisasinya taat EYD V** (semua kata diawali huruf kapital, kecuali kata depan dan kata hubung seperti *di, ke, dari, pada, dalam, bagi, untuk, dan, atau, yang* di posisi tengah).\n\n| Aspek | Keliru (Before) | Tepat (After) | Alasan Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Kapitalisasi** | Fotosintesis Buatan **Untuk** Penyerapan Karbon **Dan** Produksi Hidrogen | Fotosintesis Buatan **untuk** Penyerapan Karbon **dan** Produksi Hidrogen | Kata depan *untuk* dan kata hubung *dan* wajib huruf kecil. |\n| **Cakupan & Bentuk** | **Cara Kerja** Fotosintesis Buatan [Terlalu Sempit] | **Peran Ganda** Fotosintesis Buatan [Frasa Padat] | Merangkum dua fungsi utama sekaligus: serap karbon dan hasilkan hidrogen. |\n\n**Langkah Pengerjaan:**\n1. Tandai kata kunci yang muncul berulang di setiap paragraf.\n2. Coret opsi judul yang hanya membahas satu detail kecil atau terlalu melebar dari isi teks.\n3. Pastikan judul berbentuk frasa ringkas dan cek huruf kecil pada setiap kata depan maupun kata hubung.",
+      "kunci_pembeda": "Judul berfokus menamai keseluruhan isi teks dalam bentuk frasa baku berkaidah EYD V, bukan kalimat simpulan panjang.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Pengurutan Kalimat Acak Menjadi Paragraf Ekspositoris/Argumentatif yang Padu dan Logis",
+      "nama_variasi": "Menyusun Kalimat Acak Menjadi Paragraf yang Padu dan Logis",
       "kategori_variasi": "Inti",
       "stimulus_mini": "(1) Akibatnya, laju penurunan muka tanah di pesisir utara meningkat tajam. (2) Eksploitasi air tanah berlebihan memicu kekosongan rongga akuifer. (3) Kondisi tersebut memperparah risiko banjir rob saat pasang laut.",
-      "bedah_pola_markdown": "Pengurutan kalimat menuntut **kohesi** (ikatan bentuk) dan **koherensi** (kepaduan makna). Kalimat pembuka tidak boleh diawali konjungsi antarkalimat (*oleh karena itu, namun*) atau pronomina penunjuk (*hal ini, tersebut*) yang merujuk ke luar paragraf.\n\n| Aspek | Salah (Before) | Benar (After) | Analisis Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Urutan Logis** | (1)-(2)-(3): Diawali *Akibatnya* [K] sebelum sebab muncul | (2)-(1)-(3): [S] *Eksploitasi air tanah* $\\rightarrow$ akibat (*Akibatnya*) $\\rightarrow$ dampak lanjut (*Kondisi tersebut*) | Alur kausalitas bergerak runtut dari sebab umum ke dampak spesifik. |\n| **Rujukan Kata** | *Kondisi tersebut* diletakkan sebelum penjelas penurunan tanah | *Kondisi tersebut* merujuk langsung pada penurunan muka tanah di kalimat (1) | Pronomina *tersebut* wajib menempel setelah nomina acuannya. |\n\n**Langkah Eksekusi:**\n1. Identifikasi kalimat utama yang bersifat umum dan bebas kata rujukan.\n2. Pasangkan kalimat berpola sebab-akibat atau repetisi kata kunci secara berantai.\n3. Uji kelancaran transisi konjungsi antarkalimat dari awal hingga akhir.",
-      "kunci_pembeda": "Pengurutan menyusun ulang seluruh kalimat acak yang tersedia dari awal hingga akhir dengan mengunci rantai referensi dan kausalitas.",
+      "bedah_pola_markdown": "Menyusun kalimat acak mirip seperti merangkai kepingan *puzzle*—setiap kalimat punya pengait bentuk dan makna. Kuncinya, kalimat pembuka tidak pernah diawali kata hubung antarkalimat (*oleh karena itu, namun*) atau kata tunjuk (*hal ini, tersebut*) yang merujuk ke luar paragraf.\n\n| Aspek | Keliru (Before) | Tepat (After) | Alasan Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Alur Sebab-Akibat** | (1)-(2)-(3): Diawali *Akibatnya* sebelum penyebabnya muncul | (2)-(1)-(3): *Eksploitasi air tanah* $\\rightarrow$ dampak awal (*Akibatnya*) $\\rightarrow$ dampak lanjut (*Kondisi tersebut*) | Alur logis bergerak runtut dari penyebab utama menuju dampak lanjutan. |\n| **Jejak Kata Rujukan** | *Kondisi tersebut* diletakkan sebelum penjelas penurunan tanah | *Kondisi tersebut* merujuk langsung pada penurunan muka tanah di kalimat (1) | Kata *tersebut* wajib menempel tepat setelah objek yang diacunya. |\n\n**Langkah Pengerjaan:**\n1. Cari kalimat paling umum yang berdiri mandiri tanpa kata tunjuk atau kata hubung antarkalimat.\n2. Pasangkan kalimat berpola sebab-akibat atau pengulangan kata kunci secara berantai.\n3. Baca ulang dari awal hingga akhir untuk memastikan transisi antar-kalimat terasa mulus.",
+      "kunci_pembeda": "Pengurutan menyusun ulang seluruh kalimat acak dari awal hingga akhir dengan mengunci rantai rujukan dan alur sebab-akibat.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Penentuan Posisi Penyisipan Kalimat Baru (Setelah Kalimat Ke-berapa) agar Alur Paragraf Menyatu",
+      "nama_variasi": "Menentukan Posisi Sisipan Kalimat Baru agar Alur Paragraf Menyatu",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Kalimat sisipan: \"Teknologi sensor tersebut mampu mendeteksi kebocoran pipa gas secara waktu nyata.\" Ditempatkan dalam paragraf tentang modernisasi jaringan distribusi energi.",
-      "bedah_pola_markdown": "Penyisipan kalimat berfungsi sebagai **jembatan semantis** antara dua kalimat yang mengalami lompatan ide. Perhatikan kata kunci akhir pada kalimat sebelum sisipan dan kata rujukan awal pada kalimat setelah sisipan.\n\n| Posisi | Salah (Before) | Benar (After) | Analisis Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Jembatan Ide** | Disisipkan setelah kalimat biaya perawatan pipa (topik anggaran) | Disisipkan setelah kalimat pemasangan [O] *sensor akustik pintar* | Frasa *Teknologi sensor tersebut* mengacu langsung pada *sensor akustik pintar*. |\n| **Alur Lanjutan** | Kalimat berikutnya membahas sejarah perusahaan gas | Kalimat berikutnya membahas respons cepat teknisi saat alarm berbunyi | Alur logis: pemasangan sensor $\\rightarrow$ fungsi deteksi $\\rightarrow$ tindakan teknisi. |\n\n**Langkah Eksekusi:**\n1. Bedah subjek dan objek kalimat sisipan untuk mencari kata kuncinya.\n2. Cari kalimat dalam teks yang memperkenalkan istilah tersebut pertama kali.\n3. Pastikan kalimat setelah sisipan melanjutkan gagasan dari kalimat sisipan tersebut.",
-      "kunci_pembeda": "Penyisipan mempertahankan susunan kalimat asli paragraf dan hanya mencari satu celah paling kohesif bagi kalimat baru.",
+      "bedah_pola_markdown": "Kalimat sisipan berperan sebagai **jembatan penghubung** di antara dua kalimat yang idenya terasa melompat. Cukup perhatikan kata kunci pada kalimat sebelum celah sisipan dan kata rujukan pada kalimat sesudahnya.\n\n| Posisi | Keliru (Before) | Tepat (After) | Alasan Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Jembatan Istilah** | Disisipkan setelah kalimat biaya perawatan pipa (topik anggaran) | Disisipkan setelah kalimat pemasangan *sensor akustik pintar* | Frasa *Teknologi sensor tersebut* merujuk langsung pada *sensor akustik pintar*. |\n| **Alur Lanjutan** | Kalimat berikutnya membahas sejarah perusahaan gas | Kalimat berikutnya membahas respons cepat teknisi saat alarm berbunyi | Alur menyatu: pasang sensor $\\rightarrow$ fungsi deteksi $\\rightarrow$ tindakan teknisi. |\n\n**Langkah Pengerjaan:**\n1. Bedah kalimat sisipan untuk menemukan kata kunci atau kata tunjuknya.\n2. Cari kalimat di dalam bacaan yang pertama kali memperkenalkan istilah tersebut.\n3. Cek kalimat setelahnya untuk memastikan alur cerita berlanjut secara alami.",
+      "kunci_pembeda": "Penyisipan mempertahankan susunan kalimat asli paragraf dan hanya mencari satu celah paling padu untuk kalimat baru.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Penentuan Kalimat Penutup Paragraf yang Menegaskan Gagasan Utama Tanpa Menambah Topik Baru",
+      "nama_variasi": "Memilih Kalimat Penutup Paragraf Tanpa Memunculkan Topik Baru",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Paragraf membahas efektivitas pembelajaran berbasis proyek dalam melatih kemampuan berpikir kritis dan kolaborasi siswa SMA.",
-      "bedah_pola_markdown": "Kalimat penutup wajib berfungsi sebagai **simpulan atau penegasan ulang** gagasan pokok paragraf. Kesalahan tersering adalah memilih kalimat yang terdengar solutif tetapi memunculkan variabel baru yang tidak dibahas di kalimat penjelas.\n\n| Kriteria | Salah (Before) | Benar (After) | Analisis Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Fokus Topik** | Oleh karena itu, pemerintah perlu [P] *menaikkan gaji guru* [O] di daerah. | Dengan demikian, [S] *metode proyek* [P] *terbukti efektif* mengasah daya kritis dan kolaborasi siswa. | Opsi salah menambah topik baru (*gaji guru*); opsi benar merangkum inti paragraf. |\n| **Konjungsi** | *Namun*, siswa sering kesulitan membagi waktu belajar. | *Oleh sebab itu*, penerapan model ini layak dioptimalkan di sekolah. | Penutup menggunakan konjungsi penyimpul (*dengan demikian, oleh sebab itu*), bukan pertentangan. |\n\n**Langkah Eksekusi:**\n1. Rangkum hubungan sebab-akibat dari kalimat pertama hingga kalimat terakhir.\n2. Eliminasi opsi yang memuat istilah atau aktor baru.\n3. Pilih kalimat berkonjungsi simpulan yang selaras dengan ide pokok.",
+      "bedah_pola_markdown": "Kalimat penutup berfungsi sebagai **kesimpulan atau penegasan ulang** gagasan pokok paragraf. Jebakan paling sering di UTBK adalah opsi jawaban yang terdengar bijak dan solutif, tetapi menyelipkan pihak atau topik baru yang tidak pernah dibahas di kalimat penjelas.\n\n| Kriteria | Keliru (Before) | Tepat (After) | Alasan Perbaikan |\n| :--- | :--- | :--- | :--- |\n| **Fokus Topik** | Oleh karena itu, pemerintah perlu *menaikkan gaji guru* di daerah. | Dengan demikian, *metode proyek terbukti efektif* mengasah daya kritis dan kolaborasi siswa. | Opsi keliru memunculkan topik baru (*gaji guru*); opsi tepat merangkum inti teks. |\n| **Kata Hubung** | *Namun*, siswa sering kesulitan membagi waktu belajar. | *Oleh sebab itu*, penerapan model ini layak dioptimalkan di sekolah. | Penutup memakai kata hubung penyimpul (*dengan demikian, oleh sebab itu*), bukan pertentangan. |\n\n**Langkah Pengerjaan:**\n1. Tangkap benang merah dari kalimat pertama hingga kalimat terakhir.\n2. Coret opsi yang menyebut istilah, aktor, atau masalah baru di luar pembahasan.\n3. Pilih kalimat berpenanda simpulan yang selaras dengan gagasan utama.",
       "kunci_pembeda": "Kalimat penutup mengunci dan merangkum gagasan utama di akhir paragraf tanpa membuka ruang pembahasan baru.",
       "visual": null
     }
@@ -196,7 +196,7 @@
         "E. Strategi Pemerintah Mengatasi Polusi Udara Melalui Bus Listrik"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Kalimat (1) dan (2) membahas manfaat/potensi bus listrik, sedangkan kalimat (3) menguraikan kendala/tantangannya. Opsi C mencakup kedua gagasan tersebut secara utuh serta menulis konjungsi *dan* dengan huruf kecil sesuai EYD V. Opsi A dan D salah kapitalisasi (*Dalam*, *Bagi*) dan cakupannya sempit; opsi B hanya mencakup kalimat (3); opsi E membahas strategi pemerintah yang tidak ada dalam teks.",
+      "bedah_cepat_markdown": "Mari kita cek isi tiap kalimat terlebih dahulu. Kalimat (1) dan (2) menyoroti manfaat serta potensi bus listrik, lalu kalimat (3) membalikkan keadaan dengan membahas kendala atau tantangannya.\n\n- **Opsi C tepat** karena merangkum kedua sisi tersebut (*Potensi dan Tantangan*) sekaligus menuliskan kata hubung *dan* dengan huruf kecil sesuai aturan EYD V.\n- **Opsi A dan D keliru** karena mengapitalkan kata depan (*Dalam*, *Bagi*) dan cakupannya hanya mengambil sebagian isi teks.\n- **Opsi B keliru** karena hanya mewakili kalimat (3), sedangkan **opsi E keliru** karena membahas strategi pemerintah yang sama sekali tidak disinggung dalam bacaan.",
       "visual": null
     },
     {
@@ -215,7 +215,7 @@
         "E. (1)-(2)-(4)-(3)"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat (2) merupakan gagasan umum bebas rujukan sehingga menjadi pembuka. Kalimat (4) menambahkan dampak iklim (*Selain itu*, kelembapan memicu hama). Kalimat (1) merujuk langsung pada kalimat (4) melalui frasa *Kondisi ini* yang menyebabkan gagal panen akibat hama baru. Kalimat (3) berkonjungsi *Oleh karena itu* berfungsi sebagai penutup yang merangkum solusi atas seluruh masalah.",
+      "bedah_cepat_markdown": "Kita cari dulu kalimat pembuka yang berdiri mandiri tanpa kata rujukan. Kalimat (1) punya kata tunjuk *Kondisi ini*, kalimat (3) dibuka *Oleh karena itu*, dan kalimat (4) dibuka *Selain itu*. Jadi, **kalimat (2)** wajib berada di urutan pertama.\n\nSelanjutnya, kita lacak jejak kata rujukan pada kalimat (1): *Kondisi ini membuat tanaman pangan rentan mengalami gagal panen akibat serangan hama baru*. Kata *hama baru* merujuk langsung pada *organisme pengganggu tanaman* di **kalimat (4)**. Artinya, pasangan berurutannya adalah **(4)-(1)**. Terakhir, **kalimat (3)** berpenanda *Oleh karena itu* mengunci paragraf sebagai penutup yang menyimpulkan solusi. Urutan paling padu adalah **(2)-(4)-(1)-(3)**.",
       "visual": null
     },
     {
@@ -227,7 +227,7 @@
       "pertanyaan_markdown": "Bacalah paragraf berikut!\n\n(1) Pemanfaatan kecerdasan buatan dalam bidang medis mempercepat proses analisis citra radiologi pasien. (2) Algoritma pemelajaran mesin dilatih menggunakan ribuan data pemindaian untuk mengenali pola anomali jaringan secara presisi. (3) Hasil deteksi dini ini membantu dokter menyusun rencana terapi yang jauh lebih akurat sebelum penyakit berkembang parah. (4) Meskipun demikian, keputusan klinis akhir tetap berada di tangan tenaga medis profesional.\n\nPerhatikan kalimat berikut: *Dengan kemampuan tersebut, sistem dapat menandai potensi tumor berukuran sangat kecil yang kerap luput dari pengamatan kasatmata.*\n\nKalimat tersebut paling tepat disisipkan setelah kalimat nomor .... (Tuliskan angka saja)",
       "opsi_jawaban": [],
       "kunci_jawaban": "2",
-      "bedah_cepat_markdown": "Kalimat sisipan memuat frasa rujukan *Dengan kemampuan tersebut* yang mengacu langsung pada kemampuan algoritma mengenali pola anomali secara presisi di kalimat (2). Selain itu, frasa *potensi tumor berukuran sangat kecil* menjadi jembatan logis menuju frasa *Hasil deteksi dini ini* pada kalimat (3). Dengan demikian, posisi paling padu adalah setelah kalimat nomor 2.",
+      "bedah_cepat_markdown": "Perhatikan frasa pembuka pada kalimat sisipan: *Dengan kemampuan tersebut*. Kata rujukan ini menuntut kalimat sebelumnya menjelaskan sebuah kemampuan spesifik.\n\nDi kalimat (2), disebutkan kemampuan algoritma *mengenali pola anomali jaringan secara presisi*. Selain itu, bagian akhir kalimat sisipan (*menandai potensi tumor berukuran sangat kecil*) menjadi jembatan mulus menuju frasa *Hasil deteksi dini ini* di awal kalimat (3). Jadi, posisi yang paling menyatu adalah setelah kalimat nomor **2**.",
       "visual": null
     }
   ]

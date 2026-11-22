@@ -6,21 +6,21 @@
   "klasifikasi_materi": "INTI",
   "indikator_klasifikasi_web": "Inti (Prioritas Utama UTBK)",
   "zona_1_peta_taktis": {
-    "estimasi_menit_baca": 7,
+    "estimasi_menit_baca": 6,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Survei terhadap 60 mahasiswa di Kantin Fakultas Teknik menunjukkan $90\\%$ menyukai kopi hitam tanpa gula. Apakah simpulan 'Mayoritas mahasiswa di universitas tersebut menyukai kopi hitam tanpa gula' bernilai pasti benar?",
+      "pertanyaan_pemantik": "Survei terhadap 60 mahasiswa di Kantin Fakultas Teknik menunjukkan $90\\%$ menyukai kopi hitam tanpa gula. Apakah kesimpulan 'Mayoritas mahasiswa di universitas tersebut menyukai kopi hitam tanpa gula' bernilai Pasti Benar?",
       "opsi_cepat": [
         "Pasti Benar",
         "Mungkin Benar (Belum Tentu)"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Sampel Kantin Fakultas Teknik belum tentu mewakili mahasiswa fakultas lain di seluruh universitas. Dalam generalisasi induktif UTBK, lompatan dari sampel terbatas ke populasi luas hanya menghasilkan peluang kebenaran (Mungkin Benar), bukan kepastian mutlak."
+      "penjelasan_kilat": "Sampel dari Kantin Fakultas Teknik belum tentu mewakili mahasiswa fakultas lain di seluruh universitas. Dalam generalisasi UTBK, lompatan dari sampel terbatas ke populasi luas hanya menghasilkan peluang (**Mungkin Benar**), bukan kepastian $100\\%$."
     },
-    "konsep_inti_markdown": "**Generalisasi induktif** menarik simpulan umum berdasarkan sejumlah fakta atau sampel khusus. Karena premis tidak mencakup seluruh anggota populasi, kebenarannya bersifat **probabilistik**.\n\n* **Alur Logika:** $\\text{Fakta Spesifik } (S_1, S_2, \\dots, S_n) \\rightarrow \\text{Asumsi Representatif} \\rightarrow \\text{Simpulan Umum}$\n* **Syarat Sahih:** Ukuran sampel memadai, dipilih secara acak (tidak bias), dan bebas bukti penyangkal (*counter-example*).\n* **Skala Kepastian:** Simpulan generalisasi yang valid maksimal berstatus **Mungkin Benar**, tidak pernah **Pasti Benar**.",
+    "konsep_inti_markdown": "**Generalisasi** adalah cara menarik kesimpulan umum dari beberapa fakta atau sampel khusus. Karena datanya tidak mencakup seluruh populasi, kebenarannya bersifat **peluang**.\n\n* **Alur Logika:** $\\text{Fakta Khusus } (S_1, S_2, \\dots, S_n) \\rightarrow \\text{Anggapan Mewakili} \\rightarrow \\text{Kesimpulan Umum}$\n* **Syarat Sah:** Jumlah sampel cukup, dipilih secara acak (tidak berat sebelah), dan tidak ada bukti penyangkal.\n* **Skala Kepastian:** Karena cuma berdasarkan sampel, kesimpulan generalisasi yang sah maksimal berstatus **Mungkin Benar**—tidak pernah **Pasti Benar**.",
     "radar_jebakan_utbk": [
-      "Menganggap simpulan hasil generalisasi dari sampel terbatas berstatus Pasti Benar pada soal 5 Skala Kepastian.",
-      "Melompatkan batas objek dan kuantor dari 'sebagian sampel di lokasi X' menjadi 'semua populasi di seluruh wilayah'."
+      "Menganggap kesimpulan generalisasi dari sampel terbatas berstatus Pasti Benar pada soal 5 Skala Kepastian.",
+      "Melompatkan batas jumlah atau wilayah dari 'sebagian sampel di lokasi X' menjadi 'semua populasi di seluruh wilayah'."
     ],
     "stimulus_utama_bersama": null,
     "visual": {
@@ -30,101 +30,101 @@
     },
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Sinyal Pola & Jebakan Generalisasi UTBK",
-      "subjudul_ringkas": "Taksonomi penanda kuantor, sinyal tren, dan ciri cacat logika untuk menguji validitas simpulan induktif.",
+      "subjudul_ringkas": "Panduan membaca kata penanda jumlah, sinyal tren, dan ciri cacat logika agar tidak terkecoh opsi jawaban.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
-        "kolom_2": "Contoh Potongan / Sinyal",
+        "kolom_2": "Contoh Kalimat / Sinyal",
         "kolom_3": "Cara Bedakan / Jebakan"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Penanda Kuantor & Proporsi Sampel",
-          "ringkasan_kelompok": "Memetakan skala bukti sampel ke penanda jumlah yang sah pada simpulan.",
+          "nama_kelompok": "Kata Penanda Jumlah & Proporsi Sampel",
+          "ringkasan_kelompok": "Mencocokkan besar kecilnya data sampel dengan kata jumlah yang tepat pada kesimpulan.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Penanda Kuantor Eksistensial (Sebagian / Mayoritas)",
-              "penjelasan_singkat": "Gunakan penanda *sebagian*, *mayoritas*, atau *umumnya* saat premis hanya memuat persentase atau sebagian anggota populasi.",
-              "contoh_penerapan": "Survei pada $500$ mahasiswa mencatat **$78\\%$ mengalami kelelahan mata**; simpulan: **Mayoritas** mahasiswa mengalami kelelahan mata.",
-              "jebakan_atau_catatan": "Opsi memakai kata mutlak *semua*, *seluruh*, atau *setiap* padahal proporsi sampel tidak mencapai $100\\%$.",
+              "judul_poin": "Kata Penanda Jumlah Sebagian (Sebagian vs Mayoritas)",
+              "penjelasan_singkat": "Gunakan kata *sebagian*, *mayoritas*, atau *umumnya* jika data cuma menunjukkan persentase di bawah $100\\%$.",
+              "contoh_penerapan": "Survei pada $500$ mahasiswa mencatat **$78\\%$ mengalami mata lelah**; kesimpulan: **Mayoritas** mahasiswa mengalami mata lelah.",
+              "jebakan_atau_catatan": "Opsi memakai kata mutlak *semua*, *seluruh*, atau *setiap* padahal angkanya tidak mencapai $100\\%$.",
               "visual": null
             },
             {
-              "judul_poin": "Ekstrapolasi Proporsi ke Populasi Setara",
-              "penjelasan_singkat": "Terapkan persentase sampel representatif pada populasi baru hanya dengan kata pembatas probabilistik seperti *cenderung* atau *berpotensi*.",
-              "contoh_penerapan": "Sebanyak **$65\\%$ responden** di kota A memilih transportasi daring; warga kota serupa **cenderung memilih** transportasi daring.",
-              "jebakan_atau_catatan": "Mengubah estimasi persentase menjadi angka pasti pada populasi baru tanpa kata peluang (misal: *pasti tepat $65\\%$*).",
+              "judul_poin": "Memperluas Persentase ke Kelompok Serupa",
+              "penjelasan_singkat": "Terapkan persentase sampel ke kelompok lain hanya dengan kata peluang seperti *cenderung* atau *berpotensi*.",
+              "contoh_penerapan": "Sebanyak **$65\\%$ responden** di kota A memilih ojek daring; warga kota serupa **cenderung memilih** ojek daring.",
+              "jebakan_atau_catatan": "Mengubah perkiraan persentase menjadi angka pasti di kota lain tanpa kata peluang (misal: *pasti tepat $65\\%$*).",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Kuantor Universal Bersyarat (Semua... yang...)",
-              "penjelasan_singkat": "Simpulan *semua* sah secara induktif hanya jika dibatasi ketat pada kelompok kecil yang seluruh anggotanya teramati.",
-              "contoh_penerapan": "Ketiga cabang toko X mengalami kenaikan omzet; simpulan: **Semua cabang toko X yang diaudit** mengalami kenaikan omzet.",
-              "jebakan_atau_catatan": "Menghilangkan klausa pembatas sehingga cakupan melebar menjadi *semua toko ritel di seluruh kota*.",
+              "judul_poin": "Kata Penanda 'Semua' yang Dibatasi Syarat",
+              "penjelasan_singkat": "Kata *semua* boleh dipakai jika dibatasi ketat hanya untuk kelompok kecil yang seluruh anggotanya sudah diamati.",
+              "contoh_penerapan": "Ketiga cabang toko X mengalami kenaikan omzet; kesimpulan: **Semua cabang toko X yang diaudit** mengalami kenaikan omzet.",
+              "jebakan_atau_catatan": "Menghapus syarat pembatas sehingga maknanya melebar menjadi *semua toko ritel di seluruh kota*.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Negasi Parsial (Tidak Semua)",
-              "penjelasan_singkat": "Temuan satu pengecualian dalam sampel langsung membatalkan generalisasi universal dan memaksa pemakaian penanda *tidak semua*.",
-              "contoh_penerapan": "Empat varietas padi tahan hama, tetapi **varietas kelima gagal panen**; simpulan: **Tidak semua** varietas padi tahan hama.",
-              "jebakan_atau_catatan": "Menyimpulkan *semua varietas padi rentan hama* (generalisasi terbalik hanya dari satu kasus gagal).",
+              "judul_poin": "Kata Penanda Pengecualian (Tidak Semua)",
+              "penjelasan_singkat": "Satu saja bukti penyangkal di dalam data langsung menggugurkan kata *semua* dan mengubahnya menjadi *tidak semua*.",
+              "contoh_penerapan": "Empat jenis padi tahan hama, tetapi **jenis kelima gagal panen**; kesimpulan: **Tidak semua** jenis padi tahan hama.",
+              "jebakan_atau_catatan": "Menyimpulkan *semua jenis padi rentan hama* hanya karena ada satu kasus yang gagal.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Sinyal Tren Kualitatif & Prediksi Kemungkinan",
-          "ringkasan_kelompok": "Menangkap pola berulang lintas waktu atau kelompok untuk memprediksi peluang kejadian berikutnya.",
+          "nama_kelompok": "Sinyal Tren & Prediksi Kemungkinan",
+          "ringkasan_kelompok": "Menangkap pola berulang dari waktu ke waktu untuk menebak peluang kejadian berikutnya.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Sinyal Tren Konsisten Lintas Waktu",
-              "penjelasan_singkat": "Identifikasi kata kerja perubahan berulang (*meningkat*, *menurun*, *bergeser*) pada beberapa periode untuk memproyeksikan arah periode berikutnya.",
-              "contoh_penerapan": "Penjualan buku digital **naik berturut-turut pada $2022$–$2024$**; simpulan: Minat baca digital **diprediksi terus meningkat**.",
-              "jebakan_atau_catatan": "Memprediksi pembalikan tren tajam atau lonjakan persentase spesifik (misal: *naik $50\\%$*) tanpa dasar laju di teks.",
+              "penjelasan_singkat": "Tangkap kata perubahan berulang (*meningkat*, *menurun*) dalam beberapa tahun untuk memprediksi arah berikutnya.",
+              "contoh_penerapan": "Penjualan buku digital **naik berturut-turut pada $2022$–$2024$**; kesimpulan: Minat baca digital **diprediksi terus meningkat**.",
+              "jebakan_atau_catatan": "Menebak tren tiba-tiba berbalik turun atau melonjak dengan angka spesifik (misal: *naik $50\\%$*) tanpa dasar di teks.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Pola Lintas Kelompok (Analogi Induktif)",
-              "penjelasan_singkat": "Tarik kesamaan sifat umum apabila beberapa subkelompok berbeda menunjukkan respons serupa terhadap perlakuan yang sama.",
-              "contoh_penerapan": "Pekerja sektor kreatif, teknologi, dan perbankan **lebih produktif saat kerja hibrida**; pekerja kantoran **umumnya cocok** dengan kerja hibrida.",
-              "jebakan_atau_catatan": "Menggeneralisasi ke sektor fisik (misal: buruh pabrik) yang tidak memiliki kesamaan karakteristik kerja dengan sampel.",
+              "judul_poin": "Sinyal Kesamaan Pola Lintas Kelompok",
+              "penjelasan_singkat": "Tarik kesimpulan umum jika beberapa kelompok berbeda menunjukkan hasil yang sama terhadap perlakuan serupa.",
+              "contoh_penerapan": "Pekerja kreatif, teknologi, dan perbankan **lebih produktif saat kerja hibrida**; pekerja kantoran **umumnya cocok** dengan kerja hibrida.",
+              "jebakan_atau_catatan": "Menyamakan hasilnya ke pekerja lapangan (misal: buruh pabrik) yang cara kerjanya jauh berbeda dari sampel.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Modalitas Prediktif (Paling Mungkin Benar)",
-              "penjelasan_singkat": "Pilih opsi berpenanda modalitas lunak (*mungkin*, *berpeluang*, *berpotensi*) sebagai jawaban terkuat pada soal prediksi kasus baru.",
+              "judul_poin": "Kata Peluang untuk Prediksi (Paling Mungkin Benar)",
+              "penjelasan_singkat": "Pilih opsi dengan kata peluang lunak (*mungkin*, *berpeluang*, *berpotensi*) pada soal prediksi kejadian baru.",
               "contoh_penerapan": "Pasien A, B, dan C pulih cepat setelah terapi tidur; pasien D **berpotensi pulih cepat** dengan terapi serupa.",
-              "jebakan_atau_catatan": "Terkecoh opsi berpenanda kepastian mutlak (*pasti*, *niscaya*, *mutlak*) yang melampaui sifat probabilistik penalaran induktif.",
+              "jebakan_atau_catatan": "Terkecoh opsi dengan kata kepastian mutlak (*pasti*, *niscaya*, *mutlak*) yang melampaui logika peluang.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Penanda Cacat Generalisasi Terburu-buru",
-          "ringkasan_kelompok": "Mendeteksi bukti tidak memadai atau bias yang menggugurkan keabsahan simpulan umum.",
+          "nama_kelompok": "Ciri Cacat Generalisasi Terburu-buru",
+          "ringkasan_kelompok": "Mendeteksi bukti terlalu sedikit atau berat sebelah yang membuat kesimpulan umum menjadi tidak sah.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Sinyal Sampel Tunggal atau Anekdotal",
-              "penjelasan_singkat": "Waspadai klaim umum yang hanya bertumpu pada pengalaman pribadi, satu kasus viral, atau frasa *salah seorang*.",
-              "contoh_penerapan": "**Dua teman sekelasku** sukses tanpa kuliah; jadi, **pendidikan tinggi tidak lagi berguna** bagi generasi muda.",
-              "jebakan_atau_catatan": "Menganggap argumen sah karena kasusnya nyata, padahal ukuran sampel ($n = 2$) terlalu kecil mewakili populasi.",
+              "judul_poin": "Sinyal Sampel Tunggal atau Cerita Pribadi",
+              "penjelasan_singkat": "Waspadai klaim umum yang cuma mengandalkan pengalaman pribadi, satu kasus viral, atau frasa *salah seorang*.",
+              "contoh_penerapan": "**Dua teman sekelasku** sukses tanpa kuliah; jadi, **pendidikan tinggi tidak lagi berguna** bagi anak muda.",
+              "jebakan_atau_catatan": "Menganggap argumen sah karena kisahnya nyata, padahal sampel ($n = 2$) terlalu kecil mewakili jutaan anak muda.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Bias Seleksi Sampel (Tidak Acak)",
-              "penjelasan_singkat": "Generalisasi cacat jika penarikan simpulan populasi luas berasal dari lokasi atau kelompok yang sudah tersaring.",
-              "contoh_penerapan": "Survei **di depan gerai kopi premium** menyimpulkan **$90\\%$ warga kota** sanggup membeli kopi mahal setiap hari.",
-              "jebakan_atau_catatan": "Terpaku pada tingginya persentase ($90\\%$) dan lupa memeriksa bias lokasi pengambilan sampel.",
+              "judul_poin": "Sinyal Sampel Berat Sebelah (Tidak Acak)",
+              "penjelasan_singkat": "Kesimpulan cacat jika survei populasi luas diambil dari lokasi atau kelompok yang sudah tersaring sejak awal.",
+              "contoh_penerapan": "Survei **di depan kedai kopi mahal** menyimpulkan **$90\\%$ warga kota** sanggup membeli kopi mahal setiap hari.",
+              "jebakan_atau_catatan": "Silau oleh tingginya persentase ($90\\%$) dan lupa mengecek lokasi pengambilan survei yang sudah bias.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Pengabaian Pengecualian (Counter-Example)",
-              "penjelasan_singkat": "Cacat terjadi saat penulis memaksakan label mutlak sambil menyembunyikan data penyangkal yang tertulis di premis.",
+              "judul_poin": "Mengabaikan Bukti Penyangkal di Teks",
+              "penjelasan_singkat": "Cacat terjadi saat kesimpulan memakai kata mutlak sambil mengabaikan data kegagalan yang tertulis jelas di teks.",
               "contoh_penerapan": "Meski **empat dari sepuluh peserta gagal**, pelatih menyimpulkan **metode latihannya selalu berhasil** mencetak juara.",
-              "jebakan_atau_catatan": "Membenarkan simpulan dengan alasan *mayoritas ($60\\%$) berhasil*, padahal kata *selalu* gugur oleh satu pengecualian.",
+              "jebakan_atau_catatan": "Membenarkan kesimpulan dengan alasan *mayoritas ($60\\%$) berhasil*, padahal kata *selalu* gugur oleh satu kegagalan saja.",
               "visual": null
             }
           ]
@@ -135,47 +135,47 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Simpulan Proporsi Sampel ke Populasi (Generalisasi Statistik)",
+      "nama_variasi": "Memperluas Proporsi Sampel ke Populasi (Generalisasi Statistik)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Berdasarkan survei Dinas Perhubungan terhadap 400 pengguna kereta komuter di Stasiun Sudirman, sebanyak $78\\%$ responden memilih kereta karena waktu tempuh lebih pasti dibandingkan kendaraan pribadi. Peneliti menyimpulkan bahwa sebagian besar komuter di wilayah Jabodetabek menggunakan kereta demi kepastian waktu tempuh.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik ($78\\%$ dari 400 sampel pengguna kereta di Stasiun Sudirman mengutamakan kepastian waktu tempuh) $\\rightarrow$ Asumsi Jembatan (400 responden di satu stasiun cukup mewakili seluruh populasi komuter Jabodetabek) $\\rightarrow$ Simpulan (Sebagian besar komuter Jabodetabek memilih kereta karena kepastian waktu).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| $78\\%$ dari 400 sampel memilih kepastian waktu | Semua komuter Jabodetabek mengutamakan ketepatan waktu |\n| Pengamatan dilakukan pada komuter kereta | Pengguna bus dan ojek daring memiliki alasan serupa |\n\n**Uji Kepastian:** Padankan proporsi kuantitatif ($78\\% > 50\\% = \\text{sebagian besar}$) dan batasi objek pada populasi sejenis. Karena sampel diambil dari satu stasiun tanpa jaminan keterwakilan seluruh wilayah, simpulan ini berstatus **Mungkin Benar**. Sebaliknya, klaim mengenai *semua* komuter atau pengguna moda transportasi lain melampaui bukti sehingga berstatus **Mungkin Salah** atau **Tidak Relevan**.",
-      "kunci_pembeda": "Memproyeksikan persentase atau proporsi dari kelompok sampel terbatas menuju keseluruhan populasi target yang sejenis.",
+      "bedah_pola_markdown": "**Cara Berpikir:**\n1. **Cek Fakta:** Sebanyak $78\\%$ dari 400 pengguna kereta di Stasiun Sudirman mengutamakan kepastian waktu tempuh.\n2. **Cek Lompatan:** Peneliti menganggap 400 orang di satu stasiun sudah cukup mewakili seluruh komuter se-Jabodetabek.\n3. **Tentukan Status:** Angka $78\\%$ sudah tepat diterjemahkan menjadi *sebagian besar* ($>50\\%$), dan objeknya masih sama (komuter kereta).\n\n| Fakta di Teks | Lompatan Berlebih (Salah) |\n| :--- | :--- |\n| $78\\%$ dari 400 sampel memilih kepastian waktu | **Semua** komuter Jabodetabek mengutamakan ketepatan waktu |\n| Pengamatan khusus pada pengguna kereta | Pengguna bus dan ojek daring memiliki alasan serupa |\n\n**Kesimpulan Uji:** Karena sampel cuma diambil dari satu stasiun tanpa jaminan mewakili seluruh Jabodetabek, kesimpulan peneliti berstatus **Mungkin Benar**. Sebaliknya, jika ada opsi yang menyebut *semua* komuter atau pengguna kendaraan lain, statusnya otomatis melampaui bukti (**Mungkin Salah** atau **Tidak Relevan**).",
+      "kunci_pembeda": "Memproyeksikan persentase dari kelompok sampel terbatas menuju populasi target yang sejenis.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Generalisasi Tren Data Kualitatif Lintas Waktu/Kelompok",
+      "nama_variasi": "Generalisasi Tren Kualitatif Lintas Waktu atau Kelompok",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Selama empat kuartal berturut-turut, perusahaan rintisan X, Y, dan Z menerapkan sistem kerja empat hari seminggu dan mencatat penurunan tingkat pengunduran diri karyawan serta peningkatan kepuasan kerja. Analis ketenagakerjaan menyimpulkan bahwa skema kerja empat hari seminggu efektif menjaga retensi talenta di sektor perusahaan rintisan.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Perusahaan rintisan X, Y, dan Z mengalami penurunan *turnover* dan kenaikan kepuasan kerja selama empat kuartal lewat skema empat hari kerja) $\\rightarrow$ Asumsi Jembatan (Karakteristik operasional X, Y, dan Z serupa dengan perusahaan rintisan lain dalam jangka panjang) $\\rightarrow$ Simpulan (Skema empat hari kerja efektif menjaga retensi talenta perusahaan rintisan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Teramati pada 3 perusahaan selama 4 kuartal | Berlaku permanen bagi seluruh perusahaan di semua sektor |\n| Pengunduran diri turun dan kepuasan naik | Keuntungan bersih dan omzet perusahaan pasti meningkat |\n\n**Uji Kepastian:** Evaluasi konsistensi pola antar-kelompok dan rentang waktu pengamatan tanpa menambah variabel baru. Simpulan mengenai efektivitas retensi talenta pada sektor yang sama berstatus **Mungkin Benar**. Klaim bahwa kebijakan ini pasti menaikkan keuntungan finansial perusahaan bernilai **Tidak Relevan** karena tidak tercantum dalam premis observasi.",
-      "kunci_pembeda": "Menarik kaidah umum dari pola perubahan kualitatif yang konsisten lintas beberapa entitas atau periode waktu.",
+      "bedah_pola_markdown": "**Cara Berpikir:**\n1. **Cek Fakta:** Tiga perusahaan rintisan (X, Y, dan Z) mencatat karyawan lebih betah dan puas selama empat kuartal berturut-turut.\n2. **Cek Lompatan:** Analis menganggap pola sukses di tiga perusahaan ini juga berlaku pada perusahaan rintisan lainnya.\n3. **Tentukan Status:** Polanya konsisten lintas waktu (4 kuartal) dan lintas kelompok (3 perusahaan) pada bidang yang sama.\n\n| Fakta di Teks | Lompatan Berlebih (Salah) |\n| :--- | :--- |\n| Teramati pada 3 perusahaan selama 4 kuartal | Berlaku permanen bagi seluruh perusahaan di semua bidang |\n| Pengunduran diri turun dan kepuasan naik | Keuntungan bersih dan omzet perusahaan pasti meningkat |\n\n**Kesimpulan Uji:** Kesimpulan bahwa sistem ini efektif menahan karyawan di sektor perusahaan rintisan berstatus **Mungkin Benar**. Sebaliknya, klaim bahwa kebijakan ini pasti menaikkan laba perusahaan bernilai **Tidak Relevan** karena soal keuangan tidak dibahas sama sekali di teks.",
+      "kunci_pembeda": "Menarik aturan umum dari pola perubahan yang konsisten pada beberapa kelompok atau periode waktu.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Identifikasi Cacat Generalisasi Terburu-buru (Hasty Generalization)",
+      "nama_variasi": "Mendeteksi Cacat Generalisasi Terburu-buru",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Seorang pembeli memesan tiga kotak buah mangga dari penjual daring K dan menemukan dua buah di antaranya memar pada lapisan paling atas. Pembeli tersebut langsung memberikan ulasan bahwa seluruh buah mangga yang dijual toko K berkualitas buruk dan tidak layak konsumsi.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Ditemukan 2 buah mangga memar pada lapisan atas dari pesanan 3 kotak) $\\rightarrow$ Asumsi Jembatan (Kondisi dua buah teratas mewakili seluruh stok dagangan penjual K) $\\rightarrow$ Simpulan Cacat (Seluruh mangga di toko K berkualitas buruk dan tidak layak konsumsi).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Hanya 2 buah memar di bagian atas kemasan | Seluruh stok mangga penjual K rusak total |\n| Buah mengalami memar fisik kemasan | Semua buah busuk dan tidak layak konsumsi |\n\n**Uji Kepastian:** Identifikasi cacat *Hasty Generalization* melalui ukuran sampel yang ekstrem kecil ($n = 2$) dan kondisi pengamatan yang bias (lapisan teratas rawan benturan pengiriman). Karena simpulan menyamaratakan seluruh populasi secara mutlak dari bukti mikro, klaim *seluruh buah berkualitas buruk* berstatus **Mungkin Salah**, dan berubah menjadi **Pasti Salah** apabila terdapat bukti satu buah saja yang segar.",
-      "kunci_pembeda": "Mendeteksi kesesatan logika akibat menarik kesimpulan mutlak dari ukuran sampel yang sangat minim atau bias.",
+      "bedah_pola_markdown": "**Cara Berpikir:**\n1. **Cek Fakta:** Pembeli cuma menemukan 2 buah mangga memar di lapisan teratas dari pesanan 3 kotak.\n2. **Cek Lompatan:** Pembeli menyamaratakan kondisi 2 buah teratas tersebut sebagai kondisi *seluruh* stok mangga toko K.\n3. **Tentukan Status:** Ukuran sampel sangat kecil ($n = 2$) dan posisinya bias (lapisan paling atas paling rawan terbentur saat pengiriman).\n\n| Fakta di Teks | Lompatan Berlebih (Salah) |\n| :--- | :--- |\n| Hanya 2 buah memar di bagian atas kemasan | **Seluruh** stok mangga penjual K rusak total |\n| Buah mengalami memar kulit luar | Semua buah busuk dan tidak layak dimakan |\n\n**Kesimpulan Uji:** Penarikan kesimpulan mutlak dari bukti mikro seperti ini disebut cacat generalisasi terburu-buru. Klaim *seluruh buah berkualitas buruk* berstatus **Mungkin Salah**, dan langsung berubah menjadi **Pasti Salah** jika terbukti ada satu buah saja yang segar.",
+      "kunci_pembeda": "Menemukan kesesatan logika akibat menarik kesimpulan mutlak dari sampel yang terlalu sedikit atau berat sebelah.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Prediksi Kemungkinan (Paling Mungkin Benar) dari Pola Kasus Spesifik",
+      "nama_variasi": "Prediksi Kejadian (Paling Mungkin Benar) dari Pola Berulang",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Catatan Badan Meteorologi menunjukkan bahwa setiap kali suhu permukaan laut di perairan selatan meningkat lebih dari $2^{\\circ}\\text{C}$ disertai angin baratan kencang, wilayah pesisir selalu dilanda gelombang tinggi dalam dua hari berikutnya. Hari ini terpantau kenaikan suhu laut $2,5^{\\circ}\\text{C}$ dan angin baratan bertiup kencang.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (Pola historis: kenaikan suhu laut $>2^{\\circ}\\text{C}$ dan angin baratan kencang $\\rightarrow$ gelombang tinggi dalam 2 hari; kondisi hari ini memenuhi kedua syarat tersebut) $\\rightarrow$ Asumsi Jembatan (Dinamika atmosfer dan perairan tetap bekerja mengikuti pola preseden masa lalu) $\\rightarrow$ Simpulan Prediktif (Wilayah pesisir paling mungkin dilanda gelombang tinggi dalam dua hari ke depan).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| Suhu naik $2,5^{\\circ}\\text{C}$ dan angin baratan kencang | Gelombang tinggi pasti menenggelamkan seluruh pelabuhan |\n| Preseden memicu gelombang tinggi dalam 2 hari | Ketinggian gelombang dipastikan melampaui 5 meter |\n\n**Uji Kepastian:** Proyeksi kejadian masa depan dalam penalaran induktif tidak pernah bersifat mutlak sehingga opsi **Pasti Benar** otomatis gugur. Pilih prediksi yang mempertahankan variabel akibat secara persis tanpa menambah rincian ekstrem baru, dengan status kebenaran **Mungkin Benar** (*Paling Mungkin Benar*).",
-      "kunci_pembeda": "Memproyeksikan peristiwa mendatang berdasarkan berulangnya kombinasi kondisi syarat yang identik di masa lampau.",
+      "bedah_pola_markdown": "**Cara Berpikir:**\n1. **Pola Masa Lalu:** Suhu laut naik $>2^{\\circ}\\text{C}$ + angin baratan kencang $\\rightarrow$ gelombang tinggi dalam 2 hari.\n2. **Kondisi Hari Ini:** Suhu naik $2,5^{\\circ}\\text{C}$ ($>2^{\\circ}\\text{C}$) + angin baratan kencang. Kedua syarat terpenuhi persis.\n3. **Tentukan Status:** Karena alam bisa berubah, prediksi masa depan tidak pernah pasti $100\\%$, melainkan berstatus **Mungkin Benar** (*Paling Mungkin Benar*).\n\n| Fakta di Teks | Lompatan Berlebih (Salah) |\n| :--- | :--- |\n| Suhu naik $2,5^{\\circ}\\text{C}$ dan angin baratan kencang | Gelombang tinggi **pasti** menenggelamkan pelabuhan |\n| Pola lama memicu gelombang tinggi dalam 2 hari | Tinggi gelombang dipastikan melampaui 5 meter |\n\n**Kesimpulan Uji:** Buang semua opsi yang memakai kata pasti atau menambahkan dampak ekstrem baru (seperti pelabuhan tenggelam atau tinggi 5 meter). Pilih opsi yang mengulang akibat aslinya (*gelombang tinggi dalam dua hari ke depan*) dengan kata peluang.",
+      "kunci_pembeda": "Memprediksi kejadian mendatang berdasarkan berulangnya syarat yang identik di masa lampau.",
       "visual": null
     },
     {
       "nomor_variasi": 5,
-      "nama_variasi": "Pembatasan Kuantor Simpulan (Sebagian vs Semua) Berdasarkan Bukti Empiris",
+      "nama_variasi": "Menjaga Batas Kata Jumlah (Sebagian vs Semua)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Laporan evaluasi Dinas Pendidikan terhadap 50 sekolah menengah di Kabupaten M mencatat bahwa 38 sekolah telah menerapkan laboratorium virtual berbasis daring, sedangkan 12 sekolah lainnya masih memakai modul cetak. Seluruh sekolah yang menerapkan laboratorium virtual terbukti mengalami peningkatan nilai rata-rata praktikum.",
-      "bedah_pola_markdown": "**Alur Penalaran:** Fakta Spesifik (38 dari 50 sekolah memakai laboratorium virtual dan semuanya mengalami kenaikan nilai praktikum; 12 sekolah memakai modul cetak) $\\rightarrow$ Asumsi Jembatan (Data evaluasi mencerminkan capaian aktual seluruh sampel sekolah) $\\rightarrow$ Simpulan Berkuantor (Sebagian sekolah menengah di Kabupaten M mengalami peningkatan nilai praktikum).\n\n| Fakta Eksplisit | Asumsi Berlebih |\n| :--- | :--- |\n| 38 sekolah virtual naik nilai praktikumnya | Semua sekolah di Kabupaten M naik nilai praktikumnya |\n| 12 sekolah masih menggunakan modul cetak | Sekolah bermodul cetak pasti turun nilai praktikumnya |\n\n**Uji Kepastian:** Sesuaikan kuantor simpulan dengan cakupan bukti empiris: bukti sebagian ($38/50$) hanya mengizinkan kuantor **sebagian/beberapa**, tidak boleh **semua/seluruh**. Pernyataan *'Semua sekolah mengalami kenaikan nilai'* bernilai **Pasti Salah** apabila 12 sekolah sisanya diketahui tidak naik, sedangkan klaim *'Sekolah modul cetak gagal meningkat'* bernilai **Mungkin Benar** karena belum diuji dalam premis.",
-      "kunci_pembeda": "Menjaga ketepatan kuantor logika agar simpulan tidak melampaui proporsi bukti dari 'sebagian' menjadi 'semua'.",
+      "bedah_pola_markdown": "**Cara Berpikir:**\n1. **Pilah Data:** Total ada 50 sekolah. Sebanyak 38 sekolah memakai lab virtual (semuanya naik nilai), dan 12 sekolah memakai modul cetak (hasil nilainya tidak diceritakan).\n2. **Batasi Kata Jumlah:** Karena yang terbukti naik nilainya cuma 38 dari 50 sekolah, kesimpulan untuk Kabupaten M hanya boleh memakai kata **sebagian**.\n3. **Cek Sisa Kelompok:** Nasib nilai 12 sekolah bermodul cetak belum diketahui dari teks.\n\n| Fakta di Teks | Lompatan Berlebih (Salah) |\n| :--- | :--- |\n| 38 sekolah virtual naik nilai praktikumnya | **Semua** sekolah di Kabupaten M naik nilai praktikumnya |\n| 12 sekolah masih menggunakan modul cetak | Sekolah bermodul cetak **pasti turun** nilai praktikumnya |\n\n**Kesimpulan Uji:** Pernyataan *'Sebagian sekolah di Kabupaten M mengalami kenaikan nilai praktikum'* bernilai **Pasti Benar** karena merangkum fakta 38 dari 50 sekolah. Sebaliknya, klaim *'Sekolah modul cetak gagal meningkat'* bernilai **Mungkin Benar** karena datanya belum diuji di teks.",
+      "kunci_pembeda": "Menjaga ketepatan kata jumlah agar kesimpulan tidak melebar dari 'sebagian' menjadi 'semua'.",
       "visual": null
     }
   ],
@@ -196,7 +196,7 @@
         "E. Penurunan tarif kereta rel listrik akan membuat seluruh pengguna kendaraan pribadi di Jakarta Pusat beralih ke kereta."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Proporsi $84\\%$ ($>50\\%$) pada sampel pekerja komuter Jakarta Pusat diterjemahkan secara akurat dengan kuantor **sebagian besar** pada populasi target yang sama (**Opsi B** benar). **Opsi A** dan **E** salah karena menggunakan kuantor mutlak *seluruh*. **Opsi C** melakukan lompatan wilayah secara berlebihan ke *seluruh kota besar Indonesia*, sedangkan **Opsi D** menambahkan asumsi eksklusivitas yang tidak tercantum dalam premis.",
+      "bedah_cepat_markdown": "Mari kita cek satu per satu batas angka dan wilayah di teks:\n* **B Benar:** Angka $84\\%$ ($>50\\%$) pada sampel pekerja komuter Jakarta Pusat diterjemahkan secara pas menjadi **sebagian besar** pada kelompok dan wilayah yang sama.\n* **A & E Salah:** Memakai kata mutlak *seluruh*, padahal angkanya hanya $84\\%$ dan tidak membahas pengguna kendaraan pribadi.\n* **C Salah:** Melompatkan wilayah terlalu jauh dari *Jakarta Pusat* menjadi *seluruh kota besar Indonesia*.\n* **D Salah:** Mengarang asumsi baru bahwa yang menghindari macet pasti tidak peduli tarif.",
       "visual": null
     },
     {
@@ -215,7 +215,7 @@
         "E. serangan jamur antraknosa pada tanaman cabai di Kecamatan Sukatani tidak akan terjadi jika suhu udara tetap hangat"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Kondisi awal bulan ini ($380\\text{ mm} > 350\\text{ mm}$ dan kelembapan $88\\% > 85\\%$) memenuhi kedua syarat preseden historis di Kecamatan Sukatani. Dalam penalaran induktif prediktif, simpulan yang tepat mempertahankan cakupan wilayah serta variabel akibat secara probabilistik (**Opsi C** benar). **Opsi A** dan **D** keliru karena bernada mutlak (*dipastikan*, *pasti*) dan menambah klaim baru, **Opsi B** memperluas wilayah secara tidak sah ke *seluruh kabupaten*, sedangkan **Opsi E** memasukkan variabel suhu di luar premis.",
+      "bedah_cepat_markdown": "Cocokkan syarat pola lama dengan kondisi awal bulan ini:\n* **Cek Syarat:** Curah hujan $380\\text{ mm}$ ($>350\\text{ mm}$) dan kelembapan $88\\%$ ($>85\\%$). Kedua syarat di Kecamatan Sukatani terpenuhi.\n* **C Benar:** Mempertahankan wilayah (*Kecamatan Sukatani*) dan akibat yang sama (*terserang jamur antraknosa dalam sepuluh hari*) dengan kata peluang (*berpeluang tinggi*).\n* **A & D Salah:** Menggunakan kata mutlak (*dipastikan*, *pasti*) dan menambah klaim baru (gagal panen total / rugi dibanding tahun lalu).\n* **B & E Salah:** Opsi B memperluas wilayah ke *seluruh kabupaten*, sedangkan opsi E memasukkan variabel *suhu udara* yang tidak ada di teks.",
       "visual": null
     },
     {
@@ -234,7 +234,7 @@
         "E. Tidak Relevan"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Premis menyebutkan secara eksplisit bahwa dari 40 gerai yang diaudit, terdapat **4 gerai yang mendapat catatan perbaikan** karena keterlambatan sanitasi harian. Oleh karena itu, generalisasi berkuantor mutlak *'Seluruh gerai kopi waralaba Z telah memenuhi standar kebersihan... tanpa pengecualian'* bertentangan langsung dengan bukti empiris 4 gerai penyangkal tersebut sehingga berstatus **Pasti Salah** (**Opsi C**).",
+      "bedah_cepat_markdown": "Perhatikan bukti penyangkal yang tertulis jelas di teks:\n* Dari 40 gerai yang diperiksa, tercatat ada **4 gerai yang mendapat catatan perbaikan** karena terlambat melakukan sanitasi harian.\n* Pernyataan pada soal memakai kata mutlak *'Seluruh gerai... tanpa pengecualian'* yang bertentangan langsung dengan fakta 4 gerai tersebut.\n* Karena terbukti salah oleh data di teks, pernyataan ini berstatus **Pasti Salah** (**Opsi C**).",
       "visual": null
     }
   ]

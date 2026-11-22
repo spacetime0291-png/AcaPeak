@@ -9,28 +9,28 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dari angka $0, 1, 2, 3, 4$ akan disusun bilangan ratusan ganjil tanpa pengulangan. Banyak siswa langsung mengalikan $5 \\times 4 \\times 2 = 40$, benarkah hasilnya segitu?",
+      "pertanyaan_pemantik": "Dari angka $0, 1, 2, 3, 4$ akan dibuat bilangan ratusan ganjil tanpa angka berulang. Banyak siswa langsung menghitung $5 \\times 4 \\times 2 = 40$. Benarkah hasilnya segitu?",
       "opsi_cepat": [
         "Benar, hasilnya 40 bilangan",
         "Salah, hasilnya 18 bilangan"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Angka $0$ tidak boleh menempati posisi ratusan! Isi slot satuan ganjil dulu ($1, 3 \\rightarrow 2$ cara), lalu ratusan bukan nol ($3$ cara), dan puluhan ($3$ cara), sehingga $3 \\times 3 \\times 2 = 18$."
+      "penjelasan_kilat": "Angka $0$ tidak boleh berdiri di posisi ratusan! Isi satuan ganjil dulu ($1$ atau $3 \\rightarrow 2$ cara), lalu ratusan bukan nol ($3$ cara), dan terakhir puluhan ($3$ cara). Totalnya $3 \\times 3 \\times 2 = 18$."
     },
-    "konsep_inti_markdown": "- **Aturan Perkalian:** Kejadian berurutan dikalikan ($n_1 \\times n_2 \\times \\dots$). Prioritaskan slot dengan syarat terketat.\\n- **Permutasi ($P$):** Urutan diperhatikan. $P(n,r) = \\frac{n!}{(n-r)!}$; unsur sama $P = \\frac{n!}{k_1!k_2!\\dots}$; siklis $P_{\\text{siklis}} = (n-1)!$.\\n- **Kombinasi ($C$):** Urutan diabaikan (tim/panitia/geometri). $C(n,r) = \\frac{n!}{r!(n-r)!}$.",
+    "konsep_inti_markdown": "- **Aturan Perkalian:** Kejadian yang berlangsung berurutan langsung dikalikan ($n_1 \\times n_2 \\times \\dots$). Selalu isi kotak dengan syarat terketat lebih dulu.\n- **Permutasi ($P$):** Dipakai saat urutan berpengaruh. Rumus dasar $P(n,r) = \\frac{n!}{(n-r)!}$; unsur kembar $P = \\frac{n!}{k_1!k_2!\\dots}$; melingkar $P_{\\text{siklis}} = (n-1)!$.\n- **Kombinasi ($C$):** Dipakai saat urutan tidak penting (tim, panitia, titik geometri). Rumusnya $C(n,r) = \\frac{n!}{r!(n-r)!}$.",
     "radar_jebakan_utbk": [
-      "Menempatkan angka $0$ pada digit terdepan saat menyusun bilangan atau mengabaikan irisan kasus pada syarat gabungan (misal: genap DAN lebih besar dari $500$).",
-      "Menggunakan permutasi untuk pemilihan jabatan setara (panitia/tim) atau lupa membagi dengan permutasi internal kelompok saat menggunakan metode ikat (berdampingan)."
+      "Menaruh angka $0$ di digit paling depan, atau lupa memecah kasus saat syarat depan dan belakang punya angka irisan (misal: genap DAN lebih dari $300$).",
+      "Memakai permutasi untuk memilih panitia tanpa jabatan, atau lupa mengalikan dengan permutasi internal kelompok ($k!$) saat memakai metode ikat."
     ],
     "stimulus_utama_bersama": null,
     "visual": {
       "tipe": "svg",
-      "kode": "<svg viewBox='0 0 540 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#FFFFFF' rx='10'/><g transform='translate(20, 20)'><rect x='0' y='0' width='70' height='55' rx='4' fill='#EFF6FF' stroke='#3B82F6' stroke-width='1.8'/><text x='35' y='28' text-anchor='middle' font-family='sans-serif' font-size='10' font-weight='bold' fill='#1E40AF'>Persegi Pjg</text><text x='35' y='44' text-anchor='middle' font-family='sans-serif' font-size='9' fill='#64748B'>L = p × l</text></g><g transform='translate(105, 20)'><rect x='0' y='0' width='55' height='55' rx='4' fill='#EFF6FF' stroke='#3B82F6' stroke-width='1.8'/><text x='27.5' y='28' text-anchor='middle' font-family='sans-serif' font-size='10' font-weight='bold' fill='#1E40AF'>Persegi</text><text x='27.5' y='44' text-anchor='middle' font-family='sans-serif' font-size='9' fill='#64748B'>L = s²</text></g><g transform='translate(175, 20)'><polygon points='15,0 75,0 60,55 0,55' fill='#FEF3C7' stroke='#F59E0B' stroke-width='1.8'/><text x='37' y='28' text-anchor='middle' font-family='sans-serif' font-size='10' font-weight='bold' fill='#92400E'>Jajar Genjang</text><text x='37' y='44' text-anchor='middle' font-family='sans-serif' font-size='9' fill='#78350F'>L = a × t</text></g><g transform='translate(265, 20)'><polygon points='35,0 70,27.5 35,55 0,27.5' fill='#ECFDF5' stroke='#10B981' stroke-width='1.8'/><text x='35' y='28' text-anchor='middle' font-family='sans-serif' font-size='9' font-weight='bold' fill='#064E3B'>Belah Ketupat</text><text x='35' y='44' text-anchor='middle' font-family='sans-serif' font-size='8.5' fill='#047857'>L = ½ d₁ d₂</text></g><g transform='translate(350, 20)'><polygon points='30,0 65,22 30,55 0,22' fill='#ECFDF5' stroke='#10B981' stroke-width='1.8'/><text x='31' y='28' text-anchor='middle' font-family='sans-serif' font-size='9' font-weight='bold' fill='#064E3B'>Layang-Layang</text><text x='31' y='44' text-anchor='middle' font-family='sans-serif' font-size='8.5' fill='#047857'>L = ½ d₁ d₂</text></g><g transform='translate(430, 20)'><polygon points='15,0 65,0 80,55 0,55' fill='#FDF2F8' stroke='#EC4899' stroke-width='1.8'/><text x='40' y='28' text-anchor='middle' font-family='sans-serif' font-size='9' font-weight='bold' fill='#831843'>Trapesium</text><text x='40' y='44' text-anchor='middle' font-family='sans-serif' font-size='8.5' fill='#9D174D'>L = ½(a+b)t</text></g><rect x='20' y='95' width='500' height='105' rx='8' fill='#F8FAFC' stroke='#CBD5E1' stroke-width='1.5'/><text x='270' y='120' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='bold' fill='#1E293B'>Karakteristik Kunci Segi Empat UTBK</text><text x='40' y='142' font-family='sans-serif' font-size='11' fill='#334155'>• Diagonal Berpotongan Tegak Lurus: Belah Ketupat, Layang-layang, Persegi</text><text x='40' y='162' font-family='sans-serif' font-size='11' fill='#334155'>• Diagonal Sama Panjang &amp; Membagi Dua Sama Rata: Persegi Panjang, Persegi</text><text x='40' y='182' font-family='sans-serif' font-size='11' fill='#334155'>• Jumlah Sudut Dalam Segi-n: (n - 2) × 180° = 360° (untuk n = 4)</text></svg>",
-      "caption": "Karakteristik bentuk, rumus luas, dan relasi diagonal 6 ragam segi empat utama pada soal geometri UTBK."
+      "kode": "<svg viewBox='0 0 420 240' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0B1120' stroke='#1E293B' stroke-width='1' rx='12'/><text x='210' y='22' fill='#E2E8F0' font-family='system-ui, sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Peta Logika: Aturan Perkalian, Permutasi &amp; Kombinasi</text><rect x='110' y='36' width='200' height='28' rx='6' fill='#1E293B' stroke='#475569' stroke-width='1'/><text x='210' y='54' fill='#FBBF24' font-family='sans-serif' font-size='10.5' font-weight='bold' text-anchor='middle'>Apakah Urutan Diperhatikan? (AB ≠ BA)</text><path d='M 160 64 L 160 85 L 105 85 L 105 100' fill='none' stroke='#38BDF8' stroke-width='1.5'/><text x='118' y='80' fill='#38BDF8' font-family='sans-serif' font-size='9' font-weight='bold'>YA (Urutan Penting)</text><path d='M 260 64 L 260 85 L 315 85 L 315 100' fill='none' stroke='#34D399' stroke-width='1.5'/><text x='302' y='80' fill='#34D399' font-family='sans-serif' font-size='9' font-weight='bold'>TIDAK (Bebas / Tim)</text><rect x='20' y='100' width='175' height='80' rx='8' fill='#0F172A' stroke='#38BDF8' stroke-width='1.2'/><text x='107' y='118' fill='#38BDF8' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>PERMUTASI (P)</text><text x='107' y='133' fill='#E2E8F0' font-family='sans-serif' font-size='9.5' text-anchor='middle'>Rumus: P(n, r) = n! / (n - r)!</text><text x='107' y='148' fill='#94A3B8' font-family='sans-serif' font-size='8.5' text-anchor='middle'>• Ada Jabatan (Ketua, Sekretaris)</text><text x='107' y='161' fill='#94A3B8' font-family='sans-serif' font-size='8.5' text-anchor='middle'>• Juara 1, 2, 3 | Barisan | Plat Nomor</text><text x='107' y='173' fill='#CBD5E1' font-family='sans-serif' font-size='8' text-anchor='middle'>Unsur Kembar: n! / (k₁! · k₂! ...)</text><rect x='225' y='100' width='175' height='80' rx='8' fill='#0F172A' stroke='#34D399' stroke-width='1.2'/><text x='312' y='118' fill='#34D399' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>KOMBINASI (C)</text><text x='312' y='133' fill='#E2E8F0' font-family='sans-serif' font-size='9.5' text-anchor='middle'>Rumus: C(n, r) = n! / [r!(n - r)!]</text><text x='312' y='148' fill='#94A3B8' font-family='sans-serif' font-size='8.5' text-anchor='middle'>• Memilih Anggota Tim / Delegasi</text><text x='312' y='161' fill='#94A3B8' font-family='sans-serif' font-size='8.5' text-anchor='middle'>• Jabat Tangan: C(n, 2)</text><text x='312' y='173' fill='#CBD5E1' font-family='sans-serif' font-size='8' text-anchor='middle'>• Ambil Bola Acak Sekaligus</text><rect x='20' y='190' width='380' height='38' rx='6' fill='#1E293B' fill-opacity='0.7' stroke='#64748B' stroke-width='1'/><text x='30' y='205' fill='#FBBF24' font-family='sans-serif' font-size='9' font-weight='bold'>Aturan Pengisian Tempat (Filling Slots):</text><text x='30' y='219' fill='#94A3B8' font-family='sans-serif' font-size='8.5'>Gunakan untuk menyusun bilangan/kode berurut dengan syarat khusus. Isi kotak dengan syarat terketat dulu!</text></svg>",
+      "caption": "Peta alur cepat membedakan Aturan Perkalian, Permutasi, dan Kombinasi berdasarkan pengaruh urutan serta syarat posisi pada soal UTBK."
     },
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Lengkap Rumus Kaidah Pencacahan, Permutasi, dan Kombinasi",
-      "subjudul_ringkas": "Katalog lengkap rumus pencacahan, aturan pengisian slot, permutasi khusus, kombinasi panitia, hingga geometri untuk UTBK.",
+      "subjudul_ringkas": "Panduan ringkas pengisian kotak, permutasi bersyarat, kombinasi tim, hingga kombinatorika geometri untuk UTBK.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
         "kolom_1": "Sifat / Rumus & Syarat",
@@ -39,106 +39,106 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Aturan Perkalian & Pengisian Slot (Filling Slots)",
-          "ringkasan_kelompok": "Menyusun bilangan atau kode dengan mengisi kotak mulai dari syarat terketat.",
+          "nama_kelompok": "Aturan Perkalian & Pengisian Kotak (Filling Slots)",
+          "ringkasan_kelompok": "Menyusun angka atau kode dengan mengisi kotak dari syarat yang paling ketat.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Penyusunan Angka Tanpa dan Dengan Pengulangan",
-              "penjelasan_singkat": "Isi slot terketat dahulu; kurangi opsi sebanyak $1$ tiap langkah jika tanpa pengulangan, tetap jika boleh berulang.",
-              "contoh_penerapan": "Dari angka $1,2,3,4,5$, bilangan $3$ digit beda adalah **$5 \\times 4 \\times 3 = 60$**, sedangkan boleh berulang **$5 \\times 5 \\times 5 = 125$**.",
-              "jebakan_atau_catatan": "Jangan mengurutkan pengisian dari depan jika syarat ganjil atau genap berada di digit satuan.",
+              "judul_poin": "Menyusun Angka Beda vs Boleh Berulang",
+              "penjelasan_singkat": "Isi kotak terketat dulu. Jika angka harus beda, kurangi pilihan sebanyak $1$ tiap pindah kotak; jika boleh berulang, pilihan tetap.",
+              "contoh_penerapan": "Dari $1,2,3,4,5$, bilangan $3$ digit beda ada **$5 \\times 4 \\times 3 = 60$**. Jika boleh berulang, ada **$5 \\times 5 \\times 5 = 125$**.",
+              "jebakan_atau_catatan": "Jangan mengisi dari kotak depan jika syarat ganjil atau genap ada di digit satuan.",
               "visual": null
             },
             {
-              "judul_poin": "Bilangan Genap Memuat Angka Nol",
-              "penjelasan_singkat": "Pecah menjadi dua kasus terpisah: satuan diisi angka $0$ dan satuan diisi angka genap bukan $0$.",
+              "judul_poin": "Bilangan Genap yang Mengandung Angka Nol",
+              "penjelasan_singkat": "Pisah jadi dua kasus: satuan diisi angka $0$, dan satuan diisi angka genap selain $0$.",
               "contoh_penerapan": "Bilangan $3$ digit genap beda dari $0,1,2,3$: akhir $0$ ada **$3 \\times 2 \\times 1 = 6$**, akhir $2$ ada **$2 \\times 2 \\times 1 = 4$**, total **$10$**.",
-              "jebakan_atau_catatan": "Menggabung angka $0$ dan genap lain dalam satu kotak menyebabkan salah hitung karena $0$ dilarang di posisi ratusan.",
+              "jebakan_atau_catatan": "Jangan gabung $0$ dan angka genap lain dalam satu kotak, karena $0$ terlarang di posisi ratusan.",
               "visual": null
             },
             {
               "judul_poin": "Bilangan Lebih Besar atau Kecil dari Batas $K$",
-              "penjelasan_singkat": "Kelompokkan berdasarkan digit terdepan yang pasti memenuhi batas, lalu tambahkan kasus digit terdepan sama dengan batas.",
-              "contoh_penerapan": "Bilangan $3$ digit beda dari $1,2,3,4$ lebih dari $230$: awalan $3,4$ ada **$2 \\times 3 \\times 2 = 12$**, awalan $2$ ada **$1 \\times 1 \\times 2 = 2$**, total **$14$**.",
-              "jebakan_atau_catatan": "Periksa apakah bilangan tepat sama dengan $K$ ikut dihitung; kata \"lebih dari\" berarti $K$ tidak termasuk.",
+              "penjelasan_singkat": "Hitung dulu kasus digit depan yang pasti lolos batas, lalu tambah kasus saat digit depan sama persis dengan batas.",
+              "contoh_penerapan": "Bilangan $3$ digit beda dari $1,2,3,4$ lebih dari $230$: awalan $3,4$ ada **$2 \\times 3 \\times 2 = 12$**, awalan $2$ (puluhan $3$ atau $4$) ada **$1 \\times 2 \\times 2 = 4$**, total **$16$**.",
+              "jebakan_atau_catatan": "Cek kata \"lebih dari\" (batas $K$ tidak ikut) vs \"paling kecil\" (batas $K$ ikut dihitung).",
               "visual": null
             },
             {
-              "judul_poin": "Aturan Penjumlahan pada Kasus Saling Lepas",
-              "penjelasan_singkat": "Jumlahkan hasil tiap skenario jika pilihan rute atau kategori tidak dapat terjadi bersamaan ($n_1 + n_2$).",
-              "contoh_penerapan": "Memilih $1$ ketua dari $4$ siswa pria atau $3$ siswa wanita menghasilkan **$4 + 3 = 7$** kemungkinan pilihan.",
-              "jebakan_atau_catatan": "Bedakan kata \"dan\" (kejadian berurutan, dikali) dengan kata \"atau\" (pilihan alternatif saling lepas, dijumlah).",
+              "judul_poin": "Aturan Penjumlahan pada Kasus Terpisah",
+              "penjelasan_singkat": "Jumlahkan banyak cara ($n_1 + n_2$) jika dua pilihan tidak bisa terjadi secara bersamaan.",
+              "contoh_penerapan": "Memilih $1$ ketua kelas dari $4$ siswa pria atau $3$ siswa wanita menghasilkan **$4 + 3 = 7$** pilihan.",
+              "jebakan_atau_catatan": "Ingat kuncinya: kata \"dan\" berarti berurutan (dikali), sedangkan \"atau\" berarti pilihan alternatif (dijumlah).",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Variasi Permutasi Khusus",
-          "ringkasan_kelompok": "Pengaturan susunan terurut dengan batasan posisi berdampingan, unsur kembar, dan melingkar.",
+          "ringkasan_kelompok": "Mengatur susunan berurutan dengan syarat berdampingan, unsur kembar, dan duduk melingkar.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Permutasi dengan Syarat Objek Harus Berdampingan",
-              "penjelasan_singkat": "Ikat $k$ objek wajib berdampingan menjadi $1$ kesatuan blok, lalu kalikan permutasi luar dengan permutasi internal blok ($k!$).",
-              "contoh_penerapan": "Susunan $5$ orang dengan $2$ sahabat selalu berdampingan adalah **$4! \\times 2! = 24 \\times 2 = 48$** cara.",
-              "jebakan_atau_catatan": "Peserta sering lupa mengalikan dengan $k!$ untuk pertukaran posisi di dalam kelompok yang diikat tersebut.",
+              "judul_poin": "Objek Wajib Berdampingan (Metode Ikat)",
+              "penjelasan_singkat": "Ikat $k$ objek yang wajib berdampingan jadi $1$ paket. Kalikan susunan total paket dengan tukar posisi di dalam paket ($k!$).",
+              "contoh_penerapan": "Susunan $5$ orang dengan $2$ sahabat wajib berdampingan: **$4! \\times 2! = 24 \\times 2 = 48$** cara.",
+              "jebakan_atau_catatan": "Siswa sering lupa mengalikan dengan $k!$ untuk pertukaran posisi di dalam kelompok yang diikat.",
               "visual": null
             },
             {
-              "judul_poin": "Permutasi dengan Syarat Tidak Boleh Berdampingan",
-              "penjelasan_singkat": "Susun $m$ objek bebas dahulu ($m!$), lalu sisipkan $k$ objek terlarang ke dalam $m+1$ celah yang tersedia.",
-              "contoh_penerapan": "Susunan $3$ pria dan $2$ wanita tanpa wanita berdampingan: susun pria **$3!$**, pilih celah **$P(4,2)$**, hasil **$6 \\times 12 = 72$** cara.",
-              "jebakan_atau_catatan": "Rumus komplemen (total dikurangi berdampingan) hanya valid jika objek yang dilarang berdampingan berjumlah tepat $2$ orang.",
+              "judul_poin": "Objek Tidak Boleh Berdampingan (Metode Sisip)",
+              "penjelasan_singkat": "Susun $m$ objek bebas dulu ($m!$), lalu sisipkan $k$ objek terlarang ke $m+1$ celah kosong yang terbentuk.",
+              "contoh_penerapan": "Susun $3$ pria dan $2$ wanita tanpa wanita berdampingan: susun pria **$3!$**, sisip wanita di $4$ celah **$P(4,2)$**, hasil **$6 \\times 12 = 72$** cara.",
+              "jebakan_atau_catatan": "Trik komplemen (total dikurangi berdampingan) hanya aman dipakai jika objek terlarang berjumlah tepat $2$.",
               "visual": null
             },
             {
-              "judul_poin": "Permutasi Memuat Beberapa Unsur Identik",
-              "penjelasan_singkat": "Bagi faktorial total unsur dengan hasil kali faktorial masing-masing unsur yang sama: $P = \\frac{n!}{k_1! \\cdot k_2! \\cdots}$.",
-              "contoh_penerapan": "Banyak susunan kata \"KATAK\" ($5$ huruf, $2$ K, $2$ A) adalah **$\\frac{5!}{2! \\cdot 2!} = \\frac{120}{4} = 30$** susunan.",
-              "jebakan_atau_catatan": "Berlaku juga untuk jalur terpendek pada grid peta dengan langkah kanan ($K$) dan atas ($A$) yang identik.",
+              "judul_poin": "Permutasi dengan Unsur Kembar",
+              "penjelasan_singkat": "Bagi faktorial total unsur dengan faktorial tiap unsur yang kembar: $P = \\frac{n!}{k_1! \\cdot k_2! \\cdots}$.",
+              "contoh_penerapan": "Susunan huruf dari kata \"KATAK\" ($5$ huruf, $2$ K, $2$ A) adalah **$\\frac{5!}{2! \\cdot 2!} = \\frac{120}{4} = 30$** susunan.",
+              "jebakan_atau_catatan": "Rumus ini juga dipakai untuk menghitung rute terpendek pada peta grid (langkah kanan dan atas).",
               "visual": null
             },
             {
-              "judul_poin": "Permutasi Melingkar (Siklis) dan Kombinasi Blok",
-              "penjelasan_singkat": "Susunan melingkar $n$ objek adalah $(n-1)!$; jika $k$ objek berdampingan, ikat jadi $1$ sehingga menjadi $((n-k+1)-1)! \\times k!$.",
-              "contoh_penerapan": "Duduk melingkar $6$ orang dengan ketua-sekretaris berdampingan: anggap $5$ unsur siklis dikali internal, yaitu **$(5-1)! \\times 2! = 48$** cara.",
-              "jebakan_atau_catatan": "Pada siklis dengan pembatasan berdampingan, kurangi $1$ hanya pada jumlah blok luar, jangan pada faktorial internal blok.",
+              "judul_poin": "Permutasi Melingkar (Siklis) & Metode Ikat",
+              "penjelasan_singkat": "Susunan melingkar $n$ objek adalah $(n-1)!$. Jika $k$ objek berdampingan, ikat jadi $1$ blok sehingga jadi $((n-k+1)-1)! \\times k!$.",
+              "contoh_penerapan": "Duduk melingkar $6$ orang dengan ketua-sekretaris berdampingan: jadi $5$ blok siklis, hasilnya **$(5-1)! \\times 2! = 48$** cara.",
+              "jebakan_atau_catatan": "Pengurangan $1$ hanya berlaku untuk jumlah blok di lingkaran, bukan untuk faktorial internal blok.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Kombinasi Terapan & Geometri",
-          "ringkasan_kelompok": "Pemilihan kelompok tanpa urutan untuk panitia bersyarat dan pembentukan bangun datar.",
+          "ringkasan_kelompok": "Memilih kelompok tanpa peduli urutan untuk panitia bersyarat dan bangun datar.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Kombinasi Pemilihan Tim dengan Syarat Kuota",
-              "penjelasan_singkat": "Pilih anggota tiap kategori secara terpisah menggunakan kombinasi, lalu kalikan hasilnya: $C(n_1, r_1) \\times C(n_2, r_2)$.",
+              "judul_poin": "Memilih Tim dengan Syarat Kuota",
+              "penjelasan_singkat": "Hitung kombinasi tiap kategori secara terpisah, lalu kalikan hasilnya: $C(n_1, r_1) \\times C(n_2, r_2)$.",
               "contoh_penerapan": "Memilih $2$ pria dari $5$ dan $2$ wanita dari $4$ menghasilkan **$C(5,2) \\times C(4,2) = 10 \\times 6 = 60$** tim.",
-              "jebakan_atau_catatan": "Jika panitia memiliki jabatan berbeda (ketua, wakil), gunakan permutasi atau kalikan kombinasi dengan faktorial jabatan.",
+              "jebakan_atau_catatan": "Jika ada jabatan spesifik (ketua, wakil), pakai permutasi atau kalikan kombinasi dengan faktorial jabatan.",
               "visual": null
             },
             {
-              "judul_poin": "Kombinasi Syarat Minimal atau Konflik Anggota",
-              "penjelasan_singkat": "Gunakan prinsip komplemen: kurangi total kombinasi tanpa syarat dengan kombinasi kasus yang dilarang atau konflik.",
-              "contoh_penerapan": "Pilih $3$ dari $6$ orang tanpa dua musuh (A dan B) bersama: **$C(6,3) - C(4,1) = 20 - 4 = 16$** tim.",
-              "jebakan_atau_catatan": "Saat menghitung kasus A dan B terpilih bersama, sisa anggota yang dipilih berkurang $2$ dari kuota tim.",
+              "judul_poin": "Kombinasi Syarat Minimal atau Konflik",
+              "penjelasan_singkat": "Pakai trik komplemen: kurangi total kombinasi bebas dengan kombinasi kasus yang dilarang.",
+              "contoh_penerapan": "Pilih $3$ dari $6$ orang tanpa A dan B satu tim: **$C(6,3) - C(4,1) = 20 - 4 = 16$** tim.",
+              "jebakan_atau_catatan": "Saat menghitung kasus A dan B terpilih bersama, kuota sisa tim otomatis berkurang $2$ orang.",
               "visual": null
             },
             {
-              "judul_poin": "Pembentukan Garis dan Segitiga dari Titik",
-              "penjelasan_singkat": "Dari $n$ titik dengan $k$ titik segaris (kolinear): garis $= C(n,2) - C(k,2) + 1$, segitiga $= C(n,3) - C(k,3)$.",
+              "judul_poin": "Membentuk Garis dan Segitiga dari Titik",
+              "penjelasan_singkat": "Dari $n$ titik dengan $k$ titik segaris: banyak garis $= C(n,2) - C(k,2) + 1$, banyak segitiga $= C(n,3) - C(k,3)$.",
               "contoh_penerapan": "Dari $8$ titik dengan $3$ titik segaris, terbentuk **$C(8,3) - C(3,3) = 56 - 1 = 55$** segitiga.",
-              "jebakan_atau_catatan": "Pada pembentukan garis, wajib tambahkan $+1$ karena $k$ titik kolinear tetap membentuk tepat $1$ garis lurus.",
+              "jebakan_atau_catatan": "Khusus rumus garis, jangan lupa tambah $+1$ karena $k$ titik segaris tetap membentuk $1$ garis lurus.",
               "visual": null
             },
             {
-              "judul_poin": "Jajar Genjang dari Garis Sejajar dan Diagonal",
-              "penjelasan_singkat": "Jajar genjang terbentuk dari $2$ garis sejajar arah pertama dan $2$ arah kedua: $C(m,2) \\times C(n,2)$; diagonal segi-$n$: $C(n,2) - n$.",
-              "contoh_penerapan": "Perpotongan $4$ garis horizontal dan $5$ garis vertikal membentuk **$C(4,2) \\times C(5,2) = 6 \\times 10 = 60$** jajar genjang.",
-              "jebakan_atau_catatan": "Rumus $C(n,2)$ pada titik sudut segi-$n$ menghitung sisi luar sekaligus diagonal, sehingga wajib dikurangi $n$ sisi.",
+              "judul_poin": "Jajar Genjang dari Garis Sejajar & Diagonal",
+              "penjelasan_singkat": "Jajar genjang butuh $2$ garis dari arah pertama dan $2$ dari arah kedua: $C(m,2) \\times C(n,2)$. Diagonal segi-$n$: $C(n,2) - n$.",
+              "contoh_penerapan": "Perpotongan $4$ garis mendatar dan $5$ garis tegak membentuk **$C(4,2) \\times C(5,2) = 6 \\times 10 = 60$** jajar genjang.",
+              "jebakan_atau_catatan": "Nilai $C(n,2)$ pada segi-$n$ ikut menghitung sisi terluar, jadi wajib dikurangi $n$ untuk mendapat diagonal saja.",
               "visual": null
             }
           ]
@@ -149,47 +149,47 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Aturan Perkalian (Filling Slots): Penyusunan Angka/Kode dengan Syarat Ganjil/Genap, Lebih Besar dari K, Tanpa Pengulangan",
+      "nama_variasi": "Aturan Perkalian (Filling Slots): Menyusun Angka/Kode Bersyarat Ganjil-Genap dan Batas Nilai",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Dari angka $0, 1, 2, 3, 4, 5$ akan disusun bilangan $3$ angka berbeda yang nilainya lebih dari $300$ dan merupakan bilangan genap. Tentukan banyaknya bilangan yang dapat dibentuk!",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nSyarat ganda pada digit depan (ratusan $> 300$) dan digit belakang (satuan genap) saling beririsan pada angka $4$. Oleh karena itu, ruang sampel wajib dipecah menjadi dua kasus saling lepas berdasarkan angka ratusan: ratusan ganjil ($3$ atau $5$) dan ratusan genap ($4$). Pada masing-masing kasus, hitung pilihan satuan genap yang tersisa, lalu isi puluhan dari sisa angka yang belum terpakai tanpa pengulangan.\\n\\n**2. Jalur Taktis UTBK**\\nGunakan metode kotak bercabang (split-case) dalam $20$ detik:\\n- **Kasus A (Ratusan $3$ atau $5$ $\\rightarrow 2$ pilihan):** Satuan genap bebas ($0, 2, 4 \\rightarrow 3$ pilihan), puluhan sisa $4$ angka. Total: $2 \\times 4 \\times 3 = 24$.\\n- **Kasus B (Ratusan $4$ $\\rightarrow 1$ pilihan):** Satuan genap sisa ($0, 2 \\rightarrow 2$ pilihan), puluhan sisa $4$ angka. Total: $1 \\times 4 \\times 2 = 8$.\\nJumlahkan kedua kasus: $24 + 8 = 32$ bilangan.",
-      "kunci_pembeda": "Pecah menjadi beberapa kasus terpisah apabila digit pertama dan digit terakhir memiliki angka irisan yang memenuhi kedua syarat sekaligus.",
+      "stimulus_mini": "Dari angka $0, 1, 2, 3, 4, 5$ akan disusun bilangan $3$ angka berbeda yang nilainya lebih dari $300$ dan genap. Berapa banyak bilangan yang bisa dibentuk?",
+      "bedah_pola_markdown": "**1. Cara Berpikir Dasar**\nPerhatikan dua syarat ketatnya: ratusan harus $\\ge 3$ ($3, 4, 5$) dan satuan harus genap ($0, 2, 4$). Ternyata angka $4$ muncul di kedua syarat tersebut! Karena angka tidak boleh berulang, kita tidak bisa menggabungkannya dalam satu perhitungan. Pecah jadi dua kasus terpisah: saat ratusan ganjil ($3$ atau $5$) dan saat ratusan genap ($4$).\n\n**2. Trik Cepat UTBK**\nGunakan metode pecah kasus dalam $20$ detik:\n- **Kasus A (Ratusan $3$ atau $5 \\rightarrow 2$ pilihan):** Satuan genap masih lengkap ($0, 2, 4 \\rightarrow 3$ pilihan), puluhan sisa $4$ angka. Total: $2 \\times 4 \\times 3 = 24$.\n- **Kasus B (Ratusan $4 \\rightarrow 1$ pilihan):** Angka $4$ sudah terpakai, jadi satuan genap tinggal $0$ atau $2$ ($2$ pilihan), puluhan sisa $4$ angka. Total: $1 \\times 4 \\times 2 = 8$.\nJumlahkan kedua kasus: $24 + 8 = 32$ bilangan.",
+      "kunci_pembeda": "Langsung pecah jadi dua kasus jika digit depan dan digit belakang sama-sama mengincar angka yang sama.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Permutasi dengan Pembatasan Posisi (Objek Tertentu Harus Berdampingan vs Tidak Boleh Berdampingan)",
+      "nama_variasi": "Permutasi Bersyarat Posisi: Objek Wajib Berdampingan vs Tidak Boleh Berdampingan",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Lima siswa ($A, B, C, D, E$) duduk berjajar pada $5$ kursi. Tentukan banyak susunan duduk jika: (a) $A$ dan $B$ harus berdampingan; (b) $A$ dan $B$ tidak boleh berdampingan.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nUntuk syarat harus berdampingan, kelompokkan objek terikat menjadi satu kesatuan blok tunggal lalu permutasikan bersama objek bebas lainnya, kemudian kalikan dengan permutasi internal di dalam blok tersebut. Sebaliknya, untuk syarat tidak boleh berdampingan, gunakan prinsip komplemen dengan mengurangi total permutasi bebas terhadap susunan berdampingan, atau sisipkan objek terlarang di sela-sela objek netral yang sudah tersusun.\\n\\n**2. Jalur Taktis UTBK**\\nTerapkan **Trik Ikat & Sisip** tanpa menulis manual:\\n- **Berdampingan (Metode Ikat):** Ikat $(AB)$ jadi $1$ paket bersama $C, D, E$ (total $4$ objek) $\\rightarrow 4! = 24$. Tukar posisi internal $AB \\rightarrow 2! = 2$. Hasil: $24 \\times 2 = 48$ cara.\\n- **Tidak Berdampingan (Metode Sisip):** Susun $C, D, E$ dulu ($3! = 6$). Tersedia $4$ celah kosong (`_ C _ D _ E _`) untuk ditempati $A$ dan $B$ secara terpisah: $P(4,2) = 4 \\times 3 = 12$. Hasil: $6 \\times 12 = 72$ cara.",
-      "kunci_pembeda": "Gunakan Metode Ikat untuk syarat berdampingan, dan gunakan Metode Sisip di celah objek netral apabila lebih dari dua objek dilarang saling berdekatan.",
+      "stimulus_mini": "Lima siswa ($A, B, C, D, E$) duduk berjajar pada $5$ kursi. Tentukan banyak susunan duduk jika: (a) $A$ dan $B$ wajib berdampingan; (b) $A$ dan $B$ tidak boleh berdampingan.",
+      "bedah_pola_markdown": "**1. Cara Berpikir Dasar**\nSaat $A$ dan $B$ wajib berdampingan, anggap mereka diikat menjadi satu paket agar tidak terpisah. Susun paket tersebut bersama siswa lain, lalu jangan lupa kalikan dengan pertukaran posisi $A$ dan $B$ di dalam paket. Untuk syarat tidak berdampingan, cara paling aman adalah menyusun siswa yang bebas dulu, baru menyisipkan $A$ dan $B$ ke celah-celah kosong di antara mereka.\n\n**2. Trik Cepat UTBK**\nPakai jurus **Ikat & Sisip**:\n- **Berdampingan (Metode Ikat):** Ikat $(AB)$ jadi $1$ paket bersama $C, D, E$ (total $4$ objek) $\\rightarrow 4! = 24$. Tukar posisi $AB$ di dalam paket $\\rightarrow 2! = 2$. Hasil: $24 \\times 2 = 48$ cara.\n- **Tidak Berdampingan (Metode Sisip):** Susun $C, D, E$ dulu ($3! = 6$). Ada $4$ celah kosong (`_ C _ D _ E _`) untuk ditempati $A$ dan $B$: $P(4,2) = 4 \\times 3 = 12$. Hasil: $6 \\times 12 = 72$ cara.",
+      "kunci_pembeda": "Pakai Metode Ikat untuk syarat berdampingan, dan Metode Sisip di celah objek netral untuk syarat tidak boleh berdampingan.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Permutasi Unsur Sama dan Permutasi Siklis",
+      "nama_variasi": "Permutasi Unsur Kembar dan Permutasi Melingkar (Siklis)",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Enam pengurus OSIS (ketua, wakil ketua, dan $4$ anggota) duduk melingkar. Jika ketua dan wakil ketua harus selalu duduk berdampingan, tentukan banyak susunan duduk yang mungkin.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nPermutasi unsur sama membagi total faktorial seluruh objek dengan faktorial masing-masing unsur identik agar susunan kembar tidak dihitung berulang. Sementara itu, permutasi siklis menyusun $n$ objek dalam lingkaran tertutup tanpa titik awal mutlak dengan mengunci satu objek sebagai patokan rotasi, sehingga rumus dasarnya adalah $(n-1)!$. Jika terdapat syarat berdampingan di meja bundar, gabungkan metode ikat dengan rumus siklis.\\n\\n**2. Jalur Taktis UTBK**\\nGunakan **Aturan Jangkar Lingkaran**:\\n- Ikat ketua dan wakil ketua menjadi $1$ blok jangkar yang dikunci posisinya di lingkaran.\\n- Sisa $4$ anggota bebas disusun mengelilingi blok jangkar tersebut: $(5 - 1)! = 4! = 24$ cara.\\n- Kalikan dengan pertukaran posisi internal ketua dan wakil ketua di dalam blok jangkar ($2! = 2$).\\n- Total susunan: $24 \\times 2 = 48$ cara. Untuk kata dengan huruf kembar, cukup coret faktorial terbesar di pembilang dan penyebut.",
-      "kunci_pembeda": "Kurangi jumlah elemen dengan satu sebelum difaktorialkan hanya jika objek disusun melingkar tanpa nomor kursi tetap.",
+      "stimulus_mini": "Enam pengurus OSIS (ketua, wakil ketua, dan $4$ anggota) duduk melingkar. Jika ketua dan wakil ketua wajib duduk berdampingan, berapa banyak susunan duduk yang mungkin?",
+      "bedah_pola_markdown": "**1. Cara Berpikir Dasar**\nPada meja bundar tanpa nomor kursi, tidak ada posisi \"paling kiri\" atau \"paling kanan\". Kita perlu mengunci satu elemen sebagai patokan agar rotasi tidak terhitung ganda, sehingga rumusnya $(n-1)!$. Jika ada syarat berdampingan, gabungkan metode ikat dengan rumus melingkar tersebut.\n\n**2. Trik Cepat UTBK**\nGunakan **Aturan Jangkar Lingkaran**:\n- Ikat ketua dan wakil ketua menjadi $1$ blok, lalu gabungkan dengan $4$ anggota lain (total ada $5$ elemen di lingkaran).\n- Susun $5$ elemen secara melingkar: $(5 - 1)! = 4! = 24$ cara.\n- Kalikan dengan tukar posisi ketua dan wakil ketua di dalam blok: $2! = 2$ cara.\n- Total susunan: $24 \\times 2 = 48$ cara. (Untuk permutasi huruf kembar, cukup bagi faktorial total dengan faktorial huruf yang sama).",
+      "kunci_pembeda": "Kurangi jumlah elemen dengan $1$ sebelum difaktorialkan hanya saat susunannya melingkar tanpa nomor kursi tetap.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Kombinasi Pemilihan Tim/Panitia dengan Syarat Kuota Gender/Jabatan atau Konflik Anggota",
+      "nama_variasi": "Kombinasi Pemilihan Tim/Panitia dengan Syarat Kuota atau Konflik Anggota",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Dari $5$ pria dan $4$ wanita akan dipilih tim beranggotakan $4$ orang dengan syarat paling sedikit terdapat $2$ wanita. Tentukan banyaknya komposisi tim yang dapat dibentuk.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nPemilihan anggota tim tanpa struktur jabatan spesifik mengabaikan urutan sehingga menggunakan kombinasi $C(n,r)$. Kata kunci batas minimum seperti 'paling sedikit' mengharuskan penjumlahan seluruh skenario kuota yang memenuhi syarat hingga batas maksimal anggota tim. Jika terdapat syarat konflik (dua orang menolak satu tim), hitung kombinasi tanpa konflik atau kurangi total pemilihan bebas dengan skenario ketika kedua orang tersebut terpilih bersamaan.\\n\\n**2. Jalur Taktis UTBK**\\nGunakan **Metode Komplemen Cepat** daripada menghitung tiga kasus manual:\\n- Total pemilihan bebas $4$ orang dari $9$ kandidat: $C(9,4) = \\frac{9 \\times 8 \\times 7 \\times 6}{24} = 126$.\\n- Kasus terlarang ($0$ wanita atau $1$ wanita):\\n  - $0$ wanita ($4$ pria): $C(4,0) \\times C(5,4) = 1 \\times 5 = 5$.\\n  - $1$ wanita ($3$ pria): $C(4,1) \\times C(5,3) = 4 \\times 10 = 40$.\\n- Kurangkan: $126 - (5 + 40) = 81$ tim.",
-      "kunci_pembeda": "Gunakan kombinasi jika anggota tim berstatus setara, dan terapkan komplemen bila skenario yang memenuhi syarat lebih banyak daripada skenario terlarang.",
+      "stimulus_mini": "Dari $5$ pria dan $4$ wanita akan dipilih tim berisi $4$ orang dengan syarat minimal ada $2$ wanita. Berapa banyak susunan tim yang bisa dibentuk?",
+      "bedah_pola_markdown": "**1. Cara Berpikir Dasar**\nKarena semua anggota tim setara tanpa jabatan khusus, urutan tidak berpengaruh—langsung pakai kombinasi $C(n,r)$. Syarat \"minimal $2$ wanita\" artinya kita boleh memilih $2$, $3$, atau $4$ wanita. Daripada menghitung tiga kasus satu per satu, jauh lebih cepat jika kita menghitung total bebas lalu membuang kasus yang dilarang.\n\n**2. Trik Cepat UTBK**\nGunakan **Metode Komplemen**:\n- Total pilih $4$ orang bebas dari $9$ kandidat: $C(9,4) = \\frac{9 \\times 8 \\times 7 \\times 6}{24} = 126$.\n- Kasus terlarang ($0$ wanita atau $1$ wanita):\n  - $0$ wanita ($4$ pria): $C(4,0) \\times C(5,4) = 1 \\times 5 = 5$.\n  - $1$ wanita ($3$ pria): $C(4,1) \\times C(5,3) = 4 \\times 10 = 40$.\n- Kurangkan: $126 - (5 + 40) = 81$ tim.",
+      "kunci_pembeda": "Pakai kombinasi jika jabatan setara, dan gunakan komplemen saat kasus yang diminta lebih banyak daripada kasus yang dilarang.",
       "visual": null
     },
     {
       "nomor_variasi": 5,
-      "nama_variasi": "Kombinatorika Geometri (Banyaknya Segitiga, Garis, atau Jajar Genjang dari Titik-titik pada Bidang)",
+      "nama_variasi": "Kombinatorika Geometri: Menghitung Segitiga, Garis, atau Jajar Genjang",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "Terdapat $8$ titik pada sebuah bidang datar dengan $4$ titik di antaranya segaris (kolinear) dan tidak ada $3$ titik lain yang segaris. Tentukan banyak segitiga yang dapat dibentuk.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\\nSebuah garis lurus terbentuk dari pemilihan $2$ titik sembarang, sedangkan segitiga terbentuk dari pemilihan $3$ titik yang tidak segaris (non-kolinear). Jika terdapat sekumpulan titik yang terletak pada satu garis lurus yang sama, pemilihan $2$ titik dari kelompok tersebut hanya menghasilkan $1$ garis tunggal, sedangkan pemilihan $3$ titik dari kelompok kolinear tersebut gagal membentuk segitiga karena luasnya bernilai nol.\\n\\n**2. Jalur Taktis UTBK**\\nTerapkan **Rumus Reduksi Kolinear** dalam sekali hitung:\\n- **Banyak Segitiga:** Ambil semua kemungkinan $3$ titik dari $8$ titik, lalu buang pilihan $3$ titik yang berasal dari $4$ titik segaris: $C(8,3) - C(4,3) = \\frac{8 \\times 7 \\times 6}{6} - 4 = 56 - 4 = 52$ segitiga.\\n- **Banyak Garis:** $C(8,2) - C(4,2) + 1 = 28 - 6 + 1 = 23$ garis.\\n- **Jajar Genjang:** Pilih $2$ garis sejajar vertikal dan $2$ garis sejajar horizontal sekaligus: $C(m,2) \\times C(n,2)$.",
-      "kunci_pembeda": "Kurangi kombinasi total dengan kombinasi titik kolinear, lalu tambahkan kembali angka satu khusus untuk penghitungan garis lurus.",
+      "stimulus_mini": "Ada $8$ titik pada sebuah bidang datar dengan $4$ titik di antaranya segaris, dan tidak ada $3$ titik lain yang segaris. Berapa banyak segitiga yang bisa dibentuk?",
+      "bedah_pola_markdown": "**1. Cara Berpikir Dasar**\nUntuk membuat $1$ segitiga, kita butuh $3$ titik yang tidak terletak pada satu garis lurus. Jika kita mengambil $3$ titik sekaligus dari kumpulan titik yang segaris, hasilnya cuma garis datar—bukan segitiga. Jadi, hitung dulu semua kemungkinan $3$ titik dari total titik, lalu buang pilihan yang berasal dari titik-titik segaris.\n\n**2. Trik Cepat UTBK**\nPakai **Rumus Buang Kolinear** dalam satu baris:\n- **Banyak Segitiga:** $C(8,3) - C(4,3) = \\frac{8 \\times 7 \\times 6}{6} - 4 = 56 - 4 = 52$ segitiga.\n- **Banyak Garis:** $C(8,2) - C(4,2) + 1 = 28 - 6 + 1 = 23$ garis (wajib $+1$ karena $4$ titik segaris tetap membentuk $1$ garis lurus).\n- **Jajar Genjang:** Pilih $2$ garis sejajar arah pertama dan $2$ garis arah kedua: $C(m,2) \\times C(n,2)$.",
+      "kunci_pembeda": "Kurangi kombinasi total dengan kombinasi titik segaris, lalu tambahkan $+1$ khusus untuk soal mencari banyak garis lurus.",
       "visual": null
     }
   ],
@@ -201,7 +201,7 @@
         2
       ],
       "tipe_soal_utbk": "Kuantitas P vs Q",
-      "pertanyaan_markdown": "Disediakan angka-angka $1, 2, 3, 4, 5$. Dari angka-angka tersebut akan dibentuk bilangan ratusan dengan semua digit berbeda.\\n\\n| $P$ | $Q$ |\\n| :---: | :---: |\\n| Banyak bilangan ratusan ganjil dengan angka $2$ dan $4$ tidak bersebelahan | $30$ |\\n\\nBerdasarkan informasi di atas, manakah hubungan yang benar antara kuantitas $P$ dan $Q$?",
+      "pertanyaan_markdown": "Dari angka $1, 2, 3, 4, 5$ akan disusun bilangan ratusan dengan semua digit berbeda.\n\n| $P$ | $Q$ |\n| :---: | :---: |\n| Banyak bilangan ratusan ganjil dengan angka $2$ dan $4$ tidak bersebelahan | $30$ |\n\nBerdasarkan informasi di atas, manakah hubungan yang benar antara kuantitas $P$ dan $Q$?",
       "opsi_jawaban": [
         "A. Kuantitas $P$ lebih besar daripada $Q$",
         "B. Kuantitas $Q$ lebih besar daripada $P$",
@@ -209,7 +209,7 @@
         "D. Informasi yang diberikan tidak cukup untuk memutuskan salah satu dari tiga pilihan di atas"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Total bilangan ratusan ganjil berbeda: satuan ganjil ($1, 3, 5 \\rightarrow 3$ cara), ratusan ($4$ cara), dan puluhan ($3$ cara), sehingga $4 \\times 3 \\times 3 = 36$ bilangan. Karena satuan wajib ganjil, angka $2$ dan $4$ hanya bisa bersebelahan di posisi ratusan-puluhan ($24\\_$ atau $42\\_$ $\\rightarrow 2$ cara) dengan $3$ pilihan satuan ($2 \\times 3 = 6$ bilangan). Maka, $P = 36 - 6 = 30$. Karena $Q = 30$, diperoleh $P = Q$ (opsi A, B, dan D salah).",
+      "bedah_cepat_markdown": "Hitung dulu total bilangan ratusan ganjil dengan digit beda: isi satuan ganjil ($1, 3, 5 \\rightarrow 3$ cara), lalu ratusan ($4$ cara), dan puluhan ($3$ cara), hasilnya $4 \\times 3 \\times 3 = 36$ bilangan. Sekarang hitung kasus yang dilarang ($2$ dan $4$ bersebelahan). Karena satuan wajib ganjil, angka $2$ dan $4$ hanya bisa bersebelahan di depan (`24_` atau `42_` $\\rightarrow 2$ cara) dengan $3$ pilihan satuan ganjil, sehingga ada $2 \\times 3 = 6$ bilangan. Jadi, $P = 36 - 6 = 30$. Karena $Q = 30$, maka $P = Q$ (opsi A, B, dan D salah).",
       "visual": null
     },
     {
@@ -219,7 +219,7 @@
         4
       ],
       "tipe_soal_utbk": "Pernyataan 1-2-3-4",
-      "pertanyaan_markdown": "Sebuah komunitas beranggotakan $4$ pria dan $3$ wanita akan membentuk panitia inti beranggotakan $4$ orang untuk rapat di meja bundar.\\n\\n(1) Banyak cara memilih panitia jika jumlah pria dan wanita harus sama adalah $18$.\\n(2) Banyak cara memilih panitia jika minimal terdapat $3$ pria adalah $13$.\\n(3) Jika $4$ panitia terpilih duduk melingkar dengan $2$ orang tertentu harus berdampingan, terdapat $4$ susunan duduk.\\n(4) Banyak susunan huruf berbeda yang dapat dibentuk dari kata `RAPAT` adalah $60$.\\n\\nManakah pernyataan di atas yang benar?",
+      "pertanyaan_markdown": "Sebuah komunitas berisi $4$ pria dan $3$ wanita akan membentuk panitia inti beranggotakan $4$ orang untuk rapat di meja bundar.\n\n(1) Banyak cara memilih panitia jika jumlah pria dan wanita sama adalah $18$.\n(2) Banyak cara memilih panitia jika minimal ada $3$ pria adalah $13$.\n(3) Jika $4$ orang panitia yang sudah terpilih duduk melingkar dengan $2$ orang tertentu wajib berdampingan, ada $4$ susunan duduk.\n(4) Banyak susunan huruf berbeda dari kata `RAPAT` adalah $60$.\n\nManakah pernyataan di atas yang benar?",
       "opsi_jawaban": [
         "A. (1), (2), dan (3) SAJA yang benar",
         "B. (1) dan (3) SAJA yang benar",
@@ -228,7 +228,7 @@
         "E. SEMUA pernyataan benar"
       ],
       "kunci_jawaban": "E",
-      "bedah_cepat_markdown": "- **(1) Benar:** Pemilihan $2$ pria dan $2$ wanita: $C(4,2) \\times C(3,2) = 6 \\times 3 = 18$.\\n- **(2) Benar:** Minimal $3$ pria berarti ($3$P, $1$W) atau ($4$P, $0$W): $C(4,3)C(3,1) + C(4,4)C(3,0) = 12 + 1 = 13$.\\n- **(3) Benar:** Ikat $2$ orang jadi $1$ blok ($3$ elemen siklis): $(3-1)! \\times 2! = 2 \\times 2 = 4$.\\n- **(4) Benar:** Kata `RAPAT` ($5$ huruf, $2$ huruf `A`): $\\frac{5!}{2!} = 60$.\\nSemua pernyataan benar (opsi A–D salah).",
+      "bedah_cepat_markdown": "- **(1) Benar:** Pilih $2$ pria dan $2$ wanita: $C(4,2) \\times C(3,2) = 6 \\times 3 = 18$.\n- **(2) Benar:** Minimal $3$ pria berarti ($3$P, $1$W) atau ($4$P, $0$W): $C(4,3)C(3,1) + C(4,4)C(3,0) = 12 + 1 = 13$.\n- **(3) Benar:** Ikat $2$ orang jadi $1$ blok sehingga tinggal $3$ elemen melingkar: $(3-1)! \\times 2! = 2 \\times 2 = 4$.\n- **(4) Benar:** Kata `RAPAT` punya $5$ huruf dengan $2$ huruf `A` kembar: $\\frac{5!}{2!} = 60$.\nSemua pernyataan benar (opsi A–D salah).",
       "visual": null
     },
     {
@@ -238,10 +238,10 @@
         5
       ],
       "tipe_soal_utbk": "Isian Singkat",
-      "pertanyaan_markdown": "Pada sebuah bidang terdapat $9$ titik dengan $5$ titik terletak pada satu garis lurus yang sama dan tidak ada $3$ titik lain yang segaris. Jika dari titik-titik tersebut akan dibentuk semua segitiga yang mungkin, banyak segitiga yang terbentuk adalah .... *(Tuliskan jawaban dalam bentuk bilangan bulat)*",
+      "pertanyaan_markdown": "Pada sebuah bidang ada $9$ titik dengan $5$ titik terletak pada satu garis lurus, dan tidak ada $3$ titik lain yang segaris. Banyak segitiga berbeda yang bisa dibentuk dari titik-titik tersebut adalah .... *(Tuliskan jawaban dalam bentuk bilangan bulat)*",
       "opsi_jawaban": [],
       "kunci_jawaban": "74",
-      "bedah_cepat_markdown": "Segitiga terbentuk dari $3$ titik yang tidak segaris. Hitung seluruh kemungkinan pemilihan $3$ titik dari $9$ titik, lalu kurangi dengan pemilihan $3$ titik yang seluruhnya berasal dari $5$ titik kolinear:\\n$$\\text{Banyak Segitiga} = C(9,3) - C(5,3) = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1} - \\frac{5 \\times 4}{2 \\times 1} = 84 - 10 = 74$$",
+      "bedah_cepat_markdown": "Segitiga terbentuk dari $3$ titik yang tidak segaris. Hitung semua kombinasi $3$ titik dari $9$ titik, lalu buang kombinasi $3$ titik yang seluruhnya diambil dari $5$ titik segaris:\n$$\\text{Banyak Segitiga} = C(9,3) - C(5,3) = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1} - \\frac{5 \\times 4}{2 \\times 1} = 84 - 10 = 74$$",
       "visual": null
     }
   ]

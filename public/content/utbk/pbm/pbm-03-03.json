@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Perhatikan kalimat: 'Penelitian ini tidak hanya mengkaji dampak emisi, melainkan juga merumuskan kebijakan mitigasi.' Apakah penggunaan konjungsi korelatif tersebut sudah tepat?",
+      "pertanyaan_pemantik": "Cek kalimat ini: 'Penelitian ini tidak hanya mengkaji dampak emisi, melainkan juga merumuskan kebijakan mitigasi.' Apakah pasangan kata hubungnya sudah tepat?",
       "opsi_cepat": [
-        "Sudah tepat karena menghubungkan dua klausa setara",
+        "Sudah tepat karena menghubungkan dua hal yang setara",
         "Salah karena pasangan 'tidak hanya' wajib 'tetapi juga'"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Banyak peserta terkecoh karena 'melainkan juga' terdengar formal. Padahal, 'tidak' berpasangan mutlak dengan 'tetapi', sedangkan 'bukan' berpasangan dengan 'melainkan'."
+      "penjelasan_kilat": "Banyak peserta terkecoh karena 'melainkan juga' terdengar resmi. Padahal, kata 'tidak' berpasangan mutlak dengan 'tetapi', sedangkan 'bukan' berpasangan dengan 'melainkan'."
     },
-    "konsep_inti_markdown": "Konjungsi korelatif dan preposisi menjaga ketepatan struktur sintaksis kalimat efektif sesuai EYD V dan KBBI VI.\n\n- **Konjungsi Korelatif:** Pasangan tetap penghubung dua unsur setara (`tidak hanya ... tetapi juga`, `bukan hanya ... melainkan juga`, `baik ... maupun`).\n- **Preposisi Relasional:** Kata depan penanda arah, sasaran, atau lingkup (`kepada`, `terhadap`, `dalam`, `atas`).\n- **Idiom Verba:** Verba tertentu mengikat preposisi spesifik (`bergantung pada`, `berdasarkan` tanpa `pada`).\n- **Fungsi Sintaksis:** Preposisi di depan Subjek atau setelah verba transitif aktif merusak struktur `[S]-[P]-[O]`.",
+    "konsep_inti_markdown": "Konjungsi korelatif dan preposisi menjaga susunan kalimat tetap efektif serta sesuai aturan EYD V dan KBBI VI.\n\n- **Konjungsi Korelatif:** Kata hubung berpasangan yang mengapit dua unsur setara (`tidak hanya ... tetapi juga`, `bukan hanya ... melainkan juga`, `baik ... maupun`).\n- **Preposisi Penanda Hubungan:** Kata depan yang menunjukkan arah, sasaran, atau lingkup makna (`kepada`, `terhadap`, `dalam`, `atas`).\n- **Pasangan Kata Kerja Tetap:** Kata kerja tertentu wajib memakai kata depan pasangannya (`bergantung pada`) atau justru melarangnya (`berdasarkan` tanpa `pada`).\n- **Keutuhan Subjek & Objek:** Menaruh kata depan di depan Subjek atau setelah kata kerja aktif transitif akan merusak pola dasar `[S]-[P]-[O]`.",
     "radar_jebakan_utbk": [
-      "Menukar pasangan konjungsi korelatif ('tidak hanya ... melainkan juga') atau menyisipkan preposisi setelah verba transitif aktif ('membahas tentang', 'menjelaskan mengenai').",
-      "Meletakkan preposisi ('bagi', 'untuk', 'dalam', 'pada') di awal kalimat sebelum Subjek sehingga kalimat kehilangan Subjek dan hanya berisi Keterangan-Predikat."
+      "Menukar pasangan kata hubung (`tidak hanya ... melainkan juga`) atau menyelipkan kata depan setelah kata kerja aktif (`membahas tentang`, `menjelaskan mengenai`).",
+      "Menaruh kata depan (`bagi`, `untuk`, `dalam`, `pada`) di awal kalimat sebelum Subjek sehingga kalimat kehilangan Subjek utamanya."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Lengkap Kaidah Konjungsi Korelatif dan Preposisi Baku",
-      "subjudul_ringkas": "Panduan tuntas pasangan konjungsi korelatif, pilihan preposisi relasional, idiom verba, dan keutuhan fungsi sintaksis.",
+      "judul_blok": "Panduan Lengkap Konjungsi Korelatif dan Preposisi Baku",
+      "subjudul_ringkas": "Aturan pasangan konjungsi korelatif, pilihan kata depan sesuai makna, pasangan kata kerja tetap, dan keutuhan fungsi kalimat.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -35,120 +35,120 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Konjungsi Korelatif dan Kesejajaran Unsur",
-          "ringkasan_kelompok": "Pasangan tetap konjungsi antarklausa atau antarfrasa setara sesuai kaidah EYD V.",
+          "nama_kelompok": "Konjungsi Korelatif dan Kesejajaran Bentuk",
+          "ringkasan_kelompok": "Pasangan tetap kata hubung yang mengapit dua unsur setara sesuai kaidah EYD V.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Pasangan Tidak Hanya ... Tetapi Juga ...",
-              "penjelasan_singkat": "Menghubungkan dua unsur setara (frasa atau klausa) untuk menyatakan penambahan informasi yang bersifat menguatkan.",
-              "contoh_penerapan": "Penelitian itu **tidak hanya** menghemat biaya produksi, **tetapi juga** mengurangi limbah plastik secara signifikan.",
+              "penjelasan_singkat": "Menghubungkan dua unsur setara untuk menambah informasi yang menguatkan pernyataan pertama.",
+              "contoh_penerapan": "Inovasi mesin ini **tidak hanya** menghemat biaya produksi, **tetapi juga** menekan limbah plastik pabrik.",
               "jebakan_atau_catatan": "Salah: *tidak hanya ... melainkan juga ...* atau *tidak hanya ... namun juga ...* (pasangan tidak baku).",
               "visual": null
             },
             {
               "judul_poin": "Pasangan Bukan Hanya ... Melainkan Juga ...",
-              "penjelasan_singkat": "Menghubungkan dua nomina atau frasa nominal yang berkontras untuk menegaskan unsur kedua.",
-              "contoh_penerapan": "Keberhasilan tim ini **bukan hanya** hasil kerja keras atlet, **melainkan juga** dukungan penuh pelatih.",
-              "jebakan_atau_catatan": "Salah: memakai *bukan hanya ... tetapi juga ...* atau meletakkan *bukan* sebelum predikat verba.",
+              "penjelasan_singkat": "Menghubungkan dua kata benda atau frasa benda yang berkontras untuk menegaskan unsur kedua.",
+              "contoh_penerapan": "Kemenangan timnas **bukan hanya** hasil kerja keras pemain, **melainkan juga** racikan strategi pelatih.",
+              "jebakan_atau_catatan": "Salah: memakai *bukan hanya ... tetapi juga ...* atau menaruh *bukan* tepat sebelum kata kerja.",
               "visual": null
             },
             {
               "judul_poin": "Pasangan Baik ... Maupun ... dan Entah ... Entah ...",
-              "penjelasan_singkat": "Pasangan *baik ... maupun ...* menggabungkan dua hal setara, sedangkan *entah ... entah ...* menyatakan pilihan tak pasti.",
-              "contoh_penerapan": "**Baik** mahasiswa **maupun** dosen wajib mematuhi pedoman etika akademik yang berlaku di kampus.",
+              "penjelasan_singkat": "Pasangan *baik ... maupun ...* menggabungkan dua hal setara, sedangkan *entah ... entah ...* menyatakan pilihan yang belum pasti.",
+              "contoh_penerapan": "**Baik** mahasiswa **maupun** dosen wajib mematuhi kode etik penelitian yang berlaku di kampus.",
               "jebakan_atau_catatan": "Salah: *baik ... ataupun ...* atau *antara ... maupun ...* karena mencampur dua pasangan berbeda.",
               "visual": null
             },
             {
               "judul_poin": "Pasangan Sedemikian Rupa Sehingga dan Demikian ... Sehingga ...",
-              "penjelasan_singkat": "Menyatakan hubungan akibat dari suatu keadaan atau sifat yang mencapai tingkat tertentu.",
-              "contoh_penerapan": "Aturan tersebut dirancang **sedemikian rupa sehingga** seluruh peserta ujian dapat memahaminya dengan mudah.",
-              "jebakan_atau_catatan": "Salah: *sedemikian rupa maka ...* (konjungsi *maka* tidak berpasangan dengan *sedemikian rupa*).",
+              "penjelasan_singkat": "Menyatakan hubungan sebab akibat dari suatu kondisi yang mencapai tingkat tertentu.",
+              "contoh_penerapan": "Panduan ujian dirancang **sedemikian rupa sehingga** seluruh peserta dapat memahaminya dalam sekali baca.",
+              "jebakan_atau_catatan": "Salah: *sedemikian rupa maka ...* (kata *maka* bukan pasangan dari *sedemikian rupa*).",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Ketepatan Preposisi Penanda Hubungan",
-          "ringkasan_kelompok": "Pemilihan kata depan sesuai makna relasional waktu, tempat, arah, sasaran, dan lingkup.",
+          "ringkasan_kelompok": "Pemilihan kata depan sesuai makna waktu, tempat fisik, sasaran orang, atau lingkup bahasan.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Perbedaan Preposisi Di, Pada, dan Dalam",
-              "penjelasan_singkat": "*Di* untuk tempat fisik konkret; *pada* untuk waktu, orang, atau benda abstrak; *dalam* untuk ruang atau lingkup.",
-              "contoh_penerapan": "Gagasan utama tersebut tercantum **pada** paragraf kedua **dalam** artikel ilmiah yang terbit **di** jurnal nasional.",
-              "jebakan_atau_catatan": "Salah: *di abad ke-21* atau *di masa pandemi* (waktu/keadaan abstrak wajib menggunakan *pada* atau *dalam*).",
+              "penjelasan_singkat": "*Di* untuk tempat fisik; *pada* untuk waktu, orang, atau hal abstrak; *dalam* untuk ruang atau lingkup.",
+              "contoh_penerapan": "Temuan utama riset itu tertulis **pada** halaman kedua **dalam** laporan tahunan yang terbit **di** situs resmi kementerian.",
+              "jebakan_atau_catatan": "Salah: *di abad ke-21* atau *di masa pandemi* (waktu atau kondisi abstrak wajib memakai *pada* atau *dalam*).",
               "visual": null
             },
             {
               "judul_poin": "Perbedaan Preposisi Kepada dan Terhadap",
-              "penjelasan_singkat": "*Kepada* menandai arah tujuan bernyawa (orang/instansi), sedangkan *terhadap* menandai sasaran perilaku, sikap, atau tindakan.",
-              "contoh_penerapan": "Pemerintah menyalurkan bantuan langsung **kepada** warga terdampak sebagai bentuk kepedulian **terhadap** kondisi ekonomi mereka.",
-              "jebakan_atau_catatan": "Salah: *peduli kepada lingkungan* atau *menyerahkan surat terhadap kepala sekolah* (tertukar fungsi arah dan sasaran).",
+              "penjelasan_singkat": "*Kepada* menuju sasaran orang atau lembaga; *terhadap* menuju sasaran sikap, perilaku, atau tindakan.",
+              "contoh_penerapan": "Pemerintah menyalurkan bantuan tunai **kepada** warga terdampak sebagai wujud kepedulian **terhadap** kondisi ekonomi mereka.",
+              "jebakan_atau_catatan": "Salah: *peduli kepada lingkungan* atau *menyerahkan surat terhadap kepala sekolah* (tertukar arah dan sasaran).",
               "visual": null
             },
             {
               "judul_poin": "Perbedaan Preposisi Bagi dan Untuk",
-              "penjelasan_singkat": "*Bagi* menyatakan sudut pandang atau peruntukan khusus subjek tertentu; *untuk* menyatakan tujuan tindakan atau manfaat umum.",
-              "contoh_penerapan": "**Bagi** peneliti pemula, lokakarya ini sangat bermanfaat **untuk** meningkatkan keterampilan penulisan proposal riset.",
-              "jebakan_atau_catatan": "Salah: *bagi yang berminat harap mendaftar* (preposisi *bagi* di awal kalimat membuat subjek hilang).",
+              "penjelasan_singkat": "*Bagi* menunjukkan sudut pandang atau peruntukan pihak tertentu; *untuk* menunjukkan tujuan tindakan.",
+              "contoh_penerapan": "**Bagi** penulis pemula, pelatihan ini sangat berguna **untuk** mengasah teknik penyusunan artikel ilmiah.",
+              "jebakan_atau_catatan": "Salah: *bagi yang berminat harap mendaftar* (kata *bagi* di awal kalimat membuat Subjek hilang).",
               "visual": null
             },
             {
               "judul_poin": "Penggunaan Preposisi Atas dan Tentang",
-              "penjelasan_singkat": "*Atas* menandai dasar sebab atau ucapan selamat/terima kasih; *tentang* menandai pokok pembicaraan atau hal yang dibahas.",
-              "contoh_penerapan": "Kami mengucapkan terima kasih **atas** kehadiran narasumber yang memaparkan materi **tentang** mitigasi bencana.",
-              "jebakan_atau_catatan": "Salah: *membahas tentang perubahan iklim* (verba transitif *membahas* langsung diikuti objek tanpa *tentang*).",
+              "penjelasan_singkat": "*Atas* menyatakan dasar sebab atau ucapan selamat/terima kasih; *tentang* menandai topik pembicaraan.",
+              "contoh_penerapan": "Panitia mengucapkan terima kasih **atas** kehadiran pakar yang memaparkan materi **tentang** energi terbarukan.",
+              "jebakan_atau_catatan": "Salah: *membahas tentang perubahan iklim* (kata kerja *membahas* langsung diikuti Objek tanpa *tentang*).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Idiom Preposisional Verba Baku",
-          "ringkasan_kelompok": "Verba tertentu yang mengikat pasangan preposisi tetap atau melarang kehadiran preposisi.",
+          "nama_kelompok": "Pasangan Kata Kerja dan Preposisi Tetap",
+          "ringkasan_kelompok": "Kata kerja tertentu yang mengikat kata depan spesifik atau melarang kemunculan kata depan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Idiom Terdiri Atas dan Terdiri Dari",
-              "penjelasan_singkat": "*Terdiri atas* digunakan untuk menyebut komponen penyusun keseluruhan; *terdiri dari* digunakan untuk bahan dasar pembentuk benda.",
-              "contoh_penerapan": "Panitia pelaksana kegiatan ini **terdiri atas** ketua, sekretaris, bendahara, dan empat koordinator bidang.",
-              "jebakan_atau_catatan": "Salah: *terdiri* tanpa preposisi (*Panitia terdiri lima orang*) atau memakai *terdiri dari* untuk jabatan.",
+              "judul_poin": "Bentuk Terdiri Atas dan Terdiri Dari",
+              "penjelasan_singkat": "*Terdiri atas* menyebut anggota atau bagian penyusun; *terdiri dari* menyebut bahan dasar pembentuk benda.",
+              "contoh_penerapan": "Tim formatur organisasi ini **terdiri atas** ketua, sekretaris, bendahara, dan empat kepala divisi.",
+              "jebakan_atau_catatan": "Salah: *terdiri* tanpa kata depan (*Panitia terdiri lima orang*) atau memakai *terdiri dari* untuk jabatan.",
               "visual": null
             },
             {
-              "judul_poin": "Idiom Bergantung Pada dan Sesuai Dengan",
-              "penjelasan_singkat": "Verba *bergantung* wajib diikuti preposisi *pada*, sedangkan adjektiva *sesuai* wajib diikuti preposisi *dengan*.",
-              "contoh_penerapan": "Keberhasilan panen raya sangat **bergantung pada** ketersediaan irigasi yang **sesuai dengan** kebutuhan lahan.",
-              "jebakan_atau_catatan": "Salah: *tergantung dari cuaca* atau *sesuai prosedur* tanpa *dengan* dalam ragam tulis formal.",
+              "judul_poin": "Bentuk Bergantung Pada dan Sesuai Dengan",
+              "penjelasan_singkat": "Kata *bergantung* wajib diikuti kata depan *pada*, sedangkan kata *sesuai* wajib diikuti kata depan *dengan*.",
+              "contoh_penerapan": "Hasil panen padi sangat **bergantung pada** sistem irigasi yang **sesuai dengan** luas lahan pertanian.",
+              "jebakan_atau_catatan": "Salah: *tergantung dari cuaca* atau *sesuai prosedur* tanpa *dengan* dalam tulisan resmi.",
               "visual": null
             },
             {
-              "judul_poin": "Pelarangan Preposisi Setelah Berdasarkan dan Disebabkan",
-              "penjelasan_singkat": "Bentuk *berdasarkan* tidak boleh diikuti *pada*, sedangkan *disebabkan* diikuti *oleh* (bukan *karena*) agar tidak pleonastis.",
-              "contoh_penerapan": "Keputusan itu diambil **berdasarkan** data empiris, bukan **disebabkan oleh** tekanan pihak luar.",
+              "judul_poin": "Larangan Preposisi Setelah Berdasarkan dan Disebabkan",
+              "penjelasan_singkat": "Kata *berdasarkan* tidak boleh diikuti *pada*, sedangkan *disebabkan* diikuti *oleh* (bukan *karena*) agar tidak boros kata.",
+              "contoh_penerapan": "Kebijakan itu disahkan **berdasarkan** kajian lapangan, bukan **disebabkan oleh** desakan kelompok tertentu.",
               "jebakan_atau_catatan": "Salah: *berdasarkan pada data* $\\rightarrow$ seharusnya *berdasarkan data*; *disebabkan karena* $\\rightarrow$ *disebabkan oleh*.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Keutuhan Fungsi Sintaksis Subjek dan Objek",
-          "ringkasan_kelompok": "Penghindaran preposisi berlebih yang merusak pola dasar kalimat efektif [S]-[P]-[O].",
+          "nama_kelompok": "Keutuhan Fungsi Subjek dan Objek",
+          "ringkasan_kelompok": "Menghindari kata depan berlebih yang merusak pola dasar kalimat efektif [S]-[P]-[O].",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Larangan Preposisi di Depan Subjek Kalimat",
-              "penjelasan_singkat": "Kehadiran preposisi (*dalam*, *bagi*, *pada*, *menurut*) di depan frasa nomina awal mengubah Subjek menjadi Keterangan.",
-              "contoh_penerapan": "**Penelitian terbaru** membuktikan bahwa pola tidur teratur meningkatkan daya ingat jangka panjang.",
-              "jebakan_atau_catatan": "Salah: *Dalam penelitian terbaru membuktikan bahwa...* (kalimat menjadi kehilangan unsur Subjek).",
+              "penjelasan_singkat": "Kehadiran kata depan (*dalam*, *bagi*, *pada*, *menurut*) di awal kalimat mengubah Subjek menjadi Keterangan.",
+              "contoh_penerapan": "**Riset terbaru** membuktikan bahwa tidur cukup meningkatkan daya ingat jangka panjang.",
+              "jebakan_atau_catatan": "Salah: *Dalam riset terbaru membuktikan bahwa...* (kalimat menjadi kehilangan unsur Subjek).",
               "visual": null
             },
             {
-              "judul_poin": "Larangan Preposisi Setelah Verba Transitif Aktif",
-              "penjelasan_singkat": "Verba transitif berimbuhan *meN-* harus langsung diikuti nomina Objek tanpa disisipi preposisi (*akan*, *tentang*, *terhadap*).",
-              "contoh_penerapan": "Tim penyusun sedang **mendiskusikan rancangan** anggaran belanja untuk tahun ajaran mendatang.",
-              "jebakan_atau_catatan": "Salah: *mendiskusikan tentang rancangan* atau *mengharapkan akan kehadiran* (Objek berubah menjadi Pelengkap/Keterangan).",
+              "judul_poin": "Larangan Preposisi Setelah Kata Kerja Aktif Transitif",
+              "penjelasan_singkat": "Kata kerja aktif berimbuhan *meN-* harus langsung bertemu Objek tanpa disisipi kata depan (*akan*, *tentang*, *terhadap*).",
+              "contoh_penerapan": "Tim penyusun sedang **mendiskusikan rancangan** anggaran belanja untuk tahun depan.",
+              "jebakan_atau_catatan": "Salah: *mendiskusikan tentang rancangan* atau *mengharapkan akan kehadiran* (Objek rusak menjadi Keterangan).",
               "visual": null
             }
           ]
@@ -161,36 +161,36 @@
       "nomor_variasi": 1,
       "nama_variasi": "Pasangan Konjungsi Korelatif Baku",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Krisis iklim tidak hanya mengancam ketahanan pangan global, melainkan juga memicu migrasi penduduk di wilayah pesisir baik di negara maju ataupun negara berkembang.",
-      "bedah_pola_markdown": "Konjungsi korelatif menghubungkan dua unsur sintaksis sederajat dan wajib hadir berpasangan secara tetap. Selain ketepatan pasangan kata, unsur yang mengapit kedua bagian konjungsi harus memiliki **kesejajaran bentuk** (verba dengan verba, frasa nominal dengan frasa nominal).\n\n| Aspek Koreksi | Bentuk Salah (Before) | Bentuk Benar (After) |\n| :--- | :--- | :--- |\n| Pasangan `tidak` | **tidak hanya** mengkaji, **melainkan juga** merumuskan | **tidak hanya** mengkaji, **tetapi juga** merumuskan |\n| Pasangan `bukan` | **bukan hanya** faktor alam, **tetapi juga** ulah manusia | **bukan hanya** faktor alam, **melainkan juga** ulah manusia |\n| Pasangan `baik` | **baik** sektor publik **ataupun** swasta | **baik** sektor publik **maupun** swasta |\n| Kesejajaran `[P]` | tidak hanya **menghemat** `[P]` tetapi juga **pengurangan** `[N]` | tidak hanya **menghemat** `[P]` tetapi juga **mengurangi** `[P]` |\n\nKunci eksekusi: cek kata pertama (`tidak` $\\rightarrow$ `tetapi`, `bukan` $\\rightarrow$ `melainkan`, `baik` $\\rightarrow$ `maupun`), lalu pastikan kelas kata setelah kedua konjungsi identik.",
-      "kunci_pembeda": "Variasi ini menguji pasangan konjungsi dua bagian yang mengapit unsur paralel, bukan kata depan tunggal penanda hubungan antarkata.",
+      "stimulus_mini": "Krisis iklim tidak hanya mengancam ketahanan pangan global, melainkan juga memicu migrasi penduduk pesisir baik di negara maju ataupun negara berkembang.",
+      "bedah_pola_markdown": "Bayangkan konjungsi korelatif seperti sepasang sepatu: kiri dan kanannya tidak boleh tertukar. Selain pasangannya harus cocok, bentuk kata di belakang kedua bagian konjungsi juga wajib **sejajar** (kata kerja bertemu kata kerja, kata benda bertemu kata benda).\n\n| Titik Cek | Bentuk Salah (Jebakan) | Bentuk Benar (Baku) |\n| :--- | :--- | :--- |\n| Pasangan `tidak` | **tidak hanya** mengkaji, **melainkan juga** merumuskan | **tidak hanya** mengkaji, **tetapi juga** merumuskan |\n| Pasangan `bukan` | **bukan hanya** faktor alam, **tetapi juga** ulah manusia | **bukan hanya** faktor alam, **melainkan juga** ulah manusia |\n| Pasangan `baik` | **baik** sektor publik **ataupun** swasta | **baik** sektor publik **maupun** swasta |\n| Kesejajaran bentuk | tidak hanya **menghemat** `[kerja]` tetapi juga **pengurangan** `[benda]` | tidak hanya **menghemat** `[kerja]` tetapi juga **mengurangi** `[kerja]` |\n\nLangkah cepatnya: kunci pasangan kata pertamanya dulu (`tidak` $\\rightarrow$ `tetapi`, `bukan` $\\rightarrow$ `melainkan`, `baik` $\\rightarrow$ `maupun`), lalu cek apakah jenis kata setelah keduanya sudah kembar.",
+      "kunci_pembeda": "Variasi ini menguji pasangan kata hubung dua bagian yang mengapit unsur sejajar, bukan kata depan tunggal.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
       "nama_variasi": "Ketepatan Preposisi Penanda Hubungan",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Pemerintah memberikan subsidi energi kepada sektor transportasi, sementara perhatian serius terhadap kelompok rentan tetap diutamakan demi keadilan sosial di dalam kebijakan fiskal.",
-      "bedah_pola_markdown": "Preposisi menandai relasi semantis antarunsur dalam fungsi Keterangan `[K]`. Kesalahan sering muncul akibat tertukarnya preposisi bersasaran manusia (`kepada`) dengan nonmanusia (`pada`, `terhadap`), serta pemborosan preposisi ruang abstrak (`di dalam`).\n\n| Relasi Makna | Bentuk Salah (Before) | Bentuk Benar (After) |\n| :--- | :--- | :--- |\n| Sasaran bukan orang | menyalurkan dana **kepada** sektor `[K]` | menyalurkan dana **pada** sektor `[K]` |\n| Sasaran orang/pihak | melapor **pada** kepala dinas `[K]` | melapor **kepada** kepala dinas `[K]` |\n| Sikap/perlakuan | peduli **atas** kelestarian alam `[K]` | peduli **terhadap** kelestarian alam `[K]` |\n| Lingkup abstrak | **di dalam** rapat evaluasi `[K]` | **dalam** rapat evaluasi `[K]` |\n| Sebab/perihal | terima kasih **untuk** perhatiannya `[K]` | terima kasih **atas** perhatiannya `[K]` |\n\nGunakan `kepada` khusus penerima berwujud orang/lembaga personal, `pada` untuk waktu/tempat/benda abstrak, `terhadap` untuk sikap/objek sasaran, `bagi` untuk subjek penerima manfaat, dan `untuk` untuk tujuan.",
-      "kunci_pembeda": "Variasi ini berfokus pada pemilihan preposisi berdasarkan makna relasional nomina pengikutnya, bukan ikatan tetap milik verba tertentu.",
+      "stimulus_mini": "Pemerintah menyalurkan subsidi energi kepada sektor transportasi, sementara kepedulian atas kelompok rentan tetap diutamakan di dalam kebijakan fiskal.",
+      "bedah_pola_markdown": "Kata depan bertugas menjelaskan hubungan makna dalam bagian Keterangan `[K]`. Jebakan paling sering muncul saat soal menukar kata depan untuk sasaran orang (`kepada`) dengan benda atau lembaga abstrak (`pada`, `terhadap`), serta pemakaian `di dalam` yang boros.\n\n| Hubungan Makna | Bentuk Salah (Jebakan) | Bentuk Benar (Baku) |\n| :--- | :--- | :--- |\n| Sasaran bukan orang | menyalurkan dana **kepada** sektor `[K]` | menyalurkan dana **pada** sektor `[K]` |\n| Sasaran orang/pihak | melapor **pada** kepala dinas `[K]` | melapor **kepada** kepala dinas `[K]` |\n| Sikap/perlakuan | peduli **atas** kelestarian alam `[K]` | peduli **terhadap** kelestarian alam `[K]` |\n| Lingkup abstrak | **di dalam** rapat evaluasi `[K]` | **dalam** rapat evaluasi `[K]` |\n| Sebab/perihal | terima kasih **untuk** perhatiannya `[K]` | terima kasih **atas** perhatiannya `[K]` |\n\nIngat pembagian tugasnya: pakai `kepada` khusus penerima berwujud orang, `pada` untuk waktu/tempat/hal abstrak, `terhadap` untuk sikap/sasaran tindakan, dan `atas` untuk dasar sebab atau ucapan terima kasih.",
+      "kunci_pembeda": "Variasi ini fokus pada kecocokan makna antara kata depan dan kata benda di belakangnya, bukan ikatan tetap milik kata kerja.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Idiom Preposisional Verba",
+      "nama_variasi": "Pasangan Kata Kerja dan Preposisi Tetap",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Keberhasilan transisi energi sangat tergantung dari kesiapan infrastruktur jaringan yang disusun berdasarkan pada peta jalan dekarbonisasi nasional.",
-      "bedah_pola_markdown": "Dalam kaidah KBBI VI dan laras ilmiah UTBK, sejumlah verba intransitif membentuk pasangan idiomatis tetap dengan preposisi tertentu pada fungsi Predikat `[P]` + Pelengkap `[Pel]`. Penambahan atau penggantian preposisi secara sembarangan membuat konstruksi menjadi tidak baku.\n\n| Konstruksi Verba | Bentuk Salah (Before) | Bentuk Benar (After) |\n| :--- | :--- | :--- |\n| Verba `berdasar` | **berdasarkan pada** data `[P+Pel]` | **berdasarkan** data / **berdasar pada** data `[P+Pel]` |\n| Verba `bergantung` | **tergantung dari** cuaca `[P+Pel]` | **bergantung pada** cuaca `[P+Pel]` |\n| Verba `terdiri` | **terdiri** tiga tahap `[P+Pel]` | **terdiri atas** / **terdiri dari** tiga tahap `[P+Pel]` |\n| Verba `sesuai` | **sesuai** ketentuan `[P+Pel]` | **sesuai dengan** ketentuan `[P+Pel]` |\n| Verba pasif | **disebabkan karena** faktor X `[P+K]` | **disebabkan oleh** faktor X `[P+K]` |\n\nPerhatikan akhiran `-kan` pada `berdasarkan`: unsur tersebut sudah mengandung makna 'memakai sebagai dasar', sehingga preposisi `pada` wajib dihilangkan.",
-      "kunci_pembeda": "Variasi ini menguji pasangan leksikal tetap antara kata kerja tertentu dan preposisinya, termasuk bentuk berakhiran -kan yang menolak preposisi.",
+      "stimulus_mini": "Keberhasilan transisi energi sangat tergantung dari kesiapan jaringan listrik yang disusun berdasarkan pada peta jalan dekarbonisasi nasional.",
+      "bedah_pola_markdown": "Dalam aturan KBBI VI, beberapa kata kerja punya pasangan kata depan bawaan yang tidak bisa diganti-ganti. Sebaliknya, kata kerja berakhiran `-kan` tertentu justru menolak kehadiran kata depan setelahnya.\n\n| Pasangan Kata | Bentuk Salah (Jebakan) | Bentuk Benar (Baku) |\n| :--- | :--- | :--- |\n| Kata `berdasar` | **berdasarkan pada** data | **berdasarkan** data / **berdasar pada** data |\n| Kata `bergantung` | **tergantung dari** cuaca | **bergantung pada** cuaca |\n| Kata `terdiri` | **terdiri** tiga tahap | **terdiri atas** / **terdiri dari** tiga tahap |\n| Kata `sesuai` | **sesuai** ketentuan | **sesuai dengan** ketentuan |\n| Kata pasif | **disebabkan karena** faktor X | **disebabkan oleh** faktor X |\n\nPerhatikan akhiran `-kan` pada kata `berdasarkan`: akhiran itu sudah menggantikan fungsi kata depan `pada`, jadi `pada` wajib dibuang.",
+      "kunci_pembeda": "Variasi ini menguji pasangan kata kerja dan kata depan bawaannya, termasuk bentuk berakhiran -kan yang melarang kata depan.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Koreksi Penghilangan atau Penambahan Preposisi yang Mengaburkan Fungsi Subjek/Objek",
+      "nama_variasi": "Preposisi Berlebih yang Merusak Subjek dan Objek",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Dalam laporan tahunan tersebut membahas tentang strategi efisiensi anggaran yang berdampak langsung pada stabilitas fiskal daerah.",
-      "bedah_pola_markdown": "Kalimat efektif mensyaratkan kehadiran Subjek `[S]` dan Predikat `[P]` yang jelas. Meletakkan preposisi di depan Subjek mengubahnya menjadi Keterangan `[K]`, sedangkan menyisipkan preposisi setelah verba transitif aktif mengaburkan Objek `[O]`.\n\n| Jenis Kesalahan | Bentuk Salah (Before) | Bentuk Benar (After) |\n| :--- | :--- | :--- |\n| Preposisi depan `[S]` | **Bagi** peserta `[K]` wajib hadir `[P]` | Peserta `[S]` wajib hadir `[P]` |\n| Preposisi depan `[S]` | **Dalam** kajian ini `[K]` meneliti `[P]` | Kajian ini `[S]` meneliti `[P]` |\n| Preposisi depan `[O]` | membahas `[P]` **tentang** isu `[K]` | membahas `[P]` isu `[O]` |\n| Preposisi depan `[O]` | menjelaskan `[P]` **mengenai** aturan `[K]` | menjelaskan `[P]` aturan `[O]` |\n| Hilang preposisi `[Pel]` | berbicara `[P]` masalah itu `[?]` | berbicara `[P]` **tentang** masalah itu `[Pel]` |\n\nUji cepat: coret preposisi awal kalimat jika diikuti verba aktif (`meN-`), dan hapus `tentang/mengenai/akan` tepat setelah verba transitif aktif.",
-      "kunci_pembeda": "Variasi ini menguji ketepatan struktur klausa [S]-[P]-[O] secara utuh, bukan sekadar kecocokan makna leksikal satu kata depan.",
+      "bedah_pola_markdown": "Kalimat efektif wajib punya Subjek `[S]` dan Predikat `[P]` yang utuh. Jika kata depan nyasar di depan Subjek, status Subjek langsung berubah menjadi Keterangan `[K]`. Jika kata depan menyusup setelah kata kerja aktif transitif, Objek `[O]` langsung hilang.\n\n| Jenis Kesalahan | Bentuk Salah (Jebakan) | Bentuk Benar (Baku) |\n| :--- | :--- | :--- |\n| Kata depan sebelum `[S]` | **Bagi** peserta `[K]` wajib hadir `[P]` | Peserta `[S]` wajib hadir `[P]` |\n| Kata depan sebelum `[S]` | **Dalam** kajian ini `[K]` meneliti `[P]` | Kajian ini `[S]` meneliti `[P]` |\n| Kata depan sebelum `[O]` | membahas `[P]` **tentang** isu `[K]` | membahas `[P]` isu `[O]` |\n| Kata depan sebelum `[O]` | menjelaskan `[P]` **mengenai** aturan `[K]` | menjelaskan `[P]` aturan `[O]` |\n| Kurang kata depan `[Pel]` | berbicara `[P]` masalah itu `[?]` | berbicara `[P]` **tentang** masalah itu `[Pel]` |\n\nTrik coret cepat: hapus kata depan di awal kalimat jika bertemu kata kerja aktif (`meN-`), lalu coret `tentang/mengenai/akan` tepat setelah kata kerja aktif tersebut.",
+      "kunci_pembeda": "Variasi ini menguji keutuhan struktur dasar kalimat [S]-[P]-[O], bukan sekadar kecocokan arti satu kata depan.",
       "visual": null
     }
   ],
@@ -202,16 +202,16 @@
         3
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Bacalah kutipan teks berikut!\n\n(1) Transformasi digital pada sektor perbankan tidak hanya meningkatkan efisiensi transaksi, melainkan juga memperluas inklusi keuangan masyarakat pedesaan. (2) Keberhasilan layanan tersebut sangat tergantung dari kesiapan infrastruktur jaringan di daerah tertinggal. (3) Selain itu, regulasi perlindungan data pribadi disusun berdasarkan pada standar keamanan siber internasional.\n\nPerbaikan yang paling tepat agar kutipan tersebut memenuhi kaidah kebahasaan baku adalah ....",
+      "pertanyaan_markdown": "Bacalah kutipan teks berikut!\n\n(1) Digitalisasi layanan perbankan tidak hanya mempercepat transaksi, melainkan juga memperluas akses keuangan warga pedesaan. (2) Keberhasilan layanan tersebut sangat tergantung dari kesiapan jaringan internet di daerah tertinggal. (3) Selain itu, aturan perlindungan data pribadi disusun berdasarkan pada standar keamanan siber global.\n\nPerbaikan yang paling tepat agar kutipan tersebut sesuai kaidah kebahasaan baku adalah ....",
       "opsi_jawaban": [
         "A. mengganti kata 'pada' menjadi 'kepada' pada kalimat (1)",
         "B. mengganti frasa 'melainkan juga' menjadi 'tetapi juga' pada kalimat (1)",
-        "C. menghilangkan kata 'sangat' sebelum kata 'tergantung' pada kalimat (2)",
+        "C. menghapus kata 'sangat' sebelum kata 'tergantung' pada kalimat (2)",
         "D. mengganti kata 'dari' menjadi 'terhadap' pada kalimat (2)",
         "E. mengganti frasa 'berdasarkan pada' menjadi 'berdasar atas' pada kalimat (3)"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Pasangan konjungsi korelatif baku untuk unsur negatif 'tidak hanya' adalah 'tetapi juga', bukan 'melainkan juga' (opsi B tepat). Opsi A salah karena 'sektor perbankan' bukan sasaran personal ('kepada'). Opsi C tidak memperbaiki kesalahan idiom 'tergantung dari' yang seharusnya 'bergantung pada' (sehingga opsi D juga salah). Opsi E salah karena bentuk baku yang ringkas adalah 'berdasarkan' tanpa preposisi.",
+      "bedah_cepat_markdown": "Mari kita bedah kalimat per kalimat dari teks di atas.\n\n- **Cek kalimat (1):** Ada kata `tidak hanya`. Pasangan wajib untuk kata `tidak` adalah `tetapi juga`, bukan `melainkan juga`. Jadi, opsi **B** langsung tepat.\n- **Cek kalimat (2):** Bentuk `tergantung dari` memang salah dan seharusnya `bergantung pada`. Opsi C dan D tidak memperbaiki kesalahan ini.\n- **Cek kalimat (3):** Frasa `berdasarkan pada` boros kata depan; cukup ditulis `berdasarkan` saja. Opsi E tetap kurang tepat.",
       "visual": null
     },
     {
@@ -221,10 +221,10 @@
         4
       ],
       "tipe_soal_utbk": "Isian Singkat",
-      "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n(1) Riset terbaru mengenai polusi mikroplastik menunjukkan peningkatan paparan partikel sintetis pada ekosistem perairan tawar. (2) Dalam penelitian tersebut membahas tentang akumulasi polimer di jaringan organ ikan konsumsi. (3) Temuan ini menjadi peringatan serius bagi pemangku kebijakan lingkungan untuk memperketat pengelolaan limbah industri.\n\nKalimat yang tidak efektif akibat kesalahan penggunaan preposisi yang mengaburkan fungsi Subjek dan Objek adalah kalimat nomor .... (Tuliskan angka saja)",
+      "pertanyaan_markdown": "Bacalah paragraf berikut dengan saksama!\n\n(1) Riset terbaru mengenai polusi mikroplastik menunjukkan kenaikan paparan partikel sintetis pada perairan tawar. (2) Dalam penelitian tersebut membahas tentang penumpukan polimer di jaringan organ ikan konsumsi. (3) Temuan ini menjadi peringatan keras bagi pemerintah daerah untuk memperketat pengawasan limbah industri.\n\nKalimat yang tidak efektif akibat kesalahan penggunaan kata depan yang mengaburkan fungsi Subjek dan Objek adalah kalimat nomor .... (Tuliskan angka saja)",
       "opsi_jawaban": [],
       "kunci_jawaban": "2",
-      "bedah_cepat_markdown": "Kalimat (2) memiliki dua kesalahan preposisi sekaligus. Pertama, preposisi 'Dalam' di awal kalimat mengubah Subjek ('penelitian tersebut') menjadi Keterangan sehingga kalimat kehilangan Subjek. Kedua, penyisipan preposisi 'tentang' setelah verba transitif aktif 'membahas' mengaburkan fungsi Objek ('akumulasi polimer'). Kalimat (1) dan (3) sudah tepat secara struktur [S]-[P]-[O]-[K].",
+      "bedah_cepat_markdown": "Kita cek struktur `[S]-[P]-[O]` pada tiap kalimat:\n\n- **Kalimat (1):** Subjek (`Riset terbaru mengenai polusi mikroplastik`) dan Predikat (`menunjukkan`) sudah utuh.\n- **Kalimat (2):** Ada dua jebakan sekaligus! Pertama, kata depan `Dalam` di awal kalimat mengubah Subjek (`penelitian tersebut`) menjadi Keterangan sehingga kalimat kehilangan Subjek. Kedua, kata depan `tentang` setelah kata kerja aktif `membahas` menghalangi kemunculan Objek (`penumpukan polimer`).\n- **Kalimat (3):** Struktur sudah lengkap dan efektif.\n\nJadi, kalimat yang bermasalah adalah nomor **2**.",
       "visual": null
     },
     {
@@ -235,16 +235,16 @@
         4
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Perhatikan kalimat tidak baku berikut!\n\n'Bagi seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan kritik terhadap panitia penyelenggara baik secara lisan ataupun tertulis.'\n\nPerbaikan kalimat tersebut agar menjadi kalimat efektif sesuai EYD V adalah ....",
+      "pertanyaan_markdown": "Perhatikan kalimat tidak baku berikut!\n\n'Bagi seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan saran terhadap panitia pelaksana baik secara lisan ataupun tertulis.'\n\nPerbaikan kalimat tersebut agar menjadi kalimat efektif sesuai EYD V adalah ....",
       "opsi_jawaban": [
-        "A. Seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan kritik kepada panitia penyelenggara baik secara lisan maupun tertulis.",
-        "B. Bagi seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan kritik kepada panitia penyelenggara baik secara lisan ataupun tertulis.",
-        "C. Seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan kritik terhadap panitia penyelenggara baik secara lisan maupun tertulis.",
-        "D. Kepada seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan kritik pada panitia penyelenggara baik secara lisan maupun tertulis.",
-        "E. Seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan kritik atas panitia penyelenggara baik secara lisan maupun tertulis."
+        "A. Seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan saran kepada panitia pelaksana baik secara lisan maupun tertulis.",
+        "B. Bagi seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan saran kepada panitia pelaksana baik secara lisan ataupun tertulis.",
+        "C. Seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan saran terhadap panitia pelaksana baik secara lisan maupun tertulis.",
+        "D. Kepada seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan saran pada panitia pelaksana baik secara lisan maupun tertulis.",
+        "E. Seluruh peserta seminar yang telah mendaftar diharapkan menyampaikan saran atas panitia pelaksana baik secara lisan maupun tertulis."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Ada tiga koreksi wajib: (1) hapus preposisi 'Bagi' di awal kalimat agar 'Seluruh peserta seminar...' berfungsi sebagai Subjek (opsi B dan D gugur); (2) ganti 'terhadap' menjadi 'kepada' karena 'panitia penyelenggara' adalah sasaran personal (opsi C dan E gugur); (3) pasangkan konjungsi korelatif 'baik' dengan 'maupun', bukan 'ataupun' (opsi A tepat).",
+      "bedah_cepat_markdown": "Ada tiga titik yang harus dibenahi dari kalimat soal:\n\n1. **Hapus kata depan di awal kalimat:** Kata `Bagi` membuat kalimat kehilangan Subjek. Coret `Bagi` supaya `Seluruh peserta seminar...` menjadi Subjek yang sah (opsi B dan D gugur).\n2. **Perbaiki sasaran orang/panitia:** Sasaran penyampaian saran adalah `panitia pelaksana` (pihak personal), jadi gunakan `kepada`, bukan `terhadap` atau `atas` (opsi C dan E gugur).\n3. **Luruskan pasangan kata hubung:** Pasangan baku dari `baik` adalah `maupun`, bukan `ataupun`.\n\nSemua perbaikan ini terpenuhi utuh pada opsi **A**.",
       "visual": null
     }
   ]

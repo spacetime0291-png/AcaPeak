@@ -15,18 +15,18 @@
         "Tim peneliti menemukan anomali"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Klausa 'yang dipimpin oleh pakar klimatologi asal Bandung' hanyalah perluasan keterangan subjek. Inti kalimat wajib mempertahankan Subjek utama ('Tim peneliti'), Predikat ('menemukan'), dan Objek ('anomali')."
+      "penjelasan_kilat": "Bagian 'yang dipimpin oleh pakar klimatologi asal Bandung' cuma penjelasan tambahan untuk subjek. Inti kalimat wajib mempertahankan pelaku utama ('Tim peneliti'), tindakan ('menemukan'), dan sasarannya ('anomali')."
     },
-    "konsep_inti_markdown": "**Kalimat inti dan transformasi kalimat** menguji kemampuan menyederhanakan maupun mengembangkan struktur kalimat baku sesuai kaidah EYD V dan KBBI VI:\n\n* **Inti Kalimat:** Hanya menyisakan unsur wajib **S-P**, **S-P-O**, atau **S-P-Pel** tanpa perluasan dan keterangan.\n* **Perluasan & Aposisi:** Penambahan keterangan atau unsur setara yang diapit tanda koma.\n* **Penggabungan & Pemecahan:** Mengaitkan klausa dengan konjungsi logis atau menguraikannya kembali menjadi kalimat dasar mandiri.",
+    "konsep_inti_markdown": "**Kalimat inti dan transformasi kalimat** menguji kejelianmu memangkas kalimat panjang menjadi kerangka dasarnya, atau menggabungkan kalimat pendek secara logis sesuai EYD V dan KBBI VI:\n\n* **Inti Kalimat:** Hanya menyisakan kerangka wajib **S-P**, **S-P-O**, atau **S-P-Pel** tanpa embel-embel keterangan.\n* **Perluasan & Aposisi:** Menambah keterangan atau informasi tambahan setara yang wajib diapit dua tanda koma.\n* **Penggabungan & Pemecahan:** Menyatukan dua kalimat memakai kata hubung yang tepat atau memecah kalimat panjang menjadi beberapa kalimat tunggal.",
     "radar_jebakan_utbk": [
-      "Mengambil kata benda di dalam klausa perluasan berpenanda 'yang' sebagai Subjek inti, sehingga inti kalimat melenceng dari pelaku utamanya.",
-      "Menghilangkan kata hubung logis saat menggabungkan dua kalimat atau gagal mengapit keterangan tambahan (aposisi) dengan dua tanda koma yang baku."
+      "Terkecoh mengambil kata benda di dalam anak kalimat berawalan 'yang' sebagai Subjek inti, sehingga pelaku utamanya melenceng.",
+      "Salah memilih kata hubung saat menggabungkan dua kalimat atau lupa menutup keterangan tambahan (aposisi) dengan tanda koma kedua."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Kaidah Kalimat Inti dan Transformasi Kalimat",
-      "subjudul_ringkas": "Panduan lengkap ekstraksi inti kalimat, perluasan aposisi, penggabungan klausa logis, dan pemecahan kalimat kompleks.",
+      "subjudul_ringkas": "Panduan praktis mencari inti kalimat, memberi keterangan tambahan, menggabungkan kalimat secara logis, dan memecah kalimat kompleks.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -35,113 +35,113 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "1. Ekstraksi Inti Kalimat (S-P, S-P-O, S-P-Pel)",
-          "ringkasan_kelompok": "Kaidah menyaring unsur wajib kalimat tunggal maupun majemuk sesuai struktur sintaksis baku.",
+          "nama_kelompok": "1. Menemukan Inti Kalimat (S-P, S-P-O, S-P-Pel)",
+          "ringkasan_kelompok": "Cara menyaring unsur wajib dari kalimat tunggal maupun kalimat bertingkat yang panjang.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Pola Dasar Inti Kalimat Tunggal",
-              "penjelasan_singkat": "Inti kalimat hanya menyisakan subjek inti dan predikat inti (beserta objek atau pelengkap wajib) tanpa keterangan dan atribut.",
-              "contoh_penerapan": "Kalimat *Peneliti muda itu menemukan vaksin baru kemarin* memiliki inti **Peneliti menemukan vaksin**.",
-              "jebakan_atau_catatan": "Jebakan: Menyertakan kata sifat perluasan (*muda*, *baru*) atau keterangan waktu (*kemarin*) ke dalam inti kalimat.",
+              "penjelasan_singkat": "Inti kalimat hanya menyisakan Subjek inti dan Predikat inti (bersama Objek atau Pelengkap wajib) tanpa kata sifat maupun keterangan.",
+              "contoh_penerapan": "Kalimat *Tim arkeolog menemukan situs kuno di pedalaman Kalimantan pekan lalu* memiliki inti **Tim arkeolog menemukan situs**.",
+              "jebakan_atau_catatan": "Jebakan: Ikut memasukkan kata sifat (*kuno*) atau keterangan tempat dan waktu ke dalam inti kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Inti Kalimat Majemuk Bertingkat (Induk Kalimat)",
-              "penjelasan_singkat": "Pada kalimat majemuk bertingkat, inti kalimat diambil mutlak dari induk kalimat, sedangkan anak kalimat berkonjungsi harus dibuang.",
-              "contoh_penerapan": "Pada *Meskipun hujan turun deras, warga membersihkan selokan*, intinya adalah **Warga membersihkan selokan**.",
-              "jebakan_atau_catatan": "Jebakan: Mengambil inti dari anak kalimat (*Hujan turun*) atau menyisakan konjungsi subordinatif di awal inti.",
+              "judul_poin": "Inti Kalimat Majemuk Bertingkat (Ambil Induk Kalimat)",
+              "penjelasan_singkat": "Pada kalimat bertingkat, inti kalimat mutlak diambil dari induk kalimat. Anak kalimat yang diawali kata hubung harus dibuang.",
+              "contoh_penerapan": "Pada *Meskipun cuaca ekstrem melanda perairan selatan, kapal logistik tetap menyalurkan bantuan*, intinya adalah **Kapal logistik menyalurkan bantuan**.",
+              "jebakan_atau_catatan": "Jebakan: Mengambil inti dari anak kalimat (*Cuaca ekstrem melanda*) atau menyisakan kata hubung di awal inti.",
               "visual": null
             },
             {
-              "judul_poin": "Eliminasi Perluasan Subjek Berkonjungsi Yang",
-              "penjelasan_singkat": "Klausa pewatas yang diawali kata *yang* hanya berfungsi menjelaskan nomina sehingga wajib dihilangkan saat menentukan inti kalimat.",
-              "contoh_penerapan": "Kalimat *Mahasiswa yang mengenakan jaket kuning itu membacakan petisi* berinti **Mahasiswa membacakan petisi**.",
-              "jebakan_atau_catatan": "Jebakan: Menganggap kata kerja di dalam klausa perluasan (*mengenakan*) sebagai predikat utama kalimat.",
+              "judul_poin": "Memangkas Perluasan Subjek Berawalan 'Yang'",
+              "penjelasan_singkat": "Bagian kalimat yang diawali kata *yang* hanya menjelaskan kata benda di depannya, sehingga harus dicoret saat mencari inti kalimat.",
+              "contoh_penerapan": "Kalimat *Satelit observasi yang diluncurkan pada awal tahun tersebut memantau perubahan tutupan hutan* berinti **Satelit observasi memantau perubahan**.",
+              "jebakan_atau_catatan": "Jebakan: Menganggap kata kerja di dalam penjelasan *yang* (*diluncurkan*) sebagai Predikat utama kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Keberadaan Objek dan Pelengkap Wajib",
-              "penjelasan_singkat": "Predikat verba transitif wajib diikuti objek, sedangkan verba intransitif tertentu wajib diikuti pelengkap agar makna inti tidak rumpang.",
-              "contoh_penerapan": "Kalimat *Indonesia berlandaskan Pancasila sejak merdeka* memiliki inti **Indonesia berlandaskan Pancasila** (S-P-Pel).",
-              "jebakan_atau_catatan": "Jebakan: Membuang objek atau pelengkap wajib sehingga inti kalimat menjadi rancu (*Indonesia berlandaskan*).",
+              "judul_poin": "Menyertakan Objek dan Pelengkap Wajib",
+              "penjelasan_singkat": "Kata kerja tertentu tidak bisa berdiri sendiri karena maknanya akan menggantung. Kamu wajib menyertakan Objek atau Pelengkap setelah Predikat.",
+              "contoh_penerapan": "Kalimat *Kebijakan energi bersih berlandaskan prinsip pembangunan berkelanjutan sejak awal perumusannya* memiliki inti **Kebijakan berlandaskan prinsip** (S-P-Pel).",
+              "jebakan_atau_catatan": "Jebakan: Membuang Pelengkap wajib sehingga inti kalimat terdengar rancu (*Kebijakan berlandaskan*).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "2. Perluasan Kalimat dan Konstruksi Aposisi",
-          "ringkasan_kelompok": "Aturan mengembangkan kalimat inti dengan keterangan tambahan, aposisi, dan klausa pewatas efektif.",
+          "nama_kelompok": "2. Perluasan Kalimat dan Keterangan Tambahan (Aposisi)",
+          "ringkasan_kelompok": "Aturan memperkaya kalimat inti dengan keterangan tambahan dan tanda baca yang baku.",
           "buka_default": false,
           "butir": [
             {
               "judul_poin": "Keterangan Tambahan (Aposisi) Apit Dua Koma",
-              "penjelasan_singkat": "Aposisi menerangkan nomina sebelumnya secara setara, dapat saling menggantikan posisi, dan wajib diapit dua tanda koma di tengah kalimat.",
-              "contoh_penerapan": "B.J. Habibie**, Presiden ketiga Republik Indonesia,** merancang pesawat N-250 pada era sembilan puluhan.",
-              "jebakan_atau_catatan": "Salah: *B.J. Habibie, Presiden ketiga Republik Indonesia merancang pesawat.* Koma penutup aposisi sering tertinggal.",
+              "penjelasan_singkat": "Aposisi menjelaskan kata benda sebelumnya secara setara dan bisa saling bertukar posisi. Jika berada di tengah kalimat, aposisi wajib diapit dua tanda koma.",
+              "contoh_penerapan": "B.J. Habibie**, Presiden ketiga Republik Indonesia,** merintis industri dirgantara nasional pada dekade 1990-an.",
+              "jebakan_atau_catatan": "Salah: *B.J. Habibie, Presiden ketiga Republik Indonesia merintis industri.* Koma penutup aposisi sering tertinggal.",
               "visual": null
             },
             {
-              "judul_poin": "Perluasan Keterangan dengan Konjungsi Subordinatif",
-              "penjelasan_singkat": "Kalimat inti diperluas menjadi kalimat majemuk dengan menambahkan anak kalimat berketerangan waktu, syarat, atau tujuan menggunakan konjungsi baku.",
+              "judul_poin": "Menambah Keterangan dengan Kata Hubung yang Tepat",
+              "penjelasan_singkat": "Kalimat inti dapat diperluas dengan menambahkan keterangan waktu, syarat, atau tujuan memakai satu kata hubung yang baku.",
               "contoh_penerapan": "Proyek pembangunan jembatan ditunda sementara **agar keselamatan pekerja tetap terjamin**.",
-              "jebakan_atau_catatan": "Salah: *Untuk demi menjaga keselamatan, proyek ditunda.* Hindari pemborosan konjungsi bermakna ganda.",
+              "jebakan_atau_catatan": "Salah: *Untuk demi menjaga keselamatan, proyek ditunda.* Hindari pemakaian dua kata hubung bermakna sama.",
               "visual": null
             },
             {
-              "judul_poin": "Perluasan Nomina dengan Klausa Pewatas Yang",
-              "penjelasan_singkat": "Kata *yang* digunakan untuk membatasi atau menyifati subjek maupun objek tanpa memutus hubungan langsung antara subjek dan predikat.",
-              "contoh_penerapan": "Buku **yang diterbitkan oleh Badan Bahasa itu** menjadi rujukan utama peserta ujian.",
-              "jebakan_atau_catatan": "Salah: *Buku itu yang menjadi rujukan.* Menyisipkan *yang* tepat sebelum predikat menghilangkan predikat kalimat.",
+              "judul_poin": "Menjelaskan Kata Benda dengan Kata 'Yang'",
+              "penjelasan_singkat": "Kata *yang* dipakai untuk memberi keterangan tambahan pada Subjek atau Objek tanpa memutus hubungan langsung antara Subjek dan Predikat.",
+              "contoh_penerapan": "Kamus besar **yang diterbitkan oleh Badan Bahasa tersebut** menjadi rujukan utama peserta ujian.",
+              "jebakan_atau_catatan": "Salah: *Kamus besar itu yang menjadi rujukan utama.* Menyisipkan *yang* tepat sebelum Predikat membuat kalimat kehilangan predikat.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "3. Penggabungan Kalimat dan Hubungan Logis",
-          "ringkasan_kelompok": "Kaidah menyatukan dua kalimat tunggal menggunakan konjungsi intrakalimat yang tepat secara logis.",
+          "ringkasan_kelompok": "Kaidah menyatukan dua kalimat tunggal menggunakan kata hubung yang tepat secara makna dan tanda baca.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Penggabungan Hubungan Pertentangan dan Konsesif",
-              "penjelasan_singkat": "Dua klausa berlawanan digabung memakai konjungsi intrakalimat *tetapi* atau *sedangkan* (didahului koma), atau konjungsi bertingkat *meskipun*.",
+              "judul_poin": "Menggabungkan Dua Gagasan yang Bertentangan",
+              "penjelasan_singkat": "Dua pernyataan yang berlawanan dalam satu kalimat digabung memakai *tetapi* atau *sedangkan* (didahului koma), atau memakai *meskipun* di awal.",
               "contoh_penerapan": "Ekonomi global melambat, **tetapi** ekspor komoditas pangan nasional justru meningkat tajam.",
-              "jebakan_atau_catatan": "Salah: *Ekonomi melambat, namun ekspor meningkat.* Kata *namun* adalah konjungsi antarkalimat, bukan intrakalimat.",
+              "jebakan_atau_catatan": "Salah: *Ekonomi melambat, namun ekspor meningkat.* Kata *namun* dipakai di awal kalimat baru, bukan di tengah kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Penggabungan Hubungan Sebab dan Akibat",
-              "penjelasan_singkat": "Klausa penyebab dan dampak digabung secara logis menggunakan konjungsi *karena* (sebab) atau *sehingga* (akibat) tanpa konjungsi ganda.",
+              "judul_poin": "Menggabungkan Hubungan Sebab dan Akibat",
+              "penjelasan_singkat": "Peristiwa penyebab dan dampaknya disatukan secara logis memakai *karena* (sebab) atau *sehingga* (akibat) tanpa kata hubung ganda.",
               "contoh_penerapan": "Curah hujan ekstrem mengguyur hulu sungai **sehingga** permukiman warga terendam banjir.",
-              "jebakan_atau_catatan": "Salah: *Karena hujan deras, maka banjir terjadi.* Hindari pasangan *karena... maka* dalam satu kalimat.",
+              "jebakan_atau_catatan": "Salah: *Karena hujan deras, maka banjir terjadi.* Jangan pasangkan kata *karena* dan *maka* dalam satu kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Penggabungan Setara dengan Pelesapan dan Kesejajaran",
-              "penjelasan_singkat": "Dua kalimat bersubjek sama digabung dengan konjungsi *dan* atau *serta* sambil melesapkan subjek kedua dan menjaga kesejajaran imbuhan.",
+              "judul_poin": "Menggabungkan Tindakan Setara Tanpa Mengulang Subjek",
+              "penjelasan_singkat": "Dua kalimat bersubjek sama digabung dengan *dan* atau *serta* sambil menghilangkan subjek kedua dan menjaga kesamaan bentuk kata kerja.",
               "contoh_penerapan": "Tim peneliti **mengumpulkan data lapangan dan menganalisisnya** menggunakan perangkat lunak statistik.",
-              "jebakan_atau_catatan": "Salah: *Tim peneliti mengumpulkan data dan dianalisis.* Bentuk aktif (*meN-*) tidak sejajar dengan pasif (*di-*).",
+              "jebakan_atau_catatan": "Salah: *Tim peneliti mengumpulkan data dan dianalisis.* Bentuk aktif (*me-*) tidak sejajar dengan bentuk pasif (*di-*).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "4. Pemecahan Kalimat Majemuk Kompleks",
-          "ringkasan_kelompok": "Langkah menguraikan kalimat kompleks kembali menjadi kalimat-kalimat tunggal mandiri yang gramatikal.",
+          "nama_kelompok": "4. Memecah Kalimat Majemuk Kompleks",
+          "ringkasan_kelompok": "Langkah menguraikan kalimat panjang menjadi kalimat-kalimat tunggal mandiri yang utuh.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pemecahan Kalimat Majemuk Bertingkat ke Kalimat Dasar",
-              "penjelasan_singkat": "Klausa induk dan klausa anak dipisah menjadi kalimat tunggal mandiri dengan membuang konjungsi subordinatif dan memulihkan subjek.",
-              "contoh_penerapan": "*Karena sakit, Budi absen* dipecah menjadi dua kalimat dasar: **Budi sakit** dan **Budi absen**.",
-              "jebakan_atau_catatan": "Salah: Mempertahankan konjungsi pada pecahan (*Karena Budi sakit.*) sehingga kalimat tidak dapat berdiri mandiri.",
+              "judul_poin": "Memecah Kalimat Bertingkat Menjadi Kalimat Tunggal",
+              "penjelasan_singkat": "Pisahkan induk kalimat dan anak kalimat menjadi dua kalimat mandiri dengan membuang kata hubungnya.",
+              "contoh_penerapan": "*Karena pasokan kedelai impor tersendat, harga tahu di pasar melonjak* dipecah menjadi: **Pasokan kedelai impor tersendat** dan **Harga tahu di pasar melonjak**.",
+              "jebakan_atau_catatan": "Salah: Mempertahankan kata hubung pada pecahan (*Karena pasokan kedelai impor tersendat.*) sehingga kalimat menggantung.",
               "visual": null
             },
             {
-              "judul_poin": "Pemecahan Unsur Aposisi dan Klausa Pewatas",
-              "penjelasan_singkat": "Keterangan aposisi atau klausa pewatas diuraikan menjadi kalimat tunggal baru dengan mengulang nomina inti sebagai subjek.",
-              "contoh_penerapan": "*Rina, ketua tim, menyusun laporan* dipecah menjadi **Rina menyusun laporan** dan **Rina adalah ketua tim**.",
-              "jebakan_atau_catatan": "Salah: Menghasilkan pecahan berupa frasa tanpa predikat (*Ketua tim menyusun laporan* tanpa menjelaskan identitas Rina).",
+              "judul_poin": "Menguraikan Keterangan Tambahan (Aposisi) Menjadi Kalimat Baru",
+              "penjelasan_singkat": "Keterangan aposisi atau penjelasan *yang* dipecah menjadi kalimat baru dengan memunculkan kembali kata benda yang dijelaskannya.",
+              "contoh_penerapan": "*Nusantara, ibu kota negara yang baru, dirancang dengan konsep kota hutan* dipecah menjadi **Nusantara dirancang dengan konsep kota hutan** dan **Nusantara adalah ibu kota negara yang baru**.",
+              "jebakan_atau_catatan": "Salah: Menghasilkan pecahan berupa potongan frasa tanpa predikat (*Ibu kota negara yang baru*).",
               "visual": null
             }
           ]
@@ -155,17 +155,17 @@
       "nama_variasi": "Menentukan Inti Kalimat (S-P atau S-P-O Murni) dari Kalimat Majemuk Kompleks",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Lembaga riset kelautan yang beroperasi di wilayah pesisir timur Indonesia **merilis** laporan pemetaan terumbu karang setelah melakukan survei selama enam bulan.",
-      "bedah_pola_markdown": "**Bedah Pola Reduksi & Fungsi:**\nPerhatikan struktur fungsi kalimat majemuk bertingkat berikut: [S] *Lembaga riset kelautan (yang beroperasi di wilayah pesisir timur Indonesia)* + [P] ***merilis*** + [O] *laporan pemetaan terumbu karang* + [K] *setelah melakukan survei selama enam bulan*. Untuk menemukan inti kalimat sesuai EYD V, pangkas seluruh anak kalimat keterangan, keterangan waktu, dan perluasan atributif yang diawali kata *yang* sehingga tersisa inti **S-P-O** murni: *Lembaga merilis laporan*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengambil kata di dalam perluasan: *Wilayah pesisir merilis laporan*. | Mempertahankan inti subjek utama: *Lembaga riset merilis laporan*. |\n| Menyertakan keterangan waktu: *Lembaga merilis laporan setelah survei*. | Memangkas seluruh keterangan: *Lembaga merilis laporan* (`S-P-O`). |\n\n**Strategi Eksekusi:** Coret bagian di antara kata *yang* hingga kata kerja utama kalimat, lalu ambil inti kata benda [S], kata kerja utama [P], dan sasaran [O].",
-      "kunci_pembeda": "Memangkas seluruh klausa bawahan, frasa berpreposisi, dan perluasan atributif 'yang' hingga tersisa kerangka S-P atau S-P-O paling ringkas.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Struktur:**\nLihat susunan kalimat panjang di atas: [S] *Lembaga riset kelautan (yang beroperasi di wilayah pesisir timur Indonesia)* + [P] ***merilis*** + [O] *laporan pemetaan terumbu karang* + [K] *setelah melakukan survei selama enam bulan*. Untuk mendapatkan inti kalimat sesuai EYD V, coret seluruh anak kalimat keterangan waktu dan penjelasan tambahan yang diawali kata *yang*. Hasilnya tinggal kerangka **S-P-O** murni: **Lembaga riset merilis laporan**.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengambil kata di dalam penjelasan *yang*: *Wilayah pesisir merilis laporan*. | Mempertahankan inti pelaku utama: *Lembaga riset merilis laporan*. |\n| Menyertakan keterangan waktu: *Lembaga riset merilis laporan setelah survei*. | Memangkas seluruh keterangan: *Lembaga riset merilis laporan* (`S-P-O`). |\n\n**Strategi Eksekusi:** Coret bagian mulai dari kata *yang* hingga tepat sebelum kata kerja utama, lalu ambil inti pelaku [S], tindakan utama [P], dan sasarannya [O].",
+      "kunci_pembeda": "Memangkas seluruh anak kalimat keterangan dan penjelasan berawalan 'yang' hingga tersisa kerangka S-P atau S-P-O paling ringkas.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
       "nama_variasi": "Perluasan Kalimat Inti dengan Penambahan Keterangan atau Keterangan Tambahan (Aposisi)",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "Bacharuddin Jusuf Habibie**, Presiden ketiga Republik Indonesia,** merintis pengembangan industri dirgantara nasional pada dekade sembilan puluhan.",
-      "bedah_pola_markdown": "**Bedah Pola Perluasan & Fungsi:**\nPerhatikan posisi keterangan tambahan dalam struktur: [S] *Bacharuddin Jusuf Habibie*, [Aposisi] ***Presiden ketiga Republik Indonesia***, + [P] *merintis* + [O] *pengembangan industri dirgantara* + [K] *pada dekade sembilan puluhan*. Keterangan tambahan (aposisi) bersifat menjelaskan unsur sebelumnya secara setara dan dapat saling menggantikan dalam kalimat. Sesuai kaidah EYD V, unsur aposisi di tengah kalimat wajib diapit oleh dua tanda koma secara konsisten.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Satu koma hilang: *Raja Ampat, kawasan konservasi laut memiliki terumbu karang*. | Dua koma apit baku: *Raja Ampat, kawasan konservasi laut, memiliki terumbu karang*. |\n| Keterangan awal tanpa koma: *Untuk menekan emisi pemerintah memberi subsidi*. | Keterangan awal berkoma baku: *Untuk menekan emisi, pemerintah memberi subsidi*. |\n\n**Strategi Eksekusi:** Uji apakah frasa di antara dua koma dapat menggantikan posisi subjek secara utuh; jika dapat, pastikan kedua tanda koma pembatas terpasang lengkap.",
-      "kunci_pembeda": "Memperluas informasi kalimat inti dengan menyisipkan unsur setara yang diapit dua tanda koma atau keterangan berpreposisi yang jelas batasnya.",
+      "stimulus_mini": "Bacharuddin Jusuf Habibie**, Presiden ketiga Republik Indonesia,** merintis pengembangan industri dirgantara nasional pada dekade 1990-an.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Struktur:**\nPerhatikan posisi keterangan tambahan dalam kalimat ini: [S] *Bacharuddin Jusuf Habibie*, [Aposisi] ***Presiden ketiga Republik Indonesia***, + [P] *merintis* + [O] *pengembangan industri dirgantara* + [K] *pada dekade 1990-an*. Keterangan tambahan (aposisi) bersifat menjelaskan unsur sebelumnya secara setara dan bisa saling bertukar tempat. Sesuai kaidah EYD V, aposisi yang berada di tengah kalimat wajib diapit dua tanda koma.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Satu koma hilang: *Raja Ampat, kawasan konservasi laut memiliki terumbu karang*. | Dua koma apit baku: *Raja Ampat, kawasan konservasi laut, memiliki terumbu karang*. |\n| Keterangan awal tanpa koma: *Untuk menekan emisi pemerintah memberi subsidi*. | Keterangan awal berkoma baku: *Untuk menekan emisi, pemerintah memberi subsidi*. |\n\n**Strategi Eksekusi:** Lakukan tes tukar posisi pada frasa di antara tanda koma; jika frasa itu bisa menggantikan subjek secara utuh, pastikan kedua tanda koma pembatas terpasang.",
+      "kunci_pembeda": "Memperluas kalimat inti dengan menyisipkan keterangan tambahan setara yang wajib diapit dua tanda koma secara konsisten.",
       "visual": null
     },
     {
@@ -173,8 +173,8 @@
       "nama_variasi": "Penggabungan Dua Kalimat Tunggal dengan Hubungan Logis yang Tepat",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Kalimat (1): Curah hujan ekstrem mengguyur wilayah hulu selama tiga hari. Kalimat (2): Debit air sungai meluap hingga merendam permukiman warga.",
-      "bedah_pola_markdown": "**Bedah Pola Konjungsi & Fungsi:**\nGabungan kedua kalimat membentuk hubungan sebab-akibat: [S1] *Curah hujan ekstrem* + [P1] *mengguyur wilayah hulu* + [Konjungsi akibat] ***sehingga*** + [S2] *debit air sungai* + [P2] *meluap*. Pemilihan kata hubung wajib mencerminkan hubungan logis antarklausa (pertentangan, sebab-akibat, tujuan, atau syarat) serta mematuhi aturan tanda baca EYD V dan kata baku KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pemakaian konjungsi salah: *Hujan deras, **sedangkan** sungai meluap*. | Konjungsi sebab-akibat tepat: *Hujan deras **sehingga** sungai meluap*. |\n| Konjungsi ganda mubazir: ***Karena** hujan deras, **maka** banjir terjadi*. | Konjungsi tunggal baku: ***Karena** hujan deras, banjir terjadi*. |\n\n**Strategi Eksekusi:** Tentukan relasi logis antara peristiwa pertama dan kedua, pilih satu kata penghubung yang presisi, serta hilangkan pengulangan subjek yang identik.",
-      "kunci_pembeda": "Memilih satu kata penghubung intrakalimat yang tepat sasaran guna menyatukan dua klausa tunggal berdasarkan relasi logis maknanya.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Struktur:**\nGabungan kedua kalimat ini membentuk hubungan sebab-akibat: [S1] *Curah hujan ekstrem* + [P1] *mengguyur wilayah hulu* + [Kata hubung akibat] ***sehingga*** + [S2] *debit air sungai* + [P2] *meluap*. Kata hubung yang kamu pilih wajib mencerminkan hubungan makna antarklausa (pertentangan, sebab-akibat, tujuan, atau syarat) sekaligus mematuhi aturan tanda baca EYD V dan kata baku KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Kata hubung salah: *Hujan deras, **sedangkan** sungai meluap*. | Kata hubung sebab-akibat tepat: *Hujan deras **sehingga** sungai meluap*. |\n| Kata hubung ganda mubazir: ***Karena** hujan deras, **maka** banjir terjadi*. | Kata hubung tunggal baku: ***Karena** hujan deras, banjir terjadi*. |\n\n**Strategi Eksekusi:** Baca hubungan makna antara kejadian pertama dan kedua, pilih satu kata hubung yang paling pas, lalu hapus pengulangan subjek jika pelakunya sama.",
+      "kunci_pembeda": "Memilih satu kata hubung di dalam kalimat yang paling pas untuk menyatukan dua pernyataan tunggal sesuai hubungan maknanya.",
       "visual": null
     },
     {
@@ -182,8 +182,8 @@
       "nama_variasi": "Pemecahan Kalimat Majemuk Kompleks Menjadi Kalimat-Kalimat Dasar Pembentuknya",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Pemerintah mempercepat pembangunan jaringan kereta cepat yang menghubungkan pusat ekonomi antarkota agar biaya logistik nasional menurun.",
-      "bedah_pola_markdown": "**Bedah Pola Dekonstruksi & Fungsi:**\nKalimat majemuk kompleks di atas tersusun dari tiga proposisi dasar: (1) [S] *Pemerintah* + [P] *mempercepat* + [O] *pembangunan jaringan kereta cepat*, (2) [S] *Jaringan kereta cepat* + [P] *menghubungkan* + [O] *pusat ekonomi antarkota*, dan (3) [S] *Biaya logistik nasional* + [P] *menurun*. Pemecahan kalimat wajib melepaskan kata hubung (*yang*, *agar*) dan mengembalikan subjek tersembunyi pada tiap klausa sesuai kaidah EYD V.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Mempertahankan konjungsi: *Yang menghubungkan pusat ekonomi antarkota*. | Mengembalikan subjek utuh: *Jaringan kereta cepat menghubungkan pusat ekonomi*. |\n| Mencampur dua predikat: *Pemerintah mempercepat jaringan kereta menurun*. | Memisahkan sesuai peran pelaku: *Biaya logistik nasional menurun*. |\n\n**Strategi Eksekusi:** Pisahkan setiap kata kerja predikat menjadi kalimat mandiri, lalu kembalikan nomina rujukan kata *yang* sebagai Subjek baru pada klausa perluasan.",
-      "kunci_pembeda": "Menguraikan setiap predikat dalam kalimat majemuk menjadi kalimat tunggal mandiri dengan mengembalikan subjek rujukan konjungsinya.",
+      "bedah_pola_markdown": "**Langkah Berpikir & Bedah Struktur:**\nKalimat kompleks di atas sebenarnya gabungan dari tiga gagasan dasar: (1) [S] *Pemerintah* + [P] *mempercepat* + [O] *pembangunan jaringan kereta cepat*, (2) [S] *Jaringan kereta cepat* + [P] *menghubungkan* + [O] *pusat ekonomi antarkota*, dan (3) [S] *Biaya logistik nasional* + [P] *menurun*. Saat memecah kalimat, lepas semua kata hubung (*yang*, *agar*) dan munculkan kembali subjek tersembunyi pada tiap bagian agar bisa berdiri mandiri.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyisakan kata hubung: *Yang menghubungkan pusat ekonomi antarkota*. | Memunculkan subjek utuh: *Jaringan kereta cepat menghubungkan pusat ekonomi*. |\n| Mencampur pelaku dan tindakan: *Pemerintah mempercepat jaringan kereta menurun*. | Memisahkan sesuai pelaku masing-masing: *Biaya logistik nasional menurun*. |\n\n**Strategi Eksekusi:** Tandai setiap kata kerja utama, pisahkan menjadi kalimat mandiri, lalu ganti kata *yang* dengan kata benda yang dirujuknya sebagai Subjek baru.",
+      "kunci_pembeda": "Menguraikan setiap kata kerja predikat dalam kalimat majemuk menjadi kalimat tunggal mandiri dengan mengembalikan subjek rujukannya.",
       "visual": null
     }
   ],
@@ -204,7 +204,7 @@
         "E. Mobilitas komuter berada di kawasan metropolitan."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Untuk menemukan inti kalimat, pangkas perluasan subjek berpenanda *yang* (*yang menggandeng konsorsium perusahaan transportasi nasional*) serta keterangan tujuan dan tempat di akhir kalimat (*guna memudahkan mobilitas komuter di kawasan metropolitan*). Unsur wajib yang tersisa adalah Subjek inti **Kementerian Perhubungan**, Predikat inti **meluncurkan**, dan Objek inti **sistem pembayaran** (**opsi C**). **Opsi A**, **B**, **D**, dan **E** keliru karena mengambil isi klausa perluasan sebagai inti utama.",
+      "bedah_cepat_markdown": "Untuk mencari inti kalimat, coret dulu perluasan subjek yang diawali kata *yang* (*yang menggandeng konsorsium perusahaan transportasi nasional*) serta keterangan tujuan dan tempat di bagian belakang (*guna memudahkan mobilitas komuter di kawasan metropolitan*). Kerangka wajib yang tersisa adalah Subjek inti **Kementerian Perhubungan**, Predikat inti **meluncurkan**, dan Objek inti **sistem pembayaran** (**opsi C**). **Opsi A**, **B**, **D**, dan **E** salah karena mengambil informasi dari bagian perluasan dan anak kalimat.",
       "visual": null
     },
     {
@@ -223,7 +223,7 @@
         "E. Gunung Semeru gunung api tertinggi di Pulau Jawa, yang mengalami peningkatan aktivitas vulkanik sejak pekan lalu."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat (1) menerangkan identitas setara dari subjek *Gunung Semeru* sehingga dapat digabungkan menjadi keterangan tambahan (aposisi). Sesuai kaidah EYD V, unsur aposisi di tengah kalimat wajib diapit oleh dua tanda koma pembatas (**opsi B**). **Opsi A** salah karena menghilangkan koma penutup aposisi, **opsi C** menggunakan konjungsi ganda yang mubazir, **opsi D** salah memakai konjungsi pertentangan *sedangkan*, dan **opsi E** menghasilkan kalimat buntung tanpa predikat utama.",
+      "bedah_cepat_markdown": "Kalimat (1) menjelaskan identitas setara dari subjek *Gunung Semeru*, sehingga bisa disisipkan sebagai keterangan tambahan (aposisi). Sesuai kaidah EYD V, aposisi yang berada di tengah kalimat wajib diapit dua tanda koma (**opsi B**). **Opsi A** salah karena lupa menutup aposisi dengan koma kedua, **opsi C** memakai kata hubung ganda *karena... sehingga* yang tidak logis, **opsi D** salah memakai kata hubung pertentangan *sedangkan*, dan **opsi E** menjadi kalimat buntung tanpa predikat utama.",
       "visual": null
     },
     {
@@ -233,16 +233,16 @@
         4
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Bacalah kalimat berikut dengan saksama!\n\n> \"Para peneliti bidang bioteknologi pertanian mengembangkan varietas padi unggul yang tahan terhadap salinitas tinggi meskipun curah hujan tahunan menurun drastis.\"\n\nManakah pernyataan yang BUKAN merupakan kalimat dasar pembentuk kalimat majemuk kompleks di atas?",
+      "pertanyaan_markdown": "Bacalah kalimat berikut dengan saksama!\n\n> \"Para peneliti bidang bioteknologi pertanian mengembangkan varietas padi unggul yang tahan terhadap salinitas tinggi untuk membantu petani pesisir meskipun curah hujan tahunan menurun drastis.\"\n\nManakah pernyataan yang BUKAN merupakan kalimat dasar pembentuk kalimat majemuk kompleks di atas?",
       "opsi_jawaban": [
         "A. Para peneliti mengembangkan varietas padi unggul.",
         "B. Varietas padi unggul tahan terhadap salinitas tinggi.",
         "C. Curah hujan tahunan menurun drastis.",
         "D. Para peneliti tahan terhadap salinitas tinggi.",
-        "E. Varietas padi unggul dikembangkan oleh para peneliti."
+        "E. Pengembangan varietas tersebut membantu petani pesisir."
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "Kalimat kompleks tersebut dibangun oleh tiga klausa dasar: (1) *Para peneliti mengembangkan varietas padi unggul* (**opsi A**, atau bentuk pasifnya pada **opsi E**), (2) *Varietas padi unggul tahan terhadap salinitas tinggi* (**opsi B**, merujuk pada kata *yang*), dan (3) *Curah hujan tahunan menurun drastis* (**opsi C**). Pernyataan pada **opsi D** (*Para peneliti tahan terhadap salinitas tinggi*) keliru menghubungkan predikat perluasan objek kepada subjek kalimat utama.",
+      "bedah_cepat_markdown": "Jika diurai menjadi kalimat-kalimat dasar pembentuknya, kalimat panjang tersebut tersusun dari empat gagasan: (1) *Para peneliti mengembangkan varietas padi unggul* (**opsi A**), (2) *Varietas padi unggul tahan terhadap salinitas tinggi* (**opsi B**, rujukan kata *yang*), (3) *Pengembangan varietas tersebut membantu petani pesisir* (**opsi E**, keterangan tujuan), dan (4) *Curah hujan tahunan menurun drastis* (**opsi C**). Pernyataan pada **opsi D** (*Para peneliti tahan terhadap salinitas tinggi*) keliru karena sifat tahan salinitas dimiliki oleh varietas padi, bukan oleh para peneliti.",
       "visual": null
     }
   ]

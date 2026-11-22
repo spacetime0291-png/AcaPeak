@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 8,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Sebuah artikel sains menyisipkan kutipan ekonom yang meragukan efektivitas pajak karbon sebelum akhirnya membantah argumen tersebut dengan data satelit emisi. Apa tujuan utama penulis menyisipkan kutipan ekonom tersebut?",
+      "pertanyaan_pemantik": "Sebuah artikel sains mengutip ekonom yang meragukan pajak karbon, lalu langsung mematahkan argumen itu dengan data satelit emisi. Apa tujuan penulis memasukkan kutipan ekonom tersebut?",
       "opsi_cepat": [
-        "Menyajikan klaim tandingan untuk kemudian disanggah",
-        "Mendukung pandangan bahwa pajak karbon tidak efektif"
+        "Memasang klaim tandingan untuk langsung disanggah",
+        "Mendukung pendapat bahwa pajak karbon tidak efektif"
       ],
       "jawaban_benar_index": 0,
-      "penjelasan_kilat": "Banyak peserta terjebak karena mengira semua kutipan tokoh mewakili opini penulis, padahal kutipan tersebut berfungsi sebagai counterargument atau titik tolak sanggahan."
+      "penjelasan_kilat": "Hati-hati, tidak semua kutipan tokoh mewakili isi kepala penulis. Di sini, kutipan ekonom sengaja dipasang sebagai titik tolak sanggahan (*counterargument*) sebelum penulis menjatuhkannya dengan data satelit."
     },
-    "konsep_inti_markdown": "- **Beda Topik vs Tujuan:** *Main idea* menjawab *apa* yang dibahas, sedangkan *Author's Purpose* menjawab *mengapa* teks atau kalimat tertentu ditulis.\n- **Tiga Level Analisis:**\n  1. **Makro (Teks Utuh):** Memetakan motif utama (*to refute, to compare, to warn, to evaluate*).\n  2. **Meso (Paragraf/Forum):** Menilai peran fungsi kalimat (*concession, illustration*) atau motif komentar pengguna.\n  3. **Mikro (Detail/Kutipan):** Melacak alasan penyisipan contoh, angka, atau kutipan spesifik.",
+    "konsep_inti_markdown": "- **Beda Topik vs Tujuan:** *Main idea* menjawab **apa** yang dibahas, sedangkan *Author's Purpose* menjawab **mengapa** penulis menulis teks atau kalimat tertentu.\n- **Tiga Level Analisis:**\n  1. **Makro (Teks Utuh):** Menangkap motif besar penulis (*to refute, to compare, to warn, to evaluate*).\n  2. **Meso (Paragraf/Forum):** Membaca peran satu kalimat (*concession, illustration*) atau maksud komentar netizen di forum.\n  3. **Mikro (Detail/Kutipan):** Melacak alasan penulis menyelipkan contoh, angka statistik, atau kutipan pakar.",
     "radar_jebakan_utbk": [
-      "Menyamakan kata kerja pembuka yang terlalu umum (seperti 'to describe' atau 'to explain') padahal teks bersifat argumentatif atau menyanggah klaim.",
-      "Menganggap contoh atau pengalaman pribadi komentator forum sebagai bukti ilmiah utama, bukan sekadar ilustrasi atau pengecualian."
+      "Terjebak kata kerja netral seperti 'to describe' atau 'to explain', padahal penulis jelas-jelas membantah klaim atau mendesak perubahan.",
+      "Menganggap curhatan atau contoh pribadi komentator forum sebagai bukti ilmiah utama, padahal fungsinya cuma ilustrasi atau pengecualian kasus."
     ],
     "stimulus_utama_bersama": "**Text 1 (Editorial Excerpt)**\nFor decades, urban planners assumed that widening highways would permanently alleviate traffic congestion. However, empirical traffic modeling consistently demonstrates the phenomenon of *induced demand*: expanding road capacity temporarily lowers travel times, which rapidly attracts more drivers until congestion returns to its original baseline. In 2019, the Metropolitan Transit Authority spent \\$1.2 billion adding two lanes to the Interstate 405 corridor, yet average peak-hour commute times increased by 11% within three years. Admittedly, highway expansion can facilitate freight movement in underdeveloped industrial zones where alternative transit does not exist. Nevertheless, in dense metropolitan areas, pouring concrete is an economically unsustainable illusion. Cities must instead reallocate infrastructure budgets toward high-frequency bus rapid transit and dedicated cycling networks to achieve lasting mobility.\n\n**Text 2 (Online Urbanism Forum Thread)**\n- **@CivicPlanner_ID (OP):** Should mid-sized cities prioritize light rail over bus rapid transit (BRT) to curb car dependency?\n- **@MetroCommuter88:** Light rail looks prestigious, but it drains municipal budgets for decades. In my city, a single 12-kilometer rail line stalled for six years due to utility relocation costs, whereas a dedicated BRT corridor was launched in 14 months at one-fifth the cost and now carries 45,000 daily riders.\n- **@SuburbanDriver:** That works fine if you live near the main avenue. My neighborhood is 6 kilometers from the nearest BRT station, and without feeder shuttles, driving remains my only realistic option for reaching the hospital shift on time.",
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Sinyal Tujuan Penulis & Fungsi Retoris Wacana",
-      "subjudul_ringkas": "Taksonomi penanda bahasa untuk membedakan motif teks utuh, fungsi kalimat paragraf, komentar forum, dan detail spesifik.",
+      "subjudul_ringkas": "Daftar sinyal bahasa untuk membedakan motif teks utuh, peran kalimat, komentar forum, dan detail spesifik.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
@@ -35,120 +35,120 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "1. Level Makro: Tujuan Komunikatif Teks Utuh",
-          "ringkasan_kelompok": "Mengidentifikasi motif utama penulis di balik keseluruhan artikel melalui pilihan kata kunci.",
+          "nama_kelompok": "1. Level Makro: Tujuan Utama Teks Utuh",
+          "ringkasan_kelompok": "Menebak motif besar penulis di balik seluruh artikel lewat pilihan kata kuncinya.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "To Refute / Challenge a Claim (Membantah Anggapan)",
-              "penjelasan_singkat": "Penulis menyajikan bukti baru untuk meruntuhkan mitos, teori lama, atau asumsi umum yang keliru.",
+              "penjelasan_singkat": "Penulis membawa bukti baru untuk meruntuhkan mitos, teori lama, atau anggapan umum yang keliru.",
               "contoh_penerapan": "\"**Contrary to popular belief**, drinking eight glasses of water daily **lacks scientific backing**.\"",
-              "jebakan_atau_catatan": "Jangan pilih *to inform* jika teks aktif menyalahkan teori lama; kata kunci *myth, flawed, debunk* menandakan *refute*.",
+              "jebakan_atau_catatan": "Jangan pilih *to inform* kalau teks aktif menyalahkan teori lama. Kata kunci *myth, flawed, debunk* menandakan *refute*.",
               "visual": null
             },
             {
               "judul_poin": "To Warn / Urge Action (Memperingatkan & Mendesak)",
-              "penjelasan_singkat": "Menyoroti risiko serius dari suatu tren dan mendorong pembaca atau pemangku kebijakan segera bertindak.",
+              "penjelasan_singkat": "Penulis menyoroti bahaya serius dari suatu tren lalu mendorong pembaca atau pemerintah segera bertindak.",
               "contoh_penerapan": "\"Without immediate regulation, microplastic accumulation **poses an irreversible threat** to marine ecosystems.\"",
-              "jebakan_atau_catatan": "Bedakan dari *to criticize*: *warn* fokus pada dampak buruk masa depan (*threat, risk, must*), bukan kesalahan masa lalu.",
+              "jebakan_atau_catatan": "Bedakan dari *to criticize*: *warn* fokus pada risiko masa depan (*threat, risk, must*), bukan sekadar menyalahkan masa lalu.",
               "visual": null
             },
             {
               "judul_poin": "To Compare / Evaluate (Membandingkan & Menilai)",
-              "penjelasan_singkat": "Menimbang kelebihan dan kekurangan dua metode, kebijakan, atau fenomena secara berimbang sebelum menarik kesimpulan.",
+              "penjelasan_singkat": "Penulis menimbang plus-minus dua metode, kebijakan, atau fenomena secara adil sebelum menyimpulkan.",
               "contoh_penerapan": "\"**While** solar energy offers lower operational costs, nuclear power **provides far greater** grid reliability.\"",
-              "jebakan_atau_catatan": "Jebakan pengecoh biasanya hanya menyebut salah satu objek; pastikan opsi jawaban mencakup kedua pihak yang dibandingkan.",
+              "jebakan_atau_catatan": "Opsi pengecoh biasanya cuma menyebut satu pihak. Pastikan jawabanmu mencakup kedua hal yang dibandingkan.",
               "visual": null
             },
             {
-              "judul_poin": "To Inform / Explain a Mechanism (Menjelaskan Proses)",
-              "penjelasan_singkat": "Memaparkan cara kerja fenomena ilmiah atau kronologi peristiwa secara netral tanpa memihak atau mengajak.",
+              "judul_poin": "To Inform / Explain a Mechanism (Menjelaskan Cara Kerja)",
+              "penjelasan_singkat": "Penulis memaparkan proses ilmiah atau urutan peristiwa secara netral tanpa memihak atau mengajak.",
               "contoh_penerapan": "\"Photosynthesis **occurs when** chlorophyll absorbs sunlight, **converting** carbon dioxide and water into glucose.\"",
-              "jebakan_atau_catatan": "Ciri mutlak: absennya kata sifat emosional (*crucial, disastrous*) dan kata kerja modal keharusan (*should, must*).",
+              "jebakan_atau_catatan": "Ciri mutlaknya: tidak ada kata sifat emosional (*crucial, disastrous*) maupun kata keharusan (*should, must*).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "2. Level Meso: Fungsi Kalimat dalam Paragraf",
-          "ringkasan_kelompok": "Menentukan peran logis satu kalimat terhadap kalimat sebelum atau sesudahnya dalam satu paragraf.",
+          "nama_kelompok": "2. Level Meso: Peran Kalimat dalam Paragraf",
+          "ringkasan_kelompok": "Melacak fungsi logis satu kalimat terhadap kalimat sebelum atau sesudahnya.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Concession (Mengakui Sisi Lawan Secara Parsial)",
-              "penjelasan_singkat": "Penulis mengakui validitas argumen lawan sementara waktu sebelum mematahkannya di klausa berikutnya.",
+              "judul_poin": "Concession (Mengakui Sisi Lawan Sebagian)",
+              "penjelasan_singkat": "Penulis mengakui argumen lawan ada benarnya untuk sementara, lalu mematahkannya di bagian berikutnya.",
               "contoh_penerapan": "\"**Admittedly**, remote work reduces commuting stress, **yet** it severely erodes spontaneous team collaboration.\"",
-              "jebakan_atau_catatan": "Sinyal khas: *admittedly, granted, while it is true*. Pengecoh sering mengira penulis setuju penuh dengan klausa pertama.",
+              "jebakan_atau_catatan": "Sinyal khasnya: *admittedly, granted, while it is true*. Jangan mengira penulis setuju 100% dengan klausa pertama.",
               "visual": null
             },
             {
               "judul_poin": "Counterargument / Rebuttal (Bantahan Langsung)",
-              "penjelasan_singkat": "Menyajikan sudut pandang berlawanan atau bukti tandingan untuk membatalkan klaim pada kalimat sebelumnya.",
+              "penjelasan_singkat": "Penulis melempar sudut pandang berlawanan atau data tandingan untuk membatalkan klaim kalimat sebelumnya.",
               "contoh_penerapan": "\"**However**, recent longitudinal data **contradicts this assumption**, showing zero correlation between screen time and myopia.\"",
-              "jebakan_atau_catatan": "Perhatikan transisi kontras keras (*however, on the contrary, nonetheless*) yang diikuti data atau argumen penolak.",
+              "jebakan_atau_catatan": "Cek kata transisi kontras tajam (*however, on the contrary, nonetheless*) yang langsung diikuti data penolak.",
               "visual": null
             },
             {
-              "judul_poin": "Illustration / Exemplification (Memberi Contoh Konkret)",
-              "penjelasan_singkat": "Mengonkretkan pernyataan abstrak atau klaim umum di kalimat sebelumnya melalui kasus spesifik.",
+              "judul_poin": "Illustration / Exemplification (Memberi Contoh Nyata)",
+              "penjelasan_singkat": "Penulis membumikan pernyataan abstrak di kalimat sebelumnya lewat satu kasus atau angka spesifik.",
               "contoh_penerapan": "\"Many megacities have adopted congestion pricing; **for instance**, London saw a 30% drop in downtown traffic.\"",
-              "jebakan_atau_catatan": "Pengecoh sering menyebut contoh sebagai ide pokok; fungsi detail spesifik ini hanyalah pendukung klaim sebelumnya.",
+              "jebakan_atau_catatan": "Pengecoh sering mengangkat contoh ini seolah ide pokok. Padahal, tugasnya cuma menopang klaim sebelumnya.",
               "visual": null
             },
             {
-              "judul_poin": "Transition / Pivot (Jembatan Pergeseran Fokus)",
-              "penjelasan_singkat": "Menghubungkan dua gagasan berbeda atau mengalihkan pembahasan dari masalah menuju solusi.",
+              "judul_poin": "Transition / Pivot (Jembatan Pindah Fokus)",
+              "penjelasan_singkat": "Penulis menghubungkan dua gagasan berbeda atau menggeser bahasan dari masalah menuju solusi.",
               "contoh_penerapan": "\"**Beyond** its environmental toll, fast fashion **also** creates severe labor inequities across developing nations.\"",
-              "jebakan_atau_catatan": "Sinyal *not only... but also* atau *beyond X* menandakan perluasan subtopik baru, bukan pengulangan poin lama.",
+              "jebakan_atau_catatan": "Frasa *not only... but also* atau *beyond X* menandakan penulis membuka subtopik baru, bukan mengulang poin lama.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "3. Level Meso: Motif Komentator dalam Thread Forum",
-          "ringkasan_kelompok": "Menganalisis tujuan spesifik pengguna merespons postingan utama dalam soal berbentuk diskusi daring.",
+          "nama_kelompok": "3. Level Meso: Motif Komentator di Thread Forum",
+          "ringkasan_kelompok": "Membaca maksud spesifik pengguna saat membalas postingan utama dalam soal diskusi daring.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Sharing Personal Anecdote to Validate (Validasi Pengalaman)",
-              "penjelasan_singkat": "Komentator menceritakan pengalaman pribadi yang sejalan untuk memperkuat kebenaran klaim penulis thread.",
+              "judul_poin": "Sharing Personal Anecdote to Validate (Pengalaman Penguat)",
+              "penjelasan_singkat": "Komentator menceritakan pengalaman pribadi yang sejalan untuk membuktikan bahwa klaim penulis utama benar.",
               "contoh_penerapan": "\"**I experienced the exact same issue** last year, and switching to an ergonomic chair fixed it.\"",
-              "jebakan_atau_catatan": "Bukan sekadar curhat (*to complain*); fokus pada hubungan antara pengalaman tersebut dengan pembuktian topik utama.",
+              "jebakan_atau_catatan": "Ini bukan sekadar curhat (*to complain*). Fokuslah pada bagaimana pengalaman itu memvalidasi topik utama.",
               "visual": null
             },
             {
-              "judul_poin": "Offering Practical Workaround (Memberi Solusi Alternatif)",
-              "penjelasan_singkat": "Memberikan langkah praktis atau alternatif murah untuk mengatasi kendala yang dikeluhkan di postingan awal.",
+              "judul_poin": "Offering Practical Workaround (Solusi Alternatif)",
+              "penjelasan_singkat": "Komentator memberi trik praktis atau opsi lebih hemat untuk mengatasi kendala di postingan awal.",
               "contoh_penerapan": "\"**Instead of** buying expensive software, **you can simply use** built-in browser extensions to block trackers.\"",
-              "jebakan_atau_catatan": "Ditandai kalimat imperatif halus (*try, you can, consider*) yang langsung menjawab masalah praktis penanya.",
+              "jebakan_atau_catatan": "Ditandai kalimat saran halus (*try, you can, consider*) yang langsung menjawab masalah praktis penanya.",
               "visual": null
             },
             {
               "judul_poin": "Expressing Skepticism / Questioning (Menyatakan Keraguan)",
-              "penjelasan_singkat": "Mempertanyakan kelayakan, akurasi, atau efek samping dari saran yang diajukan pengguna lain.",
+              "penjelasan_singkat": "Komentator mempertanyakan kelayakan, akurasi, atau efek samping dari saran pengguna lain.",
               "contoh_penerapan": "\"**Are we sure** this method works for older devices **without draining** the battery twice as fast?\"",
-              "jebakan_atau_catatan": "Pertanyaan retoris dalam forum berfungsi mengkritisi celah argumen, bukan meminta tutorial langkah demi langkah.",
+              "jebakan_atau_catatan": "Pertanyaan retoris di forum bertujuan mengkritisi celah argumen, bukan meminta tutorial langkah demi langkah.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "4. Level Mikro: Alasan Penyisipan Detail & Kutipan",
-          "ringkasan_kelompok": "Menjelaskan alasan retoris penulis mencantumkan nama tokoh, kutipan langsung, atau statistik spesifik.",
+          "ringkasan_kelompok": "Menjelaskan alasan penulis mencantumkan nama tokoh, kutipan langsung, atau angka statistik.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Expert Quote for Credibility (Otoritas Pakar)",
-              "penjelasan_singkat": "Menyisipkan pernyataan ilmuwan atau lembaga resmi agar argumen penulis terlihat objektif dan tepercaya.",
+              "judul_poin": "Expert Quote for Credibility (Pinjam Otoritas Pakar)",
+              "penjelasan_singkat": "Penulis mengutip ilmuwan atau lembaga resmi agar argumennya terdengar objektif dan bisa dipercaya.",
               "contoh_penerapan": "\"**According to Dr. Aris, a climate physicist**, 'arctic ice loss is accelerating beyond worst-case models.'\"",
-              "jebakan_atau_catatan": "Jawaban benar selalu mengaitkan kutipan dengan klaim paragraf (*to support the claim that...*), bukan biografi tokoh.",
+              "jebakan_atau_catatan": "Jawaban benar selalu mengaitkan kutipan dengan klaim paragraf (*to support the claim that...*), bukan profil tokohnya.",
               "visual": null
             },
             {
               "judul_poin": "Statistics to Emphasize Scale (Angka Penegas Skala)",
-              "penjelasan_singkat": "Mencantumkan persentase atau angka absolut untuk membuktikan bahwa suatu masalah berdampak masif.",
+              "penjelasan_singkat": "Penulis memasang persentase atau angka besar untuk membuktikan dampak masalah yang tidak main-main.",
               "contoh_penerapan": "\"Over **78% of surveyed companies** reported data breaches within six months of adopting unencrypted tools.\"",
-              "jebakan_atau_catatan": "Jangan terjebak opsi yang meminta pembaca menghafal angka; UTBK menguji *mengapa* angka itu dimunculkan.",
+              "jebakan_atau_catatan": "UTBK tidak memintamu menghafal angkanya, melainkan menguji *mengapa* angka itu dimunculkan penulis.",
               "visual": null
             }
           ]
@@ -161,9 +161,9 @@
       "nomor_variasi": 1,
       "nama_variasi": "Overall Communicative Purpose",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan: Text 1 secara keseluruhan (pergeseran dari asumsi lama pelebaran jalan tol menuju rekomendasi anggaran transportasi publik).",
-      "bedah_pola_markdown": "- **Teknik Skimming:** Baca kalimat pertama paragraf (asumsi lama: *widening highways would permanently alleviate...*), kata transisi kontras (*However*, *Nevertheless*), dan kalimat terakhir (solusi: *Cities must instead reallocate...*).\n- **Parafrasa ke Opsi Benar:** Kombinasi menyanggah asumsi lama (*refute a misconception*) dan menawarkan solusi kebijakan (*advocate for an alternative*) diparafrasakan menjadi *to challenge a conventional traffic solution and propose a sustainable alternative*.\n- **Ciri Opsi Jebakan:**\n  - *Terlalu sempit:* Hanya menyebut *to report the cost of Interstate 405* (ini hanya detail pendukung).\n  - *Terlalu netral:* Menggunakan kata kerja *to describe* atau *to list* padahal penulis mengambil sikap tegas (*unsustainable illusion*, *must instead*).",
-      "kunci_pembeda": "Tentukan sikap akhir penulis di kalimat penutup untuk memilih kata kerja tujuan (*to refute, to advocate, to warn*) yang tepat.",
+      "stimulus_mini": "Rujukan: Text 1 secara utuh (pergeseran dari anggapan lama soal pelebaran jalan tol menuju rekomendasi anggaran transportasi publik).",
+      "bedah_pola_markdown": "- **Langkah 1 — Cek Awal, Tengah, Akhir:** Lihat kalimat pembuka (mitos lama: *widening highways would permanently alleviate...*), kata pembalik (*However*, *Nevertheless*), dan kalimat penutup (solusi: *Cities must instead reallocate...*).\n- **Langkah 2 — Gabungkan Motifnya:** Penulis tidak cuma menyanggah anggapan lama (*refute a misconception*), tapi juga mendorong solusi kebijakan baru (*advocate for an alternative*). Di opsi jawaban, pola ini diparafrasakan menjadi *to challenge a conventional traffic solution and propose a sustainable alternative*.\n- **Langkah 3 — Coret Jebakan Klasik:**\n  - *Terlalu sempit:* Cuma menyebut *to report the cost of Interstate 405* (ini cuma satu detail pendukung).\n  - *Terlalu netral:* Memakai kata kerja *to describe* atau *to list*, padahal nada penulis tegas dan berpihak (*unsustainable illusion*, *must instead*).",
+      "kunci_pembeda": "Kunci sikap akhir penulis di kalimat penutup untuk memilih kata kerja tujuan (*to refute, to advocate, to warn*) yang paling pas.",
       "visual": null
     },
     {
@@ -171,17 +171,17 @@
       "nama_variasi": "Rhetorical Purpose of a Specific Detail/Quote",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan: Kalimat ke-3 Text 1 ('In 2019, the Metropolitan Transit Authority spent \\$1.2 billion adding two lanes to the Interstate 405 corridor, yet average peak-hour commute times increased by 11% within three years.').",
-      "bedah_pola_markdown": "- **Teknik Scanning:** Temukan lokasi detail (\\$1.2 billion, Interstate 405) lalu baca **satu kalimat sebelum** detail tersebut. Kalimat sebelumnya menjelaskan teori *induced demand*.\n- **Parafrasa ke Opsi Benar:** Data proyek Interstate 405 bukan topik utama, melainkan bukti nyata bahwa pelebaran jalan gagal mengurangi kemacetan. Opsi benar akan berbunyi: *to provide concrete empirical evidence illustrating how induced demand negates road expansion*.\n- **Ciri Opsi Jebakan:**\n  - *Literal trap:* Mengulang angka \\$1.2 billion atau 11% tanpa menjelaskan fungsi retorisnya terhadap klaim sebelumnya.\n  - *Distorsi makna:* Menyebut penulis ingin memuji investasi infrastruktur pemerintah.",
-      "kunci_pembeda": "Selalu hubungkan detail spesifik dengan klaim umum yang berada tepat satu kalimat sebelum atau sesudahnya.",
+      "bedah_pola_markdown": "- **Langkah 1 — Mundur Satu Kalimat:** Temukan lokasi detail (\\$1.2 billion, Interstate 405), lalu baca **tepat satu kalimat sebelumnya**. Kalimat sebelumnya membahas teori *induced demand*.\n- **Langkah 2 — Tarik Hubungannya:** Proyek Interstate 405 bukan inti cerita, melainkan bukti lapangan bahwa melebarkan jalan justru gagal mengurai macet. Opsi benarnya berbunyi: *to provide concrete empirical evidence illustrating how induced demand negates road expansion*.\n- **Langkah 3 — Coret Jebakan Klasik:**\n  - *Jebakan literal:* Mengulang angka \\$1.2 billion atau 11% tanpa menjelaskan fungsinya terhadap klaim sebelum detail itu.\n  - *Pelintiran makna:* Mengklaim penulis sedang memuji proyek infrastruktur pemerintah.",
+      "kunci_pembeda": "Jangan baca detail sendirian—selalu kaitkan dengan klaim umum yang berdiri tepat satu kalimat sebelum atau sesudahnya.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
       "nama_variasi": "Purpose of a Specific Commenter in a Forum Thread",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan: Komentar @SuburbanDriver pada Text 2 yang menceritakan jarak rumahnya 6 km dari halte BRT dan ketiadaan angkutan pengumpan (*feeder shuttles*).",
-      "bedah_pola_markdown": "- **Teknik Scanning:** Identifikasi posisi komentator terhadap komentar sebelumnya (@MetroCommuter88). Frasa pembuka *That works fine if...* menandakan persetujuan bersyarat yang diikuti batasan (*limitation*).\n- **Parafrasa ke Opsi Benar:** Pengalaman pribadi @SuburbanDriver berfungsi menunjukkan celah aksesibilitas sistem BRT bagi warga pinggiran kota (*to highlight a practical limitation of BRT accessibility for suburban residents*).\n- **Ciri Opsi Jebakan:**\n  - *Ekstrem:* Mengklaim @SuburbanDriver menolak seluruh transportasi umum atau mendukung proyek *light rail* (tidak disebut).\n  - *Generalisasi berlebihan:* Menganggap pengalaman satu pengguna membuktikan bahwa BRT gagal total di seluruh kota.",
-      "kunci_pembeda": "Amati penanda sikap di kalimat pertama komentator untuk membedakan apakah ia mendukung, membantah, atau memberi pengecualian.",
+      "stimulus_mini": "Rujukan: Komentar @SuburbanDriver pada Text 2 yang bercerita rumahnya berjarak 6 km dari halte BRT tanpa angkutan pengumpan (*feeder shuttles*).",
+      "bedah_pola_markdown": "- **Langkah 1 — Baca Nada Pembukanya:** Cek bagaimana @SuburbanDriver merespons @MetroCommuter88. Frasa *That works fine if...* menunjukkan setuju bersyarat yang langsung diikuti batasan (*limitation*).\n- **Langkah 2 — Terjemahkan ke Fungsi:** Cerita pribadi @SuburbanDriver dipakai untuk menunjukkan celah jangkauan BRT bagi warga pinggiran kota (*to highlight a practical limitation of BRT accessibility for suburban residents*).\n- **Langkah 3 — Coret Jebakan Klasik:**\n  - *Terlalu ekstrem:* Menyebut @SuburbanDriver menolak semua transportasi umum atau mendukung proyek *light rail* (sama sekali tidak dibahas).\n  - *Generalisasi berlebihan:* Menganggap pengalaman satu orang membuktikan BRT gagal total di seluruh kota.",
+      "kunci_pembeda": "Cek frasa pembuka komentator untuk melihat apakah ia mendukung penuh, membantah total, atau memberi pengecualian kasus.",
       "visual": null
     },
     {
@@ -189,8 +189,8 @@
       "nama_variasi": "Function of a Sentence within a Paragraph",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan: Kalimat ke-4 Text 1 ('Admittedly, highway expansion can facilitate freight movement in underdeveloped industrial zones where alternative transit does not exist.').",
-      "bedah_pola_markdown": "- **Teknik Scanning:** Perhatikan penanda wacana (*discourse marker*) di awal kalimat target (*Admittedly*) serta kalimat setelahnya (*Nevertheless*).\n- **Parafrasa ke Opsi Benar:** Kata *Admittedly* menandai **concession** (pengakuan sebagian terhadap sisi positif argumen lawan) agar argumen penulis terlihat objektif sebelum dipatahkan kembali oleh *Nevertheless*. Opsi benar: *to acknowledge a specific exception where road expansion remains beneficial before reasserting the main argument*.\n- **Ciri Opsi Jebakan:**\n  - *Kontradiksi:* Mengira penulis berubah pikiran dan kini mendukung pelebaran jalan raya.\n  - *Salah label fungsi:* Menyebut kalimat tersebut sebagai *counterargument* murni tanpa melihat bahwa penulis sendiri yang mengakuinya sebagai pengecualian terbatas.",
-      "kunci_pembeda": "Gunakan penanda transisi (*Admittedly, Granted* = concession; *For instance* = illustration; *Conversely* = counterargument) sebagai kunci fungsi kalimat.",
+      "bedah_pola_markdown": "- **Langkah 1 — Tangkap Kata Sinyalnya:** Perhatikan kata pembuka kalimat target (*Admittedly*) dan kata pembuka kalimat tepat setelahnya (*Nevertheless*).\n- **Langkah 2 — Baca Pola Tarik-Ulurnya:** Kata *Admittedly* menandai **concession** (mengakui sebagian sisi positif argumen lawan). Penulis sengaja mengakui manfaat jalan tol di zona industri terpencil agar argumennya terasa adil, sebelum membaliknya lagi lewat *Nevertheless*. Opsi benarnya: *to acknowledge a specific exception where road expansion remains beneficial before reasserting the main argument*.\n- **Langkah 3 — Coret Jebakan Klasik:**\n  - *Salah tangkap arah:* Mengira penulis berubah pikiran dan berbalik mendukung pelebaran jalan raya.\n  - *Salah label fungsi:* Menyebut kalimat ini sebagai *counterargument* murni, padahal penulis sendiri yang mengakuinya sebagai pengecualian terbatas.",
+      "kunci_pembeda": "Hafalkan pasangan sinyal ini: *Admittedly/Granted* = concession, *For instance* = illustration, *Conversely* = counterargument.",
       "visual": null
     }
   ],
@@ -211,7 +211,7 @@
         "E. To explain urban planning history by tracing the origins of traffic modeling techniques"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Text 1 bertujuan membantah asumsi bahwa pelebaran jalan mengatasi kemacetan (*refute*) dan mengusulkan peralihan anggaran ke transit publik. Kasus Interstate 405 (\\$1.2 miliar, waktu tempuh naik 11%) berfungsi sebagai bukti empiris (*empirical case*) fenomena *induced demand*. Opsi A dan D hanya mengambil detail sempit, B salah fokus pada kritik otoritas, dan E mengubah teks argumentatif menjadi historis.",
+      "bedah_cepat_markdown": "Mari bedah dua bagian pertanyaannya secara berurutan. Pertama, tujuan utama Text 1 adalah membantah anggapan lama bahwa melebarkan jalan tol bisa mengatasi macet (*refute*). Kedua, contoh proyek Interstate 405 (menghabiskan \\$1.2 miliar, tapi waktu tempuh malah naik 11%) dipasang sebagai bukti nyata fenomena *induced demand*. Jadi, **C** paling tepat. Opsi A dan D cuma mengambil potongan detail kecil, B salah fokus ke kritik otoritas, dan E menggeser teks argumentatif menjadi pelajaran sejarah.",
       "visual": null
     },
     {
@@ -230,7 +230,7 @@
         "E. Both directly contradict @MetroCommuter88's claim regarding rail construction timelines."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Kalimat keempat Text 1 (*Admittedly...*) berperan sebagai *concession* yang mengakui pengecualian terbatas bagi zona industri terpencil, sementara postingan @SuburbanDriver menyoroti keterbatasan akses BRT bagi warga pinggiran tanpa *feeder shuttle*. Keduanya sama-sama membatasi keberlakuan argumen umum (*contextual limitations*). Opsi A dan C terlalu ekstrem, D tidak disebut dalam teks, dan E salah sasaran karena @SuburbanDriver tidak membahas durasi konstruksi rel.",
+      "bedah_cepat_markdown": "Lihat kesamaan pola di kedua bagian tersebut. Kalimat keempat Text 1 (*Admittedly...*) memberi pengecualian bahwa jalan tol masih berguna di zona industri terpencil. Sementara itu, komentar @SuburbanDriver menunjukkan bahwa BRT belum menjangkau warga pinggiran tanpa *feeder shuttle*. Artinya, keduanya sama-sama memberi batasan konteks (*contextual limitations*) pada argumen utama, sehingga **B** tepat. Opsi A dan C terlalu ekstrem, D membahas isu lingkungan yang tidak ada di teks, dan E melenceng karena @SuburbanDriver tidak menyinggung durasi proyek rel.",
       "visual": null
     },
     {
@@ -249,7 +249,7 @@
         "E. False - False - True"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Pernyataan 1 **True**: perbandingan proyek rel 6 tahun vs BRT 14 bulan menegaskan inefisiensi biaya dan waktu *light rail*. Pernyataan 2 **True**: frasa tersebut merangkum sikap kritis penulis terhadap pelebaran jalan kota. Pernyataan 3 **False**: @SuburbanDriver menyoroti absennya *feeder shuttle* BRT, bukan mempromosikan *light rail*.",
+      "bedah_cepat_markdown": "Cek satu per satu berdasarkan motif penulisnya:\n1. **True:** @MetroCommuter88 membandingkan proyek rel 6 tahun dengan BRT 14 bulan (biaya seperlima) untuk menunjukkan betapa boros dan lambatnya *light rail*.\n2. **True:** Frasa *economically unsustainable illusion* merangkum kesimpulan kritis penulis bahwa pelebaran jalan kota gagal sebagai solusi jangka panjang.\n3. **False:** @SuburbanDriver menceritakan perjalanan ke rumah sakit untuk menyoroti ketiadaan *feeder shuttle* BRT, sama sekali bukan untuk mempromosikan *light rail*.\nUrutannya **True - True - False** (**B**).",
       "visual": null
     }
   ]

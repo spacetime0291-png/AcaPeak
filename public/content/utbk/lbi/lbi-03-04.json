@@ -9,139 +9,139 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Sebuah wacana menyebut bahwa kenaikan tarif cukai rokok menurunkan konsumsi rumah tangga miskin sebesar 4%, tetapi memicu pergeseran ke rokok ilegal di daerah pedesaan. Manakah simpulan kebijakan yang paling akurat?",
+      "pertanyaan_pemantik": "Sebuah artikel menyebut kenaikan cukai rokok menurunkan konsumsi rumah tangga miskin sebesar 4%, tetapi memicu peralihan ke rokok ilegal di pedesaan. Manakah kesimpulan kebijakan yang paling tepat?",
       "opsi_cepat": [
         "Kenaikan cukai terbukti gagal total menekan angka perokok nasional.",
-        "Kebijakan cukai efektif menekan konsumsi legal, namun menimbulkan efek samping peralihan pasar."
+        "Kebijakan cukai efektif menekan konsumsi rokok legal, tetapi memicu efek samping peralihan pasar."
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Banyak peserta terjebak generalisasi ekstrem ('gagal total'). Soal LBI menuntut pembacaan proporsional atas dampak ganda suatu kebijakan."
+      "penjelasan_kilat": "Jangan terjebak kesimpulan ekstrem seperti 'gagal total'. Di soal LBI, kamu harus melihat dua sisi dampak kebijakan secara seimbang sesuai isi bacaan."
     },
-    "konsep_inti_markdown": "- **Fokus Utama:** Membedah relasi kausalitas, dinamika makro-mikro ekonomi, diferensiasi dampak sosial, serta polarisasi argumen dalam wacana kebijakan.\n- **Alur Kausal:** $\\text{Kebijakan/Fenomena} \\rightarrow \\text{Mekanisme Transmisi} \\rightarrow \\text{Dampak Diferensial}$.\n- **Prinsip Emas:** Jawaban wajib berakar pada bukti eksplisit teks, bebas dari asumsi opini pribadi maupun generalisasi absolut (`semua`, `pasti`).",
+    "konsep_inti_markdown": "- **Fokus Utama:** Melacak hubungan sebab-akibat, pergerakan ekonomi makro-mikro, perbedaan dampak tiap kelompok warga, dan tarik-ulur argumen kebijakan.\n- **Alur Logika Teks:** $\\text{Kebijakan/Fenomena} \\rightarrow \\text{Proses Perantara} \\rightarrow \\text{Dampak ke Masyarakat}$.\n- **Aturan Emas:** Jawaban wajib punya bukti tertulis di bacaan. Buang opsi yang memakai asumsi pribadi atau kata mutlak seperti `semua` dan `pasti`.",
     "radar_jebakan_utbk": [
-      "Menyamakan korelasi dua fenomena sosial/ekonomi dengan hubungan sebab-akibat langsung tanpa dasar konjungsi kausal di teks.",
-      "Menggeneralisasi dampak kebijakan pada satu kelompok rentan (misal UMKM) sebagai dampak keseluruhan populasi."
+      "Menganggap dua kejadian yang muncul bersamaan sebagai hubungan sebab-akibat langsung, padahal teks tidak menulis kata hubung sebab-akibat.",
+      "Menyamaratakan nasib satu kelompok tertentu (misalnya UMKM) seolah-olah dialami oleh seluruh masyarakat."
     ],
-    "stimulus_utama_bersama": "Penerapan pajak karbon secara bertahap pada sektor pembangkit listrik berbahan bakar batu bara mulai memicu pergeseran struktural dalam lanskap ekonomi nasional. Secara makroekonomi, kebijakan ini bertujuan menginternalisasi biaya eksternalitas emisi sekaligus mendorong investasi energi terbarukan. Namun, dalam jangka pendek, kenaikan biaya produksi energi berpotensi menekan margin keuntungan industri padat karya yang masih bergantung pada pasokan listrik konvensional. Akibatnya, sejumlah pelaku usaha menengah terpaksa menahan ekspansi tenaga kerja guna menjaga stabilitas arus kas.\n\nDi sisi lain, dinamika pasar kerja menunjukkan fenomena polarisasi keterampilan. Sektor teknologi hijau dan audit lingkungan mengalami lonjakan permintaan tenaga ahli, sementara pekerja kerah biru di wilayah sentra pertambangan menghadapi risiko pemutusan hubungan kerja friksional. Pemerintah merespons ketimpangan dampak ini melalui skema realokasi penerimaan pajak karbon untuk subsidi pelatihan ulang (reskilling) tenaga kerja terdampak serta insentif pembiayaan bagi UMKM yang mengadopsi efisiensi energi.\n\nMeskipun demikian, efektivitas kebijakan tersebut memicu perdebatan di kalangan pengamat kebijakan publik. Kelompok pendukung menilai pajak karbon sebagai instrumen fiskal paling rasional untuk mencegah kerugian ekonomi jangka panjang akibat krisis iklim serta menghindari hambatan tarif karbon di pasar ekspor global. Sebaliknya, kalangan ekonom kritis memperingatkan bahwa tanpa kesiapan infrastruktur jaringan listrik pintar dan rantai pasok komponen lokal, beban pajak justru akan ditransmisikan menjadi inflasi biaya dorong (cost-push inflation) yang menggerus daya beli kelompok berpendapatan rendah.",
+    "stimulus_utama_bersama": "Penerapan pajak karbon secara bertahap pada pembangkit listrik berbahan bakar batu bara mulai mengubah peta ekonomi nasional. Secara makro, kebijakan ini bertujuan memasukkan biaya dampak emisi ke dalam ongkos produksi sekaligus mendorong investasi energi terbarukan. Namun, dalam jangka pendek, kenaikan biaya produksi energi berpotensi menekan margin keuntungan industri padat karya yang masih bergantung pada listrik konvensional. Akibatnya, sejumlah pelaku usaha menengah terpaksa menahan perekrutan tenaga kerja baru demi menjaga kestabilan arus kas.\n\nDi sisi lain, pasar kerja mengalami pembelahan kebutuhan keterampilan. Sektor teknologi hijau dan audit lingkungan mengalami lonjakan permintaan tenaga ahli, sedangkan pekerja kerah biru di wilayah sentra pertambangan menghadapi risiko pemutusan hubungan kerja (PHK) friksional. Pemerintah merespons ketimpangan dampak ini dengan mengalokasikan penerimaan pajak karbon untuk subsidi pelatihan ulang (*reskilling*) bagi pekerja terdampak serta insentif pembiayaan bagi UMKM yang beralih ke energi efisien.\n\nMeski demikian, efektivitas kebijakan ini memicu perdebatan di kalangan pengamat kebijakan publik. Kelompok pendukung menilai pajak karbon sebagai langkah fiskal paling rasional untuk mencegah kerugian ekonomi jangka panjang akibat krisis iklim sekaligus menghindari hambatan tarif karbon di pasar ekspor global. Sebaliknya, kalangan ekonom kritis mengingatkan bahwa tanpa kesiapan jaringan listrik pintar dan rantai pasok komponen lokal, beban pajak justru akan menjelma menjadi inflasi biaya dorong (*cost-push inflation*) yang menggerus daya beli kelompok berpendapatan rendah.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Sinyal dan Pola Wacana Sosial-Humaniora, Ekonomi, dan Kebijakan",
-      "subjudul_ringkas": "Taksonomi penanda kausalitas, transmisi ekonomi, dampak diferensial, dan sintesis argumen untuk membedah wacana analitis UTBK.",
+      "judul_blok": "Peta Sinyal Wacana Sosial-Humaniora, Ekonomi, dan Kebijakan",
+      "subjudul_ringkas": "Panduan cepat mengenali kata penanda sebab-akibat, alur dampak ekonomi, beda nasib antarkelompok, dan adu argumen di teks UTBK.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
-        "kolom_1": "Kategori / Penanda Teks",
-        "kolom_2": "Contoh Potongan / Sinyal",
-        "kolom_3": "Cara Bedakan / Jebakan"
+        "kolom_1": "Jenis Pola / Sinyal",
+        "kolom_2": "Contoh Kalimat di Teks",
+        "kolom_3": "Cara Bedakan & Jebakan"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Penanda Kausalitas dan Mekanisme Transmisi",
-          "ringkasan_kelompok": "Mengidentifikasi alur sebab-akibat berantai dalam fenomena sosial, budaya, dan demografi.",
+          "nama_kelompok": "Penanda Sebab-Akibat dan Alur Perantara",
+          "ringkasan_kelompok": "Melacak urutan pemicu hingga dampak akhir dalam fenomena sosial, budaya, dan kependudukan.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Kausalitas Berantai (Variabel Antara)",
-              "penjelasan_singkat": "Menghubungkan kebijakan awal ke dampak akhir melalui variabel perantara ($A \\rightarrow B \\rightarrow C$) menggunakan konjungsi kausal eksplisit.",
-              "contoh_penerapan": "Urbanisasi masif **memicu** kenaikan harga lahan, **sehingga** masyarakat berpenghasilan rendah **terdorong** pindah ke wilayah pinggiran kota.",
-              "jebakan_atau_catatan": "Pengecoh sering memotong variabel antara ($B$) atau membalik arah hubungan menjadi $C \\rightarrow A$.",
+              "judul_poin": "Sebab-Akibat Berantai (Ada Perantara)",
+              "penjelasan_singkat": "Menghubungkan kebijakan awal ke dampak akhir lewat kejadian perantara ($A \\rightarrow B \\rightarrow C$) dengan kata hubung sebab-akibat yang jelas.",
+              "contoh_penerapan": "Urbanisasi masif **memicu** kenaikan harga lahan, **sehingga** warga berpenghasilan rendah **terdorong** pindah ke pinggiran kota.",
+              "jebakan_atau_catatan": "Opsi jebakan sering memotong kejadian perantara ($B$) atau membalik urutan menjadi $C \\rightarrow A$.",
               "visual": null
             },
             {
-              "judul_poin": "Korelasi Simultan vs. Kausalitas Murni",
-              "penjelasan_singkat": "Menunjukkan dua fenomena terjadi bersamaan (seiring, berbarengan) tanpa memastikan salah satunya menjadi penyebab tunggal.",
-              "contoh_penerapan": "Peningkatan penetrasi internet **beriringan dengan** pergeseran pola konsumsi budaya populer di kalangan generasi muda perkotaan.",
-              "jebakan_atau_catatan": "Waspadai opsi jawaban yang mengubah kata *beriringan* menjadi klaim kausalitas mutlak seperti *disebabkan sepenuhnya oleh*.",
+              "judul_poin": "Kejadian Bersamaan vs. Sebab-Akibat",
+              "penjelasan_singkat": "Menunjukkan dua hal terjadi berbarengan (*seiring*, *beriringan*) tanpa memastikan hal pertama menyebabkan hal kedua.",
+              "contoh_penerapan": "Peningkatan akses internet **beriringan dengan** perubahan selera hiburan anak muda di perkotaan.",
+              "jebakan_atau_catatan": "Hati-hati jika opsi jawaban mengubah kata *beriringan* menjadi klaim mutlak seperti *disebabkan sepenuhnya oleh*.",
               "visual": null
             },
             {
-              "judul_poin": "Faktor Pemicu vs. Katalis Pemercepat",
-              "penjelasan_singkat": "Membedakan akar masalah struktural dari peristiwa jangka pendek yang mempercepat eskalasi fenomena sosial.",
-              "contoh_penerapan": "Ketimpangan akses pendidikan menjadi **akar masalah**, sementara pandemi **mempercepat** pelebaran jurang literasi digital antardaerah.",
-              "jebakan_atau_catatan": "Jebakan UTBK kerap menyamakan faktor pemercepat (*katalis*) sebagai satu-satunya penyebab lahirnya masalah awal.",
+              "judul_poin": "Akar Masalah vs. Pemicu yang Mempercepat",
+              "penjelasan_singkat": "Membedakan masalah utama yang sudah lama ada dari kejadian baru yang membuat masalah itu makin parah.",
+              "contoh_penerapan": "Ketimpangan fasilitas sekolah adalah **akar masalah**, sementara pandemi **mempercepat** melebarnya jarak literasi digital antardaerah.",
+              "jebakan_atau_catatan": "Soal UTBK sering menjebak dengan menyebut faktor pemercepat sebagai satu-satunya penyebab awal masalah.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Sinyal Dinamika Makro-Mikro Ekonomi",
-          "ringkasan_kelompok": "Menafsirkan arah pergerakan variabel inflasi, pasar kerja, UMKM, dan transisi energi.",
+          "nama_kelompok": "Sinyal Pergerakan Ekonomi Makro-Mikro",
+          "ringkasan_kelompok": "Membaca arah naik-turun inflasi, lapangan kerja, kondisi UMKM, dan peralihan energi.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Hubungan Invers (Berbanding Terbalik) Variabel Ekonomi",
-              "penjelasan_singkat": "Menandai kenaikan satu indikator ekonomi yang menekan turun indikator lain melalui diksi kontras terukur.",
-              "contoh_penerapan": "Kenaikan suku bunga acuan efektif **meredam** laju inflasi, namun di sisi lain **menekan** ekspansi kredit UMKM.",
-              "jebakan_atau_catatan": "Perhatikan arah panah logika ($X \\uparrow \\rightarrow Y \\downarrow$); pengecoh biasanya menyimpulkan kedua variabel naik bersamaan.",
+              "judul_poin": "Hubungan Naik-Turun Berlawanan",
+              "penjelasan_singkat": "Menunjukkan kenaikan satu angka ekonomi yang justru menekan angka ekonomi lainnya lewat kata kontras.",
+              "contoh_penerapan": "Kenaikan suku bunga acuan efektif **meredam** laju inflasi, tetapi di sisi lain **menekan** penyaluran kredit UMKM.",
+              "jebakan_atau_catatan": "Cek arah panahnya ($X \\uparrow \\rightarrow Y \\downarrow$); pengecoh biasanya menyimpulkan kedua hal naik bersamaan.",
               "visual": null
             },
             {
-              "judul_poin": "Transmisi Kebijakan ke Daya Beli Mikro",
-              "penjelasan_singkat": "Melacak dampak instrumen makro (subsidi, pajak, tarif) terhadap biaya produksi dan konsumsi rumah tangga.",
-              "contoh_penerapan": "Pencabutan subsidi energi **mengerek** biaya logistik produsen yang akhirnya **diteruskan** kepada konsumen melalui kenaikan harga pangan.",
-              "jebakan_atau_catatan": "Jangan lompat pada kesimpulan keuntungan negara jika teks hanya membahas beban biaya di tingkat konsumen.",
+              "judul_poin": "Dampak Kebijakan ke Kantong Warga",
+              "penjelasan_singkat": "Melacak efek aturan pemerintah (subsidi, pajak, tarif) terhadap ongkos produksi hingga harga belanja rumah tangga.",
+              "contoh_penerapan": "Pencabutan subsidi energi **mengerek** biaya angkut barang yang akhirnya **dibebankan** ke pembeli lewat kenaikan harga pangan.",
+              "jebakan_atau_catatan": "Jangan melompat ke kesimpulan soal untung-rugi kas negara jika teks hanya membahas beban harga di tingkat pembeli.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Trade-Off dalam Transisi Ekonomi",
-              "penjelasan_singkat": "Mengidentifikasi pengorbanan jangka pendek demi keuntungan jangka panjang pada sektor energi maupun pasar tenaga kerja.",
-              "contoh_penerapan": "Pensiun dini pembangkit batu bara **menurunkan** emisi karbon, **meski berisiko** memicu pemutusan hubungan kerja di daerah tambang.",
-              "jebakan_atau_catatan": "Opsi benar harus mengakomodasi dua sisi konsekuensi, bukan hanya menonjolkan manfaat atau kerugian secara sepihak.",
+              "judul_poin": "Untung-Rugi Jangka Pendek vs. Panjang",
+              "penjelasan_singkat": "Menangkap pengorbanan sementara demi manfaat masa depan di sektor energi atau ketenagakerjaan.",
+              "contoh_penerapan": "Penghentian dini PLTU batu bara **menurunkan** emisi karbon, **meski berisiko** memicu PHK di daerah tambang.",
+              "jebakan_atau_catatan": "Jawaban yang benar harus merangkum dua sisi konsekuensi, bukan cuma menyoroti untung atau ruginya saja.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Penanda Diferensiasi Dampak Sosial",
-          "ringkasan_kelompok": "Memetakan perbedaan efek kebijakan pada tiap lapisan masyarakat dan batasan berlakunya.",
+          "nama_kelompok": "Penanda Beda Dampak Tiap Kelompok",
+          "ringkasan_kelompok": "Memetakan perbedaan efek aturan pada tiap lapisan warga dan batas berlakunya.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Dampak Asimetris Antarkelompok Masyarakat",
-              "penjelasan_singkat": "Membandingkan kelompok penerima manfaat langsung dengan kelompok yang terpinggirkan akibat penerapan kebijakan yang sama.",
-              "contoh_penerapan": "Insentif kendaraan listrik **menguntungkan** kelas menengah atas, **sedangkan** pengguna transportasi publik belum merasakan perbaikan layanan.",
-              "jebakan_atau_catatan": "Hindari opsi generalisasi yang menyebut kebijakan tersebut *meningkatkan kesejahteraan seluruh lapisan masyarakat*.",
+              "judul_poin": "Dampak Berbeda Antar-Kelompok Warga",
+              "penjelasan_singkat": "Membandingkan kelompok yang langsung diuntungkan dengan kelompok yang justru tertinggal akibat aturan yang sama.",
+              "contoh_penerapan": "Insentif kendaraan listrik **menguntungkan** kelas menengah atas, **sedangkan** pengguna angkutan umum belum merasakan perbaikan layanan.",
+              "jebakan_atau_catatan": "Hindari opsi pukul rata yang menyebut aturan tersebut *meningkatkan kesejahteraan seluruh warga*.",
               "visual": null
             },
             {
-              "judul_poin": "Eksternalitas Negatif pada Kelompok Rentan",
-              "penjelasan_singkat": "Menangkap efek samping tak terencana dari proyek pembangunan terhadap mata pencaharian atau ruang hidup warga lokal.",
-              "contoh_penerapan": "Digitalisasi perizinan usaha memangkas birokrasi, **tetapi menyisakan** hambatan akses bagi pelaku usaha mikro di wilayah minim sinyal.",
-              "jebakan_atau_catatan": "Pengecoh sering menganggap hambatan kelompok rentan sebagai tujuan utama kebijakan, padahal sekadar dampak ikutan.",
+              "judul_poin": "Efek Samping bagi Kelompok Rentan",
+              "penjelasan_singkat": "Menangkap dampak ikutan yang tidak diinginkan dari suatu proyek terhadap mata pencaharian warga lokal.",
+              "contoh_penerapan": "Digitalisasi izin usaha memangkas birokrasi, **tetapi menyisakan** kendala akses bagi pelaku usaha mikro di daerah minim sinyal.",
+              "jebakan_atau_catatan": "Pengecoh sering memelintir kendala kelompok rentan seolah-olah menjadi tujuan utama kebijakan.",
               "visual": null
             },
             {
-              "judul_poin": "Modalitas Pembatas dan Kualifikasi Cakupan",
-              "penjelasan_singkat": "Menggunakan kata pembatas (cenderung, berpotensi, sebagian) untuk menjaga klaim tetap akurat sesuai bukti empiris.",
-              "contoh_penerapan": "Program bantuan tunai **cenderung** efektif menahan penurunan konsumsi **pada kelompok** desil terbawah selama kuartal pertama.",
-              "jebakan_atau_catatan": "Coret langsung opsi jawaban yang mengganti kata *cenderung* atau *sebagian* dengan kata absolut *pasti* atau *semua*.",
+              "judul_poin": "Kata Pembatas Cakupan Klaim",
+              "penjelasan_singkat": "Memakai kata pembatas (*cenderung*, *berpotensi*, *sebagian*) agar pernyataan tetap akurat sesuai fakta lapangan.",
+              "contoh_penerapan": "Bantuan tunai **cenderung** efektif menahan penurunan belanja **pada kelompok** warga termiskin selama tiga bulan pertama.",
+              "jebakan_atau_catatan": "Langsung coret opsi jawaban yang mengganti kata *cenderung* atau *sebagian* menjadi kata mutlak *pasti* atau *semua*.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pola Sintesis Argumen Pro dan Kontra",
-          "ringkasan_kelompok": "Menganalisis pertentangan sudut pandang dan sikap kritis penulis dalam wacana kebijakan.",
+          "nama_kelompok": "Pola Adu Argumen Pro dan Kontra",
+          "ringkasan_kelompok": "Membaca pertentangan sudut pandang dan sikap kritis penulis dalam wacana kebijakan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Konsesi Sebagai Jembatan Kontra-Argumen",
-              "penjelasan_singkat": "Mengakui validitas argumen lawan terlebih dahulu sebelum mengajukan kritik utama menggunakan konjungsi pertentangan.",
+              "judul_poin": "Mengakui Dulu Sebelum Mengkritik",
+              "penjelasan_singkat": "Mengakui sisi baik argumen lawan di awal kalimat sebelum melontarkan kritik utama lewat kata pertentangan.",
               "contoh_penerapan": "**Kendati** hilirisasi mineral mendongkrak nilai ekspor, kebijakan ini **tetap menuai kritik** karena lemahnya pengawasan lingkungan.",
-              "jebakan_atau_catatan": "Inti argumen penulis berada setelah klausa pertentangan (*tetap menuai kritik*), bukan pada bagian konsesi awal.",
+              "jebakan_atau_catatan": "Inti sikap penulis ada setelah kata pertentangan (*tetap menuai kritik*), bukan pada pengakuan di awal kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Benturan Paradigma Efisiensi vs. Keadilan",
-              "penjelasan_singkat": "Memetakan perdebatan kebijakan antara kubu pendukung pertumbuhan ekonomi makro dan kubu pembela pemerataan sosial.",
-              "contoh_penerapan": "**Kubu pro** menyoroti efisiensi anggaran negara, **sebaliknya kelompok kontra** menilai pemangkasan subsidi memperlebar ketimpangan.",
-              "jebakan_atau_catatan": "Sintesis yang tepat merangkum titik temu atau inti perbedaan kedua kubu tanpa memihak salah satu secara emosional.",
+              "judul_poin": "Benturan Fokus Efisiensi vs. Keadilan",
+              "penjelasan_singkat": "Memetakan adu argumen antara kubu yang mengejar pertumbuhan ekonomi dan kubu yang membela pemerataan sosial.",
+              "contoh_penerapan": "**Kubu pro** menyoroti penghematan anggaran negara, **sebaliknya kelompok kontra** menilai pemangkasan subsidi memperlebar ketimpangan.",
+              "jebakan_atau_catatan": "Kesimpulan yang tepat merangkum titik temu atau inti perbedaan kedua kubu tanpa memihak secara emosional.",
               "visual": null
             },
             {
-              "judul_poin": "Nada Evaluatif-Kritis vs. Deskriptif-Netral",
-              "penjelasan_singkat": "Membedakan teks yang sekadar memaparkan data kebijakan dari teks yang menilai kelayakan implementasinya melalui diksi evaluatif.",
-              "contoh_penerapan": "Tanpa perbaikan tata kelola distribusi, target swasembada pangan **berisiko menjadi** sekadar slogan teknokratis yang **sulit terwujud**.",
-              "jebakan_atau_catatan": "Jangan terjebak memilih nada *pesimistis mutlak* jika penulis masih menyertakan syarat perbaikan (*tanpa perbaikan tata kelola*).",
+              "judul_poin": "Nada Kritis Bersyarat vs. Sekadar Melaporkan",
+              "penjelasan_singkat": "Membedakan teks yang cuma memaparkan data dari teks yang mengkritisi syarat keberhasilan suatu kebijakan.",
+              "contoh_penerapan": "Tanpa perbaikan tata kelola distribusi, target swasembada pangan **berisiko menjadi** sekadar slogan yang **sulit terwujud**.",
+              "jebakan_atau_catatan": "Jangan memilih jawaban bernada *pesimistis total* jika penulis masih memberi syarat solusi (*tanpa perbaikan tata kelola*).",
               "visual": null
             }
           ]
@@ -155,17 +155,17 @@
       "nama_variasi": "Analisis Hubungan Sebab-Akibat Fenomena Sosial, Demografi, Budaya, atau Kebijakan Publik",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Paragraf 1 & 2: Penerapan pajak karbon memicu kenaikan biaya produksi energi, menekan margin industri padat karya, dan membuat pelaku usaha menengah menahan ekspansi tenaga kerja.",
-      "bedah_pola_markdown": "**Teknik Scanning:** Pindai konjungsi kausalitas eksplisit seperti *memicu*, *mengakibatkan*, *berpotensi menekan*, dan *akibatnya* pada paragraf 1 dan 2.\n\n**Parafrasa Opsi Benar:** Rantai kausal teks membentuk pola $\\text{Pajak Karbon} \\rightarrow \\text{Biaya Energi Naik} \\rightarrow \\text{Margin Tertekan} \\rightarrow \\text{Ekspansi Kerja Tertahan}$. Opsi benar akan merangkum hubungan tidak langsung ini secara presisi, misalnya: *Penerapan pajak karbon berdampak pada tertahannya penyerapan tenaga kerja baru di sektor usaha menengah akibat menyusutnya margin keuntungan.*\n\n**Ciri Opsi Jebakan:**\n- Membalik urutan sebab-akibat (menyebut tertahannya ekspansi kerja memicu pajak karbon).\n- Menghilangkan variabel perantara dan mengklaim pajak karbon langsung memecat seluruh pekerja industri.",
-      "kunci_pembeda": "Selalu lacak mata rantai perantara di antara sebab awal dan akibat akhir agar tidak terjebak lompatan logika.",
+      "bedah_pola_markdown": "**Langkah Baca Cepat (Scanning):** Cari kata penghubung sebab-akibat yang tegas di paragraf 1 dan 2, seperti *memicu*, *berpotensi menekan*, dan *akibatnya*.\n\n**Cara Menemukan Jawaban:** Ikuti rantai kejadiannya satu per satu: $\\text{Pajak Karbon} \\rightarrow \\text{Biaya Energi Naik} \\rightarrow \\text{Margin Usaha Tertekan} \\rightarrow \\text{Rekrutmen Kerja Tertahan}$. Opsi yang benar akan merangkum alur berantai ini tanpa melompat, misalnya: *Penerapan pajak karbon membuat pelaku usaha menengah menahan perekrutan baru karena margin keuntungan mereka menyusut akibat kenaikan biaya energi.*\n\n**Ciri Opsi Jebakan:**\n- Membalik urutan kejadian (menyebut tertahannya perekrutan kerja justru memicu pajak karbon).\n- Memotong mata rantai tengah dan mengklaim pajak karbon langsung memecat seluruh pekerja industri.",
+      "kunci_pembeda": "Lacak setiap mata rantai perantara di antara sebab awal dan akibat akhir supaya kamu tidak terjebak lompatan logika.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
       "nama_variasi": "Penafsiran Dinamika Ekonomi (Inflasi, Pasar Kerja, UMKM, Transisi Energi) Berdasarkan Wacana Analitis",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Rujukan Paragraf 2 & 3: Polarisasi keterampilan di pasar kerja (lonjakan ahli teknologi hijau vs PHK friksional tambang) serta risiko cost-push inflation yang menggerus daya beli.",
-      "bedah_pola_markdown": "**Teknik Skimming:** Fokus pada istilah kunci ekonomi seperti *polarisasi keterampilan*, *PHK friksional*, *insentif UMKM*, dan *cost-push inflation*.\n\n**Parafrasa Opsi Benar:** Teks menjelaskan bahwa transisi energi tidak menghapus lapangan kerja secara absolut, melainkan menggeser struktur permintaan (polarisasi). Selain itu, inflasi terjadi jika biaya pajak dibebankan ke harga barang tanpa dukungan infrastruktur. Opsi benar menafsirkan mekanisme ini secara utuh sesuai konteks wacana.\n\n**Ciri Opsi Jebakan:**\n- Menggunakan istilah ekonomi yang mirip tetapi keliru secara konsep teks (misalnya menyebut terjadi *demand-pull inflation* atau inflasi akibat lonjakan permintaan masyarakat).\n- Mengklaim UMKM langsung bangkrut akibat pajak karbon, padahal teks menyebut UMKM mendapat insentif pembiayaan efisiensi energi.",
-      "kunci_pembeda": "Pastikan mekanisme penularan dampak ekonomi (sisi penawaran/biaya vs sisi permintaan) sesuai persis dengan definisi di dalam teks.",
+      "stimulus_mini": "Rujukan Paragraf 2 & 3: Pembelahan kebutuhan keterampilan di pasar kerja (lonjakan ahli teknologi hijau vs PHK friksional tambang) serta risiko cost-push inflation yang menggerus daya beli.",
+      "bedah_pola_markdown": "**Langkah Baca Cepat (Skimming):** Tandai istilah ekonomi kunci di bacaan, yaitu *pembelahan kebutuhan keterampilan*, *PHK friksional*, *insentif UMKM*, dan *cost-push inflation*.\n\n**Cara Menemukan Jawaban:** Bacaan menjelaskan bahwa transisi energi tidak menghapus semua lowongan kerja, melainkan menggeser jenis keahlian yang dicari. Selain itu, inflasi baru muncul jika beban pajak diteruskan ke harga barang karena infrastruktur belum siap. Opsi benar menangkap mekanisme ini persis seperti penjelasan teks.\n\n**Ciri Opsi Jebakan:**\n- Menukar istilah ekonomi dengan konsep yang keliru (misalnya menyebut terjadi *demand-pull inflation* atau inflasi akibat lonjakan belanja warga).\n- Mengklaim UMKM langsung bangkrut terkena pajak karbon, padahal teks menyebut UMKM justru mendapat insentif pembiayaan energi efisien.",
+      "kunci_pembeda": "Cocokkan pemicu masalah ekonomi di opsi jawaban (apakah dari kenaikan biaya produksi atau lonjakan permintaan) dengan isi bacaan.",
       "visual": null
     },
     {
@@ -173,8 +173,8 @@
       "nama_variasi": "Identifikasi Dampak Kebijakan terhadap Kelompok Masyarakat yang Berbeda",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Paragraf 1, 2, & 3: Perbandingan dampak pada industri padat karya, pekerja kerah biru tambang, tenaga ahli teknologi hijau, UMKM, dan kelompok berpendapatan rendah.",
-      "bedah_pola_markdown": "**Teknik Scanning:** Buat pemetaan cepat (*entity mapping*) untuk setiap kelompok aktor yang disebut dalam teks beserta perlakuan spesifiknya.\n\n**Parafrasa Opsi Benar:** Setiap kelompok menerima dampak asimetris: ahli teknologi hijau diuntungkan oleh lonjakan permintaan; pekerja tambang menghadapi risiko PHK friksional namun memperoleh subsidi *reskilling*; kelompok berpendapatan rendah rentan tergerus daya belinya jika inflasi terjadi. Opsi benar mencocokkan aktor dan dampaknya tanpa tertukar.\n\n**Ciri Opsi Jebakan:**\n- **Tukar Aktor (*Cross-Entity Trap*):** Menyebut pekerja kerah biru tambang mendapatkan insentif pembiayaan efisiensi energi (seharusnya milik UMKM).\n- Menggeneralisasi bahwa seluruh lapisan masyarakat mengalami penurunan daya beli secara langsung tanpa syarat terjadinya inflasi.",
-      "kunci_pembeda": "Ikat setiap klaim dampak hanya pada subjek/kelompok spesifik yang melekat pada kalimat tersebut.",
+      "bedah_pola_markdown": "**Langkah Baca Cepat (Scanning):** Buat catatan kecil di kepala yang memasangkan tiap kelompok warga dengan nasibnya masing-masing di bacaan.\n\n**Cara Menemukan Jawaban:** Tiap kelompok mengalami efek yang berbeda: ahli teknologi hijau kebanjiran lowongan; pekerja tambang terancam PHK friksional tetapi dapat subsidi *reskilling*; UMKM mendapat insentif pembiayaan; warga berpendapatan rendah terancam turun daya belinya jika inflasi terjadi. Opsi benar memasangkan subjek dan dampaknya tanpa tertukar.\n\n**Ciri Opsi Jebakan:**\n- **Jebakan Tukar Subjek:** Menyebut pekerja kerah biru tambang mendapat insentif pembiayaan energi efisien (padahal itu milik UMKM).\n- Menyamaratakan bahwa seluruh warga otomatis turun daya belinya tanpa syarat terjadinya inflasi.",
+      "kunci_pembeda": "Kunci setiap pernyataan dampak hanya pada kelompok warga spesifik yang tertulis di kalimat aslinya.",
       "visual": null
     },
     {
@@ -182,8 +182,8 @@
       "nama_variasi": "Sintesis Argumen Pro dan Kontra dalam Wacana Kebijakan Publik atau Sosiologi",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan Paragraf 3: Kelompok pendukung menyoroti pencegahan kerugian krisis iklim & hambatan ekspor, sedangkan ekonom kritis menyoroti belum siapnya infrastruktur listrik pintar & risiko inflasi.",
-      "bedah_pola_markdown": "**Teknik Skimming:** Identifikasi penanda kontras dialektis pada paragraf 3: *Meskipun demikian*, *Kelompok pendukung menilai*, dan *Sebaliknya, kalangan ekonom kritis memperingatkan*.\n\n**Parafrasa Opsi Benar:** Sintesis yang tepat tidak memihak salah satu kubu, melainkan merangkum titik temu atau ketegangan utama keduanya: *Keberhasilan pajak karbon dalam melindungi daya saing ekspor dan iklim sangat bergantung pada kesiapan infrastruktur pendukung agar tidak memicu inflasi domestik.*\n\n**Ciri Opsi Jebakan:**\n- Menganggap ekonom kritis menolak transisi energi secara mutlak (padahal mereka hanya mengkritisi prasyarat infrastruktur dan risiko transmisi biaya).\n- Menyimpulkan bahwa penulis teks sepenuhnya memihak kelompok pendukung kebijakan.",
-      "kunci_pembeda": "Sintesis objektif menggabungkan syarat keberhasilan dari kubu kontra dengan tujuan strategis dari kubu pro.",
+      "bedah_pola_markdown": "**Langkah Baca Cepat (Skimming):** Perhatikan kata penanda adu argumen di paragraf 3: *Meski demikian*, *Kelompok pendukung menilai*, dan *Sebaliknya, kalangan ekonom kritis mengingatkan*.\n\n**Cara Menemukan Jawaban:** Kesimpulan gabungan (sintesis) yang tepat tidak memihak salah satu kubu, melainkan merangkum syarat keberhasilan di antara keduanya: *Pajak karbon dapat mencegah kerugian iklim dan hambatan ekspor asalkan infrastruktur listrik pintar dan rantai pasok lokal disiapkan lebih dulu agar tidak memicu inflasi domestik.*\n\n**Ciri Opsi Jebakan:**\n- Menganggap ekonom kritis menolak transisi energi secara mutlak (padahal mereka hanya mengingatkan syarat kesiapan infrastruktur).\n- Menyimpulkan bahwa penulis bacaan sepenuhnya memihak kelompok pendukung.",
+      "kunci_pembeda": "Gabungkan tujuan utama dari kubu pendukung dengan catatan syarat dari kubu pengkritik secara seimbang.",
       "visual": null
     }
   ],
@@ -198,13 +198,13 @@
       "pertanyaan_markdown": "Berdasarkan stimulus utama, manakah rangkaian hubungan sebab-akibat yang paling tepat menggambarkan dinamika ekonomi akibat penerapan pajak karbon dalam jangka pendek?",
       "opsi_jawaban": [
         "A. Kenaikan biaya produksi energi mendorong pemerintah memangkas subsidi pelatihan ulang bagi pekerja sektor pertambangan.",
-        "B. Internalisasi biaya emisi secara langsung meningkatkan daya beli masyarakat berpendapatan rendah melalui insentif UMKM.",
+        "B. Pemasukan biaya emisi ke ongkos produksi secara langsung meningkatkan daya beli warga berpendapatan rendah lewat insentif UMKM.",
         "C. Kenaikan biaya energi menekan margin industri padat karya sehingga pelaku usaha menengah menahan perekrutan tenaga kerja baru.",
         "D. Lonjakan permintaan ahli teknologi hijau menyebabkan terjadinya PHK friksional pada sektor industri padat karya.",
         "E. Hambatan tarif karbon di pasar ekspor global memaksa pembangkit listrik batu bara segera beralih ke jaringan listrik pintar."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "**Kunci: C.** Paragraf 1 menjelaskan alur kausal eksplisit: pajak karbon $\\rightarrow$ kenaikan biaya produksi energi $\\rightarrow$ menekan margin industri padat karya $\\rightarrow$ usaha menengah menahan ekspansi tenaga kerja. \n- **A salah:** Pemerintah justru mengalokasikan penerimaan pajak untuk subsidi *reskilling*.\n- **B salah:** Daya beli kelompok berpendapatan rendah justru berisiko tergerus inflasi.\n- **D salah:** Kedua hal tersebut merupakan gejala paralel polarisasi pasar kerja, bukan hubungan sebab-akibat langsung.\n- **E salah:** Tidak ada pernyataan mengenai kewajiban pembangkit batu bara beralih ke jaringan listrik pintar akibat tarif ekspor.",
+      "bedah_cepat_markdown": "**Kunci: C.** Kita lacak alur sebab-akibat di paragraf 1: pajak karbon menaikkan biaya produksi energi $\\rightarrow$ margin industri padat karya tertekan $\\rightarrow$ usaha menengah menahan perekrutan tenaga kerja baru. Opsi C merangkum rantai ini dengan tepat.\n- **Kenapa A salah?** Paragraf 2 justru menyebut pemerintah mengalokasikan penerimaan pajak karbon untuk subsidi *reskilling* pekerja terdampak, bukan memangkasnya.\n- **Kenapa B salah?** Tidak ada jalur dari insentif UMKM ke kenaikan daya beli warga berpendapatan rendah; daya beli mereka justru terancam tergerus inflasi.\n- **Kenapa D salah?** Lonjakan ahli teknologi hijau dan PHK friksional pekerja tambang adalah dua sisi gejala yang berjalan beriringan, bukan sebab-akibat langsung.\n- **Kenapa E salah?** Paragraf 3 hanya menyebut hambatan tarif ekspor sebagai alasan pendukung pajak karbon, bukan paksaan bagi PLTU untuk beralih ke listrik pintar.",
       "visual": null
     },
     {
@@ -222,7 +222,7 @@
         "E. Salah - Salah - Benar"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Kunci: B (Benar - Salah - Benar).**\n- **Pernyataan 1 (Benar):** Paragraf 2 menyatakan pekerja kerah biru tambang menghadapi risiko PHK friksional dan mendapat subsidi *reskilling*.\n- **Pernyataan 2 (Salah - Jebakan Tukar Aktor):** UMKM menerima *insentif pembiayaan efisiensi energi*, bukan subsidi pelatihan ulang tenaga kerja.\n- **Pernyataan 3 (Benar):** Paragraf 2 menyebut sektor teknologi hijau dan audit lingkungan mengalami lonjakan permintaan tenaga ahli.",
+      "bedah_cepat_markdown": "**Kunci: B (Benar - Salah - Benar).** Mari kita cocokkan satu per satu dengan data aktor di paragraf 2:\n- **Pernyataan 1 (Benar):** Paragraf 2 jelas menyebut pekerja kerah biru di sentra pertambangan terancam PHK friksional dan mendapat subsidi pelatihan ulang (*reskilling*).\n- **Pernyataan 2 (Salah):** Ini jebakan tukar subjek. UMKM menerima *insentif pembiayaan untuk beralih ke energi efisien*, bukan subsidi pelatihan ulang tenaga kerja.\n- **Pernyataan 3 (Benar):** Paragraf 2 menyatakan sektor teknologi hijau dan audit lingkungan mengalami lonjakan permintaan tenaga ahli.",
       "visual": null
     },
     {
@@ -240,7 +240,7 @@
         "E. Hambatan tarif karbon di pasar ekspor hanya dapat diatasi dengan menurunkan pajak karbon bagi industri padat karya."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Kunci: B.** Sintesis objektif menggabungkan tujuan kubu pendukung (instrumen fiskal pencegah krisis iklim dan hambatan ekspor) dengan catatan kritis kubu ekonom (perlunya kesiapan infrastruktur jaringan listrik pintar dan komponen lokal agar tidak memicu *cost-push inflation*).\n- **A & C salah:** Bersifat ekstrem dan mendistorsi posisi ekonom kritis (mereka tidak meminta pembatalan mutlak maupun pengabaian daya beli).\n- **D & E salah:** Informasi spekulatif yang tidak tercantum di dalam paragraf ketiga.",
+      "bedah_cepat_markdown": "**Kunci: B.** Untuk menggabungkan dua kubu di paragraf 3 secara objektif, kita satukan tujuan kubu pendukung (instrumen fiskal pencegah krisis iklim dan hambatan ekspor) dengan syarat dari ekonom kritis (kesiapan jaringan listrik pintar dan komponen lokal agar tidak memicu *cost-push inflation*). Opsi B merangkum titik temu ini dengan pas.\n- **Kenapa A & C salah?** Keduanya bersikap ekstrem dan memelintir posisi ekonom kritis; mereka tidak meminta pembatalan mutlak maupun pengabaian daya beli warga.\n- **Kenapa D & E salah?** Keduanya mengarang kesimpulan baru yang sama sekali tidak tertulis di paragraf ketiga.",
       "visual": null
     }
   ]

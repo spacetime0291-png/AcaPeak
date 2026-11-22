@@ -9,132 +9,132 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Diketahui aturan $a \\diamond b = a^2 - b$. Berapakah nilai dari $3 \\diamond (2 \\diamond 1)$ jika dihitung sesuai kaidah aljabar UTBK?",
+      "pertanyaan_pemantik": "Diketahui aturan $a \\diamond b = a^2 - b$. Berapakah nilai dari $3 \\diamond (2 \\diamond 1)$?",
       "opsi_cepat": [
         "48",
         "6"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Operasi simbol baru tidak otomatis bersifat asosiatif, sehingga ekspresi di dalam tanda kurung wajib dieksekusi lebih dulu ($2 \\diamond 1 = 3$), barulah dioperasikan dengan bilangan luar ($3 \\diamond 3 = 6$)."
+      "penjelasan_kilat": "Simbol baru belum tentu bisa dikelompokkan bebas. Kerjakan isi kurung dulu ($2 \\diamond 1 = 3$), baru hitung bagian luarnya ($3 \\diamond 3 = 6$)."
     },
-    "konsep_inti_markdown": "Operasi fungsi baru mendefinisikan aturan aljabar khusus menggunakan simbol non-standar (seperti $\\otimes$, $\\star$, $\\triangle$) sebagai pengganti fungsi dua variabel $f(a, b)$.\n\n* **Prinsip Posisi:** Posisikan bilangan pertama sebagai variabel depan ($a$) dan bilangan kedua sebagai variabel belakang ($b$).\n* **Prioritas Kurung:** Selesaikan operasi di dalam kurung terlebih dahulu karena simbol baru belum tentu komutatif atau asosiatif.\n* **Cek Syarat:** Periksa domain atau syarat kondisi (ganjil/genap, tanda pertidaksamaan) sebelum substitusi.",
+    "konsep_inti_markdown": "Operasi fungsi baru adalah aturan hitung buatan yang memakai simbol unik (seperti $\\otimes$, $\\star$, atau $\\triangle$) sebagai pengganti rumus dua angka $f(a, b)$.\n\n* **Posisi Itu Mutlak:** Angka di kiri simbol masuk ke huruf depan ($a$), angka di kanan masuk ke huruf belakang ($b$).\n* **Kurung Selalu Menang:** Kerjakan operasi di dalam kurung lebih dulu. Simbol buatan tidak otomatis bisa dibolak-balik.\n* **Cek Syarat Dulu:** Kalau rumusnya bercabang (misalnya beda aturan untuk ganjil/genap atau $a > b$), cek syaratnya sebelum mulai menghitung.",
     "radar_jebakan_utbk": [
-      "Menganggap simbol baru otomatis bersifat komutatif ($a \\star b = b \\star a$) atau asosiatif, sehingga tertukar posisi variabel depan dan belakang saat substitusi.",
-      "Mengabaikan tanda kurung saat mensubstitusi bilangan negatif ke bentuk kuadrat, misalnya menulis $-2^2 = -4$ alih-alih $(-2)^2 = 4$."
+      "Mengira simbol baru otomatis bisa dibolak-balik ($a \\star b = b \\star a$), padahal menukar posisi kiri dan kanan sering menghasilkan angka berbeda.",
+      "Lupa memberi tanda kurung saat memasukkan bilangan negatif ke pangkat kuadrat—menulis $-2^2 = -4$ padahal seharusnya $(-2)^2 = 4$."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Rumus dan Sifat Operasi Fungsi Baru (Simbol Khusus)",
-      "subjudul_ringkas": "Panduan lengkap aturan substitusi, operasi bersyarat, persamaan variabel, hingga pengujian sifat struktur aljabar pada soal UTBK.",
+      "subjudul_ringkas": "Panduan cepat aturan substitusi, rumus bercabang, mencari nilai $x$, sampai uji sifat aljabar di soal UTBK.",
       "mode_tampilan": "katalog_rumus_sifat",
       "label_kolom": {
-        "kolom_1": "Sifat / Rumus & Syarat",
+        "kolom_1": "Aturan & Syarat",
         "kolom_2": "Contoh Hitung Mini",
         "kolom_3": "Jebakan / Trik Cepat"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Evaluasi Langsung dan Operasi Bersarang",
-          "ringkasan_kelompok": "Aturan dasar pemetaan variabel, prioritas kurung, serta kombinasi beberapa simbol operasi khusus.",
+          "nama_kelompok": "Hitung Langsung dan Operasi Bersarang",
+          "ringkasan_kelompok": "Cara memasukkan angka sesuai posisi, prioritas tanda kurung, dan gabungan dua simbol berbeda.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Substitusi Posisi Variabel Depan dan Belakang",
-              "penjelasan_singkat": "Masukkan bilangan kiri sebagai variabel pertama ($a$) dan bilangan kanan sebagai variabel kedua ($b$) ke rumus definisi.",
+              "judul_poin": "Posisi Angka Kiri dan Kanan",
+              "penjelasan_singkat": "Masukkan angka di kiri simbol sebagai $a$ dan angka di kanan simbol sebagai $b$ ke dalam rumus.",
               "contoh_penerapan": "Jika $a \\otimes b = 2a - b^2$, maka $3 \\otimes 4 = 2(3) - 4^2 = 6 - 16 =$ **$-10$**.",
-              "jebakan_atau_catatan": "Jangan menukar posisi $a$ dan $b$; $4 \\otimes 3 = 2(4) - 3^2 = -1$, hasilnya berbeda.",
+              "jebakan_atau_catatan": "Jangan tukar posisi $a$ dan $b$. Jika dibalik, $4 \\otimes 3 = 2(4) - 3^2 = -1$ (hasilnya beda).",
               "visual": null
             },
             {
-              "judul_poin": "Evaluasi Operasi Bersarang (Prioritas Dalam Kurung)",
-              "penjelasan_singkat": "Hitung hasil operasi di dalam tanda kurung terlebih dahulu sebelum mengoperasikannya dengan bilangan di luar kurung.",
+              "judul_poin": "Operasi Bersarang (Kurung Duluan)",
+              "penjelasan_singkat": "Selesaikan simbol di dalam kurung sampai ketemu satu angka, lalu gabungkan dengan angka di luar kurung.",
               "contoh_penerapan": "Untuk $a \\star b = a + 2b$, hitung $(2 \\star 1) \\star 3$: $(2 + 2) \\star 3 = 4 \\star 3 =$ **$10$**.",
-              "jebakan_atau_catatan": "Jangan mengalikan distribusi seperti aljabar biasa; operasi khusus tidak selalu memenuhi sifat distributif.",
+              "jebakan_atau_catatan": "Jangan kalikan masuk seperti aljabar biasa karena simbol baru belum tentu punya sifat distributif.",
               "visual": null
             },
             {
-              "judul_poin": "Kombinasi Dua Simbol Operasi Berbeda",
-              "penjelasan_singkat": "Evaluasi masing-masing simbol sesuai definisi spesifiknya secara terpisah, lalu gabungkan hasilnya mengikuti hierarki kurung atau aritmetika standar.",
+              "judul_poin": "Gabungan Dua Simbol Berbeda",
+              "penjelasan_singkat": "Hitung setiap simbol memakai rumusnya masing-masing, lalu lanjutkan sesuai urutan kurung.",
               "contoh_penerapan": "Jika $a \\oplus b = ab$ dan $a \\ominus b = a - b$, maka $(3 \\oplus 2) \\ominus 4 = 6 \\ominus 4 =$ **$2$**.",
-              "jebakan_atau_catatan": "Pastikan tidak tertukar memakai rumus simbol pertama saat menghitung simbol kedua pada langkah lanjutan.",
+              "jebakan_atau_catatan": "Tandai rumus tiap simbol biar tidak tertukar saat masuk langkah kedua.",
               "visual": null
             },
             {
-              "judul_poin": "Operasi Tunggal (Uner) dan Ekspresi Gabungan",
-              "penjelasan_singkat": "Simbol satu variabel seperti $a^{\\triangle}$ memetakan satu input langsung ke rumus tunggal sebelum digabung operasi lain.",
+              "judul_poin": "Simbol Satu Angka yang Digabung Operasi Lain",
+              "penjelasan_singkat": "Simbol seperti $x^{\\triangle}$ hanya mengubah satu angka. Hitung nilainya dulu sebelum digabung dengan simbol dua angka.",
               "contoh_penerapan": "Jika $x^{\\triangle} = x^2 + 1$ dan $a \\odot b = a + b$, maka $2^{\\triangle} \\odot 3 = 5 \\odot 3 =$ **$8$**.",
-              "jebakan_atau_catatan": "Kerjakan simbol uner pada masing-masing bilangan terlebih dahulu sebelum menjalankan operasi biner di antaranya.",
+              "jebakan_atau_catatan": "Bereskan simbol satu angka di tiap bilangan dulu, baru jalankan simbol penghubungnya.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Operasi Bersyarat dan Persamaan Variabel",
-          "ringkasan_kelompok": "Pemilihan cabang rumus berdasarkan syarat pertidaksamaan atau paritas serta pencarian nilai variabel $x$.",
+          "nama_kelompok": "Operasi Bercabang dan Mencari Variabel x",
+          "ringkasan_kelompok": "Memilih cabang rumus berdasarkan syarat tertentu serta membalik rumus untuk mencari nilai $x$.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Operasi Bersyarat Pertidaksamaan ($a > b$ vs $a \\le b$)",
-              "penjelasan_singkat": "Bandingkan nilai numerik $a$ dan $b$ terlebih dahulu untuk memilih cabang rumus pertidaksamaan yang tepat.",
+              "judul_poin": "Rumus Bercabang Pertidaksamaan ($a > b$ vs $a \\le b$)",
+              "penjelasan_singkat": "Bandingkan besar angka $a$ dan $b$ lebih dulu untuk menentukan cabang rumus mana yang dipakai.",
               "contoh_penerapan": "Jika $a \\diamond b = a + b$ ($a > b$) dan $ab$ ($a \\le b$), maka $3 \\diamond 3 = 3 \\times 3 =$ **$9$**.",
-              "jebakan_atau_catatan": "Perhatikan tanda sama dengan pada $\\le$ atau $\\ge$ saat nilai kedua variabel kembar ($a = b$).",
+              "jebakan_atau_catatan": "Cek tanda sama dengan ($\\le$ atau $\\ge$) saat kedua angka kembar ($a = b$).",
               "visual": null
             },
             {
-              "judul_poin": "Operasi Bersyarat Paritas (Ganjil vs Genap)",
-              "penjelasan_singkat": "Periksa status ganjil atau genap dari input atau hasil gabungan untuk menentukan aturan substitusi yang berlaku.",
+              "judul_poin": "Rumus Bercabang Ganjil vs Genap",
+              "penjelasan_singkat": "Cek dulu apakah input atau hasil penjumlahannya ganjil atau genap, lalu pilih rumus yang cocok.",
               "contoh_penerapan": "Jika $a \\ast b = \\frac{a+b}{2}$ ($a+b$ genap) dan $a-b$ ($a+b$ ganjil), maka $5 \\ast 3 = \\frac{5+3}{2} =$ **$4$**.",
-              "jebakan_atau_catatan": "Nol ($0$) dan bilangan bulat negatif kelipatan dua termasuk bilangan genap; jangan hanya memeriksa bilangan positif.",
+              "jebakan_atau_catatan": "Ingat, $0$ dan kelipatan dua negatif (seperti $-2, -4$) tetap terhitung bilangan genap.",
               "visual": null
             },
             {
-              "judul_poin": "Mencari Variabel $x$ pada Persamaan Simbol",
-              "penjelasan_singkat": "Ubah ruas bersimbol menjadi bentuk aljabar dalam variabel $x$, lalu selesaikan persamaan linear atau kuadratnya.",
+              "judul_poin": "Mencari Nilai $x$ pada Persamaan Simbol",
+              "penjelasan_singkat": "Ubah bentuk bersimbol menjadi persamaan aljabar biasa dalam $x$, lalu selesaikan seperti biasa.",
               "contoh_penerapan": "Jika $a \\star b = 3a + b$ dan $x \\star 3 = 15$, maka $3x + 3 = 15 \\rightarrow$ **$x = 4$**.",
-              "jebakan_atau_catatan": "Jika menghasilkan persamaan kuadrat, uji semua akar ke syarat domain jika operasi memiliki batasan.",
+              "jebakan_atau_catatan": "Kalau muncul persamaan kuadrat, cek kembali semua nilai $x$ ke syarat soal (misalnya $x > 0$).",
               "visual": null
             },
             {
-              "judul_poin": "Mencari Variabel $x$ pada Operasi Bersyarat",
-              "penjelasan_singkat": "Uji semua cabang rumus yang mungkin, lalu verifikasi apakah nilai $x$ memenuhi syarat cabang tersebut.",
+              "judul_poin": "Mencari Nilai $x$ pada Rumus Bercabang",
+              "penjelasan_singkat": "Coba hitung dari semua cabang yang ada, lalu cek apakah hasil $x$ memenuhi syarat cabangnya.",
               "contoh_penerapan": "Jika $a \\bullet b = 2a$ ($a > b$) dan $a + b$ ($a \\le b$), solusi $x \\bullet 4 = 6$ adalah **$x = 2$**.",
-              "jebakan_atau_catatan": "Cabang $2x = 6 \\rightarrow x = 3$ gugur karena $3 > 4$ salah; selalu cek ulang syarat akhir.",
+              "jebakan_atau_catatan": "Cabang $2x = 6 \\rightarrow x = 3$ gugur karena $3 > 4$ salah. Wajib cek syarat di langkah akhir!",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pengujian Sifat Struktur Aljabar",
-          "ringkasan_kelompok": "Verifikasi sifat komutatif, asosiatif, elemen identitas, dan elemen invers pada operasi biner baru.",
+          "nama_kelompok": "Uji Sifat Aljabar pada Simbol Baru",
+          "ringkasan_kelompok": "Cara cepat mengecek sifat komutatif, asosiatif, angka identitas, dan invers pada operasi buatan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pengujian Sifat Komutatif ($a \\otimes b = b \\otimes a$)",
-              "penjelasan_singkat": "Operasi bersifat komutatif jika penukaran posisi $a$ dan $b$ menghasilkan ekspresi aljabar yang identik untuk semua bilangan.",
-              "contoh_penerapan": "Pada $a \\otimes b = a + b - 2ab$, bentuk $b \\otimes a = b + a - 2ba$, sehingga **komutatif berlaku**.",
-              "jebakan_atau_catatan": "Satu contoh penyangkal ($2 \\otimes 3 \\neq 3 \\otimes 2$) sudah cukup membuktikan operasi tidak komutatif.",
+              "judul_poin": "Uji Sifat Komutatif ($a \\otimes b = b \\otimes a$)",
+              "penjelasan_singkat": "Operasi disebut komutatif jika menukar posisi $a$ dan $b$ selalu menghasilkan rumus yang persis sama.",
+              "contoh_penerapan": "Pada $a \\otimes b = a + b - 2ab$, bentuk $b \\otimes a = b + a - 2ba$, jadi **komutatif berlaku**.",
+              "jebakan_atau_catatan": "Cukup cari satu pasang angka yang hasilnya beda ($2 \\otimes 3 \\neq 3 \\otimes 2$) untuk membuktikan tidak komutatif.",
               "visual": null
             },
             {
-              "judul_poin": "Pengujian Sifat Asosiatif ($(a \\otimes b) \\otimes c = a \\otimes (b \\otimes c)$)",
-              "penjelasan_singkat": "Operasi bersifat asosiatif jika pengelompokan kurung kiri dan kurung kanan menghasilkan ekspresi akhir yang sama persis.",
-              "contoh_penerapan": "Untuk $a \\otimes b = a - b$, $(5 \\otimes 3) \\otimes 1 = 1$ sedangkan $5 \\otimes (3 \\otimes 1) = 3$, jadi **tidak asosiatif**.",
-              "jebakan_atau_catatan": "Operasi komutatif belum tentu asosiatif; selalu jabarkan kedua ruas secara aljabar atau pakai contoh penyangkal.",
+              "judul_poin": "Uji Sifat Asosiatif ($(a \\otimes b) \\otimes c = a \\otimes (b \\otimes c)$)",
+              "penjelasan_singkat": "Operasi disebut asosiatif jika memindahkan tanda kurung tidak mengubah hasil akhirnya.",
+              "contoh_penerapan": "Untuk $a \\otimes b = a - b$, $(5 \\otimes 3) \\otimes 1 = 1$, sedangkan $5 \\otimes (3 \\otimes 1) = 3$, jadi **tidak asosiatif**.",
+              "jebakan_atau_catatan": "Komutatif belum tentu asosiatif. Uji dengan 3 angka kecil berbeda atau jabarkan aljabarnya.",
               "visual": null
             },
             {
-              "judul_poin": "Menentukan Elemen Identitas ($a \\otimes e = a$)",
-              "penjelasan_singkat": "Elemen identitas $e$ adalah konstanta tunggal (bebas dari variabel $a$) yang memenuhi $a \\otimes e = e \\otimes a = a$.",
+              "judul_poin": "Mencari Elemen Identitas ($a \\otimes e = a$)",
+              "penjelasan_singkat": "Identitas ($e$) adalah satu angka tetap (tanpa huruf $a$) yang membuat $a \\otimes e = e \\otimes a = a$.",
               "contoh_penerapan": "Jika $a \\otimes b = a + b - 4$, selesaikan $a + e - 4 = a \\rightarrow$ **$e = 4$**.",
-              "jebakan_atau_catatan": "Jika hasil $e$ masih memuat variabel $a$ (misal $e = \\frac{a}{2}$), maka operasi tidak memiliki identitas.",
+              "jebakan_atau_catatan": "Jika hasil $e$ masih mengandung huruf $a$ (misalnya $e = \\frac{a}{2}$), berarti tidak punya identitas.",
               "visual": null
             },
             {
-              "judul_poin": "Menentukan Elemen Invers ($a \\otimes a^{-1} = e$)",
-              "penjelasan_singkat": "Cari elemen identitas $e$ terlebih dahulu, lalu selesaikan persamaan $a \\otimes x = e$ untuk menyatakan $x$ dalam $a$.",
+              "judul_poin": "Mencari Elemen Invers ($a \\otimes a^{-1} = e$)",
+              "penjelasan_singkat": "Cari dulu nilai identitas $e$, lalu selesaikan $a \\otimes x = e$ untuk mendapatkan rumus invers $x$.",
               "contoh_penerapan": "Pada $a \\otimes b = a + b - 4$ dengan $e = 4$, selesaikan $a + x - 4 = 4 \\rightarrow$ **$x = 8 - a$**.",
-              "jebakan_atau_catatan": "Peserta sering menyamakan $a \\otimes x = 0$ atau $1$; nilai ruas kanan wajib elemen identitas $e$.",
+              "jebakan_atau_catatan": "Jangan otomatis menyamakan dengan $0$ atau $1$; ruas kanan wajib diisi nilai identitas $e$.",
               "visual": null
             }
           ]
@@ -145,38 +145,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Operasi Biner Simbol Tunggal ($a \\otimes b = 2a - b^2 + ab$) dengan Evaluasi Berurutan atau Bersarang",
+      "nama_variasi": "Operasi Simbol Tunggal ($a \\otimes b = 2a - b^2 + ab$) Bersarang",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Diketahui operasi $\\otimes$ pada himpunan bilangan real didefinisikan sebagai $a \\otimes b = 2a - b^2 + ab$. Tentukan nilai dari $(-1) \\otimes (3 \\otimes 2)$.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nEvaluasi operasi bersarang dilakukan bertahap dari kurung terdalam ke luar dengan menjaga urutan posisi variabel depan ($a$) dan belakang ($b$).\n* **Tahap 1 (Dalam Kurung):** Hitung $3 \\otimes 2$ dengan substitusi $a = 3$ dan $b = 2$ ke aturan $2a - b^2 + ab$, menghasilkan $2(3) - 2^2 + (3)(2) = 6 - 4 + 6 = 8$.\n* **Tahap 2 (Operasi Luar):** Substitusi hasil sebelumnya sehingga menjadi $(-1) \\otimes 8$, dengan $a = -1$ dan $b = 8$. Diperoleh $2(-1) - 8^2 + (-1)(8) = -2 - 64 - 8 = -74$.\n\n**2. Jalur Taktis UTBK**\nGunakan metode *pemfaktoran parsial* untuk mempercepat hitungan tanpa rawan salah tanda: tulis ulang $2a - b^2 + ab = a(2 + b) - b^2$. Pada $3 \\otimes 2$, langsung hitung $3(4) - 4 = 8$. Pada $(-1) \\otimes 8$, langsung hitung $(-1)(10) - 64 = -74$. Selalu kurung bilangan negatif sebelum dikuadratkan.",
-      "kunci_pembeda": "Variasi ini hanya memiliki satu rumus tunggal tanpa syarat percabangan, sehingga fokus utamanya adalah ketelitian urutan kurung dan tanda negatif.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nKarena ada tanda kurung, kita wajib menyelesaikan bagian dalam dulu baru naik ke bagian luar. Jangan lupa jaga posisi angka kiri ($a$) dan kanan ($b$).\n* **Langkah 1 (Bereskan Dalam Kurung):** Hitung $3 \\otimes 2$ dengan $a = 3$ dan $b = 2$. Masukkan ke rumus $2a - b^2 + ab$: $2(3) - 2^2 + (3)(2) = 6 - 4 + 6 = 8$.\n* **Langkah 2 (Hitung Bagian Luar):** Ganti hasil kurung tadi sehingga menjadi $(-1) \\otimes 8$. Sekarang $a = -1$ dan $b = 8$, maka $2(-1) - 8^2 + (-1)(8) = -2 - 64 - 8 = -74$.\n\n**2. Jalur Taktis UTBK**\nBiar hitungan lebih cepat dan minim salah tanda, rapikan rumusnya dulu dengan memfaktorkan $a$: $2a - b^2 + ab = a(2 + b) - b^2$.\n* Untuk $3 \\otimes 2$: langsung hitung $3(4) - 4 = 8$.\n* Untuk $(-1) \\otimes 8$: langsung hitung $(-1)(10) - 64 = -74$.\nSelalu beri tanda kurung tiap kali memasukkan angka negatif.",
+      "kunci_pembeda": "Hanya ada satu rumus tanpa syarat percabangan, jadi fokus utamamu adalah urutan kurung dan ketelitian tanda negatif.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Operasi Simbol Bersyarat (Aturan Berbeda Jika $a > b$ vs $a \\le b$ atau Ganjil vs Genap)",
+      "nama_variasi": "Operasi Simbol Bercabang (Syarat $a > b$ vs $a \\le b$ atau Ganjil vs Genap)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Operasi $\\triangle$ pada bilangan bulat didefinisikan sebagai $a \\triangle b = a^2 - b$ jika $a + b$ ganjil, dan $a \\triangle b = 2a + b$ jika $a + b$ genap. Hitung nilai $(4 \\triangle 1) \\triangle 3$.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nOperasi bersyarat bekerja layaknya fungsi sepotong-sepotong (*piecewise function*) yang mengharuskan pengujian syarat domain sebelum memilih rumus eksekusi.\n* **Langkah 1 (Cek Kurung):** Pada $4 \\triangle 1$, jumlahkan $a + b = 4 + 1 = 5$ (bilangan ganjil). Karena syarat pertama terpenuhi, gunakan rumus $a^2 - b$, sehingga $4^2 - 1 = 15$.\n* **Langkah 2 (Cek Ulang Syarat):** Hasil $15$ menjadi input baru pada $15 \\triangle 3$. Uji kembali syaratnya: $15 + 3 = 18$ (bilangan genap). Gunakan rumus kedua $2a + b$, diperoleh $2(15) + 3 = 33$.\n\n**2. Jalur Taktis UTBK**\nJangan langsung menghitung angka sebelum memberi tanda centang pada syarat yang aktif. Untuk soal paritas (ganjil/genap), gunakan sifat cepat: ganjil + genap = ganjil ($4+1$), sedangkan ganjil + ganjil = genap ($15+3$). Taktik ini mencegah kesalahan fatal akibat memakai satu rumus yang sama secara berulang.",
-      "kunci_pembeda": "Variasi ini mewajibkan pengecekan kondisi relasi atau paritas pada setiap tahapan operasi karena rumus yang dipakai dapat berubah di tengah perhitungan.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDi soal bercabang, kita tidak bisa langsung menghitung sebelum mengecek syaratnya dulu. Syarat harus dicek ulang di setiap langkah.\n* **Langkah 1 (Cek Kurung Dulu):** Pada $4 \\triangle 1$, jumlahkan $4 + 1 = 5$ (ganjil). Karena ganjil, pakai rumus pertama $a^2 - b$. Hasilnya $4^2 - 1 = 15$.\n* **Langkah 2 (Cek Syarat Lagi):** Sekarang kita hitung $15 \\triangle 3$. Cek jumlahnya: $15 + 3 = 18$ (genap). Rumus berubah! Pakai rumus kedua $2a + b$, hasilnya $2(15) + 3 = 33$.\n\n**2. Jalur Taktis UTBK**\nKamu tidak perlu selalu menjumlahkan angkanya kalau besar—cukup ingat aturan cepat ganjil/genap: **genap + ganjil = ganjil** ($4 + 1$), sedangkan **ganjil + ganjil = genap** ($15 + 3$). Kebiasaan mengecek syarat di tiap tahap mencegahmu memakai rumus pertama secara berulang.",
+      "kunci_pembeda": "Rumus bisa berganti di tengah jalan, sehingga kamu wajib mengecek syarat di setiap tahapan operasi.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Mencari Nilai Variabel $x$ dari Persamaan yang Melibatkan Simbol Operasi Khusus ($x \\star 3 = 15$)",
+      "nama_variasi": "Mencari Nilai Variabel $x$ dari Persamaan Simbol ($x \\star 3 = 18$)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Diketahui operasi $\\star$ didefinisikan sebagai $a \\star b = 3a - 2b + ab$. Jika $x \\star 3 = 18$, tentukan nilai $x$ yang memenuhi.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nVariasi ini membalik alur evaluasi menjadi persamaan aljabar biasa dengan menjadikan salah satu input operasi sebagai variabel yang dicari.\n* **Langkah 1 (Translasi Simbol):** Ubah bentuk $x \\star 3$ ke definisi aljabar dengan memetakan $a = x$ dan $b = 3$, sehingga diperoleh $3(x) - 2(3) + (x)(3) = 3x - 6 + 3x = 6x - 6$.\n* **Langkah 2 (Penyelesaian Persamaan):** Samakan hasil penjabaran dengan ruas kanan persamaan: $6x - 6 = 18$, lalu selesaikan secara linear menjadi $6x = 24$, sehingga didapat $x = 4$.\n\n**2. Jalur Taktis UTBK**\nJika soal berbentuk pilihan ganda dan menjabarkan simbol menghasilkan persamaan kuadrat ($ax^2 + bx + c = 0$), manfaatkan strategi *back-solving* (uji opsi jawaban langsung ke definisi simbol) atau rumus jumlah akar $x_1 + x_2 = -\\frac{b}{a}$ bila yang ditanyakan adalah jumlah semua nilai $x$ yang memenuhi.",
-      "kunci_pembeda": "Variasi ini membalik proses dari sekadar menghitung output menjadi menyelesaikan persamaan linear atau kuadrat untuk menemukan nilai input awal.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nDi sini hasilnya sudah dikasih tahu, tapi angka depannya masih berupa huruf $x$. Tugas kita cuma menerjemahkan simbolnya menjadi persamaan aljabar biasa.\n* **Langkah 1 (Ubah ke Aljabar):** Pada $x \\star 3$, posisinya adalah $a = x$ dan $b = 3$. Masukkan ke rumus $3a - 2b + ab$: $3(x) - 2(3) + (x)(3) = 3x - 6 + 3x = 6x - 6$.\n* **Langkah 2 (Cari Nilai $x$):** Samakan dengan angka di ruas kanan: $6x - 6 = 18$. Pindahkan $-6$ ke kanan menjadi $6x = 24$, sehingga didapat $x = 4$.\n\n**2. Jalur Taktis UTBK**\nKalau soalnya pilihan ganda dan penjabarannya menghasilkan persamaan kuadrat ($ax^2 + bx + c = 0$), kamu bisa langsung uji opsi ke simbolnya. Kalau yang ditanya *jumlah semua nilai $x$*, pakai saja rumus cepat $x_1 + x_2 = -\\frac{b}{a}$ tanpa perlu memfaktorkan.",
+      "kunci_pembeda": "Alurnya dibalik: bukan mencari hasil akhir, melainkan mencari angka input ($x$) lewat persamaan linear atau kuadrat.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Pengujian Sifat Komutatif, Asosiatif, dan Elemen Identitas pada Operasi Simbol Baru",
+      "nama_variasi": "Uji Sifat Komutatif, Asosiatif, dan Elemen Identitas",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Operasi $\\odot$ didefinisikan sebagai $a \\odot b = a + b - 4$. Tentukan elemen identitas $e$ terhadap operasi $\\odot$ pada himpunan bilangan real.",
-      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nPengujian sifat struktur aljabar menuntut pembuktian kesamaan identitas untuk seluruh nilai variabel pada domain yang ditentukan.\n* **Uji Komutatif ($a \\odot b = b \\odot a$):** $a + b - 4$ bernilai sama dengan $b + a - 4$ untuk setiap bilangan real, sehingga operasi bersifat komutatif.\n* **Uji Elemen Identitas ($a \\odot e = a$):** Substitusi $b = e$ ke definisi menghasilkan $a + e - 4 = a$, sehingga diperoleh elemen identitas tunggal $e = 4$ (terbukti pula $4 \\odot a = a$).\n\n**2. Jalur Taktis UTBK**\nUntuk menggugurkan pernyataan sifat komutatif atau asosiatif pada soal Pernyataan (1)-(2)-(3)-(4), cukup temukan **satu contoh penyangkal** (*counterexample*) menggunakan angka kecil seperti $0, 1, 2$. Jika ditemukan satu saja kasus di mana $a \\odot b \\neq b \\odot a$, maka sifat tersebut langsung dinyatakan salah.",
-      "kunci_pembeda": "Variasi ini tidak meminta nilai numerik hasil operasi, melainkan menguji keberlakuan hukum struktur aljabar (komutatif, asosiatif, atau identitas) secara umum.",
+      "bedah_pola_markdown": "**1. Jalur Konsep Dasar**\nElemen identitas ($e$) adalah angka \"netral\" yang tidak mengubah nilai $a$ saat dioperasikan, yaitu $a \\odot e = a$ dan $e \\odot a = a$.\n* **Cek Komutatif Dulu:** Karena $a + b - 4 = b + a - 4$, operasi ini bersifat komutatif. Jadi kalau $a \\odot e = a$ terpenuhi, otomatis $e \\odot a = a$ juga benar.\n* **Cari Nilai $e$:** Masukkan $b = e$ ke rumus: $a + e - 4 = a$. Coret $a$ di kedua ruas, tersisa $e - 4 = 0$, sehingga didapat identitas tunggal $e = 4$.\n\n**2. Jalur Taktis UTBK**\nDi soal Pernyataan (1)-(2)-(3)-(4), cara tercepat menggugurkan sifat komutatif atau asosiatif adalah mengetes dengan **angka kecil** seperti $0, 1, 2$. Kalau ketemu satu saja pasangan yang hasilnya beda ($a \\odot b \\neq b \\odot a$), pernyataan itu langsung salah.",
+      "kunci_pembeda": "Bukan menghitung angka hasil operasi, melainkan menguji hukum aljabar (komutatif, asosiatif, atau identitas) yang berlaku untuk semua bilangan.",
       "visual": null
     }
   ],
@@ -198,7 +198,7 @@
         "E. SEMUA pilihan benar."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "* **Pernyataan (1) Benar:** Hitung dalam kurung dahulu: $2 \\oplus 4 = 2(4-1)+2 = 8$, lalu $3 \\oplus 8 = 3(8-1)+2 = 23$.\n* **Pernyataan (2) Salah:** Contoh penyangkal $2 \\oplus 4 = 8$, sedangkan $4 \\oplus 2 = 4(2-1)+2 = 6$.\n* **Pernyataan (3) Benar:** $x(5-1)+2 = 22 \\implies 4x = 20 \\implies x = 5$.\n* **Pernyataan (4) Salah:** $a \\oplus 2 = a(1)+2 = a+2 \\neq a$.\n\nJadi, hanya pernyataan (1) dan (3) yang benar.",
+      "bedah_cepat_markdown": "Cek satu per satu mulai dari yang paling cepat dihitung:\n\n* **Pernyataan (1) Benar:** Bereskan dalam kurung dulu: $2 \\oplus 4 = 2(4 - 1) + 2 = 8$. Lanjut bagian luar: $3 \\oplus 8 = 3(8 - 1) + 2 = 23$.\n* **Pernyataan (2) Salah:** Cukup tes balik angka dari langkah (1). Tadi $2 \\oplus 4 = 8$, sedangkan $4 \\oplus 2 = 4(2 - 1) + 2 = 6$. Karena $8 \\neq 6$, operasi ini tidak komutatif.\n* **Pernyataan (3) Benar:** Masukkan $a = x$ dan $b = 5$: $x(5 - 1) + 2 = 22 \\implies 4x = 20 \\implies x = 5$.\n* **Pernyataan (4) Salah:** Coba masukkan $b = 2$: $a \\oplus 2 = a(2 - 1) + 2 = a + 2$. Hasilnya bukan $a$, jadi $2$ bukan elemen identitas.\n\nJadi, hanya pernyataan (1) dan (3) yang benar.",
       "visual": null
     },
     {
@@ -217,7 +217,7 @@
         "E. Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "* **Analisis (1):** Jika $x > 3$, maka $x^2 - 3 = 13 \\implies x = 4$ (memenuhi $x > 3$, sedangkan $x = -4$ gugur). Jika $x \\le 3$, maka $2x + 3 = 13 \\implies x = 5$ (gugur karena $5 > 3$). Nilai tunggal $x = 4$ diperoleh, sehingga **(1) cukup**.\n* **Analisis (2):** Jika $3 > x$, maka $9 - x = 13 \\implies x = -4$ (memenuhi). Jika $3 \\le x$, maka $6 + x = 13 \\implies x = 7$ (memenuhi). Ada dua nilai $x$, sehingga **(2) tidak cukup**.",
+      "bedah_cepat_markdown": "Karena rumusnya bercabang, kita wajib mengecek **kedua kemungkinan syarat** pada masing-masing pernyataan, lalu buang nilai $x$ yang melanggar syarat.\n\n* **Cek Pernyataan (1): $x \\blacktriangle 3 = 13$**\n  * Jika $x > 3$: $x^2 - 3 = 13 \\implies x^2 = 16 \\implies x = 4$ atau $x = -4$. Yang memenuhi $x > 3$ hanya $x = 4$ ($-4$ gugur).\n  * Jika $x \\le 3$: $2x + 3 = 13 \\implies 2x = 10 \\implies x = 5$. Nilai ini gugur karena $5$ tidak kurang dari atau sama dengan $3$.\n  * Hanya tersisa satu nilai pasti, yaitu $x = 4$. Jadi, **(1) SAJA cukup**.\n\n* **Cek Pernyataan (2): $3 \\blacktriangle x = 13$**\n  * Jika $3 > x$: $3^2 - x = 13 \\implies 9 - x = 13 \\implies x = -4$. Karena $3 > -4$ benar, $x = -4$ lolos.\n  * Jika $3 \\le x$: $2(3) + x = 13 \\implies 6 + x = 13 \\implies x = 7$. Karena $3 \\le 7$ benar, $x = 7$ juga lolos.\n  * Ada dua nilai $x$ yang memenuhi ($-4$ dan $7$), sehingga nilainya tidak tunggal. Jadi, **(2) SAJA tidak cukup**.",
       "visual": null
     },
     {
@@ -230,7 +230,7 @@
       "pertanyaan_markdown": "Operasi $\\star$ pada himpunan bilangan bulat didefinisikan sebagai $a \\star b = ab - a + b$. Jika bilangan bulat positif $k$ memenuhi persamaan $(k \\star 2) \\star 3 = 35$, berapakah nilai $k$?",
       "opsi_jawaban": [],
       "kunci_jawaban": "14",
-      "bedah_cepat_markdown": "Selesaikan operasi bersarang dari dalam kurung terlebih dahulu menggunakan aturan $a \\star b = ab - a + b$:\n\n1. **Kurung dalam:** $k \\star 2 = k(2) - k + 2 = k + 2$.\n2. **Kurung luar:** $(k + 2) \\star 3 = 3(k + 2) - (k + 2) + 3 = 3k + 6 - k - 2 + 3 = 2k + 7$.\n3. **Substitusi persamaan:** $2k + 7 = 35 \\implies 2k = 28 \\implies k = 14$.",
+      "bedah_cepat_markdown": "Kerjakan dari dalam kurung dulu agar bentuk aljabarnya langsung ringkas:\n\n1. **Selesaikan kurung dalam ($k \\star 2$):** Masukkan $a = k$ dan $b = 2$ ke $ab - a + b$, didapat $k(2) - k + 2 = k + 2$.\n2. **Lanjut ke kurung luar ($(k + 2) \\star 3$):** Sekarang $a = k + 2$ dan $b = 3$. Masukkan lagi ke rumus: $3(k + 2) - (k + 2) + 3 = 3k + 6 - k - 2 + 3 = 2k + 7$.\n3. **Cari nilai $k$:** Samakan dengan $35$: $2k + 7 = 35 \\implies 2k = 28 \\implies k = 14$.\n\nCek cepat: $14 \\star 2 = 28 - 14 + 2 = 16$, lalu $16 \\star 3 = 48 - 16 + 3 = 35$ (cocok!).",
       "visual": null
     }
   ]

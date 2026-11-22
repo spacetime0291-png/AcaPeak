@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sedang",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam kalimat 'Tim peneliti memanen pujian setelah merilis aplikasi deteksi dini gempa', apakah kata 'memanen' bermakna memetik hasil tanaman padi di sawah?",
+      "pertanyaan_pemantik": "Dalam kalimat 'Tim peneliti memanen pujian setelah merilis aplikasi deteksi dini gempa', apakah kata 'memanen' masih berarti memetik padi di sawah?",
       "opsi_cepat": [
         "Ya, sesuai arti awal kata dasarnya",
-        "Tidak, cakupannya meluas menjadi memperoleh hasil nonfisik"
+        "Tidak, artinya meluas menjadi memperoleh hasil nonfisik"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Dalam wacana modern UTBK, makna kata kerap bergeser dari arti awal yang sempit menjadi lebih luas atau berubah nilai rasanya. Peserta yang terpaku pada arti dasar lama akan keliru menafsirkan nuansa kalimat."
+      "penjelasan_kilat": "Di bacaan UTBK, arti sebuah kata sering bergeser dari makna awalnya yang sempit ke ranah baru. Kalau kamu cuma terpaku pada arti kamus yang kaku, kamu bakal salah menangkap maksud kalimat."
     },
-    "konsep_inti_markdown": "**Pergeseran makna dan nilai rasa** menguji ketepatan menafsirkan evolusi arti kata dalam wacana baku KBBI VI:\n\n* **Perluasan & Penyempitan:** Cakupan arti kata melebar ke ranah baru (*berlayar*, *memanen*) atau menyempit menjadi khusus (*sarjana*, *madrasah*).\n* **Nilai Rasa Kata:** Pilihan kata berkonotasi positif/halus (*tunanetra*, *pramuniaga*) berlawanan dengan nuansa negatif/kasar (*pengangguran*, *oknum*).\n* **Kias Lintas Indra:** Pertukaran tanggapan dua indra berbeda dalam satu frasa (*suara lembut*, *kritik pedas*).",
+    "konsep_inti_markdown": "**Pergeseran makna dan nilai rasa** menguji kepekaan kamu membaca perubahan arti kata sesuai konteks bacaan dan KBBI VI:\n\n* **Perluasan & Penyempitan Makna:** Cakupan arti kata bisa melebar ke hal baru (*berlayar*, *memanen*) atau mengerucut jadi khusus (*sarjana*, *madrasah*).\n* **Nilai Rasa Kata:** Pilihan kata bernuansa halus dan sopan (*tunanetra*, *pramuniaga*) kontras dengan kata bernuansa kasar atau negatif (*pengangguran*, *oknum*).\n* **Kias Lintas Indra:** Dua tanggapan indra berbeda digabung dalam satu frasa untuk efek kias (*suara lembut*, *kritik pedas*).",
     "radar_jebakan_utbk": [
-      "Menyamakan dua kalimat hanya karena memakai kata yang sama, padahal kalimat pertama bermakna lugas fisik dan kalimat kedua mengalami perluasan makna abstrak.",
-      "Memilih kata pengganti yang bersinonim secara kamus, tetapi merusak kesantunan atau nilai rasa objektif teks jurnalistik maupun akademik."
+      "Menganggap dua kalimat punya pola makna sama cuma karena memakai kata yang persis, padahal satu bermakna fisik dan satunya lagi bermakna kias abstrak.",
+      "Memilih kata pengganti yang bersinonim di kamus, tetapi merusak kesantunan dan netralitas berita atau artikel ilmiah."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Katalog Lengkap Pergeseran Makna dan Nilai Rasa Kata",
-      "subjudul_ringkas": "Klasifikasi kaidah perubahan cakupan makna, nilai rasa, dan kias lintas indra berdasarkan KBBI VI.",
+      "judul_blok": "Peta Lengkap Pergeseran Makna dan Nilai Rasa Kata",
+      "subjudul_ringkas": "Panduan cepat mengenali perubahan cakupan makna, nilai rasa, dan kias lintas indra berdasarkan EYD V dan KBBI VI.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -35,78 +35,78 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Pergeseran Cakupan dan Asosiasi Makna",
-          "ringkasan_kelompok": "Perubahan luas jangkauan arti kata dari makna asal ke pemakaian modern.",
+          "nama_kelompok": "Perubahan Cakupan dan Asosiasi Makna",
+          "ringkasan_kelompok": "Bagaimana jangkauan arti sebuah kata melebar, mengerucut, atau berpindah karena kemiripan sifat.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Generalisasi (Perluasan Cakupan Makna)",
-              "penjelasan_singkat": "Cakupan makna kata saat ini menjadi lebih luas daripada makna asalnya yang sempit.",
-              "contoh_penerapan": "Kapal pesiar mewah itu mulai **berlayar** menggunakan mesin diesel tanpa bentangan layar kain.",
-              "jebakan_atau_catatan": "Salah jika menganggap makna baru menghilangkan makna lama; makna asal tetap berlaku di KBBI.",
+              "judul_poin": "Perluasan Makna (Cakupan Arti Melebar)",
+              "penjelasan_singkat": "Arti kata saat ini mencakup hal-hal yang jauh lebih luas dibandingkan makna asalnya yang sempit.",
+              "contoh_penerapan": "Kapal pesiar ramah lingkungan itu mulai **berlayar** menggunakan mesin hidrogen tanpa bentangan layar kain.",
+              "jebakan_atau_catatan": "Jebakan UTBK: Mengira arti baru menghapus arti lama. Padahal, makna asal di KBBI tetap berlaku sesuai konteksnya.",
               "visual": null
             },
             {
-              "judul_poin": "Spesialisasi (Penyempitan Cakupan Makna)",
-              "penjelasan_singkat": "Cakupan makna kata menyempit dari arti umum menjadi khusus pada bidang tertentu.",
-              "contoh_penerapan": "Setiap lulusan perguruan tinggi berhak menyandang gelar **sarjana** sesuai disiplin ilmu masing-masing.",
-              "jebakan_atau_catatan": "Jebakan UTBK: kata sarjana dahulu bermakna semua orang pandai, kini menyempit khusus lulusan S-1.",
+              "judul_poin": "Penyempitan Makna (Cakupan Arti Mengerucut)",
+              "penjelasan_singkat": "Arti kata yang dulunya umum kini menyempit dan hanya dipakai untuk bidang atau profesi tertentu.",
+              "contoh_penerapan": "Sebanyak 420 lulusan fakultas teknik resmi menyandang gelar **sarjana** dalam prosesi wisuda hari ini.",
+              "jebakan_atau_catatan": "Jebakan UTBK: Kata *sarjana* dulu berarti semua orang pandai, tetapi kini menyempit khusus untuk lulusan S-1.",
               "visual": null
             },
             {
-              "judul_poin": "Asosiasi (Pergeseran Karena Persamaan Sifat)",
-              "penjelasan_singkat": "Perubahan makna akibat persamaan sifat atau kemiripan fungsi antara objek asal dan objek baru.",
-              "contoh_penerapan": "Pejabat itu ditangkap karena menerima **amplop** tebal dari kontraktor proyek jalan tol.",
-              "jebakan_atau_catatan": "Jangan tertukar dengan metafora biasa; asosiasi menggeser makna leksikal kata secara mapan di masyarakat.",
+              "judul_poin": "Asosiasi Makna (Pergeseran Karena Kemiripan Sifat)",
+              "penjelasan_singkat": "Kata dipinjam untuk menyebut hal lain karena punya kemiripan sifat, bentuk, atau fungsi.",
+              "contoh_penerapan": "Pejabat dinas itu terjaring operasi tangkap tangan karena menerima **amplop** tebal dari kontraktor proyek.",
+              "jebakan_atau_catatan": "Hati-hati: Di berita korupsi, *amplop* bukan lagi sekadar pembungkus surat, melainkan berasosiasi dengan uang suap.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Perubahan Nilai Rasa dan Nuansa Kata",
-          "ringkasan_kelompok": "Pergeseran nilai rasa kata menjadi lebih halus atau lebih kasar dalam konteks.",
+          "nama_kelompok": "Perubahan Nilai Rasa dan Kesantunan Kata",
+          "ringkasan_kelompok": "Bagaimana pilihan kata mengubah kesan kalimat menjadi lebih halus, netral, atau justru menyudutkan.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Ameliorasi (Peninggian Nilai Rasa)",
-              "penjelasan_singkat": "Pergeseran makna yang membuat kata baru terasa lebih halus, sopan, dan terhormat.",
-              "contoh_penerapan": "Perpustakaan daerah menyediakan koleksi buku huruf Braille khusus bagi pengunjung **tunanetra**.",
-              "jebakan_atau_catatan": "Bentuk salah: memakai kata buta dalam wacana resmi ketika konteks menuntut penghalusan makna.",
+              "judul_poin": "Penghalusan Nilai Rasa (Nuansa Lebih Sopan)",
+              "penjelasan_singkat": "Pemilihan kata baru yang terasa lebih halus, sopan, dan menghormati martabat manusia.",
+              "contoh_penerapan": "Perpustakaan nasional menyediakan koleksi buku berhuruf Braille khusus bagi pemustaka **tunanetra**.",
+              "jebakan_atau_catatan": "Bentuk salah: Memakai kata *buta* dalam berita resmi saat konteks menuntut penghalusan bahasa.",
               "visual": null
             },
             {
-              "judul_poin": "Peyorasi (Penurunan Nilai Rasa)",
-              "penjelasan_singkat": "Pergeseran makna yang membuat kata terasa lebih kasar, merendahkan, atau bernilai negatif.",
-              "contoh_penerapan": "Tindakan **oknum** aparat yang menyalahgunakan wewenang telah mencoreng nama baik institusi negara.",
-              "jebakan_atau_catatan": "Jebakan: kata oknum awalnya netral bermakna individu, namun kini berkonotasi negatif sebagai pelaku pelanggaran.",
+              "judul_poin": "Penurunan Nilai Rasa (Nuansa Lebih Kasar)",
+              "penjelasan_singkat": "Pergeseran rasa kata yang membuatnya terdengar kasar, merendahkan, atau bernuansa negatif.",
+              "contoh_penerapan": "Tindakan **oknum** aparat yang menyalahgunakan wewenang langsung mencoreng citra lembaga penegak hukum.",
+              "jebakan_atau_catatan": "Jebakan UTBK: Kata *oknum* awalnya netral (berarti individu atau seseorang), tetapi kini melekat pada pelaku pelanggaran.",
               "visual": null
             },
             {
-              "judul_poin": "Konotasi Kontekstual dalam Wacana Publik",
-              "penjelasan_singkat": "Nilai rasa positif atau negatif suatu kata ditentukan oleh keseluruhan konteks kalimatnya.",
-              "contoh_penerapan": "Kenaikan harga pangan memicu **gelombang** protes mahasiswa di depan gedung parlemen.",
-              "jebakan_atau_catatan": "Jangan menilai konotasi kata secara terpisah; kata sama bisa bernuansa positif atau negatif tergantung konteks.",
+              "judul_poin": "Nuansa Kontekstual dalam Berita dan Artikel",
+              "penjelasan_singkat": "Positif atau negatifnya rasa sebuah kata sangat bergantung pada kalimat yang membungkusnya.",
+              "contoh_penerapan": "Lonjakan harga beras memicu **gelombang** protes mahasiswa di depan gedung DPR sejak pagi.",
+              "jebakan_atau_catatan": "Jangan menilai rasa kata secara terpisah. Kata *gelombang* bisa positif (*gelombang dukungan*) atau negatif (*gelombang PHK*).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pergeseran Makna Kias Lintas Indra (Sinestesia)",
-          "ringkasan_kelompok": "Pertukaran tanggapan antara dua indra berbeda dalam satu gabungan kata.",
+          "nama_kelompok": "Kias Lintas Indra (Pertukaran Tanggapan Indra)",
+          "ringkasan_kelompok": "Perpaduan dua alat indra berbeda dalam satu frasa untuk menghidupkan gambaran.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Sinestesia Pendengaran ke Pengecap atau Peraba",
-              "penjelasan_singkat": "Objek tanggapan indra pendengaran dijelaskan menggunakan kata sifat milik indra pengecap atau peraba.",
-              "contoh_penerapan": "Pengamat kebijakan publik itu melontarkan **kritik pedas** terhadap lambannya penanganan inflasi daerah.",
-              "jebakan_atau_catatan": "Bentuk salah: menafsirkan kata pedas secara harfiah sebagai rasa cabai, bukan ketajaman makna kritik.",
+              "judul_poin": "Indra Pendengaran Dipadukan dengan Pengecap atau Peraba",
+              "penjelasan_singkat": "Sesuatu yang didengar telinga dijelaskan memakai kata sifat milik lidah atau kulit.",
+              "contoh_penerapan": "Ekonom senior itu melontarkan **kritik pedas** terhadap lambannya pengendalian inflasi daerah.",
+              "jebakan_atau_catatan": "Bentuk salah: Mengartikan *pedas* secara harfiah seperti rasa cabai, padahal maksudnya kecaman yang tajam.",
               "visual": null
             },
             {
-              "judul_poin": "Sinestesia Penglihatan ke Pengecap atau Peraba",
-              "penjelasan_singkat": "Objek tanggapan indra penglihatan dipadukan dengan kata sifat dari indra pengecap atau peraba.",
-              "contoh_penerapan": "Ia menyambut tamu undangan dengan **senyum manis** meski suasana rapat berlangsung tegang.",
-              "jebakan_atau_catatan": "Jebakan UTBK: membedakan sinestesia dari personifikasi; sinestesia wajib melibatkan dua indra manusia berbeda.",
+              "judul_poin": "Indra Penglihatan Dipadukan dengan Pengecap atau Peraba",
+              "penjelasan_singkat": "Sesuatu yang dilihat mata dipadukan dengan kata sifat dari indra pengecap atau peraba.",
+              "contoh_penerapan": "Menteri keuangan menyapa wartawan dengan **senyum manis** meski rapat anggaran berlangsung alot.",
+              "jebakan_atau_catatan": "Jebakan UTBK: Kias lintas indra wajib menggabungkan dua indra berbeda, bukan menghidupkan benda mati.",
               "visual": null
             }
           ]
@@ -117,38 +117,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Identifikasi Perluasan atau Penyempitan Cakupan Makna Kata dalam Kalimat Modern",
+      "nama_variasi": "Mendeteksi Perluasan atau Penyempitan Makna dalam Kalimat Modern",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Otoritas pelabuhan melaporkan bahwa kapal kargo berbahan bakar ramah lingkungan siap **berlayar** menuju kawasan timur, sementara para **sarjana** teknik perkapalan mengawasi uji coba mesinnya.",
-      "bedah_pola_markdown": "**Bedah Pola Cakupan & Fungsi:**\nPerhatikan struktur kalimat berikut: [S] *kapal kargo ramah lingkungan* + [P] *siap **berlayar*** + [K] *menuju kawasan timur*. Kata **berlayar** mengalami **perluasan makna** dari awalnya bergerak memakai layar menjadi perjalanan laut dengan tenaga mesin apa pun. Sebaliknya, pada klausa [S] *para **sarjana** teknik* + [P] *mengawasi* + [O] *uji coba*, kata **sarjana** mengalami **penyempitan makna** dari semula bermakna *orang pandai* menjadi khusus *lulusan perguruan tinggi* sesuai KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Kata **berlayar** diartikan *menggunakan layar kain* pada kapal mesin modern. | Kata **berlayar** bermakna *mengarungi lautan dengan sarana transportasi air*. |\n| Kata **ibu** pada *Ibu Kota Nusantara* diartikan *orang tua perempuan*. | Kata **ibu** meluas maknanya menjadi *bagian pokok atau pusat pemerintahan*. |\n\n**Strategi Eksekusi:** Bandingkan arti asal kata dasar dengan objek [O] atau keterangan [K] modern untuk menentukan apakah cakupannya melebar atau menyempit.",
-      "kunci_pembeda": "Membandingkan cakupan referensi kata masa kini terhadap makna asalnya untuk mendeteksi pelebaran atau penyempitan arti.",
+      "stimulus_mini": "Otoritas pelabuhan melaporkan kapal kargo berbahan bakar ramah lingkungan siap **berlayar** ke kawasan timur, sementara para **sarjana** teknik perkapalan mengawasi uji mesinnya.",
+      "bedah_pola_markdown": "**Cara Membongkar Polanya:**\nCoba pecah kalimat di atas jadi dua bagian inti agar terlihat perubahan artinya:\n1. **Klausa pertama:** *kapal kargo ramah lingkungan* (Subjek) + *siap **berlayar*** (Predikat) + *ke kawasan timur* (Keterangan). Di sini, kata **berlayar** mengalami **perluasan makna**. Dulunya berlayar hanya berarti bergerak memakai layar kain, sekarang meluas menjadi mengarungi laut dengan tenaga mesin apa pun.\n2. **Klausa kedua:** *para **sarjana** teknik* (Subjek) + *mengawasi* (Predikat) + *uji mesinnya* (Objek). Sebaliknya, kata **sarjana** mengalami **penyempitan makna**. Menurut KBBI VI, kata yang dulunya berarti *semua orang pandai* ini mengerucut khusus menjadi *lulusan perguruan tinggi*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Mengartikan **berlayar** pada kapal diesel sebagai *bergerak memakai layar kain*. | Mengartikan **berlayar** sebagai *melakukan perjalanan laut dengan sarana transportasi air*. |\n| Mengartikan **ibu** pada *Ibu Kota Nusantara* sebagai *orang tua perempuan*. | Memahami **ibu** meluas maknanya menjadi *bagian pokok atau pusat pemerintahan*. |\n\n**Taktik Cepat:** Bandingkan arti awal kata dasar dengan objek atau keterangan di sebelahnya. Jika cakupannya merambah hal baru, artinya meluas; jika mengerucut ke profesi atau bidang tertentu, artinya menyempit.",
+      "kunci_pembeda": "Membandingkan jangkauan arti kata dalam kalimat modern terhadap makna asalnya untuk melihat apakah cakupannya melebar atau menyempit.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Evaluasi Nilai Rasa Kata (Nuansa Halus/Positif vs Kasar/Negatif) dalam Wacana Publik",
+      "nama_variasi": "Menilai Kesantunan dan Nilai Rasa Kata dalam Teks Publik",
       "kategori_variasi": "Inti",
-      "stimulus_mini": "Kementerian Ketenagakerjaan menyalurkan pelatihan vokasi bagi kelompok **tunakarya** dan penyandang **disabilitas** agar terserap di sektor industri kreatif.",
-      "bedah_pola_markdown": "**Bedah Pola Nilai Rasa & Fungsi:**\nPerhatikan struktur kalimat berikut: [S] *Kementerian Ketenagakerjaan* + [P] *menyalurkan* + [O] *pelatihan vokasi* + [K] *bagi kelompok **tunakarya** dan penyandang **disabilitas***. Dalam wacana publik dan jurnalistik baku sesuai KBBI VI, pemilihan **tunakarya** (menggantikan *pengangguran*) serta **disabilitas** (menggantikan *cacat*) bertujuan menghadirkan **nilai rasa positif dan santun**. Sebaliknya, kata seperti **oknum** atau **gerombolan** membawa muatan nilai rasa negatif yang menyudutkan.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Perusahaan memberhentikan **buruh kasar** (*nuansa merendahkan*) secara sepihak. | Perusahaan memberhentikan **pekerja harian** (*nuansa netral dan baku*) secara sepihak. |\n| Pemerintah mendata warga **tuna wisma** (*penulisan terpisah salah*) di kota. | Pemerintah mendata warga **tunawisma** (*bentuk terikat baku EYD V*) di kota. |\n\n**Strategi Eksekusi:** Pilih diksi yang bernuansa objektif, santun, dan serangkai pada bentuk terikat (*tuna-*, *pasca-*, *non-*) sesuai kaidah EYD V.",
-      "kunci_pembeda": "Menilai muatan emosi dan kesantunan diksi dalam teks publik agar selaras dengan ragam formal serta kaidah penulisan baku.",
+      "stimulus_mini": "Kementerian Ketenagakerjaan menyalurkan pelatihan vokasi bagi kelompok **tunakarya** dan penyandang **disabilitas** agar siap terserap di sektor industri kreatif.",
+      "bedah_pola_markdown": "**Cara Membongkar Polanya:**\nLihat siapa subjek dan sasarannya: *Kementerian Ketenagakerjaan* (Subjek) + *menyalurkan* (Predikat) + *pelatihan vokasi* (Objek) + *bagi kelompok **tunakarya** dan penyandang **disabilitas*** (Keterangan). Dalam berita resmi, penulis wajib menjaga **nilai rasa kata** agar tetap sopan dan objektif. Kata **tunakarya** dipilih untuk menghaluskan kata *pengangguran*, sedangkan **disabilitas** menggantikan kata *cacat* yang bernuansa merendahkan. Sebaliknya, kata seperti **oknum** atau **gerombolan** sengaja dipakai media untuk memberi nuansa negatif pada pelaku pelanggaran.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Pabrik itu memecat **buruh kasar** (*nuansa merendahkan*) secara sepihak. | Pabrik itu memberhentikan **pekerja harian** (*nuansa netral dan baku*) secara sepihak. |\n| Dinas sosial mendata warga **tuna wisma** (*penulisan terpisah salah*) di ibu kota. | Dinas sosial mendata warga **tunawisma** (*bentuk terikat serangkai EYD V*) di ibu kota. |\n\n**Taktik Cepat:** Pilih kata yang santun dan netral untuk teks berita atau akademik, lalu pastikan bentuk terikat seperti *tuna-*, *pasca-*, dan *non-* ditulis serangkai sesuai EYD V.",
+      "kunci_pembeda": "Menilai muatan emosi dan kesantunan kata dalam bacaan formal agar sesuai dengan norma sosial dan kaidah ejaan EYD V.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Penafsiran Ungkapan Kias Lintas Indra dalam Bacaan Sastra maupun Populer",
+      "nama_variasi": "Menafsirkan Ungkapan Kias Lintas Indra dalam Ulasan Seni dan Sastra",
       "kategori_variasi": "Pengayaan",
-      "stimulus_mini": "Dalam ulasan pameran seni rupa kontemporer, kurator memuji **komposisi warna yang hangat** serta **narasi visual yang tajam** dalam menggambarkan krisis iklim.",
-      "bedah_pola_markdown": "**Bedah Pola Lintas Indra & Fungsi:**\nPerhatikan struktur frasa pada klausa berikut: [S] *kurator* + [P] *memuji* + [O] ***komposisi warna yang hangat*** serta ***narasi visual yang tajam***. Gabungan kata tersebut mempertukarkan dua tanggapan alat indra berbeda: *warna* dan *visual* (indra penglihatan) dipadukan dengan *hangat* (indra peraba) dan *tajam* (indra peraba/pengecap). Dalam konteks ulasan populer, *warna hangat* bermakna *nuansa warna cerah yang membangkitkan kesan akrab*, sedangkan *narasi tajam* bermakna *penyampaian gagasan yang kritis dan menusuk*.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Kritik **pedas** (*diartikan rasa cabai di lidah*) memicu perdebatan publik. | Kritik **pedas** (*bermakna kecaman keras dan menyakitkan hati*) memicu perdebatan publik. |\n| Penyanyi itu memiliki suara **bening** (*diartikan air jernih*) saat tampil. | Penyanyi itu memiliki suara **bening** (*bermakna merdu dan bersih didengar*) saat tampil. |\n\n**Strategi Eksekusi:** Identifikasi dua unsur indra yang bertukar dalam frasa, lalu terjemahkan sifat indra kedua menjadi kualitas abstrak yang relevan.",
-      "kunci_pembeda": "Menafsirkan makna kias yang terbentuk dari perpaduan dua tanggapan alat indra berbeda dalam satu frasa.",
+      "stimulus_mini": "Dalam ulasan pameran seni rupa kontemporer, kurator memuji **komposisi warna yang hangat** serta **narasi visual yang tajam** dalam memotret krisis iklim.",
+      "bedah_pola_markdown": "**Cara Membongkar Polanya:**\nPerhatikan objek yang dipuji kurator: ***komposisi warna yang hangat*** dan ***narasi visual yang tajam***. Coba bedah dua unsur indra yang bertukar di sana:\n1. **Warna** ditangkap oleh mata (penglihatan), tetapi dipadukan dengan kata **hangat** yang dirasakan kulit (peraba). Dalam konteks seni, *warna hangat* berarti nuansa warna cerah yang membangun kesan akrab.\n2. **Narasi visual** ditangkap mata (penglihatan), lalu dijelaskan memakai kata **tajam** milik indra peraba. Maksudnya adalah penyampaian pesan yang kritis dan menggugah.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Kritik **pedas** (*diartikan rasa cabai di lidah*) memicu perdebatan publik. | Kritik **pedas** (*diartikan kecaman keras yang menusuk*) memicu perdebatan publik. |\n| Penyanyi itu memiliki suara **bening** (*diartikan air jernih*) saat tampil. | Penyanyi itu memiliki suara **bening** (*diartikan merdu dan jernih didengar*) saat tampil. |\n\n**Taktik Cepat:** Temukan dua indra berbeda yang digabung dalam satu frasa, lalu terjemahkan sifat indra kedua menjadi kualitas abstrak yang nyambung dengan topik bacaan.",
+      "kunci_pembeda": "Menangkap makna kias yang lahir dari penggabungan dua tanggapan indra berbeda dalam satu frasa.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Pencarian Kalimat dengan Pergeseran Makna Kata yang Setara dengan Kalimat Stimulus",
+      "nama_variasi": "Mencari Kalimat dengan Pola Pergeseran Makna yang Sejajar",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "Komite etik akhirnya **memetik** pelajaran berharga dari polemik tata kelola riset yang sempat menghambat publikasi ilmiah nasional.",
-      "bedah_pola_markdown": "**Bedah Pola Kesetaraan Pergeseran:**\nAnalisis fungsi kalimat stimulus: [S] *Komite etik* + [P] ***memetik*** + [O] *pelajaran berharga* + [K] *dari polemik tata kelola*. Verba **memetik** di sini tidak bermakna harfiah mengambil buah dari tangkai, melainkan mengalami **perluasan makna abstrak** menjadi *memperoleh manfaat atau hikmah* karena diikuti objek nonfisik (*pelajaran*). Soal UTBK menuntut Anda mencari kalimat lain yang mengalami arah pergeseran abstrak yang sepola.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Disamakan dengan: *Petani **memetik** daun teh di lereng gunung* (*makna fisik*). | Sejajar dengan: *Perusahaan **memetik** keuntungan besar dari efisiensi* (*makna abstrak*). |\n| Disamakan dengan: *Gitaris **memetik** senar bass* (*tindakan fisik*). | Sejajar dengan: *Peneliti **menuai** apresiasi atas temuan vaksin* (*perolehan abstrak*). |\n\n**Strategi Eksekusi:** Klasifikasikan jenis objek [O] di belakang kata target (konkret vs abstrak), lalu cocokkan dengan opsi yang memiliki pergeseran ke ranah abstrak sejenis.",
-      "kunci_pembeda": "Mencocokkan arah pergeseran makna dari konkret ke abstrak (atau sebaliknya) antarkalimat melalui identifikasi jenis objek.",
+      "bedah_pola_markdown": "**Cara Membongkar Polanya:**\nKunci utama soal tipe ini ada pada objek di belakang kata kerja target. Mari kita bedah struktur kalimatnya: *Komite etik* (Subjek) + ***memetik*** (Predikat) + *pelajaran berharga* (Objek). Secara harfiah, *memetik* berarti mengambil buah atau daun dari tangkainya. Namun, karena objeknya berupa hal abstrak (*pelajaran berharga*), arti kata **memetik** bergeser menjadi *memperoleh manfaat atau hikmah*. Di UTBK, kamu diminta mencari opsi jawaban yang punya pergeseran serupa—yakni dari tindakan fisik menjadi perolehan nonfisik.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Disamakan dengan: *Petani **memetik** pucuk teh di lereng gunung* (*objek fisik*). | Sejajar dengan: *Perusahaan **memetik** keuntungan besar dari efisiensi* (*objek abstrak*). |\n| Disamakan dengan: *Pemusik **memetik** senar gitar* (*tindakan fisik*). | Sejajar dengan: *Peneliti **menuai** apresiasi atas temuan vaksin* (*perolehan abstrak*). |\n\n**Taktik Cepat:** Cek kata benda tepat di belakang kata target. Cocokkan jenis objeknya (benda fisik vs hal abstrak) dengan kelima pilihan jawaban.",
+      "kunci_pembeda": "Mencocokkan arah pergeseran makna dari konkret ke abstrak antarkalimat dengan mengecek jenis objek di belakang kata target.",
       "visual": null
     }
   ],
@@ -169,7 +169,7 @@
         "E. Mesin pemanen modern mempercepat petani dalam **menuai** bulir gandum di lahan pertanian luas."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Pada kalimat stimulus, verba **menuai** bergeser dari makna asalnya (memotong atau memanen hasil tanaman) menjadi makna yang lebih luas dan abstrak, yakni *memperoleh atau mendapatkan* hasil nonfisik berupa kepercayaan publik. Pergeseran makna menuju perolehan hal abstrak yang sepola terdapat pada **opsi B**, di mana kata **menuai** diikuti objek nonfisik *dukungan pendanaan*. Sebaliknya, **opsi A**, **C**, **D**, dan **E** seluruhnya mempertahankan makna dasar fisik berupa kegiatan memanen hasil bumi.",
+      "bedah_cepat_markdown": "Langkah pertama, cek objek tepat di belakang kata **menuai** pada kalimat soal. Di sana tertulis *kepercayaan publik*, yang merupakan hal abstrak (nonfisik). Artinya, kata **menuai** sudah bergeser dari arti asalnya (*memotong padi atau tanaman*) menjadi *memperoleh hasil nonfisik*.\n\nSekarang, kita cek jenis objek pada kelima pilihan jawaban:\n* **Opsi B** tepat karena kata **menuai** diikuti objek abstrak berupa *dukungan pendanaan* (bermakna mendapatkan sokongan dana).\n* **Opsi A, C, D, dan E** semuanya salah karena masih memakai arti fisik untuk kegiatan memanen hasil bumi (*hasil panen raya*, *pucuk daun*, *rumput laut*, dan *bulir gandum*).\n\nJadi, jawaban yang paling tepat adalah **B**.",
       "visual": null
     },
     {
@@ -178,16 +178,16 @@
         2
       ],
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
-      "pertanyaan_markdown": "Perhatikan kutipan teks berikut!\n\n> (1) Pemerintah kota berkomitmen menyediakan jalur pedestrian ramah pejalan kaki bagi kelompok **tuna netra** di seluruh kawasan pusat bisnis. (2) Kebijakan inklusif tersebut dirancang untuk menghapus **stigma** negatif yang selama ini membatasi ruang gerak warga berkebutuhan khusus.\n\nManakah evaluasi yang PALING TEPAT terkait ketepatan nilai rasa kata dan kaidah penulisan pada kutipan di atas?",
+      "pertanyaan_markdown": "Perhatikan kutipan teks berikut!\n\n> (1) Pemerintah kota berkomitmen menyediakan fasilitas pemandu jalan yang aman bagi kelompok **tuna netra** di seluruh kawasan pusat bisnis. (2) Kebijakan inklusif tersebut dirancang untuk menghapus **stigma** negatif yang selama ini membatasi ruang gerak warga berkebutuhan khusus.\n\nManakah evaluasi yang PALING TEPAT terkait ketepatan nilai rasa kata dan kaidah penulisan pada kutipan di atas?",
       "opsi_jawaban": [
-        "A. Frasa *tuna netra* pada kalimat (1) memiliki nilai rasa positif, tetapi harus ditulis serangkai menjadi *tunanetra*.",
+        "A. Frasa *tuna netra* pada kalimat (1) memiliki nilai rasa santun, tetapi harus ditulis serangkai menjadi *tunanetra*.",
         "B. Kata *tuna netra* pada kalimat (1) bernuansa merendahkan sehingga sebaiknya diganti menjadi *orang buta*.",
         "C. Kata *stigma* pada kalimat (2) bermakna pujian publik sehingga tidak selaras dengan kata *negatif*.",
         "D. Frasa *warga berkebutuhan khusus* pada kalimat (2) bernuansa kasar dan menyudutkan kelompok tertentu.",
         "E. Kata *inklusif* pada kalimat (2) tidak baku menurut KBBI VI dan harus diubah menjadi *inklusip*."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Diksi **tunanetra** merupakan ungkapan bernilai rasa halus dan santun untuk menggantikan sebutan kasar *buta*, tetapi berdasarkan kaidah EYD V, unsur terikat *tuna-* wajib ditulis serangkai menjadi **tunanetra** (**opsi A** benar). **Opsi B** dan **D** keliru menilai nuansa kesantunan kata. **Opsi C** salah karena menurut KBBI VI, kata *stigma* bermakna ciri negatif yang menempel pada pribadi seseorang, sedangkan **opsi E** salah karena bentuk baku adalah *inklusif*.",
+      "bedah_cepat_markdown": "Saat mengerjakan soal evaluasi diksi, kamu perlu mengecek dua hal sekaligus: **kesantunan nilai rasa** dan **kepatuhan ejaan EYD V**.\n\n* **Opsi A benar.** Pilihan kata *tunanetra* memang bernuansa halus dan menghormati penyandang disabilitas (menggantikan kata *buta*). Namun, menurut aturan EYD V, unsur terikat *tuna-* wajib ditulis serangkai menjadi **tunanetra**.\n* **Opsi B dan D keliru** karena justru membalik nilai rasa: *tunanetra* dan *warga berkebutuhan khusus* adalah bentuk penghalusan bahasa yang baku dan santun.\n* **Opsi C salah** karena menurut KBBI VI, *stigma* berarti ciri negatif yang menempel pada seseorang, bukan pujian publik.\n* **Opsi E salah** karena bentuk baku dalam KBBI VI adalah *inklusif*, bukan *inklusip*.\n\nDengan demikian, jawaban yang tepat adalah **A**.",
       "visual": null
     },
     {
@@ -205,7 +205,7 @@
         "E. teknik pengambilan gambar rumit; alur cerita yang mudah ditebak"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Ungkapan **visual yang getir** memadukan indra penglihatan (*visual*) dengan indra pengecap (*getir*, rasa pahit), yang secara kontekstual bermakna *sajian gambar yang menyedihkan atau memilukan*. Sementara itu, **dialog yang renyah** memadukan indra pendengaran (*dialog*) dengan indra peraba/pengecap (*renyah*, garing dan enak), yang bermakna *percakapan yang mengalir hidup, akrab, dan enak diikuti* (**opsi B**). **Opsi A**, **C**, **D**, dan **E** keliru menafsirkan pergeseran makna lintas indra tersebut.",
+      "bedah_cepat_markdown": "Kedua frasa bercetak tebal ini memakai kias lintas indra, jadi kita terjemahkan satu per satu sesuai konteks ulasan film:\n\n1. **Visual yang getir:** Kata *visual* ditangkap oleh mata (penglihatan), lalu dipadukan dengan *getir* (rasa pahit atau pedas di lidah). Dalam konteks film dokumenter bertema kemanusiaan, rasa pahit itu bergeser makna menjadi **sajian gambar yang menyedihkan atau memilukan**.\n2. **Dialog yang renyah:** Kata *dialog* ditangkap telinga (pendengaran), sedangkan *renyah* adalah sensasi garing dan enak saat dikunyah. Jika diterapkan pada percakapan antartokoh, maknanya menjadi **percakapan yang hidup, mengalir, dan enak diikuti**.\n\nPasangan makna yang paling akurat ada pada **opsi B**, sedangkan opsi lainnya menyimpang dari konteks ulasan.",
       "visual": null
     }
   ]

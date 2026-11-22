@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Pada soal bertipe 'All of the following are true EXCEPT...', kamu menemukan opsi A persis sama kata-katanya dengan teks, sedangkan opsi D menggunakan sinonim yang tidak kamu kenali. Mana yang seharusnya dipilih?",
+      "pertanyaan_pemantik": "Saat mengerjakan soal bertipe 'All of the following are true EXCEPT...', opsi A persis sama dengan teks, sedangkan opsi D memakai sinonim asing. Mana yang harus kamu pilih?",
       "opsi_cepat": [
-        "Opsi D karena bahasanya berbeda dari teks",
-        "Opsi yang tidak disebut sama sekali atau bertentangan fakta di teks"
+        "Opsi D karena kata-katanya berbeda dengan teks",
+        "Opsi yang tidak dibahas atau bertentangan dengan isi teks"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "UTBK selalu memparafrasa informasi benar menggunakan sinonim agar mengecoh siswa yang sekadar mencocokkan kata persis (word-matching)."
+      "penjelasan_kilat": "Soal UTBK selalu menyamarkan fakta benar memakai sinonim (paraphrasing). Tujuannya menjebak siswa yang cuma mencocokkan kata persis (word-matching)."
     },
-    "konsep_inti_markdown": "- **Prinsip Eliminasi Terbalik:** Pada soal *EXCEPT / NOT*, 4 opsi adalah fakta benar yang diparafrasa dari teks, sedangkan 1 opsi benar adalah informasi absen (*unstated*) atau kontradiktif (*false*).\n- **Peta Lokasi:** Gunakan kata kunci pertanyaan untuk *scanning* paragraf spesifik sebelum membedah setiap opsi.\n- **Waspada Parafrasa:** Jangan mencoret opsi hanya karena kosakatanya berbeda dari bacaan; cek kesetaraan maknanya secara utuh.",
+    "konsep_inti_markdown": "- **Cara Kerja Soal *EXCEPT / NOT*:** Empat opsi berisi fakta benar yang sudah diparafrasa dari bacaan. Tugasmu cuma mencari satu opsi yang informasinya **tidak dibahas** (*unstated*) atau **berlawanan** (*false*).\n- **Kunci Dulu Lokasinya:** Gunakan kata kunci di soal untuk melakukan *scanning* ke paragraf yang relevan sebelum mengecek opsi satu per satu.\n- **Jangan Terkecoh Sinonim:** Beda kosakata bukan berarti salah. Pastikan kamu membandingkan **makna utuh** opsi dengan isi teks, bukan sekadar bentuk katanya.",
     "radar_jebakan_utbk": [
-      "Jebakan Word-Matching: Memilih opsi berparafrasa valid sebagai jawaban EXCEPT karena tidak menemukan kata persis di teks.",
-      "Jebakan Half-True / Distorsi: Opsi menggabungkan subjek dari paragraf 1 dengan predikat milik subjek lain di paragraf 2."
+      "Jebakan Word-Matching: Kamu memilih opsi berparafrasa benar sebagai jawaban EXCEPT hanya karena kata persisnya tidak muncul di teks.",
+      "Jebakan Mix-and-Match (Setengah Benar): Pembuat soal menggabungkan subjek dari paragraf 1 dengan keterangan milik subjek lain di paragraf 2."
     ],
     "stimulus_utama_bersama": "**Forum Thread: Urban Heat Island Mitigation Strategies**\n\n**@EcoPlanner_Rina (Posted 2 hours ago):** Cities worldwide are adopting cool roofs—surfaces coated with reflective white paint—to combat the Urban Heat Island (UHI) effect. Studies show cool roofs can lower indoor temperatures by up to $3^{\\circ}\\text{C}$ and slash air-conditioning energy demand by 15%. However, critics argue that reflective roofs merely bounce solar radiation back into the upper atmosphere, potentially altering local cloud formation without addressing ground-level heat trapped by asphalt roads.\n\n**@GreenArch_Dodi (Posted 1 hour ago):** @EcoPlanner_Rina brings up a valid limitation. That is why green roofs—rooftops covered with vegetation—are superior. Beyond lowering ambient temperatures through evapotranspiration, green roofs absorb rainwater runoff, extend roof membrane lifespan, and enhance urban biodiversity. Yes, initial installation costs are roughly double those of cool roofs, yet long-term stormwater management savings offset the expense.\n\n**@InfraCost_Maya (Posted 45 mins ago):** While I appreciate the ecological perks @GreenArch_Dodi mentioned, municipal budgets cannot ignore structural retrofitting. Older buildings often lack the load-bearing capacity for wet soil and plants, making cool roofs the only financially viable option for rapid, city-wide deployment.\n\n**@SolarTech_Budi (Posted 20 mins ago):** Why choose between cooling and ecology when rooftop solar panels offer better returns? Shading from solar arrays reduces roof heat gain while generating clean electricity. Contrary to popular belief, cool roofs and green roofs actually waste prime urban real estate that should be dedicated exclusively to renewable power generation.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Taksonomi Sinyal Teks dan Pola Jawaban Unstated Details",
-      "subjudul_ringkas": "Pola penanda rincian teks, bentuk distorsi opsi salah, dan sinyal divergensi opini pada soal pengecualian UTBK.",
+      "judul_blok": "Peta Sinyal Teks dan Pola Jebakan Unstated Details",
+      "subjudul_ringkas": "Cara mengenali rincian bacaan, pola pengubahan makna di opsi jebakan, dan sinyal beda pendapat dalam diskusi.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
         "kolom_1": "Kategori / Penanda Teks",
@@ -36,91 +36,91 @@
       "kelompok": [
         {
           "nama_kelompok": "Sinyal Rincian & Pengecualian dalam Teks",
-          "ringkasan_kelompok": "Penanda daftar fakta dan batasan eksplisit untuk memetakan opsi benar pada soal EXCEPT.",
+          "ringkasan_kelompok": "Kata kunci daftar fakta dan pengecualian untuk melacak empat opsi benar pada soal EXCEPT.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Penanda Daftar Eksplisit (Listing Signals)",
-              "penjelasan_singkat": "Kata penghubung aditif menandai deretan fakta sejajar yang menjadi dasar empat opsi benar dalam soal EXCEPT.",
+              "judul_poin": "Kata Penanda Daftar Fakta (Listing Signals)",
+              "penjelasan_singkat": "Kata sambung penambah informasi menandai deretan fakta setara yang sering dipecah menjadi empat opsi benar.",
               "contoh_penerapan": "\"Solar power lowers bills; **moreover**, it cuts emissions **and** boosts property value.\"",
-              "jebakan_atau_catatan": "Opsi benar sering memarafrasa item terakhir setelah moreover atau in addition; jangan terlewat saat scanning.",
+              "jebakan_atau_catatan": "Fakta terakhir setelah moreover atau in addition sering terlewat saat siswa melakukan scanning cepat.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Pengecualian Langsung (Explicit Exclusion)",
-              "penjelasan_singkat": "Preposisi atau konjungsi pengecualian memisahkan satu unsur yang tidak termasuk dalam generalisasi kalimat.",
+              "judul_poin": "Kata Penanda Pengecualian (Explicit Exclusion)",
+              "penjelasan_singkat": "Kata pengecualian memisahkan satu hal yang keluar dari aturan umum kalimat tersebut.",
               "contoh_penerapan": "\"All mammals are warm-blooded, **except for** monotremes like the platypus, which lay eggs.\"",
-              "jebakan_atau_catatan": "Kata except dalam teks bisa membalik logika pertanyaan EXCEPT ganda; periksa arah pertanyaan dengan teliti.",
+              "jebakan_atau_catatan": "Jika soal EXCEPT menanyakan kalimat yang sudah berisi kata except, logikamu bisa terbalik. Baca ulang arah pertanyaannya pelan-pelan.",
               "visual": null
             },
             {
-              "judul_poin": "Penanda Pembatas & Syarat (Limiting Modifiers)",
-              "penjelasan_singkat": "Kata keterangan pembatas mempersempit cakupan fakta sehingga klaim opsi yang terlalu luas menjadi salah.",
+              "judul_poin": "Kata Pembatas Cakupan (Limiting Modifiers)",
+              "penjelasan_singkat": "Kata keterangan ini mempersempit ruang lingkup fakta agar tidak dianggap berlaku untuk semua kondisi.",
               "contoh_penerapan": "\"The vaccine proved effective **primarily** in adults **under** fifty years old.\"",
-              "jebakan_atau_catatan": "Opsi pengecoh menghapus kata primarily atau mengubah under menjadi all ages agar tampak benar sekilas.",
+              "jebakan_atau_catatan": "Opsi jebakan sering menghapus kata primarily atau mengganti under menjadi all ages supaya terlihat seperti fakta bacaan.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Rincian Klasifikasi & Contoh",
-              "penjelasan_singkat": "Frasa pengantar contoh menandai sub-poin spesifik yang kerap dipecah menjadi empat opsi eliminasi.",
+              "judul_poin": "Kata Pengantar Contoh & Rincian",
+              "penjelasan_singkat": "Frasa pengantar contoh membuka daftar rincian spesifik yang biasanya langsung dijadikan empat opsi benar.",
               "contoh_penerapan": "\"Urbanization triggers several issues, **such as** traffic congestion, housing shortages, **and** air pollution.\"",
-              "jebakan_atau_catatan": "Pengecoh memasukkan dampak logis umum yang tidak tertulis dalam deretan contoh such as di bacaan.",
+              "jebakan_atau_catatan": "Opsi pengecoh kerap menyelipkan dampak lain yang masuk akal secara umum, padahal tidak masuk daftar such as di teks.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Pola Distorsi Jawaban Unstated & False",
-          "ringkasan_kelompok": "Empat bentuk manipulasi makna pada opsi yang menjadi kunci jawaban NOT atau EXCEPT.",
+          "nama_kelompok": "Pola Pengubahan Makna pada Opsi Jebakan (Unstated & False)",
+          "ringkasan_kelompok": "Empat trik pembuat soal mengubah fakta teks menjadi jawaban kunci pada soal NOT atau EXCEPT.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pembalikan Kausalitas atau Peran (Role Reversal)",
-              "penjelasan_singkat": "Opsi memakai seluruh kata kunci teks tetapi menukar posisi sebab-akibat atau hubungan pelaku dan objek.",
+              "judul_poin": "Membalik Sebab-Akibat atau Peran (Role Reversal)",
+              "penjelasan_singkat": "Opsi memakai kata kunci yang persis sama, tetapi menukar posisi penyebab dan akibatnya.",
               "contoh_penerapan": "Teks: \"**Deforestation accelerates soil erosion**.\" Opsi salah: \"Soil erosion is the primary driver of deforestation.\"",
-              "jebakan_atau_catatan": "Peserta tertipu karena mengenali semua kata kunci tanpa memeriksa arah hubungan kata kerjanya.",
+              "jebakan_atau_catatan": "Banyak siswa tertipu karena mengenali semua kata kuncinya, tetapi lupa mengecek siapa memengaruhi siapa.",
               "visual": null
             },
             {
-              "judul_poin": "Generalisasi Berlebihan (Extreme Overstatement)",
-              "penjelasan_singkat": "Opsi mengubah pernyataan probabilitas atau sebagian dalam teks menjadi klaim mutlak tanpa pengecualian.",
+              "judul_poin": "Klaim Mutlak Berlebihan (Extreme Overstatement)",
+              "penjelasan_singkat": "Opsi mengubah pernyataan yang sifatnya peluang atau sebagian menjadi kepastian mutlak tanpa celah.",
               "contoh_penerapan": "Teks: \"Remote work **can** improve productivity.\" Opsi salah: \"Remote work **always** guarantees higher employee output.\"",
-              "jebakan_atau_catatan": "Waspadai kata mutlak pada opsi (always, never, sole) ketika teks hanya memakai modal can atau often.",
+              "jebakan_atau_catatan": "Curigai kata mutlak di opsi seperti always, never, atau sole jika teks aslinya cuma memakai can atau often.",
               "visual": null
             },
             {
-              "judul_poin": "Informasi di Luar Cakupan (Out-of-Scope Aspect)",
-              "penjelasan_singkat": "Opsi menyebut topik masuk akal secara umum tetapi aspeknya sama sekali tidak dibahas dalam wacana.",
+              "judul_poin": "Topik di Luar Bahasan Teks (Out-of-Scope)",
+              "penjelasan_singkat": "Opsi membahas topik yang terdengar nyambung di dunia nyata, tetapi sama sekali tidak disentuh penulis.",
               "contoh_penerapan": "Teks membahas sejarah dan budidaya kopi, lalu opsi menanyakan \"**economic impact on coffee farmers**.\"",
-              "jebakan_atau_catatan": "Jangan pakai asumsi luar teks; jika aspek tidak memiliki padanan kalimat di bacaan, itulah jawabannya.",
+              "jebakan_atau_catatan": "Jangan pakai pengetahuan umum pribadimu. Kalau tidak ada kalimat pendukungnya di bacaan, itulah jawabannya.",
               "visual": null
             },
             {
-              "judul_poin": "Perbandingan Palsu (False Comparison)",
-              "penjelasan_singkat": "Teks menyebut dua hal secara terpisah tanpa membandingkan, namun opsi menambahkan klaim lebih unggul.",
+              "judul_poin": "Perbandingan Fiktif (False Comparison)",
+              "penjelasan_singkat": "Teks membahas dua hal secara terpisah, lalu opsi mengarang perbandingan seolah satu lebih unggul dari yang lain.",
               "contoh_penerapan": "Teks: \"Both electric and hybrid cars cut fuel use.\" Opsi salah: \"Electric cars are **cheaper than** hybrids.\"",
-              "jebakan_atau_catatan": "Kemunculan dua entitas di paragraf yang sama sering mengecoh pembaca seolah teks membandingkan keduanya.",
+              "jebakan_atau_catatan": "Kemunculan dua benda dalam satu paragraf sering menipu pembaca seolah keduanya sedang dibandingkan.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Sinyal Divergensi & Kontradiksi pada Thread Komentar",
-          "ringkasan_kelompok": "Penanda wacana untuk mendeteksi komentator yang melawan arus opini mayoritas dalam utas diskusi.",
+          "nama_kelompok": "Sinyal Beda Pendapat pada Utas Komentar (Thread)",
+          "ringkasan_kelompok": "Kata kunci untuk melacak satu komentator yang melawan arus pendapat mayoritas dalam forum.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Penanda Kontras & Sanggahan Eksplisit",
-              "penjelasan_singkat": "Konjungsi pertentangan di awal komentar menandai sikap yang langsung menolak konsensus komentator sebelumnya.",
+              "judul_poin": "Kata Pembuka Sanggahan Langsung",
+              "penjelasan_singkat": "Kata hubung pertentangan di awal komentar menandai sikap yang langsung membantah pendapat peserta sebelumnya.",
               "contoh_penerapan": "\"**On the contrary**, extending school hours will only exhaust students without raising test scores.\"",
-              "jebakan_atau_catatan": "Mayoritas sering memakai I agree atau Exactly; cari satu akun yang membuka dengan However atau Yet.",
+              "jebakan_atau_catatan": "Komentator mayoritas biasanya membuka dengan I agree atau Exactly; cari satu akun yang memulai dengan However atau Yet.",
               "visual": null
             },
             {
-              "judul_poin": "Sinyal Skeptisisme & Pergeseran Fokus (Pivot)",
-              "penjelasan_singkat": "Komentator meragukan efektivitas solusi mayoritas atau mengalihkan diskusi ke risiko tersembunyi yang diabaikan.",
+              "judul_poin": "Sinyal Keraguan & Pengalihan Fokus (Pivot)",
+              "penjelasan_singkat": "Komentator meragukan solusi mayoritas lalu membelokkan diskusi ke risiko lain yang luput dibahas.",
               "contoh_penerapan": "\"While digital textbooks save paper, **I doubt** they solve unequal internet access among students.\"",
-              "jebakan_atau_catatan": "Klausa awal (While...) mengakui opini mayoritas; fokuslah pada klausa utama setelah koma untuk melihat pertentangannya.",
+              "jebakan_atau_catatan": "Bagian awal (While...) cuma basa-basi menyetujui sebagian. Fokuslah pada kalimat utama setelah koma untuk menangkap bantahannya.",
               "visual": null
             }
           ]
@@ -134,8 +134,8 @@
       "nama_variasi": "Negative Factual Information",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan: Postingan @GreenArch_Dodi mengenai keunggulan green roofs (kalimat ke-3 hingga ke-4).",
-      "bedah_pola_markdown": "- **Target Scanning:** Cari frasa kunci dari pertanyaan (misal: *benefits of green roofs*) pada postingan **@GreenArch_Dodi**.\n- **Pemetaan Fakta & Parafrasa:**\n  1. *Lowering ambient temperatures* $\\rightarrow$ mendinginkan suhu sekitar.\n  2. *Absorb rainwater runoff* $\\rightarrow$ mengurangi limpasan air hujan.\n  3. *Extend roof membrane lifespan* $\\rightarrow$ memperpanjang usia atap.\n  4. *Enhance urban biodiversity* $\\rightarrow$ meningkatkan keanekaragaman hayati.\n- **Identifikasi Opsi Jebakan:** Opsi salah (jawaban soal *EXCEPT*) biasanya menyisipkan klaim milik objek lain (misal: *slashes AC demand by 15%* yang sebenarnya milik *cool roofs*), atau menambah detail tak berdasar seperti *generates renewable electricity*.\n- **Eksekusi:** Coret keempat opsi yang terkonfirmasi ada di teks; pilih satu opsi tersisa yang faktanya meleset.",
-      "kunci_pembeda": "Fokus memverifikasi rincian spesifik milik satu subjek tunggal agar tidak tertukar dengan atribut subjek pembanding.",
+      "bedah_pola_markdown": "Bayangkan kamu menghadapi soal: *\"All of the following are benefits of green roofs mentioned by @GreenArch_Dodi EXCEPT...\"* Begini alur berpikir cepatnya:\n\n- **Langkah 1 — Kunci Subjek & Lokasi:** Jangan baca ulang seluruh forum. Langsung lompat ke komentar **@GreenArch_Dodi** dan garis bawahi deretan manfaat *green roofs*.\n- **Langkah 2 — Peta Fakta & Parafrasanya:**\n  1. *Lowering ambient temperatures* $\\rightarrow$ menurunkan suhu lingkungan sekitar.\n  2. *Absorb rainwater runoff* $\\rightarrow$ menyerap limpasan air hujan.\n  3. *Extend roof membrane lifespan* $\\rightarrow$ memperpanjang umur lapisan atap.\n  4. *Enhance urban biodiversity* $\\rightarrow$ meningkatkan keanekaragaman hayati kota.\n- **Langkah 3 — Temukan Penyusupnya:** Pembuat soal biasanya menyelipkan satu klaim milik subjek lain—misalnya *slashes air-conditioning demand by 15%* (itu milik *cool roofs*, bukan *green roofs*) atau *generates clean electricity* (punya panel surya Budi).\n- **Langkah 4 — Eksekusi:** Coret empat opsi yang cocok dengan daftar Dodi, lalu pilih satu opsi yang faktanya tertukar atau mengarang.",
+      "kunci_pembeda": "Verifikasi setiap rincian hanya untuk satu subjek yang ditanyakan agar tidak tertukar dengan atribut milik subjek pembanding.",
       "visual": null
     },
     {
@@ -143,8 +143,8 @@
       "nama_variasi": "Identifying Which Topic or Aspect is NOT Discussed in the Passage",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan: Keseluruhan utas forum (@EcoPlanner_Rina, @GreenArch_Dodi, @InfraCost_Maya, @SolarTech_Budi).",
-      "bedah_pola_markdown": "- **Teknik Skimming Global:** Pindai ide pokok tiap kontributor untuk membuat peta topik:\n  - **Rina:** Mekanisme refleksi *cool roofs*, penghematan AC, dan dampak awan.\n  - **Dodi:** Manfaat ekologis *green roofs* dan perbandingan biaya awal.\n  - **Maya:** Kendala kapasitas beban struktur bangunan tua (*structural retrofitting*).\n  - **Budi:** Efisiensi panel surya sebagai alternatif pembangkit listrik.\n- **Deteksi Aspek Absen:** Cek setiap opsi jawaban terhadap peta topik di atas. Jika muncul topik seperti *government tax subsidies* (subsidi pajak pemerintah) atau *maintenance labor wages* (upah tenaga perawatan), pastikan apakah kata kunci tersebut muncul.\n- **Ciri Jebakan:** Opsi pengecoh sering memakai istilah teknis yang terkesan nyambung dengan tema lingkungan (misal: *carbon credit trading*), padahal sama sekali tidak disinggung penulis mana pun.",
-      "kunci_pembeda": "Menguji cakupan makro seluruh teks atau utas, bukan sekadar rincian sempit di dalam satu kalimat.",
+      "bedah_pola_markdown": "Soal tipe ini menguji pemahaman helikopter (*macro reading*) atas seluruh diskusi. Jangan terjebak membaca detail kecil terlalu lama.\n\n- **Langkah 1 — Buat Peta Topik Per Orang:** Ringkas inti obrolan tiap akun dalam satu frasa pendek:\n  - **Rina:** Cara kerja *cool roofs*, hemat energi AC, dan efek ke awan.\n  - **Dodi:** Manfaat ekologis *green roofs* serta perbandingan biaya pemasangannya.\n  - **Maya:** Kendala kekuatan struktur bangunan tua (*load-bearing capacity*).\n  - **Budi:** Panel surya atap sebagai penghasil listrik bersih yang jauh lebih menguntungkan.\n- **Langkah 2 — Cocokkan Opsi ke Peta:** Cek satu per satu opsi terhadap empat poin di atas. Jika muncul topik seperti *government tax subsidies* (subsidi pajak) atau *worker safety regulations* (aturan keselamatan pekerja), langsung curigai opsi tersebut.\n- **Langkah 3 — Waspadai Istilah 'Terlihat Nyambung':** Opsi pengecoh sering memakai istilah keren bertema lingkungan—seperti *carbon credit trading*—agar terlihat seolah ada di teks, padahal keempat penulis sama sekali tidak menyinggungnya.",
+      "kunci_pembeda": "Menguji cakupan topik seluruh bacaan secara menyeluruh, bukan rincian sempit di dalam satu kalimat.",
       "visual": null
     },
     {
@@ -152,8 +152,8 @@
       "nama_variasi": "Finding the Commenter Whose View Contradicts or Diverges from the Majority in a Thread",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Rujukan: Perbandingan sikap keempat pengguna terhadap kelayakan cool roofs dan green roofs.",
-      "bedah_pola_markdown": "- **Langkah 1 — Klasifikasi Sikap (Stance Matrix):**\n  - **Rina:** Mengakui efektivitas *cool roofs* menurunkan suhu, meski mencatat kekurangan.\n  - **Dodi:** Mendukung *green roofs* sebagai solusi jangka panjang terbaik.\n  - **Maya:** Mendukung *cool roofs* secara finansial dan struktural untuk bangunan tua.\n- **Langkah 2 — Temukan Titik Divergensi:** Mayoritas (Rina, Dodi, Maya) setuju bahwa *cool roofs* atau *green roofs* layak diterapkan sesuai konteksnya. Sebaliknya, **@SolarTech_Budi** menolak keduanya secara frontal (*\"waste prime urban real estate\"*) dan menyarankan panel surya.\n- **Ciri Jebakan:** Siswa sering memilih **@InfraCost_Maya** sebagai pihak kontra karena ia mengkritik *green roofs*, padahal Maya tetap mendukung solusi atap pendingin (*cool roofs*), bukan menolak konsep mitigasi suhu atap secara keseluruhan.",
-      "kunci_pembeda": "Memetakan poros kesepakatan mayoritas dalam diskusi multi-penulis untuk menemukan satu suara yang menyimpang total.",
+      "bedah_pola_markdown": "Dalam utas diskusi UTBK, biasanya ada satu komentator yang berdiri melawan arus mayoritas. Untuk menemukannya tanpa ragu, kelompokkan dulu kubu mereka:\n\n- **Langkah 1 — Petakan Kubu Mayoritas:**\n  - **Rina** mengakui *cool roofs* efektif menurunkan suhu ruangan, walau punya efek samping.\n  - **Dodi** membela *green roofs* sebagai solusi jangka panjang terbaik.\n  - **Maya** mendukung *cool roofs* karena paling masuk akal secara biaya dan kekuatan gedung tua.\n- **Langkah 2 — Tangkap Suara yang Menyimpang:** Rina, Dodi, dan Maya sama-sama setuju bahwa *cool roofs* atau *green roofs* layak dipakai sesuai kondisi gedung. Sebaliknya, **@SolarTech_Budi** menolak keduanya mentah-mentah (*\"waste prime urban real estate\"*) dan menyarankan atap khusus untuk panel surya.\n- **Langkah 3 — Hindari Jebakan Pengecoh:** Banyak siswa tertipu memilih **@InfraCost_Maya** karena ia mengkritik *green roofs*. Padahal, Maya hanya memilih opsi atap pendingin yang berbeda (*cool roofs*), bukan menolak konsep atap pendingin secara total seperti Budi.",
+      "kunci_pembeda": "Memetakan garis besar kesepakatan mayoritas dalam diskusi untuk menemukan satu akun yang menolak premis utama bersama.",
       "visual": null
     }
   ],
@@ -174,7 +174,7 @@
         "E. Older structures may be unable to support the heavy weight of saturated green roofs."
       ],
       "kunci_jawaban": "D",
-      "bedah_cepat_markdown": "- **A benar (ada di teks):** Rina menyebut *without addressing ground-level heat trapped by asphalt roads*.\n- **B benar (ada di teks):** Dodi menyebut biaya awal *green roofs* sekitar dua kali lipat *cool roofs* (*roughly double*).\n- **C benar (ada di teks):** Rina menyebut *potentially altering local cloud formation*.\n- **E benar (ada di teks):** Maya menjelaskan bangunan tua kekurangan *load-bearing capacity* untuk tanah basah.\n- **D salah (tidak disebut):** Teks tidak pernah membahas pupuk kimia atau polusi limpasan air hujan.",
+      "bedah_cepat_markdown": "Soal ini meminta kita mencari **satu kelemahan yang tidak pernah disebut** di forum, baik untuk *cool roofs* maupun *green roofs*. Mari kita cek satu per satu:\n\n- **Opsi A (Ada di teks):** Rina menulis bahwa *cool roofs* bekerja *\"without addressing ground-level heat trapped by asphalt roads\"*—artinya gagal mengatasi panas aspal di permukaan jalan.\n- **Opsi B (Ada di teks):** Dodi mengakui biaya awal pemasangan *green roofs* sekitar dua kali lipat (*\"roughly double\"*) dibandingkan *cool roofs*.\n- **Opsi C (Ada di teks):** Rina menyinggung efek samping *cool roofs* yang berpotensi mengubah pola awan lokal (*\"potentially altering local cloud formation\"*).\n- **Opsi E (Ada di teks):** Maya menjelaskan bangunan tua sering tidak kuat menahan beban tanah basah dan tanaman (*\"lack the load-bearing capacity\"*).\n- **Opsi D (Tidak ada di teks):** Tidak satu pun komentator membahas pemupukan kimia rutin atau pencemaran limpasan air hujan. Jadi, **D** adalah pengecualiannya.",
       "visual": null
     },
     {
@@ -193,7 +193,7 @@
         "E. The reduction in indoor cooling energy consumption achieved by reflective surfaces"
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "- **A dibahas:** Maya membahas kapasitas beban struktur bangunan tua (*structural retrofitting*).\n- **B dibahas:** Dodi membandingkan biaya awal tinggi dengan penghematan jangka panjang pengelolaan air hujan.\n- **D dibahas:** Budi menyoroti hilangnya potensi pembangkitan listrik bersih jika atap dipakai untuk *cool/green roofs*.\n- **E dibahas:** Rina menyebut pengurangan kebutuhan energi AC sebesar 15%.\n- **C tidak dibahas:** Tidak ada satu pun komentator yang menyinggung mandat atau regulasi wajib dari pemerintah.",
+      "bedah_cepat_markdown": "Untuk soal topik yang tidak dibahas (*NOT discussed*), kita cukup mencocokkan setiap opsi dengan peta obrolan keempat komentator:\n\n- **Opsi A dibahas Maya:** Ia menyoroti apakah struktur bangunan tua kuat menopang beban tanah dan tanaman (*structural retrofitting*).\n- **Opsi B dibahas Dodi:** Ia membandingkan mahalnya biaya pemasangan awal dengan penghematan jangka panjang dari pengelolaan air hujan.\n- **Opsi D dibahas Budi:** Ia menilai pemakaian lahan atap untuk *cool/green roofs* membuang peluang pembangkitan listrik bersih (*opportunity cost*).\n- **Opsi E dibahas Rina:** Ia menyebutkan atap reflektif mampu memangkas kebutuhan energi AC hingga 15%.\n- **Opsi C tidak dibahas:** Sama sekali tidak ada pembahasan soal aturan wajib atau mandat pemerintah untuk gedung komersial. Maka, jawabannya **C**.",
       "visual": null
     },
     {
@@ -211,7 +211,7 @@
         "E. False - False - True"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "- **Pernyataan 1 (True):** Hanya Budi yang menilai *cool roofs* dan *green roofs* menyia-nyiakan lahan atap (*waste prime urban real estate*).\n- **Pernyataan 2 (False):** Maya tidak menyangkal kemampuan penurunan suhu; ia justru mendukung *cool roofs* sebagai opsi layak secara finansial untuk bangunan tua.\n- **Pernyataan 3 (True):** Dodi berfokus pada aspek ekologis, sedangkan Maya menyoroti keterbatasan anggaran dan beban struktur bangunan.",
+      "bedah_cepat_markdown": "Mari kita uji kebenaran tiap pernyataan berdasarkan posisi masing-masing komentator di utas:\n\n- **Pernyataan 1 (True):** Hanya **@SolarTech_Budi** yang menolak kedua konsep atap pendingin sekaligus dan menyebutnya membuang-buang lahan atap kota (*\"waste prime urban real estate\"*).\n- **Pernyataan 2 (False):** **@InfraCost_Maya** tidak pernah menyangkal kemampuan *cool roofs* atau *green roofs* dalam menurunkan suhu. Ia justru mendukung *cool roofs* sebagai opsi paling masuk akal secara biaya bagi bangunan tua.\n- **Pernyataan 3 (True):** **@GreenArch_Dodi** fokus memaparkan manfaat ekologis (air hujan, keanekaragaman hayati), sedangkan **@InfraCost_Maya** menekankan batas anggaran kota serta kekuatan struktur gedung.\n\nUrutan yang tepat adalah **True - False - True**, sehingga jawabannya **B**.",
       "visual": null
     }
   ]

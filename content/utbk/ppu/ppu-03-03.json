@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Dalam kalimat 'Rapat evaluasi anggaran itu membahas tentang pemangkasan biaya operasional', apakah subjek kalimat tersebut secara logis mampu melakukan tindakan predikatnya?",
+      "pertanyaan_pemantik": "Perhatikan kalimat ini: 'Rapat evaluasi anggaran itu membahas tentang pemangkasan biaya operasional.' Secara logika, apakah subjeknya masuk akal melakukan tindakan tersebut?",
       "opsi_cepat": [
-        "Ya, karena subjek berada di awal kalimat",
-        "Tidak, 'rapat' tidak dapat melakukan tindakan membahas"
+        "Ya, karena posisi subjek sudah berada di awal kalimat",
+        "Tidak, 'rapat' adalah kegiatan yang tidak bisa melakukan tindakan membahas"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Benda mati atau peristiwa seperti 'rapat' tidak bisa bertindak sebagai pelaku aktif ('membahas'). Selain itu, kata kerja aktif 'membahas' tidak boleh diikuti kata depan 'tentang' sehingga struktur [S]-[P]-[O] menjadi rancu."
+      "penjelasan_kilat": "Kegiatan atau benda mati seperti 'rapat' tidak bisa bertindak aktif sebagai pelaku ('membahas'). Selain itu, kata kerja aktif 'membahas' tidak boleh diikuti kata depan 'tentang' karena merusak pola [S]-[P]-[O]."
     },
-    "konsep_inti_markdown": "**Kelogisan kalimat dan kepaduan makna** menguji masuk akalnya hubungan antarunsur kalimat serta ketepatan struktur sesuai EYD V dan KBBI VI:\n\n* **Kelogisan Pelaku–Tindakan:** Subjek [S] wajib masuk akal melakukan tindakan pada predikat [P].\n* **Kepaduan Antarklausa:** Kata penghubung wajib selaras dengan relasi logis sebab-akibat atau pertentangan.\n* **Antikerancuan:** Hindari pencampuran dua pola kalimat baku (*menurut X mengatakan* atau *membahas tentang*).",
+    "konsep_inti_markdown": "**Kelogisan kalimat dan kepaduan makna** menguji masuk akalnya hubungan antarbagian kalimat serta ketepatan struktur sesuai EYD V dan KBBI VI:\n\n* **Kelogisan Pelaku–Tindakan:** Subjek [S] harus masuk akal melakukan atau mengalami tindakan pada predikat [P].\n* **Kepaduan Antarklausa:** Kata penghubung wajib selaras dengan arah logika sebab-akibat atau pertentangan.\n* **Antikalimat Rancu:** Hindari mencampur dua pola kalimat baku sekaligus, seperti *menurut X mengatakan* atau *membahas tentang*.",
     "radar_jebakan_utbk": [
-      "Tertipu kalimat berpredikat aktif yang subjeknya berupa benda mati, waktu, atau tempat (misal: 'Waktu dan tempat kami persilakan' atau 'Artikel ini mengkaji').",
-      "Menggabungkan dua struktur kalimat benar menjadi satu kalimat rancu (misal: 'Menurut ahli menyatakan bahwa...' atau 'Meskipun hujan deras, tetapi perjalanan tetap dilanjutkan')."
+      "Tertipu kalimat berpredikat aktif yang subjeknya berupa benda mati, waktu, atau tempat (misalnya: 'Waktu dan tempat kami persilakan' atau 'Artikel ini mengkaji').",
+      "Menggabungkan dua struktur kalimat benar menjadi satu kalimat rancu (misalnya: 'Menurut ahli menyatakan bahwa...' atau 'Meskipun hujan deras, tetapi perjalanan tetap dilanjutkan')."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Pembagian Lengkap Kaidah Kelogisan Kalimat dan Kepaduan Makna",
-      "subjudul_ringkas": "Kaidah baku kelogisan pelaku-tindakan, relasi antarklausa, penalaran kalimat kompleks, serta antikerancuan sintaksis sesuai EYD V.",
+      "subjudul_ringkas": "Panduan praktis memeriksa kelogisan pelaku-tindakan, hubungan antarklausa, maksud tersirat kalimat kompleks, serta perbaikan kalimat rancu sesuai EYD V.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -36,105 +36,105 @@
       "kelompok": [
         {
           "nama_kelompok": "Kelogisan Pelaku, Tindakan, dan Nalar Kalimat",
-          "ringkasan_kelompok": "Menguji masuk akalnya hubungan subjek-predikat serta ketiadaan kontradiksi logis dalam kalimat.",
+          "ringkasan_kelompok": "Memastikan hubungan subjek dan predikat masuk akal serta bebas dari pernyataan yang saling bertabrakan.",
           "buka_default": true,
           "butir": [
             {
               "judul_poin": "Kesesuaian Subjek dengan Predikat Tindakan",
-              "penjelasan_singkat": "Subjek wajib berupa pelaku sah yang secara logis mampu melakukan tindakan pada predikat.",
+              "penjelasan_singkat": "Subjek wajib berupa pelaku sah yang secara nyata mampu melakukan tindakan pada predikat.",
               "contoh_penerapan": "**Tim peneliti** menganalisis sampel tanah untuk mengukur tingkat pencemaran logam berat di kawasan industri.",
-              "jebakan_atau_catatan": "Salah: *Penelitian ini menganalisis sampel tanah* (benda abstrak atau dokumen tidak dapat melakukan tindakan meneliti).",
+              "jebakan_atau_catatan": "Salah: *Penelitian ini menganalisis sampel tanah* (dokumen atau kegiatan penelitian tidak bisa melakukan tindakan menganalisis).",
               "visual": null
             },
             {
               "judul_poin": "Kelogisan Keterangan Waktu dan Tempat",
-              "penjelasan_singkat": "Keterangan waktu dan tempat tidak boleh menduduki fungsi subjek yang dikenai tindakan manusiawi.",
-              "contoh_penerapan": "**Ketua panitia** mempersilakan narasumber utama untuk menyampaikan paparan di hadapan seluruh peserta seminar.",
-              "jebakan_atau_catatan": "Salah: *Waktu dan tempat kami persilakan* (waktu dan tempat merupakan keterangan, bukan pihak yang dipersilakan).",
+              "penjelasan_singkat": "Keterangan waktu dan tempat tidak boleh dijadikan subjek yang dikenai tindakan manusiawi.",
+              "contoh_penerapan": "**Ketua panitia** mempersilakan narasumber utama untuk menyampaikan paparan di hadapan peserta seminar.",
+              "jebakan_atau_catatan": "Salah: *Waktu dan tempat kami persilakan* (waktu dan tempat adalah keterangan, bukan orang yang bisa maju berbicara).",
               "visual": null
             },
             {
-              "judul_poin": "Ketetapan Makna Verba Aktif dan Pasif",
-              "penjelasan_singkat": "Bentuk aktif atau pasif predikat harus selaras dengan sifat subjek serta tidak bermakna ganda.",
+              "judul_poin": "Ketepatan Makna Kata Kerja Aktif dan Pasif",
+              "penjelasan_singkat": "Bentuk aktif atau pasif predikat harus selaras dengan sifat subjek dan tidak menciptakan makna bertabrakan.",
               "contoh_penerapan": "**Korban kecelakaan** segera dilarikan warga menuju unit gawat darurat rumah sakit terdekat.",
-              "jebakan_atau_catatan": "Salah: *Mayat ditemukan warga tewas* (subjek berstatus mayat sudah pasti tewas sehingga predikatnya tidak logis).",
+              "jebakan_atau_catatan": "Salah: *Mayat ditemukan warga tewas* (subjek berstatus mayat sudah pasti tewas sehingga predikatnya mubazir dan tidak logis).",
               "visual": null
             },
             {
-              "judul_poin": "Ketiadaan Kontradiksi Logis dalam Pernyataan",
-              "penjelasan_singkat": "Unsur pernyataan dalam satu kalimat dilarang saling meniadakan kebenaran satu sama lain ($P \\land \\neg P$ tidak sah).",
+              "judul_poin": "Ketiadaan Pertentangan Nalar dalam Satu Kalimat",
+              "penjelasan_singkat": "Dua bagian pernyataan dalam satu kalimat tidak boleh saling meniadakan kebenaran satu sama lain.",
               "contoh_penerapan": "**Seluruh mahasiswa** wajib mengikuti ujian akhir, **kecuali** peserta yang memperoleh dispensasi resmi dari dekan.",
-              "jebakan_atau_catatan": "Salah: *Bagi mahasiswa yang tidak hadir harap melapor* (pelaku tidak hadir mustahil melapor secara langsung).",
+              "jebakan_atau_catatan": "Salah: *Bagi mahasiswa yang tidak hadir harap melapor* (orang yang tidak hadir mustahil melapor langsung di tempat).",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Kepaduan Makna Antarklausa dan Kalimat Kompleks",
-          "ringkasan_kelompok": "Mengatur keselarasan konjungsi sebab-akibat, pertentangan, serta penarikan implikasi pada kalimat majemuk.",
+          "ringkasan_kelompok": "Menyelaraskan kata penghubung sebab-akibat, pertentangan, serta penarikan maksud tersirat pada kalimat bertingkat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Kesesuaian Konjungsi Kausalitas (Sebab-Akibat)",
-              "penjelasan_singkat": "Konjungsi sebab (*karena*) mendahului faktor pemicu, sedangkan konjungsi akibat (*sehingga*) mendahului dampak yang ditimbulkan.",
+              "judul_poin": "Kesesuaian Kata Penghubung Sebab-Akibat",
+              "penjelasan_singkat": "Kata *karena* mendahului faktor penyebab, sedangkan kata *sehingga* mendahului dampak yang ditimbulkan.",
               "contoh_penerapan": "Curah hujan ekstrem mengguyur wilayah hulu **sehingga** debit air sungai meningkat drastis pada malam hari.",
-              "jebakan_atau_catatan": "Jebakan: Menukar posisi penyebab dan dampak dengan konjungsi *karena* sehingga membalikkan hubungan kausalitas fakta bacaan.",
+              "jebakan_atau_catatan": "Jebakan: Menukar posisi penyebab dan dampak dengan kata *karena* sehingga urutan sebab-akibat di bacaan menjadi terbalik.",
               "visual": null
             },
             {
-              "judul_poin": "Ketepatan Konjungsi Pertentangan dan Konsesif",
-              "penjelasan_singkat": "Gunakan konjungsi intrakalimat (*meskipun*) atau antarkalimat (*namun*) secara tunggal untuk menyatakan hubungan berlawanan.",
-              "contoh_penerapan": "**Meskipun** anggaran penelitian terbatas, tim lapangan tetap menyelesaikan pengambilan data sesuai jadwal yang ditetapkan.",
-              "jebakan_atau_catatan": "Salah: *Meskipun anggaran terbatas, tetapi penelitian tetap berjalan* (penggunaan dua konjungsi pertentangan dalam satu kalimat).",
+              "judul_poin": "Ketepatan Kata Penghubung Pertentangan",
+              "penjelasan_singkat": "Gunakan kata penghubung pertentangan di dalam kalimat (*meskipun*) atau antarkalimat (*namun*) secara tunggal.",
+              "contoh_penerapan": "**Meskipun** anggaran penelitian terbatas, tim lapangan tetap menyelesaikan pengambilan data sesuai jadwal.",
+              "jebakan_atau_catatan": "Salah: *Meskipun anggaran terbatas, tetapi penelitian tetap berjalan* (dua kata penghubung pertentangan dipakai bersamaan dalam satu kalimat).",
               "visual": null
             },
             {
-              "judul_poin": "Penafsiran Implikasi Tersirat Kalimat Kompleks",
-              "penjelasan_singkat": "Klausa bersyarat ($P \\rightarrow Q$) hanya menjamin akibat apabila syarat terpenuhi, bukan memastikan syarat telah terjadi.",
+              "judul_poin": "Menangkap Maksud Tersirat Kalimat Bersyarat",
+              "penjelasan_singkat": "Kalimat bersyarat (*apabila..., maka...*) hanya menjamin akibat jika syarat terpenuhi, bukan memastikan syarat sudah terjadi.",
               "contoh_penerapan": "**Apabila** suku bunga acuan turun, biaya pinjaman modal usaha **akan** menjadi lebih terjangkau bagi pelaku industri.",
-              "jebakan_atau_catatan": "Jebakan: Menyimpulkan fakta pasti dari kalimat bersyarat atau membalik implikasi menjadi $Q \\rightarrow P$ secara tidak sah.",
+              "jebakan_atau_catatan": "Jebakan: Menganggap syarat pasti sudah terjadi, atau membalik logika seolah-olah biaya pinjaman turun pasti karena suku bunga turun.",
               "visual": null
             },
             {
-              "judul_poin": "Pembedaan Konjungsi Tujuan dengan Konjungsi Syarat",
-              "penjelasan_singkat": "Konjungsi tujuan (*agar*, *supaya*) menyatakan sasaran tindakan, sedangkan konjungsi syarat (*jika*, *bila*) menyatakan prasyarat.",
-              "contoh_penerapan": "Pemerintah memperketat standar emisi kendaraan bermotor **agar** tingkat polusi udara di kawasan perkotaan menurun.",
+              "judul_poin": "Membedakan Kata Penghubung Tujuan dan Syarat",
+              "penjelasan_singkat": "Kata tujuan (*agar*, *supaya*) menyatakan sasaran tindakan, sedangkan kata syarat (*jika*, *bila*) menyatakan prasyarat.",
+              "contoh_penerapan": "Pemerintah memperketat standar emisi kendaraan bermotor **agar** tingkat polusi udara di perkotaan menurun.",
               "jebakan_atau_catatan": "Salah: *Standar emisi diperketat jika polusi udara menurun* (mengubah sasaran tindakan menjadi prasyarat yang keliru).",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Perbaikan Kalimat Rancu (Kontaminasi Struktur)",
-          "ringkasan_kelompok": "Mencegah pencampuran dua pola kalimat baku yang merusak fungsi subjek atau predikat.",
+          "nama_kelompok": "Perbaikan Kalimat Rancu (Campur Aduk Dua Pola)",
+          "ringkasan_kelompok": "Mencegah penggabungan dua pola kalimat baku yang menghilangkan subjek atau merusak predikat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Kontaminasi Preposisi dengan Verba Transitif",
-              "penjelasan_singkat": "Verba transitif aktif berimbuhan *meN-* wajib langsung diikuti objek tanpa disisipi preposisi (*tentang*, *akan*, *terhadap*).",
-              "contoh_penerapan": "Rapat koordinasi nasional tersebut **membahas strategi** ketahanan pangan untuk menghadapi ancaman perubahan iklim global.",
-              "jebakan_atau_catatan": "Salah: *Membahas tentang strategi* (mencampurkan struktur transitif *membahas X* dengan struktur intransitif *berbicara tentang X*).",
+              "judul_poin": "Kata Kerja Aktif Bertemu Kata Depan",
+              "penjelasan_singkat": "Kata kerja aktif berawalan *me-* yang butuh objek wajib langsung diikuti objek tanpa disisipi kata depan (*tentang*, *akan*, *terhadap*).",
+              "contoh_penerapan": "Menteri Pertanian **membahas strategi** ketahanan pangan dalam rapat koordinasi nasional kemarin.",
+              "jebakan_atau_catatan": "Salah: *Membahas tentang strategi* (mencampur pola *membahas strategi* dengan *berbicara tentang strategi*).",
               "visual": null
             },
             {
-              "judul_poin": "Kontaminasi Preposisi Sumber dengan Verba Pelaporan",
-              "penjelasan_singkat": "Jangan menggabungkan preposisi *menurut* dengan verba pelaporan (*mengatakan*, *menyatakan*) karena menghilangkan fungsi subjek kalimat.",
+              "judul_poin": "Kata Menurut Bertemu Kata Kerja Pelaporan",
+              "penjelasan_singkat": "Jangan menggabungkan kata depan *menurut* dengan kata kerja *mengatakan* atau *menyatakan* karena menghilangkan subjek kalimat.",
               "contoh_penerapan": "**Menurut laporan bank sentral**, laju inflasi tahunan tetap berada dalam kisaran sasaran yang ditetapkan.",
-              "jebakan_atau_catatan": "Salah: *Menurut laporan menyatakan bahwa...* (gabungan dua pola baku yang membuat kalimat kehilangan subjek inti).",
+              "jebakan_atau_catatan": "Salah: *Menurut laporan menyatakan bahwa...* (menggabungkan dua pola baku sehingga kalimat kehilangan subjek inti).",
               "visual": null
             },
             {
-              "judul_poin": "Kontaminasi Pola Imbuhan Verba Tidak Baku",
-              "penjelasan_singkat": "Hindari penggabungan dua pola afiksasi berbeda pada satu kata dasar yang menghasilkan bentuk tidak baku.",
-              "contoh_penerapan": "Semua pihak sepakat **mengesampingkan** kepentingan kelompok demi kelancaran proses pengambilan keputusan bersama.",
-              "jebakan_atau_catatan": "Salah: *Mengenyampingkan* atau *memperlebarkan* (gabungan rancu prefiks *memper-* dan sufiks *-kan*; bentuk bakunya *memperlebar*).",
+              "judul_poin": "Imbuhan Ganda yang Tidak Baku",
+              "penjelasan_singkat": "Hindari penggabungan dua pola imbuhan berbeda pada satu kata dasar karena menghasilkan bentuk tidak baku.",
+              "contoh_penerapan": "Semua pihak sepakat **mengesampingkan** kepentingan kelompok demi kelancaran pengambilan keputusan bersama.",
+              "jebakan_atau_catatan": "Salah: *Mengenyampingkan* atau *memperlebarkan* (gabungan rancu awalan *memper-* dan akhiran *-kan*; bentuk bakunya *memperlebar*).",
               "visual": null
             },
             {
-              "judul_poin": "Kesejajaran Bentuk dalam Perincian (Paralelisme)",
-              "penjelasan_singkat": "Unsur-unsur yang dirinci dalam satu kalimat majemuk wajib menggunakan kelas kata dan bentuk imbuhan setara.",
+              "judul_poin": "Kesejajaran Bentuk dalam Perincian",
+              "penjelasan_singkat": "Unsur-unsur yang dirinci dalam satu kalimat majemuk wajib memakai jenis kata dan bentuk imbuhan yang setara.",
               "contoh_penerapan": "Tahapan metode ilmiah meliputi **pengumpulan** data, **pengolahan** sampel, dan **penarikan** kesimpulan secara objektif.",
-              "jebakan_atau_catatan": "Salah: *Meliputi pengumpulan data, mengolah sampel, dan penarikan kesimpulan* (mencampur bentuk nomina dengan verba aktif).",
+              "jebakan_atau_catatan": "Salah: *Meliputi pengumpulan data, mengolah sampel, dan penarikan kesimpulan* (mencampur kata benda dengan kata kerja aktif).",
               "visual": null
             }
           ]
@@ -148,7 +148,7 @@
       "nama_variasi": "Identifikasi Kalimat Tidak Logis (Subjek Tidak Dapat Melakukan Tindakan Predikat)",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Dalam pengantar seminar nasional, pembawa acara menyampaikan, 'Acara berikutnya adalah sambutan ketua panitia, waktu dan tempat kami persilakan.'",
-      "bedah_pola_markdown": "**Bedah Pola Kelogisan & Fungsi:**\nPerhatikan susunan fungsi berikut: [S] *waktu dan tempat* + [P] *kami persilakan*. Secara logis, *waktu* dan *tempat* merupakan konsep abstrak yang tidak mampu melakukan tindakan setelah dipersilakan, melainkan [S] *ketua panitia* yang bertindak sebagai pelaku utama sesuai kaidah baku EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [S] **Waktu dan tempat** [P] kami persilakan. | [K] Kepada ketua panitia, [S] **kami** [P] **persilakan**. |\n| [S] **Laporan ini** [P] **membahas** [O] dampak inflasi. | [K] Dalam laporan ini [P] **dibahas** [S] **dampak inflasi**. |\n\n**Strategi Eksekusi:** Uji kecocokan nalar antara inti [S] dan [P] dengan bertanya apakah subjek tersebut secara rasional mampu menjalankan predikat aktifnya, lalu ganti subjek benda menjadi pelaku bernyawa atau ubah predikatnya menjadi bentuk pasif.",
+      "bedah_pola_markdown": "**Bedah Pola Kelogisan & Fungsi:**\nCoba cek susunan bagian kalimatnya: [S] *waktu dan tempat* + [P] *kami persilakan*. Secara nalar, *waktu* dan *tempat* adalah hal abstrak yang tidak mungkin berjalan ke mimbar setelah dipersilakan. Pelaku yang seharusnya dipersilakan adalah [S] *ketua panitia* sesuai kaidah baku EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [S] **Waktu dan tempat** [P] kami persilakan. | [K] Kepada ketua panitia, [S] **kami** [P] **persilakan**. |\n| [S] **Laporan ini** [P] **membahas** [O] dampak inflasi. | [K] Dalam laporan ini [P] **dibahas** [S] **dampak inflasi**. |\n\n**Strategi Eksekusi:** Uji kecocokan logika antara inti [S] dan [P]. Tanyakan apakah subjek tersebut memang bisa melakukan tindakan aktifnya; jika tidak, ganti subjeknya menjadi pelaku manusia atau ubah predikatnya menjadi bentuk pasif.",
       "kunci_pembeda": "Memastikan inti subjek [S] secara masuk akal mampu melakukan atau mengalami tindakan yang dinyatakan oleh predikat [P].",
       "visual": null
     },
@@ -157,7 +157,7 @@
       "nama_variasi": "Evaluasi Kesesuaian Hubungan Sebab-Akibat dan Pertentangan Antar-Klausa dalam Bacaan",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Curah hujan di wilayah hulu meningkat drastis selama sepekan terakhir, **sedangkan** debit air sungai di hilir meluap hingga merendam permukiman warga.",
-      "bedah_pola_markdown": "**Bedah Pola Relasi Klausa & Fungsi:**\nPerhatikan hubungan dua klausa dalam kalimat berikut: [Klausa 1] *Curah hujan meningkat drastis* + [Konjungsi] ***sehingga*** + [Klausa 2] *debit air sungai meluap*. Klausa kedua merupakan dampak langsung dari klausa pertama, sehingga pemakaian kata penghubung pertentangan (*sedangkan*) merusak kepaduan makna kalimat sesuai kaidah EYD V dan KBBI VI.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Hujan turun deras, **sedangkan** jalan raya tergenang banjir. | Hujan turun deras **sehingga** jalan raya tergenang banjir. |\n| Anggaran riset terbatas, **sehingga** inovasi tetap berjalan. | Anggaran riset terbatas, **tetapi** inovasi tetap berjalan. |\n\n**Strategi Eksekusi:** Identifikasi arah gagasan antara induk kalimat dan anak kalimat; gunakan konjungsi kausal (*karena, sehingga, akibatnya*) bila gagasan kedua menjadi hasil, serta konjungsi pertentangan (*padahal, sedangkan, namun*) bila kedua gagasan berkebalikan.",
+      "bedah_pola_markdown": "**Bedah Pola Relasi Klausa & Fungsi:**\nPerhatikan alur logika dua bagian kalimat ini: [Klausa 1] *Curah hujan meningkat drastis* + [Penghubung] ***sehingga*** + [Klausa 2] *debit air sungai meluap*. Bagian kedua adalah akibat langsung dari bagian pertama. Memakai kata penghubung pertentangan (*sedangkan*) justru merusak kepaduan maknanya.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Hujan turun deras, **sedangkan** jalan raya tergenang banjir. | Hujan turun deras **sehingga** jalan raya tergenang banjir. |\n| Anggaran riset terbatas, **sehingga** inovasi tetap berjalan. | Anggaran riset terbatas, **tetapi** inovasi tetap berjalan. |\n\n**Strategi Eksekusi:** Baca arah gagasan antara induk kalimat dan anak kalimat. Gunakan penghubung sebab-akibat (*karena, sehingga, akibatnya*) jika gagasan kedua adalah dampak, dan gunakan penghubung pertentangan (*padahal, sedangkan, namun*) jika keduanya berlawanan.",
       "kunci_pembeda": "Menyelaraskan kata penghubung antarklausa dengan arah logika gagasan apakah berupa hubungan sebab-akibat atau pertentangan.",
       "visual": null
     },
@@ -166,7 +166,7 @@
       "nama_variasi": "Penafsiran Maksud Tersirat dari Kalimat Kompleks dalam Wacana Akademik",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Kendati subsidi kendaraan listrik telah diperluas, adopsi di kalangan masyarakat berpenghasilan menengah ke bawah tetap tersendat karena keterbatasan stasiun pengisian daya di luar kota besar.",
-      "bedah_pola_markdown": "**Bedah Pola Kalimat Kompleks & Fungsi:**\nPisahkan inti gagasan dari klausa perluasannya: [K-konsesif] *Kendati subsidi diperluas*, [S] *adopsi masyarakat* + [P] *tetap tersendat* + [K-sebab] *karena keterbatasan stasiun pengisian*. Struktur bertingkat ini menyiratkan bahwa insentif harga saja belum cukup mendorong peralihan kendaraan tanpa dukungan infrastruktur pengisian yang merata sesuai konteks bacaan.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyimpulkan **subsidi kendaraan listrik gagal total** di semua wilayah. | Menyimpulkan **insentif finansial perlu diimbangi pemerataan fasilitas**. |\n| Menafsirkan **stasiun pengisian hanya tersedia di kota besar saja**. | Menafsirkan **minimnya stasiun pengisian menghambat adopsi luar kota**. |\n\n**Strategi Eksekusi:** Pangkas seluruh klausa keterangan [K] untuk menemukan inti [S]-[P] kalimat terlebih dahulu, lalu gabungkan maknanya dengan kata kunci penanda hubungan (*kendati, karena, akibatnya*) tanpa melebih-lebihkan cakupan fakta teks.",
+      "bedah_pola_markdown": "**Bedah Pola Kalimat Kompleks & Fungsi:**\nPisahkan dulu inti kalimat dari keterangan tambahannya: [K-pertentangan] *Kendati subsidi diperluas*, [S] *adopsi masyarakat* + [P] *tetap tersendat* + [K-sebab] *karena keterbatasan stasiun pengisian*. Susunan bertingkat ini menyiratkan bahwa potongan harga saja belum cukup mendorong peralihan kendaraan tanpa dukungan fasilitas pengisian yang merata.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| Menyimpulkan **subsidi kendaraan listrik gagal total** di semua wilayah. | Menyimpulkan **insentif finansial perlu diimbangi pemerataan fasilitas**. |\n| Menafsirkan **stasiun pengisian hanya tersedia di kota besar saja**. | Menafsirkan **minimnya stasiun pengisian menghambat adopsi luar kota**. |\n\n**Strategi Eksekusi:** Pangkas semua anak kalimat keterangan [K] untuk menangkap inti [S]-[P] terlebih dahulu. Setelah itu, gabungkan maknanya dengan kata kunci penanda hubungan (*kendati, karena, akibatnya*) tanpa melebih-lebihkan fakta teks.",
       "kunci_pembeda": "Membedah relasi logis antara inti [S]-[P] dan anak kalimat perluasan untuk menarik makna tersirat tanpa melampaui batasan premis teks.",
       "visual": null
     },
@@ -175,8 +175,8 @@
       "nama_variasi": "Perbaikan Kalimat Rancu (Pencampuran Dua Struktur Kalimat yang Berbeda)",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "**Menurut** laporan Badan Pusat Statistik **menyatakan bahwa** tingkat pengangguran terbuka menurun pada kuartal ketiga tahun ini.",
-      "bedah_pola_markdown": "**Bedah Pola Kerancuan & Fungsi:**\nKalimat di atas mencampur dua struktur baku menjadi satu konstruksi rancu sehingga kehilangan unsur subjek: [K] *Menurut laporan BPS* + [P] *menyatakan bahwa...*. Sesuai kaidah EYD V dan KBBI VI, kata depan *menurut* membentuk keterangan [K] sehingga tidak boleh diikuti kata kerja aktif *menyatakan*, atau hapus *menurut* agar [S] *laporan BPS* berdiri utuh.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [K] **Menurut** pakar [P] **mengatakan** krisis air mengancam. | [S] **Pakar** [P] **mengatakan** krisis air mengancam. |\n| [K] **Meskipun** lelah, [Konj] **tetapi** [S] ia [P] tetap bekerja. | [K] **Meskipun** lelah, [S] ia [P] tetap bekerja. |\n\n**Strategi Eksekusi:** Pecah kalimat rancu menjadi dua versi struktur dasar yang terpisah, lalu buang salah satu kata tugas atau imbuhan yang bertabrakan agar pola [S]-[P]-[O]-[K] kembali bersih dan tunggal.",
-      "kunci_pembeda": "Memisahkan dua pola sintaksis yang bertabrakan dan menghapus kata tugas berlebih agar struktur kalimat memiliki subjek serta predikat yang utuh.",
+      "bedah_pola_markdown": "**Bedah Pola Kerancuan & Fungsi:**\nKalimat di atas mencampur dua pola baku menjadi satu sehingga kehilangan subjek: [K] *Menurut laporan BPS* + [P] *menyatakan bahwa...*. Sesuai EYD V dan KBBI VI, kata depan *menurut* membentuk keterangan [K] sehingga tidak boleh bertemu kata kerja aktif *menyatakan*. Cukup buang kata *menurut* agar [S] *laporan BPS* berdiri utuh.\n\n| Salah (Before) | Benar (After - EYD V & KBBI VI) |\n| :--- | :--- |\n| [K] **Menurut** pakar [P] **mengatakan** krisis air mengancam. | [S] **Pakar** [P] **mengatakan** krisis air mengancam. |\n| [K] **Meskipun** lelah, [Konj] **tetapi** [S] ia [P] tetap bekerja. | [K] **Meskipun** lelah, [S] ia [P] tetap bekerja. |\n\n**Strategi Eksekusi:** Urai kalimat rancu menjadi dua versi pola dasar yang terpisah. Pilih salah satu pola saja, lalu hapus kata tugas yang bertabrakan agar susunan [S]-[P]-[O]-[K] kembali bersih.",
+      "kunci_pembeda": "Memisahkan dua pola kalimat yang bertabrakan dan menghapus kata tugas berlebih agar struktur kalimat memiliki subjek serta predikat yang utuh.",
       "visual": null
     }
   ],
@@ -190,14 +190,14 @@
       "tipe_soal_utbk": "Standard MC (5 Opsi)",
       "pertanyaan_markdown": "Perhatikan kalimat berikut!\n\n> \"Dalam jurnal kesehatan masyarakat tersebut **membahas tentang** efektivitas vaksinasi musiman terhadap penurunan angka rawat inap lansia.\"\n\nPerbaikan yang PALING TEPAT agar kalimat di atas menjadi logis dan baku sesuai kaidah EYD V adalah ....",
       "opsi_jawaban": [
-        "A. menghapus kata *dalam* dan kata *tentang* sehingga inti kalimat menjadi jelas",
-        "B. mengganti kata *membahas* menjadi *terbahas* tanpa menghapus kata *dalam*",
-        "C. menghilangkan kata *tersebut* agar pelaku tindakan menjadi lebih spesifik",
-        "D. menambahkan kata *yang* sebelum kata *membahas* untuk memperjelas keterangan",
-        "E. mengganti kata *tentang* menjadi *mengenai* agar selaras dengan predikat aktif"
+        "A. mengganti frasa *membahas tentang* menjadi kata kerja pasif *dibahas*",
+        "B. menghapus kata *dalam* dan *tentang* agar *jurnal* menjadi pelaku aktif",
+        "C. menghilangkan kata *tersebut* supaya subjek kalimat lebih ringkas",
+        "D. menambahkan kata *yang* sebelum *membahas* untuk memperjelas subjek",
+        "E. mengganti kata *tentang* menjadi *mengenai* agar selaras dengan predikat"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Kalimat tersebut tidak memiliki pelaku yang jelas karena diawali kata depan *dalam* sekaligus mencampur dua pola kalimat melalui gabungan kata kerja aktif *membahas* dan kata depan *tentang*. Menghapus kata *dalam* serta *tentang* (**opsi A**) mengembalikan struktur logis pelaku–tindakan (*Jurnal kesehatan masyarakat tersebut membahas efektivitas vaksinasi...*). **Opsi B** dan **E** tetap menyisakan pencampuran struktur, sedangkan **opsi C** dan **D** menghilangkan inti tindakan kalimat. Jadi, jawaban yang tepat adalah **A**.",
+      "bedah_cepat_markdown": "Kalimat ini punya dua masalah sekaligus: pertama, *jurnal* adalah benda mati yang tidak bisa melakukan tindakan aktif *membahas*; kedua, kata kerja aktif *membahas* tidak boleh bertemu kata depan *tentang*. Mengganti *membahas tentang* menjadi bentuk pasif *dibahas* (**opsi A**) langsung membereskan keduanya: *Dalam jurnal kesehatan masyarakat tersebut* menjadi keterangan tempat [K], *dibahas* menjadi predikat pasif [P], dan *efektivitas vaksinasi musiman...* menjadi subjek [S] yang logis. **Opsi B** adalah jebakan klasik karena membiarkan benda mati (*jurnal*) bertindak seperti manusia, sedangkan **opsi C, D, dan E** tidak memperbaiki kerancuan predikatnya. Jadi, jawaban yang tepat adalah **A**.",
       "visual": null
     },
     {
@@ -215,7 +215,7 @@
         "E. Bagian awal kalimat (2) tidak memiliki pelaku sehingga kata *tetapi* wajib diubah menjadi *melainkan*."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Kalimat (2) mempertentangkan keberhasilan menekan pencemaran dengan perlunya pemantauan berkala. Namun, pemakaian kata penghubung *meskipun* di awal dan *tetapi* di tengah secara bersamaan menciptakan pencampuran dua struktur kalimat baku (**opsi A** benar, **opsi D** salah). Cukup gunakan salah satu kata penghubung saja agar hubungan pertentangan tetap padu. **Opsi B** dan **C** keliru mengubah hubungan pertentangan menjadi sebab-akibat, sedangkan **opsi E** salah mengidentifikasi bagian yang rancu.",
+      "bedah_cepat_markdown": "Kalimat (2) mempertentangkan keberhasilan menekan pencemaran sungai dengan perlunya pemantauan ekosistem secara berkala. Masalahnya, kata penghubung *meskipun* di awal dan *tetapi* di tengah dipakai bersamaan sehingga mencampur dua pola kalimat baku (**opsi A** benar, **opsi D** salah). Cukup gunakan salah satu kata penghubung saja agar kalimat tetap padu. **Opsi B** dan **C** keliru karena mengubah hubungan pertentangan menjadi sebab-akibat, sedangkan **opsi E** salah menunjuk letak kesalahannya. Jadi, jawaban yang tepat adalah **A**.",
       "visual": null
     },
     {
@@ -233,7 +233,7 @@
         "E. Peningkatan efisiensi panel surya secara otomatis menghapus ketergantungan industri pada energi fosil."
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Inti kalimat tersebut menyatakan ketergantungan industri berat pada bahan bakar fosil belum tergantikan, dengan keterangan alasan berupa kebutuhan energi besar yang stabil sepanjang waktu. Hal ini menyiratkan bahwa panel surya komersial saat ini belum sanggup memenuhi tuntutan pasokan daya besar dan stabil tersebut (**opsi A**). **Opsi B** dan **E** bertentangan langsung dengan fakta teks, sedangkan **opsi C** dan **D** menambahkan klaim di luar informasi kalimat. Jadi, jawaban yang tepat adalah **A**.",
+      "bedah_cepat_markdown": "Inti kalimat ini menyatakan bahwa ketergantungan industri berat pada bahan bakar fosil belum tergantikan, dengan alasan kebutuhan energi besar yang stabil sepanjang waktu. Artinya, panel surya komersial saat ini belum sanggup memenuhi tuntutan daya besar dan stabil tersebut (**opsi A**). **Opsi B** dan **E** bertentangan langsung dengan isi kalimat, sedangkan **opsi C** dan **D** menambah kesimpulan baru di luar informasi teks. Jadi, jawaban yang tepat adalah **A**.",
       "visual": null
     }
   ]

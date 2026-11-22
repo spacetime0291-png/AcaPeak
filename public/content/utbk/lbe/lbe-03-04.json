@@ -15,133 +15,133 @@
         "Tidak, Text 2 tetap setuju urgensi penghijauan kota"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Banyak peserta terjebak menyimpulkan dua teks yang berdebat pasti bertolak belakang 100%, padahal kalimat pembuka Text 2 mengakui bahwa integrasi tanaman di kota tetap vital (undeniably vital)."
+      "penjelasan_kilat": "Jangan terkecoh menganggap dua teks yang berdebat pasti bertolak belakang 100%. Kalimat pertama Text 2 justru mengakui bahwa menanam vegetasi di kota tetap sangat penting (undeniably vital)—mereka hanya beda pendapat soal caranya."
     },
-    "konsep_inti_markdown": "- **Tujuan Soal:** Menguji sintesis, hubungan logis, titik temu, dan kontras antara dua teks bertopik sama.\n- **Langkah 30 Detik:**\n  1. Identifikasi tesis & *tone* Text 1 (pro/deskriptif).\n  2. Baca kalimat awal & akhir Text 2 untuk menangkap pivot hubungan (*While..., Rather than...*).\n  3. Peta irisan: **Sama** (tujuan/masalah) vs **Beda** (solusi/metode/dampak).\n- **Aturan Emas:** Opsi benar wajib didukung *kedua* teks untuk soal sintesis, atau akurat memetakan masing-masing penulis tanpa mencampur klaim.",
+    "konsep_inti_markdown": "- **Target Soal:** Menguji kemampuanmu membandingkan dua wacana bertopik sama—mulai dari titik temu, perbedaan sikap, hingga kesimpulan gabungan.\n- **Taktik Baca 30 Detik:**\n  1. Tangkap gagasan utama dan sikap penulis Text 1 (biasanya pro, optimis, atau memaparkan fenomena).\n  2. Langsung baca kalimat pertama dan terakhir Text 2 untuk menangkap kata transisi kunci (*While..., However..., Rather than...*).\n  3. Petakan irisannya: **Sepakat** di bagian mana (masalah/tujuan) vs. **Beda** di bagian mana (solusi/metode/dampak).\n- **Aturan Emas:** Untuk soal kesimpulan gabungan, jawaban benar wajib didukung bukti dari **kedua teks sekaligus**, bukan cuma satu teks.",
     "radar_jebakan_utbk": [
-      "Cross-Text Attribution (Tukar Klaim): Mengatribusikan data atau argumen Text 1 seolah-olah milik Text 2, atau sebaliknya.",
-      "False Dichotomy (Kontradiksi Total): Menganggap kedua penulis tidak sepakat pada hal apa pun, padahal keduanya sepakat pada premis dasar."
+      "Tukar Klaim (Cross-Text Attribution): Menukar fakta atau argumen—data milik Text 1 seolah-olah diucapkan penulis Text 2, atau sebaliknya.",
+      "Kontradiksi Total (False Dichotomy): Menganggap kedua penulis bertentangan 100%, padahal mereka sepakat pada masalah dasarnya."
     ],
     "stimulus_utama_bersama": "**Text 1**\nRapid urbanization has severely intensified the urban heat island effect, prompting architects to integrate living vegetation directly into high-rise structures. Known as vertical forests, these residential buildings feature reinforced cantilevered balconies planted with thousands of trees and native shrubs. Proponents argue that vertical forests capture atmospheric carbon dioxide, filter fine particulate matter, and reduce indoor cooling energy costs by up to 30 percent during peak summer months. In a 2023 longitudinal field study of three high-rise towers in Milan, environmental engineers recorded a localized ambient temperature drop of 2.5 degrees Celsius immediately surrounding the foliage-covered facades compared to adjacent concrete structures. Furthermore, acoustic sensors confirmed that dense exterior greenery dampens street-level traffic noise by nearly 15 decibels. Consequently, urban planners increasingly view vertical forests not merely as luxury aesthetic landmarks, but as essential, scalable infrastructure for climate resilience in densely populated metropolises where ground-level park space is scarce.\n\n**Text 2**\nWhile integrating greenery into dense cityscapes is undeniably vital for mitigating urban heat, celebrating vertical forests as a scalable climate solution overlooks substantial ecological and socioeconomic trade-offs. A lifecycle carbon audit conducted by sustainability researchers across twelve global green-building projects revealed that supporting mature trees dozens of stories above ground requires heavily reinforced steel and concrete slabs. Manufacturing this extra structural material generates embodied carbon emissions that can take over four decades of tree growth to offset. Additionally, elevated plantings demand automated high-pressure irrigation pumps, specialized arborist maintenance, and synthetic fertilizers, driving up operational costs and restricting residency to affluent buyers. Rather than investing millions into exclusive botanical skyscrapers, municipal governments would achieve far broader cooling and air-quality benefits by expanding ground-level street canopies and converting underutilized asphalt lots into accessible neighborhood parks, which require minimal structural reinforcement and serve entire urban communities equitably.",
     "visual": null,
     "detail_materi_lengkap": {
-      "judul_blok": "Taksonomi Pola Hubungan & Analisis Paired Passages LBE",
-      "subjudul_ringkas": "Panduan praktis mengenali interaksi antar-teks, titik temu, respons penulis, dan sintesis kesimpulan UTBK.",
+      "judul_blok": "Peta Pola Hubungan & Analisis Paired Passages LBE",
+      "subjudul_ringkas": "Panduan praktis membaca hubungan antar-teks, mencari titik temu, menebak respons penulis, dan menarik kesimpulan gabungan.",
       "mode_tampilan": "katalog_sinyal_pola",
       "label_kolom": {
-        "kolom_1": "Kategori / Penanda Teks",
-        "kolom_2": "Contoh Potongan / Sinyal",
-        "kolom_3": "Cara Bedakan / Jebakan"
+        "kolom_1": "Pola / Fokus Soal",
+        "kolom_2": "Sinyal & Contoh di Teks",
+        "kolom_3": "Cara Bedakan & Jebakan"
       },
       "kelompok": [
         {
-          "nama_kelompok": "Pola Hubungan Logis Text 1 dan Text 2",
-          "ringkasan_kelompok": "Mengidentifikasi fungsi retoris Text 2 terhadap gagasan utama pada Text 1.",
+          "nama_kelompok": "Pola Hubungan Text 1 dan Text 2",
+          "ringkasan_kelompok": "Mengenali cara Text 2 merespons gagasan utama pada Text 1—apakah mendukung, membantah, atau memberi catatan.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Sanggahan atau Kontra-Argumen (Refutation)",
-              "penjelasan_singkat": "Text 2 menolak klaim utama Text 1 dengan menyajikan bukti tandingan atau kelemahan logika.",
-              "contoh_penerapan": "Text 1 memuji mobil listrik; Text 2 dibuka dengan: **\"However, battery mining severely damages ecosystems.\"**",
-              "jebakan_atau_catatan": "Jangan pilih 'memperluas topik' jika fokus Text 2 mematahkan validitas kesimpulan Text 1.",
+              "judul_poin": "Bantahan atau Kontra-Argumen (Refutation)",
+              "penjelasan_singkat": "Text 2 menolak klaim utama Text 1 dengan membawa bukti tandingan atau menunjukkan kelemahan logikanya.",
+              "contoh_penerapan": "Text 1 memuji mobil listrik; Text 2 langsung membantah: **\"However, battery mining severely damages ecosystems.\"**",
+              "jebakan_atau_catatan": "Jangan pilih opsi 'memperluas topik' kalau tujuan utama Text 2 jelas mematahkan kesimpulan Text 1.",
               "visual": null
             },
             {
-              "judul_poin": "Contoh Kasus Spesifik (Exemplification)",
-              "penjelasan_singkat": "Text 1 membahas teori umum, lalu Text 2 mengujinya lewat studi kasus nyata.",
-              "contoh_penerapan": "Text 1 menjelaskan konsep *urban heat island*; Text 2 memaparkan **\"A 2023 study in Tokyo measured...\"**",
-              "jebakan_atau_catatan": "Bedakan dengan 'bantahan': studi kasus mendukung atau mengilustrasikan prinsip Text 1, bukan menolaknya.",
+              "judul_poin": "Studi Kasus Spesifik (Exemplification)",
+              "penjelasan_singkat": "Text 1 membahas konsep atau teori umum, lalu Text 2 mengujinya lewat contoh nyata di lapangan.",
+              "contoh_penerapan": "Text 1 menjelaskan efek panas perkotaan; Text 2 memaparkan **\"A 2023 study in Tokyo measured...\"**",
+              "jebakan_atau_catatan": "Bedakan dengan bantahan: studi kasus di sini berfungsi memperjelas atau menguji teori Text 1, bukan menolaknya.",
               "visual": null
             },
             {
-              "judul_poin": "Perluasan atau Nuansa Tambahan (Qualification)",
-              "penjelasan_singkat": "Text 2 menyetujui premis Text 1 tetapi menambahkan batasan, syarat, atau perspektif baru.",
-              "contoh_penerapan": "Text 1 menyoroti manfaat AI medis; Text 2 menimpali: **\"While accurate, AI still requires human oversight.\"**",
-              "jebakan_atau_catatan": "Pengecoh sering melabeli hubungan ini sebagai penolakan total padahal Text 2 mengakui manfaat awalnya.",
+              "judul_poin": "Catatan Tambahan & Batasan (Qualification)",
+              "penjelasan_singkat": "Text 2 setuju pada poin dasar Text 1, tetapi menambahkan syarat, batasan, atau efek samping yang terlewat.",
+              "contoh_penerapan": "Text 1 memuji akurasi AI medis; Text 2 menimpali: **\"While accurate, AI still requires human oversight.\"**",
+              "jebakan_atau_catatan": "Opsi pengecoh sering melabeli hubungan ini sebagai penolakan total, padahal Text 2 mengakui manfaat awalnya.",
               "visual": null
             },
             {
               "judul_poin": "Masalah dan Solusi (Problem-Solution)",
-              "penjelasan_singkat": "Text 1 memaparkan krisis atau hambatan teknis, sedangkan Text 2 menawarkan intervensi penyelesaiannya.",
+              "penjelasan_singkat": "Text 1 memaparkan krisis atau hambatan teknis, sedangkan Text 2 menawarkan cara penyelesaiannya.",
               "contoh_penerapan": "Text 1 menguraikan krisis sampah plastik laut; Text 2 mengusulkan **\"Enzymatic recycling offers a scalable remedy.\"**",
-              "jebakan_atau_catatan": "Pastikan Text 2 benar-benar mengajukan solusi konkret, bukan sekadar menambah daftar dampak negatif.",
+              "jebakan_atau_catatan": "Pastikan Text 2 benar-benar menawarkan solusi konkret, bukan sekadar menambah daftar dampak buruk.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Titik Temu, Kontras, dan Prediksi Respons Penulis",
-          "ringkasan_kelompok": "Memetakan kesepakatan, perbedaan posisi, dan reaksi logis penulis terhadap klaim teks lain.",
+          "ringkasan_kelompok": "Memetakan di mana kedua penulis sepakat, di mana mereka berseberangan, dan bagaimana reaksi mereka jika berdialog.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Kesepakatan Premis Dasar (Shared Ground)",
-              "penjelasan_singkat": "Kedua penulis mengakui fenomena atau urgensi masalah yang sama meski berbeda cara menyikapinya.",
-              "contoh_penerapan": "Keduanya mengakui: **\"Global temperatures have risen steadily\"** sebelum berdebat soal kebijakan pajak karbon.",
-              "jebakan_atau_catatan": "Jebakan umum: opsi benar hanya disebut eksplisit di satu teks, bukan disetujui keduanya.",
+              "judul_poin": "Kesepakatan Masalah Dasar (Shared Ground)",
+              "penjelasan_singkat": "Kedua penulis mengakui fenomena atau urgensi masalah yang sama, meski beda pendapat soal jalan keluarnya.",
+              "contoh_penerapan": "Keduanya sepakat **\"Global temperatures have risen steadily\"** sebelum berdebat soal efektivitas pajak karbon.",
+              "jebakan_atau_catatan": "Jebakan klasik: opsi pengecoh hanya disebut di satu teks saja, bukan disetujui kedua penulis.",
               "visual": null
             },
             {
               "judul_poin": "Titik Konflik Inti (Point of Disagreement)",
-              "penjelasan_singkat": "Kedua teks bertentangan langsung pada penyebab utama, efektivitas solusi, atau prioritas tindakan.",
+              "penjelasan_singkat": "Kedua teks bertentangan langsung soal penyebab utama, efektivitas solusi, atau prioritas tindakan.",
               "contoh_penerapan": "Text 1 menilai subsidi efektif; Text 2 menegaskan **\"Subsidies merely distort market prices without cutting emissions.\"**",
-              "jebakan_atau_catatan": "Waspadai opsi yang menukar posisi: mengklaim Penulis 1 setuju pada gagasan Penulis 2.",
+              "jebakan_atau_catatan": "Waspadai opsi yang menukar posisi: mengklaim Penulis 1 setuju pada ide Penulis 2.",
               "visual": null
             },
             {
               "judul_poin": "Prediksi Respons Penulis Text 2 (Likely Response)",
-              "penjelasan_singkat": "Simpulkan reaksi Penulis 2 terhadap kutipan Text 1 berdasarkan prinsip argumen utamanya.",
+              "penjelasan_singkat": "Tebak reaksi Penulis 2 terhadap kutipan spesifik Text 1 berdasarkan prinsip argumen utamanya.",
               "contoh_penerapan": "Menanggapi klaim efisiensi Text 1, Penulis 2 berargumen **\"Such gains are unsustainable without labor protections.\"**",
-              "jebakan_atau_catatan": "Hindari respons ekstrem (menolak mutlak) jika nada Text 2 bersifat hati-hati atau bersyarat.",
+              "jebakan_atau_catatan": "Hindari respons ekstrem (menolak mentah-mentah) jika nada Text 2 sebenarnya hati-hati dan bersyarat.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Sinyal Sintesis Kesimpulan Gabungan",
-          "ringkasan_kelompok": "Menggabungkan fakta dari kedua wacana untuk menarik kesimpulan baru yang sahih.",
+          "nama_kelompok": "Sinyal Kesimpulan Gabungan Lintas Teks",
+          "ringkasan_kelompok": "Menggabungkan fakta dari kedua wacana untuk menarik kesimpulan baru yang logis dan akurat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Kesimpulan Silogisme Lintas Teks (Cross-Text Inference)",
-              "penjelasan_singkat": "Gabungkan premis spesifik Text 1 dengan aturan umum Text 2 untuk menemukan simpulan valid.",
-              "contoh_penerapan": "Text 1: **\"Species X nests only in mangroves.\"** Text 2: **\"Mangroves declined 40%.\"** Simpulan: habitat X menyusut.",
-              "jebakan_atau_catatan": "Simpulan sahih wajib menggunakan jangkar dari kedua teks; jika cukup satu teks, opsi salah.",
+              "judul_poin": "Kesimpulan Gabungan Lintas Teks (Cross-Text Inference)",
+              "penjelasan_singkat": "Gabungkan fakta spesifik dari Text 1 dengan kondisi umum di Text 2 untuk menemukan kesimpulan baru yang sah.",
+              "contoh_penerapan": "Text 1: **\"Species X nests only in mangroves.\"** Text 2: **\"Mangroves declined 40%.\"** Simpulan: habitat Species X menyusut.",
+              "jebakan_atau_catatan": "Kesimpulan wajib memakai potongan info dari kedua teks. Jika cukup pakai satu teks saja, opsi itu salah.",
               "visual": null
             },
             {
-              "judul_poin": "Konsensus Implikasi Kebijakan (Shared Implication)",
-              "penjelasan_singkat": "Kedua teks secara tidak langsung mengarah pada kebutuhan tindakan atau rekomendasi serupa.",
-              "contoh_penerapan": "Text 1 dan Text 2 sama-sama menyiratkan perlunya **\"stricter regulatory frameworks\"** bagi teknologi rekayasa genetika.",
-              "jebakan_atau_catatan": "Tolak opsi berlabel *always*, *only*, atau *prove* yang melampaui cakupan bukti kedua teks.",
+              "judul_poin": "Arah Kebijakan yang Sama (Shared Implication)",
+              "penjelasan_singkat": "Walau beda sudut pandang, kedua teks secara tidak langsung mengarah pada rekomendasi tindakan serupa.",
+              "contoh_penerapan": "Text 1 dan Text 2 sama-sama menyiratkan perlunya **\"stricter regulatory frameworks\"** untuk teknologi rekayasa genetika.",
+              "jebakan_atau_catatan": "Tolak opsi yang memakai kata mutlak seperti *always*, *only*, atau *prove* karena melampaui bukti teks.",
               "visual": null
             }
           ]
         },
         {
           "nama_kelompok": "Perbandingan Metode, Nada (Tone), dan Cakupan (Scope)",
-          "ringkasan_kelompok": "Membedakan pendekatan riset, sikap emosional, serta skala bahasan antar-teks.",
+          "ringkasan_kelompok": "Membedakan cara penulis membuktikan argumen, sikap emosionalnya, serta luas bahasan tiap teks.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Perbedaan Metodologi (Empirical vs. Theoretical)",
-              "penjelasan_singkat": "Bandingkan apakah teks bertumpu pada data kuantitatif eksperimen atau analisis konseptual/historis.",
+              "judul_poin": "Beda Cara Pembuktian (Data Lapangan vs. Teori)",
+              "penjelasan_singkat": "Cek apakah teks bertumpu pada angka hasil eksperimen lapangan atau analisis konsep dan sejarah.",
               "contoh_penerapan": "Text 1 memakai **\"randomized controlled trials (n=500)\"**, sedangkan Text 2 menganalisis **\"philosophical frameworks of ethics.\"**",
-              "jebakan_atau_catatan": "Jangan anggap teks teoretis 'tidak ilmiah' atau 'bias'; keduanya hanya berbeda jenis pembuktian.",
+              "jebakan_atau_catatan": "Jangan anggap teks berbasis teori itu 'tidak ilmiah' atau 'bias'; keduanya hanya memakai jenis bukti yang berbeda.",
               "visual": null
             },
             {
-              "judul_poin": "Kontras Nada Penulis (Objective vs. Critical)",
-              "penjelasan_singkat": "Deteksi kata sifat evaluatif untuk membedakan teks laporan netral dengan teks persuasif/kritis.",
+              "judul_poin": "Beda Nada Sikap Penulis (Netral vs. Kritis)",
+              "penjelasan_singkat": "Perhatikan pilihan kata penilaian penulis untuk membedakan laporan netral dengan kritik tajam.",
               "contoh_penerapan": "Text 1 netral (**\"Data indicate a shift\"**); Text 2 kritis (**\"This reckless policy ignores communities.\"**).",
-              "jebakan_atau_catatan": "Pengecoh sering menyebut teks analitis kritis sebagai *hostile* atau *cynical* yang terlalu emosional.",
+              "jebakan_atau_catatan": "Pengecoh sering melabeli kritik akademis sebagai *hostile* (bermusuhan) atau *cynical* yang terlalu emosional.",
               "visual": null
             },
             {
-              "judul_poin": "Perbedaan Cakupan Bahasan (Macro vs. Micro Scope)",
-              "penjelasan_singkat": "Identifikasi skala fokus: tren global/jangka panjang versus dampak lokal/individu.",
+              "judul_poin": "Beda Cakupan Bahasan (Makro vs. Mikro)",
+              "penjelasan_singkat": "Identifikasi skala bahasan: tren global jangka panjang versus dampak lokal pada kelompok tertentu.",
               "contoh_penerapan": "Text 1 memotret **\"worldwide supply chain trends\"**, sementara Text 2 menyoroti **\"smallholder farmers in Java.\"**",
-              "jebakan_atau_catatan": "Cakupan sempit pada Text 2 tidak otomatis berarti Text 2 membantah tren global Text 1.",
+              "jebakan_atau_catatan": "Fokus lokal di Text 2 tidak otomatis berarti Text 2 membantah tren global yang dibahas Text 1.",
               "visual": null
             }
           ]
@@ -155,8 +155,8 @@
       "nama_variasi": "Relationship Between Text 1 and Text 2",
       "kategori_variasi": "Inti",
       "stimulus_mini": "How does Text 2 primarily relate to the argument presented in Text 1 regarding vertical forests?",
-      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Kalimat Kunci Text 1 (akhir):** *\"urban planners increasingly view vertical forests... as essential, scalable infrastructure for climate resilience.\"* (Klaim optimis bahwa hutan vertikal adalah solusi skalabel).\n- **Kalimat Kunci Text 2 (awal):** *\"While integrating greenery... is undeniably vital... celebrating vertical forests as a scalable climate solution overlooks substantial ecological and socioeconomic trade-offs.\"*\n\n**Strategi Parafrasa Opsi Benar:**\nKata kunci *overlooks substantial... trade-offs* dan *Rather than investing millions...* diparafrasa menjadi *challenges the scalability of vertical forests by highlighting hidden costs and proposing an alternative* (mengkritisi kelayakan solusi Text 1 dan menawarkan alternatif taman kota).\n\n**Ciri Opsi Jebakan:**\n- **Terlalu Ekstrem:** Menyebut Text 2 sepenuhnya membantah data suhu $2,5^{\\circ}\\text{C}$ di Text 1 (*completely refutes the empirical measurements*).\n- **Salah Arah:** Menyebut Text 2 memberikan contoh kasus pendukung (*provides additional supporting evidence*).",
-      "kunci_pembeda": "Fokus pada fungsi retoris Text 2 terhadap tesis utama Text 1 (mendukung, memperluas, mengkritisi, atau memberi solusi tandingan) melalui kata hubung transisi.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n- **Cek kesimpulan Text 1:** Lihat kalimat terakhirnya: *\"urban planners increasingly view vertical forests... as essential, scalable infrastructure for climate resilience.\"* Intinya, Text 1 optimis hutan vertikal bisa jadi solusi massal perubahan iklim.\n- **Lompat ke pembuka Text 2:** Perhatikan pivot kontrasnya: *\"While integrating greenery... is undeniably vital... celebrating vertical forests as a scalable climate solution overlooks substantial ecological and socioeconomic trade-offs.\"* Di bagian akhir, Text 2 juga menyarankan taman permukaan tanah (*ground-level street canopies*).\n\n**Cara Menemukan Opsi Benar:**\nCari parafrasa yang menangkap dua aksi Text 2 sekaligus: mengkritisi kelayakan solusi Text 1 dan menawarkan alternatif. Contohnya: *challenges the scalability of vertical forests by highlighting hidden costs and proposing an alternative*.\n\n**Jebakan yang Harus Dihindari:**\n- **Terlalu Ekstrem:** Menyebut Text 2 membantah total data penurunan suhu $2,5^{\\circ}\\text{C}$ di Text 1 (*completely refutes the empirical measurements*).\n- **Salah Arah:** Menyebut Text 2 memberi studi kasus yang mendukung kesimpulan Text 1 (*provides additional supporting evidence*).",
+      "kunci_pembeda": "Fokus pada peran Text 2 terhadap kesimpulan utama Text 1—apakah mendukung, memberi catatan kritis, atau menawarkan solusi tandingan.",
       "visual": null
     },
     {
@@ -164,8 +164,8 @@
       "nama_variasi": "Points of Agreement and Disagreement Between Both Authors",
       "kategori_variasi": "Inti",
       "stimulus_mini": "On which point do the authors of Text 1 and Text 2 most clearly agree, and where do they diverge?",
-      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Titik Sepakat (Agreement):** Pindai klausa konsesif (*While...*) di kalimat pertama Text 2: *\"integrating greenery into dense cityscapes is undeniably vital for mitigating urban heat.\"* Ini selaras dengan premis pembuka Text 1 tentang urgensi melawan *urban heat island effect* lewat vegetasi.\n- **Titik Berbeda (Disagreement):** Text 1 menilai hutan vertikal adalah *essential, scalable infrastructure*, sedangkan Text 2 menilai konsep itu tidak efisien secara karbon, mahal, dan eksklusif bagi pembeli kaya (*affluent buyers*).\n\n**Strategi Parafrasa Opsi Benar:**\nOpsi *Agreement* memparafrasa kedua premis menjadi *incorporating vegetation into urban areas helps combat rising city temperatures*. Opsi *Disagreement* menyoroti perbedaan kelayakan ekonomi dan skala dampak lingkungan.\n\n**Ciri Opsi Jebakan:**\n- **Tidak Disebut (Unmentioned):** Mengklaim kedua penulis sepakat bahwa pemerintah harus memberi subsidi apartemen hijau.\n- **Terlalu Sempit:** Menganggap mereka sepakat soal penghematan biaya listrik 30% (hanya ada di Text 1).",
-      "kunci_pembeda": "Memetakan posisi kedua penulis pada isu spesifik yang sama (keduanya sepakat, keduanya menolak, atau satu pro dan satu kontra).",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n- **Cari Titik Sepakat (Agreement):** Kunci jawaban ada di anak kalimat *While...* pada awal Text 2: *\"integrating greenery into dense cityscapes is undeniably vital for mitigating urban heat.\"* Pernyataan ini langsung nyambung dengan ide awal Text 1 tentang memakai vegetasi untuk meredam *urban heat island effect*.\n- **Cari Titik Beda (Disagreement):** Text 1 menganggap hutan vertikal adalah infrastruktur iklim yang layak diperluas (*scalable*), sedangkan Text 2 menilainya boros emisi konstruksi, mahal dirawat, dan cuma bisa dinikmati warga kaya (*affluent buyers*).\n\n**Cara Menemukan Opsi Benar:**\nUntuk *Agreement*, pilih opsi yang merangkum kesamaan premis tadi: *incorporating vegetation into urban areas helps combat rising city temperatures*. Untuk *Disagreement*, pilih opsi yang menyoroti perbedaan kelayakan ekonomi dan efisiensi lingkungan.\n\n**Jebakan yang Harus Dihindari:**\n- **Tidak Ada di Teks:** Mengklaim kedua penulis setuju pemerintah harus memberi subsidi apartemen hijau.\n- **Cuma Ada di Satu Teks:** Menganggap mereka sepakat soal penghematan biaya listrik 30% (angka ini hanya muncul di Text 1).",
+      "kunci_pembeda": "Petakan sikap kedua penulis pada satu topik yang sama: apakah keduanya setuju, keduanya menolak, atau satu pro dan satu kontra.",
       "visual": null
     },
     {
@@ -173,8 +173,8 @@
       "nama_variasi": "How the Author of Text 2 Would Most Likely Respond to a Specific Claim in Text 1",
       "kategori_variasi": "Inti",
       "stimulus_mini": "How would the author of Text 2 most likely respond to Text 1's claim that vertical forests capture atmospheric carbon dioxide?",
-      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Target Klaim di Text 1:** Pindai frasa *capture atmospheric carbon dioxide* pada kalimat ketiga Text 1.\n- **Bukti Penyeimbang di Text 2:** Pindai kata kunci *carbon* di Text 2: *\"reinforced steel and concrete slabs... generates embodied carbon emissions that can take over four decades of tree growth to offset.\"*\n\n**Strategi Parafrasa Opsi Benar:**\nPenulis Text 2 tidak menyangkal pohon menyerap karbon, melainkan menekankan *net carbon balance* (neraca karbon bersih). Opsi benar memparafrasa ini menjadi *while the trees absorb carbon, the building's structural materials produce massive upfront emissions that delay net climate benefits*.\n\n**Ciri Opsi Jebakan:**\n- **Distorsi Fakta:** Menyebut pohon di gedung tinggi secara biologis tidak mampu berfotosintesis atau menyerap karbon sama sekali.\n- **Salah Konteks:** Menjawab dengan argumen polusi suara (*noise pollution*), padahal pertanyaan mengunci klaim karbon.",
-      "kunci_pembeda": "Simulasi dialog langsung: kunci satu kutipan spesifik dari Text 1, lalu cari bukti atau sanggahan langsung dari perspektif Text 2.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n- **Kunci kutipan di Text 1:** Soal menanyakan klaim *capture atmospheric carbon dioxide* di kalimat ketiga Text 1.\n- **Cari fakta pembanding di Text 2:** Pindai kata *carbon* di Text 2. Kita menemukan fakta: *\"reinforced steel and concrete slabs... generates embodied carbon emissions that can take over four decades of tree growth to offset.\"*\n\n**Cara Menemukan Opsi Benar:**\nPenulis Text 2 tidak menyangkal bahwa pohon menyerap karbon, tetapi ia menghitung **neraca karbon bersihnya**. Opsi benar akan memparafrasakan hal ini: *while the trees absorb carbon, the building's structural materials produce massive upfront emissions that delay net climate benefits*.\n\n**Jebakan yang Harus Dihindari:**\n- **Memelintir Fakta:** Menyebut pohon di gedung tinggi tidak bisa berfotosintesis atau menyerap karbon sama sekali.\n- **Melenceng dari Topik:** Menjawab pakai argumen polusi suara (*noise pollution*), padahal soal mengunci isu karbon.",
+      "kunci_pembeda": "Bayangkan kedua penulis berdebat: kunci satu klaim spesifik dari Text 1, lalu balas memakai bukti langsung dari Text 2.",
       "visual": null
     },
     {
@@ -182,8 +182,8 @@
       "nama_variasi": "Synthesizing Shared Conclusions from Both Texts",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Which conclusion is most strongly supported by the combined information in Text 1 and Text 2?",
-      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Fakta Text 1:** Vegetasi pada bangunan terbukti menurunkan suhu lokal ($2,5^{\\circ}\\text{C}$) dan menyaring polusi udara/suara.\n- **Fakta Text 2:** Namun, konstruksi gedung hijau bertingkat memicu emisi karbon material tinggi dan biaya mahal sehingga taman kota permukaan tanah lebih efektif.\n\n**Strategi Parafrasa Opsi Benar:**\nGabungkan kedua premis menjadi simpulan logis lintas teks (sintesis): *although urban vegetation effectively improves local microclimates, the structural and financial demands of high-rise installations limit their practicality compared to ground-level greening*. Simpulan harus sahih di bawah kedua teks sekaligus.\n\n**Ciri Opsi Jebakan:**\n- **One-Text Only:** Pernyataan yang benar menurut Text 1 (misal: *noise drops by 15 decibels*), tetapi tidak disintesis dengan Text 2.\n- **Ekstrapolasi Berlebih:** Menyimpulkan semua gedung pencakar langit modern harus dilarang dibangun.",
-      "kunci_pembeda": "Menghasilkan inferensi baru yang menjembatani bukti dari Text 1 dan Text 2 secara harmonis tanpa melanggar fakta salah satu teks.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n- **Ambil inti Text 1:** Vegetasi di gedung memang efektif menurunkan suhu sekitar ($2,5^{\\circ}\\text{C}$) serta meredam polusi udara dan kebisingan.\n- **Gabungkan dengan inti Text 2:** Namun, membangun hutan di gedung bertingkat butuh beton/baja ekstra dan biaya perawatan tinggi, sehingga taman kota biasa jauh lebih masuk akal.\n\n**Cara Menemukan Opsi Benar:**\nJembatani kedua fakta itu dalam satu kalimat utuh tanpa menyalahi salah satu teks: *although urban vegetation effectively improves local microclimates, the structural and financial demands of high-rise installations limit their practicality compared to ground-level greening*.\n\n**Jebakan yang Harus Dihindari:**\n- **Hanya Pakai Satu Teks:** Memilih pernyataan yang benar menurut Text 1 saja (misalnya *noise drops by 15 decibels*), tanpa menyambungkannya dengan Text 2.\n- **Kesimpulan Berlebihan:** Menyimpulkan bahwa pembangunan semua gedung pencakar langit modern harus dilarang total.",
+      "kunci_pembeda": "Buat kesimpulan baru yang menggabungkan bukti Text 1 dan Text 2 secara seimbang tanpa melanggar fakta di salah satu teks.",
       "visual": null
     },
     {
@@ -191,8 +191,8 @@
       "nama_variasi": "Comparing Methodologies, Tone, or Scope Between Text 1 and Text 2",
       "kategori_variasi": "Pengayaan",
       "stimulus_mini": "How do Text 1 and Text 2 differ in terms of their analytical scope and evidentiary approach?",
-      "bedah_pola_markdown": "**Teknik Scanning & Skimming:**\n- **Metodologi & Cakupan Text 1:** Pindai frasa *longitudinal field study of three high-rise towers in Milan* dan *acoustic sensors*. Cakupannya sempit pada performa operasional gedung lokal (suhu mikro dan kebisingan) dengan nada optimis (*optimistic/advocating*).\n- **Metodologi & Cakupan Text 2:** Pindai frasa *lifecycle carbon audit... across twelve global green-building projects* dan *socioeconomic trade-offs*. Cakupannya jauh lebih luas—mencakup emisi konstruksi jangka panjang, biaya pemeliharaan, dan keadilan sosial—dengan nada kritis-evaluatif (*skeptical/analytical*).\n\n**Strategi Parafrasa Opsi Benar:**\nOpsi benar mengontraskan *localized operational measurements* (Text 1) melawan *broader lifecycle and socioeconomic evaluation* (Text 2).\n\n**Ciri Opsi Jebakan:**\n- **Label Tone Keliru:** Menyebut nada Text 2 marah/sarkastik (*hostile/sarcastic*), padahal bahasanya akademis dan objektif.\n- **Tukar Cakupan:** Mengklaim Text 1 membahas proyek global sementara Text 2 hanya studi kasus satu kota.",
-      "kunci_pembeda": "Tidak menanyakan apa isi argumennya, melainkan bagaimana cara penulis membuktikan argumen, seberapa luas ruang lingkupnya, dan bagaimana sikap penulis.",
+      "bedah_pola_markdown": "**Langkah Berpikir:**\n- **Bedah cara kerja Text 1:** Lihat frasa *longitudinal field study of three high-rise towers in Milan* dan *acoustic sensors*. Cakupannya sempit pada performa operasional gedung lokal (suhu mikro dan kebisingan), dengan nada optimis (*optimistic/advocating*).\n- **Bedah cara kerja Text 2:** Lihat frasa *lifecycle carbon audit... across twelve global green-building projects* dan *socioeconomic trade-offs*. Cakupannya jauh lebih luas—menghitung emisi konstruksi jangka panjang, biaya operasional, hingga keadilan akses warga—dengan nada kritis-evaluatif (*skeptical/analytical*).\n\n**Cara Menemukan Opsi Benar:**\nPilih opsi yang mengontraskan dua pendekatan tersebut secara tepat, misalnya: *localized operational measurements* (Text 1) melawan *broader lifecycle and socioeconomic evaluation* (Text 2).\n\n**Jebakan yang Harus Dihindari:**\n- **Salah Tebak Nada (Tone):** Menyebut nada Text 2 marah atau sarkastik (*hostile/sarcastic*), padahal bahasanya tetap objektif dan berbasis data.\n- **Tukar Cakupan:** Mengklaim Text 1 membahas proyek global sementara Text 2 cuma studi kasus satu kota.",
+      "kunci_pembeda": "Fokus pada *cara* penulis membuktikan argumennya, seberapa luas ruang lingkup datanya, dan bagaimana sikap emosional penulis.",
       "visual": null
     }
   ],
@@ -213,7 +213,7 @@
         "E. By claiming that automated irrigation pumps and synthetic fertilizers eliminate the need for specialized arborist maintenance."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Pada kalimat awal Text 2, penulis langsung menanggapi klaim *scalable climate solution* dengan menyoroti *substantial ecological and socioeconomic trade-offs*, yaitu emisi karbon konstruksi baja/beton yang butuh 40+ tahun untuk impas serta biaya pemeliharaan tinggi (Opsi B tepat). Opsi A salah karena Text 2 tidak menyangkal penurunan suhu lokal; Opsi C salah karena tidak ada tuduhan pemalsuan data; Opsi D bertentangan dengan rekomendasi taman permukaan tanah di Text 2; Opsi E memutarbalikkan fakta pemeliharaan.",
+      "bedah_cepat_markdown": "- **Kenapa B benar:** Di kalimat pembuka Text 2, penulis langsung mengkritik klaim *scalable climate solution* dengan menyoroti *substantial ecological and socioeconomic trade-offs*—yakni emisi karbon beton/baja yang butuh lebih dari 40 tahun untuk impas serta biaya perawatan mahal.\n- **Kenapa opsi lain salah:**\n  - **A salah:** Text 2 tidak pernah menyangkal kemampuan tanaman menurunkan suhu lokal.\n  - **C salah:** Tidak ada tuduhan pemalsuan data riset Milan di dalam teks.\n  - **D salah:** Bertentangan dengan usulan Text 2 yang justru memilih taman permukaan tanah (*ground-level street canopies*).\n  - **E salah:** Membalik fakta teks; pompa irigasi, pupuk sintetis, dan perawatan ahli justru sama-sama dibutuhkan dan membengkakkan biaya.",
       "visual": null
     },
     {
@@ -232,7 +232,7 @@
         "E. FALSE - FALSE - TRUE"
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "**Pernyataan 1 (TRUE):** Text 1 membahas penurunan suhu $2,5^{\\circ}\\text{C}$, dan Text 2 mengakui integrasi tanaman *undeniably vital for mitigating urban heat*. **Pernyataan 2 (FALSE):** Hanya Text 2 yang membandingkan taman permukaan tanah dan justru menyatakan taman jalanan jauh lebih hemat dan merata dibanding gedung mahal. **Pernyataan 3 (TRUE):** Sintesis akurat antara manfaat mikroklimat di Text 1 dan beban *embodied carbon* struktur baja/beton di Text 2.",
+      "bedah_cepat_markdown": "- **Pernyataan 1 (TRUE):** Text 1 membuktikan penurunan suhu lokal $2,5^{\\circ}\\text{C}$, dan kalimat pertama Text 2 mengakui bahwa menanam vegetasi di kota sangat penting untuk meredam panas (*undeniably vital for mitigating urban heat*).\n- **Pernyataan 2 (FALSE):** Perbandingan dengan lahan aspal (*asphalt lots*) hanya muncul di Text 2, dan kesimpulannya justru kebalikannya: taman jalanan jauh lebih hemat dan merata dibanding apartemen bertingkat.\n- **Pernyataan 3 (TRUE):** Sintesis yang pas antara manfaat pendinginan lokal di Text 1 dan beban emisi karbon dari struktur baja/beton di Text 2.",
       "visual": null
     },
     {
@@ -250,7 +250,7 @@
         "E. Text 1 investigates groundwater depletion caused by urban trees, whereas Text 2 measures street-level noise reduction in decibels."
       ],
       "kunci_jawaban": "C",
-      "bedah_cepat_markdown": "Text 1 menggunakan *longitudinal field study* di Milan dengan sensor suhu dan akustik untuk mengukur performa operasional lokal (Opsi C benar). Sebaliknya, Text 2 menggunakan *lifecycle carbon audit* pada 12 proyek global serta analisis biaya dan aksesibilitas sosial (cakupan lebih luas). Opsi A dan D menukar karakteristik kedua teks; Opsi B menyempitkan fokus Text 2 hanya pada harga rumah; Opsi E mencampuradukkan topik yang tidak ada di Text 1 maupun salah atribusi data akustik.",
+      "bedah_cepat_markdown": "- **Kenapa C benar:** Text 1 memakai studi lapangan di Milan dengan sensor suhu dan akustik untuk mengukur manfaat operasional di sekitar gedung. Sebaliknya, Text 2 memakai audit karbon siklus hidup (*lifecycle carbon audit*) pada 12 proyek global plus analisis biaya dan keadilan akses warga.\n- **Kenapa opsi lain salah:**\n  - **A & D salah:** Keduanya menukar karakteristik Text 1 dan Text 2 secara terbalik.\n  - **B salah:** Menyempitkan fokus Text 2 seolah-olah hanya membahas harga rumah.\n  - **E salah:** Isu penyusutan air tanah (*groundwater depletion*) tidak ada di teks, dan data kebisingan desibel milik Text 1 justru dipindahkan ke Text 2.",
       "visual": null
     }
   ]

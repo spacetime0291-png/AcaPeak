@@ -9,24 +9,24 @@
     "estimasi_menit_baca": 7,
     "frekuensi_utbk": "Sangat Tinggi",
     "exam_hook": {
-      "pertanyaan_pemantik": "Perhatikan kalimat jurnalistik berikut: *Meskipun anggaran riset terbatas, tetapi tim peneliti berhasil merampungkan purwarupa tepat waktu.* Apakah struktur kalimat tersebut sudah efektif sesuai kaidah EYD V?",
+      "pertanyaan_pemantik": "Cek kalimat berita ini: *Meskipun anggaran riset terbatas, tetapi tim peneliti berhasil merampungkan purwarupa tepat waktu.* Apakah kalimat tersebut sudah efektif sesuai EYD V?",
       "opsi_cepat": [
-        "Sudah efektif karena menekankan pertentangan",
-        "Tidak efektif karena konjungsi ganda"
+        "Sudah efektif karena menegaskan pertentangan",
+        "Tidak efektif karena memakai konjungsi ganda"
       ],
       "jawaban_benar_index": 1,
-      "penjelasan_kilat": "Penggunaan *meskipun* dan *tetapi* secara bersamaan membuat kalimat kehilangan induk kalimat. Cukup gunakan salah satu agar struktur subjek dan predikat tetap utuh."
+      "penjelasan_kilat": "Memakai *meskipun* dan *tetapi* sekaligus membuat kalimat kehilangan induk kalimat. Cukup pilih salah satu agar struktur subjek dan predikat tetap utuh."
     },
-    "konsep_inti_markdown": "Konjungsi intrakalimat menghubungkan unsur atau klausa di dalam satu kalimat.\n\n* **Koordinatif (Setara):** Menghubungkan unsur berstatus sintaksis sama (*dan, serta, atau, tetapi, melainkan, sedangkan*). Dilarang di awal kalimat formal.\n* **Subordinatif (Bertingkat):** Menghubungkan induk kalimat dan anak kalimat (*sebab, karena, meskipun, jika, agar, sehingga*).\n* **Prinsip Utama UTBK:** Satu hubungan logis cukup diwakili **satu konjungsi**. Hindari konjungsi ganda dan tertukarnya konjungsi intrakalimat dengan antarkalimat.",
+    "konsep_inti_markdown": "Konjungsi intrakalimat menghubungkan bagian atau klausa di dalam satu kalimat.\n\n* **Koordinatif (Setara):** Menghubungkan bagian kalimat yang kedudukannya sejajar (*dan, serta, atau, tetapi, melainkan, sedangkan*). Kata ini dilarang berada di awal kalimat formal.\n* **Subordinatif (Bertingkat):** Menghubungkan induk kalimat dan anak kalimat (*sebab, karena, meskipun, jika, agar, sehingga*).\n* **Prinsip Utama UTBK:** Satu hubungan makna cukup diwakili **satu konjungsi**. Hindari konjungsi ganda dan jangan menukar konjungsi intrakalimat dengan konjungsi antarkalimat.",
     "radar_jebakan_utbk": [
-      "Menggunakan konjungsi koordinatif (*dan, tetapi, sedangkan*) di awal kalimat tunggal atau setelah tanda titik.",
-      "Memasangkan konjungsi subordinatif di awal kalimat dengan konjungsi koordinatif di tengah kalimat (*Jika..., maka...* atau *Walaupun..., namun...*)."
+      "Menaruh konjungsi setara (*dan, tetapi, sedangkan*) tepat di awal kalimat baru atau setelah tanda titik.",
+      "Memasangkan konjungsi bertingkat di awal kalimat dengan konjungsi lain di tengah kalimat (*Jika..., maka...* atau *Walaupun..., namun...*)."
     ],
     "stimulus_utama_bersama": null,
     "visual": null,
     "detail_materi_lengkap": {
       "judul_blok": "Katalog Lengkap Kaidah Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
-      "subjudul_ringkas": "Panduan sistematis aturan penggunaan, relasi logis, dan jebakan umum konjungsi intrakalimat sesuai kaidah EYD V.",
+      "subjudul_ringkas": "Panduan praktis aturan posisi, hubungan makna, dan jebakan umum konjungsi intrakalimat sesuai EYD V.",
       "mode_tampilan": "katalog_kaidah",
       "label_kolom": {
         "kolom_1": "Aturan / Kaidah",
@@ -35,76 +35,76 @@
       },
       "kelompok": [
         {
-          "nama_kelompok": "Prinsip Sintaksis & Eliminasi Konjungsi Ganda",
-          "ringkasan_kelompok": "Aturan dasar posisi konjungsi dan pencegahan konjungsi ganda dalam kalimat efektif.",
+          "nama_kelompok": "Aturan Posisi & Penghapusan Konjungsi Ganda",
+          "ringkasan_kelompok": "Aturan dasar letak konjungsi dan cara mencegah konjungsi ganda agar kalimat tetap efektif.",
           "buka_default": true,
           "butir": [
             {
-              "judul_poin": "Larangan Konjungsi Koordinatif di Awal Kalimat",
-              "penjelasan_singkat": "Konjungsi intrakalimat (*dan, tetapi, sedangkan, melainkan*) hanya menghubungkan unsur dalam satu kalimat, bukan mengawali kalimat baru.",
+              "judul_poin": "Larangan Konjungsi Setara di Awal Kalimat",
+              "penjelasan_singkat": "Konjungsi intrakalimat (*dan, tetapi, sedangkan, melainkan*) hanya menghubungkan bagian dalam satu kalimat, bukan membuka kalimat baru.",
               "contoh_penerapan": "Kebijakan itu menuai kritik tajam dari masyarakat, **tetapi** pemerintah tetap melanjutkannya sesuai rencana awal.",
-              "jebakan_atau_catatan": "Salah: \"Kebijakan itu menuai kritik. **Tetapi**, pemerintah tetap melanjutkannya.\" Gunakan *akan tetapi* atau *namun* di awal kalimat.",
+              "jebakan_atau_catatan": "Salah: \"Kebijakan itu menuai kritik. **Tetapi**, pemerintah tetap melanjutkannya.\" Pakai *akan tetapi* atau *namun* di awal kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Eliminasi Konjungsi Ganda dalam Kalimat Majemuk",
-              "penjelasan_singkat": "Satu hubungan logis antarklausa cukup diwakili satu konjungsi; menggabungkan konjungsi subordinatif dan koordinatif merusak struktur induk kalimat.",
+              "judul_poin": "Menghapus Konjungsi Ganda dalam Kalimat Majemuk",
+              "penjelasan_singkat": "Satu hubungan makna antarklausa cukup diwakili satu konjungsi. Menggabungkan dua konjungsi sekaligus merusak struktur induk kalimat.",
               "contoh_penerapan": "**Meskipun** hujan turun sangat deras sejak pagi, para peserta ujian tetap datang tepat waktu ke lokasi.",
-              "jebakan_atau_catatan": "Salah: \"**Meskipun** hujan turun deras, **tetapi** peserta tetap datang.\" Gunakan pola $\\text{Meskipun } A, B$ tanpa kata *tetapi*.",
+              "jebakan_atau_catatan": "Salah: \"**Meskipun** hujan turun deras, **tetapi** peserta tetap datang.\" Cukup pakai pola $\\text{Meskipun } A, B$ tanpa kata *tetapi*.",
               "visual": null
             },
             {
-              "judul_poin": "Pembedaan Konjungsi Intrakalimat dan Antarkalimat",
+              "judul_poin": "Membedakan Konjungsi Intrakalimat dan Antarkalimat",
               "penjelasan_singkat": "Konjungsi antarkalimat (*oleh karena itu, namun, dengan demikian*) tidak boleh menggantikan konjungsi intrakalimat di tengah kalimat.",
               "contoh_penerapan": "Penelitian tersebut memakan waktu bertahun-tahun **sehingga** hasilnya sangat akurat dan dapat dipertanggungjawabkan secara ilmiah.",
-              "jebakan_atau_catatan": "Salah: \"Penelitian memakan waktu lama, **oleh karena itu** hasilnya akurat.\" Ganti dengan *sehingga* atau pisahkan menjadi dua kalimat.",
+              "jebakan_atau_catatan": "Salah: \"Penelitian memakan waktu lama, **oleh karena itu** hasilnya akurat.\" Ganti dengan *sehingga* atau pisah menjadi dua kalimat.",
               "visual": null
             },
             {
               "judul_poin": "Tanda Koma Sebelum Konjungsi Pertentangan dan Akibat",
-              "penjelasan_singkat": "Sesuai EYD V, tanda koma wajib dipakai sebelum konjungsi intrakalimat seperti *tetapi, melainkan, sedangkan,* dan *sehingga*.",
+              "penjelasan_singkat": "Sesuai EYD V, tanda koma wajib ditulis sebelum konjungsi intrakalimat seperti *tetapi, melainkan, sedangkan,* dan *sehingga*.",
               "contoh_penerapan": "Adiknya gemar membaca buku fiksi ilmiah, **sedangkan** kakaknya lebih menyukai literatur sejarah dunia.",
-              "jebakan_atau_catatan": "Salah: \"Adiknya gemar membaca buku **sedangkan** kakaknya menyukai sejarah.\" Tanda koma sebelum *sedangkan* sering dihilangkan dalam pengecoh soal.",
+              "jebakan_atau_catatan": "Salah: \"Adiknya gemar membaca buku **sedangkan** kakaknya menyukai sejarah.\" Tanda koma sebelum *sedangkan* sering dihilangkan pengecoh soal.",
               "visual": null
             }
           ]
         },
         {
-          "nama_kelompok": "Relasi Logis Konjungsi Subordinatif (Bertingkat)",
-          "ringkasan_kelompok": "Pemilihan konjungsi anak kalimat sesuai hubungan sebab, pertentangan, syarat, tujuan, dan akibat.",
+          "nama_kelompok": "Hubungan Makna Konjungsi Subordinatif (Bertingkat)",
+          "ringkasan_kelompok": "Memilih konjungsi anak kalimat sesuai hubungan sebab, pertentangan, syarat, tujuan, dan akibat.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Relasi Kausal / Penyebaban (*karena, sebab*)",
-              "penjelasan_singkat": "Menyatakan sebab terjadinya peristiwa pada induk kalimat; hindari bentuk tidak baku *dikarenakan* yang menyalahi kaidah morfologi.",
+              "judul_poin": "Hubungan Sebab (*karena, sebab*)",
+              "penjelasan_singkat": "Menjelaskan alasan terjadinya peristiwa pada induk kalimat. Hindari kata tidak baku *dikarenakan* yang menyalahi kaidah pembentukan kata.",
               "contoh_penerapan": "Produksi padi menurun drastis **karena** kemarau panjang melanda wilayah lumbung pangan nasional selama enam bulan.",
-              "jebakan_atau_catatan": "Salah: \"Produksi padi menurun **dikarenakan** kemarau panjang.\" Dalam ragam baku UTBK, wajib menggunakan konjungsi *karena* atau *sebab*.",
+              "jebakan_atau_catatan": "Salah: \"Produksi padi menurun **dikarenakan** kemarau panjang.\" Dalam ragam baku UTBK, wajib memakai kata *karena* atau *sebab*.",
               "visual": null
             },
             {
-              "judul_poin": "Relasi Konsesif / Pertentangan (*meskipun, kendati*)",
-              "penjelasan_singkat": "Menyatakan keadaan berlawanan yang tidak membatalkan induk kalimat; tanda koma wajib dipakai jika anak kalimat mendahului induk kalimat.",
+              "judul_poin": "Hubungan Pertentangan (*meskipun, kendati*)",
+              "penjelasan_singkat": "Menyatakan kondisi berlawanan yang tidak membatalkan induk kalimat. Pakai tanda koma jika anak kalimat mendahului induk kalimat.",
               "contoh_penerapan": "**Kendati** anggaran penelitian terbatas, tim ilmuwan muda itu berhasil menciptakan purwarupa alat pendeteksi gempa bumi.",
-              "jebakan_atau_catatan": "Salah: \"**Kendatipun** anggaran terbatas, **namun** mereka berhasil.\" Konjungsi antarkalimat *namun* tidak boleh hadir bersama konjungsi subordinatif *kendatipun*.",
+              "jebakan_atau_catatan": "Salah: \"**Kendatipun** anggaran terbatas, **namun** mereka berhasil.\" Konjungsi antarkalimat *namun* tidak boleh hadir bersama *kendatipun*.",
               "visual": null
             },
             {
-              "judul_poin": "Relasi Syarat (*jika, apabila, asalkan*)",
-              "penjelasan_singkat": "Menjelaskan kondisi yang harus terpenuhi agar peristiwa pada induk kalimat terjadi; hindari kata *kalau* dalam ragam tulis ilmiah.",
+              "judul_poin": "Hubungan Syarat (*jika, apabila, asalkan*)",
+              "penjelasan_singkat": "Menjelaskan syarat yang harus terpenuhi agar induk kalimat terjadi. Hindari kata *kalau* dalam ragam tulis formal.",
               "contoh_penerapan": "Ekosistem terumbu karang akan pulih secara alami **apabila** aktivitas penangkapan ikan dengan bahan peledak dihentikan total.",
               "jebakan_atau_catatan": "Salah: \"Ekosistem pulih **jika** aktivitas ilegal dihentikan, **maka** ikan kembali.\" Kata *maka* berlebih dan merusak struktur induk kalimat.",
               "visual": null
             },
             {
-              "judul_poin": "Relasi Tujuan (*agar, supaya*)",
-              "penjelasan_singkat": "Menyatakan maksud atau sasaran tindakan pada induk kalimat; hindari gabungan *agar supaya* yang bersifat pleonastis.",
-              "contoh_penerapan": "Pemerintah memperketat regulasi emisi karbon **agar** kualitas udara di kota-kota besar segera membaik dalam lima tahun.",
-              "jebakan_atau_catatan": "Salah: \"Pemerintah memperketat regulasi **agar supaya** kualitas udara membaik.\" Gabungan dua konjungsi bermakna sama (*agar supaya*) tidak efektif.",
+              "judul_poin": "Hubungan Tujuan (*agar, supaya*)",
+              "penjelasan_singkat": "Menyatakan sasaran tindakan pada induk kalimat. Hindari gabungan *agar supaya* karena bermakna ganda.",
+              "contoh_penerapan": "Pemerintah memperketat aturan emisi karbon **agar** kualitas udara di kota-kota besar segera membaik dalam lima tahun.",
+              "jebakan_atau_catatan": "Salah: \"Pemerintah memperketat aturan **agar supaya** kualitas udara membaik.\" Gabungan dua konjungsi bermakna sama (*agar supaya*) tidak efektif.",
               "visual": null
             },
             {
-              "judul_poin": "Relasi Akibat (*sehingga, sampai*)",
-              "penjelasan_singkat": "Menyatakan konsekuensi langsung dari peristiwa pada induk kalimat; gunakan konjungsi intrakalimat *sehingga*, bukan penanda antarkalimat *akibatnya*.",
+              "judul_poin": "Hubungan Akibat (*sehingga, sampai*)",
+              "penjelasan_singkat": "Menyatakan dampak langsung dari induk kalimat. Pakai konjungsi intrakalimat *sehingga*, bukan penanda antarkalimat *akibatnya*.",
               "contoh_penerapan": "Debit air sungai meningkat tajam akibat hujan semalaman, **sehingga** tanggul penahan banjir di hilir akhirnya jebol.",
               "jebakan_atau_catatan": "Salah: \"Debit air meningkat, **akibatnya** tanggul jebol.\" Kata *akibatnya* berfungsi antarkalimat sehingga harus diawali tanda titik.",
               "visual": null
@@ -112,20 +112,20 @@
           ]
         },
         {
-          "nama_kelompok": "Kaidah Konjungsi Koordinatif & Korelatif Setara",
-          "ringkasan_kelompok": "Penggunaan konjungsi penghubung unsur setara dan pasangan oposisi yang baku.",
+          "nama_kelompok": "Kaidah Konjungsi Setara & Pasangan Oposisi",
+          "ringkasan_kelompok": "Aturan penggunaan konjungsi penghubung unsur sejajar dan pasangan kata berlawanan yang baku.",
           "buka_default": false,
           "butir": [
             {
-              "judul_poin": "Pasangan Oposisi *bukan ... melainkan* vs *tidak ... tetapi*",
-              "penjelasan_singkat": "Kata *bukan* (menegasikan nomina) berpasangan dengan *melainkan*, sedangkan *tidak* (menegasikan verba atau adjektiva) berpasangan dengan *tetapi*.",
+              "judul_poin": "Pasangan *bukan ... melainkan* vs *tidak ... tetapi*",
+              "penjelasan_singkat": "Kata *bukan* (menyangkal kata benda) berpasangan dengan *melainkan*, sedangkan *tidak* (menyangkal kata kerja atau sifat) berpasangan dengan *tetapi*.",
               "contoh_penerapan": "Kegagalan proyek tersebut **bukan** disebabkan oleh kurangnya dana, **melainkan** lemahnya koordinasi antarlembaga pelaksana di lapangan.",
-              "jebakan_atau_catatan": "Salah: \"Ia **bukan** malas belajar, **tetapi** kurang memahami konsep.\" Karena *malas* adalah adjektiva, gunakan pola *tidak ... tetapi*.",
+              "jebakan_atau_catatan": "Salah: \"Ia **bukan** malas belajar, **tetapi** kurang memahami konsep.\" Karena *malas* adalah kata sifat, gunakan pola *tidak ... tetapi*.",
               "visual": null
             },
             {
               "judul_poin": "Konjungsi Penambahan dan Pemilihan (*dan, serta, atau*)",
-              "penjelasan_singkat": "Menghubungkan unsur setara; pada perincian lebih dari dua unsur, tanda koma wajib diletakkan sebelum *dan* atau *atau*.",
+              "penjelasan_singkat": "Menghubungkan bagian kalimat yang sejajar. Pada perincian lebih dari dua unsur, tanda koma wajib ditulis sebelum *dan* atau *atau*.",
               "contoh_penerapan": "Peserta wajib membawa kartu ujian, kartu identitas resmi, **dan** alat tulis sesuai ketentuan panitia pusat.",
               "jebakan_atau_catatan": "Salah: \"Peserta membawa kartu ujian, kartu identitas **dan** alat tulis.\" Ketiadaan koma sebelum *dan* pada perincian menyalahi EYD V.",
               "visual": null
@@ -138,38 +138,38 @@
   "zona_2_variasi_inti": [
     {
       "nomor_variasi": 1,
-      "nama_variasi": "Pemilihan Konjungsi Subordinatif Tepat Sesuai Relasi Logis Klausa",
+      "nama_variasi": "Memilih Konjungsi Bertingkat Sesuai Hubungan Makna Klausa",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Pemerintah menyalurkan bantuan beras cadangan **sehingga** daya beli masyarakat berpenghasilan rendah tetap terjaga selama masa paceklik.",
-      "bedah_pola_markdown": "Konjungsi subordinatif menandai hubungan logis antara induk kalimat dan anak kalimat keterangan [K]. Tentukan relasi makna antar-klausa terlebih dahulu: **kausal** (*karena, sebab*), **konsesif** (*meskipun, kendati*), **syarat** (*jika, apabila*), **tujuan** (*agar, supaya*), atau **akibat** (*sehingga, sampai*).\n\n| Salah (Relasi Tidak Tepat) | Benar (Sesuai EYD V) | Analisis Sintaksis |\n| :--- | :--- | :--- |\n| Pemerintah menyalurkan beras [O] **sehingga** daya beli terjaga [K-Akibat]. | Pemerintah [S] menyalurkan [P] beras [O] **agar** daya beli terjaga [K-Tujuan]. | Konteks menunjukkan maksud/sasaran kebijakan, bukan efek otomatis, sehingga wajib memakai konjungsi tujuan (*agar*). |\n| Tanaman layu [P] **agar** kekurangan air [K-Tujuan]. | Tanaman [S] layu [P] **karena** kekurangan air [K-Kausal]. | Klausa kedua adalah penyebab layu, menuntut relasi kausal. |\n\nPerhatikan tanda baca: jika anak kalimat [K] mendahului induk kalimat [S-P], bubuhkan tanda koma sebelum induk kalimat.",
-      "kunci_pembeda": "Uji makna klausa kedua terhadap klausa pertama untuk memastikan relasi sebab, tujuan, syarat, konsesif, atau akibat tidak tertukar.",
+      "bedah_pola_markdown": "Langkah pertama, baca kedua klausa dan tentukan hubungan maknanya: **sebab** (*karena, sebab*), **pertentangan** (*meskipun, kendati*), **syarat** (*jika, apabila*), **tujuan** (*agar, supaya*), atau **akibat** (*sehingga, sampai*).\n\n| Salah (Makna Tidak Nyambung) | Benar (Sesuai EYD V) | Bedah Logika Kalimat |\n| :--- | :--- | :--- |\n| Pemerintah menyalurkan beras **sehingga** daya beli terjaga. | Pemerintah menyalurkan beras **agar** daya beli terjaga. | Penyaluran beras punya target/maksud tertentu, bukan efek otomatis, sehingga wajib memakai konjungsi tujuan (*agar*). |\n| Tanaman layu **agar** kekurangan air. | Tanaman layu **karena** kekurangan air. | Klausa kedua menjelaskan penyebab tanaman layu, bukan tujuan, sehingga wajib memakai konjungsi sebab (*karena*). |\n\nCek juga posisi anak kalimat: jika anak kalimat ditaruh di depan, wajib beri tanda koma sebelum masuk ke induk kalimat.",
+      "kunci_pembeda": "Uji hubungan makna klausa kedua terhadap klausa pertama agar konjungsi sebab, tujuan, syarat, pertentangan, dan akibat tidak tertukar.",
       "visual": null
     },
     {
       "nomor_variasi": 2,
-      "nama_variasi": "Perbaikan Konjungsi yang Tidak Tepat atau Ambigu di Dalam Kalimat",
+      "nama_variasi": "Memperbaiki Kata Tanya dan Konjungsi Antarkalimat yang Salah Posisi",
       "kategori_variasi": "Inti",
       "stimulus_mini": "Para pakar ekonomi memprediksi **di mana** pertumbuhan sektor manufaktur melambat, **namun** biaya logistik justru melonjak.",
-      "bedah_pola_markdown": "Soal PBM sering menyisipkan kata tanya (*di mana, yang mana*) sebagai konjungsi penjelas atau mencampuradukkan konjungsi intrakalimat dengan konjungsi antarkalimat (*namun, oleh karena itu*). Perbaiki dengan mengganti kata tidak baku tersebut memakai konjungsi intrakalimat yang presisi sesuai fungsi sintaksisnya.\n\n| Salah (Ambigu / Tidak Baku) | Benar (Presisi EYD V) | Analisis Sintaksis |\n| :--- | :--- | :--- |\n| Pakar [S] memprediksi [P] **di mana** sektor manufaktur melambat [O]. | Pakar [S] memprediksi [P] **bahwa** sektor manufaktur melambat [O]. | *Di mana* hanya untuk tempat; klausa objek [O] wajib diawali konjungsi *bahwa*. |\n| Ekspor naik [P], **namun** impor ikut meningkat [K]. | Ekspor [S] naik [P], **sedangkan** impor [S] ikut meningkat [P]. | *Namun* adalah konjungsi antarkalimat; pertentangan setara intrakalimat memakai *sedangkan* atau *tetapi*. |\n\nPastikan tanda koma selalu diletakkan sebelum konjungsi pertentangan intrakalimat seperti *tetapi*, *melainkan*, dan *sedangkan*.",
-      "kunci_pembeda": "Ganti kata tanya (*di mana*) dengan *bahwa* untuk klausa objek, serta ganti konjungsi antarkalimat (*namun*) dengan *sedangkan* atau *tetapi* di tengah kalimat.",
+      "bedah_pola_markdown": "Soal PBM sering menyelipkan kata tanya (*di mana, yang mana*) sebagai penghubung atau menaruh konjungsi antarkalimat (*namun, oleh karena itu*) di tengah kalimat. Cara membereskannya adalah mengganti kata tersebut dengan konjungsi intrakalimat yang pas.\n\n| Salah (Tidak Baku / Salah Tempat) | Benar (Presisi EYD V) | Bedah Logika Kalimat |\n| :--- | :--- | :--- |\n| Pakar memprediksi **di mana** sektor manufaktur melambat. | Pakar memprediksi **bahwa** sektor manufaktur melambat. | *Di mana* khusus menanyakan tempat; pengantar klausa objek wajib memakai konjungsi *bahwa*. |\n| Ekspor naik, **namun** impor ikut meningkat. | Ekspor naik, **sedangkan** impor ikut meningkat. | *Namun* hanya untuk awal kalimat baru; pertentangan setara di dalam satu kalimat memakai *sedangkan* atau *tetapi*. |\n\nPastikan tanda koma selalu hadir tepat sebelum konjungsi pertentangan intrakalimat seperti *tetapi*, *melainkan*, dan *sedangkan*.",
+      "kunci_pembeda": "Ganti kata tanya (*di mana*) dengan *bahwa* untuk klausa objek, lalu ganti konjungsi antarkalimat (*namun*) dengan *sedangkan* atau *tetapi* di tengah kalimat.",
       "visual": null
     },
     {
       "nomor_variasi": 3,
-      "nama_variasi": "Larangan Konjungsi Koordinatif di Awal Kalimat Formal",
+      "nama_variasi": "Menghindari Konjungsi Setara di Awal Kalimat Formal",
       "kategori_variasi": "Inti",
       "stimulus_mini": "(1) Bank sentral mempertahankan suku bunga acuan pada level moderat. (2) **Dan**, kebijakan tersebut terbukti meredam gejolak nilai tukar rupiah.",
-      "bedah_pola_markdown": "Konjungsi koordinatif (*dan, serta, atau, tetapi, melainkan, sedangkan*) berfungsi menghubungkan dua unsur setara di **dalam** satu kalimat. Dalam ragam tulis formal UTBK, meletakkan konjungsi koordinatif di awal kalimat menyebabkan kalimat kehilangan subjek induk dan menjadi fragmen tidak baku.\n\n| Salah (Awal Kalimat Formal) | Benar (Sesuai EYD V) | Analisis Sintaksis |\n| :--- | :--- | :--- |\n| **Dan**, kebijakan itu [S] meredam [P] inflasi [O]. | **Selain itu**, kebijakan itu [S] meredam [P] inflasi [O]. | Konjungsi intrakalimat *dan* diganti konjungsi antarkalimat *selain itu* disertai koma. |\n| **Tetapi**, realisasi investasi [S] masih lambat [P]. | **Namun**, realisasi investasi [S] masih lambat [P]. | Pertentangan antarkalimat wajib memakai *namun* atau *akan tetapi*, bukan *tetapi*. |\n\nAlternatif perbaikan lain adalah menggabungkan kalimat kedua ke kalimat sebelumnya memakai koma sebelum *dan* atau *tetapi*.",
-      "kunci_pembeda": "Jika muncul *dan*, *atau*, atau *tetapi* tepat setelah tanda titik, ubah menjadi konjungsi antarkalimat (*selain itu*, *namun*) atau gabungkan ke kalimat sebelumnya.",
+      "bedah_pola_markdown": "Konjungsi setara (*dan, serta, atau, tetapi, melainkan, sedangkan*) bertugas menyambungkan bagian yang sejajar di **dalam** satu kalimat. Jika ditaruh di awal kalimat setelah tanda titik, kalimat tersebut berubah menjadi potongan kalimat yang tidak baku.\n\n| Salah (Di Awal Kalimat Formal) | Benar (Sesuai EYD V) | Bedah Logika Kalimat |\n| :--- | :--- | :--- |\n| **Dan**, kebijakan itu meredam inflasi. | **Selain itu**, kebijakan itu meredam inflasi. | Ganti konjungsi intrakalimat *dan* menjadi konjungsi antarkalimat *selain itu* disertai tanda koma. |\n| **Tetapi**, realisasi investasi masih lambat. | **Namun**, realisasi investasi masih lambat. | Pertentangan antar-kalimat wajib memakai *namun* atau *akan tetapi*, bukan *tetapi*. |\n\nKamu juga bisa memperbaiki kalimat semacam ini dengan menggabungkannya ke kalimat sebelumnya memakai tanda koma.",
+      "kunci_pembeda": "Jika menemukan kata *dan*, *atau*, atau *tetapi* tepat setelah tanda titik, ganti dengan konjungsi antarkalimat (*selain itu*, *namun*) atau gabungkan ke kalimat sebelumnya.",
       "visual": null
     },
     {
       "nomor_variasi": 4,
-      "nama_variasi": "Eliminasi Konjungsi Ganda dalam Satu Kalimat Majemuk",
+      "nama_variasi": "Membuang Konjungsi Ganda dalam Satu Kalimat Majemuk",
       "kategori_variasi": "Inti",
       "stimulus_mini": "**Apabila** curah hujan ekstrem terus berlangsung selama sepekan, **maka** potensi banjir rob di pesisir utara akan meningkat tajam.",
-      "bedah_pola_markdown": "Kalimat majemuk bertingkat wajib memiliki satu induk kalimat yang bebas dari konjungsi. Memasang konjungsi subordinatif di awal kalimat sekaligus konjungsi koordinatif/penegas di tengah kalimat (*Meskipun..., tetapi...*, *Karena..., sehingga...*, *Jika..., maka...*) membuat kedua klausa berubah menjadi anak kalimat tanpa induk.\n\n| Salah (Konjungsi Ganda) | Benar (Satu Konjungsi) | Analisis Sintaksis |\n| :--- | :--- | :--- |\n| **Apabila** hujan turun [K-Syarat], **maka** banjir meluas [K]. | **Apabila** hujan turun [K-Syarat], banjir [S] meluas [P]. | Hapus *maka* agar klausa kedua berfungsi sebagai induk kalimat [S-P] yang utuh. |\n| **Karena** harga naik [K-Sebab], **sehingga** omzet turun [K]. | **Karena** harga naik [K-Sebab], omzet [S] turun [P]. | Pilih salah satu relasi: *karena* di awal atau *sehingga* di tengah, jangan keduanya. |\n\nIngat pola emasnya: jika konjungsi sudah berada di awal kalimat, bagian setelah tanda koma wajib langsung diawali Subjek [S].",
-      "kunci_pembeda": "Hapus konjungsi kedua (*maka*, *tetapi*, *sehingga*) apabila klausa pertama sudah diawali konjungsi subordinatif agar induk kalimat tetap memiliki Subjek [S].",
+      "bedah_pola_markdown": "Setiap kalimat majemuk bertingkat harus memiliki satu induk kalimat yang bersih dari konjungsi. Jika kamu memasang konjungsi di awal kalimat lalu menambah konjungsi lagi setelah koma (*Meskipun..., tetapi...*, *Karena..., sehingga...*, *Jika..., maka...*), kalimat itu kehilangan induk kalimatnya.\n\n| Salah (Konjungsi Ganda) | Benar (Satu Konjungsi) | Bedah Logika Kalimat |\n| :--- | :--- | :--- |\n| **Apabila** hujan turun, **maka** banjir meluas. | **Apabila** hujan turun, banjir meluas. | Buang kata *maka* supaya klausa kedua langsung dimulai oleh subjek (*banjir*) sebagai induk kalimat. |\n| **Karena** harga naik, **sehingga** omzet turun. | **Karena** harga naik, omzet turun. | Pilih satu saja: pakai *karena* di awal kalimat atau *sehingga* di tengah kalimat, jangan keduanya. |\n\nPegang rumus praktis ini: begitu konjungsi sudah ditaruh di awal kalimat, kata pertama setelah tanda koma wajib berupa Subjek.",
+      "kunci_pembeda": "Coret konjungsi kedua (*maka*, *tetapi*, *sehingga*) jika klausa pertama sudah diawali konjungsi bertingkat agar induk kalimat tetap memiliki subjek.",
       "visual": null
     }
   ],
@@ -190,7 +190,7 @@
         "E. mengganti *di mana* dengan *ketika* dan *sehingga* dengan *tetapi*"
       ],
       "kunci_jawaban": "A",
-      "bedah_cepat_markdown": "Kata tanya *di mana* tidak baku sebagai penghubung klausa objek sehingga harus diganti menjadi *bahwa*. Sementara itu, konjungsi *sehingga* sudah tepat menyatakan relasi akibat intrakalimat dan didahului tanda koma. Opsi B salah karena *yang mana* juga tidak baku. Opsi C salah karena *oleh karena itu* adalah konjungsi antarkalimat. Opsi D dan E merusak relasi logis sebab-akibat.",
+      "bedah_cepat_markdown": "Langkah pertama, cek kata *di mana*. Kata tanya ini tidak baku dipakai sebagai pengantar klausa objek, jadi wajib diganti dengan *bahwa*. Langkah kedua, cek kata *sehingga*. Konjungsi ini sudah tepat menyatakan akibat di dalam satu kalimat dan sudah didahului tanda koma. Opsi B salah karena *yang mana* juga tidak baku. Opsi C salah karena *oleh karena itu* adalah konjungsi antarkalimat. Opsi D dan E merusak hubungan sebab-akibat kalimat.",
       "visual": null
     },
     {
@@ -209,7 +209,7 @@
         "E. Menggabungkan kalimat (1) dan (2) tanpa tanda koma serta mengganti *tetapi* menjadi *namun*."
       ],
       "kunci_jawaban": "B",
-      "bedah_cepat_markdown": "Pada kalimat (2), konjungsi koordinatif *Dan* dilarang mengawali kalimat formal sehingga harus diganti konjungsi antarkalimat *Selain itu*. Pada kalimat (3), terdapat konjungsi ganda (*Kendati..., tetapi...*) yang menghilangkan induk kalimat; hapus *tetapi* agar klausa kedua langsung diawali subjek. Opsi A salah karena *Sedangkan* juga konjungsi intrakalimat. Opsi C, D, dan E tetap menyisakan kesalahan struktur.",
+      "bedah_cepat_markdown": "Mari bedah satu per satu. Pada kalimat (2), konjungsi setara *Dan* dilarang berada di awal kalimat formal, sehingga harus diganti konjungsi antarkalimat *Selain itu*. Pada kalimat (3), muncul jebakan konjungsi ganda (*Kendati..., tetapi...*) yang membuat induk kalimat hilang; cukup hapus *tetapi* agar klausa kedua langsung diawali subjek. Opsi A salah karena *Sedangkan* juga konjungsi intrakalimat. Opsi C, D, dan E tetap menyisakan kesalahan struktur.",
       "visual": null
     },
     {
@@ -222,7 +222,7 @@
       "pertanyaan_markdown": "Cermatilah teks berikut!\n\n> (1) Digitalisasi layanan publik mempercepat proses perizinan usaha mikro. (2) **Karena** sistem terintegrasi secara daring, **maka** pemohon tidak perlu mendatangi kantor dinas berulang kali. (3) Kemudahan ini dirancang **sehingga** pelaku usaha dapat fokus meningkatkan kapasitas produksi. (4) Pemerintah daerah pun terus memperluas jangkauan internet ke wilayah perdesaan.\n\nTulislah **satu kata** konjungsi yang harus dihilangkan pada kalimat (2) agar kalimat tersebut efektif sesuai kaidah EYD V!",
       "opsi_jawaban": [],
       "kunci_jawaban": "maka",
-      "bedah_cepat_markdown": "Kalimat (2) menggunakan konjungsi ganda (*Karena..., maka...*) dalam satu kalimat majemuk bertingkat. Karena anak kalimat keterangan sebab sudah diawali konjungsi subordinatif *Karena*, kata *maka* di awal induk kalimat wajib dihilangkan agar subjek (*pemohon*) berdiri utuh sebagai induk kalimat.",
+      "bedah_cepat_markdown": "Perhatikan struktur kalimat (2). Kalimat ini memakai konjungsi ganda (*Karena..., maka...*) di dalam satu kalimat majemuk bertingkat. Karena anak kalimat keterangan sebab sudah diawali konjungsi *Karena*, kata *maka* di awal induk kalimat wajib dihapus agar subjek (*pemohon*) berdiri utuh.",
       "visual": null
     }
   ]
