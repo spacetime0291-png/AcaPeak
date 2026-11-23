@@ -95,23 +95,22 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
             <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden xs:inline max-w-[140px] sm:max-w-[200px]">
               {metadata.title}
             </span>
-
-            {/* Tombol Pill Subtle Rangkuman Cepat Bab Ini */}
-            {kodeBab && (
-              <Link
-                to={`/rangkuman/${kodeBab}#${metadata.id.toLowerCase()}`}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition shrink-0 shadow-2xs hover:scale-105"
-                title={`Buka Rangkuman & Rumus Cepat Bab ${kodeBab.toUpperCase()}`}
-              >
-                <Zap className="w-3 h-3 fill-amber-500 text-amber-500 shrink-0" />
-                <span className="hidden sm:inline">⚡ Rangkuman Cepat Bab Ini</span>
-                <span className="sm:hidden">⚡ Rangkuman</span>
-              </Link>
-            )}
           </div>
 
           {/* Indikator Progres Real-Time & Kontrol Fleksibel */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {/* Tombol Pill Subtle Rangkuman Cepat Bab Ini */}
+            {kodeBab && (
+              <Link
+                to={`/rangkuman/${kodeBab}#${metadata.id.toLowerCase()}`}
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition shrink-0 shadow-2xs hover:scale-105"
+                title={`Buka Rangkuman & Rumus Cepat Bab ${kodeBab.toUpperCase()}`}
+              >
+                <Zap className="w-3 h-3 fill-amber-500 text-amber-500 shrink-0" />
+                <span className="hidden sm:inline">Rangkuman Bab</span>
+                <span className="sm:hidden">Rangkuman</span>
+              </Link>
+            )}
             {/* Progress Bar */}
             <div className="flex items-center gap-1.5 sm:gap-2">
               <span className="font-mono text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[32px] text-right">

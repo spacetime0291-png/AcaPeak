@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useParams, Link, useLocation } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
@@ -8,27 +8,28 @@ import {
   Zap,
   ChevronLeft,
   ChevronRight,
-  ChevronDown,
-  ChevronUp,
   ExternalLink,
+  Layers,
   Search,
   Clock,
+  Maximize2,
+  Minimize2,
   Printer,
   Eye,
   EyeOff,
-  ArrowLeft,
   X,
-  Layers,
-  Sparkles,
 } from 'lucide-react';
 import type {
   RangkumanBabData,
   RangkumanIndexData,
+  RangkumanSubbab,
 } from '../types/rangkuman';
 import {
   fetchRangkumanByBabId,
   fetchRangkumanIndex,
 } from '../lib/rangkumanLoader';
+import { ThemeToggle } from '../components/common/ThemeToggle';
+import { NatureFocusHeaderAccent } from '../components/decorations/NatureDecorations';
 
 // Strict KaTeX configuration: output: 'html' to guarantee 0 <math> tags
 const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
@@ -41,13 +42,16 @@ interface RangkumanPageProps {
 }
 
 export const RangkumanPage: React.FC<RangkumanPageProps> = ({
+  theme = 'light',
+  onToggleTheme = () => {},
   initialBabData = null,
   initialIndexData = null,
 }) => {
   const { babId } = useParams<{ babId?: string }>();
-  const location = useLocation();
+  const navigate = useNavigate();
+  const isDark = theme === 'dark';
 
-  // Pick initial data from prop or client-side SSR payload
+  // Initial data from SSR or state
   const [indexData, setIndexData] = useState<RangkumanIndexData | null>(() => {
     if (initialIndexData && initialIndexData.daftar_subtes?.length) {
       return initialIndexData;
@@ -73,41 +77,67 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     return !babData;
   });
 
-  // Hub page states
-  const [selectedSubtestTab, setSelectedSubtestTab] = useState<string>('Semua');
-  const [globalSearch, setGlobalSearch] = useState<string>('');
-
-  // Bab page states
-  const [chapterSearch, setChapterSearch] = useState<string>('');
+  const [activeSubbabIndex, setActiveSubbabIndex] = useState<number>(-1); // -1 = Semua Sub-bab
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [inChapterSearch, setInChapterSearch] = useState<string>('');
   const [activeRecallMode, setActiveRecallMode] = useState<boolean>(false);
-  const [collapsedGroups, setCollapsedGroups] = useState<Record<string, boolean>>({});
-  const [scrollProgress, setScrollProgress] = useState<number>(0);
-  const [activeSubbabId, setActiveSubbabId] = useState<string>('');
-
-  // Unblurred state for active recall on-click
   const [revealedItems, setRevealedItems] = useState<Record<string, boolean>>({});
 
-  // 1. Reading progress bar tracker
+  // Reader-matching states: Focus Mode & Font Scaling
+  const [isFocusMode, setIsFocusMode] = useState<boolean>(false);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
+
+  // Flexible Font Size Scale: 0.85 to 1.4 (Default 1.0, synced with reader)
+  const [fontScale, setFontScale] = useState<number>(() => {
+    try {
+      const saved =
+        typeof window !== 'undefined'
+          ? localStorage.getItem('skolace_reader_font_scale')
+          : null;
+      return saved ? Math.min(1.4, Math.max(0.85, parseFloat(saved))) : 1.0;
+    } catch {
+      return 1.0;
+    }
+  });
+
+  const handleFontScaleChange = (newScale: number) => {
+    const clamped = Math.min(1.4, Math.max(0.85, Number(newScale.toFixed(2))));
+    setFontScale(clamped);
+    try {
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('skolace_reader_font_scale', clamped.toString());
+      }
+    } catch {}
+  };
+
+  // Real-time scroll progress tracker
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
     const handleScroll = () => {
       const doc = document.documentElement;
-      const total = doc.scrollHeight - window.innerHeight;
-      if (total <= 0) {
+      const totalHeight = doc.scrollHeight - window.innerHeight;
+      if (totalHeight <= 0) {
         setScrollProgress(100);
         return;
       }
-      const pct = Math.min(100, Math.max(0, (window.scrollY / total) * 100));
+      const current = window.scrollY;
+      const pct = Math.min(
+        100,
+        Math.max(0, Math.round((current / totalHeight) * 100))
+      );
       setScrollProgress(pct);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [babId, babData]);
 
-  // 2. Load Index data on mount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [babId, babData, activeSubbabIndex]);
+
+  // Load index data on mount
   useEffect(() => {
     if (!indexData) {
       fetchRangkumanIndex()
@@ -116,21 +146,20 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     }
   }, [indexData]);
 
-  // 3. Load specific Bab data when babId changes
+  // Load specific Bab data
   useEffect(() => {
     if (!babId) {
       setBabData(null);
       setIsLoading(false);
       if (typeof document !== 'undefined') {
-        document.title = 'Rangkuman Cepat UTBK-SNBT (1 Teori = 1 Contoh) | SkolAce';
+        document.title = 'Rangkuman & Cheat Sheet UTBK-SNBT | SkolAce';
       }
       return;
     }
 
-    // Check if current state already matches
     if (babData && babData.kode_bab.toLowerCase() === babId.toLowerCase()) {
       if (typeof document !== 'undefined') {
-        document.title = `Cheat Sheet ${babData.bab} (${babData.kode_bab.toUpperCase()}) | SkolAce UTBK`;
+        document.title = `Cheat Sheet ${babData.bab} (${babData.kode_bab.toUpperCase()}) | SkolAce`;
       }
       return;
     }
@@ -139,8 +168,12 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     fetchRangkumanByBabId(babId)
       .then((data) => {
         setBabData(data);
+        setActiveSubbabIndex(-1); // Reset filter to all
         if (typeof document !== 'undefined') {
-          document.title = `Cheat Sheet ${data.bab} (${data.kode_bab.toUpperCase()}) | SkolAce UTBK`;
+          document.title = `Cheat Sheet ${data.bab} (${data.kode_bab.toUpperCase()}) | SkolAce`;
+        }
+        if (typeof window !== 'undefined') {
+          window.scrollTo({ top: 0, behavior: 'instant' });
         }
       })
       .catch((err) => {
@@ -151,115 +184,44 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
       });
   }, [babId, babData]);
 
-  // 4. Handle smooth anchor scroll on hash change
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const hash = location.hash.replace('#', '');
-    if (hash && babData) {
-      const el = document.getElementById(hash);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 150);
-      }
-    }
-  }, [location.hash, babData]);
-
-  // 5. Scroll-Spy with IntersectionObserver for Active Sub-bab in TOC
-  useEffect(() => {
-    if (typeof window === 'undefined' || !babData?.daftar_subbab) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setActiveSubbabId(entry.target.id);
-            break;
-          }
-        }
-      },
-      {
-        root: null,
-        rootMargin: '-80px 0px -60% 0px',
-        threshold: 0,
-      }
-    );
-
-    for (const sub of babData.daftar_subbab) {
-      const el = document.getElementById(sub.kode_subbab);
-      if (el) observer.observe(el);
-    }
-
-    return () => observer.disconnect();
-  }, [babData]);
-
-  // 6. Navigation list of all Babs for Prev/Next
+  // Derived list of all chapters for prev/next
   const allBabsList = useMemo(() => {
     if (!indexData) return [];
     return indexData.daftar_subtes.flatMap((st) =>
       st.daftar_bab.map((b) => ({
         ...b,
         subtes: st.subtes,
-        subtes_id: st.subtes_id,
       }))
     );
   }, [indexData]);
 
   const currentBabIndex = useMemo(() => {
     if (!babId || !allBabsList.length) return -1;
-    return allBabsList.findIndex((b) => b.kode_bab.toLowerCase() === babId.toLowerCase());
+    return allBabsList.findIndex(
+      (b) => b.kode_bab.toLowerCase() === babId.toLowerCase()
+    );
   }, [babId, allBabsList]);
 
   const prevBab = currentBabIndex > 0 ? allBabsList[currentBabIndex - 1] : null;
-  const nextBab = currentBabIndex !== -1 && currentBabIndex < allBabsList.length - 1 ? allBabsList[currentBabIndex + 1] : null;
+  const nextBab =
+    currentBabIndex !== -1 && currentBabIndex < allBabsList.length - 1
+      ? allBabsList[currentBabIndex + 1]
+      : null;
 
-  // Format Math helper: auto convert \frac to \dfrac for legible vertical fractions
+  // Format Math & Markdown
   const formatMath = (content?: string) => {
     if (!content) return '';
     return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
   };
 
-  // 7. Markdown Renderers
-  // Standard Markdown Parser with KaTeX HTML output
-  const renderMarkdownText = (text?: string, isExample: boolean = false) => {
-    if (!text) return null;
-    return (
-      <div className="min-w-0 break-words leading-[1.65]">
-        <ReactMarkdown
-          remarkPlugins={[remarkMath, remarkGfm]}
-          rehypePlugins={KATEX_REHYPE_PLUGINS}
-          components={{
-            p: ({ children }) => <span className="inline leading-[1.65]">{children}</span>,
-            strong: ({ children }) => (
-              <strong
-                className={
-                  isExample
-                    ? 'font-semibold text-[#F8FAFC] bg-emerald-500/15 text-emerald-200 px-1 py-0.5 rounded shadow-2xs'
-                    : 'font-semibold text-[#F8FAFC]'
-                }
-              >
-                {children}
-              </strong>
-            ),
-            em: ({ children }) => (
-              <em className="italic font-medium text-[#93C5FD]">
-                {children}
-              </em>
-            ),
-            code: ({ children }) => (
-              <code className="font-mono text-xs px-1.5 py-0.5 rounded bg-slate-900 text-sky-300 border border-slate-700">
-                {children}
-              </code>
-            ),
-          }}
-        >
-          {formatMath(text)}
-        </ReactMarkdown>
-      </div>
-    );
+  // Normalisasi tampilan nama kelompok bila ada awalan angka tidak konsisten (misal "1. ...")
+  const normalizeGroupTitle = (title: string): string => {
+    if (!title) return '';
+    return title.replace(/^(\d+[\.\)]\s*)+/, '').trim();
   };
 
-  const renderInlineMarkdown = (text?: string) => {
+  // Renderer untuk judul poin (inline element, KaTeX enabled)
+  const renderMarkdownInline = (text?: string) => {
     if (!text) return null;
     return (
       <ReactMarkdown
@@ -267,10 +229,18 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         rehypePlugins={KATEX_REHYPE_PLUGINS}
         components={{
           p: ({ children }) => <span className="inline">{children}</span>,
-          strong: ({ children }) => <strong className="font-semibold text-[#F8FAFC]">{children}</strong>,
-          em: ({ children }) => <em className="italic font-medium text-[#93C5FD]">{children}</em>,
+          strong: ({ children }) => (
+            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+              {children}
+            </strong>
+          ),
+          em: ({ children }) => (
+            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+              {children}
+            </em>
+          ),
           code: ({ children }) => (
-            <code className="font-mono text-xs px-1 py-0.5 rounded bg-slate-900 text-sky-300">
+            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
               {children}
             </code>
           ),
@@ -281,127 +251,139 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     );
   };
 
-  // Toggle group collapse
-  const toggleGroupCollapse = (groupId: string) => {
-    setCollapsedGroups((prev) => ({
-      ...prev,
-      [groupId]: !prev[groupId],
-    }));
+  // Renderer untuk penjelasan_singkat & contoh_penerapan
+  const renderMarkdownText = (text?: string) => {
+    if (!text) return null;
+    return (
+      <ReactMarkdown
+        remarkPlugins={[remarkMath, remarkGfm]}
+        rehypePlugins={KATEX_REHYPE_PLUGINS}
+        components={{
+          p: ({ children }) => (
+            <p className="m-0 leading-[1.65]">{children}</p>
+          ),
+          strong: ({ children }) => (
+            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+              {children}
+            </strong>
+          ),
+          em: ({ children }) => (
+            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+              {children}
+            </em>
+          ),
+          code: ({ children }) => (
+            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+              {children}
+            </code>
+          ),
+        }}
+      >
+        {formatMath(text)}
+      </ReactMarkdown>
+    );
   };
 
-  // Collapse / Expand all groups
-  const toggleAllGroups = (expand: boolean) => {
-    if (!babData) return;
-    const next: Record<string, boolean> = {};
-    for (const sub of babData.daftar_subbab) {
-      for (let i = 0; i < sub.kelompok.length; i++) {
-        const id = `${sub.kode_subbab}-${i}`;
-        next[id] = !expand;
-      }
-    }
-    setCollapsedGroups(next);
+  // Renderer untuk konsep_inti_markdown dengan spacing paragraf & list
+  const renderKonsepInti = (text?: string) => {
+    if (!text) return null;
+    return (
+      <ReactMarkdown
+        remarkPlugins={[remarkMath, remarkGfm]}
+        rehypePlugins={KATEX_REHYPE_PLUGINS}
+        components={{
+          p: ({ children }) => (
+            <p className="m-0 leading-[1.65]">{children}</p>
+          ),
+          ul: ({ children }) => (
+            <ul className="m-0 pl-5 list-disc list-outside space-y-2 marker:text-blue-500/80 dark:marker:text-blue-400/80">
+              {children}
+            </ul>
+          ),
+          ol: ({ children }) => (
+            <ol className="m-0 pl-5 list-decimal list-outside space-y-2 marker:text-blue-500/80 dark:marker:text-blue-400/80">
+              {children}
+            </ol>
+          ),
+          li: ({ children }) => (
+            <li className="leading-[1.65] pl-1 break-words overflow-x-auto">
+              {children}
+            </li>
+          ),
+          strong: ({ children }) => (
+            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+              {children}
+            </strong>
+          ),
+          em: ({ children }) => (
+            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+              {children}
+            </em>
+          ),
+          code: ({ children }) => (
+            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+              {children}
+            </code>
+          ),
+        }}
+      >
+        {formatMath(text)}
+      </ReactMarkdown>
+    );
   };
 
-  // Subtest styling badges
-  const getSubtestColor = (code: string) => {
-    const c = code.toUpperCase();
-    switch (c) {
-      case 'PU':
-        return 'bg-indigo-950/60 text-indigo-300 border-indigo-500/40';
-      case 'PPU':
-        return 'bg-sky-950/60 text-sky-300 border-sky-500/40';
-      case 'PBM':
-        return 'bg-purple-950/60 text-purple-300 border-purple-500/40';
-      case 'PK':
-        return 'bg-emerald-950/60 text-emerald-300 border-emerald-500/40';
-      case 'LBI':
-        return 'bg-rose-950/60 text-rose-300 border-rose-500/40';
-      case 'LBE':
-        return 'bg-teal-950/60 text-teal-300 border-teal-500/40';
-      case 'PM':
-        return 'bg-amber-950/60 text-amber-300 border-amber-500/40';
-      default:
-        return 'bg-slate-800 text-slate-300 border-slate-700';
-    }
+  // Color badges based on Subtes
+  const getSubtestColor = (kode: string) => {
+    const k = kode.toLowerCase();
+    if (k.startsWith('pu'))
+      return 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border-indigo-500/30';
+    if (k.startsWith('pk'))
+      return 'bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/30';
+    if (k.startsWith('pm'))
+      return 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30';
+    if (k.startsWith('ppu'))
+      return 'bg-sky-500/10 text-sky-700 dark:text-sky-300 border-sky-500/30';
+    if (k.startsWith('pbm'))
+      return 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30';
+    if (k.startsWith('lbi'))
+      return 'bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/30';
+    if (k.startsWith('lbe'))
+      return 'bg-teal-500/10 text-teal-700 dark:text-teal-300 border-teal-500/30';
+    return 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/30';
   };
 
-  // Mode badge styling
-  const getModeBadge = (mode?: string) => {
-    if (!mode) return null;
-    switch (mode) {
-      case 'katalog_rumus_sifat':
-        return (
-          <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-sky-950/40 text-sky-300 border border-sky-500/30">
-            Rumus & Sifat
-          </span>
-        );
-      case 'katalog_kaidah':
-        return (
-          <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-950/40 text-emerald-300 border border-emerald-500/30">
-            Kaidah & Syarat
-          </span>
-        );
-      case 'katalog_sinyal_pola':
-        return (
-          <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-950/40 text-amber-300 border border-amber-500/30">
-            Sinyal & Pola
-          </span>
-        );
-      default:
-        return null;
-    }
+  // Subtest Acronym
+  const extractSubtestCode = (subtesName?: string) => {
+    if (!subtesName) return 'pu';
+    const match = subtesName.match(/\(([^)]+)\)/);
+    return (match ? match[1] : subtesName.split(':')[0]).toLowerCase().trim();
   };
 
-  // Filtered Chapters for Hub View
-  const filteredHubChapters = useMemo(() => {
-    if (!indexData) return [];
-    let groups = indexData.daftar_subtes;
-
-    // Filter by Subtest Tab
-    if (selectedSubtestTab !== 'Semua') {
-      groups = groups.filter((g) => g.subtes_id === selectedSubtestTab);
-    }
-
-    // Filter by Global Search query
-    const q = globalSearch.trim().toLowerCase();
-    if (!q) return groups;
-
-    return groups
-      .map((g) => ({
-        ...g,
-        daftar_bab: g.daftar_bab.filter(
-          (b) =>
-            b.kode_bab.toLowerCase().includes(q) ||
-            b.bab.toLowerCase().includes(q) ||
-            b.subbab.some((sb) => sb.judul_subbab.toLowerCase().includes(q))
-        ),
-      }))
-      .filter((g) => g.daftar_bab.length > 0);
-  }, [indexData, selectedSubtestTab, globalSearch]);
-
-  // Filtered Subchapters and Items for Chapter View
-  const filteredSubbabs = useMemo(() => {
+  // Filtered sub-babs
+  const displayedSubbabs: RangkumanSubbab[] = useMemo(() => {
     if (!babData) return [];
-    const q = chapterSearch.trim().toLowerCase();
-    if (!q) return babData.daftar_subbab;
+    let list = activeSubbabIndex === -1 ? babData.daftar_subbab : [babData.daftar_subbab[activeSubbabIndex]].filter(Boolean);
 
-    return babData.daftar_subbab
+    const q = inChapterSearch.trim().toLowerCase();
+    if (!q) return list;
+
+    return list
       .map((sub) => {
-        const matchesSubTitle = sub.judul_subbab.toLowerCase().includes(q) || sub.inti_subbab.toLowerCase().includes(q);
+        const matchesSubTitle = sub.judul_subbab.toLowerCase().includes(q) || (sub.inti_subbab || '').toLowerCase().includes(q);
         const filteredKelompok = sub.kelompok
           .map((kel) => {
-            const matchesKelName = kel.nama_kelompok.toLowerCase().includes(q);
-            const matchingButir = kel.butir.filter(
+            const matchesKel = kel.nama_kelompok.toLowerCase().includes(q);
+            const filteredButir = kel.butir.filter(
               (b) =>
-                matchesKelName ||
+                matchesKel ||
                 matchesSubTitle ||
-                b.judul.toLowerCase().includes(q) ||
-                b.teori_singkat.toLowerCase().includes(q) ||
-                b.contoh.toLowerCase().includes(q)
+                (b.judul || b.judul_poin || '').toLowerCase().includes(q) ||
+                (b.teori_singkat || b.penjelasan_singkat || '').toLowerCase().includes(q) ||
+                (b.contoh || b.contoh_penerapan || '').toLowerCase().includes(q)
             );
             return {
               ...kel,
-              butir: matchingButir,
+              butir: filteredButir,
             };
           })
           .filter((k) => k.butir.length > 0);
@@ -412,671 +394,683 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         };
       })
       .filter((sub) => sub.kelompok.length > 0);
-  }, [babData, chapterSearch]);
+  }, [babData, activeSubbabIndex, inChapterSearch]);
 
-  // Total theory points in current chapter
-  const totalChapterPoints = useMemo(() => {
-    if (!babData) return 0;
-    return babData.daftar_subbab.reduce(
-      (acc, sb) => acc + sb.kelompok.reduce((kAcc, k) => kAcc + k.butir.length, 0),
-      0
-    );
-  }, [babData]);
+  // Index Search filter
+  const filteredIndexSubtes = useMemo(() => {
+    if (!indexData) return [];
+    if (!searchQuery.trim()) return indexData.daftar_subtes;
+    const query = searchQuery.toLowerCase();
+    return indexData.daftar_subtes
+      .map((st) => ({
+        ...st,
+        daftar_bab: st.daftar_bab.filter(
+          (b) =>
+            b.bab.toLowerCase().includes(query) ||
+            (b.nama_bab && b.nama_bab.toLowerCase().includes(query)) ||
+            b.kode_bab.toLowerCase().includes(query) ||
+            st.subtes.toLowerCase().includes(query) ||
+            (b.subbab && b.subbab.some((sb) => sb.judul_subbab.toLowerCase().includes(query)))
+        ),
+      }))
+      .filter((st) => st.daftar_bab.length > 0);
+  }, [indexData, searchQuery]);
 
-  // =========================================================================
-  // VIEW A: HALAMAN HUB RANGKUMAN (/rangkuman)
-  // =========================================================================
-  if (!babId) {
-    return (
-      <div className="min-h-screen text-slate-100 bg-[#0B1120] font-sans selection:bg-sky-500 selection:text-white pb-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10">
-          {/* Header Ringkas Hub */}
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-sky-950/60 text-sky-400 border border-sky-500/30 mb-3 shadow-2xs">
-              <Zap className="w-3.5 h-3.5 fill-sky-400 text-sky-400" />
-              Rapid Review • Cheat Sheet UTBK-SNBT
-            </div>
-            <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-[#F8FAFC] leading-[1.2]">
-              Rangkuman Cepat UTBK-SNBT
-            </h1>
-            <p className="text-sm sm:text-base text-slate-300 mt-2.5 font-medium leading-[1.6]">
-              1 Teori = 1 Contoh Padat • 7 Subtes • 106 Sub-bab • Cepat Dipindai Anti-Lelah Mata
-            </p>
+  const handleBackNavigation = () => {
+    if (babData) {
+      const subCode = extractSubtestCode(babData.subtes);
+      navigate(`/subtest/${subCode}`);
+    } else {
+      navigate('/subtest/pu');
+    }
+  };
 
-            {/* Pencarian Global Rangkuman */}
-            <div className="relative mt-6 max-w-lg mx-auto">
-              <Search className="w-4.5 h-4.5 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-              <input
-                type="text"
-                value={globalSearch}
-                onChange={(e) => setGlobalSearch(e.target.value)}
-                placeholder="Cari nama bab, rumus, atau judul sub-bab..."
-                className="w-full pl-10 pr-9 py-2.5 rounded-xl text-sm bg-[#111827] text-slate-100 placeholder-slate-400 border border-slate-700/80 focus:border-sky-400 focus:ring-1 focus:ring-sky-400 outline-none transition"
-              />
-              {globalSearch && (
-                <button
-                  type="button"
-                  onClick={() => setGlobalSearch('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
-                  aria-label="Hapus pencarian"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              )}
-            </div>
-          </div>
-
-          {/* Filter Tab Horizontal 7 Subtes */}
-          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 mb-8 no-scrollbar justify-start sm:justify-center">
-            {['Semua', 'PU', 'PPU', 'PBM', 'PK', 'LBI', 'LBE', 'PM'].map((tab) => {
-              const isActive = selectedSubtestTab === tab;
-              return (
-                <button
-                  key={tab}
-                  type="button"
-                  onClick={() => setSelectedSubtestTab(tab)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap transition-all cursor-pointer ${
-                    isActive
-                      ? 'bg-sky-500 text-white shadow-md shadow-sky-500/20'
-                      : 'bg-[#111827] text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700'
-                  }`}
-                >
-                  {tab === 'Semua' ? 'Semua Subtes' : tab}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Grid Kartu Bab Responsif */}
-          {filteredHubChapters.length === 0 ? (
-            <div className="text-center py-16 bg-[#111827] rounded-2xl border border-slate-800 max-w-md mx-auto">
-              <Search className="w-10 h-10 text-slate-500 mx-auto mb-3" />
-              <p className="text-base font-semibold text-slate-200">Tidak ada bab yang sesuai</p>
-              <p className="text-xs text-slate-400 mt-1">Coba kata kunci lain atau pilih tab Semua Subtes.</p>
-            </div>
-          ) : (
-            <div className="space-y-10">
-              {filteredHubChapters.map((group) => (
-                <section key={group.subtes_id} className="space-y-4">
-                  {/* Group Header */}
-                  <div className="flex items-center gap-2.5 border-b border-slate-800 pb-2">
-                    <span
-                      className={`px-2.5 py-1 rounded-md text-xs font-bold border ${getSubtestColor(
-                        group.subtes_id
-                      )}`}
-                    >
-                      {group.subtes_id}
-                    </span>
-                    <h2 className="text-lg sm:text-xl font-bold text-[#F8FAFC]">{group.subtes}</h2>
-                    <span className="text-xs font-semibold text-slate-400 ml-auto">
-                      {group.daftar_bab.length} Bab
-                    </span>
-                  </div>
-
-                  {/* Cards Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {group.daftar_bab.map((b) => (
-                      <Link
-                        key={b.kode_bab}
-                        to={`/rangkuman/${b.kode_bab.toLowerCase()}`}
-                        className="group flex flex-col justify-between p-4 rounded-xl bg-[#111827] hover:bg-[#131C31] border border-slate-800/80 hover:border-sky-500/40 transition-all duration-200 shadow-xs hover:shadow-md"
-                      >
-                        <div>
-                          {/* Card Header: Code & Estimasi Menit */}
-                          <div className="flex items-center justify-between gap-2 mb-2">
-                            <span className="font-mono text-xs font-bold px-2 py-0.5 rounded bg-slate-900 text-sky-300 border border-slate-700/80 uppercase">
-                              {b.kode_bab}
-                            </span>
-                            <span className="text-[12px] font-medium text-slate-400 flex items-center gap-1">
-                              <Clock className="w-3.5 h-3.5 text-amber-400" />
-                              {b.estimasi_menit_review} mnt
-                            </span>
-                          </div>
-
-                          {/* Bab Name */}
-                          <h3 className="font-semibold text-base text-[#F8FAFC] group-hover:text-sky-300 transition-colors leading-[1.35] line-clamp-2">
-                            {b.bab}
-                          </h3>
-
-                          {/* Stats badge */}
-                          <div className="flex items-center gap-3 text-xs text-slate-400 mt-2 font-medium">
-                            <span>{b.jumlah_subbab} Sub-bab</span>
-                            <span>•</span>
-                            <span>{b.total_butir} Poin Teori</span>
-                          </div>
-
-                          {/* 3 Sub-bab preview */}
-                          <div className="mt-3.5 pt-3 border-t border-slate-800/60 space-y-1.5">
-                            {b.subbab.slice(0, 3).map((sb) => (
-                              <div
-                                key={sb.kode_subbab}
-                                className="flex items-start gap-1.5 text-xs text-slate-300 truncate"
-                              >
-                                <span className="font-mono text-[10.5px] text-slate-400 shrink-0">
-                                  {sb.kode_subbab}
-                                </span>
-                                <span className="truncate">{sb.judul_subbab}</span>
-                              </div>
-                            ))}
-                            {b.subbab.length > 3 && (
-                              <p className="text-[11px] text-slate-400 italic">
-                                +{b.subbab.length - 3} sub-bab lainnya
-                              </p>
-                            )}
-                          </div>
-                        </div>
-
-                        {/* Open Action Arrow */}
-                        <div className="mt-4 pt-3 flex items-center justify-between text-xs font-semibold text-sky-400 group-hover:translate-x-0.5 transition-transform">
-                          <span>Buka Rangkuman Padat</span>
-                          <ChevronRight className="w-4 h-4" />
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  }
-
-  // =========================================================================
-  // VIEW B: HALAMAN RANGKUMAN PER BAB (/rangkuman/:kode_bab)
-  // =========================================================================
   return (
-    <div className="min-h-screen text-slate-100 bg-[#0B1120] font-sans selection:bg-sky-500 selection:text-white pb-24 rangkuman-page-dark">
-      {/* 1. Thin 2px Reading Progress Bar */}
-      <div
-        className="fixed top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-sky-400 via-teal-400 to-emerald-400 z-50 print-hide"
-        style={{ width: `${scrollProgress}%` }}
-      />
+    <div className="min-h-screen text-[#1E293B] dark:text-[#E2E8F0] bg-[#F8FAFC] dark:bg-[#070913] pb-16 transition-colors">
+      {/* Scoped CSS Rules for Rangkuman Page reading area: typography, measure, line-height & KaTeX */}
+      <style>{`
+        .rangkuman-reading-area {
+          font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+          font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+        .rangkuman-reading-area .font-mono,
+        .rangkuman-reading-area code {
+          font-family: 'JetBrains Mono', monospace;
+        }
+        .rangkuman-subbab-title {
+          font-size: calc(20px * var(--reader-font-scale, 1));
+          font-weight: 700;
+          letter-spacing: -0.025em;
+          line-height: 1.3 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-subbab-title {
+            font-size: calc(23px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-kelompok-title {
+          font-size: calc(14.5px * var(--reader-font-scale, 1));
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          line-height: 1.4 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-kelompok-title {
+            font-size: calc(15.5px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-poin-title {
+          font-size: calc(15px * var(--reader-font-scale, 1));
+          font-weight: 600;
+          line-height: 1.45 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-poin-title {
+            font-size: calc(16px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-body-text {
+          font-size: calc(15px * var(--reader-font-scale, 1));
+          line-height: 1.65 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-body-text {
+            font-size: calc(15.5px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-reading-area .katex {
+          font-size: 1.02em !important;
+          line-height: 1.3 !important;
+        }
+        .rangkuman-reading-area p:has(.katex),
+        .rangkuman-reading-area li:has(.katex),
+        .rangkuman-reading-area div:has(.katex),
+        .rangkuman-reading-area span:has(.katex),
+        .rangkuman-reading-area h4:has(.katex) {
+          line-height: inherit !important;
+        }
+        .rangkuman-reading-area strong {
+          font-weight: 600 !important;
+        }
+        .rangkuman-reading-area .katex-display {
+          max-width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          margin: 0.5rem 0;
+          padding: 0.25rem 0;
+        }
+      `}</style>
 
-      {/* 2. Top Sticky Toolbar & Breadcrumb */}
-      <header className="sticky top-0 z-40 bg-[#0F172A]/95 backdrop-blur-md border-b border-slate-800/80 px-3 sm:px-6 py-2.5 print-hide">
-        <div className="max-w-[1120px] mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
-          {/* Breadcrumb & Identity */}
-          <div className="flex items-center gap-2 min-w-0">
-            <Link
-              to="/rangkuman"
-              className="p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition shrink-0"
-              title="Kembali ke Daftar Semua Rangkuman"
+      {/* 1. TOP STATIS/STICKY BAR: Identitas Bab/Materi, Progress Real-Time, Ukuran Teks Fleksibel & Theme Switcher */}
+      <header className="sticky top-0 z-50 w-full bg-[#F8FAFC]/95 dark:bg-[#070913]/95 backdrop-blur-md border-b border-[#E2E8F0] dark:border-slate-800 transition-all shadow-2xs print-hide">
+        {!isDark && <NatureFocusHeaderAccent />}
+
+        <div
+          className={`mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all ${
+            babId ? 'max-w-[700px]' : isFocusMode ? 'max-w-5xl' : 'max-w-4xl'
+          }`}
+        >
+          {/* Identitas Bab & Tombol Kembali */}
+          <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+            <button
+              type="button"
+              onClick={handleBackNavigation}
+              className="p-1 sm:p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
+              title={
+                babId
+                  ? 'Kembali ke Silabus Subtes'
+                  : 'Kembali ke Dashboard Silabus'
+              }
+              aria-label="Kembali"
             >
-              <ArrowLeft className="w-4.5 h-4.5" />
-            </Link>
+              <ChevronLeft className="w-5 h-5" />
+            </button>
 
-            <div className="flex items-center gap-1.5 min-w-0 text-xs sm:text-sm font-medium text-slate-400">
-              <Link to="/rangkuman" className="hover:text-slate-200 shrink-0">
-                Rangkuman
-              </Link>
-              <span>›</span>
-              <span className="truncate text-slate-300 font-semibold">
-                {babData ? babData.subtes.split(':')[0] : '...'}
-              </span>
-              <span>›</span>
-              <span className="truncate text-[#F8FAFC] font-bold">
-                {babData ? babData.kode_bab.toUpperCase() : '...'}
-              </span>
-            </div>
-
-            {babData && (
-              <span className="hidden md:inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-950/60 text-amber-300 border border-amber-500/30 shrink-0">
-                <Clock className="w-3 h-3 text-amber-400" />
-                {babData.estimasi_menit_review} Menit Review
-              </span>
+            {babId ? (
+              <>
+                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-slate-800 dark:bg-slate-700 text-white shrink-0 uppercase">
+                  {babData ? babData.kode_bab.toUpperCase() : babId.toUpperCase()}
+                </span>
+                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate inline max-w-[120px] sm:max-w-[240px]">
+                  {babData ? babData.bab : 'Cheat Sheet'}
+                </span>
+              </>
+            ) : (
+              <>
+                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-blue-600 text-white shrink-0 uppercase">
+                  CHEAT SHEET
+                </span>
+                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate inline max-w-[150px] sm:max-w-[280px]">
+                  Rangkuman Cepat per Bab
+                </span>
+              </>
             )}
           </div>
 
-          {/* Action Toolbar */}
-          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 justify-end overflow-x-auto no-scrollbar">
-            {/* Real-time search inside chapter */}
-            <div className="relative">
-              <input
-                type="text"
-                value={chapterSearch}
-                onChange={(e) => setChapterSearch(e.target.value)}
-                placeholder="Cari rumus/teori..."
-                className="w-32 sm:w-44 text-xs pl-7 pr-6 py-1.5 rounded-lg bg-[#111827] text-slate-100 placeholder-slate-400 border border-slate-700 focus:border-sky-400 outline-none"
-              />
-              <Search className="w-3.5 h-3.5 absolute left-2 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-              {chapterSearch && (
-                <button
-                  type="button"
-                  onClick={() => setChapterSearch('')}
-                  className="absolute right-1.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
+          {/* Indikator Progres Real-Time & Kontrol Fleksibel */}
+          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+            {/* Real-Time Progress Bar (hanya saat membaca Bab) */}
+            {babId && (
+              <div className="flex items-center gap-1 sm:gap-2">
+                <span className="font-mono text-[11px] sm:text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[28px] sm:min-w-[32px] text-right">
+                  {scrollProgress}%
+                </span>
+                <div
+                  className="w-10 sm:w-20 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden"
+                  role="progressbar"
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-valuenow={scrollProgress}
                 >
-                  <X className="w-3 h-3" />
-                </button>
-              )}
+                  <div
+                    className="h-full bg-blue-600 transition-all duration-300 ease-out rounded-full"
+                    style={{ width: `${scrollProgress}%` }}
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* Pengatur Ukuran Font Fleksibel (A- / % / A+) */}
+            <div className="flex items-center bg-slate-100 dark:bg-slate-800 rounded-xl p-0.5 border border-slate-200 dark:border-slate-700 shadow-2xs">
+              <button
+                type="button"
+                onClick={() => handleFontScaleChange(fontScale - 0.1)}
+                disabled={fontScale <= 0.85}
+                className="px-1 sm:px-1.5 py-1 text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                title="Perkecil Ukuran Teks (A-)"
+                aria-label="Perkecil Ukuran Teks"
+              >
+                A-
+              </button>
+              <button
+                type="button"
+                onClick={() => handleFontScaleChange(1.0)}
+                className="px-1 sm:px-1.5 py-1 text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                title="Reset Ukuran Normal (100%)"
+                aria-label="Reset Ukuran Normal"
+              >
+                {Math.round(fontScale * 100)}%
+              </button>
+              <button
+                type="button"
+                onClick={() => handleFontScaleChange(fontScale + 0.1)}
+                disabled={fontScale >= 1.4}
+                className="px-1 sm:px-1.5 py-1 text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                title="Perbesar Ukuran Teks (A+)"
+                aria-label="Perbesar Ukuran Teks"
+              >
+                A+
+              </button>
             </div>
 
-            {/* Active Recall Toggle (Sembunyikan Contoh) */}
-            <button
-              type="button"
-              onClick={() => setActiveRecallMode(!activeRecallMode)}
-              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border transition cursor-pointer ${
-                activeRecallMode
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
-                  : 'bg-[#111827] text-slate-300 hover:text-white border-slate-700'
-              }`}
-              title={
-                activeRecallMode
-                  ? 'Matikan Mode Uji Ingatan'
-                  : 'Aktifkan Mode Uji Ingatan: Buramkan contoh agar bisa menebak sendiri dahulu'
-              }
-            >
-              {activeRecallMode ? <EyeOff className="w-3.5 h-3.5 text-amber-400" /> : <Eye className="w-3.5 h-3.5 text-slate-400" />}
-              <span className="hidden sm:inline">
-                {activeRecallMode ? 'Contoh Kabur' : 'Uji Ingatan'}
-              </span>
-            </button>
+            {/* Mode Fokus Toggle (saat membaca Bab) */}
+            {babId && (
+              <button
+                type="button"
+                onClick={() => setIsFocusMode(!isFocusMode)}
+                className="hidden md:flex items-center gap-1 px-2 py-1.5 rounded-xl text-xs font-semibold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition cursor-pointer border border-slate-200 dark:border-slate-700"
+                title="Beralih Mode Fokus"
+              >
+                {isFocusMode ? (
+                  <>
+                    <Minimize2 className="w-3.5 h-3.5" />
+                    <span>Biasa</span>
+                  </>
+                ) : (
+                  <>
+                    <Maximize2 className="w-3.5 h-3.5" />
+                    <span>Fokus</span>
+                  </>
+                )}
+              </button>
+            )}
 
-            {/* Collapse / Expand Toggle */}
-            <button
-              type="button"
-              onClick={() => {
-                const anyCollapsed = Object.values(collapsedGroups).some(Boolean);
-                toggleAllGroups(anyCollapsed);
-              }}
-              className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-[#111827] text-slate-300 hover:text-white border border-slate-700 transition cursor-pointer"
-              title="Buka / Lipat Semua Kelompok Teori"
-            >
-              <Layers className="w-3.5 h-3.5 text-slate-400" />
-              <span className="hidden sm:inline">Lipat/Buka</span>
-            </button>
+            {/* Tombol Cetak / PDF */}
+            {babId && (
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="hidden sm:flex items-center gap-1 px-2 py-1.5 rounded-xl text-xs font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition cursor-pointer border border-emerald-200 dark:border-emerald-800/60"
+                title="Cetak Halaman ini atau Simpan sebagai PDF"
+              >
+                <Printer className="w-3.5 h-3.5 text-emerald-500" />
+                <span>Cetak</span>
+              </button>
+            )}
 
-            {/* Print / PDF Button */}
-            <button
-              type="button"
-              onClick={() => window.print()}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 border border-emerald-500/40 transition cursor-pointer"
-              title="Cetak Halaman ini atau Simpan sebagai PDF"
-            >
-              <Printer className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Cetak / PDF</span>
-            </button>
+            <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
           </div>
         </div>
       </header>
 
-      {/* 3. Mobile Jump Chips Horizontal */}
-      {babData && babData.daftar_subbab.length > 1 && (
-        <div className="lg:hidden sticky top-[49px] z-30 bg-[#0B1120]/95 backdrop-blur-md border-b border-slate-800/80 px-3 py-2 overflow-x-auto no-scrollbar flex items-center gap-1.5 print-hide">
-          {babData.daftar_subbab.map((sb) => {
-            const isActive = activeSubbabId === sb.kode_subbab;
-            return (
-              <a
-                key={sb.kode_subbab}
-                href={`#${sb.kode_subbab}`}
-                className={`px-2.5 py-1 rounded-md text-xs font-mono font-semibold whitespace-nowrap transition-all uppercase ${
-                  isActive
-                    ? 'bg-sky-500 text-white shadow-xs'
-                    : 'bg-[#111827] text-slate-300 hover:text-white border border-slate-800'
-                }`}
-              >
-                {sb.kode_subbab}
-              </a>
-            );
-          })}
-        </div>
-      )}
-
-      {/* 4. Main Body: Desktop 2-Column Grid (Sidebar TOC + Main Content) */}
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-6">
-        {isLoading || !babData ? (
-          <div className="py-24 text-center bg-[#111827] rounded-2xl border border-slate-800 max-w-xl mx-auto my-10">
-            <div className="inline-block w-8 h-8 border-3 border-sky-400 border-t-transparent rounded-full animate-spin mb-3"></div>
-            <p className="text-sm font-semibold text-slate-300">Menyiapkan rangkuman padat bab...</p>
-          </div>
-        ) : (
-          <div className="lg:grid lg:grid-cols-[240px_minmax(0,1fr)] gap-8 items-start">
-            {/* SIDEBAR KIRI (DESKTOP STICKY TOC) */}
-            <aside className="hidden lg:block lg:sticky lg:top-20 space-y-4 print-hide">
-              <div className="p-4 rounded-xl bg-[#111827] border border-slate-800/80 space-y-3">
-                <div className="flex items-center justify-between pb-2 border-b border-slate-800 text-xs font-bold text-slate-300 uppercase tracking-wider">
-                  <span>Daftar Sub-bab</span>
-                  <span className="font-mono text-sky-400">{babData.daftar_subbab.length} Sub</span>
-                </div>
-
-                <nav className="space-y-1 max-h-[calc(100vh-220px)] overflow-y-auto no-scrollbar pr-1">
-                  {babData.daftar_subbab.map((sb, idx) => {
-                    const isActive = activeSubbabId === sb.kode_subbab;
-                    return (
-                      <a
-                        key={sb.kode_subbab}
-                        href={`#${sb.kode_subbab}`}
-                        className={`flex items-start gap-2 px-2.5 py-2 rounded-lg text-xs transition-all ${
-                          isActive
-                            ? 'bg-sky-950/60 text-sky-300 font-bold border border-sky-500/40'
-                            : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60 font-medium'
-                        }`}
-                      >
-                        <span className="font-mono text-[11px] text-slate-500 shrink-0 mt-0.5">
-                          {String(idx + 1).padStart(2, '0')}.
-                        </span>
-                        <span className="line-clamp-2 leading-[1.35]">{sb.judul_subbab}</span>
-                      </a>
-                    );
-                  })}
-                </nav>
+      {/* 2. MAIN CONTENT CONTAINER (Lebar Kolom Optimal max-w-[700px] saat membaca Bab) */}
+      <main
+        className={`mx-auto px-4 sm:px-6 transition-all reader-scalable-content rangkuman-reading-area ${
+          babId
+            ? isFocusMode
+              ? 'max-w-[700px] py-4'
+              : 'max-w-[700px] py-6 sm:py-8'
+            : isFocusMode
+            ? 'max-w-5xl py-4'
+            : 'max-w-4xl py-6 sm:py-8'
+        }`}
+        style={
+          {
+            '--reader-font-scale': fontScale,
+          } as React.CSSProperties
+        }
+      >
+        {/* VIEW 1: INDEX OVERVIEW (Ketika tidak ada babId spesifik) */}
+        {!babId && (
+          <div className="space-y-6">
+            {/* Header Hero */}
+            <div className="text-center py-6 sm:py-10 px-4 rounded-3xl bg-gradient-to-b from-blue-500/10 via-blue-500/5 to-transparent border border-blue-500/20 shadow-xs">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/20 mb-3">
+                <Zap className="w-3.5 h-3.5 fill-blue-500 text-blue-500" />
+                <span>Katalog Rangkuman Padat (Pass-5)</span>
               </div>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                Lembar Rangkuman Cepat per Bab
+              </h1>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mt-2 font-medium">
+                Cheat Sheet resmi UTBK-SNBT:{' '}
+                <strong className="font-semibold text-slate-900 dark:text-white">
+                  1 Teori Singkat = 1 Contoh Nyata
+                </strong>
+                . Didesain untuk review kilat ~4 menit sebelum simulasi drilling atau ujian.
+              </p>
 
-              {/* Prev / Next Chapter Buttons */}
-              <div className="grid grid-cols-2 gap-2">
-                {prevBab ? (
-                  <Link
-                    to={`/rangkuman/${prevBab.kode_bab.toLowerCase()}`}
-                    className="flex items-center justify-center gap-1 p-2 rounded-lg bg-[#111827] hover:bg-slate-800 border border-slate-800 text-xs font-semibold text-slate-300 hover:text-white transition"
-                    title={`Bab Sebelumnya: ${prevBab.bab}`}
-                  >
-                    <ChevronLeft className="w-3.5 h-3.5" />
-                    <span>Sebelumnya</span>
-                  </Link>
-                ) : (
-                  <div />
-                )}
-                {nextBab && (
-                  <Link
-                    to={`/rangkuman/${nextBab.kode_bab.toLowerCase()}`}
-                    className="flex items-center justify-center gap-1 p-2 rounded-lg bg-[#111827] hover:bg-slate-800 border border-slate-800 text-xs font-semibold text-sky-300 hover:text-white transition"
-                    title={`Bab Berikutnya: ${nextBab.bab}`}
-                  >
-                    <span>Berikutnya</span>
-                    <ChevronRight className="w-3.5 h-3.5" />
-                  </Link>
-                )}
+              {/* Search Bar */}
+              <div className="relative max-w-md mx-auto mt-5">
+                <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Cari bab atau materi rangkuman..."
+                  className="w-full pl-10 pr-4 py-2 text-sm rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs"
+                />
               </div>
-            </aside>
+            </div>
 
-            {/* KOLOM KANAN UTAMA (MAX-W-[840PX]) */}
-            <main className="max-w-[840px] w-full min-w-0 space-y-10">
-              {/* Judul Bab & Subtes */}
-              <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <span
-                    className={`px-2.5 py-0.5 rounded text-xs font-mono font-bold border uppercase ${getSubtestColor(
-                      babData.kode_bab.split('-')[0]
-                    )}`}
-                  >
-                    {babData.kode_bab}
-                  </span>
-                  <span className="text-xs font-medium text-slate-400">{babData.subtes}</span>
-                </div>
-                <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#F8FAFC] leading-[1.25]">
-                  {babData.bab}
-                </h1>
-                <div className="flex items-center gap-3 text-xs text-slate-400 mt-2 font-medium">
-                  <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5 text-amber-400" />
-                    {babData.estimasi_menit_review} Menit Review
-                  </span>
-                  <span>•</span>
-                  <span>{babData.daftar_subbab.length} Sub-bab</span>
-                  <span>•</span>
-                  <span>{totalChapterPoints} Poin Teori & Contoh</span>
-                </div>
-              </div>
+            {/* List Grouped by Subtes */}
+            <div className="space-y-8">
+              {filteredIndexSubtes.map((st, stIdx) => (
+                <div key={stIdx} className="space-y-3">
+                  <div className="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-2">
+                    <span className="text-sm font-extrabold text-slate-900 dark:text-white tracking-wide">
+                      {st.subtes}
+                    </span>
+                    <span className="text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-mono">
+                      {st.daftar_bab.length} Bab
+                    </span>
+                  </div>
 
-              {/* SEKSI DAFTAR SUB-BAB */}
-              {filteredSubbabs.map((sub, sIdx) => {
-                const subNumber = String(sIdx + 1).padStart(2, '0');
-                const isPengayaan = sub.klasifikasi_materi === 'PENGAYAAN';
-
-                return (
-                  <section
-                    key={sub.kode_subbab}
-                    id={sub.kode_subbab}
-                    className="scroll-mt-24 subbab-section space-y-4 pt-4 border-t border-slate-800/80 first:border-t-0"
-                  >
-                    {/* Header Sub-bab */}
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-mono text-sm font-bold text-sky-400">
-                          {subNumber}.
-                        </span>
-                        <h2 className="text-[19px] sm:text-[21px] font-bold tracking-tight text-[#F8FAFC] leading-[1.3]">
-                          {sub.judul_subbab}
-                        </h2>
-                        <span className="font-mono text-xs px-2 py-0.5 rounded bg-slate-900 text-slate-300 border border-slate-700/80 uppercase">
-                          {sub.kode_subbab}
-                        </span>
-                        {isPengayaan ? (
-                          <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-950/50 text-amber-300 border border-amber-500/40">
-                            PENGAYAAN
-                          </span>
-                        ) : (
-                          <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-sky-950/50 text-sky-300 border border-sky-500/40">
-                            INTI
-                          </span>
-                        )}
-                        {getModeBadge(sub.mode_tampilan)}
-                      </div>
-
-                      {/* Link ke materi mendalam */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                    {st.daftar_bab.map((b) => (
                       <Link
-                        to={`/materi/${sub.kode_subbab}`}
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-sky-400 hover:text-sky-300 transition shrink-0 print-hide"
-                        title="Buka naskah materi mendalam, tips jebakan, dan drilling"
+                        key={b.kode_bab}
+                        to={`/rangkuman/${b.kode_bab}`}
+                        className="group p-4 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500/80 transition-all hover:shadow-md flex flex-col justify-between"
                       >
-                        <span>Buka Materi Lengkap & Latihan</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-
-                    {/* Banner Inti Sub-bab (TL;DR) */}
-                    {sub.inti_subbab && (
-                      <div className="bg-sky-950/30 border-l-4 border-sky-400 rounded-r-lg px-4 py-3 mb-5">
-                        <div className="font-mono text-[11px] font-bold tracking-wider text-sky-400 uppercase mb-1 flex items-center gap-1.5">
-                          <Sparkles className="w-3 h-3 text-sky-400" />
-                          <span>INTI SUB-BAB</span>
-                        </div>
-                        <div className="text-slate-200 text-sm sm:text-[14.5px]">
-                          {renderMarkdownText(sub.inti_subbab)}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Matriks / Kelompok Teori & Contoh */}
-                    <div className="space-y-4">
-                      {sub.kelompok.map((kel, kIdx) => {
-                        const groupId = `${sub.kode_subbab}-${kIdx}`;
-                        const isCollapsed = Boolean(collapsedGroups[groupId]);
-
-                        return (
-                          <div
-                            key={groupId}
-                            className="rounded-xl bg-[#111827] border border-slate-800/80 overflow-hidden rangkuman-card"
-                          >
-                            {/* Header Kelompok */}
-                            <button
-                              type="button"
-                              onClick={() => toggleGroupCollapse(groupId)}
-                              className="w-full flex items-center justify-between px-4 py-2.5 bg-slate-900/90 hover:bg-slate-900 text-left border-b border-slate-800/80 transition cursor-pointer select-none"
+                        <div>
+                          <div className="flex items-center justify-between mb-2">
+                            <span
+                              className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border ${getSubtestColor(
+                                b.kode_bab
+                              )}`}
                             >
-                              <div className="flex items-center gap-2 min-w-0">
-                                <h3 className="text-[13px] sm:text-[14px] font-semibold uppercase tracking-wider text-slate-300 truncate">
-                                  {renderInlineMarkdown(kel.nama_kelompok)}
-                                </h3>
-                                <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 shrink-0">
-                                  {kel.butir.length} poin
-                                </span>
-                              </div>
-                              <div className="text-slate-400 print-hide shrink-0">
-                                {isCollapsed ? (
-                                  <ChevronDown className="w-4 h-4" />
-                                ) : (
-                                  <ChevronUp className="w-4 h-4" />
-                                )}
-                              </div>
-                            </button>
-
-                            {/* Isi Kelompok: Desktop Matrix (md+) & Mobile Stacked Cards (<md) */}
-                            <div className={`${isCollapsed ? 'hidden' : 'block'} print-force-open`}>
-                              {/* Desktop Header Row (md+) */}
-                              <div className="hidden md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1.12fr)] bg-[#0F172A] border-b border-slate-800 text-xs font-bold uppercase tracking-wider text-slate-400 px-4 py-2">
-                                <div className="pr-3 flex items-center gap-1.5">
-                                  <span>{sub.label_kolom?.kolom_1 || 'Rumus / Kaidah'}</span>
-                                </div>
-                                <div className="pl-4 flex items-center gap-1.5 border-l border-slate-800/80">
-                                  <span className="text-emerald-400">
-                                    {sub.label_kolom?.kolom_2 || '1 Contoh Nyata'}
-                                  </span>
-                                </div>
-                              </div>
-
-                              {/* Rows of butir */}
-                              <div className="divide-y divide-slate-800/70">
-                                {kel.butir.map((b, bIdx) => {
-                                  const microNum = String(bIdx + 1).padStart(2, '0');
-                                  const itemId = `${groupId}-${bIdx}`;
-                                  const isRevealed = Boolean(revealedItems[itemId]);
-                                  const isBlurred = activeRecallMode && !isRevealed;
-
-                                  return (
-                                    <div
-                                      key={itemId}
-                                      className="rangkuman-row transition-colors hover:bg-slate-900/40"
-                                    >
-                                      {/* TAMPILAN DESKTOP (md+) : 2 Kolom Matriks Terstruktur */}
-                                      <div className="hidden md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1.12fr)] items-stretch">
-                                        {/* Kolom Kiri: Nomor, Judul, Teori Singkat */}
-                                        <div className="p-4 pr-5 min-w-0">
-                                          <div className="flex items-start gap-2">
-                                            <span className="font-mono text-xs font-bold text-slate-500 select-none pt-0.5 shrink-0">
-                                              {microNum}
-                                            </span>
-                                            <div className="min-w-0">
-                                              <h4 className="text-[15px] sm:text-[16px] font-semibold text-slate-50 leading-[1.4]">
-                                                {renderInlineMarkdown(b.judul)}
-                                              </h4>
-                                              <div className="mt-1 text-slate-300 text-sm sm:text-[15.5px]">
-                                                {renderMarkdownText(b.teori_singkat)}
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        {/* Kolom Kanan: Contoh Penerapan dengan Latar Tipis Kontras */}
-                                        <div
-                                          onClick={() => {
-                                            if (activeRecallMode) {
-                                              setRevealedItems((prev) => ({
-                                                ...prev,
-                                                [itemId]: !prev[itemId],
-                                              }));
-                                            }
-                                          }}
-                                          className={`rangkuman-row-contoh p-4 pl-4.5 bg-emerald-950/10 border-l border-slate-800/80 flex flex-col justify-center min-w-0 ${
-                                            isBlurred ? 'active-recall-blur' : ''
-                                          }`}
-                                          title={
-                                            isBlurred ? 'Klik atau arahkan mouse untuk melihat contoh' : ''
-                                          }
-                                        >
-                                          <div className="text-slate-200 text-sm sm:text-[15.5px]">
-                                            {renderMarkdownText(b.contoh, true)}
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      {/* TAMPILAN MOBILE (< md) : Tumpukan Kartu Padat */}
-                                      <div className="md:hidden p-3.5 space-y-2.5">
-                                        {/* Atas: micro num + judul + teori */}
-                                        <div className="flex items-start gap-2">
-                                          <span className="font-mono text-xs font-bold text-slate-500 pt-0.5 shrink-0">
-                                            {microNum}
-                                          </span>
-                                          <div className="min-w-0">
-                                            <h4 className="text-[15px] font-semibold text-slate-50 leading-[1.4]">
-                                              {renderInlineMarkdown(b.judul)}
-                                            </h4>
-                                            <div className="mt-1 text-slate-300 text-[14.5px]">
-                                              {renderMarkdownText(b.teori_singkat)}
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        {/* Bawah: Inset Box Contoh */}
-                                        <div
-                                          onClick={() => {
-                                            if (activeRecallMode) {
-                                              setRevealedItems((prev) => ({
-                                                ...prev,
-                                                [itemId]: !prev[itemId],
-                                              }));
-                                            }
-                                          }}
-                                          className={`border-l-2 border-emerald-500/60 bg-emerald-950/15 px-3 py-2 rounded-r-md ${
-                                            isBlurred ? 'active-recall-blur' : ''
-                                          }`}
-                                        >
-                                          <div className="font-mono text-[10.5px] font-bold uppercase tracking-wider text-emerald-400 mb-0.5">
-                                            CONTOH
-                                          </div>
-                                          <div className="text-slate-200 text-[14.5px]">
-                                            {renderMarkdownText(b.contoh, true)}
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                              </div>
-                            </div>
+                              {b.kode_bab}
+                            </span>
+                            <span className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">
+                              {b.jumlah_subbab} Sub-bab
+                            </span>
                           </div>
-                        );
-                      })}
-                    </div>
-                  </section>
-                );
-              })}
+                          <h3 className="text-sm font-bold text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+                            {b.bab || b.nama_bab}
+                          </h3>
+                        </div>
 
-              {/* Bottom Navigation: Prev / Next Chapter Buttons */}
-              <div className="pt-8 border-t border-slate-800 flex items-center justify-between gap-4 print-hide">
-                {prevBab ? (
-                  <Link
-                    to={`/rangkuman/${prevBab.kode_bab.toLowerCase()}`}
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#111827] hover:bg-slate-800 border border-slate-800 text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition"
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                    <div className="text-left">
-                      <div className="text-[10px] text-slate-400 uppercase">Bab Sebelumnya</div>
-                      <div className="truncate max-w-[140px] sm:max-w-[200px]">{prevBab.bab}</div>
-                    </div>
-                  </Link>
-                ) : (
-                  <div />
-                )}
-
-                <Link
-                  to="/rangkuman"
-                  className="px-3.5 py-2 rounded-xl bg-[#111827] hover:bg-slate-800 border border-slate-800 text-xs font-semibold text-slate-300 hover:text-white transition"
-                >
-                  Daftar Rangkuman
-                </Link>
-
-                {nextBab ? (
-                  <Link
-                    to={`/rangkuman/${nextBab.kode_bab.toLowerCase()}`}
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#111827] hover:bg-slate-800 border border-slate-800 text-xs sm:text-sm font-semibold text-sky-300 hover:text-white transition"
-                  >
-                    <div className="text-right">
-                      <div className="text-[10px] text-slate-400 uppercase">Bab Berikutnya</div>
-                      <div className="truncate max-w-[140px] sm:max-w-[200px]">{nextBab.bab}</div>
-                    </div>
-                    <ChevronRight className="w-4 h-4" />
-                  </Link>
-                ) : (
-                  <div />
-                )}
-              </div>
-            </main>
+                        <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between text-xs text-blue-600 dark:text-blue-400 font-bold">
+                          <span className="flex items-center gap-1">
+                            <Zap className="w-3 h-3 fill-blue-500" />
+                            Buka Cheat Sheet
+                          </span>
+                          <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
-      </div>
+
+        {/* VIEW 2: BAB DETAIL CHEAT SHEET (Optimal Measure max-w-[700px]) */}
+        {babId && (
+          <div className="space-y-6">
+            {isLoading || !babData ? (
+              <div className="py-24 text-center bg-white dark:bg-[#111827] rounded-3xl border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-xs max-w-2xl mx-auto my-6">
+                <div className="inline-block w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-3"></div>
+                <p className="text-sm font-semibold text-slate-600 dark:text-slate-300">
+                  Menyiapkan Lembar Rangkuman & Rumus Cepat...
+                </p>
+              </div>
+            ) : (
+              <>
+                {/* Bab Header Card */}
+                <div className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-2xs space-y-3.5 transition-colors">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span
+                      className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold uppercase border ${getSubtestColor(
+                        babData.kode_bab
+                      )}`}
+                    >
+                      {babData.subtes}
+                    </span>
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-0.5 rounded-lg bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/20">
+                      <Zap className="w-3 h-3 fill-blue-500 text-blue-500" />
+                      <span>Cheat Sheet Padat (1 Teori = 1 Contoh)</span>
+                    </span>
+
+                    <Link
+                      to="/rangkuman"
+                      className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-500/15 hover:text-blue-600 transition-colors ml-auto shadow-2xs"
+                      title="Lihat katalog semua bab cheat sheet"
+                    >
+                      <Layers className="w-3 h-3" />
+                      <span>Katalog Bab</span>
+                    </Link>
+
+                    <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+                      <Clock className="w-3 h-3" />
+                      <span>
+                        ~{babData.estimasi_menit_review || 5} mnt review
+                      </span>
+                    </span>
+                  </div>
+
+                  <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#1E293B] dark:text-[#F8FAFC] tracking-tight leading-tight">
+                    {babData.bab}
+                  </h1>
+
+                  {/* Summary & Utility Row */}
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pt-1">
+                    <p className="text-xs sm:text-sm text-[#475569] dark:text-[#94A3B8] leading-relaxed">
+                      Mencakup{' '}
+                      <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+                        {babData.daftar_subbab.length} sub-bab materi
+                      </strong>
+                      . Gunakan tab di bawah untuk fokus pada topik tertentu atau pelajari seluruhnya.
+                    </p>
+
+                    <div className="flex items-center gap-2 shrink-0">
+                      {/* Search In-Chapter Input */}
+                      <div className="relative">
+                        <input
+                          type="text"
+                          value={inChapterSearch}
+                          onChange={(e) => setInChapterSearch(e.target.value)}
+                          placeholder="Cari rumus..."
+                          className="w-28 sm:w-36 text-xs pl-6 pr-5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        />
+                        <Search className="w-3 h-3 text-slate-400 absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none" />
+                        {inChapterSearch && (
+                          <button
+                            type="button"
+                            onClick={() => setInChapterSearch('')}
+                            className="absolute right-1.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white"
+                          >
+                            <X className="w-2.5 h-2.5" />
+                          </button>
+                        )}
+                      </div>
+
+                      {/* Active Recall Toggle */}
+                      <button
+                        type="button"
+                        onClick={() => setActiveRecallMode(!activeRecallMode)}
+                        className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border transition cursor-pointer ${
+                          activeRecallMode
+                            ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-2xs'
+                            : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border-slate-200 dark:border-slate-700'
+                        }`}
+                        title="Mode Uji Ingatan: Sembunyikan contoh agar bisa menebak dahulu"
+                      >
+                        {activeRecallMode ? (
+                          <EyeOff className="w-3 h-3 text-amber-500" />
+                        ) : (
+                          <Eye className="w-3 h-3 text-slate-500" />
+                        )}
+                        <span className="hidden xs:inline">
+                          {activeRecallMode ? 'Contoh Kabur' : 'Uji Ingatan'}
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Sub-bab Quick Tabs / Pill Selector */}
+                  <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
+                    <button
+                      type="button"
+                      onClick={() => setActiveSubbabIndex(-1)}
+                      className={`px-3 py-1 rounded-xl text-xs font-semibold transition-all shrink-0 cursor-pointer ${
+                        activeSubbabIndex === -1
+                          ? 'bg-blue-600 text-white shadow-xs'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                      }`}
+                    >
+                      Semua Sub-bab ({babData.daftar_subbab.length})
+                    </button>
+                    {babData.daftar_subbab.map((sub, idx) => (
+                      <button
+                        key={sub.kode_subbab}
+                        type="button"
+                        onClick={() => setActiveSubbabIndex(idx)}
+                        className={`px-3 py-1 rounded-xl text-xs font-semibold transition-all shrink-0 cursor-pointer ${
+                          activeSubbabIndex === idx
+                            ? 'bg-blue-600 text-white shadow-xs'
+                            : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                        }`}
+                      >
+                        {idx + 1}. {sub.judul_subbab}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Sub-bab Content Reading Area */}
+                <div className="mt-8 space-y-12">
+                  {displayedSubbabs.map((sub, sIdx) => {
+                    const intiText = sub.inti_subbab || sub.konsep_inti_markdown || '';
+
+                    return (
+                      <React.Fragment key={sub.kode_subbab}>
+                        {/* Jarak antar sub-bab: pemisah tipis jika ada lebih dari 1 */}
+                        {sIdx > 0 && (
+                          <div
+                            className="my-10 h-px bg-slate-200 dark:bg-slate-800/80 w-full"
+                            role="separator"
+                          />
+                        )}
+
+                        <article
+                          id={`subbab-${sub.kode_subbab}`}
+                          className="space-y-6"
+                        >
+                          {/* 1. Header Sub-bab Ringkas: kode_subbab (monospace) + klasifikasi_materi sejajar judul_subbab */}
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-3 border-b border-slate-200/80 dark:border-slate-800/80">
+                            <div className="space-y-1.5 min-w-0">
+                              <div className="flex items-center gap-2">
+                                <span className="font-mono text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 tracking-wider uppercase">
+                                  {sub.kode_subbab}
+                                </span>
+                                <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                                  {sub.klasifikasi_materi || 'INTI'}
+                                </span>
+                              </div>
+                              <h2 className="rangkuman-subbab-title text-[#1E293B] dark:text-[#E2E8F0] tracking-tight">
+                                {sub.judul_subbab}
+                              </h2>
+                            </div>
+
+                            <Link
+                              to={`/materi/${sub.kode_subbab}`}
+                              className="self-start sm:self-center inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 bg-blue-50/80 dark:bg-blue-950/40 hover:bg-blue-100 dark:hover:bg-blue-900/50 border border-blue-200/80 dark:border-blue-800/60 transition-colors shadow-2xs shrink-0"
+                              title="Buka materi lengkap komprehensif untuk topik ini"
+                            >
+                              <span>Materi Lengkap</span>
+                              <ExternalLink className="w-3.5 h-3.5" />
+                            </Link>
+                          </div>
+
+                          {/* 2. Blok inti_subbab (Ringkasan Pembuka Sub-bab: kutipan bersih dengan aksen garis kiri biru) */}
+                          {intiText && (
+                            <div className="rounded-xl border-l-[3px] border-blue-500/80 bg-blue-50/60 dark:bg-blue-500/[0.06] p-4 sm:p-5 text-[#1E293B] dark:text-[#E2E8F0] rangkuman-body-text shadow-2xs transition-colors">
+                              <div className="space-y-2 overflow-x-auto max-w-full">
+                                {renderKonsepInti(intiText)}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* 3. Blok kelompok[] & butir[]: Format Editorial Scannable bertumpuk */}
+                          <div className="space-y-7">
+                            {sub.kelompok.map((k, kIdx) => (
+                              <div key={kIdx} className="space-y-3.5">
+                                {/* Sub-header Kelompok Bersih dengan garis bawah halus + pill jumlah butir */}
+                                <div className="flex items-center justify-between gap-3 pb-2 border-b border-slate-200/80 dark:border-slate-800/80">
+                                  <div className="flex items-center gap-2 min-w-0">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500/80 dark:bg-blue-400/80 shrink-0" />
+                                    <h3 className="rangkuman-kelompok-title text-[#1E293B] dark:text-[#E2E8F0] tracking-wide truncate">
+                                      {normalizeGroupTitle(k.nama_kelompok)}
+                                    </h3>
+                                  </div>
+                                  <span className="font-mono text-[11px] font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2 py-0.5 rounded-md shrink-0">
+                                    {k.butir.length} butir
+                                  </span>
+                                </div>
+
+                                {/* Daftar Butir: Jarak antar butir: 16px (space-y-4) */}
+                                <div className="space-y-4">
+                                  {k.butir.map((b, bIdx) => {
+                                    const judulText = b.judul || b.judul_poin || '';
+                                    const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
+                                    const contohText = b.contoh || b.contoh_penerapan || '';
+                                    const itemId = `${sub.kode_subbab}-${kIdx}-${bIdx}`;
+                                    const isRevealed = Boolean(revealedItems[itemId]);
+                                    const isBlurred = activeRecallMode && !isRevealed;
+
+                                    return (
+                                      <div
+                                        key={bIdx}
+                                        className="rounded-2xl p-4 sm:p-5 bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-2xs transition-colors"
+                                      >
+                                        {/* Baris 1: judul dengan nomor urut kecil monospace (01, 02, dst.) */}
+                                        <div className="flex items-baseline gap-2.5">
+                                          <span className="font-mono text-[12px] sm:text-[13px] font-semibold text-slate-400 dark:text-slate-500 shrink-0 select-none">
+                                            {String(bIdx + 1).padStart(2, '0')}
+                                          </span>
+                                          <h4 className="rangkuman-poin-title text-[#0F172A] dark:text-[#F8FAFC] flex-1 break-words">
+                                            {renderMarkdownInline(judulText)}
+                                          </h4>
+                                        </div>
+
+                                        {/* Baris 2: teori_singkat */}
+                                        {teoriText && (
+                                          <div className="mt-1.5 rangkuman-body-text text-[#475569] dark:text-[#94A3B8] break-words">
+                                            {renderMarkdownText(teoriText)}
+                                          </div>
+                                        )}
+
+                                        {/* Baris 3: contoh (Blok inset terpisah berlatar lembut & border-l-2 emerald + label mikro uppercase CONTOH) */}
+                                        {contohText && (
+                                          <div
+                                            onClick={() => {
+                                              if (activeRecallMode) {
+                                                setRevealedItems((prev) => ({
+                                                  ...prev,
+                                                  [itemId]: !prev[itemId],
+                                                }));
+                                              }
+                                            }}
+                                            className={`mt-3 rounded-lg px-3.5 py-2.5 border-l-2 border-emerald-500/70 bg-emerald-50/50 dark:bg-emerald-500/[0.05] transition-all cursor-pointer ${
+                                              isBlurred ? 'active-recall-blur' : ''
+                                            }`}
+                                            title={
+                                              isBlurred ? 'Klik atau arahkan kursor untuk melihat contoh' : ''
+                                            }
+                                          >
+                                            <div className="flex items-center gap-1.5 mb-1 select-none">
+                                              <span className="font-mono text-[11px] font-semibold tracking-wider text-emerald-600 dark:text-emerald-400/90 uppercase">
+                                                {sub.label_kolom?.kolom_2 ? sub.label_kolom.kolom_2.toUpperCase() : 'CONTOH'}
+                                              </span>
+                                            </div>
+                                            <div className="rangkuman-body-text text-[#1E293B] dark:text-[#E2E8F0] break-words">
+                                              {renderMarkdownText(contohText)}
+                                            </div>
+                                          </div>
+                                        )}
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </article>
+                      </React.Fragment>
+                    );
+                  })}
+                </div>
+
+                {/* Bottom Prev / Next Bab Navigation */}
+                <div className="mt-12 pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 print-hide">
+                  {prevBab ? (
+                    <Link
+                      to={`/rangkuman/${prevBab.kode_bab}`}
+                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs max-w-[48%]"
+                    >
+                      <ChevronLeft className="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors shrink-0" />
+                      <div className="text-left min-w-0">
+                        <span className="font-mono text-[10px] text-slate-400 uppercase block">
+                          Bab Sebelumnya
+                        </span>
+                        <span className="text-xs font-semibold text-[#1E293B] dark:text-[#E2E8F0] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate block">
+                          {prevBab.bab || prevBab.nama_bab}
+                        </span>
+                      </div>
+                    </Link>
+                  ) : (
+                    <div />
+                  )}
+
+                  {nextBab ? (
+                    <Link
+                      to={`/rangkuman/${nextBab.kode_bab}`}
+                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs ml-auto max-w-[48%]"
+                    >
+                      <div className="text-right min-w-0">
+                        <span className="font-mono text-[10px] text-slate-400 uppercase block">
+                          Bab Berikutnya
+                        </span>
+                        <span className="text-xs font-semibold text-[#1E293B] dark:text-[#E2E8F0] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate block">
+                          {nextBab.bab || nextBab.nama_bab}
+                        </span>
+                      </div>
+                      <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors shrink-0" />
+                    </Link>
+                  ) : (
+                    <div />
+                  )}
+                </div>
+              </>
+            )}
+          </div>
+        )}
+      </main>
     </div>
   );
 };
+
 export default RangkumanPage;
