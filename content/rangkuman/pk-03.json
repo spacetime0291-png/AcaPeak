@@ -1,0 +1,256 @@
+{
+  "kode_bab": "pk-03",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 3: Himpunan dan Kombinatorika",
+  "batch_model": "neon",
+  "jumlah_subbab": 3,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pk-03-01",
+      "judul_subbab": "Operasi Himpunan dan Diagram Venn",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Materi himpunan melatih kamu memetakan kelompok data lewat irisan, gabungan, selisih, dan komplemen.\\n- **Rumus Gabungan:** $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$\\n- **Selisih Himpunan:** $A - B = A \\cap B^c$ (anggota $A$ yang tidak ikut masuk ke $B$)\\n- **Hukum De Morgan:** $(A \\cup B)^c = A^c \\cap B^c$ dan $(A \\cap B)^c = A^c \\cup B^c$\\n- **Banyak Himpunan Bagian:** Jika $n(A) = k$, total himpunan bagiannya adalah $2^k$",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Operasi Dasar, Hukum Aljabar, dan Arsiran Venn",
+          "butir": [
+            {
+              "judul_poin": "Selisih Himpunan ($A - B$) dan Komplemen",
+              "penjelasan_singkat": "Selisih $A - B = A \\cap B^c$ berarti anggota $A$ di luar $B$. Jumlahnya dihitung dengan $n(A - B) = n(A) - n(A \\cap B)$.",
+              "contoh_penerapan": "Jika $n(A) = 25$ dan irisannya $n(A \\cap B) = 9$, maka anggota yang **hanya di A saja** adalah $n(A - B) = 25 - 9 = 16$."
+            },
+            {
+              "judul_poin": "Beda Setangkup / Tepat Salah Satu ($A \\triangle B$)",
+              "penjelasan_singkat": "Beda setangkup $A \\triangle B = (A - B) \\cup (B - A)$ memuat anggota yang masuk tepat di salah satu himpunan, bukan keduanya.",
+              "contoh_penerapan": "Diketahui $n(A) = 18$, $n(B) = 15$, dan $n(A \\cap B) = 5$. Hasilnya **$n(A \\triangle B) = 18 + 15 - 2(5) = 23$**."
+            },
+            {
+              "judul_poin": "Hukum De Morgan dan Bagian Luar Semesta",
+              "penjelasan_singkat": "Tanda komplemen membalik gabungan menjadi irisan, dan sebaliknya: $(A \\cup B)^c = A^c \\cap B^c$ serta $(A \\cap B)^c = A^c \\cup B^c$.",
+              "contoh_penerapan": "Dari $n(S) = 50$ siswa, ada $n(A \\cup B) = 38$. Maka yang **tidak suka keduanya** adalah $n(A^c \\cap B^c) = 50 - 38 = 12$."
+            },
+            {
+              "judul_poin": "Hukum Distributif dan Arsiran Venn 3 Himpunan",
+              "penjelasan_singkat": "Pakai sifat $A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$ untuk merangkum daerah arsiran yang terpisah menjadi satu notasi rapi.",
+              "contoh_penerapan": "Irisan $A$ dengan $B$ atau $C$ tanpa bagian tengah ditulis **$(A \\cap (B \\cup C)) - (A \\cap B \\cap C)$** atau $(A \\cap B \\cap C^c) \\cup (A \\cap C \\cap B^c)$."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Hitung Gabungan (Inklusi-Eksklusi) dan Batas Maks-Min",
+          "butir": [
+            {
+              "judul_poin": "Rumus Gabungan Dua Himpunan ($n(A \\cup B)$)",
+              "penjelasan_singkat": "Total semesta selalu membagi dua wilayah: $n(S) = n(A \\cup B) + n(A \\cup B)^c = n(A) + n(B) - n(A \\cap B) + n(A \\cup B)^c$.",
+              "contoh_penerapan": "Ada $40$ siswa: $25$ suka Matematika, $20$ suka Fisika, dan $4$ tidak suka keduanya. Yang **suka keduanya** $= (25 + 20 + 4) - 40 = 9$."
+            },
+            {
+              "judul_poin": "Rumus Gabungan Tiga Himpunan ($n(A \\cup B \\cup C)$)",
+              "penjelasan_singkat": "Polanya selang-seling tambah-kurang-tambah: $n(A \\cup B \\cup C) = \\sum n(A) - \\sum n(A \\cap B) + n(A \\cap B \\cap C)$.",
+              "contoh_penerapan": "Jika jumlah tunggal $\\sum n(A) = 60$, jumlah irisan dua $\\sum n(A \\cap B) = 22$, dan irisan tiga $5$, maka **$n(A \\cup B \\cup C) = 60 - 22 + 5 = 43$**."
+            },
+            {
+              "judul_poin": "Jumlah Anggota Tepat Dua dan Tepat Satu Himpunan",
+              "penjelasan_singkat": "Tepat dua himpunan: $\\sum n(A \\cap B) - 3n(A \\cap B \\cap C)$. Tepat satu himpunan: $\\sum n(A) - 2\\sum n(A \\cap B) + 3n(A \\cap B \\cap C)$.",
+              "contoh_penerapan": "Jika $\\sum n(A \\cap B) = 25$ dan $n(A \\cap B \\cap C) = 4$, maka yang ikut **tepat dua kegiatan** ada $25 - 3(4) = 13$ orang."
+            },
+            {
+              "judul_poin": "Nilai Maksimum dan Minimum Irisan ($n(A \\cap B)_{\\max/\\min}$)",
+              "penjelasan_singkat": "Batas irisan dalam semesta $S$ selalu berada di rentang $\\max(0, n(A) + n(B) - n(S)) \\le n(A \\cap B) \\le \\min(n(A), n(B))$.",
+              "contoh_penerapan": "Dari $n(S) = 50$, diketahui $n(A) = 35$ dan $n(B) = 30$. Maka nilai irisannya berada di rentang **$15 \\le n(A \\cap B) \\le 30$**."
+            },
+            {
+              "judul_poin": "Nilai Maksimum dan Minimum Gabungan ($n(A \\cup B)_{\\max/\\min}$)",
+              "penjelasan_singkat": "Batas gabungan dua himpunan memenuhi $\\max(n(A), n(B)) \\le n(A \\cup B) \\le \\min(n(S), n(A) + n(B))$.",
+              "contoh_penerapan": "Jika $n(S) = 40$, $n(A) = 24$, dan $n(B) = 20$, maka gabungan $n(A \\cup B)$ bernilai antara **$24$ hingga $40$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Banyaknya Himpunan Bagian (Power Set)",
+          "butir": [
+            {
+              "judul_poin": "Total Himpunan Bagian dan Himpunan Bagian Sejati",
+              "penjelasan_singkat": "Himpunan dengan $n$ anggota punya $2^n$ himpunan bagian (termasuk $\\emptyset$ dan dirinya sendiri) serta $2^n - 1$ himpunan bagian sejati.",
+              "contoh_penerapan": "Himpunan $P = \\{1, 2, 3, 4, 5\\}$ dengan $n(P) = 5$ punya **$2^5 = 32$** himpunan bagian dan **$31$** himpunan bagian sejati."
+            },
+            {
+              "judul_poin": "Himpunan Bagian dengan Syarat Wajib atau Dilarang",
+              "penjelasan_singkat": "Dari $n$ anggota, jika $p$ anggota wajib masuk dan $q$ anggota dilarang masuk, banyak himpunan bagiannya adalah $2^{n - p - q}$.",
+              "contoh_penerapan": "Dari $6$ anggota, himpunan bagian yang **wajib memuat $1$ dan tidak memuat $6$** berjumlah $2^{6 - 1 - 1} = 2^4 = 16$."
+            },
+            {
+              "judul_poin": "Banyak Himpunan Bagian Beranggotakan $k$ Elemen",
+              "penjelasan_singkat": "Untuk mencari himpunan bagian yang punya tepat $k$ anggota dari total $n$ elemen, gunakan kombinasi $C(n, k) = \\frac{n!}{k!(n-k)!}$.",
+              "contoh_penerapan": "Dari $5$ huruf vokal, banyak himpunan bagian yang berisi **tepat $3$ anggota** adalah $C(5, 3) = \\frac{5 \\times 4}{2 \\times 1} = 10$."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-03-02",
+      "judul_subbab": "Kaidah Pencacahan, Permutasi, dan Kombinasi",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Aturan Perkalian:** Kejadian yang berlangsung berurutan langsung dikalikan ($n_1 \\times n_2 \\times \\dots$). Selalu isi kotak dengan syarat terketat lebih dulu.\n- **Permutasi ($P$):** Dipakai saat urutan berpengaruh. Rumus dasar $P(n,r) = \\frac{n!}{(n-r)!}$; unsur kembar $P = \\frac{n!}{k_1!k_2!\\dots}$; melingkar $P_{\\text{siklis}} = (n-1)!$.\n- **Kombinasi ($C$):** Dipakai saat urutan tidak penting (tim, panitia, titik geometri). Rumusnya $C(n,r) = \\frac{n!}{r!(n-r)!}$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Aturan Perkalian & Pengisian Kotak (Filling Slots)",
+          "butir": [
+            {
+              "judul_poin": "Menyusun Angka Beda vs Boleh Berulang",
+              "penjelasan_singkat": "Isi kotak terketat dulu. Jika angka harus beda, kurangi pilihan sebanyak $1$ tiap pindah kotak; jika boleh berulang, pilihan tetap.",
+              "contoh_penerapan": "Dari $1,2,3,4,5$, bilangan $3$ digit beda ada **$5 \\times 4 \\times 3 = 60$**. Jika boleh berulang, ada **$5 \\times 5 \\times 5 = 125$**."
+            },
+            {
+              "judul_poin": "Bilangan Genap yang Mengandung Angka Nol",
+              "penjelasan_singkat": "Pisah jadi dua kasus: satuan diisi angka $0$, dan satuan diisi angka genap selain $0$.",
+              "contoh_penerapan": "Bilangan $3$ digit genap beda dari $0,1,2,3$: akhir $0$ ada **$3 \\times 2 \\times 1 = 6$**, akhir $2$ ada **$2 \\times 2 \\times 1 = 4$**, total **$10$**."
+            },
+            {
+              "judul_poin": "Bilangan Lebih Besar atau Kecil dari Batas $K$",
+              "penjelasan_singkat": "Hitung dulu kasus digit depan yang pasti lolos batas, lalu tambah kasus saat digit depan sama persis dengan batas.",
+              "contoh_penerapan": "Bilangan $3$ digit beda dari $1,2,3,4$ lebih dari $230$: awalan $3,4$ ada **$2 \\times 3 \\times 2 = 12$**, awalan $2$ (puluhan $3$ atau $4$) ada **$1 \\times 2 \\times 2 = 4$**, total **$16$**."
+            },
+            {
+              "judul_poin": "Aturan Penjumlahan pada Kasus Terpisah",
+              "penjelasan_singkat": "Jumlahkan banyak cara ($n_1 + n_2$) jika dua pilihan tidak bisa terjadi secara bersamaan.",
+              "contoh_penerapan": "Memilih $1$ ketua kelas dari $4$ siswa pria atau $3$ siswa wanita menghasilkan **$4 + 3 = 7$** pilihan."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Variasi Permutasi Khusus",
+          "butir": [
+            {
+              "judul_poin": "Objek Wajib Berdampingan (Metode Ikat)",
+              "penjelasan_singkat": "Ikat $k$ objek yang wajib berdampingan jadi $1$ paket. Kalikan susunan total paket dengan tukar posisi di dalam paket ($k!$).",
+              "contoh_penerapan": "Susunan $5$ orang dengan $2$ sahabat wajib berdampingan: **$4! \\times 2! = 24 \\times 2 = 48$** cara."
+            },
+            {
+              "judul_poin": "Objek Tidak Boleh Berdampingan (Metode Sisip)",
+              "penjelasan_singkat": "Susun $m$ objek bebas dulu ($m!$), lalu sisipkan $k$ objek terlarang ke $m+1$ celah kosong yang terbentuk.",
+              "contoh_penerapan": "Susun $3$ pria dan $2$ wanita tanpa wanita berdampingan: susun pria **$3!$**, sisip wanita di $4$ celah **$P(4,2)$**, hasil **$6 \\times 12 = 72$** cara."
+            },
+            {
+              "judul_poin": "Permutasi dengan Unsur Kembar",
+              "penjelasan_singkat": "Bagi faktorial total unsur dengan faktorial tiap unsur yang kembar: $P = \\frac{n!}{k_1! \\cdot k_2! \\cdots}$.",
+              "contoh_penerapan": "Susunan huruf dari kata \"KATAK\" ($5$ huruf, $2$ K, $2$ A) adalah **$\\frac{5!}{2! \\cdot 2!} = \\frac{120}{4} = 30$** susunan."
+            },
+            {
+              "judul_poin": "Permutasi Melingkar (Siklis) & Metode Ikat",
+              "penjelasan_singkat": "Susunan melingkar $n$ objek adalah $(n-1)!$. Jika $k$ objek berdampingan, ikat jadi $1$ blok sehingga jadi $((n-k+1)-1)! \\times k!$.",
+              "contoh_penerapan": "Duduk melingkar $6$ orang dengan ketua-sekretaris berdampingan: jadi $5$ blok siklis, hasilnya **$(5-1)! \\times 2! = 48$** cara."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kombinasi Terapan & Geometri",
+          "butir": [
+            {
+              "judul_poin": "Memilih Tim dengan Syarat Kuota",
+              "penjelasan_singkat": "Hitung kombinasi tiap kategori secara terpisah, lalu kalikan hasilnya: $C(n_1, r_1) \\times C(n_2, r_2)$.",
+              "contoh_penerapan": "Memilih $2$ pria dari $5$ dan $2$ wanita dari $4$ menghasilkan **$C(5,2) \\times C(4,2) = 10 \\times 6 = 60$** tim."
+            },
+            {
+              "judul_poin": "Kombinasi Syarat Minimal atau Konflik",
+              "penjelasan_singkat": "Pakai trik komplemen: kurangi total kombinasi bebas dengan kombinasi kasus yang dilarang.",
+              "contoh_penerapan": "Pilih $3$ dari $6$ orang tanpa A dan B satu tim: **$C(6,3) - C(4,1) = 20 - 4 = 16$** tim."
+            },
+            {
+              "judul_poin": "Membentuk Garis dan Segitiga dari Titik",
+              "penjelasan_singkat": "Dari $n$ titik dengan $k$ titik segaris: banyak garis $= C(n,2) - C(k,2) + 1$, banyak segitiga $= C(n,3) - C(k,3)$.",
+              "contoh_penerapan": "Dari $8$ titik dengan $3$ titik segaris, terbentuk **$C(8,3) - C(3,3) = 56 - 1 = 55$** segitiga."
+            },
+            {
+              "judul_poin": "Jajar Genjang dari Garis Sejajar & Diagonal",
+              "penjelasan_singkat": "Jajar genjang butuh $2$ garis dari arah pertama dan $2$ dari arah kedua: $C(m,2) \\times C(n,2)$. Diagonal segi-$n$: $C(n,2) - n$.",
+              "contoh_penerapan": "Perpotongan $4$ garis mendatar dan $5$ garis tegak membentuk **$C(4,2) \\times C(5,2) = 6 \\times 10 = 60$** jajar genjang."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-03-03",
+      "judul_subbab": "Peluang Kejadian Majemuk dan Bersyarat",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Peluang dasar kejadian $A$ adalah $P(A) = \\frac{n(A)}{n(S)}$ dengan nilai selalu di antara $0$ sampai $1$ ($0 \\le P(A) \\le 1$). Saat dua kejadian digabung, perhatikan kata hubungnya:\n- **Kata ATAU (Penjumlahan):** $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$. Jika keduanya tidak mungkin terjadi bersamaan (saling lepas), $P(A \\cap B) = 0$.\n- **Kata DAN (Perkalian):** $P(A \\cap B) = P(A) \\cdot P(B)$, berlaku jika kedua kejadian saling bebas.\n- **Peluang Bersyarat:** $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$. Syarat $B$ membuat ruang sampel langsung menyempit ke kelompok $B$ saja.\n- **Komplemen & Frekuensi Harapan:** Peluang tidak terjadi adalah $P(A^c) = 1 - P(A)$, sedangkan harapan muncul dalam $n$ percobaan adalah $F_h = n \\cdot P(A)$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Peluang Klasik & Aturan Penjumlahan (ATAU)",
+          "butir": [
+            {
+              "judul_poin": "Peluang Pengambilan Sekaligus (Pakai Kombinasi)",
+              "penjelasan_singkat": "Saat mengambil $r$ objek sekaligus dari $n$ objek tanpa peduli urutan, hitung ruang sampelnya pakai kombinasi: $P(A) = \\frac{n(A)}{\\binom{n}{r}}$.",
+              "contoh_penerapan": "Ambil 2 bola sekaligus dari 3 merah dan 2 biru: **$P(\\text{2 merah}) = \\frac{\\binom{3}{2}}{\\binom{5}{2}} = \\frac{3}{10}$**."
+            },
+            {
+              "judul_poin": "Gabungan Kejadian Tidak Saling Lepas (Ada Irisan)",
+              "penjelasan_singkat": "Jika $A$ dan $B$ bisa terjadi bersamaan ($A \\cap B \\neq \\emptyset$), kurangkan irisannya: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+              "contoh_penerapan": "Lempar satu dadu, peluang muncul genap atau prima adalah **$P(G \\cup P) = \\frac{3}{6} + \\frac{3}{6} - \\frac{1}{6} = \\frac{5}{6}$**."
+            },
+            {
+              "judul_poin": "Gabungan Kejadian Saling Lepas (Tanpa Irisan)",
+              "penjelasan_singkat": "Jika $A$ dan $B$ mustahil terjadi bersamaan ($P(A \\cap B) = 0$), cukup jumlahkan langsung: $P(A \\cup B) = P(A) + P(B)$.",
+              "contoh_penerapan": "Ambil 1 kartu bridge, peluang kartu As atau King adalah **$P(\\text{As} \\cup \\text{King}) = \\frac{4}{52} + \\frac{4}{52} = \\frac{2}{13}$**."
+            },
+            {
+              "judul_poin": "Batas Nilai Peluang & Kejadian Hanya $A$",
+              "penjelasan_singkat": "Nilai peluang selalu memenuhi $0 \\le P(A) \\le 1$. Peluang terjadinya **hanya $A$** (tanpa $B$) adalah $P(A - B) = P(A) - P(A \\cap B)$.",
+              "contoh_penerapan": "Jika $P(A)=0,6$ dan $P(A \\cap B)=0,2$, peluang hanya $A$ yang terjadi adalah **$P(A \\cap B^c) = 0,6 - 0,2 = 0,4$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Aturan Perkalian (DAN) & Peluang Komplemen",
+          "butir": [
+            {
+              "judul_poin": "Dua Kejadian Saling Bebas (Dengan Pengembalian)",
+              "penjelasan_singkat": "Kejadian $A$ tidak memengaruhi peluang $B$, sehingga peluang keduanya terjadi bersamaan adalah $P(A \\cap B) = P(A) \\times P(B)$.",
+              "contoh_penerapan": "Lempar 1 koin dan 1 dadu bersamaan: **$P(\\text{Angka dan } 6) = \\frac{1}{2} \\times \\frac{1}{6} = \\frac{1}{12}$**."
+            },
+            {
+              "judul_poin": "Peluang Kejadian Komplemen ($A^c$)",
+              "penjelasan_singkat": "Peluang kejadian $A$ tidak terjadi adalah kebalikannya: $P(A^c) = 1 - P(A)$ karena $P(A) + P(A^c) = 1$.",
+              "contoh_penerapan": "Jika peluang turun hujan adalah $0,35$, peluang tidak hujan adalah **$P(\\text{tidak hujan}) = 1 - 0,35 = 0,65$**."
+            },
+            {
+              "judul_poin": "Trik Cepat Kata Kunci 'Minimal Satu' ($\\ge 1$)",
+              "penjelasan_singkat": "Lawan dari 'minimal satu' adalah 'tidak ada sama sekali'. Rumusnya: $P(\\text{minimal } 1) = 1 - P(\\text{nol kejadian})$.",
+              "contoh_penerapan": "Lempar 3 koin seimbang, peluang muncul minimal 1 gambar adalah **$1 - P(\\text{3 angka}) = 1 - \\left(\\frac{1}{2}\\right)^3 = \\frac{7}{8}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Peluang Bersyarat, Empiris, & Frekuensi Harapan",
+          "butir": [
+            {
+              "judul_poin": "Peluang Bersyarat (Berurutan Tanpa Pengembalian)",
+              "penjelasan_singkat": "Peluang $A$ setelah $B$ terjadi adalah $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$ dengan $P(B) > 0$. Jumlah sisa objek berkurang setelah pengambilan pertama.",
+              "contoh_penerapan": "Kotak berisi 4 merah dan 6 putih diambil satu per satu tanpa pengembalian: **$P(M_2 | M_1) = \\frac{3}{9} = \\frac{1}{3}$**."
+            },
+            {
+              "judul_poin": "Peluang Bersyarat pada Tabel Dua Arah",
+              "penjelasan_singkat": "Syarat $|B$ otomatis memangkas penyebut hanya menjadi total baris atau kolom $B$: $P(A|B) = \\frac{n(A \\cap B)}{n(B)}$.",
+              "contoh_penerapan": "Dari 40 siswa (25 IPA, 15 IPS), ada 10 siswa IPA berkacamata: **$P(\\text{kacamata}|\\text{IPA}) = \\frac{10}{25} = \\frac{2}{5}$**."
+            },
+            {
+              "judul_poin": "Peluang Empiris (Berdasarkan Data Percobaan)",
+              "penjelasan_singkat": "Peluang dari hasil percobaan nyata dihitung dengan $P(A) = \\frac{f(A)}{n}$, yaitu frekuensi munculnya $A$ dibagi total percobaan $n$.",
+              "contoh_penerapan": "Koin dilempar 50 kali dan muncul angka 28 kali, maka **$P_{\\text{empiris}}(\\text{Angka}) = \\frac{28}{50} = 0,56$**."
+            },
+            {
+              "judul_poin": "Frekuensi Harapan ($F_h$) Percobaan Berulang",
+              "penjelasan_singkat": "Perkiraan berapa kali kejadian $A$ muncul dalam $N$ kali percobaan dihitung dengan $F_h(A) = N \\times P(A)$.",
+              "contoh_penerapan": "Dua dadu dilempar 180 kali, frekuensi harapan jumlah mata dadu 7 adalah **$F_h = 180 \\times \\frac{6}{36} = 30$ kali**."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

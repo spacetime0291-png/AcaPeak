@@ -1,0 +1,419 @@
+{
+  "kode_bab": "pk-02",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 2: Fungsi dan Barisan",
+  "batch_model": "neon",
+  "jumlah_subbab": 5,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pk-02-01",
+      "judul_subbab": "Relasi, Domain, dan Range Fungsi",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Fungsi $f: A \\rightarrow B$ memasangkan setiap anggota domain $A$ ke tepat satu anggota kodomain $B$.\n- **Domain Alami ($D_f$):** Semua nilai input $x \\in \\mathbb{R}$ yang membuat $f(x)$ menghasilkan bilangan real.\n- **Range ($R_f$):** Semua nilai output $y = f(x)$ yang dihasilkan dari anggota $D_f$.\n- **Syarat Kritis:** Penyebut $\\neq 0$ dan bentuk di dalam akar genap $\\ge 0$.\n- **Simetri & Invers:** Fungsi genap jika $f(-x) = f(x)$, ganjil jika $f(-x) = -f(x)$, dan punya invers jika bersifat satu-satu.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Identifikasi Fungsi & Syarat Domain Alami",
+          "butir": [
+            {
+              "judul_poin": "Syarat Fungsi & Uji Garis Vertikal",
+              "penjelasan_singkat": "Setiap input $x$ wajib punya tepat satu pasangan $y$. Pada grafik, garis vertikal maksimal memotong kurva di satu titik.",
+              "contoh_penerapan": "Relasi $\\{(1,2), (1,3)\\}$ **bukan fungsi** karena $x = 1$ bercabang. Persamaan lingkaran $x^2 + y^2 = 4$ juga **bukan fungsi**."
+            },
+            {
+              "judul_poin": "Domain Alami Fungsi Pecahan (Rasional)",
+              "penjelasan_singkat": "Fungsi $f(x) = \\frac{p(x)}{q(x)}$ berlaku untuk semua $x \\in \\mathbb{R}$ dengan syarat mutlak penyebut $q(x) \\neq 0$.",
+              "contoh_penerapan": "Pada $f(x) = \\frac{x - 2}{x^2 - 9}$, syarat $x^2 - 9 \\neq 0$ menghasilkan **domain alami $D_f = \\{x \\in \\mathbb{R} \\mid x \\neq \\pm 3\\}$**."
+            },
+            {
+              "judul_poin": "Domain Alami Fungsi Akar Pangkat Genap",
+              "penjelasan_singkat": "Bentuk $\\sqrt[2n]{g(x)}$ menghasilkan bilangan real hanya jika bentuk di dalam akar tidak negatif, yaitu $g(x) \\ge 0$.",
+              "contoh_penerapan": "Pada $f(x) = \\sqrt{6 - 2x}$, syarat $6 - 2x \\ge 0$ menghasilkan **domain alami $x \\le 3$**."
+            },
+            {
+              "judul_poin": "Domain Akar Genap di Posisi Penyebut",
+              "penjelasan_singkat": "Jika akar genap berada di bawah $\\frac{1}{\\sqrt{g(x)}}$, syaratnya menjadi ketat: $g(x) > 0$, karena penyebut tidak boleh nol.",
+              "contoh_penerapan": "Pada $f(x) = \\frac{1}{\\sqrt{x^2 - 4}}$, syarat $x^2 - 4 > 0$ menghasilkan **$x < -2$ atau $x > 2$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Penentuan Daerah Hasil (Range) Terbatas",
+          "butir": [
+            {
+              "judul_poin": "Range Fungsi Linear pada Interval Terbatas",
+              "penjelasan_singkat": "Fungsi $f(x) = ax + b$ selalu naik atau turun konsisten. Cukup masukkan kedua ujung domain untuk mendapat batas range.",
+              "contoh_penerapan": "Untuk $f(x) = 3 - 2x$ pada $-1 \\le x < 4$, ujungnya $f(-1) = 5$ dan $f(4) = -5$, sehingga **$-5 < y \\le 5$**."
+            },
+            {
+              "judul_poin": "Range Fungsi Kuadrat pada Domain Terbatas",
+              "penjelasan_singkat": "Hitung nilai ujung domain dan nilai puncak $y_p = f\\left(-\\frac{b}{2a}\\right)$, dengan catatan $x_p = -\\frac{b}{2a}$ masuk di dalam domain.",
+              "contoh_penerapan": "Pada $f(x) = x^2 - 4x + 5$ untuk $0 \\le x \\le 3$, puncak $x_p = 2$ masuk interval, sehingga **$1 \\le y \\le 5$**."
+            },
+            {
+              "judul_poin": "Range Fungsi Rasional Linear (Asimtot Datar)",
+              "penjelasan_singkat": "Untuk $f(x) = \\frac{ax + b}{cx + d}$ (dengan $c \\neq 0$ dan $ad - bc \\neq 0$), rangenya mencakup semua $\\mathbb{R}$ kecuali asimtot datar $y \\neq \\frac{a}{c}$.",
+              "contoh_penerapan": "Fungsi $f(x) = \\frac{2x + 1}{x - 3}$ punya asimtot datar $y = \\frac{2}{1}$, maka **range $R_f = \\{y \\in \\mathbb{R} \\mid y \\neq 2\\}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Evaluasi Fungsi Piecewise & Fungsi Implisit",
+          "butir": [
+            {
+              "judul_poin": "Evaluasi Fungsi Bercabang (Piecewise Function)",
+              "penjelasan_singkat": "Cocokkan nilai input $x$ dengan syarat interval yang berlaku, lalu masukkan ke satu cabang rumus yang sesuai saja.",
+              "contoh_penerapan": "Jika $f(x) = x^2$ ($x < 1$) dan $f(x) = 2x + 1$ ($x \\ge 1$), maka **$f(1) = 2(1) + 1 = 3$**."
+            },
+            {
+              "judul_poin": "Evaluasi Fungsi Implisit $f(g(x)) = h(x)$",
+              "penjelasan_singkat": "Untuk mencari $f(k)$ dari $f(g(x)) = h(x)$, samakan isi kurung $g(x) = k$ terlebih dahulu agar dapat nilai $x$ penggantinya.",
+              "contoh_penerapan": "Diketahui $f(2x - 1) = 4x + 3$. Samakan $2x - 1 = 5 \\implies x = 3$, maka **$f(5) = 4(3) + 3 = 15$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "4. Fungsi Satu-Satu, Genap, & Ganjil",
+          "butir": [
+            {
+              "judul_poin": "Fungsi Satu-Satu (Injektif) & Syarat Invers",
+              "penjelasan_singkat": "Fungsi punya invers jika setiap $y$ berasal dari tepat satu $x$. Pada grafik, garis horizontal maksimal memotong kurva sekali.",
+              "contoh_penerapan": "Fungsi $f(x) = x^3$ bersifat **satu-satu (punya invers)**, sedangkan $f(x) = x^2$ pada $\\mathbb{R}$ **tidak satu-satu** karena $f(-2) = f(2)$."
+            },
+            {
+              "judul_poin": "Sifat Fungsi Genap ($f(-x) = f(x)$)",
+              "penjelasan_singkat": "Fungsi disebut genap jika $f(-x) = f(x)$ untuk setiap $x \\in D_f$. Grafiknya selalu simetris terhadap sumbu-$Y$.",
+              "contoh_penerapan": "Uji $f(x) = x^4 - 3x^2 + 1$: ganti $x$ dengan $-x$, hasil $f(-x) = (-x)^4 - 3(-x)^2 + 1 = f(x)$ (**fungsi genap**)."
+            },
+            {
+              "judul_poin": "Sifat Fungsi Ganjil ($f(-x) = -f(x)$)",
+              "penjelasan_singkat": "Fungsi disebut ganjil jika $f(-x) = -f(x)$ untuk setiap $x \\in D_f$. Grafiknya simetris putar terhadap titik asal $(0,0)$.",
+              "contoh_penerapan": "Uji $f(x) = x^3 - 5x$: hasil $f(-x) = -x^3 + 5x = -(x^3 - 5x) = -f(x)$ (**fungsi ganjil**)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-02-02",
+      "judul_subbab": "Fungsi Komposisi dan Invers",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Komposisi Fungsi:** $(f \\circ g)(x) = f(g(x))$. Selalu kerjakan fungsi yang paling dalam ($g$) lebih dulu, lalu masukkan hasilnya ke fungsi luar ($f$).\n- **Definisi Invers:** $f(a) = b \\iff f^{-1}(b) = a$. Input dan output cukup bertukar tempat—daerah asal $f$ jadi daerah hasil $f^{-1}$, begitu pula sebaliknya.\n- **Invers Pecahan Linear:** Jika $f(x) = \\frac{ax+b}{cx+d}$, inversnya $f^{-1}(x) = \\frac{-dx+b}{cx-a}$ dengan syarat $x \\neq \\frac{a}{c}$.\n- **Invers Komposisi:** $(f \\circ g)^{-1}(x) = (g^{-1} \\circ f^{-1})(x)$. Ingat aturan sepatu-kaus kaki: balik urutannya.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Operasi & Bongkar Pasang Fungsi Komposisi",
+          "butir": [
+            {
+              "judul_poin": "Hitung Bertahap $(f \\circ g)(a)$ dari Rumus, Tabel, atau Grafik",
+              "penjelasan_singkat": "Cari hasil fungsi dalam $g(a) = b$ lebih dulu, lalu masukkan $b$ ke fungsi luar $f(b)$. Pastikan hasil $g(a)$ masuk ke daerah asal $f$ ($R_g \\cap D_f \\neq \\emptyset$).",
+              "contoh_penerapan": "Jika $g(2) = 5$ dan $f(5) = 11$, maka $(f \\circ g)(2) = f(g(2)) = f(5) =$ **$11$**."
+            },
+            {
+              "judul_poin": "Urutan Itu Penting (Tidak Komutatif, Asosiatif, & Identitas)",
+              "penjelasan_singkat": "Secara umum $(f \\circ g)(x) \\neq (g \\circ f)(x)$. Namun, tanda kurung boleh digeser: $(f \\circ g) \\circ h = f \\circ (g \\circ h)$, dan fungsi identitas $I(x) = x$ tidak mengubah hasil.",
+              "contoh_penerapan": "Untuk $f(x) = x+1$ dan $g(x) = 2x$, hasil $(f \\circ g)(3) =$ **$7$**, sedangkan $(g \\circ f)(3) =$ **$8$**."
+            },
+            {
+              "judul_poin": "Mencari Fungsi Luar $f(x)$ dari $(f \\circ g)(x)$",
+              "penjelasan_singkat": "Misalkan $g(x) = u$, ubah sampai dapat $x$ dalam $u$ (sama saja dengan mencari $g^{-1}$), lalu masukkan ke persamaan $(f \\circ g)(x)$.",
+              "contoh_penerapan": "Jika $f(x-2) = 3x+1$, misalkan $u = x-2 \\Rightarrow x = u+2$. Maka $f(u) = 3(u+2)+1 \\Rightarrow f(x) =$ **$3x+7$**."
+            },
+            {
+              "judul_poin": "Mencari Fungsi Dalam $g(x)$ dari $(f \\circ g)(x)$",
+              "penjelasan_singkat": "Langsung masukkan $g(x)$ untuk menggantikan $x$ di dalam rumus $f(x)$, lalu rapikan secara aljabar sampai $g(x)$ sendirian.",
+              "contoh_penerapan": "Jika $f(x) = 2x-3$ dan $(f \\circ g)(x) = 4x+5$, maka $2g(x)-3 = 4x+5 \\Rightarrow g(x) =$ **$2x+4$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Rumus Invers Linear, Pecahan, Kuadrat, & Akar",
+          "butir": [
+            {
+              "judul_poin": "Invers Fungsi Linear & Pertukaran Domain–Range",
+              "penjelasan_singkat": "Jika $f(x) = ax+b$ ($a \\neq 0$), inversnya $f^{-1}(x) = \\frac{x-b}{a}$. Ingat, domain $f^{-1}$ diambil dari range $f$, bukan dari domain $f$.",
+              "contoh_penerapan": "Fungsi $f(x) = 4x-8$ pada $x \\ge 2$ punya hasil $y \\ge 0$. Maka inversnya $f^{-1}(x) =$ **$\\frac{x+8}{4}$ untuk $x \\ge 0$**."
+            },
+            {
+              "judul_poin": "Invers Pecahan Linear & Syarat Penyebut",
+              "penjelasan_singkat": "Untuk $f(x) = \\frac{ax+b}{cx+d}$ ($x \\neq -\\frac{d}{c}$), tukar posisi $a$ dan $d$ lalu balik tandanya menjadi $f^{-1}(x) = \\frac{-dx+b}{cx-a}$ ($x \\neq \\frac{a}{c}$).",
+              "contoh_penerapan": "Invers dari $f(x) = \\frac{2x+5}{3x-4}$ adalah $f^{-1}(x) =$ **$\\frac{4x+5}{3x-2}$ dengan syarat $x \\neq \\frac{2}{3}$**."
+            },
+            {
+              "judul_poin": "Invers Fungsi Kuadrat lewat Bentuk Puncak",
+              "penjelasan_singkat": "Ubah $y = ax^2+bx+c$ jadi kuadrat sempurna $y = a(x-h)^2+k$, lalu pisahkan $x$ sehingga didapat $f^{-1}(x) = h \\pm \\sqrt{\\frac{x-k}{a}}$.",
+              "contoh_penerapan": "Untuk $f(x) = x^2-4x+7$ ($x \\ge 2$), ubah jadi $y = (x-2)^2+3$, maka $f^{-1}(x) =$ **$2 + \\sqrt{x-3}$ ($x \\ge 3$)**."
+            },
+            {
+              "judul_poin": "Invers Fungsi Bentuk Akar Kuadrat",
+              "penjelasan_singkat": "Untuk $f(x) = \\sqrt{ax+b} + c$ ($ax+b \\ge 0$), pindahkan konstanta $c$ ke ruas kiri, lalu kuadratkan kedua ruas dengan syarat domain $x \\ge c$.",
+              "contoh_penerapan": "Jika $f(x) = \\sqrt{2x-1} + 3$, maka $(y-3)^2 = 2x-1 \\Rightarrow f^{-1}(x) =$ **$\\frac{(x-3)^2+1}{2}$ ($x \\ge 3$)**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Trik Invers Komposisi & Pola Berulang",
+          "butir": [
+            {
+              "judul_poin": "Cari Nilai Invers Tanpa Bongkar Rumusnya",
+              "penjelasan_singkat": "Gunakan sifat tukar tempat $f^{-1}(k) = a \\iff f(a) = k$, serta sifat saling meniadakan $(f \\circ f^{-1})(x) = x$ dan $(f^{-1})^{-1}(x) = f(x)$.",
+              "contoh_penerapan": "Jika $f(x) = x^3 + 2x + 1$, cari $f^{-1}(4)$ lewat $a^3 + 2a + 1 = 4$. Coba $a = 1$, cocok! Jadi $f^{-1}(4) =$ **$1$**."
+            },
+            {
+              "judul_poin": "Sifat Invers Komposisi Dua atau Tiga Fungsi",
+              "penjelasan_singkat": "Tanda invers membalik urutan dari belakang ke depan: $(f \\circ g)^{-1}(x) = (g^{-1} \\circ f^{-1})(x)$ dan $(f \\circ g \\circ h)^{-1}(x) = (h^{-1} \\circ g^{-1} \\circ f^{-1})(x)$.",
+              "contoh_penerapan": "Untuk menghitung $(g \\circ f)^{-1}(5) = f^{-1}(g^{-1}(5))$, cari dulu $g^{-1}(5) = m$, baru hitung **$f^{-1}(m)$**."
+            },
+            {
+              "judul_poin": "Mencari $f(x)$ dari Persamaan yang Memuat Invers",
+              "penjelasan_singkat": "Jika bertemu $f^{-1}(h(x)) = k(x)$, langsung tukar posisi isi kurung dan ruas kanan menjadi $f(k(x)) = h(x)$.",
+              "contoh_penerapan": "Dari $f^{-1}(2x-1) = x+3$, balik jadi $f(x+3) = 2x-1$. Misalkan $u = x+3$, maka $f(x) =$ **$2x-7$**."
+            },
+            {
+              "judul_poin": "Pola Berulang (Siklik) Komposisi $f^{(n)}(x)$",
+              "penjelasan_singkat": "Hitung $f^{(1)}(x), f^{(2)}(x), \\dots$ sampai nilainya kembali ke $x$ pada langkah ke-$p$. Setelah itu, nilai $f^{(n)}(x)$ tinggal ikuti sisa pembagian $n \\div p$.",
+              "contoh_penerapan": "Untuk $f(x) = \\frac{1}{1-x}$, didapat $f^{(2)}(x) = \\frac{x-1}{x}$ dan $f^{(3)}(x) = x$ (siklus $3$). Karena $100 \\div 3$ sisa $1$, maka $f^{(100)}(5) = f^{(1)}(5) =$ **$-\\frac{1}{4}$**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-02-03",
+      "judul_subbab": "Operasi Fungsi Baru (Simbol Khusus)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Operasi fungsi baru adalah aturan hitung buatan yang memakai simbol unik (seperti $\\otimes$, $\\star$, atau $\\triangle$) sebagai pengganti rumus dua angka $f(a, b)$.\n\n* **Posisi Itu Mutlak:** Angka di kiri simbol masuk ke huruf depan ($a$), angka di kanan masuk ke huruf belakang ($b$).\n* **Kurung Selalu Menang:** Kerjakan operasi di dalam kurung lebih dulu. Simbol buatan tidak otomatis bisa dibolak-balik.\n* **Cek Syarat Dulu:** Kalau rumusnya bercabang (misalnya beda aturan untuk ganjil/genap atau $a > b$), cek syaratnya sebelum mulai menghitung.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Hitung Langsung dan Operasi Bersarang",
+          "butir": [
+            {
+              "judul_poin": "Posisi Angka Kiri dan Kanan",
+              "penjelasan_singkat": "Masukkan angka di kiri simbol sebagai $a$ dan angka di kanan simbol sebagai $b$ ke dalam rumus.",
+              "contoh_penerapan": "Jika $a \\otimes b = 2a - b^2$, maka $3 \\otimes 4 = 2(3) - 4^2 = 6 - 16 =$ **$-10$**."
+            },
+            {
+              "judul_poin": "Operasi Bersarang (Kurung Duluan)",
+              "penjelasan_singkat": "Selesaikan simbol di dalam kurung sampai ketemu satu angka, lalu gabungkan dengan angka di luar kurung.",
+              "contoh_penerapan": "Untuk $a \\star b = a + 2b$, hitung $(2 \\star 1) \\star 3$: $(2 + 2) \\star 3 = 4 \\star 3 =$ **$10$**."
+            },
+            {
+              "judul_poin": "Gabungan Dua Simbol Berbeda",
+              "penjelasan_singkat": "Hitung setiap simbol memakai rumusnya masing-masing, lalu lanjutkan sesuai urutan kurung.",
+              "contoh_penerapan": "Jika $a \\oplus b = ab$ dan $a \\ominus b = a - b$, maka $(3 \\oplus 2) \\ominus 4 = 6 \\ominus 4 =$ **$2$**."
+            },
+            {
+              "judul_poin": "Simbol Satu Angka yang Digabung Operasi Lain",
+              "penjelasan_singkat": "Simbol seperti $x^{\\triangle}$ hanya mengubah satu angka. Hitung nilainya dulu sebelum digabung dengan simbol dua angka.",
+              "contoh_penerapan": "Jika $x^{\\triangle} = x^2 + 1$ dan $a \\odot b = a + b$, maka $2^{\\triangle} \\odot 3 = 5 \\odot 3 =$ **$8$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Operasi Bercabang dan Mencari Variabel x",
+          "butir": [
+            {
+              "judul_poin": "Rumus Bercabang Pertidaksamaan ($a > b$ vs $a \\le b$)",
+              "penjelasan_singkat": "Bandingkan besar angka $a$ dan $b$ lebih dulu untuk menentukan cabang rumus mana yang dipakai.",
+              "contoh_penerapan": "Jika $a \\diamond b = a + b$ ($a > b$) dan $ab$ ($a \\le b$), maka $3 \\diamond 3 = 3 \\times 3 =$ **$9$**."
+            },
+            {
+              "judul_poin": "Rumus Bercabang Ganjil vs Genap",
+              "penjelasan_singkat": "Cek dulu apakah input atau hasil penjumlahannya ganjil atau genap, lalu pilih rumus yang cocok.",
+              "contoh_penerapan": "Jika $a \\ast b = \\frac{a+b}{2}$ ($a+b$ genap) dan $a-b$ ($a+b$ ganjil), maka $5 \\ast 3 = \\frac{5+3}{2} =$ **$4$**."
+            },
+            {
+              "judul_poin": "Mencari Nilai $x$ pada Persamaan Simbol",
+              "penjelasan_singkat": "Ubah bentuk bersimbol menjadi persamaan aljabar biasa dalam $x$, lalu selesaikan seperti biasa.",
+              "contoh_penerapan": "Jika $a \\star b = 3a + b$ dan $x \\star 3 = 15$, maka $3x + 3 = 15 \\rightarrow$ **$x = 4$**."
+            },
+            {
+              "judul_poin": "Mencari Nilai $x$ pada Rumus Bercabang",
+              "penjelasan_singkat": "Coba hitung dari semua cabang yang ada, lalu cek apakah hasil $x$ memenuhi syarat cabangnya.",
+              "contoh_penerapan": "Jika $a \\bullet b = 2a$ ($a > b$) dan $a + b$ ($a \\le b$), solusi $x \\bullet 4 = 6$ adalah **$x = 2$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Uji Sifat Aljabar pada Simbol Baru",
+          "butir": [
+            {
+              "judul_poin": "Uji Sifat Komutatif ($a \\otimes b = b \\otimes a$)",
+              "penjelasan_singkat": "Operasi disebut komutatif jika menukar posisi $a$ dan $b$ selalu menghasilkan rumus yang persis sama.",
+              "contoh_penerapan": "Pada $a \\otimes b = a + b - 2ab$, bentuk $b \\otimes a = b + a - 2ba$, jadi **komutatif berlaku**."
+            },
+            {
+              "judul_poin": "Uji Sifat Asosiatif ($(a \\otimes b) \\otimes c = a \\otimes (b \\otimes c)$)",
+              "penjelasan_singkat": "Operasi disebut asosiatif jika memindahkan tanda kurung tidak mengubah hasil akhirnya.",
+              "contoh_penerapan": "Untuk $a \\otimes b = a - b$, $(5 \\otimes 3) \\otimes 1 = 1$, sedangkan $5 \\otimes (3 \\otimes 1) = 3$, jadi **tidak asosiatif**."
+            },
+            {
+              "judul_poin": "Mencari Elemen Identitas ($a \\otimes e = a$)",
+              "penjelasan_singkat": "Identitas ($e$) adalah satu angka tetap (tanpa huruf $a$) yang membuat $a \\otimes e = e \\otimes a = a$.",
+              "contoh_penerapan": "Jika $a \\otimes b = a + b - 4$, selesaikan $a + e - 4 = a \\rightarrow$ **$e = 4$**."
+            },
+            {
+              "judul_poin": "Mencari Elemen Invers ($a \\otimes a^{-1} = e$)",
+              "penjelasan_singkat": "Cari dulu nilai identitas $e$, lalu selesaikan $a \\otimes x = e$ untuk mendapatkan rumus invers $x$.",
+              "contoh_penerapan": "Pada $a \\otimes b = a + b - 4$ dengan $e = 4$, selesaikan $a + x - 4 = 4 \\rightarrow$ **$x = 8 - a$**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-02-04",
+      "judul_subbab": "Barisan dan Deret Aritmetika & Geometri",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Aritmetika (beda $b$ tetap):** $U_n = a + (n-1)b$ dan $S_n = \\frac{n}{2}(a + U_n) = \\frac{n}{2}(2a + (n-1)b)$.\n- **Geometri (rasio $r$ tetap):** $U_n = ar^{n-1}$ dan $S_n = \\frac{a(r^n - 1)}{r - 1}$ untuk $r \\neq 1$.\n- **Hubungan Umum:** $U_n = S_n - S_{n-1}$ (untuk $n \\ge 2$) dan $U_1 = S_1$.\n- **Deret Geometri Tak Hingga ($-1 < r < 1$):** $S_{\\infty} = \\frac{a}{1 - r}$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Sifat & Rumus Cepat Barisan Aritmetika",
+          "butir": [
+            {
+              "judul_poin": "Cari $U_n$ Langsung dari Rumus Kuadrat $S_n$",
+              "penjelasan_singkat": "Jika $S_n = An^2 + Bn$ tanpa konstanta, barisannya pasti aritmetika dengan beda $b = 2A$ dan rumus $U_n = 2An + (B - A)$.",
+              "contoh_penerapan": "Diketahui $S_n = 3n^2 - 2n$. Langsung dapat beda **$b = 2(3) = 6$** dan **$U_4 = 6(4) - 5 = 19$**."
+            },
+            {
+              "judul_poin": "Selisih Antarsuku dan Suku Tengah Aritmetika",
+              "penjelasan_singkat": "Beda bisa dicari dari dua suku mana saja: $b = \\frac{U_p - U_q}{p - q}$. Untuk jumlah suku $n$ ganjil, suku tengahnya adalah rata-rata ujung: $U_t = \\frac{U_1 + U_n}{2}$.",
+              "contoh_penerapan": "Jika $U_3 = 10$ dan $U_7 = 26$, maka **$b = \\frac{26-10}{7-3} = 4$** dan suku tengahnya **$U_5 = \\frac{10+26}{2} = 18$**."
+            },
+            {
+              "judul_poin": "Sisipan Bilangan pada Barisan Aritmetika",
+              "penjelasan_singkat": "Menyisipkan $k$ bilangan di antara dua suku berurutan mengubah beda menjadi $b' = \\frac{b}{k + 1}$ dengan total suku baru $n' = n + (n-1)k$.",
+              "contoh_penerapan": "Di antara $4$ dan $28$ ($b = 24$) disisipkan $3$ bilangan, maka beda barunya **$b' = \\frac{24}{3+1} = 6$**."
+            },
+            {
+              "judul_poin": "Pemisalan Simetris Tiga Suku Aritmetika",
+              "penjelasan_singkat": "Kalau jumlah tiga suku aritmetika diketahui, misalkan sebagai $a - b, a, a + b$. Saat dijumlahkan, variabel $b$ langsung habis.",
+              "contoh_penerapan": "Tiga bilangan aritmetika berjumlah $24$. Dari $3a = 24$, kamu langsung dapat suku tengah **$a = 8$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sifat & Hasil Kali Barisan Geometri",
+          "butir": [
+            {
+              "judul_poin": "Rasio Antarsuku dan Suku Tengah Geometri",
+              "penjelasan_singkat": "Rasio memenuhi $r^{p-q} = \\frac{U_p}{U_q}$. Jika banyak suku $n$ ganjil, kuadrat suku tengah sama dengan hasil kali ujung: $U_t^2 = U_1 \\cdot U_n$.",
+              "contoh_penerapan": "Diketahui $U_2 = 6$ dan $U_5 = 48$. Maka $r^3 = \\frac{48}{6} = 8$, sehingga rasionya **$r = 2$**."
+            },
+            {
+              "judul_poin": "Simetri Hasil Kali Suku Barisan Geometri",
+              "penjelasan_singkat": "Hasil kali pasangan suku yang berjarak sama dari ujung selalu sama: $U_1 \\cdot U_n = U_2 \\cdot U_{n-1} = U_t^2$.",
+              "contoh_penerapan": "Pada $5$ suku geometri dengan $U_3 = 4$, hasil kali kelima sukunya langsung **$U_3^5 = 4^5 = 1024$**."
+            },
+            {
+              "judul_poin": "Sisipan Bilangan pada Barisan Geometri",
+              "penjelasan_singkat": "Menyisipkan $k$ bilangan di antara dua suku berurutan mengubah rasio lama $r$ menjadi $r' = \\sqrt[k+1]{r}$.",
+              "contoh_penerapan": "Di antara $2$ dan $162$ ($r = 81$) disisipkan $3$ bilangan positif, maka rasio barunya **$r' = \\sqrt[3+1]{81} = 3$**."
+            },
+            {
+              "judul_poin": "Ubah Tiga Suku Aritmetika Jadi Geometri",
+              "penjelasan_singkat": "Mulai dengan pemisalan $a-b, a, a+b$, ubah suku sesuai soal, lalu masukkan ke syarat geometri $U_2^2 = U_1 \\cdot U_3$.",
+              "contoh_penerapan": "Suku $4-b, 4, 4+b$ jika suku ketiga ditambah $2$ menjadi geometri, maka **$4^2 = (4-b)(6+b)$**, menghasilkan **$b = 2$** atau **$b = -4$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Deret Tak Hingga & Pola Rekurensi",
+          "butir": [
+            {
+              "judul_poin": "Syarat Konvergen & Suku Ganjil-Genap Tak Hingga",
+              "penjelasan_singkat": "Deret punya jumlah tetap (konvergen) jika $-1 < r < 1$. Jumlah suku ganjil $S_{\\text{ganjil}} = \\frac{a}{1 - r^2}$ dan rasio $r = \\frac{S_{\\text{genap}}}{S_{\\text{ganjil}}}$.",
+              "contoh_penerapan": "Jika jumlah suku ganjil $12$ dan suku genap $4$, langsung dapat **$r = \\frac{4}{12} = \\frac{1}{3}$** dan **$S_{\\infty} = 16$**."
+            },
+            {
+              "judul_poin": "Pola Rekurensi Maju dan Mundur",
+              "penjelasan_singkat": "Pada aturan seperti $a_{n+1} = f(a_n, a_{n-1})$, substitusikan nilai $n$ secara berurutan untuk mencari suku berikutnya atau mundur ke suku awal.",
+              "contoh_penerapan": "Jika $a_{n+2} = 2a_{n+1} - a_n$ dengan $a_1 = 3$ dan $a_2 = 5$, maka **$a_3 = 7$** dan **$a_4 = 9$**."
+            },
+            {
+              "judul_poin": "Pola Berulang (Siklik) pada Barisan Rekurensi",
+              "penjelasan_singkat": "Hitung beberapa suku awal sampai angkanya mulai berulang. Untuk suku besar, bagi nomor suku dengan panjang siklus $P$ lalu ambil sisanya.",
+              "contoh_penerapan": "Jika pola berulang tiap $4$ suku ($2, 5, 3, -2$), karena $2026$ dibagi $4$ bersisa $2$, maka **$a_{2026} = a_2 = 5$**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-02-05",
+      "judul_subbab": "Algoritma Diagram Alir (Flowchart) Bilangan",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Flowchart bilangan PK UTBK** adalah cara visual menyajikan hitungan berantai dan pola berulang yang bisa diselesaikan tanpa kalkulator.\n\n* **Alur Maju (*Forward*):** Masukkan input $x$, lalu ikuti panah dan cabang syarat (`Ya`/`Tidak`) langkah demi langkah.\n* **Alur Berulang (*Looping*):** Buat tabel kecil untuk mencatat perubahan nilai di tiap putaran sampai syarat berhenti terpenuhi.\n* **Alur Mundur (*Backtracking*):** Balikkan operasi hitung dari output ke input, lalu **wajib uji ulang** hasilnya ke syarat cabang awal.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Alur Lurus & Percabangan Bersyarat (Forward)",
+          "butir": [
+            {
+              "judul_poin": "Alur Lurus Tanpa Cabang (*Single-Pass*)",
+              "penjelasan_singkat": "Setiap kotak operasi dikerjakan berurutan dari atas ke bawah, persis seperti fungsi komposisi $f(g(x))$.",
+              "contoh_penerapan": "Input $x = 3$ masuk kotak $x \\leftarrow 2x + 1$ (jadi $7$), lalu $x \\leftarrow x^2$, hasilnya **$x = 49$**."
+            },
+            {
+              "judul_poin": "Percabangan Ganjil vs Genap",
+              "penjelasan_singkat": "Kotak belah ketupat mengecek apakah $x$ habis dibagi 2 untuk menentukan jalur ganjil atau genap.",
+              "contoh_penerapan": "Input $x = 5$ (ganjil) masuk jalur Ya ($x + 3$), nilainya langsung berubah menjadi **$8$** (genap)."
+            },
+            {
+              "judul_poin": "Percabangan Tanda Perbandingan ($>, <, \\ge, \\le$)",
+              "penjelasan_singkat": "Syarat perbandingan menentukan arah panah berdasarkan besar-kecilnya nilai variabel saat itu.",
+              "contoh_penerapan": "Syarat $x \\ge 4$: jika $x = 4$, masuk jalur Ya ($x - 2$) jadi **$2$**; jika $x = 3$, masuk jalur Tidak."
+            },
+            {
+              "judul_poin": "Percabangan Kelipatan & Bilangan Prima",
+              "penjelasan_singkat": "Kotak keputusan menguji sifat khusus bilangan—seperti kelipatan $3$ atau bilangan prima—sebelum lanjut ke operasi berikutnya.",
+              "contoh_penerapan": "Syarat kelipatan 3: input $x = 12$ masuk cabang Ya ($x \\div 3$), menghasilkan output akhir **$4$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Alur Berulang & Penyimpan Total (Looping)",
+          "butir": [
+            {
+              "judul_poin": "Penghitung Putaran (*Counter*) dan Batas Berhenti",
+              "penjelasan_singkat": "Variabel $n$ biasanya bertambah $1$ tiap putaran ($n \\leftarrow n + 1$) untuk membatasi berapa kali siklus berjalan.",
+              "contoh_penerapan": "Mulai $n = 1$, cek syarat $n > 3$ di akhir putaran: siklus berjalan tepat **3 kali** ($n = 1, 2, 3$)."
+            },
+            {
+              "judul_poin": "Penyimpan Total (Akumulator)",
+              "penjelasan_singkat": "Variabel seperti $S \\leftarrow S + x$ atau $P \\leftarrow P \\times x$ bertugas menampung jumlah atau hasil kali di tiap putaran.",
+              "contoh_penerapan": "Awal $S = 0, x = 2$, aturan $S \\leftarrow S + x$: putaran 1 ($S = 2$), putaran 2 ($S = 4$), putaran 3 (**$S = 6$**)."
+            },
+            {
+              "judul_poin": "Pola Berulang (Rekursif) dalam Siklus",
+              "penjelasan_singkat": "Nilai baru dihitung langsung dari nilai putaran sebelumnya sampai target putaran atau batas nilai tercapai.",
+              "contoh_penerapan": "Awal $x = 2$, aturan $x \\leftarrow 2x - 1$: putaran 1 ($3$), putaran 2 (**$5$**), putaran 3 (**$9$**)."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Penelusuran Mundur & Uji Validasi (Backtracking)",
+          "butir": [
+            {
+              "judul_poin": "Membalikkan Operasi Hitung Dasar",
+              "penjelasan_singkat": "Ikuti panah dari bawah ke atas, lalu balik setiap operasinya: $+$ jadi $-$, dan $\\times$ jadi $\\div$.",
+              "contoh_penerapan": "Output $17$ dari alur $x \\rightarrow 3x \\rightarrow +2$: balikkan dari belakang, $(17 - 2) \\div 3 =$ **$x = 5$**."
+            },
+            {
+              "judul_poin": "Cabang Mundur dan Uji Syarat Wajib",
+              "penjelasan_singkat": "Jika output bisa datang dari dua cabang, hitung kedua calon inputnya lalu uji kembali ke syarat awal.",
+              "contoh_penerapan": "Output $10$ dari cabang $x > 5$ ($x + 2$) atau $x \\le 5$ ($2x$): didapat **$x = 8$** dan **$x = 5$** (keduanya valid)."
+            },
+            {
+              "judul_poin": "Membalikkan Operasi Kuadrat",
+              "penjelasan_singkat": "Saat membalik kotak kuadrat ($x^2 = k$), selalu muncul dua kemungkinan calon input: $+\\sqrt{k}$ dan $-\\sqrt{k}$.",
+              "contoh_penerapan": "Output $25$ dari proses $x \\leftarrow x^2$ menghasilkan dua calon: **$x = 5$** atau **$x = -5$** sebelum uji syarat."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

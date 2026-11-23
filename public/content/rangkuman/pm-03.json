@@ -1,0 +1,325 @@
+{
+  "kode_bab": "pm-03",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 3: Geometri Terapan dan Pengukuran",
+  "batch_model": "neon",
+  "jumlah_subbab": 4,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pm-03-01",
+      "judul_subbab": "Aplikasi Teorema Pythagoras dan Trigonometri",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Teorema Pythagoras ($c^2 = a^2 + b^2$):** Berlaku pada segitiga siku-siku dengan $c$ sebagai sisi miring. Hafalkan tripel dasar $(3,4,5)$, $(5,12,13)$, $(7,24,25)$, dan $(8,15,17)$ beserta kelipatannya biar tidak perlu mengkuadratkan angka besar.\\n- **Rasio Trigonometri Siku-Siku:** Ingat singkatannya: $\\sin \\theta = \\frac{\\text{depan}}{\\text{miring}}$, $\\cos \\theta = \\frac{\\text{samping}}{\\text{miring}}$, dan $\\tan \\theta = \\frac{\\text{depan}}{\\text{samping}}$.\\n- **Sudut Elevasi & Depresi:** Keduanya selalu diukur dari **garis mendatar (horizontal)**. Besar sudut depresi dari atas sama persis dengan sudut elevasi dari bawah.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Pythagoras 2D, 3D, dan Kemiringan",
+          "butir": [
+            {
+              "judul_poin": "Kelipatan Tripel Pythagoras dan Sudut Istimewa",
+              "penjelasan_singkat": "Pakai kelipatan tripel dasar atau perbandingan sisi segitiga istimewa: $30^\\circ-60^\\circ-90^\\circ$ ($1:\\sqrt{3}:2$) dan $45^\\circ-45^\\circ-90^\\circ$ ($1:1:\\sqrt{2}$).",
+              "contoh_penerapan": "Kabel tiang membentuk sudut $60^\\circ$ dengan tanah dan berjarak $4\\text{ m}$ dari pangkal. Sisi sampingnya $4\\text{ m}$ (rasio $1$), maka **panjang kabel $= 2 \\times 4 = 8\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Tangga Bersandar yang Bergeser (Sisi Miring Tetap)",
+              "penjelasan_singkat": "Saat tangga bergeser, panjang tangga ($L$) tidak berubah. Jadi berlaku $x_1^2 + y_1^2 = x_2^2 + y_2^2 = L^2$.",
+              "contoh_penerapan": "Tangga pemadam $25\\text{ m}$ bersandar di tinggi $24\\text{ m}$ ($x_1 = 7\\text{ m}$). Jika ujung atas turun $4\\text{ m}$ jadi $20\\text{ m}$, jarak kaki baru $x_2 = 15\\text{ m}$, jadi **kaki bergeser $8\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Jarak Terpendek di Permukaan Balok (3D)",
+              "penjelasan_singkat": "Untuk objek yang merayap di permukaan balok, buka jaring-jaringnya jadi bidang datar lalu tarik garis lurus dengan Pythagoras.",
+              "contoh_penerapan": "Semut merayap di balok $4 \\times 2 \\times 1\\text{ cm}$ dari pojok bawah ke pojok atas seberang. Gabungkan dua rusuk terpendek ($2+1=3$), maka **jarak terpendek $= \\sqrt{3^2 + 4^2} = 5\\text{ cm}$**."
+            },
+            {
+              "judul_poin": "Kemiringan Atap dan Jalan Tanjakan (Ramp)",
+              "penjelasan_singkat": "Kemiringan ($m$) adalah perbandingan tinggi vertikal terhadap jarak mendatar: $m = \\tan \\theta = \\frac{\\Delta y}{\\Delta x}$, atau ditulis dalam persen ($m \\times 100\\%$).",
+              "contoh_penerapan": "Ramp kursi roda berkemiringan $1 : 12$ dipakai untuk naik setinggi $0,5\\text{ m}$. Maka **jarak mendatarnya $= 12 \\times 0,5 = 6\\text{ m}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sudut Elevasi, Depresi, dan Tinggi Objek",
+          "butir": [
+            {
+              "judul_poin": "Tinggi Gedung dengan Tinggi Mata Pengamat",
+              "penjelasan_singkat": "Tinggi total objek ($H$) adalah hasil $x \\tan \\theta$ lalu ditambah tinggi mata pengamat ($h_0$): $H = x \\tan \\theta + h_0$.",
+              "contoh_penerapan": "Pengamat bertinggi mata $1,6\\text{ m}$ berdiri $10\\sqrt{3}\\text{ m}$ dari tiang dengan sudut elevasi $30^\\circ$. Maka **tinggi tiang $= 10\\sqrt{3}(\\frac{1}{\\sqrt{3}}) + 1,6 = 11,6\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Jarak Kapal dari Mercusuar (Sudut Depresi)",
+              "penjelasan_singkat": "Sudut depresi $\\alpha$ dari puncak menara setinggi $H$ sama besar dengan sudut elevasi dari kapal, jadi jarak mendatarnya $x = \\frac{H}{\\tan \\alpha}$.",
+              "contoh_penerapan": "Dari menara $60\\text{ m}$, kapal terlihat pada sudut depresi $45^\\circ$. Maka **jarak kapal ke kaki menara $= \\frac{60}{\\tan 45^\\circ} = 60\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Dua Titik Pengamatan Segaris",
+              "penjelasan_singkat": "Jika pengamat maju sejauh $d$ dan sudut elevasi naik dari $\\alpha$ ke $\\beta$, tinggi objek bisa dicari lewat $h = \\frac{d}{\\cot \\alpha - \\cot \\beta}$.",
+              "contoh_penerapan": "Sudut elevasi menara naik dari $30^\\circ$ ke $45^\\circ$ setelah kamu maju $20\\text{ m}$. Maka **tinggi menara $= \\frac{20}{\\sqrt{3} - 1} = 10(\\sqrt{3}+1)\\text{ m}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Navigasi Arah dan Sabuk Lilitan Katrol",
+          "butir": [
+            {
+              "judul_poin": "Navigasi Mata Angin dan Jarak Lurus Awal–Akhir",
+              "penjelasan_singkat": "Hitung selisih gerak Utara–Selatan ($\\Delta y$) dan Timur–Barat ($\\Delta x$) secara terpisah, lalu gabungkan dengan $R = \\sqrt{(\\Delta x)^2 + (\\Delta y)^2}$.",
+              "contoh_penerapan": "Kapal berlayar $10\\text{ km}$ ke Utara, $12\\text{ km}$ ke Timur, lalu $5\\text{ km}$ ke Selatan. Sisa Utara $= 5\\text{ km}$, jadi **jarak dari titik awal $= \\sqrt{12^2 + 5^2} = 13\\text{ km}$**."
+            },
+            {
+              "judul_poin": "Jurusan Tiga Angka (Bearing) dan Sudut Siku-Siku",
+              "penjelasan_singkat": "Jurusan tiga angka diukur searah jarum jam dari Utara ($000^\\circ$). Jika selisih dua jurusan tepat $90^\\circ$ atau $270^\\circ$, lintasan pasti membentuk sudut siku-siku.",
+              "contoh_penerapan": "Pesawat terbang $80\\text{ km}$ ke jurusan $030^\\circ$, lalu berbelok ke jurusan $120^\\circ$ sejauh $60\\text{ km}$. Karena siku-siku, **jarak akhir $= \\sqrt{80^2+60^2} = 100\\text{ km}$**."
+            },
+            {
+              "judul_poin": "Panjang Sabuk Lilitan Terbuka Dua Katrol",
+              "penjelasan_singkat": "Untuk dua katrol identik berjari-jari $r$ dengan jarak pusat $d$, panjang sabuknya adalah dua segmen lurus ditambah satu keliling lingkaran: $L = 2d + 2\\pi r$.",
+              "contoh_penerapan": "Dua katrol identik ($r = 7\\text{ cm}$) berjarak pusat $20\\text{ cm}$ dihubungkan sabuk luar. **Panjang sabuk $= 2(20) + 2(\\frac{22}{7})(7) = 84\\text{ cm}$**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pm-03-02",
+      "judul_subbab": "Luas dan Volume Bangun Gabungan dalam Konteks Fisik",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Luas Permukaan Terpapar:** Hitung hanya bagian luar yang benar-benar dilapisi. Buang sisi yang berimpit di dalam atau menempel ke tanah.\n- **Pengemasan Kotak:** Hitung muatan per rusuk dengan pembulatan ke bawah ($\\lfloor P/p \\rfloor \\times \\lfloor L/l \\rfloor \\times \\lfloor T/t \\rfloor$), lalu cek posisi terbaik.\n- **Benda Berongga & Massa:** Volume bahan = $V_{\\text{luar}} - V_{\\text{rongga}}$. Setelah itu, hitung massa dengan $m = \\rho \\times V_{\\text{bahan}}$.\n- **Perpindahan Air:** Volume air selalu tetap saat pindah wadah ($V_1 = V_2$), sehingga tinggi air baru adalah $h = \\frac{V_{\\text{air}}}{L_{\\text{alas wadah}}}$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Luas Material & Jalur Lahan Gabungan",
+          "butir": [
+            {
+              "judul_poin": "Luas Terpal Tenda Gabungan Tabung dan Kerucut",
+              "penjelasan_singkat": "Jumlahkan selimut tabung dan selimut kerucut: $L = 2\\pi r t + \\pi r s$ dengan $s = \\sqrt{r^2 + t_k^2}$.",
+              "contoh_penerapan": "Tenda $r = 3\\text{ m}$, $t = 2\\text{ m}$, $t_k = 4\\text{ m}$ ($s = 5\\text{ m}$) butuh terpal **$2\\pi(3)(2) + \\pi(3)(5) = 27\\pi\\text{ m}^2$**."
+            },
+            {
+              "judul_poin": "Luas Keramik Kolam Renang Dasar Miring",
+              "penjelasan_singkat": "Cari panjang lantai miring $s = \\sqrt{p^2 + (h_2 - h_1)^2}$, lalu jumlahkan luas lantai, dua trapesium samping, dan dua dinding ujung.",
+              "contoh_penerapan": "Kolam $p = 12\\text{ m}$, $l = 5\\text{ m}$, dalam $1\\text{ m}$ ke $6\\text{ m}$ punya lantai miring $s = \\sqrt{12^2 + 5^2} = 13\\text{ m}$. Luas keramik = lantai ($13 \\times 5$) + 2 samping ($2 \\times \\frac{1+6}{2} \\times 12$) + 2 ujung ($1 \\times 5 + 6 \\times 5$) = $65 + 84 + 35 = \\mathbf{184\\text{ m}^2}$."
+            },
+            {
+              "judul_poin": "Luas Jalur Pejalan Kaki Sekeliling Persegi Panjang",
+              "penjelasan_singkat": "Kurangkan luas persegi panjang luar dengan dalam: $L_{\\text{jalur}} = (p + 2w)(l + 2w) - pl$ untuk lebar jalur $w$.",
+              "contoh_penerapan": "Taman $10\\text{ m} \\times 6\\text{ m}$ dengan jalur luar selebar $1\\text{ m}$ punya luas jalur **$(12 \\times 8) - (10 \\times 6) = 36\\text{ m}^2$**."
+            },
+            {
+              "judul_poin": "Luas Jalur Lari Gabungan Lintasan Lurus dan Lingkaran",
+              "penjelasan_singkat": "Gabungkan dua jalur lurus dan satu cincin penuh: $L_{\\text{jalur}} = 2pw + \\pi(R^2 - r^2)$ dengan $R = r + w$.",
+              "contoh_penerapan": "Lintasan lurus $p = 50\\text{ m}$, jari-jari dalam $r = 7\\text{ m}$, lebar $w = 7\\text{ m}$ punya luas **$2(50)(7) + \\frac{22}{7}(14^2 - 7^2) = 1.162\\text{ m}^2$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pengemasan Kotak & Perpindahan Cairan",
+          "butir": [
+            {
+              "judul_poin": "Kapasitas Pengemasan Kotak Kecil dalam Kontainer",
+              "penjelasan_singkat": "Kalikan pembulatan ke bawah tiap sisi: $N = \\lfloor \\frac{P}{p} \\rfloor \\times \\lfloor \\frac{L}{l} \\rfloor \\times \\lfloor \\frac{T}{t} \\rfloor$ pada posisi paling muat.",
+              "contoh_penerapan": "Kontainer $100 \\times 50 \\times 40\\text{ cm}$ diisi kotak $30 \\times 20 \\times 20\\text{ cm}$ muat maksimum **$\\lfloor \\frac{100}{30} \\rfloor \\times \\lfloor \\frac{50}{20} \\rfloor \\times \\lfloor \\frac{40}{20} \\rfloor = 3 \\times 2 \\times 2 = 12$ kotak**."
+            },
+            {
+              "judul_poin": "Perpindahan Air dari Kerucut atau Bola ke Tabung",
+              "penjelasan_singkat": "Samakan volume air ($V_1 = V_2$), sehingga tinggi air di tabung $h = \\frac{V_{\\text{air}}}{\\pi R^2}$ dengan syarat $h \\le t_{\\text{tabung}}$.",
+              "contoh_penerapan": "Air penuh di kerucut ($r = 6\\text{ cm}, t = 15\\text{ cm}$) dituang ke tabung ($R = 6\\text{ cm}$) mencapai tinggi **$\\frac{\\frac{1}{3}\\pi(6^2)(15)}{\\pi(6^2)} = 5\\text{ cm}$**."
+            },
+            {
+              "judul_poin": "Kenaikan Tinggi Air Saat Benda Padat Dicelupkan",
+              "penjelasan_singkat": "Jika benda tenggelam penuh tanpa air tumpah, kenaikan tinggi airnya adalah $\\Delta h = \\frac{V_{\\text{benda}}}{L_{\\text{alas wadah}}}$.",
+              "contoh_penerapan": "Bola besi volume $300\\text{ cm}^3$ tenggelam di wadah beralas $150\\text{ cm}^2$ menaikkan air setinggi **$\\frac{300}{150} = 2\\text{ cm}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Benda Berongga, Massa Jenis, & Pembulatan Material",
+          "butir": [
+            {
+              "judul_poin": "Volume Bahan Pipa atau Silinder Berongga",
+              "penjelasan_singkat": "Kurangkan volume rongga dari volume silinder luar: $V_{\\text{bahan}} = \\pi (R^2 - r^2) t$ dengan $R > r$.",
+              "contoh_penerapan": "Pipa beton panjang $100\\text{ cm}$, $R = 10\\text{ cm}$, $r = 8\\text{ cm}$ punya volume bahan **$\\pi(10^2 - 8^2)(100) = 3.600\\pi\\text{ cm}^3$**."
+            },
+            {
+              "judul_poin": "Massa Total Benda dari Massa Jenis Bahan",
+              "penjelasan_singkat": "Kalikan massa jenis dengan volume bahan murni: $m = \\rho \\times V_{\\text{bahan}}$. Pastikan satuan volume dan $\\rho$ sudah sama.",
+              "contoh_penerapan": "Logam volume $2.000\\text{ cm}^3$ dengan massa jenis $\\rho = 7,5\\text{ g/cm}^3$ punya massa **$7,5 \\times 2.000 = 15.000\\text{ g} = 15\\text{ kg}$**."
+            },
+            {
+              "judul_poin": "Kebutuhan Kemasan Cat atau Dus Keramik Minimum",
+              "penjelasan_singkat": "Bagi total luas dengan daya sebar kemasan, lalu bulatkan ke atas: $N_{\\text{beli}} = \\lceil \\frac{L_{\\text{total}}}{L_{\\text{kemasan}}} \\rceil$.",
+              "contoh_penerapan": "Dinding seluas $52\\text{ m}^2$ dicat memakai kaleng berdaya sebar $12\\text{ m}^2$/kaleng butuh **$\\lceil \\frac{52}{12} \\rceil = \\lceil 4,33 \\rceil = 5$ kaleng**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pm-03-03",
+      "judul_subbab": "Kesebangunan pada Bayangan dan Peta",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "Dua segitiga dikatakan sebangun jika sudut-sudut yang bersesuaian sama besar. Akibatnya, perbandingan sisi yang bersesuaian selalu tetap:\n- **Bayangan Matahari & Cermin Datar:** $\\frac{T_{\\text{objek}}}{T_{\\text{acuan}}} = \\frac{B_{\\text{objek}}}{B_{\\text{acuan}}}$ dan $\\frac{T_{\\text{objek}}}{d_{\\text{objek}}} = \\frac{h_{\\text{mata}}}{d_{\\text{pengamat}}}$.\n- **Bayangan di Bawah Lampu Jalan:** $\\frac{s}{x + s} = \\frac{h_{\\text{orang}}}{H_{\\text{tiang}}}$.\n- **Lebar Sungai dengan Patok:** Dua segitiga siku-siku bertolak belakang menghasilkan $\\frac{L_{\\text{sungai}}}{d_{\\text{tepi}}} = \\frac{a_1}{a_2}$.\n- **Lensa Kamera & Proyektor:** $\\frac{h_{\\text{bayangan}}}{f} = \\frac{H_{\\text{objek}}}{d_{\\text{objek}}}$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Mengukur Tinggi dengan Bayangan & Cermin",
+          "butir": [
+            {
+              "judul_poin": "Bayangan Matahari di Waktu yang Sama",
+              "penjelasan_singkat": "Pada jam yang sama, sudut sinar matahari sama untuk semua benda sehingga rasio tinggi dan bayangannya tetap: $\\frac{T_1}{B_1} = \\frac{T_2}{B_2}$.",
+              "contoh_penerapan": "Tongkat $2\\text{ m}$ berbayangan $1,5\\text{ m}$ saat gedung berbayangan $12\\text{ m}$. Tinggi gedungnya **$\\frac{2}{1,5} \\times 12 = 16\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Pantulan Cermin Datar di Tanah",
+              "penjelasan_singkat": "Sudut datang sama dengan sudut pantul membentuk dua segitiga siku-siku sebangun: $\\frac{T_{\\text{objek}}}{d_{\\text{objek}}} = \\frac{h_{\\text{mata}}}{d_{\\text{pengamat}}}$.",
+              "contoh_penerapan": "Pengamat bermata setinggi $1,6\\text{ m}$ berdiri $2\\text{ m}$ dari cermin. Puncak pohon berjarak $10\\text{ m}$ dari cermin terlihat pas, jadi tinggi pohon **$8\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Bayangan Diam di Bawah Lampu Jalan",
+              "penjelasan_singkat": "Segitiga orang-bayangan menumpuk di dalam segitiga tiang-bayangan: $\\frac{s}{x + s} = \\frac{h_{\\text{orang}}}{H_{\\text{tiang}}}$.",
+              "contoh_penerapan": "Orang setinggi $1,5\\text{ m}$ berdiri $3\\text{ m}$ dari tiang lampu $4,5\\text{ m}$. Panjang bayangannya **$s = 1,5\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Kecepatan Bayangan Saat Berjalan",
+              "penjelasan_singkat": "Saat orang menjauhi tiang dengan kecepatan $v$, bayangan memanjang dengan laju $v_s = \\frac{h}{H-h}v$, sedangkan ujung bayangan melaju $v_{\\text{ujung}} = \\frac{H}{H-h}v$.",
+              "contoh_penerapan": "Tiang $6\\text{ m}$, orang $1,5\\text{ m}$ berjalan $3\\text{ m/s}$ menjauhi tiang. Panjang bayangannya bertambah **$v_s = \\frac{1,5}{4,5} \\times 3 = 1\\text{ m/s}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Mengukur Lebar Sungai & Jarak Tak Terjangkau",
+          "butir": [
+            {
+              "judul_poin": "Dua Segitiga Siku-Siku Bertolak Belakang",
+              "penjelasan_singkat": "Dua garis lurus berpotongan di satu patok membentuk sudut bertolak belakang sama besar: $\\frac{L_{\\text{sungai}}}{d_{\\text{tepi}}} = \\frac{a_1}{a_2}$.",
+              "contoh_penerapan": "Diketahui $a_1 = 12\\text{ m}$, $a_2 = 4\\text{ m}$, dan jarak patok tegak lurus $d_{\\text{tepi}} = 5\\text{ m}$. Lebar sungainya **$L = 15\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Segitiga Bertumpuk Garis Sejajar (Trapesium)",
+              "penjelasan_singkat": "Dua baris patok sejajar tepi sungai memotong segitiga besar: $\\frac{L_{\\text{sungai}}}{L_{\\text{sungai}} + d} = \\frac{p_{\\text{pendek}}}{p_{\\text{panjang}}}$.",
+              "contoh_penerapan": "Rentang patok depan $6\\text{ m}$, patok belakang $9\\text{ m}$, dan jarak antarbaris $d = 4\\text{ m}$. Lebar sungainya **$L = 8\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Dua Sudut Elevasi Tanpa Mendekat Penuh",
+              "penjelasan_singkat": "Dua titik pengamatan berjarak $d$ dengan sudut pandang $\\alpha$ dan $\\beta$ memberi tinggi objek $T = \\frac{d}{\\cot\\alpha - \\cot\\beta}$.",
+              "contoh_penerapan": "Sudut pandang puncak menara naik dari $30^\\circ$ ke $45^\\circ$ setelah maju $20\\text{ m}$. Tinggi menaranya **$\\frac{20}{\\sqrt{3}-1} = 10(\\sqrt{3}+1)\\text{ m}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Optik Kamera, Proyektor, dan Skala Peta",
+          "butir": [
+            {
+              "judul_poin": "Perbandingan Lensa Kamera ke Sensor",
+              "penjelasan_singkat": "Cahaya lurus lewat pusat lensa membentuk dua segitiga sebangun: $\\frac{h_{\\text{sensor}}}{f} = \\frac{H_{\\text{objek}}}{d_{\\text{objek}}}$.",
+              "contoh_penerapan": "Lensa fokus $50\\text{ mm}$ memotret gedung $30\\text{ m}$ dari jarak $100\\text{ m}$. Tinggi bayangan di sensor **$15\\text{ mm}$**."
+            },
+            {
+              "judul_poin": "Pembesaran Gambar di Layar Proyektor",
+              "penjelasan_singkat": "Lebar gambar di layar berbanding lurus dengan jarak layar ke lensa: $\\frac{L_{\\text{layar}}}{L_{\\text{slide}}} = \\frac{d_{\\text{layar}}}{d_{\\text{lensa}}}$.",
+              "contoh_penerapan": "*Slide* lebar $3\\text{ cm}$ berjarak $15\\text{ cm}$ dari lensa ditembakkan ke layar berjarak $6\\text{ m}$. Lebar gambarnya **$1,2\\text{ m}$**."
+            },
+            {
+              "judul_poin": "Skala Peta untuk Jarak dan Luas",
+              "penjelasan_singkat": "Pada peta berskala $1 : k$, perbandingan jarak adalah $\\frac{1}{k}$, sedangkan perbandingan luasnya adalah $\\frac{1}{k^2}$.",
+              "contoh_penerapan": "Pada peta $1 : 20.000$, luas danau adalah $5\\text{ cm}^2$. Luas aslinya **$5 \\times (20.000)^2\\text{ cm}^2 = 20\\text{ hektare}$**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pm-03-04",
+      "judul_subbab": "Pengukuran Waktu, Zona Waktu, Jadwal Siklik, dan Rute",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Konversi Zona Waktu:** $\\text{Waktu Tujuan} = \\text{Waktu Asal} + \\text{Durasi} + (\\text{UTC}_{\\text{Tujuan}} - \\text{UTC}_{\\text{Asal}})$. Bergerak ke timur ditambah ($+$), ke barat dikurangi ($-$).\n- **Zona Indonesia:** $\\text{WIB}$ ($\\text{UTC}+7$), $\\text{WITA}$ ($\\text{UTC}+8$), dan $\\text{WIT}$ ($\\text{UTC}+9$).\n- **Durasi Multi-Transit:** Jumlahkan dulu semua waktu terbang dan transit di satu zona waktu yang sama, baru konversi di akhir.\n- **Jadwal Siklik:** Jadwal bertemu lagi mengikuti $\\text{KPK}$ periode. Untuk mencari nama harinya, cukup ambil sisa bagi $\\text{KPK}$ terhadap $7$.\n- **Optimasi Rute:** Dahulukan lokasi dengan jam tutup paling ketat, baru cari rute dengan total waktu tersingkat.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Konversi Zona Waktu Nasional dan Internasional",
+          "butir": [
+            {
+              "judul_poin": "Beda Zona Waktu Indonesia ($\\text{WIB}, \\text{WITA}, \\text{WIT}$)",
+              "penjelasan_singkat": "Tiap zona berselisih $1\\text{ jam}$. Semakin ke timur jam semakin maju ($+$), semakin ke barat semakin mundur ($-$).",
+              "contoh_penerapan": "Rapat daring pukul $09.00\\text{ WIB}$ berarti dimulai bersamaan pada pukul **$10.00\\text{ WITA}$** dan **$11.00\\text{ WIT}$**."
+            },
+            {
+              "judul_poin": "Rumus Umum Lintas Zona $\\text{UTC}$",
+              "penjelasan_singkat": "Pakai rumus $T_{\\text{tujuan}} = T_{\\text{asal}} + \\Delta t_{\\text{tempuh}} + (\\text{UTC}_{\\text{tujuan}} - \\text{UTC}_{\\text{asal}})$. Ingat, zona barat bernilai negatif ($-$).",
+              "contoh_penerapan": "Terbang dari Jakarta ($\\text{UTC}+7$) pukul $10.00$ selama $14\\text{ jam}$ ke London ($\\text{UTC}+0$) tiba pukul **$17.00\\text{ waktu London}$**."
+            },
+            {
+              "judul_poin": "Aturan Ganti Hari di Batas Pukul $24.00$",
+              "penjelasan_singkat": "Jika hasil hitungan $\\ge 24.00$, kurangi $24\\text{ jam}$ dan maju $1\\text{ hari}$. Jika $< 00.00$, tambah $24\\text{ jam}$ dan mundur $1\\text{ hari}$.",
+              "contoh_penerapan": "Pukul $02.00\\text{ WIB}$ hari Selasa diubah ke New York ($\\text{UTC}-5$, selisih $-12\\text{ jam}$) menjadi **$14.00\\text{ hari Senin}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Durasi Perjalanan Multi-Transit",
+          "butir": [
+            {
+              "judul_poin": "Samakan Zona Waktu Sebelum Hitung Durasi",
+              "penjelasan_singkat": "Ubah dulu jam berangkat dan jam tiba ke satu zona $\\text{UTC}$ yang sama, baru cari selisih waktunya.",
+              "contoh_penerapan": "Berangkat $08.00\\text{ WIB}$ ($\\text{UTC}+7$) dan tiba $15.00\\text{ WIT}$ ($\\text{UTC}+9$ atau $13.00\\text{ WIB}$). Jadi, durasi totalnya **$5\\text{ jam}$**."
+            },
+            {
+              "judul_poin": "Memecah Waktu Terbang dan Jeda Transit",
+              "penjelasan_singkat": "Total perjalanan adalah $T_{\\text{total}} = \\sum t_{\\text{terbang}} + \\sum t_{\\text{transit}}$. Jeda transit cukup dihitung dari jam tiba sampai berangkat di bandara yang sama.",
+              "contoh_penerapan": "Terbang $2\\text{ jam}$, transit $1\\text{ jam } 30\\text{ menit}$, lalu terbang lagi $3\\text{ jam}$. Total durasi perjalanan = **$6\\text{ jam } 30\\text{ menit}$**."
+            },
+            {
+              "judul_poin": "Hitung Mundur dari Batas Jam Tiba",
+              "penjelasan_singkat": "Untuk mencari jam berangkat maksimal, balik rumusnya: $T_{\\text{berangkat}} = T_{\\text{tiba}} - T_{\\text{total}} - (\\text{UTC}_{\\text{tujuan}} - \\text{UTC}_{\\text{asal}})$.",
+              "contoh_penerapan": "Rapat di Makassar pukul $13.00\\text{ WITA}$ ($12.00\\text{ WIB}$). Dengan lama terbang $2\\text{ jam } 30\\text{ menit}$, kamu wajib berangkat dari Jakarta maksimal **$09.30\\text{ WIB}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Jadwal Siklik, KPK, dan Sisa Bagi (Modulo)",
+          "butir": [
+            {
+              "judul_poin": "Jadwal Bertemu Lagi Pakai $\\text{KPK}$",
+              "penjelasan_singkat": "Beberapa kegiatan dengan jeda waktu $p_1, p_2, \\dots, p_n$ akan bertemu bersamaan lagi setiap kelipatan persekutuan terkecilnya: $\\text{KPK}(p_1, p_2, \\dots, p_n)$.",
+              "contoh_penerapan": "Bus A berangkat tiap $15\\text{ menit}$ dan Bus B tiap $20\\text{ menit}$ mulai $06.00$. Karena $\\text{KPK}(15, 20) = 60$, keduanya bertemu lagi pukul **$07.00$**."
+            },
+            {
+              "judul_poin": "Cari Nama Hari dengan Sisa Bagi $7$",
+              "penjelasan_singkat": "Karena $1\\text{ minggu} = 7\\text{ hari}$, cukup bagi $\\text{KPK}$ dengan $7$, lalu geser hari awal maju sesuai sisa baginya: $(H + \\text{KPK}) \\pmod{7}$.",
+              "contoh_penerapan": "Patroli bareng hari Rabu dengan $\\text{KPK} = 24\\text{ hari}$. Karena $24$ dibagi $7$ bersisa $3$, geser $3\\text{ hari}$ setelah Rabu menjadi hari **Sabtu**."
+            },
+            {
+              "judul_poin": "Cari Jam Pertemuan dengan Sisa Bagi $24$",
+              "penjelasan_singkat": "Untuk siklus jam, cari $(J_{\\text{awal}} + \\text{KPK}) \\pmod{24}$ untuk jamnya, dan hasil bagi bulat $\\lfloor \\frac{J_{\\text{awal}} + \\text{KPK}}{24} \\rfloor$ untuk tambahan harinya.",
+              "contoh_penerapan": "Mesin dicek bareng pukul $14.00$ dengan $\\text{KPK} = 30\\text{ jam}$. Totalnya $14 + 30 = 44\\text{ jam} = 1\\text{ hari } 20\\text{ jam}$, jadi bertemu lagi pukul **$20.00$ esoknya**."
+            },
+            {
+              "judul_poin": "Siklus dengan Jam Mulai Berbeda (*Offset*)",
+              "penjelasan_singkat": "Jika dua kegiatan tidak mulai bersamaan, daftar dulu kelipatan waktunya masing-masing sampai ketemu titik temu pertama.",
+              "contoh_penerapan": "Lampu A nyala tiap $4\\text{ menit}$ mulai $08.00$ ($08.00, 08.04, 08.08$), lampu B tiap $6\\text{ menit}$ mulai $08.02$ ($08.02, 08.08$). Keduanya bareng pukul **$08.08$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Optimasi Rute dan Batas Jam Operasional",
+          "butir": [
+            {
+              "judul_poin": "Dahulukan Lokasi dengan Jam Tutup Terketat",
+              "penjelasan_singkat": "Kunjungi dulu tempat yang tutup paling awal selama waktunya masih terkejar, baru urutkan sisanya untuk menghemat waktu.",
+              "contoh_penerapan": "Kurir pukul $15.00$ wajib ke **Kantor Pos (tutup $16.00$)** dulu ketimbang Gudang (tutup $20.00$), meski Gudang lebih dekat."
+            },
+            {
+              "judul_poin": "Hitung Waktu Tunggu Jika Tiba Kepagian",
+              "penjelasan_singkat": "Kalau kurir tiba sebelum jam buka $B_i$, jam selesai layanan dihitung dari $B_i + t_{\\text{layanan}}$, bukan dari jam tiba.",
+              "contoh_penerapan": "Tiba di bank pukul $07.45$, padahal bank baru buka $08.00$ dengan layanan $15\\text{ menit}$. Kurir baru bisa jalan lagi pukul **$08.15$**."
+            },
+            {
+              "judul_poin": "Cek Rute Valid dan Total Batas Waktu",
+              "penjelasan_singkat": "Rute dianggap valid jika $T_{\\text{tiba}, i} \\le T_{\\text{tutup}, i}$ di semua titik dan total waktu (jalan + layanan + tunggu) $\\le T_{\\text{maks}}$.",
+              "contoh_penerapan": "Antara dua rute valid A–B–C ($95\\text{ menit}$) dan B–A–C ($85\\text{ menit}$), pilih **B–A–C** karena menghemat **$10\\text{ menit}$**."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

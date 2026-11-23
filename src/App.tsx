@@ -30,6 +30,7 @@ import { AboutPage } from './pages/AboutPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
 import { ContactPage } from './pages/ContactPage';
+import { RangkumanPage } from './pages/RangkumanPage';
 
 interface AppProps {
   initialMaterial?: Material | ThreeZoneMaterial | null;
@@ -453,7 +454,8 @@ export default function App({ initialMaterial }: AppProps) {
 
   const isDrillingView = location.pathname.startsWith('/drilling');
   const isMateriView = location.pathname.startsWith('/materi');
-  const isAmbientThemeView = !isDrillingView && !isMateriView;
+  const isRangkumanView = location.pathname.startsWith('/rangkuman');
+  const isAmbientThemeView = !isDrillingView && !isMateriView && !isRangkumanView;
   const isDark = theme === 'dark';
 
   return (
@@ -507,6 +509,26 @@ export default function App({ initialMaterial }: AppProps) {
                 onToggleTheme={toggleTheme}
                 initialMaterial={initialMaterial}
               />
+            }
+          />
+
+          {/* 3.5 Rangkuman Bab / Cheat Sheet (Pass-5) */}
+          <Route
+            path="/rangkuman"
+            element={
+              <>
+                <RangkumanPage theme={theme} onToggleTheme={toggleTheme} />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/rangkuman/:babId"
+            element={
+              <>
+                <RangkumanPage theme={theme} onToggleTheme={toggleTheme} />
+                <Footer />
+              </>
             }
           />
 

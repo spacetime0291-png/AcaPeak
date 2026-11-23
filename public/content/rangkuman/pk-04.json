@@ -1,0 +1,251 @@
+{
+  "kode_bab": "pk-04",
+  "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+  "bab": "Bab 4: Statistika Dasar",
+  "batch_model": "neon",
+  "jumlah_subbab": 3,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pk-04-01",
+      "judul_subbab": "Ukuran Pemusatan (Mean, Median, Modus)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Mean ($\\bar{x}$):** Rata-rata seluruh data ($\\bar{x} = \\frac{\\sum x_i}{n}$). Di UTBK, rumus ini paling sering dibalik jadi $\\sum x_i = n \\cdot \\bar{x}$ untuk mencari total data.\\n- **Median ($Me$):** Nilai tengah setelah data diurutkan dari terkecil ke terbesar. Jika $n$ ganjil, ambil data ke-$\\frac{n+1}{2}$. Jika $n$ genap, ambil rata-rata data ke-$\\frac{n}{2}$ dan ke-$(\\frac{n}{2}+1)$.\\n- **Modus ($Mo$):** Nilai yang paling sering muncul. Satu kumpulan data bisa punya satu modus (tunggal), lebih dari satu, atau tidak punya modus sama sekali.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Aljabar Mean & Hubungan Kelompok Data",
+          "butir": [
+            {
+              "judul_poin": "Ubah Mean Jadi Total Data untuk Cari Variabel Hilang",
+              "penjelasan_singkat": "Selalu ubah rata-rata menjadi total jumlah data memakai $\\sum x_i = n \\cdot \\bar{x}$ sebelum mencari nilai variabel.",
+              "contoh_penerapan": "Rata-rata dari $4, 7, x, 9$ adalah $7$. Maka $4 + 7 + x + 9 = 4 \\times 7 = 28$, sehingga **$x = 8$**."
+            },
+            {
+              "judul_poin": "Rata-Rata Gabungan Dua Kelompok Data",
+              "penjelasan_singkat": "Jika kelompok $n_1$ (mean $\\bar{x}_1$) digabung dengan $n_2$ (mean $\\bar{x}_2$), maka $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1 + n_2}$.",
+              "contoh_penerapan": "Kelas A ($20$ siswa, mean $80$) digabung Kelas B ($30$ siswa, mean $70$). Hasilnya **$\\bar{x}_{\\text{gab}} = \\frac{1600+2100}{50} = 74$**."
+            },
+            {
+              "judul_poin": "Trik Selisih Nol terhadap Mean",
+              "penjelasan_singkat": "Jumlah selisih setiap angka terhadap rata-ratanya selalu nol: $\\sum (x_i - \\bar{x}) = 0$.",
+              "contoh_penerapan": "Data $72, 76, 83, x$ punya mean $75$. Selisihnya $(-3) + (+1) + (+8) + (x - 75) = 0$, jadi **$x = 69$**."
+            },
+            {
+              "judul_poin": "Efek Kali, Bagi, Tambah, Kurang pada Semua Data",
+              "penjelasan_singkat": "Jika tiap data diubah menjadi $ax_i + b$, maka Mean, Median, dan Modus ikut berubah persis sama: dikali $a$ lalu ditambah $b$.",
+              "contoh_penerapan": "Data dengan $\\bar{x} = 12$ dan $Me = 10$ dikali $2$ lalu dikurangi $3$. Hasilnya **$\\bar{x}_{\\text{baru}} = 21$** dan **$Me_{\\text{baru}} = 17$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tabel Frekuensi, Diagram Batang, & Syarat Gabungan",
+          "butir": [
+            {
+              "judul_poin": "Mean Berbobot pada Tabel dan Diagram Batang",
+              "penjelasan_singkat": "Kalikan setiap nilai $x_i$ dengan frekuensinya $f_i$, lalu bagi dengan total seluruh frekuensi: $\\bar{x} = \\frac{\\sum (f_i \\cdot x_i)}{\\sum f_i}$.",
+              "contoh_penerapan": "Nilai $6$ ($f=2$), $8$ ($f=3$), dan $10$ ($f=5$) punya mean **$\\bar{x} = \\frac{12 + 24 + 50}{2+3+5} = 8,6$**."
+            },
+            {
+              "judul_poin": "Cari Median Pakai Frekuensi Kumulatif",
+              "penjelasan_singkat": "Urutkan nilai dari terkecil, jumlahkan frekuensinya bertahap ($F_k$), lalu cek posisi data ke-$\\frac{n+1}{2}$ (ganjil) atau dua data tengah (genap).",
+              "contoh_penerapan": "Dari $n = 20$ data terurut ($F_k$ nilai $7$ sampai ke-$9$, nilai $8$ sampai ke-$15$), **$Me = \\frac{x_{10}+x_{11}}{2} = 8$**."
+            },
+            {
+              "judul_poin": "Memadukan Syarat Modus Tunggal, Median, dan Mean",
+              "penjelasan_singkat": "Pakai syarat modus tunggal ($Mo$) untuk mengunci minimal dua angka kembar, lalu atur posisinya agar cocok dengan $Me$ dan $\\bar{x}$.",
+              "contoh_penerapan": "Empat bilangan bulat punya $Mo = 6$, $Me = 7$, dan $\\bar{x} = 8$. Susunan terurutnya adalah **$6, 6, 8, 12$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Trik Nilai Maksimum/Minimum & Ketahanan Pencilan",
+          "butir": [
+            {
+              "judul_poin": "Memaksimalkan Angka Terbesar dalam Urutan Data",
+              "penjelasan_singkat": "Susun $x_1 \\le x_2 \\le \\dots \\le x_n$. Agar $x_n$ paling besar saat $\\bar{x}$ dan $Me$ tetap, tekan semua angka lain sekecil mungkin.",
+              "contoh_penerapan": "Lima bilangan bulat positif berbeda berata-rata $10$ (total $50$) dengan $Me = 8$. Tekan empat data awal jadi $1, 2, 8, 9$, maka **$x_5 = 30$**."
+            },
+            {
+              "judul_poin": "Meminimalkan Angka Terbesar atau Memaksimalkan Angka Terkecil",
+              "penjelasan_singkat": "Agar $x_n$ sekecil mungkin (atau $x_1$ sebesar mungkin), rapatkan jarak antarangka sedekat mungkin ke median atau mean.",
+              "contoh_penerapan": "Empat bilangan bulat berbeda berjumlah $30$ dengan $Me = 7$. Agar $x_4$ minimum, pilih $x_2=6, x_3=8, x_1=5$, sehingga **$x_4 = 11$**."
+            },
+            {
+              "judul_poin": "Kenapa Median Lebih Tahan Pencilan (Outlier) dibanding Mean",
+              "penjelasan_singkat": "Median tahan (*robust*) terhadap angka ekstrem (*outlier*), sedangkan mean sangat sensitif dan langsung tertarik ke arah angka ekstrem tersebut.",
+              "contoh_penerapan": "Data $4, 5, 6, 7, 8$ ($\\bar{x}=6, Me=6$) ditambah pencilan $90$: **$\\bar{x}$ melonjak ke $20$**, sedangkan **$Me$ cuma bergeser ke $6,5$**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-04-02",
+      "judul_subbab": "Ukuran Penyebaran (Jangkauan, Kuartil, Simpangan)",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "- **Jangkauan ($R$):** Selisih data terbesar dan terkecil, $R = x_{\\max} - x_{\\min}$.\n- **Kuartil & Hamparan ($H$):** Urutkan data dulu. $Q_2$ adalah median, $Q_1$ median paruh bawah, $Q_3$ median paruh atas, dan $H = Q_3 - Q_1$.\n- **Simpangan Rata-rata ($SR$), Ragam ($s^2$), dan Simpangan Baku ($s$):**\n$$SR = \\frac{\\sum |x_i - \\bar{x}|}{n}, \\quad s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}, \\quad s = \\sqrt{s^2}$$\n- **Efek Operasi $y = ax + b$:** Konstanta $b$ selalu diabaikan. Untuk $R, H, Q_d, SR,$ dan $s$, nilainya dikali $|a|$. Khusus **ragam ($s^2$)**, nilainya dikali $a^2$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Jangkauan, Kuartil, dan Mencari Data yang Hilang",
+          "butir": [
+            {
+              "judul_poin": "Jangkauan Data Tunggal ($R$)",
+              "penjelasan_singkat": "Selisih nilai terbesar dan terkecil setelah data diurutkan: $R = x_{\\max} - x_{\\min}$, dengan syarat $R \\ge 0$.",
+              "contoh_penerapan": "Data terurut $4, 6, 7, 10, 15$ punya jangkauan **$R = 15 - 4 = 11$**."
+            },
+            {
+              "judul_poin": "Gabungan Jangkauan, Mean, dan Median",
+              "penjelasan_singkat": "Padukan tiga kunci: total data $\\sum x_i = n\\bar{x}$, selisih ujung $x_n - x_1 = R$, dan posisi tengah median.",
+              "contoh_penerapan": "Tiga bilangan berjangkauan $9$, median $6$, dan mean $7$ pasti berurutan **$3, 6, 12$**."
+            },
+            {
+              "judul_poin": "Menentukan Kuartil ($Q_1, Q_2, Q_3$) Data Tunggal",
+              "penjelasan_singkat": "Urutkan data lalu cari $Q_2$ (median). Setelah itu, cari median paruh bawah ($Q_1$) dan median paruh atas ($Q_3$).",
+              "contoh_penerapan": "Data $2, 4, 5, 7, 8, 10, 12$ punya $Q_2 = 7$, **$Q_1 = 4$**, dan **$Q_3 = 10$**."
+            },
+            {
+              "judul_poin": "Hamparan ($H$) dan Simpangan Kuartil ($Q_d$)",
+              "penjelasan_singkat": "Jangkauan antarkuartil (hamparan) adalah $H = Q_3 - Q_1$, sedangkan simpangan kuartilnya $Q_d = \\frac{1}{2}(Q_3 - Q_1)$.",
+              "contoh_penerapan": "Jika $Q_1 = 4$ dan $Q_3 = 10$, maka hamparan **$H = 6$** dan **$Q_d = 3$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Simpangan Rata-Rata, Ragam, dan Simpangan Baku",
+          "butir": [
+            {
+              "judul_poin": "Simpangan Rata-Rata ($SR$)",
+              "penjelasan_singkat": "Rata-rata jarak mutlak tiap data ke meannya: $SR = \\frac{\\sum |x_i - \\bar{x}|}{n}$ untuk $n \\ge 1$.",
+              "contoh_penerapan": "Data $2, 4, 6$ ($\\bar{x} = 4$) punya **$SR = \\frac{|2-4|+|4-4|+|6-4|}{3} = \\frac{4}{3}$**."
+            },
+            {
+              "judul_poin": "Ragam ($s^2$) dan Simpangan Baku ($s$)",
+              "penjelasan_singkat": "Ragam adalah rata-rata kuadrat selisih $s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}$, lalu simpangan bakunya $s = \\sqrt{s^2}$.",
+              "contoh_penerapan": "Data $2, 4, 6$ ($\\bar{x} = 4$) punya ragam **$s^2 = \\frac{4+0+4}{3} = \\frac{8}{3}$** dan **$s = \\frac{2}{3}\\sqrt{6}$**."
+            },
+            {
+              "judul_poin": "Rumus Alternatif Ragam (Untuk Mean Pecahan)",
+              "penjelasan_singkat": "Pakai rumus $s^2 = \\frac{\\sum x_i^2}{n} - (\\bar{x})^2$ jika nilai meannya berupa pecahan agar tidak repot mengkuadratkan selisih pecahan.",
+              "contoh_penerapan": "Data $1, 2, 4$ punya $\\sum x_i^2 = 21$ dan $\\bar{x} = \\frac{7}{3}$, maka **$s^2 = \\frac{21}{3} - \\frac{49}{9} = \\frac{14}{9}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Efek Ubah Data ($y = ax + b$) & Bandingkan Sebaran Cepat",
+          "butir": [
+            {
+              "judul_poin": "Efek $y = ax + b$ pada $R, H, Q_d, SR,$ dan $s$",
+              "penjelasan_singkat": "Semua ukuran sebaran non-kuadrat ($R, H, Q_d, SR, s$) cukup dikalikan $|a|$, sedangkan konstanta $b$ diabaikan.",
+              "contoh_penerapan": "Jika $s_x = 4$ dan data diubah jadi $y = -3x + 10$, maka **$s_y = |-3| \\times 4 = 12$**."
+            },
+            {
+              "judul_poin": "Efek $y = ax + b$ pada Ragam ($s^2$)",
+              "penjelasan_singkat": "Karena ragam adalah hasil kuadrat, faktor pengalinya ikut dikuadratkan menjadi $s_y^2 = a^2 s_x^2$ (konstanta $b$ tetap diabaikan).",
+              "contoh_penerapan": "Jika $s_x^2 = 5$ dan $y = 2x - 7$, maka ragam barunya **$s_y^2 = 2^2 \\times 5 = 20$**."
+            },
+            {
+              "judul_poin": "Efek Tambah atau Kurang Konstanta (Data Bergeser)",
+              "penjelasan_singkat": "Menambah atau mengurangi semua data dengan angka tetap $k$ tidak mengubah nilai $R, H, SR, s^2,$ maupun $s$.",
+              "contoh_penerapan": "Simpangan baku dari $102, 105, 108$ **sama persis** dengan simpangan baku dari $2, 5, 8$."
+            },
+            {
+              "judul_poin": "Tebak Simpangan Baku Terkecil Tanpa Menghitung",
+              "penjelasan_singkat": "Simpangan baku bernilai nol ($s = 0$) jika semua data sama, dan makin kecil saat angka-angkanya rapat di dekat mean.",
+              "contoh_penerapan": "Antara $A = \\{4, 5, 6\\}$ dan $B = \\{1, 5, 9\\}$, simpangan baku terkecil milik **$A$ karena jaraknya lebih rapat**."
+            },
+            {
+              "judul_poin": "Tebak Simpangan Baku Terbesar (Menumpuk di Ujung)",
+              "penjelasan_singkat": "Untuk banyak data dan jangkauan yang sama, simpangan baku terbesar muncul saat data menumpuk di dua ujung ekstrem.",
+              "contoh_penerapan": "Antara $P = \\{1, 5, 5, 9\\}$ dan $Q = \\{1, 1, 9, 9\\}$, simpangan baku terbesar milik **$Q$ karena menumpuk di ujung**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pk-04-03",
+      "judul_subbab": "Perubahan Data dan Gabungan Rata-Rata",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Rata-rata Gabungan:** $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2 + n_3\\bar{x}_3}{n_1 + n_2 + n_3}$.\n- **Perubahan & Koreksi Data:** Total nilai berubah sebesar $\\Delta \\Sigma x = n \\cdot \\Delta \\bar{x}$, dengan $\\Sigma x_{\\text{baru}} = \\Sigma x_{\\text{lama}} - x_{\\text{salah/keluar}} + x_{\\text{benar/masuk}}$.\n- **Ubah Semua Data ($y_i = ax_i + b$):**\n  - **Ukuran Pemusatan** (mean, median, modus, kuartil) ikut semua operasi: $\\text{Baru} = a \\cdot \\text{Lama} + b$.\n  - **Ukuran Penyebaran** (jangkauan, simpangan) abaikan $+b$: $\\text{Baru} = |a| \\cdot \\text{Lama}$. Khusus **varians**, kalikan dengan $a^2$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Rata-Rata Gabungan dan Perbandingan Anggota",
+          "butir": [
+            {
+              "judul_poin": "Rata-Rata Gabungan Dua Kelompok",
+              "penjelasan_singkat": "Jumlahkan total nilai kedua kelompok lalu bagi total anggotanya: $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1 + n_2}$, syarat $n_1, n_2 > 0$.",
+              "contoh_penerapan": "Kelas A ($n=20$, $\\bar{x}=75$) digabung kelas B ($n=30$, $\\bar{x}=85$). Hasilnya **$\\bar{x}_{\\text{gab}} = \\frac{20(75)+30(85)}{50} = 81$**."
+            },
+            {
+              "judul_poin": "Rata-Rata Gabungan Tiga Kelompok",
+              "penjelasan_singkat": "Prinsipnya sama persis, tinggal tambah kelompok ketiga: $\\bar{x}_{\\text{gab}} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2 + n_3\\bar{x}_3}{n_1 + n_2 + n_3}$.",
+              "contoh_penerapan": "Tiga tim berisi $2, 3,$ dan $5$ orang dengan rata-rata $70, 80,$ dan $90$. Hasilnya **$\\bar{x}_{\\text{gab}} = \\frac{140+240+450}{10} = 83$**."
+            },
+            {
+              "judul_poin": "Rasio Anggota Pakai Selisih Silang",
+              "penjelasan_singkat": "Perbandingan jumlah anggota berbanding terbalik dengan jarak rata-ratanya ke gabungan: $\\frac{n_1}{n_2} = \\frac{|\\bar{x}_2 - \\bar{x}_{\\text{gab}}|}{|\\bar{x}_1 - \\bar{x}_{\\text{gab}}|}$.",
+              "contoh_penerapan": "Rata-rata pria $72$, wanita $80$, dan gabungan $75$. Rasionya **$\\frac{n_{\\text{pria}}}{n_{\\text{wanita}}} = \\frac{|80-75|}{|72-75|} = \\frac{5}{3}$**."
+            },
+            {
+              "judul_poin": "Rata-Rata Sisa Setelah Sebagian Keluar",
+              "penjelasan_singkat": "Kurangi total nilai awal dengan total nilai yang keluar, lalu bagi sisa anggota: $\\bar{x}_2 = \\frac{n_{\\text{tot}}\\bar{x}_{\\text{tot}} - n_1\\bar{x}_1}{n_{\\text{tot}} - n_1}$, syarat $n_{\\text{tot}} > n_1$.",
+              "contoh_penerapan": "Dari $10$ siswa ($\\bar{x}=80$), $4$ siswa berata-rata $86$ keluar. Rata-rata sisanya **$\\frac{800 - 344}{6} = 76$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Perubahan Data dan Koreksi Salah Catat",
+          "butir": [
+            {
+              "judul_poin": "Menambah Satu atau Dua Data Baru",
+              "penjelasan_singkat": "Menambah $k$ data menaikkan pembilang dan penyebut sekaligus: $\\bar{x}_{\\text{baru}} = \\frac{n\\bar{x}_{\\text{lama}} + \\Sigma x_{\\text{masuk}}}{n + k}$, dengan $k \\ge 1$.",
+              "contoh_penerapan": "Rata-rata $4$ ulangan adalah $80$. Setelah nilai kelima $95$ masuk, rata-ratanya jadi **$\\frac{320 + 95}{5} = 83$**."
+            },
+            {
+              "judul_poin": "Membuang Satu atau Beberapa Data",
+              "penjelasan_singkat": "Mengeluarkan $k$ data mengurangi total nilai sekaligus jumlah anggota: $\\bar{x}_{\\text{baru}} = \\frac{n\\bar{x}_{\\text{lama}} - \\Sigma x_{\\text{keluar}}}{n - k}$, syarat $n > k$.",
+              "contoh_penerapan": "Rata-rata $5$ bilangan adalah $12$. Jika bilangan $20$ dibuang, rata-rata sisanya jadi **$\\frac{60 - 20}{4} = 10$**."
+            },
+            {
+              "judul_poin": "Mengganti Data (Jumlah Anggota Tetap)",
+              "penjelasan_singkat": "Karena $n$ tidak berubah, cukup bagi selisih data masuk dan keluar dengan $n$: $\\bar{x}_{\\text{baru}} = \\bar{x}_{\\text{lama}} + \\frac{x_{\\text{masuk}} - x_{\\text{keluar}}}{n}$.",
+              "contoh_penerapan": "Pemain umur $30$ diganti pemain umur $20$ di tim $10$ orang. Rata-rata umur berubah **$\\frac{20-30}{10} = -1$ tahun**."
+            },
+            {
+              "judul_poin": "Koreksi Nilai yang Salah Catat",
+              "penjelasan_singkat": "Memperbaiki salah tulis tidak mengubah jumlah anggota $n$: $\\bar{x}_{\\text{benar}} = \\bar{x}_{\\text{salah}} + \\frac{x_{\\text{benar}} - x_{\\text{salah}}}{n}$.",
+              "contoh_penerapan": "Rata-rata $20$ siswa tercatat $74$, padahal nilai $65$ tertulis $85$. Rata-rata aslinya **$74 + \\frac{65-85}{20} = 73$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Efek Mengubah Semua Data Secara Seragam",
+          "butir": [
+            {
+              "judul_poin": "Ukuran Pemusatan (Mean, Median, Modus, Kuartil)",
+              "penjelasan_singkat": "Jika semua data diubah menjadi $y_i = ax_i + b$, seluruh ukuran pemusatan ikut berubah utuh: $\\text{Baru} = a \\cdot \\text{Lama} + b$.",
+              "contoh_penerapan": "Data bermedian $15$ dikali $2$ lalu dikurangi $3$. Hasilnya **$\\text{Median}_{\\text{baru}} = 2(15) - 3 = 27$**."
+            },
+            {
+              "judul_poin": "Jangkauan dan Simpangan Baku",
+              "penjelasan_singkat": "Pada $y_i = ax_i + b$, jangkauan ($R$), jangkauan antarkuartil ($H$), dan simpangan baku ($s$) hanya dikali $|a|$. Abaikan $+b$.",
+              "contoh_penerapan": "Data berjangkauan $12$ dan simpangan baku $3$ diubah jadi $y_i = -2x_i + 10$. Hasilnya **$R_{\\text{baru}} = |-2|(12) = 24$** dan **$s_{\\text{baru}} = |-2|(3) = 6$**."
+            },
+            {
+              "judul_poin": "Varians atau Ragam Data",
+              "penjelasan_singkat": "Varians ($s^2$) adalah kuadrat dari simpangan baku. Jadi, pada $y_i = ax_i + b$, varians baru menjadi $s_y^2 = a^2 \\cdot s_x^2$.",
+              "contoh_penerapan": "Varians awal $5$. Setelah semua data dikali $3$ dan ditambah $4$, varians barunya **$s_y^2 = 3^2 \\times 5 = 45$**."
+            },
+            {
+              "judul_poin": "Mencari Nilai $a$ dan $b$ dari Dua Ukuran",
+              "penjelasan_singkat": "Untuk mencari $a$ dan $b$ pada $y_i = ax_i + b$, cari $|a|$ dulu dari jangkauan atau simpangan, baru cari $b$ dari rata-rata.",
+              "contoh_penerapan": "Mean $10 \\rightarrow 25$ dan jangkauan $4 \\rightarrow 12$ ($a>0$). Kita dapat **$a = \\frac{12}{4} = 3$**, lalu **$b = 25 - 3(10) = -5$**."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

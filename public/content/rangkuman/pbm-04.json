@@ -1,0 +1,335 @@
+{
+  "kode_bab": "pbm-04",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 4: Penyuntingan Kalimat dan Wacana",
+  "batch_model": "hydrogen",
+  "jumlah_subbab": 4,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pbm-04-01",
+      "judul_subbab": "Perbaikan Kalimat Tidak Efektif dan Ambigu",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Kalimat efektif harus sesuai kaidah **EYD V** dan **KBBI VI** tanpa mengubah makna aslinya:\n- **Struktur Jelas:** Wajib punya pasangan **Subjek [S] + Predikat [P]** yang tegas. Jangan taruh kata depan (*bagi, untuk, dalam, pada*) di depan subjek.\n- **Hemat Kata:** Buang kata bermakna ganda (*agar supaya, sangat sekali*) dan pengulangan subjek.\n- **Logis & Tidak Bermakna Ganda:** Pastikan urutan kata tidak memicu dua tafsir (ambigu) dan hindari kata tanya (*di mana, yang mana*) sebagai kata hubung.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Kejelasan Struktur dan Pengaruh Bahasa Asing",
+          "butir": [
+            {
+              "judul_poin": "Hapus Kata Depan di Awal Subjek",
+              "penjelasan_singkat": "Kata depan seperti bagi, untuk, dalam, atau pada tidak boleh ditaruh sebelum subjek karena mengubahnya menjadi keterangan.",
+              "contoh_penerapan": "**Peserta UTBK** wajib membawa kartu tanda peserta ujian asli saat memasuki ruang tes."
+            },
+            {
+              "judul_poin": "Ganti Kata Hubung 'di mana' dan 'yang mana'",
+              "penjelasan_singkat": "Kata tanya di mana dan yang mana tidak boleh dipakai sebagai kata hubung di tengah kalimat; ganti dengan yang atau tempat.",
+              "contoh_penerapan": "Kami mengunjungi museum bersejarah **tempat** naskah asli proklamasi kemerdekaan disimpan dengan aman."
+            },
+            {
+              "judul_poin": "Sejajarkan Bentuk Kata dalam Rincian",
+              "penjelasan_singkat": "Daftar rincian yang setara dalam satu kalimat wajib memakai jenis kata atau imbuhan yang seragam.",
+              "contoh_penerapan": "Tahapan penelitian ini meliputi **pengumpulan** data lapangan, **pengolahan** sampel, dan **penarikan** kesimpulan akhir."
+            },
+            {
+              "judul_poin": "Lengkapi Induk Kalimat dan Hindari Kata Hubung Ganda",
+              "penjelasan_singkat": "Jika kalimat diawali kata hubung bertingkat (seperti meskipun), induk kalimatnya wajib punya subjek-predikat tanpa kata hubung tambahan.",
+              "contoh_penerapan": "Meskipun hujan turun sangat deras, **para relawan tetap mengevakuasi** warga dari lokasi banjir."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kehematan Kata dan Pembuangan Unsur Mubazir",
+          "butir": [
+            {
+              "judul_poin": "Buang Kata Bersinonim yang Berjejer",
+              "penjelasan_singkat": "Jangan pakai dua kata dengan arti yang sama secara berurutan karena membuat kalimat boros.",
+              "contoh_penerapan": "Seluruh warga bekerja sama **agar** lingkungan permukiman tetap bersih dan terbebas dari penyakit."
+            },
+            {
+              "judul_poin": "Hindari Subjek Ganda dalam Satu Klausa",
+              "penjelasan_singkat": "Jangan mengulang subjek yang sama atau menyelipkan akhiran -nya pada subjek dalam satu bagian kalimat.",
+              "contoh_penerapan": "**Penyusunan laporan keuangan tahunan itu** memerlukan ketelitian tinggi dari seluruh staf akuntansi."
+            },
+            {
+              "judul_poin": "Hemat Kata Jamak dan Kata Ulang",
+              "penjelasan_singkat": "Kata bermakna banyak seperti para, seluruh, semua, atau beberapa tidak boleh diikuti kata benda ulang.",
+              "contoh_penerapan": "**Para peneliti** mempresentasikan temuan terbaru mereka dalam konferensi nasional ilmu pengetahuan."
+            },
+            {
+              "judul_poin": "Hapus Kata Kategori Sebelum Nama Khusus",
+              "penjelasan_singkat": "Buang kata umum seperti warna, bulan, atau hari jika langsung diikuti oleh nama spesifiknya.",
+              "contoh_penerapan": "Pameran teknologi pendidikan tersebut akan diselenggarakan pada **Oktober** mendatang di pusat konvensi."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kelogisan, Anti-Ambiguitas, dan Cek Utuh EYD V",
+          "butir": [
+            {
+              "judul_poin": "Ubah Urutan Kata untuk Mencegah Makna Ganda",
+              "penjelasan_singkat": "Atur ulang urutan kata atau sisipkan kata penjelas agar frasa benda tidak memicu dua tafsir berbeda.",
+              "contoh_penerapan": "Lukisan **milik pelukis terkenal** itu terjual dengan harga sangat tinggi pada lelang semalam."
+            },
+            {
+              "judul_poin": "Dekatkan Keterangan pada Kata yang Dijelaskan",
+              "penjelasan_singkat": "Taruh keterangan penjelas tepat di belakang kata intinya supaya tidak salah menunjuk pelaku.",
+              "contoh_penerapan": "Polisi menangkap pencuri **yang membawa senjata tajam itu** di area stasiun kereta."
+            },
+            {
+              "judul_poin": "Pastikan Hubungan Subjek dan Predikat Masuk Akal",
+              "penjelasan_singkat": "Makna kalimat harus logis; pelaku tindakan pada predikat wajib cocok dengan subjeknya.",
+              "contoh_penerapan": "**Pembicara berikutnya dipersilakan** menyampaikan gagasan utama dalam waktu maksimal sepuluh menit."
+            },
+            {
+              "judul_poin": "Cek Utuh EYD V, KBBI VI, dan Keefektifan",
+              "penjelasan_singkat": "Kalimat sempurna harus menggabungkan struktur yang rapi, kata baku KBBI VI, dan tanda baca EYD V.",
+              "contoh_penerapan": "Oleh karena itu, pemerintah **menganalisis** dampak **risiko** kebijakan tersebut secara komprehensif."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-04-02",
+      "judul_subbab": "Penggabungan dan Pemisahan Kalimat",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Gabung Setara:** Gunakan kata hubung *dan, serta, tetapi, sedangkan* untuk menghubungkan dua ide yang sejajar.\n- **Gabung Bertingkat:** Gunakan kata hubung *karena, sehingga, agar, ketika*. Jika pelakunya sama, **hapus pelaku di bagian kedua** agar ringkas.\n- **Pecah Kalimat Panjang:** Kalimat yang menumpuk banyak ide tanpa jeda wajib dipotong dengan tanda titik (`.`). Sambung kalimat barunya memakai kata hubung antarkalimat (*Oleh karena itu, Selain itu, Namun*).",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Menggabungkan Kalimat Setara dan Menghapus Kata Kembar",
+          "butir": [
+            {
+              "judul_poin": "Hapus Subjek Kembar Setelah Kata 'dan' atau 'serta'",
+              "penjelasan_singkat": "Jika dua kalimat punya pelaku yang sama, hapus pelaku di bagian kedua tepat setelah kata *dan* atau *serta*.",
+              "contoh_penerapan": "Peneliti mengumpulkan sampel tanah **dan** menganalisis kandungan mineralnya di laboratorium."
+            },
+            {
+              "judul_poin": "Tanda Koma Sebelum Kata Pertentangan",
+              "penjelasan_singkat": "Beri tanda koma tepat sebelum kata hubung pertentangan di tengah kalimat (*tetapi, sedangkan, melainkan*).",
+              "contoh_penerapan": "Produksi padi meningkat tajam pada kuartal pertama**, sedangkan** harga gabah di tingkat petani justru menurun."
+            },
+            {
+              "judul_poin": "Tanda Koma pada Rincian Lebih dari Dua",
+              "penjelasan_singkat": "Gunakan *atau* untuk pilihan setara. Beri koma sebelum kata hubung terakhir hanya jika rinciannya lebih dari dua.",
+              "contoh_penerapan": "Peserta ujian wajib membawa kartu identitas, pensil kayu**, atau** dokumen pendukung lain yang diminta panitia."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Menggabungkan Kalimat Bertingkat dan Membalik Urutan",
+          "butir": [
+            {
+              "judul_poin": "Hapus Subjek yang Sama pada Anak Kalimat",
+              "penjelasan_singkat": "Kalau pelaku di bagian penjelas dan bagian utama sama, hapus pelaku pada bagian penjelas agar efektif.",
+              "contoh_penerapan": "**Setelah mempresentasikan** hasil risetnya, mahasiswa tersebut langsung menjawab seluruh pertanyaan dewan penguji."
+            },
+            {
+              "judul_poin": "Tanda Koma Saat Anak Kalimat di Depan",
+              "penjelasan_singkat": "Pasang tanda koma di akhir bagian penjelas jika ditaruh di awal kalimat. Hapus komanya jika posisinya dibalik ke belakang.",
+              "contoh_penerapan": "**Karena curah hujan sangat tinggi**, beberapa ruas jalan protokol di pusat kota tergenang banjir."
+            },
+            {
+              "judul_poin": "Membalik Sebab-Akibat Tanpa Mengubah Makna",
+              "penjelasan_singkat": "Saat posisi sebab dan akibat ditukar, wajib ganti kata hubungnya dari *karena* (sebab) menjadi *sehingga* (akibat) atau sebaliknya.",
+              "contoh_penerapan": "Suhu permukaan laut meningkat drastis **sehingga** terumbu karang di perairan dangkal mengalami pemutihan massal."
+            },
+            {
+              "judul_poin": "Menjaga Urutan Waktu dan Hubungan Tujuan",
+              "penjelasan_singkat": "Tukar kata *sebelum* dan *setelah* jika urutan kejadian dibalik. Untuk tujuan, cukup pakai *agar* atau *supaya*.",
+              "contoh_penerapan": "Pemerintah memperketat pengawasan distribusi pupuk **agar** alokasi subsidi tepat sasaran kepada petani kecil."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Memecah Kalimat Kepanjangan dan Kata Hubung Antarkalimat",
+          "butir": [
+            {
+              "judul_poin": "Potong Kalimat Bertumpuk dengan Tanda Titik",
+              "penjelasan_singkat": "Kalimat yang menumpuk terlalu banyak ide utama wajib dipotong menjadi dua kalimat terpisah dengan tanda titik.",
+              "contoh_penerapan": "Inflasi pangan menekan daya beli masyarakat kelas menengah**. Oleh karena itu,** bank sentral menahan suku bunga acuan."
+            },
+            {
+              "judul_poin": "Wajib Koma Setelah Kata Hubung Antarkalimat",
+              "penjelasan_singkat": "Kata hubung di awal kalimat baru (*Oleh karena itu, Selain itu, Namun, Dengan demikian*) wajib diikuti tanda koma.",
+              "contoh_penerapan": "Anggaran riset tahun ini dipangkas cukup signifikan**. Namun,** tim peneliti tetap berhasil menerbitkan tiga jurnal internasional."
+            },
+            {
+              "judul_poin": "Hindari Kalimat Buntung Saat Memecah Kalimat",
+              "penjelasan_singkat": "Pastikan setiap pecahan kalimat punya subjek dan predikat sendiri. Jangan awali kalimat baru dengan kata hubung tengah kalimat.",
+              "contoh_penerapan": "Proyek pembangunan bendungan itu tertunda selama enam bulan**. Hal ini terjadi** karena pembebasan lahan belum tuntas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-04-03",
+      "judul_subbab": "Melengkapi Rumpang dalam Paragraf",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Melengkapi rumpang menuntut keselarasan bentuk bahasa dan kepaduan makna antarbagian teks sesuai EYD V dan KBBI VI.\n\n* **Posisi Awal:** Memuat gagasan utama umum yang memayungi seluruh kalimat penjelas berikutnya.\n* **Posisi Tengah:** Menjadi jembatan logika sebab-akibat, pertentangan, atau perincian antarkalimat.\n* **Posisi Akhir:** Berisi kesimpulan yang merangkum kalimat-kalimat sebelumnya tanpa menambah topik baru.\n* **Tingkat Kata/Frasa:** Wajib sejajar pola kalimatnya (`[S]-[P]-[O]-[K]`), memakai kata hubung secara tepat, dan taat aturan peluluhan imbuhan.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Kepaduan Makna & Posisi Kalimat Rumpang",
+          "butir": [
+            {
+              "judul_poin": "Kalimat Rumpang di Awal Paragraf (Umum ke Khusus)",
+              "penjelasan_singkat": "Kalimat pembuka wajib memuat gagasan umum yang mencakup seluruh rincian penjelas di bawahnya.",
+              "contoh_penerapan": "**Perubahan iklim ekstrem mengancam ketahanan pangan global** karena kekeringan menurunkan panen gandum dan banjir merusak sawah."
+            },
+            {
+              "judul_poin": "Kalimat Rumpang di Tengah Paragraf (Jembatan Logika)",
+              "penjelasan_singkat": "Kalimat tengah mengaitkan kalimat sebelumnya dengan kalimat sesudahnya lewat hubungan sebab-akibat, pertentangan, atau perincian.",
+              "contoh_penerapan": "Hulu sungai diguyur hujan lebat berhari-hari, **akibatnya debit air bendungan meluap** hingga merendam ratusan rumah warga."
+            },
+            {
+              "judul_poin": "Kalimat Rumpang di Akhir Paragraf (Khusus ke Umum)",
+              "penjelasan_singkat": "Kalimat penutup merangkum seluruh kalimat sebelumnya menjadi kesimpulan logis tanpa memunculkan topik atau data baru.",
+              "contoh_penerapan": "Karena ekspor nikel naik dan investasi tumbuh pesat, **kebijakan hilirisasi terbukti mampu mendongkrak perekonomian nasional**."
+            },
+            {
+              "judul_poin": "Pengulangan Kata Kunci & Kata Ganti Antarkalimat",
+              "penjelasan_singkat": "Kalimat pengisi rumpang wajib menyambung rujukan kata tunjuk, kata ganti, atau istilah kunci dari kalimat sebelumnya.",
+              "contoh_penerapan": "Pemerintah merilis aplikasi pajak digital, dan **inovasi tersebut dirancang untuk memangkas antrean** wajib pajak di kantor pelayanan."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Kalimat & Kata Hubung Frasa Rumpang",
+          "butir": [
+            {
+              "judul_poin": "Kelengkapan Pola Kalimat Inti ($S-P-O-K$)",
+              "penjelasan_singkat": "Frasa pengisi rumpang wajib melengkapi fungsi kalimat yang kosong tanpa memicu subjek ganda atau kalimat tanpa predikat.",
+              "contoh_penerapan": "Penelitian yang dilakukan di kawasan pesisir utara Jawa itu **berhasil mengidentifikasi** sepuluh spesies mangrove langka."
+            },
+            {
+              "judul_poin": "Kesejajaran Bentuk dalam Rincian Setara",
+              "penjelasan_singkat": "Unsur rumpang dalam deretan perincian wajib memakai jenis kata dan pola imbuhan yang seragam.",
+              "contoh_penerapan": "Tahapan mitigasi bencana meliputi pemetaan zona rawan, pembangunan jalur evakuasi, dan **penyuluhan** masyarakat pesisir."
+            },
+            {
+              "judul_poin": "Kata Hubung Antarkalimat vs. Intrakalimat",
+              "penjelasan_singkat": "Rumpang di awal kalimat wajib diisi kata hubung antarkalimat beserta tanda koma, bukan kata hubung tengah kalimat.",
+              "contoh_penerapan": "**Namun,** para peneliti tetap mampu menghasilkan paten teknologi tepat guna meskipun anggaran riset sangat terbatas."
+            },
+            {
+              "judul_poin": "Kata Hubung Berpasangan Tetap",
+              "penjelasan_singkat": "Rumpang yang memakai kata hubung berpasangan wajib dilengkapi pasangan tetapnya agar sejajar secara tata bahasa.",
+              "contoh_penerapan": "Keberhasilan transisi energi tidak hanya bergantung pada teknologi canggih, **tetapi juga** membutuhkan kesiapan regulasi pemerintah."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Aturan Peluluhan & Kata Berimbuhan Rumpang",
+          "butir": [
+            {
+              "judul_poin": "Peluluhan Huruf Awal $k, p, t, s$ pada Imbuhan *meN-*/*peN-*",
+              "penjelasan_singkat": "Kata dasar berawalan $k, p, t, s$ yang diikuti huruf vokal wajib luluh saat diberi imbuhan *meN-* atau *peN-*.",
+              "contoh_penerapan": "Tim auditor mulai **memesona** publik saat berhasil **mengubah** serta **memengaruhi** tata kelola anggaran menjadi lebih transparan."
+            },
+            {
+              "judul_poin": "Pengecualian Peluluhan pada Konsonan Rangkap Awal",
+              "penjelasan_singkat": "Kata dasar berawalan konsonan rangkap seperti $kl, kr, pr, tr, st$ tidak luluh saat diberi imbuhan *meN-* atau *peN-*.",
+              "contoh_penerapan": "Pemerintah terus **memproduksi** vaksin lokal, **mengkritik** impor ilegal, dan **menstabilkan** pasokan pangan nasional."
+            },
+            {
+              "judul_poin": "Ketepatan Imbuhan *memper-kan* vs. *memper-i* pada Kata Sifat",
+              "penjelasan_singkat": "Imbuhan *memper-i* bermakna 'menjadikan lebih' pada kata sifat tertentu, bukan *memper-kan* yang boros imbuhan.",
+              "contoh_penerapan": "Kontraktor segera **memperbaiki** jalan rusak untuk **memperlancar** arus distribusi logistik antarkota menjelang hari raya."
+            },
+            {
+              "judul_poin": "Penulisan Bentuk Terikat *pasca-*, *non-*, dan *sub-*",
+              "penjelasan_singkat": "Bentuk terikat ditulis serangkai dengan kata berikutnya, tetapi memakai tanda hubung sebelum huruf kapital atau singkatan.",
+              "contoh_penerapan": "Pemulihan ekonomi **pascabencana** memerlukan kerja sama lintas sektor, termasuk lembaga **non-APBN** dan instansi **subbagian** daerah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-04-04",
+      "judul_subbab": "Penentuan Judul, Pengurutan, dan Penyisipan Kalimat",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Judul Ideal:** Merangkum seluruh ide pokok (tidak terlalu sempit atau melebar), berbentuk frasa ringkas, dan taat kapitalisasi EYD V (kata depan & kata hubung di tengah judul ditulis huruf kecil).\n- **Urutan Kalimat:** Mulai dari pernyataan umum yang mandiri, lalu ikuti jejak kata tunjuk (*ini, tersebut*), pengulangan kata kunci, dan kata hubung antarkalimat.\n- **Sisipan & Penutup:** Kalimat sisipan menjembatani kata kunci sebelum dan sesudahnya. Kalimat penutup merangkum inti bacaan tanpa memunculkan topik baru.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Aturan Cakupan dan Kapitalisasi Judul (EYD V)",
+          "butir": [
+            {
+              "judul_poin": "Cakupan Gagasan yang Pas",
+              "penjelasan_singkat": "Judul wajib mewakili seluruh gagasan utama bacaan secara seimbang—tidak terlalu sempit dan tidak terlalu melebar.",
+              "contoh_penerapan": "Teks tentang bahaya mikroplastik bagi biota laut dan kesehatan manusia diberi judul **Dampak Ganda Mikroplastik bagi Laut dan Manusia**."
+            },
+            {
+              "judul_poin": "Berbentuk Frasa Ringkas, Bukan Kalimat",
+              "penjelasan_singkat": "Judul yang baik disusun dalam bentuk gabungan kata (frasa) yang padat, bukan kalimat lengkap berpola subjek-predikat.",
+              "contoh_penerapan": "Penjelasan tentang cara kerja kecerdasan buatan diringkas menjadi frasa **Mekanisme Kerja Kecerdasan Buatan dalam Pendidikan**."
+            },
+            {
+              "judul_poin": "Huruf Kecil untuk Kata Depan dan Kata Hubung",
+              "penjelasan_singkat": "Semua kata diawali huruf kapital, kecuali kata depan (*di, ke, dari, pada, dalam, bagi, untuk*) dan kata hubung (*dan, atau, yang*) di posisi tengah.",
+              "contoh_penerapan": "Penulisan sesuai EYD V: **Peran Teknologi Digital dalam Meningkatkan Literasi di Daerah Terpencil**."
+            },
+            {
+              "judul_poin": "Kapitalisasi Kata Ulang pada Judul",
+              "penjelasan_singkat": "Kata ulang utuh memakai huruf kapital di semua unsurnya, sedangkan kata ulang berimbuhan hanya kapital pada unsur pertama.",
+              "contoh_penerapan": "Penulisan baku: **Kajian Undang-Undang Perlindungan Data** (utuh) dan **Strategi Berjalan-jalan Sehat bagi Lansia** (berimbuhan)."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Logika Menyusun Urutan Kalimat Acak",
+          "butir": [
+            {
+              "judul_poin": "Mulai dari Pernyataan Umum yang Mandiri",
+              "penjelasan_singkat": "Kalimat pembuka paragraf umumnya berisi definisi atau gambaran luas topik dan belum memuat kata rujukan ke kalimat lain.",
+              "contoh_penerapan": "Paragraf diawali **(1) Literasi finansial merupakan keterampilan dasar mengelola keuangan pribadi**, lalu dilanjutkan rincian manfaatnya."
+            },
+            {
+              "judul_poin": "Lacak Jejak Kata Ganti Penunjuk",
+              "penjelasan_singkat": "Kata tunjuk seperti *ini, itu, tersebut,* dan *mereka* harus langsung menempel setelah kalimat yang memuat objek rujukannya.",
+              "contoh_penerapan": "Kalimat **Inflasi pangan melonjak tajam** langsung diikuti **Kenaikan tersebut menekan daya beli rumah tangga**."
+            },
+            {
+              "judul_poin": "Ikuti Pengulangan Kata Kunci",
+              "penjelasan_singkat": "Kepaduan antarkalimat dijaga dengan mengulang kata kunci atau padanan kata dari bagian akhir kalimat ke awal kalimat berikutnya.",
+              "contoh_penerapan": "Kalimat ditutup dengan **...menghasilkan energi terbarukan**, lalu kalimat berikutnya dibuka dengan **Energi terbarukan ini menekan emisi**."
+            },
+            {
+              "judul_poin": "Cocokkan Logika Kata Hubung Antarkalimat",
+              "penjelasan_singkat": "Kata hubung antarkalimat menandai hubungan makna yang tegas, seperti pertentangan (*namun*), akibat (*oleh karena itu*), atau penegasan (*bahkan*).",
+              "contoh_penerapan": "Pernyataan **Curah hujan ekstrem melanda kota** diikuti **Oleh karena itu, pemerintah menyiagakan pompa banjir**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Aturan Menyisipkan dan Menutup Paragraf",
+          "butir": [
+            {
+              "judul_poin": "Jembatan Istilah pada Kalimat Sisipan",
+              "penjelasan_singkat": "Kalimat sisipan wajib ditempatkan tepat setelah kalimat yang pertama kali memperkenalkan istilah yang dirujuknya.",
+              "contoh_penerapan": "Sisipan **Metode ini meminimalkan limbah kimia** diletakkan tepat **setelah kalimat (2)** yang baru mengenalkan istilah **kimia hijau**."
+            },
+            {
+              "judul_poin": "Jangan Memutus Pasangan Sebab-Akibat",
+              "penjelasan_singkat": "Penyisipan kalimat baru dilarang membelah dua kalimat asli yang memiliki hubungan sebab-akibat langsung atau urutan waktu ketat.",
+              "contoh_penerapan": "Kalimat tambahan disisipkan **setelah kalimat (3)** agar tidak memisahkan kalimat (1) tentang penyebab dan (2) tentang akibatnya."
+            },
+            {
+              "judul_poin": "Kalimat Penutup Menegaskan Gagasan Utama",
+              "penjelasan_singkat": "Kalimat penutup bertugas menyimpulkan atau menegaskan ulang ide pokok paragraf secara selaras tanpa menyalin kalimat pertama mentah-mentah.",
+              "contoh_penerapan": "Paragraf manfaat transportasi publik ditutup dengan **Dengan demikian, angkutan massal menjadi solusi utama kemacetan kota**."
+            },
+            {
+              "judul_poin": "Dilarang Memunculkan Topik Baru di Akhir",
+              "penjelasan_singkat": "Kalimat penutup tidak boleh memperkenalkan pihak, masalah, atau subtopik baru yang sama sekali belum dibahas di kalimat sebelumnya.",
+              "contoh_penerapan": "Teks efisiensi panel surya ditutup dengan **Pemanfaatan teknologi surya terbukti menekan biaya listrik rumah tangga**."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

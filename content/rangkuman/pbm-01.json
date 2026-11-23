@@ -1,0 +1,360 @@
+{
+  "kode_bab": "pbm-01",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 1: Ejaan (EYD V)",
+  "batch_model": "hydrogen",
+  "jumlah_subbab": 4,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pbm-01-01",
+      "judul_subbab": "Pemakaian Huruf Kapital dan Huruf Miring",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Di soal PBM UTBK, aturan huruf kapital dan miring dalam **EYD Edisi V** sebenarnya hanya menguji dua kejelian utama: apakah kata itu **nama diri** dan apakah kata itu **sudah baku di KBBI**.\n\n* **Huruf Kapital:** Wajib dipakai untuk **nama diri** (lokasi spesifik, asal daerah produk khas, peristiwa sejarah, dokumen resmi), **identitas** (bangsa, suku, bahasa), serta **gelar/jabatan/sapaan** yang diikuti nama atau dipakai menyapa langsung. Tulis **huruf kecil** jika berubah menjadi nama jenis atau mendapat imbuhan.\n* **Huruf Miring:** Wajib dipakai untuk **istilah asing atau daerah** yang belum diserap baku ke KBBI VI, serta **judul buku, film, dan nama media massa**. **Jangan memiringkan** nama diri berbahasa asing seperti lembaga, organisasi, atau merek.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Kapital pada Nama Tempat, Jabatan, dan Sapaan",
+          "butir": [
+            {
+              "judul_poin": "Nama Tempat Spesifik vs. Umum",
+              "penjelasan_singkat": "Pakai huruf kapital jika jenis tempat (selat, gunung, sungai) diikuti nama spesifiknya. Jika berdiri sendiri tanpa nama, tulis huruf kecil.",
+              "contoh_penerapan": "Kapal feri itu menyeberangi **Selat Sunda** sebelum berlabuh di **pelabuhan** kecil dekat muara **sungai**."
+            },
+            {
+              "judul_poin": "Nama Jenis vs. Produk Khas Asal Daerah",
+              "penjelasan_singkat": "Nama jenis benda atau varietas ditulis huruf kecil semua. Sebaliknya, produk khas yang merujuk asal daerah tetap memakai kapital pada nama daerahnya.",
+              "contoh_penerapan": "Ibu membeli **jeruk bali** dan **gula jawa** di pasar, lalu menyantap **pempek Palembang** serta **batik Pekalongan**."
+            },
+            {
+              "judul_poin": "Gelar, Jabatan, dan Pangkat",
+              "penjelasan_singkat": "Tulis kapital hanya jika gelar atau jabatan diikuti nama orang, nama instansi, nama wilayah, atau dipakai sebagai pengganti nama orang.",
+              "contoh_penerapan": "Rapat terbatas itu dipimpin langsung oleh **Gubernur Jawa Barat** bersama **Profesor** Hendra selaku **dekan** baru."
+            },
+            {
+              "judul_poin": "Kata Kekerabatan dan Sapaan",
+              "penjelasan_singkat": "Kata kekerabatan seperti Bapak, Ibu, atau Saudara ditulis kapital hanya saat dipakai menyapa atau mengacu langsung kepada lawan bicara.",
+              "contoh_penerapan": "\"Kapan **Bapak** berangkat ke Jakarta?\" tanya Andi kepada ayahnya sebelum menyerahkan surat untuk **Saudara** Rina."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kapital pada Identitas, Sejarah, dan Dokumen",
+          "butir": [
+            {
+              "judul_poin": "Nama Bangsa, Suku, dan Bahasa",
+              "penjelasan_singkat": "Kapitalkan hanya nama bangsa, suku, atau bahasanya. Kata penjelas seperti bangsa, suku, dan bahasa di depannya tetap huruf kecil.",
+              "contoh_penerapan": "Masyarakat **suku Dani** di Papua fasih bertutur menggunakan **bahasa Indonesia** selain bahasa daerah mereka."
+            },
+            {
+              "judul_poin": "Kata Turunan Berimbuhan",
+              "penjelasan_singkat": "Jika nama bangsa, suku, bahasa, atau geografi mendapat imbuhan (ke-...-an, meng-...-kan), seluruh katanya berubah menjadi huruf kecil.",
+              "contoh_penerapan": "Semangat **keindonesiaan** perlu dijaga agar generasi muda tidak bersikap **keinggris-inggrisan** saat berbicara."
+            },
+            {
+              "judul_poin": "Peristiwa Sejarah dan Dokumen Resmi",
+              "penjelasan_singkat": "Awali setiap kata pada nama peristiwa sejarah dan dokumen resmi negara dengan huruf kapital, kecuali kata tugas di tengah.",
+              "contoh_penerapan": "Hasil **Konferensi Meja Bundar** sejalan dengan amanat **Undang-Undang Dasar Negara Republik Indonesia Tahun 1945**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Huruf Miring dan Kapital pada Judul serta Istilah Asing",
+          "butir": [
+            {
+              "judul_poin": "Istilah Asing dan Daerah Belum Baku",
+              "penjelasan_singkat": "Kata atau ungkapan bahasa asing dan daerah yang belum diserap baku ke dalam KBBI VI wajib dicetak miring.",
+              "contoh_penerapan": "Masyarakat Aceh menggelar tradisi ***peusijuek*** sebagai wujud syukur atas tercapainya kondisi ***status quo*** yang damai."
+            },
+            {
+              "judul_poin": "Nama Diri Lembaga dan Merek Asing",
+              "penjelasan_singkat": "Nama diri berbahasa asing—seperti nama lembaga internasional, organisasi, perusahaan, atau merek—tetap ditulis tegak dan kapital.",
+              "contoh_penerapan": "Pemerintah bekerja sama dengan **World Health Organization** dan **United Nations** dalam penanganan wabah penyakit."
+            },
+            {
+              "judul_poin": "Kapital pada Judul Karya",
+              "penjelasan_singkat": "Semua kata dalam judul buku, film, atau artikel diawali huruf kapital, kecuali kata tugas (di, ke, dari, dan, yang, untuk) di tengah judul.",
+              "contoh_penerapan": "Novel klasik berjudul ***Dari Ave Maria ke Jalan Lain ke Roma*** karya Idrus masih relevan dibaca hingga kini."
+            },
+            {
+              "judul_poin": "Huruf Miring Judul Buku vs. Judul Artikel",
+              "penjelasan_singkat": "Judul buku, film, dan nama media massa ditulis miring. Sebaliknya, judul artikel, cerpen, puisi, atau bab buku ditulis tegak di dalam tanda petik.",
+              "contoh_penerapan": "Saya membaca artikel **\"Dinamika Bahasa Digital\"** yang dimuat dalam surat kabar ***Kompas*** edisi Minggu lalu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-01-02",
+      "judul_subbab": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Kaidah EYD V memisahkan kata penunjuk tempat atau makna tambahan dari kata dasarnya, tetapi merangkaikan imbuhan dan bentuk terikat:\n- **Kata Depan (`di`, `ke`, `dari`):** Dipisah jika menunjuk tempat atau arah; dirangkai jika menjadi awalan kata (`di-`, `ke-`).\n- **Partikel (`pun`):** Dipisah jika bermakna 'juga'; dirangkai pada 12 kata penghubung baku.\n- **Gabungan Kata:** Dipisah jika hanya mendapat awalan saja atau akhiran saja; dirangkai jika mendapat awalan dan akhiran sekaligus.\n- **Bentuk Terikat:** Dirangkai dengan kata dasar huruf kecil, tetapi diberi tanda hubung (`-`) jika diikuti huruf kapital.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Penulisan Kata Depan (di, ke, dari) vs Imbuhan (di-, ke-)",
+          "butir": [
+            {
+              "judul_poin": "Kata Depan Penunjuk Tempat, Arah, dan Asal",
+              "penjelasan_singkat": "Kata depan *di*, *ke*, dan *dari* wajib ditulis terpisah jika menunjukkan tempat, arah tujuan, waktu, atau asal.",
+              "contoh_penerapan": "Mahasiswa itu membaca jurnal ilmiah **di perpustakaan** kampus sebelum berangkat **ke seminar** nasional **dari rumah**."
+            },
+            {
+              "judul_poin": "Imbuhan Pembentuk Kata Kerja `di-` dan `ke-`",
+              "penjelasan_singkat": "Imbuhan *di-* dan *ke-* ditulis serangkai dengan kata dasar karena membentuk kata kerja pasif, bilangan tingkat, atau kata benda.",
+              "contoh_penerapan": "Proposal penelitian **ketiga** tersebut telah **disetujui** ketua jurusan dan siap **dilaksanakan** oleh seluruh **ketua** divisi."
+            },
+            {
+              "judul_poin": "Beda `keluar` (Kata Kerja) vs `ke luar` (Arah Tempat)",
+              "penjelasan_singkat": "Ditulis serangkai jika berupa kata kerja (lawan kata *masuk*), tetapi dipisah jika menunjuk arah menuju bagian luar.",
+              "contoh_penerapan": "Para peserta ujian berjalan **keluar** ruangan menuju **ke luar** gedung kampus setelah bel tanda selesai berbunyi."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Penulisan Partikel (`-lah`, `-kah`, `-tah`, `pun`, `per`)",
+          "butir": [
+            {
+              "judul_poin": "Partikel Penegas dan Tanya (`-lah`, `-kah`, `-tah`)",
+              "penjelasan_singkat": "Partikel *-lah*, *-kah*, dan *-tah* selalu ditulis serangkai dengan kata di depannya tanpa spasi maupun tanda hubung.",
+              "contoh_penerapan": "**Bacalah** petunjuk pengerjaan soal dengan teliti, **siapakah** yang bertugas mengumpulkan berkas pendaftaran ini?"
+            },
+            {
+              "judul_poin": "Partikel `pun` Bermakna \"Juga\" (Ditulis Terpisah)",
+              "penjelasan_singkat": "Partikel *pun* ditulis terpisah dari kata sebelumnya jika bermakna 'juga' atau 'saja' untuk menegaskan unsur kalimat.",
+              "contoh_penerapan": "Apa **pun** rintangan yang menghadang, satu kali **pun** ia tidak pernah menyerah memperjuangkan beasiswa impiannya."
+            },
+            {
+              "judul_poin": "Partikel `pun` pada 12 Kata Penghubung Baku (Dirangkai)",
+              "penjelasan_singkat": "Partikel *pun* ditulis serangkai hanya pada dua belas kata penghubung yang sudah dianggap padu dalam EYD V.",
+              "contoh_penerapan": "**Walaupun** hujan turun sangat deras, **bagaimanapun** tim relawan tetap menyalurkan bantuan logistik kepada warga terdampak banjir."
+            },
+            {
+              "judul_poin": "Partikel `per` Bermakna \"Demi\", \"Tiap\", atau \"Mulai\"",
+              "penjelasan_singkat": "Partikel *per* ditulis terpisah apabila bermakna 'demi', 'tiap', atau 'mulai' yang mengikuti satuan jumlah maupun tanggal.",
+              "contoh_penerapan": "Harga beras medium naik menjadi Rp15.000,00 **per kilogram** terhitung **per 1 November**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Penulisan Gabungan Kata & Kata Majemuk",
+          "butir": [
+            {
+              "judul_poin": "Gabungan Kata Dasar dan Istilah Khusus (Dipisah)",
+              "penjelasan_singkat": "Gabungan kata dasar, termasuk kata majemuk dan istilah khusus, ditulis terpisah antarunsurnya jika belum mendapat imbuhan.",
+              "contoh_penerapan": "Kepala sekolah mengundang **orang tua** siswa untuk membahas program **kerja sama** magang industri dan **tanggung jawab** akademik."
+            },
+            {
+              "judul_poin": "Gabungan Kata Berimbuhan Awalan Saja atau Akhiran Saja",
+              "penjelasan_singkat": "Jika gabungan kata hanya mendapat awalan saja atau akhiran saja, kedua unsurnya tetap ditulis terpisah.",
+              "contoh_penerapan": "Setiap panitia wajib **bertanggung jawab** dan segera **sebar luaskan** jadwal ujian terbaru kepada seluruh peserta."
+            },
+            {
+              "judul_poin": "Gabungan Kata Berimbuhan Awalan dan Akhiran Sekaligus (Dirangkai)",
+              "penjelasan_singkat": "Apabila gabungan kata mendapat awalan dan akhiran sekaligus, seluruh unsurnya wajib ditulis serangkai.",
+              "contoh_penerapan": "Ketua panitia mengapresiasi **pertanggungjawaban** bendahara serta **penyebarluasan** informasi resmi kepada seluruh calon mahasiswa baru."
+            },
+            {
+              "judul_poin": "Gabungan Kata yang Sudah Dianggap Padu (Dirangkai)",
+              "penjelasan_singkat": "Beberapa gabungan kata yang sudah dianggap sebagai satu kata padu dalam KBBI VI selalu ditulis serangkai.",
+              "contoh_penerapan": "Para **sukarelawan** mengenakan **kacamata** pelindung dan membawa **saputangan** saat membersihkan abu vulkanik bersama warga."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Penulisan Bentuk Terikat (`non-`, `pasca-`, `pra-`, `maha-`)",
+          "butir": [
+            {
+              "judul_poin": "Bentuk Terikat dengan Kata Dasar Huruf Kecil (Dirangkai)",
+              "penjelasan_singkat": "Bentuk terikat (*antar-*, *catur-*, *dwi-*, *non-*, *pasca-*, *pra-*, *sub-*) ditulis serangkai dengan kata dasar yang mengikutinya.",
+              "contoh_penerapan": "Program **pascasarjana** tersebut mengkaji dampak **nonmedis** pandemi pada konektivitas **antarwilayah** di kawasan Indonesia timur."
+            },
+            {
+              "judul_poin": "Bentuk Terikat dengan Unsur Kapital atau Singkatan",
+              "penjelasan_singkat": "Bentuk terikat yang diikuti kata berhuruf awal kapital atau singkatan wajib disisipi tanda hubung (`-`).",
+              "contoh_penerapan": "Indonesia memperkuat perdagangan bebas dengan negara **non-ASEAN** serta menyosialisasikan gerakan **pro-Pancasila** di lingkungan kampus."
+            },
+            {
+              "judul_poin": "Aturan Khusus Bentuk Terikat `maha-` pada Sifat Tuhan",
+              "penjelasan_singkat": "Unsur *maha-* ditulis serangkai jika diikuti kata dasar, tetapi dipisah jika diikuti kata berimbuhan.",
+              "contoh_penerapan": "Marilah kita memanjatkan syukur kepada Tuhan Yang **Maha Pengasih** lagi **Mahakuasa** atas segala karunia-Nya."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-01-03",
+      "judul_subbab": "Penulisan Kata Serapan dan Kata Baku",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Patokan Utama EYD V & KBBI VI**: Penulisan kata serapan mengikuti bentuk tulis bahasa asalnya, bukan cara pengucapan sehari-hari.\n- **Pola Akhiran Asing**: Akhiran *-ic/-ical* menjadi *-ik/-is*, *-ity* menjadi *-itas*, *-ization* menjadi *-isasi*, dan *-ive* menjadi *-if*.\n- **Aturan Luluh K-T-S-P**: Awalan *me-* dan *pe-* meluluhkan huruf awal **k, t, s, p** yang tunggal (*pengaruh* $\\rightarrow$ *memengaruhi*), sedangkan kata berawalan vokal tinggal diberi *meng-* (*ubah* $\\rightarrow$ *mengubah*).\n- **Istilah Bidang Ilmu**: Istilah sains, ekonomi, dan teknologi menyesuaikan aturan ejaan bahasa Indonesia tanpa mengubah makna asalnya.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Penyesuaian Huruf Vokal & Konsonan (Jebakan Pengucapan)",
+          "butir": [
+            {
+              "judul_poin": "Menjaga Huruf Vokal Asli /i/ dan /a/",
+              "penjelasan_singkat": "Kata serapan mempertahankan huruf vokal dari bahasa asalnya dan tidak ikut berubah meski pelafalan lisan sering bergeser.",
+              "contoh_penerapan": "Keputusan investasi itu memiliki **risiko** tinggi sehingga **hakikat** analisis pasar wajib dipahami sebelum memberi **nasihat** bisnis."
+            },
+            {
+              "judul_poin": "Menulis Vokal /a/ dan /u/ Tanpa Sisipan",
+              "penjelasan_singkat": "Penulisan baku menjaga keutuhan vokal tunggal tanpa mengubahnya atau menyisipkan huruf *w* di tengah kata.",
+              "contoh_penerapan": "Mahasiswa kedokteran wajib mengikuti **praktik** klinik dan menyerahkan **kuitansi** pembayaran laboratorium sebelum ujian akhir."
+            },
+            {
+              "judul_poin": "Menjaga Vokal Rangkap dan Konsonan Akhir",
+              "penjelasan_singkat": "Vokal rangkap seperti *ie* dan gabungan konsonan akhir seperti *ks* tetap ditulis utuh sesuai bentuk asalnya.",
+              "contoh_penerapan": "Perusahaan itu merombak **hierarki** jabatan agar jenjang **karier** karyawan berjalan lebih terbuka dan tidak **kompleks**."
+            },
+            {
+              "judul_poin": "Konsistensi Konsonan Serapan /f/, /z/, dan /s/",
+              "penjelasan_singkat": "Huruf serapan *f*, *z*, dan *s* dipertahankan secara konsisten dan tidak diganti menjadi huruf *p* atau *j*.",
+              "contoh_penerapan": "Dokter menetapkan **diagnosis** awal secara **aktif** berdasarkan **asas** kehati-hatian setelah pasien mendapat **izin** rawat."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Perubahan Akhiran Kata Serapan (EYD V)",
+          "butir": [
+            {
+              "judul_poin": "Akhiran -ic $\\rightarrow$ -ik dan -ical $\\rightarrow$ -is",
+              "penjelasan_singkat": "Akhiran *-ic* berubah menjadi *-ik*, sedangkan akhiran *-ical* yang membentuk kata sifat berubah menjadi *-is*.",
+              "contoh_penerapan": "Langkah yang **logis** sangat diperlukan untuk mengatasi kendala **logistik** distribusi pangan ke daerah terpencil."
+            },
+            {
+              "judul_poin": "Akhiran -ity $\\rightarrow$ -itas",
+              "penjelasan_singkat": "Akhiran pembentuk kata benda *-ity* diserap menjadi *-itas*, dengan mengembalikan huruf *f* pada kata sifatnya menjadi *v*.",
+              "contoh_penerapan": "Peningkatan **produktivitas** kerja karyawan sejalan dengan **kualitas** serta **aktivitas** pelatihan rutin di kantor."
+            },
+            {
+              "judul_poin": "Akhiran -ization $\\rightarrow$ -isasi",
+              "penjelasan_singkat": "Akhiran *-ization* diserap menjadi *-isasi* jika kata tersebut diserap secara utuh bersama kata dasar asingnya.",
+              "contoh_penerapan": "Program **modernisasi** alat pertanian mempercepat proses **komersialisasi** hasil panen petani lokal ke pasar ekspor."
+            },
+            {
+              "judul_poin": "Akhiran -ive $\\rightarrow$ -if",
+              "penjelasan_singkat": "Akhiran pembentuk kata sifat *-ive* selalu diserap menjadi *-if* dengan memakai huruf *f* di akhir kata.",
+              "contoh_penerapan": "Kebijakan anggaran yang **inovatif** dan **objektif** mampu mendorong pelaku usaha kecil menjadi lebih **produktif**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Aturan Luluh Awalan me- dan pe- (K-T-S-P)",
+          "butir": [
+            {
+              "judul_poin": "Peluluhan Konsonan Tunggal K, T, S, P",
+              "penjelasan_singkat": "Awalan *me-* dan *pe-* meluluhkan huruf pertama kata dasar berupa konsonan tunggal **k, t, s, p** yang diikuti vokal.",
+              "contoh_penerapan": "Kebijakan suku bunga baru itu **memengaruhi** daya beli warga dan **memesona** investor asing untuk menanamkan modal."
+            },
+            {
+              "judul_poin": "Pengecualian Peluluhan untuk Konsonan Rangkap",
+              "penjelasan_singkat": "Huruf **k, t, s, p** di awal kata dasar tidak luluh jika langsung diikuti konsonan kedua atau mendapat awalan *memper-*.",
+              "contoh_penerapan": "Pemerintah terus **memproduksi** vaksin dalam negeri dan **mengkritik** praktik monopoli yang merugikan pasien."
+            },
+            {
+              "judul_poin": "Pasangan Kata Mirip: Mengubah vs. Merubah",
+              "penjelasan_singkat": "Kata dasar *ubah* berawalan vokal sehingga menjadi *mengubah*, sedangkan *merubah* berarti berubah wujud menjadi hewan rubah.",
+              "contoh_penerapan": "Layanan keuangan digital telah **mengubah** kebiasaan transaksi masyarakat menjadi lebih cepat lewat ponsel pintar."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "4. Ejaan Istilah Sains, Ekonomi, dan Teknologi",
+          "butir": [
+            {
+              "judul_poin": "Penyesuaian Gabungan Konsonan Istilah Sains",
+              "penjelasan_singkat": "Gabungan konsonan asing pada istilah sains disesuaikan: *ph* menjadi *f*, *th* menjadi *t*, dan *ch* menjadi *k*.",
+              "contoh_penerapan": "Proses **fotosintesis** pada tumbuhan hijau membutuhkan **klorofil** dan cahaya matahari untuk melepas oksigen ke **atmosfer**."
+            },
+            {
+              "judul_poin": "Penulisan Istilah Ekonomi dan Keuangan",
+              "penjelasan_singkat": "Istilah ekonomi yang sudah masuk ke KBBI VI ditulis tegak mengikuti aturan bunyi dan ejaan bahasa Indonesia.",
+              "contoh_penerapan": "Gejolak nilai tukar memicu **inflasi** ringan sehingga bank sentral menyesuaikan bunga **kredit** dan neraca **ekspor**."
+            },
+            {
+              "judul_poin": "Penyesuaian Ejaan Istilah Teknologi",
+              "penjelasan_singkat": "Istilah teknologi diserap dengan membuang huruf *h* setelah *k* serta mengubah gugus *qu* menjadi *ku*.",
+              "contoh_penerapan": "Kemajuan **teknologi** nirkabel memaksimalkan penggunaan **frekuensi** radio tinggi untuk menjaga pertahanan **siber** nasional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-01-04",
+      "judul_subbab": "Penulisan Angka dan Bilangan",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "Kaidah **EYD V** mengatur penulisan angka dan bilangan berdasarkan posisi dan fungsinya:\n- **Satu kata** ditulis huruf (*tiga kali*), **lebih dari satu kata** ditulis angka (*15 orang*), kecuali dalam perincian berurutan.\n- **Awal kalimat** wajib huruf (maksimal dua kata); jika lebih, ubah susunan kalimatnya.\n- **Bilangan tingkat** pilih salah satu: Romawi (*abad XX*), `ke-` + angka (*abad ke-20*), atau huruf (*abad kedua puluh*).\n- **Ukuran, waktu, uang, persentase, dan nomor alamat** wajib memakai angka.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Kaidah Dasar Bilangan dalam Kalimat",
+          "butir": [
+            {
+              "judul_poin": "Bilangan Satu Kata vs. Lebih dari Satu Kata",
+              "penjelasan_singkat": "Tulis dengan huruf jika bilangan hanya satu kata, dan gunakan angka jika lebih dari satu kata.",
+              "contoh_penerapan": "Koleksi buku sejarah di perpustakaan daerah itu bertambah **tiga** judul baru dari total **125** eksemplar."
+            },
+            {
+              "judul_poin": "Bilangan Berurutan dalam Perincian",
+              "penjelasan_singkat": "Semua bilangan yang dirangkai berurutan dalam perincian wajib memakai angka, termasuk yang hanya satu kata.",
+              "contoh_penerapan": "Dari **80** peserta rapat, **52** orang setuju, **20** orang menolak, dan **8** orang memilih abstain."
+            },
+            {
+              "judul_poin": "Bilangan di Awal Kalimat",
+              "penjelasan_singkat": "Awal kalimat tidak boleh memakai angka; tulis dengan huruf (maksimal dua kata) atau ubah susunan kalimatnya.",
+              "contoh_penerapan": "**Lima puluh** mahasiswa penerima beasiswa menghadiri seminar, sedangkan panitia mengundang **250** peserta umum."
+            },
+            {
+              "judul_poin": "Bilangan Besar Sebagian Huruf",
+              "penjelasan_singkat": "Bilangan bulat bernilai besar boleh ditulis gabungan angka dan huruf agar lebih ringkas dan mudah dibaca.",
+              "contoh_penerapan": "Pembangunan jalan tol tersebut membutuhkan anggaran negara sebesar **250 miliar** rupiah."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Bilangan Tingkat, Akhiran -an, dan Nama Geografi",
+          "butir": [
+            {
+              "judul_poin": "Penulisan Bilangan Tingkat",
+              "penjelasan_singkat": "Tulis bilangan tingkat memakai angka Romawi, awalan ke- diikuti angka Arab, atau seluruhnya dengan huruf.",
+              "contoh_penerapan": "Perubahan iklim global mulai tercatat secara sistematis sejak **abad XX** (atau **abad ke-20** / **abad kedua puluh**)."
+            },
+            {
+              "judul_poin": "Angka yang Mendapat Akhiran -an",
+              "penjelasan_singkat": "Lambang bilangan yang diikuti akhiran -an wajib dirangkai menggunakan tanda hubung (-).",
+              "contoh_penerapan": "Lagu-lagu pop Indonesia era **1990-an** kembali digemari oleh generasi muda lewat platform musik digital."
+            },
+            {
+              "judul_poin": "Bilangan sebagai Unsur Nama Geografi",
+              "penjelasan_singkat": "Bilangan yang menjadi bagian nama wilayah atau tempat wajib ditulis seluruhnya menggunakan huruf.",
+              "contoh_penerapan": "Wisatawan mancanegara banyak mengunjungi kepulauan **Raja Ampat** serta kawasan **Simpang Lima** di pusat kota."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Satuan, Uang, Alamat, dan Bagian Karangan",
+          "butir": [
+            {
+              "judul_poin": "Satuan Ukuran, Waktu, Persentase, dan Uang",
+              "penjelasan_singkat": "Gunakan angka untuk menyatakan panjang, berat, luas, isi, waktu, persentase, dan nilai uang.",
+              "contoh_penerapan": "Rapat dimulai pukul **08.30** WIB dengan target efisiensi anggaran sebesar **15%** atau senilai **Rp50.000.000,00**."
+            },
+            {
+              "judul_poin": "Penomoran Alamat dan Bagian Karangan",
+              "penjelasan_singkat": "Gunakan angka untuk menomori jalan, rumah, kamar, serta bab, pasal, halaman, dan ayat kitab suci.",
+              "contoh_penerapan": "Kantor redaksi beralamat di Jalan Melati **Nomor 12**, sedangkan rujukan teori ada pada **Bab III**, **halaman 45**."
+            },
+            {
+              "judul_poin": "Penulisan Bilangan Pecahan",
+              "penjelasan_singkat": "Tulis pecahan dengan huruf dalam narasi umum, dan gunakan angka saat menyatakan data ukuran.",
+              "contoh_penerapan": "Sebanyak **dua pertiga** peserta setuju, sementara takaran bahan yang dibutuhkan hanya **0,5** liter air."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

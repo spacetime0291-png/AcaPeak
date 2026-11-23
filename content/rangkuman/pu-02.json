@@ -1,0 +1,409 @@
+{
+  "kode_bab": "pu-02",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 2: Penalaran Deduktif",
+  "batch_model": "hydrogen",
+  "jumlah_subbab": 5,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pu-02-01",
+      "judul_subbab": "Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Logika proposisi** menguji kebenaran kalimat gabungan berdasarkan fakta pada premis:\n\n* **Konjungsi ($P \\land Q$, 'dan'):** Bernilai benar hanya jika **semua** bagiannya terbukti benar.\n* **Disjungsi ($P \\lor Q$, 'atau'):** Bernilai benar jika **minimal satu** bagiannya benar (boleh keduanya).\n* **Implikasi ($P \\rightarrow Q$, 'jika... maka...'):** Bernilai salah hanya saat sebab ($P$) terjadi, tetapi akibat ($Q$) gagal.\n* **Biimplikasi ($P \\leftrightarrow Q$, 'jika dan hanya jika'):** Bernilai benar jika kedua bagiannya **kompak** (sama-sama benar atau sama-sama salah).",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Nilai Kebenaran Kata Hubung Dasar",
+          "butir": [
+            {
+              "judul_poin": "Konjungsi ($P \\land Q$ — Kata Hubung 'Dan')",
+              "penjelasan_singkat": "Kalimat dengan kata dan, serta, atau tetapi hanya benar jika seluruh faktanya terbukti benar.",
+              "contoh_penerapan": "Fakta: Rina lolos SNBP (B) dan diterima kedokteran (B). Maka **Rina lolos SNBP serta diterima kedokteran** bernilai benar."
+            },
+            {
+              "judul_poin": "Disjungsi Inklusif ($P \\lor Q$ — Kata Hubung 'Atau')",
+              "penjelasan_singkat": "Kalimat dengan kata atau bernilai benar selama minimal satu pilihan terjadi, termasuk jika keduanya terjadi sekaligus.",
+              "contoh_penerapan": "Syarat kerja: mahir Excel **atau** Python. Budi menguasai keduanya, sehingga ia tetap **memenuhi syarat** ($B \\lor B = B$)."
+            },
+            {
+              "judul_poin": "Implikasi ($P \\rightarrow Q$ — Pola 'Jika... Maka...')",
+              "penjelasan_singkat": "Janji atau aturan jika P, maka Q hanya dilanggar (salah) ketika sebab P terjadi, tetapi akibat Q gagal.",
+              "contoh_penerapan": "Aturan: jika hujan, jalan basah. Faktanya **tidak hujan dan jalan tetap basah**, aturan ini **tidak dilanggar** ($S \\rightarrow B = B$)."
+            },
+            {
+              "judul_poin": "Biimplikasi ($P \\leftrightarrow Q$ — Pola 'Jika dan Hanya Jika')",
+              "penjelasan_singkat": "Aturan jika dan hanya jika bernilai benar saat sebab dan akibat punya nasib sama: sama-sama terjadi atau sama-sama tidak.",
+              "contoh_penerapan": "Aturan: lulus jika dan hanya jika nilai $\\ge 75$. Dito mendapat **60 dan tidak lulus** ($S \\leftrightarrow S$), sehingga aturan **terbukti benar**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Syarat Cukup, Syarat Perlu, & Kalimat Bersyarat Majemuk",
+          "butir": [
+            {
+              "judul_poin": "Syarat Cukup (Sufficient Condition)",
+              "penjelasan_singkat": "Pada pola jika P, maka Q, unsur P adalah syarat cukup yang otomatis menjamin terjadinya Q.",
+              "contoh_penerapan": "Aturan: **jika membawa kartu peserta**, siswa boleh masuk ruang ujian. Membawa kartu ($P$) otomatis menjamin izin masuk ($Q$)."
+            },
+            {
+              "judul_poin": "Syarat Perlu (Necessary Condition)",
+              "penjelasan_singkat": "Pada implikasi $P \\rightarrow Q$, unsur Q adalah syarat wajib yang harus dipenuhi agar P bisa terjadi.",
+              "contoh_penerapan": "Aturan: warga boleh memilih **hanya jika berusia minimal 17 tahun**. Usia 17 tahun ($Q$) adalah syarat wajib untuk memilih ($P$)."
+            },
+            {
+              "judul_poin": "Syarat Dua Arah ($P \\leftrightarrow Q$)",
+              "penjelasan_singkat": "Frasa syarat perlu dan cukup atau jika dan hanya jika mengunci kedua pernyataan secara bolak-balik.",
+              "contoh_penerapan": "Definisi: segitiga sama sisi **jika dan hanya jika** ketiga sudutnya $60^\\circ$. Satu sifat terpenuhi otomatis menjamin sifat lainnya."
+            },
+            {
+              "judul_poin": "Syarat Gabungan 'Dan' ($(P \\land Q) \\rightarrow R$)",
+              "penjelasan_singkat": "Jika bagian sebab memakai kata dan ($P \\land Q$), akibat R baru pasti terjadi setelah kedua syarat lengkap.",
+              "contoh_penerapan": "Aturan: jika **lulus tes tulis dan wawancara** ($P \\land Q$), pelamar diterima ($R$). Andi baru lulus tes tulis, jadi ia **belum tentu diterima**."
+            },
+            {
+              "judul_poin": "Akibat Pilihan 'Atau' ($P \\rightarrow (Q \\lor R)$)",
+              "penjelasan_singkat": "Jika sebab P terpenuhi pada pola $P \\rightarrow (Q \\lor R)$, minimal satu dari dua pilihan akibat wajib terjadi.",
+              "contoh_penerapan": "Aturan: jika **terlambat**, siswa **didenda atau menyapu kelas**. Siswa terlambat dan tidak didenda, maka ia **pasti menyapu kelas**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Ekuivalensi & Negasi (Ingkaran) Kalimat Majemuk",
+          "butir": [
+            {
+              "judul_poin": "Mengubah Implikasi ke Disjungsi ($P \\rightarrow Q \\equiv \\neg P \\lor Q$)",
+              "penjelasan_singkat": "Kalimat jika P, maka Q memiliki makna yang persis sama dengan bentuk tidak P atau Q.",
+              "contoh_penerapan": "Kalimat: jika rajin belajar, maka lulus. Bentuk yang maknanya sama persis adalah **tidak rajin belajar atau lulus** ($\\neg P \\lor Q$)."
+            },
+            {
+              "judul_poin": "Hukum De Morgan (Ingkaran 'Dan' & 'Atau')",
+              "penjelasan_singkat": "Mengingkari kata dan mengubahnya menjadi atau ($\\neg(P \\land Q) \\equiv \\neg P \\lor \\neg Q$), begitu pula sebaliknya ($\\neg(P \\lor Q) \\equiv \\neg P \\land \\neg Q$).",
+              "contoh_penerapan": "Ingkaran dari *nilai matematika dan bahasa tinggi* adalah **nilai matematika tidak tinggi atau nilai bahasa tidak tinggi** ($\\neg P \\lor \\neg Q$)."
+            },
+            {
+              "judul_poin": "Ingkaran Implikasi ($\\neg(P \\rightarrow Q) \\equiv P \\land \\neg Q$)",
+              "penjelasan_singkat": "Ingkaran dari janji jika P, maka Q adalah bukti pelanggarannya: P terjadi, tetapi Q tidak terjadi (tanpa kata jika).",
+              "contoh_penerapan": "Ingkaran dari *jika harga naik, permintaan turun* adalah **harga naik dan permintaan tidak turun** ($P \\land \\neg Q$)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-02-02",
+      "judul_subbab": "Ekuivalensi dan Negasi Pernyataan",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Ekuivalensi dan negasi** membantu kamu mengubah bentuk kalimat logika tanpa merusak maknanya, atau mencari bukti nyata untuk membantahnya:\n\n* **Kontraposisi:** $p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$ (balik posisi sebab-akibat, lalu tambahkan kata *tidak* pada keduanya).\n* **Bentuk 'Atau' (Disjungsi):** $p \\rightarrow q \\equiv \\sim p \\lor q$ (tidak $p$ **atau** $q$).\n* **Ingkaran Implikasi:** $\\sim(p \\rightarrow q) \\equiv p \\land \\sim q$ (syarat $p$ terjadi, tetapi akibat $q$ gagal).\n* **Ingkaran Kalimat Majemuk:** Tukar kata hubung **dan** $\\leftrightarrow$ **atau**, lalu ingkari masing-masing bagian.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Mengubah Bentuk Kalimat 'Jika-Maka' (Ekuivalensi Implikasi)",
+          "butir": [
+            {
+              "judul_poin": "Kontraposisi Dasar ($p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$)",
+              "penjelasan_singkat": "Balik posisi sebab dan akibat, lalu tambahkan kata penyangkal (*tidak/bukan*) pada kedua bagian.",
+              "contoh_penerapan": "\"Jika hujan turun, jalanan basah\" setara dengan \"**Jika jalanan tidak basah, maka hujan tidak turun**.\""
+            },
+            {
+              "judul_poin": "Kontraposisi pada Syarat Majemuk",
+              "penjelasan_singkat": "Saat mengingkari syarat atau akibat yang memakai kata *dan/atau*, wajib tukar kata hubung tersebut.",
+              "contoh_penerapan": "\"Jika lulus tes dan sehat, ia diterima\" setara dengan \"**Jika tidak diterima, maka ia tidak lulus tes atau tidak sehat**.\""
+            },
+            {
+              "judul_poin": "Mengubah 'Jika-Maka' ke Bentuk 'Atau' ($p \\rightarrow q \\equiv \\sim p \\lor q$)",
+              "penjelasan_singkat": "Kalimat \"jika $p$ maka $q$\" memiliki makna yang sama persis dengan \"tidak $p$ atau $q$\".",
+              "contoh_penerapan": "\"Jika tidak belajar, nilai turun\" setara dengan \"**Belajar atau nilai turun**.\""
+            },
+            {
+              "judul_poin": "Pola Kalimat 'Hanya Jika' ($p \\text{ hanya jika } q$)",
+              "penjelasan_singkat": "Kalimat \"$p$ hanya jika $q$\" berarti $p \\rightarrow q$, sehingga setara dengan $\\sim q \\rightarrow \\sim p$.",
+              "contoh_penerapan": "\"Ia menang hanya jika berlatih\" setara dengan \"**Jika tidak berlatih, maka ia tidak menang**.\""
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Membantah Kalimat dan Hukum De Morgan (Negasi)",
+          "butir": [
+            {
+              "judul_poin": "Ingkaran Kalimat 'Jika-Maka' ($\\sim(p \\rightarrow q) \\equiv p \\land \\sim q$)",
+              "penjelasan_singkat": "Sebuah janji \"jika $p$ maka $q$\" terbukti bohong saat syarat $p$ sudah dipenuhi, tetapi hasil $q$ gagal terjadi.",
+              "contoh_penerapan": "Ingkaran \"Jika rajin, maka sukses\" adalah \"**Rajin, tetapi tidak sukses**.\""
+            },
+            {
+              "judul_poin": "Ingkaran Kata Hubung 'Dan' — De Morgan I ($\\sim(p \\land q) \\equiv \\sim p \\lor \\sim q$)",
+              "penjelasan_singkat": "Untuk membantah pernyataan \"$p$ dan $q$\", cukup buktikan salah satunya gagal: \"tidak $p$ atau tidak $q$\".",
+              "contoh_penerapan": "Ingkaran \"Siswa membawa KTP dan kartu ujian\" adalah \"**Siswa tidak membawa KTP atau tidak membawa kartu ujian**.\""
+            },
+            {
+              "judul_poin": "Ingkaran Kata Hubung 'Atau' — De Morgan II ($\\sim(p \\lor q) \\equiv \\sim p \\land \\sim q$)",
+              "penjelasan_singkat": "Ingkaran dari pilihan \"$p$ atau $q$\" menuntut kedua pilihan sama-sama tidak terjadi: \"tidak $p$ dan tidak $q$\".",
+              "contoh_penerapan": "Ingkaran \"Rapat digelar Senin atau Selasa\" adalah \"**Rapat tidak digelar Senin dan tidak digelar Selasa**.\""
+            },
+            {
+              "judul_poin": "Ingkaran Ganda ($\\sim(\\sim p) \\equiv p$)",
+              "penjelasan_singkat": "Dua kata penyangkal yang saling menimpa akan mengembalikan kalimat ke makna positif awalnya.",
+              "contoh_penerapan": "Ingkaran \"Tidak benar bahwa harga tiket tidak naik\" adalah \"**Harga tiket naik**.\""
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Ingkaran Kata Penanda Jumlah dan Syarat Dua Arah",
+          "butir": [
+            {
+              "judul_poin": "Ingkaran Kata Penanda 'Semua / Setiap' ($\\sim(\\forall x, P(x)) \\equiv \\exists x, \\sim P(x)$)",
+              "penjelasan_singkat": "Lawan dari aturan \"**semua/setiap**\" adalah \"**ada/beberapa ... tidak**\". Cukup satu pengecualian untuk menggugurkan klaim umum.",
+              "contoh_penerapan": "Ingkaran \"Semua peserta memakai jas\" adalah \"**Ada peserta yang tidak memakai jas**.\""
+            },
+            {
+              "judul_poin": "Ingkaran Kata Penanda 'Ada / Beberapa' ($\\sim(\\exists x, P(x)) \\equiv \\forall x, \\sim P(x)$)",
+              "penjelasan_singkat": "Ingkaran dari \"**ada/beberapa**\" adalah \"**semua/setiap ... tidak**\" atau \"**tidak ada yang ...**\".",
+              "contoh_penerapan": "Ingkaran \"Beberapa siswa terlambat\" adalah \"**Semua siswa tidak terlambat**\" atau \"**Tidak ada siswa yang terlambat**.\""
+            },
+            {
+              "judul_poin": "Ingkaran Syarat Dua Arah ($\\sim(p \\leftrightarrow q) \\equiv (p \\land \\sim q) \\lor (q \\land \\sim p)$)",
+              "penjelasan_singkat": "Kalimat \"$p$ jika dan hanya jika $q$\" terbukti salah saat kondisi kedua bagian saling bertolak belakang.",
+              "contoh_penerapan": "Ingkaran \"Lulus jika dan hanya jika nilai tuntas\" adalah \"**Lulus tetapi nilai tidak tuntas, atau tidak lulus tetapi nilai tuntas**.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-02-03",
+      "judul_subbab": "Penarikan Kesimpulan (Modus Ponens, Modus Tollens, Silogisme)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "Penarikan kesimpulan menguji ketepatan alur logika dari premis yang diberikan, bukan menebak fakta dunia nyata.\n\n- **Modus Ponens**: Jika aturan $p \\rightarrow q$ berlaku dan syarat $p$ terjadi, maka akibat $q$ pasti terjadi.\n- **Modus Tollens**: Jika aturan $p \\rightarrow q$ berlaku dan akibat $q$ tidak terjadi ($\\sim q$), maka syarat $p$ pasti tidak terjadi ($\\sim p$).\n- **Silogisme**: Jika $p \\rightarrow q$ dan $q \\rightarrow r$, sambungkan ujung ke ujung menjadi $p \\rightarrow r$.\n- **Pilihan Wajib (Disjungtif)**: Pada syarat $p \\lor q$ (*atau*), jika satu pilihan gugur ($\\sim p$), pilihan lainnya ($q$) wajib terjadi.\n- **Aturan Kata Jumlah**: Jika salah satu premis memakai kata *sebagian*, kesimpulannya wajib memakai kata *sebagian*—tidak boleh *semua*.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Aturan Penarikan Kesimpulan yang Sah",
+          "butir": [
+            {
+              "judul_poin": "Modus Ponens ($p \\rightarrow q, p \\therefore q$)",
+              "penjelasan_singkat": "Jika aturan $p \\rightarrow q$ berlaku dan syarat awal ($p$) terpenuhi, akibat ($q$) pasti terjadi.",
+              "contoh_penerapan": "Jika inflasi naik, suku bunga dinaikkan; bulan ini inflasi naik, **maka suku bunga dinaikkan**."
+            },
+            {
+              "judul_poin": "Modus Tollens ($p \\rightarrow q, \\sim q \\therefore \\sim p$)",
+              "penjelasan_singkat": "Jika aturan $p \\rightarrow q$ berlaku tetapi akibatnya tidak terjadi ($\\sim q$), syarat awal pasti tidak terjadi ($\\sim p$).",
+              "contoh_penerapan": "Jika vaksin efektif, angka rawat inap turun; nyatanya angka rawat inap tidak turun, **berarti vaksin tidak efektif**."
+            },
+            {
+              "judul_poin": "Silogisme Berantai ($p \\rightarrow q, q \\rightarrow r, r \\rightarrow s$)",
+              "penjelasan_singkat": "Beberapa aturan bersyarat yang saling menyambung bisa diringkas langsung dari syarat pertama ke akibat terakhir ($p \\rightarrow s$).",
+              "contoh_penerapan": "Jika hutan gundul, serapan air berkurang; jika serapan berkurang, banjir terjadi; **jadi, jika hutan gundul, banjir terjadi**."
+            },
+            {
+              "judul_poin": "Pilihan Wajib / Silogisme Disjungtif ($p \\lor q, \\sim p \\therefore q$)",
+              "penjelasan_singkat": "Pada syarat pilihan **atau** ($\\lor$), jika satu pilihan tidak terjadi ($\\sim p$), pilihan lainnya ($q$) wajib terjadi.",
+              "contoh_penerapan": "Rapat digelar secara daring atau luring; panitia membatalkan agenda daring, **sehingga rapat digelar secara luring**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Jebakan UTBK & Variasi Kalimat Syarat",
+          "butir": [
+            {
+              "judul_poin": "Jebakan 1: Membenarkan Akibat ($p \\rightarrow q, q \\therefore p$)",
+              "penjelasan_singkat": "Akibat ($q$) yang terjadi tidak menjamin sebab ($p$) pasti terjadi karena akibat bisa dipicu faktor lain.",
+              "contoh_penerapan": "Jika hujan turun, jalanan basah; sekarang jalanan basah, **maka tidak bisa disimpulkan bahwa hujan pasti turun**."
+            },
+            {
+              "judul_poin": "Jebakan 2: Menyangkal Sebab ($p \\rightarrow q, \\sim p \\therefore \\sim q$)",
+              "penjelasan_singkat": "Syarat awal yang tidak terjadi ($\\sim p$) tidak otomatis membatalkan akibat ($q$); kesimpulannya belum bisa dipastikan.",
+              "contoh_penerapan": "Jika lolos seleksi berkas, peserta ikut wawancara; Andi tidak lolos berkas, **namun nasib wawancaranya tidak bisa disimpulkan**."
+            },
+            {
+              "judul_poin": "Kalimat Setara / Kontraposisi ($p \\rightarrow q \\equiv \\sim q \\rightarrow \\sim p$)",
+              "penjelasan_singkat": "Kalimat *jika $p$ maka $q$* memiliki makna persis sama dengan *jika tidak $q$ maka tidak $p$* (dibalik lalu diberi kata *tidak*).",
+              "contoh_penerapan": "Pernyataan *jika rajin berlatih, tim menang* setara dengan **jika tim tidak menang, berarti tidak rajin berlatih**."
+            },
+            {
+              "judul_poin": "Variasi Kata Bersyarat: Hanya Jika dan Kecuali",
+              "penjelasan_singkat": "Pola *$p$ hanya jika $q$* berarti $p \\rightarrow q$, sedangkan pola *$p$ kecuali $q$* berarti $\\sim q \\rightarrow p$.",
+              "contoh_penerapan": "Kalimat *siswa lulus hanya jika nilai tuntas* bermakna **jika siswa lulus, maka nilainya pasti sudah tuntas**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Gabungan Kalimat Syarat dan Kata Jumlah (Semua / Sebagian)",
+          "butir": [
+            {
+              "judul_poin": "Silogisme Kata Jumlah: Semua + Semua",
+              "penjelasan_singkat": "Dua premis yang sama-sama memakai kata *semua* atau *setiap* menghasilkan kesimpulan yang juga berlaku untuk *semua* anggota.",
+              "contoh_penerapan": "Semua mamalia bernapas dengan paru-paru; semua paus adalah mamalia; **jadi, semua paus bernapas dengan paru-paru**."
+            },
+            {
+              "judul_poin": "Silogisme Kata Jumlah: Semua + Sebagian",
+              "penjelasan_singkat": "Jika salah satu premis memakai kata *sebagian*, *ada*, atau *beberapa*, kesimpulan yang sah wajib memakai kata *sebagian*.",
+              "contoh_penerapan": "Semua peneliti wajib menulis jurnal; sebagian dosen adalah peneliti; **maka sebagian dosen wajib menulis jurnal**."
+            },
+            {
+              "judul_poin": "Penerapan Aturan Umum ke Satu Orang / Objek",
+              "penjelasan_singkat": "Aturan umum *semua $P$ adalah $Q$* bekerja seperti panah syarat $P \\rightarrow Q$ saat diterapkan ke satu nama orang.",
+              "contoh_penerapan": "Semua peserta yang terlambat tidak boleh ujian; Budi datang terlambat, **sehingga Budi tidak boleh mengikuti ujian**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-02-04",
+      "judul_subbab": "Logika Kuantor dan Diagram Venn",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Logika kuantor** menguji cara menggabungkan pernyataan berpenanda jumlah lewat gambaran lingkaran (**Diagram Venn**):\n\n* **Semua / Seluruhnya ($A \\subset B$):** Lingkaran $A$ masuk penuh ke dalam lingkaran $B$. Tidak ada satu pun anggota $A$ yang keluar.\n* **Sebagian / Ada ($A \\cap B \\neq \\emptyset$):** Lingkaran $A$ dan $B$ beririsan minimal satu anggota—bahkan membuka peluang untuk semuanya.\n* **Tidak Ada ($A \\cap B = \\emptyset$):** Lingkaran $A$ dan $B$ terpisah total tanpa titik temu.\n* **Aturan Emas:** Begitu ada satu premis memakai kata **sebagian**, kesimpulannya wajib ikut memakai kata **sebagian**.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Penggabungan Pernyataan dan Irisan Lingkaran",
+          "butir": [
+            {
+              "judul_poin": "Rantai 'Semua' Bertingkat ($A \\subset B \\subset C$)",
+              "penjelasan_singkat": "Jika seluruh $A$ masuk ke dalam $B$ dan seluruh $B$ masuk ke dalam $C$, otomatis seluruh $A$ berada di dalam $C$.",
+              "contoh_penerapan": "Semua mamalia menyusui dan semua paus adalah mamalia, sehingga **semua paus menyusui**."
+            },
+            {
+              "judul_poin": "Irisan 'Semua' dan 'Sebagian' pada Subjek Utama",
+              "penjelasan_singkat": "Jika semua $A$ adalah $B$ dan sebagian $A$ adalah $C$, irisan $A$ dan $C$ otomatis ikut masuk ke wilayah $B$.",
+              "contoh_penerapan": "Semua dokter cerdas dan sebagian dokter adalah penulis, maka **sebagian orang cerdas adalah penulis**."
+            },
+            {
+              "judul_poin": "Jebakan Penghubung Tengah yang Tidak Penuh",
+              "penjelasan_singkat": "Jika semua $A$ adalah $B$ dan sebagian $B$ adalah $C$, irisan $C$ belum tentu menyentuh lingkaran $A$.",
+              "contoh_penerapan": "Semua mawar adalah bunga dan sebagian bunga berwarna kuning; kesimpulan sahnya adalah **belum tentu ada mawar berwarna kuning**."
+            },
+            {
+              "judul_poin": "Dua Pernyataan Sama-Sama 'Sebagian'",
+              "penjelasan_singkat": "Dua pernyataan yang sama-sama memakai kata **sebagian** tidak bisa menghasilkan kesimpulan pasti.",
+              "contoh_penerapan": "Sebagian siswa suka fisika dan sebagian penyuka fisika ikut olimpiade; maka **siswa yang ikut olimpiade tidak dapat dipastikan**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kelompok Saling Lepas dan Pembalikan Pernyataan (Ingkaran)",
+          "butir": [
+            {
+              "judul_poin": "Kelompok Terpisah Total ($B \\cap C = \\emptyset$)",
+              "penjelasan_singkat": "Jika seluruh $A$ ada di dalam $B$ dan tidak ada $B$ yang menyentuh $C$, otomatis $A$ juga terpisah total dari $C$.",
+              "contoh_penerapan": "Semua logam menghantarkan listrik dan tidak ada plastik yang menghantarkan listrik, sehingga **tidak ada logam yang merupakan plastik**."
+            },
+            {
+              "judul_poin": "Irisan 'Sebagian' dengan Kelompok Terpisah",
+              "penjelasan_singkat": "Anggota $A$ yang beririsan dengan $B$ otomatis ikut menjauhi $C$, sehingga sebagian $A$ dipastikan bukan anggota $C$.",
+              "contoh_penerapan": "Sebagian atlet adalah perenang dan tidak ada perenang yang merokok, maka **sebagian atlet tidak merokok**."
+            },
+            {
+              "judul_poin": "Ingkaran Pernyataan 'Semua' ($\\neg \\forall \\leftrightarrow \\exists \\neg$)",
+              "penjelasan_singkat": "Untuk membuktikan klaim 'semua $A$ adalah $B$' salah, kamu cukup menemukan minimal satu anggota $A$ yang tidak $B$.",
+              "contoh_penerapan": "Ingkaran dari 'Semua peserta UTBK membawa kartu ujian' adalah **ada peserta UTBK yang tidak membawa kartu ujian**."
+            },
+            {
+              "judul_poin": "Ingkaran Pernyataan 'Sebagian / Ada' ($\\neg \\exists \\leftrightarrow \\forall \\neg$)",
+              "penjelasan_singkat": "Untuk membantah klaim 'ada atau sebagian $A$ adalah $B$', seluruh irisannya harus dihapus menjadi 'tidak ada $A$ yang $B$'.",
+              "contoh_penerapan": "Ingkaran dari 'Sebagian mahasiswa menerima beasiswa penuh' adalah **tidak ada mahasiswa yang menerima beasiswa penuh**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Penanda Persentase dan Tumpukan Tiga Lingkaran",
+          "butir": [
+            {
+              "judul_poin": "Mengubah 'Mayoritas' atau Persentase Menjadi 'Sebagian'",
+              "penjelasan_singkat": "Kata *mayoritas*, *hampir seluruh*, atau angka di bawah $100\\%$ dalam logika deduktif setara dengan kata **sebagian**.",
+              "contoh_penerapan": "Mayoritas pegawai hadir tepat waktu dan semua yang tepat waktu mendapat bonus, maka **sebagian pegawai mendapat bonus**."
+            },
+            {
+              "judul_poin": "Angka Mutlak $100\\%$ dan $0\\%$",
+              "penjelasan_singkat": "Angka $100\\%$ atau *seluruhnya* berarti **semua** ($A \\subset B$), sedangkan $0\\%$ atau *tidak satu pun* berarti **tidak ada** ($A \\cap B = \\emptyset$).",
+              "contoh_penerapan": "$100\\%$ lulusan kelas ini diterima PTN dan $0\\%$ mahasiswa PTN menganggur, jadi **tidak ada lulusan yang menganggur**."
+            },
+            {
+              "judul_poin": "Tumpukan Irisan Lebih dari $100\\%$ (Prinsip Sarang Merpati)",
+              "penjelasan_singkat": "Jika jumlah dua persentase dalam satu kelompok melebihi $100\\%$, kedua irisan itu wajib bertumpuk sebesar selisih kelebihannya.",
+              "contoh_penerapan": "Di suatu kelas, $70\\%$ siswa suka kopi dan $60\\%$ suka teh; pasti **minimal $30\\%$ siswa menyukai keduanya**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-02-05",
+      "judul_subbab": "Penalaran Analitik (Urutan dan Kombinasi Posisi)",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "**Penalaran analitik UTBK** menguji ketelitianmu menyusun urutan atau kombinasi posisi berdasarkan aturan soal tanpa menebak.\n\n* **Mulai dari Jangkar:** Isi dulu posisi yang sudah pasti tetap atau pasangan yang wajib bersebelahan.\n* **Gunakan Simbol Cepat:** Pakai tanda panah ($A \\rightarrow B$) untuk urutan, dan tabel silang untuk mencocokkan ciri.\n* **Baca Aturan Terbalik:** Jika aturan menyebut 'A ikut maka B ikut' ($A \\rightarrow B$), artinya kalau B absen, A otomatis gugur ($\\sim B \\rightarrow \\sim A$).\n* **Syarat Pasti Benar:** Jawaban yang kamu pilih wajib berlaku di **semua** kemungkinan susunan yang sah.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Urutan Garis Lurus & Jadwal Berurutan (Inti UTBK)",
+          "butir": [
+            {
+              "judul_poin": "Kunci Posisi yang Sudah Pasti",
+              "penjelasan_singkat": "Isi lebih dulu slot yang nomor urut atau harinya sudah disebut secara pasti sebelum mengatur elemen lainnya.",
+              "contoh_penerapan": "Jika rapat C wajib hari Rabu pada jadwal Senin–Jumat, langsung tulis **Rabu = C** sebagai patokan utama."
+            },
+            {
+              "judul_poin": "Ikat Pasangan yang Bersebelahan",
+              "penjelasan_singkat": "Gabungkan dua elemen yang wajib bersebelahan menjadi satu paket, lalu ingat bahwa urutan di dalamnya masih bisa bertukar.",
+              "contoh_penerapan": "Syarat Andi dan Budi duduk berdampingan ditulis sebagai satu paket **[AB] atau [BA]** saat mengisi kursi."
+            },
+            {
+              "judul_poin": "Sambung Rantai Perbandingan",
+              "penjelasan_singkat": "Gabungkan petunjuk perbandingan yang terpisah memakai panah satu arah ($A \\rightarrow B$) agar urutan tertinggi ke terendah langsung terlihat.",
+              "contoh_penerapan": "Nilai Rani di atas Sinta dan Sinta di atas Tono diringkas jadi satu rantai **Rani $\\rightarrow$ Sinta $\\rightarrow$ Tono**."
+            },
+            {
+              "judul_poin": "Hitung Jeda Hari & Coret Slot Terlarang",
+              "penjelasan_singkat": "Hitung jumlah slot di antara dua jadwal dengan teliti, lalu langsung coret hari yang dilarang.",
+              "contoh_penerapan": "Jeda 2 hari antara jadwal $P$ dan $Q$ berarti jika $P$ hari Senin, maka **$Q$ wajib hari Kamis** (terpisah Selasa dan Rabu)."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Susunan Meja Bundar & Pemilihan Tim (Pengayaan)",
+          "butir": [
+            {
+              "judul_poin": "Posisi Berhadapan di Meja Bundar",
+              "penjelasan_singkat": "Pada meja bundar berjumlah genap ($2n$), dua orang duduk berhadapan jika terpisah tepat $n$ langkah kursi.",
+              "contoh_penerapan": "Pada meja 6 kursi bernomor 1–6, orang di kursi 1 **berhadapan langsung dengan kursi 4** (selisih 3 kursi)."
+            },
+            {
+              "judul_poin": "Arah Kiri dan Kanan Menghadap Meja",
+              "penjelasan_singkat": "Tentukan arah kiri dan kanan dari sudut pandang orang yang duduk menghadap tengah meja, bukan dari arah matamu melihat kertas.",
+              "contoh_penerapan": "Jika Dina duduk di posisi jam 6 menghadap tengah meja, maka **sebelah kanan Dina ada di posisi jam 3**."
+            },
+            {
+              "judul_poin": "Syarat Wajib Ikut & Aturan Terbaliknya",
+              "penjelasan_singkat": "Aturan $A \\rightarrow B$ mewajibkan $B$ ikut jika $A$ terpilih, sekaligus menggugurkan $A$ jika $B$ tidak terpilih ($\\sim B \\rightarrow \\sim A$).",
+              "contoh_penerapan": "Aturan jika Aris masuk tim maka Bima ikut berarti **jika Bima tidak terpilih, Aris otomatis tidak masuk tim**."
+            },
+            {
+              "judul_poin": "Syarat Saling Menolak ($C \\rightarrow \\sim D$)",
+              "penjelasan_singkat": "Aturan $C \\rightarrow \\sim D$ melarang $C$ dan $D$ dipilih bersamaan, sehingga maksimal hanya satu yang boleh masuk.",
+              "contoh_penerapan": "Jika menu Pedas dan Manis tidak boleh digabung, paket 3 menu yang berisi **Pedas wajib mencoret menu Manis**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tabel Pencocokan & Uji Kepastian Jawaban (Pengayaan)",
+          "butir": [
+            {
+              "judul_poin": "Coret Silang pada Tabel Pencocokan",
+              "penjelasan_singkat": "Pada pencocokan satu-lawan-satu, setiap tanda cocok (Ya) otomatis mencoret ($\\times$) semua kotak lain di baris dan kolom yang sama.",
+              "contoh_penerapan": "Jika Budi dipastikan berprofesi Dokter, coret pilihan **Dokter untuk orang lain** sekaligus profesi lain untuk Budi."
+            },
+            {
+              "judul_poin": "Menghubungkan Dua Petunjuk Lewat Perantara",
+              "penjelasan_singkat": "Gabungkan dua fakta dari kategori berbeda melalui petunjuk penghubung yang sama untuk menemukan pasangan yang tersembunyi.",
+              "contoh_penerapan": "Jika Rina tinggal di Bandung dan warga Bandung hobi melukis, maka **Rina dipastikan punya hobi melukis**."
+            },
+            {
+              "judul_poin": "Prinsip Pasti Benar di Semua Kemungkinan",
+              "penjelasan_singkat": "Sebuah pernyataan bernilai pasti benar hanya jika terbukti berlaku di seluruh kemungkinan susunan yang memenuhi aturan.",
+              "contoh_penerapan": "Jika susunan yang sah cuma $[A,B,C]$ atau $[A,C,B]$, pernyataan yang pasti benar adalah **$A$ berada di urutan pertama**."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

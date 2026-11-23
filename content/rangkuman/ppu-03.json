@@ -1,0 +1,335 @@
+{
+  "kode_bab": "ppu-03",
+  "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+  "bab": "Bab 3: Sintaksis dan Kalimat",
+  "batch_model": "hydrogen",
+  "jumlah_subbab": 4,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "ppu-03-01",
+      "judul_subbab": "Pola Dasar Kalimat (S-P-O-K-Pel)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Pola dasar kalimat** membantu kamu memetakan peran tiap kata agar kalimatmu efektif dan lolos standar EYD V:\n\n* **Subjek [S] & Predikat [P]:** Inti wajib sebuah kalimat. Ingat, [S] tidak boleh diawali kata depan.\n* **Objek [O] vs Pelengkap [Pel]:** [O] muncul setelah kata kerja aktif dan bisa dipasifkan, sedangkan [Pel] tidak bisa dipasifkan.\n* **Keterangan [K]:** Informasi tambahan (waktu, tempat, cara) yang posisinya bebas berpindah tanpa merusak makna.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Fondasi Inti Kalimat & Pola Inversi",
+          "butir": [
+            {
+              "judul_poin": "Subjek Wajib Bebas Kata Depan (Preposisi)",
+              "penjelasan_singkat": "Subjek berisi pelaku atau topik utama yang dibahas, dan tidak boleh diawali kata depan seperti di, ke, dari, bagi, atau dalam.",
+              "contoh_penerapan": "**Penelitian terbaru** [S] membuktikan [P] efektivitas vaksin tersebut [O] secara klinis [K]."
+            },
+            {
+              "judul_poin": "Predikat Tidak Harus Kata Kerja",
+              "penjelasan_singkat": "Selain kata kerja (verba), posisi Predikat setelah Subjek sah diisi oleh kata benda, kata sifat, bilangan, maupun frasa berkatar depan.",
+              "contoh_penerapan": "Ayahnya [S] **seorang dosen teknik** [P] di kampus negeri [K]."
+            },
+            {
+              "judul_poin": "Pola Kalimat Terbalik / Inversi (P-S)",
+              "penjelasan_singkat": "Pola inversi menaruh Predikat sebelum Subjek untuk menonjolkan peristiwa atau keberadaan, sering memakai kata *ada*, *terdapat*, atau partikel *-lah*.",
+              "contoh_penerapan": "**Terdapat** [P] **tiga kendala utama** [S] dalam distribusi logistik [K]."
+            },
+            {
+              "judul_poin": "Kesamaan Pola & Posisi Keterangan",
+              "penjelasan_singkat": "Dua kalimat punya pola sama hanya jika urutan perannya identik. Menggeser posisi Keterangan otomatis mengubah urutan rumus polanya.",
+              "contoh_penerapan": "**Kemarin** [K], **tim peneliti** [S] **menemukan** [P] **spesies baru** [O] (berpola K-S-P-O)."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pembedaan Objek (O) dan Pelengkap (Pel)",
+          "butir": [
+            {
+              "judul_poin": "Objek Muncul Setelah Kata Kerja Aktif Transitif",
+              "penjelasan_singkat": "Objek menempel langsung di belakang kata kerja aktif (*meN-*) dan bisa pindah ke depan menjadi Subjek saat kalimat dipasifkan.",
+              "contoh_penerapan": "Pemerintah [S] meresmikan [P] **jembatan layang baru** [O] (Pasif: *Jembatan layang baru diresmikan pemerintah*)."
+            },
+            {
+              "judul_poin": "Pelengkap Setelah Kata Kerja ber-, ter-, atau ke-an",
+              "penjelasan_singkat": "Frasa di belakang kata kerja berimbuhan *ber-*, *ter-*, atau *ke-an* berperan sebagai Pelengkap karena kalimatnya mustahil dipasifkan.",
+              "contoh_penerapan": "Negara Indonesia [S] berlandaskan [P] **Pancasila dan UUD 1945** [Pel]."
+            },
+            {
+              "judul_poin": "Pelengkap Setelah Kata Kerja Penghubung (Kopula)",
+              "penjelasan_singkat": "Unsur di sebelah kanan kata penghubung seperti *adalah*, *merupakan*, dan *menjadi* selalu berperan sebagai Pelengkap, bukan Objek.",
+              "contoh_penerapan": "Pendidikan karakter [S] merupakan [P] **fondasi kemajuan bangsa** [Pel]."
+            },
+            {
+              "judul_poin": "Kalimat Berobjek Ganda / Dwitransitif (S-P-O-Pel)",
+              "penjelasan_singkat": "Kata kerja berimbuhan *meN-kan* atau *meN-i* tertentu mengikat dua kata benda berurutan: yang pertama Objek, yang kedua Pelengkap.",
+              "contoh_penerapan": "Ibu [S] membelikan [P] **adik** [O] **sepatu sekolah baru** [Pel]."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Perluasan Fungsi & Penyederhanaan Kalimat Kompleks",
+          "butir": [
+            {
+              "judul_poin": "Anak Kalimat Pengganti Subjek atau Objek",
+              "penjelasan_singkat": "Anak kalimat yang diawali kata *bahwa* bisa mengisi satu peran utuh sebagai Subjek atau Objek dalam kalimat majemuk.",
+              "contoh_penerapan": "Hasil survei [S] membuktikan [P] **bahwa literasi digital meningkat** [O]."
+            },
+            {
+              "judul_poin": "Anak Kalimat Pengganti Keterangan",
+              "penjelasan_singkat": "Anak kalimat yang diawali kata penghubung seperti *ketika*, *karena*, atau *meskipun* berperan sebagai Keterangan dan bisa dipindah posisinya.",
+              "contoh_penerapan": "**Meskipun hujan turun deras** [K], pertandingan [S] tetap berlangsung [P]."
+            },
+            {
+              "judul_poin": "Memangkas Kalimat Panjang Menjadi Inti Kalimat",
+              "penjelasan_singkat": "Inti kalimat didapat dengan membuang semua Keterangan dan perluasan berpenanda *yang*, sehingga tersisa unsur wajib S-P-(O/Pel).",
+              "contoh_penerapan": "**Ilmuwan** asal Jepang itu **menemukan metode baru** (Inti: **Ilmuwan menemukan metode baru** [S-P-O])."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "ppu-03-02",
+      "judul_subbab": "Kalimat Inti dan Transformasi Kalimat",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Kalimat inti dan transformasi kalimat** menguji kejelianmu memangkas kalimat panjang menjadi kerangka dasarnya, atau menggabungkan kalimat pendek secara logis sesuai EYD V dan KBBI VI:\n\n* **Inti Kalimat:** Hanya menyisakan kerangka wajib **S-P**, **S-P-O**, atau **S-P-Pel** tanpa embel-embel keterangan.\n* **Perluasan & Aposisi:** Menambah keterangan atau informasi tambahan setara yang wajib diapit dua tanda koma.\n* **Penggabungan & Pemecahan:** Menyatukan dua kalimat memakai kata hubung yang tepat atau memecah kalimat panjang menjadi beberapa kalimat tunggal.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Menemukan Inti Kalimat (S-P, S-P-O, S-P-Pel)",
+          "butir": [
+            {
+              "judul_poin": "Pola Dasar Inti Kalimat Tunggal",
+              "penjelasan_singkat": "Inti kalimat hanya menyisakan Subjek inti dan Predikat inti (bersama Objek atau Pelengkap wajib) tanpa kata sifat maupun keterangan.",
+              "contoh_penerapan": "Kalimat *Tim arkeolog menemukan situs kuno di pedalaman Kalimantan pekan lalu* memiliki inti **Tim arkeolog menemukan situs**."
+            },
+            {
+              "judul_poin": "Inti Kalimat Majemuk Bertingkat (Ambil Induk Kalimat)",
+              "penjelasan_singkat": "Pada kalimat bertingkat, inti kalimat mutlak diambil dari induk kalimat. Anak kalimat yang diawali kata hubung harus dibuang.",
+              "contoh_penerapan": "Pada *Meskipun cuaca ekstrem melanda perairan selatan, kapal logistik tetap menyalurkan bantuan*, intinya adalah **Kapal logistik menyalurkan bantuan**."
+            },
+            {
+              "judul_poin": "Memangkas Perluasan Subjek Berawalan 'Yang'",
+              "penjelasan_singkat": "Bagian kalimat yang diawali kata *yang* hanya menjelaskan kata benda di depannya, sehingga harus dicoret saat mencari inti kalimat.",
+              "contoh_penerapan": "Kalimat *Satelit observasi yang diluncurkan pada awal tahun tersebut memantau perubahan tutupan hutan* berinti **Satelit observasi memantau perubahan**."
+            },
+            {
+              "judul_poin": "Menyertakan Objek dan Pelengkap Wajib",
+              "penjelasan_singkat": "Kata kerja tertentu tidak bisa berdiri sendiri karena maknanya akan menggantung. Kamu wajib menyertakan Objek atau Pelengkap setelah Predikat.",
+              "contoh_penerapan": "Kalimat *Kebijakan energi bersih berlandaskan prinsip pembangunan berkelanjutan sejak awal perumusannya* memiliki inti **Kebijakan berlandaskan prinsip** (S-P-Pel)."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Perluasan Kalimat dan Keterangan Tambahan (Aposisi)",
+          "butir": [
+            {
+              "judul_poin": "Keterangan Tambahan (Aposisi) Apit Dua Koma",
+              "penjelasan_singkat": "Aposisi menjelaskan kata benda sebelumnya secara setara dan bisa saling bertukar posisi. Jika berada di tengah kalimat, aposisi wajib diapit dua tanda koma.",
+              "contoh_penerapan": "B.J. Habibie**, Presiden ketiga Republik Indonesia,** merintis industri dirgantara nasional pada dekade 1990-an."
+            },
+            {
+              "judul_poin": "Menambah Keterangan dengan Kata Hubung yang Tepat",
+              "penjelasan_singkat": "Kalimat inti dapat diperluas dengan menambahkan keterangan waktu, syarat, atau tujuan memakai satu kata hubung yang baku.",
+              "contoh_penerapan": "Proyek pembangunan jembatan ditunda sementara **agar keselamatan pekerja tetap terjamin**."
+            },
+            {
+              "judul_poin": "Menjelaskan Kata Benda dengan Kata 'Yang'",
+              "penjelasan_singkat": "Kata *yang* dipakai untuk memberi keterangan tambahan pada Subjek atau Objek tanpa memutus hubungan langsung antara Subjek dan Predikat.",
+              "contoh_penerapan": "Kamus besar **yang diterbitkan oleh Badan Bahasa tersebut** menjadi rujukan utama peserta ujian."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Penggabungan Kalimat dan Hubungan Logis",
+          "butir": [
+            {
+              "judul_poin": "Menggabungkan Dua Gagasan yang Bertentangan",
+              "penjelasan_singkat": "Dua pernyataan yang berlawanan dalam satu kalimat digabung memakai *tetapi* atau *sedangkan* (didahului koma), atau memakai *meskipun* di awal.",
+              "contoh_penerapan": "Ekonomi global melambat, **tetapi** ekspor komoditas pangan nasional justru meningkat tajam."
+            },
+            {
+              "judul_poin": "Menggabungkan Hubungan Sebab dan Akibat",
+              "penjelasan_singkat": "Peristiwa penyebab dan dampaknya disatukan secara logis memakai *karena* (sebab) atau *sehingga* (akibat) tanpa kata hubung ganda.",
+              "contoh_penerapan": "Curah hujan ekstrem mengguyur hulu sungai **sehingga** permukiman warga terendam banjir."
+            },
+            {
+              "judul_poin": "Menggabungkan Tindakan Setara Tanpa Mengulang Subjek",
+              "penjelasan_singkat": "Dua kalimat bersubjek sama digabung dengan *dan* atau *serta* sambil menghilangkan subjek kedua dan menjaga kesamaan bentuk kata kerja.",
+              "contoh_penerapan": "Tim peneliti **mengumpulkan data lapangan dan menganalisisnya** menggunakan perangkat lunak statistik."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "4. Memecah Kalimat Majemuk Kompleks",
+          "butir": [
+            {
+              "judul_poin": "Memecah Kalimat Bertingkat Menjadi Kalimat Tunggal",
+              "penjelasan_singkat": "Pisahkan induk kalimat dan anak kalimat menjadi dua kalimat mandiri dengan membuang kata hubungnya.",
+              "contoh_penerapan": "*Karena pasokan kedelai impor tersendat, harga tahu di pasar melonjak* dipecah menjadi: **Pasokan kedelai impor tersendat** dan **Harga tahu di pasar melonjak**."
+            },
+            {
+              "judul_poin": "Menguraikan Keterangan Tambahan (Aposisi) Menjadi Kalimat Baru",
+              "penjelasan_singkat": "Keterangan aposisi atau penjelasan *yang* dipecah menjadi kalimat baru dengan memunculkan kembali kata benda yang dijelaskannya.",
+              "contoh_penerapan": "*Nusantara, ibu kota negara yang baru, dirancang dengan konsep kota hutan* dipecah menjadi **Nusantara dirancang dengan konsep kota hutan** dan **Nusantara adalah ibu kota negara yang baru**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "ppu-03-03",
+      "judul_subbab": "Kelogisan Kalimat dan Kepaduan Makna",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Kelogisan kalimat dan kepaduan makna** menguji masuk akalnya hubungan antarbagian kalimat serta ketepatan struktur sesuai EYD V dan KBBI VI:\n\n* **Kelogisan Pelaku–Tindakan:** Subjek [S] harus masuk akal melakukan atau mengalami tindakan pada predikat [P].\n* **Kepaduan Antarklausa:** Kata penghubung wajib selaras dengan arah logika sebab-akibat atau pertentangan.\n* **Antikalimat Rancu:** Hindari mencampur dua pola kalimat baku sekaligus, seperti *menurut X mengatakan* atau *membahas tentang*.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Kelogisan Pelaku, Tindakan, dan Nalar Kalimat",
+          "butir": [
+            {
+              "judul_poin": "Kesesuaian Subjek dengan Predikat Tindakan",
+              "penjelasan_singkat": "Subjek wajib berupa pelaku sah yang secara nyata mampu melakukan tindakan pada predikat.",
+              "contoh_penerapan": "**Tim peneliti** menganalisis sampel tanah untuk mengukur tingkat pencemaran logam berat di kawasan industri."
+            },
+            {
+              "judul_poin": "Kelogisan Keterangan Waktu dan Tempat",
+              "penjelasan_singkat": "Keterangan waktu dan tempat tidak boleh dijadikan subjek yang dikenai tindakan manusiawi.",
+              "contoh_penerapan": "**Ketua panitia** mempersilakan narasumber utama untuk menyampaikan paparan di hadapan peserta seminar."
+            },
+            {
+              "judul_poin": "Ketepatan Makna Kata Kerja Aktif dan Pasif",
+              "penjelasan_singkat": "Bentuk aktif atau pasif predikat harus selaras dengan sifat subjek dan tidak menciptakan makna bertabrakan.",
+              "contoh_penerapan": "**Korban kecelakaan** segera dilarikan warga menuju unit gawat darurat rumah sakit terdekat."
+            },
+            {
+              "judul_poin": "Ketiadaan Pertentangan Nalar dalam Satu Kalimat",
+              "penjelasan_singkat": "Dua bagian pernyataan dalam satu kalimat tidak boleh saling meniadakan kebenaran satu sama lain.",
+              "contoh_penerapan": "**Seluruh mahasiswa** wajib mengikuti ujian akhir, **kecuali** peserta yang memperoleh dispensasi resmi dari dekan."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Kepaduan Makna Antarklausa dan Kalimat Kompleks",
+          "butir": [
+            {
+              "judul_poin": "Kesesuaian Kata Penghubung Sebab-Akibat",
+              "penjelasan_singkat": "Kata *karena* mendahului faktor penyebab, sedangkan kata *sehingga* mendahului dampak yang ditimbulkan.",
+              "contoh_penerapan": "Curah hujan ekstrem mengguyur wilayah hulu **sehingga** debit air sungai meningkat drastis pada malam hari."
+            },
+            {
+              "judul_poin": "Ketepatan Kata Penghubung Pertentangan",
+              "penjelasan_singkat": "Gunakan kata penghubung pertentangan di dalam kalimat (*meskipun*) atau antarkalimat (*namun*) secara tunggal.",
+              "contoh_penerapan": "**Meskipun** anggaran penelitian terbatas, tim lapangan tetap menyelesaikan pengambilan data sesuai jadwal."
+            },
+            {
+              "judul_poin": "Menangkap Maksud Tersirat Kalimat Bersyarat",
+              "penjelasan_singkat": "Kalimat bersyarat (*apabila..., maka...*) hanya menjamin akibat jika syarat terpenuhi, bukan memastikan syarat sudah terjadi.",
+              "contoh_penerapan": "**Apabila** suku bunga acuan turun, biaya pinjaman modal usaha **akan** menjadi lebih terjangkau bagi pelaku industri."
+            },
+            {
+              "judul_poin": "Membedakan Kata Penghubung Tujuan dan Syarat",
+              "penjelasan_singkat": "Kata tujuan (*agar*, *supaya*) menyatakan sasaran tindakan, sedangkan kata syarat (*jika*, *bila*) menyatakan prasyarat.",
+              "contoh_penerapan": "Pemerintah memperketat standar emisi kendaraan bermotor **agar** tingkat polusi udara di perkotaan menurun."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Perbaikan Kalimat Rancu (Campur Aduk Dua Pola)",
+          "butir": [
+            {
+              "judul_poin": "Kata Kerja Aktif Bertemu Kata Depan",
+              "penjelasan_singkat": "Kata kerja aktif berawalan *me-* yang butuh objek wajib langsung diikuti objek tanpa disisipi kata depan (*tentang*, *akan*, *terhadap*).",
+              "contoh_penerapan": "Menteri Pertanian **membahas strategi** ketahanan pangan dalam rapat koordinasi nasional kemarin."
+            },
+            {
+              "judul_poin": "Kata Menurut Bertemu Kata Kerja Pelaporan",
+              "penjelasan_singkat": "Jangan menggabungkan kata depan *menurut* dengan kata kerja *mengatakan* atau *menyatakan* karena menghilangkan subjek kalimat.",
+              "contoh_penerapan": "**Menurut laporan bank sentral**, laju inflasi tahunan tetap berada dalam kisaran sasaran yang ditetapkan."
+            },
+            {
+              "judul_poin": "Imbuhan Ganda yang Tidak Baku",
+              "penjelasan_singkat": "Hindari penggabungan dua pola imbuhan berbeda pada satu kata dasar karena menghasilkan bentuk tidak baku.",
+              "contoh_penerapan": "Semua pihak sepakat **mengesampingkan** kepentingan kelompok demi kelancaran pengambilan keputusan bersama."
+            },
+            {
+              "judul_poin": "Kesejajaran Bentuk dalam Perincian",
+              "penjelasan_singkat": "Unsur-unsur yang dirinci dalam satu kalimat majemuk wajib memakai jenis kata dan bentuk imbuhan yang setara.",
+              "contoh_penerapan": "Tahapan metode ilmiah meliputi **pengumpulan** data, **pengolahan** sampel, dan **penarikan** kesimpulan secara objektif."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "ppu-03-04",
+      "judul_subbab": "Kalimat Pasif dan Aktif",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "**Kalimat aktif dan pasif** di UTBK menguji ketepatan mengubah posisi pelaku–sasaran sekaligus menjaga alur paragraf tetap padu sesuai EYD V dan KBBI VI:\n\n* **Pasif Awalan *di-* vs Kata Ganti Orang:** Pelaku orang ketiga memakai awalan *di-* (*dievaluasi peneliti*). Sebaliknya, pelaku orang pertama atau kedua memakai kata kerja dasar tanpa awalan (*kami evaluasi*).\n* **Makna Imbuhan Pasif *ter-* & *ke-...-an*:** Menyatakan kejadian tidak sengaja, kemampuan, atau tertimpa musibah.\n* **Konsistensi Sudut Pandang:** Menjaga fokus subjek tetap seragam antarkalimat serta mempertahankan makna utuh kalimat majemuk.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Mengubah Kalimat Aktif Berobjek ke Bentuk Pasif",
+          "butir": [
+            {
+              "judul_poin": "Pasif Awalan di- untuk Pelaku Orang Ketiga",
+              "penjelasan_singkat": "Objek kalimat aktif pindah menjadi subjek. Kata kerja berawalan meN- berubah menjadi di- jika pelakunya orang ketiga atau kata benda.",
+              "contoh_penerapan": "Proposal riset energi terbarukan itu **dievaluasi oleh tim pakar** sebelum mendapat dana hibah dari kementerian."
+            },
+            {
+              "judul_poin": "Pasif Tanpa Awalan untuk Pelaku Orang Pertama dan Kedua",
+              "penjelasan_singkat": "Objek pindah menjadi subjek, lalu diikuti langsung oleh kata ganti orang pertama atau kedua dan kata kerja dasar tanpa awalan.",
+              "contoh_penerapan": "Laporan realisasi anggaran kuartal ini sudah **kami serahkan** kepada inspektorat sejak kemarin pagi."
+            },
+            {
+              "judul_poin": "Penulisan Serangkai ku- dan kau- pada Kalimat Pasif",
+              "penjelasan_singkat": "Kata ganti orang tunggal *ku-* dan *kau-* wajib ditulis serangkai dengan kata kerja dasar tanpa awalan sesuai kaidah EYD V.",
+              "contoh_penerapan": "Arsip sejarah kota tua itu akhirnya **kutemukan** di laci paling bawah ruang dokumentasi."
+            },
+            {
+              "judul_poin": "Syarat Utama: Kalimat Aktif Wajib Punya Objek",
+              "penjelasan_singkat": "Hanya kalimat aktif berobjek yang bisa diubah ke bentuk pasif. Kalimat aktif tanpa objek tidak memiliki bentuk pasif.",
+              "contoh_penerapan": "Para delegasi **membahas krisis pangan global** bisa diubah menjadi **Krisis pangan global dibahas** oleh para delegasi."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Membedakan Makna Pasif Imbuhan ter- dan ke-...-an",
+          "butir": [
+            {
+              "judul_poin": "Awalan ter- Bermakna Tidak Sengaja",
+              "penjelasan_singkat": "Awalan *ter-* pada kata kerja pasif menunjukkan tindakan yang dialami subjek secara tidak sengaja atau tiba-tiba.",
+              "contoh_penerapan": "Berkas kontrak kerja sama di atas meja **terbawa** oleh staf bagian umum saat rapat berakhir."
+            },
+            {
+              "judul_poin": "Awalan ter- Bermakna Kemampuan",
+              "penjelasan_singkat": "Awalan *ter-* menyatakan kesanggupan subjek untuk dikenai tindakan, biasanya didahului kata ingkar *tidak* atau *belum*.",
+              "contoh_penerapan": "Penjelasan narasumber di bagian belakang auditorium **tidak terdengar** jelas akibat gangguan pengeras suara."
+            },
+            {
+              "judul_poin": "Konfiks ke-...-an Bermakna Terkena Dampak",
+              "penjelasan_singkat": "Imbuhan *ke-...-an* membentuk kata kerja pasif yang bermakna subjek menderita atau tertimpa kejadian yang tidak diinginkan.",
+              "contoh_penerapan": "Ratusan rumah warga di pesisir utara **kebanjiran** akibat gelombang pasang air laut dini hari tadi."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Menjaga Konsistensi Sudut Pandang dan Kesetaraan Makna",
+          "butir": [
+            {
+              "judul_poin": "Konsistensi Bentuk Aktif-Pasif dalam Kalimat Majemuk Setara",
+              "penjelasan_singkat": "Klausa-klausa dalam kalimat majemuk setara yang pelakunya sama wajib mempertahankan bentuk aktif atau pasif secara konsisten.",
+              "contoh_penerapan": "**Data lapangan dikumpulkan** oleh tim survei, lalu **diolah** menggunakan perangkat lunak statistik sebelum dipublikasikan."
+            },
+            {
+              "judul_poin": "Kesatuan Fokus Subjek Antarkalimat dalam Paragraf",
+              "penjelasan_singkat": "Pertahankan topik yang sama sebagai subjek lewat perubahan aktif-pasif agar perpindahan informasi antarkalimat terasa mulus.",
+              "contoh_penerapan": "**Vaksin generasi baru ini** telah lolos uji klinis; **vaksin tersebut kini didistribusikan** ke seluruh puskesmas daerah."
+            },
+            {
+              "judul_poin": "Kesetaraan Makna saat Memasifkan Kalimat Majemuk Bertingkat",
+              "penjelasan_singkat": "Mengubah kalimat majemuk bertingkat menjadi pasif cukup menukar objek induk kalimat menjadi subjek tanpa mengubah hubungan logis anak kalimat.",
+              "contoh_penerapan": "**Kebijakan baru itu ditolak serikat pekerja** karena dinilai merugikan kesejahteraan pekerja kontrak di pabrik."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "kode_bab": "pbm-02",
+  "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+  "bab": "Bab 2: Tanda Baca",
+  "batch_model": "hydrogen",
+  "jumlah_subbab": 3,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pbm-02-01",
+      "judul_subbab": "Tanda Titik, Koma, dan Titik Koma",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Tanda Koma (,)**: Wajib memisahkan anak kalimat di awal kalimat, mendahului kata hubung pertentangan di tengah kalimat (*tetapi, sedangkan, melainkan*), mengikuti kata hubung antarkalimat (*Namun, Oleh karena itu,*), mengapit keterangan tambahan, dan memisahkan rincian minimal 3 unsur.\n- **Larangan Koma**: Dilarang sebelum *bahwa, karena, sehingga, agar, jika* di tengah kalimat.\n- **Titik Koma (;)**: Memisahkan klausa setara tanpa kata hubung dan memisahkan rincian bertingkat yang sudah memuat koma.\n- **Tanda Titik (.)**: Dipakai di akhir kalimat, singkatan gelar atau nama, dan pemisah angka ribuan jumlah (bukan tahun atau halaman).",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Tanda Koma pada Klausa dan Kata Hubung",
+          "butir": [
+            {
+              "judul_poin": "Anak Kalimat Mendahului Induk Kalimat",
+              "penjelasan_singkat": "Tanda koma wajib memisahkan anak kalimat dari induk kalimat jika posisi anak kalimat ada di awal.",
+              "contoh_penerapan": "**Karena hujan turun dengan sangat deras**, pertandingan sepak bola antarkampus itu terpaksa ditunda hingga besok pagi."
+            },
+            {
+              "judul_poin": "Larangan Koma Sebelum Kata Hubung Penjelas atau Sebab-Akibat di Tengah",
+              "penjelasan_singkat": "Tanda koma dilarang mendahului kata *bahwa, karena, sehingga, agar,* dan *jika* saat induk kalimat berada di depan.",
+              "contoh_penerapan": "Tim peneliti menyimpulkan **bahwa metode pembelajaran baru ini** terbukti jauh lebih efektif daripada cara lama."
+            },
+            {
+              "judul_poin": "Koma Sebelum Kata Hubung Pertentangan di Tengah Kalimat",
+              "penjelasan_singkat": "Tanda koma wajib dipakai tepat sebelum kata hubung pertentangan seperti *tetapi, melainkan,* dan *sedangkan* di tengah kalimat.",
+              "contoh_penerapan": "Ia bukan tidak mampu membeli buku referensi itu**, melainkan** memang sedang menghemat pengeluaran bulanannya."
+            },
+            {
+              "judul_poin": "Koma Wajib Setelah Kata Hubung Antarkalimat",
+              "penjelasan_singkat": "Tanda koma wajib mengikuti kata hubung antarkalimat di awal kalimat, seperti *Oleh karena itu, Namun,* dan *Akan tetapi*.",
+              "contoh_penerapan": "**Oleh karena itu,** pemerintah segera memperketat pengawasan distribusi bahan pokok di seluruh pasar tradisional."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Tanda Koma pada Pemerincian, Keterangan Tambahan, dan Unsur Khusus",
+          "butir": [
+            {
+              "judul_poin": "Pemerincian Tiga Unsur atau Lebih (Koma Oxford)",
+              "penjelasan_singkat": "Tanda koma memisahkan setiap unsur dalam rincian minimal tiga hal, termasuk tepat sebelum kata *dan* atau *atau*.",
+              "contoh_penerapan": "Peserta ujian wajib membawa kartu identitas**,** pensil 2B**,** dan penghapus karet ke dalam ruangan."
+            },
+            {
+              "judul_poin": "Koma Pengapit Keterangan Tambahan (Aposisi)",
+              "penjelasan_singkat": "Tanda koma wajib mengapit keterangan tambahan (aposisi) yang sifatnya hanya melengkapi, bukan membatasi makna.",
+              "contoh_penerapan": "Soekarno**,** Presiden pertama Republik Indonesia**,** memproklamasikan kemerdekaan bangsa pada 17 Agustus 1945."
+            },
+            {
+              "judul_poin": "Koma pada Kata Seru dan Kata Sapaan",
+              "penjelasan_singkat": "Tanda koma memisahkan kata seru (*wah, aduh*) dan kata sapaan (*Bu, Pak, Nak*) dari bagian kalimat lainnya.",
+              "contoh_penerapan": "Kapan laporan penelitian ini harus dikumpulkan**, Bu**?"
+            },
+            {
+              "judul_poin": "Koma Pemisah Nama dan Gelar Akademik",
+              "penjelasan_singkat": "Tanda koma memisahkan nama orang dari singkatan gelar akademik di belakangnya agar tidak tertukar dengan singkatan nama.",
+              "contoh_penerapan": "Prof. Dr. Ratna Sari**, M.Hum.,** menyampaikan orasi ilmiah pada acara pengukuhan guru besar."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Tanda Titik Koma (;) dan Tanda Titik (.)",
+          "butir": [
+            {
+              "judul_poin": "Titik Koma Pemisah Klausa Setara Tanpa Kata Hubung",
+              "penjelasan_singkat": "Tanda titik koma menggantikan kata hubung untuk memisahkan dua bagian kalimat yang setara.",
+              "contoh_penerapan": "Ayah membaca surat kabar di teras**;** ibu menyiapkan sarapan di dapur."
+            },
+            {
+              "judul_poin": "Titik Koma Pemisah Rincian Frasa Kompleks",
+              "penjelasan_singkat": "Tanda titik koma memisahkan unsur rincian dalam kalimat yang bagian rinciannya sudah memakai tanda koma.",
+              "contoh_penerapan": "Syarat pendaftaran meliputi fotokopi ijazah yang dilegalisasi**;** pasfoto terbaru, berwarna, ukuran 3x4**;** dan surat keterangan sehat."
+            },
+            {
+              "judul_poin": "Tanda Titik pada Singkatan Nama, Gelar, dan Sapaan",
+              "penjelasan_singkat": "Tanda titik mengakhiri singkatan nama orang, gelar akademik, dan singkatan umum satu atau dua kata, bukan singkatan lembaga.",
+              "contoh_penerapan": "Surat resmi itu telah ditandatangani oleh **Drs. H. Ahmad Yani, S.H., M.H.** pada pekan lalu."
+            },
+            {
+              "judul_poin": "Tanda Titik Pemisah Ribuan vs Angka Tahun dan Halaman",
+              "penjelasan_singkat": "Tanda titik memisahkan bilangan ribuan yang menyatakan jumlah, tetapi dilarang dipakai pada angka ribuan yang bukan jumlah.",
+              "contoh_penerapan": "Sebanyak **12.500** peserta mengikuti ujian seleksi pada tahun **2026** seperti tercantum pada halaman **1050**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-02-02",
+      "judul_subbab": "Tanda Titik Dua, Hubung, dan Pisah",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "- **Titik Dua (`:`):** Muncul setelah kalimat lengkap (minimal sudah ada Subjek dan Predikat) yang diikuti perincian. Jangan taruh titik dua tepat setelah kata kerja atau kata depan.\n- **Tanda Hubung (`-`):** Menyambung bagian kata yang terpisah, seperti kata ulang, `ke-` + angka, huruf kecil + kapital (`se-Indonesia`), serta huruf yang dieja satu-satu.\n- **Tanda Pisah (`—`):** Ditulis rapat tanpa spasi untuk mengapit sisipan tambahan di tengah kalimat serta menyatakan rentang 'sampai dengan/ke' (`2020—2026`, `Jakarta—Bandung`).",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Tanda Titik Dua (:)",
+          "butir": [
+            {
+              "judul_poin": "Akhir Kalimat Lengkap yang Diikuti Perincian",
+              "penjelasan_singkat": "Dipakai di akhir pernyataan yang susunannya sudah tuntas (minimal Subjek-Predikat) lalu diikuti rincian.",
+              "contoh_penerapan": "Kami menyiapkan **perlengkapan kemah:** tenda, kompor lipat, matras, dan senter."
+            },
+            {
+              "judul_poin": "Larangan Tepat Setelah Kata Kerja Berobjek atau Kata Depan",
+              "penjelasan_singkat": "Jangan pakai titik dua jika rincian langsung menjadi objek kata kerja atau mengikuti kata depan.",
+              "contoh_penerapan": "Panitia **membutuhkan** kursi, meja, dan pengeras suara untuk acara seminar besok."
+            },
+            {
+              "judul_poin": "Sesudah Kata atau Ungkapan Pemerian",
+              "penjelasan_singkat": "Dipakai sesudah kata atau ungkapan yang butuh penjelasan langsung, seperti *ketua*, *hari*, atau *tempat*.",
+              "contoh_penerapan": "**Ketua:** Raden Wijaya; **Sekretaris:** Siti Aminah; **Bendahara:** Budi Santoso."
+            },
+            {
+              "judul_poin": "Penanda Tokoh Dialog dalam Naskah Drama",
+              "penjelasan_singkat": "Dipakai dalam naskah drama tepat setelah nama tokoh yang berbicara.",
+              "contoh_penerapan": "**Ibu:** \"Jangan lupa membawa payung karena langit tampak mendung.\""
+            },
+            {
+              "judul_poin": "Pemisah Jilid/Halaman, Bab/Ayat, dan Judul/Anak Judul",
+              "penjelasan_singkat": "Dipakai di antara nomor jilid dan halaman, bab dan ayat kitab suci, serta judul utama dan anak judul.",
+              "contoh_penerapan": "Kajian itu dimuat dalam jurnal *Bahasa* **12:45—60** serta merujuk pada **Surah Al-Baqarah: 255**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Hubung (-)",
+          "butir": [
+            {
+              "judul_poin": "Menyambung Unsur Kata Ulang",
+              "penjelasan_singkat": "Dipakai menyambung bagian-bagian pada semua bentuk kata ulang (utuh, berimbuhan, maupun berubah bunyi).",
+              "contoh_penerapan": "Para siswa **berlari-larian** di lapangan sambil membawa **buku-buku** pelajaran."
+            },
+            {
+              "judul_poin": "Merangkai Huruf Kecil dengan Kapital atau Angka",
+              "penjelasan_singkat": "Menyambung awalan *se-* dengan nama berhuruf kapital, *ke-* dengan angka, dan angka dengan akhiran *-an*.",
+              "contoh_penerapan": "Lomba lari **se-Indonesia** itu diikuti oleh peraih juara **ke-2** era **1990-an**."
+            },
+            {
+              "judul_poin": "Merangkai Singkatan Kapital dengan Imbuhan",
+              "penjelasan_singkat": "Dipakai menyambung singkatan berhuruf kapital semua dengan imbuhan di depan atau di belakangnya.",
+              "contoh_penerapan": "Berkas lamaran kerja tersebut harus segera **di-PDF-kan** dan dilampiri pemindaian **ber-KTP** asli."
+            },
+            {
+              "judul_poin": "Mengeja Huruf Kata dan Tanggal Berupa Angka",
+              "penjelasan_singkat": "Dipakai menyambung huruf yang dieja satu per satu serta memisahkan bagian tanggal berbentuk angka.",
+              "contoh_penerapan": "Kata *panitia* dieja **p-a-n-i-t-i-a**, sedangkan upacara diadakan pada **17-08-2026**."
+            },
+            {
+              "judul_poin": "Memperjelas Makna Bagian Kata",
+              "penjelasan_singkat": "Dipakai memperjelas batas bagian kata agar pembaca tidak salah menangkap arti.",
+              "contoh_penerapan": "Diskusi itu membahas proses **ber-evolusi** (mengalami evolusi), bukan **be-revolusi** (melakukan revolusi)."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Pisah (—) & Bedanya dengan Tanda Hubung",
+          "butir": [
+            {
+              "judul_poin": "Mengapit Sisipan Tambahan di Tengah Kalimat",
+              "penjelasan_singkat": "Dipakai membatasi sisipan kata atau klausa penjelas yang berada di luar inti kalimat.",
+              "contoh_penerapan": "Kemerdekaan bangsa itu**—saya yakin akan tercapai—**diperjuangkan oleh bangsa itu sendiri."
+            },
+            {
+              "judul_poin": "Menegaskan Keterangan Tambahan (Aposisi)",
+              "penjelasan_singkat": "Dipakai menegaskan keterangan tambahan atau sebutan lain agar kalimat lebih mudah dipahami.",
+              "contoh_penerapan": "Soekarno-Hatta**—Proklamator Kemerdekaan RI—**diabadikan menjadi nama bandar udara internasional."
+            },
+            {
+              "judul_poin": "Menyatakan Rentang 'Sampai Dengan' atau 'Sampai Ke'",
+              "penjelasan_singkat": "Dipakai di antara dua angka, tanggal, atau nama tempat yang bermakna 'sampai dengan' atau 'sampai ke'.",
+              "contoh_penerapan": "Proyek kereta cepat **Jakarta—Bandung** dikerjakan secara bertahap pada periode **2020—2026**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pbm-02-03",
+      "judul_subbab": "Tanda Petik dan Tanda Kurung",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "* **Petik Dua (`\"...\"`)**: Mengapit ucapan langsung, judul bagian karya (puisi, artikel, bab, lagu), dan istilah khusus/kiasan.\n* **Petik Tunggal (`'...'`)**: Mengapit kutipan di dalam kutipan lain serta makna atau terjemahan kata.\n* **Tanda Kurung (`(...)`)**: Mengapit penjelasan tambahan, singkatan/kepanjangan, dan huruf/angka rincian di dalam kalimat.",
+      "mode_tampilan": "katalog_kaidah",
+      "kelompok": [
+        {
+          "nama_kelompok": "Tanda Petik Dua (\"...\")",
+          "butir": [
+            {
+              "judul_poin": "Kutipan Langsung dari Pembicaraan atau Naskah",
+              "penjelasan_singkat": "Mengapit ucapan langsung atau kutipan dari naskah dan bahan tertulis lain.",
+              "contoh_penerapan": "Ibu berpesan, **\"Jangan lupa mengunci pintu sebelum berangkat ke sekolah.\"**"
+            },
+            {
+              "judul_poin": "Judul Puisi, Lagu, Artikel, atau Bab Buku",
+              "penjelasan_singkat": "Mengapit judul bagian karya yang belum terbit sebagai buku mandiri di dalam kalimat.",
+              "contoh_penerapan": "Peserta membaca makalah **\"Dampak Perubahan Iklim terhadap Ketahanan Pangan\"** di perpustakaan."
+            },
+            {
+              "judul_poin": "Istilah Ilmiah Kurang Dikenal atau Bermakna Khusus",
+              "penjelasan_singkat": "Mengapit istilah teknis yang belum umum atau kata yang punya arti kiasan.",
+              "contoh_penerapan": "Ia dikenal sebagai **\"tangan kanan\"** direktur utama di perusahaan teknologi tersebut."
+            },
+            {
+              "judul_poin": "Posisi Tanda Baca Penutup pada Kutipan Langsung",
+              "penjelasan_singkat": "Tanda baca penutup milik kutipan diletakkan di dalam tanda petik tutup.",
+              "contoh_penerapan": "**\"Apakah seluruh berkas pendaftaran sudah lengkap?\"** tanya petugas kepada peserta ujian."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Petik Tunggal ('...')",
+          "butir": [
+            {
+              "judul_poin": "Kutipan yang Tersusun di Dalam Kutipan Lain",
+              "penjelasan_singkat": "Mengapit kutipan langsung yang muncul di dalam kutipan langsung lainnya.",
+              "contoh_penerapan": "Tanya dia, **\"Kau dengar bunyi 'kring-kring' tadi?\"** sambil menoleh ke arah pintu."
+            },
+            {
+              "judul_poin": "Makna, Terjemahan, atau Padanan Ungkapan Asing",
+              "penjelasan_singkat": "Mengapit arti, terjemahan, atau penjelasan kata daerah dan kata asing.",
+              "contoh_penerapan": "Kata *tetirah* dalam bahasa Indonesia bermakna **'pergi ke tempat lain untuk memulihkan kesehatan'**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Tanda Kurung ((...)) dan Kurung Siku ([...])",
+          "butir": [
+            {
+              "judul_poin": "Tambahan Keterangan Singkatan atau Kepanjangan",
+              "penjelasan_singkat": "Mengapit singkatan atau kepanjangan yang baru diperkenalkan dalam teks.",
+              "contoh_penerapan": "Badan Riset dan Inovasi Nasional **(BRIN)** menggelar seminar teknologi energi terbarukan."
+            },
+            {
+              "judul_poin": "Keterangan Penjelas di Luar Inti Kalimat",
+              "penjelasan_singkat": "Mengapit info tambahan yang bisa dihapus tanpa merusak struktur inti kalimat.",
+              "contoh_penerapan": "Keterangan saksi ahli itu **(lihat halaman 45)** memperkuat bukti dugaan pelanggaran kontrak."
+            },
+            {
+              "judul_poin": "Huruf atau Kata Opsional dalam Kalimat",
+              "penjelasan_singkat": "Mengapit huruf atau kata yang boleh dimunculkan atau dihilangkan dalam kalimat.",
+              "contoh_penerapan": "Dia berangkat ke kantor selalu menaiki **(bus)** Transjakarta setiap pagi."
+            },
+            {
+              "judul_poin": "Huruf atau Angka Penanda Rincian Mendatar",
+              "penjelasan_singkat": "Mengapit huruf atau angka rincian yang ditulis berderet dalam satu kalimat.",
+              "contoh_penerapan": "Faktor penghambat produksi meliputi **(a)** bahan baku, **(b)** tenaga kerja, dan **(c)** modal."
+            },
+            {
+              "judul_poin": "Kurung Siku untuk Kurung Bertingkat atau Koreksi",
+              "penjelasan_singkat": "Mengapit keterangan tambahan di dalam bagian yang sudah bertanda kurung.",
+              "contoh_penerapan": "Persamaan kedua proses itu **(perbedaannya dibahas pada Bab II [lihat halaman 35])** perlu dicermati."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "kode_bab": "pu-01",
+  "subtes": "Subtes 1: Penalaran Umum (PU)",
+  "bab": "Bab 1: Penalaran Induktif",
+  "batch_model": "hydrogen",
+  "jumlah_subbab": 5,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pu-01-01",
+      "judul_subbab": "Generalisasi",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Generalisasi** adalah cara menarik kesimpulan umum dari beberapa fakta atau sampel khusus. Karena datanya tidak mencakup seluruh populasi, kebenarannya bersifat **peluang**.\n\n* **Alur Logika:** $\\text{Fakta Khusus } (S_1, S_2, \\dots, S_n) \\rightarrow \\text{Anggapan Mewakili} \\rightarrow \\text{Kesimpulan Umum}$\n* **Syarat Sah:** Jumlah sampel cukup, dipilih secara acak (tidak berat sebelah), dan tidak ada bukti penyangkal.\n* **Skala Kepastian:** Karena cuma berdasarkan sampel, kesimpulan generalisasi yang sah maksimal berstatus **Mungkin Benar**—tidak pernah **Pasti Benar**.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "Kata Penanda Jumlah & Proporsi Sampel",
+          "butir": [
+            {
+              "judul_poin": "Kata Penanda Jumlah Sebagian (Sebagian vs Mayoritas)",
+              "penjelasan_singkat": "Gunakan kata *sebagian*, *mayoritas*, atau *umumnya* jika data cuma menunjukkan persentase di bawah $100\\%$.",
+              "contoh_penerapan": "Survei pada $500$ mahasiswa mencatat **$78\\%$ mengalami mata lelah**; kesimpulan: **Mayoritas** mahasiswa mengalami mata lelah."
+            },
+            {
+              "judul_poin": "Memperluas Persentase ke Kelompok Serupa",
+              "penjelasan_singkat": "Terapkan persentase sampel ke kelompok lain hanya dengan kata peluang seperti *cenderung* atau *berpotensi*.",
+              "contoh_penerapan": "Sebanyak **$65\\%$ responden** di kota A memilih ojek daring; warga kota serupa **cenderung memilih** ojek daring."
+            },
+            {
+              "judul_poin": "Kata Penanda 'Semua' yang Dibatasi Syarat",
+              "penjelasan_singkat": "Kata *semua* boleh dipakai jika dibatasi ketat hanya untuk kelompok kecil yang seluruh anggotanya sudah diamati.",
+              "contoh_penerapan": "Ketiga cabang toko X mengalami kenaikan omzet; kesimpulan: **Semua cabang toko X yang diaudit** mengalami kenaikan omzet."
+            },
+            {
+              "judul_poin": "Kata Penanda Pengecualian (Tidak Semua)",
+              "penjelasan_singkat": "Satu saja bukti penyangkal di dalam data langsung menggugurkan kata *semua* dan mengubahnya menjadi *tidak semua*.",
+              "contoh_penerapan": "Empat jenis padi tahan hama, tetapi **jenis kelima gagal panen**; kesimpulan: **Tidak semua** jenis padi tahan hama."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Sinyal Tren & Prediksi Kemungkinan",
+          "butir": [
+            {
+              "judul_poin": "Sinyal Tren Konsisten Lintas Waktu",
+              "penjelasan_singkat": "Tangkap kata perubahan berulang (*meningkat*, *menurun*) dalam beberapa tahun untuk memprediksi arah berikutnya.",
+              "contoh_penerapan": "Penjualan buku digital **naik berturut-turut pada $2022$–$2024$**; kesimpulan: Minat baca digital **diprediksi terus meningkat**."
+            },
+            {
+              "judul_poin": "Sinyal Kesamaan Pola Lintas Kelompok",
+              "penjelasan_singkat": "Tarik kesimpulan umum jika beberapa kelompok berbeda menunjukkan hasil yang sama terhadap perlakuan serupa.",
+              "contoh_penerapan": "Pekerja kreatif, teknologi, dan perbankan **lebih produktif saat kerja hibrida**; pekerja kantoran **umumnya cocok** dengan kerja hibrida."
+            },
+            {
+              "judul_poin": "Kata Peluang untuk Prediksi (Paling Mungkin Benar)",
+              "penjelasan_singkat": "Pilih opsi dengan kata peluang lunak (*mungkin*, *berpeluang*, *berpotensi*) pada soal prediksi kejadian baru.",
+              "contoh_penerapan": "Pasien A, B, dan C pulih cepat setelah terapi tidur; pasien D **berpotensi pulih cepat** dengan terapi serupa."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Ciri Cacat Generalisasi Terburu-buru",
+          "butir": [
+            {
+              "judul_poin": "Sinyal Sampel Tunggal atau Cerita Pribadi",
+              "penjelasan_singkat": "Waspadai klaim umum yang cuma mengandalkan pengalaman pribadi, satu kasus viral, atau frasa *salah seorang*.",
+              "contoh_penerapan": "**Dua teman sekelasku** sukses tanpa kuliah; jadi, **pendidikan tinggi tidak lagi berguna** bagi anak muda."
+            },
+            {
+              "judul_poin": "Sinyal Sampel Berat Sebelah (Tidak Acak)",
+              "penjelasan_singkat": "Kesimpulan cacat jika survei populasi luas diambil dari lokasi atau kelompok yang sudah tersaring sejak awal.",
+              "contoh_penerapan": "Survei **di depan kedai kopi mahal** menyimpulkan **$90\\%$ warga kota** sanggup membeli kopi mahal setiap hari."
+            },
+            {
+              "judul_poin": "Mengabaikan Bukti Penyangkal di Teks",
+              "penjelasan_singkat": "Cacat terjadi saat kesimpulan memakai kata mutlak sambil mengabaikan data kegagalan yang tertulis jelas di teks.",
+              "contoh_penerapan": "Meski **empat dari sepuluh peserta gagal**, pelatih menyimpulkan **metode latihannya selalu berhasil** mencetak juara."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-01-02",
+      "judul_subbab": "Analogi",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Analogi induktif** menarik kesimpulan pada kasus baru ($B$) berdasarkan kemiripan cara kerja dengan kasus yang sudah terbukti ($A$).\n\n* **Alur Berpikir:** $\\text{Mirip Cara Kerja } (A \\approx B) \\rightarrow \\text{Asumsi Sama-Sama Berlaku} \\rightarrow \\text{Kesimpulan Kasus } (B)$\n* **Syarat Sah:** Kemiripan harus menyentuh **prinsip kerja utama**, bukan cuma mirip tampilan luar (*False Analogy*).\n* **Batas Kepastian:** Kesimpulan analogi maksimal berstatus **Mungkin Benar**, tidak pernah **Pasti Benar**.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "Pola Meniru Cara Kerja & Solusi",
+          "butir": [
+            {
+              "judul_poin": "Meniru Cara Kerja Alam ke Teknologi",
+              "penjelasan_singkat": "Menghubungkan cara kerja organ makhluk hidup ($A$) dengan rancangan teknologi ($B$) lewat kata hubung perbandingan.",
+              "contoh_penerapan": "**Sebagaimana** sel darah putih mengisolasi kuman sebelum menyebar, sistem *firewall* jaringan **bekerja menyaring** data mencurigakan."
+            },
+            {
+              "judul_poin": "Meniru Pola Alam ke Aturan Sosial",
+              "penjelasan_singkat": "Memakai pola keseimbangan alam ($A$) untuk menjelaskan aturan main dalam masyarakat atau ekonomi ($B$).",
+              "contoh_penerapan": "**Layaknya** ekosistem hutan yang kacau tanpa predator puncak, pasar bebas **akan dikuasai monopoli** tanpa aturan pengawas."
+            },
+            {
+              "judul_poin": "Memprediksi Solusi dari Kasus Serupa",
+              "penjelasan_singkat": "Menerapkan cara yang sudah sukses di kasus lama ($A$) ke masalah baru ($B$) yang punya akar masalah serupa.",
+              "contoh_penerapan": "**Mengadopsi aturan** pajak karbon Swedia yang sukses menekan emisi, tarif serupa **berpotensi menurunkan** limbah pabrik."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Sebab-Akibat yang Sebanding",
+          "butir": [
+            {
+              "judul_poin": "Sinyal Hubungan Sebab-Akibat Setara ($A : B :: C : D$)",
+              "penjelasan_singkat": "Menunjukkan bahwa perubahan pada kasus $A$ memicu akibat yang sebanding pada kasus $B$.",
+              "contoh_penerapan": "**Sebanding dengan** kenaikan suku bunga yang mengerem inflasi, pengetatan syarat kredit **akan memperlambat** laju belanja."
+            },
+            {
+              "judul_poin": "Analogi Batas Maksimal Beban Sistem",
+              "penjelasan_singkat": "Membandingkan rusaknya dua sistem berbeda akibat menerima beban yang melewati batas maksimalnya.",
+              "contoh_penerapan": "**Ibarat** jembatan yang patah saat muatan truk melebihi kekuatan baja, server **akan lumpuh** saat pengunjung melebihi kapasitas."
+            },
+            {
+              "judul_poin": "Sinyal Dampak Lanjutan yang Berantai",
+              "penjelasan_singkat": "Memprediksi akibat tahap kedua pada kasus $B$ berdasarkan rantai kejadian yang sudah terbukti pada kasus $A$.",
+              "contoh_penerapan": "**Sebagaimana** hilangnya lebah memicu gagal panen buah, berkurangnya taman bacaan **akan menurunkan** minat baca pelajar."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Menguji Kekuatan & Cacat Logika Analogi",
+          "butir": [
+            {
+              "judul_poin": "False Analogy (Mirip Tampilan, Beda Cara Kerja)",
+              "penjelasan_singkat": "Menyimpulkan dua hal punya kemampuan sama hanya karena tampilan luarnya mirip, padahal cara kerjanya berbeda.",
+              "contoh_penerapan": "Karena sama-sama punya **sayap dan mesin**, pesawat baling-baling dianggap **mampu menembus** luar angkasa seperti roket."
+            },
+            {
+              "judul_poin": "Melemahkan Argumen Lewat Faktor Pembeda",
+              "penjelasan_singkat": "Meruntuhkan perbandingan dengan menunjukkan adanya perbedaan krusial yang membuat cara $A$ gagal jika dipakai di $B$.",
+              "contoh_penerapan": "Rencana meniru sistem transportasi Singapura di Jakarta **melemah jika** luas wilayah dan jumlah penumpang **berbeda jauh**."
+            },
+            {
+              "judul_poin": "Jebakan Kata Pasti pada Kesimpulan Analogi",
+              "penjelasan_singkat": "Karena berbasis perbandingan, kesimpulan analogi hanya berupa peluang sehingga klaim mutlak pasti keliru.",
+              "contoh_penerapan": "Opsi yang menyebut kebijakan $B$ **pasti berhasil 100%** karena sukses di kota $A$ adalah **kesimpulan cacat**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-01-03",
+      "judul_subbab": "Hubungan Kausalitas (Sebab-Akibat)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Hubungan kausalitas** menguji apakah kejadian $A$ benar-benar memicu kejadian $B$ ($A \\rightarrow B$). Ingat, dua hal yang terjadi berurutan atau barengan belum tentu punya hubungan sebab-akibat.\n\n* **Syarat Sebab-Akibat:** Sebab harus terjadi lebih dulu dari akibat, punya mekanisme yang masuk akal, dan bebas dari faktor luar.\n* **Format Khas UTBK:** Kamu akan diminta menilai hubungan dua pernyataan (A dan B)—apakah saling memicu, dipicu faktor luar yang sama, atau tidak nyambung.\n* **Skala Kepastian:** Tanpa eksperimen laboratorium yang ketat, kesimpulan sebab-akibat dari pengamatan biasa maksimal berstatus **Mungkin Benar**.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "Peta Pola Hubungan Pernyataan (Format 5 Opsi)",
+          "butir": [
+            {
+              "judul_poin": "Sebab-Akibat Langsung ($A \\rightarrow B$)",
+              "penjelasan_singkat": "Pernyataan pertama memicu munculnya pernyataan kedua secara langsung tanpa perantara lain.",
+              "contoh_penerapan": "Hujan deras **mengakibatkan** air sungai meluap sehingga rumah di bantaran kali terendam banjir."
+            },
+            {
+              "judul_poin": "Sebab-Akibat Berantai ($A \\rightarrow B \\rightarrow C$)",
+              "penjelasan_singkat": "Sebab awal memicu akibat pertama, lalu akibat pertama ini menjadi penyebab baru bagi akibat akhir.",
+              "contoh_penerapan": "Harga BBM naik **memicu** lonjakan ongkos kirim, **yang berdampak pada** mahalnya harga bahan pangan."
+            },
+            {
+              "judul_poin": "Akibat dari Satu Penyebab Sama ($X \\rightarrow A, B$)",
+              "penjelasan_singkat": "Dua pernyataan terlihat nyambung, padahal keduanya adalah akibat dari satu pemicu luar yang sama.",
+              "contoh_penerapan": "Penjualan jas hujan melonjak dan kasus flu meningkat karena dipicu **datangnya musim hujan**."
+            },
+            {
+              "judul_poin": "Akibat dari Dua Penyebab Berbeda",
+              "penjelasan_singkat": "Dua kejadian muncul bersamaan, tapi berasal dari penyebab yang terpisah dan tidak saling memengaruhi.",
+              "contoh_penerapan": "Nilai rupiah melemah akibat **inflasi global**, sedangkan panen padi turun akibat **serangan hama wereng**."
+            },
+            {
+              "judul_poin": "Dua Pernyataan Tidak Saling Berhubungan",
+              "penjelasan_singkat": "Kedua pernyataan membahas topik berbeda tanpa jalur sebab-akibat maupun keterkaitan logis.",
+              "contoh_penerapan": "Populasi komodo di habitat aslinya stabil, sementara **harga tiket pesawat** domestik mengalami kenaikan."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Katalog Penanda Bahasa & Sinyal Wacana",
+          "butir": [
+            {
+              "judul_poin": "Kata Kunci Sebab-Akibat Eksplisit",
+              "penjelasan_singkat": "Kata hubung atau kata kerja yang menunjukkan dengan jelas mana penyebab dan mana akibatnya.",
+              "contoh_penerapan": "Paparan sinar UV berlebih **menyebabkan** kerusakan sel kulit **sehingga** risiko kanker meningkat tajam."
+            },
+            {
+              "judul_poin": "Sinyal Penyebab Utama vs Penyebab Tambahan",
+              "penjelasan_singkat": "Penanda bobot pengaruh yang membedakan faktor penentu utama dengan faktor pendorong tambahan.",
+              "contoh_penerapan": "Kekurangan zat besi adalah **faktor utama** anemia, **diperparah oleh** pola tidur yang tidak teratur."
+            },
+            {
+              "judul_poin": "Sinyal Syarat-Hasil & Uji Coba Terkontrol",
+              "penjelasan_singkat": "Pola syarat dan hasil yang menguji pengaruh satu perlakuan khusus terhadap kelompok uji.",
+              "contoh_penerapan": "**Apabila** dosis pupuk nitrogen ditambah $20\\%$, **maka** tinggi tanaman naik dibanding kelompok pembanding."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Deteksi Sesat Pikir & Jebakan Kausalitas",
+          "butir": [
+            {
+              "judul_poin": "Jebakan Urutan Waktu (*Post Hoc*)",
+              "penjelasan_singkat": "Mengira kejadian pertama pasti penyebab kejadian kedua hanya karena terjadi lebih dulu.",
+              "contoh_penerapan": "Setelah dinding kelas dicat biru, nilai ujian naik, lalu disimpulkan **cat biru bikin siswa pintar**."
+            },
+            {
+              "judul_poin": "Jebakan Kejadian Bersamaan (*Cum Hoc*)",
+              "penjelasan_singkat": "Menyimpulkan dua tren yang naik atau turun bareng sebagai sebab-akibat tanpa bukti mekanisme jelas.",
+              "contoh_penerapan": "Grafik penjualan es krim dan kasus tenggelam di pantai **sama-sama melonjak** setiap bulan Juli."
+            },
+            {
+              "judul_poin": "Faktor Pengganggu Tersembunyi (*Confounding*)",
+              "penjelasan_singkat": "Faktor luar yang memicu sebab dan akibat sekaligus sehingga menciptakan ilusi hubungan langsung.",
+              "contoh_penerapan": "Kebiasaan bawa korek api berkaitan erat dengan kanker paru, padahal pemicu aslinya adalah **kebiasaan merokok**."
+            },
+            {
+              "judul_poin": "Sebab-Akibat Terbalik (*Reverse Causation*)",
+              "penjelasan_singkat": "Tertukar menempatkan akibat sebagai penyebab karena kedua kondisi diamati pada waktu bersamaan.",
+              "contoh_penerapan": "Peneliti mengira **depresi memicu susah tidur**, padahal faktanya **kurang tidur kronis yang memicu depresi**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-01-04",
+      "judul_subbab": "Evaluasi Argumen (Memperkuat dan Memperlemah Pernyataan)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Evaluasi argumen** menguji seberapa kuat hubungan antara bukti (fakta) dan kesimpulan penulis lewat celah anggapan tersembunyi.\n\n* **Alur Argumen:** $\\text{Fakta (Premis)} + \\text{Anggapan Jembatan} \\rightarrow \\text{Kesimpulan (Klaim)}$\n* **Memperkuat (*Strengthen*):** Menutup celah keraguan dengan bukti baru atau menyingkirkan penyebab lain.\n* **Memperlemah (*Weaken*):** Menyerang anggapan jembatan dengan bukti penyangkal atau memunculkan faktor pemicu lain.\n* **Tidak Relevan:** Informasi di luar topik kesimpulan (seperti biaya, saran, atau objek berbeda) yang tidak mengubah kekuatan argumen.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "Pola Memperlemah Argumen (Weaken)",
+          "butir": [
+            {
+              "judul_poin": "Ada Penyebab Lain (Alternative Cause)",
+              "penjelasan_singkat": "Menunjukkan faktor lain di luar dugaan penulis yang sebenarnya memicu hasil tersebut ($X \\rightarrow Y$ diganti $Z \\rightarrow Y$).",
+              "contoh_penerapan": "Klaim: kopi bikin fokus. Pelemah: **peserta tes ternyata juga tidur delapan jam** sebelum ujian berlangsung."
+            },
+            {
+              "judul_poin": "Sebab-Akibat Terbalik (Reverse Causality)",
+              "penjelasan_singkat": "Membalik arah hubungan sehingga hal yang dikira akibat justru menjadi penyebab utamanya ($Y \\rightarrow X$).",
+              "contoh_penerapan": "Klaim: olahraga meredakan stres. Pelemah: **orang yang tidak stres memang punya lebih banyak energi** untuk rutin olahraga."
+            },
+            {
+              "judul_poin": "Bukti Pengecualian (Counterexample)",
+              "penjelasan_singkat": "Memberikan bukti nyata ketika penyebab terjadi ($X$), tetapi akibat yang dijanjikan ($Y$) malah tidak muncul.",
+              "contoh_penerapan": "Klaim: diskon menaikkan penjualan. Pelemah: **cabang toko A memberi diskon besar, tetapi penjualannya tetap sepi**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Memperkuat Argumen (Strengthen)",
+          "butir": [
+            {
+              "judul_poin": "Menyingkirkan Penyebab Lain",
+              "penjelasan_singkat": "Membuktikan tidak ada faktor luar ($\\neg Z$) yang ikut campur memengaruhi hasil selain faktor pilihan penulis.",
+              "contoh_penerapan": "Klaim: pupuk organik menyuburkan padi. Penguat: **lahan uji bebas hama dan mendapat air yang sama persis** dengan lahan pembanding."
+            },
+            {
+              "judul_poin": "Data Tambahan yang Searah",
+              "penjelasan_singkat": "Menambah bukti pembanding bahwa setiap kali penyebab bertambah, akibatnya juga ikut meningkat ($X\\uparrow \\rightarrow Y\\uparrow$).",
+              "contoh_penerapan": "Klaim: literasi digital mencegah hoaks. Penguat: **daerah dengan kelas literasi rutin mencatat penurunan laporan penipuan daring**."
+            },
+            {
+              "judul_poin": "Menjelaskan Cara Kerja (Mekanisme)",
+              "penjelasan_singkat": "Menjabarkan proses masuk akal tentang bagaimana fakta bisa menghasilkan kesimpulan ($\\text{Fakta} \\rightarrow \\text{Proses} \\rightarrow \\text{Hasil}$).",
+              "contoh_penerapan": "Klaim: teh hijau membakar lemak. Penguat: **zat katekin di dalamnya mempercepat pemecahan cadangan lemak** di hati."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Anggapan Tersembunyi & Pemecah Paradoks",
+          "butir": [
+            {
+              "judul_poin": "Anggapan Jembatan (Asumsi Implisit)",
+              "penjelasan_singkat": "Syarat tak tertulis yang wajib benar agar lompatan dari fakta menuju kesimpulan tetap sah.",
+              "contoh_penerapan": "Fakta: nilai ujian naik. Kesimpulan: cara belajar baru berhasil. Anggapan: **tingkat kesulitan soal tahun ini sama dengan tahun lalu**."
+            },
+            {
+              "judul_poin": "Penjelas Paradoks (Faktor Pembeda)",
+              "penjelasan_singkat": "Mendamaikan dua fakta yang bertolak belakang dengan memunculkan faktor ketiga yang membuat keduanya masuk akal ($A \\land B$ selaras).",
+              "contoh_penerapan": "Paradoks: panen beras naik, tetapi impor tetap tinggi. Penjelas: **ekspor beras premium melonjak tajam sehingga stok dalam negeri menipis**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Uji Relevansi & Kualitas Bukti (A-B)",
+          "butir": [
+            {
+              "judul_poin": "Tidak Relevan: Beda Topik atau Objek",
+              "penjelasan_singkat": "Pernyataan membahas subjek, tempat, waktu, atau urusan biaya yang tidak menyentuh inti kesimpulan.",
+              "contoh_penerapan": "Klaim: mobil listrik mengurangi polusi kota. Tidak relevan: **harga baterai mobil listrik diperkirakan turun tahun depan**."
+            },
+            {
+              "judul_poin": "Tidak Relevan: Sekadar Saran atau Opini",
+              "penjelasan_singkat": "Berisi kata anjuran seperti *sebaiknya*, *harus*, atau pendapat pribadi tanpa bukti kejadian nyata.",
+              "contoh_penerapan": "Klaim: kerja dari rumah menaikkan produktivitas. Tidak relevan: **perusahaan sebaiknya memberi tunjangan internet untuk semua karyawan**."
+            },
+            {
+              "judul_poin": "Menilai Kualitas Pernyataan A dan B",
+              "penjelasan_singkat": "Menguji pernyataan A dan B satu per satu terhadap kesimpulan utama (apakah memperkuat, memperlemah, atau tidak relevan).",
+              "contoh_penerapan": "Kesimpulan: jalan macet karena parkir liar. **Pernyataan A (razia parkir kurangi macet) memperkuat**; B (warna marka jalan) tidak relevan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pu-01-05",
+      "judul_subbab": "Evaluasi Kesesuaian Pernyataan (Format 5 Skala Kepastian)",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "**Evaluasi Kesesuaian Pernyataan** menguji seberapa kuat suatu klaim didukung oleh teks atau data menggunakan **5 Skala Kepastian**.\n\n* **Pasti Benar (PB):** Maknanya selaras mutlak atau merupakan ungkapan ulang yang persis sama dengan fakta di teks.\n* **Pasti Salah (PS):** Isinya menabrak atau bertentangan langsung dengan fakta yang tertulis jelas.\n* **Mungkin Benar (MB) / Mungkin Salah (MS):** Topiknya masih nyambung, tetapi buktinya di teks belum cukup untuk memastikan.\n* **Tidak Relevan (TR):** Membahas hal atau variabel baru yang sama sekali tidak disinggung di teks.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Penanda Kepastian Mutlak (Pasti Benar & Pasti Salah)",
+          "butir": [
+            {
+              "judul_poin": "Ungkapan Makna Setara & Kebalikan Syarat (Pasti Benar)",
+              "penjelasan_singkat": "Pernyataan hanya mengganti kata dengan sinonim yang sama persis, atau membalik syarat sekaligus menegasikannya ($P \\rightarrow Q$ setara dengan $\\neg Q \\rightarrow \\neg P$).",
+              "contoh_penerapan": "Premis: Jika curah hujan tinggi, debit sungai naik. Pernyataan PB: **Debit sungai tidak naik menandakan curah hujan tidak tinggi**."
+            },
+            {
+              "judul_poin": "Menurunkan Kata 'Semua' ke 'Sebagian' (Pasti Benar)",
+              "penjelasan_singkat": "Jika teks menyebut **semua** atau **seluruh** anggota punya sifat tertentu, klaim tentang **sebagian** anggota otomatis ikut benar.",
+              "contoh_penerapan": "Premis: Seluruh peserta lolos seleksi wajib daftar ulang. Pernyataan PB: **Sebagian peserta yang lolos seleksi wajib melakukan daftar ulang**."
+            },
+            {
+              "judul_poin": "Menabrak Fakta atau Menukar Sebab-Akibat (Pasti Salah)",
+              "penjelasan_singkat": "Pernyataan memelintir angka, menyangkal syarat, atau menukar posisi sebab dan akibat yang tertulis jelas ($A \\rightarrow B$ dibalik menjadi $B \\rightarrow A$).",
+              "contoh_penerapan": "Premis: Defisit kalori menurunkan massa lemak tubuh. Pernyataan PS: **Penurunan massa lemak tubuh merupakan penyebab utama terjadinya defisit kalori**."
+            },
+            {
+              "judul_poin": "Memaksakan Kata 'Semua' dari Fakta 'Sebagian' (Pasti Salah)",
+              "penjelasan_singkat": "Pernyataan melebih-lebihkan fakta terbatas (*sebagian*, *umumnya*) menjadi klaim mutlak tanpa pengecualian (*semua*, *selalu*, *pasti*).",
+              "contoh_penerapan": "Premis: Sebagian besar karyawan bekerja dari rumah pada Jumat. Pernyataan PS: **Seluruh karyawan tanpa terkecuali bekerja dari rumah setiap Jumat**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Pembeda Celah Informasi (Mungkin Benar vs. Mungkin Salah)",
+          "butir": [
+            {
+              "judul_poin": "Tebakan Dampak Lanjutan yang Searah (Mungkin Benar)",
+              "penjelasan_singkat": "Pernyataan menebak dampak lanjutan yang masuk akal dan searah dengan fakta teks, meski kejadiannya belum diceritakan.",
+              "contoh_penerapan": "Premis: Harga pupuk naik $30\\%$ musim ini. Pernyataan MB: **Biaya produksi petani padi berpotensi meningkat pada masa panen mendatang**."
+            },
+            {
+              "judul_poin": "Dugaan Pengecualian di Luar Kelompok Uji (Mungkin Salah)",
+              "penjelasan_singkat": "Pernyataan meragukan hasil umum teks atau menyebut pengecualian pada kelompok lain yang belum dibahas oleh teks.",
+              "contoh_penerapan": "Premis: Obat X efektif meredakan demam pada orang dewasa. Pernyataan MS: **Obat X tidak memberikan efek serupa pada pasien lansia**."
+            },
+            {
+              "judul_poin": "Menambah Alasan atau Penyebab yang Tidak Ditulis (MB/MS)",
+              "penjelasan_singkat": "Pernyataan menyisipkan alasan spesifik di balik suatu kejadian, padahal teks tidak pernah menyebutkan penyebabnya.",
+              "contoh_penerapan": "Premis: Penjualan buku cetak turun selama dua tahun. Pernyataan MB: **Penurunan tersebut dipicu oleh beralihnya pembaca ke buku digital**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Detektor Pergeseran Lingkup (Tidak Relevan)",
+          "butir": [
+            {
+              "judul_poin": "Membahas Topik atau Objek Baru yang Asing (Tidak Relevan)",
+              "penjelasan_singkat": "Pernyataan membandingkan atau membahas benda, tempat, maupun ukuran baru yang sama sekali tidak disinggung di teks.",
+              "contoh_penerapan": "Premis: Konsumsi teh hijau meningkatkan fokus kerja. Pernyataan TR: **Kopi arabika memiliki kandungan kafein lebih tinggi daripada teh hitam**."
+            },
+            {
+              "judul_poin": "Menyelipkan Opini atau Saran pada Teks Fakta (Tidak Relevan)",
+              "penjelasan_singkat": "Pernyataan berisi saran, penilaian moral, atau anjuran (*sebaiknya*, *harus*) terhadap teks yang murni memaparkan fakta.",
+              "contoh_penerapan": "Premis: Pembangunan jalan tol memangkas waktu tempuh antarprovinsi. Pernyataan TR: **Pemerintah sebaiknya memprioritaskan subsidi transportasi umum dibandingkan jalan tol**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "4. Evaluasi Tingkat Kepastian pada Tabel dan Grafik",
+          "butir": [
+            {
+              "judul_poin": "Hitung Selisih dan Pola Naik-Turun Langsung di Tabel (PB/PS)",
+              "penjelasan_singkat": "Klaim soal selisih, perbandingan, atau pola kenaikan antarbaris tabel bisa dipastikan langsung lewat hitungan angka yang tercatat.",
+              "contoh_penerapan": "Tabel mencatat suhu naik dari $25^{\\circ}\\text{C}$ ke $35^{\\circ}\\text{C}$ setiap jam. Pernyataan PB: **Kenaikan suhu konstan sebesar $10^{\\circ}\\text{C}$ per jam**."
+            },
+            {
+              "judul_poin": "Menebak Angka di Luar Batas Waktu/Uji Tabel (MB/MS)",
+              "penjelasan_singkat": "Klaim yang meramal angka di luar batas waktu atau dosis tertinggi pada tabel hanyalah prediksi (**Mungkin Benar/Salah**).",
+              "contoh_penerapan": "Grafik mengukur pertumbuhan tanaman hingga hari ke-$14$. Pernyataan MB: **Tinggi tanaman akan terus bertambah secara linear pada hari ke-$21$**."
+            },
+            {
+              "judul_poin": "Menebak Proses Ilmiah Tersembunyi di Balik Angka (MB/TR)",
+              "penjelasan_singkat": "Tabel hanya mencatat hasil ukur luar. Penjelasan proses kimia atau biologis yang tidak ditulis di keterangan tabel bernilai belum pasti.",
+              "contoh_penerapan": "Tabel menunjukkan laju reaksi meningkat pada $\\text{pH } 7$. Pernyataan MB: **Struktur enzim bekerja paling stabil pada kondisi netral tersebut**."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

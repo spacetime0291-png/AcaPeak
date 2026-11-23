@@ -1,0 +1,266 @@
+{
+  "kode_bab": "lbe-01",
+  "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+  "bab": "Bab 1: Main Idea & Purpose",
+  "batch_model": "hydrogen",
+  "jumlah_subbab": 3,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "lbe-01-01",
+      "judul_subbab": "Main Idea and Topic of the Passage",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "* **Topic:** Subjek umum yang dibahas bacaan. Bentuknya berupa frasa benda (*noun phrase*) pendek tanpa kata kerja.\n* **Main Idea:** Pesan utama penulis tentang topik tersebut. Bentuknya kalimat lengkap ($\\text{Topic} + \\text{Controlling Idea}$).\n* **Rumus Skimming Cepat:** Baca **kalimat pertama & terakhir Paragraf 1** untuk menangkap ide utama, lalu cek **kalimat pertama tiap paragraf berikutnya** untuk melihat poin pendukungnya.\n* **Aturan Goldilocks:** Jawaban yang benar harus pas merangkum semua paragraf—tidak terlalu sempit (*too narrow*) dan tidak melebar keluar dari isi teks (*too broad*).",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "Sinyal Gagasan Utama Seluruh Wacana",
+          "butir": [
+            {
+              "judul_poin": "Pola Deduktif di Kalimat Awal",
+              "penjelasan_singkat": "Ide pokok muncul langsung di kalimat pertama paragraf pembuka, lalu diikuti bukti atau contoh spesifik.",
+              "contoh_penerapan": "\"**Urban vertical farming reduces water consumption by 90 percent** compared to traditional agriculture. For instance, aeroponic towers in Singapore...\""
+            },
+            {
+              "judul_poin": "Pola Hook-to-Thesis di Akhir Paragraf 1",
+              "penjelasan_singkat": "Paragraf dibuka fakta umum atau cerita ringan, lalu gagasan utamanya ditaruh di kalimat terakhir paragraf pertama.",
+              "contoh_penerapan": "\"Coffee is traded globally every day. **Yet, rising temperatures threaten to halve suitable Arabica farmland by 2050.**\""
+            },
+            {
+              "judul_poin": "Pola Bantahan (Membalik Asumsi Umum)",
+              "penjelasan_singkat": "Penulis mengutip anggapan lama, lalu membaliknya dengan kata sinyal kontras untuk menyatakan pendapat aslinya.",
+              "contoh_penerapan": "\"Many assume multitasking boosts productivity. **However, neuroscientific studies reveal it actually fragments attention and slows cognitive processing.**\""
+            },
+            {
+              "judul_poin": "Gabungan Kalimat Topik Tiap Paragraf",
+              "penjelasan_singkat": "Kalau tidak ada satu kalimat tesis tunggal, gabungkan subjek yang berulang di awal tiap paragraf isi ($\\text{P2} + \\text{P3} + \\text{P4}$).",
+              "contoh_penerapan": "P2: \"**Solar microgrids** cut rural energy costs.\" P3: \"**Solar microgrids** also prevent grid blackouts during storms.\""
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Penanda Gagasan Pokok Paragraf Spesifik",
+          "butir": [
+            {
+              "judul_poin": "Sinyal Penambah Argumen (Furthermore / Moreover)",
+              "penjelasan_singkat": "Menandakan paragraf tersebut menambahkan alasan baru atau sudut pandang berbeda yang masih mendukung ide utama.",
+              "contoh_penerapan": "\"**Beyond economic savings, remote work significantly lowers corporate carbon emissions** by eliminating daily commuter traffic.\""
+            },
+            {
+              "judul_poin": "Sinyal Pertentangan atau Batasan (Conversely / Nonetheless)",
+              "penjelasan_singkat": "Paragraf berfokus pada pengecualian, keterbatasan, atau kritik terhadap klaim di paragraf sebelumnya.",
+              "contoh_penerapan": "\"**Conversely, critics argue that algorithmic grading reinforces historical biases** embedded in training datasets.\""
+            },
+            {
+              "judul_poin": "Sinyal Dampak dan Solusi (Consequently / To mitigate)",
+              "penjelasan_singkat": "Menunjukkan bahwa inti paragraf adalah akibat lanjutan suatu masalah atau langkah penyelesaiannya.",
+              "contoh_penerapan": "\"**To mitigate coastal erosion, engineers are restoring mangrove forests** along vulnerable tropical shorelines.\""
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pola Cakupan Judul & Pertanyaan Sentral",
+          "butir": [
+            {
+              "judul_poin": "Struktur Judul Tepat (Topik + Sudut Pandang)",
+              "penjelasan_singkat": "Judul terbaik berbentuk frasa benda ringkas yang mengikat subjek utama dan fokus pembahasan teks secara seimbang.",
+              "contoh_penerapan": "Teks dampak mikroplastik pada rantai makanan laut $\\rightarrow$ \"**Microplastics in Marine Food Webs: Ecological Consequences**\"."
+            },
+            {
+              "judul_poin": "Pertanyaan Proses & Alasan (How / Why)",
+              "penjelasan_singkat": "Teks yang menjelaskan cara kerja atau penyebab suatu fenomena selalu menjawab pertanyaan terbuka *How* atau *Why*.",
+              "contoh_penerapan": "Teks menjelaskan proses tidur membersihkan racun otak $\\rightarrow$ \"**How does sleep clear metabolic waste from the brain?**\""
+            },
+            {
+              "judul_poin": "Pertanyaan Perbandingan & Sejauh Mana (To what extent)",
+              "penjelasan_singkat": "Teks yang membandingkan dua metode atau menilai efektivitas kebijakan menjawab pertanyaan komparatif atau tingkat pengaruh.",
+              "contoh_penerapan": "Teks membandingkan baterai litium dan natrium $\\rightarrow$ \"**How do sodium-ion batteries compare to lithium-ion alternatives?**\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "lbe-01-02",
+      "judul_subbab": "Author's Purpose and Primary Objective",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Beda Topik vs Tujuan:** *Main idea* menjawab **apa** yang dibahas, sedangkan *Author's Purpose* menjawab **mengapa** penulis menulis teks atau kalimat tertentu.\n- **Tiga Level Analisis:**\n  1. **Makro (Teks Utuh):** Menangkap motif besar penulis (*to refute, to compare, to warn, to evaluate*).\n  2. **Meso (Paragraf/Forum):** Membaca peran satu kalimat (*concession, illustration*) atau maksud komentar netizen di forum.\n  3. **Mikro (Detail/Kutipan):** Melacak alasan penulis menyelipkan contoh, angka statistik, atau kutipan pakar.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Level Makro: Tujuan Utama Teks Utuh",
+          "butir": [
+            {
+              "judul_poin": "To Refute / Challenge a Claim (Membantah Anggapan)",
+              "penjelasan_singkat": "Penulis membawa bukti baru untuk meruntuhkan mitos, teori lama, atau anggapan umum yang keliru.",
+              "contoh_penerapan": "\"**Contrary to popular belief**, drinking eight glasses of water daily **lacks scientific backing**.\""
+            },
+            {
+              "judul_poin": "To Warn / Urge Action (Memperingatkan & Mendesak)",
+              "penjelasan_singkat": "Penulis menyoroti bahaya serius dari suatu tren lalu mendorong pembaca atau pemerintah segera bertindak.",
+              "contoh_penerapan": "\"Without immediate regulation, microplastic accumulation **poses an irreversible threat** to marine ecosystems.\""
+            },
+            {
+              "judul_poin": "To Compare / Evaluate (Membandingkan & Menilai)",
+              "penjelasan_singkat": "Penulis menimbang plus-minus dua metode, kebijakan, atau fenomena secara adil sebelum menyimpulkan.",
+              "contoh_penerapan": "\"**While** solar energy offers lower operational costs, nuclear power **provides far greater** grid reliability.\""
+            },
+            {
+              "judul_poin": "To Inform / Explain a Mechanism (Menjelaskan Cara Kerja)",
+              "penjelasan_singkat": "Penulis memaparkan proses ilmiah atau urutan peristiwa secara netral tanpa memihak atau mengajak.",
+              "contoh_penerapan": "\"Photosynthesis **occurs when** chlorophyll absorbs sunlight, **converting** carbon dioxide and water into glucose.\""
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Level Meso: Peran Kalimat dalam Paragraf",
+          "butir": [
+            {
+              "judul_poin": "Concession (Mengakui Sisi Lawan Sebagian)",
+              "penjelasan_singkat": "Penulis mengakui argumen lawan ada benarnya untuk sementara, lalu mematahkannya di bagian berikutnya.",
+              "contoh_penerapan": "\"**Admittedly**, remote work reduces commuting stress, **yet** it severely erodes spontaneous team collaboration.\""
+            },
+            {
+              "judul_poin": "Counterargument / Rebuttal (Bantahan Langsung)",
+              "penjelasan_singkat": "Penulis melempar sudut pandang berlawanan atau data tandingan untuk membatalkan klaim kalimat sebelumnya.",
+              "contoh_penerapan": "\"**However**, recent longitudinal data **contradicts this assumption**, showing zero correlation between screen time and myopia.\""
+            },
+            {
+              "judul_poin": "Illustration / Exemplification (Memberi Contoh Nyata)",
+              "penjelasan_singkat": "Penulis membumikan pernyataan abstrak di kalimat sebelumnya lewat satu kasus atau angka spesifik.",
+              "contoh_penerapan": "\"Many megacities have adopted congestion pricing; **for instance**, London saw a 30% drop in downtown traffic.\""
+            },
+            {
+              "judul_poin": "Transition / Pivot (Jembatan Pindah Fokus)",
+              "penjelasan_singkat": "Penulis menghubungkan dua gagasan berbeda atau menggeser bahasan dari masalah menuju solusi.",
+              "contoh_penerapan": "\"**Beyond** its environmental toll, fast fashion **also** creates severe labor inequities across developing nations.\""
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Level Meso: Motif Komentator di Thread Forum",
+          "butir": [
+            {
+              "judul_poin": "Sharing Personal Anecdote to Validate (Pengalaman Penguat)",
+              "penjelasan_singkat": "Komentator menceritakan pengalaman pribadi yang sejalan untuk membuktikan bahwa klaim penulis utama benar.",
+              "contoh_penerapan": "\"**I experienced the exact same issue** last year, and switching to an ergonomic chair fixed it.\""
+            },
+            {
+              "judul_poin": "Offering Practical Workaround (Solusi Alternatif)",
+              "penjelasan_singkat": "Komentator memberi trik praktis atau opsi lebih hemat untuk mengatasi kendala di postingan awal.",
+              "contoh_penerapan": "\"**Instead of** buying expensive software, **you can simply use** built-in browser extensions to block trackers.\""
+            },
+            {
+              "judul_poin": "Expressing Skepticism / Questioning (Menyatakan Keraguan)",
+              "penjelasan_singkat": "Komentator mempertanyakan kelayakan, akurasi, atau efek samping dari saran pengguna lain.",
+              "contoh_penerapan": "\"**Are we sure** this method works for older devices **without draining** the battery twice as fast?\""
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "4. Level Mikro: Alasan Penyisipan Detail & Kutipan",
+          "butir": [
+            {
+              "judul_poin": "Expert Quote for Credibility (Pinjam Otoritas Pakar)",
+              "penjelasan_singkat": "Penulis mengutip ilmuwan atau lembaga resmi agar argumennya terdengar objektif dan bisa dipercaya.",
+              "contoh_penerapan": "\"**According to Dr. Aris, a climate physicist**, 'arctic ice loss is accelerating beyond worst-case models.'\""
+            },
+            {
+              "judul_poin": "Statistics to Emphasize Scale (Angka Penegas Skala)",
+              "penjelasan_singkat": "Penulis memasang persentase atau angka besar untuk membuktikan dampak masalah yang tidak main-main.",
+              "contoh_penerapan": "\"Over **78% of surveyed companies** reported data breaches within six months of adopting unencrypted tools.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "lbe-01-03",
+      "judul_subbab": "Target Audience and Text Organization",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "- **Target Audience & Source:** Terbaca dari pilihan kata (*diction*: istilah teknis vs bahasa populer), nada tulisan (*tone*: objektif vs mengajak), dan jenis rekomendasinya.\n- **Text Organization:** Peta alur besar gagasan dari awal sampai akhir (*Problem-Solution*, *Compare-Contrast*, *Chronological*, *Cause-Effect*).\n- **Paragraph Relationship:** Hubungan logis antara satu paragraf dengan paragraf berikutnya (*elaboration*, *contrast*, *exemplification*, *counterargument*).\n- **Aturan Emas:** Baca **kalimat pertama dan terakhir** tiap paragraf untuk menangkap kerangka utuh tanpa tenggelam di detail kecil.",
+      "mode_tampilan": "katalog_sinyal_pola",
+      "kelompok": [
+        {
+          "nama_kelompok": "Pola Struktur Teks Utama (Overall Structure & Flow)",
+          "butir": [
+            {
+              "judul_poin": "Pola Problem–Solution (Masalah dan Solusi)",
+              "penjelasan_singkat": "Membuka bacaan dengan masalah atau krisis, lalu menawarkan solusi nyata berupa kebijakan atau teknologi.",
+              "contoh_penerapan": "Urban **congestion threatens** economic productivity; **to mitigate** this crisis, municipal planners are **implementing** congestion pricing zones."
+            },
+            {
+              "judul_poin": "Pola Cause–Effect (Sebab dan Akibat)",
+              "penjelasan_singkat": "Mengupas akar pemicu sebuah fenomena lalu merinci rangkaian dampak yang muncul setelahnya.",
+              "contoh_penerapan": "Prolonged ocean warming **triggers** coral bleaching, **resulting in** the collapse of local marine biodiversity."
+            },
+            {
+              "judul_poin": "Pola Compare–Contrast (Perbandingan dan Pertentangan)",
+              "penjelasan_singkat": "Menjajarkan dua konsep, metode, atau pihak untuk menyoroti persamaan dan perbedaan utamanya.",
+              "contoh_penerapan": "**Whereas** lithium-ion batteries offer high energy density, sodium-ion alternatives **conversely** excel in thermal stability and cost."
+            },
+            {
+              "judul_poin": "Pola Chronological / Process (Urutan Waktu atau Tahapan)",
+              "penjelasan_singkat": "Menyusun peristiwa sejarah atau tahapan cara kerja secara berurutan dari awal sampai akhir.",
+              "contoh_penerapan": "**Initially** discovered in **1928**, penicillin underwent mass purification **by 1943**, **subsequently** revolutionizing clinical infection treatment."
+            },
+            {
+              "judul_poin": "Alur General-to-Specific / Classification (Umum ke Rincian)",
+              "penjelasan_singkat": "Mulai dari gambaran besar atau definisi umum, lalu turun ke rincian kategori dan bukti lapangan.",
+              "contoh_penerapan": "Cognitive biases distort judgment **in three primary ways**: **first**, confirmation bias; **second**, anchoring; and **third**, availability heuristic."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Hubungan Logis Antarparagraf (Paragraph Relationship)",
+          "butir": [
+            {
+              "judul_poin": "Relasi Elaboration (Pendalaman atau Rincian Cara Kerja)",
+              "penjelasan_singkat": "Paragraf berikutnya memperjelas konsep, mekanisme, atau alasan di balik pernyataan paragraf sebelumnya.",
+              "contoh_penerapan": "[P1] Sleep clears neural waste. [P2] **Specifically, this clearance relies on** the glymphatic system expanding during deep sleep."
+            },
+            {
+              "judul_poin": "Relasi Exemplification (Ilustrasi Kasus atau Bukti Nyata)",
+              "penjelasan_singkat": "Paragraf kedua menyodorkan studi kasus, eksperimen, atau contoh nyata untuk membuktikan klaim umum paragraf pertama.",
+              "contoh_penerapan": "[P1] Invasive species disrupt island ecosystems. [P2] **A prime illustration is** the brown tree snake's introduction to Guam."
+            },
+            {
+              "judul_poin": "Relasi Contrast / Counterargument (Sanggahan atau Batasan)",
+              "penjelasan_singkat": "Paragraf lanjutan memberi batasan, kritik, atau sudut pandang berlawanan terhadap argumen paragraf sebelumnya.",
+              "contoh_penerapan": "[P1] Automated grading accelerates feedback. [P2] **Critics, however, contend that** algorithms fail to evaluate nuanced critical reasoning."
+            },
+            {
+              "judul_poin": "Relasi Consequence / Implication (Dampak atau Tindak Lanjut)",
+              "penjelasan_singkat": "Paragraf kedua membahas dampak lanjutan atau konsekuensi nyata dari poin di paragraf pertama.",
+              "contoh_penerapan": "[P1] Groundwater aquifers are depleting rapidly. [P2] **As a result**, agricultural yields in arid regions face severe contraction."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Identifikasi Target Pembaca & Sumber Publikasi (Audience & Source)",
+          "butir": [
+            {
+              "judul_poin": "Academic / Scientific Journal (Peneliti dan Akademisi)",
+              "penjelasan_singkat": "Penuh istilah teknis tanpa penjelasan awam, memakai alur riset, dan bersandar pada data lapangan.",
+              "contoh_penerapan": "**Multivariate regression** revealed a **statistically significant correlation ($p = 0.003$)** between **synaptic pruning** and adolescent executive function."
+            },
+            {
+              "judul_poin": "Policy Brief / Institutional Guide (Pembuat Kebijakan)",
+              "penjelasan_singkat": "Berfokus pada efisiensi anggaran, aturan makro, dan rekomendasi strategis bagi pemerintah atau pimpinan lembaga.",
+              "contoh_penerapan": "**Municipal authorities should mandate** zoning reforms and **reallocate subsidies** to accelerate low-income transit adoption."
+            },
+            {
+              "judul_poin": "Popular Media / Consumer Blog (Pembaca Umum)",
+              "penjelasan_singkat": "Memakai bahasa sehari-hari, sapaan langsung (*you*), analogi ringan, dan tips praktis yang bisa langsung dicoba.",
+              "contoh_penerapan": "Struggling with afternoon fatigue? **Try swapping** your second espresso for a **15-minute brisk walk** to reset your focus."
+            },
+            {
+              "judul_poin": "Academic Lecture / Textbook (Mahasiswa atau Pelajar)",
+              "penjelasan_singkat": "Memperkenalkan istilah bidang ilmu pelan-pelan lengkap dengan definisi jelas, analogi, dan rangkuman.",
+              "contoh_penerapan": "In economics, **opportunity cost—defined as** the value of the next best alternative forgone—governs every resource allocation decision."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, X, ChevronRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Search, X, ChevronRight, Sparkles, Zap } from 'lucide-react';
 import { ALL_UTBK_SUBCHAPTERS } from '../../lib/contentLoader';
 import { SMA_SUBJECTS } from '../../lib/smaSyllabusData';
 import { ENABLE_SMA_MODE } from '../../lib/featureFlags';
@@ -155,6 +156,17 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                 </button>
               )}
             </div>
+
+            {/* Cheat Sheet Rangkuman Link */}
+            <Link
+              to="/rangkuman"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition-all hover:scale-105 shadow-2xs shrink-0"
+              title="Buka Lembar Rangkuman / Cheat Sheet per Bab"
+            >
+              <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+              <span className="hidden md:inline">Cheat Sheet Bab</span>
+              <span className="md:hidden">Cheat Sheet</span>
+            </Link>
 
             {/* Desktop Theme Toggle */}
             <div className="hidden sm:block">

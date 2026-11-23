@@ -1,0 +1,251 @@
+{
+  "kode_bab": "pm-04",
+  "subtes": "Subtes 7: Penalaran Matematika (PM)",
+  "bab": "Bab 4: Analisis Data dan Probabilitas Terapan",
+  "batch_model": "neon",
+  "jumlah_subbab": 3,
+  "daftar_subbab": [
+    {
+      "kode_subbab": "pm-04-01",
+      "judul_subbab": "Interpretasi Grafik, Tabel, dan Statistik Kontekstual",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Rata-Rata Gabungan:** $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$. Selalu kalikan nilai tiap kelompok dengan jumlah anggotanya.\n- **Median ($Q_2$) & Kuartil ($Q_1, Q_3$):** Urutkan $n$ data dari kecil ke besar dulu; posisi median ada di data ke-$\\frac{n+1}{2}$.\n- **Skor Berbobot:** $\\text{Skor} = \\sum (w_i \\times s_i)$ dengan total bobot $\\sum w_i = 100\\%$.\n- **Persen vs Jumlah Asli:** Jangan tertipu persentase tinggi; hitung nilai aslinya lewat $\\text{Persentase} \\times \\text{Basis}$.\n- **Anggota Masuk/Keluar:** $\\bar{x}_{\\text{baru}} = \\frac{n_{\\text{lama}}\\bar{x}_{\\text{lama}} \\pm \\Delta \\text{Total}}{n_{\\text{baru}}}$.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Ukuran Pemusatan, Letak, dan Pembobotan",
+          "butir": [
+            {
+              "judul_poin": "Rata-Rata Gabungan dan Data Berfrekuensi",
+              "penjelasan_singkat": "Kalikan tiap nilai atau rata-rata kelompok dengan jumlah anggotanya: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.",
+              "contoh_penerapan": "Kelas A ($20$ siswa, rata-rata $80$) dan Kelas B ($30$ siswa, rata-rata $70$) punya rata-rata gabungan **$\\frac{20(80)+30(70)}{50} = 74$**."
+            },
+            {
+              "judul_poin": "Posisi Median ($Q_2$) dan Kuartil ($Q_1, Q_3$)",
+              "penjelasan_singkat": "Urutkan dulu $n$ data dari paling kecil. Letak $Q_k$ ada di data ke-$\\frac{k(n+1)}{4}$.",
+              "contoh_penerapan": "Dari $11$ data terurut, $Q_1$ ada di data ke-$\\frac{1(12)}{4} = 3$, sedangkan median di **data ke-$6$**."
+            },
+            {
+              "judul_poin": "Jangkauan ($R$) dan Jangkauan Interkuartil ($IQR$)",
+              "penjelasan_singkat": "Sebaran total dihitung lewat $R = x_{\\text{maks}} - x_{\\text{min}}$, sedangkan sebaran $50\\%$ data tengah lewat $IQR = Q_3 - Q_1$.",
+              "contoh_penerapan": "Jika $Q_1 = 62$ dan $Q_3 = 84$, maka **jangkauan interkuartilnya $84 - 62 = 22$**."
+            },
+            {
+              "judul_poin": "Indeks dan Skor Penilaian Berbobot",
+              "penjelasan_singkat": "Kalikan tiap skor dengan bobotnya lalu jumlahkan: $\\text{Skor} = \\frac{\\sum (w_i \\times s_i)}{\\sum w_i}$. Biasanya $\\sum w_i = 100\\%$.",
+              "contoh_penerapan": "Tes tulis $80$ (bobot $60\\%$) dan wawancara $90$ (bobot $40\\%$) menghasilkan skor **$0,6(80) + 0,4(90) = 84$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Dinamika Perubahan Data dan Evaluasi Klaim",
+          "butir": [
+            {
+              "judul_poin": "Perubahan Rata-Rata Saat Anggota Masuk atau Keluar",
+              "penjelasan_singkat": "Cari total nilai lama dulu, lalu sesuaikan: $\\bar{x}_{\\text{baru}} = \\frac{n_{\\text{lama}}\\bar{x}_{\\text{lama}} \\pm \\Delta \\text{Total}}{n_{\\text{baru}}}$.",
+              "contoh_penerapan": "Rata-rata $4$ anak adalah $75$. Masuk $1$ anak bernilai $90$, maka rata-rata baru **$\\frac{4(75)+90}{5} = 78$**."
+            },
+            {
+              "judul_poin": "Dampak Data Baru terhadap Median dan Modus",
+              "penjelasan_singkat": "Menambah satu data hanya menggeser posisi median maksimal setengah langkah. Modus baru berubah jika frekuensi tertingginya tersalip.",
+              "contoh_penerapan": "Data $\\{4, 6, 8\\}$ (median $6$) ditambah angka $100$ jadi $\\{4, 6, 8, 100\\}$; **median cuma bergeser ke $7$**."
+            },
+            {
+              "judul_poin": "Persentase vs Jumlah Asli pada Tabel",
+              "penjelasan_singkat": "Persen besar dari basis kecil bisa kalah dari persen kecil pada basis besar: $\\text{Nilai} = \\text{Persentase} \\times \\text{Basis}$.",
+              "contoh_penerapan": "Kenaikan $20\\%$ dari omzet $\\text{Rp}10\\text{ juta}$ (**$\\text{Rp}2\\text{ juta}$**) lebih kecil daripada $5\\%$ dari $\\text{Rp}100\\text{ juta}$ (**$\\text{Rp}5\\text{ juta}$**)."
+            },
+            {
+              "judul_poin": "Persentase Perubahan dan Nilai Awal",
+              "penjelasan_singkat": "Penyebut perubahan persentase selalu nilai awal, bukan nilai akhir: $\\Delta\\% = \\frac{\\text{Akhir} - \\text{Awal}}{\\text{Awal}} \\times 100\\%$.",
+              "contoh_penerapan": "Harga naik dari $\\text{Rp}80.000$ ke $\\text{Rp}100.000$ berarti naik **$\\frac{20.000}{80.000} \\times 100\\% = 25\\%$**, bukan $20\\%$."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Pembacaan Grafik Kompleks dan Pengambilan Keputusan",
+          "butir": [
+            {
+              "judul_poin": "Diagram Pencar (Scatter Plot) dan Arah Korelasi",
+              "penjelasan_singkat": "Titik yang naik ke kanan menandakan korelasi positif, turun berarti negatif. Makin rapat titiknya, makin kuat hubungannya.",
+              "contoh_penerapan": "Titik biaya iklan vs penjualan membentuk jalur naik yang rapat, tandanya **korelasi positif kuat**."
+            },
+            {
+              "judul_poin": "Diagram Kotak-Garis (Boxplot) dan Lima Ukuran Ringkasan",
+              "penjelasan_singkat": "Ujung garis adalah $x_{\\text{min}}$ dan $x_{\\text{maks}}$; pinggir kotak adalah $Q_1$ dan $Q_3$; garis di dalam kotak adalah median ($Q_2$).",
+              "contoh_penerapan": "Jika garis median bergeser ke kiri (dekat $Q_1$), artinya **separuh data bawah lebih rapat** (sebaran miring kanan)."
+            },
+            {
+              "judul_poin": "Histogram dan Grafik Dua Sumbu (Dual-Axis)",
+              "penjelasan_singkat": "Pada histogram, tinggi batang menunjukkan frekuensi interval. Pada grafik dua sumbu, baca tiap garis sesuai skala sumbunya sendiri.",
+              "contoh_penerapan": "Garis laba (sumbu kiri, jutaan) berpotongan dengan garis margin (sumbu kanan, persen) **bukan berarti nilainya sama**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pm-04-02",
+      "judul_subbab": "Peluang Kejadian dan Pengambilan Keputusan Berbasis Data",
+      "klasifikasi_materi": "INTI",
+      "konsep_inti_markdown": "- **Peluang Dasar:** $P(A) = \\frac{n(A)}{n(S)}$, nilainya selalu di antara $0$ sampai $1$. Peluang kejadian tidak terjadi (komplemen) adalah $P(A^c) = 1 - P(A)$.\n- **Peluang Bersyarat:** $P(A|B) = \\frac{n(A \\cap B)}{n(B)}$. Abaikan total seluruh tabel; fokus saja pada baris atau kolom syarat $B$ sebagai semesta baru.\n- **Kejadian Gabungan:** Pilihan alternatif ('ATAU') yang tidak bisa terjadi bersamaan dijumlahkan ($+$). Tahapan berurutan ('LALU') yang saling bebas dikalikan ($\\times$).\n- **Keputusan Berbasis Data:** Bandingkan rata-rata keuntungan jangka panjang memakai nilai harapan $E(X) = \\sum x_i \\cdot P(x_i)$, atau cek peluang mencapai target aman.",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "Peluang Dasar, Komplemen, dan Permainan",
+          "butir": [
+            {
+              "judul_poin": "Peluang Dasar dan Dadu Kustom",
+              "penjelasan_singkat": "Pakai $P(A) = \\frac{n(A)}{n(S)}$ dengan $0 \\le P(A) \\le 1$ jika setiap hasil punya peluang muncul yang sama.",
+              "contoh_penerapan": "Dadu 6 sisi bertuliskan angka $\\{1, 2, 2, 3, 5, 5\\}$ punya peluang muncul angka 5 sebesar **$P(5) = \\frac{2}{6} = \\frac{1}{3}$**."
+            },
+            {
+              "judul_poin": "Peluang Sudut pada Roda Putar",
+              "penjelasan_singkat": "Pada roda putar, peluang panah berhenti di juring $A$ bergantung pada besar sudut pusatnya: $P(A) = \\frac{\\theta_A}{360^\\circ}$.",
+              "contoh_penerapan": "Juring hadiah utama bersudut $45^\\circ$ memberi peluang menang sebesar **$P = \\frac{45^\\circ}{360^\\circ} = \\frac{1}{8}$**."
+            },
+            {
+              "judul_poin": "Trik Komplemen untuk Kejadian 'Minimal Satu'",
+              "penjelasan_singkat": "Peluang muncul minimal satu keberhasilan jauh lebih cepat dihitung lewat lawannya (gagal semua): $P(A) = 1 - P(A^c)$.",
+              "contoh_penerapan": "Jika peluang gagal tiap tembakan $0,4$, peluang cetak minimal satu gol dalam dua tembakan adalah **$1 - (0,4)^2 = 0,84$**."
+            },
+            {
+              "judul_poin": "Frekuensi Harapan Percobaan Berulang",
+              "penjelasan_singkat": "Untuk menebak berapa kali kejadian $A$ muncul dari $N$ kali percobaan, kalikan langsung: $F_h(A) = N \\times P(A)$.",
+              "contoh_penerapan": "Dari $120$ kali putaran roda dengan peluang menang $\\frac{1}{8}$, rata-rata kemenangannya adalah **$120 \\times \\frac{1}{8} = 15$ kali**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Peluang Bersyarat dan Kejadian Gabungan",
+          "butir": [
+            {
+              "judul_poin": "Peluang Bersyarat pada Tabel Data",
+              "penjelasan_singkat": "Rumus $P(A|B) = \\frac{n(A \\cap B)}{n(B)}$ langsung mempersempit ruang sampel hanya pada baris atau kolom syarat $B$.",
+              "contoh_penerapan": "Dari $80$ produk yang lolos uji, $60$ dibuat Mesin X. Jika diketahui produk lolos uji, peluang berasal dari Mesin X adalah **$\\frac{60}{80} = 0,75$**."
+            },
+            {
+              "judul_poin": "Aturan Tambah untuk Kejadian Saling Lepas",
+              "penjelasan_singkat": "Jika dua kejadian mustahil terjadi bersamaan ($A \\cap B = \\emptyset$), langsung jumlahkan: $P(A \\cup B) = P(A) + P(B)$.",
+              "contoh_penerapan": "Kotak berisi $3$ kupon emas, $5$ perak, dan $12$ kosong. Peluang terambil emas atau perak adalah **$\\frac{3}{20} + \\frac{5}{20} = 0,4$**."
+            },
+            {
+              "judul_poin": "Kejadian yang Bisa Terjadi Bersamaan (Irisan)",
+              "penjelasan_singkat": "Jika dua kategori punya irisan di tabel survei, kurangi irisannya agar tidak terhitung dua kali: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+              "contoh_penerapan": "Dari $100$ orang, $50$ suka kopi, $40$ suka teh, dan $15$ suka keduanya. Peluang suka kopi atau teh adalah **$\\frac{50+40-15}{100} = 0,75$**."
+            },
+            {
+              "judul_poin": "Pengambilan Berurutan Tanpa Pengembalian",
+              "penjelasan_singkat": "Saat benda pertama tidak dikembalikan, sisa benda untuk tahap kedua ikut berkurang: $P(A \\cap B) = P(A) \\times P(B|A)$.",
+              "contoh_penerapan": "Ambil $2$ kupon menang berturut-turut tanpa dikembalikan dari $4$ menang dan $6$ zonk: peluangnya **$\\frac{4}{10} \\times \\frac{3}{9} = \\frac{2}{15}$**."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "Rangkaian Pertandingan dan Keputusan Strategis",
+          "butir": [
+            {
+              "judul_poin": "Peluang Turnamen Sistem Gugur",
+              "penjelasan_singkat": "Untuk juara di sistem gugur, tim wajib menang di semua babak. Kalikan saja peluang menang tiap babaknya.",
+              "contoh_penerapan": "Jika peluang menang semifinal $0,7$ dan final $0,6$, peluang tim tersebut juara adalah **$0,7 \\times 0,6 = 0,42$**."
+            },
+            {
+              "judul_poin": "Peluang Seri Best-of-Three",
+              "penjelasan_singkat": "Tim jadi juara jika menang langsung $2$-$0$ ($p^2$), atau menang $2$-$1$ lewat tiga gim ($2p^2(1-p)$).",
+              "contoh_penerapan": "Dengan peluang menang tiap gim $p = 0,6$, peluang menang seri adalah **$(0,6)^2 + 2(0,6)^2(0,4) = 0,648$**."
+            },
+            {
+              "judul_poin": "Nilai Harapan dan Pilihan Strategi Terbaik",
+              "penjelasan_singkat": "Hitung rata-rata hasil pakai nilai harapan $E(X) = \\sum x_i \\cdot P(x_i)$, lalu cek juga risiko gagalnya sesuai permintaan soal.",
+              "contoh_penerapan": "Opsi A untung Rp$100$ ribu (peluang $0,6$) atau Rp$0$ (peluang $0,4$), sehingga **$E = \\text{Rp}60$ ribu**—lebih tinggi dari Opsi B ($E = \\text{Rp}50$ ribu)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kode_subbab": "pm-04-03",
+      "judul_subbab": "Nilai Harapan (Ekspektasi) dan Kombinatorika Terapan",
+      "klasifikasi_materi": "PENGAYAAN",
+      "konsep_inti_markdown": "- **Nilai Harapan ($E(X)$):** Rata-rata hasil jangka panjang dari sebuah kejadian acak. Rumusnya $E(X) = \\sum x_i P(x_i)$ dengan total semua peluang $\\sum P(x_i) = 1$.\n- **Keputusan Rasional:** Hitung $E(X)$ dari tiap pilihan. Pilih $E(X)$ terbesar jika bicara keuntungan, atau $E(X)$ terkecil jika bicara biaya dan risiko.\n- **Kaidah Pencacahan:** Pakai **Aturan Perkalian** kalau urutan posisi itu penting (seperti PIN, pelat nomor, atau posisi kursi). Pakai **Kombinasi** $\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$ kalau urutan tidak berpengaruh (seperti jadwal pertandingan atau paket menu).",
+      "mode_tampilan": "katalog_rumus_sifat",
+      "kelompok": [
+        {
+          "nama_kelompok": "1. Aturan Posisi (PIN, Pelat Nomor, & Kursi)",
+          "butir": [
+            {
+              "judul_poin": "PIN atau Sandi Boleh Berulang",
+              "penjelasan_singkat": "Jika ada $k$ posisi dan tiap posisi bebas diisi ulang dari $n$ pilihan, total susunannya adalah $n^k$.",
+              "contoh_penerapan": "PIN $4$ angka dari digit $0$–$9$ yang boleh berulang menghasilkan **$10^4 = 10.000$** sandi."
+            },
+            {
+              "judul_poin": "PIN atau Sandi Tanpa Pengulangan",
+              "penjelasan_singkat": "Untuk $k$ posisi dengan semua angka/huruf harus berbeda dari $n$ pilihan, pakai permutasi $P(n,k) = \\frac{n!}{(n-k)!}$.",
+              "contoh_penerapan": "Kode $3$ huruf berbeda dari $5$ vokal (A, I, U, E, O) berjumlah **$5 \\times 4 \\times 3 = 60$** kode."
+            },
+            {
+              "judul_poin": "Pelat Nomor dengan Syarat Khusus",
+              "penjelasan_singkat": "Isi dulu kotak yang punya syarat paling ketat (misalnya genap/ganjil), baru kalikan kotak lainnya.",
+              "contoh_penerapan": "Pelat $4$ angka ganjil dari digit $1$–$5$ (boleh berulang): isi satuan dulu ($3$ cara), total **$5 \\times 5 \\times 5 \\times 3 = 375$**."
+            },
+            {
+              "judul_poin": "Posisi Kursi Wajib Berdampingan",
+              "penjelasan_singkat": "Ikat $m$ orang yang harus bersebelahan menjadi $1$ paket: total cara $(n - m + 1)! \\times m!$.",
+              "contoh_penerapan": "$5$ orang duduk sebaris, $2$ orang wajib berdampingan: **$(5 - 2 + 1)! \\times 2! = 24 \\times 2 = 48$** cara."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "2. Kombinasi Terapan (Turnamen, Paket, & Rute)",
+          "butir": [
+            {
+              "judul_poin": "Jadwal Turnamen Satu Putaran (Round-Robin)",
+              "penjelasan_singkat": "Setiap pasang dari $n$ tim bertemu tepat sekali: total laga $N = \\binom{n}{2} = \\frac{n(n-1)}{2}$.",
+              "contoh_penerapan": "Liga $8$ tim setengah kompetisi butuh **$\\binom{8}{2} = \\frac{8 \\times 7}{2} = 28$** pertandingan."
+            },
+            {
+              "judul_poin": "Jadwal Turnamen Kandang-Tandang (Dua Putaran)",
+              "penjelasan_singkat": "Tiap pasang tim bertemu dua kali (kandang dan tandang), sehingga total laganya $N = 2 \\times \\binom{n}{2} = n(n-1)$.",
+              "contoh_penerapan": "Turnamen kandang-tandang $6$ tim menghasilkan **$6 \\times 5 = 30$** pertandingan."
+            },
+            {
+              "judul_poin": "Memilih Paket Menu atau Tim Campuran",
+              "penjelasan_singkat": "Pilih $r_1$ dari $n_1$ kategori A dan $r_2$ dari $n_2$ kategori B sekaligus: $\\binom{n_1}{r_1} \\times \\binom{n_2}{r_2}$.",
+              "contoh_penerapan": "Memilih $2$ dari $4$ lauk dan $1$ dari $3$ minuman menghasilkan **$\\binom{4}{2} \\times \\binom{3}{1} = 6 \\times 3 = 18$** paket."
+            },
+            {
+              "judul_poin": "Rute Perjalanan Transit Pulang-Pergi",
+              "penjelasan_singkat": "Kalikan jumlah jalur tiap tahap. Jika pulang dilarang melewati jalan yang sama, kurangi $1$ pilihan di tiap segmen saat pulang.",
+              "contoh_penerapan": "A–B ($3$ jalan) dan B–C ($4$ jalan). Pergi $3 \\times 4$, pulang C–B sisa $3$ dan B–A sisa $2$: total **$12 \\times 6 = 72$** rute."
+            }
+          ]
+        },
+        {
+          "nama_kelompok": "3. Nilai Harapan (Ekspektasi) & Keputusan Rasional",
+          "butir": [
+            {
+              "judul_poin": "Rumus Dasar Nilai Harapan",
+              "penjelasan_singkat": "Kalikan setiap nilai hasil $x_i$ dengan peluangnya $P(x_i)$, lalu jumlahkan: $E(X) = \\sum x_i P(x_i)$.",
+              "contoh_penerapan": "Hadiah $\\text{Rp}100.000$ (peluang $0,2$) dan $\\text{Rp}20.000$ (peluang $0,8$) memberi **$E(X) = 20.000 + 16.000 = \\text{Rp}36.000$**."
+            },
+            {
+              "judul_poin": "Ekspektasi Bersih Permainan Berbayar",
+              "penjelasan_singkat": "Hitung dulu rata-rata hadiah kotornya, lalu langsung kurangi biaya tiket/modal $C$: $E_{\\text{bersih}} = E(\\text{Hadiah}) - C$.",
+              "contoh_penerapan": "Tiket $\\text{Rp}10.000$, peluang menang $\\text{Rp}50.000$ sebesar $0,1$: **$E_{\\text{bersih}} = 5.000 - 10.000 = -\\text{Rp}5.000$**."
+            },
+            {
+              "judul_poin": "Ekspektasi Premi dan Klaim Asuransi",
+              "penjelasan_singkat": "Bagi perusahaan asuransi, $E(\\text{Laba}) = \\text{Premi} - \\sum (\\text{Klaim}_i \\times P_i)$. Asuransi disebut adil secara matematis jika $E(\\text{Laba}) = 0$.",
+              "contoh_penerapan": "Premi $\\text{Rp}500.000$, risiko klaim $\\text{Rp}20.000.000$ berpeluang $0,02$: **$E(\\text{Laba}) = 500.000 - 400.000 = \\text{Rp}100.000$**."
+            },
+            {
+              "judul_poin": "Memilih Strategi Paling Rasional",
+              "penjelasan_singkat": "Hitung $E(X)$ untuk tiap strategi. Pilih $E(X)$ tertinggi untuk keuntungan, atau terendah untuk biaya.",
+              "contoh_penerapan": "Opsi A ($E = \\text{Rp}4\\text{ jt}$) vs Opsi B ($0,5 \\times 10\\text{ jt} + 0,5 \\times (-1\\text{ jt}) = \\text{Rp}4,5\\text{ jt}$): pilih **Opsi B**."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
