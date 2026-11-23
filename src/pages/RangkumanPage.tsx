@@ -289,13 +289,13 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
               <ChevronLeft className="w-5 h-5" />
             </button>
 
-            {babId && babData ? (
+            {babId ? (
               <>
                 <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-slate-800 text-white shrink-0 uppercase">
-                  {babData.kode_bab.toUpperCase()}
+                  {babData ? babData.kode_bab.toUpperCase() : babId.toUpperCase()}
                 </span>
-                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden xs:inline max-w-[140px] sm:max-w-[240px]">
-                  {babData.bab}
+                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate inline max-w-[120px] sm:max-w-[240px]">
+                  {babData ? babData.bab : 'Cheat Sheet'}
                 </span>
               </>
             ) : (
@@ -303,7 +303,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-amber-600 text-white shrink-0 uppercase">
                   CHEAT SHEET
                 </span>
-                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden xs:inline max-w-[180px] sm:max-w-[280px]">
+                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate inline max-w-[150px] sm:max-w-[280px]">
                   Rangkuman Cepat per Bab
                 </span>
               </>
@@ -311,15 +311,15 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           </div>
 
           {/* Indikator Progres Real-Time & Kontrol Fleksibel */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             {/* Real-Time Progress Bar (hanya saat membaca Bab) */}
             {babId && (
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <span className="font-mono text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[32px] text-right">
+              <div className="flex items-center gap-1 sm:gap-2">
+                <span className="font-mono text-[11px] sm:text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[28px] sm:min-w-[32px] text-right">
                   {scrollProgress}%
                 </span>
                 <div
-                  className="w-14 sm:w-24 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden"
+                  className="w-10 sm:w-24 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden"
                   role="progressbar"
                   aria-valuemin={0}
                   aria-valuemax={100}
@@ -339,7 +339,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 type="button"
                 onClick={() => handleFontScaleChange(fontScale - 0.1)}
                 disabled={fontScale <= 0.85}
-                className="px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                className="px-1 sm:px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
                 title="Perkecil Ukuran Teks (A-)"
                 aria-label="Perkecil Ukuran Teks"
               >
@@ -358,7 +358,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 type="button"
                 onClick={() => handleFontScaleChange(fontScale + 0.1)}
                 disabled={fontScale >= 1.4}
-                className="px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                className="px-1 sm:px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
                 title="Perbesar Ukuran Teks (A+)"
                 aria-label="Perbesar Ukuran Teks"
               >
@@ -493,28 +493,6 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         {/* VIEW 2: BAB DETAIL CHEAT SHEET */}
         {babId && (
           <div className="space-y-6">
-            {/* Quick Breadcrumb / Sub-Nav */}
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <button
-                type="button"
-                onClick={handleBackNavigation}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-white dark:bg-[#0c142c] border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-2xs cursor-pointer"
-              >
-                <ChevronLeft className="w-3.5 h-3.5" />
-                <span>Kembali ke Silabus Subtes</span>
-              </button>
-
-              <div className="flex items-center gap-2">
-                <Link
-                  to="/rangkuman"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/60 hover:bg-amber-100 transition-colors"
-                >
-                  <Layers className="w-3.5 h-3.5" />
-                  <span>Daftar Semua Bab</span>
-                </Link>
-              </div>
-            </div>
-
             {isLoading || !babData ? (
               <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm max-w-2xl mx-auto my-6">
                 <div className="inline-block w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mb-3"></div>
@@ -538,10 +516,20 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                       <Zap className="w-3 h-3 fill-amber-500 text-amber-500" />
                       <span>Cheat Sheet Padat (1 Teori = 1 Contoh)</span>
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 dark:text-slate-400 ml-auto">
+
+                    <Link
+                      to="/rangkuman"
+                      className="inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-amber-500/20 hover:text-amber-600 transition-colors ml-auto shadow-2xs"
+                      title="Lihat katalog semua bab cheat sheet"
+                    >
+                      <Layers className="w-3 h-3" />
+                      <span>Katalog Bab</span>
+                    </Link>
+
+                    <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 dark:text-slate-400">
                       <Clock className="w-3 h-3" />
                       <span>
-                        ~{babData.estimasi_menit_review || 4} menit review
+                        ~{babData.estimasi_menit_review || 4} mnt review
                       </span>
                     </span>
                   </div>

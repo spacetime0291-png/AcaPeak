@@ -65,7 +65,30 @@ function generateSeoFiles() {
     }
   }
 
-  // 4. 4 Legal Pages
+  // 4. Rangkuman & Cheat Sheet Pages
+  const rangkumanIndexPath = path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json');
+  if (fs.existsSync(rangkumanIndexPath)) {
+    try {
+      const rangkumanIndex = JSON.parse(fs.readFileSync(rangkumanIndexPath, 'utf8'));
+      urls.push({
+        loc: `${SITE_URL}/rangkuman`,
+        lastmod: TODAY,
+        changefreq: 'weekly',
+        priority: '0.8',
+      });
+      const allBabs = rangkumanIndex.daftar_subtes.flatMap((st) => st.daftar_bab);
+      for (const b of allBabs) {
+        urls.push({
+          loc: `${SITE_URL}/rangkuman/${b.kode_bab.toLowerCase()}`,
+          lastmod: TODAY,
+          changefreq: 'weekly',
+          priority: '0.85',
+        });
+      }
+    } catch {}
+  }
+
+  // 5. 4 Legal Pages
   const legalRoutes = ['/about', '/privacy-policy', '/terms', '/contact'];
   for (const route of legalRoutes) {
     urls.push({

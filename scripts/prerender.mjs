@@ -282,6 +282,44 @@ async function prerender() {
   }
 
   // -----------------------------------------------------------
+  // 3.5 RANGKUMAN BAB / CHEAT SHEET PAGES (/rangkuman, /rangkuman/:babId)
+  // -----------------------------------------------------------
+  const rangkumanIndexPath = path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json');
+  if (fs.existsSync(rangkumanIndexPath)) {
+    try {
+      const rangkumanIndex = JSON.parse(fs.readFileSync(rangkumanIndexPath, 'utf8'));
+      console.log(`📑 Pre-rendering Rangkuman Index Page (/rangkuman) ...`);
+      const rIdxRender = render('/rangkuman');
+      const rIdxSeo = {
+        title: 'Cheat Sheet & Rangkuman Padat UTBK-SNBT per Bab | SkolAce',
+        description: 'Lembar rangkuman kilat dan rumus cepat UTBK-SNBT 7 subtes lengkap. Format 1 Teori = 1 Contoh untuk review 4 menit sebelum drilling.',
+        canonical: `${SITE_URL}/rangkuman`,
+        ogType: 'website',
+      };
+      writeStaticPage('/rangkuman', injectSeoIntoHtml(templateHtml, rIdxRender.html, rIdxSeo));
+
+      const allBabs = rangkumanIndex.daftar_subtes.flatMap((st) =>
+        st.daftar_bab.map((b) => ({ ...b, subtes: st.subtes }))
+      );
+
+      console.log(`📑 Pre-rendering ${allBabs.length} Rangkuman Bab Pages (/rangkuman/:babId) ...`);
+      for (const b of allBabs) {
+        const babUrl = `/rangkuman/${b.kode_bab.toLowerCase()}`;
+        const bRender = render(babUrl);
+        const bSeo = {
+          title: `Cheat Sheet ${b.nama_bab} (${b.kode_bab.toUpperCase()}) | SkolAce UTBK-SNBT`,
+          description: `Lembar cheat sheet rangkuman padat Bab ${b.nama_bab} (${b.kode_bab.toUpperCase()}). 1 Teori Singkat = 1 Contoh Nyata berstandar UTBK-SNBT.`,
+          canonical: `${SITE_URL}${babUrl}`,
+          ogType: 'article',
+        };
+        writeStaticPage(babUrl, injectSeoIntoHtml(templateHtml, bRender.html, bSeo));
+      }
+    } catch (e) {
+      console.warn('⚠️ Could not pre-render rangkuman pages:', e);
+    }
+  }
+
+  // -----------------------------------------------------------
   // 4. 4 LEGAL PAGES (/about, /privacy-policy, /terms, /contact)
   // -----------------------------------------------------------
   const legalPages = [
