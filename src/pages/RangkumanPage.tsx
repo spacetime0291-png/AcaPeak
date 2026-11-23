@@ -9,13 +9,14 @@ import {
   BookOpen,
   ChevronLeft,
   ChevronRight,
-  ArrowLeft,
   Lightbulb,
   ExternalLink,
   Layers,
   Search,
   Sparkles,
   Clock,
+  Maximize2,
+  Minimize2,
 } from 'lucide-react';
 import type {
   RangkumanBabData,
@@ -26,7 +27,8 @@ import {
   fetchRangkumanByBabId,
   fetchRangkumanIndex,
 } from '../lib/rangkumanLoader';
-import { TopHeader } from '../components/navigation/TopHeader';
+import { ThemeToggle } from '../components/common/ThemeToggle';
+import { NatureFocusHeaderAccent } from '../components/decorations/NatureDecorations';
 
 const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
 
@@ -41,12 +43,65 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 }) => {
   const { babId } = useParams<{ babId?: string }>();
   const navigate = useNavigate();
+  const isDark = theme === 'dark';
 
   const [babData, setBabData] = useState<RangkumanBabData | null>(null);
   const [indexData, setIndexData] = useState<RangkumanIndexData | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [activeSubbabIndex, setActiveSubbabIndex] = useState<number>(-1); // -1 = Semua Sub-bab
   const [searchQuery, setSearchQuery] = useState<string>('');
+
+  // Reader-matching states: Focus Mode & Font Scaling
+  const [isFocusMode, setIsFocusMode] = useState<boolean>(false);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
+
+  // Flexible Font Size Scale: 0.85 to 1.4 (Default 1.0, synced with reader)
+  const [fontScale, setFontScale] = useState<number>(() => {
+    try {
+      const saved =
+        typeof window !== 'undefined'
+          ? localStorage.getItem('skolace_reader_font_scale')
+          : null;
+      return saved ? Math.min(1.4, Math.max(0.85, parseFloat(saved))) : 1.0;
+    } catch {
+      return 1.0;
+    }
+  });
+
+  const handleFontScaleChange = (newScale: number) => {
+    const clamped = Math.min(1.4, Math.max(0.85, Number(newScale.toFixed(2))));
+    setFontScale(clamped);
+    try {
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('skolace_reader_font_scale', clamped.toString());
+      }
+    } catch {}
+  };
+
+  // Real-time scroll progress tracker
+  useEffect(() => {
+    const handleScroll = () => {
+      const doc = document.documentElement;
+      const totalHeight = doc.scrollHeight - window.innerHeight;
+      if (totalHeight <= 0) {
+        setScrollProgress(100);
+        return;
+      }
+      const current = window.scrollY;
+      const pct = Math.min(
+        100,
+        Math.max(0, Math.round((current / totalHeight) * 100))
+      );
+      setScrollProgress(pct);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [babId, babData, activeSubbabIndex]);
 
   // Load index data on mount
   useEffect(() => {
@@ -123,7 +178,9 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         remarkPlugins={[remarkMath, remarkGfm]}
         rehypePlugins={KATEX_REHYPE_PLUGINS}
         components={{
-          p: ({ children }) => <span className="inline leading-relaxed">{children}</span>,
+          p: ({ children }) => (
+            <span className="inline leading-relaxed">{children}</span>
+          ),
           strong: ({ children }) => (
             <strong className="font-extrabold text-blue-700 dark:text-cyan-300">
               {children}
@@ -144,21 +201,28 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
   // Color badges based on Subtes
   const getSubtestColor = (kode: string) => {
     const k = kode.toLowerCase();
-    if (k.startsWith('pu')) return 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border-indigo-500/30';
-    if (k.startsWith('pk')) return 'bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/30';
-    if (k.startsWith('pm')) return 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30';
-    if (k.startsWith('ppu')) return 'bg-sky-500/10 text-sky-700 dark:text-sky-300 border-sky-500/30';
-    if (k.startsWith('pbm')) return 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30';
-    if (k.startsWith('lbi')) return 'bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/30';
-    if (k.startsWith('lbe')) return 'bg-teal-500/10 text-teal-700 dark:text-teal-300 border-teal-500/30';
+    if (k.startsWith('pu'))
+      return 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border-indigo-500/30';
+    if (k.startsWith('pk'))
+      return 'bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/30';
+    if (k.startsWith('pm'))
+      return 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30';
+    if (k.startsWith('ppu'))
+      return 'bg-sky-500/10 text-sky-700 dark:text-sky-300 border-sky-500/30';
+    if (k.startsWith('pbm'))
+      return 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30';
+    if (k.startsWith('lbi'))
+      return 'bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/30';
+    if (k.startsWith('lbe'))
+      return 'bg-teal-500/10 text-teal-700 dark:text-teal-300 border-teal-500/30';
     return 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/30';
   };
 
   // Subtest Acronym
   const extractSubtestCode = (subtesName?: string) => {
-    if (!subtesName) return 'UTBK';
+    if (!subtesName) return 'pu';
     const match = subtesName.match(/\(([^)]+)\)/);
-    return match ? match[1] : subtesName.split(':')[0];
+    return (match ? match[1] : subtesName.split(':')[0]).toLowerCase().trim();
   };
 
   // Filtered sub-babs
@@ -181,26 +245,166 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
             b.nama_bab.toLowerCase().includes(query) ||
             b.kode_bab.toLowerCase().includes(query) ||
             st.subtes.toLowerCase().includes(query) ||
-            b.daftar_subbab.some((sb) => sb.judul_subbab.toLowerCase().includes(query))
+            b.daftar_subbab.some((sb) =>
+              sb.judul_subbab.toLowerCase().includes(query)
+            )
         ),
       }))
       .filter((st) => st.daftar_bab.length > 0);
   }, [indexData, searchQuery]);
 
-  return (
-    <>
-      <TopHeader
-        mode="utbk"
-        theme={theme}
-        onToggleTheme={onToggleTheme}
-        onModeChange={() => {}}
-        onSelectUtbkMaterial={(_code, materialId) => {
-          navigate(`/materi/${materialId}`);
-        }}
-        onSelectSmaSubject={() => {}}
-      />
+  const handleBackNavigation = () => {
+    if (babData) {
+      const subCode = extractSubtestCode(babData.subtes);
+      navigate(`/subtest/${subCode}`);
+    } else {
+      navigate('/subtest/pu');
+    }
+  };
 
-      <main className="flex-1 w-full max-w-5xl mx-auto px-3 sm:px-6 md:px-8 py-4 sm:py-6">
+  return (
+    <div className="min-h-screen text-slate-800 dark:text-[#f8fafc] bg-[#F8FAFC] dark:bg-[#070913] pb-12 transition-colors">
+      {/* 1. TOP STATIS/STICKY BAR: Identitas Bab/Materi, Progress Real-Time, Ukuran Teks Fleksibel & Theme Switcher */}
+      <header className="sticky top-0 z-50 w-full bg-[#F8FAFC]/95 dark:bg-[#0c1224]/95 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 transition-all shadow-2xs">
+        {!isDark && <NatureFocusHeaderAccent />}
+
+        <div
+          className={`mx-auto px-3 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all ${
+            isFocusMode ? 'max-w-5xl' : 'max-w-4xl'
+          }`}
+        >
+          {/* Identitas Bab & Tombol Kembali */}
+          <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+            <button
+              type="button"
+              onClick={handleBackNavigation}
+              className="p-1 sm:p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
+              title={
+                babId
+                  ? 'Kembali ke Silabus Subtes'
+                  : 'Kembali ke Dashboard Silabus'
+              }
+              aria-label="Kembali"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            {babId && babData ? (
+              <>
+                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-slate-800 text-white shrink-0 uppercase">
+                  {babData.kode_bab.toUpperCase()}
+                </span>
+                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden xs:inline max-w-[140px] sm:max-w-[240px]">
+                  {babData.bab}
+                </span>
+              </>
+            ) : (
+              <>
+                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-amber-600 text-white shrink-0 uppercase">
+                  CHEAT SHEET
+                </span>
+                <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden xs:inline max-w-[180px] sm:max-w-[280px]">
+                  Rangkuman Cepat per Bab
+                </span>
+              </>
+            )}
+          </div>
+
+          {/* Indikator Progres Real-Time & Kontrol Fleksibel */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {/* Real-Time Progress Bar (hanya saat membaca Bab) */}
+            {babId && (
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="font-mono text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[32px] text-right">
+                  {scrollProgress}%
+                </span>
+                <div
+                  className="w-14 sm:w-24 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden"
+                  role="progressbar"
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-valuenow={scrollProgress}
+                >
+                  <div
+                    className="h-full bg-[#3B82F6] transition-all duration-300 ease-out rounded-full"
+                    style={{ width: `${scrollProgress}%` }}
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* Pengatur Ukuran Font Fleksibel (A- / % / A+) */}
+            <div className="flex items-center bg-slate-100 dark:bg-slate-800 rounded-xl p-0.5 border border-slate-200 dark:border-slate-700 shadow-2xs">
+              <button
+                type="button"
+                onClick={() => handleFontScaleChange(fontScale - 0.1)}
+                disabled={fontScale <= 0.85}
+                className="px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                title="Perkecil Ukuran Teks (A-)"
+                aria-label="Perkecil Ukuran Teks"
+              >
+                A-
+              </button>
+              <button
+                type="button"
+                onClick={() => handleFontScaleChange(1.0)}
+                className="px-1 sm:px-1.5 py-1 text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                title="Reset Ukuran Normal (100%)"
+                aria-label="Reset Ukuran Normal"
+              >
+                {Math.round(fontScale * 100)}%
+              </button>
+              <button
+                type="button"
+                onClick={() => handleFontScaleChange(fontScale + 0.1)}
+                disabled={fontScale >= 1.4}
+                className="px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                title="Perbesar Ukuran Teks (A+)"
+                aria-label="Perbesar Ukuran Teks"
+              >
+                A+
+              </button>
+            </div>
+
+            {/* Mode Fokus Toggle (saat membaca Bab) */}
+            {babId && (
+              <button
+                type="button"
+                onClick={() => setIsFocusMode(!isFocusMode)}
+                className="hidden md:flex items-center gap-1 px-2 py-1.5 rounded-xl text-xs font-semibold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition cursor-pointer border border-slate-200 dark:border-slate-700"
+                title="Beralih Mode Fokus"
+              >
+                {isFocusMode ? (
+                  <>
+                    <Minimize2 className="w-3.5 h-3.5" />
+                    <span>Biasa</span>
+                  </>
+                ) : (
+                  <>
+                    <Maximize2 className="w-3.5 h-3.5" />
+                    <span>Fokus</span>
+                  </>
+                )}
+              </button>
+            )}
+
+            <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
+          </div>
+        </div>
+      </header>
+
+      {/* 2. MAIN SCALABLE CONTENT CONTAINER */}
+      <main
+        className={`mx-auto px-3 sm:px-6 transition-all reader-scalable-content ${
+          isFocusMode ? 'max-w-5xl py-4' : 'max-w-4xl py-6 sm:py-8'
+        }`}
+        style={
+          {
+            '--reader-font-scale': fontScale,
+            fontSize: `calc(1rem * ${fontScale})`,
+          } as React.CSSProperties
+        }
+      >
         {/* VIEW 1: INDEX OVERVIEW (Ketika tidak ada babId spesifik) */}
         {!babId && (
           <div className="space-y-6">
@@ -214,7 +418,9 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 Lembar Rangkuman Cepat per Bab
               </h1>
               <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mt-2 font-medium">
-                Cheat Sheet resmi UTBK-SNBT: <strong>1 Teori Singkat = 1 Contoh Nyata</strong>. Didesain untuk review kilat ~4 menit sebelum simulasi drilling atau ujian.
+                Cheat Sheet resmi UTBK-SNBT:{' '}
+                <strong>1 Teori Singkat = 1 Contoh Nyata</strong>. Didesain untuk
+                review kilat ~4 menit sebelum simulasi drilling atau ujian.
               </p>
 
               {/* Search Bar */}
@@ -252,7 +458,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                       >
                         <div>
                           <div className="flex items-center justify-between mb-2">
-                            <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border ${getSubtestColor(b.kode_bab)}`}>
+                            <span
+                              className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border ${getSubtestColor(
+                                b.kode_bab
+                              )}`}
+                            >
                               {b.kode_bab}
                             </span>
                             <span className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">
@@ -283,17 +493,14 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         {/* VIEW 2: BAB DETAIL CHEAT SHEET */}
         {babId && (
           <div className="space-y-6">
-            {/* Top Navigation Bar */}
+            {/* Quick Breadcrumb / Sub-Nav */}
             <div className="flex flex-wrap items-center justify-between gap-3">
               <button
                 type="button"
-                onClick={() => {
-                  const subCode = babData ? extractSubtestCode(babData.subtes).toLowerCase() : 'pu';
-                  navigate(`/subtest/${subCode}`);
-                }}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-2xs"
+                onClick={handleBackNavigation}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-white dark:bg-[#0c142c] border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-2xs cursor-pointer"
               >
-                <ArrowLeft className="w-3.5 h-3.5" />
+                <ChevronLeft className="w-3.5 h-3.5" />
                 <span>Kembali ke Silabus Subtes</span>
               </button>
 
@@ -320,7 +527,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 {/* Bab Header Card */}
                 <div className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#0b1228] border border-slate-200/90 dark:border-slate-800 shadow-sm space-y-3">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-extrabold uppercase border ${getSubtestColor(babData.kode_bab)}`}>
+                    <span
+                      className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-extrabold uppercase border ${getSubtestColor(
+                        babData.kode_bab
+                      )}`}
+                    >
                       {babData.subtes}
                     </span>
                     <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-0.5 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30">
@@ -329,7 +540,9 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                     </span>
                     <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 dark:text-slate-400 ml-auto">
                       <Clock className="w-3 h-3" />
-                      <span>~{babData.estimasi_menit_review || 4} menit review</span>
+                      <span>
+                        ~{babData.estimasi_menit_review || 4} menit review
+                      </span>
                     </span>
                   </div>
 
@@ -338,7 +551,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                   </h1>
 
                   <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-                    Mencakup <strong>{babData.daftar_subbab.length} sub-bab materi</strong>. Gunakan filter di bawah untuk fokus pada topik tertentu atau pelajari seluruh rangkuman sekaligus.
+                    Mencakup{' '}
+                    <strong>{babData.daftar_subbab.length} sub-bab materi</strong>
+                    . Gunakan filter di bawah untuk fokus pada topik tertentu
+                    atau pelajari seluruh rangkuman sekaligus.
                   </p>
 
                   {/* Sub-bab Quick Tabs / Pill Selector */}
@@ -374,22 +590,23 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 {/* Sub-bab Content Cards List */}
                 <div className="space-y-6">
                   {displayedSubbabs.map((sub, sIdx) => {
-                    const col1Label = sub.label_kolom?.kolom_1 || (
-                      sub.mode_tampilan === 'katalog_rumus_sifat'
+                    const col1Label =
+                      sub.label_kolom?.kolom_1 ||
+                      (sub.mode_tampilan === 'katalog_rumus_sifat'
                         ? 'Rumus / Sifat & Syarat'
                         : sub.mode_tampilan === 'katalog_sinyal_pola'
                         ? 'Jenis Pola / Sinyal Teks'
-                        : 'Aturan / Pembagian Teori'
-                    );
-                    const col2Label = sub.label_kolom?.kolom_2 || (
-                      sub.mode_tampilan === 'katalog_rumus_sifat'
+                        : 'Aturan / Pembagian Teori');
+                    const col2Label =
+                      sub.label_kolom?.kolom_2 ||
+                      (sub.mode_tampilan === 'katalog_rumus_sifat'
                         ? '1 Contoh Hitung Cepat'
                         : sub.mode_tampilan === 'katalog_sinyal_pola'
                         ? '1 Contoh Kata Kunci / Kalimat'
-                        : '1 Contoh Penerapan'
-                    );
+                        : '1 Contoh Penerapan');
 
-                    const intiText = sub.inti_subbab || sub.konsep_inti_markdown || '';
+                    const intiText =
+                      sub.inti_subbab || sub.konsep_inti_markdown || '';
 
                     return (
                       <section
@@ -462,7 +679,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                             {/* Groups and Rows */}
                             <div className="divide-y divide-slate-200/80 dark:divide-slate-800">
                               {sub.kelompok.map((k, kIdx) => (
-                                <div key={kIdx} className="divide-y divide-slate-100 dark:divide-slate-800/50">
+                                <div
+                                  key={kIdx}
+                                  className="divide-y divide-slate-100 dark:divide-slate-800/50"
+                                >
                                   {/* Group Header Row */}
                                   <div className="bg-slate-50/90 dark:bg-slate-800/40 px-3.5 sm:px-4 py-2 flex items-center gap-2">
                                     <span className="w-2 h-2 rounded-full bg-amber-500"></span>
@@ -476,9 +696,14 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 
                                   {/* Item Rows */}
                                   {k.butir.map((b, bIdx) => {
-                                    const judulText = b.judul || b.judul_poin || '';
-                                    const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
-                                    const contohText = b.contoh || b.contoh_penerapan || '';
+                                    const judulText =
+                                      b.judul || b.judul_poin || '';
+                                    const teoriText =
+                                      b.teori_singkat ||
+                                      b.penjelasan_singkat ||
+                                      '';
+                                    const contohText =
+                                      b.contoh || b.contoh_penerapan || '';
 
                                     return (
                                       <div
@@ -564,7 +789,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           </div>
         )}
       </main>
-    </>
+    </div>
   );
 };
 
