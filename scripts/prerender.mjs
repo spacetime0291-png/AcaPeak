@@ -1,8 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import { pathToFileURL } from 'url';
+import { pathToFileURL, fileURLToPath } from 'url';
 
-const ROOT_DIR = process.cwd();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://acapeak.spacetime0291.workers.dev').replace(/\/+$/, '');
 
@@ -284,19 +286,23 @@ async function prerender() {
   // -----------------------------------------------------------
   // 3.5 RANGKUMAN BAB / CHEAT SHEET PAGES (/rangkuman, /rangkuman/:babId)
   // -----------------------------------------------------------
-  const rangkumanIndexPath = path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json');
-  if (fs.existsSync(rangkumanIndexPath)) {
+  const rangkumanIndexPaths = [
+    path.join(ROOT_DIR, 'content/rangkuman/index.json'),
+    path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json'),
+  ];
+  const rangkumanIndexPath = rangkumanIndexPaths.find((p) => fs.existsSync(p));
+  if (rangkumanIndexPath) {
     try {
       const rangkumanIndex = JSON.parse(fs.readFileSync(rangkumanIndexPath, 'utf8'));
       console.log(`📑 Pre-rendering Rangkuman Index Page (/rangkuman) ...`);
-      const rIdxRender = render('/rangkuman');
+      const rIdxRender = render('/rangkuman', { initialRangkumanIndex: rangkumanIndex });
       const rIdxSeo = {
-        title: 'Cheat Sheet & Rangkuman Padat UTBK-SNBT per Bab | SkolAce',
-        description: 'Lembar rangkuman kilat dan rumus cepat UTBK-SNBT 7 subtes lengkap. Format 1 Teori = 1 Contoh untuk review 4 menit sebelum drilling.',
+        title: 'Cheat Sheet & Rangkuman Cepat UTBK-SNBT per Bab | SkolAce',
+        description: 'Lembar rangkuman padat dan rumus cepat UTBK-SNBT 7 subtes lengkap. Format 1 Teori = 1 Contoh untuk review cepat 5 menit sebelum drilling.',
         canonical: `${SITE_URL}/rangkuman`,
         ogType: 'website',
       };
-      writeStaticPage('/rangkuman', injectSeoIntoHtml(templateHtml, rIdxRender.html, rIdxSeo));
+      writeStaticPage('/rangkuman', injectSeoIntoHtml(templateHtml, rIdxRender.html, rIdxSeo, rangkumanIndex));
 
       const allBabs = rangkumanIndex.daftar_subtes.flatMap((st) =>
         st.daftar_bab.map((b) => ({ ...b, subtes: st.subtes }))
@@ -304,15 +310,36 @@ async function prerender() {
 
       console.log(`📑 Pre-rendering ${allBabs.length} Rangkuman Bab Pages (/rangkuman/:babId) ...`);
       for (const b of allBabs) {
-        const babUrl = `/rangkuman/${b.kode_bab.toLowerCase()}`;
-        const bRender = render(babUrl);
+        const babCode = b.kode_bab.toLowerCase();
+        const babUrl = `/rangkuman/${babCode}`;
+
+        // Read bab data JSON
+        let rawBab = null;
+        const babJsonPaths = [
+          path.join(ROOT_DIR, 'content/rangkuman', `${babCode}.json`),
+          path.join(ROOT_DIR, 'public/content/rangkuman', `${babCode}.json`),
+        ];
+        for (const p of babJsonPaths) {
+          if (fs.existsSync(p)) {
+            try {
+              rawBab = JSON.parse(fs.readFileSync(p, 'utf8'));
+              break;
+            } catch {}
+          }
+        }
+
+        const bRender = render(babUrl, {
+          initialRangkumanBab: rawBab,
+          initialRangkumanIndex: rangkumanIndex,
+        });
+        const babTitle = b.bab || b.nama_bab || b.kode_bab.toUpperCase();
         const bSeo = {
-          title: `Cheat Sheet ${b.nama_bab} (${b.kode_bab.toUpperCase()}) | SkolAce UTBK-SNBT`,
-          description: `Lembar cheat sheet rangkuman padat Bab ${b.nama_bab} (${b.kode_bab.toUpperCase()}). 1 Teori Singkat = 1 Contoh Nyata berstandar UTBK-SNBT.`,
+          title: `Cheat Sheet ${babTitle} (${b.kode_bab.toUpperCase()}) | SkolAce UTBK-SNBT`,
+          description: `Lembar cheat sheet rangkuman padat ${babTitle} (${b.kode_bab.toUpperCase()}). 1 Teori Singkat = 1 Contoh Nyata berstandar UTBK-SNBT.`,
           canonical: `${SITE_URL}${babUrl}`,
           ogType: 'article',
         };
-        writeStaticPage(babUrl, injectSeoIntoHtml(templateHtml, bRender.html, bSeo));
+        writeStaticPage(babUrl, injectSeoIntoHtml(templateHtml, bRender.html, bSeo, rawBab));
       }
     } catch (e) {
       console.warn('⚠️ Could not pre-render rangkuman pages:', e);

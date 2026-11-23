@@ -2,38 +2,41 @@
   "kode_bab": "lbe-02",
   "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
   "bab": "Bab 2: Detailed Information & Paraphrasing",
-  "batch_model": "hydrogen",
-  "jumlah_subbab": 4,
+  "estimasi_menit_review": 5,
   "daftar_subbab": [
     {
       "kode_subbab": "lbe-02-01",
       "judul_subbab": "Stated Detail Questions (True/False/Not Given)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "* **Prinsip Utama:** Jawaban benar selalu tertulis **jelas (eksplisit)** di dalam bacaan, hanya susunan katanya diubah (**parafrasa**).\n* **Langkah Cepat:** Cari kata kunci soal di teks $\\rightarrow$ Baca 1 kalimat sebelum dan sesudah kata kunci $\\rightarrow$ Coret opsi yang maknanya melenceng.\n* **Tiga Status Pernyataan:**\n  * **TRUE:** Fakta pada opsi sejalan 100% dengan isi teks.\n  * **FALSE:** Fakta pada opsi bertentangan langsung dengan isi teks.\n  * **NOT GIVEN:** Informasi tidak pernah dibahas atau tidak ada pembandingnya di teks.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Cocokkan kata kunci soal ke teks; **TRUE** sesuai parafrasa, **FALSE** bertentangan langsung, **NOT GIVEN** tanpa dasar teks.",
       "kelompok": [
         {
           "nama_kelompok": "Pola Parafrasa Fakta Eksplisit (Kunci Jawaban TRUE)",
           "butir": [
             {
-              "judul_poin": "Sinonim Kontekstual & Padanan Frasa",
-              "penjelasan_singkat": "Kata kerja atau kata sifat kunci diganti dengan sinonimnya tanpa memperluas atau menyempitkan makna.",
-              "contoh_penerapan": "Teks: \"Coastal erosion **accelerates** during winter storms.\" $\\rightarrow$ Opsi: \"Shoreline degradation **speeds up** amid severe winter weather.\""
+              "judul": "Sinonim Kontekstual & Padanan Frasa",
+              "teori_singkat": "Ganti kata kerja atau sifat kunci dengan sinonim setara tanpa mengubah cakupan makna.",
+              "contoh": "Teks: *Erosion **accelerates** in winter.* $\\rightarrow$ Opsi: *Degradation **speeds up** during winter.*"
             },
             {
-              "judul_poin": "Perubahan Kalimat Aktif dan Pasif",
-              "penjelasan_singkat": "Posisi pelaku (subjek) dan objek bertukar tempat, tetapi hubungan kejadiannya tetap sama persis.",
-              "contoh_penerapan": "Teks: \"**Microplastics disrupt** marine food chains.\" $\\rightarrow$ Opsi: \"Marine food chains **are disrupted by microplastics**.\""
+              "judul": "Perubahan Kalimat Aktif dan Pasif",
+              "teori_singkat": "Tukar posisi subjek dan objek serta bentuk kata kerjanya tanpa mengubah pelaku.",
+              "contoh": "Teks: ***Microplastics disrupt** marine chains.* $\\rightarrow$ Opsi: *Marine chains **are disrupted by microplastics**.*"
             },
             {
-              "judul_poin": "Konversi Angka dan Pecahan",
-              "penjelasan_singkat": "Data persen atau pecahan di teks diubah menjadi deskripsi jumlah yang nilainya setara.",
-              "contoh_penerapan": "Teks: \"**Over $75\\%$** of respondents favored remote work.\" $\\rightarrow$ Opsi: \"**More than three-quarters** of participants preferred working from home.\""
+              "judul": "Konversi Angka dan Pecahan",
+              "teori_singkat": "Ubah data persentase atau angka menjadi frasa kuantitas yang nilainya setara.",
+              "contoh": "Teks: ***Over $75\\%$** favored remote work.* $\\rightarrow$ Opsi: ***More than three-quarters** preferred working remotely.*"
             },
             {
-              "judul_poin": "Parafrasa Penyangkalan Ganda",
-              "penjelasan_singkat": "Kalimat positif diubah menjadi penyangkalan dari lawan katanya tanpa mengubah kebenaran fakta.",
-              "contoh_penerapan": "Teks: \"The new vaccine proved **effective** in trials.\" $\\rightarrow$ Opsi: \"The new vaccine was **not ineffective** during clinical testing.\""
+              "judul": "Parafrasa Penyangkalan Ganda",
+              "teori_singkat": "Ubah pernyataan positif menjadi negasi dari lawan katanya tanpa mengubah kebenaran fakta.",
+              "contoh": "Teks: *The vaccine proved **effective**.* $\\rightarrow$ Opsi: *The vaccine was **not ineffective** in trials.*"
             }
           ]
         },
@@ -41,24 +44,24 @@
           "nama_kelompok": "Sinyal Sebab-Akibat, Syarat Proses, dan Atribusi Opini",
           "butir": [
             {
-              "judul_poin": "Sinyal Pemicu Sebab-Akibat (Causal Markers)",
-              "penjelasan_singkat": "Penanda ini menunjukkan faktor pemicu awal (sebab) dan hasil langsungnya (akibat) di dalam teks.",
-              "contoh_penerapan": "Sinyal: **trigger, stem from, induce, lead to**. Contoh: \"Sleep deprivation **stems from** excessive blue-light exposure.\""
+              "judul": "Sinyal Pemicu Sebab-Akibat (Causal Markers)",
+              "teori_singkat": "Tandai kata kerja pemicu untuk mengunci mana faktor penyebab dan mana akibatnya.",
+              "contoh": "Sinyal: **trigger, stem from, induce**. Contoh: *Insomnia **stems from** excessive blue-light exposure.*"
             },
             {
-              "judul_poin": "Sinyal Syarat dan Urutan Proses",
-              "penjelasan_singkat": "Kata hubung syarat atau urutan menandai kondisi wajib sebelum suatu proses bisa berjalan.",
-              "contoh_penerapan": "Sinyal: **provided that, prior to, once, unless**. Contoh: \"Seeds germinate **only once** soil temperature exceeds $15^{\\circ}\\text{C}$.\""
+              "judul": "Sinyal Syarat dan Urutan Proses",
+              "teori_singkat": "Perhatikan kata hubung syarat atau urutan yang membatasi terjadinya suatu proses.",
+              "contoh": "Sinyal: **provided that, once, unless**. Contoh: *Seeds germinate **only once** soil exceeds $15^{\\circ}\\text{C}$.*"
             },
             {
-              "judul_poin": "Penanda Atribusi Opini Pakar & Komentator",
-              "penjelasan_singkat": "Kata kerja pelaporan mengikat suatu klaim, saran, atau kritik kepada nama tokoh tertentu.",
-              "contoh_penerapan": "Sinyal: **advocates, contends, disputes, proposes**. Contoh: \"Dr. Aris **advocates** taxing carbon emissions, whereas @EcoWatch **disputes** its feasibility.\""
+              "judul": "Penanda Atribusi Opini Pakar & Komentator",
+              "teori_singkat": "Ikat setiap klaim atau kritik dengan nama tokoh atau sumber pelapornya.",
+              "contoh": "Sinyal: **advocates, contends, disputes**. Contoh: *Dr. Aris **advocates** carbon tax, whereas @EcoWatch **disputes** it.*"
             },
             {
-              "judul_poin": "Sinyal Pertentangan Halus & Pengecualian",
-              "penjelasan_singkat": "Penanda kontras ini membatasi berlakunya aturan umum hanya pada kondisi tertentu saja.",
-              "contoh_penerapan": "Sinyal: **albeit, notwithstanding, except for, solely**. Contoh: \"The policy succeeded, **albeit** at a high fiscal cost.\""
+              "judul": "Sinyal Pertentangan Halus & Pengecualian",
+              "teori_singkat": "Cermati penanda kontras yang membatasi berlakunya aturan umum pada kondisi tertentu.",
+              "contoh": "Sinyal: **albeit, notwithstanding, solely**. Contoh: *The policy succeeded, **albeit** at a high fiscal cost.*"
             }
           ]
         },
@@ -66,19 +69,29 @@
           "nama_kelompok": "Pola Distorsi Fakta (Pembeda FALSE vs NOT GIVEN)",
           "butir": [
             {
-              "judul_poin": "Pembalikan Arah Sebab-Akibat (FALSE)",
-              "penjelasan_singkat": "Opsi memakai seluruh kata kunci dari teks, tetapi membalik hubungan sebab dan akibatnya.",
-              "contoh_penerapan": "Teks: \"Stress **causes** insomnia.\" $\\rightarrow$ Pernyataan: \"Insomnia **triggers** chronic stress.\" (Arah terbalik = **FALSE**)."
+              "judul": "Pembalikan Arah Sebab-Akibat (FALSE)",
+              "teori_singkat": "Opsi memakai kata kunci sama, tetapi menukar posisi sebab dan akibatnya.",
+              "contoh": "Teks: *Stress **causes** insomnia.* $\\rightarrow$ Opsi: *Insomnia **triggers** chronic stress.* (**FALSE**)"
             },
             {
-              "judul_poin": "Generalisasi Mutlak / Ekstrem (FALSE)",
-              "penjelasan_singkat": "Mengganti kata peluang atau frekuensi sebagian menjadi klaim mutlak tanpa pengecualian.",
-              "contoh_penerapan": "Teks: \"Solar panels **often** reduce bills.\" $\\rightarrow$ Pernyataan: \"Solar panels **invariably** eliminate electricity costs.\" (Mutlak = **FALSE**)."
+              "judul": "Generalisasi Mutlak / Ekstrem (FALSE)",
+              "teori_singkat": "Opsi mengubah kata peluang atau frekuensi sebagian menjadi klaim mutlak tanpa celah.",
+              "contoh": "Teks: *Solar panels **often** cut bills.* $\\rightarrow$ Opsi: *Solar panels **invariably** eliminate costs.* (**FALSE**)"
             },
             {
-              "judul_poin": "Perbandingan Tanpa Dasar Teks (NOT GIVEN)",
-              "penjelasan_singkat": "Dua hal dibahas terpisah di teks, tetapi perbandingan di antara keduanya tidak pernah dinyatakan.",
-              "contoh_penerapan": "Teks membahas biaya kereta dan bus terpisah $\\rightarrow$ Pernyataan: \"Trains are **cheaper than** buses.\" (**NOT GIVEN**)."
+              "judul": "Distorsi Atribut / Kuantitas Spesifik (FALSE)",
+              "teori_singkat": "Opsi mengganti rincian angka, waktu, atau subjek spesifik dengan data yang bertentangan.",
+              "contoh": "Teks: ***Three** cities banned plastic.* $\\rightarrow$ Opsi: ***All** cities banned plastic.* (**FALSE**)"
+            },
+            {
+              "judul": "Perbandingan Tanpa Dasar Teks (NOT GIVEN)",
+              "teori_singkat": "Dua hal dibahas terpisah di teks, lalu opsi mengarang perbandingan di antaranya.",
+              "contoh": "Teks bahas tarif kereta & bus terpisah $\\rightarrow$ Opsi: *Trains are **cheaper than** buses.* (**NOT GIVEN**)"
+            },
+            {
+              "judul": "Atribut Tambahan di Luar Teks (NOT GIVEN)",
+              "teori_singkat": "Opsi menambahkan detail baru pada subjek teks yang kebenarannya tidak dapat diverifikasi.",
+              "contoh": "Teks: *Dr. Lee studied coral reefs.* $\\rightarrow$ Opsi: *Dr. Lee **funded** the reef project.* (**NOT GIVEN**)"
             }
           ]
         }
@@ -88,31 +101,40 @@
       "kode_subbab": "lbe-02-02",
       "judul_subbab": "Unstated Details and Exceptions",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Cara Kerja Soal *EXCEPT / NOT*:** Empat opsi berisi fakta benar yang sudah diparafrasa dari bacaan. Tugasmu cuma mencari satu opsi yang informasinya **tidak dibahas** (*unstated*) atau **berlawanan** (*false*).\n- **Kunci Dulu Lokasinya:** Gunakan kata kunci di soal untuk melakukan *scanning* ke paragraf yang relevan sebelum mengecek opsi satu per satu.\n- **Jangan Terkecoh Sinonim:** Beda kosakata bukan berarti salah. Pastikan kamu membandingkan **makna utuh** opsi dengan isi teks, bukan sekadar bentuk katanya.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Pada soal *EXCEPT/NOT*, eliminasi empat opsi parafrasa fakta teks untuk menemukan satu opsi salah atau tak dibahas.",
       "kelompok": [
         {
           "nama_kelompok": "Sinyal Rincian & Pengecualian dalam Teks",
           "butir": [
             {
-              "judul_poin": "Kata Penanda Daftar Fakta (Listing Signals)",
-              "penjelasan_singkat": "Kata sambung penambah informasi menandai deretan fakta setara yang sering dipecah menjadi empat opsi benar.",
-              "contoh_penerapan": "\"Solar power lowers bills; **moreover**, it cuts emissions **and** boosts property value.\""
+              "judul": "Kata Penanda Daftar Fakta (Listing Signals)",
+              "teori_singkat": "Penanda aditif merangkai beberapa fakta setara yang sering dipecah menjadi empat opsi benar.",
+              "contoh": "*Solar power lowers bills; **moreover**, it cuts emissions **and** boosts property value.*"
             },
             {
-              "judul_poin": "Kata Penanda Pengecualian (Explicit Exclusion)",
-              "penjelasan_singkat": "Kata pengecualian memisahkan satu hal yang keluar dari aturan umum kalimat tersebut.",
-              "contoh_penerapan": "\"All mammals are warm-blooded, **except for** monotremes like the platypus, which lay eggs.\""
+              "judul": "Kata Penanda Pengecualian (Explicit Exclusion)",
+              "teori_singkat": "Kata pengecualian memisahkan satu elemen yang keluar dari aturan umum kalimat.",
+              "contoh": "*All mammals are warm-blooded, **except for** monotremes like the platypus.*"
             },
             {
-              "judul_poin": "Kata Pembatas Cakupan (Limiting Modifiers)",
-              "penjelasan_singkat": "Kata keterangan ini mempersempit ruang lingkup fakta agar tidak dianggap berlaku untuk semua kondisi.",
-              "contoh_penerapan": "\"The vaccine proved effective **primarily** in adults **under** fifty years old.\""
+              "judul": "Kata Pembatas Cakupan (Limiting Modifiers)",
+              "teori_singkat": "Kata keterangan pembatas mempersempit ruang lingkup fakta agar tidak digeneralisasi ke semua kasus.",
+              "contoh": "*The vaccine proved effective **primarily** in adults **under** fifty years old.*"
             },
             {
-              "judul_poin": "Kata Pengantar Contoh & Rincian",
-              "penjelasan_singkat": "Frasa pengantar contoh membuka daftar rincian spesifik yang biasanya langsung dijadikan empat opsi benar.",
-              "contoh_penerapan": "\"Urbanization triggers several issues, **such as** traffic congestion, housing shortages, **and** air pollution.\""
+              "judul": "Kata Pengantar Contoh & Rincian",
+              "teori_singkat": "Frasa pengantar contoh membuka daftar rincian spesifik yang kerap dijadikan empat opsi benar.",
+              "contoh": "*Urbanization triggers issues, **such as** congestion, housing shortages, **and** air pollution.*"
+            },
+            {
+              "judul": "Sinyal Ketiadaan & Negasi Eksplisit",
+              "teori_singkat": "Kata bermakna negatif atau ketiadaan menandai hal yang justru tidak dimiliki subjek.",
+              "contoh": "*The early prototype **lacked** wireless connectivity and **failed to** pass safety tests.*"
             }
           ]
         },
@@ -120,24 +142,24 @@
           "nama_kelompok": "Pola Pengubahan Makna pada Opsi Jebakan (Unstated & False)",
           "butir": [
             {
-              "judul_poin": "Membalik Sebab-Akibat atau Peran (Role Reversal)",
-              "penjelasan_singkat": "Opsi memakai kata kunci yang persis sama, tetapi menukar posisi penyebab dan akibatnya.",
-              "contoh_penerapan": "Teks: \"**Deforestation accelerates soil erosion**.\" Opsi salah: \"Soil erosion is the primary driver of deforestation.\""
+              "judul": "Membalik Sebab-Akibat atau Peran (Role Reversal)",
+              "teori_singkat": "Opsi memakai kata kunci sama, tetapi menukar posisi pelaku dan objek akibatnya.",
+              "contoh": "Teks: ***Deforestation** accelerates erosion.* $\\rightarrow$ Jebakan: *Erosion drives deforestation.*"
             },
             {
-              "judul_poin": "Klaim Mutlak Berlebihan (Extreme Overstatement)",
-              "penjelasan_singkat": "Opsi mengubah pernyataan yang sifatnya peluang atau sebagian menjadi kepastian mutlak tanpa celah.",
-              "contoh_penerapan": "Teks: \"Remote work **can** improve productivity.\" Opsi salah: \"Remote work **always** guarantees higher employee output.\""
+              "judul": "Klaim Mutlak Berlebihan (Extreme Overstatement)",
+              "teori_singkat": "Opsi mengubah pernyataan peluang atau sebagian menjadi kepastian mutlak tanpa pengecualian.",
+              "contoh": "Teks: *Remote work **can** boost output.* $\\rightarrow$ Jebakan: *Remote work **always** guarantees productivity.*"
             },
             {
-              "judul_poin": "Topik di Luar Bahasan Teks (Out-of-Scope)",
-              "penjelasan_singkat": "Opsi membahas topik yang terdengar nyambung di dunia nyata, tetapi sama sekali tidak disentuh penulis.",
-              "contoh_penerapan": "Teks membahas sejarah dan budidaya kopi, lalu opsi menanyakan \"**economic impact on coffee farmers**.\""
+              "judul": "Topik di Luar Bahasan Teks (Out-of-Scope)",
+              "teori_singkat": "Opsi mengangkat isu relevan secara umum, tetapi sama sekali tidak dibahas penulis.",
+              "contoh": "Teks bahas budidaya kopi $\\rightarrow$ Jebakan: ***economic impact** on coffee farmers.*"
             },
             {
-              "judul_poin": "Perbandingan Fiktif (False Comparison)",
-              "penjelasan_singkat": "Teks membahas dua hal secara terpisah, lalu opsi mengarang perbandingan seolah satu lebih unggul dari yang lain.",
-              "contoh_penerapan": "Teks: \"Both electric and hybrid cars cut fuel use.\" Opsi salah: \"Electric cars are **cheaper than** hybrids.\""
+              "judul": "Perbandingan Fiktif (False Comparison)",
+              "teori_singkat": "Teks menyebut dua hal terpisah, lalu opsi mengarang perbandingan keunggulan di antaranya.",
+              "contoh": "Teks: *EVs and hybrids cut fuel.* $\\rightarrow$ Jebakan: *EVs are **cheaper than** hybrids.*"
             }
           ]
         },
@@ -145,14 +167,14 @@
           "nama_kelompok": "Sinyal Beda Pendapat pada Utas Komentar (Thread)",
           "butir": [
             {
-              "judul_poin": "Kata Pembuka Sanggahan Langsung",
-              "penjelasan_singkat": "Kata hubung pertentangan di awal komentar menandai sikap yang langsung membantah pendapat peserta sebelumnya.",
-              "contoh_penerapan": "\"**On the contrary**, extending school hours will only exhaust students without raising test scores.\""
+              "judul": "Kata Pembuka Sanggahan Langsung",
+              "teori_singkat": "Penanda kontras di awal komentar menandai sikap yang langsung membantah argumen sebelumnya.",
+              "contoh": "***On the contrary**, longer school hours only exhaust students without raising scores.*"
             },
             {
-              "judul_poin": "Sinyal Keraguan & Pengalihan Fokus (Pivot)",
-              "penjelasan_singkat": "Komentator meragukan solusi mayoritas lalu membelokkan diskusi ke risiko lain yang luput dibahas.",
-              "contoh_penerapan": "\"While digital textbooks save paper, **I doubt** they solve unequal internet access among students.\""
+              "judul": "Sinyal Keraguan & Pengalihan Fokus (Pivot)",
+              "teori_singkat": "Komentator meragukan solusi utama lalu menggeser diskusi ke risiko lain yang terabaikan.",
+              "contoh": "*While e-books save paper, **I doubt** they solve unequal internet access.*"
             }
           ]
         }
@@ -162,76 +184,85 @@
       "kode_subbab": "lbe-02-03",
       "judul_subbab": "Restating/Paraphrasing Sentences",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "* **Aturan Main Parafrasa ($A \\equiv B$):** Kalimat baru wajib menjaga pelaku, aksi, dan hubungan logikanya tetap sama. Jangan menambah atau mengurangi informasi aslinya.\n* **3 Langkah Cepat Membedah Kalimat:**\n  1. **Cari Inti Kalimat:** Temukan siapa pelakunya dan apa aksinya (Subjek + Kata Kerja + Objek).\n  2. **Kunci Kata Penghubung:** Tandai sinyal logika seperti *although* (kontras), *unless* (syarat), atau *thereby* (akibat).\n  3. **Cek Kesetaraan Makna:** Pastikan sinonim dan perubahan bentuk aktif-pasifnya tidak membalik makna awal.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Parafrasa setara ($A \\equiv B$) wajib mempertahankan pelaku, aksi, serta hubungan logika tanpa menambah atau mengurangi makna.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Mengubah Susunan Kalimat (Aktif-Pasif & Ringkasan Frasa)",
+          "nama_kelompok": "Transformasi Susunan Kalimat (Aktif-Pasif & Frasa)",
           "butir": [
             {
-              "judul_poin": "Tukar Aktif ke Pasif (Active-Passive Shift)",
-              "penjelasan_singkat": "Posisi subjek dan objek ditukar dengan menyesuaikan kata kerjanya, tanpa mengubah siapa pelaku aslinya.",
-              "contoh_penerapan": "Asli: *Researchers **found** microplastics in rainwater.* Parafrasa: ***Microplastics were detected** in rainwater by scientists.*"
+              "judul": "Tukar Aktif ke Pasif (Active-Passive Shift)",
+              "teori_singkat": "Tukar posisi subjek dan objek beserta bentuk verb tanpa mengubah pelaku asli.",
+              "contoh": "*Researchers **found** microplastics.* $\\equiv$ ***Microplastics were detected** by scientists.*"
             },
             {
-              "judul_poin": "Memadatkan Anak Kalimat (Clause Reduction)",
-              "penjelasan_singkat": "Anak kalimat penjelas (*that/which + verb*) diringkas menjadi frasa *V-ing* atau *V3* agar kalimat lebih padat.",
-              "contoh_penerapan": "Asli: *Policies **that limit** emissions help cities.* Parafrasa: *Policies **restricting** emissions benefit urban areas.*"
+              "judul": "Memadatkan Anak Kalimat (Clause Reduction)",
+              "teori_singkat": "Ringkas klausa relatif (*that/which + verb*) menjadi frasa partisipial *V-ing* atau *V3*.",
+              "contoh": "*Policies **that limit** emissions help cities.* $\\equiv$ *Policies **restricting** emissions benefit cities.*"
             },
             {
-              "judul_poin": "Mengubah Kata Kerja Jadi Kata Benda (Nominalisasi)",
-              "penjelasan_singkat": "Kata kerja aksi (*verb*) diubah menjadi kata benda (*noun*) tanpa menghilangkan keterangan sifat atau kecepatannya.",
-              "contoh_penerapan": "Asli: *The government **rapidly expanded** solar grids.* Parafrasa: *There was a **rapid expansion** of solar grids.*"
+              "judul": "Mengubah Kata Kerja Jadi Kata Benda (Nominalisasi)",
+              "teori_singkat": "Ubah kata kerja aksi (*verb*) menjadi frasa kata benda (*noun*) dengan makna tetap.",
+              "contoh": "*The state **rapidly expanded** solar grids.* $\\equiv$ *There was a **rapid expansion** of grids.*"
             },
             {
-              "judul_poin": "Dua Negasi Jadi Kalimat Positif ($\\neg(\\neg P) \\equiv P$)",
-              "penjelasan_singkat": "Gabungan kata negatif (*not*) dan lawan kata (*uncommon*) dilebur menjadi satu pernyataan positif yang setara.",
-              "contoh_penerapan": "Asli: *The new policy is **not uncommon**.* Parafrasa: *The new regulation occurs **frequently** in practice.*"
+              "judul": "Dua Negasi Jadi Kalimat Positif ($\\neg(\\neg P) \\equiv P$)",
+              "teori_singkat": "Lebur kata negatif (*not*) dan lawan kata berawalan negatif menjadi pernyataan positif setara.",
+              "contoh": "*The policy is **not uncommon**.* $\\equiv$ *The regulation occurs **frequently** in practice.*"
             }
           ]
         },
         {
-          "nama_kelompok": "2. Menukar Arah Sebab-Akibat, Kontras, & Perbandingan",
+          "nama_kelompok": "Pertukaran Arah Sebab-Akibat, Kontras, & Perbandingan",
           "butir": [
             {
-              "judul_poin": "Balik Posisi Sebab dan Akibat ($A \\rightarrow B \\equiv B \\leftarrow A$)",
-              "penjelasan_singkat": "Sebab dan akibat ditukar tempatnya dengan mengganti kata hubung *because/due to* menjadi *trigger* atau *result in*.",
-              "contoh_penerapan": "Asli: *Deforestation **triggered** severe flooding.* Parafrasa: *Severe flooding occurred **primarily due to** forest clearance.*"
+              "judul": "Balik Posisi Sebab dan Akibat ($A \\rightarrow B \\equiv B \\leftarrow A$)",
+              "teori_singkat": "Tukar posisi sebab dan akibat dengan membalik penanda *trigger* menjadi *due to*.",
+              "contoh": "*Deforestation **triggered** flooding.* $\\equiv$ *Flooding occurred **due to** forest clearance.*"
             },
             {
-              "judul_poin": "Ganti Kata Penghubung Kontras (Although vs Nevertheless)",
-              "penjelasan_singkat": "Penanda pertentangan seperti *although/despite* diganti menjadi *yet* atau *nevertheless* dengan mempertahankan dua fakta yang bertolak belakang.",
-              "contoh_penerapan": "Asli: ***Despite** high costs, adoption grew.* Parafrasa: *Expenses were high; **nevertheless**, usage increased steadily.*"
+              "judul": "Ganti Kata Penghubung Kontras (Although vs Nevertheless)",
+              "teori_singkat": "Ganti *although/despite* dengan *yet/nevertheless* sambil mempertahankan dua fakta yang bertolak belakang.",
+              "contoh": "***Despite** high costs, adoption grew.* $\\equiv$ *Expenses were high; **nevertheless**, usage increased.*"
             },
             {
-              "judul_poin": "Balik Urutan Perbandingan (More Than vs Less Than)",
-              "penjelasan_singkat": "Dua objek yang dibandingkan ditukar posisinya dengan membalik *more... than* menjadi *less... than* atau *not as... as*.",
-              "contoh_penerapan": "Asli: *Wind power is **cheaper than** coal.* Parafrasa: *Coal is **not as affordable as** wind energy.*"
+              "judul": "Balik Urutan Perbandingan (More Than vs Less Than)",
+              "teori_singkat": "Tukar posisi dua objek perbandingan dengan membalik *more... than* menjadi *not as... as*.",
+              "contoh": "*Wind power is **cheaper than** coal.* $\\equiv$ *Coal is **not as affordable as** wind.*"
+            },
+            {
+              "judul": "Konversi Intensitas (Too... to vs So... that)",
+              "teori_singkat": "Ubah struktur *too + adj + to V* menjadi *so + adj + that cannot*.",
+              "contoh": "*The signal was **too weak to** detect.* $\\equiv$ *The signal was **so faint that** sensors missed it.*"
             }
           ]
         },
         {
-          "nama_kelompok": "3. Membongkar Kalimat Pengandaian, Kepastian, & Inti Opini",
+          "nama_kelompok": "Pengandaian, Kepastian, & Inti Sikap Komentator",
           "butir": [
             {
-              "judul_poin": "Ubah Syarat Negatif (*Unless* $\\equiv$ *If Not*)",
-              "penjelasan_singkat": "Kata *unless* (kecuali jika) diterjemahkan menjadi *if... not* (jika tidak) atau *only if* agar syarat dan akibatnya tetap sejalan.",
-              "contoh_penerapan": "Asli: *Crops fail **unless** irrigated.* Parafrasa: *Crops survive **only if** they receive adequate water.*"
+              "judul": "Ubah Syarat Negatif (*Unless* $\\equiv$ *If Not*)",
+              "teori_singkat": "Terjemahkan *unless* menjadi *if... not* atau *only if* agar syarat tetap sejalan.",
+              "contoh": "*Crops fail **unless** irrigated.* $\\equiv$ *Crops survive **only if** watered adequately.*"
             },
             {
-              "judul_poin": "Bongkar Pengandaian Terbalik Tanpa *If* (*Had/Should/Were*)",
-              "penjelasan_singkat": "Struktur formal *Had + S + V3* di awal kalimat adalah bentuk lain dari pengandaian masa lampau (*If + S + had + V3*).",
-              "contoh_penerapan": "Asli: ***Had** funding arrived, trials would proceed.* Parafrasa: *Trials did not proceed **because funding was absent**.*"
+              "judul": "Bongkar Pengandaian Terbalik Tanpa *If* (*Had/Should/Were*)",
+              "teori_singkat": "Bentuk inversi *Had + S + V3* setara dengan pengandaian faktual berlawanan (*because not*).",
+              "contoh": "***Had** funding arrived, trials would proceed.* $\\equiv$ *Trials halted **because funding was absent**.*"
             },
             {
-              "judul_poin": "Samakan Tingkat Kepastian & Jumlah (Modals & Quantifiers)",
-              "penjelasan_singkat": "Kata bantu peluang (*may, might*) atau penanda jumlah (*few, rarely*) dipasangkan dengan sinonim yang kadarnya setara.",
-              "contoh_penerapan": "Asli: ***Few** experts endorse the claim.* Parafrasa: *The claim receives **scant support** from specialists.*"
+              "judul": "Samakan Tingkat Kepastian & Jumlah (Modals & Quantifiers)",
+              "teori_singkat": "Pasangkan kata bantu peluang atau penanda jumlah dengan sinonim yang kadarnya persis setara.",
+              "contoh": "***Few** experts endorse the claim.* $\\equiv$ *The claim receives **scant support** from specialists.*"
             },
             {
-              "judul_poin": "Gabungkan Sikap Inti & Alasan Komentator (Core Stance)",
-              "penjelasan_singkat": "Tangkap posisi utama komentator (setuju atau menolak) beserta alasan paling mendasarnya dalam satu kalimat ringkas.",
-              "contoh_penerapan": "Komentar: *AI speeds coding, yet threatens entry-level jobs.* Parafrasa: *The commenter **acknowledges AI's efficiency** while **warning of job losses**.*"
+              "judul": "Gabungkan Sikap Inti & Alasan Komentator (Core Stance)",
+              "teori_singkat": "Rangkum posisi utama komentator (setuju/menolak) beserta alasan mendasarnya dalam satu kalimat utuh.",
+              "contoh": "*AI speeds coding, yet threatens jobs.* $\\equiv$ *Commenter **notes efficiency** while **warning of layoffs**.*"
             }
           ]
         }
@@ -241,31 +272,40 @@
       "kode_subbab": "lbe-02-04",
       "judul_subbab": "Pronoun Reference and Contextual Vocabulary",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "* **Konteks Mengalahkan Kamus:** Kata punya banyak arti (*polysemy*), ditambah *idiom* dan *phrasal verb*. Arti aslinya selalu dikunci oleh kata-kata di sekitarnya, bukan arti kamus yang paling populer.\n* **Uji Ganti Kata Ganti (*Pronoun*):** Saat bertemu *they*, *it*, atau *this phenomenon*, langsung ganti kata itu dengan frasa rujukan sebelumnya. Pastikan jumlah (tunggal atau jamak) dan logikanya nyambung.\n* **Jaga Nada & Tingkat Kepastian:** Sinonim pengganti dan *modal verbs* (*must, might, should*) wajib menjaga derajat keyakinan penulis—jangan mengubah dugaan menjadi fakta pasti.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Kunci arti kata lewat konteks kalimat dan uji rujukan *pronoun* dengan menggantinya langsung ke frasa sebelumnya.",
       "kelompok": [
         {
           "nama_kelompok": "Katalog Konteks Kosakata, Polisemi & Idiom",
           "butir": [
             {
-              "judul_poin": "Kata Bermakna Ganda (Polysemy) di Teks Akademik",
-              "penjelasan_singkat": "Kata umum sering punya arti khusus di bidang sains atau sosial. Cek kata benda pasangannya untuk mengunci arti yang tepat.",
-              "contoh_penerapan": "Early intervention can **arrest** the progression of the disease. Di sini *arrest* berarti menghentikan (*halt*), bukan menangkap."
+              "judul": "Kata Bermakna Ganda (Polysemy) di Teks Akademik",
+              "teori_singkat": "Cek kata benda pasangan (*collocation*) untuk mengunci arti khusus kata umum di teks akademik.",
+              "contoh": "*Early intervention can **arrest** disease progression.* (**arrest** = menghentikan/*halt*, bukan menangkap)."
             },
             {
-              "judul_poin": "Petunjuk Definisi dan Kontras dalam Satu Kalimat",
-              "penjelasan_singkat": "Cari kata sambung berlawanan (*yet, unlike*) atau tanda baca (*em-dash*, koma) yang langsung menerjemahkan kata sulit.",
-              "contoh_penerapan": "The policy proved **ubiquitous**—appearing in virtually every district. Penjelasan setelah tanda pisah membocorkan artinya: tersebar luas (*widespread*)."
+              "judul": "Petunjuk Definisi dan Kontras dalam Satu Kalimat",
+              "teori_singkat": "Manfaatkan tanda pisah (*em-dash*), koma apositif, atau sinyal kontras untuk menebak arti kata sulit.",
+              "contoh": "*The policy proved **ubiquitous**—appearing in every district.* (**ubiquitous** = tersebar luas/*widespread*)."
             },
             {
-              "judul_poin": "Phrasal Verbs dalam Diskusi dan Forum",
-              "penjelasan_singkat": "Gabungan kata kerja dan preposisi melahirkan arti baru yang jauh berbeda dari makna kata dasarnya.",
-              "contoh_penerapan": "User12: Don't **write off** solar panels yet; costs are dropping. Frasa *write off* di sini berarti meremehkan (*dismiss*)."
+              "judul": "Phrasal Verbs dalam Diskusi dan Forum",
+              "teori_singkat": "Gabungan kata kerja dan preposisi membentuk makna idiomatis baru yang berbeda dari kata dasarnya.",
+              "contoh": "*Don't **write off** solar panels yet; costs are dropping.* (**write off** = meremehkan/*dismiss*)."
             },
             {
-              "judul_poin": "Idiom dan Ungkapan Kiasan di Forum Thread",
-              "penjelasan_singkat": "Ungkapan kiasan menunjukkan sikap penulis setuju atau menolak. Baca nada komentar sebelumnya agar arah maknanya tidak meleset.",
-              "contoh_penerapan": "Opponents argue the new tax **misses the mark** on inflation. Idiom ini berarti gagal mencapai sasaran."
+              "judul": "Idiom dan Ungkapan Kiasan di Forum Thread",
+              "teori_singkat": "Baca nada komentar sebelumnya untuk menentukan apakah ungkapan kiasan bermakna mendukung atau mengkritik.",
+              "contoh": "*Opponents argue the new tax **misses the mark** on inflation.* (**misses the mark** = meleset/gagal)."
+            },
+            {
+              "judul": "Analisis Imbuhan & Akar Kata (Affixes)",
+              "teori_singkat": "Pecah awalan (*prefix*) dan akhiran (*suffix*) untuk menebak arah makna dan kelas kata.",
+              "contoh": "***Counter**productive* (*counter-* = berlawanan) $\\rightarrow$ menghasilkan dampak yang justru menghambat tujuan."
             }
           ]
         },
@@ -273,24 +313,29 @@
           "nama_kelompok": "Pola Rujukan Pronomina & Demonstrativa",
           "butir": [
             {
-              "judul_poin": "Kata Ganti Personal dan Kecocokan Jumlah",
-              "penjelasan_singkat": "Kata *they, them, their* wajib merujuk benda jamak sebelumnya, sedangkan *it, its* khusus untuk benda tunggal.",
-              "contoh_penerapan": "Researchers tested three **vaccines**, but **they** showed uneven efficacy. Kata *they* merujuk pada *three vaccines*, bukan *researchers*."
+              "judul": "Kata Ganti Personal dan Kecocokan Jumlah",
+              "teori_singkat": "Cocokkan jumlah (*they/them* = jamak; *it/its* = tunggal) serta logika aksi kata kerjanya.",
+              "contoh": "*Researchers tested three **vaccines**, but **they** showed uneven efficacy.* (**they** $\\rightarrow$ *three vaccines*)."
             },
             {
-              "judul_poin": "Kata Tunjuk Perangkum Gagasan (This / These + Noun)",
-              "penjelasan_singkat": "Frasa seperti *this phenomenon* atau *such measures* merangkum seluruh kejadian di kalimat sebelumnya, bukan satu kata benda saja.",
-              "contoh_penerapan": "Coral reefs bleach when oceans warm. **This phenomenon** threatens biodiversity. *This phenomenon* merujuk pada peristiwa memutihnya karang akibat laut memanas."
+              "judul": "Kata Tunjuk Perangkum Gagasan (This / These + Noun)",
+              "teori_singkat": "Frasa *this/these + noun* merangkum seluruh peristiwa kalimat sebelumnya, bukan sekadar satu kata benda.",
+              "contoh": "*Reefs bleach when oceans warm. **This phenomenon** threatens biodiversity.* (**This phenomenon** $\\rightarrow$ pemutihan karang)."
             },
             {
-              "judul_poin": "Rujukan Perbandingan (The Former vs. The Latter)",
-              "penjelasan_singkat": "Saat membandingkan dua hal, *the former* merujuk hal pertama yang disebut, sedangkan *the latter* merujuk hal kedua.",
-              "contoh_penerapan": "Between wind and **solar energy**, **the latter** is easier to install. *The latter* merujuk pada *solar energy*."
+              "judul": "Rujukan Perbandingan (The Former vs. The Latter)",
+              "teori_singkat": "Pada perbandingan dua entitas, *the former* merujuk hal pertama dan *the latter* hal kedua.",
+              "contoh": "*Between wind and **solar energy**, **the latter** is easier to install.* (**the latter** $\\rightarrow$ *solar energy*)."
             },
             {
-              "judul_poin": "Kata Ganti Penghubung (Which / That / Where)",
-              "penjelasan_singkat": "Kata *which* tanpa koma merujuk benda tepat di depannya, tetapi *which* setelah koma merujuk seluruh kejadian sebelumnya.",
-              "contoh_penerapan": "Emissions fell by 10%, **which** surprised many economists. Kata *which* merujuk fakta turunnya emisi sebesar 10%."
+              "judul": "Kata Ganti Penghubung (Which / That / Where)",
+              "teori_singkat": "*Which* tanpa koma merujuk benda di depannya; *which* berkoma merujuk seluruh klausa sebelumnya.",
+              "contoh": "*Emissions fell by $10\\%$, **which** surprised economists.* (**which** $\\rightarrow$ fakta turunnya emisi $10\\%$)."
+            },
+            {
+              "judul": "Pronomina Substitusi (One / Ones / Those)",
+              "teori_singkat": "Kata *one/ones/those* menggantikan kata benda berulang yang sudah disebut sebelumnya agar kalimat ringkas.",
+              "contoh": "*Unlike traditional **batteries**, **those** using solid-state tech charge faster.* (**those** $\\rightarrow$ *batteries*)."
             }
           ]
         },
@@ -298,19 +343,19 @@
           "nama_kelompok": "Presisi Pragmatik Sinonim & Modal Verbs",
           "butir": [
             {
-              "judul_poin": "Kekuatan Makna dan Gaya Bahasa Sinonim",
-              "penjelasan_singkat": "Kata pengganti harus punya tingkat keyakinan dan gaya bahasa formal yang setara dengan kata asli di teks.",
-              "contoh_penerapan": "The study **suggests** a link between diet and sleep. Padanan yang pas adalah *indicates*, bukan *proves* yang terlalu mutlak."
+              "judul": "Kekuatan Makna dan Gaya Bahasa Sinonim",
+              "teori_singkat": "Pilih sinonim dengan derajat keyakinan (*register* dan *intensity*) yang setara dengan kata asli.",
+              "contoh": "*The study **suggests** a link.* $\\rightarrow$ Padanan pas: ***indicates*** (bukan *proves* yang terlalu mutlak)."
             },
             {
-              "judul_poin": "Modal Verbs Dugaan: Yakin vs. Ragu-Ragu",
-              "penjelasan_singkat": "Kata *must* menandakan kesimpulan logis yang kuat, sedangkan *may, might, could* menunjukkan kemungkinan yang belum pasti.",
-              "contoh_penerapan": "The city had no walls, so it **must** have been peaceful. Di sini *must* adalah tebakan logis penulis berdasarkan bukti."
+              "judul": "Modal Verbs Dugaan: Yakin vs. Ragu-Ragu",
+              "teori_singkat": "*Must* menandakan simpulan logis kuat, sedangkan *may/might/could* menunjukkan kemungkinan yang belum pasti.",
+              "contoh": "*The city had no walls, so it **must** have been peaceful.* (**must** = simpulan logis)."
             },
             {
-              "judul_poin": "Modal Verbs Tindakan: Saran, Wajib dan Kemampuan",
-              "penjelasan_singkat": "*Should/ought to* berisi saran, *have to/must* menyatakan kewajiban mutlak, dan *can* menunjukkan kemampuan atau potensi nyata.",
-              "contoh_penerapan": "Governments **should** subsidize public transit to cut congestion. Kata *should* menunjukkan saran kebijakan (*recommendation*), bukan fakta."
+              "judul": "Modal Verbs Tindakan: Saran, Wajib dan Kemampuan",
+              "teori_singkat": "*Should* menyatakan saran, *must/have to* kewajiban mutlak, dan *can* kemampuan atau potensi nyata.",
+              "contoh": "*Governments **should** subsidize transit.* (**should** = rekomendasi kebijakan, bukan fakta yang sudah terjadi)."
             }
           ]
         }

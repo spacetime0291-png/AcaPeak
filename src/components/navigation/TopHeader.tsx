@@ -157,15 +157,14 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
               )}
             </div>
 
-            {/* Cheat Sheet Rangkuman Link */}
+            {/* Rangkuman / Cheat Sheet Link */}
             <Link
               to="/rangkuman"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition-all hover:scale-105 shadow-2xs shrink-0"
-              title="Buka Lembar Rangkuman / Cheat Sheet per Bab"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition-all hover:scale-105 shadow-2xs shrink-0"
+              title="Buka Halaman Rangkuman & Rumus Cepat per Bab"
             >
-              <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-              <span className="hidden md:inline">Cheat Sheet Bab</span>
-              <span className="md:hidden">Cheat Sheet</span>
+              <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500 shrink-0" />
+              <span>Rangkuman</span>
             </Link>
 
             {/* Desktop Theme Toggle */}

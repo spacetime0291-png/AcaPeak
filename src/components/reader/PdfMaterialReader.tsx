@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   ChevronLeft,
   Maximize2,
   Minimize2,
+  Zap,
 } from 'lucide-react';
 import type { Material } from '../../types/material';
 import { ThemeToggle } from '../common/ThemeToggle';
@@ -34,6 +36,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
 }) => {
   const { metadata } = material;
   const isDark = theme === 'dark';
+  const kodeBab = metadata.id ? metadata.id.split('-').slice(0, 2).join('-').toLowerCase() : '';
 
   // Focus Mode toggle
   const [isFocusMode, setIsFocusMode] = useState<boolean>(false);
@@ -92,6 +95,19 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
             <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden xs:inline max-w-[140px] sm:max-w-[200px]">
               {metadata.title}
             </span>
+
+            {/* Tombol Pill Subtle Rangkuman Cepat Bab Ini */}
+            {kodeBab && (
+              <Link
+                to={`/rangkuman/${kodeBab}#${metadata.id.toLowerCase()}`}
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition shrink-0 shadow-2xs hover:scale-105"
+                title={`Buka Rangkuman & Rumus Cepat Bab ${kodeBab.toUpperCase()}`}
+              >
+                <Zap className="w-3 h-3 fill-amber-500 text-amber-500 shrink-0" />
+                <span className="hidden sm:inline">⚡ Rangkuman Cepat Bab Ini</span>
+                <span className="sm:hidden">⚡ Rangkuman</span>
+              </Link>
+            )}
           </div>
 
           {/* Indikator Progres Real-Time & Kontrol Fleksibel */}

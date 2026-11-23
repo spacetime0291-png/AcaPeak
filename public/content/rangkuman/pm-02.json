@@ -2,33 +2,36 @@
   "kode_bab": "pm-02",
   "subtes": "Subtes 7: Penalaran Matematika (PM)",
   "bab": "Bab 2: Pemodelan Aljabar dan Fungsi",
-  "batch_model": "neon",
-  "jumlah_subbab": 4,
+  "estimasi_menit_review": 5,
   "daftar_subbab": [
     {
       "kode_subbab": "pm-02-01",
       "judul_subbab": "Sistem Persamaan Linear Kontekstual (SPLDV & SPLTV)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Terjemahkan ke Variabel (Formulating)**: Tentukan huruf untuk hal yang belum diketahui beserta satuannya (misalnya harga dalam ribuan rupiah).\n- **Olah dengan Cerdas (Employing)**: Ubah tiap info cerita jadi persamaan. Cek dulu apakah persamaan bisa langsung dijumlah atau dikurang sebelum eliminasi panjang.\n- **Cek Akal Sehat (Interpreting)**: Pastikan hasil akhir masuk akal di dunia nyata. Jumlah orang, tiket, atau mobil wajib bilangan bulat positif.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Ubah cerita jadi persamaan bersatuan seragam, olah dengan kombinasi cepat, lalu cek kelayakan bilangan bulat positif.",
       "kelompok": [
         {
           "nama_kelompok": "Pemodelan Transaksi, Paket Bundling, dan Campuran",
           "butir": [
             {
-              "judul_poin": "Tentukan Variabel & Samakan Satuan",
-              "penjelasan_singkat": "Beri nama variabel untuk nilai yang dicari. Samakan semua satuan (misalnya ribuan rupiah atau gram) sebelum menghitung.",
-              "contoh_penerapan": "Misal harga kopi $x$ ribu dan roti $y$ ribu. Belanja Rp25.000 untuk 2 kopi dan 1 roti ditulis **$2x + y = 25$**."
+              "judul": "Variabel & Kesamaan Satuan",
+              "teori_singkat": "Tetapkan variabel nilai dicari dan samakan satuan (ribuan rupiah/gram) sebelum menyusun persamaan.",
+              "contoh": "2 kopi ($x$ ribu) + 1 roti ($y$ ribu) = Rp25.000 $\\rightarrow$ **$2x + y = 25$**."
             },
             {
-              "judul_poin": "Ubah Paket Bundling Jadi Persamaan",
-              "penjelasan_singkat": "Tiap paket belanja jadi satu persamaan $\\sum a_i x_i = C$, dengan $a_i$ adalah jumlah barang dan $x_i$ adalah harga satuannya.",
-              "contoh_penerapan": "Paket A (2 dewasa, 1 anak) Rp110 ribu dan Paket B (1 dewasa, 2 anak) Rp100 ribu ditulis **$2x + y = 110$** dan **$x + 2y = 100$**."
+              "judul": "Model Paket Bundling",
+              "teori_singkat": "Tiap paket membentuk $\\sum a_i x_i = C$ ($a_i$: jumlah barang, $x_i$: harga satuan).",
+              "contoh": "Paket A (2 dewasa, 1 anak) Rp110rb; B (1, 2) Rp100rb $\\rightarrow$ **$2x+y=110$**, **$x+2y=100$**."
             },
             {
-              "judul_poin": "Model Campuran & Kadar Persentase",
-              "penjelasan_singkat": "Buat dua persamaan terpisah: total berat ($x+y=M$) dan total isi zat aktif ($p_1x+p_2y=K$).",
-              "contoh_penerapan": "Campur $x$ gram larutan $10\\%$ dan $y$ gram larutan $30\\%$ jadi $200$ gram berkadar $18\\%$: **$x+y=200$** dan **$0,1x+0,3y=36$**."
+              "judul": "Campuran & Kadar Persentase",
+              "teori_singkat": "Susun dua persamaan: total massa ($x+y=M$) dan total zat aktif ($p_1x+p_2y=K$).",
+              "contoh": "Larutan $10\\%$ ($x$) + $30\\%$ ($y$) = $200\\text{ g}$ kadar $18\\%$ $\\rightarrow$ **$x+y=200$**, **$0,1x+0,3y=36$**."
             }
           ]
         },
@@ -36,19 +39,19 @@
           "nama_kelompok": "Timbangan Setimbang, Logam Paduan, dan Konversi Poin",
           "butir": [
             {
-              "judul_poin": "Timbangan Setimbang (Kiri = Kanan)",
-              "penjelasan_singkat": "Saat timbangan sejajar, total massa di sisi kiri persis sama dengan sisi kanan: $\\sum m_{\\text{kiri}} = \\sum m_{\\text{kanan}}$.",
-              "contoh_penerapan": "Dua bola ($a$) dan satu kubus ($b$) setimbang dengan tiga silinder ($c$). Persamaannya: **$2a+b=3c$**."
+              "judul": "Timbangan Setimbang",
+              "teori_singkat": "Posisi sejajar berarti total massa kiri sama dengan kanan: $\\sum m_{\\text{kiri}} = \\sum m_{\\text{kanan}}$.",
+              "contoh": "2 bola ($a$) + 1 kubus ($b$) setimbang 3 silinder ($c$) $\\rightarrow$ **$2a + b = 3c$**."
             },
             {
-              "judul_poin": "Model Skor Menang, Seri, dan Kalah",
-              "penjelasan_singkat": "Tulis total laga sebagai $m+s+k=N$ dan total poin sebagai $p_m m + p_s s - p_k k = S$.",
-              "contoh_penerapan": "Dari $10$ laga (menang $+3$, seri $+1$, kalah $-1$) diraih $18$ poin. Modelnya: **$m+s+k=10$** dan **$3m+s-k=18$**."
+              "judul": "Skor Menang, Seri, dan Kalah",
+              "teori_singkat": "Total laga $m+s+k=N$ dan total poin $p_m m + p_s s - p_k k = S$.",
+              "contoh": "$10$ laga (M $+3$, S $+1$, K $-1$) raih $18$ poin $\\rightarrow$ **$m+s+k=10$**, **$3m+s-k=18$**."
             },
             {
-              "judul_poin": "Campuran Logam & Rata-Rata Berbobot",
-              "penjelasan_singkat": "Gabungan beberapa bahan berkadar beda memenuhi $\\sum w_i x_i = W_{\\text{total}}\\bar{x}$, dengan $w_i$ adalah massa tiap bahan.",
-              "contoh_penerapan": "Emas $18$ karat ($x$ gram) dan $24$ karat ($y$ gram) dilebur jadi $60$ gram emas $20$ karat: **$18x+24y=1200$**."
+              "judul": "Campuran Logam & Rata-Rata Berbobot",
+              "teori_singkat": "Gabungan bahan beda kadar memenuhi $\\sum w_i x_i = W_{\\text{total}}\\bar{x}$ ($w_i$: massa bahan).",
+              "contoh": "Emas $18\\text{ K}$ ($x$) + $24\\text{ K}$ ($y$) = $60\\text{ g}$ emas $20\\text{ K}$ $\\rightarrow$ **$18x+24y=1200$**."
             }
           ]
         },
@@ -56,19 +59,24 @@
           "nama_kelompok": "Trik Kombinasi Langsung dan Kecukupan Data",
           "butir": [
             {
-              "judul_poin": "Trik Jumlah Langsung untuk $x+y+z$",
-              "penjelasan_singkat": "Jika angka di depan $x, y, z$ berpola simetris, langsung jumlahkan semua persamaan lalu bagi dengan angka kembarnya.",
-              "contoh_penerapan": "Dari $2x+y+z=14$, $x+2y+z=15$, dan $x+y+2z=11$, jumlahkan semuanya: $4(x+y+z)=40$, jadi **$x+y+z=10$**."
+              "judul": "Jumlah Langsung Pola Simetris",
+              "teori_singkat": "Jika koefisien $x,y,z$ simetris, jumlahkan semua persamaan lalu bagi koefisien kembarnya.",
+              "contoh": "$2x+y+z=14$, $x+2y+z=15$, $x+y+2z=11$ $\\rightarrow$ $4(x+y+z)=40 \\rightarrow$ **$x+y+z=10$**."
             },
             {
-              "judul_poin": "Cari Paket Target Tanpa Cari Variabel Satu-Satu",
-              "penjelasan_singkat": "Cari pengali $k_1, k_2$ agar gabungan $k_1(\\text{Pers. 1}) + k_2(\\text{Pers. 2})$ pas membentuk ekspresi yang ditanyakan.",
-              "contoh_penerapan": "Diketahui $3x+2y+z=20$ dan $x+2y+3z=16$. Jumlahkan keduanya lalu bagi dua untuk dapat **$2x+2y+2z=18$**."
+              "judul": "Kombinasi Linear Target",
+              "teori_singkat": "Cari pengali $k_1,k_2$ agar $k_1(\\text{Pers.1})+k_2(\\text{Pers.2})$ langsung membentuk ekspresi target.",
+              "contoh": "$3x+2y+z=20$ dan $x+2y+3z=16$, jumlahkan lalu bagi $2$ $\\rightarrow$ **$2x+2y+2z=18$**."
             },
             {
-              "judul_poin": "Cek Solusi Tunggal di Soal Kecukupan Data",
-              "penjelasan_singkat": "SPLDV punya satu jawaban pasti jika dan hanya jika perbandingan koefisiennya tidak sama: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.",
-              "contoh_penerapan": "Persamaan $2x+4y=10$ dan $x+2y=5$ saling berkelipatan ($\\frac{2}{1}=\\frac{4}{2}=\\frac{10}{5}$), jadi **tidak cukup untuk mencari $x$ maupun $y$**."
+              "judul": "Syarat Solusi Tunggal (Kecukupan Data)",
+              "teori_singkat": "SPLDV punya solusi tunggal jika perbandingan koefisien tidak sama: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.",
+              "contoh": "$2x+4y=10$ dan $x+2y=5$ berkelipatan ($\\frac{2}{1}=\\frac{4}{2}=\\frac{10}{5}$) $\\rightarrow$ **tidak cukup mencari $x,y$**."
+            },
+            {
+              "judul": "Kondisi Tanpa Solusi & Tak Hingga",
+              "teori_singkat": "Sejajar ($\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\neq\\frac{c_1}{c_2}$) tanpa solusi; berimpit ($\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}$) tak hingga solusi.",
+              "contoh": "$2x+y=5$ dan $4x+2y=8$ memenuhi $\\frac{2}{4}=\\frac{1}{2}\\neq\\frac{5}{8}$ $\\rightarrow$ **tidak ada solusi**."
             }
           ]
         },
@@ -76,19 +84,19 @@
           "nama_kelompok": "Syarat Bilangan Bulat Positif (Diophantine Kontekstual)",
           "butir": [
             {
-              "judul_poin": "Cek Kelipatan FPB untuk Solusi Bulat",
-              "penjelasan_singkat": "Persamaan $ax+by=c$ hanya punya jawaban bilangan bulat jika $\\text{FPB}(a,b)$ habis membagi $c$.",
-              "contoh_penerapan": "Pada $6x+9y=40$, $\\text{FPB}(6,9)=3$ tidak habis membagi $40$. Artinya, **tidak ada kombinasi unit bulat yang memenuhi**."
+              "judul": "Uji FPB untuk Solusi Bulat",
+              "teori_singkat": "Persamaan $ax+by=c$ punya solusi bulat jika $\\text{FPB}(a,b)$ habis membagi $c$.",
+              "contoh": "$6x+9y=40$: $\\text{FPB}(6,9)=3$ tak membagi $40$ $\\rightarrow$ **tak ada kombinasi bulat**."
             },
             {
-              "judul_poin": "Cacah Kombinasi Bulat Positif & Nol ($x,y \\ge 0$)",
-              "penjelasan_singkat": "Pilih variabel berkoefisien paling besar, lalu uji angka bulatnya dari $0$ sampai batas $\\lfloor \\frac{c}{a} \\rfloor$.",
-              "contoh_penerapan": "Untuk $5x+2y=24$ ($x,y \\in \\mathbb{Z}_{\\ge 0}$), uji $x \\in \\{0,2,4\\}$ memberi **tiga pasangan: $(0,12)$, $(2,7)$, dan $(4,2)$**."
+              "judul": "Cacah Solusi Bulat Non-Negatif ($x,y \\ge 0$)",
+              "teori_singkat": "Uji variabel berkoefisien terbesar dari $0$ hingga batas $\\lfloor \\frac{c}{a} \\rfloor$.",
+              "contoh": "$5x+2y=24$ ($x,y \\ge 0$): uji $x \\in \\{0,2,4\\}$ $\\rightarrow$ **$(0,12)$, $(2,7)$, $(4,2)$**."
             },
             {
-              "judul_poin": "3 Variabel tapi Cuma 2 Persamaan",
-              "penjelasan_singkat": "Eliminasi satu variabel dulu agar sisa dua variabel, lalu uji nilai bilangan bulat yang masih masuk akal.",
-              "contoh_penerapan": "Dari $x+y+z=12$ dan $5x+2y+z=30$, eliminasi $z$ memberi **$4x+y=18$**. Jika $x,y,z \\ge 1$, hanya **$x=3$** ($y=6, z=3$) dan **$x=4$** ($y=2, z=6$) yang memenuhi."
+              "judul": "3 Variabel dengan 2 Persamaan",
+              "teori_singkat": "Eliminasi satu variabel hingga tersisa dua variabel, lalu uji nilai bulat positif.",
+              "contoh": "$x+y+z=12$ dan $5x+2y+z=30$ $\\rightarrow$ $4x+y=18$ ($x,y,z\\ge1$) $\\rightarrow$ **$x=3$ atau $x=4$**."
             }
           ]
         }
@@ -98,31 +106,35 @@
       "kode_subbab": "pm-02-02",
       "judul_subbab": "Pemodelan Fungsi Linear dan Kuadrat",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Fungsi Linear** $f(x) = mx + c$: Memodelkan perubahan tetap ($m > 0$ naik, $m < 0$ menyusut). Titik potong $f(x) = g(x)$ dipakai untuk mencari titik impas biaya atau harga keseimbangan pasar.\n- **Fungsi Kuadrat** $f(x) = ax^2 + bx + c$: Memodelkan lintasan melengkung (parabola), luas lahan maksimal, dan pendapatan tertinggi.\n- **Titik Puncak**: Jika kurva terbuka ke bawah ($a < 0$), nilai maksimal terjadi di $x_p = -\\frac{b}{2a}$ atau tepat di tengah dua akarnya, $x_p = \\frac{x_1 + x_2}{2}$.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Fungsi linear memodelkan laju tetap dan titik impas, sedangkan fungsi kuadrat memodelkan parabola serta optimasi titik puncak.",
       "kelompok": [
         {
           "nama_kelompok": "Optimasi Fungsi Kuadrat (Pendapatan dan Luas)",
           "butir": [
             {
-              "judul_poin": "Cari Pendapatan Maksimal Saat Harga Berubah",
-              "penjelasan_singkat": "Saat kenaikan harga $px$ mengurangi pembeli sebanyak $qx$, pendapatan $R(x) = (H_0 + px)(Q_0 - qx)$ mencapai puncak tepat di rata-rata kedua akarnya.",
-              "contoh_penerapan": "Harga Rp$20.000$ ($100$ pembeli), tiap naik Rp$2.000$ pembeli turun $5$: $R(x) = (20+2x)(100-5x)$ maksimal saat **$x = \\frac{-10 + 20}{2} = 5$** (harga Rp$30.000$)."
+              "judul": "Pendapatan Maksimal Perubahan Harga",
+              "teori_singkat": "Model $R(x)=(H_0+px)(Q_0-qx)$ mencapai puncak di tengah dua akarnya: $x_p=\\frac{x_1+x_2}{2}$.",
+              "contoh": "$R(x)=(20+2x)(100-5x)$ maksimal di **$x=\\frac{-10+20}{2}=5$** (harga **Rp30.000**)."
             },
             {
-              "judul_poin": "Cari Laba Maksimal dari Pendapatan dan Biaya",
-              "penjelasan_singkat": "Kurangi dulu pendapatan dengan total biaya, $L(x) = R(x) - C(x)$, baru cari titik puncaknya dengan $x_p = -\\frac{b}{2a}$.",
-              "contoh_penerapan": "Pendapatan $R(x) = 50x - x^2$ dan biaya $C(x) = 10x + 100$ memberi laba $L(x) = -x^2 + 40x - 100$, maksimal di **$x = 20$**."
+              "judul": "Laba Maksimal ($R - C$)",
+              "teori_singkat": "Bentuk laba $L(x)=R(x)-C(x)$, lalu cari puncaknya dengan $x_p=-\\frac{b}{2a}$.",
+              "contoh": "$R(x)=50x-x^2$, $C(x)=10x+100$ $\\rightarrow$ $L(x)=-x^2+40x-100$, puncak di **$x=20$**."
             },
             {
-              "judul_poin": "Luas Lahan Maksimal yang Menempel Satu Tembok",
-              "penjelasan_singkat": "Pagar sepanjang $K$ yang menempel satu tembok memenuhi $K = 2l + p$. Luas maksimal selalu terjadi saat $p = 2l$.",
-              "contoh_penerapan": "Pagar $40\\text{ m}$ menempel tembok: luas maksimal tercapai saat lebar $l = 10\\text{ m}$ dan panjang sejajar tembok **$p = 20\\text{ m}$**."
+              "judul": "Luas Maksimal Menempel Satu Tembok",
+              "teori_singkat": "Pagar $K=2l+p$ menempel tembok mencapai luas maksimal saat $p=2l$.",
+              "contoh": "Pagar $40\\text{ m}$ menempel tembok $\\rightarrow$ $l=10\\text{ m}$, **$p=20\\text{ m}$** ($L=200\\text{ m}^2$)."
             },
             {
-              "judul_poin": "Luas Lahan Maksimal dengan Sekat Pembagi",
-              "penjelasan_singkat": "Jika ada $n$ sekat tambahan sejajar lebar, panjang pagar menjadi $K = (n+2)l + p$. Luas maksimal tercapai saat $p = (n+2)l$.",
-              "contoh_penerapan": "Pagar $60\\text{ m}$ untuk lahan bersekat satu ($n=1$): $3l + p = 60$, luas maksimal saat $3l = p = 30\\text{ m}$ (**$L = 300\\text{ m}^2$**)."
+              "judul": "Luas Maksimal dengan $n$ Sekat",
+              "teori_singkat": "Pagar bersekat $n$ memenuhi $K=(n+2)l+p$, luas maksimal saat $p=(n+2)l$.",
+              "contoh": "Pagar $60\\text{ m}$ bersekat $1$ ($3l+p=60$) $\\rightarrow$ $3l=p=30\\text{ m}$ $\\rightarrow$ **$L=300\\text{ m}^2$**."
             }
           ]
         },
@@ -130,24 +142,29 @@
           "nama_kelompok": "Pemodelan Lintasan Parabola dan Kurva",
           "butir": [
             {
-              "judul_poin": "Menyusun Rumus Parabola dari Titik Puncak",
-              "penjelasan_singkat": "Jika titik puncak $(x_p, y_p)$ diketahui, pakai $f(x) = a(x - x_p)^2 + y_p$, lalu masukkan satu titik lain untuk mencari $a$.",
-              "contoh_penerapan": "Puncak pancuran di $(3, 9)$ dan lewat $(0, 0)$: $0 = a(0 - 3)^2 + 9 \\rightarrow a = -1$, sehingga **$f(x) = -(x - 3)^2 + 9$**."
+              "judul": "Parabola dari Titik Puncak",
+              "teori_singkat": "Gunakan $f(x)=a(x-x_p)^2+y_p$, lalu substitusi satu titik lain untuk mencari $a$.",
+              "contoh": "Puncak $(3,9)$, lewat $(0,0)$ $\\rightarrow$ $0=9a+9 \\rightarrow a=-1 \\rightarrow$ **$f(x)=-(x-3)^2+9$**."
             },
             {
-              "judul_poin": "Menyusun Rumus Parabola dari Dua Titik Potong Sumbu-X",
-              "penjelasan_singkat": "Jika titik jatuh dan titik awal di sumbu-$X$ diketahui, pakai $f(x) = a(x - x_1)(x - x_2)$ ditambah satu titik lain untuk mencari $a$.",
-              "contoh_penerapan": "Bola ditendang dari $(0,0)$, jatuh di $(20,0)$, lewat $(2; 3,6)$: $3,6 = a(2)(-18) \\rightarrow a = -0,1$, tinggi puncak **$y_p = f(10) = 10\\text{ m}$**."
+              "judul": "Parabola dari Dua Akar Sumbu-$X$",
+              "teori_singkat": "Gunakan $f(x)=a(x-x_1)(x-x_2)$ ditambah satu titik lain untuk menentukan $a$.",
+              "contoh": "Akar $(0,0)$, $(20,0)$, lewat $(2;3,6)$ $\\rightarrow$ $a=-0,1 \\rightarrow$ puncak **$y_p=f(10)=10\\text{ m}$**."
             },
             {
-              "judul_poin": "Memanfaatkan Simetri pada Kabel Jembatan Gantung",
-              "penjelasan_singkat": "Taruh titik terendah kabel tepat di sumbu-$Y$ ($x_p = 0$) agar rumusnya langsung menyusut jadi $f(x) = ax^2 + y_p$.",
-              "contoh_penerapan": "Dua menara berjarak $100\\text{ m}$ ($x = \\pm 50$) setinggi $30\\text{ m}$ dan titik terendah $5\\text{ m}$: $30 = a(50)^2 + 5 \\rightarrow$ **$a = 0,01$**."
+              "judul": "Simetri Kabel Jembatan Gantung",
+              "teori_singkat": "Letakkan titik terendah di sumbu-$Y$ ($x_p=0$) agar persamaan menjadi $f(x)=ax^2+y_p$.",
+              "contoh": "Menara $x=\\pm50$ tinggi $30\\text{ m}$, dasar $5\\text{ m}$ $\\rightarrow$ $30=a(50)^2+5 \\rightarrow$ **$a=0,01$**."
             },
             {
-              "judul_poin": "Menghitung Waktu Saat Benda di Ketinggian Tertentu",
-              "penjelasan_singkat": "Untuk tahu kapan benda $h(t) = -at^2 + v_0t + h_0$ berada di tinggi $k$, selesaikan persamaan $h(t) = k$ dengan syarat $t \\ge 0$.",
-              "contoh_penerapan": "Roket $h(t) = -5t^2 + 30t + 2$ mencapai $27\\text{ m}$ saat $-5t^2 + 30t + 2 = 27 \\rightarrow (t-1)(t-5)=0$, yaitu **$t = 1\\text{ s}$ dan $t = 5\\text{ s}$**."
+              "judul": "Waktu di Ketinggian Tertentu",
+              "teori_singkat": "Selesaikan $h(t)=k$ dengan syarat $t \\ge 0$ untuk mencari waktu ketinggian $k$.",
+              "contoh": "$h(t)=-5t^2+30t+2=27$ $\\rightarrow$ $(t-1)(t-5)=0$ $\\rightarrow$ **$t=1\\text{ s}$ dan $t=5\\text{ s}$**."
+            },
+            {
+              "judul": "Uji Ketercapaian via Diskriminan ($D$)",
+              "teori_singkat": "Target $f(x)=k$ tercapai jika $D=b^2-4ac \\ge 0$; tak tercapai jika $D < 0$.",
+              "contoh": "Cek $h(t)=-5t^2+20t=25$ $\\rightarrow$ $t^2-4t+5=0$, $D=16-20=-4 < 0$ $\\rightarrow$ **tidak tercapai**."
             }
           ]
         },
@@ -155,19 +172,24 @@
           "nama_kelompok": "Fungsi Linear, Penyusutan, dan Keseimbangan Pasar",
           "butir": [
             {
-              "judul_poin": "Penyusutan Nilai Aset dan Pertumbuhan Tetap",
-              "penjelasan_singkat": "Nilai yang berubah tetap sebesar $m$ tiap satuan waktu ditulis $V(t) = V_0 + mt$. Gunakan $m < 0$ jika nilainya menyusut.",
-              "contoh_penerapan": "Mesin Rp$80$ juta menyusut Rp$6$ juta/tahun bernilai sisa Rp$20$ juta saat $80 - 6t = 20$, yakni pada **$t = 10\\text{ tahun}$**."
+              "judul": "Menyusun Fungsi Linear dari Dua Titik",
+              "teori_singkat": "Hitung gradien $m=\\frac{y_2-y_1}{x_2-x_1}$, lalu bentuk garis dengan $y-y_1=m(x-x_1)$.",
+              "contoh": "Tarif $2\\text{ km}$ Rp12rb, $5\\text{ km}$ Rp24rb $\\rightarrow$ $m=4\\text{rb}$ $\\rightarrow$ **$f(x)=4.000x+4.000$**."
             },
             {
-              "judul_poin": "Titik Impas (Break-Even Point) Dua Skema Tarif",
-              "penjelasan_singkat": "Dua pilihan tarif $C_1(x) = m_1x + c_1$ dan $C_2(x) = m_2x + c_2$ menghasilkan tagihan sama persis saat $C_1(x) = C_2(x)$.",
-              "contoh_penerapan": "Tarif A ($50.000 + 2.000x$) sama dengan Tarif B ($20.000 + 5.000x$) saat $30.000 = 3.000x$, yaitu di pemakaian **$x = 10\\text{ unit}$**."
+              "judul": "Penyusutan Aset & Pertumbuhan Tetap",
+              "teori_singkat": "Perubahan konstan $m$ tiap periode: $V(t)=V_0+mt$ ($m<0$ jika menyusut).",
+              "contoh": "Mesin Rp80jt susut Rp6jt/tahun sisa Rp20jt $\\rightarrow$ $80-6t=20 \\rightarrow$ **$t=10\\text{ tahun}$**."
             },
             {
-              "judul_poin": "Keseimbangan Permintaan dan Penawaran Pasar",
-              "penjelasan_singkat": "Pasar mencapai titik seimbang (ekuilibrium) ketika kurva permintaan ($P_d = a - bQ$) bertemu penawaran ($P_s = c + dQ$), yaitu saat $P_d = P_s$ dengan $Q > 0$.",
-              "contoh_penerapan": "Permintaan $P = 100 - 2Q$ dan penawaran $P = 20 + 3Q$ seimbang saat $100 - 2Q = 20 + 3Q \\rightarrow$ **$Q_e = 16\\text{ unit}$, $P_e = 68$**."
+              "judul": "Titik Impas (Break-Even Point)",
+              "teori_singkat": "Dua skema tarif $C_1(x)$ dan $C_2(x)$ menghasilkan biaya sama saat $C_1(x)=C_2(x)$.",
+              "contoh": "$50.000+2.000x = 20.000+5.000x$ $\\rightarrow$ $30.000=3.000x \\rightarrow$ impas di **$x=10\\text{ unit}$**."
+            },
+            {
+              "judul": "Keseimbangan Pasar (Ekuilibrium)",
+              "teori_singkat": "Pasar seimbang saat permintaan sama dengan penawaran: $P_d=P_s$ dengan $Q>0$.",
+              "contoh": "$100-2Q = 20+3Q$ $\\rightarrow$ $5Q=80 \\rightarrow$ **$Q_e=16\\text{ unit}$**, **$P_e=68$**."
             }
           ]
         }
@@ -177,36 +199,45 @@
       "kode_subbab": "pm-02-03",
       "judul_subbab": "Laju Perubahan, Kecepatan, Debit, dan Waktu Kerja Bersama",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Rumus Utama Laju:** Semua soal laju berakar dari satu pola: $\\text{Total} = \\text{Laju} \\times \\text{Waktu}$ ($Q = v \\cdot t$).\n- **Gerak Relatif:** Jika saling mendekat (berpapasan), kecepatannya dijumlah: $t = \\frac{\\Delta s}{v_1 + v_2}$. Jika searah (susul-menyusul), kecepatannya dikurang: $t = \\frac{\\Delta s}{|v_1 - v_2|}$.\n- **Kecepatan Rata-rata:** Selalu hitung dengan $\\bar{v} = \\frac{\\text{Total Jarak}}{\\text{Total Waktu}}$, bukan rata-rata biasa dari dua kecepatan.\n- **Debit & Kerja Bersama:** Laju total didapat dari penjumlahan atau pengurangan laju tiap komponen ($Q_{\\text{net}} = Q_{\\text{masuk}} - Q_{\\text{keluar}}$ dan $\\frac{1}{t_{\\text{gab}}} = \\frac{1}{t_1} + \\frac{1}{t_2}$).\n- **Grafik $v\\text{-}t$:** Jarak tempuh sama dengan luas daerah di bawah grafik.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Semua soal laju berakar pada $\\text{Total} = \\text{Laju} \\times \\text{Waktu}$, diolah via laju relatif, total dibagi total, atau luas grafik.",
       "kelompok": [
         {
           "nama_kelompok": "Gerak & Kecepatan Relatif",
           "butir": [
             {
-              "judul_poin": "Berpapasan (Berangkat Bersamaan)",
-              "penjelasan_singkat": "Dua benda melaju saling mendekat dari arah berlawanan bertemu pada $t_{\\text{papas}} = \\frac{s_{\\text{total}}}{v_1 + v_2}$.",
-              "contoh_penerapan": "Jarak $150\\text{ km}$ ditempuh dari arah berlawanan dengan $v_1 = 40\\text{ km/jam}$ dan $v_2 = 60\\text{ km/jam}$. Keduanya bertemu dalam **$t = \\frac{150}{40+60} = 1,5\\text{ jam}$**."
+              "judul": "Berpapasan (Berangkat Bersamaan)",
+              "teori_singkat": "Dua benda saling mendekat bertemu pada $t_{\\text{papas}}=\\frac{s_{\\text{total}}}{v_1+v_2}$.",
+              "contoh": "Jarak $150\\text{ km}$, $v_1=40$, $v_2=60\\text{ km/jam}$ $\\rightarrow$ **$t=\\frac{150}{40+60}=1,5\\text{ jam}$**."
             },
             {
-              "judul_poin": "Berpapasan (Berangkat Beda Waktu)",
-              "penjelasan_singkat": "Hitung dulu jarak yang sudah ditempuh pihak pertama, lalu kurangi dari jarak total: $t_{\\text{papas}} = \\frac{s_{\\text{total}} - v_1 \\cdot \\Delta t}{v_1 + v_2}$.",
-              "contoh_penerapan": "Jarak $200\\text{ km}$. A ($50\\text{ km/jam}$) jalan $1\\text{ jam}$ lebih dulu dari B ($75\\text{ km/jam}$). Setelah B berangkat, mereka bertemu dalam **$t = \\frac{200 - 50}{50+75} = 1,2\\text{ jam}$**."
+              "judul": "Berpapasan (Berangkat Beda Waktu)",
+              "teori_singkat": "Kurangi jarak total dengan jarak pihak pertama: $t_{\\text{papas}}=\\frac{s_{\\text{total}}-v_1\\cdot\\Delta t}{v_1+v_2}$.",
+              "contoh": "Jarak $200\\text{ km}$, A ($50$) duluan $1\\text{ jam}$, B ($75$) $\\rightarrow$ **$t=\\frac{200-50}{50+75}=1,2\\text{ jam}$**."
             },
             {
-              "judul_poin": "Susul-Menyusul (Jalan Lurus & Trek Melingkar)",
-              "penjelasan_singkat": "Benda yang lebih cepat menyusul benda di depannya pada $t_{\\text{susul}} = \\frac{\\Delta s}{v_{\\text{cepat}} - v_{\\text{lambat}}}$. Di trek melingkar, $\\Delta s = n \\times \\text{Keliling}$.",
-              "contoh_penerapan": "Pelari A ($6\\text{ m/s}$) dan B ($4\\text{ m/s}$) start bareng di trek melingkar $400\\text{ m}$. A menyalip B pertama kali saat **$t = \\frac{400}{6 - 4} = 200\\text{ detik}$**."
+              "judul": "Susul-Menyusul (Lurus & Melingkar)",
+              "teori_singkat": "Searah: $t_{\\text{susul}}=\\frac{\\Delta s}{v_{\\text{cepat}}-v_{\\text{lambat}}}$. Di trek melingkar, $\\Delta s = n \\times \\text{Keliling}$.",
+              "contoh": "Trek $400\\text{ m}$, A ($6\\text{ m/s}$) salip B ($4\\text{ m/s}$) $\\rightarrow$ **$t=\\frac{400}{6-4}=200\\text{ detik}$**."
             },
             {
-              "judul_poin": "Kecepatan Rata-Rata Banyak Segmen",
-              "penjelasan_singkat": "Wajib pakai total jarak dibagi total waktu: $\\bar{v} = \\frac{s_1 + s_2 + \\dots}{t_1 + t_2 + \\dots}$.",
-              "contoh_penerapan": "Pergi $60\\text{ km}$ dalam $1\\text{ jam}$, lalu pulang lewat rute sama dalam $2\\text{ jam}$. Kecepatan rata-ratanya **$\\bar{v} = \\frac{60 + 60}{1 + 2} = 40\\text{ km/jam}$**."
+              "judul": "Kecepatan Rata-Rata Banyak Segmen",
+              "teori_singkat": "Wajib pakai total jarak dibagi total waktu: $\\bar{v}=\\frac{\\sum s_i}{\\sum t_i}$.",
+              "contoh": "Pergi $60\\text{ km}$ ($1\\text{ jam}$), pulang $60\\text{ km}$ ($2\\text{ jam}$) $\\rightarrow$ **$\\bar{v}=\\frac{120}{3}=40\\text{ km/jam}$**."
             },
             {
-              "judul_poin": "Perahu Searah dan Melawan Arus",
-              "penjelasan_singkat": "Saat searah arus, kecepatan bertambah ($v_p + v_a$). Saat melawan arus, kecepatan berkurang ($v_p - v_a$), dengan syarat $v_p > v_a$.",
-              "contoh_penerapan": "Perahu berkecepatan $12\\text{ km/jam}$ melawan arus $3\\text{ km/jam}$ sejauh $27\\text{ km}$. Waktu tempuhnya **$t = \\frac{27}{12 - 3} = 3\\text{ jam}$**."
+              "judul": "Kecepatan Rata-Rata Jarak Sama (Harmonik)",
+              "teori_singkat": "Khusus dua rute berjarak sama (pergi-pulang), gunakan rata-rata harmonik: $\\bar{v}=\\frac{2v_1v_2}{v_1+v_2}$.",
+              "contoh": "Pergi $60\\text{ km/jam}$, pulang $30\\text{ km/jam}$ rute sama $\\rightarrow$ **$\\bar{v}=\\frac{2(60)(30)}{60+30}=40\\text{ km/jam}$**."
+            },
+            {
+              "judul": "Perahu Searah & Melawan Arus",
+              "teori_singkat": "Searah arus: $v_p+v_a$; melawan arus: $v_p-v_a$ (syarat $v_p>v_a$).",
+              "contoh": "Perahu $12\\text{ km/jam}$ lawan arus $3\\text{ km/jam}$ sejauh $27\\text{ km}$ $\\rightarrow$ **$t=\\frac{27}{12-3}=3\\text{ jam}$**."
             }
           ]
         },
@@ -214,19 +245,19 @@
           "nama_kelompok": "Debit Air & Pengisian Tangki",
           "butir": [
             {
-              "judul_poin": "Hubungan Debit, Volume, dan Waktu",
-              "penjelasan_singkat": "Debit adalah volume air yang mengalir per satuan waktu: $Q = \\frac{V}{t}$. Untuk prisma atau tabung, $V = A_{\\text{alas}} \\times h$.",
-              "contoh_penerapan": "Tabung berkapasitas $2.400\\text{ liter}$ diisi keran berdebit $40\\text{ liter/menit}$ akan penuh dalam **$t = \\frac{2.400}{40} = 60\\text{ menit}$**."
+              "judul": "Hubungan Debit, Volume, dan Waktu",
+              "teori_singkat": "Debit adalah volume per waktu: $Q=\\frac{V}{t}$, dengan $V=A_{\\text{alas}}\\times h$.",
+              "contoh": "Tabung $2.400\\text{ L}$ diisi debit $40\\text{ L/menit}$ $\\rightarrow$ penuh dalam **$t=\\frac{2.400}{40}=60\\text{ menit}$**."
             },
             {
-              "judul_poin": "Debit Bersih (Keran Masuk vs Bocor)",
-              "penjelasan_singkat": "Laju pengisian nyata adalah selisih debit masuk dan keluar: $Q_{\\text{net}} = \\sum Q_{\\text{masuk}} - \\sum Q_{\\text{keluar}}$ (tangki terisi jika $Q_{\\text{net}} > 0$).",
-              "contoh_penerapan": "Keran mengisi penuh dalam $4\\text{ jam}$, tapi lubang bocor menguras penuh dalam $12\\text{ jam}$. Waktu penuh bersama: **$\\frac{1}{t} = \\frac{1}{4} - \\frac{1}{12} \\Rightarrow t = 6\\text{ jam}$**."
+              "judul": "Debit Bersih (Masuk vs Bocor)",
+              "teori_singkat": "Laju bersih $Q_{\\text{net}}=\\sum Q_{\\text{masuk}}-\\sum Q_{\\text{keluar}}$; tangki penuh jika $Q_{\\text{net}}>0$.",
+              "contoh": "Isi penuh $4\\text{ jam}$, bocor habis $12\\text{ jam}$ $\\rightarrow$ $\\frac{1}{t}=\\frac{1}{4}-\\frac{1}{12} \\rightarrow$ **$t=6\\text{ jam}$**."
             },
             {
-              "judul_poin": "Laju Kenaikan Tinggi Permukaan Air",
-              "penjelasan_singkat": "Pada wadah berdinding tegak (balok/tabung), tinggi air naik konstan sebesar $v_h = \\frac{\\Delta h}{\\Delta t} = \\frac{Q_{\\text{net}}}{A_{\\text{alas}}}$.",
-              "contoh_penerapan": "Bak dengan luas alas $2\\text{ m}^2$ diisi debit bersih $0,4\\text{ m}^3\\text{/menit}$. Permukaan air naik sebesar **$v_h = \\frac{0,4}{2} = 0,2\\text{ m/menit}$**."
+              "judul": "Laju Kenaikan Permukaan Air",
+              "teori_singkat": "Pada wadah berdinding tegak, tinggi air naik konstan: $v_h=\\frac{Q_{\\text{net}}}{A_{\\text{alas}}}$.",
+              "contoh": "Bak luas alas $2\\text{ m}^2$, debit $0,4\\text{ m}^3\\text{/menit}$ $\\rightarrow$ **$v_h=\\frac{0,4}{2}=0,2\\text{ m/menit}$**."
             }
           ]
         },
@@ -234,24 +265,29 @@
           "nama_kelompok": "Kerja Bersama & Pembacaan Grafik",
           "butir": [
             {
-              "judul_poin": "Kerja Bersama dengan Laju Tetap",
-              "penjelasan_singkat": "Jumlahkan laju kerja masing-masing per satuan waktu: $\\frac{1}{t_{\\text{gab}}} = \\frac{1}{t_1} + \\frac{1}{t_2} + \\dots$. Hasilnya pasti lebih cepat dari pekerja tercepat.",
-              "contoh_penerapan": "Mesin A selesai dalam $6\\text{ jam}$ dan Mesin B dalam $3\\text{ jam}$. Jika bekerja bareng, selesai dalam **$\\frac{1}{t_{\\text{gab}}} = \\frac{1}{6} + \\frac{1}{3} \\Rightarrow t_{\\text{gab}} = 2\\text{ jam}$**."
+              "judul": "Kerja Bersama Laju Tetap",
+              "teori_singkat": "Jumlahkan laju kerja: $\\frac{1}{t_{\\text{gab}}}=\\frac{1}{t_1}+\\frac{1}{t_2}+\\dots$ (pasti lebih cepat dari tercepat).",
+              "contoh": "Mesin A ($6\\text{ jam}$) dan B ($3\\text{ jam}$) $\\rightarrow$ $\\frac{1}{t}=\\frac{1}{6}+\\frac{1}{3} \\rightarrow$ **$t=2\\text{ jam}$**."
             },
             {
-              "judul_poin": "Kerja Bersama Sistem Shift",
-              "penjelasan_singkat": "Total $1$ pekerjaan utuh adalah jumlah porsi tiap pekerja: $\\frac{t_A}{T_A} + \\frac{t_B}{T_B} = 1$, dengan $t_i$ adalah lama aktual pekerja $i$ bertugas.",
-              "contoh_penerapan": "A ($T_A = 10\\text{ hari}$) bekerja $4\\text{ hari}$ lalu digantikan B ($T_B = 15\\text{ hari}$). Sisa waktu B adalah **$\\frac{4}{10} + \\frac{t_B}{15} = 1 \\Rightarrow t_B = 9\\text{ hari}$**."
+              "judul": "Kerja Bersama Sistem Shift",
+              "teori_singkat": "Jumlah porsi kerja sama dengan $1$ utuh: $\\frac{t_A}{T_A}+\\frac{t_B}{T_B}=1$.",
+              "contoh": "A ($10\\text{ hari}$) kerja $4\\text{ hari}$, lanjut B ($15\\text{ hari}$) $\\rightarrow$ $\\frac{4}{10}+\\frac{t_B}{15}=1 \\rightarrow$ **$t_B=9\\text{ hari}$**."
             },
             {
-              "judul_poin": "Membaca Grafik Jarak-Waktu ($s\\text{-}t$)",
-              "penjelasan_singkat": "Kemiringan garis (gradien) menunjukkan kecepatan ($v = \\frac{\\Delta s}{\\Delta t}$). Jika garisnya mendatar, artinya benda sedang diam ($v = 0$).",
-              "contoh_penerapan": "Garis lurus naik dari $(0, 10)$ ke $(4, 90)$ dalam satuan jam dan $\\text{km}$ berarti kecepatannya **$v = \\frac{90 - 10}{4 - 0} = 20\\text{ km/jam}$**."
+              "judul": "Beban Kerja Tetap (Man-Days & Terhenti)",
+              "teori_singkat": "Total beban kerja konstan: $P_1 \\cdot t_1 = P_2 \\cdot t_2$; sisa beban dibagi sisa hari.",
+              "contoh": "$12$ pekerja butuh $10\\text{ hari}$, terhenti $2\\text{ hari}$ setelah hari ke-$4$ $\\rightarrow$ $12\\times6 = P\\times4 \\rightarrow$ **$18$ pekerja**."
             },
             {
-              "judul_poin": "Menghitung Jarak dari Grafik Kecepatan-Waktu ($v\\text{-}t$)",
-              "penjelasan_singkat": "Jarak tempuh total sama dengan luas bangun datar (persegi panjang, segitiga, atau trapesium) di bawah garis kurva $v\\text{-}t$.",
-              "contoh_penerapan": "Grafik $v\\text{-}t$ berbentuk trapesium dengan sisi sejajar $v_1 = 10\\text{ m/s}$, $v_2 = 20\\text{ m/s}$, dan waktu $6\\text{ s}$ menempuh jarak **$s = \\frac{10+20}{2} \\times 6 = 90\\text{ m}$**."
+              "judul": "Membaca Grafik Jarak-Waktu ($s\\text{-}t$)",
+              "teori_singkat": "Gradien garis adalah kecepatan ($v=\\frac{\\Delta s}{\\Delta t}$); garis mendatar berarti diam ($v=0$).",
+              "contoh": "Garis lurus dari $(0,10)$ ke $(4,90)$ $\\rightarrow$ **$v=\\frac{90-10}{4-0}=20\\text{ km/jam}$**."
+            },
+            {
+              "judul": "Jarak dari Grafik Kecepatan-Waktu ($v\\text{-}t$)",
+              "teori_singkat": "Jarak tempuh total sama dengan luas bangun datar di bawah kurva $v\\text{-}t$.",
+              "contoh": "Trapesium $v_1=10$, $v_2=20\\text{ m/s}$, $t=6\\text{ s}$ $\\rightarrow$ **$s=\\frac{10+20}{2}\\times6=90\\text{ m}$**."
             }
           ]
         }
@@ -261,31 +297,40 @@
       "kode_subbab": "pm-02-04",
       "judul_subbab": "Barisan dan Pertumbuhan/Peluruhan Eksponensial",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Semua soal pola bilangan di UTBK terbagi menjadi dua jalur: **pola tambah-kurang tetap** (aritmetika) dan **pola kali-bagi tetap** (geometri & eksponensial).\n\n- **Aritmetika (beda $b$ tetap):** $U_n = a + (n-1)b$ dan $S_n = \\frac{n}{2}(2a + (n-1)b)$.\n- **Geometri (rasio $r$ tetap):** $U_n = a \\cdot r^{n-1}$, $S_n = \\frac{a(r^n - 1)}{r - 1}$, serta $S_\\infty = \\frac{a}{1 - r}$ syarat $|r| < 1$.\n- **Pertumbuhan & Peluruhan:** $N(t) = N_0 \\cdot (1 \\pm p)^{\\frac{t}{T}}$ atau $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$ dengan $T$ sebagai satu siklus waktu.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Pola bilangan terbagi dua: tambah-kurang tetap (aritmetika) dan kali-bagi tetap (geometri, deret tak hingga, pertumbuhan/peluruhan eksponensial).",
       "kelompok": [
         {
           "nama_kelompok": "Barisan dan Deret Aritmetika Kontekstual",
           "butir": [
             {
-              "judul_poin": "Suku ke-$n$ Barisan Aritmetika ($U_n$)",
-              "penjelasan_singkat": "Cari nilai pada urutan ke-$n$ yang selisihnya selalu tetap ($b$) dengan rumus $U_n = a + (n-1)b$.",
-              "contoh_penerapan": "Baris pertama berisi $12$ kursi dan bertambah $3$ kursi tiap baris. Baris ke-$10$ memuat **$12 + 9(3) = 39$ kursi**."
+              "judul": "Suku ke-$n$ Aritmetika ($U_n$)",
+              "teori_singkat": "Nilai urutan ke-$n$ dengan beda tetap $b$: $U_n=a+(n-1)b$.",
+              "contoh": "Baris 1 ada $12$ kursi, naik $3$/baris $\\rightarrow$ $U_{10} = 12+9(3) =$ **$39$ kursi**."
             },
             {
-              "judul_poin": "Jumlah $n$ Suku Pertama ($S_n$)",
-              "penjelasan_singkat": "Hitung total gabungan dari suku pertama sampai ke-$n$ memakai $S_n = \\frac{n}{2}(a + U_n)$ atau $S_n = \\frac{n}{2}(2a + (n-1)b)$.",
-              "contoh_penerapan": "Produksi bulan pertama $100$ unit dan naik $20$ unit tiap bulan. Total $6$ bulan pertama adalah **$\\frac{6}{2}(200 + 5 \\times 20) = 900$ unit**."
+              "judul": "Jumlah $n$ Suku Aritmetika ($S_n$)",
+              "teori_singkat": "Total $n$ suku pertama: $S_n=\\frac{n}{2}(a+U_n)$ atau $S_n=\\frac{n}{2}(2a+(n-1)b)$.",
+              "contoh": "Bulan 1 produksi $100$ unit, naik $20$/bulan $\\rightarrow$ $S_6 = 3(200+100) =$ **$900$ unit**."
             },
             {
-              "judul_poin": "Trik Cari Beda Tanpa Suku Pertama ($b$)",
-              "penjelasan_singkat": "Cari beda $b$ langsung dari dua suku mana saja ($U_p$ dan $U_q$) memakai $b = \\frac{U_q - U_p}{q - p}$.",
-              "contoh_penerapan": "Tumpukan pipa lapis ke-$3$ ada $18$ pipa dan lapis ke-$7$ ada $10$ pipa. Bedanya langsung ketemu: **$\\frac{10 - 18}{7 - 3} = -2$**."
+              "judul": "Cari Beda Tanpa Suku Pertama ($b$)",
+              "teori_singkat": "Beda langsung dari dua suku mana saja: $b=\\frac{U_q-U_p}{q-p}$.",
+              "contoh": "Lapis ke-$3$ ada $18$ pipa, ke-$7$ ada $10$ $\\rightarrow$ **$b=\\frac{10-18}{7-3}=-2$**."
             },
             {
-              "judul_poin": "Suku Tengah ($U_t$) dan Hubungan $U_n$ dengan $S_n$",
-              "penjelasan_singkat": "Jika banyak suku ($n$) ganjil, berlaku $U_t = \\frac{a + U_n}{2}$ dan $S_n = n \\cdot U_t$. Selain itu, $U_n = S_n - S_{n-1}$ untuk $n \\ge 2$.",
-              "contoh_penerapan": "Jumlah $9$ suku pertama adalah $180$. Suku tengahnya ($U_5$) langsung ketemu **$\\frac{180}{9} = 20$** tanpa cari $a$ atau $b$."
+              "judul": "Suku Tengah ($U_t$) & Hubungan $U_n, S_n$",
+              "teori_singkat": "Untuk $n$ ganjil: $U_t=\\frac{a+U_n}{2}$ dan $S_n=n\\cdot U_t$; berlaku $U_n=S_n-S_{n-1}$.",
+              "contoh": "Jumlah $9$ suku pertama $180$ $\\rightarrow$ suku tengah $U_5 = \\frac{180}{9} =$ **$20$**."
+            },
+            {
+              "judul": "Barisan Aritmetika Tingkat Dua",
+              "teori_singkat": "Jika beda kedua ($c$) tetap, gunakan $U_n=a+(n-1)b_1+\\frac{(n-1)(n-2)}{2}c$.",
+              "contoh": "Pola $2,5,10,17,\\dots$ ($a=2, b_1=3, c=2$) $\\rightarrow$ $U_6=2+15+20=$ **$37$**."
             }
           ]
         },
@@ -293,24 +338,24 @@
           "nama_kelompok": "Barisan Geometri dan Deret Tak Hingga",
           "butir": [
             {
-              "judul_poin": "Suku ke-$n$ dan Rasio Geometri ($U_n$)",
-              "penjelasan_singkat": "Cari suku ke-$n$ dengan pengali tetap $r = \\frac{U_n}{U_{n-1}}$ lewat rumus $U_n = a \\cdot r^{n-1}$ dan $r^{q-p} = \\frac{U_q}{U_p}$.",
-              "contoh_penerapan": "Diketahui $U_2 = 6$ dan $U_5 = 48$. Maka $r^3 = \\frac{48}{6} = 8$, sehingga rasio **$r = 2$** dan **$U_1 = 3$**."
+              "judul": "Suku ke-$n$ & Rasio Geometri ($U_n$)",
+              "teori_singkat": "Pengali tetap $r=\\frac{U_n}{U_{n-1}}$ memenuhi $U_n=a\\cdot r^{n-1}$ dan $r^{q-p}=\\frac{U_q}{U_p}$.",
+              "contoh": "$U_2=6$, $U_5=48$ $\\rightarrow$ $r^3=8 \\rightarrow$ **$r=2$** dan **$U_1=3$**."
             },
             {
-              "judul_poin": "Jumlah $n$ Suku Pertama Geometri ($S_n$)",
-              "penjelasan_singkat": "Jumlahkan $n$ suku memakai $S_n = \\frac{a(r^n - 1)}{r - 1}$ jika $r > 1$, atau $S_n = \\frac{a(1 - r^n)}{1 - r}$ jika $r < 1$.",
-              "contoh_penerapan": "Setoran tahun pertama $\\text{Rp}100.000$ dan tiap tahun setorannya berlipat $2$. Total setoran selama $4$ tahun adalah **$100.000 \\times \\frac{2^4 - 1}{2 - 1} = \\text{Rp}1.500.000$**."
+              "judul": "Jumlah $n$ Suku Geometri ($S_n$)",
+              "teori_singkat": "Gunakan $S_n=\\frac{a(r^n-1)}{r-1}$ ($r>1$) atau $S_n=\\frac{a(1-r^n)}{1-r}$ ($r<1$).",
+              "contoh": "Setoran awal Rp100rb, berlipat $2$/tahun $\\rightarrow$ $S_4 = 100\\text{rb}\\times\\frac{2^4-1}{1} =$ **Rp1.500.000**."
             },
             {
-              "judul_poin": "Deret Geometri Tak Hingga Konvergen ($S_\\infty$)",
-              "penjelasan_singkat": "Hitung total deret yang terus mengecil sampai berhenti dengan syarat $-1 < r < 1$ memakai rumus $S_\\infty = \\frac{a}{1 - r}$.",
-              "contoh_penerapan": "Ayunan bandul pertama sepanjang $40\\text{ cm}$, lalu menyusut menjadi $\\frac{3}{4}$ kali sebelumnya. Total lintasannya **$\\frac{40}{1 - 3/4} = 160\\text{ cm}$**."
+              "judul": "Deret Geometri Tak Hingga ($S_\\infty$)",
+              "teori_singkat": "Deret konvergen (syarat $-1<r<1$) memiliki jumlah total $S_\\infty=\\frac{a}{1-r}$.",
+              "contoh": "Ayunan awal $40\\text{ cm}$, rasio $\\frac{3}{4}$ $\\rightarrow$ $S_\\infty = \\frac{40}{1-3/4} =$ **$160\\text{ cm}$**."
             },
             {
-              "judul_poin": "Panjang Lintasan Total Bola Memantul ($L$)",
-              "penjelasan_singkat": "Bola dijatuhkan dari tinggi $h_0$ dengan rasio pantul $r = \\frac{p}{q}$ menempuh total jarak $L = h_0 + 2S_\\infty = h_0\\left(\\frac{q+p}{q-p}\\right)$.",
-              "contoh_penerapan": "Bola dijatuhkan dari $10\\text{ m}$ dan memantul $\\frac{3}{5}$ tinggi sebelumnya. Total lintasannya adalah **$10 \\times \\frac{5+3}{5-3} = 40\\text{ m}$**."
+              "judul": "Panjang Lintasan Bola Memantul ($L$)",
+              "teori_singkat": "Jatuh dari $h_0$ dengan rasio pantul $r=\\frac{p}{q}$: $L=h_0\\left(\\frac{q+p}{q-p}\\right)$.",
+              "contoh": "Jatuh dari $10\\text{ m}$, memantul $\\frac{3}{5}$ $\\rightarrow$ $L = 10\\times\\frac{5+3}{5-3} =$ **$40\\text{ m}$**."
             }
           ]
         },
@@ -318,24 +363,24 @@
           "nama_kelompok": "Pertumbuhan dan Peluruhan Eksponensial Periodik",
           "butir": [
             {
-              "judul_poin": "Pertumbuhan Eksponensial Persentase ($N(t)$)",
-              "penjelasan_singkat": "Nilai awal $N_0$ yang naik $p\\%$ setiap selang waktu $T$ dihitung memakai $N(t) = N_0(1 + p)^{\\frac{t}{T}}$.",
-              "contoh_penerapan": "Modal $\\text{Rp}2.000.000$ tumbuh $10\\%$ per tahun. Setelah $2$ tahun, nilainya menjadi **$2.000.000(1 + 0,1)^2 = \\text{Rp}2.420.000$**."
+              "judul": "Pertumbuhan Eksponensial Persentase",
+              "teori_singkat": "Nilai awal $N_0$ naik $p\\%$ tiap periode $T$: $N(t)=N_0(1+p)^{\\frac{t}{T}}$.",
+              "contoh": "Modal Rp2jt tumbuh $10\\%$/tahun $\\rightarrow$ $2\\text{ tahun}$ jadi $2\\text{jt}(1,1)^2 =$ **Rp2.420.000**."
             },
             {
-              "judul_poin": "Pertumbuhan Faktor Pengali ($k$-Lipat)",
-              "penjelasan_singkat": "Jika populasi awal $N_0$ membelah atau berlipat menjadi $k$ kali tiap periode $T$, pakai rumus $N(t) = N_0 \\cdot k^{\\frac{t}{T}}$.",
-              "contoh_penerapan": "$50$ bakteri membelah jadi $2$ setiap $15$ menit. Setelah $1$ jam ($60$ menit), jumlahnya **$50 \\times 2^{\\frac{60}{15}} = 800$ bakteri**."
+              "judul": "Pertumbuhan Faktor Pengali ($k$-Lipat)",
+              "teori_singkat": "Populasi $N_0$ berlipat $k$ kali tiap periode $T$: $N(t)=N_0\\cdot k^{\\frac{t}{T}}$.",
+              "contoh": "$50$ bakteri belah $2$ tiap $15\\text{ menit}$ $\\rightarrow$ $60\\text{ menit}$: $50\\times2^4 =$ **$800$ bakteri**."
             },
             {
-              "judul_poin": "Peluruhan Eksponensial Persentase ($N(t)$)",
-              "penjelasan_singkat": "Nilai awal $N_0$ yang menyusut $p\\%$ setiap periode $T$ dihitung memakai $N(t) = N_0(1 - p)^{\\frac{t}{T}}$.",
-              "contoh_penerapan": "Kadar obat $200\\text{ mg}$ meluruh $20\\%$ tiap jam. Sisa kadarnya setelah $2$ jam adalah **$200(1 - 0,2)^2 = 128\\text{ mg}$**."
+              "judul": "Peluruhan Eksponensial Persentase",
+              "teori_singkat": "Nilai awal $N_0$ menyusut $p\\%$ tiap periode $T$: $N(t)=N_0(1-p)^{\\frac{t}{T}}$.",
+              "contoh": "Obat $200\\text{ mg}$ meluruh $20\\%$/jam $\\rightarrow$ $2\\text{ jam}$ tersisa $200(0,8)^2 =$ **$128\\text{ mg}$**."
             },
             {
-              "judul_poin": "Peluruhan Waktu Paruh ($T_{1/2}$)",
-              "penjelasan_singkat": "Zat awal $N_0$ menyusut jadi setengahnya tiap waktu paruh $T_{1/2}$ dengan rumus $N(t) = N_0 \\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$.",
-              "contoh_penerapan": "Zat radioaktif $64\\text{ gram}$ punya waktu paruh $4$ hari. Setelah $12$ hari, sisanya **$64 \\times \\left(\\frac{1}{2}\\right)^{\\frac{12}{4}} = 8\\text{ gram}$**."
+              "judul": "Peluruhan Waktu Paruh ($T_{1/2}$)",
+              "teori_singkat": "Zat $N_0$ menyusut separuh tiap $T_{1/2}$: $N(t)=N_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{T_{1/2}}}$.",
+              "contoh": "Zat $64\\text{ g}$, waktu paruh $4\\text{ hari}$ $\\rightarrow$ $12\\text{ hari}$: $64\\times(\\frac{1}{2})^3 =$ **$8\\text{ gram}$**."
             }
           ]
         }

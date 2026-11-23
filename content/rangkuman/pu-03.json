@@ -2,58 +2,71 @@
   "kode_bab": "pu-03",
   "subtes": "Subtes 1: Penalaran Umum (PU)",
   "bab": "Bab 3: Penalaran Kuantitatif",
-  "batch_model": "neon",
-  "jumlah_subbab": 5,
+  "estimasi_menit_review": 5,
   "daftar_subbab": [
     {
       "kode_subbab": "pu-03-01",
       "judul_subbab": "Pola Bilangan dan Deret",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Pola bilangan di PU UTBK** tidak menuntut kamu menghafal banyak rumus, melainkan melatih kecepatan membaca aturan loncatan angka:\n\n* **Cek Selisih Bertingkat:** Jika selisih lapis pertama belum sama, langsung cek selisih lapis kedua.\n* **Cek Pola Selang-Seling:** Jika angka naik-turun tidak beraturan, pisahkan urutan ganjil dan genap.\n* **Cek Operasi Campuran & Fibonacci:** Uji kombinasi $\\times, +, -, \\div$ yang berulang, atau jumlahkan dua angka sebelumnya.\n* **Trik Eliminasi Cepat:** Cukup cek angka satuan atau ganjil-genap untuk mencoret opsi salah di bawah $60$ detik.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Baca pola loncatan angka lewat selisih bertingkat, larik selang-seling, operasi campuran, serta eliminasi angka satuan.",
       "kelompok": [
         {
-          "nama_kelompok": "Pola Selisih & Selang-Seling (Paling Sering Keluar)",
+          "nama_kelompok": "Pola Selisih & Selang-Seling",
           "butir": [
             {
-              "judul_poin": "Barisan Aritmetika (Selisih Tetap)",
-              "penjelasan_singkat": "Selisih antar-angka bersebelahan selalu sama ($b = U_n - U_{n-1}$). Rumus umumnya $U_n = a + (n-1)b$.",
-              "contoh_penerapan": "Barisan $7, 11, 15, 19, \\dots$ selalu naik **$+4$**, jadi suku ke-$6$ adalah $19 + 4 + 4 = \\mathbf{27}$."
+              "judul": "Barisan Aritmetika (Selisih Tetap)",
+              "teori_singkat": "Beda antarsuku konstan ($b = U_n - U_{n-1}$); rumus suku ke-$n$: $U_n = a + (n-1)b$.",
+              "contoh": "$7, 11, 15, 19, \\dots$ (**$+4$**) $\\rightarrow U_6 = 19 + 4 + 4 = \\mathbf{27}$."
             },
             {
-              "judul_poin": "Barisan Bertingkat Dua",
-              "penjelasan_singkat": "Selisih lapis pertama belum tetap, tetapi selisih lapis keduanya selalu sama (konstan).",
-              "contoh_penerapan": "Pada $2, 5, 10, 17, \\dots$, selisih lapis pertamanya $+3, +5, +7$ (naik tetap **$+2$**). Maka suku berikutnya $17 + 9 = \\mathbf{26}$."
+              "judul": "Jumlah $n$ Suku Pertama Aritmetika ($S_n$)",
+              "teori_singkat": "Total deret selisih tetap: $S_n = \\frac{n}{2}(a + U_n)$ atau $\\frac{n}{2}(2a + (n-1)b)$.",
+              "contoh": "Total $5$ bulan ($a=120, U_5=180$) $\\rightarrow S_5 = \\frac{5}{2}(120 + 180) = \\mathbf{750}$."
             },
             {
-              "judul_poin": "Barisan Geometri (Pengali Tetap)",
-              "penjelasan_singkat": "Setiap suku dikali atau dibagi angka yang sama ($r = \\frac{U_n}{U_{n-1}}$, dengan $r \\neq 0$). Rumusnya $U_n = a \\cdot r^{n-1}$.",
-              "contoh_penerapan": "Barisan $81, 27, 9, 3, \\dots$ selalu dikali **$\\frac{1}{3}$** (dibagi $3$). Dua suku berikutnya adalah **$\\mathbf{1}$ dan $\\mathbf{\\frac{1}{3}}$**."
+              "judul": "Barisan Bertingkat Dua",
+              "teori_singkat": "Selisih lapis pertama berubah teratur, sedangkan selisih lapis keduanya selalu konstan.",
+              "contoh": "$2, 5, 10, 17, \\dots$ (beda $+3, +5, +7$, naik **$+2$**) $\\rightarrow 17 + 9 = \\mathbf{26}$."
             },
             {
-              "judul_poin": "Pola Dua Larik (Selang-Seling)",
-              "penjelasan_singkat": "Satu barisan berisi dua pola berbeda yang disusun bergantian: posisi ganjil ($U_1, U_3, U_5$) dan genap ($U_2, U_4, U_6$).",
-              "contoh_penerapan": "Pada $4, 20, 7, 17, 10, 14, \\dots$, posisi ganjil naik **$+3$** dan genap turun **$-3$**. Hasilnya **$\\mathbf{13}$ dan $\\mathbf{11}$**."
+              "judul": "Barisan Geometri (Pengali Tetap)",
+              "teori_singkat": "Rasio pengali tetap ($r = \\frac{U_n}{U_{n-1}}$, $r \\neq 0$); rumus $U_n = a \\cdot r^{n-1}$.",
+              "contoh": "$81, 27, 9, 3, \\dots$ (**$\\times \\frac{1}{3}$**) $\\rightarrow$ dua suku berikut **$\\mathbf{1}$ dan $\\mathbf{\\frac{1}{3}}$**."
+            },
+            {
+              "judul": "Pola Dua Larik (Selang-Seling)",
+              "teori_singkat": "Pisahkan dua pola berbeda pada posisi ganjil ($U_1, U_3, U_5$) dan genap ($U_2, U_4, U_6$).",
+              "contoh": "$4, 20, 7, 17, 10, 14, \\dots$ (ganjil **$+3$**, genap **$-3$**) $\\rightarrow \\mathbf{13, 11}$."
             }
           ]
         },
         {
-          "nama_kelompok": "Operasi Campuran & Fibonacci",
+          "nama_kelompok": "Operasi Campuran, Fibonacci, & Huruf",
           "butir": [
             {
-              "judul_poin": "Siklus Operasi Campuran Berulang",
-              "penjelasan_singkat": "Barisan menggabungkan dua atau tiga operasi secara bergiliran (misal $\\times a$, lalu $+b$, lalu $-c$) dan terus berulang.",
-              "contoh_penerapan": "Pola $3, 6, 8, 16, 18, \\dots$ memakai siklus **$\\times 2$, lalu $+2$** bergantian. Suku keenamnya adalah $18 \\times 2 = \\mathbf{36}$."
+              "judul": "Siklus Operasi Campuran Berulang",
+              "teori_singkat": "Gabungan dua atau tiga operasi bergiliran ($\\times a, +b, -c$) yang terus berulang.",
+              "contoh": "$3, 6, 8, 16, 18, \\dots$ (siklus **$\\times 2, +2$**) $\\rightarrow U_6 = 18 \\times 2 = \\mathbf{36}$."
             },
             {
-              "judul_poin": "Barisan Fibonacci Standar & Modifikasi",
-              "penjelasan_singkat": "Suku baru didapat dengan menjumlahkan dua suku sebelumnya ($U_n = U_{n-1} + U_{n-2}$), kadang ditambah atau dikurangi angka tetap.",
-              "contoh_penerapan": "Pada $2, 3, 5, 8, 13, \\dots$, tiap angka adalah **jumlah dua angka sebelumnya**, jadi suku berikutnya $8 + 13 = \\mathbf{21}$."
+              "judul": "Barisan Fibonacci Standar & Modifikasi",
+              "teori_singkat": "Suku baru hasil jumlah dua suku sebelumnya ($U_n = U_{n-1} + U_{n-2} \\pm k$).",
+              "contoh": "$2, 3, 5, 8, 13, \\dots$ (**jumlah 2 suku sebelumnya**) $\\rightarrow 8 + 13 = \\mathbf{21}$."
             },
             {
-              "judul_poin": "Pola Berpasangan (Per Dua Angka)",
-              "penjelasan_singkat": "Angka dikelompokkan dua-dua, lalu setiap pasangan punya aturan khusus yang sama (misal selalu dikali atau dikurangi angka tertentu).",
-              "contoh_penerapan": "Pada $(2, 6), (5, 15), (9, \\dots)$, tiap pasangan selalu dikali **$3$**. Jadi pelengkap pasangan ketiga adalah $9 \\times 3 = \\mathbf{27}$."
+              "judul": "Pola Berpasangan (Per Dua Angka)",
+              "teori_singkat": "Kelompokkan angka dua-dua; setiap pasangan mematuhi aturan operasi yang sama.",
+              "contoh": "$(2, 6), (5, 15), (9, \\dots)$ (tiap pasangan **$\\times 3$**) $\\rightarrow 9 \\times 3 = \\mathbf{27}$."
+            },
+            {
+              "judul": "Pola Deret Huruf (Alfabet)",
+              "teori_singkat": "Konversi huruf ke angka ($A=1$ s.d. $Z=26$) lalu cek loncatan atau lariknya.",
+              "contoh": "$B, E, H, K, \\dots \\equiv 2, 5, 8, 11$ (**$+3$**) $\\rightarrow 14 \\equiv \\mathbf{N}$."
             }
           ]
         },
@@ -61,19 +74,19 @@
           "nama_kelompok": "Pecahan, Desimal, & Pangkat",
           "butir": [
             {
-              "judul_poin": "Pola Pecahan Terpisah (Atas & Bawah)",
-              "penjelasan_singkat": "Angka pembilang (atas) dan penyebut (bawah) punya polanya masing-masing, jadi cek keduanya secara terpisah.",
-              "contoh_penerapan": "Pada $\\frac{1}{2}, \\frac{3}{5}, \\frac{5}{8}, \\frac{7}{11}, \\dots$, atas naik **$+2$** dan bawah naik **$+3$**. Suku kelimanya adalah **$\\mathbf{\\frac{9}{14}}$**."
+              "judul": "Pola Pecahan Terpisah (Atas & Bawah)",
+              "teori_singkat": "Cek pola pembilang (atas) dan penyebut (bawah) secara terpisah.",
+              "contoh": "$\\frac{1}{2}, \\frac{3}{5}, \\frac{5}{8}, \\frac{7}{11}, \\dots$ (atas **$+2$**, bawah **$+3$**) $\\rightarrow \\mathbf{\\frac{9}{14}}$."
             },
             {
-              "judul_poin": "Pola Desimal & Persentase",
-              "penjelasan_singkat": "Pola penjumlahan atau perkalian dalam bentuk koma dan persen. Ubah sementara ke pecahan atau bilangan bulat agar lebih enak dihitung.",
-              "contoh_penerapan": "Pada $0,25; 0,5; 1; 2; \\dots$, setiap suku dikali **$2$** (naik **$100\\%$**), jadi suku kelima adalah $2 \\times 2 = \\mathbf{4}$."
+              "judul": "Pola Desimal & Persentase",
+              "teori_singkat": "Ubah desimal atau persen sementara ke pecahan atau bilangan bulat agar mudah dihitung.",
+              "contoh": "$0,25; 0,5; 1; 2; \\dots$ (**$\\times 2$** atau naik **$100\\%$**) $\\rightarrow 2 \\times 2 = \\mathbf{4}$."
             },
             {
-              "judul_poin": "Pola Bilangan Kuadrat & Kubik",
-              "penjelasan_singkat": "Suku barisan berasal dari bilangan pangkat ($n^2$ atau $n^3$) yang sering dimodifikasi dengan tambah atau kurang angka kecil ($n^2 \\pm k$).",
-              "contoh_penerapan": "Barisan $0, 3, 8, 15, 24, \\dots$ mengikuti pola **$n^2 - 1$**, sehingga suku keenam adalah $6^2 - 1 = \\mathbf{35}$."
+              "judul": "Pola Bilangan Kuadrat & Kubik",
+              "teori_singkat": "Suku berasal dari pangkat ($n^2$ atau $n^3$) ditambah/dikurangi konstanta kecil ($n^2 \\pm k$).",
+              "contoh": "$0, 3, 8, 15, 24, \\dots$ (**$n^2 - 1$**) $\\rightarrow U_6 = 6^2 - 1 = \\mathbf{35}$."
             }
           ]
         },
@@ -81,19 +94,19 @@
           "nama_kelompok": "Soal Cerita & Trik Eliminasi Opsi",
           "butir": [
             {
-              "judul_poin": "Pertumbuhan Tetap (Produksi & Tabungan)",
-              "penjelasan_singkat": "Kenaikan dengan jumlah yang selalu sama tiap periode memakai pola aritmetika $U_n = U_1 + (n-1)b$.",
-              "contoh_penerapan": "Produksi bulan ke-$1$ adalah $120$ unit dan naik **$15$ unit/bulan**. Bulan ke-$5$ menjadi $120 + 4(15) = \\mathbf{180\\text{ unit}}$."
+              "judul": "Pertumbuhan Tetap (Produksi & Tabungan)",
+              "teori_singkat": "Kenaikan jumlah konstan per periode memakai pola aritmetika $U_n = U_1 + (n-1)b$.",
+              "contoh": "Bulan $1 = 120$, naik **$15$/bulan** $\\rightarrow U_5 = 120 + 4(15) = \\mathbf{180}$."
             },
             {
-              "judul_poin": "Pertumbuhan Berlipat (Bakteri & Populasi)",
-              "penjelasan_singkat": "Jumlah yang berlipat ganda tiap selang waktu $T$ dihitung dengan $N_t = N_0 \\cdot r^{\\frac{t}{T}}$, dengan $r$ sebagai pengalinya.",
-              "contoh_penerapan": "Awalnya ada $50$ bakteri yang membelah **jadi $2$ kali lipat** tiap $20$ menit. Setelah $1$ jam ($3$ kali belah), jumlahnya $50 \\times 2^3 = \\mathbf{400}$."
+              "judul": "Pertumbuhan Berlipat (Bakteri & Populasi)",
+              "teori_singkat": "Kelipatan $r$ tiap selang $T$ dihitung dengan $N_t = N_0 \\cdot r^{\\frac{t}{T}}$.",
+              "contoh": "$50$ bakteri **$\\times 2$ tiap $20$ menit**; $1$ jam ($3\\times$) $\\rightarrow 50 \\times 2^3 = \\mathbf{400}$."
             },
             {
-              "judul_poin": "Eliminasi Pakai Angka Satuan & Ganjil-Genap",
-              "penjelasan_singkat": "Cek angka paling belakang (satuan) atau sifat ganjil-genap dari operasi terakhir untuk membuang opsi yang jelas salah.",
-              "contoh_penerapan": "Jika $137$ harus dikali **$4$** lalu ditambah **$3$**, cukup hitung satuannya: $(7 \\times 4) + 3 = 31$, jadi jawabannya pasti berakhiran **$1$**."
+              "judul": "Eliminasi Angka Satuan & Ganjil-Genap",
+              "teori_singkat": "Hitung digit satuan atau sifat ganjil-genap operasi terakhir untuk mencoret opsi salah.",
+              "contoh": "$137 \\times 4 + 3 \\rightarrow$ cek satuan: $(7 \\times 4) + 3 = 31 \\rightarrow$ akhir **$1$**."
             }
           ]
         }
@@ -103,26 +116,30 @@
       "kode_subbab": "pu-03-02",
       "judul_subbab": "Pola Gambar dan Spasial Numerik",
       "klasifikasi_materi": "PENGAYAAN",
-      "konsep_inti_markdown": "**Pola gambar dan spasial numerik PU** menguji kepekaan kamu menemukan aturan hitung dari tata letak gambar tanpa rumus geometri rumit:\n\n* **Aturan Harus Konsisten:** Rumus hitung pada gambar pertama wajib berlaku persis sama pada gambar kedua.\n* **Cek Arah Matriks:** Uji pola mendatar (baris) dan menurun (kolom) secara terpisah.\n* **Terjemahkan Simbol:** Ubah ikon atau letak benda menjadi angka bulat dan operasi sederhana.\n* **Trik Geser Arsir:** Potong atau geser bagian yang diarsir untuk membentuk pecahan luas yang mudah dihitung.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Temukan aturan hitung konsisten antargambar lewat arah matriks, terjemahan simbol, serta trik geser luas daerah arsir.",
       "kelompok": [
         {
           "nama_kelompok": "Pola Hitung dalam Satu Bangun Datar",
           "butir": [
             {
-              "judul_poin": "Pola Puncak Segitiga (Dari Alas ke Atas)",
-              "penjelasan_singkat": "Angka di puncak biasanya hasil gabungan tambah, kali, atau bagi dari dua angka di sudut alas.",
-              "contoh_penerapan": "Alas kiri $6$, alas kanan $4$, puncak $20$. Polanya $(6 + 4) \\times 2 = \\mathbf{20}$, jadi alas $5$ dan $3$ menghasilkan $\\mathbf{16}$."
+              "judul": "Pola Puncak Segitiga (Alas ke Atas)",
+              "teori_singkat": "Angka puncak biasanya hasil operasi tambah, kali, atau bagi dari kedua angka alas.",
+              "contoh": "Alas $6, 4 \\rightarrow$ puncak $(6+4) \\times 2 = \\mathbf{20}$; alas $5, 3 \\rightarrow \\mathbf{16}$."
             },
             {
-              "judul_poin": "Pola Potongan Lingkaran (Saling Berhadapan vs Memutar)",
-              "penjelasan_singkat": "Angka di dalam juring lingkaran biasanya saling berhubungan secara diagonal (berhadapan) atau berurutan searah jarum jam.",
-              "contoh_penerapan": "Pasangan berhadapan berisi $3$ dengan $9$, $5$ dengan $25$, maka pasangan $7$ adalah **$49$** memakai aturan kuadrat ($n \\rightarrow n^2$)."
+              "judul": "Pola Potongan Lingkaran (Berhadapan vs Memutar)",
+              "teori_singkat": "Cek hubungan juring yang saling berhadapan (diagonal) atau berurutan searah jarum jam.",
+              "contoh": "Berhadapan: $3 \\rightarrow 9$, $5 \\rightarrow 25$ (**$n^2$**) $\\rightarrow$ pasangan $7$ adalah **$49$**."
             },
             {
-              "judul_poin": "Pola Kotak Empat Sudut dengan Angka Tengah",
-              "penjelasan_singkat": "Angka di tengah kotak umumnya berasal dari selisih perkalian silang sudut atau jumlah keempat sudut yang dibagi angka tertentu.",
-              "contoh_penerapan": "Sudut kiri atas $8$, kanan bawah $3$, kanan atas $5$, kiri bawah $4$. Angka tengahnya $(8 \\times 3) - (5 \\times 4) = \\mathbf{4}$."
+              "judul": "Pola Kotak Empat Sudut & Angka Tengah",
+              "teori_singkat": "Angka tengah berasal dari selisih kali silang sudut atau rata-rata keempat sudut.",
+              "contoh": "Sudut $8, 3$ dan $5, 4 \\rightarrow$ tengah $(8 \\times 3) - (5 \\times 4) = \\mathbf{4}$."
             }
           ]
         },
@@ -130,39 +147,44 @@
           "nama_kelompok": "Matriks Angka $3 \\times 3$ dan $4 \\times 4$",
           "butir": [
             {
-              "judul_poin": "Pola Operasi per Baris atau per Kolom",
-              "penjelasan_singkat": "Angka terakhir di tiap baris atau kolom merupakan hasil operasi dua angka sebelumnya.",
-              "contoh_penerapan": "Baris $1$: $[4, 7, 25]$, baris $2$: $[6, 5, 27]$. Polanya $(a \\times b) - 3 = c$, maka $[8, 3, \\mathbf{21}]$."
+              "judul": "Pola Operasi per Baris atau Kolom",
+              "teori_singkat": "Angka terakhir di tiap baris atau kolom merupakan hasil operasi dua angka sebelumnya.",
+              "contoh": "$[4, 7, 25]$ dan $[6, 5, 27]$ (**$a \\times b - 3$**) $\\rightarrow [8, 3, \\mathbf{21}]$."
             },
             {
-              "judul_poin": "Jumlah atau Hasil Kali Baris-Kolom yang Selalu Sama",
-              "penjelasan_singkat": "Setiap baris atau setiap kolom punya total penjumlahan atau perkalian yang nilainya tetap sama.",
-              "contoh_penerapan": "Matriks $3 \\times 3$ dengan baris $[12, 5, 8]$ dan $[9, 10, 6]$ selalu berjumlah **$25$**. Jadi, baris $[7, x, 11]$ menghasilkan $x = \\mathbf{7}$."
+              "judul": "Jumlah atau Hasil Kali Baris-Kolom Tetap",
+              "teori_singkat": "Setiap baris atau setiap kolom memiliki total penjumlahan atau perkalian yang konstan.",
+              "contoh": "Tiap baris berjumlah **$25$**: $[7, x, 11] \\rightarrow x = 25 - 18 = \\mathbf{7}$."
             },
             {
-              "judul_poin": "Pola Selisih Bertingkat pada Matriks $4 \\times 4$",
-              "penjelasan_singkat": "Pada matriks $4 \\times 4$, selisih angka yang bersebelahan sering membentuk pola tambah atau kali yang teratur.",
-              "contoh_penerapan": "Kolom berisi $2, 5, 11, 23$. Selisihnya $+3, +6, +12$ (selalu dikali $2$), jadi angka setelah $23$ adalah $23 + 24 = \\mathbf{47}$."
+              "judul": "Pola Selisih Bertingkat Matriks $4 \\times 4$",
+              "teori_singkat": "Selisih angka bersebelahan pada baris/kolom membentuk pola tambah atau kali teratur.",
+              "contoh": "Kolom $2, 5, 11, 23$ (beda $+3, +6, +12$, **$\\times 2$**) $\\rightarrow 23 + 24 = \\mathbf{47}$."
             }
           ]
         },
         {
-          "nama_kelompok": "Sandi Simbol dan Aturan Posisi Gambar",
+          "nama_kelompok": "Sandi Simbol, Posisi, & Transformasi Spasial",
           "butir": [
             {
-              "judul_poin": "Mengubah Simbol Menjadi Persamaan Sederhana",
-              "penjelasan_singkat": "Setiap ikon mewakili satu angka bulat yang bisa dicari dengan eliminasi atau substitusi sederhana.",
-              "contoh_penerapan": "Jika $\\triangle + \\triangle + \\square = 14$ dan $\\triangle + \\square = 9$, langsung kurangkan keduanya: $\\triangle = 14 - 9 = \\mathbf{5}$ dan $\\square = \\mathbf{4}$."
+              "judul": "Mengubah Simbol Menjadi Persamaan",
+              "teori_singkat": "Ubah tiap ikon menjadi variabel angka bulat lalu selesaikan dengan eliminasi cepat.",
+              "contoh": "$2\\triangle + \\square = 14$ dan $\\triangle + \\square = 9 \\rightarrow \\triangle = \\mathbf{5}, \\square = \\mathbf{4}$."
             },
             {
-              "judul_poin": "Aturan Posisi (Atas, Bawah, Dalam, Luar)",
-              "penjelasan_singkat": "Letak angka atau bentuk (di dalam, di luar, atau di atas) bisa menentukan operasi pangkat, kali, atau bagi.",
-              "contoh_penerapan": "Angka $4$ di dalam persegi artinya $4^2 = 16$, sedangkan di dalam segitiga artinya $4 \\times 3 = \\mathbf{12}$. Gabungan keduanya bernilai **$28$**."
+              "judul": "Aturan Posisi (Atas, Bawah, Dalam, Luar)",
+              "teori_singkat": "Letak atau bingkai bentuk menentukan jenis operasi (pangkat, kali, atau bagi).",
+              "contoh": "$4$ di persegi ($4^2=16$) + $4$ di segitiga ($4 \\times 3=12$) $\\rightarrow \\mathbf{28}$."
             },
             {
-              "judul_poin": "Aturan Gabung dan Hapus Garis Tumpuk",
-              "penjelasan_singkat": "Saat dua gambar digabung, garis yang saling bertumpuk bisa saling menghapus atau justru hanya garis yang sama yang disisakan.",
-              "contoh_penerapan": "Gambar A ($4$ garis) digabung Gambar B ($3$ garis). Jika $2$ garis bertumpuk hilang, sisanya $(4 - 2) + (3 - 2) = \\mathbf{3}$ garis."
+              "judul": "Aturan Gabung dan Hapus Garis Tumpuk",
+              "teori_singkat": "Saat dua gambar digabung, garis bertumpuk saling menghapus atau justru disisakan sendiri.",
+              "contoh": "$4$ garis gabung $3$ garis, **$2$ tumpuk hilang** $\\rightarrow (4-2)+(3-2) = \\mathbf{3}$ garis."
+            },
+            {
+              "judul": "Pola Rotasi & Pencerminan Spasial",
+              "teori_singkat": "Amati sudut putar tetap ($45^{\\circ}, 90^{\\circ}$) searah/berlawanan jarum jam atau pencerminan sumbu.",
+              "contoh": "Panah berputar **$90^{\\circ}$ searah jarum jam**: atas $\\rightarrow$ kanan $\\rightarrow$ bawah $\\rightarrow$ **kiri**."
             }
           ]
         },
@@ -170,19 +192,19 @@
           "nama_kelompok": "Pola Pecahan dan Luas Daerah Arsir",
           "butir": [
             {
-              "judul_poin": "Membagi Bangun Menjadi Petak Sama Besar",
-              "penjelasan_singkat": "Pecah bangun besar menjadi petak-petak kecil yang sama luasnya, lalu bandingkan jumlah petak arsir dengan total petak.",
-              "contoh_penerapan": "Persegi dibagi menjadi $16$ segitiga sama besar. Jika $6$ segitiga diarsir, luas daerah arsir adalah $\\frac{6}{16} = \\mathbf{\\frac{3}{8}}$ bagian."
+              "judul": "Membagi Bangun Menjadi Petak Sama Besar",
+              "teori_singkat": "Pecah bangun menjadi unit kecil identik, lalu bandingkan jumlah arsir terhadap total.",
+              "contoh": "$6$ dari $16$ segitiga sama besar diarsir $\\rightarrow$ luas arsir $\\frac{6}{16} = \\mathbf{\\frac{3}{8}}$."
             },
             {
-              "judul_poin": "Geser dan Putar Potongan Arsir",
-              "penjelasan_singkat": "Pindahkan potongan arsir yang ukurannya sama ke bagian kosong agar membentuk bangun utuh seperti setengah atau seperempat.",
-              "contoh_penerapan": "Empat potongan lengkung arsir digeser mengisi empat ruang kosong pada persegi berluas $64\\text{ cm}^2$. Hasilnya pas **$\\frac{1}{2} \\times 64 = 32\\text{ cm}^2$**."
+              "judul": "Geser dan Putar Potongan Arsir",
+              "teori_singkat": "Pindahkan bagian arsir kongruen ke ruang kosong untuk membentuk pecahan luas utuh.",
+              "contoh": "Geser $4$ lengkung arsir di persegi $64\\text{ cm}^2 \\rightarrow$ pas **$\\frac{1}{2} \\times 64 = 32\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Pola Luas Bangun Bersarang (Mengecil Bertingkat)",
-              "penjelasan_singkat": "Bangun di dalam yang menghubungkan titik tengah sisi luarnya akan mengecil dengan perbandingan luas yang selalu tetap.",
-              "contoh_penerapan": "Persegi luar berluas $80$. Persegi dalam yang menghubungkan titik tengah sisinya berluas **$40$**, lalu lapis berikutnya **$20$** (selalu dibagi $2$)."
+              "judul": "Pola Luas Bangun Bersarang",
+              "teori_singkat": "Bangun dalam penghubung titik tengah sisi luar mengecil dengan rasio luas tetap.",
+              "contoh": "Persegi luar $80 \\rightarrow$ lapis dalam **$40$** $\\rightarrow$ lapis berikut **$20$** (selalu **$\\div 2$**)."
             }
           ]
         }
@@ -192,66 +214,80 @@
       "kode_subbab": "pu-03-03",
       "judul_subbab": "Operasi Hitung dan Aritmetika Dasar",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Aritmetika PU UTBK** tidak menguji siapa yang paling rajin menghitung manual, melainkan siapa yang paling taktis menaksir angka tanpa kalkulator:\n\n* **Taksiran Pecahan Istimewa:** Ubah persen rumit ke pecahan sederhana ($33,3\\% \\approx \\frac{1}{3}$, $16,7\\% \\approx \\frac{1}{6}$).\n* **Banding Pecahan Cepat:** Pakai kali silang bawah-ke-atas atau cek selisih pembilang dan penyebutnya.\n* **Urutan Operasi & Aljabar:** Dahulukan kurung, lalu kali-bagi dari kiri; pecah kuadrat besar dengan $a^2 - b^2 = (a+b)(a-b)$.\n* **Persentase Bertingkat:** Kalikan faktor pengalinya berurutan, jangan langsung menjumlahkan persennya.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Taksir hitungan cepat tanpa kalkulator memakai pecahan istimewa, kali silang, sifat aljabar, serta pengali persentase bertingkat.",
       "kelompok": [
         {
           "nama_kelompok": "Taksiran Persen & Perbandingan Pecahan",
           "butir": [
             {
-              "judul_poin": "Ubah Persen Desimal ke Pecahan Istimewa",
-              "penjelasan_singkat": "Ganti persen desimal berulang dengan pecahan sederhana seperti per-enam, per-tujuh, per-delapan, atau per-sembilan agar mudah dikali.",
-              "contoh_penerapan": "Hitung $16,67\\% \\times 420$ cukup ubah jadi **$\\frac{1}{6} \\times 420 = 70$**. Selesai dalam 3 detik tanpa coret-coretan panjang."
+              "judul": "Persen Desimal ke Pecahan Istimewa",
+              "teori_singkat": "Konversi persen berulang ke pecahan sederhana ($16,67\\% = \\frac{1}{6}$, $33,3\\% = \\frac{1}{3}$, $12,5\\% = \\frac{1}{8}$).",
+              "contoh": "$16,67\\% \\times 420 \\equiv$ **$\\frac{1}{6} \\times 420 = 70$**."
             },
             {
-              "judul_poin": "Tukar Posisi Persen (Komutatif)",
-              "penjelasan_singkat": "Kamu bebas menukar posisi angka persennya ($a\\% \\text{ dari } b = b\\% \\text{ dari } a$) jika angka kedua lebih ramah dibagi $100$.",
-              "contoh_penerapan": "Menghitung $32\\% \\text{ dari } 25$ terasa ribet? Balik saja jadi **$25\\% \\text{ dari } 32 = \\frac{1}{4} \\times 32 = 8$**."
+              "judul": "Tukar Posisi Persen (Komutatif)",
+              "teori_singkat": "Gunakan sifat $a\\% \\text{ dari } b = b\\% \\text{ dari } a$ agar mudah dibagi $100$.",
+              "contoh": "$32\\% \\text{ dari } 25 \\equiv$ **$25\\% \\text{ dari } 32 = \\frac{1}{4} \\times 32 = 8$**."
             },
             {
-              "judul_poin": "Kali Silang Bawah-ke-Atas",
-              "penjelasan_singkat": "Untuk membandingkan $\\frac{a}{b}$ dan $\\frac{c}{d}$ ($b, d > 0$), cukup bandingkan hasil kali $a \\times d$ di kiri dengan $c \\times b$ di kanan.",
-              "contoh_penerapan": "Bandingkan $\\frac{7}{12}$ dan $\\frac{5}{8}$: kalikan ke atas, **$7 \\times 8 = 56 < 5 \\times 12 = 60$**. Jadi, $\\frac{7}{12} < \\frac{5}{8}$."
+              "judul": "Kali Silang Bawah-ke-Atas",
+              "teori_singkat": "Bandingkan $\\frac{a}{b}$ dan $\\frac{c}{d}$ ($b, d > 0$) lewat hasil kali $a \\times d$ vs $c \\times b$.",
+              "contoh": "$\\frac{7}{12}$ vs $\\frac{5}{8} \\rightarrow$ **$7 \\times 8 = 56 < 5 \\times 12 = 60$** $\\rightarrow \\frac{7}{12} < \\frac{5}{8}$."
             },
             {
-              "judul_poin": "Aturan Selisih Pembilang-Penyebut Tetap",
-              "penjelasan_singkat": "Pada pecahan murni ($a < b$) yang punya selisih $b - a$ sama, makin besar angkanya maka makin besar nilai pecahannya.",
-              "contoh_penerapan": "Karena selisihnya sama-sama $2$, urutannya langsung ketahuan: **$\\frac{11}{13} < \\frac{23}{25} < \\frac{47}{49}$**."
+              "judul": "Selisih Pembilang-Penyebut Tetap",
+              "teori_singkat": "Untuk pecahan murni ($a < b$) berselisih sama, angka makin besar nilainya makin besar.",
+              "contoh": "Selisih sama-sama $2 \\rightarrow$ **$\\frac{11}{13} < \\frac{23}{25} < \\frac{47}{49}$**."
             }
           ]
         },
         {
-          "nama_kelompok": "Urutan Operasi & Aljabar Cepat",
+          "nama_kelompok": "Urutan Operasi, Aljabar, & Keterbagian",
           "butir": [
             {
-              "judul_poin": "Urutan Operasi Hitung (Kurung-Pangkat-Kali/Bagi)",
-              "penjelasan_singkat": "Kerjakan tanda kurung dulu, lalu pangkat atau akar, lanjut kali dan bagi setara dari kiri ke kanan, terakhir tambah dan kurang.",
-              "contoh_penerapan": "Pada $24 \\div 4 \\times 3 + 2$, kerjakan dari kiri: **$(24 \\div 4) \\times 3 + 2 = 6 \\times 3 + 2 = 20$**."
+              "judul": "Urutan Operasi Hitung (PEMDAS)",
+              "teori_singkat": "Kerjakan kurung, lalu pangkat/akar, lanjut kali/bagi dari kiri, terakhir tambah/kurang.",
+              "contoh": "$24 \\div 4 \\times 3 + 2 \\rightarrow$ **$(24 \\div 4) \\times 3 + 2 = 20$**."
             },
             {
-              "judul_poin": "Trik Selisih Dua Kuadrat",
-              "penjelasan_singkat": "Pecah pengurangan dua bilangan kuadrat menjadi perkalian jumlah dan selisihnya: $a^2 - b^2 = (a + b)(a - b)$.",
-              "contoh_penerapan": "Ubah $104^2 - 96^2$ menjadi **$(104 + 96)(104 - 96) = 200 \\times 8 = 1.600$** tanpa mengkuadratkan satu per satu."
+              "judul": "Trik Selisih Dua Kuadrat",
+              "teori_singkat": "Faktorkan pengurangan dua kuadrat dengan rumus $a^2 - b^2 = (a + b)(a - b)$.",
+              "contoh": "$104^2 - 96^2 = (104+96)(104-96) = 200 \\times 8 = \\mathbf{1.600}$."
             },
             {
-              "judul_poin": "Keluarkan Angka Kembar (Distributif)",
-              "penjelasan_singkat": "Tarik keluar faktor yang sama dengan sifat $a \\times b \\pm a \\times c = a(b \\pm c)$ supaya tidak menghitung dua kali.",
-              "contoh_penerapan": "Sederhanakan $37 \\times 84 + 37 \\times 16$ menjadi **$37 \\times (84 + 16) = 37 \\times 100 = 3.700$**."
+              "judul": "Keluarkan Angka Kembar (Distributif)",
+              "teori_singkat": "Tarik faktor persekutuan keluar dengan sifat $ab \\pm ac = a(b \\pm c)$.",
+              "contoh": "$37 \\times 84 + 37 \\times 16 = 37(84+16) = \\mathbf{3.700}$."
+            },
+            {
+              "judul": "Ciri Keterbagian Cepat (3, 4, 9)",
+              "teori_singkat": "Habis dibagi $3$ atau $9$: jumlah digitnya kelipatan $3$/$9$; dibagi $4$: $2$ digit akhir kelipatan $4$.",
+              "contoh": "$4.356$: jumlah digit $18$ (**habis dibagi $9$**), akhir $56$ (**habis dibagi $4$**)."
             }
           ]
         },
         {
-          "nama_kelompok": "Persentase Bertingkat",
+          "nama_kelompok": "Persentase Bertingkat & Diskon",
           "butir": [
             {
-              "judul_poin": "Pengali Persentase Bertingkat",
-              "penjelasan_singkat": "Kalikan nilai awal dengan faktor $(1 + p_1)(1 - p_2)$ saat nilai naik sebesar $p_1$ lalu turun sebesar $p_2$.",
-              "contoh_penerapan": "Harga naik $20\\%$ lalu turun $20\\%$ menjadi **$1,2 \\times 0,8 = 0,96$**, artinya turun bersih **$4\\%$**."
+              "judul": "Pengali Persentase Bertingkat",
+              "teori_singkat": "Kalikan faktor perubahan berurutan $(1 + p_1)(1 - p_2)$, jangan langsung menjumlahkan persennya.",
+              "contoh": "Naik $20\\%$ lalu turun $20\\% \\rightarrow 1,2 \\times 0,8 = 0,96$ (**turun bersih $4\\%$**)."
             },
             {
-              "judul_poin": "Persen Kenaikan untuk Balik ke Harga Awal",
-              "penjelasan_singkat": "Jika nilai turun $p\\%$, persentase kenaikan yang dibutuhkan agar kembali ke semula adalah $\\frac{p}{100 - p} \\times 100\\%$.",
-              "contoh_penerapan": "Harga yang turun $20\\%$ harus dinaikkan **$\\frac{20}{100 - 20} \\times 100\\% = 25\\%$** supaya balik ke harga semula."
+              "judul": "Persen Kenaikan Balik ke Harga Awal",
+              "teori_singkat": "Setelah turun $p\\%$, kenaikan untuk kembali ke semula adalah $\\frac{p}{100 - p} \\times 100\\%$.",
+              "contoh": "Turun $20\\%$ butuh naik **$\\frac{20}{80} \\times 100\\% = 25\\%$** agar kembali semula."
+            },
+            {
+              "judul": "Harga Awal Sebelum Diskon / Untung",
+              "teori_singkat": "Cari harga awal dengan membagi harga akhir oleh faktornya: $H_{\\text{awal}} = \\frac{H_{\\text{akhir}}}{1 \\pm p}$.",
+              "contoh": "Harga setelah diskon $20\\%$ adalah $\\text{Rp}80\\text{rb} \\rightarrow H_{\\text{awal}} = \\frac{80\\text{rb}}{0,8} = \\mathbf{\\text{Rp}100\\text{rb}}$."
             }
           ]
         },
@@ -259,19 +295,19 @@
           "nama_kelompok": "Aritmetika Soal Cerita Cepat",
           "butir": [
             {
-              "judul_poin": "Selisih Umur Selalu Tetap",
-              "penjelasan_singkat": "Beda usia dua orang tidak pernah berubah kapan pun waktunya ($U_1 - U_2 = \\text{tetap}$), meski rasionya berubah.",
-              "contoh_penerapan": "Selisih umur $12$ tahun dengan rasio $5 : 3$. Umur yang lebih tua adalah **$\\frac{5}{5 - 3} \\times 12 = 30$ tahun**."
+              "judul": "Selisih Umur Selalu Tetap",
+              "teori_singkat": "Beda usia dua orang selalu konstan sepanjang waktu ($U_1 - U_2 = \\text{tetap}$).",
+              "contoh": "Selisih $12$ tahun, rasio $5:3 \\rightarrow$ tua $= \\frac{5}{5-3} \\times 12 = \\mathbf{30\\text{ tahun}}$."
             },
             {
-              "judul_poin": "Pembagian Rasio & Bagi Hasil",
-              "penjelasan_singkat": "Hitung jatah tiap pihak dengan membagi angka rasionya terhadap total rasio, lalu kalikan dengan total nilai.",
-              "contoh_penerapan": "Laba Rp$450.000$ dibagi dengan rasio $2 : 3 : 4$. Bagian terbesarnya adalah **$\\frac{4}{2+3+4} \\times 450.000 = \\text{Rp}200.000$**."
+              "judul": "Pembagian Rasio & Bagi Hasil",
+              "teori_singkat": "Jatah tiap pihak adalah rasio bagian dibagi total rasio dikali total nilai.",
+              "contoh": "Laba $\\text{Rp}450\\text{rb}$ rasio $2:3:4 \\rightarrow$ terbesar $\\frac{4}{9} \\times 450\\text{rb} = \\mathbf{\\text{Rp}200\\text{rb}}$."
             },
             {
-              "judul_poin": "Konversi Cepat km/jam ke m/detik",
-              "penjelasan_singkat": "Ubah $\\text{km/jam}$ ke $\\text{m/detik}$ cukup kalikan $\\frac{5}{18}$. Sebaliknya, ubah $\\text{m/detik}$ ke $\\text{km/jam}$ kalikan $\\frac{18}{5}$.",
-              "contoh_penerapan": "Kecepatan $72\\text{ km/jam}$ langsung diubah menjadi **$72 \\times \\frac{5}{18} = 20\\text{ m/detik}$** dalam satu langkah."
+              "judul": "Konversi Cepat km/jam ke m/detik",
+              "teori_singkat": "Ubah $\\text{km/jam} \\rightarrow \\text{m/detik}$ kali $\\frac{5}{18}$; arah sebaliknya kali $\\frac{18}{5}$.",
+              "contoh": "$72\\text{ km/jam} \\rightarrow 72 \\times \\frac{5}{18} = \\mathbf{20\\text{ m/detik}}$."
             }
           ]
         }
@@ -281,31 +317,35 @@
       "kode_subbab": "pu-03-04",
       "judul_subbab": "Perbandingan Senilai dan Berbalik Nilai",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Perbandingan di PU UTBK** menguji kecepatan logikamu membaca hubungan dua atau lebih besaran tanpa kalkulator:\n\n* **Senilai (Searah):** Satu naik, pasangannya ikut naik ($\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$). Contoh: jarak tempuh dan bensin.\n* **Berbalik Nilai (Berlawanan):** Satu naik, pasangannya malah turun ($a_1 \\times b_1 = a_2 \\times b_2$). Contoh: jumlah pekerja dan lama hari.\n* **Proyek Terhenti:** Fokus ke sisa beban kerja saja ($\\text{pekerja} \\times \\text{sisa hari}$).\n* **Gabungan & Kerja Bareng:** Pakai kunci $\\frac{O_1 \\cdot t_1}{W_1} = \\frac{O_2 \\cdot t_2}{W_2}$ atau laju bersama $\\frac{1}{t_{\\text{total}}} = \\frac{1}{t_A} + \\frac{1}{t_B}$.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Bedakan perbandingan senilai (searah) dan berbalik nilai (berlawanan), lalu selesaikan proyek terhenti serta laju kerja bersama.",
       "kelompok": [
         {
           "nama_kelompok": "Perbandingan Senilai & Aplikasi Skala",
           "butir": [
             {
-              "judul_poin": "Perbandingan Senilai Dasar",
-              "penjelasan_singkat": "Dua nilai berubah searah dengan kelipatan tetap: $\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$ (untuk nilai positif $a, b > 0$).",
-              "contoh_penerapan": "Bensin $4\\text{ L}$ cukup untuk $60\\text{ km}$. Maka $10\\text{ L}$ menempuh $\\frac{10}{4} \\times 60 = \\mathbf{150\\text{ km}}$."
+              "judul": "Perbandingan Senilai Dasar",
+              "teori_singkat": "Dua besaran berubah searah dengan kelipatan tetap: $\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$ ($a, b > 0$).",
+              "contoh": "$4\\text{ L}$ untuk $60\\text{ km} \\rightarrow 10\\text{ L}$ menempuh $\\frac{10}{4} \\times 60 = \\mathbf{150\\text{ km}}$."
             },
             {
-              "judul_poin": "Rasio Berantai (Gabung 3 Variabel)",
-              "penjelasan_singkat": "Gabungkan dua rasio terpisah ($A:B$ dan $B:C$) dengan menyamakan angka variabel tengah ($B$) pakai KPK.",
-              "contoh_penerapan": "Jika $A:B = 2:3$ dan $B:C = 4:5$, samakan $B = 12$ menjadi **$A:B:C = 8:12:15$**."
+              "judul": "Rasio Berantai (Gabung 3 Variabel)",
+              "teori_singkat": "Samakan angka variabel penghubung ($B$) dengan KPK untuk menggabungkan $A:B$ dan $B:C$.",
+              "contoh": "$A:B = 2:3$ dan $B:C = 4:5$ (samakan $B=12$) $\\rightarrow \\mathbf{8:12:15}$."
             },
             {
-              "judul_poin": "Membagi Nilai Berdasarkan Rasio",
-              "penjelasan_singkat": "Cari nilai bagian dengan rumus $\\text{Bagian}_A = \\frac{r_A}{r_{\\text{penentu}}} \\times \\text{Nilai Diketahui}$.",
-              "contoh_penerapan": "Rasio uang $3:5$ dengan selisih $\\text{Rp}40.000$. Uang terbesar adalah $\\frac{5}{5-3} \\times 40.000 = \\mathbf{\\text{Rp}100.000}$."
+              "judul": "Membagi Nilai Berdasarkan Rasio",
+              "teori_singkat": "Gunakan rumus $\\text{Bagian}_A = \\frac{r_A}{r_{\\text{penentu}}} \\times \\text{Nilai Diketahui}$ (penentu: jumlah atau selisih).",
+              "contoh": "Rasio $3:5$, selisih $\\text{Rp}40\\text{rb} \\rightarrow$ terbesar $\\frac{5}{5-3} \\times 40\\text{rb} = \\mathbf{\\text{Rp}100\\text{rb}}$."
             },
             {
-              "judul_poin": "Skala Panjang, Luas, dan Volume",
-              "penjelasan_singkat": "Untuk skala panjang $1:k$, perbandingan jarak adalah $1:k$, luas menjadi $1:k^2$, dan volume menjadi $1:k^3$.",
-              "contoh_penerapan": "Denah skala $1:200$ dengan luas gambar $5\\text{ cm}^2$ punya luas asli $5 \\times 200^2 = \\mathbf{200.000\\text{ cm}^2}$ ($20\\text{ m}^2$)."
+              "judul": "Skala Panjang, Luas, dan Volume",
+              "teori_singkat": "Jika skala panjang $1:k$, maka skala luas $1:k^2$ dan skala volume $1:k^3$.",
+              "contoh": "Skala $1:200$, luas denah $5\\text{ cm}^2 \\rightarrow$ asli $5 \\times 200^2 = \\mathbf{20\\text{ m}^2}$."
             }
           ]
         },
@@ -313,24 +353,24 @@
           "nama_kelompok": "Perbandingan Berbalik Nilai & Proyek Terhenti",
           "butir": [
             {
-              "judul_poin": "Perbandingan Berbalik Nilai Klasik",
-              "penjelasan_singkat": "Satu nilai naik membuat pasangannya turun, tapi hasil kalinya selalu tetap: $a_1 \\times b_1 = a_2 \\times b_2$ ($a, b > 0$).",
-              "contoh_penerapan": "Proyek selesai oleh $12$ pekerja dalam $20$ hari. Jika $15$ pekerja, selesai dalam $\\frac{12 \\times 20}{15} = \\mathbf{16\\text{ hari}}$."
+              "judul": "Perbandingan Berbalik Nilai Klasik",
+              "teori_singkat": "Satu naik membuat lainnya turun dengan hasil kali konstan: $a_1 b_1 = a_2 b_2$.",
+              "contoh": "$12$ pekerja selesai $20$ hari $\\rightarrow 15$ pekerja selesai $\\frac{12 \\times 20}{15} = \\mathbf{16\\text{ hari}}$."
             },
             {
-              "judul_poin": "Kecepatan dan Waktu pada Jarak Tetap",
-              "penjelasan_singkat": "Untuk jarak yang sama, makin cepat kendaraan, makin singkat waktunya: $v_1 \\times t_1 = v_2 \\times t_2$.",
-              "contoh_penerapan": "Kecepatan $60\\text{ km/jam}$ butuh $4\\text{ jam}$. Agar sampai dalam $3\\text{ jam}$, butuh $\\frac{60 \\times 4}{3} = \\mathbf{80\\text{ km/jam}}$."
+              "judul": "Kecepatan dan Waktu pada Jarak Tetap",
+              "teori_singkat": "Untuk jarak sama, kecepatan berbanding terbalik dengan waktu: $v_1 t_1 = v_2 t_2$.",
+              "contoh": "$60\\text{ km/jam}$ butuh $4\\text{ jam} \\rightarrow$ target $3\\text{ jam}$ butuh $\\frac{60 \\times 4}{3} = \\mathbf{80\\text{ km/jam}}$."
             },
             {
-              "judul_poin": "Proyek Berhenti di Tengah Jalan",
-              "penjelasan_singkat": "Bandingkan sisa beban kerja rencana dan aktual: $P_{\\text{awal}} \\times S_{\\text{rencana}} = P_{\\text{baru}} \\times S_{\\text{aktual}}$.",
-              "contoh_penerapan": "Target $30$ hari oleh $10$ orang. Kerja $6$ hari lalu libur $4$ hari, maka butuh $\\frac{10 \\times 24}{20} = \\mathbf{12\\text{ orang}}$ ($+2$ pekerja)."
+              "judul": "Proyek Berhenti di Tengah Jalan",
+              "teori_singkat": "Samakan sisa beban kerja rencana dan aktual: $P_{\\text{awal}} \\times S_{\\text{rencana}} = P_{\\text{baru}} \\times S_{\\text{aktual}}$.",
+              "contoh": "$10$ orang, $30$ hari; kerja $6$, libur $4 \\rightarrow \\frac{10 \\times 24}{20} = \\mathbf{12\\text{ orang}}$ (**$+2$**)."
             },
             {
-              "judul_poin": "Jumlah Pekerja Berubah Tanpa Libur",
-              "penjelasan_singkat": "Jika pekerja keluar atau masuk di tengah proyek tanpa henti, samakan sisa beban kerjanya: $P_1 \\times S_1 = P_2 \\times S_2$.",
-              "contoh_penerapan": "Target $20$ hari oleh $15$ orang. Setelah $8$ hari, $3$ orang mundur. Sisa selesai dalam $\\frac{15 \\times 12}{12} = \\mathbf{15\\text{ hari}}$."
+              "judul": "Jumlah Pekerja Berubah Tanpa Libur",
+              "teori_singkat": "Samakan sisa beban kerja sebelum dan sesudah perubahan pekerja: $P_1 S_1 = P_2 S_2$.",
+              "contoh": "$15$ orang ($20$ hari); hari ke-$8$ mundur $3 \\rightarrow$ sisa $\\frac{15 \\times 12}{12} = \\mathbf{15\\text{ hari}}$."
             }
           ]
         },
@@ -338,19 +378,24 @@
           "nama_kelompok": "Perbandingan Gabungan & Laju Kerja Bersama",
           "butir": [
             {
-              "judul_poin": "Perbandingan Gabungan 3 Variabel",
-              "penjelasan_singkat": "Satukan subjek ($O$), waktu ($t$), dan hasil kerja ($W$) dalam satu persamaan tetap: $\\frac{O_1 \\cdot t_1}{W_1} = \\frac{O_2 \\cdot t_2}{W_2}$.",
-              "contoh_penerapan": "$4$ mesin mencetak $200$ buku dalam $2$ jam. Maka $6$ mesin dalam $3$ jam mencetak $\\frac{6 \\times 3 \\times 200}{4 \\times 2} = \\mathbf{450\\text{ buku}}$."
+              "judul": "Perbandingan Gabungan 3 Variabel",
+              "teori_singkat": "Hubungkan subjek ($O$), waktu ($t$), dan hasil ($W$) dengan $\\frac{O_1 t_1}{W_1} = \\frac{O_2 t_2}{W_2}$.",
+              "contoh": "$4$ mesin, $2$ jam $= 200$ buku $\\rightarrow 6$ mesin, $3$ jam $= \\mathbf{450\\text{ buku}}$."
             },
             {
-              "judul_poin": "Laju Kerja Bersama Dua Objek",
-              "penjelasan_singkat": "Jika $A$ selesai dalam $t_A$ dan $B$ dalam $t_B$, waktu kerja bareng memenuhi $\\frac{1}{t_{\\text{total}}} = \\frac{1}{t_A} + \\frac{1}{t_B}$.",
-              "contoh_penerapan": "$A$ mengecat selesai $6$ jam, $B$ selesai $3$ jam. Jika kerja bareng, selesai dalam $\\frac{6 \\times 3}{6 + 3} = \\mathbf{2\\text{ jam}}$."
+              "judul": "Laju Kerja Bersama Dua Objek",
+              "teori_singkat": "Jumlahkan laju per satuan waktu: $\\frac{1}{t_{\\text{total}}} = \\frac{1}{t_A} + \\frac{1}{t_B}$ atau $\\frac{t_A \\cdot t_B}{t_A + t_B}$.",
+              "contoh": "$A$ ($6$ jam) dan $B$ ($3$ jam) bersama $\\rightarrow \\frac{6 \\times 3}{6 + 3} = \\mathbf{2\\text{ jam}}$."
             },
             {
-              "judul_poin": "Kerja Bersama Secara Bertahap",
-              "penjelasan_singkat": "Anggap satu pekerjaan utuh bernilai $1$. Jumlahkan porsi kerja masing-masing: $\\frac{t_{\\text{aktif},A}}{t_A} + \\frac{t_{\\text{aktif},B}}{t_B} = 1$.",
-              "contoh_penerapan": "$A$ ($10$ hari) kerja sendiri $5$ hari, lalu dibantu $B$ ($15$ hari) selama $x$ hari: $\\frac{5+x}{10} + \\frac{x}{15} = 1 \\rightarrow \\mathbf{x = 3\\text{ hari}}$."
+              "judul": "Kerja Bersama Secara Bertahap",
+              "teori_singkat": "Total porsi kerja masing-masing bernilai utuh $1$: $\\frac{t_{\\text{aktif},A}}{t_A} + \\frac{t_{\\text{aktif},B}}{t_B} = 1$.",
+              "contoh": "$A$ ($10$ hari) kerja $5$ hari, lalu dibantu $B$ ($15$ hari): $\\frac{5+x}{10} + \\frac{x}{15} = 1 \\rightarrow \\mathbf{x=3}$."
+            },
+            {
+              "judul": "Laju Berlawanan (Isi vs Kuras)",
+              "teori_singkat": "Jika dua laju saling berlawanan, kurangkan lajunya: $\\frac{1}{t_{\\text{total}}} = \\frac{1}{t_{\\text{isi}}} - \\frac{1}{t_{\\text{kuras}}}$.",
+              "contoh": "Pipa isi $4$ jam, kuras $12$ jam $\\rightarrow \\frac{1}{4} - \\frac{1}{12} = \\frac{1}{6} \\rightarrow$ penuh **$6$ jam**."
             }
           ]
         }
@@ -360,76 +405,85 @@
       "kode_subbab": "pu-03-05",
       "judul_subbab": "Interpretasi Data (Tabel, Grafik, Diagram)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Interpretasi data PU** menguji ketelitianmu membaca tren, perbandingan, dan jebakan grafik tanpa kalkulator:\n\n* **Persentase Perubahan:** Selalu bagi selisih dengan **angka awal**, bukan angka akhir ($\\frac{\\text{Selisih}}{\\text{Awal}} \\times 100\\%$).\n* **Diagram Lingkaran:** Ubah sudut ($360^{\\circ}$) atau persen ($100\\%$) menjadi pecahan sederhana dulu sebelum dikalikan total data.\n* **Waspada Visual:** Cek skala sumbu Y, grafik dua sumbu, dan bedakan data **kumulatif vs harian**.\n* **Trik Hitung Cepat:** Pakai pecahan patokan ($25\\%, 33,3\\%, 50\\%$) untuk mencoret opsi salah dalam hitungan detik.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Baca tren data akurat memakai basis awal persentase, pecahan patokan, serta kewaspadaan terhadap jebakan skala grafik.",
       "kelompok": [
         {
-          "nama_kelompok": "Persentase Perubahan dan Diagram Lingkaran",
+          "nama_kelompok": "Persentase Perubahan & Diagram Lingkaran",
           "butir": [
             {
-              "judul_poin": "Persentase Kenaikan dan Penurunan Data",
-              "penjelasan_singkat": "Hitung selisih angka akhir dan awal, lalu bagi dengan angka awal: $\\frac{\\text{Akhir} - \\text{Awal}}{\\text{Awal}} \\times 100\\%$.",
-              "contoh_penerapan": "Produksi naik dari $80$ ton ke $100$ ton. Kenaikannya: $\\frac{100 - 80}{80} \\times 100\\% = \\mathbf{25\\%}$."
+              "judul": "Persentase Kenaikan dan Penurunan",
+              "teori_singkat": "Selalu bagi selisih terhadap **nilai awal**: $\\frac{\\text{Akhir} - \\text{Awal}}{\\text{Awal}} \\times 100\\%$.",
+              "contoh": "Naik dari $80$ ke $100$ ton $\\rightarrow \\frac{100 - 80}{80} \\times 100\\% = \\mathbf{25\\%}$."
             },
             {
-              "judul_poin": "Mengubah Sudut dan Persen Diagram Lingkaran",
-              "penjelasan_singkat": "Cari jumlah asli satu bagian dengan $\\frac{\\text{Sudut}}{360^{\\circ}} \\times \\text{Total}$ (jika derajat) atau $\\frac{\\text{Persen}}{100\\%} \\times \\text{Total}$ (jika persen).",
-              "contoh_penerapan": "Dari $720$ siswa, peminat IPA bersudut $120^{\\circ}$. Jumlahnya: $\\frac{120^{\\circ}}{360^{\\circ}} \\times 720 = \\mathbf{240\\text{ siswa}}$."
+              "judul": "Sudut dan Persen Diagram Lingkaran",
+              "teori_singkat": "Nilai bagian $= \\frac{\\text{Sudut}}{360^{\\circ}} \\times \\text{Total}$ atau $\\frac{\\text{Persen}}{100\\%} \\times \\text{Total}$.",
+              "contoh": "Total $720$ siswa, sudut IPA $120^{\\circ} \\rightarrow \\frac{120^{\\circ}}{360^{\\circ}} \\times 720 = \\mathbf{240\\text{ siswa}}$."
             },
             {
-              "judul_poin": "Mencari Total Data dari Satu Bagian",
-              "penjelasan_singkat": "Kalau kamu cuma tahu nilai satu bagian ($N_A$) dan persennya ($p_A$), balik rumusnya: $\\text{Total} = \\frac{N_A}{p_A}$.",
-              "contoh_penerapan": "Biaya transportasi $15\\%$ senilai $\\text{Rp}450.000$. Total anggarannya: $450.000 \\times \\frac{100}{15} = \\mathbf{\\text{Rp}3.000.000}$."
+              "judul": "Mencari Total Data dari Satu Bagian",
+              "teori_singkat": "Jika diketahui nilai bagian ($N_A$) dan persennya ($p_A$), maka $\\text{Total} = \\frac{N_A}{p_A}$.",
+              "contoh": "Transportasi $15\\% = \\text{Rp}450\\text{rb} \\rightarrow \\text{Total} = 450\\text{rb} \\times \\frac{100}{15} = \\mathbf{\\text{Rp}3\\text{ juta}}$."
             },
             {
-              "judul_poin": "Trik Tebak Cepat Pakai Pecahan Patokan",
-              "penjelasan_singkat": "Bandingkan pecahan rumit dengan patokan mudah seperti $\\frac{1}{4} = 25\\%$, $\\frac{1}{3} \\approx 33,3\\%$, dan $\\frac{1}{2} = 50\\%$.",
-              "contoh_penerapan": "Pecahan $\\frac{49}{150}$ tipis di bawah $\\frac{50}{150} = \\frac{1}{3}$. Jadi, nilainya pasti **sedikit di bawah $33,3\\%$** (sekitar $32,7\\%$)."
+              "judul": "Trik Pecahan Patokan Cepat",
+              "teori_singkat": "Taksir pecahan rumit terhadap patokan mudah ($\\frac{1}{4}=25\\%, \\frac{1}{3}\\approx 33,3\\%, \\frac{1}{2}=50\\%$).",
+              "contoh": "$\\frac{49}{150}$ tipis di bawah $\\frac{50}{150} = \\frac{1}{3} \\rightarrow$ **sedikit di bawah $33,3\\%$**."
             }
           ]
         },
         {
-          "nama_kelompok": "Membaca Tabel, Prediksi Tren, dan Pilih Keputusan",
+          "nama_kelompok": "Membaca Tabel, Prediksi Tren, & Keputusan",
           "butir": [
             {
-              "judul_poin": "Membandingkan Rasio Terbesar di Tabel",
-              "penjelasan_singkat": "Kamu tidak perlu menghitung semua baris. Rasio paling besar pasti lahir dari pembilang terbesar dan penyebut terkecil.",
-              "contoh_penerapan": "Bandingkan rasio ekspor-impor $(120:60)$ dan $(150:50)$. Langsung pilih **$(150:50) = 3:1$** karena atasnya lebih besar dan bawahnya lebih kecil."
+              "judul": "Membandingkan Rasio Terbesar di Tabel",
+              "teori_singkat": "Rasio terbesar langsung muncul dari kombinasi pembilang terbesar dan penyebut terkecil.",
+              "contoh": "$(120:60)$ vs $(150:50) \\rightarrow$ langsung pilih **$(150:50) = 3:1$** tanpa hitung semua."
             },
             {
-              "judul_poin": "Mencari Data Kosong dan Rata-Rata Gabungan",
-              "penjelasan_singkat": "Cari nilai sel yang hilang dengan rumus: $\\text{Nilai Hilang} = (\\text{Rata-rata} \\times \\text{Banyak Data}) - \\text{Jumlah Data Lain}$.",
-              "contoh_penerapan": "Rata-rata $4$ kuartal adalah $50$ unit. Tiga kuartal tercatat $40, 45, 55$ (total $140$), maka kuartal keempat **$(50 \\times 4) - 140 = 60\\text{ unit}$**."
+              "judul": "Data Kosong & Rata-Rata Gabungan",
+              "teori_singkat": "Cari sel kosong lewat $(\\text{Rata-rata} \\times \\text{Banyak Data}) - \\text{Jumlah Data Lain}$.",
+              "contoh": "Rata-rata $4$ kuartal $= 50$, jumlah $3$ kuartal $= 140 \\rightarrow (50 \\times 4) - 140 = \\mathbf{60}$."
             },
             {
-              "judul_poin": "Prediksi Tren dengan Pola Garis Lurus (Linear)",
-              "penjelasan_singkat": "Jika kenaikannya stabil tiap periode, hitung proyeksi $k$ periode ke depan dengan: $\\text{Angka Terakhir} + (k \\times \\text{Kenaikan Tetap})$.",
-              "contoh_penerapan": "Penjualan $2022$–$2024$ adalah $100, 115, 130$ (naik $15$/tahun). Prediksi tahun $2026$ ($k=2$) adalah **$130 + (2 \\times 15) = 160$**."
+              "judul": "Prediksi Tren Linear (Garis Lurus)",
+              "teori_singkat": "Untuk kenaikan stabil, proyeksi $k$ periode depan: $\\text{Akhir} + (k \\times \\text{Beda Tetap})$.",
+              "contoh": "$2022$–$2024$: $100, 115, 130$ (**$+15$/tahun**) $\\rightarrow 2026$ ($k=2$): $130 + 30 = \\mathbf{160}$."
             },
             {
-              "judul_poin": "Memilih Keputusan Terbaik dengan Syarat Berlapis",
-              "penjelasan_singkat": "Coret dulu semua baris yang melanggar syarat wajib. Setelah itu, baru bandingkan kandidat tersisa sesuai prioritas soal.",
-              "contoh_penerapan": "Syarat biaya $\\le \\text{Rp}5\\text{ juta}$ menyisakan Vendor A (skor $85$) dan Vendor B (skor $92$). Otomatis pilih **Vendor B**."
+              "judul": "Keputusan Terbaik dengan Syarat Berlapis",
+              "teori_singkat": "Eliminasi dulu semua baris yang melanggar syarat wajib, lalu bandingkan prioritas utama.",
+              "contoh": "Syarat biaya $\\le 5\\text{ juta}$ sisakan Vendor A ($85$) & B ($92$) $\\rightarrow$ pilih **Vendor B**."
             }
           ]
         },
         {
-          "nama_kelompok": "Jebakan Visual Grafik dan Skala Sumbu",
+          "nama_kelompok": "Jebakan Visual Grafik & Skala Data",
           "butir": [
             {
-              "judul_poin": "Grafik Dua Sumbu Vertikal (Kiri dan Kanan)",
-              "penjelasan_singkat": "Sumbu Y kiri dan kanan punya skala berbeda. Pastikan kamu membaca tiap garis atau batang ke sumbu miliknya sendiri.",
-              "contoh_penerapan": "Garis A (sumbu kiri $0$–$100$) berpotongan dengan garis B (sumbu kanan $0$–$1.000$) di tengah. Nilainya tidak sama, melainkan **$50 \\ne 500$**."
+              "judul": "Grafik Dua Sumbu Vertikal (Kiri-Kanan)",
+              "teori_singkat": "Sumbu Y kiri dan kanan berskala beda; baca tiap kurva ke sumbunya sendiri.",
+              "contoh": "Garis A (kiri $0$–$100$) berpotongan B (kanan $0$–$1.000$) di tengah $\\rightarrow$ **$50 \\neq 500$**."
             },
             {
-              "judul_poin": "Data Kumulatif vs Data Harian/Bulanan",
-              "penjelasan_singkat": "Data kumulatif adalah total gabungan dari awal sampai hari ke-$n$. Untuk mencari angka hari ke-$n$ saja, hitung $\\text{Kumulatif}_n - \\text{Kumulatif}_{n-1}$.",
-              "contoh_penerapan": "Total kasus kumulatif Senin $200$ dan Selasa $230$. Artinya, tambahan kasus pada hari Selasa saja adalah **$230 - 200 = 30\\text{ kasus}$**."
+              "judul": "Data Kumulatif vs Harian/Bulanan",
+              "teori_singkat": "Data kumulatif adalah total berjalan; nilai periode ke-$n$ adalah $\\text{Kum}_n - \\text{Kum}_{n-1}$.",
+              "contoh": "Kumulatif Senin $200$, Selasa $230 \\rightarrow$ tambahan Selasa saja **$230 - 200 = 30$**."
             },
             {
-              "judul_poin": "Sumbu Y Terpotong (Tidak Mulai dari Nol)",
-              "penjelasan_singkat": "Sumbu Y yang dimulai bukan dari angka $0$ bikin selisih kecil terlihat seperti lonjakan tinggi yang dramatis.",
-              "contoh_penerapan": "Pada sumbu yang mulai dari $90$, batang $96$ terlihat dua kali lebih tinggi dari $92$. Padahal aslinya cuma beda tipis: **$96 : 92 \\approx 1,04$**."
+              "judul": "Sumbu Y Terpotong (Tidak dari Nol)",
+              "teori_singkat": "Sumbu Y bukan dari $0$ membuat selisih kecil tampak seperti lonjakan tinggi.",
+              "contoh": "Sumbu mulai $90$: batang $96$ tampak $2\\times$ batang $92$, aslinya **$96:92 \\approx 1,04$**."
+            },
+            {
+              "judul": "Poin Persentase (%p) vs Persen Relatif (%)",
+              "teori_singkat": "Selisih dua angka persen adalah poin persentase, bukan persentase kenaikan relatifnya.",
+              "contoh": "Naik dari $20\\%$ ke $25\\% \\rightarrow$ naik **$5$ poin persentase**, atau naik relatif **$25\\%$**."
             }
           ]
         }

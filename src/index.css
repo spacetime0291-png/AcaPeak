@@ -550,3 +550,137 @@ div[id^="svg-"] svg {
 .reader-scalable-content .katex-display {
   font-size: calc(1.2em * var(--reader-font-scale, 1)) !important;
 }
+
+/* ==========================================================================
+   RANGKUMAN RAPID REVIEW / CHEAT SHEET DESIGN SYSTEM
+   ========================================================================== */
+
+.rangkuman-page-dark {
+  background-color: #0B1120;
+}
+
+/* Subtle border for dark mode cards */
+.border-subtle-dark {
+  border-color: rgba(148, 163, 184, 0.14);
+}
+
+/* Active Recall Mode: Blur examples until hover or click */
+.active-recall-blur {
+  filter: blur(5px);
+  user-select: none;
+  transition: filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.active-recall-blur:hover,
+.active-recall-blur:focus-visible,
+.active-recall-unblurred {
+  filter: none;
+  user-select: text;
+}
+
+/* Print Stylesheet for High-Fidelity Ink-Saving PDF Export */
+@media print {
+  /* Hide non-content UI elements */
+  header,
+  nav,
+  footer,
+  aside,
+  .print-hide,
+  .no-print,
+  #header-banner,
+  .sticky {
+    display: none !important;
+  }
+
+  /* Reset document for white paper printing */
+  html,
+  body,
+  #root,
+  .rangkuman-page-dark {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove max-width constraints on print */
+  .max-w-\[1120px\],
+  .max-w-\[840px\],
+  .max-w-5xl {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Force expanded groups */
+  .print-force-open {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Disable recall blur when printing */
+  .active-recall-blur {
+    filter: none !important;
+    user-select: text !important;
+  }
+
+  /* Card and table styling for print */
+  .rangkuman-card,
+  .rangkuman-row {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    box-shadow: none !important;
+    color: #0f172a !important;
+  }
+
+  .rangkuman-row-contoh {
+    background: #f8fafc !important;
+    border-left: 1px solid #cbd5e1 !important;
+    color: #0f172a !important;
+  }
+
+  /* Typography color overrides for ink saving */
+  .text-slate-300,
+  .text-slate-200,
+  .text-slate-400,
+  .text-slate-50,
+  .text-white {
+    color: #0f172a !important;
+  }
+
+  strong {
+    color: #000000 !important;
+    font-weight: 700 !important;
+  }
+
+  em {
+    color: #1e3a8a !important;
+    font-style: italic !important;
+  }
+
+  /* Page breaks optimization */
+  h1, h2, h3 {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+    color: #0f172a !important;
+  }
+
+  .subbab-section {
+    break-inside: auto !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Hide print buttons */
+  button {
+    display: none !important;
+  }
+}
+

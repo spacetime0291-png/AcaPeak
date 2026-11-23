@@ -1,0 +1,1699 @@
+{
+  "total_bab": 27,
+  "total_subbab": 106,
+  "total_butir": 1364,
+  "daftar_subtes": [
+    {
+      "subtes_id": "PU",
+      "subtes": "Subtes 1: Penalaran Umum (PU)",
+      "daftar_bab": [
+        {
+          "kode_bab": "pu-01",
+          "bab": "Bab 1: Penalaran Induktif",
+          "nama_bab": "Bab 1: Penalaran Induktif",
+          "subtes": "Subtes 1: Penalaran Umum (PU)",
+          "subtes_code": "PU",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 5,
+          "total_butir": 59,
+          "subbab": [
+            {
+              "kode_subbab": "pu-01-01",
+              "judul_subbab": "Generalisasi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-02",
+              "judul_subbab": "Analogi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-03",
+              "judul_subbab": "Hubungan Kausalitas (Sebab-Akibat)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-04",
+              "judul_subbab": "Evaluasi Argumen (Memperkuat dan Memperlemah Pernyataan)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-05",
+              "judul_subbab": "Evaluasi Kesesuaian Pernyataan (Format 5 Skala Kepastian)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pu-01-01",
+              "judul_subbab": "Generalisasi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-02",
+              "judul_subbab": "Analogi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-03",
+              "judul_subbab": "Hubungan Kausalitas (Sebab-Akibat)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-04",
+              "judul_subbab": "Evaluasi Argumen (Memperkuat dan Memperlemah Pernyataan)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "pu-01-05",
+              "judul_subbab": "Evaluasi Kesesuaian Pernyataan (Format 5 Skala Kepastian)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pu-02",
+          "bab": "Bab 2: Penalaran Deduktif",
+          "nama_bab": "Bab 2: Penalaran Deduktif",
+          "subtes": "Subtes 1: Penalaran Umum (PU)",
+          "subtes_code": "PU",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 5,
+          "total_butir": 63,
+          "subbab": [
+            {
+              "kode_subbab": "pu-02-01",
+              "judul_subbab": "Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-02",
+              "judul_subbab": "Ekuivalensi dan Negasi Pernyataan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-03",
+              "judul_subbab": "Penarikan Kesimpulan (Modus Ponens, Modus Tollens, Silogisme)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-04",
+              "judul_subbab": "Logika Kuantor dan Diagram Venn",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-05",
+              "judul_subbab": "Penalaran Analitik (Urutan dan Kombinasi Posisi)",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pu-02-01",
+              "judul_subbab": "Logika Proposisi (Konjungsi, Disjungsi, Implikasi, Biimplikasi)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-02",
+              "judul_subbab": "Ekuivalensi dan Negasi Pernyataan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-03",
+              "judul_subbab": "Penarikan Kesimpulan (Modus Ponens, Modus Tollens, Silogisme)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-04",
+              "judul_subbab": "Logika Kuantor dan Diagram Venn",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pu-02-05",
+              "judul_subbab": "Penalaran Analitik (Urutan dan Kombinasi Posisi)",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pu-03",
+          "bab": "Bab 3: Penalaran Kuantitatif",
+          "nama_bab": "Bab 3: Penalaran Kuantitatif",
+          "subtes": "Subtes 1: Penalaran Umum (PU)",
+          "subtes_code": "PU",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 5,
+          "total_butir": 66,
+          "subbab": [
+            {
+              "kode_subbab": "pu-03-01",
+              "judul_subbab": "Pola Bilangan dan Deret",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-02",
+              "judul_subbab": "Pola Gambar dan Spasial Numerik",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-03",
+              "judul_subbab": "Operasi Hitung dan Aritmetika Dasar",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-04",
+              "judul_subbab": "Perbandingan Senilai dan Berbalik Nilai",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-05",
+              "judul_subbab": "Interpretasi Data (Tabel, Grafik, Diagram)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pu-03-01",
+              "judul_subbab": "Pola Bilangan dan Deret",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-02",
+              "judul_subbab": "Pola Gambar dan Spasial Numerik",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-03",
+              "judul_subbab": "Operasi Hitung dan Aritmetika Dasar",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-04",
+              "judul_subbab": "Perbandingan Senilai dan Berbalik Nilai",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pu-03-05",
+              "judul_subbab": "Interpretasi Data (Tabel, Grafik, Diagram)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subtes_id": "PPU",
+      "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+      "daftar_bab": [
+        {
+          "kode_bab": "ppu-01",
+          "bab": "Bab 1: Makna dan Relasi Kata",
+          "nama_bab": "Bab 1: Makna dan Relasi Kata",
+          "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+          "subtes_code": "PPU",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 4,
+          "total_butir": 42,
+          "subbab": [
+            {
+              "kode_subbab": "ppu-01-01",
+              "judul_subbab": "Makna Leksikal, Gramatikal, dan Kontekstual",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-01-02",
+              "judul_subbab": "Sinonim, Antonim, Homonim, dan Polisemi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-01-03",
+              "judul_subbab": "Relasi Kata Umum–Khusus dalam Kepaduan Wacana",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-01-04",
+              "judul_subbab": "Pergeseran Makna dan Nilai Rasa Kata dalam Konteks",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "ppu-01-01",
+              "judul_subbab": "Makna Leksikal, Gramatikal, dan Kontekstual",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-01-02",
+              "judul_subbab": "Sinonim, Antonim, Homonim, dan Polisemi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-01-03",
+              "judul_subbab": "Relasi Kata Umum–Khusus dalam Kepaduan Wacana",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-01-04",
+              "judul_subbab": "Pergeseran Makna dan Nilai Rasa Kata dalam Konteks",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        },
+        {
+          "kode_bab": "ppu-02",
+          "bab": "Bab 2: Morfologi dan Frasa",
+          "nama_bab": "Bab 2: Morfologi dan Frasa",
+          "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+          "subtes_code": "PPU",
+          "estimasi_menit_review": 6,
+          "jumlah_subbab": 4,
+          "total_butir": 54,
+          "subbab": [
+            {
+              "kode_subbab": "ppu-02-01",
+              "judul_subbab": "Afiksasi (Imbuhan) dan Maknanya",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-02-02",
+              "judul_subbab": "Kata Ulang (Reduplikasi) dan Kata Majemuk",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-02-03",
+              "judul_subbab": "Pola Frasa Inti–Penjelas (DM/MD) dan Kesamaan Pola",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-02-04",
+              "judul_subbab": "Kelompok Kata dan Pasangan Makna Sebidang",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "ppu-02-01",
+              "judul_subbab": "Afiksasi (Imbuhan) dan Maknanya",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-02-02",
+              "judul_subbab": "Kata Ulang (Reduplikasi) dan Kata Majemuk",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-02-03",
+              "judul_subbab": "Pola Frasa Inti–Penjelas (DM/MD) dan Kesamaan Pola",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-02-04",
+              "judul_subbab": "Kelompok Kata dan Pasangan Makna Sebidang",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        },
+        {
+          "kode_bab": "ppu-03",
+          "bab": "Bab 3: Sintaksis dan Kalimat",
+          "nama_bab": "Bab 3: Sintaksis dan Kalimat",
+          "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+          "subtes_code": "PPU",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 4,
+          "total_butir": 50,
+          "subbab": [
+            {
+              "kode_subbab": "ppu-03-01",
+              "judul_subbab": "Pola Dasar Kalimat (S-P-O-K-Pel)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-03-02",
+              "judul_subbab": "Kalimat Inti dan Transformasi Kalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-03-03",
+              "judul_subbab": "Kelogisan Kalimat dan Kepaduan Makna",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-03-04",
+              "judul_subbab": "Kalimat Pasif dan Aktif",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "ppu-03-01",
+              "judul_subbab": "Pola Dasar Kalimat (S-P-O-K-Pel)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-03-02",
+              "judul_subbab": "Kalimat Inti dan Transformasi Kalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-03-03",
+              "judul_subbab": "Kelogisan Kalimat dan Kepaduan Makna",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "ppu-03-04",
+              "judul_subbab": "Kalimat Pasif dan Aktif",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        },
+        {
+          "kode_bab": "ppu-04",
+          "bab": "Bab 4: Wacana dan Pragmatik",
+          "nama_bab": "Bab 4: Wacana dan Pragmatik",
+          "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
+          "subtes_code": "PPU",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 4,
+          "total_butir": 54,
+          "subbab": [
+            {
+              "kode_subbab": "ppu-04-01",
+              "judul_subbab": "Ide Pokok dan Gagasan Pendukung",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "ppu-04-02",
+              "judul_subbab": "Kepaduan Paragraf (Kohesi dan Koherensi)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "ppu-04-03",
+              "judul_subbab": "Sikap, Nada, dan Tujuan Penulis",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "ppu-04-04",
+              "judul_subbab": "Bahasa Panda (Analisis Morfologi & Sintaksis Buatan)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "ppu-04-01",
+              "judul_subbab": "Ide Pokok dan Gagasan Pendukung",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "ppu-04-02",
+              "judul_subbab": "Kepaduan Paragraf (Kohesi dan Koherensi)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "ppu-04-03",
+              "judul_subbab": "Sikap, Nada, dan Tujuan Penulis",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "ppu-04-04",
+              "judul_subbab": "Bahasa Panda (Analisis Morfologi & Sintaksis Buatan)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subtes_id": "PBM",
+      "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+      "daftar_bab": [
+        {
+          "kode_bab": "pbm-01",
+          "bab": "Bab 1: Ejaan (EYD V)",
+          "nama_bab": "Bab 1: Ejaan (EYD V)",
+          "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+          "subtes_code": "PBM",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 4,
+          "total_butir": 56,
+          "subbab": [
+            {
+              "kode_subbab": "pbm-01-01",
+              "judul_subbab": "Pemakaian Huruf Kapital dan Huruf Miring",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-01-02",
+              "judul_subbab": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-01-03",
+              "judul_subbab": "Penulisan Kata Serapan dan Kata Baku",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-01-04",
+              "judul_subbab": "Penulisan Angka dan Bilangan",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pbm-01-01",
+              "judul_subbab": "Pemakaian Huruf Kapital dan Huruf Miring",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-01-02",
+              "judul_subbab": "Penulisan Kata Depan, Partikel, dan Gabungan Kata",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-01-03",
+              "judul_subbab": "Penulisan Kata Serapan dan Kata Baku",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-01-04",
+              "judul_subbab": "Penulisan Angka dan Bilangan",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pbm-02",
+          "bab": "Bab 2: Tanda Baca",
+          "nama_bab": "Bab 2: Tanda Baca",
+          "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+          "subtes_code": "PBM",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 3,
+          "total_butir": 42,
+          "subbab": [
+            {
+              "kode_subbab": "pbm-02-01",
+              "judul_subbab": "Tanda Titik, Koma, dan Titik Koma",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-02-02",
+              "judul_subbab": "Tanda Titik Dua, Hubung, dan Pisah",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-02-03",
+              "judul_subbab": "Tanda Petik dan Tanda Kurung",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pbm-02-01",
+              "judul_subbab": "Tanda Titik, Koma, dan Titik Koma",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-02-02",
+              "judul_subbab": "Tanda Titik Dua, Hubung, dan Pisah",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-02-03",
+              "judul_subbab": "Tanda Petik dan Tanda Kurung",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pbm-03",
+          "bab": "Bab 3: Konjungsi dan Preposisi",
+          "nama_bab": "Bab 3: Konjungsi dan Preposisi",
+          "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+          "subtes_code": "PBM",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 3,
+          "total_butir": 42,
+          "subbab": [
+            {
+              "kode_subbab": "pbm-03-01",
+              "judul_subbab": "Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-03-02",
+              "judul_subbab": "Konjungsi Antarkalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-03-03",
+              "judul_subbab": "Konjungsi Korelatif dan Preposisi Tepat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pbm-03-01",
+              "judul_subbab": "Konjungsi Intrakalimat (Koordinatif dan Subordinatif)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-03-02",
+              "judul_subbab": "Konjungsi Antarkalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-03-03",
+              "judul_subbab": "Konjungsi Korelatif dan Preposisi Tepat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pbm-04",
+          "bab": "Bab 4: Penyuntingan Kalimat dan Wacana",
+          "nama_bab": "Bab 4: Penyuntingan Kalimat dan Wacana",
+          "subtes": "Subtes 3: Pemahaman Bacaan dan Menulis (PBM)",
+          "subtes_code": "PBM",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 4,
+          "total_butir": 51,
+          "subbab": [
+            {
+              "kode_subbab": "pbm-04-01",
+              "judul_subbab": "Perbaikan Kalimat Tidak Efektif dan Ambigu",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-04-02",
+              "judul_subbab": "Penggabungan dan Pemisahan Kalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-04-03",
+              "judul_subbab": "Melengkapi Rumpang dalam Paragraf",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-04-04",
+              "judul_subbab": "Penentuan Judul, Pengurutan, dan Penyisipan Kalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pbm-04-01",
+              "judul_subbab": "Perbaikan Kalimat Tidak Efektif dan Ambigu",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-04-02",
+              "judul_subbab": "Penggabungan dan Pemisahan Kalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-04-03",
+              "judul_subbab": "Melengkapi Rumpang dalam Paragraf",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            },
+            {
+              "kode_subbab": "pbm-04-04",
+              "judul_subbab": "Penentuan Judul, Pengurutan, dan Penyisipan Kalimat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_kaidah"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subtes_id": "PK",
+      "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+      "daftar_bab": [
+        {
+          "kode_bab": "pk-01",
+          "bab": "Bab 1: Bilangan dan Operasi Aljabar",
+          "nama_bab": "Bab 1: Bilangan dan Operasi Aljabar",
+          "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+          "subtes_code": "PK",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 5,
+          "total_butir": 64,
+          "subbab": [
+            {
+              "kode_subbab": "pk-01-01",
+              "judul_subbab": "Sifat Bilangan (Bulat, Prima, KPK, FPB)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-02",
+              "judul_subbab": "Eksponen dan Bentuk Akar",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-03",
+              "judul_subbab": "Operasi Aljabar dan Pemfaktoran",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-04",
+              "judul_subbab": "Persamaan dan Pertidaksamaan Linear & Nilai Mutlak",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-05",
+              "judul_subbab": "Persamaan dan Fungsi Kuadrat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pk-01-01",
+              "judul_subbab": "Sifat Bilangan (Bulat, Prima, KPK, FPB)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-02",
+              "judul_subbab": "Eksponen dan Bentuk Akar",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-03",
+              "judul_subbab": "Operasi Aljabar dan Pemfaktoran",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-04",
+              "judul_subbab": "Persamaan dan Pertidaksamaan Linear & Nilai Mutlak",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-01-05",
+              "judul_subbab": "Persamaan dan Fungsi Kuadrat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pk-02",
+          "bab": "Bab 2: Fungsi dan Barisan",
+          "nama_bab": "Bab 2: Fungsi dan Barisan",
+          "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+          "subtes_code": "PK",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 5,
+          "total_butir": 65,
+          "subbab": [
+            {
+              "kode_subbab": "pk-02-01",
+              "judul_subbab": "Relasi, Domain, dan Range Fungsi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-02",
+              "judul_subbab": "Fungsi Komposisi dan Invers",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-03",
+              "judul_subbab": "Operasi Fungsi Baru (Simbol Khusus)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-04",
+              "judul_subbab": "Barisan dan Deret Aritmetika & Geometri",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-05",
+              "judul_subbab": "Algoritma Diagram Alir (Flowchart) Bilangan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pk-02-01",
+              "judul_subbab": "Relasi, Domain, dan Range Fungsi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-02",
+              "judul_subbab": "Fungsi Komposisi dan Invers",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-03",
+              "judul_subbab": "Operasi Fungsi Baru (Simbol Khusus)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-04",
+              "judul_subbab": "Barisan dan Deret Aritmetika & Geometri",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-02-05",
+              "judul_subbab": "Algoritma Diagram Alir (Flowchart) Bilangan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pk-03",
+          "bab": "Bab 3: Himpunan dan Kombinatorika",
+          "nama_bab": "Bab 3: Himpunan dan Kombinatorika",
+          "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+          "subtes_code": "PK",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 3,
+          "total_butir": 40,
+          "subbab": [
+            {
+              "kode_subbab": "pk-03-01",
+              "judul_subbab": "Operasi Himpunan dan Diagram Venn",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-03-02",
+              "judul_subbab": "Kaidah Pencacahan, Permutasi, dan Kombinasi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-03-03",
+              "judul_subbab": "Peluang Kejadian Majemuk dan Bersyarat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pk-03-01",
+              "judul_subbab": "Operasi Himpunan dan Diagram Venn",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-03-02",
+              "judul_subbab": "Kaidah Pencacahan, Permutasi, dan Kombinasi",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-03-03",
+              "judul_subbab": "Peluang Kejadian Majemuk dan Bersyarat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pk-04",
+          "bab": "Bab 4: Statistika Dasar",
+          "nama_bab": "Bab 4: Statistika Dasar",
+          "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+          "subtes_code": "PK",
+          "estimasi_menit_review": 6,
+          "jumlah_subbab": 3,
+          "total_butir": 37,
+          "subbab": [
+            {
+              "kode_subbab": "pk-04-01",
+              "judul_subbab": "Ukuran Pemusatan (Mean, Median, Modus)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-04-02",
+              "judul_subbab": "Ukuran Penyebaran (Jangkauan, Kuartil, Simpangan)",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-04-03",
+              "judul_subbab": "Perubahan Data dan Gabungan Rata-Rata",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pk-04-01",
+              "judul_subbab": "Ukuran Pemusatan (Mean, Median, Modus)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-04-02",
+              "judul_subbab": "Ukuran Penyebaran (Jangkauan, Kuartil, Simpangan)",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-04-03",
+              "judul_subbab": "Perubahan Data dan Gabungan Rata-Rata",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pk-05",
+          "bab": "Bab 5: Geometri dan Pengukuran",
+          "nama_bab": "Bab 5: Geometri dan Pengukuran",
+          "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+          "subtes_code": "PK",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 4,
+          "total_butir": 53,
+          "subbab": [
+            {
+              "kode_subbab": "pk-05-01",
+              "judul_subbab": "Sudut dan Garis Sejajar",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-05-02",
+              "judul_subbab": "Bangun Datar (Luas, Keliling, Kesebangunan)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-05-03",
+              "judul_subbab": "Bangun Ruang (Volume, Luas Permukaan, Jarak Titik-Garis)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-05-04",
+              "judul_subbab": "Sistem Koordinat Kartesius dan Persamaan Garis Lurus",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pk-05-01",
+              "judul_subbab": "Sudut dan Garis Sejajar",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-05-02",
+              "judul_subbab": "Bangun Datar (Luas, Keliling, Kesebangunan)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-05-03",
+              "judul_subbab": "Bangun Ruang (Volume, Luas Permukaan, Jarak Titik-Garis)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-05-04",
+              "judul_subbab": "Sistem Koordinat Kartesius dan Persamaan Garis Lurus",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pk-06",
+          "bab": "Bab 6: Geometri Transformasi Dasar dan Trigonometri Segitiga Siku-Siku",
+          "nama_bab": "Bab 6: Geometri Transformasi Dasar dan Trigonometri Segitiga Siku-Siku",
+          "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
+          "subtes_code": "PK",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 2,
+          "total_butir": 26,
+          "subbab": [
+            {
+              "kode_subbab": "pk-06-01",
+              "judul_subbab": "Transformasi Geometri Dasar pada Bidang Kartesius",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-06-02",
+              "judul_subbab": "Trigonometri Segitiga Siku-Siku dalam Pengukuran Geometri",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pk-06-01",
+              "judul_subbab": "Transformasi Geometri Dasar pada Bidang Kartesius",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pk-06-02",
+              "judul_subbab": "Trigonometri Segitiga Siku-Siku dalam Pengukuran Geometri",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subtes_id": "LBI",
+      "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+      "daftar_bab": [
+        {
+          "kode_bab": "lbi-01",
+          "bab": "Bab 1: Pemahaman Informasi Eksplisit",
+          "nama_bab": "Bab 1: Pemahaman Informasi Eksplisit",
+          "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+          "subtes_code": "LBI",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 3,
+          "total_butir": 34,
+          "subbab": [
+            {
+              "kode_subbab": "lbi-01-01",
+              "judul_subbab": "Pencarian Fakta dan Data Langsung (Scanning & Skimming)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-01-02",
+              "judul_subbab": "Verifikasi Pernyataan Sesuai/Tidak Sesuai Teks",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-01-03",
+              "judul_subbab": "Identifikasi Pokok Bahasan Tiap Paragraf",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "lbi-01-01",
+              "judul_subbab": "Pencarian Fakta dan Data Langsung (Scanning & Skimming)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-01-02",
+              "judul_subbab": "Verifikasi Pernyataan Sesuai/Tidak Sesuai Teks",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-01-03",
+              "judul_subbab": "Identifikasi Pokok Bahasan Tiap Paragraf",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ]
+        },
+        {
+          "kode_bab": "lbi-02",
+          "bab": "Bab 2: Inferensi dan Evaluasi Teks",
+          "nama_bab": "Bab 2: Inferensi dan Evaluasi Teks",
+          "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+          "subtes_code": "LBI",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 4,
+          "total_butir": 50,
+          "subbab": [
+            {
+              "kode_subbab": "lbi-02-01",
+              "judul_subbab": "Simpulan Implisit dan Prediksi Isi Teks",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-02-02",
+              "judul_subbab": "Hubungan Antarparagraf dan Antarteks",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-02-03",
+              "judul_subbab": "Evaluasi Kredibilitas, Opini, dan Fakta dalam Bacaan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-02-04",
+              "judul_subbab": "Analisis Infografik dan Teks Multimodal",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "lbi-02-01",
+              "judul_subbab": "Simpulan Implisit dan Prediksi Isi Teks",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-02-02",
+              "judul_subbab": "Hubungan Antarparagraf dan Antarteks",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-02-03",
+              "judul_subbab": "Evaluasi Kredibilitas, Opini, dan Fakta dalam Bacaan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-02-04",
+              "judul_subbab": "Analisis Infografik dan Teks Multimodal",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ]
+        },
+        {
+          "kode_bab": "lbi-03",
+          "bab": "Bab 3: Literasi Teks Sastra dan Literasi Ilmu Pengetahuan",
+          "nama_bab": "Bab 3: Literasi Teks Sastra dan Literasi Ilmu Pengetahuan",
+          "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
+          "subtes_code": "LBI",
+          "estimasi_menit_review": 7,
+          "jumlah_subbab": 5,
+          "total_butir": 70,
+          "subbab": [
+            {
+              "kode_subbab": "lbi-03-01",
+              "judul_subbab": "Unsur Intrinsik, Konflik, dan Pesan Teks Sastra",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-02",
+              "judul_subbab": "Penokohan, Alur, dan Prediksi Tindakan Tokoh",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-03",
+              "judul_subbab": "Literasi Teks Saintek dan Kesehatan (Eksplanasi & Riset)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-04",
+              "judul_subbab": "Literasi Teks Sosial-Humaniora, Ekonomi, dan Kebijakan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-05",
+              "judul_subbab": "Literasi Teks Ulasan (Review Text)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "lbi-03-01",
+              "judul_subbab": "Unsur Intrinsik, Konflik, dan Pesan Teks Sastra",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-02",
+              "judul_subbab": "Penokohan, Alur, dan Prediksi Tindakan Tokoh",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-03",
+              "judul_subbab": "Literasi Teks Saintek dan Kesehatan (Eksplanasi & Riset)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-04",
+              "judul_subbab": "Literasi Teks Sosial-Humaniora, Ekonomi, dan Kebijakan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbi-03-05",
+              "judul_subbab": "Literasi Teks Ulasan (Review Text)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subtes_id": "LBE",
+      "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+      "daftar_bab": [
+        {
+          "kode_bab": "lbe-01",
+          "bab": "Bab 1: Main Idea & Purpose",
+          "nama_bab": "Bab 1: Main Idea & Purpose",
+          "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+          "subtes_code": "LBE",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 3,
+          "total_butir": 41,
+          "subbab": [
+            {
+              "kode_subbab": "lbe-01-01",
+              "judul_subbab": "Main Idea and Topic of the Passage",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-01-02",
+              "judul_subbab": "Author's Purpose and Primary Objective",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-01-03",
+              "judul_subbab": "Target Audience and Text Organization",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "lbe-01-01",
+              "judul_subbab": "Main Idea and Topic of the Passage",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-01-02",
+              "judul_subbab": "Author's Purpose and Primary Objective",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-01-03",
+              "judul_subbab": "Target Audience and Text Organization",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ]
+        },
+        {
+          "kode_bab": "lbe-02",
+          "bab": "Bab 2: Detailed Information & Paraphrasing",
+          "nama_bab": "Bab 2: Detailed Information & Paraphrasing",
+          "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+          "subtes_code": "LBE",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 4,
+          "total_butir": 49,
+          "subbab": [
+            {
+              "kode_subbab": "lbe-02-01",
+              "judul_subbab": "Stated Detail Questions (True/False/Not Given)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-02-02",
+              "judul_subbab": "Unstated Details and Exceptions",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-02-03",
+              "judul_subbab": "Restating/Paraphrasing Sentences",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-02-04",
+              "judul_subbab": "Pronoun Reference and Contextual Vocabulary",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "lbe-02-01",
+              "judul_subbab": "Stated Detail Questions (True/False/Not Given)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-02-02",
+              "judul_subbab": "Unstated Details and Exceptions",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-02-03",
+              "judul_subbab": "Restating/Paraphrasing Sentences",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-02-04",
+              "judul_subbab": "Pronoun Reference and Contextual Vocabulary",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ]
+        },
+        {
+          "kode_bab": "lbe-03",
+          "bab": "Bab 3: Inference, Tone, & Multi-Text",
+          "nama_bab": "Bab 3: Inference, Tone, & Multi-Text",
+          "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
+          "subtes_code": "LBE",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 5,
+          "total_butir": 63,
+          "subbab": [
+            {
+              "kode_subbab": "lbe-03-01",
+              "judul_subbab": "Drawing Logical Inferences and Predictions",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-02",
+              "judul_subbab": "Author's Tone, Attitude, and Bias",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-03",
+              "judul_subbab": "Preceding and Following Paragraph Prediction",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-04",
+              "judul_subbab": "Comparing Two Related Texts (Paired Passages)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-05",
+              "judul_subbab": "Summary and Conclusion of the Text",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "lbe-03-01",
+              "judul_subbab": "Drawing Logical Inferences and Predictions",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-02",
+              "judul_subbab": "Author's Tone, Attitude, and Bias",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-03",
+              "judul_subbab": "Preceding and Following Paragraph Prediction",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-04",
+              "judul_subbab": "Comparing Two Related Texts (Paired Passages)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            },
+            {
+              "kode_subbab": "lbe-03-05",
+              "judul_subbab": "Summary and Conclusion of the Text",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_sinyal_pola"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subtes_id": "PM",
+      "subtes": "Subtes 7: Penalaran Matematika (PM)",
+      "daftar_bab": [
+        {
+          "kode_bab": "pm-01",
+          "bab": "Bab 1: Aritmetika Sosial dan Keuangan",
+          "nama_bab": "Bab 1: Aritmetika Sosial dan Keuangan",
+          "subtes": "Subtes 7: Penalaran Matematika (PM)",
+          "subtes_code": "PM",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 4,
+          "total_butir": 52,
+          "subbab": [
+            {
+              "kode_subbab": "pm-01-01",
+              "judul_subbab": "Untung, Rugi, Diskon, dan Pajak",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-01-02",
+              "judul_subbab": "Bunga Tunggal, Bunga Majemuk, dan Cicilan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-01-03",
+              "judul_subbab": "Rasio, Proporsi, dan Skala dalam Konteks Nyata",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-01-04",
+              "judul_subbab": "Optimasi Biaya dan Perencanaan Anggaran",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pm-01-01",
+              "judul_subbab": "Untung, Rugi, Diskon, dan Pajak",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-01-02",
+              "judul_subbab": "Bunga Tunggal, Bunga Majemuk, dan Cicilan",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-01-03",
+              "judul_subbab": "Rasio, Proporsi, dan Skala dalam Konteks Nyata",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-01-04",
+              "judul_subbab": "Optimasi Biaya dan Perencanaan Anggaran",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pm-02",
+          "bab": "Bab 2: Pemodelan Aljabar dan Fungsi",
+          "nama_bab": "Bab 2: Pemodelan Aljabar dan Fungsi",
+          "subtes": "Subtes 7: Penalaran Matematika (PM)",
+          "subtes_code": "PM",
+          "estimasi_menit_review": 5,
+          "jumlah_subbab": 4,
+          "total_butir": 53,
+          "subbab": [
+            {
+              "kode_subbab": "pm-02-01",
+              "judul_subbab": "Sistem Persamaan Linear Kontekstual (SPLDV & SPLTV)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-02-02",
+              "judul_subbab": "Pemodelan Fungsi Linear dan Kuadrat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-02-03",
+              "judul_subbab": "Laju Perubahan, Kecepatan, Debit, dan Waktu Kerja Bersama",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-02-04",
+              "judul_subbab": "Barisan dan Pertumbuhan/Peluruhan Eksponensial",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pm-02-01",
+              "judul_subbab": "Sistem Persamaan Linear Kontekstual (SPLDV & SPLTV)",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-02-02",
+              "judul_subbab": "Pemodelan Fungsi Linear dan Kuadrat",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-02-03",
+              "judul_subbab": "Laju Perubahan, Kecepatan, Debit, dan Waktu Kerja Bersama",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-02-04",
+              "judul_subbab": "Barisan dan Pertumbuhan/Peluruhan Eksponensial",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pm-03",
+          "bab": "Bab 3: Geometri Terapan dan Pengukuran",
+          "nama_bab": "Bab 3: Geometri Terapan dan Pengukuran",
+          "subtes": "Subtes 7: Penalaran Matematika (PM)",
+          "subtes_code": "PM",
+          "estimasi_menit_review": 4,
+          "jumlah_subbab": 4,
+          "total_butir": 48,
+          "subbab": [
+            {
+              "kode_subbab": "pm-03-01",
+              "judul_subbab": "Aplikasi Teorema Pythagoras dan Trigonometri",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-03-02",
+              "judul_subbab": "Luas dan Volume Bangun Gabungan dalam Konteks Fisik",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-03-03",
+              "judul_subbab": "Kesebangunan pada Bayangan dan Peta",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-03-04",
+              "judul_subbab": "Pengukuran Waktu, Zona Waktu, Jadwal Siklik, dan Rute",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pm-03-01",
+              "judul_subbab": "Aplikasi Teorema Pythagoras dan Trigonometri",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-03-02",
+              "judul_subbab": "Luas dan Volume Bangun Gabungan dalam Konteks Fisik",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-03-03",
+              "judul_subbab": "Kesebangunan pada Bayangan dan Peta",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-03-04",
+              "judul_subbab": "Pengukuran Waktu, Zona Waktu, Jadwal Siklik, dan Rute",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        },
+        {
+          "kode_bab": "pm-04",
+          "bab": "Bab 4: Analisis Data dan Probabilitas Terapan",
+          "nama_bab": "Bab 4: Analisis Data dan Probabilitas Terapan",
+          "subtes": "Subtes 7: Penalaran Matematika (PM)",
+          "subtes_code": "PM",
+          "estimasi_menit_review": 6,
+          "jumlah_subbab": 3,
+          "total_butir": 40,
+          "subbab": [
+            {
+              "kode_subbab": "pm-04-01",
+              "judul_subbab": "Interpretasi Grafik, Tabel, dan Statistik Kontekstual",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-04-02",
+              "judul_subbab": "Peluang Kejadian dan Pengambilan Keputusan Berbasis Data",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-04-03",
+              "judul_subbab": "Nilai Harapan (Ekspektasi) dan Kombinatorika Terapan",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ],
+          "daftar_subbab": [
+            {
+              "kode_subbab": "pm-04-01",
+              "judul_subbab": "Interpretasi Grafik, Tabel, dan Statistik Kontekstual",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-04-02",
+              "judul_subbab": "Peluang Kejadian dan Pengambilan Keputusan Berbasis Data",
+              "klasifikasi_materi": "INTI",
+              "mode_tampilan": "katalog_rumus_sifat"
+            },
+            {
+              "kode_subbab": "pm-04-03",
+              "judul_subbab": "Nilai Harapan (Ekspektasi) dan Kombinatorika Terapan",
+              "klasifikasi_materi": "PENGAYAAN",
+              "mode_tampilan": "katalog_rumus_sifat"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

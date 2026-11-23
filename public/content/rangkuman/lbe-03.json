@@ -2,93 +2,101 @@
   "kode_bab": "lbe-03",
   "subtes": "Subtes 6: Literasi dalam Bahasa Inggris (LBE)",
   "bab": "Bab 3: Inference, Tone, & Multi-Text",
-  "batch_model": "hydrogen",
-  "jumlah_subbab": 5,
+  "estimasi_menit_review": 5,
   "daftar_subbab": [
     {
       "kode_subbab": "lbe-03-01",
       "judul_subbab": "Drawing Logical Inferences and Predictions",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Inference** adalah kesimpulan logis yang **tidak ditulis langsung** di teks, tetapi **pasti benar** berdasarkan bukti yang ada.\n\n* **Rumus Dasar:** $\\text{Fakta Teks} + \\text{Logika Ketat} = \\text{Valid Inference}$\n* **Aturan Main:** Jangan menebak-nebak di luar teks, pakai opini pribadi, atau tergoda kata ekstrem (*always, never, completely*).\n* **Cara Kerja Cepat:** Pindai kata kunci soal (*scanning*), pahami hubungan sebab-akibat atau tren data, lalu cari parafrasa yang maknanya identik.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Inference adalah simpulan logis tak tertulis yang pasti benar dari fakta teks tanpa spekulasi.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Kesimpulan Langsung & Ketat (Strict Inference)",
+          "nama_kelompok": "Kesimpulan Langsung & Ketat (Strict Inference)",
           "butir": [
             {
-              "judul_poin": "Parafrasa Makna & Padanan Kata",
-              "penjelasan_singkat": "Jawaban benar menyusun ulang fakta teks dengan kata berbeda tanpa menambah info baru ($\\text{Fakta } A = \\text{Parafrasa } A'$).",
-              "contoh_penerapan": "Teks: *\"The species **struggles to survive** in warmer waters.\"* $\\rightarrow$ Kesimpulan: Spesies tersebut **terancam** jika suhu laut terus naik."
+              "judul": "Parafrasa Makna & Padanan Kata",
+              "teori_singkat": "Menyusun ulang fakta teks memakai sinonim setara tanpa menambah informasi baru.",
+              "contoh": "*\"Species **struggles to survive** in warm water.\"* $\\rightarrow$ Spesies **terancam** jika suhu laut naik."
             },
             {
-              "judul_poin": "Kata Kontras & Pengecualian (*Whereas, Unlike*)",
-              "penjelasan_singkat": "Kata hubung kontras membalikkan ciri subjek kedua dibanding subjek pertama pada aspek yang dibahas.",
-              "contoh_penerapan": "Teks: *\"**Unlike** nocturnal owls, eagles hunt exclusively during daylight.\"* $\\rightarrow$ Kesimpulan: Burung hantu **tidak berburu secara eksklusif** di siang hari."
+              "judul": "Kata Kontras & Pengecualian (*Whereas, Unlike*)",
+              "teori_singkat": "Konjungsi kontras membalikkan ciri subjek kedua dibanding subjek pertama pada aspek yang sama.",
+              "contoh": "*\"**Unlike** nocturnal owls, eagles hunt in daylight.\"* $\\rightarrow$ Burung hantu **tidak berburu** di siang hari."
             },
             {
-              "judul_poin": "Kata Pembatas Jumlah & Frekuensi (*Rarely, Few, Mostly*)",
-              "penjelasan_singkat": "Kata seperti *few*, *rarely*, atau *mostly* membatasi ruang lingkup fakta sehingga menolak kesimpulan 0% atau 100%.",
-              "contoh_penerapan": "Teks: *\"Early treatments **rarely** eliminate the virus completely.\"* $\\rightarrow$ Kesimpulan: Sebagian kecil pasien **masih memiliki virus** setelah terapi awal."
+              "judul": "Kata Pembatas Jumlah & Frekuensi (*Rarely, Few, Mostly*)",
+              "teori_singkat": "Kata pembatas ruang lingkup menolak kesimpulan ekstrem mutlak sebesar $0\\%$ maupun $100\\%$.",
+              "contoh": "*\"Treatments **rarely** eliminate the virus completely.\"* $\\rightarrow$ Sebagian kecil pasien **masih memiliki virus**."
             },
             {
-              "judul_poin": "Kata Perbandingan & Peringkat (*More than, Highest*)",
-              "penjelasan_singkat": "Kalimat perbandingan ($A > B$) otomatis mengunci urutan peringkat dua hal meski teks tidak mencantumkan angka pasti.",
-              "contoh_penerapan": "Teks: *\"Solar adoption grew **faster than** wind energy in 2024.\"* $\\rightarrow$ Kesimpulan: Laju pertumbuhan energi angin **lebih lambat** daripada energi surya."
+              "judul": "Kata Perbandingan & Peringkat (*More than, Highest*)",
+              "teori_singkat": "Kalimat perbandingan ($A > B$) mengunci urutan peringkat dua hal meski tanpa angka pasti.",
+              "contoh": "*\"Solar grew **faster than** wind energy.\"* $\\rightarrow$ Pertumbuhan energi angin **lebih lambat** daripada surya."
+            },
+            {
+              "judul": "Syarat Eksklusif & Pengecualian (*Unless, Only if*)",
+              "teori_singkat": "Kata *unless* menandakan jika syarat gagal dipenuhi, maka akibat utama pasti terjadi.",
+              "contoh": "*\"Crops fail **unless** irrigated.\"* $\\rightarrow$ Tanpa irigasi, tanaman **pasti gagal panen**."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Menggali Asumsi Tersembunyi (Unstated Assumptions)",
+          "nama_kelompok": "Menggali Asumsi Tersembunyi (Unstated Assumptions)",
           "butir": [
             {
-              "judul_poin": "Jembatan Bukti ke Pendapat (*Gap Filler*)",
-              "penjelasan_singkat": "Asumsi tersembunyi adalah syarat wajib tak tertulis yang menghubungkan bukti menuju kesimpulan penulis.",
-              "contoh_penerapan": "Teks: *\"The app lacks encryption, **so** users' data is unsafe.\"* $\\rightarrow$ Asumsi: Enkripsi adalah **syarat utama** agar data pengguna aman."
+              "judul": "Jembatan Bukti ke Pendapat (*Gap Filler*)",
+              "teori_singkat": "Asumsi adalah syarat wajib tak tertulis yang menghubungkan bukti menuju kesimpulan penulis.",
+              "contoh": "*\"The app lacks encryption, **so** data is unsafe.\"* $\\rightarrow$ Asumsi: Enkripsi **syarat utama** keamanan data."
             },
             {
-              "judul_poin": "Petunjuk Waktu & Kondisi Lanjutan (*Still, No longer*)",
-              "penjelasan_singkat": "Kata seperti *still* atau *no longer* menyiratkan bahwa suatu kondisi sudah terjadi sebelumnya di masa lalu.",
-              "contoh_penerapan": "Teks: *\"The city **still** relies on coal power plants.\"* $\\rightarrow$ Asumsi: Kota itu **sudah memakai** pembangkit batu bara sejak dulu."
+              "judul": "Petunjuk Waktu & Kondisi Lanjutan (*Still, No longer*)",
+              "teori_singkat": "Kata *still* atau *no longer* menyiratkan kondisi tersebut sudah berlangsung sejak masa lalu.",
+              "contoh": "*\"The city **still** relies on coal.\"* $\\rightarrow$ Asumsi: Kota itu **sudah memakai** batu bara sebelumnya."
             },
             {
-              "judul_poin": "Kalimat Saran & Keharusan (*Should, Must, Need to*)",
-              "penjelasan_singkat": "Saat penulis memberi saran, ia menganggap langkah itu bisa diterapkan dan akan memperbaiki masalah saat ini.",
-              "contoh_penerapan": "Teks: *\"Schools **must** delay start times to boost teen grades.\"* $\\rightarrow$ Asumsi: Jam masuk sekolah saat ini **terlalu pagi** bagi remaja."
+              "judul": "Kalimat Saran & Keharusan (*Should, Must, Need to*)",
+              "teori_singkat": "Saran penulis mengasumsikan tindakan tersebut layak diterapkan dan mampu memperbaiki masalah saat ini.",
+              "contoh": "*\"Schools **must** delay start times.\"* $\\rightarrow$ Asumsi: Jam masuk sekolah saat ini **terlalu pagi**."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Hubungan Sebab-Akibat & Prediksi Dampak",
+          "nama_kelompok": "Hubungan Sebab-Akibat & Prediksi Dampak",
           "butir": [
             {
-              "judul_poin": "Rantai Sebab-Akibat Beruntun (*Trigger, Lead to, Drive*)",
-              "penjelasan_singkat": "Kata kerja sebab-akibat menghubungkan pemicu awal ke dampak akhir secara berantai ($X \\rightarrow Y \\rightarrow Z$).",
-              "contoh_penerapan": "Teks: *\"Deforestation **triggers** soil erosion, which **chokes** river habitats.\"* $\\rightarrow$ Kesimpulan: Penebangan hutan ikut **merusak habitat sungai**."
+              "judul": "Rantai Sebab-Akibat Beruntun (*Trigger, Lead to, Drive*)",
+              "teori_singkat": "Kata kerja kausal menghubungkan pemicu awal ke dampak akhir berantai ($X \\rightarrow Y \\rightarrow Z$).",
+              "contoh": "*\"Deforestation **triggers** erosion, which **chokes** rivers.\"* $\\rightarrow$ Penebangan hutan ikut **merusak habitat sungai**."
             },
             {
-              "judul_poin": "Prediksi Jika Syarat Dihilangkan (*If Removed / Without*)",
-              "penjelasan_singkat": "Jika hasil $Y$ bergantung pada syarat $X$, menghilangkan $X$ otomatis membuat $Y$ gagal terjadi.",
-              "contoh_penerapan": "Teks: *\"Coral reefs **depend on** symbiotic algae for nutrients.\"* $\\rightarrow$ Prediksi: Jika alga hilang, terumbu karang **akan kekurangan nutrisi**."
+              "judul": "Prediksi Jika Syarat Dihilangkan (*If Removed / Without*)",
+              "teori_singkat": "Jika hasil $Y$ bergantung pada syarat $X$, hilangnya $X$ membuat $Y$ gagal terjadi.",
+              "contoh": "*\"Reefs **depend on** algae for nutrients.\"* $\\rightarrow$ Tanpa alga, karang **kekurangan nutrisi**."
             },
             {
-              "judul_poin": "Prediksi Perubahan Tren Naik-Turun (*Increase / Decrease*)",
-              "penjelasan_singkat": "Pola hubungan dua hal di teks bisa dipakai memprediksi arah perubahan jika salah satunya naik atau turun.",
-              "contoh_penerapan": "Teks: *\"Higher interest rates consistently **dampen** corporate borrowing.\"* $\\rightarrow$ Prediksi: Penurunan suku bunga **cenderung mendorong** pinjaman perusahaan."
+              "judul": "Prediksi Perubahan Tren Naik-Turun (*Increase / Decrease*)",
+              "teori_singkat": "Pola korelasi variabel memprediksi arah perubahan saat salah satu faktor naik atau turun.",
+              "contoh": "*\"Higher interest rates **dampen** borrowing.\"* $\\rightarrow$ Penurunan suku bunga **cenderung mendorong** pinjaman perusahaan."
             }
           ]
         },
         {
-          "nama_kelompok": "4. Menggabungkan Bukti Teks & Grafik/Tabel",
+          "nama_kelompok": "Menggabungkan Bukti Teks & Grafik/Tabel",
           "butir": [
             {
-              "judul_poin": "Mencocokkan Klaim Teks dengan Tren Angka",
-              "penjelasan_singkat": "Gabungkan arah naik-turun angka pada tabel dengan penjelasan mekanisme di paragraf untuk menarik kesimpulan utuh.",
-              "contoh_penerapan": "Grafik: biaya baterai turun $40\\%$; Teks: *\"Falling costs **drive EV adoption**.\"* $\\rightarrow$ Kesimpulan: Turunnya harga baterai **mempercepat adopsi mobil listrik**."
+              "judul": "Mencocokkan Klaim Teks dengan Tren Angka",
+              "teori_singkat": "Gabungkan arah tren angka grafik dengan mekanisme di teks untuk menarik simpulan utuh.",
+              "contoh": "Grafik: biaya baterai turun $40\\%$; Teks: *\"Falling costs **drive EV adoption**.\"* $\\rightarrow$ Adopsi EV **meningkat**."
             },
             {
-              "judul_poin": "Membaca Data Pengecualian di Tabel & Teks",
-              "penjelasan_singkat": "Saat satu baris tabel menyimpang dari pola umum, cari alasan khusus yang dijelaskan penulis di dalam paragraf.",
-              "contoh_penerapan": "Tabel: Negara Z naik saat negara lain turun; Teks: *\"**Subsidies shielded Z**.\"* $\\rightarrow$ Kesimpulan: Subsidi **melindungi Negara Z** dari tren penurunan."
+              "judul": "Membaca Data Pengecualian di Tabel & Teks",
+              "teori_singkat": "Saat satu data tabel menyimpang dari pola umum, temukan alasan khususnya di paragraf.",
+              "contoh": "Tabel: Z naik saat lain turun; Teks: *\"**Subsidies shielded Z**.\"* $\\rightarrow$ Subsidi **melindungi Z**."
             }
           ]
         }
@@ -98,46 +106,50 @@
       "kode_subbab": "lbe-03-02",
       "judul_subbab": "Author's Tone, Attitude, and Bias",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Peta Taktis Tone, Attitude, & Bias:**\n- **Tone (Nada Penulis):** Rasa atau sikap penulis terhadap topik. Cek pilihan kata sifat/keterangan (*adjectives/adverbs*) dan kata hubung kontras (*however, yet, while*).\n- **Attitude (Sikap Komentator):** Reaksi spesifik tiap komentator terhadap unggahan utama (*Original Post*) di thread diskusi.\n- **Bias (Keberpihakan):** Kecenderungan penulis memihak satu kubu lewat kata emosional (*loaded words*) atau bukti sepihak.\n- **Perspective (Sudut Pandang):** Posisi atau kesimpulan utama yang paling cocok dengan argumen inti penulis.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Tone, attitude, dan bias diidentifikasi lewat diksi sifat/keterangan, konjungsi kontras, serta posisi argumen utama penulis.",
       "kelompok": [
         {
           "nama_kelompok": "Spektrum Nada Penulis (Author's Tone)",
           "butir": [
             {
-              "judul_poin": "Objective (Netral & Berbasis Fakta)",
-              "penjelasan_singkat": "Menyajikan data, statistik, atau temuan riset secara lugas tanpa menyisipkan opini pribadi maupun kata sifat emosional.",
-              "contoh_penerapan": "According to the 2024 WHO report, global temperatures **rose by 1.2 degrees Celsius** over the past century."
+              "judul": "Objective (Netral & Berbasis Fakta)",
+              "teori_singkat": "Menyajikan data atau temuan riset secara lugas tanpa opini pribadi maupun diksi emosional.",
+              "contoh": "According to WHO data, global temperatures **rose by 1.2 degrees Celsius** over the past century."
             },
             {
-              "judul_poin": "Skeptical (Ragu & Mempertanyakan Klaim)",
-              "penjelasan_singkat": "Meragukan suatu klaim atau solusi karena bukti pendukungnya dinilai masih lemah atau belum cukup.",
-              "contoh_penerapan": "While proponents hail the pill as a miracle, **little clinical evidence supports** its long-term efficacy."
+              "judul": "Skeptical (Ragu & Mempertanyakan Klaim)",
+              "teori_singkat": "Meragukan klaim atau solusi karena bukti ilmiah pendukungnya dinilai masih lemah atau minim.",
+              "contoh": "While hailed as a miracle, **little clinical evidence supports** the pill's long-term efficacy."
             },
             {
-              "judul_poin": "Optimistic (Penuh Harapan & Positif)",
-              "penjelasan_singkat": "Menyoroti peluang keberhasilan, kemajuan teknologi, atau solusi masa depan dengan pilihan kata positif yang terukur.",
-              "contoh_penerapan": "Recent breakthroughs in battery storage **pave the way for a cleaner, more sustainable** energy grid."
+              "judul": "Optimistic (Penuh Harapan & Positif)",
+              "teori_singkat": "Menyoroti peluang keberhasilan atau solusi masa depan lewat pilihan kata positif yang terukur.",
+              "contoh": "Recent breakthroughs in battery storage **pave the way for a cleaner** energy grid."
             },
             {
-              "judul_poin": "Cautious (Hati-Hati & Bersyarat)",
-              "penjelasan_singkat": "Mengakui potensi manfaat suatu hal, tapi mengingatkan perlunya kehati-hatian, aturan, atau uji lanjutan.",
-              "contoh_penerapan": "AI diagnostics show promise, **yet clinicians must carefully verify** outputs before making final decisions."
+              "judul": "Cautious (Hati-Hati & Bersyarat)",
+              "teori_singkat": "Mengakui potensi manfaat suatu hal sambil mengingatkan perlunya kehati-hatian, regulasi, atau uji lanjutan.",
+              "contoh": "AI diagnostics show promise, **yet clinicians must carefully verify** outputs before making decisions."
             },
             {
-              "judul_poin": "Critical (Kritis & Menunjukkan Kelemahan)",
-              "penjelasan_singkat": "Menyoroti celah logika, dampak buruk, atau kegagalan suatu kebijakan secara tajam dan terarah.",
-              "contoh_penerapan": "The new zoning policy **fails to address** housing shortages and **exacerbates** urban inequality."
+              "judul": "Critical (Kritis & Menunjukkan Kelemahan)",
+              "teori_singkat": "Menyoroti celah logika, dampak buruk, atau kegagalan kebijakan secara tajam dan terarah.",
+              "contoh": "The new zoning policy **fails to address** housing shortages and **exacerbates** urban inequality."
             },
             {
-              "judul_poin": "Concerned (Prihatin & Cemas)",
-              "penjelasan_singkat": "Mengungkapkan kekhawatiran atas ancaman serius atau risiko yang butuh penanganan segera.",
-              "contoh_penerapan": "If deforestation continues at this **alarming rate**, thousands of endemic species **face imminent extinction**."
+              "judul": "Concerned (Prihatin & Cemas)",
+              "teori_singkat": "Mengungkapkan kekhawatiran atas ancaman serius atau risiko nyata yang membutuhkan penanganan segera.",
+              "contoh": "If deforestation continues at this **alarming rate**, endemic species **face imminent extinction**."
             },
             {
-              "judul_poin": "Ambivalent (Mendua & Berimbang)",
-              "penjelasan_singkat": "Menampilkan sisi positif dan negatif dengan bobot seimbang tanpa memihak salah satu kubu.",
-              "contoh_penerapan": "Remote work **boosts employee autonomy**, **on the other hand**, it **erodes** spontaneous team collaboration."
+              "judul": "Ambivalent (Mendua & Berimbang)",
+              "teori_singkat": "Menampilkan sisi positif dan negatif dengan bobot seimbang tanpa memihak salah satu kubu.",
+              "contoh": "Remote work **boosts autonomy**, **on the other hand**, it **erodes** spontaneous team collaboration."
             }
           ]
         },
@@ -145,24 +157,29 @@
           "nama_kelompok": "Sikap Komentator Thread Diskusi (Commenter's Attitude)",
           "butir": [
             {
-              "judul_poin": "Supportive (Mendukung & Memperkuat OP)",
-              "penjelasan_singkat": "Menyetujui argumen Original Post lalu menambahkan bukti baru, contoh nyata, atau alasan penguat.",
-              "contoh_penerapan": "**Spot on!** Your point about sleep debt **aligns directly with** our hospital's latest shift data."
+              "judul": "Supportive (Mendukung & Memperkuat OP)",
+              "teori_singkat": "Menyetujui argumen Original Post lalu menambahkan bukti baru, contoh nyata, atau data penguat.",
+              "contoh": "**Spot on!** Your point about sleep debt **aligns directly with** our hospital's shift data."
             },
             {
-              "judul_poin": "Dismissive (Meremehkan & Menolak Mentah-Mentah)",
-              "penjelasan_singkat": "Menolak argumen Original Post secara singkat sebagai hal sepele, usang, atau tidak layak dibahas.",
-              "contoh_penerapan": "That theory was **debunked years ago**; bringing it up now is **a complete waste of time**."
+              "judul": "Dismissive (Meremehkan & Menolak Mentah-Mentah)",
+              "teori_singkat": "Menolak argumen Original Post secara singkat sebagai hal sepele, usang, atau tidak layak dibahas.",
+              "contoh": "That theory was **debunked years ago**; bringing it up now is **a waste of time**."
             },
             {
-              "judul_poin": "Sarcastic (Sarkastis & Menyindir Terbalik)",
-              "penjelasan_singkat": "Memakai pujian berlebihan atau ironi untuk menyindir kelemahan logika pada pernyataan Original Post.",
-              "contoh_penerapan": "Oh **brilliant idea**—let's solve traffic congestion by **building even more highways** through downtown!"
+              "judul": "Sarcastic (Sarkastis & Menyindir Terbalik)",
+              "teori_singkat": "Memakai pujian berlebihan atau ironi terbalik untuk menyindir kelemahan logika pernyataan Original Post.",
+              "contoh": "Oh **brilliant idea**—let's solve traffic congestion by **building even more highways** through downtown!"
             },
             {
-              "judul_poin": "Nuanced (Bernuansa & Memperhalus Konteks)",
-              "penjelasan_singkat": "Setuju sebagian dengan Original Post, tapi memberi catatan syarat, pengecualian, atau sudut pandang lebih luas.",
-              "contoh_penerapan": "**While I agree** carbon taxes help, their impact **depends heavily on** local public transit availability."
+              "judul": "Nuanced (Bernuansa & Memperhalus Konteks)",
+              "teori_singkat": "Setuju sebagian dengan Original Post sambil memberi catatan syarat, pengecualian, atau konteks tambahan.",
+              "contoh": "**While I agree** carbon taxes help, their impact **depends heavily on** public transit availability."
+            },
+            {
+              "judul": "Inquisitive (Bertanya & Menggali Klarifikasi)",
+              "teori_singkat": "Mengajukan pertanyaan kritis untuk meminta bukti tambahan atau memperjelas celah argumen Original Post.",
+              "contoh": "**Interesting claim, but how** does this policy affect low-income rural families?"
             }
           ]
         },
@@ -170,19 +187,19 @@
           "nama_kelompok": "Deteksi Bias Penulis & Perspektif Utama",
           "butir": [
             {
-              "judul_poin": "Loaded Words & Emotive Diction (Bias Diksi)",
-              "penjelasan_singkat": "Pemilihan kata sifat atau kata kerja yang memancing emosi ekstrem untuk menggiring opini pembaca.",
-              "contoh_penerapan": "Critics call the regulation a **draconian** measure that **strangles** small businesses instead of 'strict rule'."
+              "judul": "Loaded Words & Emotive Diction (Bias Diksi)",
+              "teori_singkat": "Pemilihan kata sifat atau kata kerja emosional ekstrem untuk menggiring opini pembaca.",
+              "contoh": "Critics call the rule a **draconian** measure that **strangles** small businesses."
             },
             {
-              "judul_poin": "One-Sided Framing & Sweeping Generalization",
-              "penjelasan_singkat": "Hanya menyajikan bukti yang menguntungkan satu pihak dan memakai kata mutlak tanpa pengecualian.",
-              "contoh_penerapan": "**Every single** traditional retailer **will inevitably collapse** unless they adopt crypto payments immediately."
+              "judul": "One-Sided Framing & Sweeping Generalization",
+              "teori_singkat": "Hanya menyajikan bukti sepihak dan memakai kata mutlak tanpa ruang pengecualian.",
+              "contoh": "**Every single** traditional retailer **will inevitably collapse** unless they adopt crypto payments."
             },
             {
-              "judul_poin": "Author's Perspective (Posisi Inti setelah Kontras)",
-              "penjelasan_singkat": "Pandangan asli penulis yang biasanya muncul tepat setelah mengutip pendapat umum atau kata hubung kontras.",
-              "contoh_penerapan": "Many assume nuclear power is unsafe; **however, modern reactors offer** our most reliable clean baseload."
+              "judul": "Author's Perspective (Posisi Inti setelah Kontras)",
+              "teori_singkat": "Pandangan asli penulis yang muncul tepat setelah mengutip pendapat umum atau konjungsi kontras.",
+              "contoh": "Many assume nuclear is unsafe; **however, modern reactors offer** reliable clean baseload."
             }
           ]
         }
@@ -192,36 +209,40 @@
       "kode_subbab": "lbe-03-03",
       "judul_subbab": "Preceding and Following Paragraph Prediction",
       "klasifikasi_materi": "PENGAYAAN",
-      "konsep_inti_markdown": "Soal prediksi paragraf dan sisip kalimat sebenarnya menguji kejelianmu melacak **benang merah ide** penulis. Kamu cukup mengandalkan dua petunjuk utama: **kata hubung** (*transition signals*) dan **kata tunjuk/ganti** (*pronouns/demonstratives*).\n\n* **Preceding Paragraph (Paragraf Sebelumnya):** Langsung kunci **kalimat pertama paragraf 1**. Cek kata hubung kontras/lanjutan serta kata tunjuk (*this/these*) yang merujuk ke belakang.\n* **Following Paragraph (Paragraf Berikutnya):** Langsung kunci **kalimat terakhir paragraf penutup**. Cari masalah yang belum selesai, batasan, atau ide baru yang baru disinggung sekilas.\n* **Sentence Insertion (Sisip Kalimat):** Pastikan kalimat sisipan nyambung dua arah—**kata gantinya** merujuk ke kalimat sebelum (*backward link*) dan **alurnya** mengantar kalimat sesudah (*forward link*).",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Prediksi paragraf dan sisip kalimat dilacak lewat transisi antargagasan, pronomina rujukan, serta alur umum ke khusus.",
       "kelompok": [
         {
           "nama_kelompok": "Menyisipkan Kalimat ke dalam Paragraf (Sentence Insertion)",
           "butir": [
             {
-              "judul_poin": "Kata Ganti & Kata Tunjuk (Pronouns & Demonstratives)",
-              "penjelasan_singkat": "Kata ganti atau kata tunjuk di kalimat sisipan wajib merujuk pada benda atau konsep yang sudah disebut di kalimat sebelumnya.",
-              "contoh_penerapan": "\"If **this chemical process** fails, cells die.\" Taruh tepat setelah kalimat yang menjelaskan proses kimia spesifik tersebut."
+              "judul": "Kata Ganti & Kata Tunjuk (Pronouns & Demonstratives)",
+              "teori_singkat": "Pronomina atau kata tunjuk di kalimat sisipan wajib merujuk pada objek kalimat sebelumnya.",
+              "contoh": "*\"If **this chemical process** fails, cells die.\"* $\\rightarrow$ Taruh tepat setelah penjelasan proses kimia tersebut."
             },
             {
-              "judul_poin": "Kata Sandang Spesifik (Artikel \"The\")",
-              "penjelasan_singkat": "Frasa *the + kata benda* menandakan objek tersebut sudah diperkenalkan lebih dulu dengan kata *a/an*.",
-              "contoh_penerapan": "\"...discovered a rare species. **The nocturnal creature**...\" Frasa *the creature* wajib ditaruh setelah spesies itu disebut pertama kali."
+              "judul": "Kata Sandang Spesifik (Artikel \"The\")",
+              "teori_singkat": "Frasa *the + nomina* menandakan objek tersebut sudah diperkenalkan sebelumnya memakai artikel *a/an*.",
+              "contoh": "*\"...discovered a rare species. **The nocturnal creature**...\"* $\\rightarrow$ Taruh setelah spesies itu disebut pertama kali."
             },
             {
-              "judul_poin": "Kata Hubung Perlawanan (However, Yet, Nevertheless)",
-              "penjelasan_singkat": "Kalimat sisipan dengan kata hubung perlawanan membalik arah ide kalimat sebelumnya dan jadi pijakan kalimat berikutnya.",
-              "contoh_penerapan": "\"...boosts short-term yield. **However, prolonged use** degrades soil quality.\" Sisipkan di antara dampak positif dan rincian kerusakan tanah."
+              "judul": "Kata Hubung Perlawanan (However, Yet, Nevertheless)",
+              "teori_singkat": "Konjungsi perlawanan membalik arah ide kalimat sebelumnya dan menjadi pijakan kalimat berikutnya.",
+              "contoh": "*\"...boosts yield. **However, prolonged use** degrades soil.\"* $\\rightarrow$ Sisipkan antara dampak positif dan kerusakan tanah."
             },
             {
-              "judul_poin": "Kata Hubung Sebab-Akibat & Tambahan (Consequently, Moreover)",
-              "penjelasan_singkat": "Kata hubung akibat atau tambahan melanjutkan arah argumen kalimat sebelumnya tanpa membelokkan topik.",
-              "contoh_penerapan": "\"...temperatures rose rapidly. **Consequently, glacial melt** accelerated.\" Taruh tepat setelah penyebab langsung dan sebelum dampak lanjutannya."
+              "judul": "Kata Hubung Sebab-Akibat & Tambahan (Consequently, Moreover)",
+              "teori_singkat": "Konjungsi akibat atau tambahan melanjutkan arah argumen kalimat sebelumnya tanpa membelokkan topik.",
+              "contoh": "*\"...temperatures rose. **Consequently, glacial melt** accelerated.\"* $\\rightarrow$ Taruh setelah penyebab langsung dan sebelum dampak lanjutan."
             },
             {
-              "judul_poin": "Pola Umum ke Khusus (General-to-Specific)",
-              "penjelasan_singkat": "Kalimat berisi pernyataan umum selalu hadir lebih dulu sebelum kalimat berisi angka data, studi kasus, atau contoh nyata.",
-              "contoh_penerapan": "\"...urban heat islands harm health. **For example, Tokyo recorded**...\" Sisipkan kalimat klaim umum tepat sebelum contoh spesifiknya."
+              "judul": "Pola Umum ke Khusus (General-to-Specific)",
+              "teori_singkat": "Pernyataan klaim umum selalu mendahului kalimat berisi angka data, studi kasus, atau contoh nyata.",
+              "contoh": "*\"...heat islands harm health. **For example, Tokyo**...\"* $\\rightarrow$ Sisipkan klaim umum tepat sebelum contoh spesifiknya."
             }
           ]
         },
@@ -229,19 +250,24 @@
           "nama_kelompok": "Menebak Paragraf Sebelumnya (Preceding Paragraph)",
           "butir": [
             {
-              "judul_poin": "Pembuka Kontras di Awal Teks (Unlike, Despite)",
-              "penjelasan_singkat": "Kalimat pertama yang dibuka kata kontras menunjukkan paragraf sebelumnya membahas pembanding yang berlawanan.",
-              "contoh_penerapan": "\"**Unlike traditional fossil fuels**, solar energy produces zero emissions.\" Paragraf sebelumnya membahas sifat atau dampak bahan bakar fosil."
+              "judul": "Pembuka Kontras di Awal Teks (Unlike, Despite)",
+              "teori_singkat": "Kalimat pertama berkonjungsi kontras menunjukkan paragraf sebelumnya membahas pembanding yang sifatnya berlawanan.",
+              "contoh": "*\"**Unlike traditional fossil fuels**, solar produces zero emissions.\"* $\\rightarrow$ Paragraf sebelumnya membahas **bahan bakar fosil**."
             },
             {
-              "judul_poin": "Pembuka Tambahan di Awal Teks (Another, Furthermore)",
-              "penjelasan_singkat": "Kata penambah di kalimat perdana menandakan paragraf sebelumnya membahas faktor atau poin pertama yang sejenis.",
-              "contoh_penerapan": "\"**Another major factor** driving deforestation is cattle ranching.\" Paragraf sebelumnya memaparkan faktor utama pertama penyebab deforestasi."
+              "judul": "Pembuka Tambahan di Awal Teks (Another, Furthermore)",
+              "teori_singkat": "Kata penambah di kalimat perdana menandakan paragraf sebelumnya membahas faktor pertama yang sejenis.",
+              "contoh": "*\"**Another major factor** driving deforestation is ranching.\"* $\\rightarrow$ Paragraf sebelumnya membahas **faktor pertama deforestasi**."
             },
             {
-              "judul_poin": "Kata Tunjuk di Awal Paragraf (This, These)",
-              "penjelasan_singkat": "Frasa *this* atau *these + kata benda* di kalimat pertama merangkum fenomena atau temuan yang baru saja dijelaskan sebelumnya.",
-              "contoh_penerapan": "\"**These alarming findings** prompted lawmakers to ban microplastics.\" Paragraf sebelumnya berisi rincian data atau temuan riset yang mengkhawatirkan."
+              "judul": "Kata Tunjuk di Awal Paragraf (This, These)",
+              "teori_singkat": "Frasa *this/these + nomina* di kalimat perdana merangkum temuan atau fenomena paragraf sebelumnya.",
+              "contoh": "*\"**These alarming findings** prompted a ban.\"* $\\rightarrow$ Paragraf sebelumnya berisi **rincian temuan riset** tersebut."
+            },
+            {
+              "judul": "Sinyal Kronologis & Transisi Waktu (*Historically, Following*)",
+              "teori_singkat": "Penanda waktu di awal teks merujuk pada periode atau kejadian tahap sebelumnya.",
+              "contoh": "*\"**Following these early setbacks**, engineers redesigned the hull.\"* $\\rightarrow$ Paragraf sebelumnya membahas **kegagalan awal**."
             }
           ]
         },
@@ -249,19 +275,19 @@
           "nama_kelompok": "Menebak Paragraf Berikutnya (Following Paragraph)",
           "butir": [
             {
-              "judul_poin": "Masalah Terbuka atau Kendala (Limitation, Barrier)",
-              "penjelasan_singkat": "Penutup yang menyoroti hambatan atau kelemahan biasanya memicu paragraf berikutnya membahas solusi atau riset lanjutan.",
-              "contoh_penerapan": "\"...yet **high battery costs remain a major barrier** to adoption.\" Paragraf berikutnya membahas upaya menekan biaya baterai."
+              "judul": "Masalah Terbuka atau Kendala (Limitation, Barrier)",
+              "teori_singkat": "Kalimat penutup yang menyoroti kendala memicu paragraf berikutnya membahas solusi atau riset lanjutan.",
+              "contoh": "*\"...**high battery costs remain a major barrier**.\"* $\\rightarrow$ Paragraf berikutnya membahas **upaya menekan biaya baterai**."
             },
             {
-              "judul_poin": "Istilah atau Solusi Baru di Kalimat Pamungkas",
-              "penjelasan_singkat": "Konsep atau metode baru yang baru disebut sekilas di ujung teks akan dibedah lebih detail di paragraf berikutnya.",
-              "contoh_penerapan": "\"...scientists are now turning to **CRISPR gene editing** for answers.\" Paragraf berikutnya menjelaskan cara kerja atau penerapan CRISPR."
+              "judul": "Istilah atau Solusi Baru di Kalimat Pamungkas",
+              "teori_singkat": "Konsep baru yang disinggung sekilas di akhir teks dibedah detail pada paragraf berikutnya.",
+              "contoh": "*\"...turning to **CRISPR gene editing** for answers.\"* $\\rightarrow$ Paragraf berikutnya menjelaskan **cara kerja CRISPR**."
             },
             {
-              "judul_poin": "Dorongan Kebijakan atau Dampak Masa Depan",
-              "penjelasan_singkat": "Kalimat penutup yang menekankan urgensi tindakan memicu pembahasan langkah penerapan konkret di paragraf selanjutnya.",
-              "contoh_penerapan": "\"...governments must therefore **reform existing zoning laws** immediately.\" Paragraf berikutnya menguraikan detail reformasi hukum zonasi tersebut."
+              "judul": "Dorongan Kebijakan atau Dampak Masa Depan",
+              "teori_singkat": "Penutup yang menekankan urgensi tindakan memicu pembahasan langkah penerapan konkret di paragraf selanjutnya.",
+              "contoh": "*\"...governments must **reform existing zoning laws** immediately.\"* $\\rightarrow$ Paragraf berikutnya menguraikan **detail reformasi zonasi**."
             }
           ]
         }
@@ -271,31 +297,40 @@
       "kode_subbab": "lbe-03-04",
       "judul_subbab": "Comparing Two Related Texts (Paired Passages)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Target Soal:** Menguji kemampuanmu membandingkan dua wacana bertopik sama—mulai dari titik temu, perbedaan sikap, hingga kesimpulan gabungan.\n- **Taktik Baca 30 Detik:**\n  1. Tangkap gagasan utama dan sikap penulis Text 1 (biasanya pro, optimis, atau memaparkan fenomena).\n  2. Langsung baca kalimat pertama dan terakhir Text 2 untuk menangkap kata transisi kunci (*While..., However..., Rather than...*).\n  3. Petakan irisannya: **Sepakat** di bagian mana (masalah/tujuan) vs. **Beda** di bagian mana (solusi/metode/dampak).\n- **Aturan Emas:** Untuk soal kesimpulan gabungan, jawaban benar wajib didukung bukti dari **kedua teks sekaligus**, bukan cuma satu teks.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Soal dua teks memetakan titik temu, konflik argumen, serta simpulan gabungan yang wajib didukung bukti keduanya.",
       "kelompok": [
         {
           "nama_kelompok": "Pola Hubungan Text 1 dan Text 2",
           "butir": [
             {
-              "judul_poin": "Bantahan atau Kontra-Argumen (Refutation)",
-              "penjelasan_singkat": "Text 2 menolak klaim utama Text 1 dengan membawa bukti tandingan atau menunjukkan kelemahan logikanya.",
-              "contoh_penerapan": "Text 1 memuji mobil listrik; Text 2 langsung membantah: **\"However, battery mining severely damages ecosystems.\"**"
+              "judul": "Bantahan atau Kontra-Argumen (Refutation)",
+              "teori_singkat": "Text 2 menolak klaim utama Text 1 dengan membawa bukti tandingan atau kritik logika.",
+              "contoh": "Text 1 puji mobil listrik; Text 2 bantah: *\"**However, battery mining severely damages ecosystems.**\"*"
             },
             {
-              "judul_poin": "Studi Kasus Spesifik (Exemplification)",
-              "penjelasan_singkat": "Text 1 membahas konsep atau teori umum, lalu Text 2 mengujinya lewat contoh nyata di lapangan.",
-              "contoh_penerapan": "Text 1 menjelaskan efek panas perkotaan; Text 2 memaparkan **\"A 2023 study in Tokyo measured...\"**"
+              "judul": "Studi Kasus Spesifik (Exemplification)",
+              "teori_singkat": "Text 1 memaparkan konsep umum, lalu Text 2 mengujinya lewat contoh kasus nyata.",
+              "contoh": "Text 1 bahas efek panas kota; Text 2 paparkan *\"**A 2023 study in Tokyo**...\"*"
             },
             {
-              "judul_poin": "Catatan Tambahan & Batasan (Qualification)",
-              "penjelasan_singkat": "Text 2 setuju pada poin dasar Text 1, tetapi menambahkan syarat, batasan, atau efek samping yang terlewat.",
-              "contoh_penerapan": "Text 1 memuji akurasi AI medis; Text 2 menimpali: **\"While accurate, AI still requires human oversight.\"**"
+              "judul": "Catatan Tambahan & Batasan (Qualification)",
+              "teori_singkat": "Text 2 menyetujui poin dasar Text 1 sambil menambahkan syarat, batasan, atau efek samping.",
+              "contoh": "Text 1 puji akurasi AI; Text 2 timpali: *\"**While accurate, AI requires human oversight.**\"*"
             },
             {
-              "judul_poin": "Masalah dan Solusi (Problem-Solution)",
-              "penjelasan_singkat": "Text 1 memaparkan krisis atau hambatan teknis, sedangkan Text 2 menawarkan cara penyelesaiannya.",
-              "contoh_penerapan": "Text 1 menguraikan krisis sampah plastik laut; Text 2 mengusulkan **\"Enzymatic recycling offers a scalable remedy.\"**"
+              "judul": "Masalah dan Solusi (Problem-Solution)",
+              "teori_singkat": "Text 1 menguraikan krisis atau hambatan teknis, sedangkan Text 2 menawarkan cara penyelesaiannya.",
+              "contoh": "Text 1 bahas krisis plastik; Text 2 usulkan *\"**Enzymatic recycling offers a scalable remedy.**\"*"
+            },
+            {
+              "judul": "Dua Pendekatan Komplementer (Complementary Perspectives)",
+              "teori_singkat": "Kedua teks menyoroti faktor atau solusi berbeda yang saling melengkapi untuk satu topik.",
+              "contoh": "Text 1 bahas **teknologi baterai**; Text 2 bahas **kebijakan jaringan listrik** untuk transisi energi."
             }
           ]
         },
@@ -303,19 +338,19 @@
           "nama_kelompok": "Titik Temu, Kontras, dan Prediksi Respons Penulis",
           "butir": [
             {
-              "judul_poin": "Kesepakatan Masalah Dasar (Shared Ground)",
-              "penjelasan_singkat": "Kedua penulis mengakui fenomena atau urgensi masalah yang sama, meski beda pendapat soal jalan keluarnya.",
-              "contoh_penerapan": "Keduanya sepakat **\"Global temperatures have risen steadily\"** sebelum berdebat soal efektivitas pajak karbon."
+              "judul": "Kesepakatan Masalah Dasar (Shared Ground)",
+              "teori_singkat": "Kedua penulis mengakui fenomena masalah yang sama meski berbeda pendapat soal solusi.",
+              "contoh": "Keduanya sepakat *\"**Global temperatures have risen steadily**\"* sebelum berdebat soal efektivitas pajak karbon."
             },
             {
-              "judul_poin": "Titik Konflik Inti (Point of Disagreement)",
-              "penjelasan_singkat": "Kedua teks bertentangan langsung soal penyebab utama, efektivitas solusi, atau prioritas tindakan.",
-              "contoh_penerapan": "Text 1 menilai subsidi efektif; Text 2 menegaskan **\"Subsidies merely distort market prices without cutting emissions.\"**"
+              "judul": "Titik Konflik Inti (Point of Disagreement)",
+              "teori_singkat": "Kedua teks bertentangan langsung pada penyebab utama, efektivitas solusi, atau prioritas tindakan.",
+              "contoh": "Text 1 nilai subsidi efektif; Text 2 tegaskan *\"**Subsidies merely distort market prices.**\"*"
             },
             {
-              "judul_poin": "Prediksi Respons Penulis Text 2 (Likely Response)",
-              "penjelasan_singkat": "Tebak reaksi Penulis 2 terhadap kutipan spesifik Text 1 berdasarkan prinsip argumen utamanya.",
-              "contoh_penerapan": "Menanggapi klaim efisiensi Text 1, Penulis 2 berargumen **\"Such gains are unsustainable without labor protections.\"**"
+              "judul": "Prediksi Respons Penulis Text 2 (Likely Response)",
+              "teori_singkat": "Memprediksi reaksi Penulis 2 terhadap kutipan Text 1 berdasarkan prinsip argumen utamanya.",
+              "contoh": "Menanggapi klaim efisiensi Text 1, Penulis 2 berargumen *\"**Such gains are unsustainable.**\"*"
             }
           ]
         },
@@ -323,14 +358,14 @@
           "nama_kelompok": "Sinyal Kesimpulan Gabungan Lintas Teks",
           "butir": [
             {
-              "judul_poin": "Kesimpulan Gabungan Lintas Teks (Cross-Text Inference)",
-              "penjelasan_singkat": "Gabungkan fakta spesifik dari Text 1 dengan kondisi umum di Text 2 untuk menemukan kesimpulan baru yang sah.",
-              "contoh_penerapan": "Text 1: **\"Species X nests only in mangroves.\"** Text 2: **\"Mangroves declined 40%.\"** Simpulan: habitat Species X menyusut."
+              "judul": "Kesimpulan Gabungan Lintas Teks (Cross-Text Inference)",
+              "teori_singkat": "Memadukan fakta Text 1 dan kondisi Text 2 menjadi simpulan baru sah.",
+              "contoh": "Text 1: *\"**Species X nests in mangroves.**\"* Text 2: *\"**Mangroves declined 40%.**\"* $\\rightarrow$ Habitat X menyusut."
             },
             {
-              "judul_poin": "Arah Kebijakan yang Sama (Shared Implication)",
-              "penjelasan_singkat": "Walau beda sudut pandang, kedua teks secara tidak langsung mengarah pada rekomendasi tindakan serupa.",
-              "contoh_penerapan": "Text 1 dan Text 2 sama-sama menyiratkan perlunya **\"stricter regulatory frameworks\"** untuk teknologi rekayasa genetika."
+              "judul": "Arah Kebijakan yang Sama (Shared Implication)",
+              "teori_singkat": "Meski berbeda sudut pandang, kedua teks secara tersirat mengarah pada rekomendasi tindakan serupa.",
+              "contoh": "Text 1 dan Text 2 sama-sama menyiratkan perlunya *\"**stricter regulatory frameworks**\"* bagi rekayasa genetika."
             }
           ]
         },
@@ -338,19 +373,19 @@
           "nama_kelompok": "Perbandingan Metode, Nada (Tone), dan Cakupan (Scope)",
           "butir": [
             {
-              "judul_poin": "Beda Cara Pembuktian (Data Lapangan vs. Teori)",
-              "penjelasan_singkat": "Cek apakah teks bertumpu pada angka hasil eksperimen lapangan atau analisis konsep dan sejarah.",
-              "contoh_penerapan": "Text 1 memakai **\"randomized controlled trials (n=500)\"**, sedangkan Text 2 menganalisis **\"philosophical frameworks of ethics.\"**"
+              "judul": "Beda Cara Pembuktian (Data Lapangan vs. Teori)",
+              "teori_singkat": "Membandingkan apakah argumen bertumpu pada data eksperimen lapangan atau analisis konsep teoretis.",
+              "contoh": "Text 1 pakai *\"**randomized controlled trials**\"*, sedangkan Text 2 analisis *\"**philosophical frameworks of ethics**\"*."
             },
             {
-              "judul_poin": "Beda Nada Sikap Penulis (Netral vs. Kritis)",
-              "penjelasan_singkat": "Perhatikan pilihan kata penilaian penulis untuk membedakan laporan netral dengan kritik tajam.",
-              "contoh_penerapan": "Text 1 netral (**\"Data indicate a shift\"**); Text 2 kritis (**\"This reckless policy ignores communities.\"**)."
+              "judul": "Beda Nada Sikap Penulis (Netral vs. Kritis)",
+              "teori_singkat": "Membedakan laporan fakta yang objektif-netral dari kritik tajam lewat pilihan kata penilaian penulis.",
+              "contoh": "Text 1 netral (*\"**Data indicate a shift**\"*); Text 2 kritis (*\"**This reckless policy ignores communities**\"*)."
             },
             {
-              "judul_poin": "Beda Cakupan Bahasan (Makro vs. Mikro)",
-              "penjelasan_singkat": "Identifikasi skala bahasan: tren global jangka panjang versus dampak lokal pada kelompok tertentu.",
-              "contoh_penerapan": "Text 1 memotret **\"worldwide supply chain trends\"**, sementara Text 2 menyoroti **\"smallholder farmers in Java.\"**"
+              "judul": "Beda Cakupan Bahasan (Makro vs. Mikro)",
+              "teori_singkat": "Membedakan skala bahasan antara tren global jangka panjang melawan dampak lokal kelompok tertentu.",
+              "contoh": "Text 1 potret *\"**worldwide supply chain trends**\"*, sementara Text 2 soroti *\"**smallholder farmers in Java**\"*."
             }
           ]
         }
@@ -360,26 +395,30 @@
       "kode_subbab": "lbe-03-05",
       "judul_subbab": "Summary and Conclusion of the Text",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Summary & Conclusion** menguji kejelianmu menangkap inti seluruh bacaan tanpa terkecoh detail kecil.\n- **Conclusion (Kesimpulan):** Benang merah utuh dari awal sampai akhir teks ($\\text{Ide Awal} + \\text{Pergeseran/Kontras} \\rightarrow \\text{Simpulan Utuh}$).\n- **Summary (Ringkasan):** Kalimat payung yang merangkum ide pokok tiap paragraf—buang contoh, angka rinci, dan spekulasi.\n- **Thread Consensus:** Titik temu yang disepakati mayoritas peserta dalam forum diskusi.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Summary dan conclusion merangkum benang merah lintas paragraf atau konsensus forum tanpa detail contoh maupun spekulasi.",
       "kelompok": [
         {
           "nama_kelompok": "Pola Menarik Kesimpulan Utuh (Overall Conclusion)",
           "butir": [
             {
-              "judul_poin": "Pola Balik Arah (Mitos Awal vs Fakta Akhir)",
-              "penjelasan_singkat": "Penulis membuka teks dengan anggapan umum, lalu membaliknya di tengah atau akhir lewat kata pertentangan.",
-              "contoh_penerapan": "\"Initially thought safe, **however**, trials prove microplastics disrupt metabolism.\" $\\rightarrow$ Simpulan wajib memuat bahaya metabolisme."
+              "judul": "Pola Balik Arah (Mitos Awal vs Fakta Akhir)",
+              "teori_singkat": "Teks dibuka anggapan umum lalu dibalik di bagian akhir lewat konjungsi pertentangan.",
+              "contoh": "*\"Thought safe, **however**, microplastics disrupt metabolism.\"* $\\rightarrow$ Simpulan wajib memuat **bahaya metabolisme**."
             },
             {
-              "judul_poin": "Sinyal Penutup di Paragraf Terakhir",
-              "penjelasan_singkat": "Frasa penegas di akhir bacaan merangkum dampak utama dari seluruh bukti yang sudah dibahas sebelumnya.",
-              "contoh_penerapan": "\"**Ultimately**, **these findings underscore that** urban parks are vital for mental resilience, not mere aesthetics.\""
+              "judul": "Sinyal Penutup di Paragraf Terakhir",
+              "teori_singkat": "Frasa penegas di akhir teks merangkum dampak utama dari seluruh bukti sebelumnya.",
+              "contoh": "*\"**Ultimately, these findings underscore that** urban parks are vital for mental resilience.\"*"
             },
             {
-              "judul_poin": "Alur Masalah ke Solusi Lintas Paragraf",
-              "penjelasan_singkat": "Kesimpulan utuh menggabungkan akar masalah di bagian awal dengan hasil solusi atau dampaknya di bagian akhir.",
-              "contoh_penerapan": "Paragraf 1 bahas krisis air; Paragraf 2 uji desalinasi $\\rightarrow$ Simpulan: **Desalinasi surya efektif mengatasi krisis air**."
+              "judul": "Alur Masalah ke Solusi Lintas Paragraf",
+              "teori_singkat": "Kesimpulan utuh menggabungkan akar masalah bagian awal dengan hasil solusi di bagian akhir.",
+              "contoh": "P1 bahas krisis air; P2 uji desalinasi $\\rightarrow$ Simpulan: **Desalinasi surya efektif atasi krisis air**."
             }
           ]
         },
@@ -387,19 +426,24 @@
           "nama_kelompok": "Filter Ringkasan Padat & Anti-Jebakan (Summary)",
           "butir": [
             {
-              "judul_poin": "Buang Contoh Konkret dan Angka Rinci",
-              "penjelasan_singkat": "Ringkasan yang benar mengangkat gambaran besarnya tanpa menyebut nama kota tunggal, sampel, atau angka persentase.",
-              "contoh_penerapan": "Teks menyebut \"42% penurunan di Kyoto\" $\\rightarrow$ Ringkasan tepat: \"**The policy significantly reduced urban emissions.**\""
+              "judul": "Buang Contoh Konkret dan Angka Rinci",
+              "teori_singkat": "Ringkasan mengangkat gambaran besar teks tanpa menyebut nama kota tunggal, sampel, atau persentase.",
+              "contoh": "Teks sebut *\"42% turun di Kyoto\"* $\\rightarrow$ Ringkasan: *\"**The policy significantly reduced urban emissions.**\"*"
             },
             {
-              "judul_poin": "Jaga Tingkat Kepastian Penulis (Anti-Spekulasi)",
-              "penjelasan_singkat": "Ringkasan tidak boleh mengubah pernyataan yang masih berupa kemungkinan menjadi kepastian mutlak atau ramalan baru.",
-              "contoh_penerapan": "Teks: \"Automation **may** reshape jobs.\" $\\rightarrow$ Salah jika diringkas menjadi \"**Automation will completely eliminate human labor.**\""
+              "judul": "Jaga Tingkat Kepastian Penulis (Anti-Spekulasi)",
+              "teori_singkat": "Ringkasan dilarang mengubah pernyataan kemungkinan menjadi kepastian mutlak atau ramalan baru.",
+              "contoh": "Teks: *\"Automation **may** reshape jobs.\"* $\\rightarrow$ **✕** Opsi salah: *\"Automation **will completely eliminate** human labor.\"*"
             },
             {
-              "judul_poin": "Gabungkan Ide Pokok Tiap Paragraf (Kalimat Payung)",
-              "penjelasan_singkat": "Ringkasan ideal menyatukan gagasan utama semua paragraf ke dalam satu kalimat umum memakai kata bersinonim.",
-              "contoh_penerapan": "P1: Penyebab erosi + P2: Dampak panen $\\rightarrow$ \"**Soil degradation stems from deforestation and threatens agricultural yields.**\""
+              "judul": "Gabungkan Ide Pokok Tiap Paragraf (Kalimat Payung)",
+              "teori_singkat": "Ringkasan ideal menyatukan gagasan utama seluruh paragraf ke satu kalimat umum bersinonim.",
+              "contoh": "P1: Penyebab erosi + P2: Dampak panen $\\rightarrow$ *\"**Soil degradation stems from deforestation and threatens yields.**\"*"
+            },
+            {
+              "judul": "Tolak Distorsi Hubungan & Setengah Benar (Half-Truth)",
+              "teori_singkat": "Eliminasi opsi payung yang membalik hubungan sebab-akibat atau mencampur fakta benar dan salah.",
+              "contoh": "Teks: *\"Stress triggers insomnia.\"* $\\rightarrow$ **✕** Opsi salah: *\"Insomnia is the primary cause of stress.\"*"
             }
           ]
         },
@@ -407,19 +451,19 @@
           "nama_kelompok": "Menemukan Titik Temu Forum Diskusi (Thread Consensus)",
           "butir": [
             {
-              "judul_poin": "Lacak Kata Persetujuan Antar-Peserta",
-              "penjelasan_singkat": "Konsensus terlihat jelas saat beberapa peserta memakai frasa setuju untuk menguatkan satu ide inti yang sama.",
-              "contoh_penerapan": "User B: \"**I second this**; remote work boosts focus.\" User D: \"**Spot on**, flexibility matters most.\""
+              "judul": "Lacak Kata Persetujuan Antar-Peserta",
+              "teori_singkat": "Konsensus terlihat saat beberapa peserta memakai frasa setuju untuk menguatkan satu ide sama.",
+              "contoh": "User B: *\"**I second this**; remote work boosts focus.\"* User D: *\"**Spot on**, flexibility matters.\"*"
             },
             {
-              "judul_poin": "Cari Jalan Tengah di Diskusi Pro-Kontra",
-              "penjelasan_singkat": "Saat peserta berdebat soal teknis, konsensus biasanya ada pada syarat atau prinsip dasar yang diakui semua pihak.",
-              "contoh_penerapan": "Debat soal AI di kelas $\\rightarrow$ Titik temu: \"**AI is beneficial provided teachers set clear ethical boundaries.**\""
+              "judul": "Cari Jalan Tengah di Diskusi Pro-Kontra",
+              "teori_singkat": "Saat peserta berdebat teknis, konsensus terletak pada syarat dasar yang diakui semua pihak.",
+              "contoh": "Debat AI di kelas $\\rightarrow$ Titik temu: *\"**AI is beneficial provided teachers set ethical boundaries.**\"*"
             },
             {
-              "judul_poin": "Saring Curhatan Pribadi dan Komentar Melenceng",
-              "penjelasan_singkat": "Simpulan forum membuang pengalaman personal satu user atau komentar keluar topik yang tidak ditanggapi peserta lain.",
-              "contoh_penerapan": "Empat user bahas biaya kuliah; satu mengeluh soal parkir $\\rightarrow$ **Keluhan parkir wajib diabaikan** dari simpulan."
+              "judul": "Saring Curhatan Pribadi dan Komentar Melenceng",
+              "teori_singkat": "Simpulan forum membuang pengalaman personal satu pengguna atau komentar keluar topik diskusi.",
+              "contoh": "Empat user bahas biaya kuliah; satu keluhkan parkir $\\rightarrow$ **Keluhan parkir wajib diabaikan**."
             }
           ]
         }

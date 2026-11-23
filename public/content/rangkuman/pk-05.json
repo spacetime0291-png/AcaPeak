@@ -2,33 +2,36 @@
   "kode_bab": "pk-05",
   "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
   "bab": "Bab 5: Geometri dan Pengukuran",
-  "batch_model": "neon",
-  "jumlah_subbab": 4,
+  "estimasi_menit_review": 4,
   "daftar_subbab": [
     {
       "kode_subbab": "pk-05-01",
       "judul_subbab": "Sudut dan Garis Sejajar",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Garis Sejajar & Transversal**: Sudut sehadap, dalam berseberangan, dan luar berseberangan itu **sama besar**. Sementara itu, sudut dalam sepihak berjumlah $180^\\circ$.\\n- **Aturan Zig-Zag**: $\\sum \\text{Sudut Kiri} = \\sum \\text{Sudut Kanan}$.\\n- **Segitiga & Poligon**: Total sudut segitiga adalah $180^\\circ$. Sudut luar segitiga sama dengan jumlah dua sudut dalam yang berjauhan. Untuk segi-$n$ beraturan, satu sudut dalamnya $\\frac{(n-2)\\times 180^\\circ}{n}$.\\n- **Lingkaran**: Sudut pusat $= 2 \\times$ sudut keliling yang menghadap busur sama.\\n- **Relasi Dasar**: Berpenyiku ($90^\\circ$), berpelurus ($180^\\circ$), dan bertolak belakang (sama besar).",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Kuasai relasi sudut sejajar, zig-zag, segitiga ($180^\\circ$), poligon segi-$n$, dan sudut pusat-keliling lingkaran untuk hitung cepat.",
       "kelompok": [
         {
           "nama_kelompok": "Garis Sejajar, Transversal & Pola Zig-Zag",
           "butir": [
             {
-              "judul_poin": "Sudut Sehadap, Dalam Berseberangan, dan Luar Berseberangan",
-              "penjelasan_singkat": "Saat dua garis sejajar ($g \\parallel h$) dipotong satu garis, pasangan sudut sehadap, dalam berseberangan, dan luar berseberangan selalu sama besar.",
-              "contoh_penerapan": "Diketahui $g \\parallel h$. Jika sudut dalam berseberangannya $(3x - 10)^\\circ$ dan $80^\\circ$, maka **$3x - 10 = 80 \\rightarrow x = 30$**."
+              "judul": "Sudut Sehadap & Berseberangan",
+              "teori_singkat": "Pada $g \\parallel h$, pasangan sudut sehadap, dalam berseberangan, dan luar berseberangan sama besar.",
+              "contoh": "Dalam berseberangan $(3x - 10)^\\circ$ dan $80^\\circ$ $\\rightarrow$ **$3x - 10 = 80 \\rightarrow x = 30$**."
             },
             {
-              "judul_poin": "Sudut Dalam Sepihak dan Luar Sepihak",
-              "penjelasan_singkat": "Pada dua garis sejajar ($g \\parallel h$), pasangan sudut dalam sepihak atau luar sepihak jika dijumlahkan selalu tepat $180^\\circ$.",
-              "contoh_penerapan": "Sudut dalam sepihak bernilai $2a$ dan $3a + 30^\\circ$. Maka **$2a + (3a + 30^\\circ) = 180^\\circ \\rightarrow a = 30^\\circ$**."
+              "judul": "Sudut Dalam & Luar Sepihak",
+              "teori_singkat": "Pada $g \\parallel h$, jumlah pasangan sudut dalam sepihak atau luar sepihak tepat $180^\\circ$.",
+              "contoh": "Dalam sepihak $2a$ dan $3a + 30^\\circ$ $\\rightarrow$ **$5a + 30^\\circ = 180^\\circ \\rightarrow a = 30^\\circ$**."
             },
             {
-              "judul_poin": "Aturan Garis Bantu Patah (Pola Zig-Zag)",
-              "penjelasan_singkat": "Jika ada jalur zig-zag di antara dua garis sejajar, jumlah sudut yang menghadap kiri sama dengan jumlah sudut yang menghadap kanan.",
-              "contoh_penerapan": "Sudut kiri $40^\\circ$ dan $35^\\circ$, sedangkan sudut kanan hanya $x$. Langsung dapat **$x = 40^\\circ + 35^\\circ = 75^\\circ$**."
+              "judul": "Aturan Garis Bantu (Pola Zig-Zag)",
+              "teori_singkat": "Pada jalur zig-zag antara garis sejajar, $\\sum \\text{Sudut Kiri} = \\sum \\text{Sudut Kanan}$.",
+              "contoh": "Sudut kiri $40^\\circ$ dan $35^\\circ$, sudut kanan $x$ $\\rightarrow$ **$x = 40^\\circ + 35^\\circ = 75^\\circ$**."
             }
           ]
         },
@@ -36,14 +39,14 @@
           "nama_kelompok": "Relasi Dasar Sudut & Persamaan Aljabar",
           "butir": [
             {
-              "judul_poin": "Sudut Berpenyiku (Komplemen) dan Berpelurus (Suplemen)",
-              "penjelasan_singkat": "Sudut berpenyiku membentuk sudut siku-siku ($\\alpha + \\beta = 90^\\circ$). Sudut berpelurus membentuk garis lurus ($\\alpha + \\beta = 180^\\circ$).",
-              "contoh_penerapan": "Suatu sudut besarnya $4$ kali penyikunya. Buat persamaan $x = 4(90^\\circ - x) \\rightarrow 5x = 360^\\circ$, jadi **$x = 72^\\circ$**."
+              "judul": "Berpenyiku (Komplemen) & Berpelurus (Suplemen)",
+              "teori_singkat": "Sudut berpenyiku berjumlah $90^\\circ$ ($\\alpha + \\beta = 90^\\circ$); berpelurus berjumlah $180^\\circ$ ($\\alpha + \\beta = 180^\\circ$).",
+              "contoh": "Sudut $4\\times$ penyikunya $\\rightarrow$ $x = 4(90^\\circ - x) \\rightarrow 5x = 360^\\circ \\rightarrow$ **$x = 72^\\circ$**."
             },
             {
-              "judul_poin": "Sudut Bertolak Belakang dan Sudut Satu Putaran",
-              "penjelasan_singkat": "Dua garis lurus yang berpotongan membentuk sudut bertolak belakang yang sama besar. Total sudut satu putaran penuh adalah $360^\\circ$.",
-              "contoh_penerapan": "Sudut bertolak belakang bernilai $(5x - 15)^\\circ$ dan $(3x + 25)^\\circ$. Samakan saja: **$5x - 15 = 3x + 25 \\rightarrow x = 20$**."
+              "judul": "Bertolak Belakang & Satu Putaran",
+              "teori_singkat": "Dua garis berpotongan membentuk sudut bertolak belakang sama besar; total satu putaran $360^\\circ$.",
+              "contoh": "Bertolak belakang $(5x - 15)^\\circ$ dan $(3x + 25)^\\circ$ $\\rightarrow$ **$5x - 15 = 3x + 25 \\rightarrow x = 20$**."
             }
           ]
         },
@@ -51,14 +54,14 @@
           "nama_kelompok": "Sifat Sudut pada Segitiga",
           "butir": [
             {
-              "judul_poin": "Jumlah Sudut Dalam dan Segitiga Sama Kaki",
-              "penjelasan_singkat": "Total tiga sudut dalam segitiga selalu $180^\\circ$. Pada segitiga sama kaki, dua sudut di hadapan sisi yang sama panjang pasti sama besar.",
-              "contoh_penerapan": "Segitiga sama kaki punya sudut puncak $50^\\circ$. Masing-masing sudut kakinya adalah **$\\frac{180^\\circ - 50^\\circ}{2} = 65^\\circ$**."
+              "judul": "Jumlah Sudut Dalam & Sama Kaki",
+              "teori_singkat": "Total sudut segitiga $180^\\circ$; pada segitiga sama kaki, dua sudut kaki sama besar.",
+              "contoh": "Sama kaki bersudut puncak $50^\\circ$ $\\rightarrow$ sudut kaki **$\\frac{180^\\circ - 50^\\circ}{2} = 65^\\circ$**."
             },
             {
-              "judul_poin": "Teorema Sudut Luar Segitiga",
-              "penjelasan_singkat": "Besar satu sudut luar segitiga sama dengan jumlah dua sudut dalam yang letaknya berjauhan ($\\theta_{\\text{luar}} = \\alpha + \\beta$).",
-              "contoh_penerapan": "Dua sudut dalam bernilai $45^\\circ$ dan $(2x + 10)^\\circ$, sedangkan sudut luar di sisi ketiganya $115^\\circ$. Maka **$45 + 2x + 10 = 115 \\rightarrow x = 30$**."
+              "judul": "Teorema Sudut Luar Segitiga",
+              "teori_singkat": "Satu sudut luar segitiga sama dengan jumlah dua sudut dalam berjauhan ($\\theta_{\\text{luar}} = \\alpha + \\beta$).",
+              "contoh": "Sudut dalam $45^\\circ, (2x+10)^\\circ$ dan sudut luar $115^\\circ$ $\\rightarrow$ **$45 + 2x + 10 = 115 \\rightarrow x = 30$**."
             }
           ]
         },
@@ -66,19 +69,24 @@
           "nama_kelompok": "Sudut Poligon Beraturan & Lingkaran",
           "butir": [
             {
-              "judul_poin": "Sudut Dalam dan Luar Poligon Segi-n Beraturan",
-              "penjelasan_singkat": "Pada segi-$n$ beraturan ($n \\ge 3$), setiap sudut dalamnya bernilai $\\frac{(n-2) \\times 180^\\circ}{n}$ dan setiap sudut luarnya bernilai $\\frac{360^\\circ}{n}$.",
-              "contoh_penerapan": "Pada segi-$8$ beraturan (oktagon), besar satu sudut dalamnya adalah **$\\frac{(8-2) \\times 180^\\circ}{8} = 135^\\circ$**."
+              "judul": "Sudut Poligon Segi-n Beraturan",
+              "teori_singkat": "Segi-$n$ beraturan ($n \\ge 3$): sudut dalam $\\frac{(n-2)\\times 180^\\circ}{n}$, sudut luar $\\frac{360^\\circ}{n}$.",
+              "contoh": "Oktagon ($n=8$) beraturan $\\rightarrow$ sudut dalam **$\\frac{(8-2)\\times 180^\\circ}{8} = 135^\\circ$**, sudut luar **$45^\\circ$**."
             },
             {
-              "judul_poin": "Sudut Pusat dan Sudut Keliling Lingkaran",
-              "penjelasan_singkat": "Asal menghadap busur yang sama, sudut pusat selalu dua kali sudut keliling ($\\angle \\text{Pusat} = 2 \\times \\angle \\text{Keliling}$).",
-              "contoh_penerapan": "Sudut pusat $\\angle AOB = 110^\\circ$ menghadap busur $AB$. Maka sudut keliling $\\angle ACB$ pada busur yang sama adalah **$\\frac{1}{2} \\times 110^\\circ = 55^\\circ$**."
+              "judul": "Sudut Pusat & Sudut Keliling",
+              "teori_singkat": "Menghadap busur sama: $\\angle \\text{Pusat} = 2 \\times \\angle \\text{Keliling}$.",
+              "contoh": "Sudut pusat $\\angle AOB = 110^\\circ$ $\\rightarrow$ sudut keliling $\\angle ACB =$ **$\\frac{1}{2} \\times 110^\\circ = 55^\\circ$**."
             },
             {
-              "judul_poin": "Sudut Menghadap Diameter dan Segi Empat Tali Busur",
-              "penjelasan_singkat": "Sudut keliling yang menghadap diameter pasti $90^\\circ$. Pada segi empat tali busur, dua sudut yang berhadapan berjumlah $180^\\circ$.",
-              "contoh_penerapan": "Pada segi empat tali busur $ABCD$, jika $\\angle A = 82^\\circ$, maka sudut di hadapannya adalah **$\\angle C = 180^\\circ - 82^\\circ = 98^\\circ$**."
+              "judul": "Sudut Menghadap Diameter & Segi Empat Tali Busur",
+              "teori_singkat": "Sudut keliling menghadap diameter $= 90^\\circ$; sudut berhadapan segi empat tali busur berjumlah $180^\\circ$.",
+              "contoh": "Segi empat tali busur $ABCD$ dengan $\\angle A = 82^\\circ$ $\\rightarrow$ **$\\angle C = 180^\\circ - 82^\\circ = 98^\\circ$**."
+            },
+            {
+              "judul": "Sudut Dua Tali Busur Berpotongan",
+              "teori_singkat": "Perpotongan di dalam lingkaran $= \\frac{1}{2}(\\alpha + \\beta)$; di luar lingkaran $= \\frac{1}{2}|\\alpha - \\beta|$.",
+              "contoh": "Tali busur berpotongan di dalam menghadap busur $80^\\circ$ dan $40^\\circ$ $\\rightarrow$ **$\\frac{1}{2}(80^\\circ + 40^\\circ) = 60^\\circ$**."
             }
           ]
         }
@@ -88,31 +96,35 @@
       "kode_subbab": "pk-05-02",
       "judul_subbab": "Bangun Datar (Luas, Keliling, Kesebangunan)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Geometri bangun datar di PK UTBK** tidak menguji hafalan rumus panjang, melainkan kejelian melihat rasio, simetri, dan cara memecah bentuk.\n\n* **Arsiran & Simetri:** Gunakan pola $L_{\\text{arsir}} = L_{\\text{total}} - L_{\\text{kosong}}$, atau geser bagian simetris agar membentuk bangun sederhana.\n* **Segitiga Tinggi Sama:** Jika puncaknya sama dan alasnya segaris, rasio luas sama persis dengan rasio alas ($\\frac{L_1}{L_2} = \\frac{a_1}{a_2}$).\n* **Kesebangunan & Skala:** Jika panjang sisi berubah $k$ kali, maka keliling berubah $k$ kali dan luas berubah $k^2$ kali.\n* **Pythagoras Wajib Hafal:** Kuasai tripel dasar $(3,4,5)$, $(5,12,13)$, $(7,24,25)$, dan $(8,15,17)$ beserta kelipatannya.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Pecahkan bangun datar dengan rasio kesebangunan, tripel Pythagoras, skala dimensi ($k, k^2$), dan trik potong-tempel simetri.",
       "kelompok": [
         {
           "nama_kelompok": "Kesebangunan, Rasio Luas, dan Skala Dimensi",
           "butir": [
             {
-              "judul_poin": "Perbandingan Luas Segitiga Bertinggi Sama",
-              "penjelasan_singkat": "Dua segitiga yang berbagi titik puncak dan alasnya segaris pasti bertinggi sama. Jadi, rasio luasnya ikut rasio alas: $\\frac{L_1}{L_2} = \\frac{a_1}{a_2}$.",
-              "contoh_penerapan": "Titik $D$ membagi alas $BC$ dengan $BD:DC = 2:3$. Jika $L_{\\triangle ABC} = 50$, maka **$L_{\\triangle ABD} = \\frac{2}{5} \\times 50 = 20$**."
+              "judul": "Luas Segitiga Bertinggi Sama",
+              "teori_singkat": "Puncak sama dan alas segaris membuat rasio luas sama dengan rasio alas ($\\frac{L_1}{L_2} = \\frac{a_1}{a_2}$).",
+              "contoh": "$BD:DC = 2:3$ dan $L_{\\triangle ABC} = 50$ $\\rightarrow$ **$L_{\\triangle ABD} = \\frac{2}{5} \\times 50 = 20$**."
             },
             {
-              "judul_poin": "Kesebangunan Segitiga dengan Garis Sejajar",
-              "penjelasan_singkat": "Garis $DE \\parallel BC$ di dalam $\\triangle ABC$ membuat $\\triangle ADE \\sim \\triangle ABC$. Rasionya: $\\frac{AD}{AB} = \\frac{AE}{AC} = \\frac{DE}{BC}$.",
-              "contoh_penerapan": "Jika $AD = 4$, $DB = 2$, dan $BC = 9$, gunakan sisi utuh $AB = 6$. Dari $\\frac{4}{6} = \\frac{DE}{9}$, didapat **$DE = 6$**."
+              "judul": "Kesebangunan Segitiga Garis Sejajar",
+              "teori_singkat": "Jika $DE \\parallel BC$ dalam $\\triangle ABC$, maka $\\frac{AD}{AB} = \\frac{AE}{AC} = \\frac{DE}{BC}$.",
+              "contoh": "$AD = 4, DB = 2, BC = 9$ $\\rightarrow$ $AB = 6$, $\\frac{4}{6} = \\frac{DE}{9} \\rightarrow$ **$DE = 6$**."
             },
             {
-              "judul_poin": "Kesebangunan Segitiga Siku-Siku (Dalil Pancuran)",
-              "penjelasan_singkat": "Pada $\\triangle ABC$ siku-siku di $A$ dengan garis tinggi $AD \\perp BC$, berlaku $AB^2 = BD \\cdot BC$ dan $AD^2 = BD \\cdot DC$.",
-              "contoh_penerapan": "Sisi miring terbagi menjadi $BD = 4$ dan $DC = 9$. Tinggi $AD = \\sqrt{4 \\times 9} = \\mathbf{6}$."
+              "judul": "Kesebangunan Segitiga Siku-Siku (Dalil Pancuran)",
+              "teori_singkat": "Siku-siku di $A$ dengan $AD \\perp BC$: $AB^2 = BD \\cdot BC$ dan $AD^2 = BD \\cdot DC$.",
+              "contoh": "$BD = 4$ dan $DC = 9$ $\\rightarrow$ tinggi **$AD = \\sqrt{4 \\times 9} = 6$**."
             },
             {
-              "judul_poin": "Efek Skala Dimensi terhadap Keliling dan Luas",
-              "penjelasan_singkat": "Saat semua sisi bangun datar diubah sebesar faktor $k$, keliling berubah $k$ kali sedangkan luas berubah $k^2$ kali.",
-              "contoh_penerapan": "Panjang dan lebar persegi panjang naik $20\\%$ ($k = 1,2$). Luas barunya menjadi $(1,2)^2 = \\mathbf{1,44}$ kali semula (naik **$44\\%$**)."
+              "judul": "Efek Skala Dimensi ($k$)",
+              "teori_singkat": "Jika semua sisi berubah $k$ kali, keliling berubah $k$ kali dan luas $k^2$ kali.",
+              "contoh": "Panjang dan lebar naik $20\\%$ ($k = 1,2$) $\\rightarrow$ luas $(1,2)^2 =$ **$1,44\\times$** (naik **$44\\%$**)."
             }
           ]
         },
@@ -120,24 +132,34 @@
           "nama_kelompok": "Dalil Pythagoras, Sudut Istimewa, dan Garis Segitiga",
           "butir": [
             {
-              "judul_poin": "Tripel Pythagoras dan Kelipatannya",
-              "penjelasan_singkat": "Pada segitiga siku-siku berlaku $a^2 + b^2 = c^2$. Setiap kelipatan dari tripel dasar otomatis juga membentuk segitiga siku-siku.",
-              "contoh_penerapan": "Sisi tegak $15$ dan $36$ adalah $3 \\times (5, 12)$. Tanpa hitung kuadrat, sisi miringnya pasti **$3 \\times 13 = 39$**."
+              "judul": "Tripel Pythagoras & Kelipatannya",
+              "teori_singkat": "Berlaku $a^2 + b^2 = c^2$; hafal tripel $(3,4,5), (5,12,13), (7,24,25), (8,15,17)$ beserta kelipatannya.",
+              "contoh": "Sisi tegak $15$ dan $36 = 3 \\times (5,12)$ $\\rightarrow$ miring **$3 \\times 13 = 39$**."
             },
             {
-              "judul_poin": "Rasio Sisi Segitiga Siku-Siku Sudut Istimewa",
-              "penjelasan_singkat": "Rasio sisi segitiga $30^\\circ$-$60^\\circ$-$90^\\circ$ adalah $1 : \\sqrt{3} : 2$, sedangkan $45^\\circ$-$45^\\circ$-$90^\\circ$ adalah $1 : 1 : \\sqrt{2}$.",
-              "contoh_penerapan": "Diagonal persegi adalah $10\\text{ cm}$. Karena rasio sisi dan diagonal $1 : \\sqrt{2}$, panjang sisinya **$\\frac{10}{\\sqrt{2}} = 5\\sqrt{2}\\text{ cm}$**."
+              "judul": "Segitiga Siku-Siku Sudut Istimewa",
+              "teori_singkat": "Rasio sisi $30^\\circ$-$60^\\circ$-$90^\\circ$ adalah $1 : \\sqrt{3} : 2$; sudut $45^\\circ$-$45^\\circ$-$90^\\circ$ adalah $1 : 1 : \\sqrt{2}$.",
+              "contoh": "Diagonal persegi $10\\text{ cm}$ (rasio $1:\\sqrt{2}$) $\\rightarrow$ sisi **$\\frac{10}{\\sqrt{2}} = 5\\sqrt{2}\\text{ cm}$**."
             },
             {
-              "judul_poin": "Garis Tinggi dan Luas Segitiga Sama Sisi",
-              "penjelasan_singkat": "Segitiga sama sisi bersisi $s$ punya rumus cepat: tinggi $t = \\frac{1}{2}s\\sqrt{3}$ dan luas $L = \\frac{1}{4}s^2\\sqrt{3}$.",
-              "contoh_penerapan": "Segitiga sama sisi bersisi $8\\text{ cm}$ memiliki luas **$L = \\frac{1}{4}(8)^2\\sqrt{3} = 16\\sqrt{3}\\text{ cm}^2$**."
+              "judul": "Tinggi & Luas Segitiga Sama Sisi",
+              "teori_singkat": "Segitiga sama sisi bersisi $s$: tinggi $t = \\frac{1}{2}s\\sqrt{3}$ dan luas $L = \\frac{1}{4}s^2\\sqrt{3}$.",
+              "contoh": "Segitiga sama sisi $s = 8\\text{ cm}$ $\\rightarrow$ **$L = \\frac{1}{4}(8)^2\\sqrt{3} = 16\\sqrt{3}\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Sifat Garis Berat dan Titik Berat Segitiga",
-              "penjelasan_singkat": "Garis berat membagi sisi depan dan luas segitiga menjadi dua sama besar. Ketiga garis berat berpotongan dengan rasio $2 : 1$.",
-              "contoh_penerapan": "Garis berat $AD = 12\\text{ cm}$ berpotongan di titik berat $G$. Jarak puncak ke titik berat adalah **$AG = \\frac{2}{3} \\times 12 = 8\\text{ cm}$**."
+              "judul": "Garis Berat & Titik Berat",
+              "teori_singkat": "Garis berat membelah sisi dan luas sama besar; titik berat membagi garis rasio $2:1$.",
+              "contoh": "Garis berat $AD = 12\\text{ cm}$ berpotongan di $G$ $\\rightarrow$ **$AG = \\frac{2}{3} \\times 12 = 8\\text{ cm}$**."
+            },
+            {
+              "judul": "Ketaksamaan Segitiga",
+              "teori_singkat": "Tiga sisi $a, b, c$ membentuk segitiga jika $|a - b| < c < a + b$.",
+              "contoh": "Sisi $5$ dan $9$ $\\rightarrow$ sisi ketiga $x$ memenuhi $|9-5| < x < 9+5 \\rightarrow$ **$4 < x < 14$**."
+            },
+            {
+              "judul": "Luas Segitiga Sembarang (Trigonometri & Heron)",
+              "teori_singkat": "Gunakan $L = \\frac{1}{2}ab\\sin C$ atau $L = \\sqrt{s(s-a)(s-b)(s-c)}$ dengan $s = \\frac{a+b+c}{2}$.",
+              "contoh": "Sisi $6$ dan $8$ mengapit sudut $30^\\circ$ $\\rightarrow$ **$L = \\frac{1}{2}(6)(8)\\sin 30^\\circ = 12$**."
             }
           ]
         },
@@ -145,19 +167,19 @@
           "nama_kelompok": "Sifat Segi Empat dan Garis Singgung Lingkaran",
           "butir": [
             {
-              "judul_poin": "Luas Segi Empat dengan Diagonal Tegak Lurus",
-              "penjelasan_singkat": "Persegi, belah ketupat, dan layang-layang punya diagonal yang saling tegak lurus, sehingga luasnya $L = \\frac{1}{2} \\times d_1 \\times d_2$.",
-              "contoh_penerapan": "Belah ketupat bersisi $10\\text{ cm}$ dengan $d_1 = 12\\text{ cm}$ punya $\\frac{1}{2}d_2 = 8\\text{ cm}$ (tripel $6,8,10$), sehingga **$L = \\frac{1}{2}(12)(16) = 96\\text{ cm}^2$**."
+              "judul": "Segi Empat Diagonal Tegak Lurus",
+              "teori_singkat": "Persegi, belah ketupat, dan layang-layang berdiagonal tegak lurus memakai $L = \\frac{1}{2} \\times d_1 \\times d_2$.",
+              "contoh": "Belah ketupat $s=10, d_1=12 \\rightarrow \\frac{1}{2}d_2=8$ $\\rightarrow$ **$L = \\frac{1}{2}(12)(16) = 96\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Sifat Sudut dan Luas Jajar Genjang serta Trapesium",
-              "penjelasan_singkat": "Sudut dalam sepihak pada jajar genjang dan trapesium berjumlah $180^\\circ$. Luas trapesium: $L = \\frac{a+b}{2} \\times t$ dengan $a \\parallel b$.",
-              "contoh_penerapan": "Trapesium siku-siku bersisi sejajar $10\\text{ cm}$ dan $16\\text{ cm}$ serta sisi miring $10\\text{ cm}$ punya $t = 8\\text{ cm}$, sehingga **$L = 104\\text{ cm}^2$**."
+              "judul": "Jajar Genjang & Trapesium",
+              "teori_singkat": "Sudut dalam sepihak berjumlah $180^\\circ$; luas trapesium $L = \\frac{a+b}{2} \\times t$ ($a \\parallel b$).",
+              "contoh": "Trapesium siku-siku $a=10, b=16$, miring $10 \\rightarrow t=8$ $\\rightarrow$ **$L = \\frac{10+16}{2}\\times 8 = 104\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Garis Singgung Persekutuan Dua Lingkaran",
-              "penjelasan_singkat": "Dengan jarak pusat $p$ dan jari-jari $R, r$: garis singgung luar $l = \\sqrt{p^2 - (R-r)^2}$ dan dalam $d = \\sqrt{p^2 - (R+r)^2}$.",
-              "contoh_penerapan": "Dua lingkaran ($R = 7, r = 2$) berjarak pusat $13\\text{ cm}$ punya garis singgung luar **$l = \\sqrt{13^2 - (7-2)^2} = 12\\text{ cm}$**."
+              "judul": "Garis Singgung Persekutuan Dua Lingkaran",
+              "teori_singkat": "Jarak pusat $p$: singgung luar $l = \\sqrt{p^2 - (R-r)^2}$, singgung dalam $d = \\sqrt{p^2 - (R+r)^2}$.",
+              "contoh": "$R=7, r=2, p=13\\text{ cm}$ $\\rightarrow$ singgung luar **$l = \\sqrt{13^2 - (7-2)^2} = 12\\text{ cm}$**."
             }
           ]
         },
@@ -165,14 +187,14 @@
           "nama_kelompok": "Arsiran Gabungan, Juring, dan Tembereng Lingkaran",
           "butir": [
             {
-              "judul_poin": "Panjang Busur, Luas Juring, dan Tembereng",
-              "penjelasan_singkat": "Untuk sudut pusat $\\alpha$: $L_{\\text{juring}} = \\frac{\\alpha}{360^\\circ} \\pi r^2$, dan tembereng adalah sisa juring setelah dikurangi segitiga ($L_{\\text{tembereng}} = L_{\\text{juring}} - L_{\\triangle}$).",
-              "contoh_penerapan": "Tembereng sudut $90^\\circ$ berjari-jari $7\\text{ cm}$ punya luas **$\\frac{1}{4}(\\frac{22}{7})(7)^2 - \\frac{1}{2}(7)(7) = 38,5 - 24,5 = 14\\text{ cm}^2$**."
+              "judul": "Busur, Juring, & Tembereng",
+              "teori_singkat": "Sudut pusat $\\alpha$: $L_{\\text{juring}} = \\frac{\\alpha}{360^\\circ}\\pi r^2$, dan $L_{\\text{tembereng}} = L_{\\text{juring}} - L_{\\triangle}$.",
+              "contoh": "Tembereng $90^\\circ, r=7\\text{ cm}$ $\\rightarrow$ **$\\frac{1}{4}(\\frac{22}{7})(7)^2 - \\frac{1}{2}(7)(7) = 14\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Potong-Tempel dan Pemindahan Area Arsiran Simetris",
-              "penjelasan_singkat": "Bentuk arsiran rumit bisa dipecah jadi bangun biasa, atau diputar dan digeser mengisi ruang kosong yang sama persis.",
-              "contoh_penerapan": "Bentuk daun dari irisan dua seperempat lingkaran di dalam persegi bersisi $s$ punya luas **$2 \\times \\text{tembereng } 90^\\circ = (\\frac{\\pi}{2} - 1)s^2$**."
+              "judul": "Potong-Tempel Arsiran Simetris",
+              "teori_singkat": "Pecah arsiran rumit ($L_{\\text{total}} - L_{\\text{kosong}}$) atau geser bagian simetris menjadi bangun sederhana.",
+              "contoh": "Daun irisan dua seperempat lingkaran dalam persegi $s$ $\\rightarrow$ **$2 \\times \\text{tembereng } 90^\\circ = (\\frac{\\pi}{2} - 1)s^2$**."
             }
           ]
         }
@@ -182,31 +204,35 @@
       "kode_subbab": "pk-05-03",
       "judul_subbab": "Bangun Ruang (Volume, Luas Permukaan, Jarak Titik-Garis)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Pola Utama Volume**: Bangun beratap datar (kubus, balok, prisma, tabung) cukup pakai $V = L_{\\text{alas}} \\times t$. Bangun berujung runcing (limas, kerucut) tinggal kali sepertiga: $V = \\frac{1}{3} L_{\\text{alas}} \\times t$. Khusus bola: $V = \\frac{4}{3}\\pi r^3$ dan $L = 4\\pi r^2$.\n- **Diagonal Kubus (rusuk $s$)**: Diagonal bidang $= s\\sqrt{2}$; diagonal ruang $= s\\sqrt{3}$.\n- **Efek Skala ($k$)**: Jika semua ukuran panjang diperbesar $k$ kali, luasnya naik $k^2$ kali dan volumenya naik $k^3$ kali.\n- **Jarak Titik ke Garis**: Selalu tarik garis tegak lurus. Bentuk segitiga terlebih dahulu, lalu selesaikan lewat Pythagoras atau kesamaan luas segitiga.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Gunakan pola volume atap datar ($L_{\\text{alas}}\\cdot t$) vs runcing ($\\frac{1}{3}L_{\\text{alas}}\\cdot t$), skala ($k^2, k^3$), dan proyeksi tegak lurus.",
       "kelompok": [
         {
           "nama_kelompok": "Volume dan Luas Permukaan Bangun Ruang",
           "butir": [
             {
-              "judul_poin": "Kubus dan Balok",
-              "penjelasan_singkat": "Kubus berusuk $s$ punya $V = s^3$ dan $L = 6s^2$. Balok ($p, l, t$) punya $V = plt$ dan $L = 2(pl + pt + lt)$.",
-              "contoh_penerapan": "Balok berukuran $4 \\times 3 \\times 2\\text{ cm}$ punya volume $4 \\times 3 \\times 2 =$ **$24\\text{ cm}^3$** dan luas permukaan $2(12 + 8 + 6) =$ **$52\\text{ cm}^2$**."
+              "judul": "Kubus dan Balok",
+              "teori_singkat": "Kubus: $V = s^3, L = 6s^2$. Balok: $V = plt, L = 2(pl + pt + lt)$.",
+              "contoh": "Balok $4 \\times 3 \\times 2\\text{ cm}$ $\\rightarrow$ **$V = 24\\text{ cm}^3$**, **$L = 2(12+8+6) = 52\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Prisma Tegak dan Tabung",
-              "penjelasan_singkat": "Bangun beratap sejajar memakai $V = L_{\\text{alas}} \\times t$. Luas permukaannya $L = 2L_{\\text{alas}} + (K_{\\text{alas}} \\times t)$, dengan selimut tabung $L_{\\text{selimut}} = 2\\pi rt$.",
-              "contoh_penerapan": "Tabung berjari-jari $7\\text{ cm}$ dan tinggi $10\\text{ cm}$ punya luas selimut $2 \\times \\frac{22}{7} \\times 7 \\times 10 =$ **$440\\text{ cm}^2$**."
+              "judul": "Prisma Tegak dan Tabung",
+              "teori_singkat": "$V = L_{\\text{alas}} \\times t$; $L = 2L_{\\text{alas}} + K_{\\text{alas}}t$; selimut tabung $2\\pi rt$.",
+              "contoh": "Tabung $r=7\\text{ cm}, t=10\\text{ cm}$ $\\rightarrow$ selimut **$2(\\frac{22}{7})(7)(10) = 440\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Limas dan Kerucut",
-              "penjelasan_singkat": "Bangun meruncing selalu pakai $V = \\frac{1}{3} L_{\\text{alas}} \\times t$. Luas total kerucut $L = \\pi r(r + s)$ dengan garis pelukis $s = \\sqrt{r^2 + t^2}$.",
-              "contoh_penerapan": "Kerucut berjari-jari $6\\text{ cm}$ dan tinggi $8\\text{ cm}$ punya $s = \\sqrt{6^2 + 8^2} =$ **$10\\text{ cm}$**, jadi luas selimutnya $\\pi(6)(10) =$ **$60\\pi\\text{ cm}^2$**."
+              "judul": "Limas dan Kerucut",
+              "teori_singkat": "$V = \\frac{1}{3}L_{\\text{alas}}t$; luas kerucut $\\pi r(r + s)$ dengan $s = \\sqrt{r^2 + t^2}$.",
+              "contoh": "Kerucut $r=6, t=8 \\rightarrow s=10\\text{ cm}$ $\\rightarrow$ selimut **$\\pi(6)(10) = 60\\pi\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Bola dan Setengah Bola",
-              "penjelasan_singkat": "Bola berjari-jari $r$ punya $V = \\frac{4}{3}\\pi r^3$ dan $L = 4\\pi r^2$. Khusus setengah bola pejal (padat), luas permukaannya $L = 3\\pi r^2$.",
-              "contoh_penerapan": "Setengah bola pejal berjari-jari $10\\text{ cm}$ punya luas permukaan total $3\\pi(10)^2 =$ **$300\\pi\\text{ cm}^2$** karena penampang lingkarannya ikut dihitung."
+              "judul": "Bola dan Setengah Bola",
+              "teori_singkat": "Bola: $V = \\frac{4}{3}\\pi r^3, L = 4\\pi r^2$. Setengah bola pejal: $L = 3\\pi r^2$.",
+              "contoh": "Setengah bola pejal $r=10\\text{ cm}$ $\\rightarrow$ **$L = 3\\pi(10)^2 = 300\\pi\\text{ cm}^2$** (penampang ikut dihitung)."
             }
           ]
         },
@@ -214,19 +240,24 @@
           "nama_kelompok": "Diagonal dan Jarak dalam Bangun Ruang",
           "butir": [
             {
-              "judul_poin": "Diagonal Bidang dan Ruang Kubus-Balok",
-              "penjelasan_singkat": "Kubus berusuk $s$ punya diagonal bidang $s\\sqrt{2}$ dan diagonal ruang $s\\sqrt{3}$. Balok punya diagonal ruang $\\sqrt{p^2 + l^2 + t^2}$.",
-              "contoh_penerapan": "Kubus dengan diagonal ruang $6\\sqrt{3}\\text{ cm}$ langsung ketahuan rusuknya **$6\\text{ cm}$**, sehingga luas permukaannya $6(6)^2 =$ **$216\\text{ cm}^2$**."
+              "judul": "Diagonal Bidang & Ruang Kubus-Balok",
+              "teori_singkat": "Kubus: diagonal bidang $s\\sqrt{2}$, ruang $s\\sqrt{3}$. Balok: diagonal ruang $\\sqrt{p^2 + l^2 + t^2}$.",
+              "contoh": "Kubus berdiagonal ruang $6\\sqrt{3}\\text{ cm}$ $\\rightarrow$ **$s = 6\\text{ cm}$** $\\rightarrow$ **$L = 6(6)^2 = 216\\text{ cm}^2$**."
             },
             {
-              "judul_poin": "Jarak Titik ke Garis (Segitiga Siku-Siku)",
-              "penjelasan_singkat": "Jarak titik $P$ ke garis $g$ adalah garis yang jatuh tegak lurus ke $g$. Pada segitiga siku-siku, pakai kesamaan luas: $\\text{alas}_1 \\times t_1 = \\text{alas}_2 \\times t_2$.",
-              "contoh_penerapan": "Pada kubus berusuk $6$, jarak titik $A$ ke diagonal ruang $BH$ adalah $\\frac{AB \\times AH}{BH} = \\frac{6 \\times 6\\sqrt{2}}{6\\sqrt{3}} =$ **$2\\sqrt{6}$**."
+              "judul": "Jarak Titik ke Garis (Siku-Siku)",
+              "teori_singkat": "Tarik proyeksi tegak lurus; pada segitiga siku-siku gunakan kesamaan luas: $a_1 t_1 = a_2 t_2$.",
+              "contoh": "Kubus $s=6$, jarak $A$ ke $BH$ $\\rightarrow$ **$\\frac{6 \\times 6\\sqrt{2}}{6\\sqrt{3}} = 2\\sqrt{6}$**."
             },
             {
-              "judul_poin": "Jarak Titik ke Garis pada Segitiga Sembarang",
-              "penjelasan_singkat": "Kalau segitiganya tidak siku-siku, cari panjang ketiga sisinya dulu. Setelah itu, gunakan simetri (jika sama kaki) atau aturan kosinus.",
-              "contoh_penerapan": "Segitiga sama kaki bersisi $5, 5, 6$ punya tinggi ke sisi alas sebesar $\\sqrt{5^2 - 3^2} =$ **$4$**, karena garis tingginya membelah alas jadi dua bagian sama panjang."
+              "judul": "Jarak Titik ke Garis (Segitiga Sembarang)",
+              "teori_singkat": "Hitung panjang ketiga sisi segitiga, lalu gunakan simetri sama kaki atau aturan kosinus.",
+              "contoh": "Segitiga sama kaki bersisi $5, 5, 6$ $\\rightarrow$ tinggi ke alas **$\\sqrt{5^2 - 3^2} = 4$**."
+            },
+            {
+              "judul": "Jarak Titik ke Bidang (Trik Kubus)",
+              "teori_singkat": "Kubus $s$: jarak sudut dekat ke bidang $ACF = \\frac{1}{3}s\\sqrt{3}$, sudut jauh $= \\frac{2}{3}s\\sqrt{3}$.",
+              "contoh": "Kubus $s = 9\\text{ cm}$ $\\rightarrow$ jarak $B$ ke $ACF$ **$3\\sqrt{3}\\text{ cm}$**, $H$ ke $ACF$ **$6\\sqrt{3}\\text{ cm}$**."
             }
           ]
         },
@@ -234,19 +265,19 @@
           "nama_kelompok": "Kesebangunan dan Bangun di Dalam Bangun",
           "butir": [
             {
-              "judul_poin": "Skala Kesebangunan Luas dan Volume",
-              "penjelasan_singkat": "Jika perbandingan sisi atau jari-jari dua bangun sebangun adalah $k$, maka perbandingan luasnya $k^2$ dan perbandingan volumenya $k^3$.",
-              "contoh_penerapan": "Jika jari-jari bola diperbesar **$2$ kali** ($k = 2$), luas permukaannya menjadi $2^2 =$ **$4$ kali** dan volumenya menjadi $2^3 =$ **$8$ kali**."
+              "judul": "Skala Kesebangunan Luas & Volume",
+              "teori_singkat": "Jika rasio panjang bangun sebangun $k$, maka rasio luas $k^2$ dan volume $k^3$.",
+              "contoh": "Jari-jari bola naik **$2\\times$** ($k=2$) $\\rightarrow$ luas **$4\\times$**, volume **$8\\times$**."
             },
             {
-              "judul_poin": "Bola di Dalam Kubus atau Tabung",
-              "penjelasan_singkat": "Bola terbesar di dalam kubus berusuk $s$ punya diameter $d = s$. Di dalam tabung berdimensi $t = 2r$, diameter bolanya tepat $d = 2r$.",
-              "contoh_penerapan": "Bola terbesar di dalam kubus berusuk $6\\text{ cm}$ punya $r =$ **$3\\text{ cm}$**, jadi volumenya $V = \\frac{4}{3}\\pi(3)^3 =$ **$36\\pi\\text{ cm}^3$**."
+              "judul": "Bola di Dalam Kubus atau Tabung",
+              "teori_singkat": "Bola terbesar dalam kubus bersisi $s$ berdiameter $s$; dalam tabung ($t=2r$) berdiameter $2r$.",
+              "contoh": "Bola terbesar dalam kubus $s=6\\text{ cm}$ $\\rightarrow r=3\\text{ cm} \\rightarrow$ **$V = \\frac{4}{3}\\pi(3)^3 = 36\\pi\\text{ cm}^3$**."
             },
             {
-              "judul_poin": "Kubus di Dalam Bola (Inscribed Cube)",
-              "penjelasan_singkat": "Jika kubus berada tepat di dalam bola berjari-jari $R$, maka diagonal ruang kubus sama panjang dengan diameter bola ($s\\sqrt{3} = 2R$).",
-              "contoh_penerapan": "Bola berdiameter $6\\sqrt{3}\\text{ cm}$ memuat kubus terbesar dengan $s\\sqrt{3} = 6\\sqrt{3}$, jadi panjang rusuk kubusnya langsung **$s = 6\\text{ cm}$**."
+              "judul": "Kubus di Dalam Bola (Inscribed Cube)",
+              "teori_singkat": "Kubus di dalam bola berjari-jari $R$ memenuhi diagonal ruang $=$ diameter ($s\\sqrt{3} = 2R$).",
+              "contoh": "Bola berdiameter $6\\sqrt{3}\\text{ cm}$ memuat kubus terbesar $\\rightarrow s\\sqrt{3} = 6\\sqrt{3} \\rightarrow$ **$s = 6\\text{ cm}$**."
             }
           ]
         },
@@ -254,14 +285,14 @@
           "nama_kelompok": "Aplikasi Perubahan Tinggi Permukaan Zat Cair",
           "butir": [
             {
-              "judul_poin": "Benda Tenggelam Seluruhnya Tanpa Tumpah",
-              "penjelasan_singkat": "Saat benda tenggelam penuh dan air tidak meluap, volume kenaikan air sama persis dengan volume benda: $L_{\\text{alas wadah}} \\times \\Delta t = V_{\\text{benda}}$.",
-              "contoh_penerapan": "Bola bervolume $100\\pi\\text{ cm}^3$ tenggelam penuh di tabung berjari-jari $5\\text{ cm}$, sehingga air naik $\\Delta t = \\frac{100\\pi}{\\pi(5)^2} =$ **$4\\text{ cm}$**."
+              "judul": "Benda Tenggelam Penuh Tanpa Tumpah",
+              "teori_singkat": "Volume kenaikan air sama dengan volume benda: $L_{\\text{alas wadah}} \\times \\Delta t = V_{\\text{benda}}$.",
+              "contoh": "Bola $100\\pi\\text{ cm}^3$ tenggelam di tabung $r=5\\text{ cm}$ $\\rightarrow$ **$\\Delta t = \\frac{100\\pi}{25\\pi} = 4\\text{ cm}$**."
             },
             {
-              "judul_poin": "Benda Tenggelam Sebagian (Tinggi Benda Lebih Besar)",
-              "penjelasan_singkat": "Kalau benda berdiri tegak dan ujung atasnya masih menyembul keluar air, ruang gerak air menyempit: $V_{\\text{air}} = (L_{\\text{alas wadah}} - L_{\\text{alas benda}}) \\times t_{\\text{akhir}}$.",
-              "contoh_penerapan": "Silinder setinggi $15\\text{ cm}$ berluas alas $10\\text{ cm}^2$ berdiri di wadah berluas alas $50\\text{ cm}^2$ berisi $400\\text{ cm}^3$ air. Tinggi air menjadi $\\frac{400}{50 - 10} =$ **$10\\text{ cm}$**."
+              "judul": "Benda Tenggelam Sebagian (Menyembul)",
+              "teori_singkat": "Benda berdiri lebih tinggi dari air: $V_{\\text{air}} = (L_{\\text{alas wadah}} - L_{\\text{alas benda}}) \\times t_{\\text{akhir}}$.",
+              "contoh": "Silinder $L_{\\text{alas}}=10$ berdiri di wadah $L_{\\text{alas}}=50$ berisi $400\\text{ cm}^3$ air $\\rightarrow$ **$t = \\frac{400}{50-10} = 10\\text{ cm}$**."
             }
           ]
         }
@@ -271,31 +302,40 @@
       "kode_subbab": "pk-05-04",
       "judul_subbab": "Sistem Koordinat Kartesius dan Persamaan Garis Lurus",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Gradien ($m$):** Kemiringan garis lewat $(x_1,y_1)$ dan $(x_2,y_2)$ adalah $m = \\frac{y_2-y_1}{x_2-x_1}$. Pada bentuk $Ax + By + C = 0$, gunakan $m = -\\frac{A}{B}$.\n- **Hubungan Dua Garis:** Sejajar artinya gradien sama ($m_1 = m_2$). Tegak lurus artinya hasil kali gradien sama dengan $-1$ ($m_1 \\cdot m_2 = -1$).\n- **Persamaan Garis:** Lewat $(x_1,y_1)$ bergradien $m$: $y - y_1 = m(x - x_1)$. Memotong sumbu di $(a,0)$ dan $(0,b)$: $bx + ay = ab$.\n- **Jarak Dua Titik:** Gunakan rumus Pythagoras $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Hitung cepat gradien, hubungan sejajar/tegak lurus, jarak titik-garis, luas koordinat, dan optimasi DHP program linear.",
       "kelompok": [
         {
           "nama_kelompok": "Gradien dan Cara Menyusun Persamaan Garis",
           "butir": [
             {
-              "judul_poin": "Gradien dari Dua Titik dan Bentuk $Ax + By + C = 0$",
-              "penjelasan_singkat": "Gradien lewat $(x_1, y_1)$ dan $(x_2, y_2)$ adalah $m = \\frac{y_2 - y_1}{x_2 - x_1}$. Pada $Ax + By + C = 0$ ($B \\neq 0$), pakai $m = -\\frac{A}{B}$.",
-              "contoh_penerapan": "Gradien garis $3x - 2y + 6 = 0$ adalah **$m = -\\frac{3}{-2} = \\frac{3}{2}$**."
+              "judul": "Gradien Dua Titik & Bentuk Umum",
+              "teori_singkat": "Lewat dua titik: $m = \\frac{y_2 - y_1}{x_2 - x_1}$. Pada $Ax + By + C = 0$: $m = -\\frac{A}{B}$.",
+              "contoh": "Gradien garis $3x - 2y + 6 = 0$ $\\rightarrow$ **$m = -\\frac{3}{-2} = \\frac{3}{2}$**."
             },
             {
-              "judul_poin": "Garis Sejajar ($m_1 = m_2$) lewat Satu Titik",
-              "penjelasan_singkat": "Garis yang sejajar $Ax + By = C$ dan lewat $(x_1, y_1)$ punya gradien sama. Rumus cepatnya: $Ax + By = Ax_1 + By_1$.",
-              "contoh_penerapan": "Garis sejajar $2x + 5y = 7$ yang lewat $(3, -1)$ adalah **$2x + 5y = 2(3) + 5(-1) = 1$**."
+              "judul": "Persamaan Garis dari Titik & Gradien",
+              "teori_singkat": "Garis bergradien $m$ melalui titik $(x_1, y_1)$ memenuhi $y - y_1 = m(x - x_1)$.",
+              "contoh": "Lewat $(2, 5)$ bergradien $3$ $\\rightarrow y - 5 = 3(x - 2) \\rightarrow$ **$y = 3x - 1$**."
             },
             {
-              "judul_poin": "Garis Tegak Lurus ($m_1 \\cdot m_2 = -1$)",
-              "penjelasan_singkat": "Garis tegak lurus $Ax + By = C$ yang lewat $(x_1, y_1)$ memenuhi $m_1 \\cdot m_2 = -1$. Rumus cepatnya: $Bx - Ay = Bx_1 - Ay_1$.",
-              "contoh_penerapan": "Garis tegak lurus $3x + 4y = 7$ yang lewat $(2, 1)$ adalah **$4x - 3y = 4(2) - 3(1) = 5$**."
+              "judul": "Garis Sejajar ($m_1 = m_2$)",
+              "teori_singkat": "Sejajar $Ax + By = C$ lewat $(x_1, y_1)$: langsung pakai $Ax + By = Ax_1 + By_1$.",
+              "contoh": "Sejajar $2x + 5y = 7$ lewat $(3, -1)$ $\\rightarrow$ **$2x + 5y = 2(3) + 5(-1) = 1$**."
             },
             {
-              "judul_poin": "Garis yang Memotong Sumbu-$X$ dan Sumbu-$Y$",
-              "penjelasan_singkat": "Jika garis memotong sumbu-$X$ di $(a, 0)$ dan sumbu-$Y$ di $(0, b)$ ($a, b \\neq 0$), persamaannya langsung $bx + ay = ab$.",
-              "contoh_penerapan": "Garis memotong $(4, 0)$ dan $(0, -3)$ punya persamaan **$-3x + 4y = -12$** atau $3x - 4y = 12$."
+              "judul": "Garis Tegak Lurus ($m_1 \\cdot m_2 = -1$)",
+              "teori_singkat": "Tegak lurus $Ax + By = C$ lewat $(x_1, y_1)$: tukar koefisien, $Bx - Ay = Bx_1 - Ay_1$.",
+              "contoh": "Tegak lurus $3x + 4y = 7$ lewat $(2, 1)$ $\\rightarrow$ **$4x - 3y = 4(2) - 3(1) = 5$**."
+            },
+            {
+              "judul": "Garis Memotong Sumbu-X & Sumbu-Y",
+              "teori_singkat": "Memotong $(a, 0)$ dan $(0, b)$ ($a, b \\neq 0$) $\\rightarrow$ persamaan $bx + ay = ab$.",
+              "contoh": "Memotong $(4, 0)$ dan $(0, -3)$ $\\rightarrow$ **$-3x + 4y = -12 \\equiv 3x - 4y = 12$**."
             }
           ]
         },
@@ -303,19 +343,19 @@
           "nama_kelompok": "Titik Potong, Jarak, dan Pembagian Ruas Garis",
           "butir": [
             {
-              "judul_poin": "Titik Potong Dua Garis dan Syarat Tiga Titik Segaris",
-              "penjelasan_singkat": "Cari titik potong dengan eliminasi-substitusi. Tiga titik $(x_1,y_1)$, $(x_2,y_2)$, $(x_3,y_3)$ segaris (kolinear) jika gradiennya sama ($m_{12} = m_{23}$).",
-              "contoh_penerapan": "Titik $(1, 2)$, $(3, 6)$, dan $(4, k)$ segaris jika $\\frac{6-2}{3-1} = \\frac{k-6}{4-3} \\implies$ **$k = 8$**."
+              "judul": "Titik Potong & Syarat Kolinear",
+              "teori_singkat": "Cari titik potong lewat eliminasi-substitusi; tiga titik segaris (kolinear) jika gradien sama ($m_{12} = m_{23}$).",
+              "contoh": "$(1,2), (3,6), (4,k)$ segaris $\\rightarrow \\frac{6-2}{3-1} = \\frac{k-6}{4-3} \\rightarrow$ **$k = 8$**."
             },
             {
-              "judul_poin": "Jarak Dua Titik pada Bidang Kartesius",
-              "penjelasan_singkat": "Jarak antara titik $A(x_1, y_1)$ dan $B(x_2, y_2)$ dihitung dengan Pythagoras: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
-              "contoh_penerapan": "Jarak titik $(-1, 2)$ ke $(2, 6)$ adalah **$d = \\sqrt{(2 - (-1))^2 + (6 - 2)^2} = 5$**."
+              "judul": "Jarak Dua Titik",
+              "teori_singkat": "Jarak titik $A(x_1, y_1)$ ke $B(x_2, y_2)$ adalah $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+              "contoh": "Jarak $(-1, 2)$ ke $(2, 6)$ $\\rightarrow$ **$d = \\sqrt{(2-(-1))^2 + (6-2)^2} = 5$**."
             },
             {
-              "judul_poin": "Titik Tengah dan Titik Pembagi Ruas Garis",
-              "penjelasan_singkat": "Titik $P$ yang membagi ruas $AB$ dengan rasio $AP : PB = m : n$ punya koordinat $\\left(\\frac{mx_B + nx_A}{m+n}, \\frac{my_B + ny_A}{m+n}\\right)$.",
-              "contoh_penerapan": "Titik $P$ membagi $A(1, 2)$ dan $B(7, 5)$ dengan rasio $2:1$ ada di **$\\left(\\frac{2(7)+1(1)}{3}, \\frac{2(5)+1(2)}{3}\\right) = (5, 4)$**."
+              "judul": "Titik Tengah & Pembagi Ruas Garis",
+              "teori_singkat": "Titik $P$ membagi $AB$ rasio $m:n$ berkoordinat $\\left(\\frac{mx_B + nx_A}{m+n}, \\frac{my_B + ny_A}{m+n}\\right)$.",
+              "contoh": "$P$ membagi $A(1,2)$ dan $B(7,5)$ rasio $2:1$ $\\rightarrow$ **$\\left(\\frac{2(7)+1(1)}{3}, \\frac{2(5)+1(2)}{3}\\right) = (5, 4)$**."
             }
           ]
         },
@@ -323,19 +363,19 @@
           "nama_kelompok": "Luas Bangun Datar dan Program Linear (DHP)",
           "butir": [
             {
-              "judul_poin": "Luas Segitiga dari Koordinat Titik Sudut",
-              "penjelasan_singkat": "Luas segitiga bertitik sudut $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$ adalah $L = \\frac{1}{2} |x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.",
-              "contoh_penerapan": "Luas segitiga dengan titik $(0,0)$, $(4,0)$, dan $(2,5)$ adalah **$L = \\frac{1}{2}|0 + 4(5-0) + 2(0-0)| = 10$**."
+              "judul": "Luas Segitiga dari Koordinat",
+              "teori_singkat": "Rumus determinan: $L = \\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.",
+              "contoh": "Titik $(0,0), (4,0), (2,5)$ $\\rightarrow$ **$L = \\frac{1}{2}|0 + 4(5-0) + 2(0-0)| = 10$**."
             },
             {
-              "judul_poin": "Menentukan Daerah Himpunan Penyelesaian (DHP)",
-              "penjelasan_singkat": "Pada $Ax + By \\le C$ dengan syarat koefisien $x$ positif ($A > 0$), tanda $\\le$ mengarsir area kiri garis, sedangkan $\\ge$ mengarsir kanan.",
-              "contoh_penerapan": "Pada $2x - 3y \\ge 6$, karena koefisien $x$ sudah positif ($2 > 0$), DHP ada di **sebelah kanan garis**."
+              "judul": "Menentukan Daerah Himpunan Penyelesaian (DHP)",
+              "teori_singkat": "Pada $Ax + By \\le C$ dengan syarat $A > 0$: $\\le$ arsir kiri, $\\ge$ arsir kanan.",
+              "contoh": "Pada $2x - 3y \\ge 6$, karena $A = 2 > 0$ $\\rightarrow$ DHP di **sebelah kanan garis**."
             },
             {
-              "judul_poin": "Nilai Maksimum/Minimum dengan Uji Titik Pojok",
-              "penjelasan_singkat": "Nilai maksimum atau minimum fungsi tujuan $f(x, y) = ax + by$ pada DHP tertutup selalu muncul di salah satu titik pojoknya.",
-              "contoh_penerapan": "Pada pojok $(0,4)$, $(3,2)$, $(5,0)$, nilai maksimum $f(x,y) = 3x + 2y$ dicapai di $(5,0)$ sebesar **$3(5) + 2(0) = 15$**."
+              "judul": "Nilai Optimum Uji Titik Pojok",
+              "teori_singkat": "Nilai maksimum/minimum $f(x, y) = ax + by$ pada DHP tertutup selalu di titik pojok.",
+              "contoh": "Pojok $(0,4), (3,2), (5,0)$ untuk maks $3x + 2y$ $\\rightarrow$ di $(5,0)$ sebesar **$3(5)+2(0) = 15$**."
             }
           ]
         },
@@ -343,14 +383,19 @@
           "nama_kelompok": "Jarak Titik ke Garis dan Pencerminan Dasar (Pengayaan)",
           "butir": [
             {
-              "judul_poin": "Jarak Terpendek Titik ke Garis Lurus",
-              "penjelasan_singkat": "Jarak tegak lurus titik $(x_1, y_1)$ ke garis $Ax + By + C = 0$ dihitung dengan rumus $d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$.",
-              "contoh_penerapan": "Jarak titik $(2, -1)$ ke garis $3x + 4y - 7 = 0$ adalah **$d = \\frac{|3(2) + 4(-1) - 7|}{\\sqrt{3^2 + 4^2}} = 1$**."
+              "judul": "Jarak Terpendek Titik ke Garis",
+              "teori_singkat": "Jarak tegak lurus $(x_1, y_1)$ ke $Ax + By + C = 0$: $d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$.",
+              "contoh": "Jarak $(2, -1)$ ke $3x + 4y - 7 = 0$ $\\rightarrow$ **$d = \\frac{|3(2)+4(-1)-7|}{\\sqrt{3^2+4^2}} = 1$**."
             },
             {
-              "judul_poin": "Pencerminan Titik terhadap Sumbu dan Garis $y = \\pm x$",
-              "penjelasan_singkat": "Bayangan $(x, y)$ terhadap sumbu-$X$ jadi $(x, -y)$, sumbu-$Y$ jadi $(-x, y)$, garis $y = x$ jadi $(y, x)$, dan $y = -x$ jadi $(-y, -x)$.",
-              "contoh_penerapan": "Titik $P(3, -5)$ dicerminkan terhadap garis $y = x$ menghasilkan bayangan **$P'(-5, 3)$**."
+              "judul": "Jarak Dua Garis Sejajar",
+              "teori_singkat": "Jarak $Ax + By + C_1 = 0$ dan $Ax + By + C_2 = 0$: $d = \\frac{|C_1 - C_2|}{\\sqrt{A^2 + B^2}}$.",
+              "contoh": "Jarak $3x + 4y - 2 = 0$ dan $3x + 4y + 8 = 0$ $\\rightarrow$ **$d = \\frac{|-2-8|}{5} = 2$**."
+            },
+            {
+              "judul": "Pencerminan Titik Dasar",
+              "teori_singkat": "$(x, y)$ dicerminkan ke sumbu-$X \\rightarrow (x,-y)$, sumbu-$Y \\rightarrow (-x,y)$, $y=x \\rightarrow (y,x)$, $y=-x \\rightarrow (-y,-x)$.",
+              "contoh": "Titik $P(3, -5)$ dicerminkan terhadap garis $y = x$ $\\rightarrow$ bayangan **$P'(-5, 3)$**."
             }
           ]
         }

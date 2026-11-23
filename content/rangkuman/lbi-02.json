@@ -2,38 +2,41 @@
   "kode_bab": "lbi-02",
   "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
   "bab": "Bab 2: Inferensi dan Evaluasi Teks",
-  "batch_model": "hydrogen",
-  "jumlah_subbab": 4,
+  "estimasi_menit_review": 5,
   "daftar_subbab": [
     {
       "kode_subbab": "lbi-02-01",
       "judul_subbab": "Simpulan Implisit dan Prediksi Isi Teks",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Inferensi & Prediksi Teks** menguji kemampuanmu menangkap makna tersirat yang wajib punya pijakan fakta di dalam bacaan.\n\n* **Rumus Simpulan Sah:** $\\text{Fakta Teks} + \\text{Logika Lurus} \\rightarrow \\text{Simpulan Pasti Benar}$ (tanpa menambah asumsi dari luar teks).\n* **Prediksi & Solusi:** Tarik arah tren masalah di teks ke masa depan, atau bidik langsung **akar penyebabnya**, bukan sekadar gejalanya.\n* **Filter Eliminasi:** Coret opsi yang **terlalu ekstrem** (*semua/selalu*), **bertentangan dengan fakta**, atau **melebar ke luar topik bacaan**.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Inferensi dan prediksi menarik makna tersirat atau arah tren berdasarkan fakta teks tanpa asumsi luar.",
       "kelompok": [
         {
           "nama_kelompok": "Pola Simpulan Lurus dan Gabungan Antarparagraf",
           "butir": [
             {
-              "judul_poin": "Gabungan Aturan Umum dan Fakta Khusus",
-              "penjelasan_singkat": "Pasangkan pernyataan umum dengan fakta spesifik di teks memakai pola $\\text{Jika } A \\rightarrow B \\text{ dan } A \\text{ terjadi, maka } B \\text{ pasti terjadi}$.",
-              "contoh_penerapan": "Teks menyebut **semua mamalia menyusui anaknya** dan **paus termasuk mamalia**. Simpulan yang pasti benar: paus menyusui anaknya."
+              "judul": "Gabungan Aturan Umum dan Fakta Khusus",
+              "teori_singkat": "Gabungkan aturan umum dan fakta spesifik teks dengan alur logika lurus $A \\rightarrow B$.",
+              "contoh": "Semua **mamalia menyusui** dan **paus adalah mamalia** $\\rightarrow$ simpulan pasti benar: paus menyusui anaknya."
             },
             {
-              "judul_poin": "Rantai Sebab-Akibat Lintas Paragraf",
-              "penjelasan_singkat": "Sambungkan penyebab di paragraf awal dengan akibat di paragraf berikutnya lewat alur $\\text{P}_1(X \\rightarrow Y) + \\text{P}_2(Y \\rightarrow Z) \\rightarrow (X \\rightarrow Z)$.",
-              "contoh_penerapan": "Paragraf 1 menyebut **alih fungsi hutan memicu erosi**, lalu Paragraf 2 menulis **erosi mendangkalkan sungai**. Artinya, alih fungsi hutan menyebabkan sungai mendangkal."
+              "judul": "Rantai Sebab-Akibat Lintas Paragraf",
+              "teori_singkat": "Hubungkan penyebab paragraf awal dengan akibat paragraf berikutnya lewat rantai $X \\rightarrow Y \\rightarrow Z$.",
+              "contoh": "**Alih fungsi hutan** memicu erosi, lalu **erosi mendangkalkan sungai** $\\rightarrow$ alih fungsi hutan mendangkalkan sungai."
             },
             {
-              "judul_poin": "Sinyal Pertentangan dan Kontras",
-              "penjelasan_singkat": "Kata hubung berlawanan (*namun, sebaliknya, padahal*) menandakan kenyataan di lapangan bertolak belakang dengan harapan awal.",
-              "contoh_penerapan": "Anggaran pendidikan naik 20 persen, **namun** skor literasi jalan di tempat. Simpulannya: kenaikan anggaran belum sejalan dengan peningkatan mutu belajar."
+              "judul": "Sinyal Pertentangan dan Kontras",
+              "teori_singkat": "Konjungsi berlawanan (*namun, padahal, sebaliknya*) menandakan realitas lapangan bertolak belakang dengan harapan awal.",
+              "contoh": "Anggaran pendidikan naik, **namun** skor literasi stagnan $\\rightarrow$ kenaikan dana belum mendongkrak mutu belajar."
             },
             {
-              "judul_poin": "Simpulan Perbandingan dan Selisih Data",
-              "penjelasan_singkat": "Kata pembanding (*lebih rendah, melonjak, ketimpangan*) mengarahkanmu pada simpulan selisih performa atau dominasi satu hal.",
-              "contoh_penerapan": "Ekspor nikel olahan **melonjak tiga kali lipat** dibanding bijih mentah. Artinya, produk olahan mendominasi pendapatan ekspor komoditas ini."
+              "judul": "Simpulan Perbandingan dan Selisih Data",
+              "teori_singkat": "Penanda komparatif (*lebih rendah, melonjak, ketimpangan*) mengarahkan simpulan pada selisih performa atau dominasi.",
+              "contoh": "Ekspor nikel olahan **melonjak tiga kali lipat** dibanding bijih mentah $\\rightarrow$ produk olahan mendominasi ekspor."
             }
           ]
         },
@@ -41,44 +44,49 @@
           "nama_kelompok": "Sinyal Prediksi Dampak dan Rekomendasi Solusi",
           "butir": [
             {
-              "judul_poin": "Menebak Arah Dampak jika Tren Dibiarkan",
-              "penjelasan_singkat": "Proyeksikan akibat lanjutan apabila masalah di teks terus berjalan tanpa perbaikan lewat alur $\\text{Tren Berlanjut} \\rightarrow \\text{Dampak Makin Parah}$.",
-              "contoh_penerapan": "Jika **penyedotan air tanah masif terus berlangsung**, prediksi logisnya adalah muka tanah makin turun dan banjir rob makin sering terjadi."
+              "judul": "Prediksi Dampak jika Tren Berlanjut",
+              "teori_singkat": "Proyeksikan akibat lanjutan apabila masalah di teks dibiarkan berjalan tanpa intervensi perbaikan.",
+              "contoh": "Jika **penyedotan air tanah masif berlanjut** $\\rightarrow$ muka tanah turun dan banjir rob makin sering."
             },
             {
-              "judul_poin": "Sinyal Syarat dan Kondisi (*Jika–Maka*)",
-              "penjelasan_singkat": "Kata syarat (*apabila, selama, tanpa adanya*) menjadi patokan untuk memprediksi sukses atau gagalnya suatu langkah.",
-              "contoh_penerapan": "**Tanpa pengawasan distribusi yang ketat**, subsidi pupuk berisiko kembali dinikmati petani besar daripada petani kecil."
+              "judul": "Sinyal Syarat dan Kondisi (Jika–Maka)",
+              "teori_singkat": "Penanda syarat (*apabila, selama, tanpa*) menjadi patokan memprediksi keberhasilan atau kegagalan suatu kebijakan.",
+              "contoh": "**Tanpa pengawasan distribusi ketat** $\\rightarrow$ subsidi pupuk berisiko kembali dinikmati petani besar."
             },
             {
-              "judul_poin": "Solusi yang Menyentuh Akar Masalah",
-              "penjelasan_singkat": "Temukan sumber penyebab utama di teks, lalu pilih rekomendasi yang langsung memutus akar penyebab tersebut.",
-              "contoh_penerapan": "Tingginya impor gandum dipicu **minimnya pengolahan pangan lokal**. Solusi paling tepat adalah memberi insentif pengolahan pangan nonberas."
+              "judul": "Solusi Menyentuh Akar Masalah",
+              "teori_singkat": "Identifikasi penyebab utama di teks, lalu pilih rekomendasi yang langsung memutus sumber masalah.",
+              "contoh": "Impor gandum tinggi akibat **minimnya pengolahan pangan lokal** $\\rightarrow$ solusi: beri insentif olahan nonberas."
             },
             {
-              "judul_poin": "Rekomendasi dari Hambatan di Lapangan",
-              "penjelasan_singkat": "Kata kendala (*terhambat oleh, kurangnya, ketiadaan*) menunjuk celah spesifik yang harus dibenahi lebih dulu.",
-              "contoh_penerapan": "Digitalisasi UMKM **terkendala rendahnya literasi keamanan siber**. Maka, langkah prioritasnya adalah pendampingan keamanan data sebelum memperluas pasar."
+              "judul": "Rekomendasi dari Hambatan Lapangan",
+              "teori_singkat": "Sinyal kendala (*terhambat, kurangnya, ketiadaan*) menunjuk celah spesifik yang wajib dibenahi lebih dulu.",
+              "contoh": "Digitalisasi UMKM **terkendala rendahnya literasi keamanan siber** $\\rightarrow$ prioritas: pendampingan keamanan data."
             }
           ]
         },
         {
-          "nama_kelompok": "Membaca Maksud Kutipan Tokoh dan Memfilter Jebakan",
+          "nama_kelompok": "Maksud Kutipan Tokoh dan Filter Jebakan",
           "butir": [
             {
-              "judul_poin": "Kritik di Balik Perumpamaan Pakar",
-              "penjelasan_singkat": "Perumpamaan atau sindiran narasumber biasanya menyiratkan kritik tajam terhadap kebijakan yang dianggap keliru.",
-              "contoh_penerapan": "Pakar menyebut aturan baru itu **\"macan kertas yang indah di atas meja\"**. Maksudnya, ia mengkritik lemahnya penegakan aturan tersebut di lapangan."
+              "judul": "Kritik di Balik Perumpamaan Pakar",
+              "teori_singkat": "Metafora atau sindiran narasumber menyiratkan kritik tajam terhadap kebijakan yang dianggap tidak efektif.",
+              "contoh": "Pakar menyebut aturan itu **\"macan kertas\"** $\\rightarrow$ menyiratkan kritik atas lemahnya penegakan hukum di lapangan."
             },
             {
-              "judul_poin": "Nada Mendesak dan Peringatan Tokoh",
-              "penjelasan_singkat": "Pilihan kata bernada darurat (*mendesak, tanpa menyetop, berpacu dengan waktu*) menandakan dorongan untuk bertindak segera.",
-              "contoh_penerapan": "Kalimat **\"kita berpacu dengan waktu sebelum daya dukung lingkungan runtuh\"** menyiratkan perlunya pembatasan izin eksploitasi sesegera mungkin."
+              "judul": "Nada Mendesak dan Peringatan Tokoh",
+              "teori_singkat": "Diksi darurat (*mendesak, berpacu dengan waktu*) menyiratkan dorongan agar tindakan segera diambil.",
+              "contoh": "Frasa **\"berpacu dengan waktu sebelum lingkungan runtuh\"** $\\rightarrow$ menyiratkan perlunya pembatasan eksploitasi segera."
             },
             {
-              "judul_poin": "Mencoret Opsi Jebakan Kata Mutlak",
-              "penjelasan_singkat": "Opsi yang memakai kata mutlak (*semua, selalu, pasti, tidak pernah*) hampir pasti salah jika fakta di teks bersifat sebagian.",
-              "contoh_penerapan": "Teks menyebut **sebagian besar pekerja jarak jauh lebih produktif**. Maka, opsi berbunyi **semua pekerja wajib bekerja dari rumah** harus langsung dicoret."
+              "judul": "Jebakan Opsi Kata Mutlak",
+              "teori_singkat": "Coret opsi bermuatan kata mutlak (*semua, selalu, pasti*) jika fakta teks bersifat sebagian.",
+              "contoh": "Teks menyebut **sebagian besar** pekerja produktif $\\rightarrow$ coret opsi **semua** pekerja wajib kerja dari rumah."
+            },
+            {
+              "judul": "Jebakan Fakta Benar di Luar Teks",
+              "teori_singkat": "Coret opsi yang benar di dunia nyata tetapi tidak dibahas dalam bacaan.",
+              "contoh": "Teks hanya membahas **harga beras naik** $\\rightarrow$ coret opsi tentang **impor beras dari Thailand**."
             }
           ]
         }
@@ -88,81 +96,90 @@
       "kode_subbab": "lbi-02-02",
       "judul_subbab": "Hubungan Antarparagraf dan Antarteks",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Soal hubungan antarparagraf dan antarteks menguji kejelianmu melacak alur logika bacaan:\n- **Hubungan Antarparagraf**: Perhatikan kata penghubung di awal paragraf (*namun*, *akibatnya*, *misalnya*). Kata ini menjadi petunjuk apakah paragraf berikutnya berfungsi menjelaskan, membantah, memberi contoh, memaparkan akibat, atau menawarkan solusi.\n- **Hubungan Antarteks (Teks 1 vs Teks 2)**: Temukan irisan topik kedua bacaan dan bandingkan sikap penulisnya (misalnya kritis vs solutif). Kamu juga perlu menggabungkan informasi kedua teks tanpa menambah asumsi luar, lalu menguji apakah data Teks 2 menguatkan, melemahkan, atau merinci klaim Teks 1.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Lacak konjungsi antarparagraf serta bandingkan irisan topik, sikap penulis, dan kekuatan bukti antarteks tanpa asumsi luar.",
       "kelompok": [
         {
-          "nama_kelompok": "Peran Paragraf Lanjutan (Fungsi Retoris Antarparagraf)",
+          "nama_kelompok": "Fungsi Retoris Antarparagraf",
           "butir": [
             {
-              "judul_poin": "Hubungan Penjelas dan Pemerinci",
-              "penjelasan_singkat": "Paragraf kedua menguraikan definisi, cara kerja, atau bagian rinci dari gagasan umum di paragraf pertama.",
-              "contoh_penerapan": "Paragraf 1 menyebut krisis air bersih; Paragraf 2 diawali **'Secara rinci, penurunan muka air tanah terjadi akibat...'**."
+              "judul": "Hubungan Penjelas dan Pemerinci",
+              "teori_singkat": "Paragraf kedua menguraikan definisi, mekanisme, atau rincian dari gagasan umum paragraf pertama.",
+              "contoh": "Paragraf 1 menyebut krisis air; Paragraf 2 diawali **\"Secara rinci, penurunan muka air terjadi akibat...\"**"
             },
             {
-              "judul_poin": "Hubungan Contoh Kasus dan Ilustrasi",
-              "penjelasan_singkat": "Paragraf kedua menyajikan kejadian nyata, lokasi spesifik, atau studi kasus untuk memberi gambaran konkret dari pernyataan umum sebelumnya.",
-              "contoh_penerapan": "Paragraf 1 membahas adaptasi kota pesisir; Paragraf 2 dibuka **'Sebagai contoh, pembangunan tanggul laut di Semarang berhasil...'**."
+              "judul": "Hubungan Contoh Kasus dan Ilustrasi",
+              "teori_singkat": "Paragraf kedua menghadirkan studi kasus atau lokasi spesifik untuk mengonkretkan klaim paragraf pertama.",
+              "contoh": "Paragraf 1 membahas adaptasi pesisir; Paragraf 2 dibuka **\"Sebagai contoh, tanggul laut di Semarang berhasil...\"**"
             },
             {
-              "judul_poin": "Hubungan Kontradiksi dan Pertentangan",
-              "penjelasan_singkat": "Paragraf kedua menghadirkan sanggahan, pengecualian, atau fakta berlawanan yang membatasi pernyataan di paragraf pertama.",
-              "contoh_penerapan": "Paragraf 1 memuji efisiensi mobil listrik; Paragraf 2 dimulai **'Namun, proses penambangan nikel untuk baterai justru memicu...'**."
+              "judul": "Hubungan Kontradiksi dan Pertentangan",
+              "teori_singkat": "Paragraf kedua menyajikan sanggahan atau fakta berlawanan yang membatasi pernyataan paragraf pertama.",
+              "contoh": "Paragraf 1 memuji mobil listrik; Paragraf 2 dimulai **\"Namun, penambangan nikel baterai justru memicu...\"**"
             },
             {
-              "judul_poin": "Hubungan Sebab-Akibat (Kausalitas)",
-              "penjelasan_singkat": "Paragraf kedua memaparkan dampak langsung atau konsekuensi logis dari peristiwa yang dijelaskan pada paragraf pertama.",
-              "contoh_penerapan": "Paragraf 1 memaparkan kenaikan suku bunga acuan; Paragraf 2 berlanjut **'Akibatnya, penyaluran kredit usaha melambat tajam...'**."
+              "judul": "Hubungan Sebab-Akibat (Kausalitas)",
+              "teori_singkat": "Paragraf kedua memaparkan dampak langsung atau konsekuensi logis dari peristiwa di paragraf pertama.",
+              "contoh": "Paragraf 1 mengulas kenaikan suku bunga; Paragraf 2 berlanjut **\"Akibatnya, penyaluran kredit usaha melambat...\"**"
             },
             {
-              "judul_poin": "Hubungan Masalah-Solusi (Resolusi)",
-              "penjelasan_singkat": "Paragraf kedua menawarkan langkah pencegahan, kebijakan, atau jalan keluar untuk mengatasi persoalan pada paragraf pertama.",
-              "contoh_penerapan": "Paragraf 1 mengulas tingginya sampah plastik; Paragraf 2 menawarkan **'Untuk mengatasi persoalan tersebut, pemerintah perlu menerapkan...'**."
+              "judul": "Hubungan Masalah-Solusi (Resolusi)",
+              "teori_singkat": "Paragraf kedua menawarkan kebijakan atau jalan keluar untuk mengatasi persoalan pada paragraf pertama.",
+              "contoh": "Paragraf 1 mengulas sampah plastik; Paragraf 2 menawarkan **\"Untuk mengatasi persoalan tersebut, pemerintah perlu...\"**"
             }
           ]
         },
         {
-          "nama_kelompok": "Perbandingan Sudut Pandang dan Penggabungan Informasi (Sintesis)",
+          "nama_kelompok": "Perbandingan Sudut Pandang dan Sintesis Antarteks",
           "butir": [
             {
-              "judul_poin": "Menemukan Irisan Topik Utama",
-              "penjelasan_singkat": "Mencari objek, fenomena, atau masalah inti yang sama-sama dibahas dalam Teks 1 dan Teks 2.",
-              "contoh_penerapan": "Teks 1 mengkaji aturan kecerdasan buatan di kampus; Teks 2 menyoroti **etika penggunaan kecerdasan buatan oleh mahasiswa**."
+              "judul": "Menemukan Irisan Topik Utama",
+              "teori_singkat": "Identifikasi objek, fenomena, atau masalah inti yang sama-sama dibahas dalam kedua bacaan.",
+              "contoh": "Teks 1 mengkaji aturan **kecerdasan buatan** di kampus; Teks 2 menyoroti **etika penggunaannya** oleh mahasiswa."
             },
             {
-              "judul_poin": "Perbandingan Sikap dan Nada Penulis",
-              "penjelasan_singkat": "Memetakan posisi keberpihakan kedua penulis terhadap topik yang sama, misalnya kritis-peringatan melawan optimistis-solutif.",
-              "contoh_penerapan": "Penulis Teks 1 bersikap **pesimistis terhadap dampak otomatisasi**, sedangkan Penulis Teks 2 **optimistis asalkan disertai pelatihan ulang**."
+              "judul": "Perbandingan Sikap dan Nada Penulis",
+              "teori_singkat": "Petakan posisi keberpihakan kedua penulis terhadap topik sama, misalnya pesimistis melawan optimistis-solutif.",
+              "contoh": "Penulis Teks 1 **pesimistis terhadap otomatisasi**, sedangkan Penulis Teks 2 **optimistis jika disertai pelatihan ulang**."
             },
             {
-              "judul_poin": "Penggabungan Informasi Lintas Teks (Sintesis)",
-              "penjelasan_singkat": "Menyatukan fakta Teks 1 dan Teks 2 ($P_1 + P_2 \\rightarrow K$) untuk menghasilkan kesimpulan baru yang logis.",
-              "contoh_penerapan": "Teks 1: **polusi udara memicu asma**; Teks 2: **ruang terbuka hijau menyerap polutan**; kesimpulan: RTH menekan risiko asma."
+              "judul": "Penggabungan Informasi Lintas Teks (Sintesis)",
+              "teori_singkat": "Satukan premis Teks 1 dan Teks 2 ($P_1 + P_2 \\rightarrow K$) untuk simpulan logis.",
+              "contoh": "Teks 1: **polusi memicu asma**; Teks 2: **RTH menyerap polutan** $\\rightarrow$ RTH menekan risiko asma."
             },
             {
-              "judul_poin": "Perbedaan Aspek atau Sudut Tinjauan",
-              "penjelasan_singkat": "Mengenali perbedaan sudut pandang kedua teks terhadap isu serupa, misalnya meninjau dari sisi biaya versus sisi kesehatan.",
-              "contoh_penerapan": "Teks 1 meninjau **kelayakan biaya proyek kereta cepat**, sementara Teks 2 mengevaluasi **dampak kebisingan bagi warga sekitar**."
+              "judul": "Perbedaan Aspek atau Sudut Tinjauan",
+              "teori_singkat": "Bedakan fokus analisis kedua teks terhadap isu serupa, misalnya aspek biaya versus kesehatan.",
+              "contoh": "Teks 1 meninjau **kelayakan biaya kereta cepat**, sementara Teks 2 mengevaluasi **dampak kebisingan warga**."
             }
           ]
         },
         {
-          "nama_kelompok": "Menguji Dampak Data Teks 2 terhadap Klaim Teks 1",
+          "nama_kelompok": "Dampak Data Teks 2 terhadap Klaim Teks 1",
           "butir": [
             {
-              "judul_poin": "Data Teks 2 Memperkuat Klaim Teks 1",
-              "penjelasan_singkat": "Temuan riset atau angka statistik di Teks 2 sejalan dan membuktikan kebenaran pernyataan pada Teks 1.",
-              "contoh_penerapan": "Teks 1 mengklaim literasi digital mencegah penipuan; Teks 2 mencatat **penurunan kasus penipuan sebesar $40\\%$ setelah pelatihan digital**."
+              "judul": "Data Teks 2 Memperkuat Klaim Teks 1",
+              "teori_singkat": "Temuan riset atau statistik Teks 2 sejalan dan membuktikan kebenaran pernyataan Teks 1.",
+              "contoh": "Teks 1: literasi digital cegah penipuan; Teks 2: **kasus penipuan turun $40\\%$ setelah pelatihan**."
             },
             {
-              "judul_poin": "Data Teks 2 Memperlemah Klaim Teks 1",
-              "penjelasan_singkat": "Bukti lapangan di Teks 2 menunjukkan hasil bertolak belakang atau pengecualian yang menggugurkan klaim Teks 1.",
-              "contoh_penerapan": "Teks 1 menyatakan subsidi pupuk langsung menaikkan panen; Teks 2 menemukan **hasil panen padi jalan di tempat meski subsidi naik**."
+              "judul": "Data Teks 2 Memperlemah Klaim Teks 1",
+              "teori_singkat": "Bukti lapangan Teks 2 menunjukkan hasil bertolak belakang yang menggugurkan klaim Teks 1.",
+              "contoh": "Teks 1: subsidi pupuk naikkan panen; Teks 2: **hasil panen stagnan meski subsidi naik**."
             },
             {
-              "judul_poin": "Data Teks 2 Merinci atau Membatasi Klaim",
-              "penjelasan_singkat": "Data Teks 2 tidak membantah Teks 1, melainkan memperjelas syarat, porsi, atau kelompok spesifik tempat klaim itu berlaku.",
-              "contoh_penerapan": "Teks 1 menyebut kerja jarak jauh menaikkan produktivitas; Teks 2 merinci **kenaikan hanya terjadi pada sektor teknologi**."
+              "judul": "Data Teks 2 Merinci atau Membatasi Klaim",
+              "teori_singkat": "Data Teks 2 memperjelas syarat, porsi, atau kelompok spesifik tempat klaim Teks 1 berlaku.",
+              "contoh": "Teks 1: kerja jarak jauh naikkan produktivitas; Teks 2: **kenaikan hanya pada sektor teknologi**."
+            },
+            {
+              "judul": "Data Teks 2 Tidak Relevan dengan Klaim",
+              "teori_singkat": "Data Teks 2 mengukur variabel berbeda sehingga tidak memperkuat maupun memperlemah klaim Teks 1.",
+              "contoh": "Teks 1 membahas **mutu gizi makan siang**; Teks 2 hanya mencatat **jumlah distributor logistik**."
             }
           ]
         }
@@ -172,76 +189,85 @@
       "kode_subbab": "lbi-02-03",
       "judul_subbab": "Evaluasi Kredibilitas, Opini, dan Fakta dalam Bacaan",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Fakta vs Opini:** Fakta bisa diukur dan dibuktikan kebenarannya. Sebaliknya, opini memuat penilaian subjektif, kata keharusan (*harus, pasti*), atau prediksi.\n- **Kredibilitas & Bias:** Cek keahlian narasumber sekaligus kepentingan bisnis atau politik di balik pernyataannya.\n- **Kekuatan Bukti & Logika:** Uji apakah sampelnya mewakili populasi, buktinya cukup, dan penalarannya bebas lompatan logika.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Pisahkan fakta terukur dari opini subjektif, lalu uji kredibilitas sumber, kecukupan sampel, dan validitas logika argumen.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Membedakan Fakta Terukur vs Opini Subjektif",
+          "nama_kelompok": "Membedakan Fakta Terukur vs Opini Subjektif",
           "butir": [
             {
-              "judul_poin": "Angka Terukur dan Kejadian Nyata yang Bisa Dicek",
-              "penjelasan_singkat": "Kalimat memuat angka pasti, waktu, tempat, atau hasil ukur resmi yang kebenarannya bisa dibuktikan siapa saja.",
-              "contoh_penerapan": "Badan Pusat Statistik mencatat tingkat pengangguran terbuka **turun menjadi $5,32\\%$ pada Februari 2024**."
+              "judul": "Angka Terukur dan Kejadian Nyata",
+              "teori_singkat": "Fakta memuat angka pasti, waktu, tempat, atau hasil ukur resmi yang dapat diverifikasi.",
+              "contoh": "BPS mencatat tingkat pengangguran terbuka **turun menjadi $5,32\\%$ pada Februari 2024**."
             },
             {
-              "judul_poin": "Fakta Ucapan Narasumber vs Isi Pendapatnya",
-              "penjelasan_singkat": "Kejadian narasumber mengucapkan kalimat adalah fakta, tetapi isi pendapat di dalamnya tetap tergolong opini.",
-              "contoh_penerapan": "**Menteri Keuangan menyatakan bahwa** kebijakan subsidi energi saat ini belum tepat sasaran."
+              "judul": "Fakta Ucapan vs Isi Pendapat",
+              "teori_singkat": "Peristiwa tokoh berbicara adalah fakta, tetapi isi pernyataan subjektifnya tetap tergolong opini.",
+              "contoh": "**Menteri Keuangan menyatakan bahwa** kebijakan subsidi energi saat ini belum tepat sasaran."
             },
             {
-              "judul_poin": "Kata Sifat Penilaian dan Kata Bermuatan Emosi",
-              "penjelasan_singkat": "Kata sifat yang bergantung pada sudut pandang penilai dan tidak punya standar ukur yang baku.",
-              "contoh_penerapan": "Langkah pemerintah menata pasar tradisional tersebut dinilai **sangat lamban dan mengecewakan** pedagang."
+              "judul": "Kata Sifat Penilaian Subjektif",
+              "teori_singkat": "Kata sifat evaluatif tanpa standar ukur baku menandakan opini atau penilaian pribadi penulis.",
+              "contoh": "Langkah pemerintah menata pasar tradisional dinilai **sangat lamban dan mengecewakan** pedagang."
             },
             {
-              "judul_poin": "Kata Penanda Keharusan, Peluang, dan Prediksi",
-              "penjelasan_singkat": "Kata bantu yang menunjukkan saran, harapan, kemungkinan, atau ramalan kejadian di masa depan.",
-              "contoh_penerapan": "Pemerintah daerah **seharusnya segera memprioritaskan** angkutan massal agar kemacetan **dapat terurai**."
+              "judul": "Penanda Keharusan, Peluang, dan Prediksi",
+              "teori_singkat": "Modalitas saran (*seharusnya, perlu*) dan kemungkinan (*dapat, berpotensi*) menandai opini atau prediksi.",
+              "contoh": "Pemerintah daerah **seharusnya segera memprioritaskan** angkutan massal agar kemacetan **dapat terurai**."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Menguji Kecukupan Bukti dan Cara Riset",
+          "nama_kelompok": "Menguji Kecukupan Bukti dan Cara Riset",
           "butir": [
             {
-              "judul_poin": "Sampel Terlalu Kecil atau Tidak Mewakili",
-              "penjelasan_singkat": "Cara ambil data bermasalah karena jumlah responden terlalu sedikit atau hanya diambil dari satu kelompok sempit.",
-              "contoh_penerapan": "Survei menyimpulkan $80\\%$ pelajar menyukai kelas daring **berdasarkan wawancara 15 siswa di satu sekolah**."
+              "judul": "Sampel Terlalu Kecil atau Bias",
+              "teori_singkat": "Generalisasi lemah jika jumlah responden terlalu sedikit atau hanya diambil dari kelompok sempit.",
+              "contoh": "Survei mengeklaim $80\\%$ pelajar suka kelas daring dari **wawancara 15 siswa satu sekolah**."
             },
             {
-              "judul_poin": "Data Sekadar Berkaitan Dianggap Sebab-Akibat",
-              "penjelasan_singkat": "Data hanya menunjukkan dua hal naik-turun bersamaan, lalu penulis nekat menyimpulkan hal pertama memicu hal kedua.",
-              "contoh_penerapan": "Penjualan es krim dan kasus orang tenggelam naik bersamaan, **sehingga es krim memicu risiko tenggelam**."
+              "judul": "Korelasi Dianggap Sebab-Akibat",
+              "teori_singkat": "Dua peristiwa yang terjadi bersamaan belum tentu saling memengaruhi secara kausal.",
+              "contoh": "Penjualan es krim dan kasus tenggelam naik bersamaan $\\rightarrow$ keliru menyimpulkan **es krim memicu tenggelam**."
             },
             {
-              "judul_poin": "Klaim Terlalu Luas Dibanding Buktinya",
-              "penjelasan_singkat": "Kesimpulan dibuat berlaku menyeluruh, padahal bukti yang disodorkan cuma kasus kecil atau sebagian kecil wilayah.",
-              "contoh_penerapan": "Penulis mengeklaim **seluruh pertanian nasional gagal panen**, padahal datanya cuma **penurunan padi di dua kabupaten**."
+              "judul": "Klaim Terlalu Luas dari Bukti",
+              "teori_singkat": "Simpulan digeneralisasi secara nasional padahal bukti hanya berasal dari kasus atau wilayah kecil.",
+              "contoh": "Mengeklaim **seluruh pertanian nasional gagal panen**, padahal datanya cuma **dua kabupaten**."
+            },
+            {
+              "judul": "Sumber Anonim atau Data Kedaluwarsa",
+              "teori_singkat": "Kredibilitas bukti melemah jika merujuk sumber tanpa identitas jelas atau memakai data lama.",
+              "contoh": "Klaim **\"menurut studi terbaru\" tanpa nama lembaga** atau memakai **data sepuluh tahun lalu**."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Mendeteksi Bias Sumber, Asumsi, dan Lompatan Logika",
+          "nama_kelompok": "Mendeteksi Bias Sumber, Asumsi, dan Lompatan Logika",
           "butir": [
             {
-              "judul_poin": "Kepentingan Pribadi dan Keahlian Narasumber",
-              "penjelasan_singkat": "Kepercayaan pada narasumber turun jika ia untung secara bisnis atau politik dari usulnya, atau bicara di luar bidangnya.",
-              "contoh_penerapan": "**Direktur perusahaan tambang batu bara menyatakan** bahwa energi fosil jauh lebih ramah lingkungan daripada panel surya."
+              "judul": "Konflik Kepentingan dan Kompetensi Sumber",
+              "teori_singkat": "Kredibilitas narasumber turun jika memiliki kepentingan bisnis/politik atau berbicara di luar bidang keahliannya.",
+              "contoh": "**Direktur perusahaan batu bara menyatakan** energi fosil jauh lebih ramah lingkungan daripada panel surya."
             },
             {
-              "judul_poin": "Pemilihan Kata Emosional untuk Menggiring Opini",
-              "penjelasan_singkat": "Penulis memakai kata berkonotasi ekstrem untuk memancing emosi pembaca tanpa menambah bukti nyata.",
-              "contoh_penerapan": "Warga penolak proyek disebut penulis sebagai **gerombolan penghambat kemajuan**, bukan warga terdampak."
+              "judul": "Diksi Emosional Penggiring Opini",
+              "teori_singkat": "Pemilihan kata berkonotasi ekstrem bertujuan memancing emosi pembaca tanpa dukungan bukti objektif.",
+              "contoh": "Warga penolak proyek dilabeli penulis sebagai **gerombolan penghambat kemajuan**, bukan warga terdampak."
             },
             {
-              "judul_poin": "Anggapan Tersembunyi (Asumsi) dalam Argumen",
-              "penjelasan_singkat": "Syarat dasar yang tidak ditulis langsung, tetapi wajib dianggap benar agar alasan penulis nyambung ke simpulan.",
-              "contoh_penerapan": "Harga tiket museum dinaikkan agar pengunjung menghargai sejarah. **Asumsi: Harga mahal otomatis menaikkan rasa hormat.**"
+              "judul": "Anggapan Tersembunyi (Asumsi) Argumen",
+              "teori_singkat": "Premis tak tertulis yang wajib diasumsikan benar agar alasan penulis terhubung ke simpulan.",
+              "contoh": "Tiket museum dinaikkan agar pengunjung menghargai sejarah $\\rightarrow$ **asumsi: harga mahal otomatis menumbuhkan penghargaan**."
             },
             {
-              "judul_poin": "Jebakan Menyederhanakan Masalah Kompleks",
-              "penjelasan_singkat": "Menyimpulkan masalah besar yang punya banyak penyebab seolah-olah hanya dipicu oleh satu faktor tunggal.",
-              "contoh_penerapan": "Turunnya minat baca remaja **semata-mata disebabkan oleh** hadirnya video pendek di media sosial."
+              "judul": "Penyederhanaan Masalah Kompleks",
+              "teori_singkat": "Kekeliruan menyimpulkan fenomena multifaktor seolah-olah hanya disebabkan oleh satu faktor tunggal.",
+              "contoh": "Turunnya minat baca remaja **semata-mata disebabkan oleh** hadirnya video pendek di media sosial."
             }
           ]
         }
@@ -251,86 +277,95 @@
       "kode_subbab": "lbi-02-04",
       "judul_subbab": "Analisis Infografik dan Teks Multimodal",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Teks multimodal UTBK** menggabungkan paragraf bacaan dengan infografik, tabel, atau diagram untuk menguji ketelitianmu membaca data.\n\n* **Cek Silang Teks dan Angka:** Cocokkan pernyataan umum di paragraf dengan angka spesifik pada label grafik atau tabel.\n* **Tangkap Kejanggalan Data:** Waspadai kata mutlak (*konsisten*, *selalu*, *seluruh*) di bacaan yang terbantahkan oleh naik-turunnya grafik.\n* **Gabungkan dan Prediksi:** Padukan alasan sebab-akibat di teks dengan tren angka di grafik, lalu terapkan aturan bersyarat (*jika-maka*) secara disiplin.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Cocokkan satuan dan tren data visual dengan bacaan untuk menguji konsistensi klaim serta memprediksi angka.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Mencocokkan Teks dengan Data Visual",
+          "nama_kelompok": "Mencocokkan Teks dengan Data Visual",
           "butir": [
             {
-              "judul_poin": "Cek Satuan dan Skala Angka",
-              "penjelasan_singkat": "Cocokkan angka di paragraf dengan keterangan satuan pada judul tabel, sumbu grafik, atau catatan kaki.",
-              "contoh_penerapan": "Teks menyebut produksi **12.000 ton**, sedangkan sumbu grafik tertulis **dalam ribuan ton** sehingga batang menunjuk angka **12**."
+              "judul": "Cek Satuan dan Skala Angka",
+              "teori_singkat": "Cocokkan angka paragraf dengan satuan pada judul tabel, sumbu grafik, atau catatan kaki.",
+              "contoh": "Teks menyebut **12.000 ton**, sedangkan sumbu grafik tertulis **dalam ribuan ton** $\\rightarrow$ batang menunjuk angka **12**."
             },
             {
-              "judul_poin": "Ubah Kata Jumlah Jadi Persentase",
-              "penjelasan_singkat": "Terjemahkan kata jumlah di teks menjadi angka pecahan atau persen untuk diuji dengan diagram visual.",
-              "contoh_penerapan": "Klaim **lebih dari separuh** responden setuju terbukti benar jika bagian diagram lingkaran menunjukkan angka **$52\\%$**."
+              "judul": "Konversi Kata Jumlah ke Persentase",
+              "teori_singkat": "Ubah frasa kuantitas di teks menjadi pecahan atau persen untuk dicocokkan dengan diagram.",
+              "contoh": "Klaim **lebih dari separuh** responden setuju terbukti benar jika diagram lingkaran menunjukkan angka **$52\\%$**."
             },
             {
-              "judul_poin": "Cocokkan Istilah Teks dengan Legenda Grafik",
-              "penjelasan_singkat": "Hubungkan istilah kelompok di bacaan dengan kode warna, arsiran, atau kolom spesifik pada grafik bertumpuk.",
-              "contoh_penerapan": "Bacaan membahas **sektor informal kota**, jadi kamu wajib menjumlahkan segmen batang **abu-abu** saja sesuai legenda."
+              "judul": "Tautkan Istilah Teks dengan Legenda",
+              "teori_singkat": "Hubungkan kategori kelompok di bacaan dengan kode warna atau arsiran pada legenda grafik.",
+              "contoh": "Bacaan membahas **sektor informal kota** $\\rightarrow$ jumlahkan segmen batang **abu-abu** saja sesuai legenda."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Menemukan Data yang Bertolak Belakang",
+          "nama_kelompok": "Menemukan Data yang Bertolak Belakang",
           "butir": [
             {
-              "judul_poin": "Kata Mutlak vs. Naik-Turunnya Grafik",
-              "penjelasan_singkat": "Uji kata bermakna total di teks terhadap setiap titik data tahunan pada grafik garis atau batang.",
-              "contoh_penerapan": "Klaim ekspor **terus naik setiap tahun** gugur jika grafik menunjukkan penurunan dari **$40$ ton** menjadi **$38$ ton**."
+              "judul": "Kata Mutlak vs Naik-Turunnya Grafik",
+              "teori_singkat": "Uji klaim total (*konsisten, selalu*) di teks terhadap setiap titik data tahunan pada grafik.",
+              "contoh": "Klaim ekspor **terus naik setiap tahun** gugur jika grafik turun dari **$40$** menjadi **$38$ ton**."
             },
             {
-              "judul_poin": "Klaim Peringkat Tertinggi dan Terendah",
-              "penjelasan_singkat": "Bandingkan kata superlatif (*tertinggi*, *terendah*) di bacaan dengan urutan seluruh baris atau kolom angka di tabel.",
-              "contoh_penerapan": "Pernyataan **Kota A punya polusi terendah** salah jika tabel mencantumkan **Kota D** dengan angka lebih kecil."
+              "judul": "Klaim Peringkat Tertinggi dan Terendah",
+              "teori_singkat": "Bandingkan kata superlatif (*tertinggi, terendah*) di bacaan dengan urutan seluruh angka di tabel.",
+              "contoh": "Pernyataan **Kota A polusi terendah** salah jika tabel mencantumkan **Kota D** dengan angka lebih kecil."
             },
             {
-              "judul_poin": "Beda Selisih Angka vs. Persentase Kenaikan",
-              "penjelasan_singkat": "Bedakan selisih kenaikan nominal dengan persentase pertumbuhan saat membandingkan dua kelompok berbeda.",
-              "contoh_penerapan": "Kenaikan **$100$ ke $150$** tumbuh **$50\\%$**, lebih pesat daripada kenaikan **$500$ ke $600$** yang cuma tumbuh **$20\\%$**."
+              "judul": "Selisih Nominal vs Persentase Pertumbuhan",
+              "teori_singkat": "Bedakan selisih kenaikan angka mutlak dengan persentase pertumbuhan saat membandingkan dua kelompok.",
+              "contoh": "Naik **$100$ ke $150$** tumbuh **$50\\%$**, lebih pesat dari **$500$ ke $600$** yang tumbuh **$20\\%$**."
+            },
+            {
+              "judul": "Beda Basis Total pada Persentase",
+              "teori_singkat": "Persentase lebih besar tidak otomatis bernilai nominal lebih banyak jika total populasinya berbeda.",
+              "contoh": "**$50\\%$ dari 100 siswa** (50 orang) tetap lebih sedikit daripada **$20\\%$ dari 500 siswa** (100 orang)."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Menggabungkan Sebab-Akibat Teks dengan Tren Visual",
+          "nama_kelompok": "Menggabungkan Sebab-Akibat Teks dengan Tren Visual",
           "butir": [
             {
-              "judul_poin": "Hubungkan Kata Sebab-Akibat dengan Titik Balik Grafik",
-              "penjelasan_singkat": "Tautkan kata hubung sebab-akibat di teks dengan tahun terjadinya lonjakan tajam atau penurunan kurva grafik.",
-              "contoh_penerapan": "Frasa **akibat kebijakan subsidi baru** menjelaskan mengapa garis penjualan melonjak tajam mulai kuartal **III** pada grafik."
+              "judul": "Sebab-Akibat Teks vs Titik Balik Grafik",
+              "teori_singkat": "Tautkan penjelasan penyebab di teks dengan periode terjadinya lonjakan atau penurunan tajam kurva.",
+              "contoh": "Frasa **akibat subsidi baru** menjelaskan mengapa garis penjualan melonjak mulai **kuartal III** pada grafik."
             },
             {
-              "judul_poin": "Gabungkan Cerita Masalah dengan Angka Dampaknya",
-              "penjelasan_singkat": "Padukan penjelasan hambatan di paragraf dengan angka kerugian atau cakupan wilayah pada kotak infografik.",
-              "contoh_penerapan": "Teks menjelaskan **kelangkaan pupuk**, sementara infografik mencatat **panen turun $30\\%$**, sehingga simpulannya gagal panen akibat distribusi."
+              "judul": "Narasi Masalah vs Angka Dampak Infografik",
+              "teori_singkat": "Padukan uraian hambatan di paragraf dengan angka kerugian atau cakupan wilayah pada infografik.",
+              "contoh": "Teks mengulas **kelangkaan pupuk** dan infografik mencatat **panen turun $30\\%$** $\\rightarrow$ gagal panen akibat distribusi."
             },
             {
-              "judul_poin": "Baca Hubungan Antar-Kolom di Tabel",
-              "penjelasan_singkat": "Amati pola searah atau berlawanan antara dua kolom variabel yang dibahas terpisah di dalam bacaan.",
-              "contoh_penerapan": "Saat kolom **jam belajar** naik dari **$2$ ke $6$ jam**, kolom **skor ujian** ikut naik secara konsisten."
+              "judul": "Korelasi Antar-Kolom pada Tabel",
+              "teori_singkat": "Amati pola perubahan searah atau berlawanan antara dua kolom variabel yang dibahas terpisah.",
+              "contoh": "Saat kolom **jam belajar** naik dari **$2$ ke $6$ jam**, kolom **skor ujian** ikut meningkat."
             }
           ]
         },
         {
-          "nama_kelompok": "4. Memprediksi Data Berdasarkan Aturan Bacaan",
+          "nama_kelompok": "Memprediksi Data Berdasarkan Aturan Bacaan",
           "butir": [
             {
-              "judul_poin": "Kelompokkan Data Sesuai Batas Angka",
-              "penjelasan_singkat": "Cocokkan angka tiap baris tabel dengan batas minimal atau maksimal yang ditetapkan pada aturan bacaan.",
-              "contoh_penerapan": "Aturan **skor minimal $75$ lulus** menempatkan peserta berskor **$75$** ke kategori **Lulus**, sedangkan **$74$** tidak lulus."
+              "judul": "Klasifikasi Data Sesuai Ambang Batas",
+              "teori_singkat": "Cocokkan nilai tiap baris tabel dengan syarat batas minimal atau maksimal pada bacaan.",
+              "contoh": "Aturan **skor minimal $75$ lulus** menempatkan skor **$75$** ke kategori **Lulus**, sedangkan **$74$** gagal."
             },
             {
-              "judul_poin": "Cek Syarat Ganda (\"Dan/Atau\") serta Pengecualian",
-              "penjelasan_singkat": "Periksa seluruh syarat gabungan (**dan/atau**) serta kata **kecuali** di teks sebelum menentukan status baris tabel.",
-              "contoh_penerapan": "Syarat bantuan **warga miskin dan lansia, kecuali penerima pensiun** menggugurkan warga lansia yang berstatus **pensiunan**."
+              "judul": "Syarat Ganda (Dan/Atau) dan Pengecualian",
+              "teori_singkat": "Periksa seluruh syarat gabungan (**dan/atau**) serta kata **kecuali** sebelum menentukan status data.",
+              "contoh": "Syarat **warga miskin dan lansia, kecuali penerima pensiun** menggugurkan lansia yang berstatus **pensiunan**."
             },
             {
-              "judul_poin": "Hitung Prediksi Angka Berikutnya dari Pola Tetap",
-              "penjelasan_singkat": "Hitung nilai periode berikutnya pada tabel dengan menerapkan selisih atau kelipatan tetap dari penjelasan teks.",
-              "contoh_penerapan": "Jika teks menyebut kuota **bertambah $15$ kursi per tahun**, nilai setelah **$120$** diprediksi menjadi **$135$**."
+              "judul": "Ekstrapolasi Prediksi Angka Pola Tetap",
+              "teori_singkat": "Hitung nilai periode berikutnya pada tabel dengan menerapkan selisih atau kelipatan tetap teks.",
+              "contoh": "Jika kuota **bertambah $15$ kursi per tahun**, nilai setelah **$120$** diprediksi menjadi **$135$**."
             }
           ]
         }

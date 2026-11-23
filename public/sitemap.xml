@@ -691,37 +691,43 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbe-01</loc>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pu-01</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbe-02</loc>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pu-02</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbe-03</loc>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pu-03</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbi-01</loc>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-01</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbi-02</loc>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-02</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbi-03</loc>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-03</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-04</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -787,6 +793,42 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbi-01</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbi-02</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbi-03</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbe-01</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbe-02</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/lbe-03</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pm-01</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -806,48 +848,6 @@
   </url>
   <url>
     <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pm-04</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-01</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-02</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-03</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/ppu-04</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pu-01</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pu-02</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://acapeak.spacetime0291.workers.dev/rangkuman/pu-03</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

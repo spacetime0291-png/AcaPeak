@@ -2,43 +2,51 @@
   "kode_bab": "pm-01",
   "subtes": "Subtes 7: Penalaran Matematika (PM)",
   "bab": "Bab 1: Aritmetika Sosial dan Keuangan",
-  "batch_model": "neon",
-  "jumlah_subbab": 4,
+  "estimasi_menit_review": 4,
   "daftar_subbab": [
     {
       "kode_subbab": "pm-01-01",
       "judul_subbab": "Untung, Rugi, Diskon, dan Pajak",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Di UTBK, soal aritmetika sosial jarang berhenti di satu langkah. Biasanya kamu harus menghitung perubahan harga secara berantai pakai **faktor pengali desimal**.\n\n* **Untung & Rugi:** $\\text{Untung} = H_J - H_B$ (persentase selalu dihitung dari modal $H_B$).\n* **Titik Impas (BEP):** $\\text{BEP (unit)} = \\frac{\\text{Biaya Tetap}}{H_J - \\text{Biaya Variabel/unit}}$.\n* **Diskon & Pajak Berantai:** Harga akhir $= H_0 \\times (1 - d_1)(1 - d_2) \\times (1 + p_1)(1 + p_2)$.\n* **Berat Logistik:** $\\text{Bruto} = \\text{Neto} + \\text{Tara}$ (persen tara selalu dihitung dari **bruto**).",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Gunakan faktor pengali desimal untuk rantai untung, rugi, diskon, pajak, BEP, dan berat logistik.",
       "kelompok": [
         {
           "nama_kelompok": "Diskon, Cashback, dan Perbandingan Promo",
           "butir": [
             {
-              "judul_poin": "Pengali Diskon Tunggal",
-              "penjelasan_singkat": "Daripada menghitung potongan lalu mengurangkannya, langsung kalikan harga awal ($H_0$) dengan sisa persen yang kamu bayar: $H_{\\text{bayar}} = H_0 \\times (1 - d\\%)$.",
-              "contoh_penerapan": "Jaket Rp300.000 diskon $25\\%$. Kamu cukup bayar $75\\%$-nya: $\\text{Rp300.000} \\times 0,75 =$ **Rp225.000**."
+              "judul": "Pengali Diskon Tunggal",
+              "teori_singkat": "Kalikan harga awal dengan sisa persen bayar: $H_{\\text{bayar}} = H_0(1 - d\\%)$.",
+              "contoh": "Jaket Rp300.000 diskon $25\\%$ $\\rightarrow$ $\\text{Rp300.000} \\times 0,75 =$ **Rp225.000**."
             },
             {
-              "judul_poin": "Diskon Bertingkat ($a\\% + b\\%$)",
-              "penjelasan_singkat": "Diskon kedua selalu memotong harga sisa setelah diskon pertama. Rumusnya: $H_{\\text{akhir}} = H_0(1 - a\\%)(1 - b\\%)$.",
-              "contoh_penerapan": "Tas Rp200.000 diskon $50\\% + 20\\%$. Harga bayarnya $\\text{Rp200.000} \\times 0,5 \\times 0,8 =$ **Rp80.000**."
+              "judul": "Diskon Bertingkat ($a\\% + b\\%$)",
+              "teori_singkat": "Diskon kedua memotong harga sisa: $H_{\\text{akhir}} = H_0(1 - a\\%)(1 - b\\%)$.",
+              "contoh": "Tas Rp200.000 diskon $50\\% + 20\\%$ $\\rightarrow$ $\\text{Rp200.000} \\times 0,5 \\times 0,8 =$ **Rp80.000**."
             },
             {
-              "judul_poin": "Cashback dengan Batas Maksimum",
-              "penjelasan_singkat": "Hitung dulu $c\\%$ dari total belanja. Jika hasilnya melebihi batas maksimal, potongan yang kamu dapat mentok di angka batas tersebut: $\\min(c\\% \\times H_{\\text{bayar}}, \\text{Maks})$.",
-              "contoh_penerapan": "Belanja Rp150.000 dapat *cashback* $20\\%$ maks Rp20.000. Karena $20\\% \\times 150.000 = \\text{Rp30.000}$ (melebihi batas), kamu hanya dapat **Rp20.000**."
+              "judul": "Diskon Tunggal Ekuivalen",
+              "teori_singkat": "Gabungan diskon bertingkat: $d_{\\text{ek}} = a\\% + b\\% - (a\\% \\times b\\%)$.",
+              "contoh": "Diskon $50\\% + 20\\%$ $\\equiv$ $50\\% + 20\\% - 10\\% =$ **diskon $60\\%$**."
             },
             {
-              "judul_poin": "Promo Beli $M$ Gratis $N$",
-              "penjelasan_singkat": "Diskon efektifnya adalah perbandingan jumlah barang gratis terhadap **total seluruh barang yang kamu bawa pulang**: $d_{\\text{efektif}} = \\frac{N}{M+N} \\times 100\\%$.",
-              "contoh_penerapan": "Promo beli 3 gratis 1 berarti kamu bawa 4 barang, tapi cuma bayar 3. Diskon efektifnya $\\frac{1}{3+1} \\times 100\\% =$ **$25\\%$**."
+              "judul": "Cashback dengan Batas Maksimum",
+              "teori_singkat": "Potongan mentok di batas atas: $\\text{Cashback} = \\min(c\\% \\times H_{\\text{bayar}}, \\text{Maks})$.",
+              "contoh": "Belanja Rp150.000, *cashback* $20\\%$ maks Rp20.000 $\\rightarrow$ $\\min(30\\text{ rb}, 20\\text{ rb}) =$ **Rp20.000**."
             },
             {
-              "judul_poin": "Membandingkan Promo Antar-Vendor",
-              "penjelasan_singkat": "Hitung **biaya bersih per unit** setelah semua diskon, batas *cashback*, dan ongkir masuk hitungan, lalu bandingkan antar-toko.",
-              "contoh_penerapan": "Beli 10 unit @Rp50.000: Toko A diskon $15\\%$ (**Rp425.000**), Toko B gratis 2 unit (**Rp400.000**). Pilih Toko B."
+              "judul": "Promo Beli $M$ Gratis $N$",
+              "teori_singkat": "Bandingkan barang gratis terhadap total barang dibawa: $d_{\\text{ef}} = \\frac{N}{M+N} \\times 100\\%$.",
+              "contoh": "Beli 3 gratis 1 (bawa 4) $\\rightarrow$ $\\frac{1}{3+1} \\times 100\\% =$ **diskon $25\\%$**."
+            },
+            {
+              "judul": "Perbandingan Promo Antar-Vendor",
+              "teori_singkat": "Bandingkan **biaya bersih per unit** setelah diskon, batas *cashback*, dan ongkir.",
+              "contoh": "10 unit @Rp50.000: Toko A diskon $15\\%$ (**Rp425.000**) vs B gratis 2 (**Rp400.000**) $\\rightarrow$ **pilih B**."
             }
           ]
         },
@@ -46,24 +54,29 @@
           "nama_kelompok": "Untung, Penyusutan Barang, dan Titik Impas (BEP)",
           "butir": [
             {
-              "judul_poin": "Mencari Modal Awal dari Harga Jual",
-              "penjelasan_singkat": "Karena persen untung/rugi ($p\\%$) selalu mengacu pada modal, cara balik mencari modal adalah membagi harga jual: $H_B = \\frac{H_J}{1 \\pm p\\%}$.",
-              "contoh_penerapan": "Sepatu laku Rp240.000 dengan untung $20\\%$. Modal awalnya adalah $\\frac{\\text{Rp240.000}}{1,2} =$ **Rp200.000**."
+              "judul": "Persentase Untung dan Rugi",
+              "teori_singkat": "Persentase selalu mengacu modal: $\\%U/R = \\frac{|H_J - H_B|}{H_B} \\times 100\\%$.",
+              "contoh": "Beli Rp80.000 jual Rp100.000 $\\rightarrow$ $\\frac{20.000}{80.000} \\times 100\\% =$ **untung $25\\%$**."
             },
             {
-              "judul_poin": "Harga Jual saat Ada Barang Rusak",
-              "penjelasan_singkat": "Hitung dulu total target uang yang harus masuk (modal + target untung), lalu bagi dengan jumlah barang yang **layak jual** saja ($Q_{\\text{awal}} - Q_{\\text{rusak}}$).",
-              "contoh_penerapan": "Modal Rp400.000 untuk 50 mangga, 10 busuk, ingin untung $20\\%$ (target masuk Rp480.000). Harga per mangga: $\\frac{\\text{Rp480.000}}{40} =$ **Rp12.000**."
+              "judul": "Mencari Modal Awal dari Harga Jual",
+              "teori_singkat": "Bagi harga jual dengan pengali untung/rugi: $H_B = \\frac{H_J}{1 \\pm p\\%}$.",
+              "contoh": "Sepatu laku Rp240.000, untung $20\\%$ $\\rightarrow$ $H_B = \\frac{240.000}{1,2} =$ **Rp200.000**."
             },
             {
-              "judul_poin": "Titik Impas (BEP) dalam Unit & Rupiah",
-              "penjelasan_singkat": "Titik impas terjadi saat total untung kotor dari tiap barang pas menutup biaya tetap: $\\text{BEP}_{\\text{unit}} = \\frac{\\text{Biaya Tetap}}{H_J - \\text{Biaya Variabel/unit}}$.",
-              "contoh_penerapan": "Biaya tetap Rp2.000.000, biaya variabel Rp15.000/unit, harga jual Rp25.000/unit. Impas pada $\\frac{2.000.000}{25.000 - 15.000} =$ **200 unit**."
+              "judul": "Harga Jual saat Ada Barang Rusak",
+              "teori_singkat": "Bagi target pemasukan dengan jumlah **barang layak jual** ($Q_{\\text{awal}} - Q_{\\text{rusak}}$).",
+              "contoh": "Modal Rp400.000 (50 mangga, 10 busuk), untung $20\\%$ $\\rightarrow$ $\\frac{480.000}{40} =$ **Rp12.000/buah**."
             },
             {
-              "judul_poin": "Target Penjualan untuk Laba Tertentu",
-              "penjelasan_singkat": "Cukup tambahkan target laba ($\\pi$) ke biaya tetap di bagian atas pecahan: $Q_{\\text{target}} = \\frac{\\text{Biaya Tetap} + \\pi}{H_J - \\text{Biaya Variabel/unit}}$.",
-              "contoh_penerapan": "Biaya tetap Rp1.500.000, margin Rp10.000/unit, target laba Rp1.000.000. Kamu harus jual $\\frac{1.500.000 + 1.000.000}{10.000} =$ **250 unit**."
+              "judul": "Titik Impas (BEP) Unit & Rupiah",
+              "teori_singkat": "$\\text{BEP}_{\\text{unit}} = \\frac{\\text{Biaya Tetap}}{H_J - \\text{Biaya Variabel/unit}}$; $\\text{BEP}_{\\text{Rp}} = \\text{BEP}_{\\text{unit}} \\times H_J$.",
+              "contoh": "Tetap Rp2 jt, variabel Rp15 rb, jual Rp25 rb $\\rightarrow$ $\\frac{2\\text{ jt}}{10\\text{ rb}} =$ **200 unit (Rp5 jt)**."
+            },
+            {
+              "judul": "Target Penjualan untuk Laba Tertentu",
+              "teori_singkat": "Tambahkan target laba $\\pi$: $Q_{\\text{target}} = \\frac{\\text{Biaya Tetap} + \\pi}{H_J - \\text{Biaya Variabel/unit}}$.",
+              "contoh": "Tetap Rp1,5 jt, margin Rp10 rb, target laba Rp1 jt $\\rightarrow$ $\\frac{2,5\\text{ jt}}{10\\text{ rb}} =$ **250 unit**."
             }
           ]
         },
@@ -71,24 +84,24 @@
           "nama_kelompok": "Pajak Berlapis, Biaya Layanan, dan Berat Logistik",
           "butir": [
             {
-              "judul_poin": "PPN dan Pajak Restoran (PB1)",
-              "penjelasan_singkat": "Pajak selalu dihitung dari harga setelah dipotong semua diskon: $H_{\\text{bayar}} = H_{\\text{diskon}} \\times (1 + p\\%)$.",
-              "contoh_penerapan": "Barang Rp500.000 diskon $20\\%$ lalu kena PPN $11\\%$. Total bayar: $\\text{Rp500.000} \\times 0,8 \\times 1,11 =$ **Rp444.000**."
+              "judul": "PPN dan Pajak Restoran (PB1)",
+              "teori_singkat": "Pajak dikenakan atas harga setelah diskon: $H_{\\text{bayar}} = H_{\\text{diskon}}(1 + p\\%)$.",
+              "contoh": "Rp500.000 diskon $20\\%$ lalu PPN $11\\%$ $\\rightarrow$ $500.000 \\times 0,8 \\times 1,11 =$ **Rp444.000**."
             },
             {
-              "judul_poin": "Service Charge lalu PB1 (Pajak Berlapis)",
-              "penjelasan_singkat": "Tambahkan biaya layanan ($s\\%$) dulu ke harga menu. Setelah itu, PB1 ($p\\%$) dikenakan atas gabungan harga menu dan biaya layanan tersebut.",
-              "contoh_penerapan": "Subtotal Rp200.000, layanan $5\\%$, PB1 $10\\%$. Total tagihan: $\\text{Rp200.000} \\times 1,05 \\times 1,10 =$ **Rp231.000**."
+              "judul": "Service Charge lalu PB1 (Pajak Berlapis)",
+              "teori_singkat": "Kalikan berantai: $H_{\\text{total}} = H_{\\text{menu}}(1 + s\\%)(1 + p\\%)$.",
+              "contoh": "Subtotal Rp200.000, layanan $5\\%$, PB1 $10\\%$ $\\rightarrow$ $200.000 \\times 1,05 \\times 1,10 =$ **Rp231.000**."
             },
             {
-              "judul_poin": "Bruto, Neto, dan Persentase Tara",
-              "penjelasan_singkat": "Berat kotor adalah isi ditambah kemasan ($\\text{Bruto} = \\text{Neto} + \\text{Tara}$). Berat kemasan selalu dihitung dari bruto: $\\text{Tara} = t\\% \\times \\text{Bruto}$.",
-              "contoh_penerapan": "Karung beras bruto $50\\text{ kg}$ dengan tara $2\\%$. Berat bersih isinya adalah $50 \\times (1 - 0,02) =$ **$49\\text{ kg}$**."
+              "judul": "Bruto, Neto, dan Persentase Tara",
+              "teori_singkat": "$\\text{Bruto} = \\text{Neto} + \\text{Tara}$; tara selalu dari bruto: $\\text{Tara} = t\\% \\times \\text{Bruto}$.",
+              "contoh": "Beras bruto $50\\text{ kg}$, tara $2\\%$ $\\rightarrow$ neto $= 50 \\times 0,98 =$ **$49\\text{ kg}$**."
             },
             {
-              "judul_poin": "Harga Modal per Kilogram Neto",
-              "penjelasan_singkat": "Untuk mencari harga beli per kg bersih, bagi total uang yang kamu bayar dengan **total berat neto** seluruh karung.",
-              "contoh_penerapan": "Beli 2 karung (bruto $25\\text{ kg}$/karung, tara $4\\%$, jadi neto $24\\text{ kg}$/karung) seharga Rp480.000. Modal per kg neto: $\\frac{\\text{Rp480.000}}{48} =$ **Rp10.000**."
+              "judul": "Harga Modal per Kilogram Neto",
+              "teori_singkat": "Bagi total harga beli dengan **total berat neto** seluruh kemasan.",
+              "contoh": "2 karung @bruto $25\\text{ kg}$ (tara $4\\%$, neto $48\\text{ kg}$) Rp480.000 $\\rightarrow$ $\\frac{480.000}{48} =$ **Rp10.000/kg**."
             }
           ]
         }
@@ -98,71 +111,80 @@
       "kode_subbab": "pm-01-02",
       "judul_subbab": "Bunga Tunggal, Bunga Majemuk, dan Cicilan",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Bunga Tunggal:** Bunganya selalu dihitung dari modal awal ($M_0$). Rumus saldo akhir: $M_t = M_0(1 + i \\cdot t)$, dengan $i$ adalah bunga bersih setelah pajak.\\n- **Bunga Majemuk:** Bunga tiap periode digabung ke modal untuk dihitung lagi di periode berikutnya. Rumusnya: $M_t = M_0(1 + i)^t$.\\n- **Cicilan Bunga Flat:** Cicilan per bulan selalu tetap, yaitu $\\frac{P}{n} + (i_{\\text{flat}} \\times P)$. Ingat, pokok utang $P$ adalah $\\text{Harga} - \\text{DP}$.\\n- **Penyusutan Aset:** Nilai barang turun tiap tahun secara tetap $V_t = V_0 - D \\cdot t$ (garis lurus) atau berdasarkan persentase sisa nilai $V_t = V_0(1 - r)^t$ (saldo menurun).",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Bedakan bunga tetap terhadap modal awal, bunga berbunga eksponensial, skema cicilan, dan penyusutan nilai aset.",
       "kelompok": [
         {
           "nama_kelompok": "Bunga Tunggal, Bunga Majemuk, dan Pajak Bunga",
           "butir": [
             {
-              "judul_poin": "Bunga Tunggal dan Saldo Akhir",
-              "penjelasan_singkat": "Bunga selalu dihitung dari modal awal ($B = M_0 \\cdot i \\cdot t$). Jadi, saldo akhirnya adalah $M_t = M_0(1 + i \\cdot t)$.",
-              "contoh_penerapan": "Modal $\\text{Rp2.000.000}$, bunga tunggal $6\\%$ per tahun selama $8$ bulan: bunga $= 2.000.000 \\times 6\\% \\times \\frac{8}{12} =$ **$\\text{Rp80.000}$**."
+              "judul": "Bunga Tunggal dan Saldo Akhir",
+              "teori_singkat": "Bunga dari modal awal: $B = M_0 \\cdot i \\cdot t$, saldo $M_t = M_0(1 + i \\cdot t)$.",
+              "contoh": "Modal Rp2 jt, bunga $6\\%$/thn, $8$ bulan $\\rightarrow$ $2\\text{ jt} \\times 6\\% \\times \\frac{8}{12} =$ **Rp80.000**."
             },
             {
-              "judul_poin": "Bunga Majemuk (Per Tahun, Semester, atau Bulan)",
-              "penjelasan_singkat": "Jika bunga tahunan $r$ digabung $k$ kali setahun selama $t$ tahun, saldo akhirnya adalah $M_t = M_0\\left(1 + \\frac{r}{k}\\right)^{k \\cdot t}$.",
-              "contoh_penerapan": "Modal $\\text{Rp1.000.000}$, bunga $12\\%$ per tahun digabung tiap semester ($k=2$) selama $1$ tahun: $M_1 = 1.000.000(1 + 0,06)^2 =$ **$\\text{Rp1.123.600}$**."
+              "judul": "Bunga Majemuk (Majemuk $k$ Kali/Tahun)",
+              "teori_singkat": "Bunga berbunga $k$ kali setahun: $M_t = M_0\\left(1 + \\frac{r}{k}\\right)^{k \\cdot t}$.",
+              "contoh": "Rp1 jt, $12\\%$/thn per semester ($k=2$), $1$ thn $\\rightarrow$ $1\\text{ jt}(1,06)^2 =$ **Rp1.123.600**."
             },
             {
-              "judul_poin": "Bunga Bersih Setelah Potong Pajak",
-              "penjelasan_singkat": "Pajak bunga $p\\%$ memangkas persentase bunga yang kamu terima menjadi $i_{\\text{bersih}} = i_{\\text{kotor}} \\times (1 - p\\%)$.",
-              "contoh_penerapan": "Deposito berbunga $5\\%$ kena pajak bunga $20\\%$: bunga bersihnya adalah $5\\% \\times (1 - 0,2) =$ **$4\\%$** per tahun."
+              "judul": "Bunga Bersih Setelah Potong Pajak",
+              "teori_singkat": "Pajak $p\\%$ memangkas suku bunga: $i_{\\text{bersih}} = i_{\\text{kotor}}(1 - p\\%)$.",
+              "contoh": "Deposito $5\\%$ kena pajak bunga $20\\%$ $\\rightarrow$ $5\\% \\times 0,8 =$ **$4\\%$/tahun**."
             },
             {
-              "judul_poin": "Mencari Modal Awal atau Lama Menabung",
-              "penjelasan_singkat": "Modal awal dicari dengan $M_0 = \\frac{M_t}{(1+i)^t}$. Untuk mencari lama periode $t$ bunga majemuk, gunakan $t = \\frac{\\log(M_t/M_0)}{\\log(1+i)}$.",
-              "contoh_penerapan": "Agar $\\text{Rp1.000.000}$ jadi $\\text{Rp1.210.000}$ dengan bunga majemuk $10\\%$: $(1,1)^t = 1,21 \\Rightarrow t =$ **$2$ periode**."
+              "judul": "Mencari Modal Awal atau Lama Menabung",
+              "teori_singkat": "$M_0 = \\frac{M_t}{(1+i)^t}$; lama periode majemuk: $t = \\frac{\\log(M_t/M_0)}{\\log(1+i)}$.",
+              "contoh": "Rp1 jt jadi Rp1,21 jt, bunga majemuk $10\\%$ $\\rightarrow$ $(1,1)^t = 1,21 \\Rightarrow$ **$t = 2$ periode**."
             }
           ]
         },
         {
-          "nama_kelompok": "Cicilan Bunga Flat, DP, dan Denda",
+          "nama_kelompok": "Cicilan Bunga Flat, Efektif, DP, dan Denda",
           "butir": [
             {
-              "judul_poin": "Menentukan Pokok Utang Setelah DP",
-              "penjelasan_singkat": "Bunga cicilan hanya berlaku pada sisa harga yang belum dibayar: $P = \\text{Harga Tunai} - \\text{DP}$.",
-              "contoh_penerapan": "Motor $\\text{Rp20.000.000}$ dibeli dengan DP $15\\%$ ($\\text{Rp3.000.000}$). Pokok utang yang kena bunga adalah **$\\text{Rp17.000.000}$**."
+              "judul": "Menentukan Pokok Utang Setelah DP",
+              "teori_singkat": "Bunga hanya pada sisa utang: $P = \\text{Harga Tunai} - \\text{DP}$.",
+              "contoh": "Motor Rp20 jt, DP $15\\%$ (Rp3 jt) $\\rightarrow$ pokok utang $=$ **Rp17.000.000**."
             },
             {
-              "judul_poin": "Cicilan Bulanan Tetap (Bunga Flat)",
-              "penjelasan_singkat": "Cicilan bulanan flat selalu sama tiap bulan: $A = \\frac{P}{n} + (i_{\\text{flat}} \\times P)$ untuk lama cicilan $n$ bulan.",
-              "contoh_penerapan": "Pokok $P = \\text{Rp12.000.000}$, cicilan $12$ bulan, bunga flat $1\\%$ per bulan: $A = 1.000.000 + 120.000 =$ **$\\text{Rp1.120.000/bulan}$**."
+              "judul": "Cicilan Bulanan Tetap (Bunga Flat)",
+              "teori_singkat": "Cicilan sama tiap bulan: $A = \\frac{P}{n} + (i_{\\text{flat}} \\times P)$.",
+              "contoh": "Pokok Rp12 jt, $12$ bln, flat $1\\%$/bln $\\rightarrow$ $1\\text{ jt} + 120\\text{ rb} =$ **Rp1.120.000/bln**."
             },
             {
-              "judul_poin": "Total Uang Keluar dan Denda Telat Bayar",
-              "penjelasan_singkat": "Total biaya kredit adalah $\\text{DP} + (n \\times A) + \\text{Denda}$. Denda dihitung sesuai aturan harian atau bulanan di soal.",
-              "contoh_penerapan": "Cicilan $\\text{Rp1.000.000}$ telat $5$ hari dengan denda $0,5\\%$ per hari: denda $= 5 \\times 0,5\\% \\times 1.000.000 =$ **$\\text{Rp25.000}$**."
+              "judul": "Bunga Efektif (Sisa Pokok) & Anuitas",
+              "teori_singkat": "Bunga dari **sisa pokok** ($B_k = i \\cdot S_{k-1}$); anuitas $A = a_k + B_k$ tetap.",
+              "contoh": "Utang Rp10 jt, cicil pokok Rp2 jt, efektif $1\\%$/bln $\\rightarrow$ bunga bln ke-2: $1\\% \\times 8\\text{ jt} =$ **Rp80.000**."
+            },
+            {
+              "judul": "Total Uang Keluar dan Denda Telat",
+              "teori_singkat": "Total biaya kredit: $\\text{DP} + (n \\times A) + \\text{Denda}$ sesuai tarif telat.",
+              "contoh": "Cicilan Rp1 jt telat $5$ hari, denda $0,5\\%$/hari $\\rightarrow$ $5 \\times 0,5\\% \\times 1\\text{ jt} =$ **Rp25.000**."
             }
           ]
         },
         {
-          "nama_kelompok": "Bandingkan Tawaran Keuangan dan Penyusutan Aset",
+          "nama_kelompok": "Perbandingan Tawaran Keuangan dan Penyusutan Aset",
           "butir": [
             {
-              "judul_poin": "Membandingkan Nilai Uang Sekarang (Present Value)",
-              "penjelasan_singkat": "Untuk membandingkan uang sekarang dan masa depan, tarik dulu nilai masa depan ke saat ini: $PV = \\frac{FV}{(1+i)^t}$.",
-              "contoh_penerapan": "Bayar tunai $\\text{Rp10.000.000}$ sekarang vs $\\text{Rp10.450.000}$ tahun depan (bunga $10\\%$): $PV = \\frac{10.450.000}{1,1} =$ **$\\text{Rp9.500.000}$** (bayar tahun depan lebih hemat)."
+              "judul": "Nilai Uang Sekarang (Present Value)",
+              "teori_singkat": "Tarik nilai masa depan ke sekarang: $PV = \\frac{FV}{(1+i)^t}$.",
+              "contoh": "Tunai Rp10 jt vs Rp10,45 jt tahun depan ($10\\%$) $\\rightarrow$ $PV = \\frac{10,45}{1,1} =$ **Rp9,5 jt (lebih hemat)**."
             },
             {
-              "judul_poin": "Penyusutan Garis Lurus (Linear)",
-              "penjelasan_singkat": "Nilai barang turun dengan nominal rupiah yang selalu sama tiap tahun: $V_t = V_0 - D \\cdot t$, dengan $D = \\frac{V_0 - V_{\\text{sisa}}}{n}$.",
-              "contoh_penerapan": "Mesin $\\text{Rp50.000.000}$ menyusut tetap $\\text{Rp4.000.000}$ per tahun. Setelah $3$ tahun, nilainya $50.000.000 - 3(4.000.000) =$ **$\\text{Rp38.000.000}$**."
+              "judul": "Penyusutan Garis Lurus (Linear)",
+              "teori_singkat": "Nominal susut tetap per tahun: $V_t = V_0 - D \\cdot t$, $D = \\frac{V_0 - V_{\\text{sisa}}}{n}$.",
+              "contoh": "Mesin Rp50 jt susut Rp4 jt/thn, $3$ tahun $\\rightarrow$ $50 - 3(4) =$ **Rp38.000.000**."
             },
             {
-              "judul_poin": "Penyusutan Persentase (Saldo Menurun)",
-              "penjelasan_singkat": "Nilai barang turun sebesar persentase tetap $r$ dari nilai tahun sebelumnya: $V_t = V_0(1 - r)^t$.",
-              "contoh_penerapan": "Mobil $\\text{Rp200.000.000}$ menyusut $10\\%$ per tahun dari nilai buku. Setelah $2$ tahun: $V_2 = 200.000.000(0,9)^2 =$ **$\\text{Rp162.000.000}$**."
+              "judul": "Penyusutan Persentase (Saldo Menurun)",
+              "teori_singkat": "Susut persen tetap dari nilai sebelumnya: $V_t = V_0(1 - r)^t$.",
+              "contoh": "Mobil Rp200 jt susut $10\\%$/thn, $2$ tahun $\\rightarrow$ $200\\text{ jt}(0,9)^2 =$ **Rp162.000.000**."
             }
           ]
         }
@@ -172,51 +194,65 @@
       "kode_subbab": "pm-01-03",
       "judul_subbab": "Rasio, Proporsi, dan Skala dalam Konteks Nyata",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Perbandingan Senilai vs Berbalik Nilai:** Senilai jika keduanya naik bareng ($\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$); berbalik nilai jika satu naik, satunya turun ($a_1 \\cdot b_1 = a_2 \\cdot b_2$, contohnya pekerja-waktu dan roda gigi).\n- **Skala Panjang & Luas:** Panjang dikali $k$ ($J_s = J_p \\times k$), sedangkan luas wajib dikali $k^2$ ($L_s = L_p \\times k^2$). Ingat konversi: $1\\text{ m}^2 = 10.000\\text{ cm}^2$ dan $1\\text{ ha} = 10.000\\text{ m}^2$.\n- **Campuran & Bagi Hasil:** Total zat murni sebelum dan sesudah dicampur selalu sama: $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$. Sementara bagian laba (dividen) sebanding dengan $\\text{Modal} \\times \\text{Lama Aktif}$.\n- **Kurs Valas:** Selalu pakai sudut pandang bank. Kamu beli mata uang asing (bank menjual) pakai **Kurs Jual**; kamu tukar mata uang asing ke rupiah (bank membeli) pakai **Kurs Beli**.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Kelola perbandingan senilai, berbalik nilai, skala pangkat dimensi, kekekalan zat campuran, dan kurs sudut pandang bank.",
       "kelompok": [
         {
           "nama_kelompok": "Proporsi Senilai, Berbalik Nilai, Dividen, dan Roda Gigi",
           "butir": [
             {
-              "judul_poin": "Menggabungkan Dua Rasio (Tiga Variabel)",
-              "penjelasan_singkat": "Untuk menggabungkan rasio $A:B$ dan $B:C$, samakan dulu angka pada huruf penghubungnya ($B$) memakai KPK.",
-              "contoh_penerapan": "Jika $A:B = 2:3$ dan $B:C = 4:5$, samakan $B$ menjadi $12$. Hasil rasio gabungannya adalah **$A:B:C = 8:12:15$**."
+              "judul": "Perbandingan Senilai (Proporsi Langsung)",
+              "teori_singkat": "Kedua besaran naik/turun sebanding: $\\frac{a_1}{b_1} = \\frac{a_2}{b_2}$.",
+              "contoh": "$3$ liter untuk $45\\text{ km}$ $\\rightarrow$ $5$ liter menempuh $\\frac{5}{3} \\times 45 =$ **$75\\text{ km}$**."
             },
             {
-              "judul_poin": "Perbandingan Berbalik Nilai (Pekerja & Waktu)",
-              "penjelasan_singkat": "Total beban kerja selalu tetap ($P_1 \\cdot t_1 = P_2 \\cdot t_2$). Jika waktu sisa makin sempit, jumlah pekerja harus ditambah.",
-              "contoh_penerapan": "Proyek $12$ orang selesai $20$ hari. Setelah jalan $8$ hari lalu libur $4$ hari, sisa $8$ hari butuh $\\frac{12 \\times 12}{8} =$ **$18$ pekerja**."
+              "judul": "Menggabungkan Dua Rasio (Tiga Variabel)",
+              "teori_singkat": "Samakan angka variabel penghubung ($B$) memakai KPK untuk gabungkan $A:B$ dan $B:C$.",
+              "contoh": "$A:B = 2:3$ dan $B:C = 4:5$ (KPK $B = 12$) $\\rightarrow$ **$A:B:C = 8:12:15$**."
             },
             {
-              "judul_poin": "Pembagian Laba (Dividen) Berdasarkan Modal & Durasi",
-              "penjelasan_singkat": "Porsi laba tiap mitra sebanding dengan hasil kali modal dan lama bulan aktifnya ($L_i \\propto M_i \\times t_i$).",
-              "contoh_penerapan": "A setor $\\text{Rp}20\\text{ jt}$ ($12$ bln) dan B $\\text{Rp}30\\text{ jt}$ ($6$ bln). Rasio laba A:B adalah $240:180 =$ **$4:3$**."
+              "judul": "Perbandingan Berbalik Nilai (Pekerja & Waktu)",
+              "teori_singkat": "Beban kerja tetap: $P_1 \\cdot t_1 = P_2 \\cdot t_2$; waktu menyempit, pekerja bertambah.",
+              "contoh": "$12$ orang $20$ hari; jalan $8$ hari, libur $4$ hari $\\rightarrow$ sisa $8$ hari butuh $\\frac{12 \\times 12}{8} =$ **$18$ orang**."
             },
             {
-              "judul_poin": "Rasio Roda Gigi dan Kecepatan Putar",
-              "penjelasan_singkat": "Pada dua gir yang giginya saling bertautan, makin banyak gigi ($Z$), makin lambat putarannya ($N$): $Z_1 \\cdot N_1 = Z_2 \\cdot N_2$.",
-              "contoh_penerapan": "Gir $20$ gigi berputar $600\\text{ rpm}$ memutar gir $50$ gigi. Putarannya menjadi **$\\frac{20 \\times 600}{50} = 240\\text{ rpm}$**."
+              "judul": "Pembagian Laba (Dividen) Modal & Durasi",
+              "teori_singkat": "Porsi laba sebanding modal kali lama aktif: $L_i \\propto M_i \\times t_i$.",
+              "contoh": "A Rp20 jt ($12$ bln) vs B Rp30 jt ($6$ bln) $\\rightarrow$ $240:180 =$ **rasio $4:3$**."
+            },
+            {
+              "judul": "Rasio Roda Gigi dan Kecepatan Putar",
+              "teori_singkat": "Gir bertautan berbalik nilai jumlah gigi ($Z$) dan putaran ($N$): $Z_1 N_1 = Z_2 N_2$.",
+              "contoh": "Gir $20$ gigi ($600\\text{ rpm}$) putar gir $50$ gigi $\\rightarrow$ $\\frac{20 \\times 600}{50} =$ **$240\\text{ rpm}$**."
             }
           ]
         },
         {
-          "nama_kelompok": "Skala Peta, Denah Arsitektur, dan Konversi Luas",
+          "nama_kelompok": "Skala Peta, Denah Arsitektur, dan Konversi Dimensi",
           "butir": [
             {
-              "judul_poin": "Skala Panjang Peta dan Jarak Sebenarnya",
-              "penjelasan_singkat": "Pada skala $1:k$, jarak asli dihitung dengan $J_s = J_p \\times k$. Pastikan satuan awal sudah sama sebelum menghitung.",
-              "contoh_penerapan": "Jarak $4\\text{ cm}$ pada peta berskala $1:250.000$ setara dengan $4 \\times 250.000\\text{ cm} =$ **$10\\text{ km}$**."
+              "judul": "Skala Panjang Peta dan Jarak Sebenarnya",
+              "teori_singkat": "Skala $1:k$ berlaku $J_s = J_p \\times k$; samakan satuan panjang dahulu.",
+              "contoh": "$4\\text{ cm}$ pada peta $1:250.000$ $\\rightarrow$ $4 \\times 250.000\\text{ cm} =$ **$10\\text{ km}$**."
             },
             {
-              "judul_poin": "Skala Luas Bidang dan Konversi Hektare",
-              "penjelasan_singkat": "Karena luas punya dua sisi (panjang dan lebar), faktor pengalinya dikuadratkan: $L_s = L_p \\times k^2$, dengan $1\\text{ ha} = 10.000\\text{ m}^2$.",
-              "contoh_penerapan": "Denah skala $1:500$ ($1\\text{ cm} = 5\\text{ m}$) seluas $8\\text{ cm}^2$ punya luas asli $8 \\times 5^2\\text{ m}^2 =$ **$200\\text{ m}^2$**."
+              "judul": "Skala Luas Bidang dan Konversi Hektare",
+              "teori_singkat": "Pengali luas dikuadratkan: $L_s = L_p \\times k^2$; ingat $1\\text{ ha} = 10.000\\text{ m}^2$.",
+              "contoh": "Denah $1:500$ ($1\\text{ cm} = 5\\text{ m}$) seluas $8\\text{ cm}^2$ $\\rightarrow$ $8 \\times 5^2 =$ **$200\\text{ m}^2$**."
             },
             {
-              "judul_poin": "Mengubah Skala Denah (Diperbesar atau Diperkecil)",
-              "penjelasan_singkat": "Jika denah skala $1:k_1$ digambar ulang menjadi $1:k_2$, panjang gambar barunya adalah $J_2 = J_1 \\times \\frac{k_1}{k_2}$.",
-              "contoh_penerapan": "Jalan $6\\text{ cm}$ di peta $1:100.000$ digambar ulang ke skala $1:25.000$ menjadi $6 \\times \\frac{100.000}{25.000} =$ **$24\\text{ cm}$**."
+              "judul": "Skala Volume (Model 3D / Maket)",
+              "teori_singkat": "Pengali volume dipangkatkan tiga: $V_s = V_p \\times k^3$.",
+              "contoh": "Maket tangki skala $1:10$ bervolume $2\\text{ liter}$ $\\rightarrow$ asli $2 \\times 10^3 =$ **$2.000\\text{ liter}$**."
+            },
+            {
+              "judul": "Mengubah Skala Denah",
+              "teori_singkat": "Ubah skala $1:k_1$ ke $1:k_2$ dengan $J_2 = J_1 \\times \\frac{k_1}{k_2}$.",
+              "contoh": "Jalan $6\\text{ cm}$ di peta $1:100.000$ ke $1:25.000$ $\\rightarrow$ $6 \\times \\frac{100.000}{25.000} =$ **$24\\text{ cm}$**."
             }
           ]
         },
@@ -224,14 +260,14 @@
           "nama_kelompok": "Pencampuran Larutan dan Konsentrasi Zat Murni",
           "butir": [
             {
-              "judul_poin": "Mencampur Dua Larutan Beda Kadar",
-              "penjelasan_singkat": "Jumlah zat murni tidak pernah hilang: $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$, dengan kadar $0\\% \\le C \\le 100\\%$.",
-              "contoh_penerapan": "Campuran $200\\text{ mL}$ alkohol $30\\%$ dan $300\\text{ mL}$ alkohol $80\\%$ berkadar akhir $\\frac{60 + 240}{500} =$ **$60\\%$**."
+              "judul": "Mencampur Dua Larutan Beda Kadar",
+              "teori_singkat": "Kekekalan zat murni: $V_1 C_1 + V_2 C_2 = (V_1 + V_2)C_{\\text{akhir}}$.",
+              "contoh": "$200\\text{ mL}$ alkohol $30\\%$ + $300\\text{ mL}$ ($80\\%$) $\\rightarrow$ $\\frac{60 + 240}{500} =$ **kadar $60\\%$**."
             },
             {
-              "judul_poin": "Menambah Air (Pelarut) atau Zat Murni",
-              "penjelasan_singkat": "Air murni punya kadar zat terlarut $C_2 = 0\\%$, sedangkan bahan murni yang ditambahkan punya kadar $C_2 = 100\\%$.",
-              "contoh_penerapan": "Larutan garam $400\\text{ g}$ kadar $15\\%$ ditambah $100\\text{ g}$ air ($0\\%$) menjadi berkadar $\\frac{60 + 0}{500} =$ **$12\\%$**."
+              "judul": "Menambah Air (Pelarut) atau Zat Murni",
+              "teori_singkat": "Gunakan kadar air murni $C_2 = 0\\%$ dan zat murni $C_2 = 100\\%$.",
+              "contoh": "$400\\text{ g}$ garam $15\\%$ + $100\\text{ g}$ air ($0\\%$) $\\rightarrow$ $\\frac{60 + 0}{500} =$ **kadar $12\\%$**."
             }
           ]
         },
@@ -239,14 +275,14 @@
           "nama_kelompok": "Kurs Valuta Asing dan Konversi Satuan Majemuk",
           "butir": [
             {
-              "judul_poin": "Transaksi Valas Pakai Kurs Jual dan Kurs Beli",
-              "penjelasan_singkat": "Patokannya selalu bank: nasabah beli valas pakai **Kurs Jual**, nasabah jual valas ke rupiah pakai **Kurs Beli**.",
-              "contoh_penerapan": "Kurs beli $\\text{Rp}15.000$ dan kurs jual $\\text{Rp}15.200$. Menukar $\\text{Rp}30,4\\text{ jt}$ ke USD mendapat **$\\text{USD } 2.000$**."
+              "judul": "Transaksi Valas (Kurs Jual & Beli)",
+              "teori_singkat": "Sudut pandang bank: beli valas pakai **Kurs Jual**, jual valas pakai **Kurs Beli**.",
+              "contoh": "Kurs beli Rp15.000, jual Rp15.200; tukar Rp30,4 jt ke USD $\\rightarrow$ $\\frac{30,4\\text{ jt}}{15.200} =$ **USD 2.000**."
             },
             {
-              "judul_poin": "Konversi Satuan Majemuk (Dosis Obat & Nutrisi)",
-              "penjelasan_singkat": "Coret satuan secara berantai: $\\frac{\\text{dosis}}{\\text{kg}\\cdot\\text{hari}} \\times \\text{berat badan} \\div \\text{frekuensi minum}$.",
-              "contoh_penerapan": "Dosis $15\\text{ mg/kg/hari}$ dibagi $3$ kali minum untuk anak $20\\text{ kg}$ adalah $\\frac{15 \\times 20}{3} =$ **$100\\text{ mg/minum}$**."
+              "judul": "Konversi Satuan Majemuk (Dosis & Nutrisi)",
+              "teori_singkat": "Coret satuan berantai: $\\frac{\\text{dosis}}{\\text{kg}\\cdot\\text{hari}} \\times \\text{berat} \\div \\text{frekuensi}$.",
+              "contoh": "Dosis $15\\text{ mg/kg/hari}$, anak $20\\text{ kg}$, $3\\times$/hari $\\rightarrow$ $\\frac{15 \\times 20}{3} =$ **$100\\text{ mg/minum}$**."
             }
           ]
         }
@@ -256,26 +292,30 @@
       "kode_subbab": "pm-01-04",
       "judul_subbab": "Optimasi Biaya dan Perencanaan Anggaran",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Soal optimasi biaya di UTBK menguji cara mengambil keputusan paling hemat saat dibatasi kapasitas, aturan tarif, dan pagu dana:\n- **Campuran Paket:** Cari total biaya terkecil $\\sum (n_i \\times P_i)$ asalkan kapasitasnya cukup, yaitu $\\sum (n_i \\times K_i) \\ge K_{\\text{target}}$.\n- **Tarif Berjenjang (Progresif):** Hitung tagihan per lapisan pemakaian dari bawah ke atas, jangan langsung dikali tarif tertinggi.\n- **Batas Anggaran:** Untuk memaksimalkan satu pos fleksibel, tekan semua pos wajib lainnya ke batas minimum.\n- **Sewa vs Beli:** Bandingkan biaya sewa $C_{\\text{sewa}} = v_1 t$ dengan biaya beli bersih $C_{\\text{beli}} = (F - S) + v_2 t$.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Minimalkan total biaya lewat uji kombinasi paket, tarif berlapis, penguncian batas anggaran, dan titik impas sewa-beli.",
       "kelompok": [
         {
           "nama_kelompok": "Memilih Campuran Paket Paling Hemat",
           "butir": [
             {
-              "judul_poin": "Cek Harga per Satuan (Unit Cost)",
-              "penjelasan_singkat": "Bagi harga paket dengan kapasitasnya, $r_i = \\frac{P_i}{K_i}$, agar kamu tahu paket mana yang paling irit secara satuan.",
-              "contoh_penerapan": "Paket A (10 GB, Rp40.000) biayanya **Rp4.000/GB**, lebih hemat daripada Paket B (6 GB, Rp30.000) yang **Rp5.000/GB**."
+              "judul": "Cek Harga per Satuan (Unit Cost)",
+              "teori_singkat": "Hitung tarif satuan $r_i = \\frac{P_i}{K_i}$ untuk menemukan paket paling irit.",
+              "contoh": "Paket A 10 GB (Rp40 rb $\\rightarrow$ **Rp4 rb/GB**) lebih irit daripada B 6 GB (Rp30 rb $\\rightarrow$ Rp5 rb/GB)."
             },
             {
-              "judul_poin": "Uji Campuran Paket Bilangan Bulat",
-              "penjelasan_singkat": "Cari jumlah paket $(n_1, n_2)$ berupa bilangan cacah yang meminimalkan $P_1 n_1 + P_2 n_2$ dengan syarat $K_1 n_1 + K_2 n_2 \\ge K_{\\text{target}}$.",
-              "contoh_penerapan": "Butuh 13 kursi; pilihan SUV 5 kursi (Rp200.000) dan sedan 4 kursi (Rp170.000) paling hemat di **1 SUV + 2 sedan = Rp540.000**."
+              "judul": "Uji Campuran Paket Bilangan Bulat",
+              "teori_singkat": "Minimalkan $P_1 n_1 + P_2 n_2$ ($n_i$ cacah) dengan syarat $K_1 n_1 + K_2 n_2 \\ge K_{\\text{target}}$.",
+              "contoh": "Target 13 kursi: SUV 5 (Rp200 rb), sedan 4 (Rp170 rb) $\\rightarrow$ **1 SUV + 2 sedan (Rp540 rb)**."
             },
             {
-              "judul_poin": "Bandingkan Paket Besar Tunggal vs Campuran",
-              "penjelasan_singkat": "Bandingkan biaya membulatkan paket besar ke atas, $\\lceil \\frac{K_{\\text{target}}}{K_{\\text{besar}}} \\rceil \\times P_{\\text{besar}}$, dengan campuran paket besar ditambah paket kecil.",
-              "contoh_penerapan": "Butuh 22 porsi katering dengan Paket 10 porsi (Rp180.000) dan Paket 5 porsi (Rp120.000): 2 paket besar + 1 paket kecil (**Rp480.000**) lebih murah daripada 3 paket besar (**Rp540.000**)."
+              "judul": "Paket Besar Tunggal vs Campuran",
+              "teori_singkat": "Bandingkan pembulatan paket besar $\\lceil \\frac{K_{\\text{target}}}{K_{\\text{besar}}} \\rceil P_{\\text{besar}}$ dengan campuran paket besar + kecil.",
+              "contoh": "22 porsi (P10 Rp180 rb, P5 Rp120 rb) $\\rightarrow$ **2 besar + 1 kecil (Rp480 rb)** vs 3 besar (Rp540 rb)."
             }
           ]
         },
@@ -283,19 +323,24 @@
           "nama_kelompok": "Menghitung Tarif Progresif & Berjenjang",
           "butir": [
             {
-              "judul_poin": "Pecah Pemakaian per Lapisan (Blok Tarif)",
-              "penjelasan_singkat": "Bagi total pemakaian $Q$ ke tiap lapisan $\\Delta Q_i$, lalu jumlahkan hasilnya: $\\sum (\\Delta Q_i \\times T_i)$.",
-              "contoh_penerapan": "Pakai air $25\\text{ m}^3$: $10\\text{ m}^3$ pertama $\\times$ Rp2.000 + $10\\text{ m}^3$ kedua $\\times$ Rp3.000 + sisa $5\\text{ m}^3 \\times$ Rp5.000 = **Rp75.000**."
+              "judul": "Pecah Pemakaian per Lapisan (Blok Tarif)",
+              "teori_singkat": "Pecah pemakaian $Q$ ke tiap blok tarif: $\\text{Total} = \\sum (\\Delta Q_i \\times T_i)$.",
+              "contoh": "Air $25\\text{ m}^3$: $10 \\times \\text{Rp2 rb} + 10 \\times \\text{Rp3 rb} + 5 \\times \\text{Rp5 rb} =$ **Rp75.000**."
             },
             {
-              "judul_poin": "Tarif Parkir dengan Pembulatan Jam ke Atas",
-              "penjelasan_singkat": "Bulatkan total waktu parkir $t$ ke atas dalam satuan jam ($\\lceil t \\rceil$), lalu hitung tarif jam pertama ditambah sisa jam berikutnya.",
-              "contoh_penerapan": "Parkir 3 jam 15 menit dihitung **4 jam**; tarif Rp5.000 (jam pertama) + $3 \\times$ Rp3.000 = **Rp14.000**."
+              "judul": "Tarif Abonemen (Biaya Dasar + Progresif)",
+              "teori_singkat": "Tambahkan biaya tetap/buka pintu di awal: $C = F_{\\text{dasar}} + \\sum (\\Delta Q_i \\times T_i)$.",
+              "contoh": "Buka pintu Rp10 rb + $4\\text{ km}$ pertama Rp4 rb/km + $2\\text{ km}$ @Rp3 rb $\\rightarrow$ **Rp32.000**."
             },
             {
-              "judul_poin": "Pajak Progresif Setelah Batas Bebas Pajak",
-              "penjelasan_singkat": "Kurangi dulu penghasilan kotor dengan batas bebas pajak ($\\text{PKP} = Y - \\text{PTKP}$) sebelum dikalikan persen pajak.",
-              "contoh_penerapan": "Penghasilan Rp70 juta, batas bebas pajak Rp54 juta; pajak $5\\%$ hanya dikenakan pada selisihnya, yaitu **Rp16 juta = Rp800.000**."
+              "judul": "Tarif Parkir Pembulatan Jam ke Atas",
+              "teori_singkat": "Bulatkan durasi ke atas ($\\lceil t \\rceil$), lalu hitung jam pertama + sisa jam.",
+              "contoh": "Parkir 3 jam 15 menit $\\rightarrow$ **4 jam**: Rp5.000 + $3 \\times \\text{Rp3.000} =$ **Rp14.000**."
+            },
+            {
+              "judul": "Pajak Progresif Setelah Batas Bebas Pajak",
+              "teori_singkat": "Hitung kena pajak dahulu ($\\text{PKP} = Y - \\text{PTKP}$), baru kalikan tarif progresif.",
+              "contoh": "Gaji Rp70 jt, PTKP Rp54 jt $\\rightarrow$ PKP Rp16 jt $\\times 5\\% =$ **Rp800.000**."
             }
           ]
         },
@@ -303,19 +348,19 @@
           "nama_kelompok": "Mengatur Anggaran dengan Batas Pos",
           "butir": [
             {
-              "judul_poin": "Trik Kunci Pos Lain di Batas Minimum",
-              "penjelasan_singkat": "Agar dana untuk pos target $X$ maksimal, tekan semua pos wajib lain ke batas minimumnya: $X_{\\text{maks}} = B_{\\text{total}} - \\sum M_{\\text{min}, i}$.",
-              "contoh_penerapan": "Dana Rp10 juta, wajib konsumsi minimal Rp3 juta dan sewa minimal Rp2 juta; dana maksimal dekorasi adalah **Rp5 juta**."
+              "judul": "Trik Kunci Pos Lain di Batas Minimum",
+              "teori_singkat": "Maksimalkan pos $X$ dengan menekan pos wajib lain ke minimum: $X_{\\text{maks}} = B - \\sum M_{\\text{min},i}$.",
+              "contoh": "Dana Rp10 jt, konsumsi min Rp3 jt, sewa min Rp2 jt $\\rightarrow$ dekorasi maks **Rp5 juta**."
             },
             {
-              "judul_poin": "Ubah Batas Persen ke Rupiah di Awal",
-              "penjelasan_singkat": "Konversi dulu semua syarat persen menjadi nominal rupiah ($p_{\\text{min}} \\cdot B \\le X_i \\le p_{\\text{maks}} \\cdot B$) supaya lebih mudah dikurangi.",
-              "contoh_penerapan": "Anggaran Rp20 juta dengan pos logistik $25\\% - 40\\%$ berarti dana logistik harus di rentang **Rp5 juta sampai Rp8 juta**."
+              "judul": "Ubah Batas Persen ke Rupiah di Awal",
+              "teori_singkat": "Konversi batas persen ke rupiah dahulu: $p_{\\text{min}} B \\le X_i \\le p_{\\text{maks}} B$.",
+              "contoh": "Dana Rp20 jt, logistik $25\\% - 40\\%$ $\\rightarrow$ rentang dana **Rp5 juta – Rp8 juta**."
             },
             {
-              "judul_poin": "Hitung Jumlah Barang Maksimal (Bulatkan ke Bawah)",
-              "penjelasan_singkat": "Bagi sisa dana maksimal dengan harga satu barang, lalu bulatkan ke bawah: $n_{\\text{maks}} = \\lfloor \\frac{X_{\\text{maks}}}{P_{\\text{unit}}} \\rfloor$.",
-              "contoh_penerapan": "Sisa dana suvenir Rp1.450.000 dengan harga Rp60.000/buah menghasilkan $\\lfloor 24,16 \\rfloor =$ **24 buah**."
+              "judul": "Jumlah Barang Maksimal (Pembulatan ke Bawah)",
+              "teori_singkat": "Bagi sisa dana dengan harga satuan, lalu bulatkan ke bawah: $n_{\\text{maks}} = \\lfloor \\frac{X_{\\text{maks}}}{P_{\\text{unit}}} \\rfloor$.",
+              "contoh": "Sisa dana Rp1.450.000, suvenir Rp60.000/buah $\\rightarrow$ $\\lfloor 24,16 \\rfloor =$ **24 buah**."
             }
           ]
         },
@@ -323,19 +368,19 @@
           "nama_kelompok": "Membandingkan Sewa vs Beli (Biaya Tetap & Variabel)",
           "butir": [
             {
-              "judul_poin": "Rumus Biaya Total Linear ($C(t)$)",
-              "penjelasan_singkat": "Susun total biaya dari biaya tetap $F$ ditambah biaya variabel $v$ dikali jumlah pemakaian $t$: $C(t) = F + v \\cdot t$.",
-              "contoh_penerapan": "Cetak buku butuh biaya desain tetap Rp500.000 plus Rp20.000/buku; untuk 100 buku totalnya **Rp2.500.000**."
+              "judul": "Rumus Biaya Total Linear ($C(t)$)",
+              "teori_singkat": "Total biaya dari biaya tetap $F$ ditambah variabel $v$: $C(t) = F + v \\cdot t$.",
+              "contoh": "Desain tetap Rp500 rb + Rp20 rb/buku; 100 buku $\\rightarrow$ $500\\text{ rb} + 2\\text{ jt} =$ **Rp2.500.000**."
             },
             {
-              "judul_poin": "Cari Titik Impas (Break-Even Point)",
-              "penjelasan_singkat": "Samakan kedua fungsi biaya ($F_1 + v_1 t = F_2 + v_2 t$) untuk menemukan waktu impas: $t_{\\text{BEP}} = \\frac{F_2 - F_1}{v_1 - v_2}$.",
-              "contoh_penerapan": "Sewa Rp50.000/hari vs beli Rp600.000 plus rawat Rp10.000/hari impas pada $t = \\frac{600.000}{40.000} =$ **15 hari**."
+              "judul": "Titik Impas & Keputusan Sewa vs Beli",
+              "teori_singkat": "$t_{\\text{BEP}} = \\frac{F_2 - F_1}{v_1 - v_2}$; pilih sewa jika $t < t_{\\text{BEP}}$, beli jika $t > t_{\\text{BEP}}$.",
+              "contoh": "Sewa Rp50 rb/hari vs beli Rp600 rb + Rp10 rb/hari $\\rightarrow$ $t_{\\text{BEP}} = \\frac{600}{40} =$ **15 hari**."
             },
             {
-              "judul_poin": "Kurangi Harga Beli dengan Nilai Jual Kembali",
-              "penjelasan_singkat": "Jika barang dijual lagi seharga $S$ di akhir acara, biaya modal bersihnya tinggal $(F - S)$, jadi $C_{\\text{beli}} = (F - S) + v_2 t$.",
-              "contoh_penerapan": "Beli alat Rp5 juta lalu dijual lagi Rp3 juta setelah dipakai berarti biaya modal bersihnya cuma **Rp2 juta**."
+              "judul": "Nilai Jual Kembali pada Biaya Beli",
+              "teori_singkat": "Kurangi harga beli dengan nilai jual kembali $S$: $C_{\\text{beli}} = (F - S) + v_2 t$.",
+              "contoh": "Beli alat Rp5 jt lalu jual kembali Rp3 jt $\\rightarrow$ modal bersih **Rp2 juta**."
             }
           ]
         }

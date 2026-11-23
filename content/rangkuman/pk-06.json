@@ -2,33 +2,36 @@
   "kode_bab": "pk-06",
   "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
   "bab": "Bab 6: Geometri Transformasi Dasar dan Trigonometri Segitiga Siku-Siku",
-  "batch_model": "neon",
-  "jumlah_subbab": 2,
+  "estimasi_menit_review": 4,
   "daftar_subbab": [
     {
       "kode_subbab": "pk-06-01",
       "judul_subbab": "Transformasi Geometri Dasar pada Bidang Kartesius",
       "klasifikasi_materi": "PENGAYAAN",
-      "konsep_inti_markdown": "Transformasi geometri memindahkan titik awal $A(x,y)$ ke posisi baru $A'(x',y')$ di bidang Kartesius. Di UTBK, kamu tidak perlu menghafal matriks rumit—cukup pahami logika geraknya:\n\n- **Translasi $(a,b)$:** Geser titik langsung ke $(x+a, y+b)$. Untuk kurva, ganti $x \\rightarrow x-a$ dan $y \\rightarrow y-b$.\n- **Refleksi:** Cerminkan objek dengan jarak tegak lurus yang sama ke garis cermin.\n- **Rotasi $\\theta$:** Putar objek berlawanan jarum jam ($+$) atau searah jarum jam ($-$).\n- **Dilatasi skala $k$:** Ubah panjang sisi menjadi $|k|$ kali dan luas bangun menjadi $k^2$ kali.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Transformasi memetakan $A(x,y) \\rightarrow A'(x',y')$ lewat translasi, refleksi, rotasi, serta dilatasi berskala $k$ dengan luas $\\times k^2$.",
       "kelompok": [
         {
           "nama_kelompok": "Translasi (Pergeseran) Titik dan Kurva",
           "butir": [
             {
-              "judul_poin": "Translasi Titik dan Ruas Garis",
-              "penjelasan_singkat": "Titik $A(x,y)$ digeser oleh $T(a,b)$ menjadi $A'(x+a, y+b)$. Panjang ruas garisnya tetap sama.",
-              "contoh_penerapan": "Titik $A(2,-3)$ digeser $T(-4,5)$ menghasilkan **$A'(2 + (-4), -3 + 5) = A'(-2,2)$**."
+              "judul": "Translasi Titik dan Ruas Garis",
+              "teori_singkat": "Geser $A(x,y)$ oleh $T(a,b)$ menjadi $A'(x+a, y+b)$; panjang ruas garis tetap.",
+              "contoh": "$A(2,-3)$ digeser $T(-4,5) \\rightarrow$ **$A'(2-4, -3+5) = A'(-2,2)$**."
             },
             {
-              "judul_poin": "Translasi Persamaan Garis Lurus",
-              "penjelasan_singkat": "Untuk menggeser garis sejauh $T(a,b)$, langsung ganti $x \\rightarrow (x-a)$ dan $y \\rightarrow (y-b)$.",
-              "contoh_penerapan": "Garis $2x - y = 4$ digeser $T(1,3)$ menjadi **$2(x-1) - (y-3) = 4 \\Leftrightarrow 2x - y = 3$**."
+              "judul": "Translasi Persamaan Garis Lurus",
+              "teori_singkat": "Geser garis oleh $T(a,b)$ dengan substitusi $x \\rightarrow x-a$ dan $y \\rightarrow y-b$.",
+              "contoh": "$2x - y = 4$ digeser $T(1,3) \\rightarrow$ **$2(x-1)-(y-3)=4 \\equiv 2x - y = 3$**."
             },
             {
-              "judul_poin": "Translasi Persamaan Parabola Sederhana",
-              "penjelasan_singkat": "Geser parabola oleh $T(a,b)$ dengan mengganti $x \\rightarrow (x-a)$ dan $y \\rightarrow (y-b)$. Titik puncaknya ikut bergeser sebesar $(a,b)$.",
-              "contoh_penerapan": "Parabola $y = x^2$ digeser $T(2,-1)$ menjadi **$y - (-1) = (x-2)^2 \\Leftrightarrow y = (x-2)^2 - 1$**."
+              "judul": "Translasi Persamaan Parabola",
+              "teori_singkat": "Substitusi $x \\rightarrow x-a$ dan $y \\rightarrow y-b$; titik puncak ikut bergeser $(a,b)$.",
+              "contoh": "$y = x^2$ digeser $T(2,-1) \\rightarrow$ **$y+1 = (x-2)^2 \\equiv y = (x-2)^2 - 1$**."
             }
           ]
         },
@@ -36,19 +39,24 @@
           "nama_kelompok": "Refleksi (Pencerminan) pada Bidang Kartesius",
           "butir": [
             {
-              "judul_poin": "Refleksi terhadap Sumbu $X$ dan Sumbu $Y$",
-              "penjelasan_singkat": "Cermin sumbu $X$ membalik tanda $y$ menjadi $(x,-y)$. Cermin sumbu $Y$ membalik tanda $x$ menjadi $(-x,y)$.",
-              "contoh_penerapan": "Titik $B(-3,4)$ dicerminkan ke sumbu $X$ menjadi **$B'(-3,-4)$**, dan ke sumbu $Y$ menjadi **$B''(3,4)$**."
+              "judul": "Refleksi terhadap Sumbu $X$ dan Sumbu $Y$",
+              "teori_singkat": "Sumbu $X$: $(x,y) \\rightarrow (x,-y)$. Sumbu $Y$: $(x,y) \\rightarrow (-x,y)$.",
+              "contoh": "$B(-3,4)$ cermin sumbu $X \\rightarrow$ **$B'(-3,-4)$**; cermin sumbu $Y \\rightarrow$ **$B''(3,4)$**."
             },
             {
-              "judul_poin": "Refleksi terhadap Titik Asal $O(0,0)$",
-              "penjelasan_singkat": "Pencerminan terhadap pusat $O(0,0)$ langsung membalik tanda kedua angka: $A(x,y) \\rightarrow A'(-x,-y)$.",
-              "contoh_penerapan": "Titik $C(5,-2)$ dicerminkan terhadap titik asal $(0,0)$ menghasilkan **$C'(-5,2)$**."
+              "judul": "Refleksi terhadap Titik Asal $O(0,0)$",
+              "teori_singkat": "Pencerminan pusat $O(0,0)$ membalik kedua tanda: $(x,y) \\rightarrow (-x,-y)$.",
+              "contoh": "$C(5,-2)$ dicerminkan terhadap $O(0,0) \\rightarrow$ **$C'(-5,2)$**."
             },
             {
-              "judul_poin": "Refleksi terhadap Garis $y = x$ dan $y = -x$",
-              "penjelasan_singkat": "Cermin $y=x$ menukar posisi menjadi $(y,x)$. Cermin $y=-x$ menukar posisi sekaligus membalik tanda menjadi $(-y,-x)$.",
-              "contoh_penerapan": "Titik $D(2,-7)$ dicerminkan ke garis $y = -x$ menjadi **$D'(-(-7), -2) = D'(7,-2)$**."
+              "judul": "Refleksi terhadap Garis $y = x$ dan $y = -x$",
+              "teori_singkat": "Garis $y=x$: $(x,y) \\rightarrow (y,x)$. Garis $y=-x$: $(x,y) \\rightarrow (-y,-x)$.",
+              "contoh": "$D(2,-7)$ dicerminkan terhadap $y = -x \\rightarrow$ **$D'(7,-2)$**."
+            },
+            {
+              "judul": "Refleksi terhadap Garis $x = h$ dan $y = k$",
+              "teori_singkat": "Garis $x=h$: $(x,y) \\rightarrow (2h-x, y)$. Garis $y=k$: $(x,y) \\rightarrow (x, 2k-y)$.",
+              "contoh": "$P(1,4)$ dicerminkan terhadap $x = 3 \\rightarrow$ **$P'(2(3)-1, 4) = P'(5,4)$**."
             }
           ]
         },
@@ -56,19 +64,19 @@
           "nama_kelompok": "Rotasi (Perputaran) Sudut Istimewa",
           "butir": [
             {
-              "judul_poin": "Rotasi $90^\\circ$ dan $-90^\\circ$ Pusat $O(0,0)$",
-              "penjelasan_singkat": "Putar $+90^\\circ$ (berlawanan jarum jam) mengubah $(x,y) \\rightarrow (-y,x)$. Putar $-90^\\circ$ (searah) mengubah $(x,y) \\rightarrow (y,-x)$.",
-              "contoh_penerapan": "Titik $E(3,4)$ diputar $+90^\\circ$ pusat $(0,0)$ menjadi **$E'(-4,3)$**. Jika diputar $-90^\\circ$, hasilnya **$E''(4,-3)$**."
+              "judul": "Rotasi $+90^\\circ$ dan $-90^\\circ$ Pusat $O(0,0)$",
+              "teori_singkat": "Putar $+90^\\circ$ (CCW): $(x,y) \\rightarrow (-y,x)$. Putar $-90^\\circ$ (CW): $(x,y) \\rightarrow (y,-x)$.",
+              "contoh": "$E(3,4)$ diputar $+90^\\circ \\rightarrow$ **$E'(-4,3)$**; diputar $-90^\\circ \\rightarrow$ **$E''(4,-3)$**."
             },
             {
-              "judul_poin": "Rotasi $180^\\circ$ Pusat $O(0,0)$",
-              "penjelasan_singkat": "Putaran setengah lingkaran ($\\pm 180^\\circ$) di pusat $(0,0)$ membalik kedua tanda: $A(x,y) \\rightarrow A'(-x,-y)$.",
-              "contoh_penerapan": "Titik $F(-6,1)$ diputar $180^\\circ$ berpusat di $(0,0)$ menghasilkan **$F'(6,-1)$**."
+              "judul": "Rotasi $180^\\circ$ Pusat $O(0,0)$",
+              "teori_singkat": "Putar $\\pm 180^\\circ$ pusat $O(0,0)$ membalik kedua tanda: $(x,y) \\rightarrow (-x,-y)$.",
+              "contoh": "$F(-6,1)$ diputar $180^\\circ$ pusat $O(0,0) \\rightarrow$ **$F'(6,-1)$**."
             },
             {
-              "judul_poin": "Rotasi Sudut Istimewa Berpusat di Titik $(a,b)$",
-              "penjelasan_singkat": "Kurangi titik dengan pusatnya $(x-a, y-b)$, putar pakai rumus pusat $(0,0)$, lalu tambahkan kembali $(a,b)$.",
-              "contoh_penerapan": "Titik $G(4,5)$ diputar $+90^\\circ$ pusat $P(1,2)$: kurangi pusat jadi $(3,3)$, putar jadi $(-3,3)$, lalu tambah $(1,2)$ menjadi **$G'(-2,5)$**."
+              "judul": "Rotasi Sudut Istimewa Pusat $P(a,b)$",
+              "teori_singkat": "Kurangi $(a,b)$, rotasikan seperti pusat $O(0,0)$, lalu tambahkan kembali $(a,b)$.",
+              "contoh": "$G(4,5)$ putar $+90^\\circ$ pusat $(1,2)$: $(3,3) \\rightarrow (-3,3)+(1,2) =$ **$G'(-2,5)$**."
             }
           ]
         },
@@ -76,19 +84,24 @@
           "nama_kelompok": "Dilatasi (Perkalian Skala) dan Dampak Luas",
           "butir": [
             {
-              "judul_poin": "Dilatasi Pusat $O(0,0)$ dengan Faktor Skala $k$",
-              "penjelasan_singkat": "Dilatasi $[O,k]$ tinggal mengalikan setiap koordinat dengan $k \\neq 0$: $A(x,y) \\rightarrow A'(kx, ky)$.",
-              "contoh_penerapan": "Titik $H(-2,5)$ didilatasi pusat $(0,0)$ skala $k = -3$ menjadi **$H'((-3)(-2), (-3)(5)) = H'(6,-15)$**."
+              "judul": "Dilatasi Pusat $O(0,0)$ Skala $k$",
+              "teori_singkat": "Dilatasi $[O,k]$ ($k \\neq 0$) mengalikan koordinat dengan $k$: $(x,y) \\rightarrow (kx, ky)$.",
+              "contoh": "$H(-2,5)$ didilatasi $[O,-3] \\rightarrow$ **$H'((-3)(-2), (-3)(5)) = H'(6,-15)$**."
             },
             {
-              "judul_poin": "Dilatasi Persamaan Garis dan Kurva Pusat $O(0,0)$",
-              "penjelasan_singkat": "Untuk mencari bayangan kurva oleh dilatasi $[O,k]$, ganti $x \\rightarrow \\frac{x}{k}$ dan $y \\rightarrow \\frac{y}{k}$.",
-              "contoh_penerapan": "Garis $x + 2y = 3$ didilatasi $[O,2]$ menjadi **$\\frac{x}{2} + 2\\left(\\frac{y}{2}\\right) = 3 \\Leftrightarrow x + 2y = 6$**."
+              "judul": "Dilatasi Pusat $P(a,b)$ Skala $k$",
+              "teori_singkat": "Dilatasi $[P(a,b), k]$ memetakan $(x,y) \\rightarrow (a + k(x-a), b + k(y-b))$.",
+              "contoh": "$Q(3,1)$ didilatasi $[P(1,2), 2] \\rightarrow$ **$Q'(1+2(2), 2+2(-1)) = Q'(5,0)$**."
             },
             {
-              "judul_poin": "Dampak Dilatasi terhadap Panjang dan Luas Bangun",
-              "penjelasan_singkat": "Dilatasi skala $k$ mengubah panjang sisi menjadi $|k| \\times \\text{awal}$ dan luas menjadi $k^2 \\times \\text{awal}$.",
-              "contoh_penerapan": "Segitiga berluas $12\\text{ cm}^2$ didilatasi skala $k = -3$ menghasilkan luas bayangan **$(-3)^2 \\times 12 = 108\\text{ cm}^2$**."
+              "judul": "Dilatasi Persamaan Garis dan Kurva Pusat $O(0,0)$",
+              "teori_singkat": "Bayangan kurva oleh $[O,k]$: substitusi $x \\rightarrow \\frac{x}{k}$ dan $y \\rightarrow \\frac{y}{k}$.",
+              "contoh": "$x+2y=3$ didilatasi $[O,2] \\rightarrow$ **$\\frac{x}{2}+2(\\frac{y}{2})=3 \\equiv x+2y=6$**."
+            },
+            {
+              "judul": "Dampak Dilatasi terhadap Panjang dan Luas",
+              "teori_singkat": "Skala $k$ mengubah panjang menjadi $|k| \\times \\text{awal}$ dan luas menjadi $k^2 \\times \\text{awal}$.",
+              "contoh": "Luas segitiga $12\\text{ cm}^2$ didilatasi $k = -3 \\rightarrow$ **$(-3)^2 \\times 12 = 108\\text{ cm}^2$**."
             }
           ]
         }
@@ -98,31 +111,40 @@
       "kode_subbab": "pk-06-02",
       "judul_subbab": "Trigonometri Segitiga Siku-Siku dalam Pengukuran Geometri",
       "klasifikasi_materi": "PENGAYAAN",
-      "konsep_inti_markdown": "Pada segitiga siku-siku dengan sudut lancip $\\theta$:\n- **Rasio Dasar (Demi-Sami-Desa):** $\\sin \\theta = \\frac{\\text{Depan}}{\\text{Miring}}$, $\\cos \\theta = \\frac{\\text{Samping}}{\\text{Miring}}$, dan $\\tan \\theta = \\frac{\\text{Depan}}{\\text{Samping}}$.\n- **Identitas Wajib Hafal:** $\\sin^2 \\theta + \\cos^2 \\theta = 1$ serta aturan berpenyiku $\\sin(90^\\circ - \\theta) = \\cos \\theta$.\n- **Rasio Cepat Sudut Istimewa:**\n  - $30^\\circ : 60^\\circ : 90^\\circ \\rightarrow 1 : \\sqrt{3} : 2$\n  - $45^\\circ : 45^\\circ : 90^\\circ \\rightarrow 1 : 1 : \\sqrt{2}$",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Gunakan rasio Demi-Sami-Desa, identitas $\\sin^2\\theta+\\cos^2\\theta=1$, dan perbandingan sudut istimewa untuk mengukur sisi serta luas bangun.",
       "kelompok": [
         {
           "nama_kelompok": "Perbandingan Trigonometri Dasar & Identitas",
           "butir": [
             {
-              "judul_poin": "Rasio Sinus, Kosinus, dan Tangen",
-              "penjelasan_singkat": "Untuk sudut lancip $\\theta$: $\\sin \\theta = \\frac{\\text{De}}{\\text{Mi}}$, $\\cos \\theta = \\frac{\\text{Sa}}{\\text{Mi}}$, dan $\\tan \\theta = \\frac{\\text{De}}{\\text{Sa}}$ dengan sisi miring sebagai sisi terpanjang.",
-              "contoh_penerapan": "Jika sisi depan $3$ dan samping $4$, sisi miringnya $\\sqrt{3^2+4^2}=5$, sehingga **$\\sin \\theta = \\frac{3}{5}$**."
+              "judul": "Rasio Sinus, Kosinus, dan Tangen",
+              "teori_singkat": "Sudut lancip $\\theta$: $\\sin\\theta = \\frac{\\text{De}}{\\text{Mi}}$, $\\cos\\theta = \\frac{\\text{Sa}}{\\text{Mi}}$, $\\tan\\theta = \\frac{\\text{De}}{\\text{Sa}}$.",
+              "contoh": "Depan $3$, samping $4 \\rightarrow$ miring $\\sqrt{3^2+4^2}=5$, maka **$\\sin\\theta = \\frac{3}{5}$**."
             },
             {
-              "judul_poin": "Rasio Kebalikan: Cosecan, Secan, dan Cotangen",
-              "penjelasan_singkat": "Cukup balik pecahan rasio dasarnya: $\\csc \\theta = \\frac{\\text{Mi}}{\\text{De}}$, $\\sec \\theta = \\frac{\\text{Mi}}{\\text{Sa}}$, dan $\\cot \\theta = \\frac{\\text{Sa}}{\\text{De}}$ untuk $0^\\circ < \\theta < 90^\\circ$.",
-              "contoh_penerapan": "Jika $\\cos \\theta = \\frac{5}{13}$ (tripel $5\\text{-}12\\text{-}13$), maka **$\\sec \\theta = \\frac{13}{5}$** dan **$\\cot \\theta = \\frac{5}{12}$**."
+              "judul": "Rasio Kebalikan: Cosecan, Secan, dan Cotangen",
+              "teori_singkat": "Kebalikan rasio dasar ($0^\\circ < \\theta < 90^\\circ$): $\\csc\\theta = \\frac{1}{\\sin\\theta}$, $\\sec\\theta = \\frac{1}{\\cos\\theta}$, $\\cot\\theta = \\frac{1}{\\tan\\theta}$.",
+              "contoh": "Jika $\\cos\\theta = \\frac{5}{13}$ (tripel $5\\text{-}12\\text{-}13$), maka **$\\sec\\theta = \\frac{13}{5}$** dan **$\\cot\\theta = \\frac{5}{12}$**."
             },
             {
-              "judul_poin": "Identitas Tangen dan Pythagoras",
-              "penjelasan_singkat": "Berlaku $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$ ($\\cos \\theta \\neq 0$), $\\sin^2 \\theta + \\cos^2 \\theta = 1$, dan $1 + \\tan^2 \\theta = \\sec^2 \\theta$.",
-              "contoh_penerapan": "Jika $\\sin \\theta = \\frac{2}{3}$ pada sudut lancip, maka $\\cos \\theta = \\sqrt{1 - (\\frac{2}{3})^2} =$ **$\\frac{\\sqrt{5}}{3}$**."
+              "judul": "Tripel Pythagoras Cepat untuk Sisi Segitiga",
+              "teori_singkat": "Hafal tripel dasar (beserta kelipatannya): $(3,4,5)$, $(5,12,13)$, $(7,24,25)$, $(8,15,17)$.",
+              "contoh": "Jika $\\tan\\theta = \\frac{8}{15}$, sisi miring langsung $17 \\rightarrow$ **$\\sin\\theta = \\frac{8}{17}$**."
             },
             {
-              "judul_poin": "Aturan Sudut Berpenyiku (Jumlah $90^\\circ$)",
-              "penjelasan_singkat": "Karena dua sudut lancip segitiga siku-siku berjumlah $90^\\circ$, berlaku $\\sin(90^\\circ - \\theta) = \\cos \\theta$ dan $\\tan(90^\\circ - \\theta) = \\cot \\theta$.",
-              "contoh_penerapan": "Pada $\\triangle ABC$ siku-siku di $C$, jika $\\sin A = \\frac{7}{25}$, maka **$\\cos B = \\sin A = \\frac{7}{25}$**."
+              "judul": "Identitas Tangen dan Pythagoras",
+              "teori_singkat": "$\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$, $\\sin^2\\theta + \\cos^2\\theta = 1$, $1 + \\tan^2\\theta = \\sec^2\\theta$, $1 + \\cot^2\\theta = \\csc^2\\theta$.",
+              "contoh": "$\\sin\\theta = \\frac{2}{3}$ (lancip) $\\rightarrow \\cos\\theta = \\sqrt{1 - (\\frac{2}{3})^2} =$ **$\\frac{\\sqrt{5}}{3}$**."
+            },
+            {
+              "judul": "Aturan Sudut Berpenyiku (Jumlah $90^\\circ$)",
+              "teori_singkat": "Sudut lancip berjumlah $90^\\circ$: $\\sin(90^\\circ - \\theta) = \\cos\\theta$ dan $\\tan(90^\\circ - \\theta) = \\cot\\theta$.",
+              "contoh": "$\\triangle ABC$ siku-siku di $C$, $\\sin A = \\frac{7}{25} \\rightarrow$ **$\\cos B = \\frac{7}{25}$**."
             }
           ]
         },
@@ -130,24 +152,24 @@
           "nama_kelompok": "Sudut Istimewa & Aplikasi Bangun Datar",
           "butir": [
             {
-              "judul_poin": "Nilai Pasti Sudut Istimewa ($0^\\circ$ hingga $90^\\circ$)",
-              "penjelasan_singkat": "Urutan $\\sin \\theta$ untuk $0^\\circ, 30^\\circ, 45^\\circ, 60^\\circ, 90^\\circ$ adalah $0, \\frac{1}{2}, \\frac{1}{2}\\sqrt{2}, \\frac{1}{2}\\sqrt{3}, 1$; untuk $\\cos \\theta$, balik saja urutannya.",
-              "contoh_penerapan": "Nilai $\\tan 60^\\circ \\times \\sin 30^\\circ + \\cos 0^\\circ = \\sqrt{3} \\times \\frac{1}{2} + 1 =$ **$\\frac{1}{2}\\sqrt{3} + 1$**."
+              "judul": "Nilai Sudut Istimewa ($0^\\circ$ hingga $90^\\circ$)",
+              "teori_singkat": "$\\sin(0^\\circ,30^\\circ,45^\\circ,60^\\circ,90^\\circ) = 0, \\frac{1}{2}, \\frac{1}{2}\\sqrt{2}, \\frac{1}{2}\\sqrt{3}, 1$; $\\cos$ urutannya dibalik.",
+              "contoh": "$\\tan 60^\\circ \\times \\sin 30^\\circ + \\cos 0^\\circ = \\sqrt{3}(\\frac{1}{2}) + 1 =$ **$\\frac{1}{2}\\sqrt{3} + 1$**."
             },
             {
-              "judul_poin": "Rasio Sisi Segitiga Siku-Siku Khusus",
-              "penjelasan_singkat": "Sisi di depan sudut $(30^\\circ : 60^\\circ : 90^\\circ)$ berbanding $1 : \\sqrt{3} : 2$, sedangkan $(45^\\circ : 45^\\circ : 90^\\circ)$ berbanding $1 : 1 : \\sqrt{2}$.",
-              "contoh_penerapan": "Jika sisi miring segitiga $30^\\circ\\text{-}60^\\circ\\text{-}90^\\circ$ adalah $10\\text{ cm}$, sisi depan $30^\\circ$ bernilai **$5\\text{ cm}$** dan depan $60^\\circ$ bernilai **$5\\sqrt{3}\\text{ cm}$**."
+              "judul": "Rasio Sisi Segitiga Siku-Siku Khusus",
+              "teori_singkat": "Sisi depan $(30^\\circ:60^\\circ:90^\\circ) = 1:\\sqrt{3}:2$; sisi depan $(45^\\circ:45^\\circ:90^\\circ) = 1:1:\\sqrt{2}$.",
+              "contoh": "Miring segitiga $30^\\circ\\text{-}60^\\circ\\text{-}90^\\circ$ bernilai $10 \\rightarrow$ depan $30^\\circ =$ **$5$**, depan $60^\\circ =$ **$5\\sqrt{3}$**."
             },
             {
-              "judul_poin": "Mencari Tinggi dan Luas Bangun Datar",
-              "penjelasan_singkat": "Cari tinggi tegak lurus dengan $t = s \\sin \\theta$, lalu masukkan ke rumus luas $L = \\frac{1}{2} a t$ (segitiga) atau $L = a t$ (jajargenjang).",
-              "contoh_penerapan": "Jajargenjang beralas $8\\text{ cm}$, sisi miring $6\\text{ cm}$, dan sudut apit $30^\\circ$ punya tinggi $6 \\sin 30^\\circ = 3\\text{ cm}$, sehingga luasnya **$24\\text{ cm}^2$**."
+              "judul": "Mencari Tinggi dan Luas Bangun Datar",
+              "teori_singkat": "Tinggi $t = s\\sin\\theta$; luas segitiga $L = \\frac{1}{2}ab\\sin\\theta$, jajargenjang $L = ab\\sin\\theta$.",
+              "contoh": "Jajargenjang alas $8$, sisi miring $6$, sudut $30^\\circ \\rightarrow L = 8 \\times 6 \\sin 30^\\circ =$ **$24$**."
             },
             {
-              "judul_poin": "Garis Tinggi Bantu pada Segitiga Sembarang",
-              "penjelasan_singkat": "Tarik satu garis tinggi untuk memecah segitiga sembarang menjadi dua segitiga siku-siku yang bisa dihitung dengan rasio sudut.",
-              "contoh_penerapan": "Pada $\\triangle ABC$ dengan $AB = 4\\sqrt{2}$, $\\angle A = 45^\\circ$, dan $\\angle C = 30^\\circ$, garis tinggi $BD = 4$ langsung memberi **$BC = 8$**."
+              "judul": "Garis Tinggi Bantu pada Segitiga Sembarang",
+              "teori_singkat": "Tarik garis tinggi untuk memecah segitiga sembarang menjadi dua segitiga siku-siku.",
+              "contoh": "$\\triangle ABC$ ($AB=4\\sqrt{2}$, $\\angle A=45^\\circ$, $\\angle C=30^\\circ$) $\\rightarrow$ tinggi $BD=4$, maka **$BC = 8$**."
             }
           ]
         },
@@ -155,14 +177,19 @@
           "nama_kelompok": "Segitiga Siku-Siku Bersusun & Pengukuran Tak Langsung",
           "butir": [
             {
-              "judul_poin": "Segitiga Siku-Siku Bersusun Berbagi Satu Sisi",
-              "penjelasan_singkat": "Saat dua segitiga siku-siku menempel, jadikan sisi bersama (persekutuan) sebagai jembatan untuk pindah dari segitiga pertama ke kedua.",
-              "contoh_penerapan": "Pada $\\triangle ABD$ siku-siku di $B$ ($AB=6$, $\\angle A=30^\\circ$), sisi bersama $BD = 6\\tan 30^\\circ = 2\\sqrt{3}$. Jika menempel pada $\\triangle BCD$ siku-siku di $D$ ($\\angle DBC=45^\\circ$), maka **$CD = BD = 2\\sqrt{3}$**."
+              "judul": "Sudut Elevasi dan Sudut Depresi",
+              "teori_singkat": "Elevasi (mendongak) dan depresi (menunduk) selalu diukur dari garis horizontal; keduanya sama besar.",
+              "contoh": "Sudut depresi dari menara $20\\text{ m}$ adalah $45^\\circ \\rightarrow$ jarak horizontal objek $= 20\\cot 45^\\circ =$ **$20\\text{ m}$**."
             },
             {
-              "judul_poin": "Dua Sudut Elevasi pada Satu Objek",
-              "penjelasan_singkat": "Objek setinggi $t$ yang dilihat dari dua titik segaris bersudut $\\alpha$ dan $\\beta$ memenuhi selisih jarak $\\Delta x = t(\\cot \\alpha - \\cot \\beta)$.",
-              "contoh_penerapan": "Menara dilihat dengan sudut $30^\\circ$, lalu pengamat maju $20\\text{ m}$ hingga sudutnya $60^\\circ$. Tingginya $t = \\frac{20}{\\sqrt{3} - \\frac{1}{3}\\sqrt{3}} =$ **$10\\sqrt{3}\\text{ m}$**."
+              "judul": "Segitiga Siku-Siku Bersusun Berbagi Satu Sisi",
+              "teori_singkat": "Gunakan sisi persekutuan (bersama) sebagai jembatan penghubung hitung antarsegitiga siku-siku.",
+              "contoh": "$\\triangle ABD$ ($AB=6$, $\\angle A=30^\\circ$) $\\rightarrow BD=2\\sqrt{3}$; menempel $\\triangle BCD$ ($\\angle DBC=45^\\circ$) $\\rightarrow$ **$CD = 2\\sqrt{3}$**."
+            },
+            {
+              "judul": "Dua Sudut Elevasi pada Satu Objek",
+              "teori_singkat": "Dua titik segaris bersudut $\\alpha < \\beta$ terhadap tinggi $t$: $\\Delta x = t(\\cot\\alpha - \\cot\\beta)$.",
+              "contoh": "Maju $20\\text{ m}$ mengubah elevasi $30^\\circ \\rightarrow 60^\\circ$: $t = \\frac{20}{\\sqrt{3} - \\frac{1}{3}\\sqrt{3}} =$ **$10\\sqrt{3}\\text{ m}$**."
             }
           ]
         }

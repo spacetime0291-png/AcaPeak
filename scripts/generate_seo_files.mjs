@@ -1,7 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const ROOT_DIR = process.cwd();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
 const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://acapeak.spacetime0291.workers.dev').replace(/\/+$/, '');
@@ -66,8 +69,12 @@ function generateSeoFiles() {
   }
 
   // 4. Rangkuman & Cheat Sheet Pages
-  const rangkumanIndexPath = path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json');
-  if (fs.existsSync(rangkumanIndexPath)) {
+  const rangkumanIndexPaths = [
+    path.join(ROOT_DIR, 'content/rangkuman/index.json'),
+    path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json'),
+  ];
+  const rangkumanIndexPath = rangkumanIndexPaths.find((p) => fs.existsSync(p));
+  if (rangkumanIndexPath) {
     try {
       const rangkumanIndex = JSON.parse(fs.readFileSync(rangkumanIndexPath, 'utf8'));
       urls.push({
@@ -134,7 +141,7 @@ function generateSeoFiles() {
     fs.writeFileSync(path.join(PUBLIC_DIR, 'robots.txt'), robotsTxt, 'utf8');
   }
 
-  console.log(`✅ Sitemap created with ${urls.length} URLs (Home + 7 Subtests + 106 Materials + 4 Legalities).`);
+  console.log(`✅ Sitemap created with ${urls.length} URLs (Home + 7 Subtests + 106 Materials + 28 Rangkuman + 4 Legalities).`);
   console.log(`✅ Robots.txt created with Disallow: /drilling/ rule.`);
 }
 

@@ -31,9 +31,12 @@ import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
 import { ContactPage } from './pages/ContactPage';
 import { RangkumanPage } from './pages/RangkumanPage';
+import type { RangkumanBabData, RangkumanIndexData } from './types/rangkuman';
 
 interface AppProps {
   initialMaterial?: Material | ThreeZoneMaterial | null;
+  initialRangkumanBab?: RangkumanBabData | null;
+  initialRangkumanIndex?: RangkumanIndexData | null;
 }
 
 // -------------------------------------------------------------
@@ -402,7 +405,11 @@ function DrillingRouteView({
 // -------------------------------------------------------------
 // MAIN APP COMPONENT
 // -------------------------------------------------------------
-export default function App({ initialMaterial }: AppProps) {
+export default function App({
+  initialMaterial,
+  initialRangkumanBab,
+  initialRangkumanIndex,
+}: AppProps) {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -517,7 +524,11 @@ export default function App({ initialMaterial }: AppProps) {
             path="/rangkuman"
             element={
               <>
-                <RangkumanPage theme={theme} onToggleTheme={toggleTheme} />
+                <RangkumanPage
+                  theme={theme}
+                  onToggleTheme={toggleTheme}
+                  initialIndexData={initialRangkumanIndex}
+                />
                 <Footer />
               </>
             }
@@ -526,7 +537,12 @@ export default function App({ initialMaterial }: AppProps) {
             path="/rangkuman/:babId"
             element={
               <>
-                <RangkumanPage theme={theme} onToggleTheme={toggleTheme} />
+                <RangkumanPage
+                  theme={theme}
+                  onToggleTheme={toggleTheme}
+                  initialBabData={initialRangkumanBab}
+                  initialIndexData={initialRangkumanIndex}
+                />
                 <Footer />
               </>
             }

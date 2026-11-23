@@ -2,38 +2,46 @@
   "kode_bab": "lbi-03",
   "subtes": "Subtes 5: Literasi dalam Bahasa Indonesia (LBI)",
   "bab": "Bab 3: Literasi Teks Sastra dan Literasi Ilmu Pengetahuan",
-  "batch_model": "hydrogen",
-  "jumlah_subbab": 5,
+  "estimasi_menit_review": 7,
   "daftar_subbab": [
     {
       "kode_subbab": "lbi-03-01",
       "judul_subbab": "Unsur Intrinsik, Konflik, dan Pesan Teks Sastra",
       "klasifikasi_materi": "PENGAYAAN",
-      "konsep_inti_markdown": "- **Tema & Konflik:** Tema lahir dari benturan konflik batin (perang dalam hati tokoh) dan konflik sosial (tekanan lingkungan atau aturan masyarakat).\n- **Amanat Tersirat:** Pesan cerita yang kamu simpulkan dari sebab-akibat pilihan tindakan tokoh.\n- **Sudut Pandang & Suasana:** Kata ganti (*aku*/*dia*) menunjukkan posisi pencerita, sedangkan latar alam dan gerak tubuh membangun suasana hati cerita.\n- **Makna Kias & Nilai:** Simbol atau ungkapan ditafsirkan lewat konteks kalimatnya; nilai moral dan budaya dilihat dari alasan di balik sikap tokoh.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Pahami teks sastra lewat benturan konflik, posisi pencerita, penafsiran simbol konteks, serta sebab-akibat tindakan tokoh.",
       "kelompok": [
         {
           "nama_kelompok": "Petunjuk Tema, Jenis Konflik, dan Amanat Tersirat",
           "butir": [
             {
-              "judul_poin": "Konflik Batin (Internal)",
-              "penjelasan_singkat": "Pergulatan dua keinginan yang saling bertentangan di dalam pikiran atau hati satu tokoh utama.",
-              "contoh_penerapan": "**Dada Raka berdegup kencang**; ia ingin **jujur mengakui kesalahannya**, tetapi **takut mengecewakan ibunya**."
+              "judul": "Konflik Batin (Internal)",
+              "teori_singkat": "Pergulatan dua keinginan bertentangan di dalam pikiran atau hati satu tokoh.",
+              "contoh": "**Dada Raka berdegup**; ia ingin **jujur mengakui kesalahan**, tetapi **takut mengecewakan ibunya**."
             },
             {
-              "judul_poin": "Konflik Sosial (Eksternal)",
-              "penjelasan_singkat": "Pertentangan tokoh melawan norma adat, tekanan keluarga, aturan masyarakat, atau tokoh lain.",
-              "contoh_penerapan": "**Tetua adat menolak lamaran Bima** semata-mata karena **perbedaan status keluarga** yang dipegang turun-temurun."
+              "judul": "Konflik Sosial (Eksternal)",
+              "teori_singkat": "Pertentangan tokoh melawan norma adat, tekanan keluarga, aturan masyarakat, atau tokoh lain.",
+              "contoh": "**Tetua adat menolak lamaran Bima** semata karena **perbedaan status keluarga** turun-temurun."
             },
             {
-              "judul_poin": "Rumusan Tema Sentral",
-              "penjelasan_singkat": "Inti persoalan utama yang mengikat seluruh rangkaian konflik dari awal hingga akhir kutipan.",
-              "contoh_penerapan": "Kisah perjuangan guru honorer di pedalaman merujuk pada tema **pengabdian di tengah keterbatasan**."
+              "judul": "Konflik Fisik atau Alam (Eksternal)",
+              "teori_singkat": "Perjuangan tokoh bertahan menghadapi bencana alam, wabah penyakit, atau ancaman lingkungan fisik.",
+              "contoh": "**Nelayan itu mencengkeram kemudi** saat **badai dan gelombang tinggi** menghantam perahunya."
             },
             {
-              "judul_poin": "Amanat Tersirat (Sebab-Akibat)",
-              "penjelasan_singkat": "Pesan moral yang disimpulkan dari akibat langsung atas pilihan atau tindakan tokoh.",
-              "contoh_penerapan": "**Keserakahan Juragan Karta** menimbun beras berujung pada **kebangkrutan dan pengucilan warga** di akhir cerita."
+              "judul": "Rumusan Tema Sentral",
+              "teori_singkat": "Inti persoalan utama yang mengikat seluruh rangkaian konflik dari awal hingga akhir.",
+              "contoh": "Perjuangan guru honorer di pedalaman merujuk tema **pengabdian di tengah keterbatasan**."
+            },
+            {
+              "judul": "Amanat Tersirat (Sebab-Akibat)",
+              "teori_singkat": "Pesan moral yang disimpulkan dari akibat langsung atas pilihan tindakan tokoh.",
+              "contoh": "**Keserakahan Juragan Karta** menimbun beras berujung **kebangkrutan dan pengucilan warga**."
             }
           ]
         },
@@ -41,24 +49,34 @@
           "nama_kelompok": "Petunjuk Makna Kias, Simbol, dan Nilai Kehidupan",
           "butir": [
             {
-              "judul_poin": "Ungkapan Idiomatis & Konotasi",
-              "penjelasan_singkat": "Gabungan kata yang membentuk makna baru di luar arti kamus kata penyusunnya.",
-              "contoh_penerapan": "Setelah proyeknya gagal total, pejabat itu memilih **cuci tangan** dari tanggung jawab anggaran."
+              "judul": "Ungkapan Idiomatis & Konotasi",
+              "teori_singkat": "Gabungan kata yang membentuk makna kias baru di luar arti kamus.",
+              "contoh": "Setelah proyeknya gagal total, pejabat itu memilih **cuci tangan** dari tanggung jawab."
             },
             {
-              "judul_poin": "Simbolisme Benda & Alam",
-              "penjelasan_singkat": "Benda atau keadaan alam yang dipakai untuk mewakili perasaan atau gagasan tertentu.",
-              "contoh_penerapan": "**Lampu teplok yang meredup di ambang fajar** menandai **habisnya sisa harapan** sang ibu menunggu anaknya."
+              "judul": "Majas Perbandingan & Pertautan",
+              "teori_singkat": "Gaya bahasa kias yang ditafsirkan melalui konteks kalimat dan suasana kutipan.",
+              "contoh": "**Angin malam menusuk tulang** menggambarkan **rasa dingin dan kesepian** yang mencekam."
             },
             {
-              "judul_poin": "Evaluasi Nilai Moral",
-              "penjelasan_singkat": "Penilaian baik-buruk perilaku pribadi tokoh terkait kejujuran, empati, dan tanggung jawab.",
-              "contoh_penerapan": "Meski dompet itu tebal, **Sari tetap mengembalikannya utuh** kepada pemiliknya di pos keamanan."
+              "judul": "Simbolisme Benda & Alam",
+              "teori_singkat": "Benda atau keadaan alam yang dipakai mewakili perasaan atau gagasan tertentu.",
+              "contoh": "**Lampu teplok meredup menjelang fajar** menandai **habisnya sisa harapan** sang ibu."
             },
             {
-              "judul_poin": "Evaluasi Nilai Sosial & Budaya",
-              "penjelasan_singkat": "Cerminan kepedulian antarwarga (sosial) atau tradisi dan adat turun-temurun masyarakat (budaya).",
-              "contoh_penerapan": "**Seluruh warga bergotong royong mendirikan rumah** Pak Tono (sosial) setelah **ritual selamatan adat** digelar (budaya)."
+              "judul": "Evaluasi Nilai Moral",
+              "teori_singkat": "Penilaian baik-buruk perilaku pribadi tokoh terkait kejujuran, empati, dan tanggung jawab.",
+              "contoh": "Meski dompet itu tebal, **Sari tetap mengembalikannya utuh** kepada pemiliknya."
+            },
+            {
+              "judul": "Evaluasi Nilai Sosial & Budaya",
+              "teori_singkat": "Cerminan kepedulian antarwarga (**sosial**) atau tradisi adat turun-temurun masyarakat (**budaya**).",
+              "contoh": "**Warga bergotong royong membangun rumah** (**sosial**) setelah **ritual selamatan adat** (**budaya**)."
+            },
+            {
+              "judul": "Evaluasi Nilai Religius",
+              "teori_singkat": "Cerminan keyakinan spiritual, doa, ketakwaan, atau kepasrahan tokoh kepada Tuhan.",
+              "contoh": "Di tengah musibah, **ia bersujud syukur** dan **meyakini setiap ujian membawa hikmah**."
             }
           ]
         },
@@ -66,19 +84,24 @@
           "nama_kelompok": "Petunjuk Sudut Pandang (POV) dan Suasana Cerita",
           "butir": [
             {
-              "judul_poin": "Orang Pertama Pelaku Utama",
-              "penjelasan_singkat": "Pencerita memakai kata ganti *aku* atau *saya* dan menjadi pusat seluruh peristiwa cerita.",
-              "contoh_penerapan": "**Aku** mengepalkan tangan, menahan amarah saat **namaku** dicoret dari daftar penerima beasiswa."
+              "judul": "Orang Pertama Pelaku Utama",
+              "teori_singkat": "Pencerita memakai kata ganti **aku** atau **saya** sebagai pusat seluruh peristiwa.",
+              "contoh": "**Aku** mengepalkan tangan, menahan amarah saat **namaku** dicoret dari daftar beasiswa."
             },
             {
-              "judul_poin": "Orang Ketiga (Serbatahu vs Terbatas)",
-              "penjelasan_singkat": "Pencerita menyebut nama tokoh atau kata *ia*; disebut **serbatahu** jika tahu pikiran semua tokoh, dan **terbatas** jika hanya tahu pikiran satu tokoh.",
-              "contoh_penerapan": "**Nadia** tersenyum ramah, padahal **dalam hatinya tersimpan dendam** yang telah lama ia pendam."
+              "judul": "Orang Pertama Pelaku Sampingan",
+              "teori_singkat": "Tokoh **aku** hadir dalam cerita, tetapi hanya mengamati dan mengisahkan tokoh utama.",
+              "contoh": "**Aku** hanya terpaku di sudut ruangan menyaksikan **Raka berdebat sengit** dengan ayahnya."
             },
             {
-              "judul_poin": "Latar Suasana Cerita",
-              "penjelasan_singkat": "Nuansa perasaan (mencekam, getir, sunyi) yang dibangun lewat pilihan kata indrawi dan gerak tubuh tokoh.",
-              "contoh_penerapan": "**Detak jam dinding terdengar nyaring** di ruang tunggu yang **dingin dan membisu** itu."
+              "judul": "Orang Ketiga (Serbatahu vs Terbatas)",
+              "teori_singkat": "Memakai nama/**ia**; **serbatahu** menembus batin semua tokoh, **terbatas** hanya satu tokoh.",
+              "contoh": "**Nadia** tersenyum ramah, padahal **dalam hatinya tersimpan dendam** lama (**serbatahu/terbatas**)."
+            },
+            {
+              "judul": "Latar Suasana Cerita",
+              "teori_singkat": "Nuansa perasaan yang dibangun lewat pilihan kata indrawi dan gerak tubuh tokoh.",
+              "contoh": "**Detak jam dinding terdengar nyaring** di ruang tunggu yang **dingin dan membisu**."
             }
           ]
         }
@@ -88,61 +111,75 @@
       "kode_subbab": "lbi-03-02",
       "judul_subbab": "Penokohan, Alur, dan Prediksi Tindakan Tokoh",
       "klasifikasi_materi": "PENGAYAAN",
-      "konsep_inti_markdown": "- **Teknik Dramatik:** Kamu menyimpulkan watak tokoh secara tidak langsung lewat dialog, tindakan fisik, pikiran batin, dan reaksi tokoh lain—bukan label langsung dari narator.\n- **Struktur Alur:** Pengenalan (situasi awal) $\\rightarrow$ Pemunculan Konflik (masalah mulai hadir) $\\rightarrow$ Klimaks (puncak dilema) $\\rightarrow$ Penyelesaian (keputusan akhir).\n- **Prediksi & Bukti Teks:** Prediksi tindakan lanjutan wajib konsisten dengan karakter tokoh. Sementara itu, kutipan bukti harus langsung menopang sifat atau konflik batin yang ditanyakan.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Simpulkan watak secara dramatik, petakan alur menuju klimaks, lalu prediksi tindakan sesuai konsistensi karakter tokoh.",
       "kelompok": [
         {
-          "nama_kelompok": "Penanda Watak Melalui Teknik Dramatik",
+          "nama_kelompok": "Penanda Watak Melalui Teknik Analitik dan Dramatik",
           "butir": [
             {
-              "judul_poin": "Dialog dan Pilihan Kata",
-              "penjelasan_singkat": "Watak tokoh terlihat dari gaya bicara, nada suara, atau topik yang dipilih saat berinteraksi.",
-              "contoh_penerapan": "\"**Jangan pernah injakkan kakimu lagi di rumah ini!**\" bentak Pak Darmo sambil menunjuk pintu."
+              "judul": "Teknik Analitik (Paparan Langsung)",
+              "teori_singkat": "Narator menyebutkan watak atau sifat tokoh secara eksplisit tanpa perlu disimpulkan.",
+              "contoh": "Pak Hendra dikenal sebagai **hakim yang jujur, tegas, dan pantang disuap**."
             },
             {
-              "judul_poin": "Tindakan Fisik dan Bahasa Tubuh",
-              "penjelasan_singkat": "Perilaku spontan dan gestur tubuh menunjukkan karakter asli tokoh tanpa perlu diberi label oleh narator.",
-              "contoh_penerapan": "Rani **menyisihkan separuh uang sakunya ke kotak amal** meski sepatunya sendiri sudah berlubang."
+              "judul": "Dialog dan Pilihan Kata",
+              "teori_singkat": "Watak tokoh terungkap lewat gaya bicara, nada suara, dan diksi saat berinteraksi.",
+              "contoh": "\"**Jangan pernah injakkan kakimu lagi di rumah ini!**\" bentak Pak Darmo."
             },
             {
-              "judul_poin": "Pikiran Batin dan Pertimbangan Hati",
-              "penjelasan_singkat": "Keraguan, niat tersembunyi, atau pertimbangan batin membuka motivasi asli di balik sikap luar tokoh.",
-              "contoh_penerapan": "Bima tersenyum ramah, tetapi **hatinya terus menyusun rencana untuk menjatuhkan rekan kerjanya itu**."
+              "judul": "Tindakan Fisik dan Bahasa Tubuh",
+              "teori_singkat": "Perilaku spontan dan gestur tubuh menunjukkan karakter asli tokoh tanpa label narator.",
+              "contoh": "Rani **menyisihkan separuh uang sakunya ke kotak amal** meski sepatunya berlubang."
             },
             {
-              "judul_poin": "Reaksi dan Penilaian Tokoh Lain",
-              "penjelasan_singkat": "Rasa hormat, takut, atau julukan dari tokoh lain menjadi cermin reputasi dan sifat tokoh utama.",
-              "contoh_penerapan": "Begitu langkah Bu Sari terdengar, **seluruh pekerja langsung menunduk dan menghentikan obrolan**."
+              "judul": "Pikiran Batin dan Pertimbangan Hati",
+              "teori_singkat": "Keraguan atau niat tersembunyi membuka motivasi asli di balik sikap luar tokoh.",
+              "contoh": "Bima tersenyum ramah, tetapi **hatinya menyusun rencana menjatuhkan rekan kerjanya**."
             },
             {
-              "judul_poin": "Kontras Ucapan dan Perbuatan",
-              "penjelasan_singkat": "Pertentangan antara janji manis dan tindakan nyata menandakan watak munafik atau manipulatif.",
-              "contoh_penerapan": "Ia berpidato tentang kejujuran, namun **tangannya diam-diam menyelipkan amplop suap ke laci meja**."
+              "judul": "Reaksi dan Penilaian Tokoh Lain",
+              "teori_singkat": "Rasa hormat, takut, atau julukan tokoh lain mencerminkan reputasi tokoh utama.",
+              "contoh": "Begitu langkah Bu Sari terdengar, **seluruh pekerja langsung menunduk dan terdiam**."
+            },
+            {
+              "judul": "Kontras Ucapan dan Perbuatan",
+              "teori_singkat": "Pertentangan antara janji manis dan tindakan nyata menandakan watak munafik atau manipulatif.",
+              "contoh": "Ia berpidato tentang kejujuran, namun **tangannya diam-diam menyelipkan amplop suap**."
             }
           ]
         },
         {
-          "nama_kelompok": "Sinyal Tahapan Alur Cerita",
+          "nama_kelompok": "Sinyal Tahapan dan Jenis Alur Cerita",
           "butir": [
             {
-              "judul_poin": "Tahap Pengenalan (Eksposisi)",
-              "penjelasan_singkat": "Memperkenalkan latar waktu, tempat, suasana awal, serta kebiasaan tokoh sebelum masalah muncul.",
-              "contoh_penerapan": "**Setiap pagi sebelum fajar**, Mbah Karto menyapu halaman surau tua di ujung desa."
+              "judul": "Tahap Pengenalan (Eksposisi)",
+              "teori_singkat": "Memperkenalkan latar waktu, tempat, suasana awal, dan kebiasaan tokoh sebelum masalah muncul.",
+              "contoh": "**Setiap pagi sebelum fajar**, Mbah Karto menyapu halaman surau di ujung desa."
             },
             {
-              "judul_poin": "Tahap Pemunculan Konflik",
-              "penjelasan_singkat": "Ditandai peristiwa tak terduga atau benturan kepentingan yang mulai mengusik ketenangan awal tokoh.",
-              "contoh_penerapan": "Ketenangan desa mendadak pecah saat **surat perintah penggusuran lahan tiba di balai warga**."
+              "judul": "Tahap Pemunculan Konflik",
+              "teori_singkat": "Peristiwa tak terduga atau benturan kepentingan mulai mengusik ketenangan awal tokoh.",
+              "contoh": "Ketenangan desa pecah saat **surat perintah penggusuran lahan tiba di balai warga**."
             },
             {
-              "judul_poin": "Tahap Klimaks (Puncak Ketegangan)",
-              "penjelasan_singkat": "Titik krisis tertinggi saat konflik memaksa tokoh mengambil keputusan besar yang menentukan nasib.",
-              "contoh_penerapan": "Di hadapan hakim, **Tono harus memilih menyelamatkan adiknya atau membongkar kejahatan ayahnya**."
+              "judul": "Tahap Klimaks (Puncak Ketegangan)",
+              "teori_singkat": "Titik krisis tertinggi saat konflik memaksa tokoh mengambil keputusan penentu nasib.",
+              "contoh": "Di depan hakim, **Tono harus memilih menyelamatkan adiknya atau membongkar kejahatan ayahnya**."
             },
             {
-              "judul_poin": "Tahap Penyelesaian (Resolusi)",
-              "penjelasan_singkat": "Menampilkan dampak akhir dari keputusan klimaks, baik berakhir lega, sedih, maupun menggantung.",
-              "contoh_penerapan": "Setelah menyerahkan berkas bukti itu, **Nadia melangkah keluar ruang sidang dengan hati lega**."
+              "judul": "Tahap Penyelesaian (Resolusi)",
+              "teori_singkat": "Menampilkan dampak akhir keputusan klimaks, baik berakhir lega, sedih, maupun menggantung.",
+              "contoh": "Setelah menyerahkan berkas bukti itu, **Nadia melangkah keluar sidang dengan hati lega**."
+            },
+            {
+              "judul": "Sinyal Alur Sorot Balik (*Flashback*)",
+              "teori_singkat": "Lompatan waktu ke masa lalu (*kenangan*, *bertahun silam*) untuk menjelaskan asal-usul konflik.",
+              "contoh": "**Ingatan Andi melayang ke sepuluh tahun silam**, saat ayahnya pergi meninggalkan rumah."
             }
           ]
         },
@@ -150,19 +187,19 @@
           "nama_kelompok": "Pola Prediksi Tindakan dan Bukti Teks",
           "butir": [
             {
-              "judul_poin": "Konsistensi Pola Karakter",
-              "penjelasan_singkat": "Tindakan berikutnya harus selaras dengan prinsip atau kebiasaan tokoh yang sudah dibangun sejak awal.",
-              "contoh_penerapan": "Karena dikenal **pantang menyerah saat gagal**, Dito pasti akan memperbaiki purwarupa robotnya malam ini."
+              "judul": "Konsistensi Pola Karakter",
+              "teori_singkat": "Tindakan berikutnya wajib selaras dengan prinsip atau kebiasaan tokoh sejak awal.",
+              "contoh": "Karena dikenal **pantang menyerah**, Dito pasti memperbaiki purwarupa robotnya malam ini."
             },
             {
-              "judul_poin": "Prediksi di Bawah Dilema Etis",
-              "penjelasan_singkat": "Saat dua nilai penting berbenturan, tokoh akan memilih langkah yang sesuai prioritas nilai tertingginya.",
-              "contoh_penerapan": "Sebagai dokter yang **menjunjung sumpah profesi**, ia tetap mengobati pelaku kejahatan yang terluka parah."
+              "judul": "Prediksi di Bawah Dilema Etis",
+              "teori_singkat": "Saat dua nilai berbenturan, tokoh memilih langkah sesuai prioritas nilai tertingginya.",
+              "contoh": "Sebagai dokter yang **menjunjung sumpah profesi**, ia tetap mengobati pelaku kejahatan."
             },
             {
-              "judul_poin": "Validasi Kutipan Bukti Teks",
-              "penjelasan_singkat": "Kalimat bukti wajib memuat petunjuk nyata atas sifat atau konflik batin yang ditanyakan soal.",
-              "contoh_penerapan": "Sifat dermawan terbukti pada kalimat: \"**Ia diam-diam melunasi seluruh tunggakan biaya sekolah tetangganya.**\""
+              "judul": "Validasi Kutipan Bukti Teks",
+              "teori_singkat": "Kalimat bukti wajib memuat petunjuk nyata atas sifat atau konflik yang ditanyakan.",
+              "contoh": "Sifat dermawan terbukti pada: \"**Ia diam-diam melunasi tunggakan sekolah tetangganya.**\""
             }
           ]
         }
@@ -172,26 +209,35 @@
       "kode_subbab": "lbi-03-03",
       "judul_subbab": "Literasi Teks Saintek dan Kesehatan (Eksplanasi & Riset)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Fokus Utama LBI Saintek:** Menguji ketelitianmu membaca alur sebab-akibat proses ilmiah, cara kerja eksperimen, dan batas validitas hasil riset.\n- **Tiga Lapisan Teks Riset:**\n  1. **Mekanisme Kerja:** Bagaimana suatu zat atau teknologi bekerja dari awal sampai akhir (pemicu $\\rightarrow$ proses $\\rightarrow$ hasil).\n  2. **Desain Eksperimen:** Apa yang diuji (variabel bebas), apa yang diukur (variabel terikat), dan siapa pembandingnya (kelompok kontrol).\n  3. **Batas Temuan:** Sejauh mana hasil riset berlaku (jenis sampel, tahap uji, dan kendala di lapangan).\n- **Aturan Emas:** Jawaban yang benar selalu berupa parafrasa presisi dari isi teks, bukan tebakan atau pelebaran klaim tanpa bukti.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Lacak mekanisme sebab-akibat ilmiah, identifikasi variabel eksperimen, dan batasi kesimpulan riset sesuai bukti eksplisit teks.",
       "kelompok": [
         {
           "nama_kelompok": "Penanda Proses & Alur Sebab-Akibat",
           "butir": [
             {
-              "judul_poin": "Alur Sebab-Akibat Beruntun ($A \\rightarrow B \\rightarrow C$)",
-              "penjelasan_singkat": "Menunjukkan tahapan berurutan saat satu kejadian memicu kejadian berikutnya hingga muncul dampak akhir.",
-              "contoh_penerapan": "Paparan sinar UV **merusak DNA sel kulit**, yang **memicu mutasi gen**, sehingga **meningkatkan risiko kanker kulit**."
+              "judul": "Alur Sebab-Akibat Beruntun ($A \\rightarrow B \\rightarrow C$)",
+              "teori_singkat": "Tahapan berurutan saat satu kejadian memicu kejadian berikutnya hingga muncul dampak akhir.",
+              "contoh": "Sinar UV **merusak DNA sel** $\\rightarrow$ **memicu mutasi gen** $\\rightarrow$ **risiko kanker meningkat**."
             },
             {
-              "judul_poin": "Peran Pemicu & Penghambat Proses",
-              "penjelasan_singkat": "Menandai zat, mikroorganisme, atau komponen alat yang mempercepat, menghambat, atau menggerakkan proses.",
-              "contoh_penerapan": "Enzim amilase **berperan memecah** pati menjadi maltosa, sedangkan inhibitor **menghambat laju** reaksi tersebut."
+              "judul": "Peran Pemicu & Penghambat Proses",
+              "teori_singkat": "Menandai zat atau komponen yang mempercepat, menghambat, atau menggerakkan mekanisme ilmiah.",
+              "contoh": "Enzim amilase **memecah** pati menjadi maltosa, sedangkan inhibitor **menghambat laju** reaksinya."
             },
             {
-              "judul_poin": "Syarat Mutlak Terjadinya Proses",
-              "penjelasan_singkat": "Menunjukkan kondisi lingkungan atau batas ukuran tertentu yang wajib terpenuhi agar mekanisme berjalan.",
-              "contoh_penerapan": "Reaksi fusi nuklir **hanya terjadi apabila** suhu plasma mencapai **lebih dari $100$ juta derajat Celsius**."
+              "judul": "Syarat Mutlak Terjadinya Proses",
+              "teori_singkat": "Kondisi lingkungan atau batas ukuran tertentu yang wajib terpenuhi agar proses berjalan.",
+              "contoh": "Reaksi fusi nuklir **hanya terjadi apabila** suhu plasma mencapai **lebih dari $100$ juta derajat**."
+            },
+            {
+              "judul": "Kontras Mekanisme Dua Metode",
+              "teori_singkat": "Membandingkan cara kerja, keunggulan, atau efisiensi dua teknologi maupun prosedur ilmiah.",
+              "contoh": "Vaksin mRNA **memicu sintesis protein spike**, **sedangkan** vaksin inaktif **memasukkan virus mati**."
             }
           ]
         },
@@ -199,24 +245,34 @@
           "nama_kelompok": "Pola Desain Eksperimen & Variabel Riset",
           "butir": [
             {
-              "judul_poin": "Variabel Bebas (Perlakuan yang Diuji)",
-              "penjelasan_singkat": "Faktor yang sengaja diatur, diberikan, atau diubah peneliti untuk melihat seberapa besar pengaruhnya.",
-              "contoh_penerapan": "Kelompok tikus uji **diberi ekstrak daun kelor** dosis $200\\text{ mg/kg}$ berat badan selama empat minggu."
+              "judul": "Tujuan & Hipotesis Riset",
+              "teori_singkat": "Pertanyaan utama atau dugaan awal peneliti yang hendak dibuktikan lewat pengujian.",
+              "contoh": "Riset ini **bertujuan menguji efektivitas** ekstrak kulit manggis dalam **menekan pertumbuhan bakteri**."
             },
             {
-              "judul_poin": "Variabel Terikat (Hasil yang Diukur)",
-              "penjelasan_singkat": "Indikator biologis, fisik, atau teknis yang diamati dan diukur perubahannya setelah diberi perlakuan.",
-              "contoh_penerapan": "Setelah empat minggu, peneliti **mengukur penurunan kadar gula darah** dan **peningkatan sensitivitas insulin** subjek."
+              "judul": "Variabel Bebas (Perlakuan yang Diuji)",
+              "teori_singkat": "Faktor yang sengaja diatur atau diubah peneliti untuk melihat besar pengaruhnya.",
+              "contoh": "Tikus uji **diberi ekstrak daun kelor** dosis $200\\text{ mg/kg}$ selama empat minggu."
             },
             {
-              "judul_poin": "Kelompok Kontrol vs Kelompok Perlakuan",
-              "penjelasan_singkat": "Memisahkan kelompok pembanding tanpa obat aktif (plasebo) dari kelompok yang menerima terapi eksperimen.",
-              "contoh_penerapan": "Kelompok perlakuan menerima vaksin kandidat, **sementara kelompok kontrol hanya diberi cairan salin** tanpa zat aktif."
+              "judul": "Variabel Terikat (Hasil yang Diukur)",
+              "teori_singkat": "Indikator biologis atau teknis yang diamati perubahannya setelah diberi perlakuan.",
+              "contoh": "Peneliti **mengukur penurunan kadar gula darah** dan **peningkatan sensitivitas insulin** subjek."
             },
             {
-              "judul_poin": "Perbandingan Data & Hasil Bermakna",
-              "penjelasan_singkat": "Menunjukkan perbedaan hasil antarperlakuan yang terbukti nyata versus perbedaan yang kebetulan belaka.",
-              "contoh_penerapan": "Baterai litium-sulfur **mencatat kenaikan kapasitas sebesar $35\\%$** dibandingkan baterai biasa secara bermakna."
+              "judul": "Variabel Kontrol (Faktor yang Diseragamkan)",
+              "teori_singkat": "Kondisi lingkungan atau karakteristik subjek yang dibuat sama agar tidak membiaskan hasil.",
+              "contoh": "Seluruh tanaman uji **ditempatkan pada suhu ruang $25^\\circ\\text{C}$** dan **intensitas cahaya identik**."
+            },
+            {
+              "judul": "Kelompok Kontrol vs Kelompok Perlakuan",
+              "teori_singkat": "Memisahkan kelompok pembanding tanpa zat aktif (plasebo) dari kelompok penerima terapi.",
+              "contoh": "Kelompok perlakuan menerima vaksin kandidat, **sementara kelompok kontrol hanya diberi cairan salin**."
+            },
+            {
+              "judul": "Perbandingan Data & Hasil Bermakna",
+              "teori_singkat": "Menunjukkan perbedaan hasil antarperlakuan yang terbukti nyata versus sekadar kebetulan.",
+              "contoh": "Baterai litium-sulfur **mencatat kenaikan kapasitas sebesar $35\\%$** dibandingkan baterai konvensional."
             }
           ]
         },
@@ -224,24 +280,24 @@
           "nama_kelompok": "Batas Validitas Riset & Cek Fakta Klaim",
           "butir": [
             {
-              "judul_poin": "Korelasi (Keterkaitan) vs Kausalitas (Penyebab Langsung)",
-              "penjelasan_singkat": "Menunjukkan dua kejadian muncul bersamaan tanpa membuktikan bahwa yang satu pasti menyebabkan yang lain.",
-              "contoh_penerapan": "Kebiasaan minum kopi tanpa gula **berkorelasi dengan** rendahnya risiko diabetes tipe 2 pada orang dewasa."
+              "judul": "Korelasi vs Kausalitas",
+              "teori_singkat": "Dua kejadian muncul bersamaan tanpa bukti bahwa yang satu menyebabkan yang lain.",
+              "contoh": "Minum kopi tanpa gula **berkorelasi dengan** rendahnya risiko diabetes tipe 2."
             },
             {
-              "judul_poin": "Batas Sampel & Tahap Pengujian",
-              "penjelasan_singkat": "Menandai ruang lingkup riset (uji cawan laboratorium, hewan coba, atau sampel kecil) yang membatasi kesimpulan.",
-              "contoh_penerapan": "Uji keampuhan senyawa ini **baru dilakukan pada kultur sel (*in vitro*)** dengan jumlah sampel terbatas."
+              "judul": "Batas Sampel & Tahap Pengujian",
+              "teori_singkat": "Ruang lingkup uji (cawan laboratorium, hewan coba, sampel kecil) yang membatasi generalisasi.",
+              "contoh": "Uji keampuhan senyawa ini **baru dilakukan pada kultur sel (*in vitro*)** bersampel kecil."
             },
             {
-              "judul_poin": "Kata Peluang & Kehati-hatian Peneliti",
-              "penjelasan_singkat": "Kata seperti *berpotensi* atau *diduga* yang menunjukkan peluang sementara dan perlunya riset lanjutan.",
-              "contoh_penerapan": "Terapi gen ini **berpotensi menekan** pertumbuhan tumor, **namun masih memerlukan uji klinis tahap lanjutan**."
+              "judul": "Kata Peluang & Kehati-hatian Peneliti",
+              "teori_singkat": "Kata *berpotensi* atau *diduga* menandai kesimpulan sementara yang butuh riset lanjutan.",
+              "contoh": "Terapi gen ini **berpotensi menekan** tumor, **namun masih memerlukan uji klinis lanjutan**."
             },
             {
-              "judul_poin": "Syarat Penerapan di Lapangan",
-              "penjelasan_singkat": "Menunjukkan kendala teknis, biaya, atau fasilitas yang harus dibereskan sebelum teknologi dipakai masyarakat.",
-              "contoh_penerapan": "Penyulingan air laut bertenaga surya ini **siap dipakai warga pesisir asalkan** biaya filter membrannya ditekan."
+              "judul": "Syarat Penerapan di Lapangan",
+              "teori_singkat": "Kendala teknis, biaya, atau infrastruktur yang harus dibereskan sebelum dipakai masyarakat.",
+              "contoh": "Penyulingan air laut surya **siap dipakai warga asalkan** biaya filter membrannya ditekan."
             }
           ]
         }
@@ -251,26 +307,30 @@
       "kode_subbab": "lbi-03-04",
       "judul_subbab": "Literasi Teks Sosial-Humaniora, Ekonomi, dan Kebijakan",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Fokus Utama:** Melacak hubungan sebab-akibat, pergerakan ekonomi makro-mikro, perbedaan dampak tiap kelompok warga, dan tarik-ulur argumen kebijakan.\n- **Alur Logika Teks:** $\\text{Kebijakan/Fenomena} \\rightarrow \\text{Proses Perantara} \\rightarrow \\text{Dampak ke Masyarakat}$.\n- **Aturan Emas:** Jawaban wajib punya bukti tertulis di bacaan. Buang opsi yang memakai asumsi pribadi atau kata mutlak seperti `semua` dan `pasti`.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Petakan rantai sebab-akibat kebijakan, dampak diferensial antarkelompok warga, serta tarik-ulur argumen berdasarkan bukti eksplisit bacaan.",
       "kelompok": [
         {
           "nama_kelompok": "Penanda Sebab-Akibat dan Alur Perantara",
           "butir": [
             {
-              "judul_poin": "Sebab-Akibat Berantai (Ada Perantara)",
-              "penjelasan_singkat": "Menghubungkan kebijakan awal ke dampak akhir lewat kejadian perantara ($A \\rightarrow B \\rightarrow C$) dengan kata hubung sebab-akibat yang jelas.",
-              "contoh_penerapan": "Urbanisasi masif **memicu** kenaikan harga lahan, **sehingga** warga berpenghasilan rendah **terdorong** pindah ke pinggiran kota."
+              "judul": "Sebab-Akibat Berantai (Ada Perantara)",
+              "teori_singkat": "Menghubungkan kebijakan awal ke dampak akhir lewat kejadian perantara ($A \\rightarrow B \\rightarrow C$).",
+              "contoh": "Urbanisasi **memicu** harga lahan naik $\\rightarrow$ warga berpenghasilan rendah **terdorong** ke pinggiran kota."
             },
             {
-              "judul_poin": "Kejadian Bersamaan vs. Sebab-Akibat",
-              "penjelasan_singkat": "Menunjukkan dua hal terjadi berbarengan (*seiring*, *beriringan*) tanpa memastikan hal pertama menyebabkan hal kedua.",
-              "contoh_penerapan": "Peningkatan akses internet **beriringan dengan** perubahan selera hiburan anak muda di perkotaan."
+              "judul": "Kejadian Bersamaan vs. Sebab-Akibat",
+              "teori_singkat": "Dua hal terjadi berbarengan (*seiring*, *beriringan*) tanpa kepastian hubungan sebab-akibat langsung.",
+              "contoh": "Peningkatan akses internet **beriringan dengan** perubahan selera hiburan anak muda perkotaan."
             },
             {
-              "judul_poin": "Akar Masalah vs. Pemicu yang Mempercepat",
-              "penjelasan_singkat": "Membedakan masalah utama yang sudah lama ada dari kejadian baru yang membuat masalah itu makin parah.",
-              "contoh_penerapan": "Ketimpangan fasilitas sekolah adalah **akar masalah**, sementara pandemi **mempercepat** melebarnya jarak literasi digital antardaerah."
+              "judul": "Akar Masalah vs. Pemicu yang Mempercepat",
+              "teori_singkat": "Membedakan masalah struktural lama dari kejadian baru yang memperparah kondisi.",
+              "contoh": "Ketimpangan fasilitas adalah **akar masalah**, sementara pandemi **mempercepat** pelebaran jarak literasi."
             }
           ]
         },
@@ -278,19 +338,24 @@
           "nama_kelompok": "Sinyal Pergerakan Ekonomi Makro-Mikro",
           "butir": [
             {
-              "judul_poin": "Hubungan Naik-Turun Berlawanan",
-              "penjelasan_singkat": "Menunjukkan kenaikan satu angka ekonomi yang justru menekan angka ekonomi lainnya lewat kata kontras.",
-              "contoh_penerapan": "Kenaikan suku bunga acuan efektif **meredam** laju inflasi, tetapi di sisi lain **menekan** penyaluran kredit UMKM."
+              "judul": "Hubungan Naik-Turun Berlawanan",
+              "teori_singkat": "Kenaikan satu indikator ekonomi yang justru menekan indikator ekonomi lainnya.",
+              "contoh": "Kenaikan suku bunga efektif **meredam** inflasi, tetapi **menekan** penyaluran kredit UMKM."
             },
             {
-              "judul_poin": "Dampak Kebijakan ke Kantong Warga",
-              "penjelasan_singkat": "Melacak efek aturan pemerintah (subsidi, pajak, tarif) terhadap ongkos produksi hingga harga belanja rumah tangga.",
-              "contoh_penerapan": "Pencabutan subsidi energi **mengerek** biaya angkut barang yang akhirnya **dibebankan** ke pembeli lewat kenaikan harga pangan."
+              "judul": "Dampak Kebijakan ke Kantong Warga",
+              "teori_singkat": "Melacak efek subsidi, pajak, atau tarif terhadap ongkos produksi hingga harga belanja.",
+              "contoh": "Pencabutan subsidi energi **mengerek** biaya angkut yang **dibebankan** ke harga pangan."
             },
             {
-              "judul_poin": "Untung-Rugi Jangka Pendek vs. Panjang",
-              "penjelasan_singkat": "Menangkap pengorbanan sementara demi manfaat masa depan di sektor energi atau ketenagakerjaan.",
-              "contoh_penerapan": "Penghentian dini PLTU batu bara **menurunkan** emisi karbon, **meski berisiko** memicu PHK di daerah tambang."
+              "judul": "Untung-Rugi Jangka Pendek vs. Panjang",
+              "teori_singkat": "Pengorbanan ekonomi sementara demi manfaat berkelanjutan pada sektor energi atau tenaga kerja.",
+              "contoh": "Penghentian dini PLTU batu bara **menurunkan** emisi, **meski berisiko** memicu PHK sementara."
+            },
+            {
+              "judul": "Efek Bumerang Kebijakan (Kontraproduktif)",
+              "teori_singkat": "Kebijakan yang bertujuan melindungi warga justru memicu distorsi pasar atau kelangkaan barang.",
+              "contoh": "Penetapan harga eceran tertinggi **bertujuan menekan harga**, namun **memicu penimbunan dan kelangkaan**."
             }
           ]
         },
@@ -298,19 +363,19 @@
           "nama_kelompok": "Penanda Beda Dampak Tiap Kelompok",
           "butir": [
             {
-              "judul_poin": "Dampak Berbeda Antar-Kelompok Warga",
-              "penjelasan_singkat": "Membandingkan kelompok yang langsung diuntungkan dengan kelompok yang justru tertinggal akibat aturan yang sama.",
-              "contoh_penerapan": "Insentif kendaraan listrik **menguntungkan** kelas menengah atas, **sedangkan** pengguna angkutan umum belum merasakan perbaikan layanan."
+              "judul": "Dampak Berbeda Antar-Kelompok Warga",
+              "teori_singkat": "Membandingkan kelompok yang langsung diuntungkan dengan kelompok yang tertinggal akibat aturan sama.",
+              "contoh": "Insentif mobil listrik **menguntungkan** kelas atas, **sedangkan** pengguna angkutan umum belum terbantu."
             },
             {
-              "judul_poin": "Efek Samping bagi Kelompok Rentan",
-              "penjelasan_singkat": "Menangkap dampak ikutan yang tidak diinginkan dari suatu proyek terhadap mata pencaharian warga lokal.",
-              "contoh_penerapan": "Digitalisasi izin usaha memangkas birokrasi, **tetapi menyisakan** kendala akses bagi pelaku usaha mikro di daerah minim sinyal."
+              "judul": "Efek Samping bagi Kelompok Rentan",
+              "teori_singkat": "Dampak ikutan tak diinginkan dari suatu kebijakan terhadap pelaku usaha kecil atau warga lokal.",
+              "contoh": "Digitalisasi izin memangkas birokrasi, **tetapi menyisakan** kendala akses bagi usaha mikro daerah."
             },
             {
-              "judul_poin": "Kata Pembatas Cakupan Klaim",
-              "penjelasan_singkat": "Memakai kata pembatas (*cenderung*, *berpotensi*, *sebagian*) agar pernyataan tetap akurat sesuai fakta lapangan.",
-              "contoh_penerapan": "Bantuan tunai **cenderung** efektif menahan penurunan belanja **pada kelompok** warga termiskin selama tiga bulan pertama."
+              "judul": "Kata Pembatas Cakupan Klaim",
+              "teori_singkat": "Memakai *cenderung*, *berpotensi*, atau *sebagian* agar klaim tidak melampaui bukti bacaan.",
+              "contoh": "Bantuan tunai **cenderung** efektif menahan penurunan belanja **pada kelompok** warga termiskin."
             }
           ]
         },
@@ -318,19 +383,24 @@
           "nama_kelompok": "Pola Adu Argumen Pro dan Kontra",
           "butir": [
             {
-              "judul_poin": "Mengakui Dulu Sebelum Mengkritik",
-              "penjelasan_singkat": "Mengakui sisi baik argumen lawan di awal kalimat sebelum melontarkan kritik utama lewat kata pertentangan.",
-              "contoh_penerapan": "**Kendati** hilirisasi mineral mendongkrak nilai ekspor, kebijakan ini **tetap menuai kritik** karena lemahnya pengawasan lingkungan."
+              "judul": "Mengakui Dulu Sebelum Mengkritik",
+              "teori_singkat": "Mengakui sisi baik argumen lawan di awal sebelum melontarkan kritik utama.",
+              "contoh": "**Kendati** hilirisasi mendongkrak ekspor, kebijakan ini **tetap dikritik** karena lemahnya pengawasan lingkungan."
             },
             {
-              "judul_poin": "Benturan Fokus Efisiensi vs. Keadilan",
-              "penjelasan_singkat": "Memetakan adu argumen antara kubu yang mengejar pertumbuhan ekonomi dan kubu yang membela pemerataan sosial.",
-              "contoh_penerapan": "**Kubu pro** menyoroti penghematan anggaran negara, **sebaliknya kelompok kontra** menilai pemangkasan subsidi memperlebar ketimpangan."
+              "judul": "Benturan Fokus Efisiensi vs. Keadilan",
+              "teori_singkat": "Adu argumen antara kubu pengejar efisiensi anggaran dan kubu pembela pemerataan sosial.",
+              "contoh": "**Kubu pro** menyoroti penghematan anggaran, **sebaliknya kelompok kontra** menilai subsidi dipangkas memperlebar ketimpangan."
             },
             {
-              "judul_poin": "Nada Kritis Bersyarat vs. Sekadar Melaporkan",
-              "penjelasan_singkat": "Membedakan teks yang cuma memaparkan data dari teks yang mengkritisi syarat keberhasilan suatu kebijakan.",
-              "contoh_penerapan": "Tanpa perbaikan tata kelola distribusi, target swasembada pangan **berisiko menjadi** sekadar slogan yang **sulit terwujud**."
+              "judul": "Nada Kritis Bersyarat vs. Melaporkan",
+              "teori_singkat": "Membedakan teks pemaparan data netral dari teks yang mengkritisi syarat keberhasilan kebijakan.",
+              "contoh": "Tanpa perbaikan tata kelola distribusi, swasembada pangan **berisiko menjadi** sekadar slogan."
+            },
+            {
+              "judul": "Sinyal Rekomendasi & Mitigasi Kebijakan",
+              "teori_singkat": "Usulan langkah kompromi (*perlu diimbangi*, *harus disertai*) untuk meredam dampak negatif aturan.",
+              "contoh": "Kenaikan tarif cukai **perlu diimbangi** pengawasan peredaran rokok ilegal dan bantuan petani."
             }
           ]
         }
@@ -340,81 +410,95 @@
       "kode_subbab": "lbi-03-05",
       "judul_subbab": "Literasi Teks Ulasan (Review Text)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Teks Ulasan**: Tulisan yang menilai kualitas, kelebihan, dan kekurangan suatu karya atau produk berdasarkan bukti.\n- **Alur Struktur**: Identitas Karya $\\rightarrow$ Gambaran Isi $\\rightarrow$ Penilaian (Plus-Minus) $\\rightarrow$ Simpulan & Rekomendasi.\n- **Kunci Utama UTBK**: Pisahkan dengan tegas antara **fakta karya** (data, durasi, alur cerita) dan **opini pengulas** (penilaian bagus/buruk beserta alasannya).",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Bedakan fakta deskriptif karya dari opini pengulas, lalu evaluasi kekuatan bukti di balik pujian, kritik, dan rekomendasi.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Memilah Fakta Karya vs. Opini Pengulas",
+          "nama_kelompok": "Memilah Fakta Karya vs. Opini Pengulas",
           "butir": [
             {
-              "judul_poin": "Fakta Deskriptif Karya (Identitas & Sinopsis)",
-              "penjelasan_singkat": "Menyampaikan data fisik, spesifikasi, atau alur cerita secara apa adanya tanpa kata sifat penilaian.",
-              "contoh_penerapan": "Novel setebal **412 halaman** terbitan Pustaka Jaya ini berlatar **pedesaan Jawa tahun 1965** dengan sudut pandang orang pertama."
+              "judul": "Fakta Deskriptif Karya (Identitas & Sinopsis)",
+              "teori_singkat": "Menyampaikan data fisik, spesifikasi, atau alur cerita secara objektif tanpa kata penilaian.",
+              "contoh": "Novel setebal **$412$ halaman** ini berlatar **pedesaan Jawa tahun $1965$** bersudut pandang pertama."
             },
             {
-              "judul_poin": "Kata Sifat Penilai (Sinyal Opini Pengulas)",
-              "penjelasan_singkat": "Memakai kata sifat bermuatan nilai untuk menunjukkan kesan pribadi pengulas terhadap kualitas karya.",
-              "contoh_penerapan": "Alur cerita pada paruh kedua terasa **sangat lambat dan bertele-tele**, sehingga **menurunkan ketegangan** konflik utama."
+              "judul": "Kata Sifat Penilai (Sinyal Opini Pengulas)",
+              "teori_singkat": "Memakai kata sifat bermuatan nilai untuk menunjukkan kesan subjektif pengulas terhadap kualitas.",
+              "contoh": "Alur paruh kedua terasa **sangat lambat dan bertele-tele**, sehingga **menurunkan ketegangan** utama."
             },
             {
-              "judul_poin": "Cakupan Aspek yang Diulas",
-              "penjelasan_singkat": "Menunjukkan bagian karya yang dibahas pengulas, mulai dari isi cerita, teknis produksi, hingga latar sejarahnya.",
-              "contoh_penerapan": "Selain membedah **penokohan dan dialog**, pengulas juga menyoroti **tata sinematografi** serta **akurasi riset sejarah** film itu."
+              "judul": "Cakupan Aspek yang Diulas",
+              "teori_singkat": "Menunjukkan bagian karya yang dibahas, mulai isi cerita, teknis produksi, hingga akurasi.",
+              "contoh": "Selain membedah **penokohan**, pengulas juga menyoroti **sinematografi** dan **akurasi riset sejarah**."
+            },
+            {
+              "judul": "Sikap Umum Pengulas (Apresiatif vs. Ambivalen)",
+              "teori_singkat": "Posisi keseluruhan pengulas: memuji penuh (**apresiatif**), menolak (**kritis**), atau menimbang plus-minus (**ambivalen**).",
+              "contoh": "Pengulas bersikap **apresiatif** terhadap kedalaman tema, **meski memberi catatan kritis** pada penyuntingan."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Sinyal Kelebihan, Kekurangan, dan Bukti",
+          "nama_kelompok": "Sinyal Kelebihan, Kekurangan, dan Bukti",
           "butir": [
             {
-              "judul_poin": "Pujian yang Didukung Bukti Nyata",
-              "penjelasan_singkat": "Mengaitkan pujian kualitas dengan bukti spesifik dari isi karya, data uji, atau cuplikan adegan.",
-              "contoh_penerapan": "Keunggulan utama gawai ini terletak pada **daya tahan baterai 18 jam** yang **terbukti dalam uji pemutaran video nonstop**."
+              "judul": "Pujian yang Didukung Bukti Nyata",
+              "teori_singkat": "Mengaitkan klaim keunggulan dengan bukti spesifik dari isi karya atau data pengujian.",
+              "contoh": "Keunggulan gawai ini ialah **baterai $18$ jam** yang **terbukti pada uji video nonstop**."
             },
             {
-              "judul_poin": "Kata Hubung Kontras (Peralihan Plus ke Minus)",
-              "penjelasan_singkat": "Menandai perubahan fokus ulasan dari kelebihan menuju kekurangan karya lewat kata hubung pertentangan.",
-              "contoh_penerapan": "Visualisasi animasinya memukau mata; **namun**, kedalaman karakter pendukung **kurang tergali** akibat durasi yang padat."
+              "judul": "Opini Subjektif Tanpa Bukti",
+              "teori_singkat": "Penilaian bagus atau buruk yang dilontarkan pengulas tanpa menyertakan cuplikan maupun data karya.",
+              "contoh": "Pengulas hanya menyebut **akting pemain sangat buruk** tanpa menunjukkan **adegan pendukung klaimnya**."
             },
             {
-              "judul_poin": "Kritik Terbatas (Tidak Menolak Total)",
-              "penjelasan_singkat": "Menyampaikan kekurangan karya secara terukur tanpa menghapus nilai positif karya secara keseluruhan.",
-              "contoh_penerapan": "**Terlepas dari** beberapa istilah teknis yang **kurang dijelaskan**, buku panduan ini tetap mudah dipahami pembaca pemula."
+              "judul": "Kata Hubung Kontras (Peralihan Plus ke Minus)",
+              "teori_singkat": "Menandai perubahan fokus ulasan dari kelebihan menuju kekurangan lewat kata pertentangan.",
+              "contoh": "Visualisasinya memukau mata; **namun**, kedalaman karakter pendukung **kurang tergali** akibat durasi padat."
+            },
+            {
+              "judul": "Kritik Terbatas (Tidak Menolak Total)",
+              "teori_singkat": "Menyampaikan kekurangan secara terukur tanpa menghapus nilai positif karya secara keseluruhan.",
+              "contoh": "**Terlepas dari** beberapa istilah teknis **kurang dijelaskan**, buku ini tetap mudah dipahami."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Logika Penilaian dan Target Rekomendasi",
+          "nama_kelompok": "Logika Penilaian dan Target Rekomendasi",
           "butir": [
             {
-              "judul_poin": "Rekomendasi Sesuai Segmen Audiens",
-              "penjelasan_singkat": "Mengarahkan kelayakan karya kepada kelompok pembaca atau penonton tertentu sesuai karakter karyanya.",
-              "contoh_penerapan": "Dengan pendekatan matematis yang ketat, buku ini **sangat direkomendasikan bagi mahasiswa tingkat lanjut**, bukan pembaca awam."
+              "judul": "Rekomendasi Sesuai Segmen Audiens",
+              "teori_singkat": "Mengarahkan kelayakan karya kepada kelompok pembaca atau penonton tertentu sesuai karakternya.",
+              "contoh": "Dengan pendekatan matematis ketat, buku ini **direkomendasikan bagi mahasiswa lanjut**, bukan awam."
             },
             {
-              "judul_poin": "Simpulan Akhir Pengulas (Verdict)",
-              "penjelasan_singkat": "Merangkum seluruh pertimbangan plus-minus menjadi keputusan akhir layak atau tidaknya karya diapresiasi.",
-              "contoh_penerapan": "**Secara keseluruhan**, kekuatan akting pemeran utama **berhasil menutupi** lubang plot minor, sehingga film ini layak tonton."
+              "judul": "Simpulan Akhir Pengulas (Verdict)",
+              "teori_singkat": "Merangkum pertimbangan plus-minus menjadi keputusan akhir layak atau tidaknya karya diapresiasi.",
+              "contoh": "**Secara keseluruhan**, akting pemeran utama **menutupi lubang plot minor**, sehingga layak tonton."
             },
             {
-              "judul_poin": "Standar Penilaian yang Salah Sasaran",
-              "penjelasan_singkat": "Mendeteksi kelemahan argumen pengulas saat memakai standar pembanding yang tidak cocok dengan jenis karyanya.",
-              "contoh_penerapan": "Pengulas menilai novel fiksi ilmiah ini buruk **hanya karena** tidak memuat **data statistik layaknya jurnal akademik**."
+              "judul": "Standar Penilaian yang Salah Sasaran",
+              "teori_singkat": "Kelemahan argumen pengulas saat memakai standar pembanding yang tidak cocok dengan genre.",
+              "contoh": "Pengulas menilai novel fiksi ilmiah buruk **karena** tidak memuat **data statistik jurnal**."
             }
           ]
         },
         {
-          "nama_kelompok": "4. Membandingkan Dua Pengulas",
+          "nama_kelompok": "Membandingkan Dua Pengulas",
           "butir": [
             {
-              "judul_poin": "Fakta Sama, Penilaian Berbeda",
-              "penjelasan_singkat": "Melihat kesamaan data karya yang dirujuk kedua pengulas sebelum mencari perbedaan pendapat mereka.",
-              "contoh_penerapan": "Kedua pengulas mencatat **durasi film 150 menit**, tetapi Pengulas A menilainya **epik**, sedangkan Pengulas B menyebutnya **melelahkan**."
+              "judul": "Fakta Sama, Penilaian Berbeda",
+              "teori_singkat": "Kesamaan data karya yang dirujuk kedua pengulas sebelum muncul perbedaan opini.",
+              "contoh": "Keduanya mencatat **durasi $150$ menit**; Pengulas A menilainya **epik**, Pengulas B **melelahkan**."
             },
             {
-              "judul_poin": "Beda Aspek yang Disorot",
-              "penjelasan_singkat": "Menunjukkan bagaimana dua pengulas punya simpulan berbeda karena membedah sisi karya yang tidak sama.",
-              "contoh_penerapan": "Pengulas 1 memuji **pesan moral cerita**, sementara Pengulas 2 mengkritik **kualitas terjemahan dan penyuntingan naskah**."
+              "judul": "Beda Aspek yang Disorot",
+              "teori_singkat": "Dua pengulas bersimpulan berbeda karena membedah sisi karya yang tidak sama.",
+              "contoh": "Pengulas 1 memuji **pesan moral cerita**, sementara Pengulas 2 mengkritik **kualitas terjemahan**."
             }
           ]
         }

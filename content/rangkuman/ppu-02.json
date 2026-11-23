@@ -2,58 +2,76 @@
   "kode_bab": "ppu-02",
   "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
   "bab": "Bab 2: Morfologi dan Frasa",
-  "batch_model": "hydrogen",
-  "jumlah_subbab": 4,
+  "estimasi_menit_review": 6,
   "daftar_subbab": [
     {
       "kode_subbab": "ppu-02-01",
       "judul_subbab": "Afiksasi (Imbuhan) dan Maknanya",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Afiksasi (pengimbuhan)** bertugas membentuk kata baru sekaligus mengubah makna atau jenis kata sesuai kaidah EYD V dan KBBI VI:\n\n* **Makna Kontekstual:** Satu bentuk imbuhan bisa punya arti berbeda tergantung kalimatnya (misalnya *peN-...-an* bisa berarti proses atau tempat).\n* **Peluluhan K-T-S-P:** Huruf awal *k, t, s, p* pada kata dasar luluh jika bertemu awalan *meN-* atau *peN-*, kecuali diawali dua konsonan berurutan.\n* **Imbuhan Serapan:** Unsur terikat seperti *pra-*, *non-*, dan *pasca-* wajib ditulis serangkai dengan kata dasarnya.",
       "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Pembagian Teori",
+        "kolom_2": "1 Contoh Penerapan"
+      },
+      "inti_subbab": "Afiksasi membentuk kata baru, mengubah kelas kata serta makna, dan mengikuti kaidah peluluhan K-T-S-P EYD V.",
       "kelompok": [
         {
           "nama_kelompok": "Makna Imbuhan dan Perubahan Jenis Kata",
           "butir": [
             {
-              "judul_poin": "Makna Imbuhan Gabungan peN-...-an dan ke-...-an",
-              "penjelasan_singkat": "Imbuhan peN-...-an umumnya menyatakan proses atau tempat, sedangkan ke-...-an menyatakan hal abstrak, tempat, atau terkena sesuatu.",
-              "contoh_penerapan": "**Pelebaran** jalan utama dilakukan demi kelancaran lalu lintas, sedangkan **kedutaan** besar itu berlokasi di pusat kota."
+              "judul": "Makna Gabungan peN-...-an dan ke-...-an",
+              "teori_singkat": "*peN-...-an* menyatakan proses atau tempat; *ke-...-an* menyatakan hal abstrak, tempat, atau terkena sesuatu.",
+              "contoh": "**Pelebaran** jalan sedang berlangsung, sedangkan kantor **kedutaan** besar berlokasi di pusat kota."
             },
             {
-              "judul_poin": "Makna Awalan ber- dan Akhiran -an",
-              "penjelasan_singkat": "Awalan ber- bisa berarti mempunyai, memakai, atau melakukan, sedangkan akhiran -an menyatakan hasil, alat, atau kumpulan.",
-              "contoh_penerapan": "Peserta **bersepeda** santai menyusuri jalur hijau sambil membawa **catatan** rute yang telah dibagikan panitia."
+              "judul": "Makna Awalan ber- dan Akhiran -an",
+              "teori_singkat": "*ber-* berarti mempunyai, memakai, atau melakukan; *-an* menyatakan hasil, alat, atau kumpulan.",
+              "contoh": "Peserta **bersepeda** santai menyusuri jalur hijau sambil membawa **catatan** rute panitia."
             },
             {
-              "judul_poin": "Mengubah Kata Kerja atau Sifat Menjadi Kata Benda",
-              "penjelasan_singkat": "Imbuhan peN-, -an, peN-...-an, dan ke-...-an mengubah kata kerja atau kata sifat menjadi kata benda agar bisa mengisi posisi subjek atau objek.",
-              "contoh_penerapan": "Sikap **kejujuran** dan **ketelitian** peneliti sangat menentukan keakuratan data dalam **pengukuran** sampel laboratorium tersebut."
+              "judul": "Makna Awalan ter- (Ketidaksengajaan dan Paling)",
+              "teori_singkat": "Awalan *ter-* menyatakan ketidaksengajaan pada kata kerja dan tingkat paling pada kata sifat.",
+              "contoh": "Gelas itu **terjatuh** tidak sengaja saat atlet **tercepat** memasuki garis finis."
             },
             {
-              "judul_poin": "Mengubah Kata Benda atau Sifat Menjadi Kata Kerja",
-              "penjelasan_singkat": "Imbuhan meN-, ber-, meN-...-kan, dan meN-...-i mengubah kata benda atau kata sifat menjadi kata kerja sebagai predikat aktif.",
-              "contoh_penerapan": "Pemerintah daerah terus **memperluas** area resapan air untuk **mengantisipasi** banjir kiriman pada puncak musim hujan."
+              "judul": "Sisipan (Infiks: -el-, -em-, -er-, -in-)",
+              "teori_singkat": "Sisipan *-el-*, *-em-*, *-er-*, dan *-in-* disisipkan setelah konsonan pertama untuk membentuk makna baru.",
+              "contoh": "Gigi $\\rightarrow$ **gerigi**; kerja $\\rightarrow$ **kinerja**; getar $\\rightarrow$ **gemetar**; tunjuk $\\rightarrow$ **telunjuk**."
+            },
+            {
+              "judul": "Nominalisasi (Menjadi Kata Benda)",
+              "teori_singkat": "Imbuhan *peN-*, *-an*, *peN-...-an*, dan *ke-...-an* mengubah kata kerja/sifat menjadi kata benda.",
+              "contoh": "Sikap **kejujuran** dan **ketelitian** peneliti menentukan akurasi **pengukuran** sampel laboratorium."
+            },
+            {
+              "judul": "Verbalisasi (Menjadi Kata Kerja)",
+              "teori_singkat": "Imbuhan *meN-*, *ber-*, *meN-...-kan*, dan *meN-...-i* mengubah kata benda/sifat menjadi kata kerja predikatif.",
+              "contoh": "Pemerintah daerah terus **memperluas** area resapan untuk **mengantisipasi** banjir kiriman."
             }
           ]
         },
         {
-          "nama_kelompok": "Aturan Peluluhan Huruf K-T-S-P",
+          "nama_kelompok": "Aturan Peluluhan Huruf K-T-S-P dan Awalan menge-",
           "butir": [
             {
-              "judul_poin": "Peluluhan Konsonan Tunggal K, T, S, P",
-              "penjelasan_singkat": "Huruf awal k, t, s, p pada kata dasar wajib luluh jika bertemu awalan meN- atau peN- dan langsung diikuti huruf vokal.",
-              "contoh_penerapan": "Penampilan orkestra muda itu sukses **memesona** penonton sekaligus **memengaruhi** minat publik terhadap musik klasik."
+              "judul": "Peluluhan Konsonan Tunggal K-T-S-P",
+              "teori_singkat": "Huruf awal *k, t, s, p* luluh jika bertemu *meN-/peN-* dan diikuti huruf vokal.",
+              "contoh": "Orkestra itu sukses **memesona** penonton dan **memengaruhi** minat publik (✕ mempesona, mempengaruhi)."
             },
             {
-              "judul_poin": "Pengecualian pada Gugus Konsonan (Kluster)",
-              "penjelasan_singkat": "Kata dasar yang diawali dua konsonan berurutan (kr-, tr-, st-, pr-, sp-) tidak boleh luluh saat mendapat awalan meN- atau peN-.",
-              "contoh_penerapan": "Jurnalis investigasi berhasil **mengklarifikasi** isu tersebut sekaligus **memproduksi** laporan mendalam tentang tata kelola energi bersih."
+              "judul": "Pengecualian Gugus Konsonan (Kluster)",
+              "teori_singkat": "Kata dasar berawalan dua konsonan (*kr-, tr-, st-, pr-, sp-*) tidak boleh luluh.",
+              "contoh": "Jurnalis berhasil **mengklarifikasi** isu tersebut sekaligus **memproduksi** laporan energi bersih (✕ menglarifikasi)."
             },
             {
-              "judul_poin": "Pengecualian pada Awalan Bertingkat (meN- + per-)",
-              "penjelasan_singkat": "Huruf p pada imbuhan per- tidak pernah luluh ketika bergabung dengan awalan meN- membentuk awalan memper-.",
-              "contoh_penerapan": "Para relawan berupaya **memperbaiki** saluran irigasi desa dan **mempersiapkan** logistik pangan sebelum musim kemarau tiba."
+              "judul": "Pengecualian Awalan Bertingkat (meN- + per-)",
+              "teori_singkat": "Huruf *p* pada awalan *per-* tidak pernah luluh saat bergabung menjadi *memper-*.",
+              "contoh": "Relawan berupaya **memperbaiki** saluran irigasi desa dan **mempersiapkan** logistik pangan (✕ memerbaiki)."
+            },
+            {
+              "judul": "Awalan menge- pada Kata Dasar Satu Suku Kata",
+              "teori_singkat": "Kata dasar satu suku kata wajib memakai bentuk *menge-* atau *penge-*, bukan *meN-/peN-*.",
+              "contoh": "Pekerja mulai **mengecat** dinding dan **mengelas** pagar besi (✕ mencat, menglas)."
             }
           ]
         },
@@ -61,24 +79,24 @@
           "nama_kelompok": "Kalimat Aktif-Pasif dan Imbuhan Serapan EYD V",
           "butir": [
             {
-              "judul_poin": "Ketepatan Imbuhan Kalimat Aktif dan Pasif",
-              "penjelasan_singkat": "Kalimat aktif memakai awalan meN-, sedangkan kalimat pasif memakai di- (pelaku orang ketiga) atau tanpa awalan (pelaku aku/kami/kamu).",
-              "contoh_penerapan": "Proposal penelitian yang telah **kami ajukan** bulan lalu akhirnya **disetujui** oleh dewan etik universitas hari ini."
+              "judul": "Ketepatan Imbuhan Kalimat Aktif dan Pasif",
+              "teori_singkat": "Aktif memakai *meN-*; pasif memakai *di-* (pelaku ketiga) atau tanpa awalan (pelaku pertama/kedua).",
+              "contoh": "Proposal yang **kami ajukan** bulan lalu akhirnya **disetujui** dewan etik (✕ diajukan kami)."
             },
             {
-              "judul_poin": "Perbedaan Akhiran -kan dan -i pada Kata Kerja",
-              "penjelasan_singkat": "Akhiran -kan menggerakkan objek menuju sasaran, sedangkan akhiran -i menunjukkan objek diam yang dikenai tindakan.",
-              "contoh_penerapan": "Dokter **memberikan** resep obat kepada pasien, lalu perawat **memberi** pasien edukasi mengenai jadwal minum obat."
+              "judul": "Perbedaan Akhiran -kan dan -i",
+              "teori_singkat": "Akhiran *-kan* menggerakkan objek ke sasaran; *-i* mengenakan tindakan pada objek yang diam.",
+              "contoh": "Dokter **memberikan** resep kepada pasien, lalu perawat **memberi** pasien edukasi."
             },
             {
-              "judul_poin": "Penulisan Unsur Terikat Serapan (pra-, non-, pasca-, sub-)",
-              "penjelasan_singkat": "Imbuhan serapan seperti pra-, non-, pasca-, dan sub- ditulis serangkai dengan kata dasar, kecuali diikuti kata berhuruf kapital.",
-              "contoh_penerapan": "Seluruh peserta wajib mengikuti ujian **pascasarjana** dan melampirkan surat keterangan bebas status **non-ASN** sebelum jadwal wawancara."
+              "judul": "Penulisan Unsur Terikat Serapan (pra-, non-, pasca-, sub-)",
+              "teori_singkat": "Unsur terikat serapan ditulis serangkai dengan kata dasar, kecuali diikuti kata berhuruf kapital.",
+              "contoh": "Peserta mengikuti ujian **pascasarjana** dan melampirkan surat keterangan bebas status **non-ASN**."
             },
             {
-              "judul_poin": "Makna Imbuhan Serapan (-wan, -isme, -isasi)",
-              "penjelasan_singkat": "Akhiran -wan bermakna orang yang ahli, -isme bermakna paham atau aliran, dan -isasi bermakna proses menjadikan sesuatu.",
-              "contoh_penerapan": "Para **ilmuwan** menolak **komersialisasi** kawasan hutan lindung demi menjaga keberlanjutan ekosistem hayati jangka panjang."
+              "judul": "Makna Imbuhan Serapan (-wan, -isme, -isasi)",
+              "teori_singkat": "*-wan* berarti pelaku ahli, *-isme* berarti paham/aliran, dan *-isasi* berarti proses menjadikan sesuatu.",
+              "contoh": "Para **ilmuwan** menolak **komersialisasi** kawasan hutan lindung demi keberlanjutan ekosistem."
             }
           ]
         }
@@ -88,86 +106,100 @@
       "kode_subbab": "ppu-02-02",
       "judul_subbab": "Kata Ulang (Reduplikasi) dan Kata Majemuk",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Kata ulang dan kata majemuk** di UTBK menguji ketepatan makna dalam kalimat, kehematan kata, dan ejaan EYD V sesuai KBBI VI:\n\n* **Makna Kata Ulang:** Menyatakan jumlah banyak (*gedung-gedung*), saling berbalasan (*bantu-membantu*), paling/sangat (*setinggi-tingginya*), atau menyerupai (*kehijau-hijauan*).\n* **Ejaan Kata Majemuk:** Ditulis terpisah (*tanggung jawab*), kecuali mendapat imbuhan depan-belakang sekaligus (*mempertanggungjawabkan*) atau sudah menyatu (*olahraga*).\n* **Kehematan Makna Jamak:** Jangan menggabungkan kata penunjuk jamak (*para*, *banyak*) dengan kata ulang yang sudah bermakna jamak.",
       "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Pembagian Teori",
+        "kolom_2": "1 Contoh Penerapan"
+      },
+      "inti_subbab": "Kata ulang dan kata majemuk diuji ketepatan makna kontekstual, kehematan penanda jamak, serta ejaan serangkai-terpisah EYD V.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Makna Kontekstual dan Kehematan Kata Ulang",
+          "nama_kelompok": "Makna Kontekstual dan Kehematan Kata Ulang",
           "butir": [
             {
-              "judul_poin": "Makna Jamak dan Beragam Jenis",
-              "penjelasan_singkat": "Pengulangan kata benda atau kata kerja untuk menyatakan jumlah lebih dari satu atau variasi jenis.",
-              "contoh_penerapan": "Tim peneliti mulai mengumpulkan **sampel-sampel** tanah dari wilayah terdampak banjir bandang untuk uji laboratorium."
+              "judul": "Makna Jamak dan Beragam Jenis",
+              "teori_singkat": "Pengulangan kata benda atau kerja menyatakan jumlah lebih dari satu atau beragam jenis.",
+              "contoh": "Tim peneliti mengumpulkan **sampel-sampel** tanah dari wilayah terdampak banjir untuk uji laboratorium."
             },
             {
-              "judul_poin": "Makna Saling Berbalasan",
-              "penjelasan_singkat": "Kata ulang berimbuhan (umumnya *meN-*, *-an*, atau *ber-*-*an*) yang menyatakan tindakan saling berbalasan antarpelaku.",
-              "contoh_penerapan": "Warga desa bergotong royong dan **bantu-membantu** memperbaiki jembatan gantung yang rusak diterjang arus sungai."
+              "judul": "Makna Saling Berbalasan (Resiprokal)",
+              "teori_singkat": "Kata ulang berimbuhan *meN-*, *-an*, atau *ber-...-an* menyatakan tindakan saling berbalasan antarpelaku.",
+              "contoh": "Warga desa bergotong royong dan **bantu-membantu** memperbaiki jembatan gantung yang rusak."
             },
             {
-              "judul_poin": "Makna Intensitas dan Paling (Superlatif)",
-              "penjelasan_singkat": "Pengulangan kata sifat atau keterangan untuk menyangatkan kualitas, frekuensi, atau tingkat paling tinggi.",
-              "contoh_penerapan": "Atlet angkat besi nasional itu berlatih **sekeras-kerasnya** demi mempertahankan medali emas pada kejuaraan dunia."
+              "judul": "Makna Intensitas dan Paling (Superlatif)",
+              "teori_singkat": "Pengulangan kata sifat atau keterangan menyangatkan kualitas, frekuensi, atau tingkat paling tinggi.",
+              "contoh": "Atlet angkat besi nasional itu berlatih **sekeras-kerasnya** demi mempertahankan medali emas."
             },
             {
-              "judul_poin": "Makna Menyerupai (Mirip)",
-              "penjelasan_singkat": "Pengulangan kata benda atau kata sifat dengan imbuhan *ke-*-*an* maupun *-an* yang berarti mirip dengan kata dasarnya.",
-              "contoh_penerapan": "Air sungai di kawasan hilir berubah warna menjadi **kehijau-hijauan** akibat ledakan populasi alga saat kemarau."
+              "judul": "Makna Menyerupai (Mirip)",
+              "teori_singkat": "Pengulangan kata benda/sifat berimbuhan *ke-...-an* atau *-an* berarti menyerupai kata dasarnya.",
+              "contoh": "Air sungai berubah warna menjadi **kehijau-hijauan** akibat ledakan populasi alga saat kemarau."
             },
             {
-              "judul_poin": "Kaidah Kehematan Penanda Jamak",
-              "penjelasan_singkat": "Kata ulang yang sudah bermakna jamak tidak boleh didahului kata penunjuk jumlah jamak.",
-              "contoh_penerapan": "Seluruh peserta konferensi diwajibkan menyerahkan **makalah-makalah** penelitian sebelum sesi diskusi panel dimulai."
+              "judul": "Kaidah Kehematan Penanda Jamak",
+              "teori_singkat": "Kata ulang bermakna jamak dilarang didahului kata penunjuk jamak seperti *para* atau *banyak*.",
+              "contoh": "**Para peserta** atau **peserta-peserta** menyerahkan makalah (✕ para peserta-peserta)."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Klasifikasi Pola Bentuk Kata Ulang",
+          "nama_kelompok": "Klasifikasi Pola Bentuk Kata Ulang",
           "butir": [
             {
-              "judul_poin": "Kata Ulang Utuh",
-              "penjelasan_singkat": "Pengulangan seluruh kata dasar secara lengkap tanpa perubahan bunyi maupun penambahan imbuhan.",
-              "contoh_penerapan": "Pemerintah daerah segera menertibkan **bangunan-bangunan** liar yang berdiri di sepanjang bantaran sungai."
+              "judul": "Kata Ulang Utuh (Dwilingga)",
+              "teori_singkat": "Pengulangan seluruh bentuk kata dasar secara lengkap tanpa perubahan bunyi maupun imbuhan.",
+              "contoh": "Pemerintah menertibkan **bangunan-bangunan** liar yang berdiri di sepanjang bantaran sungai."
             },
             {
-              "judul_poin": "Kata Ulang Sebagian",
-              "penjelasan_singkat": "Pengulangan suku kata awal kata dasar yang disertai pelemahan bunyi vokal menjadi *e* (seperti pada kata *emas*).",
-              "contoh_penerapan": "Petugas arsip menyimpan berkas penting perusahaan di dalam **lelaci** lemari besi agar terlindung dari kelembapan."
+              "judul": "Kata Ulang Sebagian (Dwipurwa)",
+              "teori_singkat": "Pengulangan suku kata awal kata dasar disertai pelemahan vokal menjadi *e* pepet.",
+              "contoh": "Petugas menyimpan berkas penting di dalam **lelaci** lemari besi agar bebas lembap."
             },
             {
-              "judul_poin": "Kata Ulang Berubah Bunyi",
-              "penjelasan_singkat": "Pengulangan kata dasar secara utuh dengan perubahan bunyi vokal atau konsonan pada bagian kedua.",
-              "contoh_penerapan": "Suara **sorak-sorai** penonton menggema di seluruh penjuru stadion saat gol penentu kemenangan tercipta."
+              "judul": "Kata Ulang Berubah Bunyi (Salin Suara)",
+              "teori_singkat": "Pengulangan kata dasar secara utuh dengan variasi bunyi vokal atau konsonan pada unsur kedua.",
+              "contoh": "Suara **sorak-sorai** penonton menggema di stadion saat gol penentu kemenangan tercipta."
             },
             {
-              "judul_poin": "Kata Ulang Berimbuhan",
-              "penjelasan_singkat": "Pengulangan kata dasar yang disertai tambahan imbuhan, baik di awal, di akhir, maupun di kedua sisinya.",
-              "contoh_penerapan": "Wisatawan mancanegara **berjalan-jalan** menyusuri kawasan kota tua untuk mengamati arsitektur bangunan bersejarah."
+              "judul": "Kata Ulang Berimbuhan",
+              "teori_singkat": "Pengulangan kata dasar yang disertai tambahan awalan, akhiran, atau gabungan imbuhan sekaligus.",
+              "contoh": "Wisatawan **berjalan-jalan** menyusuri kawasan kota tua untuk mengamati arsitektur bersejarah."
+            },
+            {
+              "judul": "Kata Ulang Semu (Bukan Pengulangan)",
+              "teori_singkat": "Kata dasar yang memang berbentuk ulang sehingga tidak punya bentuk tunggal bermakna sama.",
+              "contoh": "Biolog mengamati siklus hidup **kupu-kupu** dan **ubur-ubur** di ekosistem pesisir."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Ejaan EYD V dan Makna Kata Majemuk",
+          "nama_kelompok": "Ejaan EYD V dan Makna Kata Majemuk",
           "butir": [
             {
-              "judul_poin": "Kata Majemuk Ditulis Terpisah",
-              "penjelasan_singkat": "Gabungan kata (termasuk istilah khusus) ditulis terpisah jika tidak berimbuhan atau baru mendapat imbuhan di satu sisi.",
-              "contoh_penerapan": "Setiap pimpinan proyek wajib **bertanggung jawab** penuh atas keselamatan seluruh pekerja di lapangan."
+              "judul": "Kata Majemuk Ditulis Terpisah",
+              "teori_singkat": "Gabungan kata ditulis terpisah jika tanpa imbuhan atau hanya berimbuhan di satu sisi.",
+              "contoh": "Setiap pimpinan proyek wajib **bertanggung jawab** penuh atas keselamatan pekerja (✕ bertanggungjawab)."
             },
             {
-              "judul_poin": "Kata Majemuk Berimbuhan Depan-Belakang (Serangkai)",
-              "penjelasan_singkat": "Gabungan kata wajib ditulis serangkai apabila mendapat awalan dan akhiran sekaligus.",
-              "contoh_penerapan": "Perusahaan tambang tersebut siap **mempertanggungjawabkan** dampak lingkungan akibat aktivitas operasionalnya."
+              "judul": "Kata Majemuk Berimbuhan Depan-Belakang (Serangkai)",
+              "teori_singkat": "Gabungan kata wajib ditulis serangkai apabila mendapat awalan dan akhiran sekaligus.",
+              "contoh": "Perusahaan tambang siap **mempertanggungjawabkan** dampak lingkungan akibat operasionalnya (✕ mempertanggung jawabkan)."
             },
             {
-              "judul_poin": "Kata Majemuk Padu (Sudah Menyatu)",
-              "penjelasan_singkat": "Gabungan kata yang sudah dianggap satu kesatuan utuh dalam KBBI VI selalu ditulis serangkai meski tanpa imbuhan.",
-              "contoh_penerapan": "Kebiasaan **olahraga** rutin setiap pagi terbukti mampu menjaga kebugaran fisik dan konsentrasi kerja."
+              "judul": "Kata Majemuk Padu (Sudah Menyatu)",
+              "teori_singkat": "Gabungan kata yang sudah menyatu dalam KBBI VI selalu ditulis serangkai tanpa imbuhan.",
+              "contoh": "Kebiasaan **olahraga** rutin dan menjaga **kacamata** tetap bersih meningkatkan fokus kerja."
             },
             {
-              "judul_poin": "Kata Majemuk Bermakna Lugas vs. Kias",
-              "penjelasan_singkat": "Kata majemuk bermakna lugas mempertahankan arti asli tiap katanya, sedangkan makna kias melahirkan arti baru.",
-              "contoh_penerapan": "Kasus sengketa lahan perkebunan itu akhirnya dibawa ke **meja hijau** setelah proses mediasi menemui jalan buntu."
+              "judul": "Gabungan Bentuk Terikat (maha-, antar-, swa-)",
+              "teori_singkat": "Bentuk terikat ditulis serangkai, kecuali *Maha* yang diikuti kata berimbuhan atau *Esa*.",
+              "contoh": "Tuhan **Mahakuasa** dan **Maha Pengasih** melindungi perjalanan **antarkota** tersebut."
+            },
+            {
+              "judul": "Kata Majemuk Bermakna Lugas vs. Kias",
+              "teori_singkat": "Makna lugas mempertahankan arti asli tiap unsurnya; makna kias melahirkan arti idiomatis baru.",
+              "contoh": "Sengketa lahan akhirnya dibawa ke **meja hijau** (pengadilan) setelah mediasi buntu."
             }
           ]
         }
@@ -177,31 +209,40 @@
       "kode_subbab": "ppu-02-03",
       "judul_subbab": "Pola Frasa Inti–Penjelas (DM/MD) dan Kesamaan Pola",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Pola frasa inti–penjelas** menguji kejelianmu membedah susunan gabungan kata dan kecocokan maknanya sesuai EYD V dan KBBI VI:\n\n* **Pola DM vs. MD:** Kata inti (Diterangkan) biasanya berdiri di depan penjelas (Menerangkan), kecuali untuk penanda jumlah atau kata keterangan kerja/sifat yang diletakkan di depan.\n* **Kesamaan Hubungan Makna:** Dua frasa baru benar-benar sepola jika hubungan logis di dalamnya sama persis (misalnya *alat–fungsi* atau *produk–bahan*).\n* **Batas Frasa & Kejelasan Makna:** Pemenggalan kelompok kata yang tepat mencegah tafsir ganda (ambigu) dalam kalimat berita maupun artikel.",
       "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Pembagian Teori",
+        "kolom_2": "1 Contoh Penerapan"
+      },
+      "inti_subbab": "Pola frasa menentukan posisi inti–penjelas (DM/MD), kesamaan relasi makna antarfrasa, serta batas pemenggalan antibias.",
       "kelompok": [
         {
-          "nama_kelompok": "Susunan Dasar Inti–Penjelas (DM vs. MD)",
+          "nama_kelompok": "Susunan Dasar Inti–Penjelas (DM vs. MD) dan Jenis Frasa",
           "butir": [
             {
-              "judul_poin": "Pola Dasar Inti di Depan (DM)",
-              "penjelasan_singkat": "Kata inti (D) berada di depan sebagai pusat makna, lalu diikuti kata penjelas (M) di belakangnya.",
-              "contoh_penerapan": "Pemerintah daerah meresmikan **perpustakaan digital** (D–M) untuk meningkatkan literasi pelajar."
+              "judul": "Pola Dasar Inti di Depan (DM)",
+              "teori_singkat": "Kata inti (Diterangkan) berdiri di depan, lalu diikuti kata penjelas (Menerangkan) di belakangnya.",
+              "contoh": "Pemerintah daerah meresmikan **perpustakaan digital** (D–M) untuk meningkatkan literasi pelajar."
             },
             {
-              "judul_poin": "Pengecualian Penanda Jumlah (MD)",
-              "penjelasan_singkat": "Jika ada penanda jumlah atau bilangan, kata jumlah itu (M) ditaruh di depan kata benda inti (D).",
-              "contoh_penerapan": "Tim geologi mengumpulkan **tiga sampel** (M–D) batuan dari lereng gunung berapi tersebut."
+              "judul": "Pengecualian Penanda Jumlah (MD)",
+              "teori_singkat": "Penanda jumlah atau kata bilangan (M) wajib diletakkan di depan kata benda inti (D).",
+              "contoh": "Tim geologi mengumpulkan **tiga sampel** (M–D) batuan dari lereng gunung berapi."
             },
             {
-              "judul_poin": "Pola MD pada Kata Kerja dan Kata Sifat",
-              "penjelasan_singkat": "Kata ingkar (*tidak/belum*), penanda waktu (*sedang/akan*), dan tingkat (*sangat/paling*) selalu mendahului kata kerja atau sifat inti (M–D).",
-              "contoh_penerapan": "Seluruh peserta ujian **belum siap** (M–D) dan terlihat **sangat gugup** (M–D) menjelang sesi pertama."
+              "judul": "Pola MD pada Frasa Kerja dan Sifat",
+              "teori_singkat": "Kata ingkar (*tidak/belum*), waktu (*sedang/akan*), dan tingkat (*sangat/paling*) mendahului inti kerja/sifat (M–D).",
+              "contoh": "Peserta ujian **belum siap** (M–D) dan terlihat **sangat gugup** (M–D) menjelang tes."
             },
             {
-              "judul_poin": "Frasa Setara (Tidak Punya Inti Tunggal)",
-              "penjelasan_singkat": "Gabungan dua kata yang kedudukannya sejajar dan dapat disisipi *dan* atau *atau* tidak memakai pola DM.",
-              "contoh_penerapan": "Seluruh **guru dan siswa** (setara) mengikuti simulasi mitigasi bencana di halaman sekolah."
+              "judul": "Frasa Setara (Koordinatif)",
+              "teori_singkat": "Gabungan dua kata sejajar yang dapat disisipi *dan* atau *atau* tanpa inti tunggal.",
+              "contoh": "Seluruh **guru dan siswa** (setara) mengikuti simulasi mitigasi bencana di halaman sekolah."
+            },
+            {
+              "judul": "Frasa Preposisional (Eksosentris / Tanpa Inti)",
+              "teori_singkat": "Frasa berawalan kata depan (*di, ke, dari, pada*) yang tidak memiliki unsur inti tunggal.",
+              "contoh": "Para peneliti berangkat **ke laboratorium** untuk menguji sampel **dari kawasan hutan**."
             }
           ]
         },
@@ -209,24 +250,24 @@
           "nama_kelompok": "Kesamaan Hubungan Makna Antarfrasa",
           "butir": [
             {
-              "judul_poin": "Hubungan Alat–Fungsi dan Tempat–Peruntukan",
-              "penjelasan_singkat": "Dua frasa punya pola yang sama jika kata penjelasnya menyatakan kegunaan atau peruntukan bagi kata inti.",
-              "contoh_penerapan": "Pola **mesin cuci** (alat–fungsi) sejalan dengan **ruang tunggu** (tempat–fungsi) pada denah gedung stasiun."
+              "judul": "Hubungan Alat–Fungsi dan Tempat–Peruntukan",
+              "teori_singkat": "Dua frasa sepola jika penjelasnya sama-sama menyatakan kegunaan alat atau peruntukan tempat.",
+              "contoh": "Pola **mesin cuci** (alat–fungsi) sejalan dengan **ruang tunggu** (tempat–fungsi) di stasiun."
             },
             {
-              "judul_poin": "Hubungan Produk–Bahan dan Produk–Asal",
-              "penjelasan_singkat": "Pola kedua frasa dinilai cocok jika kata penjelas menerangkan bahan pembuat atau daerah asal kata inti.",
-              "contoh_penerapan": "Frasa **cincin emas** (produk–bahan) sepola dengan **batik Pekalongan** (produk–asal) dalam katalog pameran kerajinan."
+              "judul": "Hubungan Produk–Bahan dan Produk–Asal",
+              "teori_singkat": "Dua frasa sepola jika penjelas menerangkan bahan pembuat atau daerah asal kata inti.",
+              "contoh": "Frasa **cincin emas** (produk–bahan) sepola dengan **batik Pekalongan** (produk–asal) dalam katalog."
             },
             {
-              "judul_poin": "Hubungan Benda–Sifat dan Tempat–Aktivitas",
-              "penjelasan_singkat": "Jenis kata penjelas menentukan makna: kata sifat membentuk hubungan keadaan, sedangkan kata kerja membentuk hubungan aktivitas.",
-              "contoh_penerapan": "Frasa **rumah mewah** (benda–sifat) tidak sepola dengan **rumah makan** (tempat–aktivitas) walau kata intinya sama."
+              "judul": "Hubungan Benda–Sifat vs. Tempat–Aktivitas",
+              "teori_singkat": "Jenis kata penjelas menentukan makna: kata sifat menyatakan keadaan, kata kerja menyatakan aktivitas.",
+              "contoh": "**Rumah mewah** (benda–sifat) tidak sepola dengan **rumah makan** (tempat–aktivitas) walau intinya sama."
             },
             {
-              "judul_poin": "Frasa Bertingkat (Tiga Kata atau Lebih)",
-              "penjelasan_singkat": "Untuk frasa panjang, temukan dulu inti utamanya, lalu cek kelompok penjelas mana yang saling mengikat.",
-              "contoh_penerapan": "Pola **baju batik tulis** (D + [M1+M2]) identik dengan **kain tenun ikat** (D + [M1+M2])."
+              "judul": "Frasa Bertingkat (Tiga Kata atau Lebih)",
+              "teori_singkat": "Tentukan inti utama di depan, lalu periksa kelompok penjelas mana yang saling mengikat.",
+              "contoh": "Pola **baju batik tulis** (D + [M1+M2]) identik dengan **kain tenun ikat**."
             }
           ]
         },
@@ -234,19 +275,19 @@
           "nama_kelompok": "Batas Frasa dan Penghilangan Makna Ganda",
           "butir": [
             {
-              "judul_poin": "Memenggal Batas Frasa Sesuai Jabatan Kalimat",
-              "penjelasan_singkat": "Batas kelompok kata mengikuti keutuhan jabatan kalimat (S, P, O, K) yang tidak boleh dipotong di tengah.",
-              "contoh_penerapan": "Pemenggalan tepat: **[Anak pejabat tinggi itu]** (S) / **[membeli]** (P) / **[mobil listrik baru]** (O)."
+              "judul": "Memenggal Batas Frasa Sesuai Jabatan Kalimat",
+              "teori_singkat": "Batas frasa mengikuti keutuhan jabatan kalimat (S, P, O, K) tanpa memotong tengahnya.",
+              "contoh": "**[Anak pejabat tinggi itu]** (S) / **[membeli]** (P) / **[mobil listrik baru]** (O)."
             },
             {
-              "judul_poin": "Memperjelas Frasa Ambigu dengan Kata Tugas",
-              "penjelasan_singkat": "Frasa benda beruntun yang bermakna ganda diperjelas dengan menyisipkan kata tugas (*karya*, *milik*, *tentang*, *yang*).",
-              "contoh_penerapan": "Frasa ambigu *lukisan Affandi* diperjelas menjadi **lukisan karya Affandi** atau **lukisan wajah Affandi** sesuai konteks berita."
+              "judul": "Memperjelas Frasa Ambigu dengan Kata Tugas",
+              "teori_singkat": "Frasa benda beruntun yang bermakna ganda diperjelas dengan menyisipkan *karya*, *milik*, atau *tentang*.",
+              "contoh": "*Lukisan Affandi* diperjelas menjadi **lukisan karya Affandi** atau **lukisan wajah Affandi**."
             },
             {
-              "judul_poin": "Mengunci Batas Makna dengan Tanda Hubung (-)",
-              "penjelasan_singkat": "Tanda hubung (-) dipakai untuk merangkai dua kata yang bertalian erat agar susunan penjelasnya tidak ditafsirkan ganda.",
-              "contoh_penerapan": "Penulisan **anak-istri pejabat** berarti anak dan istri milik pejabat, berbeda makna dengan **anak istri-pejabat**."
+              "judul": "Mengunci Batas Makna dengan Tanda Hubung (-)",
+              "teori_singkat": "Tanda hubung (-) merangkai unsur yang bertalian erat agar susunan penjelas tidak ambigu.",
+              "contoh": "**Anak-istri pejabat** (anak dan istri milik pejabat) $\\neq$ **anak istri-pejabat**."
             }
           ]
         }
@@ -256,86 +297,95 @@
       "kode_subbab": "ppu-02-04",
       "judul_subbab": "Kelompok Kata dan Pasangan Makna Sebidang",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Kelompok kata dan pasangan makna sebidang** menguji kepekaanmu melihat pola hubungan antarkata dalam kalimat sesuai EYD V dan KBBI VI:\n\n* **Analogi Frasa:** Memasangkan dua kelompok kata dengan pola hubungan logis yang sama (misalnya *proses–hasil* atau *alat–objek*).\n* **Makna Sebidang & Kesejajaran:** Memastikan deretan kata berada dalam satu tema besar dan punya jenis kata yang seragam.\n* **Ungkapan Tetap (Idiom):** Memahami arti kiasan sebuah ungkapan dan menggantinya dengan frasa biasa tanpa mengubah maksud kalimat.",
       "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Pembagian Teori",
+        "kolom_2": "1 Contoh Penerapan"
+      },
+      "inti_subbab": "Kelompok kata diuji melalui analogi relasi logis, kesatuan medan makna, paralelisme bentuk, dan ketepatan padanan idiom.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Analogi Hubungan Makna Antarfrasa",
+          "nama_kelompok": "Analogi Hubungan Makna Antarfrasa",
           "butir": [
             {
-              "judul_poin": "Hubungan Proses ke Hasil (Tindakan ke Produk)",
-              "penjelasan_singkat": "Frasa pertama menunjukkan proses pengerjaan, sedangkan frasa kedua menunjukkan benda atau hasil akhirnya.",
-              "contoh_penerapan": "Hubungan **penyuntingan naskah** $\\rightarrow$ **buku terbit** sejajar dengan **pengecoran logam** $\\rightarrow$ **komponen mesin**."
+              "judul": "Hubungan Proses ke Hasil (Tindakan ke Produk)",
+              "teori_singkat": "Frasa pertama menyatakan proses pengerjaan, sedangkan frasa kedua menyatakan produk hasil akhirnya.",
+              "contoh": "**Penyuntingan naskah** $\\rightarrow$ **buku terbit** sejajar dengan **pengecoran logam** $\\rightarrow$ **komponen mesin**."
             },
             {
-              "judul_poin": "Hubungan Alat ke Objek Sasaran",
-              "penjelasan_singkat": "Frasa pertama menyebut alat kerja, sedangkan frasa kedua menyebut objek yang diamati atau dikenai tindakan.",
-              "contoh_penerapan": "Pasangan **mikroskop elektron** $\\rightarrow$ **jaringan sel** identik dengan **teleskop optik** $\\rightarrow$ **benda langit**."
+              "judul": "Hubungan Alat ke Objek Sasaran",
+              "teori_singkat": "Frasa pertama menyebut instrumen kerja, sedangkan frasa kedua menyebut objek yang dikenai tindakan.",
+              "contoh": "**Mikroskop elektron** $\\rightarrow$ **jaringan sel** identik dengan **teleskop optik** $\\rightarrow$ **benda langit**."
             },
             {
-              "judul_poin": "Hubungan Tingkatan (Gradasi Makna)",
-              "penjelasan_singkat": "Kedua frasa berada di satu bidang makna, tetapi frasa kedua memiliki tingkat kekuatan yang jauh lebih besar.",
-              "contoh_penerapan": "Pola **hujan deras** $\\rightarrow$ **badai tropis** setara dengan **angin kencang** $\\rightarrow$ **angin puting beliung**."
+              "judul": "Hubungan Tingkatan (Gradasi Makna)",
+              "teori_singkat": "Kedua frasa berada dalam satu bidang makna, tetapi frasa kedua berintensitas jauh lebih kuat.",
+              "contoh": "**Hujan deras** $\\rightarrow$ **badai tropis** setara dengan **angin kencang** $\\rightarrow$ **angin puting beliung**."
+            },
+            {
+              "judul": "Hubungan Bagian ke Keseluruhan (Meronimi)",
+              "teori_singkat": "Frasa pertama merupakan komponen penyusun yang berada di dalam frasa kedua sebagai keseluruhan.",
+              "contoh": "**Kelopak bunga** $\\rightarrow$ **tanaman hias** sepola dengan **piston mesin** $\\rightarrow$ **kendaraan bermotor**."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Makna Sebidang dan Unsur Menyimpang",
+          "nama_kelompok": "Makna Sebidang dan Unsur Menyimpang",
           "butir": [
             {
-              "judul_poin": "Satu Kategori Besar (Satu Payung Makna)",
-              "penjelasan_singkat": "Semua kelompok kata dalam satu deretan harus menjadi bagian dari satu kelompok besar yang sama.",
-              "contoh_penerapan": "Deretan **padi sawah**, **jagung hibrida**, dan **gandum utuh** berada dalam satu kelompok tanaman pangan biji-bijian."
+              "judul": "Satu Kategori Besar (Hipernim Payung)",
+              "teori_singkat": "Seluruh frasa dalam satu deretan harus menjadi anggota (hiponim) dari satu kategori besar.",
+              "contoh": "**Padi sawah**, **jagung hibrida**, dan **gandum utuh** tergabung dalam kategori tanaman pangan biji-bijian."
             },
             {
-              "judul_poin": "Mendeteksi Unsur yang Melenceng dari Topik",
-              "penjelasan_singkat": "Sebuah frasa dianggap menyimpang jika merujuk pada hal di luar bagian inti yang sedang dibahas.",
-              "contoh_penerapan": "Dalam deretan **kerangka atap**, **dinding bata**, dan **fondasi beton**, frasa **izin bangunan** menyimpang karena bukan bagian fisik rumah."
+              "judul": "Mendeteksi Unsur yang Melenceng dari Topik",
+              "teori_singkat": "Sebuah frasa menyimpang jika merujuk pada objek di luar ranah bagian inti bahasan.",
+              "contoh": "Pada **kerangka atap**, **dinding bata**, **fondasi beton**, frasa **izin bangunan** menyimpang (nonfisik)."
             },
             {
-              "judul_poin": "Keselarasan Nuansa Rasa (Positif atau Negatif)",
-              "penjelasan_singkat": "Rangkaian kata dalam satu deretan harus menjaga nuansa makna positif atau negatif secara konsisten.",
-              "contoh_penerapan": "Rangkaian **penyerobotan lahan**, **perusakan hutan**, dan **pencemaran sungai** sama-sama bernuansa negatif."
+              "judul": "Keselarasan Nuansa Rasa (Konotasi Positif/Negatif)",
+              "teori_singkat": "Rangkaian frasa dalam satu deretan wajib menjaga konsistensi nuansa rasa positif atau negatif.",
+              "contoh": "**Penyerobotan lahan**, **perusakan hutan**, dan **pencemaran sungai** sama-sama bernuansa konotasi negatif."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Kesejajaran Bentuk Frasa (Paralelisme)",
+          "nama_kelompok": "Kesejajaran Bentuk Frasa (Paralelisme)",
           "butir": [
             {
-              "judul_poin": "Kesejajaran Kelompok Kata Benda",
-              "penjelasan_singkat": "Jika unsur pertama rincian berupa kata benda, seluruh unsur berikutnya wajib memakai kata benda juga.",
-              "contoh_penerapan": "Tahapan proyek meliputi **perencanaan anggaran**, **pengadaan barang**, dan **pengawasan mutu** secara berkala."
+              "judul": "Kesejajaran Kelompok Kata Benda (Nomina)",
+              "teori_singkat": "Jika unsur pertama rincian berupa frasa benda, seluruh unsur berikutnya wajib frasa benda.",
+              "contoh": "Tahapan proyek meliputi **perencanaan anggaran**, **pengadaan barang**, dan **pengawasan mutu** berkala."
             },
             {
-              "judul_poin": "Kesejajaran Kelompok Kata Kerja",
-              "penjelasan_singkat": "Rincian kegiatan harus konsisten memakai kata kerja aktif (*meN-*) atau pasif (*di-*) dari awal sampai akhir.",
-              "contoh_penerapan": "Petugas lapangan bertugas **memeriksa dokumen**, **mencatat identitas**, dan **mengarsipkan berkas** peserta."
+              "judul": "Kesejajaran Kelompok Kata Kerja (Verba)",
+              "teori_singkat": "Rincian kegiatan harus konsisten memakai verba aktif (*meN-*) atau pasif (*di-*) dari awal.",
+              "contoh": "Petugas bertugas **memeriksa dokumen**, **mencatat identitas**, dan **mengarsipkan berkas** peserta."
             },
             {
-              "judul_poin": "Kesejajaran Kelompok Kata Sifat",
-              "penjelasan_singkat": "Rincian gambaran sifat atau keadaan harus menggunakan kelompok kata sifat secara seragam.",
-              "contoh_penerapan": "Hasil evaluasi menunjukkan kinerja tim **sangat efektif**, **cukup efisien**, dan **amat responsif**."
+              "judul": "Kesejajaran Kelompok Kata Sifat (Adjektiva)",
+              "teori_singkat": "Rincian gambaran kualitas atau keadaan wajib menggunakan kelompok kata sifat secara seragam.",
+              "contoh": "Hasil evaluasi menunjukkan kinerja tim **sangat efektif**, **cukup efisien**, dan **amat responsif**."
             }
           ]
         },
         {
-          "nama_kelompok": "4. Keutuhan dan Padanan Ungkapan Tetap (Idiom)",
+          "nama_kelompok": "Keutuhan dan Padanan Ungkapan Tetap (Idiom)",
           "butir": [
             {
-              "judul_poin": "Keutuhan Susunan Ungkapan Kiasan",
-              "penjelasan_singkat": "Kata pembentuk ungkapan sudah menyatu sehingga tidak boleh disisipi kata lain atau dibalik urutannya.",
-              "contoh_penerapan": "Manajer itu menolak dijadikan **kambing hitam** atas kegagalan proyek infrastruktur daerah."
+              "judul": "Keutuhan Susunan Ungkapan Kiasan",
+              "teori_singkat": "Unsur pembentuk idiom sudah menyatu tetap sehingga haram disisipi kata atau dibalik urutannya.",
+              "contoh": "Manajer itu menolak dijadikan **kambing hitam** atas kegagalan proyek (✕ kambing yang hitam)."
             },
             {
-              "judul_poin": "Mengganti Ungkapan dengan Padanan Makna Kontekstual",
-              "penjelasan_singkat": "Pengganti ungkapan harus mempertahankan arti kiasan dan nada kalimat aslinya.",
-              "contoh_penerapan": "Ungkapan **gulung tikar** pada berita krisis ekonomi sepadan maknanya dengan **menghentikan kegiatan usaha**."
+              "judul": "Mengganti Ungkapan dengan Padanan Makna Kontekstual",
+              "teori_singkat": "Pengganti idiom harus mempertahankan arti kiasan dan laras bahasa kalimat aslinya secara tepat.",
+              "contoh": "Ungkapan **gulung tikar** pada berita ekonomi sepadan maknanya dengan **menghentikan kegiatan usaha**."
             },
             {
-              "judul_poin": "Ketepatan Pasangan Kata Tetap",
-              "penjelasan_singkat": "Kata tertentu punya pasangan kata depan baku sesuai KBBI VI yang tidak boleh dihilangkan atau ditukar.",
-              "contoh_penerapan": "Pelaksanaan seleksi nasional tersebut sudah **sesuai dengan** prosedur operasional standar yang berlaku."
+              "judul": "Ketepatan Pasangan Kata Tetap (Kolokasi)",
+              "teori_singkat": "Kata tertentu memiliki pasangan preposisi baku KBBI VI yang tidak boleh ditukar/dihilangkan.",
+              "contoh": "Seleksi nasional itu sudah **sesuai dengan** prosedur operasional standar (✕ sesuai prosedur)."
             }
           ]
         }

@@ -2,38 +2,46 @@
   "kode_bab": "pk-01",
   "subtes": "Subtes 4: Pengetahuan Kuantitatif (PK)",
   "bab": "Bab 1: Bilangan dan Operasi Aljabar",
-  "batch_model": "neon",
-  "jumlah_subbab": 5,
+  "estimasi_menit_review": 5,
   "daftar_subbab": [
     {
       "kode_subbab": "pk-01-01",
       "judul_subbab": "Sifat Bilangan (Bulat, Prima, KPK, FPB)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Ganjil-Genap (Paritas):** $\\text{Ganjil} \\pm \\text{Ganjil} = \\text{Genap}$; $\\text{Genap} \\times \\text{Bulat} = \\text{Genap}$.\n- **Banyak Faktor Positif:** Jika $N = p_1^{a} \\cdot p_2^{b}$, total faktor positifnya $= (a+1)(b+1)$.\n- **KPK & FPB:** $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\cdot b$ (khusus untuk dua bilangan positif).\n- **Sisa Bagi (Modulo):** Sisa $(a \\cdot b) \\div m$ sama dengan sisa dari $(\\text{sisa } a \\times \\text{sisa } b) \\div m$.\n- **Desimal Berulang:** $0,\\overline{ab} = \\frac{\\overline{ab}}{99}$ (penyebutnya angka $9$ sebanyak jumlah digit yang berulang).",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Kuasai paritas, faktorisasi prima, KPK-FPB, sisa bagi, dan pecahan untuk menyelesaikan manipulasi bilangan bulat dengan cepat.",
       "kelompok": [
         {
-          "nama_kelompok": "Ganjil-Genap, Tanda Pangkat, dan Aturan Habis Dibagi",
+          "nama_kelompok": "Ganjil-Genap, Tanda Pangkat, dan Keterbagian",
           "butir": [
             {
-              "judul_poin": "Penjumlahan & Perkalian Ganjil-Genap",
-              "penjelasan_singkat": "Menjumlahkan dua bilangan sejenis (sama-sama ganjil atau genap) hasilnya genap. Pada perkalian, cukup ada satu angka genap agar hasilnya pasti genap.",
-              "contoh_penerapan": "Jika $n$ ganjil, maka $3n^2 + 5$ pasti **genap** karena ganjil ditambah ganjil menghasilkan **genap**."
+              "judul": "Penjumlahan & Perkalian Paritas",
+              "teori_singkat": "Sejenis ditambah jadi genap; perkalian dengan minimal satu genap pasti menghasilkan genap.",
+              "contoh": "$n$ ganjil $\\rightarrow 3n^2 + 5 =$ ganjil $+$ ganjil $=$ **genap**."
             },
             {
-              "judul_poin": "Tanda Positif-Negatif pada Pangkat",
-              "penjelasan_singkat": "Pangkat genap selalu mengubah bilangan tak nol jadi positif ($a^{2k} > 0$). Sebaliknya, pangkat ganjil mempertahankan tanda aslinya.",
-              "contoh_penerapan": "Jika $x^3 y^4 < 0$ dengan $y \\neq 0$, maka $x$ wajib **negatif** karena $y^4$ sudah pasti **positif**."
+              "judul": "Tanda Positif-Negatif pada Pangkat",
+              "teori_singkat": "Pangkat genap selalu positif ($a^{2k} > 0$, $a \\neq 0$); pangkat ganjil pertahankan tanda.",
+              "contoh": "$x^3 y^4 < 0$ ($y \\neq 0$) $\\rightarrow y^4 > 0$, maka $x$ wajib **negatif**."
             },
             {
-              "judul_poin": "Aturan Habis Dibagi Angka Kunci (3, 4, 8, 9, 11)",
-              "penjelasan_singkat": "Habis dibagi $3$ atau $9$ jika jumlah digitnya kelipatan $3$ atau $9$. Habis dibagi $4$ jika dua digit terakhirnya kelipatan $4$.",
-              "contoh_penerapan": "Angka $7128$ habis dibagi $9$ karena $7+1+2+8 = 18$ (**kelipatan 9**), dan habis dibagi $4$ karena **$28$ habis dibagi 4**."
+              "judul": "Aturan Habis Dibagi 3, 4, dan 9",
+              "teori_singkat": "Bagi $3/9$: jumlah digit kelipatan $3/9$. Bagi $4$: dua digit akhir kelipatan $4$.",
+              "contoh": "$7128$: jumlah digit $18$ (**habis dibagi $9$**), dua digit akhir $28$ (**habis dibagi $4$**)."
             },
             {
-              "judul_poin": "Sisa Pembagian (Modulo) & Pola Digit Satuan",
-              "penjelasan_singkat": "Untuk mencari sisa perkalian atau pangkat, kamu cukup mengoperasikan sisa masing-masing angkanya saja: $a^n \\bmod m = (a \\bmod m)^n \\bmod m$.",
-              "contoh_penerapan": "Digit satuan $7^{2026}$ dicari dari sisa $2026 \\div 4$ yaitu **$2$**. Jadi satuannya sama dengan $7^2 = 49$, yaitu **$9$**."
+              "judul": "Aturan Habis Dibagi 8 dan 11",
+              "teori_singkat": "Bagi $8$: tiga digit akhir kelipatan $8$. Bagi $11$: selisih digit ganjil-genap kelipatan $11$.",
+              "contoh": "$352$: $(3+2)-5 = 0$ (**habis dibagi $11$**); $1048$: $048$ kelipatan $8$ (**habis dibagi $8$**)."
+            },
+            {
+              "judul": "Sisa Pembagian (Modulo) & Digit Satuan",
+              "teori_singkat": "Operasikan sisanya saja: $a^n \\bmod m = (a \\bmod m)^n \\bmod m$.",
+              "contoh": "Satuan $7^{2026}$: $2026 \\bmod 4 = 2 \\rightarrow$ satuan $7^2 = 49$ adalah **$9$**."
             }
           ]
         },
@@ -41,24 +49,24 @@
           "nama_kelompok": "Bilangan Prima, Faktorisasi, KPK, dan FPB",
           "butir": [
             {
-              "judul_poin": "Sifat Dasar & Ganjil-Genap Bilangan Prima",
-              "penjelasan_singkat": "Bilangan prima hanya punya tepat dua faktor positif ($1$ dan dirinya sendiri). Angka $2$ adalah satu-satunya bilangan prima yang genap.",
-              "contoh_penerapan": "Jika jumlah dua bilangan prima $p + q = 25$ (ganjil), salah satunya pasti **$2$**, sehingga pasangannya **$23$**."
+              "judul": "Sifat Dasar & Paritas Bilangan Prima",
+              "teori_singkat": "Tepat dua faktor positif ($1$ dan dirinya); $2$ satu-satunya bilangan prima genap.",
+              "contoh": "Prima $p + q = 25$ (ganjil) $\\rightarrow$ salah satunya pasti **$2$**, pasangannya **$23$**."
             },
             {
-              "judul_poin": "Menghitung Banyak Faktor Positif",
-              "penjelasan_singkat": "Ubah bilangan ke faktorisasi prima $N = p_1^{a} \\times p_2^{b} \\times p_3^{c}$. Banyak faktor positifnya adalah $(a+1)(b+1)(c+1)$.",
-              "contoh_penerapan": "Karena $72 = 2^3 \\times 3^2$, banyak faktor positifnya adalah $(3+1)(2+1) = 4 \\times 3 =$ **$12$ faktor**."
+              "judul": "Menghitung Banyak Faktor Positif",
+              "teori_singkat": "Jika $N = p_1^{a} \\cdot p_2^{b}$, banyak faktor positifnya adalah $(a+1)(b+1)$.",
+              "contoh": "$72 = 2^3 \\times 3^2 \\rightarrow (3+1)(2+1) =$ **$12$ faktor positif**."
             },
             {
-              "judul_poin": "Hubungan Hasil Kali KPK dan FPB",
-              "penjelasan_singkat": "Untuk dua bilangan bulat positif $a$ dan $b$, hasil kali KPK dan FPB selalu sama dengan hasil kali kedua bilangan itu: $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\times b$.",
-              "contoh_penerapan": "Jika $\\text{FPB}(a, 18) = 6$ dan $\\text{KPK}(a, 18) = 90$, maka $a = \\frac{6 \\times 90}{18} =$ **$30$**."
+              "judul": "Hubungan Hasil Kali KPK dan FPB",
+              "teori_singkat": "Khusus dua bilangan bulat positif: $\\text{KPK}(a,b) \\times \\text{FPB}(a,b) = a \\cdot b$.",
+              "contoh": "$\\text{FPB}(a,18)=6$, $\\text{KPK}(a,18)=90 \\rightarrow a = \\frac{6 \\times 90}{18} =$ **$30$**."
             },
             {
-              "judul_poin": "KPK & FPB Bilangan Saling Prima (Koprima)",
-              "penjelasan_singkat": "Jika $\\text{FPB}(a,b) = 1$ (saling prima), maka $\\text{KPK}(a,b) = a \\times b$. Jika $b$ kelipatan $a$, langsung saja $\\text{FPB} = a$ dan $\\text{KPK} = b$.",
-              "contoh_penerapan": "Dua bilangan berurutan seperti $14$ dan $15$ pasti saling prima. Jadi $\\text{FPB} =$ **$1$** dan $\\text{KPK} = 14 \\times 15 =$ **$210$**."
+              "judul": "KPK & FPB Bilangan Koprima",
+              "teori_singkat": "Saling prima ($\\text{FPB}=1$) $\\rightarrow \\text{KPK}=a \\cdot b$. Jika $a \\mid b \\rightarrow \\text{FPB}=a, \\text{KPK}=b$.",
+              "contoh": "Bilangan berurutan $14, 15$ saling prima $\\rightarrow \\text{FPB} =$ **$1$**, $\\text{KPK} = 14 \\times 15 =$ **$210$**."
             }
           ]
         },
@@ -66,24 +74,29 @@
           "nama_kelompok": "Pecahan, Desimal Berulang, dan Struktur Digit",
           "butir": [
             {
-              "judul_poin": "Mengubah Desimal Berulang ke Pecahan",
-              "penjelasan_singkat": "Desimal berulang murni dengan $n$ digit berulang langsung diubah menjadi pecahan berpenyebut angka $9$ sebanyak $n$ kali ($0,\\overline{ab} = \\frac{\\overline{ab}}{99}$).",
-              "contoh_penerapan": "Nilai $0,363636\\dots = 0,\\overline{36} = \\frac{36}{99}$. Sederhanakan dengan membagi $9$, hasilnya **$\\frac{4}{11}$**."
+              "judul": "Desimal Berulang Murni",
+              "teori_singkat": "Penyebut berisi angka $9$ sebanyak digit berulang: $0,\\overline{ab} = \\frac{\\overline{ab}}{99}$.",
+              "contoh": "$0,3636\\dots = \\frac{36}{99} \\rightarrow$ bagi $9$ menjadi **$\\frac{4}{11}$**."
             },
             {
-              "judul_poin": "Urutan Pecahan di Antara 0 dan 1",
-              "penjelasan_singkat": "Untuk pecahan $0 < x < 1$, sifatnya terbalik dari bilangan bulat: dipangkatkan makin kecil ($x^2 < x$), diakarkan makin besar ($\\sqrt{x} > x$).",
-              "contoh_penerapan": "Ambil $x = \\frac{1}{4}$. Urutannya dari terkecil adalah $x^2 = \\frac{1}{16} < x = \\frac{1}{4} <$ **$\\sqrt{x} = \\frac{1}{2}$**."
+              "judul": "Desimal Berulang Campuran",
+              "teori_singkat": "Kurangi digit tak berulang; penyebut $9$ (berulang) lalu $0$ (tak berulang): $0,a\\overline{b} = \\frac{\\overline{ab}-a}{90}$.",
+              "contoh": "$0,1666\\dots = 0,1\\overline{6} = \\frac{16-1}{90} = \\frac{15}{90} =$ **$\\frac{1}{6}$**."
             },
             {
-              "judul_poin": "Pemodelan Bilangan Bulat Berurutan",
-              "penjelasan_singkat": "Misalkan tiga bilangan bulat berurutan sebagai $n-1, n, n+1$. Untuk tiga bilangan genap atau ganjil berurutan, gunakan $n-2, n, n+2$.",
-              "contoh_penerapan": "Jumlah $3$ bilangan ganjil berurutan adalah $57$. Maka $(n-2)+n+(n+2) = 3n = 57 \\rightarrow$ nilai tengah **$n = 19$**."
+              "judul": "Urutan Pecahan di Antara 0 dan 1",
+              "teori_singkat": "Jika $0 < x < 1$, berlaku terbalik dari bilangan bulat: $x^2 < x < \\sqrt{x}$.",
+              "contoh": "$x = \\frac{1}{4} \\rightarrow x^2 = \\frac{1}{16} < x = \\frac{1}{4} <$ **$\\sqrt{x} = \\frac{1}{2}$**."
             },
             {
-              "judul_poin": "Bentuk Aljabar Nilai Tempat Digit",
-              "penjelasan_singkat": "Bilangan dua digit $\\overline{ab}$ bernilai $10a + b$. Bilangan tiga digit $\\overline{abc}$ bernilai $100a + 10b + c$ dengan syarat $1 \\le a \\le 9$.",
-              "contoh_penerapan": "Selisih bilangan dua digit $\\overline{ab}$ dengan kebalikannya $\\overline{ba}$ adalah $(10a+b) - (10b+a) =$ **$9(a-b)$**."
+              "judul": "Pemodelan Bilangan Bulat Berurutan",
+              "teori_singkat": "Berurutan: $n-1, n, n+1$. Genap atau ganjil berurutan: $n-2, n, n+2$.",
+              "contoh": "Jumlah $3$ ganjil berurutan $= 57 \\rightarrow 3n = 57 \\rightarrow$ nilai tengah **$n = 19$**."
+            },
+            {
+              "judul": "Bentuk Aljabar Nilai Tempat Digit",
+              "teori_singkat": "Dua digit $\\overline{ab} = 10a+b$; tiga digit $\\overline{abc} = 100a+10b+c$ ($1 \\le a \\le 9$).",
+              "contoh": "$\\overline{ab} - \\overline{ba} = (10a+b) - (10b+a) =$ **$9(a-b)$**."
             }
           ]
         }
@@ -93,31 +106,35 @@
       "kode_subbab": "pk-01-02",
       "judul_subbab": "Eksponen dan Bentuk Akar",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Sifat Eksponen:** $a^m \\cdot a^n = a^{m+n}$, $\\frac{a^m}{a^n} = a^{m-n}$, $(a^m)^n = a^{mn}$, $a^{-n} = \\frac{1}{a^n}$, dan $a^0 = 1$ (untuk $a \\neq 0$).\n- **Sifat Akar:** $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$ dan selalu ingat $\\sqrt{x^2} = |x|$.\n- **Akar Bersusun:** $\\sqrt{(a+b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b}$ dengan syarat $a > b > 0$.\n- **Strategi PK:** Samakan basis atau pangkatnya, keluarkan pangkat terkecil saat bertemu penjumlahan, lalu pakai pemisalan variabel untuk bentuk kuadrat.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Samakan basis atau pangkat, faktorkan pangkat terkecil, dan ingat $\\sqrt{x^2} = |x|$ pada manipulasi akar.",
       "kelompok": [
         {
           "nama_kelompok": "Sifat Dasar & Manipulasi Eksponen",
           "butir": [
             {
-              "judul_poin": "Perkalian, Pembagian, dan Pangkat Berpangkat",
-              "penjelasan_singkat": "Saat basisnya sama ($a \\neq 0$), berlaku $a^m \\cdot a^n = a^{m+n}$, $\\frac{a^m}{a^n} = a^{m-n}$, dan $(a^m)^n = a^{mn}$.",
-              "contoh_penerapan": "Hitung $\\frac{(2^3)^4 \\cdot 2^{-2}}{2^5} = \\frac{2^{12} \\cdot 2^{-2}}{2^5} = 2^{12-2-5} =$ **$2^5 = 32$**."
+              "judul": "Operasi Pangkat Basis Sama",
+              "teori_singkat": "Untuk $a \\neq 0$: $a^m \\cdot a^n = a^{m+n}$, $\\frac{a^m}{a^n} = a^{m-n}$, $(a^m)^n = a^{mn}$.",
+              "contoh": "$\\frac{(2^3)^4 \\cdot 2^{-2}}{2^5} = 2^{12-2-5} =$ **$2^5 = 32$**."
             },
             {
-              "judul_poin": "Pangkat Nol, Pangkat Negatif, dan Pangkat Pecahan",
-              "penjelasan_singkat": "Aturan pangkat khusus: $a^0 = 1$ ($a \\neq 0$), $a^{-n} = \\frac{1}{a^n}$, dan $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$.",
-              "contoh_penerapan": "Hitung $8^{-\\frac{2}{3}} = \\frac{1}{(\\sqrt[3]{8})^2} = \\frac{1}{2^2} =$ **$\\frac{1}{4}$**."
+              "judul": "Pangkat Nol, Negatif, dan Pecahan",
+              "teori_singkat": "$a^0 = 1$ ($a \\neq 0$), $a^{-n} = \\frac{1}{a^n}$, dan $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$.",
+              "contoh": "$8^{-\\frac{2}{3}} = \\frac{1}{(\\sqrt[3]{8})^2} = \\frac{1}{2^2} =$ **$\\frac{1}{4}$**."
             },
             {
-              "judul_poin": "Memfaktorkan Penjumlahan dan Pengurangan Eksponen",
-              "penjelasan_singkat": "Keluarkan suku dengan pangkat paling kecil untuk menyederhanakan: $a^{x+k} \\pm a^x = a^x(a^k \\pm 1)$.",
-              "contoh_penerapan": "Jika $3^{x+2} - 3^x = 72$, keluarkan $3^x$: $3^x(3^2 - 1) = 72 \\rightarrow 8 \\cdot 3^x = 72 \\rightarrow$ **$3^x = 9 \\Rightarrow x = 2$**."
+              "judul": "Faktorisasi Penjumlahan & Pengurangan Eksponen",
+              "teori_singkat": "Keluarkan suku berpangkat terkecil: $a^{x+k} \\pm a^x = a^x(a^k \\pm 1)$.",
+              "contoh": "$3^{x+2} - 3^x = 72 \\rightarrow 3^x(8) = 72 \\rightarrow$ **$x = 2$**."
             },
             {
-              "judul_poin": "Membandingkan Bilangan Berpangkat Besar",
-              "penjelasan_singkat": "Samakan pangkat luarnya memakai FPB kedua eksponen: ubah $a^{mk}$ dan $b^{nk}$ menjadi $(a^m)^k$ dan $(b^n)^k$.",
-              "contoh_penerapan": "Bandingkan $2^{300}$ dan $3^{200}$: ubah jadi $(2^3)^{100} = 8^{100}$ dan $(3^2)^{100} = 9^{100}$, jelas **$2^{300} < 3^{200}$**."
+              "judul": "Perbandingan Bilangan Berpangkat Besar",
+              "teori_singkat": "Samakan pangkat luar memakai FPB eksponen: bandingkan $(a^m)^k$ dengan $(b^n)^k$.",
+              "contoh": "$2^{300} = 8^{100}$ dan $3^{200} = 9^{100} \\rightarrow$ **$2^{300} < 3^{200}$**."
             }
           ]
         },
@@ -125,39 +142,44 @@
           "nama_kelompok": "Bentuk Akar, Rasionalisasi, & Akar Bersusun",
           "butir": [
             {
-              "judul_poin": "Aturan Nilai Mutlak pada Akar Kuadrat",
-              "penjelasan_singkat": "Hasil akar kuadrat selalu tak negatif: $\\sqrt{x^2} = |x|$. Nilainya $x$ jika $x \\ge 0$, dan $-x$ jika $x < 0$.",
-              "contoh_penerapan": "Jika $x < 2$, maka $x - 2$ bernilai negatif, sehingga $\\sqrt{(x - 2)^2} = |x - 2| =$ **$2 - x$**."
+              "judul": "Nilai Mutlak pada Akar Kuadrat",
+              "teori_singkat": "Akar kuadrat tak negatif: $\\sqrt{x^2} = |x|$ ($x$ jika $x \\ge 0$; $-x$ jika $x < 0$).",
+              "contoh": "Jika $x < 2$, maka $\\sqrt{(x-2)^2} = |x-2| =$ **$2 - x$**."
             },
             {
-              "judul_poin": "Merasionalkan Penyebut dengan Akar Sekawan",
-              "penjelasan_singkat": "Kalikan atas dan bawah dengan akar sekawannya: $\\frac{c}{\\sqrt{a} \\pm \\sqrt{b}} \\times \\frac{\\sqrt{a} \\mp \\sqrt{b}}{\\sqrt{a} \\mp \\sqrt{b}} = \\frac{c(\\sqrt{a} \\mp \\sqrt{b})}{a - b}$.",
-              "contoh_penerapan": "Rasionalkan $\\frac{6}{\\sqrt{5} - \\sqrt{2}} \\times \\frac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} + \\sqrt{2}} = \\frac{6(\\sqrt{5} + \\sqrt{2})}{5 - 2} =$ **$2(\\sqrt{5} + \\sqrt{2})$**."
+              "judul": "Rasionalisasi Penyebut Akar Sekawan",
+              "teori_singkat": "Kalikan sekawan: $\\frac{c}{\\sqrt{a} \\pm \\sqrt{b}} = \\frac{c(\\sqrt{a} \\mp \\sqrt{b})}{a - b}$.",
+              "contoh": "$\\frac{6}{\\sqrt{5} - \\sqrt{2}} \\times \\frac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} + \\sqrt{2}} =$ **$2(\\sqrt{5} + \\sqrt{2})$**."
             },
             {
-              "judul_poin": "Menyederhanakan Bentuk Akar Bersusun",
-              "penjelasan_singkat": "Bentuk $\\sqrt{(a+b) \\pm 2\\sqrt{ab}}$ bisa langsung dipecah jadi $\\sqrt{a} \\pm \\sqrt{b}$ dengan syarat wajib $a > b > 0$.",
-              "contoh_penerapan": "Sederhanakan $\\sqrt{8 - \\sqrt{60}} = \\sqrt{8 - 2\\sqrt{15}} = \\sqrt{(5+3) - 2\\sqrt{5 \\cdot 3}} =$ **$\\sqrt{5} - \\sqrt{3}$**."
+              "judul": "Penyederhanaan Akar Bersusun",
+              "teori_singkat": "$\\sqrt{(a+b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b}$ dengan syarat wajib $a > b > 0$.",
+              "contoh": "$\\sqrt{8 - \\sqrt{60}} = \\sqrt{(5+3) - 2\\sqrt{15}} =$ **$\\sqrt{5} - \\sqrt{3}$**."
             },
             {
-              "judul_poin": "Menghitung Akar Bersarang Tak Hingga",
-              "penjelasan_singkat": "Misalkan $x = \\sqrt{a + \\sqrt{a + \\dots}}$ ($a > 0$), lalu kuadratkan kedua ruas hingga terbentuk $x^2 - x - a = 0$.",
-              "contoh_penerapan": "Untuk $x = \\sqrt{6 + \\sqrt{6 + \\dots}}$, didapat $x^2 = 6 + x \\rightarrow (x-3)(x+2) = 0$. Ambil yang positif: **$x = 3$**."
+              "judul": "Akar Bersarang Tak Hingga",
+              "teori_singkat": "Misalkan $x = \\sqrt{a + \\sqrt{a + \\dots}} \\rightarrow$ selesaikan $x^2 - x - a = 0$ ($x > 0$).",
+              "contoh": "$x = \\sqrt{6 + \\sqrt{6 + \\dots}} \\rightarrow x^2 - x - 6 = 0 \\rightarrow$ ambil positif **$x = 3$**."
             }
           ]
         },
         {
-          "nama_kelompok": "Persamaan Eksponen & Bentuk Kuadrat",
+          "nama_kelompok": "Persamaan & Pertidaksamaan Eksponen",
           "butir": [
             {
-              "judul_poin": "Persamaan Eksponen Basis Sama dan Basis Berbeda",
-              "penjelasan_singkat": "Jika $a^{f(x)} = a^{g(x)}$ ($a > 0, a \\neq 1$), samakan pangkatnya: $f(x) = g(x)$. Jika $a^{f(x)} = b^{f(x)}$ ($a, b > 0, a \\neq b$), maka $f(x) = 0$.",
-              "contoh_penerapan": "Selesaikan $5^{2x-6} = 7^{2x-6}$. Karena basis beda tapi pangkat sama, pangkatnya pasti nol: $2x - 6 = 0 \\rightarrow$ **$x = 3$**."
+              "judul": "Persamaan Eksponen Basis Sama & Beda",
+              "teori_singkat": "$a^{f(x)} = a^{g(x)} \\Rightarrow f(x)=g(x)$; jika $a^{f(x)} = b^{f(x)}$ ($a \\neq b$), maka $f(x)=0$.",
+              "contoh": "$5^{2x-6} = 7^{2x-6} \\rightarrow$ basis beda, pangkat nol: $2x - 6 = 0 \\rightarrow$ **$x = 3$**."
             },
             {
-              "judul_poin": "Persamaan Eksponen Bentuk Kuadrat",
-              "penjelasan_singkat": "Ubah $p \\cdot a^{2x} + q \\cdot a^x + r = 0$ jadi persamaan kuadrat dengan memisalkan $y = a^x$ (syarat wajib $y > 0$).",
-              "contoh_penerapan": "Selesaikan $2^{2x} - 6 \\cdot 2^x + 8 = 0$. Misal $y = 2^x$, didapat $(y-2)(y-4)=0 \\rightarrow y=2$ atau $4$, maka **$x = 1$ atau $x = 2$**."
+              "judul": "Persamaan Eksponen Bentuk Kuadrat",
+              "teori_singkat": "Ubah ke kuadrat dengan misal $y = a^x$ (syarat wajib $y > 0$).",
+              "contoh": "$2^{2x} - 6 \\cdot 2^x + 8 = 0 \\rightarrow (y-2)(y-4)=0 \\rightarrow$ **$x = 1$ atau $2$**."
+            },
+            {
+              "judul": "Pertidaksamaan Eksponen",
+              "teori_singkat": "Basis $a > 1$: tanda tetap. Basis $0 < a < 1$: tanda pertidaksamaan dibalik.",
+              "contoh": "$\\left(\\frac{1}{2}\\right)^{x} > \\left(\\frac{1}{2}\\right)^{3} \\rightarrow$ basis $< 1$, balik tanda: **$x < 3$**."
             }
           ]
         }
@@ -167,31 +189,40 @@
       "kode_subbab": "pk-01-03",
       "judul_subbab": "Operasi Aljabar dan Pemfaktoran",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Soal aljabar UTBK jarang meminta kamu mencari nilai $x$ dan $y$ satu per satu. Kuncinya adalah mengubah bentuk yang ditanya agar cocok dengan modal yang diketahui.\n\n* **Pola Kuadrat:** $(x \\pm y)^2 = x^2 \\pm 2xy + y^2$ dan $x^2 - y^2 = (x+y)(x-y)$\n* **Pola Pangkat Tiga:** $x^3 + y^3 = (x+y)^3 - 3xy(x+y)$ dan $x^3 - y^3 = (x-y)^3 + 3xy(x-y)$\n* **Pola Kebalikan:** $x^2 + \\frac{1}{x^2} = \\left(x + \\frac{1}{x}\\right)^2 - 2$\n* **Kuadrat Sempurna:** $ax^2 + bx + c = a\\left(x + \\frac{b}{2a}\\right)^2 - \\frac{D}{4a}$",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Manipulasi bentuk yang ditanya menggunakan identitas kuadrat, kubik, resiprokal, dan pemfaktoran tanpa mencari variabel satu per satu.",
       "kelompok": [
         {
-          "nama_kelompok": "Pola Kuadrat, Pangkat Tiga, dan Pemfaktoran",
+          "nama_kelompok": "Identitas Kuadrat, Pangkat Tiga, dan Pemfaktoran",
           "butir": [
             {
-              "judul_poin": "Selisih Dua Kuadrat",
-              "penjelasan_singkat": "Selisih dua kuadrat selalu bisa dipecah menjadi perkalian jumlah dan selisihnya: $a^2 - b^2 = (a+b)(a-b)$.",
-              "contoh_penerapan": "Hitung $2026^2 - 2024^2 = (2026+2024)(2026-2024) = 4050 \\times 2 =$ **$8100$**."
+              "judul": "Selisih Dua Kuadrat",
+              "teori_singkat": "Pecah menjadi perkalian jumlah dan selisih: $a^2 - b^2 = (a+b)(a-b)$.",
+              "contoh": "$2026^2 - 2024^2 = (4050)(2) =$ **$8100$**."
             },
             {
-              "judul_poin": "Jumlah Kuadrat dari Jumlah & Hasil Kali",
-              "penjelasan_singkat": "Ubah $x^2 + y^2$ menjadi $(x+y)^2 - 2xy$ atau $(x-y)^2 + 2xy$ sesuai data yang tersedia.",
-              "contoh_penerapan": "Jika $x+y=7$ dan $xy=10$, maka $x^2+y^2 = 7^2 - 2(10) =$ **$29$**."
+              "judul": "Jumlah Kuadrat Dua Variabel",
+              "teori_singkat": "$x^2 + y^2 = (x+y)^2 - 2xy = (x-y)^2 + 2xy$.",
+              "contoh": "$x+y=7$, $xy=10 \\rightarrow x^2+y^2 = 7^2 - 2(10) =$ **$29$**."
             },
             {
-              "judul_poin": "Jumlah dan Selisih Pangkat Tiga",
-              "penjelasan_singkat": "Gunakan $x^3 \\pm y^3 = (x \\pm y)(x^2 \\mp xy + y^2)$, atau versi cepatnya $(x+y)^3 - 3xy(x+y)$.",
-              "contoh_penerapan": "Jika $x+y=4$ dan $xy=3$, maka $x^3+y^3 = 4^3 - 3(3)(4) =$ **$28$**."
+              "judul": "Kuadrat Tiga Suku",
+              "teori_singkat": "$(a+b+c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)$.",
+              "contoh": "$a+b+c=5$, $ab+bc+ca=4 \\rightarrow a^2+b^2+c^2 = 5^2 - 2(4) =$ **$17$**."
             },
             {
-              "judul_poin": "Pemfaktoran Kuadrat ($a \\neq 1$)",
-              "penjelasan_singkat": "Faktorkan $ax^2 + bx + c = \\frac{1}{a}(ax + p)(ax + q)$ dengan syarat $p+q=b$ dan $pq=ac$.",
-              "contoh_penerapan": "Untuk $2x^2 + 5x - 3$, cari $p=6$ dan $q=-1$, lalu bagi $2$: hasil **$(x+3)(2x-1)$**."
+              "judul": "Jumlah dan Selisih Pangkat Tiga",
+              "teori_singkat": "$x^3 \\pm y^3 = (x \\pm y)^3 \\mp 3xy(x \\pm y)$ atau $(x \\pm y)(x^2 \\mp xy + y^2)$.",
+              "contoh": "$x+y=4$, $xy=3 \\rightarrow x^3+y^3 = 4^3 - 3(3)(4) =$ **$28$**."
+            },
+            {
+              "judul": "Pemfaktoran Kuadrat (a ≠ 1)",
+              "teori_singkat": "$ax^2 + bx + c = \\frac{1}{a}(ax+p)(ax+q)$ dengan $p+q=b$ dan $pq=ac$.",
+              "contoh": "$2x^2 + 5x - 3$: $p=6, q=-1 \\rightarrow \\frac{1}{2}(2x+6)(2x-1) =$ **$(x+3)(2x-1)$**."
             }
           ]
         },
@@ -199,54 +230,54 @@
           "nama_kelompok": "Bentuk Kebalikan (Resiprokal)",
           "butir": [
             {
-              "judul_poin": "Kuadrat Bentuk Kebalikan",
-              "penjelasan_singkat": "Untuk $x \\neq 0$, berlaku $x^2 + \\frac{1}{x^2} = \\left(x + \\frac{1}{x}\\right)^2 - 2 = \\left(x - \\frac{1}{x}\\right)^2 + 2$.",
-              "contoh_penerapan": "Jika $x + \\frac{1}{x} = 5$, maka $x^2 + \\frac{1}{x^2} = 5^2 - 2 =$ **$23$**."
+              "judul": "Kuadrat Bentuk Kebalikan",
+              "teori_singkat": "Untuk $x \\neq 0$: $x^2 + \\frac{1}{x^2} = \\left(x \\pm \\frac{1}{x}\\right)^2 \\mp 2$.",
+              "contoh": "$x + \\frac{1}{x} = 5 \\rightarrow x^2 + \\frac{1}{x^2} = 5^2 - 2 =$ **$23$**."
             },
             {
-              "judul_poin": "Pangkat Tiga Bentuk Kebalikan",
-              "penjelasan_singkat": "Untuk $x \\neq 0$, pakai pola $x^3 + \\frac{1}{x^3} = \\left(x + \\frac{1}{x}\\right)^3 - 3\\left(x + \\frac{1}{x}\\right)$.",
-              "contoh_penerapan": "Jika $x + \\frac{1}{x} = 3$, maka $x^3 + \\frac{1}{x^3} = 3^3 - 3(3) =$ **$18$**."
+              "judul": "Pangkat Tiga Bentuk Kebalikan",
+              "teori_singkat": "Untuk $x \\neq 0$: $x^3 + \\frac{1}{x^3} = \\left(x + \\frac{1}{x}\\right)^3 - 3\\left(x + \\frac{1}{x}\\right)$.",
+              "contoh": "$x + \\frac{1}{x} = 3 \\rightarrow x^3 + \\frac{1}{x^3} = 3^3 - 3(3) =$ **$18$**."
             },
             {
-              "judul_poin": "Tukar Tanda Plus-Minus Kebalikan",
-              "penjelasan_singkat": "Hubungkan bentuk tambah dan kurang lewat $\\left(x - \\frac{1}{x}\\right)^2 = \\left(x + \\frac{1}{x}\\right)^2 - 4$ ($x \\neq 0$).",
-              "contoh_penerapan": "Jika $x + \\frac{1}{x} = 4$ dan $x > 1$, maka $x - \\frac{1}{x} = \\sqrt{4^2 - 4} =$ **$2\\sqrt{3}$**."
+              "judul": "Tukar Tanda Plus-Minus Kebalikan",
+              "teori_singkat": "Hubungkan tambah-kurang ($x \\neq 0$): $\\left(x - \\frac{1}{x}\\right)^2 = \\left(x + \\frac{1}{x}\\right)^2 - 4$.",
+              "contoh": "$x + \\frac{1}{x} = 4$ ($x > 1$) $\\rightarrow x - \\frac{1}{x} = \\sqrt{4^2 - 4} =$ **$2\\sqrt{3}$**."
             }
           ]
         },
         {
-          "nama_kelompok": "Pecahan Aljabar dan Sistem Non-Linear",
+          "nama_kelompok": "Pecahan Aljabar, Polinomial, dan Sistem Non-Linear",
           "butir": [
             {
-              "judul_poin": "Menyederhanakan Pecahan Aljabar",
-              "penjelasan_singkat": "Faktorkan bagian atas dan bawah dulu, baru coret faktor perkalian yang sama.",
-              "contoh_penerapan": "Bentuk $\\frac{x^2 - 9}{x^2 - 5x + 6} = \\frac{(x+3)(x-3)}{(x-2)(x-3)} =$ **$\\frac{x+3}{x-2}$**, dengan syarat $x \\neq 2, 3$."
+              "judul": "Penyederhanaan Pecahan Aljabar",
+              "teori_singkat": "Faktorkan pembilang dan penyebut dulu, lalu coret faktor sama (syarat penyebut $\\neq 0$).",
+              "contoh": "$\\frac{x^2 - 9}{x^2 - 5x + 6} = \\frac{(x+3)(x-3)}{(x-2)(x-3)} =$ **$\\frac{x+3}{x-2}$** ($x \\neq 2, 3$)."
             },
             {
-              "judul_poin": "Sisa Pembagian Polinomial Kuadrat",
-              "penjelasan_singkat": "Jika $P(x)$ dibagi $(x-a)(x-b)$, sisanya berbentuk $S(x) = mx + n$ dengan $P(a)=S(a)$ dan $P(b)=S(b)$.",
-              "contoh_penerapan": "Jika $P(1)=4$ dan $P(3)=10$, maka sisa pembagian $P(x)$ oleh $(x-1)(x-3)$ adalah **$3x+1$**."
+              "judul": "Sisa Pembagian Polinomial Kuadrat",
+              "teori_singkat": "Bagi $(x-a)(x-b)$ bersisa $S(x) = mx + n$, dengan $S(a)=P(a)$ dan $S(b)=P(b)$.",
+              "contoh": "$P(1)=4$, $P(3)=10 \\rightarrow$ sisa bagi $(x-1)(x-3)$ adalah **$3x+1$**."
             },
             {
-              "judul_poin": "Mengolah Sistem Persamaan Non-Linear",
-              "penjelasan_singkat": "Samakan penyebut, jumlahkan, atau bagi antarpersamaan agar langsung membentuk target yang ditanya.",
-              "contoh_penerapan": "Jika $x+y=6$ dan $\\frac{1}{x}+\\frac{1}{y}=\\frac{2}{3}$, ubah jadi $\\frac{x+y}{xy}=\\frac{2}{3} \\Rightarrow xy =$ **$9$**."
+              "judul": "Manipulasi Sistem Persamaan Non-Linear",
+              "teori_singkat": "Samakan penyebut, jumlahkan, atau bagi antarpersamaan langsung ke ekspresi target.",
+              "contoh": "$x+y=6$, $\\frac{1}{x}+\\frac{1}{y}=\\frac{2}{3} \\rightarrow \\frac{x+y}{xy}=\\frac{2}{3} \\rightarrow$ **$xy = 9$**."
             }
           ]
         },
         {
-          "nama_kelompok": "Nilai Maksimum & Minimum dengan Kuadrat Sempurna",
+          "nama_kelompok": "Nilai Ekstrem dengan Kuadrat Sempurna",
           "butir": [
             {
-              "judul_poin": "Nilai Ekstrem Kuadrat Satu Variabel",
-              "penjelasan_singkat": "Ubah $ax^2 + bx + c$ menjadi $a\\left(x + \\frac{b}{2a}\\right)^2 + k$. Nilai ekstremnya adalah $k$ saat $x = -\\frac{b}{2a}$.",
-              "contoh_penerapan": "Bentuk $x^2 - 6x + 14 = (x-3)^2 + 5$ punya nilai minimum **$5$** saat $x=3$."
+              "judul": "Nilai Ekstrem Kuadrat Satu Variabel",
+              "teori_singkat": "Bentuk $a\\left(x + \\frac{b}{2a}\\right)^2 + k$ mencapai ekstrem $k$ saat $x = -\\frac{b}{2a}$.",
+              "contoh": "$x^2 - 6x + 14 = (x-3)^2 + 5 \\rightarrow$ minimum **$5$** saat $x=3$."
             },
             {
-              "judul_poin": "Nilai Minimum Jumlah Dua Kuadrat",
-              "penjelasan_singkat": "Karena kuadrat bilangan real tidak pernah negatif ($u^2 \\ge 0$), nilai minimum $u^2 + v^2 + c$ adalah $c$.",
-              "contoh_penerapan": "Bentuk $(x-2)^2 + (y+1)^2 + 7$ mencapai nilai minimum **$7$** saat $x=2$ dan $y=-1$."
+              "judul": "Nilai Minimum Jumlah Dua Kuadrat",
+              "teori_singkat": "Karena $u^2 \\ge 0$ (real), nilai minimum $u^2 + v^2 + c$ adalah $c$.",
+              "contoh": "$(x-2)^2 + (y+1)^2 + 7 \\rightarrow$ minimum **$7$** saat $x=2, y=-1$."
             }
           ]
         }
@@ -256,31 +287,35 @@
       "kode_subbab": "pk-01-04",
       "judul_subbab": "Persamaan dan Pertidaksamaan Linear & Nilai Mutlak",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **SPL Dua Variabel** ($a_1x+b_1y=c_1$ dan $a_2x+b_2y=c_2$): Punya 1 solusi jika $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$; solusi tak hingga jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$; tidak ada solusi jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.\\n- **Pertidaksamaan Pecahan**: Pindahkan semua suku ke kiri sampai ruas kanan jadi $0$, lalu uji tanda di garis bilangan. Ingat, penyebut tidak boleh $0$.\\n- **Nilai Mutlak**: $|u| = u$ saat $u \\ge 0$, dan $|u| = -u$ saat $u < 0$. Untuk $k > 0$, bentuk $|u| < k$ berarti $-k < u < k$.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Cek rasio koefisien SPL, uji tanda garis bilangan, olah batas interval, dan pecah cabang nilai mutlak.",
       "kelompok": [
         {
-          "nama_kelompok": "Sistem Persamaan Linear & Pertidaksamaan Pecahan",
+          "nama_kelompok": "SPL Dua Variabel & Pertidaksamaan Pecahan",
           "butir": [
             {
-              "judul_poin": "Syarat Solusi Tunggal SPL Dua Variabel",
-              "penjelasan_singkat": "Dua garis berpotongan di tepat satu titik jika perbandingan koefisien $x$ dan $y$ berbeda: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.",
-              "contoh_penerapan": "Sistem $kx + 2y = 5$ dan $3x - y = 4$ punya satu solusi jika $\\frac{k}{3} \\neq \\frac{2}{-1} \\Rightarrow$ **$k \\neq -6$**."
+              "judul": "Syarat Solusi Tunggal SPLDV",
+              "teori_singkat": "Berpotongan di satu titik jika rasio koefisien berbeda: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.",
+              "contoh": "$kx+2y=5$ dan $3x-y=4$ satu solusi jika $\\frac{k}{3} \\neq \\frac{2}{-1} \\rightarrow$ **$k \\neq -6$**."
             },
             {
-              "judul_poin": "Syarat Solusi Tak Hingga dan Tanpa Solusi",
-              "penjelasan_singkat": "Garis berimpit (tak hingga solusi) jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$. Garis sejajar (tanpa solusi) jika $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.",
-              "contoh_penerapan": "Sistem $2x + py = 6$ dan $4x + 6y = q$ tanpa solusi jika $\\frac{2}{4} = \\frac{p}{6} \\neq \\frac{6}{q} \\Rightarrow$ **$p = 3$ dan $q \\neq 12$**."
+              "judul": "Syarat Solusi Tak Hingga & Tanpa Solusi",
+              "teori_singkat": "Tak hingga: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$. Tanpa solusi: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.",
+              "contoh": "$2x+py=6$, $4x+6y=q$ tanpa solusi jika $\\frac{2}{4}=\\frac{p}{6}\\neq\\frac{6}{q} \\rightarrow$ **$p=3, q \\neq 12$**."
             },
             {
-              "judul_poin": "Aturan Balik Tanda Pertidaksamaan Linear",
-              "penjelasan_singkat": "Setiap kali kamu mengali atau membagi kedua ruas dengan bilangan negatif, arah tanda pertidaksamaan wajib dibalik.",
-              "contoh_penerapan": "Dari $-3x + 7 \\le 1$, kita dapat $-3x \\le -6$. Bagi kedua ruas dengan $-3$, tandanya berbalik menjadi **$x \\ge 2$**."
+              "judul": "Aturan Balik Tanda Pertidaksamaan Linear",
+              "teori_singkat": "Mengali atau membagi kedua ruas dengan bilangan negatif wajib membalik arah tanda.",
+              "contoh": "$-3x + 7 \\le 1 \\rightarrow -3x \\le -6 \\rightarrow$ bagi $-3$: **$x \\ge 2$**."
             },
             {
-              "judul_poin": "Pertidaksamaan Pecahan dan Syarat Penyebut",
-              "penjelasan_singkat": "Bentuk $\\frac{f(x)}{g(x)} \\ge 0$ diselesaikan lewat uji tanda di garis bilangan, dengan syarat mutlak penyebut **$g(x) \\neq 0$**.",
-              "contoh_penerapan": "Untuk $\\frac{x - 1}{x + 2} \\ge 0$, titik $x = 1$ (bulatan penuh) dan $x = -2$ (bulatan kosong) memberi hasil **$x < -2$ atau $x \\ge 1$**."
+              "judul": "Pertidaksamaan Pecahan & Syarat Penyebut",
+              "teori_singkat": "Nolkan ruas kanan, uji tanda garis bilangan, dan penyebut wajib $g(x) \\neq 0$.",
+              "contoh": "$\\frac{x-1}{x+2} \\ge 0$ ($x \\neq -2$) $\\rightarrow$ uji tanda memberi **$x < -2$ atau $x \\ge 1$**."
             }
           ]
         },
@@ -288,19 +323,24 @@
           "nama_kelompok": "Operasi Rentang Pertidaksamaan Gabungan",
           "butir": [
             {
-              "judul_poin": "Pengurangan Dua Interval",
-              "penjelasan_singkat": "Jika $a < x < b$ dan $c < y < d$, maka rentang selisihnya dibalik silang: **$a - d < x - y < b - c$**.",
-              "contoh_penerapan": "Untuk $2 < x < 5$ dan $1 < y < 3$, rentang $x - y$ adalah $2 - 3 < x - y < 5 - 1 \\Rightarrow$ **$-1 < x - y < 4$**."
+              "judul": "Pengurangan Dua Interval",
+              "teori_singkat": "Untuk $a<x<b$ dan $c<y<d$, balik silang: $a-d < x-y < b-c$.",
+              "contoh": "$2<x<5$ dan $1<y<3 \\rightarrow 2-3 < x-y < 5-1 \\rightarrow$ **$-1 < x-y < 4$**."
             },
             {
-              "judul_poin": "Perkalian Dua Interval Lintas Tanda",
-              "penjelasan_singkat": "Kalikan keempat pasangan ujung interval ($ac, ad, bc, bd$). Ambil hasil paling kecil sebagai batas bawah dan paling besar sebagai batas atas.",
-              "contoh_penerapan": "Untuk $-3 < x < 2$ dan $-4 < y < 5$, hasil kalinya $\\{12, -15, -8, 10\\}$, sehingga **$-15 < xy < 12$**."
+              "judul": "Perkalian Dua Interval Lintas Tanda",
+              "teori_singkat": "Hitung empat ujung ($ac, ad, bc, bd$), lalu ambil nilai terkecil hingga terbesar.",
+              "contoh": "$-3<x<2$, $-4<y<5 \\rightarrow$ ujung $\\{12,-15,-8,10\\} \\rightarrow$ **$-15 < xy < 12$**."
             },
             {
-              "judul_poin": "Pembagian Dua Interval Bertanda Sama",
-              "penjelasan_singkat": "Ubah $\\frac{x}{y}$ menjadi $x \\cdot \\frac{1}{y}$. Jika $c < y < d$ bertanda sama, kebalikannya ikut terbalik: $\\frac{1}{d} < \\frac{1}{y} < \\frac{1}{c}$.",
-              "contoh_penerapan": "Jika $4 < x < 6$ dan $1 < y < 2$, maka $\\frac{1}{2} < \\frac{1}{y} < 1$. Hasil kalinya memberi **$2 < \\frac{x}{y} < 6$**."
+              "judul": "Pembagian Dua Interval Bertanda Sama",
+              "teori_singkat": "Ubah jadi $x \\cdot \\frac{1}{y}$; untuk $c<y<d$ bertanda sama, berlaku $\\frac{1}{d} < \\frac{1}{y} < \\frac{1}{c}$.",
+              "contoh": "$4<x<6$, $1<y<2 \\rightarrow \\frac{1}{2}<\\frac{1}{y}<1 \\rightarrow$ **$2 < \\frac{x}{y} < 6$**."
+            },
+            {
+              "judul": "Kuadrat Interval Melintasi Nol",
+              "teori_singkat": "Jika $-a < x < b$ ($a,b > 0$), batas bawah nol: $0 \\le x^2 < \\max(a^2, b^2)$.",
+              "contoh": "$-3 < x < 2 \\rightarrow$ batas bawah $0$, atas $(-3)^2=9 \\rightarrow$ **$0 \\le x^2 < 9$**."
             }
           ]
         },
@@ -308,24 +348,29 @@
           "nama_kelompok": "Persamaan & Pertidaksamaan Nilai Mutlak",
           "butir": [
             {
-              "judul_poin": "Persamaan Nilai Mutlak Dasar $|f(x)| = c$",
-              "penjelasan_singkat": "Untuk konstanta $c > 0$, pecah persamaan $|f(x)| = c$ menjadi dua cabang: $f(x) = c$ atau $f(x) = -c$.",
-              "contoh_penerapan": "Persamaan $|2x - 3| = 5$ dipecah menjadi $2x - 3 = 5$ atau $2x - 3 = -5$, sehingga **$x = 4$ atau $x = -1$**."
+              "judul": "Persamaan Nilai Mutlak Dasar",
+              "teori_singkat": "Untuk $c > 0$, pecah $|f(x)| = c$ menjadi $f(x)=c$ atau $f(x)=-c$.",
+              "contoh": "$|2x-3| = 5 \\rightarrow 2x-3 = 5$ atau $-5 \\rightarrow$ **$x = 4$ atau $-1$**."
             },
             {
-              "judul_poin": "Persamaan Dua Nilai Mutlak $|f(x)| = |g(x)|$",
-              "penjelasan_singkat": "Kuadratkan kedua ruas lalu gunakan selisih kuadrat: $(f(x) + g(x))(f(x) - g(x)) = 0$.",
-              "contoh_penerapan": "Untuk $|x + 1| = |2x - 4|$, langsung faktorkan $(3x - 3)(-x + 5) = 0$, sehingga didapat **$x = 1$ atau $x = 5$**."
+              "judul": "Syarat Ruas Kanan Variabel Nilai Mutlak",
+              "teori_singkat": "Pada $|f(x)| = g(x)$, wajib uji syarat $g(x) \\ge 0$ untuk menyaring solusi.",
+              "contoh": "$|x-2| = x-6 \\rightarrow$ syarat $x \\ge 6$, hasil $x=4$ ditolak $\\rightarrow$ **tanpa solusi**."
             },
             {
-              "judul_poin": "Pertidaksamaan Nilai Mutlak Tanda Kurang dan Lebih",
-              "penjelasan_singkat": "Untuk $k > 0$, tanda kurang artinya diapit ($|u| < k \\Leftrightarrow -k < u < k$), sedangkan tanda lebih artinya terpisah ($|u| > k \\Leftrightarrow u < -k$ atau $u > k$).",
-              "contoh_penerapan": "Pertidaksamaan $|x - 2| > 3$ berarti $x - 2 < -3$ atau $x - 2 > 3$, sehingga **$x < -1$ atau $x > 5$**."
+              "judul": "Persamaan Dua Nilai Mutlak",
+              "teori_singkat": "Kuadratkan $|f(x)| = |g(x)|$ menjadi selisih kuadrat: $(f(x)+g(x))(f(x)-g(x)) = 0$.",
+              "contoh": "$|x+1| = |2x-4| \\rightarrow (3x-3)(-x+5) = 0 \\rightarrow$ **$x = 1$ atau $5$**."
             },
             {
-              "judul_poin": "Makna Jarak pada Garis Bilangan",
-              "penjelasan_singkat": "Bentuk $|x - a|$ bisa dibaca sebagai jarak antara titik $x$ dan titik pusat $a$ pada garis bilangan.",
-              "contoh_penerapan": "Pertidaksamaan $|x - 4| \\le 3$ artinya jarak $x$ dari angka $4$ maksimal $3$ satuan ke kiri atau kanan, jadi **$1 \\le x \\le 7$**."
+              "judul": "Pertidaksamaan Nilai Mutlak (< dan >)",
+              "teori_singkat": "Untuk $k > 0$: $|u|<k \\equiv -k<u<k$; $|u|>k \\equiv u<-k$ atau $u>k$.",
+              "contoh": "$|x-2| > 3 \\rightarrow x-2 < -3$ atau $x-2 > 3 \\rightarrow$ **$x < -1$ atau $x > 5$**."
+            },
+            {
+              "judul": "Makna Jarak pada Garis Bilangan",
+              "teori_singkat": "Bentuk $|x - a|$ menyatakan jarak titik $x$ dari pusat $a$.",
+              "contoh": "$|x-4| \\le 3 \\rightarrow$ jarak dari $4$ maksimal $3$ satuan $\\rightarrow$ **$1 \\le x \\le 7$**."
             }
           ]
         }
@@ -335,31 +380,40 @@
       "kode_subbab": "pk-01-05",
       "judul_subbab": "Persamaan dan Fungsi Kuadrat",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Bentuk umum persamaan kuadrat adalah $ax^2 + bx + c = 0$ ($a \\neq 0$) dan fungsi kuadratnya $f(x) = ax^2 + bx + c$.\n- **Diskriminan ($D = b^2 - 4ac$):** Penentu jenis akar dan apakah grafik memotong sumbu-$x$.\n- **Rumus Vieta:** Jumlah akar $x_1 + x_2 = -\\frac{b}{a}$ dan hasil kali akar $x_1 x_2 = \\frac{c}{a}$.\n- **Titik Puncak:** $P\\left(-\\frac{b}{2a}, -\\frac{D}{4a}\\right)$ dengan sumbu simetri di $x = -\\frac{b}{2a}$.\n- **Syarat Definit:** Selalu positif jika $a > 0$ dan $D < 0$; selalu negatif jika $a < 0$ dan $D < 0$.",
       "mode_tampilan": "katalog_rumus_sifat",
+      "label_kolom": {
+        "kolom_1": "Rumus / Sifat & Syarat",
+        "kolom_2": "1 Contoh Hitung Cepat"
+      },
+      "inti_subbab": "Gunakan Vieta, diskriminan, syarat definit, dan titik puncak untuk menganalisis akar serta grafik fungsi kuadrat.",
       "kelompok": [
         {
           "nama_kelompok": "Teorema Vieta & Persamaan Kuadrat Baru",
           "butir": [
             {
-              "judul_poin": "Jumlah Kuadrat dan Pangkat Tiga Akar",
-              "penjelasan_singkat": "Pakai identitas $x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2$ dan $x_1^3 + x_2^3 = (x_1 + x_2)^3 - 3x_1x_2(x_1 + x_2)$.",
-              "contoh_penerapan": "Pada $x^2 - 5x + 3 = 0$, nilai $x_1^2 + x_2^2 = 5^2 - 2(3) = \\mathbf{19}$."
+              "judul": "Rumus Dasar Vieta (Jumlah & Kali Akar)",
+              "teori_singkat": "Pada $ax^2+bx+c=0$, berlaku $x_1+x_2 = -\\frac{b}{a}$ dan $x_1x_2 = \\frac{c}{a}$.",
+              "contoh": "$2x^2 - 6x + 5 = 0 \\rightarrow x_1+x_2 =$ **$3$**, $x_1x_2 =$ **$\\frac{5}{2}$**."
             },
             {
-              "judul_poin": "Jarak atau Selisih Positif Dua Akar",
-              "penjelasan_singkat": "Selisih mutlak dua akar bisa langsung dihitung lewat $|x_1 - x_2| = \\frac{\\sqrt{D}}{|a|}$ dengan syarat $D \\ge 0$.",
-              "contoh_penerapan": "Untuk $2x^2 - 7x + 3 = 0$ ($D = 25$), $|x_1 - x_2| = \\frac{\\sqrt{25}}{|2|} = \\mathbf{\\frac{5}{2}}$."
+              "judul": "Jumlah Kuadrat & Pangkat Tiga Akar",
+              "teori_singkat": "$x_1^2+x_2^2 = (x_1+x_2)^2 - 2x_1x_2$; $x_1^3+x_2^3 = (x_1+x_2)^3 - 3x_1x_2(x_1+x_2)$.",
+              "contoh": "$x^2 - 5x + 3 = 0 \\rightarrow x_1^2+x_2^2 = 5^2 - 2(3) =$ **$19$**."
             },
             {
-              "judul_poin": "Menyusun Persamaan Kuadrat Baru dengan Vieta",
-              "penjelasan_singkat": "Persamaan berakar $\\alpha$ dan $\\beta$ disusun memakai rumus $x^2 - (\\alpha + \\beta)x + (\\alpha \\cdot \\beta) = 0$.",
-              "contoh_penerapan": "Persamaan baru berakar $2x_1$ dan $2x_2$ dari $x^2 - 3x + 4 = 0$ adalah **$x^2 - 6x + 16 = 0$**."
+              "judul": "Selisih Positif Dua Akar",
+              "teori_singkat": "Untuk $D \\ge 0$, jarak dua akar adalah $|x_1 - x_2| = \\frac{\\sqrt{D}}{|a|}$.",
+              "contoh": "$2x^2 - 7x + 3 = 0$ ($D=25$) $\\rightarrow |x_1-x_2| = \\frac{\\sqrt{25}}{2} =$ **$\\frac{5}{2}$**."
             },
             {
-              "judul_poin": "Trik Invers untuk Akar Baru Berpola Sama",
-              "penjelasan_singkat": "Jika kedua akar baru punya pola sama $y = f(x_1)$, ubah jadi $x = f^{-1}(y)$ lalu masukkan ke persamaan awal.",
-              "contoh_penerapan": "Akar baru $(x_1 + 2)$ dari $x^2 - 5x + 1 = 0$: masukkan $x = y - 2$, hasilnya **$y^2 - 9y + 15 = 0$**."
+              "judul": "Menyusun Persamaan Kuadrat Baru (Vieta)",
+              "teori_singkat": "Akar $\\alpha, \\beta$ membentuk persamaan $x^2 - (\\alpha + \\beta)x + \\alpha\\beta = 0$.",
+              "contoh": "Akar $2x_1, 2x_2$ dari $x^2-3x+4=0 \\rightarrow$ **$x^2 - 6x + 16 = 0$**."
+            },
+            {
+              "judul": "Trik Invers Akar Baru Berpola Sama",
+              "teori_singkat": "Jika $y = f(x_1)$, ubah jadi $x = f^{-1}(y)$ lalu substitusi ke persamaan awal.",
+              "contoh": "Akar $(x_1+2)$ dari $x^2-5x+1=0$: substitusi $x = y-2 \\rightarrow$ **$y^2 - 9y + 15 = 0$**."
             }
           ]
         },
@@ -367,24 +421,24 @@
           "nama_kelompok": "Diskriminan, Definit, & Pertidaksamaan Kuadrat",
           "butir": [
             {
-              "judul_poin": "Jenis Akar dari Nilai Diskriminan",
-              "penjelasan_singkat": "Cek $D = b^2 - 4ac$: $D > 0$ (dua akar real beda), $D = 0$ (akar kembar), $D < 0$ (tidak punya akar real).",
-              "contoh_penerapan": "Agar $x^2 + kx + 9 = 0$ punya akar kembar, $D = k^2 - 36 = 0$, sehingga **$k = \\pm 6$**."
+              "judul": "Jenis Akar dari Diskriminan",
+              "teori_singkat": "$D = b^2 - 4ac$: $D>0$ (dua real beda), $D=0$ (kembar), $D<0$ (tak real).",
+              "contoh": "$x^2 + kx + 9 = 0$ akar kembar $\\rightarrow k^2 - 36 = 0 \\rightarrow$ **$k = \\pm 6$**."
             },
             {
-              "judul_poin": "Syarat Definit Positif dan Definit Negatif",
-              "penjelasan_singkat": "Fungsi selalu positif ($f(x) > 0$) jika $a > 0$ dan $D < 0$; selalu negatif jika $a < 0$ dan $D < 0$.",
-              "contoh_penerapan": "Fungsi $f(x) = 2x^2 - 4x + c$ definit positif jika $D = 16 - 8c < 0$, didapat **$c > 2$**."
+              "judul": "Syarat Definit Positif & Negatif",
+              "teori_singkat": "Definit positif ($f>0$): $a>0, D<0$. Definit negatif ($f<0$): $a<0, D<0$.",
+              "contoh": "$2x^2 - 4x + c$ definit positif $\\rightarrow D = 16 - 8c < 0 \\rightarrow$ **$c > 2$**."
             },
             {
-              "judul_poin": "Syarat Tanda Akar (Sama atau Berlawanan)",
-              "penjelasan_singkat": "Kedua akar positif butuh $D \\ge 0$, $x_1 + x_2 > 0$, dan $x_1x_2 > 0$. Jika beda tanda, cukup $x_1x_2 < 0$.",
-              "contoh_penerapan": "Persamaan $x^2 - 4x + (m - 1) = 0$ punya akar beda tanda jika $x_1x_2 = m - 1 < 0 \\Rightarrow$ **$m < 1$**."
+              "judul": "Syarat Tanda Akar (Sama atau Beda)",
+              "teori_singkat": "Keduanya positif: $D \\ge 0, x_1+x_2 > 0, x_1x_2 > 0$. Beda tanda: cukup $x_1x_2 < 0$.",
+              "contoh": "$x^2 - 4x + (m-1) = 0$ beda tanda $\\rightarrow m-1 < 0 \\rightarrow$ **$m < 1$**."
             },
             {
-              "judul_poin": "Menyelesaikan Pertidaksamaan Kuadrat",
-              "penjelasan_singkat": "Buat ruas kanan jadi nol, faktorkan untuk cari pembuat nol, lalu uji tanda plus-minus di garis bilangan.",
-              "contoh_penerapan": "Pertidaksamaan $x^2 - x - 6 \\le 0$ punya pembuat nol $-2$ dan $3$, sehingga solusinya **$-2 \\le x \\le 3$**."
+              "judul": "Penyelesaian Pertidaksamaan Kuadrat",
+              "teori_singkat": "Nolkan ruas kanan, faktorkan pembuat nol, lalu uji tanda plus-minus pada garis bilangan.",
+              "contoh": "$x^2 - x - 6 \\le 0 \\rightarrow$ akar $-2$ dan $3 \\rightarrow$ **$-2 \\le x \\le 3$**."
             }
           ]
         },
@@ -392,19 +446,24 @@
           "nama_kelompok": "Grafik Parabola & Kedudukan Garis",
           "butir": [
             {
-              "judul_poin": "Menyusun Rumus Fungsi dari Grafik",
-              "penjelasan_singkat": "Tahu puncak $(x_p, y_p)$: pakai $f(x) = a(x - x_p)^2 + y_p$. Tahu potong sumbu-$x$: pakai $f(x) = a(x - x_1)(x - x_2)$.",
-              "contoh_penerapan": "Puncak $(1, -4)$ lewat $(0, -3)$: $-3 = a(0 - 1)^2 - 4 \\Rightarrow a = 1$, didapat **$f(x) = x^2 - 2x - 3$**."
+              "judul": "Titik Puncak & Sumbu Simetri Parabola",
+              "teori_singkat": "Sumbu simetri $x_p = -\\frac{b}{2a}$; nilai ekstrem $y_p = f(x_p) = -\\frac{D}{4a}$.",
+              "contoh": "$f(x) = x^2 - 4x + 7 \\rightarrow x_p = 2, y_p = 3 \\rightarrow$ puncak **$(2, 3)$**."
             },
             {
-              "judul_poin": "Membaca Tanda a, b, dan c dari Grafik",
-              "penjelasan_singkat": "$a$ cek arah buka (atas $+$, bawah $-$); $b$ cek posisi puncak ($x_p = -\\frac{b}{2a}$); $c$ cek titik potong sumbu-$y$ $(0, c)$.",
-              "contoh_penerapan": "Grafik terbuka ke bawah ($a < 0$) dengan puncak di kanan sumbu-$y$ ($x_p > 0$) pasti punya **$b > 0$**."
+              "judul": "Menyusun Fungsi Kuadrat dari Grafik",
+              "teori_singkat": "Tahu puncak: $a(x-x_p)^2+y_p$. Tahu potong sumbu-$x$: $a(x-x_1)(x-x_2)$.",
+              "contoh": "Puncak $(1,-4)$ lewat $(0,-3) \\rightarrow a=1 \\rightarrow$ **$f(x) = x^2 - 2x - 3$**."
             },
             {
-              "judul_poin": "Posisi Garis terhadap Parabola",
-              "penjelasan_singkat": "Samakan $y_{\\text{garis}} = y_{\\text{parabola}}$, lalu cek diskriminan gabungannya: $D_g > 0$ (memotong), $D_g = 0$ (menyinggung), $D_g < 0$ (tidak bertemu).",
-              "contoh_penerapan": "Garis $y = 2x + k$ menyinggung $y = x^2$: $x^2 - 2x - k = 0 \\Rightarrow D_g = 4 + 4k = 0 \\Rightarrow$ **$k = -1$**."
+              "judul": "Membaca Tanda a, b, dan c dari Grafik",
+              "teori_singkat": "$a$: arah buka; $b$: posisi $x_p = -\\frac{b}{2a}$; $c$: potong sumbu-$y$ di $(0,c)$.",
+              "contoh": "Terbuka ke bawah ($a<0$), puncak di kanan sumbu-$y$ ($x_p>0$) $\\rightarrow$ **$b > 0$**."
+            },
+            {
+              "judul": "Kedudukan Garis terhadap Parabola",
+              "teori_singkat": "Samakan $y_{\\text{garis}} = y_{\\text{parabola}}$, cek $D_g$: $>0$ memotong, $=0$ menyinggung, $<0$ lepas.",
+              "contoh": "$y=2x+k$ singgung $y=x^2 \\rightarrow x^2-2x-k=0 \\rightarrow D_g=4+4k=0 \\rightarrow$ **$k = -1$**."
             }
           ]
         }

@@ -2,93 +2,101 @@
   "kode_bab": "ppu-04",
   "subtes": "Subtes 2: Pengetahuan dan Pemahaman Umum (PPU)",
   "bab": "Bab 4: Wacana dan Pragmatik",
-  "batch_model": "neon",
-  "jumlah_subbab": 4,
+  "estimasi_menit_review": 4,
   "daftar_subbab": [
     {
       "kode_subbab": "ppu-04-01",
       "judul_subbab": "Ide Pokok dan Gagasan Pendukung",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Saat membaca teks panjang di UTBK, kamu tidak perlu menghafal seluruh isi bacaan. Kuncinya adalah membedakan mana **inti pembicaraan** dan mana **sekadar penjelas**:\n\n* **Gagasan Utama:** Payung besar yang bersifat umum dan merangkum seluruh kalimat dalam satu paragraf.\n* **Gagasan Pendukung:** Rincian data, contoh kasus, atau alasan khusus yang menjelaskan gagasan utama.\n* **Kepaduan Lintas Paragraf:** Topik utama mengikat irisan bahasan dua paragraf berurutan, sementara kata transisi memberi petunjuk arah paragraf sebelum atau sesudahnya.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Bedakan gagasan utama (payung umum) dari penjelas khusus, lalu baca transisi untuk mengikat topik antarparagraf.",
       "kelompok": [
         {
-          "nama_kelompok": "Menemukan Letak Gagasan Utama",
+          "nama_kelompok": "Letak Gagasan Utama",
           "butir": [
             {
-              "judul_poin": "Gagasan Utama di Awal (Pola Deduktif)",
-              "penjelasan_singkat": "Kalimat pertama berisi pernyataan umum yang menaungi seluruh paragraf, lalu diikuti rincian di kalimat berikutnya.",
-              "contoh_penerapan": "**Perubahan iklim mengancam ketahanan pangan nasional.** Tahun lalu, gagal panen padi meningkat lima belas persen akibat kekeringan panjang."
+              "judul": "Pola Deduktif (Awal)",
+              "teori_singkat": "Pernyataan umum berada di kalimat pertama, lalu dijelaskan rincian pada kalimat berikutnya.",
+              "contoh": "**Perubahan iklim ancam pangan nasional.** Tahun lalu, gagal panen padi naik 15% akibat kekeringan."
             },
             {
-              "judul_poin": "Gagasan Utama di Akhir (Pola Induktif)",
-              "penjelasan_singkat": "Paragraf dibuka dengan fakta-fakta khusus, lalu ditutup kalimat simpulan yang merangkum semuanya.",
-              "contoh_penerapan": "Suhu laut menghangat, terumbu karang memutih, dan tangkapan ikan menyusut. **Dengan demikian, ekosistem pesisir mengalami kerusakan serius.**"
+              "judul": "Pola Induktif (Akhir)",
+              "teori_singkat": "Paragraf diawali fakta khusus, lalu ditutup kalimat simpulan yang merangkum keseluruhan isi.",
+              "contoh": "Suhu laut naik dan karang memutih. **Dengan demikian, ekosistem pesisir mengalami kerusakan serius.**"
             },
             {
-              "judul_poin": "Gagasan Utama di Awal & Akhir (Pola Campuran)",
-              "penjelasan_singkat": "Inti pembicaraan muncul di kalimat pertama, lalu ditegaskan kembali di kalimat terakhir dengan pilihan kata berbeda.",
-              "contoh_penerapan": "**Literasi digital wajib dikuasai pelajar.** Tanpa kemampuan menyaring informasi, siswa mudah termakan hoaks. **Kecakapan digital kini menjadi kebutuhan mendesak.**"
+              "judul": "Pola Campuran (Awal & Akhir)",
+              "teori_singkat": "Gagasan utama muncul di awal, lalu ditegaskan ulang di akhir dengan diksi berbeda.",
+              "contoh": "**Literasi digital wajib dikuasai pelajar.** Tanpa saringan, hoaks menyebar. **Kecakapan digital kini mendesak.**"
             },
             {
-              "judul_poin": "Gagasan Utama di Tengah (Pola Ineratif)",
-              "penjelasan_singkat": "Kalimat pertama hanya menjadi pengantar ringan, lalu inti utamanya muncul di tengah sebelum dijelaskan lebih lanjut.",
-              "contoh_penerapan": "Warga ibu kota kerap mengeluhkan kemacetan pagi. **Integrasi transportasi publik menjadi solusi utama kepadatan kota.** Armada bus listrik pun mulai diperbanyak."
+              "judul": "Pola Ineratif (Tengah)",
+              "teori_singkat": "Kalimat awal hanya pengantar; inti utama muncul di tengah sebelum dirinci kembali.",
+              "contoh": "Warga mengeluhkan macet pagi. **Integrasi transportasi publik menjadi solusi utama.** Bus listrik pun diperbanyak."
+            },
+            {
+              "judul": "Pola Tersirat (Deskriptif/Naratif)",
+              "teori_singkat": "Tidak ada kalimat utama tunggal; gagasan pokok menyebar dan disimpulkan dari semua kalimat.",
+              "contoh": "Kabut turun di lembah, burung berkicau, dan embun membasahi daun $\\rightarrow$ **suasana pagi pegunungan**."
             }
           ]
         },
         {
-          "nama_kelompok": "Menyaring Kalimat Penjelas Khusus",
+          "nama_kelompok": "Penanda Kalimat Penjelas Khusus",
           "butir": [
             {
-              "judul_poin": "Penanda Contoh dan Ilustrasi",
-              "penjelasan_singkat": "Kalimat yang menyebut contoh konkret hanya bertugas memperjelas konsep dan tidak pernah menjadi gagasan utama.",
-              "contoh_penerapan": "Transportasi ramah lingkungan terus diperluas, **misalnya** bus listrik, kereta ringan, dan sepeda sewa berbasis aplikasi."
+              "judul": "Penanda Contoh & Ilustrasi",
+              "teori_singkat": "Kalimat berisi contoh konkret hanya memperjelas konsep dan tidak pernah menjadi gagasan utama.",
+              "contoh": "Transportasi hijau terus meluas, **misalnya** bus listrik, kereta ringan, dan sepeda sewa."
             },
             {
-              "judul_poin": "Data Angka dan Kutipan Ahli",
-              "penjelasan_singkat": "Angka statistik, tahun kejadian, atau kutipan lembaga berfungsi sebagai bukti untuk menguatkan gagasan utama.",
-              "contoh_penerapan": "**Menurut laporan BPS tahun 2025**, tingkat pengangguran terbuka turun sebesar 0,4 persen dibandingkan tahun sebelumnya."
+              "judul": "Data Angka & Kutipan Ahli",
+              "teori_singkat": "Statistik, tahun kejadian, atau kutipan lembaga berfungsi sebagai bukti penguat gagasan utama.",
+              "contoh": "**Menurut laporan BPS 2025**, pengangguran terbuka turun 0,4% dibandingkan tahun sebelumnya."
             },
             {
-              "judul_poin": "Penanda Alasan atau Proses",
-              "penjelasan_singkat": "Kalimat yang menjelaskan sebab atau cara terjadinya kalimat sebelumnya pasti berstatus sebagai gagasan pendukung.",
-              "contoh_penerapan": "Kualitas udara perkotaan memburuk. **Kondisi ini dipicu oleh** tingginya emisi kendaraan bermotor dan pembakaran sampah terbuka."
+              "judul": "Penanda Alasan & Proses",
+              "teori_singkat": "Kalimat yang menjelaskan sebab atau cara terjadinya kalimat sebelumnya pasti berstatus penjelas.",
+              "contoh": "Udara kota memburuk. **Kondisi ini dipicu oleh** emisi kendaraan dan pembakaran sampah."
             }
           ]
         },
         {
-          "nama_kelompok": "Merangkum Topik Utama Dua Paragraf",
+          "nama_kelompok": "Topik Utama Dua Paragraf",
           "butir": [
             {
-              "judul_poin": "Kata Kunci Berulang di Kedua Paragraf",
-              "penjelasan_singkat": "Topik utama gabungan wajib memuat subjek atau kata kunci yang muncul di paragraf pertama sekaligus kedua.",
-              "contoh_penerapan": "Paragraf 1 mengulas manfaat **mikroalga** sebagai sumber pangan; Paragraf 2 membahas potensi **mikroalga** untuk bahan bakar hayati."
+              "judul": "Kata Kunci Berulang",
+              "teori_singkat": "Topik gabungan wajib memuat subjek yang muncul berulang di paragraf pertama sekaligus kedua.",
+              "contoh": "P1: manfaat **mikroalga** untuk pangan; P2: potensi **mikroalga** sebagai bahan bakar hayati."
             },
             {
-              "judul_poin": "Pola Masalah dan Solusi",
-              "penjelasan_singkat": "Paragraf pertama memaparkan suatu masalah, sedangkan paragraf kedua menguraikan langkah penyelesaiannya.",
-              "contoh_penerapan": "Paragraf 1: **Krisis air bersih** melanda wilayah pesisir. Paragraf 2: **Teknologi desalinasi** diterapkan untuk mengolah air laut menjadi air tawar."
+              "judul": "Pola Masalah & Solusi",
+              "teori_singkat": "Paragraf pertama memaparkan masalah, sedangkan paragraf kedua menguraikan langkah penyelesaiannya.",
+              "contoh": "P1: **Krisis air bersih** pesisir $\\rightarrow$ P2: **Teknologi desalinasi** mengolah air laut."
             }
           ]
         },
         {
-          "nama_kelompok": "Menebak Paragraf Sebelum dan Sesudah",
+          "nama_kelompok": "Prediksi Paragraf Sebelum & Sesudah",
           "butir": [
             {
-              "judul_poin": "Kata Pertentangan di Awal (Paragraf Sebelumnya)",
-              "penjelasan_singkat": "Konjungsi pertentangan di kalimat pertama menandakan paragraf sebelumnya membahas sisi yang berlawanan.",
-              "contoh_penerapan": "**Namun**, pengembangan energi surya di wilayah tropis masih terkendala mahalnya biaya penyimpanan baterai."
+              "judul": "Konjungsi Pertentangan di Awal",
+              "teori_singkat": "Penanda pertentangan di kalimat pertama menyiratkan paragraf sebelumnya membahas sisi berlawanan.",
+              "contoh": "**Namun**, pengembangan energi surya terkendala mahalnya baterai $\\rightarrow$ sebelumnya bahas **keunggulan surya**."
             },
             {
-              "judul_poin": "Frasa Penambahan di Awal (Paragraf Sebelumnya)",
-              "penjelasan_singkat": "Penanda penambahan di awal paragraf menunjukkan bahwa paragraf sebelumnya membahas faktor lain yang setara.",
-              "contoh_penerapan": "**Selain faktor genetik**, pola makan tinggi gula turut meningkatkan risiko diabetes pada usia muda."
+              "judul": "Frasa Penambahan di Awal",
+              "teori_singkat": "Penanda penambahan di awal menunjukkan paragraf sebelumnya membahas faktor lain yang setara.",
+              "contoh": "**Selain faktor genetik**, pola makan manis memicu diabetes $\\rightarrow$ sebelumnya bahas **faktor genetik**."
             },
             {
-              "judul_poin": "Istilah Baru di Akhir (Paragraf Berikutnya)",
-              "penjelasan_singkat": "Konsep atau solusi baru yang muncul di kalimat penutup tanpa penjelasan detail akan dibahas pada paragraf selanjutnya.",
-              "contoh_penerapan": "Metode konservasi konvensional mulai menemui batas, sehingga para peneliti kini beralih pada pendekatan **rewilding**."
+              "judul": "Istilah Baru di Akhir",
+              "teori_singkat": "Konsep baru di kalimat penutup tanpa rincian akan dijelaskan pada paragraf berikutnya.",
+              "contoh": "Peneliti kini beralih ke pendekatan **rewilding** $\\rightarrow$ paragraf berikutnya menjelaskan konsep **rewilding**."
             }
           ]
         }
@@ -98,81 +106,90 @@
       "kode_subbab": "ppu-04-02",
       "judul_subbab": "Kepaduan Paragraf (Kohesi dan Koherensi)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "**Kepaduan paragraf** menuntut hubungan bentuk dan alur logika antarkalimat yang nyambung sesuai kaidah EYD V serta KBBI VI:\n\n* **Kohesi (Kepaduan Bentuk):** Tali pengikat antarkalimat lewat kata rujukan (*hal tersebut*, *-nya*), kata penghubung antarkalimat, dan pengulangan kata kunci.\n* **Koherensi (Kepaduan Makna):** Alur logika yang nyambung antara kalimat utama dan kalimat penjelas tanpa menyelipkan informasi nyasar atau lompat topik.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Paragraf padu memadukan ikatan bentuk (kohesi) dan alur logika antarkalimat (koherensi) tanpa menyelipkan kalimat sumbang.",
       "kelompok": [
         {
-          "nama_kelompok": "Pengikat Struktur Kalimat dan Kata Rujukan",
+          "nama_kelompok": "Kohesi Gramatikal (Pengikat Struktur)",
           "butir": [
             {
-              "judul_poin": "Kata Tunjuk Gagasan (Hal Tersebut, Ini, Itu)",
-              "penjelasan_singkat": "Merujuk pada seluruh peristiwa atau tindakan pada kalimat tepat sebelumnya, bukan sekadar satu kata benda.",
-              "contoh_penerapan": "Harga beras melonjak bulan lalu; **hal tersebut** menekan daya beli masyarakat kelas menengah."
+              "judul": "Kata Tunjuk Gagasan",
+              "teori_singkat": "Frasa *hal tersebut*, *ini*, atau *itu* merujuk pada seluruh peristiwa kalimat tepat sebelumnya.",
+              "contoh": "Harga beras melonjak tajam; **hal tersebut** menekan daya beli kelas menengah."
             },
             {
-              "judul_poin": "Kata Ganti Orang dan Akhiran (-nya, Mereka, Ia)",
-              "penjelasan_singkat": "Menggantikan orang atau benda tertentu yang sudah disebut sebelumnya sesuai jumlahnya (tunggal atau jamak).",
-              "contoh_penerapan": "Para peneliti menguji vaksin baru di laboratorium, lalu **mereka** memublikasikan hasil uji klinis**nya** secara terbuka."
+              "judul": "Kata Ganti & Akhiran (-nya)",
+              "teori_singkat": "Menggantikan subjek atau objek sebelumnya sesuai jumlah tunggal atau jamak.",
+              "contoh": "Para peneliti menguji vaksin baru, lalu **mereka** memublikasikan hasil uji klinis**nya**."
             },
             {
-              "judul_poin": "Kata Penghubung Antarkalimat dan Koma Wajib EYD V",
-              "penjelasan_singkat": "Menyambungkan dua kalimat utuh sekaligus menandai hubungan makna (pertentangan, akibat, atau penambahan) di awal kalimat.",
-              "contoh_penerapan": "Curah hujan sangat tinggi sepanjang pekan. **Oleh karena itu,** pemerintah menetapkan status siaga banjir di wilayah hilir."
+              "judul": "Konjungsi Antarkalimat (EYD V)",
+              "teori_singkat": "Menghubungkan dua kalimat utuh di awal kalimat dan wajib diikuti tanda koma.",
+              "contoh": "Hujan lebat turun sepekan. **Oleh karena itu,** pemerintah menetapkan status siaga banjir."
             },
             {
-              "judul_poin": "Pelesapan Unsur yang Sama (Elipsis)",
-              "penjelasan_singkat": "Menghilangkan subjek atau predikat yang kembar pada bagian berikutnya agar kalimat ringkas tanpa merusak makna.",
-              "contoh_penerapan": "Tim pertama menganalisis sampel air sungai, sedangkan tim kedua **[menganalisis]** endapan lumpur muara secara terpisah."
+              "judul": "Pelesapan (Elipsis)",
+              "teori_singkat": "Menghilangkan unsur kalimat yang sama pada klausa berikutnya agar ringkas dan efektif.",
+              "contoh": "Tim pertama menganalisis air sungai, sedangkan tim kedua **[menganalisis]** endapan lumpur."
+            },
+            {
+              "judul": "Penyulihan (Substitusi)",
+              "teori_singkat": "Mengganti unsur kalimat dengan kata lain yang lebih umum untuk menghindari pengulangan.",
+              "contoh": "Mereka menolak proyek tambang, dan warga desa sebelah bersikap **demikian**."
             }
           ]
         },
         {
-          "nama_kelompok": "Pengikat Makna dan Pilihan Kata",
+          "nama_kelompok": "Kohesi Leksikal (Pengikat Makna)",
           "butir": [
             {
-              "judul_poin": "Pengulangan Kata Kunci dan Padanan Kata (Sinonim)",
-              "penjelasan_singkat": "Mengulang istilah inti atau menggantinya dengan kata searti agar fokus pembicaraan terjaga dari awal sampai akhir.",
-              "contoh_penerapan": "**Stunting** menghambat perkembangan otak anak. Kondisi **gagal tumbuh** kronis ini perlu dicegah sejak masa kehamilan."
+              "judul": "Repetisi & Sinonim",
+              "teori_singkat": "Mengulang kata kunci atau menggantinya dengan padanan makna agar fokus topik terjaga.",
+              "contoh": "**Stunting** menghambat otak anak. Kondisi **gagal tumbuh** ini harus dicegah sejak hamil."
             },
             {
-              "judul_poin": "Hubungan Umum ke Khusus (Hipernim ke Hiponim)",
-              "penjelasan_singkat": "Menjabarkan kelompok besar (umum) pada kalimat utama menjadi contoh-contoh spesifik (khusus) pada kalimat penjelas.",
-              "contoh_penerapan": "Indonesia memiliki potensi **energi terbarukan** melimpah. Sumber energi itu mencakup **panas bumi**, **tenaga surya**, dan **arus laut**."
+              "judul": "Hipernim ke Hiponim",
+              "teori_singkat": "Menjabarkan kategori umum di kalimat utama menjadi unsur khusus di kalimat penjelas.",
+              "contoh": "Potensi **energi terbarukan** melimpah, meliputi **panas bumi**, **tenaga surya**, dan **arus laut**."
             },
             {
-              "judul_poin": "Kosakata Satu Bidang Topik (Kolokasi)",
-              "penjelasan_singkat": "Memakai deretan istilah yang memang biasa muncul bersama dalam satu bidang topik agar alur bacaan terasa alami.",
-              "contoh_penerapan": "Erupsi gunung api memuntahkan **abu vulkanik**, **awan panas**, dan **lahar dingin** ke kawasan lereng."
+              "judul": "Kolokasi (Satu Bidang Makna)",
+              "teori_singkat": "Menggunakan deretan istilah yang lazim muncul bersamaan dalam satu bidang topik.",
+              "contoh": "Erupsi gunung memuntahkan **abu vulkanik**, **awan panas**, dan **lahar dingin**."
             },
             {
-              "judul_poin": "Perbandingan Lawan Makna (Antonim)",
-              "penjelasan_singkat": "Mempertentangkan dua kata berlawanan arti untuk memperjelas perbandingan kondisi dalam satu topik yang sama.",
-              "contoh_penerapan": "Sektor pariwisata **tumbuh** pesat di wilayah pesisir, berbanding terbalik dengan sektor pertanian yang justru **menyusut**."
+              "judul": "Antonim (Perbandingan Lawan Kata)",
+              "teori_singkat": "Mempertentangkan dua kata berlawanan makna untuk memperjelas kontras dalam satu topik.",
+              "contoh": "Sektor pariwisata **tumbuh** pesat, berbanding terbalik dengan sektor pertanian yang **menyusut**."
             }
           ]
         },
         {
-          "nama_kelompok": "Alur Logika, Urutan Kalimat, dan Pemecahan Paragraf",
+          "nama_kelompok": "Koherensi, Urutan Kalimat, & Pemecahan Paragraf",
           "butir": [
             {
-              "judul_poin": "Melacak Kalimat Nyasar (Fokus Predikat Melenceng)",
-              "penjelasan_singkat": "Mencari kalimat yang keluar dari gagasan utama meskipun masih memakai kata kunci yang mirip dengan paragraf.",
-              "contoh_penerapan": "(1) Teh hijau kaya antioksidan pencegah kanker. (2) **Teh hijau pertama kali dibudidayakan di Tiongkok kuno.**"
+              "judul": "Kalimat Sumbang (Nyasar)",
+              "teori_singkat": "Kalimat yang melenceng dari fokus predikat utama meski masih memakai kata kunci mirip.",
+              "contoh": "(1) Teh hijau cegah kanker. (2) **Teh hijau berasal dari Tiongkok kuno.** (sumbang)"
             },
             {
-              "judul_poin": "Menyusun Kalimat Acak Lewat Jejak Kata Rujukan",
-              "penjelasan_singkat": "Menaruh kalimat pernyataan umum tanpa kata rujukan di posisi pertama, lalu menyambungnya dengan kalimat berpenanda rujukan.",
-              "contoh_penerapan": "Urutan padu: **(3)** Pengertian mikroplastik (tanpa rujukan) $\\rightarrow$ **(1)** Dampaknya (**dampaknya** merujuk ke kalimat 3) $\\rightarrow$ **(4)** Solusi."
+              "judul": "Urutan Kalimat via Rujukan",
+              "teori_singkat": "Tempatkan kalimat umum tanpa rujukan di awal, lalu sambung kalimat berpenanda rujukan.",
+              "contoh": "**(3)** Definisi mikroplastik $\\rightarrow$ **(1) Dampaknya** bagi laut $\\rightarrow$ **(4)** Upaya pengurangan."
             },
             {
-              "judul_poin": "Urutan Waktu dan Sebab-Akibat Berantai",
-              "penjelasan_singkat": "Menyusun kalimat sesuai urutan kejadian atau rantai sebab-akibat di mana akibat pertama memicu kejadian berikutnya.",
-              "contoh_penerapan": "Suhu laut menghangat (**sebab 1**) $\\rightarrow$ terumbu karang memutih (**akibat 1/sebab 2**) $\\rightarrow$ populasi ikan karang turun (**akibat 2**)."
+              "judul": "Urutan Kronologis & Sebab-Akibat",
+              "teori_singkat": "Susun kalimat mengikuti alur waktu atau rantai akibat pertama yang memicu akibat berikutnya.",
+              "contoh": "Laut menghangat $\\rightarrow$ karang memutih $\\rightarrow$ populasi ikan karang menurun drastis."
             },
             {
-              "judul_poin": "Memecah Paragraf Saat Subtopik Bergeser",
-              "penjelasan_singkat": "Memisahkan satu paragraf panjang tepat pada kalimat yang mulai membahas sudut pandang baru (misalnya dari dampak ke solusi).",
-              "contoh_penerapan": "(1-3) Dampak kemacetan terhadap polusi udara. **(4) Untuk mengatasi persoalan tersebut, pemerintah membangun jalur sepeda terpadu.**"
+              "judul": "Pemecahan Paragraf",
+              "teori_singkat": "Pecah paragraf panjang tepat pada kalimat saat sudut pandang atau subtopik mulai bergeser.",
+              "contoh": "(1-3) Dampak polusi udara. **(4) Untuk mengatasinya, pemerintah membangun jalur sepeda terpadu.**"
             }
           ]
         }
@@ -182,96 +199,110 @@
       "kode_subbab": "ppu-04-03",
       "judul_subbab": "Sikap, Nada, dan Tujuan Penulis",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "Membaca **sikap, nada, dan tujuan penulis** berarti menangkap maksud di balik pilihan kata (diksi) sebuah bacaan:\n\n* **Sikap Penulis:** Posisi penulis terhadap topik—apakah *mendukung, menentang, netral, kritis,* atau *khawatir*.\n* **Tujuan Penulisan:** Maksud utama bacaan dibuat—apakah sekadar *menjelaskan fakta*, *membuktikan pendapat*, *mengajak bertindak*, atau *melukiskan suasana*.\n* **Nada & Sasaran Pembaca:** Suasana emosi yang terasa dari pilihan kata sekaligus kecocokan gaya bahasa dengan pembacanya.",
       "mode_tampilan": "katalog_sinyal_pola",
+      "label_kolom": {
+        "kolom_1": "Jenis Pola / Sinyal Teks",
+        "kolom_2": "1 Contoh Kata Kunci / Kalimat"
+      },
+      "inti_subbab": "Tangkap sikap, nada emosi, tujuan penulisan, dan sasaran pembaca dengan membedah pilihan kata (diksi) dalam teks.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Sinyal Sikap dan Keberpihakan Penulis",
+          "nama_kelompok": "Sinyal Sikap Penulis",
           "butir": [
             {
-              "judul_poin": "Sikap Mendukung (Pro / Apresiatif)",
-              "penjelasan_singkat": "Penulis membenarkan atau mengunggulkan suatu gagasan memakai kata bermakna positif.",
-              "contoh_penerapan": "Program hilirisasi terbukti **mampu mendongkrak** nilai ekspor dan **memperkuat** ketahanan ekonomi dalam negeri."
+              "judul": "Mendukung (Pro / Apresiatif)",
+              "teori_singkat": "Penulis membenarkan atau mengunggulkan gagasan memakai diksi bermakna positif.",
+              "contoh": "Program hilirisasi terbukti **mampu mendongkrak** ekspor dan **memperkuat** ekonomi nasional."
             },
             {
-              "judul_poin": "Sikap Menentang (Kontra / Menolak)",
-              "penjelasan_singkat": "Penulis menolak gagasan atau aturan secara tegas lewat kata pertentangan dan diksi bernada negatif.",
-              "contoh_penerapan": "Aturan baru tersebut **justru kontraproduktif** dan **menghambat** laju inovasi pelaku usaha rintisan lokal."
+              "judul": "Menentang (Kontra / Menolak)",
+              "teori_singkat": "Penulis menolak gagasan atau kebijakan secara tegas lewat diksi bermuatan negatif.",
+              "contoh": "Aturan tersebut **justru kontraproduktif** dan **menghambat** inovasi usaha rintisan lokal."
             },
             {
-              "judul_poin": "Sikap Kritis (Menguji & Mengevaluasi)",
-              "penjelasan_singkat": "Penulis menyoroti celah, ketimpangan, atau kelemahan suatu kebijakan sambil menuntut perbaikan.",
-              "contoh_penerapan": "Anggaran pendidikan terus naik, **namun sebaran fasilitas** di daerah tertinggal **masih jauh dari memadai**."
+              "judul": "Kritis (Mengevaluasi)",
+              "teori_singkat": "Penulis menyoroti celah atau ketimpangan kebijakan sambil menuntut perbaikan.",
+              "contoh": "Anggaran pendidikan naik, **namun fasilitas** di daerah tertinggal **masih jauh dari memadai**."
             },
             {
-              "judul_poin": "Sikap Khawatir (Cemas / Waspada)",
-              "penjelasan_singkat": "Penulis menunjukkan rasa cemas terhadap risiko buruk di masa depan memakai kata peluang bahaya.",
-              "contoh_penerapan": "Peny sedotan air tanah berlebihan **dikhawatirkan memicu** penurunan muka tanah permanen di pesisir utara."
+              "judul": "Khawatir (Cemas / Waspada)",
+              "teori_singkat": "Penulis menunjukkan kecemasan terhadap risiko buruk masa depan lewat kata peluang bahaya.",
+              "contoh": "Penyedotan air tanah berlebihan **dikhawatirkan memicu** penurunan muka tanah permanen."
             },
             {
-              "judul_poin": "Sikap Netral (Objektif / Berimbang)",
-              "penjelasan_singkat": "Penulis menyajikan fakta atau dua sisi pendapat secara seimbang tanpa menyisipkan kata bermuatan emosi.",
-              "contoh_penerapan": "Berdasarkan laporan BPS, tingkat inflasi tahunan **tercatat sebesar** 2,8 persen pada kuartal ketiga."
+              "judul": "Netral (Objektif / Berimbang)",
+              "teori_singkat": "Penulis menyajikan fakta atau dua sisi pendapat seimbang tanpa diksi emosional.",
+              "contoh": "Menurut laporan BPS, inflasi tahunan **tercatat sebesar** 2,8% pada kuartal ketiga."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Pola Tujuan Utama Penulisan",
+          "nama_kelompok": "Pola Tujuan Penulisan",
           "butir": [
             {
-              "judul_poin": "Memaparkan Informasi (Ekspositoris)",
-              "penjelasan_singkat": "Menjelaskan proses, pengertian, atau fakta secara lugas agar wawasan pembaca bertambah tanpa paksaan.",
-              "contoh_penerapan": "Fotosintesis **merupakan proses biokimia** tumbuhan hijau dalam mengubah energi cahaya menjadi energi kimia."
+              "judul": "Ekspositoris (Memaparkan)",
+              "teori_singkat": "Menjelaskan definisi, proses, atau fakta secara lugas untuk menambah wawasan pembaca.",
+              "contoh": "Fotosintesis **merupakan proses biokimia** tumbuhan mengubah cahaya menjadi energi kimia."
             },
             {
-              "judul_poin": "Membuktikan Pendapat (Argumentatif)",
-              "penjelasan_singkat": "Meyakinkan pembaca atas kebenaran pendapat penulis dengan menyodorkan data, riset, dan alasan logis.",
-              "contoh_penerapan": "Data lapangan **membuktikan bahwa** angkutan massal **secara nyata menekan** emisi karbon di kota besar."
+              "judul": "Argumentatif (Membuktikan)",
+              "teori_singkat": "Meyakinkan kebenaran pendapat penulis memakai bukti data, riset, dan alasan logis.",
+              "contoh": "Data lapangan **membuktikan bahwa** angkutan massal **secara nyata menekan** emisi karbon."
             },
             {
-              "judul_poin": "Mengajak Bertindak (Persuasif)",
-              "penjelasan_singkat": "Memengaruhi pembaca agar mengikuti saran atau melakukan tindakan tertentu lewat kata keharusan dan ajakan.",
-              "contoh_penerapan": "Pemerintah dan masyarakat **perlu segera beralih** ke energi bersih demi mencegah krisis iklim."
+              "judul": "Persuasif (Mengajak)",
+              "teori_singkat": "Memengaruhi pembaca agar bertindak mengikuti saran lewat kata keharusan atau ajakan.",
+              "contoh": "Masyarakat **perlu segera beralih** ke energi bersih demi mencegah krisis iklim."
             },
             {
-              "judul_poin": "Melukiskan Objek (Deskriptif)",
-              "penjelasan_singkat": "Menggambarkan ciri fisik, suasana, atau kondisi suatu tempat secara rinci agar seolah terlihat pembaca.",
-              "contoh_penerapan": "Kabut tipis **menyelimuti lembah hijau**, sementara aroma tanah basah **menguar lembut** seusai hujan."
+              "judul": "Deskriptif (Melukiskan)",
+              "teori_singkat": "Menggambarkan ciri fisik atau suasana secara rinci agar seolah dialami pancaindra.",
+              "contoh": "Kabut tipis **menyelimuti lembah hijau**, sementara aroma tanah basah **menguar lembut**."
+            },
+            {
+              "judul": "Naratif (Menceritakan)",
+              "teori_singkat": "Menceritakan rangkaian peristiwa secara kronologis dengan tokoh, latar, dan alur waktu.",
+              "contoh": "**Pada 1945**, para pemuda **membawa** Soekarno ke Rengasdengklok **sebelum** proklamasi dibacakan."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Penanda Pilihan Kata dan Nada (Tone)",
+          "nama_kelompok": "Penanda Nada (Tone)",
           "butir": [
             {
-              "judul_poin": "Nada Objektif-Ilmiah",
-              "penjelasan_singkat": "Suasana datar, resmi, dan berjarak memakai istilah teknis serta menghindari kata bermakna kias.",
-              "contoh_penerapan": "Riset ini **memakai metode kuantitatif** untuk **mengukur hubungan** antara literasi digital dan produktivitas kerja."
+              "judul": "Objektif-Ilmiah",
+              "teori_singkat": "Nada datar, resmi, dan berjarak dengan istilah teknis tanpa bahasa kias.",
+              "contoh": "Riset ini **memakai metode kuantitatif** untuk **mengukur hubungan** literasi dan produktivitas."
             },
             {
-              "judul_poin": "Nada Pesimistis atau Skeptis",
-              "penjelasan_singkat": "Suasana ragu atau suram terhadap keberhasilan suatu upaya lewat kata yang meragukan peluang.",
-              "contoh_penerapan": "Target swasembada pangan **tampaknya sulit terwujud** jika alih fungsi sawah **terus dibiarkan**."
+              "judul": "Pesimistis / Skeptis",
+              "teori_singkat": "Nada ragu atau suram terhadap keberhasilan upaya lewat kata keraguan peluang.",
+              "contoh": "Target swasembada pangan **tampaknya sulit terwujud** jika alih fungsi sawah **terus dibiarkan**."
             },
             {
-              "judul_poin": "Nada Optimistis atau Antusias",
-              "penjelasan_singkat": "Suasana penuh harapan dan keyakinan cerah terhadap masa depan lewat kata bermakna kemajuan.",
-              "contoh_penerapan": "Kehadiran kecerdasan buatan **membuka peluang emas** bagi percepatan riset kesehatan pada masa depan."
+              "judul": "Optimistis / Antusias",
+              "teori_singkat": "Nada penuh harapan dan keyakinan positif lewat diksi kemajuan masa depan.",
+              "contoh": "Kecerdasan buatan **membuka peluang emas** bagi percepatan riset kesehatan masa depan."
+            },
+            {
+              "judul": "Kritis-Menyindir (Ironis / Sarkastis)",
+              "teori_singkat": "Nada sindiran tajam dengan mempertentangkan klaim manis terhadap kenyataan buruk.",
+              "contoh": "Proyek berlabel **ramah lingkungan** itu **justru menggunduli** ratusan hektare hutan lindung."
             }
           ]
         },
         {
-          "nama_kelompok": "4. Sasaran Pembaca Berdasarkan Gaya Bahasa",
+          "nama_kelompok": "Sasaran Pembaca",
           "butir": [
             {
-              "judul_poin": "Pembaca Umum (Gaya Bahasa Populer)",
-              "penjelasan_singkat": "Memakai kosakata sehari-hari yang mudah dipahami dan selalu memberi arti setiap kali istilah khusus muncul.",
-              "contoh_penerapan": "Hipertensi, **atau tekanan darah tinggi yang melebihi batas normal**, sering muncul tanpa gejala awal."
+              "judul": "Pembaca Umum (Populer)",
+              "teori_singkat": "Memakai kosakata sehari-hari dan selalu menyertakan definisi saat istilah teknis muncul.",
+              "contoh": "Hipertensi, **atau tekanan darah tinggi di atas normal**, sering tanpa gejala."
             },
             {
-              "judul_poin": "Pembaca Khusus / Ahli (Gaya Ilmiah)",
-              "penjelasan_singkat": "Memakai istilah bidang ilmu tertentu secara langsung tanpa definisi dasar karena pembaca dianggap sudah paham.",
-              "contoh_penerapan": "Kerusakan **ekosistem mangrove** mempercepat **intrusi air laut** ke dalam **akuifer dangkal** pesisir."
+              "judul": "Pembaca Khusus / Ahli (Ilmiah)",
+              "teori_singkat": "Memakai istilah bidang ilmu langsung tanpa definisi karena pembaca dianggap paham.",
+              "contoh": "Kerusakan **ekosistem mangrove** mempercepat **intrusi air laut** ke **akuifer dangkal**."
             }
           ]
         }
@@ -281,71 +312,85 @@
       "kode_subbab": "ppu-04-04",
       "judul_subbab": "Bahasa Panda (Analisis Morfologi & Sintaksis Buatan)",
       "klasifikasi_materi": "INTI",
-      "konsep_inti_markdown": "- **Inti Soal:** Bahasa Panda menguji logika kamu dalam membongkar pola urutan kalimat dan aturan imbuhan dari beberapa kalimat contoh.\n- **3 Langkah Anti-Pusing:**\n  1. **Cari Kata yang Beririsan:** Bandingkan dua kalimat contoh untuk mengunci arti kata dasar yang sama.\n  2. **Kunci Urutan Kalimat:** Cek posisi S-P-O dan urutan kata benda + kata sifat (apakah normal D-M atau terbalik M-D).\n  3. **Pisahkan Imbuhan:** Tandai potongan kata penanda waktu, jamak, atau 'tidak' sebelum merakit kalimat baru.",
       "mode_tampilan": "katalog_kaidah",
+      "label_kolom": {
+        "kolom_1": "Aturan / Pembagian Teori",
+        "kolom_2": "1 Contoh Penerapan"
+      },
+      "inti_subbab": "Bongkar bahasa buatan lewat tiga langkah: cari irisan kata dasar, kunci urutan S-P-O/D-M, lalu pisahkan imbuhan.",
       "kelompok": [
         {
-          "nama_kelompok": "1. Pemetaan Urutan Kalimat & Frasa",
+          "nama_kelompok": "Pemetaan Urutan Kalimat & Frasa",
           "butir": [
             {
-              "judul_poin": "Pola Predikat-Subjek-Objek (P-S-O)",
-              "penjelasan_singkat": "Kata kerja (predikat) ditaruh paling depan sebelum subjek dan objek.",
-              "contoh_penerapan": "*Zula* (makan) *kima* (kucing) *piro* (ikan) meletakkan predikat **zula** di awal kalimat."
+              "judul": "Pola P-S-O",
+              "teori_singkat": "Predikat (kata kerja) diletakkan paling depan sebelum subjek dan objek.",
+              "contoh": "*Zula* (makan) *kima* (kucing) *piro* (ikan) $\\rightarrow$ predikat **zula** di awal."
             },
             {
-              "judul_poin": "Pola Subjek-Objek-Predikat (S-O-P)",
-              "penjelasan_singkat": "Kata kerja utama selalu dikunci di posisi paling belakang setelah objek.",
-              "contoh_penerapan": "*Nora* (dia) *taka* (buku) *mori* (baca) mengunci predikat **mori** tepat di ujung kalimat."
+              "judul": "Pola S-O-P",
+              "teori_singkat": "Predikat (kata kerja utama) selalu dikunci di posisi paling belakang setelah objek.",
+              "contoh": "*Nora* (dia) *taka* (buku) *mori* (baca) $\\rightarrow$ predikat **mori** di ujung."
             },
             {
-              "judul_poin": "Urutan Kata Sifat Terbalik (M-D)",
-              "penjelasan_singkat": "Kata sifat ditaruh di depan kata benda, kebalikan dari bahasa Indonesia (mirip bahasa Inggris).",
-              "contoh_penerapan": "Jika *bira* (merah) dan *soka* (rumah), maka *bira soka* berarti **rumah** (D) **merah** (M)."
+              "judul": "Urutan Frasa Terbalik (M-D)",
+              "teori_singkat": "Kata sifat (M) mendahului kata benda (D), kebalikan pola bahasa Indonesia.",
+              "contoh": "*Bira* (merah) + *soka* (rumah) $\\rightarrow$ *bira soka* = **rumah** (D) **merah** (M)."
             },
             {
-              "judul_poin": "Pola Kepemilikan Terbalik",
-              "penjelasan_singkat": "Nama pemilik ditaruh sebelum benda yang dimiliki, biasanya pakai partikel penghubung khusus.",
-              "contoh_penerapan": "*Rina-no kera* berarti **tas milik Rina**, dengan partikel **-no** menempel pada pemiliknya."
+              "judul": "Kepemilikan Terbalik",
+              "teori_singkat": "Pemilik berada sebelum benda yang dimiliki, sering memakai partikel penghubung khusus.",
+              "contoh": "*Rina-no kera* $\\equiv$ **tas milik Rina** (partikel **-no** menempel pada pemilik)."
             }
           ]
         },
         {
-          "nama_kelompok": "2. Analisis Imbuhan Waktu, Jamak, & Negasi",
+          "nama_kelompok": "Analisis Imbuhan (Waktu, Jamak, Negasi, Diatesis)",
           "butir": [
             {
-              "judul_poin": "Imbuhan Penanda Waktu (Sudah / Akan)",
-              "penjelasan_singkat": "Awalan atau akhiran tertentu pada kata kerja mengubah keterangan waktu tanpa mengubah arti dasarnya.",
-              "contoh_penerapan": "Kata dasar *lum* (pergi) berubah jadi **ta-**lum (sudah pergi) dan **ka-**lum (akan pergi)."
+              "judul": "Imbuhan Waktu (Sudah / Akan)",
+              "teori_singkat": "Awalan atau akhiran pada verba mengubah keterangan waktu tanpa mengubah makna dasar.",
+              "contoh": "*lum* (pergi) $\\rightarrow$ **ta-**lum (sudah pergi), **ka-**lum (akan pergi)."
             },
             {
-              "judul_poin": "Penanda Jamak (Pengulangan Sebagian atau Akhiran)",
-              "penjelasan_singkat": "Benda berjumlah banyak sering ditandai akhiran tetap atau pengulangan suku kata awal, bukan diulang utuh.",
-              "contoh_penerapan": "*Palo* (anak) menjadi *pa-***palo** atau *palo-***xi** untuk menyatakan banyak anak."
+              "judul": "Penanda Jamak",
+              "teori_singkat": "Kata benda jamak ditandai akhiran tetap atau reduplikasi sebagian, bukan ulang utuh.",
+              "contoh": "*Palo* (anak) $\\rightarrow$ **pa-**palo atau palo**-xi** (banyak anak)."
             },
             {
-              "judul_poin": "Posisi Kata Negasi ('Tidak') pada Predikat",
-              "penjelasan_singkat": "Penanda 'tidak' selalu menempel langsung pada kata kerja atau kata sifat, bukan berdiri sendiri di awal kalimat.",
-              "contoh_penerapan": "*Sani* (dia) *goro* (roti) **ne-**vaka (tidak makan) menempelkan **ne-** langsung di depan kata kerja."
+              "judul": "Imbuhan Negasi ('Tidak')",
+              "teori_singkat": "Penanda 'tidak' menempel langsung pada predikat (verba/adjektiva), bukan berdiri bebas.",
+              "contoh": "*Sani* (dia) *goro* (roti) **ne-**vaka (tidak makan) $\\rightarrow$ **ne-** melekat di verba."
+            },
+            {
+              "judul": "Penanda Kalimat Pasif",
+              "teori_singkat": "Imbuhan pasif menggantikan imbuhan aktif sekaligus menukar posisi objek menjadi subjek.",
+              "contoh": "*Kima **me-**zula piro* (kucing makan ikan) $\\rightarrow$ *Piro **di-**zula kima* (ikan dimakan kucing)."
             }
           ]
         },
         {
-          "nama_kelompok": "3. Merakit Terjemahan & Kalimat Majemuk",
+          "nama_kelompok": "Merakit Terjemahan & Kalimat Majemuk",
           "butir": [
             {
-              "judul_poin": "Urutan Lapisan Imbuhan Ganda",
-              "penjelasan_singkat": "Jika ada dua imbuhan sekaligus, ikuti persis urutan lapisannya di contoh (misalnya: $\\text{negasi} + \\text{waktu} + \\text{kata dasar}$).",
-              "contoh_penerapan": "Frasa *tidak akan tidur* diterjemahkan **ne-ka-**dori ($\\text{ne-} + \\text{ka-} + \\text{dori}$, negasi di paling luar)."
+              "judul": "Urutan Lapisan Imbuhan Ganda",
+              "teori_singkat": "Ikuti persis urutan lapisan imbuhan di contoh (misalnya $\\text{negasi}+\\text{waktu}+\\text{dasar}$).",
+              "contoh": "*tidak akan tidur* $\\rightarrow$ **ne-ka-**dori ($\\text{ne-} + \\text{ka-} + \\text{dori}$, negasi paling luar)."
             },
             {
-              "judul_poin": "Memisahkan Kata Hubung pada Kalimat Majemuk",
-              "penjelasan_singkat": "Kata hubung (seperti 'lalu', 'sehingga', 'karena') selalu berada di antara dua klausa lengkap.",
-              "contoh_penerapan": "Pada *Kira lum **maka** Zeno dori*, kata **maka** menjadi pemisah dua kalimat yang sejajar."
+              "judul": "Kata Hubung Kalimat Majemuk",
+              "teori_singkat": "Konjungsi (*lalu*, *karena*, *sehingga*) selalu memisahkan dua klausa lengkap yang sejajar.",
+              "contoh": "*Kira lum **maka** Zeno dori* $\\rightarrow$ **maka** memisahkan dua klausa lengkap."
             },
             {
-              "judul_poin": "Melacak Subjek yang Dihilangkan (Elipsis)",
-              "penjelasan_singkat": "Pada kalimat kedua, subjek yang sama sering dibuang; cukup rujuk kembali ke subjek kalimat pertama.",
-              "contoh_penerapan": "*Dina vaka goro **zu** ta-lum* artinya Dina makan roti lalu **(Dina)** pergi; subjek kedua sengaja disembunyikan."
+              "judul": "Elipsis Subjek Klausa Kedua",
+              "teori_singkat": "Subjek sama di klausa kedua sering dilesapkan; rujuk kembali ke subjek pertama.",
+              "contoh": "*Dina vaka goro **zu** ta-lum* $\\equiv$ Dina makan roti lalu **(Dina)** pergi."
+            },
+            {
+              "judul": "Penanda Kalimat Tanya",
+              "teori_singkat": "Kalimat tanya ditandai partikel khusus (awal/akhir) atau pertukaran posisi subjek-predikat.",
+              "contoh": "*Kira lum* (Kira pergi) $\\rightarrow$ *Kira lum **ka**?* (Apakah Kira pergi?)."
             }
           ]
         }
