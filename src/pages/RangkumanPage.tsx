@@ -8,6 +8,9 @@ import {
   Zap,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
+  ChevronsUpDown,
+  ChevronsDownUp,
   ExternalLink,
   Layers,
   Search,
@@ -82,6 +85,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
   const [inChapterSearch, setInChapterSearch] = useState<string>('');
   const [activeRecallMode, setActiveRecallMode] = useState<boolean>(false);
   const [revealedItems, setRevealedItems] = useState<Record<string, boolean>>({});
+  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
 
   // Reader-matching states: Focus Mode & Font Scaling
   const [isFocusMode, setIsFocusMode] = useState<boolean>(false);
@@ -109,6 +113,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
       }
     } catch {}
   };
+
+  // Reset accordion state when navigating between chapters
+  useEffect(() => {
+    setExpandedGroups({});
+  }, [babId]);
 
   // Real-time scroll progress tracker
   useEffect(() => {
@@ -230,12 +239,12 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         components={{
           p: ({ children }) => <span className="inline">{children}</span>,
           strong: ({ children }) => (
-            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+            <strong className="font-semibold text-slate-900 dark:text-slate-100">
               {children}
             </strong>
           ),
           em: ({ children }) => (
-            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+            <em className="italic font-medium text-blue-700 dark:text-blue-300">
               {children}
             </em>
           ),
@@ -251,8 +260,8 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     );
   };
 
-  // Renderer untuk penjelasan_singkat & contoh_penerapan
-  const renderMarkdownText = (text?: string) => {
+  // Renderer untuk teori_singkat: text-slate-800 dark:text-slate-200, strong: slate-900 / slate-100, em: blue-700 / blue-300
+  const renderMarkdownTheory = (text?: string) => {
     if (!text) return null;
     return (
       <ReactMarkdown
@@ -263,17 +272,50 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
             <p className="m-0 leading-[1.65]">{children}</p>
           ),
           strong: ({ children }) => (
-            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+            <strong className="font-semibold text-slate-900 dark:text-slate-100">
               {children}
             </strong>
           ),
           em: ({ children }) => (
-            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+            <em className="italic font-medium text-blue-700 dark:text-blue-300">
               {children}
             </em>
           ),
           code: ({ children }) => (
             <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+              {children}
+            </code>
+          ),
+        }}
+      >
+        {formatMath(text)}
+      </ReactMarkdown>
+    );
+  };
+
+  // Renderer untuk contoh: leading-[1.55], strong: slate-900 / #F8FAFC
+  const renderMarkdownExample = (text?: string) => {
+    if (!text) return null;
+    return (
+      <ReactMarkdown
+        remarkPlugins={[remarkMath, remarkGfm]}
+        rehypePlugins={KATEX_REHYPE_PLUGINS}
+        components={{
+          p: ({ children }) => (
+            <p className="m-0 leading-[1.55]">{children}</p>
+          ),
+          strong: ({ children }) => (
+            <strong className="font-semibold text-slate-900 dark:text-[#F8FAFC]">
+              {children}
+            </strong>
+          ),
+          em: ({ children }) => (
+            <em className="italic font-medium text-blue-700 dark:text-blue-300">
+              {children}
+            </em>
+          ),
+          code: ({ children }) => (
+            <code className="font-mono px-1.5 py-0.5 rounded bg-emerald-100/60 dark:bg-emerald-950/60 text-xs text-emerald-800 dark:text-emerald-300">
               {children}
             </code>
           ),
@@ -293,30 +335,30 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         rehypePlugins={KATEX_REHYPE_PLUGINS}
         components={{
           p: ({ children }) => (
-            <p className="m-0 leading-[1.65]">{children}</p>
+            <p className="m-0 leading-[1.6]">{children}</p>
           ),
           ul: ({ children }) => (
-            <ul className="m-0 pl-5 list-disc list-outside space-y-2 marker:text-blue-500/80 dark:marker:text-blue-400/80">
+            <ul className="m-0 pl-5 list-disc list-outside space-y-2 marker:text-sky-500/80 dark:marker:text-sky-400/80">
               {children}
             </ul>
           ),
           ol: ({ children }) => (
-            <ol className="m-0 pl-5 list-decimal list-outside space-y-2 marker:text-blue-500/80 dark:marker:text-blue-400/80">
+            <ol className="m-0 pl-5 list-decimal list-outside space-y-2 marker:text-sky-500/80 dark:marker:text-sky-400/80">
               {children}
             </ol>
           ),
           li: ({ children }) => (
-            <li className="leading-[1.65] pl-1 break-words overflow-x-auto">
+            <li className="leading-[1.6] pl-1 break-words overflow-x-auto">
               {children}
             </li>
           ),
           strong: ({ children }) => (
-            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+            <strong className="font-semibold text-slate-900 dark:text-slate-100">
               {children}
             </strong>
           ),
           em: ({ children }) => (
-            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+            <em className="italic font-medium text-blue-700 dark:text-blue-300">
               {children}
             </em>
           ),
@@ -416,6 +458,53 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
       .filter((st) => st.daftar_bab.length > 0);
   }, [indexData, searchQuery]);
 
+  // Progressive Disclosure: Accordion logic
+  const isGroupOpen = (groupId: string, kIdx: number): boolean => {
+    // Search active within chapter -> force expand all matching groups
+    if (inChapterSearch.trim()) return true;
+    if (expandedGroups[groupId] !== undefined) {
+      return expandedGroups[groupId];
+    }
+    // Default: first group of each sub-bab is expanded, others collapsed
+    return kIdx === 0;
+  };
+
+  const toggleGroup = (groupId: string, kIdx: number) => {
+    setExpandedGroups((prev) => {
+      const current = prev[groupId] !== undefined ? prev[groupId] : (inChapterSearch.trim() ? true : kIdx === 0);
+      return {
+        ...prev,
+        [groupId]: !current,
+      };
+    });
+  };
+
+  // Check if all groups are currently expanded
+  const areAllExpanded = useMemo(() => {
+    if (inChapterSearch.trim()) return true;
+    if (!displayedSubbabs.length) return true;
+    for (const sub of displayedSubbabs) {
+      for (let kIdx = 0; kIdx < sub.kelompok.length; kIdx++) {
+        const groupId = `${sub.kode_subbab}-${kIdx}`;
+        const open = expandedGroups[groupId] !== undefined ? expandedGroups[groupId] : kIdx === 0;
+        if (!open) return false;
+      }
+    }
+    return true;
+  }, [displayedSubbabs, expandedGroups, inChapterSearch]);
+
+  const handleToggleAllGroups = () => {
+    const nextState = !areAllExpanded;
+    const newExpanded: Record<string, boolean> = {};
+    for (const sub of displayedSubbabs) {
+      for (let kIdx = 0; kIdx < sub.kelompok.length; kIdx++) {
+        const groupId = `${sub.kode_subbab}-${kIdx}`;
+        newExpanded[groupId] = nextState;
+      }
+    }
+    setExpandedGroups(newExpanded);
+  };
+
   const handleBackNavigation = () => {
     if (babData) {
       const subCode = extractSubtestCode(babData.subtes);
@@ -426,7 +515,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
   };
 
   return (
-    <div className="min-h-screen text-[#1E293B] dark:text-[#E2E8F0] bg-[#F8FAFC] dark:bg-[#070913] pb-16 transition-colors">
+    <div className="min-h-screen text-slate-800 dark:text-slate-200 bg-[#F8FAFC] dark:bg-[#0B1120] pb-16 transition-colors">
       {/* Scoped CSS Rules for Rangkuman Page reading area: typography, measure, line-height & KaTeX */}
       <style>{`
         .rangkuman-reading-area {
@@ -437,50 +526,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         .rangkuman-reading-area code {
           font-family: 'JetBrains Mono', monospace;
         }
-        .rangkuman-subbab-title {
-          font-size: calc(20px * var(--reader-font-scale, 1));
-          font-weight: 700;
-          letter-spacing: -0.025em;
-          line-height: 1.3 !important;
-        }
-        @media (min-width: 640px) {
-          .rangkuman-subbab-title {
-            font-size: calc(23px * var(--reader-font-scale, 1));
-          }
-        }
-        .rangkuman-kelompok-title {
-          font-size: calc(14.5px * var(--reader-font-scale, 1));
-          font-weight: 600;
-          letter-spacing: 0.02em;
-          line-height: 1.4 !important;
-        }
-        @media (min-width: 640px) {
-          .rangkuman-kelompok-title {
-            font-size: calc(15.5px * var(--reader-font-scale, 1));
-          }
-        }
-        .rangkuman-poin-title {
-          font-size: calc(15px * var(--reader-font-scale, 1));
-          font-weight: 600;
-          line-height: 1.45 !important;
-        }
-        @media (min-width: 640px) {
-          .rangkuman-poin-title {
-            font-size: calc(16px * var(--reader-font-scale, 1));
-          }
-        }
-        .rangkuman-body-text {
-          font-size: calc(15px * var(--reader-font-scale, 1));
-          line-height: 1.65 !important;
-        }
-        @media (min-width: 640px) {
-          .rangkuman-body-text {
-            font-size: calc(15.5px * var(--reader-font-scale, 1));
-          }
-        }
         .rangkuman-reading-area .katex {
           font-size: 1.02em !important;
           line-height: 1.3 !important;
+          max-width: 100%;
         }
         .rangkuman-reading-area p:has(.katex),
         .rangkuman-reading-area li:has(.katex),
@@ -498,16 +547,58 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           overflow-y: hidden;
           margin: 0.5rem 0;
           padding: 0.25rem 0;
+          -webkit-overflow-scrolling: touch;
+        }
+        /* Dynamic font scaling support */
+        .rangkuman-subbab-title {
+          font-size: calc(20px * var(--reader-font-scale, 1));
+        }
+        @media (min-width: 640px) {
+          .rangkuman-subbab-title {
+            font-size: calc(24px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-kelompok-title {
+          font-size: calc(14.5px * var(--reader-font-scale, 1));
+        }
+        @media (min-width: 640px) {
+          .rangkuman-kelompok-title {
+            font-size: calc(15.5px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-poin-title {
+          font-size: calc(15.5px * var(--reader-font-scale, 1));
+        }
+        @media (min-width: 640px) {
+          .rangkuman-poin-title {
+            font-size: calc(16px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-theory-text {
+          font-size: calc(15.5px * var(--reader-font-scale, 1));
+        }
+        @media (min-width: 640px) {
+          .rangkuman-theory-text {
+            font-size: calc(16px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-example-text {
+          font-size: calc(15px * var(--reader-font-scale, 1));
+        }
+        @media (min-width: 640px) {
+          .rangkuman-example-text {
+            font-size: calc(15.5px * var(--reader-font-scale, 1));
+          }
         }
       `}</style>
 
       {/* 1. TOP STATIS/STICKY BAR: Identitas Bab/Materi, Progress Real-Time, Ukuran Teks Fleksibel & Theme Switcher */}
-      <header className="sticky top-0 z-50 w-full bg-[#F8FAFC]/95 dark:bg-[#070913]/95 backdrop-blur-md border-b border-[#E2E8F0] dark:border-slate-800 transition-all shadow-2xs print-hide">
+      <header className="sticky top-0 z-50 w-full bg-[#F8FAFC]/95 dark:bg-[#0B1120]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all shadow-2xs print-hide">
         {!isDark && <NatureFocusHeaderAccent />}
 
         <div
           className={`mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all ${
-            babId ? 'max-w-[700px]' : isFocusMode ? 'max-w-5xl' : 'max-w-4xl'
+            babId ? 'max-w-4xl' : isFocusMode ? 'max-w-5xl' : 'max-w-4xl'
           }`}
         >
           {/* Identitas Bab & Tombol Kembali */}
@@ -643,13 +734,13 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         </div>
       </header>
 
-      {/* 2. MAIN CONTENT CONTAINER (Lebar Kolom Optimal max-w-[700px] saat membaca Bab) */}
+      {/* 2. MAIN CONTENT CONTAINER (Lebar Kolom Optimal max-w-4xl saat membaca Bab) */}
       <main
         className={`mx-auto px-4 sm:px-6 transition-all reader-scalable-content rangkuman-reading-area ${
           babId
             ? isFocusMode
-              ? 'max-w-[700px] py-4'
-              : 'max-w-[700px] py-6 sm:py-8'
+              ? 'max-w-4xl py-4'
+              : 'max-w-4xl py-6 sm:py-8'
             : isFocusMode
             ? 'max-w-5xl py-4'
             : 'max-w-4xl py-6 sm:py-8'
@@ -711,7 +802,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                       <Link
                         key={b.kode_bab}
                         to={`/rangkuman/${b.kode_bab}`}
-                        className="group p-4 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500/80 transition-all hover:shadow-md flex flex-col justify-between"
+                        className="group p-4 rounded-2xl bg-white dark:bg-[#0F172A] border border-slate-200/90 dark:border-slate-800/80 hover:border-blue-400 dark:hover:border-blue-500/80 transition-all hover:shadow-md flex flex-col justify-between"
                       >
                         <div>
                           <div className="flex items-center justify-between mb-2">
@@ -747,11 +838,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           </div>
         )}
 
-        {/* VIEW 2: BAB DETAIL CHEAT SHEET (Optimal Measure max-w-[700px]) */}
+        {/* VIEW 2: BAB DETAIL CHEAT SHEET (Optimal Measure max-w-4xl) */}
         {babId && (
           <div className="space-y-6">
             {isLoading || !babData ? (
-              <div className="py-24 text-center bg-white dark:bg-[#111827] rounded-3xl border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-xs max-w-2xl mx-auto my-6">
+              <div className="py-24 text-center bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs max-w-2xl mx-auto my-6">
                 <div className="inline-block w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-3"></div>
                 <p className="text-sm font-semibold text-slate-600 dark:text-slate-300">
                   Menyiapkan Lembar Rangkuman & Rumus Cepat...
@@ -759,99 +850,106 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
               </div>
             ) : (
               <>
-                {/* Bab Header Card */}
-                <div className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-2xs space-y-3.5 transition-colors">
-                  <div className="flex flex-wrap items-center gap-2">
+                {/* 2. Ringkas Hero Card: Rata Kiri, Pangkas Kebisingan, Padding Compact */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800/80 shadow-2xs space-y-3 transition-colors">
+                  {/* Baris Breadcrumb Ringkas: Katalog Bab • SUBTES • Estimasi Menit */}
+                  <div className="flex items-center flex-wrap gap-2 text-xs text-slate-500 dark:text-slate-400 justify-start">
+                    <Link
+                      to="/rangkuman"
+                      className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium shadow-2xs"
+                      title="Lihat katalog semua bab cheat sheet"
+                    >
+                      <Layers className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
+                      <span>Katalog Bab</span>
+                    </Link>
+                    <span className="text-slate-300 dark:text-slate-600 select-none">•</span>
                     <span
-                      className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold uppercase border ${getSubtestColor(
+                      className={`px-2 py-0.5 rounded-md text-[11px] font-mono font-bold uppercase border ${getSubtestColor(
                         babData.kode_bab
                       )}`}
                     >
                       {babData.subtes}
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-0.5 rounded-lg bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/20">
-                      <Zap className="w-3 h-3 fill-blue-500 text-blue-500" />
-                      <span>Cheat Sheet Padat (1 Teori = 1 Contoh)</span>
-                    </span>
-
-                    <Link
-                      to="/rangkuman"
-                      className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-500/15 hover:text-blue-600 transition-colors ml-auto shadow-2xs"
-                      title="Lihat katalog semua bab cheat sheet"
-                    >
-                      <Layers className="w-3 h-3" />
-                      <span>Katalog Bab</span>
-                    </Link>
-
-                    <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 dark:text-slate-400">
-                      <Clock className="w-3 h-3" />
-                      <span>
-                        ~{babData.estimasi_menit_review || 5} mnt review
-                      </span>
+                    <span className="text-slate-300 dark:text-slate-600 select-none">•</span>
+                    <span className="inline-flex items-center gap-1 font-mono text-[11px] text-slate-500 dark:text-slate-400">
+                      <Clock className="w-3 h-3 text-slate-400" />
+                      <span>~{babData.estimasi_menit_review || 5} mnt</span>
                     </span>
                   </div>
 
-                  <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#1E293B] dark:text-[#F8FAFC] tracking-tight leading-tight">
+                  {/* Judul Bab Bersih */}
+                  <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-100 tracking-tight leading-snug">
                     {babData.bab}
                   </h1>
 
-                  {/* Summary & Utility Row */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pt-1">
-                    <p className="text-xs sm:text-sm text-[#475569] dark:text-[#94A3B8] leading-relaxed">
-                      Mencakup{' '}
-                      <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
-                        {babData.daftar_subbab.length} sub-bab materi
-                      </strong>
-                      . Gunakan tab di bawah untuk fokus pada topik tertentu atau pelajari seluruhnya.
-                    </p>
-
-                    <div className="flex items-center gap-2 shrink-0">
-                      {/* Search In-Chapter Input */}
-                      <div className="relative">
-                        <input
-                          type="text"
-                          value={inChapterSearch}
-                          onChange={(e) => setInChapterSearch(e.target.value)}
-                          placeholder="Cari rumus..."
-                          className="w-28 sm:w-36 text-xs pl-6 pr-5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                        />
-                        <Search className="w-3 h-3 text-slate-400 absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none" />
-                        {inChapterSearch && (
-                          <button
-                            type="button"
-                            onClick={() => setInChapterSearch('')}
-                            className="absolute right-1.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white"
-                          >
-                            <X className="w-2.5 h-2.5" />
-                          </button>
-                        )}
-                      </div>
-
-                      {/* Active Recall Toggle */}
-                      <button
-                        type="button"
-                        onClick={() => setActiveRecallMode(!activeRecallMode)}
-                        className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border transition cursor-pointer ${
-                          activeRecallMode
-                            ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-2xs'
-                            : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border-slate-200 dark:border-slate-700'
-                        }`}
-                        title="Mode Uji Ingatan: Sembunyikan contoh agar bisa menebak dahulu"
-                      >
-                        {activeRecallMode ? (
-                          <EyeOff className="w-3 h-3 text-amber-500" />
-                        ) : (
-                          <Eye className="w-3 h-3 text-slate-500" />
-                        )}
-                        <span className="hidden xs:inline">
-                          {activeRecallMode ? 'Contoh Kabur' : 'Uji Ingatan'}
-                        </span>
-                      </button>
+                  {/* Baris Pencarian & Utilitas (Kolom Pencarian flex-1, Recall Blur, & Buka/Lipat Semua) */}
+                  <div className="flex items-center gap-2 pt-0.5">
+                    {/* Search In-Chapter Input (flex-1 memenuhi ruang kosong) */}
+                    <div className="relative flex-1 min-w-0">
+                      <input
+                        type="text"
+                        value={inChapterSearch}
+                        onChange={(e) => setInChapterSearch(e.target.value)}
+                        placeholder="Cari teori, pola, atau contoh..."
+                        className="w-full text-xs sm:text-sm pl-8 pr-7 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 placeholder-slate-400 border border-slate-200 dark:border-slate-700/80 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-colors"
+                      />
+                      <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                      {inChapterSearch && (
+                        <button
+                          type="button"
+                          onClick={() => setInChapterSearch('')}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white cursor-pointer"
+                          aria-label="Hapus pencarian"
+                        >
+                          <X className="w-3 h-3" />
+                        </button>
+                      )}
                     </div>
+
+                    {/* Active Recall Toggle (Uji Ingatan) */}
+                    <button
+                      type="button"
+                      onClick={() => setActiveRecallMode(!activeRecallMode)}
+                      className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-semibold border transition cursor-pointer shrink-0 ${
+                        activeRecallMode
+                          ? 'bg-amber-500/15 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-2xs'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border-slate-200 dark:border-slate-700'
+                      }`}
+                      title="Mode Uji Ingatan: Sembunyikan contoh agar bisa menebak dahulu"
+                    >
+                      {activeRecallMode ? (
+                        <EyeOff className="w-3.5 h-3.5 text-amber-500" />
+                      ) : (
+                        <Eye className="w-3.5 h-3.5 text-slate-500" />
+                      )}
+                      <span className="hidden sm:inline">
+                        {activeRecallMode ? 'Contoh Kabur' : 'Uji Ingatan'}
+                      </span>
+                    </button>
+
+                    {/* Progressive Disclosure: Buka / Lipat Semua Toggle */}
+                    <button
+                      type="button"
+                      onClick={handleToggleAllGroups}
+                      className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition cursor-pointer shrink-0"
+                      title={areAllExpanded ? 'Lipat Semua Kelompok' : 'Buka Semua Kelompok'}
+                    >
+                      {areAllExpanded ? (
+                        <>
+                          <ChevronsDownUp className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
+                          <span className="hidden sm:inline">Lipat Semua</span>
+                        </>
+                      ) : (
+                        <>
+                          <ChevronsUpDown className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
+                          <span className="hidden sm:inline">Buka Semua</span>
+                        </>
+                      )}
+                    </button>
                   </div>
 
                   {/* Sub-bab Quick Tabs / Pill Selector */}
-                  <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
+                  <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar">
                     <button
                       type="button"
                       onClick={() => setActiveSubbabIndex(-1)}
@@ -881,7 +979,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 </div>
 
                 {/* Sub-bab Content Reading Area */}
-                <div className="mt-8 space-y-12">
+                <div className="mt-6 sm:mt-8 space-y-10 sm:space-y-12">
                   {displayedSubbabs.map((sub, sIdx) => {
                     const intiText = sub.inti_subbab || sub.konsep_inti_markdown || '';
 
@@ -890,18 +988,21 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                         {/* Jarak antar sub-bab: pemisah tipis jika ada lebih dari 1 */}
                         {sIdx > 0 && (
                           <div
-                            className="my-10 h-px bg-slate-200 dark:bg-slate-800/80 w-full"
+                            className="my-8 sm:my-10 h-px bg-slate-200 dark:bg-slate-800/80 w-full"
                             role="separator"
                           />
                         )}
 
                         <article
                           id={`subbab-${sub.kode_subbab}`}
-                          className="space-y-6"
+                          className="space-y-5"
                         >
-                          {/* 1. Header Sub-bab Ringkas: kode_subbab (monospace) + klasifikasi_materi sejajar judul_subbab */}
-                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-3 border-b border-slate-200/80 dark:border-slate-800/80">
-                            <div className="space-y-1.5 min-w-0">
+                          {/* 3. Header Sub-bab Ringkas 2 Baris:
+                              Baris 1: kode_subbab + klasifikasi di kiri, Materi Lengkap ↗ di kanan
+                              Baris 2: Judul Sub-bab */}
+                          <div className="pb-3 border-b border-slate-200/80 dark:border-slate-800/80">
+                            {/* Baris 1 */}
+                            <div className="flex items-center justify-between gap-2">
                               <div className="flex items-center gap-2">
                                 <span className="font-mono text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 tracking-wider uppercase">
                                   {sub.kode_subbab}
@@ -910,113 +1011,143 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                   {sub.klasifikasi_materi || 'INTI'}
                                 </span>
                               </div>
-                              <h2 className="rangkuman-subbab-title text-[#1E293B] dark:text-[#E2E8F0] tracking-tight">
-                                {sub.judul_subbab}
-                              </h2>
+
+                              <Link
+                                to={`/materi/${sub.kode_subbab}`}
+                                className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline transition-colors shrink-0"
+                                title="Buka materi lengkap komprehensif untuk topik ini"
+                              >
+                                <span>Materi Lengkap</span>
+                                <ExternalLink className="w-3.5 h-3.5" />
+                              </Link>
                             </div>
 
-                            <Link
-                              to={`/materi/${sub.kode_subbab}`}
-                              className="self-start sm:self-center inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 bg-blue-50/80 dark:bg-blue-950/40 hover:bg-blue-100 dark:hover:bg-blue-900/50 border border-blue-200/80 dark:border-blue-800/60 transition-colors shadow-2xs shrink-0"
-                              title="Buka materi lengkap komprehensif untuk topik ini"
-                            >
-                              <span>Materi Lengkap</span>
-                              <ExternalLink className="w-3.5 h-3.5" />
-                            </Link>
+                            {/* Baris 2 */}
+                            <h2 className="rangkuman-subbab-title text-slate-900 dark:text-slate-100 font-bold tracking-tight leading-snug mt-1.5">
+                              {sub.judul_subbab}
+                            </h2>
                           </div>
 
-                          {/* 2. Blok inti_subbab (Ringkasan Pembuka Sub-bab: kutipan bersih dengan aksen garis kiri biru) */}
+                          {/* Blok inti_subbab (Callout ringkas dengan aksen kiri biru, teks terang) */}
                           {intiText && (
-                            <div className="rounded-xl border-l-[3px] border-blue-500/80 bg-blue-50/60 dark:bg-blue-500/[0.06] p-4 sm:p-5 text-[#1E293B] dark:text-[#E2E8F0] rangkuman-body-text shadow-2xs transition-colors">
-                              <div className="space-y-2 overflow-x-auto max-w-full">
+                            <div className="rounded-r-lg border-l-[3px] border-sky-500 dark:border-sky-400 bg-sky-50/70 dark:bg-sky-950/25 px-4 py-3 text-slate-800 dark:text-slate-200 shadow-2xs transition-colors">
+                              <div className="text-[15px] sm:text-base leading-[1.6] dark:tracking-[0.01em] overflow-x-auto max-w-full">
                                 {renderKonsepInti(intiText)}
                               </div>
                             </div>
                           )}
 
-                          {/* 3. Blok kelompok[] & butir[]: Format Editorial Scannable bertumpuk */}
-                          <div className="space-y-7">
-                            {sub.kelompok.map((k, kIdx) => (
-                              <div key={kIdx} className="space-y-3.5">
-                                {/* Sub-header Kelompok Bersih dengan garis bawah halus + pill jumlah butir */}
-                                <div className="flex items-center justify-between gap-3 pb-2 border-b border-slate-200/80 dark:border-slate-800/80">
-                                  <div className="flex items-center gap-2 min-w-0">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500/80 dark:bg-blue-400/80 shrink-0" />
-                                    <h3 className="rangkuman-kelompok-title text-[#1E293B] dark:text-[#E2E8F0] tracking-wide truncate">
-                                      {normalizeGroupTitle(k.nama_kelompok)}
-                                    </h3>
-                                  </div>
-                                  <span className="font-mono text-[11px] font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2 py-0.5 rounded-md shrink-0">
-                                    {k.butir.length} butir
-                                  </span>
-                                </div>
+                          {/* 4 & 5. Blok kelompok[] & butir[]: Format Editorial List + Accordion Progressive Disclosure */}
+                          <div className="space-y-6 sm:space-y-7">
+                            {sub.kelompok.map((k, kIdx) => {
+                              const groupId = `${sub.kode_subbab}-${kIdx}`;
+                              const isExpanded = isGroupOpen(groupId, kIdx);
 
-                                {/* Daftar Butir: Jarak antar butir: 16px (space-y-4) */}
-                                <div className="space-y-4">
-                                  {k.butir.map((b, bIdx) => {
-                                    const judulText = b.judul || b.judul_poin || '';
-                                    const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
-                                    const contohText = b.contoh || b.contoh_penerapan || '';
-                                    const itemId = `${sub.kode_subbab}-${kIdx}-${bIdx}`;
-                                    const isRevealed = Boolean(revealedItems[itemId]);
-                                    const isBlurred = activeRecallMode && !isRevealed;
+                              return (
+                                <div key={kIdx} className="space-y-2">
+                                  {/* Sub-header Kelompok (Accordion Clickable, Judul Anti-Terpotong, Chevron Halus) */}
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleGroup(groupId, kIdx)}
+                                    className="w-full flex items-center justify-between gap-3 pb-2 pt-1 border-b border-slate-200/80 dark:border-slate-800/80 text-left transition-colors group cursor-pointer"
+                                    aria-expanded={isExpanded}
+                                  >
+                                    <div className="flex items-center gap-2 min-w-0 flex-1">
+                                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500/80 dark:bg-blue-400/80 shrink-0 mt-0.5" />
+                                      <h3 className="rangkuman-kelompok-title text-slate-900 dark:text-slate-100 font-semibold leading-[1.35] break-words">
+                                        {normalizeGroupTitle(k.nama_kelompok)}
+                                      </h3>
+                                    </div>
+                                    <div className="flex items-center gap-2 shrink-0">
+                                      <span className="font-mono text-[11px] font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2 py-0.5 rounded-md shrink-0">
+                                        {k.butir.length} butir
+                                      </span>
+                                      <ChevronDown
+                                        className={`w-4 h-4 text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200 transition-transform duration-200 shrink-0 ${
+                                          isExpanded ? 'rotate-180' : ''
+                                        }`}
+                                      />
+                                    </div>
+                                  </button>
 
-                                    return (
-                                      <div
-                                        key={bIdx}
-                                        className="rounded-2xl p-4 sm:p-5 bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-2xs transition-colors"
-                                      >
-                                        {/* Baris 1: judul dengan nomor urut kecil monospace (01, 02, dst.) */}
-                                        <div className="flex items-baseline gap-2.5">
-                                          <span className="font-mono text-[12px] sm:text-[13px] font-semibold text-slate-400 dark:text-slate-500 shrink-0 select-none">
-                                            {String(bIdx + 1).padStart(2, '0')}
-                                          </span>
-                                          <h4 className="rangkuman-poin-title text-[#0F172A] dark:text-[#F8FAFC] flex-1 break-words">
-                                            {renderMarkdownInline(judulText)}
-                                          </h4>
-                                        </div>
+                                  {/* Isi Kelompok: Editorial List Bersih (Hilangkan "Kotak di Dalam Kotak") */}
+                                  <div className={`${isExpanded ? 'block' : 'hidden'} print-force-open`}>
+                                    <div className="divide-y divide-slate-200 dark:divide-slate-800/75">
+                                      {k.butir.map((b, bIdx) => {
+                                        const judulText = b.judul || b.judul_poin || '';
+                                        const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
+                                        const contohText = b.contoh || b.contoh_penerapan || '';
+                                        const itemId = `${sub.kode_subbab}-${kIdx}-${bIdx}`;
+                                        const isRevealed = Boolean(revealedItems[itemId]);
+                                        const isBlurred = activeRecallMode && !isRevealed;
 
-                                        {/* Baris 2: teori_singkat */}
-                                        {teoriText && (
-                                          <div className="mt-1.5 rangkuman-body-text text-[#475569] dark:text-[#94A3B8] break-words">
-                                            {renderMarkdownText(teoriText)}
-                                          </div>
-                                        )}
-
-                                        {/* Baris 3: contoh (Blok inset terpisah berlatar lembut & border-l-2 emerald + label mikro uppercase CONTOH) */}
-                                        {contohText && (
+                                        return (
                                           <div
-                                            onClick={() => {
-                                              if (activeRecallMode) {
-                                                setRevealedItems((prev) => ({
-                                                  ...prev,
-                                                  [itemId]: !prev[itemId],
-                                                }));
-                                              }
-                                            }}
-                                            className={`mt-3 rounded-lg px-3.5 py-2.5 border-l-2 border-emerald-500/70 bg-emerald-50/50 dark:bg-emerald-500/[0.05] transition-all cursor-pointer ${
-                                              isBlurred ? 'active-recall-blur' : ''
-                                            }`}
-                                            title={
-                                              isBlurred ? 'Klik atau arahkan kursor untuk melihat contoh' : ''
-                                            }
+                                            key={bIdx}
+                                            className="py-4 first:pt-2 last:pb-2"
                                           >
-                                            <div className="flex items-center gap-1.5 mb-1 select-none">
-                                              <span className="font-mono text-[11px] font-semibold tracking-wider text-emerald-600 dark:text-emerald-400/90 uppercase">
-                                                {sub.label_kolom?.kolom_2 ? sub.label_kolom.kolom_2.toUpperCase() : 'CONTOH'}
-                                              </span>
-                                            </div>
-                                            <div className="rangkuman-body-text text-[#1E293B] dark:text-[#E2E8F0] break-words">
-                                              {renderMarkdownText(contohText)}
+                                            <div
+                                              className={`grid grid-cols-1 ${
+                                                contohText ? 'md:grid-cols-2 md:gap-6' : ''
+                                              } gap-3 items-start`}
+                                            >
+                                              {/* Sisi Kiri: Judul Poin Monospace + Teori Utama */}
+                                              <div className="min-w-0">
+                                                {/* Baris Judul Poin */}
+                                                <div className="flex items-baseline">
+                                                  <span className="font-mono text-xs text-slate-400 dark:text-slate-400 mr-2 shrink-0 select-none mt-0.5">
+                                                    {String(bIdx + 1).padStart(2, '0')}
+                                                  </span>
+                                                  <h4 className="rangkuman-poin-title text-slate-900 dark:text-slate-100 font-semibold leading-[1.4] break-words">
+                                                    {renderMarkdownInline(judulText)}
+                                                  </h4>
+                                                </div>
+
+                                                {/* Baris Teori Singkat */}
+                                                {teoriText && (
+                                                  <div className="mt-1.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
+                                                    {renderMarkdownTheory(teoriText)}
+                                                  </div>
+                                                )}
+                                              </div>
+
+                                              {/* Sisi Kanan: Blok Contoh Ringkas & Bersih (Aksen Vertikal Kiri Saja) */}
+                                              {contohText && (
+                                                <div
+                                                  onClick={() => {
+                                                    if (activeRecallMode) {
+                                                      setRevealedItems((prev) => ({
+                                                        ...prev,
+                                                        [itemId]: !prev[itemId],
+                                                      }));
+                                                    }
+                                                  }}
+                                                  className={`mt-3 md:mt-0 rounded-r-md border-l-2 border-emerald-500 dark:border-emerald-400/80 bg-emerald-50/70 dark:bg-emerald-950/20 pl-3.5 pr-3 py-2.5 transition-all ${
+                                                    activeRecallMode ? 'cursor-pointer' : ''
+                                                  } ${isBlurred ? 'active-recall-blur' : ''}`}
+                                                  title={
+                                                    isBlurred ? 'Klik untuk melihat contoh' : undefined
+                                                  }
+                                                >
+                                                  <div className="text-[10.5px] font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1 select-none">
+                                                    {sub.label_kolom?.kolom_2
+                                                      ? sub.label_kolom.kolom_2.toUpperCase()
+                                                      : 'CONTOH'}
+                                                  </div>
+                                                  <div className="rangkuman-example-text text-slate-800 dark:text-slate-200 leading-[1.55] dark:tracking-[0.01em] break-words overflow-x-auto">
+                                                    {renderMarkdownExample(contohText)}
+                                                  </div>
+                                                </div>
+                                              )}
                                             </div>
                                           </div>
-                                        )}
-                                      </div>
-                                    );
-                                  })}
+                                        );
+                                      })}
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            ))}
+                              );
+                            })}
                           </div>
                         </article>
                       </React.Fragment>
@@ -1029,14 +1160,14 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                   {prevBab ? (
                     <Link
                       to={`/rangkuman/${prevBab.kode_bab}`}
-                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs max-w-[48%]"
+                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800/80 hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs max-w-[48%]"
                     >
                       <ChevronLeft className="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors shrink-0" />
                       <div className="text-left min-w-0">
                         <span className="font-mono text-[10px] text-slate-400 uppercase block">
                           Bab Sebelumnya
                         </span>
-                        <span className="text-xs font-semibold text-[#1E293B] dark:text-[#E2E8F0] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate block">
+                        <span className="text-xs font-semibold text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:hover:text-blue-400 transition-colors truncate block">
                           {prevBab.bab || prevBab.nama_bab}
                         </span>
                       </div>
@@ -1048,13 +1179,13 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                   {nextBab ? (
                     <Link
                       to={`/rangkuman/${nextBab.kode_bab}`}
-                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs ml-auto max-w-[48%]"
+                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800/80 hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs ml-auto max-w-[48%]"
                     >
                       <div className="text-right min-w-0">
                         <span className="font-mono text-[10px] text-slate-400 uppercase block">
                           Bab Berikutnya
                         </span>
-                        <span className="text-xs font-semibold text-[#1E293B] dark:text-[#E2E8F0] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate block">
+                        <span className="text-xs font-semibold text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:hover:text-blue-400 transition-colors truncate block">
                           {nextBab.bab || nextBab.nama_bab}
                         </span>
                       </div>
