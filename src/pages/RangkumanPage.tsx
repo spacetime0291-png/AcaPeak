@@ -6,14 +6,11 @@ import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
 import {
   Zap,
-  BookOpen,
   ChevronLeft,
   ChevronRight,
-  Lightbulb,
   ExternalLink,
   Layers,
   Search,
-  Sparkles,
   Clock,
   Maximize2,
   Minimize2,
@@ -171,7 +168,45 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
   };
 
-  const renderMd = (text?: string) => {
+  // Normalisasi tampilan nama kelompok bila ada awalan angka tidak konsisten (misal "1. ...")
+  const normalizeGroupTitle = (title: string): string => {
+    if (!title) return '';
+    return title.replace(/^(\d+[\.\)]\s*)+/, '').trim();
+  };
+
+  // Renderer untuk judul poin (inline element, KaTeX enabled)
+  const renderMarkdownInline = (text?: string) => {
+    if (!text) return null;
+    return (
+      <ReactMarkdown
+        remarkPlugins={[remarkMath, remarkGfm]}
+        rehypePlugins={KATEX_REHYPE_PLUGINS}
+        components={{
+          p: ({ children }) => <span className="inline">{children}</span>,
+          strong: ({ children }) => (
+            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+              {children}
+            </strong>
+          ),
+          em: ({ children }) => (
+            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+              {children}
+            </em>
+          ),
+          code: ({ children }) => (
+            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+              {children}
+            </code>
+          ),
+        }}
+      >
+        {formatMath(text)}
+      </ReactMarkdown>
+    );
+  };
+
+  // Renderer untuk penjelasan_singkat & contoh_penerapan
+  const renderMarkdownText = (text?: string) => {
     if (!text) return null;
     return (
       <ReactMarkdown
@@ -179,15 +214,68 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         rehypePlugins={KATEX_REHYPE_PLUGINS}
         components={{
           p: ({ children }) => (
-            <span className="inline leading-relaxed">{children}</span>
+            <p className="m-0 leading-[1.72]">{children}</p>
           ),
           strong: ({ children }) => (
-            <strong className="font-extrabold text-blue-700 dark:text-cyan-300">
+            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
               {children}
             </strong>
           ),
+          em: ({ children }) => (
+            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+              {children}
+            </em>
+          ),
           code: ({ children }) => (
-            <code className="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs font-mono text-pink-600 dark:text-pink-400">
+            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+              {children}
+            </code>
+          ),
+        }}
+      >
+        {formatMath(text)}
+      </ReactMarkdown>
+    );
+  };
+
+  // Renderer untuk konsep_inti_markdown dengan spacing paragraf & list 10-12px (space-y-2.5)
+  const renderKonsepInti = (text?: string) => {
+    if (!text) return null;
+    return (
+      <ReactMarkdown
+        remarkPlugins={[remarkMath, remarkGfm]}
+        rehypePlugins={KATEX_REHYPE_PLUGINS}
+        components={{
+          p: ({ children }) => (
+            <p className="m-0 leading-[1.72]">{children}</p>
+          ),
+          ul: ({ children }) => (
+            <ul className="m-0 pl-5 list-disc list-outside space-y-2.5 marker:text-blue-500/80 dark:marker:text-blue-400/80">
+              {children}
+            </ul>
+          ),
+          ol: ({ children }) => (
+            <ol className="m-0 pl-5 list-decimal list-outside space-y-2.5 marker:text-blue-500/80 dark:marker:text-blue-400/80">
+              {children}
+            </ol>
+          ),
+          li: ({ children }) => (
+            <li className="leading-[1.72] pl-1 break-words overflow-x-auto">
+              {children}
+            </li>
+          ),
+          strong: ({ children }) => (
+            <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+              {children}
+            </strong>
+          ),
+          em: ({ children }) => (
+            <em className="italic font-medium text-slate-700 dark:text-sky-300">
+              {children}
+            </em>
+          ),
+          code: ({ children }) => (
+            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
               {children}
             </code>
           ),
@@ -263,14 +351,88 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
   };
 
   return (
-    <div className="min-h-screen text-slate-800 dark:text-[#f8fafc] bg-[#F8FAFC] dark:bg-[#070913] pb-12 transition-colors">
+    <div className="min-h-screen text-[#1E293B] dark:text-[#E2E8F0] bg-[#F8FAFC] dark:bg-[#070913] pb-16 transition-colors">
+      {/* Scoped CSS Rules for Rangkuman Page reading area: typography, measure, line-height & KaTeX */}
+      <style>{`
+        .rangkuman-reading-area {
+          font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+          font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+        .rangkuman-reading-area .font-mono,
+        .rangkuman-reading-area code {
+          font-family: 'JetBrains Mono', monospace;
+        }
+        .rangkuman-subbab-title {
+          font-size: calc(22px * var(--reader-font-scale, 1));
+          font-weight: 700;
+          letter-spacing: -0.025em;
+          line-height: 1.3 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-subbab-title {
+            font-size: calc(26px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-kelompok-title {
+          font-size: calc(15px * var(--reader-font-scale, 1));
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          line-height: 1.4 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-kelompok-title {
+            font-size: calc(16px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-poin-title {
+          font-size: calc(15.5px * var(--reader-font-scale, 1));
+          font-weight: 600;
+          line-height: 1.45 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-poin-title {
+            font-size: calc(16.5px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-body-text {
+          font-size: calc(15.5px * var(--reader-font-scale, 1));
+          line-height: 1.72 !important;
+        }
+        @media (min-width: 640px) {
+          .rangkuman-body-text {
+            font-size: calc(16.5px * var(--reader-font-scale, 1));
+          }
+        }
+        .rangkuman-reading-area .katex {
+          font-size: 1.02em !important;
+          line-height: 1.3 !important;
+        }
+        .rangkuman-reading-area p:has(.katex),
+        .rangkuman-reading-area li:has(.katex),
+        .rangkuman-reading-area div:has(.katex),
+        .rangkuman-reading-area span:has(.katex),
+        .rangkuman-reading-area h4:has(.katex) {
+          line-height: inherit !important;
+        }
+        .rangkuman-reading-area strong {
+          font-weight: 600 !important;
+        }
+        .rangkuman-reading-area .katex-display {
+          max-width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          margin: 0.5rem 0;
+          padding: 0.25rem 0;
+        }
+      `}</style>
+
       {/* 1. TOP STATIS/STICKY BAR: Identitas Bab/Materi, Progress Real-Time, Ukuran Teks Fleksibel & Theme Switcher */}
-      <header className="sticky top-0 z-50 w-full bg-[#F8FAFC]/95 dark:bg-[#0c1224]/95 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 transition-all shadow-2xs">
+      <header className="sticky top-0 z-50 w-full bg-[#F8FAFC]/95 dark:bg-[#070913]/95 backdrop-blur-md border-b border-[#E2E8F0] dark:border-slate-800 transition-all shadow-2xs">
         {!isDark && <NatureFocusHeaderAccent />}
 
         <div
-          className={`mx-auto px-3 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all ${
-            isFocusMode ? 'max-w-5xl' : 'max-w-4xl'
+          className={`mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all ${
+            babId ? 'max-w-[700px]' : isFocusMode ? 'max-w-5xl' : 'max-w-4xl'
           }`}
         >
           {/* Identitas Bab & Tombol Kembali */}
@@ -291,7 +453,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 
             {babId ? (
               <>
-                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-slate-800 text-white shrink-0 uppercase">
+                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-slate-800 dark:bg-slate-700 text-white shrink-0 uppercase">
                   {babData ? babData.kode_bab.toUpperCase() : babId.toUpperCase()}
                 </span>
                 <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate inline max-w-[120px] sm:max-w-[240px]">
@@ -300,7 +462,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
               </>
             ) : (
               <>
-                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-amber-600 text-white shrink-0 uppercase">
+                <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-blue-600 text-white shrink-0 uppercase">
                   CHEAT SHEET
                 </span>
                 <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate inline max-w-[150px] sm:max-w-[280px]">
@@ -326,7 +488,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                   aria-valuenow={scrollProgress}
                 >
                   <div
-                    className="h-full bg-[#3B82F6] transition-all duration-300 ease-out rounded-full"
+                    className="h-full bg-blue-600 transition-all duration-300 ease-out rounded-full"
                     style={{ width: `${scrollProgress}%` }}
                   />
                 </div>
@@ -339,7 +501,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 type="button"
                 onClick={() => handleFontScaleChange(fontScale - 0.1)}
                 disabled={fontScale <= 0.85}
-                className="px-1 sm:px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                className="px-1 sm:px-1.5 py-1 text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
                 title="Perkecil Ukuran Teks (A-)"
                 aria-label="Perkecil Ukuran Teks"
               >
@@ -358,7 +520,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 type="button"
                 onClick={() => handleFontScaleChange(fontScale + 0.1)}
                 disabled={fontScale >= 1.4}
-                className="px-1 sm:px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                className="px-1 sm:px-1.5 py-1 text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
                 title="Perbesar Ukuran Teks (A+)"
                 aria-label="Perbesar Ukuran Teks"
               >
@@ -393,15 +555,20 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         </div>
       </header>
 
-      {/* 2. MAIN SCALABLE CONTENT CONTAINER */}
+      {/* 2. MAIN CONTENT CONTAINER (Lebar Kolom Optimal max-w-[700px] saat membaca Bab) */}
       <main
-        className={`mx-auto px-3 sm:px-6 transition-all reader-scalable-content ${
-          isFocusMode ? 'max-w-5xl py-4' : 'max-w-4xl py-6 sm:py-8'
+        className={`mx-auto px-4 sm:px-6 transition-all reader-scalable-content rangkuman-reading-area ${
+          babId
+            ? isFocusMode
+              ? 'max-w-[700px] py-4'
+              : 'max-w-[700px] py-6 sm:py-8'
+            : isFocusMode
+            ? 'max-w-5xl py-4'
+            : 'max-w-4xl py-6 sm:py-8'
         }`}
         style={
           {
             '--reader-font-scale': fontScale,
-            fontSize: `calc(1rem * ${fontScale})`,
           } as React.CSSProperties
         }
       >
@@ -409,9 +576,9 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         {!babId && (
           <div className="space-y-6">
             {/* Header Hero */}
-            <div className="text-center py-6 sm:py-10 px-4 rounded-3xl bg-gradient-to-b from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/20 shadow-xs">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30 mb-3">
-                <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+            <div className="text-center py-6 sm:py-10 px-4 rounded-3xl bg-gradient-to-b from-blue-500/10 via-blue-500/5 to-transparent border border-blue-500/20 shadow-xs">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/20 mb-3">
+                <Zap className="w-3.5 h-3.5 fill-blue-500 text-blue-500" />
                 <span>Katalog Rangkuman Padat (Pass-5)</span>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
@@ -419,8 +586,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
               </h1>
               <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mt-2 font-medium">
                 Cheat Sheet resmi UTBK-SNBT:{' '}
-                <strong>1 Teori Singkat = 1 Contoh Nyata</strong>. Didesain untuk
-                review kilat ~4 menit sebelum simulasi drilling atau ujian.
+                <strong className="font-semibold text-slate-900 dark:text-white">
+                  1 Teori Singkat = 1 Contoh Nyata
+                </strong>
+                . Didesain untuk review kilat ~4 menit sebelum simulasi drilling atau ujian.
               </p>
 
               {/* Search Bar */}
@@ -431,7 +600,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Cari bab atau materi rangkuman..."
-                  className="w-full pl-10 pr-4 py-2 text-sm rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-2xs"
+                  className="w-full pl-10 pr-4 py-2 text-sm rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs"
                 />
               </div>
             </div>
@@ -454,7 +623,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                       <Link
                         key={b.kode_bab}
                         to={`/rangkuman/${b.kode_bab}`}
-                        className="group p-4 rounded-2xl bg-white dark:bg-[#0c142c] border border-slate-200/90 dark:border-slate-800/90 hover:border-amber-400 dark:hover:border-amber-500/80 transition-all hover:shadow-md flex flex-col justify-between"
+                        className="group p-4 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500/80 transition-all hover:shadow-md flex flex-col justify-between"
                       >
                         <div>
                           <div className="flex items-center justify-between mb-2">
@@ -469,14 +638,14 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                               {b.jumlah_subbab} Sub-bab
                             </span>
                           </div>
-                          <h3 className="text-sm font-bold text-slate-800 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-2">
+                          <h3 className="text-sm font-bold text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                             {b.nama_bab}
                           </h3>
                         </div>
 
-                        <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between text-xs text-amber-600 dark:text-amber-400 font-bold">
+                        <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between text-xs text-blue-600 dark:text-blue-400 font-bold">
                           <span className="flex items-center gap-1">
-                            <Zap className="w-3 h-3 fill-amber-500" />
+                            <Zap className="w-3 h-3 fill-blue-500" />
                             Buka Cheat Sheet
                           </span>
                           <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -490,12 +659,12 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           </div>
         )}
 
-        {/* VIEW 2: BAB DETAIL CHEAT SHEET */}
+        {/* VIEW 2: BAB DETAIL CHEAT SHEET (Optimal Measure max-w-[700px]) */}
         {babId && (
           <div className="space-y-6">
             {isLoading || !babData ? (
-              <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm max-w-2xl mx-auto my-6">
-                <div className="inline-block w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mb-3"></div>
+              <div className="py-24 text-center bg-white dark:bg-[#111827] rounded-3xl border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-xs max-w-2xl mx-auto my-6">
+                <div className="inline-block w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-3"></div>
                 <p className="text-sm font-semibold text-slate-600 dark:text-slate-300">
                   Menyiapkan Lembar Rangkuman & Rumus Cepat...
                 </p>
@@ -503,23 +672,23 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
             ) : (
               <>
                 {/* Bab Header Card */}
-                <div className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#0b1228] border border-slate-200/90 dark:border-slate-800 shadow-sm space-y-3">
+                <div className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-2xs space-y-3.5 transition-colors">
                   <div className="flex flex-wrap items-center gap-2">
                     <span
-                      className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-extrabold uppercase border ${getSubtestColor(
+                      className={`px-2.5 py-0.5 rounded-lg text-xs font-mono font-bold uppercase border ${getSubtestColor(
                         babData.kode_bab
                       )}`}
                     >
                       {babData.subtes}
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-0.5 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30">
-                      <Zap className="w-3 h-3 fill-amber-500 text-amber-500" />
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-0.5 rounded-lg bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/20">
+                      <Zap className="w-3 h-3 fill-blue-500 text-blue-500" />
                       <span>Cheat Sheet Padat (1 Teori = 1 Contoh)</span>
                     </span>
 
                     <Link
                       to="/rangkuman"
-                      className="inline-flex items-center gap-1 text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-amber-500/20 hover:text-amber-600 transition-colors ml-auto shadow-2xs"
+                      className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-500/15 hover:text-blue-600 transition-colors ml-auto shadow-2xs"
                       title="Lihat katalog semua bab cheat sheet"
                     >
                       <Layers className="w-3 h-3" />
@@ -534,26 +703,27 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                     </span>
                   </div>
 
-                  <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#1E293B] dark:text-[#F8FAFC] tracking-tight leading-tight">
                     {babData.bab}
                   </h1>
 
-                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                  <p className="text-xs sm:text-sm text-[#475569] dark:text-[#94A3B8] leading-relaxed">
                     Mencakup{' '}
-                    <strong>{babData.daftar_subbab.length} sub-bab materi</strong>
-                    . Gunakan filter di bawah untuk fokus pada topik tertentu
-                    atau pelajari seluruh rangkuman sekaligus.
+                    <strong className="font-semibold text-[#0F172A] dark:text-[#F8FAFC]">
+                      {babData.daftar_subbab.length} sub-bab materi
+                    </strong>
+                    . Gunakan filter di bawah untuk fokus pada topik tertentu atau pelajari seluruh rangkuman sekaligus.
                   </p>
 
                   {/* Sub-bab Quick Tabs / Pill Selector */}
-                  <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
+                  <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
                     <button
                       type="button"
                       onClick={() => setActiveSubbabIndex(-1)}
-                      className={`px-3 py-1 rounded-xl text-xs font-bold transition-all shrink-0 cursor-pointer ${
+                      className={`px-3 py-1 rounded-xl text-xs font-semibold transition-all shrink-0 cursor-pointer ${
                         activeSubbabIndex === -1
-                          ? 'bg-amber-600 text-white shadow-xs'
-                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200'
+                          ? 'bg-blue-600 text-white shadow-xs'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                       }`}
                     >
                       Semua Sub-bab ({babData.daftar_subbab.length})
@@ -563,10 +733,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                         key={sub.kode_subbab}
                         type="button"
                         onClick={() => setActiveSubbabIndex(idx)}
-                        className={`px-3 py-1 rounded-xl text-xs font-bold transition-all shrink-0 cursor-pointer ${
+                        className={`px-3 py-1 rounded-xl text-xs font-semibold transition-all shrink-0 cursor-pointer ${
                           activeSubbabIndex === idx
-                            ? 'bg-amber-600 text-white shadow-xs'
-                            : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200'
+                            ? 'bg-blue-600 text-white shadow-xs'
+                            : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                         }`}
                       >
                         {idx + 1}. {sub.judul_subbab}
@@ -575,176 +745,152 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                   </div>
                 </div>
 
-                {/* Sub-bab Content Cards List */}
-                <div className="space-y-6">
+                {/* Sub-bab Content Reading Area */}
+                <div className="mt-8">
                   {displayedSubbabs.map((sub, sIdx) => {
-                    const col1Label =
-                      sub.label_kolom?.kolom_1 ||
-                      (sub.mode_tampilan === 'katalog_rumus_sifat'
-                        ? 'Rumus / Sifat & Syarat'
-                        : sub.mode_tampilan === 'katalog_sinyal_pola'
-                        ? 'Jenis Pola / Sinyal Teks'
-                        : 'Aturan / Pembagian Teori');
-                    const col2Label =
-                      sub.label_kolom?.kolom_2 ||
-                      (sub.mode_tampilan === 'katalog_rumus_sifat'
-                        ? '1 Contoh Hitung Cepat'
-                        : sub.mode_tampilan === 'katalog_sinyal_pola'
-                        ? '1 Contoh Kata Kunci / Kalimat'
-                        : '1 Contoh Penerapan');
-
                     const intiText =
-                      sub.inti_subbab || sub.konsep_inti_markdown || '';
+                      sub.konsep_inti_markdown || sub.inti_subbab || '';
 
                     return (
-                      <section
-                        key={sub.kode_subbab}
-                        className="rounded-3xl bg-white dark:bg-[#0c142c] border border-slate-200/90 dark:border-slate-800 shadow-sm overflow-hidden transition-all"
-                      >
-                        {/* Sub-bab Header Bar */}
-                        <div className="p-4 sm:p-5 border-b border-slate-200 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/60 flex flex-wrap items-center justify-between gap-3">
-                          <div className="flex items-center gap-2.5">
-                            <span className="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-700 dark:text-amber-400 font-mono font-black text-xs flex items-center justify-center shrink-0">
-                              {sub.kode_subbab.split('-')[2] || `${sIdx + 1}`}
-                            </span>
-                            <div>
+                      <React.Fragment key={sub.kode_subbab}>
+                        {/* Jarak antar sub-bab: 48px (my-12) disertai pemisah tipis (divider) */}
+                        {sIdx > 0 && (
+                          <div
+                            className="my-12 h-px bg-slate-200 dark:bg-slate-800/80 w-full"
+                            role="separator"
+                          />
+                        )}
+
+                        <article
+                          id={`subbab-${sub.kode_subbab}`}
+                          className="space-y-6"
+                        >
+                          {/* 1. Header Sub-bab Ringkas: kode_subbab (monospace) + klasifikasi_materi sejajar judul_subbab */}
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-3 border-b border-slate-200/80 dark:border-slate-800/80">
+                            <div className="space-y-1.5 min-w-0">
                               <div className="flex items-center gap-2">
-                                <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider">
+                                <span className="font-mono text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 tracking-wider uppercase">
                                   {sub.kode_subbab}
                                 </span>
-                                <span className="text-[10px] px-1.5 py-0.2 rounded bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold">
+                                <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
                                   {sub.klasifikasi_materi || 'INTI'}
                                 </span>
                               </div>
-                              <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-tight">
+                              <h2 className="rangkuman-subbab-title text-[#1E293B] dark:text-[#E2E8F0] tracking-tight">
                                 {sub.judul_subbab}
                               </h2>
                             </div>
+
+                            <Link
+                              to={`/materi/${sub.kode_subbab}`}
+                              className="self-start sm:self-center inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 bg-blue-50/80 dark:bg-blue-950/40 hover:bg-blue-100 dark:hover:bg-blue-900/50 border border-blue-200/80 dark:border-blue-800/60 transition-colors shadow-2xs shrink-0"
+                              title="Buka materi lengkap komprehensif untuk topik ini"
+                            >
+                              <span>Materi Lengkap</span>
+                              <ExternalLink className="w-3.5 h-3.5" />
+                            </Link>
                           </div>
 
-                          <Link
-                            to={`/materi/${sub.kode_subbab}`}
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-blue-700 dark:text-cyan-300 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/80 hover:bg-blue-100 transition-colors shadow-2xs ml-auto"
-                            title="Buka materi lengkap komprehensif untuk topik ini"
-                          >
-                            <span>Baca Materi Lengkap</span>
-                            <ExternalLink className="w-3 h-3" />
-                          </Link>
-                        </div>
-
-                        {/* Inti Sub-bab (TL;DR) Callout */}
-                        {intiText && (
-                          <div className="px-4 sm:px-6 pt-4 pb-3">
-                            <div className="p-3 sm:p-4 rounded-2xl bg-amber-50/80 dark:bg-amber-950/20 border border-amber-200/90 dark:border-amber-800/50 flex items-start gap-3">
-                              <div className="p-1.5 rounded-lg bg-amber-500/20 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5">
-                                <Lightbulb className="w-4 h-4" />
-                              </div>
-                              <div className="min-w-0 flex-1 text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
-                                <strong className="font-extrabold text-amber-800 dark:text-amber-300 mr-1">
-                                  Inti Sub-bab (TL;DR):
-                                </strong>
-                                {renderMd(intiText)}
+                          {/* 2. Blok konsep_inti_markdown (Ringkasan Pembuka Sub-bab: kutipan bersih dengan aksen garis kiri biru) */}
+                          {intiText && (
+                            <div className="rounded-xl border-l-[3px] border-blue-500/80 bg-blue-50/60 dark:bg-blue-500/[0.06] p-4 sm:p-5 text-[#1E293B] dark:text-[#E2E8F0] rangkuman-body-text shadow-2xs transition-colors">
+                              <div className="space-y-2.5 overflow-x-auto max-w-full">
+                                {renderKonsepInti(intiText)}
                               </div>
                             </div>
-                          </div>
-                        )}
+                          )}
 
-                        {/* 2-Column Table of Cheat Sheet Theories */}
-                        <div className="px-4 sm:px-6 pb-6 pt-2">
-                          <div className="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-2xs">
-                            {/* Table Column Headers */}
-                            <div className="grid grid-cols-1 md:grid-cols-12 bg-slate-100 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-700 text-xs font-extrabold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
-                              <div className="md:col-span-6 p-3 sm:px-4 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
-                                <BookOpen className="w-3.5 h-3.5 text-amber-500" />
-                                <span>{col1Label}</span>
-                              </div>
-                              <div className="md:col-span-6 p-3 sm:px-4 flex items-center gap-1.5">
-                                <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-                                <span>{col2Label}</span>
-                              </div>
-                            </div>
-
-                            {/* Groups and Rows */}
-                            <div className="divide-y divide-slate-200/80 dark:divide-slate-800">
-                              {sub.kelompok.map((k, kIdx) => (
-                                <div
-                                  key={kIdx}
-                                  className="divide-y divide-slate-100 dark:divide-slate-800/50"
-                                >
-                                  {/* Group Header Row */}
-                                  <div className="bg-slate-50/90 dark:bg-slate-800/40 px-3.5 sm:px-4 py-2 flex items-center gap-2">
-                                    <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                                    <span className="text-xs font-bold text-slate-700 dark:text-slate-200">
-                                      {k.nama_kelompok}
-                                    </span>
-                                    <span className="text-[10px] font-mono text-slate-400 ml-auto">
-                                      {k.butir.length} butir
-                                    </span>
+                          {/* 3. Blok kelompok[] & butir[]: Format Editorial Scannable bertumpuk */}
+                          {/* Jarak antar kelompok: 28px (space-y-7) */}
+                          <div className="space-y-7">
+                            {sub.kelompok.map((k, kIdx) => (
+                              <div key={kIdx} className="space-y-3.5">
+                                {/* Sub-header Kelompok Bersih dengan garis bawah halus + pill jumlah butir */}
+                                <div className="flex items-center justify-between gap-3 pb-2 border-b border-slate-200/80 dark:border-slate-800/80">
+                                  <div className="flex items-center gap-2 min-w-0">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500/80 dark:bg-blue-400/80 shrink-0" />
+                                    <h3 className="rangkuman-kelompok-title text-[#1E293B] dark:text-[#E2E8F0] tracking-wide truncate">
+                                      {normalizeGroupTitle(k.nama_kelompok)}
+                                    </h3>
                                   </div>
+                                  <span className="font-mono text-[11px] font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2 py-0.5 rounded-md shrink-0">
+                                    {k.butir.length} butir
+                                  </span>
+                                </div>
 
-                                  {/* Item Rows */}
+                                {/* Daftar Butir: Jarak antar butir: 16px (space-y-4) */}
+                                <div className="space-y-4">
                                   {k.butir.map((b, bIdx) => {
                                     const judulText =
-                                      b.judul || b.judul_poin || '';
+                                      b.judul_poin || b.judul || '';
                                     const teoriText =
-                                      b.teori_singkat ||
                                       b.penjelasan_singkat ||
+                                      b.teori_singkat ||
                                       '';
                                     const contohText =
-                                      b.contoh || b.contoh_penerapan || '';
+                                      b.contoh_penerapan || b.contoh || '';
 
                                     return (
                                       <div
                                         key={bIdx}
-                                        className="grid grid-cols-1 md:grid-cols-12 text-xs sm:text-[13px] hover:bg-slate-50/60 dark:hover:bg-slate-800/20 transition-colors"
+                                        className="rounded-2xl p-4 sm:p-5 bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] shadow-2xs transition-colors"
                                       >
-                                        {/* Left Column: Teori Singkat */}
-                                        <div className="md:col-span-6 p-3 sm:p-4 border-b md:border-b-0 md:border-r border-slate-200/80 dark:border-slate-800 space-y-1">
-                                          {judulText && (
-                                            <h4 className="font-bold text-slate-900 dark:text-white leading-tight flex items-start gap-1.5">
-                                              <span className="text-amber-600 dark:text-amber-400 shrink-0 font-mono">
-                                                ›
-                                              </span>
-                                              <span>{judulText}</span>
-                                            </h4>
-                                          )}
-                                          <div className="text-slate-600 dark:text-slate-300 pl-3 leading-relaxed">
-                                            {renderMd(teoriText)}
-                                          </div>
+                                        {/* Baris 1: judul_poin dengan nomor urut kecil monospace (01, 02, dst.) */}
+                                        <div className="flex items-baseline gap-2.5">
+                                          <span className="font-mono text-[12px] sm:text-[13px] font-semibold text-slate-400 dark:text-slate-500 shrink-0 select-none">
+                                            {String(bIdx + 1).padStart(2, '0')}
+                                          </span>
+                                          <h4 className="rangkuman-poin-title text-[#0F172A] dark:text-[#F8FAFC] flex-1 break-words">
+                                            {renderMarkdownInline(judulText)}
+                                          </h4>
                                         </div>
 
-                                        {/* Right Column: 1 Contoh Konkret */}
-                                        <div className="md:col-span-6 p-3 sm:p-4 bg-amber-500/[0.02] dark:bg-cyan-500/[0.02] flex items-center">
-                                          <div className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                                            {renderMd(contohText)}
+                                        {/* Baris 2: penjelasan_singkat (Teks teori inti yang ringkas dan lega mt-1.5) */}
+                                        {teoriText && (
+                                          <div className="mt-1.5 rangkuman-body-text text-[#475569] dark:text-[#94A3B8] break-words">
+                                            {renderMarkdownText(teoriText)}
                                           </div>
-                                        </div>
+                                        )}
+
+                                        {/* Baris 3: contoh_penerapan (Blok inset terpisah berlatar lembut & border-l-2 emerald + label mikro uppercase CONTOH) */}
+                                        {contohText && (
+                                          <div className="mt-3 rounded-lg px-3.5 py-2.5 border-l-2 border-emerald-500/70 bg-emerald-50/50 dark:bg-emerald-500/[0.05] transition-colors">
+                                            <div className="flex items-center gap-1.5 mb-1 select-none">
+                                              <span className="font-mono text-[11px] font-semibold tracking-wider text-emerald-600 dark:text-emerald-400/90 uppercase">
+                                                CONTOH
+                                              </span>
+                                            </div>
+                                            <div className="rangkuman-body-text text-[#1E293B] dark:text-[#E2E8F0] break-words">
+                                              {renderMarkdownText(contohText)}
+                                            </div>
+                                          </div>
+                                        )}
                                       </div>
                                     );
                                   })}
                                 </div>
-                              ))}
-                            </div>
+                              </div>
+                            ))}
                           </div>
-                        </div>
-                      </section>
+                        </article>
+                      </React.Fragment>
                     );
                   })}
                 </div>
 
                 {/* Bottom Prev / Next Bab Navigation */}
-                <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3">
+                <div className="mt-12 pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3">
                   {prevBab ? (
                     <Link
                       to={`/rangkuman/${prevBab.kode_bab}`}
-                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#0c142c] border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-500 transition-all shadow-xs"
+                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs max-w-[48%]"
                     >
-                      <ChevronLeft className="w-5 h-5 text-slate-400 group-hover:text-amber-500 transition-colors" />
-                      <div className="text-left">
-                        <span className="text-[10px] font-mono text-slate-400 uppercase block">
+                      <ChevronLeft className="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors shrink-0" />
+                      <div className="text-left min-w-0">
+                        <span className="font-mono text-[10px] text-slate-400 uppercase block">
                           Bab Sebelumnya
                         </span>
-                        <span className="text-xs font-bold text-slate-800 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-1">
+                        <span className="text-xs font-semibold text-[#1E293B] dark:text-[#E2E8F0] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate block">
                           {prevBab.nama_bab}
                         </span>
                       </div>
@@ -756,17 +902,17 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                   {nextBab ? (
                     <Link
                       to={`/rangkuman/${nextBab.kode_bab}`}
-                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#0c142c] border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-500 transition-all shadow-xs ml-auto"
+                      className="group flex items-center gap-2 p-3 sm:px-4 sm:py-2.5 rounded-2xl bg-white dark:bg-[#111827] border border-[#E2E8F0] dark:border-[rgba(148,163,184,0.14)] hover:border-blue-400 dark:hover:border-blue-500 transition-all shadow-2xs ml-auto max-w-[48%]"
                     >
-                      <div className="text-right">
-                        <span className="text-[10px] font-mono text-slate-400 uppercase block">
+                      <div className="text-right min-w-0">
+                        <span className="font-mono text-[10px] text-slate-400 uppercase block">
                           Bab Berikutnya
                         </span>
-                        <span className="text-xs font-bold text-slate-800 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-1">
+                        <span className="text-xs font-semibold text-[#1E293B] dark:text-[#E2E8F0] group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate block">
                           {nextBab.nama_bab}
                         </span>
                       </div>
-                      <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-amber-500 transition-colors" />
+                      <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors shrink-0" />
                     </Link>
                   ) : (
                     <div />
