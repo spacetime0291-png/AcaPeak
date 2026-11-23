@@ -559,11 +559,22 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           }
         }
         .rangkuman-kelompok-title {
-          font-size: calc(14.5px * var(--reader-font-scale, 1));
+          font-size: calc(15px * var(--reader-font-scale, 1));
         }
         @media (min-width: 640px) {
           .rangkuman-kelompok-title {
-            font-size: calc(15.5px * var(--reader-font-scale, 1));
+            font-size: calc(16px * var(--reader-font-scale, 1));
+          }
+          .sm\:pl-8\.5 {
+            padding-left: 2.125rem !important; /* 34px: w-6 (24px) + gap-2.5 (10px) */
+          }
+          .sm\:ml-8\.5 {
+            margin-left: 2.125rem !important;
+          }
+        }
+        @media (min-width: 768px) {
+          .md\:ml-0 {
+            margin-left: 0 !important;
           }
         }
         .rangkuman-poin-title {
@@ -979,178 +990,198 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 </div>
 
                 {/* Sub-bab Content Reading Area */}
-                <div className="mt-6 sm:mt-8 space-y-10 sm:space-y-12">
+                <div className="mt-6 sm:mt-8 space-y-12 sm:space-y-14">
                   {displayedSubbabs.map((sub, sIdx) => {
                     const intiText = sub.inti_subbab || sub.konsep_inti_markdown || '';
 
                     return (
-                      <React.Fragment key={sub.kode_subbab}>
-                        {/* Jarak antar sub-bab: pemisah tipis jika ada lebih dari 1 */}
-                        {sIdx > 0 && (
-                          <div
-                            className="my-8 sm:my-10 h-px bg-slate-200 dark:bg-slate-800/80 w-full"
-                            role="separator"
-                          />
-                        )}
-
-                        <article
-                          id={`subbab-${sub.kode_subbab}`}
-                          className="space-y-5"
-                        >
-                          {/* 3. Header Sub-bab Ringkas 2 Baris:
-                              Baris 1: kode_subbab + klasifikasi di kiri, Materi Lengkap ↗ di kanan
-                              Baris 2: Judul Sub-bab */}
-                          <div className="pb-3 border-b border-slate-200/80 dark:border-slate-800/80">
-                            {/* Baris 1 */}
-                            <div className="flex items-center justify-between gap-2">
-                              <div className="flex items-center gap-2">
-                                <span className="font-mono text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 tracking-wider uppercase">
-                                  {sub.kode_subbab}
-                                </span>
-                                <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
-                                  {sub.klasifikasi_materi || 'INTI'}
-                                </span>
-                              </div>
-
-                              <Link
-                                to={`/materi/${sub.kode_subbab}`}
-                                className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline transition-colors shrink-0"
-                                title="Buka materi lengkap komprehensif untuk topik ini"
-                              >
-                                <span>Materi Lengkap</span>
-                                <ExternalLink className="w-3.5 h-3.5" />
-                              </Link>
+                      <article
+                        key={sub.kode_subbab}
+                        id={`subbab-${sub.kode_subbab}`}
+                        className={
+                          sIdx > 0
+                            ? 'mt-12 sm:mt-14 pt-8 border-t-2 border-slate-200 dark:border-slate-800/90'
+                            : ''
+                        }
+                      >
+                        {/* 3. Header Sub-bab Ringkas 2 Baris + Garis aksen bawah gradien tipis:
+                            Baris 1: kode_subbab + klasifikasi di kiri, Materi Lengkap ↗ di kanan
+                            Baris 2: Judul Sub-bab */}
+                        <div className="pb-3.5 mb-5 border-b border-slate-200/80 dark:border-slate-800/80 relative">
+                          <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-blue-500/40 via-sky-400/25 to-transparent" />
+                          {/* Baris 1 */}
+                          <div className="flex items-center justify-between gap-2">
+                            <div className="flex items-center gap-2">
+                              <span className="font-mono text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 tracking-wider uppercase">
+                                {sub.kode_subbab}
+                              </span>
+                              <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                                {sub.klasifikasi_materi || 'INTI'}
+                              </span>
                             </div>
 
-                            {/* Baris 2 */}
-                            <h2 className="rangkuman-subbab-title text-slate-900 dark:text-slate-100 font-bold tracking-tight leading-snug mt-1.5">
-                              {sub.judul_subbab}
-                            </h2>
+                            <Link
+                              to={`/materi/${sub.kode_subbab}`}
+                              className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline transition-colors shrink-0"
+                              title="Buka materi lengkap komprehensif untuk topik ini"
+                            >
+                              <span>Materi Lengkap</span>
+                              <ExternalLink className="w-3.5 h-3.5" />
+                            </Link>
                           </div>
 
-                          {/* Blok inti_subbab (Callout ringkas dengan aksen kiri biru, teks terang) */}
-                          {intiText && (
-                            <div className="rounded-r-lg border-l-[3px] border-sky-500 dark:border-sky-400 bg-sky-50/70 dark:bg-sky-950/25 px-4 py-3 text-slate-800 dark:text-slate-200 shadow-2xs transition-colors">
-                              <div className="text-[15px] sm:text-base leading-[1.6] dark:tracking-[0.01em] overflow-x-auto max-w-full">
-                                {renderKonsepInti(intiText)}
-                              </div>
+                          {/* Baris 2 */}
+                          <h2 className="rangkuman-subbab-title text-slate-900 dark:text-slate-100 font-bold tracking-tight leading-snug mt-1.5">
+                            {sub.judul_subbab}
+                          </h2>
+                        </div>
+
+                        {/* Blok inti_subbab (Callout ringkas dengan aksen kiri biru, teks terang, mb-5 pemisah ke kelompok accordion) */}
+                        {intiText && (
+                          <div className="mb-5 rounded-r-lg border-l-[3px] border-sky-500 dark:border-sky-400 bg-sky-50/70 dark:bg-sky-950/25 px-4 py-3 text-slate-800 dark:text-slate-200 shadow-2xs transition-colors">
+                            <div className="text-[15px] sm:text-base leading-[1.6] dark:tracking-[0.01em] overflow-x-auto max-w-full">
+                              {renderKonsepInti(intiText)}
                             </div>
-                          )}
+                          </div>
+                        )}
 
-                          {/* 4 & 5. Blok kelompok[] & butir[]: Format Editorial List + Accordion Progressive Disclosure */}
-                          <div className="space-y-6 sm:space-y-7">
-                            {sub.kelompok.map((k, kIdx) => {
-                              const groupId = `${sub.kode_subbab}-${kIdx}`;
-                              const isExpanded = isGroupOpen(groupId, kIdx);
+                        {/* 4 & 5. Blok kelompok[]: Wadah Level 1 + Accordion Header Level 2 + Daftar Butir Level 1 */}
+                        <div className="space-y-4 sm:space-y-5">
+                          {sub.kelompok.map((k, kIdx) => {
+                            const groupId = `${sub.kode_subbab}-${kIdx}`;
+                            const isExpanded = isGroupOpen(groupId, kIdx);
+                            const hasAnyContoh = k.butir.some(
+                              (b) => Boolean(b.contoh || b.contoh_penerapan)
+                            );
 
-                              return (
-                                <div key={kIdx} className="space-y-2">
-                                  {/* Sub-header Kelompok (Accordion Clickable, Judul Anti-Terpotong, Chevron Halus) */}
-                                  <button
-                                    type="button"
-                                    onClick={() => toggleGroup(groupId, kIdx)}
-                                    className="w-full flex items-center justify-between gap-3 pb-2 pt-1 border-b border-slate-200/80 dark:border-slate-800/80 text-left transition-colors group cursor-pointer"
-                                    aria-expanded={isExpanded}
-                                  >
-                                    <div className="flex items-center gap-2 min-w-0 flex-1">
-                                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500/80 dark:bg-blue-400/80 shrink-0 mt-0.5" />
-                                      <h3 className="rangkuman-kelompok-title text-slate-900 dark:text-slate-100 font-semibold leading-[1.35] break-words">
-                                        {normalizeGroupTitle(k.nama_kelompok)}
-                                      </h3>
+                            return (
+                              <div
+                                key={kIdx}
+                                className="rounded-xl border border-slate-200 dark:border-slate-800/90 bg-white dark:bg-[#0F172A]/85 overflow-hidden shadow-xs dark:shadow-none"
+                              >
+                                {/* Kepala Judul Kelompok / Tombol Accordion (Level 2) */}
+                                <button
+                                  type="button"
+                                  onClick={() => toggleGroup(groupId, kIdx)}
+                                  className={`w-full flex items-center justify-between gap-3 text-left transition-colors group cursor-pointer px-4 py-3.5 ${
+                                    isExpanded
+                                      ? 'bg-slate-100/90 dark:bg-[#17233B] border-b border-slate-200 dark:border-slate-700/70 hover:bg-slate-200/80 dark:hover:bg-[#1c2b48]'
+                                      : 'bg-slate-100/80 hover:bg-slate-100 dark:bg-[#141E33] dark:hover:bg-[#192640]'
+                                  }`}
+                                  aria-expanded={isExpanded}
+                                >
+                                  {/* Aksen Kiri: Batang aksen vertikal mikro + Tipografi Judul */}
+                                  <div className="flex items-center gap-2.5 min-w-0 flex-1">
+                                    <span className="w-1 h-4 rounded-full bg-sky-400 shrink-0" />
+                                    <h3 className="rangkuman-kelompok-title text-[15px] sm:text-base font-bold text-slate-900 dark:text-slate-50 leading-[1.35] text-left break-words">
+                                      {normalizeGroupTitle(k.nama_kelompok)}
+                                    </h3>
+                                  </div>
+
+                                  {/* Sisi Kanan: Badge jumlah butir + Ikon Chevron dengan rotasi halus */}
+                                  <div className="flex items-center gap-2.5 shrink-0">
+                                    <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-slate-200/70 dark:bg-slate-900/70 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700/60 shrink-0">
+                                      {k.butir.length} butir
+                                    </span>
+                                    <ChevronDown
+                                      className={`w-4 h-4 text-slate-400 dark:text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200 transition-transform duration-200 shrink-0 ${
+                                        isExpanded ? 'rotate-180' : ''
+                                      }`}
+                                    />
+                                  </div>
+                                </button>
+
+                                {/* Isi Kelompok: Header Matriks Kolom Desktop + Daftar Butir dengan Garis Pemisah Tegas Tapi Halus */}
+                                <div className={`${isExpanded ? 'block' : 'hidden'} print-force-open`}>
+                                  {/* Header Kolom Matriks 2 Kolom (Desktop md+ saja, jika ada butir yang memiliki contoh) */}
+                                  {hasAnyContoh && (
+                                    <div className="hidden md:grid md:grid-cols-2 md:gap-6 px-4 py-2.5 border-b border-slate-200 dark:border-slate-700/60 bg-slate-50/60 dark:bg-[#141E33]/60 text-[11px] font-mono font-semibold tracking-wider uppercase text-slate-500 dark:text-slate-400 select-none">
+                                      <div className="pl-8.5">
+                                        {sub.label_kolom?.kolom_1 || 'POIN & TEORI'}
+                                      </div>
+                                      <div>
+                                        {sub.label_kolom?.kolom_2 || 'CONTOH'}
+                                      </div>
                                     </div>
-                                    <div className="flex items-center gap-2 shrink-0">
-                                      <span className="font-mono text-[11px] font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2 py-0.5 rounded-md shrink-0">
-                                        {k.butir.length} butir
-                                      </span>
-                                      <ChevronDown
-                                        className={`w-4 h-4 text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-200 transition-transform duration-200 shrink-0 ${
-                                          isExpanded ? 'rotate-180' : ''
-                                        }`}
-                                      />
-                                    </div>
-                                  </button>
+                                  )}
 
-                                  {/* Isi Kelompok: Editorial List Bersih (Hilangkan "Kotak di Dalam Kotak") */}
-                                  <div className={`${isExpanded ? 'block' : 'hidden'} print-force-open`}>
-                                    <div className="divide-y divide-slate-200 dark:divide-slate-800/75">
-                                      {k.butir.map((b, bIdx) => {
-                                        const judulText = b.judul || b.judul_poin || '';
-                                        const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
-                                        const contohText = b.contoh || b.contoh_penerapan || '';
-                                        const itemId = `${sub.kode_subbab}-${kIdx}-${bIdx}`;
-                                        const isRevealed = Boolean(revealedItems[itemId]);
-                                        const isBlurred = activeRecallMode && !isRevealed;
+                                  <div className="divide-y divide-slate-200 dark:divide-slate-700/55">
+                                    {k.butir.map((b, bIdx) => {
+                                      const judulText = b.judul || b.judul_poin || '';
+                                      const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
+                                      const contohText = b.contoh || b.contoh_penerapan || '';
+                                      const itemId = `${sub.kode_subbab}-${kIdx}-${bIdx}`;
+                                      const isRevealed = Boolean(revealedItems[itemId]);
+                                      const isBlurred = activeRecallMode && !isRevealed;
 
-                                        return (
+                                      return (
+                                        <div
+                                          key={bIdx}
+                                          className="px-4 py-5"
+                                        >
                                           <div
-                                            key={bIdx}
-                                            className="py-4 first:pt-2 last:pb-2"
+                                            className={`grid grid-cols-1 ${
+                                              contohText ? 'md:grid-cols-2 md:gap-6' : ''
+                                            } gap-3 items-start`}
                                           >
-                                            <div
-                                              className={`grid grid-cols-1 ${
-                                                contohText ? 'md:grid-cols-2 md:gap-6' : ''
-                                              } gap-3 items-start`}
-                                            >
-                                              {/* Sisi Kiri: Judul Poin Monospace + Teori Utama */}
-                                              <div className="min-w-0">
-                                                {/* Baris Judul Poin */}
-                                                <div className="flex items-baseline">
-                                                  <span className="font-mono text-xs text-slate-400 dark:text-slate-400 mr-2 shrink-0 select-none mt-0.5">
-                                                    {String(bIdx + 1).padStart(2, '0')}
-                                                  </span>
-                                                  <h4 className="rangkuman-poin-title text-slate-900 dark:text-slate-100 font-semibold leading-[1.4] break-words">
-                                                    {renderMarkdownInline(judulText)}
-                                                  </h4>
-                                                </div>
-
-                                                {/* Baris Teori Singkat */}
-                                                {teoriText && (
-                                                  <div className="mt-1.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
-                                                    {renderMarkdownTheory(teoriText)}
-                                                  </div>
-                                                )}
+                                            {/* Sisi Kiri: Judul Poin + Teori Utama */}
+                                            <div className="min-w-0">
+                                              {/* Baris Judul Poin: Badge Nomor Mikro + Judul Berjangkar Rapi */}
+                                              <div className="flex items-start gap-2.5">
+                                                <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-sky-50 dark:bg-sky-500/12 border border-sky-200 dark:border-sky-400/25 text-[11px] font-mono font-semibold text-sky-700 dark:text-sky-300 shrink-0 mt-0.5 select-none">
+                                                  {String(bIdx + 1).padStart(2, '0')}
+                                                </span>
+                                                <h4 className="rangkuman-poin-title text-[15.5px] font-semibold text-slate-900 dark:text-slate-100 leading-[1.4] break-words">
+                                                  {renderMarkdownInline(judulText)}
+                                                </h4>
                                               </div>
 
-                                              {/* Sisi Kanan: Blok Contoh Ringkas & Bersih (Aksen Vertikal Kiri Saja) */}
-                                              {contohText && (
-                                                <div
-                                                  onClick={() => {
-                                                    if (activeRecallMode) {
-                                                      setRevealedItems((prev) => ({
-                                                        ...prev,
-                                                        [itemId]: !prev[itemId],
-                                                      }));
-                                                    }
-                                                  }}
-                                                  className={`mt-3 md:mt-0 rounded-r-md border-l-2 border-emerald-500 dark:border-emerald-400/80 bg-emerald-50/70 dark:bg-emerald-950/20 pl-3.5 pr-3 py-2.5 transition-all ${
-                                                    activeRecallMode ? 'cursor-pointer' : ''
-                                                  } ${isBlurred ? 'active-recall-blur' : ''}`}
-                                                  title={
-                                                    isBlurred ? 'Klik untuk melihat contoh' : undefined
-                                                  }
-                                                >
-                                                  <div className="text-[10.5px] font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1 select-none">
-                                                    {sub.label_kolom?.kolom_2
-                                                      ? sub.label_kolom.kolom_2.toUpperCase()
-                                                      : 'CONTOH'}
-                                                  </div>
-                                                  <div className="rangkuman-example-text text-slate-800 dark:text-slate-200 leading-[1.55] dark:tracking-[0.01em] break-words overflow-x-auto">
-                                                    {renderMarkdownExample(contohText)}
-                                                  </div>
+                                              {/* Baris Teori Singkat: Indentasi Ringan di Desktop (sm:pl-8.5), Rata Kiri di Mobile */}
+                                              {teoriText && (
+                                                <div className="mt-2 sm:pl-8.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
+                                                  {renderMarkdownTheory(teoriText)}
                                                 </div>
                                               )}
                                             </div>
+
+                                            {/* Sisi Kanan: Blok Contoh Ringkas & Bersih */}
+                                            {contohText && (
+                                              <div
+                                                onClick={() => {
+                                                  if (activeRecallMode) {
+                                                    setRevealedItems((prev) => ({
+                                                      ...prev,
+                                                      [itemId]: !prev[itemId],
+                                                    }));
+                                                  }
+                                                }}
+                                                className={`mt-3 md:mt-0 sm:ml-8.5 md:ml-0 rounded-r-lg border-l-[3px] border-emerald-500 dark:border-emerald-400/80 bg-emerald-50/75 dark:bg-emerald-950/25 pl-3.5 pr-3 py-2.5 transition-all ${
+                                                  activeRecallMode ? 'cursor-pointer' : ''
+                                                } ${isBlurred ? 'active-recall-blur' : ''}`}
+                                                title={
+                                                  isBlurred ? 'Klik untuk melihat contoh' : undefined
+                                                }
+                                              >
+                                                {/* Label statis ringkas 1 kata: CONTOH (mobile selalu terlihat, desktop diwakili header matriks jika ada) */}
+                                                <div className={`text-[10.5px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400 mb-1 select-none ${hasAnyContoh ? 'md:hidden' : ''}`}>
+                                                  CONTOH
+                                                </div>
+                                                <div className="rangkuman-example-text text-slate-800 dark:text-slate-200 leading-[1.55] dark:tracking-[0.01em] break-words overflow-x-auto">
+                                                  {renderMarkdownExample(contohText)}
+                                                </div>
+                                              </div>
+                                            )}
                                           </div>
-                                        );
-                                      })}
-                                    </div>
+                                        </div>
+                                      );
+                                    })}
                                   </div>
                                 </div>
-                              );
-                            })}
-                          </div>
-                        </article>
-                      </React.Fragment>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </article>
                     );
                   })}
                 </div>
