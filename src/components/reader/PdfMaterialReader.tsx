@@ -75,9 +75,9 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
       <header className="sticky top-0 z-50 w-full bg-[#F8FAFC]/95 dark:bg-[#0c1224]/95 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 transition-all shadow-2xs">
         {!isDark && <NatureFocusHeaderAccent />}
 
-        <div className="max-w-[720px] mx-auto px-3 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4">
+        <div className="max-w-[720px] mx-auto px-2.5 sm:px-6 py-2.5 flex items-center justify-between gap-1.5 sm:gap-4">
           {/* Identitas Sub-bab & Tombol Kembali */}
-          <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+          <div className="flex items-center gap-1.5 sm:gap-2.5 min-w-0">
             <button
               type="button"
               onClick={onBackToSubtest}
@@ -88,22 +88,22 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
               <ChevronLeft className="w-5 h-5" />
             </button>
 
-            <span className="font-mono text-xs font-semibold tracking-wide px-2 sm:px-2.5 py-1 rounded-md bg-slate-800 text-white shrink-0 uppercase">
+            <span className="font-mono text-[11px] sm:text-xs font-semibold tracking-wide px-1.5 sm:px-2.5 py-1 rounded-md bg-slate-800 dark:bg-slate-700 text-white shrink-0 uppercase">
               {metadata.id}
             </span>
 
-            <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden xs:inline max-w-[140px] sm:max-w-[200px]">
+            <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200 truncate hidden sm:inline max-w-[180px] md:max-w-[220px]">
               {metadata.title}
             </span>
           </div>
 
           {/* Indikator Progres Real-Time & Kontrol Fleksibel */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
             {/* Tombol Pill Subtle Rangkuman Cepat Bab Ini */}
             {kodeBab && (
               <Link
                 to={`/rangkuman/${kodeBab}#${metadata.id.toLowerCase()}`}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition shrink-0 shadow-2xs hover:scale-105"
+                className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-xl text-[11px] sm:text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition shrink-0 shadow-2xs"
                 title={`Buka Rangkuman & Rumus Cepat Bab ${kodeBab.toUpperCase()}`}
               >
                 <Zap className="w-3 h-3 fill-amber-500 text-amber-500 shrink-0" />
@@ -112,12 +112,12 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
               </Link>
             )}
             {/* Progress Bar */}
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <span className="font-mono text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[32px] text-right">
+            <div className="flex items-center gap-1 sm:gap-2">
+              <span className="font-mono text-[11px] sm:text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[26px] sm:min-w-[32px] text-right">
                 {progressPercentage}%
               </span>
               <div
-                className="w-14 sm:w-24 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden"
+                className="hidden sm:block w-16 sm:w-20 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden"
                 role="progressbar"
                 aria-valuemin={0}
                 aria-valuemax={100}
@@ -136,7 +136,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                 type="button"
                 onClick={() => handleFontScaleChange(fontScale - 0.1)}
                 disabled={fontScale <= 0.85}
-                className="px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                className="px-1 sm:px-1.5 py-1 text-[11px] sm:text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
                 title="Perkecil Ukuran Teks (A-)"
                 aria-label="Perkecil Ukuran Teks"
               >
@@ -145,7 +145,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
               <button
                 type="button"
                 onClick={() => handleFontScaleChange(1.0)}
-                className="px-1 sm:px-1.5 py-1 text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                className="px-1 sm:px-1.5 py-1 text-[10px] sm:text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
                 title="Reset Ukuran Normal (100%)"
                 aria-label="Reset Ukuran Normal"
               >
@@ -155,7 +155,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
                 type="button"
                 onClick={() => handleFontScaleChange(fontScale + 0.1)}
                 disabled={fontScale >= 1.4}
-                className="px-1.5 py-1 text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
+                className="px-1 sm:px-1.5 py-1 text-[11px] sm:text-xs font-black text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 rounded-lg disabled:opacity-30 transition cursor-pointer"
                 title="Perbesar Ukuran Teks (A+)"
                 aria-label="Perbesar Ukuran Teks"
               >

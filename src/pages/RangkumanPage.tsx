@@ -959,33 +959,48 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                     </button>
                   </div>
 
-                  {/* Sub-bab Quick Tabs / Pill Selector */}
-                  <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar">
-                    <button
-                      type="button"
-                      onClick={() => setActiveSubbabIndex(-1)}
-                      className={`px-3 py-1 rounded-xl text-xs font-semibold transition-all shrink-0 cursor-pointer ${
-                        activeSubbabIndex === -1
-                          ? 'bg-blue-600 text-white shadow-xs'
-                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
-                      }`}
+                  {/* Sub-bab Quick Tabs / Pill Selector dalam Segmented Tray */}
+                  <div className="pt-2.5 border-t border-slate-100 dark:border-slate-800/80">
+                    <div
+                      role="tablist"
+                      aria-label="Filter Sub-bab Rangkuman"
+                      className="flex items-center gap-1.5 overflow-x-auto p-1 rounded-xl bg-slate-100/85 dark:bg-[#0B1120]/90 border border-slate-200/80 dark:border-slate-700/75 no-scrollbar"
                     >
-                      Semua Sub-bab ({babData.daftar_subbab.length})
-                    </button>
-                    {babData.daftar_subbab.map((sub, idx) => (
                       <button
-                        key={sub.kode_subbab}
                         type="button"
-                        onClick={() => setActiveSubbabIndex(idx)}
-                        className={`px-3 py-1 rounded-xl text-xs font-semibold transition-all shrink-0 cursor-pointer ${
-                          activeSubbabIndex === idx
-                            ? 'bg-blue-600 text-white shadow-xs'
-                            : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                        role="tab"
+                        aria-selected={activeSubbabIndex === -1}
+                        onClick={() => setActiveSubbabIndex(-1)}
+                        className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all shrink-0 cursor-pointer border ${
+                          activeSubbabIndex === -1
+                            ? 'bg-blue-600 text-white border-blue-500 shadow-xs'
+                            : 'bg-white/75 dark:bg-slate-800/70 text-slate-700 dark:text-slate-300 border-slate-200/90 dark:border-slate-700/75 hover:bg-white dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600'
                         }`}
                       >
-                        {idx + 1}. {sub.judul_subbab}
+                        Semua Sub-bab ({babData.daftar_subbab.length})
                       </button>
-                    ))}
+                      {babData.daftar_subbab.map((sub, idx) => (
+                        <React.Fragment key={sub.kode_subbab}>
+                          <span
+                            className="h-4 w-px bg-slate-300/75 dark:bg-slate-700/80 shrink-0"
+                            aria-hidden="true"
+                          />
+                          <button
+                            type="button"
+                            role="tab"
+                            aria-selected={activeSubbabIndex === idx}
+                            onClick={() => setActiveSubbabIndex(idx)}
+                            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all shrink-0 cursor-pointer border ${
+                              activeSubbabIndex === idx
+                                ? 'bg-blue-600 text-white border-blue-500 shadow-xs'
+                                : 'bg-white/75 dark:bg-slate-800/70 text-slate-700 dark:text-slate-300 border-slate-200/90 dark:border-slate-700/75 hover:bg-white dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600'
+                            }`}
+                          >
+                            {idx + 1}. {sub.judul_subbab}
+                          </button>
+                        </React.Fragment>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
@@ -998,12 +1013,18 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                       <article
                         key={sub.kode_subbab}
                         id={`subbab-${sub.kode_subbab}`}
-                        className={
-                          sIdx > 0
-                            ? 'mt-12 sm:mt-14 pt-8 border-t-2 border-slate-200 dark:border-slate-800/90'
-                            : ''
-                        }
+                        className="subbab-section"
                       >
+                        {/* Pembatas Makro Antar Sub-bab agar perpindahan topik terasa jelas & tenang */}
+                        {sIdx > 0 && (
+                          <div className="relative flex items-center justify-center mb-8 sm:mb-10 select-none">
+                            <div className="w-full border-t border-slate-200 dark:border-slate-700/75" />
+                            <div className="absolute px-3.5 py-1 rounded-full bg-[#F8FAFC] dark:bg-[#0D1528] text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700/80 shadow-2xs">
+                              {sub.kode_subbab}
+                            </div>
+                          </div>
+                        )}
+
                         {/* 3. Header Sub-bab Ringkas 2 Baris + Garis aksen bawah gradien tipis:
                             Baris 1: kode_subbab + klasifikasi di kiri, Materi Lengkap ↗ di kanan
                             Baris 2: Judul Sub-bab */}
@@ -1045,7 +1066,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                           </div>
                         )}
 
-                        {/* 4 & 5. Blok kelompok[]: Wadah Level 1 + Accordion Header Level 2 + Daftar Butir Level 1 */}
+                        {/* 4 & 5. Blok kelompok[]: Kartu Kelompok Accordion dengan Tray Terpisah per Butir */}
                         <div className="space-y-4 sm:space-y-5">
                           {sub.kelompok.map((k, kIdx) => {
                             const groupId = `${sub.kode_subbab}-${kIdx}`;
@@ -1057,22 +1078,25 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                             return (
                               <div
                                 key={kIdx}
-                                className="rounded-xl border border-slate-200 dark:border-slate-800/90 bg-white dark:bg-[#0F172A]/85 overflow-hidden shadow-xs dark:shadow-none"
+                                className={`rounded-xl border overflow-hidden transition-all ${
+                                  isExpanded
+                                    ? 'border-sky-300/80 dark:border-sky-500/35 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
+                                    : 'border-slate-200 dark:border-slate-700/80 bg-white dark:bg-[#10192D] hover:border-slate-300 dark:hover:border-slate-600 shadow-2xs dark:shadow-none'
+                                }`}
                               >
                                 {/* Kepala Judul Kelompok / Tombol Accordion (Level 2) */}
                                 <button
                                   type="button"
                                   onClick={() => toggleGroup(groupId, kIdx)}
-                                  className={`w-full flex items-center justify-between gap-3 text-left transition-colors group cursor-pointer px-4 py-3.5 ${
+                                  className={`w-full flex items-center justify-between gap-3 text-left transition-colors group cursor-pointer px-4 py-3.5 border-l-4 ${
                                     isExpanded
-                                      ? 'bg-slate-100/90 dark:bg-[#17233B] border-b border-slate-200 dark:border-slate-700/70 hover:bg-slate-200/80 dark:hover:bg-[#1c2b48]'
-                                      : 'bg-slate-100/80 hover:bg-slate-100 dark:bg-[#141E33] dark:hover:bg-[#192640]'
+                                      ? 'bg-sky-50/75 dark:bg-[#172540] border-b border-sky-200/80 dark:border-slate-700/80 border-l-sky-500 dark:border-l-sky-400 hover:bg-sky-100/60 dark:hover:bg-[#1c2b48]'
+                                      : 'bg-slate-50/75 hover:bg-slate-100/90 dark:bg-[#121C33] dark:hover:bg-[#172441] border-l-slate-300 dark:border-l-slate-700'
                                   }`}
                                   aria-expanded={isExpanded}
                                 >
-                                  {/* Aksen Kiri: Batang aksen vertikal mikro + Tipografi Judul */}
+                                  {/* Tipografi Judul Kelompok */}
                                   <div className="flex items-center gap-2.5 min-w-0 flex-1">
-                                    <span className="w-1 h-4 rounded-full bg-sky-400 shrink-0" />
                                     <h3 className="rangkuman-kelompok-title text-[15px] sm:text-base font-bold text-slate-900 dark:text-slate-50 leading-[1.35] text-left break-words">
                                       {normalizeGroupTitle(k.nama_kelompok)}
                                     </h3>
@@ -1080,7 +1104,13 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 
                                   {/* Sisi Kanan: Badge jumlah butir + Ikon Chevron dengan rotasi halus */}
                                   <div className="flex items-center gap-2.5 shrink-0">
-                                    <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-slate-200/70 dark:bg-slate-900/70 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700/60 shrink-0">
+                                    <span
+                                      className={`text-xs font-mono px-2.5 py-0.5 rounded-full shrink-0 ${
+                                        isExpanded
+                                          ? 'bg-sky-600 text-white dark:bg-sky-500 dark:text-slate-950 font-bold'
+                                          : 'bg-slate-200/75 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-300/80 dark:border-slate-700/70'
+                                      }`}
+                                    >
                                       {k.butir.length} butir
                                     </span>
                                     <ChevronDown
@@ -1091,11 +1121,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                   </div>
                                 </button>
 
-                                {/* Isi Kelompok: Header Matriks Kolom Desktop + Daftar Butir dengan Garis Pemisah Tegas Tapi Halus */}
-                                <div className={`${isExpanded ? 'block' : 'hidden'} print-force-open`}>
+                                {/* Isi Kelompok: Header Matriks Kolom Desktop + Tray Kartu Butir Terpisah */}
+                                <div className={`${isExpanded ? 'block' : 'hidden'} print-force-open bg-slate-100/75 dark:bg-[#080D19]`}>
                                   {/* Header Kolom Matriks 2 Kolom (Desktop md+ saja, jika ada butir yang memiliki contoh) */}
                                   {hasAnyContoh && (
-                                    <div className="hidden md:grid md:grid-cols-2 md:gap-6 px-4 py-2.5 border-b border-slate-200 dark:border-slate-700/60 bg-slate-50/60 dark:bg-[#141E33]/60 text-[11px] font-mono font-semibold tracking-wider uppercase text-slate-500 dark:text-slate-400 select-none">
+                                    <div className="hidden md:grid md:grid-cols-2 md:gap-6 px-7 py-2.5 border-b border-slate-200/80 dark:border-slate-700/60 bg-slate-50/90 dark:bg-[#111A2E] text-[11px] font-mono font-semibold tracking-wider uppercase text-slate-500 dark:text-slate-400 select-none">
                                       <div className="pl-8.5">
                                         {sub.label_kolom?.kolom_1 || 'POIN & TEORI'}
                                       </div>
@@ -1105,7 +1135,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                     </div>
                                   )}
 
-                                  <div className="divide-y divide-slate-200 dark:divide-slate-700/55">
+                                  <div className="p-3 sm:p-4 space-y-3.5">
                                     {k.butir.map((b, bIdx) => {
                                       const judulText = b.judul || b.judul_poin || '';
                                       const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
@@ -1117,18 +1147,18 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                       return (
                                         <div
                                           key={bIdx}
-                                          className="px-4 py-5"
+                                          className="rangkuman-card rounded-xl bg-white dark:bg-[#131D34] border border-slate-200/90 dark:border-slate-700/65 p-4 sm:p-5 shadow-2xs dark:shadow-none"
                                         >
                                           <div
                                             className={`grid grid-cols-1 ${
                                               contohText ? 'md:grid-cols-2 md:gap-6' : ''
-                                            } gap-3 items-start`}
+                                            } gap-3.5 items-start`}
                                           >
                                             {/* Sisi Kiri: Judul Poin + Teori Utama */}
                                             <div className="min-w-0">
                                               {/* Baris Judul Poin: Badge Nomor Mikro + Judul Berjangkar Rapi */}
-                                              <div className="flex items-start gap-2.5">
-                                                <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-sky-50 dark:bg-sky-500/12 border border-sky-200 dark:border-sky-400/25 text-[11px] font-mono font-semibold text-sky-700 dark:text-sky-300 shrink-0 mt-0.5 select-none">
+                                              <div className="flex items-start gap-2.5 pb-2.5 border-b border-slate-100 dark:border-slate-700/55">
+                                                <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-sky-50 dark:bg-sky-500/15 border border-sky-200 dark:border-sky-400/30 text-[11px] font-mono font-semibold text-sky-700 dark:text-sky-300 shrink-0 mt-0.5 select-none">
                                                   {String(bIdx + 1).padStart(2, '0')}
                                                 </span>
                                                 <h4 className="rangkuman-poin-title text-[15.5px] font-semibold text-slate-900 dark:text-slate-100 leading-[1.4] break-words">
@@ -1138,7 +1168,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 
                                               {/* Baris Teori Singkat: Indentasi Ringan di Desktop (sm:pl-8.5), Rata Kiri di Mobile */}
                                               {teoriText && (
-                                                <div className="mt-2 sm:pl-8.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
+                                                <div className="mt-2.5 sm:pl-8.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
                                                   {renderMarkdownTheory(teoriText)}
                                                 </div>
                                               )}
@@ -1155,7 +1185,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                                     }));
                                                   }
                                                 }}
-                                                className={`mt-3 md:mt-0 sm:ml-8.5 md:ml-0 rounded-r-lg border-l-[3px] border-emerald-500 dark:border-emerald-400/80 bg-emerald-50/75 dark:bg-emerald-950/25 pl-3.5 pr-3 py-2.5 transition-all ${
+                                                className={`rangkuman-row-contoh sm:ml-8.5 md:ml-0 rounded-lg border border-emerald-200/70 dark:border-emerald-800/40 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-400/80 bg-emerald-50/70 dark:bg-emerald-950/25 px-3.5 py-2.5 transition-all ${
                                                   activeRecallMode ? 'cursor-pointer' : ''
                                                 } ${isBlurred ? 'active-recall-blur' : ''}`}
                                                 title={

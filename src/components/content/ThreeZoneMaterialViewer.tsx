@@ -497,8 +497,13 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         )}
       </section>
 
-      {/* DIVIDER HALUS ANTARA ZONA 1 & ZONA 2 */}
-      <hr className="border-slate-200/80 dark:border-slate-800" />
+      {/* PEMBATAS HALUS ANTARA ZONA 1 & ZONA 2 */}
+      <div className="relative flex items-center justify-center my-8 select-none">
+        <div className="w-full border-t border-slate-200 dark:border-slate-700/75" />
+        <div className="absolute px-3.5 py-1 rounded-full bg-[#F8FAFC] dark:bg-[#0D1426] text-[11px] font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700/80 shadow-2xs">
+          Zona 2 • Bedah Pola Soal
+        </div>
+      </div>
 
       {/* SLOT IKLAN AMAN 1 (ANTARA ZONA 1 & ZONA 2) */}
       <AdSlot slotId="material-between-z1-z2" format="in-article" />
@@ -517,43 +522,52 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                 Eksplorasi {variasiList.length} Variasi Inti
               </h2>
             </div>
-            <span className="inline-flex items-center self-start sm:self-auto font-mono text-xs font-semibold px-3 py-1 rounded-full bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+            <span className="inline-flex items-center self-start sm:self-auto font-mono text-xs font-semibold px-3 py-1 rounded-full bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300/60 dark:border-slate-700">
               {readTabs.size}/{variasiList.length} Variasi Dibaca
             </span>
           </div>
 
-          {/* Navigasi Tab Horizontal Responsif (Scrollable di Mobile) */}
-          <div className="relative">
+          {/* Navigasi Tab Horizontal dalam Segmented Tray agar Pemisah Antar Tab Tegas & Nyaman */}
+          <div className="rounded-2xl bg-slate-100/90 dark:bg-[#0B1222] border border-slate-200/90 dark:border-slate-700/80 p-1.5 shadow-2xs">
             <div
               role="tablist"
               aria-label="Daftar Variasi Soal"
-              className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1.5 pt-0.5"
+              className="flex items-center gap-1.5 overflow-x-auto no-scrollbar"
             >
               {variasiList.map((v, idx) => {
                 const isActive = activeVariasiIndex === idx;
                 const isRead = readTabs.has(idx);
 
                 return (
-                  <button
-                    key={v.nomor_variasi || idx}
-                    type="button"
-                    role="tab"
-                    aria-selected={isActive}
-                    onClick={() => handleSelectTab(idx)}
-                    className={`shrink-0 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer flex items-center gap-2 ${
-                      isActive
-                        ? 'bg-sky-600 text-white shadow-md ring-2 ring-sky-400/50'
-                        : 'bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-950 dark:hover:text-white'
-                    }`}
-                  >
-                    {isRead && (
+                  <React.Fragment key={v.nomor_variasi || idx}>
+                    {idx > 0 && (
                       <span
-                        className="w-1.5 h-1.5 rounded-full bg-[#10B981] inline-block shrink-0"
-                        title="Sudah dibaca"
+                        className="h-5 w-px bg-slate-300/70 dark:bg-slate-700/70 shrink-0"
+                        aria-hidden="true"
                       />
                     )}
-                    <span>Variasi {v.nomor_variasi || idx + 1}</span>
-                  </button>
+                    <button
+                      type="button"
+                      role="tab"
+                      aria-selected={isActive}
+                      onClick={() => handleSelectTab(idx)}
+                      className={`shrink-0 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${
+                        isActive
+                          ? 'bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 border-sky-600 dark:border-sky-400 shadow-xs font-extrabold'
+                          : 'bg-white/80 dark:bg-slate-800/65 border-slate-200/90 dark:border-slate-700/75 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 hover:text-slate-950 dark:hover:text-white'
+                      }`}
+                    >
+                      {isRead && (
+                        <span
+                          className={`w-1.5 h-1.5 rounded-full inline-block shrink-0 ${
+                            isActive ? 'bg-white dark:bg-slate-950' : 'bg-[#10B981]'
+                          }`}
+                          title="Sudah dibaca"
+                        />
+                      )}
+                      <span>Variasi {v.nomor_variasi || idx + 1}</span>
+                    </button>
+                  </React.Fragment>
                 );
               })}
             </div>
@@ -561,12 +575,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
           {/* Kontainer Kartu Konten Tab (Hanya 1 Variasi Aktif) */}
           {activeVariasi && (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 shadow-xs overflow-hidden max-w-full">
+            <div className="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200/90 dark:border-slate-700/80 border-t-2 border-t-sky-500/80 dark:border-t-sky-400/70 shadow-xs overflow-hidden max-w-full">
               {/* Area Isi Variasi Aktif */}
-              <div key={activeVariasiIndex} role="tabpanel" className="p-5 sm:p-7 space-y-6 animate-tab-slide max-w-full overflow-hidden">
+              <div key={activeVariasiIndex} role="tabpanel" className="p-5 sm:p-7 space-y-5 animate-tab-slide max-w-full overflow-hidden">
                 {/* Header Variasi */}
-                <div className="space-y-1.5 border-b border-slate-200 dark:border-slate-800 pb-4">
-                  <div className="flex items-center gap-2">
+                <div className="space-y-2 border-b border-slate-200/90 dark:border-slate-700/70 pb-4">
+                  <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-mono text-xs font-extrabold px-2.5 py-1 rounded bg-sky-100 dark:bg-sky-900/60 text-sky-900 dark:text-sky-200 border border-sky-300/80 dark:border-sky-700/80">
                       Variasi {activeVariasi.nomor_variasi || activeVariasiIndex + 1}
                     </span>
@@ -583,14 +597,14 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
                 {/* Stimulus Mini (jika tersedia) */}
                 {activeVariasi.stimulus_mini && (
-                  <blockquote className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border-l-4 border-slate-400 dark:border-slate-600 text-[#1E293B] dark:text-slate-200 text-sm sm:text-base leading-relaxed max-w-full overflow-x-auto">
+                  <blockquote className="p-4 rounded-xl bg-slate-50 dark:bg-[#141E36] border border-slate-200/80 dark:border-slate-700/60 border-l-4 border-l-slate-400 dark:border-l-slate-500 text-[#1E293B] dark:text-slate-200 text-sm sm:text-base leading-relaxed max-w-full overflow-x-auto">
                     {renderMarkdown(activeVariasi.stimulus_mini)}
                   </blockquote>
                 )}
 
                 {/* Visual / Gambar SVG (jika ada) */}
                 {activeVariasi.visual && (
-                  <div className="max-w-full overflow-x-auto">
+                  <div className="max-w-full overflow-x-auto pt-1">
                     <VisualRenderer
                       visual={activeVariasi.visual}
                       onZoom={setZoomSvg}
@@ -600,7 +614,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
                 {/* Bedah Pola & Langkah Eksekusi */}
                 {activeVariasi.bedah_pola_markdown && (
-                  <div className="space-y-2 max-w-full">
+                  <div className="space-y-2.5 pt-4 border-t border-slate-100 dark:border-slate-800/90 max-w-full">
                     <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                       Bedah Pola & Langkah Eksekusi
                     </h4>
@@ -623,7 +637,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               </div>
 
               {/* Footer Navigasi Antar-Variasi */}
-              <div className="bg-slate-50/90 dark:bg-slate-800/40 border-t border-slate-200/80 dark:border-slate-800 px-5 sm:px-7 py-4 flex items-center justify-between gap-3">
+              <div className="bg-slate-50/90 dark:bg-[#0B1222] border-t border-slate-200/80 dark:border-slate-700/80 px-5 sm:px-7 py-4 flex items-center justify-between gap-3">
                 <button
                   type="button"
                   onClick={handlePrevTab}
@@ -665,8 +679,13 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         </section>
       )}
 
-      {/* DIVIDER HALUS ANTARA ZONA 2 & ZONA 3 */}
-      <hr className="border-slate-200/80 dark:border-slate-800" />
+      {/* PEMBATAS HALUS ANTARA ZONA 2 & ZONA 3 */}
+      <div className="relative flex items-center justify-center my-8 select-none">
+        <div className="w-full border-t border-slate-200 dark:border-slate-700/75" />
+        <div className="absolute px-3.5 py-1 rounded-full bg-[#F8FAFC] dark:bg-[#0D1426] text-[11px] font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700/80 shadow-2xs">
+          Zona 3 • Uji Pemahaman
+        </div>
+      </div>
 
       {/* SLOT IKLAN AMAN 2 (ANTARA ZONA 2 & ZONA 3) */}
       <AdSlot slotId="material-between-z2-z3" format="in-article" />
@@ -704,10 +723,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               return (
                 <div
                   key={nomor}
-                  className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 p-5 sm:p-7 shadow-xs space-y-5 max-w-full overflow-hidden"
+                  className="bg-white dark:bg-[#0F172A] rounded-2xl border border-slate-200/90 dark:border-slate-700/80 p-5 sm:p-7 shadow-xs space-y-5 max-w-full overflow-hidden"
                 >
                   {/* Header Soal */}
-                  <div className="flex items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+                  <div className="flex items-center justify-between gap-2 border-b border-slate-200/80 dark:border-slate-700/70 pb-3">
                     <div className="flex items-center gap-2">
                       <span className="font-mono text-xs font-extrabold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-700">
                         Soal {nomor}
@@ -747,7 +766,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
                   {/* Pilihan Ganda (Standard MC / Pilihan Ganda Kompleks) */}
                   {soal.opsi_jawaban && soal.opsi_jawaban.length > 0 ? (
-                    <div className="space-y-2.5 pt-1">
+                    <div className="space-y-2.5 pt-3 border-t border-slate-100 dark:border-slate-800/80">
                       {soal.opsi_jawaban.map((opsiText, optIdx) => {
                         // Match key (e.g., 'A', 'B', 'C' or index fallback)
                         const keyMatch = opsiText.match(/^([A-Ea-e])\.\s*(.*)/);
