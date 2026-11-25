@@ -130,10 +130,10 @@ const KelompokCard = memo<KelompokCardProps>(
                   {butirList.map((b, bIdx) => (
                     <div
                       key={bIdx}
-                      className="rounded-xl md:rounded-none bg-white dark:bg-[#131C32] md:dark:bg-transparent md:odd:bg-white md:even:bg-slate-50/55 md:dark:odd:bg-[#111A2E] md:dark:even:bg-[#141F36] md:hover:bg-sky-50/40 md:dark:hover:bg-[#192744] border border-slate-200/90 dark:border-slate-700/65 md:border-0 p-4 md:p-0 shadow-2xs md:shadow-none grid grid-cols-1 md:grid-cols-[38%_34%_28%] gap-3.5 md:gap-0 md:divide-x md:divide-slate-200/60 md:dark:divide-slate-700/45 transition-colors max-w-full overflow-hidden"
+                      className="rounded-xl md:rounded-none bg-white dark:bg-[#131C32] md:dark:bg-transparent md:odd:bg-white md:even:bg-slate-50/55 md:dark:odd:bg-[#111A2E] md:dark:even:bg-[#141F36] md:hover:bg-sky-50/40 md:dark:hover:bg-[#192744] border border-slate-200/90 dark:border-slate-700/65 md:border-0 p-4 md:p-0 shadow-2xs md:shadow-none grid grid-cols-1 md:grid-cols-[38%_34%_28%] gap-3.5 md:gap-0 md:divide-x md:divide-slate-200/60 md:dark:divide-slate-700/45 transition-colors max-w-full overflow-x-clip"
                     >
                       {/* Kolom 1: Judul Poin + Penjelasan Singkat + Mini-SVG */}
-                      <div className="md:py-4 md:px-4 min-w-0 max-w-full overflow-x-auto space-y-2">
+                      <div className="md:py-4 md:px-4 min-w-0 max-w-full space-y-2">
                         <div className="flex items-start gap-2.5 pb-2 md:pb-0 border-b border-slate-200/80 dark:border-slate-700/60 md:border-b-0">
                           <span className="font-mono text-xs md:text-[11px] font-extrabold md:font-bold px-2 md:px-1.5 py-0.5 rounded-md md:rounded bg-sky-600 text-white md:bg-sky-100 md:text-sky-800 dark:bg-sky-500/20 dark:text-sky-300 dark:border dark:border-sky-400/35 md:border md:border-sky-200/80 shrink-0 mt-0.5">
                             {String(bIdx + 1).padStart(2, '0')}
@@ -146,7 +146,7 @@ const KelompokCard = memo<KelompokCardProps>(
                           <div className="md:hidden text-[11px] font-mono font-bold uppercase tracking-wider text-sky-700 dark:text-sky-300">
                             {labelKolom?.kolom_1 || 'Konsep / Rumus'}
                           </div>
-                          <div className="text-slate-800 dark:text-slate-200 leading-relaxed text-sm max-w-full overflow-x-auto">
+                          <div className="text-slate-800 dark:text-slate-200 leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 text-sm max-w-full">
                             {renderMarkdown(b.penjelasan_singkat)}
                           </div>
                         </div>
@@ -158,8 +158,8 @@ const KelompokCard = memo<KelompokCardProps>(
                       </div>
 
                       {/* Kolom 2: Contoh Penerapan */}
-                      <div className="md:py-4 md:px-4 min-w-0 max-w-full overflow-x-auto">
-                        <div className="p-3 rounded-lg bg-emerald-50/70 md:bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/60 dark:border-emerald-800/35 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-400/80 text-slate-800 md:text-slate-700 dark:text-slate-200 leading-relaxed text-sm max-w-full overflow-x-auto space-y-1.5">
+                      <div className="md:py-4 md:px-4 min-w-0 max-w-full">
+                        <div className="p-3 rounded-lg bg-emerald-50/70 md:bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/60 dark:border-emerald-800/35 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-400/80 text-slate-800 md:text-slate-700 dark:text-slate-200 leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 text-sm max-w-full space-y-1.5">
                           <div className="md:hidden text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
                             {labelKolom?.kolom_2 || 'Contoh Penerapan'}
                           </div>
@@ -168,14 +168,14 @@ const KelompokCard = memo<KelompokCardProps>(
                       </div>
 
                       {/* Kolom 3: Jebakan atau Catatan */}
-                      <div className="md:py-4 md:px-4 min-w-0 max-w-full overflow-x-auto">
-                        <div className="p-3 md:p-3.5 rounded-lg md:rounded-xl bg-amber-50/85 md:bg-amber-50/90 dark:bg-amber-950/25 md:dark:bg-amber-950/30 border border-amber-300/75 md:border-amber-300/80 dark:border-amber-700/50 md:dark:border-amber-700/55 border-l-[3px] md:border-l text-amber-950 dark:text-amber-100 text-xs sm:text-sm leading-relaxed space-y-1.5 max-w-full overflow-hidden">
+                      <div className="md:py-4 md:px-4 min-w-0 max-w-full">
+                        <div className="p-3 md:p-3.5 rounded-lg md:rounded-xl bg-amber-50/85 md:bg-amber-50/90 dark:bg-amber-950/25 md:dark:bg-amber-950/30 border border-amber-300/75 md:border-amber-300/80 dark:border-amber-700/50 md:dark:border-amber-700/55 border-l-[3px] md:border-l text-amber-950 dark:text-amber-100 text-xs sm:text-sm leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 space-y-1.5 max-w-full overflow-x-clip">
                           <div className="font-bold flex items-center gap-1.5 text-amber-800 dark:text-amber-300 font-mono text-[11px] md:text-xs uppercase md:normal-case tracking-wider md:tracking-normal">
                             <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                             <span className="md:hidden">{labelKolom?.kolom_3 || 'Catatan / Jebakan UTBK'}</span>
                             <span className="hidden md:inline">Catatan UTBK</span>
                           </div>
-                          <div className="max-w-full overflow-x-auto">{renderMarkdown(b.jebakan_atau_catatan)}</div>
+                          <div className="max-w-full">{renderMarkdown(b.jebakan_atau_catatan)}</div>
                         </div>
                       </div>
                     </div>
@@ -219,7 +219,7 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = memo(
     }
 
     return (
-      <div className="bg-white dark:bg-[#0E1526] rounded-2xl border border-slate-200/90 dark:border-slate-700/80 shadow-xs overflow-hidden max-w-full transition-all">
+      <div className="bg-white dark:bg-[#0E1526] rounded-2xl border border-slate-200/90 dark:border-slate-700/80 shadow-xs overflow-x-clip max-w-full transition-all">
         <div className="p-5 sm:p-6 space-y-2 border-b border-slate-200 dark:border-slate-700/80 bg-gradient-to-r from-sky-50/70 via-white to-white dark:from-sky-950/30 dark:via-[#11192D] dark:to-[#0E1526]">
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 text-xs font-mono font-extrabold uppercase tracking-wider text-sky-900 dark:text-sky-200 bg-sky-100 dark:bg-sky-900/60 border border-sky-300/80 dark:border-sky-700/80 px-2.5 py-1 rounded-md shadow-2xs">

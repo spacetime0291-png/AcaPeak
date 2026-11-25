@@ -36,15 +36,11 @@ import {
 } from '../lib/rangkumanLoader';
 import { ThemeToggle } from '../components/common/ThemeToggle';
 import { NatureFocusHeaderAccent } from '../components/decorations/LazyDecorations';
+import { formatMarkdownMath } from '../lib/markdownUtils';
 
 // Strict KaTeX configuration: output: 'html' to guarantee 0 <math> tags
 const REMARK_PLUGINS = [remarkMath, remarkGfm];
 const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
-
-function formatMath(content?: string) {
-  if (!content) return '';
-  return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
-}
 
 const INLINE_COMPONENTS = {
   p: ({ children }: any) => <span className="inline">{children}</span>,
@@ -62,7 +58,7 @@ const INLINE_COMPONENTS = {
 };
 
 const THEORY_COMPONENTS = {
-  p: ({ children }: any) => <p className="m-0 leading-[1.65]">{children}</p>,
+  p: ({ children }: any) => <p className="mt-0 mb-3.5 last:mb-0 leading-[1.85]">{children}</p>,
   strong: ({ children }: any) => (
     <strong className="font-semibold text-slate-900 dark:text-slate-100">{children}</strong>
   ),
@@ -77,7 +73,7 @@ const THEORY_COMPONENTS = {
 };
 
 const EXAMPLE_COMPONENTS = {
-  p: ({ children }: any) => <p className="m-0 leading-[1.55]">{children}</p>,
+  p: ({ children }: any) => <p className="mt-0 mb-3.5 last:mb-0 leading-[1.85]">{children}</p>,
   strong: ({ children }: any) => (
     <strong className="font-semibold text-slate-900 dark:text-[#F8FAFC]">{children}</strong>
   ),
@@ -92,7 +88,7 @@ const EXAMPLE_COMPONENTS = {
 };
 
 const KONSEP_INTI_COMPONENTS = {
-  p: ({ children }: any) => <p className="m-0 leading-[1.6]">{children}</p>,
+  p: ({ children }: any) => <p className="mt-0 mb-3.5 last:mb-0 leading-[1.85]">{children}</p>,
   ul: ({ children }: any) => (
     <ul className="m-0 pl-5 list-disc list-outside space-y-2 marker:text-sky-500/80 dark:marker:text-sky-400/80">
       {children}
@@ -104,7 +100,7 @@ const KONSEP_INTI_COMPONENTS = {
     </ol>
   ),
   li: ({ children }: any) => (
-    <li className="leading-[1.6] pl-1 break-words overflow-x-auto">{children}</li>
+    <li className="leading-[1.85] pl-1 break-words">{children}</li>
   ),
   strong: ({ children }: any) => (
     <strong className="font-semibold text-slate-900 dark:text-slate-100">{children}</strong>
@@ -139,7 +135,7 @@ const MemoRangkumanMarkdown = memo<{
       rehypePlugins={KATEX_REHYPE_PLUGINS}
       components={components}
     >
-      {formatMath(text)}
+      {formatMarkdownMath(text)}
     </ReactMarkdown>
   );
 });
@@ -188,7 +184,7 @@ const RangkumanButirCard = memo<ButirCardProps>(
             </div>
 
             {teoriText && (
-              <div className="mt-2.5 sm:pl-8.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
+              <div className="mt-2.5 sm:pl-8.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 dark:tracking-[0.01em] break-words">
                 {renderMarkdownTheory(teoriText)}
               </div>
             )}
@@ -209,7 +205,7 @@ const RangkumanButirCard = memo<ButirCardProps>(
               >
                 CONTOH
               </div>
-              <div className="rangkuman-example-text text-slate-800 dark:text-slate-200 leading-[1.55] dark:tracking-[0.01em] break-words overflow-x-auto">
+              <div className="rangkuman-example-text text-slate-800 dark:text-slate-200 leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 dark:tracking-[0.01em] break-words">
                 {renderMarkdownExample(contohText)}
               </div>
             </div>
@@ -581,26 +577,20 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           font-family: 'JetBrains Mono', monospace;
         }
         .rangkuman-reading-area .katex {
-          font-size: 1.02em !important;
-          line-height: 1.3 !important;
-          max-width: 100%;
-        }
-        .rangkuman-reading-area p:has(.katex),
-        .rangkuman-reading-area li:has(.katex),
-        .rangkuman-reading-area div:has(.katex),
-        .rangkuman-reading-area span:has(.katex),
-        .rangkuman-reading-area h4:has(.katex) {
-          line-height: inherit !important;
+          font-size: 1.03em;
+          line-height: normal;
+          white-space: nowrap;
         }
         .rangkuman-reading-area strong {
           font-weight: 600 !important;
         }
         .rangkuman-reading-area .katex-display {
+          display: block;
           max-width: 100%;
           overflow-x: auto;
-          overflow-y: hidden;
-          margin: 0.5rem 0;
-          padding: 0.25rem 0;
+          overflow-y: visible;
+          padding: 0.5rem 0.25rem;
+          margin: 0.85rem 0;
           -webkit-overflow-scrolling: touch;
         }
         /* Dynamic font scaling support */
@@ -1118,7 +1108,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                         {/* Blok inti_subbab (Callout ringkas dengan aksen kiri biru, teks terang, mb-5 pemisah ke kelompok accordion) */}
                         {intiText && (
                           <div className="mb-5 rounded-r-lg border-l-[3px] border-sky-500 dark:border-sky-400 bg-sky-50/70 dark:bg-sky-950/25 px-4 py-3 text-slate-800 dark:text-slate-200 shadow-2xs transition-colors">
-                            <div className="text-[15px] sm:text-base leading-[1.6] dark:tracking-[0.01em] overflow-x-auto max-w-full">
+                            <div className="text-[15px] sm:text-base leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 dark:tracking-[0.01em] max-w-full">
                               {renderKonsepInti(intiText)}
                             </div>
                           </div>
@@ -1136,7 +1126,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                             return (
                               <div
                                 key={kIdx}
-                                className={`rounded-xl border overflow-hidden transition-all ${
+                                className={`rounded-xl border overflow-x-clip transition-all ${
                                   isExpanded
                                     ? 'border-sky-300/80 dark:border-sky-500/35 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
                                     : 'border-slate-200 dark:border-slate-700/80 bg-white dark:bg-[#10192D] hover:border-slate-300 dark:hover:border-slate-600 shadow-2xs dark:shadow-none'

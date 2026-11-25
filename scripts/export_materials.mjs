@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { normalizeJsonStrings } from './normalize_markdown.mjs';
 
 // Sync all materials from output_materi to public/content/utbk and content/utbk
 const subtestDirs = ['pu', 'ppu', 'pbm', 'pk', 'lbi', 'lbe', 'pm'];
@@ -16,7 +17,10 @@ if (fs.existsSync('output_materi')) {
   let count = 0;
   for (const file of sourceFiles) {
     const filePath = path.join('output_materi', file);
-    const content = fs.readFileSync(filePath, 'utf8');
+    const rawJson = fs.readFileSync(filePath, 'utf8');
+    const parsed = JSON.parse(rawJson);
+    const normalized = normalizeJsonStrings(parsed);
+    const content = JSON.stringify(normalized, null, 2);
     const prefix = file.split('-')[0].toLowerCase();
 
     if (!subtestDirs.includes(prefix)) continue;
@@ -27,7 +31,7 @@ if (fs.existsSync('output_materi')) {
     });
     count++;
   }
-  console.log(`Exported/synced ${count} material files to content/utbk/ and public/content/utbk/`);
+  console.log(`Exported/synced ${count} normalized material files to content/utbk/ and public/content/utbk/`);
 } else {
   console.log('output_materi directory not found, keeping existing content/utbk files.');
 }

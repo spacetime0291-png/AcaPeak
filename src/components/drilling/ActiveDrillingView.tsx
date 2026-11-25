@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
@@ -27,8 +27,28 @@ import {
   recordQuestionsSeen,
 } from '../../lib/drillingRotationEngine';
 import { ThemeToggle } from '../common/ThemeToggle';
+import { formatMarkdownMath } from '../../lib/markdownUtils';
 
+const REMARK_PLUGINS = [remarkMath, remarkGfm];
 const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
+const DRILLING_MARKDOWN_COMPONENTS = {
+  p: ({ children }: any) => <p className="mt-0 mb-3.5 last:mb-0 leading-[1.85] text-inherit">{children}</p>,
+  strong: ({ children }: any) => <strong className="font-bold text-inherit">{children}</strong>,
+};
+
+const MemoDrillingMarkdown = memo<{ text?: string }>(({ text }) => {
+  if (!text) return null;
+  return (
+    <ReactMarkdown
+      remarkPlugins={REMARK_PLUGINS}
+      rehypePlugins={KATEX_REHYPE_PLUGINS}
+      components={DRILLING_MARKDOWN_COMPONENTS}
+    >
+      {formatMarkdownMath(text)}
+    </ReactMarkdown>
+  );
+});
+MemoDrillingMarkdown.displayName = 'MemoDrillingMarkdown';
 
 interface ActiveDrillingViewProps {
   questions: WorkedExample[];
@@ -258,12 +278,6 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   const answeredCount = questions.filter((q) => isQuestionAnswered(q)).length;
   const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
-  // Custom markdown component styling for KaTeX & high contrast
-  const markdownComponents = {
-    p: ({ children }: any) => <p className="my-1.5 leading-relaxed text-inherit">{children}</p>,
-    strong: ({ children }: any) => <strong className="font-bold text-inherit">{children}</strong>,
-  };
-
   // -------------------------------------------------------------
   // VIEW: RESULTS SUMMARY (When isFinished === true)
   // -------------------------------------------------------------
@@ -432,26 +446,14 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                   <div className="p-4 sm:p-5 border-t border-stone-100 dark:border-slate-800 space-y-4 text-sm sm:text-base">
                     {/* Stimulus / Context */}
                     {q.context_markdown && (
-                      <div className="p-3.5 sm:p-4 bg-stone-50 dark:bg-slate-900 rounded-xl border border-stone-200/80 dark:border-slate-800 text-[15px] sm:text-base text-slate-800 dark:text-slate-200 leading-relaxed italic">
-                        <ReactMarkdown
-                          remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={KATEX_REHYPE_PLUGINS}
-                          components={markdownComponents}
-                        >
-                          {q.context_markdown}
-                        </ReactMarkdown>
+                      <div className="p-3.5 sm:p-4 bg-stone-50 dark:bg-slate-900 rounded-xl border border-stone-200/80 dark:border-slate-800 text-[15px] sm:text-base text-slate-800 dark:text-slate-200 leading-[1.85] italic">
+                        <MemoDrillingMarkdown text={q.context_markdown} />
                       </div>
                     )}
 
                     {/* Question text */}
-                    <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-relaxed">
-                      <ReactMarkdown
-                        remarkPlugins={[remarkMath, remarkGfm]}
-                        rehypePlugins={KATEX_REHYPE_PLUGINS}
-                        components={markdownComponents}
-                      >
-                        {q.question_markdown}
-                      </ReactMarkdown>
+                    <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-[1.85]">
+                      <MemoDrillingMarkdown text={q.question_markdown} />
                     </div>
 
                     {/* Answer Review for Complex Table */}
@@ -478,13 +480,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                               return (
                                 <tr key={stmt.id} className="hover:bg-stone-50/50 dark:hover:bg-slate-850/50">
                                   <td className="p-3 text-slate-800 dark:text-slate-200">
-                                    <ReactMarkdown
-                                      remarkPlugins={[remarkMath, remarkGfm]}
-                                      rehypePlugins={KATEX_REHYPE_PLUGINS}
-                                      components={markdownComponents}
-                                    >
-                                      {stmt.statement_markdown}
-                                    </ReactMarkdown>
+                                    <MemoDrillingMarkdown text={stmt.statement_markdown} />
                                   </td>
                                   <td className="p-3 text-center font-semibold">{userChoice}</td>
                                   <td className="p-3 text-center font-bold text-emerald-600 dark:text-emerald-400">{correctChoice}</td>
@@ -535,14 +531,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                               <span className="font-bold text-xs shrink-0 mt-0.5 px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800">
                                 {wasSelected ? 'Dipilih' : 'Tidak Dipilih'}
                               </span>
-                              <div className="flex-1 text-[15px] sm:text-base leading-relaxed">
-                                <ReactMarkdown
-                                  remarkPlugins={[remarkMath, remarkGfm]}
-                                  rehypePlugins={KATEX_REHYPE_PLUGINS}
-                                  components={markdownComponents}
-                                >
-                                  {item.text}
-                                </ReactMarkdown>
+                              <div className="flex-1 text-[15px] sm:text-base leading-[1.85]">
+                                <MemoDrillingMarkdown text={item.text} />
                               </div>
                               {item.is_correct && (
                                 <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 shrink-0">
@@ -590,14 +580,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                               }`}
                             >
                               <span className="font-bold text-sm w-6">{opt.key}.</span>
-                              <div className="flex-1 text-[15px] sm:text-base leading-relaxed">
-                                <ReactMarkdown
-                                  remarkPlugins={[remarkMath, remarkGfm]}
-                                  rehypePlugins={KATEX_REHYPE_PLUGINS}
-                                  components={markdownComponents}
-                                >
-                                  {opt.text_markdown}
-                                </ReactMarkdown>
+                              <div className="flex-1 text-[15px] sm:text-base leading-[1.85]">
+                                <MemoDrillingMarkdown text={opt.text_markdown} />
                               </div>
                             </div>
                           ))}
@@ -610,15 +594,13 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                         <Lightbulb className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
                         <span>Petunjuk / Hint Soal:</span>
                       </div>
-                      <div className="text-sm sm:text-[15px] leading-relaxed">
-                        <ReactMarkdown
-                          remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={KATEX_REHYPE_PLUGINS}
-                          components={markdownComponents}
-                        >
-                          {q.hint_markdown ||
-                            '💡 **Petunjuk:** Cermati kata kunci dan batas cakupan wacana, lalu eliminasi opsi yang menggunakan kata mutlak.'}
-                        </ReactMarkdown>
+                      <div className="text-sm sm:text-[15px] leading-[1.85]">
+                        <MemoDrillingMarkdown
+                          text={
+                            q.hint_markdown ||
+                            '💡 **Petunjuk:** Cermati kata kunci dan batas cakupan wacana, lalu eliminasi opsi yang menggunakan kata mutlak.'
+                          }
+                        />
                       </div>
                     </div>
 
@@ -628,13 +610,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                         <Sparkles className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
                         <span>Solusi Konseptual:</span>
                       </div>
-                      <ReactMarkdown
-                        remarkPlugins={[remarkMath, remarkGfm]}
-                        rehypePlugins={KATEX_REHYPE_PLUGINS}
-                        components={markdownComponents}
-                      >
-                        {q.conceptual_solution_markdown}
-                      </ReactMarkdown>
+                      <MemoDrillingMarkdown text={q.conceptual_solution_markdown} />
                     </div>
 
                     {/* Quick trick */}
@@ -643,13 +619,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                         <div className="font-bold text-xs uppercase tracking-wider text-amber-800 dark:text-amber-300">
                           ⚡ Trik Cepat / Eliminasi Kilat:
                         </div>
-                        <ReactMarkdown
-                          remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={KATEX_REHYPE_PLUGINS}
-                          components={markdownComponents}
-                        >
-                          {q.quick_trick_markdown}
-                        </ReactMarkdown>
+                        <MemoDrillingMarkdown text={q.quick_trick_markdown} />
                       </div>
                     )}
                   </div>
@@ -806,26 +776,14 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
         {/* Reading Context / Stimulus Text if available (Diperbesar agar jelas dibaca) */}
         {currentQuestion.context_markdown && (
-          <div className="p-4 sm:p-6 bg-stone-50/90 dark:bg-slate-900 rounded-2xl border border-stone-200/90 dark:border-slate-800 text-base sm:text-[17px] text-slate-800 dark:text-slate-200 leading-[1.8] italic">
-            <ReactMarkdown
-              remarkPlugins={[remarkMath, remarkGfm]}
-              rehypePlugins={KATEX_REHYPE_PLUGINS}
-              components={markdownComponents}
-            >
-              {currentQuestion.context_markdown}
-            </ReactMarkdown>
+          <div className="p-4 sm:p-6 bg-stone-50/90 dark:bg-slate-900 rounded-2xl border border-stone-200/90 dark:border-slate-800 text-base sm:text-[17px] text-slate-800 dark:text-slate-200 leading-[1.85] italic">
+            <MemoDrillingMarkdown text={currentQuestion.context_markdown} />
           </div>
         )}
 
         {/* Question Text (Ukuran soal di Drilling diperbesar) */}
-        <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-50 leading-relaxed tracking-tight">
-          <ReactMarkdown
-            remarkPlugins={[remarkMath, remarkGfm]}
-            rehypePlugins={KATEX_REHYPE_PLUGINS}
-            components={markdownComponents}
-          >
-            {currentQuestion.question_markdown}
-          </ReactMarkdown>
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-50 leading-[1.85] tracking-tight">
+          <MemoDrillingMarkdown text={currentQuestion.question_markdown} />
         </div>
 
         {/* Hint Toggle & Display */}
@@ -849,15 +807,13 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                 <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                 <span>Petunjuk Pengerjaan (Hint):</span>
               </div>
-              <div className="text-sm sm:text-[15px] leading-relaxed">
-                <ReactMarkdown
-                  remarkPlugins={[remarkMath, remarkGfm]}
-                  rehypePlugins={KATEX_REHYPE_PLUGINS}
-                  components={markdownComponents}
-                >
-                  {currentQuestion.hint_markdown ||
-                    '💡 **Petunjuk:** Cermati data dan kata kunci pada teks wacana, lalu eliminasi pilihan yang menggunakan kata kuantor ekstrem (*semua*, *selalu*, *pasti*) jika terdapat batasan data.'}
-                </ReactMarkdown>
+              <div className="text-sm sm:text-[15px] leading-[1.85]">
+                <MemoDrillingMarkdown
+                  text={
+                    currentQuestion.hint_markdown ||
+                    '💡 **Petunjuk:** Cermati data dan kata kunci pada teks wacana, lalu eliminasi pilihan yang menggunakan kata kuantor ekstrem (*semua*, *selalu*, *pasti*) jika terdapat batasan data.'
+                  }
+                />
               </div>
             </div>
           )}
@@ -897,14 +853,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                           key={stmt.id}
                           className="hover:bg-stone-50/60 dark:hover:bg-slate-850/50 transition-colors"
                         >
-                          <td className="p-3.5 sm:p-4 text-xs sm:text-sm md:text-base leading-relaxed text-slate-800 dark:text-slate-200">
-                            <ReactMarkdown
-                              remarkPlugins={[remarkMath, remarkGfm]}
-                              rehypePlugins={KATEX_REHYPE_PLUGINS}
-                              components={markdownComponents}
-                            >
-                              {stmt.statement_markdown}
-                            </ReactMarkdown>
+                          <td className="p-3.5 sm:p-4 text-xs sm:text-sm md:text-base leading-[1.85] text-slate-800 dark:text-slate-200">
+                            <MemoDrillingMarkdown text={stmt.statement_markdown} />
                           </td>
                           <td className="p-3.5 sm:p-4 text-center align-middle">
                             <button
@@ -994,14 +944,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       >
                         {isChecked && <Check className="w-4 h-4 stroke-[3]" />}
                       </div>
-                      <div className="flex-1 text-sm sm:text-base leading-relaxed">
-                        <ReactMarkdown
-                          remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={KATEX_REHYPE_PLUGINS}
-                          components={markdownComponents}
-                        >
-                          {item.text}
-                        </ReactMarkdown>
+                      <div className="flex-1 text-sm sm:text-base leading-[1.85]">
+                        <MemoDrillingMarkdown text={item.text} />
                       </div>
                     </button>
                   );
@@ -1073,14 +1017,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                         {option.key}
                       </div>
 
-                      <div className="flex-1 text-base sm:text-[17px] leading-relaxed">
-                        <ReactMarkdown
-                          remarkPlugins={[remarkMath, remarkGfm]}
-                          rehypePlugins={KATEX_REHYPE_PLUGINS}
-                          components={markdownComponents}
-                        >
-                          {option.text_markdown}
-                        </ReactMarkdown>
+                      <div className="flex-1 text-base sm:text-[17px] leading-[1.85]">
+                        <MemoDrillingMarkdown text={option.text_markdown} />
                       </div>
                     </button>
                   );

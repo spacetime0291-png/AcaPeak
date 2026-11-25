@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { normalizeJsonStrings } from './normalize_markdown.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -126,8 +127,11 @@ for (const file of files) {
   rawData.kode_bab = rawData.kode_bab.toLowerCase().trim();
   const cleanFileName = `${rawData.kode_bab}.json`;
 
+  // Normalize literal escaped newlines across all markdown fields
+  const normalizedData = normalizeJsonStrings(rawData);
+
   // Write normalized clean file
-  const jsonContent = JSON.stringify(rawData, null, 2);
+  const jsonContent = JSON.stringify(normalizedData, null, 2);
   fs.writeFileSync(path.join(targetContentDir, cleanFileName), jsonContent, 'utf8');
   fs.writeFileSync(path.join(targetPublicDir, cleanFileName), jsonContent, 'utf8');
 
