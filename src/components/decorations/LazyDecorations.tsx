@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
 
 const LazyCosmicStarsBg = lazy(() =>
   import('./CosmicDecorations').then((m) => ({ default: m.CosmicStarsBg }))
@@ -32,62 +32,104 @@ const LazyNatureFocusHeaderAccent = lazy(() =>
   import('./NatureDecorations').then((m) => ({ default: m.NatureFocusHeaderAccent }))
 );
 
-export const CosmicStarsBg: React.FC = () => (
-  <Suspense fallback={null}>
-    <LazyCosmicStarsBg />
-  </Suspense>
-);
+/**
+ * Defers decorative SVGs until after client hydration completes,
+ * keeping SSR HTML clean and ensuring zero hydration main-thread contention.
+ */
+function useAfterHydration(): boolean {
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+  return hydrated;
+}
 
-export const CosmicNebulaGlow: React.FC = () => (
-  <Suspense fallback={null}>
-    <LazyCosmicNebulaGlow />
-  </Suspense>
-);
+export const CosmicStarsBg: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyCosmicStarsBg />
+    </Suspense>
+  );
+};
 
-export const CosmicSubtitleSparkle: React.FC = () => (
-  <Suspense fallback={null}>
-    <LazyCosmicSubtitleSparkle />
-  </Suspense>
-);
+export const CosmicNebulaGlow: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyCosmicNebulaGlow />
+    </Suspense>
+  );
+};
 
-export const NatureHeaderBanner: React.FC = () => (
-  <Suspense fallback={null}>
-    <LazyNatureHeaderBanner />
-  </Suspense>
-);
+export const CosmicSubtitleSparkle: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyCosmicSubtitleSparkle />
+    </Suspense>
+  );
+};
 
-export const NatureRainbowArc: React.FC = () => (
-  <Suspense fallback={null}>
-    <LazyNatureRainbowArc />
-  </Suspense>
-);
+export const NatureHeaderBanner: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyNatureHeaderBanner />
+    </Suspense>
+  );
+};
 
-export const PottedPlantDecor: React.FC<{ position?: 'bottom-left' | 'bottom-right' | 'top-right' }> = (props) => (
-  <Suspense fallback={null}>
-    <LazyPottedPlantDecor {...props} />
-  </Suspense>
-);
+export const NatureRainbowArc: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyNatureRainbowArc />
+    </Suspense>
+  );
+};
 
-export const LeafCornerDecor: React.FC<{ position?: 'top-left' | 'top-right' }> = (props) => (
-  <Suspense fallback={null}>
-    <LazyLeafCornerDecor {...props} />
-  </Suspense>
-);
+export const PottedPlantDecor: React.FC<{ position?: 'bottom-left' | 'bottom-right' | 'top-right' }> = (props) => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyPottedPlantDecor {...props} />
+    </Suspense>
+  );
+};
 
-export const DottedCornerDecor: React.FC<{ position?: 'bottom-left' | 'top-right' | 'bottom-right' }> = (props) => (
-  <Suspense fallback={null}>
-    <LazyDottedCornerDecor {...props} />
-  </Suspense>
-);
+export const LeafCornerDecor: React.FC<{ position?: 'top-left' | 'top-right' }> = (props) => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyLeafCornerDecor {...props} />
+    </Suspense>
+  );
+};
 
-export const NatureDecorationsBg: React.FC = () => (
-  <Suspense fallback={null}>
-    <LazyNatureDecorationsBg />
-  </Suspense>
-);
+export const DottedCornerDecor: React.FC<{ position?: 'bottom-left' | 'top-right' | 'bottom-right' }> = (props) => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyDottedCornerDecor {...props} />
+    </Suspense>
+  );
+};
 
-export const NatureFocusHeaderAccent: React.FC = () => (
-  <Suspense fallback={null}>
-    <LazyNatureFocusHeaderAccent />
-  </Suspense>
-);
+export const NatureDecorationsBg: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyNatureDecorationsBg />
+    </Suspense>
+  );
+};
+
+export const NatureFocusHeaderAccent: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyNatureFocusHeaderAccent />
+    </Suspense>
+  );
+};

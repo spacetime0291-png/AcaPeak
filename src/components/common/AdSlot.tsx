@@ -132,6 +132,11 @@ export const AdSlot: React.FC<AdSlotProps> = ({
 
   const hasLiveClient = isConfiguredClient(ADSENSE_CLIENT_ID);
 
+  // Do not render empty dummy ad placeholders before AdSense Publisher ID is configured
+  if (!hasLiveClient) {
+    return null;
+  }
+
   return (
     <aside
       aria-label="Iklan"
@@ -146,7 +151,7 @@ export const AdSlot: React.FC<AdSlotProps> = ({
           Iklan • Advertisement
         </span>
 
-        {hasLiveClient && isAdInitialized ? (
+        {isAdInitialized && (
           <ins
             className="adsbygoogle block w-full text-center"
             style={{ display: 'block', minHeight: format === 'horizontal' ? '90px' : '220px' }}
@@ -156,10 +161,6 @@ export const AdSlot: React.FC<AdSlotProps> = ({
             data-ad-layout={format === 'in-article' ? 'in-article' : undefined}
             data-full-width-responsive="true"
           />
-        ) : (
-          <div className="text-xs text-stone-400/80 dark:text-slate-500 font-mono select-none">
-            [Ruang Iklan • CLS Reserved]
-          </div>
         )}
       </div>
     </aside>

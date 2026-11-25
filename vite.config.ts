@@ -84,14 +84,25 @@ export default defineConfig(({ isSsrBuild }) => ({
           ? {}
           : {
               manualChunks(id) {
-                if (!id.includes('node_modules')) return undefined;
-                if (id.includes('react-dom') || id.includes('react-router')) {
+                const normalized = id.replace(/\\/g, '/');
+                if (!normalized.includes('/node_modules/')) return undefined;
+                if (
+                  normalized.includes('/node_modules/react/') ||
+                  normalized.includes('/node_modules/react-dom/') ||
+                  normalized.includes('/node_modules/react-router') ||
+                  normalized.includes('/node_modules/scheduler/')
+                ) {
                   return 'vendor-react';
                 }
-                if (id.includes('katex') || id.includes('react-markdown') || id.includes('remark') || id.includes('rehype')) {
+                if (
+                  normalized.includes('/node_modules/katex/') ||
+                  normalized.includes('/node_modules/react-markdown/') ||
+                  normalized.includes('/node_modules/remark-') ||
+                  normalized.includes('/node_modules/rehype-')
+                ) {
                   return 'vendor-markdown';
                 }
-                if (id.includes('lucide-react')) {
+                if (normalized.includes('/node_modules/lucide-react/')) {
                   return 'vendor-icons';
                 }
                 return undefined;

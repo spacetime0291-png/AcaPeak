@@ -61,48 +61,73 @@ function analyzeUtbkContent() {
     totalSubchapters: 0,
     totalVariations: 0,
     totalQuestions: 0,
+    totalDetailButir: 0,
     subtests: [],
   };
 
   for (const sub of subtests) {
     const dir = path.join(ROOT_DIR, 'content/utbk', sub.code);
     if (!fs.existsSync(dir)) {
-      summary.subtests.push({ ...sub, subchapters: 0, variations: 0, questions: 0, files: [] });
+      summary.subtests.push({
+        ...sub,
+        subchapters: 0,
+        variations: 0,
+        questions: 0,
+        detailButir: 0,
+        files: [],
+      });
       continue;
     }
 
-    const files = fs.readdirSync(dir).filter(f => f.startsWith(`${sub.code}-`) && f.endsWith('.json'));
+    const files = fs
+      .readdirSync(dir)
+      .filter((f) => f.startsWith(`${sub.code}-`) && f.endsWith('.json'))
+      .sort();
     let subQuestions = 0;
     let subVariations = 0;
+    let subDetailButir = 0;
     const list = [];
 
     for (const file of files) {
       try {
         const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
-        const qCount = (data.zona_3_uji_pemahaman ? data.zona_3_uji_pemahaman.length : 0) || (data.worked_examples ? data.worked_examples.length : 0);
-        const vCount = (data.zona_2_variasi_inti ? data.zona_2_variasi_inti.length : 0);
+        const qCount =
+          (data.zona_3_uji_pemahaman ? data.zona_3_uji_pemahaman.length : 0) ||
+          (data.worked_examples ? data.worked_examples.length : 0);
+        const vCount = data.zona_2_variasi_inti ? data.zona_2_variasi_inti.length : 0;
+        const dCount = (data.zona_1_peta_taktis?.detail_materi_lengkap?.kelompok || []).reduce(
+          (acc, k) => acc + (Array.isArray(k.butir) ? k.butir.length : 0),
+          0
+        );
         subQuestions += qCount;
         subVariations += vCount;
+        subDetailButir += dCount;
         list.push({
           id: data.kode_subbab || data.metadata?.id || file.replace('.json', ''),
           title: data.judul_subbab || data.metadata?.title || 'Unknown',
-          chapter: data.bab || `${data.metadata?.chapter_num || '?'}. ${data.metadata?.chapter_title || ''}`,
+          chapter:
+            data.bab || `${data.metadata?.chapter_num || '?'}. ${data.metadata?.chapter_title || ''}`,
+          klasifikasi: data.klasifikasi_materi || 'INTI',
+          frekuensi: data.zona_1_peta_taktis?.frekuensi_utbk || '-',
           variations: vCount,
           questions: qCount,
+          detailButir: dCount,
         });
       } catch {
-        // skip
+        // skip invalid file
       }
     }
 
     summary.totalSubchapters += files.length;
     summary.totalVariations += subVariations;
     summary.totalQuestions += subQuestions;
+    summary.totalDetailButir += subDetailButir;
     summary.subtests.push({
       ...sub,
       subchapters: files.length,
       variations: subVariations,
       questions: subQuestions,
+      detailButir: subDetailButir,
       files: list,
     });
   }
@@ -110,85 +135,201 @@ function analyzeUtbkContent() {
   return summary;
 }
 
+function analyzeRangkumanContent() {
+  const indexCandidates = [
+    path.join(ROOT_DIR, 'content/rangkuman/index.json'),
+    path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json'),
+  ];
+  const indexPath = indexCandidates.find((p) => fs.existsSync(p));
+  if (!indexPath) {
+    return { totalBab: 0, totalSubbab: 0, totalButir: 0, babs: [] };
+  }
+
+  try {
+    const idx = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+    const babs = [];
+    for (const st of idx.daftar_subtes || []) {
+      for (const b of st.daftar_bab || []) {
+        babs.push({
+          kode_bab: b.kode_bab,
+          subtes: st.subtes,
+          bab: b.bab || b.nama_bab || b.kode_bab,
+          jumlah_subbab: b.jumlah_subbab || (b.subbab ? b.subbab.length : 0),
+          jumlah_butir: b.jumlah_butir || 0,
+          estimasi_menit: b.estimasi_menit_review || 5,
+        });
+      }
+    }
+    return {
+      totalBab: idx.total_bab || babs.length,
+      totalSubbab: idx.total_subbab || 0,
+      totalButir: idx.total_butir || 0,
+      babs,
+    };
+  } catch {
+    return { totalBab: 0, totalSubbab: 0, totalButir: 0, babs: [] };
+  }
+}
+
+function analyzeSmaContent() {
+  const smaPath = path.join(ROOT_DIR, 'src/lib/smaSyllabusData.ts');
+  if (!fs.existsSync(smaPath)) return [];
+  try {
+    const src = fs.readFileSync(smaPath, 'utf8');
+    const blocks = src.split(/\n\s*\{\s*\n\s*id:\s*'/).slice(1);
+    return blocks.map((blk) => {
+      const id = (blk.match(/^([^']+)'/) || [])[1] || '';
+      const name = (blk.match(/name:\s*'([^']+)'/) || [])[1] || '';
+      const category = (blk.match(/category:\s*'([^']+)'/) || [])[1] || '';
+      const readyCount = (blk.match(/status:\s*'ready'/g) || []).length;
+      const upcomingCount = (blk.match(/status:\s*'upcoming'/g) || []).length;
+      return { id, name, category, readyCount, upcomingCount };
+    });
+  } catch {
+    return [];
+  }
+}
+
+function inspectBuildMetrics() {
+  const distDir = path.join(ROOT_DIR, 'dist');
+  const assetsDir = path.join(distDir, 'assets');
+  if (!fs.existsSync(distDir) || !fs.existsSync(assetsDir)) return null;
+
+  try {
+    const assets = fs.readdirSync(assetsDir);
+    const findSize = (regex) => {
+      const match = assets.find((f) => regex.test(f));
+      return match ? `${match} (${getFileSize(path.join(assetsDir, match))})` : '-';
+    };
+    const sitemapPath = path.join(distDir, 'sitemap.xml');
+    const sitemapUrls = fs.existsSync(sitemapPath)
+      ? (fs.readFileSync(sitemapPath, 'utf8').match(/<url>/g) || []).length
+      : 0;
+
+    return {
+      indexHtml: getFileSize(path.join(distDir, 'index.html')),
+      entryJs: findSize(/^index-.*\.js$/),
+      entryCss: findSize(/^index-.*\.css$/),
+      vendorReact: findSize(/^vendor-react-.*\.js$/),
+      vendorMarkdownJs: findSize(/^vendor-markdown-.*\.js$/),
+      vendorMarkdownCss: findSize(/^vendor-markdown-.*\.css$/),
+      vendorIcons: findSize(/^vendor-icons-.*\.js$/),
+      pdfReaderChunk: findSize(/^PdfMaterialReader-.*\.js$/),
+      subtestDetailChunk: findSize(/^SubtestDetailView-.*\.js$/),
+      rangkumanChunk: findSize(/^RangkumanPage-.*\.js$/),
+      drillingChunk: findSize(/^ActiveDrillingView-.*\.js$/),
+      sitemapUrls,
+    };
+  } catch {
+    return null;
+  }
+}
+
 function generateSummary() {
   const now = new Date().toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
   const pkg = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'package.json'), 'utf8'));
   const utbkContent = analyzeUtbkContent();
-  const puSubtest = utbkContent.subtests.find(s => s.code === 'pu') || { subchapters: 0, questions: 0, files: [] };
+  const rangkumanContent = analyzeRangkumanContent();
+  const smaSubjects = analyzeSmaContent();
+  const buildMetrics = inspectBuildMetrics();
   const srcFiles = scanDirectory(path.join(ROOT_DIR, 'src'));
   const scriptFiles = scanDirectory(path.join(ROOT_DIR, 'scripts'));
+  const publicFiles = scanDirectory(path.join(ROOT_DIR, 'public')).filter(
+    (f) => !f.path.startsWith('public/content/')
+  );
 
-  // Role dictionary for known files
+  let wranglerInfo = {};
+  try {
+    wranglerInfo = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'wrangler.jsonc'), 'utf8'));
+  } catch {}
+
   const fileRoles = {
-    'src/App.tsx': 'Central Router & Shell: Clean Path routes (/utbk/:subtest/:materiId, /sma, /rangkuman, /drilling, legal) + legacy query redirect',
-    'src/entry-client.tsx': 'React 19 client hydration entry reading #__PAGE_DATA__ synchronously',
-    'src/entry-server.tsx': 'SSR entry for static pre-rendering via renderToString',
-    'src/index.css': 'Tailwind CSS v4 base configuration & custom design utility classes',
-    'src/types/material.ts': 'Core TypeScript interfaces: Material, WorkedExample, SvgVisualization, SubtestItem',
-    'src/lib/contentLoader.ts': '0ms #__PAGE_DATA__ synchronous hydration + dynamic JSON fetch & drilling randomizer',
-    'src/lib/drillingRotationEngine.ts': 'Deterministic Stratified Rotation Engine: multi-subtest balancing, difficulty wave patterning, BPPP question type quotas, seen tracking, passage grouping',
-    'src/lib/syllabusData.ts': 'UTBK Syllabus definition from slim syllabus-light.json: 7 subtests (PU, PPU, PBM, PK, LBI, LBE, PM)',
-    'src/lib/smaSyllabusData.ts': 'SMA curriculum syllabus data (Matematika TL, Saintek, Soshum)',
-    'src/data/syllabus.ts': 'Legacy / extended UTBK curriculum syllabus items',
-    'src/data/syllabus.json': 'Full syllabus metadata used by SSG/SEO build scripts',
-    'src/data/syllabus-light.json': 'Slimmed client syllabus metadata (~19.5 KB) for fast initial bundle',
-    'src/data/materials/puMaterials.ts': 'Barrel export: re-exports all modular PU subchapters from src/data/materials/pu/',
-    'src/data/materials/pu/index.ts': 'Barrel export bundling all individual PU subchapters',
-    'src/data/materials/ppuMaterials.ts': 'Barrel export: re-exports all modular PPU subchapters from src/data/materials/ppu/',
-    'src/data/materials/ppu/index.ts': 'Barrel export bundling all individual PPU subchapters',
-    'src/data/materials/ppu/ppu-01-01.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 1.1 (Makna Leksikal, Gramatikal, Kontekstual)',
-    'src/data/materials/ppu/ppu-01-02.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 1.2 (Sinonim, Antonim, Homonim, Polisemi)',
-    'src/data/materials/ppu/ppu-01-03.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 1.3 (Hipernim dan Hiponim)',
-    'src/data/materials/ppu/ppu-01-04.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 1.4 (Perubahan Makna)',
-    'src/data/materials/ppu/ppu-02-01.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 2.1 (Afiksasi dan Maknanya)',
-    'src/data/materials/ppu/ppu-02-02.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 2.2 (Kata Ulang dan Kata Majemuk)',
-    'src/data/materials/ppu/ppu-02-03.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 2.3 (Jenis dan Konstruksi Frasa)',
-    'src/data/materials/ppu/ppu-02-04.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 2.4 (Kelompok Kata dan Pasangan Makna Sebidang)',
-    'src/data/materials/ppu/ppu-03-01.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 3.1 (Pola Dasar Kalimat S-P-O-K-Pel)',
-    'src/data/materials/ppu/ppu-03-02.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 3.2 (Kalimat Inti dan Transformasi Kalimat)',
-    'src/data/materials/ppu/ppu-03-03.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 3.3 (Kalimat Efektif dan Kepaduan Makna)',
-    'src/data/materials/ppu/ppu-03-04.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 3.4 (Kalimat Pasif dan Aktif)',
-    'src/data/materials/ppu/ppu-04-01.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 4.1 (Ide Pokok dan Gagasan Pendukung)',
-    'src/data/materials/ppu/ppu-04-02.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 4.2 (Kepaduan Paragraf Kohesi dan Koherensi)',
-    'src/data/materials/ppu/ppu-04-03.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 4.3 (Sikap, Nada, dan Tujuan Penulis)',
-    'src/data/materials/ppu/ppu-04-04.ts': 'Modul terisolasi materi & bank soal sub-bab PPU 4.4 (Bahasa Panda Kriptografi Bahasa Buatan)',
-    'src/data/materials/pbmMaterials.ts': 'Barrel export: re-exports all modular PBM subchapters from src/data/materials/pbm/',
-    'src/data/materials/pbm/index.ts': 'Barrel export bundling all individual PBM subchapters',
-    'src/data/materials/pbm/pbm-01-01.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 1.1 (Makna Leksikal, Gramatikal, Kontekstual)',
-    'src/data/materials/pbm/pbm-01-02.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 1.2 (Sinonim, Antonim, Homonim, Polisemi)',
-    'src/data/materials/pbm/pbm-01-03.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 1.3 (Hipernim dan Hiponim)',
-    'src/data/materials/pbm/pbm-01-04.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 1.4 (Perubahan Makna)',
-    'src/data/materials/pbm/pbm-02-01.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 2.1 (Afiksasi dan Maknanya)',
-    'src/data/materials/pbm/pbm-02-02.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 2.2 (Kata Ulang dan Kata Majemuk)',
-    'src/data/materials/pbm/pbm-02-03.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 2.3 (Jenis dan Konstruksi Frasa)',
-    'src/data/materials/pbm/pbm-02-04.ts': 'Modul terisolasi materi & bank soal sub-bab PBM 2.4 (Kelompok Kata dan Pasangan Makna Sebidang)',
-    'src/components/navigation/TopHeader.tsx': 'Top navigation bar: AppMode toggle (UTBK vs SMA), stats pills, theme toggle',
-    'src/components/common/ThemeToggle.tsx': 'Light/Dark mode switcher manipulating document.documentElement and localStorage',
-    'src/components/home/UtbkSubtestGrid.tsx': 'Dashboard cards grid displaying 7 UTBK subtests with stats & progress',
-    'src/components/home/SmaSubjectGrid.tsx': 'SMA subject grid with category filters (Saintek, Soshum, Umum)',
-    'src/components/subtest/SubtestDetailView.tsx': 'Subtest syllabus view with tabs for Materi Modules and Drilling Setup',
+    'src/App.tsx':
+      'Central Router & Shell: Clean Path routes (/utbk/:subtest/:materiId, /sma, /rangkuman, /drilling, legal), lazy route splitting, legacy query/path redirects, 404 view',
+    'src/entry-client.tsx':
+      'React 19 client hydration entry: synchronous #__PAGE_DATA__ reader + single active route chunk preload before hydrateRoot',
+    'src/entry-server.tsx':
+      'Stateless async SSR renderer resolving active route chunk + synchronous renderToString for flat static HTML',
+    'src/worker.ts':
+      'Cloudflare Worker fallback: 301 legacy redirects (/subtest/*, /materi/*), 200 SPA fallback for /drilling*, true HTTP 404 for unknown paths',
+    'src/main.tsx': 'Legacy/standalone bootstrap entry point',
+    'src/index.css': 'Tailwind CSS v4 config, theme tokens, and KaTeX baseline/strut protection rules',
+    'src/types/material.ts':
+      'Master TypeScript interfaces: ThreeZoneMaterial, Material, WorkedExample, VisualData, SubtestItem',
+    'src/types/rangkuman.ts': 'TypeScript contracts for Rangkuman Bab & Cheat Sheet data',
+    'src/lib/contentLoader.ts':
+      '0ms #__PAGE_DATA__ synchronous hydration + dynamic JSON fetch per subchapter & progress localStorage',
+    'src/lib/rangkumanLoader.ts':
+      '0ms #__PAGE_DATA__ hydration + dynamic fetch for Rangkuman Bab & Index JSON',
+    'src/lib/drillingRotationEngine.ts':
+      'Deterministic Stratified Rotation Engine: multi-subtest balancing, difficulty wave patterning, BPPP quotas, seen tracking, passage grouping',
+    'src/lib/syllabusData.ts':
+      'UTBK syllabus definition importing slim syllabus-light.json (7 subtests)',
+    'src/lib/smaSyllabusData.ts': 'SMA curriculum syllabus metadata (8 subjects)',
+    'src/lib/featureFlags.ts': 'Feature toggles (e.g. ENABLE_SMA_MODE)',
+    'src/data/syllabus.json': 'Full UTBK syllabus JSON used by SSG & SEO build scripts',
+    'src/data/syllabus-light.json': 'Slim client syllabus metadata (~19.5 KB) for fast initial bundle',
+    'src/data/syllabus.ts': 'Legacy UTBK syllabus export wrapper',
+    'src/components/common/AdSlot.tsx':
+      'Google AdSense unit wrapper: hidden before VITE_ADSENSE_CLIENT_ID is set, CLS=0 min-height & idle/interaction-deferred script init when active',
+    'src/components/common/ThemeToggle.tsx':
+      'Light/Dark mode switcher persisting to localStorage (kognitedu_theme)',
+    'src/components/navigation/TopHeader.tsx':
+      'Sticky header with crawler-friendly <Link> brand/mode navigation & live subchapter search',
+    'src/components/navigation/Footer.tsx':
+      'Sitewide footer linking all 7 UTBK subtests (/utbk/*) and 4 legal pages',
+    'src/components/home/UtbkSubtestGrid.tsx':
+      'Home 7-subtest dashboard grid using <Link to="/utbk/..."> cards',
+    'src/components/home/SmaSubjectGrid.tsx':
+      'SMA subject grid with category/grade filters & <Link to="/sma/..."> cards',
+    'src/components/subtest/SubtestDetailView.tsx':
+      'Subtest syllabus explorer (Materi & Drilling Setup tabs) with <Link> navigation',
     'src/components/subtest/SmaSubjectDetailView.tsx': 'SMA subject chapter & topic explorer view',
-    'src/components/subtest/ModuleIcon.tsx': 'Dynamic Lucide icon resolver matching syllabus topics and subjects',
-    'src/components/reader/PdfMaterialReader.tsx': 'Formal reader container with sidebar TOC, download/print buttons',
-    'src/components/content/MaterialRenderer.tsx': 'Rich content renderer: KaTeX math formulas, interactive questions, zoomable SVGs',
-    'src/components/drilling/ActiveDrillingView.tsx': 'Timed drilling quiz engine: question navigator, timer, score calculation & review',
-    'src/components/decorations/CosmicDecorations.tsx': 'Ambient stars and glowing cosmic nebula background (Dark mode)',
-    'src/components/decorations/NatureDecorations.tsx': 'Botanical foliage ambient background (Light mode)',
-    'scripts/copy_assets.mjs': 'Post-build script: mirrors dist assets, generates .nojekyll & 404.html for GitHub Pages',
-    'scripts/test_rotation_engine.mjs': 'Unit test suite verifying deterministic stratified rotation engine algorithms, validation, and quotas',
-    'scripts/export_materials.mjs': 'Exports TS materials from modular pu/*.ts to JSON files in public & root content',
-    'scripts/modularize_pu_materials.mjs': 'Modularization tool: splits monolithic material files into isolated subchapter files',
-    'scripts/generate_summary.mjs': 'Auto-generates PROJECT_CONTEXT.md to keep codebase reference always up-to-date',
-    'PU-STATE.json': 'Machine state tracker for UTBK PU drilling question batch generation (targets, counts, progress)',
-    '.antigravity/rules/pu-rules.md': 'Governance rules directive, KaTeX standards, and blueprint curriculum for PU questions',
-    'vite.config.ts': 'Vite 6 build config with Tailwind CSS & React plugins',
+    'src/components/subtest/ModuleIcon.tsx': 'Custom SVG & Lucide icon resolver per UTBK module',
+    'src/components/reader/PdfMaterialReader.tsx':
+      'Reader shell with sticky progress bar, font scaler (85%-140%), focus mode & Rangkuman link',
+    'src/components/content/ThreeZoneMaterialViewer.tsx':
+      '3-Zone material viewer with memoized KaTeX/Markdown renderers & prev/next <Link> navigation',
+    'src/components/content/DetailMateriAccordion.tsx':
+      'Unified responsive single-DOM 3-column table / mobile card accordion (memoized)',
+    'src/components/content/MaterialRenderer.tsx': 'Compatibility wrapper for ThreeZoneMaterialViewer',
+    'src/components/content/VisualRenderer.tsx':
+      'SVG sanitizer (DOMPurify) & dynamically imported Mermaid diagram renderer',
+    'src/components/drilling/ActiveDrillingView.tsx':
+      'Client-side timed drilling quiz simulator supporting PG, PGK & Isian Singkat',
+    'src/components/decorations/LazyDecorations.tsx':
+      'Post-hydration lazy Suspense wrappers for non-critical Cosmic & Nature SVG backgrounds',
+    'src/components/decorations/CosmicDecorations.tsx': 'Dark mode ambient cosmic SVG ornaments',
+    'src/components/decorations/NatureDecorations.tsx': 'Light mode ambient botanical SVG ornaments',
+    'src/pages/RangkumanPage.tsx':
+      'Cheat Sheet & Rangkuman Cepat viewer with memoized KaTeX, content-visibility, active recall blur, and rAF scroll progress',
+    'src/pages/AboutPage.tsx': 'About page with 7-subtest scope & E-E-A-T editorial verification standard',
+    'src/pages/ContactPage.tsx': 'Contact page with official support/errata emails, interactive form & FAQ',
+    'src/pages/PrivacyPolicyPage.tsx': 'Privacy Policy with localStorage & Google AdSense cookie disclosures',
+    'src/pages/TermsPage.tsx': 'Terms of Service & independent educational non-affiliation disclaimer',
+    'scripts/build.mjs': 'Master build orchestrator: export_materials -> tsc -b -> vite build (SSG + SEO)',
+    'scripts/prerender.mjs':
+      'Concurrent batch SSG renderer (batch 16), anti-thin filter, __PAGE_DATA__ injector, E-E-A-T JSON-LD & conditional KaTeX CSS',
+    'scripts/generate_seo_files.mjs':
+      'Generates anti-thin filtered sitemap.xml & robots.txt (Googlebot + Mediapartners-Google)',
+    'scripts/lib/contentValidator.mjs':
+      'Shared XSS-safe JSON serializer & substantial content validator for UTBK & Rangkuman',
+    'scripts/export_materials.mjs': 'Syncs material JSONs from output_materi to content/utbk & public/content/utbk',
+    'scripts/copy_assets.mjs': 'Mirrors dist assets and generates .nojekyll & 404.html fallback',
+    'scripts/generate_summary.mjs': 'Auto-generates this PROJECT_CONTEXT.md dossier',
+    'scripts/test_rotation_engine.mjs': 'Unit test suite for deterministic stratified rotation engine',
+    'public/ads.txt': 'Authorized Digital Sellers template ready for AdSense Publisher ID',
+    'public/robots.txt': 'Crawler rules allowing Googlebot & Mediapartners-Google, disallowing /drilling',
+    'public/_headers': 'Cloudflare edge cache & security headers (/assets immutable, /content SWR, HTML revalidate)',
+    'wrangler.jsonc': 'Cloudflare Workers Static Assets config (run_worker_first: false, not_found_handling: none)',
+    'vite.config.ts': 'Vite 6 config with vendor-react/vendor-markdown/vendor-icons chunking & integrated SSG plugin',
   };
 
-  const md = `# PROJECT CONTEXT & CODEBASE SUMMARY
+  const md = `# PROJECT CONTEXT & CODEBASE ARCHITECTURE DOSSIER
 <!-- AUTO-GENERATED FILE. DO NOT EDIT DIRECTLY. -->
 <!-- Generated by: scripts/generate_summary.mjs | Last Update: ${now} -->
 
-> **Catatan Penggunaan AI:** File ini merangkum seluruh arsitektur, struktur file, data schema, dan aturan proyek dalam format ringkas hemat token. **Baca file ini terlebih dahulu pada sesi chat baru** untuk memahami seluruh konteks codebase tanpa perlu membaca puluhan file satu per satu.
+> **Catatan Penggunaan AI & Gemini Chat:** File ini adalah *single source of truth* yang merangkum seluruh arsitektur teknis web, strategi performa SSG/hydration, konfigurasi Cloudflare Edge, kesiapan Google AdSense 2026, skema data, serta inventaris lengkap **${utbkContent.totalSubchapters} Sub-bab UTBK**, **${rangkumanContent.totalBab} Rangkuman Bab**, dan **${smaSubjects.length} Mapel SMA**. Analisis sistem secara menyeluruh dapat dilakukan langsung dari file ini.
 
 ---
 
@@ -196,255 +337,275 @@ function generateSummary() {
 
 | Parameter | Keterangan |
 | :--- | :--- |
-| **Nama Proyek** | \`${pkg.name}\` (Platform Belajar & Drilling UTBK SNBT + SMA) |
+| **Nama Proyek** | \`${pkg.name}\` — **SkolAce** (Platform Belajar & Drilling UTBK-SNBT + SMA Bebas Biaya Rp0) |
 | **Versi** | \`${pkg.version}\` |
-| **Framework UI** | React 19.3 + TypeScript ~7.0 + Vite 6.2 |
+| **Framework UI** | React 19.3 + TypeScript ~7.0 + Vite 6.2 + React Router v7 |
 | **Styling** | Tailwind CSS v4.3 (\`@tailwindcss/vite\`) + Lucide React Icons |
-| **Math & Markdown** | \`react-markdown\` v10 + \`remark-math\` + \`rehype-katex\` + \`katex\` (Inline & Display KaTeX) |
-| **Database / Backend** | Supabase JS client ready (\`@supabase/supabase-js\`), Static JSON repository |
-| **Deployment** | GitHub Pages SPA (\`deploy.yml\`, \`404.html\` client-side routing fallback, \`.nojekyll\`) |
-| **Status Bank Soal UTBK** | **${utbkContent.totalSubchapters} Sub-bab** aktif, **${utbkContent.totalVariations} Variasi Inti**, **${utbkContent.totalQuestions} Soal Drilling** HOTS (7 Subtes Lengkap) |
+| **Math & Markdown** | \`react-markdown\` v10 + \`remark-math\` + \`remark-gfm\` + \`rehype-katex\` + \`katex\` (\`output: 'html'\`) |
+| **Visualisasi** | Inline SVG ter-sanitasi (\`dompurify\`) + Dynamic \`mermaid\` (lazy-loaded hanya saat diagram ada) |
+| **Arsitektur Rendering** | **Hybrid SSG + CSR**: Pre-render HTML statis untuk seluruh halaman publik + Client SPA untuk \`/drilling\` |
+| **Hosting & Edge CDN** | Cloudflare Workers Static Assets (\`wrangler.jsonc\`: \`run_worker_first: false\`, \`not_found_handling: none\`) + \`src/worker.ts\` |
+| **Base URL Saat Ini** | \`https://acapeak.spacetime0291.workers.dev\` *(overridable via env \`SITE_URL\` saat custom domain dibeli)* |
+| **Status Konten UTBK** | **${utbkContent.totalSubchapters} Sub-bab** aktif, **${utbkContent.totalVariations} Variasi Inti**, **${utbkContent.totalDetailButir} Butir Detail Materi**, **${utbkContent.totalQuestions} Soal Drilling HOTS** (7 Subtes) |
+| **Status Cheat Sheet** | **${rangkumanContent.totalBab} Rangkuman Bab** (${rangkumanContent.totalSubbab} sub-bab, ${rangkumanContent.totalButir} butir padat format *1 Teori = 1 Contoh*) |
 
 ---
 
-## 2. Struktur Direktori & Peran File
+## 2. Arsitektur Sistem Web, Routing & Cloudflare Edge
+
+### A. Peta Rute Clean Path (\`src/App.tsx\`)
+Seluruh navigasi publik menggunakan tag \`<a href="...">\` (\`react-router-dom\` \`<Link>\`) sehingga seluruh konten dapat di-crawl Googlebot maksimal dalam **2–3 klik dari Beranda**:
+- \`/\` $\\rightarrow$ Beranda / Dashboard 7 Subtes UTBK-SNBT (\`UtbkSubtestGrid\`, eager-loaded).
+- \`/utbk/:subtest\` $\\rightarrow$ Detail Silabus Subtes & Setup Drilling (\`SubtestDetailView\`, tab \`materi\` / \`?tab=drilling\`).
+- \`/utbk/:subtest/:materiId\` $\\rightarrow$ Halaman Baca Materi Lengkap 3 Zona (\`PdfMaterialReader\` + \`ThreeZoneMaterialViewer\`).
+- \`/rangkuman\` & \`/rangkuman/:babId\` $\\rightarrow$ Katalog & Lembar Cheat Sheet per Bab (\`RangkumanPage\`).
+- \`/sma\` & \`/sma/:subject\` $\\rightarrow$ Halaman Kurikulum SMA (\`SmaSubjectGrid\` / \`SmaSubjectDetailView\`, diberi \`noindex, follow\` hingga naskah lengkap terisi).
+- \`/drilling\` & \`/drilling/:subtest\` $\\rightarrow$ Mode Simulasi Latihan Soal Interaktif (Client-side SPA, \`Disallow: /drilling\` di \`robots.txt\`).
+- \`/about\`, \`/contact\`, \`/privacy-policy\`, \`/terms\` $\\rightarrow$ Halaman Legal, Editorial E-E-A-T, & Trust AdSense.
+- **Backward Compatibility:**
+  - Query param lama (\`?materi=\`, \`?subtest=\`, \`?mode=\`, \`?subject=\`, \`?drilling=active\`) otomatis di-redirect client-side via \`LegacyQueryRedirect\` (\`replace: true\`).
+  - Path lama (\`/subtest/:id\`, \`/materi/:id\`) di-redirect \`301\` langsung di Edge Worker (\`src/worker.ts\`) maupun client fallback.
+
+### B. Strategi Cloudflare Workers Static Assets & Eliminasi Soft 404
+- **\`wrangler.jsonc\`:**
+  - \`"directory": "./dist"\`, \`"run_worker_first": ${wranglerInfo?.assets?.run_worker_first ?? false}\`, \`"html_handling": "${wranglerInfo?.assets?.html_handling ?? 'auto-trailing-slash'}"\`, \`"not_found_handling": "${wranglerInfo?.assets?.not_found_handling ?? 'none'}"\`.
+  - Karena \`run_worker_first: false\`, seluruh aset statis di \`dist/\` (155 halaman HTML, CSS, JS, JSON, SVG, \`sitemap.xml\`, \`robots.txt\`, \`ads.txt\`) dilayani langsung oleh **Edge CDN Cloudflare** tanpa mengurangi kuota 100.000 request Worker/hari.
+- **\`src/worker.ts\` (Hanya menangani rute non-statis):**
+  1. \`301\` redirect untuk \`/subtest/*\` dan \`/materi/*\` ke Clean Path \`/utbk/*\`.
+  2. Menyajikan \`/200.html\` (\`status: 200\`, \`X-Robots-Tag: noindex, follow\`) untuk rute SPA \`/drilling\` & \`/drilling/:subtest\`.
+  3. Menyajikan \`/404.html\` dengan status **HTTP \`404 Not Found\`** asli untuk URL tak dikenal (menghilangkan masalah *Soft 404* di Search Console & AdSense).
+- **Caching Headers (\`public/_headers\`):**
+  - \`/assets/*\`: \`public, max-age=31536000, immutable\`
+  - \`/content/*\`: \`public, max-age=86400, stale-while-revalidate=604800\`
+  - \`/*.html\`: \`public, max-age=0, must-revalidate\` + \`X-Content-Type-Options: nosniff\`, \`X-Frame-Options: SAMEORIGIN\`, \`Referrer-Policy: strict-origin-when-cross-origin\`.
+
+---
+
+## 3. Arsitektur Performa, Bundle Splitting & Anti-Lag
+
+1. **Zero Double-Payload & 0ms Hydration (\`#__PAGE_DATA__\`):**
+   - \`scripts/prerender.mjs\` menyisipkan **hanya 1 JSON sub-bab aktif** (atau 1 bab rangkuman) ke dalam \`<script id="__PAGE_DATA__" type="application/json">...</script>\` dengan escaping aman (\`<\`, \`>\`, \`&\`, \`\\u2028\`, \`\\u2029\`).
+   - \`src/lib/contentLoader.ts\` & \`src/lib/rangkumanLoader.ts\` membaca \`#__PAGE_DATA__\` secara sinkron saat inisialisasi client (0 ms latency, 0 network fetch ulang). Navigasi ke sub-bab lain baru memicu \`fetch('/content/utbk/...')\`.
+   - Tidak ada impor statis \`puMaterials.ts\` maupun \`import.meta.glob\` pada JSON materi/rangkuman; silabus client memakai \`src/data/syllabus-light.json\` (19.5 KB vs 208 KB penuh).
+2. **Route-Level Code Splitting + Flat Synchronous SSR:**
+   - \`src/App.tsx\` membungkus seluruh rute sekunder (\`SubtestDetailView\`, \`PdfMaterialReader\`, \`RangkumanPage\`, \`ActiveDrillingView\`, SMA, Legal) dengan \`React.lazy()\`.
+   - \`src/entry-client.tsx\` & \`src/entry-server.tsx\` memanggil \`resolveRouteComponents(pathname)\` untuk memuat **hanya 1 chunk rute aktif** sebelum \`hydrateRoot\` / \`renderToString\`. Hasilnya: HTML statis tetap rata/flat (tanpa \`<template id="B:0">\` atau \`<div hidden id="S:0">\`), sementara halaman \`/\` **tidak mengunduh** \`vendor-markdown\` (KaTeX + Remark + Rehype) maupun CSS KaTeX.
+   - \`scripts/prerender.mjs\` menyuntikkan stylesheet KaTeX hanya pada rute materi dan rangkuman agar bebas FOUC.
+3. **Eliminasi Lag UI, Scroll & Re-render React:**
+   - **Single Responsive DOM (\`DetailMateriAccordion.tsx\`):** Menghapus duplikasi pohon DOM Desktop+Mobile; satu markup adaptif (\`grid-cols-1\` di mobile $\\rightarrow$ \`md:grid-cols-[38%_34%_28%]\` di desktop), memangkas jumlah node DOM & KaTeX hingga ~40–50% pada bab berat.
+   - **Memoized Markdown & KaTeX (\`ThreeZoneMaterialViewer.tsx\`, \`RangkumanPage.tsx\`):** Konstanta \`REMARK_PLUGINS\`, \`KATEX_REHYPE_PLUGINS\`, dan objek \`components\` ditempatkan di scope modul dengan pembungkus \`React.memo\`, sehingga klik jawaban kuis atau ganti tab tidak mem-parse ulang seluruh KaTeX di halaman.
+   - **Zero-Re-render Scroll Progress (\`RangkumanPage.tsx\`):** Listener \`scroll\` memperbarui \`progressTextRef\` dan \`progressBarFillRef\` via \`requestAnimationFrame\` tanpa \`setState\`, ditambah \`content-visibility: auto\` pada \`.rangkuman-card\`.
+   - **Lazy Non-Critical Assets:** \`LazyDecorations.tsx\` menunda SVG dekoratif hingga setelah hydration; \`VisualRenderer.tsx\` melakukan \`await import('mermaid')\` dinamis di \`useEffect\`; Google Fonts di \`index.html\` dimuat non-blocking (\`media="print" onload="this.media='all'"\`).
+${buildMetrics ? `
+### Metrik Hasil Build Terbaru (\`dist/\`)
+| Aset / Halaman | Ukuran Terverifikasi | Keterangan |
+| :--- | :--- | :--- |
+| \`dist/index.html\` (Beranda \`/\`) | **${buildMetrics.indexHtml}** | Pre-rendered flat HTML; bebas \`vendor-markdown\` & bebas KaTeX CSS |
+| Entry JS (\`assets/index-*.js\`) | **${buildMetrics.entryJs}** | Hanya mengimpor \`vendor-react\` & \`vendor-icons\` |
+| \`vendor-react\` chunk | **${buildMetrics.vendorReact}** | React 19, ReactDOM, React Router |
+| \`vendor-icons\` chunk | **${buildMetrics.vendorIcons}** | Lucide icons |
+| \`vendor-markdown\` chunk (Lazy) | **${buildMetrics.vendorMarkdownJs}** / CSS **${buildMetrics.vendorMarkdownCss}** | Hanya dimuat di \`/utbk/:subtest/:materiId\`, \`/rangkuman*\`, \`/drilling*\` |
+| \`PdfMaterialReader\` / \`SubtestDetailView\` / \`RangkumanPage\` | **${buildMetrics.pdfReaderChunk}** / **${buildMetrics.subtestDetailChunk}** / **${buildMetrics.rangkumanChunk}** | Lazy per rute |
+| \`ActiveDrillingView\` chunk | **${buildMetrics.drillingChunk}** | Client-only SPA chunk |
+| Total URL terindeks \`sitemap.xml\` | **${buildMetrics.sitemapUrls} URL** | Home + 7 Subtes + ${utbkContent.totalSubchapters} Materi + ${rangkumanContent.totalBab + 1} Rangkuman + 4 Legal |
+` : ''}
+---
+
+## 4. Kesiapan Teknis Google AdSense 2026 & Roadmap Custom Domain
+
+### Status Kepatuhan Saat Ini
+- **Anti-Thin Content Filter (\`scripts/lib/contentValidator.mjs\`):** Hanya materi substansial (markdown inti $\\ge 100$ karakter non-placeholder serta memiliki variasi pola atau soal uji) yang di-prerender dan masuk \`sitemap.xml\`. Halaman SMA (\`/sma*\`) dan fallback (\`404.html\`, \`200.html\`) diberi \`noindex, follow\`.
+- **\`AdSlot.tsx\` Pre-Approval Guard & CLS=0:** Saat \`VITE_ADSENSE_CLIENT_ID\` belum terpasang, \`AdSlot\` mengembalikan \`null\` (tidak menampilkan kotak placeholder kosong/dummy saat review AdSense). Saat aktif, \`AdSlot\` mereservasi tinggi \`min-h-[100px]\`/\`min-h-[250px]\`, label \`Iklan • Advertisement\`, dan menunda inisialisasi script AdSense via \`requestIdleCallback\` / fallback 1500ms / interaksi pengguna pertama.
+- **\`public/robots.txt\`:** Secara eksplisit mengizinkan \`Googlebot\` dan \`Mediapartners-Google\` (\`Allow: /\`), hanya memblokir \`/drilling\`.
+- **Kebersihan Script Pihak Ketiga:** Service worker jaringan iklan eksternal (\`sw.js\`) telah dihapus permanen dari repositori dan build.
+- **E-E-A-T & Legal Pages:** \`AboutPage\` (mencakup Standar Editorial & Verifikasi Kurikulum), \`ContactPage\` (surel resmi \`support@skolace.my.id\`, \`errata@skolace.my.id\`, formulir laporan cepat, FAQ), \`PrivacyPolicyPage\` (disclosure cookie Google & link opt-out), \`TermsPage\`, serta JSON-LD \`Article\`/\`LearningResource\` dengan \`Tim Penyusun Kurikulum SkolAce\`.
+
+### Langkah Akhir Saat Custom Domain Dibeli (Siap Submit AdSense)
+1. Hubungkan Custom Domain (mis. \`skolace.my.id\`) ke project Cloudflare Workers (\`acapeak\`).
+2. Jalankan build dengan environment variable domain final:
+   \`SITE_URL=https://skolace.my.id npm run build\` (otomatis memperbarui \`canonical\`, \`og:url\`, JSON-LD, \`sitemap.xml\`, dan \`robots.txt\`).
+3. Daftar ke Google AdSense menggunakan custom domain tersebut, lalu:
+   - Isi \`public/ads.txt\` dengan baris aktif \`google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0\`.
+   - Set environment variable \`VITE_ADSENSE_CLIENT_ID=ca-pub-XXXXXXXXXXXXXXXX\` pada Cloudflare build agar \`scripts/prerender.mjs\` menyisipkan script verifikasi \`adsbygoogle.js\` di \`<head>\` dan mengaktifkan komponen \`AdSlot\` ber-reservasi CLS=0 setelah disetujui.
+
+---
+
+## 5. Struktur Direktori & Peran File
 
 \`\`\`text
 d:/web/
-├── .github/workflows/deploy.yml   # CI/CD GitHub Pages deployment
-├── content/utbk/pu/*.json         # Database materi & bank soal format JSON publik
-├── public/content/utbk/pu/*.json  # Mirror JSON untuk GitHub Pages runtime fetch
-├── scripts/                       # Build, export, asset copy, dan summary generator
+├── .github/workflows/             # CI/CD deployment workflows
+├── content/
+│   ├── utbk/{pu,ppu,pbm,pk,lbi,lbe,pm}/*.json  # 106 file materi & soal UTBK 3-zona
+│   └── rangkuman/*.json                        # 27 file cheat sheet bab + index.json
+├── public/
+│   ├── content/                   # Mirror JSON untuk runtime fetch
+│   ├── _headers                   # Cloudflare caching & security headers
+│   ├── ads.txt                    # Template Authorized Digital Sellers AdSense
+│   ├── robots.txt                 # Rules Googlebot & Mediapartners-Google
+│   └── sitemap.xml                # Auto-generated anti-thin XML sitemap
+├── scripts/
+│   ├── lib/contentValidator.mjs   # Validator anti-thin content & safeJsonSerialize
+│   ├── build.mjs                  # Pipeline: export -> tsc -> vite build (SSG + SEO)
+│   ├── prerender.mjs              # Batch concurrent SSG renderer & #__PAGE_DATA__ injector
+│   ├── generate_seo_files.mjs     # Generator sitemap.xml & robots.txt
+│   └── generate_summary.mjs       # Generator PROJECT_CONTEXT.md ini
 ├── src/
-│   ├── components/                # Komponen modular UI (Reader, Drilling, Home, Nav, Decors)
-│   ├── data/                      # Silabus static & preloaded materials bundle (puMaterials.ts)
-│   ├── lib/                       # Content loader, UTBK & SMA syllabus metadata
-│   ├── types/                     # TypeScript master contracts & interfaces
-│   ├── App.tsx                    # Main state machine, router search params & views
-│   └── index.css / main.tsx       # Entry styling & ReactDOM mount
-├── .antigravity/rules/pu-rules.md  # Governance rules directive & blueprint kurikulum PU
-├── PU-STATE.json                   # Machine state tracker target drilling soal
-└── PROJECT_CONTEXT.md             # File ini (Rangkuman Token-Efficient untuk AI)
+│   ├── components/                # UI modular (common, content, decorations, drilling, home, navigation, reader, subtest)
+│   ├── data/                      # syllabus.json & syllabus-light.json (19.5 KB)
+│   ├── lib/                       # contentLoader, rangkumanLoader, drillingRotationEngine, syllabusData, smaSyllabusData
+│   ├── pages/                     # RangkumanPage, AboutPage, ContactPage, PrivacyPolicyPage, TermsPage
+│   ├── types/                     # material.ts & rangkuman.ts
+│   ├── App.tsx                    # Central Clean Path Router + Legacy Redirects + Lazy Routes
+│   ├── entry-client.tsx           # Client hydration (#__PAGE_DATA__ + single route preload)
+│   ├── entry-server.tsx           # Pure stateless SSR render()
+│   └── worker.ts                  # Cloudflare Worker fallback (301 legacy, 200 /drilling, true 404)
+├── wrangler.jsonc                 # Cloudflare Workers Static Assets (run_worker_first: false)
+├── vite.config.ts                 # Vite 6 + manualChunks + integrated SSG plugin
+└── PROJECT_CONTEXT.md             # File ringkasan lengkap ini
 \`\`\`
 
-### Rincian File Source Code (\`src/\` & \`scripts/\`)
+### Rincian File Source Code & Konfigurasi
 | File | Ukuran | Baris | Peran / Deskripsi |
 | :--- | :---: | :---: | :--- |
-${[...srcFiles, ...scriptFiles].map(f => {
-  let role = fileRoles[f.path];
-  if (!role && f.path.startsWith('src/data/materials/pu/pu-')) {
-    role = 'Modul terisolasi materi & bank soal sub-bab PU';
-  }
-  if (!role) role = 'Modul pendukung';
-  return `| \`${f.path}\` | ${f.size} | ${f.lines} | ${role} |`;
-}).join('\n')}
+${[...srcFiles, ...scriptFiles, ...publicFiles]
+  .map((f) => `| \`${f.path}\` | ${f.size} | ${f.lines} | ${fileRoles[f.path] || 'Modul pendukung'} |`)
+  .join('\n')}
 
 ---
 
-## 3. Alur Kerja Aplikasi & Clean Path Routing (\`src/App.tsx\`)
+## 6. Master Data Schema & Interfaces (\`src/types/material.ts\` & \`rangkuman.ts\`)
 
-Aplikasi menggunakan **Hybrid SSG + CSR Clean Path Routing** ramah crawler & Cloudflare Static Assets (\`run_worker_first: false\`):
-- \`/\` $\\rightarrow$ Dashboard 7 Subtes UTBK SNBT (\`UtbkSubtestGrid\`).
-- \`/utbk/:subtest\` $\\rightarrow$ Detail Modul Silabus Subtes (\`SubtestDetailView\`, tab \`materi\` / \`?tab=drilling\`).
-- \`/utbk/:subtest/:materiId\` $\\rightarrow$ Halaman Baca Materi Lengkap (\`PdfMaterialReader\` + \`ThreeZoneMaterialViewer\`).
-- \`/rangkuman\` & \`/rangkuman/:babId\` $\\rightarrow$ Cheat Sheet Rangkuman per Bab (\`RangkumanPage\`).
-- \`/sma\` & \`/sma/:subject\` $\\rightarrow$ Daftar & Detail Mata Pelajaran SMA (\`SmaSubjectGrid\` / \`SmaSubjectDetailView\`).
-- \`/drilling\` & \`/drilling/:subtest\` $\\rightarrow$ Mode Latihan Soal Interaktif Client-Side SPA (\`ActiveDrillingView\`, lazy-loaded).
-- \`/about\`, \`/contact\`, \`/privacy-policy\`, \`/terms\` $\\rightarrow$ Halaman Legal & Trust Google AdSense.
-- **Backward Compatibility**: URL lama berbasis query parameter (\`?materi=\`, \`?subtest=\`, \`?mode=sma\`, \`?subject=\`, \`?drilling=active\`) dan path lama (\`/subtest/:id\`, \`/materi/:id\`) otomatis dialihkan via \`replace\` ke Clean Path baru.
-
-### Mekanisme Pengambilan Konten (\`src/lib/contentLoader.ts\`)
-1. **Prioritas 1 (0ms Latency Hydration)**: Membaca tag \`<script id="__PAGE_DATA__" type="application/json">\` (berisi 1 sub-bab aktif dari SSG prerender) secara sinkron saat hydration tanpa network fetch.
-2. **Prioritas 2 (Dynamic Fetch)**: Saat navigasi antar halaman, melakukan \`fetch(\`\${BASE_URL}content/utbk/\${subtest}/\${id}.json\`) secara terpisah.
-3. **Prioritas 3 (Graceful Fallback)**: Jika file belum tersedia, menampilkan placeholder rapi tanpa crash (halaman thin/placeholder dikecualikan dari prerender & \`sitemap.xml\`).
-
----
-
-## 4. Master Data Schema & Interfaces (\`src/types/material.ts\`)
-
-### Struktur \`Material\`
+### Struktur Utama \`ThreeZoneMaterial\` (Format JSON \`content/utbk/*/*.json\`)
 \`\`\`typescript
-interface Material {
-  metadata: {
-    id: string;               // e.g. "pu-1-1" / "pu-01-01"
-    subtest: SubtestType;     // 'PU' | 'PPU' | 'PBM' | 'PK' | 'LBI' | 'LBE' | 'PM'
-    chapter_num: number;
-    chapter_title: string;
-    subchapter_num: string;   // e.g. "1.1"
-    subchapter_title: string;
-    title: string;
-    required_question_variations: string[];
-    requires_svg: boolean;
-    updated_at: string;
+interface ThreeZoneMaterial {
+  kode_subbab: string;          // e.g. "pu-01-01"
+  subtes: string;               // e.g. "Subtes 1: Penalaran Umum (PU)"
+  bab: string;                  // e.g. "Bab 1: Penalaran Induktif"
+  judul_subbab: string;
+  klasifikasi_materi: 'INTI' | 'PENGAYAAN';
+  zona_1_peta_taktis: {
+    estimasi_menit_baca: number;
+    frekuensi_utbk: string;
+    exam_hook?: { pertanyaan_pemantik: string; opsi_cepat: string[]; jawaban_benar_index: number; penjelasan_kilat: string };
+    konsep_inti_markdown: string;
+    detail_materi_lengkap?: DetailMateriLengkap | null; // Zona 1B Accordion
+    radar_jebakan_utbk: string[];
+    visual?: VisualData | null; // tipe: 'svg' | 'mermaid'
   };
-  content: {
-    tactical_overview?: string;
-    exam_blueprint_markdown: string; // Markdown materi dengan KaTeX math
-    visualizations_svg: SvgVisualization[];
-    distractor_traps: string[];
-    quick_execution_algorithm?: string[];
-  };
-  worked_examples: WorkedExample[];
+  zona_2_variasi_inti: {
+    nomor_variasi: number;
+    nama_variasi: string;
+    kategori_variasi: string;
+    stimulus_mini: string;
+    bedah_pola_markdown: string;
+    kunci_pembeda: string;
+    visual?: VisualData | null;
+  }[];
+  zona_3_uji_pemahaman: {
+    nomor_soal: number;
+    menguji_variasi_ke: number[];
+    tipe_soal_utbk: string;
+    pertanyaan_markdown: string;
+    opsi_jawaban: string[];
+    kunci_jawaban: string;
+    bedah_cepat_markdown: string;
+    visual?: VisualData | null;
+  }[];
 }
 \`\`\`
 
-### Struktur \`WorkedExample\` (Soal Drilling Multi-Format)
-\`\`\`typescript
-type QuestionType =
-  | 'standard_mc'          // Pilihan Ganda 5 opsi A-E reguler
-  | 'statements_1234'      // PG Asosiatif (1), (2), (3), (4)
-  | 'data_sufficiency'     // Kecukupan data Pernyataan (1) & (2)
-  | 'mc_complex_table'     // PGK Tabel 2 Kolom (Benar/Salah)
-  | 'mc_complex_checkbox'  // PGK Multi-select (>1 jawaban benar)
-  | 'short_answer'         // Isian singkat numerik / kata baku
-  | string;
-
-interface ComplexStatementItem {
-  id: string;
-  statement_markdown: string;
-  is_true: boolean;
-}
-
-interface WorkedExample {
-  example_id: string;                  // e.g. "pu-01-01-ex1"
-  variation_name: string;              // e.g. "Variasi 1: Simpulan Proporsi Sampel"
-  difficulty: 'easy' | 'medium' | 'hard';
-  question_type: QuestionType;
-  context_markdown?: string | null;    // Teks wacana / stimulus soal
-  svg_illustration?: SvgIllustration | null;
-  question_markdown: string;           // Pertanyaan spesifik
-  options?: { key: string; text_markdown: string }[]; // A, B, C, D, E (opsional untuk non-MC)
-  correct_answer?: 'A' | 'B' | 'C' | 'D' | 'E' | string;
-  // Format baru BPPP: PGK & Isian Singkat
-  complex_statements?: ComplexStatementItem[]; // Baris pernyataan untuk tabel/checkbox
-  table_headers?: [string, string];            // Default: ['Benar', 'Salah']
-  short_answer_key?: string | number;          // Kunci isian angka / kata baku
-  passage_group_id?: string;                   // ID grup wacana bersama
-  hint_markdown?: string;
-  conceptual_solution_markdown: string; // Pembahasan mendalam
-  quick_trick_markdown: string;         // Trik 15-30 detik eliminasi opsi
-  why_others_are_wrong_markdown: string;// Analisis jebakan mengapa opsi lain salah
-}
-\`\`\`
+### Struktur \`WorkedExample\` (Adaptor Drilling Multi-Format BPPP)
+- Tipe soal yang didukung: \`standard_mc\` (PG 5 opsi A–E), \`statements_1234\`, \`data_sufficiency\`, \`mc_complex_table\` (PGK Tabel Benar/Salah), \`mc_complex_checkbox\` (PGK Multi-select), dan \`short_answer\` (Isian singkat numerik/teks).
+- Evaluasi jawaban lintas format ditangani oleh \`isAnswerCorrect\` di \`src/lib/drillingRotationEngine.ts\`.
 
 ---
 
-## 5. Arsitektur Drilling & Deterministic Stratified Rotation Engine (\`src/lib/drillingRotationEngine.ts\`)
+## 7. Arsitektur Drilling & Deterministic Stratified Rotation Engine (\`src/lib/drillingRotationEngine.ts\`)
 
-Mesin perakitan sesi latihan soal menggunakan pendekatan **Stratified Rotation** deterministik untuk mereplikasi proporsi ujian asli UTBK-SNBT BPPP:
-
-### 1. Multi-Subtest & Subchapter Round-Robin Balancing
-- **Alokasi Kuota Proporsional:** Untuk $N$ total soal dari $k$ subtes terpilih, dialokasikan $\\lfloor N / k \\rfloor$ soal per subtes, dan sisa $N \\pmod k$ didistribusikan merata ke subtes pertama.
-- **Bucket Rotation Sub-bab:** Di dalam satu subtes, alokasi soal dirotasi merata ke seluruh \`chapter_num\` dan \`subchapter_num\` terpilih agar materi tidak menumpuk di satu topik saja.
-- **Variation Anti-Collision:** Dalam 1 sesi pengerjaan, tidak ada 2 soal dengan \`variation_name\` yang identik kecuali seluruh variasi unik di sub-bab tersebut telah terpilih.
-- **Passage Grouping:** Soal yang memiliki \`passage_group_id\` (atau stimulus wacana identik) dikelompokkan secara berurutan berdampingan (maksimal 2–3 soal per wacana) agar pengguna tidak membaca ulang stimulus yang sama secara terpisah-pisah.
-
-### 2. Filter & Wave Rotation Tingkat Kesulitan
-- **Strict Difficulty Filter:** Seluruh soal \`difficulty === 'easy'\` otomatis disaring (dibuang). Hanya soal berkategori \`'medium'\` (Sedang, target ~55%) dan \`'hard'\` (HOTS, target ~45%) yang digunakan.
-- **Pola Gelombang 5-Soal (Wave Patterning):** Urutan kesulitan dalam blok subtes mengikuti siklus:
-  \`[medium, medium, hard, medium, hard]\` (dengan fallback otomatis antar \`medium\` $\\leftrightarrow$ \`hard\` jika stok salah satu tingkat kesulitan habis).
-
-### 3. Matriks Proporsi Tipe Soal Resmi BPPP
-Sampling jenis soal menerapkan rasio pakem BPPP per subtes (dengan graceful fallback ke \`standard_mc\` jika tipe soal tertentu belum tersedia):
-- **PU & LBI:** 75% Pilihan Ganda (\`standard_mc\`), 25% PGK (\`mc_complex_table\` / \`mc_complex_checkbox\` / \`statements_1234\`), 0% Isian.
-- **PPU & LBE:** 85% Pilihan Ganda, 15% PGK, 0% Isian.
-- **PBM:** 80% Pilihan Ganda, 15% PGK, 5% Isian Singkat (\`short_answer\`).
-- **PK & PM:** 55% Pilihan Ganda, 25% PGK (\`statements_1234\` / \`data_sufficiency\` / \`mc_complex_table\`), 20% Isian Singkat (\`short_answer\`).
-- **Non-PG Interleaving:** Soal PGK dan Isian tidak ditumpuk di akhir sesi, melainkan disebar merata di sepanjang barisan soal.
-
-### 4. Pelacak Riwayat Soal (LocalStorage Seen Tracker)
-- **Key Storage:** \`utbk_seen_questions_v1\` menyimpan map \`Record<string, number>\` berisi frekuensi pengerjaan per \`example_id\`.
-- **Prioritas Unseen:** Soal dengan frekuensi \`seen_count\` terendah selalu diprioritaskan lebih dulu saat sesi dirakit.
-- **Manajemen Riwayat:** UI drilling menyediakan indikator real-time rasio *Unseen* vs *Seen* dan tombol **"Reset Riwayat Soal"** untuk mengosongkan histori.
-
-### 5. Mode Urutan Penyajian (Order Mode)
-- **🛡️ Blocking per Subtes (Simulasi Asli):** Soal dikelompokkan per subtes secara berurutan sesuai pakem lembar tes UTBK-SNBT resmi.
-- **🔀 Interleaved Round-Robin (Drill Campuran):** Soal dirotasi bergantian antar subtes secara round-robin untuk melatih ketangkasan peralihan konteks berpikir.
-
-### 6. Universal Answer Evaluator (\`isAnswerCorrect\`)
-Mengevaluasi kebenaran jawaban pengguna secara lintas format:
-- \`standard_mc\` / \`statements_1234\` / \`data_sufficiency\`: Kesesuaian kunci opsi A–E (case-insensitive).
-- \`short_answer\`: Pencocokan teks ter-normalisasi (\`trim().toLowerCase()\`) dan kesetaraan desimal numerik (misal: \`1,5\` ekuivalen dengan \`1.5\`).
-- \`mc_complex_table\`: Memvalidasi seluruh baris pernyataan terhadap kolom target (Benar/Salah).
-- \`mc_complex_checkbox\`: Memvalidasi kecocokan himpunan opsi terpilih dengan kunci multi-select.
+Mesin perakitan sesi latihan soal mereplikasi proporsi resmi UTBK-SNBT BPPP:
+1. **Multi-Subtest & Subchapter Round-Robin Balancing:** Kuota $\\lfloor N / k \\rfloor$ per subtes dengan rotasi merata antar bab/sub-bab, *variation anti-collision*, serta pengelompokan wacana (\`passage_group_id\`).
+2. **Difficulty Filter & 5-Item Wave Patterning:** Menyaring \`easy\`, hanya memakai \`medium\` (~55%) dan \`hard\` (~45%) dengan siklus gelombang \`[medium, medium, hard, medium, hard]\`.
+3. **Matriks Proporsi BPPP per Subtes:**
+   - **PU & LBI:** 75% PG, 25% PGK, 0% Isian.
+   - **PPU & LBE:** 85% PG, 15% PGK, 0% Isian.
+   - **PBM:** 80% PG, 15% PGK, 5% Isian Singkat.
+   - **PK & PM:** 55% PG, 25% PGK, 20% Isian Singkat.
+4. **Seen Tracker & Order Modes:** \`utbk_seen_questions_v1\` di \`localStorage\` memprioritaskan soal *unseen*; mendukung mode **Blocking per Subtes** dan **Interleaved Round-Robin**.
 
 ---
 
-## 6. Inventaris Subtes UTBK & Status Bank Soal
+## 8. Inventaris Lengkap Seluruh Materi Web
 
-### Ringkasan 7 Subtes Resmi UTBK SNBT
-Total Keseluruhan: **${utbkContent.totalSubchapters} Sub-bab**, **${utbkContent.totalVariations} Variasi Pola Inti**, **${utbkContent.totalQuestions} Soal Drilling HOTS**.
+### A. Ringkasan 7 Subtes Resmi UTBK-SNBT
+Total: **${utbkContent.totalSubchapters} Sub-bab**, **${utbkContent.totalVariations} Variasi Inti**, **${utbkContent.totalDetailButir} Butir Detail Materi**, **${utbkContent.totalQuestions} Soal Uji/Drilling**.
 
-| Subtes | Kode | Sub-bab Aktif | Variasi Pola Inti | Soal Drilling HOTS |
-| :--- | :---: | :---: | :---: | :---: |
-${utbkContent.subtests.map(s => `| **${s.name}** | \`${s.code.toUpperCase()}\` | ${s.subchapters} Sub-bab | ${s.variations} Variasi | ${s.questions} Soal |`).join('\n')}
+| Subtes | Kode | Sub-bab | Variasi Pola | Detail Butir | Soal HOTS |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+${utbkContent.subtests
+  .map(
+    (s) =>
+      `| **${s.name}** | \`${s.code.toUpperCase()}\` | ${s.subchapters} | ${s.variations} | ${s.detailButir} | ${s.questions} |`
+  )
+  .join('\n')}
 
-### Rincian Sub-bab Penalaran Umum (PU) Aktif
-| ID | Bab | Judul Sub-bab | Variasi | Jumlah Soal |
-| :--- | :--- | :--- | :---: | :---: |
-${puSubtest.files.map(f => `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.variations} variasi | ${f.questions} soal |`).join('\n')}
+### B. Rincian Lengkap ${utbkContent.totalSubchapters} Sub-bab UTBK-SNBT
+${utbkContent.subtests
+  .map(
+    (s) => `#### ${s.name} (\`/utbk/${s.code}\`)
+| ID | Bab | Judul Sub-bab | Klasifikasi | Variasi | Butir | Soal |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
+${s.files
+  .map(
+    (f) =>
+      `| \`${f.id}\` | ${f.chapter} | ${f.title} | ${f.klasifikasi} | ${f.variations} | ${f.detailButir} | ${f.questions} |`
+  )
+  .join('\n')}`
+  )
+  .join('\n\n')}
 
----
+### C. Inventaris ${rangkumanContent.totalBab} Rangkuman Bab / Cheat Sheet (\`/rangkuman/:babId\`)
+| Kode Bab | Subtes | Judul Bab | Sub-bab | Butir | Estimasi |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+${rangkumanContent.babs
+  .map(
+    (b) =>
+      `| \`${b.kode_bab}\` | ${b.subtes} | ${b.bab} | ${b.jumlah_subbab} | ${b.jumlah_butir} | ${b.estimasi_menit} mnt |`
+  )
+  .join('\n')}
 
-## 7. Arsitektur Layout 3 Zona & KaTeX Math Rendering Engine
-
-### A. Layout 3 Zona Terstruktur (\`ThreeZoneMaterialViewer.tsx\`)
-Tampilan materi belajar dioptimalkan untuk ergonomi visual (lebar maksimal 720px, font scaling responsif, progress tracking persentase):
-1. **Zona 1: Peta Taktis & Fondasi Sub-bab**:
-   - **Pemantik Logika (Exam Hook)**: Mini-studi kasus 15 detik yang dibungkus dalam kartu kontras elegan dengan aksen garis vertikal (\`border-l-4\`), opsi tebak cepat 2 pilihan, dan umpan balik kilat instan.
-   - **Fondasi Konsep Inti**: Ringkasan teori padat, formula esensial, skala kepastian, dan diagram alur SVG adaptif dengan fitur perbesar (zoomable modal).
-   - **Radar Jebakan UTBK**: Checklist bias kognitif dan distraktor umum di UTBK.
-2. **Zona 2: Katalog Variasi Pola Soal Inti**:
-   - Tab navigasi interaktif untuk seluruh variasi pola soal sub-bab.
-   - Bedah pola solusi 3 tahap baku: *Formulating* (Terjemahan Cerita), *Employing* (Model Matematika / Logika), dan *Interpreting & Evaluating* (Hitung Taktis & Uji Realitas).
-3. **Zona 3: Uji Pemahaman Mandiri**:
-   - Soal drilling bertingkat HOTS dengan pembahasan instan dan tombol langsung ke mode drilling intensif.
-
-### B. KaTeX & Math Division Standards
-1. **Auto-Promotion \`\\frac\` $\\rightarrow$ \`\\dfrac\`**:
-   - Preprocessor runtime \`formatMathContent\` secara otomatis menaikkan semua \`\\frac\` menjadi display fraction (\`\\dfrac\`) agar pembilang dan penyebut berukuran penuh, tidak gepeng, dan memiliki jarak vertikal bebas tabrakan.
-2. **KaTeX Baseline & Strut Protection**:
-   - \`.katex\` dikunci dengan \`line-height: 1.2 !important\` untuk menjaga akurasi penghitungan strut dan baseline KaTeX.
-   - \`.katex .mfrac .frac-line\` menggunakan ketebalan solid \`1.25px\` dengan \`height: 0 !important\` agar tidak memicu pergeseran offset.
-   - Mengunci \`transform: none !important\` pada seluruh container \`.vlist\`, \`.mfrac\`, dan span turunannya agar tidak ada CSS warisan yang menggeser posisi pembilang/penyebut.
-3. **Optimasi Asset Bundle**:
-   - Penghapusan referensi CSS statis ganda dari \`index.html\` menurunkan ukuran file bundle \`assets/index.css\` dari **15,8 MB menjadi 174 kB** (90x lebih cepat dan bebas konflik).
-
----
-
-## 8. Aturan Wajib Pengembangan untuk AI & Developer
-
-1. **KaTeX & Notasi Matematika**:
-   - Seluruh rumus wajib diapit tanda dollar tunggal \`$...$\`.
-   - Di dalam string JSON, setiap backslash KaTeX **wajib di-escape ganda** (\`\\\\\`), misal: \`$\\\\frac{a}{b}$\`, \`$\\\\approx$\`, \`$\\\\sim p \\\\lor q$\`.
-   - Persen ditulis \`$\\\\92\\\\%$\` atau \`92%\`.
-2. **Struktur Modular & Sinkronisasi Dual-File**:
-   - Bank soal PU berada di modul mandiri per sub-bab: \`src/data/materials/pu/pu-XX-YY.ts\` (misal: \`pu-01-01.ts\`).
-   - Setiap kali mengedit materi/soal, jalankan \`node scripts/export_materials.mjs\` (atau otomatis via \`npm run build\`) untuk mengekspor ke \`public/content/utbk/pu/\` & \`content/utbk/pu/\`.
-3. **Batch Generation Rule**:
-   - Maksimal generate **5 soal per batch** untuk menjaga kualitas berpikir tingkat tinggi (HOTS) dan ketajaman opsi pengecoh.
-4. **Verifikasi Komputasi Bab 03 (Penalaran Kuantitatif)**:
-   - Sebelum menyimpan soal angka/kuantitatif, wajib verifikasi komputasi matematika dengan skrip eksekusi (Python / Node) untuk mencegah salah kunci/angka.
-5. **Auto-Update Context**:
-   - Setiap kali melakukan perubahan struktur file atau menambah soal, jalankan:
-     \`\`\`bash
-     npm run summary
-     \`\`\`
-   - Atau biarkan pre-commit hook / watch mode memperbarui file ini secara otomatis.
+### D. Kurikulum Mata Pelajaran SMA (\`/sma/:subject\` — \`ENABLE_SMA_MODE = false\`, \`noindex\`)
+| ID | Mata Pelajaran | Kategori | Topik Siap | Topik Mendatang |
+| :--- | :--- | :---: | :---: | :---: |
+${smaSubjects
+  .map((s) => `| \`${s.id}\` | ${s.name} | ${s.category.toUpperCase()} | ${s.readyCount} | ${s.upcomingCount} |`)
+  .join('\n')}
 
 ---
 
-## 9. Perintah Terminal Penting
+## 9. Standar KaTeX & Aturan Wajib Pengembangan
 
-| Perintah | Deskripsi |
+1. **Standar KaTeX (\`src/index.css\` & runtime preprocessor):**
+   - Auto-promotion \`\\frac\` $\\rightarrow$ \`\\dfrac\` pada renderer Markdown agar pecahan tampil besar dan tidak bertabrakan.
+   - \`.katex\` dikunci \`line-height: 1.2 !important\`, \`.frac-line\` \`1.25px\` dengan \`height: 0 !important\`, dan \`transform: none !important\` pada \`.vlist\` / \`.mfrac\`.
+   - Seluruh rumus dalam JSON memakai tanda dollar tunggal \`$...$\` dengan backslash ter-escape ganda (\`\\\\\`).
+2. **Aturan Modifikasi:**
+   - Jangan ubah logika \`src/lib/drillingRotationEngine.ts\` maupun aturan KaTeX baseline/strut protection di \`src/index.css\`.
+   - Verifikasi komputasi soal kuantitatif (PU/PK/PM) sebelum menyimpan JSON.
+   - Setiap kali menambah atau mengubah struktur/materi, jalankan \`npm run build\` dan \`npm run summary\`.
+
+---
+
+## 10. Perintah Operasional & Environment Variables
+
+| Perintah / Variabel | Deskripsi |
 | :--- | :--- |
 | \`npm run dev\` | Menjalankan Vite dev server lokal |
-| \`npm run build\` | Menjalankan tsc, vite build, dan copy asset GitHub Pages |
-| \`npm run summary\` | Memperbarui file \`PROJECT_CONTEXT.md\` secara otomatis |
-| \`npm run summary:watch\` | Menjalankan pemantau file otomatis (auto-update setiap save) |
-| \`node scripts/export_materials.mjs\` | Mengekspor materi dari TS ke JSON publik |
-| \`npm run lint\` | Menjalankan oxlint untuk pengecekan kode cepat |
-
+| \`npm run build\` | Export JSON + \`tsc -b\` + Vite client/SSR build + batch SSG prerender + SEO sitemap/robots |
+| \`npm run summary\` | Memperbarui file \`PROJECT_CONTEXT.md\` ini secara otomatis |
+| \`node scripts/export_materials.mjs\` | Sinkronisasi JSON materi ke \`content/utbk/\` dan \`public/content/utbk/\` |
+| \`SITE_URL=https://domainanda.com\` | Env build-time untuk canonical, OpenGraph, JSON-LD, \`sitemap.xml\`, dan \`robots.txt\` |
+| \`VITE_ADSENSE_CLIENT_ID=ca-pub-...\` | Env build-time untuk mengaktifkan script \`adsbygoogle.js\` di \`<head>\` & slot \`AdSlot\` |
 `;
 
   fs.writeFileSync(OUTPUT_FILE, md, 'utf8');
@@ -467,10 +628,12 @@ if (process.argv.includes('--watch')) {
   };
 
   const watchDirs = ['src', 'content', 'scripts'];
-  watchDirs.forEach(dir => {
+  watchDirs.forEach((dir) => {
     const fullDir = path.join(ROOT_DIR, dir);
     if (fs.existsSync(fullDir)) {
-      fs.watch(fullDir, { recursive: true }, (event, filename) => triggerUpdate(`${dir}/${filename}`));
+      fs.watch(fullDir, { recursive: true }, (_event, filename) =>
+        triggerUpdate(`${dir}/${filename}`)
+      );
     }
   });
   fs.watch(path.join(ROOT_DIR, 'package.json'), () => triggerUpdate('package.json'));

@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef, memo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import {
   Zap,
   ChevronLeft,
@@ -26,6 +27,7 @@ import type {
   RangkumanBabData,
   RangkumanIndexData,
   RangkumanSubbab,
+  RangkumanButir,
 } from '../types/rangkuman';
 import {
   fetchRangkumanByBabId,
@@ -36,7 +38,188 @@ import { ThemeToggle } from '../components/common/ThemeToggle';
 import { NatureFocusHeaderAccent } from '../components/decorations/LazyDecorations';
 
 // Strict KaTeX configuration: output: 'html' to guarantee 0 <math> tags
+const REMARK_PLUGINS = [remarkMath, remarkGfm];
 const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
+
+function formatMath(content?: string) {
+  if (!content) return '';
+  return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
+}
+
+const INLINE_COMPONENTS = {
+  p: ({ children }: any) => <span className="inline">{children}</span>,
+  strong: ({ children }: any) => (
+    <strong className="font-semibold text-slate-900 dark:text-slate-100">{children}</strong>
+  ),
+  em: ({ children }: any) => (
+    <em className="italic font-medium text-blue-700 dark:text-blue-300">{children}</em>
+  ),
+  code: ({ children }: any) => (
+    <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+      {children}
+    </code>
+  ),
+};
+
+const THEORY_COMPONENTS = {
+  p: ({ children }: any) => <p className="m-0 leading-[1.65]">{children}</p>,
+  strong: ({ children }: any) => (
+    <strong className="font-semibold text-slate-900 dark:text-slate-100">{children}</strong>
+  ),
+  em: ({ children }: any) => (
+    <em className="italic font-medium text-blue-700 dark:text-blue-300">{children}</em>
+  ),
+  code: ({ children }: any) => (
+    <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+      {children}
+    </code>
+  ),
+};
+
+const EXAMPLE_COMPONENTS = {
+  p: ({ children }: any) => <p className="m-0 leading-[1.55]">{children}</p>,
+  strong: ({ children }: any) => (
+    <strong className="font-semibold text-slate-900 dark:text-[#F8FAFC]">{children}</strong>
+  ),
+  em: ({ children }: any) => (
+    <em className="italic font-medium text-blue-700 dark:text-blue-300">{children}</em>
+  ),
+  code: ({ children }: any) => (
+    <code className="font-mono px-1.5 py-0.5 rounded bg-emerald-100/60 dark:bg-emerald-950/60 text-xs text-emerald-800 dark:text-emerald-300">
+      {children}
+    </code>
+  ),
+};
+
+const KONSEP_INTI_COMPONENTS = {
+  p: ({ children }: any) => <p className="m-0 leading-[1.6]">{children}</p>,
+  ul: ({ children }: any) => (
+    <ul className="m-0 pl-5 list-disc list-outside space-y-2 marker:text-sky-500/80 dark:marker:text-sky-400/80">
+      {children}
+    </ul>
+  ),
+  ol: ({ children }: any) => (
+    <ol className="m-0 pl-5 list-decimal list-outside space-y-2 marker:text-sky-500/80 dark:marker:text-sky-400/80">
+      {children}
+    </ol>
+  ),
+  li: ({ children }: any) => (
+    <li className="leading-[1.6] pl-1 break-words overflow-x-auto">{children}</li>
+  ),
+  strong: ({ children }: any) => (
+    <strong className="font-semibold text-slate-900 dark:text-slate-100">{children}</strong>
+  ),
+  em: ({ children }: any) => (
+    <em className="italic font-medium text-blue-700 dark:text-blue-300">{children}</em>
+  ),
+  code: ({ children }: any) => (
+    <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
+      {children}
+    </code>
+  ),
+};
+
+const MemoRangkumanMarkdown = memo<{
+  text?: string;
+  variant: 'inline' | 'theory' | 'example' | 'konsep';
+}>(({ text, variant }) => {
+  if (!text) return null;
+  const components =
+    variant === 'inline'
+      ? INLINE_COMPONENTS
+      : variant === 'theory'
+      ? THEORY_COMPONENTS
+      : variant === 'example'
+      ? EXAMPLE_COMPONENTS
+      : KONSEP_INTI_COMPONENTS;
+
+  return (
+    <ReactMarkdown
+      remarkPlugins={REMARK_PLUGINS}
+      rehypePlugins={KATEX_REHYPE_PLUGINS}
+      components={components}
+    >
+      {formatMath(text)}
+    </ReactMarkdown>
+  );
+});
+MemoRangkumanMarkdown.displayName = 'MemoRangkumanMarkdown';
+
+const renderMarkdownInline = (text?: string) =>
+  text ? <MemoRangkumanMarkdown text={text} variant="inline" /> : null;
+const renderMarkdownTheory = (text?: string) =>
+  text ? <MemoRangkumanMarkdown text={text} variant="theory" /> : null;
+const renderMarkdownExample = (text?: string) =>
+  text ? <MemoRangkumanMarkdown text={text} variant="example" /> : null;
+const renderKonsepInti = (text?: string) =>
+  text ? <MemoRangkumanMarkdown text={text} variant="konsep" /> : null;
+
+interface ButirCardProps {
+  butir: RangkumanButir;
+  bIdx: number;
+  activeRecallMode: boolean;
+  isRevealed: boolean;
+  hasAnyContoh: boolean;
+  onToggleReveal: () => void;
+}
+
+const RangkumanButirCard = memo<ButirCardProps>(
+  ({ butir, bIdx, activeRecallMode, isRevealed, hasAnyContoh, onToggleReveal }) => {
+    const judulText = butir.judul || butir.judul_poin || '';
+    const teoriText = butir.teori_singkat || butir.penjelasan_singkat || '';
+    const contohText = butir.contoh || butir.contoh_penerapan || '';
+    const isBlurred = activeRecallMode && !isRevealed;
+
+    return (
+      <div className="rangkuman-card rounded-xl bg-white dark:bg-[#131D34] border border-slate-200/90 dark:border-slate-700/65 p-4 sm:p-5 shadow-2xs dark:shadow-none">
+        <div
+          className={`grid grid-cols-1 ${
+            contohText ? 'md:grid-cols-2 md:gap-6' : ''
+          } gap-3.5 items-start`}
+        >
+          <div className="min-w-0">
+            <div className="flex items-start gap-2.5 pb-2.5 border-b border-slate-100 dark:border-slate-700/55">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-sky-50 dark:bg-sky-500/15 border border-sky-200 dark:border-sky-400/30 text-[11px] font-mono font-semibold text-sky-700 dark:text-sky-300 shrink-0 mt-0.5 select-none">
+                {String(bIdx + 1).padStart(2, '0')}
+              </span>
+              <h4 className="rangkuman-poin-title text-[15.5px] font-semibold text-slate-900 dark:text-slate-100 leading-[1.4] break-words">
+                {renderMarkdownInline(judulText)}
+              </h4>
+            </div>
+
+            {teoriText && (
+              <div className="mt-2.5 sm:pl-8.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
+                {renderMarkdownTheory(teoriText)}
+              </div>
+            )}
+          </div>
+
+          {contohText && (
+            <div
+              onClick={activeRecallMode ? onToggleReveal : undefined}
+              className={`rangkuman-row-contoh sm:ml-8.5 md:ml-0 rounded-lg border border-emerald-200/70 dark:border-emerald-800/40 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-400/80 bg-emerald-50/70 dark:bg-emerald-950/25 px-3.5 py-2.5 transition-all ${
+                activeRecallMode ? 'cursor-pointer' : ''
+              } ${isBlurred ? 'active-recall-blur' : ''}`}
+              title={isBlurred ? 'Klik untuk melihat contoh' : undefined}
+            >
+              <div
+                className={`text-[10.5px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400 mb-1 select-none ${
+                  hasAnyContoh ? 'md:hidden' : ''
+                }`}
+              >
+                CONTOH
+              </div>
+              <div className="rangkuman-example-text text-slate-800 dark:text-slate-200 leading-[1.55] dark:tracking-[0.01em] break-words overflow-x-auto">
+                {renderMarkdownExample(contohText)}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+);
+RangkumanButirCard.displayName = 'RangkumanButirCard';
 
 interface RangkumanPageProps {
   theme?: 'light' | 'dark';
@@ -94,7 +277,9 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 
   // Reader-matching states: Focus Mode & Font Scaling
   const [isFocusMode, setIsFocusMode] = useState<boolean>(false);
-  const [scrollProgress, setScrollProgress] = useState<number>(0);
+  const progressTextRef = useRef<HTMLSpanElement | null>(null);
+  const progressBarFillRef = useRef<HTMLDivElement | null>(null);
+  const progressAriaRef = useRef<HTMLDivElement | null>(null);
 
   // Flexible Font Size Scale: 0.85 to 1.4 (Default 1.0, synced with reader)
   const [fontScale, setFontScale] = useState<number>(() => {
@@ -124,30 +309,43 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     setExpandedGroups({});
   }, [babId]);
 
-  // Real-time scroll progress tracker
+  // Real-time scroll progress tracker via requestAnimationFrame (0 React re-renders during scroll!)
   useEffect(() => {
     if (typeof window === 'undefined') return;
+    let rafId = 0;
 
-    const handleScroll = () => {
+    const updateProgressDom = () => {
+      rafId = 0;
       const doc = document.documentElement;
       const totalHeight = doc.scrollHeight - window.innerHeight;
-      if (totalHeight <= 0) {
-        setScrollProgress(100);
-        return;
+      const pct =
+        totalHeight <= 0
+          ? 100
+          : Math.min(100, Math.max(0, Math.round((window.scrollY / totalHeight) * 100)));
+
+      if (progressTextRef.current) {
+        progressTextRef.current.textContent = `${pct}%`;
       }
-      const current = window.scrollY;
-      const pct = Math.min(
-        100,
-        Math.max(0, Math.round((current / totalHeight) * 100))
-      );
-      setScrollProgress(pct);
+      if (progressBarFillRef.current) {
+        progressBarFillRef.current.style.width = `${pct}%`;
+      }
+      if (progressAriaRef.current) {
+        progressAriaRef.current.setAttribute('aria-valuenow', String(pct));
+      }
+    };
+
+    const handleScroll = () => {
+      if (!rafId) {
+        rafId = window.requestAnimationFrame(updateProgressDom);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
+    updateProgressDom();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      if (rafId) window.cancelAnimationFrame(rafId);
     };
   }, [babId, babData, activeSubbabIndex]);
 
@@ -222,161 +420,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
       ? allBabsList[currentBabIndex + 1]
       : null;
 
-  // Format Math & Markdown
-  const formatMath = (content?: string) => {
-    if (!content) return '';
-    return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
-  };
-
   // Normalisasi tampilan nama kelompok bila ada awalan angka tidak konsisten (misal "1. ...")
   const normalizeGroupTitle = (title: string): string => {
     if (!title) return '';
     return title.replace(/^(\d+[\.\)]\s*)+/, '').trim();
-  };
-
-  // Renderer untuk judul poin (inline element, KaTeX enabled)
-  const renderMarkdownInline = (text?: string) => {
-    if (!text) return null;
-    return (
-      <ReactMarkdown
-        remarkPlugins={[remarkMath, remarkGfm]}
-        rehypePlugins={KATEX_REHYPE_PLUGINS}
-        components={{
-          p: ({ children }) => <span className="inline">{children}</span>,
-          strong: ({ children }) => (
-            <strong className="font-semibold text-slate-900 dark:text-slate-100">
-              {children}
-            </strong>
-          ),
-          em: ({ children }) => (
-            <em className="italic font-medium text-blue-700 dark:text-blue-300">
-              {children}
-            </em>
-          ),
-          code: ({ children }) => (
-            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
-              {children}
-            </code>
-          ),
-        }}
-      >
-        {formatMath(text)}
-      </ReactMarkdown>
-    );
-  };
-
-  // Renderer untuk teori_singkat: text-slate-800 dark:text-slate-200, strong: slate-900 / slate-100, em: blue-700 / blue-300
-  const renderMarkdownTheory = (text?: string) => {
-    if (!text) return null;
-    return (
-      <ReactMarkdown
-        remarkPlugins={[remarkMath, remarkGfm]}
-        rehypePlugins={KATEX_REHYPE_PLUGINS}
-        components={{
-          p: ({ children }) => (
-            <p className="m-0 leading-[1.65]">{children}</p>
-          ),
-          strong: ({ children }) => (
-            <strong className="font-semibold text-slate-900 dark:text-slate-100">
-              {children}
-            </strong>
-          ),
-          em: ({ children }) => (
-            <em className="italic font-medium text-blue-700 dark:text-blue-300">
-              {children}
-            </em>
-          ),
-          code: ({ children }) => (
-            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
-              {children}
-            </code>
-          ),
-        }}
-      >
-        {formatMath(text)}
-      </ReactMarkdown>
-    );
-  };
-
-  // Renderer untuk contoh: leading-[1.55], strong: slate-900 / #F8FAFC
-  const renderMarkdownExample = (text?: string) => {
-    if (!text) return null;
-    return (
-      <ReactMarkdown
-        remarkPlugins={[remarkMath, remarkGfm]}
-        rehypePlugins={KATEX_REHYPE_PLUGINS}
-        components={{
-          p: ({ children }) => (
-            <p className="m-0 leading-[1.55]">{children}</p>
-          ),
-          strong: ({ children }) => (
-            <strong className="font-semibold text-slate-900 dark:text-[#F8FAFC]">
-              {children}
-            </strong>
-          ),
-          em: ({ children }) => (
-            <em className="italic font-medium text-blue-700 dark:text-blue-300">
-              {children}
-            </em>
-          ),
-          code: ({ children }) => (
-            <code className="font-mono px-1.5 py-0.5 rounded bg-emerald-100/60 dark:bg-emerald-950/60 text-xs text-emerald-800 dark:text-emerald-300">
-              {children}
-            </code>
-          ),
-        }}
-      >
-        {formatMath(text)}
-      </ReactMarkdown>
-    );
-  };
-
-  // Renderer untuk konsep_inti_markdown dengan spacing paragraf & list
-  const renderKonsepInti = (text?: string) => {
-    if (!text) return null;
-    return (
-      <ReactMarkdown
-        remarkPlugins={[remarkMath, remarkGfm]}
-        rehypePlugins={KATEX_REHYPE_PLUGINS}
-        components={{
-          p: ({ children }) => (
-            <p className="m-0 leading-[1.6]">{children}</p>
-          ),
-          ul: ({ children }) => (
-            <ul className="m-0 pl-5 list-disc list-outside space-y-2 marker:text-sky-500/80 dark:marker:text-sky-400/80">
-              {children}
-            </ul>
-          ),
-          ol: ({ children }) => (
-            <ol className="m-0 pl-5 list-decimal list-outside space-y-2 marker:text-sky-500/80 dark:marker:text-sky-400/80">
-              {children}
-            </ol>
-          ),
-          li: ({ children }) => (
-            <li className="leading-[1.6] pl-1 break-words overflow-x-auto">
-              {children}
-            </li>
-          ),
-          strong: ({ children }) => (
-            <strong className="font-semibold text-slate-900 dark:text-slate-100">
-              {children}
-            </strong>
-          ),
-          em: ({ children }) => (
-            <em className="italic font-medium text-blue-700 dark:text-blue-300">
-              {children}
-            </em>
-          ),
-          code: ({ children }) => (
-            <code className="font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs text-blue-600 dark:text-blue-300">
-              {children}
-            </code>
-          ),
-        }}
-      >
-        {formatMath(text)}
-      </ReactMarkdown>
-    );
   };
 
   // Color badges based on Subtes
@@ -525,6 +572,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
           font-feature-settings: "cv02", "cv03", "cv04", "cv11";
         }
+        .rangkuman-card {
+          content-visibility: auto;
+          contain-intrinsic-size: auto 180px;
+        }
         .rangkuman-reading-area .font-mono,
         .rangkuman-reading-area code {
           font-family: 'JetBrains Mono', monospace;
@@ -656,19 +707,24 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
             {/* Real-Time Progress Bar (hanya saat membaca Bab) */}
             {babId && (
               <div className="flex items-center gap-1 sm:gap-2">
-                <span className="font-mono text-[11px] sm:text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[28px] sm:min-w-[32px] text-right">
-                  {scrollProgress}%
+                <span
+                  ref={progressTextRef}
+                  className="font-mono text-[11px] sm:text-xs font-bold text-slate-600 dark:text-slate-300 min-w-[28px] sm:min-w-[32px] text-right"
+                >
+                  0%
                 </span>
                 <div
+                  ref={progressAriaRef}
                   className="w-10 sm:w-20 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden"
                   role="progressbar"
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  aria-valuenow={scrollProgress}
+                  aria-valuenow={0}
                 >
                   <div
-                    className="h-full bg-blue-600 transition-all duration-300 ease-out rounded-full"
-                    style={{ width: `${scrollProgress}%` }}
+                    ref={progressBarFillRef}
+                    className="h-full bg-blue-600 transition-[width] duration-150 ease-out rounded-full"
+                    style={{ width: '0%' }}
                   />
                 </div>
               </div>
@@ -1139,72 +1195,22 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 
                                   <div className="p-3 sm:p-4 space-y-3.5">
                                     {k.butir.map((b, bIdx) => {
-                                      const judulText = b.judul || b.judul_poin || '';
-                                      const teoriText = b.teori_singkat || b.penjelasan_singkat || '';
-                                      const contohText = b.contoh || b.contoh_penerapan || '';
                                       const itemId = `${sub.kode_subbab}-${kIdx}-${bIdx}`;
-                                      const isRevealed = Boolean(revealedItems[itemId]);
-                                      const isBlurred = activeRecallMode && !isRevealed;
-
                                       return (
-                                        <div
+                                        <RangkumanButirCard
                                           key={bIdx}
-                                          className="rangkuman-card rounded-xl bg-white dark:bg-[#131D34] border border-slate-200/90 dark:border-slate-700/65 p-4 sm:p-5 shadow-2xs dark:shadow-none"
-                                        >
-                                          <div
-                                            className={`grid grid-cols-1 ${
-                                              contohText ? 'md:grid-cols-2 md:gap-6' : ''
-                                            } gap-3.5 items-start`}
-                                          >
-                                            {/* Sisi Kiri: Judul Poin + Teori Utama */}
-                                            <div className="min-w-0">
-                                              {/* Baris Judul Poin: Badge Nomor Mikro + Judul Berjangkar Rapi */}
-                                              <div className="flex items-start gap-2.5 pb-2.5 border-b border-slate-100 dark:border-slate-700/55">
-                                                <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-sky-50 dark:bg-sky-500/15 border border-sky-200 dark:border-sky-400/30 text-[11px] font-mono font-semibold text-sky-700 dark:text-sky-300 shrink-0 mt-0.5 select-none">
-                                                  {String(bIdx + 1).padStart(2, '0')}
-                                                </span>
-                                                <h4 className="rangkuman-poin-title text-[15.5px] font-semibold text-slate-900 dark:text-slate-100 leading-[1.4] break-words">
-                                                  {renderMarkdownInline(judulText)}
-                                                </h4>
-                                              </div>
-
-                                              {/* Baris Teori Singkat: Indentasi Ringan di Desktop (sm:pl-8.5), Rata Kiri di Mobile */}
-                                              {teoriText && (
-                                                <div className="mt-2.5 sm:pl-8.5 rangkuman-theory-text text-slate-800 dark:text-slate-200 leading-[1.65] dark:tracking-[0.01em] break-words overflow-x-auto">
-                                                  {renderMarkdownTheory(teoriText)}
-                                                </div>
-                                              )}
-                                            </div>
-
-                                            {/* Sisi Kanan: Blok Contoh Ringkas & Bersih */}
-                                            {contohText && (
-                                              <div
-                                                onClick={() => {
-                                                  if (activeRecallMode) {
-                                                    setRevealedItems((prev) => ({
-                                                      ...prev,
-                                                      [itemId]: !prev[itemId],
-                                                    }));
-                                                  }
-                                                }}
-                                                className={`rangkuman-row-contoh sm:ml-8.5 md:ml-0 rounded-lg border border-emerald-200/70 dark:border-emerald-800/40 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-400/80 bg-emerald-50/70 dark:bg-emerald-950/25 px-3.5 py-2.5 transition-all ${
-                                                  activeRecallMode ? 'cursor-pointer' : ''
-                                                } ${isBlurred ? 'active-recall-blur' : ''}`}
-                                                title={
-                                                  isBlurred ? 'Klik untuk melihat contoh' : undefined
-                                                }
-                                              >
-                                                {/* Label statis ringkas 1 kata: CONTOH (mobile selalu terlihat, desktop diwakili header matriks jika ada) */}
-                                                <div className={`text-[10.5px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400 mb-1 select-none ${hasAnyContoh ? 'md:hidden' : ''}`}>
-                                                  CONTOH
-                                                </div>
-                                                <div className="rangkuman-example-text text-slate-800 dark:text-slate-200 leading-[1.55] dark:tracking-[0.01em] break-words overflow-x-auto">
-                                                  {renderMarkdownExample(contohText)}
-                                                </div>
-                                              </div>
-                                            )}
-                                          </div>
-                                        </div>
+                                          butir={b}
+                                          bIdx={bIdx}
+                                          activeRecallMode={activeRecallMode}
+                                          isRevealed={Boolean(revealedItems[itemId])}
+                                          hasAnyContoh={hasAnyContoh}
+                                          onToggleReveal={() =>
+                                            setRevealedItems((prev) => ({
+                                              ...prev,
+                                              [itemId]: !prev[itemId],
+                                            }))
+                                          }
+                                        />
                                       );
                                     })}
                                   </div>

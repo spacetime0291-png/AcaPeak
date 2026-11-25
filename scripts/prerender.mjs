@@ -18,6 +18,11 @@ const SITE_URL = (
   process.env.VITE_SITE_URL ||
   'https://acapeak.spacetime0291.workers.dev'
 ).replace(/\/+$/, '');
+const ADSENSE_CLIENT_ID = (process.env.VITE_ADSENSE_CLIENT_ID || '').trim();
+const HAS_LIVE_ADSENSE =
+  ADSENSE_CLIENT_ID.startsWith('ca-pub-') &&
+  !ADSENSE_CLIENT_ID.includes('XXXX') &&
+  !ADSENSE_CLIENT_ID.includes('000000');
 const BATCH_SIZE = 16;
 
 function findServerEntry(dir) {
@@ -120,6 +125,24 @@ function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
     );
   }
 
+  // Optional Google AdSense global verification / Auto Ads <head> script when configured
+  if (HAS_LIVE_ADSENSE && !seo.noindex) {
+    headTags.push(
+      `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(
+        ADSENSE_CLIENT_ID
+      )}" crossorigin="anonymous"></script>`
+    );
+  }
+
+  // Inject KaTeX / lazy route stylesheets only on pages that render math/markdown
+  if (Array.isArray(seo.extraStylesheets) && seo.extraStylesheets.length > 0) {
+    for (const cssHref of seo.extraStylesheets) {
+      if (!html.includes(cssHref)) {
+        headTags.push(`<link rel="stylesheet" crossorigin href="${escapeHtml(cssHref)}" />`);
+      }
+    }
+  }
+
   // Inject head tags before </head>
   html = html.replace('</head>', () => `  ${headTags.join('\n  ')}\n</head>`);
 
@@ -163,6 +186,15 @@ async function prerender() {
   }
   const templateHtml = await fs.promises.readFile(templatePath, 'utf8');
 
+  // Discover lazy CSS stylesheets (e.g. KaTeX CSS) not included in main templateHtml
+  const assetsDir = path.join(DIST_DIR, 'assets');
+  const mathCssFiles = fs.existsSync(assetsDir)
+    ? fs
+        .readdirSync(assetsDir)
+        .filter((f) => f.endsWith('.css') && !templateHtml.includes(`/assets/${f}`))
+        .map((f) => `/assets/${f}`)
+    : [];
+
   const serverEntryPath = findServerEntry(path.join(DIST_DIR, 'server'));
   if (!serverEntryPath) {
     throw new Error('Server entry point (entry-server.js) not found in dist/server!');
@@ -198,7 +230,7 @@ async function prerender() {
   // 1. HOME PAGE (/)
   // -----------------------------------------------------------
   console.log('📄 Pre-rendering Home Page (/) ...');
-  const homeRender = render('/');
+  const homeRender = await render('/');
   const homeSeo = {
     title: 'SkolAce | Platform Belajar & Drilling UTBK-SNBT Bebas Biaya (Rp0)',
     description:
@@ -229,7 +261,7 @@ async function prerender() {
     const code = sub.code.toLowerCase();
     const url = `/utbk/${code}`;
     const subName = sub.title || sub.name || sub.code;
-    const subRender = render(url);
+    const subRender = await render(url);
     const subSeo = {
       title: `Silabus & Drilling ${subName} (${sub.code.toUpperCase()}) | SkolAce UTBK-SNBT`,
       description: `Silabus resmi, materi taktis 3 zona, dan bank soal drilling HOTS untuk subtes ${subName} (${sub.code.toUpperCase()}) UTBK-SNBT.`,
@@ -300,7 +332,7 @@ async function prerender() {
       return;
     }
 
-    const matRender = render(url, { initialMaterial: rawMaterial });
+    const matRender = await render(url, { initialMaterial: rawMaterial });
     const matTitle = rawMaterial.judul_subbab || topic.title;
     const chapterTitle = rawMaterial.bab || topic.chapterTitle;
     const coreSnippet = stripMarkdownSnippet(
@@ -315,6 +347,7 @@ async function prerender() {
         : `Pelajari materi ${matTitle} pada ${chapterTitle} (${topic.subtestCode}) UTBK-SNBT lengkap dengan konsep inti, variasi pola soal, dan uji pemahaman.`,
       canonical: `${SITE_URL}${url}`,
       ogType: 'article',
+      extraStylesheets: mathCssFiles,
       schema: {
         '@context': 'https://schema.org',
         '@type': ['Article', 'LearningResource'],
@@ -365,7 +398,7 @@ async function prerender() {
     try {
       const rangkumanIndex = JSON.parse(await fs.promises.readFile(rangkumanIndexPath, 'utf8'));
       console.log('📑 Pre-rendering Rangkuman Index Page (/rangkuman) ...');
-      const rIdxRender = render('/rangkuman', { initialRangkumanIndex: rangkumanIndex });
+      const rIdxRender = await render('/rangkuman', { initialRangkumanIndex: rangkumanIndex });
       const rIdxSeo = {
         title: 'Cheat Sheet & Rangkuman Cepat UTBK-SNBT per Bab | SkolAce',
         description:
@@ -396,7 +429,7 @@ async function prerender() {
           return;
         }
 
-        const bRender = render(babUrl, {
+        const bRender = await render(babUrl, {
           initialRangkumanBab: rawBab,
           initialRangkumanIndex: rangkumanIndex,
         });
@@ -406,6 +439,7 @@ async function prerender() {
           description: `Lembar cheat sheet rangkuman padat ${babTitle} (${b.kode_bab.toUpperCase()}). 1 Teori Singkat = 1 Contoh Nyata berstandar UTBK-SNBT.`,
           canonical: `${SITE_URL}${babUrl}`,
           ogType: 'article',
+          extraStylesheets: mathCssFiles,
           schema: {
             '@context': 'https://schema.org',
             '@type': ['Article', 'LearningResource'],
@@ -446,7 +480,7 @@ async function prerender() {
   // 5. SMA ROUTES (/sma, /sma/:subject) — Marked noindex until full articles are populated
   // -----------------------------------------------------------
   const smaSubjects = parseSmaSubjectsMetadata();
-  const smaHomeRender = render('/sma');
+  const smaHomeRender = await render('/sma');
   await writeStaticPage(
     '/sma',
     injectSeoIntoHtml(templateHtml, smaHomeRender.html, {
@@ -460,7 +494,7 @@ async function prerender() {
 
   await runInBatches(smaSubjects, BATCH_SIZE, async (subj) => {
     const url = `/sma/${subj.id}`;
-    const sRender = render(url);
+    const sRender = await render(url);
     await writeStaticPage(
       url,
       injectSeoIntoHtml(templateHtml, sRender.html, {
@@ -505,7 +539,7 @@ async function prerender() {
 
   await Promise.all(
     legalPages.map(async (lp) => {
-      const lpRender = render(lp.url);
+      const lpRender = await render(lp.url);
       const lpSeo = {
         title: lp.title,
         description: lp.description,

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo, Suspense, lazy } from
 import {
   Routes,
   Route,
+  Link,
   useNavigate,
   useParams,
   useSearchParams,
@@ -17,44 +18,158 @@ import {
   adaptThreeZoneMaterial,
 } from './lib/contentLoader';
 import type { Material, ThreeZoneMaterial, WorkedExample } from './types/material';
+import type { RangkumanBabData, RangkumanIndexData } from './types/rangkuman';
 import { TopHeader } from './components/navigation/TopHeader';
 import { Footer } from './components/navigation/Footer';
 import { UtbkSubtestGrid } from './components/home/UtbkSubtestGrid';
-import { SmaSubjectGrid } from './components/home/SmaSubjectGrid';
-import { SubtestDetailView } from './components/subtest/SubtestDetailView';
-import { SmaSubjectDetailView } from './components/subtest/SmaSubjectDetailView';
-import { PdfMaterialReader } from './components/reader/PdfMaterialReader';
 import {
   CosmicNebulaGlow,
   CosmicStarsBg,
   NatureDecorationsBg,
 } from './components/decorations/LazyDecorations';
 
-// Lazy-load client-only interactive Drilling engine so initial public pages stay lightweight
-const ActiveDrillingView = lazy(() =>
-  import('./components/drilling/ActiveDrillingView').then((m) => ({
-    default: m.ActiveDrillingView,
-  }))
-);
+// Dynamic importers shared between React.lazy() and pre-hydration/SSR resolution
+const importSubtestDetailView = () =>
+  import('./components/subtest/SubtestDetailView').then((m) => m.SubtestDetailView);
+const importPdfMaterialReader = () =>
+  import('./components/reader/PdfMaterialReader').then((m) => m.PdfMaterialReader);
+const importActiveDrillingView = () =>
+  import('./components/drilling/ActiveDrillingView').then((m) => m.ActiveDrillingView);
+const importSmaSubjectGrid = () =>
+  import('./components/home/SmaSubjectGrid').then((m) => m.SmaSubjectGrid);
+const importSmaSubjectDetailView = () =>
+  import('./components/subtest/SmaSubjectDetailView').then((m) => m.SmaSubjectDetailView);
+const importRangkumanPage = () =>
+  import('./pages/RangkumanPage').then((m) => m.RangkumanPage);
+const importAboutPage = () => import('./pages/AboutPage').then((m) => m.AboutPage);
+const importPrivacyPolicyPage = () =>
+  import('./pages/PrivacyPolicyPage').then((m) => m.PrivacyPolicyPage);
+const importTermsPage = () => import('./pages/TermsPage').then((m) => m.TermsPage);
+const importContactPage = () => import('./pages/ContactPage').then((m) => m.ContactPage);
 
-// Legal & Rangkuman pages
-import { AboutPage } from './pages/AboutPage';
-import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
-import { TermsPage } from './pages/TermsPage';
-import { ContactPage } from './pages/ContactPage';
-import { RangkumanPage } from './pages/RangkumanPage';
-import type { RangkumanBabData, RangkumanIndexData } from './types/rangkuman';
+const LazySubtestDetailView = lazy(async () => ({ default: await importSubtestDetailView() }));
+const LazyPdfMaterialReader = lazy(async () => ({ default: await importPdfMaterialReader() }));
+const LazyActiveDrillingView = lazy(async () => ({ default: await importActiveDrillingView() }));
+const LazySmaSubjectGrid = lazy(async () => ({ default: await importSmaSubjectGrid() }));
+const LazySmaSubjectDetailView = lazy(async () => ({
+  default: await importSmaSubjectDetailView(),
+}));
+const LazyRangkumanPage = lazy(async () => ({ default: await importRangkumanPage() }));
+const LazyAboutPage = lazy(async () => ({ default: await importAboutPage() }));
+const LazyPrivacyPolicyPage = lazy(async () => ({ default: await importPrivacyPolicyPage() }));
+const LazyTermsPage = lazy(async () => ({ default: await importTermsPage() }));
+const LazyContactPage = lazy(async () => ({ default: await importContactPage() }));
+
+export interface ResolvedRouteComponents {
+  SubtestDetailView?: React.ComponentType<any>;
+  PdfMaterialReader?: React.ComponentType<any>;
+  ActiveDrillingView?: React.ComponentType<any>;
+  SmaSubjectGrid?: React.ComponentType<any>;
+  SmaSubjectDetailView?: React.ComponentType<any>;
+  RangkumanPage?: React.ComponentType<any>;
+  AboutPage?: React.ComponentType<any>;
+  PrivacyPolicyPage?: React.ComponentType<any>;
+  TermsPage?: React.ComponentType<any>;
+  ContactPage?: React.ComponentType<any>;
+}
+
+/**
+ * Pre-resolves the single lazy route chunk matching `pathname` before SSR renderToString
+ * or client hydrateRoot, guaranteeing flat SSR HTML and zero Suspense flash on initial load.
+ */
+export async function resolveRouteComponents(pathname: string): Promise<ResolvedRouteComponents> {
+  const clean = (pathname.split('?')[0].replace(/\/+$/, '') || '/').toLowerCase();
+
+  if (clean === '/') return {};
+  if (/^\/utbk\/[^/]+\/[^/]+$/.test(clean)) {
+    return { PdfMaterialReader: await importPdfMaterialReader() };
+  }
+  if (/^\/utbk\/[^/]+$/.test(clean)) {
+    return { SubtestDetailView: await importSubtestDetailView() };
+  }
+  if (clean === '/rangkuman' || /^\/rangkuman\/[^/]+$/.test(clean)) {
+    return { RangkumanPage: await importRangkumanPage() };
+  }
+  if (clean === '/sma') {
+    return { SmaSubjectGrid: await importSmaSubjectGrid() };
+  }
+  if (/^\/sma\/[^/]+$/.test(clean)) {
+    return { SmaSubjectDetailView: await importSmaSubjectDetailView() };
+  }
+  if (clean === '/drilling' || /^\/drilling\/[^/]+$/.test(clean)) {
+    return { ActiveDrillingView: await importActiveDrillingView() };
+  }
+  if (clean === '/about') return { AboutPage: await importAboutPage() };
+  if (clean === '/privacy-policy') return { PrivacyPolicyPage: await importPrivacyPolicyPage() };
+  if (clean === '/terms') return { TermsPage: await importTermsPage() };
+  if (clean === '/contact') return { ContactPage: await importContactPage() };
+
+  return {};
+}
 
 interface AppProps {
   initialMaterial?: Material | ThreeZoneMaterial | null;
   initialRangkumanBab?: RangkumanBabData | null;
   initialRangkumanIndex?: RangkumanIndexData | null;
+  preloadedComponents?: ResolvedRouteComponents;
 }
 
 function deriveSubtestFromMateriId(materiId: string): string {
   const prefix = materiId.split('-')[0]?.toLowerCase() || 'pu';
   const matched = UTBK_SYLLABUS.find((s) => s.code.toLowerCase() === prefix);
   return matched ? matched.code.toLowerCase() : prefix;
+}
+
+function RouteLoadingFallback() {
+  return (
+    <div className="flex-1 flex items-center justify-center py-24 px-4">
+      <div className="text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm px-8 py-10 max-w-md w-full">
+        <div className="inline-block w-8 h-8 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3" />
+        <p className="text-sm font-semibold text-slate-600 dark:text-slate-300">
+          Memuat halaman...
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function LazyBoundary({ children }: { children: React.ReactNode }) {
+  return <Suspense fallback={<RouteLoadingFallback />}>{children}</Suspense>;
+}
+
+function NotFoundView() {
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.title = 'Halaman Tidak Ditemukan (404) | SkolAce';
+    }
+  }, []);
+
+  return (
+    <>
+      <main className="flex-1 flex items-center justify-center px-4 py-20">
+        <div className="max-w-md w-full text-center p-8 rounded-3xl bg-white dark:bg-[#0c1326] border border-stone-200 dark:border-slate-800 shadow-sm space-y-4">
+          <div className="inline-flex px-3 py-1 rounded-full text-xs font-mono font-bold bg-rose-100 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300">
+            404 • Tidak Ditemukan
+          </div>
+          <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">
+            Halaman Tidak Tersedia
+          </h1>
+          <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Alamat yang Anda tuju tidak ditemukan atau telah dipindahkan ke struktur URL baru.
+          </p>
+          <div className="pt-2">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold transition shadow-xs"
+            >
+              Kembali ke Beranda UTBK
+            </Link>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 // -------------------------------------------------------------
@@ -109,7 +224,6 @@ function LegacyQueryRedirect() {
   return null;
 }
 
-// Legacy path redirects (/subtest/:id, /materi/:id -> /utbk/...)
 function LegacySubtestPathRedirect() {
   const { subtestId = 'pu' } = useParams<{ subtestId: string }>();
   const location = useLocation();
@@ -143,11 +257,7 @@ function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 
   return (
     <>
-      <TopHeader
-        mode="utbk"
-        theme={theme}
-        onToggleTheme={onToggleTheme}
-      />
+      <TopHeader mode="utbk" theme={theme} onToggleTheme={onToggleTheme} />
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
         <UtbkSubtestGrid theme={theme} />
       </main>
@@ -159,7 +269,11 @@ function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 // -------------------------------------------------------------
 // ROUTE VIEW: SMA DASHBOARD (/sma)
 // -------------------------------------------------------------
-function SmaHomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
+function SmaHomeRouteView({
+  theme,
+  onToggleTheme,
+  GridComponent,
+}: HomeRouteViewProps & { GridComponent: React.ComponentType<any> }) {
   useEffect(() => {
     if (typeof document !== 'undefined') {
       document.title = 'Kurikulum Mata Pelajaran SMA | SkolAce';
@@ -171,13 +285,9 @@ function SmaHomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 
   return (
     <>
-      <TopHeader
-        mode="sma"
-        theme={theme}
-        onToggleTheme={onToggleTheme}
-      />
+      <TopHeader mode="sma" theme={theme} onToggleTheme={onToggleTheme} />
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
-        <SmaSubjectGrid theme={theme} />
+        <GridComponent theme={theme} />
       </main>
       <Footer />
     </>
@@ -187,7 +297,11 @@ function SmaHomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 // -------------------------------------------------------------
 // ROUTE VIEW: SMA SUBJECT DETAIL (/sma/:subject)
 // -------------------------------------------------------------
-function SmaSubjectRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
+function SmaSubjectRouteView({
+  theme,
+  onToggleTheme,
+  DetailComponent,
+}: HomeRouteViewProps & { DetailComponent: React.ComponentType<any> }) {
   const { subject = '' } = useParams<{ subject: string }>();
   const navigate = useNavigate();
 
@@ -210,7 +324,7 @@ function SmaSubjectRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
   return (
     <>
       <main className="flex-1 w-full max-w-4xl mx-auto px-2 sm:px-4 py-3 sm:py-5">
-        <SmaSubjectDetailView
+        <DetailComponent
           subject={currentSubject}
           theme={theme}
           onToggleTheme={onToggleTheme}
@@ -229,6 +343,7 @@ function SmaSubjectRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 interface SubtestRouteViewProps {
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
+  DetailComponent: React.ComponentType<any>;
   onStartDrilling: (
     subchapterIds: string[],
     questionCount: number,
@@ -237,7 +352,12 @@ interface SubtestRouteViewProps {
   ) => Promise<void>;
 }
 
-function SubtestRouteView({ theme, onToggleTheme, onStartDrilling }: SubtestRouteViewProps) {
+function SubtestRouteView({
+  theme,
+  onToggleTheme,
+  DetailComponent,
+  onStartDrilling,
+}: SubtestRouteViewProps) {
   const { subtest } = useParams<{ subtest: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -267,19 +387,19 @@ function SubtestRouteView({ theme, onToggleTheme, onStartDrilling }: SubtestRout
   return (
     <>
       <main className="flex-1 w-full px-1 sm:px-3 py-2 sm:py-4">
-        <SubtestDetailView
+        <DetailComponent
           subtest={currentSubtest}
           activeTab={activeTab}
           initialSelectedTopicId={selectedTopicId}
           theme={theme}
           onToggleTheme={onToggleTheme}
-          onTabChange={(newTab) => {
+          onTabChange={(newTab: 'materi' | 'drilling') => {
             setSearchParams(newTab === 'drilling' ? { tab: 'drilling' } : {});
           }}
           onBackToHome={() => {
             navigate('/');
           }}
-          onSelectSubtest={(newCode) => {
+          onSelectSubtest={(newCode: string) => {
             navigate(`/utbk/${newCode.toLowerCase()}`);
           }}
           onStartDrilling={onStartDrilling}
@@ -296,20 +416,20 @@ function SubtestRouteView({ theme, onToggleTheme, onStartDrilling }: SubtestRout
 interface MaterialRouteViewProps {
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
+  ReaderComponent: React.ComponentType<any>;
   initialMaterial?: Material | ThreeZoneMaterial | null;
 }
 
 function MaterialRouteView({
   theme,
   onToggleTheme,
+  ReaderComponent,
   initialMaterial: propInitialMaterial,
 }: MaterialRouteViewProps) {
   const { subtest = '', materiId = '' } = useParams<{ subtest: string; materiId: string }>();
   const navigate = useNavigate();
 
-  // Pick initial material synchronously from prop, SSR injection, or #__PAGE_DATA__
-  const ssrMat = getSsrInitialMaterial();
-  const initCandidateRaw = propInitialMaterial || ssrMat;
+  const initCandidateRaw = propInitialMaterial || getSsrInitialMaterial();
   const initCandidate: Material | null = useMemo(() => {
     if (!initCandidateRaw) return null;
     if ('metadata' in initCandidateRaw && initCandidateRaw.metadata) {
@@ -361,7 +481,6 @@ function MaterialRouteView({
       });
   }, [materiId, activeMaterial]);
 
-  // Derived subtest items for next/prev navigation
   const currentSubtest = useMemo(() => {
     const code = (
       activeMaterial?.metadata?.subtest ||
@@ -413,7 +532,7 @@ function MaterialRouteView({
             </p>
           </div>
         ) : (
-          <PdfMaterialReader
+          <ReaderComponent
             material={activeMaterial}
             theme={theme}
             onToggleTheme={onToggleTheme}
@@ -434,11 +553,11 @@ function MaterialRouteView({
 
 // -------------------------------------------------------------
 // ROUTE VIEW: ACTIVE DRILLING SESSION (/drilling & /drilling/:subtest)
-// Client-side SPA only; NO Footer, NO AdSlot (Distraction-free exam simulation)
 // -------------------------------------------------------------
 interface DrillingRouteViewProps {
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
+  DrillingComponent: React.ComponentType<any>;
   drillingQuestions: WorkedExample[];
   setDrillingQuestions: React.Dispatch<React.SetStateAction<WorkedExample[]>>;
   drillingTimerMinutes: number | null;
@@ -447,6 +566,7 @@ interface DrillingRouteViewProps {
 function DrillingRouteView({
   theme,
   onToggleTheme,
+  DrillingComponent,
   drillingQuestions,
   setDrillingQuestions,
   drillingTimerMinutes,
@@ -461,7 +581,6 @@ function DrillingRouteView({
     }
   }, [questionIndex]);
 
-  // Fallback: If user refreshed directly on /drilling or /drilling/:subtest
   useEffect(() => {
     if (drillingQuestions.length === 0) {
       const sub =
@@ -480,30 +599,19 @@ function DrillingRouteView({
 
   return (
     <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
-      <Suspense
-        fallback={
-          <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto my-6">
-            <div className="inline-block w-9 h-9 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3"></div>
-            <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold">
-              Menyiapkan mode latihan soal...
-            </p>
-          </div>
-        }
-      >
-        <ActiveDrillingView
-          questions={drillingQuestions}
-          currentQuestionIndex={questionIndex}
-          timerMinutes={drillingTimerMinutes}
-          theme={theme}
-          onToggleTheme={onToggleTheme}
-          onNavigateQuestion={(newIndex) => {
-            setQuestionIndex(newIndex);
-          }}
-          onExitDrilling={() => {
-            navigate(`/utbk/${subtest.toLowerCase()}?tab=drilling`);
-          }}
-        />
-      </Suspense>
+      <DrillingComponent
+        questions={drillingQuestions}
+        currentQuestionIndex={questionIndex}
+        timerMinutes={drillingTimerMinutes}
+        theme={theme}
+        onToggleTheme={onToggleTheme}
+        onNavigateQuestion={(newIndex: number) => {
+          setQuestionIndex(newIndex);
+        }}
+        onExitDrilling={() => {
+          navigate(`/utbk/${subtest.toLowerCase()}?tab=drilling`);
+        }}
+      />
     </main>
   );
 }
@@ -515,15 +623,14 @@ export default function App({
   initialMaterial,
   initialRangkumanBab,
   initialRangkumanIndex,
+  preloadedComponents = {},
 }: AppProps) {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Drilling session state
   const [drillingQuestions, setDrillingQuestions] = useState<WorkedExample[]>([]);
   const [drillingTimerMinutes, setDrillingTimerMinutes] = useState<number | null>(15);
 
-  // Theme state: 'light' | 'dark'
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     if (typeof window === 'undefined') return 'light';
     try {
@@ -564,6 +671,17 @@ export default function App({
     navigate(`/drilling/${subtestCode}`);
   };
 
+  const SubtestComp = preloadedComponents.SubtestDetailView || LazySubtestDetailView;
+  const ReaderComp = preloadedComponents.PdfMaterialReader || LazyPdfMaterialReader;
+  const DrillingComp = preloadedComponents.ActiveDrillingView || LazyActiveDrillingView;
+  const SmaGridComp = preloadedComponents.SmaSubjectGrid || LazySmaSubjectGrid;
+  const SmaDetailComp = preloadedComponents.SmaSubjectDetailView || LazySmaSubjectDetailView;
+  const RangkumanComp = preloadedComponents.RangkumanPage || LazyRangkumanPage;
+  const AboutComp = preloadedComponents.AboutPage || LazyAboutPage;
+  const PrivacyComp = preloadedComponents.PrivacyPolicyPage || LazyPrivacyPolicyPage;
+  const TermsComp = preloadedComponents.TermsPage || LazyTermsPage;
+  const ContactComp = preloadedComponents.ContactPage || LazyContactPage;
+
   const isDrillingView = location.pathname.startsWith('/drilling');
   const isMateriView =
     /^\/utbk\/[^/]+\/[^/]+/.test(location.pathname) || location.pathname.startsWith('/materi');
@@ -575,7 +693,6 @@ export default function App({
     <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-clip bg-[#fdfbf7] dark:bg-[#070913]">
       <LegacyQueryRedirect />
 
-      {/* Non-critical ambient decorations loaded lazily after main hydration */}
       {isAmbientThemeView ? (
         isDark ? (
           <>
@@ -605,60 +722,131 @@ export default function App({
           <Route
             path="/utbk/:subtest"
             element={
-              <SubtestRouteView
-                theme={theme}
-                onToggleTheme={toggleTheme}
-                onStartDrilling={handleStartDrilling}
-              />
+              preloadedComponents.SubtestDetailView ? (
+                <SubtestRouteView
+                  theme={theme}
+                  onToggleTheme={toggleTheme}
+                  DetailComponent={SubtestComp}
+                  onStartDrilling={handleStartDrilling}
+                />
+              ) : (
+                <LazyBoundary>
+                  <SubtestRouteView
+                    theme={theme}
+                    onToggleTheme={toggleTheme}
+                    DetailComponent={SubtestComp}
+                    onStartDrilling={handleStartDrilling}
+                  />
+                </LazyBoundary>
+              )
             }
           />
           <Route
             path="/utbk/:subtest/:materiId"
             element={
-              <MaterialRouteView
-                theme={theme}
-                onToggleTheme={toggleTheme}
-                initialMaterial={initialMaterial}
-              />
+              preloadedComponents.PdfMaterialReader ? (
+                <MaterialRouteView
+                  theme={theme}
+                  onToggleTheme={toggleTheme}
+                  ReaderComponent={ReaderComp}
+                  initialMaterial={initialMaterial}
+                />
+              ) : (
+                <LazyBoundary>
+                  <MaterialRouteView
+                    theme={theme}
+                    onToggleTheme={toggleTheme}
+                    ReaderComponent={ReaderComp}
+                    initialMaterial={initialMaterial}
+                  />
+                </LazyBoundary>
+              )
             }
           />
 
           {/* 3. SMA Curriculum Routes */}
           <Route
             path="/sma"
-            element={<SmaHomeRouteView theme={theme} onToggleTheme={toggleTheme} />}
+            element={
+              preloadedComponents.SmaSubjectGrid ? (
+                <SmaHomeRouteView theme={theme} onToggleTheme={toggleTheme} GridComponent={SmaGridComp} />
+              ) : (
+                <LazyBoundary>
+                  <SmaHomeRouteView theme={theme} onToggleTheme={toggleTheme} GridComponent={SmaGridComp} />
+                </LazyBoundary>
+              )
+            }
           />
           <Route
             path="/sma/:subject"
-            element={<SmaSubjectRouteView theme={theme} onToggleTheme={toggleTheme} />}
+            element={
+              preloadedComponents.SmaSubjectDetailView ? (
+                <SmaSubjectRouteView
+                  theme={theme}
+                  onToggleTheme={toggleTheme}
+                  DetailComponent={SmaDetailComp}
+                />
+              ) : (
+                <LazyBoundary>
+                  <SmaSubjectRouteView
+                    theme={theme}
+                    onToggleTheme={toggleTheme}
+                    DetailComponent={SmaDetailComp}
+                  />
+                </LazyBoundary>
+              )
+            }
           />
 
           {/* 4. Rangkuman Bab / Cheat Sheet */}
           <Route
             path="/rangkuman"
             element={
-              <>
-                <RangkumanPage
-                  theme={theme}
-                  onToggleTheme={toggleTheme}
-                  initialIndexData={initialRangkumanIndex}
-                />
-                <Footer />
-              </>
+              preloadedComponents.RangkumanPage ? (
+                <>
+                  <RangkumanComp
+                    theme={theme}
+                    onToggleTheme={toggleTheme}
+                    initialIndexData={initialRangkumanIndex}
+                  />
+                  <Footer />
+                </>
+              ) : (
+                <LazyBoundary>
+                  <RangkumanComp
+                    theme={theme}
+                    onToggleTheme={toggleTheme}
+                    initialIndexData={initialRangkumanIndex}
+                  />
+                  <Footer />
+                </LazyBoundary>
+              )
             }
           />
           <Route
             path="/rangkuman/:babId"
             element={
-              <>
-                <RangkumanPage
-                  theme={theme}
-                  onToggleTheme={toggleTheme}
-                  initialBabData={initialRangkumanBab}
-                  initialIndexData={initialRangkumanIndex}
-                />
-                <Footer />
-              </>
+              preloadedComponents.RangkumanPage ? (
+                <>
+                  <RangkumanComp
+                    theme={theme}
+                    onToggleTheme={toggleTheme}
+                    initialBabData={initialRangkumanBab}
+                    initialIndexData={initialRangkumanIndex}
+                  />
+                  <Footer />
+                </>
+              ) : (
+                <LazyBoundary>
+                  <RangkumanComp
+                    theme={theme}
+                    onToggleTheme={toggleTheme}
+                    initialBabData={initialRangkumanBab}
+                    initialIndexData={initialRangkumanIndex}
+                  />
+                  <Footer />
+                </LazyBoundary>
+              )
             }
           />
 
@@ -666,25 +854,31 @@ export default function App({
           <Route
             path="/drilling"
             element={
-              <DrillingRouteView
-                theme={theme}
-                onToggleTheme={toggleTheme}
-                drillingQuestions={drillingQuestions}
-                setDrillingQuestions={setDrillingQuestions}
-                drillingTimerMinutes={drillingTimerMinutes}
-              />
+              <LazyBoundary>
+                <DrillingRouteView
+                  theme={theme}
+                  onToggleTheme={toggleTheme}
+                  DrillingComponent={DrillingComp}
+                  drillingQuestions={drillingQuestions}
+                  setDrillingQuestions={setDrillingQuestions}
+                  drillingTimerMinutes={drillingTimerMinutes}
+                />
+              </LazyBoundary>
             }
           />
           <Route
             path="/drilling/:subtest"
             element={
-              <DrillingRouteView
-                theme={theme}
-                onToggleTheme={toggleTheme}
-                drillingQuestions={drillingQuestions}
-                setDrillingQuestions={setDrillingQuestions}
-                drillingTimerMinutes={drillingTimerMinutes}
-              />
+              <LazyBoundary>
+                <DrillingRouteView
+                  theme={theme}
+                  onToggleTheme={toggleTheme}
+                  DrillingComponent={DrillingComp}
+                  drillingQuestions={drillingQuestions}
+                  setDrillingQuestions={setDrillingQuestions}
+                  drillingTimerMinutes={drillingTimerMinutes}
+                />
+              </LazyBoundary>
             }
           />
 
@@ -692,37 +886,65 @@ export default function App({
           <Route
             path="/about"
             element={
-              <>
-                <AboutPage theme={theme} onToggleTheme={toggleTheme} />
-                <Footer />
-              </>
+              preloadedComponents.AboutPage ? (
+                <>
+                  <AboutComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </>
+              ) : (
+                <LazyBoundary>
+                  <AboutComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </LazyBoundary>
+              )
             }
           />
           <Route
             path="/privacy-policy"
             element={
-              <>
-                <PrivacyPolicyPage theme={theme} onToggleTheme={toggleTheme} />
-                <Footer />
-              </>
+              preloadedComponents.PrivacyPolicyPage ? (
+                <>
+                  <PrivacyComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </>
+              ) : (
+                <LazyBoundary>
+                  <PrivacyComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </LazyBoundary>
+              )
             }
           />
           <Route
             path="/terms"
             element={
-              <>
-                <TermsPage theme={theme} onToggleTheme={toggleTheme} />
-                <Footer />
-              </>
+              preloadedComponents.TermsPage ? (
+                <>
+                  <TermsComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </>
+              ) : (
+                <LazyBoundary>
+                  <TermsComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </LazyBoundary>
+              )
             }
           />
           <Route
             path="/contact"
             element={
-              <>
-                <ContactPage theme={theme} onToggleTheme={toggleTheme} />
-                <Footer />
-              </>
+              preloadedComponents.ContactPage ? (
+                <>
+                  <ContactComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </>
+              ) : (
+                <LazyBoundary>
+                  <ContactComp theme={theme} onToggleTheme={toggleTheme} />
+                  <Footer />
+                </LazyBoundary>
+              )
             }
           />
 
@@ -730,8 +952,8 @@ export default function App({
           <Route path="/subtest/:subtestId" element={<LegacySubtestPathRedirect />} />
           <Route path="/materi/:materialId" element={<LegacyMateriPathRedirect />} />
 
-          {/* Fallback to Home */}
-          <Route path="*" element={<Navigate to="/" replace />} />
+          {/* 404 Not Found View */}
+          <Route path="*" element={<NotFoundView />} />
         </Routes>
       </div>
     </div>

@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, memo } from 'react';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import {
   CheckCircle2,
   Lightbulb,
@@ -31,7 +32,140 @@ import { AdSlot } from '../common/AdSlot';
 import { VisualRenderer } from './VisualRenderer';
 import { DetailMateriAccordion } from './DetailMateriAccordion';
 
+const REMARK_PLUGINS = [remarkMath, remarkGfm];
 const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
+
+const MARKDOWN_COMPONENTS = {
+  table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
+    <div className="w-full overflow-x-auto my-4 max-w-full rounded-xl border border-slate-200 dark:border-slate-800 shadow-2xs">
+      <table className="w-full min-w-full text-left border-collapse text-sm sm:text-base leading-relaxed" {...props}>
+        {children}
+      </table>
+    </div>
+  ),
+  thead: ({ children, ...props }: React.ComponentPropsWithoutRef<'thead'>) => (
+    <thead className="bg-slate-100 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 font-bold" {...props}>
+      {children}
+    </thead>
+  ),
+  tbody: ({ children, ...props }: React.ComponentPropsWithoutRef<'tbody'>) => (
+    <tbody className="divide-y divide-slate-200 dark:divide-slate-800 bg-white dark:bg-slate-900" {...props}>
+      {children}
+    </tbody>
+  ),
+  tr: ({ children, ...props }: React.ComponentPropsWithoutRef<'tr'>) => (
+    <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" {...props}>
+      {children}
+    </tr>
+  ),
+  th: ({ children, ...props }: React.ComponentPropsWithoutRef<'th'>) => (
+    <th className="py-2.5 px-3.5 font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base align-top" {...props}>
+      {children}
+    </th>
+  ),
+  td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
+    <td className="py-2.5 px-3.5 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed align-top" {...props}>
+      {children}
+    </td>
+  ),
+  p: ({ children, ...props }: React.ComponentPropsWithoutRef<'p'>) => (
+    <p className="my-2.5 leading-relaxed text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full overflow-x-auto" {...props}>
+      {children}
+    </p>
+  ),
+  li: ({ children, ...props }: React.ComponentPropsWithoutRef<'li'>) => (
+    <li className="leading-relaxed text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full my-1.5 overflow-x-auto" {...props}>
+      {children}
+    </li>
+  ),
+  ul: ({ children, ...props }: React.ComponentPropsWithoutRef<'ul'>) => (
+    <ul className="list-disc list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+      {children}
+    </ul>
+  ),
+  ol: ({ children, ...props }: React.ComponentPropsWithoutRef<'ol'>) => (
+    <ol className="list-decimal list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+      {children}
+    </ol>
+  ),
+  strong: ({ children, ...props }: React.ComponentPropsWithoutRef<'strong'>) => (
+    <strong className="font-bold text-slate-900 dark:text-white" {...props}>
+      {children}
+    </strong>
+  ),
+  em: ({ children, ...props }: React.ComponentPropsWithoutRef<'em'>) => (
+    <em className="italic text-inherit" {...props}>
+      {children}
+    </em>
+  ),
+  code: ({ inline, className, children, ...props }: any) => {
+    if (inline) {
+      return (
+        <code className="bg-slate-100 dark:bg-slate-800 text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded font-mono text-[0.9em] break-all" {...props}>
+          {children}
+        </code>
+      );
+    }
+    return (
+      <code className={`block overflow-x-auto max-w-full ${className || ''}`} {...props}>
+        {children}
+      </code>
+    );
+  },
+  pre: ({ children, ...props }: React.ComponentPropsWithoutRef<'pre'>) => (
+    <div className="w-full overflow-x-auto my-3 max-w-full rounded-xl bg-slate-900 text-slate-100 p-4">
+      <pre {...props}>{children}</pre>
+    </div>
+  ),
+};
+
+const INLINE_MARKDOWN_COMPONENTS = {
+  p: ({ children }: any) => <span className="inline leading-relaxed">{children}</span>,
+  strong: ({ children }: any) => <strong className="font-bold text-inherit">{children}</strong>,
+  em: ({ children }: any) => <em className="italic text-inherit">{children}</em>,
+  code: ({ children }: any) => (
+    <code className="bg-slate-100 dark:bg-slate-800 text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded font-mono text-[0.9em]">
+      {children}
+    </code>
+  ),
+};
+
+function formatMathContent(content?: string) {
+  if (!content) return '';
+  return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
+}
+
+const MemoMarkdown = memo<{ text?: string }>(({ text }) => {
+  if (!text) return null;
+  return (
+    <ReactMarkdown
+      remarkPlugins={REMARK_PLUGINS}
+      rehypePlugins={KATEX_REHYPE_PLUGINS}
+      components={MARKDOWN_COMPONENTS}
+    >
+      {formatMathContent(text)}
+    </ReactMarkdown>
+  );
+});
+MemoMarkdown.displayName = 'MemoMarkdown';
+
+const MemoInlineMarkdown = memo<{ text?: string }>(({ text }) => {
+  if (!text) return null;
+  return (
+    <ReactMarkdown
+      remarkPlugins={REMARK_PLUGINS}
+      rehypePlugins={KATEX_REHYPE_PLUGINS}
+      components={INLINE_MARKDOWN_COMPONENTS}
+    >
+      {formatMathContent(text)}
+    </ReactMarkdown>
+  );
+});
+MemoInlineMarkdown.displayName = 'MemoInlineMarkdown';
+
+const renderMarkdownStable = (text?: string) => (text ? <MemoMarkdown text={text} /> : null);
+const renderInlineMarkdownStable = (text?: string) =>
+  text ? <MemoInlineMarkdown text={text} /> : null;
 
 interface ThreeZoneMaterialViewerProps {
   material: Material;
@@ -182,134 +316,8 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
     }));
   };
 
-  // Academic Markdown Components matching reference HTML specs
-  const markdownComponents = {
-    table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
-      <div className="w-full overflow-x-auto my-4 max-w-full rounded-xl border border-slate-200 dark:border-slate-800 shadow-2xs">
-        <table className="w-full min-w-full text-left border-collapse text-sm sm:text-base leading-relaxed" {...props}>
-          {children}
-        </table>
-      </div>
-    ),
-    thead: ({ children, ...props }: React.ComponentPropsWithoutRef<'thead'>) => (
-      <thead className="bg-slate-100 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 font-bold" {...props}>
-        {children}
-      </thead>
-    ),
-    tbody: ({ children, ...props }: React.ComponentPropsWithoutRef<'tbody'>) => (
-      <tbody className="divide-y divide-slate-200 dark:divide-slate-800 bg-white dark:bg-slate-900" {...props}>
-        {children}
-      </tbody>
-    ),
-    tr: ({ children, ...props }: React.ComponentPropsWithoutRef<'tr'>) => (
-      <tr className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" {...props}>
-        {children}
-      </tr>
-    ),
-    th: ({ children, ...props }: React.ComponentPropsWithoutRef<'th'>) => (
-      <th className="py-2.5 px-3.5 font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base align-top" {...props}>
-        {children}
-      </th>
-    ),
-    td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
-      <td className="py-2.5 px-3.5 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed align-top" {...props}>
-        {children}
-      </td>
-    ),
-    p: ({ children, ...props }: React.ComponentPropsWithoutRef<'p'>) => (
-      <p className="my-2.5 leading-relaxed text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full overflow-x-auto" {...props}>
-        {children}
-      </p>
-    ),
-    li: ({ children, ...props }: React.ComponentPropsWithoutRef<'li'>) => (
-      <li className="leading-relaxed text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full my-1.5 overflow-x-auto" {...props}>
-        {children}
-      </li>
-    ),
-    ul: ({ children, ...props }: React.ComponentPropsWithoutRef<'ul'>) => (
-      <ul className="list-disc list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
-        {children}
-      </ul>
-    ),
-    ol: ({ children, ...props }: React.ComponentPropsWithoutRef<'ol'>) => (
-      <ol className="list-decimal list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
-        {children}
-      </ol>
-    ),
-    strong: ({ children, ...props }: React.ComponentPropsWithoutRef<'strong'>) => (
-      <strong className="font-bold text-slate-900 dark:text-white" {...props}>
-        {children}
-      </strong>
-    ),
-    em: ({ children, ...props }: React.ComponentPropsWithoutRef<'em'>) => (
-      <em className="italic text-inherit" {...props}>
-        {children}
-      </em>
-    ),
-    code: ({ inline, className, children, ...props }: any) => {
-      if (inline) {
-        return (
-          <code className="bg-slate-100 dark:bg-slate-800 text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded font-mono text-[0.9em] break-all" {...props}>
-            {children}
-          </code>
-        );
-      }
-      return (
-        <code className={`block overflow-x-auto max-w-full ${className || ''}`} {...props}>
-          {children}
-        </code>
-      );
-    },
-    pre: ({ children, ...props }: React.ComponentPropsWithoutRef<'pre'>) => (
-      <div className="w-full overflow-x-auto my-3 max-w-full rounded-xl bg-slate-900 text-slate-100 p-4">
-        <pre {...props}>{children}</pre>
-      </div>
-    ),
-  };
-
-  // Inline markdown components for labels, options, and quick text
-  const inlineMarkdownComponents = {
-    p: ({ children }: any) => <span className="inline leading-relaxed">{children}</span>,
-    strong: ({ children }: any) => <strong className="font-bold text-inherit">{children}</strong>,
-    em: ({ children }: any) => <em className="italic text-inherit">{children}</em>,
-    code: ({ children }: any) => (
-      <code className="bg-slate-100 dark:bg-slate-800 text-blue-700 dark:text-blue-300 px-1.5 py-0.5 rounded font-mono text-[0.9em]">
-        {children}
-      </code>
-    ),
-  };
-
-  // Preprocessor to promote inline fractions (\frac) to display fractions (\dfrac) for generous spacing and crisp division bars
-  const formatMathContent = (content?: string) => {
-    if (!content) return '';
-    return content.replace(/\\frac(?=[{\s])/g, '\\dfrac');
-  };
-
-  const renderMarkdown = (text?: string) => {
-    if (!text) return null;
-    return (
-      <ReactMarkdown
-        remarkPlugins={[remarkMath, remarkGfm]}
-        rehypePlugins={KATEX_REHYPE_PLUGINS}
-        components={markdownComponents}
-      >
-        {formatMathContent(text)}
-      </ReactMarkdown>
-    );
-  };
-
-  const renderInlineMarkdown = (text?: string) => {
-    if (!text) return null;
-    return (
-      <ReactMarkdown
-        remarkPlugins={[remarkMath, remarkGfm]}
-        rehypePlugins={KATEX_REHYPE_PLUGINS}
-        components={inlineMarkdownComponents}
-      >
-        {formatMathContent(text)}
-      </ReactMarkdown>
-    );
-  };
+  const renderMarkdown = useCallback(renderMarkdownStable, []);
+  const renderInlineMarkdown = useCallback(renderInlineMarkdownStable, []);
 
   const activeVariasi = variasiList[activeVariasiIndex];
 

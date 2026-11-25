@@ -1,21 +1,24 @@
 import { StrictMode } from 'react';
 import { hydrateRoot, createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import 'katex/dist/katex.min.css';
 import './index.css';
-import App from './App.tsx';
+import App, { resolveRouteComponents } from './App.tsx';
 import { hydrateInitialMaterialFromPageData } from './lib/contentLoader';
 import { getInitialRangkumanFromPageData } from './lib/rangkumanLoader';
 
-// Read <script id="__PAGE_DATA__" type="application/json"> synchronously (0ms latency)
-// before React hydration so active material/rangkuman renders with zero network fetch.
-const initialMaterial = hydrateInitialMaterialFromPageData();
-const { babData: initialRangkumanBab, indexData: initialRangkumanIndex } =
-  getInitialRangkumanFromPageData();
+async function bootstrapClient() {
+  // 1. Read <script id="__PAGE_DATA__" type="application/json"> synchronously (0ms latency)
+  const initialMaterial = hydrateInitialMaterialFromPageData();
+  const { babData: initialRangkumanBab, indexData: initialRangkumanIndex } =
+    getInitialRangkumanFromPageData();
 
-const rootElement = document.getElementById('root');
+  // 2. Preload ONLY the lazy route chunk for the current URL before hydrateRoot
+  //    so hydration runs synchronously with zero Suspense fallback flash.
+  const preloadedComponents = await resolveRouteComponents(window.location.pathname);
 
-if (rootElement) {
+  const rootElement = document.getElementById('root');
+  if (!rootElement) return;
+
   const hasPreRenderedContent =
     rootElement.hasChildNodes() && rootElement.innerHTML.trim().length > 0;
 
@@ -26,6 +29,7 @@ if (rootElement) {
           initialMaterial={initialMaterial}
           initialRangkumanBab={initialRangkumanBab}
           initialRangkumanIndex={initialRangkumanIndex}
+          preloadedComponents={preloadedComponents}
         />
       </BrowserRouter>
     </StrictMode>
@@ -37,3 +41,5 @@ if (rootElement) {
     createRoot(rootElement).render(appTree);
   }
 }
+
+bootstrapClient();

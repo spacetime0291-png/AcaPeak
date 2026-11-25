@@ -121,6 +121,31 @@ export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme 
               </div>
             </div>
           </div>
+
+          {/* Editorial & E-E-A-T Quality Standard */}
+          <div className="p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-white/75 dark:bg-slate-900/50 space-y-4">
+            <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+              Standar Editorial &amp; Verifikasi Kurikulum
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Seluruh 106 sub-bab materi, 27 lembar rangkuman cepat, dan ratusan butir latihan HOTS disusun oleh <strong>Tim Penyusun Kurikulum SkolAce</strong> dengan mengacu pada kisi-kisi resmi SNPMB/BPPP serta prinsip keakuratan pedagogis:
+            </p>
+            <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+              <li>
+                <strong>Verifikasi Komputasi Kuantitatif:</strong> Seluruh soal berhitung pada Penalaran Umum (PU), Pengetahuan Kuantitatif (PK), dan Penalaran Matematika (PM) divalidasi secara numerik sebelum dipublikasikan.
+              </li>
+              <li>
+                <strong>Pembaruan &amp; Koreksi Errata Terbuka:</strong> Setiap laporan koreksi dari pelajar ditinjau dan diperbarui langsung pada repositori materi publik melalui jalur pelaporan di halaman{' '}
+                <Link to="/contact" className="text-indigo-600 dark:text-cyan-400 underline font-semibold">
+                  Kontak &amp; Bantuan
+                </Link>
+                .
+              </li>
+              <li>
+                <strong>Independen &amp; Bebas Paywall:</strong> Seluruh materi tetap dapat diakses tanpa registrasi akun maupun biaya langganan, didukung secara berkelanjutan oleh penayangan iklan yang mematuhi kebijakan privasi.
+              </li>
+            </ul>
+          </div>
         </div>
       </main>
     </div>
