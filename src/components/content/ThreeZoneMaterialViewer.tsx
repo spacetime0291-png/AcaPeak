@@ -153,7 +153,7 @@ const MemoInlineMarkdown = memo<{ text?: string }>(({ text }) => {
       rehypePlugins={KATEX_REHYPE_PLUGINS}
       components={INLINE_MARKDOWN_COMPONENTS}
     >
-      {formatMarkdownMath(text)}
+      {formatMarkdownMath(text, { inlineOnly: true })}
     </ReactMarkdown>
   );
 });

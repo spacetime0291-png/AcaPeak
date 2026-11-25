@@ -135,7 +135,7 @@ const MemoRangkumanMarkdown = memo<{
       rehypePlugins={KATEX_REHYPE_PLUGINS}
       components={components}
     >
-      {formatMarkdownMath(text)}
+      {formatMarkdownMath(text, { inlineOnly: variant === 'inline' })}
     </ReactMarkdown>
   );
 });
@@ -579,7 +579,6 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         .rangkuman-reading-area .katex {
           font-size: 1.03em;
           line-height: normal;
-          white-space: nowrap;
         }
         .rangkuman-reading-area strong {
           font-weight: 600 !important;
@@ -589,9 +588,15 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
           max-width: 100%;
           overflow-x: auto;
           overflow-y: visible;
-          padding: 0.5rem 0.25rem;
-          margin: 0.85rem 0;
+          padding: 0.4rem 0.15rem;
+          margin: 0.65rem 0;
           -webkit-overflow-scrolling: touch;
+        }
+        .rangkuman-reading-area .katex-display > .katex {
+          display: inline-block;
+          min-width: 100%;
+          white-space: nowrap;
+          text-align: left;
         }
         /* Dynamic font scaling support */
         .rangkuman-subbab-title {

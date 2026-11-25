@@ -212,7 +212,6 @@ body:not(.dark) .pastel-card-cream {
 .katex {
   font-size: 1.03em;
   line-height: normal;
-  white-space: nowrap;
   text-rendering: auto;
 }
 
@@ -257,26 +256,11 @@ li:has(.katex) {
   border-top-style: solid !important;
 }
 
-.katex .katex-hline,
-.katex .katex-rule,
+.katex .hline,
+.katex .rule,
 .katex .overline .overline-line,
 .katex .underline .underline-line {
   border-bottom-style: solid !important;
-}
-
-/* Spacing for operators and relations to avoid collisions on mobile */
-.katex .mbin {
-  margin-left: 0.22em;
-  margin-right: 0.22em;
-}
-
-.katex .mrel {
-  margin-left: 0.26em;
-  margin-right: 0.26em;
-}
-
-.katex .mpunct {
-  margin-right: 0.18em;
 }
 
 /* Reader dynamic font scaling support */
