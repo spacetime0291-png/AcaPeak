@@ -1,6 +1,13 @@
 # Robots.txt for SkolAce UTBK-SNBT
-User-agent: *
-Disallow: /drilling/
+User-agent: Googlebot
 Allow: /
+Disallow: /drilling
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /drilling
 
 Sitemap: https://acapeak.spacetime0291.workers.dev/sitemap.xml

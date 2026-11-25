@@ -1,0 +1,4 @@
+# Template ads.txt untuk SkolAce (Google AdSense)
+# Ganti pub-0000000000000000 dengan Publisher ID AdSense Anda yang aktif (tanpa awalan "ca-").
+# Setelah Publisher ID terverifikasi, hapus tanda pagar (#) pada baris di bawah ini:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

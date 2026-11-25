@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   NatureRainbowArc,
   PottedPlantDecor,
   LeafCornerDecor,
   DottedCornerDecor,
-} from '../decorations/NatureDecorations';
-import { CosmicSubtitleSparkle } from '../decorations/CosmicDecorations';
+  CosmicSubtitleSparkle,
+} from '../decorations/LazyDecorations';
 
 interface UtbkSubtestGridProps {
   theme?: 'light' | 'dark';
-  onSelectSubtest: (code: string) => void;
+  onSelectSubtest?: (code: string) => void;
 }
 
 // 1. Penalaran Umum (PU): Swirling Cosmic Atom / Orbiting Galaxy (Mockup 1 & 2)
@@ -489,10 +490,10 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
           const textClass = isDark ? 'text-slate-100' : 'text-slate-900';
 
           return (
-            <button
+            <Link
               key={sub.code}
-              type="button"
-              onClick={() => onSelectSubtest(sub.code.toLowerCase())}
+              to={`/utbk/${sub.code.toLowerCase()}`}
+              onClick={() => onSelectSubtest?.(sub.code.toLowerCase())}
               className={`w-full flex flex-col items-center justify-between p-3 sm:p-3.5 md:p-4 rounded-2xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${cardBgClass}`}
               aria-label={`Buka Subtes ${sub.name}`}
             >
@@ -521,7 +522,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
                   {sub.name}
                 </span>
               </div>
-            </button>
+            </Link>
           );
         })}
       </div>

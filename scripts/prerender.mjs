@@ -1,12 +1,24 @@
 import fs from 'fs';
 import path from 'path';
 import { pathToFileURL, fileURLToPath } from 'url';
+import {
+  safeJsonSerialize,
+  isSubstantialMaterial,
+  isSubstantialRangkuman,
+  readMaterialJsonAsync,
+  readRangkumanJsonAsync,
+} from './lib/contentValidator.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
-const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://acapeak.spacetime0291.workers.dev').replace(/\/+$/, '');
+const SITE_URL = (
+  process.env.SITE_URL ||
+  process.env.VITE_SITE_URL ||
+  'https://acapeak.spacetime0291.workers.dev'
+).replace(/\/+$/, '');
+const BATCH_SIZE = 16;
 
 function findServerEntry(dir) {
   if (!fs.existsSync(dir)) return null;
@@ -25,12 +37,24 @@ function findServerEntry(dir) {
 
 function escapeHtml(str) {
   if (!str) return '';
-  return str
+  return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
+}
+
+function stripMarkdownSnippet(md, maxLen = 155) {
+  if (!md) return '';
+  const cleaned = String(md)
+    .replace(/\$\$[\s\S]*?\$\$/g, ' ')
+    .replace(/\$[^$]*\$/g, ' ')
+    .replace(/[#>*_`[\]()]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (cleaned.length <= maxLen) return cleaned;
+  return `${cleaned.slice(0, maxLen - 3).trim()}...`;
 }
 
 function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
@@ -49,6 +73,11 @@ function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
 
   // 3. Prepare head tags to inject
   const headTags = [];
+
+  // Robots directive
+  headTags.push(
+    `<meta name="robots" content="${seo.noindex ? 'noindex, follow' : 'index, follow'}" />`
+  );
 
   // Description
   if (seo.description) {
@@ -84,24 +113,47 @@ function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
     headTags.push(`<meta name="twitter:description" content="${escapeHtml(seo.description)}" />`);
   }
 
-  // JSON-LD Schema
+  // JSON-LD Schema (safe serialized)
   if (seo.schema) {
-    headTags.push(`<script type="application/ld+json">${JSON.stringify(seo.schema)}</script>`);
+    headTags.push(
+      `<script type="application/ld+json">${safeJsonSerialize(seo.schema)}</script>`
+    );
   }
 
   // Inject head tags before </head>
   html = html.replace('</head>', () => `  ${headTags.join('\n  ')}\n</head>`);
 
-  // 4. Inject initial data script if present (before closing </body> or entry-client)
-  if (initialData) {
-    const dataScript = `<script>window.__INITIAL_DATA__ = ${JSON.stringify(initialData)};</script>`;
+  // 4. Inject ONLY active page data as <script id="__PAGE_DATA__" type="application/json">
+  if (initialData !== null && initialData !== undefined) {
+    const dataScript = `<script id="__PAGE_DATA__" type="application/json">${safeJsonSerialize(initialData)}</script>`;
     html = html.replace('</body>', () => `  ${dataScript}\n</body>`);
   }
 
   return html;
 }
 
+function parseSmaSubjectsMetadata() {
+  const smaPath = path.join(ROOT_DIR, 'src/lib/smaSyllabusData.ts');
+  if (!fs.existsSync(smaPath)) return [];
+  const src = fs.readFileSync(smaPath, 'utf8');
+  const results = [];
+  const regex = /id:\s*'([^']+)'[\s\S]*?name:\s*'([^']+)'/g;
+  let match;
+  while ((match = regex.exec(src)) !== null) {
+    results.push({ id: match[1], name: match[2] });
+  }
+  return results;
+}
+
+async function runInBatches(items, batchSize, workerFn) {
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    await Promise.all(batch.map(workerFn));
+  }
+}
+
 async function prerender() {
+  const startTime = Date.now();
   console.log('🚀 Starting Native SSG Pre-rendering...');
   console.log(`🌐 Base Site URL: ${SITE_URL}`);
 
@@ -109,7 +161,7 @@ async function prerender() {
   if (!fs.existsSync(templatePath)) {
     throw new Error('dist/index.html not found! Run client build first.');
   }
-  const templateHtml = fs.readFileSync(templatePath, 'utf8');
+  const templateHtml = await fs.promises.readFile(templatePath, 'utf8');
 
   const serverEntryPath = findServerEntry(path.join(DIST_DIR, 'server'));
   if (!serverEntryPath) {
@@ -121,12 +173,12 @@ async function prerender() {
 
   // Load syllabus metadata
   const syllabusPath = path.join(ROOT_DIR, 'src/data/syllabus.json');
-  const syllabus = JSON.parse(fs.readFileSync(syllabusPath, 'utf8'));
+  const syllabus = JSON.parse(await fs.promises.readFile(syllabusPath, 'utf8'));
 
   let totalRendered = 0;
+  let skippedThinCount = 0;
 
-  // Helper to write static file
-  function writeStaticPage(urlPath, pageHtml) {
+  async function writeStaticPage(urlPath, pageHtml) {
     const cleanPath = urlPath.replace(/^\/+|\/+$/g, '');
     let targetFile;
 
@@ -134,13 +186,11 @@ async function prerender() {
       targetFile = path.join(DIST_DIR, 'index.html');
     } else {
       const targetDir = path.join(DIST_DIR, cleanPath);
-      if (!fs.existsSync(targetDir)) {
-        fs.mkdirSync(targetDir, { recursive: true });
-      }
+      await fs.promises.mkdir(targetDir, { recursive: true });
       targetFile = path.join(targetDir, 'index.html');
     }
 
-    fs.writeFileSync(targetFile, pageHtml, 'utf8');
+    await fs.promises.writeFile(targetFile, pageHtml, 'utf8');
     totalRendered++;
   }
 
@@ -151,7 +201,8 @@ async function prerender() {
   const homeRender = render('/');
   const homeSeo = {
     title: 'SkolAce | Platform Belajar & Drilling UTBK-SNBT Bebas Biaya (Rp0)',
-    description: 'Platform web persiapan UTBK-SNBT 7 subtes lengkap bebas biaya (Rp0). Ribuan variasi soal HOTS, materi taktis 3 zona, dan simulasi drilling adaptif.',
+    description:
+      'Platform web persiapan UTBK-SNBT 7 subtes lengkap bebas biaya (Rp0). Materi taktis 3 zona, cheat sheet per bab, dan simulasi drilling adaptif berstandar BPPP.',
     canonical: `${SITE_URL}/`,
     ogType: 'website',
     schema: {
@@ -159,23 +210,26 @@ async function prerender() {
       '@type': 'WebSite',
       name: 'SkolAce',
       url: `${SITE_URL}/`,
-      description: 'Platform belajar dan drilling UTBK-SNBT 7 subtes lengkap bebas biaya (Rp0).',
+      description:
+        'Platform belajar dan drilling UTBK-SNBT 7 subtes lengkap bebas biaya (Rp0).',
+      publisher: {
+        '@type': 'Organization',
+        name: 'Tim Penyusun Kurikulum SkolAce',
+        url: `${SITE_URL}/about`,
+      },
       inLanguage: 'id',
     },
   };
-  const homeHtml = injectSeoIntoHtml(templateHtml, homeRender.html, homeSeo);
-  writeStaticPage('/', homeHtml);
+  await writeStaticPage('/', injectSeoIntoHtml(templateHtml, homeRender.html, homeSeo));
 
   // -----------------------------------------------------------
-  // 2. 7 SUBTEST PAGES (/subtest/:code)
+  // 2. 7 UTBK SUBTEST PAGES (/utbk/:subtest)
   // -----------------------------------------------------------
-  for (const sub of syllabus) {
+  await runInBatches(syllabus, BATCH_SIZE, async (sub) => {
     const code = sub.code.toLowerCase();
-    const url = `/subtest/${code}`;
-    console.log(`📄 Pre-rendering Subtest Page: ${url} ...`);
-
-    const subRender = render(url);
+    const url = `/utbk/${code}`;
     const subName = sub.title || sub.name || sub.code;
+    const subRender = render(url);
     const subSeo = {
       title: `Silabus & Drilling ${subName} (${sub.code.toUpperCase()}) | SkolAce UTBK-SNBT`,
       description: `Silabus resmi, materi taktis 3 zona, dan bank soal drilling HOTS untuk subtes ${subName} (${sub.code.toUpperCase()}) UTBK-SNBT.`,
@@ -188,18 +242,18 @@ async function prerender() {
         description: `Modul materi dan latihan soal UTBK-SNBT untuk subtes ${subName}.`,
         provider: {
           '@type': 'Organization',
-          name: 'SkolAce',
-          url: `${SITE_URL}/`,
+          name: 'Tim Penyusun Kurikulum SkolAce',
+          url: `${SITE_URL}/about`,
         },
         inLanguage: 'id',
       },
     };
-    const pageHtml = injectSeoIntoHtml(templateHtml, subRender.html, subSeo);
-    writeStaticPage(url, pageHtml);
-  }
+    await writeStaticPage(url, injectSeoIntoHtml(templateHtml, subRender.html, subSeo));
+  });
+  console.log(`📄 Pre-rendered ${syllabus.length} Subtest Pages (/utbk/:subtest).`);
 
   // -----------------------------------------------------------
-  // 3. 106 MATERIAL PAGES (/materi/:id)
+  // 3. MATERIAL PAGES (/utbk/:subtest/:materiId) - Anti-Thin Content Filtered & Batched
   // -----------------------------------------------------------
   const allSubtopics = [];
   for (const sub of syllabus) {
@@ -229,62 +283,78 @@ async function prerender() {
     }
   }
 
-  console.log(`📚 Pre-rendering ${allSubtopics.length} Material Pages (/materi/:id) ...`);
+  console.log(
+    `📚 Pre-rendering Material Pages (/utbk/:subtest/:materiId) in batches of ${BATCH_SIZE} ...`
+  );
 
-  for (const topic of allSubtopics) {
+  await runInBatches(allSubtopics, BATCH_SIZE, async (topic) => {
     const matId = topic.id.toLowerCase();
     const subtestPrefix = topic.subtestCode.toLowerCase();
-    const url = `/materi/${matId}`;
+    const url = `/utbk/${subtestPrefix}/${matId}`;
 
-    // Read material JSON
-    let rawMaterial = null;
-    const jsonPaths = [
-      path.join(ROOT_DIR, 'public/content/utbk', subtestPrefix, `${matId}.json`),
-      path.join(ROOT_DIR, 'content/utbk', subtestPrefix, `${matId}.json`),
-    ];
+    const rawMaterial = await readMaterialJsonAsync(ROOT_DIR, subtestPrefix, matId);
 
-    for (const p of jsonPaths) {
-      if (fs.existsSync(p)) {
-        try {
-          rawMaterial = JSON.parse(fs.readFileSync(p, 'utf8'));
-          break;
-        } catch {}
-      }
+    // Anti-Thin Content Guard: Only pre-render & index substantial materials
+    if (!isSubstantialMaterial(rawMaterial)) {
+      skippedThinCount++;
+      return;
     }
 
     const matRender = render(url, { initialMaterial: rawMaterial });
-    const matTitle = rawMaterial?.judul_subbab || topic.title;
+    const matTitle = rawMaterial.judul_subbab || topic.title;
+    const chapterTitle = rawMaterial.bab || topic.chapterTitle;
+    const coreSnippet = stripMarkdownSnippet(
+      rawMaterial.zona_1_peta_taktis?.konsep_inti_markdown,
+      110
+    );
 
     const matSeo = {
-      title: `${topic.subtestCode} - ${matTitle} | SkolAce UTBK-SNBT`,
-      description: `Pelajari materi ${matTitle} (${topic.subtestCode}) untuk UTBK-SNBT. Konsep inti, radar jebakan, trik eliminasi, dan latihan uji pemahaman berstandar BPPP.`,
+      title: `${matTitle} (${chapterTitle}) — ${topic.subtestCode} | SkolAce UTBK-SNBT`,
+      description: coreSnippet
+        ? `${matTitle} (${topic.subtestCode} - ${chapterTitle}): ${coreSnippet}`
+        : `Pelajari materi ${matTitle} pada ${chapterTitle} (${topic.subtestCode}) UTBK-SNBT lengkap dengan konsep inti, variasi pola soal, dan uji pemahaman.`,
       canonical: `${SITE_URL}${url}`,
       ogType: 'article',
       schema: {
         '@context': 'https://schema.org',
         '@type': ['Article', 'LearningResource'],
-        headline: `Materi UTBK: ${matTitle} (${topic.subtestCode})`,
-        description: `Pelajari materi ${matTitle} untuk persiapan tes UTBK-SNBT.`,
+        headline: `${matTitle} — ${chapterTitle} (${topic.subtestCode})`,
+        name: `${matTitle} | ${topic.subtestCode} UTBK-SNBT`,
+        description: `Panduan belajar taktis 3 zona untuk sub-bab ${matTitle} (${chapterTitle}) subtes ${topic.subtestCode} UTBK-SNBT.`,
+        url: `${SITE_URL}${url}`,
+        datePublished: '2026-11-19',
+        dateModified: '2026-11-25',
         author: {
           '@type': 'Organization',
-          name: 'SkolAce',
+          name: 'Tim Penyusun Kurikulum SkolAce',
+          url: `${SITE_URL}/about`,
         },
         publisher: {
           '@type': 'Organization',
           name: 'SkolAce',
+          url: `${SITE_URL}/`,
         },
-        educationalLevel: 'Sekolah Menengah Atas / Persiapan Masuk PTN',
-        learningResourceType: 'Exam Preparation Material',
+        about: {
+          '@type': 'Thing',
+          name: `${chapterTitle} - ${matTitle}`,
+        },
+        educationalLevel: 'SMA / Persiapan UTBK-SNBT',
+        learningResourceType: 'Study Guide & Practice Problems',
         inLanguage: 'id',
       },
     };
 
+    // Embed ONLY the 1 active sub-chapter JSON in <script id="__PAGE_DATA__">
     const pageHtml = injectSeoIntoHtml(templateHtml, matRender.html, matSeo, rawMaterial);
-    writeStaticPage(url, pageHtml);
-  }
+    await writeStaticPage(url, pageHtml);
+  });
+
+  console.log(
+    `✅ Pre-rendered ${allSubtopics.length - skippedThinCount} substantial material pages (skipped ${skippedThinCount} thin/empty).`
+  );
 
   // -----------------------------------------------------------
-  // 3.5 RANGKUMAN BAB / CHEAT SHEET PAGES (/rangkuman, /rangkuman/:babId)
+  // 4. RANGKUMAN BAB / CHEAT SHEET PAGES (/rangkuman, /rangkuman/:babId)
   // -----------------------------------------------------------
   const rangkumanIndexPaths = [
     path.join(ROOT_DIR, 'content/rangkuman/index.json'),
@@ -293,39 +363,37 @@ async function prerender() {
   const rangkumanIndexPath = rangkumanIndexPaths.find((p) => fs.existsSync(p));
   if (rangkumanIndexPath) {
     try {
-      const rangkumanIndex = JSON.parse(fs.readFileSync(rangkumanIndexPath, 'utf8'));
-      console.log(`📑 Pre-rendering Rangkuman Index Page (/rangkuman) ...`);
+      const rangkumanIndex = JSON.parse(await fs.promises.readFile(rangkumanIndexPath, 'utf8'));
+      console.log('📑 Pre-rendering Rangkuman Index Page (/rangkuman) ...');
       const rIdxRender = render('/rangkuman', { initialRangkumanIndex: rangkumanIndex });
       const rIdxSeo = {
         title: 'Cheat Sheet & Rangkuman Cepat UTBK-SNBT per Bab | SkolAce',
-        description: 'Lembar rangkuman padat dan rumus cepat UTBK-SNBT 7 subtes lengkap. Format 1 Teori = 1 Contoh untuk review cepat 5 menit sebelum drilling.',
+        description:
+          'Lembar rangkuman padat dan rumus cepat UTBK-SNBT 7 subtes lengkap. Format 1 Teori = 1 Contoh untuk review cepat 5 menit sebelum drilling.',
         canonical: `${SITE_URL}/rangkuman`,
         ogType: 'website',
       };
-      writeStaticPage('/rangkuman', injectSeoIntoHtml(templateHtml, rIdxRender.html, rIdxSeo, rangkumanIndex));
+      await writeStaticPage(
+        '/rangkuman',
+        injectSeoIntoHtml(templateHtml, rIdxRender.html, rIdxSeo, {
+          indexData: rangkumanIndex,
+        })
+      );
 
       const allBabs = rangkumanIndex.daftar_subtes.flatMap((st) =>
         st.daftar_bab.map((b) => ({ ...b, subtes: st.subtes }))
       );
 
-      console.log(`📑 Pre-rendering ${allBabs.length} Rangkuman Bab Pages (/rangkuman/:babId) ...`);
-      for (const b of allBabs) {
+      console.log(
+        `📑 Pre-rendering ${allBabs.length} Rangkuman Bab Pages (/rangkuman/:babId) in batches of ${BATCH_SIZE} ...`
+      );
+      await runInBatches(allBabs, BATCH_SIZE, async (b) => {
         const babCode = b.kode_bab.toLowerCase();
         const babUrl = `/rangkuman/${babCode}`;
+        const rawBab = await readRangkumanJsonAsync(ROOT_DIR, babCode);
 
-        // Read bab data JSON
-        let rawBab = null;
-        const babJsonPaths = [
-          path.join(ROOT_DIR, 'content/rangkuman', `${babCode}.json`),
-          path.join(ROOT_DIR, 'public/content/rangkuman', `${babCode}.json`),
-        ];
-        for (const p of babJsonPaths) {
-          if (fs.existsSync(p)) {
-            try {
-              rawBab = JSON.parse(fs.readFileSync(p, 'utf8'));
-              break;
-            } catch {}
-          }
+        if (!isSubstantialRangkuman(rawBab)) {
+          return;
         }
 
         const bRender = render(babUrl, {
@@ -338,70 +406,141 @@ async function prerender() {
           description: `Lembar cheat sheet rangkuman padat ${babTitle} (${b.kode_bab.toUpperCase()}). 1 Teori Singkat = 1 Contoh Nyata berstandar UTBK-SNBT.`,
           canonical: `${SITE_URL}${babUrl}`,
           ogType: 'article',
+          schema: {
+            '@context': 'https://schema.org',
+            '@type': ['Article', 'LearningResource'],
+            headline: `Cheat Sheet ${babTitle} (${b.kode_bab.toUpperCase()})`,
+            description: `Rangkuman cepat materi dan rumus ${babTitle} untuk persiapan UTBK-SNBT.`,
+            url: `${SITE_URL}${babUrl}`,
+            datePublished: '2026-11-22',
+            dateModified: '2026-11-25',
+            author: {
+              '@type': 'Organization',
+              name: 'Tim Penyusun Kurikulum SkolAce',
+              url: `${SITE_URL}/about`,
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'SkolAce',
+              url: `${SITE_URL}/`,
+            },
+            educationalLevel: 'SMA / Persiapan UTBK-SNBT',
+            learningResourceType: 'Cheat Sheet',
+            inLanguage: 'id',
+          },
         };
-        writeStaticPage(babUrl, injectSeoIntoHtml(templateHtml, bRender.html, bSeo, rawBab));
-      }
+        await writeStaticPage(
+          babUrl,
+          injectSeoIntoHtml(templateHtml, bRender.html, bSeo, {
+            babData: rawBab,
+            indexData: rangkumanIndex,
+          })
+        );
+      });
     } catch (e) {
       console.warn('⚠️ Could not pre-render rangkuman pages:', e);
     }
   }
 
   // -----------------------------------------------------------
-  // 4. 4 LEGAL PAGES (/about, /privacy-policy, /terms, /contact)
+  // 5. SMA ROUTES (/sma, /sma/:subject) — Marked noindex until full articles are populated
+  // -----------------------------------------------------------
+  const smaSubjects = parseSmaSubjectsMetadata();
+  const smaHomeRender = render('/sma');
+  await writeStaticPage(
+    '/sma',
+    injectSeoIntoHtml(templateHtml, smaHomeRender.html, {
+      title: 'Kurikulum Mata Pelajaran SMA | SkolAce',
+      description: 'Daftar kurikulum mata pelajaran SMA (MIPA, IPS, dan Umum) di SkolAce.',
+      canonical: `${SITE_URL}/sma`,
+      ogType: 'website',
+      noindex: true,
+    })
+  );
+
+  await runInBatches(smaSubjects, BATCH_SIZE, async (subj) => {
+    const url = `/sma/${subj.id}`;
+    const sRender = render(url);
+    await writeStaticPage(
+      url,
+      injectSeoIntoHtml(templateHtml, sRender.html, {
+        title: `${subj.name} — Kurikulum SMA | SkolAce`,
+        description: `Silabus bab dan topik mata pelajaran ${subj.name} SMA di SkolAce.`,
+        canonical: `${SITE_URL}${url}`,
+        ogType: 'website',
+        noindex: true,
+      })
+    );
+  });
+
+  // -----------------------------------------------------------
+  // 6. 4 LEGAL & TRUST PAGES (/about, /privacy-policy, /terms, /contact)
   // -----------------------------------------------------------
   const legalPages = [
     {
       url: '/about',
       title: 'Tentang Kami | SkolAce UTBK-SNBT',
-      description: 'Tentang platform edukasi SkolAce: Belajar dan drilling UTBK-SNBT 7 subtes bebas biaya Rp0 tanpa batas untuk seluruh siswa Indonesia.',
+      description:
+        'Tentang platform edukasi SkolAce: Belajar dan drilling UTBK-SNBT 7 subtes bebas biaya Rp0 tanpa batas untuk seluruh siswa Indonesia.',
     },
     {
       url: '/privacy-policy',
       title: 'Kebijakan Privasi | SkolAce UTBK-SNBT',
-      description: 'Kebijakan privasi SkolAce: Penggunaan cookies, iklan pihak ketiga Google AdSense, dan komitmen keamanan data belajar lokal.',
+      description:
+        'Kebijakan privasi SkolAce: Penggunaan cookies, iklan pihak ketiga Google AdSense, dan komitmen keamanan data belajar lokal.',
     },
     {
       url: '/terms',
       title: 'Syarat dan Ketentuan | SkolAce UTBK-SNBT',
-      description: 'Syarat dan ketentuan penggunaan platform edukasi independen persiapan UTBK-SNBT SkolAce.',
+      description:
+        'Syarat dan ketentuan penggunaan platform edukasi independen persiapan UTBK-SNBT SkolAce.',
     },
     {
       url: '/contact',
       title: 'Kontak & Pusat Bantuan | SkolAce UTBK-SNBT',
-      description: 'Hubungi tim SkolAce untuk pertanyaan, bantuan teknis, dan pelaporan errata/koreksi soal latihan UTBK-SNBT.',
+      description:
+        'Hubungi tim SkolAce untuk pertanyaan, bantuan teknis, dan pelaporan errata/koreksi soal latihan UTBK-SNBT.',
     },
   ];
 
-  for (const lp of legalPages) {
-    console.log(`📄 Pre-rendering Legal Page: ${lp.url} ...`);
-    const lpRender = render(lp.url);
-    const lpSeo = {
-      title: lp.title,
-      description: lp.description,
-      canonical: `${SITE_URL}${lp.url}`,
-      ogType: 'website',
-    };
-    const pageHtml = injectSeoIntoHtml(templateHtml, lpRender.html, lpSeo);
-    writeStaticPage(lp.url, pageHtml);
-  }
+  await Promise.all(
+    legalPages.map(async (lp) => {
+      const lpRender = render(lp.url);
+      const lpSeo = {
+        title: lp.title,
+        description: lp.description,
+        canonical: `${SITE_URL}${lp.url}`,
+        ogType: 'website',
+      };
+      await writeStaticPage(lp.url, injectSeoIntoHtml(templateHtml, lpRender.html, lpSeo));
+    })
+  );
 
   // -----------------------------------------------------------
-  // 5. 404 & 200 (SPA CATCH-ALL) FALLBACK FOR CLIENT ROUTING & ROOT SYNC
+  // 7. 404 & 200 (SPA CATCH-ALL) FALLBACK FOR CLIENT ROUTING
   // -----------------------------------------------------------
-  fs.copyFileSync(path.join(DIST_DIR, 'index.html'), path.join(DIST_DIR, '404.html'));
-  fs.copyFileSync(path.join(DIST_DIR, 'index.html'), path.join(DIST_DIR, '200.html'));
-  fs.copyFileSync(path.join(DIST_DIR, 'index.html'), path.join(ROOT_DIR, '404.html'));
+  const homeHtml = await fs.promises.readFile(path.join(DIST_DIR, 'index.html'), 'utf8');
+  const spaFallbackHtml = homeHtml.replace(
+    /<meta name="robots" content="index, follow" \/>/i,
+    '<meta name="robots" content="noindex, follow" />'
+  );
+  await fs.promises.writeFile(path.join(DIST_DIR, '404.html'), spaFallbackHtml, 'utf8');
+  await fs.promises.writeFile(path.join(DIST_DIR, '200.html'), spaFallbackHtml, 'utf8');
+  await fs.promises.writeFile(path.join(ROOT_DIR, '404.html'), spaFallbackHtml, 'utf8');
 
   // -----------------------------------------------------------
-  // 6. CLEAN UP dist/server FOLDER
+  // 8. CLEAN UP dist/server FOLDER
   // -----------------------------------------------------------
   const serverDir = path.join(DIST_DIR, 'server');
   if (fs.existsSync(serverDir)) {
-    fs.rmSync(serverDir, { recursive: true, force: true });
+    await fs.promises.rm(serverDir, { recursive: true, force: true });
     console.log('🧹 Cleaned up temporary dist/server directory.');
   }
 
-  console.log(`✅ Native SSG Pre-rendering completed! Total ${totalRendered} static HTML pages generated.`);
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(2);
+  console.log(
+    `✅ Native SSG Pre-rendering completed in ${elapsed}s! Total ${totalRendered} static HTML pages generated.`
+  );
 }
 
 prerender().catch((err) => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   ArrowLeft,
   ChevronDown,
@@ -26,7 +26,7 @@ import {
 } from '../../lib/drillingRotationEngine';
 import { ModuleIcon } from './ModuleIcon';
 import { ThemeToggle } from '../common/ThemeToggle';
-import { NatureFocusHeaderAccent } from '../decorations/NatureDecorations';
+import { NatureFocusHeaderAccent } from '../decorations/LazyDecorations';
 
 interface SubtestDetailViewProps {
   subtest: SubtestItem;
@@ -34,10 +34,10 @@ interface SubtestDetailViewProps {
   initialSelectedTopicId?: string;
   theme?: 'light' | 'dark';
   onToggleTheme?: () => void;
-  onTabChange: (tab: 'materi' | 'drilling') => void;
-  onBackToHome: () => void;
+  onTabChange?: (tab: 'materi' | 'drilling') => void;
+  onBackToHome?: () => void;
   onSelectSubtest?: (subtestCode: string) => void;
-  onSelectMaterial: (materialId: string) => void;
+  onSelectMaterial?: (materialId: string) => void;
   onStartDrilling: (
     selectedSubchapterIds: string[],
     questionCount: number,
@@ -57,7 +57,6 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   onSelectMaterial,
   onStartDrilling,
 }) => {
-  const navigate = useNavigate();
   const isDark = theme === 'dark';
 
   // Multi-select state strictly for the dedicated Drilling tab
@@ -380,14 +379,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
           <div className="relative z-10 max-w-4xl mx-auto px-3.5 sm:px-5 h-16 sm:h-18 flex items-center justify-between font-semibold">
             <div className="flex items-center gap-3.5 min-w-0">
-              <button
-                type="button"
-                onClick={onBackToHome}
+              <Link
+                to="/"
+                onClick={() => onBackToHome?.()}
                 className="p-2 -ml-1 rounded-2xl text-slate-700 dark:text-slate-200 hover:bg-stone-100 dark:hover:bg-slate-800/80 active:scale-95 transition cursor-pointer flex items-center justify-center shrink-0"
                 aria-label="Kembali ke Beranda"
               >
                 <ArrowLeft className="w-6 h-6 text-indigo-600 dark:text-cyan-400" />
-              </button>
+              </Link>
               <h1 className="font-bold text-base sm:text-xl text-slate-900 dark:text-white truncate tracking-tight">
                 {subtest.title || subtest.name}
               </h1>
@@ -417,9 +416,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         <div className="bg-[#fcfbf9]/95 dark:bg-[#080d21]/90 backdrop-blur-md border-b border-stone-200/90 dark:border-slate-800/80 w-full px-3.5 sm:px-5 py-2.5 transition-colors">
           <div className="max-w-4xl mx-auto flex items-center justify-between">
             <div className="flex items-center bg-stone-100 dark:bg-[#0a1024] p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 w-full sm:w-auto shadow-2xs">
-              <button
-                type="button"
-                onClick={() => onTabChange('materi')}
+              <Link
+                to={`/utbk/${subtest.code.toLowerCase()}`}
+                onClick={() => onTabChange?.('materi')}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'materi'
                     ? isDark
@@ -429,10 +428,10 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 }`}
               >
                 <span>📖 Materi</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => onTabChange('drilling')}
+              </Link>
+              <Link
+                to={`/utbk/${subtest.code.toLowerCase()}?tab=drilling`}
+                onClick={() => onTabChange?.('drilling')}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'drilling'
                     ? isDark
@@ -442,7 +441,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 }`}
               >
                 <span>⚡ Drilling Soal</span>
-              </button>
+              </Link>
             </div>
 
             {activeTab === 'drilling' && (
@@ -517,21 +516,22 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
                     {/* Right: Actions & Rotating Chevron */}
                     <div className="flex items-center gap-2 shrink-0">
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          const firstSub = mod.subtopics[0]?.id || '';
-                          const parts = firstSub.split('-');
-                          const kodeBab = parts.length >= 2 ? `${parts[0]}-${parts[1]}` : mod.id;
-                          navigate(`/rangkuman/${kodeBab}`);
-                        }}
-                        className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-bold flex items-center gap-1.5 bg-amber-500/10 hover:bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-300/60 dark:border-amber-600/50 transition-all hover:scale-105 shadow-2xs cursor-pointer"
-                        title="Buka Lembar Rangkuman / Cheat Sheet Bab ini"
-                      >
-                        <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-                        <span className="hidden xs:inline sm:inline">Rangkuman Bab</span>
-                      </button>
+                      {(() => {
+                        const firstSub = mod.subtopics[0]?.id || '';
+                        const parts = firstSub.split('-');
+                        const kodeBab = (parts.length >= 2 ? `${parts[0]}-${parts[1]}` : mod.id).toLowerCase();
+                        return (
+                          <Link
+                            to={`/rangkuman/${kodeBab}`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-bold flex items-center gap-1.5 bg-amber-500/10 hover:bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-300/60 dark:border-amber-600/50 transition-all hover:scale-105 shadow-2xs cursor-pointer"
+                            title="Buka Lembar Rangkuman / Cheat Sheet Bab ini"
+                          >
+                            <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+                            <span className="hidden xs:inline sm:inline">Rangkuman Bab</span>
+                          </Link>
+                        );
+                      })()}
                       <div className="text-slate-400 group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                         <ChevronDown
                           className={`w-5 h-5 transition-transform duration-300 ease-out ${
@@ -565,27 +565,30 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               </p>
                             </div>
                           </div>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              const firstSub = mod.subtopics[0]?.id || '';
-                              const parts = firstSub.split('-');
-                              const kodeBab = parts.length >= 2 ? `${parts[0]}-${parts[1]}` : mod.id;
-                              navigate(`/rangkuman/${kodeBab}`);
-                            }}
-                            className="px-3 py-1.5 rounded-xl text-xs font-bold text-white bg-amber-600 hover:bg-amber-500 active:scale-95 transition-all shadow-xs shrink-0 flex items-center gap-1 cursor-pointer"
-                          >
-                            <span>Buka Cheat Sheet</span>
-                            <ChevronRight className="w-3.5 h-3.5" />
-                          </button>
+                          {(() => {
+                            const firstSub = mod.subtopics[0]?.id || '';
+                            const parts = firstSub.split('-');
+                            const kodeBab = (parts.length >= 2 ? `${parts[0]}-${parts[1]}` : mod.id).toLowerCase();
+                            return (
+                              <Link
+                                to={`/rangkuman/${kodeBab}`}
+                                className="px-3 py-1.5 rounded-xl text-xs font-bold text-white bg-amber-600 hover:bg-amber-500 active:scale-95 transition-all shadow-xs shrink-0 flex items-center gap-1 cursor-pointer"
+                              >
+                                <span>Buka Cheat Sheet</span>
+                                <ChevronRight className="w-3.5 h-3.5" />
+                              </Link>
+                            );
+                          })()}
                         </div>
                         {mod.subtopics.map((sub, sIdx) => {
                           const indexNum = sIdx + 1 < 10 ? `0${sIdx + 1}` : `${sIdx + 1}`;
+                          const materiHref = `/utbk/${subtest.code.toLowerCase()}/${sub.id.toLowerCase()}`;
 
                           return (
-                            <div
+                            <Link
                               key={sub.id}
-                              onClick={() => onSelectMaterial(sub.id)}
+                              to={materiHref}
+                              onClick={() => onSelectMaterial?.(sub.id)}
                               style={{ animationDelay: `${sIdx * 30}ms` }}
                               className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
                                 isDark
@@ -628,7 +631,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                   <ChevronRight className="w-3.5 h-3.5" />
                                 </span>
                               </div>
-                            </div>
+                            </Link>
                           );
                         })}
                       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Calculator,
   Atom,
@@ -12,11 +13,11 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { SMA_SUBJECTS } from '../../lib/smaSyllabusData';
-import { PottedPlantDecor, LeafCornerDecor } from '../decorations/NatureDecorations';
+import { PottedPlantDecor, LeafCornerDecor } from '../decorations/LazyDecorations';
 
 interface SmaSubjectGridProps {
   theme?: 'light' | 'dark';
-  onSelectSubject: (subjectId: string) => void;
+  onSelectSubject?: (subjectId: string) => void;
 }
 
 const ICON_MAP: Record<string, React.ReactNode> = {
@@ -152,10 +153,10 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ theme = 'light',
             : `${subj.color.border} ${subj.color.bg} shadow-xs`;
 
           return (
-            <button
+            <Link
               key={subj.id}
-              type="button"
-              onClick={() => onSelectSubject(subj.id)}
+              to={`/sma/${subj.id}`}
+              onClick={() => onSelectSubject?.(subj.id)}
               className={`group flex flex-col p-4 sm:p-5 rounded-[22px] transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer text-left relative overflow-hidden border ${cardStyle}`}
             >
               {/* Light Mode Decorative corner */}
@@ -221,7 +222,7 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ theme = 'light',
                   <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
-            </button>
+            </Link>
           );
         })}
       </div>

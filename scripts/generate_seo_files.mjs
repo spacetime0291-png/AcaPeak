@@ -1,13 +1,23 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import {
+  isSubstantialMaterial,
+  isSubstantialRangkuman,
+  readMaterialJsonSync,
+  readRangkumanJsonSync,
+} from './lib/contentValidator.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
-const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://acapeak.spacetime0291.workers.dev').replace(/\/+$/, '');
+const SITE_URL = (
+  process.env.SITE_URL ||
+  process.env.VITE_SITE_URL ||
+  'https://acapeak.spacetime0291.workers.dev'
+).replace(/\/+$/, '');
 const TODAY = new Date().toISOString().split('T')[0];
 
 function generateSeoFiles() {
@@ -22,6 +32,9 @@ function generateSeoFiles() {
   const syllabus = JSON.parse(fs.readFileSync(syllabusPath, 'utf8'));
 
   const urls = [];
+  let materialCount = 0;
+  let skippedThinCount = 0;
+  let rangkumanCount = 0;
 
   // 1. Home Page
   urls.push({
@@ -31,44 +44,42 @@ function generateSeoFiles() {
     priority: '1.0',
   });
 
-  // 2. 7 Subtest Pages
+  // 2. 7 UTBK Subtest Pages (/utbk/:subtest)
   for (const sub of syllabus) {
     urls.push({
-      loc: `${SITE_URL}/subtest/${sub.code.toLowerCase()}`,
+      loc: `${SITE_URL}/utbk/${sub.code.toLowerCase()}`,
       lastmod: TODAY,
       changefreq: 'weekly',
       priority: '0.8',
     });
   }
 
-  // 3. 106 Material Pages
+  // 3. Substantial Material Pages (/utbk/:subtest/:materiId) - Anti-Thin Content Filter
   for (const sub of syllabus) {
-    if (sub.modules) {
-      for (const mod of sub.modules) {
-        for (const topic of mod.subtopics) {
-          urls.push({
-            loc: `${SITE_URL}/materi/${topic.id.toLowerCase()}`,
-            lastmod: TODAY,
-            changefreq: 'weekly',
-            priority: '0.9',
-          });
-        }
+    const subCode = sub.code.toLowerCase();
+    const topics = sub.modules
+      ? sub.modules.flatMap((mod) => mod.subtopics)
+      : (sub.chapters || []).flatMap((ch) => ch.subchapters);
+
+    for (const topic of topics) {
+      const matId = topic.id.toLowerCase();
+      const rawMaterial = readMaterialJsonSync(ROOT_DIR, subCode, matId);
+      if (!isSubstantialMaterial(rawMaterial)) {
+        skippedThinCount++;
+        continue;
       }
-    } else if (sub.chapters) {
-      for (const ch of sub.chapters) {
-        for (const topic of ch.subchapters) {
-          urls.push({
-            loc: `${SITE_URL}/materi/${topic.id.toLowerCase()}`,
-            lastmod: TODAY,
-            changefreq: 'weekly',
-            priority: '0.9',
-          });
-        }
-      }
+
+      urls.push({
+        loc: `${SITE_URL}/utbk/${subCode}/${matId}`,
+        lastmod: TODAY,
+        changefreq: 'weekly',
+        priority: '0.9',
+      });
+      materialCount++;
     }
   }
 
-  // 4. Rangkuman & Cheat Sheet Pages
+  // 4. Substantial Rangkuman & Cheat Sheet Pages
   const rangkumanIndexPaths = [
     path.join(ROOT_DIR, 'content/rangkuman/index.json'),
     path.join(ROOT_DIR, 'content/rangkuman/index_rangkuman.json'),
@@ -85,12 +96,18 @@ function generateSeoFiles() {
       });
       const allBabs = rangkumanIndex.daftar_subtes.flatMap((st) => st.daftar_bab);
       for (const b of allBabs) {
+        const babCode = b.kode_bab.toLowerCase();
+        const rawBab = readRangkumanJsonSync(ROOT_DIR, babCode);
+        if (!isSubstantialRangkuman(rawBab)) {
+          continue;
+        }
         urls.push({
-          loc: `${SITE_URL}/rangkuman/${b.kode_bab.toLowerCase()}`,
+          loc: `${SITE_URL}/rangkuman/${babCode}`,
           lastmod: TODAY,
           changefreq: 'weekly',
           priority: '0.85',
         });
+        rangkumanCount++;
       }
     } catch {}
   }
@@ -121,12 +138,19 @@ function generateSeoFiles() {
     '</urlset>',
   ].join('\n');
 
-  // Generate robots.txt string
+  // Generate robots.txt string allowing Googlebot & Mediapartners-Google
   const robotsTxt = [
     '# Robots.txt for SkolAce UTBK-SNBT',
-    'User-agent: *',
-    'Disallow: /drilling/',
+    'User-agent: Googlebot',
     'Allow: /',
+    'Disallow: /drilling',
+    '',
+    'User-agent: Mediapartners-Google',
+    'Allow: /',
+    '',
+    'User-agent: *',
+    'Allow: /',
+    'Disallow: /drilling',
     '',
     `Sitemap: ${SITE_URL}/sitemap.xml`,
   ].join('\n');
@@ -141,8 +165,10 @@ function generateSeoFiles() {
     fs.writeFileSync(path.join(PUBLIC_DIR, 'robots.txt'), robotsTxt, 'utf8');
   }
 
-  console.log(`✅ Sitemap created with ${urls.length} URLs (Home + 7 Subtests + 106 Materials + 28 Rangkuman + 4 Legalities).`);
-  console.log(`✅ Robots.txt created with Disallow: /drilling/ rule.`);
+  console.log(
+    `✅ Sitemap created with ${urls.length} URLs (Home + ${syllabus.length} Subtests + ${materialCount} Materials + ${rangkumanCount} Rangkuman + 4 Legalities; skipped ${skippedThinCount} thin).`
+  );
+  console.log('✅ Robots.txt created allowing Googlebot & Mediapartners-Google.');
 }
 
 generateSeoFiles();

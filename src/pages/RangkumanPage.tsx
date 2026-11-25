@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
@@ -30,9 +30,10 @@ import type {
 import {
   fetchRangkumanByBabId,
   fetchRangkumanIndex,
+  getInitialRangkumanFromPageData,
 } from '../lib/rangkumanLoader';
 import { ThemeToggle } from '../components/common/ThemeToggle';
-import { NatureFocusHeaderAccent } from '../components/decorations/NatureDecorations';
+import { NatureFocusHeaderAccent } from '../components/decorations/LazyDecorations';
 
 // Strict KaTeX configuration: output: 'html' to guarantee 0 <math> tags
 const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
@@ -51,13 +52,17 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
   initialIndexData = null,
 }) => {
   const { babId } = useParams<{ babId?: string }>();
-  const navigate = useNavigate();
   const isDark = theme === 'dark';
 
-  // Initial data from SSR or state
+  // Initial data from SSR or #__PAGE_DATA__
+  const hydratedRangkuman = useMemo(() => getInitialRangkumanFromPageData(), []);
+
   const [indexData, setIndexData] = useState<RangkumanIndexData | null>(() => {
     if (initialIndexData && initialIndexData.daftar_subtes?.length) {
       return initialIndexData;
+    }
+    if (hydratedRangkuman.indexData?.daftar_subtes?.length) {
+      return hydratedRangkuman.indexData;
     }
     return null;
   });
@@ -66,11 +71,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     if (initialBabData && initialBabData.kode_bab.toLowerCase() === babId?.toLowerCase()) {
       return initialBabData;
     }
-    if (typeof window !== 'undefined') {
-      const wData = (window as any).__INITIAL_DATA__;
-      if (wData && wData.kode_bab?.toLowerCase() === babId?.toLowerCase()) {
-        return wData;
-      }
+    if (
+      hydratedRangkuman.babData &&
+      hydratedRangkuman.babData.kode_bab.toLowerCase() === babId?.toLowerCase()
+    ) {
+      return hydratedRangkuman.babData;
     }
     return null;
   });
@@ -505,14 +510,12 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
     setExpandedGroups(newExpanded);
   };
 
-  const handleBackNavigation = () => {
-    if (babData) {
-      const subCode = extractSubtestCode(babData.subtes);
-      navigate(`/subtest/${subCode}`);
-    } else {
-      navigate('/subtest/pu');
+  const backTargetUrl = useMemo(() => {
+    if (babId && babData) {
+      return `/utbk/${extractSubtestCode(babData.subtes)}`;
     }
-  };
+    return '/';
+  }, [babId, babData]);
 
   return (
     <div className="min-h-screen text-slate-800 dark:text-slate-200 bg-[#F8FAFC] dark:bg-[#0B1120] pb-16 transition-colors">
@@ -614,9 +617,8 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         >
           {/* Identitas Bab & Tombol Kembali */}
           <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
-            <button
-              type="button"
-              onClick={handleBackNavigation}
+            <Link
+              to={backTargetUrl}
               className="p-1 sm:p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
               title={
                 babId
@@ -626,7 +628,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
               aria-label="Kembali"
             >
               <ChevronLeft className="w-5 h-5" />
-            </button>
+            </Link>
 
             {babId ? (
               <>
@@ -1042,7 +1044,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                             </div>
 
                             <Link
-                              to={`/materi/${sub.kode_subbab}`}
+                              to={`/utbk/${sub.kode_subbab.split('-')[0].toLowerCase()}/${sub.kode_subbab.toLowerCase()}`}
                               className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline transition-colors shrink-0"
                               title="Buka materi lengkap komprehensif untuk topik ini"
                             >

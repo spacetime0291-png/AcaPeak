@@ -1,42 +1,62 @@
 import type { RangkumanBabData, RangkumanIndexData } from '../types/rangkuman';
+import { readEmbeddedPageData } from './contentLoader';
 
 const RANGKUMAN_CACHE: Record<string, RangkumanBabData> = {};
 let cachedIndex: RangkumanIndexData | null = null;
 
-// Lazy glob import for Vite bundling
-const lazyRangkumanModules = typeof import.meta.glob === 'function'
-  ? import.meta.glob('../../content/rangkuman/*.json')
-  : {};
+interface EmbeddedRangkumanPayload {
+  babData?: RangkumanBabData | null;
+  indexData?: RangkumanIndexData | null;
+}
+
+/**
+ * Synchronously reads pre-rendered Rangkuman payload from #__PAGE_DATA__
+ * to avoid extra network fetch during initial hydration.
+ */
+export function getInitialRangkumanFromPageData(): EmbeddedRangkumanPayload {
+  const raw = readEmbeddedPageData<Record<string, unknown>>();
+  if (!raw || typeof raw !== 'object') return {};
+
+  if ('babData' in raw || 'indexData' in raw) {
+    const payload = raw as EmbeddedRangkumanPayload;
+    if (payload.babData?.kode_bab) {
+      RANGKUMAN_CACHE[payload.babData.kode_bab.toLowerCase()] = payload.babData;
+    }
+    if (payload.indexData?.daftar_subtes) {
+      cachedIndex = payload.indexData;
+    }
+    return payload;
+  }
+
+  if ('kode_bab' in raw && typeof raw.kode_bab === 'string') {
+    const bab = raw as unknown as RangkumanBabData;
+    RANGKUMAN_CACHE[bab.kode_bab.toLowerCase()] = bab;
+    return { babData: bab };
+  }
+
+  if ('daftar_subtes' in raw && Array.isArray(raw.daftar_subtes)) {
+    const idx = raw as unknown as RangkumanIndexData;
+    cachedIndex = idx;
+    return { indexData: idx };
+  }
+
+  return {};
+}
 
 export async function fetchRangkumanByBabId(babId: string): Promise<RangkumanBabData> {
   const normalizedId = babId.toLowerCase().trim();
 
-  // 1. Check in-memory cache
+  // 1. Check in-memory / hydrated cache first (0ms latency)
   if (RANGKUMAN_CACHE[normalizedId]) {
     return RANGKUMAN_CACHE[normalizedId];
   }
 
-  // 2. Try Vite dynamic module loader
-  const globKeys = Object.keys(lazyRangkumanModules);
-  const matchedKey = globKeys.find(
-    (k) => k.toLowerCase().endsWith(`/${normalizedId}.json`)
-  );
-
-  if (matchedKey && typeof lazyRangkumanModules[matchedKey] === 'function') {
-    try {
-      const loader = lazyRangkumanModules[matchedKey];
-      const mod = (await loader()) as any;
-      const data = (mod.default || mod) as RangkumanBabData;
-      if (data && data.kode_bab) {
-        RANGKUMAN_CACHE[normalizedId] = data;
-        return data;
-      }
-    } catch (err) {
-      console.warn(`Dynamic glob load failed for rangkuman ${babId}:`, err);
-    }
+  const hydrated = getInitialRangkumanFromPageData();
+  if (hydrated.babData?.kode_bab?.toLowerCase() === normalizedId) {
+    return hydrated.babData;
   }
 
-  // 3. Runtime Fetch Fallback
+  // 2. Runtime Fetch of standalone rangkuman JSON
   const rawBase = import.meta.env.BASE_URL || '/';
   const baseUrl = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
   const targetUrl = `${baseUrl}content/rangkuman/${normalizedId}.json`;
@@ -57,6 +77,9 @@ export async function fetchRangkumanByBabId(babId: string): Promise<RangkumanBab
 
 export async function fetchRangkumanIndex(): Promise<RangkumanIndexData> {
   if (cachedIndex) return cachedIndex;
+
+  const hydrated = getInitialRangkumanFromPageData();
+  if (hydrated.indexData) return hydrated.indexData;
 
   const rawBase = import.meta.env.BASE_URL || '/';
   const baseUrl = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;

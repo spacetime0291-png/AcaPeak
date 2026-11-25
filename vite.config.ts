@@ -66,7 +66,7 @@ function ssgPrerenderPlugin(): Plugin {
 }
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   base: '/',
   plugins: [
     react(),
@@ -80,7 +80,24 @@ export default defineConfig({
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
+        ...(isSsrBuild
+          ? {}
+          : {
+              manualChunks(id) {
+                if (!id.includes('node_modules')) return undefined;
+                if (id.includes('react-dom') || id.includes('react-router')) {
+                  return 'vendor-react';
+                }
+                if (id.includes('katex') || id.includes('react-markdown') || id.includes('remark') || id.includes('rehype')) {
+                  return 'vendor-markdown';
+                }
+                if (id.includes('lucide-react')) {
+                  return 'vendor-icons';
+                }
+                return undefined;
+              },
+            }),
       },
     },
   },
-});
+}));

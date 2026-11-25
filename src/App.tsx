@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, Suspense, lazy } from 'react';
 import {
   Routes,
   Route,
@@ -9,6 +9,7 @@ import {
   Navigate,
 } from 'react-router-dom';
 import { UTBK_SYLLABUS } from './lib/syllabusData';
+import { SMA_SUBJECTS } from './lib/smaSyllabusData';
 import {
   fetchMaterialById,
   collectDrillingQuestions,
@@ -19,13 +20,24 @@ import type { Material, ThreeZoneMaterial, WorkedExample } from './types/materia
 import { TopHeader } from './components/navigation/TopHeader';
 import { Footer } from './components/navigation/Footer';
 import { UtbkSubtestGrid } from './components/home/UtbkSubtestGrid';
+import { SmaSubjectGrid } from './components/home/SmaSubjectGrid';
 import { SubtestDetailView } from './components/subtest/SubtestDetailView';
+import { SmaSubjectDetailView } from './components/subtest/SmaSubjectDetailView';
 import { PdfMaterialReader } from './components/reader/PdfMaterialReader';
-import { ActiveDrillingView } from './components/drilling/ActiveDrillingView';
-import { CosmicNebulaGlow, CosmicStarsBg } from './components/decorations/CosmicDecorations';
-import { NatureDecorationsBg } from './components/decorations/NatureDecorations';
+import {
+  CosmicNebulaGlow,
+  CosmicStarsBg,
+  NatureDecorationsBg,
+} from './components/decorations/LazyDecorations';
 
-// Legal pages
+// Lazy-load client-only interactive Drilling engine so initial public pages stay lightweight
+const ActiveDrillingView = lazy(() =>
+  import('./components/drilling/ActiveDrillingView').then((m) => ({
+    default: m.ActiveDrillingView,
+  }))
+);
+
+// Legal & Rangkuman pages
 import { AboutPage } from './pages/AboutPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
@@ -39,8 +51,14 @@ interface AppProps {
   initialRangkumanIndex?: RangkumanIndexData | null;
 }
 
+function deriveSubtestFromMateriId(materiId: string): string {
+  const prefix = materiId.split('-')[0]?.toLowerCase() || 'pu';
+  const matched = UTBK_SYLLABUS.find((s) => s.code.toLowerCase() === prefix);
+  return matched ? matched.code.toLowerCase() : prefix;
+}
+
 // -------------------------------------------------------------
-// CLIENT-SIDE FALLBACK REDIRECT FOR LEGACY QUERY PARAMETERS
+// CLIENT-SIDE BACKWARD-COMPATIBILITY REDIRECT FOR LEGACY QUERY PARAMS
 // -------------------------------------------------------------
 function LegacyQueryRedirect() {
   const navigate = useNavigate();
@@ -54,25 +72,55 @@ function LegacyQueryRedirect() {
     const params = new URLSearchParams(search);
     const materi = params.get('materi');
     const subtest = params.get('subtest');
+    const subject = params.get('subject');
+    const mode = params.get('mode');
     const tab = params.get('tab');
     const drilling = params.get('drilling');
 
     if (drilling === 'active') {
-      navigate(`/drilling/${(subtest || 'pu').toLowerCase()}`, { replace: true });
+      const targetSub = subtest ? `/${subtest.toLowerCase()}` : '';
+      navigate(`/drilling${targetSub}`, { replace: true });
       return;
     }
     if (materi) {
-      navigate(`/materi/${materi.toLowerCase()}`, { replace: true });
+      const cleanId = materi.toLowerCase();
+      const subCode = deriveSubtestFromMateriId(cleanId);
+      navigate(`/utbk/${subCode}/${cleanId}`, { replace: true });
       return;
     }
-    if (subtest) {
+    if (subtest && location.pathname === '/') {
       const tabQuery = tab === 'drilling' ? '?tab=drilling' : '';
-      navigate(`/subtest/${subtest.toLowerCase()}${tabQuery}`, { replace: true });
+      navigate(`/utbk/${subtest.toLowerCase()}${tabQuery}`, { replace: true });
       return;
     }
-  }, [location.search, navigate]);
+    if (subject) {
+      navigate(`/sma/${subject.toLowerCase()}`, { replace: true });
+      return;
+    }
+    if (mode === 'sma' && location.pathname === '/') {
+      navigate('/sma', { replace: true });
+      return;
+    }
+    if (mode === 'utbk' && location.pathname === '/') {
+      navigate('/', { replace: true });
+    }
+  }, [location.pathname, location.search, navigate]);
 
   return null;
+}
+
+// Legacy path redirects (/subtest/:id, /materi/:id -> /utbk/...)
+function LegacySubtestPathRedirect() {
+  const { subtestId = 'pu' } = useParams<{ subtestId: string }>();
+  const location = useLocation();
+  return <Navigate to={`/utbk/${subtestId.toLowerCase()}${location.search}`} replace />;
+}
+
+function LegacyMateriPathRedirect() {
+  const { materialId = '' } = useParams<{ materialId: string }>();
+  const cleanId = materialId.toLowerCase();
+  const subCode = deriveSubtestFromMateriId(cleanId);
+  return <Navigate to={`/utbk/${subCode}/${cleanId}`} replace />;
 }
 
 // -------------------------------------------------------------
@@ -84,8 +132,6 @@ interface HomeRouteViewProps {
 }
 
 function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
-  const navigate = useNavigate();
-
   useEffect(() => {
     if (typeof document !== 'undefined') {
       document.title = 'SkolAce | Platform Belajar & Drilling UTBK-SNBT Bebas Biaya (Rp0)';
@@ -101,18 +147,75 @@ function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
         mode="utbk"
         theme={theme}
         onToggleTheme={onToggleTheme}
-        onModeChange={() => {}}
-        onSelectUtbkMaterial={(_code, materialId) => {
-          navigate(`/materi/${materialId}`);
-        }}
-        onSelectSmaSubject={() => {}}
       />
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
-        <UtbkSubtestGrid
+        <UtbkSubtestGrid theme={theme} />
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+// -------------------------------------------------------------
+// ROUTE VIEW: SMA DASHBOARD (/sma)
+// -------------------------------------------------------------
+function SmaHomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.title = 'Kurikulum Mata Pelajaran SMA | SkolAce';
+    }
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }, []);
+
+  return (
+    <>
+      <TopHeader
+        mode="sma"
+        theme={theme}
+        onToggleTheme={onToggleTheme}
+      />
+      <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
+        <SmaSubjectGrid theme={theme} />
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+// -------------------------------------------------------------
+// ROUTE VIEW: SMA SUBJECT DETAIL (/sma/:subject)
+// -------------------------------------------------------------
+function SmaSubjectRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
+  const { subject = '' } = useParams<{ subject: string }>();
+  const navigate = useNavigate();
+
+  const currentSubject = useMemo(() => {
+    return (
+      SMA_SUBJECTS.find((s) => s.id.toLowerCase() === subject.toLowerCase()) ||
+      SMA_SUBJECTS[0]
+    );
+  }, [subject]);
+
+  useEffect(() => {
+    if (typeof document !== 'undefined' && currentSubject) {
+      document.title = `${currentSubject.name} - Materi SMA | SkolAce`;
+    }
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }, [currentSubject]);
+
+  return (
+    <>
+      <main className="flex-1 w-full max-w-4xl mx-auto px-2 sm:px-4 py-3 sm:py-5">
+        <SmaSubjectDetailView
+          subject={currentSubject}
           theme={theme}
-          onSelectSubtest={(subtestCode) => {
-            navigate(`/subtest/${subtestCode.toLowerCase()}`);
-          }}
+          onToggleTheme={onToggleTheme}
+          onBackToHome={() => navigate('/sma')}
+          onSelectTopic={() => {}}
         />
       </main>
       <Footer />
@@ -121,7 +224,7 @@ function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 }
 
 // -------------------------------------------------------------
-// ROUTE VIEW: SUBTEST DETAIL (/subtest/:subtestId)
+// ROUTE VIEW: SUBTEST DETAIL (/utbk/:subtest)
 // -------------------------------------------------------------
 interface SubtestRouteViewProps {
   theme: 'light' | 'dark';
@@ -135,7 +238,7 @@ interface SubtestRouteViewProps {
 }
 
 function SubtestRouteView({ theme, onToggleTheme, onStartDrilling }: SubtestRouteViewProps) {
-  const { subtestId } = useParams<{ subtestId: string }>();
+  const { subtest } = useParams<{ subtest: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
 
@@ -143,18 +246,18 @@ function SubtestRouteView({ theme, onToggleTheme, onStartDrilling }: SubtestRout
     return (
       UTBK_SYLLABUS.find(
         (s) =>
-          s.code.toLowerCase() === subtestId?.toLowerCase() ||
-          s.id.toLowerCase() === subtestId?.toLowerCase()
+          s.code.toLowerCase() === subtest?.toLowerCase() ||
+          s.id.toLowerCase() === subtest?.toLowerCase()
       ) || UTBK_SYLLABUS[0]
     );
-  }, [subtestId]);
+  }, [subtest]);
 
   const activeTab = searchParams.get('tab') === 'drilling' ? 'drilling' : 'materi';
   const selectedTopicId = searchParams.get('selected') || searchParams.get('topic') || undefined;
 
   useEffect(() => {
     if (typeof document !== 'undefined' && currentSubtest) {
-      document.title = `${currentSubtest.name} (${currentSubtest.code}) | SkolAce`;
+      document.title = `${currentSubtest.name || currentSubtest.title} (${currentSubtest.code}) | SkolAce`;
     }
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'instant' });
@@ -171,16 +274,13 @@ function SubtestRouteView({ theme, onToggleTheme, onStartDrilling }: SubtestRout
           theme={theme}
           onToggleTheme={onToggleTheme}
           onTabChange={(newTab) => {
-            setSearchParams({ tab: newTab });
+            setSearchParams(newTab === 'drilling' ? { tab: 'drilling' } : {});
           }}
           onBackToHome={() => {
             navigate('/');
           }}
           onSelectSubtest={(newCode) => {
-            navigate(`/subtest/${newCode.toLowerCase()}`);
-          }}
-          onSelectMaterial={(materialId) => {
-            navigate(`/materi/${materialId}`);
+            navigate(`/utbk/${newCode.toLowerCase()}`);
           }}
           onStartDrilling={onStartDrilling}
         />
@@ -191,7 +291,7 @@ function SubtestRouteView({ theme, onToggleTheme, onStartDrilling }: SubtestRout
 }
 
 // -------------------------------------------------------------
-// ROUTE VIEW: MATERIAL READER (/materi/:materialId)
+// ROUTE VIEW: MATERIAL READER (/utbk/:subtest/:materiId)
 // -------------------------------------------------------------
 interface MaterialRouteViewProps {
   theme: 'light' | 'dark';
@@ -204,10 +304,10 @@ function MaterialRouteView({
   onToggleTheme,
   initialMaterial: propInitialMaterial,
 }: MaterialRouteViewProps) {
-  const { materialId = '' } = useParams<{ materialId: string }>();
+  const { subtest = '', materiId = '' } = useParams<{ subtest: string; materiId: string }>();
   const navigate = useNavigate();
 
-  // Pick initial material from prop, SSR injection, or window.__INITIAL_DATA__
+  // Pick initial material synchronously from prop, SSR injection, or #__PAGE_DATA__
   const ssrMat = getSsrInitialMaterial();
   const initCandidateRaw = propInitialMaterial || ssrMat;
   const initCandidate: Material | null = useMemo(() => {
@@ -224,7 +324,7 @@ function MaterialRouteView({
   const matchesInitial =
     initCandidate &&
     initCandidate.metadata &&
-    initCandidate.metadata.id.toLowerCase() === materialId.toLowerCase();
+    initCandidate.metadata.id.toLowerCase() === materiId.toLowerCase();
 
   const [activeMaterial, setActiveMaterial] = useState<Material | null>(() => {
     if (matchesInitial) return initCandidate;
@@ -233,9 +333,9 @@ function MaterialRouteView({
   const [isLoading, setIsLoading] = useState<boolean>(!matchesInitial);
 
   useEffect(() => {
-    if (!materialId) return;
+    if (!materiId) return;
 
-    if (activeMaterial && activeMaterial.metadata.id.toLowerCase() === materialId.toLowerCase()) {
+    if (activeMaterial && activeMaterial.metadata.id.toLowerCase() === materiId.toLowerCase()) {
       if (typeof document !== 'undefined') {
         document.title = `${activeMaterial.metadata.subtest} - ${activeMaterial.metadata.title} | SkolAce`;
       }
@@ -243,7 +343,7 @@ function MaterialRouteView({
     }
 
     setIsLoading(true);
-    fetchMaterialById(materialId)
+    fetchMaterialById(materiId)
       .then((data) => {
         setActiveMaterial(data);
         if (typeof document !== 'undefined') {
@@ -259,14 +359,17 @@ function MaterialRouteView({
       .finally(() => {
         setIsLoading(false);
       });
-  }, [materialId, activeMaterial]);
+  }, [materiId, activeMaterial]);
 
   // Derived subtest items for next/prev navigation
   const currentSubtest = useMemo(() => {
-    if (!activeMaterial) return UTBK_SYLLABUS[0];
-    const code = activeMaterial.metadata.subtest.toLowerCase();
+    const code = (
+      activeMaterial?.metadata?.subtest ||
+      subtest ||
+      deriveSubtestFromMateriId(materiId)
+    ).toLowerCase();
     return UTBK_SYLLABUS.find((s) => s.code.toLowerCase() === code) || UTBK_SYLLABUS[0];
-  }, [activeMaterial]);
+  }, [activeMaterial, subtest, materiId]);
 
   const currentSubtestSubchapters = useMemo(() => {
     return currentSubtest.modules
@@ -281,29 +384,22 @@ function MaterialRouteView({
   }, [currentSubtest]);
 
   const currentMateriIndex = currentSubtestSubchapters.findIndex(
-    (s) => s.id.toLowerCase() === materialId.toLowerCase()
+    (s) => s.id.toLowerCase() === materiId.toLowerCase()
   );
   const hasPrev = currentMateriIndex > 0;
   const hasNext =
     currentMateriIndex !== -1 && currentMateriIndex < currentSubtestSubchapters.length - 1;
 
-  const handlePrev = () => {
-    if (hasPrev) {
-      navigate(`/materi/${currentSubtestSubchapters[currentMateriIndex - 1].id}`);
-    }
-  };
-
-  const handleNext = () => {
-    if (hasNext) {
-      navigate(`/materi/${currentSubtestSubchapters[currentMateriIndex + 1].id}`);
-    }
-  };
+  const subtestCodeLower = currentSubtest.code.toLowerCase();
+  const prevHref = hasPrev
+    ? `/utbk/${subtestCodeLower}/${currentSubtestSubchapters[currentMateriIndex - 1].id.toLowerCase()}`
+    : undefined;
+  const nextHref = hasNext
+    ? `/utbk/${subtestCodeLower}/${currentSubtestSubchapters[currentMateriIndex + 1].id.toLowerCase()}`
+    : undefined;
 
   const handleStartDrillingTopic = (subchapterId: string) => {
-    const code = activeMaterial
-      ? activeMaterial.metadata.subtest.toLowerCase()
-      : 'pu';
-    navigate(`/subtest/${code}?tab=drilling&selected=${subchapterId}`);
+    navigate(`/utbk/${subtestCodeLower}?tab=drilling&selected=${subchapterId}`);
   };
 
   return (
@@ -313,7 +409,7 @@ function MaterialRouteView({
           <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto my-6">
             <div className="inline-block w-9 h-9 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3"></div>
             <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold">
-              Menyiapkan naskah materi & rumus...
+              Menyiapkan naskah materi &amp; rumus...
             </p>
           </div>
         ) : (
@@ -321,11 +417,10 @@ function MaterialRouteView({
             material={activeMaterial}
             theme={theme}
             onToggleTheme={onToggleTheme}
-            onBackToSubtest={() => {
-              navigate(`/subtest/${activeMaterial.metadata.subtest.toLowerCase()}`);
-            }}
-            onPrevSubchapter={handlePrev}
-            onNextSubchapter={handleNext}
+            prevHref={prevHref}
+            nextHref={nextHref}
+            onPrevSubchapter={prevHref ? () => navigate(prevHref) : undefined}
+            onNextSubchapter={nextHref ? () => navigate(nextHref) : undefined}
             hasPrev={hasPrev}
             hasNext={hasNext}
             onStartDrillingThisTopic={handleStartDrillingTopic}
@@ -338,8 +433,8 @@ function MaterialRouteView({
 }
 
 // -------------------------------------------------------------
-// ROUTE VIEW: ACTIVE DRILLING SESSION (/drilling/:subtestId)
-// NO Footer, NO AdSlot (Distraction-free exam simulation)
+// ROUTE VIEW: ACTIVE DRILLING SESSION (/drilling & /drilling/:subtest)
+// Client-side SPA only; NO Footer, NO AdSlot (Distraction-free exam simulation)
 // -------------------------------------------------------------
 interface DrillingRouteViewProps {
   theme: 'light' | 'dark';
@@ -356,7 +451,7 @@ function DrillingRouteView({
   setDrillingQuestions,
   drillingTimerMinutes,
 }: DrillingRouteViewProps) {
-  const { subtestId = 'pu' } = useParams<{ subtestId: string }>();
+  const { subtest = 'pu' } = useParams<{ subtest?: string }>();
   const navigate = useNavigate();
   const [questionIndex, setQuestionIndex] = useState<number>(0);
 
@@ -366,12 +461,12 @@ function DrillingRouteView({
     }
   }, [questionIndex]);
 
-  // Fallback: If user refreshed directly on /drilling/:subtestId
+  // Fallback: If user refreshed directly on /drilling or /drilling/:subtest
   useEffect(() => {
     if (drillingQuestions.length === 0) {
       const sub =
         UTBK_SYLLABUS.find(
-          (s) => s.code.toLowerCase() === subtestId.toLowerCase()
+          (s) => s.code.toLowerCase() === subtest.toLowerCase()
         ) || UTBK_SYLLABUS[0];
       const initialSubIds = sub.modules
         ? sub.modules.flatMap((m) => m.subtopics.map((s) => s.id))
@@ -381,23 +476,34 @@ function DrillingRouteView({
         setDrillingQuestions(qs);
       });
     }
-  }, [subtestId, drillingQuestions.length, setDrillingQuestions]);
+  }, [subtest, drillingQuestions.length, setDrillingQuestions]);
 
   return (
     <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
-      <ActiveDrillingView
-        questions={drillingQuestions}
-        currentQuestionIndex={questionIndex}
-        timerMinutes={drillingTimerMinutes}
-        theme={theme}
-        onToggleTheme={onToggleTheme}
-        onNavigateQuestion={(newIndex) => {
-          setQuestionIndex(newIndex);
-        }}
-        onExitDrilling={() => {
-          navigate(`/subtest/${subtestId.toLowerCase()}?tab=drilling`);
-        }}
-      />
+      <Suspense
+        fallback={
+          <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto my-6">
+            <div className="inline-block w-9 h-9 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3"></div>
+            <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold">
+              Menyiapkan mode latihan soal...
+            </p>
+          </div>
+        }
+      >
+        <ActiveDrillingView
+          questions={drillingQuestions}
+          currentQuestionIndex={questionIndex}
+          timerMinutes={drillingTimerMinutes}
+          theme={theme}
+          onToggleTheme={onToggleTheme}
+          onNavigateQuestion={(newIndex) => {
+            setQuestionIndex(newIndex);
+          }}
+          onExitDrilling={() => {
+            navigate(`/utbk/${subtest.toLowerCase()}?tab=drilling`);
+          }}
+        />
+      </Suspense>
     </main>
   );
 }
@@ -454,13 +560,13 @@ export default function App({
     setDrillingTimerMinutes(timerMins);
     const qs = await collectDrillingQuestions(subchapterIds, questionCount, orderMode);
     setDrillingQuestions(qs);
-    // Determine subtest target
     const subtestCode = subchapterIds[0]?.split('-')[0]?.toLowerCase() || 'pu';
     navigate(`/drilling/${subtestCode}`);
   };
 
   const isDrillingView = location.pathname.startsWith('/drilling');
-  const isMateriView = location.pathname.startsWith('/materi');
+  const isMateriView =
+    /^\/utbk\/[^/]+\/[^/]+/.test(location.pathname) || location.pathname.startsWith('/materi');
   const isRangkumanView = location.pathname.startsWith('/rangkuman');
   const isAmbientThemeView = !isDrillingView && !isMateriView && !isRangkumanView;
   const isDark = theme === 'dark';
@@ -469,7 +575,7 @@ export default function App({
     <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-clip bg-[#fdfbf7] dark:bg-[#070913]">
       <LegacyQueryRedirect />
 
-      {/* Visual Ambient Backgrounds */}
+      {/* Non-critical ambient decorations loaded lazily after main hydration */}
       {isAmbientThemeView ? (
         isDark ? (
           <>
@@ -495,9 +601,9 @@ export default function App({
             element={<HomeRouteView theme={theme} onToggleTheme={toggleTheme} />}
           />
 
-          {/* 2. Subtest Detail */}
+          {/* 2. UTBK Subtest Detail & Material Reader */}
           <Route
-            path="/subtest/:subtestId"
+            path="/utbk/:subtest"
             element={
               <SubtestRouteView
                 theme={theme}
@@ -506,10 +612,8 @@ export default function App({
               />
             }
           />
-
-          {/* 3. Baca Materi */}
           <Route
-            path="/materi/:materialId"
+            path="/utbk/:subtest/:materiId"
             element={
               <MaterialRouteView
                 theme={theme}
@@ -519,7 +623,17 @@ export default function App({
             }
           />
 
-          {/* 3.5 Rangkuman Bab / Cheat Sheet (Pass-5) */}
+          {/* 3. SMA Curriculum Routes */}
+          <Route
+            path="/sma"
+            element={<SmaHomeRouteView theme={theme} onToggleTheme={toggleTheme} />}
+          />
+          <Route
+            path="/sma/:subject"
+            element={<SmaSubjectRouteView theme={theme} onToggleTheme={toggleTheme} />}
+          />
+
+          {/* 4. Rangkuman Bab / Cheat Sheet */}
           <Route
             path="/rangkuman"
             element={
@@ -548,9 +662,21 @@ export default function App({
             }
           />
 
-          {/* 4. Active Drilling */}
+          {/* 5. Active Drilling (Client-Side SPA) */}
           <Route
-            path="/drilling/:subtestId"
+            path="/drilling"
+            element={
+              <DrillingRouteView
+                theme={theme}
+                onToggleTheme={toggleTheme}
+                drillingQuestions={drillingQuestions}
+                setDrillingQuestions={setDrillingQuestions}
+                drillingTimerMinutes={drillingTimerMinutes}
+              />
+            }
+          />
+          <Route
+            path="/drilling/:subtest"
             element={
               <DrillingRouteView
                 theme={theme}
@@ -562,7 +688,7 @@ export default function App({
             }
           />
 
-          {/* 5. Legal Pages */}
+          {/* 6. Legal & Trust Pages */}
           <Route
             path="/about"
             element={
@@ -599,6 +725,10 @@ export default function App({
               </>
             }
           />
+
+          {/* 7. Backward-compatible Legacy Path Redirects */}
+          <Route path="/subtest/:subtestId" element={<LegacySubtestPathRedirect />} />
+          <Route path="/materi/:materialId" element={<LegacyMateriPathRedirect />} />
 
           {/* Fallback to Home */}
           <Route path="*" element={<Navigate to="/" replace />} />

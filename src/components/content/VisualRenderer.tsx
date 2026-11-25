@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useMemo, useId } from 'react';
 import DOMPurify from 'dompurify';
-import mermaid from 'mermaid';
 import { ZoomIn } from 'lucide-react';
 import type { VisualData } from '../../types/material';
 
@@ -22,7 +21,7 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
   const [mermaidSvg, setMermaidSvg] = useState<string>('');
   const uniqueId = useId().replace(/:/g, '_');
 
-  // Handle Mermaid Rendering
+  // Dynamically load Mermaid only when a diagram is rendered on the client
   useEffect(() => {
     if (typeof window === 'undefined' || visual?.tipe !== 'mermaid' || !visual.kode) {
       return;
@@ -30,38 +29,37 @@ export const VisualRenderer: React.FC<VisualRendererProps> = ({
 
     let isMounted = true;
 
-    try {
-      mermaid.initialize({
-        startOnLoad: false,
-        theme: 'dark',
-        themeVariables: {
-          primaryColor: '#0F172A',
-          primaryTextColor: '#E2E8F0',
-          primaryBorderColor: '#38BDF8',
-          lineColor: '#94A3B8',
-        },
-        securityLevel: 'loose',
-      });
+    const renderDiagram = async () => {
+      try {
+        const { default: mermaid } = await import('mermaid');
+        if (!isMounted) return;
 
-      const renderDiagram = async () => {
-        try {
-          const renderId = `mermaid_${uniqueId}`;
-          const { svg } = await mermaid.render(renderId, visual.kode);
-          if (isMounted) {
-            setMermaidSvg(svg);
-          }
-        } catch (err) {
-          console.warn('Failed to render mermaid diagram:', err);
-          if (isMounted) {
-            setMermaidSvg('');
-          }
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: 'dark',
+          themeVariables: {
+            primaryColor: '#0F172A',
+            primaryTextColor: '#E2E8F0',
+            primaryBorderColor: '#38BDF8',
+            lineColor: '#94A3B8',
+          },
+          securityLevel: 'loose',
+        });
+
+        const renderId = `mermaid_${uniqueId}`;
+        const { svg } = await mermaid.render(renderId, visual.kode);
+        if (isMounted) {
+          setMermaidSvg(svg);
         }
-      };
+      } catch (err) {
+        console.warn('Failed to render mermaid diagram:', err);
+        if (isMounted) {
+          setMermaidSvg('');
+        }
+      }
+    };
 
-      renderDiagram();
-    } catch (err) {
-      console.warn('Failed to initialize mermaid:', err);
-    }
+    renderDiagram();
 
     return () => {
       isMounted = false;

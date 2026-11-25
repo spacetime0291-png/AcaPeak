@@ -120,16 +120,18 @@ function generateSummary() {
 
   // Role dictionary for known files
   const fileRoles = {
-    'src/App.tsx': 'Central SPA Controller: search-param routing, theme state, active material & drilling state',
-    'src/main.tsx': 'React 19 bootstrap entry point mounting root App',
+    'src/App.tsx': 'Central Router & Shell: Clean Path routes (/utbk/:subtest/:materiId, /sma, /rangkuman, /drilling, legal) + legacy query redirect',
+    'src/entry-client.tsx': 'React 19 client hydration entry reading #__PAGE_DATA__ synchronously',
+    'src/entry-server.tsx': 'SSR entry for static pre-rendering via renderToString',
     'src/index.css': 'Tailwind CSS v4 base configuration & custom design utility classes',
     'src/types/material.ts': 'Core TypeScript interfaces: Material, WorkedExample, SvgVisualization, SubtestItem',
-    'src/lib/contentLoader.ts': 'Dynamic/Preloaded content fetcher with 0ms preloaded fallback & drilling randomizer',
+    'src/lib/contentLoader.ts': '0ms #__PAGE_DATA__ synchronous hydration + dynamic JSON fetch & drilling randomizer',
     'src/lib/drillingRotationEngine.ts': 'Deterministic Stratified Rotation Engine: multi-subtest balancing, difficulty wave patterning, BPPP question type quotas, seen tracking, passage grouping',
-    'src/lib/syllabusData.ts': 'UTBK Syllabus definition: 7 subtests (PU, PPU, PBM, PK, LBI, LBE, PM) with modules',
+    'src/lib/syllabusData.ts': 'UTBK Syllabus definition from slim syllabus-light.json: 7 subtests (PU, PPU, PBM, PK, LBI, LBE, PM)',
     'src/lib/smaSyllabusData.ts': 'SMA curriculum syllabus data (Matematika TL, Saintek, Soshum)',
     'src/data/syllabus.ts': 'Legacy / extended UTBK curriculum syllabus items',
-    'src/data/syllabus.json': 'JSON mirror of syllabus data',
+    'src/data/syllabus.json': 'Full syllabus metadata used by SSG/SEO build scripts',
+    'src/data/syllabus-light.json': 'Slimmed client syllabus metadata (~19.5 KB) for fast initial bundle',
     'src/data/materials/puMaterials.ts': 'Barrel export: re-exports all modular PU subchapters from src/data/materials/pu/',
     'src/data/materials/pu/index.ts': 'Barrel export bundling all individual PU subchapters',
     'src/data/materials/ppuMaterials.ts': 'Barrel export: re-exports all modular PPU subchapters from src/data/materials/ppu/',
@@ -239,21 +241,22 @@ ${[...srcFiles, ...scriptFiles].map(f => {
 
 ---
 
-## 3. Alur Kerja Aplikasi & State Routing (\`src/App.tsx\`)
+## 3. Alur Kerja Aplikasi & Clean Path Routing (\`src/App.tsx\`)
 
-Aplikasi menggunakan **Client-Side Search Params Routing** tanpa refresh halaman, ramah GitHub Pages:
-- \`?mode=utbk\` (Default) $\\rightarrow$ Dashboard 7 Subtes UTBK SNBT (\`UtbkSubtestGrid\`).
-- \`?mode=sma\` $\\rightarrow$ Dashboard Pelajaran SMA (\`SmaSubjectGrid\`).
-- \`?subtest=pu&tab=materi\` $\\rightarrow$ Detail Modul Silabus Subtes (\`SubtestDetailView\`).
-- \`?subtest=pu&tab=drilling\` $\\rightarrow$ Konfigurasi Sesi Latihan Soal.
-- \`?materi=pu-01-01\` $\\rightarrow$ Halaman Baca Materi Lengkap (\`PdfMaterialReader\` + \`MaterialRenderer\`).
-- \`?drilling=active&subtest=pu&no=1\` $\\rightarrow$ Mode Latihan Soal Interaktif (\`ActiveDrillingView\`).
-- \`?subject=matematika-tl\` $\\rightarrow$ Eksplorasi Materi SMA (\`SmaSubjectDetailView\`).
+Aplikasi menggunakan **Hybrid SSG + CSR Clean Path Routing** ramah crawler & Cloudflare Static Assets (\`run_worker_first: false\`):
+- \`/\` $\\rightarrow$ Dashboard 7 Subtes UTBK SNBT (\`UtbkSubtestGrid\`).
+- \`/utbk/:subtest\` $\\rightarrow$ Detail Modul Silabus Subtes (\`SubtestDetailView\`, tab \`materi\` / \`?tab=drilling\`).
+- \`/utbk/:subtest/:materiId\` $\\rightarrow$ Halaman Baca Materi Lengkap (\`PdfMaterialReader\` + \`ThreeZoneMaterialViewer\`).
+- \`/rangkuman\` & \`/rangkuman/:babId\` $\\rightarrow$ Cheat Sheet Rangkuman per Bab (\`RangkumanPage\`).
+- \`/sma\` & \`/sma/:subject\` $\\rightarrow$ Daftar & Detail Mata Pelajaran SMA (\`SmaSubjectGrid\` / \`SmaSubjectDetailView\`).
+- \`/drilling\` & \`/drilling/:subtest\` $\\rightarrow$ Mode Latihan Soal Interaktif Client-Side SPA (\`ActiveDrillingView\`, lazy-loaded).
+- \`/about\`, \`/contact\`, \`/privacy-policy\`, \`/terms\` $\\rightarrow$ Halaman Legal & Trust Google AdSense.
+- **Backward Compatibility**: URL lama berbasis query parameter (\`?materi=\`, \`?subtest=\`, \`?mode=sma\`, \`?subject=\`, \`?drilling=active\`) dan path lama (\`/subtest/:id\`, \`/materi/:id\`) otomatis dialihkan via \`replace\` ke Clean Path baru.
 
 ### Mekanisme Pengambilan Konten (\`src/lib/contentLoader.ts\`)
-1. **Prioritas 1 (0ms Latency)**: Cek \`PRELOADED_MATERIALS\` dari \`src/data/materials/puMaterials.ts\`. Langsung instan tanpa network request.
-2. **Prioritas 2 (Dynamic Fetch)**: Jika tidak ada di preload, lakukan \`fetch(\`\${BASE_URL}content/utbk/\${subtest}/\${id}.json\`).
-3. **Prioritas 3 (Graceful Fallback)**: Jika file belum tersedia, tampilkan placeholder rapi tanpa crash.
+1. **Prioritas 1 (0ms Latency Hydration)**: Membaca tag \`<script id="__PAGE_DATA__" type="application/json">\` (berisi 1 sub-bab aktif dari SSG prerender) secara sinkron saat hydration tanpa network fetch.
+2. **Prioritas 2 (Dynamic Fetch)**: Saat navigasi antar halaman, melakukan \`fetch(\`\${BASE_URL}content/utbk/\${subtest}/\${id}.json\`) secara terpisah.
+3. **Prioritas 3 (Graceful Fallback)**: Jika file belum tersedia, menampilkan placeholder rapi tanpa crash (halaman thin/placeholder dikecualikan dari prerender & \`sitemap.xml\`).
 
 ---
 

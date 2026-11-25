@@ -33,28 +33,38 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
               <li>
-                <Link to="/subtest/pu" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
+                <Link to="/utbk/pu" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
                   Penalaran Umum (PU)
                 </Link>
               </li>
               <li>
-                <Link to="/subtest/pk" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
+                <Link to="/utbk/ppu" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
+                  Pengetahuan &amp; Pemahaman Umum (PPU)
+                </Link>
+              </li>
+              <li>
+                <Link to="/utbk/pbm" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
+                  Pemahaman Bacaan &amp; Menulis (PBM)
+                </Link>
+              </li>
+              <li>
+                <Link to="/utbk/pk" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
                   Pengetahuan Kuantitatif (PK)
                 </Link>
               </li>
               <li>
-                <Link to="/subtest/pm" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
-                  Penalaran Matematika (PM)
-                </Link>
-              </li>
-              <li>
-                <Link to="/subtest/lbi" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
+                <Link to="/utbk/lbi" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
                   Literasi Bhs. Indonesia (LBI)
                 </Link>
               </li>
               <li>
-                <Link to="/subtest/lbe" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
+                <Link to="/utbk/lbe" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
                   Literasi Bhs. Inggris (LBE)
+                </Link>
+              </li>
+              <li>
+                <Link to="/utbk/pm" className="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">
+                  Penalaran Matematika (PM)
                 </Link>
               </li>
             </ul>

@@ -176,11 +176,37 @@ export default SYLLABUS_DATA;
   fs.writeFileSync('src/data/syllabus.ts', tsContent, 'utf8');
   console.log('Written src/data/syllabus.ts');
 
+  // src/data/syllabus-light.json (slim client syllabus without heavy variations/duplicate chapters)
+  const slim = syllabus.map((sub) => ({
+    id: sub.id,
+    code: sub.code,
+    title: sub.title,
+    name: sub.name,
+    category: sub.category,
+    description: sub.description,
+    modules: (sub.modules || []).map((m) => ({
+      id: m.id,
+      chapter_num: m.chapter_num,
+      title: m.title,
+      priority: m.priority,
+      estimatedMinutes: m.estimatedMinutes,
+      subtopics: (m.subtopics || []).map((t) => ({
+        id: t.id,
+        subchapter_num: t.subchapter_num,
+        title: t.title,
+        classification: t.classification,
+        priority: t.priority,
+      })),
+    })),
+  }));
+  fs.writeFileSync('src/data/syllabus-light.json', JSON.stringify(slim), 'utf8');
+  console.log('Written src/data/syllabus-light.json');
+
   // src/lib/syllabusData.ts
   const libContent = `// Consolidated 3-Tier Hierarchy (Subtest -> Module/Unit -> Atomic Subtopics)
 // Acuan Silabus Revisi UTBK-SNBT (SNPMB)
 import type { SubtestItem } from '../types/material';
-import syllabusJson from '../data/syllabus.json';
+import syllabusJson from '../data/syllabus-light.json';
 
 export const UTBK_SYLLABUS: SubtestItem[] = syllabusJson as SubtestItem[];
 export const SYLLABUS_DATA = UTBK_SYLLABUS;

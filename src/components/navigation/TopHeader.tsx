@@ -5,7 +5,7 @@ import { ALL_UTBK_SUBCHAPTERS } from '../../lib/contentLoader';
 import { SMA_SUBJECTS } from '../../lib/smaSyllabusData';
 import { ENABLE_SMA_MODE } from '../../lib/featureFlags';
 import { ThemeToggle } from '../common/ThemeToggle';
-import { NatureHeaderBanner } from '../decorations/NatureDecorations';
+import { NatureHeaderBanner } from '../decorations/LazyDecorations';
 
 export type AppMode = 'utbk' | 'sma';
 
@@ -13,9 +13,9 @@ interface TopHeaderProps {
   mode: AppMode;
   theme?: 'light' | 'dark';
   onToggleTheme?: () => void;
-  onModeChange: (newMode: AppMode) => void;
-  onSelectUtbkMaterial: (subtestCode: string, materialId: string) => void;
-  onSelectSmaSubject: (subjectId: string) => void;
+  onModeChange?: (newMode: AppMode) => void;
+  onSelectUtbkMaterial?: (subtestCode: string, materialId: string) => void;
+  onSelectSmaSubject?: (subjectId: string) => void;
 }
 
 export const TopHeader: React.FC<TopHeaderProps> = ({
@@ -80,9 +80,9 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
         {/* Top Row: App Brand, Segmented Mode Switcher, & Theme Toggle */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
           <div className="flex items-center justify-between w-full sm:w-auto">
-            <div className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3 group">
               {/* Logo SkolAce Squircle */}
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-purple-700 via-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-sm shadow-md shadow-indigo-500/25 border border-purple-400/30 tracking-tight">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-purple-700 via-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-sm shadow-md shadow-indigo-500/25 border border-purple-400/30 tracking-tight group-hover:scale-105 transition-transform">
                 SA
               </div>
               <div>
@@ -96,10 +96,10 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                   </span>
                 </div>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">
-                  Pusat Kurikulum & Drilling Soal Nasional
+                  Pusat Kurikulum &amp; Drilling Soal Nasional
                 </p>
               </div>
-            </div>
+            </Link>
 
             {/* Mobile Theme Toggle */}
             <div className="sm:hidden">
@@ -111,9 +111,9 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
             {/* Segmented Toggle / Pill Switcher [ 🎯 UTBK-SNBT ] dan [ 🏫 Materi SMA ] */}
             <div className="flex items-center bg-stone-100/90 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200/90 dark:border-slate-800 shadow-2xs w-full sm:w-auto">
               {/* Tab UTBK-SNBT */}
-              <button
-                type="button"
-                onClick={() => onModeChange('utbk')}
+              <Link
+                to="/"
+                onClick={() => onModeChange?.('utbk')}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer relative overflow-hidden select-none ${
                   mode === 'utbk'
                     ? isDark
@@ -130,13 +130,13 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                 )}
                 <span>🎯</span>
                 <span>UTBK-SNBT</span>
-              </button>
+              </Link>
 
               {/* Tab Materi SMA (Hidden when ENABLE_SMA_MODE is false) */}
               {ENABLE_SMA_MODE && (
-                <button
-                  type="button"
-                  onClick={() => onModeChange('sma')}
+                <Link
+                  to="/sma"
+                  onClick={() => onModeChange?.('sma')}
                   className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer relative overflow-hidden select-none ${
                     mode === 'sma'
                       ? isDark
@@ -153,7 +153,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                   )}
                   <span>🏫</span>
                   <span>Materi SMA</span>
-                </button>
+                </Link>
               )}
             </div>
 
@@ -229,11 +229,11 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                         Topik UTBK-SNBT
                       </div>
                       {filteredUtbk.map((item) => (
-                        <button
+                        <Link
                           key={item.id}
-                          type="button"
+                          to={`/utbk/${item.subtestCode.toLowerCase()}/${item.id.toLowerCase()}`}
                           onClick={() => {
-                            onSelectUtbkMaterial(item.subtestCode.toLowerCase(), item.id);
+                            onSelectUtbkMaterial?.(item.subtestCode.toLowerCase(), item.id);
                             setIsSearchOpen(false);
                             setSearchQuery('');
                           }}
@@ -263,7 +263,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                             </p>
                           </div>
                           <ChevronRight className="w-4.5 h-4.5 text-slate-300 dark:text-cyan-600 group-hover:text-blue-600 dark:group-hover:text-cyan-300 shrink-0" />
-                        </button>
+                        </Link>
                       ))}
                     </div>
                   )}
@@ -274,11 +274,11 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                         Topik SMA
                       </div>
                       {filteredSma.map((item) => (
-                        <button
+                        <Link
                           key={item.id}
-                          type="button"
+                          to={`/sma/${item.subjectId}`}
                           onClick={() => {
-                            onSelectSmaSubject(item.subjectId);
+                            onSelectSmaSubject?.(item.subjectId);
                             setIsSearchOpen(false);
                             setSearchQuery('');
                           }}
@@ -305,7 +305,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
                             </div>
                           </div>
                           <ChevronRight className="w-4.5 h-4.5 text-slate-300 dark:text-slate-600 group-hover:text-amber-600 dark:group-hover:text-amber-300 shrink-0" />
-                        </button>
+                        </Link>
                       ))}
                     </div>
                   )}

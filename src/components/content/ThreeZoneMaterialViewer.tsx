@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
@@ -36,9 +37,11 @@ interface ThreeZoneMaterialViewerProps {
   material: Material;
   theme?: 'light' | 'dark';
   fontScale?: number;
-  onBackToSubtest: () => void;
+  onBackToSubtest?: () => void;
   onPrevSubchapter?: () => void;
   onNextSubchapter?: () => void;
+  prevHref?: string;
+  nextHref?: string;
   hasPrev?: boolean;
   hasNext?: boolean;
   onStartDrillingThisTopic: (subchapterId: string) => void;
@@ -52,6 +55,8 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
   onBackToSubtest: _onBackToSubtest,
   onPrevSubchapter,
   onNextSubchapter,
+  prevHref,
+  nextHref,
   hasPrev = false,
   hasNext = false,
   onStartDrillingThisTopic,
@@ -903,7 +908,15 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                     <Award className="w-4 h-4" />
                     <span>Lanjut Drilling Soal Topik Ini</span>
                   </button>
-                  {hasPrev && onPrevSubchapter && (
+                  {hasPrev && (prevHref ? (
+                    <Link
+                      to={prevHref}
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 transition cursor-pointer"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                      <span>Materi Sebelumnya</span>
+                    </Link>
+                  ) : onPrevSubchapter ? (
                     <button
                       type="button"
                       onClick={onPrevSubchapter}
@@ -912,8 +925,16 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                       <ChevronLeft className="w-4 h-4" />
                       <span>Materi Sebelumnya</span>
                     </button>
-                  )}
-                  {hasNext && onNextSubchapter && (
+                  ) : null)}
+                  {hasNext && (nextHref ? (
+                    <Link
+                      to={nextHref}
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-800 hover:bg-slate-900 text-white transition cursor-pointer"
+                    >
+                      <span>Materi Berikutnya</span>
+                      <ChevronRight className="w-4 h-4" />
+                    </Link>
+                  ) : onNextSubchapter ? (
                     <button
                       type="button"
                       onClick={onNextSubchapter}
@@ -922,9 +943,39 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                       <span>Materi Berikutnya</span>
                       <ChevronRight className="w-4 h-4" />
                     </button>
-                  )}
+                  ) : null)}
                 </div>
               </div>
+            )}
+
+            {/* Navigasi Crawl-Friendly Sub-bab Sebelumnya & Berikutnya */}
+            {(hasPrev || hasNext) && (
+              <nav
+                aria-label="Navigasi Sub-bab"
+                className="pt-2 flex items-center justify-between gap-3 border-t border-slate-200/80 dark:border-slate-800/80"
+              >
+                {hasPrev && prevHref ? (
+                  <Link
+                    to={prevHref}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-300 bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 transition-colors"
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                    <span>Sub-bab Sebelumnya</span>
+                  </Link>
+                ) : (
+                  <span />
+                )}
+
+                {hasNext && nextHref && (
+                  <Link
+                    to={nextHref}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-indigo-600 dark:text-cyan-300 hover:bg-indigo-50 dark:hover:bg-cyan-950/40 bg-white dark:bg-slate-900/60 border border-indigo-200 dark:border-cyan-800/50 transition-colors ml-auto"
+                  >
+                    <span>Sub-bab Berikutnya</span>
+                    <ChevronRight className="w-4 h-4" />
+                  </Link>
+                )}
+              </nav>
             )}
           </div>
         </section>

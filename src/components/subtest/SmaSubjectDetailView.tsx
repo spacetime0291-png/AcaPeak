@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   ChevronLeft,
   ChevronDown,
@@ -6,13 +7,13 @@ import {
 } from 'lucide-react';
 import type { SmaSubject } from '../../lib/smaSyllabusData';
 import { ThemeToggle } from '../common/ThemeToggle';
-import { NatureFocusHeaderAccent } from '../decorations/NatureDecorations';
+import { NatureFocusHeaderAccent } from '../decorations/LazyDecorations';
 
 interface SmaSubjectDetailViewProps {
   subject: SmaSubject;
   theme?: 'light' | 'dark';
   onToggleTheme?: () => void;
-  onBackToHome: () => void;
+  onBackToHome?: () => void;
   onSelectTopic: (topicId: string) => void;
 }
 
@@ -50,14 +51,14 @@ export const SmaSubjectDetailView: React.FC<SmaSubjectDetailViewProps> = ({
 
         <div className="relative z-10 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <button
-              type="button"
-              onClick={onBackToHome}
+            <Link
+              to="/sma"
+              onClick={() => onBackToHome?.()}
               className="p-2 -ml-1 rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer flex items-center gap-1 text-xs sm:text-sm font-semibold"
             >
               <ChevronLeft className="w-5 h-5 text-indigo-600 dark:text-cyan-400" />
               <span>Kembali</span>
-            </button>
+            </Link>
             <div className="h-5 w-px bg-stone-200 dark:bg-slate-800" />
             <div>
               <div className="flex items-center gap-2">

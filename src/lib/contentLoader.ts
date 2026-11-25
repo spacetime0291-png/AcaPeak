@@ -10,7 +10,7 @@ import { UTBK_SYLLABUS } from './syllabusData';
 
 declare global {
   interface Window {
-    __INITIAL_DATA__?: ThreeZoneMaterial | Material;
+    __INITIAL_DATA__?: ThreeZoneMaterial | Material | Record<string, unknown>;
   }
 }
 
@@ -112,8 +112,8 @@ export function adaptThreeZoneMaterial(data: ThreeZoneMaterial): Material {
 }
 
 // -------------------------------------------------------------
-// DYNAMIC LAZY-LOADING & CACHING FOR MATERIALS
-// Breaks monolithic eager preload to keep initial bundle JS lightweight!
+// SYNCHRONOUS __PAGE_DATA__ HYDRATION & DYNAMIC FETCH CACHE
+// Zero monolithic static JSON/glob imports in client JS bundle!
 // -------------------------------------------------------------
 
 export const MATERIAL_CACHE: Record<string, Material> = {};
@@ -121,13 +121,39 @@ export const MATERIAL_CACHE: Record<string, Material> = {};
 // Aliased for legacy backward compatibility
 export const PRELOADED_MATERIALS: Record<string, Material> = MATERIAL_CACHE;
 
-// Lazy module loader via Vite dynamic import.meta.glob (not eager!)
-const lazyGlobModules = typeof import.meta.glob === 'function'
-  ? import.meta.glob('../../content/utbk/**/*.json')
-  : {};
-
-// Inject initial material synchronously during Node SSR or browser hydration
 let ssrInjectedMaterial: Material | null = null;
+let parsedPageDataCache: unknown = undefined;
+
+/**
+ * Synchronously reads embedded <script id="__PAGE_DATA__" type="application/json">
+ * (or legacy window.__INITIAL_DATA__) with 0ms latency during hydration.
+ */
+export function readEmbeddedPageData<T = unknown>(): T | null {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return null;
+
+  if (parsedPageDataCache !== undefined) {
+    return parsedPageDataCache as T | null;
+  }
+
+  try {
+    const scriptEl = document.getElementById('__PAGE_DATA__');
+    if (scriptEl && scriptEl.textContent) {
+      const parsed = JSON.parse(scriptEl.textContent);
+      parsedPageDataCache = parsed;
+      return parsed as T;
+    }
+  } catch (err) {
+    console.warn('Failed to parse #__PAGE_DATA__:', err);
+  }
+
+  if (window.__INITIAL_DATA__) {
+    parsedPageDataCache = window.__INITIAL_DATA__;
+    return window.__INITIAL_DATA__ as T;
+  }
+
+  parsedPageDataCache = null;
+  return null;
+}
 
 export function setSsrInitialMaterial(mat: Material | null): void {
   ssrInjectedMaterial = mat;
@@ -138,21 +164,37 @@ export function setSsrInitialMaterial(mat: Material | null): void {
 }
 
 export function getSsrInitialMaterial(): Material | null {
-  return ssrInjectedMaterial;
+  if (ssrInjectedMaterial) return ssrInjectedMaterial;
+
+  // On client hydration, return synchronously cached initial material from __PAGE_DATA__
+  const pageData = readEmbeddedPageData<ThreeZoneMaterial | Material>();
+  if (pageData && typeof pageData === 'object') {
+    const candidate = pageData as unknown as Record<string, unknown>;
+    if ('kode_subbab' in candidate || ('metadata' in candidate && candidate.metadata)) {
+      const adapted =
+        'metadata' in candidate && candidate.metadata
+          ? (pageData as Material)
+          : adaptThreeZoneMaterial(pageData as ThreeZoneMaterial);
+      if (adapted?.metadata?.id) {
+        MATERIAL_CACHE[adapted.metadata.id.toLowerCase()] = adapted;
+        return adapted;
+      }
+    }
+  }
+
+  return null;
 }
 
-// Client-side instant check for window.__INITIAL_DATA__
-if (typeof window !== 'undefined' && window.__INITIAL_DATA__) {
-  try {
-    const raw = window.__INITIAL_DATA__;
-    const adapted = 'metadata' in raw ? (raw as Material) : adaptThreeZoneMaterial(raw as ThreeZoneMaterial);
-    if (adapted && adapted.metadata?.id) {
-      const idKey = adapted.metadata.id.toLowerCase();
-      MATERIAL_CACHE[idKey] = adapted;
-    }
-  } catch (err) {
-    console.warn('Failed to parse window.__INITIAL_DATA__', err);
-  }
+/**
+ * Synchronously hydrates material cache from #__PAGE_DATA__ before hydrateRoot().
+ */
+export function hydrateInitialMaterialFromPageData(): Material | null {
+  return getSsrInitialMaterial();
+}
+
+// Hydrate cache immediately on module load in browser
+if (typeof window !== 'undefined') {
+  hydrateInitialMaterialFromPageData();
 }
 
 // Flatten all UTBK subchapters for metadata lookup
@@ -178,7 +220,7 @@ export const ALL_UTBK_SUBCHAPTERS = UTBK_SYLLABUS.flatMap((subtest) => {
       subtestName: subtest.title || subtest.name || subtest.code,
       chapterNum: chapter.chapter_num,
       chapterTitle: chapter.chapter_title,
-      classification: (sub as any).classification || 'INTI',
+      classification: (sub as { classification?: string }).classification || 'INTI',
     }))
   );
 });
@@ -186,20 +228,14 @@ export const ALL_UTBK_SUBCHAPTERS = UTBK_SYLLABUS.flatMap((subtest) => {
 export async function fetchMaterialById(id: string): Promise<Material> {
   const normalizedId = id.toLowerCase().trim();
 
-  // 1. Check in-memory / pre-injected cache first (0ms latency, zero flash!)
+  // 1. Check in-memory / synchronously hydrated cache first (0ms latency, zero flash!)
   if (MATERIAL_CACHE[normalizedId]) {
     return MATERIAL_CACHE[normalizedId];
   }
 
-  // Check if window.__INITIAL_DATA__ matches current id
-  if (typeof window !== 'undefined' && window.__INITIAL_DATA__) {
-    const raw = window.__INITIAL_DATA__;
-    const rawId = (raw as any).kode_subbab || (raw as any).metadata?.id;
-    if (rawId && rawId.toLowerCase() === normalizedId) {
-      const adapted = 'metadata' in raw ? (raw as Material) : adaptThreeZoneMaterial(raw as ThreeZoneMaterial);
-      MATERIAL_CACHE[normalizedId] = adapted;
-      return adapted;
-    }
+  const embedded = getSsrInitialMaterial();
+  if (embedded && embedded.metadata?.id?.toLowerCase() === normalizedId) {
+    return embedded;
   }
 
   const matched = ALL_UTBK_SUBCHAPTERS.find(
@@ -210,28 +246,7 @@ export async function fetchMaterialById(id: string): Promise<Material> {
     return MATERIAL_CACHE[matched.id.toLowerCase()];
   }
 
-  // 2. Try Lazy Dynamic Import (loads only this sub-chapter's chunk from bundle)
-  const globKeys = Object.keys(lazyGlobModules);
-  const matchedGlobKey = globKeys.find(
-    (k) => k.toLowerCase().endsWith(`/${normalizedId}.json`)
-  );
-
-  if (matchedGlobKey && typeof lazyGlobModules[matchedGlobKey] === 'function') {
-    try {
-      const loader = lazyGlobModules[matchedGlobKey];
-      const mod = (await loader()) as any;
-      const jsonContent = mod.default || mod;
-      if (jsonContent && (jsonContent.kode_subbab || jsonContent.metadata)) {
-        const adapted = jsonContent.metadata ? jsonContent : adaptThreeZoneMaterial(jsonContent as ThreeZoneMaterial);
-        MATERIAL_CACHE[normalizedId] = adapted;
-        return adapted;
-      }
-    } catch (err) {
-      console.warn(`Dynamic chunk load failed for ${id}, falling back to fetch:`, err);
-    }
-  }
-
-  // 3. Fallback: Dynamic fetch from /content/utbk/...
+  // 2. Dynamic fetch of standalone sub-chapter JSON on client navigation
   const subtestPrefix = (matched ? matched.subtestCode : id.split('-')[0]).toLowerCase();
   const rawBase = import.meta.env.BASE_URL || '/';
   const baseUrl = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
@@ -241,7 +256,9 @@ export async function fetchMaterialById(id: string): Promise<Material> {
     const res = await fetch(targetUrl);
     if (res.ok) {
       const data = await res.json();
-      const adapted = adaptThreeZoneMaterial(data as ThreeZoneMaterial);
+      const adapted = data.metadata
+        ? (data as Material)
+        : adaptThreeZoneMaterial(data as ThreeZoneMaterial);
       MATERIAL_CACHE[normalizedId] = adapted;
       return adapted;
     }
@@ -249,9 +266,9 @@ export async function fetchMaterialById(id: string): Promise<Material> {
     console.warn(`Could not fetch dynamic material for ${id}:`, err);
   }
 
-  // 4. Graceful empty fallback
+  // 3. Graceful empty fallback
   const title = matched ? matched.title : `Sub-bab ${id.toUpperCase()}`;
-  const subtestCode = matched ? matched.subtestCode : (id.split('-')[0].toUpperCase() as any);
+  const subtestCode = matched ? matched.subtestCode : (id.split('-')[0].toUpperCase() as SubtestType);
   const chapterNum = matched ? matched.chapterNum : 1;
   const chapterTitle = matched ? matched.chapterTitle : 'Bab Utama';
   const subchapterNum = matched ? matched.subchapter_num : '1.1';

@@ -8,16 +8,18 @@ import {
 } from 'lucide-react';
 import type { Material } from '../../types/material';
 import { ThemeToggle } from '../common/ThemeToggle';
-import { NatureFocusHeaderAccent } from '../decorations/NatureDecorations';
+import { NatureFocusHeaderAccent } from '../decorations/LazyDecorations';
 import { ThreeZoneMaterialViewer } from '../content/ThreeZoneMaterialViewer';
 
 interface PdfMaterialReaderProps {
   material: Material;
   theme?: 'light' | 'dark';
   onToggleTheme?: () => void;
-  onBackToSubtest: () => void;
+  onBackToSubtest?: () => void;
   onPrevSubchapter?: () => void;
   onNextSubchapter?: () => void;
+  prevHref?: string;
+  nextHref?: string;
   hasPrev?: boolean;
   hasNext?: boolean;
   onStartDrillingThisTopic: (subchapterId: string) => void;
@@ -30,6 +32,8 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
   onBackToSubtest,
   onPrevSubchapter,
   onNextSubchapter,
+  prevHref,
+  nextHref,
   hasPrev = false,
   hasNext = false,
   onStartDrillingThisTopic,
@@ -78,15 +82,15 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
         <div className="max-w-[720px] mx-auto px-2.5 sm:px-6 py-2.5 flex items-center justify-between gap-1.5 sm:gap-4">
           {/* Identitas Sub-bab & Tombol Kembali */}
           <div className="flex items-center gap-1.5 sm:gap-2.5 min-w-0">
-            <button
-              type="button"
-              onClick={onBackToSubtest}
+            <Link
+              to={`/utbk/${metadata.subtest.toLowerCase()}`}
+              onClick={() => onBackToSubtest?.()}
               className="p-1 sm:p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
               title="Kembali ke Silabus Subtes"
               aria-label="Kembali ke Silabus"
             >
               <ChevronLeft className="w-5 h-5" />
-            </button>
+            </Link>
 
             <span className="font-mono text-[11px] sm:text-xs font-semibold tracking-wide px-1.5 sm:px-2.5 py-1 rounded-md bg-slate-800 dark:bg-slate-700 text-white shrink-0 uppercase">
               {metadata.id}
@@ -197,6 +201,8 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           onBackToSubtest={onBackToSubtest}
           onPrevSubchapter={onPrevSubchapter}
           onNextSubchapter={onNextSubchapter}
+          prevHref={prevHref}
+          nextHref={nextHref}
           hasPrev={hasPrev}
           hasNext={hasNext}
           onStartDrillingThisTopic={onStartDrillingThisTopic}
