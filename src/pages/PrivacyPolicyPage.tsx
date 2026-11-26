@@ -2,17 +2,37 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ShieldCheck, Lock, Cookie, Eye, ExternalLink } from 'lucide-react';
 import { ThemeToggle } from '../components/common/ThemeToggle';
+import type { ThemeId } from '../lib/theme';
 
 interface PageProps {
-  theme?: 'light' | 'dark';
-  onToggleTheme?: () => void;
+  theme?: ThemeId;
+  onSelectTheme?: (theme: ThemeId) => void;
 }
 
-export const PrivacyPolicyPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme = () => {} }) => {
+export const PrivacyPolicyPage: React.FC<PageProps> = ({ theme = 'light', onSelectTheme = () => {} }) => {
+  const isVelvet = theme === 'velvet';
+  const isPrism = theme === 'prism';
+
   return (
-    <div className="min-h-screen flex flex-col bg-[#fdfbf7] dark:bg-[#070913] text-slate-800 dark:text-[#f8fafc]">
+    <div
+      className={`min-h-screen flex flex-col ${
+        isVelvet
+          ? 'bg-transparent text-[#FBF1F2]'
+          : isPrism
+          ? 'bg-transparent text-[#0F172A]'
+          : 'bg-[#fdfbf7] dark:bg-[#070913] text-slate-800 dark:text-[#f8fafc]'
+      }`}
+    >
       {/* Top Bar */}
-      <header className="sticky top-0 z-30 w-full bg-[#fdfbf7]/90 dark:bg-[#070913]/90 backdrop-blur-md border-b border-stone-200/80 dark:border-slate-800 py-3 px-4 sm:px-8">
+      <header
+        className={`sticky top-0 z-30 w-full backdrop-blur-md border-b py-3 px-4 sm:px-8 ${
+          isVelvet
+            ? 'bg-[#1B0F1D]/90 border-[#EB8A78]/25'
+            : isPrism
+            ? 'bg-white/70 border-white/85'
+            : 'bg-[#fdfbf7]/90 dark:bg-[#070913]/90 border-stone-200/80 dark:border-slate-800'
+        }`}
+      >
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <Link
             to="/"
@@ -23,7 +43,7 @@ export const PrivacyPolicyPage: React.FC<PageProps> = ({ theme = 'light', onTogg
           </Link>
           <div className="flex items-center gap-2">
             <span className="font-bold text-sm text-slate-900 dark:text-white">SkolAce</span>
-            <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
+            <ThemeToggle theme={theme} onSelectTheme={onSelectTheme} size="sm" />
           </div>
         </div>
       </header>
@@ -75,7 +95,7 @@ export const PrivacyPolicyPage: React.FC<PageProps> = ({ theme = 'light', onTogg
             <p>
               Agar SkolAce dapat terus beroperasi dan menyediakan seluruh bank soal serta materi UTBK secara <strong>Rp0 Bebas Biaya</strong> bagi jutaan pelajar Indonesia, kami dapat menayangkan iklan dari vendor pihak ketiga, termasuk Google AdSense.
             </p>
-            <div className="p-4 rounded-xl border border-stone-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 space-y-2 text-xs sm:text-sm">
+            <div className="p-4 rounded-xl border border-stone-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 velvet-surface prism-surface space-y-2 text-xs sm:text-sm">
               <p className="font-semibold text-slate-900 dark:text-white">
                 Ketentuan Penggunaan Cookie oleh Google:
               </p>

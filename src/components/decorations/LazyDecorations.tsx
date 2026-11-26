@@ -32,6 +32,32 @@ const LazyNatureFocusHeaderAccent = lazy(() =>
   import('./NatureDecorations').then((m) => ({ default: m.NatureFocusHeaderAccent }))
 );
 
+const LazyVelvetHeaderBanner = lazy(() =>
+  import('./VelvetDecorations').then((m) => ({ default: m.VelvetHeaderBanner }))
+);
+const LazyVelvetFocusHeaderAccent = lazy(() =>
+  import('./VelvetDecorations').then((m) => ({ default: m.VelvetFocusHeaderAccent }))
+);
+const LazyVelvetDecorationsBg = lazy(() =>
+  import('./VelvetDecorations').then((m) => ({ default: m.VelvetDecorationsBg }))
+);
+const LazyVelvetCardCornerDecor = lazy(() =>
+  import('./VelvetDecorations').then((m) => ({ default: m.VelvetCardCornerDecor }))
+);
+
+const LazyPrismHeaderBanner = lazy(() =>
+  import('./PrismDecorations').then((m) => ({ default: m.PrismHeaderBanner }))
+);
+const LazyPrismFocusHeaderAccent = lazy(() =>
+  import('./PrismDecorations').then((m) => ({ default: m.PrismFocusHeaderAccent }))
+);
+const LazyPrismDecorationsBg = lazy(() =>
+  import('./PrismDecorations').then((m) => ({ default: m.PrismDecorationsBg }))
+);
+const LazyPrismCardCornerDecor = lazy(() =>
+  import('./PrismDecorations').then((m) => ({ default: m.PrismCardCornerDecor }))
+);
+
 /**
  * Defers decorative SVGs until after client hydration completes,
  * keeping SSR HTML clean and ensuring zero hydration main-thread contention.
@@ -130,6 +156,78 @@ export const NatureFocusHeaderAccent: React.FC = () => {
   return (
     <Suspense fallback={null}>
       <LazyNatureFocusHeaderAccent />
+    </Suspense>
+  );
+};
+
+export const VelvetHeaderBanner: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyVelvetHeaderBanner />
+    </Suspense>
+  );
+};
+
+export const VelvetFocusHeaderAccent: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyVelvetFocusHeaderAccent />
+    </Suspense>
+  );
+};
+
+export const VelvetDecorationsBg: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyVelvetDecorationsBg />
+    </Suspense>
+  );
+};
+
+export const VelvetCardCornerDecor: React.FC<{ variant?: 'leaf-dots' | 'leaf-lotus' | 'dots-lotus' }> = (props) => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyVelvetCardCornerDecor {...props} />
+    </Suspense>
+  );
+};
+
+export const PrismHeaderBanner: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyPrismHeaderBanner />
+    </Suspense>
+  );
+};
+
+export const PrismFocusHeaderAccent: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyPrismFocusHeaderAccent />
+    </Suspense>
+  );
+};
+
+export const PrismDecorationsBg: React.FC = () => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyPrismDecorationsBg />
+    </Suspense>
+  );
+};
+
+export const PrismCardCornerDecor: React.FC<{ variant?: 'dots-bl' | 'dots-tr' }> = (props) => {
+  if (!useAfterHydration()) return null;
+  return (
+    <Suspense fallback={null}>
+      <LazyPrismCardCornerDecor {...props} />
     </Suspense>
   );
 };

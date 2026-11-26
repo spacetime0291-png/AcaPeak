@@ -1,10 +1,11 @@
 import React from 'react';
 import type { Material } from '../../types/material';
+import type { ThemeId } from '../../lib/theme';
 import { ThreeZoneMaterialViewer } from './ThreeZoneMaterialViewer';
 
 export interface MaterialRendererProps {
   material: Material;
-  theme?: 'light' | 'dark';
+  theme?: ThemeId;
   fontScale?: number;
   onBackToSubtest?: () => void;
   onPrevSubchapter?: () => void;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo, Suspense, lazy } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef, Suspense, lazy } from 'react';
 import {
   Routes,
   Route,
@@ -19,6 +19,12 @@ import {
 } from './lib/contentLoader';
 import type { Material, ThreeZoneMaterial, WorkedExample } from './types/material';
 import type { RangkumanBabData, RangkumanIndexData } from './types/rangkuman';
+import {
+  type ThemeId,
+  THEME_STORAGE_KEY,
+  isValidTheme,
+  applyThemeToDocument,
+} from './lib/theme';
 import { TopHeader } from './components/navigation/TopHeader';
 import { Footer } from './components/navigation/Footer';
 import { UtbkSubtestGrid } from './components/home/UtbkSubtestGrid';
@@ -26,6 +32,8 @@ import {
   CosmicNebulaGlow,
   CosmicStarsBg,
   NatureDecorationsBg,
+  VelvetDecorationsBg,
+  PrismDecorationsBg,
 } from './components/decorations/LazyDecorations';
 
 // Dynamic importers shared between React.lazy() and pre-hydration/SSR resolution
@@ -123,7 +131,7 @@ function deriveSubtestFromMateriId(materiId: string): string {
 function RouteLoadingFallback() {
   return (
     <div className="flex-1 flex items-center justify-center py-24 px-4">
-      <div className="text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm px-8 py-10 max-w-md w-full">
+      <div className="text-center bg-white dark:bg-[#0c1326] velvet-surface prism-surface rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm px-8 py-10 max-w-md w-full">
         <div className="inline-block w-8 h-8 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3" />
         <p className="text-sm font-semibold text-slate-600 dark:text-slate-300">
           Memuat halaman...
@@ -137,7 +145,7 @@ function LazyBoundary({ children }: { children: React.ReactNode }) {
   return <Suspense fallback={<RouteLoadingFallback />}>{children}</Suspense>;
 }
 
-function NotFoundView() {
+function NotFoundView({ theme }: { theme: ThemeId }) {
   useEffect(() => {
     if (typeof document !== 'undefined') {
       document.title = 'Halaman Tidak Ditemukan (404) | SkolAce';
@@ -147,7 +155,7 @@ function NotFoundView() {
   return (
     <>
       <main className="flex-1 flex items-center justify-center px-4 py-20">
-        <div className="max-w-md w-full text-center p-8 rounded-3xl bg-white dark:bg-[#0c1326] border border-stone-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div className="max-w-md w-full text-center p-8 rounded-3xl bg-white dark:bg-[#0c1326] velvet-surface prism-surface border border-stone-200 dark:border-slate-800 shadow-sm space-y-4">
           <div className="inline-flex px-3 py-1 rounded-full text-xs font-mono font-bold bg-rose-100 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300">
             404 • Tidak Ditemukan
           </div>
@@ -167,7 +175,7 @@ function NotFoundView() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 }
@@ -241,11 +249,11 @@ function LegacyMateriPathRedirect() {
 // ROUTE VIEW: HOME DASHBOARD (/)
 // -------------------------------------------------------------
 interface HomeRouteViewProps {
-  theme: 'light' | 'dark';
-  onToggleTheme: () => void;
+  theme: ThemeId;
+  onSelectTheme: (theme: ThemeId) => void;
 }
 
-function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
+function HomeRouteView({ theme, onSelectTheme }: HomeRouteViewProps) {
   useEffect(() => {
     if (typeof document !== 'undefined') {
       document.title = 'SkolAce | Platform Belajar & Drilling UTBK-SNBT Bebas Biaya (Rp0)';
@@ -257,11 +265,11 @@ function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 
   return (
     <>
-      <TopHeader mode="utbk" theme={theme} onToggleTheme={onToggleTheme} />
+      <TopHeader mode="utbk" theme={theme} onSelectTheme={onSelectTheme} />
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
         <UtbkSubtestGrid theme={theme} />
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 }
@@ -271,7 +279,7 @@ function HomeRouteView({ theme, onToggleTheme }: HomeRouteViewProps) {
 // -------------------------------------------------------------
 function SmaHomeRouteView({
   theme,
-  onToggleTheme,
+  onSelectTheme,
   GridComponent,
 }: HomeRouteViewProps & { GridComponent: React.ComponentType<any> }) {
   useEffect(() => {
@@ -285,11 +293,11 @@ function SmaHomeRouteView({
 
   return (
     <>
-      <TopHeader mode="sma" theme={theme} onToggleTheme={onToggleTheme} />
+      <TopHeader mode="sma" theme={theme} onSelectTheme={onSelectTheme} />
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
         <GridComponent theme={theme} />
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 }
@@ -299,7 +307,7 @@ function SmaHomeRouteView({
 // -------------------------------------------------------------
 function SmaSubjectRouteView({
   theme,
-  onToggleTheme,
+  onSelectTheme,
   DetailComponent,
 }: HomeRouteViewProps & { DetailComponent: React.ComponentType<any> }) {
   const { subject = '' } = useParams<{ subject: string }>();
@@ -327,12 +335,12 @@ function SmaSubjectRouteView({
         <DetailComponent
           subject={currentSubject}
           theme={theme}
-          onToggleTheme={onToggleTheme}
+          onSelectTheme={onSelectTheme}
           onBackToHome={() => navigate('/sma')}
           onSelectTopic={() => {}}
         />
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 }
@@ -341,8 +349,8 @@ function SmaSubjectRouteView({
 // ROUTE VIEW: SUBTEST DETAIL (/utbk/:subtest)
 // -------------------------------------------------------------
 interface SubtestRouteViewProps {
-  theme: 'light' | 'dark';
-  onToggleTheme: () => void;
+  theme: ThemeId;
+  onSelectTheme: (theme: ThemeId) => void;
   DetailComponent: React.ComponentType<any>;
   onStartDrilling: (
     subchapterIds: string[],
@@ -354,7 +362,7 @@ interface SubtestRouteViewProps {
 
 function SubtestRouteView({
   theme,
-  onToggleTheme,
+  onSelectTheme,
   DetailComponent,
   onStartDrilling,
 }: SubtestRouteViewProps) {
@@ -392,7 +400,7 @@ function SubtestRouteView({
           activeTab={activeTab}
           initialSelectedTopicId={selectedTopicId}
           theme={theme}
-          onToggleTheme={onToggleTheme}
+          onSelectTheme={onSelectTheme}
           onTabChange={(newTab: 'materi' | 'drilling') => {
             setSearchParams(newTab === 'drilling' ? { tab: 'drilling' } : {});
           }}
@@ -405,7 +413,7 @@ function SubtestRouteView({
           onStartDrilling={onStartDrilling}
         />
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 }
@@ -414,15 +422,15 @@ function SubtestRouteView({
 // ROUTE VIEW: MATERIAL READER (/utbk/:subtest/:materiId)
 // -------------------------------------------------------------
 interface MaterialRouteViewProps {
-  theme: 'light' | 'dark';
-  onToggleTheme: () => void;
+  theme: ThemeId;
+  onSelectTheme: (theme: ThemeId) => void;
   ReaderComponent: React.ComponentType<any>;
   initialMaterial?: Material | ThreeZoneMaterial | null;
 }
 
 function MaterialRouteView({
   theme,
-  onToggleTheme,
+  onSelectTheme,
   ReaderComponent,
   initialMaterial: propInitialMaterial,
 }: MaterialRouteViewProps) {
@@ -525,7 +533,7 @@ function MaterialRouteView({
     <>
       <main className="flex-1 w-full">
         {isLoading || !activeMaterial ? (
-          <div className="py-24 text-center bg-white dark:bg-[#0c1326] rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto my-6">
+          <div className="py-24 text-center bg-white dark:bg-[#0c1326] velvet-surface prism-surface rounded-3xl border border-stone-200 dark:border-slate-800 shadow-sm max-w-3xl mx-auto my-6">
             <div className="inline-block w-9 h-9 border-4 border-indigo-600 dark:border-cyan-400 border-t-transparent rounded-full animate-spin mb-3"></div>
             <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold">
               Menyiapkan naskah materi &amp; rumus...
@@ -535,7 +543,7 @@ function MaterialRouteView({
           <ReaderComponent
             material={activeMaterial}
             theme={theme}
-            onToggleTheme={onToggleTheme}
+            onSelectTheme={onSelectTheme}
             prevHref={prevHref}
             nextHref={nextHref}
             onPrevSubchapter={prevHref ? () => navigate(prevHref) : undefined}
@@ -546,7 +554,7 @@ function MaterialRouteView({
           />
         )}
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 }
@@ -555,8 +563,8 @@ function MaterialRouteView({
 // ROUTE VIEW: ACTIVE DRILLING SESSION (/drilling & /drilling/:subtest)
 // -------------------------------------------------------------
 interface DrillingRouteViewProps {
-  theme: 'light' | 'dark';
-  onToggleTheme: () => void;
+  theme: ThemeId;
+  onSelectTheme: (theme: ThemeId) => void;
   DrillingComponent: React.ComponentType<any>;
   drillingQuestions: WorkedExample[];
   setDrillingQuestions: React.Dispatch<React.SetStateAction<WorkedExample[]>>;
@@ -565,7 +573,7 @@ interface DrillingRouteViewProps {
 
 function DrillingRouteView({
   theme,
-  onToggleTheme,
+  onSelectTheme,
   DrillingComponent,
   drillingQuestions,
   setDrillingQuestions,
@@ -604,7 +612,7 @@ function DrillingRouteView({
         currentQuestionIndex={questionIndex}
         timerMinutes={drillingTimerMinutes}
         theme={theme}
-        onToggleTheme={onToggleTheme}
+        onSelectTheme={onSelectTheme}
         onNavigateQuestion={(newIndex: number) => {
           setQuestionIndex(newIndex);
         }}
@@ -631,31 +639,34 @@ export default function App({
   const [drillingQuestions, setDrillingQuestions] = useState<WorkedExample[]>([]);
   const [drillingTimerMinutes, setDrillingTimerMinutes] = useState<number | null>(15);
 
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    if (typeof window === 'undefined') return 'light';
-    try {
-      const saved = localStorage.getItem('kognitedu_theme');
-      if (saved === 'light' || saved === 'dark') return saved;
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    } catch {
-      return 'light';
-    }
-  });
+  const [theme, setTheme] = useState<ThemeId>('light');
+  const hasLoadedThemeRef = useRef(false);
 
   useEffect(() => {
-    if (typeof document === 'undefined') return;
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    let initial: ThemeId = 'light';
     try {
-      localStorage.setItem('kognitedu_theme', theme);
+      const saved = localStorage.getItem(THEME_STORAGE_KEY);
+      if (isValidTheme(saved)) {
+        initial = saved;
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        initial = 'dark';
+      }
+    } catch {}
+    hasLoadedThemeRef.current = true;
+    setTheme(initial);
+    applyThemeToDocument(initial);
+  }, []);
+
+  useEffect(() => {
+    if (!hasLoadedThemeRef.current) return;
+    applyThemeToDocument(theme);
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, theme);
     } catch {}
   }, [theme]);
 
-  const toggleTheme = useCallback(() => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  const handleSelectTheme = useCallback((nextTheme: ThemeId) => {
+    setTheme(nextTheme);
   }, []);
 
   const handleStartDrilling = async (
@@ -687,27 +698,31 @@ export default function App({
     /^\/utbk\/[^/]+\/[^/]+/.test(location.pathname) || location.pathname.startsWith('/materi');
   const isRangkumanView = location.pathname.startsWith('/rangkuman');
   const isAmbientThemeView = !isDrillingView && !isMateriView && !isRangkumanView;
-  const isDark = theme === 'dark';
+
+  const selectionClass =
+    theme === 'velvet'
+      ? 'selection:bg-[#FF8A6B] selection:text-[#1E0F17]'
+      : 'selection:bg-cyan-500 selection:text-white';
 
   return (
-    <div className="min-h-screen text-slate-900 dark:text-[#f8fafc] flex flex-col selection:bg-cyan-500 selection:text-white font-sans relative overflow-x-clip bg-[#fdfbf7] dark:bg-[#070913]">
+    <div className={`min-h-screen flex flex-col font-sans relative overflow-x-clip app-shell-bg ${selectionClass}`}>
       <LegacyQueryRedirect />
 
       {isAmbientThemeView ? (
-        isDark ? (
+        theme === 'dark' ? (
           <>
             <CosmicNebulaGlow />
             <CosmicStarsBg />
           </>
+        ) : theme === 'velvet' ? (
+          <VelvetDecorationsBg />
+        ) : theme === 'prism' ? (
+          <PrismDecorationsBg />
         ) : (
           <NatureDecorationsBg />
         )
       ) : (
-        isDark ? (
-          <div className="fixed inset-0 pointer-events-none z-0 bg-[#070913]" />
-        ) : (
-          <div className="fixed inset-0 pointer-events-none z-0 bg-[#fdfbf7]" />
-        )
+        <div className="fixed inset-0 pointer-events-none z-0 non-ambient-backdrop" />
       )}
 
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -715,7 +730,7 @@ export default function App({
           {/* 1. Beranda */}
           <Route
             path="/"
-            element={<HomeRouteView theme={theme} onToggleTheme={toggleTheme} />}
+            element={<HomeRouteView theme={theme} onSelectTheme={handleSelectTheme} />}
           />
 
           {/* 2. UTBK Subtest Detail & Material Reader */}
@@ -725,7 +740,7 @@ export default function App({
               preloadedComponents.SubtestDetailView ? (
                 <SubtestRouteView
                   theme={theme}
-                  onToggleTheme={toggleTheme}
+                  onSelectTheme={handleSelectTheme}
                   DetailComponent={SubtestComp}
                   onStartDrilling={handleStartDrilling}
                 />
@@ -733,7 +748,7 @@ export default function App({
                 <LazyBoundary>
                   <SubtestRouteView
                     theme={theme}
-                    onToggleTheme={toggleTheme}
+                    onSelectTheme={handleSelectTheme}
                     DetailComponent={SubtestComp}
                     onStartDrilling={handleStartDrilling}
                   />
@@ -747,7 +762,7 @@ export default function App({
               preloadedComponents.PdfMaterialReader ? (
                 <MaterialRouteView
                   theme={theme}
-                  onToggleTheme={toggleTheme}
+                  onSelectTheme={handleSelectTheme}
                   ReaderComponent={ReaderComp}
                   initialMaterial={initialMaterial}
                 />
@@ -755,7 +770,7 @@ export default function App({
                 <LazyBoundary>
                   <MaterialRouteView
                     theme={theme}
-                    onToggleTheme={toggleTheme}
+                    onSelectTheme={handleSelectTheme}
                     ReaderComponent={ReaderComp}
                     initialMaterial={initialMaterial}
                   />
@@ -769,10 +784,10 @@ export default function App({
             path="/sma"
             element={
               preloadedComponents.SmaSubjectGrid ? (
-                <SmaHomeRouteView theme={theme} onToggleTheme={toggleTheme} GridComponent={SmaGridComp} />
+                <SmaHomeRouteView theme={theme} onSelectTheme={handleSelectTheme} GridComponent={SmaGridComp} />
               ) : (
                 <LazyBoundary>
-                  <SmaHomeRouteView theme={theme} onToggleTheme={toggleTheme} GridComponent={SmaGridComp} />
+                  <SmaHomeRouteView theme={theme} onSelectTheme={handleSelectTheme} GridComponent={SmaGridComp} />
                 </LazyBoundary>
               )
             }
@@ -783,14 +798,14 @@ export default function App({
               preloadedComponents.SmaSubjectDetailView ? (
                 <SmaSubjectRouteView
                   theme={theme}
-                  onToggleTheme={toggleTheme}
+                  onSelectTheme={handleSelectTheme}
                   DetailComponent={SmaDetailComp}
                 />
               ) : (
                 <LazyBoundary>
                   <SmaSubjectRouteView
                     theme={theme}
-                    onToggleTheme={toggleTheme}
+                    onSelectTheme={handleSelectTheme}
                     DetailComponent={SmaDetailComp}
                   />
                 </LazyBoundary>
@@ -806,19 +821,19 @@ export default function App({
                 <>
                   <RangkumanComp
                     theme={theme}
-                    onToggleTheme={toggleTheme}
+                    onSelectTheme={handleSelectTheme}
                     initialIndexData={initialRangkumanIndex}
                   />
-                  <Footer />
+                  <Footer theme={theme} />
                 </>
               ) : (
                 <LazyBoundary>
                   <RangkumanComp
                     theme={theme}
-                    onToggleTheme={toggleTheme}
+                    onSelectTheme={handleSelectTheme}
                     initialIndexData={initialRangkumanIndex}
                   />
-                  <Footer />
+                  <Footer theme={theme} />
                 </LazyBoundary>
               )
             }
@@ -830,21 +845,21 @@ export default function App({
                 <>
                   <RangkumanComp
                     theme={theme}
-                    onToggleTheme={toggleTheme}
+                    onSelectTheme={handleSelectTheme}
                     initialBabData={initialRangkumanBab}
                     initialIndexData={initialRangkumanIndex}
                   />
-                  <Footer />
+                  <Footer theme={theme} />
                 </>
               ) : (
                 <LazyBoundary>
                   <RangkumanComp
                     theme={theme}
-                    onToggleTheme={toggleTheme}
+                    onSelectTheme={handleSelectTheme}
                     initialBabData={initialRangkumanBab}
                     initialIndexData={initialRangkumanIndex}
                   />
-                  <Footer />
+                  <Footer theme={theme} />
                 </LazyBoundary>
               )
             }
@@ -857,7 +872,7 @@ export default function App({
               <LazyBoundary>
                 <DrillingRouteView
                   theme={theme}
-                  onToggleTheme={toggleTheme}
+                  onSelectTheme={handleSelectTheme}
                   DrillingComponent={DrillingComp}
                   drillingQuestions={drillingQuestions}
                   setDrillingQuestions={setDrillingQuestions}
@@ -872,7 +887,7 @@ export default function App({
               <LazyBoundary>
                 <DrillingRouteView
                   theme={theme}
-                  onToggleTheme={toggleTheme}
+                  onSelectTheme={handleSelectTheme}
                   DrillingComponent={DrillingComp}
                   drillingQuestions={drillingQuestions}
                   setDrillingQuestions={setDrillingQuestions}
@@ -888,13 +903,13 @@ export default function App({
             element={
               preloadedComponents.AboutPage ? (
                 <>
-                  <AboutComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <AboutComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </>
               ) : (
                 <LazyBoundary>
-                  <AboutComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <AboutComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </LazyBoundary>
               )
             }
@@ -904,13 +919,13 @@ export default function App({
             element={
               preloadedComponents.PrivacyPolicyPage ? (
                 <>
-                  <PrivacyComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <PrivacyComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </>
               ) : (
                 <LazyBoundary>
-                  <PrivacyComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <PrivacyComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </LazyBoundary>
               )
             }
@@ -920,13 +935,13 @@ export default function App({
             element={
               preloadedComponents.TermsPage ? (
                 <>
-                  <TermsComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <TermsComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </>
               ) : (
                 <LazyBoundary>
-                  <TermsComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <TermsComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </LazyBoundary>
               )
             }
@@ -936,13 +951,13 @@ export default function App({
             element={
               preloadedComponents.ContactPage ? (
                 <>
-                  <ContactComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <ContactComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </>
               ) : (
                 <LazyBoundary>
-                  <ContactComp theme={theme} onToggleTheme={toggleTheme} />
-                  <Footer />
+                  <ContactComp theme={theme} onSelectTheme={handleSelectTheme} />
+                  <Footer theme={theme} />
                 </LazyBoundary>
               )
             }
@@ -953,7 +968,7 @@ export default function App({
           <Route path="/materi/:materialId" element={<LegacyMateriPathRedirect />} />
 
           {/* 404 Not Found View */}
-          <Route path="*" element={<NotFoundView />} />
+          <Route path="*" element={<NotFoundView theme={theme} />} />
         </Routes>
       </div>
     </div>

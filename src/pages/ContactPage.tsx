@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, Mail, MessageSquare, HelpCircle, CheckCircle2, Send } from 'lucide-react';
 import { ThemeToggle } from '../components/common/ThemeToggle';
+import type { ThemeId } from '../lib/theme';
 
 interface PageProps {
-  theme?: 'light' | 'dark';
-  onToggleTheme?: () => void;
+  theme?: ThemeId;
+  onSelectTheme?: (theme: ThemeId) => void;
 }
 
-export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme = () => {} }) => {
+export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onSelectTheme = () => {} }) => {
+  const isVelvet = theme === 'velvet';
+  const isPrism = theme === 'prism';
   const [topic, setTopic] = useState<'errata' | 'umum' | 'kemitraan'>('errata');
   const [name, setName] = useState('');
   const [subbabCode, setSubbabCode] = useState('');
@@ -35,9 +38,25 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onToggleThem
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#fdfbf7] dark:bg-[#070913] text-slate-800 dark:text-[#f8fafc]">
+    <div
+      className={`min-h-screen flex flex-col ${
+        isVelvet
+          ? 'bg-transparent text-[#FBF1F2]'
+          : isPrism
+          ? 'bg-transparent text-[#0F172A]'
+          : 'bg-[#fdfbf7] dark:bg-[#070913] text-slate-800 dark:text-[#f8fafc]'
+      }`}
+    >
       {/* Top Bar */}
-      <header className="sticky top-0 z-30 w-full bg-[#fdfbf7]/90 dark:bg-[#070913]/90 backdrop-blur-md border-b border-stone-200/80 dark:border-slate-800 py-3 px-4 sm:px-8">
+      <header
+        className={`sticky top-0 z-30 w-full backdrop-blur-md border-b py-3 px-4 sm:px-8 ${
+          isVelvet
+            ? 'bg-[#1B0F1D]/90 border-[#EB8A78]/25'
+            : isPrism
+            ? 'bg-white/70 border-white/85'
+            : 'bg-[#fdfbf7]/90 dark:bg-[#070913]/90 border-stone-200/80 dark:border-slate-800'
+        }`}
+      >
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <Link
             to="/"
@@ -48,7 +67,7 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onToggleThem
           </Link>
           <div className="flex items-center gap-2">
             <span className="font-bold text-sm text-slate-900 dark:text-white">SkolAce</span>
-            <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
+            <ThemeToggle theme={theme} onSelectTheme={onSelectTheme} size="sm" />
           </div>
         </div>
       </header>
@@ -71,7 +90,7 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onToggleThem
 
           {/* Contact Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="p-6 rounded-2xl border border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shadow-xs space-y-3">
+            <div className="p-6 rounded-2xl border border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 velvet-surface prism-surface shadow-xs space-y-3">
               <div className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-600 dark:text-cyan-400 flex items-center justify-center font-bold">
                 <Mail className="w-5 h-5" />
               </div>
@@ -89,7 +108,7 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onToggleThem
               </a>
             </div>
 
-            <div className="p-6 rounded-2xl border border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shadow-xs space-y-3">
+            <div className="p-6 rounded-2xl border border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 velvet-surface prism-surface shadow-xs space-y-3">
               <div className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
                 <MessageSquare className="w-5 h-5" />
               </div>
@@ -111,7 +130,7 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onToggleThem
           {/* Interactive Contact / Errata Form */}
           <form
             onSubmit={handleSubmit}
-            className="p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/60 shadow-xs space-y-4"
+            className="p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/60 velvet-surface prism-surface shadow-xs space-y-4"
           >
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
               Kirim Pesan atau Laporan Cepat
@@ -189,7 +208,7 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onToggleThem
           </form>
 
           {/* Quick FAQ */}
-          <div className="p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-stone-50/50 dark:bg-slate-900/40 space-y-6">
+          <div className="p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-stone-50/50 dark:bg-slate-900/40 velvet-surface prism-surface space-y-6">
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
               <HelpCircle className="w-5 h-5 text-indigo-600 dark:text-cyan-400" />
               Pertanyaan yang Sering Diajukan (FAQ)

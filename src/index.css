@@ -61,6 +61,113 @@
 }
 
 /* ==========================================================================
+   MULTI-THEME OVERRIDES: VELVET DUSK & AERO PRISM (HIGHER THAN @layer utilities)
+   ========================================================================== */
+
+html[data-theme="velvet"] {
+  color-scheme: dark;
+  background-color: #160C18;
+}
+
+html[data-theme="velvet"] body {
+  background-color: #160C18;
+  background-image: linear-gradient(180deg, #160C18 0%, #1F1020 52%, #140B16 100%);
+  background-attachment: fixed;
+  color: #FBF1F2;
+}
+
+html[data-theme="prism"] {
+  color-scheme: light;
+  background-color: #dff0fa;
+}
+
+html[data-theme="prism"] body {
+  background-color: #e4f2f9;
+  background-image:
+    radial-gradient(at 8% 8%, rgba(125, 211, 252, 0.58) 0px, transparent 52%),
+    radial-gradient(at 92% 14%, rgba(110, 231, 183, 0.45) 0px, transparent 50%),
+    radial-gradient(at 18% 52%, rgba(165, 180, 252, 0.42) 0px, transparent 52%),
+    radial-gradient(at 88% 55%, rgba(103, 232, 249, 0.45) 0px, transparent 50%),
+    radial-gradient(at 15% 88%, rgba(253, 230, 138, 0.42) 0px, transparent 52%),
+    radial-gradient(at 85% 90%, rgba(147, 197, 253, 0.48) 0px, transparent 52%),
+    linear-gradient(155deg, #dff0fa 0%, #e4f4f1 48%, #e5ecfa 100%);
+  background-attachment: fixed;
+  color: #0F172A;
+}
+
+/* Velvet Dusk Surfaces & Cards */
+.velvet-card {
+  background: rgba(43, 23, 35, 0.88);
+  border: 1px solid rgba(235, 138, 120, 0.45);
+  box-shadow: 0 8px 24px -6px rgba(10, 4, 8, 0.45), inset 0 1px 0 rgba(255, 200, 185, 0.06);
+}
+.velvet-card:hover {
+  background: rgba(56, 29, 45, 0.94);
+  border-color: rgba(255, 138, 107, 0.72);
+  box-shadow: 0 12px 28px -6px rgba(255, 138, 107, 0.18), 0 0 18px rgba(255, 138, 107, 0.14);
+}
+.velvet-input {
+  background-color: rgba(34, 17, 29, 0.92);
+  border: 1px solid rgba(201, 169, 176, 0.32);
+  color: #FBF1F2;
+  box-shadow: 0 4px 16px -4px rgba(10, 4, 8, 0.45);
+}
+.velvet-input:focus {
+  border-color: rgba(255, 138, 107, 0.72);
+  box-shadow: 0 0 0 2px rgba(255, 138, 107, 0.22);
+}
+
+/* Aero Prism Glassmorphism & Subtle Subtest Corner Tints */
+.prism-glass-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 24px -6px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.prism-glass-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 28px -6px rgba(37, 99, 235, 0.14), inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.prism-tint-pu {
+  background-image:
+    radial-gradient(circle at 95% 5%, rgba(99, 102, 241, 0.24) 0%, transparent 56%),
+    radial-gradient(circle at 5% 95%, rgba(129, 140, 248, 0.16) 0%, transparent 52%);
+}
+.prism-tint-ppu {
+  background-image:
+    radial-gradient(circle at 95% 5%, rgba(245, 158, 11, 0.24) 0%, transparent 56%),
+    radial-gradient(circle at 5% 95%, rgba(251, 191, 36, 0.16) 0%, transparent 52%);
+}
+.prism-tint-pbm {
+  background-image:
+    radial-gradient(circle at 5% 5%, rgba(16, 185, 129, 0.24) 0%, transparent 56%),
+    radial-gradient(circle at 95% 95%, rgba(52, 211, 153, 0.15) 0%, transparent 52%);
+}
+.prism-tint-pk {
+  background-image:
+    radial-gradient(circle at 5% 5%, rgba(14, 165, 233, 0.24) 0%, transparent 56%),
+    radial-gradient(circle at 12% 95%, rgba(56, 189, 248, 0.18) 0%, transparent 52%);
+}
+.prism-tint-lbi {
+  background-image:
+    radial-gradient(circle at 5% 5%, rgba(217, 179, 120, 0.26) 0%, transparent 56%),
+    radial-gradient(circle at 95% 95%, rgba(100, 116, 139, 0.14) 0%, transparent 52%);
+}
+.prism-tint-lbe {
+  background-image:
+    radial-gradient(circle at 95% 5%, rgba(20, 184, 166, 0.24) 0%, transparent 56%),
+    radial-gradient(circle at 5% 95%, rgba(45, 212, 191, 0.15) 0%, transparent 52%);
+}
+.prism-tint-pm {
+  background-image:
+    radial-gradient(circle at 5% 5%, rgba(6, 182, 212, 0.24) 0%, transparent 56%),
+    radial-gradient(circle at 95% 95%, rgba(37, 99, 235, 0.15) 0%, transparent 52%);
+}
+
+/* ==========================================================================
    COSMIC & CYBER DARK MODE UTILITIES
    ========================================================================== */
 
@@ -288,6 +395,13 @@ li:has(.katex) {
   border-color: #f8fafc !important;
 }
 
+/* Velvet Dusk Mode KaTeX: high-contrast warm white */
+html[data-theme="velvet"] .katex,
+html[data-theme="velvet"] .katex * {
+  color: #FBF1F2 !important;
+  border-color: #FBF1F2 !important;
+}
+
 /* Light Mode KaTeX: high-contrast charcoal */
 html:not(.dark) .katex,
 html:not(.dark) .katex * {
@@ -330,6 +444,12 @@ article {
 .dark .katex-display::-webkit-scrollbar-thumb,
 .dark .overflow-x-auto::-webkit-scrollbar-thumb {
   background-color: #334155;
+}
+
+html[data-theme="velvet"] .katex::-webkit-scrollbar-thumb,
+html[data-theme="velvet"] .katex-display::-webkit-scrollbar-thumb,
+html[data-theme="velvet"] .overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: #6b3b4e;
 }
 
 /* ==========================================================================
@@ -490,6 +610,72 @@ div[id^="svg-"] svg {
 
 .rangkuman-page-dark {
   background-color: #0B1120;
+}
+
+html[data-theme="velvet"] .rangkuman-page-dark {
+  background-color: #160C18;
+}
+
+/* Scoped secondary-page surface harmony for Velvet Dusk (without heavy blur on long lists) */
+html[data-theme="velvet"] .velvet-surface {
+  background-color: #2B1723 !important;
+  border-color: rgba(235, 138, 120, 0.35) !important;
+}
+
+html[data-theme="velvet"] .velvet-surface-deep {
+  background-color: #1B0F1B !important;
+  border-color: rgba(235, 138, 120, 0.28) !important;
+}
+
+html[data-theme="velvet"] .velvet-surface-elevated {
+  background-color: #341B2B !important;
+  border-color: rgba(235, 138, 120, 0.4) !important;
+}
+
+html[data-theme="velvet"] .velvet-text-muted {
+  color: #C9A9B0 !important;
+}
+
+/* Scoped secondary-page surface harmony for Aero Prism (lightweight anti-glare) */
+html[data-theme="prism"] .prism-surface {
+  background-color: rgba(255, 255, 255, 0.78) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+html[data-theme="prism"] .prism-surface-soft {
+  background-color: rgba(241, 248, 253, 0.88) !important;
+  border-color: rgba(186, 230, 253, 0.65) !important;
+}
+
+/* App Shell & Non-Ambient Backdrops (FOUC-free & SSR-safe via data-theme) */
+.app-shell-bg {
+  background-color: #fdfbf7;
+  color: #0f172a;
+}
+html.dark .app-shell-bg {
+  background-color: #070913;
+  color: #f8fafc;
+}
+html[data-theme="velvet"] .app-shell-bg {
+  background-color: transparent;
+  color: #FBF1F2;
+}
+html[data-theme="prism"] .app-shell-bg {
+  background-color: transparent;
+  color: #0F172A;
+}
+
+.non-ambient-backdrop {
+  background-color: #fdfbf7;
+}
+html.dark .non-ambient-backdrop {
+  background-color: #070913;
+}
+html[data-theme="velvet"] .non-ambient-backdrop {
+  background: linear-gradient(180deg, #160C18 0%, #1F1020 55%, #140B16 100%);
+}
+html[data-theme="prism"] .non-ambient-backdrop {
+  background-color: rgba(244, 249, 253, 0.55);
 }
 
 /* Subtle border for dark mode cards */

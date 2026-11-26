@@ -1,10 +1,12 @@
 import React, { useState, useRef, memo } from 'react';
 import { ChevronDown, ChevronUp, BookOpen, AlertCircle } from 'lucide-react';
 import type { DetailMateriLengkap, KelompokDetailMateri, LabelKolomDetailMateri, VisualData } from '../../types/material';
+import type { ThemeId } from '../../lib/theme';
 import { VisualRenderer } from './VisualRenderer';
 
 export interface DetailMateriAccordionProps {
   data: DetailMateriLengkap;
+  theme?: ThemeId;
   renderMarkdown: (text?: string) => React.ReactNode;
   renderInlineMarkdown?: (text?: string) => React.ReactNode;
   onZoomVisual?: (visual: VisualData) => void;
@@ -26,6 +28,7 @@ interface KelompokCardProps {
   onToggle: () => void;
   judulBlok?: string;
   labelKolom?: LabelKolomDetailMateri;
+  theme?: ThemeId;
   renderMarkdown: (text?: string) => React.ReactNode;
   onZoomVisual?: (visual: VisualData) => void;
 }
@@ -35,10 +38,12 @@ interface KelompokCardProps {
  * eliminating 2x HTML/hydration overhead while keeping all educational content crawlable.
  */
 const KelompokCard = memo<KelompokCardProps>(
-  ({ kelompok, isOpen, onToggle, judulBlok, labelKolom, renderMarkdown, onZoomVisual }) => {
+  ({ kelompok, isOpen, onToggle, judulBlok, labelKolom, theme = 'light', renderMarkdown, onZoomVisual }) => {
     const butirList = kelompok.butir || [];
     const badgeText = getBadgeLabel(butirList.length, kelompok.nama_kelompok, judulBlok);
     const cardRef = useRef<HTMLDivElement>(null);
+    const isVelvet = theme === 'velvet';
+    const isPrism = theme === 'prism';
 
     const handleCloseFromBottom = () => {
       const rect = cardRef.current?.getBoundingClientRect();
@@ -56,7 +61,11 @@ const KelompokCard = memo<KelompokCardProps>(
         ref={cardRef}
         className={`rounded-xl border overflow-hidden transition-all ${
           isOpen
-            ? 'border-sky-300/90 dark:border-sky-500/40 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
+            ? isVelvet
+              ? 'border-[#EB8A78]/50 bg-[#2B1723] shadow-xs'
+              : 'border-sky-300/90 dark:border-sky-500/40 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
+            : isVelvet
+            ? 'border-[#EB8A78]/25 bg-[#25131E] hover:border-[#EB8A78]/45'
             : 'border-slate-200/90 dark:border-slate-700/75 bg-white dark:bg-[#10182B] hover:border-slate-300 dark:hover:border-slate-600'
         }`}
       >
@@ -65,7 +74,11 @@ const KelompokCard = memo<KelompokCardProps>(
           onClick={onToggle}
           className={`w-full px-4 py-3.5 sm:px-5 sm:py-4 flex items-center justify-between gap-3 text-left transition-all cursor-pointer border-l-4 ${
             isOpen
-              ? 'bg-sky-50/85 dark:bg-[#172540] text-slate-950 dark:text-white border-b border-sky-200/80 dark:border-slate-700/90 border-l-sky-500 dark:border-l-sky-400'
+              ? isVelvet
+                ? 'bg-[#381C2C] text-[#FBF1F2] border-b border-[#EB8A78]/30 border-l-[#FF8A6B]'
+                : 'bg-sky-50/85 dark:bg-[#172540] text-slate-950 dark:text-white border-b border-sky-200/80 dark:border-slate-700/90 border-l-sky-500 dark:border-l-sky-400'
+              : isVelvet
+              ? 'bg-[#2B1723] hover:bg-[#341B2B] text-[#FBF1F2] border-l-[#EB8A78]/45'
               : 'bg-white dark:bg-[#111A2E] hover:bg-slate-50 dark:hover:bg-[#16213A] text-slate-900 dark:text-slate-100 border-l-slate-300 dark:border-l-slate-700'
           }`}
           aria-expanded={isOpen}
@@ -75,7 +88,11 @@ const KelompokCard = memo<KelompokCardProps>(
               <span
                 className={`text-sm sm:text-base leading-snug tracking-tight ${
                   isOpen
-                    ? 'font-extrabold text-sky-950 dark:text-white'
+                    ? isVelvet
+                      ? 'font-extrabold text-[#FBF1F2]'
+                      : 'font-extrabold text-sky-950 dark:text-white'
+                    : isVelvet
+                    ? 'font-bold text-[#FBF1F2]'
                     : 'font-bold text-slate-900 dark:text-slate-100'
                 }`}
               >
@@ -84,7 +101,11 @@ const KelompokCard = memo<KelompokCardProps>(
               <span
                 className={`inline-flex items-center font-mono text-xs px-2.5 py-0.5 rounded-full ${
                   isOpen
-                    ? 'bg-sky-600 text-white dark:bg-sky-500 dark:text-slate-950 font-bold shadow-2xs'
+                    ? isVelvet
+                      ? 'bg-[#FF8A6B] text-[#1E0F17] font-bold shadow-2xs'
+                      : 'bg-sky-600 text-white dark:bg-sky-500 dark:text-slate-950 font-bold shadow-2xs'
+                    : isVelvet
+                    ? 'bg-[#3F2132] text-[#FFBE98] border border-[#EB8A78]/35 font-semibold'
                     : 'bg-slate-100 text-slate-700 dark:bg-slate-800/90 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-semibold'
                 }`}
               >
@@ -96,7 +117,11 @@ const KelompokCard = memo<KelompokCardProps>(
           <div
             className={`shrink-0 p-1.5 rounded-lg border transition-colors ${
               isOpen
-                ? 'bg-sky-600 text-white border-sky-600 dark:bg-sky-500 dark:text-slate-950 dark:border-sky-400 shadow-2xs'
+                ? isVelvet
+                  ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] shadow-2xs'
+                  : 'bg-sky-600 text-white border-sky-600 dark:bg-sky-500 dark:text-slate-950 dark:border-sky-400 shadow-2xs'
+                : isVelvet
+                ? 'bg-[#381C2C] text-[#FFBE98] border-[#EB8A78]/30'
                 : 'bg-slate-100 text-slate-600 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
@@ -114,21 +139,39 @@ const KelompokCard = memo<KelompokCardProps>(
           }`}
         >
           <div className="overflow-hidden">
-            <div className="bg-slate-50/75 dark:bg-[#090F1D] p-3 sm:p-4 md:p-5">
-              <div className="md:rounded-xl md:border md:border-slate-200/90 md:dark:border-slate-700/70 md:overflow-hidden md:bg-white md:dark:bg-[#111A2E]">
+            <div className={`p-3 sm:p-4 md:p-5 ${isVelvet ? 'bg-[#1B0F1B]' : 'bg-slate-50/75 dark:bg-[#090F1D]'}`}>
+              <div
+                className={`md:rounded-xl md:border md:overflow-hidden ${
+                  isVelvet
+                    ? 'md:border-[#EB8A78]/30 md:bg-[#2B1723]'
+                    : 'md:border-slate-200/90 md:dark:border-slate-700/70 md:bg-white md:dark:bg-[#111A2E]'
+                }`}
+              >
                 {/* Desktop Column Header (md+ only) */}
-                <div className="hidden md:grid md:grid-cols-[38%_34%_28%] border-b border-slate-200 dark:border-slate-700 bg-slate-100/95 dark:bg-[#17233B] text-xs font-mono uppercase tracking-wider text-slate-800 dark:text-slate-100 font-extrabold divide-x divide-slate-200/70 dark:divide-slate-700/60">
+                <div
+                  className={`hidden md:grid md:grid-cols-[38%_34%_28%] border-b text-xs font-mono uppercase tracking-wider font-extrabold divide-x ${
+                    isVelvet
+                      ? 'border-[#EB8A78]/30 bg-[#381C2C] text-[#FFBE98] divide-[#EB8A78]/20'
+                      : 'border-slate-200 dark:border-slate-700 bg-slate-100/95 dark:bg-[#17233B] text-slate-800 dark:text-slate-100 divide-slate-200/70 dark:divide-slate-700/60'
+                  }`}
+                >
                   <div className="py-3 px-4">{labelKolom?.kolom_1 || 'Sifat / Rumus / Konsep'}</div>
                   <div className="py-3 px-4">{labelKolom?.kolom_2 || 'Contoh Penerapan'}</div>
                   <div className="py-3 px-4">{labelKolom?.kolom_3 || 'Jebakan / Catatan'}</div>
                 </div>
 
-                {/* Unified Responsive Rows: Mobile Card -> Desktop 3-Column Row */}
-                <div className="space-y-3.5 md:space-y-0 md:divide-y-2 md:divide-slate-200/80 md:dark:divide-slate-800">
+                {/* Unified Responsive Rows: Mobile Card -> Desktop 3-Column Row (NO heavy blur for 60fps scroll) */}
+                <div className={`space-y-3.5 md:space-y-0 md:divide-y-2 ${isVelvet ? 'md:divide-[#EB8A78]/20' : 'md:divide-slate-200/80 md:dark:divide-slate-800'}`}>
                   {butirList.map((b, bIdx) => (
                     <div
                       key={bIdx}
-                      className="rounded-xl md:rounded-none bg-white dark:bg-[#131C32] md:dark:bg-transparent md:odd:bg-white md:even:bg-slate-50/55 md:dark:odd:bg-[#111A2E] md:dark:even:bg-[#141F36] md:hover:bg-sky-50/40 md:dark:hover:bg-[#192744] border border-slate-200/90 dark:border-slate-700/65 md:border-0 p-4 md:p-0 shadow-2xs md:shadow-none grid grid-cols-1 md:grid-cols-[38%_34%_28%] gap-3.5 md:gap-0 md:divide-x md:divide-slate-200/60 md:dark:divide-slate-700/45 transition-colors max-w-full overflow-x-clip"
+                      className={`rounded-xl md:rounded-none border md:border-0 p-4 md:p-0 shadow-2xs md:shadow-none grid grid-cols-1 md:grid-cols-[38%_34%_28%] gap-3.5 md:gap-0 md:divide-x transition-colors max-w-full overflow-x-clip ${
+                        isVelvet
+                          ? 'bg-[#2B1723] md:bg-transparent md:odd:bg-[#2B1723] md:even:bg-[#311A27] md:hover:bg-[#3A1F2F] border-[#EB8A78]/25 md:divide-[#EB8A78]/20'
+                          : isPrism
+                          ? 'bg-white/95 md:bg-transparent md:odd:bg-white/95 md:even:bg-sky-50/50 md:hover:bg-sky-50/80 border-slate-200/90 md:divide-slate-200/60'
+                          : 'bg-white dark:bg-[#131C32] md:dark:bg-transparent md:odd:bg-white md:even:bg-slate-50/55 md:dark:odd:bg-[#111A2E] md:dark:even:bg-[#141F36] md:hover:bg-sky-50/40 md:dark:hover:bg-[#192744] border-slate-200/90 dark:border-slate-700/65 md:divide-slate-200/60 md:dark:divide-slate-700/45'
+                      }`}
                     >
                       {/* Kolom 1: Judul Poin + Penjelasan Singkat + Mini-SVG */}
                       <div className="md:py-4 md:px-4 min-w-0 max-w-full space-y-2">
@@ -202,7 +245,9 @@ const KelompokCard = memo<KelompokCardProps>(
 KelompokCard.displayName = 'KelompokCard';
 
 export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = memo(
-  ({ data, renderMarkdown, onZoomVisual }) => {
+  ({ data, theme = 'light', renderMarkdown, onZoomVisual }) => {
+    const isVelvet = theme === 'velvet';
+    const isPrism = theme === 'prism';
     const [openGroups, setOpenGroups] = useState<Record<number, boolean>>(() => {
       const initial: Record<number, boolean> = {};
       if (Array.isArray(data.kelompok)) {
@@ -228,11 +273,31 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = memo(
     }
 
     return (
-      <div className="bg-white dark:bg-[#0E1526] rounded-2xl border border-slate-200/90 dark:border-slate-700/80 shadow-xs overflow-x-clip max-w-full transition-all">
-        <div className="p-5 sm:p-6 space-y-2 border-b border-slate-200 dark:border-slate-700/80 bg-gradient-to-r from-sky-50/70 via-white to-white dark:from-sky-950/30 dark:via-[#11192D] dark:to-[#0E1526]">
+      <div
+        className={`rounded-2xl border shadow-xs overflow-x-clip max-w-full transition-all ${
+          isVelvet
+            ? 'bg-[#2B1723] border-[#EB8A78]/35'
+            : isPrism
+            ? 'bg-white/88 border-white/95'
+            : 'bg-white dark:bg-[#0E1526] border-slate-200/90 dark:border-slate-700/80'
+        }`}
+      >
+        <div
+          className={`p-5 sm:p-6 space-y-2 border-b ${
+            isVelvet
+              ? 'border-[#EB8A78]/25 bg-gradient-to-r from-[#381C2C] via-[#2B1723] to-[#23121E]'
+              : 'border-slate-200 dark:border-slate-700/80 bg-gradient-to-r from-sky-50/70 via-white to-white dark:from-sky-950/30 dark:via-[#11192D] dark:to-[#0E1526]'
+          }`}
+        >
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 text-xs font-mono font-extrabold uppercase tracking-wider text-sky-900 dark:text-sky-200 bg-sky-100 dark:bg-sky-900/60 border border-sky-300/80 dark:border-sky-700/80 px-2.5 py-1 rounded-md shadow-2xs">
-              <BookOpen className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400 shrink-0" />
+            <span
+              className={`inline-flex items-center gap-1.5 text-xs font-mono font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-2xs border ${
+                isVelvet
+                  ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/40'
+                  : 'text-sky-900 dark:text-sky-200 bg-sky-100 dark:bg-sky-900/60 border-sky-300/80 dark:border-sky-700/80'
+              }`}
+            >
+              <BookOpen className={`w-3.5 h-3.5 shrink-0 ${isVelvet ? 'text-[#FF8A6B]' : 'text-sky-600 dark:text-sky-400'}`} />
               <span>Zona 1B • Detail Materi Lengkap</span>
             </span>
           </div>
@@ -241,7 +306,7 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = memo(
           </h2>
         </div>
 
-        <div className="p-3 sm:p-4 space-y-3.5 bg-slate-100/75 dark:bg-[#080D1A]">
+        <div className={`p-3 sm:p-4 space-y-3.5 ${isVelvet ? 'bg-[#1B0F1B]' : 'bg-slate-100/75 dark:bg-[#080D1A]'}`}>
           {data.kelompok.map((kelompok, kIdx) => (
             <KelompokCard
               key={kIdx}
@@ -250,6 +315,7 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = memo(
               onToggle={() => toggleGroup(kIdx)}
               judulBlok={data.judul_blok}
               labelKolom={data.label_kolom}
+              theme={theme}
               renderMarkdown={renderMarkdown}
               onZoomVisual={onZoomVisual}
             />

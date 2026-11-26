@@ -2,28 +2,50 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, Target, BookOpen, Zap, Award, Sparkles, CheckCircle2 } from 'lucide-react';
 import { ThemeToggle } from '../components/common/ThemeToggle';
+import type { ThemeId } from '../lib/theme';
 
 interface PageProps {
-  theme?: 'light' | 'dark';
-  onToggleTheme?: () => void;
+  theme?: ThemeId;
+  onSelectTheme?: (theme: ThemeId) => void;
 }
 
-export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme = () => {} }) => {
+export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onSelectTheme = () => {} }) => {
+  const isVelvet = theme === 'velvet';
+  const isPrism = theme === 'prism';
+
+  const pageClass = isVelvet
+    ? 'bg-transparent text-[#FBF1F2]'
+    : isPrism
+    ? 'bg-transparent text-[#0F172A]'
+    : 'bg-[#fdfbf7] dark:bg-[#070913] text-slate-800 dark:text-[#f8fafc]';
+
+  const headerClass = isVelvet
+    ? 'bg-[#1B0F1D]/90 border-[#EB8A78]/25'
+    : isPrism
+    ? 'bg-white/70 border-white/85'
+    : 'bg-[#fdfbf7]/90 dark:bg-[#070913]/90 border-stone-200/80 dark:border-slate-800';
+
+  const cardClass = isVelvet
+    ? 'border-[#EB8A78]/30 bg-[#2B1723]/90'
+    : isPrism
+    ? 'border-white/90 bg-white/78 backdrop-blur-md'
+    : 'border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60';
+
   return (
-    <div className="min-h-screen flex flex-col bg-[#fdfbf7] dark:bg-[#070913] text-slate-800 dark:text-[#f8fafc]">
+    <div className={`min-h-screen flex flex-col ${pageClass}`}>
       {/* Top Bar */}
-      <header className="sticky top-0 z-30 w-full bg-[#fdfbf7]/90 dark:bg-[#070913]/90 backdrop-blur-md border-b border-stone-200/80 dark:border-slate-800 py-3 px-4 sm:px-8">
+      <header className={`sticky top-0 z-30 w-full backdrop-blur-md border-b py-3 px-4 sm:px-8 ${headerClass}`}>
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <Link
             to="/"
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 dark:text-[#EBD6DC] hover:text-indigo-600 dark:hover:text-[#FF8A6B] transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
             <span>Kembali ke Beranda</span>
           </Link>
           <div className="flex items-center gap-2">
             <span className="font-bold text-sm text-slate-900 dark:text-white">SkolAce</span>
-            <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
+            <ThemeToggle theme={theme} onSelectTheme={onSelectTheme} size="sm" />
           </div>
         </div>
       </header>
@@ -47,7 +69,7 @@ export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme 
 
           {/* Core Values */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
-            <div className="p-6 rounded-2xl border border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shadow-xs space-y-3">
+            <div className={`p-6 rounded-2xl border shadow-xs space-y-3 ${cardClass}`}>
               <div className="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-600 dark:text-cyan-400 flex items-center justify-center font-bold">
                 <BookOpen className="w-5 h-5" />
               </div>
@@ -59,7 +81,7 @@ export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme 
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl border border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shadow-xs space-y-3">
+            <div className={`p-6 rounded-2xl border shadow-xs space-y-3 ${cardClass}`}>
               <div className="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/80 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold">
                 <Zap className="w-5 h-5" />
               </div>
@@ -71,7 +93,7 @@ export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme 
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl border border-stone-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shadow-xs space-y-3">
+            <div className={`p-6 rounded-2xl border shadow-xs space-y-3 ${cardClass}`}>
               <div className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
                 <Award className="w-5 h-5" />
               </div>
@@ -85,7 +107,7 @@ export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme 
           </div>
 
           {/* 7 Subtests Coverage */}
-          <div className="p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-stone-50/50 dark:bg-slate-900/40 space-y-4">
+          <div className={`p-8 rounded-3xl border space-y-4 ${cardClass}`}>
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
               <Target className="w-5 h-5 text-indigo-600 dark:text-cyan-400" />
               Cakupan 7 Subtes Resmi UTBK-SNBT
@@ -123,7 +145,7 @@ export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onToggleTheme 
           </div>
 
           {/* Editorial & E-E-A-T Quality Standard */}
-          <div className="p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-white/75 dark:bg-slate-900/50 space-y-4">
+          <div className={`p-8 rounded-3xl border space-y-4 ${cardClass}`}>
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
               Standar Editorial &amp; Verifikasi Kurikulum
             </h2>

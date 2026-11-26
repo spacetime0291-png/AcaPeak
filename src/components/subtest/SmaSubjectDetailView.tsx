@@ -6,13 +6,18 @@ import {
   Sparkles,
 } from 'lucide-react';
 import type { SmaSubject } from '../../lib/smaSyllabusData';
+import type { ThemeId } from '../../lib/theme';
 import { ThemeToggle } from '../common/ThemeToggle';
-import { NatureFocusHeaderAccent } from '../decorations/LazyDecorations';
+import {
+  NatureFocusHeaderAccent,
+  VelvetFocusHeaderAccent,
+  PrismFocusHeaderAccent,
+} from '../decorations/LazyDecorations';
 
 interface SmaSubjectDetailViewProps {
   subject: SmaSubject;
-  theme?: 'light' | 'dark';
-  onToggleTheme?: () => void;
+  theme?: ThemeId;
+  onSelectTheme?: (theme: ThemeId) => void;
   onBackToHome?: () => void;
   onSelectTopic: (topicId: string) => void;
 }
@@ -20,11 +25,14 @@ interface SmaSubjectDetailViewProps {
 export const SmaSubjectDetailView: React.FC<SmaSubjectDetailViewProps> = ({
   subject,
   theme = 'light',
-  onToggleTheme = () => {},
+  onSelectTheme = () => {},
   onBackToHome,
   onSelectTopic,
 }) => {
-  const isDark = theme === 'dark';
+  const isCosmic = theme === 'dark';
+  const isVelvet = theme === 'velvet';
+  const isPrism = theme === 'prism';
+  const isDark = isCosmic || isVelvet;
   const [openChapters, setOpenChapters] = useState<Set<number>>(
     new Set(subject.chapters.map((c) => c.chapter_num))
   );
@@ -46,8 +54,22 @@ export const SmaSubjectDetailView: React.FC<SmaSubjectDetailViewProps> = ({
   return (
     <div className="w-full pb-20">
       {/* Header with clean Focus-mode styling */}
-      <div className="relative overflow-hidden mb-4 bg-white/95 dark:bg-[#070913]/90 backdrop-blur-md rounded-2xl sm:rounded-3xl border border-stone-200/90 dark:border-indigo-500/35 p-4 sm:p-5 shadow-sm transition-all duration-300">
-        {!isDark && <NatureFocusHeaderAccent />}
+      <div
+        className={`relative mb-4 backdrop-blur-md rounded-2xl sm:rounded-3xl border p-4 sm:p-5 shadow-sm transition-all duration-300 ${
+          isVelvet
+            ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/30'
+            : isCosmic
+            ? 'bg-[#070913]/90 border-indigo-500/35'
+            : isPrism
+            ? 'bg-white/75 border-white/90'
+            : 'bg-white/95 border-stone-200/90'
+        }`}
+      >
+        <div className="absolute inset-0 overflow-hidden rounded-2xl sm:rounded-3xl pointer-events-none">
+          {theme === 'light' && <NatureFocusHeaderAccent />}
+          {isVelvet && <VelvetFocusHeaderAccent />}
+          {isPrism && <PrismFocusHeaderAccent />}
+        </div>
 
         <div className="relative z-10 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
@@ -56,7 +78,7 @@ export const SmaSubjectDetailView: React.FC<SmaSubjectDetailViewProps> = ({
               onClick={() => onBackToHome?.()}
               className="p-2 -ml-1 rounded-xl text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer flex items-center gap-1 text-xs sm:text-sm font-semibold"
             >
-              <ChevronLeft className="w-5 h-5 text-indigo-600 dark:text-cyan-400" />
+              <ChevronLeft className={`w-5 h-5 ${isVelvet ? 'text-[#FF8A6B]' : 'text-indigo-600 dark:text-cyan-400'}`} />
               <span>Kembali</span>
             </Link>
             <div className="h-5 w-px bg-stone-200 dark:bg-slate-800" />
@@ -75,7 +97,7 @@ export const SmaSubjectDetailView: React.FC<SmaSubjectDetailViewProps> = ({
             </div>
           </div>
 
-          <ThemeToggle theme={theme} onToggle={onToggleTheme} size="sm" />
+          <ThemeToggle theme={theme} onSelectTheme={onSelectTheme} size="sm" />
         </div>
       </div>
 

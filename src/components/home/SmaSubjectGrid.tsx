@@ -13,10 +13,16 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { SMA_SUBJECTS } from '../../lib/smaSyllabusData';
-import { PottedPlantDecor, LeafCornerDecor } from '../decorations/LazyDecorations';
+import type { ThemeId } from '../../lib/theme';
+import {
+  PottedPlantDecor,
+  LeafCornerDecor,
+  VelvetCardCornerDecor,
+  PrismCardCornerDecor,
+} from '../decorations/LazyDecorations';
 
 interface SmaSubjectGridProps {
-  theme?: 'light' | 'dark';
+  theme?: ThemeId;
   onSelectSubject?: (subjectId: string) => void;
 }
 
@@ -32,7 +38,10 @@ const ICON_MAP: Record<string, React.ReactNode> = {
 };
 
 export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ theme = 'light', onSelectSubject }) => {
-  const isDark = theme === 'dark';
+  const isCosmic = theme === 'dark';
+  const isVelvet = theme === 'velvet';
+  const isPrism = theme === 'prism';
+  const isDark = isCosmic || isVelvet;
   const [gradeFilter, setGradeFilter] = useState<'all' | '10' | '11' | '12'>('all');
   const [categoryFilter, setCategoryFilter] = useState<'all' | 'saintek' | 'soshum'>('all');
 
@@ -148,8 +157,12 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ theme = 'light',
         {filteredSubjects.map((subj, sIdx) => {
           const totalTopics = subj.chapters.reduce((acc, c) => acc + c.topics.length, 0);
 
-          const cardStyle = isDark
+          const cardStyle = isVelvet
+            ? 'velvet-card border-transparent'
+            : isCosmic
             ? 'bg-[#0d1424] hover:bg-[#111c33] border-slate-800 hover:border-slate-700 shadow-xs'
+            : isPrism
+            ? 'prism-glass-card border-transparent'
             : `${subj.color.border} ${subj.color.bg} shadow-xs`;
 
           return (
@@ -159,8 +172,8 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ theme = 'light',
               onClick={() => onSelectSubject?.(subj.id)}
               className={`group flex flex-col p-4 sm:p-5 rounded-[22px] transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer text-left relative overflow-hidden border ${cardStyle}`}
             >
-              {/* Light Mode Decorative corner */}
-              {!isDark && (
+              {/* Theme Decorative corner */}
+              {theme === 'light' && (
                 <div>
                   {sIdx % 2 === 0 ? (
                     <LeafCornerDecor position="top-left" />
@@ -169,6 +182,8 @@ export const SmaSubjectGrid: React.FC<SmaSubjectGridProps> = ({ theme = 'light',
                   )}
                 </div>
               )}
+              {isVelvet && <VelvetCardCornerDecor variant={sIdx % 2 === 0 ? 'leaf-dots' : 'dots-lotus'} />}
+              {isPrism && <PrismCardCornerDecor variant={sIdx % 2 === 0 ? 'dots-bl' : 'dots-tr'} />}
 
               <div className="flex items-start justify-between mb-3 relative z-10">
                 <div className="relative">

@@ -26,14 +26,19 @@ import {
 } from '../../lib/drillingRotationEngine';
 import { ModuleIcon } from './ModuleIcon';
 import { ThemeToggle } from '../common/ThemeToggle';
-import { NatureFocusHeaderAccent } from '../decorations/LazyDecorations';
+import type { ThemeId } from '../../lib/theme';
+import {
+  NatureFocusHeaderAccent,
+  VelvetFocusHeaderAccent,
+  PrismFocusHeaderAccent,
+} from '../decorations/LazyDecorations';
 
 interface SubtestDetailViewProps {
   subtest: SubtestItem;
   activeTab: 'materi' | 'drilling';
   initialSelectedTopicId?: string;
-  theme?: 'light' | 'dark';
-  onToggleTheme?: () => void;
+  theme?: ThemeId;
+  onSelectTheme?: (theme: ThemeId) => void;
   onTabChange?: (tab: 'materi' | 'drilling') => void;
   onBackToHome?: () => void;
   onSelectSubtest?: (subtestCode: string) => void;
@@ -51,13 +56,15 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   activeTab,
   initialSelectedTopicId,
   theme = 'light',
-  onToggleTheme = () => {},
+  onSelectTheme = () => {},
   onTabChange,
   onBackToHome,
   onSelectMaterial,
   onStartDrilling,
 }) => {
-  const isDark = theme === 'dark';
+  const isCosmic = theme === 'dark';
+  const isVelvet = theme === 'velvet';
+  const isPrism = theme === 'prism';
 
   // Multi-select state strictly for the dedicated Drilling tab
   const [selectedSubchapters, setSelectedSubchapters] = useState<Set<string>>(() => {
@@ -239,7 +246,18 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   // Harmonized Subtest Theme Accents (Senada dengan Tampilan Beranda)
   const subtestTheme = (() => {
     const code = subtest.code.toUpperCase();
-    if (isDark) {
+    if (isVelvet) {
+      return {
+        border: 'border-[#EB8A78]/35 hover:border-[#FF8A6B]/70',
+        glow: 'shadow-[0_6px_24px_rgba(10,4,8,0.45)]',
+        squircle: 'bg-[#381C2C] border border-[#EB8A78]/45 text-[#FFBE98] shadow-xs',
+        babBadge: 'bg-[#4A222B]/90 text-[#FFBE98] border border-[#EB8A78]/45',
+        numChip: 'bg-gradient-to-tr from-[#FF8A6B] to-[#F5B041] text-[#1E0F17] border border-[#FFBE98]/50 shadow-xs',
+        actionPill: 'bg-[#FF8A6B]/12 text-[#FFBE98] border border-[#FF8A6B]/45 group-hover/sub:bg-[#FF8A6B] group-hover/sub:text-[#1E0F17]',
+        highlightText: 'text-[#FFBE98]',
+      };
+    }
+    if (isCosmic) {
       switch (code) {
         case 'PU':
           return {
@@ -370,12 +388,26 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
   return (
     <div className="w-full pb-28">
-      {/* 1. STICKY TOP APP BAR (Native App Feel, Unified Cosmic/Nature Header) */}
+      {/* 1. STICKY TOP APP BAR (Native App Feel, Unified Cosmic/Nature/Velvet/Prism Header) */}
       <div className="sticky top-0 z-40 w-full shadow-xs">
         {/* Baris 1: Top Navigation Bar */}
-        <div className="relative overflow-hidden bg-white/95 dark:bg-[#070913]/90 border-b border-stone-200/90 dark:border-indigo-500/35 w-full shadow-sm transition-all duration-300 backdrop-blur-md">
-          {/* Light Mode Subtle Watermark Foliage Accent (opacity 0.18 - 0.25) */}
-          {!isDark && <NatureFocusHeaderAccent />}
+        <div
+          className={`relative w-full shadow-sm transition-all duration-300 backdrop-blur-md border-b ${
+            isVelvet
+              ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/25'
+              : isCosmic
+              ? 'bg-[#070913]/90 border-indigo-500/35'
+              : isPrism
+              ? 'bg-white/70 border-white/85'
+              : 'bg-white/95 border-stone-200/90'
+          }`}
+        >
+          {/* Decorative Watermark Accent (isolated overflow-hidden so ThemeToggle popover is never clipped) */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {theme === 'light' && <NatureFocusHeaderAccent />}
+            {isVelvet && <VelvetFocusHeaderAccent />}
+            {isPrism && <PrismFocusHeaderAccent />}
+          </div>
 
           <div className="relative z-10 max-w-4xl mx-auto px-3.5 sm:px-5 h-16 sm:h-18 flex items-center justify-between font-semibold">
             <div className="flex items-center gap-3.5 min-w-0">
@@ -385,9 +417,17 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className="p-2 -ml-1 rounded-2xl text-slate-700 dark:text-slate-200 hover:bg-stone-100 dark:hover:bg-slate-800/80 active:scale-95 transition cursor-pointer flex items-center justify-center shrink-0"
                 aria-label="Kembali ke Beranda"
               >
-                <ArrowLeft className="w-6 h-6 text-indigo-600 dark:text-cyan-400" />
+                <ArrowLeft
+                  className={`w-6 h-6 ${
+                    isVelvet
+                      ? 'text-[#FF8A6B]'
+                      : isPrism
+                      ? 'text-blue-600'
+                      : 'text-indigo-600 dark:text-cyan-400'
+                  }`}
+                />
               </Link>
-              <h1 className="font-bold text-base sm:text-xl text-slate-900 dark:text-white truncate tracking-tight">
+              <h1 className="font-bold text-base sm:text-xl text-slate-900 dark:text-[#FBF1F2] truncate tracking-tight">
                 {subtest.title || subtest.name}
               </h1>
             </div>
@@ -395,9 +435,29 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             <div className="flex items-center gap-2 sm:gap-3 shrink-0">
               {/* Subtest Information Badge */}
               {totalSubtopics > 0 && (
-                <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-gradient-to-r dark:from-blue-950/80 dark:to-indigo-950/80 border border-stone-200 dark:border-cyan-500/40 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]">
-                  <span className="text-slate-900 dark:text-cyan-200 font-bold">{subtest.modules?.length || 0} Bab</span>
-                  <span className="text-slate-400 dark:text-slate-400 text-xs">• {totalSubtopics} Sub-bab</span>
+                <div
+                  className={`flex items-center gap-1.5 border px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs ${
+                    isVelvet
+                      ? 'bg-[#2B1723]/90 border-[#EB8A78]/35 text-[#FBF1F2]'
+                      : isCosmic
+                      ? 'bg-gradient-to-r from-blue-950/80 to-indigo-950/80 border-cyan-500/40 shadow-[0_0_12px_rgba(0,242,254,0.25)]'
+                      : isPrism
+                      ? 'bg-white/80 border-sky-200/80'
+                      : 'bg-stone-100/90 border-stone-200'
+                  }`}
+                >
+                  <span
+                    className={`font-bold ${
+                      isVelvet
+                        ? 'text-[#FFBE98]'
+                        : isCosmic
+                        ? 'text-cyan-200'
+                        : 'text-slate-900'
+                    }`}
+                  >
+                    {subtest.modules?.length || 0} Bab
+                  </span>
+                  <span className="text-slate-400 text-xs">• {totalSubtopics} Sub-bab</span>
                   {completedCount > 0 && (
                     <span className="text-emerald-600 dark:text-emerald-400 font-bold text-xs">• {completedCount} Selesai</span>
                   )}
@@ -405,7 +465,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
               )}
               <ThemeToggle
                 theme={theme}
-                onToggle={onToggleTheme}
+                onSelectTheme={onSelectTheme}
                 size="sm"
               />
             </div>
@@ -413,17 +473,43 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         </div>
 
         {/* Baris 2: Sticky Segmented Tab (Materi vs Drilling Soal) */}
-        <div className="bg-[#fcfbf9]/95 dark:bg-[#080d21]/90 backdrop-blur-md border-b border-stone-200/90 dark:border-slate-800/80 w-full px-3.5 sm:px-5 py-2.5 transition-colors">
+        <div
+          className={`backdrop-blur-md border-b w-full px-3.5 sm:px-5 py-2.5 transition-colors ${
+            isVelvet
+              ? 'bg-[#170D19]/92 border-[#EB8A78]/20'
+              : isCosmic
+              ? 'bg-[#080d21]/90 border-slate-800/80'
+              : isPrism
+              ? 'bg-white/55 border-white/75'
+              : 'bg-[#fcfbf9]/95 border-stone-200/90'
+          }`}
+        >
           <div className="max-w-4xl mx-auto flex items-center justify-between">
-            <div className="flex items-center bg-stone-100 dark:bg-[#0a1024] p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 w-full sm:w-auto shadow-2xs">
+            <div
+              className={`flex items-center p-1.5 rounded-2xl border w-full sm:w-auto shadow-2xs ${
+                isVelvet
+                  ? 'bg-[#261420] border-[#EB8A78]/25'
+                  : isCosmic
+                  ? 'bg-[#0a1024] border-slate-800'
+                  : isPrism
+                  ? 'bg-white/70 border-white/90'
+                  : 'bg-stone-100 border-stone-200'
+              }`}
+            >
               <Link
                 to={`/utbk/${subtest.code.toLowerCase()}`}
                 onClick={() => onTabChange?.('materi')}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'materi'
-                    ? isDark
+                    ? isVelvet
+                      ? 'bg-[#FF8A6B] text-[#1E0F17] font-extrabold shadow-[0_0_16px_rgba(255,138,107,0.3)]'
+                      : isCosmic
                       ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_18px_rgba(0,242,254,0.5)] border border-cyan-400/50'
+                      : isPrism
+                      ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-sm'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
+                    : isVelvet
+                    ? 'text-[#C9A9B0] hover:text-[#FBF1F2]'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
@@ -434,9 +520,15 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 onClick={() => onTabChange?.('drilling')}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'drilling'
-                    ? isDark
+                    ? isVelvet
+                      ? 'bg-[#FF8A6B] text-[#1E0F17] font-extrabold shadow-[0_0_16px_rgba(255,138,107,0.3)]'
+                      : isCosmic
                       ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_18px_rgba(0,242,254,0.5)] border border-cyan-400/50'
+                      : isPrism
+                      ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-sm'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
+                    : isVelvet
+                    ? 'text-[#C9A9B0] hover:text-[#FBF1F2]'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
@@ -449,7 +541,11 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <button
                   type="button"
                   onClick={selectAllSubtest}
-                  className="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]"
+                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border cursor-pointer transition shadow-2xs ${
+                    isVelvet
+                      ? 'text-[#FFBE98] hover:bg-[#3A1D2E] border-[#EB8A78]/45'
+                      : 'text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border-blue-200 dark:border-cyan-400/50 dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]'
+                  }`}
                 >
                   Pilih Semua
                 </button>
@@ -471,7 +567,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
       {/* Main Content Area: Separated Standalone Bab Cards (Senada dengan Beranda) */}
       <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-3 sm:py-5">
         {/* ========================================================
-            TAB 1: MATERI (Standalone Cosmic/Nature Bab Cards)
+            TAB 1: MATERI (Standalone Cosmic/Nature/Velvet/Prism Bab Cards)
             ======================================================== */}
         {activeTab === 'materi' && (
           <div className="space-y-3 sm:space-y-3.5">
@@ -482,8 +578,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <div
                   key={mod.id}
                   className={`rounded-xl sm:rounded-2xl transition-all duration-300 overflow-hidden ${
-                    isDark
+                    isVelvet
+                      ? `bg-[#2B1723]/92 border ${subtestTheme.border} ${subtestTheme.glow}`
+                      : isCosmic
                       ? `bg-[#0e1736]/90 backdrop-blur-md border ${subtestTheme.border} ${subtestTheme.glow}`
+                      : isPrism
+                      ? `bg-white/78 backdrop-blur-md border border-white/90 shadow-xs hover:shadow-md`
                       : `bg-white border ${subtestTheme.border} ${subtestTheme.glow}`
                   }`}
                 >
@@ -549,7 +649,17 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3 sm:px-4 py-2.5 border-t border-stone-100 dark:border-indigo-500/25 space-y-2 animate-subtopic-slide">
+                      <div
+                        className={`px-3 sm:px-4 py-2.5 border-t space-y-2 animate-subtopic-slide ${
+                          isVelvet
+                            ? 'bg-[#1D101D]/90 border-[#EB8A78]/20'
+                            : isCosmic
+                            ? 'bg-[#080d21]/80 border-indigo-500/25'
+                            : isPrism
+                            ? 'bg-sky-50/40 border-white/80'
+                            : 'bg-[#fffdf9] border-stone-100'
+                        }`}
+                      >
                         {/* Pinned Cheat Sheet Banner inside expanded Bab */}
                         <div className="flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-gradient-to-r from-amber-500/15 via-amber-500/5 to-transparent border border-amber-500/30 mb-2.5">
                           <div className="flex items-center gap-2.5 min-w-0 pr-2">
@@ -591,8 +701,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               onClick={() => onSelectMaterial?.(sub.id)}
                               style={{ animationDelay: `${sIdx * 30}ms` }}
                               className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
-                                isDark
+                                isVelvet
+                                  ? 'bg-[#341B2B]/90 hover:bg-[#3F2134] border-[#EB8A78]/25 hover:border-[#FF8A6B]'
+                                  : isCosmic
                                   ? 'bg-[#0f1b3b]/90 hover:bg-[#152754] border-slate-700/80 hover:border-cyan-400 hover:shadow-[0_0_18px_rgba(0,242,254,0.3)]'
+                                  : isPrism
+                                  ? 'bg-white/90 hover:bg-sky-50/85 border-white hover:border-sky-300'
                                   : 'bg-white hover:bg-[#fff9eb] border-stone-200/90 hover:border-amber-300/80 hover:shadow-xs'
                               }`}
                             >
@@ -649,9 +763,23 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         {activeTab === 'drilling' && (
           <div className="space-y-4">
             {/* 1. Multi-Subtest Selector Pills */}
-            <div className="bg-white/80 dark:bg-[#0c1326]/80 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-stone-200/90 dark:border-slate-800 shadow-2xs space-y-2.5">
+            <div
+              className={`backdrop-blur-md p-3 sm:p-4 rounded-2xl border shadow-2xs space-y-2.5 ${
+                isVelvet
+                  ? 'bg-[#2B1723]/90 border-[#EB8A78]/30'
+                  : isCosmic
+                  ? 'bg-[#0c1326]/80 border-slate-800'
+                  : isPrism
+                  ? 'bg-white/75 border-white/90'
+                  : 'bg-white/80 border-stone-200/90'
+              }`}
+            >
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-cyan-400/80 flex items-center gap-1.5">
+                <span
+                  className={`text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 ${
+                    isVelvet ? 'text-[#FF8A6B]' : 'text-slate-500 dark:text-cyan-400/80'
+                  }`}
+                >
                   <Layers className="w-3.5 h-3.5" />
                   <span>Subtes Latihan ({UTBK_SYLLABUS.length} Subtes BPPP)</span>
                 </span>
@@ -673,11 +801,19 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       onClick={() => setDrillingSubtestCode(st.code)}
                       className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 border shrink-0 ${
                         isActive
-                          ? isDark
+                          ? isVelvet
+                            ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] font-extrabold shadow-xs'
+                            : isCosmic
                             ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.4)]'
+                            : isPrism
+                            ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white border-sky-400 shadow-xs'
                             : 'bg-blue-600 text-white border-blue-600 shadow-xs'
-                          : isDark
+                          : isVelvet
+                          ? 'bg-[#1F1020] text-[#EBD6DC] hover:text-white border-[#EB8A78]/25 hover:border-[#EB8A78]/50'
+                          : isCosmic
                           ? 'bg-slate-900/90 text-slate-300 hover:text-white border-slate-800 hover:border-slate-700'
+                          : isPrism
+                          ? 'bg-white/80 text-slate-700 hover:bg-white border-white/90'
                           : 'bg-stone-50 text-slate-700 hover:bg-stone-100 border-stone-200/80'
                       }`}
                     >
@@ -686,7 +822,11 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                         <span
                           className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono font-black ${
                             isActive
-                              ? 'bg-white/25 text-white'
+                              ? isVelvet
+                                ? 'bg-[#1E0F17]/20 text-[#1E0F17]'
+                                : 'bg-white/25 text-white'
+                              : isVelvet
+                              ? 'bg-[#4A222B] text-[#FFBE98]'
                               : 'bg-blue-100 dark:bg-cyan-950 text-blue-700 dark:text-cyan-300'
                           }`}
                         >
@@ -700,7 +840,17 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             </div>
 
             {/* 2. Seen / Unseen Tracker Box */}
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-stone-50 dark:bg-slate-900/90 border border-stone-200/90 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs">
+            <div
+              className={`p-3.5 sm:p-4 rounded-2xl border flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs ${
+                isVelvet
+                  ? 'bg-[#2B1723]/90 border-[#EB8A78]/30'
+                  : isCosmic
+                  ? 'bg-slate-900/90 border-slate-800'
+                  : isPrism
+                  ? 'bg-white/78 border-white/90'
+                  : 'bg-stone-50 border-stone-200/90'
+              }`}
+            >
               <div className="space-y-0.5">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -727,13 +877,23 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             </div>
 
             {/* 3. Order Mode: Blocking vs Interleaved */}
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-[#0c1326] border border-stone-200/90 dark:border-slate-800 shadow-2xs space-y-2.5">
+            <div
+              className={`p-3.5 sm:p-4 rounded-2xl border shadow-2xs space-y-2.5 ${
+                isVelvet
+                  ? 'bg-[#2B1723]/90 border-[#EB8A78]/30'
+                  : isCosmic
+                  ? 'bg-[#0c1326] border-slate-800'
+                  : isPrism
+                  ? 'bg-white/78 border-white/90'
+                  : 'bg-white border-stone-200/90'
+              }`}
+            >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
-                  <Shuffle className="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400" />
+                  <Shuffle className={`w-3.5 h-3.5 ${isVelvet ? 'text-[#FF8A6B]' : 'text-blue-600 dark:text-cyan-400'}`} />
                   <span>Mode Urutan Soal (Rotation Engine)</span>
                 </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800 text-slate-500">
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800 velvet-surface-deep text-slate-500">
                   UTBK BPPP
                 </span>
               </div>
@@ -744,17 +904,25 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   onClick={() => setOrderMode('blocking')}
                   className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${
                     orderMode === 'blocking'
-                      ? isDark
+                      ? isVelvet
+                        ? 'bg-[#3D1F2E] border-[#FF8A6B] ring-1 ring-[#FF8A6B]'
+                        : isCosmic
                         ? 'bg-[#0f1d3c] border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.3)] ring-1 ring-cyan-400'
                         : 'bg-blue-50/90 border-blue-400 shadow-xs ring-1 ring-blue-300'
-                      : isDark
+                      : isVelvet
+                      ? 'bg-[#1F1020]/80 hover:bg-[#331928] border-[#EB8A78]/20'
+                      : isCosmic
                       ? 'bg-slate-900/60 hover:bg-slate-850 border-slate-800'
                       : 'bg-stone-50/60 hover:bg-stone-100/60 border-stone-200'
                   }`}
                 >
                   <ShieldCheck
                     className={`w-5 h-5 shrink-0 mt-0.5 ${
-                      orderMode === 'blocking' ? 'text-blue-600 dark:text-cyan-400' : 'text-slate-400'
+                      orderMode === 'blocking'
+                        ? isVelvet
+                          ? 'text-[#FF8A6B]'
+                          : 'text-blue-600 dark:text-cyan-400'
+                        : 'text-slate-400'
                     }`}
                   />
                   <div className="min-w-0">
@@ -772,17 +940,25 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   onClick={() => setOrderMode('interleaved')}
                   className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${
                     orderMode === 'interleaved'
-                      ? isDark
+                      ? isVelvet
+                        ? 'bg-[#3D1F2E] border-[#FF8A6B] ring-1 ring-[#FF8A6B]'
+                        : isCosmic
                         ? 'bg-[#0f1d3c] border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.3)] ring-1 ring-cyan-400'
                         : 'bg-blue-50/90 border-blue-400 shadow-xs ring-1 ring-blue-300'
-                      : isDark
+                      : isVelvet
+                      ? 'bg-[#1F1020]/80 hover:bg-[#331928] border-[#EB8A78]/20'
+                      : isCosmic
                       ? 'bg-slate-900/60 hover:bg-slate-850 border-slate-800'
                       : 'bg-stone-50/60 hover:bg-stone-100/60 border-stone-200'
                   }`}
                 >
                   <Shuffle
                     className={`w-5 h-5 shrink-0 mt-0.5 ${
-                      orderMode === 'interleaved' ? 'text-blue-600 dark:text-cyan-400' : 'text-slate-400'
+                      orderMode === 'interleaved'
+                        ? isVelvet
+                          ? 'text-[#FF8A6B]'
+                          : 'text-blue-600 dark:text-cyan-400'
+                        : 'text-slate-400'
                     }`}
                   />
                   <div className="min-w-0">
@@ -846,8 +1022,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   <div
                     key={mod.id}
                     className={`rounded-xl sm:rounded-2xl transition-all duration-300 overflow-hidden ${
-                      isDark
+                      isVelvet
+                        ? `bg-[#2B1723]/92 border ${subtestTheme.border} ${subtestTheme.glow}`
+                        : isCosmic
                         ? `bg-[#0e1736]/90 backdrop-blur-md border ${subtestTheme.border} ${subtestTheme.glow}`
+                        : isPrism
+                        ? `bg-white/78 backdrop-blur-md border border-white/90 shadow-xs hover:shadow-md`
                         : `bg-white border ${subtestTheme.border} ${subtestTheme.glow}`
                     }`}
                   >
@@ -897,10 +1077,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                           }}
                           className={`text-xs font-bold px-3 py-1 rounded-lg sm:rounded-xl border transition cursor-pointer shadow-2xs ${
                             allSelectedInMod
-                              ? isDark
+                              ? isVelvet
+                                ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] font-black'
+                                : isCosmic
                                 ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_0_14px_rgba(0,242,254,0.6)] font-black'
                                 : 'bg-blue-600 text-white border-blue-600'
-                              : isDark
+                              : isVelvet
+                              ? 'text-[#FFBE98] hover:bg-[#3A1D2E] border-[#EB8A78]/45'
+                              : isCosmic
                               ? 'text-cyan-300 hover:bg-cyan-950/60 border-cyan-400/50'
                               : 'text-blue-600 hover:bg-blue-50 border-blue-200'
                           }`}
@@ -925,7 +1109,17 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="bg-[#fffdf9] dark:bg-[#080d21]/80 px-3 sm:px-4 py-2.5 border-t border-stone-100 dark:border-indigo-500/25 space-y-2 animate-subtopic-slide">
+                        <div
+                          className={`px-3 sm:px-4 py-2.5 border-t space-y-2 animate-subtopic-slide ${
+                            isVelvet
+                              ? 'bg-[#1D101D]/90 border-[#EB8A78]/20'
+                              : isCosmic
+                              ? 'bg-[#080d21]/80 border-indigo-500/25'
+                              : isPrism
+                              ? 'bg-sky-50/40 border-white/80'
+                              : 'bg-[#fffdf9] border-stone-100'
+                          }`}
+                        >
                           {mod.subtopics.map((sub, sIdx) => {
                             const isSelected = selectedSubchapters.has(sub.id);
 
@@ -936,11 +1130,17 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 style={{ animationDelay: `${sIdx * 30}ms` }}
                                 className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
                                   isSelected
-                                    ? isDark
+                                    ? isVelvet
+                                      ? 'bg-[#3D1F2E] border-[#FF8A6B] text-[#FBF1F2]'
+                                      : isCosmic
                                       ? 'bg-[#0c2448] border-cyan-400 text-cyan-100 shadow-[0_0_16px_rgba(0,242,254,0.35)]'
                                       : 'bg-sky-50/90 border-sky-300 shadow-xs'
-                                    : isDark
+                                    : isVelvet
+                                    ? 'bg-[#341B2B]/90 hover:bg-[#3F2134] border-[#EB8A78]/25 hover:border-[#FF8A6B] text-[#FBF1F2]'
+                                    : isCosmic
                                     ? 'bg-[#0f1b3b]/90 hover:bg-[#152754] border-slate-700/80 hover:border-cyan-400/60 text-slate-200'
+                                    : isPrism
+                                    ? 'bg-white/90 hover:bg-sky-50/80 border-white text-slate-800'
                                     : 'bg-white hover:bg-[#fff9eb] border-stone-200/90 hover:border-amber-200 text-slate-800'
                                 }`}
                               >
@@ -950,10 +1150,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                   <div
                                     className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border ${
                                       isSelected
-                                        ? isDark
+                                        ? isVelvet
+                                          ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] font-bold'
+                                          : isCosmic
                                           ? 'bg-cyan-400 text-slate-950 border-cyan-300 shadow-[0_0_12px_rgba(0,242,254,0.6)] font-bold'
                                           : 'bg-blue-600 text-white border-blue-600'
-                                        : isDark
+                                        : isVelvet
+                                        ? 'bg-[#4A222B] text-[#FFBE98] border-[#EB8A78]/35 group-hover/sub:bg-[#FF8A6B] group-hover/sub:text-[#1E0F17]'
+                                        : isCosmic
                                         ? 'bg-slate-800 text-cyan-300 border-slate-700 group-hover/sub:bg-cyan-600 group-hover/sub:text-white'
                                         : 'bg-blue-50 text-blue-600 border-blue-100 group-hover/sub:bg-blue-600 group-hover/sub:text-white'
                                     }`}
@@ -965,10 +1169,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                   <span
                                     className={`text-xs sm:text-sm font-bold leading-snug break-words whitespace-normal flex-1 ${
                                       isSelected
-                                        ? isDark
+                                        ? isVelvet
+                                          ? 'text-[#FFBE98] font-bold'
+                                          : isCosmic
                                           ? 'text-cyan-100 font-bold'
                                           : 'text-blue-950 font-bold'
-                                        : isDark
+                                        : isVelvet
+                                        ? 'text-[#FBF1F2] group-hover/sub:text-[#FFBE98]'
+                                        : isCosmic
                                         ? 'text-slate-200 group-hover/sub:text-cyan-200'
                                         : 'text-slate-800 group-hover/sub:text-blue-700'
                                     }`}
@@ -994,7 +1202,15 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
       {activeTab === 'drilling' && (
         <aside
           aria-label="Konfigurasi Sesi Drilling"
-          className="fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl p-2.5 sm:p-3.5 transition-all duration-300 bg-white/95 dark:bg-[#0c1228]/95 border-stone-200/90 dark:border-cyan-500/40 shadow-[0_-8px_25px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_30px_rgba(0,0,0,0.75)]"
+          className={`fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl p-2.5 sm:p-3.5 transition-all duration-300 ${
+            isVelvet
+              ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/35 shadow-[0_-8px_30px_rgba(0,0,0,0.65)]'
+              : isCosmic
+              ? 'bg-[#0c1228]/95 border-cyan-500/40 shadow-[0_-8px_30px_rgba(0,0,0,0.75)]'
+              : isPrism
+              ? 'bg-white/85 border-white/90 shadow-[0_-8px_25px_rgba(15,23,42,0.08)]'
+              : 'bg-white/95 border-stone-200/90 shadow-[0_-8px_25px_rgba(0,0,0,0.06)]'
+          }`}
         >
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-4">
             {/* Bertingkat Steppers (Jumlah Soal & Waktu Bertingkat dengan +5 / -5) */}
@@ -1137,8 +1353,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
               }}
               className={`w-full sm:w-auto px-6 sm:px-8 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none cursor-pointer ${
                 selectedSubchapters.size > 0
-                  ? isDark
+                  ? isVelvet
+                    ? 'bg-gradient-to-r from-[#FF8A6B] to-[#F5B041] hover:brightness-110 active:scale-95 text-[#1E0F17] font-extrabold shadow-[0_0_20px_rgba(255,138,107,0.35)]'
+                    : isCosmic
                     ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white shadow-[0_0_24px_rgba(0,242,254,0.6)] border border-cyan-400/50'
+                    : isPrism
+                    ? 'bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 active:scale-95 text-white shadow-sky-500/30'
                     : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 active:scale-95 text-white shadow-blue-500/25'
                   : 'bg-stone-200 dark:bg-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed opacity-60'
               }`}

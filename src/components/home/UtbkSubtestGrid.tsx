@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import type { ThemeId } from '../../lib/theme';
 import {
   NatureRainbowArc,
   PottedPlantDecor,
   LeafCornerDecor,
   DottedCornerDecor,
   CosmicSubtitleSparkle,
+  VelvetCardCornerDecor,
+  PrismCardCornerDecor,
 } from '../decorations/LazyDecorations';
 
 interface UtbkSubtestGridProps {
-  theme?: 'light' | 'dark';
+  theme?: ThemeId;
   onSelectSubtest?: (code: string) => void;
 }
 
@@ -268,11 +271,20 @@ interface SubtestThemeConfig {
   lightBgClass: string;
   lightBadgeClass: string;
   lightSquircleClass: string;
+  // Prism mode styling (glassmorphism + corner tint + solid pill badge)
+  prismTintClass: string;
+  prismBadgeClass: string;
+  prismCorner?: 'dots-bl' | 'dots-tr';
+  // Velvet mode corner ornament variant
+  velvetCornerVariant: 'leaf-dots' | 'leaf-lotus' | 'dots-lotus';
   cornerElement: React.ReactNode;
 }
 
 export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light', onSelectSubtest }) => {
-  const isDark = theme === 'dark';
+  const isCosmic = theme === 'dark';
+  const isVelvet = theme === 'velvet';
+  const isPrism = theme === 'prism';
+  const isLight = theme === 'light';
   const [categoryFilter, setCategoryFilter] = useState<'ALL' | 'TPS' | 'Literasi'>('ALL');
 
   const subtests: SubtestThemeConfig[] = [
@@ -288,6 +300,10 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       lightBgClass: 'pastel-card-pink',
       lightBadgeClass: 'bg-white/95 text-rose-800 border border-rose-200',
       lightSquircleClass: 'bg-rose-100/90 border border-rose-200/80',
+      prismTintClass: 'prism-tint-pu',
+      prismBadgeClass: 'bg-indigo-600 text-white border border-indigo-500/60',
+      prismCorner: 'dots-bl',
+      velvetCornerVariant: 'leaf-dots',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-left" />
@@ -307,6 +323,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       lightBgClass: 'pastel-card-peach',
       lightBadgeClass: 'bg-white/95 text-amber-800 border border-amber-200',
       lightSquircleClass: 'bg-amber-100/90 border border-amber-200/80',
+      prismTintClass: 'prism-tint-ppu',
+      prismBadgeClass: 'bg-amber-600 text-white border border-amber-500/60',
+      velvetCornerVariant: 'leaf-lotus',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-left" />
@@ -326,6 +345,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       lightBgClass: 'pastel-card-mint',
       lightBadgeClass: 'bg-white/95 text-emerald-800 border border-emerald-200',
       lightSquircleClass: 'bg-emerald-100/90 border border-emerald-200/80',
+      prismTintClass: 'prism-tint-pbm',
+      prismBadgeClass: 'bg-emerald-600 text-white border border-emerald-500/60',
+      velvetCornerVariant: 'leaf-lotus',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-left" />
@@ -345,6 +367,10 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       lightBgClass: 'pastel-card-sky',
       lightBadgeClass: 'bg-white/95 text-sky-800 border border-sky-200',
       lightSquircleClass: 'bg-sky-100/90 border border-sky-200/80',
+      prismTintClass: 'prism-tint-pk',
+      prismBadgeClass: 'bg-sky-600 text-white border border-sky-500/60',
+      prismCorner: 'dots-tr',
+      velvetCornerVariant: 'dots-lotus',
       cornerElement: (
         <>
           <DottedCornerDecor position="top-right" />
@@ -364,6 +390,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       lightBgClass: 'pastel-card-pink',
       lightBadgeClass: 'bg-white/95 text-rose-800 border border-rose-200',
       lightSquircleClass: 'bg-rose-100/90 border border-rose-200/80',
+      prismTintClass: 'prism-tint-lbi',
+      prismBadgeClass: 'bg-slate-600 text-white border border-slate-500/60',
+      velvetCornerVariant: 'leaf-dots',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-right" />
@@ -383,6 +412,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       lightBgClass: 'pastel-card-lavender',
       lightBadgeClass: 'bg-white/95 text-purple-800 border border-purple-200',
       lightSquircleClass: 'bg-purple-100/90 border border-purple-200/80',
+      prismTintClass: 'prism-tint-lbe',
+      prismBadgeClass: 'bg-teal-600 text-white border border-teal-500/60',
+      velvetCornerVariant: 'leaf-lotus',
       cornerElement: (
         <>
           <PottedPlantDecor position="bottom-right" />
@@ -401,6 +433,9 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       lightBgClass: 'pastel-card-mint',
       lightBadgeClass: 'bg-white/95 text-emerald-800 border border-emerald-200',
       lightSquircleClass: 'bg-emerald-100/90 border border-emerald-200/80',
+      prismTintClass: 'prism-tint-pm',
+      prismBadgeClass: 'bg-cyan-600 text-white border border-cyan-500/60',
+      velvetCornerVariant: 'dots-lotus',
       cornerElement: (
         <>
           <LeafCornerDecor position="top-left" />
@@ -415,18 +450,36 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
     return sub.category === categoryFilter;
   });
 
+  const filterBarClass = isVelvet
+    ? 'bg-[#261420]/90 border-[#EB8A78]/25'
+    : isPrism
+    ? 'bg-white/60 backdrop-blur-md border-white/85'
+    : 'bg-stone-100/90 dark:bg-slate-900/90 border-stone-200 dark:border-slate-800';
+
+  const activeFilterTabClass = isVelvet
+    ? 'bg-[#FF8A6B] text-[#1E0F17] shadow-[0_4px_14px_rgba(255,138,107,0.32)] font-extrabold'
+    : isCosmic
+    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-cyan-100 border border-cyan-400/60 shadow-[0_0_14px_rgba(0,242,254,0.4)]'
+    : isPrism
+    ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-sm shadow-sky-500/30'
+    : 'bg-blue-600 text-white shadow-xs';
+
+  const inactiveFilterTabClass = isVelvet
+    ? 'text-[#EBD6DC] hover:text-[#FBF1F2]'
+    : isPrism
+    ? 'text-slate-700 hover:text-slate-950'
+    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white';
+
   return (
     <div className="w-full space-y-4 px-2 sm:px-4 md:px-6">
       {/* 1. Category Filter Tabs: Semua | TPS | Literasi & Subtitle (Standalone Row directly on background) */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1 z-10 relative">
-        <div className="flex items-center bg-stone-100/90 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-stone-200 dark:border-slate-800 shadow-2xs">
+        <div className={`flex items-center p-1.5 rounded-2xl border shadow-2xs ${filterBarClass}`}>
           <button
             type="button"
             onClick={() => setCategoryFilter('ALL')}
             className={`px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-              categoryFilter === 'ALL'
-                ? 'bg-blue-600 dark:bg-gradient-to-r dark:from-blue-600 dark:to-indigo-600 text-white dark:text-cyan-100 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_14px_rgba(0,242,254,0.4)]'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              categoryFilter === 'ALL' ? activeFilterTabClass : inactiveFilterTabClass
             }`}
           >
             Semua (7)
@@ -435,9 +488,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
             type="button"
             onClick={() => setCategoryFilter('TPS')}
             className={`px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
-              categoryFilter === 'TPS'
-                ? 'bg-blue-600 dark:bg-gradient-to-r dark:from-blue-600 dark:to-indigo-600 text-white dark:text-cyan-100 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_14px_rgba(0,242,254,0.4)]'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              categoryFilter === 'TPS' ? activeFilterTabClass : inactiveFilterTabClass
             }`}
           >
             <span>🎯 TPS</span>
@@ -447,9 +498,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
             type="button"
             onClick={() => setCategoryFilter('Literasi')}
             className={`px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
-              categoryFilter === 'Literasi'
-                ? 'bg-blue-600 dark:bg-gradient-to-r dark:from-blue-600 dark:to-indigo-600 text-white dark:text-cyan-100 dark:border dark:border-cyan-400/60 shadow-xs dark:shadow-[0_0_14px_rgba(0,242,254,0.4)]'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              categoryFilter === 'Literasi' ? activeFilterTabClass : inactiveFilterTabClass
             }`}
           >
             <span>📚 Literasi</span>
@@ -457,17 +506,30 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
           </button>
         </div>
 
-        {/* Subtitle with theme ornament: Rainbow Arcs in Light, Sparkle in Dark */}
+        {/* Subtitle with theme ornament: Rainbow Arcs in Light, Sparkle in Cosmic */}
         <div className="relative flex items-center gap-2">
-          {/* Nature Rainbow Arc in Light Mode */}
-          <div className="dark:hidden">
-            <NatureRainbowArc />
-          </div>
+          {isLight && (
+            <div>
+              <NatureRainbowArc />
+            </div>
+          )}
 
-          <span className="text-xs sm:text-sm font-bold text-slate-500 dark:text-cyan-300/90 flex items-center gap-1.5">
-            <span className="hidden dark:inline">
-              <CosmicSubtitleSparkle />
-            </span>
+          <span
+            className={`text-xs sm:text-sm font-bold flex items-center gap-1.5 ${
+              isVelvet
+                ? 'text-[#EBD6DC]'
+                : isCosmic
+                ? 'text-cyan-300/90'
+                : isPrism
+                ? 'text-slate-700'
+                : 'text-slate-500'
+            }`}
+          >
+            {isCosmic && (
+              <span>
+                <CosmicSubtitleSparkle />
+              </span>
+            )}
             <span>27 Modul Terstandar SNBT</span>
           </span>
         </div>
@@ -476,18 +538,37 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
       {/* 2. Standalone Cards Grid (2 Kolom Mobile, 3 Kolom Tablet, 4 Kolom Desktop) */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3.5 md:gap-4 z-10 relative">
         {filteredSubtests.map((sub) => {
-          // Dark mode: hilangkan gradasi neon & warna terang yang terlalu ramai, gunakan kartu gelap tenang & elegan
-          const cardBgClass = isDark
+          const cardBgClass = isVelvet
+            ? 'velvet-card'
+            : isCosmic
             ? 'bg-[#0d1424] hover:bg-[#111c33] border border-slate-800 hover:border-slate-700 shadow-xs'
+            : isPrism
+            ? `prism-glass-card ${sub.prismTintClass}`
             : `${sub.lightBgClass} border border-stone-200/80 shadow-xs`;
 
-          const squircleClass = isDark
+          const squircleClass = isVelvet
+            ? 'bg-[#381C2C]/85 border border-[#C9A9B0]/25 shadow-none'
+            : isCosmic
             ? 'bg-slate-800/80 border border-slate-700/60 shadow-none'
+            : isPrism
+            ? 'bg-white/85 border border-white/95 shadow-xs'
             : sub.lightSquircleClass;
-          const badgeClass = isDark
+
+          const badgeClass = isVelvet
+            ? 'bg-[#381C2C]/90 text-[#F7C5B8] border border-[#EB8A78]/35'
+            : isCosmic
             ? 'bg-slate-800/80 text-slate-300 border border-slate-700/60'
+            : isPrism
+            ? sub.prismBadgeClass
             : sub.lightBadgeClass;
-          const textClass = isDark ? 'text-slate-100' : 'text-slate-900';
+
+          const textClass = isVelvet
+            ? 'text-[#FBF1F2] group-hover:text-[#FFBE98]'
+            : isCosmic
+            ? 'text-slate-100 group-hover:text-cyan-300'
+            : isPrism
+            ? 'text-[#0F172A] group-hover:text-blue-700'
+            : 'text-slate-900 group-hover:text-indigo-600';
 
           return (
             <Link
@@ -497,8 +578,10 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
               className={`w-full flex flex-col items-center justify-between p-3 sm:p-3.5 md:p-4 rounded-2xl transition-all duration-300 hover:-translate-y-1 group cursor-pointer text-center focus:outline-none relative overflow-hidden ${cardBgClass}`}
               aria-label={`Buka Subtes ${sub.name}`}
             >
-              {/* Light Mode Decorative Corner SVGs */}
-              {!isDark && sub.cornerElement}
+              {/* Theme Decorative Corner SVGs */}
+              {isLight && sub.cornerElement}
+              {isVelvet && <VelvetCardCornerDecor variant={sub.velvetCornerVariant} />}
+              {isPrism && sub.prismCorner && <PrismCardCornerDecor variant={sub.prismCorner} />}
 
               {/* Category / Code Pill */}
               <span
@@ -518,7 +601,7 @@ export const UtbkSubtestGrid: React.FC<UtbkSubtestGridProps> = ({ theme = 'light
 
               {/* Label Nama Subtes Lengkap */}
               <div className="w-full flex-1 flex flex-col items-center justify-start mt-1.5 z-10">
-                <span className={`text-xs sm:text-sm md:text-[15px] font-bold ${textClass} text-center leading-snug w-full break-words group-hover:text-indigo-600 dark:group-hover:text-cyan-300 transition-colors`}>
+                <span className={`text-xs sm:text-sm md:text-[15px] font-bold ${textClass} text-center leading-snug w-full break-words transition-colors`}>
                   {sub.name}
                 </span>
               </div>

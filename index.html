@@ -34,9 +34,15 @@
             history.scrollRestoration = 'manual';
           }
           var saved = localStorage.getItem('kognitedu_theme');
-          var isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
-          if (isDark) document.documentElement.classList.add('dark');
-          else document.documentElement.classList.remove('dark');
+          var theme = (saved === 'light' || saved === 'dark' || saved === 'velvet' || saved === 'prism')
+            ? saved
+            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'dark' || theme === 'velvet') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
         } catch (e) {}
       })();
     </script>
