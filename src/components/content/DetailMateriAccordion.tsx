@@ -1,5 +1,5 @@
-import React, { useState, memo } from 'react';
-import { ChevronDown, BookOpen, AlertCircle } from 'lucide-react';
+import React, { useState, useRef, memo } from 'react';
+import { ChevronDown, ChevronUp, BookOpen, AlertCircle } from 'lucide-react';
 import type { DetailMateriLengkap, KelompokDetailMateri, LabelKolomDetailMateri, VisualData } from '../../types/material';
 import { VisualRenderer } from './VisualRenderer';
 
@@ -38,9 +38,22 @@ const KelompokCard = memo<KelompokCardProps>(
   ({ kelompok, isOpen, onToggle, judulBlok, labelKolom, renderMarkdown, onZoomVisual }) => {
     const butirList = kelompok.butir || [];
     const badgeText = getBadgeLabel(butirList.length, kelompok.nama_kelompok, judulBlok);
+    const cardRef = useRef<HTMLDivElement>(null);
+
+    const handleCloseFromBottom = () => {
+      const rect = cardRef.current?.getBoundingClientRect();
+      onToggle();
+      if (rect && rect.top < 72 && typeof window !== 'undefined') {
+        window.scrollTo({
+          top: Math.max(0, window.scrollY + rect.top - 76),
+          behavior: 'smooth',
+        });
+      }
+    };
 
     return (
       <div
+        ref={cardRef}
         className={`rounded-xl border overflow-hidden transition-all ${
           isOpen
             ? 'border-sky-300/90 dark:border-sky-500/40 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
@@ -78,21 +91,6 @@ const KelompokCard = memo<KelompokCardProps>(
                 {badgeText}
               </span>
             </div>
-            {kelompok.ringkasan_kelompok && (
-              <div
-                className={`grid transition-[grid-template-rows,opacity] duration-200 ease-in-out ${
-                  !isOpen
-                    ? 'grid-rows-[1fr] opacity-100 mt-1.5'
-                    : 'grid-rows-[0fr] opacity-0 mt-0 pointer-events-none'
-                }`}
-              >
-                <div className="overflow-hidden">
-                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
-                    {kelompok.ringkasan_kelompok}
-                  </p>
-                </div>
-              </div>
-            )}
           </div>
 
           <div
@@ -182,6 +180,17 @@ const KelompokCard = memo<KelompokCardProps>(
                   ))}
                 </div>
               </div>
+
+              <div className="mt-3.5 pt-3 border-t border-slate-200/80 dark:border-slate-700/60 flex justify-end">
+                <button
+                  type="button"
+                  onClick={handleCloseFromBottom}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-800 dark:text-sky-200 bg-sky-100/80 hover:bg-sky-200/80 dark:bg-sky-900/40 dark:hover:bg-sky-800/60 border border-sky-200/90 dark:border-sky-700/60 transition-colors cursor-pointer"
+                >
+                  <ChevronUp className="w-4 h-4 shrink-0" />
+                  <span>Tutup Tab</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -230,11 +239,6 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = memo(
           <h2 className="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white leading-snug tracking-tight">
             {data.judul_blok}
           </h2>
-          {data.subjudul_ringkas && (
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              {data.subjudul_ringkas}
-            </p>
-          )}
         </div>
 
         <div className="p-3 sm:p-4 space-y-3.5 bg-slate-100/75 dark:bg-[#080D1A]">

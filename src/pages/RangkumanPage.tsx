@@ -10,6 +10,7 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronDown,
+  ChevronUp,
   ChevronsUpDown,
   ChevronsDownUp,
   ExternalLink,
@@ -525,6 +526,21 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         [groupId]: !current,
       };
     });
+  };
+
+  const handleCloseGroupFromBottom = (
+    groupId: string,
+    kIdx: number,
+    cardEl: Element | null
+  ) => {
+    const rect = cardEl?.getBoundingClientRect();
+    toggleGroup(groupId, kIdx);
+    if (rect && rect.top < 72 && typeof window !== 'undefined') {
+      window.scrollTo({
+        top: Math.max(0, window.scrollY + rect.top - 76),
+        behavior: 'smooth',
+      });
+    }
   };
 
   // Check if all groups are currently expanded
@@ -1131,6 +1147,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                             return (
                               <div
                                 key={kIdx}
+                                data-group-card
                                 className={`rounded-xl border overflow-x-clip transition-all ${
                                   isExpanded
                                     ? 'border-sky-300/80 dark:border-sky-500/35 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
@@ -1208,6 +1225,23 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                         />
                                       );
                                     })}
+
+                                    <div className="pt-2 border-t border-slate-200/80 dark:border-slate-700/60 flex justify-end print-hide">
+                                      <button
+                                        type="button"
+                                        onClick={(e) =>
+                                          handleCloseGroupFromBottom(
+                                            groupId,
+                                            kIdx,
+                                            e.currentTarget.closest('[data-group-card]')
+                                          )
+                                        }
+                                        className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-800 dark:text-sky-200 bg-sky-100/80 hover:bg-sky-200/80 dark:bg-sky-900/40 dark:hover:bg-sky-800/60 border border-sky-200/90 dark:border-sky-700/60 transition-colors cursor-pointer"
+                                      >
+                                        <ChevronUp className="w-4 h-4 shrink-0" />
+                                        <span>Tutup Tab</span>
+                                      </button>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
