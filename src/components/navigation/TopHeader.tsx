@@ -118,7 +118,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
     : 'text-amber-700 dark:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30';
 
   return (
-    <header className={`relative w-full ${headerBgClass} sticky top-0 z-40 backdrop-blur-md shadow-xs transition-all duration-300`}>
+    <header className={`relative w-full ${headerBgClass} z-40 backdrop-blur-md shadow-xs transition-all duration-300`}>
       {/* Theme-specific Decorative Header Banner */}
       {theme === 'light' && <NatureHeaderBanner />}
       {isVelvet && <VelvetHeaderBanner />}

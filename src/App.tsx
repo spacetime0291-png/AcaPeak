@@ -266,7 +266,7 @@ function HomeRouteView({ theme, onSelectTheme }: HomeRouteViewProps) {
   return (
     <>
       <TopHeader mode="utbk" theme={theme} onSelectTheme={onSelectTheme} />
-      <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
+      <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 pt-3 sm:pt-6 pb-24 sm:pb-32 md:pb-36">
         <UtbkSubtestGrid theme={theme} />
       </main>
       <Footer theme={theme} />
@@ -294,7 +294,7 @@ function SmaHomeRouteView({
   return (
     <>
       <TopHeader mode="sma" theme={theme} onSelectTheme={onSelectTheme} />
-      <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
+      <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 pt-3 sm:pt-6 pb-24 sm:pb-32 md:pb-36">
         <GridComponent theme={theme} />
       </main>
       <Footer theme={theme} />
