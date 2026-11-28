@@ -150,23 +150,33 @@ export const AboutPage: React.FC<PageProps> = ({ theme = 'light', onSelectTheme 
               Standar Editorial &amp; Verifikasi Kurikulum
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              Seluruh 106 sub-bab materi, 27 lembar rangkuman cepat, dan ratusan butir latihan HOTS disusun oleh <strong>Tim Penyusun Kurikulum SkolAce</strong> dengan mengacu pada kisi-kisi resmi SNPMB/BPPP serta prinsip keakuratan pedagogis:
+              Seluruh <strong>106 sub-bab materi</strong>, <strong>27 lembar rangkuman bab</strong>, dan <strong>4.240 soal latihan HOTS</strong> di 7 subtes disusun oleh <strong>Tim Penyusun Kurikulum SkolAce</strong> dengan mengacu pada kisi-kisi resmi SNPMB/BPPP serta prinsip keakuratan pedagogis:
             </p>
             <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
               <li>
-                <strong>Verifikasi Komputasi Kuantitatif:</strong> Seluruh soal berhitung pada Penalaran Umum (PU), Pengetahuan Kuantitatif (PK), dan Penalaran Matematika (PM) divalidasi secara numerik sebelum dipublikasikan.
+                <strong>Verifikasi Komputasi Kuantitatif:</strong> Seluruh soal berhitung pada Penalaran Umum (PU), Pengetahuan Kuantitatif (PK), dan Penalaran Matematika (PM) divalidasi secara numerik dan diuji kesesuaian kunci jawabannya sebelum dipublikasikan.
               </li>
               <li>
-                <strong>Pembaruan &amp; Koreksi Errata Terbuka:</strong> Setiap laporan koreksi dari pelajar ditinjau dan diperbarui langsung pada repositori materi publik melalui jalur pelaporan di halaman{' '}
+                <strong>Pembaruan &amp; Koreksi Errata Terbuka:</strong> Setiap laporan koreksi dari pelajar ditinjau dalam 1–3 hari kerja dan diperbarui langsung pada repositori materi publik melalui saluran pelaporan di halaman{' '}
                 <Link to="/contact" className="text-indigo-600 dark:text-cyan-400 underline font-semibold">
                   Kontak &amp; Bantuan
-                </Link>
-                .
+                </Link>{' '}
+                atau surel resmi <span className="font-mono text-slate-700 dark:text-slate-300">errata@skolace.my.id</span>.
               </li>
               <li>
-                <strong>Independen &amp; Bebas Paywall:</strong> Seluruh materi tetap dapat diakses tanpa registrasi akun maupun biaya langganan, didukung secara berkelanjutan oleh penayangan iklan yang mematuhi kebijakan privasi.
+                <strong>Independen &amp; Bebas Paywall:</strong> Seluruh materi tetap dapat diakses tanpa registrasi akun maupun biaya langganan (Rp0), didukung secara berkelanjutan oleh penayangan iklan yang mematuhi kebijakan privasi pengguna.
               </li>
             </ul>
+          </div>
+
+          {/* Independency & Non-Affiliation Disclaimer */}
+          <div className={`p-6 sm:p-8 rounded-3xl border space-y-2.5 ${cardClass}`}>
+            <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+              Penafian Independensi &amp; Non-Afiliasi Resmi
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              SkolAce adalah platform edukasi independen yang dikembangkan secara mandiri untuk membantu pemerataan akses persiapan masuk Perguruan Tinggi Negeri di Indonesia. SkolAce <strong>tidak berafiliasi, tidak disponsori, dan bukan merupakan layanan resmi dari</strong> Balai Pengelolaan Pengujian Pendidikan (BPPP), Seleksi Nasional Penerimaan Mahasiswa Baru (SNPMB), maupun Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek).
+            </p>
           </div>
         </div>
       </main>

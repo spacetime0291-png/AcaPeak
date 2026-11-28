@@ -155,7 +155,7 @@ function analyzeRangkumanContent() {
           subtes: st.subtes,
           bab: b.bab || b.nama_bab || b.kode_bab,
           jumlah_subbab: b.jumlah_subbab || (b.subbab ? b.subbab.length : 0),
-          jumlah_butir: b.jumlah_butir || 0,
+          jumlah_butir: b.total_butir ?? b.jumlah_butir ?? 0,
           estimasi_menit: b.estimasi_menit_review || 5,
         });
       }
@@ -252,7 +252,6 @@ function generateSummary() {
       'Stateless async SSR renderer resolving active route chunk + synchronous renderToString for flat static HTML',
     'src/worker.ts':
       'Cloudflare Worker fallback: 301 legacy redirects (/subtest/*, /materi/*), 200 SPA fallback for /drilling*, true HTTP 404 for unknown paths',
-    'src/main.tsx': 'Legacy/standalone bootstrap entry point',
     'src/index.css': 'Tailwind CSS v4 config, theme tokens, and KaTeX baseline/strut protection rules',
     'src/types/material.ts':
       'Master TypeScript interfaces: ThreeZoneMaterial, Material, WorkedExample, VisualData, SubtestItem',
@@ -269,7 +268,6 @@ function generateSummary() {
     'src/lib/featureFlags.ts': 'Feature toggles (e.g. ENABLE_SMA_MODE)',
     'src/data/syllabus.json': 'Full UTBK syllabus JSON used by SSG & SEO build scripts',
     'src/data/syllabus-light.json': 'Slim client syllabus metadata (~19.5 KB) for fast initial bundle',
-    'src/data/syllabus.ts': 'Legacy UTBK syllabus export wrapper',
     'src/components/common/AdSlot.tsx':
       'Google AdSense unit wrapper: hidden before VITE_ADSENSE_CLIENT_ID is set, CLS=0 min-height & idle/interaction-deferred script init when active',
     'src/components/common/ThemeToggle.tsx':
@@ -292,7 +290,6 @@ function generateSummary() {
       '3-Zone material viewer with memoized KaTeX/Markdown renderers & prev/next <Link> navigation',
     'src/components/content/DetailMateriAccordion.tsx':
       'Unified responsive single-DOM 3-column table / mobile card accordion (memoized)',
-    'src/components/content/MaterialRenderer.tsx': 'Compatibility wrapper for ThreeZoneMaterialViewer',
     'src/components/content/VisualRenderer.tsx':
       'SVG sanitizer (DOMPurify) & dynamically imported Mermaid diagram renderer',
     'src/components/drilling/ActiveDrillingView.tsx':
@@ -307,16 +304,16 @@ function generateSummary() {
     'src/pages/ContactPage.tsx': 'Contact page with official support/errata emails, interactive form & FAQ',
     'src/pages/PrivacyPolicyPage.tsx': 'Privacy Policy with localStorage & Google AdSense cookie disclosures',
     'src/pages/TermsPage.tsx': 'Terms of Service & independent educational non-affiliation disclaimer',
-    'scripts/build.mjs': 'Master build orchestrator: export_materials -> tsc -b -> vite build (SSG + SEO)',
+    'scripts/build.mjs': 'Master build orchestrator: content validation/sync -> tsc -b -> vite build (SSG + SEO)',
     'scripts/prerender.mjs':
       'Concurrent batch SSG renderer (batch 16), anti-thin filter, __PAGE_DATA__ injector, E-E-A-T JSON-LD & conditional KaTeX CSS',
     'scripts/generate_seo_files.mjs':
       'Generates anti-thin filtered sitemap.xml & robots.txt (Googlebot + Mediapartners-Google)',
     'scripts/lib/contentValidator.mjs':
       'Shared XSS-safe JSON serializer & substantial content validator for UTBK & Rangkuman',
-    'scripts/export_materials.mjs': 'Syncs material JSONs from output_materi to content/utbk & public/content/utbk',
     'scripts/copy_assets.mjs': 'Mirrors dist assets and generates .nojekyll & 404.html fallback',
     'scripts/generate_summary.mjs': 'Auto-generates this PROJECT_CONTEXT.md dossier',
+    'scripts/run_rotation_test.mjs': 'Bundles and executes rotation engine unit tests via esbuild',
     'scripts/test_rotation_engine.mjs': 'Unit test suite for deterministic stratified rotation engine',
     'public/ads.txt': 'Authorized Digital Sellers template ready for AdSense Publisher ID',
     'public/robots.txt': 'Crawler rules allowing Googlebot & Mediapartners-Google, disallowing /drilling',
@@ -415,7 +412,7 @@ ${buildMetrics ? `
 
 ### Status Kepatuhan Saat Ini
 - **Anti-Thin Content Filter (\`scripts/lib/contentValidator.mjs\`):** Hanya materi substansial (markdown inti $\\ge 100$ karakter non-placeholder serta memiliki variasi pola atau soal uji) yang di-prerender dan masuk \`sitemap.xml\`. Halaman SMA (\`/sma*\`) dan fallback (\`404.html\`, \`200.html\`) diberi \`noindex, follow\`.
-- **\`AdSlot.tsx\` Pre-Approval Guard & CLS=0:** Saat \`VITE_ADSENSE_CLIENT_ID\` belum terpasang, \`AdSlot\` mengembalikan \`null\` (tidak menampilkan kotak placeholder kosong/dummy saat review AdSense). Saat aktif, \`AdSlot\` mereservasi tinggi \`min-h-[100px]\`/\`min-h-[250px]\`, label \`Iklan • Advertisement\`, dan menunda inisialisasi script AdSense via \`requestIdleCallback\` / fallback 1500ms / interaksi pengguna pertama.
+- **\`AdSlot.tsx\` Pre-Approval Guard & CLS=0:** Saat \`VITE_ADSENSE_CLIENT_ID\` atau \`VITE_ADSENSE_SLOTS_ENABLED=true\` belum aktif, \`AdSlot\` mengembalikan \`null\` (sehingga tahap review AdSense bisa menyuntikkan script \`<head>\` tanpa memunculkan kotak iklan kosong). Saat aktif, \`AdSlot\` mereservasi tinggi \`min-h-[100px]\`/\`min-h-[250px]\`, label \`Iklan • Advertisement\`, dan menunda inisialisasi script AdSense via \`requestIdleCallback\` / fallback 1500ms / interaksi pengguna pertama.
 - **\`public/robots.txt\`:** Secara eksplisit mengizinkan \`Googlebot\` dan \`Mediapartners-Google\` (\`Allow: /\`), hanya memblokir \`/drilling\`.
 - **Kebersihan Script Pihak Ketiga:** Service worker jaringan iklan eksternal (\`sw.js\`) telah dihapus permanen dari repositori dan build.
 - **E-E-A-T & Legal Pages:** \`AboutPage\` (mencakup Standar Editorial & Verifikasi Kurikulum), \`ContactPage\` (surel resmi \`support@skolace.my.id\`, \`errata@skolace.my.id\`, formulir laporan cepat, FAQ), \`PrivacyPolicyPage\` (disclosure cookie Google & link opt-out), \`TermsPage\`, serta JSON-LD \`Article\`/\`LearningResource\` dengan \`Tim Penyusun Kurikulum SkolAce\`.
@@ -446,9 +443,12 @@ d:/web/
 │   └── sitemap.xml                # Auto-generated anti-thin XML sitemap
 ├── scripts/
 │   ├── lib/contentValidator.mjs   # Validator anti-thin content & safeJsonSerialize
-│   ├── build.mjs                  # Pipeline: export -> tsc -> vite build (SSG + SEO)
+│   ├── build.mjs                  # Pipeline: content sync/verify -> tsc -> vite build (SSG + SEO)
 │   ├── prerender.mjs              # Batch concurrent SSG renderer & #__PAGE_DATA__ injector
 │   ├── generate_seo_files.mjs     # Generator sitemap.xml & robots.txt
+│   ├── copy_assets.mjs            # Helper fallback asset mirror
+│   ├── run_rotation_test.mjs      # Runner test rotasi soal
+│   ├── test_rotation_engine.mjs   # Unit test engine rotasi deterministik
 │   └── generate_summary.mjs       # Generator PROJECT_CONTEXT.md ini
 ├── src/
 │   ├── components/                # UI modular (common, content, decorations, drilling, home, navigation, reader, subtest)
@@ -601,11 +601,14 @@ ${smaSubjects
 | Perintah / Variabel | Deskripsi |
 | :--- | :--- |
 | \`npm run dev\` | Menjalankan Vite dev server lokal |
-| \`npm run build\` | Export JSON + \`tsc -b\` + Vite client/SSR build + batch SSG prerender + SEO sitemap/robots |
+| \`npm run build\` | Validasi & sync \`content/\` -> \`tsc -b\` -> Vite client/SSR build + batch SSG prerender + SEO sitemap/robots |
+| \`npm run test:rotation\` | Menjalankan 5 unit test Deterministic Stratified Rotation Engine |
 | \`npm run summary\` | Memperbarui file \`PROJECT_CONTEXT.md\` ini secara otomatis |
-| \`node scripts/export_materials.mjs\` | Sinkronisasi JSON materi ke \`content/utbk/\` dan \`public/content/utbk/\` |
 | \`SITE_URL=https://domainanda.com\` | Env build-time untuk canonical, OpenGraph, JSON-LD, \`sitemap.xml\`, dan \`robots.txt\` |
-| \`VITE_ADSENSE_CLIENT_ID=ca-pub-...\` | Env build-time untuk mengaktifkan script \`adsbygoogle.js\` di \`<head>\` & slot \`AdSlot\` |
+| \`VITE_ADSENSE_CLIENT_ID=ca-pub-...\` | Env build-time untuk menyisipkan script verifikasi \`adsbygoogle.js\` di \`<head>\` (halaman terindeks) |
+| \`VITE_ADSENSE_SLOTS_ENABLED=true\` | Env build-time (setelah disetujui AdSense) untuk mengaktifkan unit \`<AdSlot />\` di konten materi |
+| \`VITE_CONTACT_FORM_ENDPOINT=...\` | Env build-time opsional untuk pengiriman POST JSON formulir halaman \`/contact\` |
+| \`VITE_CF_BEACON_TOKEN=...\` | Env build-time opsional untuk menyisipkan skrip Cloudflare Web Analytics bebas cookie |
 `;
 
   fs.writeFileSync(OUTPUT_FILE, md, 'utf8');

@@ -16,8 +16,13 @@ declare global {
 const ADSENSE_CLIENT_ID =
   (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADSENSE_CLIENT_ID) || '';
 
+const ADSENSE_SLOTS_ENABLED =
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_ADSENSE_SLOTS_ENABLED) === 'true';
+
 const isConfiguredClient = (client: string): boolean =>
   Boolean(client && client.startsWith('ca-pub-') && !client.includes('XXXX') && !client.includes('000000'));
+
+const isSlotsLive = (): boolean => isConfiguredClient(ADSENSE_CLIENT_ID) && ADSENSE_SLOTS_ENABLED;
 
 let adsenseScriptPromise: Promise<void> | null = null;
 
@@ -78,7 +83,7 @@ export const AdSlot: React.FC<AdSlotProps> = ({
   // Defer AdSense initialization until main-thread hydration is idle,
   // 1500ms timeout elapses, or the user first interacts with the page.
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined' || !isSlotsLive()) return;
 
     let cancelled = false;
     let idleId: number | undefined;
@@ -89,7 +94,7 @@ export const AdSlot: React.FC<AdSlotProps> = ({
       cleanup();
       setIsAdInitialized(true);
 
-      if (isConfiguredClient(ADSENSE_CLIENT_ID)) {
+      if (isSlotsLive()) {
         loadAdSenseScriptOnce(ADSENSE_CLIENT_ID).then(() => {
           if (cancelled) return;
           try {
@@ -130,10 +135,10 @@ export const AdSlot: React.FC<AdSlotProps> = ({
     };
   }, [slotId]);
 
-  const hasLiveClient = isConfiguredClient(ADSENSE_CLIENT_ID);
+  const slotsLive = isSlotsLive();
 
-  // Do not render empty dummy ad placeholders before AdSense Publisher ID is configured
-  if (!hasLiveClient) {
+  // Do not render empty ad boxes during AdSense verification/review before approval
+  if (!slotsLive) {
     return null;
   }
 

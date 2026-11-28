@@ -30,10 +30,7 @@ function ssgPrerenderPlugin(): Plugin {
 
       const root = process.cwd();
 
-      // 1. Export materials to JSON (syncs to public/content/utbk/)
-      execSync('node scripts/export_materials.mjs', { stdio: 'inherit', cwd: root });
-
-      // 2. Build SSR server bundle
+      // 1. Build SSR server bundle
       console.log('\n⚡ [SSG Plugin] Building SSR Server Bundle...');
       execSync('npx vite build --ssr src/entry-server.tsx --outDir dist/server', {
         stdio: 'inherit',
@@ -44,15 +41,15 @@ function ssgPrerenderPlugin(): Plugin {
         },
       });
 
-      // 3. Run Native SSG Pre-rendering (updates dist/index.html & generates 118 static pages)
+      // 2. Run Native SSG Pre-rendering (updates dist/index.html & generates static pages)
       console.log('\n⚡ [SSG Plugin] Running Pre-rendering...');
       execSync('node scripts/prerender.mjs', { stdio: 'inherit', cwd: root });
 
-      // 4. Generate SEO Sitemap & robots.txt
+      // 3. Generate SEO Sitemap & robots.txt
       console.log('\n⚡ [SSG Plugin] Generating SEO files...');
       execSync('node scripts/generate_seo_files.mjs', { stdio: 'inherit', cwd: root });
 
-      // 5. Verification: Check dist/index.html content
+      // 4. Verification: Check dist/index.html content
       const distIndex = path.join(root, 'dist/index.html');
       if (fs.existsSync(distIndex)) {
         const html = fs.readFileSync(distIndex, 'utf8');

@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, Mail, MessageSquare, HelpCircle, CheckCircle2, Send } from 'lucide-react';
+import {
+  ChevronLeft,
+  Mail,
+  MessageSquare,
+  HelpCircle,
+  CheckCircle2,
+  Send,
+  Copy,
+  AlertCircle,
+  Loader2,
+} from 'lucide-react';
 import { ThemeToggle } from '../components/common/ThemeToggle';
 import type { ThemeId } from '../lib/theme';
 
@@ -9,31 +19,108 @@ interface PageProps {
   onSelectTheme?: (theme: ThemeId) => void;
 }
 
+const CONTACT_FORM_ENDPOINT =
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_CONTACT_FORM_ENDPOINT?.trim()) || '';
+
 export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onSelectTheme = () => {} }) => {
   const isVelvet = theme === 'velvet';
   const isPrism = theme === 'prism';
   const [topic, setTopic] = useState<'errata' | 'umum' | 'kemitraan'>('errata');
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [subbabCode, setSubbabCode] = useState('');
   const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitFeedback, setSubmitFeedback] = useState('');
+  const [copied, setCopied] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const recipient = topic === 'errata' ? 'errata@skolace.my.id' : 'support@skolace.my.id';
+  const subjectPrefix =
+    topic === 'errata'
+      ? `[Errata ${subbabCode.trim() || 'Materi'}]`
+      : topic === 'kemitraan'
+      ? '[Kerja Sama SkolAce]'
+      : '[Bantuan Pengguna]';
+  const fullSubject = `${subjectPrefix} Laporan / Pertanyaan`;
+  const formattedBody = `Tujuan: ${recipient}\nSubjek: ${fullSubject}\nNama: ${
+    name.trim() || 'Pengguna SkolAce'
+  }\nEmail Pengirim: ${email.trim() || '-'}\nTopik: ${topic}\nKode Sub-bab: ${
+    subbabCode.trim() || '-'
+  }\n\nPesan:\n${message.trim()}`;
+
+  const mailtoHref = `mailto:${recipient}?subject=${encodeURIComponent(
+    fullSubject
+  )}&body=${encodeURIComponent(formattedBody)}`;
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!message.trim()) return;
-    const recipient = topic === 'errata' ? 'errata@skolace.my.id' : 'support@skolace.my.id';
-    const subjectPrefix =
-      topic === 'errata'
-        ? `[Errata ${subbabCode.trim() || 'Materi'}]`
-        : topic === 'kemitraan'
-        ? '[Kerja Sama SkolAce]'
-        : '[Bantuan Pengguna]';
-    const bodyText = `Nama: ${name.trim() || 'Pengguna SkolAce'}\nTopik: ${topic}\nKode Sub-bab: ${subbabCode.trim() || '-'}\n\nPesan:\n${message.trim()}`;
-    setSubmitted(true);
-    if (typeof window !== 'undefined') {
-      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(
-        `${subjectPrefix} Laporan / Pertanyaan`
-      )}&body=${encodeURIComponent(bodyText)}`;
+    const trimmedMessage = message.trim();
+    if (trimmedMessage.length < 10) {
+      setSubmitStatus('error');
+      setSubmitFeedback('Mohon isi detail pesan minimal 10 karakter agar tim kami dapat menindaklanjuti.');
+      return;
+    }
+
+    if (!CONTACT_FORM_ENDPOINT) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setSubmitFeedback('');
+
+    try {
+      const response = await fetch(CONTACT_FORM_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          topic,
+          recipient,
+          name: name.trim() || 'Pengguna SkolAce',
+          email: email.trim() || undefined,
+          subbab_code: subbabCode.trim() || undefined,
+          subject: fullSubject,
+          message: trimmedMessage,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      setSubmitStatus('success');
+      setSubmitFeedback('Laporan Anda berhasil dikirim ke tim editorial SkolAce. Terima kasih!');
+      setMessage('');
+      setSubbabCode('');
+    } catch {
+      setSubmitStatus('error');
+      setSubmitFeedback(
+        'Gagal mengirim langsung ke server saat ini. Silakan gunakan tombol Salin Pesan Laporan atau Buka Aplikasi Email.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleCopyReport = async () => {
+    if (!message.trim()) {
+      setSubmitStatus('error');
+      setSubmitFeedback('Tuliskan detail pesan terlebih dahulu sebelum menyalin laporan.');
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(formattedBody);
+      setCopied(true);
+      setSubmitStatus('idle');
+      setSubmitFeedback('');
+      setTimeout(() => setCopied(false), 3000);
+    } catch {
+      setSubmitStatus('error');
+      setSubmitFeedback('Browser tidak mengizinkan salin otomatis. Silakan salin teks secara manual.');
     }
   };
 
@@ -132,11 +219,16 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onSelectThem
             onSubmit={handleSubmit}
             className="p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/60 velvet-surface prism-surface shadow-xs space-y-4"
           >
-            <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
-              Kirim Pesan atau Laporan Cepat
-            </h2>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+                Kirim Pesan atau Laporan Cepat
+              </h2>
+              <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                Tujuan: {recipient}
+              </span>
+            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               <div>
                 <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                   Kategori
@@ -165,6 +257,18 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onSelectThem
               </div>
               <div>
                 <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                  Email Balasan (Opsional)
+                </label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="nama@email.com"
+                  className="w-full px-3 py-2 rounded-xl border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
                   Kode Sub-bab (Jika Errata)
                 </label>
                 <input
@@ -184,27 +288,67 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onSelectThem
               <textarea
                 rows={4}
                 required
+                minLength={10}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Tuliskan pertanyaan atau detail nomor soal yang perlu diperiksa..."
+                placeholder="Tuliskan pertanyaan atau detail nomor soal yang perlu diperiksa (minimal 10 karakter)..."
                 className="w-full px-3.5 py-2.5 rounded-xl border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white"
               />
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <button
-                type="submit"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold transition cursor-pointer shadow-xs"
-              >
-                <Send className="w-4 h-4" />
-                <span>Kirim via Aplikasi Email</span>
-              </button>
-              {submitted && (
-                <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                  Draft email siap dikirim ke tim SkolAce.
-                </span>
+            <div className="flex flex-wrap items-center gap-3">
+              {CONTACT_FORM_ENDPOINT && (
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 disabled:opacity-60 text-white text-xs sm:text-sm font-bold transition cursor-pointer shadow-xs"
+                >
+                  {isSubmitting ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <Send className="w-4 h-4" />
+                  )}
+                  <span>{isSubmitting ? 'Mengirim Laporan...' : 'Kirim Laporan'}</span>
+                </button>
               )}
+
+              <button
+                type="button"
+                onClick={handleCopyReport}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-stone-300 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-stone-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 text-xs sm:text-sm font-bold transition cursor-pointer"
+              >
+                <Copy className="w-4 h-4" />
+                <span>{copied ? 'Laporan Tersalin ✓' : 'Salin Pesan Laporan'}</span>
+              </button>
+
+              <a
+                href={mailtoHref}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold transition shadow-xs"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Buka Aplikasi Email</span>
+              </a>
             </div>
+
+            {!CONTACT_FORM_ENDPOINT && (
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Pengiriman formulir langsung ke server belum diaktifkan pada build ini. Gunakan tombol <strong>Salin Pesan Laporan</strong> atau <strong>Buka Aplikasi Email</strong> untuk mengirim ke <span className="font-mono">{recipient}</span>.
+              </p>
+            )}
+
+            {submitStatus === 'success' && submitFeedback && (
+              <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 px-3.5 py-2.5 rounded-xl">
+                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                <span>{submitFeedback}</span>
+              </div>
+            )}
+
+            {submitStatus === 'error' && submitFeedback && (
+              <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-rose-700 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/60 px-3.5 py-2.5 rounded-xl">
+                <AlertCircle className="w-4 h-4 shrink-0" />
+                <span>{submitFeedback}</span>
+              </div>
+            )}
           </form>
 
           {/* Quick FAQ */}
@@ -221,7 +365,7 @@ export const ContactPage: React.FC<PageProps> = ({ theme = 'light', onSelectThem
                   Apakah SkolAce benar-benar 100% gratis?
                 </p>
                 <p className="text-slate-600 dark:text-slate-400 pl-6">
-                  Ya, seluruh 106 sub-bab materi taktis dan 300+ soal drilling dapat diakses gratis (Rp0) tanpa sistem berlangganan maupun paywall terkunci.
+                  Ya, seluruh 106 sub-bab materi taktis, 27 lembar rangkuman bab, dan 4.240+ soal drilling dapat diakses gratis (Rp0) tanpa sistem berlangganan maupun paywall terkunci.
                 </p>
               </div>
 

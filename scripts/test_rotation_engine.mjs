@@ -137,7 +137,7 @@ console.log('✓ isAnswerCorrect tests passed!');
 console.log('\n[2] Testing assembleDrillingSession multi-subtest balancing & wave pattern...');
 
 // Verify adaptThreeZoneMaterial no longer injects legacy zona_3 into drilling worked_examples
-const legacyCheck = adaptThreeZoneMaterial(JSON.parse(fs.readFileSync('output_materi/pu-01-01.json', 'utf8')));
+const legacyCheck = adaptThreeZoneMaterial(JSON.parse(fs.readFileSync('content/utbk/pu/pu-01-01.json', 'utf8')));
 assert.strictEqual(legacyCheck.worked_examples.length, 0, 'Legacy zona_3 must not leak into drilling worked_examples');
 
 const loadDrillingBank = (name) => {

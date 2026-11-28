@@ -11,6 +11,7 @@
     "prerender": "node scripts/prerender.mjs",
     "summary": "node scripts/generate_summary.mjs",
     "summary:watch": "node scripts/generate_summary.mjs --watch",
+    "test:rotation": "node scripts/run_rotation_test.mjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },

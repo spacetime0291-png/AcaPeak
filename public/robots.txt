@@ -10,4 +10,4 @@ User-agent: *
 Allow: /
 Disallow: /drilling
 
-Sitemap: https://acapeak.spacetime0291.workers.dev/sitemap.xml
+Sitemap: https://skolace.my.id/sitemap.xml

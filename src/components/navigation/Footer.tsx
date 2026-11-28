@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({ theme = 'light' }) => {
               </span>
             </div>
             <p className={`text-xs sm:text-sm leading-relaxed max-w-md ${bodyTextClass}`}>
-              Platform belajar dan latihan soal UTBK-SNBT bebas biaya tanpa batas untuk seluruh siswa Indonesia. Menggunakan kurikulum resmi 7 subtes BPPP dengan layout taktis 3 zona dan simulasi adaptif berstandar nasional.
+              Platform edukasi independen persiapan UTBK-SNBT bebas biaya (Rp0) untuk seluruh pelajar Indonesia. Menyediakan 106 sub-bab materi 3 zona, 27 rangkuman bab, dan 4.240 soal drilling adaptif.
             </p>
           </div>
 

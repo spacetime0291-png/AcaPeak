@@ -37,6 +37,14 @@ jobs:
         run: npm ci
 
       - name: Build Production Website
+        # Catatan: Saat migrasi ke domain produksi (mis. https://skolace.my.id),
+        # set GitHub Repository Variables berikut agar URL canonical & sitemap tidak fallback ke workers.dev
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          VITE_ADSENSE_CLIENT_ID: ${{ vars.VITE_ADSENSE_CLIENT_ID }}
+          VITE_ADSENSE_SLOTS_ENABLED: ${{ vars.VITE_ADSENSE_SLOTS_ENABLED }}
+          VITE_CONTACT_FORM_ENDPOINT: ${{ vars.VITE_CONTACT_FORM_ENDPOINT }}
+          VITE_CF_BEACON_TOKEN: ${{ vars.VITE_CF_BEACON_TOKEN }}
         run: npm run build
 
       - name: Setup GitHub Pages

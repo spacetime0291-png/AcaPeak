@@ -23,6 +23,7 @@ const HAS_LIVE_ADSENSE =
   ADSENSE_CLIENT_ID.startsWith('ca-pub-') &&
   !ADSENSE_CLIENT_ID.includes('XXXX') &&
   !ADSENSE_CLIENT_ID.includes('000000');
+const CF_BEACON_TOKEN = (process.env.VITE_CF_BEACON_TOKEN || '').trim();
 const BATCH_SIZE = 16;
 
 function findServerEntry(dir) {
@@ -50,16 +51,60 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-function stripMarkdownSnippet(md, maxLen = 155) {
+function truncateAtWord(str, maxLen, addEllipsis = true) {
+  const clean = String(str || '').replace(/\s+/g, ' ').trim();
+  if (clean.length <= maxLen) return clean;
+  const limit = addEllipsis ? Math.max(10, maxLen - 3) : maxLen;
+  let sliced = clean.slice(0, limit);
+  const lastSpace = sliced.lastIndexOf(' ');
+  if (lastSpace > Math.floor(limit * 0.55)) {
+    sliced = sliced.slice(0, lastSpace);
+  }
+  sliced = sliced.replace(/[\s,.;:!?-]+$/, '');
+  return addEllipsis ? `${sliced}...` : sliced;
+}
+
+function formatSeoTitle(primary, suffix = ' | SkolAce', maxLen = 64) {
+  const cleanPrimary = String(primary || '').replace(/\s+/g, ' ').trim();
+  const full = `${cleanPrimary}${suffix}`;
+  if (full.length <= maxLen) return full;
+  const allowedPrimary = maxLen - suffix.length;
+  if (allowedPrimary >= 18) {
+    return `${truncateAtWord(cleanPrimary, allowedPrimary, true)}${suffix}`;
+  }
+  return truncateAtWord(full, maxLen, true);
+}
+
+function formatSeoDescription(primary, extraFallback = '', minLen = 125, maxLen = 158) {
+  let text = String(primary || '')
+    .replace(/\s+([,.;:!?])/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (text.length < minLen && extraFallback) {
+    const sep = /[.!?]$/.test(text) ? ' ' : '. ';
+    text = `${text}${sep}${extraFallback}`.replace(/\s+/g, ' ').trim();
+  }
+
+  if (text.length > maxLen) {
+    text = truncateAtWord(text, maxLen, true);
+  }
+
+  return text;
+}
+
+function stripMarkdownSnippet(md, maxLen = 140) {
   if (!md) return '';
   const cleaned = String(md)
     .replace(/\$\$[\s\S]*?\$\$/g, ' ')
-    .replace(/\$[^$]*\$/g, ' ')
+    .replace(/\$[^$\n]*\$/g, ' ')
     .replace(/[#>*_`[\]()]/g, ' ')
+    .replace(/\s+([,.;:!?])/g, '$1')
+    .replace(/([,.;:])\s*([,.;:])/g, '$1')
     .replace(/\s+/g, ' ')
     .trim();
   if (cleaned.length <= maxLen) return cleaned;
-  return `${cleaned.slice(0, maxLen - 3).trim()}...`;
+  return truncateAtWord(cleaned, maxLen, true);
 }
 
 function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
@@ -105,6 +150,11 @@ function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
   if (seo.canonical) {
     headTags.push(`<meta property="og:url" content="${escapeHtml(seo.canonical)}" />`);
   }
+  const ogImageUrl = `${SITE_URL}/og-image.png`;
+  headTags.push(`<meta property="og:image" content="${escapeHtml(ogImageUrl)}" />`);
+  headTags.push(`<meta property="og:image:width" content="1200" />`);
+  headTags.push(`<meta property="og:image:height" content="630" />`);
+  headTags.push(`<meta property="og:image:alt" content="SkolAce — Platform Belajar & Drilling UTBK-SNBT Gratis" />`);
   headTags.push(`<meta property="og:type" content="${escapeHtml(seo.ogType || 'website')}" />`);
   headTags.push(`<meta property="og:site_name" content="SkolAce" />`);
   headTags.push(`<meta property="og:locale" content="id_ID" />`);
@@ -117,6 +167,7 @@ function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
   if (seo.description) {
     headTags.push(`<meta name="twitter:description" content="${escapeHtml(seo.description)}" />`);
   }
+  headTags.push(`<meta name="twitter:image" content="${escapeHtml(ogImageUrl)}" />`);
 
   // JSON-LD Schema (safe serialized)
   if (seo.schema) {
@@ -131,6 +182,14 @@ function injectSeoIntoHtml(templateHtml, appHtml, seo, initialData = null) {
       `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(
         ADSENSE_CLIENT_ID
       )}" crossorigin="anonymous"></script>`
+    );
+  }
+
+  // Optional cookie-free Cloudflare Web Analytics when VITE_CF_BEACON_TOKEN is configured
+  if (CF_BEACON_TOKEN) {
+    const beaconCfg = JSON.stringify({ token: CF_BEACON_TOKEN });
+    headTags.push(
+      `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="${escapeHtml(beaconCfg)}"></script>`
     );
   }
 
@@ -232,9 +291,10 @@ async function prerender() {
   console.log('📄 Pre-rendering Home Page (/) ...');
   const homeRender = await render('/');
   const homeSeo = {
-    title: 'SkolAce | Platform Belajar & Drilling UTBK-SNBT Bebas Biaya (Rp0)',
-    description:
-      'Platform web persiapan UTBK-SNBT 7 subtes lengkap bebas biaya (Rp0). Materi taktis 3 zona, cheat sheet per bab, dan simulasi drilling adaptif berstandar BPPP.',
+    title: 'SkolAce | Belajar & Drilling UTBK-SNBT Gratis (Rp0)',
+    description: formatSeoDescription(
+      'Platform web persiapan UTBK-SNBT 7 subtes lengkap bebas biaya (Rp0). Materi taktis 3 zona, cheat sheet per bab, dan simulasi drilling adaptif BPPP.'
+    ),
     canonical: `${SITE_URL}/`,
     ogType: 'website',
     schema: {
@@ -261,16 +321,22 @@ async function prerender() {
     const code = sub.code.toLowerCase();
     const url = `/utbk/${code}`;
     const subName = sub.title || sub.name || sub.code;
+    const subCodeUpper = sub.code.toUpperCase();
     const subRender = await render(url);
     const subSeo = {
-      title: `Silabus & Drilling ${subName} (${sub.code.toUpperCase()}) | SkolAce UTBK-SNBT`,
-      description: `Silabus resmi, materi taktis 3 zona, dan bank soal drilling HOTS untuk subtes ${subName} (${sub.code.toUpperCase()}) UTBK-SNBT.`,
+      title: formatSeoTitle(`${subName} (${subCodeUpper})`, ' | SkolAce UTBK', 64),
+      description: formatSeoDescription(
+        `Silabus resmi, materi taktis 3 zona, rangkuman bab, dan bank soal drilling HOTS berstandar BPPP untuk subtes ${subName} (${subCodeUpper}) UTBK-SNBT.`,
+        'Akses gratis tanpa batas.',
+        125,
+        158
+      ),
       canonical: `${SITE_URL}${url}`,
       ogType: 'website',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'Course',
-        name: `Subtes ${subName} (${sub.code.toUpperCase()})`,
+        name: `Subtes ${subName} (${subCodeUpper})`,
         description: `Modul materi dan latihan soal UTBK-SNBT untuk subtes ${subName}.`,
         provider: {
           '@type': 'Organization',
@@ -337,14 +403,27 @@ async function prerender() {
     const chapterTitle = rawMaterial.bab || topic.chapterTitle;
     const coreSnippet = stripMarkdownSnippet(
       rawMaterial.zona_1_peta_taktis?.konsep_inti_markdown,
-      110
+      180
     );
 
+    const shortTitleCandidate = formatSeoTitle(matTitle, ` — ${topic.subtestCode} | SkolAce`, 64);
+    const finalMatTitle =
+      shortTitleCandidate.length < 35
+        ? formatSeoTitle(`Materi ${matTitle}`, ` — ${topic.subtestCode} UTBK | SkolAce`, 64)
+        : shortTitleCandidate;
+
+    const rawMatDesc = coreSnippet
+      ? `${matTitle} (${topic.subtestCode}): ${coreSnippet}`
+      : `Pelajari materi ${matTitle} pada ${chapterTitle} (${topic.subtestCode}) UTBK-SNBT lengkap dengan konsep inti, variasi pola soal, dan uji pemahaman.`;
+
     const matSeo = {
-      title: `${matTitle} (${chapterTitle}) — ${topic.subtestCode} | SkolAce UTBK-SNBT`,
-      description: coreSnippet
-        ? `${matTitle} (${topic.subtestCode} - ${chapterTitle}): ${coreSnippet}`
-        : `Pelajari materi ${matTitle} pada ${chapterTitle} (${topic.subtestCode}) UTBK-SNBT lengkap dengan konsep inti, variasi pola soal, dan uji pemahaman.`,
+      title: finalMatTitle,
+      description: formatSeoDescription(
+        rawMatDesc,
+        'Lengkap dengan bedah pola soal, rumus cepat, dan latihan UTBK-SNBT gratis.',
+        125,
+        158
+      ),
       canonical: `${SITE_URL}${url}`,
       ogType: 'article',
       extraStylesheets: mathCssFiles,
@@ -400,9 +479,10 @@ async function prerender() {
       console.log('📑 Pre-rendering Rangkuman Index Page (/rangkuman) ...');
       const rIdxRender = await render('/rangkuman', { initialRangkumanIndex: rangkumanIndex });
       const rIdxSeo = {
-        title: 'Cheat Sheet & Rangkuman Cepat UTBK-SNBT per Bab | SkolAce',
-        description:
-          'Lembar rangkuman padat dan rumus cepat UTBK-SNBT 7 subtes lengkap. Format 1 Teori = 1 Contoh untuk review cepat 5 menit sebelum drilling.',
+        title: 'Cheat Sheet & Rangkuman Cepat UTBK-SNBT | SkolAce',
+        description: formatSeoDescription(
+          'Lembar rangkuman padat dan rumus cepat UTBK-SNBT 7 subtes lengkap. Format 1 Teori = 1 Contoh untuk review cepat 5 menit sebelum drilling.'
+        ),
         canonical: `${SITE_URL}/rangkuman`,
         ogType: 'website',
       };
@@ -434,9 +514,20 @@ async function prerender() {
           initialRangkumanIndex: rangkumanIndex,
         });
         const babTitle = b.bab || b.nama_bab || b.kode_bab.toUpperCase();
+        const babCodeUpper = b.kode_bab.toUpperCase();
+        const rBabTitleCandidate = formatSeoTitle(
+          `Cheat Sheet ${babTitle}`,
+          ` (${babCodeUpper}) | SkolAce`,
+          64
+        );
         const bSeo = {
-          title: `Cheat Sheet ${babTitle} (${b.kode_bab.toUpperCase()}) | SkolAce UTBK-SNBT`,
-          description: `Lembar cheat sheet rangkuman padat ${babTitle} (${b.kode_bab.toUpperCase()}). 1 Teori Singkat = 1 Contoh Nyata berstandar UTBK-SNBT.`,
+          title: rBabTitleCandidate,
+          description: formatSeoDescription(
+            `Lembar cheat sheet rangkuman padat ${babTitle} (${babCodeUpper}). Format 1 Teori Singkat = 1 Contoh Nyata berstandar UTBK-SNBT.`,
+            'Gratis dan siap review cepat sebelum drilling.',
+            125,
+            158
+          ),
           canonical: `${SITE_URL}${babUrl}`,
           ogType: 'article',
           extraStylesheets: mathCssFiles,
@@ -513,27 +604,31 @@ async function prerender() {
   const legalPages = [
     {
       url: '/about',
-      title: 'Tentang Kami | SkolAce UTBK-SNBT',
-      description:
-        'Tentang platform edukasi SkolAce: Belajar dan drilling UTBK-SNBT 7 subtes bebas biaya Rp0 tanpa batas untuk seluruh siswa Indonesia.',
+      title: 'Tentang SkolAce & Standar Kurikulum | SkolAce',
+      description: formatSeoDescription(
+        'Tentang platform edukasi independen SkolAce: belajar 106 sub-bab materi, 27 rangkuman bab, dan 4.240+ soal drilling UTBK-SNBT bebas biaya Rp0.'
+      ),
     },
     {
       url: '/privacy-policy',
-      title: 'Kebijakan Privasi | SkolAce UTBK-SNBT',
-      description:
-        'Kebijakan privasi SkolAce: Penggunaan cookies, iklan pihak ketiga Google AdSense, dan komitmen keamanan data belajar lokal.',
+      title: 'Kebijakan Privasi & Cookie | SkolAce UTBK-SNBT',
+      description: formatSeoDescription(
+        'Kebijakan privasi SkolAce: penggunaan cookies, iklan pihak ketiga Google AdSense, hak opt-out pengguna, serta keamanan data belajar lokal.'
+      ),
     },
     {
       url: '/terms',
-      title: 'Syarat dan Ketentuan | SkolAce UTBK-SNBT',
-      description:
-        'Syarat dan ketentuan penggunaan platform edukasi independen persiapan UTBK-SNBT SkolAce.',
+      title: 'Syarat dan Ketentuan Layanan | SkolAce UTBK-SNBT',
+      description: formatSeoDescription(
+        'Syarat, ketentuan penggunaan, dan penafian independensi platform edukasi persiapan UTBK-SNBT SkolAce bagi pelajar di seluruh Indonesia.'
+      ),
     },
     {
       url: '/contact',
-      title: 'Kontak & Pusat Bantuan | SkolAce UTBK-SNBT',
-      description:
-        'Hubungi tim SkolAce untuk pertanyaan, bantuan teknis, dan pelaporan errata/koreksi soal latihan UTBK-SNBT.',
+      title: 'Kontak, Bantuan & Laporan Errata | SkolAce UTBK',
+      description: formatSeoDescription(
+        'Hubungi tim editorial SkolAce untuk pertanyaan teknis, bantuan belajar, kerja sama edukasi, serta pelaporan errata dan koreksi soal UTBK-SNBT.'
+      ),
     },
   ];
 
@@ -560,7 +655,6 @@ async function prerender() {
   );
   await fs.promises.writeFile(path.join(DIST_DIR, '404.html'), spaFallbackHtml, 'utf8');
   await fs.promises.writeFile(path.join(DIST_DIR, '200.html'), spaFallbackHtml, 'utf8');
-  await fs.promises.writeFile(path.join(ROOT_DIR, '404.html'), spaFallbackHtml, 'utf8');
 
   // -----------------------------------------------------------
   // 8. CLEAN UP dist/server FOLDER
