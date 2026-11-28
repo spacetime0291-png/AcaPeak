@@ -45,8 +45,14 @@ export default {
       return response;
     }
 
-    // 3. Client-side SPA route (/drilling or /drilling/:subtest) -> serve 200.html
-    if (pathname === '/drilling' || /^\/drilling\/[a-z0-9-]+$/i.test(pathname)) {
+    // 3. Client-side SPA route (/drilling or valid /drilling/:subtest) -> serve 200.html
+    const lowerPathname = pathname.toLowerCase();
+    const drillingMatch = lowerPathname.match(/^\/drilling(?:\/([a-z0-9-]+))?$/);
+    const isValidDrillingRoute =
+      drillingMatch !== null &&
+      (!drillingMatch[1] || VALID_SUBTESTS.has(drillingMatch[1]));
+
+    if (isValidDrillingRoute) {
       const spaUrl = new URL('/200.html', url.origin);
       const spaRes = await env.ASSETS.fetch(spaUrl.toString());
       const headers = new Headers(spaRes.headers);

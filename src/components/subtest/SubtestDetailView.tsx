@@ -22,7 +22,7 @@ import type { SubtestItem } from '../../types/material';
 import { UTBK_SYLLABUS } from '../../lib/syllabusData';
 import {
   fetchDrillingIndex,
-  isSubchapterCompleted,
+  getCompletedSubchapters,
   type DrillingIndexData,
 } from '../../lib/contentLoader';
 import {
@@ -112,7 +112,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   const [orderMode, setOrderMode] = useState<OrderMode>('blocking');
   const [showDrillingSettings, setShowDrillingSettings] = useState<boolean>(false);
   const [seenStatsVersion, setSeenStatsVersion] = useState<number>(0);
-  const [progressVersion, setProgressVersion] = useState<number>(0);
+  const [completedSubchapters, setCompletedSubchapters] = useState<Set<string>>(() => new Set());
   const [drillingIndex, setDrillingIndex] = useState<DrillingIndexData | null>(null);
 
   // Load lightweight 4,240-question drilling index when drilling tab is active
@@ -127,24 +127,24 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
     };
   }, [activeTab]);
 
-  // Sync completion progress state
+  // Sync completion progress state post-hydration to avoid SSR/CSR mismatch (#418)
   useEffect(() => {
-    const handleProgress = () => setProgressVersion((v) => v + 1);
-    window.addEventListener('utbk_progress_changed', handleProgress);
-    return () => window.removeEventListener('utbk_progress_changed', handleProgress);
+    const syncProgress = () => setCompletedSubchapters(getCompletedSubchapters());
+    syncProgress();
+    window.addEventListener('utbk_progress_changed', syncProgress);
+    return () => window.removeEventListener('utbk_progress_changed', syncProgress);
   }, []);
 
   // Completed subtopics count
   const completedCount = useMemo(() => {
-    void progressVersion;
     let count = 0;
     (subtest.modules || []).forEach((m) => {
       m.subtopics.forEach((s) => {
-        if (isSubchapterCompleted(s.id)) count++;
+        if (completedSubchapters.has(s.id)) count++;
       });
     });
     return count;
-  }, [subtest, progressVersion]);
+  }, [subtest, completedSubchapters]);
 
   // Sync drilling subtest code when subtest prop changes
   useEffect(() => {
@@ -715,7 +715,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
                               {/* Right: Clean Read Action Pill & Completion Status */}
                               <div className="shrink-0 ml-2 flex items-center gap-1.5">
-                                {isSubchapterCompleted(sub.id) && (
+                                {completedSubchapters.has(sub.id) && (
                                   <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700">
                                     <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
                                     <span className="hidden sm:inline">Selesai</span>

@@ -306,18 +306,20 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
   const progressBarFillRef = useRef<HTMLDivElement | null>(null);
   const progressAriaRef = useRef<HTMLDivElement | null>(null);
 
-  // Flexible Font Size Scale: 0.85 to 1.4 (Default 1.0, synced with reader)
-  const [fontScale, setFontScale] = useState<number>(() => {
+  // Flexible Font Size Scale: 0.85 to 1.4 (Default 1.0, loaded post-hydration to prevent #418)
+  const [fontScale, setFontScale] = useState<number>(1.0);
+
+  useEffect(() => {
     try {
-      const saved =
-        typeof window !== 'undefined'
-          ? localStorage.getItem('skolace_reader_font_scale')
-          : null;
-      return saved ? Math.min(1.4, Math.max(0.85, parseFloat(saved))) : 1.0;
-    } catch {
-      return 1.0;
-    }
-  });
+      const saved = localStorage.getItem('skolace_reader_font_scale');
+      if (saved) {
+        const parsed = parseFloat(saved);
+        if (!Number.isNaN(parsed)) {
+          setFontScale(Math.min(1.4, Math.max(0.85, parsed)));
+        }
+      }
+    } catch {}
+  }, []);
 
   const handleFontScaleChange = (newScale: number) => {
     const clamped = Math.min(1.4, Math.max(0.85, Number(newScale.toFixed(2))));

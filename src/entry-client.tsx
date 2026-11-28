@@ -19,8 +19,11 @@ async function bootstrapClient() {
   const rootElement = document.getElementById('root');
   if (!rootElement) return;
 
+  const normalizedPath = (window.location.pathname.replace(/\/+$/, '') || '/').toLowerCase();
+  const isDrillingRoute =
+    normalizedPath === '/drilling' || normalizedPath.startsWith('/drilling/');
   const hasPreRenderedContent =
-    rootElement.hasChildNodes() && rootElement.innerHTML.trim().length > 0;
+    !isDrillingRoute && rootElement.firstElementChild !== null;
 
   const appTree = (
     <StrictMode>

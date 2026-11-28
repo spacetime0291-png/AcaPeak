@@ -242,6 +242,138 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   const [secondsRemaining, setSecondsRemaining] = useState<number>(initialSeconds);
   const [secondsElapsed, setSecondsElapsed] = useState<number>(0);
 
+  const isQuestionAnswered = (q: WorkedExample): boolean => {
+    const ans = answers[q.example_id];
+    if (ans === undefined || ans === null) return false;
+    if (q.question_type === 'mc_complex_table') {
+      if (typeof ans !== 'object') return false;
+      const totalRows = q.complex_statements?.length || 0;
+      return totalRows > 0 ? Object.keys(ans).length === totalRows : Object.keys(ans).length > 0;
+    }
+    if (q.question_type === 'mc_complex_checkbox') {
+      return Array.isArray(ans) && ans.length > 0;
+    }
+    if (q.question_type === 'short_answer') {
+      return typeof ans === 'string' && ans.trim().length > 0;
+    }
+    return typeof ans === 'string' && ans.length > 0;
+  };
+
+  const hasPartialAnswer = (q: WorkedExample): boolean => {
+    const ans = answers[q.example_id];
+    if (q.question_type === 'mc_complex_table' && ans && typeof ans === 'object') {
+      return Object.keys(ans).length > 0;
+    }
+    return isQuestionAnswered(q);
+  };
+
+  // Timer effect
+  useEffect(() => {
+    if (isLoading || !questions || questions.length === 0 || isFinished) return;
+
+    const interval = setInterval(() => {
+      if (timerMinutes) {
+        setSecondsRemaining((prev) => {
+          if (prev <= 1) {
+            clearInterval(interval);
+            recordQuestionsSeen(questions.map((q) => q.example_id));
+            setViewPhase('summary');
+            setReviewIndex(0);
+            return 0;
+          }
+          return prev - 1;
+        });
+      } else {
+        setSecondsElapsed((prev) => prev + 1);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [isLoading, isFinished, timerMinutes, questions]);
+
+  // Ensure interactive drilling sessions are never indexed by search engines
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    let meta = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
+    const originalContent = meta ? meta.getAttribute('content') : null;
+    const created = !meta;
+
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.name = 'robots';
+      document.head.appendChild(meta);
+    }
+    meta.content = 'noindex, nofollow';
+
+    return () => {
+      if (created) {
+        meta?.remove();
+      } else if (meta && originalContent) {
+        meta.content = originalContent;
+      }
+    };
+  }, []);
+
+  // Scroll smoothly to top when switching questions during active test or review
+  useEffect(() => {
+    if (isLoading || !questions || questions.length === 0) return;
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }, [isLoading, questions.length, currentQuestionIndex, reviewIndex, viewPhase]);
+
+  // Keyboard navigation (Left/Right arrows when not typing in input)
+  useEffect(() => {
+    if (isLoading || !questions || questions.length === 0) return;
+    if (viewPhase === 'summary' || showExitConfirm || showSubmitConfirm || zoomSvg) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
+      if (tag === 'input' || tag === 'textarea') return;
+      if (viewPhase === 'active') {
+        if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
+          onNavigateQuestion(currentQuestionIndex - 1);
+        } else if (e.key === 'ArrowRight' && currentQuestionIndex < questions.length - 1) {
+          onNavigateQuestion(currentQuestionIndex + 1);
+        }
+      } else if (viewPhase === 'review') {
+        if (e.key === 'ArrowLeft' && reviewIndex > 0) {
+          setReviewIndex((prev) => prev - 1);
+        } else if (e.key === 'ArrowRight' && reviewIndex < questions.length - 1) {
+          setReviewIndex((prev) => prev + 1);
+        }
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [
+    isLoading,
+    viewPhase,
+    showExitConfirm,
+    showSubmitConfirm,
+    zoomSvg,
+    currentQuestionIndex,
+    reviewIndex,
+    questions.length,
+    onNavigateQuestion,
+  ]);
+
+  const filteredReviewItems = useMemo(() => {
+    if (!questions || questions.length === 0) return [];
+    return questions
+      .map((q, idx) => ({
+        q,
+        idx,
+        isCorrect: isAnswerCorrect(q, answers[q.example_id]),
+        isAnswered: hasPartialAnswer(q),
+      }))
+      .filter((item) => {
+        if (reviewFilter === 'correct') return item.isCorrect;
+        if (reviewFilter === 'wrong') return item.isAnswered && !item.isCorrect;
+        if (reviewFilter === 'unanswered') return !item.isAnswered;
+        return true;
+      });
+  }, [questions, answers, reviewFilter]);
+
   // Loading state while fetching drilling bank JSONs
   if (isLoading) {
     return (
@@ -288,93 +420,6 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
       </div>
     );
   }
-
-  // Timer effect
-  useEffect(() => {
-    if (isFinished) return;
-
-    const interval = setInterval(() => {
-      if (timerMinutes) {
-        setSecondsRemaining((prev) => {
-          if (prev <= 1) {
-            clearInterval(interval);
-            recordQuestionsSeen(questions.map((q) => q.example_id));
-            setViewPhase('summary');
-            setReviewIndex(0);
-            return 0;
-          }
-          return prev - 1;
-        });
-      } else {
-        setSecondsElapsed((prev) => prev + 1);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [isFinished, timerMinutes, questions]);
-
-  // Ensure interactive drilling sessions are never indexed by search engines
-  useEffect(() => {
-    if (typeof document === 'undefined') return;
-    let meta = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
-    const originalContent = meta ? meta.getAttribute('content') : null;
-    const created = !meta;
-
-    if (!meta) {
-      meta = document.createElement('meta');
-      meta.name = 'robots';
-      document.head.appendChild(meta);
-    }
-    meta.content = 'noindex, nofollow';
-
-    return () => {
-      if (created) {
-        meta?.remove();
-      } else if (meta && originalContent) {
-        meta.content = originalContent;
-      }
-    };
-  }, []);
-
-  // Scroll smoothly to top when switching questions during active test or review
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'instant' });
-    }
-  }, [currentQuestionIndex, reviewIndex, viewPhase]);
-
-  // Keyboard navigation (Left/Right arrows when not typing in input)
-  useEffect(() => {
-    if (viewPhase === 'summary' || showExitConfirm || showSubmitConfirm || zoomSvg) return;
-    const onKeyDown = (e: KeyboardEvent) => {
-      const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
-      if (tag === 'input' || tag === 'textarea') return;
-      if (viewPhase === 'active') {
-        if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
-          onNavigateQuestion(currentQuestionIndex - 1);
-        } else if (e.key === 'ArrowRight' && currentQuestionIndex < questions.length - 1) {
-          onNavigateQuestion(currentQuestionIndex + 1);
-        }
-      } else if (viewPhase === 'review') {
-        if (e.key === 'ArrowLeft' && reviewIndex > 0) {
-          setReviewIndex((prev) => prev - 1);
-        } else if (e.key === 'ArrowRight' && reviewIndex < questions.length - 1) {
-          setReviewIndex((prev) => prev + 1);
-        }
-      }
-    };
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [
-    viewPhase,
-    showExitConfirm,
-    showSubmitConfirm,
-    zoomSvg,
-    currentQuestionIndex,
-    reviewIndex,
-    questions.length,
-    onNavigateQuestion,
-  ]);
 
   const formatTimer = (totalSecs: number) => {
     const mins = Math.floor(totalSecs / 60);
@@ -449,31 +494,6 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
     }));
   };
 
-  const isQuestionAnswered = (q: WorkedExample): boolean => {
-    const ans = answers[q.example_id];
-    if (ans === undefined || ans === null) return false;
-    if (q.question_type === 'mc_complex_table') {
-      if (typeof ans !== 'object') return false;
-      const totalRows = q.complex_statements?.length || 0;
-      return totalRows > 0 ? Object.keys(ans).length === totalRows : Object.keys(ans).length > 0;
-    }
-    if (q.question_type === 'mc_complex_checkbox') {
-      return Array.isArray(ans) && ans.length > 0;
-    }
-    if (q.question_type === 'short_answer') {
-      return typeof ans === 'string' && ans.trim().length > 0;
-    }
-    return typeof ans === 'string' && ans.length > 0;
-  };
-
-  const hasPartialAnswer = (q: WorkedExample): boolean => {
-    const ans = answers[q.example_id];
-    if (q.question_type === 'mc_complex_table' && ans && typeof ans === 'object') {
-      return Object.keys(ans).length > 0;
-    }
-    return isQuestionAnswered(q);
-  };
-
   const toggleFlagCurrent = () => {
     setFlaggedIndices((prev) => {
       const next = new Set(prev);
@@ -501,22 +521,6 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   ).length;
   const answeredCount = questions.filter((q) => isQuestionAnswered(q)).length;
   const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
-
-  const filteredReviewItems = useMemo(() => {
-    return questions
-      .map((q, idx) => ({
-        q,
-        idx,
-        isCorrect: isAnswerCorrect(q, answers[q.example_id]),
-        isAnswered: hasPartialAnswer(q),
-      }))
-      .filter((item) => {
-        if (reviewFilter === 'correct') return item.isCorrect;
-        if (reviewFilter === 'wrong') return item.isAnswered && !item.isCorrect;
-        if (reviewFilter === 'unanswered') return !item.isAnswered;
-        return true;
-      });
-  }, [questions, answers, reviewFilter]);
 
   // Shared SVG Zoom Modal
   const renderZoomModal = () =>

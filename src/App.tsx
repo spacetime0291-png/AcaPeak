@@ -81,6 +81,8 @@ export interface ResolvedRouteComponents {
   ContactPage?: React.ComponentType<any>;
 }
 
+const VALID_DRILLING_SUBTESTS = new Set(['pu', 'ppu', 'pbm', 'pk', 'lbi', 'lbe', 'pm']);
+
 /**
  * Pre-resolves the single lazy route chunk matching `pathname` before SSR renderToString
  * or client hydrateRoot, guaranteeing flat SSR HTML and zero Suspense flash on initial load.
@@ -104,7 +106,8 @@ export async function resolveRouteComponents(pathname: string): Promise<Resolved
   if (/^\/sma\/[^/]+$/.test(clean)) {
     return { SmaSubjectDetailView: await importSmaSubjectDetailView() };
   }
-  if (clean === '/drilling' || /^\/drilling\/[^/]+$/.test(clean)) {
+  const drillingMatch = clean.match(/^\/drilling(?:\/([a-z0-9-]+))?$/);
+  if (drillingMatch && (!drillingMatch[1] || VALID_DRILLING_SUBTESTS.has(drillingMatch[1]))) {
     return { ActiveDrillingView: await importActiveDrillingView() };
   }
   if (clean === '/about') return { AboutPage: await importAboutPage() };
@@ -581,27 +584,34 @@ function DrillingRouteView({
   drillingTimerMinutes,
   drillingSessionId,
 }: DrillingRouteViewProps) {
-  const { subtest = 'pu' } = useParams<{ subtest?: string }>();
+  const { subtest } = useParams<{ subtest?: string }>();
   const navigate = useNavigate();
+  const normalizedSubtest = (subtest ?? 'pu').toLowerCase();
+  const isValidSubtest = VALID_DRILLING_SUBTESTS.has(normalizedSubtest);
+
   const [questionIndex, setQuestionIndex] = useState<number>(0);
-  const [isLoadingSession, setIsLoadingSession] = useState<boolean>(false);
+  const [isLoadingSession, setIsLoadingSession] = useState<boolean>(
+    () => isValidSubtest && drillingQuestions.length === 0
+  );
 
   useEffect(() => {
     setQuestionIndex(0);
   }, [drillingSessionId]);
 
   useEffect(() => {
+    if (!isValidSubtest) return;
     if (typeof document !== 'undefined') {
       document.title = `Sesi Drilling Soal #${questionIndex + 1} | SkolAce`;
     }
-  }, [questionIndex]);
+  }, [isValidSubtest, questionIndex]);
 
   useEffect(() => {
+    if (!isValidSubtest) return;
     if (drillingQuestions.length === 0) {
-      const sub =
-        UTBK_SYLLABUS.find(
-          (s) => s.code.toLowerCase() === subtest.toLowerCase()
-        ) || UTBK_SYLLABUS[0];
+      const sub = UTBK_SYLLABUS.find(
+        (s) => s.code.toLowerCase() === normalizedSubtest
+      );
+      if (!sub) return;
       const initialSubIds = sub.modules
         ? sub.modules.flatMap((m) => m.subtopics.map((s) => s.id))
         : (sub.chapters || []).flatMap((c) => c.subchapters.map((s) => s.id));
@@ -611,11 +621,18 @@ function DrillingRouteView({
         .then((qs) => {
           setDrillingQuestions(qs);
         })
+        .catch((err) => {
+          console.error('Failed to load drilling questions', err);
+        })
         .finally(() => {
           setIsLoadingSession(false);
         });
     }
-  }, [subtest, drillingQuestions.length, setDrillingQuestions]);
+  }, [isValidSubtest, normalizedSubtest, drillingQuestions.length, setDrillingQuestions]);
+
+  if (!isValidSubtest) {
+    return <NotFoundView theme={theme} />;
+  }
 
   return (
     <main className="flex-1 w-full max-w-4xl mx-auto px-3.5 sm:px-6 md:px-8 py-2.5 sm:py-5">
@@ -631,7 +648,7 @@ function DrillingRouteView({
           setQuestionIndex(newIndex);
         }}
         onExitDrilling={() => {
-          navigate(`/utbk/${subtest.toLowerCase()}?tab=drilling`);
+          navigate(`/utbk/${normalizedSubtest}?tab=drilling`);
         }}
       />
     </main>
@@ -709,7 +726,11 @@ export default function App({
   const TermsComp = preloadedComponents.TermsPage || LazyTermsPage;
   const ContactComp = preloadedComponents.ContactPage || LazyContactPage;
 
-  const isDrillingView = location.pathname.startsWith('/drilling');
+  const cleanPathname = (location.pathname.replace(/\/+$/, '') || '/').toLowerCase();
+  const drillingPathMatch = cleanPathname.match(/^\/drilling(?:\/([a-z0-9-]+))?$/);
+  const isDrillingView =
+    drillingPathMatch !== null &&
+    (!drillingPathMatch[1] || VALID_DRILLING_SUBTESTS.has(drillingPathMatch[1]));
   const isMateriView =
     /^\/utbk\/[^/]+\/[^/]+/.test(location.pathname) || location.pathname.startsWith('/materi');
   const isRangkumanView = location.pathname.startsWith('/rangkuman');

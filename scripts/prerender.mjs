@@ -648,13 +648,20 @@ async function prerender() {
   // -----------------------------------------------------------
   // 7. 404 & 200 (SPA CATCH-ALL) FALLBACK FOR CLIENT ROUTING
   // -----------------------------------------------------------
-  const homeHtml = await fs.promises.readFile(path.join(DIST_DIR, 'index.html'), 'utf8');
-  const spaFallbackHtml = homeHtml.replace(
-    /<meta name="robots" content="index, follow" \/>/i,
-    '<meta name="robots" content="noindex, follow" />'
-  );
-  await fs.promises.writeFile(path.join(DIST_DIR, '404.html'), spaFallbackHtml, 'utf8');
-  await fs.promises.writeFile(path.join(DIST_DIR, '200.html'), spaFallbackHtml, 'utf8');
+  const spaShellHtml = injectSeoIntoHtml(templateHtml, '', {
+    title: 'Sesi Drilling Soal UTBK-SNBT | SkolAce',
+    description:
+      'Simulasi latihan soal dan drilling adaptif UTBK-SNBT bebas biaya di SkolAce.',
+    noindex: true,
+    extraStylesheets: mathCssFiles,
+  });
+  const notFoundHtml = injectSeoIntoHtml(templateHtml, '', {
+    title: 'Halaman Tidak Ditemukan (404) | SkolAce',
+    description: 'Halaman yang Anda cari tidak ditemukan atau telah dipindahkan di SkolAce.',
+    noindex: true,
+  });
+  await fs.promises.writeFile(path.join(DIST_DIR, '404.html'), notFoundHtml, 'utf8');
+  await fs.promises.writeFile(path.join(DIST_DIR, '200.html'), spaShellHtml, 'utf8');
 
   // -----------------------------------------------------------
   // 8. CLEAN UP dist/server FOLDER
