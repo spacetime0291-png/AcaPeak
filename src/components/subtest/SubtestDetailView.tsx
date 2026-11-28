@@ -32,6 +32,11 @@ import {
 } from '../../lib/drillingRotationEngine';
 import { ModuleIcon } from './ModuleIcon';
 import { ThemeToggle } from '../common/ThemeToggle';
+import { DrillingPembahasanTab } from '../drilling/DrillingPembahasanTab';
+import {
+  getDrillingHistory,
+  DRILLING_HISTORY_CHANGED_EVENT,
+} from '../../lib/drillingHistory';
 import type { ThemeId } from '../../lib/theme';
 import {
   NatureFocusHeaderAccent,
@@ -41,11 +46,11 @@ import {
 
 interface SubtestDetailViewProps {
   subtest: SubtestItem;
-  activeTab: 'materi' | 'drilling';
+  activeTab: 'materi' | 'drilling' | 'pembahasan';
   initialSelectedTopicId?: string;
   theme?: ThemeId;
   onSelectTheme?: (theme: ThemeId) => void;
-  onTabChange?: (tab: 'materi' | 'drilling') => void;
+  onTabChange?: (tab: 'materi' | 'drilling' | 'pembahasan') => void;
   onBackToHome?: () => void;
   onSelectSubtest?: (subtestCode: string) => void;
   onSelectMaterial?: (materialId: string) => void;
@@ -114,6 +119,30 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   const [seenStatsVersion, setSeenStatsVersion] = useState<number>(0);
   const [completedSubchapters, setCompletedSubchapters] = useState<Set<string>>(() => new Set());
   const [drillingIndex, setDrillingIndex] = useState<DrillingIndexData | null>(null);
+  const [sessionCountForSubtest, setSessionCountForSubtest] = useState<number>(0);
+  const [isReviewingSession, setIsReviewingSession] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (activeTab !== 'pembahasan') {
+      setIsReviewingSession(false);
+    }
+  }, [activeTab]);
+
+  // Sync drilling session count badge post-hydration to avoid SSR/CSR mismatch
+  useEffect(() => {
+    const syncHistoryCount = () => {
+      const code = subtest.code.toUpperCase();
+      const count = getDrillingHistory().filter(
+        (s) =>
+          s.primarySubtest.toUpperCase() === code ||
+          s.subtests.some((c) => c.toUpperCase() === code)
+      ).length;
+      setSessionCountForSubtest(count);
+    };
+    syncHistoryCount();
+    window.addEventListener(DRILLING_HISTORY_CHANGED_EVENT, syncHistoryCount);
+    return () => window.removeEventListener(DRILLING_HISTORY_CHANGED_EVENT, syncHistoryCount);
+  }, [subtest.code]);
 
   // Load lightweight 4,240-question drilling index when drilling tab is active
   useEffect(() => {
@@ -395,7 +424,15 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   })();
 
   return (
-    <div className={`w-full ${activeTab === 'drilling' ? 'pb-36 sm:pb-24' : 'pb-12'}`}>
+    <div
+      className={`w-full ${
+        activeTab === 'drilling'
+          ? 'pb-36 sm:pb-24'
+          : activeTab === 'pembahasan' && isReviewingSession
+          ? 'pb-28'
+          : 'pb-12'
+      }`}
+    >
       {/* 1. STICKY TOP APP BAR (Native App Feel, Unified Cosmic/Nature/Velvet/Prism Header) */}
       <div className="sticky top-0 z-40 w-full shadow-xs">
         {/* Baris 1: Top Navigation Bar */}
@@ -480,9 +517,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
           </div>
         </div>
 
-        {/* Baris 2: Sticky Segmented Tab (Materi vs Drilling Soal) */}
+        {/* Baris 2: Sticky Segmented Tab (Materi vs Drilling Soal vs Pembahasan) */}
         <div
-          className={`backdrop-blur-md border-b w-full px-3.5 sm:px-5 py-2.5 transition-colors ${
+          className={`backdrop-blur-md border-b w-full px-3 sm:px-5 py-2.5 transition-colors ${
             isVelvet
               ? 'bg-[#170D19]/92 border-[#EB8A78]/15'
               : isCosmic
@@ -494,7 +531,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         >
           <div className="max-w-4xl mx-auto flex items-center justify-between">
             <div
-              className={`flex items-center p-1.5 rounded-2xl border w-full sm:w-auto shadow-2xs ${
+              className={`grid grid-cols-3 sm:inline-flex items-center gap-1 p-1 sm:p-1.5 rounded-2xl border w-full sm:w-auto shadow-2xs ${
                 isVelvet
                   ? 'bg-[#261420] border-[#EB8A78]/18'
                   : isCosmic
@@ -507,7 +544,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
               <Link
                 to={`/utbk/${subtest.code.toLowerCase()}`}
                 onClick={() => onTabChange?.('materi')}
-                className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
+                className={`flex items-center justify-center gap-1.5 px-2 sm:px-6 py-2 rounded-xl text-[11px] sm:text-sm font-bold whitespace-nowrap transition-all duration-200 cursor-pointer ${
                   activeTab === 'materi'
                     ? isVelvet
                       ? 'bg-[#E27B60] text-[#1E0F17] font-extrabold shadow-xs'
@@ -526,7 +563,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
               <Link
                 to={`/utbk/${subtest.code.toLowerCase()}?tab=drilling`}
                 onClick={() => onTabChange?.('drilling')}
-                className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
+                className={`flex items-center justify-center gap-1.5 px-2 sm:px-6 py-2 rounded-xl text-[11px] sm:text-sm font-bold whitespace-nowrap transition-all duration-200 cursor-pointer ${
                   activeTab === 'drilling'
                     ? isVelvet
                       ? 'bg-[#E27B60] text-[#1E0F17] font-extrabold shadow-xs'
@@ -541,6 +578,42 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 }`}
               >
                 <span>⚡ Drilling Soal</span>
+              </Link>
+              <Link
+                to={`/utbk/${subtest.code.toLowerCase()}?tab=pembahasan`}
+                onClick={() => onTabChange?.('pembahasan')}
+                className={`flex items-center justify-center gap-1.5 px-2 sm:px-6 py-2 rounded-xl text-[11px] sm:text-sm font-bold whitespace-nowrap transition-all duration-200 cursor-pointer ${
+                  activeTab === 'pembahasan'
+                    ? isVelvet
+                      ? 'bg-[#E27B60] text-[#1E0F17] font-extrabold shadow-xs'
+                      : isCosmic
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 text-white border border-cyan-600/40'
+                      : isPrism
+                      ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-sm'
+                      : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
+                    : isVelvet
+                    ? 'text-[#C9A9B0] hover:text-[#FBF1F2]'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                <span>📝 Pembahasan</span>
+                {sessionCountForSubtest > 0 && (
+                  <span
+                    className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono font-extrabold ${
+                      activeTab === 'pembahasan'
+                        ? isVelvet
+                          ? 'bg-[#1E0F17]/20 text-[#1E0F17]'
+                          : isCosmic || isPrism
+                          ? 'bg-white/25 text-white'
+                          : 'bg-blue-100 text-blue-700'
+                        : isVelvet
+                        ? 'bg-[#4A222B] text-[#FFBE98]'
+                        : 'bg-stone-200/80 dark:bg-slate-800 text-slate-700 dark:text-cyan-300'
+                    }`}
+                  >
+                    {sessionCountForSubtest}
+                  </span>
+                )}
               </Link>
             </div>
           </div>
@@ -1210,6 +1283,19 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
               })}
             </div>
           </div>
+        )}
+
+        {/* ========================================================
+            TAB 3: PEMBAHASAN (Riwayat Drilling Per Sesi)
+            ======================================================== */}
+        {activeTab === 'pembahasan' && (
+          <DrillingPembahasanTab
+            subtestCode={subtest.code}
+            subtestName={subtest.name || subtest.title}
+            theme={theme}
+            onGoToDrilling={() => onTabChange?.('drilling')}
+            onReviewOpenChange={setIsReviewingSession}
+          />
         )}
       </div>
 

@@ -383,7 +383,9 @@ function SubtestRouteView({
     );
   }, [subtest]);
 
-  const activeTab = searchParams.get('tab') === 'drilling' ? 'drilling' : 'materi';
+  const tabParam = searchParams.get('tab');
+  const activeTab: 'materi' | 'drilling' | 'pembahasan' =
+    tabParam === 'drilling' ? 'drilling' : tabParam === 'pembahasan' ? 'pembahasan' : 'materi';
   const selectedTopicId = searchParams.get('selected') || searchParams.get('topic') || undefined;
 
   useEffect(() => {
@@ -404,8 +406,8 @@ function SubtestRouteView({
           initialSelectedTopicId={selectedTopicId}
           theme={theme}
           onSelectTheme={onSelectTheme}
-          onTabChange={(newTab: 'materi' | 'drilling') => {
-            setSearchParams(newTab === 'drilling' ? { tab: 'drilling' } : {});
+          onTabChange={(newTab: 'materi' | 'drilling' | 'pembahasan') => {
+            setSearchParams(newTab === 'materi' ? {} : { tab: newTab });
           }}
           onBackToHome={() => {
             navigate('/');
@@ -641,6 +643,7 @@ function DrillingRouteView({
         questions={drillingQuestions}
         currentQuestionIndex={questionIndex}
         timerMinutes={drillingTimerMinutes}
+        primarySubtest={normalizedSubtest.toUpperCase()}
         isLoading={isLoadingSession}
         theme={theme}
         onSelectTheme={onSelectTheme}
@@ -649,6 +652,9 @@ function DrillingRouteView({
         }}
         onExitDrilling={() => {
           navigate(`/utbk/${normalizedSubtest}?tab=drilling`);
+        }}
+        onOpenPembahasanHistory={() => {
+          navigate(`/utbk/${normalizedSubtest}?tab=pembahasan`);
         }}
       />
     </main>
