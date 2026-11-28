@@ -548,29 +548,29 @@ div[id^="svg-"] svg {
    ========================================================================== */
 
 .reader-scalable-content {
-  font-size: calc(1rem * var(--reader-font-scale, 1));
+  font-size: calc(0.96875rem * var(--reader-font-scale, 1));
 }
 
-/* Scaled paragraph & list content */
+/* Prevent double-scaling on nested markdown blocks */
 .reader-scalable-content p,
 .reader-scalable-content li,
 .reader-scalable-content blockquote,
 .reader-scalable-content td,
 .reader-scalable-content th {
-  font-size: calc(1em * var(--reader-font-scale, 1));
+  font-size: inherit;
 }
 
-/* Headings proportional scaling */
+/* Harmonized headings scaling (gentle hierarchy, no jarring jump) */
 .reader-scalable-content h1 {
-  font-size: calc(1.75rem * var(--reader-font-scale, 1)) !important;
-  line-height: 1.3 !important;
+  font-size: calc(1.375rem * var(--reader-font-scale, 1)) !important;
+  line-height: 1.32 !important;
 }
 .reader-scalable-content h2 {
-  font-size: calc(1.35rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(1.1875rem * var(--reader-font-scale, 1)) !important;
   line-height: 1.35 !important;
 }
 .reader-scalable-content h3 {
-  font-size: calc(1.15rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(1.0625rem * var(--reader-font-scale, 1)) !important;
   line-height: 1.4 !important;
 }
 .reader-scalable-content h4 {
@@ -578,30 +578,39 @@ div[id^="svg-"] svg {
   line-height: 1.45 !important;
 }
 
-/* Scale Tailwind font-size utilities inside reader content */
+/* Scale Tailwind font-size utilities inside reader content with balanced contrast */
 .reader-scalable-content .text-xs {
-  font-size: calc(0.75rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(0.8125rem * var(--reader-font-scale, 1)) !important;
 }
 .reader-scalable-content .text-sm {
-  font-size: calc(0.875rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(0.90625rem * var(--reader-font-scale, 1)) !important;
 }
 .reader-scalable-content .text-base {
-  font-size: calc(1rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(0.96875rem * var(--reader-font-scale, 1)) !important;
 }
 .reader-scalable-content .text-lg {
-  font-size: calc(1.125rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(1.09375rem * var(--reader-font-scale, 1)) !important;
 }
 .reader-scalable-content .text-xl {
-  font-size: calc(1.25rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(1.1875rem * var(--reader-font-scale, 1)) !important;
 }
 .reader-scalable-content .text-2xl {
-  font-size: calc(1.5rem * var(--reader-font-scale, 1)) !important;
+  font-size: calc(1.3125rem * var(--reader-font-scale, 1)) !important;
+}
+.reader-scalable-content .text-\[14\.5px\] {
+  font-size: calc(14.5px * var(--reader-font-scale, 1)) !important;
 }
 .reader-scalable-content .text-\[15px\] {
   font-size: calc(15px * var(--reader-font-scale, 1)) !important;
 }
+.reader-scalable-content .text-\[15\.5px\] {
+  font-size: calc(15.5px * var(--reader-font-scale, 1)) !important;
+}
 .reader-scalable-content .text-\[16px\] {
-  font-size: calc(16px * var(--reader-font-scale, 1)) !important;
+  font-size: calc(15.5px * var(--reader-font-scale, 1)) !important;
+}
+.reader-scalable-content .text-\[17px\] {
+  font-size: calc(17px * var(--reader-font-scale, 1)) !important;
 }
 
 /* ==========================================================================

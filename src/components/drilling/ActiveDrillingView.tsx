@@ -23,7 +23,6 @@ import {
   LayoutGrid,
   FileText,
   X,
-  ChevronsUpDown,
 } from 'lucide-react';
 import type { WorkedExample, VisualData } from '../../types/material';
 import {
@@ -133,6 +132,48 @@ const MemoDrillingMarkdown = memo<{ text?: string }>(({ text }) => {
 });
 MemoDrillingMarkdown.displayName = 'MemoDrillingMarkdown';
 
+const REVIEW_MARKDOWN_COMPONENTS_DEFAULT = {
+  ...DRILLING_MARKDOWN_COMPONENTS,
+  strong: ({ children }: any) => (
+    <strong className="font-extrabold text-indigo-950 dark:text-cyan-200 bg-amber-100/90 dark:bg-cyan-950/75 px-1 py-0.2 rounded">
+      {children}
+    </strong>
+  ),
+  blockquote: ({ children }: any) => (
+    <blockquote className="my-3 px-3.5 py-2.5 border-l-4 border-indigo-500 dark:border-cyan-400 bg-indigo-50/70 dark:bg-cyan-950/35 rounded-r-xl text-inherit font-medium">
+      {children}
+    </blockquote>
+  ),
+};
+
+const REVIEW_MARKDOWN_COMPONENTS_VELVET = {
+  ...DRILLING_MARKDOWN_COMPONENTS,
+  strong: ({ children }: any) => (
+    <strong className="font-extrabold text-[#FFBE98] bg-[#4A222B] px-1 py-0.2 rounded">
+      {children}
+    </strong>
+  ),
+  blockquote: ({ children }: any) => (
+    <blockquote className="my-3 px-3.5 py-2.5 border-l-4 border-[#FF8A6B] bg-[#381C2C] rounded-r-xl text-inherit font-medium">
+      {children}
+    </blockquote>
+  ),
+};
+
+const MemoReviewMarkdown = memo<{ text?: string; isVelvet?: boolean }>(({ text, isVelvet = false }) => {
+  if (!text) return null;
+  return (
+    <ReactMarkdown
+      remarkPlugins={REMARK_PLUGINS}
+      rehypePlugins={KATEX_REHYPE_PLUGINS}
+      components={isVelvet ? REVIEW_MARKDOWN_COMPONENTS_VELVET : REVIEW_MARKDOWN_COMPONENTS_DEFAULT}
+    >
+      {formatMarkdownMath(text)}
+    </ReactMarkdown>
+  );
+});
+MemoReviewMarkdown.displayName = 'MemoReviewMarkdown';
+
 function getQuestionTypeBadgeLabel(q: WorkedExample): string {
   if (q.question_type_label) return q.question_type_label;
   switch (q.question_type) {
@@ -164,6 +205,7 @@ interface ActiveDrillingViewProps {
 }
 
 type ReviewFilter = 'all' | 'wrong' | 'correct' | 'unanswered';
+type DrillingViewPhase = 'active' | 'summary' | 'review';
 
 export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   questions,
@@ -185,12 +227,15 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
-  const [isFinished, setIsFinished] = useState(false);
-  const [openReviews, setOpenReviews] = useState<Set<string>>(new Set());
+  const [viewPhase, setViewPhase] = useState<DrillingViewPhase>('active');
+  const [reviewIndex, setReviewIndex] = useState<number>(0);
+  const [isReviewPaletteOpen, setIsReviewPaletteOpen] = useState(false);
   const [openHints, setOpenHints] = useState<Record<string, boolean>>({});
   const [collapsedStimuli, setCollapsedStimuli] = useState<Record<string, boolean>>({});
   const [zoomSvg, setZoomSvg] = useState<VisualData | null>(null);
   const [reviewFilter, setReviewFilter] = useState<ReviewFilter>('all');
+
+  const isFinished = viewPhase !== 'active';
 
   // Timer states
   const initialSeconds = timerMinutes ? timerMinutes * 60 : 0;
@@ -254,7 +299,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           if (prev <= 1) {
             clearInterval(interval);
             recordQuestionsSeen(questions.map((q) => q.example_id));
-            setIsFinished(true);
+            setViewPhase('summary');
+            setReviewIndex(0);
             return 0;
           }
           return prev - 1;
@@ -290,28 +336,45 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
     };
   }, []);
 
-  // Scroll smoothly to top when switching questions during active test
+  // Scroll smoothly to top when switching questions during active test or review
   useEffect(() => {
-    if (!isFinished && typeof window !== 'undefined') {
+    if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'instant' });
     }
-  }, [currentQuestionIndex, isFinished]);
+  }, [currentQuestionIndex, reviewIndex, viewPhase]);
 
   // Keyboard navigation (Left/Right arrows when not typing in input)
   useEffect(() => {
-    if (isFinished || showExitConfirm || showSubmitConfirm || zoomSvg) return;
+    if (viewPhase === 'summary' || showExitConfirm || showSubmitConfirm || zoomSvg) return;
     const onKeyDown = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement)?.tagName?.toLowerCase();
       if (tag === 'input' || tag === 'textarea') return;
-      if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
-        onNavigateQuestion(currentQuestionIndex - 1);
-      } else if (e.key === 'ArrowRight' && currentQuestionIndex < questions.length - 1) {
-        onNavigateQuestion(currentQuestionIndex + 1);
+      if (viewPhase === 'active') {
+        if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
+          onNavigateQuestion(currentQuestionIndex - 1);
+        } else if (e.key === 'ArrowRight' && currentQuestionIndex < questions.length - 1) {
+          onNavigateQuestion(currentQuestionIndex + 1);
+        }
+      } else if (viewPhase === 'review') {
+        if (e.key === 'ArrowLeft' && reviewIndex > 0) {
+          setReviewIndex((prev) => prev - 1);
+        } else if (e.key === 'ArrowRight' && reviewIndex < questions.length - 1) {
+          setReviewIndex((prev) => prev + 1);
+        }
       }
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [isFinished, showExitConfirm, showSubmitConfirm, zoomSvg, currentQuestionIndex, questions.length, onNavigateQuestion]);
+  }, [
+    viewPhase,
+    showExitConfirm,
+    showSubmitConfirm,
+    zoomSvg,
+    currentQuestionIndex,
+    reviewIndex,
+    questions.length,
+    onNavigateQuestion,
+  ]);
 
   const formatTimer = (totalSecs: number) => {
     const mins = Math.floor(totalSecs / 60);
@@ -425,26 +488,12 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
   const handleFinishDrilling = () => {
     setShowSubmitConfirm(false);
-    setIsFinished(true);
+    setViewPhase('summary');
+    setReviewIndex(0);
+    setIsReviewPaletteOpen(false);
+    setReviewFilter('all');
     recordQuestionsSeen(questions.map((q) => q.example_id));
-    // Auto-open first incorrect question in review
-    const firstWrong = questions.find((q) => !isAnswerCorrect(q, answers[q.example_id]));
-    if (firstWrong) {
-      setOpenReviews(new Set([firstWrong.example_id]));
-    }
     window.scrollTo({ top: 0, behavior: 'instant' });
-  };
-
-  const toggleReviewSolution = (exampleId: string) => {
-    setOpenReviews((prev) => {
-      const next = new Set(prev);
-      if (next.has(exampleId)) {
-        next.delete(exampleId);
-      } else {
-        next.add(exampleId);
-      }
-      return next;
-    });
   };
 
   const correctCount = questions.filter((q) =>
@@ -468,18 +517,6 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
         return true;
       });
   }, [questions, answers, reviewFilter]);
-
-  const allFilteredOpen =
-    filteredReviewItems.length > 0 &&
-    filteredReviewItems.every((item) => openReviews.has(item.q.example_id));
-
-  const toggleAllReviews = () => {
-    if (allFilteredOpen) {
-      setOpenReviews(new Set());
-    } else {
-      setOpenReviews(new Set(filteredReviewItems.map((item) => item.q.example_id)));
-    }
-  };
 
   // Shared SVG Zoom Modal
   const renderZoomModal = () =>
@@ -520,23 +557,22 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
     );
 
   // -------------------------------------------------------------
-  // VIEW: RESULTS SUMMARY (When isFinished === true)
+  // VIEW 1: RESULTS SUMMARY ONLY (Skor Saja + Tombol Pembahasan)
   // -------------------------------------------------------------
-  if (isFinished) {
+  if (viewPhase === 'summary') {
     const wrongAnsweredCount = questions.filter(
       (q) => hasPartialAnswer(q) && !isAnswerCorrect(q, answers[q.example_id])
     ).length;
     const unansweredCount = totalQuestions - questions.filter((q) => hasPartialAnswer(q)).length;
 
     return (
-      <div className="w-full max-w-3xl mx-auto space-y-6 pb-20 animate-page-enter">
-        {/* Results Header Card */}
+      <div className="w-full max-w-2xl mx-auto py-4 sm:py-8 animate-page-enter">
         <div
-          className={`rounded-3xl border p-6 sm:p-8 text-center shadow-xs transition-colors ${
+          className={`rounded-3xl border p-5 sm:p-8 text-center shadow-sm transition-colors ${
             isVelvet
               ? 'bg-[#2B1723] border-[#EB8A78]/35'
               : isPrism
-              ? 'bg-white/88 border-white/95'
+              ? 'bg-white/90 border-white/95'
               : 'bg-white dark:bg-[#0c1326] border-stone-200 dark:border-slate-800'
           }`}
         >
@@ -553,12 +589,16 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-[#FBF1F2] tracking-tight">
             Sesi Drilling Selesai!
           </h2>
-          <p className="text-sm sm:text-[15px] text-slate-500 dark:text-slate-400 mt-1">
-            Ringkasan evaluasi dan pembahasan rinci hasil latihan Anda.
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+            {accuracy >= 80
+              ? 'Hasil yang sangat kuat! Periksa pembahasan untuk mengunci konsep.'
+              : accuracy >= 50
+              ? 'Progres bagus! Buka pembahasan untuk menambal soal yang keliru.'
+              : 'Setiap soal adalah bahan evaluasi. Pelajari pembahasan satu per satu.'}
           </p>
 
           {/* Score Cards Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 my-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 my-6">
             <div
               className={`p-3.5 rounded-2xl border ${
                 isVelvet
@@ -569,7 +609,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               <div className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
                 Akurasi
               </div>
-              <div className={`text-xl sm:text-2xl font-black mt-1 ${isVelvet ? 'text-[#FF8A6B]' : 'text-indigo-600 dark:text-cyan-400'}`}>
+              <div className={`text-2xl font-black mt-1 ${isVelvet ? 'text-[#FF8A6B]' : 'text-indigo-600 dark:text-cyan-400'}`}>
                 {accuracy}%
               </div>
             </div>
@@ -577,7 +617,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               <div className="text-xs font-bold uppercase tracking-wide text-emerald-800 dark:text-emerald-300">
                 Benar
               </div>
-              <div className="text-xl sm:text-2xl font-black text-emerald-700 dark:text-emerald-300 mt-1">
+              <div className="text-2xl font-black text-emerald-700 dark:text-emerald-300 mt-1">
                 {correctCount} / {totalQuestions}
               </div>
             </div>
@@ -591,7 +631,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               <div className="text-xs font-bold uppercase tracking-wide text-rose-800 dark:text-rose-200">
                 Salah / Kosong
               </div>
-              <div className="text-xl sm:text-2xl font-black text-rose-700 dark:text-rose-300 mt-1">
+              <div className="text-2xl font-black text-rose-700 dark:text-rose-300 mt-1">
                 {totalQuestions - correctCount}
               </div>
             </div>
@@ -605,7 +645,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               <div className="text-xs font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
                 Durasi
               </div>
-              <div className="text-xl sm:text-2xl font-black text-slate-700 dark:text-slate-200 mt-1">
+              <div className="text-2xl font-black text-slate-700 dark:text-slate-200 mt-1">
                 {timerMinutes
                   ? formatTimer(initialSeconds - secondsRemaining)
                   : formatTimer(secondsElapsed)}
@@ -613,431 +653,678 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
             </div>
           </div>
 
-          {/* Action buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          {/* Detail Breakdown Strip */}
+          <div className="flex items-center justify-center gap-3 text-xs font-semibold text-slate-500 dark:text-slate-400 mb-6 flex-wrap">
+            <span className="inline-flex items-center gap-1 text-emerald-700 dark:text-emerald-400">
+              <CheckCircle2 className="w-3.5 h-3.5" /> {correctCount} Benar
+            </span>
+            <span>•</span>
+            <span className="inline-flex items-center gap-1 text-rose-600 dark:text-rose-400">
+              <XCircle className="w-3.5 h-3.5" /> {wrongAnsweredCount} Salah
+            </span>
+            <span>•</span>
+            <span>{unansweredCount} Kosong</span>
+          </div>
+
+          {/* Action Buttons: Prominent Pembahasan CTA + Secondary Controls */}
+          <div className="space-y-2.5">
             <button
               type="button"
-              onClick={onExitDrilling}
-              className={`w-full sm:w-auto px-6 py-2.5 rounded-2xl font-bold text-xs sm:text-sm shadow-md transition active:scale-95 cursor-pointer ${
+              onClick={() => {
+                setReviewIndex(0);
+                setReviewFilter('all');
+                setIsReviewPaletteOpen(false);
+                setViewPhase('review');
+              }}
+              className={`w-full px-6 py-3.5 rounded-2xl font-bold text-sm sm:text-base shadow-md transition active:scale-[0.98] cursor-pointer flex items-center justify-center gap-2 ${
                 isVelvet
-                  ? 'bg-gradient-to-r from-[#FF8A6B] to-[#F5B041] text-[#1E0F17] font-extrabold'
+                  ? 'bg-gradient-to-r from-[#FF8A6B] to-[#F5B041] text-[#1E0F17] font-extrabold shadow-[0_0_20px_rgba(255,138,107,0.3)]'
                   : isPrism
                   ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white'
                   : 'bg-indigo-600 dark:bg-gradient-to-r dark:from-blue-600 dark:to-cyan-500 hover:bg-indigo-700 text-white'
               }`}
             >
-              Kembali ke Daftar Subtes
+              <BookOpen className="w-4.5 h-4.5" />
+              <span>Lihat Pembahasan ({totalQuestions} Soal)</span>
+              <ArrowRight className="w-4.5 h-4.5" />
             </button>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <button
+                type="button"
+                onClick={() => {
+                  setAnswers({});
+                  setFlaggedIndices(new Set());
+                  setReviewFilter('all');
+                  setViewPhase('active');
+                  setReviewIndex(0);
+                  setSecondsRemaining(initialSeconds);
+                  setSecondsElapsed(0);
+                  onNavigateQuestion(0);
+                }}
+                className="w-full px-5 py-2.5 rounded-2xl bg-white dark:bg-slate-800 hover:bg-stone-50 dark:hover:bg-slate-700 border border-stone-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs sm:text-sm transition cursor-pointer flex items-center justify-center gap-2"
+              >
+                <RotateCcw className="w-4 h-4 text-slate-500 dark:text-slate-400" />
+                <span>Ulangi Sesi Ini</span>
+              </button>
+              <button
+                type="button"
+                onClick={onExitDrilling}
+                className="w-full px-5 py-2.5 rounded-2xl bg-stone-100 dark:bg-slate-900 hover:bg-stone-200 dark:hover:bg-slate-800 border border-stone-200/80 dark:border-slate-800 text-slate-700 dark:text-slate-300 font-bold text-xs sm:text-sm transition cursor-pointer"
+              >
+                Kembali ke Daftar Subtes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // -------------------------------------------------------------
+  // VIEW 2: QUESTION-BY-QUESTION REVIEW (1 Soal per Halaman + Highlight)
+  // -------------------------------------------------------------
+  if (viewPhase === 'review') {
+    const q = questions[reviewIndex] || questions[0];
+    const userAnswer = answers[q.example_id];
+    const isCorrect = isAnswerCorrect(q, userAnswer);
+    const isAnswered = hasPartialAnswer(q);
+    const isReviewStimulusCollapsed = Boolean(collapsedStimuli[`rev_${q.example_id}`]);
+    const isReviewLongStimulus = (q.context_markdown?.length || 0) > 450;
+
+    let userAnswerLabel = 'Tidak Dijawab';
+    let keyAnswerLabel = String(q.correct_answer || '-');
+
+    if (isAnswered) {
+      if (q.question_type === 'short_answer') {
+        userAnswerLabel = String(userAnswer);
+      } else if (q.question_type === 'mc_complex_table' && q.complex_statements) {
+        const ansMap = (userAnswer || {}) as Record<string, string>;
+        const col0 = (q.table_headers || ['Benar', 'Salah'])[0];
+        const col1 = (q.table_headers || ['Benar', 'Salah'])[1];
+        const rowRight = q.complex_statements.filter((stmt) => {
+          const correctChoice = stmt.is_true ? col0 : col1;
+          return ansMap[stmt.id] === correctChoice;
+        }).length;
+        userAnswerLabel = `${rowRight}/${q.complex_statements.length} Tepat`;
+        keyAnswerLabel = q.complex_statements
+          .map((stmt, rIdx) => `${rIdx + 1}. ${stmt.is_true ? col0 : col1}`)
+          .join(', ');
+      } else if (q.question_type === 'mc_complex_checkbox') {
+        userAnswerLabel = Array.isArray(userAnswer)
+          ? [...userAnswer].sort().join(', ')
+          : String(userAnswer);
+      } else {
+        userAnswerLabel = String(userAnswer);
+      }
+    } else if (q.question_type === 'mc_complex_table' && q.complex_statements) {
+      const col0 = (q.table_headers || ['Benar', 'Salah'])[0];
+      const col1 = (q.table_headers || ['Benar', 'Salah'])[1];
+      keyAnswerLabel = q.complex_statements
+        .map((stmt, rIdx) => `${rIdx + 1}. ${stmt.is_true ? col0 : col1}`)
+        .join(', ');
+    }
+
+    if (q.question_type === 'short_answer') {
+      keyAnswerLabel = String(q.short_answer_key ?? q.correct_answer ?? '-');
+    }
+
+    const wrongAnsweredCount = questions.filter(
+      (item) => hasPartialAnswer(item) && !isAnswerCorrect(item, answers[item.example_id])
+    ).length;
+    const unansweredCount = totalQuestions - questions.filter((item) => hasPartialAnswer(item)).length;
+
+    return (
+      <div className="w-full max-w-4xl mx-auto pb-28 animate-page-enter">
+        {/* 1. STICKY TOP REVIEW BAR */}
+        <div
+          className={`sticky top-0 z-30 backdrop-blur-md rounded-2xl border shadow-sm p-2.5 sm:p-3.5 mb-3 sm:mb-4 transition-all duration-300 ${
+            isVelvet
+              ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/30'
+              : isCosmic
+              ? 'bg-[#0c1224]/90 border-cyan-500/25'
+              : isPrism
+              ? 'bg-white/85 border-white/95'
+              : 'bg-white/95 border-stone-200/90'
+          }`}
+        >
+          <div className="flex items-center justify-between gap-2">
             <button
               type="button"
-              onClick={() => {
-                setAnswers({});
-                setFlaggedIndices(new Set());
-                setOpenReviews(new Set());
-                setReviewFilter('all');
-                setIsFinished(false);
-                setSecondsRemaining(initialSeconds);
-                setSecondsElapsed(0);
-                onNavigateQuestion(0);
-              }}
-              className="w-full sm:w-auto px-6 py-2.5 rounded-2xl bg-white dark:bg-slate-800 hover:bg-stone-50 dark:hover:bg-slate-700 border border-stone-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs sm:text-sm transition cursor-pointer flex items-center justify-center gap-2"
+              onClick={() => setViewPhase('summary')}
+              className="flex items-center gap-1 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white py-1.5 px-2 rounded-xl hover:bg-stone-100 dark:hover:bg-slate-800 transition cursor-pointer shrink-0"
             >
-              <RotateCcw className="w-4 h-4 text-slate-500 dark:text-slate-400" />
-              <span>Ulangi Sesi Ini</span>
+              <ChevronLeft className="w-4 h-4 text-slate-400" />
+              <span>Skor</span>
             </button>
+
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 whitespace-nowrap">
+                Pembahasan {reviewIndex + 1} <span className="text-slate-400 font-normal">/ {totalQuestions}</span>
+              </span>
+              {isCorrect ? (
+                <span className="px-2 py-0.5 rounded-lg text-[11px] font-bold bg-emerald-100 dark:bg-emerald-950/90 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/60 flex items-center gap-1 shrink-0">
+                  <CheckCircle2 className="w-3 h-3" />
+                  <span>Benar</span>
+                </span>
+              ) : (
+                <span
+                  className={`px-2 py-0.5 rounded-lg text-[11px] font-bold border flex items-center gap-1 shrink-0 ${
+                    isVelvet
+                      ? 'bg-[#4A121D] text-rose-200 border-rose-400/70'
+                      : 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-600/70'
+                  }`}
+                >
+                  <XCircle className="w-3 h-3" />
+                  <span>{isAnswered ? 'Salah' : 'Kosong'}</span>
+                </span>
+              )}
+            </div>
+
+            <div className="flex items-center gap-1.5 shrink-0">
+              <button
+                type="button"
+                onClick={() => setIsReviewPaletteOpen((prev) => !prev)}
+                className={`px-2.5 py-1.5 rounded-xl border text-xs sm:text-sm font-bold flex items-center gap-1.5 cursor-pointer transition ${
+                  isReviewPaletteOpen
+                    ? isVelvet
+                      ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
+                      : 'bg-indigo-600 dark:bg-cyan-500 text-white dark:text-slate-950 border-transparent'
+                    : isVelvet
+                    ? 'border-[#EB8A78]/30 text-[#FBF1F2] hover:bg-[#3A1F30]'
+                    : 'border-stone-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-stone-100 dark:hover:bg-slate-800'
+                }`}
+                title="Daftar Nomor Pembahasan"
+                aria-expanded={isReviewPaletteOpen}
+              >
+                <LayoutGrid className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">Daftar</span>
+              </button>
+
+              <ThemeToggle theme={theme} onSelectTheme={onSelectTheme} size="sm" />
+            </div>
+          </div>
+
+          <div className={`w-full h-1.5 rounded-full overflow-hidden mt-2 ${isVelvet ? 'bg-[#381C2C]' : 'bg-stone-100 dark:bg-slate-800'}`}>
+            <div
+              className={`h-full transition-all duration-300 ${
+                isVelvet
+                  ? 'bg-[#FF8A6B]'
+                  : isPrism
+                  ? 'bg-gradient-to-r from-blue-600 to-sky-500'
+                  : 'bg-indigo-600 dark:bg-cyan-400'
+              }`}
+              style={{ width: `${((reviewIndex + 1) / totalQuestions) * 100}%` }}
+            />
           </div>
         </div>
 
-        {/* Review Toolbar: Title, Filter Pills, Expand All */}
-        <div className="space-y-3">
-          <div className="flex flex-wrap items-center justify-between gap-2 px-1">
-            <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
-              <BookOpen className="w-4.5 h-4.5 text-indigo-600 dark:text-cyan-400" />
-              <span>Pembahasan Rinci Per Nomor Soal</span>
-            </h3>
+        {/* Review Question Palette Drawer */}
+        {isReviewPaletteOpen && (
+          <div
+            className={`mb-3 sm:mb-4 rounded-2xl border p-3.5 sm:p-4 shadow-md space-y-3 ${
+              isVelvet
+                ? 'bg-[#2B1723] border-[#EB8A78]/35'
+                : isPrism
+                ? 'bg-white/92 border-white/95'
+                : 'bg-white dark:bg-[#0c1326] border-stone-200 dark:border-slate-800'
+            }`}
+          >
+            <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-stone-100 dark:border-slate-800">
+              <div className="flex items-center gap-1.5 flex-wrap">
+                {[
+                  { id: 'all' as ReviewFilter, label: `Semua (${totalQuestions})` },
+                  { id: 'wrong' as ReviewFilter, label: `Salah (${wrongAnsweredCount})` },
+                  { id: 'correct' as ReviewFilter, label: `Benar (${correctCount})` },
+                  { id: 'unanswered' as ReviewFilter, label: `Kosong (${unansweredCount})` },
+                ].map((tab) => (
+                  <button
+                    key={tab.id}
+                    type="button"
+                    onClick={() => setReviewFilter(tab.id)}
+                    className={`px-2.5 py-1 rounded-lg text-[11px] font-bold border transition cursor-pointer ${
+                      reviewFilter === tab.id
+                        ? isVelvet
+                          ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
+                          : 'bg-indigo-600 dark:bg-cyan-500 text-white dark:text-slate-950 border-transparent'
+                        : isVelvet
+                        ? 'bg-[#1F1020] text-[#EBD6DC] border-[#EB8A78]/25'
+                        : 'bg-stone-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-700'
+                    }`}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsReviewPaletteOpen(false)}
+                className="text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 cursor-pointer"
+              >
+                Tutup
+              </button>
+            </div>
+
+            {filteredReviewItems.length === 0 ? (
+              <p className="text-xs text-slate-500 dark:text-slate-400 text-center py-2">
+                Tidak ada soal pada kategori filter ini.
+              </p>
+            ) : (
+              <div className="grid grid-cols-5 sm:grid-cols-10 gap-2">
+                {filteredReviewItems.map((item) => {
+                  const isCurrent = item.idx === reviewIndex;
+                  let badgeClass = !item.isAnswered
+                    ? 'bg-stone-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-700'
+                    : item.isCorrect
+                    ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700 font-bold'
+                    : 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-700 font-bold';
+
+                  if (isCurrent) {
+                    badgeClass += isVelvet
+                      ? ' ring-2 ring-[#FFBE98]'
+                      : ' ring-2 ring-indigo-500 dark:ring-cyan-400';
+                  }
+
+                  return (
+                    <button
+                      key={item.q.example_id}
+                      type="button"
+                      onClick={() => {
+                        setReviewIndex(item.idx);
+                        setIsReviewPaletteOpen(false);
+                      }}
+                      className={`h-9 rounded-xl border text-xs font-mono transition flex items-center justify-center cursor-pointer ${badgeClass}`}
+                    >
+                      {item.idx + 1}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* 2. SINGLE-QUESTION REVIEW CARD */}
+        <div
+          className={`rounded-2xl sm:rounded-3xl border shadow-sm px-3 py-4 sm:p-6 space-y-4 sm:space-y-5 transition-colors ${
+            isVelvet
+              ? 'bg-[#2B1723] border-[#EB8A78]/35'
+              : isPrism
+              ? 'bg-white/90 border-white/95'
+              : 'bg-white dark:bg-[#0c1326] border-stone-200/90 dark:border-slate-800'
+          }`}
+        >
+          {/* Tags Row */}
+          <div className={`flex flex-wrap items-center justify-between gap-2 pb-3 border-b ${isVelvet ? 'border-[#EB8A78]/20' : 'border-stone-100 dark:border-slate-800'}`}>
+            <div className="flex flex-wrap items-center gap-1.5 min-w-0">
+              <span
+                className={`text-xs font-bold px-2.5 py-1 rounded-lg border ${
+                  isVelvet
+                    ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/40'
+                    : 'text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/70 border-indigo-200/80 dark:border-cyan-800/60'
+                }`}
+              >
+                {q.subtest_code ? `${q.subtest_code} • ` : ''}
+                {q.variation_name}
+              </span>
+              <span className="text-xs font-mono font-semibold px-2 py-1 rounded-lg bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200/80 dark:border-slate-700">
+                {getQuestionTypeBadgeLabel(q)}
+              </span>
+              <span
+                className={`text-xs font-mono font-bold px-2 py-1 rounded-lg border ${
+                  getLevelBadgeLabel(q) === 'HOTS'
+                    ? 'bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800/70'
+                    : 'bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/70'
+                }`}
+              >
+                {getLevelBadgeLabel(q)}
+              </span>
+            </div>
+          </div>
+
+          {/* Highlighted Answer Comparison Strip */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <div
+              className={`px-3.5 py-2.5 rounded-xl border flex items-center justify-between gap-2 text-xs sm:text-sm ${
+                !isAnswered
+                  ? isVelvet
+                    ? 'bg-[#22121D] border-[#EB8A78]/25 text-[#C9A9B0]'
+                    : 'bg-stone-50 dark:bg-slate-900 border-stone-200 dark:border-slate-800 text-slate-600 dark:text-slate-300'
+                  : isCorrect
+                  ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 text-emerald-900 dark:text-emerald-200'
+                  : 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-900 dark:text-rose-200'
+              }`}
+            >
+              <span className="font-semibold opacity-80">Jawaban Anda</span>
+              <span className="font-extrabold">{userAnswerLabel}</span>
+            </div>
+
+            <div className="px-3.5 py-2.5 rounded-xl border bg-emerald-50 dark:bg-emerald-950/70 border-emerald-400/70 dark:border-emerald-600 text-emerald-900 dark:text-emerald-200 flex items-center justify-between gap-2 text-xs sm:text-sm">
+              <span className="font-semibold flex items-center gap-1">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Kunci Jawaban</span>
+              </span>
+              <span className="font-black text-emerald-700 dark:text-emerald-300">{keyAnswerLabel}</span>
+            </div>
+          </div>
+
+          {/* Stimulus / Context */}
+          {q.context_markdown && (
+            <div
+              className={`p-3 sm:p-4 rounded-xl border border-l-4 text-[15px] sm:text-base leading-[1.8] ${
+                isVelvet
+                  ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B] text-[#FBF1F2]'
+                  : 'bg-stone-50/90 dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 border-l-slate-400 dark:border-l-slate-600 text-slate-800 dark:text-slate-200'
+              }`}
+            >
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <span className="inline-flex items-center gap-1.5 text-xs font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>Wacana / Stimulus</span>
+                </span>
+                {isReviewLongStimulus && (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setCollapsedStimuli((prev) => ({
+                        ...prev,
+                        [`rev_${q.example_id}`]: !prev[`rev_${q.example_id}`],
+                      }))
+                    }
+                    className="text-xs font-semibold text-indigo-600 dark:text-cyan-400 hover:underline cursor-pointer flex items-center gap-1"
+                  >
+                    <span>{isReviewStimulusCollapsed ? 'Tampilkan' : 'Sembunyikan'}</span>
+                    {isReviewStimulusCollapsed ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronUp className="w-3.5 h-3.5" />}
+                  </button>
+                )}
+              </div>
+              {!isReviewStimulusCollapsed && <MemoDrillingMarkdown text={q.context_markdown} />}
+            </div>
+          )}
+
+          {/* SVG Illustration in Review */}
+          {q.svg_illustration?.svg_code && (
+            <div className="rounded-xl border border-stone-200 dark:border-slate-700 bg-white p-2.5 sm:p-4 overflow-hidden">
+              <VisualRenderer
+                visual={{ tipe: 'svg', kode: q.svg_illustration.svg_code }}
+                onZoom={setZoomSvg}
+                className="my-0"
+              />
+            </div>
+          )}
+
+          {/* Question text */}
+          <div className="text-[15px] sm:text-base font-normal text-slate-900 dark:text-slate-100 leading-[1.8]">
+            <MemoDrillingMarkdown text={q.question_markdown} />
+          </div>
+
+          {/* Answer Review for Complex Table */}
+          {q.question_type === 'mc_complex_table' && q.complex_statements && (
+            <div className="w-full overflow-x-auto rounded-2xl border border-stone-200 dark:border-slate-800 shadow-2xs">
+              <table className="w-full text-left border-collapse text-sm sm:text-[15px]">
+                <thead>
+                  <tr className="bg-stone-50 dark:bg-slate-900 border-b border-stone-200 dark:border-slate-800 text-xs sm:text-sm">
+                    <th className="px-2.5 py-2.5 sm:p-3 font-bold">Pernyataan</th>
+                    <th className="px-2 py-2.5 sm:p-3 text-center font-bold w-16 sm:w-24">Anda</th>
+                    <th className="px-2 py-2.5 sm:p-3 text-center font-bold text-emerald-600 dark:text-emerald-400 w-16 sm:w-24">Kunci</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-100 dark:divide-slate-800">
+                  {q.complex_statements.map((stmt) => {
+                    const ansMap = (userAnswer || {}) as Record<string, string>;
+                    const userChoice = ansMap[stmt.id] || '-';
+                    const col0 = (q.table_headers || ['Benar', 'Salah'])[0];
+                    const col1 = (q.table_headers || ['Benar', 'Salah'])[1];
+                    const correctChoice = stmt.is_true ? col0 : col1;
+                    const isRowCorrect = userChoice === correctChoice;
+
+                    return (
+                      <tr key={stmt.id} className="hover:bg-stone-50/50 dark:hover:bg-slate-800/40">
+                        <td className="px-2.5 py-2.5 sm:p-3 text-[15px] text-slate-800 dark:text-slate-200 leading-[1.7]">
+                          <MemoDrillingMarkdown text={stmt.statement_markdown} />
+                        </td>
+                        <td className={`px-2 py-2.5 sm:p-3 text-center font-bold text-xs sm:text-sm ${isRowCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                          {userChoice}
+                        </td>
+                        <td className="px-2 py-2.5 sm:p-3 text-center font-extrabold text-xs sm:text-sm text-emerald-600 dark:text-emerald-400">
+                          {correctChoice}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          {/* Answer Review for Complex Checkbox */}
+          {q.question_type === 'mc_complex_checkbox' && (
+            <div className="space-y-2">
+              {(q.complex_statements && q.complex_statements.length > 0
+                ? q.complex_statements.map((s) => ({
+                    id: s.id,
+                    text: s.statement_markdown,
+                    is_correct: s.is_true,
+                  }))
+                : (q.options || []).map((o) => ({
+                    id: o.key,
+                    text: o.text_markdown,
+                    is_correct: String(q.correct_answer || '')
+                      .split(/[,;\s]+/)
+                      .map((k) => k.trim().toUpperCase())
+                      .includes(o.key.toUpperCase()),
+                  }))
+              ).map((item) => {
+                const userSelectedList: string[] = Array.isArray(userAnswer) ? userAnswer : [];
+                const wasSelected = userSelectedList.includes(item.id);
+
+                return (
+                  <div
+                    key={item.id}
+                    className={`p-3 sm:p-3.5 rounded-xl border flex items-start gap-2.5 ${
+                      item.is_correct
+                        ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 text-emerald-950 dark:text-emerald-100'
+                        : wasSelected
+                        ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-950 dark:text-rose-100'
+                        : 'bg-white dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 text-slate-700 dark:text-slate-300'
+                    }`}
+                  >
+                    <span className="font-mono font-bold text-xs shrink-0 mt-1 px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
+                      {item.id}
+                    </span>
+                    <div className="flex-1 text-[15px] sm:text-base leading-[1.75]">
+                      <MemoDrillingMarkdown text={item.text} />
+                    </div>
+                    <div className="shrink-0 flex flex-col items-end gap-1 text-xs font-bold">
+                      {wasSelected && (
+                        <span className="px-2 py-0.5 rounded bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+                          Dipilih
+                        </span>
+                      )}
+                      {item.is_correct && (
+                        <span className="text-emerald-700 dark:text-emerald-400">✓ Kunci</span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Answer Review for Standard Multiple Choice */}
+          {q.question_type !== 'mc_complex_table' &&
+            q.question_type !== 'mc_complex_checkbox' &&
+            q.question_type !== 'short_answer' && (
+              <div className="space-y-2">
+                {(q.options || []).map((opt) => {
+                  const isKeyOpt = opt.key === q.correct_answer;
+                  const isUserOpt = opt.key === userAnswer;
+                  return (
+                    <div
+                      key={opt.key}
+                      className={`p-3 sm:p-3.5 rounded-xl border flex items-start gap-2.5 ${
+                        isKeyOpt
+                          ? 'bg-emerald-50 dark:bg-emerald-950/65 border-emerald-400 dark:border-emerald-600 text-emerald-950 dark:text-emerald-100 ring-1 ring-emerald-400/50'
+                          : isUserOpt
+                          ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-950 dark:text-rose-100'
+                          : isVelvet
+                          ? 'bg-[#22121D] border-[#EB8A78]/20 text-[#EBD6DC]'
+                          : 'bg-white dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 text-slate-700 dark:text-slate-300'
+                      }`}
+                    >
+                      <span
+                        className={`w-6 h-6 rounded-md font-mono font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 ${
+                          isKeyOpt
+                            ? 'bg-emerald-600 text-white'
+                            : isUserOpt
+                            ? 'bg-rose-600 text-white'
+                            : 'bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300'
+                        }`}
+                      >
+                        {opt.key}
+                      </span>
+                      <div className="flex-1 text-[15px] sm:text-base leading-[1.75]">
+                        <MemoDrillingMarkdown text={opt.text_markdown} />
+                      </div>
+                      {isKeyOpt && (
+                        <span className="shrink-0 text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-600 text-white">
+                          ✓ Kunci
+                        </span>
+                      )}
+                      {!isKeyOpt && isUserOpt && (
+                        <span className="shrink-0 text-[11px] font-bold px-2 py-0.5 rounded bg-rose-600 text-white">
+                          Pilihanmu
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+          {/* HIGHLIGHTED PEMBAHASAN LENGKAP */}
+          <div
+            className={`p-3.5 sm:p-5 rounded-2xl border border-l-4 space-y-2.5 shadow-2xs ${
+              isVelvet
+                ? 'bg-[#22121D] border-[#EB8A78]/30 border-l-[#FF8A6B] text-[#FBF1F2]'
+                : 'bg-indigo-50/70 dark:bg-[#0f1a34] border-indigo-200/80 dark:border-cyan-800/60 border-l-indigo-600 dark:border-l-cyan-400 text-slate-800 dark:text-slate-200'
+            }`}
+          >
+            <div className="flex items-center justify-between gap-2">
+              <span
+                className={`inline-flex items-center gap-1.5 font-extrabold text-xs uppercase tracking-wider px-2.5 py-1 rounded-lg ${
+                  isVelvet
+                    ? 'bg-[#4A222B] text-[#FFBE98]'
+                    : 'bg-indigo-100 dark:bg-cyan-950 text-indigo-800 dark:text-cyan-300'
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Inti Pembahasan</span>
+              </span>
+            </div>
+            <div className="text-[15px] sm:text-base leading-[1.8]">
+              <MemoReviewMarkdown text={q.conceptual_solution_markdown} isVelvet={isVelvet} />
+            </div>
+          </div>
+
+          {/* HIGHLIGHTED TRIK CEPAT */}
+          {q.quick_trick_markdown && (
+            <div
+              className={`p-3.5 sm:p-5 rounded-2xl border border-l-4 space-y-2 shadow-2xs ${
+                isVelvet
+                  ? 'bg-[#361D1E] border-[#F5B041]/40 border-l-[#F5B041] text-[#FBF1F2]'
+                  : 'bg-amber-50/90 dark:bg-amber-950/45 border-amber-300/80 dark:border-amber-700/70 border-l-amber-500 text-amber-950 dark:text-amber-100'
+              }`}
+            >
+              <span
+                className={`inline-flex items-center gap-1.5 font-extrabold text-xs uppercase tracking-wider px-2.5 py-1 rounded-lg ${
+                  isVelvet
+                    ? 'bg-[#482E1A] text-[#F5B041]'
+                    : 'bg-amber-200/80 dark:bg-amber-900/70 text-amber-900 dark:text-amber-200'
+                }`}
+              >
+                ⚡ Trik Cepat / Eliminasi Kilat
+              </span>
+              <div className="text-[15px] sm:text-base leading-[1.8]">
+                <MemoReviewMarkdown text={q.quick_trick_markdown} isVelvet={isVelvet} />
+              </div>
+            </div>
+          )}
+
+          {/* Optional Hint */}
+          {q.hint_markdown && (
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-stone-50 dark:bg-slate-900/80 border border-stone-200/90 dark:border-slate-800 text-slate-700 dark:text-slate-200 space-y-1.5">
+              <div className="font-bold text-xs uppercase tracking-wider text-amber-700 dark:text-amber-300 flex items-center gap-1.5">
+                <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
+                <span>Petunjuk Soal</span>
+              </div>
+              <div className="text-[15px] sm:text-base leading-[1.8]">
+                <MemoReviewMarkdown text={q.hint_markdown} isVelvet={isVelvet} />
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* 3. STICKY BOTTOM REVIEW NAVIGATION BAR (Mirroring Active Drilling) */}
+        <div
+          className={`fixed bottom-0 left-0 right-0 z-40 backdrop-blur-md border-t shadow-2xl p-2.5 sm:p-3.5 transition-all duration-300 ${
+            isVelvet
+              ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/30'
+              : isCosmic
+              ? 'bg-[#0c1224]/90 border-cyan-500/30'
+              : isPrism
+              ? 'bg-white/85 border-white/95'
+              : 'bg-white/95 border-stone-200/90'
+          }`}
+        >
+          <div className="max-w-4xl mx-auto flex items-center justify-between gap-2 sm:gap-3">
+            <button
+              type="button"
+              disabled={reviewIndex === 0}
+              onClick={() => setReviewIndex((prev) => Math.max(0, prev - 1))}
+              className={`px-3.5 sm:px-4 py-2.5 rounded-xl border font-semibold text-xs sm:text-sm disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5 transition cursor-pointer shadow-2xs ${
+                isVelvet
+                  ? 'border-[#EB8A78]/30 bg-[#2B1723] text-[#FBF1F2] hover:bg-[#3A1F30]'
+                  : 'border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-stone-50 dark:hover:bg-slate-700'
+              }`}
+            >
+              <ChevronLeft className="w-4 h-4" />
+              <span>Sebelumnya</span>
+            </button>
 
             <button
               type="button"
-              onClick={toggleAllReviews}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-stone-50 dark:hover:bg-slate-700 transition cursor-pointer"
+              onClick={() => setViewPhase('summary')}
+              className="px-3.5 sm:px-4 py-2.5 rounded-xl bg-slate-800 dark:bg-slate-700 hover:bg-slate-900 dark:hover:bg-slate-600 text-white font-bold text-xs sm:text-sm transition cursor-pointer shadow-xs"
             >
-              <ChevronsUpDown className="w-3.5 h-3.5" />
-              <span>{allFilteredOpen ? 'Tutup Semua' : 'Buka Semua'}</span>
+              Ringkasan Skor
             </button>
-          </div>
 
-          <div className="flex items-center gap-2 flex-wrap px-1">
-            {[
-              { id: 'all' as ReviewFilter, label: `Semua (${totalQuestions})` },
-              { id: 'wrong' as ReviewFilter, label: `Salah (${wrongAnsweredCount})` },
-              { id: 'correct' as ReviewFilter, label: `Benar (${correctCount})` },
-              { id: 'unanswered' as ReviewFilter, label: `Kosong (${unansweredCount})` },
-            ].map((tab) => {
-              const active = reviewFilter === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => setReviewFilter(tab.id)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition cursor-pointer ${
-                    active
-                      ? isVelvet
-                        ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
-                        : 'bg-indigo-600 dark:bg-cyan-500 text-white dark:text-slate-950 border-transparent'
-                      : isVelvet
-                      ? 'bg-[#2B1723] text-[#EBD6DC] border-[#EB8A78]/30 hover:bg-[#3A1F31]'
-                      : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-700 hover:bg-stone-50 dark:hover:bg-slate-800'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Detailed Question Review List */}
-          <div className="space-y-4">
-            {filteredReviewItems.map(({ q, idx, isCorrect, isAnswered }) => {
-              const userAnswer = answers[q.example_id];
-              const isReviewOpen = openReviews.has(q.example_id);
-
-              let userAnswerLabel = 'Tidak Dijawab';
-              let keyAnswerLabel = String(q.correct_answer || '-');
-
-              if (isAnswered) {
-                if (q.question_type === 'short_answer') {
-                  userAnswerLabel = String(userAnswer);
-                } else if (q.question_type === 'mc_complex_table' && q.complex_statements) {
-                  const ansMap = (userAnswer || {}) as Record<string, string>;
-                  const col0 = (q.table_headers || ['Benar', 'Salah'])[0];
-                  const col1 = (q.table_headers || ['Benar', 'Salah'])[1];
-                  const rowRight = q.complex_statements.filter((stmt) => {
-                    const correctChoice = stmt.is_true ? col0 : col1;
-                    return ansMap[stmt.id] === correctChoice;
-                  }).length;
-                  userAnswerLabel = `${rowRight}/${q.complex_statements.length} Pernyataan Tepat`;
-                  keyAnswerLabel = q.complex_statements
-                    .map((stmt, rIdx) => `${rIdx + 1}. ${stmt.is_true ? col0 : col1}`)
-                    .join(', ');
-                } else if (q.question_type === 'mc_complex_checkbox') {
-                  userAnswerLabel = Array.isArray(userAnswer)
-                    ? [...userAnswer].sort().join(', ')
-                    : String(userAnswer);
-                } else {
-                  userAnswerLabel = String(userAnswer);
-                }
-              } else if (q.question_type === 'mc_complex_table' && q.complex_statements) {
-                const col0 = (q.table_headers || ['Benar', 'Salah'])[0];
-                const col1 = (q.table_headers || ['Benar', 'Salah'])[1];
-                keyAnswerLabel = q.complex_statements
-                  .map((stmt, rIdx) => `${rIdx + 1}. ${stmt.is_true ? col0 : col1}`)
-                  .join(', ');
-              }
-
-              if (q.question_type === 'short_answer') {
-                keyAnswerLabel = String(q.short_answer_key ?? q.correct_answer ?? '-');
-              }
-
-              return (
-                <div
-                  key={q.example_id}
-                  className={`rounded-2xl border shadow-2xs overflow-hidden transition-colors ${
-                    isVelvet
-                      ? 'bg-[#2B1723] border-[#EB8A78]/35'
-                      : isPrism
-                      ? 'bg-white/88 border-white/95'
-                      : 'bg-white dark:bg-[#0c1326] border-stone-200/90 dark:border-slate-800'
-                  }`}
-                >
-                  {/* Review Header Bar */}
-                  <button
-                    type="button"
-                    onClick={() => toggleReviewSolution(q.example_id)}
-                    aria-expanded={isReviewOpen}
-                    className={`w-full text-left p-4 flex items-center justify-between gap-3 transition cursor-pointer ${
-                      isVelvet
-                        ? 'bg-[#341B2B]/80 hover:bg-[#3F2134]'
-                        : 'bg-stone-50/70 dark:bg-slate-900/60 hover:bg-stone-100/70 dark:hover:bg-slate-800/70'
-                    }`}
-                  >
-                    <div className="flex items-center gap-3 min-w-0">
-                      <span
-                        className={`w-8 h-8 rounded-xl font-mono font-bold text-xs flex items-center justify-center text-white shrink-0 ${
-                          !isAnswered
-                            ? 'bg-slate-500'
-                            : isCorrect
-                            ? 'bg-emerald-600'
-                            : 'bg-rose-600'
-                        }`}
-                      >
-                        {idx + 1}
-                      </span>
-                      <div className="min-w-0">
-                        <div className="text-sm font-bold text-slate-800 dark:text-[#FBF1F2] truncate">
-                          {q.subtest_code ? `${q.subtest_code} • ` : ''}
-                          {q.variation_name}
-                        </div>
-                        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 mt-0.5 text-xs">
-                          <span className="text-slate-600 dark:text-slate-400">
-                            Jawaban: <strong className="text-slate-800 dark:text-slate-200">{userAnswerLabel}</strong>
-                          </span>
-                          <span className="text-slate-300 dark:text-slate-600">•</span>
-                          <span className="text-emerald-700 dark:text-emerald-400 font-semibold">
-                            Kunci: <strong>{keyAnswerLabel}</strong>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-2 shrink-0">
-                      {isCorrect ? (
-                        <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-100 dark:bg-emerald-950/90 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/60 flex items-center gap-1">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                          <span>Benar</span>
-                        </span>
-                      ) : (
-                        <span
-                          className={`px-2.5 py-1 rounded-lg text-xs font-bold border flex items-center gap-1 ${
-                            isVelvet
-                              ? 'bg-[#4A121D] text-rose-200 border-rose-400/70'
-                              : 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-600/70'
-                          }`}
-                        >
-                          <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-300" />
-                          <span>{isAnswered ? 'Salah' : 'Kosong'}</span>
-                        </span>
-                      )}
-                      {isReviewOpen ? (
-                        <ChevronUp className="w-4 h-4 text-slate-400" />
-                      ) : (
-                        <ChevronDown className="w-4 h-4 text-slate-400" />
-                      )}
-                    </div>
-                  </button>
-
-                  {/* Review Body & Solution (Uniform font size text-[15px] sm:text-base) */}
-                  {isReviewOpen && (
-                    <div className="p-4 sm:p-6 border-t border-stone-200/70 dark:border-slate-800 space-y-5 text-[15px] sm:text-base leading-[1.8]">
-                      {/* Stimulus / Context */}
-                      {q.context_markdown && (
-                        <div
-                          className={`p-4 rounded-xl border border-l-4 text-[15px] sm:text-base leading-[1.8] ${
-                            isVelvet
-                              ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B] text-[#FBF1F2]'
-                              : 'bg-stone-50/90 dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 border-l-slate-400 dark:border-l-slate-600 text-slate-800 dark:text-slate-200'
-                          }`}
-                        >
-                          <div className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
-                            Stimulus / Wacana
-                          </div>
-                          <MemoDrillingMarkdown text={q.context_markdown} />
-                        </div>
-                      )}
-
-                      {/* SVG Illustration in Review */}
-                      {q.svg_illustration?.svg_code && (
-                        <div className="rounded-xl border border-stone-200 dark:border-slate-700 bg-white p-3 sm:p-4 overflow-hidden">
-                          <VisualRenderer
-                            visual={{ tipe: 'svg', kode: q.svg_illustration.svg_code }}
-                            onZoom={setZoomSvg}
-                            className="my-0"
-                          />
-                        </div>
-                      )}
-
-                      {/* Question text */}
-                      <div className="text-[15px] sm:text-base font-normal text-slate-900 dark:text-slate-100 leading-[1.8]">
-                        <MemoDrillingMarkdown text={q.question_markdown} />
-                      </div>
-
-                      {/* Answer Review for Complex Table */}
-                      {q.question_type === 'mc_complex_table' && q.complex_statements && (
-                        <div className="w-full overflow-x-auto rounded-2xl border border-stone-200 dark:border-slate-800 shadow-2xs">
-                          <table className="w-full text-left border-collapse text-sm sm:text-[15px]">
-                            <thead>
-                              <tr className="bg-stone-50 dark:bg-slate-900 border-b border-stone-200 dark:border-slate-800">
-                                <th className="p-3 font-bold">Pernyataan</th>
-                                <th className="p-3 text-center font-bold">Pilihan Anda</th>
-                                <th className="p-3 text-center font-bold text-emerald-600 dark:text-emerald-400">Kunci</th>
-                                <th className="p-3 text-center font-bold">Status</th>
-                              </tr>
-                            </thead>
-                            <tbody className="divide-y divide-stone-100 dark:divide-slate-800">
-                              {q.complex_statements.map((stmt) => {
-                                const ansMap = (userAnswer || {}) as Record<string, string>;
-                                const userChoice = ansMap[stmt.id] || '(Kosong)';
-                                const col0 = (q.table_headers || ['Benar', 'Salah'])[0];
-                                const col1 = (q.table_headers || ['Benar', 'Salah'])[1];
-                                const correctChoice = stmt.is_true ? col0 : col1;
-                                const isRowCorrect = userChoice === correctChoice;
-
-                                return (
-                                  <tr key={stmt.id} className="hover:bg-stone-50/50 dark:hover:bg-slate-800/40">
-                                    <td className="p-3 text-[15px] sm:text-base text-slate-800 dark:text-slate-200 leading-[1.75]">
-                                      <MemoDrillingMarkdown text={stmt.statement_markdown} />
-                                    </td>
-                                    <td className="p-3 text-center font-semibold">{userChoice}</td>
-                                    <td className="p-3 text-center font-bold text-emerald-600 dark:text-emerald-400">{correctChoice}</td>
-                                    <td className="p-3 text-center font-bold">
-                                      {isRowCorrect ? (
-                                        <span className="text-emerald-600 dark:text-emerald-400">✓ Benar</span>
-                                      ) : (
-                                        <span className="text-rose-600 dark:text-rose-400">✕ Salah</span>
-                                      )}
-                                    </td>
-                                  </tr>
-                                );
-                              })}
-                            </tbody>
-                          </table>
-                        </div>
-                      )}
-
-                      {/* Answer Review for Complex Checkbox */}
-                      {q.question_type === 'mc_complex_checkbox' && (
-                        <div className="space-y-2">
-                          {(q.complex_statements && q.complex_statements.length > 0
-                            ? q.complex_statements.map((s) => ({
-                                id: s.id,
-                                text: s.statement_markdown,
-                                is_correct: s.is_true,
-                              }))
-                            : (q.options || []).map((o) => ({
-                                id: o.key,
-                                text: o.text_markdown,
-                                is_correct: String(q.correct_answer || '')
-                                  .split(/[,;\s]+/)
-                                  .map((k) => k.trim().toUpperCase())
-                                  .includes(o.key.toUpperCase()),
-                              }))
-                          ).map((item) => {
-                            const userSelectedList: string[] = Array.isArray(userAnswer) ? userAnswer : [];
-                            const wasSelected = userSelectedList.includes(item.id);
-
-                            return (
-                              <div
-                                key={item.id}
-                                className={`p-3.5 rounded-xl border flex items-start gap-3 ${
-                                  item.is_correct
-                                    ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 text-emerald-950 dark:text-emerald-100'
-                                    : wasSelected
-                                    ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-950 dark:text-rose-100'
-                                    : 'bg-white dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 text-slate-700 dark:text-slate-300'
-                                }`}
-                              >
-                                <span className="font-mono font-bold text-xs shrink-0 mt-1 px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
-                                  {item.id}
-                                </span>
-                                <div className="flex-1 text-[15px] sm:text-base leading-[1.75]">
-                                  <MemoDrillingMarkdown text={item.text} />
-                                </div>
-                                <div className="shrink-0 flex flex-col items-end gap-1 text-xs font-bold">
-                                  {wasSelected && (
-                                    <span className="px-2 py-0.5 rounded bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
-                                      Dipilih
-                                    </span>
-                                  )}
-                                  {item.is_correct && (
-                                    <span className="text-emerald-700 dark:text-emerald-400">
-                                      ✓ Kunci
-                                    </span>
-                                  )}
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-
-                      {/* Answer Review for Short Answer */}
-                      {q.question_type === 'short_answer' && (
-                        <div className="p-4 rounded-2xl bg-stone-50 dark:bg-slate-900 border border-stone-200 dark:border-slate-800 space-y-2 text-[15px] sm:text-base">
-                          <div className="flex items-center justify-between">
-                            <span className="text-slate-500 dark:text-slate-400">Jawaban Anda:</span>
-                            <span className="font-bold text-slate-900 dark:text-white">
-                              {userAnswer ? String(userAnswer) : '(Tidak Dijawab)'}
-                            </span>
-                          </div>
-                          <div className="flex items-center justify-between border-t border-stone-200 dark:border-slate-800 pt-2">
-                            <span className="text-emerald-700 dark:text-emerald-400 font-semibold">Kunci Jawaban:</span>
-                            <span className="font-black text-emerald-700 dark:text-emerald-400">
-                              {String(q.short_answer_key ?? q.correct_answer ?? '-')}
-                            </span>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Answer Review for Standard Multiple Choice */}
-                      {q.question_type !== 'mc_complex_table' &&
-                        q.question_type !== 'mc_complex_checkbox' &&
-                        q.question_type !== 'short_answer' && (
-                          <div className="space-y-2">
-                            {(q.options || []).map((opt) => (
-                              <div
-                                key={opt.key}
-                                className={`p-3.5 rounded-xl border flex items-start gap-3 ${
-                                  opt.key === q.correct_answer
-                                    ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 text-emerald-950 dark:text-emerald-100'
-                                    : opt.key === userAnswer
-                                    ? 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-950 dark:text-rose-100'
-                                    : 'bg-white dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 text-slate-700 dark:text-slate-300'
-                                }`}
-                              >
-                                <span className="font-mono font-bold text-xs sm:text-sm w-6 shrink-0 mt-0.5">{opt.key}.</span>
-                                <div className="flex-1 text-[15px] sm:text-base leading-[1.75]">
-                                  <MemoDrillingMarkdown text={opt.text_markdown} />
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-
-                      {/* Optional Hint */}
-                      {q.hint_markdown && (
-                        <div className="p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200/90 dark:border-amber-800/60 text-amber-950 dark:text-amber-200 space-y-1.5">
-                          <div className="font-bold text-xs uppercase tracking-wider text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
-                            <Lightbulb className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-                            <span>Petunjuk Soal</span>
-                          </div>
-                          <div className="text-[15px] sm:text-base leading-[1.8]">
-                            <MemoDrillingMarkdown text={q.hint_markdown} />
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Conceptual solution */}
-                      <div
-                        className={`p-4 rounded-xl border space-y-2 ${
-                          isVelvet
-                            ? 'bg-[#22121D] border-[#EB8A78]/25 text-[#FBF1F2]'
-                            : 'bg-indigo-50/60 dark:bg-slate-900/90 border-indigo-100 dark:border-slate-800 text-slate-800 dark:text-slate-200'
-                        }`}
-                      >
-                        <div className="font-bold text-xs uppercase tracking-wider text-indigo-800 dark:text-cyan-400 flex items-center gap-1.5">
-                          <Sparkles className="w-3.5 h-3.5 text-indigo-600 dark:text-cyan-400" />
-                          <span>Pembahasan Lengkap</span>
-                        </div>
-                        <div className="text-[15px] sm:text-base leading-[1.8]">
-                          <MemoDrillingMarkdown text={q.conceptual_solution_markdown} />
-                        </div>
-                      </div>
-
-                      {/* Quick trick */}
-                      {q.quick_trick_markdown && (
-                        <div className="p-4 rounded-xl bg-amber-50/70 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-900/60 text-amber-950 dark:text-amber-200 space-y-1.5">
-                          <div className="font-bold text-xs uppercase tracking-wider text-amber-800 dark:text-amber-300">
-                            ⚡ Trik Cepat / Eliminasi Kilat
-                          </div>
-                          <div className="text-[15px] sm:text-base leading-[1.8]">
-                            <MemoDrillingMarkdown text={q.quick_trick_markdown} />
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+            {reviewIndex < totalQuestions - 1 ? (
+              <button
+                type="button"
+                onClick={() => setReviewIndex((prev) => Math.min(totalQuestions - 1, prev + 1))}
+                className={`px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-1.5 cursor-pointer active:scale-95 ${
+                  isVelvet
+                    ? 'bg-gradient-to-r from-[#FF8A6B] to-[#F5B041] text-[#1E0F17] font-extrabold'
+                    : isPrism
+                    ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white'
+                    : 'bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-600 dark:to-cyan-500 hover:from-blue-700 hover:to-indigo-700 text-white dark:shadow-[0_0_15px_rgba(0,242,254,0.35)]'
+                }`}
+              >
+                <span>Selanjutnya</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setViewPhase('summary')}
+                className="px-4 sm:px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-1.5 cursor-pointer active:scale-95"
+              >
+                <span>Selesai</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            )}
           </div>
         </div>
 
@@ -1047,14 +1334,14 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
   }
 
   // -------------------------------------------------------------
-  // VIEW: ACTIVE DRILLING QUESTION (Distraction-Free & Uniform Typography)
+  // VIEW: ACTIVE DRILLING QUESTION (Distraction-Free & Wider Layout)
   // -------------------------------------------------------------
   const isStimulusCollapsed = Boolean(collapsedStimuli[currentQuestion.example_id]);
   const isLongStimulus = (currentQuestion.context_markdown?.length || 0) > 450;
   const isCurrentFlagged = flaggedIndices.has(currentQuestionIndex);
 
   return (
-    <div className="w-full max-w-3xl mx-auto pb-28 animate-page-enter">
+    <div className="w-full max-w-4xl mx-auto pb-28 animate-page-enter">
       {/* 1. STICKY TOP STATUS BAR */}
       <div
         className={`sticky top-0 z-30 backdrop-blur-md rounded-2xl border shadow-sm p-3 sm:p-3.5 mb-4 transition-all duration-300 ${
@@ -1222,9 +1509,9 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
         </div>
       )}
 
-      {/* 2. QUESTION CARD (Uniform Font Scale text-[15px] sm:text-base, Clean Spacing) */}
+      {/* 2. QUESTION CARD (Uniform Font Scale text-[15px] sm:text-base, Wider Mobile Space) */}
       <div
-        className={`rounded-3xl border shadow-sm p-5 sm:p-7 space-y-5 transition-colors ${
+        className={`rounded-2xl sm:rounded-3xl border shadow-sm px-3 py-4 sm:p-6 space-y-4 sm:space-y-5 transition-colors ${
           isVelvet
             ? 'bg-[#2B1723] border-[#EB8A78]/35'
             : isPrism
@@ -1276,7 +1563,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
         {/* Reading Context / Stimulus Text (Uniform font, upright, collapsible for long passages) */}
         {currentQuestion.context_markdown && (
           <div
-            className={`rounded-2xl border border-l-4 p-4 sm:p-5 transition-colors ${
+            className={`rounded-2xl border border-l-4 p-3 sm:p-4 transition-colors ${
               isVelvet
                 ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B] text-[#FBF1F2]'
                 : isPrism
@@ -1377,12 +1664,12 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                           : 'bg-stone-50/90 dark:bg-slate-900 border-stone-200 dark:border-slate-800 text-slate-700 dark:text-slate-200'
                       }`}
                     >
-                      <th className="p-3.5 font-bold w-10 text-center">#</th>
-                      <th className="p-3.5 font-bold">Pernyataan</th>
-                      <th className="p-3.5 text-center w-24 sm:w-28 text-emerald-700 dark:text-emerald-400 font-bold">
+                      <th className="px-2 py-2.5 sm:p-3.5 font-bold w-7 sm:w-10 text-center">#</th>
+                      <th className="px-2 py-2.5 sm:p-3.5 font-bold">Pernyataan</th>
+                      <th className="px-1.5 py-2.5 sm:p-3.5 text-center w-14 sm:w-24 text-emerald-700 dark:text-emerald-400 font-bold">
                         {(currentQuestion.table_headers || ['Benar', 'Salah'])[0]}
                       </th>
-                      <th className="p-3.5 text-center w-24 sm:w-32 text-rose-700 dark:text-rose-400 font-bold">
+                      <th className="px-1.5 py-2.5 sm:p-3.5 text-center w-14 sm:w-28 text-rose-700 dark:text-rose-400 font-bold">
                         {(currentQuestion.table_headers || ['Benar', 'Salah'])[1]}
                       </th>
                     </tr>
@@ -1407,18 +1694,18 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                             isVelvet ? 'hover:bg-[#341B2B]/60' : 'hover:bg-stone-50/60 dark:hover:bg-slate-800/40'
                           }`}
                         >
-                          <td className="p-3.5 text-center text-xs sm:text-sm font-mono font-bold text-slate-400 align-top pt-4">
+                          <td className="px-2 py-3 sm:p-3.5 text-center text-xs sm:text-sm font-mono font-bold text-slate-400 align-top">
                             {rowIdx + 1}
                           </td>
-                          <td className="p-3.5 text-[15px] sm:text-base leading-[1.75] text-slate-800 dark:text-[#FBF1F2]">
+                          <td className="px-2 py-3 sm:p-3.5 text-[15px] sm:text-base leading-[1.7] text-slate-800 dark:text-[#FBF1F2]">
                             <MemoDrillingMarkdown text={stmt.statement_markdown} />
                           </td>
-                          <td className="p-3.5 text-center align-middle">
+                          <td className="px-1.5 py-3 sm:p-3.5 text-center align-middle">
                             <button
                               type="button"
                               onClick={() => handleTableSelect(stmt.id, col0)}
                               aria-label={`Pernyataan ${rowIdx + 1}: ${col0}`}
-                              className={`w-8 h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
+                              className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
                                 choice === col0
                                   ? 'bg-emerald-500 border-emerald-400 text-white shadow-[0_0_10px_rgba(16,185,129,0.4)] font-bold'
                                   : isVelvet
@@ -1429,12 +1716,12 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                               {choice === col0 && <Check className="w-4 h-4 stroke-[3]" />}
                             </button>
                           </td>
-                          <td className="p-3.5 text-center align-middle">
+                          <td className="px-1.5 py-3 sm:p-3.5 text-center align-middle">
                             <button
                               type="button"
                               onClick={() => handleTableSelect(stmt.id, col1)}
                               aria-label={`Pernyataan ${rowIdx + 1}: ${col1}`}
-                              className={`w-8 h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
+                              className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
                                 choice === col1
                                   ? 'bg-rose-500 border-rose-400 text-white shadow-[0_0_10px_rgba(244,63,94,0.45)] font-bold'
                                   : isVelvet
@@ -1489,7 +1776,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       key={item.id}
                       type="button"
                       onClick={() => handleCheckboxToggle(item.id)}
-                      className={`w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3 cursor-pointer ${
+                      className={`w-full text-left p-3 sm:p-4 rounded-xl border transition-all flex items-start gap-2.5 sm:gap-3 cursor-pointer ${
                         isChecked
                           ? isVelvet
                             ? 'bg-[#3E1E2E] border-[#FF8A6B] text-[#FBF1F2]'
@@ -1593,7 +1880,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       key={option.key}
                       type="button"
                       onClick={() => handleSelectOption(option.key)}
-                      className={`w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3.5 cursor-pointer ${
+                      className={`w-full text-left p-3 sm:p-4 rounded-xl border transition-all flex items-start gap-2.5 sm:gap-3.5 cursor-pointer ${
                         isSelected
                           ? isVelvet
                             ? 'bg-[#3E1E2E] border-[#FF8A6B] text-[#FBF1F2]'
@@ -1650,7 +1937,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
             : 'bg-white/95 border-stone-200/90'
         }`}
       >
-        <div className="max-w-3xl mx-auto flex items-center justify-between gap-2.5 sm:gap-3">
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-2 sm:gap-3">
           <button
             type="button"
             disabled={currentQuestionIndex === 0}
@@ -1729,7 +2016,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               </div>
             </div>
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-              Setelah dikumpulkan, skor dan pembahasan lengkap untuk semua soal akan langsung ditampilkan.
+              Setelah dikumpulkan, skor Anda akan ditampilkan beserta tombol untuk membuka pembahasan per soal.
             </p>
             <div className="flex items-center justify-end gap-2.5 pt-1">
               <button

@@ -40,7 +40,7 @@ const KATEX_REHYPE_PLUGINS = [[rehypeKatex, { output: 'html' }] as any];
 const MARKDOWN_COMPONENTS = {
   table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
     <div className="w-full overflow-x-auto my-4 max-w-full rounded-xl border border-slate-200 dark:border-slate-800 shadow-2xs">
-      <table className="w-full min-w-full text-left border-collapse text-sm sm:text-base leading-relaxed" {...props}>
+      <table className="w-full min-w-full text-left border-collapse text-[15px] sm:text-[15.5px] leading-relaxed" {...props}>
         {children}
       </table>
     </div>
@@ -61,32 +61,32 @@ const MARKDOWN_COMPONENTS = {
     </tr>
   ),
   th: ({ children, ...props }: React.ComponentPropsWithoutRef<'th'>) => (
-    <th className="py-2.5 px-3.5 font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base align-top" {...props}>
+    <th className="py-2.5 px-3 font-bold text-slate-900 dark:text-slate-100 text-[15px] sm:text-[15.5px] align-top" {...props}>
       {children}
     </th>
   ),
   td: ({ children, ...props }: React.ComponentPropsWithoutRef<'td'>) => (
-    <td className="py-2.5 px-3.5 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed align-top" {...props}>
+    <td className="py-2.5 px-3 text-slate-700 dark:text-slate-300 text-[15px] sm:text-[15.5px] leading-relaxed align-top" {...props}>
       {children}
     </td>
   ),
   p: ({ children, ...props }: React.ComponentPropsWithoutRef<'p'>) => (
-    <p className="mt-0 mb-3.5 last:mb-0 leading-[1.85] text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+    <p className="mt-0 mb-3.5 last:mb-0 leading-[1.85] text-slate-800 dark:text-slate-200 text-[15px] sm:text-[15.5px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
       {children}
     </p>
   ),
   li: ({ children, ...props }: React.ComponentPropsWithoutRef<'li'>) => (
-    <li className="leading-[1.85] text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full my-1.5" {...props}>
+    <li className="leading-[1.85] text-slate-800 dark:text-slate-200 text-[15px] sm:text-[15.5px] break-words [overflow-wrap:anywhere] max-w-full my-1.5" {...props}>
       {children}
     </li>
   ),
   ul: ({ children, ...props }: React.ComponentPropsWithoutRef<'ul'>) => (
-    <ul className="list-disc list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+    <ul className="list-disc list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-[15px] sm:text-[15.5px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
       {children}
     </ul>
   ),
   ol: ({ children, ...props }: React.ComponentPropsWithoutRef<'ol'>) => (
-    <ol className="list-decimal list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-sm sm:text-[16px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
+    <ol className="list-decimal list-outside pl-5 my-2.5 space-y-2 text-slate-800 dark:text-slate-200 text-[15px] sm:text-[15.5px] break-words [overflow-wrap:anywhere] max-w-full" {...props}>
       {children}
     </ol>
   ),
@@ -322,18 +322,18 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
   return (
     <article
-      className="w-full max-w-[720px] mx-auto space-y-10 pb-20 px-4 sm:px-6 reader-scalable-content transition-all"
+      className="w-full max-w-[720px] mx-auto space-y-8 sm:space-y-10 pb-20 px-2.5 sm:px-6 reader-scalable-content transition-all"
       style={{
         '--reader-font-scale': fontScale,
-        fontSize: `calc(1rem * ${fontScale})`,
+        fontSize: `calc(0.96875rem * ${fontScale})`,
       } as React.CSSProperties}
     >
       {/* =====================================================================
           ZONA 1: PETA TAKTIS SUB-BAB (TAMPIL STATIS DI BAGIAN ATAS)
           ===================================================================== */}
-      <section aria-labelledby="subbab-title" className="space-y-6">
+      <section aria-labelledby="subbab-title" className="space-y-5 sm:space-y-6">
         {/* Header Sub-Bab: Breadcrumb, Judul, Frekuensi UTBK */}
-        <div className="space-y-3">
+        <div className="space-y-2.5 px-1 sm:px-0">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
             <span>{metadata.subtest}</span>
@@ -344,7 +344,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           </nav>
 
           {/* Judul Utama */}
-          <h1 id="subbab-title" className="text-2xl sm:text-[30px] font-extrabold text-[#1E293B] dark:text-white leading-tight tracking-tight">
+          <h1 id="subbab-title" className="text-xl sm:text-2xl font-extrabold text-[#1E293B] dark:text-white leading-tight tracking-tight">
             {metadata.title}
           </h1>
 
@@ -352,7 +352,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           {zona1?.frekuensi_utbk && (
             <div className="flex flex-wrap items-center gap-2 pt-0.5">
               <span
-                className={`inline-flex items-center gap-1.5 text-xs sm:text-[13px] font-medium px-3.5 py-1.5 rounded-full border shadow-2xs ${
+                className={`inline-flex items-center gap-1.5 text-xs sm:text-[13px] font-medium px-3 py-1 rounded-full border shadow-2xs ${
                   isVelvet
                     ? 'bg-[#2B1723] border-[#EB8A78]/35 text-[#EBD6DC]'
                     : isPrism
@@ -373,7 +373,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         {/* 1. PEMANTIK LOGIKA (EXAM HOOK) - DITARUH PERTAMA */}
         {zona1?.exam_hook && (
           <div
-            className={`rounded-2xl border p-5 sm:p-6 shadow-xs space-y-4 max-w-full overflow-x-clip ${
+            className={`rounded-2xl border p-3.5 sm:p-6 shadow-xs space-y-4 max-w-full overflow-x-clip ${
               isVelvet
                 ? 'bg-[#2B1723] border-[#EB8A78]/35'
                 : isPrism
@@ -393,7 +393,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
             {/* Stimulus Ringkas / Pertanyaan Pemantik di dalam Kartu Estetik */}
             <div
-              className={`rounded-2xl border border-l-4 p-4 sm:p-5 max-w-full overflow-x-clip ${
+              className={`rounded-2xl border border-l-4 p-3.5 sm:p-5 max-w-full overflow-x-clip ${
                 isVelvet
                   ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B]'
                   : isPrism
@@ -401,7 +401,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                   : 'bg-slate-50/90 dark:bg-slate-800/50 border-slate-200/90 dark:border-slate-700/60 border-l-slate-400 dark:border-l-slate-500'
               }`}
             >
-              <div className="text-[15.5px] sm:text-[16px] text-slate-800 dark:text-[#FBF1F2] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 font-normal max-w-full">
+              <div className="text-[15px] sm:text-[15.5px] text-slate-800 dark:text-[#FBF1F2] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 font-normal max-w-full">
                 {renderMarkdown(zona1.exam_hook.pertanyaan_pemantik)}
               </div>
             </div>
@@ -482,7 +482,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         {/* 2. KARTU KONSEP INTI */}
         {zona1?.konsep_inti_markdown && (
           <div
-            className={`rounded-2xl border border-l-4 p-5 sm:p-6 space-y-4 max-w-full overflow-x-clip shadow-xs ${
+            className={`rounded-2xl border border-l-4 p-3.5 sm:p-6 space-y-3.5 max-w-full overflow-x-clip shadow-xs ${
               isVelvet
                 ? 'bg-[#2B1723]/95 border-[#EB8A78]/40 border-l-[#FF8A6B]'
                 : isPrism
@@ -490,10 +490,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                 : 'bg-[#EFF6FF] dark:bg-blue-950/25 border-[#3B82F6]/50 border-l-blue-600 dark:border-l-blue-900'
             }`}
           >
-            <div className="flex items-center gap-2.5">
-              <span className="text-xl" aria-hidden="true">📘</span>
+            <div className="flex items-center gap-2">
+              <span className="text-lg" aria-hidden="true">📘</span>
               <h2
-                className={`text-lg sm:text-xl font-extrabold ${
+                className={`text-[17px] sm:text-lg font-extrabold ${
                   isVelvet ? 'text-[#FFBE98]' : 'text-blue-950 dark:text-blue-100'
                 }`}
               >
@@ -501,7 +501,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               </h2>
             </div>
 
-            <div className="text-[16px] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 text-slate-900 dark:text-[#FBF1F2] max-w-full">
+            <div className="text-[15px] sm:text-[15.5px] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 text-slate-900 dark:text-[#FBF1F2] max-w-full">
               {renderMarkdown(zona1.konsep_inti_markdown)}
             </div>
           </div>
@@ -531,22 +531,22 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
         {/* 3. RADAR JEBAKAN UTBK (Box Kuning/Oranye: #FFFBEB / border #F59E0B) */}
         {zona1?.radar_jebakan_utbk && zona1.radar_jebakan_utbk.length > 0 && (
           <div
-            className={`rounded-2xl border border-l-4 p-5 sm:p-6 space-y-4 max-w-full overflow-x-clip shadow-xs ${
+            className={`rounded-2xl border border-l-4 p-3.5 sm:p-6 space-y-3.5 max-w-full overflow-x-clip shadow-xs ${
               isVelvet
                 ? 'bg-[#361D1E]/90 border-[#F5B041]/40 border-l-[#F5B041]'
                 : 'bg-[#FFFBEB] dark:bg-amber-950/25 border-[#F59E0B]/50 border-l-[#F59E0B]'
             }`}
           >
-            <div className="flex items-center gap-2.5">
-              <span className="text-xl" aria-hidden="true">⚠️</span>
-              <h2 className="text-lg sm:text-xl font-extrabold text-amber-950 dark:text-amber-100">
+            <div className="flex items-center gap-2">
+              <span className="text-lg" aria-hidden="true">⚠️</span>
+              <h2 className="text-[17px] sm:text-lg font-extrabold text-amber-950 dark:text-amber-100">
                 Radar Jebakan UTBK (1–2 Kesalahan Fatal Peserta)
               </h2>
             </div>
 
-            <ol className="space-y-3.5 text-[16px] max-w-full">
+            <ol className="space-y-3.5 text-[15px] sm:text-[15.5px] max-w-full">
               {zona1.radar_jebakan_utbk.map((trap, idx) => (
-                <li key={idx} className="flex items-start gap-3 max-w-full">
+                <li key={idx} className="flex items-start gap-2.5 sm:gap-3 max-w-full">
                   <span className="font-mono text-xs font-black px-2 py-0.5 rounded bg-amber-300 dark:bg-amber-900/80 text-amber-950 dark:text-amber-100 mt-1 shrink-0 shadow-2xs">
                     0{idx + 1}
                   </span>
@@ -564,7 +564,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
       <div className="relative flex items-center justify-center my-8 select-none">
         <div className={`w-full border-t ${isVelvet ? 'border-[#EB8A78]/25' : 'border-slate-200 dark:border-slate-700/75'}`} />
         <div
-          className={`absolute px-3.5 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider border shadow-2xs ${
+          className={`absolute px-3.5 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider border shadow-2xs ${
             isVelvet
               ? 'bg-[#2B1723] text-[#FFBE98] border-[#EB8A78]/35'
               : 'bg-[#F8FAFC] dark:bg-[#0D1426] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700/80'
@@ -582,12 +582,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           ===================================================================== */}
       {variasiList.length > 0 && (
         <section aria-labelledby="zona2-title" className="space-y-5">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 px-1 sm:px-0">
             <div>
               <span className="font-mono text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                 Zona 2 • Bedah Pola Soal
               </span>
-              <h2 id="zona2-title" className="text-xl sm:text-2xl font-extrabold text-[#1E293B] dark:text-white mt-0.5">
+              <h2 id="zona2-title" className="text-[17px] sm:text-xl font-extrabold text-[#1E293B] dark:text-white mt-0.5">
                 Eksplorasi {variasiList.length} Variasi Inti
               </h2>
             </div>
@@ -674,7 +674,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               }`}
             >
               {/* Area Isi Variasi Aktif */}
-              <div key={activeVariasiIndex} role="tabpanel" className="p-5 sm:p-7 space-y-5 animate-tab-slide max-w-full overflow-x-clip">
+              <div key={activeVariasiIndex} role="tabpanel" className="p-3.5 sm:p-6 space-y-5 animate-tab-slide max-w-full overflow-x-clip">
                 {/* Header Variasi */}
                 <div className={`space-y-2 border-b pb-4 ${isVelvet ? 'border-[#EB8A78]/20' : 'border-slate-200/90 dark:border-slate-700/70'}`}>
                   <div className="flex items-center gap-2 flex-wrap">
@@ -699,7 +699,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                       </span>
                     )}
                   </div>
-                  <h3 className="text-lg sm:text-xl font-extrabold text-slate-950 dark:text-white leading-snug">
+                  <h3 className="text-[17px] sm:text-lg font-extrabold text-slate-950 dark:text-white leading-snug">
                     {renderInlineMarkdown(activeVariasi.nama_variasi)}
                   </h3>
                 </div>
@@ -707,7 +707,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                 {/* Stimulus Mini (jika tersedia) */}
                 {activeVariasi.stimulus_mini && (
                   <blockquote
-                    className={`p-4 rounded-xl border border-l-4 text-sm sm:text-base leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 max-w-full ${
+                    className={`p-3.5 sm:p-4 rounded-xl border border-l-4 text-[15px] sm:text-[15.5px] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 max-w-full ${
                       isVelvet
                         ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B] text-[#FBF1F2]'
                         : 'bg-slate-50 dark:bg-[#141E36] border-slate-200/80 dark:border-slate-700/60 border-l-slate-400 dark:border-l-slate-500 text-[#1E293B] dark:text-slate-200'
@@ -733,7 +733,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                     <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                       Bedah Pola & Langkah Eksekusi
                     </h4>
-                    <div className="text-[16px] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 text-slate-800 dark:text-slate-200 max-w-full">
+                    <div className="text-[15px] sm:text-[15.5px] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 text-slate-800 dark:text-slate-200 max-w-full">
                       {renderMarkdown(activeVariasi.bedah_pola_markdown)}
                     </div>
                   </div>
@@ -741,7 +741,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
                 {/* Kunci Pembeda (Semantic Box Hijau: #ECFDF5 / border #10B981) */}
                 {activeVariasi.kunci_pembeda && (
-                  <div className="rounded-xl bg-[#ECFDF5] dark:bg-emerald-950/25 border border-[#10B981]/50 border-l-4 border-l-[#10B981] p-4 text-[15.5px] leading-[1.85] text-emerald-950 dark:text-emerald-100 space-y-1.5 max-w-full overflow-x-clip">
+                  <div className="rounded-xl bg-[#ECFDF5] dark:bg-emerald-950/25 border border-[#10B981]/50 border-l-4 border-l-[#10B981] p-3.5 sm:p-4 text-[15px] sm:text-[15.5px] leading-[1.85] text-emerald-950 dark:text-emerald-100 space-y-1.5 max-w-full overflow-x-clip">
                     <div className="font-bold flex items-center gap-1.5 text-emerald-900 dark:text-emerald-200">
                       <Sparkles className="w-4 h-4 text-[#10B981] shrink-0" />
                       <span>Kunci Pembeda Variasi Ini:</span>
@@ -814,7 +814,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
       <div className="relative flex items-center justify-center my-8 select-none">
         <div className={`w-full border-t ${isVelvet ? 'border-[#EB8A78]/25' : 'border-slate-200 dark:border-slate-700/75'}`} />
         <div
-          className={`absolute px-3.5 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider border shadow-2xs ${
+          className={`absolute px-3.5 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider border shadow-2xs ${
             isVelvet
               ? 'bg-[#2B1723] text-[#FFBE98] border-[#EB8A78]/35'
               : 'bg-[#F8FAFC] dark:bg-[#0D1426] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700/80'
@@ -832,20 +832,20 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           ===================================================================== */}
       {soalList.length > 0 && (
         <section aria-labelledby="zona3-title" className="space-y-6">
-          <div>
+          <div className="px-1 sm:px-0">
             <span className="font-mono text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Zona 3 • Active Recall
             </span>
-            <h2 id="zona3-title" className="text-xl sm:text-2xl font-extrabold text-[#1E293B] dark:text-white mt-0.5">
+            <h2 id="zona3-title" className="text-[17px] sm:text-xl font-extrabold text-[#1E293B] dark:text-white mt-0.5">
               Arena Uji Pemahaman Instan
             </h2>
-            <p className="text-[15.5px] text-slate-600 dark:text-slate-300 mt-1">
+            <p className="text-[15px] sm:text-[15.5px] text-slate-600 dark:text-slate-300 mt-1">
               Uji ketajaman pemahamanmu pada {soalList.length} soal simulasi UTBK berikut sebelum menyelesaikan sub-bab.
             </p>
           </div>
 
           {/* Kontainer Daftar Soal Mini */}
-          <div className="space-y-6">
+          <div className="space-y-5 sm:space-y-6">
             {soalList.map((soal) => {
               const nomor = soal.nomor_soal;
               const selectedAnswer = userAnswers[nomor];
@@ -860,7 +860,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
               return (
                 <div
                   key={nomor}
-                  className={`rounded-2xl border p-5 sm:p-7 shadow-xs space-y-5 max-w-full overflow-x-clip ${
+                  className={`rounded-2xl border p-3.5 sm:p-6 shadow-xs space-y-4 sm:space-y-5 max-w-full overflow-x-clip ${
                     isVelvet
                       ? 'bg-[#2B1723] border-[#EB8A78]/35'
                       : isPrism
@@ -964,7 +964,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                             <span className={`w-7 h-7 rounded-lg font-mono font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 ${badgeClass}`}>
                               {optionKey}
                             </span>
-                            <span className="text-sm sm:text-[15.5px] leading-relaxed flex-1 mt-0.5">
+                            <span className="text-[15px] sm:text-[15.5px] leading-relaxed flex-1 mt-0.5">
                               {renderInlineMarkdown(cleanText)}
                             </span>
                           </button>
@@ -1016,7 +1016,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
                       {isOpen && (
                         <div
-                          className={`mt-2 p-4 rounded-xl border text-sm sm:text-[15.5px] leading-[1.85] fade-in max-w-full overflow-x-clip ${
+                          className={`mt-2 p-3.5 sm:p-4 rounded-xl border text-[15px] sm:text-[15.5px] leading-[1.85] fade-in max-w-full overflow-x-clip ${
                             isVelvet
                               ? 'bg-[#1F1020] border-[#EB8A78]/25 text-[#FBF1F2]'
                               : 'bg-slate-50 dark:bg-slate-800/40 border-slate-200/90 dark:border-slate-700/80 text-slate-800 dark:text-slate-200'

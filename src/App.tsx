@@ -413,7 +413,7 @@ function SubtestRouteView({
           onStartDrilling={onStartDrilling}
         />
       </main>
-      <Footer theme={theme} />
+      {activeTab !== 'drilling' && <Footer theme={theme} />}
     </>
   );
 }
@@ -618,7 +618,7 @@ function DrillingRouteView({
   }, [subtest, drillingQuestions.length, setDrillingQuestions]);
 
   return (
-    <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
+    <main className="flex-1 w-full max-w-4xl mx-auto px-1.5 sm:px-4 md:px-6 py-2 sm:py-5">
       <DrillingComponent
         key={drillingSessionId}
         questions={drillingQuestions}

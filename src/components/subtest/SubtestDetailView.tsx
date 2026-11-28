@@ -15,6 +15,8 @@ import {
   Shuffle,
   ShieldCheck,
   CheckCircle2,
+  SlidersHorizontal,
+  Check,
 } from 'lucide-react';
 import type { SubtestItem } from '../../types/material';
 import { UTBK_SYLLABUS } from '../../lib/syllabusData';
@@ -108,6 +110,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   const [timerMinutes, setTimerMinutes] = useState<number | null>(15);
   const [drillingSubtestCode, setDrillingSubtestCode] = useState<string>(subtest.code);
   const [orderMode, setOrderMode] = useState<OrderMode>('blocking');
+  const [showDrillingSettings, setShowDrillingSettings] = useState<boolean>(false);
   const [seenStatsVersion, setSeenStatsVersion] = useState<number>(0);
   const [progressVersion, setProgressVersion] = useState<number>(0);
   const [drillingIndex, setDrillingIndex] = useState<DrillingIndexData | null>(null);
@@ -224,10 +227,6 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
       allIds.forEach((id) => next.add(id));
       return next;
     });
-  };
-
-  const selectAllSubtest = () => {
-    selectAllInActiveSubtest();
   };
 
   const selectAll7Subtests = () => {
@@ -396,7 +395,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   })();
 
   return (
-    <div className="w-full pb-28">
+    <div className={`w-full ${activeTab === 'drilling' ? 'pb-36 sm:pb-24' : 'pb-12'}`}>
       {/* 1. STICKY TOP APP BAR (Native App Feel, Unified Cosmic/Nature/Velvet/Prism Header) */}
       <div className="sticky top-0 z-40 w-full shadow-xs">
         {/* Baris 1: Top Navigation Bar */}
@@ -544,37 +543,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <span>⚡ Drilling Soal</span>
               </Link>
             </div>
-
-            {activeTab === 'drilling' && (
-              <div className="hidden sm:flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={selectAllSubtest}
-                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border cursor-pointer transition shadow-2xs ${
-                    isVelvet
-                      ? 'text-[#FFBE98] hover:bg-[#3A1D2E] border-[#EB8A78]/45'
-                      : 'text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border-blue-200 dark:border-cyan-400/50 dark:shadow-[0_0_12px_rgba(0,242,254,0.25)]'
-                  }`}
-                >
-                  Pilih Semua
-                </button>
-                {selectedSubchapters.size > 0 && (
-                  <button
-                    type="button"
-                    onClick={clearAllSubtest}
-                    className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
-                  >
-                    Batal
-                  </button>
-                )}
-              </div>
-            )}
           </div>
         </div>
       </div>
 
       {/* Main Content Area: Separated Standalone Bab Cards (Senada dengan Beranda) */}
-      <div className="max-w-4xl mx-auto px-2.5 sm:px-4 py-3 sm:py-5">
+      <div className="max-w-4xl mx-auto px-1.5 sm:px-4 py-3 sm:py-5">
         {/* ========================================================
             TAB 1: MATERI (Standalone Cosmic/Nature/Velvet/Prism Bab Cards)
             ======================================================== */}
@@ -767,38 +741,48 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         )}
 
         {/* ========================================================
-            TAB 2: DRILLING SOAL (Deterministic Stratified Engine)
+            TAB 2: DRILLING SOAL (Clean Topic-First Layout)
             ======================================================== */}
         {activeTab === 'drilling' && (
-          <div className="space-y-4">
-            {/* 1. Multi-Subtest Selector Pills */}
+          <div className="space-y-3">
+            {/* 1. Scope & Subtest Selector Card (Front-loaded) */}
             <div
               className={`backdrop-blur-md p-3 sm:p-4 rounded-2xl border shadow-2xs space-y-2.5 ${
                 isVelvet
                   ? 'bg-[#2B1723]/90 border-[#EB8A78]/30'
                   : isCosmic
-                  ? 'bg-[#0c1326]/80 border-slate-800'
+                  ? 'bg-[#0c1326]/85 border-slate-800'
                   : isPrism
-                  ? 'bg-white/75 border-white/90'
-                  : 'bg-white/80 border-stone-200/90'
+                  ? 'bg-white/78 border-white/90'
+                  : 'bg-white/90 border-stone-200/90'
               }`}
             >
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <span
                   className={`text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 ${
-                    isVelvet ? 'text-[#FF8A6B]' : 'text-slate-500 dark:text-cyan-400/80'
+                    isVelvet ? 'text-[#FF8A6B]' : 'text-slate-600 dark:text-cyan-400/90'
                   }`}
                 >
                   <Layers className="w-3.5 h-3.5" />
-                  <span>Subtes Latihan ({UTBK_SYLLABUS.length} Subtes BPPP)</span>
+                  <span>Pilih Subtes</span>
                 </span>
-                <span className="text-[11px] font-semibold text-slate-400">
-                  {selectedSubchapters.size} sub-bab dipilih
+                <span
+                  className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${
+                    selectedSubchapters.size > 0
+                      ? isVelvet
+                        ? 'bg-[#FF8A6B]/20 text-[#FFBE98]'
+                        : 'bg-blue-50 dark:bg-cyan-950/70 text-blue-700 dark:text-cyan-300'
+                      : 'text-slate-400 dark:text-slate-500'
+                  }`}
+                >
+                  {selectedSubchapters.size > 0
+                    ? `${selectedSubchapters.size} sub-bab dipilih`
+                    : 'Belum ada dipilih'}
                 </span>
               </div>
 
-              {/* Subtest Pills */}
-              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-thin">
+              {/* Horizontal Subtest Pills */}
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar">
                 {UTBK_SYLLABUS.map((st) => {
                   const isActive = st.code.toLowerCase() === drillingSubtestCode.toLowerCase();
                   const selectedCount = getSelectedCountForSubtest(st.code);
@@ -822,7 +806,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                           : isCosmic
                           ? 'bg-slate-900/90 text-slate-300 hover:text-white border-slate-800 hover:border-slate-700'
                           : isPrism
-                          ? 'bg-white/80 text-slate-700 hover:bg-white border-white/90'
+                          ? 'bg-white/85 text-slate-700 hover:bg-white border-white/90'
                           : 'bg-stone-50 text-slate-700 hover:bg-stone-100 border-stone-200/80'
                       }`}
                     >
@@ -846,191 +830,204 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   );
                 })}
               </div>
-            </div>
 
-            {/* 2. Seen / Unseen Tracker Box */}
-            <div
-              className={`p-3.5 sm:p-4 rounded-2xl border flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs ${
-                isVelvet
-                  ? 'bg-[#2B1723]/90 border-[#EB8A78]/30'
-                  : isCosmic
-                  ? 'bg-slate-900/90 border-slate-800'
-                  : isPrism
-                  ? 'bg-white/78 border-white/90'
-                  : 'bg-stone-50 border-stone-200/90'
-              }`}
-            >
-              <div className="space-y-0.5">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100">
-                    Pelacak Riwayat Soal (Seen Tracker)
-                  </span>
-                </div>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Bank Soal:{' '}
-                  <strong>
-                    {activeSeenStats.totalCount > 0
-                      ? `${activeSeenStats.totalCount.toLocaleString('id-ID')} Soal`
-                      : 'Memuat...'}
-                  </strong>{' '}
-                  • Belum Dikerjakan:{' '}
-                  <strong className="text-indigo-600 dark:text-cyan-400">
-                    {activeSeenStats.unseenCount.toLocaleString('id-ID')}
-                  </strong>{' '}
-                  • Pernah Dikerjakan:{' '}
-                  <strong>{activeSeenStats.seenCount.toLocaleString('id-ID')}</strong> ({activeSeenStats.percentage}%)
-                </p>
-              </div>
-
-              <button
-                type="button"
-                onClick={handleResetSeen}
-                className="self-start sm:self-auto inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800 hover:bg-rose-50 dark:hover:bg-rose-950/40 hover:text-rose-600 dark:hover:text-rose-400 border border-stone-200 dark:border-slate-700 transition cursor-pointer shadow-2xs active:scale-95"
-                title="Hapus riwayat soal yang pernah dikerjakan"
-              >
-                <RotateCcw className="w-3.5 h-3.5" />
-                <span>Reset Riwayat Soal</span>
-              </button>
-            </div>
-
-            {/* 3. Order Mode: Blocking vs Interleaved */}
-            <div
-              className={`p-3.5 sm:p-4 rounded-2xl border shadow-2xs space-y-2.5 ${
-                isVelvet
-                  ? 'bg-[#2B1723]/90 border-[#EB8A78]/30'
-                  : isCosmic
-                  ? 'bg-[#0c1326] border-slate-800'
-                  : isPrism
-                  ? 'bg-white/78 border-white/90'
-                  : 'bg-white border-stone-200/90'
-              }`}
-            >
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 flex items-center gap-1.5">
-                  <Shuffle className={`w-3.5 h-3.5 ${isVelvet ? 'text-[#FF8A6B]' : 'text-blue-600 dark:text-cyan-400'}`} />
-                  <span>Mode Urutan Soal (Rotation Engine)</span>
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-stone-100 dark:bg-slate-800 velvet-surface-deep text-slate-500">
-                  UTBK BPPP
-                </span>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                {/* Mode 1: Blocking per Subtes */}
-                <div
-                  onClick={() => setOrderMode('blocking')}
-                  className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${
-                    orderMode === 'blocking'
-                      ? isVelvet
-                        ? 'bg-[#3D1F2E] border-[#FF8A6B] ring-1 ring-[#FF8A6B]'
-                        : isCosmic
-                        ? 'bg-[#0f1d3c] border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.3)] ring-1 ring-cyan-400'
-                        : 'bg-blue-50/90 border-blue-400 shadow-xs ring-1 ring-blue-300'
-                      : isVelvet
-                      ? 'bg-[#1F1020]/80 hover:bg-[#331928] border-[#EB8A78]/20'
-                      : isCosmic
-                      ? 'bg-slate-900/60 hover:bg-slate-850 border-slate-800'
-                      : 'bg-stone-50/60 hover:bg-stone-100/60 border-stone-200'
-                  }`}
-                >
-                  <ShieldCheck
-                    className={`w-5 h-5 shrink-0 mt-0.5 ${
-                      orderMode === 'blocking'
-                        ? isVelvet
-                          ? 'text-[#FF8A6B]'
-                          : 'text-blue-600 dark:text-cyan-400'
-                        : 'text-slate-400'
-                    }`}
-                  />
-                  <div className="min-w-0">
-                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
-                      Blocking per Subtes (Simulasi Asli)
-                    </div>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 leading-snug">
-                      Disajikan blok per subtes secara utuh, mereplikasi susunan asli lembar tes UTBK-SNBT.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Mode 2: Interleaved Round-Robin */}
-                <div
-                  onClick={() => setOrderMode('interleaved')}
-                  className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${
-                    orderMode === 'interleaved'
-                      ? isVelvet
-                        ? 'bg-[#3D1F2E] border-[#FF8A6B] ring-1 ring-[#FF8A6B]'
-                        : isCosmic
-                        ? 'bg-[#0f1d3c] border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.3)] ring-1 ring-cyan-400'
-                        : 'bg-blue-50/90 border-blue-400 shadow-xs ring-1 ring-blue-300'
-                      : isVelvet
-                      ? 'bg-[#1F1020]/80 hover:bg-[#331928] border-[#EB8A78]/20'
-                      : isCosmic
-                      ? 'bg-slate-900/60 hover:bg-slate-850 border-slate-800'
-                      : 'bg-stone-50/60 hover:bg-stone-100/60 border-stone-200'
-                  }`}
-                >
-                  <Shuffle
-                    className={`w-5 h-5 shrink-0 mt-0.5 ${
-                      orderMode === 'interleaved'
-                        ? isVelvet
-                          ? 'text-[#FF8A6B]'
-                          : 'text-blue-600 dark:text-cyan-400'
-                        : 'text-slate-400'
-                    }`}
-                  />
-                  <div className="min-w-0">
-                    <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
-                      Interleaved Round-Robin (Campuran)
-                    </div>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 leading-snug">
-                      Soal diputar bergantian antar subtes secara round-robin untuk melatih kelincahan kognitif.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 4. Subchapter Action Toolbar */}
-            <div className="flex flex-wrap items-center justify-between gap-2 px-1 pt-1">
-              <div>
-                <h3 className="font-bold text-slate-800 dark:text-white text-sm sm:text-base">
-                  Sub-bab {currentDrillingSubtest.name || currentDrillingSubtest.title} ({currentDrillingSubtest.code})
-                </h3>
-                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400">
-                  Pilih sub-bab spesifik yang ingin dimasukkan dalam rotasi latihan.
-                </p>
-              </div>
-
-              <div className="flex items-center gap-1.5 flex-wrap">
+              {/* Compact Quick Select Bar */}
+              <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
                 <button
                   type="button"
                   onClick={selectAllInActiveSubtest}
-                  className="px-3 py-1 rounded-xl text-xs font-bold text-blue-600 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-cyan-950/60 border border-blue-200 dark:border-cyan-400/50 cursor-pointer transition shadow-2xs"
+                  className={`px-2.5 py-1 rounded-lg text-xs font-semibold border cursor-pointer transition ${
+                    isVelvet
+                      ? 'text-[#FFBE98] bg-[#1F1020]/70 hover:bg-[#3A1D2E] border-[#EB8A78]/35'
+                      : 'text-blue-700 dark:text-cyan-300 bg-blue-50/70 dark:bg-cyan-950/40 hover:bg-blue-100 dark:hover:bg-cyan-950/70 border-blue-200/80 dark:border-cyan-500/40'
+                  }`}
                 >
-                  Pilih Subtes Ini
+                  Pilih Semua {currentDrillingSubtest.code}
                 </button>
                 <button
                   type="button"
                   onClick={selectAll7Subtests}
-                  className="px-3 py-1 rounded-xl text-xs font-bold text-indigo-600 dark:text-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-400/50 cursor-pointer transition shadow-2xs"
+                  className={`px-2.5 py-1 rounded-lg text-xs font-semibold border cursor-pointer transition ${
+                    isVelvet
+                      ? 'text-[#EBD6DC] bg-[#1F1020]/70 hover:bg-[#3A1D2E] border-[#EB8A78]/25'
+                      : 'text-indigo-700 dark:text-indigo-300 bg-indigo-50/70 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-950/70 border-indigo-200/80 dark:border-indigo-500/40'
+                  }`}
                 >
-                  Pilih Semua 7 Subtes
+                  Campur 7 Subtes
                 </button>
                 {selectedSubchapters.size > 0 && (
                   <button
                     type="button"
                     onClick={clearAllSubtest}
-                    className="px-3 py-1 rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 hover:bg-stone-100 dark:hover:bg-slate-800 cursor-pointer transition"
+                    className="px-2.5 py-1 rounded-lg text-xs font-semibold text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 cursor-pointer transition ml-auto"
                   >
-                    Batal ({selectedSubchapters.size})
+                    Reset ({selectedSubchapters.size})
                   </button>
                 )}
               </div>
             </div>
 
-            {/* Standalone Cards for Drilling */}
-            <div className="space-y-3 sm:space-y-3.5">
+            {/* 2. Collapsible Compact Session Settings Strip (Progressive Disclosure) */}
+            <div
+              className={`rounded-2xl border shadow-2xs overflow-hidden transition-colors ${
+                isVelvet
+                  ? 'bg-[#2B1723]/85 border-[#EB8A78]/25'
+                  : isCosmic
+                  ? 'bg-[#0c1326]/85 border-slate-800'
+                  : isPrism
+                  ? 'bg-white/75 border-white/90'
+                  : 'bg-white/90 border-stone-200/90'
+              }`}
+            >
+              <button
+                type="button"
+                onClick={() => setShowDrillingSettings((prev) => !prev)}
+                aria-expanded={showDrillingSettings}
+                className="w-full px-3.5 py-2.5 flex items-center justify-between gap-2 text-left cursor-pointer hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition"
+              >
+                <div className="flex items-center gap-2 min-w-0 text-xs">
+                  <SlidersHorizontal
+                    className={`w-3.5 h-3.5 shrink-0 ${
+                      isVelvet ? 'text-[#FF8A6B]' : 'text-blue-600 dark:text-cyan-400'
+                    }`}
+                  />
+                  <span className="font-bold text-slate-800 dark:text-slate-100 truncate">
+                    {orderMode === 'blocking' ? 'Urutan: Blocking' : 'Urutan: Campuran'}
+                  </span>
+                  <span className="text-slate-300 dark:text-slate-600">•</span>
+                  <span className="text-slate-500 dark:text-slate-400 truncate">
+                    {activeSeenStats.totalCount > 0
+                      ? `${activeSeenStats.unseenCount.toLocaleString('id-ID')} soal baru`
+                      : 'Memuat bank...'}
+                  </span>
+                </div>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 dark:text-cyan-400 shrink-0">
+                  <span>{showDrillingSettings ? 'Tutup' : 'Atur'}</span>
+                  <ChevronDown
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                      showDrillingSettings ? 'rotate-180' : ''
+                    }`}
+                  />
+                </span>
+              </button>
+
+              {showDrillingSettings && (
+                <div
+                  className={`px-3.5 pb-3.5 pt-2 border-t space-y-3 ${
+                    isVelvet
+                      ? 'border-[#EB8A78]/20'
+                      : 'border-stone-100 dark:border-slate-800'
+                  }`}
+                >
+                  {/* Segmented Order Mode */}
+                  <div className="space-y-1.5">
+                    <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                      Urutan Soal
+                    </div>
+                    <div
+                      className={`grid grid-cols-2 gap-1.5 p-1 rounded-xl border ${
+                        isVelvet
+                          ? 'bg-[#1D101D] border-[#EB8A78]/20'
+                          : 'bg-stone-100 dark:bg-slate-900 border-stone-200/80 dark:border-slate-800'
+                      }`}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => setOrderMode('blocking')}
+                        className={`px-2.5 py-2 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 cursor-pointer ${
+                          orderMode === 'blocking'
+                            ? isVelvet
+                              ? 'bg-[#FF8A6B] text-[#1E0F17] shadow-2xs'
+                              : isCosmic
+                              ? 'bg-cyan-500 text-slate-950 shadow-2xs'
+                              : 'bg-white dark:bg-slate-800 text-blue-700 dark:text-cyan-300 shadow-2xs'
+                            : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                        }`}
+                      >
+                        <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                        <span>Blocking (Urut)</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setOrderMode('interleaved')}
+                        className={`px-2.5 py-2 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 cursor-pointer ${
+                          orderMode === 'interleaved'
+                            ? isVelvet
+                              ? 'bg-[#FF8A6B] text-[#1E0F17] shadow-2xs'
+                              : isCosmic
+                              ? 'bg-cyan-500 text-slate-950 shadow-2xs'
+                              : 'bg-white dark:bg-slate-800 text-blue-700 dark:text-cyan-300 shadow-2xs'
+                            : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                        }`}
+                      >
+                        <Shuffle className="w-3.5 h-3.5 shrink-0" />
+                        <span>Campuran (Acak)</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Quick Question Count Presets */}
+                  <div className="space-y-1.5">
+                    <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                      Preset Jumlah Soal
+                    </div>
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      {[5, 10, 15, 20, 30, 50].map((preset) => (
+                        <button
+                          key={preset}
+                          type="button"
+                          onClick={() => setQuestionCount(preset)}
+                          className={`px-3 py-1 rounded-lg text-xs font-bold border transition cursor-pointer ${
+                            questionCount === preset
+                              ? isVelvet
+                                ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
+                                : 'bg-blue-600 dark:bg-cyan-500 text-white dark:text-slate-950 border-transparent'
+                              : isVelvet
+                              ? 'bg-[#1F1020] text-[#EBD6DC] border-[#EB8A78]/25'
+                              : 'bg-stone-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-stone-200 dark:border-slate-700 hover:bg-stone-100'
+                          }`}
+                        >
+                          {preset} Soal
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Compact Seen Tracker Row */}
+                  <div className="flex items-center justify-between gap-2 pt-1 border-t border-stone-100 dark:border-slate-800/80 text-xs">
+                    <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300 min-w-0">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+                      <span className="truncate">
+                        Dikerjakan:{' '}
+                        <strong>{activeSeenStats.seenCount.toLocaleString('id-ID')}</strong> /{' '}
+                        {activeSeenStats.totalCount.toLocaleString('id-ID')} ({activeSeenStats.percentage}%)
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={handleResetSeen}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400 bg-stone-100 dark:bg-slate-800 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition cursor-pointer shrink-0"
+                    >
+                      <RotateCcw className="w-3 h-3" />
+                      <span>Reset</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* 3. Topic / Bab Section Header */}
+            <div className="flex items-center justify-between gap-2 px-1 pt-0.5">
+              <h3 className="font-bold text-slate-800 dark:text-white text-sm sm:text-base truncate">
+                {currentDrillingSubtest.name || currentDrillingSubtest.title} ({currentDrillingSubtest.code})
+              </h3>
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 shrink-0">
+                Tap untuk memilih
+              </span>
+            </div>
+
+            {/* Standalone Bab Cards for Drilling */}
+            <div className="space-y-2.5 sm:space-y-3">
               {(currentDrillingSubtest.modules || []).map((mod, modIdx) => {
                 const isOpen = openModules.has(mod.id);
                 const selectedInMod = mod.subtopics.filter((s) => selectedSubchapters.has(s.id)).length;
@@ -1052,32 +1049,38 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     {/* Module Header Row */}
                     <div
                       onClick={() => toggleModule(mod.id)}
-                      className="px-3.5 sm:px-5 py-3 sm:py-3.5 flex items-center justify-between gap-3 transition cursor-pointer select-none group"
+                      className="px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between gap-2.5 transition cursor-pointer select-none group"
                     >
                       {/* Left: Module Squircle Icon */}
                       <div
-                        className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
+                        className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 shadow-xs ${subtestTheme.squircle} transition-transform duration-200 group-hover:scale-105`}
                       >
-                        <ModuleIcon moduleId={mod.id} className="w-6 h-6 sm:w-7 sm:h-7" />
+                        <ModuleIcon moduleId={mod.id} className="w-5 h-5 sm:w-6 sm:h-6" />
                       </div>
 
-                      {/* Middle: Title & Meta Info */}
+                      {/* Middle: Title & Concise Count */}
                       <div className="min-w-0 flex-1">
-                        <div className="flex items-center gap-2 mb-0.5">
-                          <span className={`px-2 py-0.5 rounded-md sm:rounded-lg text-[10px] sm:text-[11px] font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
+                        <div className="flex items-center gap-1.5 mb-0.5 flex-wrap">
+                          <span className={`px-1.5 py-0.5 rounded-md text-[10px] font-mono font-bold tracking-wider ${subtestTheme.babBadge}`}>
                             BAB {modIdx + 1 < 10 ? `0${modIdx + 1}` : modIdx + 1}
                           </span>
-                          <span className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">
-                            • {mod.subtopics.length} Sub-bab • ~{mod.estimatedMinutes} mnt
+                          <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+                            {selectedInMod > 0 ? (
+                              <strong className={subtestTheme.highlightText}>
+                                {selectedInMod}/{mod.subtopics.length} dipilih
+                              </strong>
+                            ) : (
+                              `${mod.subtopics.length} Sub-bab`
+                            )}
                           </span>
                         </div>
-                        <h2 className="text-sm sm:text-base font-bold text-slate-800 dark:text-white leading-tight group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
+                        <h2 className="text-sm sm:text-[15px] font-bold text-slate-800 dark:text-white leading-snug group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                           {mod.title}
                         </h2>
                       </div>
 
                       {/* Right: Quick Select / Deselect Module & Chevron */}
-                      <div className="flex items-center gap-2 shrink-0">
+                      <div className="flex items-center gap-1.5 shrink-0">
                         <button
                           type="button"
                           onClick={(e) => {
@@ -1093,12 +1096,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                               return next;
                             });
                           }}
-                          className={`text-xs font-bold px-3 py-1 rounded-lg sm:rounded-xl border transition cursor-pointer shadow-2xs ${
+                          className={`text-xs font-bold px-2.5 py-1 rounded-lg border transition cursor-pointer shadow-2xs ${
                             allSelectedInMod
                               ? isVelvet
                                 ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] font-black'
                                 : isCosmic
-                                ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_0_14px_rgba(0,242,254,0.6)] font-black'
+                                ? 'bg-cyan-500 text-slate-950 border-cyan-400 font-black'
                                 : 'bg-blue-600 text-white border-blue-600'
                               : isVelvet
                               ? 'text-[#FFBE98] hover:bg-[#3A1D2E] border-[#EB8A78]/45'
@@ -1112,7 +1115,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
 
                         <div className="text-slate-400 group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
                           <ChevronDown
-                            className={`w-5 h-5 transition-transform duration-300 ease-out ${
+                            className={`w-4.5 h-4.5 transition-transform duration-300 ease-out ${
                               isOpen ? 'rotate-180 text-blue-600 dark:text-cyan-400' : 'rotate-0 text-slate-400'
                             }`}
                           />
@@ -1120,7 +1123,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       </div>
                     </div>
 
-                    {/* Expanded Sub-bab List: Smooth Animated Accordion */}
+                    {/* Expanded Sub-bab List */}
                     <div
                       className={`grid transition-all duration-300 ease-out ${
                         isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
@@ -1128,7 +1131,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     >
                       <div className="overflow-hidden">
                         <div
-                          className={`px-3 sm:px-4 py-2.5 border-t space-y-2 animate-subtopic-slide ${
+                          className={`px-2.5 sm:px-4 py-2 border-t space-y-1.5 animate-subtopic-slide ${
                             isVelvet
                               ? 'bg-[#1D101D]/90 border-[#EB8A78]/20'
                               : isCosmic
@@ -1142,67 +1145,61 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                             const isSelected = selectedSubchapters.has(sub.id);
 
                             return (
-                              <div
+                              <button
                                 key={sub.id}
+                                type="button"
                                 onClick={() => toggleSubchapterSelect(sub.id)}
-                                style={{ animationDelay: `${sIdx * 30}ms` }}
-                                className={`flex items-center justify-between p-2.5 sm:p-3 rounded-xl sm:rounded-2xl transition-all duration-200 active:scale-[0.985] cursor-pointer group/sub shadow-2xs border ${
+                                style={{ animationDelay: `${sIdx * 20}ms` }}
+                                className={`w-full text-left flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl transition-all duration-150 active:scale-[0.99] cursor-pointer group/sub border ${
                                   isSelected
                                     ? isVelvet
                                       ? 'bg-[#3D1F2E] border-[#FF8A6B] text-[#FBF1F2]'
                                       : isCosmic
-                                      ? 'bg-[#0c2448] border-cyan-400 text-cyan-100 shadow-[0_0_16px_rgba(0,242,254,0.35)]'
-                                      : 'bg-sky-50/90 border-sky-300 shadow-xs'
+                                      ? 'bg-[#0c2448] border-cyan-400 text-cyan-100 shadow-[0_0_12px_rgba(0,242,254,0.25)]'
+                                      : 'bg-sky-50/90 border-sky-300 shadow-2xs'
                                     : isVelvet
-                                    ? 'bg-[#341B2B]/90 hover:bg-[#3F2134] border-[#EB8A78]/25 hover:border-[#FF8A6B] text-[#FBF1F2]'
+                                    ? 'bg-[#341B2B]/80 hover:bg-[#3F2134] border-[#EB8A78]/20 text-[#FBF1F2]'
                                     : isCosmic
-                                    ? 'bg-[#0f1b3b]/90 hover:bg-[#152754] border-slate-700/80 hover:border-cyan-400/60 text-slate-200'
+                                    ? 'bg-[#0f1b3b]/80 hover:bg-[#152754] border-slate-700/70 text-slate-200'
                                     : isPrism
                                     ? 'bg-white/90 hover:bg-sky-50/80 border-white text-slate-800'
-                                    : 'bg-white hover:bg-[#fff9eb] border-stone-200/90 hover:border-amber-200 text-slate-800'
+                                    : 'bg-white hover:bg-stone-50 border-stone-200/80 text-slate-800'
                                 }`}
                               >
-                                {/* Left: Icon Zap + Judul Lengkap */}
-                                <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1 py-0.5">
-                                  {/* Icon Sub-bab */}
-                                  <div
-                                    className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0 transition-colors shadow-2xs border ${
-                                      isSelected
-                                        ? isVelvet
-                                          ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] font-bold'
-                                          : isCosmic
-                                          ? 'bg-cyan-400 text-slate-950 border-cyan-300 shadow-[0_0_12px_rgba(0,242,254,0.6)] font-bold'
-                                          : 'bg-blue-600 text-white border-blue-600'
-                                        : isVelvet
-                                        ? 'bg-[#4A222B] text-[#FFBE98] border-[#EB8A78]/35 group-hover/sub:bg-[#FF8A6B] group-hover/sub:text-[#1E0F17]'
+                                <div
+                                  className={`w-5 h-5 rounded-md flex items-center justify-center shrink-0 transition-colors border ${
+                                    isSelected
+                                      ? isVelvet
+                                        ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
                                         : isCosmic
-                                        ? 'bg-slate-800 text-cyan-300 border-slate-700 group-hover/sub:bg-cyan-600 group-hover/sub:text-white'
-                                        : 'bg-blue-50 text-blue-600 border-blue-100 group-hover/sub:bg-blue-600 group-hover/sub:text-white'
-                                    }`}
-                                  >
-                                    <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                                  </div>
-
-                                  {/* Judul Sub-bab */}
-                                  <span
-                                    className={`text-xs sm:text-sm font-bold leading-snug break-words whitespace-normal flex-1 ${
-                                      isSelected
-                                        ? isVelvet
-                                          ? 'text-[#FFBE98] font-bold'
-                                          : isCosmic
-                                          ? 'text-cyan-100 font-bold'
-                                          : 'text-blue-950 font-bold'
-                                        : isVelvet
-                                        ? 'text-[#FBF1F2] group-hover/sub:text-[#FFBE98]'
-                                        : isCosmic
-                                        ? 'text-slate-200 group-hover/sub:text-cyan-200'
-                                        : 'text-slate-800 group-hover/sub:text-blue-700'
-                                    }`}
-                                  >
-                                    {sub.title}
-                                  </span>
+                                        ? 'bg-cyan-400 text-slate-950 border-cyan-300'
+                                        : 'bg-blue-600 text-white border-blue-600'
+                                      : isVelvet
+                                      ? 'bg-[#22121D] border-[#EB8A78]/40'
+                                      : 'bg-stone-50 dark:bg-slate-900 border-stone-300 dark:border-slate-600'
+                                  }`}
+                                >
+                                  {isSelected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
                                 </div>
-                              </div>
+
+                                <span
+                                  className={`text-xs sm:text-sm font-semibold leading-snug break-words whitespace-normal flex-1 ${
+                                    isSelected
+                                      ? isVelvet
+                                        ? 'text-[#FFBE98] font-bold'
+                                        : isCosmic
+                                        ? 'text-cyan-100 font-bold'
+                                        : 'text-blue-950 font-bold'
+                                      : isVelvet
+                                      ? 'text-[#FBF1F2]'
+                                      : isCosmic
+                                      ? 'text-slate-200'
+                                      : 'text-slate-800'
+                                  }`}
+                                >
+                                  {sub.title}
+                                </span>
+                              </button>
                             );
                           })}
                         </div>
@@ -1216,126 +1213,97 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         )}
       </div>
 
-      {/* STICKY BOTTOM BAR FOR DRILLING SESSION (Bertingkat Steppers with +/-5 & Direct Start) */}
+      {/* SLIM & ERGONOMIC STICKY BOTTOM BAR FOR DRILLING SESSION */}
       {activeTab === 'drilling' && (
         <aside
           aria-label="Konfigurasi Sesi Drilling"
-          className={`fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl p-2.5 sm:p-3.5 transition-all duration-300 ${
+          className={`fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl px-2.5 py-2 sm:px-4 sm:py-3 transition-all duration-300 ${
             isVelvet
               ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/35 shadow-[0_-8px_30px_rgba(0,0,0,0.65)]'
               : isCosmic
               ? 'bg-[#0c1228]/95 border-cyan-500/40 shadow-[0_-8px_30px_rgba(0,0,0,0.75)]'
               : isPrism
-              ? 'bg-white/85 border-white/90 shadow-[0_-8px_25px_rgba(15,23,42,0.08)]'
+              ? 'bg-white/88 border-white/95 shadow-[0_-8px_25px_rgba(15,23,42,0.08)]'
               : 'bg-white/95 border-stone-200/90 shadow-[0_-8px_25px_rgba(0,0,0,0.06)]'
           }`}
         >
-          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-4">
-            {/* Bertingkat Steppers (Jumlah Soal & Waktu Bertingkat dengan +5 / -5) */}
-            <div className="flex flex-col gap-1.5 flex-1 min-w-0">
-              {/* Tingkat 1: Stepper Jumlah Soal (-5, -1, [Count Soal], +1, +5) */}
-              <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-slate-900/90 p-1 rounded-xl border border-stone-200/90 dark:border-slate-800 shadow-2xs">
-                <span className="text-[11px] font-bold text-slate-500 dark:text-cyan-400/80 px-2 min-w-[48px]">
-                  Soal
-                </span>
-                {/* -5 Soal */}
+          <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-3">
+            {/* Compact 2-Column Steppers (Soal & Waktu side-by-side on mobile) */}
+            <div className="grid grid-cols-2 sm:flex items-center gap-2 flex-1 min-w-0">
+              {/* Stepper Jumlah Soal (steps by 5 for effortless adjustment) */}
+              <div className="flex items-center justify-between gap-1 bg-stone-100/90 dark:bg-slate-900/90 p-1 rounded-xl border border-stone-200/90 dark:border-slate-800 sm:min-w-[170px]">
                 <button
                   type="button"
-                  onClick={() => setQuestionCount((prev) => Math.max(1, prev - 5))}
+                  onClick={() =>
+                    setQuestionCount((prev) => (prev <= 5 ? Math.max(1, prev - 1) : prev - 5))
+                  }
                   disabled={questionCount <= 1}
-                  className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                  title="Kurangi 5 Soal"
-                >
-                  -5
-                </button>
-                {/* -1 Soal */}
-                <button
-                  type="button"
-                  onClick={() => setQuestionCount((prev) => Math.max(1, prev - 1))}
-                  disabled={questionCount <= 1}
-                  className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                  title="Kurangi 1 Soal"
+                  className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer shrink-0"
+                  title="Kurangi Soal"
+                  aria-label="Kurangi Soal"
                 >
                   <Minus className="w-3.5 h-3.5" />
                 </button>
-                {/* Display Count */}
-                <div className="px-2 min-w-[62px] text-center select-none font-black text-xs sm:text-sm text-slate-900 dark:text-white">
+                <div className="px-1 text-center select-none font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white truncate">
                   {questionCount} Soal
                 </div>
-                {/* +1 Soal */}
                 <button
                   type="button"
-                  onClick={() => setQuestionCount((prev) => Math.min(100, prev + 1))}
-                  className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                  title="Tambah 1 Soal"
+                  onClick={() =>
+                    setQuestionCount((prev) =>
+                      prev < 5 ? 5 : Math.min(100, prev + 5)
+                    )
+                  }
+                  disabled={questionCount >= 100}
+                  className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer shrink-0"
+                  title="Tambah Soal"
+                  aria-label="Tambah Soal"
                 >
                   <Plus className="w-3.5 h-3.5" />
                 </button>
-                {/* +5 Soal */}
-                <button
-                  type="button"
-                  onClick={() => setQuestionCount((prev) => Math.min(100, prev + 5))}
-                  className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                  title="Tambah 5 Soal"
-                >
-                  +5
-                </button>
               </div>
 
-              {/* Tingkat 2: Stepper Batas Waktu (-5, -1, [Count Menit], +1, +5, Off) */}
-              <div className="flex items-center gap-1.5 bg-stone-100/90 dark:bg-slate-900/90 p-1 rounded-xl border border-stone-200/90 dark:border-slate-800 shadow-2xs">
-                <span className="text-[11px] font-bold text-slate-500 dark:text-cyan-400/80 px-2 min-w-[48px]">
-                  Waktu
-                </span>
+              {/* Stepper Batas Waktu */}
+              <div className="flex items-center justify-between gap-1 bg-stone-100/90 dark:bg-slate-900/90 p-1 rounded-xl border border-stone-200/90 dark:border-slate-800 sm:min-w-[205px]">
                 {timerMinutes !== null ? (
                   <>
-                    {/* -5 Menit */}
                     <button
                       type="button"
-                      onClick={() => setTimerMinutes((prev) => Math.max(1, (prev ?? 15) - 5))}
+                      onClick={() =>
+                        setTimerMinutes((prev) => {
+                          const cur = prev ?? 15;
+                          return cur <= 5 ? Math.max(1, cur - 1) : cur - 5;
+                        })
+                      }
                       disabled={(timerMinutes ?? 15) <= 1}
-                      className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                      title="Kurangi 5 Menit"
-                    >
-                      -5
-                    </button>
-                    {/* -1 Menit */}
-                    <button
-                      type="button"
-                      onClick={() => setTimerMinutes((prev) => Math.max(1, (prev ?? 15) - 1))}
-                      disabled={(timerMinutes ?? 15) <= 1}
-                      className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                      title="Kurangi 1 Menit"
+                      className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer shrink-0"
+                      title="Kurangi Waktu"
+                      aria-label="Kurangi Waktu"
                     >
                       <Minus className="w-3.5 h-3.5" />
                     </button>
-                    {/* Display Minutes */}
-                    <div className="px-2 min-w-[62px] text-center select-none font-black text-xs sm:text-sm text-slate-900 dark:text-white">
+                    <div className="px-1 text-center select-none font-extrabold text-xs sm:text-sm text-slate-900 dark:text-white truncate">
                       {timerMinutes} Mnt
                     </div>
-                    {/* +1 Menit */}
                     <button
                       type="button"
-                      onClick={() => setTimerMinutes((prev) => Math.min(180, (prev ?? 15) + 1))}
-                      className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                      title="Tambah 1 Menit"
+                      onClick={() =>
+                        setTimerMinutes((prev) => {
+                          const cur = prev ?? 15;
+                          return cur < 5 ? 5 : Math.min(180, cur + 5);
+                        })
+                      }
+                      disabled={(timerMinutes ?? 15) >= 180}
+                      className="w-7 h-7 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 flex items-center justify-center transition disabled:opacity-30 shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer shrink-0"
+                      title="Tambah Waktu"
+                      aria-label="Tambah Waktu"
                     >
                       <Plus className="w-3.5 h-3.5" />
                     </button>
-                    {/* +5 Menit */}
-                    <button
-                      type="button"
-                      onClick={() => setTimerMinutes((prev) => Math.min(180, (prev ?? 15) + 5))}
-                      className="h-7 px-2 rounded-lg bg-white dark:bg-slate-800 hover:bg-stone-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 text-xs font-bold transition shadow-2xs border border-stone-200/60 dark:border-slate-700 cursor-pointer"
-                      title="Tambah 5 Menit"
-                    >
-                      +5
-                    </button>
-                    {/* Off Button */}
                     <button
                       type="button"
                       onClick={() => setTimerMinutes(null)}
-                      className="ml-auto px-2 py-1 text-[11px] font-bold text-slate-400 hover:text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/50 rounded-lg transition cursor-pointer"
+                      className="px-1.5 py-1 text-[10px] font-bold text-slate-400 hover:text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/50 rounded-md transition cursor-pointer shrink-0"
                       title="Nonaktifkan Timer"
                     >
                       Off
@@ -1345,11 +1313,11 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   <button
                     type="button"
                     onClick={() => setTimerMinutes(15)}
-                    className="flex-1 h-7 px-3 flex items-center justify-center gap-1.5 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 border border-stone-200/80 dark:border-slate-700 rounded-lg text-slate-600 dark:text-slate-200 text-xs font-bold transition cursor-pointer"
-                    title="Klik untuk mengaktifkan timer 15 menit"
+                    className="flex-1 h-7 px-2 flex items-center justify-center gap-1.5 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 border border-stone-200/80 dark:border-slate-700 rounded-lg text-slate-600 dark:text-slate-200 text-xs font-bold transition cursor-pointer truncate"
+                    title="Aktifkan Timer 15 Menit"
                   >
-                    <Clock className="w-3.5 h-3.5 text-slate-400" />
-                    <span>Tanpa Timer (Aktifkan 15 Mnt)</span>
+                    <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                    <span className="truncate">Tanpa Timer</span>
                   </button>
                 )}
               </div>
@@ -1369,7 +1337,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   );
                 }
               }}
-              className={`w-full sm:w-auto px-6 sm:px-8 py-3 rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none cursor-pointer ${
+              className={`w-full sm:w-auto px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none cursor-pointer ${
                 selectedSubchapters.size > 0
                   ? isVelvet
                     ? 'bg-gradient-to-r from-[#FF8A6B] to-[#F5B041] hover:brightness-110 active:scale-95 text-[#1E0F17] font-extrabold shadow-[0_0_20px_rgba(255,138,107,0.35)]'
@@ -1381,10 +1349,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   : 'bg-stone-200 dark:bg-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed opacity-60'
               }`}
             >
-              <Play className="w-4.5 h-4.5 fill-current" />
-              <span>Mulai Drilling</span>
+              <Play className="w-4 h-4 fill-current" />
+              <span>
+                {selectedSubchapters.size > 0 ? 'Mulai Drilling' : 'Pilih Topik Dulu'}
+              </span>
               {selectedSubchapters.size > 0 && (
-                <span className="ml-1 px-2 py-0.5 rounded-full text-xs bg-white/20 dark:bg-black/25">
+                <span className="px-2 py-0.5 rounded-full text-xs bg-white/20 dark:bg-black/25">
                   {selectedSubchapters.size}
                 </span>
               )}
