@@ -2,7 +2,6 @@ import type {
   Material,
   ThreeZoneMaterial,
   WorkedExample,
-  QuestionOption,
   SubtestType,
 } from '../types/material';
 import { assembleDrillingSession, type OrderMode } from './drillingRotationEngine';
@@ -63,29 +62,6 @@ export function adaptThreeZoneMaterial(data: ThreeZoneMaterial): Material {
   const chNum = parseInt(parts[1], 10) || 1;
   const subNum = parseInt(parts[2], 10) || 1;
 
-  const workedExamples: WorkedExample[] = (data.zona_3_uji_pemahaman || []).map((soal, idx) => {
-    const options: QuestionOption[] = (soal.opsi_jawaban || []).map((opt) => {
-      const match = opt.match(/^([A-E])\.\s*(.+)/s);
-      if (match) {
-        return { key: match[1], text_markdown: match[2].trim() };
-      }
-      return { key: String.fromCharCode(65 + idx), text_markdown: opt };
-    });
-
-    return {
-      example_id: `${data.kode_subbab}-ex${soal.nomor_soal || idx + 1}`,
-      variation_name: `Variasi ${Array.isArray(soal.menguji_variasi_ke) ? soal.menguji_variasi_ke.join(', ') : 'Inti'}`,
-      difficulty: 'medium',
-      question_type: 'standard_mc',
-      question_markdown: soal.pertanyaan_markdown,
-      options,
-      correct_answer: soal.kunci_jawaban,
-      conceptual_solution_markdown: soal.bedah_cepat_markdown,
-      quick_trick_markdown: '',
-      why_others_are_wrong_markdown: '',
-    };
-  });
-
   return {
     ...data,
     metadata: {
@@ -107,7 +83,8 @@ export function adaptThreeZoneMaterial(data: ThreeZoneMaterial): Material {
       distractor_traps: data.zona_1_peta_taktis?.radar_jebakan_utbk || [],
       quick_execution_algorithm: [],
     },
-    worked_examples: workedExamples,
+    // Drilling soal now uses exclusively the 4,240-question bank from /content/drilling/
+    worked_examples: [],
   };
 }
 
@@ -308,6 +285,71 @@ export async function fetchMaterialById(id: string): Promise<Material> {
     },
     worked_examples: [],
   };
+}
+
+export interface DrillingIndexData {
+  total_subbab: number;
+  total_soal: number;
+  total_svg?: number;
+  counts_by_subtest?: Record<string, number>;
+  counts_by_type?: Record<string, number>;
+  subchapters: Record<string, string[]>;
+}
+
+const DRILLING_BANK_CACHE: Record<string, WorkedExample[]> = {};
+let drillingIndexCache: DrillingIndexData | null = null;
+let drillingIndexPromise: Promise<DrillingIndexData | null> | null = null;
+
+function getContentBaseUrl(): string {
+  const rawBase = import.meta.env?.BASE_URL || '/';
+  return rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+}
+
+export async function fetchDrillingIndex(): Promise<DrillingIndexData | null> {
+  if (drillingIndexCache) return drillingIndexCache;
+  if (drillingIndexPromise) return drillingIndexPromise;
+
+  drillingIndexPromise = (async () => {
+    try {
+      const res = await fetch(`${getContentBaseUrl()}content/drilling/index.json`);
+      if (res.ok) {
+        const data = (await res.json()) as DrillingIndexData;
+        drillingIndexCache = data;
+        return data;
+      }
+    } catch (err) {
+      console.warn('Could not fetch drilling index:', err);
+    } finally {
+      drillingIndexPromise = null;
+    }
+    return null;
+  })();
+
+  return drillingIndexPromise;
+}
+
+export async function fetchDrillingQuestionsById(subchapterId: string): Promise<WorkedExample[]> {
+  const normalizedId = subchapterId.toLowerCase().trim();
+  if (DRILLING_BANK_CACHE[normalizedId]) {
+    return DRILLING_BANK_CACHE[normalizedId];
+  }
+
+  const subtestPrefix = normalizedId.split('-')[0];
+  const targetUrl = `${getContentBaseUrl()}content/drilling/${subtestPrefix}/${normalizedId}.json`;
+
+  try {
+    const res = await fetch(targetUrl);
+    if (res.ok) {
+      const data = await res.json();
+      const questions = Array.isArray(data?.questions) ? (data.questions as WorkedExample[]) : [];
+      DRILLING_BANK_CACHE[normalizedId] = questions;
+      return questions;
+    }
+  } catch (err) {
+    console.warn(`Could not fetch drilling bank for ${subchapterId}:`, err);
+  }
+
+  return [];
 }
 
 // Collect questions using the Deterministic Stratified Rotation Engine

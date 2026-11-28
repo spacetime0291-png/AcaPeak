@@ -2,7 +2,7 @@ import type {
   WorkedExample,
   Material,
 } from '../types/material';
-import { fetchMaterialById } from './contentLoader';
+import { ALL_UTBK_SUBCHAPTERS, fetchDrillingQuestionsById } from './contentLoader';
 
 export const SEEN_STORAGE_KEY = 'utbk_seen_questions_v1';
 
@@ -179,10 +179,13 @@ export function isAnswerCorrect(question: WorkedExample, rawUserAnswer: any): bo
     if (normUser === normKey) return true;
 
     // Numerical equivalency check (e.g. 1.5 vs 1,5 or 12 vs 12.0)
-    const numUser = parseFloat(normUser.replace(',', '.'));
-    const numKey = parseFloat(normKey.replace(',', '.'));
-    if (!Number.isNaN(numUser) && !Number.isNaN(numKey) && numUser === numKey) {
-      return true;
+    const numericPattern = /^-?\d+([.,]\d+)?$/;
+    if (numericPattern.test(normUser) && numericPattern.test(normKey)) {
+      const numUser = parseFloat(normUser.replace(',', '.'));
+      const numKey = parseFloat(normKey.replace(',', '.'));
+      if (!Number.isNaN(numUser) && !Number.isNaN(numKey) && numUser === numKey) {
+        return true;
+      }
     }
     return false;
   }
@@ -296,41 +299,24 @@ export async function assembleDrillingSession(
 
   const seenMap = getSeenQuestionsMap();
 
-  // 1. Load materials for all selected subchapters
-  const materials: Material[] = [];
-  if (materialsPool && materialsPool.length > 0) {
-    materials.push(...materialsPool);
-  } else {
-    for (const subId of subchapterIds) {
-      try {
-        const mat = await fetchMaterialById(subId);
-        if (mat) materials.push(mat);
-      } catch (err) {
-        console.warn(`Could not load material ${subId} for rotation engine:`, err);
-      }
-    }
-  }
-
-  // 2. Extract and enrich all candidate questions
+  // 1. Load questions for all selected subchapters
   const allCandidates: EnrichedQuestion[] = [];
-  for (const mat of materials) {
-    const meta = mat.metadata;
-    const subtestCode = (meta.subtest || 'PU').toUpperCase();
-    const chapterNum = meta.chapter_num || 1;
-    const subchapterNum = meta.subchapter_num || '1.1';
-    const subchapterId = meta.id;
-
-    for (const q of mat.worked_examples || []) {
+  const seenMapEntries = (
+    subId: string,
+    subtestCode: string,
+    chapterNum: number,
+    subchapterNum: string,
+    questions: WorkedExample[]
+  ) => {
+    for (const q of questions) {
       const canonicalId = q.example_id.replace(/-(q|repeat)\d+$/i, '');
       const seenCount = seenMap[canonicalId] || 0;
       const category = categorizeQuestion(q);
 
-      // Identify passage key for grouping
       let passageKey: string | undefined = undefined;
       if (q.passage_group_id) {
         passageKey = `${subtestCode}::group::${q.passage_group_id}`;
       } else if (q.context_markdown && q.context_markdown.trim().length > 30) {
-        // Normalize context for identical passage text
         const snippet = q.context_markdown.trim().slice(0, 100).replace(/\s+/g, ' ');
         passageKey = `${subtestCode}::ctx::${snippet}`;
       }
@@ -340,11 +326,44 @@ export async function assembleDrillingSession(
         subtestCode,
         chapterNum,
         subchapterNum,
-        subchapterId,
+        subchapterId: subId,
         seenCount,
         category,
         passageKey,
       });
+    }
+  };
+
+  if (materialsPool && materialsPool.length > 0) {
+    for (const mat of materialsPool) {
+      const meta = mat.metadata;
+      seenMapEntries(
+        meta.id,
+        (meta.subtest || 'PU').toUpperCase(),
+        meta.chapter_num || 1,
+        meta.subchapter_num || '1.1',
+        mat.worked_examples || []
+      );
+    }
+  } else {
+    const BATCH_SIZE = 16;
+    for (let i = 0; i < subchapterIds.length; i += BATCH_SIZE) {
+      const batch = subchapterIds.slice(i, i + BATCH_SIZE);
+      const results = await Promise.all(
+        batch.map(async (subId) => {
+          const qs = await fetchDrillingQuestionsById(subId);
+          return { subId, qs };
+        })
+      );
+      for (const { subId, qs } of results) {
+        const normId = subId.toLowerCase().trim();
+        const sylMeta = ALL_UTBK_SUBCHAPTERS.find((s) => s.id.toLowerCase() === normId);
+        const parts = normId.split('-');
+        const subtestCode = (sylMeta?.subtestCode || parts[0] || 'PU').toUpperCase();
+        const chapterNum = sylMeta?.chapterNum || parseInt(parts[1] || '1', 10) || 1;
+        const subchapterNum = sylMeta?.subchapter_num || `${chapterNum}.${parseInt(parts[2] || '1', 10) || 1}`;
+        seenMapEntries(normId, subtestCode, chapterNum, subchapterNum, qs);
+      }
     }
   }
 

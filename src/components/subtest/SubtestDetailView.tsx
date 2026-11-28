@@ -18,7 +18,11 @@ import {
 } from 'lucide-react';
 import type { SubtestItem } from '../../types/material';
 import { UTBK_SYLLABUS } from '../../lib/syllabusData';
-import { PRELOADED_MATERIALS, isSubchapterCompleted } from '../../lib/contentLoader';
+import {
+  fetchDrillingIndex,
+  isSubchapterCompleted,
+  type DrillingIndexData,
+} from '../../lib/contentLoader';
 import {
   getSeenStats,
   resetSeenQuestions,
@@ -106,6 +110,19 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
   const [orderMode, setOrderMode] = useState<OrderMode>('blocking');
   const [seenStatsVersion, setSeenStatsVersion] = useState<number>(0);
   const [progressVersion, setProgressVersion] = useState<number>(0);
+  const [drillingIndex, setDrillingIndex] = useState<DrillingIndexData | null>(null);
+
+  // Load lightweight 4,240-question drilling index when drilling tab is active
+  useEffect(() => {
+    if (activeTab !== 'drilling') return;
+    let mounted = true;
+    fetchDrillingIndex().then((idx) => {
+      if (mounted && idx) setDrillingIndex(idx);
+    });
+    return () => {
+      mounted = false;
+    };
+  }, [activeTab]);
 
   // Sync completion progress state
   useEffect(() => {
@@ -140,31 +157,23 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
     );
   }, [drillingSubtestCode, subtest]);
 
-  // Compute question IDs and seen stats from preloaded bank
+  // Compute question IDs and seen stats from the 4,240-question drilling index
   const { allAvailableExampleIds, selectedExampleIds } = useMemo(() => {
     const allIds: string[] = [];
     const selIds: string[] = [];
 
-    for (const [key, mat] of Object.entries(PRELOADED_MATERIALS)) {
-      if (mat && mat.worked_examples) {
-        for (const ex of mat.worked_examples) {
-          const canonical = ex.example_id.replace(/-(q|repeat)\d+$/i, '');
-          if (!allIds.includes(canonical)) {
-            allIds.push(canonical);
-          }
-          if (
-            selectedSubchapters.has(mat.metadata.id) ||
-            selectedSubchapters.has(key)
-          ) {
-            if (!selIds.includes(canonical)) {
-              selIds.push(canonical);
-            }
+    if (drillingIndex?.subchapters) {
+      for (const [subId, qIds] of Object.entries(drillingIndex.subchapters)) {
+        for (const qId of qIds) {
+          allIds.push(qId);
+          if (selectedSubchapters.has(subId)) {
+            selIds.push(qId);
           }
         }
       }
     }
     return { allAvailableExampleIds: allIds, selectedExampleIds: selIds };
-  }, [selectedSubchapters, seenStatsVersion]);
+  }, [drillingIndex, selectedSubchapters, seenStatsVersion]);
 
   const activeSeenStats = useMemo(() => {
     const targetPool =
@@ -858,10 +867,19 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                     Pelacak Riwayat Soal (Seen Tracker)
                   </span>
                 </div>
-                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  Bank Soal: <strong>{activeSeenStats.totalCount} Soal</strong> • Belum Dikerjakan (Unseen):{' '}
-                  <strong className="text-indigo-600 dark:text-cyan-400">{activeSeenStats.unseenCount}</strong> • Pernah Dikerjakan:{' '}
-                  <strong>{activeSeenStats.seenCount}</strong> ({activeSeenStats.percentage}%)
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Bank Soal:{' '}
+                  <strong>
+                    {activeSeenStats.totalCount > 0
+                      ? `${activeSeenStats.totalCount.toLocaleString('id-ID')} Soal`
+                      : 'Memuat...'}
+                  </strong>{' '}
+                  • Belum Dikerjakan:{' '}
+                  <strong className="text-indigo-600 dark:text-cyan-400">
+                    {activeSeenStats.unseenCount.toLocaleString('id-ID')}
+                  </strong>{' '}
+                  • Pernah Dikerjakan:{' '}
+                  <strong>{activeSeenStats.seenCount.toLocaleString('id-ID')}</strong> ({activeSeenStats.percentage}%)
                 </p>
               </div>
 

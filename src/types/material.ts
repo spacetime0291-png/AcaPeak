@@ -176,7 +176,13 @@ export interface WorkedExample {
   complex_statements?: ComplexStatementItem[];
   table_headers?: [string, string];
   short_answer_key?: string | number;
+  short_answer_instruction?: string;
   passage_group_id?: string;
+  subtest_code?: string;
+  subchapter_id?: string;
+  subchapter_title?: string;
+  level_kognitif?: 'Standar' | 'HOTS' | string;
+  question_type_label?: string;
   hint_markdown?: string;
   conceptual_solution_markdown: string;
   quick_trick_markdown?: string;

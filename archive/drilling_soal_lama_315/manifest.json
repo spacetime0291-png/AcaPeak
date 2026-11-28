@@ -1,0 +1,16 @@
+{
+  "archived_at": "2026-11-28T02:04:24.522Z",
+  "source": "output_materi/*.json (zona_3_uji_pemahaman)",
+  "total_files": 106,
+  "total_questions_archived": 315,
+  "counts_by_subtest": {
+    "LBE": 34,
+    "LBI": 35,
+    "PBM": 42,
+    "PK": 66,
+    "PM": 45,
+    "PPU": 48,
+    "PU": 45
+  },
+  "note": "Arsip seluruh data drilling soal lama (315 soal dari zona_3_uji_pemahaman) sebelum beralih sepenuhnya ke bank 4240 soal audit drilling."
+}

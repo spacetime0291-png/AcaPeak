@@ -569,6 +569,7 @@ interface DrillingRouteViewProps {
   drillingQuestions: WorkedExample[];
   setDrillingQuestions: React.Dispatch<React.SetStateAction<WorkedExample[]>>;
   drillingTimerMinutes: number | null;
+  drillingSessionId: number;
 }
 
 function DrillingRouteView({
@@ -578,10 +579,16 @@ function DrillingRouteView({
   drillingQuestions,
   setDrillingQuestions,
   drillingTimerMinutes,
+  drillingSessionId,
 }: DrillingRouteViewProps) {
   const { subtest = 'pu' } = useParams<{ subtest?: string }>();
   const navigate = useNavigate();
   const [questionIndex, setQuestionIndex] = useState<number>(0);
+  const [isLoadingSession, setIsLoadingSession] = useState<boolean>(false);
+
+  useEffect(() => {
+    setQuestionIndex(0);
+  }, [drillingSessionId]);
 
   useEffect(() => {
     if (typeof document !== 'undefined') {
@@ -599,18 +606,25 @@ function DrillingRouteView({
         ? sub.modules.flatMap((m) => m.subtopics.map((s) => s.id))
         : (sub.chapters || []).flatMap((c) => c.subchapters.map((s) => s.id));
 
-      collectDrillingQuestions(initialSubIds, 10).then((qs) => {
-        setDrillingQuestions(qs);
-      });
+      setIsLoadingSession(true);
+      collectDrillingQuestions(initialSubIds, 10)
+        .then((qs) => {
+          setDrillingQuestions(qs);
+        })
+        .finally(() => {
+          setIsLoadingSession(false);
+        });
     }
   }, [subtest, drillingQuestions.length, setDrillingQuestions]);
 
   return (
     <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-8 md:px-12 py-3 sm:py-6">
       <DrillingComponent
+        key={drillingSessionId}
         questions={drillingQuestions}
         currentQuestionIndex={questionIndex}
         timerMinutes={drillingTimerMinutes}
+        isLoading={isLoadingSession}
         theme={theme}
         onSelectTheme={onSelectTheme}
         onNavigateQuestion={(newIndex: number) => {
@@ -638,6 +652,7 @@ export default function App({
 
   const [drillingQuestions, setDrillingQuestions] = useState<WorkedExample[]>([]);
   const [drillingTimerMinutes, setDrillingTimerMinutes] = useState<number | null>(15);
+  const [drillingSessionId, setDrillingSessionId] = useState<number>(1);
 
   const [theme, setTheme] = useState<ThemeId>('light');
   const hasLoadedThemeRef = useRef(false);
@@ -678,6 +693,7 @@ export default function App({
     setDrillingTimerMinutes(timerMins);
     const qs = await collectDrillingQuestions(subchapterIds, questionCount, orderMode);
     setDrillingQuestions(qs);
+    setDrillingSessionId((id) => id + 1);
     const subtestCode = subchapterIds[0]?.split('-')[0]?.toLowerCase() || 'pu';
     navigate(`/drilling/${subtestCode}`);
   };
@@ -877,6 +893,7 @@ export default function App({
                   drillingQuestions={drillingQuestions}
                   setDrillingQuestions={setDrillingQuestions}
                   drillingTimerMinutes={drillingTimerMinutes}
+                  drillingSessionId={drillingSessionId}
                 />
               </LazyBoundary>
             }
@@ -892,6 +909,7 @@ export default function App({
                   drillingQuestions={drillingQuestions}
                   setDrillingQuestions={setDrillingQuestions}
                   drillingTimerMinutes={drillingTimerMinutes}
+                  drillingSessionId={drillingSessionId}
                 />
               </LazyBoundary>
             }

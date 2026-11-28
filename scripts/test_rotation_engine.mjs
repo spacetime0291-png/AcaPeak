@@ -133,18 +133,44 @@ assert.strictEqual(
 );
 console.log('✓ isAnswerCorrect tests passed!');
 
-// --- Test 2: Multi-Subtest Balancing & Wave Pattern ---
+// --- Test 2: Multi-Subtest Balancing & Wave Pattern (Using 4,240 Audited Drilling Bank) ---
 console.log('\n[2] Testing assembleDrillingSession multi-subtest balancing & wave pattern...');
 
-const loadMock = (name) => adaptThreeZoneMaterial(JSON.parse(fs.readFileSync(`output_materi/${name}.json`, 'utf8')));
+// Verify adaptThreeZoneMaterial no longer injects legacy zona_3 into drilling worked_examples
+const legacyCheck = adaptThreeZoneMaterial(JSON.parse(fs.readFileSync('output_materi/pu-01-01.json', 'utf8')));
+assert.strictEqual(legacyCheck.worked_examples.length, 0, 'Legacy zona_3 must not leak into drilling worked_examples');
+
+const loadDrillingBank = (name) => {
+  const prefix = name.split('-')[0];
+  const d = JSON.parse(fs.readFileSync(`public/content/drilling/${prefix}/${name}.json`, 'utf8'));
+  const parts = name.split('-');
+  return {
+    metadata: {
+      id: name,
+      subtest: prefix.toUpperCase(),
+      chapter_num: parseInt(parts[1], 10) || 1,
+      chapter_title: 'Bab',
+      subchapter_num: `${parseInt(parts[1], 10)}.${parseInt(parts[2], 10)}`,
+      subchapter_title: d.subchapter_title || name,
+      title: d.subchapter_title || name,
+      required_question_variations: [],
+      requires_svg: false,
+      updated_at: '2026-11-28',
+    },
+    content: { exam_blueprint_markdown: '', visualizations_svg: [], distractor_traps: [] },
+    worked_examples: d.questions,
+  };
+};
 
 const mockPool = [
-  loadMock('pu-01-01'),
-  loadMock('pu-01-02'),
-  loadMock('pu-01-03'),
-  loadMock('ppu-01-01'),
-  loadMock('ppu-01-02'),
-  loadMock('pbm-01-01'),
+  loadDrillingBank('pu-01-01'),
+  loadDrillingBank('pu-01-02'),
+  loadDrillingBank('ppu-01-01'),
+  loadDrillingBank('pbm-01-01'),
+  loadDrillingBank('pk-01-01'),
+  loadDrillingBank('pm-01-01'),
+  loadDrillingBank('lbi-01-01'),
+  loadDrillingBank('lbe-01-01'),
 ];
 
 // Test with 15 questions from 3 subtests (PU, PPU, PBM): should allocate 5 per subtest!
