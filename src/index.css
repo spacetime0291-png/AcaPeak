@@ -625,20 +625,20 @@ html[data-theme="velvet"] .rangkuman-page-dark {
   background-color: #160C18;
 }
 
-/* Scoped secondary-page surface harmony for Velvet Dusk (without heavy blur on long lists) */
+/* Scoped secondary-page surface harmony for Velvet Dusk (soft muted borders, without heavy blur on long lists) */
 html[data-theme="velvet"] .velvet-surface {
   background-color: #2B1723 !important;
-  border-color: rgba(235, 138, 120, 0.35) !important;
+  border-color: rgba(235, 138, 120, 0.18) !important;
 }
 
 html[data-theme="velvet"] .velvet-surface-deep {
   background-color: #1B0F1B !important;
-  border-color: rgba(235, 138, 120, 0.28) !important;
+  border-color: rgba(235, 138, 120, 0.14) !important;
 }
 
 html[data-theme="velvet"] .velvet-surface-elevated {
   background-color: #341B2B !important;
-  border-color: rgba(235, 138, 120, 0.4) !important;
+  border-color: rgba(235, 138, 120, 0.22) !important;
 }
 
 html[data-theme="velvet"] .velvet-text-muted {

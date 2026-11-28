@@ -776,13 +776,13 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
     return (
       <div className="w-full max-w-4xl mx-auto pb-28 animate-page-enter">
-        {/* 1. STICKY TOP REVIEW BAR */}
+        {/* 1. STICKY TOP REVIEW BAR (includes Sticky Palette Drawer) */}
         <div
           className={`sticky top-0 z-30 backdrop-blur-md rounded-2xl border shadow-sm p-2.5 sm:p-3.5 mb-3 sm:mb-4 transition-all duration-300 ${
             isVelvet
-              ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/30'
+              ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/18'
               : isCosmic
-              ? 'bg-[#0c1224]/90 border-cyan-500/25'
+              ? 'bg-[#0c1224]/92 border-slate-800'
               : isPrism
               ? 'bg-white/85 border-white/95'
               : 'bg-white/95 border-stone-200/90'
@@ -803,7 +803,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                 Pembahasan {reviewIndex + 1} <span className="text-slate-400 font-normal">/ {totalQuestions}</span>
               </span>
               {isCorrect ? (
-                <span className="px-2 py-0.5 rounded-lg text-[11px] font-bold bg-emerald-100 dark:bg-emerald-950/90 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/60 flex items-center gap-1 shrink-0">
+                <span className="px-2 py-0.5 rounded-lg text-[11px] font-bold bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800/60 flex items-center gap-1 shrink-0">
                   <CheckCircle2 className="w-3 h-3" />
                   <span>Benar</span>
                 </span>
@@ -811,8 +811,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                 <span
                   className={`px-2 py-0.5 rounded-lg text-[11px] font-bold border flex items-center gap-1 shrink-0 ${
                     isVelvet
-                      ? 'bg-[#4A121D] text-rose-200 border-rose-400/70'
-                      : 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-600/70'
+                      ? 'bg-[#4A121D] text-rose-200 border-rose-400/40'
+                      : 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-800/60'
                   }`}
                 >
                   <XCircle className="w-3 h-3" />
@@ -828,10 +828,10 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                 className={`px-2.5 py-1.5 rounded-xl border text-xs sm:text-sm font-bold flex items-center gap-1.5 cursor-pointer transition ${
                   isReviewPaletteOpen
                     ? isVelvet
-                      ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
-                      : 'bg-indigo-600 dark:bg-cyan-500 text-white dark:text-slate-950 border-transparent'
+                      ? 'bg-[#E27B60] text-[#1E0F17] border-[#E27B60]'
+                      : 'bg-indigo-600 dark:bg-cyan-600 text-white border-transparent'
                     : isVelvet
-                    ? 'border-[#EB8A78]/30 text-[#FBF1F2] hover:bg-[#3A1F30]'
+                    ? 'border-[#EB8A78]/18 text-[#FBF1F2] hover:bg-[#3A1F30]'
                     : 'border-stone-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-stone-100 dark:hover:bg-slate-800'
                 }`}
                 title="Daftar Nomor Pembahasan"
@@ -849,132 +849,128 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
             <div
               className={`h-full transition-all duration-300 ${
                 isVelvet
-                  ? 'bg-[#FF8A6B]'
+                  ? 'bg-[#E27B60]'
                   : isPrism
                   ? 'bg-gradient-to-r from-blue-600 to-sky-500'
-                  : 'bg-indigo-600 dark:bg-cyan-400'
+                  : 'bg-indigo-600 dark:bg-cyan-500'
               }`}
               style={{ width: `${((reviewIndex + 1) / totalQuestions) * 100}%` }}
             />
           </div>
-        </div>
 
-        {/* Review Question Palette Drawer */}
-        {isReviewPaletteOpen && (
-          <div
-            className={`mb-3 sm:mb-4 rounded-2xl border p-3.5 sm:p-4 shadow-md space-y-3 ${
-              isVelvet
-                ? 'bg-[#2B1723] border-[#EB8A78]/35'
-                : isPrism
-                ? 'bg-white/92 border-white/95'
-                : 'bg-white dark:bg-[#0c1326] border-stone-200 dark:border-slate-800'
-            }`}
-          >
-            <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-stone-100 dark:border-slate-800">
-              <div className="flex items-center gap-1.5 flex-wrap">
-                {[
-                  { id: 'all' as ReviewFilter, label: `Semua (${totalQuestions})` },
-                  { id: 'wrong' as ReviewFilter, label: `Salah (${wrongAnsweredCount})` },
-                  { id: 'correct' as ReviewFilter, label: `Benar (${correctCount})` },
-                  { id: 'unanswered' as ReviewFilter, label: `Kosong (${unansweredCount})` },
-                ].map((tab) => (
-                  <button
-                    key={tab.id}
-                    type="button"
-                    onClick={() => setReviewFilter(tab.id)}
-                    className={`px-2.5 py-1 rounded-lg text-[11px] font-bold border transition cursor-pointer ${
-                      reviewFilter === tab.id
-                        ? isVelvet
-                          ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
-                          : 'bg-indigo-600 dark:bg-cyan-500 text-white dark:text-slate-950 border-transparent'
-                        : isVelvet
-                        ? 'bg-[#1F1020] text-[#EBD6DC] border-[#EB8A78]/25'
-                        : 'bg-stone-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-700'
-                    }`}
-                  >
-                    {tab.label}
-                  </button>
-                ))}
-              </div>
-              <button
-                type="button"
-                onClick={() => setIsReviewPaletteOpen(false)}
-                className="text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 cursor-pointer"
-              >
-                Tutup
-              </button>
-            </div>
-
-            {filteredReviewItems.length === 0 ? (
-              <p className="text-xs text-slate-500 dark:text-slate-400 text-center py-2">
-                Tidak ada soal pada kategori filter ini.
-              </p>
-            ) : (
-              <div className="grid grid-cols-5 sm:grid-cols-10 gap-2">
-                {filteredReviewItems.map((item) => {
-                  const isCurrent = item.idx === reviewIndex;
-                  let badgeClass = !item.isAnswered
-                    ? 'bg-stone-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-700'
-                    : item.isCorrect
-                    ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700 font-bold'
-                    : 'bg-rose-100 dark:bg-rose-950 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-700 font-bold';
-
-                  if (isCurrent) {
-                    badgeClass += isVelvet
-                      ? ' ring-2 ring-[#FFBE98]'
-                      : ' ring-2 ring-indigo-500 dark:ring-cyan-400';
-                  }
-
-                  return (
+          {/* Sticky Review Question Palette Drawer (Stays pinned with top bar!) */}
+          {isReviewPaletteOpen && (
+            <div
+              className={`mt-3 pt-3 border-t space-y-3 max-h-[55vh] overflow-y-auto ${
+                isVelvet ? 'border-[#EB8A78]/18' : 'border-stone-100 dark:border-slate-800'
+              }`}
+            >
+              <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-stone-100 dark:border-slate-800">
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {[
+                    { id: 'all' as ReviewFilter, label: `Semua (${totalQuestions})` },
+                    { id: 'wrong' as ReviewFilter, label: `Salah (${wrongAnsweredCount})` },
+                    { id: 'correct' as ReviewFilter, label: `Benar (${correctCount})` },
+                    { id: 'unanswered' as ReviewFilter, label: `Kosong (${unansweredCount})` },
+                  ].map((tab) => (
                     <button
-                      key={item.q.example_id}
+                      key={tab.id}
                       type="button"
-                      onClick={() => {
-                        setReviewIndex(item.idx);
-                        setIsReviewPaletteOpen(false);
-                      }}
-                      className={`h-9 rounded-xl border text-xs font-mono transition flex items-center justify-center cursor-pointer ${badgeClass}`}
+                      onClick={() => setReviewFilter(tab.id)}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-bold border transition cursor-pointer ${
+                        reviewFilter === tab.id
+                          ? isVelvet
+                            ? 'bg-[#E27B60] text-[#1E0F17] border-[#E27B60]'
+                            : 'bg-indigo-600 dark:bg-cyan-600 text-white border-transparent'
+                          : isVelvet
+                          ? 'bg-[#2B1723] text-[#EBD6DC] border-[#EB8A78]/18'
+                          : 'bg-stone-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-800'
+                      }`}
                     >
-                      {item.idx + 1}
+                      {tab.label}
                     </button>
-                  );
-                })}
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setIsReviewPaletteOpen(false)}
+                  className="text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 cursor-pointer"
+                >
+                  Tutup
+                </button>
               </div>
-            )}
-          </div>
-        )}
+
+              {filteredReviewItems.length === 0 ? (
+                <p className="text-xs text-slate-500 dark:text-slate-400 text-center py-2">
+                  Tidak ada soal pada kategori filter ini.
+                </p>
+              ) : (
+                <div className="grid grid-cols-5 sm:grid-cols-10 gap-2 pb-1">
+                  {filteredReviewItems.map((item) => {
+                    const isCurrent = item.idx === reviewIndex;
+                    let badgeClass = !item.isAnswered
+                      ? 'bg-stone-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-stone-200 dark:border-slate-800'
+                      : item.isCorrect
+                      ? 'bg-emerald-100 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800/60 font-bold'
+                      : 'bg-rose-100 dark:bg-rose-950/70 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-800/60 font-bold';
+
+                    if (isCurrent) {
+                      badgeClass += isVelvet
+                        ? ' ring-2 ring-[#EB8A78]/70'
+                        : ' ring-2 ring-indigo-500 dark:ring-cyan-600/80';
+                    }
+
+                    return (
+                      <button
+                        key={item.q.example_id}
+                        type="button"
+                        onClick={() => {
+                          setReviewIndex(item.idx);
+                          setIsReviewPaletteOpen(false);
+                        }}
+                        className={`h-9 rounded-xl border text-xs font-mono transition flex items-center justify-center cursor-pointer ${badgeClass}`}
+                      >
+                        {item.idx + 1}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
 
         {/* 2. SINGLE-QUESTION REVIEW CARD */}
         <div
-          className={`rounded-2xl sm:rounded-3xl border shadow-sm px-3 py-4 sm:p-6 space-y-4 sm:space-y-5 transition-colors ${
+          className={`rounded-2xl sm:rounded-3xl border shadow-sm px-3.5 py-4 sm:p-6 space-y-4 sm:space-y-5 transition-colors ${
             isVelvet
-              ? 'bg-[#2B1723] border-[#EB8A78]/35'
+              ? 'bg-[#2B1723] border-[#EB8A78]/18'
               : isPrism
               ? 'bg-white/90 border-white/95'
               : 'bg-white dark:bg-[#0c1326] border-stone-200/90 dark:border-slate-800'
           }`}
         >
           {/* Tags Row */}
-          <div className={`flex flex-wrap items-center justify-between gap-2 pb-3 border-b ${isVelvet ? 'border-[#EB8A78]/20' : 'border-stone-100 dark:border-slate-800'}`}>
+          <div className={`flex flex-wrap items-center justify-between gap-2 pb-3 border-b ${isVelvet ? 'border-[#EB8A78]/15' : 'border-stone-100 dark:border-slate-800'}`}>
             <div className="flex flex-wrap items-center gap-1.5 min-w-0">
               <span
                 className={`text-xs font-bold px-2.5 py-1 rounded-lg border ${
                   isVelvet
-                    ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/40'
-                    : 'text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/70 border-indigo-200/80 dark:border-cyan-800/60'
+                    ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/20'
+                    : 'text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/60 border-indigo-200/80 dark:border-cyan-900/50'
                 }`}
               >
                 {q.subtest_code ? `${q.subtest_code} • ` : ''}
                 {q.variation_name}
               </span>
-              <span className="text-xs font-mono font-semibold px-2 py-1 rounded-lg bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200/80 dark:border-slate-700">
+              <span className="text-xs font-mono font-semibold px-2 py-1 rounded-lg bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200/80 dark:border-slate-800">
                 {getQuestionTypeBadgeLabel(q)}
               </span>
               <span
                 className={`text-xs font-mono font-bold px-2 py-1 rounded-lg border ${
                   getLevelBadgeLabel(q) === 'HOTS'
-                    ? 'bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800/70'
-                    : 'bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/70'
+                    ? 'bg-rose-50 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-900/50'
+                    : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-900/50'
                 }`}
               >
                 {getLevelBadgeLabel(q)}
@@ -988,18 +984,18 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               className={`px-3.5 py-2.5 rounded-xl border flex items-center justify-between gap-2 text-xs sm:text-sm ${
                 !isAnswered
                   ? isVelvet
-                    ? 'bg-[#22121D] border-[#EB8A78]/25 text-[#C9A9B0]'
+                    ? 'bg-[#22121D] border-[#EB8A78]/18 text-[#C9A9B0]'
                     : 'bg-stone-50 dark:bg-slate-900 border-stone-200 dark:border-slate-800 text-slate-600 dark:text-slate-300'
                   : isCorrect
-                  ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-700 text-emerald-900 dark:text-emerald-200'
-                  : 'bg-rose-50 dark:bg-rose-950/60 border-rose-300 dark:border-rose-700 text-rose-900 dark:text-rose-200'
+                  ? 'bg-emerald-50 dark:bg-emerald-950/45 border-emerald-300 dark:border-emerald-800/60 text-emerald-900 dark:text-emerald-200'
+                  : 'bg-rose-50 dark:bg-rose-950/45 border-rose-300 dark:border-rose-800/60 text-rose-900 dark:text-rose-200'
               }`}
             >
               <span className="font-semibold opacity-80">Jawaban Anda</span>
               <span className="font-extrabold">{userAnswerLabel}</span>
             </div>
 
-            <div className="px-3.5 py-2.5 rounded-xl border bg-emerald-50 dark:bg-emerald-950/70 border-emerald-400/70 dark:border-emerald-600 text-emerald-900 dark:text-emerald-200 flex items-center justify-between gap-2 text-xs sm:text-sm">
+            <div className="px-3.5 py-2.5 rounded-xl border bg-emerald-50 dark:bg-emerald-950/50 border-emerald-400/70 dark:border-emerald-800/60 text-emerald-900 dark:text-emerald-200 flex items-center justify-between gap-2 text-xs sm:text-sm">
               <span className="font-semibold flex items-center gap-1">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <span>Kunci Jawaban</span>
@@ -1013,8 +1009,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
             <div
               className={`p-3 sm:p-4 rounded-xl border border-l-4 text-[15px] sm:text-base leading-[1.8] ${
                 isVelvet
-                  ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B] text-[#FBF1F2]'
-                  : 'bg-stone-50/90 dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 border-l-slate-400 dark:border-l-slate-600 text-slate-800 dark:text-slate-200'
+                  ? 'bg-[#1F1020] border-[#EB8A78]/15 border-l-[#EB8A78]/40 text-[#FBF1F2]'
+                  : 'bg-stone-50/90 dark:bg-slate-900 border-stone-200/80 dark:border-slate-800 border-l-slate-400 dark:border-l-slate-600/75 text-slate-800 dark:text-slate-200'
               }`}
             >
               <div className="flex items-center justify-between gap-2 mb-2">
@@ -1206,8 +1202,8 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           <div
             className={`p-3.5 sm:p-5 rounded-2xl border border-l-4 space-y-2.5 shadow-2xs ${
               isVelvet
-                ? 'bg-[#22121D] border-[#EB8A78]/30 border-l-[#FF8A6B] text-[#FBF1F2]'
-                : 'bg-indigo-50/70 dark:bg-[#0f1a34] border-indigo-200/80 dark:border-cyan-800/60 border-l-indigo-600 dark:border-l-cyan-400 text-slate-800 dark:text-slate-200'
+                ? 'bg-[#22121D] border-[#EB8A78]/18 border-l-[#EB8A78]/45 text-[#FBF1F2]'
+                : 'bg-indigo-50/70 dark:bg-[#0f1a34] border-indigo-200/80 dark:border-slate-800 border-l-indigo-600 dark:border-l-cyan-700/65 text-slate-800 dark:text-slate-200'
             }`}
           >
             <div className="flex items-center justify-between gap-2">
@@ -1215,7 +1211,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                 className={`inline-flex items-center gap-1.5 font-extrabold text-xs uppercase tracking-wider px-2.5 py-1 rounded-lg ${
                   isVelvet
                     ? 'bg-[#4A222B] text-[#FFBE98]'
-                    : 'bg-indigo-100 dark:bg-cyan-950 text-indigo-800 dark:text-cyan-300'
+                    : 'bg-indigo-100 dark:bg-cyan-950/70 text-indigo-800 dark:text-cyan-300'
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5" />
@@ -1232,15 +1228,15 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
             <div
               className={`p-3.5 sm:p-5 rounded-2xl border border-l-4 space-y-2 shadow-2xs ${
                 isVelvet
-                  ? 'bg-[#361D1E] border-[#F5B041]/40 border-l-[#F5B041] text-[#FBF1F2]'
-                  : 'bg-amber-50/90 dark:bg-amber-950/45 border-amber-300/80 dark:border-amber-700/70 border-l-amber-500 text-amber-950 dark:text-amber-100'
+                  ? 'bg-[#361D1E] border-[#EB8A78]/18 border-l-[#D4954B]/55 text-[#FBF1F2]'
+                  : 'bg-amber-50/90 dark:bg-amber-950/30 border-amber-300/80 dark:border-amber-900/45 border-l-amber-500 dark:border-l-amber-700/60 text-amber-950 dark:text-amber-100'
               }`}
             >
               <span
                 className={`inline-flex items-center gap-1.5 font-extrabold text-xs uppercase tracking-wider px-2.5 py-1 rounded-lg ${
                   isVelvet
                     ? 'bg-[#482E1A] text-[#F5B041]'
-                    : 'bg-amber-200/80 dark:bg-amber-900/70 text-amber-900 dark:text-amber-200'
+                    : 'bg-amber-200/80 dark:bg-amber-900/60 text-amber-900 dark:text-amber-200'
                 }`}
               >
                 ⚡ Trik Cepat / Eliminasi Kilat
@@ -1269,9 +1265,9 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
         <div
           className={`fixed bottom-0 left-0 right-0 z-40 backdrop-blur-md border-t shadow-2xl p-2.5 sm:p-3.5 transition-all duration-300 ${
             isVelvet
-              ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/30'
+              ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/18'
               : isCosmic
-              ? 'bg-[#0c1224]/90 border-cyan-500/30'
+              ? 'bg-[#0c1224]/92 border-slate-800'
               : isPrism
               ? 'bg-white/85 border-white/95'
               : 'bg-white/95 border-stone-200/90'
@@ -1342,13 +1338,13 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
 
   return (
     <div className="w-full max-w-4xl mx-auto pb-28 animate-page-enter">
-      {/* 1. STICKY TOP STATUS BAR */}
+      {/* 1. STICKY TOP STATUS BAR (includes Sticky Palette Drawer) */}
       <div
         className={`sticky top-0 z-30 backdrop-blur-md rounded-2xl border shadow-sm p-3 sm:p-3.5 mb-4 transition-all duration-300 ${
           isVelvet
-            ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/30'
+            ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/18'
             : isCosmic
-            ? 'bg-[#0c1224]/90 border-cyan-500/25'
+            ? 'bg-[#0c1224]/92 border-slate-800'
             : isPrism
             ? 'bg-white/85 border-white/95'
             : 'bg-white/95 border-stone-200/90'
@@ -1383,7 +1379,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                 timerMinutes && secondsRemaining < 120
                   ? 'bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300 animate-pulse border border-rose-300 dark:border-rose-800'
                   : isVelvet
-                  ? 'bg-[#2B1723] text-[#FFBE98] border border-[#EB8A78]/30'
+                  ? 'bg-[#2B1723] text-[#FFBE98] border border-[#EB8A78]/18'
                   : 'bg-stone-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-stone-200/80 dark:border-slate-700'
               }`}
             >
@@ -1402,10 +1398,10 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               className={`px-2.5 py-1.5 rounded-xl border text-xs sm:text-sm font-bold flex items-center gap-1.5 cursor-pointer transition ${
                 isPaletteOpen
                   ? isVelvet
-                    ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
-                    : 'bg-indigo-600 dark:bg-cyan-500 text-white dark:text-slate-950 border-transparent'
+                    ? 'bg-[#E27B60] text-[#1E0F17] border-[#E27B60]'
+                    : 'bg-indigo-600 dark:bg-cyan-600 text-white border-transparent'
                   : isVelvet
-                  ? 'border-[#EB8A78]/30 text-[#FBF1F2] hover:bg-[#3A1F30]'
+                  ? 'border-[#EB8A78]/18 text-[#FBF1F2] hover:bg-[#3A1F30]'
                   : 'border-stone-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-stone-100 dark:hover:bg-slate-800'
               }`}
               title="Daftar Nomor Soal"
@@ -1424,109 +1420,105 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           <div
             className={`h-full transition-all duration-300 ${
               isVelvet
-                ? 'bg-[#FF8A6B]'
+                ? 'bg-[#E27B60]'
                 : isPrism
                 ? 'bg-gradient-to-r from-blue-600 to-sky-500'
-                : 'bg-indigo-600 dark:bg-cyan-400'
+                : 'bg-indigo-600 dark:bg-cyan-500'
             }`}
             style={{
               width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%`,
             }}
           />
         </div>
-      </div>
 
-      {/* Popover / Collapsible Palette Grid */}
-      {isPaletteOpen && (
-        <div
-          className={`mb-4 rounded-2xl border p-4 shadow-md animate-in fade-in duration-150 ${
-            isVelvet
-              ? 'bg-[#2B1723] border-[#EB8A78]/35'
-              : isPrism
-              ? 'bg-white/92 border-white/95'
-              : 'bg-white dark:bg-[#0c1326] border-stone-200 dark:border-slate-800'
-          }`}
-        >
-          <div className="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2.5 border-b border-stone-100 dark:border-slate-800">
-            <span className="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider">
-              Navigasi Soal ({answeredCount}/{totalQuestions} Dijawab)
-            </span>
-            <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
-              <span className="inline-flex items-center gap-1">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> Dijawab
+        {/* Sticky Palette Grid (Stays pinned with top bar!) */}
+        {isPaletteOpen && (
+          <div
+            className={`mt-3 pt-3 border-t max-h-[55vh] overflow-y-auto ${
+              isVelvet ? 'border-[#EB8A78]/18' : 'border-stone-100 dark:border-slate-800'
+            }`}
+          >
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-stone-100 dark:border-slate-800">
+              <span className="text-xs font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wider">
+                Navigasi Soal ({answeredCount}/{totalQuestions} Dijawab)
               </span>
-              <span className="inline-flex items-center gap-1">
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500" /> Ragu
-              </span>
-              <button
-                type="button"
-                onClick={() => setIsPaletteOpen(false)}
-                className="text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 ml-1 cursor-pointer"
-              >
-                Tutup
-              </button>
+              <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                <span className="inline-flex items-center gap-1">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> Dijawab
+                </span>
+                <span className="inline-flex items-center gap-1">
+                  <span className="w-2.5 h-2.5 rounded-full bg-amber-500" /> Ragu
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setIsPaletteOpen(false)}
+                  className="text-xs font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 ml-1 cursor-pointer"
+                >
+                  Tutup
+                </button>
+              </div>
+            </div>
+            <div className="grid grid-cols-5 sm:grid-cols-10 gap-2 pb-1">
+              {questions.map((q, idx) => {
+                const isCurrent = idx === currentQuestionIndex;
+                const isAnswered = isQuestionAnswered(q);
+                const isFlagged = flaggedIndices.has(idx);
+
+                let badgeClass = isVelvet
+                  ? 'bg-[#2B1723] text-[#EBD6DC] border-[#EB8A78]/18 hover:bg-[#381C2C]'
+                  : 'bg-stone-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-stone-200 dark:border-slate-800 hover:bg-stone-100';
+                if (isCurrent) {
+                  badgeClass = isVelvet
+                    ? 'bg-[#E27B60] text-[#1E0F17] font-bold ring-2 ring-[#EB8A78]/70'
+                    : isCosmic
+                    ? 'bg-cyan-600 text-white font-bold ring-2 ring-cyan-500/60'
+                    : 'bg-indigo-600 text-white font-bold shadow-xs ring-2 ring-indigo-300';
+                } else if (isFlagged) {
+                  badgeClass = 'bg-amber-100 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300 border-amber-300 dark:border-amber-800/60 font-bold';
+                } else if (isAnswered) {
+                  badgeClass = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/70 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800/60 font-semibold';
+                }
+
+                return (
+                  <button
+                    key={q.example_id}
+                    type="button"
+                    onClick={() => {
+                      onNavigateQuestion(idx);
+                      setIsPaletteOpen(false);
+                    }}
+                    className={`h-9 rounded-xl border text-xs font-mono transition flex items-center justify-center cursor-pointer relative ${badgeClass}`}
+                  >
+                    <span>{idx + 1}</span>
+                    {isFlagged && !isCurrent && (
+                      <span className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-amber-500" />
+                    )}
+                  </button>
+                );
+              })}
             </div>
           </div>
-          <div className="grid grid-cols-5 sm:grid-cols-10 gap-2">
-            {questions.map((q, idx) => {
-              const isCurrent = idx === currentQuestionIndex;
-              const isAnswered = isQuestionAnswered(q);
-              const isFlagged = flaggedIndices.has(idx);
-
-              let badgeClass = isVelvet
-                ? 'bg-[#1F1020] text-[#EBD6DC] border-[#EB8A78]/25 hover:bg-[#381C2C]'
-                : 'bg-stone-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-stone-200 dark:border-slate-800 hover:bg-stone-100';
-              if (isCurrent) {
-                badgeClass = isVelvet
-                  ? 'bg-[#FF8A6B] text-[#1E0F17] font-bold ring-2 ring-[#FFBE98]'
-                  : isCosmic
-                  ? 'bg-cyan-500 text-slate-950 font-bold ring-2 ring-cyan-300'
-                  : 'bg-indigo-600 text-white font-bold shadow-xs ring-2 ring-indigo-300';
-              } else if (isFlagged) {
-                badgeClass = 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border-amber-300 dark:border-amber-700 font-bold';
-              } else if (isAnswered) {
-                badgeClass = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700 font-semibold';
-              }
-
-              return (
-                <button
-                  key={q.example_id}
-                  type="button"
-                  onClick={() => {
-                    onNavigateQuestion(idx);
-                    setIsPaletteOpen(false);
-                  }}
-                  className={`h-9 rounded-xl border text-xs font-mono transition flex items-center justify-center cursor-pointer relative ${badgeClass}`}
-                >
-                  <span>{idx + 1}</span>
-                  {isFlagged && !isCurrent && (
-                    <span className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-amber-500" />
-                  )}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* 2. QUESTION CARD (Uniform Font Scale text-[15px] sm:text-base, Wider Mobile Space) */}
       <div
-        className={`rounded-2xl sm:rounded-3xl border shadow-sm px-3 py-4 sm:p-6 space-y-4 sm:space-y-5 transition-colors ${
+        className={`rounded-2xl sm:rounded-3xl border shadow-sm px-3.5 py-4 sm:p-6 space-y-4 sm:space-y-5 transition-colors ${
           isVelvet
-            ? 'bg-[#2B1723] border-[#EB8A78]/35'
+            ? 'bg-[#2B1723] border-[#EB8A78]/18'
             : isPrism
             ? 'bg-white/90 border-white/95'
             : 'bg-white dark:bg-[#0c1326] border-stone-200/90 dark:border-slate-800'
         }`}
       >
         {/* Topic, Type, Level & Flag header */}
-        <div className={`flex flex-wrap items-center justify-between gap-2 pb-3.5 border-b ${isVelvet ? 'border-[#EB8A78]/20' : 'border-stone-100 dark:border-slate-800'}`}>
+        <div className={`flex flex-wrap items-center justify-between gap-2 pb-3.5 border-b ${isVelvet ? 'border-[#EB8A78]/15' : 'border-stone-100 dark:border-slate-800'}`}>
           <div className="flex flex-wrap items-center gap-1.5 min-w-0">
             <span
               className={`text-xs font-bold px-2.5 py-1 rounded-lg border ${
                 isVelvet
-                  ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/40'
-                  : 'text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/70 border-indigo-200/80 dark:border-cyan-800/60'
+                  ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/20'
+                  : 'text-indigo-700 dark:text-cyan-300 bg-indigo-50 dark:bg-cyan-950/60 border-indigo-200/80 dark:border-cyan-900/50'
               }`}
             >
               {currentQuestion.subtest_code ? `${currentQuestion.subtest_code} • ` : ''}
@@ -1565,10 +1557,10 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
           <div
             className={`rounded-2xl border border-l-4 p-3 sm:p-4 transition-colors ${
               isVelvet
-                ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B] text-[#FBF1F2]'
+                ? 'bg-[#1F1020] border-[#EB8A78]/15 border-l-[#EB8A78]/40 text-[#FBF1F2]'
                 : isPrism
                 ? 'bg-sky-50/70 border-sky-200/80 border-l-sky-500 text-slate-800'
-                : 'bg-stone-50/90 dark:bg-slate-900/90 border-stone-200/90 dark:border-slate-800 border-l-indigo-500 dark:border-l-cyan-500 text-slate-800 dark:text-slate-200'
+                : 'bg-stone-50/90 dark:bg-slate-900/90 border-stone-200/90 dark:border-slate-800 border-l-indigo-500 dark:border-l-slate-600/75 text-slate-800 dark:text-slate-200'
             }`}
           >
             <div className="flex items-center justify-between gap-2 mb-2.5">
@@ -1652,7 +1644,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               </div>
               <div
                 className={`w-full overflow-x-auto rounded-2xl border shadow-2xs ${
-                  isVelvet ? 'border-[#EB8A78]/30' : 'border-stone-200/90 dark:border-slate-800'
+                  isVelvet ? 'border-[#EB8A78]/18' : 'border-stone-200/90 dark:border-slate-800'
                 }`}
               >
                 <table className="w-full text-left border-collapse">
@@ -1660,7 +1652,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                     <tr
                       className={`border-b text-xs sm:text-sm font-bold ${
                         isVelvet
-                          ? 'bg-[#341B2B] border-[#EB8A78]/25 text-[#FBF1F2]'
+                          ? 'bg-[#341B2B] border-[#EB8A78]/15 text-[#FBF1F2]'
                           : 'bg-stone-50/90 dark:bg-slate-900 border-stone-200 dark:border-slate-800 text-slate-700 dark:text-slate-200'
                       }`}
                     >
@@ -1707,10 +1699,10 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                               aria-label={`Pernyataan ${rowIdx + 1}: ${col0}`}
                               className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
                                 choice === col0
-                                  ? 'bg-emerald-500 border-emerald-400 text-white shadow-[0_0_10px_rgba(16,185,129,0.4)] font-bold'
+                                  ? 'bg-emerald-600 border-emerald-500 text-white font-bold'
                                   : isVelvet
-                                  ? 'bg-[#381C2C] border-[#EB8A78]/35 hover:border-emerald-400'
-                                  : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700 hover:border-emerald-400'
+                                  ? 'bg-[#381C2C] border-[#EB8A78]/20 hover:border-emerald-500/60'
+                                  : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700 hover:border-emerald-500/60'
                               }`}
                             >
                               {choice === col0 && <Check className="w-4 h-4 stroke-[3]" />}
@@ -1723,10 +1715,10 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                               aria-label={`Pernyataan ${rowIdx + 1}: ${col1}`}
                               className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border mx-auto flex items-center justify-center transition cursor-pointer ${
                                 choice === col1
-                                  ? 'bg-rose-500 border-rose-400 text-white shadow-[0_0_10px_rgba(244,63,94,0.45)] font-bold'
+                                  ? 'bg-rose-600 border-rose-500 text-white font-bold'
                                   : isVelvet
-                                  ? 'bg-[#381C2C] border-[#EB8A78]/35 hover:border-rose-400'
-                                  : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700 hover:border-rose-400'
+                                  ? 'bg-[#381C2C] border-[#EB8A78]/20 hover:border-rose-500/60'
+                                  : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700 hover:border-rose-500/60'
                               }`}
                             >
                               {choice === col1 && <Check className="w-4 h-4 stroke-[3]" />}
@@ -1779,16 +1771,16 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       className={`w-full text-left p-3 sm:p-4 rounded-xl border transition-all flex items-start gap-2.5 sm:gap-3 cursor-pointer ${
                         isChecked
                           ? isVelvet
-                            ? 'bg-[#3E1E2E] border-[#FF8A6B] text-[#FBF1F2]'
+                            ? 'bg-[#3E1E2E] border-[#EB8A78]/45 text-[#FBF1F2]'
                             : isCosmic
-                            ? 'bg-[#0f1d3c] border-cyan-400 text-cyan-100 shadow-[0_0_12px_rgba(0,242,254,0.2)]'
+                            ? 'bg-[#0f1d3c] border-cyan-700/70 text-cyan-100'
                             : isPrism
                             ? 'bg-sky-50/90 border-sky-500 text-sky-950 shadow-xs ring-1 ring-sky-300'
                             : 'bg-indigo-50/90 border-indigo-400 text-indigo-950 shadow-xs ring-1 ring-indigo-300'
                           : isVelvet
-                          ? 'bg-[#22121D] hover:bg-[#341B2B] border-[#EB8A78]/25 hover:border-[#FF8A6B]/70 text-[#FBF1F2]'
+                          ? 'bg-[#22121D] hover:bg-[#341B2B] border-[#EB8A78]/15 hover:border-[#EB8A78]/35 text-[#FBF1F2]'
                           : isCosmic
-                          ? 'bg-[#070c18] hover:bg-[#0f1730] border-slate-800 hover:border-cyan-500/40 text-slate-200'
+                          ? 'bg-[#070c18] hover:bg-[#0f1730] border-slate-800 hover:border-slate-700 text-slate-200'
                           : 'bg-white hover:bg-stone-50 border-stone-200/90 text-slate-800'
                       }`}
                     >
@@ -1796,14 +1788,14 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                         className={`w-6 h-6 rounded-lg border flex items-center justify-center shrink-0 mt-0.5 transition ${
                           isChecked
                             ? isVelvet
-                              ? 'bg-[#FF8A6B] border-[#FF8A6B] text-[#1E0F17] font-bold'
+                              ? 'bg-[#E27B60] border-[#E27B60] text-[#1E0F17] font-bold'
                               : isCosmic
-                              ? 'bg-cyan-500 border-cyan-400 text-slate-950 font-bold'
+                              ? 'bg-cyan-600 border-cyan-600 text-white font-bold'
                               : isPrism
                               ? 'bg-gradient-to-tr from-blue-600 to-sky-500 border-sky-500 text-white font-bold'
                               : 'bg-indigo-600 border-indigo-600 text-white font-bold'
                             : isVelvet
-                            ? 'bg-[#381C2C] border-[#EB8A78]/35'
+                            ? 'bg-[#381C2C] border-[#EB8A78]/20'
                             : 'bg-stone-100 dark:bg-slate-800 border-stone-300 dark:border-slate-700'
                         }`}
                       >
@@ -1883,16 +1875,16 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                       className={`w-full text-left p-3 sm:p-4 rounded-xl border transition-all flex items-start gap-2.5 sm:gap-3.5 cursor-pointer ${
                         isSelected
                           ? isVelvet
-                            ? 'bg-[#3E1E2E] border-[#FF8A6B] text-[#FBF1F2]'
+                            ? 'bg-[#3E1E2E] border-[#EB8A78]/45 text-[#FBF1F2]'
                             : isCosmic
-                            ? 'bg-[#0f1d3c] border-cyan-400 text-cyan-100 shadow-[0_0_12px_rgba(0,242,254,0.2)]'
+                            ? 'bg-[#0f1d3c] border-cyan-700/70 text-cyan-100'
                             : isPrism
                             ? 'bg-sky-50/90 border-sky-500 text-sky-950 shadow-xs ring-1 ring-sky-300'
                             : 'bg-indigo-50/90 border-indigo-400 text-indigo-950 shadow-xs ring-1 ring-indigo-300'
                           : isVelvet
-                          ? 'bg-[#22121D] hover:bg-[#341B2B] border-[#EB8A78]/25 hover:border-[#FF8A6B]/70 text-[#FBF1F2]'
+                          ? 'bg-[#22121D] hover:bg-[#341B2B] border-[#EB8A78]/15 hover:border-[#EB8A78]/35 text-[#FBF1F2]'
                           : isCosmic
-                          ? 'bg-[#070c18] hover:bg-[#0f1730] border-slate-800 hover:border-cyan-500/40 text-slate-200'
+                          ? 'bg-[#070c18] hover:bg-[#0f1730] border-slate-800 hover:border-slate-700 text-slate-200'
                           : 'bg-white hover:bg-stone-50 border-stone-200/90 text-slate-800'
                       }`}
                     >
@@ -1900,14 +1892,14 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
                         className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg text-xs sm:text-sm font-mono font-bold flex items-center justify-center shrink-0 mt-0.5 transition ${
                           isSelected
                             ? isVelvet
-                              ? 'bg-[#FF8A6B] text-[#1E0F17] font-extrabold'
+                              ? 'bg-[#E27B60] text-[#1E0F17] font-extrabold'
                               : isCosmic
-                              ? 'bg-cyan-500 text-slate-950 font-bold'
+                              ? 'bg-cyan-600 text-white font-bold'
                               : isPrism
                               ? 'bg-gradient-to-tr from-blue-600 to-sky-500 text-white shadow-2xs'
                               : 'bg-indigo-600 text-white shadow-2xs'
                             : isVelvet
-                            ? 'bg-[#381C2C] text-[#FFBE98] border border-[#EB8A78]/30'
+                            ? 'bg-[#381C2C] text-[#FFBE98] border border-[#EB8A78]/18'
                             : 'bg-stone-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-stone-200 dark:border-slate-700'
                         }`}
                       >
@@ -1929,9 +1921,9 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
       <div
         className={`fixed bottom-0 left-0 right-0 z-40 backdrop-blur-md border-t shadow-2xl p-3 sm:p-4 transition-all duration-300 ${
           isVelvet
-            ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/30'
+            ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/18'
             : isCosmic
-            ? 'bg-[#0c1224]/90 border-cyan-500/30'
+            ? 'bg-[#0c1224]/92 border-slate-800'
             : isPrism
             ? 'bg-white/85 border-white/95'
             : 'bg-white/95 border-stone-200/90'
@@ -1944,7 +1936,7 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
             onClick={() => onNavigateQuestion(currentQuestionIndex - 1)}
             className={`px-3.5 sm:px-4 py-2.5 rounded-xl border font-semibold text-xs sm:text-sm disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1.5 transition cursor-pointer shadow-2xs ${
               isVelvet
-                ? 'border-[#EB8A78]/30 bg-[#2B1723] text-[#FBF1F2] hover:bg-[#3A1F30]'
+                ? 'border-[#EB8A78]/18 bg-[#2B1723] text-[#FBF1F2] hover:bg-[#3A1F30]'
                 : 'border-stone-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-stone-50 dark:hover:bg-slate-700'
             }`}
           >
@@ -1966,10 +1958,10 @@ export const ActiveDrillingView: React.FC<ActiveDrillingViewProps> = ({
               onClick={() => onNavigateQuestion(currentQuestionIndex + 1)}
               className={`px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-1.5 cursor-pointer active:scale-95 ${
                 isVelvet
-                  ? 'bg-gradient-to-r from-[#FF8A6B] to-[#F5B041] text-[#1E0F17] font-extrabold'
+                  ? 'bg-gradient-to-r from-[#E27B60] to-[#D4954B] text-[#1E0F17] font-extrabold'
                   : isPrism
                   ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white'
-                  : 'bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-600 dark:to-cyan-500 hover:from-blue-700 hover:to-indigo-700 text-white dark:shadow-[0_0_15px_rgba(0,242,254,0.35)]'
+                  : 'bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-600 dark:to-cyan-600 hover:from-blue-700 hover:to-indigo-700 text-white'
               }`}
             >
               <span>Selanjutnya</span>

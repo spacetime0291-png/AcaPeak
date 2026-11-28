@@ -179,10 +179,10 @@ const RangkumanButirCard = memo<ButirCardProps>(
       <div
         className={`rangkuman-card rounded-xl border p-4 sm:p-5 shadow-2xs dark:shadow-none ${
           isVelvet
-            ? 'bg-[#2B1723] border-[#EB8A78]/30'
+            ? 'bg-[#2B1723] border-[#EB8A78]/18'
             : isPrism
             ? 'bg-white/92 border-slate-200/85'
-            : 'bg-white dark:bg-[#131D34] border-slate-200/90 dark:border-slate-700/65'
+            : 'bg-white dark:bg-[#131D34] border-slate-200/90 dark:border-slate-800'
         }`}
       >
         <div
@@ -193,14 +193,14 @@ const RangkumanButirCard = memo<ButirCardProps>(
           <div className="min-w-0">
             <div
               className={`flex items-start gap-2.5 pb-2.5 border-b ${
-                isVelvet ? 'border-[#EB8A78]/20' : 'border-slate-100 dark:border-slate-700/55'
+                isVelvet ? 'border-[#EB8A78]/15' : 'border-slate-100 dark:border-slate-800'
               }`}
             >
               <span
                 className={`inline-flex items-center justify-center w-6 h-6 rounded-md border text-[11px] font-mono font-semibold shrink-0 mt-0.5 select-none ${
                   isVelvet
-                    ? 'bg-[#4A222B] border-[#EB8A78]/40 text-[#FFBE98]'
-                    : 'bg-sky-50 dark:bg-sky-500/15 border-sky-200 dark:border-sky-400/30 text-sky-700 dark:text-sky-300'
+                    ? 'bg-[#4A222B] border-[#EB8A78]/20 text-[#FFBE98]'
+                    : 'bg-sky-50 dark:bg-sky-500/15 border-sky-200 dark:border-sky-800/50 text-sky-700 dark:text-sky-300'
                 }`}
               >
                 {String(bIdx + 1).padStart(2, '0')}
@@ -220,7 +220,7 @@ const RangkumanButirCard = memo<ButirCardProps>(
           {contohText && (
             <div
               onClick={activeRecallMode ? onToggleReveal : undefined}
-              className={`rangkuman-row-contoh sm:ml-8.5 md:ml-0 rounded-lg border border-emerald-200/70 dark:border-emerald-800/50 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-400/80 bg-emerald-50/70 dark:bg-emerald-950/30 px-3.5 py-2.5 transition-all ${
+              className={`rangkuman-row-contoh sm:ml-8.5 md:ml-0 rounded-lg border border-emerald-200/70 dark:border-emerald-900/45 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-700/55 bg-emerald-50/70 dark:bg-emerald-950/25 px-3.5 py-2.5 transition-all ${
                 activeRecallMode ? 'cursor-pointer' : ''
               } ${isBlurred ? 'active-recall-blur' : ''}`}
               title={isBlurred ? 'Klik untuk melihat contoh' : undefined}
@@ -710,9 +710,9 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
       <header
         className={`sticky top-0 z-50 w-full backdrop-blur-md border-b transition-all shadow-2xs print-hide ${
           isVelvet
-            ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/25'
+            ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/15'
             : isCosmic
-            ? 'bg-[#0B1120]/95 border-slate-800'
+            ? 'bg-[#0B1120]/95 border-slate-800/80'
             : isPrism
             ? 'bg-white/75 border-white/85'
             : 'bg-[#F8FAFC]/95 border-slate-200'
@@ -725,7 +725,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
         </div>
 
         <div
-          className={`relative z-10 mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all ${
+          className={`relative z-10 mx-auto px-4 sm:px-8 py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all ${
             babId ? 'max-w-4xl' : isFocusMode ? 'max-w-5xl' : 'max-w-4xl'
           }`}
         >
@@ -886,7 +886,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
 
       {/* 2. MAIN CONTENT CONTAINER (Lebar Kolom Optimal max-w-4xl saat membaca Bab) */}
       <main
-        className={`mx-auto px-4 sm:px-6 transition-all reader-scalable-content rangkuman-reading-area ${
+        className={`mx-auto px-4 sm:px-8 transition-all reader-scalable-content rangkuman-reading-area ${
           babId
             ? isFocusMode
               ? 'max-w-4xl py-4'
@@ -1040,7 +1040,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                 <div
                   className={`p-4 sm:p-5 rounded-2xl border shadow-2xs space-y-3 transition-colors ${
                     isVelvet
-                      ? 'bg-[#2B1723] border-[#EB8A78]/35'
+                      ? 'bg-[#2B1723] border-[#EB8A78]/18'
                       : isPrism
                       ? 'bg-white/88 border-white/95'
                       : 'bg-white dark:bg-[#0F172A] border-slate-200 dark:border-slate-800/80'
@@ -1224,7 +1224,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                             Baris 1: kode_subbab + klasifikasi di kiri, Materi Lengkap ↗ di kanan
                             Baris 2: Judul Sub-bab */}
                         <div className="pb-3.5 mb-5 border-b border-slate-200/80 dark:border-slate-800/80 relative">
-                          <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-blue-500/40 via-sky-400/25 to-transparent" />
+                          <div className={`absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r ${isVelvet ? 'from-[#EB8A78]/25 via-[#EB8A78]/10 to-transparent' : 'from-blue-500/25 via-sky-400/15 dark:from-slate-600/35 dark:via-slate-700/15 to-transparent'}`} />
                           {/* Baris 1 */}
                           <div className="flex items-center justify-between gap-2">
                             <div className="flex items-center gap-2">
@@ -1252,9 +1252,15 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                           </h2>
                         </div>
 
-                        {/* Blok inti_subbab (Callout ringkas dengan aksen kiri biru, teks terang, mb-5 pemisah ke kelompok accordion) */}
+                        {/* Blok inti_subbab (Callout ringkas dengan aksen kiri lembut) */}
                         {intiText && (
-                          <div className="mb-5 rounded-r-lg border-l-[3px] border-sky-500 dark:border-sky-400 bg-sky-50/70 dark:bg-sky-950/25 px-4 py-3 text-slate-800 dark:text-slate-200 shadow-2xs transition-colors">
+                          <div
+                            className={`mb-5 rounded-r-lg border-l-[3px] px-4 py-3 shadow-2xs transition-colors ${
+                              isVelvet
+                                ? 'border-[#EB8A78]/40 bg-[#261420] text-[#FBF1F2]'
+                                : 'border-sky-500 dark:border-sky-700/60 bg-sky-50/70 dark:bg-sky-950/20 text-slate-800 dark:text-slate-200'
+                            }`}
+                          >
                             <div className="text-[15px] sm:text-base leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 dark:tracking-[0.01em] max-w-full">
                               {renderKonsepInti(intiText)}
                             </div>
@@ -1277,11 +1283,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                 className={`rounded-xl border overflow-x-clip transition-all ${
                                   isExpanded
                                     ? isVelvet
-                                      ? 'border-[#EB8A78]/50 bg-[#2B1723] shadow-xs'
-                                      : 'border-sky-300/80 dark:border-sky-500/35 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
+                                      ? 'border-[#EB8A78]/22 bg-[#2B1723] shadow-xs'
+                                      : 'border-sky-300/80 dark:border-slate-700/90 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
                                     : isVelvet
-                                    ? 'border-[#EB8A78]/25 bg-[#25131E] hover:border-[#EB8A78]/45'
-                                    : 'border-slate-200 dark:border-slate-700/80 bg-white dark:bg-[#10192D] hover:border-slate-300 dark:hover:border-slate-600 shadow-2xs dark:shadow-none'
+                                    ? 'border-[#EB8A78]/15 bg-[#25131E] hover:border-[#EB8A78]/25'
+                                    : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-[#10192D] hover:border-slate-300 dark:hover:border-slate-700 shadow-2xs dark:shadow-none'
                                 }`}
                               >
                                 {/* Kepala Judul Kelompok / Tombol Accordion (Level 2) */}
@@ -1291,11 +1297,11 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                   className={`w-full flex items-center justify-between gap-3 text-left transition-colors group cursor-pointer px-4 py-3.5 border-l-4 ${
                                     isExpanded
                                       ? isVelvet
-                                        ? 'bg-[#381C2C] border-b border-[#EB8A78]/30 border-l-[#FF8A6B] hover:bg-[#422134]'
-                                        : 'bg-sky-50/75 dark:bg-[#172540] border-b border-sky-200/80 dark:border-slate-700/80 border-l-sky-500 dark:border-l-sky-400 hover:bg-sky-100/60 dark:hover:bg-[#1c2b48]'
+                                        ? 'bg-[#381C2C] border-b border-[#EB8A78]/18 border-l-[#EB8A78]/45 hover:bg-[#422134]'
+                                        : 'bg-sky-50/75 dark:bg-[#152038] border-b border-sky-200/80 dark:border-slate-800 border-l-sky-500 dark:border-l-sky-700/65 hover:bg-sky-100/60 dark:hover:bg-[#1a2744]'
                                       : isVelvet
-                                      ? 'bg-[#2B1723] hover:bg-[#341B2B] border-l-[#EB8A78]/45'
-                                      : 'bg-slate-50/75 hover:bg-slate-100/90 dark:bg-[#121C33] dark:hover:bg-[#172441] border-l-slate-300 dark:border-l-slate-700'
+                                      ? 'bg-[#2B1723] hover:bg-[#341B2B] border-l-[#EB8A78]/25'
+                                      : 'bg-slate-50/75 hover:bg-slate-100/90 dark:bg-[#121C33] dark:hover:bg-[#172441] border-l-slate-300 dark:border-l-slate-700/80'
                                   }`}
                                   aria-expanded={isExpanded}
                                 >
@@ -1312,10 +1318,10 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                       className={`text-xs font-mono px-2.5 py-0.5 rounded-full shrink-0 ${
                                         isExpanded
                                           ? isVelvet
-                                            ? 'bg-[#FF8A6B] text-[#1E0F17] font-bold'
-                                            : 'bg-sky-600 text-white dark:bg-sky-500 dark:text-slate-950 font-bold'
+                                            ? 'bg-[#E27B60] text-[#1E0F17] font-bold'
+                                            : 'bg-sky-600 text-white dark:bg-sky-600 font-bold'
                                           : isVelvet
-                                          ? 'bg-[#3F2132] text-[#FFBE98] border border-[#EB8A78]/35'
+                                          ? 'bg-[#3F2132] text-[#FFBE98] border border-[#EB8A78]/20'
                                           : 'bg-slate-200/75 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-300/80 dark:border-slate-700/70'
                                       }`}
                                     >
@@ -1336,8 +1342,8 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                     <div
                                       className={`hidden md:grid md:grid-cols-2 md:gap-6 px-7 py-2.5 border-b text-[11px] font-mono font-semibold tracking-wider uppercase select-none ${
                                         isVelvet
-                                          ? 'border-[#EB8A78]/25 bg-[#2B1723] text-[#FFBE98]'
-                                          : 'border-slate-200/80 dark:border-slate-700/60 bg-slate-50/90 dark:bg-[#111A2E] text-slate-500 dark:text-slate-400'
+                                          ? 'border-[#EB8A78]/15 bg-[#2B1723] text-[#FFBE98]'
+                                          : 'border-slate-200/80 dark:border-slate-800 bg-slate-50/90 dark:bg-[#111A2E] text-slate-500 dark:text-slate-400'
                                       }`}
                                     >
                                       <div className="pl-8.5">
@@ -1349,7 +1355,7 @@ export const RangkumanPage: React.FC<RangkumanPageProps> = ({
                                     </div>
                                   )}
 
-                                  <div className="p-3 sm:p-4 space-y-3.5">
+                                  <div className="p-2.5 sm:p-4 space-y-3.5">
                                     {k.butir.map((b, bIdx) => {
                                       const itemId = `${sub.kode_subbab}-${kIdx}-${bIdx}`;
                                       return (

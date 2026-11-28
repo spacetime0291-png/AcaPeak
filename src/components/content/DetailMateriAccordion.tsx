@@ -62,11 +62,11 @@ const KelompokCard = memo<KelompokCardProps>(
         className={`rounded-xl border overflow-hidden transition-all ${
           isOpen
             ? isVelvet
-              ? 'border-[#EB8A78]/50 bg-[#2B1723] shadow-xs'
-              : 'border-sky-300/90 dark:border-sky-500/40 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
+              ? 'border-[#EB8A78]/22 bg-[#2B1723] shadow-xs'
+              : 'border-sky-300/90 dark:border-slate-700/90 bg-white dark:bg-[#0D1425] shadow-xs dark:shadow-none'
             : isVelvet
-            ? 'border-[#EB8A78]/25 bg-[#25131E] hover:border-[#EB8A78]/45'
-            : 'border-slate-200/90 dark:border-slate-700/75 bg-white dark:bg-[#10182B] hover:border-slate-300 dark:hover:border-slate-600'
+            ? 'border-[#EB8A78]/15 bg-[#25131E] hover:border-[#EB8A78]/25'
+            : 'border-slate-200/90 dark:border-slate-800 bg-white dark:bg-[#10182B] hover:border-slate-300 dark:hover:border-slate-700'
         }`}
       >
         <button
@@ -75,11 +75,11 @@ const KelompokCard = memo<KelompokCardProps>(
           className={`w-full px-3 py-3 sm:px-5 sm:py-4 flex items-center justify-between gap-2.5 sm:gap-3 text-left transition-all cursor-pointer border-l-4 ${
             isOpen
               ? isVelvet
-                ? 'bg-[#381C2C] text-[#FBF1F2] border-b border-[#EB8A78]/30 border-l-[#FF8A6B]'
-                : 'bg-sky-50/85 dark:bg-[#172540] text-slate-950 dark:text-white border-b border-sky-200/80 dark:border-slate-700/90 border-l-sky-500 dark:border-l-sky-400'
+                ? 'bg-[#381C2C] text-[#FBF1F2] border-b border-[#EB8A78]/18 border-l-[#EB8A78]/45'
+                : 'bg-sky-50/85 dark:bg-[#152038] text-slate-950 dark:text-white border-b border-sky-200/80 dark:border-slate-800 border-l-sky-500 dark:border-l-sky-700/70'
               : isVelvet
-              ? 'bg-[#2B1723] hover:bg-[#341B2B] text-[#FBF1F2] border-l-[#EB8A78]/45'
-              : 'bg-white dark:bg-[#111A2E] hover:bg-slate-50 dark:hover:bg-[#16213A] text-slate-900 dark:text-slate-100 border-l-slate-300 dark:border-l-slate-700'
+              ? 'bg-[#2B1723] hover:bg-[#341B2B] text-[#FBF1F2] border-l-[#EB8A78]/25'
+              : 'bg-white dark:bg-[#111A2E] hover:bg-slate-50 dark:hover:bg-[#16213A] text-slate-900 dark:text-slate-100 border-l-slate-300 dark:border-l-slate-700/80'
           }`}
           aria-expanded={isOpen}
         >
@@ -143,16 +143,16 @@ const KelompokCard = memo<KelompokCardProps>(
               <div
                 className={`md:rounded-xl md:border md:overflow-hidden ${
                   isVelvet
-                    ? 'md:border-[#EB8A78]/30 md:bg-[#2B1723]'
-                    : 'md:border-slate-200/90 md:dark:border-slate-700/70 md:bg-white md:dark:bg-[#111A2E]'
+                    ? 'md:border-[#EB8A78]/18 md:bg-[#2B1723]'
+                    : 'md:border-slate-200/90 md:dark:border-slate-800 md:bg-white md:dark:bg-[#111A2E]'
                 }`}
               >
                 {/* Desktop Column Header (md+ only) */}
                 <div
                   className={`hidden md:grid md:grid-cols-[38%_34%_28%] border-b text-xs font-mono uppercase tracking-wider font-extrabold divide-x ${
                     isVelvet
-                      ? 'border-[#EB8A78]/30 bg-[#381C2C] text-[#FFBE98] divide-[#EB8A78]/20'
-                      : 'border-slate-200 dark:border-slate-700 bg-slate-100/95 dark:bg-[#17233B] text-slate-800 dark:text-slate-100 divide-slate-200/70 dark:divide-slate-700/60'
+                      ? 'border-[#EB8A78]/18 bg-[#381C2C] text-[#FFBE98] divide-[#EB8A78]/12'
+                      : 'border-slate-200 dark:border-slate-800 bg-slate-100/95 dark:bg-[#152038] text-slate-800 dark:text-slate-100 divide-slate-200/70 dark:divide-slate-800'
                   }`}
                 >
                   <div className="py-3 px-4">{labelKolom?.kolom_1 || 'Sifat / Rumus / Konsep'}</div>
@@ -161,16 +161,16 @@ const KelompokCard = memo<KelompokCardProps>(
                 </div>
 
                 {/* Unified Responsive Rows: Mobile Card -> Desktop 3-Column Row (Wider horizontal reading, clear vertical separation) */}
-                <div className={`space-y-4 md:space-y-0 md:divide-y-2 ${isVelvet ? 'md:divide-[#EB8A78]/20' : 'md:divide-slate-200/80 md:dark:divide-slate-800'}`}>
+                <div className={`space-y-4 md:space-y-0 md:divide-y-2 ${isVelvet ? 'md:divide-[#EB8A78]/15' : 'md:divide-slate-200/80 md:dark:divide-slate-800'}`}>
                   {butirList.map((b, bIdx) => (
                     <div
                       key={bIdx}
                       className={`rounded-xl md:rounded-none border md:border-0 px-3 py-4 sm:p-4 md:p-0 shadow-xs md:shadow-none grid grid-cols-1 md:grid-cols-[38%_34%_28%] gap-3.5 md:gap-0 md:divide-x transition-colors max-w-full overflow-x-clip ${
                         isVelvet
-                          ? 'bg-[#2B1723] md:bg-transparent md:odd:bg-[#2B1723] md:even:bg-[#311A27] md:hover:bg-[#3A1F2F] border-[#EB8A78]/30 md:divide-[#EB8A78]/20'
+                          ? 'bg-[#2B1723] md:bg-transparent md:odd:bg-[#2B1723] md:even:bg-[#311A27] md:hover:bg-[#3A1F2F] border-[#EB8A78]/18 md:divide-[#EB8A78]/15'
                           : isPrism
                           ? 'bg-white/95 md:bg-transparent md:odd:bg-white/95 md:even:bg-sky-50/50 md:hover:bg-sky-50/80 border-slate-200 md:divide-slate-200/60'
-                          : 'bg-white dark:bg-[#131C32] md:dark:bg-transparent md:odd:bg-white md:even:bg-slate-50/55 md:dark:odd:bg-[#111A2E] md:dark:even:bg-[#141F36] md:hover:bg-sky-50/40 md:dark:hover:bg-[#192744] border-slate-200 dark:border-slate-700/75 md:divide-slate-200/60 md:dark:divide-slate-700/45'
+                          : 'bg-white dark:bg-[#131C32] md:dark:bg-transparent md:odd:bg-white md:even:bg-slate-50/55 md:dark:odd:bg-[#111A2E] md:dark:even:bg-[#141F36] md:hover:bg-sky-50/40 md:dark:hover:bg-[#192744] border-slate-200 dark:border-slate-800 md:divide-slate-200/60 md:dark:divide-slate-800'
                       }`}
                     >
                       {/* Kolom 1: Judul Poin + Penjelasan Singkat + Mini-SVG */}
@@ -200,7 +200,7 @@ const KelompokCard = memo<KelompokCardProps>(
 
                       {/* Kolom 2: Contoh Penerapan */}
                       <div className="md:py-4 md:px-4 min-w-0 max-w-full">
-                        <div className="px-3 py-3 sm:p-3.5 rounded-lg bg-emerald-50/70 md:bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/60 dark:border-emerald-800/35 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-400/80 text-slate-800 md:text-slate-700 dark:text-slate-200 leading-[1.85] [&_p]:mb-3 [&_p:last-child]:mb-0 text-[15px] max-w-full space-y-1.5">
+                        <div className="px-3 py-3 sm:p-3.5 rounded-lg bg-emerald-50/70 md:bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/60 dark:border-emerald-900/40 border-l-[3px] border-l-emerald-500 dark:border-l-emerald-700/55 text-slate-800 md:text-slate-700 dark:text-slate-200 leading-[1.85] [&_p]:mb-3 [&_p:last-child]:mb-0 text-[15px] max-w-full space-y-1.5">
                           <div className="md:hidden text-xs font-mono font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
                             {labelKolom?.kolom_2 || 'Contoh Penerapan'}
                           </div>
@@ -210,7 +210,7 @@ const KelompokCard = memo<KelompokCardProps>(
 
                       {/* Kolom 3: Jebakan atau Catatan */}
                       <div className="md:py-4 md:px-4 min-w-0 max-w-full">
-                        <div className="px-3 py-3 md:p-3.5 rounded-lg md:rounded-xl bg-amber-50/85 md:bg-amber-50/90 dark:bg-amber-950/25 md:dark:bg-amber-950/30 border border-amber-300/75 md:border-amber-300/80 dark:border-amber-700/50 md:dark:border-amber-700/55 border-l-[3px] md:border-l text-amber-950 dark:text-amber-100 text-[14.5px] sm:text-[15px] leading-[1.85] [&_p]:mb-3 [&_p:last-child]:mb-0 space-y-1.5 max-w-full overflow-x-clip">
+                        <div className="px-3 py-3 md:p-3.5 rounded-lg md:rounded-xl bg-amber-50/85 md:bg-amber-50/90 dark:bg-amber-950/20 md:dark:bg-amber-950/25 border border-amber-300/75 md:border-amber-300/80 dark:border-amber-900/45 md:dark:border-amber-900/50 border-l-[3px] md:border-l text-amber-950 dark:text-amber-100 text-[14.5px] sm:text-[15px] leading-[1.85] [&_p]:mb-3 [&_p:last-child]:mb-0 space-y-1.5 max-w-full overflow-x-clip">
                           <div className="font-bold flex items-center gap-1.5 text-amber-800 dark:text-amber-300 font-mono text-xs uppercase md:normal-case tracking-wider md:tracking-normal">
                             <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                             <span className="md:hidden">{labelKolom?.kolom_3 || 'Catatan / Jebakan UTBK'}</span>
@@ -276,25 +276,25 @@ export const DetailMateriAccordion: React.FC<DetailMateriAccordionProps> = memo(
       <div
         className={`rounded-2xl border shadow-xs overflow-x-clip max-w-full transition-all ${
           isVelvet
-            ? 'bg-[#2B1723] border-[#EB8A78]/35'
+            ? 'bg-[#2B1723] border-[#EB8A78]/18'
             : isPrism
             ? 'bg-white/88 border-white/95'
-            : 'bg-white dark:bg-[#0E1526] border-slate-200/90 dark:border-slate-700/80'
+            : 'bg-white dark:bg-[#0E1526] border-slate-200/90 dark:border-slate-800'
         }`}
       >
         <div
           className={`px-3.5 py-4 sm:p-6 space-y-2 border-b ${
             isVelvet
-              ? 'border-[#EB8A78]/25 bg-gradient-to-r from-[#381C2C] via-[#2B1723] to-[#23121E]'
-              : 'border-slate-200 dark:border-slate-700/80 bg-gradient-to-r from-sky-50/70 via-white to-white dark:from-sky-950/30 dark:via-[#11192D] dark:to-[#0E1526]'
+              ? 'border-[#EB8A78]/15 bg-gradient-to-r from-[#381C2C] via-[#2B1723] to-[#23121E]'
+              : 'border-slate-200 dark:border-slate-800 bg-gradient-to-r from-sky-50/70 via-white to-white dark:from-sky-950/30 dark:via-[#11192D] dark:to-[#0E1526]'
           }`}
         >
           <div className="flex items-center gap-2">
             <span
               className={`inline-flex items-center gap-1.5 text-xs font-mono font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-2xs border ${
                 isVelvet
-                  ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/40'
-                  : 'text-sky-900 dark:text-sky-200 bg-sky-100 dark:bg-sky-900/60 border-sky-300/80 dark:border-sky-700/80'
+                  ? 'text-[#FFBE98] bg-[#4A222B] border-[#EB8A78]/20'
+                  : 'text-sky-900 dark:text-sky-200 bg-sky-100 dark:bg-sky-900/60 border-sky-300/80 dark:border-sky-800/60'
               }`}
             >
               <BookOpen className={`w-3.5 h-3.5 shrink-0 ${isVelvet ? 'text-[#FF8A6B]' : 'text-sky-600 dark:text-sky-400'}`} />

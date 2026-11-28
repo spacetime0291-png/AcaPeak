@@ -89,15 +89,15 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
     : 'text-slate-800 bg-[#F8FAFC]';
 
   const headerClass = isVelvet
-    ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/25'
+    ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/15'
     : isCosmic
-    ? 'bg-[#0c1224]/95 border-slate-800'
+    ? 'bg-[#0c1224]/95 border-slate-800/80'
     : isPrism
     ? 'bg-white/75 border-white/85'
     : 'bg-[#F8FAFC]/95 border-slate-200/80';
 
   const controlPillClass = isVelvet
-    ? 'bg-[#2B1723] border-[#EB8A78]/35 text-[#FBF1F2]'
+    ? 'bg-[#2B1723] border-[#EB8A78]/20 text-[#FBF1F2]'
     : isPrism
     ? 'bg-white/85 border-sky-200/80 text-slate-700'
     : 'bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200';
@@ -112,7 +112,7 @@ export const PdfMaterialReader: React.FC<PdfMaterialReaderProps> = ({
           {isPrism && <PrismFocusHeaderAccent />}
         </div>
 
-        <div className="relative z-10 max-w-[720px] mx-auto px-2.5 sm:px-6 py-2.5 flex items-center justify-between gap-1.5 sm:gap-4">
+        <div className="relative z-10 max-w-[760px] mx-auto px-4 sm:px-8 py-2.5 flex items-center justify-between gap-1.5 sm:gap-4">
           {/* Identitas Sub-bab & Tombol Kembali */}
           <div className="flex items-center gap-1.5 sm:gap-2.5 min-w-0">
             <Link

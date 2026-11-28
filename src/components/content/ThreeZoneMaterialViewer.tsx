@@ -322,7 +322,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
   return (
     <article
-      className="w-full max-w-[720px] mx-auto space-y-8 sm:space-y-10 pb-20 px-2.5 sm:px-6 reader-scalable-content transition-all"
+      className="w-full max-w-[760px] mx-auto space-y-8 sm:space-y-10 pb-20 px-4 sm:px-8 reader-scalable-content transition-all"
       style={{
         '--reader-font-scale': fontScale,
         fontSize: `calc(0.96875rem * ${fontScale})`,
@@ -375,7 +375,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           <div
             className={`rounded-2xl border p-3.5 sm:p-6 shadow-xs space-y-4 max-w-full overflow-x-clip ${
               isVelvet
-                ? 'bg-[#2B1723] border-[#EB8A78]/35'
+                ? 'bg-[#2B1723] border-[#EB8A78]/18'
                 : isPrism
                 ? 'bg-white/85 border-white/90'
                 : 'bg-white dark:bg-slate-900 border-slate-200/90 dark:border-slate-800'
@@ -383,7 +383,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           >
             <div className="flex items-center justify-between gap-2">
               <span className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-200">
-                <span className={`w-2 h-2 rounded-full animate-pulse ${isVelvet ? 'bg-[#FF8A6B]' : 'bg-[#3B82F6]'}`}></span>
+                <span className={`w-2 h-2 rounded-full animate-pulse ${isVelvet ? 'bg-[#EB8A78]/80' : 'bg-[#3B82F6]'}`}></span>
                 Pemantik Logika
               </span>
               <span className="text-xs text-slate-400 dark:text-slate-500 font-medium font-mono">
@@ -395,10 +395,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
             <div
               className={`rounded-2xl border border-l-4 p-3.5 sm:p-5 max-w-full overflow-x-clip ${
                 isVelvet
-                  ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B]'
+                  ? 'bg-[#1F1020] border-[#EB8A78]/15 border-l-[#EB8A78]/40'
                   : isPrism
                   ? 'bg-sky-50/70 border-sky-200/70 border-l-sky-500'
-                  : 'bg-slate-50/90 dark:bg-slate-800/50 border-slate-200/90 dark:border-slate-700/60 border-l-slate-400 dark:border-l-slate-500'
+                  : 'bg-slate-50/90 dark:bg-slate-800/50 border-slate-200/90 dark:border-slate-800 border-l-slate-400 dark:border-l-slate-600/70'
               }`}
             >
               <div className="text-[15px] sm:text-[15.5px] text-slate-800 dark:text-[#FBF1F2] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 font-normal max-w-full">
@@ -467,12 +467,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
         {/* PEMISAH ESTETIK ANTARA HOOK & KONSEP INTI */}
         <div className="relative flex items-center justify-center my-6 select-none">
-          <div className={`w-full border-t border-dashed ${isVelvet ? 'border-[#EB8A78]/35' : 'border-slate-300 dark:border-slate-700/80'}`} />
+          <div className={`w-full border-t border-dashed ${isVelvet ? 'border-[#EB8A78]/18' : 'border-slate-300 dark:border-slate-800'}`} />
           <div
             className={`absolute px-3.5 py-1 rounded-full text-xs font-extrabold border flex items-center gap-1.5 shadow-2xs ${
               isVelvet
-                ? 'bg-[#2B1723] text-[#FBF1F2] border-[#EB8A78]/40'
-                : 'bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border-slate-300 dark:border-slate-700'
+                ? 'bg-[#2B1723] text-[#FBF1F2] border-[#EB8A78]/20'
+                : 'bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border-slate-300 dark:border-slate-800'
             }`}
           >
             <span>📘 Fondasi Konsep Inti</span>
@@ -484,10 +484,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           <div
             className={`rounded-2xl border border-l-4 p-3.5 sm:p-6 space-y-3.5 max-w-full overflow-x-clip shadow-xs ${
               isVelvet
-                ? 'bg-[#2B1723]/95 border-[#EB8A78]/40 border-l-[#FF8A6B]'
+                ? 'bg-[#2B1723]/95 border-[#EB8A78]/18 border-l-[#EB8A78]/45'
                 : isPrism
                 ? 'bg-[#EFF6FF]/88 border-sky-400/50 border-l-blue-600'
-                : 'bg-[#EFF6FF] dark:bg-blue-950/25 border-[#3B82F6]/50 border-l-blue-600 dark:border-l-blue-900'
+                : 'bg-[#EFF6FF] dark:bg-blue-950/25 border-[#3B82F6]/40 dark:border-blue-900/50 border-l-blue-600 dark:border-l-blue-800/70'
             }`}
           >
             <div className="flex items-center gap-2">
@@ -533,8 +533,8 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           <div
             className={`rounded-2xl border border-l-4 p-3.5 sm:p-6 space-y-3.5 max-w-full overflow-x-clip shadow-xs ${
               isVelvet
-                ? 'bg-[#361D1E]/90 border-[#F5B041]/40 border-l-[#F5B041]'
-                : 'bg-[#FFFBEB] dark:bg-amber-950/25 border-[#F59E0B]/50 border-l-[#F59E0B]'
+                ? 'bg-[#361D1E]/90 border-[#EB8A78]/18 border-l-[#D4954B]/50'
+                : 'bg-[#FFFBEB] dark:bg-amber-950/20 border-[#F59E0B]/45 dark:border-amber-900/45 border-l-[#F59E0B] dark:border-l-amber-700/60'
             }`}
           >
             <div className="flex items-center gap-2">
@@ -562,12 +562,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
       {/* PEMBATAS HALUS ANTARA ZONA 1 & ZONA 2 */}
       <div className="relative flex items-center justify-center my-8 select-none">
-        <div className={`w-full border-t ${isVelvet ? 'border-[#EB8A78]/25' : 'border-slate-200 dark:border-slate-700/75'}`} />
+        <div className={`w-full border-t ${isVelvet ? 'border-[#EB8A78]/15' : 'border-slate-200 dark:border-slate-800'}`} />
         <div
           className={`absolute px-3.5 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider border shadow-2xs ${
             isVelvet
-              ? 'bg-[#2B1723] text-[#FFBE98] border-[#EB8A78]/35'
-              : 'bg-[#F8FAFC] dark:bg-[#0D1426] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700/80'
+              ? 'bg-[#2B1723] text-[#FFBE98] border-[#EB8A78]/20'
+              : 'bg-[#F8FAFC] dark:bg-[#0D1426] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-800'
           }`}
         >
           Zona 2 • Bedah Pola Soal
@@ -606,10 +606,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
           <div
             className={`rounded-2xl border p-1.5 shadow-2xs ${
               isVelvet
-                ? 'bg-[#22121D] border-[#EB8A78]/30'
+                ? 'bg-[#22121D] border-[#EB8A78]/18'
                 : isPrism
                 ? 'bg-white/75 border-white/90'
-                : 'bg-slate-100/90 dark:bg-[#0B1222] border-slate-200/90 dark:border-slate-700/80'
+                : 'bg-slate-100/90 dark:bg-[#0B1222] border-slate-200/90 dark:border-slate-800'
             }`}
           >
             <div
@@ -637,13 +637,13 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                       className={`shrink-0 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 border ${
                         isActive
                           ? isVelvet
-                            ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] shadow-xs font-extrabold'
+                            ? 'bg-[#E27B60] text-[#1E0F17] border-[#E27B60] shadow-xs font-extrabold'
                             : isPrism
                             ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white border-sky-500 shadow-xs font-extrabold'
-                            : 'bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 border-sky-600 dark:border-sky-400 shadow-xs font-extrabold'
+                            : 'bg-sky-600 dark:bg-sky-600 text-white border-sky-600 dark:border-sky-600 shadow-xs font-extrabold'
                           : isVelvet
-                          ? 'bg-[#2E1826] border-[#EB8A78]/25 text-[#EBD6DC] hover:bg-[#3A1F30] hover:text-white'
-                          : 'bg-white/80 dark:bg-slate-800/65 border-slate-200/90 dark:border-slate-700/75 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 hover:text-slate-950 dark:hover:text-white'
+                          ? 'bg-[#2E1826] border-[#EB8A78]/15 text-[#EBD6DC] hover:bg-[#3A1F30] hover:text-white'
+                          : 'bg-white/80 dark:bg-slate-800/65 border-slate-200/90 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-950 dark:hover:text-white'
                       }`}
                     >
                       {isRead && (
@@ -667,22 +667,22 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
             <div
               className={`rounded-2xl border border-t-2 shadow-xs overflow-x-clip max-w-full ${
                 isVelvet
-                  ? 'bg-[#2B1723] border-[#EB8A78]/35 border-t-[#FF8A6B]'
+                  ? 'bg-[#2B1723] border-[#EB8A78]/18 border-t-[#EB8A78]/35'
                   : isPrism
                   ? 'bg-white/88 border-white/95 border-t-sky-500'
-                  : 'bg-white dark:bg-[#0F172A] border-slate-200/90 dark:border-slate-700/80 border-t-sky-500/80 dark:border-t-sky-400/70'
+                  : 'bg-white dark:bg-[#0F172A] border-slate-200/90 dark:border-slate-800 border-t-sky-500/80 dark:border-t-slate-700'
               }`}
             >
               {/* Area Isi Variasi Aktif */}
               <div key={activeVariasiIndex} role="tabpanel" className="p-3.5 sm:p-6 space-y-5 animate-tab-slide max-w-full overflow-x-clip">
                 {/* Header Variasi */}
-                <div className={`space-y-2 border-b pb-4 ${isVelvet ? 'border-[#EB8A78]/20' : 'border-slate-200/90 dark:border-slate-700/70'}`}>
+                <div className={`space-y-2 border-b pb-4 ${isVelvet ? 'border-[#EB8A78]/15' : 'border-slate-200/90 dark:border-slate-800'}`}>
                   <div className="flex items-center gap-2 flex-wrap">
                     <span
                       className={`font-mono text-xs font-extrabold px-2.5 py-1 rounded border ${
                         isVelvet
-                          ? 'bg-[#4A222B] text-[#FFBE98] border-[#EB8A78]/40'
-                          : 'bg-sky-100 dark:bg-sky-900/60 text-sky-900 dark:text-sky-200 border-sky-300/80 dark:border-sky-700/80'
+                          ? 'bg-[#4A222B] text-[#FFBE98] border-[#EB8A78]/20'
+                          : 'bg-sky-100 dark:bg-sky-900/50 text-sky-900 dark:text-sky-200 border-sky-300/80 dark:border-sky-800/50'
                       }`}
                     >
                       Variasi {activeVariasi.nomor_variasi || activeVariasiIndex + 1}
@@ -691,8 +691,8 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                       <span
                         className={`font-mono text-xs px-2.5 py-1 rounded font-bold border ${
                           isVelvet
-                            ? 'bg-[#381C2C] text-[#F5B041] border-[#F5B041]/35'
-                            : 'bg-blue-100 dark:bg-blue-950 text-blue-900 dark:text-blue-200 border-blue-200 dark:border-blue-800'
+                            ? 'bg-[#381C2C] text-[#F5B041] border-[#EB8A78]/20'
+                            : 'bg-blue-100 dark:bg-blue-950 text-blue-900 dark:text-blue-200 border-blue-200 dark:border-blue-900/60'
                         }`}
                       >
                         {activeVariasi.kategori_variasi}
@@ -709,8 +709,8 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                   <blockquote
                     className={`p-3.5 sm:p-4 rounded-xl border border-l-4 text-[15px] sm:text-[15.5px] leading-[1.85] [&_p]:mb-3.5 [&_p:last-child]:mb-0 max-w-full ${
                       isVelvet
-                        ? 'bg-[#1F1020] border-[#EB8A78]/25 border-l-[#FF8A6B] text-[#FBF1F2]'
-                        : 'bg-slate-50 dark:bg-[#141E36] border-slate-200/80 dark:border-slate-700/60 border-l-slate-400 dark:border-l-slate-500 text-[#1E293B] dark:text-slate-200'
+                        ? 'bg-[#1F1020] border-[#EB8A78]/15 border-l-[#EB8A78]/40 text-[#FBF1F2]'
+                        : 'bg-slate-50 dark:bg-[#141E36] border-slate-200/80 dark:border-slate-800 border-l-slate-400 dark:border-l-slate-600/70 text-[#1E293B] dark:text-slate-200'
                     }`}
                   >
                     {renderMarkdown(activeVariasi.stimulus_mini)}
@@ -741,7 +741,7 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
                 {/* Kunci Pembeda (Semantic Box Hijau: #ECFDF5 / border #10B981) */}
                 {activeVariasi.kunci_pembeda && (
-                  <div className="rounded-xl bg-[#ECFDF5] dark:bg-emerald-950/25 border border-[#10B981]/50 border-l-4 border-l-[#10B981] p-3.5 sm:p-4 text-[15px] sm:text-[15.5px] leading-[1.85] text-emerald-950 dark:text-emerald-100 space-y-1.5 max-w-full overflow-x-clip">
+                  <div className="rounded-xl bg-[#ECFDF5] dark:bg-emerald-950/20 border border-[#10B981]/45 dark:border-emerald-900/45 border-l-4 border-l-[#10B981] dark:border-l-emerald-700/60 p-3.5 sm:p-4 text-[15px] sm:text-[15.5px] leading-[1.85] text-emerald-950 dark:text-emerald-100 space-y-1.5 max-w-full overflow-x-clip">
                     <div className="font-bold flex items-center gap-1.5 text-emerald-900 dark:text-emerald-200">
                       <Sparkles className="w-4 h-4 text-[#10B981] shrink-0" />
                       <span>Kunci Pembeda Variasi Ini:</span>
@@ -753,10 +753,10 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
               {/* Footer Navigasi Antar-Variasi */}
               <div
-                className={`border-t px-5 sm:px-7 py-4 flex items-center justify-between gap-3 ${
+                className={`border-t px-4 sm:px-6 py-4 flex items-center justify-between gap-3 ${
                   isVelvet
-                    ? 'bg-[#22121D] border-[#EB8A78]/25'
-                    : 'bg-slate-50/90 dark:bg-[#0B1222] border-slate-200/80 dark:border-slate-700/80'
+                    ? 'bg-[#22121D] border-[#EB8A78]/15'
+                    : 'bg-slate-50/90 dark:bg-[#0B1222] border-slate-200/80 dark:border-slate-800'
                 }`}
               >
                 <button
@@ -812,12 +812,12 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
 
       {/* PEMBATAS HALUS ANTARA ZONA 2 & ZONA 3 */}
       <div className="relative flex items-center justify-center my-8 select-none">
-        <div className={`w-full border-t ${isVelvet ? 'border-[#EB8A78]/25' : 'border-slate-200 dark:border-slate-700/75'}`} />
+        <div className={`w-full border-t ${isVelvet ? 'border-[#EB8A78]/15' : 'border-slate-200 dark:border-slate-800'}`} />
         <div
           className={`absolute px-3.5 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider border shadow-2xs ${
             isVelvet
-              ? 'bg-[#2B1723] text-[#FFBE98] border-[#EB8A78]/35'
-              : 'bg-[#F8FAFC] dark:bg-[#0D1426] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700/80'
+              ? 'bg-[#2B1723] text-[#FFBE98] border-[#EB8A78]/20'
+              : 'bg-[#F8FAFC] dark:bg-[#0D1426] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-800'
           }`}
         >
           Zona 3 • Uji Pemahaman
@@ -862,14 +862,14 @@ export const ThreeZoneMaterialViewer: React.FC<ThreeZoneMaterialViewerProps> = (
                   key={nomor}
                   className={`rounded-2xl border p-3.5 sm:p-6 shadow-xs space-y-4 sm:space-y-5 max-w-full overflow-x-clip ${
                     isVelvet
-                      ? 'bg-[#2B1723] border-[#EB8A78]/35'
+                      ? 'bg-[#2B1723] border-[#EB8A78]/18'
                       : isPrism
                       ? 'bg-white/88 border-white/95'
-                      : 'bg-white dark:bg-[#0F172A] border-slate-200/90 dark:border-slate-700/80'
+                      : 'bg-white dark:bg-[#0F172A] border-slate-200/90 dark:border-slate-800'
                   }`}
                 >
                   {/* Header Soal */}
-                  <div className={`flex items-center justify-between gap-2 border-b pb-3 ${isVelvet ? 'border-[#EB8A78]/20' : 'border-slate-200/80 dark:border-slate-700/70'}`}>
+                  <div className={`flex items-center justify-between gap-2 border-b pb-3 ${isVelvet ? 'border-[#EB8A78]/15' : 'border-slate-200/80 dark:border-slate-800'}`}>
                     <div className="flex items-center gap-2">
                       <span
                         className={`font-mono text-xs font-extrabold px-2.5 py-1 rounded border ${

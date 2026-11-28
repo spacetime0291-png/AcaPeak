@@ -256,12 +256,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
     const code = subtest.code.toUpperCase();
     if (isVelvet) {
       return {
-        border: 'border-[#EB8A78]/35 hover:border-[#FF8A6B]/70',
-        glow: 'shadow-[0_6px_24px_rgba(10,4,8,0.45)]',
-        squircle: 'bg-[#381C2C] border border-[#EB8A78]/45 text-[#FFBE98] shadow-xs',
-        babBadge: 'bg-[#4A222B]/90 text-[#FFBE98] border border-[#EB8A78]/45',
-        numChip: 'bg-gradient-to-tr from-[#FF8A6B] to-[#F5B041] text-[#1E0F17] border border-[#FFBE98]/50 shadow-xs',
-        actionPill: 'bg-[#FF8A6B]/12 text-[#FFBE98] border border-[#FF8A6B]/45 group-hover/sub:bg-[#FF8A6B] group-hover/sub:text-[#1E0F17]',
+        border: 'border-[#EB8A78]/18 hover:border-[#EB8A78]/35',
+        glow: 'shadow-xs',
+        squircle: 'bg-[#381C2C] border border-[#EB8A78]/22 text-[#FFBE98] shadow-xs',
+        babBadge: 'bg-[#4A222B]/90 text-[#FFBE98] border border-[#EB8A78]/22',
+        numChip: 'bg-gradient-to-tr from-[#E27B60] to-[#D4954B] text-[#1E0F17] border border-[#FFBE98]/25 shadow-xs',
+        actionPill: 'bg-[#FF8A6B]/10 text-[#FFBE98] border border-[#EB8A78]/25 group-hover/sub:bg-[#E27B60] group-hover/sub:text-[#1E0F17]',
         highlightText: 'text-[#FFBE98]',
       };
     }
@@ -269,82 +269,82 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
       switch (code) {
         case 'PU':
           return {
-            border: 'border-purple-500/40 hover:border-purple-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(168,85,247,0.18)]',
-            squircle: 'bg-[#181136] border border-purple-500/60 text-purple-300 shadow-[0_0_16px_rgba(168,85,247,0.4)]',
-            babBadge: 'bg-purple-950/80 text-purple-300 border border-purple-500/60 shadow-[0_0_8px_rgba(168,85,247,0.3)]',
-            numChip: 'bg-gradient-to-tr from-purple-600 to-indigo-500 text-white shadow-[0_0_10px_rgba(168,85,247,0.4)] border border-purple-400/40',
-            actionPill: 'bg-purple-500/10 text-purple-300 border border-purple-400/50 group-hover/sub:bg-purple-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(168,85,247,0.5)]',
+            border: 'border-slate-800 hover:border-purple-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#181136] border border-purple-500/25 text-purple-300 shadow-xs',
+            babBadge: 'bg-purple-950/70 text-purple-300 border border-purple-500/25',
+            numChip: 'bg-gradient-to-tr from-purple-700 to-indigo-600 text-white border border-purple-500/25',
+            actionPill: 'bg-purple-500/10 text-purple-300 border border-purple-500/25 group-hover/sub:bg-purple-600 group-hover/sub:text-white',
             highlightText: 'text-purple-300',
           };
         case 'PPU':
           return {
-            border: 'border-cyan-500/40 hover:border-cyan-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(0,242,254,0.18)]',
-            squircle: 'bg-[#0a2336] border border-cyan-500/60 text-cyan-300 shadow-[0_0_16px_rgba(0,242,254,0.4)]',
-            babBadge: 'bg-cyan-950/80 text-cyan-300 border border-cyan-500/60 shadow-[0_0_8px_rgba(0,242,254,0.3)]',
-            numChip: 'bg-gradient-to-tr from-cyan-600 to-blue-500 text-white shadow-[0_0_10px_rgba(0,242,254,0.4)] border border-cyan-400/40',
-            actionPill: 'bg-cyan-500/10 text-cyan-300 border border-cyan-400/50 group-hover/sub:bg-cyan-500 group-hover/sub:text-slate-950 group-hover/sub:shadow-[0_0_14px_rgba(0,242,254,0.5)]',
+            border: 'border-slate-800 hover:border-cyan-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#0a2336] border border-cyan-500/25 text-cyan-300 shadow-xs',
+            babBadge: 'bg-cyan-950/70 text-cyan-300 border border-cyan-500/25',
+            numChip: 'bg-gradient-to-tr from-cyan-700 to-blue-600 text-white border border-cyan-500/25',
+            actionPill: 'bg-cyan-500/10 text-cyan-300 border border-cyan-500/25 group-hover/sub:bg-cyan-600 group-hover/sub:text-white',
             highlightText: 'text-cyan-300',
           };
         case 'PBM':
           return {
-            border: 'border-rose-500/40 hover:border-rose-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(244,63,94,0.18)]',
-            squircle: 'bg-[#33111f] border border-rose-500/60 text-rose-300 shadow-[0_0_16px_rgba(244,63,94,0.4)]',
-            babBadge: 'bg-rose-950/80 text-rose-300 border border-rose-500/60 shadow-[0_0_8px_rgba(244,63,94,0.3)]',
-            numChip: 'bg-gradient-to-tr from-rose-600 to-amber-500 text-white shadow-[0_0_10px_rgba(244,63,94,0.4)] border border-rose-400/40',
-            actionPill: 'bg-rose-500/10 text-rose-300 border border-rose-400/50 group-hover/sub:bg-rose-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(244,63,94,0.5)]',
+            border: 'border-slate-800 hover:border-rose-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#33111f] border border-rose-500/25 text-rose-300 shadow-xs',
+            babBadge: 'bg-rose-950/70 text-rose-300 border border-rose-500/25',
+            numChip: 'bg-gradient-to-tr from-rose-700 to-amber-600 text-white border border-rose-500/25',
+            actionPill: 'bg-rose-500/10 text-rose-300 border border-rose-500/25 group-hover/sub:bg-rose-600 group-hover/sub:text-white',
             highlightText: 'text-rose-300',
           };
         case 'PK':
           return {
-            border: 'border-blue-500/40 hover:border-blue-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(59,130,246,0.18)]',
-            squircle: 'bg-[#0d1d3d] border border-blue-500/60 text-blue-300 shadow-[0_0_16px_rgba(59,130,246,0.4)]',
-            babBadge: 'bg-blue-950/80 text-blue-300 border border-blue-500/60 shadow-[0_0_8px_rgba(59,130,246,0.3)]',
-            numChip: 'bg-gradient-to-tr from-blue-600 to-cyan-500 text-white shadow-[0_0_10px_rgba(59,130,246,0.4)] border border-blue-400/40',
-            actionPill: 'bg-blue-500/10 text-blue-300 border border-blue-400/50 group-hover/sub:bg-blue-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(59,130,246,0.5)]',
+            border: 'border-slate-800 hover:border-blue-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#0d1d3d] border border-blue-500/25 text-blue-300 shadow-xs',
+            babBadge: 'bg-blue-950/70 text-blue-300 border border-blue-500/25',
+            numChip: 'bg-gradient-to-tr from-blue-700 to-cyan-600 text-white border border-blue-500/25',
+            actionPill: 'bg-blue-500/10 text-blue-300 border border-blue-500/25 group-hover/sub:bg-blue-600 group-hover/sub:text-white',
             highlightText: 'text-blue-300',
           };
         case 'LBI':
           return {
-            border: 'border-rose-500/40 hover:border-rose-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(244,63,94,0.18)]',
-            squircle: 'bg-[#2a1322] border border-rose-500/60 text-rose-300 shadow-[0_0_16px_rgba(244,63,94,0.4)]',
-            babBadge: 'bg-rose-950/80 text-rose-300 border border-rose-500/60 shadow-[0_0_8px_rgba(244,63,94,0.3)]',
-            numChip: 'bg-gradient-to-tr from-rose-600 to-red-500 text-white shadow-[0_0_10px_rgba(244,63,94,0.4)] border border-rose-400/40',
-            actionPill: 'bg-rose-500/10 text-rose-300 border border-rose-400/50 group-hover/sub:bg-rose-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(244,63,94,0.5)]',
+            border: 'border-slate-800 hover:border-rose-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#2a1322] border border-rose-500/25 text-rose-300 shadow-xs',
+            babBadge: 'bg-rose-950/70 text-rose-300 border border-rose-500/25',
+            numChip: 'bg-gradient-to-tr from-rose-700 to-red-600 text-white border border-rose-500/25',
+            actionPill: 'bg-rose-500/10 text-rose-300 border border-rose-500/25 group-hover/sub:bg-rose-600 group-hover/sub:text-white',
             highlightText: 'text-rose-300',
           };
         case 'LBE':
           return {
-            border: 'border-purple-500/40 hover:border-purple-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(168,85,247,0.18)]',
-            squircle: 'bg-[#171638] border border-purple-500/60 text-purple-300 shadow-[0_0_16px_rgba(168,85,247,0.4)]',
-            babBadge: 'bg-purple-950/80 text-purple-300 border border-purple-500/60 shadow-[0_0_8px_rgba(168,85,247,0.3)]',
-            numChip: 'bg-gradient-to-tr from-purple-600 to-indigo-500 text-white shadow-[0_0_10px_rgba(168,85,247,0.4)] border border-purple-400/40',
-            actionPill: 'bg-purple-500/10 text-purple-300 border border-purple-400/50 group-hover/sub:bg-purple-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(168,85,247,0.5)]',
+            border: 'border-slate-800 hover:border-purple-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#171638] border border-purple-500/25 text-purple-300 shadow-xs',
+            babBadge: 'bg-purple-950/70 text-purple-300 border border-purple-500/25',
+            numChip: 'bg-gradient-to-tr from-purple-700 to-indigo-600 text-white border border-purple-500/25',
+            actionPill: 'bg-purple-500/10 text-purple-300 border border-purple-500/25 group-hover/sub:bg-purple-600 group-hover/sub:text-white',
             highlightText: 'text-purple-300',
           };
         case 'PM':
           return {
-            border: 'border-emerald-500/40 hover:border-emerald-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(16,185,129,0.18)]',
-            squircle: 'bg-[#0a2920] border border-emerald-500/60 text-emerald-300 shadow-[0_0_16px_rgba(16,185,129,0.4)]',
-            babBadge: 'bg-emerald-950/80 text-emerald-300 border border-emerald-500/60 shadow-[0_0_8px_rgba(16,185,129,0.3)]',
-            numChip: 'bg-gradient-to-tr from-emerald-600 to-teal-500 text-white shadow-[0_0_10px_rgba(16,185,129,0.4)] border border-emerald-400/40',
-            actionPill: 'bg-emerald-500/10 text-emerald-300 border border-emerald-400/50 group-hover/sub:bg-emerald-600 group-hover/sub:text-white group-hover/sub:shadow-[0_0_14px_rgba(16,185,129,0.5)]',
+            border: 'border-slate-800 hover:border-emerald-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#0a2920] border border-emerald-500/25 text-emerald-300 shadow-xs',
+            babBadge: 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/25',
+            numChip: 'bg-gradient-to-tr from-emerald-700 to-teal-600 text-white border border-emerald-500/25',
+            actionPill: 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/25 group-hover/sub:bg-emerald-600 group-hover/sub:text-white',
             highlightText: 'text-emerald-300',
           };
         default:
           return {
-            border: 'border-indigo-500/40 hover:border-cyan-400/80',
-            glow: 'shadow-[0_4px_24px_rgba(0,242,254,0.18)]',
-            squircle: 'bg-[#0d1d3d] border border-blue-500/60 text-blue-300',
-            babBadge: 'bg-indigo-950/80 text-cyan-300 border border-cyan-500/60',
-            numChip: 'bg-gradient-to-tr from-blue-600 to-cyan-500 text-white shadow-[0_0_10px_rgba(0,242,254,0.4)] border border-cyan-400/40',
-            actionPill: 'bg-cyan-500/10 text-cyan-300 border border-cyan-400/50 group-hover/sub:bg-cyan-500 group-hover/sub:text-slate-950',
+            border: 'border-slate-800 hover:border-cyan-500/40',
+            glow: 'shadow-xs',
+            squircle: 'bg-[#0d1d3d] border border-blue-500/25 text-blue-300',
+            babBadge: 'bg-indigo-950/70 text-cyan-300 border border-cyan-500/25',
+            numChip: 'bg-gradient-to-tr from-blue-700 to-cyan-600 text-white border border-cyan-500/25',
+            actionPill: 'bg-cyan-500/10 text-cyan-300 border border-cyan-500/25 group-hover/sub:bg-cyan-600 group-hover/sub:text-white',
             highlightText: 'text-cyan-300',
           };
       }
@@ -402,9 +402,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         <div
           className={`relative w-full shadow-sm transition-all duration-300 backdrop-blur-md border-b ${
             isVelvet
-              ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/25'
+              ? 'bg-[#1B0F1D]/92 border-[#EB8A78]/15'
               : isCosmic
-              ? 'bg-[#070913]/90 border-indigo-500/35'
+              ? 'bg-[#070913]/90 border-slate-800/80'
               : isPrism
               ? 'bg-white/70 border-white/85'
               : 'bg-white/95 border-stone-200/90'
@@ -428,7 +428,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <ArrowLeft
                   className={`w-6 h-6 ${
                     isVelvet
-                      ? 'text-[#FF8A6B]'
+                      ? 'text-[#EB8A78]'
                       : isPrism
                       ? 'text-blue-600'
                       : 'text-indigo-600 dark:text-cyan-400'
@@ -446,9 +446,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 <div
                   className={`flex items-center gap-1.5 border px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-2xs ${
                     isVelvet
-                      ? 'bg-[#2B1723]/90 border-[#EB8A78]/35 text-[#FBF1F2]'
+                      ? 'bg-[#2B1723]/90 border-[#EB8A78]/18 text-[#FBF1F2]'
                       : isCosmic
-                      ? 'bg-gradient-to-r from-blue-950/80 to-indigo-950/80 border-cyan-500/40 shadow-[0_0_12px_rgba(0,242,254,0.25)]'
+                      ? 'bg-gradient-to-r from-blue-950/70 to-indigo-950/70 border-slate-700/80'
                       : isPrism
                       ? 'bg-white/80 border-sky-200/80'
                       : 'bg-stone-100/90 border-stone-200'
@@ -484,7 +484,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
         <div
           className={`backdrop-blur-md border-b w-full px-3.5 sm:px-5 py-2.5 transition-colors ${
             isVelvet
-              ? 'bg-[#170D19]/92 border-[#EB8A78]/20'
+              ? 'bg-[#170D19]/92 border-[#EB8A78]/15'
               : isCosmic
               ? 'bg-[#080d21]/90 border-slate-800/80'
               : isPrism
@@ -496,7 +496,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             <div
               className={`flex items-center p-1.5 rounded-2xl border w-full sm:w-auto shadow-2xs ${
                 isVelvet
-                  ? 'bg-[#261420] border-[#EB8A78]/25'
+                  ? 'bg-[#261420] border-[#EB8A78]/18'
                   : isCosmic
                   ? 'bg-[#0a1024] border-slate-800'
                   : isPrism
@@ -510,9 +510,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'materi'
                     ? isVelvet
-                      ? 'bg-[#FF8A6B] text-[#1E0F17] font-extrabold shadow-[0_0_16px_rgba(255,138,107,0.3)]'
+                      ? 'bg-[#E27B60] text-[#1E0F17] font-extrabold shadow-xs'
                       : isCosmic
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_18px_rgba(0,242,254,0.5)] border border-cyan-400/50'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 text-white border border-cyan-600/40'
                       : isPrism
                       ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-sm'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
@@ -529,9 +529,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 sm:px-8 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeTab === 'drilling'
                     ? isVelvet
-                      ? 'bg-[#FF8A6B] text-[#1E0F17] font-extrabold shadow-[0_0_16px_rgba(255,138,107,0.3)]'
+                      ? 'bg-[#E27B60] text-[#1E0F17] font-extrabold shadow-xs'
                       : isCosmic
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-[0_0_18px_rgba(0,242,254,0.5)] border border-cyan-400/50'
+                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 text-white border border-cyan-600/40'
                       : isPrism
                       ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-sm'
                       : 'bg-white text-blue-700 shadow-xs border border-stone-200/80'
@@ -749,7 +749,7 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
             <div
               className={`backdrop-blur-md p-3 sm:p-4 rounded-2xl border shadow-2xs space-y-2.5 ${
                 isVelvet
-                  ? 'bg-[#2B1723]/90 border-[#EB8A78]/30'
+                  ? 'bg-[#2B1723]/90 border-[#EB8A78]/18'
                   : isCosmic
                   ? 'bg-[#0c1326]/85 border-slate-800'
                   : isPrism
@@ -795,14 +795,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                       className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 border shrink-0 ${
                         isActive
                           ? isVelvet
-                            ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B] font-extrabold shadow-xs'
+                            ? 'bg-[#E27B60] text-[#1E0F17] border-[#E27B60] font-extrabold shadow-xs'
                             : isCosmic
-                            ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.4)]'
+                            ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white border-cyan-600/60 shadow-xs'
                             : isPrism
                             ? 'bg-gradient-to-r from-blue-600 to-sky-500 text-white border-sky-400 shadow-xs'
                             : 'bg-blue-600 text-white border-blue-600 shadow-xs'
                           : isVelvet
-                          ? 'bg-[#1F1020] text-[#EBD6DC] hover:text-white border-[#EB8A78]/25 hover:border-[#EB8A78]/50'
+                          ? 'bg-[#1F1020] text-[#EBD6DC] hover:text-white border-[#EB8A78]/15 hover:border-[#EB8A78]/30'
                           : isCosmic
                           ? 'bg-slate-900/90 text-slate-300 hover:text-white border-slate-800 hover:border-slate-700'
                           : isPrism
@@ -1153,14 +1153,14 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                 className={`w-full text-left flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl transition-all duration-150 active:scale-[0.99] cursor-pointer group/sub border ${
                                   isSelected
                                     ? isVelvet
-                                      ? 'bg-[#3D1F2E] border-[#FF8A6B] text-[#FBF1F2]'
+                                      ? 'bg-[#3D1F2E] border-[#EB8A78]/40 text-[#FBF1F2]'
                                       : isCosmic
-                                      ? 'bg-[#0c2448] border-cyan-400 text-cyan-100 shadow-[0_0_12px_rgba(0,242,254,0.25)]'
+                                      ? 'bg-[#0c2448] border-cyan-600/60 text-cyan-100'
                                       : 'bg-sky-50/90 border-sky-300 shadow-2xs'
                                     : isVelvet
-                                    ? 'bg-[#341B2B]/80 hover:bg-[#3F2134] border-[#EB8A78]/20 text-[#FBF1F2]'
+                                    ? 'bg-[#341B2B]/80 hover:bg-[#3F2134] border-[#EB8A78]/15 text-[#FBF1F2]'
                                     : isCosmic
-                                    ? 'bg-[#0f1b3b]/80 hover:bg-[#152754] border-slate-700/70 text-slate-200'
+                                    ? 'bg-[#0f1b3b]/80 hover:bg-[#152754] border-slate-800 text-slate-200'
                                     : isPrism
                                     ? 'bg-white/90 hover:bg-sky-50/80 border-white text-slate-800'
                                     : 'bg-white hover:bg-stone-50 border-stone-200/80 text-slate-800'
@@ -1170,13 +1170,13 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                                   className={`w-5 h-5 rounded-md flex items-center justify-center shrink-0 transition-colors border ${
                                     isSelected
                                       ? isVelvet
-                                        ? 'bg-[#FF8A6B] text-[#1E0F17] border-[#FF8A6B]'
+                                        ? 'bg-[#E27B60] text-[#1E0F17] border-[#E27B60]'
                                         : isCosmic
-                                        ? 'bg-cyan-400 text-slate-950 border-cyan-300'
+                                        ? 'bg-cyan-500 text-slate-950 border-cyan-600'
                                         : 'bg-blue-600 text-white border-blue-600'
                                       : isVelvet
-                                      ? 'bg-[#22121D] border-[#EB8A78]/40'
-                                      : 'bg-stone-50 dark:bg-slate-900 border-stone-300 dark:border-slate-600'
+                                      ? 'bg-[#22121D] border-[#EB8A78]/25'
+                                      : 'bg-stone-50 dark:bg-slate-900 border-stone-300 dark:border-slate-700'
                                   }`}
                                 >
                                   {isSelected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
@@ -1219,9 +1219,9 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
           aria-label="Konfigurasi Sesi Drilling"
           className={`fixed bottom-0 left-0 right-0 z-40 backdrop-blur-xl border-t shadow-2xl px-2.5 py-2 sm:px-4 sm:py-3 transition-all duration-300 ${
             isVelvet
-              ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/35 shadow-[0_-8px_30px_rgba(0,0,0,0.65)]'
+              ? 'bg-[#1B0F1D]/95 border-[#EB8A78]/18 shadow-[0_-8px_24px_rgba(0,0,0,0.55)]'
               : isCosmic
-              ? 'bg-[#0c1228]/95 border-cyan-500/40 shadow-[0_-8px_30px_rgba(0,0,0,0.75)]'
+              ? 'bg-[#0c1228]/95 border-slate-800 shadow-[0_-8px_24px_rgba(0,0,0,0.65)]'
               : isPrism
               ? 'bg-white/88 border-white/95 shadow-[0_-8px_25px_rgba(15,23,42,0.08)]'
               : 'bg-white/95 border-stone-200/90 shadow-[0_-8px_25px_rgba(0,0,0,0.06)]'
@@ -1337,12 +1337,12 @@ export const SubtestDetailView: React.FC<SubtestDetailViewProps> = ({
                   );
                 }
               }}
-              className={`w-full sm:w-auto px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md shrink-0 select-none cursor-pointer ${
+              className={`w-full sm:w-auto px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-sm shrink-0 select-none cursor-pointer ${
                 selectedSubchapters.size > 0
                   ? isVelvet
-                    ? 'bg-gradient-to-r from-[#FF8A6B] to-[#F5B041] hover:brightness-110 active:scale-95 text-[#1E0F17] font-extrabold shadow-[0_0_20px_rgba(255,138,107,0.35)]'
+                    ? 'bg-gradient-to-r from-[#E27B60] to-[#D4954B] hover:brightness-110 active:scale-95 text-[#1E0F17] font-extrabold'
                     : isCosmic
-                    ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 active:scale-95 text-white shadow-[0_0_24px_rgba(0,242,254,0.6)] border border-cyan-400/50'
+                    ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 active:scale-95 text-white border border-cyan-600/40'
                     : isPrism
                     ? 'bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 active:scale-95 text-white shadow-sky-500/30'
                     : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 active:scale-95 text-white shadow-blue-500/25'

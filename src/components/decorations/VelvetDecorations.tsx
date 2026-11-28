@@ -93,7 +93,7 @@ export const VelvetHeaderBanner: React.FC = () => {
  */
 export const VelvetFocusHeaderAccent: React.FC = () => {
   return (
-    <div className="absolute top-0 right-0 h-full w-48 overflow-hidden pointer-events-none select-none z-0 opacity-25">
+    <div className="absolute top-0 right-0 h-full w-48 overflow-hidden pointer-events-none select-none z-0 opacity-15">
       <svg viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         <path
           d="M116 14C109 16 104 22 104 29C104 37 111 44 119 44C123 44 126 42 129 40C125 42 120 41 117 39C111 36 109 29 112 23C113 19 115 16 116 14Z"
