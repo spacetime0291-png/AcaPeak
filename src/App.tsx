@@ -355,6 +355,7 @@ interface SubtestRouteViewProps {
   theme: ThemeId;
   onSelectTheme: (theme: ThemeId) => void;
   DetailComponent: React.ComponentType<any>;
+  isClientHydrated: boolean;
   onStartDrilling: (
     subchapterIds: string[],
     questionCount: number,
@@ -367,6 +368,7 @@ function SubtestRouteView({
   theme,
   onSelectTheme,
   DetailComponent,
+  isClientHydrated,
   onStartDrilling,
 }: SubtestRouteViewProps) {
   const { subtest } = useParams<{ subtest: string }>();
@@ -383,10 +385,21 @@ function SubtestRouteView({
     );
   }, [subtest]);
 
-  const tabParam = searchParams.get('tab');
+  // Defer reading ?tab= and ?selected= until after client hydration so the first render
+  // matches static SSG HTML (dist/utbk/:subtest/index.html, defaulted to 'materi') 100%,
+  // eliminating React hydration error #418 on direct reloads of ?tab=pembahasan / ?tab=drilling.
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  const canReadQuery = isClientHydrated || hasMounted;
+  const tabParam = canReadQuery ? searchParams.get('tab') : null;
   const activeTab: 'materi' | 'drilling' | 'pembahasan' =
     tabParam === 'drilling' ? 'drilling' : tabParam === 'pembahasan' ? 'pembahasan' : 'materi';
-  const selectedTopicId = searchParams.get('selected') || searchParams.get('topic') || undefined;
+  const selectedTopicId = canReadQuery
+    ? searchParams.get('selected') || searchParams.get('topic') || undefined
+    : undefined;
 
   useEffect(() => {
     if (typeof document !== 'undefined' && currentSubtest) {
@@ -678,9 +691,11 @@ export default function App({
   const [drillingSessionId, setDrillingSessionId] = useState<number>(1);
 
   const [theme, setTheme] = useState<ThemeId>('light');
+  const [isClientHydrated, setIsClientHydrated] = useState<boolean>(false);
   const hasLoadedThemeRef = useRef(false);
 
   useEffect(() => {
+    setIsClientHydrated(true);
     let initial: ThemeId = 'light';
     try {
       const saved = localStorage.getItem(THEME_STORAGE_KEY);
@@ -785,6 +800,7 @@ export default function App({
                   theme={theme}
                   onSelectTheme={handleSelectTheme}
                   DetailComponent={SubtestComp}
+                  isClientHydrated={isClientHydrated}
                   onStartDrilling={handleStartDrilling}
                 />
               ) : (
@@ -793,6 +809,7 @@ export default function App({
                     theme={theme}
                     onSelectTheme={handleSelectTheme}
                     DetailComponent={SubtestComp}
+                    isClientHydrated={isClientHydrated}
                     onStartDrilling={handleStartDrilling}
                   />
                 </LazyBoundary>
